@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "phase": "580",
+    "script": "t3_landscape_correspondence.py",
+    "n_folios": 76
+  },
+  "space_A": {
+    "pcs_used": 5,
+    "class_counts": {
+      "SA": 19,
+      "TD": 48,
+      "FR": 9
+    },
+    "centroids": {
+      "SA": [
+        -0.12935963157894742,
+        -0.2471682105263157,
+        0.6432745263157894,
+        -0.3189323157894736,
+        -0.09725042105263154
+      ],
+      "TD": [
+        -0.5289370208333335,
+        0.10647883333333336,
+        -0.00936485416666666,
+        0.17199737500000004,
+        0.06603812500000003
+      ],
+      "FR": [
+        3.0940896666666666,
+        -0.04608755555555558,
+        -1.3080776666666667,
+        -0.24401722222222222,
+        -0.14689722222222226
+      ]
+    },
+    "kruskal_wallis_per_PC": {
+      "PC1": {
+        "H": 19.7509,
+        "p": 5.1e-05,
+        "significant_01": true
+      },
+      "PC2": {
+        "H": 0.7171,
+        "p": 0.698691,
+        "significant_01": false
+      },
+      "PC3": {
+        "H": 11.4253,
+        "p": 0.003304,
+        "significant_01": true
+      },
+      "PC4": {
+        "H": 2.5082,
+        "p": 0.285329,
+        "significant_01": false
+      },
+      "PC5": {
+        "H": 0.2037,
+        "p": 0.903164,
+        "significant_01": false
+      }
+    },
+    "n_significant_PCs": 2,
+    "classification_accuracy": 0.6974,
+    "between_class_distances": {
+      "SA-TD": 0.9891,
+      "SA-FR": 3.7745,
+      "TD-FR": 3.88
+    },
+    "within_class_distances": {
+      "SA": 2.6581,
+      "TD": 2.4859,
+      "FR": 2.9299
+    },
+    "between_within_ratio": 1.0706
+  },
+  "space_B": {
+    "pcs_used": 1,
+    "class_counts": {
+      "SA": 19,
+      "TD": 48,
+      "FR": 9
+    },
+    "centroids": {
+      "SA": [
+        -1.5767247368421053
+      ],
+      "TD": [
+        -0.15959350000000003
+      ],
+      "FR": [
+        4.179806444444444
+      ]
+    },
+    "kruskal_wallis_per_PC": {
+      "PC1": {
+        "H": 52.1307,
+        "p": 0.0,
+        "significant_01": true
+      }
+    },
+    "n_significant_PCs": 1,
+    "classification_accuracy": 0.8684,
+    "between_class_distances": {
+      "SA-TD": 1.4171,
+      "SA-FR": 5.7565,
+      "TD-FR": 4.3394
+    },
+    "within_class_distances": {
+      "SA": 0.453,
+      "TD": 0.5494,
+      "FR": 1.1458
+    },
+    "between_within_ratio": 5.3594
+  },
+  "cross_space_correlations": {
+    "PC1_vs_DYE_advantage": -0.3418,
+    "PC1_vs_CCS1": 0.2851,
+    "PC1_vs_z_margin": -0.3345,
+    "PC1_vs_PEF": -0.4309,
+    "PC2_vs_DYE_advantage": -0.1592,
+    "PC2_vs_CCS1": 0.5475,
+    "PC2_vs_z_margin": -0.0923,
+    "PC2_vs_PEF": -0.0827,
+    "PC3_vs_DYE_advantage": 0.4383,
+    "PC3_vs_CCS1": -0.1345,
+    "PC3_vs_z_margin": 0.3612,
+    "PC3_vs_PEF": 0.3347,
+    "PC4_vs_DYE_advantage": -0.2539,
+    "PC4_vs_CCS1": -0.0367,
+    "PC4_vs_z_margin": -0.1108,
+    "PC4_vs_PEF": -0.204,
+    "PC5_vs_DYE_advantage": -0.0642,
+    "PC5_vs_CCS1": -0.0932,
+    "PC5_vs_z_margin": -0.0372,
+    "PC5_vs_PEF": -0.1264
+  },
+  "cross_space_comparison": {
+    "A_classification_accuracy": 0.6974,
+    "B_classification_accuracy": 0.8684,
+    "A_n_sig_PCs": 2,
+    "B_n_sig_PCs": 1,
+    "better_space": "B"
+  },
+  "C1669": {
+    "verdict": "LANDSCAPE_ALIGNED",
+    "sig_PCs_A": 2,
+    "three_pole_reproduced_A": true,
+    "bw_ratio_A": 1.0706,
+    "rationale": "Space A: 2 significant PCs, three-pole reproduced (B/W=1.07)"
+  }
+}

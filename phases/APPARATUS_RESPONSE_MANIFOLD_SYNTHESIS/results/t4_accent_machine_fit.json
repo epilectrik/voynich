@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "phase": "580",
+    "script": "t4_accent_machine_fit.py",
+    "n_common_folios": 67,
+    "missing_accent": [
+      "f26r",
+      "f26v",
+      "f33r",
+      "f41r",
+      "f41v",
+      "f48r",
+      "f50r",
+      "f94r",
+      "f95v2"
+    ]
+  },
+  "spearman_accent_vs_manifold": {
+    "accent_PC1_vs_manifold_PC1": -0.8025,
+    "accent_PC1_vs_manifold_PC2": -0.3469,
+    "accent_PC1_vs_manifold_PC3": -0.4232,
+    "accent_PC1_vs_manifold_PC4": 0.2573,
+    "accent_PC1_vs_manifold_PC5": -0.1054,
+    "accent_PC2_vs_manifold_PC1": -0.1887,
+    "accent_PC2_vs_manifold_PC2": 0.1225,
+    "accent_PC2_vs_manifold_PC3": -0.0597,
+    "accent_PC2_vs_manifold_PC4": -0.3923,
+    "accent_PC2_vs_manifold_PC5": -0.1086,
+    "accent_PC3_vs_manifold_PC1": 0.0254,
+    "accent_PC3_vs_manifold_PC2": 0.3926,
+    "accent_PC3_vs_manifold_PC3": -0.0856,
+    "accent_PC3_vs_manifold_PC4": 0.4837,
+    "accent_PC3_vs_manifold_PC5": -0.2911
+  },
+  "canonical_correlations": [
+    0.8713,
+    0.7453,
+    0.4764
+  ],
+  "partial_correlations_family_controlled": {
+    "accent_PC1_vs_manifold_PC1": -0.5202,
+    "accent_PC1_vs_manifold_PC2": -0.1182,
+    "accent_PC1_vs_manifold_PC3": -0.5065,
+    "accent_PC1_vs_manifold_PC4": 0.1744,
+    "accent_PC1_vs_manifold_PC5": -0.2312,
+    "accent_PC2_vs_manifold_PC1": -0.2981,
+    "accent_PC2_vs_manifold_PC2": -0.0607,
+    "accent_PC2_vs_manifold_PC3": -0.0978,
+    "accent_PC2_vs_manifold_PC4": -0.4385,
+    "accent_PC2_vs_manifold_PC5": -0.1022,
+    "accent_PC3_vs_manifold_PC1": -0.0964,
+    "accent_PC3_vs_manifold_PC2": 0.2048,
+    "accent_PC3_vs_manifold_PC3": -0.1926,
+    "accent_PC3_vs_manifold_PC4": 0.4983,
+    "accent_PC3_vs_manifold_PC5": -0.2659
+  },
+  "incremental_r_squared": {
+    "CCS1": {
+      "family_only": 0.3382,
+      "family_plus_manifold": 0.5066,
+      "incremental": 0.1684
+    },
+    "DYE_advantage": {
+      "family_only": 0.3769,
+      "family_plus_manifold": 0.6445,
+      "incremental": 0.2677
+    }
+  },
+  "within_A2": {
+    "n_a2": 14,
+    "correlations": {
+      "manifold_PC1_vs_CCS1": 0.8286,
+      "manifold_PC2_vs_CCS1": 0.0681,
+      "manifold_PC3_vs_CCS1": -0.5736,
+      "manifold_PC4_vs_CCS1": 0.5297,
+      "manifold_PC5_vs_CCS1": -0.0418
+    },
+    "r_squared": 0.9457
+  },
+  "forgiving_edge_distance": {
+    "n_FR_folios": 9,
+    "accent_vs_FR_distance": {
+      "accent_PC1_vs_FR_dist": 0.6039,
+      "accent_PC2_vs_FR_dist": 0.0335,
+      "accent_PC3_vs_FR_dist": -0.0467
+    },
+    "stubborn_folios": {
+      "f39v": {
+        "endpoint_class": "STRUCTURAL_ENDPOINT",
+        "manifold_scores": {
+          "PC1": 3.4485,
+          "PC2": -0.2018,
+          "PC3": -0.6691,
+          "PC4": -0.4396,
+          "PC5": -0.9174
+        },
+        "fr_distance": 1.0909
+      },
+      "f55v": {
+        "endpoint_class": "STRUCTURAL_ENDPOINT",
+        "manifold_scores": {
+          "PC1": 5.6122,
+          "PC2": -3.15,
+          "PC3": 0.996,
+          "PC4": 1.227,
+          "PC5": 0.5284
+        },
+        "fr_distance": 4.8891
+      },
+      "f86v5": {
+        "endpoint_class": "STRUCTURAL_ENDPOINT",
+        "manifold_scores": {
+          "PC1": 3.5626,
+          "PC2": 1.5345,
+          "PC3": -3.8862,
+          "PC4": -0.9102,
+          "PC5": 1.0486
+        },
+        "fr_distance": 3.3522
+      },
+      "f95r2": {
+        "endpoint_class": "STRUCTURAL_ENDPOINT",
+        "manifold_scores": {
+          "PC1": 4.9764,
+          "PC2": -0.8178,
+          "PC3": -1.8707,
+          "PC4": -0.3584,
+          "PC5": -1.7975
+        },
+        "fr_distance": 2.682
+      },
+      "f40r": {
+        "endpoint_class": "PARAMETER_ACHIEVABLE",
+        "manifold_scores": {
+          "PC1": 4.124,
+          "PC2": -0.247,
+          "PC3": 1.4582,
+          "PC4": 0.9595,
+          "PC5": -2.2807
+        },
+        "fr_distance": 3.8412
+      },
+      "f50v": {
+        "endpoint_class": "PARAMETER_ACHIEVABLE",
+        "manifold_scores": {
+          "PC1": 1.9955,
+          "PC2": 1.6996,
+          "PC3": -2.5529,
+          "PC4": 0.3969,
+          "PC5": 1.129
+        },
+        "fr_distance": 2.8004
+      },
+      "f85r2": {
+        "endpoint_class": "PARAMETER_ACHIEVABLE",
+        "manifold_scores": {
+          "PC1": 2.5375,
+          "PC2": 1.1709,
+          "PC3": -2.7255,
+          "PC4": -0.6903,
+          "PC5": 0.5819
+        },
+        "fr_distance": 2.1285
+      },
+      "f86v6": {
+        "endpoint_class": "PARAMETER_ACHIEVABLE",
+        "manifold_scores": {
+          "PC1": 1.1859,
+          "PC2": -1.1963,
+          "PC3": -1.3435,
+          "PC4": -0.4357,
+          "PC5": -0.0561
+        },
+        "fr_distance": 2.2384
+      }
+    },
+    "point_biserial_SE_vs_PA": {
+      "manifold_PC1": -0.6547,
+      "manifold_PC2": 0.2182,
+      "manifold_PC3": 0.0,
+      "manifold_PC4": 0.1091,
+      "manifold_PC5": 0.1091
+    }
+  },
+  "C1670": {
+    "verdict": "ACCENT_IS_MANIFOLD_POSITION",
+    "canonical_r1": 0.8713,
+    "max_incremental_r2": 0.2677,
+    "max_partial_corr": 0.5202,
+    "rationale": "Canonical r1=0.871, max incr R\u00b2=0.268, max partial r=0.520"
+  }
+}

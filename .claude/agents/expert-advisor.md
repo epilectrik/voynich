@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1666 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1670 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1666.
+the highest ID present is C1670.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1666 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1670 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1666 validated constraints are present as canonical one-line claims with tier
+1670 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-11 10:26
-**Version:** FROZEN STATE (1666 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-11 13:44
+**Version:** FROZEN STATE (1670 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1906,6 +1906,10 @@ C1663	Pole coherence: GRADIENT_TAIL. LOO nearest-centroid accuracy=33.3% (INSEPA
 C1664	Channel concentration: CHANNEL_CONCENTRATED. 8/8 folios have >60% share in single recovery channel. NO_R1 dominates 6/8 (f39v,f40r,f50v,f55v,f85r2,f95r2). NO_R4 dominates 2/8 (f86v5,f86v6). Pre-gate and post-gate dominant channels identical -- regime admission gating did not alter residual conversion mechanism	2	B, apparatus, A2_forgiving, channel, sub_ablation, closure
 C1665	Opportunity confound: OPPORTUNITY_NEUTRAL. Event count R-sq=0.0001 on CCS1 (no explanatory power). Forgiving CTS=0.200 vs passing=0.350. Grammar bands: forgiving 80% WEAK vs passing 48.5%. E_armed: 6.7% vs 39.4%. Weaker closure events are intrinsic folio properties, not sampling artifacts	2	B, apparatus, A2_forgiving, opportunity, confound, closure
 C1666	Structural endpoint: MIXED_BOUNDARY_STRATUM. F1xF2 grid (144pts/folio) + conditional 3rd-axis (F3/F5). 4 STRUCTURAL_ENDPOINT (f39v,f55v,f86v5,f95r2): no passing config. 4 PARAMETER_ACHIEVABLE (f40r,f50v,f85r2,f86v6): pass with displacement>=0.5. 0 PARAMETER_UNDERFIT. All best points at grid extreme (F1=1.6,F2=0.5). 7488 total runs	2	B, apparatus, A2_forgiving, endpoint, DECISIVE, retuning, closure
+C1667	Response-surface manifold dimensionality: MANIFOLD_DIFFUSE. Space A (11 apparatus features) has effective rank 5.88 and requires 5 PCs for 80% variance. Not compressible to a low-dimensional summary	2	B_APPARATUS
+C1668	Family geometry in manifold: FAMILY_GRADIENT. LOO accuracy 0.78, silhouette 0.13. Families distinguishable but extensively overlapping. A2 most elongated (ratio 1.36). A3 bridges A1-A2 (54% equidistant)	2	B_APPARATUS
+C1669	Landscape alignment: LANDSCAPE_ALIGNED. SA/TD/FR classes show 2 significant KW PCs in Space A with between/within ratio 1.07. Three-pole structure reproduced in apparatus space	2	B_APPARATUS
+C1670	Accent is manifold position: ACCENT_IS_MANIFOLD_POSITION. Canonical r1=0.871, max incremental R²=0.268. Folio accent is substantially captured by apparatus manifold position. Within-A2 R²=0.946	2	B_APPARATUS, ACCENT
 
 ---
 

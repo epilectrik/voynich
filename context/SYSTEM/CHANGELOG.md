@@ -4,6 +4,35 @@
 
 ---
 
+## Version 5.53 (2026-03-11) - Phase 580: Apparatus Response Manifold Synthesis
+
+### Summary
+
+Phase 580 consolidates all per-folio apparatus features from Phases 570a-579 into a two-space manifold synthesis. Space A (response surface, 11 features) describes what kind of apparatus each folio has; Space B (realized performance, 4 features) describes how each folio actually performs. Per expert revision, this split avoids a self-repackaging PCA. Pure analytical synthesis from existing JSON results — no new simulation.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/APPARATUS_RESPONSE_MANIFOLD_SYNTHESIS/` — Phase 580 directory with 6 scripts (T0-T5), 6 result files, REPORT_580.md |
+| **ADDED** | C1667: Manifold dimensionality MANIFOLD_DIFFUSE — effective rank 5.88, 5 PCs for 80%, not low-dimensional |
+| **ADDED** | C1668: Family geometry FAMILY_GRADIENT — LOO 0.78, silhouette 0.13, overlapping gradient clouds |
+| **ADDED** | C1669: Landscape alignment LANDSCAPE_ALIGNED — 2 sig KW PCs, B/W=1.07, three-pole reproduced |
+| **ADDED** | C1670: Accent is manifold position ACCENT_IS_MANIFOLD_POSITION — canonical r1=0.871, incr R²=0.268 |
+| **ADDED** | Tier-3 interpretation freeze on apparatus-conditioned closure advantage |
+| **UPDATED** | INDEX.md — +4 constraints (1670 total), Phase 580 section added |
+| **UPDATED** | CLAUDE.md — Quick reference updated (v5.53, 1670 constraints, 580 phases) |
+
+### Key Findings
+
+- **Dimensionality (C1667 MANIFOLD_DIFFUSE):** The 11-feature response surface has effective rank 5.88. Five PCs capture 80%. High ablation-channel correlations (r=0.90, 0.92) create some redundancy but don't collapse the manifold. Space B is dominated by a single DYE/z_margin axis (effective rank 1.40).
+- **Family geometry (C1668 FAMILY_GRADIENT):** LOO accuracy 78% (perm p=0.001), but silhouette only 0.13. A2 is most elongated (ratio 1.36) along PC1-PC2. A3 bridges A1-A2 with 54% of folios equidistant. Families are overlapping gradient clouds, not discrete clusters.
+- **Landscape alignment (C1669 LANDSCAPE_ALIGNED):** PC1 (H=19.75, p<0.001) and PC3 (H=11.43, p=0.003) separate SA/TD/FR. B/W ratio 1.07 confirms three-pole structure. Cross-space: PC1~PEF (r=-0.43), PC2~CCS1 (r=0.55).
+- **Accent reinterpretation (C1670 ACCENT_IS_MANIFOLD_POSITION):** Canonical r1=0.871. Accent PC1 ~ manifold PC1 (Spearman r=-0.80). Within-A2, manifold explains R²=0.946 of CCS1. Point-biserial: manifold PC1 discriminates SE vs PA stubborn folios (r=-0.65).
+- **Tier-3 freeze:** The forgiving pole is the forgiving edge of a continuous apparatus-response manifold. Folio accent is machine-fit position on a real response surface.
+
+---
+
 ## Version 5.52 (2026-03-11) - Phase 579: Forgiving Pole Residual Audit
 
 ### Summary

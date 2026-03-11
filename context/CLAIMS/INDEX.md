@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1666 validated constraints | **Version:** 5.52 | **Date:** 2026-03-11
+**Total:** 1670 validated constraints | **Version:** 5.53 | **Date:** 2026-03-11
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5860,6 +5860,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Channel (C1664 CHANNEL_CONCENTRATED): R1 (per-SV CLOSE drawdown) dominates 6/8, R4 (quality-conditioned Y accumulation) dominates 2/8. Pre-gate = post-gate -- the regime admission gate from Phase 576 did not change which recovery channel drives residual forgivingness. The residual conversion pathway is the same one the gate cannot reach.
 - Opportunity (C1665 OPPORTUNITY_NEUTRAL): Event count has zero explanatory power (R-sq=0.0001). Forgiving folios have structurally weaker closure events: lower CTS, higher WEAK grammar fraction, far less E_armed. These are intrinsic folio properties that cause forgivingness, not sampling confounds that explain it away.
 - Endpoint (C1666 MIXED_BOUNDARY_STRATUM): The decisive grid search finds NO folios with displacement < 0.3 (zero PARAMETER_UNDERFIT). 4 folios pass at extreme F-params (displacement 0.75-1.17), classified as PARAMETER_ACHIEVABLE. 4 folios cannot pass at any grid point even with 3rd-axis extension, classified as STRUCTURAL_ENDPOINT. The boundary between forgiving and passing A2 is a gradient with some folios genuinely unreachable by F-axis retuning.
+
+---
+
+### Phase 580: Apparatus Response Manifold Synthesis (C1667-C1670)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1667 | Response-surface manifold dimensionality: MANIFOLD_DIFFUSE. Space A (11 apparatus features) has effective rank 5.88 and requires 5 PCs for 80% variance. Not compressible to a low-dimensional summary | 2 | B_APPARATUS | eff_rank=5.88. PCs_80=5. |
+| 1668 | Family geometry in manifold: FAMILY_GRADIENT. LOO accuracy 0.78, silhouette 0.13. Families distinguishable but extensively overlapping. A2 most elongated (ratio 1.36). A3 bridges A1-A2 (54% equidistant) | 2 | B_APPARATUS | LOO=0.78. sil=0.13. perm_p=0.001. |
+| 1669 | Landscape alignment: LANDSCAPE_ALIGNED. SA/TD/FR classes show 2 significant KW PCs in Space A with between/within ratio 1.07. Three-pole structure reproduced in apparatus space | 2 | B_APPARATUS | sig_PCs=2. B/W=1.07. acc=0.70. |
+| 1670 | Accent is manifold position: ACCENT_IS_MANIFOLD_POSITION. Canonical r1=0.871, max incremental R²=0.268. Folio accent is substantially captured by apparatus manifold position. Within-A2 R²=0.946 | 2 | B_APPARATUS, ACCENT | can_r1=0.871. incr_R2=0.268. |
+
+**Phase 580 findings (Apparatus Response Manifold Synthesis, MANIFOLD_DIFFUSE/FAMILY_GRADIENT/LANDSCAPE_ALIGNED/ACCENT_IS_MANIFOLD_POSITION):**
+- Dimensionality (C1667 MANIFOLD_DIFFUSE): The 11-feature response surface has effective rank 5.88 (participation ratio). Five PCs capture 80% of variance. Not reducible to 2-3 summary dimensions — the apparatus truly lives in a moderately high-dimensional space. High correlations between ablation channels (abl_CROSS_COUPLING~abl_TR_TO_Y r=0.90, abl_CLOSE_RECOVERY~abl_CONTAINMENT r=0.92) create some redundancy but don't collapse the manifold.
+- Family geometry (C1668 FAMILY_GRADIENT): LOO nearest-centroid accuracy 78% (well above chance=49%) but silhouette only 0.13 (below 0.20 separability threshold). Permutation test p=0.001 confirms non-random structure. A2 is the most elongated family (ratio 1.36) along the PC1-PC2 axis. A3 spans the A1-A2 gap: 54% of A3 folios are equidistant between A1 and A2 centroids (spanning ratio 5.31). Families form overlapping gradient clouds, not discrete clusters.
+- Landscape alignment (C1669 LANDSCAPE_ALIGNED): SA/TD/FR landscape classes show significant KW separation on PC1 (H=19.75, p=0.0001) and PC3 (H=11.43, p=0.003). Between/within ratio 1.07 confirms three-pole structure. Space B has higher classification accuracy (0.87) but Space A captures the independent apparatus-side structure. Cross-space correlations confirm PC1~PEF (r=-0.43) and PC2~CCS1 (r=0.55).
+- Accent reinterpretation (C1670 ACCENT_IS_MANIFOLD_POSITION): Canonical correlation r1=0.871 (accent PC1 ~ manifold PC1 Spearman r=-0.80). Manifold PCs add R²=0.268 to DYE_advantage and R²=0.168 to CCS1 beyond family alone. Within-A2, manifold PCs explain R²=0.946 of CCS1 variance. Accent PC1 correlates with FR-centroid distance (r=0.60). Point-biserial: manifold PC1 discriminates STRUCTURAL_ENDPOINT vs PARAMETER_ACHIEVABLE (r=-0.65).
+
+**Tier-3 interpretation freeze:** Currier B's productive closure advantage is broadly real but apparatus-conditioned. Regime-admission gating suppresses the main counterfeit-closure mechanism, especially in A2, but a residual forgiving pole remains. That pole is not a distinct hidden subfamily, not an opportunity artifact, and not recoverable by modest folio-specific retuning. It represents the forgiving edge of a continuous apparatus-response manifold, dominated by the same close-recovery channels that define A2 more generally. Folio accent and residual variance are therefore best understood as machine-fit positions on a real response surface, not as noise or decipherment failure.
 
 ---
 

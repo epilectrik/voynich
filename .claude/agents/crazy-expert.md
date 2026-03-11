@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1642 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1666.
+the highest ID present is C1670.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -1992,6 +1992,10 @@ C1663	Pole coherence: GRADIENT_TAIL. LOO nearest-centroid accuracy=33.3% (INSEPA
 C1664	Channel concentration: CHANNEL_CONCENTRATED. 8/8 folios have >60% share in single recovery channel. NO_R1 dominates 6/8. NO_R4 dominates 2/8 (f86v5,f86v6). Pre-gate and post-gate dominant channels identical -- regime admission gating did not alter residual conversion mechanism	2	B, apparatus, A2_forgiving, channel, sub_ablation, closure	Concentrated=8/8. R1=6/8. R4=2/8. Gate_change=0.
 C1665	Opportunity confound: OPPORTUNITY_NEUTRAL. Event count R-sq=0.0001 on CCS1 (no explanatory power). Forgiving CTS=0.200 vs passing=0.350 (p=0.021). Grammar bands: forgiving 80% WEAK vs passing 48.5%. E_armed: 6.7% vs 39.4%. Weaker closure events are intrinsic folio properties, not sampling artifacts	2	B, apparatus, A2_forgiving, opportunity, confound, closure	R_sq=0.0001. CTS_fg=0.200. CTS_pa=0.350.
 C1666	Structural endpoint: MIXED_BOUNDARY_STRATUM. F1xF2 grid (144pts/folio) + conditional 3rd-axis (F3/F5). 4 STRUCTURAL_ENDPOINT (f39v,f55v,f86v5,f95r2): no passing config. 4 PARAMETER_ACHIEVABLE (f40r,f50v,f85r2,f86v6): pass with displacement>=0.5. 0 PARAMETER_UNDERFIT. All best points at grid extreme (F1=1.6,F2=0.5). 7488 total runs	2	B, apparatus, A2_forgiving, endpoint, DECISIVE, retuning, closure	SE=4. PA=4. PU=0. Runs=7488.
+C1667	Manifold dimensionality: MANIFOLD_DIFFUSE. Response-surface manifold (Space A, 11 apparatus features) has effective rank 5.88 and requires 5 PCs for 80% variance. Not compressible to low-dimensional summary. High ablation-channel correlations (r=0.90,0.92) but manifold not collapsed	2	B_APPARATUS, manifold, dimensionality	eff_rank=5.88. PCs_80=5.
+C1668	Family geometry: FAMILY_GRADIENT. LOO accuracy 0.78, silhouette 0.13, perm p=0.001. Families distinguishable but extensively overlapping gradient clouds. A2 most elongated (ratio 1.36). A3 bridges A1-A2 (54% equidistant, spanning=5.31)	2	B_APPARATUS, family, geometry	LOO=0.78. sil=0.13. perm_p=0.001.
+C1669	Landscape alignment: LANDSCAPE_ALIGNED. SA/TD/FR classes show 2 significant KW PCs in Space A (PC1 H=19.75 p=0.0001, PC3 H=11.43 p=0.003). Between/within ratio 1.07. Three-pole structure reproduced in apparatus space	2	B_APPARATUS, landscape, alignment	sig_PCs=2. B/W=1.07. acc=0.70.
+C1670	Accent is manifold position: ACCENT_IS_MANIFOLD_POSITION. Canonical r1=0.871, max incremental R²=0.268. Within-A2 R²=0.946. Accent PC1 vs FR-dist r=0.60. Point-biserial manifold PC1 vs SE/PA r=-0.65. Folio accent substantially captured by apparatus manifold position	2	B_APPARATUS, ACCENT, manifold, machine_fit	can_r1=0.871. incr_R2=0.268. A2_R2=0.946.
 
 ---
 

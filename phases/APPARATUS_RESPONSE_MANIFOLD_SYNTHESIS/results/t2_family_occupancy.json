@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "phase": "580",
+    "script": "t2_family_occupancy.py",
+    "n_folios": 76,
+    "family_counts": {
+      "A1": 21,
+      "A2": 18,
+      "A3": 37
+    }
+  },
+  "space_A": {
+    "pcs_used": 5,
+    "centroids": {
+      "A1": [
+        -1.334419,
+        -1.44091,
+        -0.292863,
+        0.103399,
+        0.130425
+      ],
+      "A2": [
+        1.972738,
+        0.181164,
+        -0.46941,
+        -0.524932,
+        -0.069396
+      ],
+      "A3": [
+        -0.202338,
+        0.72968,
+        0.394581,
+        0.196687,
+        -0.040265
+      ]
+    },
+    "within_family_scatter": {
+      "A1": {
+        "mean_dist": 1.455,
+        "std_dist": 0.448,
+        "n": 21
+      },
+      "A2": {
+        "mean_dist": 2.7375,
+        "std_dist": 1.1071,
+        "n": 18
+      },
+      "A3": {
+        "mean_dist": 2.6753,
+        "std_dist": 0.6834,
+        "n": 37
+      }
+    },
+    "between_family_distances": {
+      "A1-A2": 3.7462,
+      "A1-A3": 2.5502,
+      "A2-A3": 2.51
+    },
+    "wrong_centroid_count": 16,
+    "silhouette": 0.1342,
+    "loo_accuracy": 0.7763,
+    "permutation_test": {
+      "n_perms": 1000,
+      "observed_total_distance": 8.8064,
+      "p_value": 0.001
+    },
+    "family_elongation": {
+      "A1": {
+        "ratio": 1.3393,
+        "direction": "PC1:-0.147, PC2:0.314, PC3:-0.133",
+        "eigenvalues": [
+          1.094612,
+          0.817332,
+          0.354493,
+          0.121674,
+          0.04556
+        ]
+      },
+      "A2": {
+        "ratio": 1.3639,
+        "direction": "PC1:-0.792, PC2:0.476, PC3:-0.103",
+        "eigenvalues": [
+          4.022429,
+          2.949284,
+          1.122143,
+          0.755458,
+          0.383112
+        ]
+      },
+      "A3": {
+        "ratio": 1.1621,
+        "direction": "PC1:-0.837, PC2:0.454, PC3:-0.279",
+        "eigenvalues": [
+          2.735418,
+          2.35381,
+          1.222022,
+          0.953498,
+          0.571328
+        ]
+      }
+    },
+    "most_elongated_family": "A2",
+    "a3_bridge": {
+      "n_a3": 37,
+      "bridge_threshold": 0.9365,
+      "bridge_count": 20,
+      "bridge_fraction": 0.5405,
+      "spanning_ratio": 5.3105,
+      "mean_dist_to_A1": 3.6855,
+      "mean_dist_to_A2": 3.5741,
+      "per_folio": {
+        "f103r": {
+          "dist_A1": 3.7505,
+          "dist_A2": 4.9788
+        },
+        "f103v": {
+          "dist_A1": 3.8226,
+          "dist_A2": 3.6359
+        },
+        "f104r": {
+          "dist_A1": 3.8502,
+          "dist_A2": 3.1046
+        },
+        "f104v": {
+          "dist_A1": 2.3036,
+          "dist_A2": 3.5982
+        },
+        "f105r": {
+          "dist_A1": 2.9355,
+          "dist_A2": 1.4074
+        },
+        "f105v": {
+          "dist_A1": 4.2119,
+          "dist_A2": 0.939
+        },
+        "f106r": {
+          "dist_A1": 2.9796,
+          "dist_A2": 2.345
+        },
+        "f106v": {
+          "dist_A1": 2.0598,
+          "dist_A2": 2.2295
+        },
+        "f107r": {
+          "dist_A1": 3.0659,
+          "dist_A2": 4.2065
+        },
+        "f107v": {
+          "dist_A1": 3.3863,
+          "dist_A2": 3.4055
+        },
+        "f108r": {
+          "dist_A1": 3.8677,
+          "dist_A2": 3.1758
+        },
+        "f108v": {
+          "dist_A1": 2.9165,
+          "dist_A2": 4.0807
+        },
+        "f111r": {
+          "dist_A1": 3.1606,
+          "dist_A2": 3.7583
+        },
+        "f111v": {
+          "dist_A1": 2.8661,
+          "dist_A2": 3.7996
+        },
+        "f112r": {
+          "dist_A1": 4.6716,
+          "dist_A2": 2.9881
+        },
+        "f112v": {
+          "dist_A1": 3.944,
+          "dist_A2": 4.0956
+        },
+        "f113r": {
+          "dist_A1": 2.9949,
+          "dist_A2": 2.2855
+        },
+        "f113v": {
+          "dist_A1": 4.7075,
+          "dist_A2": 5.0358
+        },
+        "f114r": {
+          "dist_A1": 2.9783,
+          "dist_A2": 3.0656
+        },
+        "f114v": {
+          "dist_A1": 4.2602,
+          "dist_A2": 5.0999
+        },
+        "f115r": {
+          "dist_A1": 2.9289,
+          "dist_A2": 4.5794
+        },
+        "f115v": {
+          "dist_A1": 4.6458,
+          "dist_A2": 5.8024
+        },
+        "f116r": {
+          "dist_A1": 3.1797,
+          "dist_A2": 4.2333
+        },
+        "f26r": {
+          "dist_A1": 3.8176,
+          "dist_A2": 3.1968
+        },
+        "f26v": {
+          "dist_A1": 4.3035,
+          "dist_A2": 5.1991
+        },
+        "f31v": {
+          "dist_A1": 4.7318,
+          "dist_A2": 3.5393
+        },
+        "f34r": {
+          "dist_A1": 4.5989,
+          "dist_A2": 4.7288
+        },
+        "f34v": {
+          "dist_A1": 3.865,
+          "dist_A2": 2.4887
+        },
+        "f39r": {
+          "dist_A1": 3.8868,
+          "dist_A2": 3.2713
+        },
+        "f41r": {
+          "dist_A1": 2.7882,
+          "dist_A2": 4.856
+        },
+        "f41v": {
+          "dist_A1": 4.9863,
+          "dist_A2": 3.4727
+        },
+        "f43v": {
+          "dist_A1": 3.9975,
+          "dist_A2": 3.95
+        },
+        "f46r": {
+          "dist_A1": 3.108,
+          "dist_A2": 3.7936
+        },
+        "f46v": {
+          "dist_A1": 3.6184,
+          "dist_A2": 2.37
+        },
+        "f48r": {
+          "dist_A1": 4.1139,
+          "dist_A2": 3.7884
+        },
+        "f48v": {
+          "dist_A1": 4.3097,
+          "dist_A2": 2.0481
+        },
+        "f94v": {
+          "dist_A1": 4.7494,
+          "dist_A2": 3.6868
+        }
+      }
+    }
+  },
+  "space_B": {
+    "pcs_used": 1,
+    "centroids": {
+      "A1": [
+        -0.955212
+      ],
+      "A2": [
+        1.859631
+      ],
+      "A3": [
+        -0.362538
+      ]
+    },
+    "within_family_scatter": {
+      "A1": {
+        "mean_dist": 0.2512,
+        "std_dist": 0.1765,
+        "n": 21
+      },
+      "A2": {
+        "mean_dist": 2.1595,
+        "std_dist": 1.1455,
+        "n": 18
+      },
+      "A3": {
+        "mean_dist": 0.9041,
+        "std_dist": 0.8341,
+        "n": 37
+      }
+    },
+    "between_family_distances": {
+      "A1-A2": 2.8148,
+      "A1-A3": 0.5927,
+      "A2-A3": 2.2222
+    },
+    "wrong_centroid_count": 31,
+    "silhouette": 0.017,
+    "loo_accuracy": 0.5789,
+    "permutation_test": {
+      "n_perms": 1000,
+      "observed_total_distance": 5.6297,
+      "p_value": 0.001
+    },
+    "family_elongation": {
+      "A1": {
+        "ratio": 1.0,
+        "direction": "N/A",
+        "eigenvalues": []
+      },
+      "A2": {
+        "ratio": 1.0,
+        "direction": "N/A",
+        "eigenvalues": []
+      },
+      "A3": {
+        "ratio": 1.0,
+        "direction": "N/A",
+        "eigenvalues": []
+      }
+    },
+    "most_elongated_family": "A1",
+    "a3_bridge": {
+      "n_a3": 37,
+      "bridge_threshold": 0.7037,
+      "bridge_count": 8,
+      "bridge_fraction": 0.2162,
+      "spanning_ratio": 17.2761,
+      "mean_dist_to_A1": 1.093,
+      "mean_dist_to_A2": 2.3136,
+      "per_folio": {
+        "f103r": {
+          "dist_A1": 1.7294,
+          "dist_A2": 1.0855
+        },
+        "f103v": {
+          "dist_A1": 1.3204,
+          "dist_A2": 1.4944
+        },
+        "f104r": {
+          "dist_A1": 0.9213,
+          "dist_A2": 1.8935
+        },
+        "f104v": {
+          "dist_A1": 0.7585,
+          "dist_A2": 2.0564
+        },
+        "f105r": {
+          "dist_A1": 0.3222,
+          "dist_A2": 3.137
+        },
+        "f105v": {
+          "dist_A1": 2.5531,
+          "dist_A2": 5.3679
+        },
+        "f106r": {
+          "dist_A1": 1.3655,
+          "dist_A2": 1.4493
+        },
+        "f106v": {
+          "dist_A1": 0.5791,
+          "dist_A2": 2.2358
+        },
+        "f107r": {
+          "dist_A1": 1.1693,
+          "dist_A2": 3.9841
+        },
+        "f107v": {
+          "dist_A1": 3.0615,
+          "dist_A2": 0.2466
+        },
+        "f108r": {
+          "dist_A1": 0.9871,
+          "dist_A2": 1.8278
+        },
+        "f108v": {
+          "dist_A1": 0.6195,
+          "dist_A2": 2.1953
+        },
+        "f111r": {
+          "dist_A1": 0.5553,
+          "dist_A2": 2.2596
+        },
+        "f111v": {
+          "dist_A1": 1.1638,
+          "dist_A2": 1.651
+        },
+        "f112r": {
+          "dist_A1": 1.833,
+          "dist_A2": 0.9819
+        },
+        "f112v": {
+          "dist_A1": 0.656,
+          "dist_A2": 2.1588
+        },
+        "f113r": {
+          "dist_A1": 0.1115,
+          "dist_A2": 2.9264
+        },
+        "f113v": {
+          "dist_A1": 0.2923,
+          "dist_A2": 3.1071
+        },
+        "f114r": {
+          "dist_A1": 0.7327,
+          "dist_A2": 2.0821
+        },
+        "f114v": {
+          "dist_A1": 0.6713,
+          "dist_A2": 2.1435
+        },
+        "f115r": {
+          "dist_A1": 0.7445,
+          "dist_A2": 2.0704
+        },
+        "f115v": {
+          "dist_A1": 1.5624,
+          "dist_A2": 1.2524
+        },
+        "f116r": {
+          "dist_A1": 1.0703,
+          "dist_A2": 1.7446
+        },
+        "f26r": {
+          "dist_A1": 0.8574,
+          "dist_A2": 3.6723
+        },
+        "f26v": {
+          "dist_A1": 0.8574,
+          "dist_A2": 1.9575
+        },
+        "f31v": {
+          "dist_A1": 0.5076,
+          "dist_A2": 3.3224
+        },
+        "f34r": {
+          "dist_A1": 1.145,
+          "dist_A2": 1.6698
+        },
+        "f34v": {
+          "dist_A1": 1.1042,
+          "dist_A2": 3.9191
+        },
+        "f39r": {
+          "dist_A1": 0.9092,
+          "dist_A2": 3.7241
+        },
+        "f41r": {
+          "dist_A1": 0.2165,
+          "dist_A2": 3.0313
+        },
+        "f41v": {
+          "dist_A1": 1.9844,
+          "dist_A2": 0.8304
+        },
+        "f43v": {
+          "dist_A1": 1.5198,
+          "dist_A2": 1.2951
+        },
+        "f46r": {
+          "dist_A1": 0.264,
+          "dist_A2": 3.0788
+        },
+        "f46v": {
+          "dist_A1": 4.2605,
+          "dist_A2": 1.4456
+        },
+        "f48r": {
+          "dist_A1": 0.2871,
+          "dist_A2": 2.5277
+        },
+        "f48v": {
+          "dist_A1": 0.7997,
+          "dist_A2": 2.0151
+        },
+        "f94v": {
+          "dist_A1": 0.9492,
+          "dist_A2": 3.764
+        }
+      }
+    }
+  },
+  "C1668": {
+    "verdict": "FAMILY_GRADIENT",
+    "loo_accuracy": 0.7763,
+    "silhouette": 0.1342,
+    "rationale": "LOO accuracy = 0.78, silhouette = 0.13"
+  }
+}

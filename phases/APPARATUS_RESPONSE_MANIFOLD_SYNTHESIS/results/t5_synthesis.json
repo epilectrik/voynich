@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "phase": "580",
+    "script": "t5_synthesis.py",
+    "timestamp": "2026-03-11T18:40:28.488035+00:00",
+    "n_folios": 76
+  },
+  "constraints": {
+    "C1667": {
+      "claim": "Response-surface manifold (Space A, 11 apparatus features) has effective rank 5.88 and requires 5 PCs for 80% variance.",
+      "verdict": "MANIFOLD_DIFFUSE",
+      "tier": 2,
+      "scope": "B_APPARATUS",
+      "key_metrics": "Space A effective rank = 5.88, PCs for 80% = 5"
+    },
+    "C1668": {
+      "claim": "Apparatus families (A1=21, A2=18, A3=37) show LOO accuracy 0.78 and silhouette 0.13 in response-surface manifold.",
+      "verdict": "FAMILY_GRADIENT",
+      "tier": 2,
+      "scope": "B_APPARATUS",
+      "key_metrics": "LOO accuracy = 0.78, silhouette = 0.13"
+    },
+    "C1669": {
+      "claim": "Landscape classes (SA/TD/FR) show 2 significant KW PCs in Space A with between/within ratio 1.07.",
+      "verdict": "LANDSCAPE_ALIGNED",
+      "tier": 2,
+      "scope": "B_APPARATUS",
+      "key_metrics": "Space A: 2 significant PCs, three-pole reproduced (B/W=1.07)"
+    },
+    "C1670": {
+      "claim": "Folio accent vs manifold position: canonical r1=0.871, max incremental R\u00b2=0.268, max partial |r|=0.520.",
+      "verdict": "ACCENT_IS_MANIFOLD_POSITION",
+      "tier": 2,
+      "scope": "B_APPARATUS, ACCENT",
+      "key_metrics": "Canonical r1=0.871, max incr R\u00b2=0.268, max partial r=0.520"
+    }
+  },
+  "tier3_interpretation_freeze": "Currier B's productive closure advantage is broadly real but apparatus-conditioned. Regime-admission gating suppresses the main counterfeit-closure mechanism, especially in A2, but a residual forgiving pole remains. That pole is not a distinct hidden subfamily, not an opportunity artifact, and not recoverable by modest folio-specific retuning. It represents the forgiving edge of a continuous apparatus-response manifold, dominated by the same close-recovery channels that define A2 more generally. Folio accent and residual variance are therefore best understood as machine-fit positions on a real response surface, not as noise or decipherment failure.",
+  "summary": {
+    "space_A_effective_rank": 5.8829,
+    "space_A_pcs_80": 5,
+    "space_B_effective_rank": 1.3959,
+    "loo_accuracy": 0.7763,
+    "silhouette": 0.1342,
+    "landscape_sig_PCs_A": 2,
+    "landscape_bw_ratio_A": 1.0706,
+    "canonical_r1": 0.8713,
+    "max_incr_r2": 0.2677
+  }
+}
