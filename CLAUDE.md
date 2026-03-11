@@ -300,6 +300,51 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 
 ---
 
+## Phase Bookkeeping
+
+**When the user says "include bookkeeping"** as the final step of a phase, perform ALL of the following:
+
+### 1. Update Phase INDEX.md
+- Set status to `COMPLETE`
+- Fill in constraint verdicts and script runtimes
+
+### 2. Register Constraints
+- Add new constraints to `context/CLAIMS/INDEX.md` (table + findings summary)
+- Update the total count and version number at the top of INDEX.md
+
+### 3. Update CLAUDE.md Quick Reference
+- Bump version number (e.g., 5.52 -> 5.53)
+- Update constraint count and phase count
+
+### 4. Update Changelog
+- Add new version section to `context/SYSTEM/CHANGELOG.md`
+- Include summary, changes table, and key findings
+
+### 5. Regenerate Expert Sync Files
+Run all three generators:
+```bash
+python context/generate_constraint_table.py
+python context/MODEL_FITS/generate_fit_table.py
+python context/generate_expert_context.py --compact
+```
+
+### 6. Manually Update Crazy-Expert
+The crazy-expert agent (`.claude/agents/crazy-expert.md`) does NOT auto-generate. You must:
+- Add new constraints as tab-separated lines after the last existing constraint
+- Update the "highest ID present" note to the new max constraint ID
+- Format: `C####\tClaim text\tTier\tScope tags\tKey metrics`
+
+### 7. Commit and Push
+```bash
+git add <all changed files>
+git commit -m "Phase NNN: Description -- VERDICT (C####-C####)"
+git push origin master && git push github master:main
+```
+
+**This is a mandatory checklist.** Do not skip steps or consider bookkeeping complete until all 7 steps are done.
+
+---
+
 ## Agent Workflow: Expert Validation
 
 When planning changes that affect the constraint system, structural contracts, or architectural documentation, request expert-advisor validation before finalizing.
