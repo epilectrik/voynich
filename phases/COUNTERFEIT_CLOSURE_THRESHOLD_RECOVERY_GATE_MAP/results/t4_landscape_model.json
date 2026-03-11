@@ -1,0 +1,1460 @@
+{
+ "metadata": {
+  "phase": "574",
+  "script": "t4_landscape_model.py",
+  "timestamp": "2026-03-11T00:48:44.307321+00:00",
+  "elapsed_seconds": 0.02,
+  "n_folios": 76,
+  "global_margin_mean": 0.098185,
+  "global_margin_sd": 0.075892,
+  "classification_note": "Three-way classification is a DESCRIPTIVE CONVENIENCE OVERLAY on a continuous surface, NOT ontological folio species"
+ },
+ "per_folio_landscape": {
+  "f103r": {
+   "margin": 0.081586,
+   "margin_sd": 0.084487,
+   "cts_vs_threshold": 0.2772,
+   "positive_event_fraction": 0.6923,
+   "n_events": 13,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3069,
+   "z_margin": -0.2187,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1345,
+    "A2_SEALED_RECIRCULATION": 0.2198,
+    "A3_DISTILL_COLLECT": 0.0811
+   }
+  },
+  "f103v": {
+   "margin": 0.098224,
+   "margin_sd": 0.105593,
+   "cts_vs_threshold": 0.313,
+   "positive_event_fraction": 0.6154,
+   "n_events": 13,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3427,
+   "z_margin": 0.0005,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1803,
+    "A2_SEALED_RECIRCULATION": 0.2677,
+    "A3_DISTILL_COLLECT": 0.0321
+   }
+  },
+  "f104r": {
+   "margin": 0.117894,
+   "margin_sd": 0.057499,
+   "cts_vs_threshold": 0.2936,
+   "positive_event_fraction": 0.8889,
+   "n_events": 9,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3233,
+   "z_margin": 0.2597,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1513,
+    "A2_SEALED_RECIRCULATION": 0.2518,
+    "A3_DISTILL_COLLECT": 0.0459
+   }
+  },
+  "f104v": {
+   "margin": 0.108057,
+   "margin_sd": 0.077979,
+   "cts_vs_threshold": 0.222,
+   "positive_event_fraction": 0.9167,
+   "n_events": 12,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2517,
+   "z_margin": 0.1301,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0525,
+    "A2_SEALED_RECIRCULATION": 0.1746,
+    "A3_DISTILL_COLLECT": 0.1476
+   }
+  },
+  "f105r": {
+   "margin": 0.16979,
+   "margin_sd": 0.067283,
+   "cts_vs_threshold": 0.251,
+   "positive_event_fraction": 1.0,
+   "n_events": 12,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2807,
+   "z_margin": 0.9435,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1027,
+    "A2_SEALED_RECIRCULATION": 0.2364,
+    "A3_DISTILL_COLLECT": 0.1147
+   }
+  },
+  "f105v": {
+   "margin": 0.251786,
+   "margin_sd": 0.042193,
+   "cts_vs_threshold": 0.2525,
+   "positive_event_fraction": 1.0,
+   "n_events": 10,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2822,
+   "z_margin": 2.0239,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1594,
+    "A2_SEALED_RECIRCULATION": 0.2977,
+    "A3_DISTILL_COLLECT": 0.1637
+   }
+  },
+  "f106r": {
+   "margin": 0.101422,
+   "margin_sd": 0.069188,
+   "cts_vs_threshold": 0.2602,
+   "positive_event_fraction": 0.7778,
+   "n_events": 9,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2899,
+   "z_margin": 0.0427,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1063,
+    "A2_SEALED_RECIRCULATION": 0.208,
+    "A3_DISTILL_COLLECT": 0.0955
+   }
+  },
+  "f106v": {
+   "margin": 0.119518,
+   "margin_sd": 0.058265,
+   "cts_vs_threshold": 0.2072,
+   "positive_event_fraction": 1.0,
+   "n_events": 9,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2369,
+   "z_margin": 0.2811,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0303,
+    "A2_SEALED_RECIRCULATION": 0.17,
+    "A3_DISTILL_COLLECT": 0.1676
+   }
+  },
+  "f107r": {
+   "margin": 0.188234,
+   "margin_sd": 0.085998,
+   "cts_vs_threshold": 0.3571,
+   "positive_event_fraction": 1.0,
+   "n_events": 12,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3868,
+   "z_margin": 1.1865,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2498,
+    "A2_SEALED_RECIRCULATION": 0.3571,
+    "A3_DISTILL_COLLECT": 0.0774
+   }
+  },
+  "f107v": {
+   "margin": 0.052462,
+   "margin_sd": 0.098675,
+   "cts_vs_threshold": 0.3161,
+   "positive_event_fraction": 0.4286,
+   "n_events": 14,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3458,
+   "z_margin": -0.6025,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.196,
+    "A2_SEALED_RECIRCULATION": 0.2611,
+    "A3_DISTILL_COLLECT": 0.0737
+   }
+  },
+  "f108r": {
+   "margin": 0.097049,
+   "margin_sd": 0.047672,
+   "cts_vs_threshold": 0.2815,
+   "positive_event_fraction": 1.0,
+   "n_events": 10,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3112,
+   "z_margin": -0.015,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1366,
+    "A2_SEALED_RECIRCULATION": 0.2299,
+    "A3_DISTILL_COLLECT": 0.0684
+   }
+  },
+  "f108v": {
+   "margin": 0.104816,
+   "margin_sd": 0.077683,
+   "cts_vs_threshold": 0.2906,
+   "positive_event_fraction": 0.9231,
+   "n_events": 13,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3203,
+   "z_margin": 0.0874,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1481,
+    "A2_SEALED_RECIRCULATION": 0.2432,
+    "A3_DISTILL_COLLECT": 0.0535
+   }
+  },
+  "f111r": {
+   "margin": 0.151034,
+   "margin_sd": 0.08551,
+   "cts_vs_threshold": 0.3358,
+   "positive_event_fraction": 1.0,
+   "n_events": 12,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3655,
+   "z_margin": 0.6964,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2128,
+    "A2_SEALED_RECIRCULATION": 0.315,
+    "A3_DISTILL_COLLECT": 0.0298
+   }
+  },
+  "f111v": {
+   "margin": 0.080459,
+   "margin_sd": 0.055355,
+   "cts_vs_threshold": 0.3105,
+   "positive_event_fraction": 0.9,
+   "n_events": 10,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3402,
+   "z_margin": -0.2336,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1801,
+    "A2_SEALED_RECIRCULATION": 0.2596,
+    "A3_DISTILL_COLLECT": 0.0493
+   }
+  },
+  "f112r": {
+   "margin": 0.042933,
+   "margin_sd": 0.065435,
+   "cts_vs_threshold": 0.4057,
+   "positive_event_fraction": 0.8889,
+   "n_events": 9,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.4354,
+   "z_margin": -0.728,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.3197,
+    "A2_SEALED_RECIRCULATION": 0.3785,
+    "A3_DISTILL_COLLECT": 0.1398
+   }
+  },
+  "f112v": {
+   "margin": 0.116133,
+   "margin_sd": 0.02809,
+   "cts_vs_threshold": 0.3183,
+   "positive_event_fraction": 1.0,
+   "n_events": 7,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.348,
+   "z_margin": 0.2365,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1863,
+    "A2_SEALED_RECIRCULATION": 0.2802,
+    "A3_DISTILL_COLLECT": 0.0136
+   }
+  },
+  "f113r": {
+   "margin": 0.129155,
+   "margin_sd": 0.047458,
+   "cts_vs_threshold": 0.3341,
+   "positive_event_fraction": 1.0,
+   "n_events": 11,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3638,
+   "z_margin": 0.4081,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2086,
+    "A2_SEALED_RECIRCULATION": 0.3041,
+    "A3_DISTILL_COLLECT": 0.0127
+   }
+  },
+  "f113v": {
+   "margin": 0.183576,
+   "margin_sd": 0.083327,
+   "cts_vs_threshold": 0.3205,
+   "positive_event_fraction": 1.0,
+   "n_events": 8,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3502,
+   "z_margin": 1.1252,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1989,
+    "A2_SEALED_RECIRCULATION": 0.3134,
+    "A3_DISTILL_COLLECT": 0.0591
+   }
+  },
+  "f114r": {
+   "margin": 0.097932,
+   "margin_sd": 0.044165,
+   "cts_vs_threshold": 0.208,
+   "positive_event_fraction": 1.0,
+   "n_events": 10,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2377,
+   "z_margin": -0.0033,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0397,
+    "A2_SEALED_RECIRCULATION": 0.1582,
+    "A3_DISTILL_COLLECT": 0.1686
+   }
+  },
+  "f114v": {
+   "margin": 0.135421,
+   "margin_sd": 0.046162,
+   "cts_vs_threshold": 0.2159,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2456,
+   "z_margin": 0.4906,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.044,
+    "A2_SEALED_RECIRCULATION": 0.1861,
+    "A3_DISTILL_COLLECT": 0.1556
+   }
+  },
+  "f115r": {
+   "margin": 0.110397,
+   "margin_sd": 0.050241,
+   "cts_vs_threshold": 0.243,
+   "positive_event_fraction": 1.0,
+   "n_events": 8,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2727,
+   "z_margin": 0.1609,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0808,
+    "A2_SEALED_RECIRCULATION": 0.1946,
+    "A3_DISTILL_COLLECT": 0.1178
+   }
+  },
+  "f115v": {
+   "margin": 0.087421,
+   "margin_sd": 0.03182,
+   "cts_vs_threshold": 0.2551,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.2848,
+   "z_margin": -0.1418,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1031,
+    "A2_SEALED_RECIRCULATION": 0.1971,
+    "A3_DISTILL_COLLECT": 0.1066
+   }
+  },
+  "f116r": {
+   "margin": 0.093053,
+   "margin_sd": 0.029072,
+   "cts_vs_threshold": 0.3542,
+   "positive_event_fraction": 1.0,
+   "n_events": 8,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "mean_CTS": 0.3839,
+   "z_margin": -0.0676,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2387,
+    "A2_SEALED_RECIRCULATION": 0.318,
+    "A3_DISTILL_COLLECT": 0.0514
+   }
+  },
+  "f26r": {
+   "margin": 0.182198,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.1503,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.18,
+   "z_margin": 1.107,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0794,
+    "A2_SEALED_RECIRCULATION": 0.1983,
+    "A3_DISTILL_COLLECT": 0.2545
+   }
+  },
+  "f26v": {
+   "margin": 0.120791,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.551,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.5807,
+   "z_margin": 0.2979,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.5151,
+    "A2_SEALED_RECIRCULATION": 0.5872,
+    "A3_DISTILL_COLLECT": 0.3187
+   }
+  },
+  "f31r": {
+   "margin": 0.148013,
+   "margin_sd": 0.03952,
+   "cts_vs_threshold": 0.0991,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A1_BATH_REFLUX",
+   "section": "H",
+   "mean_CTS": 0.1411,
+   "z_margin": 0.6566,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1181,
+    "A2_SEALED_RECIRCULATION": 0.1766,
+    "A3_DISTILL_COLLECT": 0.3127
+   }
+  },
+  "f31v": {
+   "margin": 0.180645,
+   "margin_sd": 0.066376,
+   "cts_vs_threshold": 0.2827,
+   "positive_event_fraction": 1.0,
+   "n_events": 3,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.3124,
+   "z_margin": 1.0865,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1478,
+    "A2_SEALED_RECIRCULATION": 0.2725,
+    "A3_DISTILL_COLLECT": 0.0824
+   }
+  },
+  "f33r": {
+   "margin": 0.113125,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.323,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.503,
+   "z_margin": 0.1969,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.3145,
+    "A2_SEALED_RECIRCULATION": 0.365,
+    "A3_DISTILL_COLLECT": 0.1481
+   }
+  },
+  "f33v": {
+   "margin": 0.177099,
+   "margin_sd": 0.088272,
+   "cts_vs_threshold": 0.3224,
+   "positive_event_fraction": 1.0,
+   "n_events": 5,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.5024,
+   "z_margin": 1.0398,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.3183,
+    "A2_SEALED_RECIRCULATION": 0.3864,
+    "A3_DISTILL_COLLECT": 0.1561
+   }
+  },
+  "f34r": {
+   "margin": 0.133501,
+   "margin_sd": 0.071409,
+   "cts_vs_threshold": 0.4623,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.492,
+   "z_margin": 0.4654,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.3898,
+    "A2_SEALED_RECIRCULATION": 0.4701,
+    "A3_DISTILL_COLLECT": 0.1934
+   }
+  },
+  "f34v": {
+   "margin": 0.207817,
+   "margin_sd": 0.020153,
+   "cts_vs_threshold": 0.4972,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.5269,
+   "z_margin": 1.4446,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.4472,
+    "A2_SEALED_RECIRCULATION": 0.5387,
+    "A3_DISTILL_COLLECT": 0.2564
+   }
+  },
+  "f39r": {
+   "margin": 0.202844,
+   "margin_sd": 0.03486,
+   "cts_vs_threshold": 0.4864,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.5161,
+   "z_margin": 1.3791,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.4313,
+    "A2_SEALED_RECIRCULATION": 0.523,
+    "A3_DISTILL_COLLECT": 0.2403
+   }
+  },
+  "f39v": {
+   "margin": -0.070466,
+   "margin_sd": 0.014714,
+   "cts_vs_threshold": -0.0135,
+   "positive_event_fraction": 0.0,
+   "n_events": 2,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.1665,
+   "z_margin": -2.2222,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2795,
+    "A2_SEALED_RECIRCULATION": 0.1508,
+    "A3_DISTILL_COLLECT": 0.4346
+   }
+  },
+  "f40r": {
+   "margin": -0.021996,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.0,
+   "positive_event_fraction": 0.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.18,
+   "z_margin": -1.5836,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2353,
+    "A2_SEALED_RECIRCULATION": 0.1115,
+    "A3_DISTILL_COLLECT": 0.398
+   }
+  },
+  "f41r": {
+   "margin": 0.178417,
+   "margin_sd": 0.069817,
+   "cts_vs_threshold": 0.4927,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.5224,
+   "z_margin": 1.0572,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.4363,
+    "A2_SEALED_RECIRCULATION": 0.523,
+    "A3_DISTILL_COLLECT": 0.2422
+   }
+  },
+  "f41v": {
+   "margin": 0.026881,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.1734,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.2031,
+   "z_margin": -0.9395,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0979,
+    "A2_SEALED_RECIRCULATION": 0.1121,
+    "A3_DISTILL_COLLECT": 0.2366
+   }
+  },
+  "f43v": {
+   "margin": 0.077064,
+   "margin_sd": 0.03035,
+   "cts_vs_threshold": 0.5516,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.5813,
+   "z_margin": -0.2783,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.518,
+    "A2_SEALED_RECIRCULATION": 0.5817,
+    "A3_DISTILL_COLLECT": 0.3231
+   }
+  },
+  "f46r": {
+   "margin": 0.146708,
+   "margin_sd": 0.028136,
+   "cts_vs_threshold": 0.1656,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.1953,
+   "z_margin": 0.6394,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0395,
+    "A2_SEALED_RECIRCULATION": 0.1709,
+    "A3_DISTILL_COLLECT": 0.2274
+   }
+  },
+  "f46v": {
+   "margin": -0.009338,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.0826,
+   "positive_event_fraction": 0.0,
+   "n_events": 1,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.1123,
+   "z_margin": -1.4168,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.198,
+    "A2_SEALED_RECIRCULATION": 0.1444,
+    "A3_DISTILL_COLLECT": 0.369
+   }
+  },
+  "f48r": {
+   "margin": 0.134595,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.5633,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.593,
+   "z_margin": 0.4798,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.5326,
+    "A2_SEALED_RECIRCULATION": 0.6066,
+    "A3_DISTILL_COLLECT": 0.3362
+   }
+  },
+  "f48v": {
+   "margin": 0.094905,
+   "margin_sd": 0.035368,
+   "cts_vs_threshold": 0.3395,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.3692,
+   "z_margin": -0.0432,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2179,
+    "A2_SEALED_RECIRCULATION": 0.2997,
+    "A3_DISTILL_COLLECT": 0.0358
+   }
+  },
+  "f50r": {
+   "margin": 0.106717,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.4009,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.5809,
+   "z_margin": 0.1124,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.4208,
+    "A2_SEALED_RECIRCULATION": 0.4707,
+    "A3_DISTILL_COLLECT": 0.2385
+   }
+  },
+  "f50v": {
+   "margin": -0.036598,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": -0.027,
+   "positive_event_fraction": 0.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.153,
+   "z_margin": -1.776,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2708,
+    "A2_SEALED_RECIRCULATION": 0.1524,
+    "A3_DISTILL_COLLECT": 0.4375
+   }
+  },
+  "f55r": {
+   "margin": 0.042606,
+   "margin_sd": 0.042998,
+   "cts_vs_threshold": 0.2072,
+   "positive_event_fraction": 1.0,
+   "n_events": 3,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.3872,
+   "z_margin": -0.7323,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1848,
+    "A2_SEALED_RECIRCULATION": 0.1898,
+    "A3_DISTILL_COLLECT": 0.1477
+   }
+  },
+  "f55v": {
+   "margin": -0.114547,
+   "margin_sd": 0.010783,
+   "cts_vs_threshold": -0.0815,
+   "positive_event_fraction": 0.0,
+   "n_events": 2,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.0985,
+   "z_margin": -2.8031,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.3747,
+    "A2_SEALED_RECIRCULATION": 0.2557,
+    "A3_DISTILL_COLLECT": 0.5377
+   }
+  },
+  "f66r": {
+   "margin": 0.106252,
+   "margin_sd": 0.028435,
+   "cts_vs_threshold": -0.034,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "T",
+   "mean_CTS": 0.146,
+   "z_margin": 0.1063,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2285,
+    "A2_SEALED_RECIRCULATION": 0.1785,
+    "A3_DISTILL_COLLECT": 0.4166
+   }
+  },
+  "f75r": {
+   "margin": 0.124685,
+   "margin_sd": 0.035929,
+   "cts_vs_threshold": 0.2603,
+   "positive_event_fraction": 1.0,
+   "n_events": 11,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.3023,
+   "z_margin": 0.3492,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1126,
+    "A2_SEALED_RECIRCULATION": 0.2211,
+    "A3_DISTILL_COLLECT": 0.0842
+   }
+  },
+  "f75v": {
+   "margin": 0.101371,
+   "margin_sd": 0.044906,
+   "cts_vs_threshold": 0.2501,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2921,
+   "z_margin": 0.042,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1005,
+    "A2_SEALED_RECIRCULATION": 0.1994,
+    "A3_DISTILL_COLLECT": 0.1013
+   }
+  },
+  "f76r": {
+   "margin": 0.124499,
+   "margin_sd": 0.037487,
+   "cts_vs_threshold": 0.2205,
+   "positive_event_fraction": 1.0,
+   "n_events": 11,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2625,
+   "z_margin": 0.3467,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0564,
+    "A2_SEALED_RECIRCULATION": 0.1828,
+    "A3_DISTILL_COLLECT": 0.1403
+   }
+  },
+  "f76v": {
+   "margin": 0.114119,
+   "margin_sd": 0.029371,
+   "cts_vs_threshold": 0.2956,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.3376,
+   "z_margin": 0.21,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1628,
+    "A2_SEALED_RECIRCULATION": 0.2563,
+    "A3_DISTILL_COLLECT": 0.0365
+   }
+  },
+  "f77r": {
+   "margin": 0.159993,
+   "margin_sd": 0.074001,
+   "cts_vs_threshold": 0.1581,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2001,
+   "z_margin": 0.8144,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0492,
+    "A2_SEALED_RECIRCULATION": 0.1761,
+    "A3_DISTILL_COLLECT": 0.2311
+   }
+  },
+  "f77v": {
+   "margin": 0.136398,
+   "margin_sd": 0.034144,
+   "cts_vs_threshold": 0.11,
+   "positive_event_fraction": 1.0,
+   "n_events": 9,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.152,
+   "z_margin": 0.5035,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1009,
+    "A2_SEALED_RECIRCULATION": 0.1629,
+    "A3_DISTILL_COLLECT": 0.2966
+   }
+  },
+  "f78r": {
+   "margin": 0.108324,
+   "margin_sd": 0.054907,
+   "cts_vs_threshold": 0.1774,
+   "positive_event_fraction": 1.0,
+   "n_events": 8,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2194,
+   "z_margin": 0.1336,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.015,
+    "A2_SEALED_RECIRCULATION": 0.1434,
+    "A3_DISTILL_COLLECT": 0.2018
+   }
+  },
+  "f78v": {
+   "margin": 0.140213,
+   "margin_sd": 0.013944,
+   "cts_vs_threshold": 0.2588,
+   "positive_event_fraction": 1.0,
+   "n_events": 4,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.3008,
+   "z_margin": 0.5538,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1119,
+    "A2_SEALED_RECIRCULATION": 0.2277,
+    "A3_DISTILL_COLLECT": 0.0876
+   }
+  },
+  "f79r": {
+   "margin": 0.102787,
+   "margin_sd": 0.049111,
+   "cts_vs_threshold": 0.0946,
+   "positive_event_fraction": 1.0,
+   "n_events": 5,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.1366,
+   "z_margin": 0.0606,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1233,
+    "A2_SEALED_RECIRCULATION": 0.1484,
+    "A3_DISTILL_COLLECT": 0.3189
+   }
+  },
+  "f79v": {
+   "margin": 0.15399,
+   "margin_sd": 0.043856,
+   "cts_vs_threshold": 0.1139,
+   "positive_event_fraction": 1.0,
+   "n_events": 7,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.1559,
+   "z_margin": 0.7353,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0995,
+    "A2_SEALED_RECIRCULATION": 0.175,
+    "A3_DISTILL_COLLECT": 0.2923
+   }
+  },
+  "f80r": {
+   "margin": 0.107688,
+   "margin_sd": 0.051472,
+   "cts_vs_threshold": 0.2071,
+   "positive_event_fraction": 1.0,
+   "n_events": 12,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2491,
+   "z_margin": 0.1252,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0402,
+    "A2_SEALED_RECIRCULATION": 0.162,
+    "A3_DISTILL_COLLECT": 0.1601
+   }
+  },
+  "f80v": {
+   "margin": 0.127109,
+   "margin_sd": 0.081398,
+   "cts_vs_threshold": 0.24,
+   "positive_event_fraction": 1.0,
+   "n_events": 7,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.282,
+   "z_margin": 0.3811,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.084,
+    "A2_SEALED_RECIRCULATION": 0.2019,
+    "A3_DISTILL_COLLECT": 0.1128
+   }
+  },
+  "f81r": {
+   "margin": 0.088968,
+   "margin_sd": 0.065176,
+   "cts_vs_threshold": 0.1476,
+   "positive_event_fraction": 0.8889,
+   "n_events": 9,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.1896,
+   "z_margin": -0.1214,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0576,
+    "A2_SEALED_RECIRCULATION": 0.1227,
+    "A3_DISTILL_COLLECT": 0.2459
+   }
+  },
+  "f82r": {
+   "margin": 0.122956,
+   "margin_sd": 0.022802,
+   "cts_vs_threshold": 0.2116,
+   "positive_event_fraction": 1.0,
+   "n_events": 6,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2536,
+   "z_margin": 0.3264,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0437,
+    "A2_SEALED_RECIRCULATION": 0.1747,
+    "A3_DISTILL_COLLECT": 0.1529
+   }
+  },
+  "f82v": {
+   "margin": 0.130281,
+   "margin_sd": 0.039683,
+   "cts_vs_threshold": 0.1424,
+   "positive_event_fraction": 1.0,
+   "n_events": 7,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.1844,
+   "z_margin": 0.4229,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0547,
+    "A2_SEALED_RECIRCULATION": 0.1512,
+    "A3_DISTILL_COLLECT": 0.2507
+   }
+  },
+  "f83r": {
+   "margin": 0.13722,
+   "margin_sd": 0.0479,
+   "cts_vs_threshold": 0.2492,
+   "positive_event_fraction": 1.0,
+   "n_events": 9,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2912,
+   "z_margin": 0.5144,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.098,
+    "A2_SEALED_RECIRCULATION": 0.2165,
+    "A3_DISTILL_COLLECT": 0.1006
+   }
+  },
+  "f83v": {
+   "margin": 0.111274,
+   "margin_sd": 0.016315,
+   "cts_vs_threshold": 0.0942,
+   "positive_event_fraction": 1.0,
+   "n_events": 6,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.1362,
+   "z_margin": 0.1725,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1228,
+    "A2_SEALED_RECIRCULATION": 0.1539,
+    "A3_DISTILL_COLLECT": 0.319
+   }
+  },
+  "f84r": {
+   "margin": 0.126983,
+   "margin_sd": 0.067357,
+   "cts_vs_threshold": 0.1808,
+   "positive_event_fraction": 1.0,
+   "n_events": 11,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2228,
+   "z_margin": 0.3795,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0044,
+    "A2_SEALED_RECIRCULATION": 0.1578,
+    "A3_DISTILL_COLLECT": 0.1964
+   }
+  },
+  "f84v": {
+   "margin": 0.115836,
+   "margin_sd": 0.040054,
+   "cts_vs_threshold": 0.2226,
+   "positive_event_fraction": 1.0,
+   "n_events": 9,
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "mean_CTS": 0.2646,
+   "z_margin": 0.2326,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.0597,
+    "A2_SEALED_RECIRCULATION": 0.1796,
+    "A3_DISTILL_COLLECT": 0.1376
+   }
+  },
+  "f85r1": {
+   "margin": 0.078331,
+   "margin_sd": 0.074917,
+   "cts_vs_threshold": 0.1946,
+   "positive_event_fraction": 0.6,
+   "n_events": 10,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "T",
+   "mean_CTS": 0.3746,
+   "z_margin": -0.2616,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1588,
+    "A2_SEALED_RECIRCULATION": 0.1814,
+    "A3_DISTILL_COLLECT": 0.1404
+   }
+  },
+  "f85r2": {
+   "margin": -0.009141,
+   "margin_sd": 0.092151,
+   "cts_vs_threshold": -0.0268,
+   "positive_event_fraction": 0.3333,
+   "n_events": 3,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "mean_CTS": 0.1532,
+   "z_margin": -1.4142,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2554,
+    "A2_SEALED_RECIRCULATION": 0.1452,
+    "A3_DISTILL_COLLECT": 0.4279
+   }
+  },
+  "f86v3": {
+   "margin": 0.033474,
+   "margin_sd": 0.055262,
+   "cts_vs_threshold": 0.1719,
+   "positive_event_fraction": 0.8333,
+   "n_events": 6,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "mean_CTS": 0.3519,
+   "z_margin": -0.8527,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1572,
+    "A2_SEALED_RECIRCULATION": 0.1391,
+    "A3_DISTILL_COLLECT": 0.1789
+   }
+  },
+  "f86v4": {
+   "margin": 0.025184,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": -0.0697,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "mean_CTS": 0.1103,
+   "z_margin": -0.9619,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2912,
+    "A2_SEALED_RECIRCULATION": 0.2041,
+    "A3_DISTILL_COLLECT": 0.4757
+   }
+  },
+  "f86v5": {
+   "margin": -0.121937,
+   "margin_sd": 0.056963,
+   "cts_vs_threshold": 0.081,
+   "positive_event_fraction": 0.0,
+   "n_events": 9,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "mean_CTS": 0.261,
+   "z_margin": -2.9004,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2668,
+    "A2_SEALED_RECIRCULATION": 0.1371,
+    "A3_DISTILL_COLLECT": 0.3601
+   }
+  },
+  "f86v6": {
+   "margin": 0.018086,
+   "margin_sd": 0.038465,
+   "cts_vs_threshold": 0.0239,
+   "positive_event_fraction": 0.3636,
+   "n_events": 11,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "mean_CTS": 0.2039,
+   "z_margin": -1.0554,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1893,
+    "A2_SEALED_RECIRCULATION": 0.0715,
+    "A3_DISTILL_COLLECT": 0.3541
+   }
+  },
+  "f94r": {
+   "margin": 0.070226,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": 0.0257,
+   "positive_event_fraction": 1.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.2057,
+   "z_margin": -0.3684,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1644,
+    "A2_SEALED_RECIRCULATION": 0.0884,
+    "A3_DISTILL_COLLECT": 0.3396
+   }
+  },
+  "f94v": {
+   "margin": 0.226312,
+   "margin_sd": 0.117303,
+   "cts_vs_threshold": 0.6275,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "mean_CTS": 0.6572,
+   "z_margin": 1.6883,
+   "classification": "STABLE_AMPLIFIER",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.6319,
+    "A2_SEALED_RECIRCULATION": 0.7161,
+    "A3_DISTILL_COLLECT": 0.4388
+   }
+  },
+  "f95r1": {
+   "margin": 0.090816,
+   "margin_sd": 0.022768,
+   "cts_vs_threshold": 0.0601,
+   "positive_event_fraction": 1.0,
+   "n_events": 2,
+   "profile": "A1_BATH_REFLUX",
+   "section": "H",
+   "mean_CTS": 0.1021,
+   "z_margin": -0.0971,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.1734,
+    "A2_SEALED_RECIRCULATION": 0.1708,
+    "A3_DISTILL_COLLECT": 0.3685
+   }
+  },
+  "f95r2": {
+   "margin": -0.18094,
+   "margin_sd": 0.0,
+   "cts_vs_threshold": -0.0851,
+   "positive_event_fraction": 0.0,
+   "n_events": 1,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.0949,
+   "z_margin": -3.6779,
+   "classification": "FORGIVING_RECIRCULATOR",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.4232,
+    "A2_SEALED_RECIRCULATION": 0.2987,
+    "A3_DISTILL_COLLECT": 0.5745
+   }
+  },
+  "f95v2": {
+   "margin": 0.051335,
+   "margin_sd": 0.008511,
+   "cts_vs_threshold": -0.0731,
+   "positive_event_fraction": 1.0,
+   "n_events": 3,
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "mean_CTS": 0.1069,
+   "z_margin": -0.6173,
+   "classification": "THRESHOLD_DEPENDENT",
+   "centroid_distances": {
+    "A1_BATH_REFLUX": 0.2879,
+    "A2_SEALED_RECIRCULATION": 0.2118,
+    "A3_DISTILL_COLLECT": 0.4755
+   }
+  }
+ },
+ "classification_summary": {
+  "STABLE_AMPLIFIER": {
+   "n_folios": 19,
+   "profile_distribution": {
+    "A3_DISTILL_COLLECT": 12,
+    "A1_BATH_REFLUX": 6,
+    "A2_SEALED_RECIRCULATION": 1
+   },
+   "section_distribution": {
+    "S": 5,
+    "H": 9,
+    "B": 5
+   },
+   "mean_margin": 0.174857,
+   "mean_z_margin": 1.0103
+  },
+  "THRESHOLD_DEPENDENT": {
+   "n_folios": 48,
+   "profile_distribution": {
+    "A3_DISTILL_COLLECT": 24,
+    "A2_SEALED_RECIRCULATION": 9,
+    "A1_BATH_REFLUX": 15
+   },
+   "section_distribution": {
+    "S": 18,
+    "H": 12,
+    "T": 2,
+    "B": 14,
+    "C": 2
+   },
+   "mean_margin": 0.097638,
+   "mean_z_margin": -0.0072
+  },
+  "FORGIVING_RECIRCULATOR": {
+   "n_folios": 9,
+   "profile_distribution": {
+    "A2_SEALED_RECIRCULATION": 8,
+    "A3_DISTILL_COLLECT": 1
+   },
+   "section_distribution": {
+    "H": 6,
+    "C": 3
+   },
+   "mean_margin": -0.060764,
+   "mean_z_margin": -2.0944
+  }
+ },
+ "profile_x_classification": {
+  "A1_BATH_REFLUX": {
+   "STABLE_AMPLIFIER": 6,
+   "THRESHOLD_DEPENDENT": 15
+  },
+  "A2_SEALED_RECIRCULATION": {
+   "THRESHOLD_DEPENDENT": 9,
+   "STABLE_AMPLIFIER": 1,
+   "FORGIVING_RECIRCULATOR": 8
+  },
+  "A3_DISTILL_COLLECT": {
+   "THRESHOLD_DEPENDENT": 24,
+   "STABLE_AMPLIFIER": 12,
+   "FORGIVING_RECIRCULATOR": 1
+  }
+ },
+ "accent_correlations": {
+  "margin_vs_F1": {
+   "rho": 0.2232,
+   "n": 76
+  },
+  "margin_vs_F2": {
+   "rho": -0.073,
+   "n": 76
+  },
+  "margin_vs_F3": {
+   "rho": 0.103,
+   "n": 76
+  },
+  "margin_vs_F4_raw": {
+   "rho": 0.0749,
+   "n": 76
+  },
+  "margin_vs_F5": {
+   "rho": -0.093,
+   "n": 76
+  },
+  "margin_vs_CCS1": {
+   "rho": -0.5778,
+   "n": 76
+  },
+  "margin_vs_NO_CR": {
+   "rho": -0.5006,
+   "n": 76
+  },
+  "kw_margin_by_profile": {
+   "H": 23.0722,
+   "k": 3
+  },
+  "kw_margin_by_section": {
+   "H": 13.1732,
+   "k": 5
+  }
+ },
+ "design_freedom_links": {
+  "F1": {
+   "NO_R1_C_ONLY": {
+    "rho": 0.0507,
+    "n": 18
+   },
+   "NO_R4_C_ONLY": {
+    "rho": 0.0589,
+    "n": 18
+   },
+   "corr_with_margin": 0.0155
+  },
+  "F2": {
+   "NO_R1_C_ONLY": {
+    "rho": 0.0114,
+    "n": 18
+   },
+   "NO_R4_C_ONLY": {
+    "rho": 0.0671,
+    "n": 18
+   },
+   "corr_with_margin": -0.1352
+  },
+  "F5": {
+   "NO_R1_C_ONLY": {
+    "rho": 0.0485,
+    "n": 18
+   },
+   "NO_R4_C_ONLY": {
+    "rho": 0.0175,
+    "n": 18
+   },
+   "corr_with_margin": -0.0114
+  }
+ },
+ "profile_centroids": {
+  "A1_BATH_REFLUX": {
+   "margin": 0.1225,
+   "cts_vs_threshold": 0.1807,
+   "mean_CTS": 0.2227
+  },
+  "A2_SEALED_RECIRCULATION": {
+   "margin": 0.0148,
+   "cts_vs_threshold": 0.0744,
+   "mean_CTS": 0.2544
+  },
+  "A3_DISTILL_COLLECT": {
+   "margin": 0.1249,
+   "cts_vs_threshold": 0.3257,
+   "mean_CTS": 0.3554
+  }
+ },
+ "cross_cut_fraction": 0.25
+}

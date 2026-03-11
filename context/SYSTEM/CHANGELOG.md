@@ -4,6 +4,37 @@
 
 ---
 
+## Version 5.47 (2026-03-10) - Phase 574: Counterfeit Closure Threshold + Recovery Gate Map
+
+### Summary
+
+Phase 574 decomposes the close recovery mechanism (C1639) into R1-R5 sub-channels, models counterfeit closure threshold curves, identifies which closure packet morphologies are counterfeitable in A2, and maps the continuous apparatus response landscape.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/COUNTERFEIT_CLOSURE_THRESHOLD_RECOVERY_GATE_MAP/` -- Phase 574 directory with 6 scripts (T0-T5), 6 result files, REPORT_574.md |
+| **ADDED** | C1643: Recovery gate R1_C dominant — R1_C (117%) and R4_C (119%) strongly non-additive coupled loop |
+| **ADDED** | C1644: Threshold A2 shifted gradual — A2 needs CTS=0.18 vs A1=0.04, shift +0.138, transition width 0.327 |
+| **ADDED** | C1645: Morphology selective counterfeiting — 5 resistant, 5 counterfeitable packet types |
+| **ADDED** | C1646: Landscape three-pole — 25% amplifier, 63% threshold-dependent, 12% forgiving recirculator |
+| **UPDATED** | INDEX.md -- +4 constraints (1646 total), Phase 574 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (1646 constraints, Phase 574) |
+
+### Key Findings
+
+- **Recovery gate (C1643):** Containment drawdown (R1-C, 117%) and containment-to-Y conversion (R4-C, 119%) form a coupled loop (interaction fraction -1.06). R1 feeds R4, so removing either alone underestimates their joint contribution.
+- **Threshold (C1644):** A2 requires 4.5x more CTS (0.18 vs 0.04) before grammar advantage emerges. Below CTS=0.2, 64% of A2 events are counterfeitable. Above CTS=0.6, 0% are. The transition is gradual (width=0.327), not a sharp gate.
+- **Morphology (C1645):** Armed+headless+high-CTS packets resist counterfeiting even in A2. Low-signal packets are counterfeitable. Protection hierarchy: headless > high_cts > armed > compound > m_terminal.
+- **Landscape (C1646):** Three descriptive poles on a continuous manifold. A2 dominates the forgiving pole (8/9), but 1 A2 folio is a stable amplifier and 9 are threshold-dependent. Cross-cut fraction 0.25 confirms gradient structure.
+
+### Status
+
+Recovery gate + threshold + morphology + landscape analysis COMPLETE. 1,646 validated constraints across 574 phases.
+
+---
+
 ## Version 5.46 (2026-03-10) - Phase 573: A2 Forgivingness Mechanism + Apparatus Family Partition
 
 ### Summary

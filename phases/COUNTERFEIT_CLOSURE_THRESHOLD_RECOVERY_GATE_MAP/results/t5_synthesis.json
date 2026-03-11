@@ -1,0 +1,113 @@
+{
+ "metadata": {
+  "phase": "574",
+  "script": "t5_synthesis.py",
+  "timestamp": "2026-03-11T00:48:53.481210+00:00",
+  "elapsed_seconds": 0.0
+ },
+ "verdicts": {
+  "recovery_gate": {
+   "verdict": "RECOVERY_GATE_R1_C_DOMINANT",
+   "explanation": "A2 recovery gate diagnosis: RECOVERY_GATE_R1_C_DOMINANT. R1_C share=117.3%, R4_C share=118.8%, R1_C+R4_C joint=236.2%. Sub-channel additivity: STRONGLY_INTERACTIVE (interaction fraction=-1.0590)"
+  },
+  "threshold": {
+   "verdict": "THRESHOLD_A2_SHIFTED_GRADUAL",
+   "explanation": "Threshold verdict: THRESHOLD_A2_SHIFTED_GRADUAL. A2 vs A1 magnitude shift=0.1380 (MODERATELY_SHIFTED). A1_BATH_REFLUX: binary=0.042, magnitude=0.042. A2_SEALED_RECIRCULATION: binary=0.0737, magnitude=0.18. A3_DISTILL_COLLECT: binary=0.0297, magnitude=0.0297. "
+  },
+  "morphology": {
+   "verdict": "MORPHOLOGY_SELECTIVE_COUNTERFEITING",
+   "explanation": "Morphology verdict: MORPHOLOGY_SELECTIVE_COUNTERFEITING. Signature classes: A2_COUNTERFEITABLE=5, RESISTANT=5, UNIVERSALLY_WEAK=0, total signatures=11. Top A2 protective features: [('headless_involved', 0.125922), ('high_cts', 0.107451), ('armed', 0.09203)]."
+  },
+  "landscape": {
+   "verdict": "LANDSCAPE_THREE_POLE",
+   "explanation": "Landscape verdict: LANDSCAPE_THREE_POLE. STABLE_AMPLIFIER=25.0% (n=19), THRESHOLD_DEPENDENT=63.2% (n=48), FORGIVING_RECIRCULATOR=11.8% (n=9). Cross-cut fraction=0.2500."
+  }
+ },
+ "constraints": {
+  "C1643": {
+   "id": "C1643",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "A2",
+    "recovery_gate",
+    "sub_channel"
+   ],
+   "claim": "A2 recovery gate sub-channel decomposition: RECOVERY_GATE_R1_C_DOMINANT. A2 recovery gate diagnosis: RECOVERY_GATE_R1_C_DOMINANT. R1_C share=117.3%, R4_C share=118.8%, R1_C+R4_C joint=236.2%. Sub-channel additivity: STRONGLY_INTERACTIVE (interaction fraction=-1.0590)",
+   "verdict": "RECOVERY_GATE_R1_C_DOMINANT",
+   "evidence": {
+    "source": "Phase 574 T1 sub-channel ablation",
+    "r1c_share": 1.1731,
+    "r4c_share": 1.1884,
+    "r1c_r4c_joint": 2.3615,
+    "additivity": "STRONGLY_INTERACTIVE"
+   },
+   "phase": 574
+  },
+  "C1644": {
+   "id": "C1644",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "threshold",
+    "closure",
+    "CTS"
+   ],
+   "claim": "Counterfeit closure threshold: THRESHOLD_A2_SHIFTED_GRADUAL. Threshold verdict: THRESHOLD_A2_SHIFTED_GRADUAL. A2 vs A1 magnitude shift=0.1380 (MODERATELY_SHIFTED). A1_BATH_REFLUX: binary=0.042, magnitude=0.042. A2_SEALED_RECIRCULATION: binary=0.0737, magnitude=0.18. A3_DISTILL_COLLECT: binary=0.0297, magnitude=0.0297. ",
+   "verdict": "THRESHOLD_A2_SHIFTED_GRADUAL",
+   "evidence": {
+    "source": "Phase 574 T2 threshold curves",
+    "a2_vs_a1_magnitude_shift": 0.138,
+    "shift_degree": "MODERATELY_SHIFTED",
+    "sharpness": "GRADUAL"
+   },
+   "phase": 574
+  },
+  "C1645": {
+   "id": "C1645",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "morphology",
+    "closure_packet",
+    "counterfeiting"
+   ],
+   "claim": "Closure packet morphology selectivity: MORPHOLOGY_SELECTIVE_COUNTERFEITING. Morphology verdict: MORPHOLOGY_SELECTIVE_COUNTERFEITING. Signature classes: A2_COUNTERFEITABLE=5, RESISTANT=5, UNIVERSALLY_WEAK=0, total signatures=11. Top A2 protective features: [('headless_involved', 0.125922), ('high_cts', 0.107451), ('armed', 0.09203)].",
+   "verdict": "MORPHOLOGY_SELECTIVE_COUNTERFEITING",
+   "evidence": {
+    "source": "Phase 574 T3 packet morphology signatures",
+    "n_counterfeitable": 5,
+    "n_resistant": 5,
+    "n_universal_weak": 0,
+    "n_total_signatures": 11
+   },
+   "phase": 574
+  },
+  "C1646": {
+   "id": "C1646",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "landscape",
+    "folio_classification"
+   ],
+   "claim": "Apparatus response landscape: LANDSCAPE_THREE_POLE. Landscape verdict: LANDSCAPE_THREE_POLE. STABLE_AMPLIFIER=25.0% (n=19), THRESHOLD_DEPENDENT=63.2% (n=48), FORGIVING_RECIRCULATOR=11.8% (n=9). Cross-cut fraction=0.2500.",
+   "verdict": "LANDSCAPE_THREE_POLE",
+   "evidence": {
+    "source": "Phase 574 T4 continuous landscape model",
+    "fractions": {
+     "STABLE_AMPLIFIER": 0.25,
+     "THRESHOLD_DEPENDENT": 0.6316,
+     "FORGIVING_RECIRCULATOR": 0.1184
+    },
+    "cross_cut_fraction": 0.25,
+    "note": "Three-way classification is a descriptive convenience overlay, not ontological species"
+   },
+   "phase": 574
+  }
+ }
+}

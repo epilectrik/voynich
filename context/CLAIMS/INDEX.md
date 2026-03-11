@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1442 validated constraints | **Version:** 5.45 | **Date:** 2026-03-10
+**Total:** 1446 validated constraints | **Version:** 5.46 | **Date:** 2026-03-10
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5777,6 +5777,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Within-A2 CCS1 correlates rho=0.963 with close recovery ablation effect and rho=0.944 with containment ablation — near-perfect mechanistic tracking.
 - Two-layer clustering (C1640): response-only clustering at k=2 separates 12 forgiving folios (9 A2 + 3 A3, CCS1=0.169) from 64 productive folios (CCS1=0.051). Structure is real but gradient-like (below confirmation thresholds).
 - A2 is weakly structured internally (C1641): no section-based sub-profiles, but 44% boundary folios. Core A2 folios (n=5, CCS1=0.180) are distinctly forgiving; A2→A1 boundary folios (n=4, CCS1=0.013) behave like A1. T|A2 (n=2) is the best-performing A2 section (EPV=0.90).
+
+### Phase 574: Counterfeit Closure Threshold + Recovery Gate Map
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1643 | A2 recovery gate sub-channel decomposition: RECOVERY_GATE_R1_C_DOMINANT. Both R1_C (117.3%) and R4_C (118.8%) containment pathways dominate the close recovery effect. Sub-channels are strongly non-additive (interaction fraction=-1.059), confirming R1-C feeds R4-C in a coupled containment-to-yield loop | 2 | B, virtual apparatus, A2, recovery gate, sub-channel, R1, R4, containment, C1639 | R1_C share=117.3%. R4_C share=118.8%. Joint=236.2%. Interaction=-1.059 (STRONGLY_INTERACTIVE). |
+| 1644 | Counterfeit closure threshold: THRESHOLD_A2_SHIFTED_GRADUAL. A2 requires CTS=0.18 for positive magnitude advantage vs CTS=0.04 for A1 (+0.138 shift). Transition is gradual (width=0.327 CTS). A2 needs minimum 1 strong grammar signal; A1/A3 need 0. A2 counterfeit susceptibility 64% at CTS<0.2, 0% above CTS=0.6 | 2 | B, virtual apparatus, threshold, closure, CTS, counterfeiting, C1639, C1642 | A2 mag_threshold=0.18. A1=0.04. Shift=+0.138 (MODERATELY_SHIFTED). Width=0.327 (GRADUAL). A2 min_n_strong=1. |
+| 1645 | Closure packet morphology selectivity: MORPHOLOGY_SELECTIVE_COUNTERFEITING. 5 packet signatures resistant (armed+headless+high_cts types), 5 A2-counterfeitable (low-signal types). Top A2 protective features: headless_involved (+0.126), high_cts (+0.107), armed (+0.092). Counterfeiting is selective, not universal | 2 | B, virtual apparatus, morphology, closure packet, counterfeiting, C1639, C1644 | 5 RESISTANT, 5 A2_COUNTERFEITABLE. Headless protection=+0.126. High_cts=+0.107. Armed=+0.092. |
+| 1646 | Apparatus response landscape: LANDSCAPE_THREE_POLE. 25% STABLE_AMPLIFIER (12 A3 + 6 A1 + 1 A2), 63% THRESHOLD_DEPENDENT (24 A3 + 15 A1 + 9 A2), 12% FORGIVING_RECIRCULATOR (8 A2 + 1 A3). Classification partially cross-cuts profile (cross-cut=0.25). NOTE: classes are descriptive convenience overlays, not ontological species | 2 | B, virtual apparatus, landscape, folio classification, continuous, C1639, C1640 | SA=25% (n=19). TD=63% (n=48). FR=12% (n=9). Cross-cut=0.25. CCS1-margin rho=-0.578. |
+
+**Phase 574 findings (Counterfeit Closure Threshold + Recovery Gate Map, RECOVERY_GATE_R1_C_DOMINANT + THRESHOLD_A2_SHIFTED + MORPHOLOGY_SELECTIVE + LANDSCAPE_THREE_POLE):**
+- Recovery gate sub-decomposition (C1643): R1_C (containment drawdown) and R4_C (containment-to-Y conversion) jointly account for >200% of the close recovery effect. Strong non-additivity (interaction=-1.06) confirms they form a coupled loop: R1-C drawdown feeds R4-C conversion.
+- Counterfeit threshold (C1644): A2 requires CTS=0.18 for grammar advantage to emerge, vs CTS=0.04 for A1. The +0.138 CTS shift means A2 folios need substantially more closure specificity before grammar outcompetes the forgiving null. Transition is gradual, not sharp.
+- Morphology selectivity (C1645): Counterfeiting is selective, not universal. Armed+headless+high-CTS closure packets resist counterfeiting even in A2; low-signal packets (e.g., bare e-HEAD, low-opacity) are counterfeitable. The protective hierarchy (headless > high_cts > armed) maps onto the known grammar architecture.
+- Three-pole landscape (C1646): The continuous response manifold has three descriptive poles (amplifier/threshold-dependent/forgiving). A2 dominates the forgiving pole (8/9 folios). The classification partially cross-cuts profile assignment (25% cross-cut), confirming the gradient nature reported in C1640.
 
 ---
 
