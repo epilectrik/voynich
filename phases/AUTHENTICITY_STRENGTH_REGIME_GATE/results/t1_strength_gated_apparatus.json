@@ -1,0 +1,59 @@
+{
+ "metadata": {
+  "phase": "577",
+  "script": "t1_strength_gated_apparatus.py",
+  "timestamp": "2026-03-11T13:09:37.043948+00:00",
+  "elapsed_seconds": 0.39,
+  "test_folio": "f33r",
+  "test_profile": "A2_SEALED_RECIRCULATION"
+ },
+ "verification": {
+  "identity_check": {
+   "baseline_y": 0.552639,
+   "identity_y": 0.552639,
+   "rel_diff": 0.0,
+   "pass": true
+  },
+  "full_rejection_check": {
+   "reject_y": 0.555786,
+   "diff": 0.003147,
+   "pass": true
+  },
+  "no_strength_check": {
+   "no_strength_y": 0.552639,
+   "p576_amb_pess_y": 0.552639,
+   "diff": 0.0,
+   "pass": true
+  },
+  "strength_effect_check": {
+   "rescue_y": 0.553314,
+   "no_strength_y": 0.553408,
+   "diff": 9.4e-05,
+   "pass": true,
+   "note": "All lines forced to AUTH_PROTECTIVE; STRONG vs MED strength"
+  },
+  "credit_only_check": {
+   "y": 0.552639,
+   "pass": true
+  },
+  "burden_conditioning": {
+   "n_cf_events": 0,
+   "pass": true
+  }
+ },
+ "configs_available": [
+  "NO_STRENGTH",
+  "STRENGTH_RESCUE",
+  "STRENGTH_CAUTIOUS",
+  "STRENGTH_AMB_ONLY",
+  "CREDIT_ONLY_4D"
+ ],
+ "table_sizes": {
+  "NO_STRENGTH": 108,
+  "STRENGTH_RESCUE": 108,
+  "STRENGTH_CAUTIOUS": 108,
+  "STRENGTH_AMB_ONLY": 108,
+  "CREDIT_ONLY_4D": 108
+ },
+ "burden_threshold": 0.05
+}

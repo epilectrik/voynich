@@ -4,6 +4,39 @@
 
 ---
 
+## Version 5.50 (2026-03-11) - Phase 577: Authenticity-Strength Regime Gate
+
+### Summary
+
+Phase 577 adds closure authenticity strength as a 4th gate input to Phase 576's regime admission architecture. Phase 576 proved regime admission gating works (ARCHITECTURE_ROBUST) but strong-band DYE preservation was only 58.7% (target 90%). Phase 577 adds strength bands (STRONG/MED/WEAK) as a 4th gate dimension to rescue strong legitimate closure without weak-band relapse. The decisive test (C1656) fails: RESCUE_REJECTED. The best configuration is NO_STRENGTH (= Phase 576 AMB_PESSIMISTIC), meaning the strength dimension does not improve performance. The aligned signal definitions (any_opaque, strict closure_armed) produce a surrogate with only 21.6% agreement with Phase 574 event bands, too coarse to discriminate.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/AUTHENTICITY_STRENGTH_REGIME_GATE/` -- Phase 577 directory with 6 scripts (T0-T5), 6 result files, REPORT_577.md |
+| **ADDED** | C1655: Authenticity strength coverage COVERAGE_PARTIAL — 2323 lines, 3/3 bands, 4 structural zeros (needed 5), surrogate agreement 21.6% |
+| **ADDED** | C1656: Strong-band rescue RESCUE_REJECTED — best config=NO_STRENGTH, strong preserved 69.1% (<80% target), weak guardrail safe, A2 delta=0.0635 (matches P576) |
+| **ADDED** | C1657: Configuration robustness SPECIFIC — 0/3 strength configs beat NO_STRENGTH, 3/3 beat CREDIT_ONLY_4D, architecture not robust for strength dimension |
+| **ADDED** | C1658: Landscape migration MIGRATION_ABSENT — A2 FORGIVING 8→8, 0 migrating folios, no regression |
+| **UPDATED** | INDEX.md -- +4 constraints (1658 total), Phase 577 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (1658 constraints, Phase 577) |
+
+### Key Findings
+
+- **Decisive test fails (C1656):** Adding authenticity strength as a 4th gate input does NOT rescue strong-band DYE. The best configuration is NO_STRENGTH, identical to Phase 576 AMB_PESSIMISTIC (A2 delta=0.0635). All rescue configs underperform.
+- **Surrogate too coarse:** Per-line strength bands agree only 21.6% with Phase 574 event-level bands. The aligned signal definitions (opacity_frac>0 instead of >=0.5, strict closure_armed instead of broadened proxy) dramatically shifted the band distribution: STRONG=460(19.8%), MED=1729(74.4%), WEAK=134(5.8%). "STRONG" is too permissive to discriminate.
+- **Rescue dilutes selectivity:** STRENGTH_RESCUE achieves 76.8% strong preservation (up from 69.1%) but A2 delta drops from 0.0635 to 0.0475 and null wins increase from 2 to 3. The gain in strong preservation is not worth the loss in selectivity.
+- **Signal alignment changes:** 1782 lines changed opaque status, 572 lines changed armed status from Phase 576 definitions. This confirms the surrogates are materially different, not just edge cases.
+- **Landscape unchanged:** A2 FORGIVING 8→8, 0 migrating folios. The strength dimension has no landscape impact.
+- **Structural zeros clean:** 0 activations across all configs, confirming classifier/strength alignment is consistent even if the surrogate is weak.
+
+### Status
+
+Phase 577 strength dimension REJECTED. The per-line surrogate is too coarse to rescue strong-band DYE without diluting gate selectivity. Next iteration should consider event-level (not line-level) strength, or alternative rescue mechanisms. 1,658 validated constraints across 577 phases.
+
+---
+
 ## Version 5.49 (2026-03-11) - Phase 576: Closure Regime Admission Gate
 
 ### Summary

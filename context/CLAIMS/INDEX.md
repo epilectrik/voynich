@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1650 validated constraints | **Version:** 5.48 | **Date:** 2026-03-10
+**Total:** 1658 validated constraints | **Version:** 5.50 | **Date:** 2026-03-11
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5827,6 +5827,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Strong-band loss (C1653): The main weakness. Strong-band DYE drops to 58.7% of baseline because some STRONG events are on lines classified as AUTH_PROTECTIVE or AUTH_THRESHOLD (credit<1.0). The 90% preservation target is not met.
 - Landscape stable (C1654): CCS1 reduced 66.2% but the A2 FORGIVING pole count is unchanged. The DYE advantage improvement doesn't cross the z-margin threshold for reclassification.
 - **Next iteration targets:** (1) Improve strong-band preservation by ensuring STRONG-signal events on AUTH_PROTECTIVE/AUTH_THRESHOLD lines get higher credit; (2) Tighten AUTH_AMBIGUOUS values (adopt AMB_PESSIMISTIC as new baseline); (3) Refine armedness proxy to improve M1 signature agreement.
+
+### Phase 577: Authenticity-Strength Regime Gate (C1655-C1658)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1655 | Authenticity strength coverage: COVERAGE_PARTIAL. 2323 lines receive strength bands, all 3 bands populated (STRONG=460, MED=1729, WEAK=134). 4 structural zeros documented (AUTH_THRESHOLD+WEAK/MED, AUTH_PROTECTIVE+WEAK, AUTH_PRONE+WEAK). Surrogate agreement with Phase 574 event bands only 21.6%. Signal alignment changes: 1782 lines changed opaque, 572 changed armed | 2 | B, apparatus, strength, coverage, closure | Lines=2323. Bands=3/3. Zeros=4. Surr_agree=21.6%. |
+| 1656 | Strong-band rescue: RESCUE_REJECTED. Best config=NO_STRENGTH (=P576 AMB_PESSIMISTIC). Strong preserved=69.1% (<80% target). Weak guardrail=SAFE (null wins not increased). A2 delta=0.0635 (matches P576). STRENGTH_RESCUE achieves 76.8% strong but A2 delta drops to 0.0475. The strength dimension does not improve performance | 2 | B, apparatus, rescue, strength, decisive, NEGATIVE, C1653, C1652 | Best=NO_STRENGTH. Strong=69.1%. A2_delta=0.0635. SSI=86.5. |
+| 1657 | Configuration robustness: SPECIFIC. 0/3 strength configs beat NO_STRENGTH. 3/3 beat CREDIT_ONLY_4D. Architecture not robust for the strength dimension — result is config-specific (only NO_STRENGTH works). Per-config SSI: NO_STRENGTH=86.5, RESCUE=92.4, CAUTIOUS=77.8, AMB_ONLY=86.8, CREDIT_ONLY_4D=93.5 | 2 | B, apparatus, robustness, configuration, closure | Beat_NS=0/3. Beat_CO=3/3. Robust=False. |
+| 1658 | Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No new A1/A3 FORGIVING. Pole reduction 0.0%. No regression. Landscape identical to Phase 576 | 2 | B, apparatus, landscape, migration, closure | FR: 8→8. Migrating=0. Red=0.0%. Regressed=False. |
+
+**Phase 577 findings (Authenticity-Strength Regime Gate, REJECTED -- strength dimension does not improve performance):**
+- Decisive test fails (C1656): Adding authenticity strength as a 4th gate input does NOT rescue strong-band DYE. The best configuration is NO_STRENGTH, identical to Phase 576 AMB_PESSIMISTIC. All rescue configs underperform the control.
+- Surrogate too coarse: Per-line strength bands agree only 21.6% with Phase 574 event-level bands. The aligned signal definitions (any_opaque instead of high_opaque, strict closure_armed) made STRONG too permissive (460/2323 = 19.8%), causing rescue to dilute gate selectivity.
+- Rescue-selectivity tradeoff: STRENGTH_RESCUE improves strong preservation (69.1%→76.8%) but A2 delta drops (0.0635→0.0475) and null wins increase (2→3). The gain is not worth the loss.
+- Strong improvement from alignment alone: Strong preservation improved from 58.7% to 69.1% even under NO_STRENGTH due to recomputed aligned signals (opaque and armed changes). This is a signal alignment effect, not a strength rescue effect.
+- Landscape unchanged (C1658): A2 FORGIVING 8→8. The strength dimension has no landscape impact.
+- **Root cause:** Per-line strength is too coarse a surrogate for event-level authenticity. The line-level signals don't capture whether a specific CLOSE event on that line is genuine. Event-level (not line-level) strength, or an alternative rescue mechanism, is needed.
 
 ---
 

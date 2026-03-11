@@ -1,0 +1,145 @@
+{
+ "metadata": {
+  "phase": "577",
+  "script": "t5_strength_synthesis.py",
+  "timestamp": "2026-03-11T13:11:25.817881+00:00",
+  "elapsed_seconds": 0.02
+ },
+ "verdicts": {
+  "authenticity_strength_coverage": {
+   "verdict": "COVERAGE_PARTIAL",
+   "explanation": "Lines=2323 (>=2300: True). Bands populated=3/3 (==3: True). Structural zeros=4 (>=5: False). Surrogate agreement=21.6%."
+  },
+  "strong_band_rescue": {
+   "verdict": "RESCUE_REJECTED",
+   "explanation": "Best config=NO_STRENGTH. Strong preserved=69.1% (>=80%: False). Weak guardrail=SAFE. A2 delta=0.0635 >= P576 0.0635: True."
+  },
+  "configuration_robustness": {
+   "verdict": "SPECIFIC",
+   "explanation": "Strength configs=3. Beat NO_STRENGTH=0/3 (>=3: False). Beat CREDIT_ONLY_4D=3/3 (>=3: True). Architecture robust: False."
+  },
+  "landscape_migration": {
+   "verdict": "MIGRATION_ABSENT",
+   "explanation": "Migrating folios=0 (>=1: False). A2 FORGIVING: 8->8. Pole reduction=0.0%. Regressed: False."
+  }
+ },
+ "constraints": {
+  "C1655": {
+   "id": "C1655",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "strength",
+    "coverage",
+    "closure"
+   ],
+   "claim": "Authenticity strength coverage verdict: COVERAGE_PARTIAL. Lines=2323 (>=2300: True). Bands populated=3/3 (==3: True). Structural zeros=4 (>=5: False). Surrogate agreement=21.6%.",
+   "verdict": "COVERAGE_PARTIAL",
+   "evidence": {
+    "source": "Phase 577 T0 authenticity strength assembly",
+    "n_lines": 2323,
+    "n_bands_populated": 3,
+    "n_structural_zeros": 4,
+    "surrogate_agreement_pct": 21.6
+   },
+   "phase": 577
+  },
+  "C1656": {
+   "id": "C1656",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "rescue",
+    "strength",
+    "decisive",
+    "closure"
+   ],
+   "claim": "Strong-band rescue verdict: RESCUE_REJECTED. Best config=NO_STRENGTH. Strong preserved=69.1% (>=80%: False). Weak guardrail=SAFE. A2 delta=0.0635 >= P576 0.0635: True.",
+   "verdict": "RESCUE_REJECTED",
+   "evidence": {
+    "source": "Phase 577 T3 strength gate anatomy",
+    "best_config": "NO_STRENGTH",
+    "strong_preserved_pct": 69.1,
+    "weak_guardrail_safe": true,
+    "a2_delta": 0.063503,
+    "p576_a2_delta": 0.063503,
+    "best_SSI": 86.5404
+   },
+   "phase": 577
+  },
+  "C1657": {
+   "id": "C1657",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "robustness",
+    "configuration",
+    "closure"
+   ],
+   "claim": "Configuration robustness verdict: SPECIFIC. Strength configs=3. Beat NO_STRENGTH=0/3 (>=3: False). Beat CREDIT_ONLY_4D=3/3 (>=3: True). Architecture robust: False.",
+   "verdict": "SPECIFIC",
+   "evidence": {
+    "source": "Phase 577 T3 config robustness",
+    "n_strength_configs": 3,
+    "n_beat_no_strength": 0,
+    "n_beat_credit_only": 3,
+    "per_config_SSI": {
+     "NO_STRENGTH": 86.5404,
+     "STRENGTH_RESCUE": 92.3756,
+     "STRENGTH_CAUTIOUS": 77.8369,
+     "STRENGTH_AMB_ONLY": 86.8385,
+     "CREDIT_ONLY_4D": 93.5312
+    }
+   },
+   "phase": 577
+  },
+  "C1658": {
+   "id": "C1658",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "landscape",
+    "migration",
+    "closure"
+   ],
+   "claim": "Landscape migration verdict: MIGRATION_ABSENT. Migrating folios=0 (>=1: False). A2 FORGIVING: 8->8. Pole reduction=0.0%. Regressed: False.",
+   "verdict": "MIGRATION_ABSENT",
+   "evidence": {
+    "source": "Phase 577 T4 landscape remap",
+    "n_forgiving_ungated": 8,
+    "n_forgiving_gated": 8,
+    "pole_reduction_pct": 0.0,
+    "n_migrating": 0,
+    "a1a3_new_forgiving": 0
+   },
+   "phase": 577
+  }
+ },
+ "all_validated": false,
+ "best_config": "NO_STRENGTH",
+ "best_SSI": 86.5404,
+ "best_a2_delta": 0.063503,
+ "best_strong_preserved_pct": 69.1,
+ "config_robustness": {
+  "assessment": "SPECIFIC",
+  "per_config_SSI": {
+   "NO_STRENGTH": 86.5404,
+   "STRENGTH_RESCUE": 92.3756,
+   "STRENGTH_CAUTIOUS": 77.8369,
+   "STRENGTH_AMB_ONLY": 86.8385,
+   "CREDIT_ONLY_4D": 93.5312
+  },
+  "n_beat_no_strength": 0,
+  "n_beat_credit_only": 3
+ },
+ "p576_comparison": {
+  "p576_best_config": "REGIME_AMB_PESSIMISTIC",
+  "p576_a2_delta": 0.063503,
+  "p577_a2_delta": 0.063503,
+  "improvement": 0.0
+ }
+}

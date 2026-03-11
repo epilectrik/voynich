@@ -1,0 +1,312 @@
+"""
+T4: Post-Gate Landscape Remapping + Migration Metric
+Phase 577 - AUTHENTICITY_STRENGTH_REGIME_GATE
+
+Remaps Phase 574 T4 landscape using best config from T3.
+NEW: per-folio "distance to boundary" for A2 folios — migration detection.
+Comparison with Phase 576 T4 landscape.
+"""
+
+import json
+import sys
+import os
+import time
+from pathlib import Path
+from datetime import datetime, timezone
+from collections import defaultdict
+
+PROJECT_ROOT = str(Path(__file__).resolve().parents[3])
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+RESULTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'results')
+P576_RESULTS = os.path.join(PROJECT_ROOT, 'phases', 'CLOSURE_REGIME_ADMISSION_GATE', 'results')
+
+
+def classify_folio(z_margin, positive_event_fraction):
+    """Classify folio using same rules as Phase 574 T4."""
+    if z_margin > 0.5 and positive_event_fraction >= 0.9:
+        return 'STABLE_AMPLIFIER'
+    if z_margin < -1.0 or positive_event_fraction < 0.35:
+        return 'FORGIVING_RECIRCULATOR'
+    return 'THRESHOLD_DEPENDENT'
+
+
+def main():
+    t_start = time.time()
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+
+    print("=" * 70)
+    print("T4: Post-Gate Landscape Remapping + Migration")
+    print("Phase 577 - AUTHENTICITY_STRENGTH_REGIME_GATE")
+    print("=" * 70)
+
+    # ---- Load data ----
+    print("\n--- Loading data ---")
+
+    t4_574_path = os.path.join(PROJECT_ROOT, 'phases',
+        'COUNTERFEIT_CLOSURE_THRESHOLD_RECOVERY_GATE_MAP', 'results',
+        't4_landscape_model.json')
+    with open(t4_574_path) as f:
+        t4_574 = json.load(f)
+
+    ungated_landscape = t4_574['per_folio_landscape']
+    global_margin_mean = t4_574['metadata']['global_margin_mean']
+    global_margin_sd = t4_574['metadata']['global_margin_sd']
+
+    with open(os.path.join(RESULTS_DIR, 't2_strength_gated_simulation.json')) as f:
+        t2_gated = json.load(f)
+
+    with open(os.path.join(RESULTS_DIR, 't3_strength_gate_anatomy.json')) as f:
+        t3_anatomy = json.load(f)
+
+    best_config = t3_anatomy['best_config_by_a2_delta']
+    print(f"  Best config: {best_config}")
+    print(f"  Ungated folios: {len(ungated_landscape)}")
+
+    gated_folio_results = t2_gated['per_config'].get(best_config, {})
+
+    # Phase 576 T4 landscape (for comparison)
+    with open(os.path.join(P576_RESULTS, 't4_landscape_remap.json')) as f:
+        p576_t4 = json.load(f)
+    p576_landscape = p576_t4.get('per_folio_gated_landscape', {})
+
+    # ================================================================
+    # Remap landscape
+    # ================================================================
+    print("\n--- Remapping landscape ---")
+    per_folio_gated = {}
+    transition_matrix = defaultdict(lambda: defaultdict(int))
+
+    for folio, ungated in ungated_landscape.items():
+        gated = gated_folio_results.get(folio)
+        ungated_class = ungated['classification']
+        ungated_margin = ungated['margin']
+
+        if gated is None:
+            per_folio_gated[folio] = {
+                'ungated_margin': round(ungated_margin, 6),
+                'gated_margin': round(ungated_margin, 6),
+                'ungated_classification': ungated_class,
+                'gated_classification': ungated_class,
+                'changed': False,
+                'profile': ungated['profile'],
+                'gated_advantage': round(ungated_margin, 6),
+                'delta_margin': 0.0,
+            }
+            transition_matrix[ungated_class][ungated_class] += 1
+            continue
+
+        gated_advantage = gated['gated_advantage']
+        gated_margin = gated_advantage
+
+        if global_margin_sd > 0:
+            gated_z_margin = (gated_margin - global_margin_mean) / global_margin_sd
+        else:
+            gated_z_margin = 0.0
+
+        ungated_pef = ungated['positive_event_fraction']
+        if ungated_margin > 0 and gated_margin > 0:
+            pef_ratio = min(1.0, gated_margin / max(ungated_margin, 0.001))
+            gated_pef = min(1.0, ungated_pef * pef_ratio)
+        elif gated_margin <= 0:
+            gated_pef = max(0.0, ungated_pef - 0.1)
+        else:
+            gated_pef = ungated_pef
+
+        gated_class = classify_folio(gated_z_margin, gated_pef)
+        changed = gated_class != ungated_class
+
+        per_folio_gated[folio] = {
+            'ungated_margin': round(ungated_margin, 6),
+            'gated_margin': round(gated_margin, 6),
+            'gated_z_margin': round(gated_z_margin, 4),
+            'ungated_classification': ungated_class,
+            'gated_classification': gated_class,
+            'changed': changed,
+            'profile': ungated['profile'],
+            'gated_advantage': round(gated_advantage, 6),
+            'gated_pef': round(gated_pef, 4),
+            'delta_margin': round(gated_margin - ungated_margin, 6),
+        }
+        transition_matrix[ungated_class][gated_class] += 1
+
+    # ================================================================
+    # Classification summary
+    # ================================================================
+    print("\n--- Classification summary ---")
+    classes = ['STABLE_AMPLIFIER', 'THRESHOLD_DEPENDENT', 'FORGIVING_RECIRCULATOR']
+    classification_summary = {}
+
+    for cls in classes:
+        n_ungated = sum(1 for f in per_folio_gated.values()
+                        if f['ungated_classification'] == cls)
+        n_gated = sum(1 for f in per_folio_gated.values()
+                      if f['gated_classification'] == cls)
+        classification_summary[cls] = {
+            'n_ungated': n_ungated,
+            'n_gated': n_gated,
+            'delta': n_gated - n_ungated,
+        }
+        print(f"  {cls}: ungated={n_ungated}, gated={n_gated}, delta={n_gated - n_ungated}")
+
+    # Transition matrix
+    print("\n--- Transition matrix ---")
+    tm_serializable = {}
+    for from_cls in classes:
+        tm_serializable[from_cls] = {}
+        for to_cls in classes:
+            n = transition_matrix[from_cls][to_cls]
+            tm_serializable[from_cls][to_cls] = n
+            if n > 0:
+                print(f"  {from_cls} -> {to_cls}: {n}")
+
+    # ================================================================
+    # A2 pole analysis
+    # ================================================================
+    print("\n--- A2 pole analysis ---")
+    a2_forgiving_ungated = sum(
+        1 for f in per_folio_gated.values()
+        if 'A2' in f['profile'] and f['ungated_classification'] == 'FORGIVING_RECIRCULATOR')
+    a2_forgiving_gated = sum(
+        1 for f in per_folio_gated.values()
+        if 'A2' in f['profile'] and f['gated_classification'] == 'FORGIVING_RECIRCULATOR')
+    a1a3_new_forgiving = sum(
+        1 for f in per_folio_gated.values()
+        if 'A2' not in f['profile']
+        and f['ungated_classification'] != 'FORGIVING_RECIRCULATOR'
+        and f['gated_classification'] == 'FORGIVING_RECIRCULATOR')
+
+    if a2_forgiving_ungated > 0:
+        pole_reduction_pct = (a2_forgiving_ungated - a2_forgiving_gated) / a2_forgiving_ungated * 100
+    else:
+        pole_reduction_pct = 0.0
+
+    a2_pole_analysis = {
+        'n_forgiving_ungated': a2_forgiving_ungated,
+        'n_forgiving_gated': a2_forgiving_gated,
+        'pole_reduction_pct': round(pole_reduction_pct, 1),
+        'a1a3_new_forgiving': a1a3_new_forgiving,
+    }
+    print(f"  A2 FORGIVING: ungated={a2_forgiving_ungated}, gated={a2_forgiving_gated}, "
+          f"reduction={pole_reduction_pct:.1f}%")
+
+    # ================================================================
+    # Boundary distance metric (NEW for Phase 577)
+    # ================================================================
+    print("\n--- Boundary distance metric (A2 folios) ---")
+    migration_report = {}
+    n_migrating = 0
+
+    for folio, gated in per_folio_gated.items():
+        if 'A2' not in gated.get('profile', ''):
+            continue
+        if gated['ungated_classification'] != 'FORGIVING_RECIRCULATOR':
+            continue
+
+        z_margin = gated.get('gated_z_margin', 0)
+        # Deficit: how far below -1.0 (positive = still in FORGIVING territory)
+        z_deficit = -1.0 - z_margin
+
+        # Phase 576 comparison
+        p576_folio = p576_landscape.get(folio, {})
+        p576_z = p576_folio.get('gated_z_margin', z_margin)
+        p576_deficit = -1.0 - p576_z
+
+        deficit_change_pct = 0.0
+        if abs(p576_deficit) > 0.001:
+            deficit_change_pct = (p576_deficit - z_deficit) / abs(p576_deficit) * 100
+
+        migrating = deficit_change_pct >= 10
+        if migrating:
+            n_migrating += 1
+
+        migration_report[folio] = {
+            'gated_z_margin': round(z_margin, 4),
+            'z_deficit': round(z_deficit, 4),
+            'p576_z_margin': round(p576_z, 4),
+            'p576_deficit': round(p576_deficit, 4),
+            'deficit_change_pct': round(deficit_change_pct, 1),
+            'migrating': migrating,
+            'gated_class': gated['gated_classification'],
+        }
+
+    print(f"  A2 FORGIVING folios analyzed: {len(migration_report)}")
+    print(f"  Migrating (deficit decreased >=10%): {n_migrating}")
+    for folio, info in sorted(migration_report.items()):
+        status = "MIGRATING" if info['migrating'] else "stable"
+        print(f"    {folio}: z={info['gated_z_margin']:.3f}, "
+              f"deficit_change={info['deficit_change_pct']:.1f}% [{status}]")
+
+    # ================================================================
+    # CCS1 reduction
+    # ================================================================
+    print("\n--- CCS1 reduction ---")
+    profile_summary_data = t2_gated.get('profile_summary', {}).get(best_config, {})
+    a2_ps = profile_summary_data.get('A2_SEALED_RECIRCULATION', {})
+    ccs1_reduction_pct = abs(a2_ps.get('ccs1_reduction_pct', 0))
+    print(f"  A2 CCS1 reduction: {ccs1_reduction_pct:.1f}%")
+
+    # ================================================================
+    # Phase 576 comparison
+    # ================================================================
+    print("\n--- Phase 576 landscape comparison ---")
+    p576_a2_forg_gated = p576_t4.get('a2_pole_analysis', {}).get('n_forgiving_gated', 0)
+    print(f"  Phase 576 A2 FORGIVING gated: {p576_a2_forg_gated}")
+    print(f"  Phase 577 A2 FORGIVING gated: {a2_forgiving_gated}")
+    print(f"  Delta: {a2_forgiving_gated - p576_a2_forg_gated}")
+
+    # ================================================================
+    # Verification
+    # ================================================================
+    n_total = len(per_folio_gated)
+    all_classified = n_total == len(ungated_landscape)
+    no_a1a3_forgiving = a1a3_new_forgiving == 0
+    forgiving_reduced = (classification_summary['FORGIVING_RECIRCULATOR']['n_gated'] <=
+                         classification_summary['FORGIVING_RECIRCULATOR']['n_ungated'])
+
+    verification = {
+        'n_folios_classified': n_total,
+        'all_classified': all_classified,
+        'no_new_a1a3_forgiving': no_a1a3_forgiving,
+        'forgiving_reduced_or_stable': forgiving_reduced,
+    }
+    print(f"\n  Verification: all={all_classified}, no_new_a1a3={no_a1a3_forgiving}, "
+          f"forgiving_stable={forgiving_reduced}")
+
+    # ================================================================
+    # Output
+    # ================================================================
+    output = {
+        'metadata': {
+            'phase': '577',
+            'script': 't4_strength_landscape_remap.py',
+            'timestamp': datetime.now(timezone.utc).isoformat(),
+            'elapsed_seconds': round(time.time() - t_start, 2),
+            'best_config_used': best_config,
+            'n_folios': n_total,
+        },
+        'per_folio_gated_landscape': per_folio_gated,
+        'transition_matrix': tm_serializable,
+        'classification_summary': classification_summary,
+        'a2_pole_analysis': a2_pole_analysis,
+        'migration_report': migration_report,
+        'n_migrating': n_migrating,
+        'ccs1_reduction_pct': round(ccs1_reduction_pct, 1),
+        'p576_comparison': {
+            'p576_a2_forgiving_gated': p576_a2_forg_gated,
+            'p577_a2_forgiving_gated': a2_forgiving_gated,
+            'delta': a2_forgiving_gated - p576_a2_forg_gated,
+        },
+        'verification': verification,
+    }
+
+    out_path = os.path.join(RESULTS_DIR, 't4_strength_landscape_remap.json')
+    with open(out_path, 'w') as f:
+        json.dump(output, f, indent=1)
+    print(f"\nWrote {out_path}")
+    print(f"Total elapsed: {time.time() - t_start:.1f}s")
+
+
+if __name__ == '__main__':
+    main()
