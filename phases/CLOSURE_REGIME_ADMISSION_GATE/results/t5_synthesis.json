@@ -1,0 +1,133 @@
+{
+ "metadata": {
+  "phase": "576",
+  "script": "t5_synthesis.py",
+  "timestamp": "2026-03-11T04:28:38.938456+00:00",
+  "elapsed_seconds": 0.02
+ },
+ "verdicts": {
+  "tiered_classification": {
+   "verdict": "CLASSIFICATION_PARTIAL",
+   "explanation": "Lines classified=2323 (>=2300: True). M1 agreement=76.0% (>=90%: False). Classes populated=6/6 (>=5: True). AUTH_AMBIGUOUS=5.4% (<30%: True)."
+  },
+  "regime_admission_selectivity": {
+   "verdict": "ADMISSION_SELECTIVE",
+   "explanation": "Best config=REGIME_AMB_PESSIMISTIC, SSI=63.5040 (>=2.0: True). REGIME_GATED A2 delta=0.0605 > CREDIT_ONLY=0.0561: True. REGIME_GATED SSI=52.5554, CREDIT_ONLY SSI=53.0292."
+  },
+  "event_band_discrimination": {
+   "verdict": "DISCRIMINATION_PARTIAL",
+   "explanation": "TP=4/5 (>=3: True). TN=4/4 (>=4: True). FP=0, FN=1. Strong preserved=58.7% (>=90%: False). Weak CF null suppression=71.4% (>=20%: True)."
+  },
+  "landscape_ccs1": {
+   "verdict": "LANDSCAPE_STABLE",
+   "explanation": "A2 FORGIVING: 8->8 (reduced: False). Pole reduction=0.0%. New A1/A3 FORGIVING=0 (none: True). CCS1 reduction=66.2% (>=10%: True)."
+  }
+ },
+ "constraints": {
+  "C1651": {
+   "id": "C1651",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "classification",
+    "tiered_classifier",
+    "closure"
+   ],
+   "claim": "Tiered classification verdict: CLASSIFICATION_PARTIAL. Lines classified=2323 (>=2300: True). M1 agreement=76.0% (>=90%: False). Classes populated=6/6 (>=5: True). AUTH_AMBIGUOUS=5.4% (<30%: True).",
+   "verdict": "CLASSIFICATION_PARTIAL",
+   "evidence": {
+    "source": "Phase 576 T0 corpus classification",
+    "n_classified": 2323,
+    "n_classes_populated": 6,
+    "ambiguous_pct": 5.4,
+    "m1_agreement_pct": 76.0
+   },
+   "phase": 576
+  },
+  "C1652": {
+   "id": "C1652",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "regime_admission",
+    "gate",
+    "SSI",
+    "decisive"
+   ],
+   "claim": "Regime admission selectivity verdict: ADMISSION_SELECTIVE. Best config=REGIME_AMB_PESSIMISTIC, SSI=63.5040 (>=2.0: True). REGIME_GATED A2 delta=0.0605 > CREDIT_ONLY=0.0561: True. REGIME_GATED SSI=52.5554, CREDIT_ONLY SSI=53.0292.",
+   "verdict": "ADMISSION_SELECTIVE",
+   "evidence": {
+    "source": "Phase 576 T3 gate anatomy + SSI analysis",
+    "best_config": "REGIME_AMB_PESSIMISTIC",
+    "best_SSI": 63.504,
+    "regime_gated_SSI": 52.5554,
+    "credit_only_SSI": 53.0292,
+    "regime_beats_credit": true
+   },
+   "phase": 576
+  },
+  "C1653": {
+   "id": "C1653",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "discrimination",
+    "event_band",
+    "confusion_matrix"
+   ],
+   "claim": "Event-band discrimination verdict: DISCRIMINATION_PARTIAL. TP=4/5 (>=3: True). TN=4/4 (>=4: True). FP=0, FN=1. Strong preserved=58.7% (>=90%: False). Weak CF null suppression=71.4% (>=20%: True).",
+   "verdict": "DISCRIMINATION_PARTIAL",
+   "evidence": {
+    "source": "Phase 576 T3 confusion matrix + T2 band analysis",
+    "best_config": "REGIME_AMB_PESSIMISTIC",
+    "TP": 4,
+    "TN": 4,
+    "FP": 0,
+    "FN": 1,
+    "strong_preserved_pct": 58.7,
+    "weak_suppression_pct": 71.4
+   },
+   "phase": 576
+  },
+  "C1654": {
+   "id": "C1654",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "landscape",
+    "CCS1",
+    "pole_reduction"
+   ],
+   "claim": "Landscape + CCS1 verdict: LANDSCAPE_STABLE. A2 FORGIVING: 8->8 (reduced: False). Pole reduction=0.0%. New A1/A3 FORGIVING=0 (none: True). CCS1 reduction=66.2% (>=10%: True).",
+   "verdict": "LANDSCAPE_STABLE",
+   "evidence": {
+    "source": "Phase 576 T4 landscape remapping",
+    "n_forgiving_ungated": 8,
+    "n_forgiving_gated": 8,
+    "pole_reduction_pct": 0.0,
+    "new_a1a3_forgiving": 0,
+    "ccs1_reduction_pct": 66.2
+   },
+   "phase": 576
+  }
+ },
+ "all_validated": false,
+ "best_config": "REGIME_AMB_PESSIMISTIC",
+ "best_SSI": 63.504,
+ "config_robustness": {
+  "assessment": "ARCHITECTURE_ROBUST",
+  "per_config_SSI": {
+   "REGIME_GATED": 52.5554,
+   "REGIME_LENIENT": 53.403,
+   "REGIME_STRICT": 64.4694,
+   "REGIME_AMB_PESSIMISTIC": 63.504,
+   "CREDIT_ONLY": 53.0292
+  },
+  "n_regime_beat_credit": 4,
+  "amb_pessimistic_better": true
+ }
+}

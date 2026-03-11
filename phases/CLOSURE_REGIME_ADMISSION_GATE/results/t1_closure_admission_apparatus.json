@@ -1,0 +1,62 @@
+{
+ "metadata": {
+  "phase": "576",
+  "script": "t1_closure_admission_apparatus.py",
+  "timestamp": "2026-03-11T04:22:47.560226+00:00",
+  "elapsed_seconds": 0.29,
+  "test_folio": "f33r",
+  "test_profile": "A2_SEALED_RECIRCULATION"
+ },
+ "verification": {
+  "identity_check": {
+   "folio": "f33r",
+   "baseline_y": 0.552639,
+   "identity_y": 0.552639,
+   "diff": 0.0,
+   "rel_diff": 0.0,
+   "pass": true
+  },
+  "full_rejection_check": {
+   "folio": "f33r",
+   "baseline_y": 0.552639,
+   "reject_y": 0.555786,
+   "y_difference": -0.003147,
+   "pass": true
+  },
+  "credit_only_check": {
+   "folio": "f33r",
+   "y": 0.552639,
+   "reduction": 0.0,
+   "pass": true
+  },
+  "regime_check": {
+   "folio": "f33r",
+   "y": 0.552639,
+   "reduction": 0.0,
+   "pass": true
+  },
+  "admit_vs_credit": {
+   "folio": "f33r",
+   "regime_reduction": 0.0,
+   "credit_reduction": 0.0,
+   "regime_stronger": true,
+   "pass": true
+  },
+  "burden_conditioning": {
+   "folio": "f33r",
+   "n_cf_events": 0,
+   "n_high_burden": 0,
+   "n_low_burden": 0,
+   "pass": true
+  }
+ },
+ "gate_table_used": "REGIME_GATED",
+ "burden_threshold": 0.05,
+ "configs_available": [
+  "REGIME_GATED",
+  "REGIME_LENIENT",
+  "REGIME_STRICT",
+  "REGIME_AMB_PESSIMISTIC",
+  "CREDIT_ONLY"
+ ]
+}

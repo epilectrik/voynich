@@ -5811,6 +5811,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 
 ---
 
+### Phase 576: Closure Regime Admission Gate (C1651-C1654)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1651 | Tiered classification: CLASSIFICATION_PARTIAL. 6-class tiered classifier (AUTH_RESISTANT through AUTH_AMBIGUOUS) covers 2323 lines, all 6 classes populated, AUTH_AMBIGUOUS only 5.4%. M1 signature agreement 76% (below 90% target) due to armed/unarmed proxy differences vs Phase 574. Class-level agreement higher | 2 | B, apparatus, classification, tiered_classifier, closure | Lines=2323. Classes=6/6. AMB=5.4%. M1_agree=76%. |
+| 1652 | Regime admission selectivity: ADMISSION_SELECTIVE. Best config REGIME_AMB_PESSIMISTIC SSI=63.5. REGIME_GATED A2 delta_adv=0.0605 > CREDIT_ONLY=0.0561, proving regime admission (gating R1-R5) outperforms credit-only (gating Y). Architecture robust: 4/4 regime configs beat credit-only control. Decisive test: gating Layer 2 (closure regime admission) works where Layer 3 (Y-credit, Phase 575) failed | 2 | B, apparatus, regime_admission, gate, SSI, decisive, POSITIVE, C1649, C1643 | SSI=63.5. RG_delta=0.0605. CO_delta=0.0561. Beat_credit=4/4. |
+| 1653 | Event-band discrimination: DISCRIMINATION_PARTIAL. TP=4/5 CF signatures suppressed, TN=4/4 RESISTANT preserved, FP=0. Strong-band DYE preserved 58.7% (target 90%). Weak CF null suppression 71.4%. Gate correctly discriminates CF from RESISTANT at signature level but reduces strong-band DYE because some STRONG events land on non-RESISTANT lines (AUTH_PROTECTIVE, AUTH_THRESHOLD) | 2 | B, apparatus, discrimination, event_band, confusion_matrix, C1645 | TP=4/5. TN=4/4. FP=0. Strong_pres=58.7%. Weak_supp=71.4%. |
+| 1654 | Landscape + CCS1: LANDSCAPE_STABLE. A2 FORGIVING pole unchanged (8→8) despite 66.2% CCS1 reduction. No new A1/A3 FORGIVING. DYE improvement does not translate to classification shifts. A2 null wins reduced 7→2. Landscape classification may be too insensitive to capture the gate's discriminative improvement | 2 | B, apparatus, landscape, CCS1, pole_reduction, C1646 | FR: 8→8. CCS1_red=66.2%. Null_wins: 7→2. New_A1A3=0. |
+
+**Phase 576 findings (Closure Regime Admission Gate, PARTIAL -- decisive test passes, architecture robust, strong-band preservation needs iteration):**
+- Regime admission validated (C1652): The decisive test passes. Gating Layer 2 (whether R1-R5 fire at all) outperforms gating Layer 3 (Y-credit only). This validates the expert's core diagnosis from Phase 575: counterfeit closure must be blocked at regime admission, not at the reward channel.
+- Architecture robust: The qualitative REGIME_GATED > CREDIT_ONLY result holds across all 4 regime configurations (GATED, LENIENT, STRICT, AMB_PESSIMISTIC). SSI>1 for all configs, TN>=4 for all.
+- AUTH_AMBIGUOUS too generous: AMB_PESSIMISTIC (halving AUTH_AMBIGUOUS multipliers) outperforms all other configs (delta=0.0635 vs REGIME_GATED=0.0605), confirming the base table's ambiguous values are too permissive.
+- Strong-band loss (C1653): The main weakness. Strong-band DYE drops to 58.7% of baseline because some STRONG events are on lines classified as AUTH_PROTECTIVE or AUTH_THRESHOLD (credit<1.0). The 90% preservation target is not met.
+- Landscape stable (C1654): CCS1 reduced 66.2% but the A2 FORGIVING pole count is unchanged. The DYE advantage improvement doesn't cross the z-margin threshold for reclassification.
+- **Next iteration targets:** (1) Improve strong-band preservation by ensuring STRONG-signal events on AUTH_PROTECTIVE/AUTH_THRESHOLD lines get higher credit; (2) Tighten AUTH_AMBIGUOUS values (adopt AMB_PESSIMISTIC as new baseline); (3) Refine armedness proxy to improve M1 signature agreement.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

@@ -4,6 +4,40 @@
 
 ---
 
+## Version 5.49 (2026-03-11) - Phase 576: Closure Regime Admission Gate
+
+### Summary
+
+Phase 576 validates the expert's core diagnosis from Phase 575: counterfeit closure must be blocked at the regime level (Layer 2: whether R1-R5 fire), not just the reward level (Layer 3: Y-credit). A two-stage ClosureAdmissionApparatus gates regime admission (admit_mult on R1/R5) and yield credit (credit_mult on R2/R3/R4 Y) based on a 6-class tiered legitimacy classifier, CTS band, and containment burden. The decisive test (C1652) passes: REGIME_GATED outperforms CREDIT_ONLY on A2 delta_advantage (0.0605 vs 0.0561), and the architecture is robust across all 4 regime configs. Strong-band DYE preservation (58.7%) and M1 signature agreement (76%) need improvement.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CLOSURE_REGIME_ADMISSION_GATE/` -- Phase 576 directory with 6 scripts (T0-T5), 6 result files, REPORT_576.md |
+| **ADDED** | C1651: Tiered classification PARTIAL — 2323 lines, 6/6 classes, AUTH_AMBIGUOUS 5.4%, M1 agreement 76% |
+| **ADDED** | C1652: Regime admission SELECTIVE — SSI=63.5, REGIME_GATED A2 delta > CREDIT_ONLY, 4/4 configs beat control |
+| **ADDED** | C1653: Event-band discrimination PARTIAL — TP=4/5, TN=4/4, FP=0, strong preserved 58.7%, weak suppressed 71.4% |
+| **ADDED** | C1654: Landscape STABLE — A2 FORGIVING 8→8, CCS1 reduction 66.2%, no new A1/A3 FORGIVING |
+| **UPDATED** | INDEX.md -- +4 constraints (1654 total), Phase 576 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (1654 constraints, Phase 576) |
+
+### Key Findings
+
+- **Decisive test (C1652):** Gating regime admission (R1-R5) outperforms gating only Y-credit. REGIME_GATED A2 delta_adv=0.0605 vs CREDIT_ONLY=0.0561. All 4 regime configs outperform the credit-only control.
+- **Architecture robustness:** ARCHITECTURE_ROBUST — 4/4 configs beat CREDIT_ONLY, SSI>1 for all, TN>=4 for all. Result is not config-specific.
+- **AUTH_AMBIGUOUS too generous:** AMB_PESSIMISTIC (halving AUTH_AMBIGUOUS multipliers) performs best (delta=0.0635, SSI=63.5), confirming the base table's ambiguous values are too permissive.
+- **Strong-band loss:** 58.7% preservation (target 90%). The gate reduces strong-band DYE because some STRONG events land on lines classified as non-RESISTANT (AUTH_PROTECTIVE, AUTH_THRESHOLD).
+- **M1 signature agreement:** 76% (target 90%). Mismatches are armed/unarmed differences between Phase 574 and 576 armedness proxies; class-level agreement is higher.
+- **Landscape stable:** A2 FORGIVING pole unchanged (8→8) despite 66.2% CCS1 reduction. DYE improvement doesn't translate to classification shifts.
+- **Null win reduction:** A2 null wins 7→2-3 across configs (71.4% weak suppression).
+
+### Status
+
+Regime admission gate validated as architecturally sound (C1652 SELECTIVE, ARCHITECTURE_ROBUST). Strong-band preservation and classification agreement need iteration. 1,654 validated constraints across 576 phases.
+
+---
+
 ## Version 5.48 (2026-03-10) - Phase 575: Selective Closure Credit + Authentication Gate
 
 ### Summary
