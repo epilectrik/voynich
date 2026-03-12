@@ -1,0 +1,372 @@
+{
+  "phase": "ZODIAC_SEASONAL_CATEGORY",
+  "phase_number": 583,
+  "overall_verdict": "SEASONAL_SIGNAL_WEAK",
+  "runtime_s": 5.67,
+  "data": {
+    "total_tokens": 1657,
+    "folio_token_counts": {
+      "f70r1": 111,
+      "f70r2": 247,
+      "f70v1": 86,
+      "f70v2": 139,
+      "f71r": 91,
+      "f71v": 99,
+      "f72r1": 105,
+      "f72r2": 110,
+      "f72r3": 163,
+      "f72v1": 99,
+      "f72v2": 105,
+      "f72v3": 111,
+      "f73r": 94,
+      "f73v": 97
+    },
+    "season_category_counts": {
+      "Spring": {
+        "OPERATION": 82,
+        "TRANSITION": 155,
+        "THERMAL": 113,
+        "MARKING": 37,
+        "STAGING": 118,
+        "CONTAINMENT": 26,
+        "MONITORING": 19,
+        "FLOW": 150
+      },
+      "Summer": {
+        "STAGING": 31,
+        "OPERATION": 39,
+        "CONTAINMENT": 12,
+        "THERMAL": 75,
+        "FLOW": 67,
+        "TRANSITION": 93,
+        "MARKING": 16,
+        "MONITORING": 6
+      },
+      "Autumn": {
+        "FLOW": 37,
+        "TRANSITION": 73,
+        "MARKING": 12,
+        "STAGING": 29,
+        "THERMAL": 55,
+        "MONITORING": 9,
+        "OPERATION": 38,
+        "CONTAINMENT": 7
+      },
+      "Winter": {
+        "OPERATION": 22,
+        "MARKING": 19,
+        "TRANSITION": 55,
+        "FLOW": 31,
+        "THERMAL": 20,
+        "MONITORING": 5,
+        "STAGING": 14,
+        "CONTAINMENT": 5
+      }
+    }
+  },
+  "step1_chi_squared": {
+    "chi2": 51.83571320474242,
+    "p": 0.00020149704735566607,
+    "dof": 21,
+    "cramers_v": 0.10841646543952464,
+    "n": 1470,
+    "significant": true,
+    "meaningful_effect": true,
+    "table": [
+      [
+        113,
+        150,
+        26,
+        118,
+        82,
+        155,
+        37,
+        19
+      ],
+      [
+        75,
+        67,
+        12,
+        31,
+        39,
+        93,
+        16,
+        6
+      ],
+      [
+        55,
+        37,
+        7,
+        29,
+        38,
+        73,
+        12,
+        9
+      ],
+      [
+        20,
+        31,
+        5,
+        14,
+        22,
+        55,
+        19,
+        5
+      ]
+    ]
+  },
+  "step2_permutation": {
+    "observed_chi2": 51.83571320474242,
+    "n_permutations": 10000,
+    "valid_permutations": 10000,
+    "n_ge_observed": 785,
+    "perm_p": 0.0785,
+    "confirmed": false,
+    "perm_chi2_mean": 37.94098963890327,
+    "perm_chi2_95th": 54.24673110884809
+  },
+  "step3_per_category_gradient": {
+    "THERMAL": {
+      "h_stat": 4.552380952380943,
+      "p": 0.2076653440120249,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.16353085515457136,
+        "Summer": 0.21034412661536228,
+        "Autumn": 0.21013876215607455,
+        "Winter": 0.1174014238773275
+      }
+    },
+    "FLOW": {
+      "h_stat": 1.5619047619047635,
+      "p": 0.6680581677023225,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.210674437823515,
+        "Summer": 0.2021455883064711,
+        "Autumn": 0.14473024406684917,
+        "Winter": 0.18332420591456736
+      }
+    },
+    "CONTAINMENT": {
+      "h_stat": 0.4761904761904745,
+      "p": 0.9240902440390161,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.03357680090744347,
+        "Summer": 0.03755771743865253,
+        "Autumn": 0.026246023329798515,
+        "Winter": 0.028751369112814895
+      }
+    },
+    "STAGING": {
+      "h_stat": 9.304761904761904,
+      "p": 0.025501692898461475,
+      "significant": true,
+      "season_means": {
+        "Spring": 0.16140504272499676,
+        "Summer": 0.09450510623880742,
+        "Autumn": 0.11220786373687802,
+        "Winter": 0.08194140197152244
+      }
+    },
+    "OPERATION": {
+      "h_stat": 2.4761904761904674,
+      "p": 0.4796093688043189,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.11847774661561578,
+        "Summer": 0.11141571075940178,
+        "Autumn": 0.1468367489539405,
+        "Winter": 0.12842278203723986
+      }
+    },
+    "TRANSITION": {
+      "h_stat": 4.885714285714286,
+      "p": 0.18035955411540758,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.2344111862315318,
+        "Summer": 0.27885000726005515,
+        "Autumn": 0.279585604248358,
+        "Winter": 0.3203723986856517
+      }
+    },
+    "MARKING": {
+      "h_stat": 4.228571428571428,
+      "p": 0.2378168658470699,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.05500281629481152,
+        "Summer": 0.04793330429311263,
+        "Autumn": 0.045751231020904747,
+        "Winter": 0.11000821467688937
+      }
+    },
+    "MONITORING": {
+      "h_stat": 3.5904761904761813,
+      "p": 0.3092158537446795,
+      "significant": false,
+      "season_means": {
+        "Spring": 0.02292111424751433,
+        "Summer": 0.017248439088137068,
+        "Autumn": 0.03450352248719656,
+        "Winter": 0.02977820372398686
+      }
+    }
+  },
+  "step4_seasonal_jsd": {
+    "pairwise_jsd": {
+      "Spring-Summer": 0.010331635306364075,
+      "Spring-Autumn": 0.011576243073603555,
+      "Spring-Winter": 0.020461969442826,
+      "Summer-Autumn": 0.00544554082492288,
+      "Summer-Winter": 0.017111621783739133,
+      "Autumn-Winter": 0.017246066140398853
+    },
+    "adjacent_mean": 0.013371302928627954,
+    "distant_mean": 0.014343932428671345,
+    "u_stat": 4.0,
+    "u_p": 0.6000000000000001,
+    "gradient_structure": false
+  },
+  "step5_coherence": {
+    "within_count": 22,
+    "between_count": 69,
+    "within_mean": 0.023876931052635872,
+    "between_mean": 0.02873086514554164,
+    "u_stat": 629.0,
+    "u_p": 0.1149895438427464,
+    "within_coherent": false,
+    "within_pairs": [
+      [
+        "f70r1",
+        "f70r2",
+        0.021721791910638326
+      ],
+      [
+        "f70r1",
+        "f70v1",
+        0.009819147994061854
+      ],
+      [
+        "f70r1",
+        "f70v2",
+        0.019094417416623082
+      ],
+      [
+        "f70r1",
+        "f71r",
+        0.010347660807349448
+      ],
+      [
+        "f70r1",
+        "f71v",
+        0.043878175369668565
+      ],
+      [
+        "f70r2",
+        "f70v1",
+        0.013221609911693827
+      ],
+      [
+        "f70r2",
+        "f70v2",
+        0.02018567695368429
+      ],
+      [
+        "f70r2",
+        "f71r",
+        0.012890091848061115
+      ],
+      [
+        "f70r2",
+        "f71v",
+        0.03864829907091059
+      ],
+      [
+        "f70v1",
+        "f70v2",
+        0.03256670663850543
+      ],
+      [
+        "f70v1",
+        "f71r",
+        0.010559817857286088
+      ],
+      [
+        "f70v1",
+        "f71v",
+        0.04229356531515185
+      ],
+      [
+        "f70v2",
+        "f71r",
+        0.014703005985601161
+      ],
+      [
+        "f70v2",
+        "f71v",
+        0.024306695798859544
+      ],
+      [
+        "f71r",
+        "f71v",
+        0.02728389426356805
+      ],
+      [
+        "f72r1",
+        "f72r2",
+        0.011248012200646647
+      ],
+      [
+        "f72r1",
+        "f72r3",
+        0.017315444116577754
+      ],
+      [
+        "f72r2",
+        "f72r3",
+        0.025771594219668195
+      ],
+      [
+        "f72v1",
+        "f72v2",
+        0.024787283402750007
+      ],
+      [
+        "f72v1",
+        "f72v3",
+        0.027165010879070663
+      ],
+      [
+        "f72v2",
+        "f72v3",
+        0.041815028186242546
+      ],
+      [
+        "f73r",
+        "f73v",
+        0.03566955301137023
+      ]
+    ]
+  },
+  "constraints": {
+    "C1681": {
+      "claim": "SEASONAL_CATEGORY_SIGNAL",
+      "confirmed": true
+    },
+    "C1682": {
+      "claim": "THERMAL_SEASONAL_GRADIENT",
+      "confirmed": false
+    },
+    "C1683": {
+      "claim": "WITHIN_SEASON_COHERENCE",
+      "confirmed": false
+    },
+    "C1684": {
+      "claim": "APPARATUS_SEASON_COUPLING",
+      "confirmed": false
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1680 validated constraints | **Version:** 5.55 | **Date:** 2026-03-11
+**Total:** 1684 validated constraints | **Version:** 5.56 | **Date:** 2026-03-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5880,6 +5880,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Component atlas (C1675 ATLAS_COMPLETE): 11 physical packet types (soft/hard/armed/headless/strong/weak CTS closures, recirculatory, containment-reset, thermal-onset, productive-disruption, counterfeit-probe). Counterfeit closure atlas per family (A1 low acceptance, A2 moderate with strength threshold, A3 intermediate). 4-level closure strength spectrum.
 - Safety and operator bridge (C1676/C1677): 5 hazard classes mapped (PHASE_ORDERING 41%, CONTAINMENT_TIMING 24%, COMPOSITION_JUMP 24%, EQUIPMENT_OVERCOMMIT 6%, RECYCLE_CONTAMINATION 6%). 3 safety levels from structural mechanisms. 13 non-encodable operator judgments prevent over-automation. Expert-corrected labels: a-HEAD = "active transformation domain" (not "yield"), paragraph = "operational subroutine" (not "complete run").
 - Validation protocol (C1678 EXPERIMENTS_FEASIBLE): E0 rig characterization (prerequisite) -> E1 family calibration -> E2 closure threshold mapping -> E3 counterfeit closure probe -> E4 productive disruption assay -> E5 sister-mode observation -> E6 subroutine independence. 3-level rig: MVP ($560, A1/A3 only) -> recirculatory ($735, all families) -> pelican ($1235, historical convergence).
+
+---
+
+### Phase 583: Zodiac Seasonal Category Clustering (C1681-C1684)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1681 | Zodiac category variation weak: SEASONAL_SIGNAL_WEAK. Token-level chi-squared significant (p=0.0002, V=0.108) but folio-level permutation marginal (p=0.079). Category variation across zodiac pages exists but does not cleanly cluster by season | 2 | AZC, zodiac, category, season | chi2=51.84. V=0.108. perm_p=0.079. N=1470. |
+| 1682 | Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL (p=0.208) and CONTAINMENT (p=0.924) categories show no significant seasonal variation across zodiac folios. Apparatus-configuration seasonal gating prediction not supported at category level | 2 | AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative | THERMAL_p=0.208. CONTAINMENT_p=0.924. |
+| 1683 | Within-season coherence absent: COHERENCE_ABSENT. Within-season folio-pair JSD (0.024) < between-season (0.029) but not significant (p=0.115). Same-season zodiac pages are not significantly more similar in category composition | 2 | AZC, zodiac, category, coherence, season, negative | within_JSD=0.024. between_JSD=0.029. MWU_p=0.115. |
+| 1684 | Staging seasonal gradient: STAGING_GRADIENT. STAGING is the only category with significant seasonal variation (Kruskal-Wallis p=0.026). Declines monotonically: Spring 16.9% -> Summer 9.5% -> Autumn 11.2% -> Winter 8.2%. TRANSITION shows inverse trend (22.1% -> 32.2%) but not significant (p=0.18) | 2 | AZC, zodiac, category, STAGING, season | KW_H=9.31. p=0.026. Spring=0.169. Winter=0.082. |
+
+**Phase 583 findings (Zodiac Seasonal Category Clustering, SEASONAL_SIGNAL_WEAK/THERMAL_GRADIENT_ABSENT/COHERENCE_ABSENT/STAGING_GRADIENT):**
+- Token-level signal (C1681 SEASONAL_SIGNAL_WEAK): Chi-squared on 4×8 contingency table (seasons × categories) yields chi2=51.84 (p=0.0002, V=0.108). But shuffling season labels across the 14 zodiac folios gives perm_p=0.079 -- the signal doesn't survive folio-level clustering correction. With only 14 folios in 4 seasons, statistical power is inherently limited.
+- Apparatus prediction fails (C1682 THERMAL_GRADIENT_ABSENT): The apparatus-configuration hypothesis predicted THERMAL and CONTAINMENT as primary seasonal channels (environmental conditions constrain heat and seal configurations). Neither is significant. THERMAL peaks in Summer/Autumn (21%) and dips in Winter (12%), but within-season variance is too high for significance.
+- Coherence trend (C1683 COHERENCE_ABSENT): Within-season mean JSD (0.024) is 17% lower than between-season (0.029), suggesting a trend, but Mann-Whitney p=0.115. Spring folios show the widest within-season spread (JSD range 0.010-0.044), inflating the within-season mean.
+- STAGING gradient (C1684 STAGING_GRADIENT): Only significant seasonal category. Spring zodiac pages carry ~2x more STAGING vocabulary (process sequencing: iterate, sequence, cycle, loop) than Winter pages. Coupled with TRANSITION's inverse trend (Spring 22% → Winter 32%), this suggests a complexity gradient: Spring encodes more multi-step staging, Winter encodes more state transitions.
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1680 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1684 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1680.
+the highest ID present is C1684.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1680 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1684 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1680 validated constraints are present as canonical one-line claims with tier
+1684 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-11 18:02
-**Version:** FROZEN STATE (1680 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-12 08:18
+**Version:** FROZEN STATE (1684 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1920,6 +1920,10 @@ C1677	Safety protocol derivability: SAFETY_DERIVABLE. All 5 hazard classes mappe
 C1678	Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments have available materials, defined measurements, and clear pass/fail criteria. 61 total minimum runs. 5 hardware nulls used	3	B_APPARATUS, bridge, validation, experiment
 C1679	Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual process metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with specified sensors and formulas	3	B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS
 C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes (F1-F5) mapped to physical control surface candidates with directional predictions. PC1 led by abl_CLOSE_RECOVERY, PC5 led by F2	3	B_APPARATUS, bridge, manifold, knob
+C1681	Zodiac category variation weak: SEASONAL_SIGNAL_WEAK. Token-level chi-squared significant but folio-level permutation marginal. Category variation across zodiac pages exists but does not cleanly cluster by season	2	AZC, zodiac, category, season
+C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL and CONTAINMENT categories show no significant seasonal variation across zodiac folios. Apparatus-configuration seasonal gating prediction not supported at category level	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative
+C1683	Within-season coherence absent: COHERENCE_ABSENT. Within-season folio-pair JSD (0.024) < between-season (0.029) but not significant. Same-season zodiac pages are not significantly more similar in category composition	2	AZC, zodiac, category, coherence, season, negative
+C1684	Staging seasonal gradient: STAGING_GRADIENT. STAGING is the only category with significant seasonal variation. Declines monotonically: Spring 16.9% -> Summer 9.5% -> Autumn 11.2% -> Winter 8.2%. TRANSITION shows inverse trend (22.1% -> 32.2%) but not significant	2	AZC, zodiac, category, STAGING, season
 
 ---
 
@@ -1927,7 +1931,7 @@ C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes (F1
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-11
+# Generated: 2026-03-12
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

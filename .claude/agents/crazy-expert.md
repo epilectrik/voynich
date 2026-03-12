@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1648 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1680.
+the highest ID present is C1684.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2006,6 +2006,10 @@ C1677	Safety protocol derivability: SAFETY_DERIVABLE. 5 hazard classes mapped to
 C1678	Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments feasible with materials, measurements, pass/fail criteria. 61 total minimum runs. E0-E6 staged protocol	3	B_APPARATUS, bridge, validation, experiment	feasible=7/7. min_runs=61. nulls=5.
 C1679	Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with sensors and formulas. 7 hardware nulls	3	B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS	metrics=5/5. nulls=7.
 C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes mapped to physical control surfaces. F1->reflux, F2->valve timing, F3->bath temp, F4->plumbing, F5->gasket quality. PC1 led by abl_CLOSE_RECOVERY	3	B_APPARATUS, bridge, manifold, knob	axes=5/5. PC1_top=CLOSE_RECOVERY(+0.445).
+C1681	Zodiac category variation weak: SEASONAL_SIGNAL_WEAK. Token-level chi2=51.84 (p=0.0002, V=0.108) but folio-level permutation marginal (p=0.079). Category variation exists but does not cleanly cluster by season	2	AZC, zodiac, category, season	chi2=51.84. V=0.108. perm_p=0.079. N=1470.
+C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL (p=0.208) and CONTAINMENT (p=0.924) show no significant seasonal variation. Apparatus-configuration seasonal gating prediction not supported at category level	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative	THERMAL_p=0.208. CONTAINMENT_p=0.924.
+C1683	Within-season coherence absent: COHERENCE_ABSENT. Within-season JSD (0.024) < between-season (0.029) but not significant (p=0.115). Same-season zodiac pages not significantly more similar in category composition	2	AZC, zodiac, category, coherence, season, negative	within_JSD=0.024. between_JSD=0.029. MWU_p=0.115.
+C1684	Staging seasonal gradient: STAGING_GRADIENT. Only category with significant seasonal variation (KW p=0.026). Spring 16.9% -> Winter 8.2% monotonic decline. TRANSITION inverse (22.1% -> 32.2%) but not significant	2	AZC, zodiac, category, STAGING, season	KW_H=9.31. p=0.026. Spring=0.169. Winter=0.082.
 
 ---
 

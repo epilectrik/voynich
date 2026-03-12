@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.56 (2026-03-12) - Phase 583: Zodiac Seasonal Category Clustering
+
+### Summary
+
+Phase 583 tests whether AZC zodiac page vocabulary clusters by season when classified into the 8 operational categories (C1250). Motivated by Brunschwig 1512 zodiac-conditional apparatus instructions and C322 (SEASON-GATED WORKFLOW). The apparatus-configuration hypothesis predicted THERMAL/CONTAINMENT categories should show seasonal variation. Result: SEASONAL_SIGNAL_WEAK -- token-level chi-squared significant but permutation marginal; THERMAL/CONTAINMENT show no seasonal gradient; only STAGING is significant.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ZODIAC_SEASONAL_CATEGORY/` -- Phase 583 directory with 1 script, 1 result file |
+| **ADDED** | C1681: Zodiac category variation SEASONAL_SIGNAL_WEAK -- chi2=51.84, V=0.108, perm_p=0.079 |
+| **ADDED** | C1682: Thermal seasonal gradient THERMAL_GRADIENT_ABSENT -- THERMAL p=0.208, CONTAINMENT p=0.924 |
+| **ADDED** | C1683: Within-season coherence COHERENCE_ABSENT -- within JSD 0.024, between 0.029, p=0.115 |
+| **ADDED** | C1684: Staging seasonal gradient STAGING_GRADIENT -- KW p=0.026, Spring 16.9% → Winter 8.2% |
+| **UPDATED** | INDEX.md -- +4 constraints (1684 total), Phase 583 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.56, 1684 constraints, 583 phases) |
+
+### Key Findings
+
+- **Weak seasonal signal (C1681):** Token-level chi-squared (51.84, p=0.0002, V=0.108) shows category variation across zodiac pages, but folio-level permutation (p=0.079) doesn't confirm seasonal clustering. With only 14 folios across 4 seasons, power is limited.
+- **Apparatus prediction fails (C1682):** THERMAL (p=0.208) and CONTAINMENT (p=0.924) show no seasonal gradient. The hypothesis that zodiac pages encode seasonal apparatus-configuration legality via thermal/containment channels is not supported at the category level.
+- **STAGING gradient (C1684):** The only significant finding -- STAGING vocabulary declines from Spring (16.9%) to Winter (8.2%), while TRANSITION rises inversely (22.1% → 32.2%). This suggests a complexity gradient rather than apparatus-type gating.
+- **C322 preserved:** Season-gated workflow (C322) remains valid from vocabulary overlap analysis but lacks category-level mechanism evidence from this test.
+
+---
+
 ## Version 5.55 (2026-03-11) - Phase 582: Apparatus Atlas Bridge Design
 
 ### Summary
