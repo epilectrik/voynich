@@ -56,6 +56,28 @@ Brute-force enumeration of all 12 valid zodiac sign assignments for 5 unidentifi
 
 4. **The confident-only subset remains canonical.** Phase 583's 7-folio map (C1681) is not improved by adding the unknowns. Future zodiac-category work should use the confident-only subset unless new visual identifications become available.
 
+## Post-Hoc Functional Reading (Informal)
+
+Atom-level HEAD/TERMINAL profiles across the 7 confident zodiac pages reveal a coherent annual workflow gradient:
+
+| Season | a(yield) HEAD | e(cool) HEAD | k(heat) HEAD | r(input) TERM | y(end) TERM |
+|--------|---------------|--------------|--------------|---------------|-------------|
+| Spring | **30.2%** | 25.9% | 0% | **12.9%** | 13.7% |
+| Summer | 23.1% | 33.9% | 0.5% | 5.9% | 20.4% |
+| Autumn | 17.4% | **40.9%** | 0.7% | 8.1% | 14.4% |
+| Winter | **8.2%** | 40.2% | **5.2%** | **3.1%** | **25.8%** |
+
+- **yield(a)** drops monotonically Spring→Winter (30%→8%): material extraction tapers off
+- **heat(k)** appears only in Winter (5.2%): external heating when ambient temperature drops
+- **input(r)** terminal declines Spring→Winter (13%→3%): new material stops coming in
+- **end(y)** terminal rises toward Winter (14%→26%): processes reach completion
+
+This gradient is consistent with a real annual workflow (not random grouping): Spring extracts fresh materials, Summer processes to defined endpoints, Autumn runs sustained cooling operations, Winter manages temperature and closes out processes.
+
+The unknown folios show mixed profiles that straddle seasonal boundaries — f71v profiles as Spring-like (high yield + input), f72r3 profiles as Autumn-like (high cool + work) despite the category test preferring Summer. This mismatch between category-level and atom-level assignment may explain why they add noise.
+
+Not formalized as constraints (n=1 per season for Spring/Winter, informal analysis).
+
 ## Scripts
 
 | Script | Runtime |
