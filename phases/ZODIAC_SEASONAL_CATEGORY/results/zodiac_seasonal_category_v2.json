@@ -1,0 +1,205 @@
+{
+  "phase": "ZODIAC_SEASONAL_CATEGORY_v2",
+  "runtime_s": 23.09,
+  "maps": {
+    "A_visual_capricorn": {
+      "zodiac_map": {
+        "f70v2": "Pisces",
+        "f70v1": "Capricorn",
+        "f71r": "Capricorn",
+        "f72r2": "Gemini",
+        "f72v1": "Libra",
+        "f72v3": "Leo",
+        "f72v2": "Virgo",
+        "f73r": "Scorpio",
+        "f73v": "Sagittarius"
+      },
+      "results": {
+        "chi2": {
+          "chi2": 38.211937755098916,
+          "p": 0.012170914289258185,
+          "cramers_v": 0.12516809158128941,
+          "n": 813,
+          "n_seasons": 4
+        },
+        "permutation": {
+          "perm_p": 0.2204,
+          "n_ge": 2204,
+          "valid": 10000
+        },
+        "per_category": {
+          "THERMAL": false,
+          "FLOW": false,
+          "CONTAINMENT": false,
+          "STAGING": false,
+          "OPERATION": false,
+          "TRANSITION": false,
+          "MARKING": false,
+          "MONITORING": false
+        },
+        "sig_cats": [],
+        "jsd": {
+          "adj_mean": 0.020758810487380246,
+          "dist_mean": 0.011378735497325675
+        },
+        "coherence": {
+          "within_mean": 0.02621556449018874,
+          "between_mean": 0.02907629742498542,
+          "u_p": 0.3334957736760393,
+          "within_count": 7,
+          "between_count": 29
+        }
+      }
+    },
+    "B_visual_aries": {
+      "zodiac_map": {
+        "f70v2": "Pisces",
+        "f70v1": "Aries",
+        "f71r": "Taurus",
+        "f72r2": "Gemini",
+        "f72v1": "Libra",
+        "f72v3": "Leo",
+        "f72v2": "Virgo",
+        "f73r": "Scorpio",
+        "f73v": "Sagittarius"
+      },
+      "results": {
+        "chi2": {
+          "chi2": 46.121748124288885,
+          "p": 0.0012310427131300363,
+          "cramers_v": 0.13751402049251837,
+          "n": 813,
+          "n_seasons": 4
+        },
+        "permutation": {
+          "perm_p": 0.0334,
+          "n_ge": 334,
+          "valid": 10000
+        },
+        "per_category": {
+          "THERMAL": false,
+          "FLOW": false,
+          "CONTAINMENT": false,
+          "STAGING": false,
+          "OPERATION": false,
+          "TRANSITION": false,
+          "MARKING": false,
+          "MONITORING": false
+        },
+        "sig_cats": [],
+        "jsd": {
+          "adj_mean": 0.02783153365390595,
+          "dist_mean": 0.014055259636548785
+        },
+        "coherence": {
+          "within_mean": 0.021202056094670383,
+          "between_mean": 0.030286454623903645,
+          "u_p": 0.060384202556878076,
+          "within_count": 7,
+          "between_count": 29
+        }
+      }
+    },
+    "C_confident_only": {
+      "zodiac_map": {
+        "f70v2": "Pisces",
+        "f72r2": "Gemini",
+        "f72v1": "Libra",
+        "f72v3": "Leo",
+        "f72v2": "Virgo",
+        "f73r": "Scorpio",
+        "f73v": "Sagittarius"
+      },
+      "results": {
+        "chi2": {
+          "chi2": 48.728875525366576,
+          "p": 0.0005466729234686326,
+          "cramers_v": 0.1568774782900005,
+          "n": 660,
+          "n_seasons": 4
+        },
+        "permutation": {
+          "perm_p": 0.0181,
+          "n_ge": 181,
+          "valid": 10000
+        },
+        "per_category": {
+          "THERMAL": false,
+          "FLOW": false,
+          "CONTAINMENT": false,
+          "STAGING": false,
+          "OPERATION": false,
+          "TRANSITION": false,
+          "MARKING": false,
+          "MONITORING": false
+        },
+        "sig_cats": [],
+        "jsd": {
+          "adj_mean": 0.0341451427431827,
+          "dist_mean": 0.01815550471778217
+        },
+        "coherence": {
+          "within_mean": 0.022646215545325,
+          "between_mean": 0.03423775624372888,
+          "u_p": 0.1012531328320802,
+          "within_count": 4,
+          "between_count": 17
+        }
+      }
+    },
+    "D_original_nymph_only": {
+      "zodiac_map": {
+        "f70v2": "Aries",
+        "f70v1": "Pisces",
+        "f71r": "Taurus",
+        "f71v": "Taurus",
+        "f72r1": "Gemini",
+        "f72r2": "Cancer",
+        "f72r3": "Leo",
+        "f72v1": "Virgo",
+        "f72v2": "Libra",
+        "f72v3": "Scorpio",
+        "f73r": "Sagittarius",
+        "f73v": "Capricorn"
+      },
+      "results": {
+        "chi2": {
+          "chi2": 44.071855440114156,
+          "p": 0.002288603027581212,
+          "cramers_v": 0.11332012054491021,
+          "n": 1144,
+          "n_seasons": 4
+        },
+        "permutation": {
+          "perm_p": 0.112,
+          "n_ge": 1120,
+          "valid": 10000
+        },
+        "per_category": {
+          "THERMAL": false,
+          "FLOW": false,
+          "CONTAINMENT": false,
+          "STAGING": true,
+          "OPERATION": false,
+          "TRANSITION": false,
+          "MARKING": false,
+          "MONITORING": false
+        },
+        "sig_cats": [
+          "STAGING"
+        ],
+        "jsd": {
+          "adj_mean": 0.012557383204237427,
+          "dist_mean": 0.015998046665204355
+        },
+        "coherence": {
+          "within_mean": 0.025806585528869087,
+          "between_mean": 0.029521387902625523,
+          "u_p": 0.3086042870256793,
+          "within_count": 13,
+          "between_count": 53
+        }
+      }
+    }
+  }
+}

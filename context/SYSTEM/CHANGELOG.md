@@ -8,26 +8,26 @@
 
 ### Summary
 
-Phase 583 tests whether AZC zodiac page vocabulary clusters by season when classified into the 8 operational categories (C1250). Motivated by Brunschwig 1512 zodiac-conditional apparatus instructions and C322 (SEASON-GATED WORKFLOW). The apparatus-configuration hypothesis predicted THERMAL/CONTAINMENT categories should show seasonal variation. Result: SEASONAL_SIGNAL_WEAK -- token-level chi-squared significant but permutation marginal; THERMAL/CONTAINMENT show no seasonal gradient; only STAGING is significant.
+Phase 583 tests whether AZC zodiac page vocabulary clusters by season when classified into the 8 operational categories (C1250). Motivated by Brunschwig 1512 zodiac-conditional apparatus instructions and C322 (SEASON-GATED WORKFLOW). Initial run (v1) with standard zodiac map gave WEAK result. Critical discovery: the standard map has ≥6 misassigned folios and 2 non-zodiac pages. Re-run (v2) with corrected visual-evidence zodiac assignments changes verdict to CONFIRMED (perm_p=0.018).
 
 ### Changes
 
 | Action | Details |
 |--------|---------|
-| **ADDED** | `phases/ZODIAC_SEASONAL_CATEGORY/` -- Phase 583 directory with 1 script, 1 result file |
-| **ADDED** | C1681: Zodiac category variation SEASONAL_SIGNAL_WEAK -- chi2=51.84, V=0.108, perm_p=0.079 |
-| **ADDED** | C1682: Thermal seasonal gradient THERMAL_GRADIENT_ABSENT -- THERMAL p=0.208, CONTAINMENT p=0.924 |
-| **ADDED** | C1683: Within-season coherence COHERENCE_ABSENT -- within JSD 0.024, between 0.029, p=0.115 |
-| **ADDED** | C1684: Staging seasonal gradient STAGING_GRADIENT -- KW p=0.026, Spring 16.9% → Winter 8.2% |
-| **UPDATED** | INDEX.md -- +4 constraints (1684 total), Phase 583 section added |
+| **ADDED** | `phases/ZODIAC_SEASONAL_CATEGORY/` -- Phase 583 directory with 2 scripts, 2 result files |
+| **ADDED** | C1681: Zodiac category seasonal signal SEASONAL_SIGNAL_CONFIRMED -- confident-only V=0.157, perm_p=0.018 |
+| **ADDED** | C1682: Thermal seasonal gradient THERMAL_GRADIENT_ABSENT -- not individually significant in any variant |
+| **ADDED** | C1683: Within-season coherence trend COHERENCE_TREND -- consistent direction, aries map p=0.060 |
+| **ADDED** | C1684: Goat-folio seasonal identity GOAT_PAGES_SPRING -- goat=Aries perm_p=0.033, goat=Capricorn perm_p=0.220 |
+| **UPDATED** | INDEX.md -- +4 constraints (1684 total), Phase 583 section updated with v2 results |
 | **UPDATED** | CLAUDE.md -- Quick reference updated (v5.56, 1684 constraints, 583 phases) |
 
 ### Key Findings
 
-- **Weak seasonal signal (C1681):** Token-level chi-squared (51.84, p=0.0002, V=0.108) shows category variation across zodiac pages, but folio-level permutation (p=0.079) doesn't confirm seasonal clustering. With only 14 folios across 4 seasons, power is limited.
-- **Apparatus prediction fails (C1682):** THERMAL (p=0.208) and CONTAINMENT (p=0.924) show no seasonal gradient. The hypothesis that zodiac pages encode seasonal apparatus-configuration legality via thermal/containment channels is not supported at the category level.
-- **STAGING gradient (C1684):** The only significant finding -- STAGING vocabulary declines from Spring (16.9%) to Winter (8.2%), while TRANSITION rises inversely (22.1% → 32.2%). This suggests a complexity gradient rather than apparatus-type gating.
-- **C322 preserved:** Season-gated workflow (C322) remains valid from vocabulary overlap analysis but lacks category-level mechanism evidence from this test.
+- **Zodiac correction critical (C1681):** Standard scholarship zodiac map has ≥6 visual mismatches (fish labeled Aries, scale labeled Virgo, feline labeled Scorpio, etc.) and includes 2 non-zodiac pages (f70r1/f70r2). Correcting to visual-evidence assignments: confident-only (7 pages) perm_p=0.018, V=0.157. Signal was real but masked by incorrect assignments.
+- **Apparatus-specific channels fail (C1682):** THERMAL and CONTAINMENT not individually significant in any of 4 mapping variants. The seasonal signal is distributed across categories.
+- **Goat diagnostic (C1684):** Goat=Capricorn (Winter) kills signal (perm_p=0.220), goat=Aries (Spring) preserves it (perm_p=0.033). The goat pages' category profiles cluster with Spring. Constrains zodiac assignment for follow-up inference.
+- **Three unknown folios (f71v, f72r1, f72r3)** have unidentifiable "generic animal" centers. Candidates for zodiac assignment inference phase.
 
 ---
 

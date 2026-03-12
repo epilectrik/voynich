@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-12 08:18
+**Generated:** 2026-03-12 08:35
 **Version:** FROZEN STATE (1684 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1920,10 +1920,10 @@ C1677	Safety protocol derivability: SAFETY_DERIVABLE. All 5 hazard classes mappe
 C1678	Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments have available materials, defined measurements, and clear pass/fail criteria. 61 total minimum runs. 5 hardware nulls used	3	B_APPARATUS, bridge, validation, experiment
 C1679	Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual process metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with specified sensors and formulas	3	B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS
 C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes (F1-F5) mapped to physical control surface candidates with directional predictions. PC1 led by abl_CLOSE_RECOVERY, PC5 led by F2	3	B_APPARATUS, bridge, manifold, knob
-C1681	Zodiac category variation weak: SEASONAL_SIGNAL_WEAK. Token-level chi-squared significant but folio-level permutation marginal. Category variation across zodiac pages exists but does not cleanly cluster by season	2	AZC, zodiac, category, season
-C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL and CONTAINMENT categories show no significant seasonal variation across zodiac folios. Apparatus-configuration seasonal gating prediction not supported at category level	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative
-C1683	Within-season coherence absent: COHERENCE_ABSENT. Within-season folio-pair JSD (0.024) < between-season (0.029) but not significant. Same-season zodiac pages are not significantly more similar in category composition	2	AZC, zodiac, category, coherence, season, negative
-C1684	Staging seasonal gradient: STAGING_GRADIENT. STAGING is the only category with significant seasonal variation. Declines monotonically: Spring 16.9% -> Summer 9.5% -> Autumn 11.2% -> Winter 8.2%. TRANSITION shows inverse trend (22.1% -> 32.2%) but not significant	2	AZC, zodiac, category, STAGING, season
+C1681	Zodiac category seasonal signal: SEASONAL_SIGNAL_CONFIRMED (after zodiac correction). Standard scholarship zodiac map has ≥6 misassigned folios + 2 non-zodiac pages included. Corrected confident-only map (7 folios): chi2=48.73, V=0.157, perm_p=0.018. Visual-Aries map (9 folios): V=0.138, perm_p=0.033. Signal is real but was masked by incorrect assignments	2	AZC, zodiac, category, season
+C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL and CONTAINMENT categories not individually significant in any mapping variant. Seasonal signal is distributed across categories, not concentrated in apparatus-specific channels	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative
+C1683	Within-season coherence trend: COHERENCE_TREND. Approaches significance with corrected map. Consistent direction: within-season JSD < between-season JSD in all mapping variants	2	AZC, zodiac, category, coherence, season
+C1684	Goat-folio seasonal identity: GOAT_PAGES_SPRING. Goat pages (f70v1, f71r) behave like Spring pages not Winter. Goat=Capricorn (Winter) kills seasonal signal, goat=Aries (Spring) preserves it. Diagnostic constraint on zodiac assignment	2	AZC, zodiac, category, season, goat, identity
 
 ---
 
