@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.57 (2026-03-12) - Phase 584: Zodiac Assignment Inference
+
+### Summary
+
+Phase 584 brute-force enumerates all 12 valid zodiac sign assignments for 5 unidentified nymph folios (2 goat pages × {Aries,Taurus} and 3 unknown-animal pages × {Cancer,Capricorn,Aquarius}), using the seasonal category signal (C1681) as optimization target. Key discovery: the 12 nominal assignments collapse to 3 distinct seasonal groupings because within-season sign swaps are invisible to the test. Even the best full-map assignment (V=0.113, perm_p=0.112) fails to beat the confident-only 7-folio baseline (V=0.157, perm_p=0.018). Verdict: UNKNOWNS_ADD_NOISE.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ZODIAC_ASSIGNMENT_INFERENCE/` -- Phase 584 directory with script and results |
+| **ADDED** | C1685: Full zodiac map NOT INFERRED -- perm_p=0.112, 12-folio signal too dilute |
+| **ADDED** | C1686: Within-season assignment DEGENERATE -- 12 assignments collapse to 3 seasonal groupings |
+| **ADDED** | C1687: Unknowns DEGRADE signal -- best V=0.113 < confident-only V=0.157 |
+| **ADDED** | C1688: f72r3 seasonal assignment RESOLVED -- f72r3=Cancer (Summer) preferred in all top assignments |
+| **UPDATED** | INDEX.md -- +4 constraints (1688 total), Phase 584 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.57, 1688 constraints, 584 phases) |
+
+### Key Findings
+
+- **Within-season degeneracy (C1686):** Swapping Aries/Taurus (both Spring) or Capricorn/Aquarius (both Winter) produces identical chi2/V. A season-level test structurally cannot resolve within-season ordering. This reduces the effective search space from 12 to 3.
+- **Unknowns are noise (C1687):** The 5 unknown folios have category profiles that don't cleanly fit any seasonal pattern. Their "generic animal" centers correlate with ambiguous distributions. The confident-only 7-folio subset (C1681) remains canonical.
+- **f72r3 diagnostic (C1688):** f72r3=Cancer (Summer) is the only resolved seasonal placement. f72r3 has the most tokens (163) of the unknowns and its profile fits Summer. f71v and f72r1 are Winter in all top assignments.
+
+---
+
 ## Version 5.56 (2026-03-12) - Phase 583: Zodiac Seasonal Category Clustering
 
 ### Summary

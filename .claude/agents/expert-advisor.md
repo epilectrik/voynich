@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1684 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1688 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1684.
+the highest ID present is C1688.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1684 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1688 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1684 validated constraints are present as canonical one-line claims with tier
+1688 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-12 08:35
-**Version:** FROZEN STATE (1684 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-12 08:49
+**Version:** FROZEN STATE (1688 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1924,6 +1924,10 @@ C1681	Zodiac category seasonal signal: SEASONAL_SIGNAL_CONFIRMED (after zodiac c
 C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL and CONTAINMENT categories not individually significant in any mapping variant. Seasonal signal is distributed across categories, not concentrated in apparatus-specific channels	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative
 C1683	Within-season coherence trend: COHERENCE_TREND. Approaches significance with corrected map. Consistent direction: within-season JSD < between-season JSD in all mapping variants	2	AZC, zodiac, category, coherence, season
 C1684	Goat-folio seasonal identity: GOAT_PAGES_SPRING. Goat pages (f70v1, f71r) behave like Spring pages not Winter. Goat=Capricorn (Winter) kills seasonal signal, goat=Aries (Spring) preserves it. Diagnostic constraint on zodiac assignment	2	AZC, zodiac, category, season, goat, identity
+C1685	Full zodiac map NOT INFERRED: ZODIAC_MAP_NOT_INFERRED. Brute-force enumeration of all 12 valid sign assignments for 5 unknown nymph folios. Best assignment (f72r3=Cancer, f71v/f72r1=Winter, goats=Spring) gives V=0.113, perm_p=0.112. Full 12-folio seasonal signal too dilute for inference	2	AZC, zodiac, category, season, negative
+C1686	Within-season assignment degeneracy: WITHIN_SEASON_DEGENERATE. Swapping signs within the same season (Aries↔Taurus, Capricorn↔Aquarius) produces identical chi2/V. The 12 nominal assignments collapse to 3 distinct seasonal groupings. A season-level test structurally cannot resolve within-season ordering	2	AZC, zodiac, category, season, degeneracy
+C1687	Unknown folios degrade seasonal signal: UNKNOWNS_DEGRADE_SIGNAL. Best 12-folio V=0.113 < confident-only V=0.157 (C1681). Adding 5 unknown folios weakens the signal at every possible assignment. Unknown folios have ambiguous category profiles that don't fit seasonal patterns	2	AZC, zodiac, category, season, noise
+C1688	f72r3 seasonal assignment resolved: F72R3_SEASONAL_ASSIGNMENT. f72r3=Cancer (Summer) in all top-4 assignments (V=0.113). f72r3=Winter drops to V=0.092-0.098. f72r3 has most tokens (163) among unknowns. f71v and f72r1 both Winter in all top assignments	2	AZC, zodiac, category, season, f72r3
 
 ---
 

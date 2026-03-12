@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1684 validated constraints | **Version:** 5.56 | **Date:** 2026-03-12
+**Total:** 1688 validated constraints | **Version:** 5.57 | **Date:** 2026-03-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5880,6 +5880,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Component atlas (C1675 ATLAS_COMPLETE): 11 physical packet types (soft/hard/armed/headless/strong/weak CTS closures, recirculatory, containment-reset, thermal-onset, productive-disruption, counterfeit-probe). Counterfeit closure atlas per family (A1 low acceptance, A2 moderate with strength threshold, A3 intermediate). 4-level closure strength spectrum.
 - Safety and operator bridge (C1676/C1677): 5 hazard classes mapped (PHASE_ORDERING 41%, CONTAINMENT_TIMING 24%, COMPOSITION_JUMP 24%, EQUIPMENT_OVERCOMMIT 6%, RECYCLE_CONTAMINATION 6%). 3 safety levels from structural mechanisms. 13 non-encodable operator judgments prevent over-automation. Expert-corrected labels: a-HEAD = "active transformation domain" (not "yield"), paragraph = "operational subroutine" (not "complete run").
 - Validation protocol (C1678 EXPERIMENTS_FEASIBLE): E0 rig characterization (prerequisite) -> E1 family calibration -> E2 closure threshold mapping -> E3 counterfeit closure probe -> E4 productive disruption assay -> E5 sister-mode observation -> E6 subroutine independence. 3-level rig: MVP ($560, A1/A3 only) -> recirculatory ($735, all families) -> pelican ($1235, historical convergence).
+
+---
+
+### Phase 584: Zodiac Assignment Inference (C1685-C1688)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1685 | Full zodiac map NOT INFERRED: ZODIAC_MAP_NOT_INFERRED. Brute-force enumeration of all 12 valid sign assignments for 5 unknown nymph folios. Best assignment (f72r3=Cancer, f71v/f72r1=Winter, goats=Spring) gives V=0.113, perm_p=0.112. Full 12-folio seasonal signal too dilute for inference | 2 | AZC, zodiac, category, season, negative | best_V=0.113. perm_p=0.112. n_assignments=12. |
+| 1686 | Within-season assignment degeneracy: WITHIN_SEASON_DEGENERATE. Swapping signs within the same season (Aries↔Taurus, Capricorn↔Aquarius) produces identical chi2/V. The 12 nominal assignments collapse to 3 distinct seasonal groupings. A season-level test structurally cannot resolve within-season ordering | 2 | AZC, zodiac, category, season, degeneracy | distinct_groupings=3. V_gap_within_season=0.000. |
+| 1687 | Unknown folios degrade seasonal signal: UNKNOWNS_DEGRADE_SIGNAL. Best 12-folio V=0.113 < confident-only V=0.157 (C1681). Adding 5 unknown folios weakens the signal at every possible assignment. Unknown folios have ambiguous category profiles that don't fit seasonal patterns | 2 | AZC, zodiac, category, season, noise | best_12folio_V=0.113. confident_V=0.157. delta=-0.044. |
+| 1688 | f72r3 seasonal assignment resolved: F72R3_SEASONAL_ASSIGNMENT. f72r3=Cancer (Summer) in all top-4 assignments (V=0.113). f72r3=Winter drops to V=0.092-0.098. f72r3 has most tokens (163) among unknowns. f71v and f72r1 both Winter in all top assignments | 2 | AZC, zodiac, category, season, f72r3 | f72r3_summer_V=0.113. f72r3_winter_V=0.092-0.098. f72r3_tokens=163. |
+
+**Phase 584 findings (Zodiac Assignment Inference, UNKNOWNS_ADD_NOISE):**
+- Full map not inferred (C1685): Best of 12 enumerated assignments gives perm_p=0.112 (not significant). The 12-folio seasonal signal is too dilute for zodiac inference. The search space is exhaustive (2! goats × 3! unknowns = 12), so no assignment can beat this.
+- Within-season degeneracy (C1686): The 12 assignments collapse to 3 distinct seasonal groupings. Swapping Aries/Taurus or Capricorn/Aquarius produces identical statistics because both signs share the same season. This is a structural limitation of season-level analysis, not a data issue. The effective search space is only 3 (which unknown goes to Summer).
+- Unknowns degrade signal (C1687): The confident-only 7-folio subset (C1681, V=0.157, perm_p=0.018) strictly outperforms the best 12-folio map (V=0.113). The 5 unknown folios have generic-animal center illustrations and their vocabulary category profiles don't cleanly align with seasonal patterns. Future zodiac-category work should use the confident-only subset.
+- f72r3 is the diagnostic folio (C1688): f72r3=Cancer (Summer) is preferred in all 4 top-ranked assignments. It has the most tokens (163) among the unknowns and its category profile fits Summer best. f71v and f72r1 are consistently assigned to Winter (Capricorn/Aquarius) in all top assignments, though their internal ordering is degenerate.
 
 ---
 

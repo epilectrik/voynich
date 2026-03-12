@@ -1,0 +1,176 @@
+{
+  "phase": "ZODIAC_ASSIGNMENT_INFERENCE",
+  "phase_number": 584,
+  "overall_verdict": "UNKNOWNS_ADD_NOISE",
+  "runtime_s": 5.47,
+  "best_assignment": {
+    "zodiac_map": {
+      "f70v2": "Pisces",
+      "f72r2": "Gemini",
+      "f72v1": "Libra",
+      "f72v3": "Leo",
+      "f72v2": "Virgo",
+      "f73r": "Scorpio",
+      "f73v": "Sagittarius",
+      "f70v1": "Aries",
+      "f71r": "Taurus",
+      "f71v": "Capricorn",
+      "f72r1": "Aquarius",
+      "f72r3": "Cancer"
+    },
+    "chi2": 44.057374366591425,
+    "cramers_v": 0.11330150172568706,
+    "p": 0.0022985112269379637,
+    "goat_desc": "f70v1=Aries, f71r=Taurus",
+    "unk_desc": "f71v=Capricorn, f72r1=Aquarius, f72r3=Cancer"
+  },
+  "permutation": {
+    "perm_p": 0.1123,
+    "n_ge": 1123,
+    "valid": 10000,
+    "perm_chi2_mean": 33.40789751617387,
+    "perm_chi2_95th": 48.317021811372896
+  },
+  "all_assignments": [
+    {
+      "rank": 1,
+      "cramers_v": 0.11330150172568706,
+      "chi2": 44.057374366591425,
+      "p": 0.0022985112269379637,
+      "goat_desc": "f70v1=Aries, f71r=Taurus",
+      "unk_desc": "f71v=Capricorn, f72r1=Aquarius, f72r3=Cancer"
+    },
+    {
+      "rank": 2,
+      "cramers_v": 0.11330150172568706,
+      "chi2": 44.057374366591425,
+      "p": 0.0022985112269379637,
+      "goat_desc": "f70v1=Aries, f71r=Taurus",
+      "unk_desc": "f71v=Aquarius, f72r1=Capricorn, f72r3=Cancer"
+    },
+    {
+      "rank": 3,
+      "cramers_v": 0.11330150172568706,
+      "chi2": 44.057374366591425,
+      "p": 0.0022985112269379637,
+      "goat_desc": "f70v1=Taurus, f71r=Aries",
+      "unk_desc": "f71v=Capricorn, f72r1=Aquarius, f72r3=Cancer"
+    },
+    {
+      "rank": 4,
+      "cramers_v": 0.11330150172568706,
+      "chi2": 44.057374366591425,
+      "p": 0.0022985112269379637,
+      "goat_desc": "f70v1=Taurus, f71r=Aries",
+      "unk_desc": "f71v=Aquarius, f72r1=Capricorn, f72r3=Cancer"
+    },
+    {
+      "rank": 5,
+      "cramers_v": 0.09764369589959145,
+      "chi2": 32.72168790953425,
+      "p": 0.04939572356976586,
+      "goat_desc": "f70v1=Aries, f71r=Taurus",
+      "unk_desc": "f71v=Capricorn, f72r1=Cancer, f72r3=Aquarius"
+    },
+    {
+      "rank": 6,
+      "cramers_v": 0.09764369589959145,
+      "chi2": 32.72168790953425,
+      "p": 0.04939572356976586,
+      "goat_desc": "f70v1=Aries, f71r=Taurus",
+      "unk_desc": "f71v=Aquarius, f72r1=Cancer, f72r3=Capricorn"
+    },
+    {
+      "rank": 7,
+      "cramers_v": 0.09764369589959145,
+      "chi2": 32.72168790953425,
+      "p": 0.04939572356976586,
+      "goat_desc": "f70v1=Taurus, f71r=Aries",
+      "unk_desc": "f71v=Capricorn, f72r1=Cancer, f72r3=Aquarius"
+    },
+    {
+      "rank": 8,
+      "cramers_v": 0.09764369589959145,
+      "chi2": 32.72168790953425,
+      "p": 0.04939572356976586,
+      "goat_desc": "f70v1=Taurus, f71r=Aries",
+      "unk_desc": "f71v=Aquarius, f72r1=Cancer, f72r3=Capricorn"
+    },
+    {
+      "rank": 9,
+      "cramers_v": 0.0915757225361708,
+      "chi2": 28.78113967193061,
+      "p": 0.11935585461254945,
+      "goat_desc": "f70v1=Aries, f71r=Taurus",
+      "unk_desc": "f71v=Cancer, f72r1=Capricorn, f72r3=Aquarius"
+    },
+    {
+      "rank": 10,
+      "cramers_v": 0.0915757225361708,
+      "chi2": 28.78113967193061,
+      "p": 0.11935585461254945,
+      "goat_desc": "f70v1=Aries, f71r=Taurus",
+      "unk_desc": "f71v=Cancer, f72r1=Aquarius, f72r3=Capricorn"
+    },
+    {
+      "rank": 11,
+      "cramers_v": 0.0915757225361708,
+      "chi2": 28.78113967193061,
+      "p": 0.11935585461254945,
+      "goat_desc": "f70v1=Taurus, f71r=Aries",
+      "unk_desc": "f71v=Cancer, f72r1=Capricorn, f72r3=Aquarius"
+    },
+    {
+      "rank": 12,
+      "cramers_v": 0.0915757225361708,
+      "chi2": 28.78113967193061,
+      "p": 0.11935585461254945,
+      "goat_desc": "f70v1=Taurus, f71r=Aries",
+      "unk_desc": "f71v=Cancer, f72r1=Aquarius, f72r3=Capricorn"
+    }
+  ],
+  "sensitivity": {
+    "v_gap": 0.0,
+    "robust": "False",
+    "goat_sensitivity": {
+      "('Aries', 'Taurus')": {
+        "mean_v": 0.1008403067204831,
+        "max_v": 0.11330150172568706
+      },
+      "('Taurus', 'Aries')": {
+        "mean_v": 0.1008403067204831,
+        "max_v": 0.11330150172568706
+      }
+    },
+    "coherence": {
+      "within_mean": 0.02574364095066761,
+      "between_mean": 0.029466582950119252,
+      "u_p": 0.2297047855633964,
+      "within_count": 12,
+      "between_count": 54
+    }
+  },
+  "comparison_vs_confident": {
+    "best_v": 0.11330150172568706,
+    "confident_v": 0.157,
+    "beats_confident": false
+  },
+  "constraints": {
+    "C1685": {
+      "claim": "ZODIAC_MAP_INFERRED",
+      "confirmed": false
+    },
+    "C1686": {
+      "claim": "ASSIGNMENT_ROBUST",
+      "confirmed": false
+    },
+    "C1687": {
+      "claim": "FULL_MAP_BEATS_CONFIDENT",
+      "confirmed": false
+    },
+    "C1688": {
+      "claim": "GOAT_ORDER_RESOLVED",
+      "confirmed": false
+    }
+  }
+}

@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1648 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1684.
+the highest ID present is C1688.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2010,6 +2010,10 @@ C1681	Zodiac category seasonal signal: SEASONAL_SIGNAL_CONFIRMED (after zodiac c
 C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL and CONTAINMENT not individually significant in any of 4 mapping variants. Seasonal signal distributed across categories, not in apparatus-specific channels	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative	THERMAL_p>0.2. CONTAINMENT_p>0.16. all_variants.
 C1683	Within-season coherence trend: COHERENCE_TREND. Approaches significance with corrected map (aries: p=0.060). Within-season JSD < between-season in all variants	2	AZC, zodiac, category, coherence, season	aries_MWU_p=0.060. direction_consistent=true.
 C1684	Goat-folio seasonal identity: GOAT_PAGES_SPRING. Goat pages behave like Spring not Winter. Capricorn assignment kills signal (perm_p=0.220), Aries preserves it (perm_p=0.033). Diagnostic constraint on zodiac assignment	2	AZC, zodiac, category, season, goat, identity	cap_perm_p=0.220. aries_perm_p=0.033.
+C1685	Full zodiac map NOT INFERRED: ZODIAC_MAP_NOT_INFERRED. Brute-force enumeration of all 12 valid sign assignments for 5 unknown nymph folios. Best assignment perm_p=0.112, too dilute	2	AZC, zodiac, category, season, negative	best_V=0.113. perm_p=0.112. n_assignments=12.
+C1686	Within-season assignment degeneracy: WITHIN_SEASON_DEGENERATE. Swapping signs within same season produces identical chi2/V. 12 assignments collapse to 3 seasonal groupings	2	AZC, zodiac, category, season, degeneracy	distinct_groupings=3. V_gap=0.000.
+C1687	Unknown folios degrade seasonal signal: UNKNOWNS_DEGRADE_SIGNAL. Best 12-folio V=0.113 < confident-only V=0.157. Adding 5 unknowns weakens signal at every assignment	2	AZC, zodiac, category, season, noise	best_12f_V=0.113. confident_V=0.157. delta=-0.044.
+C1688	f72r3 seasonal assignment resolved: F72R3_SEASONAL_ASSIGNMENT. f72r3=Cancer (Summer) in all top-4 assignments. f72r3 has most tokens (163) among unknowns	2	AZC, zodiac, category, season, f72r3	summer_V=0.113. winter_V=0.092-0.098. tokens=163.
 
 ---
 
