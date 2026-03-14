@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1654 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1658 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1701.
+the highest ID present is C1705.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2027,6 +2027,10 @@ C1698	Folio pool moderate: FOLIO_POOL_MODERATE. Folio pool restriction adds +0.0
 C1699	Frequency corrects not adds: FREQUENCY_CORRECTS_NOT_ADDS. Per-folio frequency weighting corrects density inflation, best Jaccard (0.285) but no clustering gain. D3-D2 = -0.022 clustering, +0.045 Jaccard	2	A, discrimination, manifold, folio, frequency	D3_jaccard=0.285. D3-D2_clustering=-0.022. D3-D2_jaccard=+0.045.
 C1700	PREFIX selectivity hurts: PREFIX_SELECTIVITY_HURTS. PREFIX->HEAD filtering REDUCES both clustering (-0.106) and Jaccard (-0.049). Constraints remove correct edges faster than incorrect ones	2	A, discrimination, manifold, PREFIX, HEAD, negative	D4-D3_clustering=-0.106. D4-D3_jaccard=-0.049. forbidden_pairs=35.2%.
 C1701	Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best model reproduces only 28.5% of real edges. 0.234 clustering gap unexplained by deployment layers. Residual = line-level content specificity	2	A, discrimination, manifold, content, residual	best_jaccard=0.285. gap=0.234. final_clustering=0.546.
+C1702	Folio B-side coherence weak: FOLIO_BSIDE_COHERENCE_WEAK. Within-folio B-side signature similarity z=15.15 significant but ratio=1.086 (8.6% above between-folio). PP Jaccard within=0.110 vs between=0.085. 11/16 features significant in section ANOVA	2	A, A↔B, folio, B-side, signature, coherence	z=15.15. ratio=1.086. within=0.526. between=0.485. ANOVA_sig=11/16.
+C1703	Section prediction partial: SECTION_PREDICTION_PARTIAL. Folio-level LOO-CV 43.9% (2.19x chance). Record-level 34.8% (1.74x). Top features: HEAD_headless, HEAD_o, STAGING, HEAD_e	2	A, A↔B, section, prediction, B-side	folio_acc=0.439. folio_ratio=2.19x. record_acc=0.348. record_ratio=1.74x.
+C1704	RI extension directional predictions fail: EXTENSION_PREDICTIONS_FAIL. 1/5 pass Bonferroni. Only e→HEAD_e confirmed (d=0.479, p=0.003). k→HEAD_k correct direction but p=0.060	2	A, A↔B, RI, extension, B-side, negative	passed=1/5. e_d=0.479. e_p=0.003. k_d=0.515. k_p=0.060.
+C1705	C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible pairs diverge more in B-side space (d=0.816, p=3.8e-289). Manifold geometry maps to B-side operational meaning at pair level, not categorical	2	A, A↔B, C475, discrimination, manifold, B-side, divergence	d=0.816. p=3.8e-289. compatible_dist=0.450. incompatible_dist=0.618.
 
 ---
 

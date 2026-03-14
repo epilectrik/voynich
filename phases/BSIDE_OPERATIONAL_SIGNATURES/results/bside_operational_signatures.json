@@ -1,0 +1,218 @@
+{
+  "phase": 587,
+  "test": "BSIDE_OPERATIONAL_SIGNATURES",
+  "metadata": {
+    "n_records": 1562,
+    "n_folios": 114,
+    "n_b_token_types": 4889,
+    "n_mixed_records": 546,
+    "median_survivors": 36,
+    "mean_survivors": 43.30857874519846,
+    "signature_dimensions": 16,
+    "feature_names": [
+      "THERMAL",
+      "FLOW",
+      "CONTAINMENT",
+      "STAGING",
+      "OPERATION",
+      "TRANSITION",
+      "MARKING",
+      "MONITORING",
+      "HEAD_k",
+      "HEAD_t",
+      "HEAD_a",
+      "HEAD_e",
+      "HEAD_o",
+      "HEAD_headless",
+      "k_initial",
+      "hazard"
+    ]
+  },
+  "T0_noise_floor": {
+    "draw_size": 36,
+    "n_draws": 1000,
+    "mean_cosine_sim": 0.90243503614776,
+    "p95_cosine_sim": 0.9625360214469482,
+    "std_cosine_sim": 0.04705770521882107
+  },
+  "T1_folio_coherence": {
+    "within_folio_cosine_sim": 0.526368887006726,
+    "between_folio_cosine_sim": 0.48473186140844077,
+    "within_pp_jaccard": 0.1098526977704115,
+    "between_pp_jaccard": 0.08520346069210982,
+    "permutation_mean": 0.4859167983549832,
+    "permutation_std": 0.0026702541339457928,
+    "z_score": 15.149153085278593,
+    "p_value": 0.0,
+    "n_permutations": 1000,
+    "anova_significant_features": {
+      "THERMAL": {
+        "F": 17.701076982679844,
+        "p": 3.1957590899789225e-11
+      },
+      "FLOW": {
+        "F": 4.515649531428205,
+        "p": 0.0020542790218595532
+      },
+      "STAGING": {
+        "F": 3.668305344821036,
+        "p": 0.007652742699300507
+      },
+      "MARKING": {
+        "F": 3.540449938841797,
+        "p": 0.009335507602454917
+      },
+      "MONITORING": {
+        "F": 6.028560924679656,
+        "p": 0.00020223368696355268
+      },
+      "HEAD_k": {
+        "F": 6.0836657713831155,
+        "p": 0.00018605010972981583
+      },
+      "HEAD_t": {
+        "F": 3.8698034761827853,
+        "p": 0.005594847762866506
+      },
+      "HEAD_e": {
+        "F": 27.958040004618166,
+        "p": 5.555278130517195e-16
+      },
+      "HEAD_o": {
+        "F": 6.797044814375671,
+        "p": 6.367517533194862e-05
+      },
+      "HEAD_headless": {
+        "F": 11.833247888708792,
+        "p": 5.0938573804381215e-08
+      },
+      "k_initial": {
+        "F": 6.0836657713831155,
+        "p": 0.00018605010972981583
+      }
+    }
+  },
+  "T2_section_prediction": {
+    "record_level": {
+      "accuracy": 0.34774193548387095,
+      "chance": 0.2,
+      "accuracy_over_chance": 1.7387096774193547,
+      "n_records": 1550,
+      "n_sections": 5,
+      "top_features": {
+        "HEAD_headless": 0.10886019587977726,
+        "HEAD_o": 0.10276205107567452,
+        "STAGING": 0.09556206895132632,
+        "HEAD_e": 0.09298586253472657,
+        "FLOW": 0.08401452630379365
+      }
+    },
+    "folio_level": {
+      "accuracy": 0.43859649122807015,
+      "chance": 0.2,
+      "accuracy_over_chance": 2.1929824561403506,
+      "n_folios": 114
+    }
+  },
+  "T3_ri_extension_predictions": {
+    "predictions": {
+      "k": {
+        "extension": "k",
+        "feature": "HEAD_k",
+        "n_group": 18,
+        "n_other": 528,
+        "group_mean": 0.08302172728709462,
+        "other_mean": 0.037868544362460115,
+        "effect_direction": "correct",
+        "U": 5543.5,
+        "p_one_sided": 0.06053046071394223,
+        "cohens_d": 0.515357925441475,
+        "passed": false,
+        "status": "FAILED"
+      },
+      "e": {
+        "extension": "e",
+        "feature": "HEAD_e",
+        "n_group": 34,
+        "n_other": 512,
+        "group_mean": 0.2894436540868829,
+        "other_mean": 0.183293644729493,
+        "effect_direction": "correct",
+        "U": 11013.5,
+        "p_one_sided": 0.0032532522529564157,
+        "cohens_d": 0.47918440126596185,
+        "passed": true,
+        "status": "PASSED"
+      },
+      "h": {
+        "extension": "h",
+        "feature": "MONITORING",
+        "n_group": 38,
+        "n_other": 508,
+        "group_mean": 0.02670577277332712,
+        "other_mean": 0.02481142482447694,
+        "effect_direction": "correct",
+        "U": 10623.5,
+        "p_one_sided": 0.07656721137743092,
+        "cohens_d": 0.023206918021959854,
+        "passed": false,
+        "status": "FAILED"
+      },
+      "d": {
+        "extension": "d",
+        "feature": "TRANSITION",
+        "n_group": 32,
+        "n_other": 514,
+        "group_mean": 0.24378426095658307,
+        "other_mean": 0.21586540770919446,
+        "effect_direction": "correct",
+        "U": 9273.0,
+        "p_one_sided": 0.10807536947754154,
+        "cohens_d": 0.12665246542379788,
+        "passed": false,
+        "status": "FAILED"
+      },
+      "t": {
+        "extension": "t",
+        "feature": "FLOW",
+        "n_group": 22,
+        "n_other": 524,
+        "group_mean": 0.19929851937975582,
+        "other_mean": 0.16481289280767594,
+        "effect_direction": "correct",
+        "U": 5931.0,
+        "p_one_sided": 0.4059198851712258,
+        "cohens_d": 0.18447640625028042,
+        "passed": false,
+        "status": "FAILED"
+      },
+      "r": {
+        "extension": "r",
+        "feature": "hazard",
+        "n_group": 4,
+        "n_other": 542,
+        "status": "INSUFFICIENT_DATA",
+        "group_mean": 1.0,
+        "other_mean": 0.2029520295202952
+      }
+    },
+    "n_passed": 1,
+    "n_testable": 5,
+    "n_total": 6
+  },
+  "T4_c475_divergence": {
+    "n_compatible_pairs": 6034,
+    "n_incompatible_pairs": 3966,
+    "compatible_mean_distance": 0.45031987490901576,
+    "incompatible_mean_distance": 0.6181466296031622,
+    "p_value": 3.790696586602014e-289,
+    "cohens_d": 0.8161895860796019,
+    "significant": true
+  },
+  "verdict": "NO_BSIDE_STRUCTURE",
+  "folio_coherent": true,
+  "section_predictable": false,
+  "c475_divergent": true,
+  "extensions_passed": 1,
+  "runtime_seconds": 759.9238755702972
+}

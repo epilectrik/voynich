@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1701 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1705 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1701.
+the highest ID present is C1705.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1701 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1705 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1701 validated constraints are present as canonical one-line claims with tier
+1705 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-14 17:12
-**Version:** FROZEN STATE (1701 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-14 18:11
+**Version:** FROZEN STATE (1705 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1941,6 +1941,10 @@ C1698	Folio pool moderate: FOLIO_POOL_MODERATE. Folio pool restriction with unif
 C1699	Frequency corrects not adds: FREQUENCY_CORRECTS_NOT_ADDS. Per-folio frequency weighting (D3) corrects density inflation from uniform sampling but does not add clustering. D3-D2 = -0.022 clustering, +0.045 Jaccard. Best model by edge overlap	2	A, discrimination, manifold, folio, frequency, density
 C1700	PREFIX selectivity hurts: PREFIX_SELECTIVITY_HURTS. Adding PREFIX->HEAD compatibility filtering (D4) REDUCES both clustering (-0.106) and Jaccard (-0.049) versus D3. PREFIX constraints remove correct co-occurrence edges faster than incorrect ones. 35.2% of PREFIX*HEAD pairs forbidden in A, but filtering by these constraints is misaligned with actual line-level co-occurrence patterns	2	A, discrimination, manifold, PREFIX, HEAD, selectivity, negative
 C1701	Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best deployment model (D3) reproduces only 28.5% of real edges. Final model (D4) achieves clustering 0.546, Jaccard 0.236. The 0.234 clustering gap (0.873-0.639) between real and frequency baseline is not explained by section conditioning, folio pool restriction, frequency weighting, or PREFIX selectivity. Residual reflects line-level content specificity — which specific MIDDLEs each folio assigns to each line	2	A, discrimination, manifold, content, residual, deployment
+C1702	Folio B-side coherence weak: FOLIO_BSIDE_COHERENCE_WEAK. Within-folio B-side signature similarity is statistically significant but practically weak: within/between ratio=1.086 (only 8.6% more similar). PP Jaccard within=0.110 vs between=0.085. 11/16 signature features show significant section-level ANOVA	2	A, A↔B, folio, B-side, signature, coherence, weak
+C1703	Section prediction partial: SECTION_PREDICTION_PARTIAL. Folio-level LOO-CV accuracy 43.9% (2.19x chance, passes 2x threshold). Record-level 34.8% (1.74x, fails). Top features: HEAD_headless (0.109), HEAD_o (0.103), STAGING (0.096), HEAD_e (0.093). Section signal exists in B-side signatures but is noisy at individual record level	2	A, A↔B, section, prediction, B-side, RF, LOO-CV
+C1704	RI extension directional predictions fail: EXTENSION_PREDICTIONS_FAIL. 1/5 RI extension directional predictions pass Bonferroni. Only e-extension → HEAD_e enrichment confirmed. k→HEAD_k correct direction with medium effect (d=0.515) but p=0.060. h→MONITORING (d=0.023), d→TRANSITION (d=0.127), t→FLOW (d=0.184) all non-significant. RI extensions do not reliably predict B-side operational enrichment	2	A, A↔B, RI, extension, B-side, directional, negative
+C1705	C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible record pairs (sharing no compatible MIDDLEs) produce significantly more divergent B-side signatures than compatible pairs. The discrimination manifold's compatibility geometry maps to B-side operational meaning — records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical	2	A, A↔B, C475, discrimination, manifold, B-side, divergence, operational
 
 ---
 

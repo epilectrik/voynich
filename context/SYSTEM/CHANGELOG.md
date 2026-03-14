@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.60 (2026-03-14) - Phase 587: B-Side Operational Signatures
+
+### Summary
+
+Phase 587 changes approach from looking at A's internal structure to looking at A's shadow in B. Each A record's C502.a three-axis morphological filter reduces B's 4,889 tokens to ~38 survivors. The survivor set is characterized as a 16-dimensional B-side operational signature (8 category fractions, 6 HEAD fractions, k-initial fraction, hazard exposure). Five tests probe whether A's organizational logic propagates through C502.a filtering. Key finding: C475-incompatible record pairs produce significantly more divergent B-side signatures (Cohen's d=0.816, p=3.8e-289), confirming the discrimination manifold has real operational meaning at the pair level. However, this meaning does not organize into clean macroscopic categories — section prediction works only at folio level (2.19x chance), and RI extension predictions mostly fail (1/5).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BSIDE_OPERATIONAL_SIGNATURES/` -- Phase 587 directory with script, results, INDEX |
+| **ADDED** | C1702: Folio B-side coherence weak -- z=15.15 significant but ratio=1.086 (8.6% above between-folio) |
+| **ADDED** | C1703: Section prediction partial -- folio 2.19x passes, record 1.74x fails |
+| **ADDED** | C1704: RI extension predictions fail -- 1/5 pass Bonferroni, only e→HEAD_e confirmed |
+| **ADDED** | C1705: C475 operational divergence confirmed -- d=0.816, p=3.8e-289; manifold geometry maps to B-side operational divergence |
+| **UPDATED** | INDEX.md -- +4 constraints (1705 total), Phase 587 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.60, 1705 constraints, 587 phases) |
+| **REFINED** | C1701 -- "residual is content" refined: content has OPERATIONAL meaning (C1705), not noise |
+
+### Key Findings
+
+- **C475 divergence is the star finding (C1705):** C475-incompatible record pairs (sharing no compatible MIDDLEs) diverge significantly more in B-side operational space (d=0.816). This is the strongest finding in the manifold investigation arc (Phases 585-587). The discrimination manifold is not just a frequency artifact — its compatibility geometry maps to which B programs the material permits.
+- **Structure is pair-level, not categorical:** Folio coherence is weak (ratio 1.086), section prediction partial (folio 2.19x, record 1.74x), and RI extension predictions fail (1/5). The operational meaning is encoded at individual MIDDLE-pair compatibility level, not at macroscopic category level.
+- **C1701 refinement:** Phase 586's "residual is content" conclusion gains depth. The content specificity that drives the 0.234 clustering gap has real operational meaning — it determines which B programs are available. This is not random variation but systematic operational filtering.
+- **Noise floor caveat:** Random draws of 36 B tokens from 4,889 achieve 0.902 cosine similarity in 16-dim signature space. This high baseline makes detecting genuine structure harder and may explain why record-level tests fail despite strong pair-level signal.
+
+---
+
 ## Version 5.59 (2026-03-14) - Phase 586: Compatibility Reconstruction
 
 ### Summary

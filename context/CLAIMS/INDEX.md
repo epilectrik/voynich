@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1701 validated constraints | **Version:** 5.59 | **Date:** 2026-03-14
+**Total:** 1705 validated constraints | **Version:** 5.60 | **Date:** 2026-03-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5917,6 +5917,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - PREFIX filtering is counterproductive (C1700): Despite 35.2% of PREFIX*HEAD pairs being forbidden, applying this constraint reduces both clustering and edge overlap. This suggests PREFIX constraints serve purposes other than shaping line-level MIDDLE co-occurrence.
 - The residual is content, not grammar (C1701): The 0.234 gap reflects which specific MIDDLEs each line is "about" — irreducible content specificity that cannot be captured by structural deployment rules. Each line's MIDDLE selection encodes specific information.
 - C1695 reframing: C1695 attributed the manifold to "deployment grammar (B execution)." Phase 586 shows that even A-native deployment structure fails. The manifold reflects folio-specific CONTENT assignments, not grammar rules from any system.
+
+---
+
+### Phase 587: B-Side Operational Signatures — A's Shadow in B (C1702-C1705)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1702 | Folio B-side coherence weak: FOLIO_BSIDE_COHERENCE_WEAK. Within-folio B-side signature similarity is statistically significant (z=15.15, p<0.001 permutation) but practically weak: within/between ratio=1.086 (only 8.6% more similar). PP Jaccard within=0.110 vs between=0.085. 11/16 signature features show significant section-level ANOVA (strongest: HEAD_e F=27.96, THERMAL F=17.70) | 2 | A, A↔B, folio, B-side, signature, coherence, weak | z=15.15. ratio=1.086. within_cosine=0.526. between_cosine=0.485. PP_jaccard_within=0.110. ANOVA_sig=11/16. |
+| 1703 | Section prediction partial: SECTION_PREDICTION_PARTIAL. Folio-level LOO-CV accuracy 43.9% (2.19x chance, passes 2x threshold). Record-level 34.8% (1.74x, fails). Top features: HEAD_headless (0.109), HEAD_o (0.103), STAGING (0.096), HEAD_e (0.093). Section signal exists in B-side signatures but is noisy at individual record level | 2 | A, A↔B, section, prediction, B-side, RF, LOO-CV | folio_acc=0.439. folio_ratio=2.19x. record_acc=0.348. record_ratio=1.74x. chance=0.200. |
+| 1704 | RI extension directional predictions fail: EXTENSION_PREDICTIONS_FAIL. 1/5 RI extension directional predictions pass Bonferroni. Only e-extension → HEAD_e enrichment confirmed (d=0.479, p=0.003). k→HEAD_k correct direction with medium effect (d=0.515) but p=0.060. h→MONITORING (d=0.023), d→TRANSITION (d=0.127), t→FLOW (d=0.184) all non-significant. RI extensions do not reliably predict B-side operational enrichment | 2 | A, A↔B, RI, extension, B-side, directional, negative | passed=1/5. e_d=0.479. e_p=0.003. k_d=0.515. k_p=0.060. |
+| 1705 | C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible record pairs (sharing no compatible MIDDLEs) produce significantly more divergent B-side signatures than compatible pairs (mean cosine distance 0.618 vs 0.450, Cohen's d=0.816, p=3.8e-289). The discrimination manifold's compatibility geometry maps to B-side operational meaning — records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical | 2 | A, A↔B, C475, discrimination, manifold, B-side, divergence, operational | d=0.816. p=3.8e-289. compatible_dist=0.450. incompatible_dist=0.618. n_compatible=6034. n_incompatible=3966. |
+
+**Phase 587 findings (B-Side Operational Signatures, C475_DIVERGENCE_CONFIRMED / SECTION_STRUCTURE_PARTIAL):**
+- The discrimination manifold has real functional meaning (C1705): C475-incompatible record pairs produce significantly different B-side operational signatures (d=0.816). This is the strongest single finding in the manifold investigation arc (Phases 585-587). The manifold's compatibility geometry is NOT just a frequency artifact — it maps to which B programs the material permits.
+- But the structure is pair-level, not categorical (C1702-C1704): Folio coherence is statistically significant but practically weak (ratio 1.086). Section prediction works at folio level (2.19x) but fails at record level (1.74x). RI extension predictions mostly fail (1/5). The operational meaning encoded in C475 compatibility does not organize into clean macroscopic categories.
+- C1701 refined: Phase 586 concluded "residual is content." Phase 587 shows this content has OPERATIONAL meaning — it specifies which B programs are available. The 0.234 clustering gap reflects real operational specificity at the MIDDLE-pair level, not noise.
+- Noise floor caveat (T0): Random draws of 36 B tokens from 4,889 already achieve 0.902 cosine similarity in signature space. The high baseline means genuine structure must be large to be detectable, which may explain why record-level tests fail despite the pair-level signal being strong.
 
 ---
 
