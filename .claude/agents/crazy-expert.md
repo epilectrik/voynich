@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1648 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1654 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1695.
+the highest ID present is C1701.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2021,6 +2021,12 @@ C1692	Cross-slot dependencies neutral for clustering: CROSS_SLOT_DEPENDENCIES_NE
 C1693	Naive property model confirmed dead on clean baseline: NAIVE_PROPERTY_CONFIRMED_DEAD. F-BRU-003-style naive generator clustering 0.021 on H-filtered baseline. F-BRU-003 qualitative result confirmed	2	A, property, generator, naive, negative	naive=0.021. real=0.873. ratio=0.024.
 C1694	No dominant compositional layer: NO_DOMINANT_COMPOSITIONAL_LAYER. Ablation on Empirical model: all variants within 0.56-0.62 range. No single layer (avoidance, selectivity, gating, syntax, HEAD) dominates clustering	2	A, atom, ablation, architecture, distributed	range=[0.559,0.620]. full=0.601. max_drop=0.042.
 C1695	Deployment not compositional: DEPLOYMENT_NOT_COMPOSITIONAL. Logistic model on real 972 MIDDLEs at density-matched threshold: clustering 0.412, edge Jaccard 0.064. Only 1250/10241 real edges predicted. Manifold clustering from deployment grammar, not composition	2	A, A↔B, atom, deployment, grammar, discrimination	pred_clustering=0.412. edge_jaccard=0.064. TP=1250. real_edges=10241.
+C1696	Frequency baseline high: FREQUENCY_BASELINE_HIGH. Global frequency sampling produces co-occurrence clustering 0.639, explaining 73% of manifold's 0.873. CM null (0.250) measures edge rewiring not co-occurrence generation. Most clustering is natural property of frequency-weighted co-occurrence	2	A, discrimination, manifold, frequency, baseline	D0_clustering=0.639. real=0.873. ratio=0.732. CM_null=0.250.
+C1697	Section effect negligible: SECTION_EFFECT_NEGLIGIBLE. Section-conditioned frequency adds only +0.004 clustering over global. Currier A predominantly Herbal; section partitioning near-zero effect	2	A, discrimination, manifold, section	D1-D0=+0.004.
+C1698	Folio pool moderate: FOLIO_POOL_MODERATE. Folio pool restriction adds +0.032 clustering but inflates density to 0.0335 (real 0.0217). Pool creates vocabulary cliques but not dominant	2	A, discrimination, manifold, folio, pool	D2-D1=+0.032. D2_density=0.0335.
+C1699	Frequency corrects not adds: FREQUENCY_CORRECTS_NOT_ADDS. Per-folio frequency weighting corrects density inflation, best Jaccard (0.285) but no clustering gain. D3-D2 = -0.022 clustering, +0.045 Jaccard	2	A, discrimination, manifold, folio, frequency	D3_jaccard=0.285. D3-D2_clustering=-0.022. D3-D2_jaccard=+0.045.
+C1700	PREFIX selectivity hurts: PREFIX_SELECTIVITY_HURTS. PREFIX->HEAD filtering REDUCES both clustering (-0.106) and Jaccard (-0.049). Constraints remove correct edges faster than incorrect ones	2	A, discrimination, manifold, PREFIX, HEAD, negative	D4-D3_clustering=-0.106. D4-D3_jaccard=-0.049. forbidden_pairs=35.2%.
+C1701	Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best model reproduces only 28.5% of real edges. 0.234 clustering gap unexplained by deployment layers. Residual = line-level content specificity	2	A, discrimination, manifold, content, residual	best_jaccard=0.285. gap=0.234. final_clustering=0.546.
 
 ---
 

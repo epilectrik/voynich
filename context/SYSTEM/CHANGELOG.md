@@ -4,6 +4,37 @@
 
 ---
 
+## Version 5.59 (2026-03-14) - Phase 586: Compatibility Reconstruction
+
+### Summary
+
+Phase 586 asks which deployment grammar layer creates the discrimination manifold's 0.873 clustering. Phase 585 showed atom composition fails (edge Jaccard 6.4%). This phase tests 5 progressive A-native deployment layers: global frequency (D0), section conditioning (D1), folio pool restriction (D2), per-folio frequency weighting (D3), and PREFIX selectivity (D4). Key finding: frequency-weighted co-occurrence alone produces clustering 0.639 (73% of manifold). No deployment layer closes the remaining 0.234 gap. The residual reflects line-level content specificity, not grammar rules.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/COMPATIBILITY_RECONSTRUCTION/` -- Phase 586 directory with script, results, INDEX |
+| **ADDED** | C1696: Frequency baseline high -- D0 clustering 0.639, 73% of manifold from frequency alone |
+| **ADDED** | C1697: Section effect negligible -- D1-D0 = +0.004 clustering |
+| **ADDED** | C1698: Folio pool moderate -- D2-D1 = +0.032 clustering but density inflation |
+| **ADDED** | C1699: Frequency corrects not adds -- D3 best Jaccard (0.285) but no clustering gain |
+| **ADDED** | C1700: PREFIX selectivity hurts -- D4-D3 = -0.106 clustering, -0.049 Jaccard |
+| **ADDED** | C1701: Manifold residual is content -- best Jaccard 0.285, 0.234 gap unexplained |
+| **UPDATED** | INDEX.md -- +6 constraints (1701 total), Phase 586 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.59, 1701 constraints, 586 phases) |
+| **REFRAMED** | C1695 -- "deployment grammar" attribution narrowed; even A-native deployment fails |
+
+### Key Findings
+
+- **Frequency is the baseline, not CM null (C1696):** The CM null (0.250) measures random edge rewiring, which destroys hub structure. Frequency-weighted co-occurrence through shared lines naturally produces clustering 0.639. The truly anomalous gap is only 0.234, not 0.623.
+- **Section is irrelevant (C1697):** Section conditioning adds +0.004 clustering. Currier A is mostly Herbal; section partitioning barely touches the vocabulary.
+- **Folio pools help moderately (C1698):** Folio pool restriction adds +0.032 clustering but inflates density (0.034 vs real 0.022). Vocabulary cliques contribute, but are not dominant.
+- **PREFIX filtering is counterproductive (C1700):** Adding PREFIX→HEAD compatibility reduces both clustering (-0.106) and Jaccard (-0.049). PREFIX constraints remove correct edges faster than incorrect ones.
+- **The residual is content (C1701):** The 0.234 gap between frequency baseline and real manifold reflects which specific MIDDLEs each line encodes — irreducible content specificity. This is not grammar; it is the data itself.
+
+---
+
 ## Version 5.58 (2026-03-14) - Phase 585: Atom Compositional Generator
 
 ### Summary

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1695 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1701 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1695.
+the highest ID present is C1701.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1695 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1701 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1695 validated constraints are present as canonical one-line claims with tier
+1701 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-14 15:42
-**Version:** FROZEN STATE (1695 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-14 17:12
+**Version:** FROZEN STATE (1701 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1935,6 +1935,12 @@ C1692	Cross-slot dependencies neutral for clustering: CROSS_SLOT_DEPENDENCIES_NE
 C1693	Naive property model confirmed dead on clean baseline: NAIVE_PROPERTY_CONFIRMED_DEAD. F-BRU-003-style naive generator (8 random property bins, featureless MIDDLEs) produces clustering 0.021±0.001 on H-filtered clean baseline. Qualitative result of F-BRU-003 confirmed	2	A, property, generator, naive, negative
 C1694	No dominant compositional layer: NO_DOMINANT_COMPOSITIONAL_LAYER. Ablation on Empirical model (removing one architectural layer at a time) shows all variants within 0.56-0.62 clustering range. No single layer (modifier avoidance, HEAD-modifier selectivity, terminal gating, slot syntax, HEAD structure) dominates. Compositional clustering is distributed across the architecture	2	A, atom, ablation, architecture, distributed
 C1695	Deployment not compositional: DEPLOYMENT_NOT_COMPOSITIONAL. Logistic compatibility model applied to real 972 MIDDLEs at density-matched threshold: predicted clustering 0.412, edge Jaccard 0.064. The model predicts ~10,500 edges but only 1,250 overlap with the real 10,241. Atom features do not determine which MIDDLEs co-occur on lines. Discrimination manifold clustering (0.873) arises from deployment grammar (B execution), not morphological composition	2	A, A↔B, atom, deployment, grammar, discrimination, manifold
+C1696	Frequency baseline high: FREQUENCY_BASELINE_HIGH. Global frequency sampling (D0) produces co-occurrence graph with clustering 0.639±0.014, explaining 73% of the manifold's 0.873 clustering. The CM null baseline (0.250) measures random edge rewiring, not co-occurrence generation. Most of the manifold's "anomalous" clustering is a natural property of frequency-weighted co-occurrence through shared lines, not a special structural feature	2	A, discrimination, manifold, frequency, baseline, co-occurrence
+C1697	Section effect negligible: SECTION_EFFECT_NEGLIGIBLE. Section-conditioned frequency (D1) adds only +0.004 clustering over global frequency (D0). Currier A is predominantly Herbal; section partitioning has near-zero effect on the manifold	2	A, discrimination, manifold, section, negligible
+C1698	Folio pool moderate: FOLIO_POOL_MODERATE. Folio pool restriction with uniform sampling (D2) adds +0.032 clustering but inflates density to 0.0335 (real: 0.0217). Pool restriction creates vocabulary cliques but is not the dominant manifold mechanism. Frequency weighting (D3) corrects density but reduces clustering by -0.022 while improving Jaccard by +0.045	2	A, discrimination, manifold, folio, pool, vocabulary
+C1699	Frequency corrects not adds: FREQUENCY_CORRECTS_NOT_ADDS. Per-folio frequency weighting (D3) corrects density inflation from uniform sampling but does not add clustering. D3-D2 = -0.022 clustering, +0.045 Jaccard. Best model by edge overlap	2	A, discrimination, manifold, folio, frequency, density
+C1700	PREFIX selectivity hurts: PREFIX_SELECTIVITY_HURTS. Adding PREFIX->HEAD compatibility filtering (D4) REDUCES both clustering (-0.106) and Jaccard (-0.049) versus D3. PREFIX constraints remove correct co-occurrence edges faster than incorrect ones. 35.2% of PREFIX*HEAD pairs forbidden in A, but filtering by these constraints is misaligned with actual line-level co-occurrence patterns	2	A, discrimination, manifold, PREFIX, HEAD, selectivity, negative
+C1701	Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best deployment model (D3) reproduces only 28.5% of real edges. Final model (D4) achieves clustering 0.546, Jaccard 0.236. The 0.234 clustering gap (0.873-0.639) between real and frequency baseline is not explained by section conditioning, folio pool restriction, frequency weighting, or PREFIX selectivity. Residual reflects line-level content specificity — which specific MIDDLEs each folio assigns to each line	2	A, discrimination, manifold, content, residual, deployment
 
 ---
 

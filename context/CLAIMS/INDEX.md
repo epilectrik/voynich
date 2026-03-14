@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1695 validated constraints | **Version:** 5.58 | **Date:** 2026-03-14
+**Total:** 1701 validated constraints | **Version:** 5.59 | **Date:** 2026-03-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5897,6 +5897,26 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Within-season degeneracy (C1686): The 12 assignments collapse to 3 distinct seasonal groupings. Swapping Aries/Taurus or Capricorn/Aquarius produces identical statistics because both signs share the same season. This is a structural limitation of season-level analysis, not a data issue. The effective search space is only 3 (which unknown goes to Summer).
 - Unknowns degrade signal (C1687): The confident-only 7-folio subset (C1681, V=0.157, perm_p=0.018) strictly outperforms the best 12-folio map (V=0.113). The 5 unknown folios have generic-animal center illustrations and their vocabulary category profiles don't cleanly align with seasonal patterns. Future zodiac-category work should use the confident-only subset.
 - f72r3 is the diagnostic folio (C1688): f72r3=Cancer (Summer) is preferred in all 4 top-ranked assignments. It has the most tokens (163) among the unknowns and its category profile fits Summer best. f71v and f72r1 are consistently assigned to Winter (Capricorn/Aquarius) in all top assignments, though their internal ordering is degenerate.
+
+---
+
+### Phase 586: Compatibility Reconstruction — Manifold Attribution (C1696-C1701)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1696 | Frequency baseline high: FREQUENCY_BASELINE_HIGH. Global frequency sampling (D0) produces co-occurrence graph with clustering 0.639±0.014, explaining 73% of the manifold's 0.873 clustering. The CM null baseline (0.250) measures random edge rewiring, not co-occurrence generation. Most of the manifold's "anomalous" clustering is a natural property of frequency-weighted co-occurrence through shared lines, not a special structural feature | 2 | A, discrimination, manifold, frequency, baseline, co-occurrence | D0_clustering=0.639. real=0.873. ratio=0.732. CM_null=0.250. seeds=10. |
+| 1697 | Section effect negligible: SECTION_EFFECT_NEGLIGIBLE. Section-conditioned frequency (D1) adds only +0.004 clustering over global frequency (D0). Currier A is predominantly Herbal; section partitioning has near-zero effect on the manifold | 2 | A, discrimination, manifold, section, negligible | D1_clustering=0.643. D0=0.639. delta=+0.004. |
+| 1698 | Folio pool moderate: FOLIO_POOL_MODERATE. Folio pool restriction with uniform sampling (D2) adds +0.032 clustering but inflates density to 0.0335 (real: 0.0217). Pool restriction creates vocabulary cliques but is not the dominant manifold mechanism. Frequency weighting (D3) corrects density but reduces clustering by -0.022 while improving Jaccard by +0.045 | 2 | A, discrimination, manifold, folio, pool, vocabulary | D2_clustering=0.674. D2_density=0.0335. D3_clustering=0.652. D3_jaccard=0.285. |
+| 1699 | Frequency corrects not adds: FREQUENCY_CORRECTS_NOT_ADDS. Per-folio frequency weighting (D3) corrects density inflation from uniform sampling but does not add clustering. D3-D2 = -0.022 clustering, +0.045 Jaccard. Best model by edge overlap (Jaccard 0.285, precision 0.442, recall 0.444) | 2 | A, discrimination, manifold, folio, frequency, density | D3_jaccard=0.285. D3_precision=0.442. D3_recall=0.444. D3_density=0.0218. |
+| 1700 | PREFIX selectivity hurts: PREFIX_SELECTIVITY_HURTS. Adding PREFIX->HEAD compatibility filtering (D4) REDUCES both clustering (-0.106) and Jaccard (-0.049) versus D3. PREFIX constraints remove correct co-occurrence edges faster than incorrect ones. 35.2% of PREFIX*HEAD pairs forbidden in A, but filtering by these constraints is misaligned with actual line-level co-occurrence patterns | 2 | A, discrimination, manifold, PREFIX, HEAD, selectivity, negative | D4_clustering=0.546. D4_jaccard=0.236. D4-D3_clustering=-0.106. D4-D3_jaccard=-0.049. forbidden_pairs=35.2%. |
+| 1701 | Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best deployment model (D3) reproduces only 28.5% of real edges (Jaccard 0.285). Final model (D4) achieves clustering 0.546, Jaccard 0.236. The 0.234 clustering gap (0.873-0.639) between real and frequency baseline is not explained by section conditioning, folio pool restriction, frequency weighting, or PREFIX selectivity. Residual reflects line-level content specificity — which specific MIDDLEs each folio assigns to each line | 2 | A, discrimination, manifold, content, residual, deployment | best_jaccard=0.285. final_clustering=0.546. gap=0.234. |
+
+**Phase 586 findings (Compatibility Reconstruction, DEPLOYMENT_INSUFFICIENT):**
+- The manifold's clustering anomaly is reframed (C1696): The comparison 0.873 vs CM null 0.250 overstated the anomaly. Frequency-weighted co-occurrence through shared lines naturally produces clustering 0.639. The truly anomalous gap is 0.234 (0.873-0.639), not 0.623 (0.873-0.250).
+- No deployment layer closes the gap (C1697-C1700): Section (+0.004), folio pool (+0.032), frequency weighting (-0.022), and PREFIX selectivity (-0.106) together fail to explain the residual. Folio pool is the only positive contributor, but moderate.
+- PREFIX filtering is counterproductive (C1700): Despite 35.2% of PREFIX*HEAD pairs being forbidden, applying this constraint reduces both clustering and edge overlap. This suggests PREFIX constraints serve purposes other than shaping line-level MIDDLE co-occurrence.
+- The residual is content, not grammar (C1701): The 0.234 gap reflects which specific MIDDLEs each line is "about" — irreducible content specificity that cannot be captured by structural deployment rules. Each line's MIDDLE selection encodes specific information.
+- C1695 reframing: C1695 attributed the manifold to "deployment grammar (B execution)." Phase 586 shows that even A-native deployment structure fails. The manifold reflects folio-specific CONTENT assignments, not grammar rules from any system.
 
 ---
 
