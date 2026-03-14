@@ -66,3 +66,16 @@ phases/VOYNICH_CONTROL_ARCHITECTURE_PHYSICAL_ALIGNMENT/results/t1_physical_proce
 
 # Working scratchpad (session-specific temp files)
 scratchpad/
+
+# Brunschwig source materials — large files (hosted separately)
+sources/brunchwig-zip/
+sources/brunschwig_1500/page_images/
+sources/brunschwig_1500/_chunk_*.txt
+sources/brunschwig_1500/english/_en_T*.txt
+sources/brunschwig_1500/english/_german_chunks/
+sources/brunschwig_1512/pages/
+sources/brunschwig_1512/_chunk_*.txt
+sources/brunschwig_1512/brunschwig_1512_assembled.txt
+sources/brunschwig_1512/brunschwig_1512_large_book.txt.bak
+sources/brunschwig_1512/english/_en_T*.txt
+*.pdf

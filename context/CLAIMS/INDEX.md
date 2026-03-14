@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1688 validated constraints | **Version:** 5.57 | **Date:** 2026-03-12
+**Total:** 1695 validated constraints | **Version:** 5.58 | **Date:** 2026-03-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5897,6 +5897,27 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Within-season degeneracy (C1686): The 12 assignments collapse to 3 distinct seasonal groupings. Swapping Aries/Taurus or Capricorn/Aquarius produces identical statistics because both signs share the same season. This is a structural limitation of season-level analysis, not a data issue. The effective search space is only 3 (which unknown goes to Summer).
 - Unknowns degrade signal (C1687): The confident-only 7-folio subset (C1681, V=0.157, perm_p=0.018) strictly outperforms the best 12-folio map (V=0.113). The 5 unknown folios have generic-animal center illustrations and their vocabulary category profiles don't cleanly align with seasonal patterns. Future zodiac-category work should use the confident-only subset.
 - f72r3 is the diagnostic folio (C1688): f72r3=Cancer (Summer) is preferred in all 4 top-ranked assignments. It has the most tokens (163) among the unknowns and its category profile fits Summer best. f71v and f72r1 are consistently assigned to Winter (Capricorn/Aquarius) in all top assignments, though their internal ordering is degenerate.
+
+---
+
+### Phase 585: Atom Compositional Generator — F-BRU-003 Retest (C1689-C1695)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1689 | Atom compatibility partially predictable: ATOM_COMPATIBILITY_PARTIAL. Logistic regression on atom-level features (Jaccard, same HEAD/TERM/category, shared mods) predicts pairwise compatibility with AUC=0.7452. But density-matched application to real MIDDLEs yields edge Jaccard overlap of only 6.4%. Statistical predictive power exists but near-zero overlap with actual deployment edges | 2 | A, atom, compatibility, logistic, deployment | AUC=0.7452. edge_jaccard=0.064. precision=0.119. recall=0.122. |
+| 1690 | Atom composition breaks independent feature ceiling: COMPOSITION_BREAKS_CEILING. Empirical atom-compositional generator (HEAD+MOD+TERM with real C1475-C1487 parameters) achieves clustering 0.599±0.008, breaking C984's independent feature ceiling of 0.49. Atom composition contributes structure beyond independent features but falls far short of real 0.873 | 2 | A, atom, composition, discrimination, generator | empirical_clustering=0.599. ceiling=0.49. real=0.873. seeds=10. |
+| 1691 | Slot architecture sufficient for compositional clustering: SLOT_ARCHITECTURE_SUFFICIENT. Structured-Random model (uniform HEAD weights, uniform modifier selection, no avoidance/gating) achieves clustering 0.501 = 83.6% of Empirical 0.599. The three-slot HEAD+MOD+TERM architecture, not specific parameter values, drives compositional clustering | 2 | A, atom, architecture, slot, composition | structured_random=0.501. empirical=0.599. ratio=0.836. |
+| 1692 | Cross-slot dependencies neutral for clustering: CROSS_SLOT_DEPENDENCIES_NEUTRAL. Param-Independent model (real marginal frequencies, no cross-slot avoidance/selectivity/gating) achieves clustering 0.623 >= Empirical 0.599. Avoidance rules (C1472), selectivity profiles (C1479), terminal gating (C1484) do not increase clustering. These constraints serve other purposes (diversity maintenance, degeneracy prevention) | 2 | A, atom, dependency, avoidance, clustering, neutral | param_independent=0.623. empirical=0.599. delta=+0.024. |
+| 1693 | Naive property model confirmed dead on clean baseline: NAIVE_PROPERTY_CONFIRMED_DEAD. F-BRU-003-style naive generator (8 random property bins, featureless MIDDLEs) produces clustering 0.021±0.001 on H-filtered clean baseline. Qualitative result of F-BRU-003 confirmed | 2 | A, property, generator, naive, negative | naive_clustering=0.021. real=0.873. ratio=0.024. |
+| 1694 | No dominant compositional layer: NO_DOMINANT_COMPOSITIONAL_LAYER. Ablation on Empirical model (removing one architectural layer at a time) shows all variants within 0.56-0.62 clustering range. No single layer (modifier avoidance, HEAD-modifier selectivity, terminal gating, slot syntax, HEAD structure) dominates. Compositional clustering is distributed across the architecture | 2 | A, atom, ablation, architecture, distributed | ablation_range=[0.559,0.620]. full_model=0.601. max_drop=0.042. |
+| 1695 | Deployment not compositional: DEPLOYMENT_NOT_COMPOSITIONAL. Logistic compatibility model applied to real 972 MIDDLEs at density-matched threshold: predicted clustering 0.412, edge Jaccard 0.064. The model predicts ~10,500 edges but only 1,250 overlap with the real 10,241. Atom features do not determine which MIDDLEs co-occur on lines. Discrimination manifold clustering (0.873) arises from deployment grammar (B execution), not morphological composition | 2 | A, A↔B, atom, deployment, grammar, discrimination, manifold | pred_clustering=0.412. edge_jaccard=0.064. TP=1250. real_edges=10241. |
+
+**Phase 585 findings (Atom Compositional Generator, PARTIAL_COMPOSITIONAL / DEPLOYMENT_NOT_COMPOSITIONAL):**
+- Atom composition breaks ceiling (C1690): Empirical model clustering 0.599 exceeds the 0.49 independent feature ceiling (C984) by 22%. The HEAD+MOD+TERM architecture creates transitivity that independent binary features cannot. F-BRU-003 never tested this class of model.
+- Architecture drives composition, not parameters (C1691): Structured-Random model (uniform everything) reaches 0.501, already past the ceiling. Specific parameter values from C1475-C1487 add only ~0.10 more. The slot grammar itself creates triangles.
+- Cross-slot rules are neutral (C1692): Param-Independent (0.623) actually exceeds Empirical (0.599). The avoidance, selectivity, and gating rules from C1472/C1479/C1484 don't increase clustering — they constrain the system for other purposes (diversity, non-degeneracy).
+- Deployment is the clustering source (C1695): The diagnostic test is definitive. Logistic model on real MIDDLEs at density-matched threshold gives clustering 0.412 with only 6.4% edge overlap. The 0.873 clustering comes from which MIDDLEs the B grammar deploys together on lines — kernel structure, hazard avoidance, program logic — not from how MIDDLEs are built from atoms.
+- F-BRU-003 NARROWED: Its naive model correctly fails (C1693), but its conclusion "permanently kills property interpretations" is too broad. Atom composition gets further (0.60 vs 0.02) but real compatibility is determined at the deployment layer, not the composition layer.
 
 ---
 

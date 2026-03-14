@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,642 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,695 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1648 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1688.
+the highest ID present is C1695.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2014,6 +2014,13 @@ C1685	Full zodiac map NOT INFERRED: ZODIAC_MAP_NOT_INFERRED. Brute-force enumera
 C1686	Within-season assignment degeneracy: WITHIN_SEASON_DEGENERATE. Swapping signs within same season produces identical chi2/V. 12 assignments collapse to 3 seasonal groupings	2	AZC, zodiac, category, season, degeneracy	distinct_groupings=3. V_gap=0.000.
 C1687	Unknown folios degrade seasonal signal: UNKNOWNS_DEGRADE_SIGNAL. Best 12-folio V=0.113 < confident-only V=0.157. Adding 5 unknowns weakens signal at every assignment	2	AZC, zodiac, category, season, noise	best_12f_V=0.113. confident_V=0.157. delta=-0.044.
 C1688	f72r3 seasonal assignment resolved: F72R3_SEASONAL_ASSIGNMENT. f72r3=Cancer (Summer) in all top-4 assignments. f72r3 has most tokens (163) among unknowns	2	AZC, zodiac, category, season, f72r3	summer_V=0.113. winter_V=0.092-0.098. tokens=163.
+C1689	Atom compatibility partially predictable: ATOM_COMPATIBILITY_PARTIAL. Logistic regression on atom features predicts compatibility AUC=0.745 but density-matched edge Jaccard=0.064 on real MIDDLEs. Statistical power exists but near-zero deployment overlap	2	A, atom, compatibility, logistic, deployment	AUC=0.7452. edge_jaccard=0.064. precision=0.119.
+C1690	Atom composition breaks independent feature ceiling: COMPOSITION_BREAKS_CEILING. Empirical atom-compositional generator clustering 0.599 > C984 ceiling 0.49. HEAD+MOD+TERM architecture creates transitivity beyond independent features	2	A, atom, composition, discrimination, generator	empirical=0.599. ceiling=0.49. real=0.873.
+C1691	Slot architecture sufficient for compositional clustering: SLOT_ARCHITECTURE_SUFFICIENT. Structured-Random (uniform params) clustering 0.501 = 83.6% of Empirical 0.599. Three-slot grammar, not parameter values, drives compositional clustering	2	A, atom, architecture, slot, composition	structured_random=0.501. empirical=0.599. ratio=0.836.
+C1692	Cross-slot dependencies neutral for clustering: CROSS_SLOT_DEPENDENCIES_NEUTRAL. Param-Independent 0.623 >= Empirical 0.599. Avoidance/selectivity/gating rules do not increase clustering; serve diversity/non-degeneracy	2	A, atom, dependency, avoidance, clustering, neutral	param_indep=0.623. empirical=0.599. delta=+0.024.
+C1693	Naive property model confirmed dead on clean baseline: NAIVE_PROPERTY_CONFIRMED_DEAD. F-BRU-003-style naive generator clustering 0.021 on H-filtered baseline. F-BRU-003 qualitative result confirmed	2	A, property, generator, naive, negative	naive=0.021. real=0.873. ratio=0.024.
+C1694	No dominant compositional layer: NO_DOMINANT_COMPOSITIONAL_LAYER. Ablation on Empirical model: all variants within 0.56-0.62 range. No single layer (avoidance, selectivity, gating, syntax, HEAD) dominates clustering	2	A, atom, ablation, architecture, distributed	range=[0.559,0.620]. full=0.601. max_drop=0.042.
+C1695	Deployment not compositional: DEPLOYMENT_NOT_COMPOSITIONAL. Logistic model on real 972 MIDDLEs at density-matched threshold: clustering 0.412, edge Jaccard 0.064. Only 1250/10241 real edges predicted. Manifold clustering from deployment grammar, not composition	2	A, A↔B, atom, deployment, grammar, discrimination	pred_clustering=0.412. edge_jaccard=0.064. TP=1250. real_edges=10241.
 
 ---
 

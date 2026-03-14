@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.58 (2026-03-14) - Phase 585: Atom Compositional Generator
+
+### Summary
+
+Phase 585 retests F-BRU-003 ("Property-Based Generator Rejection", v2.44, 2026-01-15) with the atom architecture discovered 5-8 weeks after F-BRU-003 was run. F-BRU-003 tested a naive generator (8 random property bins, featureless MIDDLEs) before HEAD+MOD+TERM composition was known. This phase tests five generators (empirical atom model, structured-random, parameter-independent, naive reproduction, independent features) plus a diagnostic isolating the clustering gap source. Key finding: atom composition breaks the 0.49 independent feature ceiling (reaching 0.60) but atom features do not predict real MIDDLE co-occurrence (edge Jaccard 6.4%). The discrimination manifold's 0.873 clustering arises from the deployment grammar (B execution), not morphological composition.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ATOM_COMPOSITIONAL_GENERATOR/` -- Phase 585 directory with 2 scripts, 2 result files, INDEX |
+| **ADDED** | C1689: Atom compatibility partially predictable -- AUC=0.745 but edge Jaccard=0.064 on real MIDDLEs |
+| **ADDED** | C1690: Composition breaks independent feature ceiling -- Empirical clustering 0.599 > ceiling 0.49 |
+| **ADDED** | C1691: Slot architecture sufficient -- Structured-Random 0.501 = 83.6% of Empirical |
+| **ADDED** | C1692: Cross-slot dependencies neutral -- Param-Independent 0.623 >= Empirical 0.599 |
+| **ADDED** | C1693: Naive property confirmed dead -- clustering 0.021 on clean H-filtered baseline |
+| **ADDED** | C1694: No dominant compositional layer -- Ablation range 0.56-0.62 |
+| **ADDED** | C1695: Deployment not compositional -- Real MIDDLEs predicted clustering 0.412, edge Jaccard 0.064 |
+| **UPDATED** | INDEX.md -- +7 constraints (1695 total), Phase 585 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.58, 1695 constraints, 585 phases) |
+| **ANNOTATED** | F-BRU-003 NARROWED -- naive model fails but conclusion "permanently kills property interpretations" too broad |
+
+### Key Findings
+
+- **Composition breaks ceiling (C1690):** Atom-compositional generators achieve 0.599 clustering, exceeding C984's 0.49 independent feature ceiling by 22%. F-BRU-003 never tested this class of model. The HEAD+MOD+TERM slot grammar creates transitivity that independent binary features cannot.
+- **Architecture, not parameters (C1691):** Structured-Random model (uniform everything) reaches 0.501, already past the ceiling. Specific parameter values add only ~0.10. The slot grammar IS the clustering driver.
+- **Cross-slot rules neutral (C1692):** Param-Independent (0.623) actually exceeds Empirical (0.599). The avoidance/selectivity/gating rules serve diversity, not clustering.
+- **Deployment is the source (C1695):** Definitive diagnostic. Logistic model on real MIDDLEs at density-matched threshold: clustering 0.412, edge Jaccard 6.4%. Only 1,250 of 10,241 real edges predicted. Atom features do not determine line-level co-occurrence. The manifold is a grammar property, not a morphology property.
+- **F-BRU-003 narrowed:** Naive model correctly fails (0.021) but the broad conclusion is too strong. Atom composition gets to 0.60, not 0.02. The real bottleneck is that compatibility is deployment-determined, not composition-determined.
+
+---
+
 ## Version 5.57 (2026-03-12) - Phase 584: Zodiac Assignment Inference
 
 ### Summary

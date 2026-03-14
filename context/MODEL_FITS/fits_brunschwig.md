@@ -125,11 +125,14 @@ Property model FAILS to reproduce Voynich structure:
 | Clusters | 33 | 56 |
 
 ### Status
-✔ Real, methodologically strong
-✔ Permanently kills property/low-rank interpretations
-✖ Negative knowledge, not positive constraint
+✔ Real, methodologically strong for NAIVE property models
+✖ Does NOT kill atom-compositional property interpretations (Phase 585 C1690)
+✖ Tested before atom architecture (C1190, C1250, C1393-C1498) was discovered
+✖ Used 4 coarse metrics, no H-filtering, featureless MIDDLEs
 
-**Correct handling:** Document as generator rejection, link to C475/C476 as evidentiary support. Do NOT mint new constraint.
+**NARROWED (Phase 585, v5.58):** F-BRU-003's naive model correctly fails (C1693 confirms clustering=0.021) but atom-compositional models break the 0.49 ceiling reaching 0.599 (C1690). However, even atom composition fails to predict real deployment (C1695: edge Jaccard 0.064). Net: kills naive property models, not compositional ones. The discrimination manifold is deployment-grammar-driven, not composition-driven.
+
+**Correct handling:** Document as generator rejection for naive/featureless models. Link to C475/C476 and C1689-C1695. Do NOT extend to atom-compositional interpretations.
 
 ---
 
