@@ -13,9 +13,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1442 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1711 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1629.
+the highest ID present is C1711.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -55,8 +55,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-03-10 11:20
-**Version:** FROZEN STATE (1442 validated constraints, 75 fits) [FULL]
+**Generated:** 2026-03-15 08:28
+**Version:** FROZEN STATE (1711 validated constraints, 75 fits) [FULL]
 
 ---
 
@@ -1853,7 +1853,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1442 constraints | 2026-03-10
+CONSTRAINT_REFERENCE v2.6 | 1522 constraints | 2026-03-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -3301,6 +3301,86 @@ C1625	Folio-specific apparatus parameterization improves demanded-event ERM	2	B,
 C1627	B10 sensitivity increases under folio-specific config	2	B, virtual apparatus, folio-specific, B10, sensitivity, CLOSE, recovery, C1609, C1612	AP3 3/4 PASS. (M1-M2b) eventive delta > (M0-M2a) for f108v, f86v6, f84r. Close-recovery channel more load-bearing when tuned to folio.
 C1628	Existing anchors survive folio-specific parameterization	2	B, virtual apparatus, folio-specific, anchor, P2, UEB, WCP, stability, C1605	AP4 PASS. P2 by reference. UEB improves 3/4. WCP drops < 0.01 per folio (F1 attractor compression, benign).
 C1629	Folio-specific parameters align with structural proxies	2	B, virtual apparatus, folio-specific, F1-F5, structural, proxy, monotone, interpretability, C1380, C1574, C1569	AP5 5/5 PASS. All F1-F5 axes preserve intended structural ordering across pilot folios. F1 (AXM occ), F2 (closure exploitability), F3 (THERMAL frac), F4 (hl_rate), F5 (SEALED_VESSEL).
+C1632	Real closure tokens produce greater Y accumulation at demanded events than state-matched nulls	2	B, virtual apparatus, folio-specific, YGA, Y-gain, demanded, closure, M1, M4f, C1625, C1629	BP3 4/4 PASS. YGA: f108v +0.076, f86v6 +0.037, f111r +0.056, f84r +0.075. All positive including 3/3 demand-strong.
+C1633	Real closure tokens convert disruption to Y with higher efficiency than state-matched nulls	2	B, virtual apparatus, folio-specific, DYE, efficiency, disruption, Y-gain, productive, closure, M1, M4f, C1632	CP1 4/4 PASS. DYE advantage: f108v +0.078, f86v6 +0.002, f111r +0.061, f84r +0.128. CP2 (EPV >= 0.80): 3/4 PASS (f86v6 fails at 12/20).
+C1634	Real closure tokens produce higher per-step disruption than random tokens at CLOSE positions	2	B, virtual apparatus, folio-specific, DVA, disruption, dV, CLOSE, productive, M1, M4f, C1633	CP3 4/4 PASS. DVA: f108v +0.023, f86v6 +0.015, f111r +0.034, f84r +0.029. All positive.
+C1635	Productive disruption efficiency (DYE advantage > 0) generalizes beyond hand-selected pilot folios to the broader 18-folio pilot set spanning 5 sections and 3 apparatus profiles	2	B, virtual apparatus, folio-specific, DYE, DVA, generalization, productive disruption, 18-folio, sections, profiles, C1633, C1634	Tier C GP2: 3/4=75% PASS. Tier A GP1: 16/18=89%. DVA universal: 18/18. DYE failures: f39v (A2), f86v5 (A2).
+C1636	Productive disruption efficiency is a broad apparatus property of Currier B: real closure tokens produce greater per-step disruption than demand-matched nulls and convert it into Y more efficiently across the full 76-folio eligible set, with strongest validation in demand-strong folios and systematic attenuation concentrated in the A2/section C stratum	2	B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, A2 forgivingness, C1633, C1634, C1635	Tier C GP2: 15/17=88% PASS. Tier A GP1: 68/76=89%. DVA: 75/76=99%. A1 21/21, A3 36/37, A2 11/18.
+C1637	WCP (whole-closure-packet coherence) is demoted from apparatus success criterion to legacy continuity diagnostic; endpoint packet coherence does not discriminate grammar advantage at scale (38% pass at Tier A) because the restoring force that makes the apparatus stable masks token-level differences at endpoints	2	B, virtual apparatus, WCP, demotion, legacy, endpoint, restoring force, C1614, C1636	WCP pass 29/76=38%. DYE/DVA pass 68-75/76. Restoring force dominates endpoints.
+C1638	The primary apparatus-side success family is DYE (dV-to-Y efficiency), DVA (dV advantage), and YGA (Y-gain advantage) — process-quality metrics that measure execution dynamics during closure, not endpoint state	2	B, virtual apparatus, DYE, DVA, YGA, success family, process quality, productive disruption, C1632, C1633, C1634, C1636, C1637	DYE/DVA validated at 76-folio scale. Process > outcome confirmed across phases 570b-572.
+C1639	A2_SEALED_RECIRCULATION excess forgivingness mechanism identified: CLOSE recovery channels (R1-R5) account for 159.5% of A2's excess CCS1. Removing close recovery drops A2 null DYE from 0.114 to near zero. Within-A2, CCS1 correlates rho=0.963 with close recovery ablation effect. The mechanism is single-channel dominant, not distributed	2	B, virtual apparatus, A2, mechanism, CCS, close recovery, R1-R5, ablation, forgivingness, C1636	NO_CLOSE_RECOVERY excess_fi_share=159.5%. NO_CONTAINMENT=116.0%. CRR_M4f=0.389. NRI_M4f=0.054. rho(CCS1,abl_CR)=0.963.
+C1640	Currier B apparatus family partition: response-only clustering finds real but sub-threshold structure (silhouette=0.361, ARI_2family=0.385, bootstrap=0.589). Two-cluster split isolates 12 forgiving folios (9 A2 + 3 A3) from 64 productive folios. Response-surface clustering recovers profiles better at k=3 (ARI=0.348) but with low silhouette (0.126). Families are gradient-like, not crisp	2	B, virtual apparatus, clustering, family partition, Ward, silhouette, ARI, C1636, C1639	T3a k=2 sil=0.361 ARI_2fam=0.385. T3b k=3 ARI_prof=0.348. Bootstrap=0.589. Combined profile prediction 82.9%.
+C1641	Within-A2 structure is weakly structured: section does not explain CCS1 variance (F-ratio=0.055), but 44% of A2 folios are boundary cases (4 A2→A1, 4 A2→A3). T\|A2 (n=2) anomalously good (EPV=0.90). Only 6/18 A2 folios pass EPV≥0.80. Core A2 mean CCS1=0.180, boundary-to-A1 mean=0.013	2	B, virtual apparatus, A2, internal structure, conformity, boundary, C1636, C1639	F-ratio=0.055. Boundary 8/18=44%. Core_A2 n=5 CCS1=0.180. A2->A1 n=4 CCS1=0.013. T\
+C1642	A2 grammar-strength forgivingness is strength-dependent: only STRONG-grammar A2 events beat the null (advantage +0.021, n=11), while WEAK events lose to the null (-0.014, n=40). Grammar strength modulates whether real closure outcompetes A2's generous close-recovery physics. This rules out uniform recirculation and confirms strength-gated conversion	2	B, virtual apparatus, A2, grammar, forgivingness, CCS, strength-dependent, C1636, C1639	STRONG adv=+0.021 (n=11). MEDIUM adv=+0.009 (n=12). WEAK adv=-0.014 (n=40). Overall CCS1=0.121. Range=0.035.
+C1643	A2 recovery gate sub-channel decomposition: RECOVERY_GATE_R1_C_DOMINANT. Both R1_C (117.3%) and R4_C (118.8%) containment pathways dominate the close recovery effect. Sub-channels are strongly non-additive (interaction fraction=-1.059), confirming R1-C feeds R4-C in a coupled containment-to-yield loop	2	B, virtual apparatus, A2, recovery gate, sub-channel, R1, R4, containment, C1639	R1_C share=117.3%. R4_C share=118.8%. Joint=236.2%. Interaction=-1.059 (STRONGLY_INTERACTIVE).
+C1644	Counterfeit closure threshold: THRESHOLD_A2_SHIFTED_GRADUAL. A2 requires CTS=0.18 for positive magnitude advantage vs CTS=0.04 for A1 (+0.138 shift). Transition is gradual (width=0.327 CTS). A2 needs minimum 1 strong grammar signal; A1/A3 need 0. A2 counterfeit susceptibility 64% at CTS<0.2, 0% above CTS=0.6	2	B, virtual apparatus, threshold, closure, CTS, counterfeiting, C1639, C1642	A2 mag_threshold=0.18. A1=0.04. Shift=+0.138 (MODERATELY_SHIFTED). Width=0.327 (GRADUAL). A2 min_n_strong=1.
+C1645	Closure packet morphology selectivity: MORPHOLOGY_SELECTIVE_COUNTERFEITING. 5 packet signatures resistant (armed+headless+high_cts types), 5 A2-counterfeitable (low-signal types). Top A2 protective features: headless_involved (+0.126), high_cts (+0.107), armed (+0.092). Counterfeiting is selective, not universal	2	B, virtual apparatus, morphology, closure packet, counterfeiting, C1639, C1644	5 RESISTANT, 5 A2_COUNTERFEITABLE. Headless protection=+0.126. High_cts=+0.107. Armed=+0.092.
+C1646	Apparatus response landscape: LANDSCAPE_THREE_POLE. 25% STABLE_AMPLIFIER (12 A3 + 6 A1 + 1 A2), 63% THRESHOLD_DEPENDENT (24 A3 + 15 A1 + 9 A2), 12% FORGIVING_RECIRCULATOR (8 A2 + 1 A3). Classification partially cross-cuts profile (cross-cut=0.25). NOTE: classes are descriptive convenience overlays, not ontological species	2	B, virtual apparatus, landscape, folio classification, continuous, C1639, C1640	SA=25% (n=19). TD=63% (n=48). FR=12% (n=9). Cross-cut=0.25. CCS1-margin rho=-0.578.
+C1647	ACS configuration: CONFIGURATION_ACS_VALIDATED. Signature offset table covers 86.6% of events, CTS-ACS Spearman rho=0.8045 (correlated but non-redundant), RESISTANT mean ACS=0.6311 vs COUNTERFEITABLE=0.2241, ACS discrimination gap (0.2704) > CTS gap (0.1012). Empirical thresholds differ between profiles (A1=0.116, A2=0.324, A3=0.154)	2	B, apparatus, ACS, configuration, morphology, C1645	Coverage=86.6%. Rho=0.8045. ACS_gap=0.2704. CTS_gap=0.1012.
+C1648	Two-layer gate: TWO_LAYER_GATE_SYNERGISTIC. Layer 1 (Y-credit gating) delta=0.003021, Layer 2 (cleanliness gain modulation) incremental=0.000538, combined=0.003560. Both layers contribute with synergy. A2 CCS1 reduction=1.6%. Non-A2 degradation within tolerance (A1=1.4%, A3=3.4%)	2	B, apparatus, gate, two_layer, Y_credit, cleanliness, C1643	L1_delta=0.003. L2_incr=0.0005. Both=0.0036. Synergy=True.
+C1649	Event-band stratification: STRATIFIED_SELECTIVITY_REJECTED. SSI=0.0 across all 5 gate configurations. No false intelligence reduction achieved. Gate is too permissive: counterfeitable signature auth_mult ranges 0.83-1.00 (all >0.5, none correctly starved). CTS weight (alpha=0.60) in ACS formula dominates, drowning out morphological configuration signal	2	B, apparatus, stratification, event_band, SSI, NEGATIVE, C1645, C1647	SSI=0.0. TP=0, FN=5, TN=5. Auth_mult range [0.83,1.0].
+C1650	Landscape shift: LANDSCAPE_POLE_AGGRAVATED. A2 FORGIVING unchanged (8→8). Total FORGIVING increased by 1 (9→10, one new A1/A3 folio). Gate produces uniform advantage reduction, not surgical selectivity. Descriptive landscape classification is too sensitive to small advantage changes in borderline folios	2	B, apparatus, landscape, pole_reduction, NEGATIVE, C1646, C1647	FR: 8->8 (A2). FR_total: 9->10. New_A1A3=1.
+C1651	Tiered classification: CLASSIFICATION_PARTIAL. 6-class tiered classifier (AUTH_RESISTANT through AUTH_AMBIGUOUS) covers 2323 lines, all 6 classes populated, AUTH_AMBIGUOUS only 5.4%. M1 signature agreement 76% (below 90% target) due to armed/unarmed proxy differences vs Phase 574. Class-level agreement higher	2	B, apparatus, classification, tiered_classifier, closure	Lines=2323. Classes=6/6. AMB=5.4%. M1_agree=76%.
+C1652	Regime admission selectivity: ADMISSION_SELECTIVE. Best config REGIME_AMB_PESSIMISTIC SSI=63.5. REGIME_GATED A2 delta_adv=0.0605 > CREDIT_ONLY=0.0561, proving regime admission (gating R1-R5) outperforms credit-only (gating Y). Architecture robust: 4/4 regime configs beat credit-only control. Decisive test: gating Layer 2 (closure regime admission) works where Layer 3 (Y-credit, Phase 575) failed	2	B, apparatus, regime_admission, gate, SSI, decisive, POSITIVE, C1649, C1643	SSI=63.5. RG_delta=0.0605. CO_delta=0.0561. Beat_credit=4/4.
+C1653	Event-band discrimination: DISCRIMINATION_PARTIAL. TP=4/5 CF signatures suppressed, TN=4/4 RESISTANT preserved, FP=0. Strong-band DYE preserved 58.7% (target 90%). Weak CF null suppression 71.4%. Gate correctly discriminates CF from RESISTANT at signature level but reduces strong-band DYE because some STRONG events land on non-RESISTANT lines (AUTH_PROTECTIVE, AUTH_THRESHOLD)	2	B, apparatus, discrimination, event_band, confusion_matrix, C1645	TP=4/5. TN=4/4. FP=0. Strong_pres=58.7%. Weak_supp=71.4%.
+C1654	Landscape + CCS1: LANDSCAPE_STABLE. A2 FORGIVING pole unchanged (8→8) despite 66.2% CCS1 reduction. No new A1/A3 FORGIVING. DYE improvement does not translate to classification shifts. A2 null wins reduced 7→2. Landscape classification may be too insensitive to capture the gate's discriminative improvement	2	B, apparatus, landscape, CCS1, pole_reduction, C1646	FR: 8->8. CCS1_red=66.2%. Null_wins: 7->2. New_A1A3=0.
+C1655	Authenticity strength coverage: COVERAGE_PARTIAL. 2323 lines receive strength bands, all 3 bands populated (STRONG=460, MED=1729, WEAK=134). 4 structural zeros documented (AUTH_THRESHOLD+WEAK/MED, AUTH_PROTECTIVE+WEAK, AUTH_PRONE+WEAK). Surrogate agreement with Phase 574 event bands only 21.6%. Signal alignment changes: 1782 lines changed opaque, 572 changed armed	2	B, apparatus, strength, coverage, closure	Lines=2323. Bands=3/3. Zeros=4. Surr_agree=21.6%.
+C1656	Strong-band rescue: RESCUE_REJECTED. Best config=NO_STRENGTH (=P576 AMB_PESSIMISTIC). Strong preserved=69.1% (<80% target). Weak guardrail=SAFE (null wins not increased). A2 delta=0.0635 (matches P576). STRENGTH_RESCUE achieves 76.8% strong but A2 delta drops to 0.0475. The strength dimension does not improve performance	2	B, apparatus, rescue, strength, decisive, NEGATIVE, C1653, C1652	Best=NO_STRENGTH. Strong=69.1%. A2_delta=0.0635. SSI=86.5.
+C1657	Configuration robustness: SPECIFIC. 0/3 strength configs beat NO_STRENGTH. 3/3 beat CREDIT_ONLY_4D. Architecture not robust for the strength dimension — result is config-specific (only NO_STRENGTH works). Per-config SSI: NO_STRENGTH=86.5, RESCUE=92.4, CAUTIOUS=77.8, AMB_ONLY=86.8, CREDIT_ONLY_4D=93.5	2	B, apparatus, robustness, configuration, closure	Beat_NS=0/3. Beat_CO=3/3. Robust=False.
+C1658	Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No new A1/A3 FORGIVING. Pole reduction 0.0%. No regression. Landscape identical to Phase 576	2	B, apparatus, landscape, migration, closure	FR: 8->8. Migrating=0. Red=0.0%. Regressed=False.
+C1659	Event-local feature coverage: COVERAGE_VALIDATED. 463 events classified into 4 tiers (AUTHENTIC_RESOLVER=128, PARTIAL_RESOLVER=174, NONRESOLVING_COUNTERFEIT=161, INERT_PSEUDO=0). 2323 total lines. burden_frac_resolved range [-3.46, 1.00]. Y_gain NOT used in classification (outcome leakage avoidance)	2	B, apparatus, event_local, coverage, closure	Events=463. Lines=2323. Classes=3/4.
+C1660	Event legitimacy gating: EVENT_GATING_REJECTED. Best config=LINE_CLASS_CONTROL (Phase 576 AMB_PESSIMISTIC). EVENT_CLASS_FULL A2 delta=-0.0185 (vs LCC +0.0635). All event configs produce negative A2 delta. Null wins: ECF 7→8 vs LCC 7→2. Event-class gating strictly worse than morphological gating	2	B, apparatus, event_gating, decisive, NEGATIVE, C1652, C1656	Best=LCC. ECF_delta=-0.0185. LCC_delta=+0.0635.
+C1661	Burden resolution discriminator: DISCRIMINATOR_WEAK. AUTHENTIC mean DYE_adv=0.119 > COUNTERFEIT=0.098 (direction OK). Cohen's d=0.267 (<0.3 threshold). COUNTERFEIT has 90.1% positive DYE rate — burden non-resolution does NOT mean lack of M1 advantage. Resolution coherence: AUTH 68.8% vs CF 7.5% (stark but doesn't predict DYE)	2	B, apparatus, burden_resolution, discriminator, closure	AUTH_adv=0.119. CF_adv=0.098. d=0.267. CF_pos=90.1%.
+C1662	Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No regression. Landscape identical to Phase 576/577	2	B, apparatus, landscape, migration, closure	FR: 8->8. Migrating=0. Red=0.0%.
+C1663	Pole coherence: GRADIENT_TAIL. LOO nearest-centroid accuracy=33.3% (INSEPARABLE). 0/5 significant F-axes, 2/5 significant ablation channels (NO_CLOSE_RECOVERY p=0.0004, NO_CONTAINMENT p=0.0005). Within-forgiving cosine similarity=0.919, between-group=0.891. Lobe tightness=TIGHT. The 8 are the tail of A2's continuous gradient, not a distinct subfamily	2	B, apparatus, A2_forgiving, coherence, closure	LOO=33.3%. Sig_F=0/5. Sig_abl=2/5. Sim=0.919.
+C1664	Channel concentration: CHANNEL_CONCENTRATED. 8/8 folios have >60% share in single recovery channel. NO_R1 dominates 6/8 (f39v,f40r,f50v,f55v,f85r2,f95r2). NO_R4 dominates 2/8 (f86v5,f86v6). Pre-gate and post-gate dominant channels identical -- regime admission gating did not alter residual conversion mechanism	2	B, apparatus, A2_forgiving, channel, sub_ablation, closure	Concentrated=8/8. R1=6/8. R4=2/8. Gate_change=0.
+C1665	Opportunity confound: OPPORTUNITY_NEUTRAL. Event count R-sq=0.0001 on CCS1 (no explanatory power). Forgiving CTS=0.200 vs passing=0.350 (p=0.021). Grammar bands: forgiving 80% WEAK vs passing 48.5%. E_armed: 6.7% vs 39.4%. Weaker closure events are intrinsic folio properties, not sampling artifacts	2	B, apparatus, A2_forgiving, opportunity, confound, closure	R_sq=0.0001. CTS_fg=0.200. CTS_pa=0.350.
+C1666	Structural endpoint: MIXED_BOUNDARY_STRATUM. F1xF2 grid (144pts/folio) + conditional 3rd-axis (F3/F5). 4 STRUCTURAL_ENDPOINT (f39v,f55v,f86v5,f95r2): no passing config. 4 PARAMETER_ACHIEVABLE (f40r,f50v,f85r2,f86v6): pass with displacement>=0.5. 0 PARAMETER_UNDERFIT. All best points at grid extreme (F1=1.6,F2=0.5). 7488 total runs	2	B, apparatus, A2_forgiving, endpoint, DECISIVE, retuning, closure	SE=4. PA=4. PU=0. Runs=7488.
+C1667	Response-surface manifold dimensionality: MANIFOLD_DIFFUSE. Space A (11 apparatus features) has effective rank 5.88 and requires 5 PCs for 80% variance. Not compressible to a low-dimensional summary	2	B_APPARATUS	eff_rank=5.88. PCs_80=5.
+C1668	Family geometry in manifold: FAMILY_GRADIENT. LOO accuracy 0.78, silhouette 0.13. Families distinguishable but extensively overlapping. A2 most elongated (ratio 1.36). A3 bridges A1-A2 (54% equidistant)	2	B_APPARATUS	LOO=0.78. sil=0.13. perm_p=0.001.
+C1669	Landscape alignment: LANDSCAPE_ALIGNED. SA/TD/FR classes show 2 significant KW PCs in Space A with between/within ratio 1.07. Three-pole structure reproduced in apparatus space	2	B_APPARATUS	sig_PCs=2. B/W=1.07. acc=0.70.
+C1670	Accent is manifold position: ACCENT_IS_MANIFOLD_POSITION. Canonical r1=0.871, max incremental R²=0.268. Folio accent is substantially captured by apparatus manifold position. Within-A2 R²=0.946	2	B_APPARATUS, ACCENT	can_r1=0.871. incr_R2=0.268.
+C1671	Atom positional gradient structure: GRADIENT_HETEROGENEOUS. HEAD and TERMINAL atoms gradient heterogeneously across quintiles — some atoms are sharply position-bound, others nearly flat. e/headless most position-sensitive, o nearly position-neutral	2	B, line, atom, position, gradient, HEAD, TERMINAL	HEAD chi2=659 p<0.001. TERM chi2=663 p<0.001. min_cosine=0.929. 5/6 predictions passed.
+C1672	Q3->Q4 atom decomposition: CLOSURE_DISTRIBUTED. Closure step is TERMINAL-concentrated (m-terminal alone = 77% of TERM JSD) but HEAD-distributed (e-collapse + headless/a-surge). Closure and specification are mechanistically distinct (TERM cosine=0.08)	2	B, line, atom, position, closure, Q3Q4, JSD, m-terminal	HEAD top2=58.5%. TERM top2=84.9%. m alone=77.4%. Q3Q4_vs_Q0Q1 TERM cosine=0.084.
+C1673	Hazard x atom x position: HAZARD_POSITION_COUPLED. Safety architecture operates through specific atom-position couplings, not aggregate rates. 16 zone-specific pairs at >1.5x enrichment. Work-zone safety is k-LED (k WORK=63.2% vs t 61.2% vs e 56.1%)	2	B, line, atom, position, hazard, zone, safety, k-HEAD	interaction chi2=337 p<0.001. 16 zone-specific pairs. k_WORK=0.632.
+C1674	Section-conditioned atom gradients: SECTION_MODULATES_GRADIENT. Sections preserve the three-zone scaffold but modulate atom deployment amplitudes. C section HEAD corr=0.76 (below 0.80). Q3Q4 JSD ratio across sections=2.2x	2	B, line, atom, position, section, gradient, modulation	C_HEAD_corr=0.761. Q3Q4_ratio=2.205. All TERM corr>0.96.
+C1675	Component atlas coverage: ATLAS_COMPLETE. 21 total atlas components: 5 knob axes, 11 packet types, 5 metrics. Full coverage of manifold-to-hardware bridge	3	B_APPARATUS, bridge, atlas	knob_axes=5. packets=11. metrics=5. total=21.
+C1676	Instruction translation coverage: TRANSLATION_COMPLETE. All 6 macro-states, 3 line zones, 4 REGIMEs mapped as heuristics. 13 non-encodable judgment types identified. Explicitly secondary to manifold-to-knob mapping	3	B_APPARATUS, bridge, heuristic	macro_states=6. zones=3. regimes=4. judgments=13.
+C1677	Safety protocol derivability: SAFETY_DERIVABLE. All 5 hazard classes mapped to physical failure modes with prevention protocols. 3 safety levels translated from structural mechanisms. Operator judgment boundaries defined	3	B_APPARATUS, bridge, safety, hazard	hazard_classes=5. safety_levels=3.
+C1678	Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments have available materials, defined measurements, and clear pass/fail criteria. 61 total minimum runs. 5 hardware nulls used	3	B_APPARATUS, bridge, validation, experiment	feasible=7/7. min_runs=61. nulls=5.
+C1679	Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual process metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with specified sensors and formulas	3	B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS	metrics=5/5.
+C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes (F1-F5) mapped to physical control surface candidates with directional predictions. PC1 led by abl_CLOSE_RECOVERY, PC5 led by F2	3	B_APPARATUS, bridge, manifold, knob	axes=5/5. PC1_top=abl_CLOSE_RECOVERY(+0.445).
+C1681	Zodiac category seasonal signal: SEASONAL_SIGNAL_CONFIRMED (after zodiac correction). Standard scholarship zodiac map has ≥6 misassigned folios + 2 non-zodiac pages included. Corrected confident-only map (7 folios): chi2=48.73, V=0.157, perm_p=0.018. Visual-Aries map (9 folios): V=0.138, perm_p=0.033. Signal is real but was masked by incorrect assignments	2	AZC, zodiac, category, season	confident_chi2=48.73. confident_V=0.157. confident_perm_p=0.018. aries_perm_p=0.033.
+C1682	Thermal seasonal gradient absent: THERMAL_GRADIENT_ABSENT. THERMAL and CONTAINMENT categories not individually significant in any mapping variant. Seasonal signal is distributed across categories, not concentrated in apparatus-specific channels	2	AZC, zodiac, category, THERMAL, CONTAINMENT, season, negative	THERMAL_p>0.2. CONTAINMENT_p>0.16. all_variants.
+C1683	Within-season coherence trend: COHERENCE_TREND. Approaches significance with corrected map (visual-Aries: p=0.060). Consistent direction: within-season JSD < between-season JSD in all mapping variants	2	AZC, zodiac, category, coherence, season	aries_MWU_p=0.060. confident_MWU_p=0.101. direction_consistent=true.
+C1684	Goat-folio seasonal identity: GOAT_PAGES_SPRING. Goat pages (f70v1, f71r) behave like Spring pages not Winter. Goat=Capricorn (Winter) kills seasonal signal (perm_p=0.220), goat=Aries (Spring) preserves it (perm_p=0.033). Diagnostic constraint on zodiac assignment	2	AZC, zodiac, category, season, goat, identity	capricorn_perm_p=0.220. aries_perm_p=0.033. diagnostic=true.
+C1685	Full zodiac map NOT INFERRED: ZODIAC_MAP_NOT_INFERRED. Brute-force enumeration of all 12 valid sign assignments for 5 unknown nymph folios. Best assignment (f72r3=Cancer, f71v/f72r1=Winter, goats=Spring) gives V=0.113, perm_p=0.112. Full 12-folio seasonal signal too dilute for inference	2	AZC, zodiac, category, season, negative	best_V=0.113. perm_p=0.112. n_assignments=12.
+C1686	Within-season assignment degeneracy: WITHIN_SEASON_DEGENERATE. Swapping signs within the same season (Aries↔Taurus, Capricorn↔Aquarius) produces identical chi2/V. The 12 nominal assignments collapse to 3 distinct seasonal groupings. A season-level test structurally cannot resolve within-season ordering	2	AZC, zodiac, category, season, degeneracy	distinct_groupings=3. V_gap_within_season=0.000.
+C1687	Unknown folios degrade seasonal signal: UNKNOWNS_DEGRADE_SIGNAL. Best 12-folio V=0.113 < confident-only V=0.157 (C1681). Adding 5 unknown folios weakens the signal at every possible assignment. Unknown folios have ambiguous category profiles that don't fit seasonal patterns	2	AZC, zodiac, category, season, noise	best_12folio_V=0.113. confident_V=0.157. delta=-0.044.
+C1688	f72r3 seasonal assignment resolved: F72R3_SEASONAL_ASSIGNMENT. f72r3=Cancer (Summer) in all top-4 assignments (V=0.113). f72r3=Winter drops to V=0.092-0.098. f72r3 has most tokens (163) among unknowns. f71v and f72r1 both Winter in all top assignments	2	AZC, zodiac, category, season, f72r3	f72r3_summer_V=0.113. f72r3_winter_V=0.092-0.098. f72r3_tokens=163.
+C1689	Atom compatibility partially predictable: ATOM_COMPATIBILITY_PARTIAL. Logistic regression on atom-level features (Jaccard, same HEAD/TERM/category, shared mods) predicts pairwise compatibility with AUC=0.7452. But density-matched application to real MIDDLEs yields edge Jaccard overlap of only 6.4%. Statistical predictive power exists but near-zero overlap with actual deployment edges	2	A, atom, compatibility, logistic, deployment	AUC=0.7452. edge_jaccard=0.064. precision=0.119. recall=0.122.
+C1690	Atom composition breaks independent feature ceiling: COMPOSITION_BREAKS_CEILING. Empirical atom-compositional generator (HEAD+MOD+TERM with real C1475-C1487 parameters) achieves clustering 0.599±0.008, breaking C984's independent feature ceiling of 0.49. Atom composition contributes structure beyond independent features but falls far short of real 0.873	2	A, atom, composition, discrimination, generator	empirical_clustering=0.599. ceiling=0.49. real=0.873. seeds=10.
+C1691	Slot architecture sufficient for compositional clustering: SLOT_ARCHITECTURE_SUFFICIENT. Structured-Random model (uniform HEAD weights, uniform modifier selection, no avoidance/gating) achieves clustering 0.501 = 83.6% of Empirical 0.599. The three-slot HEAD+MOD+TERM architecture, not specific parameter values, drives compositional clustering	2	A, atom, architecture, slot, composition	structured_random=0.501. empirical=0.599. ratio=0.836.
+C1692	Cross-slot dependencies neutral for clustering: CROSS_SLOT_DEPENDENCIES_NEUTRAL. Param-Independent model (real marginal frequencies, no cross-slot avoidance/selectivity/gating) achieves clustering 0.623 >= Empirical 0.599. Avoidance rules (C1472), selectivity profiles (C1479), terminal gating (C1484) do not increase clustering. These constraints serve other purposes (diversity maintenance, degeneracy prevention)	2	A, atom, dependency, avoidance, clustering, neutral	param_independent=0.623. empirical=0.599. delta=+0.024.
+C1693	Naive property model confirmed dead on clean baseline: NAIVE_PROPERTY_CONFIRMED_DEAD. F-BRU-003-style naive generator (8 random property bins, featureless MIDDLEs) produces clustering 0.021±0.001 on H-filtered clean baseline. Qualitative result of F-BRU-003 confirmed	2	A, property, generator, naive, negative	naive_clustering=0.021. real=0.873. ratio=0.024.
+C1694	No dominant compositional layer: NO_DOMINANT_COMPOSITIONAL_LAYER. Ablation on Empirical model (removing one architectural layer at a time) shows all variants within 0.56-0.62 clustering range. No single layer (modifier avoidance, HEAD-modifier selectivity, terminal gating, slot syntax, HEAD structure) dominates. Compositional clustering is distributed across the architecture	2	A, atom, ablation, architecture, distributed	ablation_range=[0.559,0.620]. full_model=0.601. max_drop=0.042.
+C1695	Deployment not compositional: DEPLOYMENT_NOT_COMPOSITIONAL. Logistic compatibility model applied to real 972 MIDDLEs at density-matched threshold: predicted clustering 0.412, edge Jaccard 0.064. The model predicts ~10,500 edges but only 1,250 overlap with the real 10,241. Atom features do not determine which MIDDLEs co-occur on lines. Discrimination manifold clustering (0.873) arises from deployment grammar (B execution), not morphological composition	2	A, A↔B, atom, deployment, grammar, discrimination, manifold	pred_clustering=0.412. edge_jaccard=0.064. TP=1250. real_edges=10241.
+C1696	Frequency baseline high: FREQUENCY_BASELINE_HIGH. Global frequency sampling (D0) produces co-occurrence graph with clustering 0.639±0.014, explaining 73% of the manifold's 0.873 clustering. The CM null baseline (0.250) measures random edge rewiring, not co-occurrence generation. Most of the manifold's "anomalous" clustering is a natural property of frequency-weighted co-occurrence through shared lines, not a special structural feature	2	A, discrimination, manifold, frequency, baseline, co-occurrence	D0_clustering=0.639. real=0.873. ratio=0.732. CM_null=0.250. seeds=10.
+C1697	Section effect negligible: SECTION_EFFECT_NEGLIGIBLE. Section-conditioned frequency (D1) adds only +0.004 clustering over global frequency (D0). Currier A is predominantly Herbal; section partitioning has near-zero effect on the manifold	2	A, discrimination, manifold, section, negligible	D1_clustering=0.643. D0=0.639. delta=+0.004.
+C1698	Folio pool moderate: FOLIO_POOL_MODERATE. Folio pool restriction with uniform sampling (D2) adds +0.032 clustering but inflates density to 0.0335 (real: 0.0217). Pool restriction creates vocabulary cliques but is not the dominant manifold mechanism. Frequency weighting (D3) corrects density but reduces clustering by -0.022 while improving Jaccard by +0.045	2	A, discrimination, manifold, folio, pool, vocabulary	D2_clustering=0.674. D2_density=0.0335. D3_clustering=0.652. D3_jaccard=0.285.
+C1699	Frequency corrects not adds: FREQUENCY_CORRECTS_NOT_ADDS. Per-folio frequency weighting (D3) corrects density inflation from uniform sampling but does not add clustering. D3-D2 = -0.022 clustering, +0.045 Jaccard. Best model by edge overlap (Jaccard 0.285, precision 0.442, recall 0.444)	2	A, discrimination, manifold, folio, frequency, density	D3_jaccard=0.285. D3_precision=0.442. D3_recall=0.444. D3_density=0.0218.
+C1700	PREFIX selectivity hurts: PREFIX_SELECTIVITY_HURTS. Adding PREFIX->HEAD compatibility filtering (D4) REDUCES both clustering (-0.106) and Jaccard (-0.049) versus D3. PREFIX constraints remove correct co-occurrence edges faster than incorrect ones. 35.2% of PREFIX*HEAD pairs forbidden in A, but filtering by these constraints is misaligned with actual line-level co-occurrence patterns	2	A, discrimination, manifold, PREFIX, HEAD, selectivity, negative	D4_clustering=0.546. D4_jaccard=0.236. D4-D3_clustering=-0.106. D4-D3_jaccard=-0.049. forbidden_pairs=35.2%.
+C1701	Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best deployment model (D3) reproduces only 28.5% of real edges (Jaccard 0.285). Final model (D4) achieves clustering 0.546, Jaccard 0.236. The 0.234 clustering gap (0.873-0.639) between real and frequency baseline is not explained by section conditioning, folio pool restriction, frequency weighting, or PREFIX selectivity. Residual reflects line-level content specificity — which specific MIDDLEs each folio assigns to each line	2	A, discrimination, manifold, content, residual, deployment	best_jaccard=0.285. final_clustering=0.546. gap=0.234.
+C1702	Folio B-side coherence weak: FOLIO_BSIDE_COHERENCE_WEAK. Within-folio B-side signature similarity is statistically significant (z=15.15, p<0.001 permutation) but practically weak: within/between ratio=1.086 (only 8.6% more similar). PP Jaccard within=0.110 vs between=0.085. 11/16 signature features show significant section-level ANOVA (strongest: HEAD_e F=27.96, THERMAL F=17.70)	2	A, A↔B, folio, B-side, signature, coherence, weak	z=15.15. ratio=1.086. within_cosine=0.526. between_cosine=0.485. PP_jaccard_within=0.110. ANOVA_sig=11/16.
+C1703	Section prediction partial: SECTION_PREDICTION_PARTIAL. Folio-level LOO-CV accuracy 43.9% (2.19x chance, passes 2x threshold). Record-level 34.8% (1.74x, fails). Top features: HEAD_headless (0.109), HEAD_o (0.103), STAGING (0.096), HEAD_e (0.093). Section signal exists in B-side signatures but is noisy at individual record level	2	A, A↔B, section, prediction, B-side, RF, LOO-CV	folio_acc=0.439. folio_ratio=2.19x. record_acc=0.348. record_ratio=1.74x. chance=0.200.
+C1704	RI extension directional predictions fail: EXTENSION_PREDICTIONS_FAIL. 1/5 RI extension directional predictions pass Bonferroni. Only e-extension → HEAD_e enrichment confirmed (d=0.479, p=0.003). k→HEAD_k correct direction with medium effect (d=0.515) but p=0.060. h→MONITORING (d=0.023), d→TRANSITION (d=0.127), t→FLOW (d=0.184) all non-significant. RI extensions do not reliably predict B-side operational enrichment	2	A, A↔B, RI, extension, B-side, directional, negative	passed=1/5. e_d=0.479. e_p=0.003. k_d=0.515. k_p=0.060.
+C1705	C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible record pairs (sharing no compatible MIDDLEs) produce significantly more divergent B-side signatures than compatible pairs (mean cosine distance 0.618 vs 0.450, Cohen's d=0.816, p=3.8e-289). The discrimination manifold's compatibility geometry maps to B-side operational meaning — records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical	2	A, A↔B, C475, discrimination, manifold, B-side, divergence, operational	d=0.816. p=3.8e-289. compatible_dist=0.450. incompatible_dist=0.618. n_compatible=6034. n_incompatible=3966.
+C1706	PP content predicts B-side similarity: PP_CONTENT_PREDICTS_BSIDE. Partial Spearman rho=0.502 (controlling pool size, hub fraction, section) between folio PP Jaccard and B-side cosine similarity. Overturns C753's class-level null (r=-0.038). PP MIDDLE content genuinely predicts B-side operational similarity at token level. Signal is HIGHER after controlling for confounds (raw rho=0.470), meaning size/hub confounds suppress, not inflate. Within-section rho=0.467, between-section rho=0.476	2	A, A↔B, PP, folio, B-side, content, correlation	partial_rho=0.502. raw_rho=0.470. p<1e-300. within_rho=0.467. between_rho=0.476. n_pairs=6441.
+C1707	Restricted PP MIDDLEs carry discriminative power: RESTRICTED_PP_DISCRIMINATIVE. PP MIDDLEs appearing on ≤2 A folios produce between-folio B-side distances of 0.520 vs 0.005 for multi-folio PPs (≥10 folios). Cohen's d=3.667, p=7.3e-58. Partly mechanical: hub MIDDLEs produce near-identical signatures everywhere. Restricted PPs are rare (mean 2.3 per folio). N_restricted vs folio distinctiveness correlation weak (rho=0.095, p=0.316)	2	A, A↔B, PP, folio, restricted, discriminative	restricted_dist=0.520. multi_dist=0.005. d=3.667. p=7.3e-58. mean_restricted=2.3.
+C1708	Folio category diversity matches coverage-optimized null: FOLIO_CATEGORY_NOT_SPECIALIZED. Category entropy z=0.116 vs coverage-matched null (hub-weighted random draws). 73/114 folios have |z|<1. Real entropy 2.830 ≈ null 2.816. Folios span all 8 operational categories equally, indistinguishable from coverage-optimized random draws. Recipe specialization prediction fails	2	A, folio, category, entropy, specialization, coverage, negative	mean_z=0.116. real_H=2.830. null_H=2.816. neutral_73/114. gini_real=0.247. gini_null=0.258.
+C1709	PP MIDDLE distance predicts B-side manifold position: PP_MANIFOLD_CORRELATION. Mantel test on 114 A folio pairs: PP Jaccard distance vs coverage-weighted B-side manifold centroid distance yields r=0.4226 (p<0.0001, null std=0.044). Partial Mantel controlling pool size + section: r=0.4062. Bridge-dominant pipeline: bridge PP r=0.4278 > full > dark PP r=0.2047. Bridge MIDDLEs (77% of PP pool) carry the dominant signal	2	A→B, PP, manifold, bridge, dark-pipeline, Mantel	mantel_r=0.4226. partial_r=0.4062. bridge_r=0.4278. dark_r=0.2047. null_std=0.044.
+C1710	PP composition predicts three B-side manifold axes: PP_AXIS_PREDICTION. 3/10 axes significant after Bonferroni (rho>0.2, p<0.005): F4_raw rho=-0.340 (headless infrastructure), SUSTAINED_HEAT rho=-0.227, DIRECT_FIRE rho=-0.224. 7/10 axes non-significant. Bridge and dark each independently predict 3/10 axes. Prediction is partial not comprehensive	2	A→B, PP, manifold, prediction, axis	sig_axes=3/10. F4_rho=-0.340. SH_rho=-0.227. DF_rho=-0.224. bonferroni=10.
+C1711	PP-manifold correlation is section-independent: PP_MANIFOLD_SECTION_INDEPENDENT. Within-section Spearman rho=0.381 (p=4.8e-45, 1265 pairs). Between-section rho=0.390 (5176 pairs). Per-axis partial correlations change max 0.019 after section control. Signal is intrinsic to PP content, not section composition	2	A→B, PP, manifold, section, independence	within_rho=0.381. within_p=4.8e-45. between_rho=0.390. max_change=0.019.
 
 ---
 
@@ -3308,7 +3388,7 @@ C1629	Folio-specific parameters align with structural proxies	2	B, virtual appar
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-10
+# Generated: 2026-03-15
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -10333,8 +10413,8 @@ The proposed genre's rarity follows from structural properties:
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "2.2"
-  date: "2026-03-04"
+  version: "2.3"
+  date: "2026-03-14"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -10463,6 +10543,28 @@ morphology:
         interpretation: "A = state-describing terminals, B = action-performing terminals"
         provenance: "C1395 T5"
       provenance: "C1393, C1394, C1395 T1, C1395 T5"
+
+    atom_cross_system_behavior:
+      unstable_behavioral_convergence:
+        statement: "UNSTABLE atoms {y,h,d} show LESS cross-system behavioral divergence than STABLE MODs {i,d,s} — opposite of expected"
+        unstable_mean_jsd: 0.0110
+        stable_mod_mean_jsd: 0.0319
+        ratio: "0.35x (unstable more similar A→B)"
+        most_divergent: "d (JSD=0.0567)"
+        provenance: "C1540"
+
+      suffix_exclusion_tier:
+        statement: "Five atoms {k,t,p,f,c} have 0 suffix occurrences across all systems — defines an instruction-only tier"
+        partition: "13 OUTCOME-accessible atoms + 5 INSTRUCTION-ONLY atoms"
+        composition: "ACTION HEADs {k,t} + UNSTABLE MODs {p,f,c}"
+        provenance: "C1541"
+
+      unstable_mode_a_suffix_shift:
+        statement: "UNSTABLE MODs {c,f,p} increase Mode A suffix rate A→B, while STABLE MODs {i,d} do not"
+        shifts: "c +25.3pp, f +22.3pp, p +15.5pp (UNSTABLE). i +0.7pp, d -3.4pp (STABLE)"
+        interpretation: "Unstable atoms carry A specification signal in suffix deployment"
+        provenance: "C1544"
+
     two_track_structure:
       # REGENERATED 2026-01-24: Atomic-suffix parser (voynich.py)
       shared_with_b:
@@ -11027,7 +11129,46 @@ participation:
           note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
           provenance: "C1135, C1136, C1139, C1140, C1141, C1146, C1264"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
+        discrimination_manifold:
+          statement: "A discrimination manifold clustering (0.873) arises primarily from frequency-weighted co-occurrence, not special structural features"
+          frequency_baseline: "Global frequency sampling produces clustering 0.639 (73% of real 0.873)"
+          deployment_not_compositional: "Atom features do NOT determine MIDDLE co-occurrence (logistic model: edge Jaccard 0.064). Deployment grammar, not morphological composition, determines the manifold"
+          manifold_residual: "Best model reproduces 28.5% of edges (Jaccard 0.285). Residual reflects line-level content specificity"
+          provenance: "C1695, C1696, C1701"
+
+        b_side_coherence:
+          statement: "Within-folio B-side signature coherence is statistically significant but practically weak"
+          within_between_ratio: 1.086
+          z_score: 15.15
+          interpretation: "Folios specify a B-side operational envelope, but only 8.6% more similar within than between"
+          provenance: "C1702"
+
+        c475_operational_divergence:
+          statement: "C475-incompatible record pairs produce significantly more divergent B-side signatures"
+          cohen_d: 0.816
+          compatible_distance: 0.450
+          incompatible_distance: 0.618
+          interpretation: "Records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical"
+          provenance: "C1705"
+
+        pp_content_predicts_b:
+          statement: "PP MIDDLE content predicts B-side operational similarity at token level, overturning C753's class-level null"
+          partial_rho: 0.502
+          raw_rho: 0.470
+          controls: "pool size, hub fraction, section"
+          confound_direction: "HIGHER after control (confounds suppress, not inflate)"
+          provenance: "C1706"
+
+        pp_manifold_connection:
+          statement: "PP MIDDLE distance predicts B-side manifold position through bridge-dominant pipeline"
+          mantel_r: 0.4226
+          partial_r: 0.4062
+          bridge_r: 0.4278
+          dark_r: 0.2047
+          section_independence: "Within-section rho=0.381, between-section rho=0.390 — intrinsic to PP content"
+          provenance: "C1709, C1711"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146, C1695, C1696, C1701, C1702, C1705, C1706, C1709, C1711"
 
 # ============================================================
 positional:
@@ -11123,6 +11264,11 @@ disallowed:
     status: "FALSIFIED"
     provenance: "C1268"
 
+  - interpretation: "A discrimination manifold clustering reflects structural features beyond frequency-weighted co-occurrence"
+    reason: "Frequency baseline explains 73% of clustering (0.639 vs 0.873). Atom composition adds only to 0.599. Residual is line-level content specificity."
+    status: "FALSIFIED"
+    provenance: "C1696, C1701"
+
 # ============================================================
 
 provenance:
@@ -11195,6 +11341,9 @@ provenance:
     - "C1536"  # Base-to-HEAD selection V=0.478 (each base selects distinct domain)
     - "C1537"  # a-base universal headless gateway (94-96% headless)
     - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture
+    - "C1540"  # p/f/c behavioral non-divergence vs stable MODs (unstable JSD 0.35x)
+    - "C1541"  # Suffix exclusion defines instruction-only atom tier ({k,t,p,f,c} = 0 suffix)
+    - "C1544"  # Unstable atoms increase Mode A suffix rate A→B (c +25.3pp, f +22.3pp)
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -11252,6 +11401,14 @@ provenance:
     - "C1141"  # Bridge atom substrate for dark-pipeline compounds (86% types, 96.5% coverage)
     - "C1264"  # Bridge vs dark pipeline category divergence (V=0.441)
     - "C1267"  # Mode A/B distinction is B-execution only (null)
+    - "C1695"  # Deployment not compositional (atom features don't determine co-occurrence)
+    - "C1696"  # Frequency baseline 0.639 (73% of manifold clustering)
+    - "C1701"  # Manifold residual = content (line-level specificity)
+    - "C1702"  # Folio B-side coherence weak (ratio 1.086)
+    - "C1705"  # C475 operational divergence confirmed (d=0.816)
+    - "C1706"  # PP content predicts B-side at token level (partial rho=0.502)
+    - "C1709"  # PP MIDDLE distance predicts manifold position (Mantel r=0.4226)
+    - "C1711"  # PP-manifold correlation section-independent (within rho=0.381)
 
   positional:
     - "C260"  # Section isolation
@@ -11276,6 +11433,8 @@ provenance:
     - "C484"  # No header interpretation
     - "C1267"  # Mode A/B distinction B-execution only
     - "C1268"  # PREFIX-category orthogonal
+    - "C1696"  # Frequency baseline dominates manifold clustering
+    - "C1701"  # Manifold residual is content, not structure
 
 # ============================================================
 
@@ -11291,8 +11450,8 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.34"
-  date: "2026-03-06"
+  version: "3.35"
+  date: "2026-03-14"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -12194,7 +12353,24 @@ middle_instruction_encoding:
         k/t categorically avoid n,m terminals (0-1 tokens each).
       Hazard axis: y sources 90.9% of violations, n absorbs 90.9%.
 
-  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1556, C1557, C1558, C1559, C1560, C1561"
+  sequential_routing:
+    head_self_transition_hierarchy:
+      statement: "HEAD atoms form three persistence tiers: PERSISTENT (e 28.5%, headless 28.4%, a 25.2%), SWITCHING (k 16.7%, o 13.6%), RARE (t 9.1%)"
+      cross_head_routing: "e→k 1.493x enriched, a→k 0.528x depleted — energy and monitoring HEADs feed into kernel, not vice versa"
+      provenance: "C1562"
+
+    terminal_to_head_routing:
+      statement: "TERMINAL atom determines next-token HEAD selection — cross-token routing grammar"
+      routing_map: "r→a 2.231x, y→k 1.597x, h→t 1.892x, l→e 1.246x, m→o 1.554x, bare neutral"
+      interpretation: "TERMINAL is dual-function: suffix-gating within token + HEAD routing to next token"
+      provenance: "C1563"
+
+    suffix_boundary:
+      statement: "Suffix carries zero forward information to next HEAD (JSD=0.0021, smallest in phase)"
+      implication: "Compositional boundary is absolute at token edge — suffix scope terminates completely"
+      provenance: "C1564"
+
+  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1556, C1557, C1558, C1559, C1560, C1561, C1562, C1563, C1564"
 
 # ============================================================
 
@@ -12475,7 +12651,27 @@ hazards:
       RATE_MISMATCH: a-HEAD late, BARE-dominant (C1528, C1532)
       ENERGY_OVERSHOOT: e-HEAD medial (C1528, C1532)
       5 phantom MIDDLEs encode construction-level prohibitions (C1531)
-    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533"
+
+    universal_head_immunity:
+      statement: "ALL 5 HEAD atoms have 0% hazard source rate (0/16,819 headed tokens). Hazard is exclusively HEADLESS (1,537/6,277=24.49%)"
+      chi2: 4411.9
+      V: 0.219
+      provenance: "C1546"
+
+    terminal_hazard_class_determination:
+      statement: "TERMINAL atom determines hazard class type with stronger effect than HEAD (V=0.306 vs HEAD V=0.219, 1.40x)"
+      class_locks: "y→PHASE_ORDERING (675/675), l→CONTAINMENT_TIMING (855/855), bare→RATE_MISMATCH (5/5), h→ENERGY_OVERSHOOT (2/2)"
+      provenance: "C1547"
+
+    hazard_class_exclusivity:
+      statement: "PHASE_ORDERING = exclusively headless y-terminal dy (675 tokens across 10+ PREFIXes); CONTAINMENT_TIMING = exclusively l-terminal (855 tokens across 12+ PREFIXes). Both MIDDLE-intrinsic, not PREFIX-induced"
+      provenance: "C1551"
+
+    phantom_defense_in_depth:
+      statement: "Phantom MIDDLEs are atom-legal but construction-dead — all 5 pass atom slot legality, PREFIX compatibility (22-27 each), and suffix compatibility. Prohibition at BIGRAM level, not atom level. Defense-in-depth safety architecture"
+      provenance: "C1554"
+
+    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554"
 
   properties:
     asymmetric_rate: "65%"
@@ -12601,6 +12797,14 @@ program_structure:
             prefix_selectivity: "ch/sh 0.16-0.17x, qo 0.02x depleted; ar/al/or 4.6-6.5x enriched (LATE channel)"
             two_level_closure: "m-terminal (body-line closer) and -am suffix (paragraph terminator) are orthogonal: 1 token overlap, complementary scopes"
             provenance: "C1434, C1435, C1436, C1437, C1438, C1439"
+      step_discontinuity:
+        statement: "Q3→Q4 boundary is a step discontinuity, not a gradual gradient"
+        head_jsd: "0.0185 (26x Q2→Q3)"
+        terminal_jsd: "0.0200 (20x Q2→Q3)"
+        interior_stability: "Q1-Q3 pairwise JSD < 0.003 — interior is a uniform WORK zone"
+        architecture: "Two-step line: uniform interior (WORK) then abrupt closure transition"
+        provenance: "C1566"
+
       zone_hazard_routing:
         statement: "Three-zone model interacts with frame hazard classification: monotonic hazard gradient across line (C1463-C1466)"
         routing_pattern:
@@ -13201,6 +13405,52 @@ macro_state_transition_matrix:
   provenance: "C1015"
 
 # ============================================================
+apparatus_response_architecture:
+
+  statement: |
+    B-side operational behavior varies systematically across folios in a way that
+    is structurally measurable (Tier 2) and consistent with apparatus-type
+    differentiation (Tier 3 interpretation). The response landscape is continuous
+    and gradient-like — families are not discrete species with crisp boundaries.
+
+  productive_disruption:
+    statement: "Real closure tokens produce greater per-step disruption than demand-matched nulls across 76 B folios (88% pass at Tier C, 89% at Tier A)"
+    success_family: "DYE (dV-to-Y efficiency), DVA (dV advantage), YGA (Y-gain advantage) — process-quality metrics measuring execution dynamics during closure, not endpoint state"
+    a2_mechanism: "A2 excess forgivingness = close recovery channels (R1-R5 account for 159.5% of A2's excess CCS1; ablation rho=0.963). Single-channel dominant, not distributed"
+    provenance: "C1636, C1638, C1639"
+
+  landscape:
+    statement: "Three-pole response landscape: STABLE_AMPLIFIER (25%, n=19), THRESHOLD_DEPENDENT (63%, n=48), FORGIVING_RECIRCULATOR (12%, n=9). Classification partially cross-cuts apparatus profile (cross-cut=0.25)"
+    gradient_nature: "Response-only clustering finds real but sub-threshold structure (silhouette=0.361, ARI=0.385). Families are gradient-like, not crisp"
+    provenance: "C1640, C1646"
+
+  regime_admission:
+    statement: "Regime admission selectivity is DECISIVE POSITIVE — gating closure regime admission (Layer 2) works where Y-credit gating (Layer 3) failed"
+    ssi: 63.5
+    regime_gated_advantage: 0.0605
+    credit_only_advantage: 0.0561
+    robustness: "4/4 regime configs beat credit-only control"
+    provenance: "C1652"
+
+  manifold_geometry:
+    statement: "Response-surface manifold has effective rank 5.88, requires 5 PCs for 80% variance — not compressible to a low-dimensional summary"
+    structural_endpoints: "4 folios (f39v, f55v, f86v5, f95r2) at structural endpoints: no passing config. 4 parameter-achievable (f40r, f50v, f85r2, f86v6): pass with displacement>=0.5"
+    accent_correspondence: "Folio accent is substantially captured by manifold position (canonical r=0.871, within-A2 R²=0.946)"
+    provenance: "C1666, C1667, C1670"
+
+  pp_manifold_connection:
+    statement: "A folio PP MIDDLE content predicts B-side manifold position through a bridge-dominant pipeline, independent of section"
+    mantel_r: 0.4226
+    partial_r: 0.4062
+    bridge_r: 0.4278
+    dark_r: 0.2047
+    predicted_axes: "3/10 significant after Bonferroni: F4_raw (rho=-0.340), SUSTAINED_HEAT (rho=-0.227), DIRECT_FIRE (rho=-0.224)"
+    section_independence: "Within-section rho=0.381, between-section rho=0.390, max per-axis change=0.019"
+    provenance: "C1709, C1710, C1711"
+
+  provenance: "C1636, C1638, C1639, C1640, C1646, C1652, C1666, C1667, C1670, C1709, C1710, C1711"
+
+# ============================================================
 three_compression_architecture:
 
   statement: "Three orthogonal compressions of B grammar — tensor (variance), macro-automaton (topology), archetypes (dynamics) — are irreducibly independent"
@@ -13261,7 +13511,15 @@ three_compression_architecture:
     atom substrates through behavioral composition, not arbitrary string
     concatenation.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1506, C1507, C1508, C1509"
+  compositional_generator_limits:
+    statement: "Atom-compositional generator (HEAD+MOD+TERM with real parameters) achieves co-occurrence clustering 0.599, breaking C984's independent-feature ceiling (0.49) but far short of real 0.873"
+    slot_architecture_sufficient: "Structured-random model (uniform weights, no gating) achieves 0.501 = 83.6% of empirical. Three-slot architecture, not specific parameters, drives compositional clustering"
+    deployment_not_compositional: "Logistic compatibility model on real 972 MIDDLEs: predicted clustering 0.412, edge Jaccard 0.064 (1,250/10,241 edges overlap). Atom features do NOT determine which MIDDLEs co-occur on lines"
+    frequency_baseline: "Global frequency sampling produces clustering 0.639 (73% of real 0.873). Most manifold clustering is a natural property of frequency-weighted co-occurrence, not a special structural feature"
+    manifold_residual: "Best deployment model reproduces only 28.5% of real edges (Jaccard 0.285). The 0.234 clustering gap reflects line-level content specificity — which MIDDLEs each folio assigns to each line"
+    provenance: "C1690, C1691, C1695, C1696, C1701"
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1506, C1507, C1508, C1509, C1690, C1691, C1695, C1696, C1701"
 
 # ============================================================
 design_freedom:
@@ -14312,12 +14570,17 @@ provenance:
     - "C1482"  # Double-ii safety via TRANSITION-locked n-terminal (0.0%, monotonic gradient)
     - "C1483"  # TERMINAL category specificity gradient (hazard axis: y=source 90.9%, n=target 90.9%)
     - "C1485"  # HEAD-TERMINAL affinity partition (k/t avoid hazard-carrying n/m terminals)
+    - "C1546"  # Universal HEAD atom hazard source immunity (0/16819 headed tokens)
+    - "C1547"  # TERMINAL determines hazard class type (V=0.306 > HEAD V=0.219)
+    - "C1551"  # PHASE_ORDERING exclusively headless dy; CONTAINMENT_TIMING exclusively l-terminal
+    - "C1554"  # Phantom MIDDLEs atom-legal but construction-dead (defense-in-depth)
 
   program_line:
     - "C357"   # Lines deliberately chunked
     - "C358"   # Boundary tokens
     - "C359"   # LINK suppressed at boundaries
     - "C360"   # Grammar LINE-INVARIANT
+    - "C1566"  # Q3-Q4 step discontinuity (HEAD JSD=0.0185, 26x Q2-Q3; two-step line architecture)
 
   morphology:
     - "C267"   # Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)
@@ -14354,6 +14617,13 @@ provenance:
     - "C1485"  # TERMINAL HEAD affinity partition (e->y 72.7%, a->n/m 59-60%, k/t avoid n/m)
     - "C1486"  # m-terminal line-final closure (73.7% line-final, 87.9% TRANSITION, confirms C1434-C1439)
     - "C1487"  # Six-terminal functional taxonomy (LOCKED r/m, CHANNELED l/y/n, DIFFUSE h/bare)
+    - "C1546"  # Universal HEAD atom hazard source immunity (0/16819, V=0.219)
+    - "C1547"  # TERMINAL determines hazard class type (V=0.306, 1.40x stronger than HEAD)
+    - "C1551"  # PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal
+    - "C1554"  # Phantom MIDDLEs atom-legal but construction-dead (defense-in-depth)
+    - "C1562"  # HEAD self-transition rate hierarchy (PERSISTENT/SWITCHING/RARE tiers)
+    - "C1563"  # Terminal-to-next-HEAD cross-token routing grammar (r→a 2.231x, y→k 1.597x)
+    - "C1564"  # Suffix carries zero forward information to next HEAD (JSD=0.0021)
     - "C1534"  # PREFIX 15-char three-tier positional classification (MODIFIER/BASE/DUAL, V=0.547)
     - "C1535"  # i-atom excluded from PREFIX (iteration is MIDDLE-internal)
     - "C1536"  # Base-to-HEAD selection V=0.478 (89% of HEAD specificity)
@@ -14760,6 +15030,25 @@ provenance:
     - "C1009"  # AXM exit hazard-target compositional curvature
     - "C1018"  # HUB sub-role archetype differentiation (k_frac F=15.81, SAFETY_BUFFER 1.7x)
 
+  apparatus_response:
+    - "C1636"  # Productive disruption efficiency generalizes (76-folio, 88% Tier C pass)
+    - "C1638"  # DYE/DVA/YGA success family (process quality, not endpoint state)
+    - "C1639"  # A2 forgivingness = close recovery channels (159.5% excess, rho=0.963)
+    - "C1640"  # Apparatus family gradient-like, not crisp (silhouette=0.361)
+    - "C1646"  # Three-pole landscape (SA/TD/FR, cross-cut=0.25)
+    - "C1652"  # Regime admission selectivity decisive positive (SSI=63.5)
+    - "C1666"  # Structural endpoint boundary (4 SE + 4 PA folios)
+    - "C1667"  # Manifold dimensionality ~5.88 effective rank
+    - "C1670"  # Accent = manifold position (canonical r=0.871)
+    - "C1690"  # Atom composition breaks C984 ceiling (0.599 vs 0.49)
+    - "C1691"  # Slot architecture sufficient for compositional clustering (0.501 = 83.6%)
+    - "C1695"  # Deployment not compositional (edge Jaccard 0.064)
+    - "C1696"  # Frequency baseline 0.639 (73% of manifold clustering)
+    - "C1701"  # Manifold residual = content (line-level specificity)
+    - "C1709"  # PP MIDDLE distance predicts manifold position (Mantel r=0.4226, bridge-dominant)
+    - "C1710"  # PP composition predicts 3/10 manifold axes (F4_raw, SUSTAINED_HEAT, DIRECT_FIRE)
+    - "C1711"  # PP-manifold correlation section-independent (within rho=0.381)
+
   axm_internal_architecture:
     - "C1006"  # Dwell non-geometricity is topology artifact
     - "C1007"  # Gatekeeper subset {15, 20, 21, 22, 25}
@@ -15069,6 +15358,18 @@ disallowed:
   - interpretation: "Prep PREFIXes (pch, tch, dch, te, lch) encode distinct physical operations"
     reason: "Prep PREFIX similarity (cosine 0.963) is fully explained by shared h-base; shuffle test p=0.998. They are h-base mode variants, not different verbs."
     provenance: "C1221"
+
+  - interpretation: "Apparatus families are discrete species with crisp boundaries"
+    reason: "Response-only clustering finds real but sub-threshold structure (silhouette=0.361). Families are gradient-like, not crisp."
+    provenance: "C1640"
+
+  - interpretation: "Manifold clustering is primarily structural beyond frequency effects"
+    reason: "Frequency baseline explains 73% of manifold clustering (0.639 vs 0.873). Most clustering is a natural property of frequency-weighted co-occurrence."
+    provenance: "C1696"
+
+  - interpretation: "Atom morphological composition determines MIDDLE co-occurrence"
+    reason: "Logistic compatibility model predicts only 0.412 clustering (edge Jaccard 0.064). Deployment grammar, not morphological composition, determines co-occurrence."
+    provenance: "C1695"
 
 # ============================================================
 

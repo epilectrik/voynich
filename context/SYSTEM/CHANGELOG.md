@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.63 (2026-03-15) - Phase 590: REGIME Cluster Revalidation
+
+### Summary
+
+Phase 590 retests C179 (4-REGIME partition, silhouette 0.23) with 22 primary transcript features (6 families), 3 clustering methods (K-Means, Ward, GMM), gap statistic, permutation null, within-Herbal substructure test, section residualization, bootstrap stability, and functional validation. Key finding: all methods select k=2 by silhouette but k=2 is NOT significant vs permutation null (trivial Bio vs non-Bio section split). At k=4, genuine above-null structure exists (excess 0.047). Within Herbal, subgroups strongly predict HEAD self-transition rate (F=43.0). Verdict: C179 RETAINED WITH CAVEATS — k=4 is the strongest non-trivial partition but the feature space is a gradient, not discrete clusters.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/REGIME_CLUSTER_REVALIDATION/` -- Phase 590 directory with script, results, INDEX |
+| **ADDED** | C1712: REGIME partition is gradient-like, not discrete -- k=4 retained as strongest non-trivial partition |
+| **ADDED** | C1713: REGIME has within-section functional substructure -- F=43.0 within Herbal, sil=0.18 after section residualization |
+| **ADDED** | C1714: REGIME assignment bootstrap stability 0.76-0.80 -- ARI=0.76 at k=4 (200 resamples) |
+| **ADDED** | C1715: PC1 is PREFIX/kernel axis (32% variance) -- first 2 PCs capture 49% of folio feature variance |
+| **UPDATED** | INDEX.md -- +4 constraints (1715 total), Phase 590 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.63, 1715 constraints, 590 phases) |
+
+### Key Findings
+
+- **k=2 wins by silhouette but is trivial (C1712):** All 3 methods and gap statistic select k=2 (sil≈0.21), but this is below the permutation null p95 (0.2343). The k=2 split maps to Bio vs non-Bio section membership. Not a discovered structure — just marginal distribution effects.
+- **k=4 is genuinely above chance (C1712):** K-Means sil=0.2142 at k=4 exceeds null p95 (0.1671) by 0.047. The 4-way split has real structure that random features don't produce.
+- **Within-Herbal substructure is functionally meaningful (C1713):** Herbal (32 folios) has weak sil=0.17 at k=2, but the subgroups differ dramatically on HEAD self-transition rate (F=43.0, p<<0.001). REGIME captures operational variation within a single section.
+- **Gradient, not clusters (C1712):** Converges with C1640 (apparatus families are gradient-like) and C1668. The folio operational space is inherently continuous; 4 REGIMEs are convenience labels for soft modes, not crisp boundaries.
+- **C179 retained with caveats:** The count of 4 holds as the strongest non-trivial partition, but the characterization should shift from "4 discrete regimes" to "4 soft modes on an operational gradient."
+
+---
+
 ## Version 5.62 (2026-03-14) - Phase 589: Apparatus Configuration Test
 
 ### Summary

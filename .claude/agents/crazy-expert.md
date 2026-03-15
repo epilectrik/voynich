@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1711.
+the highest ID present is C1715.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2037,6 +2037,10 @@ C1708	Folio category not specialized: FOLIO_CATEGORY_NOT_SPECIALIZED. Category e
 C1709	PP MIDDLE distance predicts B-side manifold position: PP_MANIFOLD_CORRELATION. Mantel r=0.4226 (p<0.0001, null std=0.044). Partial Mantel (size+section) r=0.4062. Bridge-dominant: bridge r=0.4278 > dark r=0.2047. Bridge MIDDLEs (77% of PP pool) carry dominant signal	2	A→B, PP, manifold, bridge, dark-pipeline, Mantel	mantel_r=0.4226. partial_r=0.4062. bridge_r=0.4278. dark_r=0.2047. null_std=0.044.
 C1710	PP composition predicts three B-side manifold axes: PP_AXIS_PREDICTION. 3/10 axes significant after Bonferroni: F4_raw rho=-0.340, SUSTAINED_HEAT rho=-0.227, DIRECT_FIRE rho=-0.224. 7/10 non-significant. Prediction partial not comprehensive	2	A→B, PP, manifold, prediction, axis	sig_axes=3/10. F4_rho=-0.340. SH_rho=-0.227. DF_rho=-0.224. bonferroni=10.
 C1711	PP-manifold correlation is section-independent: PP_MANIFOLD_SECTION_INDEPENDENT. Within-section rho=0.381 (p=4.8e-45, 1265 pairs). Between-section rho=0.390. Per-axis partial change max 0.019. Signal intrinsic to PP content	2	A→B, PP, manifold, section, independence	within_rho=0.381. within_p=4.8e-45. between_rho=0.390. max_change=0.019.
+C1712	REGIME partition is gradient-like, not discrete: REGIME_GRADIENT. All 3 methods select k=2 by silhouette but k=2 NOT significant vs null (sil=0.2175 < null p95=0.2343). k=2 = Bio vs non-Bio. k=4 genuine above-null (KM sil=0.2142 > null p95=0.1671, excess=0.047). C179 retained: 4 soft modes on gradient	2	B, REGIME, clustering, gradient, C179	consensus_k=2. k2_sil=0.2175. null_p95_k2=0.2343. k4_sil=0.2142. null_p95_k4=0.1671. k4_excess=0.047.
+C1713	REGIME has within-section functional substructure: REGIME_WITHIN_SECTION. Within Herbal (32 folios), k=2 sil=0.1676 but HEAD self-transition rate F=43.0 (df=1,30, p<<0.001). Section-residualized sil=0.1768. REGIME not purely section alias	2	B, REGIME, section, Herbal, functional	herbal_n=32. herbal_sil=0.1676. F_stat=43.0. resid_sil=0.1768.
+C1714	REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstrap (200 resamples) ARI=0.80±0.15 at k=2, ARI=0.76±0.14 at k=4. Both moderately stable	2	B, REGIME, stability, bootstrap	k2_ari=0.80. k4_ari=0.76. n_bootstrap=200.
+C1715	PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features: PC1 (32%) loads qo_frac(+0.326), headless_frac(-0.306), k_frac(+0.304). PC2 (17%) loads suffix_rate(+0.348), mean_middle_length(+0.346), e_frac(+0.325). First 2 PCs = 49%	2	B, PCA, PREFIX, kernel, folio	PC1_var=0.32. PC2_var=0.17. cum_2PC=0.49. n_PCs=12. n_features=22.
 
 ---
 

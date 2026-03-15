@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1711 validated constraints | **Version:** 5.62 | **Date:** 2026-03-14
+**Total:** 1715 validated constraints | **Version:** 5.63 | **Date:** 2026-03-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5951,6 +5951,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Section is not a confound (C1711): Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The A→manifold connection is intrinsic to PP content, not an artifact of section covariance.
 - Convergence with C1670: Folio accent predicts manifold position (C1670, r=0.871). PP content also predicts manifold position (C1709, r=0.42). Two independent predictors converge on the same B-side operational structure.
 - Tier 3 interpretive extension: The B-side manifold has been interpreted as apparatus configuration space (DISTILLATION, SEALED_VESSEL, etc.) at Tier 3. If that interpretation holds, C1709-C1711 constitute structural evidence that A folios parameterize apparatus type. This interpretive gloss is documented in INTERPRETATION_SUMMARY.md.
+
+---
+
+### Phase 590: REGIME Cluster Revalidation — C179 Retained With Caveats (C1712-C1715)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1712 | REGIME partition is gradient-like, not discrete: REGIME_GRADIENT. All 3 methods (K-Means, Ward, GMM) select k=2 by silhouette on 22 features (12 PCs), but k=2 is NOT significant vs permutation null (sil=0.2175 < null p95=0.2343). The k=2 split is Bio vs non-Bio section membership. At k=4, genuine above-null structure exists (KM sil=0.2142 > null p95=0.1671, excess=0.047). C179's count of 4 retained as strongest non-trivial partition, but these are soft modes on a gradient, not crisp clusters | 2 | B, REGIME, clustering, gradient, C179 | consensus_k=2. k2_sil=0.2175. null_p95_k2=0.2343. k4_sil=0.2142. null_p95_k4=0.1671. k4_excess=0.047. gap_k=2. |
+| 1713 | REGIME has within-section functional substructure: REGIME_WITHIN_SECTION. Within Herbal alone (32 folios), k=2 clustering yields sil=0.1676 but HEAD self-transition rate differs dramatically across subgroups (one-way ANOVA F=43.0, df=1,30, p<<0.001). Section-residualized clustering on all 82 folios yields sil=0.1768 at k=2. REGIME is not purely a section alias — within-section operational variation exists and is functionally meaningful | 2 | B, REGIME, section, Herbal, functional | herbal_n=32. herbal_sil=0.1676. F_stat=43.0. df=1,30. resid_sil=0.1768. |
+| 1714 | REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstrap stability (200 resamples) yields ARI=0.80±0.15 at k=2 and ARI=0.76±0.14 at k=4. Both partitions moderately stable. The 4-REGIME partition is less stable than the binary section split but not drastically so | 2 | B, REGIME, stability, bootstrap | k2_ari=0.80. k2_std=0.15. k4_ari=0.76. k4_std=0.14. n_bootstrap=200. |
+| 1715 | PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features yields 12 PCs at 95% variance. PC1 (32%) loads on qo_frac (+0.326), headless_frac (-0.306), k_frac (+0.304). PC2 (17%) loads on suffix_rate (+0.348), mean_middle_length (+0.346), e_frac (+0.325). First two PCs capture 49% of variance and correspond to known structural axes | 2 | B, PCA, PREFIX, kernel, folio | PC1_var=0.32. PC2_var=0.17. cum_2PC=0.49. n_PCs=12. n_features=22. |
+
+**Phase 590 findings (REGIME Cluster Revalidation, C179 RETAINED WITH CAVEATS):**
+- The dominant binary split (k=2) is trivial (C1712): All three clustering methods and the gap statistic select k=2, but this partition does not exceed the permutation null — it's what random features produce at this sample size. The k=2 split maps almost perfectly to Bio vs non-Bio section membership ({H:30, C:5, S:9, T:2} vs {B:20, S:14}).
+- k=4 is the strongest genuinely non-trivial partition (C1712): K-Means silhouette at k=4 (0.2142) exceeds the null p95 (0.1671) by 0.047. The 4-way structure is real but weak. C179's count of 4 is retained, but the word "partition" overstates the crispness — these are soft modes on a gradient.
+- REGIME is not a section alias (C1713): Within Herbal alone, HEAD self-transition rate differs dramatically across subgroups (F=43.0). After regressing out section from all 82 folios, silhouette stays at 0.18. Within-section operational variation is functionally meaningful.
+- Bootstrap stability is moderate (C1714): ARI=0.76 at k=4 (200 resamples). Assignments are moderately reproducible but ~24% of folios shift under resampling.
+- The feature space has interpretable structure (C1715): PC1 (32% variance) is the PREFIX/kernel composition axis that separates sections. PC2 (17%) is the closure/complexity axis. Together they capture half the variance and correspond to known structural dimensions.
+- Alignment with C1640 and C1668: The gradient finding (C1712) converges with C1640 (apparatus family partition is gradient-like) and C1668 (families are gradients, not discrete bins). Folio operational space is inherently continuous; discrete labels are convenience partitions at best.
 
 ---
 

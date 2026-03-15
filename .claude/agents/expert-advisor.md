@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1711 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1715 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1711.
+the highest ID present is C1715.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1711 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1715 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1711 validated constraints are present as canonical one-line claims with tier
+1715 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-14 22:04
-**Version:** FROZEN STATE (1711 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-15 09:07
+**Version:** FROZEN STATE (1715 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1951,6 +1951,10 @@ C1708	Folio category diversity matches coverage-optimized null: FOLIO_CATEGORY_N
 C1709	PP MIDDLE distance predicts B-side manifold position: PP_MANIFOLD_CORRELATION. Mantel test on 114 A folio pairs: PP Jaccard distance vs coverage-weighted B-side manifold centroid distance yields r=0.4226. Partial Mantel controlling pool size + section: r=0.4062. Bridge-dominant pipeline: bridge PP r=0.4278 > full > dark PP r=0.2047. Bridge MIDDLEs (77% of PP pool) carry the dominant signal	2	A→B, PP, manifold, bridge, dark-pipeline, Mantel
 C1710	PP composition predicts three B-side manifold axes: PP_AXIS_PREDICTION. 3/10 axes significant after Bonferroni: F4_raw rho=-0.340 (headless infrastructure), SUSTAINED_HEAT rho=-0.227, DIRECT_FIRE rho=-0.224. 7/10 axes non-significant. Bridge and dark each independently predict 3/10 axes. Prediction is partial not comprehensive	2	A→B, PP, manifold, prediction, axis
 C1711	PP-manifold correlation is section-independent: PP_MANIFOLD_SECTION_INDEPENDENT. Within-section Spearman rho=0.381. Between-section rho=0.390 (5176 pairs). Per-axis partial correlations change max 0.019 after section control. Signal is intrinsic to PP content, not section composition	2	A→B, PP, manifold, section, independence
+C1712	REGIME partition is gradient-like, not discrete: REGIME_GRADIENT. All 3 methods (K-Means, Ward, GMM) select k=2 by silhouette on 22 features (12 PCs), but k=2 is NOT significant vs permutation null (sil=0.2175 < null p95=0.2343). The k=2 split is Bio vs non-Bio section membership. At k=4, genuine above-null structure exists (KM sil=0.2142 > null p95=0.1671, excess=0.047). C179's count of 4 retained as strongest non-trivial partition, but these are soft modes on a gradient, not crisp clusters	2	B, REGIME, clustering, gradient, C179
+C1713	REGIME has within-section functional substructure: REGIME_WITHIN_SECTION. Within Herbal alone (32 folios), k=2 clustering yields sil=0.1676 but HEAD self-transition rate differs dramatically across subgroups. Section-residualized clustering on all 82 folios yields sil=0.1768 at k=2. REGIME is not purely a section alias — within-section operational variation exists and is functionally meaningful	2	B, REGIME, section, Herbal, functional
+C1714	REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstrap stability (200 resamples) yields ARI=0.80±0.15 at k=2 and ARI=0.76±0.14 at k=4. Both partitions moderately stable. The 4-REGIME partition is less stable than the binary section split but not drastically so	2	B, REGIME, stability, bootstrap
+C1715	PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features yields 12 PCs at 95% variance. PC1 (32%) loads on qo_frac (+0.326), headless_frac (-0.306), k_frac (+0.304). PC2 (17%) loads on suffix_rate (+0.348), mean_middle_length (+0.346), e_frac (+0.325). First two PCs capture 49% of variance and correspond to known structural axes	2	B, PCA, PREFIX, kernel, folio
 
 ---
 
@@ -1958,7 +1962,7 @@ C1711	PP-manifold correlation is section-independent: PP_MANIFOLD_SECTION_INDEPE
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-14
+# Generated: 2026-03-15
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
