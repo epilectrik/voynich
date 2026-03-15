@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1715.
+the highest ID present is C1717.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2041,6 +2041,8 @@ C1712	REGIME partition is gradient-like, not discrete: REGIME_GRADIENT. All 3 me
 C1713	REGIME has within-section functional substructure: REGIME_WITHIN_SECTION. Within Herbal (32 folios), k=2 sil=0.1676 but HEAD self-transition rate F=43.0 (df=1,30, p<<0.001). Section-residualized sil=0.1768. REGIME not purely section alias	2	B, REGIME, section, Herbal, functional	herbal_n=32. herbal_sil=0.1676. F_stat=43.0. resid_sil=0.1768.
 C1714	REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstrap (200 resamples) ARI=0.80±0.15 at k=2, ARI=0.76±0.14 at k=4. Both moderately stable	2	B, REGIME, stability, bootstrap	k2_ari=0.80. k4_ari=0.76. n_bootstrap=200.
 C1715	PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features: PC1 (32%) loads qo_frac(+0.326), headless_frac(-0.306), k_frac(+0.304). PC2 (17%) loads suffix_rate(+0.348), mean_middle_length(+0.346), e_frac(+0.325). First 2 PCs = 49%	2	B, PCA, PREFIX, kernel, folio	PC1_var=0.32. PC2_var=0.17. cum_2PC=0.49. n_PCs=12. n_features=22.
+C1716	Category trajectory flat at 8-category resolution: CATEGORY_TRAJECTORY_FLAT. 0/8 categories show significant trajectory after length control (Bonferroni alpha=0.00625), pooled and within-section. Max partial rho=-0.042 (MARKING, p=0.20). No serial dependence: lag-1 autocorrelation PC1=-0.13 (shuffle p=0.69). All 8 collapse under kernel control. Extends C963 to 8-category (C1250) resolution	2	B, paragraph, body, category, trajectory, C963, C1250	n_sig=0/8. max_rho=-0.042. lag1_r=-0.13. kernel_survive=0/8. N=914.
+C1717	Within-paragraph category diversity exceeds between-paragraph: WITHIN_PARA_JSD_HIGHER. Within-paragraph body-line JSD on 8-category vector (0.209) > between-paragraph-same-folio JSD (0.188), ratio=1.11. Cross-folio JSD=0.241. Paragraph identity does NOT constrain body-line category composition. Extends C963 and C1288	2	B, paragraph, body, JSD, category, C963, C1288	within_jsd=0.209. between_jsd=0.188. ratio=1.11. cross_folio=0.241.
 
 ---
 

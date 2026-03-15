@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1715 validated constraints | **Version:** 5.63 | **Date:** 2026-03-15
+**Total:** 1717 validated constraints | **Version:** 5.64 | **Date:** 2026-03-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5951,6 +5951,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Section is not a confound (C1711): Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The A→manifold connection is intrinsic to PP content, not an artifact of section covariance.
 - Convergence with C1670: Folio accent predicts manifold position (C1670, r=0.871). PP content also predicts manifold position (C1709, r=0.42). Two independent predictors converge on the same B-side operational structure.
 - Tier 3 interpretive extension: The B-side manifold has been interpreted as apparatus configuration space (DISTILLATION, SEALED_VESSEL, etc.) at Tier 3. If that interpretation holds, C1709-C1711 constitute structural evidence that A folios parameterize apparatus type. This interpretive gloss is documented in INTERPRETATION_SUMMARY.md.
+
+---
+
+### Phase 591: Paragraph Category Trajectory — C963 Extended to 8-Category Resolution (C1716-C1717)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1716 | Category trajectory flat at 8-category resolution: CATEGORY_TRAJECTORY_FLAT. Body lines within paragraphs show no systematic category trajectory after length control. 0/8 categories significant at Bonferroni alpha=0.00625, both pooled (N=914 body lines, 100 paragraphs) and within-section (B: N=378, H: N=223, S: N=240, C: N=68). Largest partial rho: -0.042 (MARKING, p=0.20). No serial dependence: lag-1 autocorrelation on category PC1 = -0.13 (shuffle null p=0.69). All 8 categories collapse under kernel control (T6). Extends C963 from role-fraction level to 8-category (C1250) resolution | 2 | B, paragraph, body, category, trajectory, position, C963, C1250, C965 | n_sig=0/8. max_partial_rho=-0.042. lag1_r=-0.13. lag1_p=0.69. kernel_survive=0/8. N_lines=914. N_para=100. |
+| 1717 | Within-paragraph category diversity exceeds between-paragraph: WITHIN_PARA_JSD_HIGHER. Within-paragraph body-line JSD on 8-category vector (0.209) exceeds between-paragraph-same-folio JSD (0.188), ratio=1.11. Cross-folio JSD=0.241. Paragraph identity does NOT constrain body-line category composition beyond the folio template. Folio shuffle null JSD=0.212; within-paragraph below null in 0/100 permutations. Extends C963 and C1288 | 2 | B, paragraph, body, JSD, category, folio, C963, C1288 | within_jsd=0.209. between_jsd=0.188. ratio=1.11. cross_folio_jsd=0.241. |
+
+**Phase 591 findings (Paragraph Category Trajectory, C963 EXTENDED TO 8-CATEGORY):**
+- The decisive test (T2) finds 0/8 categories with significant trajectory after length control (C1716). Neither pooled nor within any section. The largest partial rho is -0.042 (MARKING), with p=0.20. Body lines are compositionally homogeneous at the finest available grain.
+- Within-paragraph body-line category diversity exceeds between-paragraph-same-folio diversity (C1717). Ratio 1.11 — body lines within a paragraph are slightly MORE diverse than lines from different paragraphs in the same folio. Paragraph identity does not constrain category composition.
+- Suffix modes strongly differentiate categories (T5): 5/8 categories significantly differ between A-mode and B-mode lines. THERMAL +0.150 enriched in Mode A; TRANSITION -0.068, STAGING -0.049 enriched in Mode B. Confirms C1279/C1309 at body-line grain. But modes do not create trajectory — they alternate without positional trend.
+- All category-position effects collapse under kernel control (T6): 0/8 categories survive partialing out kernel fractions. Consistent with C1291 (category-REGIME association is kernel-mediated).
+- No serial dependence (T4): Lag-1 autocorrelation on category PC1 = -0.13, not significant vs shuffle null (p=0.69). Consecutive body lines are as category-independent as shuffled lines.
 
 ---
 

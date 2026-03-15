@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1715 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1717 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1715.
+the highest ID present is C1717.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1715 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1717 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1715 validated constraints are present as canonical one-line claims with tier
+1717 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-15 09:07
-**Version:** FROZEN STATE (1715 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-15 09:53
+**Version:** FROZEN STATE (1717 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1955,6 +1955,8 @@ C1712	REGIME partition is gradient-like, not discrete: REGIME_GRADIENT. All 3 me
 C1713	REGIME has within-section functional substructure: REGIME_WITHIN_SECTION. Within Herbal alone (32 folios), k=2 clustering yields sil=0.1676 but HEAD self-transition rate differs dramatically across subgroups. Section-residualized clustering on all 82 folios yields sil=0.1768 at k=2. REGIME is not purely a section alias — within-section operational variation exists and is functionally meaningful	2	B, REGIME, section, Herbal, functional
 C1714	REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstrap stability (200 resamples) yields ARI=0.80±0.15 at k=2 and ARI=0.76±0.14 at k=4. Both partitions moderately stable. The 4-REGIME partition is less stable than the binary section split but not drastically so	2	B, REGIME, stability, bootstrap
 C1715	PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features yields 12 PCs at 95% variance. PC1 (32%) loads on qo_frac (+0.326), headless_frac (-0.306), k_frac (+0.304). PC2 (17%) loads on suffix_rate (+0.348), mean_middle_length (+0.346), e_frac (+0.325). First two PCs capture 49% of variance and correspond to known structural axes	2	B, PCA, PREFIX, kernel, folio
+C1716	Category trajectory flat at 8-category resolution: CATEGORY_TRAJECTORY_FLAT. Body lines within paragraphs show no systematic category trajectory after length control. 0/8 categories significant at Bonferroni alpha=0.00625, both pooled and within-section. Largest partial rho: -0.042. No serial dependence: lag-1 autocorrelation on category PC1 = -0.13. All 8 categories collapse under kernel control (T6). Extends C963 from role-fraction level to 8-category (C1250) resolution	2	B, paragraph, body, category, trajectory, position, C963, C1250, C965
+C1717	Within-paragraph category diversity exceeds between-paragraph: WITHIN_PARA_JSD_HIGHER. Within-paragraph body-line JSD on 8-category vector (0.209) exceeds between-paragraph-same-folio JSD (0.188), ratio=1.11. Cross-folio JSD=0.241. Paragraph identity does NOT constrain body-line category composition beyond the folio template. Folio shuffle null JSD=0.212; within-paragraph below null in 0/100 permutations. Extends C963 and C1288	2	B, paragraph, body, JSD, category, folio, C963, C1288
 
 ---
 

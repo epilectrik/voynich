@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.64 (2026-03-15) - Phase 591: Paragraph Category Trajectory
+
+### Summary
+
+Phase 591 tests whether the 8-category fraction vector (C1250) shows systematic trajectory across paragraph body line positions. C963 established homogeneity at role-fraction level; this extends the test to the finest available grain. Six tests: raw trajectory, length-controlled (decisive), within/between JSD, lag-k autocorrelation, suffix mode interaction, kernel-mediated partial correlation. All with section stratification and shuffle controls. Verdict: **H0_EXTENDED** — 0/8 categories show significant trajectory after length control. C963 confirmed at 8-category resolution.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_CATEGORY_TRAJECTORY/` -- Phase 591 directory with script, results, INDEX |
+| **ADDED** | C1716: Category trajectory flat at 8-category resolution -- 0/8 significant, max partial rho=-0.042, no serial dependence |
+| **ADDED** | C1717: Within-paragraph category diversity exceeds between-paragraph -- JSD ratio=1.11, paragraph identity does not constrain categories |
+| **UPDATED** | INDEX.md -- +2 constraints (1717 total), Phase 591 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.64, 1717 constraints, 591 phases) |
+
+### Key Findings
+
+- **C963 extends to 8-category resolution (C1716):** The decisive test (partial Spearman controlling for line length) finds 0/8 categories significant, both pooled (N=914) and within each section. Body lines are compositionally homogeneous at the finest available grain.
+- **Paragraph identity does not constrain categories (C1717):** Within-paragraph body-line JSD (0.209) exceeds between-paragraph-same-folio JSD (0.188). Body lines are drawn from the folio's category profile, not from a paragraph-specific subprofile.
+- **Suffix modes strongly differentiate categories (T5, confirms C1279/C1309):** 5/8 categories differ between Mode A and Mode B lines. But modes alternate without positional trend — the coupling is real but does not create trajectory.
+- **All effects collapse under kernel control (T6):** Consistent with C1291. Category composition is kernel-mediated; no independent category dynamics.
+
+---
+
 ## Version 5.63 (2026-03-15) - Phase 590: REGIME Cluster Revalidation
 
 ### Summary
