@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.34"
-  date: "2026-03-06"
+  version: "3.35"
+  date: "2026-03-14"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -906,7 +906,24 @@ middle_instruction_encoding:
         k/t categorically avoid n,m terminals (0-1 tokens each).
       Hazard axis: y sources 90.9% of violations, n absorbs 90.9%.
 
-  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1556, C1557, C1558, C1559, C1560, C1561"
+  sequential_routing:
+    head_self_transition_hierarchy:
+      statement: "HEAD atoms form three persistence tiers: PERSISTENT (e 28.5%, headless 28.4%, a 25.2%), SWITCHING (k 16.7%, o 13.6%), RARE (t 9.1%)"
+      cross_head_routing: "e→k 1.493x enriched, a→k 0.528x depleted — energy and monitoring HEADs feed into kernel, not vice versa"
+      provenance: "C1562"
+
+    terminal_to_head_routing:
+      statement: "TERMINAL atom determines next-token HEAD selection — cross-token routing grammar"
+      routing_map: "r→a 2.231x, y→k 1.597x, h→t 1.892x, l→e 1.246x, m→o 1.554x, bare neutral"
+      interpretation: "TERMINAL is dual-function: suffix-gating within token + HEAD routing to next token"
+      provenance: "C1563"
+
+    suffix_boundary:
+      statement: "Suffix carries zero forward information to next HEAD (JSD=0.0021, smallest in phase)"
+      implication: "Compositional boundary is absolute at token edge — suffix scope terminates completely"
+      provenance: "C1564"
+
+  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1556, C1557, C1558, C1559, C1560, C1561, C1562, C1563, C1564"
 
 # ============================================================
 
@@ -1187,7 +1204,27 @@ hazards:
       RATE_MISMATCH: a-HEAD late, BARE-dominant (C1528, C1532)
       ENERGY_OVERSHOOT: e-HEAD medial (C1528, C1532)
       5 phantom MIDDLEs encode construction-level prohibitions (C1531)
-    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533"
+
+    universal_head_immunity:
+      statement: "ALL 5 HEAD atoms have 0% hazard source rate (0/16,819 headed tokens). Hazard is exclusively HEADLESS (1,537/6,277=24.49%)"
+      chi2: 4411.9
+      V: 0.219
+      provenance: "C1546"
+
+    terminal_hazard_class_determination:
+      statement: "TERMINAL atom determines hazard class type with stronger effect than HEAD (V=0.306 vs HEAD V=0.219, 1.40x)"
+      class_locks: "y→PHASE_ORDERING (675/675), l→CONTAINMENT_TIMING (855/855), bare→RATE_MISMATCH (5/5), h→ENERGY_OVERSHOOT (2/2)"
+      provenance: "C1547"
+
+    hazard_class_exclusivity:
+      statement: "PHASE_ORDERING = exclusively headless y-terminal dy (675 tokens across 10+ PREFIXes); CONTAINMENT_TIMING = exclusively l-terminal (855 tokens across 12+ PREFIXes). Both MIDDLE-intrinsic, not PREFIX-induced"
+      provenance: "C1551"
+
+    phantom_defense_in_depth:
+      statement: "Phantom MIDDLEs are atom-legal but construction-dead — all 5 pass atom slot legality, PREFIX compatibility (22-27 each), and suffix compatibility. Prohibition at BIGRAM level, not atom level. Defense-in-depth safety architecture"
+      provenance: "C1554"
+
+    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554"
 
   properties:
     asymmetric_rate: "65%"
@@ -1313,6 +1350,14 @@ program_structure:
             prefix_selectivity: "ch/sh 0.16-0.17x, qo 0.02x depleted; ar/al/or 4.6-6.5x enriched (LATE channel)"
             two_level_closure: "m-terminal (body-line closer) and -am suffix (paragraph terminator) are orthogonal: 1 token overlap, complementary scopes"
             provenance: "C1434, C1435, C1436, C1437, C1438, C1439"
+      step_discontinuity:
+        statement: "Q3→Q4 boundary is a step discontinuity, not a gradual gradient"
+        head_jsd: "0.0185 (26x Q2→Q3)"
+        terminal_jsd: "0.0200 (20x Q2→Q3)"
+        interior_stability: "Q1-Q3 pairwise JSD < 0.003 — interior is a uniform WORK zone"
+        architecture: "Two-step line: uniform interior (WORK) then abrupt closure transition"
+        provenance: "C1566"
+
       zone_hazard_routing:
         statement: "Three-zone model interacts with frame hazard classification: monotonic hazard gradient across line (C1463-C1466)"
         routing_pattern:
@@ -1913,6 +1958,52 @@ macro_state_transition_matrix:
   provenance: "C1015"
 
 # ============================================================
+apparatus_response_architecture:
+
+  statement: |
+    B-side operational behavior varies systematically across folios in a way that
+    is structurally measurable (Tier 2) and consistent with apparatus-type
+    differentiation (Tier 3 interpretation). The response landscape is continuous
+    and gradient-like — families are not discrete species with crisp boundaries.
+
+  productive_disruption:
+    statement: "Real closure tokens produce greater per-step disruption than demand-matched nulls across 76 B folios (88% pass at Tier C, 89% at Tier A)"
+    success_family: "DYE (dV-to-Y efficiency), DVA (dV advantage), YGA (Y-gain advantage) — process-quality metrics measuring execution dynamics during closure, not endpoint state"
+    a2_mechanism: "A2 excess forgivingness = close recovery channels (R1-R5 account for 159.5% of A2's excess CCS1; ablation rho=0.963). Single-channel dominant, not distributed"
+    provenance: "C1636, C1638, C1639"
+
+  landscape:
+    statement: "Three-pole response landscape: STABLE_AMPLIFIER (25%, n=19), THRESHOLD_DEPENDENT (63%, n=48), FORGIVING_RECIRCULATOR (12%, n=9). Classification partially cross-cuts apparatus profile (cross-cut=0.25)"
+    gradient_nature: "Response-only clustering finds real but sub-threshold structure (silhouette=0.361, ARI=0.385). Families are gradient-like, not crisp"
+    provenance: "C1640, C1646"
+
+  regime_admission:
+    statement: "Regime admission selectivity is DECISIVE POSITIVE — gating closure regime admission (Layer 2) works where Y-credit gating (Layer 3) failed"
+    ssi: 63.5
+    regime_gated_advantage: 0.0605
+    credit_only_advantage: 0.0561
+    robustness: "4/4 regime configs beat credit-only control"
+    provenance: "C1652"
+
+  manifold_geometry:
+    statement: "Response-surface manifold has effective rank 5.88, requires 5 PCs for 80% variance — not compressible to a low-dimensional summary"
+    structural_endpoints: "4 folios (f39v, f55v, f86v5, f95r2) at structural endpoints: no passing config. 4 parameter-achievable (f40r, f50v, f85r2, f86v6): pass with displacement>=0.5"
+    accent_correspondence: "Folio accent is substantially captured by manifold position (canonical r=0.871, within-A2 R²=0.946)"
+    provenance: "C1666, C1667, C1670"
+
+  pp_manifold_connection:
+    statement: "A folio PP MIDDLE content predicts B-side manifold position through a bridge-dominant pipeline, independent of section"
+    mantel_r: 0.4226
+    partial_r: 0.4062
+    bridge_r: 0.4278
+    dark_r: 0.2047
+    predicted_axes: "3/10 significant after Bonferroni: F4_raw (rho=-0.340), SUSTAINED_HEAT (rho=-0.227), DIRECT_FIRE (rho=-0.224)"
+    section_independence: "Within-section rho=0.381, between-section rho=0.390, max per-axis change=0.019"
+    provenance: "C1709, C1710, C1711"
+
+  provenance: "C1636, C1638, C1639, C1640, C1646, C1652, C1666, C1667, C1670, C1709, C1710, C1711"
+
+# ============================================================
 three_compression_architecture:
 
   statement: "Three orthogonal compressions of B grammar — tensor (variance), macro-automaton (topology), archetypes (dynamics) — are irreducibly independent"
@@ -1973,7 +2064,15 @@ three_compression_architecture:
     atom substrates through behavioral composition, not arbitrary string
     concatenation.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1506, C1507, C1508, C1509"
+  compositional_generator_limits:
+    statement: "Atom-compositional generator (HEAD+MOD+TERM with real parameters) achieves co-occurrence clustering 0.599, breaking C984's independent-feature ceiling (0.49) but far short of real 0.873"
+    slot_architecture_sufficient: "Structured-random model (uniform weights, no gating) achieves 0.501 = 83.6% of empirical. Three-slot architecture, not specific parameters, drives compositional clustering"
+    deployment_not_compositional: "Logistic compatibility model on real 972 MIDDLEs: predicted clustering 0.412, edge Jaccard 0.064 (1,250/10,241 edges overlap). Atom features do NOT determine which MIDDLEs co-occur on lines"
+    frequency_baseline: "Global frequency sampling produces clustering 0.639 (73% of real 0.873). Most manifold clustering is a natural property of frequency-weighted co-occurrence, not a special structural feature"
+    manifold_residual: "Best deployment model reproduces only 28.5% of real edges (Jaccard 0.285). The 0.234 clustering gap reflects line-level content specificity — which MIDDLEs each folio assigns to each line"
+    provenance: "C1690, C1691, C1695, C1696, C1701"
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1506, C1507, C1508, C1509, C1690, C1691, C1695, C1696, C1701"
 
 # ============================================================
 design_freedom:
@@ -3024,12 +3123,17 @@ provenance:
     - "C1482"  # Double-ii safety via TRANSITION-locked n-terminal (0.0%, monotonic gradient)
     - "C1483"  # TERMINAL category specificity gradient (hazard axis: y=source 90.9%, n=target 90.9%)
     - "C1485"  # HEAD-TERMINAL affinity partition (k/t avoid hazard-carrying n/m terminals)
+    - "C1546"  # Universal HEAD atom hazard source immunity (0/16819 headed tokens)
+    - "C1547"  # TERMINAL determines hazard class type (V=0.306 > HEAD V=0.219)
+    - "C1551"  # PHASE_ORDERING exclusively headless dy; CONTAINMENT_TIMING exclusively l-terminal
+    - "C1554"  # Phantom MIDDLEs atom-legal but construction-dead (defense-in-depth)
 
   program_line:
     - "C357"   # Lines deliberately chunked
     - "C358"   # Boundary tokens
     - "C359"   # LINK suppressed at boundaries
     - "C360"   # Grammar LINE-INVARIANT
+    - "C1566"  # Q3-Q4 step discontinuity (HEAD JSD=0.0185, 26x Q2-Q3; two-step line architecture)
 
   morphology:
     - "C267"   # Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)
@@ -3066,6 +3170,13 @@ provenance:
     - "C1485"  # TERMINAL HEAD affinity partition (e->y 72.7%, a->n/m 59-60%, k/t avoid n/m)
     - "C1486"  # m-terminal line-final closure (73.7% line-final, 87.9% TRANSITION, confirms C1434-C1439)
     - "C1487"  # Six-terminal functional taxonomy (LOCKED r/m, CHANNELED l/y/n, DIFFUSE h/bare)
+    - "C1546"  # Universal HEAD atom hazard source immunity (0/16819, V=0.219)
+    - "C1547"  # TERMINAL determines hazard class type (V=0.306, 1.40x stronger than HEAD)
+    - "C1551"  # PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal
+    - "C1554"  # Phantom MIDDLEs atom-legal but construction-dead (defense-in-depth)
+    - "C1562"  # HEAD self-transition rate hierarchy (PERSISTENT/SWITCHING/RARE tiers)
+    - "C1563"  # Terminal-to-next-HEAD cross-token routing grammar (r→a 2.231x, y→k 1.597x)
+    - "C1564"  # Suffix carries zero forward information to next HEAD (JSD=0.0021)
     - "C1534"  # PREFIX 15-char three-tier positional classification (MODIFIER/BASE/DUAL, V=0.547)
     - "C1535"  # i-atom excluded from PREFIX (iteration is MIDDLE-internal)
     - "C1536"  # Base-to-HEAD selection V=0.478 (89% of HEAD specificity)
@@ -3472,6 +3583,25 @@ provenance:
     - "C1009"  # AXM exit hazard-target compositional curvature
     - "C1018"  # HUB sub-role archetype differentiation (k_frac F=15.81, SAFETY_BUFFER 1.7x)
 
+  apparatus_response:
+    - "C1636"  # Productive disruption efficiency generalizes (76-folio, 88% Tier C pass)
+    - "C1638"  # DYE/DVA/YGA success family (process quality, not endpoint state)
+    - "C1639"  # A2 forgivingness = close recovery channels (159.5% excess, rho=0.963)
+    - "C1640"  # Apparatus family gradient-like, not crisp (silhouette=0.361)
+    - "C1646"  # Three-pole landscape (SA/TD/FR, cross-cut=0.25)
+    - "C1652"  # Regime admission selectivity decisive positive (SSI=63.5)
+    - "C1666"  # Structural endpoint boundary (4 SE + 4 PA folios)
+    - "C1667"  # Manifold dimensionality ~5.88 effective rank
+    - "C1670"  # Accent = manifold position (canonical r=0.871)
+    - "C1690"  # Atom composition breaks C984 ceiling (0.599 vs 0.49)
+    - "C1691"  # Slot architecture sufficient for compositional clustering (0.501 = 83.6%)
+    - "C1695"  # Deployment not compositional (edge Jaccard 0.064)
+    - "C1696"  # Frequency baseline 0.639 (73% of manifold clustering)
+    - "C1701"  # Manifold residual = content (line-level specificity)
+    - "C1709"  # PP MIDDLE distance predicts manifold position (Mantel r=0.4226, bridge-dominant)
+    - "C1710"  # PP composition predicts 3/10 manifold axes (F4_raw, SUSTAINED_HEAT, DIRECT_FIRE)
+    - "C1711"  # PP-manifold correlation section-independent (within rho=0.381)
+
   axm_internal_architecture:
     - "C1006"  # Dwell non-geometricity is topology artifact
     - "C1007"  # Gatekeeper subset {15, 20, 21, 22, 25}
@@ -3781,5 +3911,17 @@ disallowed:
   - interpretation: "Prep PREFIXes (pch, tch, dch, te, lch) encode distinct physical operations"
     reason: "Prep PREFIX similarity (cosine 0.963) is fully explained by shared h-base; shuffle test p=0.998. They are h-base mode variants, not different verbs."
     provenance: "C1221"
+
+  - interpretation: "Apparatus families are discrete species with crisp boundaries"
+    reason: "Response-only clustering finds real but sub-threshold structure (silhouette=0.361). Families are gradient-like, not crisp."
+    provenance: "C1640"
+
+  - interpretation: "Manifold clustering is primarily structural beyond frequency effects"
+    reason: "Frequency baseline explains 73% of manifold clustering (0.639 vs 0.873). Most clustering is a natural property of frequency-weighted co-occurrence."
+    provenance: "C1696"
+
+  - interpretation: "Atom morphological composition determines MIDDLE co-occurrence"
+    reason: "Logistic compatibility model predicts only 0.412 clustering (edge Jaccard 0.064). Deployment grammar, not morphological composition, determines co-occurrence."
+    provenance: "C1695"
 
 # ============================================================

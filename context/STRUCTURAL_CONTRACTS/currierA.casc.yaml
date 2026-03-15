@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "2.2"
-  date: "2026-03-04"
+  version: "2.3"
+  date: "2026-03-14"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -133,6 +133,28 @@ morphology:
         interpretation: "A = state-describing terminals, B = action-performing terminals"
         provenance: "C1395 T5"
       provenance: "C1393, C1394, C1395 T1, C1395 T5"
+
+    atom_cross_system_behavior:
+      unstable_behavioral_convergence:
+        statement: "UNSTABLE atoms {y,h,d} show LESS cross-system behavioral divergence than STABLE MODs {i,d,s} — opposite of expected"
+        unstable_mean_jsd: 0.0110
+        stable_mod_mean_jsd: 0.0319
+        ratio: "0.35x (unstable more similar A→B)"
+        most_divergent: "d (JSD=0.0567)"
+        provenance: "C1540"
+
+      suffix_exclusion_tier:
+        statement: "Five atoms {k,t,p,f,c} have 0 suffix occurrences across all systems — defines an instruction-only tier"
+        partition: "13 OUTCOME-accessible atoms + 5 INSTRUCTION-ONLY atoms"
+        composition: "ACTION HEADs {k,t} + UNSTABLE MODs {p,f,c}"
+        provenance: "C1541"
+
+      unstable_mode_a_suffix_shift:
+        statement: "UNSTABLE MODs {c,f,p} increase Mode A suffix rate A→B, while STABLE MODs {i,d} do not"
+        shifts: "c +25.3pp, f +22.3pp, p +15.5pp (UNSTABLE). i +0.7pp, d -3.4pp (STABLE)"
+        interpretation: "Unstable atoms carry A specification signal in suffix deployment"
+        provenance: "C1544"
+
     two_track_structure:
       # REGENERATED 2026-01-24: Atomic-suffix parser (voynich.py)
       shared_with_b:
@@ -697,7 +719,46 @@ participation:
           note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
           provenance: "C1135, C1136, C1139, C1140, C1141, C1146, C1264"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
+        discrimination_manifold:
+          statement: "A discrimination manifold clustering (0.873) arises primarily from frequency-weighted co-occurrence, not special structural features"
+          frequency_baseline: "Global frequency sampling produces clustering 0.639 (73% of real 0.873)"
+          deployment_not_compositional: "Atom features do NOT determine MIDDLE co-occurrence (logistic model: edge Jaccard 0.064). Deployment grammar, not morphological composition, determines the manifold"
+          manifold_residual: "Best model reproduces 28.5% of edges (Jaccard 0.285). Residual reflects line-level content specificity"
+          provenance: "C1695, C1696, C1701"
+
+        b_side_coherence:
+          statement: "Within-folio B-side signature coherence is statistically significant but practically weak"
+          within_between_ratio: 1.086
+          z_score: 15.15
+          interpretation: "Folios specify a B-side operational envelope, but only 8.6% more similar within than between"
+          provenance: "C1702"
+
+        c475_operational_divergence:
+          statement: "C475-incompatible record pairs produce significantly more divergent B-side signatures"
+          cohen_d: 0.816
+          compatible_distance: 0.450
+          incompatible_distance: 0.618
+          interpretation: "Records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical"
+          provenance: "C1705"
+
+        pp_content_predicts_b:
+          statement: "PP MIDDLE content predicts B-side operational similarity at token level, overturning C753's class-level null"
+          partial_rho: 0.502
+          raw_rho: 0.470
+          controls: "pool size, hub fraction, section"
+          confound_direction: "HIGHER after control (confounds suppress, not inflate)"
+          provenance: "C1706"
+
+        pp_manifold_connection:
+          statement: "PP MIDDLE distance predicts B-side manifold position through bridge-dominant pipeline"
+          mantel_r: 0.4226
+          partial_r: 0.4062
+          bridge_r: 0.4278
+          dark_r: 0.2047
+          section_independence: "Within-section rho=0.381, between-section rho=0.390 — intrinsic to PP content"
+          provenance: "C1709, C1711"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146, C1695, C1696, C1701, C1702, C1705, C1706, C1709, C1711"
 
 # ============================================================
 positional:
@@ -793,6 +854,11 @@ disallowed:
     status: "FALSIFIED"
     provenance: "C1268"
 
+  - interpretation: "A discrimination manifold clustering reflects structural features beyond frequency-weighted co-occurrence"
+    reason: "Frequency baseline explains 73% of clustering (0.639 vs 0.873). Atom composition adds only to 0.599. Residual is line-level content specificity."
+    status: "FALSIFIED"
+    provenance: "C1696, C1701"
+
 # ============================================================
 
 provenance:
@@ -865,6 +931,9 @@ provenance:
     - "C1536"  # Base-to-HEAD selection V=0.478 (each base selects distinct domain)
     - "C1537"  # a-base universal headless gateway (94-96% headless)
     - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture
+    - "C1540"  # p/f/c behavioral non-divergence vs stable MODs (unstable JSD 0.35x)
+    - "C1541"  # Suffix exclusion defines instruction-only atom tier ({k,t,p,f,c} = 0 suffix)
+    - "C1544"  # Unstable atoms increase Mode A suffix rate A→B (c +25.3pp, f +22.3pp)
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -922,6 +991,14 @@ provenance:
     - "C1141"  # Bridge atom substrate for dark-pipeline compounds (86% types, 96.5% coverage)
     - "C1264"  # Bridge vs dark pipeline category divergence (V=0.441)
     - "C1267"  # Mode A/B distinction is B-execution only (null)
+    - "C1695"  # Deployment not compositional (atom features don't determine co-occurrence)
+    - "C1696"  # Frequency baseline 0.639 (73% of manifold clustering)
+    - "C1701"  # Manifold residual = content (line-level specificity)
+    - "C1702"  # Folio B-side coherence weak (ratio 1.086)
+    - "C1705"  # C475 operational divergence confirmed (d=0.816)
+    - "C1706"  # PP content predicts B-side at token level (partial rho=0.502)
+    - "C1709"  # PP MIDDLE distance predicts manifold position (Mantel r=0.4226)
+    - "C1711"  # PP-manifold correlation section-independent (within rho=0.381)
 
   positional:
     - "C260"  # Section isolation
@@ -946,5 +1023,7 @@ provenance:
     - "C484"  # No header interpretation
     - "C1267"  # Mode A/B distinction B-execution only
     - "C1268"  # PREFIX-category orthogonal
+    - "C1696"  # Frequency baseline dominates manifold clustering
+    - "C1701"  # Manifold residual is content, not structure
 
 # ============================================================
