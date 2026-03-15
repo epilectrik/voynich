@@ -2,7 +2,7 @@
 
 This document states the project's claims explicitly, with the evidence tier and constraint basis for each. It exists because the Voynich Manuscript attracts extraordinary claims, and readers deserve to know exactly where our confidence is high and where it is not.
 
-For the full constraint system, see `context/CLAIMS/INDEX.md` (1,410 validated constraints).
+For the full constraint system, see `context/CLAIMS/INDEX.md` (1,711 validated constraints).
 
 ---
 
@@ -79,4 +79,4 @@ The domain identification (Tier 3) is more easily revised:
 ---
 
 *Phase 553 | Part of the public documentation editorial pass*
-*Based on 1,410 validated constraints across 552 research phases*
+*Based on 1,711 validated constraints across 589 research phases*

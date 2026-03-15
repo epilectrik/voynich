@@ -4,6 +4,19 @@ This document explains the project's findings for readers who want to understand
 
 For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)**. For claims and limits, see **[WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md)**.
 
+### Key Terms
+
+| Term | Meaning |
+|------|---------|
+| **Currier A / B** | Two scribal hands (or text types) identified by Prescott Currier in the 1970s. Used here as system labels — A and B occupy completely separate folios |
+| **AZC** | The Astronomical, Zodiac, and Cosmological folios — a structurally distinct subsystem |
+| **HT** | Human Track — compound tokens concentrated on first lines that serve as program identifiers |
+| **PP** | Participation Pipeline — the subset of Currier A MIDDLEs that also appear in Currier B (404 of 972) |
+| **RI** | Registry-Internal — the subset of Currier A MIDDLEs that stay within A and never enter B (609 of 972) |
+| **MIDDLE** | The core discriminative component of each token (between PREFIX and SUFFIX) |
+| **PREFIX** | The operational channel selector prepended to a MIDDLE |
+| **REGIME** | One of four folio-level behavioral profiles in Currier B |
+
 ---
 
 ## The Short Version
@@ -33,13 +46,13 @@ The four layers are independent systems that share vocabulary but serve differen
 | Layer | What It Does | How It Relates to Others |
 |-------|-------------|--------------------------|
 | **Currier B** | Executes fixed programs | Shares vocabulary with A and AZC but operates independently |
-| **Currier A** | Catalogs fine distinctions | Shares vocabulary pool with B; no entry-level coupling |
+| **Currier A** | Catalogs *what* operations exist | Determines vocabulary available to B; predicts B manifold position (r=0.42) |
 | **AZC** | Classifies vocabulary by position | Reflects the same operational character that B deploys sequentially |
 | **HT** | Compound specifications + orientation | Redundant with B body content; concentrated on first lines |
 
 **These systems do not form a runtime pipeline.** B programs are fixed — they don't get compiled or filtered from A data during execution. The vocabulary overlap reflects a construction-time relationship: A served as the reference vocabulary when B programs were originally composed. AZC classified that vocabulary by operational character. Once written, each layer became a self-contained view of the same underlying vocabulary. (Tier 3 interpretation.)
 
-**The bridge backbone connects vocabulary geometry to execution dynamics.** Of the 972 MIDDLEs in Currier A's discrimination space, 85 are "bridge" MIDDLEs that also appear in Currier B. These bridges carry nearly all the information connecting vocabulary structure to dynamical behavior. The 8 operational categories are the organizing principle that spans all four systems: A organizes its registry by operational theme, AZC sorts vocabulary by category into positional zones, and B's execution dynamics are predicted by the category composition of its vocabulary.
+**The bridge backbone connects vocabulary geometry to execution dynamics.** Of the 972 MIDDLEs in Currier A's discrimination space, 85 are "bridge" MIDDLEs that also appear in Currier B. These bridges carry nearly all the information connecting vocabulary structure to dynamical behavior. A folio's PP MIDDLE content predicts its B-side manifold position (Mantel r=0.42, p<0.0001), and this signal is bridge-dominant (bridge r=0.43 vs dark r=0.20). The 8 operational categories are the organizing principle that spans all four systems: A organizes its registry by operational theme, AZC sorts vocabulary by category into positional zones, and B's execution dynamics are predicted by the category composition of its vocabulary.
 
 ---
 
@@ -48,7 +61,7 @@ The four layers are independent systems that share vocabulary but serve differen
 | Layer | System | What It Does |
 |-------|--------|-------------|
 | **Execution** | Currier B | The programs themselves — adaptive control procedures |
-| **Distinction** | Currier A | An independent registry of fine distinctions |
+| **Distinction** | Currier A | Vocabulary catalog — determines *what* operations each program can use |
 | **Context** | AZC | A positional lookup table classifying vocabulary by operational character |
 | **Orientation** | HT (Human Track) | Keeps the human operator oriented during production |
 
@@ -144,11 +157,26 @@ For the complete formal specification of all structures described above, see **[
 
 **What it is:** 11,415 tokens across 114 folios (30.5% of the manuscript). Completely separate from Currier B — zero shared folios.
 
-**What it does:** An independent registry of fine distinctions. Where an execution system might have one instruction for "apply heat," A distinguishes between dozens of cases where that might mean subtly different things. A operates at finer resolution than any execution grammar could support.
+**What it does:** A vocabulary catalog that determines *what* operational vocabulary is available. Where B encodes *how* to execute control procedures, A encodes *what* those procedures operate on — distinguishing dozens of cases where a single B instruction might mean subtly different things. A operates at finer resolution than any execution grammar could support.
 
 The registry is organized around a discrimination gradient — 95.7% of all MIDDLE pairs are illegal co-occurrences, enforcing strict boundaries between discrimination domains. Records are category-themed: a THERMAL-heavy record doesn't randomly include MONITORING vocabulary (Cohen d=9.7).
 
-Each line is an independent record with no inter-line dependencies. A uses the same morphological system as B but with different behavior — 60.1% of A's MIDDLEs never appear in B. A and B share vocabulary (69.8% overlap) but neither references the other. The most likely relationship is construction-time, not runtime: A served as the reference vocabulary when writing B programs (Tier 3 interpretation).
+### Bridge and Dark Pipeline
+
+Of the 972 distinct MIDDLEs in Currier A's vocabulary, 404 participate in Currier B (the "PP" or Participation Pipeline). These split into two completely disjoint channels:
+
+- **Bridge MIDDLEs** (85): The dynamical backbone. These enter B programs directly and carry nearly all the information connecting A vocabulary to B execution dynamics. Bridge density per folio predicts B-side attractor strength (rho=-0.308).
+- **Dark pipeline MIDDLEs** (300): The identification vocabulary. These produce exclusively HT (Human Track) tokens in B — compound specifications built from bridge atoms (86% of atom types) but sharing zero complete MIDDLEs with bridges. They are strongly section-specific (Herfindahl 0.716).
+
+The remaining 609 MIDDLEs (60.1%) never appear in B at all — they encode within-A fine distinctions.
+
+### A Parameterizes B
+
+Each line is an independent record with no inter-line dependencies. A uses the same morphological system as B (same HEAD+MOD+TERM slot grammar) but with different terminal emphasis — A enriches state-describing terminals (l 1.84x), B enriches action-performing terminals (dy 144x).
+
+Despite operating independently, A folio vocabulary content genuinely predicts B-side behavior. PP MIDDLE content predicts B-side operational similarity (partial rho=0.502, after controlling for pool size and section), and PP MIDDLE distance predicts B-side manifold position through a bridge-dominant pipeline (Mantel r=0.42). Three of ten B-side manifold axes respond to PP composition (headless infrastructure, sustained heat, direct fire). The other seven axes — encoding *how* B deploys its instructions — do not respond to A content at all.
+
+The relationship is most likely construction-time, not runtime: A served as the reference vocabulary when writing B programs (Tier 3 interpretation). In the distillation interpretation, A catalogs *what apparatus configurations exist*; B encodes *how to run each one*.
 
 For the full specification, see **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)**.
 
@@ -282,9 +310,9 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 552 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 589 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
-The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 552 phases, each building on validated prior work, produced 1,410 constraints — a depth no single analytical session could achieve.
+The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 589 phases, each building on validated prior work, produced 1,711 constraints — a depth no single analytical session could achieve.
 
 For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 

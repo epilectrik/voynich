@@ -4,7 +4,7 @@ The Voynich Manuscript's main text (Currier B) is a set of operational procedure
 
 Think of sheet music: if you found scores in an unknown notation, you couldn't translate notes into words — because notes aren't words. But structural analysis would reveal patterns matching the harmonic series. You could prove the documents encode music without hearing a note played. We take the same approach: we recovered the formal operating logic without translating individual tokens. The structure *is* the semantics.
 
-This conclusion rests on 1,410 validated constraints from 552 research phases across 37,957 tokens.
+This conclusion rests on 1,711 validated constraints from 589 research phases across 37,957 tokens.
 
 ---
 
@@ -60,7 +60,7 @@ This conclusion rests on 1,410 validated constraints from 552 research phases ac
 | Layer | System | Tokens | Function |
 |-------|--------|--------|----------|
 | **Execution** | Currier B | 23,243 (61.9%) | Operational procedures — what to do, what to avoid |
-| **Distinction** | Currier A | 11,415 (30.5%) | Specification catalog — what differs, what is compatible |
+| **Distinction** | Currier A | 11,415 (30.5%) | Vocabulary catalog — what operations exist, what is compatible |
 | **Context** | AZC | 3,299 (8.7%) | Positional legality — where each operation is permitted |
 | **Orientation** | HT | 7,042* | Operator orientation — where you are, what is coming |
 
@@ -93,7 +93,7 @@ The manuscript's radiocarbon date (1404-1438) places it in the pre-publication s
 
 ## How This Was Built
 
-This project used AI-assisted computational analysis over 552 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1) — they cannot be retried, preventing circular investigation. An embedded expert-advisor agent validates new findings against all existing constraints in each phase.
+This project used AI-assisted computational analysis over 589 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1) — they cannot be retried, preventing circular investigation. An embedded expert-advisor agent validates new findings against all existing constraints in each phase.
 
 The result: knowledge compounds across phases. Early phases discovered morphology, middle phases built grammar, late phases tested external comparisons — and none of this work was ever lost. For methodology details, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
@@ -103,12 +103,12 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,410 |
-| Research phases | 552 |
+| Validated constraints | 1,711 |
+| Research phases | 589 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
-**Core model: CLOSED** | **Characterization: COMPLETE**
+**Core model: CLOSED** | **Characterization: ACTIVE**
 
 ---
 
