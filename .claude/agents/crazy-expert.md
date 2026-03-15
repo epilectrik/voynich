@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1658 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1661 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1705.
+the highest ID present is C1708.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2031,6 +2031,9 @@ C1702	Folio B-side coherence weak: FOLIO_BSIDE_COHERENCE_WEAK. Within-folio B-si
 C1703	Section prediction partial: SECTION_PREDICTION_PARTIAL. Folio-level LOO-CV 43.9% (2.19x chance). Record-level 34.8% (1.74x). Top features: HEAD_headless, HEAD_o, STAGING, HEAD_e	2	A, A↔B, section, prediction, B-side	folio_acc=0.439. folio_ratio=2.19x. record_acc=0.348. record_ratio=1.74x.
 C1704	RI extension directional predictions fail: EXTENSION_PREDICTIONS_FAIL. 1/5 pass Bonferroni. Only e→HEAD_e confirmed (d=0.479, p=0.003). k→HEAD_k correct direction but p=0.060	2	A, A↔B, RI, extension, B-side, negative	passed=1/5. e_d=0.479. e_p=0.003. k_d=0.515. k_p=0.060.
 C1705	C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible pairs diverge more in B-side space (d=0.816, p=3.8e-289). Manifold geometry maps to B-side operational meaning at pair level, not categorical	2	A, A↔B, C475, discrimination, manifold, B-side, divergence	d=0.816. p=3.8e-289. compatible_dist=0.450. incompatible_dist=0.618.
+C1706	PP content predicts B-side similarity: PP_CONTENT_PREDICTS_BSIDE. Partial Spearman rho=0.502 (controlling size, hub, section). Overturns C753 class-level null (r=-0.038). Confounds suppress not inflate	2	A, A↔B, PP, folio, B-side, content, correlation	partial_rho=0.502. raw_rho=0.470. p<1e-300. within_rho=0.467.
+C1707	Restricted PP MIDDLEs carry discriminative power: RESTRICTED_PP_DISCRIMINATIVE. Restricted-PP between-folio distance 0.520 vs multi-folio 0.005. Partly mechanical (hub MIDDLEs identical everywhere). Mean 2.3 restricted per folio	2	A, A↔B, PP, folio, restricted, discriminative	restricted_dist=0.520. multi_dist=0.005. d=3.667. p=7.3e-58.
+C1708	Folio category not specialized: FOLIO_CATEGORY_NOT_SPECIALIZED. Category entropy z=0.116 vs coverage-matched null. 73/114 neutral. Folios span all 8 categories equally. Recipe specialization fails	2	A, folio, category, entropy, specialization, negative	mean_z=0.116. real_H=2.830. null_H=2.816. neutral=73/114.
 
 ---
 

@@ -1,0 +1,60 @@
+{
+  "phase": 588,
+  "test": "RECIPE_SPECIFICATION_TEST",
+  "metadata": {
+    "n_folios": 114,
+    "n_pp_middles": 388,
+    "pp_pp_density": 0.08116891765896801,
+    "pp_pp_edges": 6094,
+    "mean_pp_pool_size": 37.30701754385965,
+    "hub_threshold": 12,
+    "n_hub_middles": 78,
+    "n_restricted_middles": 196,
+    "n_multi_middles": 90
+  },
+  "T1_content_bside": {
+    "n_pairs": 6441,
+    "pp_jaccard_mean": 0.29985895031676907,
+    "pp_jaccard_std": 0.061879699128548606,
+    "bside_cosine_mean": 0.9688579214540476,
+    "bside_cosine_std": 0.11580473797511101,
+    "raw_spearman_rho": 0.4703005629917547,
+    "raw_spearman_p": 0.0,
+    "partial_spearman_rho": 0.5018156021710478,
+    "partial_spearman_p": 0.0,
+    "within_section_rho": 0.4668873301121328,
+    "within_section_p": 1.7638866750149822e-69,
+    "between_section_rho": 0.4756071861157901,
+    "between_section_p": 1.765207377212166e-290,
+    "passed": true
+  },
+  "T2_restricted_pp": {
+    "n_qualifying": 19,
+    "restricted_mean_dist": 0.5197871722311252,
+    "multi_mean_dist": 0.0050362142127840775,
+    "U": 29241.0,
+    "p_one_sided": 7.2986357442905e-58,
+    "cohens_d": 3.667286477928029,
+    "passed": true,
+    "distinctiveness_rho": 0.0946697939084932,
+    "distinctiveness_p": 0.31638728733061583
+  },
+  "T3_specialization": {
+    "real_entropy_mean": 2.8296941326045233,
+    "real_entropy_std": 0.08989096905210672,
+    "null_entropy_mean": 2.815613262550813,
+    "mean_z": 0.1157052234348084,
+    "z_std": 0.9707557558248714,
+    "n_specialized": 3,
+    "n_neutral": 73,
+    "n_generalized": 0,
+    "real_gini_mean": 0.24702033981492508,
+    "null_gini_mean": 0.2583827252302436,
+    "verdict": "COVERAGE_MATCHED"
+  },
+  "verdict": "CONTENT_RELEVANT_NOT_SPECIALIZED",
+  "t1_pass": true,
+  "t2_pass": true,
+  "t3_verdict": "COVERAGE_MATCHED",
+  "runtime_seconds": 21.295673608779907
+}

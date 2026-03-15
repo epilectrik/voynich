@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1705 validated constraints | **Version:** 5.60 | **Date:** 2026-03-14
+**Total:** 1708 validated constraints | **Version:** 5.61 | **Date:** 2026-03-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5917,6 +5917,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - PREFIX filtering is counterproductive (C1700): Despite 35.2% of PREFIX*HEAD pairs being forbidden, applying this constraint reduces both clustering and edge overlap. This suggests PREFIX constraints serve purposes other than shaping line-level MIDDLE co-occurrence.
 - The residual is content, not grammar (C1701): The 0.234 gap reflects which specific MIDDLEs each line is "about" — irreducible content specificity that cannot be captured by structural deployment rules. Each line's MIDDLE selection encodes specific information.
 - C1695 reframing: C1695 attributed the manifold to "deployment grammar (B execution)." Phase 586 shows that even A-native deployment structure fails. The manifold reflects folio-specific CONTENT assignments, not grammar rules from any system.
+
+---
+
+### Phase 588: Recipe Specification Test — Application-Specific or Coverage Pool? (C1706-C1708)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1706 | PP content predicts B-side similarity: PP_CONTENT_PREDICTS_BSIDE. Partial Spearman rho=0.502 (controlling pool size, hub fraction, section) between folio PP Jaccard and B-side cosine similarity. Overturns C753's class-level null (r=-0.038). PP MIDDLE content genuinely predicts B-side operational similarity at token level. Signal is HIGHER after controlling for confounds (raw rho=0.470), meaning size/hub confounds suppress, not inflate. Within-section rho=0.467, between-section rho=0.476 | 2 | A, A↔B, PP, folio, B-side, content, correlation | partial_rho=0.502. raw_rho=0.470. p<1e-300. within_rho=0.467. between_rho=0.476. n_pairs=6441. |
+| 1707 | Restricted PP MIDDLEs carry discriminative power: RESTRICTED_PP_DISCRIMINATIVE. PP MIDDLEs appearing on ≤2 A folios produce between-folio B-side distances of 0.520 vs 0.005 for multi-folio PPs (≥10 folios). Cohen's d=3.667, p=7.3e-58. Partly mechanical: hub MIDDLEs produce near-identical signatures everywhere. Restricted PPs are rare (mean 2.3 per folio). N_restricted vs folio distinctiveness correlation weak (rho=0.095, p=0.316) | 2 | A, A↔B, PP, folio, restricted, discriminative | restricted_dist=0.520. multi_dist=0.005. d=3.667. p=7.3e-58. mean_restricted=2.3. |
+| 1708 | Folio category diversity matches coverage-optimized null: FOLIO_CATEGORY_NOT_SPECIALIZED. Category entropy z=0.116 vs coverage-matched null (hub-weighted random draws). 73/114 folios have |z|<1. Real entropy 2.830 ≈ null 2.816. Folios span all 8 operational categories equally, indistinguishable from coverage-optimized random draws. Recipe specialization prediction fails | 2 | A, folio, category, entropy, specialization, coverage, negative | mean_z=0.116. real_H=2.830. null_H=2.816. neutral_73/114. gini_real=0.247. gini_null=0.258. |
+
+**Phase 588 findings (Recipe Specification Test, CONTENT_RELEVANT_NOT_SPECIALIZED):**
+- PP content genuinely predicts B-side similarity (C1706): The class-level null (C753, r=-0.038) is overturned at token level. Partial rho=0.502 after controlling for pool size, hub fraction, and section. This is the strongest A→B content-level finding in the project. Confounds were suppressing, not inflating, the signal.
+- Folios are NOT categorically specialized (C1708): Every folio covers all 8 operational categories roughly equally. Category entropy is indistinguishable from coverage-matched random draws. The "recipe" label's specialization prediction fails.
+- Emerging interpretation: A folios are APPLICATION-SPECIFIC but CATEGORY-GENERIC. Each folio selects a specific cross-category combination of PP MIDDLEs that enables specific B programs, without concentrating in any single operational category. The specialization is in WHICH tokens from each category, not WHICH categories.
+- C753 refined: At class level (49 classes), PP content shows no predictive power (r=-0.038). At token level (16-dim B-side signature), PP content is strongly predictive (rho=0.502). The funnel topology (C708) absorbs content differences at class level but preserves them at token level.
 
 ---
 

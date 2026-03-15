@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.61 (2026-03-14) - Phase 588: Recipe Specification Test
+
+### Summary
+
+Phase 588 tests the crazy expert's "recipe specification" hypothesis: are A folios preparation specifications whose PP MIDDLE sets define which B programs can run? Three tests with proper controls: (1) PP content → B-side similarity controlling for pool size, hub fraction, and section; (2) folio-restricted PP discriminative power; (3) specialization vs generalization using coverage-matched null. Key finding: PP content genuinely predicts B-side similarity (partial rho=0.502), overturning C753's class-level null. But folios are NOT categorically specialized — entropy matches coverage-optimized random draws. Verdict: CONTENT_RELEVANT_NOT_SPECIALIZED. A folios are application-specific but category-generic.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/RECIPE_SPECIFICATION_TEST/` -- Phase 588 directory with script, results, INDEX |
+| **ADDED** | C1706: PP content predicts B-side -- partial rho=0.502, overturns C753 at token level |
+| **ADDED** | C1707: Restricted PP discriminative -- d=3.667, restricted PPs differentiate folios |
+| **ADDED** | C1708: Folio category not specialized -- entropy z=0.116, matches coverage-optimized null |
+| **UPDATED** | INDEX.md -- +3 constraints (1708 total), Phase 588 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.61, 1708 constraints, 588 phases) |
+| **REFINED** | C753 -- Class-level null (r=-0.038) overturned at token level (rho=0.502) |
+
+### Key Findings
+
+- **PP content is strongly predictive at token level (C1706):** Partial Spearman rho=0.502 between folio PP Jaccard and B-side cosine similarity, controlling for pool size, hub fraction, and section. This is the strongest A→B content-level finding. Confounds suppress the signal (raw rho=0.470), not inflate it. C753's class-level null (r=-0.038) is overturned.
+- **Folios are category-generic (C1708):** Category entropy z=0.116 vs coverage-matched null. 73/114 folios indistinguishable from random. Every folio covers all 8 categories equally. The "recipe" specialization prediction fails.
+- **Application-specific, not category-specific:** A folios select specific cross-category MIDDLE combinations that enable specific B programs. The specialization is in WHICH tokens from each category, not WHICH categories. This resolves the tension between C753 (no class-level signal) and C1705 (strong pair-level signal).
+
+---
+
 ## Version 5.60 (2026-03-14) - Phase 587: B-Side Operational Signatures
 
 ### Summary
