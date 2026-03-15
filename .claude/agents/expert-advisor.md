@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1720 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1723 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1720.
+the highest ID present is C1723.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1720 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1723 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1720 validated constraints are present as canonical one-line claims with tier
+1723 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-15 13:47
-**Version:** FROZEN STATE (1720 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-15 15:50
+**Version:** FROZEN STATE (1723 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1960,6 +1960,9 @@ C1717	Within-paragraph category diversity exceeds between-paragraph: WITHIN_PARA
 C1718	Residual is weakly HEAD-structured, hub-suppressed: HEAD_STRUCTURED_HUB_SUPPRESSED. The PP manifold's 0.234 residual gap (C1701) has genuine HEAD-domain assortativity. Hub removal (top 5% by degree) increases HEAD from 0.032 to 0.051, reveals frame at 0.033, flips category from -0.030 to +0.032. Low-frequency MIDDLEs show HEAD assortativity of 0.163. Domain structure is concentrated in the frequency tail and masked by cross-domain hub bridging	2	A, manifold, HEAD, assortativity, hub, C1701, C475
 C1719	Non-pipeline edges dominate the manifold residual: NON_PIPELINE_RESIDUAL. Of 6,074 residual edges (real minus D3 majority), non-pipeline edges carry 57.8%. D3 explains 86.4% of bridge-bridge co-occurrence (2095 to 284 residual) but only 1.1% of dark-dark (359 to 355) and 0.4% of non-pipeline-non-pipeline (243 to 242). Bridge triangles dominate the manifold's clique structure (28,969 of 29,153 homogeneous triangles). The frequency/folio model captures hub-mediated co-occurrence but fails for the long tail of domain-specific MIDDLEs	2	A, manifold, bridge, dark, pipeline, residual, C1701, C1139, C1140
 C1720	Low-frequency MIDDLEs show strongest compositional homophily: LOW_FREQ_HOMOPHILY. In residual edges, Q1 (lowest frequency quartile) has 56.9% same-terminal, 32.6% same-HEAD, 24.6% same-category. Q4 (highest frequency) has 25.3% same-terminal, 29.4% same-HEAD, 4.2% same-category. Low-frequency MIDDLEs co-occur preferentially with morphologically similar neighbors. High-frequency MIDDLEs connect promiscuously across domains, suppressing full-graph assortativity despite genuine tail structure	2	A, manifold, frequency, homophily, terminal, HEAD, category
+C1721	Terminal routing is section-parameterized, not folio-specific: ROUTING_SECTION_ONLY. Per-folio TERM→HEAD transition matrices (61 B folios, ≥100 transitions, 42-cell MIDDLE-atom vectors) do NOT discriminate folios within sections. ICC=0.0015 (≈0), token-shuffle null not exceeded. Within-section distance variance indistinguishable from noise in all 4 sections. Section structure real. C1570 criterion #1 NOT met. Strong length confound	2	B, routing, TERM, HEAD, section, folio, C1563, C1570
+C1722	Section-level routing correlates with apparatus manifold: ROUTING_APPARATUS_LINKED. TERM→HEAD routing distance (JSD) correlates with apparatus manifold distance across 57 B folios: Mantel r=0.279. Survives section control: partial Mantel r=0.212. Routing PC1 aligns with accent PC1 (dynamics intensity): rho=0.603 (q<1e-5). Routing PC3 aligns with accent PC3: rho=0.586. 4/24 routing-accent correlations FDR-significant	2	B, routing, apparatus, manifold, accent, Mantel, C1670, C1367
+C1723	Routing space is high-dimensional and bare-terminal dominated: ROUTING_HIGH_DIM. TERM→HEAD routing space has effective rank 11 (11 PCs for 90% variance), nearly double apparatus manifold effective rank (5.88). PC1 (26.3%) loads on bare→e (+0.55) and bare→k (+0.33); PC2 (21.5%) loads on y→headless (+0.62). Bare-terminal MIDDLEs contribute most cross-folio variance (0.0061 vs 0.0029 for y). m-terminal has near-zero variance (2.5e-5)	2	B, routing, PCA, TERM, bare, dimensionality, C1563
 
 ---
 

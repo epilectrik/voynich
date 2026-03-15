@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1720 validated constraints | **Version:** 5.65 | **Date:** 2026-03-15
+**Total:** 1723 validated constraints | **Version:** 5.66 | **Date:** 2026-03-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5951,6 +5951,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Section is not a confound (C1711): Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The A→manifold connection is intrinsic to PP content, not an artifact of section covariance.
 - Convergence with C1670: Folio accent predicts manifold position (C1670, r=0.871). PP content also predicts manifold position (C1709, r=0.42). Two independent predictors converge on the same B-side operational structure.
 - Tier 3 interpretive extension: The B-side manifold has been interpreted as apparatus configuration space (DISTILLATION, SEALED_VESSEL, etc.) at Tier 3. If that interpretation holds, C1709-C1711 constitute structural evidence that A folios parameterize apparatus type. This interpretive gloss is documented in INTERPRETATION_SUMMARY.md.
+
+---
+
+### Phase 593: Terminal Routing Folio Fingerprint — SECTION_ONLY / APPARATUS_LINKED (C1721-C1723)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1721 | Terminal routing is section-parameterized, not folio-specific: ROUTING_SECTION_ONLY. Per-folio TERM→HEAD transition matrices (61 B folios, ≥100 transitions, 42-cell MIDDLE-atom vectors) do NOT discriminate folios within sections. ICC=0.0015 (≈0), token-shuffle null not exceeded (p=0.539). Within-section distance variance indistinguishable from noise in all 4 sections (B: p=0.91, C: p=0.99, H: p=1.00, S: p=0.85). Section structure real (p=0.001, silhouette=0.15). C1570 criterion #1 NOT met. Strong length confound (rho=-0.635) | 2 | B, routing, TERM, HEAD, section, folio, C1563, C1570 | icc=0.0015. token_shuffle_p=0.539. sec_p=0.001. sil=0.15. length_rho=-0.635. n_folios=61. |
+| 1722 | Section-level routing correlates with apparatus manifold: ROUTING_APPARATUS_LINKED. TERM→HEAD routing distance (JSD) correlates with apparatus manifold distance across 57 B folios: Mantel r=0.279 (p=0.001). Survives section control: partial Mantel r=0.212 (p=0.001). Routing PC1 aligns with accent PC1 (dynamics intensity): rho=0.603 (q<1e-5). Routing PC3 aligns with accent PC3: rho=0.586. 4/24 routing-accent correlations FDR-significant | 2 | B, routing, apparatus, manifold, accent, Mantel, C1670, C1367 | mantel_r=0.279. partial_r=0.212. rPC1_aPC1=0.603. rPC3_aPC3=0.586. n_sig_fdr=4/24. n_folios=57. |
+| 1723 | Routing space is high-dimensional and bare-terminal dominated: ROUTING_HIGH_DIM. TERM→HEAD routing space has effective rank 11 (11 PCs for 90% variance), nearly double apparatus manifold effective rank (5.88). PC1 (26.3%) loads on bare→e (+0.55) and bare→k (+0.33); PC2 (21.5%) loads on y→headless (+0.62). Bare-terminal MIDDLEs contribute most cross-folio variance (0.0061 vs 0.0029 for y). m-terminal has near-zero variance (2.5e-5) | 2 | B, routing, PCA, TERM, bare, dimensionality, C1563 | eff_rank=11. PC1=0.263. PC2=0.215. bare_var=0.0061. y_var=0.0029. m_var=2.5e-5. |
+
+**Phase 593 findings (Terminal Routing Folio Fingerprint, SECTION_ONLY / APPARATUS_LINKED):**
+- Terminal routing does NOT fingerprint individual folios (C1721): The global routing grammar (C1563) homogenizes routing profiles so effectively that folios are MORE similar than independent token-shuffling produces (mean JSD 0.284 < null p99 0.289, p=0.539). ICC is essentially zero (0.0015). Within all 4 sections tested, folio distance variance is indistinguishable from the permutation null (all p > 0.84). C1570 criterion #1 is NOT met — even token-level routing features cannot discriminate folios within sections.
+- Section-level routing variation tracks apparatus configuration (C1722): Despite no folio-level signal, routing distance correlates with apparatus distance (Mantel r=0.279, p=0.001) and this survives section control (partial Mantel r=0.212, p=0.001). The dominant routing axis (rPC1: bare→e, bare→k transitions) aligns with the dominant accent axis (aPC1: dynamics intensity, rho=0.603). Apparatus configuration parameterizes how sections express the global routing grammar.
+- The routing space is high-dimensional (C1723): Effective rank 11 vs apparatus 5.88. "Bare" terminals (MIDDLEs without terminal atom) dominate the variance. m-terminal has near-zero variance (2.5e-5), consistent with m's rare, constrained role. The high dimensionality reflects the 42-cell measurement space dispersing weak section-level signal across many PCs.
+- Strong folio-length confound: rho=-0.635 (p<1e-7). Short folios appear artifactually distinctive. After length correction, effective rank drops from 11 to 8 and mean JSD drops from 0.284 to 0.083.
 
 ---
 

@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.66 (2026-03-15) - Phase 593: Terminal Routing Folio Fingerprint
+
+### Summary
+
+Phase 593 tests whether per-folio TERM→HEAD transition matrices (42-cell vectors from MIDDLE-atom decomposition) vary across 61 Currier B folios beyond noise and section effects. Six tests: PCA dimensionality (T0), transition matrix construction with sensitivity analysis (T1), permutation distance test with ICC and length confound (T2), within-section discrimination with REGIME confound (T3), Mantel and partial Mantel apparatus correlation (T4), accent PC correlations with FDR correction (T5). Verdict: **SECTION_ONLY / APPARATUS_LINKED**. The global routing grammar (C1563) homogenizes folios so effectively that ICC ≈ 0 and within-section discrimination fails in all 4 sections (all p > 0.84). C1570 criterion #1 NOT met. However, section-level routing variation correlates with apparatus manifold (partial Mantel r=0.212, p=0.001) and accent PC1 (rho=0.603).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/TERMINAL_ROUTING_FOLIO_FINGERPRINT/` -- Phase 593 directory with script, results, INDEX |
+| **ADDED** | C1721: Terminal routing is section-parameterized, not folio-specific -- ICC=0.0015, token-shuffle p=0.539, C1570 criterion #1 NOT met |
+| **ADDED** | C1722: Section-level routing correlates with apparatus manifold -- Mantel r=0.279, partial r=0.212 (section-controlled), rPC1×aPC1=0.603 |
+| **ADDED** | C1723: Routing space is high-dimensional and bare-terminal dominated -- effective rank 11, PC1 loads on bare→e/bare→k |
+| **UPDATED** | INDEX.md -- +3 constraints (1723 total), Phase 593 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.66, 1723 constraints, 593 phases) |
+
+### Key Findings
+
+- **Routing does NOT fingerprint folios (C1721):** The global grammar (C1563) makes folios MORE similar than random shuffling (mean JSD 0.284 < null p99 0.289). Within-section discrimination fails in all sections (B: p=0.91, C: p=0.99, H: p=1.00, S: p=0.85). C1570 criterion #1 is explicitly NOT met by this token-level feature.
+- **Section-level routing tracks apparatus (C1722):** Mantel r=0.279 (p=0.001) survives section control (partial r=0.212, p=0.001). Routing PC1 aligns with accent PC1 (dynamics intensity, rho=0.603). The apparatus configuration parameterizes how sections express the global routing grammar.
+- **Routing space is high-dimensional (C1723):** Effective rank 11 (vs apparatus 5.88). Bare-terminal MIDDLEs dominate variance. Strong folio-length confound (rho=-0.635) creates artifactual distinctiveness for short folios.
+- **REGIME does not fully explain within-section routing variation:** Only section H shows REGIME-mediated routing (ratio=0.78). Sections C and S show no REGIME effect. But within-section variation is noise regardless.
+
+---
+
 ## Version 5.65 (2026-03-15) - Phase 592: PP Manifold Residual Characterization
 
 ### Summary
