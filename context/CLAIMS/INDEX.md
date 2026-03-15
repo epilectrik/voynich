@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1708 validated constraints | **Version:** 5.61 | **Date:** 2026-03-14
+**Total:** 1711 validated constraints | **Version:** 5.62 | **Date:** 2026-03-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5933,6 +5933,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Folios are NOT categorically specialized (C1708): Every folio covers all 8 operational categories roughly equally. Category entropy is indistinguishable from coverage-matched random draws. The "recipe" label's specialization prediction fails.
 - Emerging interpretation: A folios are APPLICATION-SPECIFIC but CATEGORY-GENERIC. Each folio selects a specific cross-category combination of PP MIDDLEs that enables specific B programs, without concentrating in any single operational category. The specialization is in WHICH tokens from each category, not WHICH categories.
 - C753 refined: At class level (49 classes), PP content shows no predictive power (r=-0.038). At token level (16-dim B-side signature), PP content is strongly predictive (rho=0.502). The funnel topology (C708) absorbs content differences at class level but preserves them at token level.
+
+---
+
+### Phase 589: Apparatus Configuration Test — PP Content Predicts B-Side Manifold (C1709-C1711)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1709 | PP MIDDLE distance predicts B-side manifold position: PP_MANIFOLD_CORRELATION. Mantel test on 114 A folio pairs: PP Jaccard distance vs coverage-weighted B-side manifold centroid distance yields r=0.4226 (p<0.0001, null std=0.044). Partial Mantel controlling pool size + section: r=0.4062. Bridge-dominant pipeline: bridge PP r=0.4278 > full > dark PP r=0.2047. Bridge MIDDLEs (77% of PP pool) carry the dominant signal | 2 | A→B, PP, manifold, bridge, dark-pipeline, Mantel | mantel_r=0.4226. partial_r=0.4062. bridge_r=0.4278. dark_r=0.2047. null_std=0.044. |
+| 1710 | PP composition predicts three B-side manifold axes: PP_AXIS_PREDICTION. 3/10 axes significant after Bonferroni (rho>0.2, p<0.005): F4_raw rho=-0.340 (headless infrastructure), SUSTAINED_HEAT rho=-0.227, DIRECT_FIRE rho=-0.224. 7/10 axes non-significant. Bridge and dark each independently predict 3/10 axes. Prediction is partial not comprehensive | 2 | A→B, PP, manifold, prediction, axis | sig_axes=3/10. F4_rho=-0.340. SH_rho=-0.227. DF_rho=-0.224. bonferroni=10. |
+| 1711 | PP-manifold correlation is section-independent: PP_MANIFOLD_SECTION_INDEPENDENT. Within-section Spearman rho=0.381 (p=4.8e-45, 1265 pairs). Between-section rho=0.390 (5176 pairs). Per-axis partial correlations change max 0.019 after section control. Signal is intrinsic to PP content, not section composition | 2 | A→B, PP, manifold, section, independence | within_rho=0.381. within_p=4.8e-45. between_rho=0.390. max_change=0.019. |
+
+**Phase 589 findings (Apparatus Configuration Test, APPARATUS_CONFIGURATION_SUPPORTED):**
+- PP MIDDLE content genuinely predicts B-side operational manifold position (C1709): Mantel r=0.42 is nearly 10 standard deviations above the null. This extends C1706 (token-level PP→B-side prediction, rho=0.50) from B-side signatures to B-side manifold positions. Together they establish that A folio PP content specifies WHERE in B operational space the folio points.
+- Bridge MIDDLEs carry the apparatus signal (C1709): The 85 bridge MIDDLEs (C1139) that enter B programs carry the dominant manifold signal (r=0.43), while 300 dark MIDDLEs contribute a weaker secondary signal (r=0.20). Bridge+dark account for 99.6% of all PP MIDDLEs.
+- Prediction is partial and axis-specific (C1710): Only 3/10 manifold axes respond significantly to PP composition. F4_raw (headless infrastructure) is the strongest. This means PP content constrains specific operational dimensions, not the full manifold.
+- Section is not a confound (C1711): Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The A→manifold connection is intrinsic to PP content, not an artifact of section covariance.
+- Convergence with C1670: Folio accent predicts manifold position (C1670, r=0.871). PP content also predicts manifold position (C1709, r=0.42). Two independent predictors converge on the same B-side operational structure.
+- Tier 3 interpretive extension: The B-side manifold has been interpreted as apparatus configuration space (DISTILLATION, SEALED_VESSEL, etc.) at Tier 3. If that interpretation holds, C1709-C1711 constitute structural evidence that A folios parameterize apparatus type. This interpretive gloss is documented in INTERPRETATION_SUMMARY.md.
 
 ---
 

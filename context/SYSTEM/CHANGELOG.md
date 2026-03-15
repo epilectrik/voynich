@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.62 (2026-03-14) - Phase 589: Apparatus Configuration Test
+
+### Summary
+
+Phase 589 tests whether A folio PP MIDDLE content predicts B-side operational manifold position — connecting A content to B operational structure through coverage-weighted centroids. Uses bridge/dark decomposition (C1139) to identify which pipeline carries the signal. Three tests: (1) Mantel test of PP distance vs manifold centroid distance; (2) 10-axis prediction (F-parameters + apparatus profiles) with Bonferroni correction; (3) section mediation test. Key finding: PP similarity strongly predicts manifold distance (Mantel r=0.42, p<0.0001), bridge MIDDLEs dominate (r=0.43 > dark r=0.20), and the signal is section-independent (within-section rho=0.38). Verdict: APPARATUS_CONFIGURATION_SUPPORTED. Constraints registered at Tier 2 (structural); the apparatus interpretation is Tier 3.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/APPARATUS_CONFIGURATION_TEST/` -- Phase 589 directory with script, results, INDEX |
+| **ADDED** | C1709: PP manifold correlation -- Mantel r=0.4226, bridge-dominant (r=0.4278 > dark r=0.2047), partial r=0.4062 |
+| **ADDED** | C1710: PP axis prediction -- 3/10 axes significant (F4_raw rho=-0.340, SUSTAINED_HEAT rho=-0.227, DIRECT_FIRE rho=-0.224) |
+| **ADDED** | C1711: PP-manifold section-independent -- within-section rho=0.381 (p=4.8e-45), max change 0.019 after control |
+| **UPDATED** | INDEX.md -- +3 constraints (1711 total), Phase 589 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.62, 1711 constraints, 589 phases) |
+
+### Key Findings
+
+- **PP content predicts B-side manifold position (C1709):** Mantel r=0.42, nearly 10 standard deviations above the null (std=0.044). Partial Mantel controlling pool size + section barely diminishes it (r=0.41). This extends C1706 (PP→B-side similarity, rho=0.50) from B-side signatures to continuous manifold positions.
+- **Bridge MIDDLEs carry the signal (C1709):** The 85 bridge MIDDLEs (77% of PP pool) carry the dominant manifold signal (r=0.43). The 300 dark MIDDLEs contribute weaker secondary signal (r=0.20). Bridge+dark = 99.6% of all PP MIDDLEs. Zero overlap confirmed (C1139).
+- **Prediction is axis-specific (C1710):** Only 3/10 manifold axes respond significantly to PP composition. F4_raw (headless infrastructure) is the strongest (rho=-0.34). PP content constrains specific operational dimensions, not the full manifold.
+- **Section does not mediate (C1711):** Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The PP→manifold connection is intrinsic to PP content.
+- **Convergence with C1670:** Two independent predictors (PP content and folio accent) converge on the same B-side manifold position.
+- **Tier discipline:** Structural finding (Mantel correlations, bridge dominance, section independence) registered at Tier 2. The interpretive claim that the manifold represents "apparatus configuration" remains Tier 3.
+
+---
+
 ## Version 5.61 (2026-03-14) - Phase 588: Recipe Specification Test
 
 ### Summary

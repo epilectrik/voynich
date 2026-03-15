@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1661 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1708.
+the highest ID present is C1711.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2034,6 +2034,9 @@ C1705	C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRM
 C1706	PP content predicts B-side similarity: PP_CONTENT_PREDICTS_BSIDE. Partial Spearman rho=0.502 (controlling size, hub, section). Overturns C753 class-level null (r=-0.038). Confounds suppress not inflate	2	A, A↔B, PP, folio, B-side, content, correlation	partial_rho=0.502. raw_rho=0.470. p<1e-300. within_rho=0.467.
 C1707	Restricted PP MIDDLEs carry discriminative power: RESTRICTED_PP_DISCRIMINATIVE. Restricted-PP between-folio distance 0.520 vs multi-folio 0.005. Partly mechanical (hub MIDDLEs identical everywhere). Mean 2.3 restricted per folio	2	A, A↔B, PP, folio, restricted, discriminative	restricted_dist=0.520. multi_dist=0.005. d=3.667. p=7.3e-58.
 C1708	Folio category not specialized: FOLIO_CATEGORY_NOT_SPECIALIZED. Category entropy z=0.116 vs coverage-matched null. 73/114 neutral. Folios span all 8 categories equally. Recipe specialization fails	2	A, folio, category, entropy, specialization, negative	mean_z=0.116. real_H=2.830. null_H=2.816. neutral=73/114.
+C1709	PP MIDDLE distance predicts B-side manifold position: PP_MANIFOLD_CORRELATION. Mantel r=0.4226 (p<0.0001, null std=0.044). Partial Mantel (size+section) r=0.4062. Bridge-dominant: bridge r=0.4278 > dark r=0.2047. Bridge MIDDLEs (77% of PP pool) carry dominant signal	2	A→B, PP, manifold, bridge, dark-pipeline, Mantel	mantel_r=0.4226. partial_r=0.4062. bridge_r=0.4278. dark_r=0.2047. null_std=0.044.
+C1710	PP composition predicts three B-side manifold axes: PP_AXIS_PREDICTION. 3/10 axes significant after Bonferroni: F4_raw rho=-0.340, SUSTAINED_HEAT rho=-0.227, DIRECT_FIRE rho=-0.224. 7/10 non-significant. Prediction partial not comprehensive	2	A→B, PP, manifold, prediction, axis	sig_axes=3/10. F4_rho=-0.340. SH_rho=-0.227. DF_rho=-0.224. bonferroni=10.
+C1711	PP-manifold correlation is section-independent: PP_MANIFOLD_SECTION_INDEPENDENT. Within-section rho=0.381 (p=4.8e-45, 1265 pairs). Between-section rho=0.390. Per-axis partial change max 0.019. Signal intrinsic to PP content	2	A→B, PP, manifold, section, independence	within_rho=0.381. within_p=4.8e-45. between_rho=0.390. max_change=0.019.
 
 ---
 
