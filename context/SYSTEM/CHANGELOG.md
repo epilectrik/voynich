@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.65 (2026-03-15) - Phase 592: PP Manifold Residual Characterization
+
+### Summary
+
+Phase 592 characterizes the 0.234 manifold gap (C1701) — the 27% of the PP discrimination manifold's structure unexplained by the best deployment model (D3). Six tests: HEAD/category/terminal/frame assortativity with two-gate significance, pipeline partition with triangle analysis, residual edge characterization with frequency stratification, community-attribute alignment. Hub-removed robustness, partial assortativity decomposition, and frequency stratification as controls. Verdict: **MULTI_AXIS** (HEAD + frame pass both gates). The primary finding is that HEAD domain provides weak but genuine residual structure (r=0.032), concentrated in the frequency tail (low-freq HEAD r=0.163) and masked by cross-domain hub bridging.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PP_MANIFOLD_RESIDUAL_CHARACTERIZATION/` -- Phase 592 directory with script, results, INDEX |
+| **ADDED** | C1718: Residual is weakly HEAD-structured, hub-suppressed -- HEAD r=0.032, hub-removed 0.051, low-freq 0.163 |
+| **ADDED** | C1719: Non-pipeline edges dominate manifold residual -- 57.8% of residual, D3 explains 86% bridge-bridge but 1% dark-dark |
+| **ADDED** | C1720: Low-frequency MIDDLEs show strongest compositional homophily -- Q1 same-terminal 57% vs Q4 25% |
+| **UPDATED** | INDEX.md -- +3 constraints (1720 total), Phase 592 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.65, 1720 constraints, 592 phases) |
+
+### Key Findings
+
+- **HEAD is the only axis with genuine residual assortativity (C1718):** Passes both significance gates (p<0.001 vs null, exceeds D3 max). But the signal is weak (r=0.032) because high-degree hub MIDDLEs bridge across HEAD domains. Hub removal strengthens HEAD from 0.032 to 0.051 and reveals frame (0.033) and category (0.032).
+- **Non-pipeline edges carry the residual (C1719):** D3 explains 86% of bridge-bridge but only 1% of dark-dark co-occurrence. The frequency/folio model succeeds for hubs (which are mostly bridge MIDDLEs) and fails for the long tail. 57.8% of the residual is non-pipeline edges.
+- **Compositional homophily is frequency-stratified (C1720):** Low-frequency MIDDLEs have 57% same-terminal residual edges vs 25% for high-frequency. Domain structure lives in the frequency tail — rare MIDDLEs co-occur with morphologically similar neighbors while frequent MIDDLEs connect everywhere.
+- **Category/terminal are DISassortative in the full graph:** This reverses under hub removal, confirming that hubs create cross-domain bridges that dominate the graph's edge structure.
+
+---
+
 ## Version 5.64 (2026-03-15) - Phase 591: Paragraph Category Trajectory
 
 ### Summary

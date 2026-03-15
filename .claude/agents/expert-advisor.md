@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1717 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1720 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1717.
+the highest ID present is C1720.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1717 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1720 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1717 validated constraints are present as canonical one-line claims with tier
+1720 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-15 09:53
-**Version:** FROZEN STATE (1717 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-15 13:47
+**Version:** FROZEN STATE (1720 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1957,6 +1957,9 @@ C1714	REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstr
 C1715	PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features yields 12 PCs at 95% variance. PC1 (32%) loads on qo_frac (+0.326), headless_frac (-0.306), k_frac (+0.304). PC2 (17%) loads on suffix_rate (+0.348), mean_middle_length (+0.346), e_frac (+0.325). First two PCs capture 49% of variance and correspond to known structural axes	2	B, PCA, PREFIX, kernel, folio
 C1716	Category trajectory flat at 8-category resolution: CATEGORY_TRAJECTORY_FLAT. Body lines within paragraphs show no systematic category trajectory after length control. 0/8 categories significant at Bonferroni alpha=0.00625, both pooled and within-section. Largest partial rho: -0.042. No serial dependence: lag-1 autocorrelation on category PC1 = -0.13. All 8 categories collapse under kernel control (T6). Extends C963 from role-fraction level to 8-category (C1250) resolution	2	B, paragraph, body, category, trajectory, position, C963, C1250, C965
 C1717	Within-paragraph category diversity exceeds between-paragraph: WITHIN_PARA_JSD_HIGHER. Within-paragraph body-line JSD on 8-category vector (0.209) exceeds between-paragraph-same-folio JSD (0.188), ratio=1.11. Cross-folio JSD=0.241. Paragraph identity does NOT constrain body-line category composition beyond the folio template. Folio shuffle null JSD=0.212; within-paragraph below null in 0/100 permutations. Extends C963 and C1288	2	B, paragraph, body, JSD, category, folio, C963, C1288
+C1718	Residual is weakly HEAD-structured, hub-suppressed: HEAD_STRUCTURED_HUB_SUPPRESSED. The PP manifold's 0.234 residual gap (C1701) has genuine HEAD-domain assortativity. Hub removal (top 5% by degree) increases HEAD from 0.032 to 0.051, reveals frame at 0.033, flips category from -0.030 to +0.032. Low-frequency MIDDLEs show HEAD assortativity of 0.163. Domain structure is concentrated in the frequency tail and masked by cross-domain hub bridging	2	A, manifold, HEAD, assortativity, hub, C1701, C475
+C1719	Non-pipeline edges dominate the manifold residual: NON_PIPELINE_RESIDUAL. Of 6,074 residual edges (real minus D3 majority), non-pipeline edges carry 57.8%. D3 explains 86.4% of bridge-bridge co-occurrence (2095 to 284 residual) but only 1.1% of dark-dark (359 to 355) and 0.4% of non-pipeline-non-pipeline (243 to 242). Bridge triangles dominate the manifold's clique structure (28,969 of 29,153 homogeneous triangles). The frequency/folio model captures hub-mediated co-occurrence but fails for the long tail of domain-specific MIDDLEs	2	A, manifold, bridge, dark, pipeline, residual, C1701, C1139, C1140
+C1720	Low-frequency MIDDLEs show strongest compositional homophily: LOW_FREQ_HOMOPHILY. In residual edges, Q1 (lowest frequency quartile) has 56.9% same-terminal, 32.6% same-HEAD, 24.6% same-category. Q4 (highest frequency) has 25.3% same-terminal, 29.4% same-HEAD, 4.2% same-category. Low-frequency MIDDLEs co-occur preferentially with morphologically similar neighbors. High-frequency MIDDLEs connect promiscuously across domains, suppressing full-graph assortativity despite genuine tail structure	2	A, manifold, frequency, homophily, terminal, HEAD, category
 
 ---
 

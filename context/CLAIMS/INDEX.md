@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1717 validated constraints | **Version:** 5.64 | **Date:** 2026-03-15
+**Total:** 1720 validated constraints | **Version:** 5.65 | **Date:** 2026-03-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5951,6 +5951,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Section is not a confound (C1711): Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The A→manifold connection is intrinsic to PP content, not an artifact of section covariance.
 - Convergence with C1670: Folio accent predicts manifold position (C1670, r=0.871). PP content also predicts manifold position (C1709, r=0.42). Two independent predictors converge on the same B-side operational structure.
 - Tier 3 interpretive extension: The B-side manifold has been interpreted as apparatus configuration space (DISTILLATION, SEALED_VESSEL, etc.) at Tier 3. If that interpretation holds, C1709-C1711 constitute structural evidence that A folios parameterize apparatus type. This interpretive gloss is documented in INTERPRETATION_SUMMARY.md.
+
+---
+
+### Phase 592: PP Manifold Residual Characterization — MULTI_AXIS (C1718-C1720)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1718 | Residual is weakly HEAD-structured, hub-suppressed: HEAD_STRUCTURED_HUB_SUPPRESSED. The PP manifold's 0.234 residual gap (C1701) has genuine HEAD-domain assortativity (r=0.032, p<0.001 vs permutation null, exceeds max D3 seed 0.030). Hub removal (top 5% by degree) increases HEAD from 0.032 to 0.051, reveals frame at 0.033, flips category from -0.030 to +0.032. Low-frequency MIDDLEs show HEAD assortativity of 0.163. Domain structure is concentrated in the frequency tail and masked by cross-domain hub bridging | 2 | A, manifold, HEAD, assortativity, hub, C1701, C475 | head_r=0.032. head_p<0.001. head_hub_removed=0.051. head_low_freq=0.163. frame_hub_removed=0.033. cat_full=-0.030. cat_hub_removed=+0.032. |
+| 1719 | Non-pipeline edges dominate the manifold residual: NON_PIPELINE_RESIDUAL. Of 6,074 residual edges (real minus D3 majority), non-pipeline edges carry 57.8%. D3 explains 86.4% of bridge-bridge co-occurrence (2095 to 284 residual) but only 1.1% of dark-dark (359 to 355) and 0.4% of non-pipeline-non-pipeline (243 to 242). Bridge triangles dominate the manifold's clique structure (28,969 of 29,153 homogeneous triangles). The frequency/folio model captures hub-mediated co-occurrence but fails for the long tail of domain-specific MIDDLEs | 2 | A, manifold, bridge, dark, pipeline, residual, C1701, C1139, C1140 | n_residual=6074. nonpipeline_frac=0.578. bb_explained=0.864. dd_explained=0.011. nn_explained=0.004. bridge_tri=28969. |
+| 1720 | Low-frequency MIDDLEs show strongest compositional homophily: LOW_FREQ_HOMOPHILY. In residual edges, Q1 (lowest frequency quartile) has 56.9% same-terminal, 32.6% same-HEAD, 24.6% same-category. Q4 (highest frequency) has 25.3% same-terminal, 29.4% same-HEAD, 4.2% same-category. Low-frequency MIDDLEs co-occur preferentially with morphologically similar neighbors. High-frequency MIDDLEs connect promiscuously across domains, suppressing full-graph assortativity despite genuine tail structure | 2 | A, manifold, frequency, homophily, terminal, HEAD, category | q1_same_term=0.569. q4_same_term=0.253. q1_same_head=0.326. q4_same_head=0.294. q1_same_cat=0.246. q4_same_cat=0.042. |
+
+**Phase 592 findings (PP Manifold Residual Characterization, MULTI_AXIS — HEAD + frame):**
+- HEAD is the only axis with genuine residual assortativity passing both gates (C1718): r=0.032, p<0.001 vs permutation null, exceeds max D3 seed. Frame barely passes (r=0.0001 vs null p95=-0.0007). Category and terminal are DISassortative in the full graph.
+- Hub suppression is the dominant effect (C1718): Removing top-5% by degree nodes reveals the true domain structure. HEAD goes from 0.032 to 0.051, category flips from -0.030 to +0.032, frame from 0.000 to 0.033. Hubs are cross-domain connectors that create the manifold's high clustering (0.873) while masking within-domain preference.
+- Non-pipeline edges carry the residual (C1719): D3 explains bridge-bridge co-occurrence well (86%) but fails entirely for dark-dark (1%) and non-pipeline (0.4%). The 0.234 gap is about the frequency model's failure for rare, domain-specific MIDDLEs, not about bridge MIDDLEs.
+- Compositional homophily is frequency-stratified (C1720): Low-frequency residual edges are strongly same-terminal (57% vs 25%) and same-category (25% vs 4%). The domain structure lives in the frequency tail.
+- Communities weakly align with HEAD (T6): Louvain produces 21 communities (not the original 3 from C1069); HEAD alignment is significant but weak (chi2=63.1, p=0.038, V=0.127).
 
 ---
 

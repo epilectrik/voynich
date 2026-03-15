@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1717.
+the highest ID present is C1720.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2043,6 +2043,9 @@ C1714	REGIME assignment bootstrap stability 0.76-0.80: REGIME_STABILITY. Bootstr
 C1715	PC1 is PREFIX/kernel axis (32% variance): PC1_PREFIX_KERNEL. PCA on 22 folio features: PC1 (32%) loads qo_frac(+0.326), headless_frac(-0.306), k_frac(+0.304). PC2 (17%) loads suffix_rate(+0.348), mean_middle_length(+0.346), e_frac(+0.325). First 2 PCs = 49%	2	B, PCA, PREFIX, kernel, folio	PC1_var=0.32. PC2_var=0.17. cum_2PC=0.49. n_PCs=12. n_features=22.
 C1716	Category trajectory flat at 8-category resolution: CATEGORY_TRAJECTORY_FLAT. 0/8 categories show significant trajectory after length control (Bonferroni alpha=0.00625), pooled and within-section. Max partial rho=-0.042 (MARKING, p=0.20). No serial dependence: lag-1 autocorrelation PC1=-0.13 (shuffle p=0.69). All 8 collapse under kernel control. Extends C963 to 8-category (C1250) resolution	2	B, paragraph, body, category, trajectory, C963, C1250	n_sig=0/8. max_rho=-0.042. lag1_r=-0.13. kernel_survive=0/8. N=914.
 C1717	Within-paragraph category diversity exceeds between-paragraph: WITHIN_PARA_JSD_HIGHER. Within-paragraph body-line JSD on 8-category vector (0.209) > between-paragraph-same-folio JSD (0.188), ratio=1.11. Cross-folio JSD=0.241. Paragraph identity does NOT constrain body-line category composition. Extends C963 and C1288	2	B, paragraph, body, JSD, category, C963, C1288	within_jsd=0.209. between_jsd=0.188. ratio=1.11. cross_folio=0.241.
+C1718	Residual is weakly HEAD-structured, hub-suppressed: HEAD_STRUCTURED_HUB_SUPPRESSED. PP manifold 0.234 residual gap (C1701) has HEAD assortativity r=0.032 (p<0.001, exceeds D3 max). Hub removal (top 5%) increases HEAD 0.032->0.051, flips category -0.030->+0.032, reveals frame 0.033. Low-freq HEAD r=0.163. Domain structure in frequency tail, masked by cross-domain hub bridging	2	A, manifold, HEAD, assortativity, hub, C1701, C475	head_r=0.032. head_hub_removed=0.051. head_low_freq=0.163. cat_full=-0.030. cat_hub_removed=+0.032.
+C1719	Non-pipeline edges dominate manifold residual: NON_PIPELINE_RESIDUAL. Of 6074 residual edges (real-D3), non-pipeline carry 57.8%. D3 explains 86.4% bridge-bridge (2095->284) but 1.1% dark-dark (359->355), 0.4% nonpipeline-nonpipeline (243->242). Bridge triangles dominate clique structure (28969/29153 homogeneous). Frequency model captures hubs, fails for long tail	2	A, manifold, bridge, dark, pipeline, residual, C1701, C1139	n_residual=6074. nonpipeline_frac=0.578. bb_explained=0.864. dd_explained=0.011.
+C1720	Low-frequency MIDDLEs show strongest compositional homophily: LOW_FREQ_HOMOPHILY. Residual edges Q1 (lowest freq): 56.9% same-terminal, 32.6% same-HEAD, 24.6% same-category. Q4 (highest): 25.3% same-terminal, 29.4% same-HEAD, 4.2% same-category. Low-freq MIDDLEs co-occur with morphologically similar neighbors; high-freq connect promiscuously across domains	2	A, manifold, frequency, homophily, terminal, HEAD	q1_same_term=0.569. q4_same_term=0.253. q1_same_head=0.326. q4_same_cat=0.042.
 
 ---
 
