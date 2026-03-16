@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1723 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1726 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1723.
+the highest ID present is C1726.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1723 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1726 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1723 validated constraints are present as canonical one-line claims with tier
+1726 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-15 15:50
-**Version:** FROZEN STATE (1723 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-15 20:45
+**Version:** FROZEN STATE (1726 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1963,6 +1963,9 @@ C1720	Low-frequency MIDDLEs show strongest compositional homophily: LOW_FREQ_HOM
 C1721	Terminal routing is section-parameterized, not folio-specific: ROUTING_SECTION_ONLY. Per-folio TERM→HEAD transition matrices (61 B folios, ≥100 transitions, 42-cell MIDDLE-atom vectors) do NOT discriminate folios within sections. ICC=0.0015 (≈0), token-shuffle null not exceeded. Within-section distance variance indistinguishable from noise in all 4 sections. Section structure real. C1570 criterion #1 NOT met. Strong length confound	2	B, routing, TERM, HEAD, section, folio, C1563, C1570
 C1722	Section-level routing correlates with apparatus manifold: ROUTING_APPARATUS_LINKED. TERM→HEAD routing distance (JSD) correlates with apparatus manifold distance across 57 B folios: Mantel r=0.279. Survives section control: partial Mantel r=0.212. Routing PC1 aligns with accent PC1 (dynamics intensity): rho=0.603 (q<1e-5). Routing PC3 aligns with accent PC3: rho=0.586. 4/24 routing-accent correlations FDR-significant	2	B, routing, apparatus, manifold, accent, Mantel, C1670, C1367
 C1723	Routing space is high-dimensional and bare-terminal dominated: ROUTING_HIGH_DIM. TERM→HEAD routing space has effective rank 11 (11 PCs for 90% variance), nearly double apparatus manifold effective rank (5.88). PC1 (26.3%) loads on bare→e (+0.55) and bare→k (+0.33); PC2 (21.5%) loads on y→headless (+0.62). Bare-terminal MIDDLEs contribute most cross-folio variance (0.0061 vs 0.0029 for y). m-terminal has near-zero variance (2.5e-5)	2	B, routing, PCA, TERM, bare, dimensionality, C1563
+C1724	Routing grammar is position-invariant (MARGINAL_PRODUCT). TERM×HEAD×Quintile three-way interaction not significant. Routing varies by line position (Q4 JSD vs global=0.0209, 14x Q2's 0.0012) but entirely explained by independent positional marginals P(TERM|Q) × P(HEAD|Q). Global routing grammar (C1563) applies uniformly across all line positions. Specification→work→closure arc (C1425-C1430) produced by compositional change, not position-dependent routing rules. Universal across all 4 sections and all line-length strata	2	B, routing, position, quintile, TERM, HEAD, line, C1563, C1425, C1721
+C1725	Closure zone has strongest routing discrimination (mild synergy). Position-conditional MI decomposition: interaction MI=-0.0044 bits (-7.9% of total 0.0552 bits), SYNERGY. Within each quintile, TERM→HEAD associations slightly stronger than aggregate. Q4 (closure) has highest per-quintile MI (0.0714 bits) vs Q1 (0.0496 bits). Reflects sharp compositional focus of closure: fewer active TERM/HEAD types allow grammar to discriminate more sharply among reduced options. Synergy is small (7.9%) — grammar fundamentally position-invariant (C1724)	2	B, routing, MI, synergy, closure, position, C1724, C1566
+C1726	Per-rule activation profiles are compositionally driven. Individual routing rules show significant positional trends despite overall three-way interaction being non-significant: l→e declines Q0→Q4, m→o rises Q0→Q4, n→k declines Q0→Q4. Strongest per-quintile enrichment: r→a at Q4 (3.87x vs 2.23x global). Trends explained by compositional change: more r-terminal and a-HEAD at Q4 → r→a rises. No globally depleted rule becomes enriched at any quintile (T6: no position-specific exceptions). Grammar applies uniformly; profiles are readout of positional composition	2	B, routing, activation, rules, position, composition, C1563, C1724, C1671
 
 ---
 

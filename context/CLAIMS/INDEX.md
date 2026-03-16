@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1723 validated constraints | **Version:** 5.66 | **Date:** 2026-03-15
+**Total:** 1726 validated constraints | **Version:** 5.67 | **Date:** 2026-03-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5951,6 +5951,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Section is not a confound (C1711): Within-section and between-section correlations are nearly identical (0.38 vs 0.39). The A→manifold connection is intrinsic to PP content, not an artifact of section covariance.
 - Convergence with C1670: Folio accent predicts manifold position (C1670, r=0.871). PP content also predicts manifold position (C1709, r=0.42). Two independent predictors converge on the same B-side operational structure.
 - Tier 3 interpretive extension: The B-side manifold has been interpreted as apparatus configuration space (DISTILLATION, SEALED_VESSEL, etc.) at Tier 3. If that interpretation holds, C1709-C1711 constitute structural evidence that A folios parameterize apparatus type. This interpretive gloss is documented in INTERPRETATION_SUMMARY.md.
+
+---
+
+### Phase 594: Within-Line Atom Sequence Grammar — MARGINAL_PRODUCT (C1724-C1726)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1724 | Routing grammar is position-invariant (MARGINAL_PRODUCT). TERM×HEAD×Quintile three-way interaction not significant (G²=144.61, df=120, shuffle p=0.069, Cramér's V=0.084). Routing varies by line position (Q4 JSD vs global=0.0209, 14x Q2's 0.0012) but entirely explained by independent positional marginals P(TERM|Q) × P(HEAD|Q). Global routing grammar (C1563) applies uniformly across all line positions. Specification→work→closure arc (C1425-C1430) produced by compositional change, not position-dependent routing rules. Universal across all 4 sections and all line-length strata | 2 | B, routing, position, quintile, TERM, HEAD, line, C1563, C1425, C1721 | G2=144.61. df=120. shuffle_p=0.069. cramers_v=0.084. Q4_jsd=0.0209. Q2_jsd=0.0012. n_pairs=20668. |
+| 1725 | Closure zone has strongest routing discrimination (mild synergy). Position-conditional MI decomposition: interaction MI=-0.0044 bits (-7.9% of total 0.0552 bits), SYNERGY. Within each quintile, TERM→HEAD associations slightly stronger than aggregate. Q4 (closure) has highest per-quintile MI (0.0714 bits) vs Q1 (0.0496 bits). Reflects sharp compositional focus of closure: fewer active TERM/HEAD types allow grammar to discriminate more sharply among reduced options. Synergy is small (7.9%) — grammar fundamentally position-invariant (C1724) | 2 | B, routing, MI, synergy, closure, position, C1724, C1566 | mi_total=0.0552. mi_interaction=-0.0044. interaction_frac=-0.079. mi_Q4=0.0714. mi_Q1=0.0496. |
+| 1726 | Per-rule activation profiles are compositionally driven. Individual routing rules show significant positional trends despite overall three-way interaction being non-significant: l→e declines Q0→Q4 (rho=-0.90, p=0.037), m→o rises Q0→Q4 (rho=+0.90, p=0.037), n→k declines Q0→Q4 (rho=-0.90, p=0.037). Strongest per-quintile enrichment: r→a at Q4 (3.87x vs 2.23x global). Trends explained by compositional change: more r-terminal and a-HEAD at Q4 → r→a rises. No globally depleted rule becomes enriched at any quintile (T6: no position-specific exceptions). Grammar applies uniformly; profiles are readout of positional composition | 2 | B, routing, activation, rules, position, composition, C1563, C1724, C1671 | l_e_rho=-0.90. m_o_rho=+0.90. n_k_rho=-0.90. r_a_Q4=3.87. h_t_Q2=2.66. n_modulated=3/10. |
+
+**Phase 594 findings (Within-Line Atom Sequence Grammar, MARGINAL_PRODUCT):**
+- The routing grammar is position-invariant (C1724): G²=144.61 for the three-way interaction, but shuffle p=0.069 (not significant). The routing variation across line positions is dramatic (Q4 JSD=0.021, 14x the interior) but fully explained by the two-way marginals. The specification→work→closure arc is produced by *compositional change* — different TERMs and HEADs are available at each position, and the same routing grammar acts on them.
+- Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
+- Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
+- Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
 
 ---
 

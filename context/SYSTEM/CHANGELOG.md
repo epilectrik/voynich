@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.67 (2026-03-15) - Phase 594: Within-Line Atom Sequence Grammar
+
+### Summary
+
+Phase 594 tests whether the TERM→HEAD routing grammar (C1563) varies by line position (quintile Q0-Q4) beyond what the independent positional marginals predict. Six tests: per-quintile routing matrices with global and local-marginal enrichment (T1), log-linear G² three-way interaction test with quintile-shuffle null (T2), zone-transition JSD with Q4 bootstrap CI (T3), MI decomposition with co-information (T4), per-rule positional activation profiles with Spearman trends (T5), depleted-rule position localization (T6). Verdict: **MARGINAL_PRODUCT**. The routing grammar is position-invariant — routing distributions vary dramatically by position (Q4 JSD=0.021, 14x Q2) but this variation is entirely explained by the two-way marginals P(TERM|quintile) × P(HEAD|quintile). The specification→work→closure arc is produced by compositional change, not by position-dependent routing rules.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/WITHIN_LINE_ATOM_SEQUENCE_GRAMMAR/` -- Phase 594 directory with script, results, INDEX |
+| **ADDED** | C1724: Routing grammar is position-invariant (MARGINAL_PRODUCT) -- G²=144.61, shuffle p=0.069, Cramér's V=0.084 |
+| **ADDED** | C1725: Closure zone has strongest routing discrimination (mild synergy) -- interaction MI=-0.0044 bits (-7.9%), Q4 MI=0.0714 |
+| **ADDED** | C1726: Per-rule activation profiles are compositionally driven -- l→e rho=-0.90, m→o rho=+0.90, r→a Q4=3.87x |
+| **UPDATED** | INDEX.md -- +3 constraints (1726 total), Phase 594 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.67, 1726 constraints, 594 phases) |
+
+### Key Findings
+
+- **Routing is position-invariant (C1724):** The three-way TERM×HEAD×Quintile interaction is not significant (G²=144.61, shuffle p=0.069). Despite Q4 routing looking very different from Q1-Q3 (JSD=0.021 vs ~0.001), this is entirely explained by the changing compositional mix at each position. The global routing grammar applies uniformly everywhere.
+- **Mild synergy at closure (C1725):** Conditioning on position reveals 7.9% more routing MI. Q4 has the highest per-quintile MI (0.071 bits vs 0.050 at Q1), reflecting the narrow compositional palette of closure allowing sharper discrimination. The grammar is invariant but operates with slightly more discriminative power where composition is narrower.
+- **Per-rule activation profiles are compositional readouts (C1726):** l→e declines across the line (rho=-0.90, p=0.037), m→o rises (rho=+0.90, p=0.037), r→a peaks at Q4 (3.87x vs 2.23x global). All explained by the marginals. No depleted rule becomes enriched at any position.
+- **Complements C1721:** Routing is now shown to be invariant across both folios (Phase 593) and line positions (Phase 594). The global routing grammar (C1563) is a single invariant system.
+
+---
+
 ## Version 5.66 (2026-03-15) - Phase 593: Terminal Routing Folio Fingerprint
 
 ### Summary
