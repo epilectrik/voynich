@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1731 validated constraints | **Version:** 5.69 | **Date:** 2026-03-15
+**Total:** 1733 validated constraints | **Version:** 5.70 | **Date:** 2026-03-16
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,20 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 597: Redistillation-ii Purpose Discrimination — REDISTILLATION_DEAD_SAFETY_SUBSTITUTION (C1732-C1733)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1732 | Folio-level safety substitution: ii and e-to-y are safety substitutes operating in complementary HEAD domains (Spearman rho=-0.633, p<0.001). Folios deploying high e-to-y (e-HEAD domain, C1457) deploy low ii (a-HEAD domain, C1480) and vice versa. Anti-correlation kills redistillation co-deployment prediction. Section+REGIME controlled partial rho=+0.264 (p=0.016) — weak positive after controls does not reach significance threshold (p>0.01). FL state elevation on ii-lines entirely explained by a-HEAD embedding (a-HEAD baseline p=0.216). Mode A residual dead null (p=0.773). Redistillation purpose hypothesis falsified | 2 | B, MIDDLE, atom, safety, substitution, folio, ii, e-to-y, C1457, C1480 | raw_rho=-0.633. controlled_rho=0.264. controlled_p=0.016. FL_a_baseline_p=0.216. modeA_p=0.773. |
+| 1733 | Two-strategy safety architecture with forgiveness asymmetry. e-to-y pathway (preventive, e-HEAD domain) positively predicts folio forgiveness (AXM self-transition rate, Spearman rho=+0.569, p<0.001). ii pathway (transformative, a-HEAD domain) anti-predicts forgiveness (section-controlled beta=-0.673, F=5.10, p=0.027, delta-R²=+0.034 beyond e-to-y+section). Preventive safety (avoiding hazardous territory) produces forgiving programs; transformative safety (operating within hazardous territory with categorical protections, C1482) produces less forgiving programs | 2 | B, MIDDLE, atom, ii, e-to-y, forgiveness, safety, folio, AXM, C1462, C1482 | ey_rho=0.569. ii_rho=-0.536. ctrl_beta_ii=-0.673. ctrl_f_p=0.027. ctrl_delta_r2=0.034. |
+
+**Phase 597 findings (Redistillation-ii Purpose Discrimination, REDISTILLATION_DEAD_SAFETY_SUBSTITUTION):**
+- Redistillation hypothesis FALSIFIED by safety substitution (C1732): T1 primary gate shows strong folio-level anti-correlation (rho=-0.633) between ii and e-to-y deployment. Redistillation predicts co-deployment; the opposite is observed. All supporting tests either null (T3 after a-HEAD control, T4 dead null) or ambiguous (T2 collider bias, T5 section-mediated).
+- Complementary HEAD-domain safety architectures (C1733): e-to-y (e-HEAD) is PREVENTIVE — stability anchor at SPECIFICATION zone, zero hazard, maintains AXM attractor, HIGH forgiveness. ii (a-HEAD) is TRANSFORMATIVE — collapses r-terminal hazard vector to 0.2%, LOW forgiveness. Folios select one strategy or the other.
+- Forgiveness asymmetry explained mechanistically: programs relying on e-to-y avoid hazardous territory (forgiving); programs relying on ii operate within hazardous a-HEAD territory with categorical terminal protections (less forgiving). ii's anti-forgiveness effect survives section control (beta attenuated from -0.844 to -0.673).
 
 ---
 

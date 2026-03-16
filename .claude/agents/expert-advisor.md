@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1731 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1733 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1731.
+the highest ID present is C1733.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1731 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1733 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1731 validated constraints are present as canonical one-line claims with tier
+1733 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-16 00:02
-**Version:** FROZEN STATE (1731 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-16 09:32
+**Version:** FROZEN STATE (1733 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1971,6 +1971,8 @@ C1728	Sequential information is NOT primarily Mode A/B persistence. Full mode re
 C1729	Paragraph boundary lines carry distinctive content (BOUNDARY_ENRICHED). First body lines (Q0) and last body lines (Q4) deviate significantly from paragraph mean: Q0 obs_norm=0.548, Q4 obs_norm=0.946. Interior positions indistinct. Last body line has strongest positional signature. Paragraph-level macro-arc from specification to closure across lines. Primary driver of sequential smoothness in C1727	2	B, paragraph, boundary, position, arc, C1425, C1430, C1727
 C1730	ii-deployment follows a REGIME refinement-intensity gradient. Double-ii/single-i ratio varies significantly across REGIMEs: REGIME_4 (precision-constrained, 0.635) > REGIME_2 (output-intensive, 0.631) > REGIME_3 (transient-throughput, 0.575) > REGIME_1 (thermal-control-intensive, 0.468). No paragraph-level i-distribution signal. Context hazard test confirms ii appears in high-hazard contexts. Safety-routing mechanism (C1480-C1482) explains HOW; REGIME gradient characterizes WHERE	2	B, i-extension, REGIME, hazard, safety, C1480, C1399, C1204
 C1731	Currier A has higher double-ii concentration than B. A ii-ratio=0.730 vs B ii-ratio=0.540. Within B: HERBAL highest (0.676), section B lowest (0.467), replicating C1204. A>B pattern consistent with A as specification registry (C240) recording process requirements. Does not discriminate safety-routing from redistillation interpretations — both predict A>B	2	A, B, cross-system, i-extension, C240, C1204
+C1732	Folio-level safety substitution: ii and e-to-y are safety substitutes operating in complementary HEAD domains. Folios deploying high e-to-y (e-HEAD domain, C1457) deploy low ii (a-HEAD domain, C1480) and vice versa. Anti-correlation kills redistillation co-deployment prediction. Section+REGIME controlled partial rho=+0.264 — weak positive after controls does not reach significance threshold (p>0.01). FL state elevation on ii-lines entirely explained by a-HEAD embedding. Mode A residual dead null. Redistillation purpose hypothesis falsified	2	B, MIDDLE, atom, safety, substitution, folio, ii, e-to-y, C1457, C1480
+C1733	Two-strategy safety architecture with forgiveness asymmetry. e-to-y pathway (preventive, e-HEAD domain) positively predicts folio forgiveness. ii pathway (transformative, a-HEAD domain) anti-predicts forgiveness. Preventive safety (avoiding hazardous territory) produces forgiving programs; transformative safety (operating within hazardous territory with categorical protections, C1482) produces less forgiving programs	2	B, MIDDLE, atom, ii, e-to-y, forgiveness, safety, folio, AXM, C1462, C1482
 
 ---
 

@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.70 (2026-03-16) - Phase 597: Redistillation-ii Purpose Discrimination
+
+### Summary
+
+Phase 597 tests whether the i-extension encodes redistillation PURPOSE beyond the confirmed safety-routing MECHANISM (C1480-C1482). Six expert-reviewed tests: e-to-y co-deployment primary gate (T1), A-side e-depth secondary gate (T2), FL state co-occurrence with a-HEAD control (T3), Mode A residual (T4), OPERATION category co-occurrence (T5), forgiveness prediction with section control (T6). Two proposed tests dropped pre-implementation by expert review: k-HEAD avoidance (confounded by HEAD mutual exclusivity) and REGIME_4 precision (non-discriminating). Verdict: **REDISTILLATION_DEAD_SAFETY_SUBSTITUTION**. T1 reveals strong folio-level anti-correlation between ii and e-to-y (rho=-0.633), killing redistillation co-deployment prediction. T6 discovers that ii anti-predicts folio forgiveness (section-controlled beta=-0.673): complementary HEAD-domain safety architectures with opposite forgiveness profiles.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/REDISTILLATION_II_PURPOSE_DISCRIMINATION/` -- Phase 597 directory with script, results, INDEX |
+| **ADDED** | C1732: Folio-level safety substitution -- ii and e-to-y anti-correlated (rho=-0.633), complementary HEAD domains |
+| **ADDED** | C1733: Two-strategy safety architecture with forgiveness asymmetry -- e-to-y permissive (rho=+0.569), ii restrictive (beta=-0.673) |
+| **UPDATED** | INDEX.md -- +2 constraints (1733 total), Phase 597 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.70, 1733 constraints, 597 phases) |
+
+### Key Findings
+
+- **Redistillation hypothesis falsified by safety substitution (C1732):** T1 primary gate shows folios with high ii have LOW e-to-y and vice versa (rho=-0.633, p<0.001). Redistillation predicts co-deployment of safety infrastructure to protect valuable product; the strong substitution pattern contradicts this. Supporting tests: FL state entirely explained by a-HEAD embedding (T3 baseline p=0.216), Mode A residual dead null (T4 p=0.773), T2 flagged as possible collider bias (raw=0, controlled=+0.40).
+- **Complementary HEAD-domain safety architecture (C1733):** The grammar deploys two folio-level safety strategies in complementary HEAD domains: e-to-y (e-HEAD, preventive, maintains AXM attractor, high forgiveness rho=+0.569) and ii (a-HEAD, transformative, collapses r-terminal hazard vector, low forgiveness beta=-0.673). Programs that avoid hazardous territory are forgiving; programs that operate within it with categorical protections are not.
+- **Expert review caught 2 fatal flaws pre-implementation:** k-HEAD avoidance test confounded by HEAD atom mutual exclusivity (tautological), REGIME_4 precision test non-discriminating (both hypotheses predict same outcome). This prevented Phase 596-style mis-premised tests.
+
+---
+
 ## Version 5.69 (2026-03-15) - Phase 596: Redistillation i-Hypothesis
 
 ### Summary

@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1731.
+the highest ID present is C1733.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2057,6 +2057,8 @@ C1728	Sequential information NOT primarily Mode A/B persistence. Full mode resid
 C1729	Paragraph boundary lines carry distinctive content (BOUNDARY_ENRICHED). Q0 obs_norm=0.548 (4.5x null, p<0.001), Q4 obs_norm=0.946 (7.9x null, p<0.001). Interior indistinct: Q1 p=0.948, Q2 p=0.033, Q3 p=0.058. Last body line has strongest positional signature. Paragraph-level macro-arc from specification to closure	2	B, paragraph, boundary, position, arc, C1425, C1430, C1727	Q0_norm=0.548. Q0_ratio=4.5. Q4_norm=0.946. Q4_ratio=7.9.
 C1730	ii-deployment follows REGIME refinement-intensity gradient. Double-ii/single-i ratio varies across REGIMEs (chi2=51.43, p<0.001, V=0.134): R4(0.635)>R2(0.631)>R3(0.575)>R1(0.468). No paragraph-level i-distribution signal (T1-T3 null, C1399 confirmed). Context hazard confirms ii in high-hazard contexts (20.6% vs 16.5%, p<0.001). Safety mechanism HOW; REGIME gradient WHERE	2	B, i-extension, REGIME, hazard, safety, C1480, C1399, C1204	chi2=51.43. R4_ii=0.635. R1_ii=0.468. hazard_confound_r=0.40.
 C1731	Currier A has higher double-ii concentration than B. A ii-ratio=0.730 vs B ii-ratio=0.540 (chi2=149.96, p<0.001). Within B: HERBAL 0.676, section B 0.467, replicating C1204. A>B consistent with A as specification registry recording process requirements. Does not discriminate safety-routing from redistillation	2	A, B, cross-system, i-extension, C240, C1204	A_ii=0.730. B_ii=0.540. chi2=149.96.
+C1732	Folio-level safety substitution: ii and e-to-y are safety substitutes operating in complementary HEAD domains (Spearman rho=-0.633, p<0.001). Folios deploying high e-to-y (e-HEAD C1457) deploy low ii (a-HEAD C1480) and vice versa. Anti-correlation kills redistillation co-deployment prediction. FL state elevation on ii-lines entirely explained by a-HEAD embedding (baseline p=0.216). Mode A residual dead null (p=0.773). Redistillation purpose hypothesis falsified	2	B, MIDDLE, atom, safety, substitution, folio, ii, e-to-y, C1457, C1480	raw_rho=-0.633. ctrl_rho=0.264. ctrl_p=0.016. FL_baseline_p=0.216. modeA_p=0.773.
+C1733	Two-strategy safety architecture with forgiveness asymmetry. e-to-y (preventive, e-HEAD) positively predicts folio forgiveness (AXM self-transition rho=+0.569). ii (transformative, a-HEAD) anti-predicts forgiveness (section-controlled beta=-0.673, F=5.10, p=0.027, delta-R²=+0.034). Preventive safety produces forgiving programs; transformative safety (C1482 terminal collapse) produces less forgiving programs	2	B, MIDDLE, atom, ii, e-to-y, forgiveness, safety, folio, AXM, C1462, C1482	ey_rho=0.569. ii_rho=-0.536. ctrl_beta=-0.673. ctrl_f_p=0.027. ctrl_dR2=0.034.
 
 ---
 

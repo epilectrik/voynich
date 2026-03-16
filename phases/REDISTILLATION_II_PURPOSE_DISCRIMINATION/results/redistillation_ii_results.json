@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "phase": 597,
+    "script": "redistillation_ii_test.py",
+    "runtime_seconds": 1.9,
+    "n_b_tokens": 23096,
+    "n_a_tokens": 11174,
+    "seed": 42,
+    "i_class_counts": {
+      "no_i": 20221,
+      "double_ii": 1554,
+      "single_i": 1321
+    },
+    "verification": {
+      "ey_count": 3475,
+      "fl_vocab_count": 5911,
+      "a_head_count": 3079,
+      "n_paragraphs": 585
+    }
+  },
+  "T1_ey_co_deployment": {
+    "n_folios": 82,
+    "mean_ii_frac": 0.0717,
+    "mean_ey_frac": 0.1377,
+    "raw_spearman_rho": -0.6333,
+    "raw_spearman_p": 0.0,
+    "section_controlled_rho": 0.1307,
+    "section_controlled_p": 0.24183,
+    "full_controlled_rho": 0.2644,
+    "full_controlled_p": 0.016384,
+    "controls": "section + REGIME",
+    "positive": false,
+    "interpretation": "No co-deployment after controls"
+  },
+  "T2_a_side_e_depth": {
+    "n_qualifying_records": 497,
+    "mean_ii_fraction": 0.7012,
+    "mean_e_depth": 1.2379,
+    "mean_record_length": 8.7,
+    "raw_spearman_rho": -0.0003,
+    "raw_spearman_p": 0.994429,
+    "length_controlled_rho": 0.4008,
+    "length_controlled_p": 0.0,
+    "positive": true,
+    "collider_bias_flag": true,
+    "caveat": "AMBIGUOUS: control CREATES correlation from null raw \u2014 possible collider bias"
+  },
+  "T3_fl_state_cooccurrence": {
+    "group_stats": {
+      "ii": {
+        "n": 933,
+        "mean": 3.2022,
+        "std": 0.831
+      },
+      "si": {
+        "n": 458,
+        "mean": 2.9611,
+        "std": 0.9041
+      },
+      "a_head_no_i": {
+        "n": 290,
+        "mean": 3.1575,
+        "std": 0.6567
+      },
+      "other": {
+        "n": 425,
+        "mean": 3.5734,
+        "std": 0.8719
+      }
+    },
+    "diff_ii_minus_si": 0.2411,
+    "diff_ii_minus_a_baseline": 0.0447,
+    "perm_p_ii_vs_si": 0.0,
+    "perm_p_ii_vs_a_baseline": 0.216,
+    "mw_p_ii_vs_si": 2e-06,
+    "mw_p_ii_vs_a_baseline": 0.362244,
+    "positive": false,
+    "power_note": "ii-lines with FL: 933, si-lines with FL: 458, a-HEAD-no-i lines with FL: 290"
+  },
+  "T4_mode_a_residual": {
+    "n_folios": 82,
+    "beta_intercept": 0.6363,
+    "beta_a_head": -0.8607,
+    "beta_ii_prop_of_a_head": 0.0092,
+    "se_ii": 0.0316,
+    "t_stat_ii": 0.2899,
+    "p_val_ii": 0.772637,
+    "r_squared": 0.2997,
+    "predictor_correlation": -0.3525,
+    "positive": false
+  },
+  "T5_operation_cooccurrence": {
+    "n_paragraphs": 464,
+    "mean_ii_frac": 0.5357,
+    "mean_op_frac": 0.1358,
+    "raw_spearman_rho": 0.0007,
+    "raw_spearman_p": 0.987728,
+    "section_controlled_rho": 0.286,
+    "section_controlled_p": 0.0,
+    "positive": true
+  },
+  "T6_forgiveness_prediction": {
+    "n_folios": 82,
+    "n_sections": 5,
+    "mean_forgiveness": 0.4792,
+    "raw_r2_ey_only": 0.2562,
+    "raw_r2_ey_plus_ii": 0.314,
+    "raw_delta_r2": 0.0577,
+    "raw_f_stat": 6.6477,
+    "raw_f_p_val": 0.011786,
+    "raw_beta_ii": -0.8442,
+    "ctrl_r2_ey_plus_sec": 0.4651,
+    "ctrl_r2_ey_ii_plus_sec": 0.4992,
+    "ctrl_delta_r2": 0.0341,
+    "ctrl_f_stat": 5.0995,
+    "ctrl_f_p_val": 0.026842,
+    "ctrl_beta_ii": -0.6733,
+    "spearman_ey_forgiveness": 0.5694,
+    "spearman_p_ey": 0.0,
+    "spearman_ii_forgiveness": -0.5363,
+    "spearman_p_ii": 0.0,
+    "positive": false
+  },
+  "verdict": "REDISTILLATION_DEAD_SAFETY_SUBSTITUTION",
+  "verdict_note": "Redistillation dead (T1 raw rho=-0.6333: safety substitution). ii ANTI-predicts forgiveness (T6 beta=-0.673, p=0.0268): two safety strategies \u2014 e-to-y permissive, ii restrictive."
+}
