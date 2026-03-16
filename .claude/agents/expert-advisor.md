@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1726 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1731 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1726.
+the highest ID present is C1731.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1726 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1731 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1726 validated constraints are present as canonical one-line claims with tier
+1731 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-15 20:45
-**Version:** FROZEN STATE (1726 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-16 00:02
+**Version:** FROZEN STATE (1731 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1966,6 +1966,11 @@ C1723	Routing space is high-dimensional and bare-terminal dominated: ROUTING_HIG
 C1724	Routing grammar is position-invariant (MARGINAL_PRODUCT). TERM×HEAD×Quintile three-way interaction not significant. Routing varies by line position (Q4 JSD vs global=0.0209, 14x Q2's 0.0012) but entirely explained by independent positional marginals P(TERM|Q) × P(HEAD|Q). Global routing grammar (C1563) applies uniformly across all line positions. Specification→work→closure arc (C1425-C1430) produced by compositional change, not position-dependent routing rules. Universal across all 4 sections and all line-length strata	2	B, routing, position, quintile, TERM, HEAD, line, C1563, C1425, C1721
 C1725	Closure zone has strongest routing discrimination (mild synergy). Position-conditional MI decomposition: interaction MI=-0.0044 bits (-7.9% of total 0.0552 bits), SYNERGY. Within each quintile, TERM→HEAD associations slightly stronger than aggregate. Q4 (closure) has highest per-quintile MI (0.0714 bits) vs Q1 (0.0496 bits). Reflects sharp compositional focus of closure: fewer active TERM/HEAD types allow grammar to discriminate more sharply among reduced options. Synergy is small (7.9%) — grammar fundamentally position-invariant (C1724)	2	B, routing, MI, synergy, closure, position, C1724, C1566
 C1726	Per-rule activation profiles are compositionally driven. Individual routing rules show significant positional trends despite overall three-way interaction being non-significant: l→e declines Q0→Q4, m→o rises Q0→Q4, n→k declines Q0→Q4. Strongest per-quintile enrichment: r→a at Q4 (3.87x vs 2.23x global). Trends explained by compositional change: more r-terminal and a-HEAD at Q4 → r→a rises. No globally depleted rule becomes enriched at any quintile (T6: no position-specific exceptions). Grammar applies uniformly; profiles are readout of positional composition	2	B, routing, activation, rules, position, composition, C1563, C1724, C1671
+C1727	Line ordering carries non-trivial sequential information. Within-paragraph body-line ordering is significantly smoother than shuffled. Only 8.5% individually significant — weak per-paragraph, strong aggregate. Universal across all 4 sections (B: z=-3.70, C: z=-3.00, ?: z=-2.92, H: z=-1.75) and all paragraph-length strata. Revises strong form of C670/C1233/C1429: compositional channels are independent, but structural channels (length, boundary position) carry ordering information	2	B, line, ordering, paragraph, sequential, C670, C1233, C1429
+C1728	Sequential information is NOT primarily Mode A/B persistence. Full mode residualization barely changes signal: T3 z=-5.864 vs T2 z=-6.048, effect -0.648 vs -0.668. Mode accounts for ~3% of total sequential structure. Dominant channel is line length (lag-1 MI=0.178 bits, 9.3% of H(length), p<0.001), 4x stronger than suffix mode. HEAD and TERM show no significant lag-1 MI. Compositional channels carry no sequential signal; ordering information lives in structural channels	2	B, line, ordering, mode, length, MI, C1423, C1429
+C1729	Paragraph boundary lines carry distinctive content (BOUNDARY_ENRICHED). First body lines (Q0) and last body lines (Q4) deviate significantly from paragraph mean: Q0 obs_norm=0.548, Q4 obs_norm=0.946. Interior positions indistinct. Last body line has strongest positional signature. Paragraph-level macro-arc from specification to closure across lines. Primary driver of sequential smoothness in C1727	2	B, paragraph, boundary, position, arc, C1425, C1430, C1727
+C1730	ii-deployment follows a REGIME refinement-intensity gradient. Double-ii/single-i ratio varies significantly across REGIMEs: REGIME_4 (precision-constrained, 0.635) > REGIME_2 (output-intensive, 0.631) > REGIME_3 (transient-throughput, 0.575) > REGIME_1 (thermal-control-intensive, 0.468). No paragraph-level i-distribution signal. Context hazard test confirms ii appears in high-hazard contexts. Safety-routing mechanism (C1480-C1482) explains HOW; REGIME gradient characterizes WHERE	2	B, i-extension, REGIME, hazard, safety, C1480, C1399, C1204
+C1731	Currier A has higher double-ii concentration than B. A ii-ratio=0.730 vs B ii-ratio=0.540. Within B: HERBAL highest (0.676), section B lowest (0.467), replicating C1204. A>B pattern consistent with A as specification registry (C240) recording process requirements. Does not discriminate safety-routing from redistillation interpretations — both predict A>B	2	A, B, cross-system, i-extension, C240, C1204
 
 ---
 
@@ -1973,7 +1978,7 @@ C1726	Per-rule activation profiles are compositionally driven. Individual routin
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-15
+# Generated: 2026-03-16
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

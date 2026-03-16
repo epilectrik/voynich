@@ -4,6 +4,58 @@
 
 ---
 
+## Version 5.69 (2026-03-15) - Phase 596: Redistillation i-Hypothesis
+
+### Summary
+
+Phase 596 tests whether the i-extension system (single-i vs double-ii) encodes redistillation familiarity or is fully explained by the safety-routing mechanism (C1480-C1482). Eight tests: within-paragraph positional distribution (T1), paragraph type discrimination (T2), C1399 negative control (T3), REGIME enrichment with hazard confound (T4), successor entropy with terminal decomposition (T5), kernel co-occurrence with folio control (T6), context hazard discrimination (T7), cross-system Currier A vs B (T8). Verdict: **MECHANISM_CONFIRMED_PURPOSE_UNDERDETERMINED**. Safety-routing mechanism confirmed as HOW ii operates (T7: ii deployed in high-hazard contexts, 20.6% vs 16.5%). However, T7 and T8 cannot discriminate redistillation from safety-routing because these are complementary (mechanism vs purpose). The REGIME refinement-intensity gradient (R4>R2>R3>R1) is the principal new finding.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/REDISTILLATION_I_HYPOTHESIS/` -- Phase 596 directory with script, results, INDEX |
+| **ADDED** | C1730: ii-deployment follows REGIME refinement-intensity gradient -- R4(0.635)>R2(0.631)>R3(0.575)>R1(0.468), chi2=51.43 |
+| **ADDED** | C1731: Currier A has higher double-ii concentration than B -- A=0.730 vs B=0.540, chi2=149.96 |
+| **UPDATED** | INDEX.md -- +5 constraints (1731 total), Phase 595+596 sections |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.69, 1731 constraints, 596 phases) |
+
+### Key Findings
+
+- **Safety mechanism confirmed, purpose underdetermined:** T7 shows ii appears in high-hazard contexts (non-ii hazard 20.6% on ii-lines vs 16.5%, p<0.001). But redistillation IS hazardous (risk to valuable product), so both safety-routing and redistillation predict this. The tests confirm the mechanism (C1480-C1482) but cannot test purpose.
+- **REGIME refinement-intensity gradient (C1730):** R4(precision)>R2(output)>R3(throughput)>R1(thermal) for ii-ratio. REGIMEs demanding more precision deploy more double-ii. Moderate hazard correlation (r=0.40) — not fully explained by hazard alone.
+- **No paragraph-level signal:** T1-T3 all null. C1399 (paragraph independence) confirmed. i-extension operates at token/line level.
+- **Cross-system (C1731):** A ii-ratio 0.730 > B 0.540 (p<0.001). Consistent with A as specification registry recording process requirements.
+- **T5-T6 confirm known structure:** No entropy advantage for ii-contexts. a-HEAD correlation (rho=0.345) confirms C1480. k/e anti-correlation confirms C1205.
+
+---
+
+## Version 5.68 (2026-03-15) - Phase 595: Line Ordering Information Content
+
+### Summary
+
+Phase 595 measures total information content of line ordering within paragraphs across all channels simultaneously. Prior tests examined one channel at a time and found null results. Tests: total ordering information via within-paragraph shuffle + Stouffer's method (T2), full mode residualization (T3), positional information by fractional quintile (T4), per-channel lag-1 MI (T5), per-folio trajectory effect sizes (T6). Verdict: **BOUNDARY_ENRICHED**. Line ordering carries substantial sequential information (z=-6.05, p<0.001), almost entirely NOT explained by Mode A/B persistence (~3% contribution). Information concentrates at paragraph boundaries: first and last body lines carry distinctive content. Line length autocorrelation is the dominant sequential channel (MI=0.178 bits, 4x mode).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LINE_ORDERING_INFORMATION_CONTENT/` -- Phase 595 directory with script, results, INDEX |
+| **ADDED** | C1727: Line ordering carries non-trivial sequential information -- Stouffer z=-6.048, mean effect=-0.668 |
+| **ADDED** | C1728: Sequential information NOT primarily Mode A/B persistence -- mode ~3% of total, line length MI=0.178 bits |
+| **ADDED** | C1729: Paragraph boundary lines carry distinctive content -- Q0 4.5x null, Q4 7.9x null, interior indistinct |
+| **UPDATED** | INDEX.md -- +3 constraints (1729 total), Phase 595 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.68, 1729 constraints, 595 phases) |
+
+### Key Findings
+
+- **Line ordering is informative (C1727):** z=-6.05, highly significant. Real ordering smoother than random. Weak per-paragraph but consistent in direction. Universal across all sections (B: z=-3.70, C: z=-3.00, ?: z=-2.92, H: z=-1.75).
+- **Mode A/B is minor (C1728):** Full mode residualization barely changes signal (z=-5.86 vs z=-6.05, ~3%). Line length autocorrelation is dominant channel (MI=0.178 bits, 9.3% of H(length)), 4x stronger than mode. HEAD and TERM show no significant lag-1 MI.
+- **Boundary enrichment (C1729):** Q0 (first body line) deviates 4.5x null mean, Q4 (last body line) 7.9x null mean, both p<0.001. Interior Q1-Q3 indistinct. Paragraph-level macro-arc: first lines carry one compositional signature, last lines carry another, connecting to within-line specification→closure arc (C1425-C1430).
+- **Revises prior independence findings:** C670, C1233, C1429 tested compositional channels and found nulls. The ordering information lives in structural channels (length, boundary position) never previously tested individually.
+
+---
+
 ## Version 5.67 (2026-03-15) - Phase 594: Within-Line Atom Sequence Grammar
 
 ### Summary

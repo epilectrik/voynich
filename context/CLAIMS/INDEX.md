@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1726 validated constraints | **Version:** 5.67 | **Date:** 2026-03-15
+**Total:** 1731 validated constraints | **Version:** 5.69 | **Date:** 2026-03-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,38 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 596: Redistillation i-Hypothesis — MECHANISM_CONFIRMED_PURPOSE_UNDERDETERMINED (C1730-C1731)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1730 | ii-deployment follows a REGIME refinement-intensity gradient. Double-ii/single-i ratio varies significantly across REGIMEs (chi2=51.43, p<0.001, Cramér's V=0.134): REGIME_4 (precision-constrained, 0.635) > REGIME_2 (output-intensive, 0.631) > REGIME_3 (transient-throughput, 0.575) > REGIME_1 (thermal-control-intensive, 0.468). No paragraph-level i-distribution signal (T1 positional rho p=0.673, T2 overdispersion=1.31, T3 ordinal p=0.327, confirming C1399). Context hazard test confirms ii appears in high-hazard contexts (non-ii hazard 20.6% on ii-lines vs 16.5% on no-ii lines, p<0.001). Safety-routing mechanism (C1480-C1482) explains HOW; REGIME gradient characterizes WHERE | 2 | B, i-extension, REGIME, hazard, safety, C1480, C1399, C1204 | chi2=51.43. cramers_v=0.134. R4_ii=0.635. R2_ii=0.631. R3_ii=0.575. R1_ii=0.468. hazard_confound_r=0.40. T5_p=0.585. |
+| 1731 | Currier A has higher double-ii concentration than B. A ii-ratio=0.730 vs B ii-ratio=0.540 (chi2=149.96, p<0.001). Within B: HERBAL highest (0.676), section B lowest (0.467), replicating C1204. A>B pattern consistent with A as specification registry (C240) recording process requirements. Does not discriminate safety-routing from redistillation interpretations — both predict A>B | 2 | A, B, cross-system, i-extension, C240, C1204 | A_ii_ratio=0.730. B_ii_ratio=0.540. chi2=149.96. H_ii=0.676. B_ii=0.467. |
+
+**Phase 596 findings (Redistillation i-Hypothesis, MECHANISM_CONFIRMED_PURPOSE_UNDERDETERMINED):**
+- Safety-routing mechanism (C1480-C1482) confirmed as HOW ii operates: ii-tokens appear in high-hazard contexts (T7: 20.6% vs 16.5%, p<0.001). But safety-routing (mechanism) and redistillation (purpose) are complementary, not competing — both predict ii in high-hazard contexts because redistillation IS inherently hazardous (risk to already-valuable product).
+- No paragraph-level i-distribution signal (C1730): T1 positional gradient p=0.673, T2 overdispersion=1.31, T3 confirms C1399 (paragraph independence). Whatever ii encodes operates at token/line level, not paragraph level.
+- REGIME refinement-intensity gradient (C1730): R4>R2>R3>R1 for ii-ratio. REGIMEs demanding more precision or sustained output deploy more double-ii. Moderate hazard correlation (r=0.40) — not fully explained by hazard alone.
+- Cross-system: A has substantially more double-ii than B (C1731: 0.730 vs 0.540, p<0.001). Consistent with A as specification registry recording both safety and process requirements.
+- T5 (successor entropy) shows no predictability advantage for ii-contexts (p=0.585). T6 confirms C1480 (a-HEAD selection) and C1205 (i orthogonal to k/e).
+
+---
+
+### Phase 595: Line Ordering Information Content — BOUNDARY_ENRICHED (C1727-C1729)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1727 | Line ordering carries non-trivial sequential information. Within-paragraph body-line ordering is significantly smoother than shuffled (Stouffer z=-6.048, p<0.001, mean effect=-0.668 across 82 paragraphs, 824 body lines). Only 8.5% individually significant — weak per-paragraph, strong aggregate. Universal across all 4 sections (B: z=-3.70, C: z=-3.00, ?: z=-2.92, H: z=-1.75) and all paragraph-length strata. Revises strong form of C670/C1233/C1429: compositional channels are independent, but structural channels (length, boundary position) carry ordering information | 2 | B, line, ordering, paragraph, sequential, C670, C1233, C1429 | stouffer_z=-6.048. mean_effect=-0.668. n_para=82. n_lines=824. pct_sig=8.5. |
+| 1728 | Sequential information is NOT primarily Mode A/B persistence. Full mode residualization barely changes signal: T3 z=-5.864 vs T2 z=-6.048, effect -0.648 vs -0.668. Mode accounts for ~3% of total sequential structure. Dominant channel is line length (lag-1 MI=0.178 bits, 9.3% of H(length), p<0.001), 4x stronger than suffix mode (MI=0.044 bits, p=0.001). HEAD and TERM show no significant lag-1 MI. Compositional channels carry no sequential signal; ordering information lives in structural channels | 2 | B, line, ordering, mode, length, MI, C1423, C1429 | mode_residual_z=-5.864. mode_contribution=3pct. length_MI=0.178. mode_MI=0.044. HEAD_MI_p=0.069. TERM_MI_p=0.473. |
+| 1729 | Paragraph boundary lines carry distinctive content (BOUNDARY_ENRICHED). First body lines (Q0) and last body lines (Q4) deviate significantly from paragraph mean: Q0 obs_norm=0.548 (4.5x null, p<0.001), Q4 obs_norm=0.946 (7.9x null, p<0.001). Interior positions indistinct (Q1 p=0.948, Q2 p=0.033, Q3 p=0.058). Last body line has strongest positional signature. Paragraph-level macro-arc from specification to closure across lines. Primary driver of sequential smoothness in C1727 | 2 | B, paragraph, boundary, position, arc, C1425, C1430, C1727 | Q0_norm=0.548. Q0_ratio=4.5. Q4_norm=0.946. Q4_ratio=7.9. Q1_p=0.948. Q2_p=0.033. Q3_p=0.058. |
+
+**Phase 595 findings (Line Ordering Information Content, BOUNDARY_ENRICHED):**
+- Line ordering carries substantial sequential information (C1727): z=-6.05, p<0.001. Real ordering is smoother (consecutive lines more similar) than shuffled. Weak per-paragraph but highly consistent in direction. Universal across all sections.
+- Mode A/B is a minor channel (C1728): Full mode residualization barely changes the signal (3% contribution). Line length autocorrelation is the dominant channel (MI=0.178 bits, 4x mode). HEAD and TERM routing show no significant lag-1 MI, confirming per-channel independence of compositional features.
+- Boundary enrichment is the key structure (C1729): First and last body lines are compositionally distinctive (Q0: 4.5x null, Q4: 7.9x null). Interior positions are indistinct. This connects to the within-line specification→closure arc (C1425-C1430) operating also at paragraph scale.
+- Revises prior independence findings: C670, C1233, C1429 tested individual compositional channels and found nulls. This phase shows structural channels (length, boundary position) carry the ordering information that compositional channels don't.
 
 ---
 

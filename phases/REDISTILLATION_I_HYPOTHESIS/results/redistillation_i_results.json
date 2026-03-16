@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "phase": 596,
+    "script": "redistillation_i_test.py",
+    "runtime_seconds": 49.6,
+    "n_b_tokens": 23096,
+    "n_a_tokens": 11174,
+    "n_paragraphs": 585,
+    "seed": 42,
+    "i_class_counts": {
+      "no_i": 20221,
+      "double_ii": 1554,
+      "single_i": 1321
+    },
+    "ii_ratio_among_i": 0.5405
+  },
+  "T1_within_paragraph": {
+    "n_qualifying_paragraphs": 136,
+    "ii_fraction_by_quintile": {
+      "0": 0.5272,
+      "1": 0.5592,
+      "2": 0.5991,
+      "3": 0.5479,
+      "4": 0.5263
+    },
+    "quintile_i_counts": {
+      "0": {
+        "no_i": 2074,
+        "double_ii": 126,
+        "single_i": 113
+      },
+      "1": {
+        "no_i": 1705,
+        "double_ii": 137,
+        "single_i": 108
+      },
+      "2": {
+        "no_i": 1771,
+        "double_ii": 136,
+        "single_i": 91
+      },
+      "3": {
+        "no_i": 1703,
+        "double_ii": 120,
+        "single_i": 99
+      },
+      "4": {
+        "no_i": 1975,
+        "single_i": 135,
+        "double_ii": 150
+      }
+    },
+    "rho": -0.3,
+    "rho_p": 0.6238,
+    "perm_p": 0.673,
+    "significant": false,
+    "a_head_control": {
+      "ii_fraction_by_quintile": {
+        "0": 0.5333,
+        "1": 0.5763,
+        "2": 0.5455,
+        "3": 0.5631,
+        "4": 0.517
+      },
+      "rho": -0.3,
+      "rho_p": 0.6238
+    }
+  },
+  "T2_paragraph_type": {
+    "n_paragraphs": 367,
+    "mean_ii_fraction": 0.5492,
+    "obs_variance": 0.060684,
+    "binomial_expected_variance": 0.046267,
+    "overdispersion_ratio": 1.31,
+    "overdispersed": false,
+    "median_ii_fraction": 0.5556,
+    "low_group_n": 184,
+    "high_group_n": 183,
+    "low_group_mean_ii": 0.3514,
+    "high_group_mean_ii": 0.748,
+    "low_group_hazard": 0.1972,
+    "high_group_hazard": 0.2208,
+    "low_group_sections": {
+      "H": 16,
+      "T": 6,
+      "B": 41,
+      "C": 7,
+      "S": 114
+    },
+    "high_group_sections": {
+      "H": 37,
+      "T": 6,
+      "B": 29,
+      "C": 16,
+      "S": 95
+    }
+  },
+  "T3_ordinal_control": {
+    "n_folios": 51,
+    "stouffer_z": 0.9602,
+    "stouffer_p": 0.337,
+    "perm_p": 0.327,
+    "significant": false,
+    "mean_rho": 0.0887,
+    "c1399_confirmed": true
+  },
+  "T4_regime": {
+    "regime_ratios": {
+      "REGIME_1": {
+        "single_i": 659,
+        "double_ii": 579,
+        "total_i": 1238,
+        "ii_ratio": 0.4677,
+        "hazard_rate": 0.1555
+      },
+      "REGIME_2": {
+        "single_i": 134,
+        "double_ii": 229,
+        "total_i": 363,
+        "ii_ratio": 0.6309,
+        "hazard_rate": 0.356
+      },
+      "REGIME_3": {
+        "single_i": 447,
+        "double_ii": 605,
+        "total_i": 1052,
+        "ii_ratio": 0.5751,
+        "hazard_rate": 0.2483
+      },
+      "REGIME_4": {
+        "single_i": 81,
+        "double_ii": 141,
+        "total_i": 222,
+        "ii_ratio": 0.6351,
+        "hazard_rate": 0.2182
+      }
+    },
+    "chi2": 51.43,
+    "chi_p": 0.0,
+    "dof": 3,
+    "cramers_v": 0.1338,
+    "significant": true,
+    "regime_3_highest": false,
+    "hazard_confound": {
+      "ii_hazard_correlation": 0.4,
+      "ii_hazard_p": 0.6,
+      "confounded": false
+    }
+  },
+  "T5_successor_entropy": {
+    "entropies": {
+      "no_i": {
+        "entropy": 6.2089,
+        "n_pairs": 18049,
+        "n_unique_successors": 1069
+      },
+      "single_i": {
+        "entropy": 5.9334,
+        "n_pairs": 1179,
+        "n_unique_successors": 187
+      },
+      "double_ii": {
+        "entropy": 5.9883,
+        "n_pairs": 1448,
+        "n_unique_successors": 210
+      }
+    },
+    "single_i_minus_double_ii": -0.0549,
+    "perm_p": 0.585,
+    "significant": false,
+    "terminal_decomposition": {
+      "l": {
+        "no_i": 5.6213,
+        "single_i": null,
+        "double_ii": null
+      },
+      "r": {
+        "no_i": 5.6801,
+        "single_i": 4.0958,
+        "double_ii": null
+      },
+      "h": {
+        "no_i": 6.1931,
+        "single_i": 4.0588,
+        "double_ii": null
+      },
+      "y": {
+        "no_i": 5.8325,
+        "single_i": null,
+        "double_ii": null
+      },
+      "m": {
+        "no_i": 4.7845,
+        "single_i": null,
+        "double_ii": null
+      },
+      "n": {
+        "no_i": 3.4613,
+        "single_i": 5.3944,
+        "double_ii": 5.9529
+      },
+      "bare": {
+        "no_i": 6.2434,
+        "single_i": 6.0598,
+        "double_ii": 5.2809
+      }
+    }
+  },
+  "T6_kernel": {
+    "n_lines": 2406,
+    "corpus_correlations": {
+      "k_rho": -0.1901,
+      "k_p": 0.0,
+      "e_rho": -0.1649,
+      "e_p": 0.0,
+      "a_rho": 0.4032,
+      "a_p": 0.0
+    },
+    "within_folio_mean_rhos": {
+      "k": -0.1158,
+      "e": -0.0902,
+      "a": 0.3449,
+      "n_folios": 82
+    }
+  },
+  "T7_discrimination": {
+    "n_ii_lines": 1068,
+    "n_no_ii_lines": 1352,
+    "n_non_ii_on_ii_lines": 9285,
+    "n_non_ii_on_no_ii_lines": 12257,
+    "hazard_rate_ii_context": 0.2055,
+    "hazard_rate_no_ii_context": 0.165,
+    "hazard_difference": 0.0405,
+    "perm_p": 0.0,
+    "significant": true,
+    "direction": "SAFETY",
+    "interpretation": "Non-ii tokens on ii-lines have HIGHER hazard -> ii deployed for protection"
+  },
+  "T8_cross_system": {
+    "currier_a": {
+      "no_i": 9720,
+      "single_i": 392,
+      "double_ii": 1062,
+      "ii_ratio": 0.7304,
+      "total": 11174
+    },
+    "currier_b": {
+      "no_i": 20221,
+      "single_i": 1321,
+      "double_ii": 1554,
+      "ii_ratio": 0.5405,
+      "total": 23096
+    },
+    "chi2": 149.96,
+    "chi_p": 0.0,
+    "significant": true,
+    "b_depleted_ii": true,
+    "b_section_ratios": {
+      "B": {
+        "single_i": 302,
+        "double_ii": 265,
+        "ii_ratio": 0.4674
+      },
+      "C": {
+        "single_i": 86,
+        "double_ii": 152,
+        "ii_ratio": 0.6387
+      },
+      "H": {
+        "single_i": 134,
+        "double_ii": 280,
+        "ii_ratio": 0.6763
+      },
+      "S": {
+        "single_i": 769,
+        "double_ii": 814,
+        "ii_ratio": 0.5142
+      },
+      "T": {
+        "single_i": 30,
+        "double_ii": 43,
+        "ii_ratio": 0.589
+      }
+    }
+  },
+  "verdict": "SAFETY_ONLY",
+  "verdict_note": "T7 shows ii deployed in high-hazard contexts -> safety mechanism (C1480-C1482) sufficient",
+  "c1399_note": "C1399 CONFIRMED (null)"
+}
