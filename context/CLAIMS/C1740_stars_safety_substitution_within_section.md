@@ -21,7 +21,7 @@ The ey_rate result replicates C1735 (p=0.0007 in Phase 598; p=0.0003 here). The 
 
 **Shows:** The Brunschwig thermal/operational intensity alignment (C1735/C1736) extends to the transformative safety axis (ii). Within Stars, gentle sustained processes (R1) use more preventive safety (e→y) while open-cycle elevated processes (R3) use more transformative safety (ii). This is the first direct confirmation that the safety substitution model (C1732/C1733) aligns with the historical Brunschwig operational framework.
 
-**Does NOT show:** That this extends beyond Stars. The Herbal cross-REGIME test (P4) fails 0/3 — H:R2 reverses predictions. The within-Stars safety signal does not generalize to a multi-section closure-response bridge. DYE_advantage also reverses within Stars (open-cycle has MORE productive disruption), suggesting process quality and safety style are orthogonal dimensions.
+**Does NOT show:** That this extends beyond Stars. The Herbal cross-REGIME test (P4) fails 0/3 — H:R2 reverses predictions. The within-Stars safety signal does not generalize to a multi-section closure-response bridge. DYE_advantage reverses within Stars — S:R3 exceeds S:R1 despite lower preventive safety — suggesting that open-cycle closure events engage a more actively perturbative but locally productive grammar (C1633-C1634). DYE behaves as an intervention-productivity metric, not a generic closure-quality metric, and is orthogonal to the preventive/transformative safety axis.
 
 ## Significance
 

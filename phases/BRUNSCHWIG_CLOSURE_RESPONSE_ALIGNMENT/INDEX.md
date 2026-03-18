@@ -59,16 +59,16 @@ Despite P2 failing the combined 4-axis test, the safety substitution prediction 
 
 The combined permutation fails (p=0.319) because DYE reversal dilutes the concordance score; random shuffles can achieve 3/4 concordant.
 
-### 2. H:R2 Reversal — Highest Sealed ≠ Highest Preventive Safety
+### 2. H:R2 Reversal — High Containment ≠ Preventive Safety
 H:R2 (SEALED_RECIRCULATION) was predicted to have the highest preventive safety but shows the OPPOSITE pattern:
 - ey_rate = 0.0604 (LOWEST of all cells)
 - ii_rate = 0.1136 (HIGHEST of all cells)
 - safety_balance = -0.053 (only NEGATIVE cell)
 
-This completely reverses the P4 predictions (0/3 concordant) and corrupts the Mantel geometry. The most "sealed" cell deploys the most transformative, not preventive, safety. This may reflect that sealed processes, when they fail, require aggressive transformative intervention (ii) rather than gradual preventive stability (e→y).
+This completely reverses the P4 predictions (0/3 concordant) and corrupts the Mantel geometry. The reversal is not random bad luck — it is consistent with the validated apparatus stack. High containment/recirculation does not map monotonically to preventive safety. In the Voynich apparatus architecture, strongly sealed or recirculatory regimes can load onto transformative safety when closure authenticity thresholds are demanding or counterfeitability is high (C1639-C1647, C1733). The bridge's conceptual error was equating sealedness with preventive safety discipline.
 
-### 3. DYE Reversal — Open-Cycle Has MORE Productive Disruption
-Within Stars, R3 (open-cycle) has higher DYE_advantage (0.127) than R1 (gentle sustained, 0.065). This contradicts the prediction that high containment = more productive disruption. Instead, open-cycle processes may require MORE active grammar engagement during closure events because the system is frequently disturbed.
+### 3. DYE Reversal — Intervention-Productivity, Not Generic Closure Quality
+Within Stars, R3 (open-cycle) has higher DYE_advantage (0.127) than R1 (gentle sustained, 0.065). This contradicts the prediction that high containment = more productive disruption. DYE behaves as an intervention-productivity metric (C1633-C1634), not a generic closure-quality metric: S:R3 closure events engage a more actively perturbative but locally productive grammar, consistent with higher ii, open-cycle behavior, and more active rescue/conversion logic. The DYE reversal is not just a bridge failure datum — it suggests R3 closure phenotype is intervention-productive rather than stable-preventive.
 
 ### 4. Cross-Section Predictions Fail Comprehensively
 P3 rank concordance: 0/3. The historical containment ordering (SEALED > PRECISION > GENTLE > OPEN) does not predict the Voynich ey_rate, ii_rate, or CTS ordering across sections. The method-class-to-REGIME mapping does not transfer from thermal intensity alignment to closure-response alignment.
@@ -81,9 +81,9 @@ The closure-demand → closure-response bridge fails at the cell-level (0/4), jo
 2. **Safety substitution within Stars**: ii_rate R1<R3 (p=0.0259, NEW — this phase)
 3. **Within-folio thermal gradient**: THERMAL→ke-depth (C1736, rho=0.303)
 
-The cross-section and cross-REGIME predictions fail because:
-- H:R2 reverses safety predictions (highest sealed ≠ highest preventive)
-- DYE_advantage reverses in Stars (open-cycle > gentle sustained)
-- The cell-to-method-class mapping may be structurally wrong for non-Stars cells
+The cross-section and cross-REGIME predictions fail because the bridge assumed a monotone mapping from containment burden to closure-response phenotype, but the Voynich closure manifold is profile- and threshold-dependent:
+- H:R2 shows that sealedness loads onto transformative safety, not preventive — consistent with authenticity-sensitive containment regimes (C1639-C1647, C1733)
+- DYE behaves as an intervention-productivity metric (C1633-C1634), orthogonal to the preventive/transformative safety axis
+- The Voynich closure apparatus is at least bifurcated by preventive stabilization (e→y) vs transformative rescue (ii), cross-cut by authenticity threshold, counterfeitability, and productive disruption style
 
-The annotation system itself works well (dual lexicon stable, audit sensible), and the Voynich response variables clearly differentiate cells. The failure is in the bridge between historical closure demands and Voynich closure responses at the multi-cell level.
+The annotation system itself works well (dual lexicon stable, audit sensible), and the Voynich response variables clearly differentiate cells. The failure is structural: any historical bridge that collapses the closure manifold to "more sealing = more preventive safety / better closure" is dead on arrival. The Brunschwig alignment is narrower and more section-conditioned than broad multi-cell prototype models assumed. At present, the only replicated Brunschwig→Voynich alignment is thermal-intensity / safety-substitution structure within Stars (C1735, C1740) and within-folio THERMAL gradient (C1736).
