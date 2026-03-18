@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1741 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1742 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1742.
+the highest ID present is C1743.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1741 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1742 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1741 validated constraints are present as canonical one-line claims with tier
+1742 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-17 22:46
-**Version:** FROZEN STATE (1741 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-17 22:54
+**Version:** FROZEN STATE (1742 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1979,8 +1979,9 @@ C1737	Apparatus bundle alignment not confirmed for the tested Brunschwig→secon
 C1738	SEALED_VESSEL universal secondary dominance at cell-mean level: all 5 viable section×REGIME cells show SEALED_VESSEL as dominant secondary profile (range 0.328-0.609). S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328. 4/5 non-ambiguous (margin>0.02). Compressed expected dominant-axis contrast under the tested historical bridge. Cells may still differ meaningfully in relative proportions, geometry, and distributional shape while sharing SEALED_VESSEL top-1. SV vocabulary may encode general containment/waiting operations rather than apparatus-specific sealed-vessel indicators	2	B, apparatus, SEALED_VESSEL, secondary profiles, C1248, C1249
 C1739	Closure-response alignment not confirmed: historical closure-burden features (3 axes: containment density, intervention density, recycle complexity) from 431 Brunschwig 1512 recipes do not predict Voynich 7D closure-response phenotype across section×REGIME cells. 0/4 tests: Mantel r=-0.385, Stars 3/4 concordant but combined p=0.319, rank 0/3, Herbal 0/3. Annotation stable. Failure is structural: bridge assumes monotone containment→preventive safety mapping, but Voynich closure manifold is profile- and threshold-dependent (C1639-C1648, C1732-C1733). H:R2 reversal (lowest ey, highest ii) consistent with authenticity-sensitive containment loading onto transformative safety. Individual safety axes within Stars significant (see C1740)	2	B, Stars, apparatus, Brunschwig, REGIME, closure, safety, C1735, C1737, C1639, C1642
 C1740	Stars safety substitution within-section concordance: within Stars, safety substitution aligns with Brunschwig operational framework at individual axis level. ey_rate R1=0.1823 > R3=0.1039. ii_rate R1=0.0605 < R3=0.0918. DYE_advantage REVERSED (R1<R3). Combined 4-axis p=0.319 (fails due to DYE reversal). First direct confirmation that safety substitution model (C1732/C1733) aligns with Brunschwig framework within-section	2	B, Stars, safety, e-to-y, ii, REGIME, Brunschwig, C1732, C1733, C1735
-C1741	A2 profile categorical safety-style shift: A2 apparatus family categorically shifts safety toward transformative intervention (ii) over preventive stabilization (e→y). Section-controlled OLS: A2 dummy coeff=-0.124, t=-5.31, p=1.2×10⁻⁶, R²=0.579. A2 mean safety_balance=-0.022 vs non-A2=0.096. Continuous forgivingness moderation fails. Herbal A3 surgery recovers thermal-intensity signal: H(A3):R4=0.101 > H(A3):R3=0.032, p=0.021. Stars anchor replicates: R1=0.122 > R3=0.012, p=0.002. Mechanism is profile-categorical, not parametric	2	B, apparatus, safety, A2, profile, REGIME, Herbal, Stars, Brunschwig, C1739, C1740, C1639, C1732, C1733
+C1741	A2 profile categorical safety-style shift: A2 is a compound apparatus regime (high null close recovery C1639, higher authenticity threshold C1644, morphology-selective counterfeiting C1645, weak events lose to null C1642) that categorically shifts safety toward transformative intervention (ii) over preventive stabilization (e→y). Section-controlled OLS: A2 dummy coeff=-0.124, t=-5.31, p=1.2×10⁻⁶, R²=0.579. A2 mean safety_balance=-0.022 vs non-A2=0.096. Continuous forgivingness moderation fails. Stars anchor replicates: R1=0.122 > R3=0.012, p=0.002. A2 is a profile regime, not a one-dimensional forgivingness coordinate	2	B, apparatus, safety, A2, profile, REGIME, Herbal, Stars, Brunschwig, C1739, C1740, C1639, C1732, C1733
 C1742	Closure authenticity modulates safety strategy: per-folio strong_close_fraction positively predicts safety_balance (ey_rate - ii_rate) after section control. Folios with more authentic closures sustain preventive safety; weak/counterfeitable closures shift toward transformative rescue. Section-controlled partial Spearman rho=0.304, p=0.008. Raw rho=0.010, p=0.932 — effect only emerges within sections. DYE orthogonal to safety: Stars rho=-0.282, p=0.204; all folios rho=0.045, p=0.702. Two independent safety modulators identified: (1) apparatus profile A2 vs A3 (discrete, C1741) and (2) closure authenticity (continuous, within-section)	2	B, closure, safety, authenticity, strong_close_fraction, C1642, C1732, C1733, C1741
+C1743	Removing A2 restores Herbal thermal-intensity ordering: within Herbal A3 folios (excluding A2), R4>R3 on safety_balance. Phase 600 Herbal reversal (C1739) was specifically A2 contamination, not general Herbal behavior. Does NOT establish general law "higher REGIME = more preventive safety" (C1730 shows non-monotone global pattern; C494 identifies R4 as precision axis). Result is specific to A3 Herbal context	2	B, Herbal, A2, A3, REGIME, safety, surgery, C1741, C1739, C494, C1730
 
 ---
 
