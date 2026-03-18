@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.72 (2026-03-17) - Phase 599: Apparatus Bundle Alignment
+
+### Summary
+
+Phase 599 tests whether the 1512 Brunschwig method-bundle taxonomy (balneum_mariae→SUSTAINED_HEAT, circulation→SEALED_VESSEL, open_fire→DIRECT_FIRE, sand_bath→PRECISION) predicts the Voynich's secondary apparatus profile shape across section×REGIME cells. Pre-registered predictions with SHA-256 hash, 48 bridge variants for robustness, Mantel geometry concordance test. Verdict: **APPARATUS_ALIGNMENT_NOT_CONFIRMED** (0/4 tests pass). All cells show SEALED_VESSEL as universal secondary dominant. Mantel anti-correlated (r=-0.279). Brunschwig-Voynich alignment is bounded to thermal intensity (C1735/C1736), not apparatus identity.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/APPARATUS_BUNDLE_ALIGNMENT/` -- Phase 599 directory with test script, results, PREDICTIONS.md |
+| **ADDED** | C1737: Apparatus bundle alignment not confirmed -- 0/4 tests, Mantel r=-0.279, 0/48 bridge variants significant |
+| **ADDED** | C1738: SEALED_VESSEL universal secondary dominance -- all 5 cells SEALED_VESSEL dominant (0.328-0.609) |
+| **UPDATED** | INDEX.md -- +2 constraints (1737 total), Phase 599 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.72, 1737 constraints, 599 phases) |
+
+### Key Findings
+
+- **Method-bundle bridge fails comprehensively (C1737):** 48 bridge variants tested. Mantel geometry anti-correlated (r=-0.279, p=0.794). All cells show SEALED_VESSEL as dominant secondary, not the differentiated profiles predicted. Stars R1-R3 directions 1/3 concordant (SUSTAINED_HEAT and DIRECT_FIRE flip vs prediction). Open-cycle cosine=-0.606 (anti-correlated).
+- **SEALED_VESSEL is universal secondary mode (C1738):** After removing DISTILLATION, SEALED_VESSEL dominates all section×REGIME cells (S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328). This suggests the vocabulary encodes general containment/patience operations, not specific sealed apparatus types.
+- **Brunschwig-Voynich alignment boundary established:** Thermal intensity modulation is confirmed (C1735/C1736). Apparatus identity alignment is not confirmed. The 5 apparatus profiles (C1248) represent internal vocabulary differentiation orthogonal to Brunschwig method categories.
+- **DISTILLATION diagnostic clean (S1 p=0.624):** The failure is a genuine secondary-space mismatch, not thermal intensity contamination.
+
+---
+
 ## Version 5.71 (2026-03-17) - Phase 598: Brunschwig 1512 Blind Prediction
 
 ### Summary

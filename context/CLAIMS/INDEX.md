@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1735 validated constraints | **Version:** 5.71 | **Date:** 2026-03-17
+**Total:** 1737 validated constraints | **Version:** 5.72 | **Date:** 2026-03-17
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,20 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 599: Apparatus Bundle Alignment — APPARATUS_ALIGNMENT_NOT_CONFIRMED (C1737-C1738)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1737 | Apparatus bundle alignment not confirmed: Brunschwig 1512 method-bundle taxonomy (balneum_mariae, circulation, open_fire, sand_bath) does NOT predict Voynich secondary apparatus profile shape. 0/4 tests pass: Mantel geometry anti-correlated (median r=-0.279, p=0.794), dominant match 0.25 (all cells SEALED_VESSEL dominated), Stars R1-R3 direction 1/3 concordant (p=0.913), open-cycle cosine=-0.606 (p=0.806). Robust across 48 bridge variants (0% significant). DISTILLATION diagnostic clean (p=0.624). Brunschwig-Voynich alignment bounded to thermal intensity (C1735/C1736), not apparatus identity | 2 | B, apparatus, Brunschwig, REGIME, secondary profiles, C1248, C1735, C1736 | P1_mantel_r=-0.279. P1_p=0.794. P2_match=0.25. P3_concordant=1/3. P4_cosine=-0.606. bridge_variants=48. pct_significant=0%. prediction_hash=5dded97c. |
+| 1738 | SEALED_VESSEL universal secondary dominance: all 5 viable section×REGIME cells show SEALED_VESSEL as dominant secondary profile (range 0.328-0.609). S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328. 4/5 non-ambiguous (margin>0.02). The secondary profile space does not differentiate by apparatus identity. SEALED_VESSEL vocabulary (ok, aii, ee, eey, eeol) may represent general-purpose containment/waiting operations rather than specific apparatus types | 2 | B, apparatus, SEALED_VESSEL, secondary profiles, C1248, C1249 | SV_range=0.328-0.609. n_cells=5. non_ambiguous=4/5. |
+
+**Phase 599 findings (Apparatus Bundle Alignment, APPARATUS_ALIGNMENT_NOT_CONFIRMED):**
+- Method-bundle bridge fails comprehensively (C1737): Pre-registered 48 bridge variants mapping 4 Brunschwig method-bundle classes to Voynich secondary apparatus profiles. All 4 tests fail: Mantel geometry anti-correlated (r=-0.279), dominant profile uniformly SEALED_VESSEL (not differentiated), Stars R1-R3 directions anti-concordant (1/3), open-cycle recipe signature anti-correlated (cos=-0.606). DISTILLATION diagnostic clean — this is a genuine secondary-space failure.
+- SEALED_VESSEL universally dominates secondary space (C1738): Every section×REGIME cell has SEALED_VESSEL as its dominant secondary profile. This constrains C1248 apparatus profile interpretation — the "SEALED_VESSEL" label may be misleading; the vocabulary likely encodes general containment/patience operations that are structurally universal.
+- Brunschwig-Voynich alignment is bounded: thermal intensity alignment holds (C1735, C1736), but apparatus identity alignment does not extend beyond thermal burden to method-specific apparatus shape.
 
 ---
 

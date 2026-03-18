@@ -1,0 +1,178 @@
+{
+  "phase": "APPARATUS_BUNDLE_ALIGNMENT",
+  "phase_number": 599,
+  "preregistration_hash": "5dded97c42e8af61bdaab5fb20f8a1a7e8f04d3ffd29d9524d8e550358230314",
+  "n_recipes": 431,
+  "n_bridge_variants": 48,
+  "bundle_sizes": {
+    "OPEN_CYCLE_ELEVATED": 56,
+    "GENTLE_SUSTAINED": 230,
+    "SEALED_RECIRCULATION": 29,
+    "PRECISION_CONTROLLED": 14
+  },
+  "cell_sizes": {
+    "H:REGIME_2": 13,
+    "H:REGIME_3": 5,
+    "H:REGIME_4": 12,
+    "S:REGIME_1": 10,
+    "S:REGIME_3": 12
+  },
+  "observed_secondary_profiles": {
+    "H:REGIME_2": {
+      "SEALED_VESSEL": 0.4884682721067736,
+      "SUSTAINED_HEAT": 0.27687998668196917,
+      "PRECISION": 0.17107054697637708,
+      "DIRECT_FIRE": 0.06358119423488023
+    },
+    "H:REGIME_3": {
+      "SEALED_VESSEL": 0.3275537022914505,
+      "SUSTAINED_HEAT": 0.3141776340552554,
+      "PRECISION": 0.2640920442383161,
+      "DIRECT_FIRE": 0.09417661941497807
+    },
+    "H:REGIME_4": {
+      "SEALED_VESSEL": 0.3743094659096968,
+      "SUSTAINED_HEAT": 0.353343657054633,
+      "PRECISION": 0.23565584221397454,
+      "DIRECT_FIRE": 0.036691034821695584
+    },
+    "S:REGIME_1": {
+      "SEALED_VESSEL": 0.6091121401295438,
+      "SUSTAINED_HEAT": 0.285179594801525,
+      "PRECISION": 0.04487535405341092,
+      "DIRECT_FIRE": 0.06083291101552033
+    },
+    "S:REGIME_3": {
+      "SEALED_VESSEL": 0.5158373298243206,
+      "SUSTAINED_HEAT": 0.34397719973308216,
+      "PRECISION": 0.10254507355830095,
+      "DIRECT_FIRE": 0.03764039688429613
+    }
+  },
+  "P1_mantel_geometry": {
+    "median_r": -0.27946566147806096,
+    "median_p": 0.7936000000000001,
+    "pct_positive": 12.5,
+    "pct_significant": 0.0,
+    "r_range": [
+      -0.4785984984029348,
+      0.0843373856174983
+    ],
+    "pass": false,
+    "threshold": "median_r > 0.30, median_p < 0.05, pct_sig >= 75%"
+  },
+  "P2_dominant_match": {
+    "median_match_fraction": 0.25,
+    "median_top2_overlap": 1.0,
+    "permutation_p": 0.16376724655068986,
+    "pass": false,
+    "observed_dominants": {
+      "H:REGIME_2": "SEALED_VESSEL",
+      "H:REGIME_3": "SEALED_VESSEL",
+      "H:REGIME_4": "SEALED_VESSEL",
+      "S:REGIME_1": "SEALED_VESSEL",
+      "S:REGIME_3": "SEALED_VESSEL"
+    },
+    "threshold": "match >= 0.6, permutation p < 0.05"
+  },
+  "P3_stars_direction": {
+    "concordant": 1,
+    "total_preregistered": 3,
+    "permutation_p": 0.9128174365126974,
+    "pass": false,
+    "details": {
+      "SEALED_VESSEL": {
+        "r1_mean": 0.6091121401295438,
+        "r3_mean": 0.5158373298243206,
+        "diff": 0.09327481030522322,
+        "predicted_sign": 1,
+        "observed_sign": 1,
+        "concordant": true
+      },
+      "SUSTAINED_HEAT": {
+        "r1_mean": 0.285179594801525,
+        "r3_mean": 0.34397719973308216,
+        "diff": -0.05879760493155717,
+        "predicted_sign": 1,
+        "observed_sign": -1,
+        "concordant": false
+      },
+      "DIRECT_FIRE": {
+        "r1_mean": 0.06083291101552033,
+        "r3_mean": 0.03764039688429613,
+        "diff": 0.023192514131224203,
+        "predicted_sign": -1,
+        "observed_sign": 1,
+        "concordant": false
+      },
+      "PRECISION": {
+        "r1_mean": 0.04487535405341092,
+        "r3_mean": 0.10254507355830095,
+        "diff": -0.05766971950489003,
+        "status": "EXPLORATORY"
+      }
+    },
+    "threshold": "3/3 concordant, permutation p < 0.05"
+  },
+  "P4_open_cycle": {
+    "n_open_cycle": 207,
+    "n_single_pass": 224,
+    "cosine_similarity": -0.6062899034215572,
+    "permutation_p": 0.8056388722255549,
+    "pass": false,
+    "predicted_direction": {
+      "SEALED_VESSEL": 0.11987113020293291,
+      "SUSTAINED_HEAT": -0.3562805510294771,
+      "PRECISION": 0.06921196859724485,
+      "DIRECT_FIRE": 0.16719745222929938
+    },
+    "observed_direction": {
+      "SEALED_VESSEL": -0.09327481030522322,
+      "SUSTAINED_HEAT": 0.05879760493155717,
+      "PRECISION": 0.05766971950489003,
+      "DIRECT_FIRE": -0.023192514131224203
+    },
+    "threshold": "cosine > 0, permutation p < 0.05"
+  },
+  "S1_distillation_diagnostic": {
+    "herbal_r2_mean": 0.12268576923076924,
+    "herbal_r4_mean": 0.13086158333333334,
+    "mann_whitney_p": 0.6243960038187131,
+    "clean": true,
+    "contaminated": false
+  },
+  "S2_section_diversity": {
+    "S": {
+      "mean_entropy": 1.4388615126703832,
+      "std_entropy": 0.15230510158739324,
+      "n": 23
+    },
+    "H": {
+      "mean_entropy": 1.6722023412709959,
+      "std_entropy": 0.15373053642936013,
+      "n": 32
+    },
+    "T": {
+      "mean_entropy": 1.4996279109665522,
+      "std_entropy": 0.043543310477156205,
+      "n": 2
+    },
+    "B": {
+      "mean_entropy": 1.598803639566027,
+      "std_entropy": 0.1546317237993038,
+      "n": 20
+    },
+    "C": {
+      "mean_entropy": 1.5986173319176114,
+      "std_entropy": 0.16051223621189595,
+      "n": 5
+    }
+  },
+  "S3_hr3_sensitivity": {
+    "mantel_r_with_hr3": -0.27946566147806096,
+    "mantel_r_without_hr3": 0.0,
+    "fragile": false
+  },
+  "verdict": "APPARATUS_ALIGNMENT_NOT_CONFIRMED (BRIDGE_SENSITIVE)",
+  "passes": 0
+}

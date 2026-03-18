@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1735 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1737 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1736.
+the highest ID present is C1738.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1735 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1737 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1735 validated constraints are present as canonical one-line claims with tier
+1737 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-17 20:03
-**Version:** FROZEN STATE (1735 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-17 20:45
+**Version:** FROZEN STATE (1737 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1975,6 +1975,8 @@ C1732	Folio-level safety substitution: ii and e-to-y are safety substitutes oper
 C1733	Two-strategy safety architecture with forgiveness asymmetry. e-to-y pathway (preventive, e-HEAD domain) positively predicts folio forgiveness. ii pathway (transformative, a-HEAD domain) anti-predicts forgiveness. Preventive safety (avoiding hazardous territory) produces forgiving programs; transformative safety (operating within hazardous territory with categorical protections, C1482) produces less forgiving programs	2	B, MIDDLE, atom, ii, e-to-y, forgiveness, safety, folio, AXM, C1462, C1482
 C1735	1512 thermal intensity alignment: held-out 1512 Brunschwig gentle/elevated fire degree distinction predicts e-to-y safe pathway rate between R1 and R3+R4 within Stars section. Instruction class entropy correlates with ke-depth after size control. Alignment is thermal intensity, NOT apparatus identity. Fire degrees do not predict REGIME distribution (P1 FAIL), k/(k+ke) within sections, r-to-a routing, or apparatus profile scores within sections (598d FAIL)	2	B, Brunschwig, REGIME, safety, e-to-y, ke-depth, C1457, C1225
 C1736	Within-folio THERMAL-safety paragraph gradient: paragraphs with higher THERMAL category fraction show higher e-to-y rate and deeper ke engagement within individual folios. No systematic ordinal gradient. Section confound impossible at paragraph level. Strongest single result from Phase 598	2	B, paragraph, THERMAL, safety, e-to-y, ke-depth, C1399, C1400, C1250
+C1737	Apparatus bundle alignment not confirmed: Brunschwig 1512 method-bundle taxonomy (balneum_mariae, circulation, open_fire, sand_bath) does NOT predict Voynich secondary apparatus profile shape. 0/4 tests pass: Mantel geometry anti-correlated, dominant match 0.25 (all cells SEALED_VESSEL dominated), Stars R1-R3 direction 1/3 concordant, open-cycle cosine=-0.606. Robust across 48 bridge variants (0% significant). DISTILLATION diagnostic clean. Brunschwig-Voynich alignment bounded to thermal intensity (C1735/C1736), not apparatus identity	2	B, apparatus, Brunschwig, REGIME, secondary profiles, C1248, C1735, C1736
+C1738	SEALED_VESSEL universal secondary dominance: all 5 viable section×REGIME cells show SEALED_VESSEL as dominant secondary profile (range 0.328-0.609). S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328. 4/5 non-ambiguous (margin>0.02). The secondary profile space does not differentiate by apparatus identity. SEALED_VESSEL vocabulary (ok, aii, ee, eey, eeol) may represent general-purpose containment/waiting operations rather than specific apparatus types	2	B, apparatus, SEALED_VESSEL, secondary profiles, C1248, C1249
 
 ---
 
