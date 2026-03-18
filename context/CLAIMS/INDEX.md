@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1739 validated constraints | **Version:** 5.73 | **Date:** 2026-03-17
+**Total:** 1741 validated constraints | **Version:** 5.74 | **Date:** 2026-03-17
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 601: Safety Style Moderation — STARS_ONLY_REPLICATION (C1741-C1742)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1741 | A2 profile categorical safety-style shift: A2 apparatus family categorically shifts safety toward transformative intervention (ii) over preventive stabilization (e→y). Section-controlled OLS: A2 dummy coeff=-0.124, t=-5.31, p=1.2×10⁻⁶, R²=0.579. A2 mean safety_balance=-0.022 vs non-A2=0.096. Continuous forgivingness moderation fails (P1 partial rho=-0.047, p=0.686; P2 F=0.457, p=0.506). Herbal A3 surgery recovers thermal-intensity signal: H(A3):R4=0.101 > H(A3):R3=0.032, p=0.021. Stars anchor replicates: R1=0.122 > R3=0.012, p=0.002. Mechanism is profile-categorical, not parametric | 2 | B, apparatus, safety, A2, profile, REGIME, Herbal, Stars, Brunschwig, C1739, C1740, C1639, C1732, C1733 | S3_A2_coeff=-0.124. S3_t=-5.31. S3_p=1.2e-6. S3_R2=0.579. S2_p=0.002. P3_p=0.021. P1_partial_rho=-0.047. P1_p=0.686. P2_F=0.457. P2_p=0.506. prediction_hash=f485ef57. |
+| 1742 | Closure authenticity modulates safety strategy: per-folio strong_close_fraction positively predicts safety_balance (ey_rate - ii_rate) after section control. Folios with more authentic closures sustain preventive safety; weak/counterfeitable closures shift toward transformative rescue. Section-controlled partial Spearman rho=0.304, p=0.008 (n=76). Raw rho=0.010, p=0.932 — effect only emerges within sections. DYE orthogonal to safety: Stars rho=-0.282, p=0.204; all folios rho=0.045, p=0.702. Two independent safety modulators identified: (1) apparatus profile A2 vs A3 (discrete, C1741) and (2) closure authenticity (continuous, within-section) | 2 | B, closure, safety, authenticity, strong_close_fraction, C1642, C1732, C1733, C1741 | P4_partial_rho=0.304. P4_p=0.008. P4_raw_rho=0.010. S1a_rho=-0.282. S1a_p=0.204. S1b_rho=0.045. S1b_p=0.702. |
+
+**Phase 601 findings (Safety Style Moderation, STARS_ONLY_REPLICATION):**
+- Formal verdict STARS_ONLY_REPLICATION per pre-registered logic (core test P2 and global P1 both fail), but supplementary findings are substantial. The safety-style moderation is real but operates at the discrete profile level (A2 vs non-A2), not as a continuous forgivingness gradient.
+- A2 profile categorically shifts safety toward transformative (C1741): S3 A2 dummy captures most of the variance (R²=0.579, p=1e-6). A2 folios show safety_balance=-0.022 (transformative-dominant) vs non-A2=0.096 (preventive-dominant). This explains the H:R2 reversal in C1739 — H:R2 = all A2.
+- Herbal A3 surgery recovers thermal-intensity signal (C1741 P3): Removing A2, H(A3):R4=0.101 > H(A3):R3=0.032 (p=0.021). The Brunschwig thermal-intensity alignment extends to Herbal A3 once the A2 categorical shift is removed.
+- Closure authenticity modulates safety within sections (C1742): strong_close_fraction → safety_balance rho=0.304, p=0.008 (section-controlled). Folios with more strong closures sustain preventive safety. Two independent safety modulators: apparatus profile (discrete) and closure authenticity (continuous, within-section).
+- DYE confirmed orthogonal to safety axis (S1a/S1b both p>0.20). P2 fails because Herbal family×REGIME perfectly confounded — REGIME dummies already absorb A2/A3 contrast.
 
 ---
 

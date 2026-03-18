@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.74 (2026-03-17) - Phase 601: Safety Style Moderation
+
+### Summary
+
+Phase 601 tests whether A2-like apparatus forgivingness/authenticity regime shifts safety style toward transformative intervention. Pre-registered 8-test design: Stars confirmatory anchor (S2), global forgivingness association (P1), Herbal within-REGIME core test (P2), Herbal A3 surgery (P3), closure authenticity (P4), DYE orthogonality (S1a/S1b), A2 dummy sensitivity (S3). Verdict: **STARS_ONLY_REPLICATION** (S2+P3+P4 pass, P1+P2 fail). The continuous forgivingness moderation fails, but the safety-style shift operates as a massive discrete A2 profile effect (S3 p=1e-6). Herbal A3 surgery recovers thermal-intensity signal (P3 p=0.021). Closure authenticity modulates safety within sections (P4 rho=0.304, p=0.008).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SAFETY_STYLE_MODERATION/` -- Phase 601 directory with test script, results, PREDICTIONS.md |
+| **ADDED** | C1741: A2 profile categorical safety-style shift -- S3 A2 dummy coeff=-0.124, t=-5.31, p=1e-6. Stars anchor p=0.002. Surgery p=0.021 |
+| **ADDED** | C1742: Closure authenticity modulates safety strategy -- strong_close_fraction partial rho=0.304, p=0.008. DYE orthogonal (p>0.20) |
+| **UPDATED** | INDEX.md -- +2 constraints (1741 total), Phase 601 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.74, 1741 constraints, 601 phases) |
+
+### Key Findings
+
+- **A2 profile categorically shifts safety toward transformative (C1741):** Section-controlled A2 dummy coefficient=-0.124, t=-5.31, p=1.2×10⁻⁶, R²=0.579. A2 mean safety_balance=-0.022 vs non-A2=0.096. The moderation is real but discrete (profile-categorical), not a continuous forgivingness gradient. This is the mechanism behind the H:R2 reversal (C1739): H:R2 = all A2, and A2 categorically prefers transformative safety.
+- **Continuous forgivingness moderation fails (P1, P2):** P1 section-controlled partial Spearman rho=-0.047, p=0.686 (raw rho=-0.383, p=0.0006 — between-section only). P2 Herbal nested OLS: REGIME alone R²=0.696, adding mean_null_dye dR²=0.006, F=0.457, p=0.506. Family×REGIME perfect confound in Herbal means REGIME dummies already absorb A2/A3 contrast.
+- **Herbal A3 surgery recovers thermal-intensity signal (C1741 P3):** Removing A2, H(A3):R4=0.101 > H(A3):R3=0.032, p=0.021. The Brunschwig thermal-intensity alignment extends to Herbal A3 once A2's categorical shift is removed.
+- **Closure authenticity modulates safety within sections (C1742):** strong_close_fraction → safety_balance partial rho=0.304, p=0.008. Two independent safety modulators: apparatus profile (discrete, A2 vs A3) and closure authenticity (continuous, within-section). DYE confirmed orthogonal to safety (S1a p=0.204, S1b p=0.702).
+
+---
+
 ## Version 5.73 (2026-03-17) - Phase 600: Brunschwig Closure-Response Alignment
 
 ### Summary

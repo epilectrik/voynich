@@ -169,9 +169,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 5.73 |
-| Constraints | 1739 validated |
-| Phases | 600 completed |
+| Version | 5.74 |
+| Constraints | 1741 validated |
+| Phases | 601 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 passed) |
 | Characterization | ACTIVE |
@@ -198,7 +198,7 @@ The user can ask for precision when needed. Default to clarity over pedantry in 
 
 > **"I don't know" is NEVER an acceptable answer about this project.**
 
-The context system contains 1,220 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
+The context system contains 1,741 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
 
 1. **STOP** - Do not answer from memory or intuition
 2. **SEARCH** - Grep/read `context/` for relevant constraints
