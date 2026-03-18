@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1737 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1739 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1738.
+the highest ID present is C1740.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1737 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1739 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1737 validated constraints are present as canonical one-line claims with tier
+1739 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-17 20:56
-**Version:** FROZEN STATE (1737 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-17 21:56
+**Version:** FROZEN STATE (1739 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1977,6 +1977,8 @@ C1735	1512 thermal intensity alignment: held-out 1512 Brunschwig gentle/elevated
 C1736	Within-folio THERMAL-safety paragraph gradient: paragraphs with higher THERMAL category fraction show higher e-to-y rate and deeper ke engagement within individual folios. No systematic ordinal gradient. Section confound impossible at paragraph level. Strongest single result from Phase 598	2	B, paragraph, THERMAL, safety, e-to-y, ke-depth, C1399, C1400, C1250
 C1737	Apparatus bundle alignment not confirmed for the tested Brunschwig→secondary-profile bridge family. 0/4 tests pass: Mantel geometry anti-correlated, dominant match 0.25 (all cells SEALED_VESSEL dominated), Stars R1-R3 direction 1/3 concordant, open-cycle cosine=-0.606. Robustly negative across 48 bridge variants (0% significant). DISTILLATION diagnostic clean. Result is failure of the tested bridge family, not disconfirmation of Voynich apparatus structure itself (which remains validated by C1248, C1380, C1625-C1629, C1640, C1668, C1722). P4 design concern: distill_references>=2 may not correspond to open-cycle/unseal intervention (C1247)	2	B, apparatus, Brunschwig, REGIME, secondary profiles, C1248, C1735, C1736
 C1738	SEALED_VESSEL universal secondary dominance at cell-mean level: all 5 viable section×REGIME cells show SEALED_VESSEL as dominant secondary profile (range 0.328-0.609). S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328. 4/5 non-ambiguous (margin>0.02). Compressed expected dominant-axis contrast under the tested historical bridge. Cells may still differ meaningfully in relative proportions, geometry, and distributional shape while sharing SEALED_VESSEL top-1. SV vocabulary may encode general containment/waiting operations rather than apparatus-specific sealed-vessel indicators	2	B, apparatus, SEALED_VESSEL, secondary profiles, C1248, C1249
+C1739	Closure-response alignment not confirmed: historical closure-burden features (3 axes: containment density, intervention density, recycle complexity) from 431 Brunschwig 1512 recipes do not predict Voynich 7D closure-response phenotype across section×REGIME cells. 0/4 tests: Mantel r=-0.385, Stars R1-R3 3/4 concordant but combined p=0.319, rank concordance 0/3, Herbal R2-R4 0/3 concordant. Annotation stable. Individual safety axes within Stars significant. Failure is bridge-structural, not variable-quality	2	B, Stars, apparatus, Brunschwig, REGIME, closure, safety, C1735, C1737
+C1740	Stars safety substitution within-section concordance: within Stars, safety substitution aligns with Brunschwig operational framework at individual axis level. ey_rate R1=0.1823 > R3=0.1039. ii_rate R1=0.0605 < R3=0.0918. DYE_advantage REVERSED (R1<R3). Combined 4-axis p=0.319 (fails due to DYE reversal). First direct confirmation that safety substitution model (C1732/C1733) aligns with Brunschwig framework within-section	2	B, Stars, safety, e-to-y, ii, REGIME, Brunschwig, C1732, C1733, C1735
 
 ---
 

@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "phase": 600,
+    "name": "BRUNSCHWIG_CLOSURE_RESPONSE_ALIGNMENT",
+    "prediction_hash": "eb6824e86b0cc4c08c68f7a3c2a2ed93be637bd200cc162dc78a8e23afa1898a",
+    "n_recipes": 431,
+    "n_folios": 76,
+    "n_cells": 5,
+    "elapsed_seconds": 22.504002332687378
+  },
+  "annotation": {
+    "H1_strict_broad_corr": 0.7442918167455045,
+    "H1_strict_broad_p": 3.1727523975588235e-77,
+    "H2_strict_broad_corr": 0.8424066922813036,
+    "H2_strict_broad_p": 2.8613262339028416e-117,
+    "annotation_stable": true,
+    "class_prototypes": {
+      "GENTLE_SUSTAINED": [
+        0.2536714696293482,
+        0.027809308278757754,
+        2.0652173913043477
+      ],
+      "OPEN_CYCLE_ELEVATED": [
+        0.2532730067246425,
+        0.1405667701090849,
+        4.857142857142857
+      ],
+      "SEALED_RECIRCULATION": [
+        1.6960617909908748,
+        0.0555695668691234,
+        5.241379310344827
+      ],
+      "PRECISION_CONTROLLED": [
+        0.3998675164949027,
+        0.18524320533358837,
+        12.0
+      ]
+    },
+    "class_recipe_counts": {
+      "OPEN_CYCLE_ELEVATED": 56,
+      "GENTLE_SUSTAINED": 230,
+      "SEALED_RECIRCULATION": 29,
+      "PRECISION_CONTROLLED": 14
+    }
+  },
+  "S1_audit": [
+    {
+      "group": "TOP_H1",
+      "id": "B1512-057",
+      "heading": "for three weeks, and distilled again with the fire",
+      "method_class": "SEALED_RECIRCULATION",
+      "H1_strict": 4.255,
+      "H2_strict": 0.0,
+      "H3": 3,
+      "excerpt": "one degree lower, and again powdered and digested. Thus each time eight days less and the fire half a degree less under "
+    },
+    {
+      "group": "TOP_H1",
+      "id": "B1512-266",
+      "heading": "Another water that powerfully and gently clarifies the eyes.",
+      "method_class": "SEALED_RECIRCULATION",
+      "H1_strict": 4.31,
+      "H2_strict": 0.0,
+      "H3": 1,
+      "excerpt": "Take Celidonia (celandine) with the root, 6 handfuls. Ruten (rue). Eufrasie (eyebright), each 2 handfuls. Radicis Scabio"
+    },
+    {
+      "group": "TOP_H1",
+      "id": "B1512-030",
+      "heading": "The Seventh Chapter",
+      "method_class": "SEALED_RECIRCULATION",
+      "H1_strict": 5.051,
+      "H2_strict": 0.0,
+      "H3": 2,
+      "excerpt": "Some others make another circulatorium (circulatory vessel) from a cucurbit, called alembicum cecum (blind alembic), a b"
+    },
+    {
+      "group": "TOP_H1",
+      "id": "B1512-059",
+      "heading": "The Twentieth Chapter.",
+      "method_class": "SEALED_RECIRCULATION",
+      "H1_strict": 5.263,
+      "H2_strict": 0.0,
+      "H3": 0,
+      "excerpt": "as in the quinta essentia of wine, then one may take the glass that is properly called a circulatorium (circulating vess"
+    },
+    {
+      "group": "TOP_H1",
+      "id": "B1512-036",
+      "heading": "The Eleventh Chapter.",
+      "method_class": "SEALED_RECIRCULATION",
+      "H1_strict": 5.369,
+      "H2_strict": 0.0,
+      "H3": 2,
+      "excerpt": "After you have collected all the spiritus (spirits) in the receptacle \u2014 which is recognized when the vessel has ceased t"
+    },
+    {
+      "group": "BOT_H1",
+      "id": "B1512-039",
+      "heading": "for him who desires to know more of this,",
+      "method_class": "GENTLE_SUSTAINED",
+      "H1_strict": 0.0,
+      "H2_strict": 0.0,
+      "H3": 7,
+      "excerpt": "he may come to me and I will let him see further. But for the sensible man, as a craftsman well knows how to direct his "
+    },
+    {
+      "group": "BOT_H1",
+      "id": "B1512-044",
+      "heading": "for that is the phlegma. But some, for the sake of",
+      "method_class": "PRECISION_CONTROLLED",
+      "H1_strict": 0.0,
+      "H2_strict": 0.787,
+      "H3": 0,
+      "excerpt": "brevity and to avoid the trouble of labor and expense, put it in a tinned iron pan, boiled over a gentle coal fire, as l"
+    },
+    {
+      "group": "BOT_H1",
+      "id": "B1512-047",
+      "heading": "chapter of the first book on the fourth leaf,",
+      "method_class": "GENTLE_SUSTAINED",
+      "H1_strict": 0.0,
+      "H2_strict": 0.0,
+      "H3": 2,
+      "excerpt": "and that placed in a lime kiln, where stones and lime are burned at the very hottest, that is set upon the very lowest l"
+    },
+    {
+      "group": "BOT_H1",
+      "id": "B1512-062",
+      "heading": "for a while, and the glass will crack apart in",
+      "method_class": null,
+      "H1_strict": 0.0,
+      "H2_strict": 0.0,
+      "H3": 4,
+      "excerpt": "the aforesaid manner as if it had been sawn through with a saw. In this way you can cut glasses large or small according"
+    },
+    {
+      "group": "BOT_H1",
+      "id": "B1512-063",
+      "heading": "for as long until the washing liquid that you have",
+      "method_class": "OPEN_CYCLE_ELEVATED",
+      "H1_strict": 0.0,
+      "H2_strict": 0.363,
+      "H3": 6,
+      "excerpt": "poured over it comes away pure and clean after the shaking or agitation, as it was when the water was first poured over "
+    }
+  ],
+  "S2_safety_balance": {
+    "per_cell": {
+      "H:REGIME_2": -0.05322235067412102,
+      "H:REGIME_3": 0.0322924173277398,
+      "H:REGIME_4": 0.10063150484572617,
+      "S:REGIME_1": 0.12172711673245941,
+      "S:REGIME_3": 0.012014425427847614
+    },
+    "tau": 0.19999999999999998,
+    "tau_p": 0.8166666666666667
+  },
+  "cell_centroids": {
+    "H:REGIME_2": {
+      "n": 11,
+      "method_class": "SEALED_RECIRCULATION",
+      "raw": [
+        0.27081818181818185,
+        0.24848484848484845,
+        0.011436070493215126,
+        0.704029736060606,
+        0.395776290909091,
+        0.0603786419911467,
+        0.11360099266526773
+      ],
+      "response_names": [
+        "mean_CTS",
+        "strong_close_fraction",
+        "DYE_advantage",
+        "mean_dv_magnitude",
+        "mean_ACS",
+        "ey_rate",
+        "ii_rate"
+      ]
+    },
+    "H:REGIME_3": {
+      "n": 5,
+      "method_class": "OPEN_CYCLE_ELEVATED",
+      "raw": [
+        0.47750000000000004,
+        0.5,
+        0.18036825245342109,
+        0.72469885,
+        0.5620534,
+        0.10214141527299067,
+        0.06984899794525087
+      ],
+      "response_names": [
+        "mean_CTS",
+        "strong_close_fraction",
+        "DYE_advantage",
+        "mean_dv_magnitude",
+        "mean_ACS",
+        "ey_rate",
+        "ii_rate"
+      ]
+    },
+    "H:REGIME_4": {
+      "n": 9,
+      "method_class": "PRECISION_CONTROLLED",
+      "raw": [
+        0.38382222222222223,
+        0.42592592592592593,
+        0.10217283819139153,
+        0.788744950925926,
+        0.5187698518518519,
+        0.15944424840521215,
+        0.05881274355948599
+      ],
+      "response_names": [
+        "mean_CTS",
+        "strong_close_fraction",
+        "DYE_advantage",
+        "mean_dv_magnitude",
+        "mean_ACS",
+        "ey_rate",
+        "ii_rate"
+      ]
+    },
+    "S:REGIME_1": {
+      "n": 10,
+      "method_class": "GENTLE_SUSTAINED",
+      "raw": [
+        0.34998999999999997,
+        0.25483821733821727,
+        0.0644922095401909,
+        0.7117839878192918,
+        0.4377527633577533,
+        0.18226933006267854,
+        0.06054221333021914
+      ],
+      "response_names": [
+        "mean_CTS",
+        "strong_close_fraction",
+        "DYE_advantage",
+        "mean_dv_magnitude",
+        "mean_ACS",
+        "ey_rate",
+        "ii_rate"
+      ]
+    },
+    "S:REGIME_3": {
+      "n": 12,
+      "method_class": "OPEN_CYCLE_ELEVATED",
+      "raw": [
+        0.2938,
+        0.1667087542087542,
+        0.12652648141917708,
+        0.6551251231207912,
+        0.4235660665193603,
+        0.10385144826082211,
+        0.09183702283297453
+      ],
+      "response_names": [
+        "mean_CTS",
+        "strong_close_fraction",
+        "DYE_advantage",
+        "mean_dv_magnitude",
+        "mean_ACS",
+        "ey_rate",
+        "ii_rate"
+      ]
+    }
+  },
+  "P1_mantel": {
+    "test": "Mantel geometry concordance (3D pred vs 7D obs)",
+    "primary_euclidean": {
+      "r": -0.38533731779422625,
+      "p": 0.8656
+    },
+    "sensitivity_cosine": {
+      "r": -0.03058232680906557,
+      "p": 0.5388
+    },
+    "passed": false
+  },
+  "P2_stars_direction": {
+    "test": "Stars R1 vs R3 directional concordance (4 axes)",
+    "n_r1": 10,
+    "n_r3": 12,
+    "axes": [
+      {
+        "axis": "ey_rate",
+        "R1_mean": 0.18226933006267854,
+        "R3_mean": 0.10385144826082214,
+        "predicted_direction": "greater",
+        "observed_concordant": true,
+        "U": 112.0,
+        "p": 0.0003421299024737222
+      },
+      {
+        "axis": "ii_rate",
+        "R1_mean": 0.06054221333021913,
+        "R3_mean": 0.09183702283297453,
+        "predicted_direction": "less",
+        "observed_concordant": true,
+        "U": 30.0,
+        "p": 0.02587711644326532
+      },
+      {
+        "axis": "DYE_advantage",
+        "R1_mean": 0.0644922095401909,
+        "R3_mean": 0.12652648141917708,
+        "predicted_direction": "greater",
+        "observed_concordant": false,
+        "U": 14.0,
+        "p": 0.9989157157904556
+      },
+      {
+        "axis": "strong_close_fraction",
+        "R1_mean": 0.25483821733821727,
+        "R3_mean": 0.1667087542087542,
+        "predicted_direction": "greater",
+        "observed_concordant": true,
+        "U": 75.0,
+        "p": 0.16827662958975875
+      }
+    ],
+    "concordant": 3,
+    "combined_p": 0.31853629274145173,
+    "safety_reversal": false,
+    "passed": false
+  },
+  "P3_rank_concordance": {
+    "test": "Historical rank concordance (3 Kendall taus)",
+    "containment_rank": [
+      "SEALED_RECIRCULATION",
+      "PRECISION_CONTROLLED",
+      "GENTLE_SUSTAINED",
+      "OPEN_CYCLE_ELEVATED"
+    ],
+    "intervention_rank": [
+      "PRECISION_CONTROLLED",
+      "OPEN_CYCLE_ELEVATED",
+      "SEALED_RECIRCULATION",
+      "GENTLE_SUSTAINED"
+    ],
+    "pairs": [
+      {
+        "pair": "CONTAINMENT vs ey_rate",
+        "tau": -0.10540925533894596,
+        "p": 0.8005421074231263,
+        "concordant": false
+      },
+      {
+        "pair": "INTERVENTION vs ii_rate",
+        "tau": -0.31622776601683794,
+        "p": 0.44848886103153174,
+        "concordant": false
+      },
+      {
+        "pair": "CONTAINMENT vs mean_CTS",
+        "tau": -0.31622776601683794,
+        "p": 0.44848886103153174,
+        "concordant": false
+      }
+    ],
+    "concordant": 0,
+    "any_sig_010": false,
+    "passed": false
+  },
+  "P4_herbal_direction": {
+    "test": "Herbal R2 vs R4 directional concordance (3 axes)",
+    "n_r2": 11,
+    "n_r4": 9,
+    "axes": [
+      {
+        "axis": "ey_rate",
+        "R2_mean": 0.06037864199114671,
+        "R4_mean": 0.15944424840521215,
+        "predicted_direction": "greater",
+        "observed_concordant": false,
+        "U": 2.0,
+        "p": 0.9998672049903037
+      },
+      {
+        "axis": "ii_rate",
+        "R2_mean": 0.11360099266526773,
+        "R4_mean": 0.05881274355948599,
+        "predicted_direction": "less",
+        "observed_concordant": false,
+        "U": 83.0,
+        "p": 0.995118015075928
+      },
+      {
+        "axis": "DYE_advantage",
+        "R2_mean": 0.011436070493215126,
+        "R4_mean": 0.10217283819139156,
+        "predicted_direction": "greater",
+        "observed_concordant": false,
+        "U": 22.0,
+        "p": 0.9833009268303909
+      }
+    ],
+    "concordant": 0,
+    "any_sig_010": false,
+    "passed": false
+  },
+  "S3_sensitivity": {
+    "P1_without_HR3": {
+      "r": 0.08571428571428573,
+      "p": 0.4914
+    },
+    "P3_containment_ey_without_HR3": {
+      "tau": -0.3333333333333334,
+      "p": 0.75
+    }
+  },
+  "verdict": "CLOSURE_RESPONSE_NOT_CONFIRMED",
+  "passes": 0,
+  "verification": {
+    "mean_ey_rate": 0.13769496835895925,
+    "mean_ii_rate": 0.07171885382534968,
+    "n_common_folios": 76,
+    "n_folios_with_acs": 76
+  }
+}

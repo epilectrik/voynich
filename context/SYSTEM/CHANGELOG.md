@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.73 (2026-03-17) - Phase 600: Brunschwig Closure-Response Alignment
+
+### Summary
+
+Phase 600 tests whether historical closure demands (containment burden, open intervention, recycle complexity) extracted from 431 Brunschwig 1512 recipes predict the Voynich 7D closure-response phenotype across section×REGIME cells. Expert-corrected v2 design with 3 separate predictor axes (not composite), dual lexicon with annotation audit, rank concordance instead of cosine-sign bridges, 7D response vector (CTS, strong_close_fraction, DYE_advantage, DVA, ACS, ey_rate, ii_rate). Verdict: **CLOSURE_RESPONSE_NOT_CONFIRMED** (0/4 tests pass). Mantel anti-concordant (r=-0.385), H:R2 comprehensively reverses predictions. Stars safety substitution confirmed at individual axis level: ey_rate replicates C1735 (p=0.0003), ii_rate NEW significant (p=0.0259). Brunschwig-Voynich alignment remains limited to within-section/within-folio effects.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BRUNSCHWIG_CLOSURE_RESPONSE_ALIGNMENT/` -- Phase 600 directory with test script, results, PREDICTIONS.md |
+| **ADDED** | C1739: Closure-response alignment not confirmed -- 0/4 tests, Mantel r=-0.385 (p=0.866), rank 0/3, Herbal 0/3 |
+| **ADDED** | C1740: Stars safety substitution within-section concordance -- ey p=0.0003 (replicates C1735), ii p=0.0259 (NEW) |
+| **UPDATED** | INDEX.md -- +2 constraints (1739 total), Phase 600 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.73, 1739 constraints, 600 phases) |
+
+### Key Findings
+
+- **Cross-section closure-demand bridge fails (C1739):** 0/4 pre-registered tests pass. Annotation quality stable (H1 strict-broad rho=0.744, H2 rho=0.842). H:R2 (SEALED_RECIRCULATION) comprehensively reverses predictions — highest sealed cell has LOWEST ey_rate (0.0604) and HIGHEST ii_rate (0.1136). The cell-to-method-class mapping (frozen from C494, C1247, C1248) does not transfer from thermal intensity to closure-response alignment.
+- **Stars safety substitution confirmed at individual axis level (C1740):** ey_rate replicates C1735 (p=0.0003 vs original p=0.0007). ii_rate provides FIRST direct confirmation that safety substitution model (C1732/C1733) aligns with Brunschwig operational framework: gentle sustained (R1) uses more preventive safety, open-cycle (R3) uses more transformative safety. DYE_advantage reverses within Stars (open-cycle has MORE productive disruption).
+- **Brunschwig-Voynich alignment remains within-section/within-folio:** Three confirmed effects: thermal intensity C1735, safety substitution C1740, within-folio THERMAL gradient C1736. Three failed cross-section bridges: C1737 (method-bundle→apparatus), C1739 (closure-demand→closure-response), Phase 598d (apparatus profiles within sections).
+
+---
+
 ## Version 5.72 (2026-03-17) - Phase 599: Apparatus Bundle Alignment
 
 ### Summary

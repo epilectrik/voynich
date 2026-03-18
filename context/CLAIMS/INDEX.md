@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1737 validated constraints | **Version:** 5.72 | **Date:** 2026-03-17
+**Total:** 1739 validated constraints | **Version:** 5.73 | **Date:** 2026-03-17
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,20 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 600: Brunschwig Closure-Response Alignment — CLOSURE_RESPONSE_NOT_CONFIRMED (C1739-C1740)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1739 | Closure-response alignment not confirmed: historical closure-burden features (3 axes: containment density, intervention density, recycle complexity) from 431 Brunschwig 1512 recipes do not predict Voynich 7D closure-response phenotype across section×REGIME cells. 0/4 tests: Mantel r=-0.385 (p=0.866, anti-concordant), Stars R1-R3 3/4 concordant but combined p=0.319, rank concordance 0/3, Herbal R2-R4 0/3 concordant. Annotation stable (H1 rho=0.744, H2 rho=0.842). Individual safety axes within Stars significant (ey p=0.0003, ii p=0.026 — see C1740). Failure is bridge-structural, not variable-quality | 2 | B, Stars, apparatus, Brunschwig, REGIME, closure, safety, C1735, C1737 | P1_mantel_r=-0.385. P1_p=0.866. P2_concordant=3/4. P2_combined_p=0.319. P3_concordant=0/3. P4_concordant=0/3. H1_rho=0.744. H2_rho=0.842. prediction_hash=eb6824e8. |
+| 1740 | Stars safety substitution within-section concordance: within Stars, safety substitution aligns with Brunschwig operational framework at individual axis level. ey_rate R1=0.1823 > R3=0.1039 (p=0.0003, replicates C1735). ii_rate R1=0.0605 < R3=0.0918 (p=0.0259, NEW — gentle sustained deploys less transformative safety than open-cycle). DYE_advantage REVERSED (R1<R3). Combined 4-axis p=0.319 (fails due to DYE reversal). First direct confirmation that safety substitution model (C1732/C1733) aligns with Brunschwig framework within-section | 2 | B, Stars, safety, e-to-y, ii, REGIME, Brunschwig, C1732, C1733, C1735 | ey_R1=0.1823. ey_R3=0.1039. ey_p=0.0003. ii_R1=0.0605. ii_R3=0.0918. ii_p=0.0259. DYE_REVERSED. combined_p=0.319. |
+
+**Phase 600 findings (Brunschwig Closure-Response Alignment, CLOSURE_RESPONSE_NOT_CONFIRMED):**
+- Cross-section closure-demand bridge fails comprehensively (C1739): 0/4 pre-registered tests pass. Historical containment/intervention/recycle axes extracted from 431 Brunschwig recipes (dual lexicon, stable annotation) do not predict Voynich 7D closure-response phenotype at the multi-cell level. Mantel geometry anti-concordant (r=-0.385). Rank concordance 0/3. H:R2 (SEALED_RECIRCULATION) comprehensively reverses predictions — highest sealed cell has LOWEST ey_rate (0.0604) and HIGHEST ii_rate (0.1136).
+- Stars safety substitution confirmed at individual axis level (C1740): Within Stars, ey_rate replicates C1735 (p=0.0003) and ii_rate provides NEW significant confirmation of safety substitution (p=0.0259). Gentle sustained REGIMEs deploy more preventive safety (e→y), open-cycle deploy more transformative safety (ii). DYE_advantage reverses (open-cycle has MORE productive disruption).
+- Brunschwig-Voynich alignment remains limited to within-section/within-folio effects: thermal intensity (C1735), safety substitution (C1740), within-folio THERMAL gradient (C1736). No cross-section bridge has succeeded (C1737, C1739).
 
 ---
 
