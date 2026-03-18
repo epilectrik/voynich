@@ -6,7 +6,7 @@
 
 ## Finding
 
-SEALED_VESSEL is the dominant secondary apparatus profile in ALL viable section×REGIME cells:
+Across the five viable section×REGIME cells, SEALED_VESSEL was the dominant observed secondary axis in every cell:
 
 | Cell | SEALED_VESSEL | SUSTAINED_HEAT | PRECISION | DIRECT_FIRE |
 |------|--------------|----------------|-----------|-------------|
@@ -16,13 +16,19 @@ SEALED_VESSEL is the dominant secondary apparatus profile in ALL viable section�
 | H:R4 | **0.374** | 0.353 | 0.236 | 0.037 |
 | H:R3 | **0.328** | 0.314 | 0.264 | 0.094 |
 
-The secondary profile space does not differentiate cells by apparatus identity — SEALED_VESSEL vocabulary (ok, aii, ee, eey, eeol) is the universal secondary mode after DISTILLATION is removed.
+This compressed the dominant-axis contrast expected under the tested historical bridge (Phase 599) and reduced the discriminability of apparatus-shape predictions at the cell-mean level.
+
+## What This Shows and Does Not Show
+
+**Shows:** SEALED_VESSEL vocabulary (ok, aii, ee, eey, eeol) is the largest secondary vocabulary component across all tested section×REGIME cells. A bridge that predicts different dominant secondary profiles for different cells will not find support at the cell-mean level.
+
+**Does NOT show:** That the secondary profile space fails to differentiate by apparatus identity. Internal apparatus structure is validated by C1248, C1380, C1625-C1629, C1640, C1668, and C1722. Cells may differ meaningfully in relative proportions, geometry within the simplex, distributional shape, or covariance structure while sharing SEALED_VESSEL as top-1. A system can be globally sealed-biased and still meaningfully differentiate apparatus styles — sealedness may be a common background operating condition (containment/waiting is universal in distillation), not evidence that apparatus identity is absent.
 
 ## Significance
 
-The SEALED_VESSEL markers (ok=seal, aii=unseal, ee=extended cooling, eey=overnight cooling, eeol=overnight standing) may represent **general-purpose containment/waiting operations** rather than specific apparatus types. Their universality across all REGIMEs and sections suggests they encode a grammatical function (waiting, containment, monitoring cycles) that is required by all control programs, not just those involving sealed vessels.
+The SEALED_VESSEL markers may represent general-purpose containment/waiting operations rather than apparatus-specific sealed-vessel indicators. Their universality is consistent with a containment-response architecture where most control programs require waiting, monitoring, and containment regardless of the specific apparatus being controlled.
 
-This constrains interpretation of the apparatus profile system (C1248): the 5 profiles are real vocabulary clusters, but "SEALED_VESSEL" as a historical-apparatus label may be misleading. The vocabulary may be better understood as "containment/patience operations" that are structurally universal.
+This constrains interpretations of C1248 apparatus profile labels: "SEALED_VESSEL" as a historical-apparatus label may be misleading for the secondary vocabulary's function, but the profile system itself (internal vocabulary differentiation, folio-specific response surfaces, manifold structure) remains valid.
 
 ## Key Metrics
 

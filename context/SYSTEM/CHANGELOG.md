@@ -8,7 +8,7 @@
 
 ### Summary
 
-Phase 599 tests whether the 1512 Brunschwig method-bundle taxonomy (balneum_mariae→SUSTAINED_HEAT, circulation→SEALED_VESSEL, open_fire→DIRECT_FIRE, sand_bath→PRECISION) predicts the Voynich's secondary apparatus profile shape across section×REGIME cells. Pre-registered predictions with SHA-256 hash, 48 bridge variants for robustness, Mantel geometry concordance test. Verdict: **APPARATUS_ALIGNMENT_NOT_CONFIRMED** (0/4 tests pass). All cells show SEALED_VESSEL as universal secondary dominant. Mantel anti-correlated (r=-0.279). Brunschwig-Voynich alignment is bounded to thermal intensity (C1735/C1736), not apparatus identity.
+Phase 599 tests whether the 1512 Brunschwig method-bundle taxonomy (balneum_mariae→SUSTAINED_HEAT, circulation→SEALED_VESSEL, open_fire→DIRECT_FIRE, sand_bath→PRECISION) predicts the Voynich's secondary apparatus profile shape across section×REGIME cells. Pre-registered predictions with SHA-256 hash, 48 bridge variants for robustness, Mantel geometry concordance test. Verdict: **APPARATUS_ALIGNMENT_NOT_CONFIRMED** (0/4 tests pass). All cells show SEALED_VESSEL as universal secondary dominant. Mantel anti-correlated (r=-0.279). The tested bridge family does not recover apparatus-shape alignment; internal apparatus structure (C1248, C1380, etc.) remains independently validated.
 
 ### Changes
 
@@ -22,10 +22,10 @@ Phase 599 tests whether the 1512 Brunschwig method-bundle taxonomy (balneum_mari
 
 ### Key Findings
 
-- **Method-bundle bridge fails comprehensively (C1737):** 48 bridge variants tested. Mantel geometry anti-correlated (r=-0.279, p=0.794). All cells show SEALED_VESSEL as dominant secondary, not the differentiated profiles predicted. Stars R1-R3 directions 1/3 concordant (SUSTAINED_HEAT and DIRECT_FIRE flip vs prediction). Open-cycle cosine=-0.606 (anti-correlated).
-- **SEALED_VESSEL is universal secondary mode (C1738):** After removing DISTILLATION, SEALED_VESSEL dominates all section×REGIME cells (S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328). This suggests the vocabulary encodes general containment/patience operations, not specific sealed apparatus types.
-- **Brunschwig-Voynich alignment boundary established:** Thermal intensity modulation is confirmed (C1735/C1736). Apparatus identity alignment is not confirmed. The 5 apparatus profiles (C1248) represent internal vocabulary differentiation orthogonal to Brunschwig method categories.
+- **Tested bridge family fails robustly (C1737):** 48 bridge variants tested, 0% significant, 88% negative Mantel r. This is failure of the tested bridge family (one framework with parameter variants), not disconfirmation of apparatus alignment generally. Internal apparatus structure (C1248, C1380, C1625-C1629, C1640, C1668, C1722) remains independently validated.
+- **SEALED_VESSEL universal secondary dominance (C1738):** After removing DISTILLATION, SEALED_VESSEL dominates all section×REGIME cells (S:R1=0.609, S:R3=0.516, H:R2=0.488, H:R4=0.374, H:R3=0.328). This compressed the dominant-axis contrast expected under the tested bridge, but does NOT show that the secondary profile space fails to differentiate by apparatus identity. Cells may differ in proportions, geometry, distributional shape while sharing SEALED_VESSEL top-1.
 - **DISTILLATION diagnostic clean (S1 p=0.624):** The failure is a genuine secondary-space mismatch, not thermal intensity contamination.
+- **P4 design concern:** `distill_references >= 2` likely captures gentle sustained methods (balneum+horse_dung), not open-cycle/unseal intervention per C1247. Bridge family tests 48 variants of one framework, not fundamentally different alignment approaches.
 
 ---
 
