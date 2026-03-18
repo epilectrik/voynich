@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1733.
+the highest ID present is C1736.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2059,6 +2059,8 @@ C1730	ii-deployment follows REGIME refinement-intensity gradient. Double-ii/sing
 C1731	Currier A has higher double-ii concentration than B. A ii-ratio=0.730 vs B ii-ratio=0.540 (chi2=149.96, p<0.001). Within B: HERBAL 0.676, section B 0.467, replicating C1204. A>B consistent with A as specification registry recording process requirements. Does not discriminate safety-routing from redistillation	2	A, B, cross-system, i-extension, C240, C1204	A_ii=0.730. B_ii=0.540. chi2=149.96.
 C1732	Folio-level safety substitution: ii and e-to-y are safety substitutes operating in complementary HEAD domains (Spearman rho=-0.633, p<0.001). Folios deploying high e-to-y (e-HEAD C1457) deploy low ii (a-HEAD C1480) and vice versa. Anti-correlation kills redistillation co-deployment prediction. FL state elevation on ii-lines entirely explained by a-HEAD embedding (baseline p=0.216). Mode A residual dead null (p=0.773). Redistillation purpose hypothesis falsified	2	B, MIDDLE, atom, safety, substitution, folio, ii, e-to-y, C1457, C1480	raw_rho=-0.633. ctrl_rho=0.264. ctrl_p=0.016. FL_baseline_p=0.216. modeA_p=0.773.
 C1733	Two-strategy safety architecture with forgiveness asymmetry. e-to-y (preventive, e-HEAD) positively predicts folio forgiveness (AXM self-transition rho=+0.569). ii (transformative, a-HEAD) anti-predicts forgiveness (section-controlled beta=-0.673, F=5.10, p=0.027, delta-R²=+0.034). Preventive safety produces forgiving programs; transformative safety (C1482 terminal collapse) produces less forgiving programs	2	B, MIDDLE, atom, ii, e-to-y, forgiveness, safety, folio, AXM, C1462, C1482	ey_rho=0.569. ii_rho=-0.536. ctrl_beta=-0.673. ctrl_f_p=0.027. ctrl_dR2=0.034.
+C1735	1512 thermal intensity alignment: held-out 1512 Brunschwig gentle/elevated fire degree distinction predicts e-to-y safe pathway rate between R1 and R3+R4 within Stars section (Mann-Whitney p=0.0007, section-controlled, n=10+13). Complexity~ke-depth partial rho=0.248 (size-controlled, p=0.024). Alignment is thermal intensity, NOT apparatus identity. Apparatus profiles do not discriminate by REGIME within sections	2	B, Brunschwig, REGIME, safety, e-to-y, ke-depth, C1457, C1225	P3_Stars_p=0.0007. P5_partial_rho=0.248. P5_p=0.024. P1_FAIL=0.478. P2_strat_p=0.058. hash=ddeee7f7.
+C1736	Within-folio THERMAL-safety paragraph gradient: paragraphs with higher THERMAL category fraction show higher e-to-y rate (rho=0.155, p=0.0015) and deeper ke engagement (rho=0.303, p<0.0001) within individual folios (n=418 paragraphs, 46 folios). No ordinal gradient (mean rho=-0.006, confirms C1399/C1400). Section confound impossible. Strongest single result from Phase 598	2	B, paragraph, THERMAL, safety, e-to-y, ke-depth, C1399, C1400, C1250	H2_rho=0.155. H2_p=0.0015. H3_rho=0.303. H3_p<0.0001. n_paras=418. n_folios=46.
 
 ---
 

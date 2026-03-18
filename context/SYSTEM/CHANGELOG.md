@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.71 (2026-03-17) - Phase 598: Brunschwig 1512 Blind Prediction
+
+### Summary
+
+Phase 598 tests whether the held-out 1512 Brunschwig *de compositis* (431 recipes, never used in any prior fit) predicts Voynich grammar features. SHA-256 pre-registered predictions from fire degree distributions (83% gentle, 17% elevated). Expert-corrected v2 test with section stratification and size controls. Follow-up apparatus profile and within-folio gradient tests. Verdict: **WEAK_THERMAL_INTENSITY_ALIGNMENT**. Two clean passes: e->y rate discriminates REGIMEs within Stars (p=0.0007, C1735), THERMAL paragraphs show higher safety/ke-depth within folios (rho=0.303, C1736). Apparatus profile alignment NOT confirmed. The 1512 alignment is about thermal intensity modulating safety infrastructure, not apparatus identity.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BRUNSCHWIG_1512_BLIND_PREDICTION/` -- Phase 598 directory with 4 scripts, 3 result files, INDEX, PREDICTIONS.md |
+| **ADDED** | C1735: 1512 thermal intensity alignment -- e->y within Stars p=0.0007, complexity~ke-depth partial rho=0.248 |
+| **ADDED** | C1736: Within-folio THERMAL-safety paragraph gradient -- THERMAL->ke rho=0.303, THERMAL->e->y rho=0.155, no ordinal gradient |
+| **UPDATED** | INDEX.md -- +2 constraints (1735 total), Phase 598 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.71, 1735 constraints, 598 phases) |
+
+### Key Findings
+
+- **1512 thermal intensity alignment validated for safety (C1735):** Pre-registered prediction from held-out corpus. e->y safe pathway rate is higher in gentle (R1) than intense (R3+R4) folios within Stars section (p=0.0007). Instruction class entropy correlates with ke-depth after size control (partial rho=0.248, p=0.024). Bonferroni-adjusted P3 p=0.0035, still significant.
+- **Within-folio THERMAL-safety gradient (C1736):** Paragraphs with more THERMAL tokens deploy more e->y safety (rho=0.155, p=0.0015) and deeper ke engagement (rho=0.303, p<0.0001) within individual folios. Section confound impossible. Strongest single result: H3 rho=0.303.
+- **Apparatus alignment NOT confirmed:** MIDDLE-based apparatus profiles (C1248) do not follow fire degree predictions within sections. Both R1 Herbal folios have highest DISTILLATION scores in Herbal (opposite of balneum prediction). Apparatus is section-level, not REGIME-within-section.
+- **Section B is 100% REGIME_1:** 20 folios, zero R2/R3/R4. Major structural constraint on within-section testing.
+- **Expert review caught 6 methodological issues in v1:** REGIME grouping inconsistency, section confound, size confound, trivial N2, mis-premised N1, P2 circularity. All corrected in v2.
+
+---
+
 ## Version 5.70 (2026-03-16) - Phase 597: Redistillation-ii Purpose Discrimination
 
 ### Summary

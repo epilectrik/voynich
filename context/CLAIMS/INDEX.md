@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1733 validated constraints | **Version:** 5.70 | **Date:** 2026-03-16
+**Total:** 1735 validated constraints | **Version:** 5.71 | **Date:** 2026-03-17
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 598: Brunschwig 1512 Blind Prediction — WEAK_THERMAL_INTENSITY_ALIGNMENT (C1735-C1736)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1735 | 1512 thermal intensity alignment: held-out 1512 Brunschwig gentle/elevated fire degree distinction predicts e-to-y safe pathway rate between R1 and R3+R4 within Stars section (Mann-Whitney p=0.0007, section-controlled, n=10+13). Instruction class entropy correlates with ke-depth after size control (partial Spearman rho=0.248, p=0.024). Alignment is thermal intensity, NOT apparatus identity. Fire degrees do not predict REGIME distribution (P1 FAIL), k/(k+ke) within sections (P2 FAIL stratified p=0.058), r-to-a routing (P4 FAIL p=0.315), or apparatus profile scores within sections (598d FAIL) | 2 | B, Brunschwig, REGIME, safety, e-to-y, ke-depth, C1457, C1225 | P3_within_Stars_p=0.0007. P5_partial_rho=0.248. P5_p=0.024. P1_FAIL=0.478. P2_strat_p=0.058. prediction_hash=ddeee7f7. |
+| 1736 | Within-folio THERMAL-safety paragraph gradient: paragraphs with higher THERMAL category fraction show higher e-to-y rate (rho=0.155, p=0.0015) and deeper ke engagement (rho=0.303, p<0.0001) within individual folios (n=418 paragraphs, 46 folios). No systematic ordinal gradient (mean rho=-0.006, t-test p=0.919, confirms C1399/C1400). Section confound impossible at paragraph level. Strongest single result from Phase 598 | 2 | B, paragraph, THERMAL, safety, e-to-y, ke-depth, C1399, C1400, C1250 | H2_rho=0.155. H2_p=0.0015. H3_rho=0.303. H3_p<0.0001. H1_mean_rho=-0.006. n_paras=418. n_folios=46. |
+
+**Phase 598 findings (Brunschwig 1512 Blind Prediction, WEAK_THERMAL_INTENSITY_ALIGNMENT):**
+- 1512 thermal intensity alignment validated for safety infrastructure (C1735): Pre-registered prediction from held-out 1512 book (431 recipes, SHA-256 locked). e-to-y safe pathway rate discriminates R1 (gentle) vs R3+R4 (intense) within Stars section at p=0.0007. Complexity~ke-depth correlation survives size control (partial rho=0.248). Two clean passes out of 5 pre-registered predictions.
+- Within-folio THERMAL-safety gradient confirmed (C1736): Paragraphs enriched for THERMAL category tokens deploy more e-to-y safety (rho=0.155) and deeper ke engagement (rho=0.303) within individual folios. Section confound eliminated by within-folio design. No ordinal gradient (C1399/C1400 confirmed).
+- Apparatus alignment NOT confirmed: MIDDLE-based apparatus profile scores (C1248) do not discriminate by REGIME within Herbal section (2/4 directions, 0/4 significant). The 1512's fire degree distinction maps to thermal intensity modulation, not apparatus type identity. A proper apparatus alignment test requires multi-axis apparatus-bundle comparison.
+- Section B is 100% REGIME_1 (20 folios, zero R2/R3/R4): major structural finding limiting within-section testing to Stars and Herbal.
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1733 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1735 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1733.
+the highest ID present is C1736.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1733 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1735 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1733 validated constraints are present as canonical one-line claims with tier
+1735 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-16 09:32
-**Version:** FROZEN STATE (1733 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-17 20:03
+**Version:** FROZEN STATE (1735 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1973,6 +1973,8 @@ C1730	ii-deployment follows a REGIME refinement-intensity gradient. Double-ii/si
 C1731	Currier A has higher double-ii concentration than B. A ii-ratio=0.730 vs B ii-ratio=0.540. Within B: HERBAL highest (0.676), section B lowest (0.467), replicating C1204. A>B pattern consistent with A as specification registry (C240) recording process requirements. Does not discriminate safety-routing from redistillation interpretations — both predict A>B	2	A, B, cross-system, i-extension, C240, C1204
 C1732	Folio-level safety substitution: ii and e-to-y are safety substitutes operating in complementary HEAD domains. Folios deploying high e-to-y (e-HEAD domain, C1457) deploy low ii (a-HEAD domain, C1480) and vice versa. Anti-correlation kills redistillation co-deployment prediction. Section+REGIME controlled partial rho=+0.264 — weak positive after controls does not reach significance threshold (p>0.01). FL state elevation on ii-lines entirely explained by a-HEAD embedding. Mode A residual dead null. Redistillation purpose hypothesis falsified	2	B, MIDDLE, atom, safety, substitution, folio, ii, e-to-y, C1457, C1480
 C1733	Two-strategy safety architecture with forgiveness asymmetry. e-to-y pathway (preventive, e-HEAD domain) positively predicts folio forgiveness. ii pathway (transformative, a-HEAD domain) anti-predicts forgiveness. Preventive safety (avoiding hazardous territory) produces forgiving programs; transformative safety (operating within hazardous territory with categorical protections, C1482) produces less forgiving programs	2	B, MIDDLE, atom, ii, e-to-y, forgiveness, safety, folio, AXM, C1462, C1482
+C1735	1512 thermal intensity alignment: held-out 1512 Brunschwig gentle/elevated fire degree distinction predicts e-to-y safe pathway rate between R1 and R3+R4 within Stars section. Instruction class entropy correlates with ke-depth after size control. Alignment is thermal intensity, NOT apparatus identity. Fire degrees do not predict REGIME distribution (P1 FAIL), k/(k+ke) within sections, r-to-a routing, or apparatus profile scores within sections (598d FAIL)	2	B, Brunschwig, REGIME, safety, e-to-y, ke-depth, C1457, C1225
+C1736	Within-folio THERMAL-safety paragraph gradient: paragraphs with higher THERMAL category fraction show higher e-to-y rate and deeper ke engagement within individual folios. No systematic ordinal gradient. Section confound impossible at paragraph level. Strongest single result from Phase 598	2	B, paragraph, THERMAL, safety, e-to-y, ke-depth, C1399, C1400, C1250
 
 ---
 
@@ -1980,7 +1982,7 @@ C1733	Two-strategy safety architecture with forgiveness asymmetry. e-to-y pathwa
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-16
+# Generated: 2026-03-17
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

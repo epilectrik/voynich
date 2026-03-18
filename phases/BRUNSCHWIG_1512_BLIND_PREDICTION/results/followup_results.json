@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "phase": "598d",
+    "prediction_hash": "ddeee7f7252ff378b7a1ca0b964f6d38b433f7ec0f90ab17526a383b36ef058d",
+    "n_b_tokens": 23096,
+    "n_folios": 82,
+    "runtime_seconds": 2.8
+  },
+  "block1_apparatus": {
+    "tests": [
+      {
+        "profile": "SEALED_VESSEL",
+        "prediction": "R1 > rest (balneum = sealed vessel)",
+        "r1_mean": 0.0991,
+        "r1_values": [
+          0.14,
+          0.0583
+        ],
+        "rest_mean": 0.1155,
+        "direction_correct": false,
+        "p_value_onetail": 0.633065,
+        "significant_p10": false,
+        "r1_percentiles_in_herbal": [
+          80.0,
+          6.7
+        ],
+        "both_in_predicted_half": false
+      },
+      {
+        "profile": "SUSTAINED_HEAT",
+        "prediction": "R1 > rest (gentle = sustained heat)",
+        "r1_mean": 0.109,
+        "r1_values": [
+          0.15,
+          0.068
+        ],
+        "rest_mean": 0.0869,
+        "direction_correct": true,
+        "p_value_onetail": 0.290323,
+        "significant_p10": false,
+        "r1_percentiles_in_herbal": [
+          100.0,
+          26.7
+        ],
+        "both_in_predicted_half": false
+      },
+      {
+        "profile": "DISTILLATION",
+        "prediction": "R1 < rest (distillation needs higher temps)",
+        "r1_mean": 0.2272,
+        "r1_values": [
+          0.27,
+          0.1845
+        ],
+        "rest_mean": 0.1274,
+        "direction_correct": false,
+        "p_value_onetail": 0.986754,
+        "significant_p10": false,
+        "r1_percentiles_in_herbal": [
+          100.0,
+          93.3
+        ],
+        "both_in_predicted_half": false
+      },
+      {
+        "profile": "DIRECT_FIRE",
+        "prediction": "R1 < rest (direct fire = degree 2-3)",
+        "r1_mean": 0.0147,
+        "r1_values": [
+          0.01,
+          0.0194
+        ],
+        "rest_mean": 0.0157,
+        "direction_correct": true,
+        "p_value_onetail": 0.45343,
+        "significant_p10": false,
+        "r1_percentiles_in_herbal": [
+          33.3,
+          60.0
+        ],
+        "both_in_predicted_half": false
+      }
+    ],
+    "directions_correct": 2,
+    "significant_count": 0,
+    "primary_passed": false,
+    "secondary_passed": false,
+    "block1_verdict": "APPARATUS_PROFILE_NOT_CONFIRMED",
+    "block1_passed": false
+  },
+  "block2_gradient": {
+    "H1_ordinal_gradient": {
+      "test": "H1_no_monotonic_ey_gradient",
+      "mean_abs_rho": 0.3428,
+      "mean_rho": -0.0064,
+      "n_folios_tested": 46,
+      "t_statistic": -0.1028,
+      "t_p_value": 0.918574,
+      "passed": true,
+      "note": "PASSES if no systematic gradient (confirms C1399/C1400 paragraph ordering null)"
+    },
+    "H2_thermal_ey": {
+      "test": "H2_thermal_ey_within_folio",
+      "spearman_rho": 0.1551,
+      "p_value": 0.00147,
+      "n_paragraphs": 418,
+      "n_folios": 46,
+      "passed": true,
+      "note": "Within-folio deviations: THERMAL-enriched paras should have higher e->y rate"
+    },
+    "H3_thermal_ke": {
+      "test": "H3_thermal_ke_within_folio",
+      "spearman_rho": 0.3026,
+      "p_value": 0.0,
+      "n_paragraphs": 418,
+      "n_folios": 46,
+      "passed": true,
+      "note": "Within-folio deviations: THERMAL-enriched paras should have deeper ke engagement"
+    },
+    "block2_passed": true,
+    "block2_verdict": "WITHIN_FOLIO_GRADIENT_CONFIRMED"
+  },
+  "combined_verdict": "PARTIAL_CONFIRMATION"
+}
