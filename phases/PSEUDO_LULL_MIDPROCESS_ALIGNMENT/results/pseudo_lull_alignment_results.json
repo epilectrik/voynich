@@ -1,0 +1,199 @@
+{
+  "phase": 603,
+  "predictions_hash": "6d8b1579c00469e311be23920e1d3688c6b992613356f5b072799de7e009852f",
+  "verdict": "MIDPROCESS_CONTROL_ALIGNMENT_CONFIRMED",
+  "S1": {
+    "pass": true,
+    "stars_r1_n": 10,
+    "stars_r3_n": 12,
+    "stars_r1_mean_ey": 0.18226933006267854,
+    "stars_r3_mean_ey": 0.10385144826082214,
+    "U": 112.0,
+    "p": 0.0003421299024737222
+  },
+  "P1": {
+    "pass": true,
+    "consequences": {
+      "proceed": 23,
+      "stop": 18,
+      "continue": 42,
+      "adjust": 5,
+      "correct": 7,
+      "abort": 1
+    },
+    "stabilization_ratio": 2.392857142857143,
+    "abort_fraction": 0.010416666666666666,
+    "P1a_pass": true,
+    "P1b_pass": true
+  },
+  "P2": {
+    "pass": true,
+    "pl_recovery_ratio": 6.24,
+    "voynich_ey_ii_ratio": 1.9199270626141787,
+    "mean_ey_rate": 0.13769496835895925,
+    "mean_ii_rate": 0.07171885382534968,
+    "part_correction_density": {
+      "Theorica": 0.7916666666666666,
+      "Practica": 0.5625,
+      "Mercuriorum": 0.8431372549019608,
+      "Furnis": 1.2
+    },
+    "section_safety_balance": {
+      "H": 0.021199856960031734,
+      "T": 0.04978686893580511,
+      "B": 0.15722136273789203,
+      "C": 0.017672573221783356,
+      "S": 0.060838352621591436
+    }
+  },
+  "P3": {
+    "pass": true,
+    "pl_threshold": 139,
+    "pl_count": 10,
+    "pl_ratio": 13.9,
+    "brunschwig_threshold": 252,
+    "brunschwig_count": 178,
+    "brunschwig_total_termination": 1531,
+    "brunschwig_ratio": 1.4157303370786516,
+    "gap_multiplier": 9.81825396825397,
+    "monostate_diagnostic": {
+      "S": 0.6894320089136242,
+      "H": 0.5725621069542545,
+      "T": 0.5843623481781377,
+      "B": 0.7431795075392638,
+      "C": 0.6432760435708155
+    }
+  },
+  "P4": {
+    "pass": true,
+    "pl_failure_modes": 5,
+    "pl_correction_strategies": 2,
+    "pl_convergence_ratio": 2.5,
+    "voynich_hazard_cv": 0.1147519069351869,
+    "voynich_recovery_cv": 0.8237541287760172,
+    "P4a_pass": true,
+    "P4b_pass": true,
+    "part_correction_density_cv": 0.3104749743546466
+  },
+  "P5": {
+    "pass": false,
+    "n_families": 14,
+    "families": [
+      "calcination",
+      "circulation",
+      "coagulation",
+      "dissolution",
+      "distillation",
+      "fermentation",
+      "fixation",
+      "furnace_apparatus",
+      "imbibition",
+      "projection",
+      "separation",
+      "sublimation",
+      "theoretical",
+      "unclassified"
+    ],
+    "part_family_presence": {
+      "Theorica": 6,
+      "Practica": 9,
+      "Mercuriorum": 9,
+      "Furnis": 9
+    },
+    "pairwise_jsd": [
+      {
+        "pair": "Theorica vs Practica",
+        "jsd": 0.4077493817681665,
+        "overlap": 0.36363636363636365
+      },
+      {
+        "pair": "Theorica vs Mercuriorum",
+        "jsd": 0.3494380479940686,
+        "overlap": 0.5
+      },
+      {
+        "pair": "Theorica vs Furnis",
+        "jsd": 0.16906345961126523,
+        "overlap": 0.5
+      },
+      {
+        "pair": "Practica vs Mercuriorum",
+        "jsd": 0.18529450855671514,
+        "overlap": 0.6363636363636364
+      },
+      {
+        "pair": "Practica vs Furnis",
+        "jsd": 0.26296293538034365,
+        "overlap": 0.6363636363636364
+      },
+      {
+        "pair": "Mercuriorum vs Furnis",
+        "jsd": 0.2418954445568713,
+        "overlap": 0.6363636363636364
+      }
+    ],
+    "mean_jsd": 0.26940062964457173,
+    "P5a_pass": false
+  },
+  "N1": {
+    "pass": true,
+    "rho": -0.6982532518267538,
+    "p_corrected": 1.0,
+    "p_raw": 0.12283946337339596,
+    "n_permutations_tested": 24,
+    "best_pairing": [
+      [
+        "Theorica",
+        "S"
+      ],
+      [
+        "Practica",
+        "H"
+      ],
+      [
+        "Mercuriorum",
+        "B"
+      ],
+      [
+        "Furnis",
+        "P"
+      ]
+    ],
+    "k_distances": 6,
+    "pl_pair_jsds": [
+      0.4077493817681665,
+      0.3494380479940686,
+      0.16906345961126523,
+      0.18529450855671514,
+      0.26296293538034365,
+      0.2418954445568713
+    ],
+    "v_pair_jsds": [
+      0.03858990975283379,
+      0.056576883361518525,
+      0.5,
+      0.08298435627208123,
+      0.5,
+      0.5
+    ]
+  },
+  "D1": {
+    "pl_formalized": 61,
+    "pl_discretionary": 35,
+    "pl_ratio": 1.7428571428571429,
+    "voynich_encodable": 49,
+    "voynich_non_encodable": 13,
+    "voynich_ratio": 3.769230769230769
+  },
+  "summary": {
+    "n_passing": 4,
+    "tests": {
+      "P1": "PASS",
+      "P2": "PASS",
+      "P3": "PASS",
+      "P4": "PASS",
+      "P5": "FAIL"
+    },
+    "n1": "PASS"
+  }
+}

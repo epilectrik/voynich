@@ -4,6 +4,39 @@
 
 ---
 
+## Version 5.75 (2026-03-18) - Phases 602-603: Pseudo-Lull Characterization and Midprocess Alignment
+
+### Summary
+
+Phase 602 characterizes pseudo-Lull's Testamentum corpus (209 chapters, 3 editions) extracting 8 structural features: chapter structure, cipher-letter system (667 occurrences, 23 letters), 316 monitoring passages with 247 action chains, 196 termination conditions (71% threshold-based), 585 heat passages across 12 modes, 181 corrections (86% recoverable), 13 operation families, 96 judgment cues. Pure characterization with no Voynich data loaded.
+
+Phase 603 tests whether pseudo-Lull's operational control architecture predicts specific Voynich structural properties. Pre-registered 8-test design with SHA-256 verification. Verdict: **MIDPROCESS_CONTROL_ALIGNMENT_CONFIRMED** (4/5 primary tests pass, N1 negative control passes). Monitor->action chains match kernel directionality (C1744), recovery doctrine maps to safety-style split (C1745), thresholded termination gap confirmed at 9.8x (C1746), recovery asymmetry replicates C458 (C1747). Register architecture partially confirmed but fails on Theorica (C1748). Cross-system structural distance correctly non-significant (N1 Bonferroni p=1.0).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PSEUDO_LULL_CHARACTERIZATION/` -- Phase 602 with extraction script, results (235 KB JSON), EXTRACTION_PROTOCOL.md |
+| **ADDED** | `phases/PSEUDO_LULL_MIDPROCESS_ALIGNMENT/` -- Phase 603 with alignment script, PREDICTIONS.md (SHA-256 frozen), results |
+| **ADDED** | C1744: Monitor->action chain stabilization-dominant asymmetry -- ratio=2.39, abort=1.0% |
+| **ADDED** | C1745: Recovery doctrine maps to safety-style split -- PL 6.24:1, V 1.92:1 |
+| **ADDED** | C1746: Thresholded termination 9.8x gap vs Brunschwig -- PL 13.9:1 vs Brun 1.42:1 |
+| **ADDED** | C1747: Recovery asymmetry replication -- PL 5:2 convergent, V hazard CV=0.115, recovery CV=0.824 |
+| **ADDED** | C1748: Register architecture partial -- operational parts pass (64% overlap), Theorica fails (36-50%) |
+| **UPDATED** | INDEX.md -- +5 constraints (1747 total), Phases 602-603 sections |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.75, 1747 constraints, 603 phases) |
+
+### Key Findings
+
+- **Midprocess control alignment confirmed (C1744):** Pseudo-Lull's monitoring->action outcome distribution is stabilization-dominant (67/28 stabilize/escalate, 1% abort), matching the Voynich kernel's directional grammar (k->e 4.02x, h->e 6.09x, e->h 0.004x). Brunschwig has zero monitoring passages (C1056), making this prediction uniquely pseudo-Lull.
+- **Two-strategy safety architecture has historical parallel (C1745):** Both systems show preventive > transformative (PL recoverable/irrecoverable=6.24:1, Voynich ey/ii=1.92:1). Pseudo-Lull's in-process correction is the operational parallel to the Voynich's e->y/ii substitution (C1732-C1733).
+- **Quality-dependent stopping differentiates midprocess from recipe (C1746):** PL threshold/count=13.9:1 vs Brunschwig 1.42:1 (9.8x gap). This is the structural feature that makes pseudo-Lull's control layer fundamentally different from Brunschwig's recipe-level specification.
+- **Convergent recovery matches C458 (C1747):** 5 failure modes / 2 correction strategies in pseudo-Lull mirrors the Voynich's clamped hazard (CV=0.115) / free recovery (CV=0.824) asymmetry.
+- **Register architecture partial (C1748):** Operational parts share the same-inventory-different-weighting pattern (C1134), but Theorica (88% theoretical) has no Voynich analog.
+- **Negative control correctly fails (N1):** Cross-system structural distance non-significant (Bonferroni p=1.0), confirming the C1739 pattern: within-context alignment works, cross-context rank prediction does not.
+
+---
+
 ## Version 5.74 (2026-03-17) - Phase 601: Safety Style Moderation
 
 ### Summary

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1742 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1747 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1743.
+the highest ID present is C1748.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1742 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1747 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1742 validated constraints are present as canonical one-line claims with tier
+1747 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-17 22:54
-**Version:** FROZEN STATE (1742 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-18 21:18
+**Version:** FROZEN STATE (1747 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1982,6 +1982,11 @@ C1740	Stars safety substitution within-section concordance: within Stars, safety
 C1741	A2 profile categorical safety-style shift: A2 is a compound apparatus regime (high null close recovery C1639, higher authenticity threshold C1644, morphology-selective counterfeiting C1645, weak events lose to null C1642) that categorically shifts safety toward transformative intervention (ii) over preventive stabilization (e→y). Section-controlled OLS: A2 dummy coeff=-0.124, t=-5.31, p=1.2×10⁻⁶, R²=0.579. A2 mean safety_balance=-0.022 vs non-A2=0.096. Continuous forgivingness moderation fails. Stars anchor replicates: R1=0.122 > R3=0.012, p=0.002. A2 is a profile regime, not a one-dimensional forgivingness coordinate	2	B, apparatus, safety, A2, profile, REGIME, Herbal, Stars, Brunschwig, C1739, C1740, C1639, C1732, C1733
 C1742	Closure authenticity modulates safety strategy: per-folio strong_close_fraction positively predicts safety_balance (ey_rate - ii_rate) after section control. Folios with more authentic closures sustain preventive safety; weak/counterfeitable closures shift toward transformative rescue. Section-controlled partial Spearman rho=0.304, p=0.008. Raw rho=0.010, p=0.932 — effect only emerges within sections. DYE orthogonal to safety: Stars rho=-0.282, p=0.204; all folios rho=0.045, p=0.702. Two independent safety modulators identified: (1) apparatus profile A2 vs A3 (discrete, C1741) and (2) closure authenticity (continuous, within-section)	2	B, closure, safety, authenticity, strong_close_fraction, C1642, C1732, C1733, C1741
 C1743	Removing A2 restores Herbal thermal-intensity ordering: within Herbal A3 folios (excluding A2), R4>R3 on safety_balance. Phase 600 Herbal reversal (C1739) was specifically A2 contamination, not general Herbal behavior. Does NOT establish general law "higher REGIME = more preventive safety" (C1730 shows non-monotone global pattern; C494 identifies R4 as precision axis). Result is specific to A3 Herbal context	2	B, Herbal, A2, A3, REGIME, safety, surgery, C1741, C1739, C494, C1730
+C1744	Monitor->action chain outcome distribution matches Voynich kernel directionality: pseudo-Lull E8 judgment cue consequences show stabilization-dominant asymmetry (stabilization ratio 2.39, abort fraction 1.0%), paralleling Voynich kernel k->e 4.02x, h->e 6.09x (observation -> stabilize dominant) and e->h blockage 0.004x (escalation suppressed). Brunschwig generates no monitoring passages (C1056: 0/245 recipes, 0/509 materials), so this prediction is uniquely pseudo-Lull.	2	B, kernel, monitoring, pseudo-Lull, C1056, BCSC
+C1745	Recovery doctrine aligns with safety-style split: both pseudo-Lull and Voynich show preventive-dominant safety architecture. PL recovery/irrecoverable ratio=6.24 (156/25). Voynich ey/ii ratio=1.92 (mean ey_rate 0.138, mean ii_rate 0.072). Both ratios > 1.0 and same direction: preventive/forgiving pathway dominates transformative. Maps PL E6 two-strategy correction to Voynich C1732-C1733 two-strategy safety (e->y preventive vs ii transformative).	2	B, safety, recovery, pseudo-Lull, C1732, C1733
+C1746	Thresholded termination gap: pseudo-Lull threshold/count ratio 13.9:1 (139 threshold-based, 10 count-based) vs Brunschwig 1.42:1 (252 threshold, 178 count), a 9.8x gap. Quality-dependent stopping (not fixed step counts) differentiates the midprocess control layer from recipe-level specification. Compatible with C1403 MONOSTATE (AXM > 50% all sections) and C1642-C1648 closure authenticity (grammar advantage only for STRONG closures).	2	B, termination, pseudo-Lull, Brunschwig, C1403, C1642, C1648
+C1747	Recovery asymmetry replication: pseudo-Lull shows convergent recovery (5 failure modes, 2 correction strategies, ratio 2.5), matching Voynich C458 clamped-hazard/free-recovery asymmetry (hazard CV=0.115, recovery CV=0.824). Both systems constrain dangerous interactions tightly while allowing recovery operations to vary freely. Per-part correction density CV=0.31 further parallels recovery freedom.	2	B, recovery, hazard, pseudo-Lull, C458
+C1748	Register architecture partially confirmed: pseudo-Lull operational parts (Practica, Mercuriorum, Furnis) share >= 64% of operation families with pairwise JSD 0.19-0.26, matching C1134 same-inventory-different-weighting pattern. FAILS when including Theorica (88% theoretical, overlap 36-50%). Voynich has no purely theoretical section, so the analogy is incomplete. Mean pairwise JSD=0.27 vs Voynich C1134 inter-section JS=0.124.	2	B, register, sections, pseudo-Lull, C1134, C1499
 
 ---
 
@@ -1989,7 +1994,7 @@ C1743	Removing A2 restores Herbal thermal-intensity ordering: within Herbal A3 f
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-17
+# Generated: 2026-03-18
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

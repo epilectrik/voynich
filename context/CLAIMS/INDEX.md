@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1742 validated constraints | **Version:** 5.74 | **Date:** 2026-03-17
+**Total:** 1747 validated constraints | **Version:** 5.75 | **Date:** 2026-03-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5967,6 +5967,28 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Mild synergy at closure (C1725): Conditioning on position reveals 7.9% more TERM→HEAD mutual information (interaction MI=-0.004 bits). Q4 (closure) has the highest per-quintile MI (0.071 bits), reflecting its narrow compositional palette allowing sharper discrimination. This is informational, not structural — the grammar doesn't change, it just operates on a more focused palette.
 - Per-rule activation profiles are compositionally driven (C1726): l→e declines across the line (specification fading), m→o rises (closure strengthening), r→a peaks at Q4 (3.87x). All trends are explained by the marginals. No depleted rule becomes enriched at any position. The activation curves are a readout of positional composition, not evidence of position-dependent grammar rules.
 - Complements C1721 (Phase 593): Routing is neither folio-specific nor position-specific in its grammar. The global TERM→HEAD routing grammar (C1563) is a single invariant system that operates on whatever compositional palette the line position and section identity present.
+
+---
+
+### Phase 603: Pseudo-Lull Midprocess Control Alignment — MIDPROCESS_CONTROL_ALIGNMENT_CONFIRMED (C1744-C1748)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1744 | Monitor->action chain outcome distribution matches Voynich kernel directionality: pseudo-Lull E8 judgment cue consequences show stabilization-dominant asymmetry (stabilization ratio 2.39, abort fraction 1.0%), paralleling Voynich kernel k->e 4.02x, h->e 6.09x (observation -> stabilize dominant) and e->h blockage 0.004x (escalation suppressed). Brunschwig generates no monitoring passages (C1056: 0/245 recipes, 0/509 materials), so this prediction is uniquely pseudo-Lull. | 2 | B, kernel, monitoring, pseudo-Lull, C1056, BCSC | stabilization_ratio=2.39. abort_fraction=0.010. P1a_threshold=2.0. P1b_threshold=0.05. |
+| 1745 | Recovery doctrine aligns with safety-style split: both pseudo-Lull and Voynich show preventive-dominant safety architecture. PL recovery/irrecoverable ratio=6.24 (156/25). Voynich ey/ii ratio=1.92 (mean ey_rate 0.138, mean ii_rate 0.072). Both ratios > 1.0 and same direction: preventive/forgiving pathway dominates transformative. Maps PL E6 two-strategy correction to Voynich C1732-C1733 two-strategy safety (e->y preventive vs ii transformative). | 2 | B, safety, recovery, pseudo-Lull, C1732, C1733 | PL_recovery_ratio=6.24. V_ey_ii_ratio=1.92. mean_ey=0.138. mean_ii=0.072. |
+| 1746 | Thresholded termination gap: pseudo-Lull threshold/count ratio 13.9:1 (139 threshold-based, 10 count-based) vs Brunschwig 1.42:1 (252 threshold, 178 count), a 9.8x gap. Quality-dependent stopping (not fixed step counts) differentiates the midprocess control layer from recipe-level specification. Compatible with C1403 MONOSTATE (AXM > 50% all sections) and C1642-C1648 closure authenticity (grammar advantage only for STRONG closures). | 2 | B, termination, pseudo-Lull, Brunschwig, C1403, C1642, C1648 | PL_threshold_count_ratio=13.9. Brun_threshold_count_ratio=1.42. gap=9.82x. |
+| 1747 | Recovery asymmetry replication: pseudo-Lull shows convergent recovery (5 failure modes, 2 correction strategies, ratio 2.5), matching Voynich C458 clamped-hazard/free-recovery asymmetry (hazard CV=0.115, recovery CV=0.824). Both systems constrain dangerous interactions tightly while allowing recovery operations to vary freely. Per-part correction density CV=0.31 further parallels recovery freedom. | 2 | B, recovery, hazard, pseudo-Lull, C458 | PL_convergence_ratio=2.5. V_hazard_CV=0.115. V_recovery_CV=0.824. part_corr_CV=0.31. |
+| 1748 | Register architecture partially confirmed: pseudo-Lull operational parts (Practica, Mercuriorum, Furnis) share >= 64% of operation families with pairwise JSD 0.19-0.26, matching C1134 same-inventory-different-weighting pattern. FAILS when including Theorica (88% theoretical, overlap 36-50%). Voynich has no purely theoretical section, so the analogy is incomplete. Mean pairwise JSD=0.27 vs Voynich C1134 inter-section JS=0.124. | 2 | B, register, sections, pseudo-Lull, C1134, C1499 | operational_overlap=0.64. mean_JSD=0.27. Theorica_overlap=0.36-0.50. P5_verdict=FAIL. |
+
+**Phase 603 findings (Pseudo-Lull Midprocess Control Alignment, MIDPROCESS_CONTROL_ALIGNMENT_CONFIRMED):**
+- 4/5 primary tests pass. Pseudo-Lull's operational control architecture predicts specific Voynich structural properties that Brunschwig cannot generate (C1056).
+- Monitor->action chains are stabilization-dominant (C1744): 67/28 stabilize/escalate, 1.0% abort. This matches the Voynich kernel's directional grammar (k->e and h->e elevated, e->h blocked, h->k suppressed). The midprocess layer that Brunschwig lacks is structurally present in pseudo-Lull.
+- Recovery doctrine maps to safety-style split (C1745): both systems have preventive > transformative (PL 6.24:1, V 1.92:1). Pseudo-Lull's in-process correction architecture is the historical parallel to the Voynich's e->y/ii safety substitution (C1732-C1733).
+- Thresholded termination is the key differentiator (C1746): PL 13.9:1 vs Brunschwig 1.42:1 (9.8x gap). Quality-dependent stopping rather than fixed step counts is what distinguishes the midprocess control layer.
+- Clamped-hazard/free-recovery asymmetry confirmed (C1747): PL 5 failure modes / 2 correction strategies (convergent recovery) matches C458 hazard CV=0.115, recovery CV=0.824.
+- Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
+- N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
+- D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
 
 ---
 
