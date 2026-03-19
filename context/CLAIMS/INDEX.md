@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1759 validated constraints | **Version:** 5.79 | **Date:** 2026-03-19
+**Total:** 1762 validated constraints | **Version:** 5.80 | **Date:** 2026-03-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 608: Subroutine Repertoire Characterization — REPERTOIRE_STRUCTURED_PREFIX_MEDIATED (C1761-C1763)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1761 | Folio-level zone co-occurrence shows universal depletion: all 6 zone-type pairs depleted (O/E 0.378-0.789), 4/6 significant under section-stratified null (Bonferroni alpha=0.0083). THERMAL-MONITORING most depleted (O/E=0.378, p<0.001), extending C1399 transition-level avoidance to repertoire level. MONITORING-Phase is the most exclusionary zone. No zone pair shows enrichment. Folios actively restrict their paragraph zone repertoire beyond section ecology | 2 | B, paragraph, repertoire, co-occurrence, C1398, C1399, C1573 | TQ_MP_OE=0.378. CS_MP_OE=0.477. TQ_CS_OE=0.632. TQ_OI_OE=0.705. sig_pairs=4/6. null=section_stratified. n_multi=57. |
+| 1762 | Repertoire typology: 13 of 15 possible binary zone signatures observed. Entropy 3.303 bits (84.5% max), below section-stratified null (p=0.012). 50% of folios mono-type. CONTAINMENT-Sealing dominates overall mono-type (22/40) due to Herbal single-paragraph folios; among genuine 2+-paragraph mono-types, THERMAL-QO leads (8/17). Stars has highest repertoire diversity (entropy=2.94), Herbal lowest (1.73). Mono-type folios have lower thermo_ke (p=0.008) and higher CEI (p=0.042) than multi-type | 2 | B, paragraph, repertoire, typology, mono-type, C1398, C1569, C1573 | entropy=3.303. entropy_ratio=0.845. n_signatures=13. mono_frac=0.50. entropy_p_section=0.012. Stars_entropy=2.94. Herbal_entropy=1.73. |
+| 1763 | Repertoire type independently predicts h_ratio: nested model comparison shows 31.9% additional variance explained by repertoire type beyond PREFIX fractions + section + paragraph_count (F=4.806, p=0.0001; permutation p=0.001). Only feature (of 5 tested) surviving full controls. 4/5 other features (thermo_ke, strong_close_fraction, cei_total, link_density) fully absorbed by PREFIX + section, confirming PREFIX confound (C1405-C1431). Monitoring-execution balance is not fully determined by token-level PREFIX composition | 2 | B, paragraph, repertoire, h_ratio, monitoring, PREFIX, C1405, C1431, C1574 | dR2_h_ratio=0.319. F=4.806. F_p=0.0001. perm_p=0.001. n_features_sig=1/5. n=74. |
+
+**Phase 608 findings (Subroutine Repertoire Characterization, REPERTOIRE_STRUCTURED_PREFIX_MEDIATED):**
+- Pre-phase null test confirmed folio zone repertoire breadth significantly narrower than chance (z=-0.781, p<0.0001). Phase characterizes the structure of that selection.
+- Universal zone-pair depletion (C1761): ALL 6 zone pairs show depletion at folio level, 4/6 significant under section-stratified null. THERMAL-MONITORING mutual exclusion (O/E=0.378) is the strongest signal, extending C1399 transition-level avoidance. MONITORING-Phase is the most exclusionary zone — it avoids both THERMAL and CONTAINMENT. OPERATION-Iteration is the most permissive.
+- h_ratio independently predicted by repertoire (C1763): After controlling PREFIX + section + paragraph_count, repertoire type explains 31.9% additional h_ratio variance (perm p=0.001). The monitoring-execution balance is partially encoded at the paragraph-combination level, not just the token-level PREFIX composition. This is the only feature surviving full controls — 4/5 others are fully absorbed by PREFIX (confirming the PREFIX confound from C1405-C1431).
+- CONTAINMENT-Sealing is the default mono-type (C1762): 22/40 mono-type folios are CS, mostly single-paragraph Herbal folios. Stars has the most diverse repertoire (entropy=2.94), contradicting the Herbal-diverse prediction.
+- Verdict REPERTOIRE_STRUCTURED_PREFIX_MEDIATED: real co-occurrence structure survives section controls (C1761), but repertoire is mostly downstream of PREFIX composition (C1763: only h_ratio survives). Folio programs ARE built from constrained subroutine bundles, but those bundles are largely governed by the PREFIX/section template architecture from C1405-C1433 and C1569-C1571. The h_ratio exception suggests paragraph-level organization carries a narrow band of independent information about monitoring regime.
 
 ---
 

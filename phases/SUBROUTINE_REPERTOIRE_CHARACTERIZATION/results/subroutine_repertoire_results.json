@@ -1,0 +1,462 @@
+{
+  "phase": 608,
+  "name": "SUBROUTINE_REPERTOIRE_CHARACTERIZATION",
+  "predictions_sha256": "670b31d3ca5ee562f00f94a59c9e09683240d5da318aa902a2db8c3113a984e9",
+  "verdict": "REPERTOIRE_STRUCTURED_PREFIX_MEDIATED",
+  "summary": {
+    "n_folios_total": 80,
+    "n_folios_multi_paragraph": 57,
+    "n_folios_complete_data": 74,
+    "t1_sig_pairs_section_stratified": 4,
+    "t1_hard_exclusion": false,
+    "t2_entropy_ratio": 0.8453,
+    "t2_below_section_null": true,
+    "t3_n_significant": 1,
+    "t5_n_mono": 40,
+    "t5_n_mono_genuine": 17
+  },
+  "predictions": {
+    "P1": {
+      "pass": true,
+      "description": "TQ-MP depleted under section-stratified null"
+    },
+    "P2": {
+      "pass": false,
+      "description": "Entropy below section null, <8 sigs with n>=3"
+    },
+    "P3": {
+      "pass": false,
+      "description": "Repertoire null after PREFIX+section+parcount control"
+    },
+    "P4": {
+      "pass": false,
+      "description": "Section association + Herbal max entropy"
+    },
+    "P5": {
+      "pass": true,
+      "description": "THERMAL-QO most common genuine mono-type"
+    },
+    "P6": {
+      "pass": true,
+      "description": "Mono vs multi differ on >=2 features"
+    }
+  },
+  "t1_cooccurrence": {
+    "multi_paragraph": {
+      "global": {
+        "TQ-CS": {
+          "observed": 13,
+          "expected": 27.86,
+          "O_E": 0.467,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-OI": {
+          "observed": 16,
+          "expected": 32.9,
+          "O_E": 0.486,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-MP": {
+          "observed": 5,
+          "expected": 20.22,
+          "O_E": 0.247,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "CS-OI": {
+          "observed": 14,
+          "expected": 24.82,
+          "O_E": 0.564,
+          "p_value": 0.0002,
+          "direction": "depleted",
+          "significant": true
+        },
+        "CS-MP": {
+          "observed": 6,
+          "expected": 15.14,
+          "O_E": 0.396,
+          "p_value": 0.0002,
+          "direction": "depleted",
+          "significant": true
+        },
+        "OI-MP": {
+          "observed": 14,
+          "expected": 18.03,
+          "O_E": 0.776,
+          "p_value": 0.1508,
+          "direction": "depleted",
+          "significant": false
+        }
+      },
+      "section_stratified": {
+        "TQ-CS": {
+          "observed": 13,
+          "expected": 20.56,
+          "O_E": 0.632,
+          "p_value": 0.0022,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-OI": {
+          "observed": 16,
+          "expected": 22.7,
+          "O_E": 0.705,
+          "p_value": 0.0042,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-MP": {
+          "observed": 5,
+          "expected": 13.23,
+          "O_E": 0.378,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "CS-OI": {
+          "observed": 14,
+          "expected": 17.75,
+          "O_E": 0.789,
+          "p_value": 0.117,
+          "direction": "depleted",
+          "significant": false
+        },
+        "CS-MP": {
+          "observed": 6,
+          "expected": 12.59,
+          "O_E": 0.477,
+          "p_value": 0.0034,
+          "direction": "depleted",
+          "significant": true
+        },
+        "OI-MP": {
+          "observed": 14,
+          "expected": 18.38,
+          "O_E": 0.762,
+          "p_value": 0.0612,
+          "direction": "depleted",
+          "significant": false
+        }
+      }
+    },
+    "all_folios": {
+      "global": {
+        "TQ-CS": {
+          "observed": 13,
+          "expected": 29.74,
+          "O_E": 0.437,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-OI": {
+          "observed": 16,
+          "expected": 31.4,
+          "O_E": 0.51,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-MP": {
+          "observed": 5,
+          "expected": 18.48,
+          "O_E": 0.271,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "CS-OI": {
+          "observed": 14,
+          "expected": 27.51,
+          "O_E": 0.509,
+          "p_value": 0.0,
+          "direction": "depleted",
+          "significant": true
+        },
+        "CS-MP": {
+          "observed": 6,
+          "expected": 16.15,
+          "O_E": 0.372,
+          "p_value": 0.0002,
+          "direction": "depleted",
+          "significant": true
+        },
+        "OI-MP": {
+          "observed": 14,
+          "expected": 17.07,
+          "O_E": 0.82,
+          "p_value": 0.2964,
+          "direction": "depleted",
+          "significant": false
+        }
+      },
+      "section_stratified": {
+        "TQ-CS": {
+          "observed": 13,
+          "expected": 19.87,
+          "O_E": 0.654,
+          "p_value": 0.0056,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-OI": {
+          "observed": 16,
+          "expected": 22.56,
+          "O_E": 0.709,
+          "p_value": 0.0052,
+          "direction": "depleted",
+          "significant": true
+        },
+        "TQ-MP": {
+          "observed": 5,
+          "expected": 12.71,
+          "O_E": 0.393,
+          "p_value": 0.0004,
+          "direction": "depleted",
+          "significant": true
+        },
+        "CS-OI": {
+          "observed": 14,
+          "expected": 19.06,
+          "O_E": 0.735,
+          "p_value": 0.0458,
+          "direction": "depleted",
+          "significant": false
+        },
+        "CS-MP": {
+          "observed": 6,
+          "expected": 11.58,
+          "O_E": 0.518,
+          "p_value": 0.0136,
+          "direction": "depleted",
+          "significant": false
+        },
+        "OI-MP": {
+          "observed": 14,
+          "expected": 18.43,
+          "O_E": 0.76,
+          "p_value": 0.0562,
+          "direction": "depleted",
+          "significant": false
+        }
+      }
+    }
+  },
+  "t2_typology": {
+    "signature_counts": {
+      "1100": 7,
+      "1110": 6,
+      "0011": 6,
+      "1011": 3,
+      "0010": 8,
+      "1010": 7,
+      "0110": 3,
+      "0111": 5,
+      "1001": 2,
+      "0100": 22,
+      "0101": 1,
+      "0001": 2,
+      "1000": 8
+    },
+    "signature_counts_multi": {
+      "1100": 7,
+      "1110": 6,
+      "0011": 6,
+      "1011": 3,
+      "0010": 2,
+      "1010": 7,
+      "0110": 3,
+      "0111": 5,
+      "1001": 2,
+      "0100": 6,
+      "0101": 1,
+      "0001": 1,
+      "1000": 8
+    },
+    "observed_entropy": 3.3026,
+    "max_entropy": 3.9069,
+    "entropy_ratio": 0.8453,
+    "n_signatures_ge3": 10,
+    "null_entropy_global_mean": 3.5724,
+    "null_entropy_global_std": 0.073,
+    "entropy_p_global": 0.0007,
+    "null_entropy_section_mean": 3.4628,
+    "null_entropy_section_std": 0.0646,
+    "entropy_p_section": 0.0121,
+    "below_section_null": true
+  },
+  "t3_nested_model": {
+    "thermo_ke": {
+      "r2_baseline": 0.4939,
+      "r2_full": 0.5795,
+      "delta_r2": 0.0856,
+      "f_stat": 1.451,
+      "f_p": 0.1957,
+      "perm_p": 0.171,
+      "kw_stat": 29.655,
+      "kw_p": 0.0002,
+      "significant": false
+    },
+    "h_ratio": {
+      "r2_baseline": 0.2091,
+      "r2_full": 0.5277,
+      "delta_r2": 0.3186,
+      "f_stat": 4.806,
+      "f_p": 0.0001,
+      "perm_p": 0.001,
+      "kw_stat": 33.92,
+      "kw_p": 0.0,
+      "significant": true
+    },
+    "strong_close_fraction": {
+      "r2_baseline": 0.1938,
+      "r2_full": 0.2788,
+      "delta_r2": 0.0849,
+      "f_stat": 0.839,
+      "f_p": 0.5725,
+      "perm_p": 0.445,
+      "kw_stat": 9.861,
+      "kw_p": 0.2749,
+      "significant": false
+    },
+    "cei_total": {
+      "r2_baseline": 0.4867,
+      "r2_full": 0.5618,
+      "delta_r2": 0.0751,
+      "f_stat": 1.221,
+      "f_p": 0.3037,
+      "perm_p": 0.418,
+      "kw_stat": 6.004,
+      "kw_p": 0.6468,
+      "significant": false
+    },
+    "link_density": {
+      "r2_baseline": 0.5826,
+      "r2_full": 0.6467,
+      "delta_r2": 0.0642,
+      "f_stat": 1.294,
+      "f_p": 0.2651,
+      "perm_p": 0.366,
+      "kw_stat": 24.067,
+      "kw_p": 0.0022,
+      "significant": false
+    }
+  },
+  "t4_section_repertoire": {
+    "chi2": 140.064,
+    "chi2_p": 0.0,
+    "cramers_v": 0.6616,
+    "section_entropies": {
+      "B": 2.2414,
+      "C": 1.5219,
+      "H": 1.7268,
+      "S": 2.9425
+    },
+    "sections": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "contingency_shape": [
+      5,
+      13
+    ]
+  },
+  "t5_monotype": {
+    "n_mono_total": 40,
+    "n_mono_forced": 23,
+    "n_mono_genuine": 17,
+    "n_multi_type": 40,
+    "mono_zone_all": {
+      "OPERATION-Iteration": 8,
+      "CONTAINMENT-Sealing": 22,
+      "MONITORING-Phase": 2,
+      "THERMAL-QO": 8
+    },
+    "mono_zone_genuine": {
+      "OPERATION-Iteration": 2,
+      "CONTAINMENT-Sealing": 6,
+      "MONITORING-Phase": 1,
+      "THERMAL-QO": 8
+    },
+    "mw_results": {
+      "thermo_ke": {
+        "mono_median": 0.0181,
+        "multi_median": 0.0253,
+        "U": 522.0,
+        "p": 0.0075,
+        "significant": true,
+        "n_mono": 40,
+        "n_multi": 40
+      },
+      "h_ratio": {
+        "mono_median": 0.1662,
+        "multi_median": 0.1478,
+        "U": 906.0,
+        "p": 0.31,
+        "significant": false,
+        "n_mono": 40,
+        "n_multi": 40
+      },
+      "strong_close_fraction": {
+        "mono_median": 0.0,
+        "multi_median": 0.2071,
+        "U": 585.5,
+        "p": 0.2909,
+        "significant": false,
+        "n_mono": 34,
+        "n_multi": 40
+      },
+      "cei_total": {
+        "mono_median": 0.5921,
+        "multi_median": 0.5267,
+        "U": 1012.0,
+        "p": 0.0418,
+        "significant": true,
+        "n_mono": 40,
+        "n_multi": 40
+      },
+      "link_density": {
+        "mono_median": 0.3785,
+        "multi_median": 0.371,
+        "U": 812.5,
+        "p": 0.9081,
+        "significant": false,
+        "n_mono": 40,
+        "n_multi": 40
+      }
+    },
+    "n_mw_significant": 2,
+    "p5_most_common_genuine": "THERMAL-QO",
+    "p5_pass": true,
+    "within_mono_kw": {
+      "thermo_ke": {
+        "kw_stat": 15.978,
+        "kw_p": 0.0011
+      },
+      "h_ratio": {
+        "kw_stat": 13.854,
+        "kw_p": 0.0031
+      },
+      "strong_close_fraction": {
+        "kw_stat": 4.92,
+        "kw_p": 0.0854
+      },
+      "cei_total": {
+        "kw_stat": 1.118,
+        "kw_p": 0.7727
+      },
+      "link_density": {
+        "kw_stat": 13.81,
+        "kw_p": 0.0032
+      }
+    }
+  }
+}

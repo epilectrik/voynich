@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1759 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1762 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1760.
+the highest ID present is C1763.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1759 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1762 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1759 validated constraints are present as canonical one-line claims with tier
+1762 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-19 07:57
-**Version:** FROZEN STATE (1759 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-19 09:46
+**Version:** FROZEN STATE (1762 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1999,6 +1999,9 @@ C1757	Within-Stars paragraph shape discrimination confirmed: shape_margin vs h_r
 C1758	Threshold-authenticity subset is internally coherent in PL but its co-variate structure does NOT transfer to V Stars. P1 strong_close_fraction↔checkpoint_rate rho=-0.278 (directional contradiction — negative, not positive). P2 h_ratio↔checkpoint_rate rho=+0.249 p=0.126 (not significant). Novel feature mappings (termination→strong_close_fraction, judgment→checkpoint_rate) rejected	2	B, pseudo-Lull, Stars, threshold, closure, checkpoint, C1742, C1647, C1752
 C1759	Heat-monitoring anchor marginal within Stars: A1 thermo_ke↔h_ratio rho=-0.340 p=0.056. C1752 confirmed at broader scope but insufficient power within Stars alone. Directionally correct — a power limitation, not a directional failure. Bounds where within-section co-variate transfer can be tested	2	B, Stars, thermal, monitoring, C1752, C1755
 C1760	PL threshold-authenticity procedures are iterative: term↔chain rho=+0.324 p=0.051 within S_T relaxed. Chapters with high termination also have high chaining, contradicting the assumption that threshold procedures avoid iteration. Validates expert's correction (C1579, C1642-C1648). S_T strict (3-condition) yielded only n=6 chapters (below n>=12 minimum)	2	pseudo-Lull, threshold, iteration, C1579, C1642, C1648
+C1761	Folio-level zone co-occurrence shows universal depletion: all 6 zone-type pairs depleted (O/E 0.378-0.789), 4/6 significant under section-stratified null (Bonferroni alpha=0.0083). THERMAL-MONITORING most depleted, extending C1399 transition-level avoidance to repertoire level. MONITORING-Phase is the most exclusionary zone. No zone pair shows enrichment. Folios actively restrict their paragraph zone repertoire beyond section ecology	2	B, paragraph, repertoire, co-occurrence, C1398, C1399, C1573
+C1762	Repertoire typology: 13 of 15 possible binary zone signatures observed. Entropy 3.303 bits (84.5% max), below section-stratified null. 50% of folios mono-type. CONTAINMENT-Sealing dominates overall mono-type (22/40) due to Herbal single-paragraph folios; among genuine 2+-paragraph mono-types, THERMAL-QO leads (8/17). Stars has highest repertoire diversity (entropy=2.94), Herbal lowest (1.73). Mono-type folios have lower thermo_ke and higher CEI than multi-type	2	B, paragraph, repertoire, typology, mono-type, C1398, C1569, C1573
+C1763	Repertoire type independently predicts h_ratio: nested model comparison shows 31.9% additional variance explained by repertoire type beyond PREFIX fractions + section + paragraph_count. Only feature (of 5 tested) surviving full controls. 4/5 other features (thermo_ke, strong_close_fraction, cei_total, link_density) fully absorbed by PREFIX + section, confirming PREFIX confound (C1405-C1431). Monitoring-execution balance is not fully determined by token-level PREFIX composition	2	B, paragraph, repertoire, h_ratio, monitoring, PREFIX, C1405, C1431, C1574
 
 ---
 

@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.80 (2026-03-19) - Phase 608: Subroutine Repertoire Characterization
+
+### Summary
+
+Phase 608 characterizes folio-level paragraph zone co-occurrence structure. Pre-phase null test established folio zone repertoire breadth is significantly narrower than chance (z=-0.781, p<0.0001). Phase tests 5 hypotheses: T1 pairwise co-occurrence under section-stratified null, T2 repertoire typology and entropy, T3 nested model comparison (repertoire adds to PREFIX+section+parcount?), T4 section-repertoire association (descriptive), T5 mono-type characterization. Verdict: **REPERTOIRE_STRUCTURED_PREFIX_MEDIATED**. 4/6 zone pairs significantly depleted under section-stratified null (C1761). Repertoire entropy below null (p=0.012, C1762). h_ratio independently predicted by repertoire type (dR2=0.319, perm p=0.001, C1763) — the only feature surviving full controls. 4/5 other features fully absorbed by PREFIX+section (confirming PREFIX confound from C1405-C1431). Real co-occurrence structure exists but is mostly downstream of PREFIX composition, with a narrow h_ratio exception.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SUBROUTINE_REPERTOIRE_CHARACTERIZATION/` — Phase 608 with script, PREDICTIONS.md (SHA-256 frozen), results, INDEX.md |
+| **ADDED** | C1761: Folio-level zone co-occurrence universal depletion (4/6 pairs sig, TQ-MP O/E=0.378) |
+| **ADDED** | C1762: Repertoire typology (13 signatures, entropy=3.303, 50% mono-type, CS dominant, Stars most diverse) |
+| **ADDED** | C1763: Repertoire independently predicts h_ratio (dR2=0.319, F=4.806, perm p=0.001) — only feature surviving full controls |
+| **UPDATED** | INDEX.md — +3 constraints (1762 total), Phase 608 section |
+| **UPDATED** | CLAUDE.md — Quick reference updated (v5.80, 1762 constraints, 608 phases) |
+
+### Key Findings
+
+- **Universal zone-pair depletion (C1761):** All 6 zone pairs depleted at folio level, 4/6 significant under section-stratified null. THERMAL-MONITORING (O/E=0.378) most depleted, extending C1399 transition avoidance to repertoire level. MONITORING-Phase is the most exclusionary zone.
+- **h_ratio independently predicted (C1763):** Repertoire type explains 31.9% additional h_ratio variance beyond PREFIX+section+paragraph_count (perm p=0.001). Monitoring-execution balance partially encoded at paragraph-combination level.
+- **PREFIX confound confirmed for 4/5 features (C1763):** thermo_ke, strong_close_fraction, cei_total, link_density all absorbed by PREFIX+section controls. Validates C1405-C1431 PREFIX dominance.
+- **Stars most diverse, Herbal least (C1762):** Stars repertoire entropy=2.94 (highest), Herbal=1.73 (lowest). Contradicts prediction. Herbal dominated by CS mono-type (single-paragraph folios).
+- **Folio programs are constrained subroutine bundles:** Real combinatorial structure exists in paragraph zone composition, governed primarily by PREFIX/section template architecture (C1405-C1433, C1569-C1571), with a narrow monitoring-related exception.
+
+---
+
 ## Version 5.79 (2026-03-19) - Phase 607: Typed Subset Alignment
 
 ### Summary
