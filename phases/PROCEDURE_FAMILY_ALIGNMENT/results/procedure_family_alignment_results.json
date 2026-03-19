@@ -1,0 +1,423 @@
+{
+  "phase": 604,
+  "predictions_hash": "2775f9751f2336ed16af27f6f5aa6bac59ba577e63578398efdd2bdbde80cfa8",
+  "verdict": "SPECIFICITY_FAILURE",
+  "S1": {
+    "pass": true,
+    "stars_r1_n": 10,
+    "stars_r3_n": 12,
+    "stars_r1_mean_ey": 0.18226933006267854,
+    "stars_r3_mean_ey": 0.10385144826082214,
+    "U": 112.0,
+    "p": 0.0003421299024737222
+  },
+  "stage1": {
+    "family_chapter_counts": {
+      "distillation": 16,
+      "fixation": 10,
+      "sublimation": 7,
+      "dissolution": 12,
+      "theoretical_neg": 45
+    },
+    "gate_a": {
+      "pass": true,
+      "n_bonferroni": 2,
+      "n_nominal": 3,
+      "kruskal_wallis": {
+        "monitoring_density": {
+          "H": 11.140927747413214,
+          "p": 0.010987730584168688,
+          "bonferroni_pass": false,
+          "nominal_pass": true
+        },
+        "correction_rate": {
+          "H": 4.527740188948154,
+          "p": 0.209829232245501,
+          "bonferroni_pass": false,
+          "nominal_pass": false
+        },
+        "heat_rate": {
+          "H": 5.863348498937322,
+          "p": 0.11845123172841165,
+          "bonferroni_pass": false,
+          "nominal_pass": false
+        },
+        "judgment_rate": {
+          "H": 3.7668211989213747,
+          "p": 0.2877690407126209,
+          "bonferroni_pass": false,
+          "nominal_pass": false
+        },
+        "termination_rate": {
+          "H": 15.965799153807886,
+          "p": 0.0011524402551205174,
+          "bonferroni_pass": true,
+          "nominal_pass": true
+        },
+        "chain_rate": {
+          "H": 13.940777048123925,
+          "p": 0.002986883724703531,
+          "bonferroni_pass": true,
+          "nominal_pass": true
+        },
+        "operational_density": {
+          "H": 7.461907307527087,
+          "p": 0.0585453367841009,
+          "bonferroni_pass": false,
+          "nominal_pass": false
+        }
+      }
+    },
+    "gate_b": {
+      "pass": false,
+      "loo_accuracy": 0.3333333333333333,
+      "chance_level": 0.35555555555555557,
+      "n_chapters": 45
+    },
+    "pairwise": {
+      "distillation_vs_fixation": {
+        "monitoring_density": {
+          "U": 41.0,
+          "p": 0.031706729317216006,
+          "rank_biserial": 0.48750000000000004
+        },
+        "correction_rate": {
+          "U": 79.0,
+          "p": 0.976615083472309,
+          "rank_biserial": 0.012499999999999956
+        },
+        "heat_rate": {
+          "U": 93.5,
+          "p": 0.4919074808866717,
+          "rank_biserial": -0.16874999999999996
+        },
+        "judgment_rate": {
+          "U": 79.5,
+          "p": 1.0,
+          "rank_biserial": 0.006249999999999978
+        },
+        "termination_rate": {
+          "U": 31.0,
+          "p": 0.008997673559405886,
+          "rank_biserial": 0.6125
+        },
+        "chain_rate": {
+          "U": 28.5,
+          "p": 0.006337527449636656,
+          "rank_biserial": 0.64375
+        },
+        "operational_density": {
+          "U": 50.5,
+          "p": 0.12250215627761862,
+          "rank_biserial": 0.36875
+        }
+      },
+      "distillation_vs_sublimation": {
+        "monitoring_density": {
+          "U": 26.5,
+          "p": 0.0419081874760625,
+          "rank_biserial": 0.5267857142857143
+        },
+        "correction_rate": {
+          "U": 69.0,
+          "p": 0.3259242801781903,
+          "rank_biserial": -0.2321428571428572
+        },
+        "heat_rate": {
+          "U": 66.5,
+          "p": 0.5011669623595894,
+          "rank_biserial": -0.1875
+        },
+        "judgment_rate": {
+          "U": 66.5,
+          "p": 0.25385257750320356,
+          "rank_biserial": -0.1875
+        },
+        "termination_rate": {
+          "U": 23.5,
+          "p": 0.027412298886589772,
+          "rank_biserial": 0.5803571428571428
+        },
+        "chain_rate": {
+          "U": 27.0,
+          "p": 0.04936882163748831,
+          "rank_biserial": 0.5178571428571428
+        },
+        "operational_density": {
+          "U": 46.5,
+          "p": 0.5414580875429603,
+          "rank_biserial": 0.1696428571428571
+        }
+      },
+      "fixation_vs_sublimation": {
+        "monitoring_density": {
+          "U": 31.0,
+          "p": 0.6997327763594273,
+          "rank_biserial": 0.11428571428571432
+        },
+        "correction_rate": {
+          "U": 42.0,
+          "p": 0.4312276372273831,
+          "rank_biserial": -0.19999999999999996
+        },
+        "heat_rate": {
+          "U": 35.5,
+          "p": 1.0,
+          "rank_biserial": -0.014285714285714235
+        },
+        "judgment_rate": {
+          "U": 42.0,
+          "p": 0.25741815600379214,
+          "rank_biserial": -0.19999999999999996
+        },
+        "termination_rate": {
+          "U": 36.0,
+          "p": 0.9609389063837998,
+          "rank_biserial": -0.02857142857142847
+        },
+        "chain_rate": {
+          "U": 35.5,
+          "p": 1.0,
+          "rank_biserial": -0.014285714285714235
+        },
+        "operational_density": {
+          "U": 46.0,
+          "p": 0.29890050214527586,
+          "rank_biserial": -0.3142857142857143
+        }
+      }
+    },
+    "prototypes": {
+      "distillation": [
+        0.7731250000000001,
+        3.990203875072296,
+        13.325048489522175,
+        1.5221291866028708,
+        4.870885693254114,
+        3.913142778274357,
+        3.841875
+      ],
+      "fixation": [
+        1.5,
+        4.220959595959596,
+        11.229829810712165,
+        1.6233766233766231,
+        11.54692937781173,
+        9.72586155674391,
+        5.2
+      ],
+      "sublimation": [
+        1.5714285714285714,
+        3.5714285714285716,
+        11.36904761904762,
+        0.0,
+        12.20238095238095,
+        9.345238095238093,
+        3.7142857142857144
+      ],
+      "dissolution": [
+        0.5833333333333334,
+        0.7575757575757577,
+        7.086685958968569,
+        2.476149819542268,
+        2.5946773636991027,
+        2.7802285275111362,
+        2.25
+      ],
+      "theoretical_neg": [
+        1.2626666666666666,
+        2.9890744010813814,
+        10.240981677691597,
+        1.5195158306578056,
+        3.084694025652775,
+        4.109564891330603,
+        5.328666666666667
+      ]
+    },
+    "prototype_dims": [
+      "monitoring_density",
+      "correction_rate",
+      "heat_rate",
+      "judgment_rate",
+      "termination_rate",
+      "chain_rate",
+      "operational_density"
+    ]
+  },
+  "approach_a": {
+    "n_folios": 82,
+    "assignments": {
+      "distillation": 29,
+      "fixation": 6,
+      "sublimation": 22,
+      "dissolution": 25,
+      "theoretical_neg": 0
+    },
+    "mean_cosines": {
+      "distillation": -0.027024424830546033,
+      "fixation": 0.0030250365955059783,
+      "sublimation": -0.0028918780097092933,
+      "dissolution": 0.015215205982792168,
+      "theoretical_neg": 0.020645703838186945
+    }
+  },
+  "approach_b": {
+    "n_eligible_folios": 46,
+    "assignments": {
+      "distillation": 28,
+      "fixation": 7,
+      "sublimation": 2,
+      "dissolution": 9,
+      "theoretical_neg": 0
+    },
+    "derived_zone_profiles": {
+      "distillation": [
+        0.3496138952242382,
+        0.23969677764142694,
+        0.23225443796329992,
+        0.17843488917103498
+      ],
+      "fixation": [
+        0.24065389163790238,
+        0.22989943915426,
+        0.29351843897801533,
+        0.23592823022982237
+      ],
+      "sublimation": [
+        0.2767133592717799,
+        0.19183510238528198,
+        0.3076684914246866,
+        0.22378304691825154
+      ],
+      "dissolution": [
+        0.14741330621627527,
+        0.3246535842752655,
+        0.16363113966222667,
+        0.3643019698462326
+      ],
+      "theoretical_neg": [
+        0.27076466998900056,
+        0.17133739986143215,
+        0.26368167779495577,
+        0.2942162523546116
+      ]
+    },
+    "mean_emds": {
+      "distillation": 0.840534190071676,
+      "fixation": 0.9007631568969007,
+      "sublimation": 0.890264319317929,
+      "dissolution": 0.9996763609791509,
+      "theoretical_neg": 0.9394031981747875
+    }
+  },
+  "P3": {
+    "pass": false,
+    "distillation_n": 29,
+    "fixation_n": 6,
+    "distillation_mean_safety": 0.11590230301138114,
+    "fixation_mean_safety": 0.1823224668403417,
+    "U": 35.0,
+    "p": 0.9907002390398975,
+    "rank_biserial": 0.5977011494252873
+  },
+  "P4": {
+    "pass": true,
+    "sublimation_n": 22,
+    "distillation_n": 29,
+    "sublimation_mean_h": 0.2349409090909091,
+    "distillation_mean_h": 0.11283793103448275,
+    "U": 638.0,
+    "p": 6.915888070354003e-10,
+    "rank_biserial": -1.0
+  },
+  "P1": {
+    "pass": true,
+    "stars_enrichment_p": 0.6236516374639007,
+    "stars_enrichment_or": 0.9650793650793651,
+    "a3_enrichment_p": 0.9875626897592915,
+    "a3_enrichment_or": 0.375,
+    "within_a3_p": 0.0005992079225713683,
+    "within_a3_dist_k_n": 9,
+    "within_a3_nondist_k_n": 28
+  },
+  "P2": {
+    "pass": false,
+    "herbal_enrichment_p": 0.9546189805529108,
+    "herbal_enrichment_or": 0.2903225806451613,
+    "a2_enrichment_p": 1.0,
+    "a2_enrichment_or": 0.0,
+    "within_herbal_p": 1.0,
+    "within_herbal_fix_n": 1,
+    "within_herbal_nonfix_n": 31
+  },
+  "P5": {
+    "pass": true,
+    "n_common_folios": 46,
+    "agreement": 0.45652173913043476,
+    "kappa": 0.16302765647743808
+  },
+  "N1": {
+    "pass": false,
+    "approach_a_worst": "distillation",
+    "approach_b_worst": "dissolution",
+    "mean_cosines": {
+      "distillation": -0.027024424830546033,
+      "fixation": 0.0030250365955059783,
+      "sublimation": -0.0028918780097092933,
+      "dissolution": 0.015215205982792168,
+      "theoretical_neg": 0.020645703838186945
+    },
+    "mean_emds": {
+      "distillation": 0.840534190071676,
+      "fixation": 0.9007631568969007,
+      "sublimation": 0.890264319317929,
+      "dissolution": 0.9996763609791509,
+      "theoretical_neg": 0.9394031981747875
+    }
+  },
+  "N2": {
+    "pass": false,
+    "real_directional_score": 0.05568281422746578,
+    "perm_95th": 0.2231369522237524,
+    "fraction_exceeding": 0.435,
+    "n_permutations": 1000
+  },
+  "diagnostics": {
+    "D1_fix_vs_dist_safety_rb": 0.5977011494252873,
+    "D2_fix_vs_sub_safety_rb": 1.0,
+    "D3_dissolution_sections": {
+      "S": 10,
+      "H": 11,
+      "T": 1,
+      "C": 3
+    },
+    "D3_dissolution_regimes": {
+      "REGIME_3": 9,
+      "REGIME_4": 9,
+      "REGIME_1": 3,
+      "REGIME_2": 4
+    },
+    "D3_dissolution_apparatus": {
+      "A3": 16,
+      "A1": 1,
+      "A2": 7,
+      "?": 1
+    },
+    "D4_5d_vs_3d_changed": 29,
+    "D4_5d_vs_3d_total": 76
+  },
+  "summary": {
+    "n_passing_p": 2,
+    "tests": {
+      "P1": "PASS",
+      "P2": "FAIL",
+      "P3": "FAIL",
+      "P4": "PASS"
+    },
+    "controls": {
+      "N1": "FAIL",
+      "N2": "FAIL"
+    },
+    "diagnostic_p5": "PASS"
+  }
+}

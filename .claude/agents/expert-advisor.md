@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1747 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1750 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1748.
+the highest ID present is C1751.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1747 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1750 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1747 validated constraints are present as canonical one-line claims with tier
+1750 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-18 21:18
-**Version:** FROZEN STATE (1747 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-18 22:27
+**Version:** FROZEN STATE (1750 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1987,6 +1987,9 @@ C1745	Recovery doctrine aligns with safety-style split: both pseudo-Lull and Voy
 C1746	Thresholded termination gap: pseudo-Lull threshold/count ratio 13.9:1 (139 threshold-based, 10 count-based) vs Brunschwig 1.42:1 (252 threshold, 178 count), a 9.8x gap. Quality-dependent stopping (not fixed step counts) differentiates the midprocess control layer from recipe-level specification. Compatible with C1403 MONOSTATE (AXM > 50% all sections) and C1642-C1648 closure authenticity (grammar advantage only for STRONG closures).	2	B, termination, pseudo-Lull, Brunschwig, C1403, C1642, C1648
 C1747	Recovery asymmetry replication: pseudo-Lull shows convergent recovery (5 failure modes, 2 correction strategies, ratio 2.5), matching Voynich C458 clamped-hazard/free-recovery asymmetry (hazard CV=0.115, recovery CV=0.824). Both systems constrain dangerous interactions tightly while allowing recovery operations to vary freely. Per-part correction density CV=0.31 further parallels recovery freedom.	2	B, recovery, hazard, pseudo-Lull, C458
 C1748	Register architecture partially confirmed: pseudo-Lull operational parts (Practica, Mercuriorum, Furnis) share >= 64% of operation families with pairwise JSD 0.19-0.26, matching C1134 same-inventory-different-weighting pattern. FAILS when including Theorica (88% theoretical, overlap 36-50%). Voynich has no purely theoretical section, so the analogy is incomplete. Mean pairwise JSD=0.27 vs Voynich C1134 inter-section JS=0.124.	2	B, register, sections, pseudo-Lull, C1134, C1499
+C1749	Procedure-family prototype assignment does not project onto Voynich folio structure: z-scored cosine bridge maps pseudo-Lull families (distillation, fixation, sublimation, dissolution) onto known REGIME/section manifold, not family-specific residual structure. N1 fails (theoretical not worst-fitting: distillation worst in Approach A, dissolution worst in Approach B). N2 fails (real directional score 0.056, permutation 95th=0.223, 43.5% of random permutations exceed real). Assignments capture REGIME gradients (distillation→R1/Bio, sublimation→R3/Herbal, dissolution→mixed high-R) not PL family identity. Categorical partition not recoverable despite shared operational axes. Extends C1377 (Puff material types also fail to differentiate V profiles)	2	B, pseudo-Lull, families, REGIME, assignment, C1377, C1712, C1744
+C1750	Pseudo-Lull sublimation vs distillation monitoring contrast replicates in Voynich with perfect rank separation: sublimation-assigned folios h_ratio=0.235 vs distillation-assigned h_ratio=0.113, Mann-Whitney U=638, p=6.9e-10, rank_biserial=-1.0. Strengthens C1744 at family resolution — PL's monitoring-intensive family corresponds to a real Voynich axis contrast. Within-A3 thermal specificity also confirmed. Axis-level alignment genuine even though categorical assignment fails	2	B, pseudo-Lull, monitoring, h_ratio, k_ratio, sublimation, distillation, C1744, C1735
+C1751	Pseudo-Lull fixation is not a valid A2/recirculation proxy under folio-mean feature mapping: only 6/82 folios assigned to fixation, 5/6 in Bio, 0/6 in A2, safety direction inverted. High-termination/high-chain PL fixation prototype selects Bio/REGIME_1/A1 folios (strong preventive safety) not predicted A2/Herbal (transformative safety). Pre-registered limitation acknowledged fixation as recirculation proxy; result confirms proxy inadequacy. The PL dimensions that most discriminate families (termination_rate, chain_rate) have no folio-level V analog	2	B, pseudo-Lull, fixation, A2, recirculation, safety, proxy, C1741, C1471
 
 ---
 

@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1748.
+the highest ID present is C1751.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2073,6 +2073,9 @@ C1745	Recovery doctrine maps to safety-style split: both pseudo-Lull and Voynich
 C1746	Thresholded termination 9.8x gap: PL threshold/count=13.9:1 (139/10) vs Brunschwig 1.42:1 (252/178). Quality-dependent stopping (not fixed steps) differentiates midprocess control from recipe-level specification. Compatible with C1403 MONOSTATE and C1642-C1648 closure authenticity.	2	B, termination, pseudo-Lull, Brunschwig, C1403, C1642, C1648	PL_ratio=13.9. Brun_ratio=1.42. gap=9.82x.
 C1747	Recovery asymmetry replication: PL convergent recovery (5 failure modes, 2 correction strategies, ratio=2.5) matches C458 clamped-hazard/free-recovery (V hazard CV=0.115, recovery CV=0.824). Both constrain danger tightly, let recovery vary freely.	2	B, recovery, hazard, pseudo-Lull, C458	PL_ratio=2.5. V_haz_CV=0.115. V_rec_CV=0.824.
 C1748	Register architecture partial: PL operational parts (Practica/Mercuriorum/Furnis) share >=64% families with JSD 0.19-0.26, matching C1134 same-inventory-different-weighting. FAILS with Theorica (88% theoretical, overlap 36-50%). Voynich has no purely theoretical section. Mean JSD=0.27 vs C1134 JS=0.124.	2	B, register, sections, pseudo-Lull, C1134, C1499	operational_overlap=0.64. mean_JSD=0.27. P5_verdict=FAIL.
+C1749	Procedure-family prototype assignment does not project onto V folio structure: z-scored cosine bridge maps PL families (distillation, fixation, sublimation, dissolution) onto known REGIME/section manifold, not family-specific residual. N1 fails (theoretical not worst-fitting), N2 fails (43.5% random permutations exceed real). Extends C1377.	2	B, pseudo-Lull, families, REGIME, assignment, C1377, C1712, C1744	N1=FAIL. N2_frac=0.435. verdict=SPECIFICITY_FAILURE.
+C1750	PL sublimation vs distillation monitoring contrast replicates in V: sublimation-assigned h_ratio=0.235 vs distillation=0.113, U=638, p=6.9e-10, rank_biserial=-1.0 (perfect separation). Within-A3 thermal specificity also confirmed (p=0.0006). Axis-level alignment genuine; categorical assignment fails.	2	B, pseudo-Lull, monitoring, h_ratio, sublimation, distillation, C1744, C1735	P4_p=6.9e-10. P4_rb=-1.0. P1_within_A3_p=0.0006.
+C1751	PL fixation not valid A2/recirculation proxy: 6/82 assigned, 0 A2, safety direction inverted (fix=0.182 > dist=0.116, predicted fix < dist). High-termination/chain fixation selects Bio/R1/A1 (preventive safety) not A2/Herbal (transformative). PL discriminating dims (termination, chain) have no folio-level V analog.	2	B, pseudo-Lull, fixation, A2, recirculation, safety, C1741, C1471	P3_direction=INVERTED. fix_n=6. A2_n=0.
 
 ---
 

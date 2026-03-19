@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1747 validated constraints | **Version:** 5.75 | **Date:** 2026-03-18
+**Total:** 1750 validated constraints | **Version:** 5.76 | **Date:** 2026-03-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 604: Procedure-Family Alignment — SPECIFICITY_FAILURE (C1749-C1751)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1749 | Procedure-family prototype assignment does not project onto Voynich folio structure: z-scored cosine bridge maps pseudo-Lull families (distillation, fixation, sublimation, dissolution) onto known REGIME/section manifold, not family-specific residual structure. N1 fails (theoretical not worst-fitting: distillation worst in Approach A, dissolution worst in Approach B). N2 fails (real directional score 0.056, permutation 95th=0.223, 43.5% of random permutations exceed real). Assignments capture REGIME gradients (distillation→R1/Bio, sublimation→R3/Herbal, dissolution→mixed high-R) not PL family identity. Categorical partition not recoverable despite shared operational axes. Extends C1377 (Puff material types also fail to differentiate V profiles) | 2 | B, pseudo-Lull, families, REGIME, assignment, C1377, C1712, C1744 | N1_pass=false. N2_real=0.056. N2_95th=0.223. N2_frac_exceeding=0.435. n_families=4. n_folios=82. verdict=SPECIFICITY_FAILURE. |
+| 1750 | Pseudo-Lull sublimation vs distillation monitoring contrast replicates in Voynich with perfect rank separation: sublimation-assigned folios h_ratio=0.235 vs distillation-assigned h_ratio=0.113, Mann-Whitney U=638, p=6.9e-10, rank_biserial=-1.0. Strengthens C1744 at family resolution — PL's monitoring-intensive family corresponds to a real Voynich axis contrast. Within-A3 thermal specificity also confirmed (distillation-assigned A3 folios have higher k_ratio, p=0.0006). Axis-level alignment genuine even though categorical assignment fails | 2 | B, pseudo-Lull, monitoring, h_ratio, k_ratio, sublimation, distillation, C1744, C1735 | P4_sublimation_h=0.235. P4_distillation_h=0.113. P4_U=638. P4_p=6.9e-10. P4_rb=-1.0. P1_within_A3_p=0.0006. |
+| 1751 | Pseudo-Lull fixation is not a valid A2/recirculation proxy under folio-mean feature mapping: only 6/82 folios assigned to fixation, 5/6 in Bio, 0/6 in A2, safety direction inverted (fixation safety_balance=0.182 > distillation=0.116, predicted fixation < distillation). High-termination/high-chain PL fixation prototype selects Bio/REGIME_1/A1 folios (strong preventive safety) not predicted A2/Herbal (transformative safety). Pre-registered limitation acknowledged fixation as recirculation proxy; result confirms proxy inadequacy. The PL dimensions that most discriminate families (termination_rate, chain_rate) have no folio-level V analog | 2 | B, pseudo-Lull, fixation, A2, recirculation, safety, proxy, C1741, C1471 | P3_fix_safety=0.182. P3_dist_safety=0.116. P3_p=0.991. P3_direction=INVERTED. P2_fix_n=6. P2_A2_n=0. P2_herbal_p=0.955. |
+
+**Phase 604 findings (Procedure-Family Alignment, SPECIFICITY_FAILURE):**
+- Pre-registered verdict SPECIFICITY_FAILURE. The procedure-family prototype assignment model fails its specificity controls (N1, N2), meaning the folio assignments carry no family-specific information beyond what the underlying axis positions (h_ratio, k_ratio, safety_balance) already provide.
+- The assignment mechanism maps PL families onto the known Voynich REGIME/section manifold (C1749): distillation→REGIME_1/Bio/A1 (24/29 folios in REGIME_1), sublimation→REGIME_3/Herbal/A3, dissolution→mixed high-REGIME. This recapitulates known structure rather than discovering family-level organization.
+- Axis-level alignment survives (C1750): sublimation vs distillation on h_ratio shows perfect rank separation (p=6.9e-10), and within-A3 distillation-assigned folios have higher k_ratio (p=0.0006). The operational dimensions PL uses have genuine V analogs — the axes are shared even though the categorical partition is not recoverable.
+- Fixation proxy fails decisively (C1751): 6/82 assignments, wrong safety direction, zero A2 enrichment. PL families separate primarily on termination_rate and chain_rate (the only Bonferroni survivors in Stage 1), but these dimensions have no folio-level V analog — V closure and chaining are line-local (C1471), not folio-level family signatures.
+- The phase rejects the current prototype-assignment bridge, not the broader possibility of PL family contrasts. The surviving signal (P4, P1) suggests a contrast-based approach (testing specific family pairs on specific axes) may succeed where global assignment fails.
+- Extends C1377 (Puff material types don't differentiate V profiles): external categorical taxonomies do not project onto V folio structure. V uses the same continuous axes but imposes its own organization (sections, REGIMEs, apparatus profiles).
 
 ---
 

@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.76 (2026-03-18) - Phase 604: Procedure-Family Alignment
+
+### Summary
+
+Phase 604 tests whether pseudo-Lull's operation families (distillation, fixation, sublimation, dissolution) predict specific groupings of Voynich operational units via procedure-family alignment. Pre-registered 12-test design with SHA-256 verification, two-part discrimination gate, two matching approaches (cosine + EMD), and negative controls. Verdict: **SPECIFICITY_FAILURE** (N1 fails — theoretical not worst-fitting family). The z-scored cosine bridge maps PL families onto known REGIME/section manifold, not family-specific residual structure. However, axis-level alignment survives: sublimation vs distillation monitoring contrast shows perfect rank separation (P4 p=6.9e-10), and within-A3 thermal specificity is confirmed (P1 p=0.0006). Fixation as A2/recirculation proxy fails decisively (6/82 assignments, wrong safety direction). The phase rejects the prototype-assignment bridge, not the broader possibility of family contrasts.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PROCEDURE_FAMILY_ALIGNMENT/` -- Phase 604 with alignment script, PREDICTIONS.md (SHA-256 frozen), results, INDEX.md |
+| **ADDED** | C1749: Procedure-family prototype assignment does not project onto V folio structure -- N1 fail, N2 43.5% exceed |
+| **ADDED** | C1750: Sublimation vs distillation monitoring contrast -- h_ratio 0.235 vs 0.113, p=6.9e-10, perfect rank separation |
+| **ADDED** | C1751: Fixation not valid A2/recirculation proxy -- 6/82 assignments, 0 A2, safety direction inverted |
+| **UPDATED** | INDEX.md -- +3 constraints (1750 total), Phase 604 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.76, 1750 constraints, 604 phases) |
+
+### Key Findings
+
+- **Family-level assignment fails specificity controls (C1749):** N1 fails (theoretical not worst-fitting on either approach), N2 fails (43.5% of random permutations beat real directional score). Assignments recapitulate REGIME/section structure: distillation→REGIME_1/Bio, sublimation→REGIME_3/Herbal, dissolution→mixed high-REGIME.
+- **Axis-level alignment is genuine (C1750):** P4 sublimation h_ratio vs distillation h_ratio shows perfect separation (p=6.9e-10). P1 within-A3 k_ratio specificity (p=0.0006). The operational dimensions PL and V share are real; the categorical partition is not recoverable.
+- **Fixation proxy is inadequate (C1751):** PL families discriminate on termination_rate and chain_rate (Bonferroni survivors), but these have no folio-level V analog. The 3D bridge uses h_ratio/safety_balance/k_ratio — dimensions where PL families overlap. Fixation's high-termination prototype selects Bio/REGIME_1/A1 (strong preventive safety), opposite of predicted A2/transformative target.
+- **Extends C1377:** External categorical taxonomies (Puff material types, PL operation families) do not project onto V folio structure. V imposes its own organization (sections, REGIMEs, apparatus profiles) on shared continuous axes.
+- **Surviving signal suggests contrast-based approach:** P1 and P4 show family-specific axes work; the failure is in global assignment. A follow-up testing specific family contrasts (not full assignment) may succeed.
+
+---
+
 ## Version 5.75 (2026-03-18) - Phases 602-603: Pseudo-Lull Characterization and Midprocess Alignment
 
 ### Summary
