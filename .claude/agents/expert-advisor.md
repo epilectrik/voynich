@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1756 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1759 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1757.
+the highest ID present is C1760.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1756 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1759 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1756 validated constraints are present as canonical one-line claims with tier
+1759 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-19 00:16
-**Version:** FROZEN STATE (1756 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-19 07:57
+**Version:** FROZEN STATE (1759 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1996,6 +1996,9 @@ C1754	Family contrast is distillation-vs-rest, not sublimation-specific: N4 diss
 C1755	Paragraph distributional shape tracks monitoring axis: shape_margin (EMD_to_distillation - EMD_to_basin) vs h_resid Spearman rho=+0.525, surviving cross-folio permutation (N1 frac=0.000) and within-Stars replication. Extends C1573 (distributional shape carries folio-specific information) to PL-derived zone profiles. Secondary S2 and S3 confirm paragraph-zone distributions carry monitoring-axis information within and across sections	2	B, pseudo-Lull, paragraph, distributional, shape, monitoring, C1573, C1752, C1398
 C1756	Current 4D PL zone profiles lack specificity for paragraph shape: N2 random Dirichlet profiles achieve comparable shape margins (frac_exceeding=0.062), N3 theoretical_neg profile predicts h_resid comparably. The 4D paragraph-zone representation cannot distinguish PL family profiles from generic asymmetric shapes or from PL theoretical chapters (which share operational vocabulary per C1748). Rejects this profile-construction method, not the broader PL midprocess alignment (C1744-C1748). Profile construction needs finer-grained typed features (monitoring subtypes, correction classes, action outcomes) for specificity	2	B, pseudo-Lull, paragraph, profile, specificity, N2, N3, C1748, C1749, C1754
 C1757	Within-Stars paragraph shape discrimination confirmed: shape_margin vs h_resid within Stars Spearman rho=+0.739. Paragraph distributional shape carries folio-specific information beyond section membership, consistent with C1573 within-section recovery. Stars remains the cleanest historical calibration surface (C1735, C1740, C1750, now C1757)	2	B, Stars, paragraph, distributional, within-section, C1573, C1735, C1740, C1750
+C1758	Threshold-authenticity subset is internally coherent in PL but its co-variate structure does NOT transfer to V Stars. P1 strong_close_fraction↔checkpoint_rate rho=-0.278 (directional contradiction — negative, not positive). P2 h_ratio↔checkpoint_rate rho=+0.249 p=0.126 (not significant). Novel feature mappings (termination→strong_close_fraction, judgment→checkpoint_rate) rejected	2	B, pseudo-Lull, Stars, threshold, closure, checkpoint, C1742, C1647, C1752
+C1759	Heat-monitoring anchor marginal within Stars: A1 thermo_ke↔h_ratio rho=-0.340 p=0.056. C1752 confirmed at broader scope but insufficient power within Stars alone. Directionally correct — a power limitation, not a directional failure. Bounds where within-section co-variate transfer can be tested	2	B, Stars, thermal, monitoring, C1752, C1755
+C1760	PL threshold-authenticity procedures are iterative: term↔chain rho=+0.324 p=0.051 within S_T relaxed. Chapters with high termination also have high chaining, contradicting the assumption that threshold procedures avoid iteration. Validates expert's correction (C1579, C1642-C1648). S_T strict (3-condition) yielded only n=6 chapters (below n>=12 minimum)	2	pseudo-Lull, threshold, iteration, C1579, C1642, C1648
 
 ---
 

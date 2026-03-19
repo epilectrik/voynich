@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1756 validated constraints | **Version:** 5.78 | **Date:** 2026-03-18
+**Total:** 1759 validated constraints | **Version:** 5.79 | **Date:** 2026-03-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 607: Typed Subset Alignment — FRAMEWORK_MARGINAL (C1758-C1760)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1758 | Threshold-authenticity subset is internally coherent in PL (C1a 4/5 held-out features pass, term↔judg rho=+0.357 p=0.030) but its co-variate structure does NOT transfer to V Stars. P1 strong_close_fraction↔checkpoint_rate rho=-0.278 (directional contradiction — negative, not positive). P2 h_ratio↔checkpoint_rate rho=+0.249 p=0.126 (not significant). Novel feature mappings (termination→strong_close_fraction, judgment→checkpoint_rate) rejected | 2 | B, pseudo-Lull, Stars, threshold, closure, checkpoint, C1742, C1647, C1752 | P1_rho=-0.278. P2_rho=0.249. P2_p=0.126. C1a_pass=4/5. ST_term_judg_rho=0.357. ST_term_judg_p=0.030. |
+| 1759 | Heat-monitoring anchor marginal within Stars: A1 thermo_ke↔h_ratio rho=-0.340 p=0.056 (n=23). C1752 confirmed at broader scope (n=41-69, rho=-0.40 to -0.47) but insufficient power within Stars alone. Directionally correct — a power limitation, not a directional failure. Bounds where within-section co-variate transfer can be tested | 2 | B, Stars, thermal, monitoring, C1752, C1755 | A1_rho=-0.340. A1_p=0.056. n=23. |
+| 1760 | PL threshold-authenticity procedures are iterative: term↔chain rho=+0.324 p=0.051 within S_T relaxed (n=37). Chapters with high termination also have high chaining, contradicting the assumption that threshold procedures avoid iteration. Validates expert's correction (C1579, C1642-C1648). S_T strict (3-condition) yielded only n=6 chapters (below n>=12 minimum) | 2 | pseudo-Lull, threshold, iteration, C1579, C1642, C1648 | term_chain_rho=0.324. term_chain_p=0.051. ST_strict_n=6. ST_relaxed_n=37. |
+
+**Phase 607 findings (Typed Subset Alignment, FRAMEWORK_MARGINAL):**
+- Pre-registered verdict FRAMEWORK_MARGINAL. Expert-directed methodological shift from named-family comparison to typed behavioral subsets. Two-layer design: conservative heat-monitoring anchor (Layer A) + bold threshold-authenticity probe (Layer B). Layer A anchor A1 fails marginally (rho=-0.34, p=0.056). Layer B predictions both fail (P1 directional contradiction, P2 not significant).
+- Threshold-authenticity subset IS internally coherent in PL (C1758): C1a gate passes 4/5 held-out features. S_T (relaxed, n=37) genuinely differs from rest on monitoring, correction, operational density, and chain rate. The PL-side co-variate term↔judg is positive (rho=+0.357, p=0.030). The subset definition captures real procedural variation. But the PL→V mapping for novel features fails.
+- Novel feature mappings rejected (C1758): strong_close_fraction↔checkpoint_rate is negative (rho=-0.278), directly contradicting the PL-motivated positive prediction. The mapping termination→strong_close_fraction and judgment→checkpoint_rate does not capture the structural correspondence between PL and V.
+- Heat-monitoring anchor marginal within Stars (C1759): A1 rho=-0.340, p=0.056 (n=23). The thermal-monitoring contrast is confirmed at broader scope (C1752) but Stars-only (n=23) lacks power. This bounds the minimum sample size needed for within-section co-variate transfer testing.
+- Threshold procedures are iterative (C1760): term↔chain positive (rho=+0.324) within S_T, validating the expert's pre-analysis correction. The strict 3-condition S_T (dropping chain) had only n=6, forcing use of the relaxed 2-condition definition.
+- The PL→V overlap established by Phases 602-606 (C1744-C1752) is NOT extended by novel feature mappings. The recoverable overlap remains confined to the thermal-monitoring axis. The typed-subset approach is structurally sound but the specific transfer hypotheses fail.
 
 ---
 

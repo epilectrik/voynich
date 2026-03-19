@@ -1,0 +1,247 @@
+{
+  "phase": 607,
+  "predictions_hash": "b3d96e77acd589be48ffd8b9943b62ec8a31cf45072d20bfc4c5e92ad2646d2f",
+  "n_stars": 23,
+  "n_pl_chapters": 209,
+  "pl_medians": {
+    "heat_rate": 0.1,
+    "monitoring_rate": 0.058823529411764705,
+    "termination_rate": 0.029411764705882353,
+    "judgment_rate": 0.0,
+    "chain_rate": 0.047619047619047616,
+    "correction_rate": 0.0,
+    "operational_density": 4.0
+  },
+  "subset_sizes": {
+    "S_HM_hot": 37,
+    "S_HM_mon": 39,
+    "S_T_strict": 6,
+    "S_T_relaxed": 37,
+    "S_R": 52,
+    "S_M": 70
+  },
+  "S_T_variant": "relaxed",
+  "C0a": {
+    "pass": true,
+    "S_HM_hot": 37,
+    "S_HM_mon": 39
+  },
+  "C0b": {
+    "pass": true,
+    "strict_n": 6,
+    "relaxed_n": 37,
+    "variant": "relaxed"
+  },
+  "A1": {
+    "rho": -0.33992094861660077,
+    "p_one_sided": 0.05625990447848381,
+    "pass": false,
+    "n": 23
+  },
+  "C1b": {
+    "pass": false
+  },
+  "C1a": {
+    "pass": true,
+    "n_passing": 4,
+    "n_held_out": 5,
+    "tests": {
+      "monitoring_rate": {
+        "U": 4542.0,
+        "p": 3.641598263960441e-05,
+        "pass": true,
+        "S_T_mean": 0.09298240889536524,
+        "rest_mean": 0.05575487015532383
+      },
+      "correction_rate": {
+        "U": 4046.5,
+        "p": 0.005489916224216342,
+        "pass": true,
+        "S_T_mean": 0.05419193789956551,
+        "rest_mean": 0.028199607824424378
+      },
+      "heat_rate": {
+        "U": 3697.0,
+        "p": 0.122139029898056,
+        "pass": false,
+        "S_T_mean": 0.1155155177906834,
+        "rest_mean": 0.0988705883525339
+      },
+      "operational_density": {
+        "U": 4785.5,
+        "p": 1.4480978181301126e-06,
+        "pass": true,
+        "S_T_mean": 7.046216216216216,
+        "rest_mean": 4.03732558139535
+      },
+      "chain_rate": {
+        "U": 4690.0,
+        "p": 3.879282430303508e-06,
+        "pass": true,
+        "S_T_mean": 0.08392435427144222,
+        "rest_mean": 0.043054378929078714
+      }
+    }
+  },
+  "primary_battery": [
+    {
+      "id": "P1_SCF_CHECKPOINT",
+      "rho": -0.2784146878192943,
+      "p_one_sided": 0.9008453210833695,
+      "pass": false,
+      "n": 23
+    },
+    {
+      "id": "P2_HRATIO_CHECKPOINT",
+      "rho": 0.24901185770750991,
+      "p_one_sided": 0.12594231117141982,
+      "pass": false,
+      "n": 23
+    }
+  ],
+  "K": 0,
+  "layer_b_active": true,
+  "secondary_battery": [
+    {
+      "id": "S1_SCF_ITERATION",
+      "rho": -0.2914300914876403,
+      "p_one_sided": 0.08863441405817932,
+      "pass": false,
+      "n": 23
+    },
+    {
+      "id": "S2_HM_DISCRIMINATION",
+      "n_differing": 6,
+      "pass": true,
+      "detail": {
+        "heat_rate": {
+          "U": 1443.0,
+          "p": 5.787298121821374e-14,
+          "pass": true
+        },
+        "monitoring_rate": {
+          "U": 0.0,
+          "p": 4.823253321934658e-14,
+          "pass": true
+        },
+        "termination_rate": {
+          "U": 472.0,
+          "p": 0.005651372565663639,
+          "pass": true
+        },
+        "judgment_rate": {
+          "U": 535.5,
+          "p": 0.025805806356695535,
+          "pass": true
+        },
+        "chain_rate": {
+          "U": 40.5,
+          "p": 9.615176729308053e-13,
+          "pass": true
+        },
+        "correction_rate": {
+          "U": 857.0,
+          "p": 0.12373774432147519,
+          "pass": false
+        },
+        "operational_density": {
+          "U": 973.0,
+          "p": 0.008612438142785204,
+          "pass": true
+        }
+      }
+    },
+    {
+      "id": "S3_ALL_PL_TRANSFER",
+      "K": 0,
+      "all_pl_covariates": {
+        "term_judg": 0.09722854936651748,
+        "term_chain": 0.4144304106169037,
+        "mon_judg": 0.25337787807062706
+      },
+      "predicted_signs": {
+        "P1": 1,
+        "P2": 1
+      }
+    },
+    {
+      "id": "S4_ST_INTERNAL",
+      "n": 37,
+      "covariates": {
+        "term_judg": {
+          "rho": 0.35700650903017206,
+          "p": 0.030075344029942032
+        },
+        "term_chain": {
+          "rho": 0.323613604912188,
+          "p": 0.050720479202397875
+        },
+        "mon_judg": {
+          "rho": 0.2551419609934226,
+          "p": 0.12749615852632298
+        }
+      }
+    }
+  ],
+  "N1_mapping_shuffle": {
+    "n_shuffles": 500,
+    "K_obs": 0,
+    "frac_exceeding": 1.0,
+    "pass": false,
+    "sign_tj": 1,
+    "sign_mj": 1,
+    "sign_source": "S_T"
+  },
+  "N2_random_subset": {
+    "n_shuffles": 500,
+    "n_subset": 37,
+    "K_obs": 0,
+    "frac_exceeding": 1.0,
+    "pass": false
+  },
+  "exploratory": {
+    "D1_kruskal_wallis": {
+      "heat_rate": {
+        "H": 105.43753099188105,
+        "p": 3.768252376799979e-21,
+        "n_groups": 6
+      },
+      "monitoring_rate": {
+        "H": 103.38952201936611,
+        "p": 1.0193511033717692e-20,
+        "n_groups": 6
+      },
+      "termination_rate": {
+        "H": 60.522662423884746,
+        "p": 9.477870504246783e-12,
+        "n_groups": 6
+      },
+      "judgment_rate": {
+        "H": 67.49808219338546,
+        "p": 3.3953874450799483e-13,
+        "n_groups": 6
+      },
+      "chain_rate": {
+        "H": 108.45293596167697,
+        "p": 8.697250273491962e-22,
+        "n_groups": 6
+      },
+      "correction_rate": {
+        "H": 86.49972027096035,
+        "p": 3.648703866422164e-17,
+        "n_groups": 6
+      },
+      "operational_density": {
+        "H": 84.68086157866192,
+        "p": 8.781611782932432e-17,
+        "n_groups": 6
+      }
+    },
+    "D2_per_prediction_n1": {
+      "P1_frac": 0.09,
+      "P2_frac": 0.13
+    }
+  },
+  "K_ctrl": 0,
+  "verdict": "FRAMEWORK_MARGINAL"
+}

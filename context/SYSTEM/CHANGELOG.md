@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.79 (2026-03-19) - Phase 607: Typed Subset Alignment
+
+### Summary
+
+Phase 607 tests whether PL-internal co-variate structure transfers to V Stars under a specific a priori feature mapping. Expert-directed methodological shift: define typed PL subsets by behavioral features (not named families), test co-variate structure transfer (not profile distance), with N1 mapping-shuffle and N2 random-subset controls for specificity. Two-layer design: conservative heat-monitoring anchor (A1) + bold threshold-authenticity probe (P1, P2). Verdict: **FRAMEWORK_MARGINAL**. A1 anchor is marginal (rho=-0.34, p=0.056, n=23) — the heat-monitoring contrast confirmed at broader scope (C1752) is underpowered within Stars alone. P1 fails with directional contradiction (strong_close_fraction↔checkpoint_rate is negative, rho=-0.278). P2 is directionally correct but not significant (h_ratio↔checkpoint_rate rho=+0.249, p=0.126). S_T is a real PL subset (C1a 4/5 held-out features pass) but its co-variate structure does not transfer to V. The recoverable PL→V overlap remains confined to the thermal-monitoring axis.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/TYPED_SUBSET_ALIGNMENT/` — Phase 607 with script, PREDICTIONS.md (SHA-256 frozen), results, INDEX.md |
+| **ADDED** | C1758: Threshold-authenticity subset coherent in PL but co-variates don't transfer to V (P1 rho=-0.278 directional contradiction, P2 p=0.126 not significant) |
+| **ADDED** | C1759: Heat-monitoring anchor marginal within Stars (A1 rho=-0.340, p=0.056, n=23) — power limitation, not directional failure |
+| **ADDED** | C1760: PL threshold procedures are iterative (term↔chain rho=+0.324) — S_T strict n=6 too small, relaxed to 2-condition n=37 |
+| **UPDATED** | INDEX.md — +3 constraints (1759 total), Phase 607 section |
+| **UPDATED** | CLAUDE.md — Quick reference updated (v5.79, 1759 constraints, 607 phases) |
+
+### Key Findings
+
+- **Novel feature mappings rejected (C1758):** termination→strong_close_fraction and judgment→checkpoint_rate do not capture PL→V structural correspondence. P1 is directionally wrong (rho=-0.278). The co-variate structure that exists within PL (term↔judg positive, rho=0.357) does NOT transfer to V Stars through these mapped features.
+- **Heat-monitoring anchor marginal in Stars (C1759):** A1 rho=-0.340, p=0.056 (n=23). C1752 established this at broader scope; Stars alone lacks power. This bounds the minimum sample for within-section transfer testing.
+- **Threshold procedures are iterative (C1760):** term↔chain positive (rho=+0.324) within S_T. Validates expert's pre-analysis correction (C1579, C1642-C1648). The strict S_T (3-condition) yielded only n=6.
+- **PL typed subsets are structurally sound:** C1a passes 4/5, S2 shows 6/7 features discriminate, D1 Kruskal-Wallis all significant. The subset framework captures real PL variation. The failure is in the PL→V transfer, not the subset definitions.
+- **Recoverable PL→V overlap remains thermal-monitoring only:** Phases 604-607 now form a coherent trajectory: family assignment fails (C1749), family contrast recovers thermal axis only (C1752), paragraph shape carries V information but PL profiles lack specificity (C1756), typed-subset co-variate transfer fails on novel mappings (C1758). The PL→V connection established by C1744-C1748 operates at vocabulary/register level, not at the specific feature-pair level tested here.
+
+---
+
 ## Version 5.78 (2026-03-18) - Phase 606: Paragraph Distributional Contrast Alignment
 
 ### Summary

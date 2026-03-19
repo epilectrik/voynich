@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1757.
+the highest ID present is C1760.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2082,6 +2082,9 @@ C1754	Family contrast is distillation-vs-rest, not sublimation-specific: N4 diss
 C1755	Paragraph distributional shape tracks monitoring axis: shape_margin (EMD_distill - EMD_basin) vs h_resid rho=+0.525 (p=0.0002, n=41), surviving permutation (N1 frac=0.000) and within-Stars (rho=+0.739, p<0.0001, n=23). Extends C1573 to PL-derived zone profiles. S3 shape_margin vs OP+MON frac rho=+0.770.	2	B, pseudo-Lull, paragraph, distributional, shape, monitoring, C1573, C1752, C1398	P1_rho=0.525. P1_p=0.0002. Stars_rho=0.739. N1_frac=0.000. S3_rho=0.770.
 C1756	Current 4D PL zone profiles lack specificity for paragraph shape: N2 Dirichlet frac=0.062, N3 theoretical_neg rho=0.552 (vs operational 0.525). 4D zone representation too low-dimensional to distinguish PL families from generic asymmetric shapes. N3 dirty but not clean null (PL Theorica shares operational vocab per C1748). Rejects profile-construction method, not PL midprocess alignment.	2	B, pseudo-Lull, paragraph, profile, specificity, C1748, C1749, C1754	N2_frac=0.062. N3_rho=0.552. P2_rho=-0.031. verdict=WEAK_SIGNAL.
 C1757	Within-Stars paragraph shape discrimination confirmed: shape_margin vs h_resid within Stars rho=+0.739 (p<0.0001, n=23). Paragraph distributional shape carries folio-specific information beyond section membership (C1573). Stars = cleanest calibration surface: C1735, C1740, C1750, C1757.	2	B, Stars, paragraph, distributional, within-section, C1573, C1735, C1740, C1750	Stars_rho=0.739. Stars_p<0.0001. Stars_n=23.
+C1758	Threshold-authenticity subset coherent in PL but co-variates don't transfer to V Stars. C1a 4/5 held-out features pass, term↔judg rho=+0.357 p=0.030. P1 strong_close_fraction↔checkpoint_rate rho=-0.278 (directional contradiction). P2 h_ratio↔checkpoint_rate rho=+0.249 p=0.126 (not significant). Novel mappings termination→SCF, judgment→checkpoint REJECTED.	2	B, pseudo-Lull, Stars, threshold, closure, checkpoint, C1742, C1647, C1752	P1_rho=-0.278. P2_rho=0.249. P2_p=0.126. C1a_pass=4/5. ST_term_judg_rho=0.357.
+C1759	Heat-monitoring anchor marginal within Stars: A1 thermo_ke↔h_ratio rho=-0.340 p=0.056 (n=23). C1752 confirmed at broader scope (n=41-69, rho=-0.40 to -0.47) but insufficient power within Stars alone. Directionally correct — power limitation, not directional failure.	2	B, Stars, thermal, monitoring, C1752, C1755	A1_rho=-0.340. A1_p=0.056. n=23.
+C1760	PL threshold-authenticity procedures are iterative: term↔chain rho=+0.324 p=0.051 within S_T relaxed (n=37). High termination co-occurs with high chaining. Validates expert correction (C1579, C1642-C1648). S_T strict (3-condition) yielded only n=6 (below minimum 12).	2	pseudo-Lull, threshold, iteration, C1579, C1642, C1648	term_chain_rho=0.324. term_chain_p=0.051. ST_strict_n=6. ST_relaxed_n=37.
 
 ---
 
