@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.81 (2026-03-19) - Phase 609: h_ratio Repertoire Mechanism
+
+### Summary
+
+Phase 609 investigates which aspect of paragraph repertoire drives the independent h_ratio effect found in C1763 (31.9% additional variance). Tests 5 candidate mechanisms in 3 families (Presence, Breadth, Full combinatorial) and compares discrete zone labels to continuous paragraph-level scores at 3 tiers (means, spread, shape). Verdict: **H_RATIO_GRADIENT_EFFECT**. Continuous paragraph means (3 features) capture 222% of discrete zone labels' dR^2 on h_ratio, and dominate in LOO cross-validation (R^2_cv=0.679 vs 0.111). The C1763 "repertoire predicts h_ratio" finding is real but the mechanism is continuous paragraph-level monitoring gradient, not combinatorial zone bundling. Kernel ecology (k_ratio + e_ratio) fully absorbs all repertoire effects (Baseline B R^2=0.969). Stars is the only section with a significant specific-zone effect (M1 dR^2=0.276, perm_p=0.018).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/H_RATIO_REPERTOIRE_MECHANISM/` -- Phase 609 with script, PREDICTIONS.md (SHA-256 frozen), results, INDEX.md |
+| **ADDED** | C1764: MP_present is best simple repertoire predictor of h_ratio (dR^2=0.083, perm_p=0.018) |
+| **ADDED** | C1765: Continuous paragraph means dominate discrete zone labels (cont dR^2=0.536 vs disc 0.241; LOO R^2_cv 0.679 vs 0.111) |
+| **ADDED** | C1766: Stars-specific repertoire-h_ratio effect via MP_present (dR^2=0.276, perm_p=0.018) |
+| **ADDED** | C1767: Kernel ecology fully absorbs repertoire effects on h_ratio (Baseline B R^2=0.969, all repertoire dR^2 < 0.003) |
+| **UPDATED** | INDEX.md -- +4 constraints (1766 total), Phase 609 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.81, 1766 constraints, 609 phases) |
+
+### Key Findings
+
+- **Continuous dominates discrete (C1765):** Three paragraph-level means (THERMAL, MONITORING, h_kernel fractions) explain 53.6% additional h_ratio variance vs 24.1% for 8 discrete zone dummies. LOO: R^2_cv=0.679 vs 0.111. The C1398 zone categorization is a lossy compression that discards gradient information.
+- **MP_present is best simple mechanism (C1764):** Binary MONITORING-Phase presence captures the most h_ratio residual among single-parameter models (dR^2=0.083, perm_p=0.018). Breadth properties (mono/multi, entropy) are null.
+- **Stars-specific (C1766):** Stars is the only section where MP_present significantly predicts h_ratio (dR^2=0.276, perm_p=0.018). Consistent with C1154: h is section-determined except in Stars. Different sections show different marginal mechanisms.
+- **Kernel ecology absorbs everything (C1767):** Baseline B (adding k_ratio + e_ratio) R^2=0.969. All repertoire effects vanish against Baseline B. The repertoire-h_ratio connection is mediated by kernel ecology that PREFIX alone captures poorly.
+- **Reinterpretation of C1763:** "Repertoire independently predicts h_ratio beyond PREFIX" is better understood as "continuous paragraph-level monitoring gradients that PREFIX cannot capture." Not combinatorial subroutine bundling.
+
+---
+
 ## Version 5.80 (2026-03-19) - Phase 608: Subroutine Repertoire Characterization
 
 ### Summary

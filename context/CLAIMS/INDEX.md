@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1762 validated constraints | **Version:** 5.80 | **Date:** 2026-03-19
+**Total:** 1766 validated constraints | **Version:** 5.81 | **Date:** 2026-03-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 609: h_ratio Repertoire Mechanism — H_RATIO_GRADIENT_EFFECT (C1764-C1767)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1764 | MP_present is best simple repertoire predictor of h_ratio: among 4 simple properties tested against Baseline A (PREFIX+section+parcount), MP_present (binary: folio has MONITORING-Phase paragraph) adds dR^2=0.083 (F=8.22, perm_p=0.018). TQ_MP_exclusion marginal (dR^2=0.040, perm_p=0.089). Breadth properties null. Full repertoire type (M5, 8 dummies) adds 0.241 dR^2 total but requires 7 extra parameters over M1. MP_present is the most parsimonious simple mechanism for the C1763 finding | 2 | B, paragraph, repertoire, h_ratio, monitoring, MP, C1761, C1763 | M1_dR2=0.083. M1_perm_p=0.018. M5_dR2=0.241. M5_perm_p=0.004. M5_minus_M1=0.158. n=80. |
+| 1765 | Continuous paragraph means dominate discrete zone labels for h_ratio prediction: 3 continuous paragraph-level means (THERMAL_score, MONITORING_score, h_kernel_frac) explain 53.6% additional h_ratio variance beyond PREFIX+section+parcount, vs 24.1% for discrete zone labels (8 dummies). LOO: continuous R^2_cv=0.679 vs discrete R^2_cv=0.111. Tier 2+3 distributional features add only 2.2% in-sample and hurt OOS. The C1763 "repertoire predicts h_ratio" effect is a continuous gradient — discrete categorization (C1398) is a crude proxy that loses information | 2 | B, paragraph, repertoire, h_ratio, continuous, discrete, C1763, C1398 | cont_dR2=0.536. discrete_dR2=0.241. cont_captures_231pct_M5. LOO_cont_R2=0.679. LOO_disc_R2=0.111. tier23_add=0.022. |
+| 1766 | Stars-specific repertoire-h_ratio effect via MP_present: within Stars (n=23), MP_present explains 27.6% additional h_ratio variance (F=7.41, perm_p=0.018) — only section with significant single-predictor repertoire effect. Biologicals marginal (dR^2=0.150, perm_p=0.083). Herbal marginal via breadth not presence (mono/multi dR^2=0.134, perm_p=0.063). Consistent with C1154: h is section-determined except in Stars where monitoring balance varies by program | 2 | B, Stars, paragraph, repertoire, h_ratio, monitoring, MP, C1154, C1764 | Stars_M1_dR2=0.276. Stars_perm_p=0.018. Bio_perm_p=0.083. Herbal_M3_perm_p=0.063. n_Stars=23. |
+| 1767 | Kernel ecology fully absorbs repertoire effects on h_ratio: adding k_ratio and e_ratio to Baseline A yields R^2=0.969. Against this Baseline B, MP_present adds dR^2=0.0003 and full repertoire type adds dR^2=0.0022 (both null). Algebraically expected (h_ratio=h/(k+h+e)). PREFIX fractions are poor proxies for kernel ecology — continuous paragraph means (C1765) capture what PREFIX cannot. Repertoire does not carry independent architectural information about h_ratio beyond kernel composition | 2 | B, paragraph, repertoire, h_ratio, kernel, PREFIX, C1763, C1765 | BaseB_R2=0.969. M1_vs_B_dR2=0.0003. M5_vs_B_dR2=0.0022. BaseA_R2=0.208. |
+
+**Phase 609 findings (h_ratio Repertoire Mechanism, H_RATIO_GRADIENT_EFFECT):**
+- The C1763 "repertoire independently predicts h_ratio" effect is REAL but the mechanism is continuous gradient, not combinatorial zone bundling. Three paragraph-level means (THERMAL, MONITORING, h_kernel) capture 222% of what discrete zone labels capture (C1765). LOO confirms: R^2_cv=0.679 (continuous) vs 0.111 (discrete).
+- MP_present (MONITORING-Phase paragraph presence) is the best simple predictor (C1764): dR^2=0.083, perm_p=0.018. The full repertoire signature adds 0.158 dR^2 more but uses 7 extra parameters. The Breadth family (mono/multi, entropy) is null.
+- Stars is the only section with a significant simple-predictor effect (C1766): M1 dR^2=0.276, perm_p=0.018. Consistent with C1154 (h is program-specific only in Stars). Herbal shows a different marginal mechanism (breadth, not specific zone presence).
+- Kernel ecology fully absorbs repertoire effects (C1767): Baseline B (adding k_ratio + e_ratio) reaches R^2=0.969, leaving zero residual for repertoire. The h_ratio connection to paragraph repertoire is mediated by kernel ecology that PREFIX alone captures poorly.
+- Distributional detail and combinatorial structure add nothing: Tier 2/3 features (spread, quartiles) add only 2.2% in-sample and hurt OOS. Combining discrete + continuous hurts. The signal is in three simple paragraph means.
+- Implications for C1763 reinterpretation: C1763's "independent information in paragraph combinations" is better understood as "continuous paragraph-level monitoring gradients that PREFIX cannot capture." The discrete zone categorization from C1398 was a lossy compression. This does NOT invalidate the paragraph-level organization — rather, it clarifies that paragraphs carry monitoring information as continuous gradients, not as discrete subroutine types.
 
 ---
 

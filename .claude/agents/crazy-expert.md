@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1760.
+the highest ID present is C1767.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2088,6 +2088,10 @@ C1760	PL threshold-authenticity procedures are iterative: term↔chain rho=+0.32
 C1761	Folio-level zone co-occurrence universal depletion: all 6 zone-type pairs depleted (O/E 0.378-0.789), 4/6 significant under section-stratified null (Bonferroni alpha=0.0083). TQ-MP most depleted (O/E=0.378). MONITORING-Phase most exclusionary zone. No enrichment. Folios actively restrict paragraph zone repertoire beyond section ecology.	2	B, paragraph, repertoire, co-occurrence, C1398, C1399, C1573	TQ_MP_OE=0.378. CS_MP_OE=0.477. TQ_CS_OE=0.632. TQ_OI_OE=0.705. sig_pairs=4/6.
 C1762	Repertoire typology: 13/15 possible binary zone signatures observed. Entropy 3.303 bits (84.5% max), below section-stratified null (p=0.012). 50% folios mono-type. CS dominates overall mono-type (22/40, Herbal single-par folios); TQ leads genuine 2+-par mono-types (8/17). Stars highest diversity (entropy=2.94), Herbal lowest (1.73).	2	B, paragraph, repertoire, typology, mono-type, C1398, C1569, C1573	entropy=3.303. entropy_ratio=0.845. mono_frac=0.50. entropy_p_section=0.012.
 C1763	Repertoire type independently predicts h_ratio: nested model dR2=0.319 beyond PREFIX+section+paragraph_count (F=4.806, p=0.0001; perm p=0.001). Only 1/5 features surviving full controls. 4/5 others absorbed by PREFIX+section, confirming PREFIX confound (C1405-C1431). Monitoring-execution balance partially encoded at paragraph-combination level.	2	B, paragraph, repertoire, h_ratio, monitoring, PREFIX, C1405, C1431, C1574	dR2_h_ratio=0.319. F=4.806. perm_p=0.001. n_features_sig=1/5.
+C1764	MP_present is best simple repertoire predictor of h_ratio: among 4 simple properties (Presence/Breadth families), MP_present adds dR^2=0.083 (F=8.22, perm_p=0.018). Breadth properties null. Full repertoire (M5) adds 0.241 but needs 7 extra params. MP_present most parsimonious.	2	B, paragraph, repertoire, h_ratio, monitoring, MP, C1761, C1763	M1_dR2=0.083. M1_perm_p=0.018. M5_dR2=0.241. M5_perm_p=0.004.
+C1765	Continuous paragraph means dominate discrete zone labels for h_ratio: 3 continuous means (THERMAL, MONITORING, h_kernel fracs) dR^2=0.536 vs 8 discrete zone dummies dR^2=0.241. LOO R^2_cv=0.679 vs 0.111. Tier2+3 add only 0.022. C1763 effect is continuous gradient, not combinatorial bundling.	2	B, paragraph, repertoire, h_ratio, continuous, discrete, C1763, C1398	cont_dR2=0.536. disc_dR2=0.241. LOO_cont=0.679. LOO_disc=0.111.
+C1766	Stars-specific repertoire-h_ratio effect: within Stars (n=23), MP_present dR^2=0.276 (perm_p=0.018) — only section with significant single-predictor effect. Bio marginal (0.083), Herbal uses breadth not presence (0.063). Consistent with C1154: h is program-specific only in Stars.	2	B, Stars, paragraph, repertoire, h_ratio, monitoring, MP, C1154, C1764	Stars_M1_dR2=0.276. Stars_perm=0.018. n_Stars=23.
+C1767	Kernel ecology fully absorbs repertoire effects on h_ratio: Baseline B (adding k_ratio+e_ratio) R^2=0.969. Against B, MP_present dR^2=0.0003, full repertoire dR^2=0.0022 (both null). Algebraically expected. PREFIX is poor kernel ecology proxy; paragraph means capture what PREFIX cannot.	2	B, paragraph, repertoire, h_ratio, kernel, PREFIX, C1763, C1765	BaseB_R2=0.969. M1_vs_B=0.0003. M5_vs_B=0.0022.
 
 ---
 

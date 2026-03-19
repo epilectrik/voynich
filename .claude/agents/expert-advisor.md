@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1762 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1766 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1763.
+the highest ID present is C1767.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1762 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1766 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1762 validated constraints are present as canonical one-line claims with tier
+1766 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-19 09:46
-**Version:** FROZEN STATE (1762 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-19 13:59
+**Version:** FROZEN STATE (1766 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2002,6 +2002,10 @@ C1760	PL threshold-authenticity procedures are iterative: term↔chain rho=+0.32
 C1761	Folio-level zone co-occurrence shows universal depletion: all 6 zone-type pairs depleted (O/E 0.378-0.789), 4/6 significant under section-stratified null (Bonferroni alpha=0.0083). THERMAL-MONITORING most depleted, extending C1399 transition-level avoidance to repertoire level. MONITORING-Phase is the most exclusionary zone. No zone pair shows enrichment. Folios actively restrict their paragraph zone repertoire beyond section ecology	2	B, paragraph, repertoire, co-occurrence, C1398, C1399, C1573
 C1762	Repertoire typology: 13 of 15 possible binary zone signatures observed. Entropy 3.303 bits (84.5% max), below section-stratified null. 50% of folios mono-type. CONTAINMENT-Sealing dominates overall mono-type (22/40) due to Herbal single-paragraph folios; among genuine 2+-paragraph mono-types, THERMAL-QO leads (8/17). Stars has highest repertoire diversity (entropy=2.94), Herbal lowest (1.73). Mono-type folios have lower thermo_ke and higher CEI than multi-type	2	B, paragraph, repertoire, typology, mono-type, C1398, C1569, C1573
 C1763	Repertoire type independently predicts h_ratio: nested model comparison shows 31.9% additional variance explained by repertoire type beyond PREFIX fractions + section + paragraph_count. Only feature (of 5 tested) surviving full controls. 4/5 other features (thermo_ke, strong_close_fraction, cei_total, link_density) fully absorbed by PREFIX + section, confirming PREFIX confound (C1405-C1431). Monitoring-execution balance is not fully determined by token-level PREFIX composition	2	B, paragraph, repertoire, h_ratio, monitoring, PREFIX, C1405, C1431, C1574
+C1764	MP_present is best simple repertoire predictor of h_ratio: among 4 simple properties tested against Baseline A (PREFIX+section+parcount), MP_present (binary: folio has MONITORING-Phase paragraph) adds dR^2=0.083. TQ_MP_exclusion marginal. Breadth properties null. Full repertoire type (M5, 8 dummies) adds 0.241 dR^2 total but requires 7 extra parameters over M1. MP_present is the most parsimonious simple mechanism for the C1763 finding	2	B, paragraph, repertoire, h_ratio, monitoring, MP, C1761, C1763
+C1765	Continuous paragraph means dominate discrete zone labels for h_ratio prediction: 3 continuous paragraph-level means (THERMAL_score, MONITORING_score, h_kernel_frac) explain 53.6% additional h_ratio variance beyond PREFIX+section+parcount, vs 24.1% for discrete zone labels (8 dummies). LOO: continuous R^2_cv=0.679 vs discrete R^2_cv=0.111. Tier 2+3 distributional features add only 2.2% in-sample and hurt OOS. The C1763 "repertoire predicts h_ratio" effect is a continuous gradient — discrete categorization (C1398) is a crude proxy that loses information	2	B, paragraph, repertoire, h_ratio, continuous, discrete, C1763, C1398
+C1766	Stars-specific repertoire-h_ratio effect via MP_present: within Stars, MP_present explains 27.6% additional h_ratio variance — only section with significant single-predictor repertoire effect. Biologicals marginal. Herbal marginal via breadth not presence. Consistent with C1154: h is section-determined except in Stars where monitoring balance varies by program	2	B, Stars, paragraph, repertoire, h_ratio, monitoring, MP, C1154, C1764
+C1767	Kernel ecology fully absorbs repertoire effects on h_ratio: adding k_ratio and e_ratio to Baseline A yields R^2=0.969. Against this Baseline B, MP_present adds dR^2=0.0003 and full repertoire type adds dR^2=0.0022 (both null). Algebraically expected (h_ratio=h/(k+h+e)). PREFIX fractions are poor proxies for kernel ecology — continuous paragraph means (C1765) capture what PREFIX cannot. Repertoire does not carry independent architectural information about h_ratio beyond kernel composition	2	B, paragraph, repertoire, h_ratio, kernel, PREFIX, C1763, C1765
 
 ---
 
