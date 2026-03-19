@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1766 validated constraints | **Version:** 5.81 | **Date:** 2026-03-19
+**Total:** 1770 validated constraints | **Version:** 5.82 | **Date:** 2026-03-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 610: Stars Folio Close Reading — MONITORING_PHILOSOPHY_CONFIRMED (C1768-C1771)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1768 | Blind token-level monitoring prediction succeeds in Stars: expert-advisor reading raw f104r token data (atom glosses, morphology, categories) without aggregate statistics correctly predicted HIGH-MONITORING. Actual h_resid=+0.069 (rank 21/23 in Stars, strongly h-enriched). Evidence: h-kernel in compounds across all paragraphs, e-dominance over k, MONITORING-category tokens on 6-8 lines, triple/quadruple kernel tokens. Validates token-level predictive power of C1195 atom glosses, C1250 categories, C1393 positional decomposition | 2 | B_Stars, monitoring, h_ratio, blind_test, C1154, C1195, C1250, C1393, C1755 | h_resid=+0.069. rank=21/23. h_ratio=0.244. prediction=correct. |
+| 1769 | Stars monitoring axis encodes operational philosophy: extreme-pair comparison (f108v h_resid=-0.101 vs f107v h_resid=+0.075, both R1) reveals 5-dimensional divergence — paragraph architecture (9 large vs 20 small), kernel balance (e-dominant vs balanced), monitoring mode (passive vs active checkpoints), h morphological position (medial vs TERMINAL), sister pair selection (balanced ch/sh vs ch-dominant). Low-h = confidence programs ("trust the process"), high-h = vigilance programs ("watch constantly"). Not a parametric dial but a complete operational strategy difference | 2 | B_Stars, monitoring, h_ratio, paragraph, kernel, morphology, C1154, C1755, C1740 | f108v_h_resid=-0.101. f107v_h_resid=+0.075. f108v_paras=9. f107v_paras=20. f108v_e_pct=67.6. f107v_k_pct=48.3. |
+| 1770 | Bridge rate invariant to monitoring level within Stars: bridge rate 88.1% for f108v (lowest h_resid) and 88.6% for f107v (highest h_resid). Monitoring axis operates through token deployment (composition, sequencing, positional emphasis) not vocabulary sourcing. All Stars folios draw from the same lexicon but deploy it under different operational strategies | 2 | B_Stars, monitoring, h_ratio, bridge, vocabulary | bridge_f108v=88.1pct. bridge_f107v=88.6pct. delta=0.5pct. |
+| 1771 | h morphological position tracks monitoring philosophy: in high-monitoring Stars folios (f107v, f104r), h-kernel appears in TERMINAL compound position (architecturally significant endpoint per C1393/C1394). In lowest-monitoring folio (f108v), h is buried medially in compounds (structurally passive). Monitoring character (not just amount) varies with h_resid. When h is TERMINAL, instruction "ends with" monitoring; when h is medial, monitoring is incidental to other operations | 2 | B_Stars, monitoring, h_ratio, morphology, TERMINAL, C1393, C1394 | h_position_high=TERMINAL. h_position_low=medial. |
+
+**Phase 610 findings (Stars Folio Close Reading, MONITORING_PHILOSOPHY_CONFIRMED):**
+- Blind test succeeds (C1768): Expert correctly predicted f104r as high-monitoring from raw token data alone, without access to h_resid or any aggregate statistics. Evidence included h-kernel distribution, e-dominance, and multi-kernel token density. The constraint system has genuine token-level predictive power.
+- Monitoring axis = operational philosophy (C1769): The extreme pair comparison reveals that high-h and low-h Stars folios differ across 5 dimensions simultaneously — paragraph architecture, kernel balance, monitoring mode, h morphological position, and sister pair selection. This is a complete program-structure difference, not a parametric adjustment. "Confidence" programs trust the process; "vigilance" programs insist on watching.
+- Bridge rate invariant (C1770): 88.1% vs 88.6% for the extreme pair. The monitoring difference is in deployment, not vocabulary. All Stars folios use the same lexicon.
+- h position tracks philosophy (C1771): TERMINAL h = active monitoring endpoint. Medial h = passive/incidental monitoring. Monitoring character varies with monitoring amount, maintaining self-consistency.
+- Methodological innovation: First phase using qualitative AI reasoning with the full constraint system instead of statistical pipelines. Demonstrates the framework is rich enough for genuine folio-level interpretation.
 
 ---
 

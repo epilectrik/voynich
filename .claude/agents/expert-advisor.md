@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1766 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1770 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1767.
+the highest ID present is C1771.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1766 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1770 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1766 validated constraints are present as canonical one-line claims with tier
+1770 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-19 13:59
-**Version:** FROZEN STATE (1766 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-19 17:23
+**Version:** FROZEN STATE (1770 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2006,6 +2006,10 @@ C1764	MP_present is best simple repertoire predictor of h_ratio: among 4 simple 
 C1765	Continuous paragraph means dominate discrete zone labels for h_ratio prediction: 3 continuous paragraph-level means (THERMAL_score, MONITORING_score, h_kernel_frac) explain 53.6% additional h_ratio variance beyond PREFIX+section+parcount, vs 24.1% for discrete zone labels (8 dummies). LOO: continuous R^2_cv=0.679 vs discrete R^2_cv=0.111. Tier 2+3 distributional features add only 2.2% in-sample and hurt OOS. The C1763 "repertoire predicts h_ratio" effect is a continuous gradient — discrete categorization (C1398) is a crude proxy that loses information	2	B, paragraph, repertoire, h_ratio, continuous, discrete, C1763, C1398
 C1766	Stars-specific repertoire-h_ratio effect via MP_present: within Stars, MP_present explains 27.6% additional h_ratio variance — only section with significant single-predictor repertoire effect. Biologicals marginal. Herbal marginal via breadth not presence. Consistent with C1154: h is section-determined except in Stars where monitoring balance varies by program	2	B, Stars, paragraph, repertoire, h_ratio, monitoring, MP, C1154, C1764
 C1767	Kernel ecology fully absorbs repertoire effects on h_ratio: adding k_ratio and e_ratio to Baseline A yields R^2=0.969. Against this Baseline B, MP_present adds dR^2=0.0003 and full repertoire type adds dR^2=0.0022 (both null). Algebraically expected (h_ratio=h/(k+h+e)). PREFIX fractions are poor proxies for kernel ecology — continuous paragraph means (C1765) capture what PREFIX cannot. Repertoire does not carry independent architectural information about h_ratio beyond kernel composition	2	B, paragraph, repertoire, h_ratio, kernel, PREFIX, C1763, C1765
+C1768	Blind token-level monitoring prediction succeeds in Stars: expert-advisor reading raw f104r token data (atom glosses, morphology, categories) without aggregate statistics correctly predicted HIGH-MONITORING. Actual h_resid=+0.069 (rank 21/23 in Stars, strongly h-enriched). Evidence: h-kernel in compounds across all paragraphs, e-dominance over k, MONITORING-category tokens on 6-8 lines, triple/quadruple kernel tokens. Validates token-level predictive power of C1195 atom glosses, C1250 categories, C1393 positional decomposition	2	B_Stars, monitoring, h_ratio, blind_test, C1154, C1195, C1250, C1393, C1755
+C1769	Stars monitoring axis encodes operational philosophy: extreme-pair comparison (f108v h_resid=-0.101 vs f107v h_resid=+0.075, both R1) reveals 5-dimensional divergence — paragraph architecture (9 large vs 20 small), kernel balance (e-dominant vs balanced), monitoring mode (passive vs active checkpoints), h morphological position (medial vs TERMINAL), sister pair selection (balanced ch/sh vs ch-dominant). Low-h = confidence programs ("trust the process"), high-h = vigilance programs ("watch constantly"). Not a parametric dial but a complete operational strategy difference	2	B_Stars, monitoring, h_ratio, paragraph, kernel, morphology, C1154, C1755, C1740
+C1770	Bridge rate invariant to monitoring level within Stars: bridge rate 88.1% for f108v (lowest h_resid) and 88.6% for f107v (highest h_resid). Monitoring axis operates through token deployment (composition, sequencing, positional emphasis) not vocabulary sourcing. All Stars folios draw from the same lexicon but deploy it under different operational strategies	2	B_Stars, monitoring, h_ratio, bridge, vocabulary
+C1771	h morphological position tracks monitoring philosophy: in high-monitoring Stars folios (f107v, f104r), h-kernel appears in TERMINAL compound position (architecturally significant endpoint per C1393/C1394). In lowest-monitoring folio (f108v), h is buried medially in compounds (structurally passive). Monitoring character (not just amount) varies with h_resid. When h is TERMINAL, instruction "ends with" monitoring; when h is medial, monitoring is incidental to other operations	2	B_Stars, monitoring, h_ratio, morphology, TERMINAL, C1393, C1394
 
 ---
 

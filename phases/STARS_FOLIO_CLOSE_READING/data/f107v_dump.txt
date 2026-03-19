@@ -1,0 +1,795 @@
+================================================================================
+FOLIO f107v — 455 tokens, 49 lines, 20 paragraphs
+Section: Stars
+Kernel balance: BALANCED
+Kernel distribution: k=48.3% h=9.9% e=41.8%
+REGIME: REGIME_1
+Material: ANIMAL
+Output: WATER
+QO fraction: 30.1%
+Sister ratio (ch/(ch+sh)): 0.769
+Bridge rate: 88.6%
+Dark rate: 6.6%
+Category profile:
+  THERMAL       :  129 ( 29.0%)
+  FLOW          :   87 ( 19.6%)
+  TRANSITION    :   88 ( 19.8%)
+  OPERATION     :   40 (  9.0%)
+  STAGING       :   61 ( 13.7%)
+  CONTAINMENT   :   12 (  2.7%)
+  MARKING       :   23 (  5.2%)
+  MONITORING    :    5 (  1.1%)
+================================================================================
+
+PARAGRAPH SUMMARY
+----------------------------------------------------------------------
+  ID   | G | kernel k/h/e   | role | size      | FL  | mode         | tail
+  -----------------------------------------------------------------
+  P1   | K | k60/h 7/e33    | EN   | 4L/ 44T | 11% |     BBA(50%) | MIXED_O
+  P2   | T | k17/h50/e33    | EN   | 1L/ 11T |  0% |        A(0%) | --
+  P3   | P | k67/h 0/e33    | EN   | 1L/ 11T | 11% |        A(0%) | --
+  P4   | T | --             | EN   | 1L/  4T |  0% |        A(0%) | --
+  P5   | P | k38/h15/e46    | EN   | 3L/ 27T | 20% |      AAA(0%) | MIXED_O
+  P6   | T | k50/h12/e38    | EN   | 5L/ 50T | 13% |   ABABB(75%) | MIXED_O
+  P7   | P | k47/h18/e35    | EN   | 4L/ 37T |  7% |     BBBB(0%) | PROCESS
+  P8   | P | k50/h25/e25    | EN   | 1L/ 10T |  0% |        A(0%) | --
+  P9   | T | k67/h 0/e33    | EN   | 2L/ 19T |  5% |       BB(0%) | --
+  P10  | P | k75/h25/e 0    | AX   | 2L/ 15T |  0% |     AB(100%) | --
+  P11  | K | k42/h 5/e53    | EN   | 4L/ 38T | 16% |     BBBB(0%) | MIXED_O
+  P12  | T | k50/h 7/e43    | EN   | 3L/ 27T | 23% |     ABB(50%) | PROCESS
+  P13  | T | k50/h 0/e50    | EN   | 3L/ 25T | 29% |      BBB(0%) | PROCESS
+  P14  | P | k43/h14/e43    | EN   | 1L/ 10T | 38% |        A(0%) | --
+  P15  | T | k50/h 0/e50    | EN   | 1L/ 10T | 11% |        B(0%) | --
+  P16  | P | k43/h 7/e50    | EN   | 4L/ 35T | 16% |    ABBA(67%) | PROCESS
+  P17  | P | k50/h12/e38    | EN   | 2L/ 14T | 23% |     BA(100%) | --
+  P18  | P | k33/h17/e50    | EN   | 1L/ 11T | 11% |        A(0%) | --
+  P19  | K | --             | EN   | 1L/  6T |  0% |        A(0%) | --
+  P20  | P | k38/h10/e52    | EN   | 5L/ 51T | 30% |   BBAAB(50%) | MIXED_O
+
+LINE-BY-LINE TOKEN DUMP
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P1 (lines 1-4, 4L/44T)
+  Gallows boundary: kaisar
+  Kernel: k=60.0% h=6.7% e=33.3%
+  Dominant category: STAGING (20%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 1 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    kaisar           | ka·is·ar             | iterate.sequence               | STAGING      |       | H:- M:is T:-         [LINE-INITIAL]
+    olkeeey          | ol·ke·eey            | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    otalkchy         | ot·alkc·hy           | yield.frame.heat.adjust        | MARKING      | [k]   | H:a M:lkc T:-       
+    lkaiin           | lk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    otedy            | ot·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokair           | qo·kai·r             | heat.yield.iterate             | STAGING      | [k]   | H:k M:ai T:-        
+    lkal             | lk·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    chody            | ch·o·dy              | work                           | OPERATION    |       | H:o M:- T:-         
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    cheey            | ch·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y          [LINE-FINAL]
+
+  LINE 10 (7 tokens)
+  ────────────────────────────────────────────────────────────
+    shodaiin         | sh·od·aiin           | work.mark                      | ?            |       | H:o M:d T:-          [LINE-INITIAL]
+    shey             | sh·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qokair           | qo·kai·r             | heat.yield.iterate             | STAGING      | [k]   | H:k M:ai T:-        
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    chokedy          | ch·ok·edy            | work.heat                      | CONTAINMENT  | [k]   | H:o M:k T:-         
+    tain             | ta·in                | iterate.halt                   | MARKING      |       | H:- M:i T:n         
+    shedy            | sh·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P6 (lines 11-15, 5L/50T)
+  Gallows boundary: tshedy
+  Kernel: k=50.0% h=12.5% e=37.5%
+  Dominant category: THERMAL (41%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 11 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    tshedy           | t·sh·edy             | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y          [LINE-INITIAL]
+    okal             | ok·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    shedy            | sh·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokchey          | qo·kch·ey            | heat.adjust.watch              | THERMAL      | [k,h] | H:k M:c T:h         
+    chky             | ch·k·y               | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qotaiin          | qo·t·aiin            | transfer                       | FLOW         |       | H:t M:- T:-         
+    otol             | ot·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    qoteedy          | qo·te·edy            | transfer.cool                  | FLOW         | [e]   | H:t M:e T:-         
+    qopchcfhy        | qo·pchcf·hy          | pause.adjust.watch.adjust.flag | MARKING      | [h]   | H:- M:pchcf T:-      [LINE-FINAL]
+
+  LINE 12 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-INITIAL]
+    lcheol           | lch·eol              | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    kaiin            | ka·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n        
+    olkal            | ol·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    shedy            | sh·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokaly           | qo·ka·ly             | heat.yield                     | THERMAL      | [k]   | H:k M:a T:-         
+    odar             | od·ar                | work.mark                      | ?            |       | H:o M:d T:-         
+    choty            | ch·ot·y              | work.transfer                  | MONITORING   |       | H:o M:t T:-         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    otam             | ot·am                | yield.final                    | TRANSITION   |       | H:a M:- T:m          [LINE-FINAL]
+
+  LINE 13 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    ycheey           | y·ch·eey             | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y          [LINE-INITIAL]
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    ockheody         | ockheo·dy            | work.adjust.heat.watch.cool.work | OPERATION    | [k,h,e] | H:o M:ckheo T:-     
+    qokair           | qo·kai·r             | heat.yield.iterate             | STAGING      | [k]   | H:k M:ai T:-        
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    shoeky           | sh·oek·y             | work.cool.heat                 | THERMAL      | [e,k] | H:o M:ek T:-        
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    dalam            | da·l·am              | frame                          | STAGING      |       | H:- M:- T:l          [LINE-FINAL]
+
+  LINE 14 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    daiin            | da·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n         [LINE-INITIAL]
+    shaiin           | sh·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    qokar            | qo·k·ar              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokal            | qo·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokal            | qo·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    cheody           | ch·eo·dy             | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    okchdy           | ok·dy                | mark.end                       | CONTAINMENT  |       | H:- M:d T:y         
+    dlkal            | d·lk·al              | yield.frame                    | FLOW         |       | H:a M:- T:l          [LINE-FINAL]
+
+  LINE 15 (9 tokens)
+  ────────────────────────────────────────────────────────────
+    solain           | so·l·ain             | frame                          | STAGING      |       | H:- M:- T:l          [LINE-INITIAL]
+    qokal            | qo·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    okeey            | ok·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    lkaiin           | lk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    okain            | ok·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    chkal            | ch·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    otain            | ot·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    chcthy           | ch·ct·hy             | adjust.transfer                | MONITORING   |       | H:- M:ct T:-        
+    tarairy          | ta·rai·ry            | input.yield.iterate            | FLOW         |       | H:- M:rai T:-        [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P7 (lines 16-19, 4L/37T)
+  Gallows boundary: parair
+  Kernel: k=47.1% h=17.6% e=35.3%
+  Dominant category: TRANSITION (31%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 16 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    parair           | p·ar·ai·r            | yield.iterate                  | TRANSITION   |       | H:a M:i T:-          [LINE-INITIAL]
+    okal             | ok·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    opchol           | opch·ol              | work.pause.adjust.watch        | OPERATION    | [h]   | H:o M:pc T:h        
+    okal             | ok·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    opaiin           | op·aiin              | work.pause                     | TRANSITION   |       | H:o M:p T:-         
+    otedy            | ot·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokeody          | qo·keo·dy            | heat.cool.work                 | TRANSITION   | [k,e] | H:k M:eo T:-        
+    tolkal           | to·lk·al             | frame.heat                     | STAGING      | [k]   | H:- M:lk T:-        
+    lkar             | lk·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    aiiraly          | aiira·ly             | yield.iterate.iterate.input.yield | STAGING      |       | H:a M:iira T:-       [LINE-FINAL]
+
+  LINE 17 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    saiin            | sa·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n         [LINE-INITIAL]
+    or               | or                   | work.input                     | FLOW         |       | H:o M:- T:r         
+    ykeear           | yk·ee·ar             | cool.cool                      | THERMAL      | [e,e] | H:e M:e T:-         
+    chckhy           | ch·ck·hy             | adjust.heat                    | OPERATION    | [k]   | H:- M:ck T:-        
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    okal             | ok·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    qoklaiin         | qo·kl·aiin           | heat.frame                     | STAGING      | [k]   | H:k M:- T:l         
+    cheol            | ch·eol               | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    qokar            | qo·k·ar              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    lkam             | lk·am                | yield.final                    | TRANSITION   |       | H:a M:- T:m          [LINE-FINAL]
+
+  LINE 18 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-INITIAL]
+    qokchey          | qo·kch·ey            | heat.adjust.watch              | THERMAL      | [k,h] | H:k M:c T:h         
+    qekchdy          | qekch·dy             | q.cool.heat.adjust.watch       | ?            | [e,k,h] | H:- M:qekc T:h      
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    lkl              | lk·l                 | frame                          | STAGING      |       | H:- M:- T:l         
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    raiin            | r·aiin               | input                          | FLOW         |       | H:- M:- T:r         
+    otaiin           | ot·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    alkaiin          | al·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    dal              | da·l                 | frame                          | STAGING      |       | H:- M:- T:l          [LINE-FINAL]
+
+  LINE 19 (6 tokens)
+  ────────────────────────────────────────────────────────────
+    soral            | so·r·al              | input                          | FLOW         |       | H:- M:- T:r          [LINE-INITIAL]
+    olaiin           | ol·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chor             | ch·or                | work.input                     | FLOW         |       | H:o M:- T:r         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chkain           | ch·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n         [LINE-FINAL]
+
+  LINE 2 (13 tokens)
+  ────────────────────────────────────────────────────────────
+    daiin            | da·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n         [LINE-INITIAL]
+    dckhy            | dck·hy               | mark.adjust.heat               | MARKING      | [k]   | H:- M:dck T:-       
+    ol               | ol                   | work.frame                     | STAGING      |       | H:o M:- T:l         
+    daiin            | da·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n        
+    chkal            | ch·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokedy           | qo·k·edy             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    chedy            | ch·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    oteos            | ot·eo·s              | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    otar             | ot·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    alkain           | al·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    ol               | ol                   | work.frame                     | STAGING      |       | H:o M:- T:l          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P8 (lines 20-20, 1L/10T)
+  Gallows boundary: palar
+  Kernel: k=50.0% h=25.0% e=25.0%
+  Dominant category: TRANSITION (30%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 20 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    palar            | p·al·ar              | yield.input                    | FLOW         |       | H:a M:- T:r          [LINE-INITIAL]
+    or               | or                   | work.input                     | FLOW         |       | H:o M:- T:r         
+    air              | ai·r                 | yield.iterate                  | TRANSITION   |       | H:a M:i T:-         
+    kalkal           | ka·lk·al             | frame.heat                     | STAGING      | [k]   | H:- M:lk T:-        
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chpal            | ch·p·al              | pause                          | MARKING      |       | H:- M:p T:-         
+    cheody           | ch·eo·dy             | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-         
+    qopchedy         | qo·pch·edy           | pause.adjust.watch             | MARKING      | [h]   | H:- M:pc T:h        
+    pcholkal         | pch·olk·al           | work.frame.heat                | CONTAINMENT  | [k]   | H:o M:lk T:-        
+    opalkam          | opalk·am             | work.pause.yield.frame.heat    | MARKING      | [k]   | H:o M:palk T:-       [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P9 (lines 21-22, 2L/19T)
+  Gallows boundary: taiin
+  Kernel: k=66.7% h=0.0% e=33.3%
+  Dominant category: STAGING (37%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 21 (13 tokens)
+  ────────────────────────────────────────────────────────────
+    taiin            | ta·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n         [LINE-INITIAL]
+    ol               | ol                   | work.frame                     | STAGING      |       | H:o M:- T:l         
+    kaiin            | ka·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n        
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    kchedy           | kch·edy              | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokol            | qo·k·ol              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    ain              | ain                  | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    air              | ai·r                 | yield.iterate                  | TRANSITION   |       | H:a M:i T:-         
+    kaiin            | ka·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n        
+    okal             | ok·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    otar             | ot·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l          [LINE-FINAL]
+
+  LINE 22 (6 tokens)
+  ────────────────────────────────────────────────────────────
+    dor              | do·r                 | input                          | FLOW         |       | H:- M:- T:r          [LINE-INITIAL]
+    alol             | al·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    olaiin           | ol·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    olkal            | ol·k·al              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    chdar            | ch·d·ar              | mark                           | MARKING      |       | H:- M:d T:-          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P10 (lines 23-24, 2L/15T)
+  Gallows boundary: palchar
+  Kernel: k=75.0% h=25.0% e=0.0%
+  Dominant category: FLOW (33%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 23 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    palchar          | p·al·ar              | yield.input                    | FLOW         |       | H:a M:- T:r          [LINE-INITIAL]
+    ar               | ar                   | yield.input                    | FLOW         |       | H:a M:- T:r         
+    akaiiky          | akaiik·y             | yield.heat.yield.iterate.iterate.heat | STAGING      | [k,k] | H:a M:kaiik T:-     
+    char             | ch·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    raikchy          | raikc·hy             | input.yield.iterate.heat.adjust | FLOW         | [k]   | H:- M:raikc T:-     
+    ofchain          | ofch·ain             | work.flag.adjust.watch         | MARKING      | [h]   | H:o M:fc T:h        
+    opalkar          | opalk·ar             | work.pause.yield.frame.heat    | MARKING      | [k]   | H:o M:palk T:-      
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    otas             | ot·a·s               | yield                          | TRANSITION   |       | H:a M:- T:-         
+    alky             | al·k·y               | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+  LINE 24 (5 tokens)
+  ────────────────────────────────────────────────────────────
+    dain             | da·in                | iterate.halt                   | MARKING      |       | H:- M:i T:n          [LINE-INITIAL]
+    olaiin           | ol·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    olkain           | ol·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    lkaiin           | lk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n         [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P11 (lines 25-28, 4L/38T)
+  Gallows boundary: kaolkar
+  Kernel: k=42.1% h=5.3% e=52.6%
+  Dominant category: THERMAL (34%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 25 (12 tokens)
+  ────────────────────────────────────────────────────────────
+    kaolkar          | ka·olk·ar            | work.frame.heat                | CONTAINMENT  | [k]   | H:o M:lk T:-         [LINE-INITIAL]
+    kolkar           | ko·lk·ar             | frame.heat                     | STAGING      | [k]   | H:- M:lk T:-        
+    okeol            | ok·eol               | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    qokeor           | qo·ke·or             | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    tody             | to·dy                | mark.end                       | CONTAINMENT  |       | H:- M:d T:y         
+    opchey           | opch·ey              | work.pause.adjust.watch        | OPERATION    | [h]   | H:o M:pc T:h        
+    oty              | ot·y                 | end                            | TRANSITION   |       | H:- M:- T:y         
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    ky               | k·y                  | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    pchey            | pch·ey               | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    ram              | r·am                 | input                          | FLOW         |       | H:- M:- T:r          [LINE-FINAL]
+
+  LINE 26 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    oraiin           | or·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n         [LINE-INITIAL]
+    sheor            | sh·e·or              | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    cheody           | ch·eo·dy             | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    olkeeor          | ol·kee·or            | heat.cool.cool                 | THERMAL      | [k,e,e] | H:k M:ee T:-        
+    ar               | ar                   | yield.input                    | FLOW         |       | H:a M:- T:r         
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    oldy             | ol·dy                | mark.end                       | CONTAINMENT  |       | H:- M:d T:y          [LINE-FINAL]
+
+  LINE 27 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    dal              | da·l                 | frame                          | STAGING      |       | H:- M:- T:l          [LINE-INITIAL]
+    okain            | ok·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    okchey           | ok·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qokshy           | qo·ks·hy             | heat.sequence                  | STAGING      | [k]   | H:k M:s T:-         
+    okol             | ok·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    lkshedy          | lk·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    taraiin          | ta·r·aiin            | input                          | FLOW         |       | H:- M:- T:r         
+    sho              | sh·o                 | work                           | OPERATION    |       | H:o M:- T:-         
+    qokar            | qo·k·ar              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    cheey            | ch·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    qokam            | qo·k·am              | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+  LINE 28 (4 tokens)
+  ────────────────────────────────────────────────────────────
+    ycheor           | y·ch·e·or            | cool                           | THERMAL      | [e]   | H:e M:- T:-          [LINE-INITIAL]
+    cheol            | ch·eol               | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    lcheedy          | lch·e·edy            | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    raraiin          | r·ar·aiin            | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n         [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P12 (lines 29-31, 3L/27T)
+  Gallows boundary: tolkeeedy
+  Kernel: k=50.0% h=7.1% e=42.9%
+  Dominant category: TRANSITION (40%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 29 (9 tokens)
+  ────────────────────────────────────────────────────────────
+    tolkeeedy        | to·lkee·edy          | frame.heat.cool.cool           | THERMAL      | [k,e,e] | H:- M:lkee T:-       [LINE-INITIAL]
+    okeol            | ok·eol               | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    cheody           | ch·eo·dy             | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokchedy         | qo·kch·edy           | heat.adjust.watch              | THERMAL      | [k,h] | H:k M:c T:h         
+    qotyshey         | qo·tysh·ey           | transfer.end.sequence.watch    | FLOW         | [h]   | H:t M:ys T:h        
+    qcthey           | qcth·ey              | q.adjust.transfer.watch        | ?            | [h]   | H:- M:qct T:h       
+    lty              | lt·y                 | frame.transfer                 | FLOW         |       | H:- M:lt T:-        
+    ltam             | l·ta·m               | final                          | TRANSITION   |       | H:- M:- T:m          [LINE-FINAL]
+
+  LINE 3 (13 tokens)
+  ────────────────────────────────────────────────────────────
+    sain             | sa·in                | iterate.halt                   | MARKING      |       | H:- M:i T:n          [LINE-INITIAL]
+    ain              | ain                  | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    aiiin            | ai·iin               | yield.iterate                  | TRANSITION   |       | H:a M:i T:-         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    shol             | sh·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    kal              | ka·l                 | frame                          | STAGING      |       | H:- M:- T:l         
+    qokar            | qo·k·ar              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    ochedy           | och·edy              | work.adjust.watch              | MARKING      | [h]   | H:o M:c T:h         
+    lkaiin           | lk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    otal             | ot·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    olkiir           | ol·kii·r             | heat.iterate.iterate           | STAGING      | [k]   | H:k M:ii T:-        
+    alody            | al·o·dy              | work                           | OPERATION    |       | H:o M:- T:-          [LINE-FINAL]
+
+  LINE 30 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    okain            | ok·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-INITIAL]
+    ol               | ol                   | work.frame                     | STAGING      |       | H:o M:- T:l         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    lkeody           | lk·eo·dy             | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-         
+    otaiin           | ot·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    lkaiin           | lk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    lkeeey           | lk·e·eey             | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qoky             | qo·k·y               | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+  LINE 31 (7 tokens)
+  ────────────────────────────────────────────────────────────
+    sokod            | so·kod               | heat.work.mark                 | MARKING      | [k]   | H:k M:od T:-         [LINE-INITIAL]
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    lkaiin           | lk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chedy            | ch·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qeokeody         | qeokeo·dy            | q.cool.work.heat.cool.work     | ?            | [e,k,e] | H:- M:qeokeo T:-    
+    qokeedy          | qo·ke·edy            | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    rary             | r·ar·y               | end                            | TRANSITION   |       | H:- M:- T:y          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P13 (lines 32-34, 3L/25T)
+  Gallows boundary: toy
+  Kernel: k=50.0% h=0.0% e=50.0%
+  Dominant category: TRANSITION (33%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 32 (9 tokens)
+  ────────────────────────────────────────────────────────────
+    toy              | to·y                 | end                            | TRANSITION   |       | H:- M:- T:y          [LINE-INITIAL]
+    oaiin            | o·aiin               | work                           | OPERATION    |       | H:o M:- T:-         
+    okeeody          | ok·eeo·dy            | cool.cool.work                 | OPERATION    | [e,e] | H:e M:eo T:-        
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    otaiin           | ot·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    otchey           | ot·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    okedy            | ok·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokam            | qo·k·am              | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+  LINE 33 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    orain            | or·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-INITIAL]
+    chol             | ch·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    qodaiin          | qo·d·aiin            | mark                           | MARKING      |       | H:- M:d T:-         
+    odain            | od·ain               | work.mark                      | ?            |       | H:o M:d T:-         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    okain            | ok·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    chkaly           | ch·ka·ly             | heat.yield                     | THERMAL      | [k]   | H:k M:a T:-         
+    raiin            | r·aiin               | input                          | FLOW         |       | H:- M:- T:r         
+    ykaiin           | yk·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    aldy             | al·dy                | mark.end                       | CONTAINMENT  |       | H:- M:d T:y          [LINE-FINAL]
+
+  LINE 34 (6 tokens)
+  ────────────────────────────────────────────────────────────
+    dyair            | dyai·r               | mark.end.yield.iterate         | TRANSITION   |       | H:- M:dyai T:-       [LINE-INITIAL]
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    lkeey            | lk·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    lchedy           | lch·edy              | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    raiin            | r·aiin               | input                          | FLOW         |       | H:- M:- T:r         
+    sheey            | sh·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P14 (lines 35-35, 1L/10T)
+  Gallows boundary: polchedy
+  Kernel: k=42.9% h=14.3% e=42.9%
+  Dominant category: OPERATION (30%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 35 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    polchedy         | po·lch·edy           | frame.adjust.watch             | OPERATION    | [h]   | H:- M:lc T:h         [LINE-INITIAL]
+    olkeey           | ol·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    lkey             | lk·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    chcthy           | ch·ct·hy             | adjust.transfer                | MONITORING   |       | H:- M:ct T:-        
+    lkar             | lk·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    shedy            | sh·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    chedy            | ch·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qokeedy          | qo·ke·edy            | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    lol              | l·ol                 | frame                          | STAGING      |       | H:- M:- T:l          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P15 (lines 36-36, 1L/10T)
+  Gallows boundary: tol
+  Kernel: k=50.0% h=0.0% e=50.0%
+  Dominant category: THERMAL (56%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 36 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    tol              | to·l                 | frame                          | STAGING      |       | H:- M:- T:l          [LINE-INITIAL]
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    lcheor           | lch·e·or             | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    sheol            | sh·eol               | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    olkeedy          | ol·ke·edy            | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    okar             | ok·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    ar               | ar                   | yield.input                    | FLOW         |       | H:a M:- T:r         
+    olkain           | ol·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    odain            | od·ain               | work.mark                      | ?            |       | H:o M:d T:-          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P16 (lines 37-40, 4L/35T)
+  Gallows boundary: poraiin
+  Kernel: k=42.9% h=7.1% e=50.0%
+  Dominant category: THERMAL (36%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 37 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    poraiin          | po·r·aiin            | input                          | FLOW         |       | H:- M:- T:r          [LINE-INITIAL]
+    okal             | ok·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    chedy            | ch·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    qolkeey          | qo·lk·eey            | frame.heat                     | STAGING      | [k]   | H:- M:lk T:-        
+    lpcheedy         | l·pch·e·edy          | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    qokol            | qo·k·ol              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    rol              | r·ol                 | input                          | FLOW         |       | H:- M:- T:r         
+    keedy            | ke·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    otary            | ot·a·ry              | yield                          | TRANSITION   |       | H:a M:- T:-          [LINE-FINAL]
+
+  LINE 38 (9 tokens)
+  ────────────────────────────────────────────────────────────
+    dain             | da·in                | iterate.halt                   | MARKING      |       | H:- M:i T:n          [LINE-INITIAL]
+    okchey           | ok·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qokchey          | qo·kch·ey            | heat.adjust.watch              | THERMAL      | [k,h] | H:k M:c T:h         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    olkeey           | ol·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokol            | qo·k·ol              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    oteey            | ot·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    oteey            | ot·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    lkain            | lk·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-FINAL]
+
+  LINE 39 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    okain            | ok·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-INITIAL]
+    cheor            | ch·e·or              | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    olkaiin          | ol·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    oain             | o·ain                | work                           | OPERATION    |       | H:o M:- T:-         
+    cheary           | ch·ea·ry             | cool.yield                     | THERMAL      | [e]   | H:e M:a T:-         
+    raiin            | r·aiin               | input                          | FLOW         |       | H:- M:- T:r         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    odaiin           | od·aiin              | work.mark                      | ?            |       | H:o M:d T:-         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    y                | y                    | end                            | TRANSITION   |       | H:- M:- T:y          [LINE-FINAL]
+
+  LINE 4 (7 tokens)
+  ────────────────────────────────────────────────────────────
+    dain             | da·in                | iterate.halt                   | MARKING      |       | H:- M:i T:n          [LINE-INITIAL]
+    cheky            | ch·ek·y              | cool.heat                      | OPERATION    | [e,k] | H:e M:k T:-         
+    okechy           | ok·ec·hy             | cool.adjust                    | MARKING      | [e]   | H:e M:c T:-         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    shocthy          | sh·oct·hy            | work.adjust.transfer           | FLOW         |       | H:o M:ct T:-        
+    otaiin           | ot·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    alkaiin          | al·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+  LINE 40 (6 tokens)
+  ────────────────────────────────────────────────────────────
+    chokeey          | ch·ok·eey            | work.heat                      | CONTAINMENT  | [k]   | H:o M:k T:-          [LINE-INITIAL]
+    qokey            | qo·k·ey              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokaiii          | qo·kaiii             | heat.yield.iterate.iterate.iterate | STAGING      | [k]   | H:k M:aiii T:-      
+    lor              | l·or                 | frame                          | STAGING      |       | H:- M:- T:l         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    aiily            | aii·ly               | yield.iterate.iterate          | ?            |       | H:a M:ii T:-         [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P17 (lines 41-42, 2L/14T)
+  Gallows boundary: pokar
+  Kernel: k=50.0% h=12.5% e=37.5%
+  Dominant category: THERMAL (57%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 41 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    pokar            | po·k·ar              | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-INITIAL]
+    ar               | ar                   | yield.input                    | FLOW         |       | H:a M:- T:r         
+    keey             | ke·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    okeeo            | ok·eeo               | cool.cool.work                 | OPERATION    | [e,e] | H:e M:eo T:-        
+    lcheey           | lch·eey              | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    qokchey          | qo·kch·ey            | heat.adjust.watch              | THERMAL      | [k,h] | H:k M:c T:h         
+    oteey            | ot·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    lkeeol           | lk·eeol              | cool.cool.work.frame           | THERMAL      | [e,e] | H:e M:eo T:l        
+    lkeedy           | lk·e·edy             | cool                           | THERMAL      | [e]   | H:e M:- T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    lkain            | lk·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-FINAL]
+
+  LINE 42 (3 tokens)
+  ────────────────────────────────────────────────────────────
+    orain            | or·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-INITIAL]
+    oloeeey          | ol·oe·eey            | work.cool                      | OPERATION    | [e]   | H:o M:e T:-         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P18 (lines 43-43, 1L/11T)
+  Gallows boundary: pol
+  Kernel: k=33.3% h=16.7% e=50.0%
+  Dominant category: OPERATION (27%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 43 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    pol              | po·l                 | frame                          | STAGING      |       | H:- M:- T:l          [LINE-INITIAL]
+    keeeo            | ke·eeo               | cool.cool.work                 | OPERATION    | [e,e] | H:e M:eo T:-        
+    kaiis            | ka·ii·s              | iterate.iterate                | STAGING      |       | H:- M:ii T:-        
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    chckhy           | ch·ck·hy             | adjust.heat                    | OPERATION    | [k]   | H:- M:ck T:-        
+    lkchaly          | lk·a·ly              | yield                          | TRANSITION   |       | H:a M:- T:-         
+    lkeey            | lk·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    opchey           | opch·ey              | work.pause.adjust.watch        | OPERATION    | [h]   | H:o M:pc T:h        
+    rar              | r·ar                 | input                          | FLOW         |       | H:- M:- T:r         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    cheokaly         | ch·eoka·ly           | cool.work.heat.yield           | THERMAL      | [e,k] | H:e M:oka T:-        [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P19 (lines 44-44, 1L/6T)
+  Gallows boundary: kaiech
+  Kernel: k=33.3% h=33.3% e=33.3%
+  Dominant category: THERMAL (33%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 44 (6 tokens)
+  ────────────────────────────────────────────────────────────
+    kaiech           | ka·iech              | iterate.cool.adjust.watch      | MARKING      | [e,h] | H:- M:iec T:h        [LINE-INITIAL]
+    ol               | ol                   | work.frame                     | STAGING      |       | H:o M:- T:l         
+    air              | ai·r                 | yield.iterate                  | TRANSITION   |       | H:a M:i T:-         
+    arody            | ar·o·dy              | work                           | OPERATION    |       | H:o M:- T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P20 (lines 45-49, 5L/51T)
+  Gallows boundary: porain
+  Kernel: k=38.1% h=9.5% e=52.4%
+  Dominant category: THERMAL (34%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 45 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    porain           | po·r·ain             | input                          | FLOW         |       | H:- M:- T:r          [LINE-INITIAL]
+    okain            | ok·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    okechdy          | ok·ech·dy            | cool.adjust.watch              | MONITORING   | [e,h] | H:e M:c T:h         
+    dal              | da·l                 | frame                          | STAGING      |       | H:- M:- T:l         
+    keeedal          | ke·eed·al            | cool.cool.mark                 | THERMAL      | [e,e] | H:e M:ed T:-        
+    shedy            | sh·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    okeeolkcheey     | ok·eeolkch·eey       | cool.cool.work.frame.heat.adjust.watch | THERMAL      | [e,e,k,h] | H:e M:eolkc T:h     
+    lkar             | lk·ar                | yield.input                    | FLOW         |       | H:a M:- T:r         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l          [LINE-FINAL]
+
+  LINE 46 (12 tokens)
+  ────────────────────────────────────────────────────────────
+    soain            | so·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-INITIAL]
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qol              | qo·l                 | frame                          | STAGING      |       | H:- M:- T:l         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    chedy            | ch·edy               | cool.mark.end                  | OPERATION    | [e]   | H:e M:d T:y         
+    kedy             | ke·dy                | mark.end                       | CONTAINMENT  |       | H:- M:d T:y         
+    qoteey           | qo·t·eey             | transfer                       | FLOW         |       | H:t M:- T:-         
+    oteey            | ot·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    lkain            | lk·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n          [LINE-FINAL]
+
+  LINE 47 (10 tokens)
+  ────────────────────────────────────────────────────────────
+    ycheey           | y·ch·eey             | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y          [LINE-INITIAL]
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    okeoteey         | ok·eot·eey           | cool.work.transfer             | FLOW         | [e]   | H:e M:ot T:-        
+    qokey            | qo·k·ey              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokey            | qo·k·ey              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    daiin            | da·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n        
+    y                | y                    | end                            | TRANSITION   |       | H:- M:- T:y         
+    okoey            | ok·o·ey              | work                           | OPERATION    |       | H:o M:- T:-         
+    odain            | od·ain               | work.mark                      | ?            |       | H:o M:d T:-          [LINE-FINAL]
+
+  LINE 48 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    oteedy           | ot·e·edy             | cool                           | THERMAL      | [e]   | H:e M:- T:-          [LINE-INITIAL]
+    qokey            | qo·k·ey              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokeedy          | qo·ke·edy            | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    chody            | ch·o·dy              | work                           | OPERATION    |       | H:o M:- T:-         
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qoky             | qo·k·y               | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    oteey            | ot·eey               | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    otain            | ot·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    al               | al                   | yield.frame                    | FLOW         |       | H:a M:- T:l          [LINE-FINAL]
+
+  LINE 49 (8 tokens)
+  ────────────────────────────────────────────────────────────
+    ycheo            | y·ch·eo              | cool.work                      | TRANSITION   | [e]   | H:e M:o T:-          [LINE-INITIAL]
+    saiin            | sa·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n        
+    oekey            | oek·ey               | work.cool.heat                 | THERMAL      | [e,k] | H:o M:ek T:-        
+    chey             | ch·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    ycheey           | y·ch·eey             | cool.cool.end                  | THERMAL      | [e,e] | H:e M:e T:y         
+    dy               | dy                   | mark.end                       | CONTAINMENT  |       | H:- M:d T:y         
+    qoy              | qo·y                 | end                            | TRANSITION   |       | H:- M:- T:y          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P2 (lines 5-5, 1L/11T)
+  Gallows boundary: tol
+  Kernel: k=16.7% h=50.0% e=33.3%
+  Dominant category: MARKING (27%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 5 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    tol              | to·l                 | frame                          | STAGING      |       | H:- M:- T:l          [LINE-INITIAL]
+    sheockhedy       | sh·eockh·edy         | cool.work.adjust.heat.watch    | THERMAL      | [e,k,h] | H:e M:ock T:h       
+    qotol            | qo·t·ol              | transfer                       | FLOW         |       | H:t M:- T:-         
+    chdor            | ch·d·or              | mark                           | MARKING      |       | H:- M:d T:-         
+    otechdy          | ot·ech·dy            | cool.adjust.watch              | MONITORING   | [e,h] | H:e M:c T:h         
+    teol             | te·ol                | work.frame                     | STAGING      |       | H:o M:- T:l         
+    tedaiin          | te·d·aiin            | mark                           | MARKING      |       | H:- M:d T:-         
+    opchedy          | opch·edy             | work.pause.adjust.watch        | OPERATION    | [h]   | H:o M:pc T:h        
+    qopchdy          | qo·pch·dy            | pause.adjust.watch             | MARKING      | [h]   | H:- M:pc T:h        
+    ytar             | y·ta·r               | input                          | FLOW         |       | H:- M:- T:r         
+    aiim             | ai·im                | yield.iterate                  | TRANSITION   |       | H:a M:i T:-          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P3 (lines 6-6, 1L/11T)
+  Gallows boundary: paiin
+  Kernel: k=66.7% h=0.0% e=33.3%
+  Dominant category: TRANSITION (36%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 6 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    paiin            | p·aiin               | pause                          | MARKING      |       | H:- M:p T:-          [LINE-INITIAL]
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    qokaiy           | qo·kai·y             | heat.yield.iterate             | STAGING      | [k]   | H:k M:ai T:-        
+    olkeedy          | ol·ke·edy            | heat.cool                      | THERMAL      | [k,e] | H:k M:e T:-         
+    qokeey           | qo·k·eey             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qotaiin          | qo·t·aiin            | transfer                       | FLOW         |       | H:t M:- T:-         
+    oky              | ok·y                 | end                            | TRANSITION   |       | H:- M:- T:y         
+    lkal             | lk·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    okaiin           | ok·aiin              | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    aiin             | aiin                 | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    qokaldy          | qo·kal·dy            | heat.yield.frame               | STAGING      | [k]   | H:k M:a T:l          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P4 (lines 7-7, 1L/4T)
+  Gallows boundary: taiin
+  Kernel: k=66.7% h=0.0% e=33.3%
+  Dominant category: THERMAL (50%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 7 (4 tokens)
+  ────────────────────────────────────────────────────────────
+    taiin            | ta·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n         [LINE-INITIAL]
+    cheockhy         | ch·eock·hy           | cool.work.adjust.heat          | THERMAL      | [e,k] | H:e M:ock T:-       
+    chain            | ch·ain               | yield.iterate.halt             | FLOW         |       | H:a M:i T:n         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-          [LINE-FINAL]
+
+────────────────────────────────────────────────────────────────────────────────
+PARAGRAPH P5 (lines 8-10, 3L/27T)
+  Gallows boundary: polcheolkain
+  Kernel: k=38.5% h=15.4% e=46.2%
+  Dominant category: THERMAL (31%)
+────────────────────────────────────────────────────────────────────────────────
+
+  LINE 8 (9 tokens)
+  ────────────────────────────────────────────────────────────
+    polcheolkain     | po·lcheolk·ain       | frame.adjust.watch.cool.work.frame.heat | STAGING      | [h,e,k] | H:- M:lcheolk T:-    [LINE-INITIAL]
+    qokair           | qo·kai·r             | heat.yield.iterate             | STAGING      | [k]   | H:k M:ai T:-        
+    okeol            | ok·eol               | cool.work.frame                | THERMAL      | [e]   | H:e M:o T:l         
+    qokol            | qo·k·ol              | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    opcheol          | opch·eol             | work.pause.adjust.watch        | OPERATION    | [h]   | H:o M:pc T:h        
+    qotedy           | qo·t·edy             | transfer                       | FLOW         |       | H:t M:- T:-         
+    ltedy            | l·te·dy              | mark.end                       | CONTAINMENT  |       | H:- M:d T:y         
+    otedam           | ot·ed·am             | cool.mark                      | FLOW         | [e]   | H:e M:d T:-          [LINE-FINAL]
+
+  LINE 9 (11 tokens)
+  ────────────────────────────────────────────────────────────
+    saiin            | sa·iin               | iterate.iterate.halt           | STAGING      |       | H:- M:ii T:n         [LINE-INITIAL]
+    shey             | sh·ey                | cool.end                       | TRANSITION   | [e]   | H:e M:- T:y         
+    kedy             | ke·dy                | mark.end                       | CONTAINMENT  |       | H:- M:d T:y         
+    qokain           | qo·k·ain             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokedy           | qo·k·edy             | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    qokaiin          | qo·k·aiin            | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    ylkaiin          | y·lk·aiin            | yield.iterate.iterate.halt     | TRANSITION   |       | H:a M:ii T:n        
+    qoky             | qo·k·y               | heat                           | THERMAL      | [k]   | H:k M:- T:-         
+    lkal             | lk·al                | yield.frame                    | FLOW         |       | H:a M:- T:l         
+    tar              | ta·r                 | input                          | FLOW         |       | H:- M:- T:r         
+    aty              | at·y                 | yield.transfer                 | FLOW         |       | H:a M:t T:-          [LINE-FINAL]
+
+================================================================================
+END OF FOLIO DUMP

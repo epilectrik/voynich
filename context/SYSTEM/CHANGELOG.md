@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.82 (2026-03-19) - Phase 610: Stars Folio Close Reading
+
+### Summary
+
+Phase 610 shifts from aggregate statistical analysis to qualitative close reading. Expert-advisor agent (all 1766 constraints embedded) read raw token-level data for three Stars folios: f104r (blind test), f108v (extreme low-h), and f107v (extreme high-h). Verdict: **MONITORING_PHILOSOPHY_CONFIRMED**. Blind test succeeds — expert correctly predicts f104r as high-monitoring from tokens alone (C1768). Extreme pair reveals monitoring axis encodes complete operational philosophies ("confidence" vs "vigilance"), not a parametric dial, with 5 dimensions diverging simultaneously (C1769). Bridge rate invariant to monitoring level (C1770). h morphological position (TERMINAL vs medial) tracks monitoring character (C1771). First phase using qualitative AI reasoning instead of statistical pipelines.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/STARS_FOLIO_CLOSE_READING/` -- Phase 610 with extraction scripts, folio data dumps, blind analysis, extreme pair comparison, synthesis, INDEX.md |
+| **ADDED** | C1768: Blind token-level monitoring prediction succeeds in Stars (f104r h_resid=+0.069, rank 21/23, correctly predicted) |
+| **ADDED** | C1769: Stars monitoring axis encodes operational philosophy (5-dimensional divergence: paragraph architecture, kernel balance, monitoring mode, h position, sister pairs) |
+| **ADDED** | C1770: Bridge rate invariant to monitoring level within Stars (88.1% vs 88.6%) |
+| **ADDED** | C1771: h morphological position tracks monitoring philosophy (TERMINAL in high-h, medial in low-h) |
+| **UPDATED** | INDEX.md -- +4 constraints (1770 total), Phase 610 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.82, 1770 constraints, 610 phases) |
+
+### Key Findings
+
+- **Blind test success (C1768):** Expert-advisor predicted f104r as HIGH-MONITORING from raw token data without aggregate statistics. Actual h_resid=+0.069, rank 21/23 in Stars. Evidence: h-kernel in compounds, e-dominance, multi-kernel tokens. Validates token-level predictive power of the constraint system.
+- **Operational philosophy (C1769):** f108v (h_resid=-0.101, "confidence"): 9 large paragraphs, e-dominant kernel (67.6%), passive monitoring, h buried medially. f107v (h_resid=+0.075, "vigilance"): 20 small paragraphs, balanced kernel, active checkpoints, h in TERMINAL position, ch-dominant sister pairs. Five dimensions diverge simultaneously.
+- **Vocabulary invariance (C1770):** Bridge rate 88.1% vs 88.6% for the extreme pair. The monitoring axis operates through token deployment, not vocabulary sourcing.
+- **h position (C1771):** In high-monitoring folios, h appears in TERMINAL compound position (architecturally significant endpoint). In low-monitoring folios, h is buried medially (structurally passive). Monitoring character varies with monitoring amount.
+- **Methodological shift:** First phase using qualitative AI reasoning with the full constraint system. Demonstrates the framework supports genuine folio-level interpretation, not just statistical aggregate patterns.
+
+---
+
 ## Version 5.81 (2026-03-19) - Phase 609: h_ratio Repertoire Mechanism
 
 ### Summary

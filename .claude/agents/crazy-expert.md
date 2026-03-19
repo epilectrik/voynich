@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,695 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,770 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1767.
+the highest ID present is C1771.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2092,6 +2092,10 @@ C1764	MP_present is best simple repertoire predictor of h_ratio: among 4 simple 
 C1765	Continuous paragraph means dominate discrete zone labels for h_ratio: 3 continuous means (THERMAL, MONITORING, h_kernel fracs) dR^2=0.536 vs 8 discrete zone dummies dR^2=0.241. LOO R^2_cv=0.679 vs 0.111. Tier2+3 add only 0.022. C1763 effect is continuous gradient, not combinatorial bundling.	2	B, paragraph, repertoire, h_ratio, continuous, discrete, C1763, C1398	cont_dR2=0.536. disc_dR2=0.241. LOO_cont=0.679. LOO_disc=0.111.
 C1766	Stars-specific repertoire-h_ratio effect: within Stars (n=23), MP_present dR^2=0.276 (perm_p=0.018) — only section with significant single-predictor effect. Bio marginal (0.083), Herbal uses breadth not presence (0.063). Consistent with C1154: h is program-specific only in Stars.	2	B, Stars, paragraph, repertoire, h_ratio, monitoring, MP, C1154, C1764	Stars_M1_dR2=0.276. Stars_perm=0.018. n_Stars=23.
 C1767	Kernel ecology fully absorbs repertoire effects on h_ratio: Baseline B (adding k_ratio+e_ratio) R^2=0.969. Against B, MP_present dR^2=0.0003, full repertoire dR^2=0.0022 (both null). Algebraically expected. PREFIX is poor kernel ecology proxy; paragraph means capture what PREFIX cannot.	2	B, paragraph, repertoire, h_ratio, kernel, PREFIX, C1763, C1765	BaseB_R2=0.969. M1_vs_B=0.0003. M5_vs_B=0.0022.
+C1768	Blind token-level monitoring prediction succeeds in Stars: expert reading raw f104r tokens (atom glosses, morphology, categories) without aggregate stats correctly predicted HIGH-MONITORING. Actual h_resid=+0.069 (rank 21/23). Evidence: h-kernel in compounds across all paragraphs, e-dominance, multi-kernel tokens. Validates token-level predictive power.	2	B_Stars, monitoring, h_ratio, blind_test, C1154, C1195, C1250, C1393, C1755	h_resid=+0.069. rank=21/23. h_ratio=0.244. prediction=correct.
+C1769	Stars monitoring axis encodes operational philosophy: extreme pair (f108v h_resid=-0.101 vs f107v +0.075, both R1) shows 5-dimensional divergence — paragraph architecture (9 large vs 20 small), kernel balance (e-dominant vs balanced), monitoring mode (passive vs active), h position (medial vs TERMINAL), sister pairs (balanced vs ch-dominant). Low-h="confidence", high-h="vigilance". Complete strategy difference, not parametric dial.	2	B_Stars, monitoring, h_ratio, paragraph, kernel, morphology, C1154, C1755, C1740	f108v_resid=-0.101. f107v_resid=+0.075. f108v_paras=9. f107v_paras=20. f108v_e=67.6. f107v_k=48.3.
+C1770	Bridge rate invariant to monitoring level within Stars: 88.1% (f108v, lowest h_resid) vs 88.6% (f107v, highest). Monitoring axis operates through deployment (composition, sequencing, position) not vocabulary sourcing. Same lexicon, different operational strategies.	2	B_Stars, monitoring, h_ratio, bridge, vocabulary	bridge_f108v=88.1. bridge_f107v=88.6. delta=0.5.
+C1771	h morphological position tracks monitoring philosophy: in high-monitoring Stars folios, h-kernel appears TERMINAL (architecturally significant endpoint per C1393/C1394). In lowest-monitoring folio, h buried medially (passive). Monitoring character (not just amount) varies with h_resid. TERMINAL h = instruction ends with monitoring; medial h = monitoring incidental.	2	B_Stars, monitoring, h_ratio, morphology, TERMINAL, C1393, C1394	h_high=TERMINAL. h_low=medial.
 
 ---
 
