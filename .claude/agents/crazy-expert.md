@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1751.
+the highest ID present is C1754.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2076,6 +2076,9 @@ C1748	Register architecture partial: PL operational parts (Practica/Mercuriorum/
 C1749	Procedure-family prototype assignment does not project onto V folio structure: z-scored cosine bridge maps PL families (distillation, fixation, sublimation, dissolution) onto known REGIME/section manifold, not family-specific residual. N1 fails (theoretical not worst-fitting), N2 fails (43.5% random permutations exceed real). Extends C1377.	2	B, pseudo-Lull, families, REGIME, assignment, C1377, C1712, C1744	N1=FAIL. N2_frac=0.435. verdict=SPECIFICITY_FAILURE.
 C1750	PL sublimation vs distillation monitoring contrast replicates in V: sublimation-assigned h_ratio=0.235 vs distillation=0.113, U=638, p=6.9e-10, rank_biserial=-1.0 (perfect separation). Within-A3 thermal specificity also confirmed (p=0.0006). Axis-level alignment genuine; categorical assignment fails.	2	B, pseudo-Lull, monitoring, h_ratio, sublimation, distillation, C1744, C1735	P4_p=6.9e-10. P4_rb=-1.0. P1_within_A3_p=0.0006.
 C1751	PL fixation not valid A2/recirculation proxy: 6/82 assigned, 0 A2, safety direction inverted (fix=0.182 > dist=0.116, predicted fix < dist). High-termination/chain fixation selects Bio/R1/A1 (preventive safety) not A2/Herbal (transformative). PL discriminating dims (termination, chain) have no folio-level V analog.	2	B, pseudo-Lull, fixation, A2, recirculation, safety, C1741, C1471	P3_direction=INVERTED. fix_n=6. A2_n=0.
+C1752	Thermal axis alignment confirmed: h_ratio_resid negatively correlates with thermo_ke (rho=-0.400, p=0.0003) and thermal paragraph fraction (rho=-0.473, p=0.0009). PL distillation heat-dominant (13.33 vs sublimation 11.37). Survives permutation, random axis, wrong-direction, within-Herbal (rho=-0.570, p=0.001), REGIME control. First clean historical family contrast recovered in V.	2	B, pseudo-Lull, thermal, monitoring, h_ratio, distillation, sublimation, C1750, C1735, C1744	P3_rho=-0.400. P3_p=0.0003. P4_rho=-0.473. P4_p=0.0009. herbal_rho=-0.570.
+C1753	Termination/iteration family contrasts directionally correct but sub-threshold: P1 terminal_rate rho=+0.158 (p=0.098), P2 iteration_rate rho=+0.169 (p=0.083). Raw h_ratio recovers P1 (rho=+0.377, p=0.0007) — section confound partially mediates. V closure/chaining line-local (C1471), limiting folio-level family contrast recovery.	2	B, pseudo-Lull, termination, iteration, C1471, C1746, C1398	P1_rho=0.158. P1_p=0.098. P2_rho=0.169. P2_p=0.083. P1_raw_rho=0.377.
+C1754	Family contrast is distillation-vs-rest, not sublimation-specific: N4 dissolution matches P3/P4 thermal predictions (both less thermal than distillation). Dissolution heat=7.09 < distillation=13.33, same direction as sublimation=11.37. P1/P2 diverge. Recovered signal = distillation thermal baseline vs monitoring-rich non-distillation basin.	2	B, pseudo-Lull, dissolution, distillation, sublimation, thermal, families, C1750, C1752	N4_thermal_match=true. dissolution_heat=7.09. distillation_heat=13.33.
 
 ---
 

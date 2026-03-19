@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1750 validated constraints | **Version:** 5.76 | **Date:** 2026-03-18
+**Total:** 1753 validated constraints | **Version:** 5.77 | **Date:** 2026-03-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 605: Procedure-Family Contrast Alignment — PARTIAL_FAMILY_CONTRAST (C1752-C1754)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1752 | Thermal axis alignment confirmed: h_ratio_resid (residualized on section + k_ratio) negatively correlates with thermo_ke (Spearman rho=-0.400, p=0.0003, n=69) and thermal paragraph fraction (rho=-0.473, p=0.0009, n=41). Pseudo-Lull distillation is heat-dominant (heat_rate 13.33 vs sublimation 11.37); V folios with higher monitoring residual have lower thermal burden. Survives N1 permutation (frac_exceeding=0.002), N2 random axis (0/4 pass), N3 wrong-direction (p>0.99), within-Herbal replication (rho=-0.570, p=0.001, n=27), and section+REGIME control (rho=-0.391/-0.460). First clean historical family contrast recovered inside Voynich | 2 | B, pseudo-Lull, thermal, monitoring, h_ratio, distillation, sublimation, C1750, C1735, C1744 | P3_rho=-0.400. P3_p=0.0003. P4_rho=-0.473. P4_p=0.0009. N1_frac=0.002. N2_passes=0. herbal_P3_rho=-0.570. herbal_P3_p=0.001. |
+| 1753 | Termination/iteration family contrasts directionally correct but sub-threshold after residualization: P1 terminal_rate rho=+0.158 (p=0.098, n=69), P2 iteration_rate rho=+0.169 (p=0.083, n=69). PL sublimation has 2.5x termination and 2.4x chain_rate vs distillation. Both predictions in correct direction but fail p<0.05. Raw h_ratio recovers P1 (rho=+0.377, p=0.0007) — section confound partially mediates. V closure and chaining may be too line-local (C1471) for folio-level family contrast recovery | 2 | B, pseudo-Lull, termination, iteration, monitoring, C1471, C1746, C1398 | P1_rho=0.158. P1_p=0.098. P2_rho=0.169. P2_p=0.083. P1_raw_rho=0.377. P1_raw_p=0.0007. |
+| 1754 | Family contrast is distillation-vs-rest, not sublimation-specific: N4 dissolution contrast shows P3/P4 thermal predictions match dissolution (dissolution heat_rate 7.09 < distillation 13.33, same direction as sublimation 11.37). Both sublimation and dissolution are "less thermal than distillation." P1/P2 directions diverge (dissolution termination 2.59 < distillation 4.87, opposite to sublimation 12.20 > distillation). Recovered signal is a distillation-centered thermal family vs monitoring-rich non-distillation basin, not unique sublimation identification | 2 | B, pseudo-Lull, dissolution, distillation, sublimation, thermal, families, C1750, C1752 | N4_P3_match=true. N4_P4_match=true. N4_P1_diverge=true. N4_P2_diverge=true. dissolution_heat=7.09. distillation_heat=13.33. sublimation_heat=11.37. |
+
+**Phase 605 findings (Procedure-Family Contrast Alignment, PARTIAL_FAMILY_CONTRAST):**
+- Pre-registered verdict PARTIAL_FAMILY_CONTRAST (K_perm=2, N2 passes). Two of four primary predictions pass with strong effect sizes, both on the thermal axis. The monitoring-residual (h_ratio_resid) negatively correlates with thermal burden, exactly as predicted from PL distillation-sublimation heat_rate contrast.
+- Thermal axis is the first clean historical family contrast recovered inside Voynich (C1752): pseudo-Lull's distillation vs sublimation heat_rate ratio (0.85x) predicts that V folios with higher monitoring residual have lower thermal content. This survives every control: permutation, random axis, wrong-direction, within-Herbal (where it strengthens to rho=-0.57), and REGIME control. The bridge is real.
+- Termination and iteration mappings are directionally correct but underpowered (C1753): P1/P2 show rho~0.16 in predicted direction but miss the p<0.05 threshold. Raw h_ratio recovers P1 (rho=0.38, p=0.0007), indicating section-mediated component. V closure and chaining are line-local phenomena (C1471) that may not aggregate cleanly to folio-level family contrasts.
+- Distillation is the recoverable family anchor, not sublimation (C1754): N4 dissolution contrast shows dissolution would make the same thermal predictions as sublimation (both less thermal than distillation). The recovered signal is distillation-vs-rest, not sublimation-specific. Historically coherent: distillation is the thermally dominant family across Brunschwig (C1735), pseudo-Lull, and now Voynich.
+- Expert synthesis: the Voynich and pseudo-Lull inhabit the same procedure-space, at least at the level of a distillation thermal baseline versus more monitoring-intensive alternative procedures. Not a full family taxonomy, but a historically meaningful operational contrast axis, now triangulated by Brunschwig, pseudo-Lull, and Voynich internal manifold.
 
 ---
 

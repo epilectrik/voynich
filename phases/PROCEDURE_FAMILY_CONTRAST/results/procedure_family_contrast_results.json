@@ -1,0 +1,367 @@
+{
+  "phase": 605,
+  "predictions_hash": "18af376293e8062b741feca71ec7ba49df0064ef01cfc6590890b0c0451cce44",
+  "n_folios": 69,
+  "S0": {
+    "pass": true,
+    "n_folios": 69
+  },
+  "S1": {
+    "pass": true,
+    "sublimation_n": 18,
+    "distillation_n": 26,
+    "sublimation_mean_h_resid": 0.05591289429182807,
+    "distillation_mean_h_resid": -0.026094952485347708,
+    "U": 464.0,
+    "p": 2.147415418573e-08
+  },
+  "verdict": "PARTIAL_FAMILY_CONTRAST",
+  "primary_battery": [
+    {
+      "id": "P1_TERM",
+      "feature": "terminal_rate",
+      "predicted_direction": "positive",
+      "n": 69,
+      "rho": 0.15747599958414077,
+      "p_one_sided": 0.09813068897590954,
+      "pass": false,
+      "pl_basis": "sublimation termination_rate 2.5x distillation"
+    },
+    {
+      "id": "P2_ITER",
+      "feature": "iteration_rate",
+      "predicted_direction": "positive",
+      "n": 69,
+      "rho": 0.16856440249455026,
+      "p_one_sided": 0.08309492399129043,
+      "pass": false,
+      "pl_basis": "sublimation chain_rate 2.4x distillation"
+    },
+    {
+      "id": "P3_HEAT_NEG",
+      "feature": "thermo_ke",
+      "predicted_direction": "negative",
+      "n": 69,
+      "rho": -0.40016100136309724,
+      "p_one_sided": 0.00032864462915388606,
+      "pass": true,
+      "pl_basis": "distillation heat_rate 1.17x sublimation"
+    },
+    {
+      "id": "P4_THERMAL_NEG",
+      "feature": "thermal_para_frac",
+      "predicted_direction": "negative",
+      "n": 41,
+      "rho": -0.4734010385577198,
+      "p_one_sided": 0.0008856614446475993,
+      "pass": true,
+      "pl_basis": "distillation heat-dominant family"
+    }
+  ],
+  "secondary_battery": [
+    {
+      "id": "S1_CYCLE",
+      "feature": "cycle_regularity",
+      "predicted_direction": "positive",
+      "n": 69,
+      "rho": -0.09693183167952481,
+      "p_one_sided": 0.7859173012705183,
+      "pass": false,
+      "pl_basis": "sublimation chain_rate 2.4x distillation"
+    },
+    {
+      "id": "S2_CHECKPOINT",
+      "feature": "checkpoint_rate",
+      "predicted_direction": "positive",
+      "n": 69,
+      "rho": 0.24047279785133402,
+      "p_one_sided": 0.023276999290409633,
+      "pass": true,
+      "pl_basis": "sublimation monitoring_density 2.0x distillation"
+    }
+  ],
+  "exploratory": [
+    {
+      "id": "D1_OPAQUE",
+      "feature": "opaque_close_fraction",
+      "predicted_direction": "positive",
+      "n": 69,
+      "rho": -0.05741427600980891,
+      "p_one_sided": 0.6803196703714389,
+      "pass": false,
+      "pl_basis": ""
+    },
+    {
+      "id": "D2_STRONG",
+      "feature": "strong_close_fraction",
+      "predicted_direction": "negative",
+      "n": 69,
+      "rho": -0.0709394220424195,
+      "p_one_sided": 0.2812161945909293,
+      "pass": false,
+      "pl_basis": ""
+    },
+    {
+      "id": "D3_INTV",
+      "feature": "intervention_frequency",
+      "predicted_direction": "negative",
+      "n": 69,
+      "rho": -0.12267528964306829,
+      "p_one_sided": 0.15764100757695784,
+      "pass": false,
+      "pl_basis": ""
+    },
+    {
+      "id": "D4_RECOV",
+      "feature": "recovery_ops_count",
+      "predicted_direction": "negative",
+      "n": 69,
+      "rho": 0.03403222166370233,
+      "p_one_sided": 0.6093436618329826,
+      "pass": false,
+      "pl_basis": ""
+    }
+  ],
+  "K": 2,
+  "K_perm": 2,
+  "N1_permutation": {
+    "P3_HEAT_NEG": {
+      "real_abs_rho": 0.40016100136309724,
+      "fraction_exceeding": 0.002,
+      "survives_permutation": true
+    },
+    "P4_THERMAL_NEG": {
+      "real_abs_rho": 0.4734010385577198,
+      "fraction_exceeding": 0.002,
+      "survives_permutation": true
+    }
+  },
+  "N2_random_axis": {
+    "pass": true,
+    "n_passes": 0,
+    "details": [
+      {
+        "id": "P1_TERM",
+        "feature": "terminal_rate",
+        "predicted_direction": "positive",
+        "n": 69,
+        "rho": -0.23829662860505008,
+        "p_one_sided": 0.9756828412613148,
+        "pass": false,
+        "pl_basis": "sublimation termination_rate 2.5x distillation"
+      },
+      {
+        "id": "P2_ITER",
+        "feature": "iteration_rate",
+        "predicted_direction": "positive",
+        "n": 69,
+        "rho": 0.05109335516026523,
+        "p_one_sided": 0.33836398464524,
+        "pass": false,
+        "pl_basis": "sublimation chain_rate 2.4x distillation"
+      },
+      {
+        "id": "P3_HEAT_NEG",
+        "feature": "thermo_ke",
+        "predicted_direction": "negative",
+        "n": 69,
+        "rho": 0.22150725020629045,
+        "p_one_sided": 0.966312020206119,
+        "pass": false,
+        "pl_basis": "distillation heat_rate 1.17x sublimation"
+      },
+      {
+        "id": "P4_THERMAL_NEG",
+        "feature": "thermal_para_frac",
+        "predicted_direction": "negative",
+        "n": 41,
+        "rho": 0.026726386190234597,
+        "p_one_sided": 0.5658701925842435,
+        "pass": false,
+        "pl_basis": "distillation heat-dominant family"
+      }
+    ]
+  },
+  "N3_wrong_direction": {
+    "P3_HEAT_NEG": {
+      "wrong_direction_p": 0.9996713553708461,
+      "flagged": false
+    },
+    "P4_THERMAL_NEG": {
+      "wrong_direction_p": 0.9991143385553524,
+      "flagged": false
+    }
+  },
+  "N4_dissolution": {
+    "n_diverge": 2,
+    "details": {
+      "P1_TERM": {
+        "sublimation_value": 12.20238095238095,
+        "dissolution_value": 2.5946773636991027,
+        "distillation_value": 4.870885693254114,
+        "sublimation_direction": "positive",
+        "dissolution_direction": "negative",
+        "directions_match": false
+      },
+      "P2_ITER": {
+        "sublimation_value": 9.345238095238093,
+        "dissolution_value": 2.7802285275111362,
+        "distillation_value": 3.913142778274357,
+        "sublimation_direction": "positive",
+        "dissolution_direction": "negative",
+        "directions_match": false
+      },
+      "P3_HEAT_NEG": {
+        "sublimation_value": 11.36904761904762,
+        "dissolution_value": 7.086685958968569,
+        "distillation_value": 13.325048489522175,
+        "sublimation_direction": "negative",
+        "dissolution_direction": "negative",
+        "directions_match": true
+      },
+      "P4_THERMAL_NEG": {
+        "sublimation_value": 11.36904761904762,
+        "dissolution_value": 7.086685958968569,
+        "distillation_value": 13.325048489522175,
+        "sublimation_direction": "negative",
+        "dissolution_direction": "negative",
+        "directions_match": true
+      }
+    }
+  },
+  "sensitivity": {
+    "within_herbal": [
+      {
+        "id": "P1_TERM",
+        "feature": "terminal_rate",
+        "predicted_direction": "positive",
+        "n": 27,
+        "rho": -0.07724011691272968,
+        "p_one_sided": 0.6491152531451041,
+        "pass": false,
+        "pl_basis": "sublimation termination_rate 2.5x distillation"
+      },
+      {
+        "id": "P2_ITER",
+        "feature": "iteration_rate",
+        "predicted_direction": "positive",
+        "n": 27,
+        "rho": 0.033664762986298696,
+        "p_one_sided": 0.4338043059642663,
+        "pass": false,
+        "pl_basis": "sublimation chain_rate 2.4x distillation"
+      },
+      {
+        "id": "P3_HEAT_NEG",
+        "feature": "thermo_ke",
+        "predicted_direction": "negative",
+        "n": 27,
+        "rho": -0.5699305634393331,
+        "p_one_sided": 0.000956366146591805,
+        "pass": true,
+        "pl_basis": "distillation heat_rate 1.17x sublimation"
+      },
+      {
+        "id": "P4_THERMAL_NEG",
+        "n": 2,
+        "skip": true,
+        "reason": "insufficient data (n=2)"
+      }
+    ],
+    "raw_h_ratio": [
+      {
+        "id": "P1_TERM",
+        "feature": "terminal_rate",
+        "predicted_direction": "positive",
+        "n": 69,
+        "rho": 0.3769958713040965,
+        "p_one_sided": 0.000703889138579344,
+        "pass": true,
+        "pl_basis": "sublimation termination_rate 2.5x distillation"
+      },
+      {
+        "id": "P2_ITER",
+        "feature": "iteration_rate",
+        "predicted_direction": "positive",
+        "n": 69,
+        "rho": 0.13300342702135687,
+        "p_one_sided": 0.13797228282811366,
+        "pass": false,
+        "pl_basis": "sublimation chain_rate 2.4x distillation"
+      },
+      {
+        "id": "P3_HEAT_NEG",
+        "feature": "thermo_ke",
+        "predicted_direction": "negative",
+        "n": 69,
+        "rho": -0.5074090769842995,
+        "p_one_sided": 4.298625122123529e-06,
+        "pass": true,
+        "pl_basis": "distillation heat_rate 1.17x sublimation"
+      },
+      {
+        "id": "P4_THERMAL_NEG",
+        "feature": "thermal_para_frac",
+        "predicted_direction": "negative",
+        "n": 41,
+        "rho": -0.6120607055248776,
+        "p_one_sided": 1.0577878587220492e-05,
+        "pass": true,
+        "pl_basis": "distillation heat-dominant family"
+      }
+    ],
+    "section_regime_control": [
+      {
+        "id": "P1_TERM",
+        "feature": "terminal_rate",
+        "predicted_direction": "positive",
+        "n": 69,
+        "rho": 0.15214154576992162,
+        "p_one_sided": 0.10602019887604207,
+        "pass": false,
+        "pl_basis": "sublimation termination_rate 2.5x distillation"
+      },
+      {
+        "id": "P2_ITER",
+        "feature": "iteration_rate",
+        "predicted_direction": "positive",
+        "n": 69,
+        "rho": 0.11528757061803438,
+        "p_one_sided": 0.17276231319404073,
+        "pass": false,
+        "pl_basis": "sublimation chain_rate 2.4x distillation"
+      },
+      {
+        "id": "P3_HEAT_NEG",
+        "feature": "thermo_ke",
+        "predicted_direction": "negative",
+        "n": 69,
+        "rho": -0.3912941297594284,
+        "p_one_sided": 0.0004427631326516668,
+        "pass": true,
+        "pl_basis": "distillation heat_rate 1.17x sublimation"
+      },
+      {
+        "id": "P4_THERMAL_NEG",
+        "feature": "thermal_para_frac",
+        "predicted_direction": "negative",
+        "n": 41,
+        "rho": -0.4598173307250593,
+        "p_one_sided": 0.0012447607406650839,
+        "pass": true,
+        "pl_basis": "distillation heat-dominant family"
+      }
+    ]
+  },
+  "summary": {
+    "n_primary_pass": 2,
+    "n_perm_survivors": 2,
+    "n2_passes": true,
+    "tests": {
+      "P1_TERM": "FAIL",
+      "P2_ITER": "FAIL",
+      "P3_HEAT_NEG": "PASS",
+      "P4_THERMAL_NEG": "PASS"
+    }
+  }
+}
