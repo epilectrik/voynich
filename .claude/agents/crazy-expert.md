@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1754.
+the highest ID present is C1757.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2079,6 +2079,9 @@ C1751	PL fixation not valid A2/recirculation proxy: 6/82 assigned, 0 A2, safety 
 C1752	Thermal axis alignment confirmed: h_ratio_resid negatively correlates with thermo_ke (rho=-0.400, p=0.0003) and thermal paragraph fraction (rho=-0.473, p=0.0009). PL distillation heat-dominant (13.33 vs sublimation 11.37). Survives permutation, random axis, wrong-direction, within-Herbal (rho=-0.570, p=0.001), REGIME control. First clean historical family contrast recovered in V.	2	B, pseudo-Lull, thermal, monitoring, h_ratio, distillation, sublimation, C1750, C1735, C1744	P3_rho=-0.400. P3_p=0.0003. P4_rho=-0.473. P4_p=0.0009. herbal_rho=-0.570.
 C1753	Termination/iteration family contrasts directionally correct but sub-threshold: P1 terminal_rate rho=+0.158 (p=0.098), P2 iteration_rate rho=+0.169 (p=0.083). Raw h_ratio recovers P1 (rho=+0.377, p=0.0007) — section confound partially mediates. V closure/chaining line-local (C1471), limiting folio-level family contrast recovery.	2	B, pseudo-Lull, termination, iteration, C1471, C1746, C1398	P1_rho=0.158. P1_p=0.098. P2_rho=0.169. P2_p=0.083. P1_raw_rho=0.377.
 C1754	Family contrast is distillation-vs-rest, not sublimation-specific: N4 dissolution matches P3/P4 thermal predictions (both less thermal than distillation). Dissolution heat=7.09 < distillation=13.33, same direction as sublimation=11.37. P1/P2 diverge. Recovered signal = distillation thermal baseline vs monitoring-rich non-distillation basin.	2	B, pseudo-Lull, dissolution, distillation, sublimation, thermal, families, C1750, C1752	N4_thermal_match=true. dissolution_heat=7.09. distillation_heat=13.33.
+C1755	Paragraph distributional shape tracks monitoring axis: shape_margin (EMD_distill - EMD_basin) vs h_resid rho=+0.525 (p=0.0002, n=41), surviving permutation (N1 frac=0.000) and within-Stars (rho=+0.739, p<0.0001, n=23). Extends C1573 to PL-derived zone profiles. S3 shape_margin vs OP+MON frac rho=+0.770.	2	B, pseudo-Lull, paragraph, distributional, shape, monitoring, C1573, C1752, C1398	P1_rho=0.525. P1_p=0.0002. Stars_rho=0.739. N1_frac=0.000. S3_rho=0.770.
+C1756	Current 4D PL zone profiles lack specificity for paragraph shape: N2 Dirichlet frac=0.062, N3 theoretical_neg rho=0.552 (vs operational 0.525). 4D zone representation too low-dimensional to distinguish PL families from generic asymmetric shapes. N3 dirty but not clean null (PL Theorica shares operational vocab per C1748). Rejects profile-construction method, not PL midprocess alignment.	2	B, pseudo-Lull, paragraph, profile, specificity, C1748, C1749, C1754	N2_frac=0.062. N3_rho=0.552. P2_rho=-0.031. verdict=WEAK_SIGNAL.
+C1757	Within-Stars paragraph shape discrimination confirmed: shape_margin vs h_resid within Stars rho=+0.739 (p<0.0001, n=23). Paragraph distributional shape carries folio-specific information beyond section membership (C1573). Stars = cleanest calibration surface: C1735, C1740, C1750, C1757.	2	B, Stars, paragraph, distributional, within-section, C1573, C1735, C1740, C1750	Stars_rho=0.739. Stars_p<0.0001. Stars_n=23.
 
 ---
 

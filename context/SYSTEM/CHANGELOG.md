@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.78 (2026-03-18) - Phase 606: Paragraph Distributional Contrast Alignment
+
+### Summary
+
+Phase 606 tests whether pseudo-Lull procedure-family contrasts predict Voynich folio paragraph-mixture shape, using EMD-based shape margin as the primary tested object. Follows Phase 605's partial thermal axis recovery (C1752) by moving to the resolution where C1573 says distributional shape carries folio-specific information. Recomputes PL zone profiles directly from Phase 602 E1_chapters (not inherited from Phase 604). Shape margin = EMD_to_distillation - EMD_to_basin per folio. Verdict: **WEAK_SIGNAL** (K=2, K_perm=1, N3 dirty). P1 shape_margin vs h_resid rho=+0.525 (p=0.0002) and P3 within-Stars rho=+0.739 (p<0.0001) pass, but P1 fails N2 Dirichlet control (frac=0.062) and N3 theoretical_neg predicts comparably (rho=0.552). Paragraph distributional shape is real and strong on the V side; PL family profiles are not specifically informative at 4D zone resolution. Profile construction granularity, not the PL→V connection itself, is the bottleneck.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_DISTRIBUTIONAL_CONTRAST_ALIGNMENT/` -- Phase 606 with script, PREDICTIONS.md (SHA-256 frozen), results, INDEX.md |
+| **ADDED** | C1755: Paragraph distributional shape tracks monitoring axis -- shape_margin vs h_resid rho=+0.525 (p=0.0002), N1 survives (frac=0.000), within-Stars rho=+0.739 |
+| **ADDED** | C1756: Current 4D PL zone profiles lack specificity -- N2 Dirichlet frac=0.062, N3 theoretical_neg rho=0.552. Rejects profile-construction method, not broader PL alignment |
+| **ADDED** | C1757: Within-Stars paragraph shape discrimination confirmed -- rho=+0.739 (p<0.0001, n=23), extends C1573 within-section recovery |
+| **UPDATED** | INDEX.md -- +3 constraints (1756 total), Phase 606 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.78, 1756 constraints, 606 phases) |
+
+### Key Findings
+
+- **Paragraph distributional shape is real and robust (C1755):** shape_margin vs h_resid rho=+0.525, surviving permutation (N1 frac=0.000), within-Stars (rho=+0.739), and section+REGIME control (rho=+0.488). V folios have characteristic paragraph-zone mixtures that carry monitoring-axis information. This extends C1573 to PL-derived zone profiles.
+- **PL family profiles lack specificity at this resolution (C1756):** N2 random Dirichlet profiles match ~6% of the time. N3 theoretical_neg predicts h_resid comparably (rho=0.552 vs 0.525). However, N3 is not a clean null — PL Theorica shares operational vocabulary (C1748). The 4D paragraph-zone representation is too low-dimensional to distinguish PL family profiles from generic asymmetric shapes. Profile construction needs finer-grained typed features.
+- **Stars continues as cleanest calibration surface (C1757):** Within-Stars shape_margin vs h_resid rho=+0.739 (n=23). Joins coherent chain: C1735 (Brunschwig thermal), C1740 (safety substitution), C1750 (monitoring contrast), C1757 (paragraph shape).
+- **P2 failure is informative:** shape_margin does NOT predict thermo_ke independently (rho=-0.031). Shape lives in monitoring-emphasis geometry, not thermal intensity repackaging.
+- **Three-phase trajectory completes:** Phase 604 (assignment → SPECIFICITY_FAILURE), 605 (contrast on means → PARTIAL), 606 (distributional shape → WEAK_SIGNAL). Consistent pattern: V paragraph structure is information-rich, but PL characterization needs finer-grained features for unique discrimination.
+- **Expert synthesis:** This is a weak negative on specificity, not a failure of pseudo-Lull. The midprocess alignment (C1744-C1748) and thermal axis (C1752) are not overturned. Further family-bridge work requires enhanced PL coding or should stop at the narrower established win.
+
+---
+
 ## Version 5.77 (2026-03-18) - Phase 605: Procedure-Family Contrast Alignment
 
 ### Summary

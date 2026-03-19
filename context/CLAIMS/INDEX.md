@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1753 validated constraints | **Version:** 5.77 | **Date:** 2026-03-18
+**Total:** 1756 validated constraints | **Version:** 5.78 | **Date:** 2026-03-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 606: Paragraph Distributional Contrast Alignment — WEAK_SIGNAL (C1755-C1757)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1755 | Paragraph distributional shape tracks monitoring axis: shape_margin (EMD_to_distillation - EMD_to_basin) vs h_resid Spearman rho=+0.525 (p=0.0002, n=41), surviving cross-folio permutation (N1 frac=0.000) and within-Stars replication (rho=+0.739, p<0.0001, n=23). Extends C1573 (distributional shape carries folio-specific information) to PL-derived zone profiles. Secondary S2 (h_resid vs MONITORING_frac rho=+0.401, p=0.005) and S3 (shape_margin vs OP+MON frac rho=+0.770, p<1e-9) confirm paragraph-zone distributions carry monitoring-axis information within and across sections | 2 | B, pseudo-Lull, paragraph, distributional, shape, monitoring, C1573, C1752, C1398 | P1_rho=0.525. P1_p=0.0002. P3_Stars_rho=0.739. P3_Stars_p<0.0001. N1_frac=0.000. S2_rho=0.401. S3_rho=0.770. n=41. |
+| 1756 | Current 4D PL zone profiles lack specificity for paragraph shape: N2 random Dirichlet profiles achieve comparable shape margins (frac_exceeding=0.062), N3 theoretical_neg profile predicts h_resid comparably (rho=0.552 vs 0.525). The 4D paragraph-zone representation cannot distinguish PL family profiles from generic asymmetric shapes or from PL theoretical chapters (which share operational vocabulary per C1748). Rejects this profile-construction method, not the broader PL midprocess alignment (C1744-C1748). Profile construction needs finer-grained typed features (monitoring subtypes, correction classes, action outcomes) for specificity | 2 | B, pseudo-Lull, paragraph, profile, specificity, N2, N3, C1748, C1749, C1754 | N2_frac=0.062. N3_rho=0.552. N3_p=0.0002. P2_rho=-0.031. P2_p=0.424. verdict=WEAK_SIGNAL. |
+| 1757 | Within-Stars paragraph shape discrimination confirmed: shape_margin vs h_resid within Stars Spearman rho=+0.739 (p<0.0001, n=23). Paragraph distributional shape carries folio-specific information beyond section membership, consistent with C1573 within-section recovery (energy distance z=6.21). Stars remains the cleanest historical calibration surface (C1735, C1740, C1750, now C1757) | 2 | B, Stars, paragraph, distributional, within-section, C1573, C1735, C1740, C1750 | Stars_rho=0.739. Stars_p<0.0001. Stars_n=23. |
+
+**Phase 606 findings (Paragraph Distributional Contrast Alignment, WEAK_SIGNAL):**
+- Pre-registered verdict WEAK_SIGNAL (K=2, K_perm=1, N3 dirty). Two of three primary predictions pass (P1 shape_margin vs h_resid, P3 within-Stars) but P1 fails N2 Dirichlet control (frac=0.062) and N3 theoretical_neg is dirty (rho=0.552).
+- Paragraph distributional shape is real and strong on the Voynich side (C1755): shape_margin vs h_resid rho=+0.525, surviving permutation (N1 frac=0.000), section+REGIME control (rho=+0.488), and within-Stars replication (rho=+0.739). This extends C1573 paragraph-level distributional shape recovery to PL-derived zone reference profiles.
+- PL family profiles are not specifically informative at 4D zone resolution (C1756): N2 random Dirichlet profiles can match the shape margin ~6% of the time. N3 theoretical_neg predicts comparably. However, N3 is not a clean null — PL Theorica shares operational vocabulary (C1748), so N3 dirty may reflect shared symbolic space rather than proving "any profile works." The problem is profile construction granularity, not the PL→V connection itself.
+- Within-Stars shape discrimination is especially strong (C1757): rho=+0.739 within the 23 Stars folios. Stars continues to be the cleanest calibration surface for historical alignment, now with a coherent chain: Brunschwig thermal (C1735), safety substitution (C1740), monitoring contrast (C1750), and paragraph-mixture shape (C1757).
+- P2 failure is informative: shape_margin does NOT predict thermo_ke independently (rho=-0.031). Shape lives in monitoring-emphasis geometry, not as thermal intensity repackaging. Consistent with C1752 but clarifies the channel.
+- Three-phase trajectory: Phase 604 (family assignment → SPECIFICITY_FAILURE), Phase 605 (family contrast on means → PARTIAL, thermal axis only), Phase 606 (family distributional shape → WEAK_SIGNAL, V signal real but PL profiles too generic). The consistent bottleneck: V paragraph structure is information-rich, but PL characterization needs finer-grained typed features for unique discrimination.
+- Expert synthesis: this is a specificity failure at the profile-construction level, not a failure of the pseudo-Lull connection. The midprocess alignment (C1744-C1748) and thermal axis (C1752) remain intact. Further family-bridge work requires enhanced PL coding (monitoring subtypes, correction types, action outcomes) or should stop at the narrower established win.
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1753 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1756 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1754.
+the highest ID present is C1757.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1753 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1756 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1753 validated constraints are present as canonical one-line claims with tier
+1756 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-18 23:11
-**Version:** FROZEN STATE (1753 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-19 00:16
+**Version:** FROZEN STATE (1756 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1993,6 +1993,9 @@ C1751	Pseudo-Lull fixation is not a valid A2/recirculation proxy under folio-mea
 C1752	Thermal axis alignment confirmed: h_ratio_resid (residualized on section + k_ratio) negatively correlates with thermo_ke and thermal paragraph fraction. Pseudo-Lull distillation is heat-dominant (heat_rate 13.33 vs sublimation 11.37); V folios with higher monitoring residual have lower thermal burden. Survives N1 permutation (frac_exceeding=0.002), N2 random axis (0/4 pass), N3 wrong-direction (p>0.99), within-Herbal replication, and section+REGIME control. First clean historical family contrast recovered inside Voynich	2	B, pseudo-Lull, thermal, monitoring, h_ratio, distillation, sublimation, C1750, C1735, C1744
 C1753	Termination/iteration family contrasts directionally correct but sub-threshold after residualization: P1 terminal_rate rho=+0.158, P2 iteration_rate rho=+0.169. PL sublimation has 2.5x termination and 2.4x chain_rate vs distillation. Both predictions in correct direction but fail p<0.05. Raw h_ratio recovers P1 — section confound partially mediates. V closure and chaining may be too line-local (C1471) for folio-level family contrast recovery	2	B, pseudo-Lull, termination, iteration, monitoring, C1471, C1746, C1398
 C1754	Family contrast is distillation-vs-rest, not sublimation-specific: N4 dissolution contrast shows P3/P4 thermal predictions match dissolution (dissolution heat_rate 7.09 < distillation 13.33, same direction as sublimation 11.37). Both sublimation and dissolution are "less thermal than distillation." P1/P2 directions diverge (dissolution termination 2.59 < distillation 4.87, opposite to sublimation 12.20 > distillation). Recovered signal is a distillation-centered thermal family vs monitoring-rich non-distillation basin, not unique sublimation identification	2	B, pseudo-Lull, dissolution, distillation, sublimation, thermal, families, C1750, C1752
+C1755	Paragraph distributional shape tracks monitoring axis: shape_margin (EMD_to_distillation - EMD_to_basin) vs h_resid Spearman rho=+0.525, surviving cross-folio permutation (N1 frac=0.000) and within-Stars replication. Extends C1573 (distributional shape carries folio-specific information) to PL-derived zone profiles. Secondary S2 and S3 confirm paragraph-zone distributions carry monitoring-axis information within and across sections	2	B, pseudo-Lull, paragraph, distributional, shape, monitoring, C1573, C1752, C1398
+C1756	Current 4D PL zone profiles lack specificity for paragraph shape: N2 random Dirichlet profiles achieve comparable shape margins (frac_exceeding=0.062), N3 theoretical_neg profile predicts h_resid comparably. The 4D paragraph-zone representation cannot distinguish PL family profiles from generic asymmetric shapes or from PL theoretical chapters (which share operational vocabulary per C1748). Rejects this profile-construction method, not the broader PL midprocess alignment (C1744-C1748). Profile construction needs finer-grained typed features (monitoring subtypes, correction classes, action outcomes) for specificity	2	B, pseudo-Lull, paragraph, profile, specificity, N2, N3, C1748, C1749, C1754
+C1757	Within-Stars paragraph shape discrimination confirmed: shape_margin vs h_resid within Stars Spearman rho=+0.739. Paragraph distributional shape carries folio-specific information beyond section membership, consistent with C1573 within-section recovery. Stars remains the cleanest historical calibration surface (C1735, C1740, C1750, now C1757)	2	B, Stars, paragraph, distributional, within-section, C1573, C1735, C1740, C1750
 
 ---
 
@@ -2000,7 +2003,7 @@ C1754	Family contrast is distillation-vs-rest, not sublimation-specific: N4 diss
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-18
+# Generated: 2026-03-19
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
