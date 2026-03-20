@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1777.
+the highest ID present is C1781.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2102,6 +2102,10 @@ C1774	k-gallows complementary e-bias: k-gallows paragraphs enrich e-atoms (O/E=1
 C1775	Gallows ambient-context deployment: gallows selection correlates with ambient thermal/monitoring context (thermal KW p=0.0004, monitoring p=0.0019) but not event triggers (alarms p=0.14-0.26, deltas p=0.37-0.78, suffix routing p=0.252). Deployment is context-conditioned not event-dispatched.	2	B_paragraph, deployment, context, thermal	thermal_p=0.0004. monitoring_p=0.0019. alarms_null=true. deltas_null=true.
 C1776	Gallows-archetype non-reducibility: aggregate gallows-archetype association (p=0.0009, V=0.130) is section-mediated. Within-section: Stars p=0.227, Bio p=0.683, Cosmo p=0.959. Gallows and archetypes are distinct structural layers.	2	B_paragraph, gallows, archetype, section	agg_p=0.0009. Stars_p=0.227. Bio_p=0.683. Cosmo_p=0.959.
 C1777	Gallows atom-substrate asymmetry: body inheritance from shared atom substrate is partial and asymmetric. Direct in p (O/E=1.417), complementary in k (e O/E=1.171), null in t (O/E=1.085) and f (O/E=1.308). Four gallows types have qualitatively different body ecology relationships.	2	B_paragraph, gallows, atom_substrate	p_OE=1.417. k_e_OE=1.171. t_OE=1.085. f_OE=1.308.
+C1778	Gallows variance absorption: gallows type does not contribute unique variance to paragraph body atom ecology after sequential control for section, folio, block position, archetype, and ambient context. Forward SS: gallows|context=6.72% but perm null mean=7.16%, z=-0.61, p_perm=0.73. Mediation delta R²=0.006. Gallows are compressed context labels.	2	B_paragraph, gallows, disentanglement, variance	gallows_SS=6.72pct. perm_mean=7.16pct. z=-0.61. p=0.73. dR2=0.006.
+C1779	Gallows header-body signal attenuation: gallows-body atom association attenuates across paragraph zones. Z1 (gallows token) V=0.238, Z2 (first-line residual) V=0.059, Z3 (body lines 2+) V=0.046. Ratio Z3/Z1=0.191. ~81% confined to header zone.	2	B_paragraph, gallows, header, body, attenuation	V_Z1=0.238. V_Z2=0.059. V_Z3=0.046. ratio=0.191.
+C1780	Gallows irreducible four-type architecture: opener/mode split (k/f vs p/t) captures positional axis (opener pos=0.355, mode=0.527, p=0.0003) but only 35.5% of body variance. Within-family contrasts carry 64.5%: k vs f V=0.102, p vs t V=0.041. System is irreducibly 4-way.	2	B_paragraph, gallows, architecture, opener_mode	M3_R2=0.00292. M1_R2=0.00823. M3_pct=35.5. kf_V=0.102. pt_V=0.041.
+C1781	Gallows section-conditional posture: p-gallows body O/E vectors vary across sections in direction not just amplitude. Cosines to global: Bio=0.455, Cosmo=0.809, Herbal=0.817, Stars=0.746. Cross-section cosines as low as 0.233 (Bio-Herbal). Posture system is section-conditional.	2	B_paragraph, gallows, section, stability, posture	cos_Bio=0.455. cos_Herbal=0.817. cos_Stars=0.746. min_cross=0.233.
 
 ---
 

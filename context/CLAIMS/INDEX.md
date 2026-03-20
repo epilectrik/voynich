@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1776 validated constraints | **Version:** 5.83 | **Date:** 2026-03-19
+**Total:** 1780 validated constraints | **Version:** 5.84 | **Date:** 2026-03-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 612: Gallows Deployment Disentanglement — VARIANCE_ABSORBED (C1778-C1781)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1778 | Gallows variance absorption: gallows type does not contribute unique variance to paragraph body atom ecology after sequential control for section, folio, block position, paragraph archetype, and ambient context. Forward SS: gallows\|context=6.72% of total but permutation null (200 shuffles within section) gives mean=7.16%, z=-0.61, p_perm=0.73. Mediation delta R²=0.006. Within-archetype effects (3/4 significant under simple thermal control) are absorbed by full hierarchy. Gallows function as explicit paragraph-header labels of deployment context, not independent body-ecology channels | 2 | B_paragraph, gallows, disentanglement, variance | gallows_net_SS=6.72pct. perm_null_mean=7.16pct. z=-0.61. p_perm=0.73. mediation_dR2=0.006. n=572. |
+| 1779 | Gallows header-body signal attenuation: gallows-body atom association attenuates across paragraph zones. Z1 (gallows token) V=0.238, Z2 (first-line residual) V=0.059 (confounded with C1426/C1729 first-line effects), Z3 (body lines 2+) V=0.046. Attenuation ratio Z3/Z1=0.191. All zones p<10⁻⁶. ~81% of compositional effect confined to header zone. Body signal is residual echo of header declaration | 2 | B_paragraph, gallows, header, body, attenuation | V_Z1=0.238. V_Z2=0.059. V_Z3=0.046. ratio=0.191. n_Z3=34843. |
+| 1780 | Gallows irreducible four-type architecture: opener/mode split (k/f vs p/t) captures genuine positional axis (opener mean pos=0.355, mode=0.527, MW p=0.0003) but only 35.5% of body-ecology variance (R²=0.00292 of 0.00823). Within-family contrasts carry 64.5%: k vs f V=0.102 (n=55, low power), p vs t V=0.041 (n=517). System requires all 4 types | 2 | B_paragraph, gallows, architecture, opener_mode | M3_R2=0.00292. M1_R2=0.00823. M3_pct=35.5. kf_V=0.102. pt_V=0.041. position_p=0.0003. |
+| 1781 | Gallows section-conditional posture: p-gallows body O/E vectors vary across sections in direction not just amplitude. Section-to-global cosines: Bio=0.455, Cosmo=0.809, Herbal=0.817, Stars=0.746. Cross-section cosines as low as 0.233 (Bio-Herbal). Bootstrap 90% CIs all have lower bounds below 0.30. Section alters direction of gallows-body relationship in atom space | 2 | B_paragraph, gallows, section, stability, posture | cos_Bio=0.455. cos_Cosmo=0.809. cos_Herbal=0.817. cos_Stars=0.746. min_cross=0.233. bootstrap_n=200. |
+
+**Phase 612 findings (Gallows Deployment Disentanglement, VARIANCE_ABSORBED):**
+- Variance absorption (C1778): The headline closure finding. All gallows body-ecology effects are absorbed by the control hierarchy (section → folio → position → archetype → ambient context). The 6.7% apparent gallows SS share falls within permutation null (mean=7.2%, z=-0.61, p=0.73). Mediation delta R²=0.006 (negligible). Gallows do not contribute unique body-ecology information beyond the modeled contextual hierarchy.
+- Header-body attenuation (C1779): Gallows-body association exists (V_Z3=0.046, p<10⁻⁶) but 81% is confined to the header zone (V_Z1=0.238). Gallows are primarily header-specification markers. The body echo is real but mediated by the same upstream context that selects both gallows type and body composition.
+- Irreducible 4-type architecture (C1780): The opener/mode binary (k/f early, p/t late) captures only 35.5% of 4-way body variance. Within-family contrasts (k vs f, p vs t) carry the remaining 64.5%. The system cannot be collapsed. Positional axis (opener/mode) and compositional axis (within-family) are partially independent.
+- Section-conditional posture (C1781): Bio shows cos=0.455 to global and cos=0.233 to Herbal — qualitative direction changes, not amplitude scaling. Stars-Bio alignment (0.895) contrasts with Herbal-Stars (0.436). The posture system is section-conditional and non-universal; wide bootstrap CIs warrant caution about section-specific geometry.
+- **Tier 3 synthesis (closure):** Gallows are explicit paragraph-header labels of deployment context. Their strong header-local signal and weak body echo show that they primarily mark contextual paragraph posture at entry. They do not add independent body-ecology variance beyond section, folio, block position, paragraph archetype, and ambient context. Both gallows type and body composition are determined by the shared upstream context — gallows declare the label, the body implements the content, neither controls the other. The Phase 611 body-ecology correlations (C1772-C1777) are real patterns but mediated echoes, not independently generated by gallows labels: p labels contexts whose bodies are already p-like, k labels contexts whose handling is e-biased. Gallows are explanatorily redundant with the contextual state but operationally real — the manuscript's actual encoding interface for paragraph posture at entry. The labeling system is irreducibly four-way and section-conditional.
 
 ---
 

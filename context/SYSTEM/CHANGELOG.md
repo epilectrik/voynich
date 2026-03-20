@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.84 (2026-03-19) - Phase 612: Gallows Deployment Disentanglement
+
+### Summary
+
+Phase 612 is the closure phase for the gallows layer. Phase 611 established gallows are real and context-sensitive (C1772-C1777); Phase 612 asks whether gallows carry unique deployment-posture information beyond block position, paragraph archetype, and ambient context. Verdict: **VARIANCE_ABSORBED**. Gallows incremental variance after full controls (section → folio → position → archetype → context) is null (z=-0.61, p_perm=0.73). Gallows are compressed context labels, not independent information channels. Body signal attenuates from header (V=0.238) to body (V=0.046), ratio 0.19. The four-type architecture is irreducibly 4-way (opener/mode captures only 35.5%). Posture directions are section-conditional (cross-section cosines as low as 0.233).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GALLOWS_DEPLOYMENT_DISENTANGLEMENT/` -- Phase 612 with consolidated script, JSON results, INDEX.md |
+| **ADDED** | C1778: Gallows variance absorption (gallows|context SS=6.7%, perm null mean=7.2%, z=-0.61, p=0.73) |
+| **ADDED** | C1779: Gallows header-body signal attenuation (V_Z1=0.238, V_Z3=0.046, ratio=0.191) |
+| **ADDED** | C1780: Gallows irreducible four-type architecture (opener/mode captures 35.5% of 4-way) |
+| **ADDED** | C1781: Gallows section-conditional posture (Bio cos=0.455, cross-section min=0.233) |
+| **UPDATED** | INDEX.md -- +4 constraints (1780 total), Phase 612 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.84, 1780 constraints, 612 phases) |
+
+### Key Findings
+
+- **Variance absorption (C1778):** The headline finding. All gallows body-ecology effects are fully absorbed by the control hierarchy. Permutation null: z=-0.61, p=0.73. Mediation delta R²=0.006. Within-archetype effects that appear significant under simple controls (3/4 archetypes) are absorbed by section/folio structure. Gallows are compressed context labels, not independent deployment channels.
+- **Header-body attenuation (C1779):** ~81% of gallows compositional effect is confined to the header zone. Body echo is real (V=0.046, p<10⁻⁶) but attenuated. Consistent with gallows-as-label interpretation.
+- **Irreducible 4-way (C1780):** The opener/mode split (k/f early, p/t late; positional MW p=0.0003) captures only 35.5% of body variance. Within-family contrasts (k vs f, p vs t) carry 64.5%. The system has at least 2 partially independent axes.
+- **Section-conditional (C1781):** Posture directions change across sections (Bio diverges strongly: cos=0.455 to global, cos=0.233 to Herbal). The gallows vocabulary means different things in different sections.
+- **Closure interpretation (Tier 3):** Gallows are explicit paragraph-header labels of deployment context — explanatorily redundant with the contextual state but operationally real as the manuscript's actual encoding interface for paragraph posture at entry. Both gallows type and body composition are determined by shared upstream context. Phase 611 body-ecology correlations are real but mediated echoes. The labeling system is irreducibly four-way and section-conditional.
+
+---
+
 ## Version 5.83 (2026-03-19) - Phase 611: Gallows Deployment Characterization
 
 ### Summary
