@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1784 validated constraints | **Version:** 5.85 | **Date:** 2026-03-20
+**Total:** 1790 validated constraints | **Version:** 5.86 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,27 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 614: Paragraph Header Specification Grammar — HEADER_SPECIFICATION_CONFIRMED (C1786-C1791)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1786 | Header atom echo into body: atom-level (z=6.18, p<0.0001) not token-level (z=0.90, p=0.18). Atoms o (+0.031, p=0.0004), d (+0.034, p<0.0001), k (+0.034, p=0.014) enriched in body when present in boundary token MIDDLE (gallows-controlled). C670 whole-token null preserved at atom resolution | 2 | B, paragraph, header, body, atom, echo, C670, C1772 | atom_z=6.18. token_z=0.90. o_diff=+0.031. d_diff=+0.034. k_diff=+0.034. n=490. |
+| 1787 | Header internal positional structure: pos2 body-prediction r=0.238 (t=5.35) declining monotonically to pos7 r=0.089 (t=2.12). Position-2 dominated by sh-prefix (22.2%), qo-prefix (15.5%). Header is not flat -- early positions carry strongest specification signal | 2 | B, paragraph, header, position, decay, gradient, specification | pos2_r=0.238. pos3_r=0.194. pos7_r=0.089. sh_pct=22.2. |
+| 1788 | Header specification register: p-atom 7.8x enriched, f-atom 7.7x, h-atom 1.9x, c-atom 1.5x vs body; e-atom 0.75x and k-atom 0.72x depleted. Header atoms are executive/modifier-class (C1541 instruction tier), not thermal-work atoms. Fixed width ~10 tokens (mean=10.3, sd=2.8) | 2 | B, paragraph, header, specification, atom, enrichment, C1541, C1287 | p_ratio=7.82. f_ratio=7.71. h_ratio=1.94. c_ratio=1.53. e_ratio=0.75. k_ratio=0.72. mean_len=10.3. |
+| 1789 | 86.0% of boundary token types exclusive to boundaries; body has 49.5% gallows-containing tokens but completely different vocabulary. Header non-BT tokens: 54.2% types exclusive. Header and body draw from overlapping atom pool but non-overlapping token inventory | 2 | B, paragraph, header, body, vocabulary, exclusivity, boundary | bt_exclusive=86.0pct. hdr_exclusive=54.2pct. body_gallows=49.5pct. bt_types=335. |
+| 1790 | Zero duplicate lines (0/2420), zero duplicate paragraphs (0/591), zero near-duplicates (Jaccard>=0.8). Only 10 trigrams in 3+ folios, zero 4-grams in 3+ folios. Each paragraph is a unique specification, not a template instantiation | 2 | B, paragraph, uniqueness, duplicate, specification, C531 | dup_lines=0. dup_paras=0. near_dup=0. trigrams_3plus=10. |
+| 1791 | Header atom echo universal across sections (Stars r=0.123, Bio r=0.049, Herbal r=0.050, all p<0.01) and independent of boundary token (BT-residualized R2=0.15, n=75). Incremental prediction beyond gallows+section+folio small but significant (dR2=+0.020, z=1.98, p=0.045). Gallows atom is PRIMARY specification; remaining header tokens provide modest refinement | 2 | B, paragraph, header, body, section, universal, gallows, residual, C1772, C1777 | Stars_r=0.123. Bio_r=0.049. Herbal_r=0.050. bt_resid_R2=0.15. inc_dR2=0.020. inc_z=1.98. inc_p=0.045. |
+
+**Phase 614 findings (Paragraph Header Specification Grammar, HEADER_SPECIFICATION_CONFIRMED):**
+- Atom echo not token echo (C1786): Header-to-body coupling operates at atom resolution (z=6.18), not whole-token (z=0.90). This resolves the apparent contradiction between C670 (zero adjacent-line token coupling) and C1772 (gallows predict body composition). Specification echoes through compositional atoms, not lexical identity. The boundary token's MIDDLE atoms predict body enrichment of those same atoms.
+- Internal positional grammar (C1787): Header positions 2-10 have monotonically decaying prediction power. Position 2 (first token after boundary token) is strongest and dominated by sh-prefix tokens (passive monitoring specification per C929). The header is structured, not flat.
+- Specification register (C1788): Headers concentrate instruction-tier atoms (p 7.8x, f 7.7x enriched) while depleting thermal-work atoms (e 0.75x, k 0.72x). This maps directly to C1541's instruction-only tier and C1287's MARKING enrichment. The header is a specification layer written in executive atom vocabulary.
+- Vocabulary exclusivity (C1789): 86% of boundary token types never appear in body text, and 54% of header non-BT types are exclusive. The two registers share the same atom pool but assemble it into non-overlapping token inventories.
+- Complete uniqueness (C1790): Every line and paragraph is unique. No near-duplicates exist. The grammar generates unique sequences from shared atoms. Even trigram reuse across folios is negligible.
+- Universal grammar (C1791): The atom echo operates identically across sections and survives boundary-token residualization. The header carries genuine specification beyond the gallows character, but the increment is small (dR2=0.020). The gallows atom is the primary specification channel.
 
 ---
 

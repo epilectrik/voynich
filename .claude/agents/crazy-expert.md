@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1785.
+the highest ID present is C1791.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2110,6 +2110,12 @@ C1782	First-body-line length declines across paragraph ordinals: folio-residuali
 C1783	Paragraph structural ordering real via line length gradient: shuffle z=-4.78, p<0.000001. 76.1% of folios show negative gradient. Refines C1399: compositional ordering null, structural ordering real. TTR flat. Abbreviation not simplification.	2	B, paragraph, ordering, line, length, shuffle, C1399	shuffle_z=-4.78. pct_negative=76.1. first_body_z=-3.67.
 C1784	Gallows transition matrix non-random with type-specific sequential signatures: chi2=53.69, p<0.0001, V=0.209. k=one-shot (0% self, pos=0.334), t=independent blocks (46.9% self), p=backbone (56.2% self). k/f openers, p/t body types.	2	B, paragraph, gallows, transition, sequential, C1780	chi2=53.69. k_self=0pct. t_self=46.9pct. p_self=56.2pct. k_pos=0.334.
 C1785	No thermal state carryover after folio residualization: raw p-chain thermal r=+0.285 collapses to r=+0.013 (p=0.89). All-chain residualized thermal r=-0.093. Null or negative. Each paragraph thermally independent.	2	B, paragraph, thermal, carryover, independence, C1399, C1400	p_raw=+0.285. p_resid=+0.013. p_resid_p=0.886. all_resid=-0.093.
+C1786	Header atom echo into body: atom-level (z=6.18 p<0.0001) not token-level (z=0.90 p=0.18). o (+0.031 p=0.0004), d (+0.034 p<0.0001), k (+0.034 p=0.014) gallows-controlled. C670 whole-token null preserved at atom resolution.	2	B, paragraph, header, body, atom, echo, C670, C1772	atom_z=6.18. token_z=0.90. o_diff=+0.031. d_diff=+0.034. n=490.
+C1787	Header internal positional structure: pos2 prediction power r=0.238 (t=5.35) declining monotonically to pos7 r=0.089 (t=2.12). Position-2 dominated by sh-prefix (22.2%). Header not flat -- early positions carry strongest specification signal.	2	B, paragraph, header, position, decay, gradient, specification	pos2_r=0.238. pos3_r=0.194. pos7_r=0.089. sh_pct=22.2.
+C1788	Header specification register: p-atom 7.8x enriched, f-atom 7.7x, h-atom 1.9x, c-atom 1.5x vs body; e-atom 0.75x and k-atom 0.72x depleted. Executive/modifier atoms, not thermal-work. Fixed width ~10 tokens.	2	B, paragraph, header, specification, atom, enrichment, C1541, C1287	p_ratio=7.82. f_ratio=7.71. h_ratio=1.94. c_ratio=1.53.
+C1789	86.0% of boundary token types exclusive to boundaries; body has 49.5% gallows-containing tokens but different vocabulary. Header non-BT: 54.2% exclusive. Same atom pool, non-overlapping token inventory.	2	B, paragraph, header, body, vocabulary, exclusivity, boundary	bt_exclusive=86.0pct. hdr_exclusive=54.2pct. body_gallows=49.5pct.
+C1790	Zero duplicate lines (0/2420), zero duplicate paragraphs (0/591), zero near-duplicates (Jaccard>=0.8). Only 10 trigrams in 3+ folios, zero 4-grams. Each paragraph unique specification.	2	B, paragraph, uniqueness, duplicate, specification, C531	dup_lines=0. dup_paras=0. near_dup=0.
+C1791	Header atom echo universal across sections (Stars r=0.123, Bio r=0.049, Herbal r=0.050, all p<0.01) and independent of BT (resid R2=0.15). Incremental beyond gallows+section+folio: dR2=+0.020, z=1.98, p=0.045. Gallows PRIMARY, header tokens modest refinement.	2	B, paragraph, header, body, section, universal, C1772, C1777	Stars_r=0.123. Bio_r=0.049. inc_dR2=0.020. inc_z=1.98.
 
 ---
 

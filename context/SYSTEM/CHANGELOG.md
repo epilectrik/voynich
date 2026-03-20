@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.86 (2026-03-20) - Phase 614: Paragraph Header Specification Grammar
+
+### Summary
+
+Phase 614 establishes that paragraph headers function as a structured specification register with internal positional grammar. Header-to-body coupling operates at atom resolution (z=6.18, p<0.0001) not whole-token resolution (z=0.90, p=0.18), resolving the apparent contradiction between C670 (zero token coupling) and C1772 (gallows predict body). Headers concentrate instruction-tier atoms (p 7.8x, f 7.7x enriched) while depleting thermal-work atoms (e 0.75x, k 0.72x). Header positions 2-10 show monotonically decaying body-prediction power (pos2 r=0.238 to pos7 r=0.089). 86% of boundary token types are exclusive to boundaries. Every line and paragraph is unique (zero duplicates at all levels). The header's incremental prediction beyond gallows+section is small but significant (dR2=0.020, z=1.98, p=0.045). Verdict: **HEADER_SPECIFICATION_CONFIRMED**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_HEADER_SPECIFICATION_GRAMMAR/` -- Phase 614 with consolidated script, JSON results, INDEX.md |
+| **ADDED** | C1786: Header atom echo into body (z=6.18) not token echo (z=0.90) |
+| **ADDED** | C1787: Header internal positional structure (pos2 r=0.238 decaying monotonically) |
+| **ADDED** | C1788: Header specification register (p 7.8x, f 7.7x enriched; e/k depleted) |
+| **ADDED** | C1789: 86.0% boundary token types exclusive to boundaries |
+| **ADDED** | C1790: Zero duplicates at all levels (lines, paragraphs, near-dupes) |
+| **ADDED** | C1791: Universal atom echo, small increment beyond gallows+section (dR2=0.020) |
+| **UPDATED** | INDEX.md -- +6 constraints (1790 total), Phase 614 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.86, 1790 constraints, 614 phases) |
+
+### Key Findings
+
+- **Atom echo, not token echo (C1786):** When an atom appears in the boundary token's MIDDLE, the body is enriched for that atom (o +0.031 p=0.0004, d +0.034 p<0.0001). But whole-token matching fails (z=0.90). Specification echoes through shared atoms, not shared tokens.
+- **Internal positional grammar (C1787):** Position 2 (first after boundary token) is most body-predictive (r=0.238), dominated by sh-prefix specification tokens (22.2%). Power decays monotonically through the header.
+- **Specification register (C1788):** Headers use executive/modifier atoms (p, f, h, c enriched 1.5-7.8x) and avoid thermal-work atoms (e, k depleted). Fixed width ~10 tokens.
+- **Vocabulary exclusivity (C1789):** Header and body share the atom pool but assemble non-overlapping token inventories. 86% of boundary tokens never appear in body text.
+- **Complete uniqueness (C1790):** Zero duplicate lines or paragraphs. Zero near-duplicates. Even trigram reuse across folios is negligible (only 10 in 3+ folios).
+- **Universal grammar (C1791):** The atom echo is section-independent and survives boundary-token residualization. The incremental prediction beyond gallows+section+folio is dR2=0.020 (z=1.98, p=0.045) -- genuine but modest.
+- **Architectural implication:** Paragraphs have a two-register architecture: SPECIFICATION register (header line, executive atoms, boundary-exclusive vocabulary) feeds EXECUTION register (body lines, operational atoms, shared vocabulary). The gallows atom is the primary specification channel; the remaining ~9 header tokens provide modest refinement.
+
+---
+
 ## Version 5.85 (2026-03-20) - Phase 613: Cross-Paragraph Structural Ordering
 
 ### Summary

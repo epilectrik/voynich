@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1784 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1790 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1785.
+the highest ID present is C1791.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1784 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1790 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1784 validated constraints are present as canonical one-line claims with tier
+1790 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-20 11:16
-**Version:** FROZEN STATE (1784 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-20 16:06
+**Version:** FROZEN STATE (1790 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2024,6 +2024,12 @@ C1782	First-body-line length declines across paragraph ordinals: first body line
 C1783	Paragraph structural ordering real via line length gradient: paragraph order within folios carries non-trivial structural information. 76.1% of folios individually show negative line-length gradient. First-body-line shuffle also passes. Refines C1399 which tested compositional ordering -- structural ordering is a distinct channel. TTR flat, n_lines flat: abbreviation not simplification	2	B, paragraph, ordering, line, length, shuffle, C1399
 C1784	Gallows transition matrix non-random with type-specific sequential signatures: transitions highly non-random. k never self-follows (0%), positioned early as one-shot intervention. t self-clusters (46.9%) as independent blocks. p self-chains (56.2%) as sequential backbone. k/f are openers (mean pos ~0.33), p/t are body types (mean pos ~0.52), aligning with C1780 opener/mode axis	2	B, paragraph, gallows, transition, sequential, C1780
 C1785	No thermal state carryover after folio residualization: raw thermal correlations across paragraph boundaries are positive (p-chain thermal r=+0.285, e_frac r=+0.485) but collapse after folio-mean removal. All-chain residualized thermal r=-0.093. Residualized correlations null or negative (anti-correlation). Each paragraph completes its thermal cycle independently. Extends C1399/C1400 to thermal state	2	B, paragraph, thermal, carryover, independence, C1399, C1400
+C1786	Header atom echo into body: atom-level not token-level. Atoms o, d, k enriched in body when present in boundary token MIDDLE (gallows-controlled). C670 whole-token null preserved at atom resolution	2	B, paragraph, header, body, atom, echo, C670, C1772
+C1787	Header internal positional structure: pos2 body-prediction r=0.238 (t=5.35) declining monotonically to pos7 r=0.089 (t=2.12). Position-2 dominated by sh-prefix (22.2%), qo-prefix (15.5%). Header is not flat -- early positions carry strongest specification signal	2	B, paragraph, header, position, decay, gradient, specification
+C1788	Header specification register: p-atom 7.8x enriched, f-atom 7.7x, h-atom 1.9x, c-atom 1.5x vs body; e-atom 0.75x and k-atom 0.72x depleted. Header atoms are executive/modifier-class (C1541 instruction tier), not thermal-work atoms. Fixed width ~10 tokens	2	B, paragraph, header, specification, atom, enrichment, C1541, C1287
+C1789	86.0% of boundary token types exclusive to boundaries; body has 49.5% gallows-containing tokens but completely different vocabulary. Header non-BT tokens: 54.2% types exclusive. Header and body draw from overlapping atom pool but non-overlapping token inventory	2	B, paragraph, header, body, vocabulary, exclusivity, boundary
+C1790	Zero duplicate lines (0/2420), zero duplicate paragraphs (0/591), zero near-duplicates. Only 10 trigrams in 3+ folios, zero 4-grams in 3+ folios. Each paragraph is a unique specification, not a template instantiation	2	B, paragraph, uniqueness, duplicate, specification, C531
+C1791	Header atom echo universal across sections and independent of boundary token. Incremental prediction beyond gallows+section+folio small but significant. Gallows atom is PRIMARY specification; remaining header tokens provide modest refinement	2	B, paragraph, header, body, section, universal, gallows, residual, C1772, C1777
 
 ---
 
