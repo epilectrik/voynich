@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1797 validated constraints | **Version:** 5.87 | **Date:** 2026-03-20
+**Total:** 1804 validated constraints | **Version:** 5.88 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,30 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 616: Two-Channel Apparatus Encoding Test — DEPLOYMENT_DOMINANT (C1799-C1805)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1799 | Vocabulary completely absorbed by PREFIX composition: B-folio MIDDLE Jaccard distance→manifold collapses from r=0.257 to r=-0.028 (p=0.92) after controlling for PREFIX JSD. Controlling for PREFIX+shape yields r=-0.041 (p=0.98). Vocabulary carries zero independent information about apparatus manifold position; it is entirely a downstream readout of PREFIX composition | 2 | B, vocabulary, PREFIX, manifold, mediation, Mantel, C1709, C1801 | raw_r=0.257. partial_pfx_r=-0.028. partial_pfx_shape_r=-0.041. n=73 folios. |
+| 1800 | Paragraph shape carries independent deployment signal: 22-dim shape vector→manifold partial r=0.163 (z=8.43, p<0.0001) after controlling for both PREFIX composition and vocabulary. Half the raw signal (0.317→0.163) survives. Deployment architecture (HOW MIDDLEs are arranged into paragraphs) encodes apparatus identity independently of vocabulary composition | 2 | B, paragraph, shape, deployment, manifold, PREFIX, independent, C1796, C1799 | raw_r=0.317. partial_pfx_vocab_r=0.163. z=8.43. retention=51.4pct. n=73. |
+| 1801 | PREFIX composition is strongest single apparatus manifold predictor: PREFIX JSD→manifold Mantel r=0.476 (z=7.51, p<0.0001), partial\|section r=0.437. Stronger than vocabulary (r=0.257), shape (r=0.317), or combined (r=0.358). PREFIX composition determines both which MIDDLEs appear (C1799) and contributes to apparatus position independently of deployment | 2 | B, PREFIX, manifold, Mantel, prediction, C1405, C1709, C1796 | raw_r=0.476. partial_section_r=0.437. z=7.51. n=73. |
+| 1802 | Combined vocab+shape improvement real but modest: alpha=0.5 combination yields r=0.358 vs max individual r=0.317, improvement +0.040. Below pre-registered +0.05 complementary threshold. T4-null permutation test confirms improvement is real (frac=0.002, <5%). Best exploratory alpha=0.4 yields r=0.361. Channels add modestly but do not reach full complementarity | 2 | B, vocabulary, shape, combined, manifold, alpha, complementary, threshold | combined_r=0.358. improvement=+0.040. threshold=0.05. T4null_frac=0.002. best_alpha=0.4. best_r=0.361. |
+| 1803 | Asymmetric partial Mantels: shape\|vocab partial r=0.263 (z=13.51) vs vocab\|shape partial r=0.182 (z=9.28). Both significant before PREFIX control. After PREFIX control, shape survives (r=0.163) but vocab collapses (r=-0.041). The apparent bidirectional complementarity is illusory — only shape carries genuinely independent apparatus information | 2 | B, vocabulary, shape, partial, Mantel, asymmetry, PREFIX, C1799, C1800 | shape_partial_vocab=0.263. vocab_partial_shape=0.182. shape_survives_pfx=0.163. vocab_survives_pfx=-0.041. |
+| 1804 | Within-Herbal deployment dominance: among 27 Herbal folios, shape\|PREFIX partial r=0.337 (p=0.0002), vocab\|PREFIX partial r=0.098 (p=0.036). Shape dominates within-section; vocabulary is marginal. Raw within-Herbal: shape r=0.347, vocab r=0.146 (ns). Deployment signal operates within-section, not as section proxy | 2 | B, Herbal, shape, vocabulary, PREFIX, within-section, C1797, C1800 | herbal_shape_pfx=0.337. herbal_vocab_pfx=0.098. herbal_shape_raw=0.347. herbal_vocab_raw=0.146. n=27. |
+| 1805 | Section retention strong across all channels: vocab\|section retains 79.4% of raw r, shape\|section retains 90.4%, combined\|section retains 87.2%. No channel is primarily a section proxy. Shape is least section-dependent. Bridge-only vocab (r=0.257) ≈ dark-only vocab (r=0.267) in B-space, inverting the A-side pattern (C1709) due to dark pipeline section hyper-modulation (C1148) | 2 | B, section, retention, partial, Mantel, bridge, dark, C1148, C1709 | vocab_retention=79.4pct. shape_retention=90.4pct. combined_retention=87.2pct. bridge_r=0.257. dark_r=0.267. |
+
+**Phase 616 findings (Two-Channel Apparatus Encoding Test, DEPLOYMENT_DOMINANT):**
+- Vocabulary absorbed by PREFIX (C1799): B-folio MIDDLE vocabulary distance is entirely mediated by PREFIX composition. The MIDDLEs a folio uses are determined by its PREFIX distribution. This resolves why C1709's A-side PP→manifold signal (r=0.423) appeared strong — it captured PREFIX gating, not independent vocabulary information.
+- Shape carries independent deployment signal (C1800): Paragraph shape survives control for both PREFIX and vocabulary (r=0.163). Half the raw signal persists. Deployment architecture encodes apparatus identity independently of content selection.
+- PREFIX is the powerhouse predictor (C1801): PREFIX→manifold r=0.476 is the strongest single predictor. It determines vocabulary selection and contributes to apparatus position. This elevates PREFIX composition from a known gating mechanism (C1405-C1431) to the primary apparatus identity channel.
+- Combined improvement real but modest (C1802): Combining vocab+shape gives +0.040 improvement (T4-null p=0.002), below the +0.05 complementary threshold. The "two channels" contribute additively but not complementarily.
+- Asymmetric complementarity (C1803): Shape adds substantially beyond vocabulary (partial r=0.263) but vocabulary's apparent addition beyond shape (r=0.182) collapses under PREFIX control (r=-0.041). Only shape carries genuinely independent information.
+- Within-Herbal confirmation (C1804): Deployment dominance replicates within Herbal section alone. Shape|PREFIX r=0.337, vocab|PREFIX r=0.098. The deployment signal is not a section artifact.
+- Section retention strong (C1805): All channels retain 79-90% after section control. Bridge≈dark in B-space (inverting A-side pattern) due to dark pipeline section hyper-modulation.
+- **Encoding hierarchy:** PREFIX composition (primary) → vocabulary selection (absorbed) + deployment architecture (independent r=0.163). The manuscript encodes apparatus identity through PREFIX gating plus an independent paragraph deployment channel.
 
 ---
 

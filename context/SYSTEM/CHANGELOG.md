@@ -4,6 +4,39 @@
 
 ---
 
+## Version 5.88 (2026-03-20) - Phase 616: Two-Channel Apparatus Encoding Test
+
+### Summary
+
+Phase 616 tests whether vocabulary identity (what MIDDLEs a folio uses) and deployment architecture (how those MIDDLEs are arranged into paragraphs) encode apparatus manifold position through independent or redundant channels. Six blocks of Mantel tests on 73 B folios reveal that vocabulary is entirely mediated by PREFIX composition (vocab|PREFIX collapses from r=0.257 to r=-0.028), while paragraph shape carries a genuine independent signal surviving PREFIX+vocab control (partial r=0.163, z=8.43). PREFIX composition itself is the strongest single manifold predictor (r=0.476), stronger than either candidate channel. The encoding hierarchy is: PREFIX composition (primary) → vocabulary selection (absorbed) + deployment architecture (independent). Verdict: **DEPLOYMENT_DOMINANT**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/TWO_CHANNEL_APPARATUS_ENCODING/` -- Phase 616 with script, JSON results, INDEX.md |
+| **ADDED** | C1799: Vocabulary completely absorbed by PREFIX composition (r=0.257→-0.028) |
+| **ADDED** | C1800: Paragraph shape independent deployment signal (partial r=0.163 surviving PREFIX+vocab) |
+| **ADDED** | C1801: PREFIX composition strongest single manifold predictor (r=0.476) |
+| **ADDED** | C1802: Combined improvement real but modest (+0.040, below +0.05 threshold, T4-null p=0.002) |
+| **ADDED** | C1803: Asymmetric partial Mantels — shape survives PREFIX, vocab collapses |
+| **ADDED** | C1804: Within-Herbal deployment dominance (shape\|PREFIX r=0.337, vocab\|PREFIX r=0.098) |
+| **ADDED** | C1805: Section retention strong (79-90%), bridge≈dark in B-space |
+| **UPDATED** | INDEX.md -- +7 constraints (1804 total), Phase 616 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.88, 1804 constraints, 616 phases) |
+
+### Key Findings
+
+- **PREFIX as primary apparatus channel (C1801):** PREFIX composition→manifold r=0.476 is the strongest single predictor discovered, exceeding C1709's PP distance (r=0.423 in A-space). This elevates PREFIX from a known gating mechanism (C1405-C1431) to the primary apparatus identity channel. PREFIX determines both which MIDDLEs appear and where on the apparatus manifold a folio sits.
+- **Vocabulary is PREFIX-mediated (C1799):** Controlling for PREFIX drops vocab→manifold from r=0.257 to r=-0.028. The MIDDLEs a folio uses are entirely determined by its PREFIX distribution. C1709's A-side PP→manifold signal (r=0.423) likely captured PREFIX gating effects, not independent vocabulary information.
+- **Deployment is genuinely independent (C1800):** Paragraph shape→manifold partial r=0.163 after controlling for PREFIX+vocab. Half the raw signal survives. This is the only channel that carries apparatus information not already captured by PREFIX composition. The "what" is PREFIX-determined; the "how" is independently encoded.
+- **Asymmetric complementarity (C1803):** Before PREFIX control, both channels appear to add beyond each other (T5 r=0.263, T6 r=0.182). After PREFIX control, only shape survives. The bidirectional complementarity was illusory — vocabulary's apparent independent contribution was PREFIX leaking through.
+- **Within-Herbal confirmation (C1804):** The pattern replicates within the largest section (n=27): shape|PREFIX r=0.337 (strongly significant), vocab|PREFIX r=0.098 (marginal). Deployment dominance is not a between-section artifact.
+- **Bridge≈dark in B-space (C1805):** T7 bridge r=0.257 ≈ T8 dark r=0.267, inverting C1709's A-side pattern (bridge>>dark). Explained by dark pipeline section hyper-modulation (C1148): in B-space, dark MIDDLEs' section-specificity creates folio discrimination that bridges' cross-section stability does not.
+- **Encoding hierarchy:** PREFIX composition (r=0.476) → vocabulary selection (r=0.257, absorbed) + deployment architecture (r=0.163, independent). The manuscript encodes apparatus identity primarily through PREFIX gating, with paragraph deployment as the only genuinely independent secondary channel.
+
+---
+
 ## Version 5.87 (2026-03-20) - Phase 615: Paragraph Compositional Architecture
 
 ### Summary
