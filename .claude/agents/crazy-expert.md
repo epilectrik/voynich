@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1781.
+the highest ID present is C1785.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2106,6 +2106,10 @@ C1778	Gallows variance absorption: gallows type does not contribute unique varia
 C1779	Gallows header-body signal attenuation: gallows-body atom association attenuates across paragraph zones. Z1 (gallows token) V=0.238, Z2 (first-line residual) V=0.059, Z3 (body lines 2+) V=0.046. Ratio Z3/Z1=0.191. ~81% confined to header zone.	2	B_paragraph, gallows, header, body, attenuation	V_Z1=0.238. V_Z2=0.059. V_Z3=0.046. ratio=0.191.
 C1780	Gallows irreducible four-type architecture: opener/mode split (k/f vs p/t) captures positional axis (opener pos=0.355, mode=0.527, p=0.0003) but only 35.5% of body variance. Within-family contrasts carry 64.5%: k vs f V=0.102, p vs t V=0.041. System is irreducibly 4-way.	2	B_paragraph, gallows, architecture, opener_mode	M3_R2=0.00292. M1_R2=0.00823. M3_pct=35.5. kf_V=0.102. pt_V=0.041.
 C1781	Gallows section-conditional posture: p-gallows body O/E vectors vary across sections in direction not just amplitude. Cosines to global: Bio=0.455, Cosmo=0.809, Herbal=0.817, Stars=0.746. Cross-section cosines as low as 0.233 (Bio-Herbal). Posture system is section-conditional.	2	B_paragraph, gallows, section, stability, posture	cos_Bio=0.455. cos_Herbal=0.817. cos_Stars=0.746. min_cross=0.233.
+C1782	First-body-line length declines across paragraph ordinals: folio-residualized rho=-0.225, t=-3.96, p=0.0002. Header does NOT decline (rho=-0.037). NOT C963 leaking upward. Progressive specification compression.	2	B, paragraph, line, length, ordinal, sequential	first_body_resid_rho=-0.225. p=0.0002. mean_body_resid_rho=-0.308. header_rho=-0.037.
+C1783	Paragraph structural ordering real via line length gradient: shuffle z=-4.78, p<0.000001. 76.1% of folios show negative gradient. Refines C1399: compositional ordering null, structural ordering real. TTR flat. Abbreviation not simplification.	2	B, paragraph, ordering, line, length, shuffle, C1399	shuffle_z=-4.78. pct_negative=76.1. first_body_z=-3.67.
+C1784	Gallows transition matrix non-random with type-specific sequential signatures: chi2=53.69, p<0.0001, V=0.209. k=one-shot (0% self, pos=0.334), t=independent blocks (46.9% self), p=backbone (56.2% self). k/f openers, p/t body types.	2	B, paragraph, gallows, transition, sequential, C1780	chi2=53.69. k_self=0pct. t_self=46.9pct. p_self=56.2pct. k_pos=0.334.
+C1785	No thermal state carryover after folio residualization: raw p-chain thermal r=+0.285 collapses to r=+0.013 (p=0.89). All-chain residualized thermal r=-0.093. Null or negative. Each paragraph thermally independent.	2	B, paragraph, thermal, carryover, independence, C1399, C1400	p_raw=+0.285. p_resid=+0.013. p_resid_p=0.886. all_resid=-0.093.
 
 ---
 

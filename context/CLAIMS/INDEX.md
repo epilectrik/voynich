@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1780 validated constraints | **Version:** 5.84 | **Date:** 2026-03-19
+**Total:** 1784 validated constraints | **Version:** 5.85 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 613: Cross-Paragraph Structural Ordering — STRUCTURAL_ORDERING_CONFIRMED (C1782-C1785)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1782 | First-body-line length declines across paragraph ordinals: first body line of later paragraphs within a folio is genuinely shorter (folio-residualized rho=-0.225, t=-3.96, p=0.0002, n=67 folios). Header line length does NOT decline (rho=-0.037, p=0.60). Mean body line length also declines (rho=-0.308, t=-5.32, p<0.000001). NOT C963 leaking upward -- genuine cross-paragraph specification compression. Consistent across sections: Stars -0.150, Bio -0.232, Herbal -0.267 | 2 | B, paragraph, line, length, ordinal, sequential | first_body_resid_rho=-0.225. p=0.0002. mean_body_resid_rho=-0.308. header_resid_rho=-0.037. Q0_first=10.99. Q4_first=9.40. n_folios=67. |
+| 1783 | Paragraph structural ordering real via line length gradient: paragraph order within folios carries non-trivial structural information (shuffle z=-4.78, p<0.000001, 1000 permutations). 76.1% of folios individually show negative line-length gradient. First-body-line shuffle also passes (z=-3.67, p<0.000001). Refines C1399 which tested compositional ordering -- structural ordering is a distinct channel. TTR flat (rho=+0.003), n_lines flat (rho=-0.013): abbreviation not simplification | 2 | B, paragraph, ordering, line, length, shuffle, C1399 | shuffle_z=-4.78. p<0.000001. pct_negative=76.1. first_body_z=-3.67. n_folios=67. |
+| 1784 | Gallows transition matrix non-random with type-specific sequential signatures: transitions highly non-random (chi2=53.69, p<0.0001, V=0.209, n=409). k never self-follows (0%), positioned early (mean=0.334, median=0.193) as one-shot intervention. t self-clusters (46.9%) as independent blocks. p self-chains (56.2%) as sequential backbone. k/f are openers (mean pos ~0.33), p/t are body types (mean pos ~0.52), aligning with C1780 opener/mode axis | 2 | B, paragraph, gallows, transition, sequential, C1780 | chi2=53.69. p<0.0001. V=0.209. k_self=0.0pct. t_self=46.9pct. p_self=56.2pct. k_mean_pos=0.334. |
+| 1785 | No thermal state carryover after folio residualization: raw thermal correlations across paragraph boundaries are positive (p-chain thermal r=+0.285, e_frac r=+0.485) but collapse after folio-mean removal (thermal r=+0.013 p=0.89, e_frac r=+0.075 p=0.41). All-chain residualized thermal r=-0.093 (p=0.06). Residualized correlations null or negative (anti-correlation). Each paragraph completes its thermal cycle independently. Extends C1399/C1400 to thermal state | 2 | B, paragraph, thermal, carryover, independence, C1399, C1400 | p_raw_thermal=+0.285. p_resid_thermal=+0.013. p_resid_p=0.886. all_raw_e=+0.330. all_resid_e=-0.035. n_all=409. |
+
+**Phase 613 findings (Cross-Paragraph Structural Ordering, STRUCTURAL_ORDERING_CONFIRMED):**
+- Line-length gradient (C1782): The first body line of later paragraphs is genuinely shorter (Q0=10.99 tokens, Q4=9.40 tokens). This is NOT C963 (within-paragraph shortening) leaking upward -- it survives as a first-body-line-specific test. Header lines do NOT shorten. Vocabulary diversity is flat. The signal is progressive specification compression: later paragraphs abbreviate because earlier context is established.
+- Shuffle validation (C1783): Shuffling paragraph order destroys the gradient (z=-4.78, p<0.000001). 76.1% of individual folios show the pattern. This refines C1399's null -- compositional ordering (category, thermal state, zone type) is indeed null, but STRUCTURAL ordering (line length) is real. These are distinct information channels.
+- Gallows sequential taxonomy (C1784): k appears early and never self-follows (one-shot setup/intervention). p self-chains as the main procedural backbone. t self-clusters as independent operational blocks. k/f are openers (positioned early), p/t are body types (positioned centrally). This aligns with C1780's opener/mode positional axis.
+- Thermal independence confirmed (C1785): All apparent cross-paragraph thermal continuity is folio-level shared context. After residualization, correlations are null or slightly negative (alternation). Paragraphs are thermally self-contained.
+- **Architectural reconciliation:** C855 (parallel programs) and C1399 (no compositional ordering) remain valid. The folio is sequential in READING (progressive abbreviation for accumulated human context) but parallel in EXECUTION (each paragraph runs its own thermal cycle independently). Line length carries ordinal information; composition does not. This resolves the apparent tension between paragraph independence and the observed line-length gradient.
 
 ---
 

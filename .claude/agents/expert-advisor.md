@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1780 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1784 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1781.
+the highest ID present is C1785.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1780 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1784 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1780 validated constraints are present as canonical one-line claims with tier
+1784 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-19 23:37
-**Version:** FROZEN STATE (1780 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-20 11:16
+**Version:** FROZEN STATE (1784 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2016,10 +2016,14 @@ C1774	k-gallows complementary e-bias: k-gallows paragraphs enrich e-atoms not k-
 C1775	Gallows ambient-context deployment: gallows selection correlates with ambient thermal/monitoring context but not event triggers. Deployment is context-conditioned not event-dispatched	2	B_paragraph, deployment, context, thermal, monitoring
 C1776	Gallows-archetype non-reducibility: aggregate gallows-archetype association is section-mediated. Within-section: Stars p=0.227, Bio p=0.683, Cosmo p=0.959. Gallows and archetypes are distinct structural layers	2	B_paragraph, gallows, archetype, section
 C1777	Gallows atom-substrate asymmetry: body inheritance from shared atom substrate is partial and asymmetric. Direct in p, complementary in k, null in t and f. Four gallows types have qualitatively different body ecology relationships	2	B_paragraph, gallows, atom_substrate, asymmetry
-C1778	Gallows variance absorption: gallows type does not contribute unique variance to paragraph body atom ecology after sequential control for section, folio, block position, paragraph archetype, and ambient context. Forward SS: gallows\|context=6.72% of total but permutation null (200 shuffles within section) gives mean=7.16%, z=-0.61, p_perm=0.73. Mediation delta R²=0.006. Within-archetype effects (3/4 significant under simple thermal control) are absorbed by full hierarchy. Gallows are compressed context labels indexing joint section/folio/position/archetype/context state	2	B_paragraph, gallows, disentanglement, variance
+C1778	Gallows variance absorption: gallows type does not contribute unique variance to paragraph body atom ecology after sequential control for section, folio, block position, paragraph archetype, and ambient context. Forward SS: gallows\|context=6.72% of total but permutation null (200 shuffles within section) gives mean=7.16%, z=-0.61, p_perm=0.73. Mediation delta R²=0.006. Within-archetype effects (3/4 significant under simple thermal control) are absorbed by full hierarchy. Gallows function as explicit paragraph-header labels of deployment context, not independent body-ecology channels	2	B_paragraph, gallows, disentanglement, variance
 C1779	Gallows header-body signal attenuation: gallows-body atom association attenuates across paragraph zones. Z1 (gallows token) V=0.238, Z2 (first-line residual) V=0.059 (confounded with C1426/C1729 first-line effects), Z3 (body lines 2+) V=0.046. Attenuation ratio Z3/Z1=0.191. All zones p<10⁻⁶. ~81% of compositional effect confined to header zone. Body signal is residual echo of header declaration	2	B_paragraph, gallows, header, body, attenuation
 C1780	Gallows irreducible four-type architecture: opener/mode split (k/f vs p/t) captures genuine positional axis but only 35.5% of body-ecology variance (R²=0.00292 of 0.00823). Within-family contrasts carry 64.5%: k vs f V=0.102, p vs t V=0.041. System requires all 4 types	2	B_paragraph, gallows, architecture, opener_mode
 C1781	Gallows section-conditional posture: p-gallows body O/E vectors vary across sections in direction not just amplitude. Section-to-global cosines: Bio=0.455, Cosmo=0.809, Herbal=0.817, Stars=0.746. Cross-section cosines as low as 0.233 (Bio-Herbal). Bootstrap 90% CIs all have lower bounds below 0.30. Section alters direction of gallows-body relationship in atom space	2	B_paragraph, gallows, section, stability, posture
+C1782	First-body-line length declines across paragraph ordinals: first body line of later paragraphs within a folio is genuinely shorter. Header line length does NOT decline. Mean body line length also declines. NOT C963 leaking upward -- genuine cross-paragraph specification compression. Consistent across sections: Stars -0.150, Bio -0.232, Herbal -0.267	2	B, paragraph, line, length, ordinal, sequential
+C1783	Paragraph structural ordering real via line length gradient: paragraph order within folios carries non-trivial structural information. 76.1% of folios individually show negative line-length gradient. First-body-line shuffle also passes. Refines C1399 which tested compositional ordering -- structural ordering is a distinct channel. TTR flat, n_lines flat: abbreviation not simplification	2	B, paragraph, ordering, line, length, shuffle, C1399
+C1784	Gallows transition matrix non-random with type-specific sequential signatures: transitions highly non-random. k never self-follows (0%), positioned early as one-shot intervention. t self-clusters (46.9%) as independent blocks. p self-chains (56.2%) as sequential backbone. k/f are openers (mean pos ~0.33), p/t are body types (mean pos ~0.52), aligning with C1780 opener/mode axis	2	B, paragraph, gallows, transition, sequential, C1780
+C1785	No thermal state carryover after folio residualization: raw thermal correlations across paragraph boundaries are positive (p-chain thermal r=+0.285, e_frac r=+0.485) but collapse after folio-mean removal. All-chain residualized thermal r=-0.093. Residualized correlations null or negative (anti-correlation). Each paragraph completes its thermal cycle independently. Extends C1399/C1400 to thermal state	2	B, paragraph, thermal, carryover, independence, C1399, C1400
 
 ---
 
@@ -2027,7 +2031,7 @@ C1781	Gallows section-conditional posture: p-gallows body O/E vectors vary acros
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-19
+# Generated: 2026-03-20
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

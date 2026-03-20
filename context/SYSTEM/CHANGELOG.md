@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.85 (2026-03-20) - Phase 613: Cross-Paragraph Structural Ordering
+
+### Summary
+
+Phase 613 formalizes the discovery that paragraphs within folios exhibit sequential structural ordering via progressive line-length abbreviation, despite C1399's established null for compositional ordering. Four blocking tests confirm: first-body-line length declines across paragraph ordinals (folio-residualized rho=-0.225, p=0.0002), shuffle validation passes (z=-4.78, p<0.000001), gallows transitions are non-random with type-specific signatures (chi2=53.69, p<0.0001), and thermal state carryover is null after folio residualization. Verdict: **STRUCTURAL_ORDERING_CONFIRMED**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CROSS_PARAGRAPH_STRUCTURAL_ORDERING/` -- Phase 613 with consolidated script, JSON results, INDEX.md |
+| **ADDED** | C1782: First-body-line length declines across paragraph ordinals (folio-resid rho=-0.225, p=0.0002) |
+| **ADDED** | C1783: Paragraph structural ordering real via line length gradient (shuffle z=-4.78, p<0.000001) |
+| **ADDED** | C1784: Gallows transition matrix non-random with type-specific signatures (chi2=53.69, p<0.0001) |
+| **ADDED** | C1785: No thermal state carryover after folio residualization (p-chain resid r=+0.013, p=0.89) |
+| **UPDATED** | INDEX.md -- +4 constraints (1784 total), Phase 613 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.85, 1784 constraints, 613 phases) |
+
+### Key Findings
+
+- **Line-length gradient (C1782):** First body line of later paragraphs is shorter (Q0=10.99, Q4=9.40 tokens). Header lines do NOT shorten. Not C963 leaking upward -- genuine cross-paragraph effect. Consistent across all sections.
+- **Shuffle validation (C1783):** 76.1% of folios individually show the pattern. Refines C1399: compositional ordering null, structural ordering real. These are distinct information channels.
+- **Gallows sequential taxonomy (C1784):** k = one-shot early intervention (0% self-transition), p = sequential backbone (56.2% self-chains), t = independent blocks (46.9% self-clusters). k/f positioned early (mean ~0.33), p/t positioned centrally (~0.52).
+- **Thermal independence (C1785):** All apparent cross-paragraph continuity is folio-level shared context. Residualized correlations null or negative. Each paragraph completes its thermal cycle independently.
+- **Architectural insight:** The folio is sequential in READING (progressive abbreviation for accumulated human context) but parallel in EXECUTION (each paragraph runs its own thermal cycle independently). C855 and C1399 remain valid. Line length carries ordinal information; composition does not.
+
+---
+
 ## Version 5.84 (2026-03-19) - Phase 612: Gallows Deployment Disentanglement
 
 ### Summary
