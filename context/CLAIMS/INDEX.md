@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1790 validated constraints | **Version:** 5.86 | **Date:** 2026-03-20
+**Total:** 1797 validated constraints | **Version:** 5.87 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,29 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 615: Paragraph Compositional Architecture — COMPOSITIONAL_ARCHITECTURE_CONFIRMED (C1792-C1798)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1792 | Header transition grammar beyond gallows: (gallows, header_cluster) state pairs follow non-random sequential transitions (chi2=261 vs gallows-only 53.7, perm z=5.18, p<0.0001, n=408 transitions, 12 states). Header clusters independent of gallows (ARI=0.006). The specification register has sequential structure beyond gallows type alone | 2 | B, paragraph, header, transition, grammar, sequential, gallows, C1784 | expanded_chi2=261. gallows_chi2=53.7. perm_z=5.18. n_states=12. ARI=0.006. n_trans=408. |
+| 1793 | Consecutive paragraph header independence: header divergence does NOT predict body divergence (lag-1 r=0.029 p=0.56, lag-2 r=0.008 p=0.89, n=408). Paragraphs relate through state sequences not similarity chains. Sequential grammar (C1792) is about transitions between DIFFERENT states, not continuation of similar ones | 2 | B, paragraph, header, body, consecutive, independence, C1792 | lag1_r=0.029. lag1_p=0.56. lag2_r=0.008. lag2_p=0.89. n=408. |
+| 1794 | Specification divergence not convergence: later paragraphs within folios slightly DIVERGE in header specification (Spearman rho=-0.053, p=0.02, n=1891 pairs). Refutes convergence prediction. Each paragraph maintains distinct specification throughout folio. Later paragraphs do not converge toward a common target | 2 | B, paragraph, header, specification, divergence, ordinal, C1782 | rho=-0.053. p=0.02. n=1891. direction=divergence. |
+| 1795 | Header atoms predict body operational domain: header atom fractions predict body category fractions beyond gallows+section controls (dR2=+0.063, z=12.14, p<0.0001, n=490). Turns C1786 statistical atom echo into functional claim: header specifies which operational domain (category mix) the body emphasizes. Control R2=0.107, full R2=0.170 | 2 | B, paragraph, header, body, domain, prediction, atom, C1786 | dR2=+0.063. z=12.14. R2_ctrl=0.107. R2_full=0.170. n=490. |
+| 1796 | Paragraph shape predicts apparatus manifold: 22-dim paragraph shape vector (gallows fracs, header atoms, zone fracs, n_paras, mode_a_frac) predicts folio apparatus manifold position (Mantel r=0.314, z=4.86, p<0.001; partial Mantel r=0.281, z=4.30 controlling for section; n=76 folios). First evidence that paragraph-level composition encodes folio-level operational identity. Closes paragraph→folio compositional gap | 2 | B, paragraph, folio, manifold, composition, Mantel, apparatus, C1709, C1722 | Mantel_r=0.314. partial_r=0.281. z=4.86. dim=22. n_folios=76. |
+| 1797 | Paragraph shape → manifold broadly distributed across sections: per-section Mantel r: Herbal=0.350 (p<0.001), Stars=0.257 (p=0.002), Bio=0.119 (p=0.142, n=19). Herbal strongest, Stars significant, Bio underpowered. Effect not driven by single section. Reduced shape (10-dim, no atoms) r=0.201 — atom features add ~0.11 Mantel r | 2 | B, paragraph, folio, manifold, section, Herbal, Stars, Bio, C1796 | Herbal_r=0.350. Stars_r=0.257. Bio_r=0.119. reduced_r=0.201. reduced_partial_r=0.147. |
+| 1798 | Paragraph shape → manifold multi-axis: 15/110 feature-PC pairs significant after FDR correction. Dominant: zone_0×PC1 rho=-0.643, hdr_d×PC4 rho=-0.475, zone_1×PC4 rho=-0.435. Full shape (r=0.314, 22 dim) outperforms C1722 routing distance (r=0.279, 42 dim) and approaches C1709 PP distance (r=0.423). Paragraph composition is a competitive apparatus manifold predictor | 2 | B, paragraph, folio, manifold, axis, feature, PC, benchmark, C1722, C1709, C1796 | n_sig=15. n_tests=110. top_rho=-0.643. full_r=0.314. C1722_r=0.279. C1709_r=0.423. |
+
+**Phase 615 findings (Paragraph Compositional Architecture, COMPOSITIONAL_ARCHITECTURE_CONFIRMED):**
+- Header transition grammar (C1792): (gallows, header_cluster) state pairs follow non-random sequential transitions far richer than gallows-only (chi2=261 vs 53.7, z=5.18). Header clusters are independent of gallows type (ARI=0.006), confirming the expanded state space is genuine. This extends C1784's gallows transition finding to the full specification register.
+- Consecutive independence (C1793): Header similarity between consecutive paragraphs does NOT predict body similarity (r=0.029, lag-2 r=0.008). The transition grammar is about transitions between different specification states, not continuation of similar ones. Paragraphs are operationally independent (C845) even at the specification level.
+- Specification divergence (C1794): Later paragraphs within folios slightly DIVERGE (rho=-0.053, p=0.02), refuting convergence. Each paragraph maintains a distinct specification. Programs don't converge toward a common configuration — they maintain or increase differentiation.
+- Header-to-body domain (C1795): Header atom fractions predict body operational domain beyond gallows+section (dR2=+0.063, z=12.14). This is the functional consequence of C1786's atom echo — the header specifies which operational domain the body emphasizes, not just which atoms appear.
+- Paragraph→folio composition (C1796): 22-dim paragraph shape vectors predict apparatus manifold position (Mantel r=0.314, partial r=0.281). This is the first evidence that paragraph-level features compose to encode folio identity. The paragraph→folio compositional gap is closed.
+- Section distribution (C1797): The manifold alignment is broad (Herbal r=0.350, Stars r=0.257, Bio underpowered at r=0.119). Atom features contribute ~0.11 additional Mantel r beyond structural features alone.
+- Multi-axis channels (C1798): 15 feature-PC pairs survive FDR, with zone_0×PC1 dominant (rho=-0.643). The 22-dim shape vector outperforms the 42-dim routing distance (C1722) and approaches the PP distance (C1709). Paragraph composition is a competitive, parsimonious apparatus manifold predictor.
 
 ---
 

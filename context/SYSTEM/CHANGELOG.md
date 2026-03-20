@@ -4,6 +4,40 @@
 
 ---
 
+## Version 5.87 (2026-03-20) - Phase 615: Paragraph Compositional Architecture
+
+### Summary
+
+Phase 615 establishes that paragraph-level specifications compose to encode folio-level operational identity through two channels: (1) sequential header transition grammar and (2) aggregate paragraph shape → apparatus manifold alignment. Block A shows header (gallows, cluster) state transitions are non-random beyond gallows alone (chi2=261 vs 53.7, z=5.18), consecutive paragraphs are specification-independent (r=0.029), later headers diverge rather than converge (rho=-0.053), and header atoms predict body operational domain (dR2=+0.063, z=12.14). Block B shows 22-dim paragraph shape vectors predict apparatus manifold position (Mantel r=0.314, partial r=0.281), broadly across sections (Herbal r=0.350, Stars r=0.257), with 15 significant feature-PC pairs after FDR. The full shape vector outperforms C1722 routing distance (r=0.279, 42 dim). Verdict: **COMPOSITIONAL_ARCHITECTURE_CONFIRMED**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_COMPOSITIONAL_ARCHITECTURE/` -- Phase 615 with consolidated script, JSON results, INDEX.md |
+| **ADDED** | C1792: Header transition grammar beyond gallows (chi2=261, z=5.18, ARI=0.006) |
+| **ADDED** | C1793: Consecutive paragraph header independence (lag-1 r=0.029, lag-2 r=0.008) |
+| **ADDED** | C1794: Specification divergence not convergence (rho=-0.053, p=0.02) |
+| **ADDED** | C1795: Header atoms predict body operational domain (dR2=+0.063, z=12.14) |
+| **ADDED** | C1796: Paragraph shape predicts apparatus manifold (Mantel r=0.314, partial r=0.281) |
+| **ADDED** | C1797: Manifold alignment broadly distributed (Herbal=0.350, Stars=0.257) |
+| **ADDED** | C1798: Multi-axis feature channels (15 FDR-significant, zone_0×PC1 rho=-0.643) |
+| **UPDATED** | INDEX.md -- +7 constraints (1797 total), Phase 615 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.87, 1797 constraints, 615 phases) |
+
+### Key Findings
+
+- **Header transition grammar (C1792):** The (gallows, header_cluster) expanded state space has much richer sequential structure (chi2=261) than gallows alone (53.7). Header clusters are independent of gallows (ARI=0.006) — this is genuine new information, not recoding. Extends C1784.
+- **Consecutive independence (C1793):** Header similarity does NOT predict body similarity at any lag. The transition grammar is about transitions between different states, not similarity chains. Paragraphs maintain specification independence even at the header level.
+- **Specification divergence (C1794):** Later paragraphs within folios slightly diverge, refuting any convergence prediction. Programs maintain distinct specifications throughout the folio.
+- **Header-to-body domain prediction (C1795):** Header atom fractions predict which operational domain the body emphasizes (dR2=+0.063, z=12.14). This is the functional consequence of C1786's atom echo — specification has measurable downstream effect on body category composition.
+- **Paragraph→folio composition (C1796):** The headline result. 22-dim paragraph shape vectors predict apparatus manifold position (Mantel r=0.314, partial r=0.281). This closes the paragraph→folio compositional gap — the first evidence that paragraph-level composition encodes folio-level operational identity.
+- **Section distribution (C1797):** Herbal strongest (r=0.350), Stars significant (r=0.257), Bio underpowered (r=0.119, n=19). Atom features add ~0.11 Mantel r beyond structural features alone.
+- **Multi-axis channels (C1798):** 15 feature-PC pairs survive FDR. The full shape vector (r=0.314, 22 dim) outperforms C1722 routing distance (r=0.279, 42 dim), approaching C1709 PP distance (r=0.423). Paragraph composition is a competitive, parsimonious manifold predictor.
+- **Architectural advance:** Before this phase, we knew paragraphs were self-contained units (C845) and folios were programs (Tier 0), but the compositional rule was untested. Now: paragraph shapes compose to produce folio identity, headers follow a transition grammar, and headers specify body domain. The paragraph layer has both internal specification grammar (sequential) and aggregate compositional meaning (manifold alignment).
+
+---
+
 ## Version 5.86 (2026-03-20) - Phase 614: Paragraph Header Specification Grammar
 
 ### Summary

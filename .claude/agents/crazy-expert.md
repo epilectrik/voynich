@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1791.
+the highest ID present is C1798.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2116,6 +2116,13 @@ C1788	Header specification register: p-atom 7.8x enriched, f-atom 7.7x, h-atom 1
 C1789	86.0% of boundary token types exclusive to boundaries; body has 49.5% gallows-containing tokens but different vocabulary. Header non-BT: 54.2% exclusive. Same atom pool, non-overlapping token inventory.	2	B, paragraph, header, body, vocabulary, exclusivity, boundary	bt_exclusive=86.0pct. hdr_exclusive=54.2pct. body_gallows=49.5pct.
 C1790	Zero duplicate lines (0/2420), zero duplicate paragraphs (0/591), zero near-duplicates (Jaccard>=0.8). Only 10 trigrams in 3+ folios, zero 4-grams. Each paragraph unique specification.	2	B, paragraph, uniqueness, duplicate, specification, C531	dup_lines=0. dup_paras=0. near_dup=0.
 C1791	Header atom echo universal across sections (Stars r=0.123, Bio r=0.049, Herbal r=0.050, all p<0.01) and independent of BT (resid R2=0.15). Incremental beyond gallows+section+folio: dR2=+0.020, z=1.98, p=0.045. Gallows PRIMARY, header tokens modest refinement.	2	B, paragraph, header, body, section, universal, C1772, C1777	Stars_r=0.123. Bio_r=0.049. inc_dR2=0.020. inc_z=1.98.
+C1792	Header transition grammar beyond gallows: (gallows, header_cluster) state pairs follow non-random sequential transitions (chi2=261 vs gallows-only 53.7, perm z=5.18, 12 states). Header clusters independent of gallows (ARI=0.006).	2	B, paragraph, header, transition, grammar, C1784	expanded_chi2=261. gallows_chi2=53.7. perm_z=5.18. ARI=0.006.
+C1793	Consecutive paragraph header independence: header divergence does NOT predict body divergence (lag-1 r=0.029 p=0.56, lag-2 r=0.008 p=0.89). Paragraphs relate through state sequences not similarity chains.	2	B, paragraph, header, body, consecutive, C1792	lag1_r=0.029. lag2_r=0.008. n=408.
+C1794	Specification divergence not convergence: later paragraphs within folios slightly DIVERGE (rho=-0.053, p=0.02, n=1891). Refutes convergence. Each paragraph maintains distinct specification.	2	B, paragraph, header, specification, divergence, C1782	rho=-0.053. p=0.02. n=1891.
+C1795	Header atoms predict body operational domain beyond gallows+section (dR2=+0.063, z=12.14, n=490). Header specifies WHICH operational domain body emphasizes. Control R2=0.107, full R2=0.170.	2	B, paragraph, header, body, domain, C1786	dR2=+0.063. z=12.14. R2_ctrl=0.107. R2_full=0.170.
+C1796	Paragraph shape predicts apparatus manifold: 22-dim shape vector (Mantel r=0.314, partial r=0.281 controlling for section, n=76 folios). First evidence paragraph composition encodes folio-level operational identity.	2	B, paragraph, folio, manifold, Mantel, C1709, C1722	Mantel_r=0.314. partial_r=0.281. dim=22. n=76.
+C1797	Paragraph shape→manifold broadly distributed: Herbal r=0.350, Stars r=0.257, Bio r=0.119 (underpowered n=19). Atom features add ~0.11 Mantel r beyond structural features alone.	2	B, paragraph, folio, manifold, section, C1796	Herbal_r=0.350. Stars_r=0.257. Bio_r=0.119. reduced_r=0.201.
+C1798	Paragraph shape→manifold multi-axis: 15/110 feature-PC pairs significant after FDR. Top: zone_0×PC1 rho=-0.643. Full shape (r=0.314, 22 dim) outperforms C1722 routing (r=0.279, 42 dim), approaches C1709 PP (r=0.423).	2	B, paragraph, folio, manifold, axis, C1722, C1709, C1796	n_sig=15. top_rho=-0.643. full_r=0.314. C1722_r=0.279.
 
 ---
 
