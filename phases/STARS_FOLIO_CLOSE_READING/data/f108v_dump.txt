@@ -1,5 +1,5 @@
 ================================================================================
-FOLIO f108v — 570 tokens, 53 lines, 9 paragraphs
+FOLIO f108v -- 570 tokens, 53 lines, 9 paragraphs
 Section: Stars
 Kernel balance: ESCAPE_DOMINANT
 Kernel distribution: k=28.4% h=4.0% e=67.6%

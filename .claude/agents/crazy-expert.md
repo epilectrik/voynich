@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1771.
+the highest ID present is C1777.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2096,6 +2096,12 @@ C1768	Blind token-level monitoring prediction succeeds in Stars: expert reading 
 C1769	Stars monitoring axis encodes operational philosophy: extreme pair (f108v h_resid=-0.101 vs f107v +0.075, both R1) shows 5-dimensional divergence — paragraph architecture (9 large vs 20 small), kernel balance (e-dominant vs balanced), monitoring mode (passive vs active), h position (medial vs TERMINAL), sister pairs (balanced vs ch-dominant). Low-h="confidence", high-h="vigilance". Complete strategy difference, not parametric dial.	2	B_Stars, monitoring, h_ratio, paragraph, kernel, morphology, C1154, C1755, C1740	f108v_resid=-0.101. f107v_resid=+0.075. f108v_paras=9. f107v_paras=20. f108v_e=67.6. f107v_k=48.3.
 C1770	Bridge rate invariant to monitoring level within Stars: 88.1% (f108v, lowest h_resid) vs 88.6% (f107v, highest). Monitoring axis operates through deployment (composition, sequencing, position) not vocabulary sourcing. Same lexicon, different operational strategies.	2	B_Stars, monitoring, h_ratio, bridge, vocabulary	bridge_f108v=88.1. bridge_f107v=88.6. delta=0.5.
 C1771	h morphological position tracks monitoring philosophy: in high-monitoring Stars folios, h-kernel appears TERMINAL (architecturally significant endpoint per C1393/C1394). In lowest-monitoring folio, h buried medially (passive). Monitoring character (not just amount) varies with h_resid. TERMINAL h = instruction ends with monitoring; medial h = monitoring incidental.	2	B_Stars, monitoring, h_ratio, morphology, TERMINAL, C1393, C1394	h_high=TERMINAL. h_low=medial.
+C1772	Gallows-body composition association: gallows type predicts paragraph body composition at multiple resolutions with effect strength increasing at higher structure levels. Atom V=0.039, bigram V=0.065, MIDDLE V=0.087 (all p<0.000001). Escalation confirms compositional gallows influence on body content.	2	B_paragraph, gallows, composition, C866	V_atom=0.039. V_bigram=0.065. V_middle=0.087. n=572.
+C1773	p-gallows direct body continuity: p-gallows paragraphs show robust p-atom enrichment in body tokens (excluding header): O/E=1.417, p=0.0001. Survives section stratification (all 5 sections). p is the only gallows with significant self-atom enrichment.	2	B_paragraph, p-gallows, self-enrichment	OE=1.417. p=0.0001. n=287. sections=5/5.
+C1774	k-gallows complementary e-bias: k-gallows paragraphs enrich e-atoms (O/E=1.171, p<0.000001) not k-atoms (O/E=0.905, null). Complementary not self-identity continuity. k header declares condition, body implements complementary response. Consistent with C866/C521.	2	B_paragraph, k-gallows, e-atom, C866, C521	k_e_OE=1.171. k_self_OE=0.905. n=35.
+C1775	Gallows ambient-context deployment: gallows selection correlates with ambient thermal/monitoring context (thermal KW p=0.0004, monitoring p=0.0019) but not event triggers (alarms p=0.14-0.26, deltas p=0.37-0.78, suffix routing p=0.252). Deployment is context-conditioned not event-dispatched.	2	B_paragraph, deployment, context, thermal	thermal_p=0.0004. monitoring_p=0.0019. alarms_null=true. deltas_null=true.
+C1776	Gallows-archetype non-reducibility: aggregate gallows-archetype association (p=0.0009, V=0.130) is section-mediated. Within-section: Stars p=0.227, Bio p=0.683, Cosmo p=0.959. Gallows and archetypes are distinct structural layers.	2	B_paragraph, gallows, archetype, section	agg_p=0.0009. Stars_p=0.227. Bio_p=0.683. Cosmo_p=0.959.
+C1777	Gallows atom-substrate asymmetry: body inheritance from shared atom substrate is partial and asymmetric. Direct in p (O/E=1.417), complementary in k (e O/E=1.171), null in t (O/E=1.085) and f (O/E=1.308). Four gallows types have qualitatively different body ecology relationships.	2	B_paragraph, gallows, atom_substrate	p_OE=1.417. k_e_OE=1.171. t_OE=1.085. f_OE=1.308.
 
 ---
 

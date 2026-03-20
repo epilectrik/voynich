@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.83 (2026-03-19) - Phase 611: Gallows Deployment Characterization
+
+### Summary
+
+Phase 611 formalizes an extended gallows investigation conducted during Phase 610. Through 7 one-shot scripts (subsequently consolidated), we established that gallows markers (k/t/p/f) are context-sensitive paragraph deployment headers that bias body composition at multiple compositional resolutions. Verdict: **CONTEXT_SENSITIVE_DEPLOYMENT**. Body composition escalates from atoms (V=0.039) through bigrams (V=0.065) to MIDDLEs (V=0.087). p shows direct self-enrichment (O/E=1.417, all sections). k shows complementary e-bias (O/E=1.171, consistent with C866/C521). Ambient thermal/monitoring context predicts gallows type (p<0.002), while all event-like triggers are null (p>0.14). Aggregate gallows-archetype association is section-mediated; within-section tests all null.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GALLOWS_DEPLOYMENT_CHARACTERIZATION/` -- Phase 611 with consolidated script, JSON results, INDEX.md |
+| **ADDED** | C1772: Gallows-body composition association (V escalation: 0.039 -> 0.065 -> 0.087) |
+| **ADDED** | C1773: p-gallows direct body continuity (O/E=1.417, p=0.0001, all 5 sections) |
+| **ADDED** | C1774: k-gallows complementary e-bias (e O/E=1.171, p<0.000001; k self null) |
+| **ADDED** | C1775: Gallows ambient-context deployment (thermal p=0.0004, monitoring p=0.002; event triggers null) |
+| **ADDED** | C1776: Gallows-archetype non-reducibility (aggregate section-mediated; within-section null) |
+| **ADDED** | C1777: Gallows atom-substrate asymmetry (p=direct, k=complementary, t/f=null) |
+| **UPDATED** | INDEX.md -- +6 constraints (1776 total), Phase 611 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.83, 1776 constraints, 611 phases) |
+
+### Key Findings
+
+- **Body composition bias (C1772):** Gallows type shapes body at multiple resolutions. Effect size escalates: atoms V=0.039, bigrams V=0.065, MIDDLEs V=0.087. Compositional influence, not just individual-atom frequency shifts.
+- **p direct continuity (C1773):** Only gallows with significant self-atom enrichment (1.417x), surviving all 5 sections. Direct substrate inheritance.
+- **k complementary e-bias (C1774):** k paragraphs enrich e (cooling), not k (heat). The header declares condition, body implements complementary response. Consistent with C866/C521.
+- **Ambient-context deployment (C1775):** The most architecturally important finding. Thermal and monitoring state predict gallows selection (p<0.002). All event triggers null (alarms, rate-of-change, trajectory). Gallows respond to operational context, not discrete events.
+- **Archetype non-reducibility (C1776):** Within-section, gallows and archetypes are independent layers. The aggregate signal is a section composition confound.
+- **Substrate asymmetry (C1777):** The four gallows types have qualitatively different body ecology relationships. Not a uniform "gallows = atom label" pattern.
+- **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers encoding invocation posture under ambient operational conditions.
+
+---
+
 ## Version 5.82 (2026-03-19) - Phase 610: Stars Folio Close Reading
 
 ### Summary

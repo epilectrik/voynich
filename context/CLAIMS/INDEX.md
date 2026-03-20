@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1770 validated constraints | **Version:** 5.82 | **Date:** 2026-03-19
+**Total:** 1776 validated constraints | **Version:** 5.83 | **Date:** 2026-03-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5989,6 +5989,28 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Register architecture partial (C1748): operational parts share the pattern but Theorica breaks it. P5 fails because pseudo-Lull has a genuinely non-operational part with no Voynich analog.
 - N1 negative control passes (Bonferroni p=1.0): cross-system structural distance non-significant, matching C1739 lesson (within-context alignment works, cross-context rank concordance fails).
 - D1 diagnostic: Voynich encodes 2.16x more of its operational space (49/13=3.77) than pseudo-Lull formalizes (61/35=1.74), consistent with a coded system vs natural-language text.
+
+---
+
+### Phase 611: Gallows Deployment Characterization — CONTEXT_SENSITIVE_DEPLOYMENT (C1772-C1777)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1772 | Gallows-body composition association: gallows type predicts paragraph body composition at multiple resolutions with effect strength increasing at higher structure levels. Atom V=0.039, bigram V=0.065, MIDDLE V=0.087 (all p<0.000001). Escalation confirms compositional not just individual-atom gallows influence on body content | 2 | B_paragraph, gallows, composition, C866 | V_atom=0.039. V_bigram=0.065. V_middle=0.087. n_paras=572. n_atoms=46982. |
+| 1773 | p-gallows direct body continuity: p-gallows paragraphs show robust p-atom enrichment in body tokens (excluding header): O/E=1.417, p=0.0001. Survives section stratification (Bio 2.058x, Herbal 1.666x, Stars 1.283x, T 5.812x). p is the only gallows type with significant self-atom enrichment | 2 | B_paragraph, p-gallows, self-enrichment | OE=1.417. p=0.0001. n_p_paras=287. Bio_OE=2.058. Stars_OE=1.283. |
+| 1774 | k-gallows complementary e-bias: k-gallows paragraphs enrich e-atoms (O/E=1.171, p<0.000001) not k-atoms (O/E=0.905, p=0.088 null). Complementary rather than self-identity continuity. Consistent with C866 (k uses e-POST 29.8%) and C521 (e=cooling) | 2 | B_paragraph, k-gallows, e-atom, C866, C521 | k_e_OE=1.171. k_e_p<0.000001. k_self_OE=0.905. k_self_p=0.088. n_k_paras=35. |
+| 1775 | Gallows ambient-context deployment: gallows selection correlates with ambient thermal/monitoring context (3-line run-up: thermal KW p=0.0004, monitoring KW p=0.0019) but not event triggers (alarms p=0.14-0.26, deltas p=0.37-0.78, suffix routing p=0.252). Deployment is context-conditioned not event-dispatched | 2 | B_paragraph, deployment, context, thermal, monitoring | thermal_p=0.0004. monitoring_p=0.0019. alarm_k_p=0.22. alarm_h_p=0.14. delta_dk_p=0.37. suffix_p=0.252. |
+| 1776 | Gallows-archetype non-reducibility: aggregate gallows-archetype association (p=0.0009, V=0.130) is section-mediated. Within-section: Stars p=0.227, Bio p=0.683, Cosmo p=0.959. Gallows and archetypes are distinct structural layers | 2 | B_paragraph, gallows, archetype, section | agg_p=0.0009. agg_V=0.130. Stars_p=0.227. Bio_p=0.683. Cosmo_p=0.959. |
+| 1777 | Gallows atom-substrate asymmetry: body inheritance from shared atom substrate is partial and asymmetric. Direct in p (self O/E=1.417, p=0.0001), complementary in k (e O/E=1.171, p<0.000001), null in t (O/E=1.085, p=0.156) and f (O/E=1.308, p=0.461). Four gallows types have qualitatively different body ecology relationships | 2 | B_paragraph, gallows, atom_substrate, asymmetry | p_self_OE=1.417. k_e_OE=1.171. t_self_OE=1.085. f_self_OE=1.308. |
+
+**Phase 611 findings (Gallows Deployment Characterization, CONTEXT_SENSITIVE_DEPLOYMENT):**
+- Body composition bias (C1772): Gallows type shapes paragraph body at multiple resolutions with escalating effect (V=0.039 atoms -> 0.065 bigrams -> 0.087 MIDDLEs). Compositional influence, not just individual-atom frequency shifts.
+- p direct continuity (C1773): p is unique among gallows in showing robust self-atom enrichment (O/E=1.417), surviving section stratification across all 5 sections. Direct substrate inheritance.
+- k complementary e-bias (C1774): k paragraphs enrich e-atoms, not k-atoms. The header declares the condition (heat), the body implements the complementary response (cooling). Consistent with C866/C521.
+- Ambient-context deployment (C1775): Thermal and monitoring state predict gallows type (p<0.002). All event-like triggers (threshold crossings, rate-of-change, trajectory) are null (p>0.14). Deployment is context-conditioned, not event-dispatched, not sequentially routed.
+- Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
+- Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
+- **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
 
 ---
 

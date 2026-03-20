@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1770 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1776 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1771.
+the highest ID present is C1777.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1770 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1776 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1770 validated constraints are present as canonical one-line claims with tier
+1776 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-19 17:23
-**Version:** FROZEN STATE (1770 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-19 23:08
+**Version:** FROZEN STATE (1776 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2010,6 +2010,12 @@ C1768	Blind token-level monitoring prediction succeeds in Stars: expert-advisor 
 C1769	Stars monitoring axis encodes operational philosophy: extreme-pair comparison (f108v h_resid=-0.101 vs f107v h_resid=+0.075, both R1) reveals 5-dimensional divergence — paragraph architecture (9 large vs 20 small), kernel balance (e-dominant vs balanced), monitoring mode (passive vs active checkpoints), h morphological position (medial vs TERMINAL), sister pair selection (balanced ch/sh vs ch-dominant). Low-h = confidence programs ("trust the process"), high-h = vigilance programs ("watch constantly"). Not a parametric dial but a complete operational strategy difference	2	B_Stars, monitoring, h_ratio, paragraph, kernel, morphology, C1154, C1755, C1740
 C1770	Bridge rate invariant to monitoring level within Stars: bridge rate 88.1% for f108v (lowest h_resid) and 88.6% for f107v (highest h_resid). Monitoring axis operates through token deployment (composition, sequencing, positional emphasis) not vocabulary sourcing. All Stars folios draw from the same lexicon but deploy it under different operational strategies	2	B_Stars, monitoring, h_ratio, bridge, vocabulary
 C1771	h morphological position tracks monitoring philosophy: in high-monitoring Stars folios (f107v, f104r), h-kernel appears in TERMINAL compound position (architecturally significant endpoint per C1393/C1394). In lowest-monitoring folio (f108v), h is buried medially in compounds (structurally passive). Monitoring character (not just amount) varies with h_resid. When h is TERMINAL, instruction "ends with" monitoring; when h is medial, monitoring is incidental to other operations	2	B_Stars, monitoring, h_ratio, morphology, TERMINAL, C1393, C1394
+C1772	Gallows-body composition association: gallows type predicts paragraph body composition at multiple resolutions with effect strength increasing at higher structure levels. Atom V=0.039, bigram V=0.065, MIDDLE V=0.087. Escalation confirms compositional not just individual-atom gallows influence on body content	2	B_paragraph, gallows, composition, C866
+C1773	p-gallows direct body continuity: p-gallows paragraphs show robust p-atom enrichment in body tokens (excluding header): O/E=1.417, p=0.0001. Survives section stratification (Bio 2.058x, Herbal 1.666x, Stars 1.283x, T 5.812x). p is the only gallows type with significant self-atom enrichment	2	B_paragraph, p-gallows, self-enrichment
+C1774	k-gallows complementary e-bias: k-gallows paragraphs enrich e-atoms not k-atoms. Complementary rather than self-identity continuity. Consistent with C866 (k uses e-POST 29.8%) and C521 (e=cooling)	2	B_paragraph, k-gallows, e-atom, C866, C521
+C1775	Gallows ambient-context deployment: gallows selection correlates with ambient thermal/monitoring context but not event triggers. Deployment is context-conditioned not event-dispatched	2	B_paragraph, deployment, context, thermal, monitoring
+C1776	Gallows-archetype non-reducibility: aggregate gallows-archetype association is section-mediated. Within-section: Stars p=0.227, Bio p=0.683, Cosmo p=0.959. Gallows and archetypes are distinct structural layers	2	B_paragraph, gallows, archetype, section
+C1777	Gallows atom-substrate asymmetry: body inheritance from shared atom substrate is partial and asymmetric. Direct in p, complementary in k, null in t and f. Four gallows types have qualitatively different body ecology relationships	2	B_paragraph, gallows, atom_substrate, asymmetry
 
 ---
 
