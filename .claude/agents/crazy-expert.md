@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1669 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1807.
+the highest ID present is C1812.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2132,6 +2132,11 @@ C1804	Within-Herbal deployment dominance: n=27, shape|PREFIX r=0.337 (p=0.0002),
 C1805	Section retention strong (79-90%) across all channels. Bridge≈dark in B-space (r=0.257 vs 0.267), inverting A-side pattern due to dark pipeline section hyper-modulation (C1148).	2	B, section, retention, bridge, dark, C1148, C1709	vocab_ret=79.4pct. shape_ret=90.4pct. bridge_r=0.257. dark_r=0.267.
 C1806	Stars within-section h_ratio REGIME gradient: R3 h_ratio exceeds R1 with perfect separation (U=0, all 12 R3 > all 10 R1). Extends C1750 to REGIME level. Pre-registered opposite direction; corrected post-hoc per C1750. Requires replication.	2	B, Stars, REGIME, h_ratio, monitoring, C1735, C1750, C1752, post-hoc	U=0. R3_mean=0.219. R1_mean=0.101. n_R1=10. n_R3=12. perfect_sep=true.
 C1807	Brunschwig elevated-fire recipes have higher monitoring keyword density than gentle-fire: conditional 0.00298 vs 0.00184, raw 0.00444 vs 0.00328. Complex procedures need more checkpoints. Corrects assumption gentle=more monitoring.	2	Brunschwig, monitoring, fire_degree, recipe_structure	elev_cond=0.00298. gentle_cond=0.00184. n_gentle=205. n_elevated=40.
+C1808	Section significantly affects 13/14 major PREFIX fractions (KW p<0.05), mean eta-squared=0.21. qo most section-determined (eta2=0.60, Bio=0.239 vs Herbal=0.099). Section profiles match C1404: Bio=qo-dominant, Herbal=ch-dominant, Cosmo=BARE-dominant.	2	B, PREFIX, section, eta-squared, KW, C1404	sig_count=13/14. mean_eta2=0.21. qo_eta2=0.60. bio_qo=0.239. herbal_qo=0.099.
+C1809	Section+REGIME+kernel+headless_frac explain only ~11% of PREFIX variance (LOO R2=0.176, honest mean excl BARE=0.11). REGIME adds near-zero within sections (Herbal 1/14 sig, Stars 3/14 sig). ~89% of PREFIX composition unexplained by structural variables.	2	B, PREFIX, REGIME, section, LOO, variance, C1712	mean_loo_r2=0.176. excl_bare_r2=0.11. herbal_regime_sig=1/14. stars_regime_sig=3/14.
+C1810	PREFIX retains 81.4% of manifold correlation after controlling section+REGIME+kernel+headless (partial Mantel D6 r=0.368, p=0.0001). Kernel+headless alone retain 94.5%. PREFIX is not kernel-mediated despite both loading on PC1 (C1715).	2	B, PREFIX, manifold, partial_Mantel, kernel, C1715, C1801	D1_r=0.453. D6_r=0.368. retention=81.4pct. D5_retention=94.5pct. p=0.0001.
+C1811	PREFIX composition is paragraph-level, not folio-level. ICC=0.185 (81.5% within-folio). Within-folio paragraph JSD=0.328 exceeds between-folio JSD=0.240. Each paragraph independently selects PREFIX profile. sh most folio-consistent (ICC=0.382); or/pch/ar near-zero.	2	B, PREFIX, paragraph, ICC, JSD, C1182	mean_icc=0.185. sh_icc=0.382. within_jsd=0.328. between_jsd=0.240. n_para=412.
+C1812	Architectural closure: PREFIX composition is independent paragraph-level design parameter, not downstream of section/REGIME/kernel. Hierarchy: section→shared templates (C1569); paragraph→independent PREFIX selection (C1811); PREFIX→dynamics (C1405)→manifold (C1801). REGIME is emergent from PREFIX choices, not causal.	2	B, PREFIX, architecture, paragraph, section, REGIME, C1569, C1405, C1801, C1811	loo_r2=0.11. mantel_retention=81.4pct. icc=0.185.
 
 ---
 

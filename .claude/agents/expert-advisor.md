@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1806 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1811 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1807.
+the highest ID present is C1812.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1806 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1811 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1806 validated constraints are present as canonical one-line claims with tier
+1811 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-20 21:37
-**Version:** FROZEN STATE (1806 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-20 22:45
+**Version:** FROZEN STATE (1811 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2046,6 +2046,11 @@ C1804	Within-Herbal deployment dominance: among 27 Herbal folios, shape\|PREFIX 
 C1805	Section retention strong across all channels: vocab\|section retains 79.4% of raw r, shape\|section retains 90.4%, combined\|section retains 87.2%. No channel is primarily a section proxy. Shape is least section-dependent. Bridge-only vocab ≈ dark-only vocab in B-space, inverting the A-side pattern (C1709) due to dark pipeline section hyper-modulation (C1148)	2	B, section, retention, partial, Mantel, bridge, dark, C1148, C1709
 C1806	Stars within-section h_ratio REGIME gradient: R3 h_ratio exceeds R1 with perfect separation (U=0, all 12 R3 values > all 10 R1 values). R3 mean=0.219, R1 mean=0.101. Extends C1750 (sublimation > distillation monitoring) to REGIME level. Pre-registered in OPPOSITE direction (R1>R3) due to C1750 misreading; corrected direction confirmed post-hoc. Consistent with C1735 (elevated fire = more thermal demand) and C1752 (monitoring-thermal anti-correlation). Requires replication as pre-registered prediction	2	B, Stars, REGIME, h_ratio, monitoring, C1735, C1750, C1752, post-hoc
 C1807	Brunschwig elevated-fire recipes have higher monitoring keyword density than gentle-fire: conditional density 0.00298 vs 0.00184, raw density 0.00444 vs 0.00328. Both measures agree. Complex procedures require more checkpoint instructions. Corrects assumption that gentle = more monitoring-intensive. Brunschwig-internal empirical fact independent of Voynich data	2	Brunschwig, monitoring, fire_degree, recipe_structure
+C1808	Section significantly affects 13/14 PREFIX fractions (mean eta2=0.21) but explains only LOO R2=0.14 of PREFIX variance. REGIME adds near-zero within sections (Herbal 1/14 sig, Stars 3/14 sig). Section effect is real but modest; REGIME contributes almost nothing to PREFIX beyond section	2	B, section, PREFIX, REGIME, KW, eta-squared, C1405, C1406
+C1809	Hierarchical variance decomposition of PREFIX composition: section+REGIME+kernel+headless LOO R2=0.11 (excluding definitional BARE-headless overlap; 0.18 including BARE). qo most section-determined (LOO R2=0.58); or/tch/ar unpredictable (LOO R2<0). ~89% of PREFIX composition unexplained by structural variables	2	B, PREFIX, variance, section, REGIME, kernel, LOO, C1169, C1715
+C1810	PREFIX composition retains 81.4% of apparatus manifold correlation after controlling for section+REGIME+kernel+headless. Kernel+headless control alone retains 94.5%. PREFIX carries independent manifold information not mediated by section, REGIME, or kernel ecology	2	B, PREFIX, manifold, apparatus, independence, Mantel, C1801, C1715
+C1811	Within-folio paragraph PREFIX composition ICC=0.185 (81.5% of variance within-folio). Within-folio JSD (0.328) exceeds between-folio JSD (0.240) by 1.37x. PREFIX composition is paragraph-level, not folio-level. sh most folio-consistent (ICC=0.382); or/pch/ar near-zero (ICC<0.05)	2	B, PREFIX, paragraph, folio, ICC, design_freedom, C1182, C1399, C1573
+C1812	PREFIX composition is an independent paragraph-level design parameter, not downstream of section, REGIME, or kernel ecology. Section explains ~14%, REGIME near-zero within sections, kernel retention 94.5%. Folio identity = statistical ensemble of paragraph-level PREFIX choices. REGIME is emergent from PREFIX composition, not a cause of it. Closes architectural question of how folio identity arises	2	B, PREFIX, design_freedom, paragraph, manifold, synthesis, C1405, C1569, C1573, C1801
 
 ---
 

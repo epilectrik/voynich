@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1806 validated constraints | **Version:** 5.89 | **Date:** 2026-03-20
+**Total:** 1811 validated constraints | **Version:** 5.90 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 618: PREFIX Composition Determinants — FOLIO_DESIGN_FREEDOM (C1808-C1812)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1808 | Section significantly affects 13/14 PREFIX fractions (mean eta2=0.21) but explains only LOO R2=0.14 of PREFIX variance. REGIME adds near-zero within sections (Herbal 1/14 sig, Stars 3/14 sig). Section effect is real but modest; REGIME contributes almost nothing to PREFIX beyond section | 2 | B, section, PREFIX, REGIME, KW, eta-squared, C1405, C1406 | eta2_mean=0.21. sig=13/14. loo_r2_sec=0.14. herbal_within_sig=1/14. stars_within_sig=3/14. |
+| 1809 | Hierarchical variance decomposition of PREFIX composition: section+REGIME+kernel+headless LOO R2=0.11 (excluding definitional BARE-headless overlap; 0.18 including BARE). qo most section-determined (LOO R2=0.58); or/tch/ar unpredictable (LOO R2<0). ~89% of PREFIX composition unexplained by structural variables | 2 | B, PREFIX, variance, section, REGIME, kernel, LOO, C1169, C1715 | loo_r2_excl_bare=0.11. loo_r2_incl_bare=0.18. qo_loo=0.58. n=82. predictors=10. |
+| 1810 | PREFIX composition retains 81.4% of apparatus manifold correlation after controlling for section+REGIME+kernel+headless (partial Mantel r=0.368, p=0.0001, z=19.53). Kernel+headless control alone retains 94.5%. PREFIX carries independent manifold information not mediated by section, REGIME, or kernel ecology | 2 | B, PREFIX, manifold, apparatus, independence, Mantel, C1801, C1715 | D1_r=0.453. D6_r=0.368. D6_retention=81.4pct. D5_retention=94.5pct. n=76. perms=10000. |
+| 1811 | Within-folio paragraph PREFIX composition ICC=0.185 (81.5% of variance within-folio). Within-folio JSD (0.328) exceeds between-folio JSD (0.240) by 1.37x. PREFIX composition is paragraph-level, not folio-level. sh most folio-consistent (ICC=0.382); or/pch/ar near-zero (ICC<0.05) | 2 | B, PREFIX, paragraph, folio, ICC, design_freedom, C1182, C1399, C1573 | mean_icc=0.185. sh_icc=0.382. c1182_sister=0.317. jsd_ratio=1.37. n_para=412. n_folio=73. |
+| 1812 | PREFIX composition is an independent paragraph-level design parameter, not downstream of section, REGIME, or kernel ecology. Section explains ~14%, REGIME near-zero within sections, kernel retention 94.5%. Folio identity = statistical ensemble of paragraph-level PREFIX choices. REGIME is emergent from PREFIX composition, not a cause of it. Closes architectural question of how folio identity arises | 2 | B, PREFIX, design_freedom, paragraph, manifold, synthesis, C1405, C1569, C1573, C1801 | loo_r2=0.11. D6_retention=81.4pct. D5_retention=94.5pct. icc=0.185. |
+
+**Phase 618 findings (PREFIX Composition Determinants, FOLIO_DESIGN_FREEDOM):**
+- Section effect modest (C1808): 13/14 PREFIXes differ by section (eta2=0.21) but LOO R2 only 0.14. REGIME adds near-zero within sections. Confirms C1405/C1406 from the PREFIX side.
+- Variance decomposition (C1809): Section+REGIME+kernel+headless explain only ~11% of PREFIX composition (LOO, excluding BARE tautology). qo is the sole section-determined PREFIX (LOO R2=0.58, consistent with C1300 qo=near-pure THERMAL and Bio's thermal intensity). ~89% of PREFIX is free.
+- PREFIX not a proxy (C1810): 81.4% manifold retention after all controls. Kernel+headless retention 94.5% despite C1715 showing both load on PC1. PREFIX carries apparatus information through channels beyond kernel routing.
+- Paragraph-level operation (C1811): ICC=0.185 means only 18.5% of PREFIX variance is between-folio. Each paragraph independently selects its PREFIX profile. sh most consistent (ICC=0.382), rare PREFIXes near-zero.
+- Architectural closure (C1812): The design hierarchy is: section → shared templates (C1569); paragraph → independent PREFIX selection; PREFIX → dynamics (C1405) → manifold (C1801). Folio identity = ensemble of paragraph PREFIX choices (C1573). REGIME is emergent from PREFIX composition, not a cause.
 
 ---
 

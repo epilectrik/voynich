@@ -4,6 +4,35 @@
 
 ---
 
+## Version 5.90 (2026-03-20) - Phase 618: PREFIX Composition Determinants
+
+### Summary
+
+Phase 618 tests what determines folio-level PREFIX composition — the strongest single apparatus manifold predictor (C1801, r=0.476). Five blocks decompose PREFIX variance across section, REGIME, kernel ecology, and paragraph-level diversity. Section explains only LOO R2=0.14 of PREFIX variance; REGIME adds near-zero within sections; kernel+headless retain 94.5% of manifold correlation. After controlling for all structural variables, PREFIX retains 81.4% of its manifold signal (partial Mantel r=0.368, p=0.0001). Within-folio ICC=0.185 shows PREFIX is paragraph-level, not folio-level. Verdict: **FOLIO_DESIGN_FREEDOM** — PREFIX is an independent paragraph-level design parameter, closing the architectural question of how folio identity arises.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PREFIX_COMPOSITION_DETERMINANTS/` -- Phase 618 with script, JSON results, INDEX.md |
+| **ADDED** | C1808: Section effect on PREFIX (eta2=0.21, LOO R2=0.14, REGIME near-zero within sections) |
+| **ADDED** | C1809: Variance decomposition (LOO R2=0.11 excl BARE; qo sole section-determined PREFIX at 0.58) |
+| **ADDED** | C1810: Residual PREFIX→manifold (D6 r=0.368, retention=81.4%; D5 kernel retention=94.5%) |
+| **ADDED** | C1811: Within-folio PREFIX ICC=0.185 (paragraph-level, not folio-level) |
+| **ADDED** | C1812: Synthesis — PREFIX as independent paragraph-level design parameter |
+| **UPDATED** | INDEX.md -- +5 constraints (1811 total), Phase 618 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.90, 1811 constraints, 618 phases) |
+
+### Key Findings
+
+- **PREFIX is not a proxy (C1810):** 81.4% manifold retention after section+REGIME+kernel+headless control. Kernel alone retains 94.5%, despite both loading on PC1 (C1715). PREFIX carries apparatus information through channels beyond kernel routing — probably deployment channels (C1800).
+- **~89% of PREFIX is free (C1809):** Section+REGIME+kernel+headless explain only ~11% (LOO R2, excluding BARE tautology). qo is the sole section-determined PREFIX (LOO R2=0.58), consistent with C1300 (qo=near-pure THERMAL). Everything else is paragraph-level free choice.
+- **Paragraph-level operation (C1811):** ICC=0.185 means only 18.5% of PREFIX variance is between-folio. Each paragraph independently selects its PREFIX profile. The folio is characterized by the statistical shape of its paragraph ensemble, not by a fixed PREFIX template.
+- **Architectural closure (C1812):** Section → shared templates (C1569); paragraph → independent PREFIX selection (C1811); PREFIX → dynamics (C1405) → manifold (C1801). Folio identity = ensemble of paragraph PREFIX choices (C1573). REGIME is emergent from PREFIX composition, not a cause of it.
+- **REGIME is emergent, not causal:** Within-Herbal REGIME effect on PREFIX: 1/14 significant. REGIME characterizes the statistical outcome of paragraph PREFIX choices, it doesn't determine them.
+
+---
+
 ## Version 5.89 (2026-03-20) - Phase 617: Brunschwig Structural Recipe Decomposition
 
 ### Summary
