@@ -5308,6 +5308,27 @@ class RosettesAnalyzer:
         """Return {rosette_position: set_of_middles} for all 9 rosettes."""
         return {r: self.get_entity_middles(r) for r in self.get_rosettes()}
 
+    def get_visual_description(self, name: str) -> Optional[str]:
+        """Get the visual description for an entity (rosettes only)."""
+        entity = self.get_entity(name)
+        if entity:
+            return entity.get('visual_description')
+        return None
+
+    def get_connects_to(self, name: str) -> List[str]:
+        """Get the list of entities this rosette connects to."""
+        entity = self.get_entity(name)
+        if entity:
+            return entity.get('connects_to', [])
+        return []
+
+    def get_grid_position(self, name: str) -> Optional[str]:
+        """Get the grid position string for an entity."""
+        entity = self.get_entity(name)
+        if entity:
+            return entity.get('grid_position')
+        return None
+
     def metadata(self) -> Dict:
         """Return the _metadata section from the annotated JSON."""
         return self._load().get('_metadata', {})

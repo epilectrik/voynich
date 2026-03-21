@@ -16,7 +16,15 @@
       "Paths are first-class entities connecting adjacent rosettes",
       "Transcription corrections noted in individual locus notes",
       "Outside face tokens (Roman numerals I-VIII) excluded — separate treatment needed"
-    ]
+    ],
+    "foldout_visual": {
+      "topology": "4 cardinals connect directly to CENTER via conical funnels. 4 corners connect only to adjacent cardinals. Outer ring path connects all 8 outer rosettes in a loop.",
+      "transcriber_visual_notes": {
+        "B2_SOUTH": "Transcriber describes SOUTH interior as 'windmill'",
+        "M2_CENTER": "Transcriber describes CENTER as having 'mushroom areas'"
+      }
+    },
+    "visual_source": "phases/ROSETTES_FUNCTIONAL_ANATOMY/results/rosettes_reference.json"
   },
   "summary": {
     "total_entities": 19,
@@ -759,7 +767,13 @@
       },
       "notes": [
         "fRos.17: this is written in line with the feature that \"points\" toward the center diagram"
-      ]
+      ],
+      "visual_description": "Most botanical-looking rosette. CORNER DOODLE: Faded sun/star with radiating rays at outermost (top-left) corner. MARGIN TEXT: Vertical column of 8-10 lines of Voynichese tokens in left margin area -- substantial text outside diagram boundary. CENTRAL EYE/LENS: Eye/lens-shaped opening at center (similar to SW) -- pointed top and bottom, mostly empty interior with a few faint tokens. Thin golden/tan outline. CONCENTRIC BEAD RINGS (dominant feature): Three distinct rings of densely packed individual circles/spheres surrounding the eye. Inner ring: smaller circles tight against eye. Middle ring: larger circles with prominent BLUE-TEAL coloring (most vivid layer, blue interspersed with plain). Outer ring: dense uncolored/tan circles. CILIA BORDER: Tiny radiating hash marks projecting outward from outer ring edge (same biological motif as SW). BOTANICAL CHARACTER: Overall form resembles flower head cross-section or seed pod anatomy. Bead rings suggest stamens/ovules/seeds. Hooked curved tooth-like projections around outer ring (venus fly trap teeth or calyx segments of exploded flower diagram). Cilia reads as fine hairs/trichomes. TUBE PROJECTION TOWARD CENTER: Distinctly cylindrical/tubular (not conical like cardinals, not pointed like SW). Stem/duct/channel appearance with internal segmented walls and some blue coloring. Most plumbing-like of any corner projection. PATHS: Wavy teal path to NORTH (top), sinuous blue path to WEST (bottom-right). Near path junction: 3-4 small circular objects resembling vessels viewed from above (circles with inner dots). RING TEXT: Continuous arc of tokens around circumference.",
+      "connects_to": [
+        "NORTH",
+        "WEST"
+      ],
+      "grid_position": "top-left corner"
     },
     "NORTH": {
       "total_loci": 11,
@@ -1392,7 +1406,14 @@
         "fRos.28: spoke like",
         "fRos.29: spoke like",
         "fRos.30: spoke like"
-      ]
+      ],
+      "visual_description": "Blue spoke/petal pattern filling center. Star/dot pattern between spokes (vapor/steam?). Cylindrical appearance. Dense ball/oval filler around inside rim. Conical connection to CENTER.",
+      "connects_to": [
+        "CENTER",
+        "NW",
+        "NE"
+      ],
+      "grid_position": "top-center cardinal"
     },
     "NE": {
       "total_loci": 12,
@@ -2197,7 +2218,13 @@
         "fRos.41: pie chart feature",
         "fRos.42: pie chart feature but. token might be damaged/inccorect",
         "fRos.43: corner feature, part of the pie chart"
-      ]
+      ],
+      "visual_description": "Most architecturally complex rosette. CASTLE/SETTLEMENT THEME. STAR FIELD: Entire interior filled with very dense star/asterisk pattern (highest star density of any rosette). SPIRAL TEXT (UNIQUE): At center, Voynichese tokens arranged in spiral pattern curving inward -- completely unique among all 9 rosettes. Small pendant/hanging feature at bottom edge of central circle. ARCHITECTURAL CIRCUMFERENCE: Instead of bead rings or scalloped borders, the outer ring has distinct structural elements: tower-like structures with peaked triangular tops and horizontal banding (stone walls/layered roofs), prominent fan/shell-shaped structure on right side, dome/rounded cap structure upper-left with striping and blue-teal coloring. Blue-teal coloring on many structures (water flowing through?). Wave/scallop patterns integrated into architectural forms. Overall effect: skyline or settlement ringing the central space. PROJECTION TOWARD CENTER (bottom): More organic/flowing than other corners -- wavy undulating walls with scalloped texture and blue-teal coloring. Natural watercourse or organic duct appearance. Wider and more elaborate than other projections. TENDRILS/SUB-PATHS: Significantly more branching paths than any other rosette. Prominent bottom-left tendril with dense blue-teal fish-scale/bead pattern. Multiple tendrils with varied textures (wavy, flowing, scalloped). Some paths fork/branch. CORNER DOODLE: Pie chart -- circular feature divided into sections/segments at outermost corner (bottom-left). LEFT LANDSCAPE: Terrain/landscape features, hills/structures, blue-teal water patterns. TEXT DISTRIBUTION: Spiral center tokens, ring text, scattered tokens OUTSIDE diagram boundary, tokens along paths/tendrils, floating in open spaces. Text not neatly contained within diagram.",
+      "connects_to": [
+        "NORTH",
+        "EAST"
+      ],
+      "grid_position": "top-right corner"
     },
     "WEST": {
       "total_loci": 9,
@@ -2706,7 +2733,14 @@
         "fRos.53: spoke like",
         "fRos.54: spoke like",
         "fRos.55: spoke like - but i think this is actually okydy"
-      ]
+      ],
+      "visual_description": "Conical funnel connection to CENTER (same style as other cardinals). Central pattern: 8-10 soft, rounded, bulbous lobes radiating from center point in fan arrangement. Lobes have scalloped/cloud-like outer edges (same morphology as botanical flower/leaf forms and alembic vessel spouts in CENTER). Blue-green dashes/marks fill interior of each lobe. Golden/tan coloring at lobe bases near center. Star/asterisk patterns fill triangular wedge spaces between lobes (same motif as NORTH, SW). Small dark center point. Text in two zones: spoke-text words in wedge spaces between lobes (label-type), and ring-text arc around inner circumference. Scalloped filler at rim. Teal wavy connection paths to NW and SW corners visible at edges. KEY CONTRAST WITH NORTH: Where NORTH has sharp blade-like spokes, WEST has soft curvilinear lobes -- angular vs rounded geometry. Same blue-teal palette and star patterns, but fundamentally different form language (energetic/sharp vs condensed/soft).",
+      "connects_to": [
+        "CENTER",
+        "NW",
+        "SW"
+      ],
+      "grid_position": "middle-left cardinal"
     },
     "CENTER": {
       "total_loci": 25,
@@ -3793,7 +3827,15 @@
         "fRos.84: spoke like -bottom biased",
         "fRos.85: spoke like -bottom biased",
         "fRos.86: I think this is supposed to be sody but not positive."
-      ]
+      ],
+      "visual_description": "Concentric rings. Innermost: ring of alembic/retort vessels (bulbous bodies, narrow necks). Blue radiating pattern (heat/vapor?). Scalloped filler rings. Outward-pointing projections at circumference connecting to cardinals.",
+      "connects_to": [
+        "NORTH",
+        "SOUTH",
+        "EAST",
+        "WEST"
+      ],
+      "grid_position": "center"
     },
     "EAST": {
       "total_loci": 5,
@@ -4223,7 +4265,14 @@
           ]
         }
       },
-      "notes": []
+      "notes": [],
+      "visual_description": "Most visually distinct of all 4 cardinals. Conical funnel connection to CENTER (water-like surface extends into connection). CENTER FEATURE: Delicate fountain/spray form at center -- thin curved lines emanating up and down from central point, like water spray or unfurling plant. A few tokens written near this feature. WATER FIELD: Vast majority of interior covered with dense blue-teal dashes as continuous ripple-like surface (NOT organized into spokes or lobes). Reads as liquid body/water surface. CLOUD/STEAM FORMATIONS: 5-7 puffy scalloped cloud-like masses with brown ink outlines scattered across water field. Irregular organic shapes (cumulus/steam). Same scalloped outline as WEST lobes and botanical forms, but freeform not radial. BUBBLE RING: Thick dense band of individually-drawn small circles (many blue-teal filled) packed tightly around outer portion. Unique to this rosette -- like beads, pearls, or bubbles. TALLY MARKS: Groups of vertical hash marks (||| ||| |||) visible on left side -- counting/measurement notation not prominent in other rosettes. TEXT: Ring text around outer circumference outside bubble ring; a few center tokens near fountain among clouds. NO STARS -- unlike NORTH, WEST, SW which all have star/asterisk patterns. Stars replaced by water field. KEY CONTRAST: If stars=vapor(dry), EAST=liquid(wet). Most aqueous rosette alongside SW corner.",
+      "connects_to": [
+        "CENTER",
+        "NE",
+        "SE"
+      ],
+      "grid_position": "middle-right cardinal"
     },
     "SW": {
       "total_loci": 21,
@@ -5059,7 +5108,13 @@
         "fRos.117: radial from CENTER, external, below diagram, clustered",
         "fRos.118: radial from CENTER, external, below diagram, clustered",
         "fRos.119: radial from CENTER, external, below diagram, clustered"
-      ]
+      ],
+      "visual_description": "SHAPE: Eye/lens-shaped central area (NOT circular) -- pointed at both horizontal ends, wider vertically. INNERMOST: Small 5-6 petal flower/rosette motif at very center. STAR FIELD: Stars/asterisks fill interior of eye shape on plain parchment (same motif as NORTH, WEST). BEAD RING: Dense ring of individually-drawn packed circles borders the eye -- multi-colored (blue-teal, golden/tan, darker). Very similar to EAST bubble ring. Defines eye boundary. SCALLOPED BORDER WITH CILIA: Puffy cloud-like outline outside circle ring with tiny radiating hash marks/bristles projecting outward -- biological/cell-like appearance. RADIATING WATER STREAMS: 5-6 sinuous blue-teal water streams radiate outward from central eye in multiple directions. Snake-like, river-delta branching pattern. CLOUD/STEAM: Puffy scalloped cloud masses scattered between water streams, some with blue-teal dashes inside (wet steam). Similar to EAST clouds. TEXT: Tokens in outer ring area, along water streams, dense upper arc (ring-text), tokens on projection toward CENTER. CORNER FEATURES (shared property of all 4 corners): (1) Bottom-left 'constellation' doodle -- small circular diagram/wheel with internal marks (dots/lines in pattern, like miniature chart). (2) Projection toward CENTER with tokens written on it -- visual extension toward center but no direct path connection. (3) Path tokens: Voynichese tokens written along the wavy connection paths to adjacent rosettes (SOUTH, WEST). TALLY MARKS visible on left side (||| groups, similar to EAST). No direct connection to CENTER. Most fluid/aqueous rosette with SW and EAST.",
+      "connects_to": [
+        "WEST",
+        "SOUTH"
+      ],
+      "grid_position": "bottom-left corner"
     },
     "SOUTH": {
       "total_loci": 9,
@@ -5586,7 +5641,14 @@
         "fRos.128: spoke like",
         "fRos.129: spoke like",
         "fRos.130: spoke like"
-      ]
+      ],
+      "visual_description": "Visually very similar to NORTH (matching blue spoke pattern). Conical connection to CENTER.",
+      "connects_to": [
+        "CENTER",
+        "SW",
+        "SE"
+      ],
+      "grid_position": "bottom-center cardinal"
     },
     "SE": {
       "total_loci": 5,
@@ -5991,7 +6053,13 @@
         "fRos.134: Has what looks like a funny f",
         "fRos.135: By the protrusion pointing at the center",
         "fRos.136: Near the sun corner feature"
-      ]
+      ],
+      "visual_description": "Most compositionally complex rosette. Reads as OVERHEAD MAP/PLAN VIEW of a facility or garden. CENTRAL WATER BASIN: Rectangular/cross-shaped feature at center with deep dark blue-teal coloring (most intensely blue feature on entire foldout). Central hub/platform with radiating compass-rose form. 4 channels/paths extend outward in X-pattern from center. Concentric oval ripple lines surround feature (contour/water ripples). Reads as pool or basin viewed from above with central structure and access paths. RECTANGULAR GRID (upper-left): Distinct rectangular area with parallel horizontal rows separated by gaps and vertical divisions. Blue-teal and greenish coloring between rows. Very geometric/regular. Reads as garden bed, raised planting rows, agricultural plot, or possibly drying rack/storage grid viewed from above. CONVERGING PIPES (right side): Multiple tube-like structures radiating outward from center with scalloped fish-scale texture and blue-teal coloring. Fan out like root system, drainage network, or aqueduct. Some thick and prominent. Tally marks (||| groups) along some channels. STAR FIELD: Dense stars covering left and lower portions (high density like NE). AMBIGUOUS: In overhead-map context next to garden grid and water basin, evenly spaced stars could represent planted field from above rather than vapor. PILLARS/COLUMNS: Several elongated segmented structures around interior (towers, supports, or tall plants/trees in plan view). CORNER DOODLE: Sun at outer corner -- matches NW sun on diagonally opposite corner. NW-SE diagonal both have suns; SW has constellation, NE has pie chart. BOUNDARY: Mixed textures -- packed circle/bead ring at bottom/bottom-left, scalloped pipe textures elsewhere. Less uniform than other rosettes. PLANT FEATURES: Branching organic structures mixed with architectural elements. Pipes could double as root systems or irrigation. TEXT: Scatter-shot distribution -- tokens between features, along channels, in open spaces, near structures. No clean ring text. Annotations tied to specific features rather than fixed layout.",
+      "connects_to": [
+        "SOUTH",
+        "EAST"
+      ],
+      "grid_position": "bottom-right corner"
     },
     "PATH_EAST_SE": {
       "total_loci": 2,
