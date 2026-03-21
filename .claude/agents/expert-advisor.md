@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1822 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1825 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1823.
+the highest ID present is C1826.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1822 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1825 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1822 validated constraints are present as canonical one-line claims with tier
+1825 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-21 09:26
-**Version:** FROZEN STATE (1822 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-21 10:43
+**Version:** FROZEN STATE (1825 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2062,6 +2062,9 @@ C1820	Per-entity dual population category divergence: within-entity classified/u
 C1821	EAST rosette e-HEAD anomaly: only entity with e-HEAD > o-HEAD (31% vs 25%), highest kernel density (32.3%), OPERATION 44.4% among classified. ok-prefix dominance (10/32 tokens). Most execution-like rosette entity, displaced from AZC-like metalayer profile toward B execution character	2	Rosettes, EAST, e-HEAD, execution, anomaly, C1475
 C1822	CENTER rosette integration hub: lowest dual-population JSD (0.124), highest headless rate (32.8%), most balanced HEAD distribution, largest token count (67). Both vocabulary layers encode same operational context. Spatial analog of AXM universal attractor (C978)	2	Rosettes, CENTER, integration, headless, convergence, C978, C1132
 C1823	CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy modulation. Indexes pure monitoring/flow operations without thermal input. Unique among all Rosettes entities. 6 tokens (low power)	3	Rosettes, CLOCK, kernel, monitoring, flow
+C1824	Rosettes visual-grammar independence at entity level: composite alignment score 0.156 vs permutation null mean 0.338, p=0.888 (10,000 shuffles). Visual imagery does NOT predict grammar profiles. C138 illustration epiphenomenality holds at the metalayer entity level. Three pre-registered hypotheses (liquid->e-HEAD, plan_view->o-HEAD, complexity->compound) all fail or show negligible effect. H1 reversed (liquid entities have LOWER e-HEAD). Framed as C138 exception test with contaminated descriptions — null confirmed despite favorable bias	2	Rosettes, visual, grammar, correlation, C138, C140, independence
+C1825	Rosettes visual complexity co-varies with grammar diversity: rho(feature_count, mean_pairwise_JSD)=0.533. Entities with more complex visual descriptions are more grammatically distinctive. Does NOT mean visual content predicts grammar content — both may reflect functional prominence. C1817 uniformity (mean_JSD=0.074) holds at aggregate, but diversity gradient exists	2	Rosettes, visual, complexity, diversity, grammar, C1817
+C1826	Rosettes spatial non-prediction replicated at category level (Phase 621): mean adjacent JSD=0.080, non-adjacent=0.073, delta=0.007. Independent replication of C1818 within Phase 621's correlation framework	2	Rosettes, spatial, adjacency, replication, C1818
 
 ---
 

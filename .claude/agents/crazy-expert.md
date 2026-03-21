@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1680 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1683 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1823.
+the highest ID present is C1826.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2148,6 +2148,9 @@ C1820	Per-entity dual population category divergence: within-entity classified/u
 C1821	EAST rosette e-HEAD anomaly: only entity with e-HEAD > o-HEAD (31% vs 25%), highest kernel density (32.3%), OPERATION 44.4% among classified. ok-prefix dominance (10/32). Most execution-like rosette.	2	Rosettes, EAST, e-HEAD, execution, anomaly, C1475	e_head=31.25pct. o_head=25.0pct. kernel=32.3pct. operation=44.4pct.
 C1822	CENTER rosette integration hub: lowest dual-population JSD (0.124), highest headless rate (32.8%), most balanced HEAD, largest token count (67). Both vocabulary layers encode same operational context. Spatial analog of AXM attractor (C978).	2	Rosettes, CENTER, integration, headless, convergence, C978, C1132	dual_jsd=0.124. headless=32.8pct. n=67.
 C1823	CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy modulation. Pure monitoring/flow without thermal input. Unique among Rosettes entities. 6 tokens (low power).	3	Rosettes, CLOCK, kernel, monitoring, flow	k_kernel=0pct. flow=50pct. n=6.
+C1824	Rosettes visual-grammar independence at entity level: composite alignment 0.156 vs null mean 0.338, p=0.888. Visual imagery does NOT predict grammar profiles. C138 epiphenomenality holds at metalayer entity level. Three pre-registered hypotheses all fail. H1 reversed (liquid entities have LOWER e-HEAD).	2	Rosettes, visual, grammar, C138, independence	composite=0.156. null_mean=0.338. p=0.888. h1_rb=-0.300. n=9.
+C1825	Rosettes visual complexity co-varies with grammar diversity: rho(feature_count, mean_JSD)=0.533. Visually complex entities more grammatically distinctive. Complexity-complexity link, not content-content.	2	Rosettes, visual, complexity, diversity, C1817	rho=0.533. fc_range=1-8.
+C1826	Rosettes spatial non-prediction replicated (Phase 621): adj JSD=0.080, nonadj=0.073, delta=0.007. Independent C1818 replication.	2	Rosettes, spatial, adjacency, C1818	adj=0.080. nonadj=0.073. delta=0.007.
 
 ---
 

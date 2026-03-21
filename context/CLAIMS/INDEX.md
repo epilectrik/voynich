@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1822 validated constraints | **Version:** 5.92 | **Date:** 2026-03-20
+**Total:** 1825 validated constraints | **Version:** 5.93 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6030,6 +6030,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - PREFIX not a proxy (C1810): 81.4% manifold retention after all controls. Kernel+headless retention 94.5% despite C1715 showing both load on PC1. PREFIX carries apparatus information through channels beyond kernel routing.
 - Paragraph-level operation (C1811): ICC=0.185 means only 18.5% of PREFIX variance is between-folio. Each paragraph independently selects its PREFIX profile. sh most consistent (ICC=0.382), rare PREFIXes near-zero.
 - Architectural closure (C1812): The design hierarchy is: section → shared templates (C1569); paragraph → independent PREFIX selection; PREFIX → dynamics (C1405) → manifold (C1801). Folio identity = ensemble of paragraph PREFIX choices (C1573). REGIME is emergent from PREFIX composition, not a cause.
+
+---
+
+### Phase 621: Rosettes Visual-Grammar Correlation — VISUAL_GRAMMAR_INDEPENDENT (C1824-C1826)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1824 | Rosettes visual-grammar independence at entity level: composite alignment score 0.156 vs permutation null mean 0.338, p=0.888 (10,000 shuffles). Visual imagery does NOT predict grammar profiles. C138 illustration epiphenomenality holds at the metalayer entity level. Three pre-registered hypotheses (liquid->e-HEAD, plan_view->o-HEAD, complexity->compound) all fail or show negligible effect. H1 reversed (liquid entities have LOWER e-HEAD). Framed as C138 exception test with contaminated descriptions — null confirmed despite favorable bias | 2 | Rosettes, visual, grammar, correlation, C138, C140, independence | composite=0.156. null_mean=0.338. p=0.888. effect=-1.17. h1_rb=-0.300. h2_rb=0.143. h3_rho=0.025. n=9. n_perm=10000. |
+| 1825 | Rosettes visual complexity co-varies with grammar diversity: rho(feature_count, mean_pairwise_JSD)=0.533. Entities with more complex visual descriptions are more grammatically distinctive. Does NOT mean visual content predicts grammar content — both may reflect functional prominence. C1817 uniformity (mean_JSD=0.074) holds at aggregate, but diversity gradient exists | 2 | Rosettes, visual, complexity, diversity, grammar, C1817 | rho_fc_jsd=0.533. rho_dl_jsd=0.317. fc_range=1-8. jsd_range=0.042-0.125. |
+| 1826 | Rosettes spatial non-prediction replicated at category level (Phase 621): mean adjacent JSD=0.080, non-adjacent=0.073, delta=0.007. Independent replication of C1818 within Phase 621's correlation framework | 2 | Rosettes, spatial, adjacency, replication, C1818 | adj_jsd=0.080. nonadj_jsd=0.073. delta=0.007. |
+
+**Phase 621 findings (Rosettes Visual-Grammar Correlation, VISUAL_GRAMMAR_INDEPENDENT):**
+- Visual-grammar independence (C1824): The central result. Random shuffling produces BETTER visual-grammar alignment than the actual mapping (p=0.888). Even with contaminated descriptions (analyst had grammar knowledge), no correlation was found. C138's illustration epiphenomenality extends to the Rosettes metalayer at entity level.
+- H1 reversal: The strongest hypothesis (liquid medium -> higher e-HEAD) went the wrong direction. Liquid entities (NE, CENTER, EAST, SW, SE) have mean e-HEAD=0.219 vs non-liquid=0.239. EAST alone conforms (31.3% e-HEAD), but doesn't rescue the group.
+- Visual-grammar complexity co-variation (C1825): Visually complex entities tend to be grammatically more diverse (rho=0.533). This is a complexity-complexity link, not a content-content link. Both may reflect the entity's functional role in the foldout.
+- Spatial non-prediction replicated (C1826): Delta=0.007, confirming C1818.
+- Notable exploratory: plan_view x THERMAL (rho=+0.762), fountain x OPERATION (rho=+0.650) — but N=9 with 120 tests means no multiple-comparison survival.
 
 ---
 

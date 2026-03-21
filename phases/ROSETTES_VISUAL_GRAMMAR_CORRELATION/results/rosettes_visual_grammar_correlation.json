@@ -1,0 +1,1571 @@
+{
+  "phase": 621,
+  "name": "ROSETTES_VISUAL_GRAMMAR_CORRELATION",
+  "framing": {
+    "type": "C138_exception_test",
+    "null_hypothesis": "Visual features do NOT correlate with grammar profiles",
+    "contamination_disclosure": "Visual descriptions written during this project with access to grammar profiles. Hypothesis set informed by both visual and grammar inspection. Results weaker than pre-registered blind test."
+  },
+  "visual_features": {
+    "NW": {
+      "has_liquid_medium": false,
+      "has_plan_view": true,
+      "has_architectural_elements": true,
+      "has_star_field": true,
+      "has_cloud_steam": false,
+      "has_bead_ring": true,
+      "is_botanical": true,
+      "is_radial": true,
+      "has_pipes_tubes": true,
+      "has_spiral_text": false,
+      "has_alembics": true,
+      "has_fountain": false,
+      "visual_description_length": 1633,
+      "feature_count": 8
+    },
+    "NORTH": {
+      "has_liquid_medium": false,
+      "has_plan_view": false,
+      "has_architectural_elements": false,
+      "has_star_field": true,
+      "has_cloud_steam": true,
+      "has_bead_ring": false,
+      "is_botanical": true,
+      "is_radial": true,
+      "has_pipes_tubes": false,
+      "has_spiral_text": false,
+      "has_alembics": false,
+      "has_fountain": false,
+      "visual_description_length": 184,
+      "feature_count": 4
+    },
+    "NE": {
+      "has_liquid_medium": true,
+      "has_plan_view": false,
+      "has_architectural_elements": true,
+      "has_star_field": true,
+      "has_cloud_steam": false,
+      "has_bead_ring": true,
+      "is_botanical": false,
+      "is_radial": false,
+      "has_pipes_tubes": true,
+      "has_spiral_text": true,
+      "has_alembics": false,
+      "has_fountain": false,
+      "visual_description_length": 1794,
+      "feature_count": 6
+    },
+    "WEST": {
+      "has_liquid_medium": false,
+      "has_plan_view": false,
+      "has_architectural_elements": false,
+      "has_star_field": true,
+      "has_cloud_steam": true,
+      "has_bead_ring": false,
+      "is_botanical": true,
+      "is_radial": true,
+      "has_pipes_tubes": false,
+      "has_spiral_text": false,
+      "has_alembics": true,
+      "has_fountain": false,
+      "visual_description_length": 982,
+      "feature_count": 5
+    },
+    "CENTER": {
+      "has_liquid_medium": true,
+      "has_plan_view": false,
+      "has_architectural_elements": false,
+      "has_star_field": false,
+      "has_cloud_steam": false,
+      "has_bead_ring": false,
+      "is_botanical": false,
+      "is_radial": true,
+      "has_pipes_tubes": false,
+      "has_spiral_text": false,
+      "has_alembics": true,
+      "has_fountain": false,
+      "visual_description_length": 457,
+      "feature_count": 3
+    },
+    "EAST": {
+      "has_liquid_medium": true,
+      "has_plan_view": false,
+      "has_architectural_elements": false,
+      "has_star_field": true,
+      "has_cloud_steam": true,
+      "has_bead_ring": true,
+      "is_botanical": true,
+      "is_radial": true,
+      "has_pipes_tubes": false,
+      "has_spiral_text": false,
+      "has_alembics": false,
+      "has_fountain": true,
+      "visual_description_length": 1384,
+      "feature_count": 7
+    },
+    "SW": {
+      "has_liquid_medium": true,
+      "has_plan_view": false,
+      "has_architectural_elements": false,
+      "has_star_field": true,
+      "has_cloud_steam": true,
+      "has_bead_ring": true,
+      "is_botanical": true,
+      "is_radial": true,
+      "has_pipes_tubes": false,
+      "has_spiral_text": false,
+      "has_alembics": false,
+      "has_fountain": false,
+      "visual_description_length": 1609,
+      "feature_count": 6
+    },
+    "SOUTH": {
+      "has_liquid_medium": false,
+      "has_plan_view": false,
+      "has_architectural_elements": false,
+      "has_star_field": false,
+      "has_cloud_steam": false,
+      "has_bead_ring": false,
+      "is_botanical": false,
+      "is_radial": true,
+      "has_pipes_tubes": false,
+      "has_spiral_text": false,
+      "has_alembics": false,
+      "has_fountain": false,
+      "visual_description_length": 91,
+      "feature_count": 1
+    },
+    "SE": {
+      "has_liquid_medium": true,
+      "has_plan_view": true,
+      "has_architectural_elements": true,
+      "has_star_field": true,
+      "has_cloud_steam": true,
+      "has_bead_ring": true,
+      "is_botanical": false,
+      "is_radial": true,
+      "has_pipes_tubes": true,
+      "has_spiral_text": false,
+      "has_alembics": false,
+      "has_fountain": false,
+      "visual_description_length": 2084,
+      "feature_count": 8
+    }
+  },
+  "grammar_features": {
+    "NW": {
+      "token_count": 31,
+      "o_head": 0.2903,
+      "e_head": 0.2581,
+      "a_head": 0.2258,
+      "k_head": 0.0645,
+      "headless": 0.1613,
+      "FLOW": 0.3793,
+      "THERMAL": 0.2759,
+      "OPERATION": 0.1034,
+      "MARKING": 0.1379,
+      "TRANSITION": 0.0345,
+      "STAGING": 0.069,
+      "CONTAINMENT": 0.0,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.6774,
+      "compound_rate": 0.1935,
+      "kernel_e": 0.75,
+      "kernel_k": 0.1,
+      "kernel_h": 0.15,
+      "cu_divergence": 0,
+      "prefix_rate": 0.8387,
+      "suffix_rate": 0.5806
+    },
+    "NORTH": {
+      "token_count": 42,
+      "o_head": 0.3333,
+      "e_head": 0.1429,
+      "a_head": 0.2857,
+      "k_head": 0.0476,
+      "headless": 0.1905,
+      "FLOW": 0.2703,
+      "THERMAL": 0.0541,
+      "OPERATION": 0.1622,
+      "MARKING": 0.0811,
+      "TRANSITION": 0.1892,
+      "STAGING": 0.1351,
+      "CONTAINMENT": 0.1081,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.881,
+      "compound_rate": 0.2381,
+      "kernel_e": 0.6429,
+      "kernel_k": 0.2143,
+      "kernel_h": 0.1429,
+      "cu_divergence": 0,
+      "prefix_rate": 0.5714,
+      "suffix_rate": 0.4048
+    },
+    "NE": {
+      "token_count": 53,
+      "o_head": 0.3962,
+      "e_head": 0.2264,
+      "a_head": 0.1321,
+      "k_head": 0.0377,
+      "headless": 0.2075,
+      "FLOW": 0.2381,
+      "THERMAL": 0.1667,
+      "OPERATION": 0.2619,
+      "MARKING": 0.0952,
+      "TRANSITION": 0.1667,
+      "STAGING": 0.0476,
+      "CONTAINMENT": 0.0238,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.6981,
+      "compound_rate": 0.3396,
+      "kernel_e": 0.7692,
+      "kernel_k": 0.1538,
+      "kernel_h": 0.0769,
+      "cu_divergence": 0,
+      "prefix_rate": 0.6226,
+      "suffix_rate": 0.6415
+    },
+    "WEST": {
+      "token_count": 28,
+      "o_head": 0.4286,
+      "e_head": 0.2857,
+      "a_head": 0.0714,
+      "k_head": 0.0714,
+      "headless": 0.1429,
+      "FLOW": 0.36,
+      "THERMAL": 0.16,
+      "OPERATION": 0.2,
+      "MARKING": 0.08,
+      "TRANSITION": 0.08,
+      "STAGING": 0.08,
+      "CONTAINMENT": 0.04,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.75,
+      "compound_rate": 0.2857,
+      "kernel_e": 0.7778,
+      "kernel_k": 0.2222,
+      "kernel_h": 0.0,
+      "cu_divergence": 0,
+      "prefix_rate": 0.6429,
+      "suffix_rate": 0.6071
+    },
+    "CENTER": {
+      "token_count": 67,
+      "o_head": 0.3881,
+      "e_head": 0.1194,
+      "a_head": 0.1194,
+      "k_head": 0.0299,
+      "headless": 0.3284,
+      "FLOW": 0.2419,
+      "THERMAL": 0.0806,
+      "OPERATION": 0.1774,
+      "MARKING": 0.1613,
+      "TRANSITION": 0.1935,
+      "STAGING": 0.1129,
+      "CONTAINMENT": 0.0323,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.7761,
+      "compound_rate": 0.194,
+      "kernel_e": 0.7,
+      "kernel_k": 0.1,
+      "kernel_h": 0.2,
+      "cu_divergence": 0,
+      "prefix_rate": 0.597,
+      "suffix_rate": 0.4776
+    },
+    "EAST": {
+      "token_count": 32,
+      "o_head": 0.1875,
+      "e_head": 0.3125,
+      "a_head": 0.1875,
+      "k_head": 0.0625,
+      "headless": 0.2188,
+      "FLOW": 0.2222,
+      "THERMAL": 0.1852,
+      "OPERATION": 0.3333,
+      "MARKING": 0.037,
+      "TRANSITION": 0.1481,
+      "STAGING": 0.037,
+      "CONTAINMENT": 0.037,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.8125,
+      "compound_rate": 0.1875,
+      "kernel_e": 0.619,
+      "kernel_k": 0.2381,
+      "kernel_h": 0.1429,
+      "cu_divergence": 0,
+      "prefix_rate": 0.875,
+      "suffix_rate": 0.5
+    },
+    "SW": {
+      "token_count": 45,
+      "o_head": 0.4444,
+      "e_head": 0.2222,
+      "a_head": 0.1333,
+      "k_head": 0.0222,
+      "headless": 0.1778,
+      "FLOW": 0.2727,
+      "THERMAL": 0.0303,
+      "OPERATION": 0.2424,
+      "MARKING": 0.303,
+      "TRANSITION": 0.0303,
+      "STAGING": 0.0909,
+      "CONTAINMENT": 0.0303,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.6444,
+      "compound_rate": 0.3556,
+      "kernel_e": 0.5714,
+      "kernel_k": 0.1429,
+      "kernel_h": 0.2857,
+      "cu_divergence": 0,
+      "prefix_rate": 0.5778,
+      "suffix_rate": 0.6667
+    },
+    "SOUTH": {
+      "token_count": 37,
+      "o_head": 0.3514,
+      "e_head": 0.2703,
+      "a_head": 0.1892,
+      "k_head": 0.027,
+      "headless": 0.1622,
+      "FLOW": 0.2647,
+      "THERMAL": 0.1471,
+      "OPERATION": 0.2353,
+      "MARKING": 0.0882,
+      "TRANSITION": 0.1471,
+      "STAGING": 0.0882,
+      "CONTAINMENT": 0.0294,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.8378,
+      "compound_rate": 0.2162,
+      "kernel_e": 0.8462,
+      "kernel_k": 0.1538,
+      "kernel_h": 0.0,
+      "cu_divergence": 0,
+      "prefix_rate": 0.6216,
+      "suffix_rate": 0.6216
+    },
+    "SE": {
+      "token_count": 28,
+      "o_head": 0.5,
+      "e_head": 0.2143,
+      "a_head": 0.1786,
+      "k_head": 0.0357,
+      "headless": 0.0714,
+      "FLOW": 0.2857,
+      "THERMAL": 0.1905,
+      "OPERATION": 0.1429,
+      "MARKING": 0.0952,
+      "TRANSITION": 0.1429,
+      "STAGING": 0.1429,
+      "CONTAINMENT": 0.0,
+      "MONITORING": 0.0,
+      "bridge_rate": 0.6786,
+      "compound_rate": 0.3214,
+      "kernel_e": 0.7222,
+      "kernel_k": 0.1667,
+      "kernel_h": 0.1111,
+      "cu_divergence": 0,
+      "prefix_rate": 0.6071,
+      "suffix_rate": 0.7857
+    }
+  },
+  "grammar_cis": {
+    "NW": {
+      "o_head": [
+        0.1305,
+        0.4501
+      ],
+      "e_head": [
+        0.1041,
+        0.4121
+      ],
+      "a_head": [
+        0.0786,
+        0.373
+      ],
+      "headless": [
+        0.0318,
+        0.2908
+      ],
+      "bridge_rate": [
+        0.5128,
+        0.842
+      ],
+      "compound_rate": [
+        0.0544,
+        0.3326
+      ],
+      "prefix_rate": [
+        0.7092,
+        0.9682
+      ],
+      "suffix_rate": [
+        0.4069,
+        0.7543
+      ],
+      "FLOW": [
+        0.2085,
+        0.5501
+      ],
+      "THERMAL": [
+        0.1186,
+        0.4332
+      ],
+      "OPERATION": [
+        0,
+        0.2106
+      ],
+      "MARKING": [
+        0.0165,
+        0.2593
+      ],
+      "TRANSITION": [
+        0,
+        0.0987
+      ],
+      "STAGING": [
+        0,
+        0.1582
+      ],
+      "CONTAINMENT": [
+        0,
+        0.0
+      ]
+    },
+    "NORTH": {
+      "o_head": [
+        0.1907,
+        0.4759
+      ],
+      "e_head": [
+        0.0371,
+        0.2487
+      ],
+      "a_head": [
+        0.1491,
+        0.4223
+      ],
+      "headless": [
+        0.0717,
+        0.3093
+      ],
+      "bridge_rate": [
+        0.7831,
+        0.9789
+      ],
+      "compound_rate": [
+        0.1093,
+        0.3669
+      ],
+      "prefix_rate": [
+        0.4217,
+        0.7211
+      ],
+      "suffix_rate": [
+        0.2563,
+        0.5533
+      ],
+      "FLOW": [
+        0.136,
+        0.4046
+      ],
+      "THERMAL": [
+        0,
+        0.1225
+      ],
+      "OPERATION": [
+        0.0507,
+        0.2737
+      ],
+      "MARKING": [
+        0,
+        0.1637
+      ],
+      "TRANSITION": [
+        0.0707,
+        0.3077
+      ],
+      "STAGING": [
+        0.0317,
+        0.2385
+      ],
+      "CONTAINMENT": [
+        0.0142,
+        0.202
+      ]
+    },
+    "NE": {
+      "o_head": [
+        0.2645,
+        0.5279
+      ],
+      "e_head": [
+        0.1137,
+        0.3391
+      ],
+      "a_head": [
+        0.0409,
+        0.2233
+      ],
+      "headless": [
+        0.0983,
+        0.3167
+      ],
+      "bridge_rate": [
+        0.5745,
+        0.8217
+      ],
+      "compound_rate": [
+        0.2121,
+        0.4671
+      ],
+      "prefix_rate": [
+        0.4921,
+        0.7531
+      ],
+      "suffix_rate": [
+        0.5124,
+        0.7706
+      ],
+      "FLOW": [
+        0.1234,
+        0.3528
+      ],
+      "THERMAL": [
+        0.0664,
+        0.267
+      ],
+      "OPERATION": [
+        0.1435,
+        0.3803
+      ],
+      "MARKING": [
+        0.0162,
+        0.1742
+      ],
+      "TRANSITION": [
+        0.0664,
+        0.267
+      ],
+      "STAGING": [
+        0,
+        0.1049
+      ],
+      "CONTAINMENT": [
+        0,
+        0.0648
+      ]
+    },
+    "WEST": {
+      "o_head": [
+        0.2453,
+        0.6119
+      ],
+      "e_head": [
+        0.1184,
+        0.453
+      ],
+      "a_head": [
+        0,
+        0.1668
+      ],
+      "headless": [
+        0.0133,
+        0.2725
+      ],
+      "bridge_rate": [
+        0.5896,
+        0.9104
+      ],
+      "compound_rate": [
+        0.1184,
+        0.453
+      ],
+      "prefix_rate": [
+        0.4654,
+        0.8204
+      ],
+      "suffix_rate": [
+        0.4262,
+        0.788
+      ],
+      "FLOW": [
+        0.1822,
+        0.5378
+      ],
+      "THERMAL": [
+        0.0242,
+        0.2958
+      ],
+      "OPERATION": [
+        0.0518,
+        0.3482
+      ],
+      "MARKING": [
+        0,
+        0.1805
+      ],
+      "TRANSITION": [
+        0,
+        0.1805
+      ],
+      "STAGING": [
+        0,
+        0.1805
+      ],
+      "CONTAINMENT": [
+        0,
+        0.1126
+      ]
+    },
+    "CENTER": {
+      "o_head": [
+        0.2714,
+        0.5048
+      ],
+      "e_head": [
+        0.0418,
+        0.197
+      ],
+      "a_head": [
+        0.0418,
+        0.197
+      ],
+      "headless": [
+        0.2159,
+        0.4409
+      ],
+      "bridge_rate": [
+        0.6763,
+        0.8759
+      ],
+      "compound_rate": [
+        0.0993,
+        0.2887
+      ],
+      "prefix_rate": [
+        0.4795,
+        0.7145
+      ],
+      "suffix_rate": [
+        0.358,
+        0.5972
+      ],
+      "FLOW": [
+        0.1394,
+        0.3444
+      ],
+      "THERMAL": [
+        0.0154,
+        0.1458
+      ],
+      "OPERATION": [
+        0.0859,
+        0.2689
+      ],
+      "MARKING": [
+        0.0732,
+        0.2494
+      ],
+      "TRANSITION": [
+        0.0989,
+        0.2881
+      ],
+      "STAGING": [
+        0.0371,
+        0.1887
+      ],
+      "CONTAINMENT": [
+        0,
+        0.0746
+      ]
+    },
+    "EAST": {
+      "o_head": [
+        0.0523,
+        0.3227
+      ],
+      "e_head": [
+        0.1519,
+        0.4731
+      ],
+      "a_head": [
+        0.0523,
+        0.3227
+      ],
+      "headless": [
+        0.0756,
+        0.362
+      ],
+      "bridge_rate": [
+        0.6773,
+        0.9477
+      ],
+      "compound_rate": [
+        0.0523,
+        0.3227
+      ],
+      "prefix_rate": [
+        0.7604,
+        0.9896
+      ],
+      "suffix_rate": [
+        0.3268,
+        0.6732
+      ],
+      "FLOW": [
+        0.0782,
+        0.3662
+      ],
+      "THERMAL": [
+        0.0506,
+        0.3198
+      ],
+      "OPERATION": [
+        0.17,
+        0.4966
+      ],
+      "MARKING": [
+        0,
+        0.1024
+      ],
+      "TRANSITION": [
+        0.025,
+        0.2712
+      ],
+      "STAGING": [
+        0,
+        0.1024
+      ],
+      "CONTAINMENT": [
+        0,
+        0.1024
+      ]
+    },
+    "SW": {
+      "o_head": [
+        0.2992,
+        0.5896
+      ],
+      "e_head": [
+        0.1007,
+        0.3437
+      ],
+      "a_head": [
+        0.034,
+        0.2326
+      ],
+      "headless": [
+        0.0661,
+        0.2895
+      ],
+      "bridge_rate": [
+        0.5045,
+        0.7843
+      ],
+      "compound_rate": [
+        0.2157,
+        0.4955
+      ],
+      "prefix_rate": [
+        0.4335,
+        0.7221
+      ],
+      "suffix_rate": [
+        0.529,
+        0.8044
+      ],
+      "FLOW": [
+        0.1426,
+        0.4028
+      ],
+      "THERMAL": [
+        0,
+        0.0804
+      ],
+      "OPERATION": [
+        0.1172,
+        0.3676
+      ],
+      "MARKING": [
+        0.1687,
+        0.4373
+      ],
+      "TRANSITION": [
+        0,
+        0.0804
+      ],
+      "STAGING": [
+        0.0069,
+        0.1749
+      ],
+      "CONTAINMENT": [
+        0,
+        0.0804
+      ]
+    },
+    "SOUTH": {
+      "o_head": [
+        0.1976,
+        0.5052
+      ],
+      "e_head": [
+        0.1272,
+        0.4134
+      ],
+      "a_head": [
+        0.063,
+        0.3154
+      ],
+      "headless": [
+        0.0434,
+        0.281
+      ],
+      "bridge_rate": [
+        0.719,
+        0.9566
+      ],
+      "compound_rate": [
+        0.0836,
+        0.3488
+      ],
+      "prefix_rate": [
+        0.4653,
+        0.7779
+      ],
+      "suffix_rate": [
+        0.4653,
+        0.7779
+      ],
+      "FLOW": [
+        0.1225,
+        0.4069
+      ],
+      "THERMAL": [
+        0.033,
+        0.2612
+      ],
+      "OPERATION": [
+        0.0986,
+        0.372
+      ],
+      "MARKING": [
+        0,
+        0.1796
+      ],
+      "TRANSITION": [
+        0.033,
+        0.2612
+      ],
+      "STAGING": [
+        0,
+        0.1796
+      ],
+      "CONTAINMENT": [
+        0,
+        0.0838
+      ]
+    },
+    "SE": {
+      "o_head": [
+        0.3148,
+        0.6852
+      ],
+      "e_head": [
+        0.0623,
+        0.3663
+      ],
+      "a_head": [
+        0.0367,
+        0.3205
+      ],
+      "headless": [
+        0,
+        0.1668
+      ],
+      "bridge_rate": [
+        0.5056,
+        0.8516
+      ],
+      "compound_rate": [
+        0.1484,
+        0.4944
+      ],
+      "prefix_rate": [
+        0.4262,
+        0.788
+      ],
+      "suffix_rate": [
+        0.6337,
+        0.9377
+      ],
+      "FLOW": [
+        0.1184,
+        0.453
+      ],
+      "THERMAL": [
+        0.045,
+        0.336
+      ],
+      "OPERATION": [
+        0.0133,
+        0.2725
+      ],
+      "MARKING": [
+        0,
+        0.2039
+      ],
+      "TRANSITION": [
+        0.0133,
+        0.2725
+      ],
+      "STAGING": [
+        0.0133,
+        0.2725
+      ],
+      "CONTAINMENT": [
+        0,
+        0.0
+      ]
+    }
+  },
+  "primary_hypotheses": {
+    "H1": {
+      "visual_feature": "has_liquid_medium",
+      "grammar_feature": "e_head",
+      "rationale": "C105: e=STABILITY_ANCHOR. C521: e is absorbing. Liquid medium = stabilization.",
+      "rank_biserial": -0.3,
+      "direction": "NEGATIVE",
+      "liquid_entities": [
+        "NE",
+        "CENTER",
+        "EAST",
+        "SW",
+        "SE"
+      ],
+      "liquid_e_heads": {
+        "NE": 0.2264,
+        "CENTER": 0.1194,
+        "EAST": 0.3125,
+        "SW": 0.2222,
+        "SE": 0.2143
+      },
+      "non_liquid_e_heads": {
+        "NW": 0.2581,
+        "NORTH": 0.1429,
+        "WEST": 0.2857,
+        "SOUTH": 0.2703
+      },
+      "liquid_mean_e": 0.219,
+      "non_liquid_mean_e": 0.2393
+    },
+    "H2": {
+      "visual_feature": "has_plan_view",
+      "grammar_feature": "o_head",
+      "rationale": "C1388: o-atom=arrangement domain. C1502: AZC o-HEAD enrichment 2.70x.",
+      "rank_biserial": 0.1429,
+      "direction": "POSITIVE",
+      "plan_entities": [
+        "NW",
+        "SE"
+      ],
+      "plan_o_heads": {
+        "NW": 0.2903,
+        "SE": 0.5
+      },
+      "non_plan_o_heads": {
+        "NORTH": 0.3333,
+        "NE": 0.3962,
+        "WEST": 0.4286,
+        "CENTER": 0.3881,
+        "EAST": 0.1875,
+        "SW": 0.4444,
+        "SOUTH": 0.3514
+      },
+      "plan_mean_o": 0.3952,
+      "non_plan_mean_o": 0.3614
+    },
+    "H3": {
+      "visual_feature": "feature_count",
+      "grammar_feature": "compound_rate",
+      "rationale": "Pure complexity-complexity: more complex visual = more complex morphology.",
+      "spearman_rho": 0.025,
+      "direction": "POSITIVE",
+      "per_entity": {
+        "NW": {
+          "feature_count": 8,
+          "compound_rate": 0.1935
+        },
+        "NORTH": {
+          "feature_count": 4,
+          "compound_rate": 0.2381
+        },
+        "NE": {
+          "feature_count": 6,
+          "compound_rate": 0.3396
+        },
+        "WEST": {
+          "feature_count": 5,
+          "compound_rate": 0.2857
+        },
+        "CENTER": {
+          "feature_count": 3,
+          "compound_rate": 0.194
+        },
+        "EAST": {
+          "feature_count": 7,
+          "compound_rate": 0.1875
+        },
+        "SW": {
+          "feature_count": 6,
+          "compound_rate": 0.3556
+        },
+        "SOUTH": {
+          "feature_count": 1,
+          "compound_rate": 0.2162
+        },
+        "SE": {
+          "feature_count": 8,
+          "compound_rate": 0.3214
+        }
+      }
+    },
+    "composite": 0.156,
+    "component_values": {
+      "abs_h1_rb": 0.3,
+      "abs_h2_rb": 0.1429,
+      "abs_h3_rho": 0.025
+    }
+  },
+  "permutation_test": {
+    "observed_composite": 0.156,
+    "null_mean": 0.3376,
+    "null_std": 0.1546,
+    "null_percentiles": {
+      "p50": 0.3202,
+      "p85": 0.5083,
+      "p95": 0.6214
+    },
+    "p_value": 0.8875,
+    "effect_size": -1.1745,
+    "n_permutations": 10000
+  },
+  "exploratory": {
+    "correlations": {
+      "matrix": {
+        "has_liquid_medium × o_head": 0.425,
+        "has_liquid_medium × e_head": -0.1,
+        "has_liquid_medium × a_head": -0.25,
+        "has_liquid_medium × compound_rate": 0.35,
+        "has_liquid_medium × bridge_rate": -0.175,
+        "has_liquid_medium × FLOW": -0.325,
+        "has_liquid_medium × THERMAL": 0.125,
+        "has_liquid_medium × OPERATION": 0.5,
+        "has_liquid_medium × MARKING": 0.4292,
+        "has_liquid_medium × TRANSITION": 0.275,
+        "has_plan_view × o_head": 0.3125,
+        "has_plan_view × e_head": 0.1625,
+        "has_plan_view × a_head": 0.4625,
+        "has_plan_view × compound_rate": 0.1625,
+        "has_plan_view × bridge_rate": -0.1375,
+        "has_plan_view × FLOW": 0.6875,
+        "has_plan_view × THERMAL": 0.7625,
+        "has_plan_view × OPERATION": -0.2875,
+        "has_plan_view × MARKING": 0.4292,
+        "has_plan_view × TRANSITION": -0.0625,
+        "has_architectural_elements × o_head": 0.3125,
+        "has_architectural_elements × e_head": 0.0875,
+        "has_architectural_elements × a_head": 0.2375,
+        "has_architectural_elements × compound_rate": 0.3125,
+        "has_architectural_elements × bridge_rate": -0.2875,
+        "has_architectural_elements × FLOW": 0.3875,
+        "has_architectural_elements × THERMAL": 0.7625,
+        "has_architectural_elements × OPERATION": -0.1375,
+        "has_architectural_elements × MARKING": 0.3917,
+        "has_architectural_elements × TRANSITION": 0.0125,
+        "has_star_field × o_head": 0.3125,
+        "has_star_field × e_head": 0.3875,
+        "has_star_field × a_head": 0.3125,
+        "has_star_field × compound_rate": 0.4625,
+        "has_star_field × bridge_rate": -0.0625,
+        "has_star_field × FLOW": 0.4625,
+        "has_star_field × THERMAL": 0.4625,
+        "has_star_field × OPERATION": 0.2375,
+        "has_star_field × MARKING": 0.0917,
+        "has_star_field × TRANSITION": -0.0625,
+        "has_cloud_steam × o_head": 0.35,
+        "has_cloud_steam × e_head": 0.2,
+        "has_cloud_steam × a_head": 0.125,
+        "has_cloud_steam × compound_rate": 0.35,
+        "has_cloud_steam × bridge_rate": 0.125,
+        "has_cloud_steam × FLOW": 0.275,
+        "has_cloud_steam × THERMAL": -0.025,
+        "has_cloud_steam × OPERATION": 0.2,
+        "has_cloud_steam × MARKING": -0.2083,
+        "has_cloud_steam × TRANSITION": -0.1,
+        "has_bead_ring × o_head": 0.2,
+        "has_bead_ring × e_head": 0.275,
+        "has_bead_ring × a_head": 0.2,
+        "has_bead_ring × compound_rate": 0.275,
+        "has_bead_ring × bridge_rate": -0.475,
+        "has_bead_ring × FLOW": 0.125,
+        "has_bead_ring × THERMAL": 0.575,
+        "has_bead_ring × OPERATION": 0.275,
+        "has_bead_ring × MARKING": 0.3542,
+        "has_bead_ring × TRANSITION": -0.25,
+        "is_botanical × o_head": -0.175,
+        "is_botanical × e_head": 0.425,
+        "is_botanical × a_head": 0.35,
+        "is_botanical × compound_rate": -0.025,
+        "is_botanical × bridge_rate": 0.05,
+        "is_botanical × FLOW": 0.425,
+        "is_botanical × THERMAL": 0.05,
+        "is_botanical × OPERATION": 0.125,
+        "is_botanical × MARKING": -0.0958,
+        "is_botanical × TRANSITION": -0.25,
+        "is_radial × o_head": 0.275,
+        "is_radial × e_head": 0.35,
+        "is_radial × a_head": 0.5,
+        "is_radial × compound_rate": 0.125,
+        "is_radial × bridge_rate": 0.425,
+        "is_radial × FLOW": 0.575,
+        "is_radial × THERMAL": 0.275,
+        "is_radial × OPERATION": 0.125,
+        "is_radial × MARKING": 0.3167,
+        "is_radial × TRANSITION": 0.2,
+        "has_pipes_tubes × o_head": 0.3125,
+        "has_pipes_tubes × e_head": 0.0875,
+        "has_pipes_tubes × a_head": 0.2375,
+        "has_pipes_tubes × compound_rate": 0.3125,
+        "has_pipes_tubes × bridge_rate": -0.2875,
+        "has_pipes_tubes × FLOW": 0.3875,
+        "has_pipes_tubes × THERMAL": 0.7625,
+        "has_pipes_tubes × OPERATION": -0.1375,
+        "has_pipes_tubes × MARKING": 0.3917,
+        "has_pipes_tubes × TRANSITION": 0.0125,
+        "has_spiral_text × o_head": 0.425,
+        "has_spiral_text × e_head": 0.35,
+        "has_spiral_text × a_head": 0.2,
+        "has_spiral_text × compound_rate": 0.575,
+        "has_spiral_text × bridge_rate": 0.275,
+        "has_spiral_text × FLOW": 0.125,
+        "has_spiral_text × THERMAL": 0.425,
+        "has_spiral_text × OPERATION": 0.575,
+        "has_spiral_text × MARKING": 0.3917,
+        "has_spiral_text × TRANSITION": 0.5,
+        "has_alembics × o_head": 0.0875,
+        "has_alembics × e_head": 0.1625,
+        "has_alembics × a_head": -0.1375,
+        "has_alembics × compound_rate": -0.1375,
+        "has_alembics × bridge_rate": 0.0125,
+        "has_alembics × FLOW": 0.5375,
+        "has_alembics × THERMAL": 0.3125,
+        "has_alembics × OPERATION": -0.2125,
+        "has_alembics × MARKING": 0.3167,
+        "has_alembics × TRANSITION": 0.0875,
+        "has_fountain × o_head": 0.05,
+        "has_fountain × e_head": 0.65,
+        "has_fountain × a_head": 0.425,
+        "has_fountain × compound_rate": 0.05,
+        "has_fountain × bridge_rate": 0.5,
+        "has_fountain × FLOW": 0.05,
+        "has_fountain × THERMAL": 0.5,
+        "has_fountain × OPERATION": 0.65,
+        "has_fountain × MARKING": 0.0542,
+        "has_fountain × TRANSITION": 0.425
+      },
+      "notable_pairs": [
+        {
+          "visual": "has_plan_view",
+          "grammar": "THERMAL",
+          "rho": 0.7625,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_architectural_elements",
+          "grammar": "THERMAL",
+          "rho": 0.7625,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_pipes_tubes",
+          "grammar": "THERMAL",
+          "rho": 0.7625,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_plan_view",
+          "grammar": "FLOW",
+          "rho": 0.6875,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_fountain",
+          "grammar": "e_head",
+          "rho": 0.65,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_fountain",
+          "grammar": "OPERATION",
+          "rho": 0.65,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_bead_ring",
+          "grammar": "THERMAL",
+          "rho": 0.575,
+          "direction": "positive"
+        },
+        {
+          "visual": "is_radial",
+          "grammar": "FLOW",
+          "rho": 0.575,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_spiral_text",
+          "grammar": "compound_rate",
+          "rho": 0.575,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_spiral_text",
+          "grammar": "OPERATION",
+          "rho": 0.575,
+          "direction": "positive"
+        },
+        {
+          "visual": "has_alembics",
+          "grammar": "FLOW",
+          "rho": 0.5375,
+          "direction": "positive"
+        }
+      ],
+      "total_tested": 120,
+      "notable_count": 11
+    },
+    "spatial_adjacency": {
+      "adjacent_pairs": 8,
+      "nonadjacent_pairs": 28,
+      "mean_adj_jsd": 0.0797,
+      "mean_nonadj_jsd": 0.0728,
+      "delta": 0.0069,
+      "spatial_predicts_grammar": true,
+      "note": "Replication of C1818. |delta| < 0.02 confirms spatial non-prediction."
+    },
+    "visual_diversity_vs_grammar": {
+      "per_entity": {
+        "NW": {
+          "feature_count": 8,
+          "description_length": 1633,
+          "mean_category_jsd": 0.1102
+        },
+        "NORTH": {
+          "feature_count": 4,
+          "description_length": 184,
+          "mean_category_jsd": 0.0855
+        },
+        "NE": {
+          "feature_count": 6,
+          "description_length": 1794,
+          "mean_category_jsd": 0.0523
+        },
+        "WEST": {
+          "feature_count": 5,
+          "description_length": 982,
+          "mean_category_jsd": 0.0488
+        },
+        "CENTER": {
+          "feature_count": 3,
+          "description_length": 457,
+          "mean_category_jsd": 0.0575
+        },
+        "EAST": {
+          "feature_count": 7,
+          "description_length": 1384,
+          "mean_category_jsd": 0.082
+        },
+        "SW": {
+          "feature_count": 6,
+          "description_length": 1609,
+          "mean_category_jsd": 0.1248
+        },
+        "SOUTH": {
+          "feature_count": 1,
+          "description_length": 91,
+          "mean_category_jsd": 0.0418
+        },
+        "SE": {
+          "feature_count": 8,
+          "description_length": 2084,
+          "mean_category_jsd": 0.066
+        }
+      },
+      "rho_feature_count_vs_jsd": 0.5333,
+      "rho_description_length_vs_jsd": 0.3167,
+      "visual_feature_range": {
+        "min": 1,
+        "max": 8
+      },
+      "description_length_range": {
+        "min": 91,
+        "max": 2084
+      },
+      "grammar_jsd_range": {
+        "min": 0.0418,
+        "max": 0.1248
+      },
+      "interpretation": "Non-trivial rho suggests some visual-grammar diversity coupling."
+    },
+    "dual_population_link": {
+      "per_entity": {
+        "NW": {
+          "feature_count": 8,
+          "cu_jsd": 0.253
+        },
+        "NORTH": {
+          "feature_count": 4,
+          "cu_jsd": 0.2123
+        },
+        "NE": {
+          "feature_count": 6,
+          "cu_jsd": 0.1162
+        },
+        "WEST": {
+          "feature_count": 5,
+          "cu_jsd": 0.2862
+        },
+        "CENTER": {
+          "feature_count": 3,
+          "cu_jsd": 0.1239
+        },
+        "EAST": {
+          "feature_count": 7,
+          "cu_jsd": 0.4401
+        },
+        "SW": {
+          "feature_count": 6,
+          "cu_jsd": 0.6461
+        },
+        "SOUTH": {
+          "feature_count": 1,
+          "cu_jsd": 0.1936
+        },
+        "SE": {
+          "feature_count": 8,
+          "cu_jsd": 0.1306
+        }
+      },
+      "rho_feature_count_vs_cu_jsd": 0.2333,
+      "interpretation": "Visual complexity does not predict dual-population divergence."
+    }
+  },
+  "synthesis_table": [
+    {
+      "entity": "NW",
+      "tokens": 31,
+      "visual_tags": [
+        "PLAN_VIEW",
+        "ARCHITECTURAL",
+        "BOTANICAL",
+        "RADIAL"
+      ],
+      "feature_count": 8,
+      "desc_length": 1633,
+      "dominant_head": "o",
+      "o_head": 0.29,
+      "e_head": 0.258,
+      "dominant_category": "FLOW",
+      "compound_rate": 0.194,
+      "bridge_rate": 0.677,
+      "H1": "N/A",
+      "H2": "CONTRADICTED",
+      "H3": "MISALIGNED"
+    },
+    {
+      "entity": "NORTH",
+      "tokens": 42,
+      "visual_tags": [
+        "BOTANICAL",
+        "RADIAL"
+      ],
+      "feature_count": 4,
+      "desc_length": 184,
+      "dominant_head": "o",
+      "o_head": 0.333,
+      "e_head": 0.143,
+      "dominant_category": "FLOW",
+      "compound_rate": 0.238,
+      "bridge_rate": 0.881,
+      "H1": "N/A",
+      "H2": "N/A",
+      "H3": "NEUTRAL"
+    },
+    {
+      "entity": "NE",
+      "tokens": 53,
+      "visual_tags": [
+        "LIQUID",
+        "ARCHITECTURAL"
+      ],
+      "feature_count": 6,
+      "desc_length": 1794,
+      "dominant_head": "o",
+      "o_head": 0.396,
+      "e_head": 0.226,
+      "dominant_category": "OPERATION",
+      "compound_rate": 0.34,
+      "bridge_rate": 0.698,
+      "H1": "CONTRADICTED",
+      "H2": "N/A",
+      "H3": "NEUTRAL"
+    },
+    {
+      "entity": "WEST",
+      "tokens": 28,
+      "visual_tags": [
+        "BOTANICAL",
+        "RADIAL"
+      ],
+      "feature_count": 5,
+      "desc_length": 982,
+      "dominant_head": "o",
+      "o_head": 0.429,
+      "e_head": 0.286,
+      "dominant_category": "FLOW",
+      "compound_rate": 0.286,
+      "bridge_rate": 0.75,
+      "H1": "N/A",
+      "H2": "N/A",
+      "H3": "MISALIGNED"
+    },
+    {
+      "entity": "CENTER",
+      "tokens": 67,
+      "visual_tags": [
+        "LIQUID",
+        "RADIAL"
+      ],
+      "feature_count": 3,
+      "desc_length": 457,
+      "dominant_head": "o",
+      "o_head": 0.388,
+      "e_head": 0.119,
+      "dominant_category": "FLOW",
+      "compound_rate": 0.194,
+      "bridge_rate": 0.776,
+      "H1": "CONTRADICTED",
+      "H2": "N/A",
+      "H3": "ALIGNED"
+    },
+    {
+      "entity": "EAST",
+      "tokens": 32,
+      "visual_tags": [
+        "LIQUID",
+        "BOTANICAL",
+        "RADIAL"
+      ],
+      "feature_count": 7,
+      "desc_length": 1384,
+      "dominant_head": "e",
+      "o_head": 0.188,
+      "e_head": 0.312,
+      "dominant_category": "OPERATION",
+      "compound_rate": 0.188,
+      "bridge_rate": 0.812,
+      "H1": "CONFIRMED",
+      "H2": "N/A",
+      "H3": "MISALIGNED"
+    },
+    {
+      "entity": "SW",
+      "tokens": 45,
+      "visual_tags": [
+        "LIQUID",
+        "BOTANICAL",
+        "RADIAL"
+      ],
+      "feature_count": 6,
+      "desc_length": 1609,
+      "dominant_head": "o",
+      "o_head": 0.444,
+      "e_head": 0.222,
+      "dominant_category": "MARKING",
+      "compound_rate": 0.356,
+      "bridge_rate": 0.644,
+      "H1": "CONTRADICTED",
+      "H2": "N/A",
+      "H3": "NEUTRAL"
+    },
+    {
+      "entity": "SOUTH",
+      "tokens": 37,
+      "visual_tags": [
+        "RADIAL"
+      ],
+      "feature_count": 1,
+      "desc_length": 91,
+      "dominant_head": "o",
+      "o_head": 0.351,
+      "e_head": 0.27,
+      "dominant_category": "FLOW",
+      "compound_rate": 0.216,
+      "bridge_rate": 0.838,
+      "H1": "N/A",
+      "H2": "N/A",
+      "H3": "ALIGNED"
+    },
+    {
+      "entity": "SE",
+      "tokens": 28,
+      "visual_tags": [
+        "LIQUID",
+        "PLAN_VIEW",
+        "ARCHITECTURAL",
+        "RADIAL"
+      ],
+      "feature_count": 8,
+      "desc_length": 2084,
+      "dominant_head": "o",
+      "o_head": 0.5,
+      "e_head": 0.214,
+      "dominant_category": "FLOW",
+      "compound_rate": 0.321,
+      "bridge_rate": 0.679,
+      "H1": "CONTRADICTED",
+      "H2": "CONFIRMED",
+      "H3": "ALIGNED"
+    }
+  ],
+  "predictions": {
+    "T1": {
+      "name": "Composite alignment test (C138 exception)",
+      "result": "FAIL",
+      "composite": 0.156,
+      "p_value": 0.8875,
+      "per_hypothesis_directions": {
+        "H1_liquid_e_head": "NEGATIVE",
+        "H2_plan_o_head": "POSITIVE",
+        "H3_complexity_compound": "POSITIVE"
+      },
+      "directional_correct": "2/3"
+    },
+    "T2": {
+      "name": "Grammar uniformity despite visual diversity",
+      "result": "FAIL",
+      "rho_feature_count_vs_jsd": 0.5333,
+      "interpretation": "Some visual-grammar diversity coupling detected."
+    },
+    "T3": {
+      "name": "Spatial non-prediction (C1818 replication)",
+      "result": "PASS",
+      "delta": 0.0069,
+      "interpretation": "Spatial adjacency does not predict grammar similarity. Replicates C1818."
+    },
+    "verdict": "VISUAL_GRAMMAR_INDEPENDENT",
+    "verdict_rationale": "T1 FAIL: no visual-grammar correlation. Strengthens C138 at entity level."
+  }
+}

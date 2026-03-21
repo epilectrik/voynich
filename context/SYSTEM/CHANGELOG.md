@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.93 (2026-03-20) - Phase 621: Rosettes Visual-Grammar Correlation
+
+### Summary
+
+Phase 621 tests whether visual imagery of each rosette correlates with its operational grammar profile, framed as a C138 exception test. Three pre-registered hypotheses (liquid medium→e-HEAD, plan view→o-HEAD, visual complexity→compound rate) tested via composite alignment statistic with 10,000-permutation null. The observed composite (0.156) falls below the permutation null mean (0.338) with p=0.888 — random shuffling produces better alignment than reality. H1 reversed (liquid entities have LOWER e-HEAD). Verdict: **VISUAL_GRAMMAR_INDEPENDENT**. C138 illustration epiphenomenality confirmed at the metalayer entity level. Secondary finding: visual complexity co-varies with grammar diversity (rho=0.533).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ROSETTES_VISUAL_GRAMMAR_CORRELATION/` -- Phase 621 with script, JSON results, INDEX.md |
+| **ADDED** | C1824: Visual-grammar independence at rosettes entity level (composite=0.156, p=0.888, C138 confirmed) |
+| **ADDED** | C1825: Visual complexity co-varies with grammar diversity (rho=0.533, complexity-complexity link) |
+| **ADDED** | C1826: Spatial non-prediction replicated (delta=0.007, confirms C1818) |
+| **UPDATED** | `data/rosettes_annotated.json` -- visual descriptions merged from rosettes_reference.json |
+| **UPDATED** | `scripts/voynich.py` -- RosettesAnalyzer: get_visual_description(), get_connects_to(), get_grid_position() |
+| **UPDATED** | INDEX.md -- +3 constraints (1825 total), Phase 621 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.93, 1825 constraints, 621 phases) |
+
+### Key Findings
+
+- **Visual-grammar independence (C1824):** The central result. The composite alignment score (0.156) is BELOW the permutation null mean (0.338). Even with contaminated descriptions (analyst had grammar knowledge when writing visual notes), no correlation was found. The strongest hypothesis (liquid→e-HEAD) reversed direction. C138's illustration epiphenomenality extends to the Rosettes metalayer at entity level.
+- **Visual-grammar complexity co-variation (C1825):** Visually complex entities tend to be more grammatically distinctive (rho=0.533). This is a complexity-complexity link, not a content-content link. Both may reflect functional prominence.
+- **Spatial non-prediction replicated (C1826):** Delta=0.007, independently replicating C1818.
+- **Exploratory correlations:** plan_view×THERMAL (rho=+0.762), fountain×OPERATION (rho=+0.650), but N=9 with 120 tests — no multiple-comparison survival.
+
+---
+
 ## Version 5.92 (2026-03-20) - Phase 620: Rosettes Operational Close Reading
 
 ### Summary
