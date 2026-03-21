@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1815 validated constraints | **Version:** 5.91 | **Date:** 2026-03-20
+**Total:** 1822 validated constraints | **Version:** 5.92 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6030,6 +6030,30 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - PREFIX not a proxy (C1810): 81.4% manifold retention after all controls. Kernel+headless retention 94.5% despite C1715 showing both load on PC1. PREFIX carries apparatus information through channels beyond kernel routing.
 - Paragraph-level operation (C1811): ICC=0.185 means only 18.5% of PREFIX variance is between-folio. Each paragraph independently selects its PREFIX profile. sh most consistent (ICC=0.382), rare PREFIXes near-zero.
 - Architectural closure (C1812): The design hierarchy is: section → shared templates (C1569); paragraph → independent PREFIX selection; PREFIX → dynamics (C1405) → manifold (C1801). Folio identity = ensemble of paragraph PREFIX choices (C1573). REGIME is emergent from PREFIX composition, not a cause.
+
+---
+
+### Phase 620: Rosettes Operational Close Reading — UNIFORM_OPERATIONAL_INDEX (C1817-C1823)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1817 | Rosettes entity operational uniformity at 8-category level: mean pairwise category JSD=0.074 across 9 rosettes, below bootstrap 95th percentile threshold 0.106 (1000 permutation resamples). All entities share common operational profile. Extends C1128 (generic indexing) from vocabulary to operational level | 2 | Rosettes, category, uniformity, bootstrap, C1128, C1250 | mean_jsd=0.074. threshold=0.106. n_entities=9. n_bootstrap=1000. n_tokens=394. |
+| 1818 | Rosettes spatial non-coherence at category level: adjacent-pair mean JSD=0.080, non-adjacent=0.073, delta=0.007 < 0.02 threshold. Entity operational character is NOT organized by physical proximity. Octagonal adjacency graph from PATH entities. Extends C1128 generic indexing to category-level spatial test | 2 | Rosettes, spatial, adjacency, category, C1128 | adj_jsd=0.080. nonadj_jsd=0.073. delta=0.007. threshold=0.02. |
+| 1819 | HEAD-category dissociation in rosettes: HEAD closest to AZC (JSD=0.026), category closest to B (JSD=0.037). Mechanism: all tokens drive HEAD toward AZC o-enriched profile; classified-only tokens (bridge-dominated) drive category toward B execution profile. Expert consensus: compilation interface between declarative (AZC-like) and executable (B-like) manuscript layers | 2 | Rosettes, HEAD, category, dissociation, AZC, B, compilation, C1127, C1502, C1506 | head_jsd_azc=0.026. head_jsd_b=0.095. cat_jsd_b=0.037. cat_jsd_azc=0.045. head_cosine_azc=0.926. cat_cosine_b=0.914. |
+| 1820 | Per-entity dual population category divergence: within-entity classified/unclassified category JSD ranges 0.116 (NE) to 0.646 (SW), mean=0.267. C1132 dual population manifests strongly at category level with large entity-specific variation. SW extreme (classified=OPERATION, unclassified=MARKING). CENTER minimal (0.124) = integration hub | 2 | Rosettes, dual_population, category, C1132, entity_variation | mean_jsd=0.267. sw_jsd=0.646. center_jsd=0.124. ne_jsd=0.116. east_jsd=0.440. n_entities=9. |
+| 1821 | EAST rosette e-HEAD anomaly: only entity with e-HEAD > o-HEAD (31% vs 25%), highest kernel density (32.3%), OPERATION 44.4% among classified. ok-prefix dominance (10/32 tokens). Most execution-like rosette entity, displaced from AZC-like metalayer profile toward B execution character | 2 | Rosettes, EAST, e-HEAD, execution, anomaly, C1475 | e_head=31.25pct. o_head=25.0pct. kernel=32.3pct. operation=44.4pct. ok_prefix=10of32. n=32. |
+| 1822 | CENTER rosette integration hub: lowest dual-population JSD (0.124), highest headless rate (32.8%), most balanced HEAD distribution, largest token count (67). Both vocabulary layers encode same operational context. Spatial analog of AXM universal attractor (C978) | 2 | Rosettes, CENTER, integration, headless, convergence, C978, C1132 | dual_jsd=0.124. headless=32.8pct. n=67. bridge=77.6pct. |
+| 1823 | CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy modulation. Indexes pure monitoring/flow operations without thermal input. Unique among all Rosettes entities. 6 tokens (low power) | 3 | Rosettes, CLOCK, kernel, monitoring, flow | k_kernel=0pct. flow=50pct. n=6. |
+
+**Phase 620 findings (Rosettes Operational Close Reading, UNIFORM_OPERATIONAL_INDEX):**
+- Entity operational uniformity (C1817): All 9 rosettes share a common 8-category operational profile (mean pairwise JSD=0.074 < bootstrap threshold 0.106). Extends C1128 generic indexing from vocabulary to category level.
+- Spatial non-coherence (C1818): Adjacent and non-adjacent rosette pairs have essentially identical category JSDs (delta=0.007). The foldout is an operational index, not a spatial procedure.
+- HEAD-category dissociation (C1819): The headline finding. HEAD distribution closest to AZC (JSD=0.026) but category distribution closest to B (JSD=0.037). Mechanism: o-enriched HEAD from all tokens looks AZC-like; bridge-dominated classified tokens produce B-like categories. The Rosettes sit at the compilation interface between declarative and executable manuscript layers.
+- Per-entity dual population divergence (C1820): C1132's dual population manifests at category level with large variation (0.116-0.646). SW is extreme (OPERATION vs MARKING split), CENTER is minimal (integration convergence). The gradient may reflect domain-boundary proximity.
+- EAST execution anomaly (C1821): Only e-HEAD-dominant entity with highest kernel density and OPERATION enrichment. Displaced from metalayer profile toward B execution character.
+- CENTER integration hub (C1822): Lowest dual-population divergence, highest headless rate, most balanced HEAD. Convergence point where both vocabulary layers serve the same operational context.
+- CLOCK zero-energy (C1823): k-kernel=0% is unique. Pure monitoring/flow without thermal input.
+- T2 failure explained: Ring text non-execution enrichment (C1131) disappears at 8-category resolution because bridge MIDDLEs carry identical categories regardless of scaffold vs execution deployment context (AX shares 89.3% of MIDDLEs with operational roles per C567).
 
 ---
 

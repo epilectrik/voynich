@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1815 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1822 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1816.
+the highest ID present is C1823.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1815 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1822 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1815 validated constraints are present as canonical one-line claims with tier
+1822 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-21 08:31
-**Version:** FROZEN STATE (1815 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-21 09:26
+**Version:** FROZEN STATE (1822 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2055,6 +2055,13 @@ C1813	Rosettes atom inventory shared with B: character-level Jaccard=0.950, 0 no
 C1814	Rosettes o-HEAD arrangement enrichment 3.30x vs B (37.1% vs 11.2%) — highest of any system. Cross-system gradient: Rosettes(37.1%) > A(28.5%) > AZC(22.4%) > B(11.2%). HEAD profile closest to AZC (JSD=0.024 vs JSD=0.096 to B). Headless rate 22.3% (below AZC-adjacent 25-35% range due to o-HEAD crowding). Extends C1559 o-HEAD gradient and C1502 AZC enrichment to rosettes endpoint	2	Rosettes, HEAD, o-atom, arrangement, gradient, C1388, C1502, C1559
 C1815	Bridge backbone in rosettes deploys with A-side HEAD distribution: JSD ros-A=0.050 < ros-B=0.090. Terminal stability preserved across systems (max JSD=0.046). 38/85 bridge types present, 286 bridge tokens. Extends C1507 (bridge HEAD redistribution) — rosettes are the A-adjacent endpoint of bridge deployment	2	Rosettes, bridge, HEAD, A-side, terminal, C1506, C1507
 C1816	C1132 dual population (classified/unclassified) converges at atom level: HEAD profile JSD=0.021 between populations. Both are o-HEAD dominant. Classified e/k/t HEAD share=26.9% (not 55% as predicted). Unclassified headless=26.4%. Compound bridge atom rate 100% (67/67). The dual population is vocabulary-level (MIDDLE length, compound rate, bridge rate) not domain-level. All rosettes content serves arrangement function regardless of vocabulary stratum	2	Rosettes, dual_population, HEAD, convergence, C1132
+C1817	Rosettes entity operational uniformity at 8-category level: mean pairwise category JSD=0.074 across 9 rosettes, below bootstrap 95th percentile threshold 0.106 (1000 permutation resamples). All entities share common operational profile. Extends C1128 (generic indexing) from vocabulary to operational level	2	Rosettes, category, uniformity, bootstrap, C1128, C1250
+C1818	Rosettes spatial non-coherence at category level: adjacent-pair mean JSD=0.080, non-adjacent=0.073, delta=0.007 < 0.02 threshold. Entity operational character is NOT organized by physical proximity. Octagonal adjacency graph from PATH entities. Extends C1128 generic indexing to category-level spatial test	2	Rosettes, spatial, adjacency, category, C1128
+C1819	HEAD-category dissociation in rosettes: HEAD closest to AZC (JSD=0.026), category closest to B (JSD=0.037). Mechanism: all tokens drive HEAD toward AZC o-enriched profile; classified-only tokens (bridge-dominated) drive category toward B execution profile. Expert consensus: compilation interface between declarative (AZC-like) and executable (B-like) manuscript layers	2	Rosettes, HEAD, category, dissociation, AZC, B, compilation, C1127, C1502, C1506
+C1820	Per-entity dual population category divergence: within-entity classified/unclassified category JSD ranges 0.116 (NE) to 0.646 (SW), mean=0.267. C1132 dual population manifests strongly at category level with large entity-specific variation. SW extreme (classified=OPERATION, unclassified=MARKING). CENTER minimal (0.124) = integration hub	2	Rosettes, dual_population, category, C1132, entity_variation
+C1821	EAST rosette e-HEAD anomaly: only entity with e-HEAD > o-HEAD (31% vs 25%), highest kernel density (32.3%), OPERATION 44.4% among classified. ok-prefix dominance (10/32 tokens). Most execution-like rosette entity, displaced from AZC-like metalayer profile toward B execution character	2	Rosettes, EAST, e-HEAD, execution, anomaly, C1475
+C1822	CENTER rosette integration hub: lowest dual-population JSD (0.124), highest headless rate (32.8%), most balanced HEAD distribution, largest token count (67). Both vocabulary layers encode same operational context. Spatial analog of AXM universal attractor (C978)	2	Rosettes, CENTER, integration, headless, convergence, C978, C1132
+C1823	CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy modulation. Indexes pure monitoring/flow operations without thermal input. Unique among all Rosettes entities. 6 tokens (low power)	3	Rosettes, CLOCK, kernel, monitoring, flow
 
 ---
 

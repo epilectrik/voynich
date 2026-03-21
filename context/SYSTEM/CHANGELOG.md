@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.92 (2026-03-20) - Phase 620: Rosettes Operational Close Reading
+
+### Summary
+
+Phase 620 performs the first operational close reading of the Rosettes foldout at 8-category resolution with expert interpretation. 394 valid tokens across 19 entities fingerprinted with HEAD, TERMINAL, MOD, category, kernel, hazard, PREFIX, suffix, bridge/dark/compound, and classified/unclassified sub-profiles. Cross-entity comparison uses bootstrap permutation null (1000 resamples). Four predictions: entity uniformity (T1 PASS), ring non-execution enrichment (T2 FAIL — resolution effect), spatial non-coherence (T3 PASS), dual population per-entity divergence (T4 reported separately, mean JSD=0.267). The headline finding is C1819: HEAD distribution closest to AZC (JSD=0.026) but category distribution closest to B (JSD=0.037) — the Rosettes sit at the compilation interface between declarative and executable manuscript layers. Verdict: **UNIFORM_OPERATIONAL_INDEX**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ROSETTES_OPERATIONAL_CLOSE_READING/` -- Phase 620 with script, JSON results, annotated dumps, INDEX.md |
+| **ADDED** | C1817: Rosettes entity operational uniformity at 8-category level (mean JSD=0.074 < bootstrap 0.106) |
+| **ADDED** | C1818: Rosettes spatial non-coherence at category level (adjacent≈non-adjacent, delta=0.007) |
+| **ADDED** | C1819: HEAD-category dissociation — HEAD closest to AZC, category closest to B (compilation interface) |
+| **ADDED** | C1820: Per-entity dual population category divergence (range 0.116-0.646, SW extreme, CENTER minimal) |
+| **ADDED** | C1821: EAST rosette e-HEAD anomaly — only entity with e-HEAD > o-HEAD, most execution-like |
+| **ADDED** | C1822: CENTER rosette integration hub — lowest dual-population divergence, highest headless rate |
+| **ADDED** | C1823: CLOCK zero-energy monitoring — k-kernel=0%, FLOW=50%, unique among entities (Tier 3, low power) |
+| **UPDATED** | INDEX.md -- +7 constraints (1822 total), Phase 620 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.92, 1822 constraints, 620 phases) |
+
+### Key Findings
+
+- **Entity operational uniformity (C1817):** All 9 rosettes share a common operational profile (mean pairwise category JSD=0.074 < bootstrap threshold 0.106). Extends C1128 generic indexing from vocabulary to 8-category operational level.
+- **Spatial non-coherence (C1818):** Adjacent and non-adjacent rosette pairs have identical category JSDs (delta=0.007). The foldout is an operational index, not a spatial procedure.
+- **HEAD-category dissociation (C1819):** HEAD closest to AZC (JSD=0.026) but category closest to B (JSD=0.037). Mechanism: o-enriched HEAD from all tokens looks AZC-like; bridge-dominated classified tokens produce B-like categories. Three expert agents converge on interpretation: this is the compilation interface where AZC-like declarative specifications become B-like executable operations.
+- **Per-entity dual population divergence (C1820):** C1132's dual population manifests at category level with large entity-specific variation (0.116-0.646). SW is extreme (classified=OPERATION, unclassified=MARKING split). CENTER is minimal (0.124), functioning as integration convergence point.
+- **EAST execution anomaly (C1821):** Only e-HEAD-dominant entity, highest kernel density (32.3%), OPERATION 44.4% among classified. Most execution-like rosette.
+- **T2 resolution effect:** Ring text C1131 AUXILIARY enrichment disappears at 8-category resolution because bridge MIDDLEs carry identical categories in scaffold and execution deployment contexts (AX shares 89.3% of MIDDLEs with operational roles per C567). This strengthens the model — category stability confirms bridge vocabulary invariance.
+
+---
+
 ## Version 5.91 (2026-03-20) - Phase 619: Rosettes Atom Decomposition
 
 ### Summary

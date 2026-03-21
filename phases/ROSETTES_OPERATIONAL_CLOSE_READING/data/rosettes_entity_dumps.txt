@@ -1,0 +1,983 @@
+ROSETTES OPERATIONAL CLOSE READING - ANNOTATED TOKEN DUMPS
+Phase 620 | Generated from data/rosettes_annotated.json (ZL transcription)
+================================================================================
+
+LEGEND:
+  HEAD domains (C1475): a=ITERATION, e=BALANCED, o=ARRANGEMENT, k=THERMAL, t=TRANSFER
+  TERMINAL tiers (C1487): LOCKED={r,m}, CHANNELED={l,y,n}, DIFFUSE={h}, BARE=no terminal
+  Categories (C1250): TH=THERMAL, FL=FLOW, CN=CONTAINMENT, ST=STAGING,
+                      OP=OPERATION, TR=TRANSITION, MK=MARKING, MN=MONITORING
+  B/D column: B=bridge, D=dark, BD=both, -=neither
+  C/U column: C=classified (in 49-class system), U=unclassified
+  Hazard: IMMUNE (k/o-HEAD, C1446/C1561), ZERO/HIGH/LOW (C1448 frame_hazard)
+  Conf: Category confidence (H=HIGH, M=MEDIUM, L=LOW from C1195 atom tiers)
+  Atom gloss [T4]: Tier 4 QUARANTINED glosses (C1195-C1196). NOT structural findings.
+    k=heat, e=cool, h=watch, y=end, i=iterate, n=halt, a=yield, m=final,
+    d=mark, t=transfer, c=adjust, p=pause, f=flag, s=sequence, g=complete,
+    o=work, l=frame, r=input
+
+================================================================================
+
+
+==========================================================================================
+ENTITY: CENTER -- 67 tokens, 2 sub-regions (ring, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=38.8%  headless=32.8%  a=11.9%  e=11.9%  k=3.0%  t=1.5%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 32.8%
+CATEGORY: FLOW=24.2%  TRAN=19.4%  OPER=17.7%  MARK=16.1%  STAG=11.3%  THER=8.1%  CONT=3.2%
+  [Coverage: 92.5% of MIDDLEs classified]
+KERNEL: k=10.0% h=20.0% e=70.0% | fraction=14.5% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=17.9%  CHAN=23.9%  DIFF=1.5%  BARE=56.7%
+PREFIX: rate=59.7%  da/sa/ta=6.0%  top: {'ot': 10, 'ok': 8, 'ol': 5, 'da': 4, 'ar': 3, 'sh': 3, 'qo': 2, 'te': 2, 'or': 1, 'ch': 1}
+SUFFIX: rate=47.8%
+BRIDGE=77.6%  DARK=11.9%  COMPOUND=19.4%
+CLASSIFIED: 36/67 (53.7%)  UNCLASSIFIED: 31/67 (46.3%)
+HAZARD: IMMUNE=41.8%  ZERO=4.5%  HIGH=13.4%  LOW=40.3%
+TOP FRAMES: o->bare(18), e->bare(6), d->bare(5), o->r(4), a->r(4)
+TOP MIDDLEs: o(6), or(4), ar(4), y(4), d(4)
+==========================================================================================
+
+--- SUB-REGION: ring (41 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  otor             ot     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE >o             work.input
+    2  os               -      o            s    o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE or>om          work
+    3  om               -      om           -    o:ARRANGEMENT    -      m     OPERATION    H  B  C  IMMUNE o>aiin         work.final
+    4  araiin           ar     aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  U  HIGH   om>eo          yield.iterate.iterate.halt
+    5  okeody           ok     eo           dy   e:BALANCED       o      bare  TRANSITION   H  B  C  LOW    aiin>ar        cool.work
+    6  okar             ok     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   eo>odshe       yield.input
+    7  odsheedy         -      odshe        edy  o:ARRANGEMENT    dshe   bare  ?            ?  -  U  IMMUNE ar>od          work.mark.sequence.watch.cool
+    8  odaiin           -      od           aiin o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE odshe>dy       work.mark
+    9  okchdy           ok     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   od>ar          mark.end
+   10  okar             ok     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   dy>or          yield.input
+   11  shor             sh     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE ar>aiin        work.input
+   12  okaiin           ok     aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  C  HIGH   or>iin         yield.iterate.iterate.halt
+   13  daiin            da     iin          -    headless         ii     n     STAGING      H  B  C  ZERO   aiin>ofai      iterate.iterate.halt
+   14  ofair            -      ofai         r    o:ARRANGEMENT    fai    bare  MARKING      H  -  U  IMMUNE iin>y          work.flag.yield.iterate
+   15  oly              ol     y            -    headless         -      y     TRANSITION   H  B  C  LOW    ofai>kal       end
+   16  olkalor          ol     kal          or   k:THERMAL        a      l     STAGING      H  D  U  IMMUNE y>or           heat.yield.frame
+   17  olor             ol     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE kal>s          work.input
+   18  s                -      s            -    headless         s      bare  STAGING      H  B  C  LOW    or>y           sequence
+   19  y                -      y            -    headless         -      y     TRANSITION   H  B  C  LOW    s>o            end
+   20  o                -      o            -    o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE y>d            work
+   21  d                -      d            -    headless         d      bare  MARKING      H  B  C  LOW    o>k            mark
+   22  k                -      k            -    k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE d>r            heat
+   23  r                -      r            -    headless         -      r     FLOW         H  B  C  LOW    k>ar           input
+   24  olar             ol     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   r>eed          yield.input
+   25  oteedaiin        ot     eed          aiin e:BALANCED       ed     bare  THERMAL      H  D  U  LOW    ar>s           cool.cool.mark
+   26  yqos             qo     s            -    headless         s      bare  STAGING      H  B  U  LOW    eed>ai         sequence
+   27  aiiin            -      ai           iin  a:ITERATION      i      bare  TRANSITION   H  B  C  LOW    s>ol           yield.iterate
+   28  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE ai>to          work.frame
+   29  qotody           qo     to           dy   t:TRANSFER       o      bare  FLOW         H  D  U  LOW    ol>ol          transfer.work
+   30  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE to>oi          work.frame
+   31  oir              -      oi           r    o:ARRANGEMENT    i      bare  OPERATION    H  D  U  IMMUNE ol>or          work.iterate
+   32  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE oi>oa          work.input
+   33  oroa             or     oa           -    o:ARRANGEMENT    a      bare  OPERATION    H  -  U  IMMUNE or>ee          work.yield
+   34  oteeedy          ot     ee           edy  e:BALANCED       e      bare  THERMAL      H  B  U  LOW    oa>al          cool.cool
+   35  okal             ok     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   ee>od          yield.frame
+   36  okodar           ok     od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE al>e           work.mark
+   37  otshe            ot     e            -    e:BALANCED       -      bare  THERMAL      H  B  U  LOW    od>o           cool
+   38  okody            ok     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE e>edy          work
+   39  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   o>d            cool.mark.end
+   40  chdar            ch     d            ar   headless         d      bare  MARKING      H  B  C  LOW    edy>o          mark
+   41  o                -      o            -    o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE d>             work
+
+--- SUB-REGION: inner_label (26 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  oteedy           ot     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    >op            cool
+    2  opy              -      op           y    o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE e>od           work.pause
+    3  odal             -      od           al   o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE op>dy          work.mark
+    4  shdy             sh     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   od>opchee      mark.end
+    5  opchees          -      opchee       s    o:ARRANGEMENT    pchee  bare  MARKING      H  D  U  IMMUNE dy>op          work.pause.adjust.watch.cool.cool
+    6  opar             -      op           ar   o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE opchee>r       work.pause
+    7  daral            da     r            al   headless         -      r     FLOW         H  B  U  LOW    op>dod         input
+    8  otdodar          ot     dod          ar   headless         dod    bare  MARKING      H  -  U  LOW    r>o            mark.work.mark
+    9  oedy             -      o            edy  o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE dod>x          work
+   10  soshxor          so     x            or   headless         x      bare  MARKING      H  -  U  LOW    o>ar           x
+   11  arar             ar     ar           -    a:ITERATION      -      r     FLOW         H  B  U  HIGH   x>ed           yield.input
+   12  otedain          ot     ed           ain  e:BALANCED       d      bare  FLOW         H  B  U  LOW    ar>edy         cool.mark
+   13  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   ed>d           cool.mark.end
+   14  ytedar           te     d            ar   headless         d      bare  MARKING      H  B  U  LOW    edy>y          mark
+   15  ary              ar     y            -    headless         -      y     TRANSITION   H  B  C  LOW    d>opched       end
+   16  opchedaiin       -      opched       aiin o:ARRANGEMENT    pched  bare  MARKING      H  -  U  IMMUNE y>s            work.pause.adjust.watch.cool.mark
+   17  ols              ol     s            -    headless         s      bare  STAGING      H  B  C  LOW    opched>yp      sequence
+   18  ypal             -      yp           al   headless         yp     bare  MARKING      H  D  U  LOW    s>opydsh       end.pause
+   19  opydsh           -      opydsh       -    o:ARRANGEMENT    pyds   h     ?            ?  -  U  IMMUNE yp>y           work.pause.end.mark.sequence.watch
+   20  rshy             sh     y            -    headless         -      y     TRANSITION   H  B  U  LOW    opydsh>d       end
+   21  dtedg            te     d            g    headless         d      bare  MARKING      H  B  U  LOW    y>op           mark
+   22  opy              -      op           y    o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE d>ry           work.pause
+   23  ddary            da     ry           -    headless         r      y     TRANSITION   H  B  U  LOW    op>o           input.end
+   24  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE ry>ir          work
+   25  dairdy           da     ir           dy   headless         i      r     FLOW         H  D  U  LOW    o>ro           iterate.input
+   26  rody             -      ro           dy   headless         ro     bare  FLOW         M  D  U  LOW    ir>            input.work
+
+
+==========================================================================================
+ENTITY: NE -- 53 tokens, 5 sub-regions (outer_label, inner_label, ring, spiral, paragraph)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=39.6%  e=22.6%  headless=20.8%  a=13.2%  k=3.8%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 20.8%
+CATEGORY: OPER=26.2%  FLOW=23.8%  THER=16.7%  TRAN=16.7%  MARK=9.5%  STAG=4.8%  CONT=2.4%
+  [Coverage: 79.2% of MIDDLEs classified]
+KERNEL: k=15.4% h=7.7% e=76.9% | fraction=20.0% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=13.2%  CHAN=17.0%  DIFF=1.9%  BARE=67.9%
+PREFIX: rate=62.3%  da/sa/ta=1.9%  top: {'ok': 7, 'ot': 6, 'yk': 6, 'ch': 4, 'ol': 3, 'to': 2, 'tch': 1, 'sa': 1, 'se': 1, 'ar': 1}
+SUFFIX: rate=64.2%
+BRIDGE=69.8%  DARK=9.4%  COMPOUND=34.0%
+CLASSIFIED: 22/53 (41.5%)  UNCLASSIFIED: 31/53 (58.5%)
+HAZARD: IMMUNE=43.4%  ZERO=7.5%  HIGH=7.5%  LOW=41.5%
+TOP FRAMES: o->bare(14), e->bare(8), d->bare(5), o->r(5), a->bare(4)
+TOP MIDDLEs: o(5), or(5), edy(3), d(3), e(3)
+==========================================================================================
+
+--- SUB-REGION: ring (31 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  okos             ok     o            s    o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE >or            work
+    2  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE o>eote         work.input
+    3  oteoteedy        ot     eote         edy  e:BALANCED       ote    bare  ?            ?  -  U  LOW    or>o           cool.work.transfer.cool
+    4  otos             ot     o            s    o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE eote>ed        work
+    5  otedar           ot     ed           ar   e:BALANCED       d      bare  FLOW         H  B  U  LOW    o>e            cool.mark
+    6  ches             ch     e            s    e:BALANCED       -      bare  THERMAL      H  B  C  LOW    ed>odain       cool
+    7  okodainol        ok     odain        ol   o:ARRANGEMENT    dai    n     ?            ?  -  U  IMMUNE e>edy          work.mark.yield.iterate.halt
+    8  ykedy            yk     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   odain>eed      cool.mark.end
+    9  eedor            -      eed          or   e:BALANCED       ed     bare  THERMAL      H  D  U  LOW    edy>d          cool.cool.mark
+   10  tchdaiin         tch    d            aiin headless         d      bare  MARKING      H  B  U  LOW    eed>s          mark
+   11  sy               -      s            y    headless         s      bare  STAGING      H  B  C  LOW    d>rald         sequence
+   12  sarald           sa     rald         -    headless         rald   bare  ?            ?  -  U  LOW    s>d            input.yield.frame.mark
+   13  todar            to     d            ar   headless         d      bare  MARKING      H  B  U  LOW    rald>k         mark
+   14  chkar            ch     k            ar   k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE d>odai         heat
+   15  odair            -      odai         r    o:ARRANGEMENT    dai    bare  MARKING      H  D  U  IMMUNE k>or           work.mark.yield.iterate
+   16  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE odai>o         work.input
+   17  oal              -      o            al   o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE or>dy          work
+   18  okchdy           ok     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   o>edy          mark.end
+   19  seedy            se     edy          -    e:BALANCED       d      y     OPERATION    H  B  U  ZERO   dy>e           cool.mark.end
+   20  oteedy           ot     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    edy>da         cool
+   21  ykchda           yk     da           -    headless         da     bare  TRANSITION   H  D  U  LOW    e>ek           mark.yield
+   22  cheky            ch     ek           y    e:BALANCED       k      bare  OPERATION    H  B  C  LOW    da>o           cool.heat
+   23  o                -      o            -    o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE ek>aiin        work
+   24  aiin             -      aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  C  HIGH   o>ee           yield.iterate.iterate.halt
+   25  okees            ok     ee           s    e:BALANCED       e      bare  THERMAL      H  B  C  LOW    aiin>ar        cool.cool
+   26  olar             ol     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ee>or          yield.input
+   27  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE ar>e           work.input
+   28  ykeedy           yk     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    or>or          cool
+   29  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE e>ai           work.input
+   30  olaiiin          ol     ai           iin  a:ITERATION      i      bare  TRANSITION   H  B  U  LOW    or>ar          yield.iterate
+   31  olar             ol     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ai>            yield.input
+
+--- SUB-REGION: paragraph (1 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  kechy            ke     y            -    headless         -      y     TRANSITION   H  B  U  LOW    >              end
+
+--- SUB-REGION: spiral (9 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  octhey           -      octh         ey   o:ARRANGEMENT    ct     h     FLOW         H  D  U  IMMUNE >keeo          work.adjust.transfer.watch
+    2  arkeeody         ar     keeo         dy   k:THERMAL        eeo    bare  STAGING      H  B  U  IMMUNE octh>oekai     heat.cool.cool.work
+    3  oekairy          -      oekai        ry   o:ARRANGEMENT    ekai   bare  ?            ?  -  U  IMMUNE keeo>daro      work.cool.heat.yield.iterate
+    4  ytodaro          to     daro         -    headless         daro   bare  FLOW         H  -  U  LOW    oekai>opals    mark.yield.input.work
+    5  opalshy          -      opals        hy   o:ARRANGEMENT    pals   bare  ?            ?  -  U  IMMUNE daro>od        work.pause.yield.frame.sequence
+    6  ykodar           yk     od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE opals>od       work.mark
+    7  ykodar           yk     od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE od>a           work.mark
+    8  ykary            yk     a            ry   a:ITERATION      -      bare  TRANSITION   H  B  U  LOW    od>opalx       yield
+    9  opalxy           -      opalx        y    o:ARRANGEMENT    palx   bare  ?            ?  -  U  IMMUNE a>             work.pause.yield.frame.x
+
+--- SUB-REGION: inner_label (4 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  cfair            -      cfai         r    headless         cfai   bare  ?            ?  -  U  LOW    >oo            adjust.flag.yield.iterate
+    2  ooly             -      oo           ly   o:ARRANGEMENT    o      bare  OPERATION    H  -  U  IMMUNE cfai>os        work.work
+    3  osal             -      os           al   o:ARRANGEMENT    s      bare  OPERATION    M  D  U  IMMUNE oo>eey         work.sequence
+    4  eey              -      eey          -    e:BALANCED       e      y     THERMAL      H  B  U  ZERO   os>            cool.cool.end
+
+--- SUB-REGION: outer_label (8 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  adashgasain      -      adashgas     ain  a:ITERATION      dashgas bare  ?            ?  -  U  LOW    >o             yield.mark.yield.sequence.watch.complete.yield.sequence
+    2  okody            ok     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE adashg>a       work
+    3  okas             ok     a            s    a:ITERATION      -      bare  TRANSITION   H  B  U  LOW    o>oeda         yield
+    4  oedady           -      oeda         dy   o:ARRANGEMENT    eda    bare  ?            ?  -  U  IMMUNE a>edy          work.cool.mark.yield
+    5  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   oeda>d         cool.mark.end
+    6  chdaiin          ch     d            aiin headless         d      bare  MARKING      H  B  C  LOW    edy>y          mark
+    7  oty              ot     y            -    headless         -      y     TRANSITION   H  B  C  LOW    d>or           end
+    8  okor             ok     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE y>             work.input
+
+
+==========================================================================================
+ENTITY: SW -- 45 tokens, 3 sub-regions (ring, inner_label, outer_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=44.4%  e=22.2%  headless=17.8%  a=13.3%  k=2.2%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 17.8%
+CATEGORY: MARK=30.3%  FLOW=27.3%  OPER=24.2%  STAG=9.1%  THER=3.0%  CONT=3.0%  TRAN=3.0%
+  [Coverage: 73.3% of MIDDLEs classified]
+KERNEL: k=14.3% h=28.6% e=57.1% | fraction=17.2% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=11.1%  CHAN=20.0%  DIFF=6.7%  BARE=62.2%
+PREFIX: rate=57.8%  da/sa/ta=0.0%  top: {'ot': 14, 'ch': 4, 'ok': 4, 'ol': 2, 'sh': 1, 'to': 1}
+SUFFIX: rate=66.7%
+BRIDGE=64.4%  DARK=6.7%  COMPOUND=35.6%
+CLASSIFIED: 16/45 (35.6%)  UNCLASSIFIED: 29/45 (64.4%)
+HAZARD: IMMUNE=46.7%  ZERO=6.7%  HIGH=8.9%  LOW=37.8%
+TOP FRAMES: o->bare(13), e->bare(6), x->bare(3), o->r(3), e->y(3)
+TOP MIDDLEs: od(4), ed(4), o(3), edy(3), d(2)
+==========================================================================================
+
+--- SUB-REGION: ring (26 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  otchdaiin        ot     d            aiin headless         d      bare  MARKING      H  B  U  LOW    >od            mark
+    2  otodar           ot     od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE d>ed           work.mark
+    3  otedar           ot     ed           ar   e:BALANCED       d      bare  FLOW         H  B  U  LOW    od>k           cool.mark
+    4  olkaiin          ol     k            aiin k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE ed>l           heat
+    5  otl              ot     l            -    headless         -      l     STAGING      H  B  U  LOW    k>xasash       frame
+    6  xasashe          -      xasashe      -    headless         xasashe bare  ?            ?  -  U  LOW    l>ol           x.yield.sequence.yield.sequence.watch.cool
+    7  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE xasash>ar      work.frame
+    8  ar               -      ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ol>ae          yield.input
+    9  ae               -      ae           -    a:ITERATION      e      bare  ?            ?  -  U  LOW    ar>ed          yield.cool
+   10  chedaiin         ch     ed           aiin e:BALANCED       d      bare  FLOW         H  B  C  LOW    ae>ockh        cool.mark
+   11  ockhedy          -      ockh         edy  o:ARRANGEMENT    ck     h     MARKING      H  D  U  IMMUNE ed>eda         work.adjust.heat.watch
+   12  sheda            sh     eda          -    e:BALANCED       da     bare  MARKING      H  -  U  LOW    ockh>o         cool.mark.yield
+   13  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE eda>o          work
+   14  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE o>or           work
+   15  toor             to     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  U  IMMUNE o>ep           work.input
+   16  chepar           ch     ep           ar   e:BALANCED       p      bare  MARKING      H  D  U  LOW    or>ol          cool.pause
+   17  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE ep>ck          work.frame
+   18  chckhy           ch     ck           hy   headless         ck     bare  OPERATION    H  B  C  LOW    ol>opchd       adjust.heat
+   19  opchdar          -      opchd        ar   o:ARRANGEMENT    pchd   bare  MARKING      H  -  U  IMMUNE ck>al          work.pause.adjust.watch.mark
+   20  al               -      al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   opchd>x        yield.frame
+   21  xar              -      x            ar   headless         x      bare  MARKING      H  -  U  LOW    al>op          x
+   22  opor             -      op           or   o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE x>edy          work.pause
+   23  olchedy          ol     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   op>al          cool.mark.end
+   24  okalm            ok     al           m    a:ITERATION      -      l     FLOW         H  B  U  HIGH   edy>or         yield.frame
+   25  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE al>afalai      work.input
+   26  afalairidy       -      afalairi     dy   a:ITERATION      falairi bare  ?            ?  -  U  LOW    or>            yield.flag.yield.frame.yield.iterate.input.iterate
+
+--- SUB-REGION: inner_label (15 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  okaramal         ok     aram         al   a:ITERATION      ra     m     ?            ?  -  U  LOW    >opch          yield.input.yield.final
+    2  opchdy           -      opch         dy   o:ARRANGEMENT    pc     h     OPERATION    H  B  C  IMMUNE aram>ofdor     work.pause.adjust.watch
+    3  ofdoram          -      ofdor        am   o:ARRANGEMENT    fdo    r     ?            ?  -  U  IMMUNE opch>oda       work.flag.mark.work.input
+    4  oda              -      oda          -    o:ARRANGEMENT    da     bare  MARKING      H  D  U  IMMUNE ofdor>ed       work.mark.yield
+    5  otedam           ot     ed           am   e:BALANCED       d      bare  FLOW         H  B  U  LOW    oda>edsh       cool.mark
+    6  lokedshs         ok     edsh         s    e:BALANCED       ds     h     MARKING      H  -  U  LOW    ed>od          cool.mark.sequence.watch
+    7  otodar           ot     od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE edsh>ed        work.mark
+    8  otedaiin         ot     ed           aiin e:BALANCED       d      bare  FLOW         H  B  U  LOW    od>edy         cool.mark
+    9  okedy            ok     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   ed>xolt        cool.mark.end
+   10  xoltedy          -      xolt         edy  headless         xolt   bare  ?            ?  -  U  LOW    edy>opchd      x.work.frame.transfer
+   11  opchdam          -      opchd        am   o:ARRANGEMENT    pchd   bare  MARKING      H  -  U  IMMUNE xolt>dy        work.pause.adjust.watch.mark
+   12  otchdy           ot     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   opchd>o        mark.end
+   13  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE dy>d           work
+   14  chdain           ch     d            ain  headless         d      bare  MARKING      H  B  U  LOW    o>edy          mark
+   15  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   d>             cool.mark.end
+
+--- SUB-REGION: outer_label (4 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  ofodady          -      ofoda        dy   o:ARRANGEMENT    foda   bare  ?            ?  -  U  IMMUNE >opda          work.flag.work.mark.yield
+    2  opdady           -      opda         dy   o:ARRANGEMENT    pda    bare  ?            ?  -  U  IMMUNE ofoda>od       work.pause.mark.yield
+    3  otodey           ot     od           ey   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE opda>od        work.mark
+    4  otodedy          ot     od           edy  o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE od>            work.mark
+
+
+==========================================================================================
+ENTITY: NORTH -- 42 tokens, 2 sub-regions (ring, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=33.3%  a=28.6%  headless=19.0%  e=14.3%  k=4.8%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 19.0%
+CATEGORY: FLOW=27.0%  TRAN=18.9%  OPER=16.2%  STAG=13.5%  CONT=10.8%  MARK=8.1%  THER=5.4%
+  [Coverage: 88.1% of MIDDLEs classified]
+KERNEL: k=21.4% h=14.3% e=64.3% | fraction=15.6% | ESCAPE_DOMINANT
+TERMINAL TIER: CHANNELED  LOCKED=7.1%  CHAN=45.2%  DIFF=4.8%  BARE=42.9%
+PREFIX: rate=57.1%  da/sa/ta=2.4%  top: {'ok': 13, 'ol': 3, 'sh': 2, 'al': 1, 'yk': 1, 'ot': 1, 'ch': 1, 'da': 1, 'do': 1}
+SUFFIX: rate=40.5%
+BRIDGE=88.1%  DARK=2.4%  COMPOUND=23.8%
+CLASSIFIED: 25/42 (59.5%)  UNCLASSIFIED: 17/42 (40.5%)
+HAZARD: IMMUNE=38.1%  ZERO=7.1%  HIGH=26.2%  LOW=28.6%
+TOP FRAMES: o->bare(8), a->l(5), o->l(3), a->n(3), e->bare(3)
+TOP MIDDLEs: al(5), ol(3), o(3), or(2), od(2)
+==========================================================================================
+
+--- SUB-REGION: ring (32 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE >al            work.input
+    2  okal             ok     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   or>al          yield.frame
+    3  okal             ok     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   al>or          yield.frame
+    4  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE al>al          work.input
+    5  alal             al     al           -    a:ITERATION      -      l     FLOW         H  B  U  HIGH   or>al          yield.frame
+    6  ykal             yk     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   al>ol          yield.frame
+    7  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE al>ar          work.frame
+    8  ar               -      ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ol>ol          yield.input
+    9  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE ar>al          work.frame
+   10  al               -      al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   ol>ol          yield.frame
+   11  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE al>an          work.frame
+   12  okan             ok     an           -    a:ITERATION      -      n     CONTAINMENT  H  B  U  HIGH   ol>od          yield.halt
+   13  okod             ok     od           -    o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE an>ed          work.mark
+   14  oked             ok     ed           -    e:BALANCED       d      bare  FLOW         H  B  U  LOW    od>eo          cool.mark
+   15  okeo             ok     eo           -    e:BALANCED       o      bare  TRANSITION   H  B  C  LOW    ed>l           cool.work
+   16  ldy              -      l            dy   headless         -      l     STAGING      H  B  C  LOW    eo>opash       frame
+   17  opashs           -      opash        s    o:ARRANGEMENT    pas    h     ?            ?  -  U  IMMUNE l>edy          work.pause.yield.sequence.watch
+   18  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   opash>edch     cool.mark.end
+   19  chedchs          ch     edch         s    e:BALANCED       dc     h     MARKING      H  -  U  LOW    edy>eek        cool.mark.adjust.watch
+   20  sheekedy         sh     eek          edy  e:BALANCED       ek     bare  CONTAINMENT  H  B  U  LOW    edch>od        cool.cool.heat
+   21  odal             -      od           al   o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE eek>d          work.mark
+   22  shd              sh     d            -    headless         d      bare  MARKING      H  B  U  LOW    od>ke          mark
+   23  olkeedy          ol     ke           edy  k:THERMAL        e      bare  THERMAL      H  B  C  IMMUNE d>dy           heat.cool
+   24  okchdy           ok     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   ke>aiin        mark.end
+   25  aiin             -      aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  C  HIGH   dy>aii         yield.iterate.iterate.halt
+   26  aiir             -      aii          r    a:ITERATION      ii     bare  ?            ?  B  C  LOW    aiin>oe        yield.iterate.iterate
+   27  oeal             -      oe           al   o:ARRANGEMENT    e      bare  OPERATION    H  D  U  IMMUNE aii>dy         work.cool
+   28  okchdy           ok     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   oe>y           mark.end
+   29  oly              ol     y            -    headless         -      y     TRANSITION   H  B  C  LOW    dy>ain         end
+   30  okain            ok     ain          -    a:ITERATION      i      n     FLOW         H  B  C  HIGH   y>k            yield.iterate.halt
+   31  olkaiin          ol     k            aiin k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE ain>o          heat
+   32  ody              -      o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE k>             work
+
+--- SUB-REGION: inner_label (10 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  oko              ok     o            -    o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE >iin           work
+    2  daiiny           da     iin          y    headless         ii     n     STAGING      H  B  U  ZERO   o>y            iterate.iterate.halt
+    3  doy              do     y            -    headless         -      y     TRANSITION   H  B  U  LOW    iin>edy        end
+    4  okedy            ok     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   y>a            cool.mark.end
+    5  okary            ok     a            ry   a:ITERATION      -      bare  TRANSITION   H  B  C  LOW    edy>op         yield
+    6  opain            -      op           ain  o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE a>op           work.pause
+    7  opar             -      op           ar   o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE op>adai        work.pause
+    8  adairy           -      adai         ry   a:ITERATION      dai    bare  ?            ?  -  U  LOW    op>dx          yield.mark.yield.iterate
+    9  dxar             -      dx           ar   headless         dx     bare  MARKING      M  -  U  LOW    adai>o         mark.x
+   10  okory            ok     o            ry   o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE dx>            work
+
+
+==========================================================================================
+ENTITY: SOUTH -- 37 tokens, 2 sub-regions (ring, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=35.1%  e=27.0%  a=18.9%  headless=16.2%  k=2.7%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 16.2%
+CATEGORY: FLOW=26.5%  OPER=23.5%  THER=14.7%  TRAN=14.7%  STAG=8.8%  MARK=8.8%  CONT=2.9%
+  [Coverage: 91.9% of MIDDLEs classified]
+KERNEL: k=15.4% h=0.0% e=84.6% | fraction=17.1% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=10.8%  CHAN=35.1%  DIFF=0.0%  BARE=54.1%
+PREFIX: rate=62.2%  da/sa/ta=2.7%  top: {'ot': 9, 'ok': 8, 'yk': 2, 'ch': 1, 'ke': 1, 'ol': 1, 'sa': 1}
+SUFFIX: rate=62.2%
+BRIDGE=83.8%  DARK=13.5%  COMPOUND=21.6%
+CLASSIFIED: 22/37 (59.5%)  UNCLASSIFIED: 15/37 (40.5%)
+HAZARD: IMMUNE=37.8%  ZERO=10.8%  HIGH=18.9%  LOW=32.4%
+TOP FRAMES: o->bare(8), e->bare(6), e->y(4), o->l(3), o->r(2)
+TOP MIDDLEs: edy(4), ed(3), ol(3), e(3), o(2)
+==========================================================================================
+
+--- SUB-REGION: ring (29 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  okedar           ok     ed           ar   e:BALANCED       d      bare  FLOW         H  B  U  LOW    >o             cool.mark
+    2  okody            ok     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE ed>ai          work
+    3  okair            ok     ai           r    a:ITERATION      i      bare  TRANSITION   H  B  C  LOW    o>edy          yield.iterate
+    4  chedy            ch     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   ai>op          cool.mark.end
+    5  opar             -      op           ar   o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE edy>ol         work.pause
+    6  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE op>e           work.frame
+    7  keeedy           ke     e            edy  e:BALANCED       -      bare  THERMAL      H  B  U  LOW    ol>ed          cool
+    8  otedaiin         ot     ed           aiin e:BALANCED       d      bare  FLOW         H  B  U  LOW    e>k            cool.mark
+    9  olky             ol     k            y    k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE ed>or          heat
+   10  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE k>aiin         work.input
+   11  aiin             -      aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  C  HIGH   or>o           yield.iterate.iterate.halt
+   12  ody              -      o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE aiin>os        work
+   13  osain            -      os           ain  o:ARRANGEMENT    s      bare  OPERATION    M  D  U  IMMUNE o>xd           work.sequence
+   14  xdar             -      xd           ar   headless         xd     bare  ?            ?  -  U  LOW    os>od          x.mark
+   15  odaiin           -      od           aiin o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE xd>ed          work.mark
+   16  okedal           ok     ed           al   e:BALANCED       d      bare  FLOW         H  B  U  LOW    od>ol          cool.mark
+   17  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE ed>ar          work.frame
+   18  ar               -      ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ol>oek         yield.input
+   19  oekaiin          -      oek          aiin o:ARRANGEMENT    ek     bare  THERMAL      H  D  U  IMMUNE ar>ld          work.cool.heat
+   20  saldan           sa     ld           an   headless         ld     bare  MARKING      H  D  U  LOW    oek>e          frame.mark
+   21  oteedy           ot     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    ld>d           cool
+   22  otchdaiin        ot     d            aiin headless         d      bare  MARKING      H  B  U  LOW    e>edy          mark
+   23  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   d>ar           cool.mark.end
+   24  otar             ot     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   edy>aiin       yield.input
+   25  aiin             -      aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  C  HIGH   ar>y           yield.iterate.iterate.halt
+   26  yky              yk     y            -    headless         -      y     TRANSITION   H  B  C  LOW    aiin>od        end
+   27  odaiin           -      od           aiin o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE y>al           work.mark
+   28  okal             ok     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   od>al          yield.frame
+   29  okalar           ok     al           ar   a:ITERATION      -      l     FLOW         H  B  U  HIGH   al>            yield.frame
+
+--- SUB-REGION: inner_label (8 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  ofaraiin         -      ofar         aiin o:ARRANGEMENT    fa     r     FLOW         M  D  U  IMMUNE >ol            work.flag.yield.input
+    2  okolar           ok     ol           ar   o:ARRANGEMENT    -      l     STAGING      H  B  U  IMMUNE ofar>dy        work.frame
+    3  okchdy           ok     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   ol>edy         mark.end
+    4  ykedy            yk     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   dy>e           cool.mark.end
+    5  oteedy           ot     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    edy>os         cool
+    6  otosaiin         ot     os           aiin o:ARRANGEMENT    s      bare  OPERATION    M  D  U  IMMUNE e>d            work.sequence
+    7  otchdam          ot     d            am   headless         d      bare  MARKING      H  B  U  LOW    os>edy         mark
+    8  otedy            ot     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   d>             cool.mark.end
+
+
+==========================================================================================
+ENTITY: EAST -- 32 tokens, 2 sub-regions (ring, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: e=31.2%  headless=21.9%  a=18.8%  o=18.8%  k=6.2%  t=3.1%
+  [Dominant: e = BALANCED]  Headless rate: 21.9%
+CATEGORY: OPER=33.3%  FLOW=22.2%  THER=18.5%  TRAN=14.8%  CONT=3.7%  STAG=3.7%  MARK=3.7%
+  [Coverage: 84.4% of MIDDLEs classified]
+KERNEL: k=23.8% h=14.3% e=61.9% | fraction=32.3% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=18.8%  CHAN=28.1%  DIFF=6.2%  BARE=46.9%
+PREFIX: rate=87.5%  da/sa/ta=0.0%  top: {'ok': 10, 'ot': 6, 'ol': 2, 'sh': 2, 'ch': 2, 'qo': 2, 'ka': 2, 'yk': 1, 'do': 1}
+SUFFIX: rate=50.0%
+BRIDGE=81.2%  DARK=6.2%  COMPOUND=18.8%
+CLASSIFIED: 18/32 (56.2%)  UNCLASSIFIED: 14/32 (43.8%)
+HAZARD: IMMUNE=25.0%  ZERO=12.5%  HIGH=15.6%  LOW=46.9%
+TOP FRAMES: o->bare(6), e->bare(4), e->y(4), a->r(3), k->bare(2)
+TOP MIDDLEs: edy(4), ar(3), o(3), k(2), r(2)
+==========================================================================================
+
+--- SUB-REGION: ring (28 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  yke              yk     e            -    e:BALANCED       -      bare  THERMAL      H  B  U  LOW    >ee            cool
+    2  okees            ok     ee           s    e:BALANCED       e      bare  THERMAL      H  B  C  LOW    e>edy          cool.cool
+    3  olchedy          ol     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   ee>l           cool.mark.end
+    4  dol              do     l            -    headless         -      l     STAGING      H  B  C  LOW    edy>od         frame
+    5  otodar           ot     od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE l>ek           work.mark
+    6  shekal           sh     ek           al   e:BALANCED       k      bare  OPERATION    H  B  U  LOW    od>k           cool.heat
+    7  olkar            ol     k            ar   k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE ek>eyk         heat
+    8  cheykar          ch     eyk          ar   e:BALANCED       yk     bare  THERMAL      H  D  U  LOW    k>al           cool.end.heat
+    9  shal             sh     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   eyk>k          yield.frame
+   10  qokal            qo     k            al   k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE al>r           heat
+   11  okchr            ok     r            -    headless         -      r     FLOW         H  B  U  LOW    k>ar           input
+   12  otar             ot     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   r>o            yield.input
+   13  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE ar>o           work
+   14  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE o>o            work
+   15  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE o>a            work
+   16  otas             ot     a            s    a:ITERATION      -      bare  TRANSITION   H  B  U  LOW    o>f            yield
+   17  chfol            ch     f            ol   headless         f      bare  MARKING      H  D  U  LOW    a>y            flag
+   18  okshy            ok     y            -    headless         -      y     TRANSITION   H  B  U  LOW    f>em           end
+   19  okem             ok     em           -    e:BALANCED       -      m     ?            ?  -  U  LOW    y>ar           cool.final
+   20  okar             ok     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   em>ar          yield.input
+   21  ar               -      ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ar>edy         yield.input
+   22  okedy            ok     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   ar>edy         cool.mark.end
+   23  okedy            ok     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   edy>edy        cool.mark.end
+   24  okchedy          ok     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   edy>eeekch     cool.mark.end
+   25  eeekchedy        -      eeekch       edy  e:BALANCED       eekc   h     ?            ?  -  U  LOW    edy>ofchd      cool.cool.cool.heat.adjust.watch
+   26  ofchdor          -      ofchd        or   o:ARRANGEMENT    fchd   bare  ?            ?  -  U  IMMUNE eeekch>tch     work.flag.adjust.watch.mark
+   27  qotchdy          qo     tch          dy   t:TRANSFER       c      h     OPERATION    H  B  C  LOW    ofchd>r        transfer.adjust.watch
+   28  kar              ka     r            -    headless         -      r     FLOW         H  B  C  LOW    tch>           input
+
+--- SUB-REGION: inner_label (4 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  ofary            -      ofa          ry   o:ARRANGEMENT    fa     bare  ?            ?  -  U  IMMUNE >a             work.flag.yield
+    2  okady            ok     a            dy   a:ITERATION      -      bare  TRANSITION   H  B  U  LOW    ofa>dy         yield
+    3  okchdy           ok     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   a>ry           mark.end
+    4  kary             ka     ry           -    headless         r      y     TRANSITION   H  B  U  LOW    dy>            input.end
+
+
+==========================================================================================
+ENTITY: NW -- 31 tokens, 3 sub-regions (ring, outer_label, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=29.0%  e=25.8%  a=22.6%  headless=16.1%  k=6.5%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 16.1%
+CATEGORY: FLOW=37.9%  THER=27.6%  MARK=13.8%  OPER=10.3%  STAG=6.9%  TRAN=3.4%
+  [Coverage: 93.5% of MIDDLEs classified]
+KERNEL: k=10.0% h=15.0% e=75.0% | fraction=28.6% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=25.8%  CHAN=22.6%  DIFF=9.7%  BARE=41.9%
+PREFIX: rate=83.9%  da/sa/ta=3.2%  top: {'ok': 7, 'ot': 6, 'or': 3, 'ol': 2, 'to': 1, 'ch': 1, 'sh': 1, 'qo': 1, 'de': 1, 'da': 1}
+SUFFIX: rate=58.1%
+BRIDGE=67.7%  DARK=12.9%  COMPOUND=19.4%
+CLASSIFIED: 12/31 (38.7%)  UNCLASSIFIED: 19/31 (61.3%)
+HAZARD: IMMUNE=35.5%  ZERO=6.5%  HIGH=16.1%  LOW=41.9%
+TOP FRAMES: e->bare(5), o->r(3), a->l(3), o->bare(2), a->bare(2)
+TOP MIDDLEs: or(3), al(3), ar(2), ol(2), e(2)
+==========================================================================================
+
+--- SUB-REGION: ring (23 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  oto              ot     o            -    o:ARRANGEMENT    -      bare  OPERATION    H  B  U  IMMUNE >sae           work
+    2  tosaes           to     sae          s    headless         sae    bare  ?            ?  -  U  LOW    o>ad           sequence.yield.cool
+    3  adar             -      ad           ar   a:ITERATION      d      bare  MARKING      H  D  U  LOW    sae>ar         yield.mark
+    4  otar             ot     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ad>d           yield.input
+    5  otdar            ot     d            ar   headless         d      bare  MARKING      H  B  U  LOW    ar>efch        mark
+    6  chefchs          ch     efch         s    e:BALANCED       fc     h     MARKING      H  -  U  LOW    d>or           cool.flag.adjust.watch
+    7  okor             ok     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE efch>ol        work.input
+    8  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE or>om          work.frame
+    9  om               -      om           -    o:ARRANGEMENT    -      m     OPERATION    H  B  C  IMMUNE ol>keeod       work.final
+   10  olkeeodaiin      ol     keeod        aiin k:THERMAL        eeod   bare  THERMAL      H  -  U  IMMUNE om>ol          heat.cool.cool.work.mark
+   11  shol             sh     ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE keeod>al       work.frame
+   12  okal             ok     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   ol>ee          yield.frame
+   13  orshees          or     ee           s    e:BALANCED       e      bare  THERMAL      H  B  U  LOW    al>eey         cool.cool
+   14  qoeey            qo     eey          -    e:BALANCED       e      y     THERMAL      H  B  C  ZERO   ee>al          cool.cool.end
+   15  okalol           ok     al           ol   a:ITERATION      -      l     FLOW         H  B  U  HIGH   eey>od         yield.frame
+   16  otodr            ot     od           r    o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE al>och         work.mark
+   17  ochs             -      och          s    o:ARRANGEMENT    c      h     MARKING      H  D  U  IMMUNE od>eed         work.adjust.watch
+   18  oteed            ot     eed          -    e:BALANCED       ed     bare  THERMAL      H  D  U  LOW    och>e          cool.cool.mark
+   19  oteedy           ot     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    eed>edy        cool
+   20  okedy            ok     edy          -    e:BALANCED       d      y     OPERATION    H  B  C  ZERO   e>lr           cool.mark.end
+   21  lraiin           -      lr           aiin headless         l      r     FLOW         M  -  U  LOW    edy>or         frame.input
+   22  okor             ok     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE lr>e           work.input
+   23  okeedy           ok     e            edy  e:BALANCED       -      bare  THERMAL      H  B  C  LOW    or>            cool
+
+--- SUB-REGION: inner_label (1 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  okchdarar        ok     dar          ar   headless         da     r     FLOW         H  -  U  LOW    >              mark.yield.input
+
+--- SUB-REGION: outer_label (7 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  ydekam           de     k            am   k:THERMAL        -      bare  THERMAL      H  B  U  IMMUNE >rch           heat
+    2  darchedy         da     rch          edy  headless         rc     h     FLOW         H  D  U  LOW    k>eedo         input.adjust.watch
+    3  soeedoy          so     eedo         y    e:BALANCED       edo    bare  THERMAL      H  -  U  LOW    rch>al         cool.cool.mark.work
+    4  olal             ol     al           -    a:ITERATION      -      l     FLOW         H  B  U  HIGH   eedo>or        yield.frame
+    5  dchor            dch    or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE al>a           work.input
+    6  orary            or     a            ry   a:ITERATION      -      bare  TRANSITION   H  B  U  LOW    or>ar          yield
+    7  orarol           or     ar           ol   a:ITERATION      -      r     FLOW         H  B  U  HIGH   a>             yield.input
+
+
+==========================================================================================
+ENTITY: WEST -- 28 tokens, 2 sub-regions (ring, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=42.9%  e=28.6%  headless=14.3%  a=7.1%  k=7.1%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 14.3%
+CATEGORY: FLOW=36.0%  OPER=20.0%  THER=16.0%  STAG=8.0%  TRAN=8.0%  MARK=8.0%  CONT=4.0%
+  [Coverage: 89.3% of MIDDLEs classified]
+KERNEL: k=22.2% h=0.0% e=77.8% | fraction=26.5% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=25.0%  CHAN=21.4%  DIFF=0.0%  BARE=53.6%
+PREFIX: rate=64.3%  da/sa/ta=3.6%  top: {'ot': 8, 'ok': 3, 'ol': 2, 'ch': 2, 'sh': 1, 'ta': 1, 'tch': 1}
+SUFFIX: rate=60.7%
+BRIDGE=75.0%  DARK=14.3%  COMPOUND=28.6%
+CLASSIFIED: 15/28 (53.6%)  UNCLASSIFIED: 13/28 (46.4%)
+HAZARD: IMMUNE=50.0%  ZERO=3.6%  HIGH=10.7%  LOW=35.7%
+TOP FRAMES: e->bare(7), o->bare(5), o->r(5), k->bare(2), a->r(1)
+TOP MIDDLEs: or(3), ed(3), o(2), os(1), ar(1)
+==========================================================================================
+
+--- SUB-REGION: ring (22 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  osar             -      os           ar   o:ARRANGEMENT    s      bare  OPERATION    M  D  U  IMMUNE >ar            work.sequence
+    2  otar             ot     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   os>ode         yield.input
+    3  otodeedy         ot     ode          edy  o:ARRANGEMENT    de     bare  MARKING      H  D  U  IMMUNE ar>e           work.mark.cool
+    4  sheor            sh     e            or   e:BALANCED       -      bare  THERMAL      H  B  C  LOW    ode>o          cool
+    5  oar              -      o            ar   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE e>eey          work
+    6  oteey            ot     eey          -    e:BALANCED       e      y     THERMAL      H  B  C  ZERO   o>or           cool.cool.end
+    7  otoraiin         ot     or           aiin o:ARRANGEMENT    -      r     FLOW         H  B  U  IMMUNE eey>ol         work.input
+    8  ol               -      ol           -    o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE or>aiin        work.frame
+    9  aiin             -      aiin         -    a:ITERATION      ii     n     TRANSITION   H  B  C  HIGH   ol>ed          yield.iterate.iterate.halt
+   10  okedal           ok     ed           al   e:BALANCED       d      bare  FLOW         H  B  U  LOW    aiin>or        cool.mark
+   11  olor             ol     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE ed>opoiir      work.input
+   12  opoiiral         -      opoiir       al   o:ARRANGEMENT    poii   r     ?            ?  -  U  IMMUNE or>eeealk      work.pause.work.iterate.iterate.input
+   13  eeealky          -      eeealk       y    e:BALANCED       eealk  bare  ?            ?  -  U  LOW    opoiir>r       cool.cool.cool.yield.frame.heat
+   14  ytar             ta     r            -    headless         -      r     FLOW         H  B  C  LOW    eeealk>ed      input
+   15  tched            tch    ed           -    e:BALANCED       d      bare  FLOW         H  B  U  LOW    r>oiin         cool.mark
+   16  oiin             -      oiin         -    o:ARRANGEMENT    ii     n     STAGING      H  B  C  IMMUNE ed>eed         work.iterate.iterate.halt
+   17  oteedaiin        ot     eed          aiin e:BALANCED       ed     bare  THERMAL      H  D  U  LOW    oiin>od        cool.cool.mark
+   18  odal             -      od           al   o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE eed>ek         work.mark
+   19  cheky            ch     ek           y    e:BALANCED       k      bare  OPERATION    H  B  C  LOW    od>d           cool.heat
+   20  otchdor          ot     d            or   headless         d      bare  MARKING      H  B  U  LOW    ek>or          mark
+   21  or               -      or           -    o:ARRANGEMENT    -      r     FLOW         H  B  C  IMMUNE d>ko           work.input
+   22  olkoaiin         ol     ko           aiin k:THERMAL        o      bare  OPERATION    H  D  U  IMMUNE or>            heat.work
+
+--- SUB-REGION: inner_label (6 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  otedal           ot     ed           al   e:BALANCED       d      bare  FLOW         H  B  U  LOW    >dy            cool.mark
+    2  otchdy           ot     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   ed>y           mark.end
+    3  okchy            ok     y            -    headless         -      y     TRANSITION   H  B  C  LOW    dy>ke          end
+    4  chkeedy          ch     ke           edy  k:THERMAL        e      bare  THERMAL      H  B  U  IMMUNE y>opair        heat.cool
+    5  opairar          -      opair        ar   o:ARRANGEMENT    pai    r     FLOW         H  -  U  IMMUNE ke>o           work.pause.yield.iterate.input
+    6  okody            ok     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE opair>         work
+
+
+==========================================================================================
+ENTITY: SE -- 28 tokens, 3 sub-regions (outer_label, ring, inner_label)
+ENTITY TYPE: ROSETTE
+------------------------------------------------------------------------------------------
+HEAD: o=50.0%  e=21.4%  a=17.9%  headless=7.1%  k=3.6%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 7.1%
+CATEGORY: FLOW=28.6%  THER=19.0%  STAG=14.3%  OPER=14.3%  TRAN=14.3%  MARK=9.5%
+  [Coverage: 75.0% of MIDDLEs classified]
+KERNEL: k=16.7% h=11.1% e=72.2% | fraction=23.4% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=10.7%  CHAN=10.7%  DIFF=0.0%  BARE=78.6%
+PREFIX: rate=60.7%  da/sa/ta=0.0%  top: {'ot': 6, 'ch': 5, 'ok': 4, 'ol': 1, 'or': 1}
+SUFFIX: rate=78.6%
+BRIDGE=67.9%  DARK=10.7%  COMPOUND=32.1%
+CLASSIFIED: 12/28 (42.9%)  UNCLASSIFIED: 16/28 (57.1%)
+HAZARD: IMMUNE=53.6%  ZERO=0.0%  HIGH=10.7%  LOW=35.7%
+TOP FRAMES: o->bare(11), e->bare(6), a->bare(2), a->l(2), o->r(2)
+TOP MIDDLEs: od(2), al(2), ed(2), opodchd(1), oalda(1)
+==========================================================================================
+
+--- SUB-REGION: ring (24 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  okary            ok     a            ry   a:ITERATION      -      bare  TRANSITION   H  B  C  LOW    >odeed         yield
+    2  otodeed          ot     odeed        -    o:ARRANGEMENT    deed   bare  MARKING      H  -  U  IMMUNE a>od           work.mark.cool.cool.mark
+    3  odar             -      od           ar   o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE odeed>ek       work.mark
+    4  chekaiin         ch     ek           aiin e:BALANCED       k      bare  OPERATION    H  B  U  LOW    od>oee         cool.heat
+    5  oees             -      oee          s    o:ARRANGEMENT    ee     bare  THERMAL      H  D  U  IMMUNE ek>oiin        work.cool.cool
+    6  oiin             -      oiin         -    o:ARRANGEMENT    ii     n     STAGING      H  B  C  IMMUNE oee>ee         work.iterate.iterate.halt
+    7  okees            ok     ee           s    e:BALANCED       e      bare  THERMAL      H  B  C  LOW    oiin>oii       cool.cool
+    8  oiir             -      oii          r    o:ARRANGEMENT    ii     bare  STAGING      H  D  U  IMMUNE ee>od          work.iterate.iterate
+    9  odaiin           -      od           aiin o:ARRANGEMENT    d      bare  ?            ?  B  C  IMMUNE oii>al         work.mark
+   10  okalol           ok     al           ol   a:ITERATION      -      l     FLOW         H  B  U  HIGH   od>ai          yield.frame
+   11  aiiin            -      ai           iin  a:ITERATION      i      bare  TRANSITION   H  B  C  LOW    al>ar          yield.iterate
+   12  otar             ot     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   ai>d           yield.input
+   13  chchdam          ch     d            am   headless         d      bare  MARKING      H  B  U  LOW    ar>et          mark
+   14  chetey           ch     et           ey   e:BALANCED       t      bare  STAGING      H  B  U  LOW    d>odche        cool.transfer
+   15  otodches         ot     odche        s    o:ARRANGEMENT    dche   bare  ?            ?  -  U  IMMUNE et>ees         work.mark.adjust.watch.cool
+   16  oteesey          ot     ees          ey   e:BALANCED       es     bare  THERMAL      H  D  U  LOW    odche>ck       cool.cool.sequence
+   17  chckhy           ch     ck           hy   headless         ck     bare  OPERATION    H  B  C  LOW    ees>o          adjust.heat
+   18  otody            ot     o            dy   o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE ck>al          work
+   19  otal             ot     al           -    a:ITERATION      -      l     FLOW         H  B  C  HIGH   o>ed           yield.frame
+   20  chedal           ch     ed           al   e:BALANCED       d      bare  FLOW         H  B  C  LOW    al>op          cool.mark
+   21  opal             -      op           al   o:ARRANGEMENT    p      bare  TRANSITION   H  B  U  IMMUNE ed>k           work.pause
+   22  olkar            ol     k            ar   k:THERMAL        -      bare  THERMAL      H  B  C  IMMUNE op>ed          heat
+   23  okedaiin         ok     ed           aiin e:BALANCED       d      bare  FLOW         H  B  U  LOW    k>or           cool.mark
+   24  oror             or     or           -    o:ARRANGEMENT    -      r     FLOW         H  B  U  IMMUNE ed>            work.input
+
+--- SUB-REGION: inner_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  osaram           -      osar         am   o:ARRANGEMENT    sa     r     ?            ?  -  U  IMMUNE >oparod        work.sequence.yield.input
+    2  oparodam         -      oparod       am   o:ARRANGEMENT    parod  bare  ?            ?  -  U  IMMUNE osar>          work.pause.yield.input.work.mark
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  opodchdal        -      opodchd      al   o:ARRANGEMENT    podchd bare  ?            ?  -  U  IMMUNE >oalda         work.pause.work.mark.adjust.watch.mark
+    2  oalda            -      oalda        -    o:ARRANGEMENT    alda   bare  ?            ?  -  U  IMMUNE opodch>        work.yield.frame.mark.yield
+
+
+==========================================================================================
+ENTITY: PATH_EAST_SE -- 2 tokens, 1 sub-regions (outer_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: o=50.0%  headless=50.0%  a=0.0%  e=0.0%  k=0.0%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 50.0%
+CATEGORY: FLOW=100.0%
+  [Coverage: 50.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=100.0% e=0.0% | fraction=20.0% | HAZARD_HEAVY
+TERMINAL TIER: DIFFUSE  LOCKED=0.0%  CHAN=0.0%  DIFF=50.0%  BARE=50.0%
+PREFIX: rate=50.0%  da/sa/ta=50.0%  top: {'da': 1}
+SUFFIX: rate=100.0%
+BRIDGE=0.0%  DARK=50.0%  COMPOUND=50.0%
+CLASSIFIED: 0/2 (0.0%)  UNCLASSIFIED: 2/2 (100.0%)
+HAZARD: IMMUNE=50.0%  ZERO=0.0%  HIGH=0.0%  LOW=50.0%
+TOP FRAMES: r->h(1), o->bare(1)
+TOP MIDDLEs: rch(1), ofodchd(1)
+==========================================================================================
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  darchdy          da     rch          dy   headless         rc     h     FLOW         H  D  U  LOW    >ofodch        input.adjust.watch
+    2  ofodchdal        -      ofodchd      al   o:ARRANGEMENT    fodchd bare  ?            ?  -  U  IMMUNE rch>           work.flag.work.mark.adjust.watch.mark
+
+
+==========================================================================================
+ENTITY: PATH_NE_EAST -- 4 tokens, 2 sub-regions (outer_label, inner_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: o=50.0%  headless=50.0%  a=0.0%  e=0.0%  k=0.0%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 50.0%
+CATEGORY: CONT=33.3%  STAG=33.3%  MARK=33.3%
+  [Coverage: 75.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=75.0% e=25.0% | fraction=25.0% | HAZARD_HEAVY
+TERMINAL TIER: CHANNELED  LOCKED=0.0%  CHAN=50.0%  DIFF=25.0%  BARE=25.0%
+PREFIX: rate=75.0%  da/sa/ta=25.0%  top: {'ot': 2, 'sa': 1}
+SUFFIX: rate=75.0%
+BRIDGE=50.0%  DARK=25.0%  COMPOUND=50.0%
+CLASSIFIED: 2/4 (50.0%)  UNCLASSIFIED: 2/4 (50.0%)
+HAZARD: IMMUNE=50.0%  ZERO=0.0%  HIGH=25.0%  LOW=25.0%
+TOP FRAMES: r->h(1), o->bare(1), d->y(1), o->l(1)
+TOP MIDDLEs: rchcph(1), ofched(1), dy(1), ol(1)
+==========================================================================================
+
+--- SUB-REGION: inner_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  otchdy           ot     dy           -    headless         d      y     CONTAINMENT  H  B  C  HIGH   >ol            mark.end
+    2  otoldy           ot     ol           dy   o:ARRANGEMENT    -      l     STAGING      H  B  C  IMMUNE dy>            work.frame
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  sarchcphdy       sa     rchcph       dy   headless         rchcp  h     ?            ?  -  U  LOW    >ofched        input.adjust.watch.adjust.pause.watch
+    2  ofchedaiin       -      ofched       aiin o:ARRANGEMENT    fched  bare  MARKING      H  D  U  IMMUNE rchcph>        work.flag.adjust.watch.cool.mark
+
+
+==========================================================================================
+ENTITY: PATH_NORTH_NE -- 1 tokens, 1 sub-regions (outer_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: o=100.0%  a=0.0%  e=0.0%  k=0.0%  t=0.0%  headless=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 0.0%
+CATEGORY: 
+  [Coverage: 0.0% of MIDDLEs classified]
+KERNEL: k=50.0% h=50.0% e=0.0% | fraction=22.2% | HAZARD_HEAVY
+TERMINAL TIER: BARE  LOCKED=0.0%  CHAN=0.0%  DIFF=0.0%  BARE=100.0%
+PREFIX: rate=0.0%  da/sa/ta=0.0%  top: {}
+SUFFIX: rate=100.0%
+BRIDGE=0.0%  DARK=0.0%  COMPOUND=100.0%
+CLASSIFIED: 0/1 (0.0%)  UNCLASSIFIED: 1/1 (100.0%)
+HAZARD: IMMUNE=100.0%  ZERO=0.0%  HIGH=0.0%  LOW=0.0%
+TOP FRAMES: o->bare(1)
+TOP MIDDLEs: opokchoso(1)
+==========================================================================================
+
+--- SUB-REGION: outer_label (1 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  opokchosody      -      opokchoso    dy   o:ARRANGEMENT    pokchoso bare  ?            ?  -  U  IMMUNE >              work.pause.work.heat.adjust.watch.work.sequence.work
+
+
+==========================================================================================
+ENTITY: PATH_NW_NORTH -- 2 tokens, 1 sub-regions (outer_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: headless=100.0%  a=0.0%  e=0.0%  o=0.0%  k=0.0%  t=0.0%
+  [Dominant: headless = headless]  Headless rate: 100.0%
+CATEGORY: MARK=100.0%
+  [Coverage: 50.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=0.0% e=0.0% | fraction=0.0% | BALANCED
+TERMINAL TIER: CHANNELED  LOCKED=0.0%  CHAN=50.0%  DIFF=0.0%  BARE=50.0%
+PREFIX: rate=100.0%  da/sa/ta=100.0%  top: {'da': 2}
+SUFFIX: rate=100.0%
+BRIDGE=0.0%  DARK=50.0%  COMPOUND=50.0%
+CLASSIFIED: 0/2 (0.0%)  UNCLASSIFIED: 2/2 (100.0%)
+HAZARD: IMMUNE=0.0%  ZERO=0.0%  HIGH=0.0%  LOW=100.0%
+TOP FRAMES: l->bare(1), r->l(1)
+TOP MIDDLEs: ld(1), ral(1)
+==========================================================================================
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  daldal           da     ld           al   headless         ld     bare  MARKING      H  D  U  LOW    >ral           frame.mark
+    2  daraldy          da     ral          dy   headless         ra     l     ?            ?  -  U  LOW    ld>            input.yield.frame
+
+
+==========================================================================================
+ENTITY: PATH_SE_SOUTH -- 2 tokens, 1 sub-regions (outer_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: a=50.0%  headless=50.0%  e=0.0%  o=0.0%  k=0.0%  t=0.0%
+  [Dominant: a = ITERATION]  Headless rate: 50.0%
+CATEGORY: FLOW=100.0%
+  [Coverage: 50.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=100.0% e=0.0% | fraction=12.5% | HAZARD_HEAVY
+TERMINAL TIER: LOCKED  LOCKED=50.0%  CHAN=50.0%  DIFF=0.0%  BARE=0.0%
+PREFIX: rate=50.0%  da/sa/ta=0.0%  top: {'ok': 1}
+SUFFIX: rate=50.0%
+BRIDGE=50.0%  DARK=0.0%  COMPOUND=50.0%
+CLASSIFIED: 1/2 (50.0%)  UNCLASSIFIED: 1/2 (50.0%)
+HAZARD: IMMUNE=0.0%  ZERO=0.0%  HIGH=50.0%  LOW=50.0%
+TOP FRAMES: a->r(1), l->l(1)
+TOP MIDDLEs: ar(1), lashal(1)
+==========================================================================================
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  okar             ok     ar           -    a:ITERATION      -      r     FLOW         H  B  C  HIGH   >lashal        yield.input
+    2  lashalg          -      lashal       g    headless         lasha  l     ?            ?  -  U  LOW    ar>            frame.yield.sequence.watch.yield.frame
+
+
+==========================================================================================
+ENTITY: PATH_SOUTH_SW -- 3 tokens, 2 sub-regions (inner_label, outer_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: e=33.3%  o=33.3%  headless=33.3%  a=0.0%  k=0.0%  t=0.0%
+  [Dominant: e = BALANCED]  Headless rate: 33.3%
+CATEGORY: MARK=66.7%  FLOW=33.3%
+  [Coverage: 100.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=50.0% e=50.0% | fraction=25.0% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=0.0%  CHAN=0.0%  DIFF=0.0%  BARE=100.0%
+PREFIX: rate=66.7%  da/sa/ta=0.0%  top: {'ot': 1, 'sh': 1}
+SUFFIX: rate=66.7%
+BRIDGE=66.7%  DARK=0.0%  COMPOUND=33.3%
+CLASSIFIED: 1/3 (33.3%)  UNCLASSIFIED: 2/3 (66.7%)
+HAZARD: IMMUNE=33.3%  ZERO=0.0%  HIGH=0.0%  LOW=66.7%
+TOP FRAMES: o->bare(1), d->bare(1), e->bare(1)
+TOP MIDDLEs: opchd(1), d(1), ed(1)
+==========================================================================================
+
+--- SUB-REGION: inner_label (1 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  opchdain         -      opchd        ain  o:ARRANGEMENT    pchd   bare  MARKING      H  -  U  IMMUNE >              work.pause.adjust.watch.mark
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  otdar            ot     d            ar   headless         d      bare  MARKING      H  B  U  LOW    >ed            mark
+    2  shed             sh     ed           -    e:BALANCED       d      bare  FLOW         H  B  C  LOW    d>             cool.mark
+
+
+==========================================================================================
+ENTITY: PATH_SW_WEST -- 5 tokens, 2 sub-regions (outer_label, inner_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: o=40.0%  headless=40.0%  e=20.0%  a=0.0%  k=0.0%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 40.0%
+CATEGORY: THER=33.3%  OPER=33.3%  MONI=33.3%
+  [Coverage: 60.0% of MIDDLEs classified]
+KERNEL: k=16.7% h=33.3% e=50.0% | fraction=42.9% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=0.0%  CHAN=20.0%  DIFF=20.0%  BARE=60.0%
+PREFIX: rate=60.0%  da/sa/ta=0.0%  top: {'ot': 2, 'de': 1}
+SUFFIX: rate=60.0%
+BRIDGE=40.0%  DARK=20.0%  COMPOUND=40.0%
+CLASSIFIED: 1/5 (20.0%)  UNCLASSIFIED: 4/5 (80.0%)
+HAZARD: IMMUNE=40.0%  ZERO=20.0%  HIGH=0.0%  LOW=40.0%
+TOP FRAMES: o->bare(2), p->bare(1), c->h(1), e->y(1)
+TOP MIDDLEs: pchek(1), ch(1), os(1), od(1), eey(1)
+==========================================================================================
+
+--- SUB-REGION: inner_label (4 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  otch             ot     ch           -    headless         c      h     MONITORING   H  -  U  LOW    >os            adjust.watch
+    2  osy              -      os           y    o:ARRANGEMENT    s      bare  OPERATION    M  D  U  IMMUNE ch>od          work.sequence
+    3  odl              -      od           l    o:ARRANGEMENT    d      bare  ?            ?  B  U  IMMUNE os>eey         work.mark
+    4  oteey            ot     eey          -    e:BALANCED       e      y     THERMAL      H  B  C  ZERO   od>            cool.cool.end
+
+--- SUB-REGION: outer_label (1 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  depcheky         de     pchek        y    headless         pchek  bare  ?            ?  -  U  LOW    >              pause.adjust.watch.cool.heat
+
+
+==========================================================================================
+ENTITY: PATH_WEST_NW -- 5 tokens, 2 sub-regions (outer_label, inner_label)
+ENTITY TYPE: PATH
+------------------------------------------------------------------------------------------
+HEAD: headless=80.0%  o=20.0%  a=0.0%  e=0.0%  k=0.0%  t=0.0%
+  [Dominant: headless = headless]  Headless rate: 80.0%
+CATEGORY: MARK=50.0%  FLOW=25.0%  STAG=25.0%
+  [Coverage: 80.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=100.0% e=0.0% | fraction=5.9% | HAZARD_HEAVY
+TERMINAL TIER: BARE  LOCKED=20.0%  CHAN=20.0%  DIFF=0.0%  BARE=60.0%
+PREFIX: rate=60.0%  da/sa/ta=20.0%  top: {'so': 1, 'te': 1, 'da': 1}
+SUFFIX: rate=80.0%
+BRIDGE=40.0%  DARK=40.0%  COMPOUND=40.0%
+CLASSIFIED: 0/5 (0.0%)  UNCLASSIFIED: 5/5 (100.0%)
+HAZARD: IMMUNE=20.0%  ZERO=20.0%  HIGH=0.0%  LOW=60.0%
+TOP FRAMES: d->bare(2), i->n(1), o->r(1), l->bare(1)
+TOP MIDDLEs: iin(1), ofar(1), d(1), ddsschx(1), ld(1)
+==========================================================================================
+
+--- SUB-REGION: inner_label (3 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  ytedar           te     d            ar   headless         d      bare  MARKING      H  B  U  LOW    >ddssch        mark
+    2  ddsschx          -      ddsschx      -    headless         ddsschx bare  ?            ?  -  U  LOW    d>ld           mark.mark.sequence.sequence.adjust.watch.x
+    3  daldar           da     ld           ar   headless         ld     bare  MARKING      H  D  U  LOW    ddssch>        frame.mark
+
+--- SUB-REGION: outer_label (2 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  soiindy          so     iin          dy   headless         ii     n     STAGING      H  B  U  ZERO   >ofar          iterate.iterate.halt
+    2  ofardy           -      ofar         dy   o:ARRANGEMENT    fa     r     FLOW         M  D  U  IMMUNE iin>           work.flag.yield.input
+
+
+==========================================================================================
+ENTITY: CLOCK -- 6 tokens, 1 sub-regions (clock_text)
+ENTITY TYPE: CLOCK
+------------------------------------------------------------------------------------------
+HEAD: o=33.3%  headless=33.3%  a=16.7%  e=16.7%  k=0.0%  t=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 33.3%
+CATEGORY: FLOW=50.0%  OPER=25.0%  TRAN=25.0%
+  [Coverage: 66.7% of MIDDLEs classified]
+KERNEL: k=0.0% h=33.3% e=66.7% | fraction=17.6% | ESCAPE_DOMINANT
+TERMINAL TIER: BARE  LOCKED=33.3%  CHAN=0.0%  DIFF=16.7%  BARE=50.0%
+PREFIX: rate=50.0%  da/sa/ta=33.3%  top: {'sa': 1, 'da': 1, 'ot': 1}
+SUFFIX: rate=33.3%
+BRIDGE=66.7%  DARK=0.0%  COMPOUND=33.3%
+CLASSIFIED: 3/6 (50.0%)  UNCLASSIFIED: 3/6 (50.0%)
+HAZARD: IMMUNE=33.3%  ZERO=0.0%  HIGH=0.0%  LOW=66.7%
+TOP FRAMES: r->r(2), o->h(1), o->bare(1), a->bare(1), e->bare(1)
+TOP MIDDLEs: r(2), opaefch(1), o(1), aiird(1), eo(1)
+==========================================================================================
+
+--- SUB-REGION: clock_text (6 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  opaefchdy        -      opaefch      dy   o:ARRANGEMENT    paefc  h     ?            ?  -  U  IMMUNE >r             work.pause.yield.cool.flag.adjust.watch
+    2  sar              sa     r            -    headless         -      r     FLOW         H  B  C  LOW    opaefc>o       input
+    3  o                -      o            -    o:ARRANGEMENT    -      bare  OPERATION    H  B  C  IMMUNE r>r            work
+    4  dar              da     r            -    headless         -      r     FLOW         H  B  C  LOW    o>aiird        input
+    5  aiird            -      aiird        -    a:ITERATION      iird   bare  ?            ?  -  U  LOW    r>eo           yield.iterate.iterate.input.mark
+    6  oteoly           ot     eo           ly   e:BALANCED       o      bare  TRANSITION   H  B  U  LOW    aiird>         cool.work
+
+
+==========================================================================================
+ENTITY: UNCLASSIFIED -- 1 tokens, 1 sub-regions (inner_label)
+ENTITY TYPE: OTHER
+------------------------------------------------------------------------------------------
+HEAD: o=100.0%  a=0.0%  e=0.0%  k=0.0%  t=0.0%  headless=0.0%
+  [Dominant: o = ARRANGEMENT]  Headless rate: 0.0%
+CATEGORY: 
+  [Coverage: 0.0% of MIDDLEs classified]
+KERNEL: k=0.0% h=100.0% e=0.0% | fraction=20.0% | HAZARD_HEAVY
+TERMINAL TIER: BARE  LOCKED=0.0%  CHAN=0.0%  DIFF=0.0%  BARE=100.0%
+PREFIX: rate=0.0%  da/sa/ta=0.0%  top: {}
+SUFFIX: rate=100.0%
+BRIDGE=0.0%  DARK=0.0%  COMPOUND=0.0%
+CLASSIFIED: 0/1 (0.0%)  UNCLASSIFIED: 1/1 (100.0%)
+HAZARD: IMMUNE=100.0%  ZERO=0.0%  HIGH=0.0%  LOW=0.0%
+TOP FRAMES: o->bare(1)
+TOP MIDDLEs: ofchd(1)
+==========================================================================================
+
+--- SUB-REGION: inner_label (1 tokens) ---
+
+    #  word             pfx    MIDDLE       sfx  HEAD_domain      MODs   TERM  category     cf BD CU hazard prev>next      atom_gloss [T4]
+  ───  ──────────────── ────── ──────────── ──── ──────────────── ────── ───── ──────────── ── ── ── ────── ────────────── ────────────────────
+    1  ofchdar          -      ofchd        ar   o:ARRANGEMENT    fchd   bare  ?            ?  -  U  IMMUNE >              work.flag.adjust.watch.mark

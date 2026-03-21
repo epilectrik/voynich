@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1673 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1680 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1816.
+the highest ID present is C1823.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2141,6 +2141,13 @@ C1813	Rosettes atom inventory shared with B: Jaccard=0.950, 0 novel atoms, 0 suf
 C1814	Rosettes o-HEAD arrangement enrichment 3.30x vs B (37.1% vs 11.2%) — highest of any system. Gradient: Rosettes(37.1%) > A(28.5%) > AZC(22.4%) > B(11.2%). HEAD closest to AZC (JSD=0.024 vs 0.096 to B). Headless 22.3%. Extends C1559 gradient to rosettes endpoint.	2	Rosettes, HEAD, o-atom, arrangement, gradient, C1388, C1502, C1559	o_head=37.1pct. enrichment=3.30x. jsd_azc=0.024. jsd_b=0.096. headless=22.3pct.
 C1815	Bridge backbone in rosettes deploys with A-side HEAD distribution: JSD ros-A=0.050 < ros-B=0.090. Terminal stability preserved (max JSD=0.046). 38/85 bridge types, 286 tokens. Extends C1507 — rosettes are A-adjacent endpoint of bridge deployment.	2	Rosettes, bridge, HEAD, A-side, terminal, C1506, C1507	jsd_ros_a=0.050. jsd_ros_b=0.090. term_max_jsd=0.046. bridge_types=38. bridge_tokens=286.
 C1816	C1132 dual population converges at atom level: HEAD JSD=0.021 between classified/unclassified. Both o-dominated. Classified e/k/t=26.9%, unclassified headless=26.4%. Compound bridge rate 100%. Dual population is vocabulary-level not domain-level. All rosettes content serves arrangement function.	2	Rosettes, dual_population, HEAD, convergence, C1132	head_jsd=0.021. classified_ekt=26.9pct. unclassified_headless=26.4pct. compound_bridge=100pct.
+C1817	Rosettes entity operational uniformity at 8-category level: mean pairwise category JSD=0.074 across 9 rosettes, below bootstrap 95th percentile threshold 0.106. All entities share common operational profile. Extends C1128 generic indexing from vocabulary to operational level.	2	Rosettes, category, uniformity, bootstrap, C1128, C1250	mean_jsd=0.074. threshold=0.106. n_entities=9. n_bootstrap=1000.
+C1818	Rosettes spatial non-coherence at category level: adjacent-pair mean JSD=0.080, non-adjacent=0.073, delta=0.007 < 0.02. Entity operational character NOT organized by physical proximity. Extends C1128 generic indexing to category-level spatial test.	2	Rosettes, spatial, adjacency, category, C1128	adj_jsd=0.080. nonadj_jsd=0.073. delta=0.007.
+C1819	HEAD-category dissociation: HEAD closest to AZC (JSD=0.026), category closest to B (JSD=0.037). All tokens drive HEAD toward AZC o-enriched profile; classified-only (bridge-dominated) drive category toward B execution profile. Compilation interface between declarative and executable layers.	2	Rosettes, HEAD, category, dissociation, AZC, B, compilation, C1127, C1502	head_jsd_azc=0.026. cat_jsd_b=0.037. head_cosine_azc=0.926. cat_cosine_b=0.914.
+C1820	Per-entity dual population category divergence: within-entity classified/unclassified JSD ranges 0.116 (NE) to 0.646 (SW), mean=0.267. SW extreme (classified=OPERATION, unclassified=MARKING). CENTER minimal (0.124) = integration hub.	2	Rosettes, dual_population, category, C1132, entity_variation	mean_jsd=0.267. sw_jsd=0.646. center_jsd=0.124. east_jsd=0.440.
+C1821	EAST rosette e-HEAD anomaly: only entity with e-HEAD > o-HEAD (31% vs 25%), highest kernel density (32.3%), OPERATION 44.4% among classified. ok-prefix dominance (10/32). Most execution-like rosette.	2	Rosettes, EAST, e-HEAD, execution, anomaly, C1475	e_head=31.25pct. o_head=25.0pct. kernel=32.3pct. operation=44.4pct.
+C1822	CENTER rosette integration hub: lowest dual-population JSD (0.124), highest headless rate (32.8%), most balanced HEAD, largest token count (67). Both vocabulary layers encode same operational context. Spatial analog of AXM attractor (C978).	2	Rosettes, CENTER, integration, headless, convergence, C978, C1132	dual_jsd=0.124. headless=32.8pct. n=67.
+C1823	CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy modulation. Pure monitoring/flow without thermal input. Unique among Rosettes entities. 6 tokens (low power).	3	Rosettes, CLOCK, kernel, monitoring, flow	k_kernel=0pct. flow=50pct. n=6.
 
 ---
 
