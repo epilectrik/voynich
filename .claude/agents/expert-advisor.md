@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1804 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1806 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1805.
+the highest ID present is C1807.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1804 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1806 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1804 validated constraints are present as canonical one-line claims with tier
+1806 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-20 18:01
-**Version:** FROZEN STATE (1804 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-20 21:37
+**Version:** FROZEN STATE (1806 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2044,6 +2044,8 @@ C1802	Combined vocab+shape improvement real but modest: alpha=0.5 combination yi
 C1803	Asymmetric partial Mantels: shape\|vocab partial r=0.263 vs vocab\|shape partial r=0.182. Both significant before PREFIX control. After PREFIX control, shape survives but vocab collapses (r=-0.041). The apparent bidirectional complementarity is illusory — only shape carries genuinely independent apparatus information	2	B, vocabulary, shape, partial, Mantel, asymmetry, PREFIX, C1799, C1800
 C1804	Within-Herbal deployment dominance: among 27 Herbal folios, shape\|PREFIX partial r=0.337, vocab\|PREFIX partial r=0.098. Shape dominates within-section; vocabulary is marginal. Raw within-Herbal: shape r=0.347, vocab r=0.146 (ns). Deployment signal operates within-section, not as section proxy	2	B, Herbal, shape, vocabulary, PREFIX, within-section, C1797, C1800
 C1805	Section retention strong across all channels: vocab\|section retains 79.4% of raw r, shape\|section retains 90.4%, combined\|section retains 87.2%. No channel is primarily a section proxy. Shape is least section-dependent. Bridge-only vocab ≈ dark-only vocab in B-space, inverting the A-side pattern (C1709) due to dark pipeline section hyper-modulation (C1148)	2	B, section, retention, partial, Mantel, bridge, dark, C1148, C1709
+C1806	Stars within-section h_ratio REGIME gradient: R3 h_ratio exceeds R1 with perfect separation (U=0, all 12 R3 values > all 10 R1 values). R3 mean=0.219, R1 mean=0.101. Extends C1750 (sublimation > distillation monitoring) to REGIME level. Pre-registered in OPPOSITE direction (R1>R3) due to C1750 misreading; corrected direction confirmed post-hoc. Consistent with C1735 (elevated fire = more thermal demand) and C1752 (monitoring-thermal anti-correlation). Requires replication as pre-registered prediction	2	B, Stars, REGIME, h_ratio, monitoring, C1735, C1750, C1752, post-hoc
+C1807	Brunschwig elevated-fire recipes have higher monitoring keyword density than gentle-fire: conditional density 0.00298 vs 0.00184, raw density 0.00444 vs 0.00328. Both measures agree. Complex procedures require more checkpoint instructions. Corrects assumption that gentle = more monitoring-intensive. Brunschwig-internal empirical fact independent of Voynich data	2	Brunschwig, monitoring, fire_degree, recipe_structure
 
 ---
 

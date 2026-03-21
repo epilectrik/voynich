@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1804 validated constraints | **Version:** 5.88 | **Date:** 2026-03-20
+**Total:** 1806 validated constraints | **Version:** 5.89 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6011,6 +6011,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Non-reducibility to archetypes (C1776): Within-section gallows-archetype tests all null. The aggregate signal is a section composition confound. Gallows and archetypes are independent structural layers.
 - Atom-substrate asymmetry (C1777): The relationship between gallows header type and body atom ecology is qualitatively different for each gallows: direct (p), complementary (k), null (t, f).
 - **Tier 3 synthesis:** Gallows function as context-sensitive paragraph deployment headers that encode invocation posture under ambient operational conditions and bias body implementation at compositional level. Their atom-substrate inheritance is partial and asymmetric. They are not broad category labels, not event-dispatch states, and not proven worker-role markers.
+
+---
+
+### Phase 617: Brunschwig Structural Recipe Decomposition — NO_STRUCTURAL_PREDICTION (C1806-C1807)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1806 | Stars within-section h_ratio REGIME gradient: R3 h_ratio exceeds R1 with perfect separation (U=0, all 12 R3 values > all 10 R1 values). R3 mean=0.219, R1 mean=0.101. Extends C1750 (sublimation > distillation monitoring) to REGIME level. Pre-registered in OPPOSITE direction (R1>R3) due to C1750 misreading; corrected direction confirmed post-hoc. Consistent with C1735 (elevated fire = more thermal demand) and C1752 (monitoring-thermal anti-correlation). Requires replication as pre-registered prediction | 2 | B, Stars, REGIME, h_ratio, monitoring, C1735, C1750, C1752, post-hoc | U=0. R3_mean=0.219. R1_mean=0.101. n_R1=10. n_R3=12. perfect_separation=true. |
+| 1807 | Brunschwig elevated-fire recipes have higher monitoring keyword density than gentle-fire: conditional density 0.00298 vs 0.00184, raw density 0.00444 vs 0.00328. Both measures agree. Complex procedures require more checkpoint instructions. Corrects assumption that gentle = more monitoring-intensive. Brunschwig-internal empirical fact independent of Voynich data | 2 | Brunschwig, monitoring, fire_degree, recipe_structure | elevated_cond=0.00298. gentle_cond=0.00184. elevated_raw=0.00444. gentle_raw=0.00328. n_gentle=205. n_elevated=40. |
+
+**Phase 617 findings (Brunschwig Structural Recipe Decomposition, NO_STRUCTURAL_PREDICTION):**
+- Phase verdict 0/3 pre-registered H-tests; 1/3 correct direction. Positive control (PC1: C1735 e-to-y replication) passes (p=0.0003), confirming test machinery works.
+- h_ratio REGIME gradient (C1806): The strongest Brunschwig-Voynich signal outside C1735. R3 h_ratio perfectly exceeds R1 (U=0). Pre-registered in wrong direction due to misreading C1750 — the corrected chain (demanding procedures → more monitoring → higher h_ratio) is consistent with C1750/C1752. Registered post-hoc; requires future pre-registered confirmation.
+- Brunschwig monitoring ordering (C1807): Elevated recipes have MORE monitoring keywords than gentle, both conditional (15-word window of temporal markers) and raw. Complex distillation procedures require more checkpoint instructions (watch color, test with finger, etc.).
+- H1 (body length) invalid per C1241 (header-body length independence). H2 (Op-Iter fraction) correct direction but underpowered (p=0.16). Both negative controls fail (token count p=0.04, headless rate p=0.02) — REGIME differences permeate more features than expected.
+- Brunschwig-Voynich bridge exhausted at recipe-level: three failed bridge phases (598 WEAK, 600 0/4, 617 0/3). Surviving alignment is axis-level only (C1735, C1736, C1740, C1750/C1752, C1806). C1569 (within-section folio specificity absent in domain tuning) and C1799 (vocabulary absorbed by PREFIX) explain the ceiling.
 
 ---
 

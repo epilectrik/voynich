@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.89 (2026-03-20) - Phase 617: Brunschwig Structural Recipe Decomposition
+
+### Summary
+
+Phase 617 tests whether Brunschwig recipe internal structure (complexity, monitoring density, method diversity) predicts Voynich paragraph-level features within Stars section. Three pre-registered hypotheses tested: H1 (body length R3>R1), H2 (OPERATION-Iteration fraction R3>R1), H3 (monitoring density gentle>elevated AND h_ratio R1>R3). Positive control (C1735 e-to-y replication) passes (p=0.0003). All three H-tests fail as pre-registered (0/3), but expert review reveals H3a/H3b directions were derived from a misreading of C1750. The corrected direction (demanding procedures → more monitoring → higher h_ratio) matches the data perfectly: h_ratio separates R1 from R3 with U=0 (all R3 values exceed all R1 values). Phase scored strictly as pre-registered: **NO_STRUCTURAL_PREDICTION**. Post-hoc findings registered as C1806-C1807.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BRUNSCHWIG_STRUCTURAL_RECIPE_DECOMPOSITION/` -- Phase 617 with script, JSON results, INDEX.md |
+| **ADDED** | C1806: Stars h_ratio REGIME gradient — R3 >> R1, U=0 perfect separation. Post-hoc corrected direction. |
+| **ADDED** | C1807: Brunschwig elevated > gentle monitoring density (0.00298 vs 0.00184). Internal empirical fact. |
+| **UPDATED** | INDEX.md -- +2 constraints (1806 total), Phase 617 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.89, 1806 constraints, 617 phases) |
+
+### Key Findings
+
+- **Phase verdict NO_STRUCTURAL_PREDICTION (0/3):** Pre-registration discipline maintained. H1 invalid per C1241. H2 correct direction but p=0.16. H3a/H3b reversed due to C1750 misreading. Both negative controls fail (REGIME differences permeate more features than expected).
+- **h_ratio REGIME gradient (C1806):** R3 mean h_ratio 0.219 vs R1 mean 0.101, U=0. The strongest Brunschwig-Voynich signal outside C1735. Pre-registered in wrong direction; corrected direction consistent with C1750/C1752 (demanding procedures → more monitoring). Registered post-hoc, requires future pre-registered replication.
+- **Brunschwig monitoring ordering (C1807):** Elevated-fire recipes have higher monitoring keyword density than gentle, both conditional and raw. Complex distillation procedures require more checkpoint instructions. Corrects the assumption that gentle = more monitoring-intensive.
+- **Brunschwig bridge exhausted at recipe-level:** Three failed bridge phases (598 WEAK, 600 0/4, 617 0/3). Surviving alignment is axis-level only (C1735, C1736, C1740, C1750/C1752, C1806). Folio identity encoded through domain MIX (PREFIX/HEAD per C1799), not within-domain parameters that map to Brunschwig recipe differences.
+- **C1735 replication:** PC1 passes (p=0.0003), the fourth independent replication of the thermal-intensity REGIME gradient.
+
+---
+
 ## Version 5.88 (2026-03-20) - Phase 616: Two-Channel Apparatus Encoding Test
 
 ### Summary

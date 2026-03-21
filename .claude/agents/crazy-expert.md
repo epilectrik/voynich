@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1664 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1798.
+the highest ID present is C1807.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2130,6 +2130,8 @@ C1802	Combined vocab+shape improvement real but modest: alpha=0.5 r=0.358, impro
 C1803	Asymmetric partial Mantels: shape|vocab r=0.263 vs vocab|shape r=0.182. After PREFIX control, shape survives (r=0.163) but vocab collapses (r=-0.041). Bidirectional complementarity illusory.	2	B, vocabulary, shape, partial, Mantel, asymmetry, PREFIX, C1799, C1800	shape_partial_vocab=0.263. vocab_partial_shape=0.182. shape_survives=0.163. vocab_collapses=-0.041.
 C1804	Within-Herbal deployment dominance: n=27, shape|PREFIX r=0.337 (p=0.0002), vocab|PREFIX r=0.098 (p=0.036). Deployment signal operates within-section.	2	B, Herbal, shape, vocabulary, PREFIX, within-section, C1797, C1800	herbal_shape_pfx=0.337. herbal_vocab_pfx=0.098. n=27.
 C1805	Section retention strong (79-90%) across all channels. Bridge≈dark in B-space (r=0.257 vs 0.267), inverting A-side pattern due to dark pipeline section hyper-modulation (C1148).	2	B, section, retention, bridge, dark, C1148, C1709	vocab_ret=79.4pct. shape_ret=90.4pct. bridge_r=0.257. dark_r=0.267.
+C1806	Stars within-section h_ratio REGIME gradient: R3 h_ratio exceeds R1 with perfect separation (U=0, all 12 R3 > all 10 R1). Extends C1750 to REGIME level. Pre-registered opposite direction; corrected post-hoc per C1750. Requires replication.	2	B, Stars, REGIME, h_ratio, monitoring, C1735, C1750, C1752, post-hoc	U=0. R3_mean=0.219. R1_mean=0.101. n_R1=10. n_R3=12. perfect_sep=true.
+C1807	Brunschwig elevated-fire recipes have higher monitoring keyword density than gentle-fire: conditional 0.00298 vs 0.00184, raw 0.00444 vs 0.00328. Complex procedures need more checkpoints. Corrects assumption gentle=more monitoring.	2	Brunschwig, monitoring, fire_degree, recipe_structure	elev_cond=0.00298. gentle_cond=0.00184. n_gentle=205. n_elevated=40.
 
 ---
 
