@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1811 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1815 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1812.
+the highest ID present is C1816.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1811 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1815 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1811 validated constraints are present as canonical one-line claims with tier
+1815 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-20 22:45
-**Version:** FROZEN STATE (1811 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-21 08:31
+**Version:** FROZEN STATE (1815 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2051,6 +2051,10 @@ C1809	Hierarchical variance decomposition of PREFIX composition: section+REGIME+
 C1810	PREFIX composition retains 81.4% of apparatus manifold correlation after controlling for section+REGIME+kernel+headless. Kernel+headless control alone retains 94.5%. PREFIX carries independent manifold information not mediated by section, REGIME, or kernel ecology	2	B, PREFIX, manifold, apparatus, independence, Mantel, C1801, C1715
 C1811	Within-folio paragraph PREFIX composition ICC=0.185 (81.5% of variance within-folio). Within-folio JSD (0.328) exceeds between-folio JSD (0.240) by 1.37x. PREFIX composition is paragraph-level, not folio-level. sh most folio-consistent (ICC=0.382); or/pch/ar near-zero (ICC<0.05)	2	B, PREFIX, paragraph, folio, ICC, design_freedom, C1182, C1399, C1573
 C1812	PREFIX composition is an independent paragraph-level design parameter, not downstream of section, REGIME, or kernel ecology. Section explains ~14%, REGIME near-zero within sections, kernel retention 94.5%. Folio identity = statistical ensemble of paragraph-level PREFIX choices. REGIME is emergent from PREFIX composition, not a cause of it. Closes architectural question of how folio identity arises	2	B, PREFIX, design_freedom, paragraph, manifold, synthesis, C1405, C1569, C1573, C1801
+C1813	Rosettes atom inventory shared with B: character-level Jaccard=0.950, 0 novel atoms, 0 suffix exclusion violations ({k,t,p,f,c} absent from suffixes). Slot compliance 31.3% raw but misleading — 47.3% of violations are compound MIDDLEs with internal HEAD/TERM atoms, 21.4% HEAD-HEAD bare pairs. Universal atom substrate (C1499) confirmed for rosettes. Modifier JSD=0.054 (marginal, near 0.05 threshold)	2	Rosettes, atoms, substrate, Jaccard, C1499, C1511
+C1814	Rosettes o-HEAD arrangement enrichment 3.30x vs B (37.1% vs 11.2%) — highest of any system. Cross-system gradient: Rosettes(37.1%) > A(28.5%) > AZC(22.4%) > B(11.2%). HEAD profile closest to AZC (JSD=0.024 vs JSD=0.096 to B). Headless rate 22.3% (below AZC-adjacent 25-35% range due to o-HEAD crowding). Extends C1559 o-HEAD gradient and C1502 AZC enrichment to rosettes endpoint	2	Rosettes, HEAD, o-atom, arrangement, gradient, C1388, C1502, C1559
+C1815	Bridge backbone in rosettes deploys with A-side HEAD distribution: JSD ros-A=0.050 < ros-B=0.090. Terminal stability preserved across systems (max JSD=0.046). 38/85 bridge types present, 286 bridge tokens. Extends C1507 (bridge HEAD redistribution) — rosettes are the A-adjacent endpoint of bridge deployment	2	Rosettes, bridge, HEAD, A-side, terminal, C1506, C1507
+C1816	C1132 dual population (classified/unclassified) converges at atom level: HEAD profile JSD=0.021 between populations. Both are o-HEAD dominant. Classified e/k/t HEAD share=26.9% (not 55% as predicted). Unclassified headless=26.4%. Compound bridge atom rate 100% (67/67). The dual population is vocabulary-level (MIDDLE length, compound rate, bridge rate) not domain-level. All rosettes content serves arrangement function regardless of vocabulary stratum	2	Rosettes, dual_population, HEAD, convergence, C1132
 
 ---
 
@@ -2058,7 +2062,7 @@ C1812	PREFIX composition is an independent paragraph-level design parameter, not
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-20
+# Generated: 2026-03-21
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

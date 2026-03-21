@@ -1,0 +1,707 @@
+{
+  "phase": 619,
+  "name": "ROSETTES_ATOM_DECOMPOSITION",
+  "question": "Does shared atom substrate extend to rosettes, and what is their atom deployment signature?",
+  "power_preamble": {
+    "total_raw_tokens": 443,
+    "valid_tokens": 394,
+    "unparseable_filtered": 49,
+    "unique_middles": 131,
+    "ring_tokens": 256,
+    "nonring_tokens": 138,
+    "classified_tokens": 186,
+    "unclassified_tokens": 208,
+    "bridge_tokens": 286,
+    "per_entity": {
+      "CENTER": 69,
+      "NE": 53,
+      "SW": 45,
+      "NORTH": 42,
+      "SOUTH": 37,
+      "NW": 33,
+      "EAST": 32,
+      "WEST": 28,
+      "SE": 28,
+      "CLOCK": 6,
+      "PATH_SW_WEST": 5,
+      "PATH_WEST_NW": 5,
+      "PATH_NE_EAST": 4,
+      "PATH_SOUTH_SW": 3,
+      "PATH_EAST_SE": 2,
+      "PATH_NW_NORTH": 2,
+      "PATH_SE_SOUTH": 2,
+      "PATH_NORTH_NE": 1,
+      "UNCLASSIFIED": 1
+    },
+    "entities_with_ge15": 9,
+    "entities_underpowered": [
+      "PATH_EAST_SE",
+      "PATH_NE_EAST",
+      "PATH_NORTH_NE",
+      "PATH_NW_NORTH",
+      "PATH_SE_SOUTH",
+      "PATH_SOUTH_SW",
+      "PATH_SW_WEST",
+      "PATH_WEST_NW",
+      "CLOCK",
+      "UNCLASSIFIED"
+    ]
+  },
+  "T1_shared_substrate": {
+    "t1a_atom_jaccard": 0.95,
+    "t1a_ros_atoms": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "r",
+      "s",
+      "t",
+      "x",
+      "y"
+    ],
+    "t1a_b_atoms": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "x",
+      "y"
+    ],
+    "t1a_pass": true,
+    "t1b_novel_atoms": [],
+    "t1b_pass": true,
+    "t1c_compliance": 0.313,
+    "t1c_valid": 41,
+    "t1c_total": 131,
+    "t1c_invalid_middles": [
+      "opaefch",
+      "oee",
+      "odai",
+      "afalairi",
+      "ke",
+      "et",
+      "rald",
+      "ry",
+      "ockh",
+      "opchd",
+      "ofdor",
+      "xolt",
+      "cfai",
+      "adai",
+      "xd",
+      "ro",
+      "oparod",
+      "ek",
+      "to",
+      "eyk"
+    ],
+    "t1c_pass": false,
+    "t1d_mod_jsd": 0.0536,
+    "t1d_ros_mod_dist": {
+      "p": 0.1032,
+      "c": 0.1103,
+      "i": 0.1708,
+      "f": 0.0534,
+      "d": 0.4733,
+      "s": 0.089
+    },
+    "t1d_b_mod_dist": {
+      "p": 0.0496,
+      "c": 0.1733,
+      "i": 0.3541,
+      "f": 0.0166,
+      "d": 0.3614,
+      "s": 0.045
+    },
+    "t1d_pass": false,
+    "t1e_suffix_violations": 0,
+    "t1e_examples": [],
+    "t1e_pass": true
+  },
+  "T2_head_domain": {
+    "t2a_ros_azc_jsd": 0.0243,
+    "t2a_ros_b_jsd": 0.0954,
+    "t2a_ros_a_jsd": 0.043,
+    "t2a_pass": true,
+    "t2b_ros_o": 0.3706,
+    "t2b_b_o": 0.1123,
+    "t2b_o_enrichment": 3.2998,
+    "t2b_pass": true,
+    "t2c_ros_headless": 0.2234,
+    "t2c_b_headless": 0.2698,
+    "t2c_a_headless": 0.3896,
+    "t2c_azc_headless": 0.2786,
+    "t2c_pass": false,
+    "head_distributions": {
+      "rosettes": {
+        "a": 0.1574,
+        "e": 0.2056,
+        "o": 0.3706,
+        "k": 0.0381,
+        "t": 0.0051,
+        "headless": 0.2234
+      },
+      "B": {
+        "a": 0.1301,
+        "e": 0.3105,
+        "o": 0.1123,
+        "k": 0.1377,
+        "t": 0.0397,
+        "headless": 0.2698
+      },
+      "A": {
+        "a": 0.0765,
+        "e": 0.1581,
+        "o": 0.2847,
+        "k": 0.0575,
+        "t": 0.0336,
+        "headless": 0.3896
+      },
+      "AZC": {
+        "a": 0.1531,
+        "e": 0.3077,
+        "o": 0.224,
+        "k": 0.026,
+        "t": 0.0105,
+        "headless": 0.2786
+      }
+    },
+    "domain_table": {
+      "rosettes": {
+        "ITERATION": 0.1574,
+        "BALANCED": 0.2056,
+        "ARRANGEMENT": 0.3706,
+        "THERMAL": 0.0381,
+        "TRANSFER": 0.0051,
+        "headless": 0.2234
+      },
+      "B": {
+        "ITERATION": 0.1301,
+        "BALANCED": 0.3105,
+        "ARRANGEMENT": 0.1123,
+        "THERMAL": 0.1377,
+        "TRANSFER": 0.0397,
+        "headless": 0.2698
+      },
+      "A": {
+        "ITERATION": 0.0765,
+        "BALANCED": 0.1581,
+        "ARRANGEMENT": 0.2847,
+        "THERMAL": 0.0575,
+        "TRANSFER": 0.0336,
+        "headless": 0.3896
+      },
+      "AZC": {
+        "ITERATION": 0.1531,
+        "BALANCED": 0.3077,
+        "ARRANGEMENT": 0.224,
+        "THERMAL": 0.026,
+        "TRANSFER": 0.0105,
+        "headless": 0.2786
+      }
+    }
+  },
+  "T3_bridge_backbone": {
+    "t3a_bridge_types": 38,
+    "t3a_bridge_tokens": 286,
+    "t3a_bridge_coverage": 0.4471,
+    "t3a_bridge_middles_found": [
+      "a",
+      "ai",
+      "aii",
+      "aiin",
+      "ain",
+      "al",
+      "an",
+      "ar",
+      "ck",
+      "d",
+      "dy",
+      "e",
+      "ed",
+      "edy",
+      "ee",
+      "eek",
+      "eey",
+      "ek",
+      "eo",
+      "et",
+      "iin",
+      "k",
+      "ke",
+      "keeo",
+      "l",
+      "o",
+      "od",
+      "oiin",
+      "ol",
+      "om",
+      "op",
+      "opch",
+      "or",
+      "r",
+      "ry",
+      "s",
+      "tch",
+      "y"
+    ],
+    "low_power": false,
+    "t3b_ros_a_jsd": 0.0505,
+    "t3b_ros_b_jsd": 0.0896,
+    "t3b_a_side": true,
+    "t3b_pass": true,
+    "bridge_head_distributions": {
+      "rosettes": {
+        "a": 0.1923,
+        "e": 0.2273,
+        "o": 0.3287,
+        "k": 0.042,
+        "t": 0.0035,
+        "headless": 0.2063
+      },
+      "A": {
+        "a": 0.0841,
+        "e": 0.1629,
+        "o": 0.2812,
+        "k": 0.0549,
+        "t": 0.0308,
+        "headless": 0.386
+      },
+      "B": {
+        "a": 0.1418,
+        "e": 0.3189,
+        "o": 0.1015,
+        "k": 0.1456,
+        "t": 0.038,
+        "headless": 0.2543
+      }
+    },
+    "t3c_ros_a_term_jsd": 0.0461,
+    "t3c_ros_b_term_jsd": 0.0314,
+    "t3c_a_b_term_jsd": 0.0156,
+    "t3c_max_term_jsd": 0.0461,
+    "t3c_pass": true,
+    "bridge_term_distributions": {
+      "rosettes": {
+        "y": 0.1608,
+        "l": 0.1154,
+        "r": 0.1608,
+        "h": 0.007,
+        "m": 0.007,
+        "n": 0.049,
+        "bare": 0.5
+      },
+      "A": {
+        "y": 0.1545,
+        "l": 0.169,
+        "r": 0.117,
+        "h": 0.0566,
+        "m": 0.0206,
+        "n": 0.1261,
+        "bare": 0.3562
+      },
+      "B": {
+        "y": 0.2406,
+        "l": 0.1266,
+        "r": 0.0891,
+        "h": 0.0299,
+        "m": 0.0128,
+        "n": 0.1044,
+        "bare": 0.3965
+      }
+    }
+  },
+  "T4_dual_population": {
+    "classified_count": 186,
+    "unclassified_count": 208,
+    "classified_head_dist": {
+      "a": 0.2097,
+      "e": 0.2151,
+      "o": 0.3441,
+      "k": 0.0484,
+      "t": 0.0054,
+      "headless": 0.1774
+    },
+    "unclassified_head_dist": {
+      "a": 0.1106,
+      "e": 0.1971,
+      "o": 0.3942,
+      "k": 0.0288,
+      "t": 0.0048,
+      "headless": 0.2644
+    },
+    "t4a_ekt_frac": 0.2688,
+    "t4a_ekt_count": 50,
+    "t4a_cls_total": 186,
+    "t4a_pass": false,
+    "t4b_headless_frac": 0.2644,
+    "t4b_headless_count": 55,
+    "t4b_uncls_total": 208,
+    "t4b_headless_pass": false,
+    "t4b_dasta_frac": 0.2182,
+    "t4b_dasta_count": 12,
+    "t4b_headless_tokens": 55,
+    "t4b_dasta_pass": false,
+    "t4b_pass": false,
+    "t4c_compound_total": 67,
+    "t4c_compound_with_bridge": 67,
+    "t4c_bridge_atom_rate": 1.0,
+    "t4c_pass": true,
+    "t4d_population_jsd": 0.0208,
+    "t4d_pass": false
+  },
+  "T5_entity_variation": {
+    "t5a_powered_entities": [
+      "NW",
+      "NORTH",
+      "NE",
+      "WEST",
+      "CENTER",
+      "EAST",
+      "SW",
+      "SOUTH",
+      "SE"
+    ],
+    "t5a_mean_jsd": 0.0414,
+    "t5a_pairwise": [
+      {
+        "e1": "NW",
+        "e2": "NORTH",
+        "d": 0.0145
+      },
+      {
+        "e1": "NW",
+        "e2": "NE",
+        "d": 0.014
+      },
+      {
+        "e1": "NW",
+        "e2": "WEST",
+        "d": 0.0374
+      },
+      {
+        "e1": "NW",
+        "e2": "CENTER",
+        "d": 0.0585
+      },
+      {
+        "e1": "NW",
+        "e2": "EAST",
+        "d": 0.0305
+      },
+      {
+        "e1": "NW",
+        "e2": "SW",
+        "d": 0.0232
+      },
+      {
+        "e1": "NW",
+        "e2": "SOUTH",
+        "d": 0.0075
+      },
+      {
+        "e1": "NW",
+        "e2": "SE",
+        "d": 0.0396
+      },
+      {
+        "e1": "NORTH",
+        "e2": "NE",
+        "d": 0.0304
+      },
+      {
+        "e1": "NORTH",
+        "e2": "WEST",
+        "d": 0.0757
+      },
+      {
+        "e1": "NORTH",
+        "e2": "CENTER",
+        "d": 0.0525
+      },
+      {
+        "e1": "NORTH",
+        "e2": "EAST",
+        "d": 0.0627
+      },
+      {
+        "e1": "NORTH",
+        "e2": "SW",
+        "d": 0.036
+      },
+      {
+        "e1": "NORTH",
+        "e2": "SOUTH",
+        "d": 0.0246
+      },
+      {
+        "e1": "NORTH",
+        "e2": "SE",
+        "d": 0.0472
+      },
+      {
+        "e1": "NE",
+        "e2": "WEST",
+        "d": 0.0177
+      },
+      {
+        "e1": "NE",
+        "e2": "CENTER",
+        "d": 0.0318
+      },
+      {
+        "e1": "NE",
+        "e2": "EAST",
+        "d": 0.054
+      },
+      {
+        "e1": "NE",
+        "e2": "SW",
+        "d": 0.0033
+      },
+      {
+        "e1": "NE",
+        "e2": "SOUTH",
+        "d": 0.0087
+      }
+    ],
+    "t5b_ring_nonring_jsd": 0.0554,
+    "t5b_ring_head_dist": {
+      "a": 0.1914,
+      "e": 0.2422,
+      "o": 0.3516,
+      "k": 0.0469,
+      "t": 0.0078,
+      "headless": 0.1602
+    },
+    "t5b_nonring_head_dist": {
+      "a": 0.0942,
+      "e": 0.1377,
+      "o": 0.4058,
+      "k": 0.0217,
+      "t": 0.0,
+      "headless": 0.3406
+    },
+    "t5c_entity_head_dists": {
+      "NW": {
+        "a": 0.2121,
+        "e": 0.2424,
+        "o": 0.303,
+        "k": 0.0606,
+        "t": 0.0,
+        "headless": 0.1818
+      },
+      "NORTH": {
+        "a": 0.2857,
+        "e": 0.1429,
+        "o": 0.3333,
+        "k": 0.0476,
+        "t": 0.0,
+        "headless": 0.1905
+      },
+      "NE": {
+        "a": 0.1321,
+        "e": 0.2264,
+        "o": 0.3962,
+        "k": 0.0377,
+        "t": 0.0,
+        "headless": 0.2075
+      },
+      "WEST": {
+        "a": 0.0714,
+        "e": 0.2857,
+        "o": 0.4286,
+        "k": 0.0714,
+        "t": 0.0,
+        "headless": 0.1429
+      },
+      "CENTER": {
+        "a": 0.1159,
+        "e": 0.1159,
+        "o": 0.3913,
+        "k": 0.029,
+        "t": 0.0145,
+        "headless": 0.3333
+      },
+      "EAST": {
+        "a": 0.1875,
+        "e": 0.3125,
+        "o": 0.1875,
+        "k": 0.0625,
+        "t": 0.0312,
+        "headless": 0.2188
+      },
+      "SW": {
+        "a": 0.1333,
+        "e": 0.2222,
+        "o": 0.4444,
+        "k": 0.0222,
+        "t": 0.0,
+        "headless": 0.1778
+      },
+      "SOUTH": {
+        "a": 0.1892,
+        "e": 0.2703,
+        "o": 0.3514,
+        "k": 0.027,
+        "t": 0.0,
+        "headless": 0.1622
+      },
+      "SE": {
+        "a": 0.1786,
+        "e": 0.2143,
+        "o": 0.5,
+        "k": 0.0357,
+        "t": 0.0,
+        "headless": 0.0714
+      },
+      "PATH_EAST_SE": {
+        "a": 0.0,
+        "e": 0.0,
+        "o": 0.5,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.5
+      },
+      "PATH_NE_EAST": {
+        "a": 0.0,
+        "e": 0.0,
+        "o": 0.5,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.5
+      },
+      "PATH_NORTH_NE": {
+        "a": 0.0,
+        "e": 0.0,
+        "o": 1.0,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.0
+      },
+      "PATH_NW_NORTH": {
+        "a": 0.0,
+        "e": 0.0,
+        "o": 0.0,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 1.0
+      },
+      "PATH_SE_SOUTH": {
+        "a": 0.5,
+        "e": 0.0,
+        "o": 0.0,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.5
+      },
+      "PATH_SOUTH_SW": {
+        "a": 0.0,
+        "e": 0.3333,
+        "o": 0.3333,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.3333
+      },
+      "PATH_SW_WEST": {
+        "a": 0.0,
+        "e": 0.2,
+        "o": 0.4,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.4
+      },
+      "PATH_WEST_NW": {
+        "a": 0.0,
+        "e": 0.0,
+        "o": 0.2,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.8
+      },
+      "CLOCK": {
+        "a": 0.1667,
+        "e": 0.1667,
+        "o": 0.3333,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.3333
+      },
+      "UNCLASSIFIED": {
+        "a": 0.0,
+        "e": 0.0,
+        "o": 1.0,
+        "k": 0.0,
+        "t": 0.0,
+        "headless": 0.0
+      }
+    },
+    "t5c_entity_counts": {
+      "NW": 33,
+      "NORTH": 42,
+      "NE": 53,
+      "WEST": 28,
+      "CENTER": 69,
+      "EAST": 32,
+      "SW": 45,
+      "SOUTH": 37,
+      "SE": 28,
+      "PATH_EAST_SE": 2,
+      "PATH_NE_EAST": 4,
+      "PATH_NORTH_NE": 1,
+      "PATH_NW_NORTH": 2,
+      "PATH_SE_SOUTH": 2,
+      "PATH_SOUTH_SW": 3,
+      "PATH_SW_WEST": 5,
+      "PATH_WEST_NW": 5,
+      "CLOCK": 6,
+      "UNCLASSIFIED": 1
+    },
+    "descriptive": true
+  },
+  "verdict_info": {
+    "core_predictions": {
+      "T1a_substrate": true,
+      "T2a_azc_proximity": true,
+      "T2b_o_enrichment": true,
+      "T2c_headless_range": false,
+      "T4a_ekt_dominance": false,
+      "T4b_headless_enrichment": false
+    },
+    "extended_predictions": {
+      "T3b_bridge_a_side": true,
+      "T3c_terminal_stability": true
+    },
+    "core_pass": 3,
+    "core_total": 6,
+    "extended_pass": 2,
+    "extended_low_power": 0,
+    "verdict": "ARRANGEMENT_DOMINANT_METALAYER"
+  },
+  "verdict": "ARRANGEMENT_DOMINANT_METALAYER"
+}

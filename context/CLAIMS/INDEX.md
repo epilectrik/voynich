@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1811 validated constraints | **Version:** 5.90 | **Date:** 2026-03-20
+**Total:** 1815 validated constraints | **Version:** 5.91 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6030,6 +6030,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - PREFIX not a proxy (C1810): 81.4% manifold retention after all controls. Kernel+headless retention 94.5% despite C1715 showing both load on PC1. PREFIX carries apparatus information through channels beyond kernel routing.
 - Paragraph-level operation (C1811): ICC=0.185 means only 18.5% of PREFIX variance is between-folio. Each paragraph independently selects its PREFIX profile. sh most consistent (ICC=0.382), rare PREFIXes near-zero.
 - Architectural closure (C1812): The design hierarchy is: section → shared templates (C1569); paragraph → independent PREFIX selection; PREFIX → dynamics (C1405) → manifold (C1801). Folio identity = ensemble of paragraph PREFIX choices (C1573). REGIME is emergent from PREFIX composition, not a cause.
+
+---
+
+### Phase 619: Rosettes Atom Decomposition — ARRANGEMENT_DOMINANT_METALAYER (C1813-C1816)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1813 | Rosettes atom inventory shared with B: character-level Jaccard=0.950, 0 novel atoms, 0 suffix exclusion violations ({k,t,p,f,c} absent from suffixes). Slot compliance 31.3% raw but misleading — 47.3% of violations are compound MIDDLEs with internal HEAD/TERM atoms, 21.4% HEAD-HEAD bare pairs. Universal atom substrate (C1499) confirmed for rosettes. Modifier JSD=0.054 (marginal, near 0.05 threshold) | 2 | Rosettes, atoms, substrate, Jaccard, C1499, C1511 | jaccard=0.950. novel=0. sfx_violations=0. slot_compliance=31.3pct. mod_jsd=0.054. n_tokens=394. n_middles=131. |
+| 1814 | Rosettes o-HEAD arrangement enrichment 3.30x vs B (37.1% vs 11.2%) — highest of any system. Cross-system gradient: Rosettes(37.1%) > A(28.5%) > AZC(22.4%) > B(11.2%). HEAD profile closest to AZC (JSD=0.024 vs JSD=0.096 to B). Headless rate 22.3% (below AZC-adjacent 25-35% range due to o-HEAD crowding). Extends C1559 o-HEAD gradient and C1502 AZC enrichment to rosettes endpoint | 2 | Rosettes, HEAD, o-atom, arrangement, gradient, C1388, C1502, C1559 | o_head=37.1pct. enrichment=3.30x. jsd_azc=0.024. jsd_b=0.096. headless=22.3pct. n=394. |
+| 1815 | Bridge backbone in rosettes deploys with A-side HEAD distribution: JSD ros-A=0.050 < ros-B=0.090. Terminal stability preserved across systems (max JSD=0.046). 38/85 bridge types present, 286 bridge tokens. Extends C1507 (bridge HEAD redistribution) — rosettes are the A-adjacent endpoint of bridge deployment | 2 | Rosettes, bridge, HEAD, A-side, terminal, C1506, C1507 | jsd_ros_a=0.050. jsd_ros_b=0.090. term_max_jsd=0.046. bridge_types=38. bridge_tokens=286. |
+| 1816 | C1132 dual population (classified/unclassified) converges at atom level: HEAD profile JSD=0.021 between populations. Both are o-HEAD dominant. Classified e/k/t HEAD share=26.9% (not 55% as predicted). Unclassified headless=26.4%. Compound bridge atom rate 100% (67/67). The dual population is vocabulary-level (MIDDLE length, compound rate, bridge rate) not domain-level. All rosettes content serves arrangement function regardless of vocabulary stratum | 2 | Rosettes, dual_population, HEAD, convergence, C1132 | head_jsd=0.021. classified_ekt=26.9pct. unclassified_headless=26.4pct. compound_bridge=100pct. n_classified=199. n_unclassified=195. |
+
+**Phase 619 findings (Rosettes Atom Decomposition, ARRANGEMENT_DOMINANT_METALAYER):**
+- Shared atom substrate (C1813): Jaccard=0.950 with B, zero novel atoms, zero suffix exclusion violations. Universal atom substrate (C1499) confirmed for the last major text population. Low slot compliance (31.3%) is a metric artifact from compound-heavy composition.
+- Arrangement-dominant extreme (C1814): o-HEAD at 37.1% is the highest in the manuscript, extending the gradient Rosettes > A > AZC > B. HEAD profile closest to AZC (JSD=0.024). All three core failures (headless rate, classified e/k/t, unclassified headless) trace to this single mechanism — o-HEAD hyper-enrichment crowding out other HEAD domains.
+- Bridge A-side deployment (C1815): Bridge MIDDLEs deploy with A-like HEAD distribution (JSD ros-A=0.050 < ros-B=0.090). Terminal stability preserved (max JSD=0.046). Rosettes are the A-adjacent endpoint of bridge deployment, consistent with metalayer function.
+- Dual population atom convergence (C1816): C1132's classified/unclassified populations have identical HEAD profiles (JSD=0.021). Both are o-dominated. The dual population is a vocabulary-level phenomenon not a domain-level phenomenon. All rosettes content serves the arrangement function regardless of vocabulary stratum.
 
 ---
 

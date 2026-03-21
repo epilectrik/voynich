@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1669 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1673 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1812.
+the highest ID present is C1816.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2137,6 +2137,10 @@ C1809	Section+REGIME+kernel+headless_frac explain only ~11% of PREFIX variance (
 C1810	PREFIX retains 81.4% of manifold correlation after controlling section+REGIME+kernel+headless (partial Mantel D6 r=0.368, p=0.0001). Kernel+headless alone retain 94.5%. PREFIX is not kernel-mediated despite both loading on PC1 (C1715).	2	B, PREFIX, manifold, partial_Mantel, kernel, C1715, C1801	D1_r=0.453. D6_r=0.368. retention=81.4pct. D5_retention=94.5pct. p=0.0001.
 C1811	PREFIX composition is paragraph-level, not folio-level. ICC=0.185 (81.5% within-folio). Within-folio paragraph JSD=0.328 exceeds between-folio JSD=0.240. Each paragraph independently selects PREFIX profile. sh most folio-consistent (ICC=0.382); or/pch/ar near-zero.	2	B, PREFIX, paragraph, ICC, JSD, C1182	mean_icc=0.185. sh_icc=0.382. within_jsd=0.328. between_jsd=0.240. n_para=412.
 C1812	Architectural closure: PREFIX composition is independent paragraph-level design parameter, not downstream of section/REGIME/kernel. Hierarchy: section→shared templates (C1569); paragraph→independent PREFIX selection (C1811); PREFIX→dynamics (C1405)→manifold (C1801). REGIME is emergent from PREFIX choices, not causal.	2	B, PREFIX, architecture, paragraph, section, REGIME, C1569, C1405, C1801, C1811	loo_r2=0.11. mantel_retention=81.4pct. icc=0.185.
+C1813	Rosettes atom inventory shared with B: Jaccard=0.950, 0 novel atoms, 0 suffix exclusion violations. Slot compliance 31.3% raw but misleading — 47.3% compound MIDDLEs, 21.4% HEAD-HEAD pairs. Universal atom substrate (C1499) confirmed for rosettes. Modifier JSD=0.054.	2	Rosettes, atoms, substrate, Jaccard, C1499, C1511	jaccard=0.950. novel=0. sfx_violations=0. slot_compliance=31.3pct. mod_jsd=0.054. n=394.
+C1814	Rosettes o-HEAD arrangement enrichment 3.30x vs B (37.1% vs 11.2%) — highest of any system. Gradient: Rosettes(37.1%) > A(28.5%) > AZC(22.4%) > B(11.2%). HEAD closest to AZC (JSD=0.024 vs 0.096 to B). Headless 22.3%. Extends C1559 gradient to rosettes endpoint.	2	Rosettes, HEAD, o-atom, arrangement, gradient, C1388, C1502, C1559	o_head=37.1pct. enrichment=3.30x. jsd_azc=0.024. jsd_b=0.096. headless=22.3pct.
+C1815	Bridge backbone in rosettes deploys with A-side HEAD distribution: JSD ros-A=0.050 < ros-B=0.090. Terminal stability preserved (max JSD=0.046). 38/85 bridge types, 286 tokens. Extends C1507 — rosettes are A-adjacent endpoint of bridge deployment.	2	Rosettes, bridge, HEAD, A-side, terminal, C1506, C1507	jsd_ros_a=0.050. jsd_ros_b=0.090. term_max_jsd=0.046. bridge_types=38. bridge_tokens=286.
+C1816	C1132 dual population converges at atom level: HEAD JSD=0.021 between classified/unclassified. Both o-dominated. Classified e/k/t=26.9%, unclassified headless=26.4%. Compound bridge rate 100%. Dual population is vocabulary-level not domain-level. All rosettes content serves arrangement function.	2	Rosettes, dual_population, HEAD, convergence, C1132	head_jsd=0.021. classified_ekt=26.9pct. unclassified_headless=26.4pct. compound_bridge=100pct.
 
 ---
 

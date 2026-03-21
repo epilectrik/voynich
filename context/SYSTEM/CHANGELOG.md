@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.91 (2026-03-20) - Phase 619: Rosettes Atom Decomposition
+
+### Summary
+
+Phase 619 applies the HEAD+MOD+TERM atom decomposition (C1393-C1394) to the Rosettes foldout — the last major text population without atom-level characterization. 394 valid tokens (ZL transcription, 131 unique MIDDLEs, 19 entities) tested across 5 families: shared substrate (T1), HEAD domain distribution (T2), bridge backbone (T3), dual population (T4), entity-level variation (T5). Core scorecard: 3/6 pass, 2/2 extended pass. All three core failures trace to a single mechanism — o-HEAD hyper-enrichment at 3.30x (37.1% vs B's 11.2%), the highest in the manuscript. Verdict: **ARRANGEMENT_DOMINANT_METALAYER** — the rosettes are the arrangement-dominant endpoint of the manuscript's declarative-to-executable gradient.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ROSETTES_ATOM_DECOMPOSITION/` -- Phase 619 with script, JSON results, INDEX.md |
+| **ADDED** | C1813: Rosettes atom substrate shared with B (Jaccard=0.950, 0 novel, 0 suffix violations, compound caveat for slot compliance) |
+| **ADDED** | C1814: Rosettes o-HEAD arrangement enrichment 3.30x — highest in manuscript; gradient Rosettes > A > AZC > B |
+| **ADDED** | C1815: Bridge backbone A-side HEAD (JSD ros-A=0.050 < ros-B=0.090), terminal stability preserved |
+| **ADDED** | C1816: Dual population (C1132) converges at atom level (HEAD JSD=0.021); vocabulary-level not domain-level |
+| **UPDATED** | INDEX.md -- +4 constraints (1815 total), Phase 619 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.91, 1815 constraints, 619 phases) |
+
+### Key Findings
+
+- **Shared atom substrate confirmed (C1813):** Jaccard=0.950 with B, zero novel atoms, zero suffix exclusion violations. The universal atom substrate (C1499) now covers all major text populations (B, A, AZC, Rosettes). Slot compliance is low (31.3%) due to compound-heavy composition — not a real violation.
+- **Arrangement-dominant extreme (C1814):** o-HEAD at 37.1% completes the cross-system gradient: Rosettes(37.1%) > A(28.5%) > AZC(22.4%) > B(11.2%). HEAD profile closest to AZC (JSD=0.024). Consistent with metalayer function (C1126) and o-atom arrangement domain (C1388, C1502).
+- **Bridge backbone is A-side (C1815):** Bridge MIDDLEs in rosettes deploy with A-like HEAD distribution, confirming metalayer is structurally A-adjacent despite vocabulary-B-connected. Terminal stability preserved (max JSD=0.046). Extends C1507 bridge HEAD redistribution.
+- **Dual population converges at atom level (C1816):** C1132's classified/unclassified populations are vocabulary-divergent but atom-convergent (HEAD JSD=0.021). Both populations are o-dominated. The dual population is a vocabulary-level phenomenon, not a domain-level phenomenon. All rosettes content serves the arrangement function.
+- **All core failures trace to one mechanism:** T2c (headless rate), T4a (classified e/k/t), T4b (unclassified headless) all fail because o-HEAD hyper-enrichment at 3.30x crowds out other HEAD domains. This is a coherent single-parameter deviation, not diffuse failure.
+
+---
+
 ## Version 5.90 (2026-03-20) - Phase 618: PREFIX Composition Determinants
 
 ### Summary
