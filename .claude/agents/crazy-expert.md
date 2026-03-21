@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1683 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1686 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1826.
+the highest ID present is C1829.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2151,6 +2151,9 @@ C1823	CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy mo
 C1824	Rosettes visual-grammar independence at entity level: composite alignment 0.156 vs null mean 0.338, p=0.888. Visual imagery does NOT predict grammar profiles. C138 epiphenomenality holds at metalayer entity level. Three pre-registered hypotheses all fail. H1 reversed (liquid entities have LOWER e-HEAD).	2	Rosettes, visual, grammar, C138, independence	composite=0.156. null_mean=0.338. p=0.888. h1_rb=-0.300. n=9.
 C1825	Rosettes visual complexity co-varies with grammar diversity: rho(feature_count, mean_JSD)=0.533. Visually complex entities more grammatically distinctive. Complexity-complexity link, not content-content.	2	Rosettes, visual, complexity, diversity, C1817	rho=0.533. fc_range=1-8.
 C1826	Rosettes spatial non-prediction replicated (Phase 621): adj JSD=0.080, nonadj=0.073, delta=0.007. Independent C1818 replication.	2	Rosettes, spatial, adjacency, C1818	adj=0.080. nonadj=0.073. delta=0.007.
+C1827	Compound-context alignment persists through progressive confound removal (N0: 4.94sig -> N1: 3.85sig -> N3: 3.29sig, 67% retained, all p<0.001; cross-line ratio 0.991 confirms folio-mediated)	2	B, compounds, categories, confound, C1214, C1176	N0=4.94. N1=3.85. N3=3.29. pct=66.7. xline=0.991. n=7120.
+C1828	Compound atom composition constrained below folio base rate (synthetic=0.387 vs real=0.348, -10.25sig; morphological rules C1060/C1215 reduce context alignment)	2	B, compounds, morphology, synthetic, C1060, C1215, C935	real=0.348. synth=0.387. effect=-10.25.
+C1829	Compound information content verdict COMPOUND_RESIDUAL_SIGNAL: within-folio signal exists (P2/P3 PASS 3.85sig/3.29sig) but compounds not optimized for context (C0 FAIL -10.25sig). Extends C935.	2	B, compounds, specification, verdict, C935, C1214	P1=PASS. P2=PASS. P3=PASS. P4=FAIL.
 
 ---
 

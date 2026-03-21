@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.94 (2026-03-20) - Phase 622: Compound Information Content
+
+### Summary
+
+Phase 622 tests whether compound MIDDLE category composition carries information about execution context beyond folio/section-level category pools, line-position gradients, and PREFIX routing. Four progressively tighter null models (N0 global -> N1 within-folio -> N2 folio+position -> N3 folio+PREFIX) plus a synthetic non-compound control (C0). The compound-context alignment signal (4.94sigma) survives ALL confound controls (N1: 3.85sigma, N3: 3.29sigma, all p<0.001), defying expert predictions of COMPOSITION_ARTIFACT. However, the synthetic control reveals compounds score LOWER than random folio-pool atom draws (0.348 vs 0.387, -10.25sigma) -- compound morphological rules constrain composition below the folio base rate. Cross-line diagnostic (ratio=0.991) confirms folio mediation. Verdict: **COMPOUND_RESIDUAL_SIGNAL**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/COMPOUND_INFORMATION_CONTENT/` -- Phase 622 with script, JSON results, INDEX.md |
+| **ADDED** | C1827: Compound-context alignment persists through progressive confound removal (N0: 4.94sigma -> N3: 3.29sigma, 67% retained) |
+| **ADDED** | C1828: Compound atom composition constrained below folio base rate (real=0.348 < synthetic=0.387, -10.25sigma) |
+| **ADDED** | C1829: Compound information content verdict COMPOUND_RESIDUAL_SIGNAL (extends C935 "operationally redundant") |
+| **UPDATED** | INDEX.md -- +3 constraints (1828 total), Phase 622 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.94, 1828 constraints, 622 phases) |
+
+### Key Findings
+
+- **Effect survives all controls (C1827):** Experts predicted within-folio shuffling would kill the effect (60-80% reduction). Instead, 78% survived within-folio and 67% survived the tightest (PREFIX-matched) control. The compound-line association is real within folios.
+- **But compounds are suboptimal (C1828):** Random atom draws from the folio pool produce HIGHER context alignment than real compounds. This means compound morphological rules (C1060, C1215) constrain atom composition away from the folio average, making compounds category-specific but not context-optimized.
+- **Folio-mediated, not line-specific:** Cross-line diagnostic ratio 0.991 -- compounds predict next-line categories as well as same-line. The signal is folio-level, not line-level.
+- **C935 confirmed and extended (C1829):** Compounds are "operationally redundant" -- they carry morphological structure but don't enhance context matching beyond what the folio pool provides.
+
+---
+
 ## Version 5.93 (2026-03-20) - Phase 621: Rosettes Visual-Grammar Correlation
 
 ### Summary

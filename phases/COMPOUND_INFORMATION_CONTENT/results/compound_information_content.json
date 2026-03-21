@@ -1,0 +1,135 @@
+{
+  "phase": "COMPOUND_INFORMATION_CONTENT",
+  "phase_number": 622,
+  "question": "Does compound MIDDLE category composition carry information about execution context beyond folio/section pools?",
+  "n_pairs": 7120,
+  "n_folios": 76,
+  "n_atoms_distribution": {
+    "2": 4248,
+    "3": 263,
+    "1": 1564,
+    "5": 171,
+    "4": 831,
+    "8": 10,
+    "7": 10,
+    "6": 21,
+    "10": 2
+  },
+  "tests": {
+    "N0_global_shuffle": {
+      "observed": 0.34789,
+      "null_mean": 0.334643,
+      "null_std": 0.002683,
+      "effect_size": 4.9381,
+      "p_value": 0.0
+    },
+    "N1_within_folio": {
+      "observed": 0.34789,
+      "null_mean": 0.337785,
+      "null_std": 0.002622,
+      "effect_size": 3.8541,
+      "p_value": 0.0,
+      "n_groups": 76,
+      "effective_groups": 76,
+      "mean_group_size": 93.7
+    },
+    "N2_position_matched": {
+      "observed": 0.34789,
+      "null_mean": 0.337594,
+      "null_std": 0.002487,
+      "effect_size": 4.1403,
+      "p_value": 0.0,
+      "n_groups": 380,
+      "effective_groups": 378,
+      "mean_group_size": 18.7
+    },
+    "N3_prefix_matched": {
+      "observed": 0.34789,
+      "null_mean": 0.340864,
+      "null_std": 0.002134,
+      "effect_size": 3.2918,
+      "p_value": 0.001,
+      "n_groups": 1234,
+      "effective_groups": 821,
+      "mean_group_size": 5.8
+    },
+    "C0_synthetic_control": {
+      "real_mean": 0.34789,
+      "synthetic_mean": 0.386659,
+      "synthetic_std": 0.003781,
+      "difference": -0.038769,
+      "effect_size": -10.2524,
+      "n_resamplings": 100,
+      "pass": false
+    }
+  },
+  "diagnostics": {
+    "D1_cross_line": {
+      "same_line_mean": 0.34789,
+      "next_line_mean": 0.344831,
+      "same_line_n": 7120,
+      "next_line_n": 6865,
+      "ratio": 0.9912,
+      "interpretation": "folio-mediated (next-line similar to same-line)"
+    },
+    "D2_compound_rate_entropy": {
+      "rho": -0.2505,
+      "n_folios": 76,
+      "interpretation": "no correlation (rho=-0.251)"
+    },
+    "D3_effect_cascade": {
+      "N0_pct": 100.0,
+      "N1_pct": 78.0,
+      "N2_pct": 83.8,
+      "N3_pct": 66.7
+    }
+  },
+  "predictions": {
+    "P1_global": {
+      "pass": true,
+      "effect_size": 4.9381,
+      "test": "N0"
+    },
+    "P2_within_folio": {
+      "pass": true,
+      "effect_size": 3.8541,
+      "test": "N1"
+    },
+    "P3_prefix_matched": {
+      "pass": true,
+      "effect_size": 3.2918,
+      "test": "N3"
+    },
+    "P4_synthetic_control": {
+      "pass": false,
+      "effect_size": -10.2524,
+      "test": "C0"
+    }
+  },
+  "verdict": "COMPOUND_RESIDUAL_SIGNAL",
+  "verdict_thresholds": {
+    "COMPOUND_INFORMATION_SURPLUS": "P1+P2+P3+P4 all PASS",
+    "COMPOUND_RESIDUAL_SIGNAL": "P1+P2 PASS, P3 or P4 FAIL",
+    "POSITION_PREFIX_ARTIFACT": "P1 PASS + P2 PASS + P3 FAIL + P4 FAIL",
+    "COMPOSITION_ARTIFACT": "P1 PASS + P2 FAIL",
+    "NO_ALIGNMENT": "P1 FAIL"
+  },
+  "confounds_controlled": {
+    "N0": "none (global shuffle)",
+    "N1": "folio-level category pool (C1176)",
+    "N2": "folio pool + line-position gradient (C1428)",
+    "N3": "folio pool + PREFIX->category routing (C1297/C1300/C1411)",
+    "C0": "compound-specificity via synthetic multi-atom sampling"
+  },
+  "key_constraints_referenced": [
+    "C935",
+    "C1053",
+    "C1176",
+    "C1190",
+    "C1214",
+    "C1297",
+    "C1300",
+    "C1411",
+    "C1428"
+  ]
+}

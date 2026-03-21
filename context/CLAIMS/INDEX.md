@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1825 validated constraints | **Version:** 5.93 | **Date:** 2026-03-20
+**Total:** 1828 validated constraints | **Version:** 5.94 | **Date:** 2026-03-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6047,6 +6047,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Visual-grammar complexity co-variation (C1825): Visually complex entities tend to be grammatically more diverse (rho=0.533). This is a complexity-complexity link, not a content-content link. Both may reflect the entity's functional role in the foldout.
 - Spatial non-prediction replicated (C1826): Delta=0.007, confirming C1818.
 - Notable exploratory: plan_view x THERMAL (rho=+0.762), fountain x OPERATION (rho=+0.650) — but N=9 with 120 tests means no multiple-comparison survival.
+
+---
+
+### Phase 622: Compound Information Content — COMPOUND_RESIDUAL_SIGNAL (C1827-C1829)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1827 | Compound-context category alignment persists through progressive confound removal: N0 (global) 4.94σ -> N1 (within-folio) 3.85σ -> N2 (folio+position) 4.14σ -> N3 (folio+PREFIX) 3.29σ, all p<0.001, 67% of global effect retained after tightest control. Cross-line diagnostic ratio 0.991 confirms folio-mediated, not line-specific | 2 | B, compounds, categories, confound removal, C1214, C1176 | N0_effect=4.94. N1_effect=3.85. N3_effect=3.29. N3_pct=66.7%. cross_line_ratio=0.991. n_pairs=7120. |
+| 1828 | Compound atom composition constrained below folio base rate: synthetic random-folio-pool draws score 0.387 vs real compounds 0.348, difference -10.25σ. Morphological rules (C1060 atom position grammar, C1215 slot compliance) reduce generic context alignment. Compounds are category-specific, not category-generic | 2 | B, compounds, morphology, synthetic control, C1060, C1215, C935 | real_mean=0.348. synthetic_mean=0.387. effect=-10.25. n_resamplings=100. |
+| 1829 | Compound information content verdict COMPOUND_RESIDUAL_SIGNAL: within-folio signal exists (P2/P3 PASS at 3.85σ/3.29σ) but compounds not optimized for context matching (C0 FAIL at -10.25σ). Residual reflects line-level homogeneity (C1214) through shared atom substrate, not specification encoding. Extends C935 "operationally redundant" | 2 | B, compounds, specification, verdict, C935, C1214 | verdict=COMPOUND_RESIDUAL_SIGNAL. P1=PASS. P2=PASS. P3=PASS. P4=FAIL. |
+
+**Phase 622 findings (Compound Information Content, COMPOUND_RESIDUAL_SIGNAL):**
+- Compound-context alignment is robust: the 4.94σ probe result (N0) survives within-folio (3.85σ), position-matched (4.14σ), and PREFIX-matched (3.29σ) controls. Experts predicted COMPOSITION_ARTIFACT (N1 kills it) — the effect survived all confound layers.
+- But compounds are NOT optimized for context: synthetic random atom draws from the folio pool score HIGHER than real compounds (0.387 vs 0.348, -10.25σ). Compound morphological rules (C1060, C1215) constrain compositions below the folio base rate.
+- Cross-line diagnostic (ratio 0.991) confirms the alignment is folio-mediated — compounds predict next-line categories as well as same-line. The signal comes from folio-level category pools propagated through the shared atom substrate.
+- No specification "unfurling" mechanism needed: C935's "operationally redundant" characterization confirmed. Compounds carry morphological structure that makes them category-specific, but this specificity does not enhance context matching.
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1825 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1828 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1826.
+the highest ID present is C1829.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1825 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1828 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1825 validated constraints are present as canonical one-line claims with tier
+1828 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-21 10:43
-**Version:** FROZEN STATE (1825 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-21 12:13
+**Version:** FROZEN STATE (1828 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2065,6 +2065,9 @@ C1823	CLOCK entity zero-energy monitoring: k-kernel=0%, FLOW=50%, zero energy mo
 C1824	Rosettes visual-grammar independence at entity level: composite alignment score 0.156 vs permutation null mean 0.338, p=0.888 (10,000 shuffles). Visual imagery does NOT predict grammar profiles. C138 illustration epiphenomenality holds at the metalayer entity level. Three pre-registered hypotheses (liquid->e-HEAD, plan_view->o-HEAD, complexity->compound) all fail or show negligible effect. H1 reversed (liquid entities have LOWER e-HEAD). Framed as C138 exception test with contaminated descriptions — null confirmed despite favorable bias	2	Rosettes, visual, grammar, correlation, C138, C140, independence
 C1825	Rosettes visual complexity co-varies with grammar diversity: rho(feature_count, mean_pairwise_JSD)=0.533. Entities with more complex visual descriptions are more grammatically distinctive. Does NOT mean visual content predicts grammar content — both may reflect functional prominence. C1817 uniformity (mean_JSD=0.074) holds at aggregate, but diversity gradient exists	2	Rosettes, visual, complexity, diversity, grammar, C1817
 C1826	Rosettes spatial non-prediction replicated at category level (Phase 621): mean adjacent JSD=0.080, non-adjacent=0.073, delta=0.007. Independent replication of C1818 within Phase 621's correlation framework	2	Rosettes, spatial, adjacency, replication, C1818
+C1827	Compound-context category alignment persists through progressive confound removal: N0 (global) 4.94σ -> N1 (within-folio) 3.85σ -> N2 (folio+position) 4.14σ -> N3 (folio+PREFIX) 3.29σ, all p<0.001, 67% of global effect retained after tightest control. Cross-line diagnostic ratio 0.991 confirms folio-mediated, not line-specific	2	B, compounds, categories, confound removal, C1214, C1176
+C1828	Compound atom composition constrained below folio base rate: synthetic random-folio-pool draws score 0.387 vs real compounds 0.348, difference -10.25σ. Morphological rules (C1060 atom position grammar, C1215 slot compliance) reduce generic context alignment. Compounds are category-specific, not category-generic	2	B, compounds, morphology, synthetic control, C1060, C1215, C935
+C1829	Compound information content verdict COMPOUND_RESIDUAL_SIGNAL: within-folio signal exists (P2/P3 PASS at 3.85σ/3.29σ) but compounds not optimized for context matching (C0 FAIL at -10.25σ). Residual reflects line-level homogeneity (C1214) through shared atom substrate, not specification encoding. Extends C935 "operationally redundant"	2	B, compounds, specification, verdict, C935, C1214
 
 ---
 
