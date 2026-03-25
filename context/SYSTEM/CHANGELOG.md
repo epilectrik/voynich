@@ -4,6 +4,42 @@
 
 ---
 
+## Version 5.98 (2026-03-25) - Phase 626: A-to-B Bridge Operational Decomposition
+
+### Summary
+
+Phase 626 decomposes the A→B bridge at MIDDLE level — the 85 bridge MIDDLEs (C1139) that carry the signal between Currier A and B. Three scripts: PP Jaccard clustering (lightweight validation), bridge MIDDLE operational decomposition (CORE: A-context-to-B-consequence per MIDDLE), and folio decode cards (5 pilot folios with complete A→bridge→B chain). Key result: **BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC** — the bridge carries operationally meaningful signal through HEAD-typed feature channels (rho=0.45-0.68 per HEAD type), but holistic context→consequence prediction fails (Mantel r=0.043). PP clustering is section-dominated (V=0.628). Bridge MIDDLEs form 6 sharp functional groups (sil=0.751) that are completely HEAD-determined. Folio-level A→B correlations (C1706/C1709) are emergent from aggregation, not present at individual MIDDLE level. 12 constraints registered (C1859-C1870). Prediction scorecard: 6 PASS, 3 FAIL, 1 INCONCLUSIVE.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/A_TO_B_BRIDGE_DECOMPOSITION/` -- Phase 626 with 3 scripts, shared module, JSON results, INDEX.md |
+| **ADDED** | C1859: PP Jaccard clustering exceeds null (sil=0.057 vs p95=0.014) but section-dominated (V=0.628) |
+| **ADDED** | C1860: A→B bridge FEATURE-CHANNELED not holistic (Mantel r=0.043, 18 per-feature pairs significant) |
+| **ADDED** | C1861: Bridge HEAD redistribution non-random (chi2=115, V=0.675), dominant A-o→B-k (45%) |
+| **ADDED** | C1862: 6 functional groups by B-consequence (sil=0.751), HEAD-homogeneous |
+| **ADDED** | C1863: Restricted-PP density differs by cluster (KW p=0.001), P-section 2× denser |
+| **ADDED** | C1864: PREFIX ol_or 3.4× enriched in Cluster 1, da enriched in Cluster 2 |
+| **ADDED** | C1865: Folio-level A→B correlations emergent from aggregation, not MIDDLE-level |
+| **ADDED** | C1866: RI Jaccard within-cluster > between (ratio=1.116) but below 1.2 threshold |
+| **ADDED** | C1867: Bridge carries signal through 4 independent HEAD channels (rho=0.45-0.68) |
+| **ADDED** | C1868: Functional groups show HEAD→category specialization |
+| **ADDED** | C1869: Pilot decode cards confirm non-holistic cross-folio distance (rho=-0.24) |
+| **ADDED** | C1870: BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC verdict |
+| **UPDATED** | INDEX.md -- +12 constraints (1870 total), Phase 626 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.98, 1870 constraints, 626 phases) |
+
+### Key Findings
+
+- **Bridge is feature-channeled, not holistic (C1860, C1865):** The folio-level A→B correlations (C1706 rho=0.502, C1709 r=0.42) do NOT decompose to individual MIDDLE level (Mantel r=0.043). The strong folio-level signal arises from aggregating many weak per-MIDDLE channels, primarily HEAD identity channels (rho=0.45-0.68 per HEAD type).
+- **HEAD is the dominant bridge mechanism (C1861, C1867):** Four independent HEAD channels carry the A→B signal with strong fidelity. The dominant redistribution pathway is A-o→B-k (45% of bridge MIDDLEs). Cross-HEAD prediction is near-zero — the bridge is a multiplexed pipe system.
+- **6 sharp functional groups (C1862):** Bridge MIDDLEs cluster by B-consequence with sil=0.751 (strongest internal bridge structure ever found). Groups are completely HEAD-homogeneous: all-o, all-e, all-t, all-k, headless/a, a/headless. Each produces distinct category specialization in B (C1868).
+- **PP clustering is section-dominated (C1859):** V=0.628, with Cluster 1 = Pharma-heavy (23P/14H), Cluster 2 = Herbal-dominant (74H/3P). Within-H structure is marginal (sil=0.039). PREFIX ol_or is the strongest differentiator (3.4× enriched in Cluster 1, C1864).
+- **Implications:** Future A→B research should focus on HEAD-typed decomposition rather than holistic distance metrics. The bridge is a set of parallel HEAD-typed pipes, each carrying its own operational channel, that combine at folio level to produce the strong aggregate signal found in earlier phases.
+
+---
+
 ## Version 5.97 (2026-03-25) - Phase 625: Short Paragraph Architecture
 
 ### Summary

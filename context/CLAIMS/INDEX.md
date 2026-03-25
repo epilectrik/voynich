@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1857 validated constraints | **Version:** 5.97 | **Date:** 2026-03-25
+**Total:** 1870 validated constraints | **Version:** 5.98 | **Date:** 2026-03-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,33 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 626: A-to-B Bridge Operational Decomposition — BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC (C1859-C1870)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1859 | PP Jaccard clustering exceeds permutation null (sil=0.057 vs null p95=0.014, k=2) but is section-dominated (V=0.628). Cluster 1=23P/14H (Pharma-heavy), Cluster 2=74H/3P (Herbal-dominant). Within-H clustering marginal (sil=0.039). PP composition clusters primarily reflect the H/P section boundary | 2 | A, A↔B, clustering, section, C1706, C1709 | sil=0.057. null_p95=0.014. k=2. V=0.628. cluster1=37. cluster2=77. within_h_sil=0.039. |
+| 1860 | A→B bridge signal is FEATURE-CHANNELED not holistic: overall Mantel r=0.043 (p=0.167, n.s.) but 18/840 per-feature Spearman pairs significant at Bonferroni p<0.005. HEAD identity is the primary channel (head_e→b_head_e rho=0.675, head_o→b_head_o rho=0.617). The bridge carries specific feature channels, not diffuse context-to-consequence alignment | 2 | A↔B, bridge, mantel, feature_channels, C1706, C1709 | mantel_r=0.043. mantel_p=0.167. n_sig_pairs=18. head_e_rho=0.675. head_o_rho=0.617. |
+| 1861 | Bridge MIDDLE HEAD redistribution strongly non-random (chi2=115, V=0.675). Dominant pathway: A-o→B-k accounts for 38/84 bridge MIDDLEs (45%). Self-transition rate=45.2%. A-side HEAD predicts B-side HEAD assignment with high fidelity per channel | 2 | A↔B, bridge, HEAD, redistribution, C1507 | chi2=115. V=0.675. o_to_k=38. self_rate=0.452. n=84. |
+| 1862 | Bridge MIDDLEs form 6 sharp functional groups by B-consequence (sil=0.751, best ever for internal bridge structure). Groups are HEAD-homogeneous: G1=o-HEAD(14), G2=e-HEAD(16), G3=t-HEAD(6), G4=k-HEAD(9), G5=headless/a(33), G6=a/headless(6). HEAD is the primary differentiator of bridge MIDDLE B-side function | 2 | A↔B, B, bridge, clustering, functional_groups, C1264, C1500 | sil=0.751. k=6. g1=14. g2=16. g3=6. g4=9. g5=33. g6=6. |
+| 1863 | Restricted-PP density (fraction of PP MIDDLEs appearing on ≤2 folios) differs by PP cluster (KW H=10.49, p=0.001). Cluster 1 (P-heavy) has 2× density (0.053 vs 0.026). Pharma-section folios carry more folio-specific PP vocabulary, consistent with C1707 restricted-PP discrimination | 2 | A, PP, restricted, cluster, section, C1707 | kw_H=10.49. kw_p=0.001. c1_density=0.053. c2_density=0.026. ratio=2.05. |
+| 1864 | PREFIX ol_or is 3.4× enriched in Cluster 1 vs Cluster 2 (KW p<0.001). PREFIX da enriched in Cluster 2 (KW p=0.010). PREFIX qo marginally different (p=0.031). PREFIX composition differentiates PP clusters beyond section assignment, consistent with C1801 (PREFIX as strongest manifold predictor) | 2 | A, PREFIX, cluster, C1801 | ol_or_p=1e-6. ol_or_c1=0.035. ol_or_c2=0.010. da_p=0.010. qo_p=0.031. |
+| 1865 | Folio-level A→B correlations (C1706 partial rho=0.502, C1709 Mantel r=0.42) are emergent properties of aggregation. Individual MIDDLE-level Mantel r=0.043 (n.s.). The 10-SD folio-level signal arises from summing many weak per-MIDDLE channels, not from holistic MIDDLE-level alignment | 2 | A↔B, bridge, aggregation, C1706, C1709 | folio_rho=0.502. folio_r=0.42. middle_r=0.043. middle_p=0.167. |
+| 1866 | RI Jaccard is higher within PP-cluster than between (within=0.049, between=0.044, ratio=1.116, perm p=0.01) but below the 1.2 threshold. Weak evidence that operational similarity tracks identification similarity. Statistically significant but practically small | 2 | A, RI, PP, cluster, identification | within=0.049. between=0.044. ratio=1.116. perm_p=0.01. |
+| 1867 | A→B bridge carries signal through 4 independent HEAD channels with channel-specific preservation: head_e rho=0.675, head_o rho=0.617, head_k rho=0.449, head_a rho=0.456. Cross-HEAD prediction is near-zero. The bridge operates as parallel HEAD-typed pipelines, not a unified transformation | 2 | A↔B, bridge, HEAD, channels, C1507 | head_e_rho=0.675. head_o_rho=0.617. head_k_rho=0.449. head_a_rho=0.456. cross_head=~0. |
+| 1868 | B-side functional groups show HEAD→category specialization: G1(o-HEAD)=OPERATION/MARKING/FLOW, G2(e-HEAD)=THERMAL/OPERATION/TRANSITION, G3(t-HEAD)=FLOW, G4(k-HEAD)=THERMAL/STAGING. HEAD identity constrains operational category assignment in B, extending C1507 redistribution to category-level consequences | 2 | B, bridge, HEAD, category, functional_groups, C1507 | g1_top=OP/MARK/FLOW. g2_top=THERM/OP/TRANS. g3_top=FLOW. g4_top=THERM/STAGE. |
+| 1869 | 5 pilot folio decode cards (f58v, f8r, f58r, f101v2, f101r1) show complete A→bridge→B chains. Cross-folio PP Jaccard distance does NOT predict B-side operational cosine distance (rho=-0.24, p=0.51) or manifold distance (rho=-0.31, p=0.38). Confirms MIDDLE-level signal is not holistic at pilot scale | 2 | A↔B, bridge, decode_cards, pilot, C1706 | n_pilot=5. rho_pp_op=-0.24. p_pp_op=0.51. rho_pp_manifold=-0.31. p_pp_manifold=0.38. |
+| 1870 | BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC verdict: A→B bridge carries operationally meaningful signal through HEAD-typed feature channels (P5/P6/P7 pass strongly) but holistic context→consequence prediction fails (P4 r=0.043). PP clustering section-dominated (V=0.628). Bridge is parallel HEAD-typed pipes, not a single translation layer. 6 PASS, 3 FAIL, 1 INCONCLUSIVE | 2 | A↔B, bridge, verdict | verdict=BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC. pass=6. fail=3. inconclusive=1. |
+
+**Phase 626 findings (A-to-B Bridge Operational Decomposition, BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC):**
+- The A→B bridge carries signal through HEAD-typed feature channels, NOT through holistic context-to-consequence alignment. Overall Mantel r=0.043 (n.s.) at MIDDLE level, vs r=0.42-0.50 at folio level (C1706/C1709). The folio-level correlations are emergent from aggregating many weak per-MIDDLE channels (C1865).
+- HEAD identity is the dominant bridge mechanism (C1860, C1867). Four independent HEAD channels carry signal with rho=0.45-0.68. The A→B HEAD redistribution is strongly non-random (C1861, V=0.675) with the dominant A-o→B-k pathway (45% of bridge MIDDLEs).
+- Bridge MIDDLEs form 6 sharp functional groups (C1862, sil=0.751) that are completely HEAD-determined. Each HEAD type produces distinct B-side category specialization (C1868): o→OPERATION/MARKING, e→THERMAL/TRANSITION, t→FLOW, k→THERMAL/STAGING.
+- PP Jaccard clustering is primarily a section artifact (C1859, V=0.628). Cluster 1 is Pharma-heavy with 2× restricted-PP density (C1863) and enriched ol_or PREFIX (C1864). Within-Herbal structure is marginal.
+- RI sharing within PP-cluster is statistically but not practically elevated (C1866, ratio=1.116, below 1.2 threshold). Identification vocabulary weakly tracks operational clustering.
+- Practical implication: future A→B decomposition should focus on HEAD-typed channels rather than holistic distance metrics. The bridge is a multiplexed pipe system, not a single coherent translation layer.
 
 ---
 

@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1697 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1858.
+the highest ID present is C1870.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2183,6 +2183,18 @@ C1855	Kernel h-rate gradient (C1206) not detected at body-position level any str
 C1856	Header-body coupling increases with length: MINIMAL mean|rho|=0.070, SHORT 0.078, LONG 0.098. Longer paragraphs = stronger header->body prediction. Consistent with C1795.	2	B, paragraph, header, coupling, C1795	minimal=0.070. short=0.078. long=0.098.
 C1857	HIGH-count folios (9+ pars) more structured: steeper length gradient (rho=-0.247, p=0.033), structured gallows transitions (chi2=37.8, p=1.9e-5), MORE diverse (JSD=0.146 vs LOW 0.119).	2	B, folio, paragraph, organization	high_rho=-0.247. high_chi2=37.8. high_jsd=0.146.
 C1858	Section-specific truncation: within Recipe MINIMAL passes position-matched null (8/11, n=163 vs 44). Recipe MINIMAL = truncated beginnings of Recipe LONG. Pooled failure (C1848) driven by cross-section mismatch.	2	B, paragraph, Recipe, truncation, C1848	S_pass=8of11. S_n=163. B_pass=9of11. H_pass=9of11.
+C1859	PP Jaccard clustering exceeds null (sil=0.057 vs p95=0.014, k=2) but section-dominated (V=0.628). Cluster 1=23P/14H, Cluster 2=74H/3P. Within-H marginal (sil=0.039).	2	A, A↔B, clustering, section, C1706, C1709	sil=0.057. null_p95=0.014. V=0.628.
+C1860	A→B bridge FEATURE-CHANNELED not holistic: Mantel r=0.043 (n.s.) but 18/840 per-feature pairs significant. HEAD identity primary channel (head_e rho=0.675, head_o rho=0.617).	2	A↔B, bridge, mantel, C1706, C1709	mantel_r=0.043. n_sig=18. head_e=0.675.
+C1861	Bridge HEAD redistribution non-random (chi2=115, V=0.675). Dominant A-o→B-k (38/84=45%). Self-transition rate=45.2%.	2	A↔B, bridge, HEAD, C1507	chi2=115. V=0.675. o_to_k=38.
+C1862	Bridge MIDDLEs form 6 functional groups by B-consequence (sil=0.751). HEAD-homogeneous: G1=o(14), G2=e(16), G3=t(6), G4=k(9), G5=headless/a(33), G6=a(6).	2	A↔B, B, bridge, clustering, C1264	sil=0.751. k=6.
+C1863	Restricted-PP density differs by cluster (KW p=0.001). Cluster 1 (P-heavy) 2× denser (0.053 vs 0.026).	2	A, PP, restricted, C1707	kw_p=0.001. ratio=2.05.
+C1864	PREFIX ol_or 3.4× enriched Cluster 1, da enriched Cluster 2 (p=0.010). PREFIX differentiates PP clusters.	2	A, PREFIX, cluster, C1801	ol_or_p=1e-6. da_p=0.010.
+C1865	Folio-level A→B correlations (C1706 rho=0.502, C1709 r=0.42) emergent from aggregation. MIDDLE-level Mantel r=0.043 (n.s.).	2	A↔B, bridge, aggregation, C1706, C1709	folio_r=0.42. middle_r=0.043.
+C1866	RI Jaccard within-cluster > between (ratio=1.116, perm p=0.01) but below 1.2 threshold. Weak operational→identification similarity.	2	A, RI, PP, cluster	ratio=1.116. perm_p=0.01.
+C1867	Bridge carries signal through 4 HEAD channels: e rho=0.675, o rho=0.617, k rho=0.449, a rho=0.456. Cross-HEAD ~0. Parallel pipes.	2	A↔B, bridge, HEAD, channels	head_e=0.675. head_o=0.617. head_k=0.449.
+C1868	Functional groups show HEAD→category specialization: o=OP/MARK/FLOW, e=THERM/TRANS, t=FLOW, k=THERM/STAGE.	2	B, bridge, HEAD, category	g1=OP/MARK. g2=THERM/TRANS. g3=FLOW. g4=THERM/STAGE.
+C1869	Pilot decode cards (5 folios): PP Jaccard distance NOT predicting B operational distance (rho=-0.24, p=0.51). Confirms non-holistic.	2	A↔B, bridge, decode_cards	rho_pp_op=-0.24. p=0.51.
+C1870	BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC verdict: HEAD-typed channels carry signal (P5/P6/P7 pass), holistic fails (P4 r=0.043). 6 PASS, 3 FAIL, 1 INCONCL.	2	A↔B, bridge, verdict	pass=6. fail=3.
 
 ---
 

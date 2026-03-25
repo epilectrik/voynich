@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1857 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1870 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1858.
+the highest ID present is C1870.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1857 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1870 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1857 validated constraints are present as canonical one-line claims with tier
+1870 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-25 13:54
-**Version:** FROZEN STATE (1857 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-25 16:00
+**Version:** FROZEN STATE (1870 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2097,6 +2097,18 @@ C1855	Kernel h-rate declining gradient (C1206) not detected at paragraph body-po
 C1856	Header-body feature coupling increases monotonically with paragraph length: MINIMAL mean|rho|=0.070, SHORT 0.078, LONG 0.098. Longer paragraphs allow more header→body prediction. Consistent with C1795 (dR2=+0.063). Coupling does NOT increase with shortness — short paragraphs are more header-independent	2	B, paragraph, header, coupling, C1795
 C1857	HIGH-count folios (9+ paragraphs) show stronger sequential organization: steeper first-line length gradient, more structured gallows transitions, MORE paragraph diversity (mean within-folio JSD=0.146 vs LOW 0.119). HIGH-count folios are internally heterogeneous recipe collections with strong ordering	2	B, folio, paragraph, organization, gradient
 C1858	Section-specific truncation: within Recipe, MINIMAL paragraphs pass position-matched subsample null (8/11 features, n_real=163, n_synth=44). Recipe MINIMAL specifically resembles truncated beginnings of Recipe LONG. B-section (9/11, n_real=5) and H-section (9/11, n_real=12) show same pattern. Pooled failure (C1848) is driven by cross-section composition mismatch	2	B, paragraph, section, Recipe, truncation, C1848
+C1859	PP Jaccard clustering exceeds permutation null (sil=0.057 vs null p95=0.014, k=2) but is section-dominated (V=0.628). Cluster 1=23P/14H (Pharma-heavy), Cluster 2=74H/3P (Herbal-dominant). Within-H clustering marginal (sil=0.039). PP composition clusters primarily reflect the H/P section boundary	2	A, A↔B, clustering, section, C1706, C1709
+C1860	A→B bridge signal is FEATURE-CHANNELED not holistic: overall Mantel r=0.043 but 18/840 per-feature Spearman pairs significant at Bonferroni p<0.005. HEAD identity is the primary channel. The bridge carries specific feature channels, not diffuse context-to-consequence alignment	2	A↔B, bridge, mantel, feature_channels, C1706, C1709
+C1861	Bridge MIDDLE HEAD redistribution strongly non-random. Dominant pathway: A-o→B-k accounts for 38/84 bridge MIDDLEs (45%). Self-transition rate=45.2%. A-side HEAD predicts B-side HEAD assignment with high fidelity per channel	2	A↔B, bridge, HEAD, redistribution, C1507
+C1862	Bridge MIDDLEs form 6 sharp functional groups by B-consequence (sil=0.751, best ever for internal bridge structure). Groups are HEAD-homogeneous: G1=o-HEAD(14), G2=e-HEAD(16), G3=t-HEAD(6), G4=k-HEAD(9), G5=headless/a(33), G6=a/headless(6). HEAD is the primary differentiator of bridge MIDDLE B-side function	2	A↔B, B, bridge, clustering, functional_groups, C1264, C1500
+C1863	Restricted-PP density (fraction of PP MIDDLEs appearing on ≤2 folios) differs by PP cluster. Cluster 1 (P-heavy) has 2× density (0.053 vs 0.026). Pharma-section folios carry more folio-specific PP vocabulary, consistent with C1707 restricted-PP discrimination	2	A, PP, restricted, cluster, section, C1707
+C1864	PREFIX ol_or is 3.4× enriched in Cluster 1 vs Cluster 2. PREFIX da enriched in Cluster 2. PREFIX qo marginally different. PREFIX composition differentiates PP clusters beyond section assignment, consistent with C1801 (PREFIX as strongest manifold predictor)	2	A, PREFIX, cluster, C1801
+C1865	Folio-level A→B correlations are emergent properties of aggregation. Individual MIDDLE-level Mantel r=0.043 (n.s.). The 10-SD folio-level signal arises from summing many weak per-MIDDLE channels, not from holistic MIDDLE-level alignment	2	A↔B, bridge, aggregation, C1706, C1709
+C1866	RI Jaccard is higher within PP-cluster than between but below the 1.2 threshold. Weak evidence that operational similarity tracks identification similarity. Statistically significant but practically small	2	A, RI, PP, cluster, identification
+C1867	A→B bridge carries signal through 4 independent HEAD channels with channel-specific preservation: head_e rho=0.675, head_o rho=0.617, head_k rho=0.449, head_a rho=0.456. Cross-HEAD prediction is near-zero. The bridge operates as parallel HEAD-typed pipelines, not a unified transformation	2	A↔B, bridge, HEAD, channels, C1507
+C1868	B-side functional groups show HEAD→category specialization: G1(o-HEAD)=OPERATION/MARKING/FLOW, G2(e-HEAD)=THERMAL/OPERATION/TRANSITION, G3(t-HEAD)=FLOW, G4(k-HEAD)=THERMAL/STAGING. HEAD identity constrains operational category assignment in B, extending C1507 redistribution to category-level consequences	2	B, bridge, HEAD, category, functional_groups, C1507
+C1869	5 pilot folio decode cards (f58v, f8r, f58r, f101v2, f101r1) show complete A→bridge→B chains. Cross-folio PP Jaccard distance does NOT predict B-side operational cosine distance or manifold distance. Confirms MIDDLE-level signal is not holistic at pilot scale	2	A↔B, bridge, decode_cards, pilot, C1706
+C1870	BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC verdict: A→B bridge carries operationally meaningful signal through HEAD-typed feature channels (P5/P6/P7 pass strongly) but holistic context→consequence prediction fails. PP clustering section-dominated (V=0.628). Bridge is parallel HEAD-typed pipes, not a single translation layer. 6 PASS, 3 FAIL, 1 INCONCLUSIVE	2	A↔B, bridge, verdict
 
 ---
 

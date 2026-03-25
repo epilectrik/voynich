@@ -1,0 +1,2832 @@
+{
+  "metadata": {
+    "phase": 626,
+    "script": 3,
+    "timestamp": "2026-03-25T15:53:55",
+    "n_pilot_folios": 5,
+    "elapsed_s": 1.0
+  },
+  "T1_pilot_selection": {
+    "folios": [
+      "f58v",
+      "f8r",
+      "f58r",
+      "f101v2",
+      "f101r1"
+    ],
+    "scores": {
+      "f58v": {
+        "n_bridge": 214,
+        "n_b_connected": 59,
+        "cluster": 1,
+        "bridge_middles": [
+          "a",
+          "ai",
+          "aii",
+          "aiin",
+          "ain",
+          "al",
+          "am",
+          "ar",
+          "ckh",
+          "ct",
+          "d",
+          "dy",
+          "e",
+          "ed",
+          "edy",
+          "ee",
+          "eek",
+          "eeo",
+          "eey",
+          "ek",
+          "eo",
+          "et",
+          "ey",
+          "i",
+          "iin",
+          "k",
+          "ka",
+          "kai",
+          "kch",
+          "keeo",
+          "keo",
+          "l",
+          "ly",
+          "m",
+          "o",
+          "ock",
+          "od",
+          "ok",
+          "okc",
+          "ol",
+          "om",
+          "op",
+          "opch",
+          "or",
+          "r",
+          "s",
+          "t",
+          "y"
+        ],
+        "top_b_folios": [
+          [
+            "f104r",
+            64
+          ],
+          [
+            "f108v",
+            63
+          ],
+          [
+            "f86v6",
+            60
+          ],
+          [
+            "f111v",
+            59
+          ],
+          [
+            "f111r",
+            57
+          ]
+        ]
+      },
+      "f8r": {
+        "n_bridge": 78,
+        "n_b_connected": 56,
+        "cluster": 2,
+        "bridge_middles": [
+          "aiin",
+          "al",
+          "ar",
+          "ck",
+          "ckh",
+          "cph",
+          "do",
+          "dy",
+          "e",
+          "eeo",
+          "eey",
+          "ey",
+          "h",
+          "hy",
+          "i",
+          "iin",
+          "in",
+          "k",
+          "l",
+          "lo",
+          "m",
+          "o",
+          "ol",
+          "or",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "y"
+        ],
+        "top_b_folios": [
+          [
+            "f86v6",
+            26
+          ],
+          [
+            "f104v",
+            22
+          ],
+          [
+            "f107r",
+            21
+          ],
+          [
+            "f108v",
+            18
+          ],
+          [
+            "f81v",
+            18
+          ]
+        ]
+      },
+      "f58r": {
+        "n_bridge": 212,
+        "n_b_connected": 72,
+        "cluster": 1,
+        "bridge_middles": [
+          "a",
+          "ai",
+          "aiin",
+          "al",
+          "am",
+          "ar",
+          "ck",
+          "ckh",
+          "cph",
+          "ct",
+          "d",
+          "dy",
+          "e",
+          "edy",
+          "eek",
+          "eey",
+          "ek",
+          "eo",
+          "eol",
+          "ey",
+          "iin",
+          "k",
+          "ka",
+          "l",
+          "ly",
+          "m",
+          "o",
+          "ock",
+          "od",
+          "ok",
+          "ol",
+          "op",
+          "or",
+          "ot",
+          "r",
+          "ry",
+          "s",
+          "t",
+          "y"
+        ],
+        "top_b_folios": [
+          [
+            "f107r",
+            78
+          ],
+          [
+            "f86v6",
+            66
+          ],
+          [
+            "f108v",
+            57
+          ],
+          [
+            "f111v",
+            47
+          ],
+          [
+            "f106v",
+            45
+          ]
+        ]
+      },
+      "f101v2": {
+        "n_bridge": 138,
+        "n_b_connected": 41,
+        "cluster": 1,
+        "bridge_middles": [
+          "aiin",
+          "al",
+          "am",
+          "ar",
+          "ck",
+          "ckh",
+          "d",
+          "do",
+          "dy",
+          "e",
+          "ee",
+          "eeo",
+          "eeol",
+          "eey",
+          "eo",
+          "eol",
+          "ey",
+          "h",
+          "hy",
+          "i",
+          "ii",
+          "iin",
+          "in",
+          "k",
+          "ke",
+          "keo",
+          "l",
+          "o",
+          "od",
+          "ol",
+          "or",
+          "r",
+          "s",
+          "y"
+        ],
+        "top_b_folios": [
+          [
+            "f104v",
+            61
+          ],
+          [
+            "f113r",
+            44
+          ],
+          [
+            "f107v",
+            44
+          ],
+          [
+            "f107r",
+            42
+          ],
+          [
+            "f111v",
+            41
+          ]
+        ]
+      },
+      "f101r1": {
+        "n_bridge": 133,
+        "n_b_connected": 37,
+        "cluster": 1,
+        "bridge_middles": [
+          "aiin",
+          "al",
+          "am",
+          "ckh",
+          "d",
+          "dy",
+          "e",
+          "ee",
+          "eeo",
+          "eeol",
+          "eey",
+          "ek",
+          "eo",
+          "eol",
+          "et",
+          "ey",
+          "iin",
+          "in",
+          "k",
+          "kch",
+          "l",
+          "o",
+          "od",
+          "oiin",
+          "ok",
+          "ol",
+          "or",
+          "r",
+          "s",
+          "t",
+          "y"
+        ],
+        "top_b_folios": [
+          [
+            "f113r",
+            63
+          ],
+          [
+            "f108v",
+            59
+          ],
+          [
+            "f107v",
+            48
+          ],
+          [
+            "f104v",
+            47
+          ],
+          [
+            "f112v",
+            47
+          ]
+        ]
+      }
+    }
+  },
+  "T2_decode_cards": {
+    "f58v": {
+      "a_side": {
+        "n_pp_tokens": 223,
+        "n_unique_pp": 56,
+        "top_pp_with_category": [
+          [
+            "k",
+            27,
+            "THERMAL"
+          ],
+          [
+            "al",
+            20,
+            "FLOW"
+          ],
+          [
+            "ar",
+            14,
+            "FLOW"
+          ],
+          [
+            "l",
+            9,
+            "STAGING"
+          ],
+          [
+            "a",
+            9,
+            "TRANSITION"
+          ],
+          [
+            "or",
+            8,
+            "FLOW"
+          ],
+          [
+            "e",
+            8,
+            "THERMAL"
+          ],
+          [
+            "y",
+            8,
+            "TRANSITION"
+          ],
+          [
+            "ol",
+            8,
+            "STAGING"
+          ],
+          [
+            "t",
+            7,
+            "FLOW"
+          ]
+        ],
+        "n_bridge_middles": 48,
+        "n_ri_middles": 56,
+        "prefix_profile": {
+          "qo": 0.267127,
+          "ch_sh": 0.248541,
+          "ok_ot": 0.185791,
+          "da": 0.088556,
+          "ol_or": 0.042742
+        },
+        "cluster": 1,
+        "section": "H",
+        "material_overlay": {
+          "ANIMAL": 0.067265,
+          "HERB": 0.174888,
+          "NEUTRAL": 0.026906,
+          "MIXED": 0.730942
+        },
+        "category_profile": {
+          "THERMAL": 0.200913,
+          "FLOW": 0.292237,
+          "CONTAINMENT": 0.022831,
+          "STAGING": 0.146119,
+          "OPERATION": 0.068493,
+          "TRANSITION": 0.232877,
+          "MARKING": 0.031963,
+          "MONITORING": 0.004566
+        }
+      },
+      "bridge": {
+        "n_bridge_types": 48,
+        "n_bridge_tokens": 214,
+        "details": [
+          {
+            "middle": "k",
+            "count_in_folio": 27,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "THERMAL",
+            "functional_group": 4,
+            "ri_cooccur": [
+              [
+                "o",
+                10
+              ],
+              [
+                "ol",
+                8
+              ],
+              [
+                "or",
+                7
+              ]
+            ],
+            "b_hazard_frac": 0.382141,
+            "b_lane": {
+              "QO": 1.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "al",
+            "count_in_folio": 20,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                7
+              ],
+              [
+                "o",
+                6
+              ],
+              [
+                "ol",
+                4
+              ]
+            ],
+            "b_hazard_frac": 0.443378,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "ar",
+            "count_in_folio": 14,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                11
+              ],
+              [
+                "o",
+                5
+              ],
+              [
+                "a",
+                5
+              ]
+            ],
+            "b_hazard_frac": 0.465288,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "l",
+            "count_in_folio": 9,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "STAGING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                19
+              ],
+              [
+                "y",
+                13
+              ],
+              [
+                "e",
+                12
+              ]
+            ],
+            "b_hazard_frac": 0.332164,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "a",
+            "count_in_folio": 9,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "TRANSITION",
+            "functional_group": 6,
+            "ri_cooccur": [
+              [
+                "o",
+                4
+              ],
+              [
+                "r",
+                2
+              ],
+              [
+                "eo",
+                2
+              ]
+            ],
+            "b_hazard_frac": 0.375,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "or",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "FLOW",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                25
+              ],
+              [
+                "ol",
+                21
+              ],
+              [
+                "or",
+                19
+              ]
+            ],
+            "b_hazard_frac": 0.470852,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "e",
+            "count_in_folio": 8,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "e",
+                16
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "d",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.404844,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "y",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "TRANSITION",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                26
+              ],
+              [
+                "y",
+                19
+              ],
+              [
+                "e",
+                15
+              ]
+            ],
+            "b_hazard_frac": 0.403509,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "ol",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "STAGING",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                29
+              ],
+              [
+                "e",
+                22
+              ],
+              [
+                "ol",
+                20
+              ]
+            ],
+            "b_hazard_frac": 0.413386,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "t",
+            "count_in_folio": 7,
+            "a_head_dominant": "o",
+            "b_head_dominant": "t",
+            "b_category": "FLOW",
+            "functional_group": 3,
+            "ri_cooccur": [
+              [
+                "o",
+                9
+              ],
+              [
+                "ol",
+                4
+              ],
+              [
+                "y",
+                4
+              ]
+            ],
+            "b_hazard_frac": 0.498264,
+            "b_lane": {
+              "QO": 1.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 0.0
+            }
+          }
+        ]
+      },
+      "b_side": {
+        "n_connected": 59,
+        "top_connections": [
+          {
+            "folio": "f104r",
+            "convergence_count": 64,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2474,
+            "h_ratio": 0.2439,
+            "e_ratio": 0.5087,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.174876,
+            "manifold_PC2": 1.809411
+          },
+          {
+            "folio": "f108v",
+            "convergence_count": 63,
+            "regime": "REGIME_1",
+            "k_ratio": 0.2821,
+            "h_ratio": 0.0547,
+            "e_ratio": 0.6632,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.631681,
+            "manifold_PC2": -0.049978
+          },
+          {
+            "folio": "f86v6",
+            "convergence_count": 60,
+            "regime": "REGIME_2",
+            "k_ratio": 0.4324,
+            "h_ratio": 0.2162,
+            "e_ratio": 0.3514,
+            "kernel_balance": "BALANCED",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 1.185908,
+            "manifold_PC2": -1.196326
+          },
+          {
+            "folio": "f111v",
+            "convergence_count": 59,
+            "regime": "REGIME_1",
+            "k_ratio": 0.3236,
+            "h_ratio": 0.1194,
+            "e_ratio": 0.557,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.055185,
+            "manifold_PC2": -0.967615
+          },
+          {
+            "folio": "f111r",
+            "convergence_count": 57,
+            "regime": "REGIME_1",
+            "k_ratio": 0.2558,
+            "h_ratio": 0.0923,
+            "e_ratio": 0.6519,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.962887,
+            "manifold_PC2": 1.375601
+          }
+        ],
+        "dominant_regime": "REGIME_1"
+      },
+      "synthesis": {
+        "operational_emphasis": "FLOW (29%), TRANSITION (23%), THERMAL (20%)",
+        "bridge_categories": "FLOW:4, THERMAL:2, STAGING:2",
+        "material_overlay_dominant": "MIXED",
+        "dominant_regime": "REGIME_1",
+        "narrative": "Folio f58v specifies operations with emphasis on FLOW (29%), TRANSITION (23%), THERMAL (20%). Its 48 bridge MIDDLEs produce B-side categories FLOW:4, THERMAL:2, STAGING:2. Material overlay (Tier 3): MIXED-dominant. Connected B folios predominantly run REGIME_1."
+      }
+    },
+    "f8r": {
+      "a_side": {
+        "n_pp_tokens": 81,
+        "n_unique_pp": 32,
+        "top_pp_with_category": [
+          [
+            "ol",
+            8,
+            "STAGING"
+          ],
+          [
+            "ey",
+            8,
+            "TRANSITION"
+          ],
+          [
+            "or",
+            7,
+            "FLOW"
+          ],
+          [
+            "y",
+            6,
+            "TRANSITION"
+          ],
+          [
+            "iin",
+            6,
+            "STAGING"
+          ],
+          [
+            "o",
+            4,
+            "OPERATION"
+          ],
+          [
+            "eey",
+            4,
+            "THERMAL"
+          ],
+          [
+            "cph",
+            3,
+            "MONITORING"
+          ],
+          [
+            "al",
+            3,
+            "FLOW"
+          ],
+          [
+            "r",
+            3,
+            "FLOW"
+          ]
+        ],
+        "n_bridge_middles": 29,
+        "n_ri_middles": 33,
+        "prefix_profile": {
+          "qo": 0.010417,
+          "ch_sh": 0.494048,
+          "ok_ot": 0.048958,
+          "da": 0.125595,
+          "ol_or": 0.0
+        },
+        "cluster": 2,
+        "section": "H",
+        "material_overlay": {
+          "ANIMAL": 0.061728,
+          "HERB": 0.160494,
+          "NEUTRAL": 0.0,
+          "MIXED": 0.777778
+        },
+        "category_profile": {
+          "THERMAL": 0.08642,
+          "FLOW": 0.197531,
+          "CONTAINMENT": 0.037037,
+          "STAGING": 0.246914,
+          "OPERATION": 0.08642,
+          "TRANSITION": 0.209877,
+          "MARKING": 0.061728,
+          "MONITORING": 0.074074
+        }
+      },
+      "bridge": {
+        "n_bridge_types": 29,
+        "n_bridge_tokens": 78,
+        "details": [
+          {
+            "middle": "ol",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "STAGING",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                29
+              ],
+              [
+                "e",
+                22
+              ],
+              [
+                "ol",
+                20
+              ]
+            ],
+            "b_hazard_frac": 0.413386,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "ey",
+            "count_in_folio": 8,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "TRANSITION",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "o",
+                23
+              ],
+              [
+                "e",
+                10
+              ],
+              [
+                "or",
+                9
+              ]
+            ],
+            "b_hazard_frac": 0.380202,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "or",
+            "count_in_folio": 7,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "FLOW",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                25
+              ],
+              [
+                "ol",
+                21
+              ],
+              [
+                "or",
+                19
+              ]
+            ],
+            "b_hazard_frac": 0.470852,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "y",
+            "count_in_folio": 6,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "TRANSITION",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                26
+              ],
+              [
+                "y",
+                19
+              ],
+              [
+                "e",
+                15
+              ]
+            ],
+            "b_hazard_frac": 0.403509,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "iin",
+            "count_in_folio": 6,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "STAGING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                27
+              ],
+              [
+                "ol",
+                18
+              ],
+              [
+                "or",
+                16
+              ]
+            ],
+            "b_hazard_frac": 0.398214,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "o",
+            "count_in_folio": 4,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "OPERATION",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                30
+              ],
+              [
+                "ol",
+                15
+              ],
+              [
+                "e",
+                13
+              ]
+            ],
+            "b_hazard_frac": 0.466495,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "eey",
+            "count_in_folio": 4,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "o",
+                13
+              ],
+              [
+                "e",
+                10
+              ],
+              [
+                "eo",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.386646,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "cph",
+            "count_in_folio": 3,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "MONITORING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                4
+              ],
+              [
+                "e",
+                3
+              ],
+              [
+                "cfh",
+                2
+              ]
+            ],
+            "b_hazard_frac": 0.638889,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "al",
+            "count_in_folio": 3,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                7
+              ],
+              [
+                "o",
+                6
+              ],
+              [
+                "ol",
+                4
+              ]
+            ],
+            "b_hazard_frac": 0.443378,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "r",
+            "count_in_folio": 3,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                17
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "ol",
+                12
+              ]
+            ],
+            "b_hazard_frac": 0.429907,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          }
+        ]
+      },
+      "b_side": {
+        "n_connected": 56,
+        "top_connections": [
+          {
+            "folio": "f86v6",
+            "convergence_count": 26,
+            "regime": "REGIME_2",
+            "k_ratio": 0.4324,
+            "h_ratio": 0.2162,
+            "e_ratio": 0.3514,
+            "kernel_balance": "BALANCED",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 1.185908,
+            "manifold_PC2": -1.196326
+          },
+          {
+            "folio": "f104v",
+            "convergence_count": 22,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2099,
+            "h_ratio": 0.2068,
+            "e_ratio": 0.5833,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -1.255518,
+            "manifold_PC2": 0.569107
+          },
+          {
+            "folio": "f107r",
+            "convergence_count": 21,
+            "regime": "REGIME_3",
+            "k_ratio": 0.3347,
+            "h_ratio": 0.1714,
+            "e_ratio": 0.4939,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -1.449419,
+            "manifold_PC2": 1.060435
+          },
+          {
+            "folio": "f108v",
+            "convergence_count": 18,
+            "regime": "REGIME_1",
+            "k_ratio": 0.2821,
+            "h_ratio": 0.0547,
+            "e_ratio": 0.6632,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.631681,
+            "manifold_PC2": -0.049978
+          },
+          {
+            "folio": "f81v",
+            "convergence_count": 18,
+            "regime": "REGIME_1",
+            "k_ratio": 0.3642,
+            "h_ratio": 0.1325,
+            "e_ratio": 0.5033,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 0.0,
+            "manifold_PC2": 0.0
+          }
+        ],
+        "dominant_regime": "REGIME_3"
+      },
+      "synthesis": {
+        "operational_emphasis": "STAGING (25%), TRANSITION (21%), FLOW (20%)",
+        "bridge_categories": "FLOW:3, STAGING:2, TRANSITION:2",
+        "material_overlay_dominant": "MIXED",
+        "dominant_regime": "REGIME_3",
+        "narrative": "Folio f8r specifies operations with emphasis on STAGING (25%), TRANSITION (21%), FLOW (20%). Its 29 bridge MIDDLEs produce B-side categories FLOW:3, STAGING:2, TRANSITION:2. Material overlay (Tier 3): MIXED-dominant. Connected B folios predominantly run REGIME_3."
+      }
+    },
+    "f58r": {
+      "a_side": {
+        "n_pp_tokens": 221,
+        "n_unique_pp": 47,
+        "top_pp_with_category": [
+          [
+            "ar",
+            25,
+            "FLOW"
+          ],
+          [
+            "l",
+            23,
+            "STAGING"
+          ],
+          [
+            "al",
+            21,
+            "FLOW"
+          ],
+          [
+            "e",
+            12,
+            "THERMAL"
+          ],
+          [
+            "k",
+            11,
+            "THERMAL"
+          ],
+          [
+            "r",
+            10,
+            "FLOW"
+          ],
+          [
+            "y",
+            9,
+            "TRANSITION"
+          ],
+          [
+            "ol",
+            9,
+            "STAGING"
+          ],
+          [
+            "a",
+            8,
+            "TRANSITION"
+          ],
+          [
+            "aiin",
+            8,
+            "TRANSITION"
+          ]
+        ],
+        "n_bridge_middles": 39,
+        "n_ri_middles": 102,
+        "prefix_profile": {
+          "qo": 0.107082,
+          "ch_sh": 0.371551,
+          "ok_ot": 0.154396,
+          "da": 0.14188,
+          "ol_or": 0.036325
+        },
+        "cluster": 1,
+        "section": "H",
+        "material_overlay": {
+          "ANIMAL": 0.036199,
+          "HERB": 0.162896,
+          "NEUTRAL": 0.027149,
+          "MIXED": 0.773756
+        },
+        "category_profile": {
+          "THERMAL": 0.15,
+          "FLOW": 0.281818,
+          "CONTAINMENT": 0.068182,
+          "STAGING": 0.2,
+          "OPERATION": 0.045455,
+          "TRANSITION": 0.213636,
+          "MARKING": 0.018182,
+          "MONITORING": 0.022727
+        }
+      },
+      "bridge": {
+        "n_bridge_types": 39,
+        "n_bridge_tokens": 212,
+        "details": [
+          {
+            "middle": "ar",
+            "count_in_folio": 25,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                11
+              ],
+              [
+                "o",
+                5
+              ],
+              [
+                "a",
+                5
+              ]
+            ],
+            "b_hazard_frac": 0.465288,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "l",
+            "count_in_folio": 23,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "STAGING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                19
+              ],
+              [
+                "y",
+                13
+              ],
+              [
+                "e",
+                12
+              ]
+            ],
+            "b_hazard_frac": 0.332164,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "al",
+            "count_in_folio": 21,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                7
+              ],
+              [
+                "o",
+                6
+              ],
+              [
+                "ol",
+                4
+              ]
+            ],
+            "b_hazard_frac": 0.443378,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "e",
+            "count_in_folio": 12,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "e",
+                16
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "d",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.404844,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "k",
+            "count_in_folio": 11,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "THERMAL",
+            "functional_group": 4,
+            "ri_cooccur": [
+              [
+                "o",
+                10
+              ],
+              [
+                "ol",
+                8
+              ],
+              [
+                "or",
+                7
+              ]
+            ],
+            "b_hazard_frac": 0.382141,
+            "b_lane": {
+              "QO": 1.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "r",
+            "count_in_folio": 10,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                17
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "ol",
+                12
+              ]
+            ],
+            "b_hazard_frac": 0.429907,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "y",
+            "count_in_folio": 9,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "TRANSITION",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                26
+              ],
+              [
+                "y",
+                19
+              ],
+              [
+                "e",
+                15
+              ]
+            ],
+            "b_hazard_frac": 0.403509,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "ol",
+            "count_in_folio": 9,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "STAGING",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                29
+              ],
+              [
+                "e",
+                22
+              ],
+              [
+                "ol",
+                20
+              ]
+            ],
+            "b_hazard_frac": 0.413386,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "a",
+            "count_in_folio": 8,
+            "a_head_dominant": "a",
+            "b_head_dominant": "a",
+            "b_category": "TRANSITION",
+            "functional_group": 6,
+            "ri_cooccur": [
+              [
+                "o",
+                4
+              ],
+              [
+                "r",
+                2
+              ],
+              [
+                "eo",
+                2
+              ]
+            ],
+            "b_hazard_frac": 0.375,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "aiin",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "a",
+            "b_category": "TRANSITION",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                11
+              ],
+              [
+                "ol",
+                10
+              ],
+              [
+                "y",
+                6
+              ]
+            ],
+            "b_hazard_frac": 0.479616,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          }
+        ]
+      },
+      "b_side": {
+        "n_connected": 72,
+        "top_connections": [
+          {
+            "folio": "f107r",
+            "convergence_count": 78,
+            "regime": "REGIME_3",
+            "k_ratio": 0.3347,
+            "h_ratio": 0.1714,
+            "e_ratio": 0.4939,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -1.449419,
+            "manifold_PC2": 1.060435
+          },
+          {
+            "folio": "f86v6",
+            "convergence_count": 66,
+            "regime": "REGIME_2",
+            "k_ratio": 0.4324,
+            "h_ratio": 0.2162,
+            "e_ratio": 0.3514,
+            "kernel_balance": "BALANCED",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 1.185908,
+            "manifold_PC2": -1.196326
+          },
+          {
+            "folio": "f108v",
+            "convergence_count": 57,
+            "regime": "REGIME_1",
+            "k_ratio": 0.2821,
+            "h_ratio": 0.0547,
+            "e_ratio": 0.6632,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.631681,
+            "manifold_PC2": -0.049978
+          },
+          {
+            "folio": "f111v",
+            "convergence_count": 47,
+            "regime": "REGIME_1",
+            "k_ratio": 0.3236,
+            "h_ratio": 0.1194,
+            "e_ratio": 0.557,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.055185,
+            "manifold_PC2": -0.967615
+          },
+          {
+            "folio": "f106v",
+            "convergence_count": 45,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2588,
+            "h_ratio": 0.1886,
+            "e_ratio": 0.5526,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.080416,
+            "manifold_PC2": 0.16479
+          }
+        ],
+        "dominant_regime": "REGIME_3"
+      },
+      "synthesis": {
+        "operational_emphasis": "FLOW (28%), TRANSITION (21%), STAGING (20%)",
+        "bridge_categories": "FLOW:3, TRANSITION:3, STAGING:2",
+        "material_overlay_dominant": "MIXED",
+        "dominant_regime": "REGIME_3",
+        "narrative": "Folio f58r specifies operations with emphasis on FLOW (28%), TRANSITION (21%), STAGING (20%). Its 39 bridge MIDDLEs produce B-side categories FLOW:3, TRANSITION:3, STAGING:2. Material overlay (Tier 3): MIXED-dominant. Connected B folios predominantly run REGIME_3."
+      }
+    },
+    "f101v2": {
+      "a_side": {
+        "n_pp_tokens": 141,
+        "n_unique_pp": 37,
+        "top_pp_with_category": [
+          [
+            "or",
+            14,
+            "FLOW"
+          ],
+          [
+            "ol",
+            11,
+            "STAGING"
+          ],
+          [
+            "o",
+            10,
+            "OPERATION"
+          ],
+          [
+            "eey",
+            10,
+            "THERMAL"
+          ],
+          [
+            "eol",
+            10,
+            "THERMAL"
+          ],
+          [
+            "iin",
+            8,
+            "STAGING"
+          ],
+          [
+            "aiin",
+            7,
+            "TRANSITION"
+          ],
+          [
+            "l",
+            6,
+            "STAGING"
+          ],
+          [
+            "e",
+            5,
+            "THERMAL"
+          ],
+          [
+            "k",
+            5,
+            "THERMAL"
+          ]
+        ],
+        "n_bridge_middles": 34,
+        "n_ri_middles": 44,
+        "prefix_profile": {
+          "qo": 0.118414,
+          "ch_sh": 0.384539,
+          "ok_ot": 0.10755,
+          "da": 0.122987,
+          "ol_or": 0.07484
+        },
+        "cluster": 1,
+        "section": "P",
+        "material_overlay": {
+          "ANIMAL": 0.134752,
+          "HERB": 0.156028,
+          "NEUTRAL": 0.0,
+          "MIXED": 0.70922
+        },
+        "category_profile": {
+          "THERMAL": 0.26087,
+          "FLOW": 0.166667,
+          "CONTAINMENT": 0.036232,
+          "STAGING": 0.231884,
+          "OPERATION": 0.094203,
+          "TRANSITION": 0.115942,
+          "MARKING": 0.057971,
+          "MONITORING": 0.036232
+        }
+      },
+      "bridge": {
+        "n_bridge_types": 34,
+        "n_bridge_tokens": 138,
+        "details": [
+          {
+            "middle": "or",
+            "count_in_folio": 14,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "FLOW",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                25
+              ],
+              [
+                "ol",
+                21
+              ],
+              [
+                "or",
+                19
+              ]
+            ],
+            "b_hazard_frac": 0.470852,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "ol",
+            "count_in_folio": 11,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "STAGING",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                29
+              ],
+              [
+                "e",
+                22
+              ],
+              [
+                "ol",
+                20
+              ]
+            ],
+            "b_hazard_frac": 0.413386,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "o",
+            "count_in_folio": 10,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "OPERATION",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                30
+              ],
+              [
+                "ol",
+                15
+              ],
+              [
+                "e",
+                13
+              ]
+            ],
+            "b_hazard_frac": 0.466495,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "eey",
+            "count_in_folio": 10,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "o",
+                13
+              ],
+              [
+                "e",
+                10
+              ],
+              [
+                "eo",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.386646,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "eol",
+            "count_in_folio": 10,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "e",
+                11
+              ],
+              [
+                "o",
+                10
+              ],
+              [
+                "or",
+                6
+              ]
+            ],
+            "b_hazard_frac": 0.431973,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "iin",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "STAGING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                27
+              ],
+              [
+                "ol",
+                18
+              ],
+              [
+                "or",
+                16
+              ]
+            ],
+            "b_hazard_frac": 0.398214,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "aiin",
+            "count_in_folio": 7,
+            "a_head_dominant": "o",
+            "b_head_dominant": "a",
+            "b_category": "TRANSITION",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                11
+              ],
+              [
+                "ol",
+                10
+              ],
+              [
+                "y",
+                6
+              ]
+            ],
+            "b_hazard_frac": 0.479616,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "l",
+            "count_in_folio": 6,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "STAGING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                19
+              ],
+              [
+                "y",
+                13
+              ],
+              [
+                "e",
+                12
+              ]
+            ],
+            "b_hazard_frac": 0.332164,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "e",
+            "count_in_folio": 5,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "e",
+                16
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "d",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.404844,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "k",
+            "count_in_folio": 5,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "THERMAL",
+            "functional_group": 4,
+            "ri_cooccur": [
+              [
+                "o",
+                10
+              ],
+              [
+                "ol",
+                8
+              ],
+              [
+                "or",
+                7
+              ]
+            ],
+            "b_hazard_frac": 0.382141,
+            "b_lane": {
+              "QO": 1.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 0.0
+            }
+          }
+        ]
+      },
+      "b_side": {
+        "n_connected": 41,
+        "top_connections": [
+          {
+            "folio": "f104v",
+            "convergence_count": 61,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2099,
+            "h_ratio": 0.2068,
+            "e_ratio": 0.5833,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -1.255518,
+            "manifold_PC2": 0.569107
+          },
+          {
+            "folio": "f113r",
+            "convergence_count": 44,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2599,
+            "h_ratio": 0.2373,
+            "e_ratio": 0.5028,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 1.067827,
+            "manifold_PC2": -0.49418
+          },
+          {
+            "folio": "f107v",
+            "convergence_count": 44,
+            "regime": "REGIME_1",
+            "k_ratio": 0.4774,
+            "h_ratio": 0.1241,
+            "e_ratio": 0.3985,
+            "kernel_balance": "BALANCED",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 0.97178,
+            "manifold_PC2": -0.939291
+          },
+          {
+            "folio": "f107r",
+            "convergence_count": 42,
+            "regime": "REGIME_3",
+            "k_ratio": 0.3347,
+            "h_ratio": 0.1714,
+            "e_ratio": 0.4939,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -1.449419,
+            "manifold_PC2": 1.060435
+          },
+          {
+            "folio": "f111v",
+            "convergence_count": 41,
+            "regime": "REGIME_1",
+            "k_ratio": 0.3236,
+            "h_ratio": 0.1194,
+            "e_ratio": 0.557,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.055185,
+            "manifold_PC2": -0.967615
+          }
+        ],
+        "dominant_regime": "REGIME_3"
+      },
+      "synthesis": {
+        "operational_emphasis": "THERMAL (26%), STAGING (23%), FLOW (17%)",
+        "bridge_categories": "THERMAL:4, STAGING:3, FLOW:1",
+        "material_overlay_dominant": "MIXED",
+        "dominant_regime": "REGIME_3",
+        "narrative": "Folio f101v2 specifies operations with emphasis on THERMAL (26%), STAGING (23%), FLOW (17%). Its 34 bridge MIDDLEs produce B-side categories THERMAL:4, STAGING:3, FLOW:1. Material overlay (Tier 3): MIXED-dominant. Connected B folios predominantly run REGIME_3."
+      }
+    },
+    "f101r1": {
+      "a_side": {
+        "n_pp_tokens": 138,
+        "n_unique_pp": 36,
+        "top_pp_with_category": [
+          [
+            "eol",
+            16,
+            "THERMAL"
+          ],
+          [
+            "ol",
+            15,
+            "STAGING"
+          ],
+          [
+            "iin",
+            12,
+            "STAGING"
+          ],
+          [
+            "r",
+            9,
+            "FLOW"
+          ],
+          [
+            "o",
+            8,
+            "OPERATION"
+          ],
+          [
+            "ey",
+            7,
+            "TRANSITION"
+          ],
+          [
+            "or",
+            7,
+            "FLOW"
+          ],
+          [
+            "eey",
+            7,
+            "THERMAL"
+          ],
+          [
+            "aiin",
+            7,
+            "TRANSITION"
+          ],
+          [
+            "e",
+            6,
+            "THERMAL"
+          ]
+        ],
+        "n_bridge_middles": 31,
+        "n_ri_middles": 38,
+        "prefix_profile": {
+          "qo": 0.052409,
+          "ch_sh": 0.45937,
+          "ok_ot": 0.188431,
+          "da": 0.107899,
+          "ol_or": 0.031978
+        },
+        "cluster": 1,
+        "section": "P",
+        "material_overlay": {
+          "ANIMAL": 0.15942,
+          "HERB": 0.115942,
+          "NEUTRAL": 0.021739,
+          "MIXED": 0.702899
+        },
+        "category_profile": {
+          "THERMAL": 0.279412,
+          "FLOW": 0.139706,
+          "CONTAINMENT": 0.029412,
+          "STAGING": 0.25,
+          "OPERATION": 0.080882,
+          "TRANSITION": 0.183824,
+          "MARKING": 0.036765,
+          "MONITORING": 0.0
+        }
+      },
+      "bridge": {
+        "n_bridge_types": 31,
+        "n_bridge_tokens": 133,
+        "details": [
+          {
+            "middle": "eol",
+            "count_in_folio": 16,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "e",
+                11
+              ],
+              [
+                "o",
+                10
+              ],
+              [
+                "or",
+                6
+              ]
+            ],
+            "b_hazard_frac": 0.431973,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "ol",
+            "count_in_folio": 15,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "STAGING",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                29
+              ],
+              [
+                "e",
+                22
+              ],
+              [
+                "ol",
+                20
+              ]
+            ],
+            "b_hazard_frac": 0.413386,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "iin",
+            "count_in_folio": 12,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "STAGING",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                27
+              ],
+              [
+                "ol",
+                18
+              ],
+              [
+                "or",
+                16
+              ]
+            ],
+            "b_hazard_frac": 0.398214,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "r",
+            "count_in_folio": 9,
+            "a_head_dominant": "o",
+            "b_head_dominant": "k",
+            "b_category": "FLOW",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "e",
+                17
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "ol",
+                12
+              ]
+            ],
+            "b_hazard_frac": 0.429907,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "o",
+            "count_in_folio": 8,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "OPERATION",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                30
+              ],
+              [
+                "ol",
+                15
+              ],
+              [
+                "e",
+                13
+              ]
+            ],
+            "b_hazard_frac": 0.466495,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "ey",
+            "count_in_folio": 7,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "TRANSITION",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "o",
+                23
+              ],
+              [
+                "e",
+                10
+              ],
+              [
+                "or",
+                9
+              ]
+            ],
+            "b_hazard_frac": 0.380202,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "or",
+            "count_in_folio": 7,
+            "a_head_dominant": "o",
+            "b_head_dominant": "o",
+            "b_category": "FLOW",
+            "functional_group": 1,
+            "ri_cooccur": [
+              [
+                "o",
+                25
+              ],
+              [
+                "ol",
+                21
+              ],
+              [
+                "or",
+                19
+              ]
+            ],
+            "b_hazard_frac": 0.470852,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "eey",
+            "count_in_folio": 7,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "o",
+                13
+              ],
+              [
+                "e",
+                10
+              ],
+              [
+                "eo",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.386646,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          },
+          {
+            "middle": "aiin",
+            "count_in_folio": 7,
+            "a_head_dominant": "o",
+            "b_head_dominant": "a",
+            "b_category": "TRANSITION",
+            "functional_group": 5,
+            "ri_cooccur": [
+              [
+                "o",
+                11
+              ],
+              [
+                "ol",
+                10
+              ],
+              [
+                "y",
+                6
+              ]
+            ],
+            "b_hazard_frac": 0.479616,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 0.0,
+              "NEUTRAL": 1.0
+            }
+          },
+          {
+            "middle": "e",
+            "count_in_folio": 6,
+            "a_head_dominant": "e",
+            "b_head_dominant": "e",
+            "b_category": "THERMAL",
+            "functional_group": 2,
+            "ri_cooccur": [
+              [
+                "e",
+                16
+              ],
+              [
+                "o",
+                15
+              ],
+              [
+                "d",
+                8
+              ]
+            ],
+            "b_hazard_frac": 0.404844,
+            "b_lane": {
+              "QO": 0.0,
+              "CHSH": 1.0,
+              "NEUTRAL": 0.0
+            }
+          }
+        ]
+      },
+      "b_side": {
+        "n_connected": 37,
+        "top_connections": [
+          {
+            "folio": "f113r",
+            "convergence_count": 63,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2599,
+            "h_ratio": 0.2373,
+            "e_ratio": 0.5028,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 1.067827,
+            "manifold_PC2": -0.49418
+          },
+          {
+            "folio": "f108v",
+            "convergence_count": 59,
+            "regime": "REGIME_1",
+            "k_ratio": 0.2821,
+            "h_ratio": 0.0547,
+            "e_ratio": 0.6632,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.631681,
+            "manifold_PC2": -0.049978
+          },
+          {
+            "folio": "f107v",
+            "convergence_count": 48,
+            "regime": "REGIME_1",
+            "k_ratio": 0.4774,
+            "h_ratio": 0.1241,
+            "e_ratio": 0.3985,
+            "kernel_balance": "BALANCED",
+            "material_category": "ANIMAL",
+            "manifold_PC1": 0.97178,
+            "manifold_PC2": -0.939291
+          },
+          {
+            "folio": "f104v",
+            "convergence_count": 47,
+            "regime": "REGIME_3",
+            "k_ratio": 0.2099,
+            "h_ratio": 0.2068,
+            "e_ratio": 0.5833,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -1.255518,
+            "manifold_PC2": 0.569107
+          },
+          {
+            "folio": "f112v",
+            "convergence_count": 47,
+            "regime": "REGIME_1",
+            "k_ratio": 0.2676,
+            "h_ratio": 0.1092,
+            "e_ratio": 0.6232,
+            "kernel_balance": "ESCAPE_DOMINANT",
+            "material_category": "ANIMAL",
+            "manifold_PC1": -0.95585,
+            "manifold_PC2": 2.208688
+          }
+        ],
+        "dominant_regime": "REGIME_1"
+      },
+      "synthesis": {
+        "operational_emphasis": "THERMAL (28%), STAGING (25%), TRANSITION (18%)",
+        "bridge_categories": "THERMAL:3, STAGING:2, FLOW:2",
+        "material_overlay_dominant": "MIXED",
+        "dominant_regime": "REGIME_1",
+        "narrative": "Folio f101r1 specifies operations with emphasis on THERMAL (28%), STAGING (25%), TRANSITION (18%). Its 31 bridge MIDDLEs produce B-side categories THERMAL:3, STAGING:2, FLOW:2. Material overlay (Tier 3): MIXED-dominant. Connected B folios predominantly run REGIME_1."
+      }
+    }
+  },
+  "T3_cross_folio": {
+    "pair_data": [
+      {
+        "folio_i": "f58v",
+        "folio_j": "f8r",
+        "pp_jacc_dist": 0.686567,
+        "ri_jacc_dist": 0.914634,
+        "b_op_cos_dist": 0.000996,
+        "b_manifold_dist": 0.394426
+      },
+      {
+        "folio_i": "f58v",
+        "folio_j": "f58r",
+        "pp_jacc_dist": 0.507246,
+        "ri_jacc_dist": 0.910345,
+        "b_op_cos_dist": 0.000453,
+        "b_manifold_dist": 0.244732
+      },
+      {
+        "folio_i": "f58v",
+        "folio_j": "f101v2",
+        "pp_jacc_dist": 0.632353,
+        "ri_jacc_dist": 0.924731,
+        "b_op_cos_dist": 0.000529,
+        "b_manifold_dist": 0.133333
+      },
+      {
+        "folio_i": "f58v",
+        "folio_j": "f101r1",
+        "pp_jacc_dist": 0.584615,
+        "ri_jacc_dist": 0.91954,
+        "b_op_cos_dist": 0.000431,
+        "b_manifold_dist": 0.407592
+      },
+      {
+        "folio_i": "f8r",
+        "folio_j": "f58r",
+        "pp_jacc_dist": 0.637931,
+        "ri_jacc_dist": 0.937008,
+        "b_op_cos_dist": 0.000391,
+        "b_manifold_dist": 0.227461
+      },
+      {
+        "folio_i": "f8r",
+        "folio_j": "f101v2",
+        "pp_jacc_dist": 0.466667,
+        "ri_jacc_dist": 0.945205,
+        "b_op_cos_dist": 0.0018,
+        "b_manifold_dist": 0.485612
+      },
+      {
+        "folio_i": "f8r",
+        "folio_j": "f101r1",
+        "pp_jacc_dist": 0.612245,
+        "ri_jacc_dist": 0.940299,
+        "b_op_cos_dist": 0.002343,
+        "b_manifold_dist": 0.781297
+      },
+      {
+        "folio_i": "f58r",
+        "folio_j": "f101v2",
+        "pp_jacc_dist": 0.622951,
+        "ri_jacc_dist": 0.918519,
+        "b_op_cos_dist": 0.001704,
+        "b_manifold_dist": 0.35083
+      },
+      {
+        "folio_i": "f58r",
+        "folio_j": "f101r1",
+        "pp_jacc_dist": 0.568966,
+        "ri_jacc_dist": 0.939394,
+        "b_op_cos_dist": 0.001489,
+        "b_manifold_dist": 0.589341
+      },
+      {
+        "folio_i": "f101v2",
+        "folio_j": "f101r1",
+        "pp_jacc_dist": 0.479167,
+        "ri_jacc_dist": 0.891892,
+        "b_op_cos_dist": 0.000635,
+        "b_manifold_dist": 0.336621
+      }
+    ],
+    "rho_pp_op": -0.2364,
+    "p_pp_op": 0.5109,
+    "rho_pp_manifold": -0.3091,
+    "p_pp_manifold": 0.3848,
+    "rho_ri_op": 0.4303,
+    "p_ri_op": 0.2145
+  },
+  "T4_paragraph_shape": {
+    "f58v": {
+      "mean_lines": 7.062706,
+      "median_lines": 4.0,
+      "std_lines": 7.992531,
+      "n_paragraphs": 303
+    },
+    "f8r": {
+      "mean_lines": 7.086806,
+      "median_lines": 4.0,
+      "std_lines": 7.969305,
+      "n_paragraphs": 288
+    },
+    "f58r": {
+      "mean_lines": 6.744505,
+      "median_lines": 4.0,
+      "std_lines": 7.482808,
+      "n_paragraphs": 364
+    },
+    "f101v2": {
+      "mean_lines": 7.227848,
+      "median_lines": 4.0,
+      "std_lines": 8.462799,
+      "n_paragraphs": 237
+    },
+    "f101r1": {
+      "mean_lines": 7.979592,
+      "median_lines": 5.0,
+      "std_lines": 8.862302,
+      "n_paragraphs": 196
+    }
+  },
+  "T5_distinctiveness": {
+    "f58v": {
+      "z_scores": {
+        "k_ratio": -0.077775,
+        "h_ratio": -0.128882,
+        "e_ratio": 0.15838,
+        "thermo_ke": 0.276154,
+        "thermo_kch": -0.028025,
+        "prep_te": 0.117873,
+        "prep_pch": 0.281187,
+        "iteration_rate": 0.247868,
+        "checkpoint_rate": 0.365567,
+        "terminal_rate": -0.530111
+      },
+      "top_3": [
+        [
+          "terminal_rate",
+          -0.53
+        ],
+        [
+          "checkpoint_rate",
+          0.366
+        ],
+        [
+          "prep_pch",
+          0.281
+        ]
+      ]
+    },
+    "f8r": {
+      "z_scores": {
+        "k_ratio": -0.038236,
+        "h_ratio": 0.029987,
+        "e_ratio": 0.020999,
+        "thermo_ke": 0.019134,
+        "thermo_kch": 0.092615,
+        "prep_te": 0.113817,
+        "prep_pch": 0.209751,
+        "iteration_rate": 0.153294,
+        "checkpoint_rate": 0.214179,
+        "terminal_rate": -0.305223
+      },
+      "top_3": [
+        [
+          "terminal_rate",
+          -0.305
+        ],
+        [
+          "checkpoint_rate",
+          0.214
+        ],
+        [
+          "prep_pch",
+          0.21
+        ]
+      ]
+    },
+    "f58r": {
+      "z_scores": {
+        "k_ratio": 0.042551,
+        "h_ratio": -0.170854,
+        "e_ratio": 0.06037,
+        "thermo_ke": 0.185493,
+        "thermo_kch": -0.065912,
+        "prep_te": 0.022378,
+        "prep_pch": 0.108812,
+        "iteration_rate": 0.129315,
+        "checkpoint_rate": 0.254701,
+        "terminal_rate": -0.419274
+      },
+      "top_3": [
+        [
+          "terminal_rate",
+          -0.419
+        ],
+        [
+          "checkpoint_rate",
+          0.255
+        ],
+        [
+          "thermo_ke",
+          0.185
+        ]
+      ]
+    },
+    "f101v2": {
+      "z_scores": {
+        "k_ratio": -0.249946,
+        "h_ratio": 0.087223,
+        "e_ratio": 0.203549,
+        "thermo_ke": 0.160461,
+        "thermo_kch": 0.196647,
+        "prep_te": 0.153502,
+        "prep_pch": 0.399211,
+        "iteration_rate": 0.078038,
+        "checkpoint_rate": 0.418705,
+        "terminal_rate": -0.570762
+      },
+      "top_3": [
+        [
+          "terminal_rate",
+          -0.571
+        ],
+        [
+          "checkpoint_rate",
+          0.419
+        ],
+        [
+          "prep_pch",
+          0.399
+        ]
+      ]
+    },
+    "f101r1": {
+      "z_scores": {
+        "k_ratio": -0.167464,
+        "h_ratio": -0.24578,
+        "e_ratio": 0.321726,
+        "thermo_ke": 0.346682,
+        "thermo_kch": 0.025788,
+        "prep_te": 0.258634,
+        "prep_pch": 0.294247,
+        "iteration_rate": 0.155613,
+        "checkpoint_rate": 0.330686,
+        "terminal_rate": -0.609623
+      },
+      "top_3": [
+        [
+          "terminal_rate",
+          -0.61
+        ],
+        [
+          "thermo_ke",
+          0.347
+        ],
+        [
+          "checkpoint_rate",
+          0.331
+        ]
+      ]
+    }
+  }
+}
