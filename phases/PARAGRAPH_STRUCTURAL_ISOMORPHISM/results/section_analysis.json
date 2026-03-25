@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "timestamp": "2026-03-25T15:26:16.828024+00:00",
+    "n_eligible": 75,
+    "n_short": 94,
+    "pass_a_k": 2,
+    "pass_b_k": 2
+  },
+  "section_contingency": {
+    "table": {
+      "0": {
+        "B": 18,
+        "H": 5,
+        "S": 3
+      },
+      "1": {
+        "B": 29,
+        "H": 8,
+        "S": 12
+      }
+    },
+    "chi_squared": 1.780929,
+    "df": 2,
+    "p_value": 0.543611,
+    "cramers_v": 0.154096,
+    "per_section_distributions": {
+      "B": {
+        "0": 0.382979,
+        "1": 0.617021
+      },
+      "H": {
+        "0": 0.384615,
+        "1": 0.615385
+      },
+      "S": {
+        "0": 0.2,
+        "1": 0.8
+      }
+    }
+  },
+  "per_section_clustering": {
+    "B": {
+      "n_eligible": 47,
+      "optimal_k": 2,
+      "silhouette": 0.098182,
+      "pca_dims": 16,
+      "bootstrap_mean_ari": 0.403983,
+      "stable": false,
+      "diversity_entropy": 0.983939,
+      "silhouette_curve": {
+        "2": 0.098182,
+        "3": 0.094215,
+        "4": 0.077934,
+        "5": 0.085325,
+        "6": 0.087212,
+        "7": 0.076378,
+        "8": 0.070984
+      }
+    },
+    "SMALL_SECTIONS": {
+      "H": {
+        "n_eligible": 13,
+        "mean_arc": [
+          -0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "arc_variance": [
+          1.365737,
+          0.429035,
+          0.66383,
+          0.866537,
+          0.985806,
+          1.317528,
+          1.413083,
+          3.33828,
+          0.79382,
+          1.571028,
+          1.226309,
+          0.685962,
+          0.792591,
+          0.401009,
+          0.74151,
+          0.75922,
+          1.890499,
+          1.215829,
+          0.849315,
+          0.05872,
+          1.341522,
+          0.884375,
+          1.648956,
+          0.946798,
+          1.079248,
+          0.739864,
+          0.96504
+        ]
+      },
+      "S": {
+        "n_eligible": 15,
+        "mean_arc": [
+          0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          0.0,
+          0.0,
+          -0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "arc_variance": [
+          1.17887,
+          0.609022,
+          0.896271,
+          0.667817,
+          0.435785,
+          0.989835,
+          0.438444,
+          0.608314,
+          0.505536,
+          0.664113,
+          0.255245,
+          0.75214,
+          0.486372,
+          0.594651,
+          0.486359,
+          0.385364,
+          1.012049,
+          0.463482,
+          1.079095,
+          1.041986,
+          1.345696,
+          1.96162,
+          0.773221,
+          1.258265,
+          1.45374,
+          3.901155,
+          0.622859
+        ]
+      }
+    }
+  },
+  "grammar_temp_correlation": {
+    "section": "B",
+    "n_folios": 18,
+    "spearman_rho": 0.190918,
+    "direction": "positive",
+    "note": "low power"
+  },
+  "cross_section_portability": {
+    "training_section": "B",
+    "training_k": 2,
+    "test_sections": {
+      "H": {
+        "n_projected": 13,
+        "ari_vs_independent": null
+      },
+      "S": {
+        "n_projected": 15,
+        "ari_vs_independent": null
+      }
+    }
+  },
+  "anti_parallel_universality": {
+    "per_template_cosine": {
+      "0": 0.995891,
+      "1": 0.994689
+    },
+    "fraction_anti_parallel": 0.0,
+    "threshold": -0.3
+  },
+  "header_validation": {
+    "full_header_accuracy": 0.56,
+    "gallows_only_accuracy": 0.626667,
+    "chance_level": 0.5,
+    "full_header_p_value": 0.3,
+    "full_beats_chance": true,
+    "full_beats_gallows": false,
+    "n_headers": 75
+  },
+  "short_paragraph_matching": {
+    "n_short": 94,
+    "distribution": {
+      "template_0": 94
+    },
+    "chi_squared": 94.0,
+    "uniform_p_value": 0.0
+  },
+  "template_ordering": {
+    "transition_matrix": {
+      "0->0": 8,
+      "0->1": 2,
+      "1->0": 3,
+      "1->1": 4
+    },
+    "chi_squared": 2.487446,
+    "df": 1,
+    "p_value": 0.14645,
+    "n_transitions": 17,
+    "ordering_exists": false
+  }
+}

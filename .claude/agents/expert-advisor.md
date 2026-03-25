@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1838 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1846 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1839.
+the highest ID present is C1847.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1838 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1846 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1838 validated constraints are present as canonical one-line claims with tier
+1846 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-24 23:28
-**Version:** FROZEN STATE (1838 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-25 10:30
+**Version:** FROZEN STATE (1846 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2078,6 +2078,14 @@ C1836	Partial complexity gradient: 3/9 features show genuine body-position gradi
 C1837	Anti-parallel boundary divergence: first-line and last-line divergence vectors from interior have cosine=-0.989. Last-line enriched in length, PREFIX JSD, and category entropy. First-line shows no significant enrichment at Bonferroni alpha. Boundaries are distinctive in OPPOSITE directions. Extends C1729 to channel-resolved decomposition	2	B, boundary, paragraph, first_line, last_line, C1729
 C1838	Grammar temperature section-stratified: T_composite mean=1.926 (range 1.479-2.439). Section B=2.063, H=1.806, S=1.972. Raw quire correlation rho=0.352 disappears after section residualization. Grammar compliance is section-determined, not quire-ordered. NOT pre-crystallized (section variance significant)	2	B, grammar_temperature, section, compliance, C1360, C1440
 C1839	Consecutive folio coherence without global ordering: Mantel test significant but PCA PC1 vs quire null. Section-residualized maturity vectors show local coherence within quires but no global compositional gradient. Consistent with C1399/C1400 independence at global scale, new finding of local coherence	2	B, folio, quire, coherence, Mantel, PCA, C1399, C1400
+C1840	B paragraph arc signatures form a CONTINUOUS_MANIFOLD: section-residualized silhouette peaks at 0.075 (k=2), far below 0.15 threshold. No discrete template types exist in the 27-dim arc feature space (9 features x 3 boundary-aware bins). 75 eligible paragraphs (>=6 body lines) from 528 total (85.8% exclusion). Falsifies the hypothesis that paragraphs collapse into a small template library	2	B, paragraph, clustering, arc_templates
+C1841	Bin permutation IMPROVES clustering (null/real silhouette ratio=3.49): the universal OPEN->INTERIOR->CLOSE gradient spreads paragraphs across feature space rather than concentrating them into types. Pool shuffle (N1, ratio=1.79) and within-folio shuffle (N4, ratio=1.77) also inverted. The positional arc is a shared grammar property, not a paragraph differentiator	2	B, paragraph, positional, null_model, C1836, C1729
+C1842	OPEN and CLOSE bins show positive cosine similarity (0.967) across 9 compositional features (log_ke, h_rate, headless, mode_a, opacity, cat_entropy, line_length, m_term, dark_frac). Unlike C1837's anti-parallel finding (cosine=-0.989) at atom enrichment level, compositional features yield similar boundary profiles. Anti-parallel structure operates below arc feature grain	2	B, paragraph, boundary, C1837
+C1843	REGIME does not mediate paragraph arc shape: REGIME-template ARI=0.004, Cramer's V=0.065. Despite REGIME driving PREFIX (C1404, R2=0.736), this does not produce arc template types. REGIME parameterization affects token-level composition but not paragraph-level trajectory shape	2	B, paragraph, REGIME, C1404, C1405
+C1844	Arc templates orthogonal to C853 static taxonomy: ARI(arc_clusters, C853_k5)=0.035. Dynamic positional arc features provide no clustering value beyond C853's static features (line count, HT delta, EN rate). Paragraph variation is continuous on both static and dynamic axes	2	B, paragraph, clustering, C853
+C1845	Section weakly affects raw arc clustering: Cramer's V=0.154 for Pass A (raw, non-residualized). Unlike most structural features where section is the dominant axis, arc shape is minimally section-determined. Consistent with the universal grammar arc being shared across sections	2	B, paragraph, section, C1838
+C1846	Within Herbal, paragraph arc clustering is unstable: bootstrap ARI=0.40 (below 0.50 stability threshold). Even the largest section produces no robust within-section template structure. Per-section template diversity entropy=0.984	2	B, H-section, paragraph, bootstrap
+C1847	Header features do not predict arc template above chance: LOO accuracy=0.56 vs chance=0.50. Gallows type alone (0.63) outperforms full header features. Templates lack specification-level reality, confirming arc shape is not header-determined. Template ordering within folios is null, consistent with C1399	2	B, paragraph, header, gallows, C1399, C1795
 
 ---
 
@@ -2085,7 +2093,7 @@ C1839	Consecutive folio coherence without global ordering: Mantel test significa
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-24
+# Generated: 2026-03-25
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

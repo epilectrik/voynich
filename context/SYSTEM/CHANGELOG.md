@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.96 (2026-03-25) - Phase 624: Paragraph Structural Isomorphism
+
+### Summary
+
+Phase 624 tests whether B paragraphs collapse into a small number of structural arc templates — defined by how 9 compositional features (log_ke_ratio, h_rate, headless_rate, mode_a_frac, mean_opacity, cat_entropy, mean_line_length, m_terminal_rate, dark_frac) evolve across boundary-aware bins (OPEN/INTERIOR/CLOSE per C1729). Two-pass Ward clustering (raw diagnostic + section-residualized primary), five null models (bin permutation, pool shuffle, folio mediation, length-matched, within-folio shuffle), REGIME confound test, header validation, and per-section analysis. Key result: **CONTINUOUS_MANIFOLD** — silhouette peaks at 0.075 (k=2), far below 0.15 threshold. Bin permutation IMPROVES clustering (ratio=3.49), revealing the paragraph arc is universal and shared, not discriminative. 8 constraints registered (C1840-C1847).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_STRUCTURAL_ISOMORPHISM/` -- Phase 624 with 3 scripts, shared module, JSON results, INDEX.md |
+| **ADDED** | C1840: CONTINUOUS_MANIFOLD verdict (sil=0.075, R2=0.063, 75 eligible paragraphs) |
+| **ADDED** | C1841: Bin permutation inverted (N0 ratio=3.49, N1=1.79, N4=1.77 — all improve clustering) |
+| **ADDED** | C1842: OPEN-CLOSE positive cosine (0.967) — anti-parallel operates below arc feature grain |
+| **ADDED** | C1843: REGIME does not mediate arc shape (ARI=0.004) |
+| **ADDED** | C1844: Arc templates orthogonal to C853 static taxonomy (ARI=0.035) |
+| **ADDED** | C1845: Section weakly affects arc shape (Cramer's V=0.154, chi2 p=0.54) |
+| **ADDED** | C1846: Herbal within-section clustering unstable (bootstrap ARI=0.40) |
+| **ADDED** | C1847: Headers don't predict templates (LOO=0.56, p=0.30; gallows outperforms full header) |
+| **UPDATED** | INDEX.md -- +8 constraints (1846 total), Phase 624 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.96, 1846 constraints, 624 phases) |
+
+### Key Findings
+
+- **No discrete templates (C1840):** Section-residualized silhouette peaks at only 0.075 with k=2. No k from 2-12 exceeds even 0.08. Ward-KMeans ARI=0.002 confirms no robust cluster structure. 6% variance explained.
+- **Universal arc, not discriminative types (C1841):** The most informative finding — bin permutation produces 3.5x HIGHER silhouette than real data. The OPEN→INTERIOR→CLOSE gradient is shared by all paragraphs and SPREADS them across feature space. Disrupting the positional assignment makes paragraphs MORE separable because the universal gradient adds noise to clustering.
+- **Compositional anti-parallelism absent (C1842):** The 9 arc features show SIMILAR profiles at boundaries (cosine=0.967), unlike C1837's anti-parallel atom enrichment (cosine=-0.989). The anti-parallel boundary structure operates at finer grain than these compositional features capture.
+- **REGIME independence (C1843):** Despite REGIME dominating PREFIX at token level (C1404), this does not propagate to paragraph trajectory types. The universal arc absorbs REGIME variation.
+- **Implications:** Paragraphs are truly continuous in their operational variation. The grammar provides a single universal arc template that all paragraphs instantiate with continuous parameter variation, not categorical program types. This strengthens the PARALLEL_PROGRAMS model (C855): paragraphs differ in vocabulary and parameters but follow the same structural skeleton.
+
+---
+
 ## Version 5.95 (2026-03-24) - Phase 623: Line-Level Sequential Architecture
 
 ### Summary

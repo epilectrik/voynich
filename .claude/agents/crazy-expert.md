@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1686 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1839.
+the highest ID present is C1847.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2164,6 +2164,14 @@ C1836	Partial complexity gradient: 3/9 survive length control. mod_entropy rho=-
 C1837	Anti-parallel boundary divergence: first/last body line cosine=-0.989. Last enriched (length, PREFIX JSD, cat entropy). First: none significant. Extends C1729.	2	B, boundary, paragraph, C1729	cosine=-0.989. last_sig=3. first_sig=0.
 C1838	Grammar temperature section-stratified: T mean=1.926. B=2.063, H=1.806. Quire correlation vanishes after section residualization (0.352->0.065).	2	B, grammar_temperature, section, C1360, C1440	T=1.926. B=2.063. H=1.806. raw_rho=0.352. resid_rho=0.065.
 C1839	Consecutive folio coherence without global ordering: Mantel r=0.126 (p<0.001) but PC1 vs quire null (rho=0.100, p=0.388). Local quire coherence, no maturity gradient.	2	B, folio, quire, coherence, Mantel, PCA, C1399, C1400	mantel_r=0.126. pc1_rho=0.100. pc1_p=0.388.
+C1840	CONTINUOUS_MANIFOLD: B paragraph arc signatures (9 features x 3 bins = 27-dim) form continuous cloud. Section-residualized silhouette=0.075 at k=2, far below 0.15 threshold. No discrete template types. R2=0.063. 75 eligible paragraphs (>=6 body lines, 85.8% exclusion).	2	B, paragraph, clustering, arc_templates	sil=0.075. k=2. R2=0.063. n=75. exclusion=0.858.
+C1841	Bin permutation IMPROVES clustering: N0 ratio=3.49, N1 pool_shuffle=1.79, N4 within_folio=1.77. Universal OPEN->INTERIOR->CLOSE gradient SPREADS paragraphs in feature space. The arc is shared grammar property, not paragraph differentiator.	2	B, paragraph, positional, null_model, C1836, C1729	N0_ratio=3.49. N1=1.79. N4=1.77. all_inverted=true.
+C1842	OPEN-CLOSE bins show positive cosine (0.967) across 9 compositional features. Unlike C1837 anti-parallel (cosine=-0.989) at atom enrichment level. Anti-parallel structure operates below arc feature grain.	2	B, paragraph, boundary, C1837	cosine=0.967. std=0.042. n=75.
+C1843	REGIME does not mediate paragraph arc shape: ARI=0.004, V=0.065. Despite REGIME driving PREFIX (C1404), this does not produce arc template types.	2	B, paragraph, REGIME, C1404, C1405	ari=0.004. cramers_v=0.065.
+C1844	Arc templates orthogonal to C853 static taxonomy: ARI=0.035. Dynamic arc features add no clustering value beyond static features.	2	B, paragraph, clustering, C853	ari=0.035. c853_sil=0.237. arc_sil=0.075.
+C1845	Section weakly affects raw arc clustering: V=0.154, chi2 p=0.54. Arc shape minimally section-determined, unlike most structural features.	2	B, paragraph, section, C1838	cramers_v=0.154. chi2_p=0.54. pass_a_sil=0.076.
+C1846	Within Herbal (N=47), paragraph arc clustering unstable: bootstrap ARI=0.40 (below 0.50 threshold). No robust within-section template structure.	2	B, H-section, paragraph, bootstrap	n=47. bootstrap_ari=0.40. sil=0.098.
+C1847	Header features don't predict arc template above chance: LOO=0.56, p=0.30. Gallows alone (0.63) outperforms full header. Template ordering null (p=0.146) consistent with C1399.	2	B, paragraph, header, gallows, C1399	header_acc=0.56. perm_p=0.30. gallows_acc=0.63. ordering_p=0.146.
 
 ---
 

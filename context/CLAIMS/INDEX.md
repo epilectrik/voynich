@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1838 validated constraints | **Version:** 5.95 | **Date:** 2026-03-24
+**Total:** 1846 validated constraints | **Version:** 5.96 | **Date:** 2026-03-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,29 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 624: Paragraph Structural Isomorphism — CONTINUOUS_MANIFOLD (C1840-C1847)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1840 | B paragraph arc signatures form a CONTINUOUS_MANIFOLD: section-residualized silhouette peaks at 0.075 (k=2), far below 0.15 threshold. No discrete template types exist in the 27-dim arc feature space (9 features x 3 boundary-aware bins). 75 eligible paragraphs (>=6 body lines) from 528 total (85.8% exclusion). Falsifies the hypothesis that paragraphs collapse into a small template library | 2 | B, paragraph, clustering, arc_templates | sil_best=0.075. optimal_k=2. R2=0.063. ward_kmeans_ari=0.002. n_eligible=75. exclusion=0.858. verdict=CONTINUOUS_MANIFOLD. |
+| 1841 | Bin permutation IMPROVES clustering (null/real silhouette ratio=3.49): the universal OPEN->INTERIOR->CLOSE gradient spreads paragraphs across feature space rather than concentrating them into types. Pool shuffle (N1, ratio=1.79) and within-folio shuffle (N4, ratio=1.77) also inverted. The positional arc is a shared grammar property, not a paragraph differentiator | 2 | B, paragraph, positional, null_model, C1836, C1729 | N0_ratio=3.49. N1_ratio=1.79. N4_ratio=1.77. N3_ratio=1.11. all_inverted=true. |
+| 1842 | OPEN and CLOSE bins show positive cosine similarity (0.967) across 9 compositional features (log_ke, h_rate, headless, mode_a, opacity, cat_entropy, line_length, m_term, dark_frac). Unlike C1837's anti-parallel finding (cosine=-0.989) at atom enrichment level, compositional features yield similar boundary profiles. Anti-parallel structure operates below arc feature grain | 2 | B, paragraph, boundary, C1837 | open_close_cosine=0.967. open_close_std=0.042. n=75. |
+| 1843 | REGIME does not mediate paragraph arc shape: REGIME-template ARI=0.004, Cramer's V=0.065. Despite REGIME driving PREFIX (C1404, R2=0.736), this does not produce arc template types. REGIME parameterization affects token-level composition but not paragraph-level trajectory shape | 2 | B, paragraph, REGIME, C1404, C1405 | regime_ari=0.004. cramers_v=0.065. |
+| 1844 | Arc templates orthogonal to C853 static taxonomy: ARI(arc_clusters, C853_k5)=0.035. Dynamic positional arc features provide no clustering value beyond C853's static features (line count, HT delta, EN rate). Paragraph variation is continuous on both static and dynamic axes | 2 | B, paragraph, clustering, C853 | ari_c853=0.035. c853_sil=0.237. arc_sil=0.075. |
+| 1845 | Section weakly affects raw arc clustering: Cramer's V=0.154 (chi2 p=0.54) for Pass A (raw, non-residualized). Unlike most structural features where section is the dominant axis, arc shape is minimally section-determined. Consistent with the universal grammar arc being shared across sections | 2 | B, paragraph, section, C1838 | cramers_v=0.154. chi2_p=0.54. pass_a_sil=0.076. |
+| 1846 | Within Herbal (N=47), paragraph arc clustering is unstable: bootstrap ARI=0.40 (below 0.50 stability threshold). Even the largest section produces no robust within-section template structure. Per-section template diversity entropy=0.984 | 2 | B, H-section, paragraph, bootstrap | herbal_n=47. bootstrap_ari=0.40. herbal_sil=0.098. diversity_entropy=0.984. |
+| 1847 | Header features do not predict arc template above chance: LOO accuracy=0.56 vs chance=0.50 (p=0.30, 200 permutations). Gallows type alone (0.63) outperforms full header features. Templates lack specification-level reality, confirming arc shape is not header-determined. Template ordering within folios is null (chi2 p=0.146), consistent with C1399 | 2 | B, paragraph, header, gallows, C1399, C1795 | header_acc=0.56. chance=0.50. perm_p=0.30. gallows_acc=0.63. ordering_p=0.146. |
+
+**Phase 624 findings (Paragraph Structural Isomorphism, CONTINUOUS_MANIFOLD):**
+- B paragraphs do NOT collapse into discrete structural arc templates. The 27-dim arc signature space (9 compositional features x 3 boundary-aware bins: OPEN/INTERIOR/CLOSE) yields section-residualized silhouette of only 0.075 at k=2, far below the 0.15 threshold for even weak templates.
+- The most informative finding is the INVERTED null model result (C1841): bin permutation produces 3.5x HIGHER silhouette than real data. The universal OPEN→INTERIOR→CLOSE gradient is shared across all paragraphs and SPREADS them in feature space rather than concentrating them into types. This means there is ONE universal paragraph arc, and deviations from it are continuous rather than categorical.
+- Compositional features show POSITIVE cosine (0.967) between OPEN and CLOSE bins (C1842), unlike C1837's anti-parallel result (cosine=-0.989) at atom enrichment level. The anti-parallel boundary pattern operates at finer structural grain than these 9 features capture.
+- REGIME does not produce arc types (C1843): despite REGIME dominating PREFIX composition (C1404), this token-level parameterization does not propagate to paragraph-level trajectory shape. Section also barely affects arc shape (C1845, V=0.154).
+- The finding applies to the long-paragraph population (≥6 body lines, 14.2% of B paragraphs). High exclusion rate (85.8%) reflects the preponderance of short paragraphs in B.
+- Predictions: 3/9 PASS (P5 direction weak, P6 trivially passes, P9 ordering null confirmed). 6/9 FAIL (no discrete templates, inverted null models, no anti-parallel in these features, no header prediction).
 
 ---
 
