@@ -4,6 +4,42 @@
 
 ---
 
+## Version 5.97 (2026-03-25) - Phase 625: Short Paragraph Architecture
+
+### Summary
+
+Phase 625 characterizes the 85.8% of B paragraphs excluded from Phase 624 (those with 0-4 body lines). Four strata tested: HEADER_ONLY (0 body, N=90), MINIMAL (1-2 body, N=183), SHORT (3-4 body, N=143), LONG (5+ body, N=112). Three scripts: census/profiling, architecture scaling (subsample nulls, minimum viable paragraph, kernel gradient), and between-paragraph organization (HEADER_ONLY punctuation, spec/exec ratio, folio-level structure). Three-level section confound control (pooled, section-residualized, within-Recipe) plus golden folio test (48 folios). Key result: **SECTION_CONFOUNDED_WITH_LENGTH_RESIDUAL** — most stratum differences are section artifacts (8-10/11 features invariant after control). Three length-mechanical features survive. Within-section, MINIMAL paragraphs resemble truncated beginnings. 11 constraints registered (C1848-C1858). Prediction scorecard: 3 PASS, 2 PARTIAL, 5 FAIL.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SHORT_PARAGRAPH_ARCHITECTURE/` -- Phase 625 with 3 scripts, shared module, JSON results, INDEX.md |
+| **ADDED** | C1848: Short paragraphs DISTINCT from truncated long at pooled level (4/11 features pass subsample null) |
+| **ADDED** | C1849: Section dominates stratum variance (V=0.468, 8/11 invariant after residualization) |
+| **ADDED** | C1850: Three length-residual features survive section control (cat_entropy, tokens_per_line, m_terminal_rate) |
+| **ADDED** | C1851: Zone classification stratum-independent (V=0.098, p=0.206) |
+| **ADDED** | C1852: HEADER_ONLY non-gallows-initial (87.8% no gallows, k-enriched, o-depleted) |
+| **ADDED** | C1853: HEADER_ONLY independence after section control (0/11 significant within Recipe) |
+| **ADDED** | C1854: No anti-parallel arc in category feature space (cosine=+0.999 all strata) |
+| **ADDED** | C1855: Kernel gradient absent all strata (SHORT p=0.086, LONG p=0.278) |
+| **ADDED** | C1856: Header-body coupling increases with length (MINIMAL 0.070, LONG 0.098) |
+| **ADDED** | C1857: HIGH-count folios more structured (steeper gradient, structured gallows, more diverse) |
+| **ADDED** | C1858: Section-specific truncation (within-S MINIMAL passes 8/11 position-matched) |
+| **UPDATED** | INDEX.md -- +11 constraints (1857 total), Phase 625 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.97, 1857 constraints, 625 phases) |
+
+### Key Findings
+
+- **Section explains almost everything (C1849):** The dramatic stratum skew (Recipe 89% of MINIMAL, Herbal/Bio 80% of LONG) creates massive apparent differences that vanish with section control. After residualization, 8/11 features are invariant between SHORT and LONG. Within Recipe: 10/11 invariant. This is the single most important finding.
+- **Within-section truncation (C1858):** The pooled DISTINCT verdict (C1848) is misleading. Within each section, MINIMAL paragraphs pass the position-matched subsample null. Recipe MINIMAL (163 paragraphs) matches first-1-2-lines of Recipe LONG on 8/11 features. The cross-section mismatch drives pooled failure.
+- **Three length-mechanical survivors (C1850):** cat_entropy (d=-0.54), tokens_per_line (d=0.34), and m_terminal_rate (d=-0.25) survive all confound controls. These reflect mathematical consequences of shorter text (reduced diversity, different line packing), not distinct operational modes.
+- **HEADER_ONLY are NOT gallows declarations (C1852):** 87.8% non-gallows-initial reverses the prediction from C1780/C1784. HEADER_ONLY show k-enrichment and o-depletion but do not create downstream dependencies (C1853).
+- **No anti-parallel arc at category level (C1854):** Cosine ≈ +0.999 between first/last body lines at all strata. C1837's -0.989 cosine operates at finer atom-enrichment grain. Category-level features are too coarse to capture boundary anti-parallelism.
+- **Implications:** Short paragraphs (85.8% of B) are section-determined compressed versions of the same grammar long paragraphs use. The grammar scales down without modal change — shorter sections simply produce shorter paragraphs. This completes the characterization begun in Phase 624: one universal continuous arc, scaled by section context.
+
+---
+
 ## Version 5.96 (2026-03-25) - Phase 624: Paragraph Structural Isomorphism
 
 ### Summary

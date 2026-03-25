@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1686 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1697 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1847.
+the highest ID present is C1858.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2172,6 +2172,17 @@ C1844	Arc templates orthogonal to C853 static taxonomy: ARI=0.035. Dynamic arc f
 C1845	Section weakly affects raw arc clustering: V=0.154, chi2 p=0.54. Arc shape minimally section-determined, unlike most structural features.	2	B, paragraph, section, C1838	cramers_v=0.154. chi2_p=0.54. pass_a_sil=0.076.
 C1846	Within Herbal (N=47), paragraph arc clustering unstable: bootstrap ARI=0.40 (below 0.50 threshold). No robust within-section template structure.	2	B, H-section, paragraph, bootstrap	n=47. bootstrap_ari=0.40. sil=0.098.
 C1847	Header features don't predict arc template above chance: LOO=0.56, p=0.30. Gallows alone (0.63) outperforms full header. Template ordering null (p=0.146) consistent with C1399.	2	B, paragraph, header, gallows, C1399	header_acc=0.56. perm_p=0.30. gallows_acc=0.63. ordering_p=0.146.
+C1848	Short paragraphs (0-4 body, 85.8% of B) NOT truncated beginnings of long: position-matched subsample null fails pooled (4/11 pass, need 8+). Both pos-matched and random fail similarly — pooled distinctness driven by section composition mismatch.	2	B, paragraph, stratum, subsample, C1206	n_pass_pos=4. n_pass_rand=4. verdict=DISTINCT. n_minimal=183. n_short=143. n_long=112.
+C1849	Section dominates stratum variance: V=0.468 (p<0.001). After section residualization 8/11 features invariant (SHORT vs LONG). Within Recipe: 10/11. Golden folio: 7/11. Most stratum effects are section selection artifacts.	2	B, paragraph, section, stratum, C860	V=0.468. resid_inv=8of11. recipe_inv=10of11. golden_inv=7of11. n_golden=48.
+C1850	Three length-residual features survive section control: cat_entropy (p=3.2e-5, d=-0.54), tokens_per_line (p=0.038, d=0.34), m_terminal_rate (p=0.000248, d=-0.25). All length-mechanical, not operational mode differences.	2	B, paragraph, stratum, features	cat_ent_p=3.2e-5. tpl_p=0.038. m_term_p=0.000248.
+C1851	Zone classification (C1398) stratum-independent: V=0.098 (p=0.206). MINIMAL spans all zones uniformly (OP 56%, TH 29%, CONT 13%). Within Recipe: V=0.101, p=0.447.	2	B, paragraph, zones, stratum, C1398	V=0.098. p=0.206. recipe_V=0.101.
+C1852	HEADER_ONLY 87.8% non-gallows-initial (79/90). Opener k+f=4.4% (lowest). k-frac enriched (0.157 vs 0.116, p=0.049), o-frac depleted (0.096 vs 0.142, p=0.0002). NOT executive gallows declarations.	2	B, paragraph, header_only, gallows	none_frac=0.878. opener_ho=0.044. k_p=0.049. o_p=0.0002.
+C1853	HEADER_ONLY no dependency after section control: post-HO differs 8/11 pooled (section confound) but 0/11 within Recipe. Punctuation borderline (zone change 64.7% vs 47.7%, perm p=0.06). Consistent with C845.	2	B, paragraph, header_only, independence, C845	pooled_sig=8of11. recipe_sig=0of11. perm_p=0.06.
+C1854	No anti-parallel arc in category features: first/last body line cosine=+0.999 all strata. C1837 anti-parallel (-0.989) at atom grain not captured by 12 category features. Caveat: not z-scored.	2	B, paragraph, arc, boundary, C1837, C1842	cos=0.999. tpl_d=2.5.
+C1855	Kernel h-rate gradient (C1206) not detected at body-position level any stratum. SHORT rho=-0.078 p=0.086, LONG rho=-0.035 p=0.278. May operate at finer resolution.	2	B, paragraph, kernel, gradient, C1206	short_rho=-0.078. long_rho=-0.035.
+C1856	Header-body coupling increases with length: MINIMAL mean|rho|=0.070, SHORT 0.078, LONG 0.098. Longer paragraphs = stronger header->body prediction. Consistent with C1795.	2	B, paragraph, header, coupling, C1795	minimal=0.070. short=0.078. long=0.098.
+C1857	HIGH-count folios (9+ pars) more structured: steeper length gradient (rho=-0.247, p=0.033), structured gallows transitions (chi2=37.8, p=1.9e-5), MORE diverse (JSD=0.146 vs LOW 0.119).	2	B, folio, paragraph, organization	high_rho=-0.247. high_chi2=37.8. high_jsd=0.146.
+C1858	Section-specific truncation: within Recipe MINIMAL passes position-matched null (8/11, n=163 vs 44). Recipe MINIMAL = truncated beginnings of Recipe LONG. Pooled failure (C1848) driven by cross-section mismatch.	2	B, paragraph, Recipe, truncation, C1848	S_pass=8of11. S_n=163. B_pass=9of11. H_pass=9of11.
 
 ---
 

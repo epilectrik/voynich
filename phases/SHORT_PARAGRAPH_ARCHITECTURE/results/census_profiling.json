@@ -1,0 +1,1066 @@
+{
+  "metadata": {
+    "phase": 625,
+    "script": 1,
+    "timestamp": "2026-03-25T13:38:13.357195",
+    "n_paragraphs": 528,
+    "n_folios": 76,
+    "feature_names": [
+      "log_ke_ratio",
+      "h_rate",
+      "headless_rate",
+      "mode_a_frac",
+      "mean_opacity",
+      "cat_entropy",
+      "tokens_per_line",
+      "m_terminal_rate",
+      "dark_frac",
+      "bridge_frac",
+      "thermal_frac"
+    ],
+    "strata": {
+      "HEADER_ONLY": [
+        0,
+        0
+      ],
+      "MINIMAL": [
+        1,
+        2
+      ],
+      "SHORT": [
+        3,
+        4
+      ],
+      "LONG": [
+        5,
+        999
+      ]
+    }
+  },
+  "T1_census": {
+    "stratum_counts": {
+      "HEADER_ONLY": 90,
+      "MINIMAL": 183,
+      "SHORT": 143,
+      "LONG": 112
+    },
+    "section_x_stratum": {
+      "HEADER_ONLY": {
+        "B": 46,
+        "H": 6,
+        "S": 10,
+        "T": 28
+      },
+      "MINIMAL": {
+        "B": 5,
+        "H": 12,
+        "S": 163,
+        "T": 3
+      },
+      "SHORT": {
+        "B": 21,
+        "H": 25,
+        "S": 97,
+        "T": 0
+      },
+      "LONG": {
+        "B": 59,
+        "H": 31,
+        "S": 22,
+        "T": 0
+      }
+    },
+    "chi2": 346.423128,
+    "V": 0.467655,
+    "p": 0.0,
+    "df": 9,
+    "golden_folios": [
+      "f103v",
+      "f105r",
+      "f105v",
+      "f106r",
+      "f106v",
+      "f108v",
+      "f111r",
+      "f111v",
+      "f112r",
+      "f112v",
+      "f113r",
+      "f114r",
+      "f114v",
+      "f115r",
+      "f116r",
+      "f26r",
+      "f31r",
+      "f31v",
+      "f33v",
+      "f34v",
+      "f39r",
+      "f40r",
+      "f40v",
+      "f41r",
+      "f41v",
+      "f43r",
+      "f43v",
+      "f48v",
+      "f57r",
+      "f75r",
+      "f75v",
+      "f76r",
+      "f76v",
+      "f77r",
+      "f77v",
+      "f78r",
+      "f79r",
+      "f79v",
+      "f80r",
+      "f80v",
+      "f82r",
+      "f82v",
+      "f83r",
+      "f83v",
+      "f84r",
+      "f94r",
+      "f95r1",
+      "f95v2"
+    ],
+    "golden_folio_count": 48,
+    "header_only_consecutive_runs": {
+      "folios_with_runs": 8,
+      "max_run": 12,
+      "total_runs": 11
+    }
+  },
+  "T2_gallows": {
+    "gallows_x_stratum": {
+      "f": {
+        "LONG": 4,
+        "SHORT": 5,
+        "MINIMAL": 6,
+        "HEADER_ONLY": 3
+      },
+      "k": {
+        "SHORT": 14,
+        "MINIMAL": 9,
+        "LONG": 6,
+        "HEADER_ONLY": 1
+      },
+      "none": {
+        "SHORT": 16,
+        "MINIMAL": 24,
+        "HEADER_ONLY": 79,
+        "LONG": 21
+      },
+      "p": {
+        "SHORT": 74,
+        "MINIMAL": 99,
+        "LONG": 58,
+        "HEADER_ONLY": 3
+      },
+      "t": {
+        "MINIMAL": 45,
+        "SHORT": 34,
+        "LONG": 23,
+        "HEADER_ONLY": 4
+      }
+    },
+    "chi2": 217.839327,
+    "V": 0.370843,
+    "p": 0.0,
+    "df": 12,
+    "opener_fraction_by_stratum": {
+      "HEADER_ONLY": 0.044444,
+      "MINIMAL": 0.081967,
+      "SHORT": 0.132867,
+      "LONG": 0.089286
+    },
+    "within_recipe": {
+      "n": 292,
+      "chi2": 61.11854,
+      "V": 0.26414,
+      "p": 0.0,
+      "df": 12
+    }
+  },
+  "T3_header_only_atoms": {
+    "n_header_only": 90,
+    "n_multiline": 438,
+    "comparisons": {
+      "k_frac": {
+        "header_only_mean": 0.156643,
+        "multiline_mean": 0.115855,
+        "U": 17174.0,
+        "z": -1.964771,
+        "p": 0.049441,
+        "cohens_d": 0.327067
+      },
+      "h_frac": {
+        "header_only_mean": 0.0,
+        "multiline_mean": 0.0,
+        "U": 19710.0,
+        "z": 0.0,
+        "p": 1.0,
+        "cohens_d": 0.0
+      },
+      "e_frac": {
+        "header_only_mean": 0.287068,
+        "multiline_mean": 0.283753,
+        "U": 19707.0,
+        "z": -0.002278,
+        "p": 0.998182,
+        "cohens_d": 0.021081
+      },
+      "o_frac": {
+        "header_only_mean": 0.096403,
+        "multiline_mean": 0.141901,
+        "U": 14775.0,
+        "z": -3.786929,
+        "p": 0.000153,
+        "cohens_d": -0.386525
+      },
+      "a_frac": {
+        "header_only_mean": 0.093562,
+        "multiline_mean": 0.110218,
+        "U": 16866.5,
+        "z": -2.228355,
+        "p": 0.025857,
+        "cohens_d": -0.139421
+      },
+      "ht_rate": {
+        "header_only_mean": 0.057208,
+        "multiline_mean": 0.058232,
+        "U": 17914.5,
+        "z": -1.532012,
+        "p": 0.125519,
+        "cohens_d": -0.011151
+      },
+      "n_tokens": {
+        "header_only_mean": 9.8,
+        "multiline_mean": 10.123288,
+        "U": 17798.0,
+        "z": -1.478239,
+        "p": 0.139344,
+        "cohens_d": -0.159103
+      }
+    },
+    "enriched_in_header_only": [
+      "k_frac"
+    ],
+    "depleted_in_header_only": [
+      "o_frac",
+      "a_frac"
+    ]
+  },
+  "T4_zone_classification": {
+    "zone_x_stratum": {
+      "CONTAINMENT_SEALING": {
+        "MINIMAL": 24,
+        "SHORT": 28,
+        "LONG": 22
+      },
+      "MONITORING_PHASE": {
+        "MINIMAL": 3,
+        "SHORT": 3,
+        "LONG": 1
+      },
+      "OPERATION_ITERATION": {
+        "MINIMAL": 103,
+        "SHORT": 75,
+        "LONG": 70
+      },
+      "THERMAL_QO": {
+        "MINIMAL": 53,
+        "SHORT": 37,
+        "LONG": 19
+      }
+    },
+    "per_stratum_distribution": {
+      "MINIMAL": {
+        "CONTAINMENT_SEALING": 0.131148,
+        "MONITORING_PHASE": 0.016393,
+        "OPERATION_ITERATION": 0.562842,
+        "THERMAL_QO": 0.289617
+      },
+      "SHORT": {
+        "CONTAINMENT_SEALING": 0.195804,
+        "MONITORING_PHASE": 0.020979,
+        "OPERATION_ITERATION": 0.524476,
+        "THERMAL_QO": 0.258741
+      },
+      "LONG": {
+        "CONTAINMENT_SEALING": 0.196429,
+        "MONITORING_PHASE": 0.008929,
+        "OPERATION_ITERATION": 0.625,
+        "THERMAL_QO": 0.169643
+      }
+    },
+    "chi2": 8.461971,
+    "V": 0.098284,
+    "p": 0.206173,
+    "df": 6,
+    "within_recipe": {
+      "n": 282,
+      "chi2": 5.788256,
+      "V": 0.101306,
+      "p": 0.447323,
+      "df": 6
+    }
+  },
+  "T5_feature_profiles": {
+    "by_stratum": {
+      "HEADER_ONLY": {
+        "log_ke_ratio": {
+          "mean": -0.498211,
+          "sd": 0.879107,
+          "median": -0.367725,
+          "n": 90
+        },
+        "h_rate": {
+          "mean": 0.065131,
+          "sd": 0.087505,
+          "median": 0.0,
+          "n": 90
+        },
+        "headless_rate": {
+          "mean": 0.32633,
+          "sd": 0.214638,
+          "median": 0.3,
+          "n": 90
+        },
+        "mode_a_frac": {
+          "mean": 0.051601,
+          "sd": 0.06794,
+          "median": 0.0,
+          "n": 90
+        },
+        "mean_opacity": {
+          "mean": 0.380237,
+          "sd": 0.165877,
+          "median": 0.416667,
+          "n": 90
+        },
+        "cat_entropy": {
+          "mean": 1.977308,
+          "sd": 0.569333,
+          "median": 2.12144,
+          "n": 90
+        },
+        "tokens_per_line": {
+          "mean": 9.8,
+          "sd": 3.422799,
+          "median": 11.0,
+          "n": 90
+        },
+        "m_terminal_rate": {
+          "mean": 0.010653,
+          "sd": 0.037414,
+          "median": 0.0,
+          "n": 90
+        },
+        "dark_frac": {
+          "mean": 0.082755,
+          "sd": 0.130535,
+          "median": 0.071429,
+          "n": 90
+        },
+        "bridge_frac": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "median": 0.0,
+          "n": 90
+        },
+        "thermal_frac": {
+          "mean": 0.215642,
+          "sd": 0.157325,
+          "median": 0.2,
+          "n": 90
+        }
+      },
+      "MINIMAL": {
+        "log_ke_ratio": {
+          "mean": -1.000582,
+          "sd": 0.74964,
+          "median": -1.021651,
+          "n": 183
+        },
+        "h_rate": {
+          "mean": 0.085376,
+          "sd": 0.066838,
+          "median": 0.068966,
+          "n": 183
+        },
+        "headless_rate": {
+          "mean": 0.223354,
+          "sd": 0.100617,
+          "median": 0.208333,
+          "n": 183
+        },
+        "mode_a_frac": {
+          "mean": 0.103292,
+          "sd": 0.073559,
+          "median": 0.096774,
+          "n": 183
+        },
+        "mean_opacity": {
+          "mean": 0.399428,
+          "sd": 0.106982,
+          "median": 0.403846,
+          "n": 183
+        },
+        "cat_entropy": {
+          "mean": 2.438111,
+          "sd": 0.230238,
+          "median": 2.470308,
+          "n": 183
+        },
+        "tokens_per_line": {
+          "mean": 9.362477,
+          "sd": 1.241144,
+          "median": 9.333333,
+          "n": 183
+        },
+        "m_terminal_rate": {
+          "mean": 0.010868,
+          "sd": 0.019703,
+          "median": 0.0,
+          "n": 183
+        },
+        "dark_frac": {
+          "mean": 0.088169,
+          "sd": 0.061982,
+          "median": 0.074074,
+          "n": 183
+        },
+        "bridge_frac": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "median": 0.0,
+          "n": 183
+        },
+        "thermal_frac": {
+          "mean": 0.244515,
+          "sd": 0.11471,
+          "median": 0.25,
+          "n": 183
+        }
+      },
+      "SHORT": {
+        "log_ke_ratio": {
+          "mean": -0.908316,
+          "sd": 0.714371,
+          "median": -0.880359,
+          "n": 143
+        },
+        "h_rate": {
+          "mean": 0.0762,
+          "sd": 0.047838,
+          "median": 0.068182,
+          "n": 143
+        },
+        "headless_rate": {
+          "mean": 0.257078,
+          "sd": 0.107279,
+          "median": 0.238095,
+          "n": 143
+        },
+        "mode_a_frac": {
+          "mean": 0.093883,
+          "sd": 0.060757,
+          "median": 0.085106,
+          "n": 143
+        },
+        "mean_opacity": {
+          "mean": 0.428501,
+          "sd": 0.09824,
+          "median": 0.423913,
+          "n": 143
+        },
+        "cat_entropy": {
+          "mean": 2.533645,
+          "sd": 0.175854,
+          "median": 2.540648,
+          "n": 143
+        },
+        "tokens_per_line": {
+          "mean": 9.620979,
+          "sd": 1.123344,
+          "median": 9.6,
+          "n": 143
+        },
+        "m_terminal_rate": {
+          "mean": 0.01101,
+          "sd": 0.017258,
+          "median": 0.0,
+          "n": 143
+        },
+        "dark_frac": {
+          "mean": 0.077299,
+          "sd": 0.046778,
+          "median": 0.076923,
+          "n": 143
+        },
+        "bridge_frac": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "median": 0.0,
+          "n": 143
+        },
+        "thermal_frac": {
+          "mean": 0.233194,
+          "sd": 0.099096,
+          "median": 0.236364,
+          "n": 143
+        }
+      },
+      "LONG": {
+        "log_ke_ratio": {
+          "mean": -0.635681,
+          "sd": 0.598166,
+          "median": -0.543164,
+          "n": 112
+        },
+        "h_rate": {
+          "mean": 0.063003,
+          "sd": 0.037684,
+          "median": 0.055633,
+          "n": 112
+        },
+        "headless_rate": {
+          "mean": 0.290933,
+          "sd": 0.087481,
+          "median": 0.279241,
+          "n": 112
+        },
+        "mode_a_frac": {
+          "mean": 0.080579,
+          "sd": 0.045915,
+          "median": 0.073819,
+          "n": 112
+        },
+        "mean_opacity": {
+          "mean": 0.462607,
+          "sd": 0.069687,
+          "median": 0.464677,
+          "n": 112
+        },
+        "cat_entropy": {
+          "mean": 2.608987,
+          "sd": 0.139035,
+          "median": 2.610212,
+          "n": 112
+        },
+        "tokens_per_line": {
+          "mean": 9.131937,
+          "sd": 1.52339,
+          "median": 9.309524,
+          "n": 112
+        },
+        "m_terminal_rate": {
+          "mean": 0.013037,
+          "sd": 0.018391,
+          "median": 0.005205,
+          "n": 112
+        },
+        "dark_frac": {
+          "mean": 0.061504,
+          "sd": 0.030872,
+          "median": 0.056471,
+          "n": 112
+        },
+        "bridge_frac": {
+          "mean": 0.0,
+          "sd": 0.0,
+          "median": 0.0,
+          "n": 112
+        },
+        "thermal_frac": {
+          "mean": 0.243603,
+          "sd": 0.091167,
+          "median": 0.242311,
+          "n": 112
+        }
+      }
+    },
+    "pooled_kw": {
+      "log_ke_ratio": {
+        "H": 37.191307,
+        "df": 3,
+        "p": 0.0
+      },
+      "h_rate": {
+        "H": 16.058023,
+        "df": 3,
+        "p": 0.001103
+      },
+      "headless_rate": {
+        "H": 43.983014,
+        "df": 3,
+        "p": 0.0
+      },
+      "mode_a_frac": {
+        "H": 42.163161,
+        "df": 3,
+        "p": 0.0
+      },
+      "mean_opacity": {
+        "H": 29.48232,
+        "df": 3,
+        "p": 2e-06
+      },
+      "cat_entropy": {
+        "H": 151.50593,
+        "df": 3,
+        "p": 0.0
+      },
+      "tokens_per_line": {
+        "H": 26.078409,
+        "df": 3,
+        "p": 9e-06
+      },
+      "m_terminal_rate": {
+        "H": 28.042102,
+        "df": 3,
+        "p": 4e-06
+      },
+      "dark_frac": {
+        "H": 15.870858,
+        "df": 3,
+        "p": 0.001205
+      },
+      "bridge_frac": {
+        "H": 0.0,
+        "df": 3,
+        "p": 1.0
+      },
+      "thermal_frac": {
+        "H": 3.549643,
+        "df": 3,
+        "p": 0.31438
+      }
+    },
+    "pooled_short_vs_long": {
+      "log_ke_ratio": {
+        "U": 6192.5,
+        "z": -3.106028,
+        "p": 0.001896,
+        "cohens_d": -0.407856,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "h_rate": {
+        "U": 6771.5,
+        "z": -2.115498,
+        "p": 0.034387,
+        "cohens_d": 0.301011,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "headless_rate": {
+        "U": 6163.0,
+        "z": -3.156498,
+        "p": 0.001597,
+        "cohens_d": -0.34038,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "mode_a_frac": {
+        "U": 7135.0,
+        "z": -1.493586,
+        "p": 0.135284,
+        "cohens_d": 0.242103,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "mean_opacity": {
+        "U": 6284.0,
+        "z": -2.949448,
+        "p": 0.003184,
+        "cohens_d": -0.391104,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "cat_entropy": {
+        "U": 5963.0,
+        "z": -3.498541,
+        "p": 0.000468,
+        "cohens_d": -0.466926,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "tokens_per_line": {
+        "U": 6540.0,
+        "z": -2.512587,
+        "p": 0.011985,
+        "cohens_d": 0.370678,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "m_terminal_rate": {
+        "U": 7189.0,
+        "z": -1.558351,
+        "p": 0.11915,
+        "cohens_d": -0.113655,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "dark_frac": {
+        "U": 6594.0,
+        "z": -2.419196,
+        "p": 0.015555,
+        "cohens_d": 0.387813,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "bridge_frac": {
+        "U": 8008.0,
+        "z": 0.0,
+        "p": 1.0,
+        "cohens_d": 0.0,
+        "n_short": 143,
+        "n_long": 112
+      },
+      "thermal_frac": {
+        "U": 7461.0,
+        "z": -0.93586,
+        "p": 0.349345,
+        "cohens_d": -0.108346,
+        "n_short": 143,
+        "n_long": 112
+      }
+    },
+    "section_residualized": {
+      "kw": {
+        "log_ke_ratio": {
+          "H": 6.130628,
+          "df": 3,
+          "p": 0.105425
+        },
+        "h_rate": {
+          "H": 7.653642,
+          "df": 3,
+          "p": 0.053739
+        },
+        "headless_rate": {
+          "H": 2.173778,
+          "df": 3,
+          "p": 0.537132
+        },
+        "mode_a_frac": {
+          "H": 12.254991,
+          "df": 3,
+          "p": 0.006559
+        },
+        "mean_opacity": {
+          "H": 9.374248,
+          "df": 3,
+          "p": 0.024707
+        },
+        "cat_entropy": {
+          "H": 84.444117,
+          "df": 3,
+          "p": 0.0
+        },
+        "tokens_per_line": {
+          "H": 20.049106,
+          "df": 3,
+          "p": 0.000166
+        },
+        "m_terminal_rate": {
+          "H": 40.493935,
+          "df": 3,
+          "p": 0.0
+        },
+        "dark_frac": {
+          "H": 8.149401,
+          "df": 3,
+          "p": 0.043023
+        },
+        "bridge_frac": {
+          "H": 0.0,
+          "df": 3,
+          "p": 1.0
+        },
+        "thermal_frac": {
+          "H": 3.256918,
+          "df": 3,
+          "p": 0.353684
+        }
+      },
+      "short_vs_long": {
+        "log_ke_ratio": {
+          "U": 7973.5,
+          "z": -0.059022,
+          "p": 0.952934,
+          "cohens_d": -0.035427
+        },
+        "h_rate": {
+          "U": 7333.0,
+          "z": -1.154796,
+          "p": 0.248174,
+          "cohens_d": 0.185221
+        },
+        "headless_rate": {
+          "U": 7735.5,
+          "z": -0.466191,
+          "p": 0.641079,
+          "cohens_d": 0.085734
+        },
+        "mode_a_frac": {
+          "U": 7185.0,
+          "z": -1.407994,
+          "p": 0.159133,
+          "cohens_d": -0.119445
+        },
+        "mean_opacity": {
+          "U": 7222.5,
+          "z": -1.343828,
+          "p": 0.179004,
+          "cohens_d": -0.175817
+        },
+        "cat_entropy": {
+          "U": 5576.0,
+          "z": -4.160612,
+          "p": 3.2e-05,
+          "cohens_d": -0.537234
+        },
+        "tokens_per_line": {
+          "U": 6794.5,
+          "z": -2.076367,
+          "p": 0.03786,
+          "cohens_d": 0.336559
+        },
+        "m_terminal_rate": {
+          "U": 5900.0,
+          "z": -3.664786,
+          "p": 0.000248,
+          "cohens_d": -0.250982
+        },
+        "dark_frac": {
+          "U": 7939.5,
+          "z": -0.117191,
+          "p": 0.906709,
+          "cohens_d": 0.099982
+        },
+        "bridge_frac": {
+          "U": 8008.0,
+          "z": 0.0,
+          "p": 1.0,
+          "cohens_d": 0.0
+        },
+        "thermal_frac": {
+          "U": 7242.5,
+          "z": -1.309626,
+          "p": 0.190322,
+          "cohens_d": -0.145219
+        }
+      }
+    },
+    "within_recipe": {
+      "n": 292,
+      "kw": {
+        "log_ke_ratio": {
+          "H": 3.902096,
+          "df": 3,
+          "p": 0.272232
+        },
+        "h_rate": {
+          "H": 11.847257,
+          "df": 3,
+          "p": 0.007925
+        },
+        "headless_rate": {
+          "H": 1.267538,
+          "df": 3,
+          "p": 0.736856
+        },
+        "mode_a_frac": {
+          "H": 1.020865,
+          "df": 3,
+          "p": 0.796203
+        },
+        "mean_opacity": {
+          "H": 5.320151,
+          "df": 3,
+          "p": 0.1498
+        },
+        "cat_entropy": {
+          "H": 30.507752,
+          "df": 3,
+          "p": 1e-06
+        },
+        "tokens_per_line": {
+          "H": 16.77665,
+          "df": 3,
+          "p": 0.000786
+        },
+        "m_terminal_rate": {
+          "H": 8.509388,
+          "df": 3,
+          "p": 0.036578
+        },
+        "dark_frac": {
+          "H": 4.131028,
+          "df": 3,
+          "p": 0.247659
+        },
+        "bridge_frac": {
+          "H": 0.0,
+          "df": 3,
+          "p": 1.0
+        },
+        "thermal_frac": {
+          "H": 2.040247,
+          "df": 3,
+          "p": 0.564095
+        }
+      },
+      "short_vs_long": {
+        "log_ke_ratio": {
+          "U": 807.0,
+          "z": -1.779906,
+          "p": 0.075091,
+          "cohens_d": 0.356684
+        },
+        "h_rate": {
+          "U": 828.0,
+          "z": -1.636269,
+          "p": 0.101783,
+          "cohens_d": 0.412583
+        },
+        "headless_rate": {
+          "U": 1024.5,
+          "z": -0.290951,
+          "p": 0.771089,
+          "cohens_d": 0.09102
+        },
+        "mode_a_frac": {
+          "U": 960.5,
+          "z": -0.729135,
+          "p": 0.465919,
+          "cohens_d": -0.069457
+        },
+        "mean_opacity": {
+          "U": 806.5,
+          "z": -1.783383,
+          "p": 0.074524,
+          "cohens_d": -0.323675
+        },
+        "cat_entropy": {
+          "U": 933.0,
+          "z": -0.917292,
+          "p": 0.35899,
+          "cohens_d": -0.194836
+        },
+        "tokens_per_line": {
+          "U": 874.5,
+          "z": -1.319701,
+          "p": 0.186935,
+          "cohens_d": -0.333212
+        },
+        "m_terminal_rate": {
+          "U": 803.0,
+          "z": -1.99392,
+          "p": 0.046161,
+          "cohens_d": -0.287861
+        },
+        "dark_frac": {
+          "U": 909.0,
+          "z": -1.081722,
+          "p": 0.279376,
+          "cohens_d": 0.253858
+        },
+        "bridge_frac": {
+          "U": 1067.0,
+          "z": 0.0,
+          "p": 1.0,
+          "cohens_d": 0.0
+        },
+        "thermal_frac": {
+          "U": 875.0,
+          "z": -1.314518,
+          "p": 0.188672,
+          "cohens_d": -0.278862
+        }
+      }
+    },
+    "golden_folio": {
+      "n_golden_folios": 48,
+      "n_golden_short": 93,
+      "n_golden_long": 89,
+      "comparisons": {
+        "log_ke_ratio": {
+          "U": 3040.5,
+          "z": -3.090652,
+          "p": 0.001997,
+          "cohens_d": -0.490884
+        },
+        "h_rate": {
+          "U": 3535.5,
+          "z": -1.69738,
+          "p": 0.089625,
+          "cohens_d": 0.264403
+        },
+        "headless_rate": {
+          "U": 3477.5,
+          "z": -1.860578,
+          "p": 0.062804,
+          "cohens_d": -0.196753
+        },
+        "mode_a_frac": {
+          "U": 3968.5,
+          "z": -0.478523,
+          "p": 0.632278,
+          "cohens_d": 0.110456
+        },
+        "mean_opacity": {
+          "U": 3539.5,
+          "z": -1.68602,
+          "p": 0.091792,
+          "cohens_d": -0.25405
+        },
+        "cat_entropy": {
+          "U": 3347.0,
+          "z": -2.227817,
+          "p": 0.025893,
+          "cohens_d": -0.348254
+        },
+        "tokens_per_line": {
+          "U": 3555.5,
+          "z": -1.641516,
+          "p": 0.10069,
+          "cohens_d": 0.28088
+        },
+        "m_terminal_rate": {
+          "U": 3585.5,
+          "z": -1.777338,
+          "p": 0.075513,
+          "cohens_d": -0.138343
+        },
+        "dark_frac": {
+          "U": 3430.5,
+          "z": -1.992962,
+          "p": 0.046265,
+          "cohens_d": 0.39481
+        },
+        "bridge_frac": {
+          "U": 4138.5,
+          "z": 0.0,
+          "p": 1.0,
+          "cohens_d": 0.0
+        },
+        "thermal_frac": {
+          "U": 3433.5,
+          "z": -1.984589,
+          "p": 0.04719,
+          "cohens_d": -0.283875
+        }
+      }
+    },
+    "invariant_counts": {
+      "pooled": 2,
+      "section_resid": 5,
+      "within_recipe": 7,
+      "golden_folio": 7
+    }
+  }
+}

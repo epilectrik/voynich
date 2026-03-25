@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "phase": 625,
+    "script": 3,
+    "timestamp": "2026-03-25T18:39:07.667895+00:00",
+    "n_folios": 76,
+    "n_paragraphs": 528
+  },
+  "T1_punctuation": {
+    "n_header_only": 90,
+    "n_with_neighbors": 68,
+    "cross_ho_zone_change_rate": 0.647059,
+    "baseline_zone_change_rate": 0.477401,
+    "permutation_p": 0.06,
+    "punctuation_verdict": "NO_PUNCTUATION",
+    "dependency_test": {
+      "n_post_ho": 83,
+      "n_other": 415,
+      "features_significant": [
+        "log_ke_ratio",
+        "h_rate",
+        "headless_rate",
+        "mode_a_frac",
+        "mean_opacity",
+        "cat_entropy",
+        "tokens_per_line",
+        "m_terminal_rate"
+      ],
+      "feature_details": {
+        "log_ke_ratio": {
+          "mw_p": 0.004378,
+          "d": 0.372966,
+          "mean_post_ho": -0.597242,
+          "mean_other": -0.873998
+        },
+        "h_rate": {
+          "mw_p": 0.009957,
+          "d": -0.257523,
+          "mean_post_ho": 0.062443,
+          "mean_other": 0.077399
+        },
+        "headless_rate": {
+          "mw_p": 0.000744,
+          "d": 0.533125,
+          "mean_post_ho": 0.315473,
+          "mean_other": 0.251304
+        },
+        "mode_a_frac": {
+          "mw_p": 0.0,
+          "d": -0.594806,
+          "mean_post_ho": 0.057656,
+          "mean_other": 0.095799
+        },
+        "mean_opacity": {
+          "mw_p": 0.030994,
+          "d": -0.396724,
+          "mean_post_ho": 0.383416,
+          "mean_other": 0.425553
+        },
+        "cat_entropy": {
+          "mw_p": 0.0,
+          "d": -1.128533,
+          "mean_post_ho": 2.203053,
+          "mean_other": 2.511925
+        },
+        "tokens_per_line": {
+          "mw_p": 0.0,
+          "d": 0.674383,
+          "mean_post_ho": 10.434684,
+          "mean_other": 9.368269
+        },
+        "m_terminal_rate": {
+          "mw_p": 0.000216,
+          "d": -0.168037,
+          "mean_post_ho": 0.008276,
+          "mean_other": 0.011615
+        },
+        "dark_frac": {
+          "mw_p": 0.051619,
+          "d": 0.047568,
+          "mean_post_ho": 0.081442,
+          "mean_other": 0.078115
+        },
+        "bridge_frac": {
+          "mw_p": 1.0,
+          "d": 0.0,
+          "mean_post_ho": 0.0,
+          "mean_other": 0.0
+        },
+        "thermal_frac": {
+          "mw_p": 0.738188,
+          "d": -0.040642,
+          "mean_post_ho": 0.235775,
+          "mean_other": 0.24028
+        }
+      },
+      "dependency_verdict": "DEPENDENT"
+    },
+    "section_controlled": {
+      "scope": "within_Recipe",
+      "n_post_ho_recipe": 2,
+      "n_other_recipe": 66,
+      "features_significant": [],
+      "feature_details": {},
+      "dependency_verdict": "INDEPENDENT"
+    }
+  },
+  "T2_spec_exec_ratio": {
+    "by_stratum": {
+      "HEADER_ONLY": {
+        "mean": 0.80848,
+        "median": 0.555556,
+        "n": 90
+      },
+      "MINIMAL": {
+        "mean": 0.520634,
+        "median": 0.44,
+        "n": 183
+      },
+      "SHORT": {
+        "mean": 0.501577,
+        "median": 0.469388,
+        "n": 143
+      },
+      "LONG": {
+        "mean": 0.473829,
+        "median": 0.424658,
+        "n": 112
+      }
+    },
+    "kw": {
+      "H": 6.798691,
+      "p": 0.078599
+    },
+    "ho_vs_long": {
+      "ratio_ho": 0.80848,
+      "ratio_long": 0.473829,
+      "mw_p": 0.021739,
+      "d": 0.486907,
+      "exceeds_2x": false
+    },
+    "section_controlled": {
+      "scope": "within_Recipe",
+      "by_stratum": {
+        "HEADER_ONLY": {
+          "mean": 1.246465,
+          "n": 6
+        },
+        "MINIMAL": {
+          "mean": 0.51846,
+          "n": 12
+        },
+        "SHORT": {
+          "mean": 0.64715,
+          "n": 25
+        },
+        "LONG": {
+          "mean": 0.532516,
+          "n": 31
+        }
+      },
+      "kw": {
+        "H": 2.515325,
+        "p": 0.472528
+      },
+      "ho_vs_long": {
+        "ratio_ho": 1.246465,
+        "ratio_long": 0.532516,
+        "mw_p": 0.710742,
+        "d": 0.966289,
+        "exceeds_2x": true
+      }
+    }
+  },
+  "T3_length_gradient": {
+    "LOW": {
+      "mean_rho": 0.261472,
+      "n_folios": 14,
+      "pooled_p": 0.997067
+    },
+    "MED": {
+      "mean_rho": -0.240613,
+      "n_folios": 11,
+      "pooled_p": 0.618492
+    },
+    "HIGH": {
+      "mean_rho": -0.246988,
+      "n_folios": 25,
+      "pooled_p": 0.032865
+    },
+    "gradient_steepens": true,
+    "section_controlled": {
+      "scope": "within_Recipe",
+      "LOW": {
+        "mean_rho": 0.421621,
+        "n_folios": 9,
+        "pooled_p": 0.979222
+      },
+      "MED": {
+        "mean_rho": 0.0,
+        "n_folios": 0,
+        "pooled_p": 1.0
+      },
+      "HIGH": {
+        "mean_rho": 0.0,
+        "n_folios": 0,
+        "pooled_p": 1.0
+      }
+    }
+  },
+  "T4_within_folio_homogeneity": {
+    "LOW": {
+      "mean_jsd": 0.118997,
+      "n_folios": 15
+    },
+    "MED": {
+      "mean_jsd": 0.126366,
+      "n_folios": 12
+    },
+    "HIGH": {
+      "mean_jsd": 0.146201,
+      "n_folios": 25
+    },
+    "kw": {
+      "H": 4.102003,
+      "p": 0.128606
+    },
+    "high_vs_low": {
+      "mw_p": 0.10219,
+      "d": 0.368747
+    },
+    "section_controlled": {
+      "scope": "within_Recipe",
+      "LOW": {
+        "mean_jsd": 0.14653,
+        "n_folios": 10
+      },
+      "MED": {
+        "mean_jsd": 0.0,
+        "n_folios": 0
+      },
+      "HIGH": {
+        "mean_jsd": 0.0,
+        "n_folios": 0
+      },
+      "kw": {
+        "H": 0.0,
+        "p": 1.0
+      },
+      "high_vs_low": {
+        "mw_p": 1.0,
+        "d": 0.0
+      }
+    }
+  },
+  "T5_gallows_transitions": {
+    "LOW": {
+      "chi2": 2.4625,
+      "V": 0.139799,
+      "chi2_p": 0.981875,
+      "self_rate": 0.5,
+      "n_transitions": 42
+    },
+    "MED": {
+      "chi2": 4.921053,
+      "V": 0.193082,
+      "chi2_p": 0.841135,
+      "self_rate": 0.75,
+      "n_transitions": 44
+    },
+    "HIGH": {
+      "chi2": 37.758301,
+      "V": 0.235989,
+      "chi2_p": 1.9e-05,
+      "self_rate": 0.451327,
+      "n_transitions": 226
+    },
+    "section_controlled": {
+      "scope": "within_Recipe",
+      "LOW": {
+        "chi2": 1.7625,
+        "V": 0.131451,
+        "chi2_p": 0.994691,
+        "self_rate": 0.441176,
+        "n_transitions": 34
+      },
+      "MED": {
+        "chi2": 0.0,
+        "V": 0.0,
+        "chi2_p": 1.0,
+        "self_rate": 0.0,
+        "n_transitions": 0
+      },
+      "HIGH": {
+        "chi2": 0.0,
+        "V": 0.0,
+        "chi2_p": 1.0,
+        "self_rate": 0.0,
+        "n_transitions": 0
+      }
+    }
+  }
+}

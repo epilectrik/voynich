@@ -1,0 +1,1537 @@
+{
+  "metadata": {
+    "phase": 625,
+    "script": 2,
+    "timestamp": "2026-03-25T18:38:58.751844+00:00",
+    "n_long": 112,
+    "n_short": 143,
+    "n_minimal": 183,
+    "n_header_only": 90,
+    "n_total": 528
+  },
+  "T1_subsample_null": {
+    "position_matched": {
+      "minimal_comparison": {
+        "log_ke_ratio": {
+          "D": 0.270882,
+          "p": 1e-06,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "h_rate": {
+          "D": 0.057011,
+          "p": 0.890065,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "headless_rate": {
+          "D": 0.348092,
+          "p": 0.0,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "mode_a_frac": {
+          "D": 0.201698,
+          "p": 0.000445,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "mean_opacity": {
+          "D": 0.169936,
+          "p": 0.005109,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "cat_entropy": {
+          "D": 0.104728,
+          "p": 0.206941,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "tokens_per_line": {
+          "D": 0.155177,
+          "p": 0.013777,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "m_terminal_rate": {
+          "D": 0.136027,
+          "p": 0.043632,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "dark_frac": {
+          "D": 0.079845,
+          "p": 0.525126,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "bridge_frac": {
+          "D": 0.183036,
+          "p": 0.001964,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "thermal_frac": {
+          "D": 0.11634,
+          "p": 0.121832,
+          "n_real": 183,
+          "n_synth": 224
+        }
+      },
+      "short_comparison": {
+        "log_ke_ratio": {
+          "D": 0.258679,
+          "p": 1.2e-05,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "h_rate": {
+          "D": 0.0566,
+          "p": 0.935963,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "headless_rate": {
+          "D": 0.242945,
+          "p": 5e-05,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "mode_a_frac": {
+          "D": 0.157499,
+          "p": 0.023283,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "mean_opacity": {
+          "D": 0.163181,
+          "p": 0.016788,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "cat_entropy": {
+          "D": 0.158997,
+          "p": 0.021383,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "tokens_per_line": {
+          "D": 0.129808,
+          "p": 0.097112,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "m_terminal_rate": {
+          "D": 0.235171,
+          "p": 9.8e-05,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "dark_frac": {
+          "D": 0.130276,
+          "p": 0.095012,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "bridge_frac": {
+          "D": 0.361607,
+          "p": 0.0,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "thermal_frac": {
+          "D": 0.061064,
+          "p": 0.89137,
+          "n_real": 143,
+          "n_synth": 224
+        }
+      },
+      "n_pass_minimal": 4,
+      "n_pass_short": 4
+    },
+    "random": {
+      "minimal_comparison": {
+        "log_ke_ratio": {
+          "D": 0.257489,
+          "p": 2e-06,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "h_rate": {
+          "D": 0.131684,
+          "p": 0.055484,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "headless_rate": {
+          "D": 0.409738,
+          "p": 0.0,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "mode_a_frac": {
+          "D": 0.246341,
+          "p": 7e-06,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "mean_opacity": {
+          "D": 0.231655,
+          "p": 3e-05,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "cat_entropy": {
+          "D": 0.120902,
+          "p": 0.097419,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "tokens_per_line": {
+          "D": 0.093604,
+          "p": 0.325468,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "m_terminal_rate": {
+          "D": 0.261027,
+          "p": 2e-06,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "dark_frac": {
+          "D": 0.118438,
+          "p": 0.110044,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "bridge_frac": {
+          "D": 0.183036,
+          "p": 0.001964,
+          "n_real": 183,
+          "n_synth": 224
+        },
+        "thermal_frac": {
+          "D": 0.134197,
+          "p": 0.048327,
+          "n_real": 183,
+          "n_synth": 224
+        }
+      },
+      "short_comparison": {
+        "log_ke_ratio": {
+          "D": 0.228459,
+          "p": 0.000171,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "h_rate": {
+          "D": 0.082823,
+          "p": 0.56925,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "headless_rate": {
+          "D": 0.309909,
+          "p": 0.0,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "mode_a_frac": {
+          "D": 0.156188,
+          "p": 0.025068,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "mean_opacity": {
+          "D": 0.217657,
+          "p": 0.000405,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "cat_entropy": {
+          "D": 0.143669,
+          "p": 0.049178,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "tokens_per_line": {
+          "D": 0.200331,
+          "p": 0.001486,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "m_terminal_rate": {
+          "D": 0.235171,
+          "p": 9.8e-05,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "dark_frac": {
+          "D": 0.1565,
+          "p": 0.024632,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "bridge_frac": {
+          "D": 0.361607,
+          "p": 0.0,
+          "n_real": 143,
+          "n_synth": 224
+        },
+        "thermal_frac": {
+          "D": 0.078328,
+          "p": 0.640489,
+          "n_real": 143,
+          "n_synth": 224
+        }
+      },
+      "n_pass_minimal": 4,
+      "n_pass_short": 2
+    },
+    "section_matched": {
+      "position_matched_minimal": {
+        "per_section": {
+          "B": {
+            "per_feature": {
+              "log_ke_ratio": {
+                "D": 0.405085,
+                "p": 0.319993,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "h_rate": {
+                "D": 0.333898,
+                "p": 0.563579,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "headless_rate": {
+                "D": 0.444068,
+                "p": 0.2219,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "mode_a_frac": {
+                "D": 0.213559,
+                "p": 0.961276,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "mean_opacity": {
+                "D": 0.257627,
+                "p": 0.853384,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "cat_entropy": {
+                "D": 0.477966,
+                "p": 0.156781,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "tokens_per_line": {
+                "D": 0.410169,
+                "p": 0.305713,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "m_terminal_rate": {
+                "D": 0.766102,
+                "p": 0.00289,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "dark_frac": {
+                "D": 0.574576,
+                "p": 0.050514,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "bridge_frac": {
+                "D": 0.957627,
+                "p": 7.3e-05,
+                "n_real": 5,
+                "n_synth": 118
+              },
+              "thermal_frac": {
+                "D": 0.39661,
+                "p": 0.344791,
+                "n_real": 5,
+                "n_synth": 118
+              }
+            },
+            "n_pass": 9,
+            "n_real": 5,
+            "n_synthetic": 118
+          },
+          "H": {
+            "per_feature": {
+              "log_ke_ratio": {
+                "D": 0.403226,
+                "p": 0.054855,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "h_rate": {
+                "D": 0.241935,
+                "p": 0.536745,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "headless_rate": {
+                "D": 0.19086,
+                "p": 0.815274,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "mode_a_frac": {
+                "D": 0.370968,
+                "p": 0.095296,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "mean_opacity": {
+                "D": 0.201613,
+                "p": 0.759671,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "cat_entropy": {
+                "D": 0.223118,
+                "p": 0.640679,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "tokens_per_line": {
+                "D": 0.206989,
+                "p": 0.730542,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "m_terminal_rate": {
+                "D": 0.604839,
+                "p": 0.000612,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "dark_frac": {
+                "D": 0.145161,
+                "p": 0.973928,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "bridge_frac": {
+                "D": 0.806452,
+                "p": 1e-06,
+                "n_real": 12,
+                "n_synth": 62
+              },
+              "thermal_frac": {
+                "D": 0.397849,
+                "p": 0.060337,
+                "n_real": 12,
+                "n_synth": 62
+              }
+            },
+            "n_pass": 9,
+            "n_real": 12,
+            "n_synthetic": 62
+          },
+          "S": {
+            "per_feature": {
+              "log_ke_ratio": {
+                "D": 0.157557,
+                "p": 0.32839,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "h_rate": {
+                "D": 0.105549,
+                "p": 0.813457,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "headless_rate": {
+                "D": 0.183491,
+                "p": 0.173456,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "mode_a_frac": {
+                "D": 0.140825,
+                "p": 0.467666,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "mean_opacity": {
+                "D": 0.198968,
+                "p": 0.112919,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "cat_entropy": {
+                "D": 0.173313,
+                "p": 0.225606,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "tokens_per_line": {
+                "D": 0.537089,
+                "p": 0.0,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "m_terminal_rate": {
+                "D": 0.564138,
+                "p": 0.0,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "dark_frac": {
+                "D": 0.121445,
+                "p": 0.658037,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "bridge_frac": {
+                "D": 0.730061,
+                "p": 0.0,
+                "n_real": 163,
+                "n_synth": 44
+              },
+              "thermal_frac": {
+                "D": 0.142917,
+                "p": 0.448677,
+                "n_real": 163,
+                "n_synth": 44
+              }
+            },
+            "n_pass": 8,
+            "n_real": 163,
+            "n_synthetic": 44
+          }
+        },
+        "pooled_across_sections": {
+          "log_ke_ratio": {
+            "D": 0.271429,
+            "p": 1e-06,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "h_rate": {
+            "D": 0.062202,
+            "p": 0.8229,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "headless_rate": {
+            "D": 0.357837,
+            "p": 0.0,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "mode_a_frac": {
+            "D": 0.205258,
+            "p": 0.000357,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "mean_opacity": {
+            "D": 0.162103,
+            "p": 0.009183,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "cat_entropy": {
+            "D": 0.111012,
+            "p": 0.160068,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "tokens_per_line": {
+            "D": 0.16369,
+            "p": 0.00826,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "m_terminal_rate": {
+            "D": 0.145139,
+            "p": 0.026714,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "dark_frac": {
+            "D": 0.079663,
+            "p": 0.533968,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "bridge_frac": {
+            "D": 0.196429,
+            "p": 0.000738,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "thermal_frac": {
+            "D": 0.119345,
+            "p": 0.108058,
+            "n_real": 180,
+            "n_synth": 224
+          }
+        },
+        "n_pass": 4
+      },
+      "position_matched_short": {
+        "per_section": {
+          "B": {
+            "per_feature": {
+              "log_ke_ratio": {
+                "D": 0.37732,
+                "p": 0.008736,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "h_rate": {
+                "D": 0.23527,
+                "p": 0.241452,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "headless_rate": {
+                "D": 0.244956,
+                "p": 0.20233,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "mode_a_frac": {
+                "D": 0.218321,
+                "p": 0.322974,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "mean_opacity": {
+                "D": 0.271186,
+                "p": 0.120786,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "cat_entropy": {
+                "D": 0.194108,
+                "p": 0.468482,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "tokens_per_line": {
+                "D": 0.186441,
+                "p": 0.520856,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "m_terminal_rate": {
+                "D": 0.743745,
+                "p": 0.0,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "dark_frac": {
+                "D": 0.252623,
+                "p": 0.174979,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "bridge_frac": {
+                "D": 0.822034,
+                "p": 0.0,
+                "n_real": 21,
+                "n_synth": 118
+              },
+              "thermal_frac": {
+                "D": 0.164649,
+                "p": 0.679022,
+                "n_real": 21,
+                "n_synth": 118
+              }
+            },
+            "n_pass": 8,
+            "n_real": 21,
+            "n_synthetic": 118
+          },
+          "H": {
+            "per_feature": {
+              "log_ke_ratio": {
+                "D": 0.316774,
+                "p": 0.043537,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "h_rate": {
+                "D": 0.283226,
+                "p": 0.093809,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "headless_rate": {
+                "D": 0.260645,
+                "p": 0.149807,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "mode_a_frac": {
+                "D": 0.190968,
+                "p": 0.490018,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "mean_opacity": {
+                "D": 0.143871,
+                "p": 0.824773,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "cat_entropy": {
+                "D": 0.131613,
+                "p": 0.895849,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "tokens_per_line": {
+                "D": 0.494194,
+                "p": 0.00018,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "m_terminal_rate": {
+                "D": 0.310323,
+                "p": 0.050801,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "dark_frac": {
+                "D": 0.293548,
+                "p": 0.074756,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "bridge_frac": {
+                "D": 0.596774,
+                "p": 3e-06,
+                "n_real": 25,
+                "n_synth": 62
+              },
+              "thermal_frac": {
+                "D": 0.190968,
+                "p": 0.490018,
+                "n_real": 25,
+                "n_synth": 62
+              }
+            },
+            "n_pass": 8,
+            "n_real": 25,
+            "n_synthetic": 62
+          },
+          "S": {
+            "per_feature": {
+              "log_ke_ratio": {
+                "D": 0.244377,
+                "p": 0.044664,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "h_rate": {
+                "D": 0.122071,
+                "p": 0.72996,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "headless_rate": {
+                "D": 0.128866,
+                "p": 0.665891,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "mode_a_frac": {
+                "D": 0.111293,
+                "p": 0.825343,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "mean_opacity": {
+                "D": 0.286082,
+                "p": 0.010923,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "cat_entropy": {
+                "D": 0.325211,
+                "p": 0.002383,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "tokens_per_line": {
+                "D": 0.430178,
+                "p": 1.5e-05,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "m_terminal_rate": {
+                "D": 0.24836,
+                "p": 0.039419,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "dark_frac": {
+                "D": 0.12746,
+                "p": 0.679248,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "bridge_frac": {
+                "D": 0.546392,
+                "p": 0.0,
+                "n_real": 97,
+                "n_synth": 44
+              },
+              "thermal_frac": {
+                "D": 0.14433,
+                "p": 0.5211,
+                "n_real": 97,
+                "n_synth": 44
+              }
+            },
+            "n_pass": 5,
+            "n_real": 97,
+            "n_synthetic": 44
+          }
+        },
+        "pooled_across_sections": {
+          "log_ke_ratio": {
+            "D": 0.258679,
+            "p": 1.2e-05,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "h_rate": {
+            "D": 0.0566,
+            "p": 0.935963,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "headless_rate": {
+            "D": 0.242945,
+            "p": 5e-05,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "mode_a_frac": {
+            "D": 0.157499,
+            "p": 0.023283,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "mean_opacity": {
+            "D": 0.163181,
+            "p": 0.016788,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "cat_entropy": {
+            "D": 0.158997,
+            "p": 0.021383,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "tokens_per_line": {
+            "D": 0.129808,
+            "p": 0.097112,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "m_terminal_rate": {
+            "D": 0.235171,
+            "p": 9.8e-05,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "dark_frac": {
+            "D": 0.130276,
+            "p": 0.095012,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "bridge_frac": {
+            "D": 0.361607,
+            "p": 0.0,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "thermal_frac": {
+            "D": 0.061064,
+            "p": 0.89137,
+            "n_real": 143,
+            "n_synth": 224
+          }
+        },
+        "n_pass": 4
+      },
+      "random_minimal": {
+        "pooled_across_sections": {
+          "log_ke_ratio": {
+            "D": 0.250198,
+            "p": 5e-06,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "h_rate": {
+            "D": 0.134325,
+            "p": 0.049615,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "headless_rate": {
+            "D": 0.42123,
+            "p": 0.0,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "mode_a_frac": {
+            "D": 0.255556,
+            "p": 3e-06,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "mean_opacity": {
+            "D": 0.225099,
+            "p": 6.2e-05,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "cat_entropy": {
+            "D": 0.136012,
+            "p": 0.04519,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "tokens_per_line": {
+            "D": 0.0875,
+            "p": 0.412922,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "m_terminal_rate": {
+            "D": 0.256746,
+            "p": 3e-06,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "dark_frac": {
+            "D": 0.116071,
+            "p": 0.126529,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "bridge_frac": {
+            "D": 0.196429,
+            "p": 0.000738,
+            "n_real": 180,
+            "n_synth": 224
+          },
+          "thermal_frac": {
+            "D": 0.144147,
+            "p": 0.028332,
+            "n_real": 180,
+            "n_synth": 224
+          }
+        },
+        "n_pass": 2
+      },
+      "random_short": {
+        "pooled_across_sections": {
+          "log_ke_ratio": {
+            "D": 0.228459,
+            "p": 0.000171,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "h_rate": {
+            "D": 0.073895,
+            "p": 0.711079,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "headless_rate": {
+            "D": 0.309909,
+            "p": 0.0,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "mode_a_frac": {
+            "D": 0.151723,
+            "p": 0.032084,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "mean_opacity": {
+            "D": 0.217064,
+            "p": 0.000424,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "cat_entropy": {
+            "D": 0.135333,
+            "p": 0.074657,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "tokens_per_line": {
+            "D": 0.200331,
+            "p": 0.001486,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "m_terminal_rate": {
+            "D": 0.235171,
+            "p": 9.8e-05,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "dark_frac": {
+            "D": 0.15394,
+            "p": 0.028409,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "bridge_frac": {
+            "D": 0.361607,
+            "p": 0.0,
+            "n_real": 143,
+            "n_synth": 224
+          },
+          "thermal_frac": {
+            "D": 0.069399,
+            "p": 0.780302,
+            "n_real": 143,
+            "n_synth": 224
+          }
+        },
+        "n_pass": 3
+      },
+      "shared_sections_minimal": [
+        "B",
+        "H",
+        "S"
+      ],
+      "shared_sections_short": [
+        "B",
+        "H",
+        "S"
+      ]
+    },
+    "verdict": "DISTINCT",
+    "verdict_source": "section_matched"
+  },
+  "T2_minimum_viable": {
+    "per_stratum_cosine": {
+      "MINIMAL": {
+        "cosine": 0.999198,
+        "n_paragraphs": 116
+      },
+      "SHORT": {
+        "cosine": 0.999197,
+        "n_paragraphs": 143
+      },
+      "LONG": {
+        "cosine": 0.999284,
+        "n_paragraphs": 112
+      }
+    },
+    "per_feature_first_vs_last": {
+      "MINIMAL": {
+        "MARKING_frac": {
+          "U": 6047.5,
+          "z": -1.553161,
+          "p": 0.120385,
+          "d": 0.029156,
+          "mean_first": 0.055184,
+          "mean_last": 0.052505
+        },
+        "STAGING_frac": {
+          "U": 6279.5,
+          "z": -0.898199,
+          "p": 0.36908,
+          "d": -0.244445,
+          "mean_first": 0.108909,
+          "mean_last": 0.138652
+        },
+        "THERMAL_frac": {
+          "U": 6698.0,
+          "z": -0.058787,
+          "p": 0.953122,
+          "d": -0.065527,
+          "mean_first": 0.26047,
+          "mean_last": 0.272154
+        },
+        "FLOW_frac": {
+          "U": 5536.0,
+          "z": -2.343177,
+          "p": 0.01912,
+          "d": 0.210149,
+          "mean_first": 0.216422,
+          "mean_last": 0.18373
+        },
+        "TRANSITION_frac": {
+          "U": 6482.5,
+          "z": -0.48324,
+          "p": 0.628925,
+          "d": 0.019153,
+          "mean_first": 0.173711,
+          "mean_last": 0.171106
+        },
+        "CONTAINMENT_frac": {
+          "U": 6270.5,
+          "z": -1.177331,
+          "p": 0.239063,
+          "d": 0.005529,
+          "mean_first": 0.034327,
+          "mean_last": 0.033957
+        },
+        "artic_rate": {
+          "U": 6254.5,
+          "z": -1.080884,
+          "p": 0.279749,
+          "d": -0.298566,
+          "mean_first": 0.038085,
+          "mean_last": 0.06808
+        },
+        "m_terminal_rate": {
+          "U": 6074.0,
+          "z": -2.420995,
+          "p": 0.015478,
+          "d": 0.248443,
+          "mean_first": 0.013733,
+          "mean_last": 0.006254
+        },
+        "mean_opacity": {
+          "U": 6694.5,
+          "z": -0.065683,
+          "p": 0.94763,
+          "d": 0.016173,
+          "mean_first": 0.441002,
+          "mean_last": 0.43835
+        },
+        "mode_a_frac": {
+          "U": 6255.5,
+          "z": -0.960793,
+          "p": 0.336656,
+          "d": -0.007012,
+          "mean_first": 0.111929,
+          "mean_last": 0.112806
+        },
+        "headless_rate": {
+          "U": 5799.5,
+          "z": -1.82389,
+          "p": 0.068169,
+          "d": 0.215757,
+          "mean_first": 0.20812,
+          "mean_last": 0.177768
+        },
+        "tokens_per_line": {
+          "U": 580.0,
+          "z": -12.112027,
+          "p": 0.0,
+          "d": 2.519181,
+          "mean_first": 11.258621,
+          "mean_last": 6.551724
+        }
+      },
+      "SHORT": {
+        "MARKING_frac": {
+          "U": 9696.0,
+          "z": -0.870045,
+          "p": 0.384276,
+          "d": -0.026246,
+          "mean_first": 0.05955,
+          "mean_last": 0.06203
+        },
+        "STAGING_frac": {
+          "U": 9790.0,
+          "z": -0.638187,
+          "p": 0.523352,
+          "d": 0.055756,
+          "mean_first": 0.124214,
+          "mean_last": 0.117641
+        },
+        "THERMAL_frac": {
+          "U": 8785.5,
+          "z": -2.062291,
+          "p": 0.03918,
+          "d": 0.223571,
+          "mean_first": 0.265459,
+          "mean_last": 0.226252
+        },
+        "FLOW_frac": {
+          "U": 10213.5,
+          "z": -0.015797,
+          "p": 0.987396,
+          "d": -0.053165,
+          "mean_first": 0.195725,
+          "mean_last": 0.203816
+        },
+        "TRANSITION_frac": {
+          "U": 9253.0,
+          "z": -1.398129,
+          "p": 0.162074,
+          "d": -0.197327,
+          "mean_first": 0.155874,
+          "mean_last": 0.183925
+        },
+        "CONTAINMENT_frac": {
+          "U": 9107.0,
+          "z": -1.97806,
+          "p": 0.047922,
+          "d": 0.064167,
+          "mean_first": 0.052438,
+          "mean_last": 0.046515
+        },
+        "artic_rate": {
+          "U": 9676.0,
+          "z": -0.96344,
+          "p": 0.335327,
+          "d": -0.277885,
+          "mean_first": 0.032944,
+          "mean_last": 0.054826
+        },
+        "m_terminal_rate": {
+          "U": 9787.5,
+          "z": -1.27562,
+          "p": 0.20209,
+          "d": 0.00868,
+          "mean_first": 0.010771,
+          "mean_last": 0.010448
+        },
+        "mean_opacity": {
+          "U": 9896.0,
+          "z": -0.47023,
+          "p": 0.638191,
+          "d": -0.074259,
+          "mean_first": 0.443955,
+          "mean_last": 0.456436
+        },
+        "mode_a_frac": {
+          "U": 9872.5,
+          "z": -0.531032,
+          "p": 0.595397,
+          "d": -0.14964,
+          "mean_first": 0.086059,
+          "mean_last": 0.103319
+        },
+        "headless_rate": {
+          "U": 10193.5,
+          "z": -0.044431,
+          "p": 0.964561,
+          "d": -0.008919,
+          "mean_first": 0.233135,
+          "mean_last": 0.234634
+        },
+        "tokens_per_line": {
+          "U": 983.5,
+          "z": -13.305578,
+          "p": 0.0,
+          "d": 2.412517,
+          "mean_first": 10.846154,
+          "mean_last": 6.566434
+        }
+      },
+      "LONG": {
+        "MARKING_frac": {
+          "U": 5666.0,
+          "z": -1.475707,
+          "p": 0.140023,
+          "d": -0.031063,
+          "mean_first": 0.057179,
+          "mean_last": 0.060381
+        },
+        "STAGING_frac": {
+          "U": 6113.0,
+          "z": -0.333047,
+          "p": 0.739099,
+          "d": -0.094452,
+          "mean_first": 0.137871,
+          "mean_last": 0.15089
+        },
+        "THERMAL_frac": {
+          "U": 6240.5,
+          "z": -0.065202,
+          "p": 0.948013,
+          "d": -0.025791,
+          "mean_first": 0.24504,
+          "mean_last": 0.249682
+        },
+        "FLOW_frac": {
+          "U": 5994.5,
+          "z": -0.579821,
+          "p": 0.562035,
+          "d": 0.067928,
+          "mean_first": 0.169629,
+          "mean_last": 0.160063
+        },
+        "TRANSITION_frac": {
+          "U": 5724.5,
+          "z": -1.150656,
+          "p": 0.249874,
+          "d": 0.025919,
+          "mean_first": 0.147141,
+          "mean_last": 0.143368
+        },
+        "CONTAINMENT_frac": {
+          "U": 5664.5,
+          "z": -1.491529,
+          "p": 0.135823,
+          "d": 0.012228,
+          "mean_first": 0.059897,
+          "mean_last": 0.058649
+        },
+        "artic_rate": {
+          "U": 5686.5,
+          "z": -1.514636,
+          "p": 0.129865,
+          "d": -0.004758,
+          "mean_first": 0.03945,
+          "mean_last": 0.039793
+        },
+        "m_terminal_rate": {
+          "U": 5947.0,
+          "z": -1.421599,
+          "p": 0.155143,
+          "d": 0.156457,
+          "mean_first": 0.014009,
+          "mean_last": 0.007309
+        },
+        "mean_opacity": {
+          "U": 6094.0,
+          "z": -0.367701,
+          "p": 0.713096,
+          "d": 0.028401,
+          "mean_first": 0.473717,
+          "mean_last": 0.468767
+        },
+        "mode_a_frac": {
+          "U": 6127.5,
+          "z": -0.317477,
+          "p": 0.750882,
+          "d": -0.13012,
+          "mean_first": 0.085989,
+          "mean_last": 0.10202
+        },
+        "headless_rate": {
+          "U": 5763.0,
+          "z": -1.051413,
+          "p": 0.293069,
+          "d": 0.062083,
+          "mean_first": 0.288518,
+          "mean_last": 0.276978
+        },
+        "tokens_per_line": {
+          "U": 1517.5,
+          "z": -9.856001,
+          "p": 0.0,
+          "d": 1.672794,
+          "mean_first": 9.910714,
+          "mean_last": 6.3125
+        }
+      }
+    },
+    "section_controlled": {},
+    "minimum_viable_body_lines": null
+  },
+  "T3_kernel_gradient": {
+    "per_stratum": {
+      "MINIMAL": {
+        "mean_rho": 0.0,
+        "n_paragraphs_with_rho": 0,
+        "pooled_rho": -0.040553,
+        "pooled_p": 0.538815,
+        "pooled_n": 232
+      },
+      "SHORT": {
+        "mean_rho": -0.106642,
+        "n_paragraphs_with_rho": 143,
+        "pooled_rho": -0.077968,
+        "pooled_p": 0.085974,
+        "pooled_n": 486
+      },
+      "LONG": {
+        "mean_rho": -0.041799,
+        "n_paragraphs_with_rho": 112,
+        "pooled_rho": -0.035329,
+        "pooled_p": 0.277948,
+        "pooled_n": 945
+      }
+    },
+    "section_controlled": {}
+  },
+  "T4_m_terminal": {
+    "per_stratum": {
+      "MINIMAL": {
+        "last_line_m_terminal_rate": 0.005641,
+        "last_line_mean_opacity": 0.428602,
+        "n": 183
+      },
+      "SHORT": {
+        "last_line_m_terminal_rate": 0.010448,
+        "last_line_mean_opacity": 0.456436,
+        "n": 143
+      },
+      "LONG": {
+        "last_line_m_terminal_rate": 0.007309,
+        "last_line_mean_opacity": 0.468767,
+        "n": 112
+      }
+    },
+    "kruskal_wallis": {
+      "m_terminal": {
+        "H": 0.393454,
+        "df": 2,
+        "p": 0.821415
+      },
+      "opacity": {
+        "H": 4.587821,
+        "df": 2,
+        "p": 0.100871
+      }
+    },
+    "pairwise": {
+      "MINIMAL_vs_LONG": {
+        "m_terminal": {
+          "U": 10196.0,
+          "z": -0.192112,
+          "p": 0.847654,
+          "d": -0.058568
+        },
+        "opacity": {
+          "U": 8706.0,
+          "z": -2.175543,
+          "p": 0.029589,
+          "d": -0.218778
+        }
+      }
+    },
+    "section_controlled": {
+      "per_stratum": {},
+      "kruskal_wallis": {}
+    }
+  },
+  "T5_header_body_coupling": {
+    "per_stratum_mean_abs_rho": {
+      "MINIMAL": 0.070143,
+      "SHORT": 0.078113,
+      "LONG": 0.097629
+    },
+    "per_stratum_detail": {
+      "MINIMAL": {
+        "mean_abs_rho": 0.070143,
+        "n_significant_pairs": 14,
+        "total_pairs": 77,
+        "n_paragraphs": 183
+      },
+      "SHORT": {
+        "mean_abs_rho": 0.078113,
+        "n_significant_pairs": 10,
+        "total_pairs": 77,
+        "n_paragraphs": 143
+      },
+      "LONG": {
+        "mean_abs_rho": 0.097629,
+        "n_significant_pairs": 13,
+        "total_pairs": 77,
+        "n_paragraphs": 112
+      }
+    },
+    "top_correlated_pairs": {
+      "MINIMAL": [
+        {
+          "pair": "e_frac_x_thermal_frac",
+          "rho": 0.175572,
+          "p": 0.017439
+        },
+        {
+          "pair": "o_frac_x_thermal_frac",
+          "rho": -0.175473,
+          "p": 0.017504
+        },
+        {
+          "pair": "a_frac_x_mean_opacity",
+          "rho": 0.172481,
+          "p": 0.019553
+        },
+        {
+          "pair": "k_frac_x_cat_entropy",
+          "rho": -0.17163,
+          "p": 0.020173
+        },
+        {
+          "pair": "n_tokens_x_mean_opacity",
+          "rho": -0.167946,
+          "p": 0.023054
+        }
+      ],
+      "SHORT": [
+        {
+          "pair": "n_tokens_x_tokens_per_line",
+          "rho": 0.478401,
+          "p": 0.0
+        },
+        {
+          "pair": "k_frac_x_thermal_frac",
+          "rho": 0.292771,
+          "p": 0.000388
+        },
+        {
+          "pair": "e_frac_x_h_rate",
+          "rho": 0.214918,
+          "p": 0.009946
+        },
+        {
+          "pair": "k_frac_x_log_ke_ratio",
+          "rho": 0.201628,
+          "p": 0.015743
+        },
+        {
+          "pair": "a_frac_x_h_rate",
+          "rho": -0.201621,
+          "p": 0.015747
+        }
+      ],
+      "LONG": [
+        {
+          "pair": "n_tokens_x_tokens_per_line",
+          "rho": 0.571561,
+          "p": 0.0
+        },
+        {
+          "pair": "k_frac_x_tokens_per_line",
+          "rho": -0.344589,
+          "p": 0.000199
+        },
+        {
+          "pair": "k_frac_x_thermal_frac",
+          "rho": 0.296919,
+          "p": 0.001478
+        },
+        {
+          "pair": "e_frac_x_thermal_frac",
+          "rho": 0.278559,
+          "p": 0.002939
+        },
+        {
+          "pair": "o_frac_x_cat_entropy",
+          "rho": 0.268096,
+          "p": 0.004264
+        }
+      ]
+    },
+    "coupling_increases_with_shortness": false,
+    "section_controlled": {}
+  }
+}

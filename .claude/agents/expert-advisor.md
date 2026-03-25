@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1846 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1857 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1847.
+the highest ID present is C1858.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1846 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1857 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1846 validated constraints are present as canonical one-line claims with tier
+1857 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-25 10:30
-**Version:** FROZEN STATE (1846 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-25 13:54
+**Version:** FROZEN STATE (1857 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2086,6 +2086,17 @@ C1844	Arc templates orthogonal to C853 static taxonomy: ARI(arc_clusters, C853_k
 C1845	Section weakly affects raw arc clustering: Cramer's V=0.154 for Pass A (raw, non-residualized). Unlike most structural features where section is the dominant axis, arc shape is minimally section-determined. Consistent with the universal grammar arc being shared across sections	2	B, paragraph, section, C1838
 C1846	Within Herbal, paragraph arc clustering is unstable: bootstrap ARI=0.40 (below 0.50 stability threshold). Even the largest section produces no robust within-section template structure. Per-section template diversity entropy=0.984	2	B, H-section, paragraph, bootstrap
 C1847	Header features do not predict arc template above chance: LOO accuracy=0.56 vs chance=0.50. Gallows type alone (0.63) outperforms full header features. Templates lack specification-level reality, confirming arc shape is not header-determined. Template ordering within folios is null, consistent with C1399	2	B, paragraph, header, gallows, C1399, C1795
+C1848	Short paragraphs (0-4 body lines, 85.8% of B) NOT truncated beginnings of long paragraphs: position-matched subsample null fails at pooled level (4/11 features pass KS p>0.05, need 8+). Both position-matched and random subsamples fail similarly — pooled distinctness is driven by section composition mismatch, not positional truncation	2	B, paragraph, stratum, subsample, C1206
+C1849	Section dominates stratum variance: section x stratum V=0.468. After section residualization, 8/11 paragraph features become stratum-invariant (SHORT vs LONG). Within Recipe: 10/11 invariant. Golden folio (48 folios with both strata from same section): 7/11 invariant. Most apparent stratum effects are section selection artifacts	2	B, paragraph, section, stratum, C860, C1404
+C1850	Three features show genuine stratum effects after section control: cat_entropy, tokens_per_line, m_terminal_rate. All length-mechanical, not operational mode differences	2	B, paragraph, stratum, features, length_residual
+C1851	Zone classification (C1398) stratum-independent: V=0.098 across MINIMAL/SHORT/LONG. MINIMAL paragraphs span all operational zones uniformly (OPERATION 56%, THERMAL_QO 29%, CONTAINMENT 13%, MONITORING 2%). Within Recipe: V=0.101, p=0.447. Short paragraphs are compressed general-purpose units, not zone-specialized	2	B, paragraph, zones, stratum, C1398
+C1852	HEADER_ONLY paragraphs overwhelmingly non-gallows-initial: 87.8% (79/90) have no gallows-initial token. Opener fraction (k+f) = 4.4% (lowest of all strata vs LONG 8.9%). k-fraction enriched in header atoms, o-fraction depleted. Reverses C1780/C1784 prediction — HEADER_ONLY are NOT executive gallows declarations	2	B, paragraph, header_only, gallows, C1780, C1784
+C1853	HEADER_ONLY do not create paragraph dependencies after section control: post-HO paragraphs differ in 8/11 features pooled (section confound) but 0/11 within Recipe (2 post-HO paragraphs). Punctuation function borderline: zone change rate 64.7% vs baseline 47.7%, permutation p=0.06 (not significant). Consistent with C845 self-containment	2	B, paragraph, header_only, independence, C845, C1399
+C1854	No anti-parallel arc in category-level feature space: first/last body line cosine=+0.999 at all strata (MINIMAL 0.9992, SHORT 0.9992, LONG 0.9993). C1837's anti-parallel finding (cosine=-0.989) operates at atom enrichment grain not captured by 12 category-level features. Caveat: features not z-scored, tokens_per_line (d>2.0 first vs last) dominates cosine	2	B, paragraph, arc, boundary, C1837, C1842
+C1855	Kernel h-rate declining gradient (C1206) not detected at paragraph body-position level in any stratum. SHORT: rho=-0.078, p=0.086. LONG: rho=-0.035, p=0.278. MINIMAL: rho=-0.041, p=0.539. C1206 gradient may operate at finer position resolution, within specific sections, or at sub-paragraph scale not captured by between-body-line analysis	2	B, paragraph, kernel, gradient, C1206
+C1856	Header-body feature coupling increases monotonically with paragraph length: MINIMAL mean|rho|=0.070, SHORT 0.078, LONG 0.098. Longer paragraphs allow more header→body prediction. Consistent with C1795 (dR2=+0.063). Coupling does NOT increase with shortness — short paragraphs are more header-independent	2	B, paragraph, header, coupling, C1795
+C1857	HIGH-count folios (9+ paragraphs) show stronger sequential organization: steeper first-line length gradient, more structured gallows transitions, MORE paragraph diversity (mean within-folio JSD=0.146 vs LOW 0.119). HIGH-count folios are internally heterogeneous recipe collections with strong ordering	2	B, folio, paragraph, organization, gradient
+C1858	Section-specific truncation: within Recipe, MINIMAL paragraphs pass position-matched subsample null (8/11 features, n_real=163, n_synth=44). Recipe MINIMAL specifically resembles truncated beginnings of Recipe LONG. B-section (9/11, n_real=5) and H-section (9/11, n_real=12) show same pattern. Pooled failure (C1848) is driven by cross-section composition mismatch	2	B, paragraph, section, Recipe, truncation, C1848
 
 ---
 
