@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1870 validated constraints | **Version:** 5.98 | **Date:** 2026-03-25
+**Total:** 1881 validated constraints | **Version:** 5.99 | **Date:** 2026-03-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,32 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 627: Per-Domain Bridge Historical Calibration — CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED (C1871-C1881)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1871 | All 4 HEAD-channel features (k, h, e, t) discriminate REGIMEs at Bonferroni significance (KW p<0.001), survives within-Herbal replication (n=76). k: H=44.7, h: H=43.8, e: H=31.7, t: H=46.8. HEAD-channel organization is strongly REGIME-structured | 2 | B, REGIME, HEAD, within-Herbal | k_KW_H=44.7. h_KW_H=43.8. e_KW_H=31.7. t_KW_H=46.8. all_p<0.001. n_herbal=76. |
+| 1872 | k_ratio INVERSELY correlated with REGIME ordinal/fire degree (rho=-0.554, p=0.001), within-Herbal confirmed (H=39.8). k-HEAD tokens index thermal management/regulation intensity, not thermal energy delivery. R2 (fire degree 1, gentlest) has highest k_ratio (0.418), R4 (fire degree 4, strongest) has lowest (0.221) | 2 | B, k-channel, REGIME, thermal | rho=-0.554. p=0.001. R2_k=0.418. R1_k=0.345. R3_k=0.249. R4_k=0.221. |
+| 1873 | e-channel (e_ratio) differentiates Stars R1 vs R3 (U=98, p=0.009, n=10+12), replicating C1735 at HEAD-channel resolution. PL correction_rate shows directional alignment (rho=1.0 across 4 families, p=0.085) | 2 | B, e-channel, Stars, C1735 | U=98. p=0.009. n_R1=10. n_R3=12. corr_rho=1.0. corr_p=0.085. |
+| 1874 | PL within-distillation chapter distance does NOT correspond to V within-R1 folio HEAD-channel distance (structural Mantel r=-0.363, p=0.745). PL Theorica null r=-0.176, shuffled null r=0.003. Within-family structure mapping fails completely | 2 | A↔B, cross-family, PL, distillation | mantel_r=-0.363. p=0.745. null_theorica_r=-0.176. null_shuffled_r=0.003. |
+| 1875 | PL Theorica chapters show zero correlation with V HEAD-channel profiles (all rho NS, lowest p=0.336). Negative control confirmed: non-operational PL text has no V HEAD-channel signature | 2 | cross-family, PL, negative-control | all_p>0.336. n_features=4. |
+| 1876 | PL chapter length does NOT predict V HEAD-channel features (all rho NS, lowest p=0.744). Null control confirmed: chapter length artifact excluded | 2 | cross-family, PL, null-control | all_p>0.744. n_features=4. |
+| 1877 | Cross-channel leakage via 4-REGIME mediation measured at 0.513 mean |off-diagonal rho|, but n=4 makes this measurement unreliable. Channel independence NOT assessable at this resolution. Requires within-REGIME variance analysis for proper test | 2 | B, channels, REGIME | mean_off_diag=0.513. n_regimes=4. |
+| 1878 | Brunschwig fire degree ordering weakly consistent with V k_ratio REGIME ordering (rho=0.2, p=0.917, n=3). Directional agreement present but far below significance — power insufficient for 3-point calibration | 3 | cross-family, Brunschwig, k-channel | rho=0.2. p=0.917. n=3. |
+| 1879 | LOO REGIME prediction from PL features: mean MAE=0.11, worst R4 MAE=0.19. PL family features are poor predictors of individual REGIME HEAD-channel profiles. R4 (precision axis, C494) is least predictable | 2 | cross-family, PL, REGIME | mean_MAE=0.11. worst_MAE=0.19. worst_regime=R4. |
+| 1880 | PL-to-V calibration operates at domain level (distillation-vs-rest per C1754), not at per-channel level. HEAD-channel structure is V-internal organization, not externally calibratable by PL features alone. PL subtype features at chapter resolution do not map to V folio-level HEAD-channel variation | 2 | A↔B, cross-family, PL, HEAD | C1754_confirmed. channel_calibration_fails. domain_calibration_holds. |
+| 1881 | CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED verdict: HEAD channels discriminate REGIMEs strongly (V-internal), e-channel has external Stars calibration, but PL feature structure does not map to V HEAD-channel structure. 4 PASS / 3 FAIL | 2 | A↔B, B, phase-verdict | pass=4. fail=3. |
+
+**Phase 627 findings (Per-Domain Bridge Historical Calibration, CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED):**
+- All four HEAD channels (k, h, e, t) discriminate REGIMEs at extreme significance (C1871), confirming that HEAD-channel organization is strongly V-internal and REGIME-structured.
+- The k-channel shows an INVERSE relationship with fire degree/thermal intensity (C1872): k_ratio is highest in R2 (gentlest fire, 0.418) and lowest in R4 (strongest fire, 0.221). This means k-HEAD tokens index thermal management/regulation, not thermal delivery.
+- The e-channel replicates C1735 within Stars at HEAD-channel resolution (C1873, p=0.009), and PL correction_rate shows directional alignment across families.
+- The core novel test FAILS (C1874): PL within-distillation chapter structural correspondence with V within-R1 folio structure is negative (r=-0.363). PL's internal recipe-to-recipe variation does NOT map to V's folio-to-folio variation.
+- Both negative controls pass cleanly (C1875, C1876). LOO cross-validation shows poor prediction (C1879, MAE=0.11).
+- The headline conclusion (C1880): PL-to-V calibration remains at domain level (distillation-vs-rest), not per-channel. HEAD-channel structure is V-internal, not externally calibratable by PL features at this resolution.
 
 ---
 

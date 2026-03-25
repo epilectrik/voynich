@@ -4,6 +4,40 @@
 
 ---
 
+## Version 5.99 (2026-03-25) - Phase 627: Per-Domain Bridge Historical Calibration
+
+### Summary
+
+Phase 627 tests whether pseudo-Lull's (PL) per-chapter operational features decompose along the same HEAD-typed channels that the A→B bridge uses (proved by Phase 626). Three scripts: PL per-chapter subtype extraction (heat modes, monitoring, termination, correction from Phase 602 regex patterns), per-HEAD-channel calibration tests (CORE: within-family distance, REGIME contrast, Brunschwig triangulation, channel independence, negative controls), and calibrated decode enrichment. Key result: **CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED** — HEAD channels discriminate REGIMEs at extreme significance (all KW p<0.001, within-Herbal confirmed), e-channel has external Stars calibration (p=0.009), but PL feature structure does NOT map to V HEAD-channel structure. The core novel test (within-distillation distance correspondence) fails (Mantel r=-0.363). k_ratio is INVERSELY correlated with fire degree (rho=-0.554), meaning k-HEAD tokens index thermal management, not thermal delivery. Both negative controls pass. 11 constraints registered (C1871-C1881). Prediction scorecard: 4 PASS, 3 FAIL.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PER_DOMAIN_BRIDGE_CALIBRATION/` -- Phase 627 with 3 scripts, shared module, JSON results, INDEX.md |
+| **ADDED** | C1871: All 4 HEAD-channel features discriminate REGIMEs at Bonferroni significance, survives within-Herbal |
+| **ADDED** | C1872: k_ratio INVERSELY correlated with REGIME ordinal (rho=-0.554) — thermal management, not delivery |
+| **ADDED** | C1873: e-channel Stars R1 vs R3 differentiation confirmed (U=98, p=0.009), extends C1735 |
+| **ADDED** | C1874: PL within-distillation distance does NOT correspond to V within-R1 distance (r=-0.363) |
+| **ADDED** | C1875: PL Theorica chapters zero V correlation — negative control pass |
+| **ADDED** | C1876: PL chapter length zero V prediction — null control pass |
+| **ADDED** | C1877: Cross-channel leakage unmeasurable at n=4 REGIME resolution |
+| **ADDED** | C1878: Brunschwig fire degree ordering weakly consistent (rho=0.2, n=3, underpowered) |
+| **ADDED** | C1879: LOO REGIME prediction from PL: MAE=0.11, worst R4=0.19 |
+| **ADDED** | C1880: PL-to-V calibration is domain-level, not per-channel — HEAD structure is V-internal |
+| **ADDED** | C1881: CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED verdict |
+| **UPDATED** | INDEX.md -- +11 constraints (1881 total), Phase 627 section |
+
+### Key Findings
+
+1. **HEAD channels discriminate REGIMEs (C1871):** All four channels (k, h, e, t) show extreme KW significance across REGIMEs, surviving within-Herbal control. This is V-internal organization confirmed at HEAD-channel resolution.
+2. **k-channel inverse (C1872):** k_ratio decreases with fire degree/thermal intensity — k-HEAD tokens manage/regulate heat, not deliver it. R2 (gentlest) has k_ratio=0.418, R4 (strongest) has 0.221.
+3. **e-channel Stars calibration (C1873):** Replicates C1735 at HEAD resolution (p=0.009). PL correction_rate directionally aligned (rho=1.0, p=0.085).
+4. **Within-family structure fails (C1874):** The genuine novel test — PL distillation chapter-to-chapter variation mapping to V REGIME_1 folio-to-folio variation — completely fails (r=-0.363). PL's internal recipe structure does not predict V's internal program structure.
+5. **Domain-level only (C1880):** PL calibration remains at distillation-vs-rest level (confirming C1754), not per-channel. HEAD-channel structure is V-internal.
+
+---
+
 ## Version 5.98 (2026-03-25) - Phase 626: A-to-B Bridge Operational Decomposition
 
 ### Summary

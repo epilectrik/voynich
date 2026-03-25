@@ -1,0 +1,452 @@
+{
+  "metadata": {
+    "phase": 627,
+    "script": 2,
+    "name": "channel_calibration",
+    "timestamp": "2026-03-25T17:55:19",
+    "elapsed_s": 1.136003,
+    "script1_channel_data": true
+  },
+  "T1_v_profiles": {
+    "n_folios": 82,
+    "n_herbal": 76,
+    "regime_profiles": {
+      "REGIME_1": {
+        "k_ratio": 0.3446,
+        "e_ratio": 0.535984,
+        "h_ratio": 0.119409,
+        "thermo_ke": 0.041139,
+        "thermo_kch": 0.004616,
+        "iteration_rate": 0.006869,
+        "checkpoint_rate": 0.138303,
+        "terminal_rate": 0.144263
+      },
+      "REGIME_3": {
+        "k_ratio": 0.248625,
+        "e_ratio": 0.527,
+        "h_ratio": 0.224375,
+        "thermo_ke": 0.02073,
+        "thermo_kch": 0.013568,
+        "iteration_rate": 0.010895,
+        "checkpoint_rate": 0.16514,
+        "terminal_rate": 0.198865
+      },
+      "REGIME_4": {
+        "k_ratio": 0.221487,
+        "e_ratio": 0.607967,
+        "h_ratio": 0.17054,
+        "thermo_ke": 0.028986,
+        "thermo_kch": 0.009141,
+        "iteration_rate": 0.004113,
+        "checkpoint_rate": 0.052227,
+        "terminal_rate": 0.327827
+      },
+      "REGIME_2": {
+        "k_ratio": 0.417793,
+        "e_ratio": 0.407527,
+        "h_ratio": 0.174687,
+        "thermo_ke": 0.009756,
+        "thermo_kch": 0.010822,
+        "iteration_rate": 0.014353,
+        "checkpoint_rate": 0.159,
+        "terminal_rate": 0.29336
+      }
+    },
+    "herbal_regime_profiles": {
+      "REGIME_1": {
+        "k_ratio": 0.339871,
+        "e_ratio": 0.540823,
+        "h_ratio": 0.1193,
+        "thermo_ke": 0.041527,
+        "thermo_kch": 0.004452,
+        "iteration_rate": 0.00709,
+        "checkpoint_rate": 0.13059,
+        "terminal_rate": 0.139787
+      },
+      "REGIME_3": {
+        "k_ratio": 0.248026,
+        "e_ratio": 0.527368,
+        "h_ratio": 0.224605,
+        "thermo_ke": 0.0213,
+        "thermo_kch": 0.01324,
+        "iteration_rate": 0.011468,
+        "checkpoint_rate": 0.165263,
+        "terminal_rate": 0.201989
+      },
+      "REGIME_4": {
+        "k_ratio": 0.221487,
+        "e_ratio": 0.607967,
+        "h_ratio": 0.17054,
+        "thermo_ke": 0.028986,
+        "thermo_kch": 0.009141,
+        "iteration_rate": 0.004113,
+        "checkpoint_rate": 0.052227,
+        "terminal_rate": 0.327827
+      },
+      "REGIME_2": {
+        "k_ratio": 0.414482,
+        "e_ratio": 0.411491,
+        "h_ratio": 0.174036,
+        "thermo_ke": 0.010309,
+        "thermo_kch": 0.011721,
+        "iteration_rate": 0.019573,
+        "checkpoint_rate": 0.132964,
+        "terminal_rate": 0.291155
+      }
+    }
+  },
+  "T2_within_family_distance": {
+    "pl_distillation_n": 16,
+    "v_regime1_n": 32,
+    "structural_mantel_r": -0.362559,
+    "structural_mantel_p": 0.745255,
+    "null_theorica_r": -0.176146,
+    "null_shuffled_r": 0.003174,
+    "null_random_r": -0.057964,
+    "P3_pass": false
+  },
+  "T3_per_channel_contrast": {
+    "k_channel": {
+      "features": {
+        "k_ratio": {
+          "full_kw_H": 44.716151,
+          "full_kw_p": 0.0,
+          "herbal_kw_H": 39.807412,
+          "herbal_kw_p": 0.0,
+          "regime_means": {
+            "REGIME_1": 0.3446,
+            "REGIME_2": 0.417793,
+            "REGIME_3": 0.248625,
+            "REGIME_4": 0.221487
+          },
+          "rho": -0.553945,
+          "rho_p": 0.000999,
+          "dist_vs_rest_U": 1085.0,
+          "dist_vs_rest_p": 0.005003
+        },
+        "thermo_ke": {
+          "full_kw_H": 29.029952,
+          "full_kw_p": 3e-06,
+          "herbal_kw_H": 24.604663,
+          "herbal_kw_p": 2.2e-05,
+          "regime_means": {
+            "REGIME_1": 0.041139,
+            "REGIME_2": 0.009756,
+            "REGIME_3": 0.02073,
+            "REGIME_4": 0.028986
+          },
+          "rho": -0.3219,
+          "rho_p": 0.001998,
+          "dist_vs_rest_U": 1290.0,
+          "dist_vs_rest_p": 2e-06
+        }
+      },
+      "full_kw_H": 44.716151,
+      "full_kw_p": 0.0,
+      "herbal_kw_H": 39.807412,
+      "herbal_kw_p": 0.0,
+      "regime_means": {
+        "REGIME_1": 0.3446,
+        "REGIME_2": 0.417793,
+        "REGIME_3": 0.248625,
+        "REGIME_4": 0.221487
+      },
+      "rho": -0.553945,
+      "rho_p": 0.000999,
+      "dist_vs_rest_U": 1085.0,
+      "dist_vs_rest_p": 0.005003
+    },
+    "h_channel": {
+      "features": {
+        "h_ratio": {
+          "full_kw_H": 43.781406,
+          "full_kw_p": 0.0,
+          "herbal_kw_H": 40.854639,
+          "herbal_kw_p": 0.0,
+          "regime_means": {
+            "REGIME_1": 0.119409,
+            "REGIME_2": 0.174687,
+            "REGIME_3": 0.224375,
+            "REGIME_4": 0.17054
+          },
+          "rho": 0.573834,
+          "rho_p": 0.000999,
+          "dist_vs_rest_U": 174.0,
+          "dist_vs_rest_p": 0.0
+        },
+        "checkpoint_rate": {
+          "full_kw_H": 27.541139,
+          "full_kw_p": 6e-06,
+          "herbal_kw_H": 26.866733,
+          "herbal_kw_p": 9e-06,
+          "regime_means": {
+            "REGIME_1": 0.138303,
+            "REGIME_2": 0.159,
+            "REGIME_3": 0.16514,
+            "REGIME_4": 0.052227
+          },
+          "rho": -0.223938,
+          "rho_p": 0.035964,
+          "dist_vs_rest_U": 817.5,
+          "dist_vs_rest_p": 0.82535
+        }
+      },
+      "full_kw_H": 43.781406,
+      "full_kw_p": 0.0,
+      "herbal_kw_H": 40.854639,
+      "herbal_kw_p": 0.0,
+      "regime_means": {
+        "REGIME_1": 0.119409,
+        "REGIME_2": 0.174687,
+        "REGIME_3": 0.224375,
+        "REGIME_4": 0.17054
+      },
+      "rho": 0.573834,
+      "rho_p": 0.000999,
+      "dist_vs_rest_U": 174.0,
+      "dist_vs_rest_p": 0.0
+    },
+    "e_channel": {
+      "features": {
+        "e_ratio": {
+          "full_kw_H": 31.739491,
+          "full_kw_p": 1e-06,
+          "herbal_kw_H": 25.698421,
+          "herbal_kw_p": 1.4e-05,
+          "regime_means": {
+            "REGIME_1": 0.535984,
+            "REGIME_2": 0.407527,
+            "REGIME_3": 0.527,
+            "REGIME_4": 0.607967
+          },
+          "rho": 0.190738,
+          "rho_p": 0.088911,
+          "dist_vs_rest_U": 903.0,
+          "dist_vs_rest_p": 0.268338
+        },
+        "thermo_kch": {
+          "full_kw_H": 13.808506,
+          "full_kw_p": 0.002497,
+          "herbal_kw_H": 12.146853,
+          "herbal_kw_p": 0.005275,
+          "regime_means": {
+            "REGIME_1": 0.004616,
+            "REGIME_2": 0.010822,
+            "REGIME_3": 0.013568,
+            "REGIME_4": 0.009141
+          },
+          "rho": 0.281323,
+          "rho_p": 0.006993,
+          "dist_vs_rest_U": 488.5,
+          "dist_vs_rest_p": 0.002261
+        }
+      },
+      "full_kw_H": 31.739491,
+      "full_kw_p": 1e-06,
+      "herbal_kw_H": 25.698421,
+      "herbal_kw_p": 1.4e-05,
+      "regime_means": {
+        "REGIME_1": 0.535984,
+        "REGIME_2": 0.407527,
+        "REGIME_3": 0.527,
+        "REGIME_4": 0.607967
+      },
+      "rho": 0.190738,
+      "rho_p": 0.088911,
+      "dist_vs_rest_U": 903.0,
+      "dist_vs_rest_p": 0.268338
+    },
+    "t_channel": {
+      "features": {
+        "terminal_rate": {
+          "full_kw_H": 46.822058,
+          "full_kw_p": 0.0,
+          "herbal_kw_H": 44.998481,
+          "herbal_kw_p": 0.0,
+          "regime_means": {
+            "REGIME_1": 0.144263,
+            "REGIME_2": 0.29336,
+            "REGIME_3": 0.198865,
+            "REGIME_4": 0.327827
+          },
+          "rho": 0.598655,
+          "rho_p": 0.000999,
+          "dist_vs_rest_U": 179.0,
+          "dist_vs_rest_p": 0.0
+        },
+        "iteration_rate": {
+          "full_kw_H": 9.126997,
+          "full_kw_p": 0.020821,
+          "herbal_kw_H": 13.421433,
+          "herbal_kw_p": 0.00297,
+          "regime_means": {
+            "REGIME_1": 0.006869,
+            "REGIME_2": 0.014353,
+            "REGIME_3": 0.010895,
+            "REGIME_4": 0.004113
+          },
+          "rho": -0.046893,
+          "rho_p": 0.683317,
+          "dist_vs_rest_U": 738.5,
+          "dist_vs_rest_p": 0.484472
+        }
+      },
+      "full_kw_H": 46.822058,
+      "full_kw_p": 0.0,
+      "herbal_kw_H": 44.998481,
+      "herbal_kw_p": 0.0,
+      "regime_means": {
+        "REGIME_1": 0.144263,
+        "REGIME_2": 0.29336,
+        "REGIME_3": 0.198865,
+        "REGIME_4": 0.327827
+      },
+      "rho": 0.598655,
+      "rho_p": 0.000999,
+      "dist_vs_rest_U": 179.0,
+      "dist_vs_rest_p": 0.0
+    },
+    "P1_pass": false,
+    "bonferroni_alpha": 0.00625
+  },
+  "T4_k_triangulation": {
+    "regime_k_means": {
+      "REGIME_1": 0.3446,
+      "REGIME_3": 0.248625,
+      "REGIME_4": 0.221487,
+      "REGIME_2": 0.417793
+    },
+    "brunschwig_ordering": [
+      "REGIME_2",
+      "REGIME_1",
+      "REGIME_3",
+      "REGIME_4"
+    ],
+    "brunschwig_regime_fire_means": {
+      "REGIME_3": 3.0,
+      "REGIME_1": 2.0,
+      "REGIME_2": 1.0
+    },
+    "pl_intensity_groups": {
+      "low": 0.0,
+      "medium": 4.0,
+      "high": 0.0
+    },
+    "fire_k_rho": 0.2,
+    "fire_k_p": 0.917083,
+    "herbal_k_rho": 0.2,
+    "ordering_agreement": true,
+    "herbal_agreement": true,
+    "P4_pass": true
+  },
+  "T5_e_channel": {
+    "pl_family_correction_rates": {
+      "dissolution": 0.014989,
+      "distillation": 0.039902,
+      "sublimation": 0.035714,
+      "fixation": 0.04221
+    },
+    "regime_e_means": {
+      "REGIME_1": 0.535984,
+      "REGIME_3": 0.527,
+      "REGIME_4": 0.607967,
+      "REGIME_2": 0.407527
+    },
+    "regime_thermo_kch": {
+      "REGIME_1": 0.004616,
+      "REGIME_3": 0.013568,
+      "REGIME_4": 0.009141,
+      "REGIME_2": 0.010822
+    },
+    "corr_e_rho": 1.0,
+    "corr_e_p": 0.084915,
+    "stars_comparison": {
+      "R1_mean": 0.58785,
+      "R3_mean": 0.545392,
+      "R1_n": 10,
+      "R3_n": 12,
+      "U": 98.0,
+      "p": 0.009116
+    },
+    "P2_pass": true
+  },
+  "T6_channel_independence": {
+    "cross_matrix": {
+      "heat_rate->k_ratio": -0.2,
+      "heat_rate->h_ratio": -0.4,
+      "heat_rate->e_ratio": 0.4,
+      "heat_rate->checkpoint_rate": 0.0,
+      "monitoring_rate->k_ratio": -0.8,
+      "monitoring_rate->h_ratio": 0.4,
+      "monitoring_rate->e_ratio": 0.4,
+      "monitoring_rate->checkpoint_rate": 0.2,
+      "correction_rate->k_ratio": -0.8,
+      "correction_rate->h_ratio": -0.6,
+      "correction_rate->e_ratio": 1.0,
+      "correction_rate->checkpoint_rate": -0.8,
+      "termination_rate->k_ratio": -0.8,
+      "termination_rate->h_ratio": 0.4,
+      "termination_rate->e_ratio": 0.4,
+      "termination_rate->checkpoint_rate": 0.2,
+      "chain_rate->k_ratio": -1.0,
+      "chain_rate->h_ratio": 0.0,
+      "chain_rate->e_ratio": 0.8,
+      "chain_rate->checkpoint_rate": -0.4
+    },
+    "mean_off_diagonal_abs_rho": 0.5125,
+    "P5_pass": false
+  },
+  "T7_negative_controls": {
+    "theorica_test": {
+      "features_tested": 4,
+      "results": {
+        "heat_rate->k_ratio": {
+          "rho": -0.8,
+          "p": 0.335664
+        },
+        "monitoring_rate->h_ratio": {
+          "rho": 0.4,
+          "p": 0.763237
+        },
+        "correction_rate->e_ratio": {
+          "rho": 0.4,
+          "p": 0.73027
+        },
+        "termination_rate->checkpoint_rate": {
+          "rho": -0.2,
+          "p": 0.911089
+        }
+      },
+      "all_ns": true
+    },
+    "chapter_length": {
+      "family_mean_lengths": {
+        "dissolution": 16.933333,
+        "distillation": 13.125,
+        "sublimation": 11.142857,
+        "fixation": 13.9
+      },
+      "rho_values": {
+        "k_ratio": {
+          "rho": 0.4,
+          "p": 0.756244
+        },
+        "h_ratio": {
+          "rho": -0.2,
+          "p": 0.91009
+        },
+        "e_ratio": {
+          "rho": -0.2,
+          "p": 0.91009
+        },
+        "checkpoint_rate": {
+          "rho": -0.4,
+          "p": 0.744256
+        }
+      },
+      "all_ns": true
+    },
+    "P6_pass": true,
+    "P7_pass": true
+  }
+}

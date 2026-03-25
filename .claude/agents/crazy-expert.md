@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1697 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1870.
+the highest ID present is C1881.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2195,6 +2195,17 @@ C1867	Bridge carries signal through 4 HEAD channels: e rho=0.675, o rho=0.617, k
 C1868	Functional groups show HEAD→category specialization: o=OP/MARK/FLOW, e=THERM/TRANS, t=FLOW, k=THERM/STAGE.	2	B, bridge, HEAD, category	g1=OP/MARK. g2=THERM/TRANS. g3=FLOW. g4=THERM/STAGE.
 C1869	Pilot decode cards (5 folios): PP Jaccard distance NOT predicting B operational distance (rho=-0.24, p=0.51). Confirms non-holistic.	2	A↔B, bridge, decode_cards	rho_pp_op=-0.24. p=0.51.
 C1870	BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC verdict: HEAD-typed channels carry signal (P5/P6/P7 pass), holistic fails (P4 r=0.043). 6 PASS, 3 FAIL, 1 INCONCL.	2	A↔B, bridge, verdict	pass=6. fail=3.
+C1871	All 4 HEAD-channel features (k,h,e,t) discriminate REGIMEs at Bonferroni significance (KW p<0.001), survives within-Herbal (n=76).	2	B, REGIME, HEAD, within-Herbal	k_KW_H=44.7. h_KW_H=43.8. e_KW_H=31.7. t_KW_H=46.8.
+C1872	k_ratio INVERSELY correlated with REGIME ordinal/fire degree (rho=-0.554, p=0.001). k-HEAD indexes thermal management, not thermal delivery. R2=0.418, R4=0.221.	2	B, k-channel, REGIME, thermal	rho=-0.554. p=0.001. R2_k=0.418. R4_k=0.221.
+C1873	e-channel Stars R1 vs R3 (U=98, p=0.009, n=10+12), replicating C1735 at HEAD-channel resolution. PL correction_rate directional (rho=1.0, p=0.085).	2	B, e-channel, Stars, C1735	U=98. p=0.009. n_R1=10. n_R3=12.
+C1874	PL within-distillation chapter distance NOT corresponding to V within-R1 folio HEAD-channel distance (structural Mantel r=-0.363, p=0.745).	2	A↔B, cross-family, PL	mantel_r=-0.363. p=0.745.
+C1875	PL Theorica chapters zero V HEAD-channel correlation (all rho NS, p>0.336). Negative control confirmed.	2	cross-family, PL, negative-control	all_p>0.336.
+C1876	PL chapter length zero V HEAD-channel prediction (all rho NS, p>0.744). Null control confirmed.	2	cross-family, PL, null-control	all_p>0.744.
+C1877	Cross-channel leakage via 4-REGIME mediation = 0.513 mean |off-diagonal rho|, but n=4 makes measurement unreliable. Channel independence NOT assessable.	2	B, channels, REGIME	mean_off_diag=0.513. n=4.
+C1878	Brunschwig fire degree ordering weakly consistent with V k_ratio REGIME ordering (rho=0.2, p=0.917, n=3). Directional but underpowered.	3	cross-family, Brunschwig, k-channel	rho=0.2. p=0.917. n=3.
+C1879	LOO REGIME prediction from PL features: MAE=0.11, worst R4=0.19. PL features poor predictors of REGIME HEAD-channel profiles.	2	cross-family, PL, REGIME	mean_MAE=0.11. worst_MAE=0.19.
+C1880	PL-to-V calibration is domain-level (distillation-vs-rest per C1754), not per-channel. HEAD-channel structure is V-internal.	2	A↔B, cross-family, PL, HEAD	domain_only. C1754_confirmed.
+C1881	CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED verdict: HEAD channels discriminate REGIMEs (V-internal), e-channel Stars calibration works, PL structure does NOT map. 4 PASS, 3 FAIL.	2	A↔B, B, phase-verdict	pass=4. fail=3.
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1870 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1881 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1870.
+the highest ID present is C1881.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1870 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1881 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1870 validated constraints are present as canonical one-line claims with tier
+1881 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-25 16:00
-**Version:** FROZEN STATE (1870 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-25 17:59
+**Version:** FROZEN STATE (1881 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2109,6 +2109,17 @@ C1867	A→B bridge carries signal through 4 independent HEAD channels with chann
 C1868	B-side functional groups show HEAD→category specialization: G1(o-HEAD)=OPERATION/MARKING/FLOW, G2(e-HEAD)=THERMAL/OPERATION/TRANSITION, G3(t-HEAD)=FLOW, G4(k-HEAD)=THERMAL/STAGING. HEAD identity constrains operational category assignment in B, extending C1507 redistribution to category-level consequences	2	B, bridge, HEAD, category, functional_groups, C1507
 C1869	5 pilot folio decode cards (f58v, f8r, f58r, f101v2, f101r1) show complete A→bridge→B chains. Cross-folio PP Jaccard distance does NOT predict B-side operational cosine distance or manifold distance. Confirms MIDDLE-level signal is not holistic at pilot scale	2	A↔B, bridge, decode_cards, pilot, C1706
 C1870	BRIDGE_FEATURE_COHERENT_NOT_HOLISTIC verdict: A→B bridge carries operationally meaningful signal through HEAD-typed feature channels (P5/P6/P7 pass strongly) but holistic context→consequence prediction fails. PP clustering section-dominated (V=0.628). Bridge is parallel HEAD-typed pipes, not a single translation layer. 6 PASS, 3 FAIL, 1 INCONCLUSIVE	2	A↔B, bridge, verdict
+C1871	All 4 HEAD-channel features (k, h, e, t) discriminate REGIMEs at Bonferroni significance, survives within-Herbal replication. k: H=44.7, h: H=43.8, e: H=31.7, t: H=46.8. HEAD-channel organization is strongly REGIME-structured	2	B, REGIME, HEAD, within-Herbal
+C1872	k_ratio INVERSELY correlated with REGIME ordinal/fire degree, within-Herbal confirmed (H=39.8). k-HEAD tokens index thermal management/regulation intensity, not thermal energy delivery. R2 (fire degree 1, gentlest) has highest k_ratio (0.418), R4 (fire degree 4, strongest) has lowest (0.221)	2	B, k-channel, REGIME, thermal
+C1873	e-channel (e_ratio) differentiates Stars R1 vs R3, replicating C1735 at HEAD-channel resolution. PL correction_rate shows directional alignment	2	B, e-channel, Stars, C1735
+C1874	PL within-distillation chapter distance does NOT correspond to V within-R1 folio HEAD-channel distance. PL Theorica null r=-0.176, shuffled null r=0.003. Within-family structure mapping fails completely	2	A↔B, cross-family, PL, distillation
+C1875	PL Theorica chapters show zero correlation with V HEAD-channel profiles. Negative control confirmed: non-operational PL text has no V HEAD-channel signature	2	cross-family, PL, negative-control
+C1876	PL chapter length does NOT predict V HEAD-channel features. Null control confirmed: chapter length artifact excluded	2	cross-family, PL, null-control
+C1877	Cross-channel leakage via 4-REGIME mediation measured at 0.513 mean |off-diagonal rho|, but n=4 makes this measurement unreliable. Channel independence NOT assessable at this resolution. Requires within-REGIME variance analysis for proper test	2	B, channels, REGIME
+C1878	Brunschwig fire degree ordering weakly consistent with V k_ratio REGIME ordering. Directional agreement present but far below significance — power insufficient for 3-point calibration	3	cross-family, Brunschwig, k-channel
+C1879	LOO REGIME prediction from PL features: mean MAE=0.11, worst R4 MAE=0.19. PL family features are poor predictors of individual REGIME HEAD-channel profiles. R4 (precision axis, C494) is least predictable	2	cross-family, PL, REGIME
+C1880	PL-to-V calibration operates at domain level (distillation-vs-rest per C1754), not at per-channel level. HEAD-channel structure is V-internal organization, not externally calibratable by PL features alone. PL subtype features at chapter resolution do not map to V folio-level HEAD-channel variation	2	A↔B, cross-family, PL, HEAD
+C1881	CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED verdict: HEAD channels discriminate REGIMEs strongly (V-internal), e-channel has external Stars calibration, but PL feature structure does not map to V HEAD-channel structure. 4 PASS / 3 FAIL	2	A↔B, B, phase-verdict
 
 ---
 
