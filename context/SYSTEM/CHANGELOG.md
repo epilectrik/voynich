@@ -4,6 +4,43 @@
 
 ---
 
+## Version 5.95 (2026-03-24) - Phase 623: Line-Level Sequential Architecture
+
+### Summary
+
+Phase 623 systematically characterizes ALL channels of between-line sequential information (extending C1727-C1728 from 3 to 18 channels) and tests whether folio-level grammar compliance reveals compositional ordering. Six scripts: 18-channel MI census with ablation/transfer entropy/safety alternation, CTS-conditioned routing, 9-feature complexity gradient, boundary content anatomy, per-folio grammar temperature, and integration PCA/Mantel test. Key results: only 2/18 channels significant (length, PREFIX JSD), transfer entropy backward-dominant, 3 complexity gradient features survive length control, boundaries anti-parallel (cosine=-0.99), grammar temperature section-stratified not quire-ordered, consecutive folios locally coherent (Mantel p<0.001) but no global maturity gradient. Verdict: **SEQUENTIAL_WEAK_CONSECUTIVE_COHERENCE**.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LINE_LEVEL_SEQUENTIAL_ARCHITECTURE/` -- Phase 623 with 6 scripts, shared module, JSON results, INDEX.md |
+| **ADDED** | C1830: Sequential channel census (2/18 significant: length MI=0.359, PREFIX JSD MI=0.047) |
+| **ADDED** | C1831: Ablation non-additivity (length = 26%, not >60%) |
+| **ADDED** | C1832: Transfer entropy backward-dominant (length asym=-0.87, prefix_jsd asym=-0.92) |
+| **ADDED** | C1833: Safety alternation null (ey/ii cross-MI z=0.49/-0.39) |
+| **ADDED** | C1834: Within-paragraph sequential exclusivity (BB>>CP for all 18 channels, extends C1785) |
+| **ADDED** | C1835: CTS-conditioned routing null (no tercile significant, C1563/C1728 orthogonal scales) |
+| **ADDED** | C1836: Partial complexity gradient (3/9 survive length: mod_entropy, atom_diversity, frames) |
+| **ADDED** | C1837: Anti-parallel boundary divergence (cosine=-0.99, last-line enriched) |
+| **ADDED** | C1838: Grammar temperature section-stratified (B=2.06, H=1.81, quire null after residualization) |
+| **ADDED** | C1839: Consecutive folio coherence (Mantel r=0.126, p<0.001) without global ordering (PC1 null) |
+| **UPDATED** | INDEX.md -- +10 constraints (1838 total), Phase 623 section |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.95, 1838 constraints, 623 phases) |
+
+### Key Findings
+
+- **Sequential information is sparse but real (C1830):** Of 18 tested channels, only length and PREFIX JSD carry significant between-line MI. 16 channels definitively null — kernel fractions, headless rate, dark pipeline, bridge rate, safety atoms all fail.
+- **Transfer entropy surprise (C1832):** TE is backward-dominant — future predicts past better than past predicts future. Lines become more fully expressive of paragraph constraints as position advances, rather than generating forward.
+- **Paragraph boundaries are total resets (C1834):** Extends C1785 to full 18-channel resolution. No sequential information crosses paragraph boundaries for any feature.
+- **CTS routing falsified (C1835):** The hypothesis that closure strength gates terminal-to-HEAD routing was definitively falsified. Token-level and line-level operate at genuinely orthogonal scales.
+- **Instructional arc in complexity (C1836):** Modifier entropy narrows (combinatorial focusing), while atom diversity and frame diversity INCREASE through paragraph bodies. The arc is narrowing-in-method but diversifying-in-operation.
+- **Anti-parallel boundaries (C1837):** First-line and last-line diverge in opposite directions from interior (cosine=-0.99). Last lines enriched in structural features; first lines show no distinctive pattern.
+- **Grammar temperature by section (C1838):** Section B has warmest grammar (T=2.06), section H coolest (T=1.81). All quire gradients vanish after section residualization. The grammar was calibrated per section, not refined through composition.
+- **Local coherence, no global ordering (C1839):** Consecutive folios within quires are more similar (Mantel significant) but no global maturity gradient exists. Programs are locally coherent but globally independent.
+
+---
+
 ## Version 5.94 (2026-03-20) - Phase 622: Compound Information Content
 
 ### Summary

@@ -1,0 +1,457 @@
+{
+  "phase": 623,
+  "name": "compositional_drift",
+  "n_folios": 76,
+  "features_used": [
+    "grad_mod_density",
+    "grad_mod_entropy",
+    "grad_headless_rate",
+    "grad_compound_rate",
+    "grad_mean_middle_len",
+    "grad_atom_diversity",
+    "grad_distinct_frames",
+    "grad_atom_variance",
+    "grad_cond_entropy_rate",
+    "T_composite",
+    "T_buffer",
+    "T_opacity",
+    "T_pfx_head",
+    "T_pfx_mid",
+    "heaps_beta_transcript",
+    "heaps_beta_shuffled",
+    "heaps_ratio",
+    "hapax_fraction",
+    "dark_rate",
+    "sister_ratio",
+    "param_entropy"
+  ],
+  "pca": {
+    "eigenvalues": [
+      3.822134,
+      3.39201,
+      2.046991,
+      1.638301,
+      1.567524,
+      1.26719,
+      1.190049,
+      1.077252,
+      0.8289,
+      0.780746
+    ],
+    "explained_variance": [
+      0.21703,
+      0.192606,
+      0.116233,
+      0.093027,
+      0.089008,
+      0.071954,
+      0.067574,
+      0.061169,
+      0.047067,
+      0.044333
+    ],
+    "pc1_quire_rho": 0.099943,
+    "pc1_quire_p": 0.38755,
+    "pc1_quire_perm_p": 0.373
+  },
+  "mantel": {
+    "observed_r": 0.125821,
+    "p_value": 0.0,
+    "n_pairs": 2850
+  },
+  "heaps": {
+    "per_folio_betas": {
+      "f103r": {
+        "transcript": 0.787195,
+        "shuffled": 0.787496,
+        "ratio": 0.999619
+      },
+      "f103v": {
+        "transcript": 0.844318,
+        "shuffled": 0.802564,
+        "ratio": 1.052025
+      },
+      "f104r": {
+        "transcript": 0.930325,
+        "shuffled": 0.891767,
+        "ratio": 1.043238
+      },
+      "f104v": {
+        "transcript": 0.868516,
+        "shuffled": 0.86196,
+        "ratio": 1.007606
+      },
+      "f105r": {
+        "transcript": 0.897516,
+        "shuffled": 0.919846,
+        "ratio": 0.975725
+      },
+      "f105v": {
+        "transcript": 0.891014,
+        "shuffled": 0.898875,
+        "ratio": 0.991255
+      },
+      "f106r": {
+        "transcript": 0.889294,
+        "shuffled": 0.900122,
+        "ratio": 0.987971
+      },
+      "f106v": {
+        "transcript": 0.901946,
+        "shuffled": 0.879481,
+        "ratio": 1.025543
+      },
+      "f107r": {
+        "transcript": 0.865271,
+        "shuffled": 0.832897,
+        "ratio": 1.038869
+      },
+      "f107v": {
+        "transcript": 0.81945,
+        "shuffled": 0.816325,
+        "ratio": 1.003828
+      },
+      "f108r": {
+        "transcript": 0.801079,
+        "shuffled": 0.857524,
+        "ratio": 0.934177
+      },
+      "f108v": {
+        "transcript": 0.808555,
+        "shuffled": 0.801617,
+        "ratio": 1.008655
+      },
+      "f111r": {
+        "transcript": 0.859283,
+        "shuffled": 0.808793,
+        "ratio": 1.062427
+      },
+      "f111v": {
+        "transcript": 0.795687,
+        "shuffled": 0.793987,
+        "ratio": 1.00214
+      },
+      "f112r": {
+        "transcript": 0.872028,
+        "shuffled": 0.836241,
+        "ratio": 1.042794
+      },
+      "f112v": {
+        "transcript": 0.823517,
+        "shuffled": 0.856573,
+        "ratio": 0.961409
+      },
+      "f113r": {
+        "transcript": 0.910115,
+        "shuffled": 0.880999,
+        "ratio": 1.033049
+      },
+      "f113v": {
+        "transcript": 0.862396,
+        "shuffled": 0.86277,
+        "ratio": 0.999566
+      },
+      "f114r": {
+        "transcript": 0.884572,
+        "shuffled": 0.896754,
+        "ratio": 0.986416
+      },
+      "f114v": {
+        "transcript": 0.904547,
+        "shuffled": 0.900432,
+        "ratio": 1.00457
+      },
+      "f115r": {
+        "transcript": 0.87132,
+        "shuffled": 0.878663,
+        "ratio": 0.991642
+      },
+      "f115v": {
+        "transcript": 0.905693,
+        "shuffled": 0.937202,
+        "ratio": 0.96638
+      },
+      "f116r": {
+        "transcript": 0.794411,
+        "shuffled": 0.731944,
+        "ratio": 1.085344
+      },
+      "f26r": {
+        "transcript": 0.889569,
+        "shuffled": 0.904541,
+        "ratio": 0.983448
+      },
+      "f26v": {
+        "transcript": 0.921989,
+        "shuffled": 0.947343,
+        "ratio": 0.973237
+      },
+      "f31r": {
+        "transcript": 0.911833,
+        "shuffled": 0.908736,
+        "ratio": 1.003408
+      },
+      "f31v": {
+        "transcript": 0.977961,
+        "shuffled": 0.953153,
+        "ratio": 1.026027
+      },
+      "f33r": {
+        "transcript": 0.939875,
+        "shuffled": 0.929013,
+        "ratio": 1.011692
+      },
+      "f33v": {
+        "transcript": 0.881435,
+        "shuffled": 0.872094,
+        "ratio": 1.01071
+      },
+      "f34r": {
+        "transcript": 0.938071,
+        "shuffled": 0.935227,
+        "ratio": 1.003041
+      },
+      "f34v": {
+        "transcript": 0.933285,
+        "shuffled": 0.921015,
+        "ratio": 1.013323
+      },
+      "f39r": {
+        "transcript": 0.935642,
+        "shuffled": 0.896219,
+        "ratio": 1.043988
+      },
+      "f39v": {
+        "transcript": 0.893658,
+        "shuffled": 0.875368,
+        "ratio": 1.020894
+      },
+      "f40r": {
+        "transcript": 0.880833,
+        "shuffled": 0.911589,
+        "ratio": 0.966261
+      },
+      "f40v": {
+        "transcript": 0.899704,
+        "shuffled": 0.912081,
+        "ratio": 0.98643
+      },
+      "f41r": {
+        "transcript": 0.928729,
+        "shuffled": 0.918909,
+        "ratio": 1.010686
+      },
+      "f41v": {
+        "transcript": 0.94209,
+        "shuffled": 0.948261,
+        "ratio": 0.993493
+      },
+      "f43r": {
+        "transcript": 0.916066,
+        "shuffled": 0.899806,
+        "ratio": 1.018071
+      },
+      "f43v": {
+        "transcript": 0.920384,
+        "shuffled": 0.917051,
+        "ratio": 1.003635
+      },
+      "f46r": {
+        "transcript": 0.941524,
+        "shuffled": 0.901716,
+        "ratio": 1.044147
+      },
+      "f46v": {
+        "transcript": 0.914572,
+        "shuffled": 0.904598,
+        "ratio": 1.011026
+      },
+      "f48r": {
+        "transcript": 0.994444,
+        "shuffled": 0.996209,
+        "ratio": 0.998228
+      },
+      "f48v": {
+        "transcript": 0.913753,
+        "shuffled": 0.944842,
+        "ratio": 0.967096
+      },
+      "f50r": {
+        "transcript": 0.920239,
+        "shuffled": 0.948419,
+        "ratio": 0.970287
+      },
+      "f50v": {
+        "transcript": 0.943946,
+        "shuffled": 0.941573,
+        "ratio": 1.00252
+      },
+      "f55r": {
+        "transcript": 0.895484,
+        "shuffled": 0.876324,
+        "ratio": 1.021864
+      },
+      "f55v": {
+        "transcript": 0.879618,
+        "shuffled": 0.892818,
+        "ratio": 0.985216
+      },
+      "f57r": {
+        "transcript": 0.945203,
+        "shuffled": 0.951562,
+        "ratio": 0.993317
+      },
+      "f66r": {
+        "transcript": 0.873658,
+        "shuffled": 0.879231,
+        "ratio": 0.993661
+      },
+      "f66v": {
+        "transcript": 0.928459,
+        "shuffled": 0.928966,
+        "ratio": 0.999455
+      },
+      "f75r": {
+        "transcript": 0.714142,
+        "shuffled": 0.729496,
+        "ratio": 0.978953
+      },
+      "f75v": {
+        "transcript": 0.776814,
+        "shuffled": 0.819831,
+        "ratio": 0.947529
+      },
+      "f76r": {
+        "transcript": 0.730902,
+        "shuffled": 0.801942,
+        "ratio": 0.911415
+      },
+      "f76v": {
+        "transcript": 0.822039,
+        "shuffled": 0.809126,
+        "ratio": 1.015959
+      },
+      "f77r": {
+        "transcript": 0.771307,
+        "shuffled": 0.768636,
+        "ratio": 1.003475
+      },
+      "f77v": {
+        "transcript": 0.768309,
+        "shuffled": 0.817384,
+        "ratio": 0.939961
+      },
+      "f78r": {
+        "transcript": 0.865547,
+        "shuffled": 0.82613,
+        "ratio": 1.047713
+      },
+      "f78v": {
+        "transcript": 0.827505,
+        "shuffled": 0.827559,
+        "ratio": 0.999935
+      },
+      "f79r": {
+        "transcript": 0.805729,
+        "shuffled": 0.793398,
+        "ratio": 1.015541
+      },
+      "f79v": {
+        "transcript": 0.811157,
+        "shuffled": 0.800996,
+        "ratio": 1.012686
+      },
+      "f80r": {
+        "transcript": 0.815405,
+        "shuffled": 0.817639,
+        "ratio": 0.997268
+      },
+      "f80v": {
+        "transcript": 0.779642,
+        "shuffled": 0.789028,
+        "ratio": 0.988106
+      },
+      "f81r": {
+        "transcript": 0.824491,
+        "shuffled": 0.829574,
+        "ratio": 0.993873
+      },
+      "f81v": {
+        "transcript": 0.831512,
+        "shuffled": 0.842489,
+        "ratio": 0.986971
+      },
+      "f82r": {
+        "transcript": 0.834445,
+        "shuffled": 0.795159,
+        "ratio": 1.049407
+      },
+      "f82v": {
+        "transcript": 0.827653,
+        "shuffled": 0.813929,
+        "ratio": 1.016862
+      },
+      "f83r": {
+        "transcript": 0.822296,
+        "shuffled": 0.799555,
+        "ratio": 1.028442
+      },
+      "f83v": {
+        "transcript": 0.855446,
+        "shuffled": 0.839565,
+        "ratio": 1.018915
+      },
+      "f84r": {
+        "transcript": 0.817457,
+        "shuffled": 0.80586,
+        "ratio": 1.014391
+      },
+      "f84v": {
+        "transcript": 0.744982,
+        "shuffled": 0.789793,
+        "ratio": 0.943262
+      },
+      "f94r": {
+        "transcript": 0.975028,
+        "shuffled": 0.973396,
+        "ratio": 1.001677
+      },
+      "f94v": {
+        "transcript": 0.942538,
+        "shuffled": 0.963721,
+        "ratio": 0.978019
+      },
+      "f95r1": {
+        "transcript": 0.958249,
+        "shuffled": 0.931689,
+        "ratio": 1.028507
+      },
+      "f95r2": {
+        "transcript": 0.913114,
+        "shuffled": 0.928822,
+        "ratio": 0.983088
+      },
+      "f95v1": {
+        "transcript": 0.963305,
+        "shuffled": 0.941998,
+        "ratio": 1.022619
+      },
+      "f95v2": {
+        "transcript": 0.950318,
+        "shuffled": 0.95051,
+        "ratio": 0.999798
+      }
+    },
+    "mean_transcript_beta": 0.873676,
+    "mean_shuffled_beta": 0.871825,
+    "ratio": 1.002418
+  },
+  "verdict": "CONSECUTIVE_COHERENCE_ONLY",
+  "predictions": {
+    "compositional_ordering": false,
+    "consecutive_coherence": true,
+    "section_dominates_maturity": false,
+    "consistent_with_C1399": false,
+    "heaps_transcript_gt_shuffled": false
+  }
+}

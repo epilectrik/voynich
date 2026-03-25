@@ -1,0 +1,147 @@
+{
+  "phase": 623,
+  "name": "cts_conditioned_routing",
+  "n_pairs": 833,
+  "n_eligible_paragraphs": 112,
+  "unconditional": {
+    "n": 833,
+    "mi": 0.0,
+    "null_mean": 0.001231,
+    "null_std": 0.002977,
+    "z_score": -0.414,
+    "p_value": 1.0
+  },
+  "by_cts_tercile": {
+    "LOW": {
+      "mi": 0.0,
+      "null_mean": 0.005592,
+      "null_std": 0.010574,
+      "z_score": -0.529,
+      "p_value": 1.0,
+      "n": 296
+    },
+    "MED": {
+      "mi": 0.043541,
+      "null_mean": 0.011371,
+      "null_std": 0.014598,
+      "z_score": 2.204,
+      "p_value": 0.04,
+      "n": 260
+    },
+    "HIGH": {
+      "mi": 0.015376,
+      "null_mean": 0.005235,
+      "null_std": 0.010166,
+      "z_score": 0.998,
+      "p_value": 0.144,
+      "n": 277
+    }
+  },
+  "cts_bounds": {
+    "LOW": {
+      "low": 0.0,
+      "high": 0.4
+    },
+    "MED": {
+      "low": 0.4,
+      "high": 0.541667
+    },
+    "HIGH": {
+      "low": 0.541667,
+      "high": 0.95
+    }
+  },
+  "by_position": {
+    "Q0": {
+      "mi": 0.020909,
+      "null_mean": 0.002317,
+      "null_std": 0.007484,
+      "z_score": 2.484,
+      "p_value": 0.042,
+      "n": 206
+    },
+    "Q1": {
+      "mi": 0.0,
+      "null_mean": 0.015614,
+      "null_std": 0.019216,
+      "z_score": -0.813,
+      "p_value": 1.0,
+      "n": 168
+    },
+    "Q2": {
+      "mi": 0.0,
+      "null_mean": 0.004056,
+      "null_std": 0.009067,
+      "z_score": -0.447,
+      "p_value": 1.0,
+      "n": 177
+    },
+    "Q3": {
+      "mi": 0.026417,
+      "null_mean": 0.032146,
+      "null_std": 0.024965,
+      "z_score": -0.23,
+      "p_value": 0.55,
+      "n": 168
+    },
+    "Q4": {
+      "mi": 0.056601,
+      "null_mean": 0.019156,
+      "null_std": 0.021583,
+      "z_score": 1.735,
+      "p_value": 0.08,
+      "n": 114
+    }
+  },
+  "routing_enrichment": {
+    "LOW": {
+      "r_to_a": 1.682,
+      "h_to_t": 0.0,
+      "y_to_k": 0.926
+    },
+    "MED": {
+      "r_to_a": 0.0,
+      "h_to_t": 0.0,
+      "y_to_k": 0.453
+    },
+    "HIGH": {
+      "r_to_a": 1.065,
+      "h_to_t": 0.0,
+      "y_to_k": 1.06
+    },
+    "OVERALL": {
+      "r_to_a": 0.964,
+      "h_to_t": 0.0,
+      "y_to_k": 0.938
+    }
+  },
+  "distributions": {
+    "term": {
+      "bare": 270,
+      "y": 193,
+      "l": 140,
+      "m": 80,
+      "r": 64,
+      "n": 59,
+      "h": 27
+    },
+    "head": {
+      "": 341,
+      "e": 240,
+      "k": 138,
+      "o": 64,
+      "a": 27,
+      "t": 23
+    },
+    "cts_mean": 0.4673,
+    "cts_std": 0.1531
+  },
+  "verdict": "NO_CTS_EFFECT",
+  "verdict_detail": "No CTS tercile shows significant TERM->HEAD MI. Terminal routing is strictly token-local; no line-level signal even at strong closure boundaries. C1563 (token-level) and C1728 (line-level null) are genuinely orthogonal scales.",
+  "predictions": {
+    "P10_cts_modulation": false,
+    "c1728_null_replicated": true,
+    "monotonic_mi_gradient": false,
+    "high_routing_enrichment": false
+  }
+}

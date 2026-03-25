@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1828 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1838 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1829.
+the highest ID present is C1839.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1828 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1838 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1828 validated constraints are present as canonical one-line claims with tier
+1838 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-21 12:13
-**Version:** FROZEN STATE (1828 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-24 23:28
+**Version:** FROZEN STATE (1838 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2068,6 +2068,16 @@ C1826	Rosettes spatial non-prediction replicated at category level (Phase 621): 
 C1827	Compound-context category alignment persists through progressive confound removal: N0 (global) 4.94σ -> N1 (within-folio) 3.85σ -> N2 (folio+position) 4.14σ -> N3 (folio+PREFIX) 3.29σ, all p<0.001, 67% of global effect retained after tightest control. Cross-line diagnostic ratio 0.991 confirms folio-mediated, not line-specific	2	B, compounds, categories, confound removal, C1214, C1176
 C1828	Compound atom composition constrained below folio base rate: synthetic random-folio-pool draws score 0.387 vs real compounds 0.348, difference -10.25σ. Morphological rules (C1060 atom position grammar, C1215 slot compliance) reduce generic context alignment. Compounds are category-specific, not category-generic	2	B, compounds, morphology, synthetic control, C1060, C1215, C935
 C1829	Compound information content verdict COMPOUND_RESIDUAL_SIGNAL: within-folio signal exists (P2/P3 PASS at 3.85σ/3.29σ) but compounds not optimized for context matching (C0 FAIL at -10.25σ). Residual reflects line-level homogeneity (C1214) through shared atom substrate, not specification encoding. Extends C935 "operationally redundant"	2	B, compounds, specification, verdict, C935, C1214
+C1830	Sequential channel census: only 2/18 channels show significant lag-1 MI between consecutive body lines. Length MI=0.359 bits and PREFIX JSD MI=0.047 bits. All 16 other channels null at Bonferroni alpha=0.00278. Extends C1728 from 3 to 18 channels	2	B, sequential, MI, line_ordering, C1727, C1728
+C1831	Ablation non-additivity: length accounts for only 26% of smoothness ablation signal, not predicted >60%. Sum of single-channel ablation deltas=0.281 relative to baseline=0.186. Channels share redundant information through structural coupling, not independent streams	2	B, sequential, ablation, C1727, C1728
+C1832	Transfer entropy backward-dominant: TE(future→past) > TE(past→future) for both significant channels. Length asymmetry=-0.868, PREFIX JSD asymmetry=-0.922. Line features contain more information about preceding than following lines. Inconsistent with simple sequential generation	2	B, sequential, transfer_entropy, directionality
+C1833	Safety alternation null: no ey/ii cross-MI between consecutive lines. Preventive and transformative safety atoms show no line-level alternation pattern. Extends C1732 to sequential context	2	B, safety, ey, ii, sequential, C1732
+C1834	Within-paragraph sequential exclusivity: body-body MI >> cross-paragraph MI for all channels (length BB=0.359, CP=0.000; total BB=0.690, CP=0.087). Paragraph boundaries are complete sequential resets at full feature resolution. Extends C1785 from thermal carryover to all 18 channels	2	B, sequential, paragraph_boundary, C1785, C1793
+C1835	CTS-conditioned routing null: no CTS tercile shows significant TERM→HEAD MI. Terminal-to-HEAD routing is strictly token-local. C1563 (token-level routing real) and C1728 (line-level null) operate at genuinely orthogonal scales	2	B, CTS, routing, terminal, HEAD, C1563, C1728
+C1836	Partial complexity gradient: 3/9 features show genuine body-position gradients surviving length control. Modifier entropy decreases, atom diversity increases, distinct frames increase. Conditional entropy rate killed by length control. Strongest in sections B and H	2	B, complexity, gradient, paragraph, body_position, C1206, C1782
+C1837	Anti-parallel boundary divergence: first-line and last-line divergence vectors from interior have cosine=-0.989. Last-line enriched in length, PREFIX JSD, and category entropy. First-line shows no significant enrichment at Bonferroni alpha. Boundaries are distinctive in OPPOSITE directions. Extends C1729 to channel-resolved decomposition	2	B, boundary, paragraph, first_line, last_line, C1729
+C1838	Grammar temperature section-stratified: T_composite mean=1.926 (range 1.479-2.439). Section B=2.063, H=1.806, S=1.972. Raw quire correlation rho=0.352 disappears after section residualization. Grammar compliance is section-determined, not quire-ordered. NOT pre-crystallized (section variance significant)	2	B, grammar_temperature, section, compliance, C1360, C1440
+C1839	Consecutive folio coherence without global ordering: Mantel test significant but PCA PC1 vs quire null. Section-residualized maturity vectors show local coherence within quires but no global compositional gradient. Consistent with C1399/C1400 independence at global scale, new finding of local coherence	2	B, folio, quire, coherence, Mantel, PCA, C1399, C1400
 
 ---
 
@@ -2075,7 +2085,7 @@ C1829	Compound information content verdict COMPOUND_RESIDUAL_SIGNAL: within-foli
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-21
+# Generated: 2026-03-24
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

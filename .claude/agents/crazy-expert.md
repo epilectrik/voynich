@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1686 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1829.
+the highest ID present is C1839.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2154,6 +2154,16 @@ C1826	Rosettes spatial non-prediction replicated (Phase 621): adj JSD=0.080, non
 C1827	Compound-context alignment persists through progressive confound removal (N0: 4.94sig -> N1: 3.85sig -> N3: 3.29sig, 67% retained, all p<0.001; cross-line ratio 0.991 confirms folio-mediated)	2	B, compounds, categories, confound, C1214, C1176	N0=4.94. N1=3.85. N3=3.29. pct=66.7. xline=0.991. n=7120.
 C1828	Compound atom composition constrained below folio base rate (synthetic=0.387 vs real=0.348, -10.25sig; morphological rules C1060/C1215 reduce context alignment)	2	B, compounds, morphology, synthetic, C1060, C1215, C935	real=0.348. synth=0.387. effect=-10.25.
 C1829	Compound information content verdict COMPOUND_RESIDUAL_SIGNAL: within-folio signal exists (P2/P3 PASS 3.85sig/3.29sig) but compounds not optimized for context (C0 FAIL -10.25sig). Extends C935.	2	B, compounds, specification, verdict, C935, C1214	P1=PASS. P2=PASS. P3=PASS. P4=FAIL.
+C1830	Sequential channel census: 2/18 channels significant lag-1 MI. Length MI=0.359 (z=11.93), PREFIX JSD MI=0.047 (z=3.24). 16/18 null at Bonferroni 0.00278. Extends C1728 to 18 channels.	2	B, sequential, MI, line_ordering, C1727, C1728	sig=2of18. length_MI=0.359. prefix_jsd_MI=0.047. n=833.
+C1831	Ablation non-additivity: length=26% of smoothness signal (not >60%). Channels share redundant info through structural coupling.	2	B, sequential, ablation, C1727, C1728	length_share=26pct. sum=0.281. baseline=0.186.
+C1832	Transfer entropy backward-dominant: TE(future->past) > TE(past->future) for both sig channels. Length asym=-0.868, PREFIX JSD asym=-0.922.	2	B, sequential, transfer_entropy, directionality	length_asym=-0.868. prefix_asym=-0.922.
+C1833	Safety alternation null: no ey/ii cross-MI between lines (ey->ii z=0.49, ii->ey z=-0.39). Extends C1732 to sequential context.	2	B, safety, ey, ii, sequential, C1732	ey_ii_z=0.49. ii_ey_z=-0.39.
+C1834	Within-paragraph sequential exclusivity: BB MI >> CP MI for all 18 channels. Paragraph boundaries complete resets. Extends C1785 to full feature resolution.	2	B, sequential, paragraph_boundary, C1785, C1793	bb=0.690. cp=0.087. n_bb=833. n_cp=354.
+C1835	CTS-conditioned routing null: no tercile significant for TERM->HEAD MI. Routing strictly token-local. C1563/C1728 orthogonal scales.	2	B, CTS, routing, terminal, HEAD, C1563, C1728	low_p=1.0. med_p=0.04. high_p=0.14.
+C1836	Partial complexity gradient: 3/9 survive length control. mod_entropy rho=-0.130, atom_diversity rho=+0.272, distinct_frames rho=+0.190.	2	B, complexity, gradient, paragraph, C1206, C1782	sig=3of9. mod_ent=-0.130. atom_div=0.272. frames=0.190.
+C1837	Anti-parallel boundary divergence: first/last body line cosine=-0.989. Last enriched (length, PREFIX JSD, cat entropy). First: none significant. Extends C1729.	2	B, boundary, paragraph, C1729	cosine=-0.989. last_sig=3. first_sig=0.
+C1838	Grammar temperature section-stratified: T mean=1.926. B=2.063, H=1.806. Quire correlation vanishes after section residualization (0.352->0.065).	2	B, grammar_temperature, section, C1360, C1440	T=1.926. B=2.063. H=1.806. raw_rho=0.352. resid_rho=0.065.
+C1839	Consecutive folio coherence without global ordering: Mantel r=0.126 (p<0.001) but PC1 vs quire null (rho=0.100, p=0.388). Local quire coherence, no maturity gradient.	2	B, folio, quire, coherence, Mantel, PCA, C1399, C1400	mantel_r=0.126. pc1_rho=0.100. pc1_p=0.388.
 
 ---
 

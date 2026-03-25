@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1828 validated constraints | **Version:** 5.94 | **Date:** 2026-03-20
+**Total:** 1838 validated constraints | **Version:** 5.95 | **Date:** 2026-03-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6047,6 +6047,33 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Visual-grammar complexity co-variation (C1825): Visually complex entities tend to be grammatically more diverse (rho=0.533). This is a complexity-complexity link, not a content-content link. Both may reflect the entity's functional role in the foldout.
 - Spatial non-prediction replicated (C1826): Delta=0.007, confirming C1818.
 - Notable exploratory: plan_view x THERMAL (rho=+0.762), fountain x OPERATION (rho=+0.650) — but N=9 with 120 tests means no multiple-comparison survival.
+
+---
+
+### Phase 623: Line-Level Sequential Architecture — SEQUENTIAL_WEAK_CONSECUTIVE_COHERENCE (C1830-C1839)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1830 | Sequential channel census: only 2/18 channels show significant lag-1 MI between consecutive body lines. Length MI=0.359 bits (z=11.93, p<0.001) and PREFIX JSD MI=0.047 bits (z=3.24, p=0.004). All 16 other channels null at Bonferroni alpha=0.00278. Extends C1728 from 3 to 18 channels | 2 | B, sequential, MI, line_ordering, C1727, C1728 | sig_channels=2of18. length_MI=0.359. prefix_jsd_MI=0.047. n_pairs=833. bonferroni=0.00278. |
+| 1831 | Ablation non-additivity: length accounts for only 26% of smoothness ablation signal, not predicted >60%. Sum of single-channel ablation deltas=0.281 relative to baseline=0.186. Channels share redundant information through structural coupling, not independent streams | 2 | B, sequential, ablation, C1727, C1728 | length_share=26pct. ablation_sum=0.281. baseline=0.186. n_channels=18. |
+| 1832 | Transfer entropy backward-dominant: TE(future→past) > TE(past→future) for both significant channels. Length asymmetry=-0.868, PREFIX JSD asymmetry=-0.922. Line features contain more information about preceding than following lines. Inconsistent with simple sequential generation | 2 | B, sequential, transfer_entropy, directionality | length_asym=-0.868. prefix_jsd_asym=-0.922. n_channels_tested=2. |
+| 1833 | Safety alternation null: no ey/ii cross-MI between consecutive lines (ey→ii z=0.49, ii→ey z=-0.39). Preventive and transformative safety atoms show no line-level alternation pattern. Extends C1732 to sequential context | 2 | B, safety, ey, ii, sequential, C1732 | ey_ii_z=0.49. ii_ey_z=-0.39. p_ey_ii=0.270. p_ii_ey=0.552. |
+| 1834 | Within-paragraph sequential exclusivity: body-body MI >> cross-paragraph MI for all channels (length BB=0.359, CP=0.000; total BB=0.690, CP=0.087). Paragraph boundaries are complete sequential resets at full feature resolution. Extends C1785 from thermal carryover to all 18 channels | 2 | B, sequential, paragraph_boundary, C1785, C1793 | bb_total=0.690. cp_total=0.087. length_bb=0.359. length_cp=0.000. n_bb=833. n_cp=354. |
+| 1835 | CTS-conditioned routing null: no CTS tercile shows significant TERM→HEAD MI (LOW p=1.0, MED p=0.04 not Bonferroni-surviving, HIGH p=0.14). Terminal-to-HEAD routing is strictly token-local. C1563 (token-level routing real) and C1728 (line-level null) operate at genuinely orthogonal scales | 2 | B, CTS, routing, terminal, HEAD, C1563, C1728 | low_p=1.0. med_p=0.04. high_p=0.14. n_pairs=833. |
+| 1836 | Partial complexity gradient: 3/9 features show genuine body-position gradients surviving length control. Modifier entropy decreases (rho=-0.130, lc_p=0.008), atom diversity increases (rho=+0.272, lc_p=0.011), distinct frames increase (rho=+0.190, lc_p=0.008). Conditional entropy rate killed by length control. Strongest in sections B and H | 2 | B, complexity, gradient, paragraph, body_position, C1206, C1782 | sig_features=3of9. mod_entropy_rho=-0.130. atom_div_rho=0.272. frames_rho=0.190. n_paras=112. |
+| 1837 | Anti-parallel boundary divergence: first-line and last-line divergence vectors from interior have cosine=-0.989. Last-line enriched in length, PREFIX JSD, and category entropy. First-line shows no significant enrichment at Bonferroni alpha. Boundaries are distinctive in OPPOSITE directions. Extends C1729 to channel-resolved decomposition | 2 | B, boundary, paragraph, first_line, last_line, C1729 | cosine=-0.989. last_sig=3of18. first_sig=0of18. n_paras=57. |
+| 1838 | Grammar temperature section-stratified: T_composite mean=1.926 (range 1.479-2.439). Section B=2.063, H=1.806, S=1.972. Raw quire correlation rho=0.352 (p=0.001) disappears after section residualization (rho=0.065, p=0.578). Grammar compliance is section-determined, not quire-ordered. NOT pre-crystallized (section variance significant) | 2 | B, grammar_temperature, section, compliance, C1360, C1440 | T_mean=1.926. T_std=0.216. sec_B=2.063. sec_H=1.806. raw_rho=0.352. resid_rho=0.065. n_folios=76. |
+| 1839 | Consecutive folio coherence without global ordering: Mantel test significant (r=0.126, p<0.001, 1000 perms) but PCA PC1 vs quire null (rho=0.100, p=0.388). Section-residualized maturity vectors show local coherence within quires but no global compositional gradient. Consistent with C1399/C1400 independence at global scale, new finding of local coherence | 2 | B, folio, quire, coherence, Mantel, PCA, C1399, C1400 | mantel_r=0.126. mantel_p=0.000. pc1_rho=0.100. pc1_p=0.388. n_folios=76. pc1_var=21.7pct. |
+
+**Phase 623 findings (Line-Level Sequential Architecture, SEQUENTIAL_WEAK_CONSECUTIVE_COHERENCE):**
+- Sequential information between lines is sparse: only 2/18 channels carry significant signal (C1830). Length dominates but less than expected (26% of ablation, C1831). 16 channels are definitively null, including all kernel fractions, headless rate, HT density, dark pipeline, bridge rate, and safety atoms.
+- Transfer entropy is backward-dominant (C1832): future-to-past TE exceeds past-to-future for both significant channels. This suggests line features reflect paragraph-level constraints that become more fully expressed over successive lines, rather than simple sequential generation.
+- Paragraph boundaries are complete sequential resets (C1834): body-body MI dwarfs cross-paragraph MI across all 18 channels, extending C1785 to full feature resolution.
+- CTS-conditioned routing null (C1835): the hypothesis that terminal-to-HEAD routing activates at strong closure boundaries was falsified. C1563 token-level routing and C1728 line-level null operate at genuinely different scales.
+- Three complexity features show genuine body-position gradients (C1836): modifier entropy narrows, atom diversity increases, and frame diversity increases through paragraph bodies. This is a within-paragraph instructional arc — narrowing in combinatorial space but diversifying in operational vocabulary.
+- Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
+- Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
+- Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
 
 ---
 

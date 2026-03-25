@@ -1,0 +1,433 @@
+{
+  "phase": 623,
+  "name": "sequential_channel_census",
+  "n_folios": 76,
+  "n_paragraphs": 528,
+  "n_body_lines": 1730,
+  "n_pairs": 1187,
+  "n_body_body": 833,
+  "n_cross_paragraph": 354,
+  "channel_census": {
+    "length": {
+      "observed_mi": 0.358842,
+      "null_mean": 0.174077,
+      "null_std": 0.015492,
+      "z_score": 11.926646,
+      "p_value": 0.0,
+      "partial_mi": null,
+      "significant": true
+    },
+    "suffix_mode_prop": {
+      "observed_mi": 0.024437,
+      "null_mean": 0.016129,
+      "null_std": 0.007375,
+      "z_score": 1.126463,
+      "p_value": 0.13,
+      "partial_mi": 0.012701,
+      "significant": false
+    },
+    "prefix_jsd": {
+      "observed_mi": 0.047075,
+      "null_mean": 0.0212,
+      "null_std": 0.007997,
+      "z_score": 3.235445,
+      "p_value": 0.004,
+      "partial_mi": 0.018177,
+      "significant": true
+    },
+    "k_frac": {
+      "observed_mi": 0.023276,
+      "null_mean": 0.01204,
+      "null_std": 0.007596,
+      "z_score": 1.479208,
+      "p_value": 0.078,
+      "partial_mi": 0.013339,
+      "significant": false
+    },
+    "h_frac": {
+      "observed_mi": 0.0,
+      "null_mean": 0.00149,
+      "null_std": 0.002556,
+      "z_score": -0.583002,
+      "p_value": 1.0,
+      "partial_mi": 0.008223,
+      "significant": false
+    },
+    "e_frac": {
+      "observed_mi": 0.036267,
+      "null_mean": 0.013797,
+      "null_std": 0.007685,
+      "z_score": 2.923756,
+      "p_value": 0.006,
+      "partial_mi": 0.014027,
+      "significant": false
+    },
+    "headless_rate": {
+      "observed_mi": 0.021388,
+      "null_mean": 0.010501,
+      "null_std": 0.007235,
+      "z_score": 1.50459,
+      "p_value": 0.088,
+      "partial_mi": 0.026431,
+      "significant": false
+    },
+    "mod_density": {
+      "observed_mi": 0.034018,
+      "null_mean": 0.0217,
+      "null_std": 0.008557,
+      "z_score": 1.43945,
+      "p_value": 0.09,
+      "partial_mi": 0.036407,
+      "significant": false
+    },
+    "m_term_rate": {
+      "observed_mi": 0.01169,
+      "null_mean": 0.010357,
+      "null_std": 0.005012,
+      "z_score": 0.266096,
+      "p_value": 0.388,
+      "partial_mi": 0.003573,
+      "significant": false
+    },
+    "dark_frac": {
+      "observed_mi": 0.009432,
+      "null_mean": 0.006479,
+      "null_std": 0.005569,
+      "z_score": 0.530103,
+      "p_value": 0.286,
+      "partial_mi": 0.0,
+      "significant": false
+    },
+    "ht_density": {
+      "observed_mi": 0.0,
+      "null_mean": 0.000787,
+      "null_std": 0.001622,
+      "z_score": -0.48546,
+      "p_value": 1.0,
+      "partial_mi": 0.0,
+      "significant": false
+    },
+    "cat_entropy": {
+      "observed_mi": 0.01765,
+      "null_mean": 0.00405,
+      "null_std": 0.004991,
+      "z_score": 2.7251,
+      "p_value": 0.022,
+      "partial_mi": 0.000992,
+      "significant": false
+    },
+    "iter_frac": {
+      "observed_mi": 0.061564,
+      "null_mean": 0.039845,
+      "null_std": 0.010009,
+      "z_score": 2.169881,
+      "p_value": 0.028,
+      "partial_mi": 0.024855,
+      "significant": false
+    },
+    "mon_frac": {
+      "observed_mi": 0.002595,
+      "null_mean": 0.000423,
+      "null_std": 0.001393,
+      "z_score": 1.559424,
+      "p_value": 0.062,
+      "partial_mi": 0.001361,
+      "significant": false
+    },
+    "bridge_frac": {
+      "observed_mi": 0.0,
+      "null_mean": 0.0,
+      "null_std": 0.0,
+      "z_score": 0.0,
+      "p_value": 1.0,
+      "partial_mi": 0.0,
+      "significant": false
+    },
+    "artic_rate": {
+      "observed_mi": 0.012321,
+      "null_mean": 0.004204,
+      "null_std": 0.004241,
+      "z_score": 1.914135,
+      "p_value": 0.062,
+      "partial_mi": 0.0,
+      "significant": false
+    },
+    "ey_frac": {
+      "observed_mi": 0.008468,
+      "null_mean": 0.009074,
+      "null_std": 0.007046,
+      "z_score": -0.085916,
+      "p_value": 0.48,
+      "partial_mi": 0.027101,
+      "significant": false
+    },
+    "ii_frac": {
+      "observed_mi": 0.02104,
+      "null_mean": 0.016228,
+      "null_std": 0.006849,
+      "z_score": 0.702595,
+      "p_value": 0.23,
+      "partial_mi": 0.016958,
+      "significant": false
+    }
+  },
+  "ablation": {
+    "length": {
+      "ablated_smoothness": 0.172768,
+      "delta_fraction": 0.07308
+    },
+    "suffix_mode_prop": {
+      "ablated_smoothness": 0.18309,
+      "delta_fraction": 0.0177
+    },
+    "prefix_jsd": {
+      "ablated_smoothness": 0.178406,
+      "delta_fraction": 0.042833
+    },
+    "k_frac": {
+      "ablated_smoothness": 0.179472,
+      "delta_fraction": 0.037111
+    },
+    "h_frac": {
+      "ablated_smoothness": 0.18973,
+      "delta_fraction": -0.017925
+    },
+    "e_frac": {
+      "ablated_smoothness": 0.181548,
+      "delta_fraction": 0.025973
+    },
+    "headless_rate": {
+      "ablated_smoothness": 0.186104,
+      "delta_fraction": 0.001531
+    },
+    "mod_density": {
+      "ablated_smoothness": 0.180996,
+      "delta_fraction": 0.028933
+    },
+    "m_term_rate": {
+      "ablated_smoothness": 0.186606,
+      "delta_fraction": -0.001164
+    },
+    "dark_frac": {
+      "ablated_smoothness": 0.190711,
+      "delta_fraction": -0.023186
+    },
+    "ht_density": {
+      "ablated_smoothness": 0.184078,
+      "delta_fraction": 0.012401
+    },
+    "cat_entropy": {
+      "ablated_smoothness": 0.183873,
+      "delta_fraction": 0.013501
+    },
+    "iter_frac": {
+      "ablated_smoothness": 0.185907,
+      "delta_fraction": 0.002586
+    },
+    "mon_frac": {
+      "ablated_smoothness": 0.183708,
+      "delta_fraction": 0.014386
+    },
+    "bridge_frac": {
+      "ablated_smoothness": 0.186389,
+      "delta_fraction": 0.0
+    },
+    "artic_rate": {
+      "ablated_smoothness": 0.18108,
+      "delta_fraction": 0.028483
+    },
+    "ey_frac": {
+      "ablated_smoothness": 0.18157,
+      "delta_fraction": 0.025856
+    },
+    "ii_frac": {
+      "ablated_smoothness": 0.186586,
+      "delta_fraction": -0.001058
+    },
+    "additivity_ratio": 0.28104,
+    "baseline_smoothness": 0.186389
+  },
+  "transfer_entropy": {
+    "length": {
+      "te_forward": 0.139784,
+      "te_backward": 1.983124,
+      "asymmetry": -0.868309,
+      "n_values": 945
+    },
+    "prefix_jsd": {
+      "te_forward": 0.092505,
+      "te_backward": 2.28164,
+      "asymmetry": -0.922073,
+      "n_values": 945
+    }
+  },
+  "safety_alternation": {
+    "ey_to_ii": {
+      "mi": 0.007443,
+      "null_mean": 0.004946,
+      "null_std": 0.005088,
+      "z_score": 0.490883,
+      "p_value": 0.27
+    },
+    "ii_to_ey": {
+      "mi": 0.00287,
+      "null_mean": 0.00501,
+      "null_std": 0.00544,
+      "z_score": -0.393513,
+      "p_value": 0.552
+    }
+  },
+  "context_partition": {
+    "body_body": {
+      "length": {
+        "mi": 0.358842
+      },
+      "suffix_mode_prop": {
+        "mi": 0.024437
+      },
+      "prefix_jsd": {
+        "mi": 0.047075
+      },
+      "k_frac": {
+        "mi": 0.023276
+      },
+      "h_frac": {
+        "mi": 0.0
+      },
+      "e_frac": {
+        "mi": 0.036267
+      },
+      "headless_rate": {
+        "mi": 0.021388
+      },
+      "mod_density": {
+        "mi": 0.034018
+      },
+      "m_term_rate": {
+        "mi": 0.01169
+      },
+      "dark_frac": {
+        "mi": 0.009432
+      },
+      "ht_density": {
+        "mi": 0.0
+      },
+      "cat_entropy": {
+        "mi": 0.01765
+      },
+      "iter_frac": {
+        "mi": 0.061564
+      },
+      "mon_frac": {
+        "mi": 0.002595
+      },
+      "bridge_frac": {
+        "mi": 0.0
+      },
+      "artic_rate": {
+        "mi": 0.012321
+      },
+      "ey_frac": {
+        "mi": 0.008468
+      },
+      "ii_frac": {
+        "mi": 0.02104
+      }
+    },
+    "cross_paragraph": {
+      "length": {
+        "mi": 0.0
+      },
+      "suffix_mode_prop": {
+        "mi": 0.0
+      },
+      "prefix_jsd": {
+        "mi": 0.0
+      },
+      "k_frac": {
+        "mi": 0.002248
+      },
+      "h_frac": {
+        "mi": 0.0
+      },
+      "e_frac": {
+        "mi": 0.042213
+      },
+      "headless_rate": {
+        "mi": 0.018197
+      },
+      "mod_density": {
+        "mi": 0.019442
+      },
+      "m_term_rate": {
+        "mi": 0.0
+      },
+      "dark_frac": {
+        "mi": 0.0
+      },
+      "ht_density": {
+        "mi": 0.0
+      },
+      "cat_entropy": {
+        "mi": 0.0
+      },
+      "iter_frac": {
+        "mi": 0.0
+      },
+      "mon_frac": {
+        "mi": 0.004764
+      },
+      "bridge_frac": {
+        "mi": 0.0
+      },
+      "artic_rate": {
+        "mi": 0.0
+      },
+      "ey_frac": {
+        "mi": 0.0
+      },
+      "ii_frac": {
+        "mi": 0.0
+      }
+    },
+    "n_body_body": 833,
+    "n_cross_paragraph": 354
+  },
+  "verdict": "SEQUENTIAL_WEAK",
+  "verdict_detail": {
+    "n_significant": 2,
+    "significant_channels": [
+      "length",
+      "prefix_jsd"
+    ],
+    "length_ablation_share": 0.260033
+  },
+  "predictions": {
+    "P1_length_dominant": {
+      "prediction": ">60% of ablation signal",
+      "result": "26%",
+      "pass": false
+    },
+    "P2_multi_channel": {
+      "prediction": ">=5 channels significant (z>3, MI>0.01)",
+      "result": "2 channels",
+      "pass": false
+    },
+    "P3_within_gt_cross": {
+      "prediction": "body-body MI > cross-paragraph MI",
+      "result": "BB=0.690 vs CP=0.087",
+      "pass": true
+    },
+    "P4_te_forward_dominant": {
+      "prediction": "TE forward > backward for majority of top channels",
+      "result": "0/2 channels forward-dominant",
+      "pass": false
+    },
+    "P5_safety_alternation": {
+      "prediction": "ey<->ii cross-MI significant (z>2)",
+      "result": "ey->ii z=0.5, ii->ey z=-0.4",
+      "pass": false
+    }
+  },
+  "runtime_s": 28.3
+}
