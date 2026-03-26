@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.64 | **Status:** FROZEN | **Constraints:** 1300 | **Date:** 2026-03-05
+**Version:** 6.01 | **Status:** FROZEN | **Constraints:** 1896 | **Date:** 2026-03-26
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -277,8 +277,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1156 |
-| Completed phases | 460 |
+| Validated constraints | 1896 |
+| Completed phases | 629 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -318,6 +318,7 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 - **Constraints (by topic):** [CLAIMS/INDEX.md](CLAIMS/INDEX.md) - Browse by category, follow links to details
 - **Architectural guide:** [MODEL_CONTEXT.md](MODEL_CONTEXT.md) - How to interpret the constraint system
 - **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC, PSC)
+- **Per-folio findings:** [FOLIOS/INDEX.md](FOLIOS/INDEX.md) - Individual folio analysis notes (crib decodes, structural properties)
 - **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - Phase index
 - **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
 - **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
