@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-26 11:02
+**Generated:** 2026-03-26 11:33
 **Version:** FROZEN STATE (1896 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -2129,12 +2129,12 @@ C1887	Within-family permutation test: real optimized assignment beats 1000 rando
 C1888	8D vs 4D feature comparison: adding 4 discovered dimensions (consistency_frac, suffix_transparency, header_enrichment, thermo_ke) to 4 known channel mappings raises confident from 4 to 9, mean ratio from 1.123 to 1.284. Only 4/15 assignments agree between 4D and 8D. TRAINING-SET result; cross-family validation is C1885	2	A↔B, cross-family, PL, features
 C1889	f75r is the only Currier B folio (of 82) with a 4+ consecutive identical token run (qokedy x4, line 13). Only 7 folios have runs of 3+; 75/82 have max run ≤2. Pure corpus fact independent of matching features	2	B, token, repetition, corpus
 C1890	ot-PREFIX fraction significantly higher on R3 folios (mean 0.306) than R1 folios (mean 0.196). Mann-Whitney U=171, p=0.005. Confirms C1478 prediction (k/t terminal mirrors): k-HEAD-dominant regime (R1) shows qo-PREFIX dominance, t-HEAD-involved regime (R3) shows ot-PREFIX elevation	2	B, PREFIX, REGIME, C1478, C1300
-C1891	f76r P1 has the strongest monotonic monitoring gradient in Currier B. Independent of 8D matching features	2	B, PREFIX, monitoring, gradient
-C1892	f76r P1 monitoring gradient is ch-dominant (rho_ch=0.341) over sh (rho_sh=0.221). Consistent with Ch18's silver-plate active testing procedure. Validates C929 at folio resolution	2	B, PREFIX, monitoring, C929
-C1893	f75r and f76r show PREFIX inversion: f75r qo-dominant (26.2%), f76r ch-dominant (17.0%). Replicates C929/C1313 k/e channel architecture at individual folio resolution	2	B, PREFIX, k-channel, e-channel, C929, C1313
+C1891	f76r P1 has the strongest monotonic monitoring gradient in Currier B. Not part of 8D matching features (which use folio-level HEAD ratios, not within-paragraph positional gradients). Small comparison set	2	B, PREFIX, monitoring, gradient
+C1892	f76r P1 monitoring gradient loads more on ch (rho_ch=0.341) than sh (rho_sh=0.221). Consistent with Ch18's active testing procedure (C929: ch=active test). Difference not formally tested for significance at this sample size	2	B, PREFIX, monitoring, C929
+C1893	f75r and f76r show PREFIX balance shift within same section/REGIME/quire: f75r qo-enriched (26.2% vs f76r 19.1%), f76r ch-enriched (17.0% vs f75r 10.2%). Both folios in section B, REGIME_1, quire M — section effects controlled. Consistent with C929/C1313 k/e channel architecture. 8D matching features use HEAD ratios not PREFIX fractions (not circular)	2	B, PREFIX, k-channel, e-channel, C929, C1313
 C1894	f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r	2	B, token, repetition, corpus
-C1895	Blind prediction test (predictions written before examining folios) achieves 44% strict pass rate (17/39) across 7 matches, 67% including partial. Match quality by distance correlates with prediction success	3	B, matching, PL, methodology
-C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on independent structural convergence (C1891-C1894 + C1889). Ch12→f113v remains Tier 4	3	B, matching, PL, content, upgrade
+C1895	Blind prediction test (predictions written before examining folios) achieves 44% strict pass rate (17/39) across 7 matches. No null baseline computed (random-folio scoring not tested). Partial credit (67%) includes analyst judgment. Distance-success correlation descriptive only	3	B, matching, PL, methodology
+C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference, C1895 no null model. Ch12→f113v remains Tier 4	3	B, matching, PL, content, upgrade
 
 ---
 

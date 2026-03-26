@@ -49,7 +49,7 @@ Exploratory scripts (in `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/`):
 |---|-----------|-------|-----------|--------|------|
 | P1 | f76r P1 gradient in top 25% | Expert-advisor criterion | rank ≤ 4/13 | Rank 1/13 | PASS |
 | P2 | f76r gradient ch-dominant | C929 (ch=active test) | rho_ch > rho_sh | 0.341 > 0.221 | PASS |
-| P3 | f75r↔f76r PREFIX inversion | C929, C1313 | qo/ch swap | qo: 26.2%↔19.1%, ch: 10.2%↔17.0% | PASS |
+| P3 | f75r↔f76r PREFIX balance shift | C929, C1313 | qo/ch enrichment swap | qo: 26.2%↔19.1%, ch: 10.2%↔17.0% | PASS |
 | P4 | f75r double-dar unique in B | Census from crib decode | only f75r | Confirmed (2 sequences, L35+L36) | PASS |
 | P5 | Blind prediction rate > 33% | Above random | pass > 13/39 | 17/39 (44%) | PASS |
 
@@ -63,20 +63,20 @@ Exploratory scripts (in `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/`):
 
 | ID | Claim | Tier | Key Metric |
 |----|-------|------|------------|
-| C1891 | f76r P1 has the strongest monotonic monitoring gradient in Currier B (rank 1/13 paragraphs with 15+ lines, Spearman rho=0.710). Independent of 8D matching features | Tier 2 | rank=1/13, rho=0.710 |
-| C1892 | f76r P1 monitoring gradient is ch-dominant (rho_ch=0.341) over sh (rho_sh=0.221). Consistent with Ch18's silver-plate active testing (C929) | Tier 2 | rho_ch=0.341, rho_sh=0.221 |
-| C1893 | f75r and f76r show PREFIX inversion: f75r qo-dominant (26.2%), f76r ch-dominant (17.0%). Replicates C929/C1313 k/e channel architecture at folio resolution | Tier 2 | f75r_qo=0.262, f76r_ch=0.170 |
+| C1891 | f76r P1 has the strongest monotonic monitoring gradient in Currier B (rank 1/13 paragraphs with 15+ lines, Spearman rho=0.710). Not part of 8D matching features (which use folio-level HEAD ratios, not within-paragraph gradients). Small comparison set (n=13) | Tier 2 | rank=1/13, rho=0.710 |
+| C1892 | f76r P1 monitoring gradient loads more on ch (rho_ch=0.341) than sh (rho_sh=0.221). Consistent with Ch18's active testing (C929). Difference not formally tested for significance | Tier 2 | rho_ch=0.341, rho_sh=0.221 |
+| C1893 | f75r and f76r show PREFIX balance shift within same section/REGIME/quire: f75r qo-enriched (26.2% vs 19.1%), f76r ch-enriched (17.0% vs 10.2%). Section effects controlled (both section B, R1, quire M). 8D features use HEAD ratios not PREFIX fractions (not circular). Consistent with C929/C1313 | Tier 2 | f75r_qo=0.262, f76r_ch=0.170 |
 | C1894 | f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar across 65 folios but consecutive doubles unique to f75r | Tier 2 | double_dar=2, total_dar=188 |
-| C1895 | Blind prediction test achieves 44% strict pass rate (17/39) across 7 matches. Predictions written before examining folios. Match quality by distance correlates with prediction success | Tier 3 | pass=17/39, partial=9/39 |
-| C1896 | C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on independent structural convergence (C1891-C1894 + C1889). Ch12→f113v remains Tier 4 | Tier 3 | upgraded=2/3 matches |
+| C1895 | Blind prediction test achieves 44% strict pass rate (17/39) across 7 matches. Predictions written before examining folios. No null baseline (random-folio scoring not tested). Partial credit (67%) includes analyst judgment | Tier 3 | pass=17/39, partial=9/39 |
+| C1896 | C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference, C1895 no null model. Ch12→f113v remains Tier 4 | Tier 3 | upgraded=2/3 matches |
 
 ---
 
 ## Verdict Logic
 
-**CONTENT_VALIDATED** — Two crib decodes (f75r, f76r) produce independent structural evidence beyond the 8D matching features that Phase 628 used. f76r P1's monitoring gradient ranks #1 in all of Currier B (C1891), its ch-dominance matches the active-test recipe (C1892), the two folios show PREFIX inversion matching k/e channel theory (C1893), and f75r's double-dar is unique in the corpus (C1894). Combined with Phase 628's token run uniqueness (C1889), two recipe-folio matches now have converging independent evidence sufficient to upgrade from Tier 4 to Tier 3 (C1896).
+**CONTENT_VALIDATED** — Two crib decodes (f75r, f76r) produce structural evidence beyond the 8D matching features. f76r P1's monitoring gradient ranks #1 of 13 eligible paragraphs (C1891, small n noted), its ch/sh loading is consistent with active-test recipe (C1892, difference untested), the two folios show PREFIX balance shift within the same section/REGIME/quire (C1893, not circular with matching features), and f75r's double-dar is unique in the corpus (C1894). Combined with Phase 628's token run uniqueness (C1889), two recipe-folio matches have converging evidence supporting Tier 3 upgrade (C1896).
 
-The blind prediction test (C1895) provides additional support: predictions from PL chapter descriptions — written before examining any folio data — achieve 44% strict pass rate (67% including partial matches), and prediction success correlates with match quality.
+The blind prediction test (C1895) achieves 44% strict pass rate but lacks a null baseline, limiting its evidentiary force. The upgrade to Tier 3 is directionally warranted but the supporting evidence has noted caveats.
 
 ---
 
