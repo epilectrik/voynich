@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1890 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1896 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1890.
+the highest ID present is C1896.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1890 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1896 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1890 validated constraints are present as canonical one-line claims with tier
+1896 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-25 22:30
-**Version:** FROZEN STATE (1890 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-26 11:02
+**Version:** FROZEN STATE (1896 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2129,6 +2129,12 @@ C1887	Within-family permutation test: real optimized assignment beats 1000 rando
 C1888	8D vs 4D feature comparison: adding 4 discovered dimensions (consistency_frac, suffix_transparency, header_enrichment, thermo_ke) to 4 known channel mappings raises confident from 4 to 9, mean ratio from 1.123 to 1.284. Only 4/15 assignments agree between 4D and 8D. TRAINING-SET result; cross-family validation is C1885	2	A↔B, cross-family, PL, features
 C1889	f75r is the only Currier B folio (of 82) with a 4+ consecutive identical token run (qokedy x4, line 13). Only 7 folios have runs of 3+; 75/82 have max run ≤2. Pure corpus fact independent of matching features	2	B, token, repetition, corpus
 C1890	ot-PREFIX fraction significantly higher on R3 folios (mean 0.306) than R1 folios (mean 0.196). Mann-Whitney U=171, p=0.005. Confirms C1478 prediction (k/t terminal mirrors): k-HEAD-dominant regime (R1) shows qo-PREFIX dominance, t-HEAD-involved regime (R3) shows ot-PREFIX elevation	2	B, PREFIX, REGIME, C1478, C1300
+C1891	f76r P1 has the strongest monotonic monitoring gradient in Currier B. Independent of 8D matching features	2	B, PREFIX, monitoring, gradient
+C1892	f76r P1 monitoring gradient is ch-dominant (rho_ch=0.341) over sh (rho_sh=0.221). Consistent with Ch18's silver-plate active testing procedure. Validates C929 at folio resolution	2	B, PREFIX, monitoring, C929
+C1893	f75r and f76r show PREFIX inversion: f75r qo-dominant (26.2%), f76r ch-dominant (17.0%). Replicates C929/C1313 k/e channel architecture at individual folio resolution	2	B, PREFIX, k-channel, e-channel, C929, C1313
+C1894	f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r	2	B, token, repetition, corpus
+C1895	Blind prediction test (predictions written before examining folios) achieves 44% strict pass rate (17/39) across 7 matches, 67% including partial. Match quality by distance correlates with prediction success	3	B, matching, PL, methodology
+C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on independent structural convergence (C1891-C1894 + C1889). Ch12→f113v remains Tier 4	3	B, matching, PL, content, upgrade
 
 ---
 
@@ -2136,7 +2142,7 @@ C1890	ot-PREFIX fraction significantly higher on R3 folios (mean 0.306) than R1 
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-25
+# Generated: 2026-03-26
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

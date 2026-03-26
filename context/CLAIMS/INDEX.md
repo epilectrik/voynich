@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1890 validated constraints | **Version:** 6.00 | **Date:** 2026-03-25
+**Total:** 1896 validated constraints | **Version:** 6.01 | **Date:** 2026-03-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,26 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 629: Crib Decode Validation — CONTENT_VALIDATED (C1891-C1896)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1891 | f76r P1 has the strongest monotonic monitoring gradient in Currier B (rank 1/13 paragraphs with 15+ lines, Spearman rho=0.710). Independent of 8D matching features | 2 | B, PREFIX, monitoring, gradient | rank=1of13. rho=0.710. min_lines=15. |
+| 1892 | f76r P1 monitoring gradient is ch-dominant (rho_ch=0.341) over sh (rho_sh=0.221). Consistent with Ch18's silver-plate active testing procedure. Validates C929 at folio resolution | 2 | B, PREFIX, monitoring, C929 | rho_ch=0.341. rho_sh=0.221. |
+| 1893 | f75r and f76r show PREFIX inversion: f75r qo-dominant (26.2%), f76r ch-dominant (17.0%). Replicates C929/C1313 k/e channel architecture at individual folio resolution | 2 | B, PREFIX, k-channel, e-channel, C929, C1313 | f75r_qo=0.262. f76r_qo=0.191. f75r_ch=0.102. f76r_ch=0.170. |
+| 1894 | f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r | 2 | B, token, repetition, corpus | double_dar=2. total_dar=188. dar_folios=65. |
+| 1895 | Blind prediction test (predictions written before examining folios) achieves 44% strict pass rate (17/39) across 7 matches, 67% including partial. Match quality by distance correlates with prediction success | 3 | B, matching, PL, methodology | pass=17of39. partial=9of39. fail=13of39. |
+| 1896 | C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on independent structural convergence (C1891-C1894 + C1889). Ch12→f113v remains Tier 4 | 3 | B, matching, PL, content, upgrade | upgraded=Ch19_f75r+Ch18_f76r. remaining_T4=Ch12_f113v. |
+
+**Phase 629 findings (Crib Decode Validation, CONTENT_VALIDATED):**
+- Two crib decodes produce independent structural evidence beyond Phase 628's 8D matching features. f76r P1's monitoring gradient ranks #1 in all of Currier B (C1891, rho=0.710), and the gradient is ch-dominant (C1892), specifically matching Ch18's active silver-plate assay rather than generic passive observation.
+- PREFIX inversion between f75r and f76r (C1893) replicates the k/e channel architecture (C929, C1313) at individual folio resolution: f75r maps to a thermal/k-HEAD recipe (qo-dominant), f76r maps to a monitoring/e-HEAD recipe (ch-dominant).
+- f75r's consecutive double-dar sequences (C1894) are unique in Currier B, adding to the token run uniqueness (C1889). Two independent uniqueness properties on the same folio matched to the most repetitive recipe in the PL corpus.
+- Blind prediction protocol (C1895): structural predictions from PL chapter descriptions written BEFORE examining folios achieve 44% strict pass rate across 7 matches. Strongest matches produce best prediction rates; weakest match produces worst.
+- Combined evidence upgrades C1884 from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r (C1896). These two recipe-folio correspondences now have content-level validation.
 
 ---
 

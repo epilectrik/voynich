@@ -4,6 +4,37 @@
 
 ---
 
+## Version 6.01 (2026-03-25) - Phase 629: Crib Decode Validation
+
+### Summary
+
+Phase 629 performs content-level validation of Phase 628's recipe-folio matches through independent structural analysis. One script consolidates five tests: monitoring gradient rarity (f76r P1 rank 1/13 in Currier B), ch/sh gradient decomposition, PREFIX inversion between f75r and f76r, double-dar corpus census, and blind prediction scoring across 7 matches. Key result: **CONTENT_VALIDATED** — two crib decodes (f75r, f76r) produce independent structural evidence beyond the 8D matching features, upgrading C1884 from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r. 6 constraints registered (C1891-C1896), 4 Tier 2 + 2 Tier 3. All 5 predictions pass.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CRIB_DECODE_VALIDATION/` -- Phase 629 with 1 script, JSON results, INDEX.md |
+| **ADDED** | C1891: f76r P1 monitoring gradient rank 1/13 (rho=0.710), strongest in Currier B |
+| **ADDED** | C1892: f76r gradient ch-dominant (rho_ch=0.341 > rho_sh=0.221), validates C929 |
+| **ADDED** | C1893: f75r↔f76r PREFIX inversion replicates C929/C1313 k/e channel architecture |
+| **ADDED** | C1894: f75r has only consecutive double-dar in Currier B (188 dar across 65 folios) |
+| **ADDED** | C1895: Blind prediction test 44% pass rate (17/39), distance correlates with success |
+| **ADDED** | C1896: C1884 upgraded Tier 4→3 for Ch19→f75r and Ch18→f76r (independent convergence) |
+| **ADDED** | `context/FOLIOS/` -- Per-folio findings index with f75r.md, f76r.md |
+| **UPDATED** | INDEX.md -- +6 constraints (1896 total), Phase 629 section |
+| **UPDATED** | CLAUDE_INDEX.md -- Added FOLIOS navigation link |
+
+### Key Findings
+
+1. **f76r P1 gradient rarity (C1891):** Rank 1 of 13 eligible paragraphs. The strongest monotonic monitoring gradient in Currier B, independent of the 8D matching features.
+2. **ch-dominance validates C929 (C1892):** Active test PREFIX (ch) drives the gradient more than passive monitoring (sh), specifically matching Ch18's silver-plate assay.
+3. **PREFIX inversion (C1893):** f75r (qo-dominant, thermal) and f76r (ch-dominant, monitoring) show inversely complementary profiles, replicating the k/e channel architecture at folio resolution.
+4. **Double-dar uniqueness (C1894):** Only f75r has consecutive dar sequences in the corpus, adding to C1889's token run uniqueness.
+5. **Blind prediction methodology (C1895):** Predictions written before examining folios achieve 44% strict pass (67% including partial), with strongest matches producing best prediction rates.
+
+---
+
 ## Version 6.00 (2026-03-25) - Phase 628: Individual Recipe-to-Folio Correspondence
 
 ### Summary
