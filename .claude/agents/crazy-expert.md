@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1697 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1881.
+the highest ID present is C1890.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2206,6 +2206,15 @@ C1878	Brunschwig fire degree ordering weakly consistent with V k_ratio REGIME or
 C1879	LOO REGIME prediction from PL features: MAE=0.11, worst R4=0.19. PL features poor predictors of REGIME HEAD-channel profiles.	2	cross-family, PL, REGIME	mean_MAE=0.11. worst_MAE=0.19.
 C1880	PL-to-V calibration is domain-level (distillation-vs-rest per C1754), not per-channel. HEAD-channel structure is V-internal.	2	A↔B, cross-family, PL, HEAD	domain_only. C1754_confirmed.
 C1881	CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED verdict: HEAD channels discriminate REGIMEs (V-internal), e-channel Stars calibration works, PL structure does NOT map. 4 PASS, 3 FAIL.	2	A↔B, B, phase-verdict	pass=4. fail=3.
+C1882	8D residual distillation->R1 matching (TRAINING SET): 9/16 confident (ratio>1.15), mean ratio 1.284, 11 unique NN. Validation via C1885/C1887.	2	A↔B, cross-family, PL, REGIME, matching	confident=9of16. ratio=1.284. unique_NN=11of32.
+C1883	CV stability: 11/16 distillation chapters >40% consensus across 500 feature-subset trials.	2	A↔B, cross-family, PL, stability	consensus=11of16. n_trials=500.
+C1884	Three content-interpreted matches: Ch19->f75r (aqua vitae), Ch18->f76r (element separation), Ch12->f113v (mercury sublimation). Interpretive, not structural.	4	A↔B, cross-family, PL, content	matches=3.
+C1885	Cross-family replication (frozen 8D, no re-tuning): sublimation->R3 4/7 confident, dissolution->R1 5/15, fixation->R3 3/10. Features generalize.	2	A↔B, cross-family, PL, REGIME, replication	sub=4of7. diss=5of15. fix=3of10.
+C1886	Wrong-regime R4 collapse: 1/16 confident, ratio 0.863. R3 degrades to 4/16, ratio 1.017. Features regime-discriminating.	2	A↔B, cross-family, PL, REGIME, negative-control	R4_confident=1of16. R4_ratio=0.863.
+C1887	Permutation test p<0.001 for ratio (1.284 vs null 0.572) and confident (9 vs null 0.32). Random-draw p=0.01. Chapter-level specificity confirmed.	2	A↔B, cross-family, PL, REGIME, permutation	p_ratio<0.001. p_confident<0.001. random_p=0.01.
+C1888	8D vs 4D: additional 4 dimensions raise confident 4->9, ratio 1.123->1.284. Only 4/15 assignments agree. Training-set result.	2	A↔B, cross-family, PL, features	4D_conf=4. 8D_conf=9. agree=4of15.
+C1889	f75r only Currier B folio (of 82) with 4+ consecutive identical token run (qokedy x4, line 13). 7 folios have 3+. Pure corpus fact.	2	B, token, repetition, corpus	max_run=4. n_3plus=7. n_total=82.
+C1890	ot-PREFIX fraction higher on R3 (0.306) than R1 (0.196), Mann-Whitney U=171, p=0.005. Confirms C1478 k/t terminal mirror prediction at REGIME level.	2	B, PREFIX, REGIME, C1478	R3=0.306. R1=0.196. p=0.005.
 
 ---
 

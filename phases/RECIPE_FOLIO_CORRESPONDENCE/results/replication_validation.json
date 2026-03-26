@@ -1,0 +1,2877 @@
+{
+  "T1_cross_family_replication": {
+    "sublimation_REGIME_3": {
+      "matching": {
+        "assignment": {
+          "4": 5,
+          "3": 7,
+          "2": 6,
+          "5": 13,
+          "0": 4,
+          "6": 8,
+          "1": 17
+        },
+        "match_table": [
+          {
+            "chapter_number": 48,
+            "chapter_idx": 174,
+            "family": "sublimation",
+            "folio": "f107r",
+            "distance": 1.071,
+            "second_distance": 1.8184,
+            "ratio": 1.698,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.1281,
+              0.0001,
+              0.0019,
+              0.0028,
+              0.0333,
+              0.0177,
+              0.3021,
+              0.6611
+            ]
+          },
+          {
+            "chapter_number": 12,
+            "chapter_idx": 139,
+            "family": "sublimation",
+            "folio": "f113v",
+            "distance": 1.1853,
+            "second_distance": 1.5026,
+            "ratio": 1.268,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.0,
+              0.003,
+              0.2538,
+              0.0383,
+              0.1381,
+              0.1967,
+              0.0,
+              0.7749
+            ]
+          },
+          {
+            "chapter_number": 8,
+            "chapter_idx": 135,
+            "family": "sublimation",
+            "folio": "f113r",
+            "distance": 1.9281,
+            "second_distance": 2.4417,
+            "ratio": 1.266,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.2444,
+              1.0016,
+              0.0374,
+              0.282,
+              0.0285,
+              0.6851,
+              0.75,
+              0.6886
+            ]
+          },
+          {
+            "chapter_number": 16,
+            "chapter_idx": 192,
+            "family": "sublimation",
+            "folio": "f34v",
+            "distance": 2.1156,
+            "second_distance": 1.8536,
+            "ratio": 0.876,
+            "confident": false,
+            "per_dim_dist_sq": [
+              1.4085,
+              0.0145,
+              0.3279,
+              0.3964,
+              0.832,
+              0.503,
+              0.5376,
+              0.456
+            ]
+          },
+          {
+            "chapter_number": 21,
+            "chapter_idx": 116,
+            "family": "sublimation",
+            "folio": "f106v",
+            "distance": 3.3364,
+            "second_distance": 3.0342,
+            "ratio": 0.909,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.4302,
+              3.1527,
+              1.0591,
+              1.6958,
+              0.5033,
+              0.0001,
+              4.0325,
+              0.2579
+            ]
+          },
+          {
+            "chapter_number": 5,
+            "chapter_idx": 207,
+            "family": "sublimation",
+            "folio": "f114r",
+            "distance": 3.8007,
+            "second_distance": 4.4666,
+            "ratio": 1.175,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.8333,
+              0.1287,
+              4.3587,
+              7.1165,
+              0.832,
+              0.503,
+              0.0195,
+              0.6537
+            ]
+          },
+          {
+            "chapter_number": 3,
+            "chapter_idx": 130,
+            "family": "sublimation",
+            "folio": "f85r2",
+            "distance": 7.2738,
+            "second_distance": 7.443,
+            "ratio": 1.023,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.3632,
+              12.0329,
+              0.0747,
+              6.5819,
+              0.0103,
+              2.5478,
+              6.597,
+              24.7
+            ]
+          }
+        ],
+        "mean_distance": 2.9587,
+        "mean_ratio": 1.174,
+        "n_confident": 4,
+        "n_unique_nn": 5,
+        "n_pl": 7,
+        "n_v": 20
+      },
+      "cv": {
+        "cv_table": [
+          {
+            "chapter_number": 21,
+            "chapter_idx": 116,
+            "top_match": "f106v",
+            "top_freq": 0.298,
+            "second_match": "f104r",
+            "second_freq": 0.186,
+            "consensus": false
+          },
+          {
+            "chapter_number": 3,
+            "chapter_idx": 130,
+            "top_match": "f85r2",
+            "top_freq": 0.542,
+            "second_match": "f85r1",
+            "second_freq": 0.232,
+            "consensus": true
+          },
+          {
+            "chapter_number": 8,
+            "chapter_idx": 135,
+            "top_match": "f113r",
+            "top_freq": 0.344,
+            "second_match": "f94v",
+            "second_freq": 0.21,
+            "consensus": false
+          },
+          {
+            "chapter_number": 12,
+            "chapter_idx": 139,
+            "top_match": "f113v",
+            "top_freq": 0.53,
+            "second_match": "f113r",
+            "second_freq": 0.238,
+            "consensus": true
+          },
+          {
+            "chapter_number": 48,
+            "chapter_idx": 174,
+            "top_match": "f107r",
+            "top_freq": 0.808,
+            "second_match": "f104v",
+            "second_freq": 0.066,
+            "consensus": true
+          },
+          {
+            "chapter_number": 16,
+            "chapter_idx": 192,
+            "top_match": "f34v",
+            "top_freq": 0.336,
+            "second_match": "f46r",
+            "second_freq": 0.214,
+            "consensus": false
+          },
+          {
+            "chapter_number": 5,
+            "chapter_idx": 207,
+            "top_match": "f114r",
+            "top_freq": 0.776,
+            "second_match": "f85r1",
+            "second_freq": 0.084,
+            "consensus": true
+          }
+        ],
+        "n_consensus": 4,
+        "n_chapters": 7,
+        "n_trials": 500
+      }
+    },
+    "fixation_REGIME_3": {
+      "matching": {
+        "assignment": {
+          "2": 10,
+          "6": 14,
+          "5": 6,
+          "8": 5,
+          "1": 0,
+          "0": 4,
+          "7": 2,
+          "4": 7,
+          "3": 8,
+          "9": 9
+        },
+        "match_table": [
+          {
+            "chapter_number": 28,
+            "chapter_idx": 123,
+            "family": "fixation",
+            "folio": "f115r",
+            "distance": 1.5169,
+            "second_distance": 2.2262,
+            "ratio": 1.468,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.7805,
+              0.75,
+              0.0542,
+              0.2039,
+              0.0748,
+              0.2197,
+              0.0382,
+              0.1797
+            ]
+          },
+          {
+            "chapter_number": 6,
+            "chapter_idx": 133,
+            "family": "fixation",
+            "folio": "f39r",
+            "distance": 1.8581,
+            "second_distance": 3.1041,
+            "ratio": 1.671,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.0171,
+              0.7465,
+              0.9396,
+              0.1094,
+              0.0748,
+              0.5145,
+              0.2582,
+              0.7925
+            ]
+          },
+          {
+            "chapter_number": 4,
+            "chapter_idx": 131,
+            "family": "fixation",
+            "folio": "f113r",
+            "distance": 1.9776,
+            "second_distance": 2.011,
+            "ratio": 1.017,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.1523,
+              0.1553,
+              0.1244,
+              0.2871,
+              0.6515,
+              0.5986,
+              0.1738,
+              1.7679
+            ]
+          },
+          {
+            "chapter_number": 43,
+            "chapter_idx": 168,
+            "family": "fixation",
+            "folio": "f107r",
+            "distance": 2.2639,
+            "second_distance": 2.642,
+            "ratio": 1.167,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.1822,
+              0.002,
+              0.0318,
+              1.0652,
+              0.454,
+              0.5145,
+              1.179,
+              1.6969
+            ]
+          },
+          {
+            "chapter_number": 26,
+            "chapter_idx": 121,
+            "family": "fixation",
+            "folio": "f104r",
+            "distance": 2.3797,
+            "second_distance": 2.4109,
+            "ratio": 1.013,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.4694,
+              0.6458,
+              0.2193,
+              0.7625,
+              0.6302,
+              0.0182,
+              2.3049,
+              0.6126
+            ]
+          },
+          {
+            "chapter_number": 24,
+            "chapter_idx": 119,
+            "family": "fixation",
+            "folio": "f106v",
+            "distance": 2.455,
+            "second_distance": 2.6288,
+            "ratio": 1.071,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.4396,
+              0.24,
+              1.7639,
+              0.7928,
+              0.0748,
+              0.9736,
+              1.0859,
+              0.6566
+            ]
+          },
+          {
+            "chapter_number": 42,
+            "chapter_idx": 167,
+            "family": "fixation",
+            "folio": "f105v",
+            "distance": 2.8275,
+            "second_distance": 3.0987,
+            "ratio": 1.096,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.1425,
+              3.5446,
+              0.0004,
+              0.0,
+              1.7623,
+              0.3818,
+              1.3834,
+              0.7798
+            ]
+          },
+          {
+            "chapter_number": 32,
+            "chapter_idx": 127,
+            "family": "fixation",
+            "folio": "f113v",
+            "distance": 2.8726,
+            "second_distance": 2.4724,
+            "ratio": 0.861,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.4175,
+              3.2069,
+              0.5113,
+              0.6582,
+              0.0748,
+              0.0002,
+              2.1102,
+              1.2729
+            ]
+          },
+          {
+            "chapter_number": 29,
+            "chapter_idx": 124,
+            "family": "fixation",
+            "folio": "f114r",
+            "distance": 3.4404,
+            "second_distance": 3.5408,
+            "ratio": 1.029,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.025,
+              0.574,
+              0.9479,
+              0.0879,
+              0.0748,
+              2.3425,
+              0.8727,
+              6.9115
+            ]
+          },
+          {
+            "chapter_number": 15,
+            "chapter_idx": 191,
+            "family": "fixation",
+            "folio": "f114v",
+            "distance": 3.5165,
+            "second_distance": 2.8569,
+            "ratio": 0.812,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.2384,
+              0.6084,
+              0.1188,
+              4.0451,
+              1.7623,
+              0.1957,
+              4.0412,
+              1.3557
+            ]
+          }
+        ],
+        "mean_distance": 2.5108,
+        "mean_ratio": 1.121,
+        "n_confident": 3,
+        "n_unique_nn": 8,
+        "n_pl": 10,
+        "n_v": 20
+      },
+      "cv": {
+        "cv_table": [
+          {
+            "chapter_number": 24,
+            "chapter_idx": 119,
+            "top_match": "f106v",
+            "top_freq": 0.37,
+            "second_match": "f85r1",
+            "second_freq": 0.18,
+            "consensus": false
+          },
+          {
+            "chapter_number": 26,
+            "chapter_idx": 121,
+            "top_match": "f104r",
+            "top_freq": 0.46,
+            "second_match": "f113r",
+            "second_freq": 0.16,
+            "consensus": true
+          },
+          {
+            "chapter_number": 28,
+            "chapter_idx": 123,
+            "top_match": "f115r",
+            "top_freq": 0.794,
+            "second_match": "f114v",
+            "second_freq": 0.076,
+            "consensus": true
+          },
+          {
+            "chapter_number": 29,
+            "chapter_idx": 124,
+            "top_match": "f114r",
+            "top_freq": 0.7,
+            "second_match": "f115v",
+            "second_freq": 0.132,
+            "consensus": true
+          },
+          {
+            "chapter_number": 32,
+            "chapter_idx": 127,
+            "top_match": "f107r",
+            "top_freq": 0.46,
+            "second_match": "f104r",
+            "second_freq": 0.216,
+            "consensus": true
+          },
+          {
+            "chapter_number": 4,
+            "chapter_idx": 131,
+            "top_match": "f113r",
+            "top_freq": 0.474,
+            "second_match": "f105v",
+            "second_freq": 0.222,
+            "consensus": true
+          },
+          {
+            "chapter_number": 6,
+            "chapter_idx": 133,
+            "top_match": "f39r",
+            "top_freq": 0.832,
+            "second_match": "f46r",
+            "second_freq": 0.142,
+            "consensus": true
+          },
+          {
+            "chapter_number": 42,
+            "chapter_idx": 167,
+            "top_match": "f85r2",
+            "top_freq": 0.358,
+            "second_match": "f105v",
+            "second_freq": 0.262,
+            "consensus": false
+          },
+          {
+            "chapter_number": 43,
+            "chapter_idx": 168,
+            "top_match": "f107r",
+            "top_freq": 0.398,
+            "second_match": "f113v",
+            "second_freq": 0.184,
+            "consensus": false
+          },
+          {
+            "chapter_number": 15,
+            "chapter_idx": 191,
+            "top_match": "f105v",
+            "top_freq": 0.362,
+            "second_match": "f114v",
+            "second_freq": 0.312,
+            "consensus": false
+          }
+        ],
+        "n_consensus": 6,
+        "n_chapters": 10,
+        "n_trials": 500
+      }
+    },
+    "dissolution_REGIME_1": {
+      "matching": {
+        "assignment": {
+          "5": 29,
+          "12": 11,
+          "7": 30,
+          "0": 7,
+          "3": 21,
+          "6": 14,
+          "4": 26,
+          "2": 9,
+          "9": 25,
+          "8": 13,
+          "13": 22,
+          "11": 27,
+          "1": 8,
+          "10": 19,
+          "14": 4
+        },
+        "match_table": [
+          {
+            "chapter_number": 6,
+            "chapter_idx": 101,
+            "family": "dissolution",
+            "folio": "f84r",
+            "distance": 0.9701,
+            "second_distance": 1.4934,
+            "ratio": 1.539,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.0028,
+              0.0142,
+              0.1791,
+              0.091,
+              0.2575,
+              0.017,
+              0.3439,
+              0.0355
+            ]
+          },
+          {
+            "chapter_number": 45,
+            "chapter_idx": 170,
+            "family": "dissolution",
+            "folio": "f75r",
+            "distance": 1.3822,
+            "second_distance": 1.9037,
+            "ratio": 1.377,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.958,
+              0.179,
+              0.1413,
+              0.1896,
+              0.145,
+              0.0284,
+              0.01,
+              0.2592
+            ]
+          },
+          {
+            "chapter_number": 11,
+            "chapter_idx": 106,
+            "family": "dissolution",
+            "folio": "f84v",
+            "distance": 1.561,
+            "second_distance": 1.9692,
+            "ratio": 1.262,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.0203,
+              0.5311,
+              0.08,
+              0.0026,
+              0.2575,
+              0.2603,
+              1.2188,
+              0.0659
+            ]
+          },
+          {
+            "chapter_number": 11,
+            "chapter_idx": 10,
+            "family": "dissolution",
+            "folio": "f112r",
+            "distance": 1.6697,
+            "second_distance": 2.5048,
+            "ratio": 1.5,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.0001,
+              1.7671,
+              0.0298,
+              0.0318,
+              0.3315,
+              0.0182,
+              0.248,
+              0.3615
+            ]
+          },
+          {
+            "chapter_number": 3,
+            "chapter_idx": 98,
+            "family": "dissolution",
+            "folio": "f80r",
+            "distance": 2.0107,
+            "second_distance": 1.9982,
+            "ratio": 0.994,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.1863,
+              0.1293,
+              1.4946,
+              1.0977,
+              0.2575,
+              0.5944,
+              0.0171,
+              0.266
+            ]
+          },
+          {
+            "chapter_number": 10,
+            "chapter_idx": 105,
+            "family": "dissolution",
+            "folio": "f76v",
+            "distance": 2.1002,
+            "second_distance": 2.1746,
+            "ratio": 1.035,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.0029,
+              0.7967,
+              0.0843,
+              0.3823,
+              0.2575,
+              1.1018,
+              0.9798,
+              0.8055
+            ]
+          },
+          {
+            "chapter_number": 5,
+            "chapter_idx": 100,
+            "family": "dissolution",
+            "folio": "f82v",
+            "distance": 2.1927,
+            "second_distance": 1.9982,
+            "ratio": 0.911,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.0294,
+              1.6843,
+              2.1076,
+              0.0021,
+              0.2575,
+              0.5944,
+              0.0681,
+              0.0642
+            ]
+          },
+          {
+            "chapter_number": 93,
+            "chapter_idx": 92,
+            "family": "dissolution",
+            "folio": "f116r",
+            "distance": 2.2853,
+            "second_distance": 2.137,
+            "ratio": 0.935,
+            "confident": false,
+            "per_dim_dist_sq": [
+              2.6811,
+              0.0404,
+              0.078,
+              0.7,
+              0.0252,
+              0.5944,
+              0.0657,
+              1.0377
+            ]
+          },
+          {
+            "chapter_number": 15,
+            "chapter_idx": 110,
+            "family": "dissolution",
+            "folio": "f82r",
+            "distance": 2.406,
+            "second_distance": 1.9982,
+            "ratio": 0.831,
+            "confident": false,
+            "per_dim_dist_sq": [
+              1.5768,
+              0.5724,
+              0.1793,
+              0.4077,
+              0.2575,
+              0.5944,
+              0.7712,
+              1.4295
+            ]
+          },
+          {
+            "chapter_number": 12,
+            "chapter_idx": 107,
+            "family": "dissolution",
+            "folio": "f76r",
+            "distance": 2.4425,
+            "second_distance": 2.5102,
+            "ratio": 1.028,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.4066,
+              0.0159,
+              0.5293,
+              1.6924,
+              0.2575,
+              0.0602,
+              2.8547,
+              0.1491
+            ]
+          },
+          {
+            "chapter_number": 51,
+            "chapter_idx": 177,
+            "family": "dissolution",
+            "folio": "f80v",
+            "distance": 2.4589,
+            "second_distance": 1.9982,
+            "ratio": 0.813,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.0114,
+              1.1041,
+              1.5474,
+              0.7614,
+              0.2575,
+              0.5944,
+              0.9074,
+              0.8628
+            ]
+          },
+          {
+            "chapter_number": 17,
+            "chapter_idx": 144,
+            "family": "dissolution",
+            "folio": "f83r",
+            "distance": 2.5294,
+            "second_distance": 2.9769,
+            "ratio": 1.177,
+            "confident": true,
+            "per_dim_dist_sq": [
+              0.1504,
+              1.5447,
+              0.0861,
+              0.1104,
+              0.145,
+              1.139,
+              3.1363,
+              0.0859
+            ]
+          },
+          {
+            "chapter_number": 16,
+            "chapter_idx": 15,
+            "family": "dissolution",
+            "folio": "f112v",
+            "distance": 2.8545,
+            "second_distance": 2.7697,
+            "ratio": 0.97,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.9717,
+              0.3547,
+              2.4397,
+              1.1309,
+              0.0072,
+              0.0175,
+              1.7084,
+              1.5178
+            ]
+          },
+          {
+            "chapter_number": 30,
+            "chapter_idx": 125,
+            "family": "dissolution",
+            "folio": "f79r",
+            "distance": 2.9458,
+            "second_distance": 3.0011,
+            "ratio": 1.019,
+            "confident": false,
+            "per_dim_dist_sq": [
+              1.4503,
+              2.4943,
+              0.0389,
+              1.8015,
+              1.9481,
+              0.01,
+              0.0416,
+              0.8935
+            ]
+          },
+          {
+            "chapter_number": 23,
+            "chapter_idx": 198,
+            "family": "dissolution",
+            "folio": "f108v",
+            "distance": 3.1629,
+            "second_distance": 3.4229,
+            "ratio": 1.082,
+            "confident": false,
+            "per_dim_dist_sq": [
+              0.3872,
+              0.8412,
+              4.7231,
+              0.5338,
+              0.0581,
+              0.4075,
+              1.2201,
+              1.8328
+            ]
+          }
+        ],
+        "mean_distance": 2.1981,
+        "mean_ratio": 1.098,
+        "n_confident": 5,
+        "n_unique_nn": 9,
+        "n_pl": 15,
+        "n_v": 32
+      },
+      "cv": {
+        "cv_table": [
+          {
+            "chapter_number": 11,
+            "chapter_idx": 10,
+            "top_match": "f112r",
+            "top_freq": 0.746,
+            "second_match": "f79r",
+            "second_freq": 0.086,
+            "consensus": true
+          },
+          {
+            "chapter_number": 16,
+            "chapter_idx": 15,
+            "top_match": "f112v",
+            "top_freq": 0.512,
+            "second_match": "f76r",
+            "second_freq": 0.126,
+            "consensus": true
+          },
+          {
+            "chapter_number": 93,
+            "chapter_idx": 92,
+            "top_match": "f116r",
+            "top_freq": 0.474,
+            "second_match": "f103r",
+            "second_freq": 0.184,
+            "consensus": true
+          },
+          {
+            "chapter_number": 3,
+            "chapter_idx": 98,
+            "top_match": "f80r",
+            "top_freq": 0.276,
+            "second_match": "f82v",
+            "second_freq": 0.196,
+            "consensus": false
+          },
+          {
+            "chapter_number": 5,
+            "chapter_idx": 100,
+            "top_match": "f80r",
+            "top_freq": 0.348,
+            "second_match": "f84v",
+            "second_freq": 0.142,
+            "consensus": false
+          },
+          {
+            "chapter_number": 6,
+            "chapter_idx": 101,
+            "top_match": "f84r",
+            "top_freq": 0.834,
+            "second_match": "f84v",
+            "second_freq": 0.042,
+            "consensus": true
+          },
+          {
+            "chapter_number": 10,
+            "chapter_idx": 105,
+            "top_match": "f76v",
+            "top_freq": 0.432,
+            "second_match": "f111r",
+            "second_freq": 0.256,
+            "consensus": true
+          },
+          {
+            "chapter_number": 11,
+            "chapter_idx": 106,
+            "top_match": "f84v",
+            "top_freq": 0.26,
+            "second_match": "f78v",
+            "second_freq": 0.162,
+            "consensus": false
+          },
+          {
+            "chapter_number": 12,
+            "chapter_idx": 107,
+            "top_match": "f76r",
+            "top_freq": 0.486,
+            "second_match": "f83r",
+            "second_freq": 0.244,
+            "consensus": true
+          },
+          {
+            "chapter_number": 15,
+            "chapter_idx": 110,
+            "top_match": "f82v",
+            "top_freq": 0.21,
+            "second_match": "f80v",
+            "second_freq": 0.144,
+            "consensus": false
+          },
+          {
+            "chapter_number": 30,
+            "chapter_idx": 125,
+            "top_match": "f79r",
+            "top_freq": 0.49,
+            "second_match": "f81v",
+            "second_freq": 0.238,
+            "consensus": true
+          },
+          {
+            "chapter_number": 17,
+            "chapter_idx": 144,
+            "top_match": "f83r",
+            "top_freq": 0.54,
+            "second_match": "f81v",
+            "second_freq": 0.232,
+            "consensus": true
+          },
+          {
+            "chapter_number": 45,
+            "chapter_idx": 170,
+            "top_match": "f75r",
+            "top_freq": 0.506,
+            "second_match": "f84v",
+            "second_freq": 0.14,
+            "consensus": true
+          },
+          {
+            "chapter_number": 51,
+            "chapter_idx": 177,
+            "top_match": "f80v",
+            "top_freq": 0.266,
+            "second_match": "f82v",
+            "second_freq": 0.162,
+            "consensus": false
+          },
+          {
+            "chapter_number": 23,
+            "chapter_idx": 198,
+            "top_match": "f108v",
+            "top_freq": 0.694,
+            "second_match": "f82r",
+            "second_freq": 0.092,
+            "consensus": true
+          }
+        ],
+        "n_consensus": 10,
+        "n_chapters": 15,
+        "n_trials": 500
+      }
+    }
+  },
+  "T2_wrong_regime_null": {
+    "distillation_R3": {
+      "assignment": {
+        "15": 5,
+        "1": 7,
+        "0": 6,
+        "7": 13,
+        "14": 3,
+        "10": 0,
+        "2": 11,
+        "5": 2,
+        "12": 4,
+        "8": 9,
+        "9": 10,
+        "3": 8,
+        "11": 1,
+        "13": 14,
+        "6": 18,
+        "4": 17
+      },
+      "match_table": [
+        {
+          "chapter_number": 28,
+          "chapter_idx": 155,
+          "family": "distillation",
+          "folio": "f107r",
+          "distance": 1.3855,
+          "second_distance": 1.8692,
+          "ratio": 1.349,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.1131,
+            0.0086,
+            0.0188,
+            0.1775,
+            0.1971,
+            0.0343,
+            1.033,
+            0.3371
+          ]
+        },
+        {
+          "chapter_number": 14,
+          "chapter_idx": 109,
+          "family": "distillation",
+          "folio": "f113v",
+          "distance": 1.4945,
+          "second_distance": 1.8016,
+          "ratio": 1.205,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.243,
+            0.4203,
+            0.4757,
+            0.3828,
+            0.0092,
+            0.0159,
+            0.205,
+            0.4817
+          ]
+        },
+        {
+          "chapter_number": 9,
+          "chapter_idx": 104,
+          "family": "distillation",
+          "folio": "f113r",
+          "distance": 1.5834,
+          "second_distance": 2.271,
+          "ratio": 1.434,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.0275,
+            0.2929,
+            0.5546,
+            0.1623,
+            0.3607,
+            0.42,
+            0.3184,
+            0.3707
+          ]
+        },
+        {
+          "chapter_number": 19,
+          "chapter_idx": 146,
+          "family": "distillation",
+          "folio": "f34v",
+          "distance": 1.6157,
+          "second_distance": 1.7722,
+          "ratio": 1.097,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0024,
+            0.1119,
+            0.5965,
+            0.0002,
+            0.0092,
+            0.0159,
+            1.7534,
+            0.1211
+          ]
+        },
+        {
+          "chapter_number": 27,
+          "chapter_idx": 154,
+          "family": "distillation",
+          "folio": "f106r",
+          "distance": 1.6855,
+          "second_distance": 1.7535,
+          "ratio": 1.04,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0848,
+            0.3934,
+            0.1828,
+            0.0878,
+            0.0092,
+            0.0589,
+            0.1018,
+            1.9221
+          ]
+        },
+        {
+          "chapter_number": 24,
+          "chapter_idx": 151,
+          "family": "distillation",
+          "folio": "f106v",
+          "distance": 2.0596,
+          "second_distance": 1.6316,
+          "ratio": 0.792,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.1586,
+            0.1369,
+            1.7446,
+            1.2966,
+            0.0092,
+            0.0589,
+            0.833,
+            0.0043
+          ]
+        },
+        {
+          "chapter_number": 16,
+          "chapter_idx": 111,
+          "family": "distillation",
+          "folio": "f115v",
+          "distance": 2.1391,
+          "second_distance": 2.1978,
+          "ratio": 1.027,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0842,
+            0.0,
+            0.1292,
+            0.1984,
+            0.0092,
+            0.6286,
+            0.0936,
+            3.4325
+          ]
+        },
+        {
+          "chapter_number": 11,
+          "chapter_idx": 138,
+          "family": "distillation",
+          "folio": "f105v",
+          "distance": 2.2941,
+          "second_distance": 2.9585,
+          "ratio": 1.29,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.1511,
+            0.1318,
+            0.4867,
+            4.4492,
+            0.0092,
+            0.0061,
+            0.0086,
+            0.02
+          ]
+        },
+        {
+          "chapter_number": 22,
+          "chapter_idx": 149,
+          "family": "distillation",
+          "folio": "f104r",
+          "distance": 2.3596,
+          "second_distance": 1.6729,
+          "ratio": 0.709,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.1626,
+            1.5898,
+            0.1897,
+            0.7651,
+            0.0092,
+            0.1485,
+            0.0624,
+            2.6406
+          ]
+        },
+        {
+          "chapter_number": 20,
+          "chapter_idx": 147,
+          "family": "distillation",
+          "folio": "f114v",
+          "distance": 2.4498,
+          "second_distance": 2.4888,
+          "ratio": 1.016,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0517,
+            1.9809,
+            3.3822,
+            0.375,
+            0.0092,
+            0.0061,
+            0.0065,
+            0.19
+          ]
+        },
+        {
+          "chapter_number": 21,
+          "chapter_idx": 148,
+          "family": "distillation",
+          "folio": "f115r",
+          "distance": 2.503,
+          "second_distance": 2.4498,
+          "ratio": 0.979,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.6253,
+            1.3181,
+            0.9487,
+            0.1203,
+            0.0092,
+            0.3757,
+            0.3169,
+            2.5508
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 113,
+          "family": "distillation",
+          "folio": "f114r",
+          "distance": 2.7394,
+          "second_distance": 2.8252,
+          "ratio": 1.031,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0011,
+            0.0054,
+            2.4215,
+            0.5214,
+            1.6821,
+            2.3946,
+            0.1497,
+            0.3283
+          ]
+        },
+        {
+          "chapter_number": 23,
+          "chapter_idx": 150,
+          "family": "distillation",
+          "folio": "f104v",
+          "distance": 2.8052,
+          "second_distance": 2.4498,
+          "ratio": 0.873,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.2339,
+            0.4398,
+            3.7632,
+            0.1458,
+            0.1971,
+            2.3297,
+            0.557,
+            0.2025
+          ]
+        },
+        {
+          "chapter_number": 25,
+          "chapter_idx": 152,
+          "family": "distillation",
+          "folio": "f39r",
+          "distance": 3.4061,
+          "second_distance": 1.8757,
+          "ratio": 0.551,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.25,
+            0.5531,
+            1.091,
+            0.0493,
+            8.301,
+            1.0832,
+            0.2516,
+            0.0222
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 145,
+          "family": "distillation",
+          "folio": "f86v3",
+          "distance": 4.3441,
+          "second_distance": 4.0288,
+          "ratio": 0.927,
+          "confident": false,
+          "per_dim_dist_sq": [
+            3.9694,
+            3.1562,
+            0.6391,
+            1.7376,
+            6.0395,
+            0.0029,
+            3.3145,
+            0.0124
+          ]
+        },
+        {
+          "chapter_number": 1,
+          "chapter_idx": 128,
+          "family": "distillation",
+          "folio": "f85r2",
+          "distance": 7.5702,
+          "second_distance": 7.1948,
+          "ratio": 0.95,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.2444,
+            6.35,
+            11.7503,
+            9.4455,
+            1.6821,
+            2.7604,
+            1.0569,
+            24.019
+          ]
+        }
+      ],
+      "mean_distance": 2.6522,
+      "mean_ratio": 1.017,
+      "n_confident": 4,
+      "n_unique_nn": 10,
+      "n_pl": 16,
+      "n_v": 20
+    },
+    "distillation_R4": {
+      "assignment": {
+        "1": 8,
+        "14": 2,
+        "7": 6,
+        "10": 9,
+        "0": 1,
+        "12": 0,
+        "3": 11,
+        "5": 10,
+        "2": 5,
+        "15": 12,
+        "8": 7,
+        "9": 14,
+        "13": 4,
+        "11": 3,
+        "6": 13
+      },
+      "match_table": [
+        {
+          "chapter_number": 27,
+          "chapter_idx": 154,
+          "family": "distillation",
+          "folio": "f26v",
+          "distance": 1.6204,
+          "second_distance": 1.8671,
+          "ratio": 1.152,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.7502,
+            0.454,
+            1.035,
+            0.0986,
+            0.1286,
+            0.1312,
+            0.0009,
+            0.0273
+          ]
+        },
+        {
+          "chapter_number": 24,
+          "chapter_idx": 151,
+          "family": "distillation",
+          "folio": "f105r",
+          "distance": 2.0521,
+          "second_distance": 1.9867,
+          "ratio": 0.968,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.4155,
+            0.0756,
+            1.8721,
+            0.2637,
+            0.2311,
+            0.1312,
+            0.5417,
+            0.6801
+          ]
+        },
+        {
+          "chapter_number": 22,
+          "chapter_idx": 149,
+          "family": "distillation",
+          "folio": "f48r",
+          "distance": 2.0565,
+          "second_distance": 1.9854,
+          "ratio": 0.965,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.3268,
+            2.932,
+            0.001,
+            0.0214,
+            0.2311,
+            0.214,
+            0.0741,
+            0.4287
+          ]
+        },
+        {
+          "chapter_number": 9,
+          "chapter_idx": 104,
+          "family": "distillation",
+          "folio": "f26r",
+          "distance": 2.0891,
+          "second_distance": 2.0655,
+          "ratio": 0.989,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0501,
+            0.2099,
+            0.4794,
+            2.7029,
+            0.0734,
+            0.4192,
+            0.3879,
+            0.0416
+          ]
+        },
+        {
+          "chapter_number": 28,
+          "chapter_idx": 155,
+          "family": "distillation",
+          "folio": "f66r",
+          "distance": 2.1106,
+          "second_distance": 2.2454,
+          "ratio": 1.064,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0,
+            0.6343,
+            0.1059,
+            0.9923,
+            0.1286,
+            2.0877,
+            0.0484,
+            0.4573
+          ]
+        },
+        {
+          "chapter_number": 14,
+          "chapter_idx": 109,
+          "family": "distillation",
+          "folio": "f46v",
+          "distance": 2.2515,
+          "second_distance": 1.4771,
+          "ratio": 0.656,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.6443,
+            0.7928,
+            0.4595,
+            2.123,
+            0.5785,
+            0.0784,
+            0.2867,
+            0.1063
+          ]
+        },
+        {
+          "chapter_number": 19,
+          "chapter_idx": 146,
+          "family": "distillation",
+          "folio": "f43r",
+          "distance": 2.2672,
+          "second_distance": 1.7389,
+          "ratio": 0.767,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0267,
+            2.2102,
+            0.2627,
+            2.5343,
+            0.021,
+            0.0784,
+            0.0013,
+            0.0056
+          ]
+        },
+        {
+          "chapter_number": 20,
+          "chapter_idx": 147,
+          "family": "distillation",
+          "folio": "f43v",
+          "distance": 2.5114,
+          "second_distance": 2.4469,
+          "ratio": 0.974,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.4643,
+            0.0008,
+            3.7538,
+            0.2198,
+            0.2311,
+            1.602,
+            0.0036,
+            0.0316
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 113,
+          "family": "distillation",
+          "folio": "f57r",
+          "distance": 2.6123,
+          "second_distance": 2.0828,
+          "ratio": 0.797,
+          "confident": false,
+          "per_dim_dist_sq": [
+            1.408,
+            1.0466,
+            1.2889,
+            0.6311,
+            0.1286,
+            0.2091,
+            0.0313,
+            2.0808
+          ]
+        },
+        {
+          "chapter_number": 11,
+          "chapter_idx": 138,
+          "family": "distillation",
+          "folio": "f48v",
+          "distance": 3.0683,
+          "second_distance": 3.0889,
+          "ratio": 1.007,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0738,
+            0.1318,
+            0.1835,
+            3.8244,
+            0.0,
+            1.602,
+            3.1704,
+            0.4287
+          ]
+        },
+        {
+          "chapter_number": 16,
+          "chapter_idx": 111,
+          "family": "distillation",
+          "folio": "f41v",
+          "distance": 3.1338,
+          "second_distance": 2.9562,
+          "ratio": 0.943,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.3765,
+            0.5279,
+            0.6782,
+            2.4092,
+            0.1286,
+            0.5616,
+            3.8962,
+            1.2428
+          ]
+        },
+        {
+          "chapter_number": 21,
+          "chapter_idx": 148,
+          "family": "distillation",
+          "folio": "f86v4",
+          "distance": 3.5,
+          "second_distance": 2.4469,
+          "ratio": 0.699,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.4034,
+            0.952,
+            4.783,
+            0.848,
+            0.2311,
+            1.602,
+            3.4252,
+            0.0052
+          ]
+        },
+        {
+          "chapter_number": 25,
+          "chapter_idx": 152,
+          "family": "distillation",
+          "folio": "f41r",
+          "distance": 3.9043,
+          "second_distance": 2.7719,
+          "ratio": 0.71,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0467,
+            0.0036,
+            0.6644,
+            0.1586,
+            0.1286,
+            0.2931,
+            6.4892,
+            7.4591
+          ]
+        },
+        {
+          "chapter_number": 23,
+          "chapter_idx": 150,
+          "family": "distillation",
+          "folio": "f31v",
+          "distance": 4.1544,
+          "second_distance": 2.4469,
+          "ratio": 0.589,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0604,
+            0.359,
+            4.824,
+            1.0211,
+            0.1286,
+            10.5752,
+            0.1906,
+            0.1004
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 145,
+          "family": "distillation",
+          "folio": "f66v",
+          "distance": 4.8004,
+          "second_distance": 3.2218,
+          "ratio": 0.671,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.5575,
+            2.9856,
+            9.4302,
+            0.1542,
+            0.1286,
+            8.1688,
+            1.2131,
+            0.4058
+          ]
+        }
+      ],
+      "mean_distance": 2.6333,
+      "mean_ratio": 0.863,
+      "n_confident": 1,
+      "n_unique_nn": 6,
+      "n_pl": 16,
+      "n_v": 15
+    }
+  },
+  "T3_random_specificity": {
+    "n_trials": 100,
+    "n_sample_per_trial": 16,
+    "mean_confident": 4.05,
+    "mean_ratio": 1.07,
+    "max_confident": 9,
+    "min_confident": 1,
+    "training_confident": 9,
+    "training_ratio": 1.284,
+    "n_exceed_confident": 1,
+    "n_exceed_ratio": 0,
+    "p_confident": 0.01,
+    "p_ratio": 0.0,
+    "trial_confident": [
+      2,
+      5,
+      3,
+      2,
+      5,
+      4,
+      4,
+      5,
+      3,
+      3,
+      4,
+      3,
+      7,
+      3,
+      1,
+      4,
+      4,
+      2,
+      9,
+      6,
+      6,
+      2,
+      4,
+      3,
+      5,
+      5,
+      4,
+      5,
+      4,
+      5,
+      6,
+      4,
+      4,
+      6,
+      7,
+      4,
+      3,
+      3,
+      3,
+      5,
+      5,
+      3,
+      2,
+      5,
+      4,
+      4,
+      4,
+      3,
+      3,
+      6,
+      2,
+      6,
+      3,
+      5,
+      7,
+      2,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      3,
+      2,
+      2,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      4,
+      3,
+      6,
+      4,
+      4,
+      5,
+      3,
+      4,
+      3,
+      5,
+      5,
+      4,
+      4,
+      7,
+      3,
+      3,
+      3,
+      7,
+      3,
+      5,
+      6,
+      2,
+      4,
+      2,
+      2,
+      4,
+      7,
+      3
+    ],
+    "trial_ratios": [
+      1.022,
+      1.052,
+      1.058,
+      1.033,
+      1.079,
+      0.996,
+      1.065,
+      1.089,
+      1.061,
+      1.066,
+      1.055,
+      1.07,
+      1.167,
+      1.042,
+      1.0,
+      1.118,
+      1.063,
+      0.995,
+      1.155,
+      1.099,
+      1.082,
+      1.013,
+      1.047,
+      1.061,
+      1.074,
+      1.066,
+      1.081,
+      1.085,
+      1.05,
+      1.119,
+      1.133,
+      1.087,
+      1.071,
+      1.107,
+      1.079,
+      1.087,
+      1.118,
+      1.042,
+      1.03,
+      1.126,
+      1.156,
+      1.043,
+      1.024,
+      1.155,
+      1.128,
+      1.104,
+      1.061,
+      1.057,
+      1.039,
+      1.079,
+      1.054,
+      1.058,
+      1.084,
+      1.048,
+      1.121,
+      1.037,
+      1.089,
+      0.982,
+      1.044,
+      1.118,
+      1.064,
+      1.062,
+      1.094,
+      1.059,
+      0.974,
+      1.034,
+      1.119,
+      1.129,
+      1.075,
+      1.039,
+      1.104,
+      1.056,
+      1.133,
+      1.085,
+      1.113,
+      1.053,
+      1.092,
+      1.014,
+      1.034,
+      1.083,
+      1.107,
+      1.106,
+      1.092,
+      1.085,
+      1.035,
+      1.109,
+      1.02,
+      1.073,
+      1.02,
+      1.122,
+      1.022,
+      1.094,
+      1.116,
+      1.062,
+      0.998,
+      1.017,
+      0.986,
+      1.016,
+      1.2,
+      1.01
+    ]
+  },
+  "T4_permutation_test": {
+    "real_mean_ratio": 1.284,
+    "real_n_confident": 9,
+    "real_mean_distance": 2.2137,
+    "perm_mean_ratio_mean": 0.5716,
+    "perm_mean_confident_mean": 0.32,
+    "perm_mean_distance_mean": 3.8094,
+    "p_ratio": 0.0,
+    "p_confident": 0.0,
+    "p_distance": 0.0,
+    "n_perm": 1000,
+    "percentile_ratio": 100.0,
+    "percentile_confident": 100.0
+  },
+  "T5_known_4d_baseline": {
+    "matching_4d": {
+      "assignment": {
+        "1": 29,
+        "14": 25,
+        "2": 3,
+        "7": 11,
+        "0": 28,
+        "3": 13,
+        "10": 30,
+        "12": 20,
+        "8": 0,
+        "9": 15,
+        "13": 21,
+        "11": 6,
+        "15": 16,
+        "5": 24,
+        "6": 27,
+        "4": 19
+      },
+      "match_table": [
+        {
+          "chapter_number": 14,
+          "chapter_idx": 109,
+          "family": "distillation",
+          "folio": "f84r",
+          "distance": 0.493,
+          "second_distance": 1.0709,
+          "ratio": 2.172,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.0183,
+            0.1873,
+            0.0016,
+            0.0359
+          ]
+        },
+        {
+          "chapter_number": 27,
+          "chapter_idx": 154,
+          "family": "distillation",
+          "folio": "f82r",
+          "distance": 0.6271,
+          "second_distance": 0.549,
+          "ratio": 0.875,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.3777,
+            0.0068,
+            0.0014,
+            0.0073
+          ]
+        },
+        {
+          "chapter_number": 16,
+          "chapter_idx": 111,
+          "family": "distillation",
+          "folio": "f108r",
+          "distance": 0.687,
+          "second_distance": 0.9563,
+          "ratio": 1.392,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.1513,
+            0.2368,
+            0.0607,
+            0.0232
+          ]
+        },
+        {
+          "chapter_number": 28,
+          "chapter_idx": 155,
+          "family": "distillation",
+          "folio": "f77v",
+          "distance": 0.7669,
+          "second_distance": 1.4062,
+          "ratio": 1.833,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.1166,
+            0.3418,
+            0.1225,
+            0.0073
+          ]
+        },
+        {
+          "chapter_number": 19,
+          "chapter_idx": 146,
+          "family": "distillation",
+          "folio": "f75r",
+          "distance": 0.7745,
+          "second_distance": 1.4981,
+          "ratio": 1.934,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.4286,
+            0.051,
+            0.0,
+            0.1202
+          ]
+        },
+        {
+          "chapter_number": 9,
+          "chapter_idx": 104,
+          "family": "distillation",
+          "folio": "f83v",
+          "distance": 0.8091,
+          "second_distance": 0.8466,
+          "ratio": 1.046,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0114,
+            0.3508,
+            0.283,
+            0.0094
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 113,
+          "family": "distillation",
+          "folio": "f76r",
+          "distance": 0.8575,
+          "second_distance": 0.9012,
+          "ratio": 1.051,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0739,
+            0.3824,
+            0.0813,
+            0.1977
+          ]
+        },
+        {
+          "chapter_number": 22,
+          "chapter_idx": 149,
+          "family": "distillation",
+          "folio": "f84v",
+          "distance": 1.3193,
+          "second_distance": 0.7559,
+          "ratio": 0.573,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0896,
+            1.0362,
+            0.3874,
+            0.2274
+          ]
+        },
+        {
+          "chapter_number": 20,
+          "chapter_idx": 147,
+          "family": "distillation",
+          "folio": "f103r",
+          "distance": 1.6321,
+          "second_distance": 1.5489,
+          "ratio": 0.949,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.4947,
+            0.3715,
+            1.5168,
+            0.2809
+          ]
+        },
+        {
+          "chapter_number": 21,
+          "chapter_idx": 148,
+          "family": "distillation",
+          "folio": "f77r",
+          "distance": 1.6822,
+          "second_distance": 1.5489,
+          "ratio": 0.921,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.1989,
+            0.8758,
+            1.5274,
+            0.2275
+          ]
+        },
+        {
+          "chapter_number": 24,
+          "chapter_idx": 151,
+          "family": "distillation",
+          "folio": "f79v",
+          "distance": 1.7062,
+          "second_distance": 0.7033,
+          "ratio": 0.412,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0001,
+            1.8277,
+            0.0076,
+            1.0756
+          ]
+        },
+        {
+          "chapter_number": 25,
+          "chapter_idx": 152,
+          "family": "distillation",
+          "folio": "f80r",
+          "distance": 1.7188,
+          "second_distance": 1.4947,
+          "ratio": 0.87,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0836,
+            0.5838,
+            0.6234,
+            1.6635
+          ]
+        },
+        {
+          "chapter_number": 23,
+          "chapter_idx": 150,
+          "family": "distillation",
+          "folio": "f111v",
+          "distance": 1.7227,
+          "second_distance": 1.5489,
+          "ratio": 0.899,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.458,
+            1.2566,
+            0.7625,
+            0.4905
+          ]
+        },
+        {
+          "chapter_number": 11,
+          "chapter_idx": 138,
+          "family": "distillation",
+          "folio": "f81v",
+          "distance": 2.1899,
+          "second_distance": 2.2884,
+          "ratio": 1.045,
+          "confident": false,
+          "per_dim_dist_sq": [
+            1.6314,
+            0.289,
+            1.7689,
+            1.1065
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 145,
+          "family": "distillation",
+          "folio": "f83r",
+          "distance": 2.7422,
+          "second_distance": 2.6844,
+          "ratio": 0.979,
+          "confident": false,
+          "per_dim_dist_sq": [
+            1.2714,
+            0.6158,
+            4.5086,
+            1.1237
+          ]
+        },
+        {
+          "chapter_number": 1,
+          "chapter_idx": 128,
+          "family": "distillation",
+          "folio": "f79r",
+          "distance": 4.6193,
+          "second_distance": 4.6675,
+          "ratio": 1.01,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.1376,
+            14.9759,
+            2.9627,
+            3.2621
+          ]
+        }
+      ],
+      "mean_distance": 1.5217,
+      "mean_ratio": 1.123,
+      "n_confident": 4,
+      "n_unique_nn": 9,
+      "n_pl": 16,
+      "n_v": 32
+    },
+    "cv_4d": {
+      "cv_table": [
+        {
+          "chapter_number": 9,
+          "chapter_idx": 104,
+          "top_match": "f83v",
+          "top_freq": 0.72,
+          "second_match": "f83r",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 14,
+          "chapter_idx": 109,
+          "top_match": "f84r",
+          "top_freq": 0.62,
+          "second_match": "f79v",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 16,
+          "chapter_idx": 111,
+          "top_match": "f108r",
+          "top_freq": 0.72,
+          "second_match": "f111v",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 113,
+          "top_match": "f76r",
+          "top_freq": 0.628,
+          "second_match": "f83v",
+          "second_freq": 0.136,
+          "consensus": true
+        },
+        {
+          "chapter_number": 1,
+          "chapter_idx": 128,
+          "top_match": "f79r",
+          "top_freq": 0.764,
+          "second_match": "f83r",
+          "second_freq": 0.136,
+          "consensus": true
+        },
+        {
+          "chapter_number": 11,
+          "chapter_idx": 138,
+          "top_match": "f81v",
+          "top_freq": 0.856,
+          "second_match": "f81r",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 145,
+          "top_match": "f83r",
+          "top_freq": 0.62,
+          "second_match": "f78v",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 19,
+          "chapter_idx": 146,
+          "top_match": "f75r",
+          "top_freq": 0.756,
+          "second_match": "f77v",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 20,
+          "chapter_idx": 147,
+          "top_match": "f103r",
+          "top_freq": 0.628,
+          "second_match": "f77v",
+          "second_freq": 0.136,
+          "consensus": true
+        },
+        {
+          "chapter_number": 21,
+          "chapter_idx": 148,
+          "top_match": "f77r",
+          "top_freq": 0.484,
+          "second_match": "f108r",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 22,
+          "chapter_idx": 149,
+          "top_match": "f84v",
+          "top_freq": 0.584,
+          "second_match": "f82r",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 23,
+          "chapter_idx": 150,
+          "top_match": "f111v",
+          "top_freq": 0.584,
+          "second_match": "f77r",
+          "second_freq": 0.416,
+          "consensus": true
+        },
+        {
+          "chapter_number": 24,
+          "chapter_idx": 151,
+          "top_match": "f79v",
+          "top_freq": 0.484,
+          "second_match": "f84r",
+          "second_freq": 0.244,
+          "consensus": true
+        },
+        {
+          "chapter_number": 25,
+          "chapter_idx": 152,
+          "top_match": "f80r",
+          "top_freq": 1.0,
+          "second_match": null,
+          "second_freq": 0,
+          "consensus": true
+        },
+        {
+          "chapter_number": 27,
+          "chapter_idx": 154,
+          "top_match": "f82r",
+          "top_freq": 0.72,
+          "second_match": "f84v",
+          "second_freq": 0.144,
+          "consensus": true
+        },
+        {
+          "chapter_number": 28,
+          "chapter_idx": 155,
+          "top_match": "f77v",
+          "top_freq": 0.62,
+          "second_match": "f75r",
+          "second_freq": 0.144,
+          "consensus": true
+        }
+      ],
+      "n_consensus": 16,
+      "n_chapters": 16,
+      "n_trials": 500
+    },
+    "matching_8d": {
+      "assignment": {
+        "1": 29,
+        "14": 16,
+        "7": 11,
+        "3": 13,
+        "10": 25,
+        "0": 27,
+        "2": 3,
+        "12": 30,
+        "15": 26,
+        "5": 7,
+        "8": 6,
+        "13": 21,
+        "9": 18,
+        "11": 9,
+        "6": 24,
+        "4": 28
+      },
+      "match_table": [
+        {
+          "chapter_number": 14,
+          "chapter_idx": 109,
+          "family": "distillation",
+          "folio": "f84r",
+          "distance": 0.7226,
+          "second_distance": 1.5153,
+          "ratio": 2.097,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.0183,
+            0.1873,
+            0.0016,
+            0.0359,
+            0.0388,
+            0.0483,
+            0.0691,
+            0.1228
+          ]
+        },
+        {
+          "chapter_number": 27,
+          "chapter_idx": 154,
+          "family": "distillation",
+          "folio": "f77v",
+          "distance": 0.8507,
+          "second_distance": 2.3862,
+          "ratio": 2.805,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.023,
+            0.1366,
+            0.1345,
+            0.0073,
+            0.0388,
+            0.0068,
+            0.3768,
+            0.0
+          ]
+        },
+        {
+          "chapter_number": 19,
+          "chapter_idx": 146,
+          "family": "distillation",
+          "folio": "f75r",
+          "distance": 1.285,
+          "second_distance": 1.6925,
+          "ratio": 1.317,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.4286,
+            0.051,
+            0.0,
+            0.1202,
+            0.384,
+            0.0483,
+            0.2012,
+            0.4178
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 113,
+          "family": "distillation",
+          "folio": "f76r",
+          "distance": 1.332,
+          "second_distance": 2.2734,
+          "ratio": 1.707,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.0739,
+            0.3824,
+            0.0813,
+            0.1977,
+            0.0388,
+            0.0243,
+            0.9437,
+            0.0323
+          ]
+        },
+        {
+          "chapter_number": 9,
+          "chapter_idx": 104,
+          "family": "distillation",
+          "folio": "f83r",
+          "distance": 1.5597,
+          "second_distance": 1.8771,
+          "ratio": 1.203,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.1018,
+            0.0203,
+            0.4523,
+            0.6289,
+            0.1727,
+            0.1557,
+            0.7012,
+            0.1999
+          ]
+        },
+        {
+          "chapter_number": 24,
+          "chapter_idx": 151,
+          "family": "distillation",
+          "folio": "f84v",
+          "distance": 1.5611,
+          "second_distance": 1.9679,
+          "ratio": 1.261,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.215,
+            1.0362,
+            0.3874,
+            0.2274,
+            0.0388,
+            0.0068,
+            0.3546,
+            0.171
+          ]
+        },
+        {
+          "chapter_number": 16,
+          "chapter_idx": 111,
+          "family": "distillation",
+          "folio": "f108r",
+          "distance": 1.8265,
+          "second_distance": 2.4621,
+          "ratio": 1.348,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.1513,
+            0.2368,
+            0.0607,
+            0.0232,
+            0.0859,
+            0.3192,
+            0.3078,
+            2.1513
+          ]
+        },
+        {
+          "chapter_number": 22,
+          "chapter_idx": 149,
+          "family": "distillation",
+          "folio": "f82r",
+          "distance": 1.9231,
+          "second_distance": 1.5206,
+          "ratio": 0.791,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.2027,
+            1.0754,
+            0.5689,
+            0.0073,
+            0.0388,
+            0.0073,
+            0.1597,
+            1.6382
+          ]
+        },
+        {
+          "chapter_number": 28,
+          "chapter_idx": 155,
+          "family": "distillation",
+          "folio": "f82v",
+          "distance": 2.0715,
+          "second_distance": 1.8639,
+          "ratio": 0.9,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.1754,
+            1.9858,
+            1.0092,
+            0.2239,
+            0.0388,
+            0.3435,
+            0.3461,
+            0.1685
+          ]
+        },
+        {
+          "chapter_number": 25,
+          "chapter_idx": 152,
+          "family": "distillation",
+          "folio": "f80r",
+          "distance": 2.4181,
+          "second_distance": 2.5754,
+          "ratio": 1.065,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.0836,
+            0.5838,
+            0.6234,
+            1.6635,
+            0.0388,
+            2.5387,
+            0.2259,
+            0.0896
+          ]
+        },
+        {
+          "chapter_number": 11,
+          "chapter_idx": 138,
+          "family": "distillation",
+          "folio": "f112r",
+          "distance": 2.4835,
+          "second_distance": 3.1246,
+          "ratio": 1.258,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.0085,
+            0.2669,
+            0.0003,
+            4.9609,
+            0.3101,
+            0.0627,
+            0.0235,
+            0.535
+          ]
+        },
+        {
+          "chapter_number": 20,
+          "chapter_idx": 147,
+          "family": "distillation",
+          "folio": "f111v",
+          "distance": 2.5007,
+          "second_distance": 2.2992,
+          "ratio": 0.919,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.458,
+            1.2566,
+            0.7625,
+            0.4905,
+            0.012,
+            2.04,
+            1.055,
+            0.1791
+          ]
+        },
+        {
+          "chapter_number": 21,
+          "chapter_idx": 148,
+          "family": "distillation",
+          "folio": "f78v",
+          "distance": 2.603,
+          "second_distance": 2.2992,
+          "ratio": 0.883,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.1721,
+            3.5081,
+            0.316,
+            0.1268,
+            0.0388,
+            2.04,
+            0.5129,
+            0.061
+          ]
+        },
+        {
+          "chapter_number": 23,
+          "chapter_idx": 150,
+          "family": "distillation",
+          "folio": "f116r",
+          "distance": 2.7271,
+          "second_distance": 2.2992,
+          "ratio": 0.843,
+          "confident": false,
+          "per_dim_dist_sq": [
+            0.2082,
+            0.1433,
+            2.6994,
+            1.2492,
+            0.1727,
+            2.04,
+            0.3415,
+            0.5829
+          ]
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 145,
+          "family": "distillation",
+          "folio": "f81v",
+          "distance": 2.7674,
+          "second_distance": 3.1867,
+          "ratio": 1.151,
+          "confident": true,
+          "per_dim_dist_sq": [
+            0.2951,
+            2.4503,
+            4.4178,
+            0.0428,
+            0.0388,
+            0.1859,
+            0.0411,
+            0.1869
+          ]
+        },
+        {
+          "chapter_number": 1,
+          "chapter_idx": 128,
+          "family": "distillation",
+          "folio": "f83v",
+          "distance": 6.7873,
+          "second_distance": 6.8101,
+          "ratio": 1.003,
+          "confident": false,
+          "per_dim_dist_sq": [
+            1.6249,
+            21.256,
+            4.1653,
+            4.0965,
+            1.0568,
+            2.5196,
+            4.0588,
+            7.2901
+          ]
+        }
+      ],
+      "mean_distance": 2.2137,
+      "mean_ratio": 1.284,
+      "n_confident": 9,
+      "n_unique_nn": 11,
+      "n_pl": 16,
+      "n_v": 32
+    },
+    "cv_8d": {
+      "cv_table": [
+        {
+          "chapter_number": 9,
+          "chapter_idx": 104,
+          "top_match": "f83r",
+          "top_freq": 0.366,
+          "second_match": "f83v",
+          "second_freq": 0.184,
+          "consensus": false
+        },
+        {
+          "chapter_number": 14,
+          "chapter_idx": 109,
+          "top_match": "f84r",
+          "top_freq": 0.84,
+          "second_match": "f77v",
+          "second_freq": 0.036,
+          "consensus": true
+        },
+        {
+          "chapter_number": 16,
+          "chapter_idx": 111,
+          "top_match": "f108r",
+          "top_freq": 0.766,
+          "second_match": "f108v",
+          "second_freq": 0.066,
+          "consensus": true
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 113,
+          "top_match": "f76r",
+          "top_freq": 0.786,
+          "second_match": "f112r",
+          "second_freq": 0.116,
+          "consensus": true
+        },
+        {
+          "chapter_number": 1,
+          "chapter_idx": 128,
+          "top_match": "f83v",
+          "top_freq": 0.368,
+          "second_match": "f112v",
+          "second_freq": 0.254,
+          "consensus": false
+        },
+        {
+          "chapter_number": 11,
+          "chapter_idx": 138,
+          "top_match": "f112r",
+          "top_freq": 0.71,
+          "second_match": "f81v",
+          "second_freq": 0.078,
+          "consensus": true
+        },
+        {
+          "chapter_number": 18,
+          "chapter_idx": 145,
+          "top_match": "f81v",
+          "top_freq": 0.672,
+          "second_match": "f103v",
+          "second_freq": 0.09,
+          "consensus": true
+        },
+        {
+          "chapter_number": 19,
+          "chapter_idx": 146,
+          "top_match": "f75r",
+          "top_freq": 0.696,
+          "second_match": "f80r",
+          "second_freq": 0.074,
+          "consensus": true
+        },
+        {
+          "chapter_number": 20,
+          "chapter_idx": 147,
+          "top_match": "f111v",
+          "top_freq": 0.218,
+          "second_match": "f78v",
+          "second_freq": 0.158,
+          "consensus": false
+        },
+        {
+          "chapter_number": 21,
+          "chapter_idx": 148,
+          "top_match": "f111v",
+          "top_freq": 0.282,
+          "second_match": "f111r",
+          "second_freq": 0.11,
+          "consensus": false
+        },
+        {
+          "chapter_number": 22,
+          "chapter_idx": 149,
+          "top_match": "f82r",
+          "top_freq": 0.482,
+          "second_match": "f84v",
+          "second_freq": 0.198,
+          "consensus": true
+        },
+        {
+          "chapter_number": 23,
+          "chapter_idx": 150,
+          "top_match": "f116r",
+          "top_freq": 0.18,
+          "second_match": "f78v",
+          "second_freq": 0.16,
+          "consensus": false
+        },
+        {
+          "chapter_number": 24,
+          "chapter_idx": 151,
+          "top_match": "f84v",
+          "top_freq": 0.566,
+          "second_match": "f82r",
+          "second_freq": 0.12,
+          "consensus": true
+        },
+        {
+          "chapter_number": 25,
+          "chapter_idx": 152,
+          "top_match": "f80r",
+          "top_freq": 0.634,
+          "second_match": "f107v",
+          "second_freq": 0.092,
+          "consensus": true
+        },
+        {
+          "chapter_number": 27,
+          "chapter_idx": 154,
+          "top_match": "f77v",
+          "top_freq": 0.834,
+          "second_match": "f84v",
+          "second_freq": 0.032,
+          "consensus": true
+        },
+        {
+          "chapter_number": 28,
+          "chapter_idx": 155,
+          "top_match": "f82v",
+          "top_freq": 0.528,
+          "second_match": "f75r",
+          "second_freq": 0.108,
+          "consensus": true
+        }
+      ],
+      "n_consensus": 11,
+      "n_chapters": 16,
+      "n_trials": 500
+    },
+    "comparison": {
+      "n_same_assignment": 4,
+      "n_different_assignment": 11,
+      "n_total": 15
+    }
+  }
+}

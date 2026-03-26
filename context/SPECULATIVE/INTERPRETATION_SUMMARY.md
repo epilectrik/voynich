@@ -6926,3 +6926,91 @@ The proposed genre's rarity follows from structural properties:
 | Expert audience | C197 |
 | Paragraph non-sequentiality | C1399, C1400 |
 | Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |
+
+## XXVIII. Recipe-to-Folio Correspondence (Phase 628)
+
+### Core Finding
+
+Individual pseudo-Lull (PL) alchemical chapters can be matched to individual Voynich Currier B folios using 8-dimensional residual feature profiles, and this matching generalizes across unseen family-regime pairings. The within-family permutation test passes decisively (p < 0.001), confirming chapter-level specificity beyond regime-level gradient.
+
+### The 8D Locked Feature Set
+
+Eight (PL_feature, V_feature, sign) tuples locked from distillation->R1 training:
+
+| PL Feature | V Feature | Sign | Channel |
+|-----------|-----------|------|---------|
+| heat_rate | k_ratio | -1 | Known (C1871) |
+| monitoring_rate | h_ratio | +1 | Known (C1872) |
+| correction_rate | e_ratio | +1 | Known (C1873) |
+| termination_rate | terminal_rate | +1 | Known (C1874) |
+| consistency_frac | m_linefinal_rate | -1 | Discovered |
+| heat_rate | suffix_transparency | -1 | Discovered |
+| monitoring_rate | header_enrichment | -1 | Discovered |
+| heat_transition_rate | thermo_ke | +1 | Discovered |
+
+### Three Strong Recipe-Folio Matches
+
+**Ch19 -> f75r: Aqua Vitae Composite (repeated distillation)**
+- Recipe: Take wine/honey, distill through balneum mariae, redistill nine times
+- Folio signature: High k-HEAD (0.43), low monitoring (0.07), high termination (0.21)
+- Independent evidence: f75r has the ONLY 4+ consecutive identical token run in all of Currier B (qokedy x4, line 13). Line 38 shows graduated e-depth temperature profile: gentle-gentle-modulated-modulated-gentle
+- Medieval context: Aqua vitae was THE blockbuster pharmaceutical product of 15th-century pharmacy
+
+**Ch18 -> f76r: Element Separation (graduated distillation)**
+- Recipe: Separate elements of the stone through graduated furnace temperature
+- Folio signature: Balanced k/h ratio, high header enrichment (53% of match distance)
+- Monitoring-heavy process consistent with graduated temperature control
+
+**Ch12 -> f113v: Mercury Sublimation (dissolve/distill/return cycle)**
+- Recipe: Sublimate mercury (red/white), dissolve in water of mercury, distill and return
+- Folio signature: ot-PREFIX dominant (70 vs qo's 58), elevated monitoring (0.22)
+- ot-PREFIX dominance consistent with t-HEAD (transfer) involvement in sublimation
+
+### Permutation Test (THE Decisive Test)
+
+Real optimized assignment vs 1000 random assignments:
+- Mean ratio: 1.284 (real) vs 0.572 (null), p < 0.001
+- Confident count: 9 (real) vs 0.32 (null), p < 0.001
+- The real chapter-to-folio matching is not explainable by regime-level gradient alone
+
+### Cross-Family Replication (Frozen Features, No Re-Tuning)
+
+| Family → REGIME | Confident | CV Consensus | Mean Ratio |
+|----------------|-----------|-------------|------------|
+| Distillation → R1 (training) | 9/16 | 11/16 | 1.284 |
+| Sublimation → R3 | 4/7 | 4/7 | 1.174 |
+| Dissolution → R1 | 5/15 | 10/15 | 1.098 |
+| Fixation → R3 | 3/10 | 6/10 | 1.121 |
+| Wrong: Distillation → R4 | 1/16 | - | 0.863 |
+
+### ot/qo PREFIX Inversion (Confirmed C1478 Prediction)
+
+R3 (sublimation) folios have significantly higher ot-prefix fraction (0.306) than R1 (distillation) folios (0.196). Mann-Whitney p = 0.005. This confirms the C1478 prediction that k/t terminal mirrors should produce PREFIX frequency inversion between k-HEAD-dominant and t-HEAD-involved regimes.
+
+### Token Repetition Uniqueness
+
+f75r is the ONLY Currier B folio (out of 82) with a 4+ consecutive identical token run. Only 7 folios have runs of 3+. This structural uniqueness aligns with the matched recipe's instruction to repeat distillation nine times — the only PL recipe demanding extensive iteration.
+
+### Tier Assessment
+
+**Tier 3** — The matching is statistically validated (permutation p < 0.001) and replicates across unseen family-regime pairings. Independent structural evidence (PREFIX inversion, token repetition uniqueness) converges with feature-based matching. However, individual chapter-folio assignments remain speculative (the matching algorithm finds best fits, not proven correspondences).
+
+### What This Does NOT Claim
+
+1. No individual recipe translation is recoverable from matching alone
+2. The token repetition count does not "mean" the number nine — it indicates unusually high iteration
+3. Feature correspondences are statistical associations, not semantic mappings
+4. The 8D feature set was tuned on distillation->R1; generalization is encouraging but not proof of universality
+
+### Cross-References
+
+| Topic | Evidence |
+|-------|----------|
+| Channel discriminative mapping | C1871-C1874 (Phase 627) |
+| Permutation significance | C1888 (Phase 628) |
+| PREFIX inversion | C1478, C1891 (Phase 628) |
+| Token repetition uniqueness | C1890 (Phase 628) |
+| e-depth parametricity | C1225, C1394 |
+| Section-level paragraph count | C1090, C1091, C1893 |
+| Literal enumeration | C287 |
+| Full analysis | `phases/RECIPE_FOLIO_CORRESPONDENCE/` |

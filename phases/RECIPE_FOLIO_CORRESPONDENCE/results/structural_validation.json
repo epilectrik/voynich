@@ -1,0 +1,806 @@
+{
+  "T1_token_repetition": {
+    "n_folios": 82,
+    "max_run_distribution": {
+      "0": 2,
+      "1": 16,
+      "2": 57,
+      "3": 6,
+      "4": 1
+    },
+    "folios_with_2plus_run": 64,
+    "folios_with_3plus_run": 7,
+    "folios_with_4plus_run": 1,
+    "folios_with_5plus_run": 0,
+    "three_plus_detail": [
+      {
+        "folio": "f104v",
+        "max_run": 3,
+        "runs": [
+          {
+            "word": "sheol",
+            "length": 3,
+            "line": "27"
+          }
+        ]
+      },
+      {
+        "folio": "f108v",
+        "max_run": 3,
+        "runs": [
+          {
+            "word": "qokeedy",
+            "length": 3,
+            "line": "39"
+          }
+        ]
+      },
+      {
+        "folio": "f40r",
+        "max_run": 3,
+        "runs": [
+          {
+            "word": "okaiin",
+            "length": 3,
+            "line": "9"
+          }
+        ]
+      },
+      {
+        "folio": "f75r",
+        "max_run": 4,
+        "runs": [
+          {
+            "word": "qokedy",
+            "length": 4,
+            "line": "13"
+          }
+        ]
+      },
+      {
+        "folio": "f79v",
+        "max_run": 3,
+        "runs": [
+          {
+            "word": "qokedy",
+            "length": 3,
+            "line": "19"
+          }
+        ]
+      },
+      {
+        "folio": "f81r",
+        "max_run": 3,
+        "runs": [
+          {
+            "word": "ol",
+            "length": 3,
+            "line": "5"
+          }
+        ]
+      },
+      {
+        "folio": "f86v3",
+        "max_run": 3,
+        "runs": [
+          {
+            "word": "ytaiin",
+            "length": 3,
+            "line": "3"
+          }
+        ]
+      }
+    ],
+    "f75r_unique_4plus": true,
+    "verdict": "CONFIRMED"
+  },
+  "T2_prefix_inversion": {
+    "n_r1_folios": 32,
+    "n_r3_folios": 20,
+    "n_r1_with_data": 31,
+    "n_r3_with_data": 20,
+    "r1_mean_ot_fraction": 0.196,
+    "r3_mean_ot_fraction": 0.3061,
+    "mann_whitney_U": 171.0,
+    "p_value": 0.0054,
+    "significant_p05": true,
+    "direction": "R3 > R1",
+    "r1_detail": {
+      "f103r": {
+        "ot_count": 44,
+        "qo_count": 113,
+        "denominator": 157,
+        "ot_fraction": 0.2803
+      },
+      "f103v": {
+        "ot_count": 42,
+        "qo_count": 74,
+        "denominator": 116,
+        "ot_fraction": 0.3621
+      },
+      "f107v": {
+        "ot_count": 34,
+        "qo_count": 89,
+        "denominator": 123,
+        "ot_fraction": 0.2764
+      },
+      "f108r": {
+        "ot_count": 37,
+        "qo_count": 93,
+        "denominator": 130,
+        "ot_fraction": 0.2846
+      },
+      "f108v": {
+        "ot_count": 33,
+        "qo_count": 120,
+        "denominator": 153,
+        "ot_fraction": 0.2157
+      },
+      "f111r": {
+        "ot_count": 41,
+        "qo_count": 100,
+        "denominator": 141,
+        "ot_fraction": 0.2908
+      },
+      "f111v": {
+        "ot_count": 31,
+        "qo_count": 94,
+        "denominator": 125,
+        "ot_fraction": 0.248
+      },
+      "f112r": {
+        "ot_count": 44,
+        "qo_count": 58,
+        "denominator": 102,
+        "ot_fraction": 0.4314
+      },
+      "f112v": {
+        "ot_count": 30,
+        "qo_count": 69,
+        "denominator": 99,
+        "ot_fraction": 0.303
+      },
+      "f116r": {
+        "ot_count": 37,
+        "qo_count": 43,
+        "denominator": 80,
+        "ot_fraction": 0.4625
+      },
+      "f31r": {
+        "ot_count": 0,
+        "qo_count": 18,
+        "denominator": 18,
+        "ot_fraction": 0.0
+      },
+      "f75r": {
+        "ot_count": 20,
+        "qo_count": 108,
+        "denominator": 128,
+        "ot_fraction": 0.1562
+      },
+      "f75v": {
+        "ot_count": 13,
+        "qo_count": 92,
+        "denominator": 105,
+        "ot_fraction": 0.1238
+      },
+      "f76r": {
+        "ot_count": 0,
+        "qo_count": 0,
+        "denominator": 0,
+        "ot_fraction": null
+      },
+      "f76v": {
+        "ot_count": 28,
+        "qo_count": 69,
+        "denominator": 97,
+        "ot_fraction": 0.2887
+      },
+      "f77r": {
+        "ot_count": 2,
+        "qo_count": 109,
+        "denominator": 111,
+        "ot_fraction": 0.018
+      },
+      "f77v": {
+        "ot_count": 1,
+        "qo_count": 96,
+        "denominator": 97,
+        "ot_fraction": 0.0103
+      },
+      "f78r": {
+        "ot_count": 13,
+        "qo_count": 60,
+        "denominator": 73,
+        "ot_fraction": 0.1781
+      },
+      "f78v": {
+        "ot_count": 18,
+        "qo_count": 57,
+        "denominator": 75,
+        "ot_fraction": 0.24
+      },
+      "f79r": {
+        "ot_count": 28,
+        "qo_count": 79,
+        "denominator": 107,
+        "ot_fraction": 0.2617
+      },
+      "f79v": {
+        "ot_count": 28,
+        "qo_count": 91,
+        "denominator": 119,
+        "ot_fraction": 0.2353
+      },
+      "f80r": {
+        "ot_count": 19,
+        "qo_count": 110,
+        "denominator": 129,
+        "ot_fraction": 0.1473
+      },
+      "f80v": {
+        "ot_count": 9,
+        "qo_count": 94,
+        "denominator": 103,
+        "ot_fraction": 0.0874
+      },
+      "f81r": {
+        "ot_count": 13,
+        "qo_count": 38,
+        "denominator": 51,
+        "ot_fraction": 0.2549
+      },
+      "f81v": {
+        "ot_count": 3,
+        "qo_count": 42,
+        "denominator": 45,
+        "ot_fraction": 0.0667
+      },
+      "f82r": {
+        "ot_count": 4,
+        "qo_count": 86,
+        "denominator": 90,
+        "ot_fraction": 0.0444
+      },
+      "f82v": {
+        "ot_count": 12,
+        "qo_count": 97,
+        "denominator": 109,
+        "ot_fraction": 0.1101
+      },
+      "f83r": {
+        "ot_count": 12,
+        "qo_count": 76,
+        "denominator": 88,
+        "ot_fraction": 0.1364
+      },
+      "f83v": {
+        "ot_count": 8,
+        "qo_count": 82,
+        "denominator": 90,
+        "ot_fraction": 0.0889
+      },
+      "f84r": {
+        "ot_count": 19,
+        "qo_count": 71,
+        "denominator": 90,
+        "ot_fraction": 0.2111
+      },
+      "f84v": {
+        "ot_count": 15,
+        "qo_count": 62,
+        "denominator": 77,
+        "ot_fraction": 0.1948
+      },
+      "f95r1": {
+        "ot_count": 1,
+        "qo_count": 14,
+        "denominator": 15,
+        "ot_fraction": 0.0667
+      }
+    },
+    "r3_detail": {
+      "f104r": {
+        "ot_count": 33,
+        "qo_count": 91,
+        "denominator": 124,
+        "ot_fraction": 0.2661
+      },
+      "f104v": {
+        "ot_count": 19,
+        "qo_count": 105,
+        "denominator": 124,
+        "ot_fraction": 0.1532
+      },
+      "f105v": {
+        "ot_count": 41,
+        "qo_count": 31,
+        "denominator": 72,
+        "ot_fraction": 0.5694
+      },
+      "f106r": {
+        "ot_count": 25,
+        "qo_count": 67,
+        "denominator": 92,
+        "ot_fraction": 0.2717
+      },
+      "f106v": {
+        "ot_count": 38,
+        "qo_count": 66,
+        "denominator": 104,
+        "ot_fraction": 0.3654
+      },
+      "f107r": {
+        "ot_count": 42,
+        "qo_count": 62,
+        "denominator": 104,
+        "ot_fraction": 0.4038
+      },
+      "f113r": {
+        "ot_count": 30,
+        "qo_count": 66,
+        "denominator": 96,
+        "ot_fraction": 0.3125
+      },
+      "f113v": {
+        "ot_count": 70,
+        "qo_count": 58,
+        "denominator": 128,
+        "ot_fraction": 0.5469
+      },
+      "f114r": {
+        "ot_count": 30,
+        "qo_count": 68,
+        "denominator": 98,
+        "ot_fraction": 0.3061
+      },
+      "f114v": {
+        "ot_count": 34,
+        "qo_count": 84,
+        "denominator": 118,
+        "ot_fraction": 0.2881
+      },
+      "f115r": {
+        "ot_count": 12,
+        "qo_count": 111,
+        "denominator": 123,
+        "ot_fraction": 0.0976
+      },
+      "f115v": {
+        "ot_count": 18,
+        "qo_count": 73,
+        "denominator": 91,
+        "ot_fraction": 0.1978
+      },
+      "f34r": {
+        "ot_count": 7,
+        "qo_count": 13,
+        "denominator": 20,
+        "ot_fraction": 0.35
+      },
+      "f34v": {
+        "ot_count": 3,
+        "qo_count": 10,
+        "denominator": 13,
+        "ot_fraction": 0.2308
+      },
+      "f39r": {
+        "ot_count": 2,
+        "qo_count": 13,
+        "denominator": 15,
+        "ot_fraction": 0.1333
+      },
+      "f46r": {
+        "ot_count": 2,
+        "qo_count": 14,
+        "denominator": 16,
+        "ot_fraction": 0.125
+      },
+      "f85r1": {
+        "ot_count": 31,
+        "qo_count": 43,
+        "denominator": 74,
+        "ot_fraction": 0.4189
+      },
+      "f85r2": {
+        "ot_count": 5,
+        "qo_count": 20,
+        "denominator": 25,
+        "ot_fraction": 0.2
+      },
+      "f86v3": {
+        "ot_count": 22,
+        "qo_count": 38,
+        "denominator": 60,
+        "ot_fraction": 0.3667
+      },
+      "f94v": {
+        "ot_count": 14,
+        "qo_count": 13,
+        "denominator": 27,
+        "ot_fraction": 0.5185
+      }
+    },
+    "verdict": "PREFIX_INVERSION_CONFIRMED"
+  },
+  "T3_e_depth_analysis": {
+    "line_13": {
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "word": "pchedy",
+          "prefix": "pch",
+          "middle": "edy",
+          "suffix": null,
+          "e_depth": -1,
+          "e_label": "non-k"
+        },
+        {
+          "word": "keedy",
+          "prefix": "ke",
+          "middle": "edy",
+          "suffix": null,
+          "e_depth": 2,
+          "e_label": "gentle"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "e_depth": 1,
+          "e_label": "modulated"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "e_depth": 1,
+          "e_label": "modulated"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "e_depth": 1,
+          "e_label": "modulated"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "e_depth": 1,
+          "e_label": "modulated"
+        },
+        {
+          "word": "qokain",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "ain",
+          "e_depth": 0,
+          "e_label": "full"
+        },
+        {
+          "word": "olshedy",
+          "prefix": "ol",
+          "middle": "edy",
+          "suffix": null,
+          "e_depth": -1,
+          "e_label": "non-k"
+        }
+      ],
+      "qokedy_run_length": 4,
+      "qokedy_e_depth": 1,
+      "interpretation": "sustained modulated heat (uniform controlled temperature)"
+    },
+    "line_38": {
+      "n_tokens": 6,
+      "tokens": [
+        {
+          "word": "qokeedy",
+          "prefix": "qo",
+          "middle": "ke",
+          "suffix": "edy",
+          "e_depth": 2,
+          "e_label": "gentle"
+        },
+        {
+          "word": "qokeedy",
+          "prefix": "qo",
+          "middle": "ke",
+          "suffix": "edy",
+          "e_depth": 2,
+          "e_label": "gentle"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "e_depth": 1,
+          "e_label": "modulated"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "e_depth": 1,
+          "e_label": "modulated"
+        },
+        {
+          "word": "qokeedy",
+          "prefix": "qo",
+          "middle": "ke",
+          "suffix": "edy",
+          "e_depth": 2,
+          "e_label": "gentle"
+        },
+        {
+          "word": "ldy",
+          "prefix": null,
+          "middle": "l",
+          "suffix": "dy",
+          "e_depth": -1,
+          "e_label": "non-k"
+        }
+      ],
+      "qo_k_stem_count": 5,
+      "temperature_pattern": [
+        "gentle",
+        "gentle",
+        "modulated",
+        "modulated",
+        "gentle"
+      ],
+      "e_depth_pattern": [
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "matches_expected_pattern": true,
+      "interpretation": "graduated temperature profile: gentle -> modulated -> gentle (mirrors careful distillation ramp)"
+    }
+  },
+  "T4_paragraph_null": {
+    "n_pairs": 16,
+    "spearman_rho": -0.2446,
+    "p_value": 0.3377,
+    "null_confirmed": true,
+    "detail_table": [
+      {
+        "chapter_number": 14,
+        "chapter_idx": 109,
+        "folio": "f84r",
+        "folio_paragraph_count": 5,
+        "chapter_line_count": 11
+      },
+      {
+        "chapter_number": 27,
+        "chapter_idx": 154,
+        "folio": "f77v",
+        "folio_paragraph_count": 3,
+        "chapter_line_count": 20
+      },
+      {
+        "chapter_number": 19,
+        "chapter_idx": 146,
+        "folio": "f75r",
+        "folio_paragraph_count": 2,
+        "chapter_line_count": 11
+      },
+      {
+        "chapter_number": 18,
+        "chapter_idx": 113,
+        "folio": "f76r",
+        "folio_paragraph_count": 0,
+        "chapter_line_count": 19
+      },
+      {
+        "chapter_number": 9,
+        "chapter_idx": 104,
+        "folio": "f83r",
+        "folio_paragraph_count": 4,
+        "chapter_line_count": 38
+      },
+      {
+        "chapter_number": 24,
+        "chapter_idx": 151,
+        "folio": "f84v",
+        "folio_paragraph_count": 2,
+        "chapter_line_count": 10
+      },
+      {
+        "chapter_number": 16,
+        "chapter_idx": 111,
+        "folio": "f108r",
+        "folio_paragraph_count": 16,
+        "chapter_line_count": 14
+      },
+      {
+        "chapter_number": 22,
+        "chapter_idx": 149,
+        "folio": "f82r",
+        "folio_paragraph_count": 4,
+        "chapter_line_count": 9
+      },
+      {
+        "chapter_number": 28,
+        "chapter_idx": 155,
+        "folio": "f82v",
+        "folio_paragraph_count": 6,
+        "chapter_line_count": 15
+      },
+      {
+        "chapter_number": 25,
+        "chapter_idx": 152,
+        "folio": "f80r",
+        "folio_paragraph_count": 6,
+        "chapter_line_count": 6
+      },
+      {
+        "chapter_number": 11,
+        "chapter_idx": 138,
+        "folio": "f112r",
+        "folio_paragraph_count": 10,
+        "chapter_line_count": 10
+      },
+      {
+        "chapter_number": 20,
+        "chapter_idx": 147,
+        "folio": "f111v",
+        "folio_paragraph_count": 7,
+        "chapter_line_count": 5
+      },
+      {
+        "chapter_number": 21,
+        "chapter_idx": 148,
+        "folio": "f78v",
+        "folio_paragraph_count": 2,
+        "chapter_line_count": 5
+      },
+      {
+        "chapter_number": 23,
+        "chapter_idx": 150,
+        "folio": "f116r",
+        "folio_paragraph_count": 6,
+        "chapter_line_count": 5
+      },
+      {
+        "chapter_number": 18,
+        "chapter_idx": 145,
+        "folio": "f81v",
+        "folio_paragraph_count": 2,
+        "chapter_line_count": 13
+      },
+      {
+        "chapter_number": 1,
+        "chapter_idx": 128,
+        "folio": "f83v",
+        "folio_paragraph_count": 3,
+        "chapter_line_count": 19
+      }
+    ],
+    "interpretation": "Null confirmed: folio paragraph count is independent of recipe content length. Section determines paragraph count."
+  },
+  "T5_content_summary": {
+    "n_matches": 3,
+    "match_summaries": [
+      {
+        "label": "Ch19_f75r",
+        "chapter_number": 19,
+        "chapter_idx": 146,
+        "part": "Mercuriorum",
+        "family": "distillation",
+        "folio": "f75r",
+        "recipe_title": "Aqua vitae composite (repeated distillation)",
+        "recipe_summary": "Take water of life, separate moisture through distillation, then redistill through nine times. Describes preparation of potable water with wine and honey, using balneum mariae (gentle water-bath) heating.",
+        "english_snippet": "De vino & humoribus acuti corporis humani, &",
+        "english_content_lines": [
+          "CAPVT DECIMVM NONVM.",
+          "De vino & humoribus acuti corporis humani, &",
+          "prima de aquis temperatis illum.",
+          "You shall take of the water of life, and you shall separate all its moisture through distillation and the substance of the water, which is in the manner of gold, of vegetable brazilwood. You shall place a third part of pure honey with all its substances, namely with wax, and with honey, and you shall place it to ferment in lightening [?] through the bath of distillation in the bath. And this distillation and fermentation you shall repeat by returning the pure [substance] at each sec-"
+        ],
+        "folio_operational_profile": {
+          "k_ratio": 0.4312,
+          "h_ratio": 0.0725,
+          "e_ratio": 0.4964,
+          "terminal_rate": 0.2054,
+          "thermo_ke": 0.0461,
+          "iteration_rate": 0.0,
+          "material_category": "ANIMAL",
+          "output_category": "WATER",
+          "kernel_balance": "ESCAPE_DOMINANT"
+        },
+        "folio_signature_notes": [
+          "Low monitoring (h_ratio=0.0725, below R1 mean)",
+          "Low correction rate",
+          "High termination (terminal_rate=0.2054)",
+          "Unique 4x consecutive qokedy run (line 13)",
+          "e-depth modulated temperature profile (line 38)",
+          "ESCAPE_DOMINANT kernel balance"
+        ],
+        "alignment_notes": "Recipe specifies 9x repeated distillation with balneum mariae. Folio shows high k-HEAD (0.43) with low monitoring (0.07), consistent with a repetitive automated heating process. The unique 4x token repetition mirrors the 9x distillation instruction. Balneum mariae aligns with gentle/modulated e-depth pattern on line 38."
+      },
+      {
+        "label": "Ch18_f76r",
+        "chapter_number": 18,
+        "chapter_idx": 113,
+        "part": "Practica",
+        "family": "distillation",
+        "folio": "f76r",
+        "recipe_title": "Element separation (graduated distillation)",
+        "recipe_summary": "Divide the elements of the stone through the four elements. Separate water of life through graduated furnace temperature. Wash the earth with extracted water and philosophical Mercury. Describes careful element-by-element separation.",
+        "english_snippet": "Son, when you have divided the elements of the stone, or the stone through the four elements, it is necessary that you purge them through this regi...",
+        "english_content_lines": [
+          "CAP. XVIII.",
+          "Son, when you have divided the elements of the stone, or the stone through the four elements, it is necessary that you purge them through this regimen. But first it must be known, the substance of the four elements and how to recognize it, whence we tell you that earth and fire are similar in stony substance, and therefore the preparation of calcining fire is necessary. And the other two, namely water and air, are in watery substance and aquatic nature. And therefore it is necessary that you know the preparation ordained according to the requirement of its nature, because air and water need a preparation that is through seven distillations, or more, until they are emptied of all burning, which comes from the part of the menstrual, and then each of them, full of true tincture, will remain without burning or scorching. Son, you shall distill the water and the air to the side, each in its own rectification and in its own vessel, and the dregs of the water you shall place with the earth, which you shall make in each distillation. And after the sixth distillation, place one or two drops upon a hot plate of fine and pure silver, and if it blackens, it is not emptied of all its burning. Therefore place it for a seventh distillation and more, until it leaves the silver without black corruption,",
+          "and then you will have the water of life, with which you shall wash the earth, and the philosophical Mercury, strengthening and mediating, which makes the marriage of tinctures. And as you did with the water of the moon, so do with the water of the sun, and as you have heard concerning the water, so also understand concerning the air, and that which will remain after the distillation of the air will be fire, full of tincture entirely, and gold and soul, and the ointment of the philosophers, without which the said magisterium cannot be completed. And understand, son, why we say that fire is distilled with air and not with water. Son, water does not have the office of air to perform, but only to wash and not to tinge. For if it tinged, fire would remain without moisture. Because water flees fire, nor would it make a fusible tincture for lack of moisture, therefore we tell you that you should distill fire through air, because in quality they agree, and water flees fire because it is clothed with a quality contrary to fire. Through this, however, they disagree. But air, because it is water tinged by great digestion, is oil, and also a strong tincture, and of great mixture. And fire is its tincture, and a body strongly digested. And the spirit is air, which will lead fire. Consider, son, those things which we",
+          "have told you and shall tell you, namely, that you wish to work the moist stone, which is a muddy substance tending toward water and earth, because from those two pure sulfur will be procreated, and the dry sulfur you wish to work toward fire and air, since it is the tincture and perfection of the entire magisterium. Son, if you mix the fire of the stone with Mercury, immediately without separation it will become red. And therefore when you wish to make a permanent tincture, redden your sulfur in the fire of the stone, and at all times they will love each other."
+        ],
+        "folio_operational_profile": {
+          "k_ratio": 0.2857,
+          "h_ratio": 0.1457,
+          "e_ratio": 0.5686,
+          "terminal_rate": 0.1239,
+          "thermo_ke": 0.0256,
+          "iteration_rate": 0.0044,
+          "material_category": "ANIMAL",
+          "output_category": "WATER",
+          "kernel_balance": "ESCAPE_DOMINANT"
+        },
+        "folio_signature_notes": [
+          "Balanced PREFIX distribution (qo and ot both present)",
+          "Moderate k_ratio (0.2857)",
+          "Higher h_ratio (0.1457, above R1 mean)",
+          "High e_ratio (0.5686)",
+          "Header enrichment elevated"
+        ],
+        "alignment_notes": "Recipe describes graduated element separation requiring monitoring and adjustment. Folio shows balanced k/h ratio consistent with monitored heating. Higher h_ratio aligns with the recipe's emphasis on careful observation during element separation. PREFIX balance reflects mixed operational modes described in recipe."
+      },
+      {
+        "label": "Ch12_f113v",
+        "chapter_number": 12,
+        "chapter_idx": 139,
+        "part": "Mercuriorum",
+        "family": "sublimation",
+        "folio": "f113v",
+        "recipe_title": "Mercury sublimation (dissolve/distill/return cycle)",
+        "recipe_summary": "Take sublimated Mercury (red or white), dissolve in water of Mercury, then distill and return the sublimate. Describes substance-essential vs fire-essential sublimation. Color monitoring (red/white indicators) referenced.",
+        "english_snippet": "De sublificatione, Mercurium sublimationem in fumum signum ad succendum calcem rubeam.",
+        "english_content_lines": [
+          "CAPVT DVODECIMVM.",
+          "De sublificatione, Mercurium sublimationem in fumum signum ad succendum calcem rubeam.",
+          "Take sublimated Mercury, [brought] to the red [or] white, as we have told you, and let it be dissolved in the water of Mercury from which you extracted the liquid of silver from the said Mercury, and in this water let the said liquor of the stone be dissolved with this sublima-",
+          "tially as well as essentially: when we say substantially, we mean through the substance of fire; and when we say essentially, it is to distinguish the quality that is taken up in the substance of quantity [and] could have made the water by distillation until it is entirely congealed. And another time reduce the water over the Mercury to the end that, if the thing is greatly subtilized essentially with the water through distillation, so that there is another return, and a third time distill, and afterward gradually strengthen the fire until you see a less strong reddishness. And if there is nothing ignoble [remaining] nearly under the application with the water of the stone, mixed with any water whatsoever, let it be sublimated \u2014 thus may the sublimation be done \u2014 and thus when what is in the vessel has been reformed upon or fixed [in] its elements, know that we tell you, if you have heard us well, that you will have from the Mercury an elixir in full."
+        ],
+        "folio_operational_profile": {
+          "k_ratio": 0.2624,
+          "h_ratio": 0.2163,
+          "e_ratio": 0.5213,
+          "terminal_rate": 0.1893,
+          "thermo_ke": 0.0251,
+          "iteration_rate": 0.0206,
+          "material_category": "ANIMAL",
+          "output_category": "WATER",
+          "kernel_balance": "ESCAPE_DOMINANT"
+        },
+        "folio_signature_notes": [
+          "ot-PREFIX more prominent (t-HEAD involvement)",
+          "Higher h_ratio (0.2163, above R3 mean)",
+          "High aiin-MIDDLE frequency",
+          "Moderate k_ratio (0.2624)",
+          "Stars section (f103-f116)",
+          "High monitoring + iteration pattern"
+        ],
+        "alignment_notes": "Recipe involves mercury sublimation with color monitoring (red/white). Folio shows elevated h_ratio (monitoring) and ot-PREFIX prominence (t-HEAD involvement), consistent with sublimation operations that require both heating and observation. Higher monitoring aligns with color-checking described in recipe. Stars section location aligns with R3 (sublimation regime) assignment."
+      }
+    ]
+  }
+}

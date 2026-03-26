@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1881 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1890 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1881.
+the highest ID present is C1890.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1881 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1890 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1881 validated constraints are present as canonical one-line claims with tier
+1890 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-25 17:59
-**Version:** FROZEN STATE (1881 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-25 22:30
+**Version:** FROZEN STATE (1890 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2120,6 +2120,15 @@ C1878	Brunschwig fire degree ordering weakly consistent with V k_ratio REGIME or
 C1879	LOO REGIME prediction from PL features: mean MAE=0.11, worst R4 MAE=0.19. PL family features are poor predictors of individual REGIME HEAD-channel profiles. R4 (precision axis, C494) is least predictable	2	cross-family, PL, REGIME
 C1880	PL-to-V calibration operates at domain level (distillation-vs-rest per C1754), not at per-channel level. HEAD-channel structure is V-internal organization, not externally calibratable by PL features alone. PL subtype features at chapter resolution do not map to V folio-level HEAD-channel variation	2	A↔B, cross-family, PL, HEAD
 C1881	CHANNEL_DISCRIMINATIVE_NOT_STRUCTURALLY_CALIBRATED verdict: HEAD channels discriminate REGIMEs strongly (V-internal), e-channel has external Stars calibration, but PL feature structure does not map to V HEAD-channel structure. 4 PASS / 3 FAIL	2	A↔B, B, phase-verdict
+C1882	8D residual matching of distillation chapters to R1 folios (TRAINING SET, features tuned on this task): 9/16 confident matches (ratio>1.15), mean ratio 1.284, 11 unique NN targets out of 32 folios. Validation via C1885 cross-family and C1887 permutation	2	A↔B, cross-family, PL, REGIME, matching
+C1883	CV stability: 11/16 distillation chapters have >40% consensus folio assignment across 500 feature-subset trials (sampling 60-80% of 8 dimensions per trial). Matching is robust to feature perturbation	2	A↔B, cross-family, PL, stability
+C1884	Three highest-confidence recipe-folio assignments from content interpretation: Ch19 (aqua vitae composite, 9x distillation) -> f75r, Ch18 (element separation, graduated heating) -> f76r, Ch12 (mercury sublimation, color monitoring) -> f113v. Content alignment is interpretive, not structural	4	A↔B, cross-family, PL, content
+C1885	Cross-family replication with frozen 8D features (no re-tuning): sublimation->R3 4/7 confident (57%), dissolution->R1 5/15 confident, fixation->R3 3/10 confident. Features generalize beyond training family. Sublimation strongest, consistent with C1750/C1752 distillation-sublimation contrast	2	A↔B, cross-family, PL, REGIME, replication
+C1886	Wrong-regime negative control: distillation->R4 collapses to 1/16 confident, mean ratio 0.863 (below 1.0 = worse than random). Distillation->R3 degrades to 4/16, ratio 1.017. Feature set is regime-discriminating, not noise-accepting	2	A↔B, cross-family, PL, REGIME, negative-control
+C1887	Within-family permutation test: real optimized assignment beats 1000 random chapter-to-folio shuffles. Mean ratio 1.284 vs null 0.572, confident 9 vs null 0.32. Random-draw specificity: only 1/100 random 16-chapter draws reach 9 confident. Both chapter identity and assignment specificity confirmed	2	A↔B, cross-family, PL, REGIME, permutation
+C1888	8D vs 4D feature comparison: adding 4 discovered dimensions (consistency_frac, suffix_transparency, header_enrichment, thermo_ke) to 4 known channel mappings raises confident from 4 to 9, mean ratio from 1.123 to 1.284. Only 4/15 assignments agree between 4D and 8D. TRAINING-SET result; cross-family validation is C1885	2	A↔B, cross-family, PL, features
+C1889	f75r is the only Currier B folio (of 82) with a 4+ consecutive identical token run (qokedy x4, line 13). Only 7 folios have runs of 3+; 75/82 have max run ≤2. Pure corpus fact independent of matching features	2	B, token, repetition, corpus
+C1890	ot-PREFIX fraction significantly higher on R3 folios (mean 0.306) than R1 folios (mean 0.196). Mann-Whitney U=171, p=0.005. Confirms C1478 prediction (k/t terminal mirrors): k-HEAD-dominant regime (R1) shows qo-PREFIX dominance, t-HEAD-involved regime (R3) shows ot-PREFIX elevation	2	B, PREFIX, REGIME, C1478, C1300
 
 ---
 
@@ -4954,6 +4963,54 @@ Only Tier 0-2 structural findings are binding.
 | Expert audience | C197 |
 | Paragraph non-sequentiality | C1399, C1400 |
 | Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |
+
+
+## XXVIII. Recipe-to-Folio Correspondence (Phase 628)
+### Core Finding
+
+Individual pseudo-Lull (PL) alchemical chapters can be matched to individual Voynich Currier B folios using 8-dimensional residual feature profiles, and this matching generalizes across unseen family-regime pairings. The within-family permutation test passes decisively (p < 0.001), confirming chapter-level specificity beyond regime-level gradient.
+
+
+| PL Feature | V Feature | Sign | Channel |
+|-----------|-----------|------|---------|
+| heat_rate | k_ratio | -1 | Known (C1871) |
+| monitoring_rate | h_ratio | +1 | Known (C1872) |
+**Ch19 -> f75r: Aqua Vitae Composite (repeated distillation)**
+
+**Ch18 -> f76r: Element Separation (graduated distillation)**
+
+**Ch12 -> f113v: Mercury Sublimation (dissolve/distill/return cycle)**
+
+
+| Family → REGIME | Confident | CV Consensus | Mean Ratio |
+|----------------|-----------|-------------|------------|
+| Distillation → R1 (training) | 9/16 | 11/16 | 1.284 |
+| Sublimation → R3 | 4/7 | 4/7 | 1.174 |
+
+
+### Tier Assessment
+
+**Tier 3** — The matching is statistically validated (permutation p < 0.001) and replicates across unseen family-regime pairings. Independent structural evidence (PREFIX inversion, token repetition uniqueness) converges with feature-based matching. However, individual chapter-folio assignments remain speculative (the matching algorithm finds best fits, not proven correspondences).
+
+### What This Does NOT Claim
+
+1. No individual recipe translation is recoverable from matching alone
+2. The token repetition count does not "mean" the number nine — it indicates unusually high iteration
+3. Feature correspondences are statistical associations, not semantic mappings
+4. The 8D feature set was tuned on distillation->R1; generalization is encouraging but not proof of universality
+
+### Cross-References
+
+| Topic | Evidence |
+|-------|----------|
+| Channel discriminative mapping | C1871-C1874 (Phase 627) |
+| Permutation significance | C1888 (Phase 628) |
+| PREFIX inversion | C1478, C1891 (Phase 628) |
+| Token repetition uniqueness | C1890 (Phase 628) |
+| e-depth parametricity | C1225, C1394 |
+| Section-level paragraph count | C1090, C1091, C1893 |
+| Literal enumeration | C287 |
+| Full analysis | `phases/RECIPE_FOLIO_CORRESPONDENCE/` |
 
 
 ---

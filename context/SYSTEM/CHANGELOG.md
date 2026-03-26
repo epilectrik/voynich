@@ -4,6 +4,39 @@
 
 ---
 
+## Version 6.00 (2026-03-25) - Phase 628: Individual Recipe-to-Folio Correspondence
+
+### Summary
+
+Phase 628 tests whether individual pseudo-Lull (PL) alchemical chapters can be matched to individual Voynich Currier B folios using 8-dimensional residual feature profiles. Three scripts: core distillation->R1 matching with CV stability and per-dimension decomposition, cross-family replication with permutation validation, and independent structural validation (token repetition, PREFIX inversion, e-depth pattern). Key result: **INDIVIDUAL_MATCHING_VALIDATED** — the within-family permutation test passes decisively (p<0.001, ratio 1.284 vs null 0.572), cross-family replication generalizes without re-tuning (sublimation 4/7 confident), wrong-regime R4 collapses (1/16), and independent structural evidence converges (f75r token uniqueness, ot/qo PREFIX inversion p=0.005). 9 constraints registered (C1882-C1890), 8 Tier 2 + 1 Tier 4. All 7 predictions pass.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/RECIPE_FOLIO_CORRESPONDENCE/` -- Phase 628 with 3 scripts, shared module, JSON results, INDEX.md |
+| **ADDED** | C1882: 8D distillation->R1 matching (training): 9/16 confident, ratio 1.284 |
+| **ADDED** | C1883: CV stability: 11/16 chapters >40% consensus across 500 trials |
+| **ADDED** | C1884: Three content-interpreted matches: Ch19->f75r, Ch18->f76r, Ch12->f113v (Tier 4) |
+| **ADDED** | C1885: Cross-family replication: sublimation 4/7, dissolution 5/15, fixation 3/10 (frozen features) |
+| **ADDED** | C1886: Wrong-regime R4 collapse: 1/16 confident, ratio 0.863 |
+| **ADDED** | C1887: Permutation test p<0.001 for ratio and confident; random-draw specificity p=0.01 |
+| **ADDED** | C1888: 8D vs 4D: additional 4 dimensions raise confident 4->9 |
+| **ADDED** | C1889: f75r only Currier B folio with 4+ consecutive identical token run |
+| **ADDED** | C1890: ot-PREFIX fraction R3 (0.306) > R1 (0.196), Mann-Whitney p=0.005 |
+| **UPDATED** | INDEX.md -- +9 constraints (1890 total), Phase 628 section |
+| **UPDATED** | INTERPRETATION_SUMMARY.md -- Section XXVIII: Recipe-to-Folio Correspondence added |
+
+### Key Findings
+
+1. **Permutation test decisive (C1887):** Real chapter-to-folio assignment massively beats 1000 random shuffles (ratio 1.284 vs 0.572, p<0.001). This proves chapter-level specificity beyond regime gradient.
+2. **Cross-family generalization (C1885):** Frozen 8D features generalize to sublimation (4/7), dissolution (5/15), fixation (3/10) without re-tuning. Sublimation->R3 is strongest, consistent with C1750/C1752.
+3. **Wrong-regime collapse (C1886):** R4 produces 1/16 confident with ratio 0.863 (below 1.0). R3 degrades to 4/16. Features are regime-discriminating.
+4. **Independent structural convergence:** f75r is uniquely the only Currier B folio with 4+ token repetition (C1889). ot-PREFIX is elevated on R3 vs R1 (C1890, p=0.005), confirming C1478 prediction.
+5. **Key limitation:** Correspondence is at nearest-neighbor level, not distance-matrix level. C1874 (Mantel failure) still holds. Individual assignments are best-fits, not proven correspondences.
+
+---
+
 ## Version 5.99 (2026-03-25) - Phase 627: Per-Domain Bridge Historical Calibration
 
 ### Summary

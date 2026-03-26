@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1881 validated constraints | **Version:** 5.99 | **Date:** 2026-03-25
+**Total:** 1890 validated constraints | **Version:** 6.00 | **Date:** 2026-03-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,30 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 628: Individual Recipe-to-Folio Correspondence — INDIVIDUAL_MATCHING_VALIDATED (C1882-C1890)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1882 | 8D residual matching of distillation chapters to R1 folios (TRAINING SET, features tuned on this task): 9/16 confident matches (ratio>1.15), mean ratio 1.284, 11 unique NN targets out of 32 folios. Validation via C1885 cross-family and C1887 permutation | 2 | A↔B, cross-family, PL, REGIME, matching | confident=9of16. ratio=1.284. unique_NN=11of32. n_pl=16. n_v=32. dims=8. |
+| 1883 | CV stability: 11/16 distillation chapters have >40% consensus folio assignment across 500 feature-subset trials (sampling 60-80% of 8 dimensions per trial). Matching is robust to feature perturbation | 2 | A↔B, cross-family, PL, stability | consensus=11of16. n_trials=500. threshold=0.40. |
+| 1884 | Three highest-confidence recipe-folio assignments from content interpretation: Ch19 (aqua vitae composite, 9x distillation) -> f75r, Ch18 (element separation, graduated heating) -> f76r, Ch12 (mercury sublimation, color monitoring) -> f113v. Content alignment is interpretive, not structural | 4 | A↔B, cross-family, PL, content | matches=Ch19_f75r+Ch18_f76r+Ch12_f113v. |
+| 1885 | Cross-family replication with frozen 8D features (no re-tuning): sublimation->R3 4/7 confident (57%), dissolution->R1 5/15 confident, fixation->R3 3/10 confident. Features generalize beyond training family. Sublimation strongest, consistent with C1750/C1752 distillation-sublimation contrast | 2 | A↔B, cross-family, PL, REGIME, replication | sub_confident=4of7. diss_confident=5of15. fix_confident=3of10. sub_cv=4of7. diss_cv=10of15. fix_cv=6of10. |
+| 1886 | Wrong-regime negative control: distillation->R4 collapses to 1/16 confident, mean ratio 0.863 (below 1.0 = worse than random). Distillation->R3 degrades to 4/16, ratio 1.017. Feature set is regime-discriminating, not noise-accepting | 2 | A↔B, cross-family, PL, REGIME, negative-control | R4_confident=1of16. R4_ratio=0.863. R3_confident=4of16. R3_ratio=1.017. |
+| 1887 | Within-family permutation test: real optimized assignment beats 1000 random chapter-to-folio shuffles. Mean ratio 1.284 vs null 0.572 (p<0.001), confident 9 vs null 0.32 (p<0.001). Random-draw specificity: only 1/100 random 16-chapter draws reach 9 confident (p=0.01). Both chapter identity and assignment specificity confirmed | 2 | A↔B, cross-family, PL, REGIME, permutation | p_ratio<0.001. p_confident<0.001. null_ratio=0.572. null_confident=0.32. random_p=0.01. |
+| 1888 | 8D vs 4D feature comparison: adding 4 discovered dimensions (consistency_frac, suffix_transparency, header_enrichment, thermo_ke) to 4 known channel mappings raises confident from 4 to 9, mean ratio from 1.123 to 1.284. Only 4/15 assignments agree between 4D and 8D. TRAINING-SET result; cross-family validation is C1885 | 2 | A↔B, cross-family, PL, features | 4D_confident=4. 8D_confident=9. 4D_ratio=1.123. 8D_ratio=1.284. agree=4of15. |
+| 1889 | f75r is the only Currier B folio (of 82) with a 4+ consecutive identical token run (qokedy x4, line 13). Only 7 folios have runs of 3+; 75/82 have max run ≤2. Pure corpus fact independent of matching features | 2 | B, token, repetition, corpus | max_run_f75r=4. n_folios_3plus=7. n_folios_total=82. token=qokedy. line=13. |
+| 1890 | ot-PREFIX fraction significantly higher on R3 folios (mean 0.306) than R1 folios (mean 0.196). Mann-Whitney U=171, p=0.005. Confirms C1478 prediction (k/t terminal mirrors): k-HEAD-dominant regime (R1) shows qo-PREFIX dominance, t-HEAD-involved regime (R3) shows ot-PREFIX elevation | 2 | B, PREFIX, REGIME, C1478, C1300 | R3_ot_frac=0.306. R1_ot_frac=0.196. U=171. p=0.005. |
+
+**Phase 628 findings (Individual Recipe-to-Folio Correspondence, INDIVIDUAL_MATCHING_VALIDATED):**
+- Individual PL chapter-to-V folio matching produces statistically significant results that generalize across unseen family-regime pairings. The within-family permutation test (C1887) passes decisively: real assignment ratio 1.284 vs null 0.572 (p<0.001), proving chapter-level specificity beyond regime gradient.
+- Cross-family replication without re-tuning (C1885): sublimation->R3 at 57% confident rate, dissolution->R1 5/15, fixation->R3 3/10. Wrong-regime R4 collapses to 1/16 (C1886). The 8D features capture genuine cross-system structure.
+- Two independent structural validations converge: f75r is uniquely the only Currier B folio with a 4+ token repetition run (C1889), and ot-PREFIX fraction is significantly elevated on R3 vs R1 folios (C1890, p=0.005), confirming C1478's k/t terminal mirror prediction at REGIME level.
+- The additional 4 discovered dimensions (C1888) raise matching from 4 to 9 confident, retroactively validating apparatus characterization features from Phases 560-600.
+- Three content-interpreted matches (C1884, Tier 4): Ch19->f75r (aqua vitae composite), Ch18->f76r (element separation), Ch12->f113v (mercury sublimation). Content alignment is interpretive and does not breach C171 semantic ceiling.
+- Key limitation: recipe-folio correspondence is at nearest-neighbor level, not distance-matrix level (C1874 Mantel failure still holds). The matching algorithm finds best fits, not proven correspondences.
 
 ---
 
