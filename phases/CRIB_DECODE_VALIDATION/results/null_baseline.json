@@ -1,0 +1,435 @@
+{
+  "method": "Corpus tertile thresholding of blind predictions",
+  "n_folios_scored": 82,
+  "per_chapter": {
+    "Ch14": {
+      "matched_folio": "f84r",
+      "n_predictions": 5,
+      "matched_score": 4,
+      "null_mean": 2.469,
+      "null_std": 1.268,
+      "rank": 3,
+      "n_folios": 82,
+      "p_value": 0.2683,
+      "n_at_or_above": 22,
+      "score_distribution": {
+        "0": 5,
+        "1": 15,
+        "2": 21,
+        "3": 19,
+        "4": 20,
+        "5": 2
+      },
+      "matched_detail": [
+        {
+          "prediction": "LOW hapax rate",
+          "pass": true
+        },
+        {
+          "prediction": "LOW monitoring gradient",
+          "pass": true
+        },
+        {
+          "prediction": "LOW-MODERATE paragraph count",
+          "pass": false
+        },
+        {
+          "prediction": "LOW-MODERATE ch/sh rate",
+          "pass": true
+        },
+        {
+          "prediction": "da-prefix above median",
+          "pass": true
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f41v",
+          "score": 5
+        },
+        {
+          "folio": "f75r",
+          "score": 5
+        },
+        {
+          "folio": "f33r",
+          "score": 4
+        },
+        {
+          "folio": "f33v",
+          "score": 4
+        },
+        {
+          "folio": "f34r",
+          "score": 4
+        }
+      ]
+    },
+    "Ch27": {
+      "matched_folio": "f77v",
+      "n_predictions": 5,
+      "matched_score": 1,
+      "null_mean": 2.42,
+      "null_std": 1.323,
+      "rank": 60,
+      "n_folios": 82,
+      "p_value": 0.9268,
+      "n_at_or_above": 76,
+      "score_distribution": {
+        "0": 6,
+        "1": 17,
+        "2": 20,
+        "3": 20,
+        "4": 15,
+        "5": 4
+      },
+      "matched_detail": [
+        {
+          "prediction": "UNUSUAL para structure (dominant para)",
+          "pass": false
+        },
+        {
+          "prediction": "LOW thermal gradient",
+          "pass": false
+        },
+        {
+          "prediction": "ok/ot enriched",
+          "pass": false
+        },
+        {
+          "prediction": "HIGH hapax rate",
+          "pass": false
+        },
+        {
+          "prediction": "LOW monitoring gradient",
+          "pass": true
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f31v",
+          "score": 5
+        },
+        {
+          "folio": "f33r",
+          "score": 5
+        },
+        {
+          "folio": "f48r",
+          "score": 5
+        },
+        {
+          "folio": "f85r2",
+          "score": 5
+        },
+        {
+          "folio": "f105r",
+          "score": 4
+        }
+      ]
+    },
+    "Ch9": {
+      "matched_folio": "f83r",
+      "n_predictions": 4,
+      "matched_score": 3,
+      "null_mean": 1.543,
+      "null_std": 1.055,
+      "rank": 5,
+      "n_folios": 82,
+      "p_value": 0.1707,
+      "n_at_or_above": 14,
+      "score_distribution": {
+        "0": 14,
+        "1": 26,
+        "2": 28,
+        "3": 10,
+        "4": 4
+      },
+      "matched_detail": [
+        {
+          "prediction": "HIGH hapax rate",
+          "pass": false
+        },
+        {
+          "prediction": "HIGH paragraph count",
+          "pass": true
+        },
+        {
+          "prediction": "Monitoring gradient present",
+          "pass": true
+        },
+        {
+          "prediction": "qo moderate-high",
+          "pass": true
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f104r",
+          "score": 4
+        },
+        {
+          "folio": "f104v",
+          "score": 4
+        },
+        {
+          "folio": "f115r",
+          "score": 4
+        },
+        {
+          "folio": "f115v",
+          "score": 4
+        },
+        {
+          "folio": "f103r",
+          "score": 3
+        }
+      ]
+    },
+    "Ch24": {
+      "matched_folio": "f84v",
+      "n_predictions": 4,
+      "matched_score": 4,
+      "null_mean": 1.247,
+      "null_std": 0.91,
+      "rank": 1,
+      "n_folios": 82,
+      "p_value": 0.0244,
+      "n_at_or_above": 2,
+      "score_distribution": {
+        "0": 18,
+        "1": 32,
+        "2": 25,
+        "3": 5,
+        "4": 2
+      },
+      "matched_detail": [
+        {
+          "prediction": "LOW paragraph count",
+          "pass": true
+        },
+        {
+          "prediction": "LOW monitoring rate",
+          "pass": true
+        },
+        {
+          "prediction": "LOW hapax rate",
+          "pass": true
+        },
+        {
+          "prediction": "HIGH monitoring gradient (anomaly noted in predictions)",
+          "pass": true
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f78v",
+          "score": 4
+        },
+        {
+          "folio": "f84v",
+          "score": 4
+        },
+        {
+          "folio": "f33v",
+          "score": 3
+        },
+        {
+          "folio": "f40v",
+          "score": 3
+        },
+        {
+          "folio": "f41v",
+          "score": 3
+        }
+      ]
+    },
+    "Ch16": {
+      "matched_folio": "f108r",
+      "n_predictions": 4,
+      "matched_score": 3,
+      "null_mean": 1.457,
+      "null_std": 0.969,
+      "rank": 2,
+      "n_folios": 82,
+      "p_value": 0.1707,
+      "n_at_or_above": 14,
+      "score_distribution": {
+        "0": 13,
+        "1": 32,
+        "2": 23,
+        "3": 13,
+        "4": 1
+      },
+      "matched_detail": [
+        {
+          "prediction": "MODERATE monitoring",
+          "pass": false
+        },
+        {
+          "prediction": "MODERATE hapax rate",
+          "pass": true
+        },
+        {
+          "prediction": "HIGH paragraph count",
+          "pass": true
+        },
+        {
+          "prediction": "ok/ot enriched",
+          "pass": true
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f112v",
+          "score": 4
+        },
+        {
+          "folio": "f103r",
+          "score": 3
+        },
+        {
+          "folio": "f104r",
+          "score": 3
+        },
+        {
+          "folio": "f106v",
+          "score": 3
+        },
+        {
+          "folio": "f107r",
+          "score": 3
+        }
+      ]
+    },
+    "Ch11": {
+      "matched_folio": "f112r",
+      "n_predictions": 5,
+      "matched_score": 3,
+      "null_mean": 2.259,
+      "null_std": 0.9,
+      "rank": 7,
+      "n_folios": 82,
+      "p_value": 0.4024,
+      "n_at_or_above": 33,
+      "score_distribution": {
+        "0": 2,
+        "1": 13,
+        "2": 34,
+        "3": 27,
+        "4": 6
+      },
+      "matched_detail": [
+        {
+          "prediction": "MODERATE-HIGH monitoring",
+          "pass": false
+        },
+        {
+          "prediction": "MODERATE hapax rate",
+          "pass": true
+        },
+        {
+          "prediction": "MULTIPLE paragraphs",
+          "pass": true
+        },
+        {
+          "prediction": "ok/ot correction enriched",
+          "pass": true
+        },
+        {
+          "prediction": "da-prefix for cohobation",
+          "pass": false
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f103r",
+          "score": 4
+        },
+        {
+          "folio": "f106v",
+          "score": 4
+        },
+        {
+          "folio": "f111r",
+          "score": 4
+        },
+        {
+          "folio": "f43v",
+          "score": 4
+        },
+        {
+          "folio": "f46v",
+          "score": 4
+        }
+      ]
+    },
+    "Ch18t": {
+      "matched_folio": "f81v",
+      "n_predictions": 4,
+      "matched_score": 1,
+      "null_mean": 1.704,
+      "null_std": 1.149,
+      "rank": 45,
+      "n_folios": 82,
+      "p_value": 0.8415,
+      "n_at_or_above": 69,
+      "score_distribution": {
+        "0": 13,
+        "1": 25,
+        "2": 24,
+        "3": 14,
+        "4": 6
+      },
+      "matched_detail": [
+        {
+          "prediction": "HIGH monitoring density",
+          "pass": false
+        },
+        {
+          "prediction": "ch specifically enriched",
+          "pass": false
+        },
+        {
+          "prediction": "LOW thermal variation",
+          "pass": false
+        },
+        {
+          "prediction": "Dominant paragraph",
+          "pass": true
+        }
+      ],
+      "top5": [
+        {
+          "folio": "f34v",
+          "score": 4
+        },
+        {
+          "folio": "f39r",
+          "score": 4
+        },
+        {
+          "folio": "f43v",
+          "score": 4
+        },
+        {
+          "folio": "f46v",
+          "score": 4
+        },
+        {
+          "folio": "f57r",
+          "score": 4
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "total_matched_score": 19,
+    "total_predictions": 31,
+    "matched_rate": 0.6129,
+    "null_rate": 0.4225,
+    "lift": 1.45,
+    "chapters_p_le_020": 3,
+    "note": "null_rate = sum(null_mean per chapter) / sum(n_predictions per chapter)"
+  }
+}

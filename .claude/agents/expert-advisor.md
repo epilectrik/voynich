@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-26 11:33
+**Generated:** 2026-03-26 12:00
 **Version:** FROZEN STATE (1896 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -2133,8 +2133,8 @@ C1891	f76r P1 has the strongest monotonic monitoring gradient in Currier B. Not 
 C1892	f76r P1 monitoring gradient loads more on ch (rho_ch=0.341) than sh (rho_sh=0.221). Consistent with Ch18's active testing procedure (C929: ch=active test). Difference not formally tested for significance at this sample size	2	B, PREFIX, monitoring, C929
 C1893	f75r and f76r show PREFIX balance shift within same section/REGIME/quire: f75r qo-enriched (26.2% vs f76r 19.1%), f76r ch-enriched (17.0% vs f75r 10.2%). Both folios in section B, REGIME_1, quire M — section effects controlled. Consistent with C929/C1313 k/e channel architecture. 8D matching features use HEAD ratios not PREFIX fractions (not circular)	2	B, PREFIX, k-channel, e-channel, C929, C1313
 C1894	f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r	2	B, token, repetition, corpus
-C1895	Blind prediction test (predictions written before examining folios) achieves 44% strict pass rate (17/39) across 7 matches. No null baseline computed (random-folio scoring not tested). Partial credit (67%) includes analyst judgment. Distance-success correlation descriptive only	3	B, matching, PL, methodology
-C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference, C1895 no null model. Ch12→f113v remains Tier 4	3	B, matching, PL, content, upgrade
+C1895	Blind prediction test: formalized predictions (tertile thresholds) scored against all 82 B folios. Null rate 42.3%, matched rate 61.3%, lift 1.45x. Ch24->f84v significant. Ch9->f83r and Ch16->f108r suggestive. Ch27->f77v and Ch18t->f81v worse than random (p>0.84). Aggregate lift is modest; individual chapter results vary widely	3	B, matching, PL, methodology
+C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19->f75r and Ch18->f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference. Ch12->f113v remains Tier 4	3	B, matching, PL, content, upgrade
 
 ---
 

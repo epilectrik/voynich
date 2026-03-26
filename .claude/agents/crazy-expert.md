@@ -2219,7 +2219,7 @@ C1891	f76r P1 has the strongest monotonic monitoring gradient in Currier B (rank
 C1892	f76r P1 monitoring gradient loads more on ch (rho_ch=0.341) than sh (rho_sh=0.221). Consistent with Ch18's active testing (C929). Difference not formally tested.	2	B, PREFIX, monitoring, C929	rho_ch=0.341. rho_sh=0.221. difference=0.120.
 C1893	f75r and f76r show PREFIX balance shift within same section/REGIME/quire: f75r qo-enriched (26.2% vs 19.1%), f76r ch-enriched (17.0% vs 10.2%). Section effects controlled. Not circular with 8D features. Consistent with C929/C1313.	2	B, PREFIX, k-channel, e-channel, C929, C1313	f75r_qo=0.262. f76r_ch=0.170. same_section=B.
 C1894	f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r.	2	B, token, repetition, corpus	double_dar=2. total_dar=188. dar_folios=65.
-C1895	Blind prediction test achieves 44% strict pass rate (17/39) across 7 matches. No null baseline computed. Partial credit (67%) includes analyst judgment.	3	B, matching, PL, methodology	pass=17of39. partial=9of39. no_null=true.
+C1895	Blind prediction null baseline: null rate 42.3%, matched rate 61.3%, lift 1.45x. Ch24->f84v significant (p=0.024, rank 1/82). Ch9/Ch16 suggestive (p=0.171). Ch27/Ch18t worse than random (p>0.84).	3	B, matching, PL, methodology	null_rate=0.423. matched_rate=0.613. lift=1.45. Ch24_p=0.024.
 C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19->f75r and Ch18->f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats. Ch12->f113v remains Tier 4.	3	B, matching, PL, content, upgrade	upgraded=Ch19_f75r+Ch18_f76r.
 
 ---

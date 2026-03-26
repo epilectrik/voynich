@@ -30,6 +30,7 @@ Independent structural evidence beyond the 8D matching features. The monitoring 
 | Script | Runtime | Output |
 |--------|---------|--------|
 | `scripts/crib_validation.py` | ~15s | `results/crib_validation.json` |
+| `scripts/null_baseline.py` | ~15s | `results/null_baseline.json` |
 
 Exploratory scripts (in `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/`):
 - `_explore_decode_f75r.py` — f75r full token analysis
@@ -67,8 +68,8 @@ Exploratory scripts (in `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/`):
 | C1892 | f76r P1 monitoring gradient loads more on ch (rho_ch=0.341) than sh (rho_sh=0.221). Consistent with Ch18's active testing (C929). Difference not formally tested for significance | Tier 2 | rho_ch=0.341, rho_sh=0.221 |
 | C1893 | f75r and f76r show PREFIX balance shift within same section/REGIME/quire: f75r qo-enriched (26.2% vs 19.1%), f76r ch-enriched (17.0% vs 10.2%). Section effects controlled (both section B, R1, quire M). 8D features use HEAD ratios not PREFIX fractions (not circular). Consistent with C929/C1313 | Tier 2 | f75r_qo=0.262, f76r_ch=0.170 |
 | C1894 | f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar across 65 folios but consecutive doubles unique to f75r | Tier 2 | double_dar=2, total_dar=188 |
-| C1895 | Blind prediction test achieves 44% strict pass rate (17/39) across 7 matches. Predictions written before examining folios. No null baseline (random-folio scoring not tested). Partial credit (67%) includes analyst judgment | Tier 3 | pass=17/39, partial=9/39 |
-| C1896 | C1884 upgraded from Tier 4 to Tier 3 for Ch19→f75r and Ch18→f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference, C1895 no null model. Ch12→f113v remains Tier 4 | Tier 3 | upgraded=2/3 matches |
+| C1895 | Blind prediction null baseline: formalized predictions scored against all 82 B folios. Null rate 42.3%, matched rate 61.3%, lift 1.45x. Ch24->f84v significant (p=0.024, rank 1/82). Ch9/Ch16 suggestive (p=0.171). Ch27/Ch18t worse than random (p>0.84). Aggregate lift modest; per-chapter results vary widely | Tier 3 | null_rate=0.423, matched_rate=0.613, lift=1.45, Ch24_p=0.024 |
+| C1896 | C1884 upgraded from Tier 4 to Tier 3 for Ch19->f75r and Ch18->f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference. Ch12->f113v remains Tier 4 | Tier 3 | upgraded=2/3 matches |
 
 ---
 
@@ -76,7 +77,7 @@ Exploratory scripts (in `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/`):
 
 **CONTENT_VALIDATED** — Two crib decodes (f75r, f76r) produce structural evidence beyond the 8D matching features. f76r P1's monitoring gradient ranks #1 of 13 eligible paragraphs (C1891, small n noted), its ch/sh loading is consistent with active-test recipe (C1892, difference untested), the two folios show PREFIX balance shift within the same section/REGIME/quire (C1893, not circular with matching features), and f75r's double-dar is unique in the corpus (C1894). Combined with Phase 628's token run uniqueness (C1889), two recipe-folio matches have converging evidence supporting Tier 3 upgrade (C1896).
 
-The blind prediction test (C1895) achieves 44% strict pass rate but lacks a null baseline, limiting its evidentiary force. The upgrade to Tier 3 is directionally warranted but the supporting evidence has noted caveats.
+The blind prediction null baseline (C1895) shows aggregate lift of 1.45x over chance (42.3% null vs 61.3% matched). Per-chapter results diverge sharply: Ch24→f84v is significant at p=0.024, Ch9 and Ch16 are suggestive (p=0.171), while Ch27 and Ch18t perform worse than random — independently confirming the weakest 8D matches are structurally unreliable.
 
 ---
 
