@@ -14,6 +14,15 @@ Per-folio findings from individual analysis. Each file captures structural prope
 |-------|--------|---------|-------------|------|
 | f75r | R1 | Herbal B | Ch19 match (aqua vitae, 9x reflux); only 4+ token run in corpus; double-dar unique | [f75r.md](f75r.md) |
 | f76r | R1 | Herbal B | Ch18 match (element separation, silver-plate test); strongest monitoring gradient in corpus (rho=0.710, rank 1/13); ch-dominant (active test) | [f76r.md](f76r.md) |
+| f31r | R1 | Herbal H | Rosewater candidate; highest e_ratio in R1 (0.654); P2 48% monitoring spike; illustration plausibly rose | [f31r.md](f31r.md) |
+| f46v | R4 | Herbal H | Precision sublimation candidate (thistle salt); highest h_ratio in R4 (0.262); max dam density (2.70%); illustration = thistle | [f46v.md](f46v.md) |
+| f55r | R2 | Herbal H | Aggressive iterative oil extraction (poppy?); only ENERGY_DOMINANT folio in Section H; k=0.545; illustration = poppy plant | [f55r.md](f55r.md) |
+| f50r | R2 | Herbal H | Highest iteration in Section H (4.35%); OIL output; BALANCED kernel; large ray-floret flower (sunflower-like?) | [f50r.md](f50r.md) |
+| f41v | R4 | Herbal H | Most distinctive folio in Section H (z=13.75); extreme terminal_rate (48.4%); very high e_ratio (69.2%); tiny (68 tokens); feathery leaves + tuberous roots | [f41v.md](f41v.md) |
+| f40v | R2 | Herbal H | Highest paragraph density in Section H (19 para/106 tokens); iterative; borderline R2; ornate flower with thick striped calyx | [f40v.md](f40v.md) |
+| f77v | R1 | Herbal B | Ch27 match (furnace specification, three fire regimes); strongest ratio in Phase 628 (2.805); qo-dominant (29%); all paragraph gallows are t; thermal gradient P3→P7 maps bath→ashes→flame | [f77v.md](f77v.md) |
+| f84r | R1 | Herbal B | Ch14 match (gold dissolution, balneum mariae + putrefaction); dual-layer 12-header architecture; lowest distance in dataset (0.723); 84% CV consensus | [f84r.md](f84r.md) |
+| f108r | R1 | S (Pharma) | Ch16 match (two-phase element separation); blind prediction test FAILED (1/8); ok+ot correction rate 22.4%; zero iteration | [f108r.md](f108r.md) |
 
 ---
 
