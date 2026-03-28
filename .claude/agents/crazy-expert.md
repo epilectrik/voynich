@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1896.
+the highest ID present is C1900.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2221,6 +2221,10 @@ C1893	f75r and f76r show PREFIX balance shift within same section/REGIME/quire: 
 C1894	f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r.	2	B, token, repetition, corpus	double_dar=2. total_dar=188. dar_folios=65.
 C1895	Blind prediction null baseline: null rate 42.3%, matched rate 61.3%, lift 1.45x. Ch24->f84v significant (p=0.024, rank 1/82). Ch9/Ch16 suggestive (p=0.171). Ch27/Ch18t worse than random (p>0.84).	3	B, matching, PL, methodology	null_rate=0.423. matched_rate=0.613. lift=1.45. Ch24_p=0.024.
 C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19->f75r and Ch18->f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats. Ch12->f113v remains Tier 4.	3	B, matching, PL, content, upgrade	upgraded=Ch19_f75r+Ch18_f76r.
+C1897	Suffix -edy suppresses e-depth in compound MIDDLEs: parses kee+dy as ke+edy, hiding gentle-heat signatures. atomize() bypasses MIDDLE/SUFFIX boundary for atom-level analysis.	2	B, GLOBAL, morphology, parser, C1225, C1394	affected_suffix=edy. coverage=100%. corpus=23096.
+C1898	HT articulators exhibit two-group positional split (refines C1417): OPENER (p,t,f,d) 66.7% line-initial, EMBEDDED (l,r) 4.3% line-initial. Chi2=171.4, 92% folio consistency.	2	HT, B, articulator, position, C1417	opener=66.7%. embedded=4.3%. chi2=171.4. folios=23of25.
+C1899	f75r atom decode confirms Ch19 alignment with corrected e-depth: 8/8 predictions, kee/ke alternation in P9, L41 100% gentle heat before dar+chekar.	3	B, f75r, PL, Ch19, C1896, C1225	predictions=8of8. L41_gentle=100%.
+C1900	Fermentation structural fingerprint falsified: 1/555 paragraphs pass strict criteria. Confirms C171 semantic ceiling.	1	B, paragraph, fermentation, C171	pass=1of555.
 
 ---
 

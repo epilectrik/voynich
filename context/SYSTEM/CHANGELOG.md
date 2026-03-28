@@ -4,6 +4,38 @@
 
 ---
 
+## Version 6.02 (2026-03-27) - Phase 630: Atom-Level Decode & HT Positional Grammar
+
+### Summary
+
+Phase 630 applies the atom-level glossing system (C1394 HEAD+MOD*+TERM) to f75r via a new `Morphology.atomize()` method that bypasses the MIDDLE/SUFFIX boundary. Key discovery: the -edy suffix greedily absorbs terminal 'e' from MIDDLEs, hiding e-depth information. With correction, balneum mariae gentle-heat signatures become visible on f75r, strengthening the Ch19 recipe alignment. Additionally, HT articulators show a two-group positional split (OPENERS vs EMBEDDED) confirmed corpus-wide with chi-squared=171.4. 4 constraints registered (C1897-C1900): 2 Tier 2, 1 Tier 3, 1 Tier 1.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ATOM_DECODE_F75R/` -- Phase 630 INDEX.md |
+| **ADDED** | `Morphology.atomize()` method in scripts/voynich.py -- flat atom-sequence decomposition |
+| **ADDED** | Module-level ATOM_GLOSSES, HEAD_ATOMS, MOD_ATOMS, TERM_ATOMS, opacity constants |
+| **ADDED** | AtomAnalysis dataclass with HEAD/MOD/TERM/SOLE/PSEUDO_HEAD roles |
+| **ADDED** | C1897: -edy suffix suppresses e-depth in compound MIDDLEs (Tier 2) |
+| **ADDED** | C1898: HT articulator two-group positional split, refines C1417 (Tier 2) |
+| **ADDED** | C1899: f75r atom decode confirms Ch19 with corrected e-depth (Tier 3) |
+| **ADDED** | C1900: Fermentation structural fingerprint falsified (Tier 1) |
+| **UPDATED** | CategoryClassifier.ATOM_GLOSSES: o=arrange, l=state, r=respond, a=into, n=bind |
+| **UPDATED** | GLOSSING.md: atom-level decomposition section with full documentation |
+| **UPDATED** | CLAUDE.md: atomize() usage example, version 6.02 |
+| **UPDATED** | CLAUDE_INDEX.md: atom decomposition navigation entry |
+
+### Key Findings
+
+1. **-edy e-depth suppression (C1897):** Standard suffix parsing absorbs terminal 'e' from compound MIDDLEs. qokeedy parses as qo+ke+edy (e-depth=1) instead of correct qo+kee+dy (e-depth=2). Affects all ke-family tokens. atomize() resolves this.
+2. **HT two-group split (C1898):** OPENER articulators (p,t,f,d) are 66.7% line-initial; EMBEDDED (l,r) are 4.3%. 92% folio consistency. y-articulator splits by prefix (sh/ch→initial, te/ta→embedded).
+3. **f75r thermal trajectory (C1899):** Corrected e-depth reveals L38 kee/ke alternation (gentle/steady), L41 100% gentle heat before material addition and quality check. P4 enumerated repetition is 6% gentle = active distillation.
+4. **Fermentation falsified (C1900):** 1/555 paragraphs match strict criteria. Operational behavior encodes function shifts, not process names.
+
+---
+
 ## Version 6.01 (2026-03-25) - Phase 629: Crib Decode Validation
 
 ### Summary

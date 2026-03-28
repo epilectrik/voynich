@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1896 validated constraints | **Version:** 6.01 | **Date:** 2026-03-25
+**Total:** 1900 validated constraints | **Version:** 6.02 | **Date:** 2026-03-27
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 630: Atom-Level Decode & HT Positional Grammar — ATOM_DECODE_VALIDATED (C1897-C1900)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1897 | Suffix -edy suppresses e-depth in compound MIDDLEs: parses kee+dy as ke+edy, hiding gentle-heat (e-depth=2) signatures. Morphology.atomize() bypasses MIDDLE/SUFFIX boundary, reading post-prefix chars as flat HEAD+MOD*+TERM atom sequence (C1394). 100% coverage on 23,096 B tokens | 2 | B, GLOBAL, morphology, parser, C1225, C1394 | affected_suffix=edy. coverage=100%. corpus=23096. |
+| 1898 | HT articulators exhibit two-group positional split (refines C1417): OPENER (p,t,f,d) 66.7% line-initial (N=240), EMBEDDED (l,r) 4.3% line-initial (N=187). Chi-squared=171.4 (p<0.001). 92% folio consistency (23/25). y-articulator splits by prefix: sh/ch-prefixed 77-87% initial, te/ta-prefixed 15-24% | 2 | HT, B, articulator, position, C1417 | opener_init=66.7%. embedded_init=4.3%. chi2=171.4. folio_consistency=23of25. N=1019. |
+| 1899 | f75r atom decode confirms Ch19 alignment with corrected e-depth (extends C1896): 8/8 structural predictions confirmed, e-depth trajectory in P9 shows kee/ke gentle/steady alternation, L41 100% gentle heat preceding material addition and quality check | 3 | B, f75r, PL, Ch19, C1896, C1225 | tokens=412. predictions=8of8. P4_gentle=6%. L41_gentle=100%. |
+| 1900 | Fermentation structural fingerprint falsified: criteria (sh>20%, ch<10%, qo<15%, e>25%, k<15%) match 1/555 paragraphs. Text encodes operational behavior shifts, not process labels. Confirms C171 | 1 | B, paragraph, fermentation, C171 | pass=1of555. |
+
+**Phase 630 findings (Atom-Level Decode & HT Positional Grammar, ATOM_DECODE_VALIDATED):**
+- The -edy suffix parsing convention suppresses e-depth information (C1897) by absorbing terminal 'e' from compound MIDDLEs. Morphology.atomize() resolves this by treating the full post-prefix remainder as a flat atom sequence with positional roles. All previous analyses using extract() have systematically understated e-depth=2 (gentle heat) frequency.
+- HT articulators (C1898) bifurcate into line-openers (p,t,f,d: monitoring directives) and line-embedded (l,r: monitoring annotations). This is not an artifact of any single folio — it holds across 92% of testable folios with chi-squared=171.4. The y-articulator's positional behavior depends on its prefix pairing, adding a second axis of structure.
+- f75r atom decode with corrected e-depth (C1899) reveals thermal trajectory within P9 that matches Ch19 recipe internal structure: gentle balneum warming → material addition → quality check → sharp distillation finish. L41 is 100% gentle heat, L43 has chekar. The kee/ke alternation on L38 was invisible under extract().
+- Fermentation fingerprint falsification (C1900): the text does not encode process names. Operational behavior shifts (heavy monitoring, low heat) are detectable but not unique to fermentation. Confirms C171 semantic ceiling.
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1896 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1900 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1896.
+the highest ID present is C1900.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1896 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1900 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1896 validated constraints are present as canonical one-line claims with tier
+1900 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-26 12:00
-**Version:** FROZEN STATE (1896 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-27 21:45
+**Version:** FROZEN STATE (1900 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.64 | **Status:** FROZEN | **Constraints:** 1300 | **Date:** 2026-03-05
+**Version:** 6.02 | **Status:** FROZEN | **Constraints:** 1900 | **Date:** 2026-03-27
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -231,8 +231,8 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1156 |
-| Completed phases | 460 |
+| Validated constraints | 1896 |
+| Completed phases | 629 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -2135,6 +2135,10 @@ C1893	f75r and f76r show PREFIX balance shift within same section/REGIME/quire: 
 C1894	f75r has the only consecutive double-dar sequences in Currier B (lines 35, 36). 188 total dar tokens across 65 folios, but consecutive doubles unique to f75r	2	B, token, repetition, corpus
 C1895	Blind prediction test: formalized predictions (tertile thresholds) scored against all 82 B folios. Null rate 42.3%, matched rate 61.3%, lift 1.45x. Ch24->f84v significant. Ch9->f83r and Ch16->f108r suggestive. Ch27->f77v and Ch18t->f81v worse than random (p>0.84). Aggregate lift is modest; individual chapter results vary widely	3	B, matching, PL, methodology
 C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19->f75r and Ch18->f76r based on structural convergence (C1891-C1894 + C1889). Supporting evidence has caveats: C1891 small n, C1892 untested difference. Ch12->f113v remains Tier 4	3	B, matching, PL, content, upgrade
+C1897	Suffix -edy suppresses e-depth in compound MIDDLEs: parses kee+dy as ke+edy, hiding gentle-heat (e-depth=2) signatures. Morphology.atomize() bypasses MIDDLE/SUFFIX boundary, reading post-prefix chars as flat HEAD+MOD*+TERM atom sequence (C1394). 100% coverage on 23,096 B tokens	2	B, GLOBAL, morphology, parser, C1225, C1394
+C1898	HT articulators exhibit two-group positional split (refines C1417): OPENER (p,t,f,d) 66.7% line-initial, EMBEDDED (l,r) 4.3% line-initial. Chi-squared=171.4. 92% folio consistency (23/25). y-articulator splits by prefix: sh/ch-prefixed 77-87% initial, te/ta-prefixed 15-24%	2	HT, B, articulator, position, C1417
+C1899	f75r atom decode confirms Ch19 alignment with corrected e-depth (extends C1896): 8/8 structural predictions confirmed, e-depth trajectory in P9 shows kee/ke gentle/steady alternation, L41 100% gentle heat preceding material addition and quality check	3	B, f75r, PL, Ch19, C1896, C1225
+C1900	Fermentation structural fingerprint falsified: criteria (sh>20%, ch<10%, qo<15%, e>25%, k<15%) match 1/555 paragraphs. Text encodes operational behavior shifts, not process labels. Confirms C171	1	B, paragraph, fermentation, C171
 
 ---
 
@@ -2142,7 +2146,7 @@ C1896	C1884 upgraded from Tier 4 to Tier 3 for Ch19->f75r and Ch18->f76r based o
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-26
+# Generated: 2026-03-27
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
