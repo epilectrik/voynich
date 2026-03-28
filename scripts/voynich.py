@@ -83,6 +83,48 @@ SUFFIXES = sorted(set(SUFFIXES), key=len, reverse=True)
 
 
 # ============================================================
+# ATOM SYSTEM (C1195, C1394, C1209)
+# ============================================================
+# The 18 atoms that compose MIDDLEs, with positional role sets.
+# Used by Morphology.atomize() for flat atom-sequence glossing.
+
+# Atom glosses — validated per C1195 confidence tiers.
+# LOCKED (8): k, e, h, y, i, n, a, m — strong compound evidence
+# SOLID (6): d, t, l, o, c, p — good evidence, label may refine
+# PLAUSIBLE (5): f, s, g, x, r — thin evidence, nothing contradicts
+ATOM_GLOSSES = {
+    'k': 'heat',      'e': 'cool',      'h': 'watch',     'y': 'end',        # LOCKED
+    'i': 'iterate',   'n': 'bind',      'a': 'into',      'm': 'final',      # LOCKED
+    'd': 'mark',      't': 'transfer',  'l': 'state',     'o': 'arrange',    # SOLID
+    'c': 'adjust',    'p': 'pause',                                           # SOLID
+    'f': 'flag',      's': 'sequence',  'r': 'respond',                      # PLAUSIBLE
+    'g': '?',         'x': 'diagram',  'q': '?',                             # PLAUSIBLE/UNTIERED
+}
+
+ATOM_CONFIDENCE = {
+    'k': 'LOCKED', 'e': 'LOCKED', 'h': 'LOCKED', 'y': 'LOCKED',
+    'i': 'LOCKED', 'n': 'LOCKED', 'a': 'LOCKED', 'm': 'LOCKED',
+    'd': 'SOLID',  't': 'SOLID',  'l': 'SOLID',  'o': 'SOLID',
+    'c': 'SOLID',  'p': 'SOLID',
+    'f': 'PLAUSIBLE', 's': 'PLAUSIBLE', 'r': 'PLAUSIBLE',
+    'g': 'PLAUSIBLE', 'x': 'PLAUSIBLE',
+}
+
+# Positional role sets (C1209, C1394, C1475, C1489)
+HEAD_ATOMS = frozenset('aeokt')       # Domain selectors (position-initial)
+MOD_ATOMS  = frozenset('pficds')      # Modifiers (interior positions)
+TERM_ATOMS = frozenset('ynmhlrkt')    # Closure atoms (position-final); k,t are FREE/dual
+
+# Terminal opacity (C1440, C1487)
+# OPAQUE: instruction complete, no continuation atoms
+# TRANSPARENT: instruction incomplete, continuation expected
+# SEMI_TRANSPARENT: optional continuation
+OPAQUE_TERMS         = frozenset('ynm')
+TRANSPARENT_TERMS    = frozenset('h')
+SEMI_TRANSPARENT_TERMS = frozenset('lr')
+
+
+# ============================================================
 # TOKEN DATA CLASS
 # ============================================================
 @dataclass
@@ -233,6 +275,61 @@ class MorphAnalysis:
         return self.middle == '_EMPTY_'
 
 
+@dataclass
+class AtomAnalysis:
+    """
+    Result of atom-level decomposition (C1394 HEAD+MOD*+TERM model).
+
+    Unlike MorphAnalysis which preserves the MIDDLE/SUFFIX boundary for
+    structural constraint work, AtomAnalysis bypasses that boundary and
+    decomposes the entire post-prefix remainder into a flat atom sequence
+    with positional roles. Use for glossing and decoding.
+
+    Roles:
+        HEAD        — first atom if in {a,e,o,k,t}; domain selector (C1475)
+        PSEUDO_HEAD — first atom when NOT HEAD-eligible; headless compound (C1489)
+        SOLE        — single atom after prefix; complete instruction in one atom
+        MOD         — interior atoms; modifiers/parametrization
+        TERM        — last atom if in {y,n,m,h,l,r,k,t}; closure/exit state
+    """
+    articulator: Optional[str]
+    prefix: Optional[str]
+    atoms: List[Tuple[str, str, str]]  # [(char, role, gloss), ...]
+    is_headless: bool
+    e_depth: int       # count of consecutive e's (C1197, C1225)
+    i_depth: int       # count of consecutive i's (C1197)
+    terminal_opacity: str  # 'OPAQUE', 'TRANSPARENT', 'SEMI_TRANSPARENT', 'NONE'
+
+    @property
+    def head(self) -> Optional[str]:
+        """Return the HEAD atom char, or None if headless."""
+        for char, role, _ in self.atoms:
+            if role == 'HEAD':
+                return char
+        return None
+
+    @property
+    def term(self) -> Optional[str]:
+        """Return the TERM atom char, or None."""
+        for char, role, _ in self.atoms:
+            if role == 'TERM':
+                return char
+        return None
+
+    @property
+    def mods(self) -> List[str]:
+        """Return list of MOD atom chars."""
+        return [char for char, role, _ in self.atoms if role == 'MOD']
+
+    @property
+    def gloss(self) -> str:
+        """Compact gloss: prefix:atom.atom.atom"""
+        prefix_str = f"{self.prefix}:" if self.prefix else ""
+        art_str = f"[{self.articulator}]" if self.articulator else ""
+        atom_str = '.'.join(g for _, _, g in self.atoms)
+        return f"{art_str}{prefix_str}{atom_str}"
+
+
 class Morphology:
     """
     Morphological analysis following canonical methodology.
@@ -365,6 +462,147 @@ class Morphology:
         """Extract and return (prefix, middle, suffix) tuple for compatibility."""
         result = self.extract(token)
         return result.prefix, result.middle, result.suffix
+
+    def atomize(self, token: str) -> AtomAnalysis:
+        """
+        Decompose token into PREFIX + flat atom sequence (C1394 model).
+
+        Unlike extract() which preserves the MIDDLE|SUFFIX boundary,
+        atomize() treats everything after the prefix as a single atom
+        stream with HEAD+MOD*+TERM positional roles. Use for glossing
+        and decoding; use extract() for structural constraint analysis.
+
+        The MIDDLE/SUFFIX split is a parsing convention that can draw
+        the boundary incorrectly (e.g., -edy suffix absorbing MIDDLE's
+        terminal 'e', hiding e-depth). Atomize bypasses this entirely:
+        the atoms self-organize by their positional preferences (C1209).
+
+        Algorithm:
+          1. Strip ARTICULATOR + PREFIX (reuse extract() logic)
+          2. Read remainder chars as flat atom sequence
+          3. Assign roles: HEAD/PSEUDO_HEAD, MOD, TERM, SOLE
+          4. Detect e-depth, i-depth extensions (C1197, C1225)
+          5. Classify terminal opacity (C1440)
+
+        Returns:
+            AtomAnalysis with articulator, prefix, atoms list,
+            headless flag, extension depths, and terminal opacity.
+        """
+        if not token:
+            return AtomAnalysis(None, None, [], False, 0, 0, 'NONE')
+
+        articulator = None
+        prefix = None
+
+        # Step 1: Strip prefix (same logic as extract)
+        prefix, remainder = self._find_prefix(token)
+
+        # Step 1b: If no prefix, check for articulator + prefix
+        if prefix is None:
+            for art in self.articulators:
+                if token.startswith(art) and len(token) > len(art):
+                    after_art = token[len(art):]
+                    maybe_prefix, maybe_remainder = self._find_prefix(after_art)
+                    if maybe_prefix is not None:
+                        articulator = art
+                        prefix = maybe_prefix
+                        remainder = maybe_remainder
+                        break
+
+        if prefix is None:
+            remainder = token
+
+        # Step 1c: Check for secondary prefix (ch/sh embedded after primary)
+        # Absorb into prefix string for display, but the secondary prefix
+        # chars are part of the operational channel, not the atom sequence.
+        SECONDARY_PREFIXES = ['sh', 'ch']
+        if prefix is not None:
+            for sp in SECONDARY_PREFIXES:
+                if remainder.startswith(sp) and len(remainder) > len(sp):
+                    prefix = prefix  # keep primary; secondary handled by extract()
+                    # Don't strip secondary here — it's part of the atom sequence
+                    # in the unified model. The user can check extract() for prefix2.
+                    break
+
+        if not remainder:
+            return AtomAnalysis(articulator, prefix, [], False, 0, 0, 'NONE')
+
+        # Step 2: Read each character as an atom
+        chars = list(remainder)
+        n = len(chars)
+
+        # Step 3: Assign positional roles
+        atoms = []
+        is_headless = False
+
+        if n == 1:
+            # Single atom: SOLE role (complete instruction in one atom)
+            c = chars[0]
+            g = ATOM_GLOSSES.get(c, '?')
+            atoms.append((c, 'SOLE', g))
+            is_headless = c not in HEAD_ATOMS
+        else:
+            # Multi-atom: HEAD/PSEUDO_HEAD + MOD* + TERM
+            for idx, c in enumerate(chars):
+                g = ATOM_GLOSSES.get(c, '?')
+
+                if idx == 0:
+                    # First atom: HEAD if eligible, else PSEUDO_HEAD
+                    if c in HEAD_ATOMS:
+                        atoms.append((c, 'HEAD', g))
+                    else:
+                        atoms.append((c, 'PSEUDO_HEAD', g))
+                        is_headless = True
+                elif idx == n - 1:
+                    # Last atom: TERM if eligible, else MOD
+                    if c in TERM_ATOMS:
+                        atoms.append((c, 'TERM', g))
+                    else:
+                        atoms.append((c, 'MOD', g))
+                else:
+                    # Interior: MOD
+                    atoms.append((c, 'MOD', g))
+
+        # Step 4: e-depth and i-depth (consecutive runs only, C1197)
+        e_depth = 0
+        i_depth = 0
+        # e-depth: max consecutive run of 'e'
+        run = 0
+        for c, _, _ in atoms:
+            if c == 'e':
+                run += 1
+                e_depth = max(e_depth, run)
+            else:
+                run = 0
+        # i-depth: max consecutive run of 'i'
+        run = 0
+        for c, _, _ in atoms:
+            if c == 'i':
+                run += 1
+                i_depth = max(i_depth, run)
+            else:
+                run = 0
+
+        # Step 5: Terminal opacity
+        last_char = chars[-1] if chars else None
+        if last_char in OPAQUE_TERMS:
+            opacity = 'OPAQUE'
+        elif last_char in TRANSPARENT_TERMS:
+            opacity = 'TRANSPARENT'
+        elif last_char in SEMI_TRANSPARENT_TERMS:
+            opacity = 'SEMI_TRANSPARENT'
+        else:
+            opacity = 'NONE'
+
+        return AtomAnalysis(
+            articulator=articulator,
+            prefix=prefix,
+            atoms=atoms,
+            is_headless=is_headless,
+            e_depth=e_depth,
+            i_depth=i_depth,
+            terminal_opacity=opacity,
+        )
 
 
 # ============================================================
@@ -1242,14 +1480,10 @@ class CategoryClassifier:
         'danger': 'MARKING', 'link': 'MARKING', 'adjust': 'MARKING',
     }
 
-    # Atom character → gloss (C1195 confidence tiers)
-    ATOM_GLOSSES = {
-        'k': 'heat', 'e': 'cool', 'h': 'watch', 'y': 'end',       # LOCKED
-        'i': 'iterate', 'n': 'halt', 'a': 'yield', 'm': 'final',   # LOCKED
-        'd': 'mark', 't': 'transfer',                                # SOLID
-        'c': 'adjust', 'p': 'pause', 'f': 'flag', 's': 'sequence', # PLAUSIBLE
-        'g': 'complete', 'o': 'work', 'l': 'frame', 'r': 'input',  # WEAK (o,l,r)
-    }
+    # Atom character → gloss — references module-level ATOM_GLOSSES (C1195)
+    # Updated: o='arrange' (C1388), l='state' (C1385), r='respond' (C1387),
+    # a='into' (C1477), n='bind' (C1195 LOCKED), g='?' (untiered)
+    ATOM_GLOSSES = ATOM_GLOSSES  # Module-level canonical source
 
     # Atom character → category (derived from ATOM_GLOSSES → GLOSS_TO_CATEGORY)
     ATOM_TO_CATEGORY = {

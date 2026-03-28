@@ -74,6 +74,18 @@ print(m.has_articulator)  # False (property, not method)
 m2 = morph.extract('ychody')
 print(m2.articulator, m2.prefix, m2.middle)  # 'y', 'ch', 'od'
 
+# Atom-level decomposition for glossing (C1394 HEAD+MOD*+TERM model)
+# Bypasses MIDDLE/SUFFIX boundary — reads post-prefix chars as flat atom sequence.
+# Use this for glossing/decoding. Use extract() for structural constraint analysis.
+a = morph.atomize('qokeedy')
+print(a.prefix)    # 'qo'
+print(a.atoms)     # [('k','HEAD','heat'), ('e','MOD','cool'), ('e','MOD','cool'),
+                    #  ('d','MOD','mark'), ('y','TERM','end')]
+print(a.e_depth)   # 2 (gentle/stabilized heat — balneum mariae signature)
+print(a.gloss)     # 'qo:heat.cool.cool.mark.end'
+print(a.is_headless)        # False
+print(a.terminal_opacity)   # 'OPAQUE'
+
 # Full record analysis with RI/PP/INFRA classification
 analyzer = RecordAnalyzer()
 record = analyzer.analyze_record('f1r', '1')

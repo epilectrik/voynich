@@ -14,7 +14,78 @@ This document defines the rules, architecture, and conventions for assigning int
 
 ## Architecture
 
-### Two Dictionaries
+### Atom-Level Decomposition: `atomize()` (PREFERRED for glossing)
+
+**New scripts should use `morph.atomize()` instead of dictionary-based glossing.**
+
+The atom system (C1394, C1195) decomposes every token into PREFIX + flat atom sequence, where each character maps to one of 18 glossed atoms with positional roles:
+
+```python
+morph = Morphology()
+a = morph.atomize('qokeedy')
+# a.prefix = 'qo'
+# a.atoms = [('k','HEAD','heat'), ('e','MOD','cool'), ('e','MOD','cool'),
+#            ('d','MOD','mark'), ('y','TERM','end')]
+# a.e_depth = 2 (gentle heat / balneum mariae signature)
+# a.gloss = 'qo:heat.cool.cool.mark.end'
+```
+
+**Why atomize() instead of extract() + dictionaries:**
+
+The traditional MIDDLE/SUFFIX split (via `extract()`) can draw the morphological boundary in the wrong place. The suffix `-edy` greedily absorbs the terminal `e` from compound MIDDLEs, hiding e-depth information (e.g., `kee` becomes `ke` + suffix `edy`). The `atomize()` method bypasses this boundary entirely — the atoms self-organize by their positional preferences (C1209).
+
+**When to use each:**
+
+| Method | Use for | Returns |
+|---|---|---|
+| `morph.atomize(token)` | Glossing, decoding, recipe alignment | `AtomAnalysis` — flat atom sequence with roles |
+| `morph.extract(token)` | Structural constraint analysis, backward-compatible code | `MorphAnalysis` — PREFIX + MIDDLE + SUFFIX split |
+
+**Positional roles:**
+
+| Role | Meaning | Atoms |
+|---|---|---|
+| HEAD | Domain selector (first atom, C1475) | a, e, o, k, t |
+| PSEUDO_HEAD | Headless compound (C1489) | Any non-HEAD atom in first position |
+| SOLE | Single-atom instruction (complete in one atom) | Any atom as sole remainder |
+| MOD | Modifier/parametrization (interior) | p, f, i, c, d, s (plus HEAD/TERM atoms in interior) |
+| TERM | Closure/exit state (last atom) | y, n, m, h, l, r, k, t |
+
+**Terminal opacity (C1440):**
+
+| Opacity | Terminals | Meaning |
+|---|---|---|
+| OPAQUE | y, n, m | Instruction complete — no continuation |
+| SEMI_TRANSPARENT | l, r | Optional continuation atoms |
+| TRANSPARENT | h | Instruction incomplete — continuation expected |
+
+**Extension depths (C1197, C1225):**
+- `e_depth`: consecutive e's encode stabilization intensity (1=standard, 2=deep/gentle, 3=very deep)
+- `i_depth`: consecutive i's encode iteration depth (1=open loop, 2=bounded/safe per C1482)
+
+**Headless compounds (C1488-C1498):**
+When the first post-prefix atom is NOT in HEAD_ATOMS {a,e,o,k,t}, the token is headless. The first atom gets role `PSEUDO_HEAD`. Common pseudo-head domains (C1489):
+- d → OPERATION (close/mark operations)
+- i → TRANSITION (iteration-initial)
+- l → STAGING (state/level operations)
+- c → parametric operations (C1492: c/p/f-initial = parametric, suffixed)
+- s → sequence operations
+
+Example: `dy` → PSEUDO_HEAD:d(mark) + TERM:y(end) = "close, end." Headless tokens typically appear at boundaries (paragraph-initial 2.16x, line-initial 1.8x — C1394 T8).
+
+**Caveats and known limitations:**
+
+1. **k and t are FREE atoms** (C1209) — they have no positional preference. When first, they get HEAD; when last, TERM; when interior, MOD. In a two-atom sequence like `kt`, k=HEAD and t=TERM. This is a convention, not a structural certainty — k and t are genuinely role-dual.
+
+2. **ATOM_GLOSSES confidence varies widely.** 8 atoms are LOCKED (heat, cool, watch, end, iterate, bind, into, final), 6 are SOLID (mark, transfer, state, arrange, adjust, pause), 5 are PLAUSIBLE (flag, sequence, respond, ?, diagram). Do not treat PLAUSIBLE glosses as established. See C1195 for the full tiering.
+
+3. **Secondary prefix (prefix2) not stripped.** `extract()` detects embedded ch/sh after the primary prefix (e.g., `qolchedy` has prefix=qo, prefix2=lch). `atomize()` does NOT strip prefix2 — those characters appear in the atom sequence as MOD atoms. This is intentional: in the unified atom model, the "secondary prefix" is just more instruction atoms.
+
+4. **The MIDDLE/SUFFIX boundary is real structurally** (C1394 T1: 77.1% of MIDDLEs appear with 3+ different suffixes, entropy 1.475 bits; C1440: opacity gradient). `atomize()` bypasses it for glossing but does not invalidate it. The boundary marks where combinatorial freedom shifts (C1440 terminal opacity). Use `extract()` when suffix independence or opacity classification matters for structural constraint work.
+
+5. **Atoms g, q, x are rare/untiered.** g(?) appears in line-final position on ~1 folio each. q appears in post-prefix position only in 3 hapax tokens on f75r — likely transcription edge cases. x = diagram marker (C764). These do not affect normal glossing.
+
+### Two Dictionaries (LEGACY)
 
 | Dictionary | Path | Scope | Entries |
 |---|---|---|---|
