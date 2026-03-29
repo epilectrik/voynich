@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1900 validated constraints | **Version:** 6.02 | **Date:** 2026-03-27
+**Total:** 1907 validated constraints | **Version:** 6.03 | **Date:** 2026-03-29
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6074,6 +6074,27 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Boundaries are anti-parallel (C1837): first and last body lines diverge in opposite directions from the interior (cosine = -0.99). Last lines are enriched in structural features (length, PREFIX JSD, category entropy). First lines show no distinctive enrichment pattern.
 - Grammar temperature is section-stratified (C1838): rule compliance varies significantly by section (B warmest at 2.06, H coolest at 1.81) but shows no within-section quire gradient. The grammar was calibrated per section, not incrementally refined through composition.
 - Consecutive folios show local coherence (C1839): Mantel test detects that quire-adjacent folios are more similar than random same-section pairs, but no global maturity gradient exists. This is consistent with C1399/C1400 folio independence at the program level, with new evidence of local (within-quire) substrate coherence.
+
+---
+
+### Phase 631: Dark Pipeline PREFIX Domain Locking & Identification Architecture — DOMAIN_LOCKING_CONFIRMED (C1901-C1907)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1901 | Dark MIDDLEs select into PREFIX channels in B, diverging from host folio baselines (cosine 0.53-0.59). Categorical exclusions persist cross-folio: eet 0% qo across 16 folios, ksh 0% sh/ch across 18. Per-MIDDLE channel selection, extends C1138 | 2 | B, dark pipeline, PREFIX, C1138, C1356 | cos=0.53-0.59. eet_qo=0%. ksh_sh=0%. |
+| 1902 | Dark MIDDLEs are PREFIX-affiliated in A registry (V=0.449). Same domain locking as B-side (C1901). Extends C1138 cross-system | 2 | A, dark pipeline, PREFIX, C1138 | V=0.449. n=64. |
+| 1903 | 78% of dark MIDDLEs (234/300) spawn RI instance derivatives in A, at 0.83x bridge rate. Dark pipeline is major RI derivational substrate. Three-level chain: bridge atoms -> dark compounds -> RI instances. Extends C913 | 2 | A, dark pipeline, RI, C913, C1141 | dark_ri=78%. bridge_ri=94.3%. ratio=0.83x. |
+| 1904 | Dark and bridge MIDDLEs positionally identical in A lines (cosine 0.977). A does not distinguish pipeline membership at line level. Consistent with C234 | 2 | A, dark pipeline, bridge, position, C234 | cos=0.977. |
+| 1905 | Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency (sign test p=0.009, bridge direction). Dark spreads across more channels — identification vocabulary in multiple operational contexts vs channel-specific bridge operations | 2 | B, dark pipeline, bridge, PREFIX | p=0.009. bridge_wins=47of92. dark_wins=26of92. |
+| 1906 | Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to 0.924 (B). Section hyper-modulation (C1148) operates through atom-level selection matching operational character. Extends C1148 | 2 | B, GLOBAL, dark pipeline, section, C1148 | r_B=0.924. r_S=0.719. r_H=0.649. |
+| 1907 | Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior | 2 | B, dark pipeline, HEAD, PREFIX, C1475 | k_qo=65-100%. e_cos=0.629. |
+
+**Phase 631 findings (Dark Pipeline PREFIX Domain Locking, DOMAIN_LOCKING_CONFIRMED):**
+- Dark MIDDLEs are not generic identification fillers — each carries MIDDLE-specific PREFIX domain commitment that persists across 14-18 folios in B (C1901) and operates in A's registry (C1902). This extends C1138 from population-level to per-MIDDLE resolution.
+- 78% of dark MIDDLEs serve as derivational bases for RI instance vocabulary (C1903), establishing a three-level chain: bridge atoms compose into dark compound MIDDLEs, which generate RI instance extensions. The dark pipeline is a major substrate of A's identification system.
+- Dark MIDDLEs spread across more PREFIX channels than bridge MIDDLEs (C1905), consistent with identification vocabulary deployed across multiple operational contexts rather than channel-specific operations.
+- Dark atom compositions match section operational profiles at r=0.924 for section B (C1906). The domain locking is HEAD-stratified (C1907): k-initial darks lock thermally, e-initial spread moderately, headless darks route through specification channels.
+- Interpretive (Tier 4): dark MIDDLEs function as descriptive identification labels whose atom compositions encode operational property classes of their referents. The PREFIX selects the verification/deployment channel. The specific referent is supplied by operator knowledge, not the notation (C171 semantic ceiling).
 
 ---
 

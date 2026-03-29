@@ -4,6 +4,35 @@
 
 ---
 
+## Version 6.03 (2026-03-29) - Phase 631: Dark Pipeline PREFIX Domain Locking
+
+### Summary
+
+Phase 631 investigates whether dark pipeline MIDDLEs carry token-level identity that constrains their PREFIX deployment. Starting from the observation that dark tokens on f75r appeared at recipe-contextually appropriate positions, a series of tests established that dark MIDDLEs exhibit per-MIDDLE PREFIX domain locking in both B execution and A registry contexts. Key findings: dark MIDDLEs select into specific PREFIX channels (cosine 0.53-0.59 vs host folio baseline), 78% spawn RI instance derivatives, and their atom compositions match section grammar profiles at r=0.924 for section B. The domain locking is HEAD-stratified: k-initial channels thermally, e-initial spreads, headless routes through specification channels. 7 constraints registered (C1901-C1907), all Tier 2.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DARK_PIPELINE_ID/` -- Phase 631 with 7 scripts, INDEX.md |
+| **ADDED** | C1901: Dark MIDDLEs select into PREFIX channels in B (per-MIDDLE, extends C1138) |
+| **ADDED** | C1902: Dark MIDDLEs PREFIX-affiliated in A registry (V=0.449) |
+| **ADDED** | C1903: 78% of dark MIDDLEs spawn RI instance derivatives (extends C913) |
+| **ADDED** | C1904: Dark and bridge positionally identical in A (cosine 0.977) |
+| **ADDED** | C1905: Dark LESS PREFIX-concentrated than bridge (p=0.009, bridge direction) |
+| **ADDED** | C1906: Dark atom compositions match section grammar profiles (r=0.924 for B) |
+| **ADDED** | C1907: PREFIX domain locking is HEAD-stratified (k=thermal, e=spread, headless=spec) |
+| **UPDATED** | INDEX.md -- +7 constraints (1907 total), Phase 631 section |
+
+### Key Findings
+
+1. **Per-MIDDLE PREFIX domain locking (C1901-C1902):** Each dark MIDDLE has a characteristic PREFIX profile that persists across 14-18 folios in B and is reflected in A's registry (V=0.449). Not a population-level bias — MIDDLE-specific channel commitment.
+2. **RI derivational substrate (C1903):** 234/300 dark MIDDLEs serve as bases for RI instance tokens. Three-level chain: bridge atoms → dark compounds → RI instances.
+3. **HEAD-stratified channeling (C1907):** k-initial darks lock 65-100% to thermal channel. e-initial spread across monitoring/testing channels. Headless route through specification PREFIXes.
+4. **Interpretive (Tier 4):** Dark MIDDLEs function as descriptive identification labels whose atom compositions encode operational property classes of referents. The referent identity is the operator's domain knowledge, not in the notation (C171).
+
+---
+
 ## Version 6.02 (2026-03-27) - Phase 630: Atom-Level Decode & HT Positional Grammar
 
 ### Summary

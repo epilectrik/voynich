@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1900 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1907 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1900.
+the highest ID present is C1907.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1900 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1907 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1900 validated constraints are present as canonical one-line claims with tier
+1907 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-27 21:45
-**Version:** FROZEN STATE (1900 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-29 09:09
+**Version:** FROZEN STATE (1907 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 6.02 | **Status:** FROZEN | **Constraints:** 1900 | **Date:** 2026-03-27
+**Version:** 6.03 | **Status:** FROZEN | **Constraints:** 1907 | **Date:** 2026-03-29
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -2139,6 +2139,13 @@ C1897	Suffix -edy suppresses e-depth in compound MIDDLEs: parses kee+dy as ke+ed
 C1898	HT articulators exhibit two-group positional split (refines C1417): OPENER (p,t,f,d) 66.7% line-initial, EMBEDDED (l,r) 4.3% line-initial. Chi-squared=171.4. 92% folio consistency (23/25). y-articulator splits by prefix: sh/ch-prefixed 77-87% initial, te/ta-prefixed 15-24%	2	HT, B, articulator, position, C1417
 C1899	f75r atom decode confirms Ch19 alignment with corrected e-depth (extends C1896): 8/8 structural predictions confirmed, e-depth trajectory in P9 shows kee/ke gentle/steady alternation, L41 100% gentle heat preceding material addition and quality check	3	B, f75r, PL, Ch19, C1896, C1225
 C1900	Fermentation structural fingerprint falsified: criteria (sh>20%, ch<10%, qo<15%, e>25%, k<15%) match 1/555 paragraphs. Text encodes operational behavior shifts, not process labels. Confirms C171	1	B, paragraph, fermentation, C171
+C1901	Dark MIDDLEs select into PREFIX channels in B, diverging from host folio baselines (cosine 0.53-0.59). Categorical exclusions persist cross-folio: eet 0% qo across 16 folios, ksh 0% sh/ch across 18. Per-MIDDLE channel selection, extends C1138	2	B, dark pipeline, PREFIX, C1138, C1356
+C1902	Dark MIDDLEs are PREFIX-affiliated in A registry (V=0.449). Same domain locking as B-side (C1901). Extends C1138 cross-system	2	A, dark pipeline, PREFIX, C1138
+C1903	78% of dark MIDDLEs (234/300) spawn RI instance derivatives in A, at 0.83x bridge rate. Dark pipeline is major RI derivational substrate. Three-level chain: bridge atoms -> dark compounds -> RI instances. Extends C913	2	A, dark pipeline, RI, C913, C1141
+C1904	Dark and bridge MIDDLEs positionally identical in A lines (cosine 0.977). A does not distinguish pipeline membership at line level. Consistent with C234	2	A, dark pipeline, bridge, position, C234
+C1905	Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency. Dark spreads across more channels — identification vocabulary in multiple operational contexts vs channel-specific bridge operations	2	B, dark pipeline, bridge, PREFIX
+C1906	Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to 0.924 (B). Section hyper-modulation (C1148) operates through atom-level selection matching operational character. Extends C1148	2	B, GLOBAL, dark pipeline, section, C1148
+C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior	2	B, dark pipeline, HEAD, PREFIX, C1475
 
 ---
 
@@ -2146,7 +2153,7 @@ C1900	Fermentation structural fingerprint falsified: criteria (sh>20%, ch<10%, q
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-27
+# Generated: 2026-03-29
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

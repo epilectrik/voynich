@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1900.
+the highest ID present is C1907.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2225,6 +2225,13 @@ C1897	Suffix -edy suppresses e-depth in compound MIDDLEs: parses kee+dy as ke+ed
 C1898	HT articulators exhibit two-group positional split (refines C1417): OPENER (p,t,f,d) 66.7% line-initial, EMBEDDED (l,r) 4.3% line-initial. Chi2=171.4, 92% folio consistency.	2	HT, B, articulator, position, C1417	opener=66.7%. embedded=4.3%. chi2=171.4. folios=23of25.
 C1899	f75r atom decode confirms Ch19 alignment with corrected e-depth: 8/8 predictions, kee/ke alternation in P9, L41 100% gentle heat before dar+chekar.	3	B, f75r, PL, Ch19, C1896, C1225	predictions=8of8. L41_gentle=100%.
 C1900	Fermentation structural fingerprint falsified: 1/555 paragraphs pass strict criteria. Confirms C171 semantic ceiling.	1	B, paragraph, fermentation, C171	pass=1of555.
+C1901	Dark MIDDLEs select into PREFIX channels in B, diverging from host folio baselines (cos 0.53-0.59). Categorical exclusions persist cross-folio. Per-MIDDLE channel selection.	2	B, dark pipeline, PREFIX, C1138	cos=0.53-0.59. eet_qo=0%.
+C1902	Dark MIDDLEs PREFIX-affiliated in A registry (V=0.449). Same domain locking as B-side.	2	A, dark pipeline, PREFIX, C1138	V=0.449.
+C1903	78% of dark MIDDLEs (234/300) spawn RI instance derivatives. Dark pipeline is major RI derivational substrate.	2	A, dark pipeline, RI, C913	dark_ri=78%. ratio=0.83x.
+C1904	Dark and bridge MIDDLEs positionally identical in A lines (cos 0.977). A does not distinguish pipeline membership.	2	A, dark pipeline, bridge, position	cos=0.977.
+C1905	Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency (p=0.009). Dark spreads across more channels.	2	B, dark pipeline, bridge, PREFIX	p=0.009.
+C1906	Dark atom compositions match section grammar HEAD profiles (r=0.378 to 0.924). Section hyper-modulation through atom selection.	2	B, GLOBAL, dark pipeline, section, C1148	r_B=0.924.
+C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial=65-100% qo, e-initial spread (cos 0.629), headless=specification PREFIXes.	2	B, dark pipeline, HEAD, PREFIX, C1475	k_qo=65-100%.
 
 ---
 
