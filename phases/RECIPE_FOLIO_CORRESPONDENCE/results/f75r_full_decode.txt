@@ -1,0 +1,898 @@
+f75r: 412 tokens, 46 lines
+Paragraphs: 9
+  P1: L1-L5 (46T, opens with 'kchedy')
+  P2: L6-L6 (9T, opens with 'pchey')
+  P3: L7-L12 (58T, opens with 'pchedy')
+  P4: L13-L16 (39T, opens with 'pchedy')
+  P5: L17-L22 (52T, opens with 'pchedar')
+  P6: L23-L26 (31T, opens with 'pchey')
+  P7: L27-L27 (11T, opens with 'pdalshor')
+  P8: L28-L31 (46T, opens with 'tchedy')
+  P9: L32-L46 (120T, opens with 'polshy')
+
+====================================================================================================
+FULL ATOM-LEVEL DECODE: f75r
+====================================================================================================
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 1 (L1-L5, 46T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L 1│ kchedy kary okeey qokar shy kchedy qotar shedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  kchedy            kch   +edy             → KCH: cool.seal.end
+     │  kary              ka    +ry              → HEAT-YIELD: respond.end
+     │  okeey             ok    +eey             → VESSEL: cool.cool.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  shy               sh    +y               → MONITOR: end
+     │  kchedy            kch   +edy             → KCH: cool.seal.end
+     │  qotar             qo    +t        -ar    → THERMAL: transfer-into.respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+
+  L 2│ dain shey ly ssheol qolchedy chedykar chekeedy ror
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  ly                (bare)+ly              → BARE: state.end
+     │  ssheol            (s+)sh    +eol             → [HT]MONITOR: cool.arrange.state
+     │  qolchedy          qo    +lch      -edy   → THERMAL: state.loop.watch-cool.seal.end
+     │  chedykar          ch    +edyk     -ar    → TEST: cool.seal.end.heat-into.respond
+     │  chekeedy          ch    +eke      -edy   → TEST: cool.heat.cool-cool.seal.end
+     │  ror               (bare)+r        -or    → BARE: respond-arrange.respond
+
+  L 3│ qokain chal orchey qey kain sheeky ltain olkar or
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chal              ch    +al              → TEST: into.state
+     │  orchey            or    +ey              → FLOW: cool.end
+     │  qey               (bare)+q        -ey    → BARE: thermal-activate-cool.end
+     │  kain              ka    +in              → HEAT-YIELD: iterate.bind
+     │  sheeky            sh    +eek      -y     → MONITOR: cool.cool.heat-end
+     │  ltain             (l+)ta    +in              → [HT]XFER-YIELD: iterate.bind
+     │  olkar             ol    +k        -ar    → CONTINUE: heat-into.respond
+     │  or                (bare)+or              → BARE: arrange.respond
+
+  L 4│ dackhy lkamo ykeey lshey kal dy shey or shey qokeedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dackhy            da    +ck       -hy    → SETUP: loop.heat-watch.end
+     │  lkamo             lk    +amo             → HOLD-HEAT: into.final.arrange
+     │  ykeey             yk    +eey             → YK: cool.cool.end
+     │  lshey             lsh   +ey              → HOLD-MON: cool.end
+     │  kal               ka    +l               → HEAT-YIELD: state
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  or                (bare)+or              → BARE: arrange.respond
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+
+  L 5│ shey kar chey ckhey r ain ol ol sheedy qokeey qoky
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  kar               ka    +r               → HEAT-YIELD: respond
+     │  chey              ch    +ey              → TEST: cool.end
+     │  ckhey             (bare)+ckh      -ey    → BARE: loop.heat.watch-cool.end
+     │  r                 (bare)+r               → BARE: respond
+     │  ain               (bare)+ain             → BARE: into.iterate.bind
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  sheedy            sh    +e        -edy   → MONITOR: cool-cool.seal.end
+     │  qokeey            qo    +k        -eey   → THERMAL: heat-cool.cool.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 2 (L6-L6, 9T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L 6│ pchey keeor olky dar okey qokain chcthy qokeedy qoky
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  pchey             pch   +ey              → STAGE-TEST: cool.end
+     │  keeor             ke    +e        -or    → HEAT-BURST: cool-arrange.respond
+     │  olky              ol    +k        -y     → CONTINUE: heat-end
+     │  dar               da    +r               → SETUP: respond
+     │  okey              ok    +ey              → VESSEL: cool.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chcthy            ch    +ct       -hy    → TEST: loop.transfer-watch.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 3 (L7-L12, 58T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L 7│ pchedy qokshdy ytain chedy qokar chy lol chedy qoky
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  pchedy            pch   +edy             → STAGE-TEST: cool.seal.end
+     │  qokshdy           qo    +ksh      -dy    → THERMAL: heat.stage.watch-seal.end
+     │  ytain             (y+)ta    +in              → [HT]XFER-YIELD: iterate.bind
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  chy               ch    +y               → TEST: end
+     │  lol               (bare)+l        -ol    → BARE: state-arrange.state
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+
+  L 8│ sor chey qotardy dsheckhy qokain chckhy lshedy okeedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sor               so    +r               → SCAFF-ARR: respond
+     │  chey              ch    +ey              → TEST: cool.end
+     │  qotardy           qo    +tar      -dy    → THERMAL: transfer.into.respond-seal.end
+     │  dsheckhy          (d+)sh    +eck      -hy    → [HT]MONITOR: cool.loop.heat-watch.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chckhy            ch    +ck       -hy    → TEST: loop.heat-watch.end
+     │  lshedy            lsh   +edy             → HOLD-MON: cool.seal.end
+     │  okeedy            ok    +e        -edy   → VESSEL: cool-cool.seal.end
+
+  L 9│ qokchdy chcthy lo qokedy qokan checkhy qokar olchedy sal
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokchdy           qo    +kch      -dy    → THERMAL: heat.loop.watch-seal.end
+     │  chcthy            ch    +ct       -hy    → TEST: loop.transfer-watch.end
+     │  lo                (bare)+lo              → BARE: state.arrange
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokan             qo    +k        -an    → THERMAL: heat-into.bind
+     │  checkhy           ch    +eck      -hy    → TEST: cool.loop.heat-watch.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  olchedy           ol    +edy             → CONTINUE: cool.seal.end
+     │  sal               sa    +l               → SCAFFOLD: state
+
+  L10│ dshor qotar chdy shey qokain chckhy dy otey tedy lchedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dshor             (d+)sh    +or              → [HT]MONITOR: arrange.respond
+     │  qotar             qo    +t        -ar    → THERMAL: transfer-into.respond
+     │  chdy              ch    +dy              → TEST: seal.end
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chckhy            ch    +ck       -hy    → TEST: loop.heat-watch.end
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  otey              ot    +ey              → OPS-CHK: cool.end
+     │  tedy              te    +dy              → XFER-COOL: seal.end
+     │  lchedy            lch   +edy             → HOLD-TEST: cool.seal.end
+
+  L11│ qokeedy qokain oly qokeedy dy qokal okar shedy dor chekam
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  oly               ol    +y               → CONTINUE: end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  qokal             qo    +k        -al    → THERMAL: heat-into.state
+     │  okar              ok    +ar              → VESSEL: into.respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  dor               do    +r               → DO: respond
+     │  chekam            ch    +ek       -am    → TEST: cool.heat-into.final
+
+  L12│ ssheckhy qokal oly shey r ol cheey shey dy ol shedy qoky
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  ssheckhy          (s+)sh    +eck      -hy    → [HT]MONITOR: cool.loop.heat-watch.end
+     │  qokal             qo    +k        -al    → THERMAL: heat-into.state
+     │  oly               ol    +y               → CONTINUE: end
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  r                 (bare)+r               → BARE: respond
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  cheey             ch    +eey             → TEST: cool.cool.end
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 4 (L13-L16, 39T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L13│ pchedy keedy qokedy qokedy qokedy qokedy qokain olshedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  pchedy            pch   +edy             → STAGE-TEST: cool.seal.end
+     │  keedy             ke    +edy             → HEAT-BURST: cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  olshedy           ol    +edy             → CONTINUE: cool.seal.end
+
+  L14│ sain ol keeshy qokain dy olshedy qokain chckhy qokain otar aly
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sain              sa    +in              → SCAFFOLD: iterate.bind
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  keeshy            ke    +es       -hy    → HEAT-BURST: cool.stage-watch.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  olshedy           ol    +edy             → CONTINUE: cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chckhy            ch    +ck       -hy    → TEST: loop.heat-watch.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  aly               al    +y               → AL: end
+
+  L15│ sain qokain qol keeoly saiin chedy sol or shedy okchdy qoky
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sain              sa    +in              → SCAFFOLD: iterate.bind
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  qol               qo    +l               → THERMAL: state
+     │  keeoly            ke    +eo       -ly    → HEAT-BURST: cool.arrange-state.end
+     │  saiin             sa    +iin             → SCAFFOLD: iterate.iterate.bind
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  sol               so    +l               → SCAFF-ARR: state
+     │  or                (bare)+or              → BARE: arrange.respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  okchdy            ok    +dy              → VESSEL: seal.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+
+  L16│ dshedy qokar sheedy lch shokain chy otshedy qokain chedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dshedy            (d+)sh    +edy             → [HT]MONITOR: cool.seal.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  sheedy            sh    +e        -edy   → MONITOR: cool-cool.seal.end
+     │  lch               (bare)+lch             → BARE: state.loop.watch
+     │  shokain           sh    +ok       -ain   → MONITOR: arrange.heat-into.iterate.bind
+     │  chy               ch    +y               → TEST: end
+     │  otshedy           ot    +edy             → OPS-CHK: cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 5 (L17-L22, 52T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L17│ pchedar shepchy lshedary dal shal shy kol shedy qokam
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  pchedar           pch   +ed       -ar    → STAGE-TEST: cool.seal-into.respond
+     │  shepchy           sh    +epc      -hy    → MONITOR: cool.pause.loop-watch.end
+     │  lshedary          lsh   +eda      -ry    → HOLD-MON: cool.seal.into-respond.end
+     │  dal               da    +l               → SETUP: state
+     │  shal              sh    +al              → MONITOR: into.state
+     │  shy               sh    +y               → MONITOR: end
+     │  kol               ko    +l               → HEAT-WORK: state
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qokam             qo    +k        -am    → THERMAL: heat-into.final
+
+  L18│ sol sheedy qol shedy qol otain char sar oly
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sol               so    +l               → SCAFF-ARR: state
+     │  sheedy            sh    +e        -edy   → MONITOR: cool-cool.seal.end
+     │  qol               qo    +l               → THERMAL: state
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qol               qo    +l               → THERMAL: state
+     │  otain             ot    +ain             → OPS-CHK: into.iterate.bind
+     │  char              ch    +ar              → TEST: into.respond
+     │  sar               sa    +r               → SCAFFOLD: respond
+     │  oly               ol    +y               → CONTINUE: end
+
+  L19│ qokshedy qol shey qoky shey ithey qokain ar
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokshedy          qo    +ksh      -edy   → THERMAL: heat.stage.watch-cool.seal.end
+     │  qol               qo    +l               → THERMAL: state
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  ithey             (bare)+ith      -ey    → BARE: iterate.transfer.watch-cool.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  ar                (bare)+ar              → BARE: into.respond
+
+  L20│ ry shey qor chey lchey lo ydain shey qokain
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  ry                (bare)+ry              → BARE: respond.end
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  qor               qo    +r               → THERMAL: respond
+     │  chey              ch    +ey              → TEST: cool.end
+     │  lchey             lch   +ey              → HOLD-TEST: cool.end
+     │  lo                (bare)+lo              → BARE: state.arrange
+     │  ydain             (y+)da    +in              → [HT]SETUP: iterate.bind
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+
+  L21│ oqekain chey qckhsy or ysheor ol lor am
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  oqekain           (bare)+oqek     -ain   → BARE: arrange.thermal-activate.cool.heat-into.iterate.bind
+     │  chey              ch    +ey              → TEST: cool.end
+     │  qckhsy            (bare)+qckhs    -y     → BARE: thermal-activate.loop.heat.watch.stage-end
+     │  or                (bare)+or              → BARE: arrange.respond
+     │  ysheor            (y+)sh    +e        -or    → [HT]MONITOR: cool-arrange.respond
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  lor               (bare)+l        -or    → BARE: state-arrange.respond
+     │  am                (bare)+am              → BARE: into.final
+
+  L22│ odar shey qokain chedy or shey kar chedy sar
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  odar              (bare)+od       -ar    → BARE: arrange.seal-into.respond
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  or                (bare)+or              → BARE: arrange.respond
+     │  shey              sh    +ey              → MONITOR: cool.end
+     │  kar               ka    +r               → HEAT-YIELD: respond
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  sar               sa    +r               → SCAFFOLD: respond
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 6 (L23-L26, 31T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L23│ pchey kshey qokeey qokal sshey qol chedy qokam
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  pchey             pch   +ey              → STAGE-TEST: cool.end
+     │  kshey             (k+)sh    +ey              → [HT]MONITOR: cool.end
+     │  qokeey            qo    +k        -eey   → THERMAL: heat-cool.cool.end
+     │  qokal             qo    +k        -al    → THERMAL: heat-into.state
+     │  sshey             (s+)sh    +ey              → [HT]MONITOR: cool.end
+     │  qol               qo    +l               → THERMAL: state
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  qokam             qo    +k        -am    → THERMAL: heat-into.final
+
+  L24│ qokain olkeey qolkary sain checthy lor ol
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  olkeey            ol    +k        -eey   → CONTINUE: heat-cool.cool.end
+     │  qolkary           qo    +lka      -ry    → THERMAL: state.heat.into-respond.end
+     │  sain              sa    +in              → SCAFFOLD: iterate.bind
+     │  checthy           ch    +ect      -hy    → TEST: cool.loop.transfer-watch.end
+     │  lor               (bare)+l        -or    → BARE: state-arrange.respond
+     │  ol                (bare)+ol              → BARE: arrange.state
+
+  L25│ saiin shckhy qokeedy shy dy qokeedy lchedy ram
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  saiin             sa    +iin             → SCAFFOLD: iterate.iterate.bind
+     │  shckhy            sh    +ck       -hy    → MONITOR: loop.heat-watch.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  shy               sh    +y               → MONITOR: end
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  lchedy            lch   +edy             → HOLD-TEST: cool.seal.end
+     │  ram               (bare)+r        -am    → BARE: respond-into.final
+
+  L26│ dain ol sheol dain ol qoly dar ady
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  sheol             sh    +eol             → MONITOR: cool.arrange.state
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  qoly              qo    +ly              → THERMAL: state.end
+     │  dar               da    +r               → SETUP: respond
+     │  ady               (bare)+a        -dy    → BARE: into-seal.end
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 7 (L27-L27, 11T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L27│ pdalshor shtol qoty pshar shedy okaldy dar otar otedy dy rol
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  pdalshor          (p+)da    +lsh      -or    → [HT]SETUP: state.stage.watch-arrange.respond
+     │  shtol             sh    +t        -ol    → MONITOR: transfer-arrange.state
+     │  qoty              qo    +t        -y     → THERMAL: transfer-end
+     │  pshar             (p+)sh    +ar              → [HT]MONITOR: into.respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  okaldy            ok    +al       -dy    → VESSEL: into.state-seal.end
+     │  dar               da    +r               → SETUP: respond
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  otedy             ot    +edy             → OPS-CHK: cool.seal.end
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  rol               (bare)+r        -ol    → BARE: respond-arrange.state
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 8 (L28-L31, 46T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L28│ tchedy pchedy qokeey sol ol dair shecthy qol l sheedy qokeedy lol chedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  tchedy            tch   +edy             → XFER-TEST: cool.seal.end
+     │  pchedy            pch   +edy             → STAGE-TEST: cool.seal.end
+     │  qokeey            qo    +k        -eey   → THERMAL: heat-cool.cool.end
+     │  sol               so    +l               → SCAFF-ARR: state
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  dair              da    +i        -r     → SETUP: iterate-respond
+     │  shecthy           sh    +ect      -hy    → MONITOR: cool.loop.transfer-watch.end
+     │  qol               qo    +l               → THERMAL: state
+     │  l                 (bare)+l               → BARE: state
+     │  sheedy            sh    +e        -edy   → MONITOR: cool-cool.seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  lol               (bare)+l        -ol    → BARE: state-arrange.state
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+
+  L29│ dain chkal dy lolkaiin ol okeedy qol dain olchey qokeedy chedy qotan
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  chkal             ch    +k        -al    → TEST: heat-into.state
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  lolkaiin          (l+)ol    +k        -aiin  → [HT]CONTINUE: heat-into.iterate.iterate.bind
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  okeedy            ok    +e        -edy   → VESSEL: cool-cool.seal.end
+     │  qol               qo    +l               → THERMAL: state
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  olchey            ol    +ey              → CONTINUE: cool.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  qotan             qo    +t        -an    → THERMAL: transfer-into.bind
+
+  L30│ qodaiin cheeky qokey qokain cheky qokal dain chedy okalol shedy okar olom
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qodaiin           qo    +d        -aiin  → THERMAL: seal-into.iterate.iterate.bind
+     │  cheeky            ch    +eek      -y     → TEST: cool.cool.heat-end
+     │  qokey             qo    +k        -ey    → THERMAL: heat-cool.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  cheky             ch    +ek       -y     → TEST: cool.heat-end
+     │  qokal             qo    +k        -al    → THERMAL: heat-into.state
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  okalol            ok    +al       -ol    → VESSEL: into.state-arrange.state
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  okar              ok    +ar              → VESSEL: into.respond
+     │  olom              ol    +om              → CONTINUE: arrange.final
+
+  L31│ dshedy qokey chckhy qokar shedy chey qoked qokedy daldy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dshedy            (d+)sh    +edy             → [HT]MONITOR: cool.seal.end
+     │  qokey             qo    +k        -ey    → THERMAL: heat-cool.end
+     │  chckhy            ch    +ck       -hy    → TEST: loop.heat-watch.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  chey              ch    +ey              → TEST: cool.end
+     │  qoked             qo    +ked             → THERMAL: heat.cool.seal
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  daldy             da    +l        -dy    → SETUP: state-seal.end
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  ┌─ PARAGRAPH 9 (L32-L46, 120T)
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  L32│ polshy dal shedy qokain das chsdy shedy qokar shedy ldy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  polshy            po    +ls       -hy    → PRE-WORK: state.stage-watch.end
+     │  dal               da    +l               → SETUP: state
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  das               da    +s               → SETUP: stage
+     │  chsdy             ch    +s        -dy    → TEST: stage-seal.end
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  ldy               (bare)+l        -dy    → BARE: state-seal.end
+
+  L33│ qokeey lshedy qol chedy qokain chcthedy ltedy darom
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokeey            qo    +k        -eey   → THERMAL: heat-cool.cool.end
+     │  lshedy            lsh   +edy             → HOLD-MON: cool.seal.end
+     │  qol               qo    +l               → THERMAL: state
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chcthedy          ch    +cth      -edy   → TEST: loop.transfer.watch-cool.seal.end
+     │  ltedy             (l+)te    +dy              → [HT]XFER-COOL: seal.end
+     │  darom             da    +r        -om    → SETUP: respond-arrange.final
+
+  L34│ solkedy okal dar oty otar otar ol kain olkedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  solkedy           so    +lk       -edy   → SCAFF-ARR: state.heat-cool.seal.end
+     │  okal              ok    +al              → VESSEL: into.state
+     │  dar               da    +r               → SETUP: respond
+     │  oty               ot    +y               → OPS-CHK: end
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  kain              ka    +in              → HEAT-YIELD: iterate.bind
+     │  olkedy            ol    +k        -edy   → CONTINUE: heat-cool.seal.end
+
+  L35│ qokain sheety qokain dar dar shedy qokar ol dy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  sheety            sh    +eet      -y     → MONITOR: cool.cool.transfer-end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  dar               da    +r               → SETUP: respond
+     │  dar               da    +r               → SETUP: respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qokar             qo    +k        -ar    → THERMAL: heat-into.respond
+     │  ol                (bare)+ol              → BARE: arrange.state
+     │  dy                (bare)+dy              → BARE: seal.end
+
+  L36│ sol keedy qokeedy qokey okar otar dar dar dy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sol               so    +l               → SCAFF-ARR: state
+     │  keedy             ke    +edy             → HEAT-BURST: cool.seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  qokey             qo    +k        -ey    → THERMAL: heat-cool.end
+     │  okar              ok    +ar              → VESSEL: into.respond
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  dar               da    +r               → SETUP: respond
+     │  dar               da    +r               → SETUP: respond
+     │  dy                (bare)+dy              → BARE: seal.end
+
+  L37│ qokedy dy sheety qokedy qokchdy qokechdy lol
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  dy                (bare)+dy              → BARE: seal.end
+     │  sheety            sh    +eet      -y     → MONITOR: cool.cool.transfer-end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokchdy           qo    +kch      -dy    → THERMAL: heat.loop.watch-seal.end
+     │  qokechdy          qo    +kech     -dy    → THERMAL: heat.cool.loop.watch-seal.end
+     │  lol               (bare)+l        -ol    → BARE: state-arrange.state
+
+  L38│ qokeedy qokeedy qokedy qokedy qokeedy ldy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  ldy               (bare)+l        -dy    → BARE: state-seal.end
+
+  L39│ yshedy qokeedy qokchdy olkeedy otey koldy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  yshedy            (y+)sh    +edy             → [HT]MONITOR: cool.seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  qokchdy           qo    +kch      -dy    → THERMAL: heat.loop.watch-seal.end
+     │  olkeedy           ol    +ke       -edy   → CONTINUE: heat.cool-cool.seal.end
+     │  otey              ot    +ey              → OPS-CHK: cool.end
+     │  koldy             ko    +l        -dy    → HEAT-WORK: state-seal.end
+
+  L40│ dar shedy qokain shedy dal keedy rshedy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dar               da    +r               → SETUP: respond
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  dal               da    +l               → SETUP: state
+     │  keedy             ke    +edy             → HEAT-BURST: cool.seal.end
+     │  rshedy            (r+)sh    +edy             → [HT]MONITOR: cool.seal.end
+
+  L41│ sokeedy qokeedy oteedy qoky dykeedy sy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sokeedy           so    +ke       -edy   → SCAFF-ARR: heat.cool-cool.seal.end
+     │  qokeedy           qo    +ke       -edy   → THERMAL: heat.cool-cool.seal.end
+     │  oteedy            ot    +e        -edy   → OPS-CHK: cool-cool.seal.end
+     │  qoky              qo    +k        -y     → THERMAL: heat-end
+     │  dykeedy           (d+)yk    +e        -edy   → [HT]YK: cool-cool.seal.end
+     │  sy                (bare)+s        -y     → BARE: stage-end
+
+  L42│ dshedy qokedy c qoteey qoteedy dar
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dshedy            (d+)sh    +edy             → [HT]MONITOR: cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  c                 (bare)+c               → BARE: loop
+     │  qoteey            qo    +t        -eey   → THERMAL: transfer-cool.cool.end
+     │  qoteedy           qo    +te       -edy   → THERMAL: transfer.cool-cool.seal.end
+     │  dar               da    +r               → SETUP: respond
+
+  L43│ yshedy chekar oldy qokain chkar otar oldy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  yshedy            (y+)sh    +edy             → [HT]MONITOR: cool.seal.end
+     │  chekar            ch    +ek       -ar    → TEST: cool.heat-into.respond
+     │  oldy              ol    +dy              → CONTINUE: seal.end
+     │  qokain            qo    +k        -ain   → THERMAL: heat-into.iterate.bind
+     │  chkar             ch    +k        -ar    → TEST: heat-into.respond
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  oldy              ol    +dy              → CONTINUE: seal.end
+
+  L44│ dchedy sain okedy qokedy otedy okoldy otar otam olaiin chdar dy
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  dchedy            dch   +edy             → MARK-TEST: cool.seal.end
+     │  sain              sa    +in              → SCAFFOLD: iterate.bind
+     │  okedy             ok    +edy             → VESSEL: cool.seal.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  otedy             ot    +edy             → OPS-CHK: cool.seal.end
+     │  okoldy            ok    +ol       -dy    → VESSEL: arrange.state-seal.end
+     │  otar              ot    +ar              → OPS-CHK: into.respond
+     │  otam              ot    +am              → OPS-CHK: into.final
+     │  olaiin            ol    +aiin            → CONTINUE: into.iterate.iterate.bind
+     │  chdar             ch    +d        -ar    → TEST: seal-into.respond
+     │  dy                (bare)+dy              → BARE: seal.end
+
+  L45│ sshedy shckhy qokey okedy sorol oty otedy qotedy otedy okaiin
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  sshedy            (s+)sh    +edy             → [HT]MONITOR: cool.seal.end
+     │  shckhy            sh    +ck       -hy    → MONITOR: loop.heat-watch.end
+     │  qokey             qo    +k        -ey    → THERMAL: heat-cool.end
+     │  okedy             ok    +edy             → VESSEL: cool.seal.end
+     │  sorol             so    +r        -ol    → SCAFF-ARR: respond-arrange.state
+     │  oty               ot    +y               → OPS-CHK: end
+     │  otedy             ot    +edy             → OPS-CHK: cool.seal.end
+     │  qotedy            qo    +t        -edy   → THERMAL: transfer-cool.seal.end
+     │  otedy             ot    +edy             → OPS-CHK: cool.seal.end
+     │  okaiin            ok    +aiin            → VESSEL: into.iterate.iterate.bind
+
+  L46│ qokey qokedy sheol qokedy dain shedy otol chedy olor
+     │ ──────────────────────────────────────────────────────────────────────────────────────────
+     │  qokey             qo    +k        -ey    → THERMAL: heat-cool.end
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  sheol             sh    +eol             → MONITOR: cool.arrange.state
+     │  qokedy            qo    +k        -edy   → THERMAL: heat-cool.seal.end
+     │  dain              da    +in              → SETUP: iterate.bind
+     │  shedy             sh    +edy             → MONITOR: cool.seal.end
+     │  otol              ot    +ol              → OPS-CHK: arrange.state
+     │  chedy             ch    +edy             → TEST: cool.seal.end
+     │  olor              ol    +or              → CONTINUE: arrange.respond
+
+====================================================================================================
+PARAGRAPH OPERATIONAL PROFILES
+====================================================================================================
+
+  P1 (L1-L5, 46T)
+    PREFIX: sh:9, qo:7, ka:4, ch:4, kch:2, da:2
+    HEAD:   e:17, k:6, o:4, ~i:3, a:3
+    Thermal PFX: 7/46 (15%)  Monitor PFX: 13/46 (28%)
+    k-HEAD: 6/46 (13%)  e-HEAD: 17/46 (37%)
+    MARKERS: qokeedy×1, ol×2, dain×1
+
+  P2 (L6-L6, 9T)
+    PREFIX: qo:3, pch:1, ke:1, ol:1, da:1, ok:1
+    HEAD:   k:4, e:3, ~c:1
+    Thermal PFX: 4/9 (44%)  Monitor PFX: 1/9 (11%)
+    k-HEAD: 4/9 (44%)  e-HEAD: 3/9 (33%)
+    MARKERS: dar×1, qokeedy×1
+
+  P3 (L7-L12, 58T)
+    PREFIX: qo:17, ch:11, sh:8, ol:3, ok:2, pch:1
+    HEAD:   e:19, k:15, ~d:5, ~c:3, o:3
+    Thermal PFX: 17/58 (29%)  Monitor PFX: 19/58 (33%)
+    k-HEAD: 15/58 (26%)  e-HEAD: 19/58 (33%)
+    MARKERS: qokedy×1, qokeedy×2, ol×2
+
+  P4 (L13-L16, 39T)
+    PREFIX: qo:13, ch:4, sh:4, ke:3, sa:3, ol:2
+    HEAD:   e:12, k:12, ~i:3, o:3, ~d:2
+    Thermal PFX: 16/39 (41%)  Monitor PFX: 8/39 (21%)
+    k-HEAD: 12/39 (31%)  e-HEAD: 12/39 (31%)
+    MARKERS: qokedy×4, ol×1
+
+  P5 (L17-L22, 52T)
+    PREFIX: sh:13, qo:10, ch:5, da:2, sa:2, pch:1
+    HEAD:   e:18, k:6, a:5, o:5, ~i:2
+    Thermal PFX: 11/52 (21%)  Monitor PFX: 18/52 (35%)
+    k-HEAD: 6/52 (12%)  e-HEAD: 18/52 (35%)
+    MARKERS: ol×1
+
+  P6 (L23-L26, 31T)
+    PREFIX: qo:9, sh:5, da:3, ch:2, sa:2, pch:1
+    HEAD:   e:7, k:7, ~i:4, o:3, ~l:2
+    Thermal PFX: 9/31 (29%)  Monitor PFX: 7/31 (23%)
+    k-HEAD: 7/31 (23%)  e-HEAD: 7/31 (23%)
+    MARKERS: dar×1, qokeedy×2, ol×3, dain×2
+
+  P7 (L27-L27, 11T)
+    PREFIX: sh:3, da:2, ot:2, qo:1, ok:1
+    HEAD:   a:3, t:2, e:2, ~l:1, ~d:1
+    Thermal PFX: 1/11 (9%)  Monitor PFX: 3/11 (27%)
+    k-HEAD: 0/11 (0%)  e-HEAD: 2/11 (18%)
+    MARKERS: dar×1
+
+  P8 (L28-L31, 46T)
+    PREFIX: qo:14, ch:8, da:5, sh:5, ol:3, ok:3
+    HEAD:   e:15, k:12, ~i:4, o:3, ~d:2
+    Thermal PFX: 14/46 (30%)  Monitor PFX: 13/46 (28%)
+    k-HEAD: 12/46 (26%)  e-HEAD: 15/46 (33%)
+    MARKERS: qokedy×1, qokeedy×2, ol×2, dain×3
+
+  P9 (L32-L46, 120T)
+    PREFIX: qo:34, sh:16, ot:14, da:12, ch:7, ok:6
+    HEAD:   k:34, e:30, a:10, ~d:8, o:5
+    Thermal PFX: 37/120 (31%)  Monitor PFX: 23/120 (19%)
+    k-HEAD: 34/120 (28%)  e-HEAD: 30/120 (25%)
+    MARKERS: dar×7, chekar×1, qokedy×8, qokeedy×6, ol×2, dain×1
+
+====================================================================================================
+RECIPE ALIGNMENT: Ch19 (Aqua Vitae Composite)
+====================================================================================================
+
+Ch19 Recipe Steps:
+  1. Take aqua vitae, separate moisture through distillation
+  2. Substance is gold-like (vegetable brazilwood)
+  3. Add 1/3 pure honey with wax
+  4. Ferment in balneum mariae (water bath)
+  5. Repeat distillation + fermentation 9x
+     (return pure substance each 2nd distillation)
+
+Key predictions from recipe:
+  - Heavy THERMAL (qo, k-HEAD) for distillation steps
+  - dar tokens where material is added (honey + wax)
+  - double-dar on L35-36 = two materials (honey AND wax)
+  - qokedy x4 run = unique iteration marker (9x loop)
+  - chekar on balneum folios (quality check on water bath)
+  - monitoring (ch/sh) for fermentation observation
+  - e-depth variation: kee (gentle balneum) vs ke (sharper distillation)
+
+====================================================================================================
+PATTERN ANALYSIS: Surprises & Confirmations
+====================================================================================================
+
+  ── dar (material addition) distribution ──
+    L 6 (P2): dar×1  pchey keeor olky dar okey qokain chcthy qokeedy qoky
+    L26 (P6): dar×1  dain ol sheol dain ol qoly dar ady
+    L27 (P7): dar×1  pdalshor shtol qoty pshar shedy okaldy dar otar otedy dy rol
+    L34 (P9): dar×1  solkedy okal dar oty otar otar ol kain olkedy
+    L35 (P9): dar×2  qokain sheety qokain dar dar shedy qokar ol dy *** DOUBLE DAR ***
+    L36 (P9): dar×2  sol keedy qokeedy qokey okar otar dar dar dy *** DOUBLE DAR ***
+    L40 (P9): dar×1  dar shedy qokain shedy dal keedy rshedy
+    L42 (P9): dar×1  dshedy qokedy c qoteey qoteedy dar
+
+  ── e-depth thermal profile (heat intensity) ──
+    k=full heat(e0), ke=steady(e1), kee=gentle(e2), keee=very gentle(e3)
+    L 4 (P1): qokeedy          mid=ke       e-depth=steady(e1)
+    L 6 (P2): qokeedy          mid=ke       e-depth=steady(e1)
+    L11 (P3): qokeedy          mid=ke       e-depth=steady(e1)
+    L11 (P3): qokeedy          mid=ke       e-depth=steady(e1)
+    L25 (P6): qokeedy          mid=ke       e-depth=steady(e1)
+    L25 (P6): qokeedy          mid=ke       e-depth=steady(e1)
+    L28 (P8): qokeedy          mid=ke       e-depth=steady(e1)
+    L29 (P8): qokeedy          mid=ke       e-depth=steady(e1)
+    L31 (P8): qoked            mid=ked      e-depth=steady(e1)
+    L36 (P9): qokeedy          mid=ke       e-depth=steady(e1)
+    L37 (P9): qokechdy         mid=kech     e-depth=steady(e1)
+    L38 (P9): qokeedy          mid=ke       e-depth=steady(e1)
+    L38 (P9): qokeedy          mid=ke       e-depth=steady(e1)
+    L38 (P9): qokeedy          mid=ke       e-depth=steady(e1)
+    L39 (P9): qokeedy          mid=ke       e-depth=steady(e1)
+    L39 (P9): olkeedy          mid=ke       e-depth=steady(e1)
+    L41 (P9): sokeedy          mid=ke       e-depth=steady(e1)
+    L41 (P9): qokeedy          mid=ke       e-depth=steady(e1)
+
+  ── Heat cycle tokens (qokedy/qokeedy) ──
+    L 1 (P1): qokar  full line: kchedy kary okeey qokar shy kchedy qotar shedy
+    L 3 (P1): qokain  full line: qokain chal orchey qey kain sheeky ltain olkar or
+    L 4 (P1): qokeedy  full line: dackhy lkamo ykeey lshey kal dy shey or shey qokeedy
+    L 5 (P1): qokeey, qoky  full line: shey kar chey ckhey r ain ol ol sheedy qokeey qoky
+    L 6 (P2): qokain, qokeedy, qoky  full line: pchey keeor olky dar okey qokain chcthy qokeedy qoky
+    L 7 (P3): qokshdy, qokar, qoky  full line: pchedy qokshdy ytain chedy qokar chy lol chedy qoky
+    L 8 (P3): qokain  full line: sor chey qotardy dsheckhy qokain chckhy lshedy okeedy
+    L 9 (P3): qokchdy, qokedy, qokan, qokar  full line: qokchdy chcthy lo qokedy qokan checkhy qokar olchedy sal
+    L10 (P3): qokain  full line: dshor qotar chdy shey qokain chckhy dy otey tedy lchedy
+    L11 (P3): qokeedy, qokain, qokeedy, qokal  full line: qokeedy qokain oly qokeedy dy qokal okar shedy dor chekam
+    L12 (P3): qokal, qoky  full line: ssheckhy qokal oly shey r ol cheey shey dy ol shedy qoky
+    L13 (P4): qokedy, qokedy, qokedy, qokedy, qokain  full line: pchedy keedy qokedy qokedy qokedy qokedy qokain olshedy
+    L14 (P4): qokain, qokain, qokain  full line: sain ol keeshy qokain dy olshedy qokain chckhy qokain otar aly
+    L15 (P4): qokain, qoky  full line: sain qokain qol keeoly saiin chedy sol or shedy okchdy qoky
+    L16 (P4): qokar, qokain  full line: dshedy qokar sheedy lch shokain chy otshedy qokain chedy
+    L17 (P5): qokam  full line: pchedar shepchy lshedary dal shal shy kol shedy qokam
+    L19 (P5): qokshedy, qoky, qokain  full line: qokshedy qol shey qoky shey ithey qokain ar
+    L20 (P5): qokain  full line: ry shey qor chey lchey lo ydain shey qokain
+    L22 (P5): qokain  full line: odar shey qokain chedy or shey kar chedy sar
+    L23 (P6): qokeey, qokal, qokam  full line: pchey kshey qokeey qokal sshey qol chedy qokam
+    L24 (P6): qokain  full line: qokain olkeey qolkary sain checthy lor ol
+    L25 (P6): qokeedy, qokeedy  full line: saiin shckhy qokeedy shy dy qokeedy lchedy ram
+    L28 (P8): qokeey, qokeedy  full line: tchedy pchedy qokeey sol ol dair shecthy qol l sheedy qokeedy lol chedy
+    L29 (P8): qokeedy  full line: dain chkal dy lolkaiin ol okeedy qol dain olchey qokeedy chedy qotan
+    L30 (P8): qokey, qokain, qokal  full line: qodaiin cheeky qokey qokain cheky qokal dain chedy okalol shedy okar olom
+    L31 (P8): qokey, qokar, qoked, qokedy  full line: dshedy qokey chckhy qokar shedy chey qoked qokedy daldy
+    L32 (P9): qokain, qokar  full line: polshy dal shedy qokain das chsdy shedy qokar shedy ldy
+    L33 (P9): qokeey, qokain  full line: qokeey lshedy qol chedy qokain chcthedy ltedy darom
+    L35 (P9): qokain, qokain, qokar  full line: qokain sheety qokain dar dar shedy qokar ol dy
+    L36 (P9): qokeedy, qokey  full line: sol keedy qokeedy qokey okar otar dar dar dy
+    L37 (P9): qokedy, qokedy, qokchdy, qokechdy  full line: qokedy dy sheety qokedy qokchdy qokechdy lol
+    L38 (P9): qokeedy, qokeedy, qokedy, qokedy, qokeedy  full line: qokeedy qokeedy qokedy qokedy qokeedy ldy
+    L39 (P9): qokeedy, qokchdy  full line: yshedy qokeedy qokchdy olkeedy otey koldy
+    L40 (P9): qokain  full line: dar shedy qokain shedy dal keedy rshedy
+    L41 (P9): qokeedy, qoky  full line: sokeedy qokeedy oteedy qoky dykeedy sy
+    L42 (P9): qokedy  full line: dshedy qokedy c qoteey qoteedy dar
+    L43 (P9): qokain  full line: yshedy chekar oldy qokain chkar otar oldy
+    L44 (P9): qokedy  full line: dchedy sain okedy qokedy otedy okoldy otar otam olaiin chdar dy
+    L45 (P9): qokey  full line: sshedy shckhy qokey okedy sorol oty otedy qotedy otedy okaiin
+    L46 (P9): qokey, qokedy, qokedy  full line: qokey qokedy sheol qokedy dain shedy otol chedy olor
+
+  ── chekar (balneum quality check) ──
+    L 2 (P1): chekeedy         [e=cool k=heat e=cool]  context: dain shey ly ssheol qolchedy chedykar chekeedy ror
+    L11 (P3): chekam           [e=cool k=heat]  context: qokeedy qokain oly qokeedy dy qokal okar shedy dor chekam
+    L30 (P8): cheeky           [e=cool e=cool k=heat]  context: qodaiin cheeky qokey qokain cheky qokal dain chedy okalol shedy okar olom
+    L30 (P8): cheky            [e=cool k=heat]  context: qodaiin cheeky qokey qokain cheky qokal dain chedy okalol shedy okar olom
+    L43 (P9): chekar           [e=cool k=heat]  context: yshedy chekar oldy qokain chkar otar oldy
+
+  ── Iteration/cycling markers (dain, ol) ──
+    L 2 (P1): dain×1  dain shey ly ssheol qolchedy chedykar chekeedy ror
+    L 5 (P1): ol×2  shey kar chey ckhey r ain ol ol sheedy qokeey qoky
+    L12 (P3): ol×2  ssheckhy qokal oly shey r ol cheey shey dy ol shedy qoky
+    L14 (P4): ol×1  sain ol keeshy qokain dy olshedy qokain chckhy qokain otar aly
+    L21 (P5): ol×1  oqekain chey qckhsy or ysheor ol lor am
+    L24 (P6): ol×1  qokain olkeey qolkary sain checthy lor ol
+    L26 (P6): dain×2, ol×2  dain ol sheol dain ol qoly dar ady
+    L28 (P8): ol×1  tchedy pchedy qokeey sol ol dair shecthy qol l sheedy qokeedy lol chedy
+    L29 (P8): dain×2, ol×1  dain chkal dy lolkaiin ol okeedy qol dain olchey qokeedy chedy qotan
+    L30 (P8): dain×1  qodaiin cheeky qokey qokain cheky qokal dain chedy okalol shedy okar olom
+    L34 (P9): ol×1  solkedy okal dar oty otar otar ol kain olkedy
+    L35 (P9): ol×1  qokain sheety qokain dar dar shedy qokar ol dy
+    L46 (P9): dain×1  qokey qokedy sheol qokedy dain shedy otol chedy olor
+
+  ── Monitoring gradient: ch (active test) vs sh (passive monitor) ──
+    L 1 (P1): ch=2 sh=2 /8  ██░░
+    L 2 (P1): ch=2 sh=2 /8  ██░░
+    L 3 (P1): ch=1 sh=1 /9  █░
+    L 4 (P1): ch=0 sh=2 /10  ░░
+    L 5 (P1): ch=1 sh=2 /11  █░░
+    L 6 (P2): ch=2 sh=0 /9  ██
+    L 7 (P3): ch=4 sh=0 /9  ████
+    L 8 (P3): ch=2 sh=1 /8  ██░
+    L 9 (P3): ch=2 sh=0 /9  ██
+    L10 (P3): ch=3 sh=2 /10  ███░░
+    L11 (P3): ch=1 sh=1 /10  █░
+    L12 (P3): ch=1 sh=4 /12  █░░░░
+    L13 (P4): ch=1 sh=0 /8  █
+    L14 (P4): ch=1 sh=0 /11  █
+    L15 (P4): ch=1 sh=1 /11  █░
+    L16 (P4): ch=2 sh=3 /9  ██░░░
+    L17 (P5): ch=1 sh=4 /9  █░░░░
+    L18 (P5): ch=1 sh=2 /9  █░░
+    L19 (P5): ch=0 sh=2 /8  ░░
+    L20 (P5): ch=2 sh=2 /9  ██░░
+    L21 (P5): ch=1 sh=1 /8  █░
+    L22 (P5): ch=2 sh=2 /9  ██░░
+    L23 (P6): ch=2 sh=2 /8  ██░░
+    L24 (P6): ch=1 sh=0 /7  █
+    L25 (P6): ch=1 sh=2 /8  █░░
+    L26 (P6): ch=0 sh=1 /8  ░
+    L27 (P7): ch=0 sh=3 /11  ░░░
+    L28 (P8): ch=3 sh=2 /13  ███░░
+    L29 (P8): ch=2 sh=0 /12  ██
+    L30 (P8): ch=3 sh=1 /12  ███░
+    L31 (P8): ch=2 sh=2 /9  ██░░
+    L32 (P9): ch=1 sh=3 /10  █░░░
+    L33 (P9): ch=2 sh=0 /8  ██
+    L35 (P9): ch=0 sh=2 /9  ░░
+    L37 (P9): ch=0 sh=1 /7  ░
+    L39 (P9): ch=0 sh=1 /6  ░
+    L40 (P9): ch=0 sh=3 /7  ░░░
+    L42 (P9): ch=0 sh=1 /6  ░
+    L43 (P9): ch=2 sh=1 /7  ██░
+    L44 (P9): ch=2 sh=0 /11  ██
+    L45 (P9): ch=0 sh=2 /10  ░░
+    L46 (P9): ch=1 sh=2 /9  █░░
+
+====================================================================================================
+AGGREGATE STATISTICS
+====================================================================================================
+
+  PREFIX distribution (top 10):
+    qo      : 108 ( 26.2%)  [THERMAL]
+    sh      :  63 ( 15.3%)  [MONITOR]
+    ch      :  42 ( 10.2%)  [TEST]
+    da      :  27 (  6.6%)  [SETUP]
+    ot      :  20 (  4.9%)  [OPS-CHK]
+    ol      :  18 (  4.4%)  [CONTINUE]
+    ok      :  15 (  3.6%)  [VESSEL]
+    sa      :   9 (  2.2%)  [SCAFFOLD]
+    so      :   8 (  1.9%)  [SCAFF-ARR]
+    ka      :   6 (  1.5%)  [HEAT-YIELD]
+
+  HEAD atom distribution:
+    e   : 123 ( 29.9%)  cool
+    k   :  96 ( 23.3%)  heat
+    a   :  26 (  6.3%)  into
+    o   :  26 (  6.3%)  arrange
+    ~i  :  20 (  4.9%)  iterate (headless)
+    ~d  :  20 (  4.9%)  seal (headless)
+    ~c  :  12 (  2.9%)  loop (headless)
+    ~l  :  10 (  2.4%)  state (headless)
+    t   :   9 (  2.2%)  transfer
+    ~s  :   3 (  0.7%)  stage (headless)
+    ~r  :   2 (  0.5%)  respond (headless)
+    ~q  :   2 (  0.5%)  thermal-activate (headless)
+
+  TERM atom distribution:
+    y   : 124 ( 30.1%)  end
+    l   :  51 ( 12.4%)  state
+    r   :  45 ( 10.9%)  respond
+    n   :  22 (  5.3%)  bind
+    h   :  12 (  2.9%)  watch
+    m   :   3 (  0.7%)  final
+
+  MOD atom distribution:
+    d   :  64 ( 15.5%)  seal
+    e   :  28 (  6.8%)  cool
+    k   :  23 (  5.6%)  heat
+    c   :  13 (  3.2%)  loop
+    i   :   8 (  1.9%)  iterate
+    t   :   8 (  1.9%)  transfer
+    o   :   7 (  1.7%)  arrange
+    s   :   6 (  1.5%)  stage
+    a   :   3 (  0.7%)  into
+    y   :   1 (  0.2%)  end
+    m   :   1 (  0.2%)  final
+    p   :   1 (  0.2%)  pause
+    h   :   1 (  0.2%)  watch
+
+====================================================================================================
+COVERAGE
+====================================================================================================
+  100% atom coverage — all characters in all MIDDLEs and SUFFIXes have glosses
+
+  Total tokens decoded: 412
+  Lines: 46
+  Paragraphs: 9
+
+====================================================================================================
+DONE
+====================================================================================================
