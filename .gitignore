@@ -79,3 +79,5 @@ sources/brunschwig_1512/brunschwig_1512_assembled.txt
 sources/brunschwig_1512/brunschwig_1512_large_book.txt.bak
 sources/brunschwig_1512/english/_en_T*.txt
 *.pdf
+sources/codicillus/*.jpg
+results/folio_operational_profiles_v2.json
