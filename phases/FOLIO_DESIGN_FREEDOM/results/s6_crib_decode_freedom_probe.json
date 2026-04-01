@@ -1,0 +1,281 @@
+{
+  "decoded_folios": {
+    "f75r": "Ch19 aqua vitae (gentle distillation, balneum mariae)",
+    "f76r": "Ch20 rectification (repeated purification cycles)",
+    "f77v": "Furnace specification (equipment, NOT procedure)",
+    "f84r": "Ch30 vegetable mercury (complex multi-step preparation)"
+  },
+  "section": "Bio",
+  "n_section_folios": 20,
+  "freedom_features": {
+    "mod_c": "adjust",
+    "term_h": "transparent/monitor",
+    "mod_d": "mark/stage",
+    "mod_s": "sequence"
+  },
+  "raw_values": {
+    "f75r": {
+      "mod_c": 0.031553,
+      "term_h": 0.002427,
+      "mod_d": 0.303398,
+      "mod_s": 0.014563
+    },
+    "f76r": {
+      "mod_c": 0.056777,
+      "term_h": 0.005495,
+      "mod_d": 0.294872,
+      "mod_s": 0.029304
+    },
+    "f77v": {
+      "mod_c": 0.030211,
+      "term_h": 0.0,
+      "mod_d": 0.347432,
+      "mod_s": 0.018127
+    },
+    "f84r": {
+      "mod_c": 0.041551,
+      "term_h": 0.0,
+      "mod_d": 0.354571,
+      "mod_s": 0.024931
+    }
+  },
+  "section_means": {
+    "mod_c": 0.05422,
+    "term_h": 0.000718,
+    "mod_d": 0.307869,
+    "mod_s": 0.031397
+  },
+  "percentile_ranks": {
+    "f75r": {
+      "mod_c": 5.0,
+      "term_h": 80.0,
+      "mod_d": 40.0,
+      "mod_s": 0.0
+    },
+    "f76r": {
+      "mod_c": 60.0,
+      "term_h": 95.0,
+      "mod_d": 35.0,
+      "mod_s": 50.0
+    },
+    "f77v": {
+      "mod_c": 0.0,
+      "term_h": 0.0,
+      "mod_d": 65.0,
+      "mod_s": 5.0
+    },
+    "f84r": {
+      "mod_c": 25.0,
+      "term_h": 0.0,
+      "mod_d": 70.0,
+      "mod_s": 35.0
+    }
+  },
+  "z_scores": {
+    "f75r": {
+      "mod_c": -1.22,
+      "term_h": 1.09,
+      "mod_d": -0.06,
+      "mod_s": -1.48
+    },
+    "f76r": {
+      "mod_c": 0.14,
+      "term_h": 3.05,
+      "mod_d": -0.16,
+      "mod_s": -0.18
+    },
+    "f77v": {
+      "mod_c": -1.29,
+      "term_h": -0.46,
+      "mod_d": 0.5,
+      "mod_s": -1.16
+    },
+    "f84r": {
+      "mod_c": -0.68,
+      "term_h": -0.46,
+      "mod_d": 0.59,
+      "mod_s": -0.57
+    }
+  },
+  "predictions": {
+    "f75r": {
+      "prediction": "HIGH mod_c and/or HIGH term_h",
+      "verdict": "MATCH",
+      "mod_c_elevated": false,
+      "term_h_elevated": true,
+      "mod_c_pct": 5.0,
+      "term_h_pct": 80.0,
+      "mod_c_z": -1.22,
+      "term_h_z": 1.09
+    },
+    "f76r": {
+      "prediction": "HIGH mod_d, moderate mod_s",
+      "verdict": "MISS",
+      "mod_d_elevated": false,
+      "mod_s_moderate": true,
+      "mod_d_pct": 35.0,
+      "mod_s_pct": 50.0,
+      "mod_d_z": -0.16,
+      "mod_s_z": -0.18
+    },
+    "f77v": {
+      "prediction": "structurally different from 3 procedure folios",
+      "verdict": "MISS",
+      "dist_from_procedural": 0.033,
+      "mean_procedural_internal_dist": 0.0486,
+      "is_outlier": false
+    },
+    "f84r": {
+      "prediction": "HIGH mod_s and/or HIGH mod_d",
+      "verdict": "MATCH",
+      "mod_s_elevated": false,
+      "mod_d_elevated": true,
+      "mod_s_pct": 35.0,
+      "mod_d_pct": 70.0,
+      "mod_s_z": -0.57,
+      "mod_d_z": 0.59
+    }
+  },
+  "overall_match": "2/4",
+  "pca_positions": {
+    "f75r": {
+      "PC1": 0.1416,
+      "PC2": -1.5262,
+      "PC3": 2.5622,
+      "PC4": 2.1266,
+      "PC5": -0.088
+    },
+    "f76r": {
+      "PC1": 0.1418,
+      "PC2": -1.2759,
+      "PC3": -0.7041,
+      "PC4": 1.0821,
+      "PC5": 0.4998
+    },
+    "f77v": {
+      "PC1": -0.7908,
+      "PC2": 1.2869,
+      "PC3": 1.4513,
+      "PC4": 0.961,
+      "PC5": -2.609
+    },
+    "f84r": {
+      "PC1": 0.3411,
+      "PC2": -1.3285,
+      "PC3": -1.2125,
+      "PC4": 0.7513,
+      "PC5": -0.5847
+    }
+  },
+  "pca_pairwise_distances": [
+    {
+      "pair": "f77v-f84r",
+      "distance": 3.901
+    },
+    {
+      "pair": "f75r-f84r",
+      "distance": 3.785
+    },
+    {
+      "pair": "f76r-f77v",
+      "distance": 3.476
+    },
+    {
+      "pair": "f75r-f76r",
+      "distance": 3.276
+    },
+    {
+      "pair": "f75r-f77v",
+      "distance": 3.165
+    },
+    {
+      "pair": "f76r-f84r",
+      "distance": 0.549
+    }
+  ],
+  "pca_spread": {
+    "decoded_mean_dist": 3.0253,
+    "all_folios_mean_dist": 4.7019,
+    "ratio": 0.643
+  },
+  "e_depth": {
+    "f75r": {
+      "e_depth": 0.5243,
+      "e_z": -0.58,
+      "e_pct": 25.0,
+      "i_depth": 1.12,
+      "i_z": -1.89
+    },
+    "f76r": {
+      "e_depth": 0.5696,
+      "e_z": -0.22,
+      "e_pct": 45.0,
+      "i_depth": 1.3596,
+      "i_z": -0.72
+    },
+    "f77v": {
+      "e_depth": 0.577,
+      "e_z": -0.16,
+      "e_pct": 55.0,
+      "i_depth": 1.7111,
+      "i_z": 1.01
+    },
+    "f84r": {
+      "e_depth": 0.5319,
+      "e_z": -0.52,
+      "e_pct": 30.0,
+      "i_depth": 1.6364,
+      "i_z": 0.64
+    }
+  },
+  "distinctiveness": {
+    "f75r": {
+      "top_elevated": {
+        "term_m": 2.61,
+        "term_r": 1.74,
+        "pfx_sh": 1.16
+      },
+      "top_depressed": {
+        "i_depth_mean": -1.89,
+        "mod_i": -1.5,
+        "term_l": -1.49
+      }
+    },
+    "f76r": {
+      "top_elevated": {
+        "term_h": 3.05,
+        "head_a": 2.24,
+        "mod_p": 1.78
+      },
+      "top_depressed": {
+        "head_k": -1.28,
+        "term_l": -0.96,
+        "pfx_qo": -0.88
+      }
+    },
+    "f77v": {
+      "top_elevated": {
+        "pfx_da": 2.21,
+        "term_l": 1.33,
+        "pfx_ch": 1.06
+      },
+      "top_depressed": {
+        "pfx_ot": -1.92,
+        "mod_p": -1.47,
+        "pfx_ct": -1.45
+      }
+    },
+    "f84r": {
+      "top_elevated": {
+        "mod_f": 1.75,
+        "term_r": 1.36,
+        "term_y": 1.28
+      },
+      "top_depressed": {
+        "term_n": -1.63,
+        "pfx_ct": -1.45,
+        "mod_i": -1.01
+      }
+    }
+  }
+}

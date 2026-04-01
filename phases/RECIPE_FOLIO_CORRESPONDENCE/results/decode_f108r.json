@@ -1,0 +1,1240 @@
+{
+  "folio": "f108r",
+  "recipe": "PL Chapter XVI Practica — Separation of elements from putrefied white composite",
+  "section": "S",
+  "language": "B",
+  "basic_profile": {
+    "n_tokens": 491,
+    "n_lines": 50,
+    "n_paragraphs": 16,
+    "para_starts": [
+      "1",
+      "5",
+      "8",
+      "11",
+      "14",
+      "17",
+      "21",
+      "24",
+      "29",
+      "31",
+      "35",
+      "37",
+      "39",
+      "41",
+      "45",
+      "48"
+    ],
+    "e_depth_mean": 0.7617,
+    "e_depth_distribution": {
+      "0": 209,
+      "1": 192,
+      "2": 88,
+      "3": 2
+    },
+    "head_distribution": {
+      "e": 170,
+      "k": 80,
+      "a": 72,
+      "o": 55,
+      "t": 14
+    },
+    "mod_distribution": {
+      "e": 209,
+      "d": 200,
+      "i": 93,
+      "a": 82,
+      "h": 51,
+      "o": 49,
+      "k": 33,
+      "c": 29,
+      "l": 13,
+      "s": 9,
+      "p": 8,
+      "t": 6,
+      "r": 6,
+      "f": 5,
+      "y": 4,
+      "x": 1
+    },
+    "term_distribution": {
+      "y": 261,
+      "l": 73,
+      "n": 62,
+      "r": 51,
+      "m": 19,
+      "o": 2,
+      "h": 1
+    },
+    "prefix_distribution": {
+      "qo": 93,
+      "ch": 86,
+      "ok": 73,
+      "ot": 37,
+      "sh": 24,
+      "da": 17,
+      "lk": 15,
+      "ke": 13,
+      "ol": 8,
+      "al": 8,
+      "te": 7,
+      "yk": 7,
+      "lch": 6,
+      "pch": 4,
+      "po": 4,
+      "sa": 3,
+      "dch": 3,
+      "tch": 2,
+      "ar": 2,
+      "or": 2,
+      "to": 1,
+      "ct": 1,
+      "ta": 1,
+      "ka": 1,
+      "fch": 1,
+      "so": 1
+    },
+    "headed_pct": 80.0
+  },
+  "comparisons": {
+    "herbal_e_depth_mean": 0.4148,
+    "stars_e_depth_mean": 0.6513
+  },
+  "trajectory": {
+    "first_half_e_mean": 0.6443,
+    "second_half_e_mean": 0.8866,
+    "first_half_gentle_pct": 15.4,
+    "second_half_gentle_pct": 21.4
+  },
+  "two_phase": {
+    "best_split_line": "7",
+    "e_depth_diff": 0.0743,
+    "split_quality": "moderate"
+  },
+  "predictions": {
+    "P1_e_depth_elevated": true,
+    "P1_e_depth_above_stars": true,
+    "P2_cooling_visible": true,
+    "P2_cooling_count": 210,
+    "P3_staging_at_boundary": true,
+    "P4_o_head_early": true
+  },
+  "dark_pipeline": {
+    "n_dark_tokens": 37,
+    "unique_dark_middles": [
+      "alod",
+      "dii",
+      "ec",
+      "eed",
+      "eodc",
+      "eok",
+      "eyt",
+      "fch",
+      "it",
+      "kalch",
+      "ko",
+      "lch",
+      "lk",
+      "ls",
+      "och",
+      "ockh",
+      "odee",
+      "of",
+      "ofch",
+      "oke",
+      "oko",
+      "old",
+      "olk",
+      "pai",
+      "q",
+      "qe",
+      "qek"
+    ]
+  },
+  "key_tokens": {
+    "chekar": 1,
+    "dar": 0,
+    "dal": 3
+  },
+  "line_data": {
+    "1": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.6,
+      "heads": {
+        "o": 3,
+        "e": 2
+      },
+      "words": [
+        "teodeear",
+        "qopchety",
+        "okeeoly",
+        "okchdpchy",
+        "todasihx",
+        "opasy",
+        "olpair",
+        "ody",
+        "otedy",
+        "kedydy"
+      ]
+    },
+    "2": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.636,
+      "heads": {
+        "k": 3,
+        "o": 3,
+        "e": 2,
+        "a": 2
+      },
+      "words": [
+        "qokeedy",
+        "chokody",
+        "chockhed",
+        "qokeor",
+        "shedy",
+        "otal",
+        "otaiin",
+        "otedy",
+        "qokechy",
+        "ofchdy",
+        "qody"
+      ]
+    },
+    "3": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.909,
+      "heads": {
+        "e": 7,
+        "t": 1,
+        "o": 1,
+        "a": 1
+      },
+      "words": [
+        "cheodchy",
+        "qotear",
+        "okedy",
+        "oteal",
+        "lkedal",
+        "okedy",
+        "otedy",
+        "okedal",
+        "chckhedy",
+        "choked",
+        "al"
+      ]
+    },
+    "4": {
+      "n_tokens": 7,
+      "e_depth_mean": 0.857,
+      "heads": {
+        "e": 4,
+        "k": 1,
+        "o": 1
+      },
+      "words": [
+        "ychedaiin",
+        "shky",
+        "chdy",
+        "oteeody",
+        "ched",
+        "or",
+        "sheeky"
+      ]
+    },
+    "5": {
+      "n_tokens": 11,
+      "e_depth_mean": 1.091,
+      "heads": {
+        "o": 3,
+        "e": 6,
+        "t": 1
+      },
+      "words": [
+        "tchokedy",
+        "chey",
+        "oteey",
+        "okeey",
+        "lkedshedy",
+        "okcheefy",
+        "pchofar",
+        "cheo",
+        "pchedy",
+        "qotedy",
+        "otol"
+      ]
+    },
+    "6": {
+      "n_tokens": 13,
+      "e_depth_mean": 0.846,
+      "heads": {
+        "o": 1,
+        "e": 3,
+        "k": 4,
+        "t": 1,
+        "a": 1
+      },
+      "words": [
+        "ol",
+        "cheol",
+        "qo",
+        "qokeey",
+        "qokeey",
+        "qokeedy",
+        "sheoky",
+        "otedy",
+        "qotey",
+        "qokchey",
+        "chdar",
+        "aiin",
+        "y"
+      ]
+    },
+    "7": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.455,
+      "heads": {
+        "e": 2,
+        "k": 3,
+        "a": 3
+      },
+      "words": [
+        "okchey",
+        "okedy",
+        "qokchedy",
+        "chedy",
+        "qokedy",
+        "okar",
+        "chdy",
+        "okar",
+        "char",
+        "chkaiin",
+        "chsy"
+      ]
+    },
+    "8": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.667,
+      "heads": {
+        "o": 2,
+        "a": 1,
+        "k": 1,
+        "e": 2
+      },
+      "words": [
+        "pochedy",
+        "shy",
+        "shokeedar",
+        "al",
+        "kedal",
+        "chokchy",
+        "qokar",
+        "ch",
+        "okeey",
+        "qaiin",
+        "okeedy",
+        "qetam"
+      ]
+    },
+    "9": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.5,
+      "heads": {
+        "e": 4,
+        "a": 4,
+        "t": 1,
+        "o": 1
+      },
+      "words": [
+        "cthey",
+        "chedain",
+        "chedy",
+        "okedy",
+        "lkedy",
+        "raraiin",
+        "qotar",
+        "otal",
+        "kedy",
+        "ar",
+        "air",
+        "ockhedy"
+      ]
+    },
+    "10": {
+      "n_tokens": 11,
+      "e_depth_mean": 1.091,
+      "heads": {
+        "k": 2,
+        "t": 1,
+        "e": 4,
+        "o": 2
+      },
+      "words": [
+        "taiin",
+        "shkeedy",
+        "qoteey",
+        "oteey",
+        "yteol",
+        "ykeedy",
+        "chekar",
+        "qokeeo",
+        "daiin",
+        "okeyty",
+        "ody"
+      ]
+    },
+    "11": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.75,
+      "heads": {
+        "o": 1,
+        "a": 5,
+        "e": 3
+      },
+      "words": [
+        "teodeey",
+        "ar",
+        "aiin",
+        "okeey",
+        "qetchdy",
+        "oteeody",
+        "okaiin",
+        "ykeeo",
+        "dain",
+        "otal",
+        "aiin",
+        "oly"
+      ]
+    },
+    "12": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.364,
+      "heads": {
+        "e": 1,
+        "o": 2,
+        "k": 1,
+        "a": 3
+      },
+      "words": [
+        "tshey",
+        "okchey",
+        "dain",
+        "aloiin",
+        "ocheey",
+        "qokaiin",
+        "chlam",
+        "okaiin",
+        "okal",
+        "kain",
+        "alam"
+      ]
+    },
+    "13": {
+      "n_tokens": 5,
+      "e_depth_mean": 0.4,
+      "heads": {
+        "e": 1,
+        "a": 2,
+        "o": 1
+      },
+      "words": [
+        "ykeey",
+        "raiin",
+        "ar",
+        "ail",
+        "odaiin"
+      ]
+    },
+    "14": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.091,
+      "heads": {
+        "o": 5,
+        "k": 3,
+        "e": 1,
+        "a": 1
+      },
+      "words": [
+        "polchal",
+        "shol",
+        "qokor",
+        "shedy",
+        "pcholy",
+        "qokal",
+        "opchdy",
+        "ofal",
+        "shor",
+        "qokaiin",
+        "otalod"
+      ]
+    },
+    "15": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.909,
+      "heads": {
+        "a": 3,
+        "e": 4,
+        "k": 1
+      },
+      "words": [
+        "orain",
+        "cheey",
+        "chey",
+        "qokeey",
+        "chedy",
+        "okchedy",
+        "qoeedy",
+        "qockhey",
+        "diir",
+        "ain",
+        "okain"
+      ]
+    },
+    "16": {
+      "n_tokens": 6,
+      "e_depth_mean": 0.0,
+      "heads": {
+        "k": 1
+      },
+      "words": [
+        "saithy",
+        "olkaiin",
+        "chckhy",
+        "daiin",
+        "dal",
+        "daiin"
+      ]
+    },
+    "17": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.6,
+      "heads": {
+        "e": 4,
+        "k": 1,
+        "a": 1,
+        "o": 1
+      },
+      "words": [
+        "fcheokair",
+        "okedaiin",
+        "chedy",
+        "qokeed",
+        "okain",
+        "chdy",
+        "laiin",
+        "ofar",
+        "chedy",
+        "tedam"
+      ]
+    },
+    "18": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.7,
+      "heads": {
+        "e": 3,
+        "a": 2,
+        "k": 2
+      },
+      "words": [
+        "okeedy",
+        "lkal",
+        "daiin",
+        "ykchedy",
+        "qokol",
+        "chedy",
+        "qokedy",
+        "lkedy",
+        "okalol",
+        "csedly"
+      ]
+    },
+    "19": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.545,
+      "heads": {
+        "e": 4,
+        "o": 2,
+        "a": 1,
+        "t": 1
+      },
+      "words": [
+        "dchedy",
+        "okeedar",
+        "shchy",
+        "okol",
+        "kedy",
+        "okeedy",
+        "chal",
+        "raiin",
+        "otedy",
+        "chtal",
+        "om"
+      ]
+    },
+    "20": {
+      "n_tokens": 7,
+      "e_depth_mean": 0.857,
+      "heads": {
+        "e": 3,
+        "k": 1,
+        "o": 1
+      },
+      "words": [
+        "dain",
+        "chey",
+        "qokeedy",
+        "chol",
+        "cheey",
+        "dalkar",
+        "okedy"
+      ]
+    },
+    "21": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.7,
+      "heads": {
+        "e": 4,
+        "o": 1,
+        "t": 1,
+        "a": 1
+      },
+      "words": [
+        "qolshy",
+        "qoeedy",
+        "lkeal",
+        "shedy",
+        "shokal",
+        "keedy",
+        "qotedy",
+        "qopchedy",
+        "otal",
+        "dkedam"
+      ]
+    },
+    "22": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.5,
+      "heads": {
+        "e": 4,
+        "o": 2,
+        "k": 2,
+        "a": 2
+      },
+      "words": [
+        "dcheol",
+        "shol",
+        "dal",
+        "qokaiin",
+        "otal",
+        "ol",
+        "shedy",
+        "qokey",
+        "chey",
+        "lor",
+        "aiin",
+        "okeeam"
+      ]
+    },
+    "23": {
+      "n_tokens": 4,
+      "e_depth_mean": 0.75,
+      "heads": {
+        "e": 2,
+        "a": 2
+      },
+      "words": [
+        "ykeeol",
+        "chey",
+        "okain",
+        "charain"
+      ]
+    },
+    "24": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.333,
+      "heads": {
+        "a": 5,
+        "k": 3,
+        "e": 1,
+        "t": 2
+      },
+      "words": [
+        "folaiin",
+        "shkhy",
+        "qokal",
+        "lkedy",
+        "qotedy",
+        "qoked",
+        "qotedy",
+        "okal",
+        "chdar",
+        "al",
+        "char",
+        "aiin"
+      ]
+    },
+    "25": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.75,
+      "heads": {
+        "e": 4,
+        "a": 2,
+        "o": 3,
+        "k": 1
+      },
+      "words": [
+        "ycheeor",
+        "aiin",
+        "okeey",
+        "cheol",
+        "chedy",
+        "opchsd",
+        "opchedy",
+        "alkedy",
+        "allkeam",
+        "ol",
+        "rain",
+        "al"
+      ]
+    },
+    "26": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.818,
+      "heads": {
+        "a": 4,
+        "e": 3,
+        "k": 3
+      },
+      "words": [
+        "dair",
+        "okal",
+        "chedy",
+        "qokeedy",
+        "oteor",
+        "al",
+        "qokedy",
+        "qokedy",
+        "otaiin",
+        "otedar",
+        "chalkeedy"
+      ]
+    },
+    "27": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.9,
+      "heads": {
+        "e": 4,
+        "a": 1,
+        "k": 2
+      },
+      "words": [
+        "ychedain",
+        "orcheory",
+        "qoaiin",
+        "okeey",
+        "qokeey",
+        "chdal",
+        "okedy",
+        "qokedy",
+        "okedam",
+        "chdy"
+      ]
+    },
+    "28": {
+      "n_tokens": 5,
+      "e_depth_mean": 0.6,
+      "heads": {
+        "o": 1,
+        "a": 2,
+        "k": 1
+      },
+      "words": [
+        "sain",
+        "arolkeey",
+        "qoal",
+        "olkedy",
+        "okaiin"
+      ]
+    },
+    "29": {
+      "n_tokens": 9,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "e": 6,
+        "t": 1
+      },
+      "words": [
+        "polchedy",
+        "okedy",
+        "qopchedy",
+        "okeolkey",
+        "teedy",
+        "qotaiin",
+        "otedy",
+        "okeedy",
+        "otedam"
+      ]
+    },
+    "30": {
+      "n_tokens": 8,
+      "e_depth_mean": 0.625,
+      "heads": {
+        "e": 2,
+        "o": 1,
+        "k": 2
+      },
+      "words": [
+        "ykeol",
+        "chedal",
+        "chokedy",
+        "o",
+        "qokedy",
+        "okchedy",
+        "saiin",
+        "alkan"
+      ]
+    },
+    "31": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.8,
+      "heads": {
+        "o": 1,
+        "e": 2,
+        "k": 6,
+        "t": 1
+      },
+      "words": [
+        "keol",
+        "sheody",
+        "qokedy",
+        "qokeedy",
+        "qokoy",
+        "qotedy",
+        "otedy",
+        "qokedy",
+        "qokedy",
+        "qokal"
+      ]
+    },
+    "32": {
+      "n_tokens": 12,
+      "e_depth_mean": 0.667,
+      "heads": {
+        "e": 6,
+        "k": 1,
+        "a": 1,
+        "o": 4
+      },
+      "words": [
+        "ykedar",
+        "chedy",
+        "qokey",
+        "lkeedy",
+        "otedy",
+        "okedy",
+        "otedy",
+        "otal",
+        "shol",
+        "alodar",
+        "or",
+        "alold"
+      ]
+    },
+    "33": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.6,
+      "heads": {
+        "k": 1,
+        "e": 4,
+        "a": 1
+      },
+      "words": [
+        "solkedy",
+        "okchd",
+        "qokedy",
+        "okedy",
+        "okeol",
+        "chdy",
+        "okar",
+        "okedy",
+        "okedy",
+        "chlar"
+      ]
+    },
+    "34": {
+      "n_tokens": 4,
+      "e_depth_mean": 0.5,
+      "heads": {
+        "e": 1,
+        "k": 1,
+        "a": 1
+      },
+      "words": [
+        "ycheol",
+        "chckhy",
+        "qokedy",
+        "okain"
+      ]
+    },
+    "35": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.5,
+      "heads": {
+        "o": 3,
+        "e": 3,
+        "k": 1
+      },
+      "words": [
+        "pychory",
+        "opchey",
+        "lkeol",
+        "chdar",
+        "shedy",
+        "qofchdy",
+        "opalal",
+        "cheedy",
+        "qokalchdy",
+        "opchdy"
+      ]
+    },
+    "36": {
+      "n_tokens": 9,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "e": 7,
+        "t": 1
+      },
+      "words": [
+        "okechy",
+        "okeol",
+        "okeedy",
+        "cheedar",
+        "okedy",
+        "qotal",
+        "chdy",
+        "chedal",
+        "chedy"
+      ]
+    },
+    "37": {
+      "n_tokens": 12,
+      "e_depth_mean": 1.167,
+      "heads": {
+        "e": 6,
+        "k": 3,
+        "a": 2
+      },
+      "words": [
+        "tchedy",
+        "qokey",
+        "okeey",
+        "lkeey",
+        "chedy",
+        "cheokeey",
+        "qokeey",
+        "chedl",
+        "al",
+        "lkair",
+        "alkeedy",
+        "ram"
+      ]
+    },
+    "38": {
+      "n_tokens": 6,
+      "e_depth_mean": 1.833,
+      "heads": {
+        "e": 4,
+        "k": 1
+      },
+      "words": [
+        "dcheeody",
+        "cheedy",
+        "qokeedy",
+        "otedy",
+        "qeeey",
+        "chey"
+      ]
+    },
+    "39": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.455,
+      "heads": {
+        "k": 1,
+        "e": 3,
+        "a": 1,
+        "t": 1
+      },
+      "words": [
+        "porol",
+        "tedo",
+        "lchdain",
+        "qokar",
+        "otedy",
+        "otarar",
+        "yty",
+        "sho",
+        "qotedy",
+        "oteedy",
+        "okedy"
+      ]
+    },
+    "40": {
+      "n_tokens": 11,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "a": 3,
+        "e": 3,
+        "k": 1,
+        "o": 2
+      },
+      "words": [
+        "okar",
+        "aiin",
+        "okeedy",
+        "qokeedy",
+        "okeeom",
+        "cheykeeed",
+        "chol",
+        "qekeey",
+        "or",
+        "aiin",
+        "chckhom"
+      ]
+    },
+    "41": {
+      "n_tokens": 10,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "e": 4,
+        "k": 1,
+        "o": 2,
+        "t": 1,
+        "a": 1
+      },
+      "words": [
+        "sheedain",
+        "qokeedy",
+        "chokeedy",
+        "qoteody",
+        "keesho",
+        "daiin",
+        "chedy",
+        "keedal",
+        "ar",
+        "keodky"
+      ]
+    },
+    "42": {
+      "n_tokens": 10,
+      "e_depth_mean": 1.4,
+      "heads": {
+        "e": 4,
+        "k": 4,
+        "a": 1,
+        "o": 1
+      },
+      "words": [
+        "okeey",
+        "qokeey",
+        "qokeedy",
+        "qokeey",
+        "chedal",
+        "chedy",
+        "qokeey",
+        "okeedain",
+        "otain",
+        "oolals"
+      ]
+    },
+    "43": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.818,
+      "heads": {
+        "k": 3,
+        "e": 3,
+        "a": 2,
+        "o": 1
+      },
+      "words": [
+        "olkeoy",
+        "okey",
+        "lokeey",
+        "qokedy",
+        "olkechy",
+        "ched",
+        "ar",
+        "olal",
+        "oedy",
+        "qckhy",
+        "cseam"
+      ]
+    },
+    "44": {
+      "n_tokens": 6,
+      "e_depth_mean": 0.5,
+      "heads": {
+        "e": 3,
+        "a": 3
+      },
+      "words": [
+        "ychey",
+        "chey",
+        "okar",
+        "charam",
+        "otam",
+        "cheody"
+      ]
+    },
+    "45": {
+      "n_tokens": 11,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "e": 6,
+        "k": 2
+      },
+      "words": [
+        "dain",
+        "sheckhy",
+        "okeey",
+        "keey",
+        "lchedy",
+        "okeey",
+        "qokedy",
+        "chedy",
+        "dalkedy",
+        "qokedy",
+        "dal"
+      ]
+    },
+    "46": {
+      "n_tokens": 10,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "e": 5,
+        "k": 4,
+        "a": 1
+      },
+      "words": [
+        "yteedy",
+        "qokeedy",
+        "qokey",
+        "otedy",
+        "okedy",
+        "qokaiin",
+        "cheodar",
+        "cheey",
+        "qokedy",
+        "al"
+      ]
+    },
+    "47": {
+      "n_tokens": 11,
+      "e_depth_mean": 1.0,
+      "heads": {
+        "e": 6,
+        "o": 1,
+        "k": 1,
+        "a": 2
+      },
+      "words": [
+        "yched",
+        "chockhey",
+        "dain",
+        "sheol",
+        "okedy",
+        "lkeedy",
+        "oteedy",
+        "qokeedy",
+        "ched",
+        "al",
+        "keam"
+      ]
+    },
+    "48": {
+      "n_tokens": 11,
+      "e_depth_mean": 0.909,
+      "heads": {
+        "e": 3,
+        "k": 4,
+        "o": 1,
+        "a": 1
+      },
+      "words": [
+        "pcheedy",
+        "qokeol",
+        "okeol",
+        "keol",
+        "dain",
+        "ar",
+        "otedy",
+        "qokedy",
+        "qokeedy",
+        "qokeedy",
+        "lchdy"
+      ]
+    },
+    "49": {
+      "n_tokens": 10,
+      "e_depth_mean": 1.4,
+      "heads": {
+        "e": 5,
+        "k": 5
+      },
+      "words": [
+        "oteedy",
+        "lchedy",
+        "qokeedy",
+        "qokeedy",
+        "qokeo",
+        "lchedy",
+        "qokey",
+        "qokeey",
+        "lkedy",
+        "lkedy"
+      ]
+    },
+    "50": {
+      "n_tokens": 10,
+      "e_depth_mean": 0.5,
+      "heads": {
+        "k": 2,
+        "e": 2,
+        "a": 3,
+        "o": 1
+      },
+      "words": [
+        "qokeedy",
+        "lchedy",
+        "lkaiin",
+        "chdy",
+        "qokey",
+        "okedy",
+        "okaram",
+        "chdar",
+        "or",
+        "okam"
+      ]
+    }
+  },
+  "score": {
+    "pass": 4,
+    "partial": 0,
+    "fail": 0,
+    "total": 4
+  },
+  "freedom_space": {
+    "raw_features": {
+      "mod_c": 0.0584,
+      "term_h": 0.0766,
+      "mod_d": -0.015,
+      "mod_s": 1.0
+    },
+    "percentile_ranks": {
+      "mod_c": 22.4,
+      "term_h": 57.9,
+      "mod_d": 34.2,
+      "mod_s": 27.6
+    },
+    "PC1": -1.548,
+    "PC2": -1.816
+  }
+}
