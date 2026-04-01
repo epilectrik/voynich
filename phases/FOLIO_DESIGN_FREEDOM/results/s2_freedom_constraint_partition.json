@@ -1,0 +1,310 @@
+{
+  "n_folios": 82,
+  "n_features": 30,
+  "median_within_cv": 0.376916,
+  "partition_counts": {
+    "CONSTRAINED": 10,
+    "MIXED": 16,
+    "FREEDOM": 4
+  },
+  "thresholds": {
+    "constrained_eta_sq_min": 0.3,
+    "mixed_eta_sq_range": [
+      0.1,
+      0.3
+    ],
+    "freedom_eta_sq_max": 0.1,
+    "freedom_cv_min": 0.376916
+  },
+  "features": {
+    "head_a": {
+      "eta_sq": 0.313972,
+      "within_cv": 0.419722,
+      "partition": "CONSTRAINED",
+      "cluster": "iteration"
+    },
+    "head_e": {
+      "eta_sq": 0.107254,
+      "within_cv": 0.315458,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "head_o": {
+      "eta_sq": 0.247838,
+      "within_cv": 0.352116,
+      "partition": "MIXED",
+      "cluster": "structural"
+    },
+    "head_k": {
+      "eta_sq": 0.501494,
+      "within_cv": 0.364162,
+      "partition": "CONSTRAINED",
+      "cluster": "energy"
+    },
+    "head_t": {
+      "eta_sq": 0.186734,
+      "within_cv": 0.627852,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "head_headless": {
+      "eta_sq": 0.43922,
+      "within_cv": 0.168454,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    },
+    "mod_p": {
+      "eta_sq": 0.149855,
+      "within_cv": 0.601635,
+      "partition": "MIXED",
+      "cluster": "structural"
+    },
+    "mod_f": {
+      "eta_sq": 0.385069,
+      "within_cv": 0.758481,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    },
+    "mod_i": {
+      "eta_sq": 0.278942,
+      "within_cv": 0.388098,
+      "partition": "MIXED",
+      "cluster": "iteration"
+    },
+    "mod_c": {
+      "eta_sq": 0.074976,
+      "within_cv": 0.421533,
+      "partition": "FREEDOM",
+      "cluster": "monitoring"
+    },
+    "mod_d": {
+      "eta_sq": 0.058045,
+      "within_cv": 0.310791,
+      "partition": "FREEDOM",
+      "cluster": "closure"
+    },
+    "mod_s": {
+      "eta_sq": 0.092609,
+      "within_cv": 0.506662,
+      "partition": "FREEDOM",
+      "cluster": null
+    },
+    "term_y": {
+      "eta_sq": 0.248129,
+      "within_cv": 0.200946,
+      "partition": "MIXED",
+      "cluster": "closure"
+    },
+    "term_n": {
+      "eta_sq": 0.185974,
+      "within_cv": 0.351793,
+      "partition": "MIXED",
+      "cluster": "iteration"
+    },
+    "term_l": {
+      "eta_sq": 0.283254,
+      "within_cv": 0.365734,
+      "partition": "MIXED",
+      "cluster": "energy"
+    },
+    "term_r": {
+      "eta_sq": 0.380287,
+      "within_cv": 0.332121,
+      "partition": "CONSTRAINED",
+      "cluster": "iteration"
+    },
+    "term_m": {
+      "eta_sq": 0.304832,
+      "within_cv": 0.561483,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    },
+    "term_h": {
+      "eta_sq": 0.050992,
+      "within_cv": 2.305853,
+      "partition": "FREEDOM",
+      "cluster": "monitoring"
+    },
+    "pfx_qo": {
+      "eta_sq": 0.616093,
+      "within_cv": 0.314792,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    },
+    "pfx_ch": {
+      "eta_sq": 0.169085,
+      "within_cv": 0.274731,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "pfx_sh": {
+      "eta_sq": 0.19817,
+      "within_cv": 0.444934,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "pfx_ok": {
+      "eta_sq": 0.243436,
+      "within_cv": 0.478491,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "pfx_ot": {
+      "eta_sq": 0.206407,
+      "within_cv": 0.538739,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "pfx_da": {
+      "eta_sq": 0.348473,
+      "within_cv": 0.413911,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    },
+    "pfx_ol": {
+      "eta_sq": 0.275874,
+      "within_cv": 0.554514,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "pfx_ct": {
+      "eta_sq": 0.126163,
+      "within_cv": 1.27206,
+      "partition": "MIXED",
+      "cluster": null
+    },
+    "pfx_bare": {
+      "eta_sq": 0.327906,
+      "within_cv": 0.19546,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    },
+    "e_depth_mean": {
+      "eta_sq": 0.27415,
+      "within_cv": 0.331321,
+      "partition": "MIXED",
+      "cluster": "energy"
+    },
+    "i_depth_mean": {
+      "eta_sq": 0.239566,
+      "within_cv": 0.103114,
+      "partition": "MIXED",
+      "cluster": "iteration"
+    },
+    "mean_atom_length": {
+      "eta_sq": 0.334423,
+      "within_cv": 0.072238,
+      "partition": "CONSTRAINED",
+      "cluster": null
+    }
+  },
+  "cross_section_consistency": {
+    "section_pairs": {
+      "Bio-Herbal": {
+        "rho": 1.0,
+        "p": 0.0
+      },
+      "Bio-Stars": {
+        "rho": 1.0,
+        "p": 0.0
+      },
+      "Herbal-Stars": {
+        "rho": 1.0,
+        "p": 0.0
+      }
+    },
+    "mean_rho": 1.0,
+    "method": "Spearman correlation of within-section variance rankings across FREEDOM features"
+  },
+  "c1207_cluster_partition": {
+    "iteration": {
+      "FREEDOM": 0,
+      "MIXED": 3,
+      "CONSTRAINED": 2,
+      "features": {
+        "head_a": "CONSTRAINED",
+        "mod_i": "MIXED",
+        "term_n": "MIXED",
+        "term_r": "CONSTRAINED",
+        "i_depth_mean": "MIXED"
+      }
+    },
+    "monitoring": {
+      "FREEDOM": 2,
+      "MIXED": 0,
+      "CONSTRAINED": 0,
+      "features": {
+        "mod_c": "FREEDOM",
+        "term_h": "FREEDOM"
+      }
+    },
+    "energy": {
+      "FREEDOM": 0,
+      "MIXED": 2,
+      "CONSTRAINED": 1,
+      "features": {
+        "head_k": "CONSTRAINED",
+        "term_l": "MIXED",
+        "e_depth_mean": "MIXED"
+      }
+    },
+    "closure": {
+      "FREEDOM": 1,
+      "MIXED": 1,
+      "CONSTRAINED": 0,
+      "features": {
+        "mod_d": "FREEDOM",
+        "term_y": "MIXED"
+      }
+    },
+    "structural": {
+      "FREEDOM": 0,
+      "MIXED": 2,
+      "CONSTRAINED": 0,
+      "features": {
+        "head_o": "MIXED",
+        "mod_p": "MIXED"
+      }
+    },
+    "unassigned": {
+      "FREEDOM": 1,
+      "MIXED": 8,
+      "CONSTRAINED": 7,
+      "features": {
+        "head_e": "MIXED",
+        "head_t": "MIXED",
+        "head_headless": "CONSTRAINED",
+        "mod_f": "CONSTRAINED",
+        "mod_s": "FREEDOM",
+        "term_m": "CONSTRAINED",
+        "pfx_qo": "CONSTRAINED",
+        "pfx_ch": "MIXED",
+        "pfx_sh": "MIXED",
+        "pfx_ok": "MIXED",
+        "pfx_ot": "MIXED",
+        "pfx_da": "CONSTRAINED",
+        "pfx_ol": "MIXED",
+        "pfx_ct": "MIXED",
+        "pfx_bare": "CONSTRAINED",
+        "mean_atom_length": "CONSTRAINED"
+      }
+    }
+  },
+  "c1154_comparison": {
+    "head_k": {
+      "prediction": "FREEDOM (program-specific)",
+      "actual": "CONSTRAINED",
+      "eta_sq": 0.5015
+    },
+    "head_e": {
+      "prediction": "FREEDOM or low-MIXED (program-specific)",
+      "actual": "MIXED",
+      "eta_sq": 0.1073
+    },
+    "term_h": {
+      "prediction": "CONSTRAINED or high-MIXED (section-determined)",
+      "actual": "FREEDOM",
+      "eta_sq": 0.051
+    }
+  }
+}

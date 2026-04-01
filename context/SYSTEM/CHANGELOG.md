@@ -4,6 +4,35 @@
 
 ---
 
+## Version 6.06 (2026-04-01) - Phase 633: Folio Design Freedom Decomposition
+
+### Summary
+
+Phase 633 decomposes within-section folio differentiation at atom resolution. The probe found 75% within-section atom variance, far exceeding C1169's ~27% AXM residual. Five scripts establish: (1) 67% is genuine atom freedom orthogonal to AXM, (2) 11 effective dimensions exist, (3) 4 pure FREEDOM features (mod_c, term_h, mod_d, mod_s) are the operational tuning knobs, (4) REGIME is atom-decomposable but narrow (head_k + pfx_qo only), (5) freedom channels replicate across sections. 8 constraints registered (C1917-C1924), all Tier 2.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/FOLIO_DESIGN_FREEDOM/` — Phase 633 with 5 scripts, INDEX.md |
+| **ADDED** | C1917: 67% genuine atom freedom orthogonal to AXM |
+| **ADDED** | C1918: 11 effective dimensions at atom level |
+| **ADDED** | C1919: 4 pure FREEDOM features (monitoring/closure cluster) |
+| **ADDED** | C1920: REGIME decomposable but narrow (head_k + pfx_qo) |
+| **ADDED** | C1921: Freedom channels consistent cross-section (rho=0.783+) |
+| **ADDED** | C1922: PREFIX+MOD drive ~60% of folio differentiation |
+| **ADDED** | C1923: Atom-operational correlations (rho > 0.8) |
+| **ADDED** | C1924: Freedom concentrates in monitoring/closure clusters |
+| **UPDATED** | INDEX.md — +8 constraints (1924 total), Phase 633 section |
+
+### Key Findings
+
+1. **Atoms orthogonal to AXM (C1917):** 67% genuine freedom vs 27% AXM residual. Not inflated — atoms measure compositional dimensions that AXM (a single dynamical property) cannot capture. The two metrics are compatible, not contradictory.
+2. **REGIME is narrow (C1920):** 85.4% predictable from atoms, but only head_k and pfx_qo matter. All other atom features are REGIME-free — the operational style tuning knobs.
+3. **Monitoring is the design frontier (C1919, C1924):** The 4 FREEDOM features all relate to monitoring/adjustment/closure — how much checking, adjusting, and staging each procedure requires. Thermal intensity is locked by REGIME; operational style is free.
+
+---
+
 ## Version 6.05 (2026-04-01) - Phase 632: aiin Cross-System Investigation
 
 ### Summary

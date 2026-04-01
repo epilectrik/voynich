@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1916 validated constraints | **Version:** 6.05 | **Date:** 2026-04-01
+**Total:** 1924 validated constraints | **Version:** 6.06 | **Date:** 2026-04-01
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6089,6 +6089,28 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 | 1906 | Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to 0.924 (B). Section hyper-modulation (C1148) operates through atom-level selection matching operational character. Extends C1148 | 2 | B, GLOBAL, dark pipeline, section, C1148 | r_B=0.924. r_S=0.719. r_H=0.649. |
 | 1907 | Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior | 2 | B, dark pipeline, HEAD, PREFIX, C1475 | k_qo=65-100%. e_cos=0.629. |
 | 1908 | Zodiac folio i/d MOD atom swap: MOD distribution differs significantly across seasonal folio groups (chi2=39.3, p=0.0006). i-tokens (`aiin` family: a-HEAD, ii-MOD, n-TERM) enriched in Summer/Winter; d-tokens (`-ody` family: e/o-HEAD, od-MOD, y-TERM) enriched in Spring/Autumn. Two structurally distinct, nearly mutually exclusive token populations (3-7% co-occurrence). HEAD also significant (p=0.005); TERM not (p=0.104). e_depth gradient: Autumn 0.813 > Winter 0.515 | 2 | AZC, zodiac, MOD, atom, seasonal, C321, C1519, C1681, C1394 | chi2=39.3. p=0.0006. Summer_i=0.199. Autumn_d=0.213. co_occur=3-7%. |
+
+---
+
+### Phase 633: Folio Design Freedom Decomposition — ATOM_FREEDOM_DECOMPOSED (C1917-C1924)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1917 | 67% genuine atom freedom: within-section atom variance is 2.5x larger than C1169's 27% AXM residual. AXM captures <2% of atom variance (mean R²=0.083). Atoms measure compositional dimensions almost entirely orthogonal to AXM's dynamical property. Verdict: ATOMS_ORTHOGONAL_TO_AXM | 2 | B, design freedom, atom, C1169 | genuine_freedom=67%. AXM_absorption=1.8%. AXM_mean_R2=0.083. ratio=2.5x. |
+| 1918 | Atom-level effective dimensionality: 11 PCs at 80% variance, 18 at 95% (from 30 section-residualized features). PC1 (23.8%) = yield vs cooling emphasis (head_a vs e_depth/head_e). Dimensionality ratio 0.60 matches C1715's 0.55, confirming atom features don't dramatically compress | 2 | B, design freedom, PCA, C1715 | PCs_80=11. PCs_95=18. PC1_var=23.8%. dim_ratio=0.60. |
+| 1919 | 4 pure FREEDOM atom features (section eta² < 0.10, REGIME-orthogonal within Herbal): mod_c (adjust, eta²=0.015), term_h (transparent, eta²=0.068), mod_d (mark, eta²=0.079), mod_s (sequence, eta²=0.033). Freedom concentrates in C1207's monitoring cluster ({c,h}) | 2 | B, design freedom, MOD, TERM, C1207, C1154 | n_freedom=4. mod_c_eta2=0.015. term_h_eta2=0.068. monitoring_cluster=2of4. |
+| 1920 | REGIME is atom-decomposable but narrow: RF LOO-CV accuracy 85.4% (chance 25%). Top 2 features (head_k importance=0.245, pfx_qo=0.103) capture most REGIME signal. Within-Herbal: only head_k (eta²=0.887) and pfx_qo (eta²=0.640) are REGIME-constrained; all other features eta² < 0.15 | 2 | B, REGIME, atom, HEAD, PREFIX | RF_acc=0.854. head_k_imp=0.245. pfx_qo_imp=0.103. head_k_eta2=0.887. pfx_qo_eta2=0.640. |
+| 1921 | Freedom channels consistent across sections: Bio-Herbal, Bio-Stars, Herbal-Stars feature rankings correlate (rho=0.783-1.0). The same atom dimensions differentiate folios regardless of section. Not an artifact of any single section | 2 | B, design freedom, section, cross-section | rho_HS=0.783. rho_BS=0.806. cross_section=consistent. |
+| 1922 | PREFIX and MOD layers drive folio differentiation: ~60% of pairwise JSD between folios comes from PREFIX (~30-34%) and MOD (~26-30%) distributions. HEAD and TERM contribute less. Within-section, these layers carry the operational tuning that makes each program unique | 2 | B, design freedom, PREFIX, MOD, JSD | PREFIX_JSD_frac=30-34%. MOD_JSD_frac=26-30%. combined=~60%. |
+| 1923 | Atom features predict operational profiles strongly: head_e↔e_ratio rho=+0.816, term_n↔checkpoint_rate rho=+0.809, e_depth↔e_ratio rho=+0.749. Atom-level composition directly maps to known operational metrics | 2 | B, atom, operational, e_ratio, checkpoint | head_e_eratio=0.816. term_n_checkpoint=0.809. edepth_eratio=0.749. |
+| 1924 | Freedom concentrates in monitoring/closure atom clusters: of C1207's 5 clusters, {c,h} monitoring contains 2 of 4 FREEDOM features, {d,y} closure contains 1. Energy ({k,l}) and iteration ({a,i,n,r}) clusters have zero FREEDOM features — they are section/REGIME-constrained | 2 | B, design freedom, C1207, monitoring, closure | monitoring_freedom=2of4. closure_freedom=1of4. energy_freedom=0. iteration_freedom=0. |
+
+**Phase 633 findings (Folio Design Freedom Decomposition, ATOM_FREEDOM_DECOMPOSED):**
+- The 67% genuine atom freedom (C1917) resolves the apparent discrepancy with C1169's 27%: atoms measure 11+ compositional dimensions almost entirely orthogonal to AXM's single dynamical property. AXM captures <2% of the atom variance space. The two measures are compatible — they describe non-overlapping aspects of folio individuality.
+- REGIME is atom-decomposable but narrow (C1920): 85.4% LOO accuracy from atoms, but concentrated in just head_k and pfx_qo. Everything else is design freedom — the operational style choices that make each recipe unique.
+- The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
+- Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
+- PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
 
 ---
 

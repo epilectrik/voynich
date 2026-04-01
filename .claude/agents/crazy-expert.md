@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1916.
+the highest ID present is C1924.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2241,6 +2241,14 @@ C1913	C1908 seasonal swap driven by aiin-family: SW aiin rate 0.120 vs SpAu 0.07
 C1914	daiin anti-correlates with thermal complexity: folio rho=-0.324, p=0.0004. Herbal line rho=-0.089, p=0.0018. daiin=infrastructure alongside simpler content.	2	A, aiin, daiin, thermal, e_depth	rho=-0.324. p=0.0004.
 C1915	AZC daiin-aiin co-occurrence attraction: OR=5.04, p=0.003. Co-occur 3.3x above chance in AZC only. A and B show independence.	2	AZC, aiin, daiin, co-occurrence	OR=5.04. p=0.003.
 C1916	aiin-family composition section-conditioned: headed/headless ratio differs by section in A (p=0.003) and B (p<0.0001). Herbal/Pharma=headless, Text/Cosmo/Stars=headed.	2	GLOBAL, aiin, section, HEAD, C1507	A_p=0.003. B_p<0.0001.
+C1917	67% genuine atom freedom orthogonal to AXM: within-section atom variance 2.5x > C1169's 27%. AXM captures <2% of atom variance. Atoms measure compositional dimensions orthogonal to AXM dynamical property.	2	B, design freedom, atom, C1169	genuine=67%. AXM_R2=0.083.
+C1918	Atom effective dimensionality: 11 PCs at 80%, 18 at 95% (30 features). PC1 (23.8%)=yield vs cooling. Ratio 0.60 matches C1715.	2	B, design freedom, PCA, C1715	PCs_80=11. PC1=23.8%.
+C1919	4 pure FREEDOM features: mod_c (eta2=0.015), term_h (0.068), mod_d (0.079), mod_s (0.033). All REGIME-orthogonal. Monitoring/closure cluster.	2	B, design freedom, MOD, TERM, C1207	n=4. monitoring=2of4.
+C1920	REGIME decomposable but narrow: RF LOO 85.4%. head_k (imp=0.245) + pfx_qo (0.103) dominate. Within-Herbal: head_k eta2=0.887, pfx_qo=0.640, all else <0.15.	2	B, REGIME, atom, HEAD, PREFIX	RF=0.854. head_k=0.887.
+C1921	Freedom channels cross-section consistent: Herbal-Stars rho=0.783, Bio-Stars=0.806. Same features differentiate folios across sections.	2	B, design freedom, section	rho=0.783+.
+C1922	PREFIX+MOD drive ~60% of folio differentiation (JSD). PREFIX=30-34%, MOD=26-30%. HEAD/TERM contribute less.	2	B, design freedom, PREFIX, MOD	combined=60%.
+C1923	Atom-operational correlations: head_e<->e_ratio rho=0.816, term_n<->checkpoint rho=0.809, edepth<->e_ratio=0.749.	2	B, atom, operational	max_rho=0.816.
+C1924	Freedom in monitoring/closure clusters: C1207 {c,h} monitoring=2of4 FREEDOM, {d,y} closure=1of4. Energy/iteration=0 FREEDOM.	2	B, design freedom, C1207	monitoring=2of4.
 
 ---
 

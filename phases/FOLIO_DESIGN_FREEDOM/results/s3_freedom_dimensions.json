@@ -1,0 +1,765 @@
+{
+  "n_folios": 82,
+  "n_features": 30,
+  "n_pcs": 5,
+  "variance_explained": [
+    23.82,
+    10.21,
+    9.61,
+    7.75,
+    6.24
+  ],
+  "cumulative_variance": [
+    23.82,
+    34.03,
+    43.64,
+    51.39,
+    57.63
+  ],
+  "pc_interpretations": [
+    {
+      "pc": "PC1",
+      "top_positive": [
+        {
+          "feature": "head_a",
+          "gloss": "HEAD:into/yield [LOCKED]",
+          "loading": 0.3289
+        },
+        {
+          "feature": "term_r",
+          "gloss": "TERM:respond [LOW]",
+          "loading": 0.2558
+        },
+        {
+          "feature": "term_n",
+          "gloss": "TERM:bind [LOCKED]",
+          "loading": 0.2533
+        }
+      ],
+      "top_negative": [
+        {
+          "feature": "e_depth_mean",
+          "gloss": "cooling-depth (mean e-stacking)",
+          "loading": -0.3006
+        },
+        {
+          "feature": "term_y",
+          "gloss": "TERM:end [LOCKED]",
+          "loading": -0.2996
+        },
+        {
+          "feature": "head_e",
+          "gloss": "HEAD:cool [LOCKED]",
+          "loading": -0.2993
+        }
+      ],
+      "pos_summary": "HEAD:into/yield [LOCKED] + TERM:respond [LOW] + TERM:bind [LOCKED]",
+      "neg_summary": "cooling-depth (mean e-stacking) + TERM:end [LOCKED] + HEAD:cool [LOCKED]",
+      "proposed_label": "Yield vs Cooling emphasis"
+    },
+    {
+      "pc": "PC2",
+      "top_positive": [
+        {
+          "feature": "pfx_qo",
+          "gloss": "pfx:thermal-escape",
+          "loading": 0.3832
+        },
+        {
+          "feature": "head_t",
+          "gloss": "HEAD:transfer [SOLID]",
+          "loading": 0.3152
+        },
+        {
+          "feature": "mean_atom_length",
+          "gloss": "instruction-complexity",
+          "loading": 0.3147
+        }
+      ],
+      "top_negative": [
+        {
+          "feature": "pfx_bare",
+          "gloss": "pfx:no-prefix",
+          "loading": -0.2292
+        },
+        {
+          "feature": "pfx_ct",
+          "gloss": "pfx:registry-ref",
+          "loading": -0.2233
+        },
+        {
+          "feature": "pfx_ot",
+          "gloss": "pfx:frequent-op-alt",
+          "loading": -0.202
+        }
+      ],
+      "pos_summary": "pfx:thermal-escape + HEAD:transfer [SOLID] + instruction-complexity",
+      "neg_summary": "pfx:no-prefix + pfx:registry-ref + pfx:frequent-op-alt",
+      "proposed_label": "Escape-iteration complexity"
+    },
+    {
+      "pc": "PC3",
+      "top_positive": [
+        {
+          "feature": "head_k",
+          "gloss": "HEAD:heat [LOCKED]",
+          "loading": 0.439
+        },
+        {
+          "feature": "pfx_qo",
+          "gloss": "pfx:thermal-escape",
+          "loading": 0.3197
+        },
+        {
+          "feature": "term_l",
+          "gloss": "TERM:state [LOW]",
+          "loading": 0.1067
+        }
+      ],
+      "top_negative": [
+        {
+          "feature": "mod_p",
+          "gloss": "MOD:flag [LOW]",
+          "loading": -0.3621
+        },
+        {
+          "feature": "i_depth_mean",
+          "gloss": "iteration-depth (mean i-stacking)",
+          "loading": -0.3065
+        },
+        {
+          "feature": "head_o",
+          "gloss": "HEAD:arrange [LOCKED]",
+          "loading": -0.2652
+        }
+      ],
+      "pos_summary": "HEAD:heat [LOCKED] + pfx:thermal-escape + TERM:state [LOW]",
+      "neg_summary": "MOD:flag [LOW] + iteration-depth (mean i-stacking) + HEAD:arrange [LOCKED]",
+      "proposed_label": "Direct heat vs Modulated processing"
+    },
+    {
+      "pc": "PC4",
+      "top_positive": [
+        {
+          "feature": "head_headless",
+          "gloss": "headless (infrastructure token)",
+          "loading": 0.5682
+        },
+        {
+          "feature": "pfx_da",
+          "gloss": "pfx:infrastructure",
+          "loading": 0.2598
+        },
+        {
+          "feature": "pfx_sh",
+          "gloss": "pfx:energy-op-alt",
+          "loading": 0.1836
+        }
+      ],
+      "top_negative": [
+        {
+          "feature": "e_depth_mean",
+          "gloss": "cooling-depth (mean e-stacking)",
+          "loading": -0.3052
+        },
+        {
+          "feature": "term_l",
+          "gloss": "TERM:state [LOW]",
+          "loading": -0.2985
+        },
+        {
+          "feature": "pfx_ok",
+          "gloss": "pfx:frequent-op",
+          "loading": -0.2972
+        }
+      ],
+      "pos_summary": "headless (infrastructure token) + pfx:infrastructure + pfx:energy-op-alt",
+      "neg_summary": "cooling-depth (mean e-stacking) + TERM:state [LOW] + pfx:frequent-op",
+      "proposed_label": "Infrastructure density vs Cooling-state"
+    },
+    {
+      "pc": "PC5",
+      "top_positive": [
+        {
+          "feature": "pfx_ot",
+          "gloss": "pfx:frequent-op-alt",
+          "loading": 0.4886
+        },
+        {
+          "feature": "head_t",
+          "gloss": "HEAD:transfer [SOLID]",
+          "loading": 0.3174
+        },
+        {
+          "feature": "pfx_ol",
+          "gloss": "pfx:frequent-state",
+          "loading": 0.2275
+        }
+      ],
+      "top_negative": [
+        {
+          "feature": "pfx_da",
+          "gloss": "pfx:infrastructure",
+          "loading": -0.4129
+        },
+        {
+          "feature": "mod_f",
+          "gloss": "MOD:flag [LOW]",
+          "loading": -0.354
+        },
+        {
+          "feature": "i_depth_mean",
+          "gloss": "iteration-depth (mean i-stacking)",
+          "loading": -0.3136
+        }
+      ],
+      "pos_summary": "pfx:frequent-op-alt + HEAD:transfer [SOLID] + pfx:frequent-state",
+      "neg_summary": "pfx:infrastructure + MOD:flag [LOW] + iteration-depth (mean i-stacking)",
+      "proposed_label": "Operator-type selection"
+    }
+  ],
+  "pc_labels": {
+    "PC1": "Yield vs Cooling emphasis",
+    "PC2": "Escape-iteration complexity",
+    "PC3": "Direct heat vs Modulated processing",
+    "PC4": "Infrastructure density vs Cooling-state",
+    "PC5": "Operator-type selection"
+  },
+  "extreme_folios": {
+    "PC1": {
+      "label": "Yield vs Cooling emphasis",
+      "high": [
+        {
+          "folio": "f40r",
+          "section": "Herbal",
+          "score": 5.784
+        },
+        {
+          "folio": "f55v",
+          "section": "Herbal",
+          "score": 5.605
+        },
+        {
+          "folio": "f95v2",
+          "section": "Herbal",
+          "score": 5.343
+        }
+      ],
+      "low": [
+        {
+          "folio": "f41r",
+          "section": "Herbal",
+          "score": -8.173
+        },
+        {
+          "folio": "f57r",
+          "section": "Herbal",
+          "score": -6.852
+        },
+        {
+          "folio": "f26r",
+          "section": "Herbal",
+          "score": -5.082
+        }
+      ]
+    },
+    "PC2": {
+      "label": "Escape-iteration complexity",
+      "high": [
+        {
+          "folio": "f95r1",
+          "section": "Herbal",
+          "score": 4.07
+        },
+        {
+          "folio": "f114v",
+          "section": "Stars",
+          "score": 4.058
+        },
+        {
+          "folio": "f77r",
+          "section": "Bio",
+          "score": 3.714
+        }
+      ],
+      "low": [
+        {
+          "folio": "f48v",
+          "section": "Herbal",
+          "score": -5.138
+        },
+        {
+          "folio": "f33v",
+          "section": "Herbal",
+          "score": -3.934
+        },
+        {
+          "folio": "f112r",
+          "section": "Stars",
+          "score": -2.977
+        }
+      ]
+    },
+    "PC3": {
+      "label": "Direct heat vs Modulated processing",
+      "high": [
+        {
+          "folio": "f41r",
+          "section": "Herbal",
+          "score": 3.508
+        },
+        {
+          "folio": "f103r",
+          "section": "Stars",
+          "score": 3.441
+        },
+        {
+          "folio": "f108v",
+          "section": "Stars",
+          "score": 3.439
+        }
+      ],
+      "low": [
+        {
+          "folio": "f105v",
+          "section": "Stars",
+          "score": -4.955
+        },
+        {
+          "folio": "f114r",
+          "section": "Stars",
+          "score": -3.801
+        },
+        {
+          "folio": "f76v",
+          "section": "Bio",
+          "score": -3.329
+        }
+      ]
+    }
+  },
+  "operational_correlations": {
+    "k_ratio": {
+      "PC1": {
+        "r": 0.5111,
+        "p": 0.0
+      },
+      "PC2": {
+        "r": 0.2573,
+        "p": 0.0196
+      },
+      "PC3": {
+        "r": 0.4705,
+        "p": 0.0
+      },
+      "PC4": {
+        "r": 0.1677,
+        "p": 0.132
+      },
+      "PC5": {
+        "r": -0.1811,
+        "p": 0.1036
+      }
+    },
+    "h_ratio": {
+      "PC1": {
+        "r": 0.0492,
+        "p": 0.6605
+      },
+      "PC2": {
+        "r": 0.2117,
+        "p": 0.0562
+      },
+      "PC3": {
+        "r": -0.4957,
+        "p": 0.0
+      },
+      "PC4": {
+        "r": 0.2463,
+        "p": 0.0257
+      },
+      "PC5": {
+        "r": 0.1945,
+        "p": 0.0799
+      }
+    },
+    "e_ratio": {
+      "PC1": {
+        "r": -0.5548,
+        "p": 0.0
+      },
+      "PC2": {
+        "r": -0.3932,
+        "p": 0.0003
+      },
+      "PC3": {
+        "r": -0.1811,
+        "p": 0.1034
+      },
+      "PC4": {
+        "r": -0.3224,
+        "p": 0.0031
+      },
+      "PC5": {
+        "r": 0.0674,
+        "p": 0.5476
+      }
+    },
+    "iteration_rate": {
+      "PC1": {
+        "r": 0.2659,
+        "p": 0.0157
+      },
+      "PC2": {
+        "r": 0.1955,
+        "p": 0.0784
+      },
+      "PC3": {
+        "r": -0.2905,
+        "p": 0.0081
+      },
+      "PC4": {
+        "r": 0.0053,
+        "p": 0.9626
+      },
+      "PC5": {
+        "r": -0.1021,
+        "p": 0.3615
+      }
+    },
+    "checkpoint_rate": {
+      "PC1": {
+        "r": 0.3873,
+        "p": 0.0003
+      },
+      "PC2": {
+        "r": 0.5693,
+        "p": 0.0
+      },
+      "PC3": {
+        "r": 0.182,
+        "p": 0.1018
+      },
+      "PC4": {
+        "r": 0.0855,
+        "p": 0.4452
+      },
+      "PC5": {
+        "r": 0.2085,
+        "p": 0.0602
+      }
+    },
+    "terminal_rate": {
+      "PC1": {
+        "r": -0.3821,
+        "p": 0.0004
+      },
+      "PC2": {
+        "r": -0.2337,
+        "p": 0.0346
+      },
+      "PC3": {
+        "r": -0.1824,
+        "p": 0.1009
+      },
+      "PC4": {
+        "r": 0.0069,
+        "p": 0.951
+      },
+      "PC5": {
+        "r": -0.1206,
+        "p": 0.2803
+      }
+    },
+    "prep_te": {
+      "PC1": {
+        "r": -0.3268,
+        "p": 0.0027
+      },
+      "PC2": {
+        "r": 0.2254,
+        "p": 0.0417
+      },
+      "PC3": {
+        "r": -0.2472,
+        "p": 0.0252
+      },
+      "PC4": {
+        "r": -0.0716,
+        "p": 0.5228
+      },
+      "PC5": {
+        "r": 0.1591,
+        "p": 0.1535
+      }
+    },
+    "prep_pch": {
+      "PC1": {
+        "r": -0.0633,
+        "p": 0.5722
+      },
+      "PC2": {
+        "r": 0.1949,
+        "p": 0.0793
+      },
+      "PC3": {
+        "r": -0.4721,
+        "p": 0.0
+      },
+      "PC4": {
+        "r": -0.0346,
+        "p": 0.7573
+      },
+      "PC5": {
+        "r": 0.0824,
+        "p": 0.4618
+      }
+    },
+    "thermo_ke": {
+      "PC1": {
+        "r": -0.4984,
+        "p": 0.0
+      },
+      "PC2": {
+        "r": -0.1054,
+        "p": 0.3459
+      },
+      "PC3": {
+        "r": 0.3254,
+        "p": 0.0029
+      },
+      "PC4": {
+        "r": -0.2248,
+        "p": 0.0423
+      },
+      "PC5": {
+        "r": -0.1739,
+        "p": 0.1181
+      }
+    },
+    "thermo_kch": {
+      "PC1": {
+        "r": -0.108,
+        "p": 0.3341
+      },
+      "PC2": {
+        "r": 0.3865,
+        "p": 0.0003
+      },
+      "PC3": {
+        "r": 0.0233,
+        "p": 0.8357
+      },
+      "PC4": {
+        "r": 0.1147,
+        "p": 0.3047
+      },
+      "PC5": {
+        "r": -0.0412,
+        "p": 0.7132
+      }
+    }
+  },
+  "regime_correlations": {
+    "PC1": {
+      "r_spearman": 0.4994,
+      "p": 0.0,
+      "strength": "MODERATE"
+    },
+    "PC2": {
+      "r_spearman": 0.1922,
+      "p": 0.0836,
+      "strength": "WEAK"
+    },
+    "PC3": {
+      "r_spearman": 0.5201,
+      "p": 0.0,
+      "strength": "STRONG"
+    },
+    "PC4": {
+      "r_spearman": 0.0518,
+      "p": 0.6437,
+      "strength": "WEAK"
+    },
+    "PC5": {
+      "r_spearman": -0.1504,
+      "p": 0.1775,
+      "strength": "WEAK"
+    }
+  },
+  "folio_pair_analysis": {
+    "n_herbal_folios": 32,
+    "most_similar": [
+      {
+        "folio_a": "f50r",
+        "folio_b": "f94r",
+        "distance": 4.39,
+        "pc_contributions_pct": {
+          "PC1": 17.1,
+          "PC2": 5.3,
+          "PC3": 3.4,
+          "PC4": 41.0,
+          "PC5": 33.2
+        },
+        "dominant_pc": "PC4",
+        "dominant_pc_label": "Infrastructure density vs Cooling-state",
+        "score_a": {
+          "PC1": 2.05,
+          "PC2": 2.709,
+          "PC3": -0.068,
+          "PC4": 0.905,
+          "PC5": 0.241
+        },
+        "score_b": {
+          "PC1": 2.732,
+          "PC2": 2.329,
+          "PC3": 0.236,
+          "PC4": -0.15,
+          "PC5": 1.191
+        }
+      },
+      {
+        "folio_a": "f50v",
+        "folio_b": "f94r",
+        "distance": 4.5,
+        "pc_contributions_pct": {
+          "PC1": 2.0,
+          "PC2": 68.7,
+          "PC3": 7.7,
+          "PC4": 0.2,
+          "PC5": 21.4
+        },
+        "dominant_pc": "PC2",
+        "dominant_pc_label": "Escape-iteration complexity",
+        "score_a": {
+          "PC1": 2.464,
+          "PC2": 0.752,
+          "PC3": 0.763,
+          "PC4": -0.227,
+          "PC5": 0.31
+        },
+        "score_b": {
+          "PC1": 2.732,
+          "PC2": 2.329,
+          "PC3": 0.236,
+          "PC4": -0.15,
+          "PC5": 1.191
+        }
+      },
+      {
+        "folio_a": "f55r",
+        "folio_b": "f94r",
+        "distance": 4.858,
+        "pc_contributions_pct": {
+          "PC1": 43.4,
+          "PC2": 15.8,
+          "PC3": 1.1,
+          "PC4": 8.1,
+          "PC5": 31.6
+        },
+        "dominant_pc": "PC1",
+        "dominant_pc_label": "Yield vs Cooling emphasis",
+        "score_a": {
+          "PC1": 4.823,
+          "PC2": 1.067,
+          "PC3": -0.089,
+          "PC4": 0.751,
+          "PC5": -0.592
+        },
+        "score_b": {
+          "PC1": 2.732,
+          "PC2": 2.329,
+          "PC3": 0.236,
+          "PC4": -0.15,
+          "PC5": 1.191
+        }
+      }
+    ],
+    "most_different": [
+      {
+        "folio_a": "f40r",
+        "folio_b": "f41r",
+        "distance": 16.057,
+        "pc_contributions_pct": {
+          "PC1": 87.1,
+          "PC2": 0.9,
+          "PC3": 4.3,
+          "PC4": 1.0,
+          "PC5": 6.7
+        },
+        "dominant_pc": "PC1",
+        "dominant_pc_label": "Yield vs Cooling emphasis",
+        "score_a": {
+          "PC1": 5.784,
+          "PC2": -1.156,
+          "PC3": 0.407,
+          "PC4": -0.722,
+          "PC5": -2.972
+        },
+        "score_b": {
+          "PC1": -8.173,
+          "PC2": 0.234,
+          "PC3": 3.508,
+          "PC4": 0.778,
+          "PC5": 0.91
+        }
+      },
+      {
+        "folio_a": "f57r",
+        "folio_b": "f95v2",
+        "distance": 15.821,
+        "pc_contributions_pct": {
+          "PC1": 80.2,
+          "PC2": 3.5,
+          "PC3": 8.2,
+          "PC4": 0.2,
+          "PC5": 8.0
+        },
+        "dominant_pc": "PC1",
+        "dominant_pc_label": "Yield vs Cooling emphasis",
+        "score_a": {
+          "PC1": -6.852,
+          "PC2": -0.441,
+          "PC3": -3.022,
+          "PC4": 0.009,
+          "PC5": -1.164
+        },
+        "score_b": {
+          "PC1": 5.343,
+          "PC2": 2.092,
+          "PC3": 0.874,
+          "PC4": -0.549,
+          "PC5": 2.699
+        }
+      },
+      {
+        "folio_a": "f41r",
+        "folio_b": "f95v2",
+        "distance": 15.699,
+        "pc_contributions_pct": {
+          "PC1": 92.3,
+          "PC2": 1.7,
+          "PC3": 3.5,
+          "PC4": 0.9,
+          "PC5": 1.6
+        },
+        "dominant_pc": "PC1",
+        "dominant_pc_label": "Yield vs Cooling emphasis",
+        "score_a": {
+          "PC1": -8.173,
+          "PC2": 0.234,
+          "PC3": 3.508,
+          "PC4": 0.778,
+          "PC5": 0.91
+        },
+        "score_b": {
+          "PC1": 5.343,
+          "PC2": 2.092,
+          "PC3": 0.874,
+          "PC4": -0.549,
+          "PC5": 2.699
+        }
+      }
+    ]
+  }
+}

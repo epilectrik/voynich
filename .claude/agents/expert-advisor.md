@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1916 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1924 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1916.
+the highest ID present is C1924.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1916 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1924 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1916 validated constraints are present as canonical one-line claims with tier
+1924 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-01 11:08
-**Version:** FROZEN STATE (1916 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-01 12:31
+**Version:** FROZEN STATE (1924 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2155,6 +2155,14 @@ C1913	C1908 seasonal i/d swap driven specifically by aiin-family: Summer+Winter 
 C1914	daiin rate anti-correlates with folio thermal complexity: folio-level rho=-0.324, p=0.0004. Herbal line-level rho=-0.089, p=0.0018. daiin is infrastructure accompanying simpler (lower e_depth) content. Cluster 3 (Stripped-down Herbal, e_depth 0.133) has highest daiin rate	2	A, aiin, daiin, thermal, e_depth
 C1915	AZC daiin-aiin co-occurrence attraction: OR=5.04, Fisher p=0.003. In AZC only, daiin and aiin co-occur on same line 3.3x more than expected. A and B show independence (OR~1.0, ns). AZC uses both tokens in complementary diagram-entry roles	2	AZC, aiin, daiin, co-occurrence
 C1916	aiin-family internal composition is section-conditioned: headed/headless ratio differs by section in A and B. Herbal/Pharma A-side majority headless (daiin-driven); Text A-side majority headed. B Cosmo/Stars headed-dominant; Bio most headless	2	GLOBAL, aiin, section, HEAD, C1507
+C1917	67% genuine atom freedom: within-section atom variance is 2.5x larger than C1169's 27% AXM residual. AXM captures <2% of atom variance (mean R²=0.083). Atoms measure compositional dimensions almost entirely orthogonal to AXM's dynamical property. Verdict: ATOMS_ORTHOGONAL_TO_AXM	2	B, design freedom, atom, C1169
+C1918	Atom-level effective dimensionality: 11 PCs at 80% variance, 18 at 95% (from 30 section-residualized features). PC1 (23.8%) = yield vs cooling emphasis (head_a vs e_depth/head_e). Dimensionality ratio 0.60 matches C1715's 0.55, confirming atom features don't dramatically compress	2	B, design freedom, PCA, C1715
+C1919	4 pure FREEDOM atom features (section eta² < 0.10, REGIME-orthogonal within Herbal): mod_c (adjust, eta²=0.015), term_h (transparent, eta²=0.068), mod_d (mark, eta²=0.079), mod_s (sequence, eta²=0.033). Freedom concentrates in C1207's monitoring cluster ({c,h})	2	B, design freedom, MOD, TERM, C1207, C1154
+C1920	REGIME is atom-decomposable but narrow: RF LOO-CV accuracy 85.4% (chance 25%). Top 2 features (head_k importance=0.245, pfx_qo=0.103) capture most REGIME signal. Within-Herbal: only head_k (eta²=0.887) and pfx_qo (eta²=0.640) are REGIME-constrained; all other features eta² < 0.15	2	B, REGIME, atom, HEAD, PREFIX
+C1921	Freedom channels consistent across sections: Bio-Herbal, Bio-Stars, Herbal-Stars feature rankings correlate. The same atom dimensions differentiate folios regardless of section. Not an artifact of any single section	2	B, design freedom, section, cross-section
+C1922	PREFIX and MOD layers drive folio differentiation: ~60% of pairwise JSD between folios comes from PREFIX (~30-34%) and MOD (~26-30%) distributions. HEAD and TERM contribute less. Within-section, these layers carry the operational tuning that makes each program unique	2	B, design freedom, PREFIX, MOD, JSD
+C1923	Atom features predict operational profiles strongly: head_e↔e_ratio rho=+0.816, term_n↔checkpoint_rate rho=+0.809, e_depth↔e_ratio rho=+0.749. Atom-level composition directly maps to known operational metrics	2	B, atom, operational, e_ratio, checkpoint
+C1924	Freedom concentrates in monitoring/closure atom clusters: of C1207's 5 clusters, {c,h} monitoring contains 2 of 4 FREEDOM features, {d,y} closure contains 1. Energy ({k,l}) and iteration ({a,i,n,r}) clusters have zero FREEDOM features — they are section/REGIME-constrained	2	B, design freedom, C1207, monitoring, closure
 
 ---
 

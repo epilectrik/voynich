@@ -1,0 +1,430 @@
+{
+  "rf_loo": {
+    "accuracy": 0.8536585365853658,
+    "chance": 0.25,
+    "confusion_matrix": [
+      [
+        20,
+        1,
+        0,
+        0
+      ],
+      [
+        4,
+        15,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        16,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        19
+      ]
+    ],
+    "top_importances": {
+      "head_k": 0.24519233766821,
+      "pfx_qo": 0.10322206439366653,
+      "term_r": 0.06076870772579903,
+      "mod_p": 0.03897215473528288,
+      "mod_f": 0.034735761101547004,
+      "mod_s": 0.032781608726323366,
+      "term_y": 0.031463400345134514,
+      "pfx_bare": 0.030166336066376195,
+      "head_o": 0.029073730973045938,
+      "mod_i": 0.02707986329105484,
+      "term_m": 0.027022109164783287,
+      "term_l": 0.026962955627075787,
+      "pfx_da": 0.02611896945640106,
+      "i_depth_mean": 0.024057018616545765,
+      "head_a": 0.023532555899484834
+    },
+    "n_folios": 82
+  },
+  "regime_eta": {
+    "all_folios": {
+      "head_a": {
+        "eta_sq": 0.1849,
+        "p": 0.0011
+      },
+      "head_e": {
+        "eta_sq": 0.0422,
+        "p": 0.3362
+      },
+      "head_o": {
+        "eta_sq": 0.2147,
+        "p": 0.0003
+      },
+      "head_k": {
+        "eta_sq": 0.8946,
+        "p": 0.0
+      },
+      "head_t": {
+        "eta_sq": 0.0242,
+        "p": 0.5878
+      },
+      "head_headless": {
+        "eta_sq": 0.1187,
+        "p": 0.0193
+      },
+      "mod_p": {
+        "eta_sq": 0.1624,
+        "p": 0.003
+      },
+      "mod_f": {
+        "eta_sq": 0.1534,
+        "p": 0.0045
+      },
+      "mod_i": {
+        "eta_sq": 0.103,
+        "p": 0.0362
+      },
+      "mod_c": {
+        "eta_sq": 0.03,
+        "p": 0.4956
+      },
+      "mod_d": {
+        "eta_sq": 0.0493,
+        "p": 0.2649
+      },
+      "mod_s": {
+        "eta_sq": 0.1916,
+        "p": 0.0008
+      },
+      "term_y": {
+        "eta_sq": 0.2069,
+        "p": 0.0004
+      },
+      "term_n": {
+        "eta_sq": 0.021,
+        "p": 0.6441
+      },
+      "term_l": {
+        "eta_sq": 0.1692,
+        "p": 0.0022
+      },
+      "term_r": {
+        "eta_sq": 0.2656,
+        "p": 0.0
+      },
+      "term_m": {
+        "eta_sq": 0.138,
+        "p": 0.0087
+      },
+      "term_h": {
+        "eta_sq": 0.0196,
+        "p": 0.6693
+      },
+      "pfx_qo": {
+        "eta_sq": 0.6378,
+        "p": 0.0
+      },
+      "pfx_ch": {
+        "eta_sq": 0.0334,
+        "p": 0.4462
+      },
+      "pfx_sh": {
+        "eta_sq": 0.0516,
+        "p": 0.2448
+      },
+      "pfx_ok": {
+        "eta_sq": 0.026,
+        "p": 0.5592
+      },
+      "pfx_ot": {
+        "eta_sq": 0.1067,
+        "p": 0.0312
+      },
+      "pfx_da": {
+        "eta_sq": 0.139,
+        "p": 0.0083
+      },
+      "pfx_ol": {
+        "eta_sq": 0.098,
+        "p": 0.044
+      },
+      "pfx_ct": {
+        "eta_sq": 0.1226,
+        "p": 0.0164
+      },
+      "pfx_bare": {
+        "eta_sq": 0.3394,
+        "p": 0.0
+      },
+      "e_depth_mean": {
+        "eta_sq": 0.1065,
+        "p": 0.0316
+      },
+      "i_depth_mean": {
+        "eta_sq": 0.2324,
+        "p": 0.0001
+      },
+      "mean_atom_length": {
+        "eta_sq": 0.0188,
+        "p": 0.6842
+      }
+    },
+    "within_herbal": {
+      "head_a": {
+        "eta_sq": 0.0692,
+        "p": 0.5635
+      },
+      "head_e": {
+        "eta_sq": 0.0936,
+        "p": 0.4238
+      },
+      "head_o": {
+        "eta_sq": 0.0927,
+        "p": 0.4282
+      },
+      "head_k": {
+        "eta_sq": 0.8873,
+        "p": 0.0
+      },
+      "head_t": {
+        "eta_sq": 0.1187,
+        "p": 0.3081
+      },
+      "head_headless": {
+        "eta_sq": 0.0196,
+        "p": 0.9048
+      },
+      "mod_p": {
+        "eta_sq": 0.0246,
+        "p": 0.8706
+      },
+      "mod_f": {
+        "eta_sq": 0.0331,
+        "p": 0.8114
+      },
+      "mod_i": {
+        "eta_sq": 0.225,
+        "p": 0.064
+      },
+      "mod_c": {
+        "eta_sq": 0.0145,
+        "p": 0.9368
+      },
+      "mod_d": {
+        "eta_sq": 0.0787,
+        "p": 0.506
+      },
+      "mod_s": {
+        "eta_sq": 0.0325,
+        "p": 0.8155
+      },
+      "term_y": {
+        "eta_sq": 0.1316,
+        "p": 0.2594
+      },
+      "term_n": {
+        "eta_sq": 0.1916,
+        "p": 0.1089
+      },
+      "term_l": {
+        "eta_sq": 0.0504,
+        "p": 0.6888
+      },
+      "term_r": {
+        "eta_sq": 0.0672,
+        "p": 0.5759
+      },
+      "term_m": {
+        "eta_sq": 0.1394,
+        "p": 0.233
+      },
+      "term_h": {
+        "eta_sq": 0.0679,
+        "p": 0.5714
+      },
+      "pfx_qo": {
+        "eta_sq": 0.6403,
+        "p": 0.0
+      },
+      "pfx_ch": {
+        "eta_sq": 0.1342,
+        "p": 0.2503
+      },
+      "pfx_sh": {
+        "eta_sq": 0.0007,
+        "p": 0.9993
+      },
+      "pfx_ok": {
+        "eta_sq": 0.0479,
+        "p": 0.7058
+      },
+      "pfx_ot": {
+        "eta_sq": 0.1085,
+        "p": 0.3515
+      },
+      "pfx_da": {
+        "eta_sq": 0.0198,
+        "p": 0.9036
+      },
+      "pfx_ol": {
+        "eta_sq": 0.0695,
+        "p": 0.5619
+      },
+      "pfx_ct": {
+        "eta_sq": 0.4323,
+        "p": 0.0011
+      },
+      "pfx_bare": {
+        "eta_sq": 0.2079,
+        "p": 0.0844
+      },
+      "e_depth_mean": {
+        "eta_sq": 0.0515,
+        "p": 0.681
+      },
+      "i_depth_mean": {
+        "eta_sq": 0.2213,
+        "p": 0.068
+      },
+      "mean_atom_length": {
+        "eta_sq": 0.0219,
+        "p": 0.8892
+      }
+    },
+    "section_eta": {
+      "head_a": 0.314,
+      "head_e": 0.1073,
+      "head_o": 0.2478,
+      "head_k": 0.5015,
+      "head_t": 0.1867,
+      "head_headless": 0.4392,
+      "mod_p": 0.1499,
+      "mod_f": 0.3851,
+      "mod_i": 0.2789,
+      "mod_c": 0.075,
+      "mod_d": 0.058,
+      "mod_s": 0.0926,
+      "term_y": 0.2481,
+      "term_n": 0.186,
+      "term_l": 0.2833,
+      "term_r": 0.3803,
+      "term_m": 0.3048,
+      "term_h": 0.051,
+      "pfx_qo": 0.6161,
+      "pfx_ch": 0.1691,
+      "pfx_sh": 0.1982,
+      "pfx_ok": 0.2434,
+      "pfx_ot": 0.2064,
+      "pfx_da": 0.3485,
+      "pfx_ol": 0.2759,
+      "pfx_ct": 0.1262,
+      "pfx_bare": 0.3279,
+      "e_depth_mean": 0.2741,
+      "i_depth_mean": 0.2396,
+      "mean_atom_length": 0.3344
+    },
+    "classifications": {
+      "head_k": "BOTH",
+      "pfx_qo": "BOTH",
+      "pfx_ct": "REGIME",
+      "mod_i": "BOTH",
+      "i_depth_mean": "BOTH",
+      "pfx_bare": "BOTH",
+      "term_n": "BOTH",
+      "term_m": "BOTH",
+      "pfx_ch": "BOTH",
+      "term_y": "BOTH",
+      "head_t": "BOTH",
+      "pfx_ot": "BOTH",
+      "head_e": "REGIME",
+      "head_o": "BOTH",
+      "mod_d": "REGIME",
+      "pfx_ol": "BOTH",
+      "head_a": "BOTH",
+      "term_h": "REGIME",
+      "term_r": "BOTH",
+      "e_depth_mean": "BOTH",
+      "term_l": "BOTH",
+      "pfx_ok": "SECTION",
+      "mod_f": "SECTION",
+      "mod_s": "FREEDOM",
+      "mod_p": "FREEDOM",
+      "mean_atom_length": "SECTION",
+      "pfx_da": "SECTION",
+      "head_headless": "SECTION",
+      "mod_c": "FREEDOM",
+      "pfx_sh": "SECTION"
+    },
+    "counts": {
+      "BOTH": 17,
+      "REGIME": 4,
+      "SECTION": 6,
+      "FREEDOM": 3
+    }
+  },
+  "within_regime_cv": {
+    "head_a": 0.4878,
+    "head_e": 0.3216,
+    "head_o": 0.3507,
+    "head_k": 0.1581,
+    "head_t": 0.6371,
+    "head_headless": 0.2136,
+    "mod_p": 0.5626,
+    "mod_f": 1.019,
+    "mod_i": 0.4348,
+    "mod_c": 0.4265,
+    "mod_d": 0.2958,
+    "mod_s": 0.4232,
+    "term_y": 0.2024,
+    "term_n": 0.3825,
+    "term_l": 0.3693,
+    "term_r": 0.3766,
+    "term_m": 0.6637,
+    "term_h": 2.515,
+    "pfx_qo": 0.2864,
+    "pfx_ch": 0.2903,
+    "pfx_sh": 0.4574,
+    "pfx_ok": 0.5563,
+    "pfx_ot": 0.5285,
+    "pfx_da": 0.4518,
+    "pfx_ol": 0.6088,
+    "pfx_ct": 1.3667,
+    "pfx_bare": 0.1877,
+    "e_depth_mean": 0.3415,
+    "i_depth_mean": 0.0999,
+    "mean_atom_length": 0.0838
+  },
+  "summary": {
+    "regime_atoms": [
+      "head_k",
+      "pfx_qo",
+      "pfx_ct",
+      "mod_i",
+      "i_depth_mean",
+      "pfx_bare",
+      "term_n",
+      "term_m",
+      "pfx_ch",
+      "term_y",
+      "head_t",
+      "pfx_ot",
+      "head_e",
+      "head_o",
+      "mod_d",
+      "pfx_ol",
+      "head_a",
+      "term_h",
+      "term_r",
+      "e_depth_mean",
+      "term_l"
+    ],
+    "freedom_atoms": [
+      "mod_s",
+      "mod_p",
+      "mod_c"
+    ],
+    "rf_accuracy": 0.8536585365853658,
+    "verdict": "REGIME_DECOMPOSABLE_BUT_NARROW"
+  }
+}

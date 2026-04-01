@@ -1,0 +1,247 @@
+{
+  "test": "s6_bridge_head_channel_probe",
+  "description": "Probe whether bridge MIDDLE HEAD-channel features create specific A-to-B folio links",
+  "bridge_middle_count": 393,
+  "a_folios_profiled": 114,
+  "b_folios_profiled": 82,
+  "min_bridge_tokens": 10,
+  "test1_head_cosine": {
+    "f75r": {
+      "n_bridge_tokens": 402,
+      "head_profile": {
+        "a": 0.0622,
+        "e": 0.2861,
+        "o": 0.0622,
+        "k": 0.2338,
+        "t": 0.0199,
+        "headless": 0.3358
+      },
+      "top5_matches": [
+        {
+          "folio": "f88v",
+          "cosine": 0.9382,
+          "n": 136
+        },
+        {
+          "folio": "f89r2",
+          "cosine": 0.9354,
+          "n": 210
+        },
+        {
+          "folio": "f102r2",
+          "cosine": 0.9324,
+          "n": 118
+        },
+        {
+          "folio": "f99r",
+          "cosine": 0.9292,
+          "n": 153
+        },
+        {
+          "folio": "f102v1",
+          "cosine": 0.9147,
+          "n": 113
+        }
+      ],
+      "worst_cosine": 0.6203,
+      "mean_cosine": 0.7789,
+      "std_cosine": 0.0764
+    },
+    "f76r": {
+      "n_bridge_tokens": 521,
+      "head_profile": {
+        "a": 0.1267,
+        "e": 0.3321,
+        "o": 0.0633,
+        "k": 0.1248,
+        "t": 0.0192,
+        "headless": 0.334
+      },
+      "top5_matches": [
+        {
+          "folio": "f102r2",
+          "cosine": 0.967,
+          "n": 118
+        },
+        {
+          "folio": "f88v",
+          "cosine": 0.9669,
+          "n": 136
+        },
+        {
+          "folio": "f89r2",
+          "cosine": 0.9648,
+          "n": 210
+        },
+        {
+          "folio": "f99r",
+          "cosine": 0.9605,
+          "n": 153
+        },
+        {
+          "folio": "f87v",
+          "cosine": 0.9601,
+          "n": 78
+        }
+      ],
+      "worst_cosine": 0.6272,
+      "mean_cosine": 0.7918,
+      "std_cosine": 0.0863
+    },
+    "f77v": {
+      "n_bridge_tokens": 319,
+      "head_profile": {
+        "a": 0.0408,
+        "e": 0.3009,
+        "o": 0.0627,
+        "k": 0.2194,
+        "t": 0.0376,
+        "headless": 0.3386
+      },
+      "top5_matches": [
+        {
+          "folio": "f88v",
+          "cosine": 0.9457,
+          "n": 136
+        },
+        {
+          "folio": "f89r2",
+          "cosine": 0.944,
+          "n": 210
+        },
+        {
+          "folio": "f102r2",
+          "cosine": 0.9411,
+          "n": 118
+        },
+        {
+          "folio": "f99r",
+          "cosine": 0.934,
+          "n": 153
+        },
+        {
+          "folio": "f102v1",
+          "cosine": 0.927,
+          "n": 113
+        }
+      ],
+      "worst_cosine": 0.6232,
+      "mean_cosine": 0.7809,
+      "std_cosine": 0.0783
+    },
+    "f84r": {
+      "n_bridge_tokens": 349,
+      "head_profile": {
+        "a": 0.0659,
+        "e": 0.2693,
+        "o": 0.1089,
+        "k": 0.1691,
+        "t": 0.043,
+        "headless": 0.3438
+      },
+      "top5_matches": [
+        {
+          "folio": "f99r",
+          "cosine": 0.9739,
+          "n": 153
+        },
+        {
+          "folio": "f89r2",
+          "cosine": 0.9737,
+          "n": 210
+        },
+        {
+          "folio": "f88v",
+          "cosine": 0.9717,
+          "n": 136
+        },
+        {
+          "folio": "f102r2",
+          "cosine": 0.9672,
+          "n": 118
+        },
+        {
+          "folio": "f102v1",
+          "cosine": 0.9589,
+          "n": 113
+        }
+      ],
+      "worst_cosine": 0.7223,
+      "mean_cosine": 0.8488,
+      "std_cosine": 0.0633
+    }
+  },
+  "test2_per_channel_spearman": {
+    "a": {
+      "rho": 0.5041,
+      "p": 0.0
+    },
+    "e": {
+      "rho": 0.7485,
+      "p": 0.0
+    },
+    "o": {
+      "rho": 0.6962,
+      "p": 0.0
+    },
+    "k": {
+      "rho": 0.3646,
+      "p": 0.0001
+    },
+    "t": {
+      "rho": 0.2734,
+      "p": 0.0032
+    },
+    "headless": {
+      "rho": 0.6704,
+      "p": 0.0
+    }
+  },
+  "test3_permutation": {
+    "observed_mean_max_cosine": 0.9708,
+    "null_mean": 0.9708,
+    "null_std": 0.0,
+    "p_value": 1.0,
+    "z_score": -1.0,
+    "n_permutations": 1000
+  },
+  "test4_edepth": {
+    "a_folios": 114,
+    "b_folios": 82,
+    "a_mean_edepth": 0.2613,
+    "b_mean_edepth": 0.51,
+    "matched_correlation": {
+      "rho": 0.7257,
+      "p": 0.0,
+      "n_folios": 114
+    },
+    "a_edepth_range": [
+      0.0,
+      0.8462
+    ],
+    "b_edepth_range": [
+      0.1368,
+      0.9722
+    ]
+  },
+  "mean_a_head_profile": {
+    "a": 0.0636,
+    "e": 0.1321,
+    "o": 0.2492,
+    "k": 0.0543,
+    "t": 0.0371,
+    "headless": 0.4637
+  },
+  "mean_b_head_profile": {
+    "a": 0.1368,
+    "e": 0.2714,
+    "o": 0.1167,
+    "k": 0.1234,
+    "t": 0.0343,
+    "headless": 0.3174
+  },
+  "mean_profile_spearman": {
+    "rho": 0.6571,
+    "p": 0.1562
+  }
+}
