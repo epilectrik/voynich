@@ -1,0 +1,892 @@
+{
+  "description": "i/d MOD atom swap analysis across zodiac seasons",
+  "season_definitions": {
+    "Spring": [
+      "f70v1",
+      "f70v2",
+      "f71r"
+    ],
+    "Summer": [
+      "f72r2",
+      "f72r3",
+      "f72v1"
+    ],
+    "Autumn": [
+      "f72v2",
+      "f72v3",
+      "f73r"
+    ],
+    "Winter": [
+      "f71v",
+      "f72r1",
+      "f73v"
+    ]
+  },
+  "token_level_classification": {
+    "by_season": {
+      "Spring": {
+        "total": 316,
+        "i_only": 27,
+        "d_only": 55,
+        "both": 6,
+        "neither": 228,
+        "i_rate": 0.1044,
+        "d_rate": 0.193
+      },
+      "Summer": {
+        "total": 372,
+        "i_only": 69,
+        "d_only": 50,
+        "both": 5,
+        "neither": 248,
+        "i_rate": 0.1989,
+        "d_rate": 0.1478
+      },
+      "Autumn": {
+        "total": 310,
+        "i_only": 34,
+        "d_only": 62,
+        "both": 4,
+        "neither": 210,
+        "i_rate": 0.1226,
+        "d_rate": 0.2129
+      },
+      "Winter": {
+        "total": 301,
+        "i_only": 39,
+        "d_only": 56,
+        "both": 3,
+        "neither": 203,
+        "i_rate": 0.1395,
+        "d_rate": 0.196
+      }
+    },
+    "by_folio": {
+      "f70v1": {
+        "season": "Spring",
+        "total": 86,
+        "i_only": 10,
+        "d_only": 15,
+        "both": 1,
+        "neither": 60,
+        "i_rate": 0.1279,
+        "d_rate": 0.186
+      },
+      "f70v2": {
+        "season": "Spring",
+        "total": 139,
+        "i_only": 13,
+        "d_only": 20,
+        "both": 5,
+        "neither": 101,
+        "i_rate": 0.1295,
+        "d_rate": 0.1799
+      },
+      "f71r": {
+        "season": "Spring",
+        "total": 91,
+        "i_only": 4,
+        "d_only": 20,
+        "both": 0,
+        "neither": 67,
+        "i_rate": 0.044,
+        "d_rate": 0.2198
+      },
+      "f72r2": {
+        "season": "Summer",
+        "total": 110,
+        "i_only": 22,
+        "d_only": 12,
+        "both": 2,
+        "neither": 74,
+        "i_rate": 0.2182,
+        "d_rate": 0.1273
+      },
+      "f72r3": {
+        "season": "Summer",
+        "total": 163,
+        "i_only": 33,
+        "d_only": 19,
+        "both": 2,
+        "neither": 109,
+        "i_rate": 0.2147,
+        "d_rate": 0.1288
+      },
+      "f72v1": {
+        "season": "Summer",
+        "total": 99,
+        "i_only": 14,
+        "d_only": 19,
+        "both": 1,
+        "neither": 65,
+        "i_rate": 0.1515,
+        "d_rate": 0.202
+      },
+      "f72v2": {
+        "season": "Autumn",
+        "total": 105,
+        "i_only": 15,
+        "d_only": 21,
+        "both": 1,
+        "neither": 68,
+        "i_rate": 0.1524,
+        "d_rate": 0.2095
+      },
+      "f72v3": {
+        "season": "Autumn",
+        "total": 111,
+        "i_only": 9,
+        "d_only": 21,
+        "both": 2,
+        "neither": 79,
+        "i_rate": 0.0991,
+        "d_rate": 0.2072
+      },
+      "f73r": {
+        "season": "Autumn",
+        "total": 94,
+        "i_only": 10,
+        "d_only": 20,
+        "both": 1,
+        "neither": 63,
+        "i_rate": 0.117,
+        "d_rate": 0.2234
+      },
+      "f71v": {
+        "season": "Winter",
+        "total": 99,
+        "i_only": 10,
+        "d_only": 9,
+        "both": 1,
+        "neither": 79,
+        "i_rate": 0.1111,
+        "d_rate": 0.101
+      },
+      "f72r1": {
+        "season": "Winter",
+        "total": 105,
+        "i_only": 19,
+        "d_only": 12,
+        "both": 1,
+        "neither": 73,
+        "i_rate": 0.1905,
+        "d_rate": 0.1238
+      },
+      "f73v": {
+        "season": "Winter",
+        "total": 97,
+        "i_only": 10,
+        "d_only": 35,
+        "both": 1,
+        "neither": 51,
+        "i_rate": 0.1134,
+        "d_rate": 0.3711
+      }
+    }
+  },
+  "head_id_compounds": {
+    "Spring": {
+      "a": {
+        "with_i": 11,
+        "with_d": 6
+      },
+      "e": {
+        "with_i": 3,
+        "with_d": 27
+      },
+      "k": {
+        "with_i": 0,
+        "with_d": 1
+      },
+      "o": {
+        "with_i": 7,
+        "with_d": 12
+      },
+      "t": {
+        "with_i": 0,
+        "with_d": 0
+      }
+    },
+    "Summer": {
+      "a": {
+        "with_i": 37,
+        "with_d": 5
+      },
+      "e": {
+        "with_i": 7,
+        "with_d": 24
+      },
+      "k": {
+        "with_i": 1,
+        "with_d": 1
+      },
+      "o": {
+        "with_i": 15,
+        "with_d": 10
+      },
+      "t": {
+        "with_i": 1,
+        "with_d": 1
+      }
+    },
+    "Autumn": {
+      "a": {
+        "with_i": 13,
+        "with_d": 1
+      },
+      "e": {
+        "with_i": 7,
+        "with_d": 38
+      },
+      "k": {
+        "with_i": 0,
+        "with_d": 1
+      },
+      "o": {
+        "with_i": 9,
+        "with_d": 14
+      },
+      "t": {
+        "with_i": 0,
+        "with_d": 0
+      }
+    },
+    "Winter": {
+      "a": {
+        "with_i": 26,
+        "with_d": 3
+      },
+      "e": {
+        "with_i": 3,
+        "with_d": 31
+      },
+      "k": {
+        "with_i": 1,
+        "with_d": 1
+      },
+      "o": {
+        "with_i": 6,
+        "with_d": 9
+      },
+      "t": {
+        "with_i": 0,
+        "with_d": 1
+      }
+    }
+  },
+  "top_words": {
+    "Spring": {
+      "top_i_words": [
+        [
+          "aiin",
+          5
+        ],
+        [
+          "daiin",
+          4
+        ],
+        [
+          "dair",
+          2
+        ],
+        [
+          "otaiin",
+          2
+        ],
+        [
+          "alain",
+          1
+        ],
+        [
+          "cholaiin",
+          1
+        ],
+        [
+          "otoaiin",
+          1
+        ],
+        [
+          "todaiin",
+          1
+        ],
+        [
+          "chokain",
+          1
+        ],
+        [
+          "chedaiin",
+          1
+        ],
+        [
+          "daiir",
+          1
+        ],
+        [
+          "daimdy",
+          1
+        ],
+        [
+          "ykolaiin",
+          1
+        ],
+        [
+          "aildy",
+          1
+        ],
+        [
+          "otaiir",
+          1
+        ]
+      ],
+      "top_d_words": [
+        [
+          "oteody",
+          6
+        ],
+        [
+          "dy",
+          3
+        ],
+        [
+          "okody",
+          3
+        ],
+        [
+          "ody",
+          2
+        ],
+        [
+          "oteeody",
+          2
+        ],
+        [
+          "oteedy",
+          2
+        ],
+        [
+          "cheody",
+          2
+        ],
+        [
+          "okeodar",
+          2
+        ],
+        [
+          "choeteedy",
+          1
+        ],
+        [
+          "sheodaly",
+          1
+        ],
+        [
+          "todaiin",
+          1
+        ],
+        [
+          "otody",
+          1
+        ],
+        [
+          "otald",
+          1
+        ],
+        [
+          "okydy",
+          1
+        ],
+        [
+          "chedaiin",
+          1
+        ]
+      ]
+    },
+    "Summer": {
+      "top_i_words": [
+        [
+          "aiin",
+          11
+        ],
+        [
+          "daiin",
+          3
+        ],
+        [
+          "otaiin",
+          3
+        ],
+        [
+          "okaiin",
+          3
+        ],
+        [
+          "olaiin",
+          3
+        ],
+        [
+          "chekaiin",
+          2
+        ],
+        [
+          "saiin",
+          2
+        ],
+        [
+          "air",
+          2
+        ],
+        [
+          "oiin",
+          2
+        ],
+        [
+          "oklairdy",
+          1
+        ],
+        [
+          "okairy",
+          1
+        ],
+        [
+          "otais",
+          1
+        ],
+        [
+          "okalaiin",
+          1
+        ],
+        [
+          "chtaiin",
+          1
+        ],
+        [
+          "otair",
+          1
+        ]
+      ],
+      "top_d_words": [
+        [
+          "dy",
+          4
+        ],
+        [
+          "oteody",
+          4
+        ],
+        [
+          "oteedy",
+          2
+        ],
+        [
+          "chedy",
+          2
+        ],
+        [
+          "ofchdady",
+          1
+        ],
+        [
+          "oklairdy",
+          1
+        ],
+        [
+          "cheokeodal",
+          1
+        ],
+        [
+          "d",
+          1
+        ],
+        [
+          "qokeodal",
+          1
+        ],
+        [
+          "otaraldy",
+          1
+        ],
+        [
+          "okyd",
+          1
+        ],
+        [
+          "teodal",
+          1
+        ],
+        [
+          "oteodaiin",
+          1
+        ],
+        [
+          "dalchdy",
+          1
+        ],
+        [
+          "qoteeody",
+          1
+        ]
+      ]
+    },
+    "Autumn": {
+      "top_i_words": [
+        [
+          "aiin",
+          4
+        ],
+        [
+          "daiin",
+          3
+        ],
+        [
+          "air",
+          3
+        ],
+        [
+          "opaiin",
+          2
+        ],
+        [
+          "olaiin",
+          1
+        ],
+        [
+          "daein",
+          1
+        ],
+        [
+          "oyteiedar",
+          1
+        ],
+        [
+          "cholairy",
+          1
+        ],
+        [
+          "cheis",
+          1
+        ],
+        [
+          "odair",
+          1
+        ],
+        [
+          "yiin",
+          1
+        ],
+        [
+          "choraiin",
+          1
+        ],
+        [
+          "chekaiphy",
+          1
+        ],
+        [
+          "kair",
+          1
+        ],
+        [
+          "okolraiin",
+          1
+        ]
+      ],
+      "top_d_words": [
+        [
+          "oteodal",
+          2
+        ],
+        [
+          "shedy",
+          2
+        ],
+        [
+          "aldy",
+          2
+        ],
+        [
+          "chdy",
+          2
+        ],
+        [
+          "oksedy",
+          2
+        ],
+        [
+          "okedy",
+          2
+        ],
+        [
+          "okeody",
+          2
+        ],
+        [
+          "otedar",
+          1
+        ],
+        [
+          "oteody",
+          1
+        ],
+        [
+          "sheody",
+          1
+        ],
+        [
+          "shedykeyl",
+          1
+        ],
+        [
+          "eteodys",
+          1
+        ],
+        [
+          "teody",
+          1
+        ],
+        [
+          "teoda",
+          1
+        ],
+        [
+          "oyteiedar",
+          1
+        ]
+      ]
+    },
+    "Winter": {
+      "top_i_words": [
+        [
+          "aiin",
+          7
+        ],
+        [
+          "otaiin",
+          6
+        ],
+        [
+          "okaiin",
+          2
+        ],
+        [
+          "oteeodaiin",
+          1
+        ],
+        [
+          "daiin",
+          1
+        ],
+        [
+          "okaikaly",
+          1
+        ],
+        [
+          "okaraiin",
+          1
+        ],
+        [
+          "kaiin",
+          1
+        ],
+        [
+          "otalaiin",
+          1
+        ],
+        [
+          "cheekaiin",
+          1
+        ],
+        [
+          "okoiin",
+          1
+        ],
+        [
+          "okaiis",
+          1
+        ],
+        [
+          "chalaiin",
+          1
+        ],
+        [
+          "chdaiirsainy",
+          1
+        ],
+        [
+          "oaiin",
+          1
+        ]
+      ],
+      "top_d_words": [
+        [
+          "oteody",
+          4
+        ],
+        [
+          "dy",
+          3
+        ],
+        [
+          "oteodar",
+          2
+        ],
+        [
+          "okeodaly",
+          2
+        ],
+        [
+          "ykeody",
+          2
+        ],
+        [
+          "otedy",
+          2
+        ],
+        [
+          "shedy",
+          2
+        ],
+        [
+          "okeody",
+          2
+        ],
+        [
+          "oteeodaiin",
+          1
+        ],
+        [
+          "sheeolody",
+          1
+        ],
+        [
+          "alody",
+          1
+        ],
+        [
+          "otchody",
+          1
+        ],
+        [
+          "shldy",
+          1
+        ],
+        [
+          "otalody",
+          1
+        ],
+        [
+          "sholshdy",
+          1
+        ]
+      ]
+    }
+  },
+  "co_occurrence": {
+    "Spring": {
+      "tokens_with_i_or_d": 88,
+      "tokens_with_both": 6,
+      "co_occurrence_rate": 0.0682
+    },
+    "Summer": {
+      "tokens_with_i_or_d": 124,
+      "tokens_with_both": 5,
+      "co_occurrence_rate": 0.0403
+    },
+    "Autumn": {
+      "tokens_with_i_or_d": 100,
+      "tokens_with_both": 4,
+      "co_occurrence_rate": 0.04
+    },
+    "Winter": {
+      "tokens_with_i_or_d": 98,
+      "tokens_with_both": 3,
+      "co_occurrence_rate": 0.0306
+    }
+  },
+  "positional_ordering": {
+    "Spring": {
+      "i_before_d": 2,
+      "d_before_i": 4,
+      "interleaved": 0
+    },
+    "Summer": {
+      "i_before_d": 2,
+      "d_before_i": 3,
+      "interleaved": 0
+    },
+    "Autumn": {
+      "i_before_d": 2,
+      "d_before_i": 2,
+      "interleaved": 0
+    },
+    "Winter": {
+      "i_before_d": 0,
+      "d_before_i": 3,
+      "interleaved": 0
+    }
+  },
+  "depth_analysis": {
+    "Spring": {
+      "mean_i_depth": 1.7576,
+      "max_i_depth": 2,
+      "mean_d_depth": 1.0,
+      "max_d_depth": 1,
+      "n_i_tokens": 33,
+      "n_d_tokens": 61
+    },
+    "Summer": {
+      "mean_i_depth": 1.7432,
+      "max_i_depth": 3,
+      "mean_d_depth": 1.0,
+      "max_d_depth": 1,
+      "n_i_tokens": 74,
+      "n_d_tokens": 55
+    },
+    "Autumn": {
+      "mean_i_depth": 1.5789,
+      "max_i_depth": 2,
+      "mean_d_depth": 1.0,
+      "max_d_depth": 1,
+      "n_i_tokens": 38,
+      "n_d_tokens": 66
+    },
+    "Winter": {
+      "mean_i_depth": 1.7857,
+      "max_i_depth": 2,
+      "mean_d_depth": 1.0,
+      "max_d_depth": 1,
+      "n_i_tokens": 42,
+      "n_d_tokens": 59
+    }
+  },
+  "token_length": {
+    "Spring": {
+      "mean_i_token_atoms": 4.3333,
+      "mean_d_token_atoms": 4.459,
+      "mean_neither_token_atoms": 3.2193
+    },
+    "Summer": {
+      "mean_i_token_atoms": 5.0946,
+      "mean_d_token_atoms": 4.4909,
+      "mean_neither_token_atoms": 3.2419
+    },
+    "Autumn": {
+      "mean_i_token_atoms": 4.9211,
+      "mean_d_token_atoms": 4.7576,
+      "mean_neither_token_atoms": 3.4381
+    },
+    "Winter": {
+      "mean_i_token_atoms": 4.9048,
+      "mean_d_token_atoms": 4.4407,
+      "mean_neither_token_atoms": 3.0099
+    }
+  },
+  "currier_b_baseline": {
+    "total": 23096,
+    "i_only": 4034,
+    "d_only": 6726,
+    "both": 572,
+    "neither": 11764,
+    "i_rate": 0.1994,
+    "d_rate": 0.316
+  }
+}

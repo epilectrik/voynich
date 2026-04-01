@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1907 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1916 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1907.
+the highest ID present is C1916.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1907 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1916 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1907 validated constraints are present as canonical one-line claims with tier
+1916 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-29 09:09
-**Version:** FROZEN STATE (1907 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-01 11:08
+**Version:** FROZEN STATE (1916 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2146,6 +2146,15 @@ C1904	Dark and bridge MIDDLEs positionally identical in A lines (cosine 0.977). 
 C1905	Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency. Dark spreads across more channels — identification vocabulary in multiple operational contexts vs channel-specific bridge operations	2	B, dark pipeline, bridge, PREFIX
 C1906	Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to 0.924 (B). Section hyper-modulation (C1148) operates through atom-level selection matching operational character. Extends C1148	2	B, GLOBAL, dark pipeline, section, C1148
 C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior	2	B, dark pipeline, HEAD, PREFIX, C1475
+C1908	Zodiac folio i/d MOD atom swap: MOD distribution differs significantly across seasonal folio groups. i-tokens (`aiin` family: a-HEAD, ii-MOD, n-TERM) enriched in Summer/Winter; d-tokens (`-ody` family: e/o-HEAD, od-MOD, y-TERM) enriched in Spring/Autumn. Two structurally distinct, nearly mutually exclusive token populations (3-7% co-occurrence). HEAD also significant; TERM not. e_depth gradient: Autumn 0.813 > Winter 0.515	2	AZC, zodiac, MOD, atom, seasonal, C321, C1519, C1681, C1394
+C1909	aiin absolute line-initial exclusion: 0/469 across A, B, and AZC. bare aiin NEVER appears at line position 1. daiin line-initial enrichment is B-specific and absent in A (11.3%, ns). The exclusion is construction-layer; the enrichment is execution-layer	2	GLOBAL, aiin, position, C557, C1234
+C1910	ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split	2	GLOBAL, safety, ii, terminal, C1482, C1484
+C1911	ii-token HEAD anatomy diverges across systems: a-HEAD rate A=19.2%, B=35.9%, AZC=36.0%. A's ii-tokens are 57% headless. A-specific null hypothesis (ii HEAD = non-ii HEAD) rejected at p=1.3e-143. Safety encoding is morphological (construction-layer) but HEAD selection is execution-layer	2	A, B, AZC, safety, ii, HEAD, C1480, C1507
+C1912	ii/ee complementary domain split confirmed cross-system: a-HEAD tokens preferentially use ii (not ee), e-HEAD tokens preferentially use ee (not ii), in all three systems. Two-strategy safety architecture (C1732-C1733) is construction-layer	2	GLOBAL, safety, ii, ee, HEAD, C1732, C1733
+C1913	C1908 seasonal i/d swap driven specifically by aiin-family: Summer+Winter aiin rate 0.120 vs Spring+Autumn 0.072. ody-family shows exact inverse. 65-74% of all seasonal i-tokens are aiin-family. Decomposes C1908 to token-family level	2	AZC, zodiac, aiin, seasonal, C1908
+C1914	daiin rate anti-correlates with folio thermal complexity: folio-level rho=-0.324, p=0.0004. Herbal line-level rho=-0.089, p=0.0018. daiin is infrastructure accompanying simpler (lower e_depth) content. Cluster 3 (Stripped-down Herbal, e_depth 0.133) has highest daiin rate	2	A, aiin, daiin, thermal, e_depth
+C1915	AZC daiin-aiin co-occurrence attraction: OR=5.04, Fisher p=0.003. In AZC only, daiin and aiin co-occur on same line 3.3x more than expected. A and B show independence (OR~1.0, ns). AZC uses both tokens in complementary diagram-entry roles	2	AZC, aiin, daiin, co-occurrence
+C1916	aiin-family internal composition is section-conditioned: headed/headless ratio differs by section in A and B. Herbal/Pharma A-side majority headless (daiin-driven); Text A-side majority headed. B Cosmo/Stars headed-dominant; Bio most headless	2	GLOBAL, aiin, section, HEAD, C1507
 
 ---
 
@@ -2153,7 +2162,7 @@ C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% 
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-29
+# Generated: 2026-04-01
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

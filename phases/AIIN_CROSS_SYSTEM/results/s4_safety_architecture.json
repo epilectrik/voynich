@@ -1,0 +1,526 @@
+{
+  "script": "s4_safety_architecture.py",
+  "phase": "AIIN_CROSS_SYSTEM",
+  "purpose": "Test cross-system ii-extension safety routing (C1480-C1482)",
+  "verdict": "EXECUTION-LAYER: ii anatomy diverges between A and B",
+  "census": {
+    "A": {
+      "total": 11174,
+      "i0": 9193,
+      "i1": 437,
+      "i2+": 1544,
+      "ii_rate": 0.1381779130123501,
+      "i1_rate": 0.03910864506890997
+    },
+    "B": {
+      "total": 23096,
+      "i0": 18490,
+      "i1": 1964,
+      "i2+": 2642,
+      "ii_rate": 0.11439210252857637,
+      "i1_rate": 0.08503636993418774
+    },
+    "AZC": {
+      "total": 3159,
+      "i0": 2743,
+      "i1": 141,
+      "i2+": 275,
+      "ii_rate": 0.0870528648306426,
+      "i1_rate": 0.0446343779677113
+    }
+  },
+  "n_terminal_lock": {
+    "A": {
+      "ii_total": 1544,
+      "ii_n_count": 1446,
+      "ii_n_rate": 0.9365284974093264,
+      "ii_terminal_dist": {
+        "n": 1446,
+        "r": 46,
+        "y": 18,
+        "m": 13,
+        "none": 11,
+        "l": 10
+      },
+      "i1_total": 437,
+      "i1_n_count": 246,
+      "i1_n_rate": 0.562929061784897,
+      "i1_terminal_dist": {
+        "n": 246,
+        "r": 100,
+        "y": 37,
+        "none": 24,
+        "m": 21,
+        "l": 8,
+        "t": 1
+      }
+    },
+    "B": {
+      "ii_total": 2642,
+      "ii_n_count": 2501,
+      "ii_n_rate": 0.9466313398940197,
+      "ii_terminal_dist": {
+        "n": 2501,
+        "r": 60,
+        "y": 31,
+        "none": 23,
+        "l": 14,
+        "m": 13
+      },
+      "i1_total": 1964,
+      "i1_n_count": 1434,
+      "i1_n_rate": 0.730142566191446,
+      "i1_terminal_dist": {
+        "n": 1434,
+        "r": 326,
+        "y": 101,
+        "m": 37,
+        "l": 35,
+        "none": 29,
+        "h": 2
+      }
+    },
+    "AZC": {
+      "ii_total": 275,
+      "ii_n_count": 229,
+      "ii_n_rate": 0.8327272727272728,
+      "ii_terminal_dist": {
+        "n": 229,
+        "r": 29,
+        "y": 8,
+        "none": 6,
+        "l": 3
+      },
+      "i1_total": 141,
+      "i1_n_count": 27,
+      "i1_n_rate": 0.19148936170212766,
+      "i1_terminal_dist": {
+        "r": 60,
+        "y": 31,
+        "n": 27,
+        "l": 8,
+        "none": 8,
+        "m": 6,
+        "h": 1
+      }
+    }
+  },
+  "n_terminal_chi2_ab": {
+    "chi2": 1.6646754552223046,
+    "p": 0.19697323382382415,
+    "dof": 1,
+    "cramers_v": 0.019941837640768116
+  },
+  "head_distribution": {
+    "A": {
+      "0": {
+        "total": 9193,
+        "a_rate": 0.046448384640487325,
+        "dist": {
+          "headless": 3820,
+          "o": 2464,
+          "e": 1581,
+          "k": 571,
+          "a": 427,
+          "t": 330
+        }
+      },
+      "1": {
+        "total": 437,
+        "a_rate": 0.20823798627002288,
+        "dist": {
+          "headless": 248,
+          "a": 91,
+          "o": 48,
+          "e": 24,
+          "k": 17,
+          "t": 9
+        }
+      },
+      "2+": {
+        "total": 1544,
+        "a_rate": 0.19170984455958548,
+        "dist": {
+          "headless": 880,
+          "a": 296,
+          "o": 245,
+          "k": 51,
+          "e": 40,
+          "t": 32
+        }
+      }
+    },
+    "B": {
+      "0": {
+        "total": 18490,
+        "a_rate": 0.08144943212547323,
+        "dist": {
+          "e": 6255,
+          "headless": 5315,
+          "k": 2393,
+          "o": 2269,
+          "a": 1506,
+          "t": 752
+        }
+      },
+      "1": {
+        "total": 1964,
+        "a_rate": 0.3090631364562118,
+        "dist": {
+          "headless": 636,
+          "a": 607,
+          "k": 382,
+          "e": 145,
+          "o": 117,
+          "t": 77
+        }
+      },
+      "2+": {
+        "total": 2642,
+        "a_rate": 0.3591975775927328,
+        "dist": {
+          "a": 949,
+          "headless": 925,
+          "k": 314,
+          "o": 218,
+          "e": 151,
+          "t": 85
+        }
+      }
+    },
+    "AZC": {
+      "0": {
+        "total": 2743,
+        "a_rate": 0.12103536274152388,
+        "dist": {
+          "e": 893,
+          "headless": 890,
+          "o": 534,
+          "a": 332,
+          "k": 69,
+          "t": 25
+        }
+      },
+      "1": {
+        "total": 141,
+        "a_rate": 0.3475177304964539,
+        "dist": {
+          "headless": 53,
+          "a": 49,
+          "o": 25,
+          "e": 12,
+          "t": 2
+        }
+      },
+      "2+": {
+        "total": 275,
+        "a_rate": 0.36,
+        "dist": {
+          "a": 99,
+          "headless": 92,
+          "o": 49,
+          "e": 29,
+          "k": 4,
+          "t": 2
+        }
+      }
+    }
+  },
+  "head_chi2_across_systems": {
+    "chi2": 134.66060635578995,
+    "p": 5.738797031229421e-30,
+    "dof": 2,
+    "cramers_v": 0.17374174185164346,
+    "systems": [
+      "A",
+      "B",
+      "AZC"
+    ],
+    "table": [
+      [
+        296,
+        1248
+      ],
+      [
+        949,
+        1693
+      ],
+      [
+        99,
+        176
+      ]
+    ]
+  },
+  "complementary_domains": {
+    "A": {
+      "a_head_total": 814,
+      "a_head_ii_count": 296,
+      "a_head_ii_rate": 0.36363636363636365,
+      "a_head_ee_count": 2,
+      "a_head_ee_rate": 0.002457002457002457,
+      "e_head_total": 1645,
+      "e_head_ii_count": 40,
+      "e_head_ii_rate": 0.0243161094224924,
+      "e_head_ee_count": 431,
+      "e_head_ee_rate": 0.2620060790273556,
+      "k_head_total": 639,
+      "k_head_ii_count": 51,
+      "k_head_ii_rate": 0.07981220657276995,
+      "k_head_ee_count": 93,
+      "k_head_ee_rate": 0.14553990610328638,
+      "ee_total": 715,
+      "ee_head_dist": {
+        "e": 431,
+        "k": 93,
+        "headless": 88,
+        "o": 75,
+        "t": 26,
+        "a": 2
+      }
+    },
+    "B": {
+      "a_head_total": 3062,
+      "a_head_ii_count": 949,
+      "a_head_ii_rate": 0.30992815153494446,
+      "a_head_ee_count": 8,
+      "a_head_ee_rate": 0.002612671456564337,
+      "e_head_total": 6551,
+      "e_head_ii_count": 151,
+      "e_head_ii_rate": 0.02304991604335216,
+      "e_head_ee_count": 1843,
+      "e_head_ee_rate": 0.2813310944893909,
+      "k_head_total": 3089,
+      "k_head_ii_count": 314,
+      "k_head_ii_rate": 0.10165101974749109,
+      "k_head_ee_count": 858,
+      "k_head_ee_rate": 0.2777597928132082,
+      "ee_total": 3170,
+      "ee_head_dist": {
+        "e": 1843,
+        "k": 858,
+        "headless": 196,
+        "t": 151,
+        "o": 114,
+        "a": 8
+      }
+    },
+    "AZC": {
+      "a_head_total": 480,
+      "a_head_ii_count": 99,
+      "a_head_ii_rate": 0.20625,
+      "a_head_ee_count": 2,
+      "a_head_ee_rate": 0.004166666666666667,
+      "e_head_total": 934,
+      "e_head_ii_count": 29,
+      "e_head_ii_rate": 0.031049250535331904,
+      "e_head_ee_count": 307,
+      "e_head_ee_rate": 0.3286937901498929,
+      "k_head_total": 73,
+      "k_head_ii_count": 4,
+      "k_head_ii_rate": 0.0547945205479452,
+      "k_head_ee_count": 16,
+      "k_head_ee_rate": 0.2191780821917808,
+      "ee_total": 422,
+      "ee_head_dist": {
+        "e": 307,
+        "o": 58,
+        "headless": 27,
+        "k": 16,
+        "t": 12,
+        "a": 2
+      }
+    }
+  },
+  "aiin_family": {
+    "A": {
+      "total_ii": 1544,
+      "aiin_count": 1446,
+      "aiin_rate": 0.9365284974093264,
+      "non_aiin_count": 98,
+      "non_aiin_examples": [
+        "syaiir",
+        "cphodaiils",
+        "okaiir",
+        "daiiny",
+        "daiildy",
+        "daiirol",
+        "daiidy",
+        "daiim",
+        "iiincheom",
+        "daiir",
+        "yaiir",
+        "skaiiodar",
+        "kaiim",
+        "chaiir",
+        "oaiir",
+        "daiir",
+        "daiiirchy",
+        "okaiir",
+        "doiir",
+        "poiis"
+      ]
+    },
+    "B": {
+      "total_ii": 2642,
+      "aiin_count": 2501,
+      "aiin_rate": 0.9466313398940197,
+      "non_aiin_count": 141,
+      "non_aiin_examples": [
+        "odaiir",
+        "saraiir",
+        "daiir",
+        "saiir",
+        "aiicthy",
+        "aiir",
+        "lshaiir",
+        "aiir",
+        "iir",
+        "okaiifchody",
+        "olaiir",
+        "daiiiny",
+        "aiis",
+        "aiir",
+        "olaiir",
+        "ykaiir",
+        "aiirchar",
+        "ykaiir",
+        "daiir",
+        "daiis"
+      ]
+    },
+    "AZC": {
+      "total_ii": 275,
+      "aiin_count": 229,
+      "aiin_rate": 0.8327272727272728,
+      "non_aiin_count": 46,
+      "non_aiin_examples": [
+        "daiis",
+        "daiir",
+        "chpiir",
+        "daiir",
+        "daiir",
+        "sosaiir",
+        "daiir",
+        "soraiis",
+        "aiiny",
+        "qokiiiody",
+        "doiir",
+        "oiinar",
+        "oriid",
+        "todaraiily",
+        "okinaiir",
+        "daiir",
+        "daiir",
+        "daiidy",
+        "aiir",
+        "ydaiil"
+      ]
+    }
+  },
+  "non_aiin_ii_profile": {
+    "A": {
+      "count": 98,
+      "terminal_dist": {
+        "r": 46,
+        "y": 18,
+        "m": 13,
+        "none": 11,
+        "l": 10
+      },
+      "head_dist": {
+        "headless": 63,
+        "a": 20,
+        "o": 10,
+        "k": 3,
+        "e": 1,
+        "t": 1
+      },
+      "n_rate": 0.0
+    },
+    "B": {
+      "count": 141,
+      "terminal_dist": {
+        "r": 60,
+        "y": 31,
+        "none": 23,
+        "l": 14,
+        "m": 13
+      },
+      "head_dist": {
+        "a": 59,
+        "headless": 51,
+        "o": 19,
+        "k": 7,
+        "t": 3,
+        "e": 2
+      },
+      "n_rate": 0.0
+    },
+    "AZC": {
+      "count": 46,
+      "terminal_dist": {
+        "r": 29,
+        "y": 8,
+        "none": 6,
+        "l": 3
+      },
+      "head_dist": {
+        "headless": 24,
+        "a": 14,
+        "o": 5,
+        "e": 2,
+        "k": 1
+      },
+      "n_rate": 0.0
+    }
+  },
+  "hazard_participation_b": {
+    "ii_total": 2642,
+    "ii_hazard_dist": {
+      "HIGH": 1029,
+      "LOW": 736,
+      "ZERO": 563,
+      "IMMUNE": 314
+    },
+    "ii_high_count": 1029,
+    "ii_high_rate": 0.3894776684330053,
+    "nonii_total": 20454,
+    "nonii_hazard_dist": {
+      "LOW": 9822,
+      "ZERO": 4093,
+      "HIGH": 3753,
+      "IMMUNE": 2786
+    },
+    "nonii_high_rate": 0.18348489293047815
+  },
+  "a_null_hypothesis_test": {
+    "chi2": 674.9172798163733,
+    "p": 1.3007638093507094e-143,
+    "dof": 5,
+    "cramers_v": 0.2457655128234899,
+    "categories": [
+      "a",
+      "e",
+      "headless",
+      "k",
+      "o",
+      "t"
+    ],
+    "ii_row": [
+      296,
+      40,
+      880,
+      51,
+      245,
+      32
+    ],
+    "nonii_row": [
+      518,
+      1605,
+      4068,
+      588,
+      2512,
+      339
+    ]
+  }
+}

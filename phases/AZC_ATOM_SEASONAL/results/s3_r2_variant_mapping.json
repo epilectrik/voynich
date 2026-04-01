@@ -1,0 +1,385 @@
+{
+  "description": "S3: R2 variant mapping to zodiac folio clusters",
+  "r2_settings": {
+    "kf": {
+      "atom1": "k",
+      "atom2": "f"
+    },
+    "mf": {
+      "atom1": "m",
+      "atom2": "f"
+    },
+    "kp": {
+      "atom1": "k",
+      "atom2": "p"
+    }
+  },
+  "folio_data": {
+    "f70v1": {
+      "season": "Spring",
+      "n_tokens": 86,
+      "n_atoms": 332,
+      "counts": {
+        "f": 0,
+        "p": 3,
+        "k": 10,
+        "m": 3
+      },
+      "rates": {
+        "f": 0.0,
+        "p": 0.009036,
+        "k": 0.03012,
+        "m": 0.009036
+      },
+      "k_km_ratio": 0.769231,
+      "f_fp_ratio": 0.0,
+      "variant_scores": {
+        "kf": 0.03012,
+        "mf": 0.009036,
+        "kp": 0.039157
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "kp"
+    },
+    "f70v2": {
+      "season": "Spring",
+      "n_tokens": 139,
+      "n_atoms": 453,
+      "counts": {
+        "f": 0,
+        "p": 2,
+        "k": 5,
+        "m": 8
+      },
+      "rates": {
+        "f": 0.0,
+        "p": 0.004415,
+        "k": 0.011038,
+        "m": 0.01766
+      },
+      "k_km_ratio": 0.384615,
+      "f_fp_ratio": 0.0,
+      "variant_scores": {
+        "kf": 0.011038,
+        "mf": 0.01766,
+        "kp": 0.015453
+      },
+      "assigned_variant_score": "mf",
+      "assigned_variant_ratio": "mp"
+    },
+    "f71r": {
+      "season": "Spring",
+      "n_tokens": 91,
+      "n_atoms": 331,
+      "counts": {
+        "f": 0,
+        "p": 0,
+        "k": 15,
+        "m": 2
+      },
+      "rates": {
+        "f": 0.0,
+        "p": 0.0,
+        "k": 0.045317,
+        "m": 0.006042
+      },
+      "k_km_ratio": 0.882353,
+      "f_fp_ratio": 0.5,
+      "variant_scores": {
+        "kf": 0.045317,
+        "mf": 0.006042,
+        "kp": 0.045317
+      },
+      "assigned_variant_score": "kf",
+      "assigned_variant_ratio": "kf"
+    },
+    "f71v": {
+      "season": "Spring",
+      "n_tokens": 99,
+      "n_atoms": 323,
+      "counts": {
+        "f": 3,
+        "p": 7,
+        "k": 5,
+        "m": 4
+      },
+      "rates": {
+        "f": 0.009288,
+        "p": 0.021672,
+        "k": 0.01548,
+        "m": 0.012384
+      },
+      "k_km_ratio": 0.555556,
+      "f_fp_ratio": 0.3,
+      "variant_scores": {
+        "kf": 0.024768,
+        "mf": 0.021672,
+        "kp": 0.037152
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "mp"
+    },
+    "f72r1": {
+      "season": "Summer",
+      "n_tokens": 105,
+      "n_atoms": 378,
+      "counts": {
+        "f": 3,
+        "p": 0,
+        "k": 10,
+        "m": 5
+      },
+      "rates": {
+        "f": 0.007937,
+        "p": 0.0,
+        "k": 0.026455,
+        "m": 0.013228
+      },
+      "k_km_ratio": 0.666667,
+      "f_fp_ratio": 1.0,
+      "variant_scores": {
+        "kf": 0.034392,
+        "mf": 0.021164,
+        "kp": 0.026455
+      },
+      "assigned_variant_score": "kf",
+      "assigned_variant_ratio": "kf"
+    },
+    "f72r2": {
+      "season": "Summer",
+      "n_tokens": 110,
+      "n_atoms": 375,
+      "counts": {
+        "f": 1,
+        "p": 0,
+        "k": 8,
+        "m": 6
+      },
+      "rates": {
+        "f": 0.002667,
+        "p": 0.0,
+        "k": 0.021333,
+        "m": 0.016
+      },
+      "k_km_ratio": 0.571429,
+      "f_fp_ratio": 1.0,
+      "variant_scores": {
+        "kf": 0.024,
+        "mf": 0.018667,
+        "kp": 0.021333
+      },
+      "assigned_variant_score": "kf",
+      "assigned_variant_ratio": "mf"
+    },
+    "f72r3": {
+      "season": "Summer",
+      "n_tokens": 163,
+      "n_atoms": 628,
+      "counts": {
+        "f": 5,
+        "p": 6,
+        "k": 10,
+        "m": 6
+      },
+      "rates": {
+        "f": 0.007962,
+        "p": 0.009554,
+        "k": 0.015924,
+        "m": 0.009554
+      },
+      "k_km_ratio": 0.625,
+      "f_fp_ratio": 0.454545,
+      "variant_scores": {
+        "kf": 0.023885,
+        "mf": 0.017516,
+        "kp": 0.025478
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "mf"
+    },
+    "f72v1": {
+      "season": "Autumn",
+      "n_tokens": 99,
+      "n_atoms": 390,
+      "counts": {
+        "f": 5,
+        "p": 11,
+        "k": 2,
+        "m": 2
+      },
+      "rates": {
+        "f": 0.012821,
+        "p": 0.028205,
+        "k": 0.005128,
+        "m": 0.005128
+      },
+      "k_km_ratio": 0.5,
+      "f_fp_ratio": 0.3125,
+      "variant_scores": {
+        "kf": 0.017949,
+        "mf": 0.017949,
+        "kp": 0.033333
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "mp"
+    },
+    "f72v2": {
+      "season": "Autumn",
+      "n_tokens": 105,
+      "n_atoms": 430,
+      "counts": {
+        "f": 2,
+        "p": 4,
+        "k": 13,
+        "m": 4
+      },
+      "rates": {
+        "f": 0.004651,
+        "p": 0.009302,
+        "k": 0.030233,
+        "m": 0.009302
+      },
+      "k_km_ratio": 0.764706,
+      "f_fp_ratio": 0.333333,
+      "variant_scores": {
+        "kf": 0.034884,
+        "mf": 0.013953,
+        "kp": 0.039535
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "kf"
+    },
+    "f72v3": {
+      "season": "Autumn",
+      "n_tokens": 111,
+      "n_atoms": 414,
+      "counts": {
+        "f": 2,
+        "p": 4,
+        "k": 6,
+        "m": 3
+      },
+      "rates": {
+        "f": 0.004831,
+        "p": 0.009662,
+        "k": 0.014493,
+        "m": 0.007246
+      },
+      "k_km_ratio": 0.666667,
+      "f_fp_ratio": 0.333333,
+      "variant_scores": {
+        "kf": 0.019324,
+        "mf": 0.012077,
+        "kp": 0.024155
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "kf"
+    },
+    "f73r": {
+      "season": "Winter",
+      "n_tokens": 94,
+      "n_atoms": 353,
+      "counts": {
+        "f": 1,
+        "p": 6,
+        "k": 4,
+        "m": 2
+      },
+      "rates": {
+        "f": 0.002833,
+        "p": 0.016997,
+        "k": 0.011331,
+        "m": 0.005666
+      },
+      "k_km_ratio": 0.666667,
+      "f_fp_ratio": 0.142857,
+      "variant_scores": {
+        "kf": 0.014164,
+        "mf": 0.008499,
+        "kp": 0.028329
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "kp"
+    },
+    "f73v": {
+      "season": "Winter",
+      "n_tokens": 97,
+      "n_atoms": 354,
+      "counts": {
+        "f": 3,
+        "p": 8,
+        "k": 7,
+        "m": 3
+      },
+      "rates": {
+        "f": 0.008475,
+        "p": 0.022599,
+        "k": 0.019774,
+        "m": 0.008475
+      },
+      "k_km_ratio": 0.7,
+      "f_fp_ratio": 0.272727,
+      "variant_scores": {
+        "kf": 0.028249,
+        "mf": 0.016949,
+        "kp": 0.042373
+      },
+      "assigned_variant_score": "kp",
+      "assigned_variant_ratio": "kp"
+    }
+  },
+  "season_stats": {
+    "Spring": {
+      "k": 35,
+      "m": 17,
+      "f": 3,
+      "p": 12,
+      "k_km_ratio": 0.6730769230769231,
+      "f_fp_ratio": 0.2
+    },
+    "Summer": {
+      "k": 28,
+      "m": 17,
+      "f": 9,
+      "p": 6,
+      "k_km_ratio": 0.6222222222222222,
+      "f_fp_ratio": 0.6
+    },
+    "Autumn": {
+      "k": 21,
+      "m": 9,
+      "f": 9,
+      "p": 19,
+      "k_km_ratio": 0.7,
+      "f_fp_ratio": 0.32142857142857145
+    },
+    "Winter": {
+      "k": 11,
+      "m": 5,
+      "f": 4,
+      "p": 14,
+      "k_km_ratio": 0.6875,
+      "f_fp_ratio": 0.2222222222222222
+    }
+  },
+  "null_model": {
+    "b_total_atoms": 78420,
+    "b_rates": {
+      "f": 0.002754,
+      "p": 0.008161,
+      "k": 0.056593,
+      "m": 0.007702
+    },
+    "b_k_km_ratio": 0.880206,
+    "b_f_fp_ratio": 0.252336
+  },
+  "chi_squared": {
+    "statistic": 6.8333,
+    "p_value": 0.336271,
+    "dof": 6
+  },
+  "thresholds": {
+    "k_km_median": 0.666667,
+    "f_fp_median": 0.333333
+  }
+}

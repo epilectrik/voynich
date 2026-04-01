@@ -1,0 +1,403 @@
+{
+  "anchors": {
+    "daiin_B_count": 314,
+    "daiin_B_line_initial_rate": 0.2707,
+    "daiin_B_line_initial_expected": 0.277,
+    "daiin_B_mean_norm_pos": 0.4128,
+    "daiin_B_mean_pos_expected": 0.413,
+    "aiin_B_count": 351,
+    "aiin_B_penultimate_rate": 0.1994,
+    "aiin_B_penultimate_enrichment": 2.363,
+    "aiin_B_penultimate_enrichment_expected": 1.35
+  },
+  "positional": {
+    "daiin_A": {
+      "count": 511,
+      "line_initial_count": 58,
+      "line_initial_rate": 0.1135,
+      "line_final_count": 106,
+      "line_final_rate": 0.2074,
+      "mean_norm_pos": 0.5795,
+      "median_norm_pos": 0.625,
+      "pos_variance": 0.113871,
+      "base_initial_rate": 0.1395
+    },
+    "aiin_A": {
+      "count": 73,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 12,
+      "line_final_rate": 0.1644,
+      "mean_norm_pos": 0.598,
+      "median_norm_pos": 0.6471,
+      "pos_variance": 0.092274,
+      "base_initial_rate": 0.1395
+    },
+    "daiin_B": {
+      "count": 314,
+      "line_initial_count": 85,
+      "line_initial_rate": 0.2707,
+      "line_final_count": 24,
+      "line_final_rate": 0.0764,
+      "mean_norm_pos": 0.4128,
+      "median_norm_pos": 0.4,
+      "pos_variance": 0.120347,
+      "base_initial_rate": 0.1048
+    },
+    "aiin_B": {
+      "count": 351,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 14,
+      "line_final_rate": 0.0399,
+      "mean_norm_pos": 0.5344,
+      "median_norm_pos": 0.5333,
+      "pos_variance": 0.084402,
+      "base_initial_rate": 0.1048
+    },
+    "daiin_AZC": {
+      "count": 37,
+      "line_initial_count": 7,
+      "line_initial_rate": 0.1892,
+      "line_final_count": 1,
+      "line_final_rate": 0.027,
+      "mean_norm_pos": 0.3801,
+      "median_norm_pos": 0.4634,
+      "pos_variance": 0.08409,
+      "base_initial_rate": 0.1304
+    },
+    "aiin_AZC": {
+      "count": 45,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 4,
+      "line_final_rate": 0.0889,
+      "mean_norm_pos": 0.5575,
+      "median_norm_pos": 0.5128,
+      "pos_variance": 0.095755,
+      "base_initial_rate": 0.1304
+    }
+  },
+  "paragraph": {
+    "daiin": {
+      "count": 314,
+      "on_par_initial_line": 49,
+      "on_par_initial_line_rate": 0.1561,
+      "par_initial_and_line_initial": 0,
+      "on_par_final_line": 56,
+      "on_par_final_line_rate": 0.1783,
+      "density_first_third": 0.011929,
+      "density_middle_third": 0.014418,
+      "density_final_third": 0.015853
+    },
+    "aiin": {
+      "count": 351,
+      "on_par_initial_line": 66,
+      "on_par_initial_line_rate": 0.188,
+      "par_initial_and_line_initial": 0,
+      "on_par_final_line": 62,
+      "on_par_final_line_rate": 0.1766,
+      "density_first_third": 0.012602,
+      "density_middle_third": 0.019856,
+      "density_final_third": 0.013141
+    }
+  },
+  "cooccurrence": {
+    "A": {
+      "n_lines": 1559,
+      "lines_with_daiin": 431,
+      "lines_with_aiin": 71,
+      "lines_with_both": 21,
+      "expected_both": 19.63,
+      "obs_exp_ratio": 1.07,
+      "daiin_before_aiin": 10,
+      "aiin_before_daiin": 11,
+      "chi2": 0.139,
+      "fisher_OR": 1.104
+    },
+    "B": {
+      "n_lines": 2420,
+      "lines_with_daiin": 281,
+      "lines_with_aiin": 309,
+      "lines_with_both": 36,
+      "expected_both": 35.88,
+      "obs_exp_ratio": 1.003,
+      "daiin_before_aiin": 24,
+      "aiin_before_daiin": 12,
+      "chi2": 0.001,
+      "fisher_OR": 1.004
+    },
+    "AZC": {
+      "n_lines": 412,
+      "lines_with_daiin": 32,
+      "lines_with_aiin": 27,
+      "lines_with_both": 7,
+      "expected_both": 2.1,
+      "obs_exp_ratio": 3.338,
+      "daiin_before_aiin": 3,
+      "aiin_before_daiin": 4,
+      "chi2": 13.3,
+      "fisher_OR": 5.04
+    }
+  },
+  "other_forms": {
+    "daiin_A": {
+      "count": 511,
+      "line_initial_count": 58,
+      "line_initial_rate": 0.1135,
+      "line_final_count": 106,
+      "line_final_rate": 0.2074,
+      "mean_norm_pos": 0.5795,
+      "median_norm_pos": 0.625,
+      "pos_variance": 0.113871
+    },
+    "aiin_A": {
+      "count": 73,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 12,
+      "line_final_rate": 0.1644,
+      "mean_norm_pos": 0.598,
+      "median_norm_pos": 0.6471,
+      "pos_variance": 0.092274
+    },
+    "qokaiin_A": {
+      "count": 22,
+      "line_initial_count": 4,
+      "line_initial_rate": 0.1818,
+      "line_final_count": 2,
+      "line_final_rate": 0.0909,
+      "mean_norm_pos": 0.418,
+      "median_norm_pos": 0.3667,
+      "pos_variance": 0.10339
+    },
+    "okaiin_A": {
+      "count": 35,
+      "line_initial_count": 5,
+      "line_initial_rate": 0.1429,
+      "line_final_count": 5,
+      "line_final_rate": 0.1429,
+      "mean_norm_pos": 0.4452,
+      "median_norm_pos": 0.3333,
+      "pos_variance": 0.118934
+    },
+    "otaiin_A": {
+      "count": 33,
+      "line_initial_count": 2,
+      "line_initial_rate": 0.0606,
+      "line_final_count": 5,
+      "line_final_rate": 0.1515,
+      "mean_norm_pos": 0.5958,
+      "median_norm_pos": 0.7,
+      "pos_variance": 0.085439
+    },
+    "saiin_A": {
+      "count": 40,
+      "line_initial_count": 8,
+      "line_initial_rate": 0.2,
+      "line_final_count": 6,
+      "line_final_rate": 0.15,
+      "mean_norm_pos": 0.5561,
+      "median_norm_pos": 0.6333,
+      "pos_variance": 0.117962
+    },
+    "qotaiin_A": {
+      "count": 13,
+      "line_initial_count": 3,
+      "line_initial_rate": 0.2308,
+      "line_final_count": 2,
+      "line_final_rate": 0.1538,
+      "mean_norm_pos": 0.4606,
+      "median_norm_pos": 0.5,
+      "pos_variance": 0.104344
+    },
+    "daiin_B": {
+      "count": 314,
+      "line_initial_count": 85,
+      "line_initial_rate": 0.2707,
+      "line_final_count": 24,
+      "line_final_rate": 0.0764,
+      "mean_norm_pos": 0.4128,
+      "median_norm_pos": 0.4,
+      "pos_variance": 0.120347
+    },
+    "aiin_B": {
+      "count": 351,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 14,
+      "line_final_rate": 0.0399,
+      "mean_norm_pos": 0.5344,
+      "median_norm_pos": 0.5333,
+      "pos_variance": 0.084402
+    },
+    "qokaiin_B": {
+      "count": 240,
+      "line_initial_count": 23,
+      "line_initial_rate": 0.0958,
+      "line_final_count": 9,
+      "line_final_rate": 0.0375,
+      "mean_norm_pos": 0.4573,
+      "median_norm_pos": 0.4444,
+      "pos_variance": 0.080934
+    },
+    "okaiin_B": {
+      "count": 168,
+      "line_initial_count": 8,
+      "line_initial_rate": 0.0476,
+      "line_final_count": 9,
+      "line_final_rate": 0.0536,
+      "mean_norm_pos": 0.503,
+      "median_norm_pos": 0.5,
+      "pos_variance": 0.080413
+    },
+    "otaiin_B": {
+      "count": 108,
+      "line_initial_count": 2,
+      "line_initial_rate": 0.0185,
+      "line_final_count": 6,
+      "line_final_rate": 0.0556,
+      "mean_norm_pos": 0.5985,
+      "median_norm_pos": 0.6364,
+      "pos_variance": 0.062877
+    },
+    "saiin_B": {
+      "count": 99,
+      "line_initial_count": 48,
+      "line_initial_rate": 0.4848,
+      "line_final_count": 6,
+      "line_final_rate": 0.0606,
+      "mean_norm_pos": 0.3108,
+      "median_norm_pos": 0.1429,
+      "pos_variance": 0.12376
+    },
+    "qotaiin_B": {
+      "count": 66,
+      "line_initial_count": 4,
+      "line_initial_rate": 0.0606,
+      "line_final_count": 4,
+      "line_final_rate": 0.0606,
+      "mean_norm_pos": 0.5174,
+      "median_norm_pos": 0.5,
+      "pos_variance": 0.081125
+    }
+  },
+  "a_special": {
+    "daiin_var_ratio_A_over_B": 0.9462,
+    "daiin_A": {
+      "count": 511,
+      "line_initial_count": 58,
+      "line_initial_rate": 0.1135,
+      "line_final_count": 106,
+      "line_final_rate": 0.2074,
+      "mean_norm_pos": 0.5795,
+      "median_norm_pos": 0.625,
+      "pos_variance": 0.113871
+    },
+    "daiin_B": {
+      "count": 314,
+      "line_initial_count": 85,
+      "line_initial_rate": 0.2707,
+      "line_final_count": 24,
+      "line_final_rate": 0.0764,
+      "mean_norm_pos": 0.4128,
+      "median_norm_pos": 0.4,
+      "pos_variance": 0.120347
+    },
+    "aiin_var_ratio_A_over_B": 1.0933,
+    "aiin_A": {
+      "count": 73,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 12,
+      "line_final_rate": 0.1644,
+      "mean_norm_pos": 0.598,
+      "median_norm_pos": 0.6471,
+      "pos_variance": 0.092274
+    },
+    "aiin_B": {
+      "count": 351,
+      "line_initial_count": 0,
+      "line_initial_rate": 0.0,
+      "line_final_count": 14,
+      "line_final_rate": 0.0399,
+      "mean_norm_pos": 0.5344,
+      "median_norm_pos": 0.5333,
+      "pos_variance": 0.084402
+    }
+  },
+  "azc": {
+    "daiin": {
+      "count": 37,
+      "placements": {
+        "R3": 2,
+        "P": 8,
+        "R": 3,
+        "X": 1,
+        "C": 9,
+        "Y": 1,
+        "C1": 1,
+        "O": 1,
+        "R2": 4,
+        "R1": 4,
+        "S1": 3
+      },
+      "top_folios": {
+        "f67r2": 5,
+        "f70r2": 5,
+        "f68v3": 3,
+        "f57v": 2,
+        "f68r3": 2,
+        "f68v2": 2,
+        "f69r": 2,
+        "f70v1": 2,
+        "f72r2": 2,
+        "f65v": 1
+      }
+    },
+    "aiin": {
+      "count": 45,
+      "placements": {
+        "R3": 5,
+        "R4": 3,
+        "R": 2,
+        "P": 2,
+        "C": 11,
+        "S": 1,
+        "R1": 12,
+        "R2": 6,
+        "S1": 1,
+        "S2": 2
+      },
+      "top_folios": {
+        "f72r1": 6,
+        "f67r2": 5,
+        "f72r3": 5,
+        "f68v1": 3,
+        "f70r2": 3,
+        "f71r": 3,
+        "f72r2": 3,
+        "f72v3": 3,
+        "f72v1": 3,
+        "f57v": 2
+      }
+    },
+    "all_aiin_family": {
+      "aiin": 45,
+      "daiin": 37,
+      "otaiin": 13,
+      "okaiin": 9,
+      "saiin": 5,
+      "chedaiin": 5,
+      "oteodaiin": 5,
+      "olaiin": 5,
+      "opaiin": 4,
+      "oaiin": 3,
+      "ydaiin": 3,
+      "odaiin": 3,
+      "osaiin": 2,
+      "oekaiin": 2,
+      "aldaiin": 2
+    }
+  }
+}

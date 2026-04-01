@@ -4,6 +4,40 @@
 
 ---
 
+## Version 6.05 (2026-04-01) - Phase 632: aiin Cross-System Investigation
+
+### Summary
+
+Phase 632 investigates the aiin/daiin token family — the manuscript's most frequent token — across all three systems at atom level. Five scripts trace the family's positional behavior, bigram context, safety architecture, seasonal manifestation, and thermal correlation. Central finding: the family has **dual-layer architecture**. Terminal safety (n-lock at 93-95%) and ii/ee domain complementarity are construction-layer — morphologically hardwired, identical across A/B/AZC. HEAD selection and positional grammar are execution-layer — system-specific. The notation itself enforces that iteration tokens always resolve to safe containment. Also registered C1908 (zodiac i/d swap) from exploratory AZC work. 9 constraints registered (C1908-C1916), all Tier 2.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/AIIN_CROSS_SYSTEM/` — Phase 632 with 5 scripts, INDEX.md |
+| **ADDED** | `phases/AZC_ATOM_SEASONAL/` — Exploratory AZC zodiac atom analysis (3 scripts) |
+| **ADDED** | `phases/CURRIER_A_ATOMS/` — Exploratory A atom deep dive (5 scripts) |
+| **ADDED** | C1908: Zodiac folio i/d MOD atom swap (chi2=39.3, p=0.0006) |
+| **ADDED** | C1909: aiin absolute line-initial exclusion (0/469 cross-system) |
+| **ADDED** | C1910: ii n-terminal lock cross-system (A=93.7%, B=94.7%, p=0.197) |
+| **ADDED** | C1911: ii HEAD anatomy diverges (A=19.2% a-HEAD, B=35.9%, p<0.001) |
+| **ADDED** | C1912: ii/ee complementary domains confirmed cross-system |
+| **ADDED** | C1913: C1908 driven by aiin-family (p=0.0033) |
+| **ADDED** | C1914: daiin anti-correlates with thermal complexity (rho=-0.324, p=0.0004) |
+| **ADDED** | C1915: AZC daiin-aiin co-occurrence attraction (OR=5.04, p=0.003) |
+| **ADDED** | C1916: Section-conditioned family composition (A p=0.003, B p<0.0001) |
+| **UPDATED** | INDEX.md — +9 constraints (1916 total), Phase 632 section |
+
+### Key Findings
+
+1. **Dual-layer architecture:** The aiin/daiin family's safety mechanism (n-terminal lock, ii/ee complementarity) is construction-layer — identical across systems. HEAD selection and positional grammar are execution-layer — A uses daiin as headless infrastructure, B as an execution trigger.
+2. **aiin never starts a line (C1909):** 0/469 across all systems. The hardest positional constraint in the phase. daiin opens lines in B (27.1%) but not in A, consistent with A's non-sequential grammar.
+3. **Safety morphologically enforced (C1910-C1912):** You cannot compose an ii-token that resolves unsafely. The n-terminal lock (93-95%) and ii/ee domain split are notation-level guarantees.
+4. **Seasonal mechanism (C1913):** The C1908 zodiac i/d swap is specifically an aiin/ody swap — repeated cycling vs sequential staging.
+5. **daiin marks simple content (C1914):** Anti-correlates with thermal complexity. Materials needing complex thermal handling use less daiin infrastructure.
+
+---
+
 ## Version 6.03 (2026-03-29) - Phase 631: Dark Pipeline PREFIX Domain Locking
 
 ### Summary

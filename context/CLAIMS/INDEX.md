@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1907 validated constraints | **Version:** 6.03 | **Date:** 2026-03-29
+**Total:** 1916 validated constraints | **Version:** 6.05 | **Date:** 2026-04-01
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6088,6 +6088,33 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 | 1905 | Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency (sign test p=0.009, bridge direction). Dark spreads across more channels — identification vocabulary in multiple operational contexts vs channel-specific bridge operations | 2 | B, dark pipeline, bridge, PREFIX | p=0.009. bridge_wins=47of92. dark_wins=26of92. |
 | 1906 | Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to 0.924 (B). Section hyper-modulation (C1148) operates through atom-level selection matching operational character. Extends C1148 | 2 | B, GLOBAL, dark pipeline, section, C1148 | r_B=0.924. r_S=0.719. r_H=0.649. |
 | 1907 | Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior | 2 | B, dark pipeline, HEAD, PREFIX, C1475 | k_qo=65-100%. e_cos=0.629. |
+| 1908 | Zodiac folio i/d MOD atom swap: MOD distribution differs significantly across seasonal folio groups (chi2=39.3, p=0.0006). i-tokens (`aiin` family: a-HEAD, ii-MOD, n-TERM) enriched in Summer/Winter; d-tokens (`-ody` family: e/o-HEAD, od-MOD, y-TERM) enriched in Spring/Autumn. Two structurally distinct, nearly mutually exclusive token populations (3-7% co-occurrence). HEAD also significant (p=0.005); TERM not (p=0.104). e_depth gradient: Autumn 0.813 > Winter 0.515 | 2 | AZC, zodiac, MOD, atom, seasonal, C321, C1519, C1681, C1394 | chi2=39.3. p=0.0006. Summer_i=0.199. Autumn_d=0.213. co_occur=3-7%. |
+
+---
+
+### Phase 632: aiin Cross-System Investigation — DUAL_LAYER_ARCHITECTURE (C1909-C1916)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1909 | aiin absolute line-initial exclusion: 0/469 across A, B, and AZC. bare aiin NEVER appears at line position 1. daiin line-initial enrichment is B-specific (27.1%, chi2=93.4) and absent in A (11.3%, ns). The exclusion is construction-layer; the enrichment is execution-layer | 2 | GLOBAL, aiin, position, C557, C1234 | aiin_LI=0/469. daiin_LI_B=27.1%. daiin_LI_A=11.3%(ns). chi2_B=93.4. |
+| 1910 | ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split | 2 | GLOBAL, safety, ii, terminal, C1482, C1484 | A_nlock=93.7%. B_nlock=94.7%. AZC_nlock=83.3%. AB_p=0.197. non_aiin_n=0%. |
+| 1911 | ii-token HEAD anatomy diverges across systems: a-HEAD rate A=19.2%, B=35.9%, AZC=36.0% (chi2 p<0.001). A's ii-tokens are 57% headless. A-specific null hypothesis (ii HEAD = non-ii HEAD) rejected at p=1.3e-143. Safety encoding is morphological (construction-layer) but HEAD selection is execution-layer | 2 | A, B, AZC, safety, ii, HEAD, C1480, C1507 | A_aHEAD=19.2%. B_aHEAD=35.9%. AZC_aHEAD=36.0%. A_headless=57%. null_p=1.3e-143. |
+| 1912 | ii/ee complementary domain split confirmed cross-system: a-HEAD tokens preferentially use ii (not ee), e-HEAD tokens preferentially use ee (not ii), in all three systems. Two-strategy safety architecture (C1732-C1733) is construction-layer | 2 | GLOBAL, safety, ii, ee, HEAD, C1732, C1733 | cross_system=true. a_uses_ii=true. e_uses_ee=true. |
+| 1913 | C1908 seasonal i/d swap driven specifically by aiin-family: Summer+Winter aiin rate 0.120 vs Spring+Autumn 0.072 (chi2=8.62, p=0.0033). ody-family shows exact inverse. 65-74% of all seasonal i-tokens are aiin-family. Decomposes C1908 to token-family level | 2 | AZC, zodiac, aiin, seasonal, C1908 | SW_rate=0.120. SpAu_rate=0.072. chi2=8.62. p=0.0033. |
+| 1914 | daiin rate anti-correlates with folio thermal complexity: folio-level rho=-0.324, p=0.0004. Herbal line-level rho=-0.089, p=0.0018. daiin is infrastructure accompanying simpler (lower e_depth) content. Cluster 3 (Stripped-down Herbal, e_depth 0.133) has highest daiin rate | 2 | A, aiin, daiin, thermal, e_depth | folio_rho=-0.324. folio_p=0.0004. herbal_rho=-0.089. herbal_p=0.0018. |
+| 1915 | AZC daiin-aiin co-occurrence attraction: OR=5.04, Fisher p=0.003. In AZC only, daiin and aiin co-occur on same line 3.3x more than expected. A and B show independence (OR~1.0, ns). AZC uses both tokens in complementary diagram-entry roles | 2 | AZC, aiin, daiin, co-occurrence | OR=5.04. p=0.003. enrichment=3.3x. A_OR~1.0. B_OR~1.0. |
+| 1916 | aiin-family internal composition is section-conditioned: headed/headless ratio differs by section in A (chi2=11.55, p=0.003) and B (chi2=40.22, p<0.0001). Herbal/Pharma A-side majority headless (daiin-driven); Text A-side majority headed. B Cosmo/Stars headed-dominant; Bio most headless | 2 | GLOBAL, aiin, section, HEAD, C1507 | A_chi2=11.55. A_p=0.003. B_chi2=40.22. B_p<0.0001. |
+
+**Phase 632 findings (aiin Cross-System Investigation, DUAL_LAYER_ARCHITECTURE):**
+- The aiin/daiin family — the manuscript's most frequent token — has dual-layer architecture. Terminal safety (n-lock at 93-95%) and ii/ee domain complementarity are **construction-layer**: morphologically hardwired, present identically across A, B, and AZC. HEAD selection and positional grammar are **execution-layer**: system-specific adaptations of the same underlying token.
+- aiin absolute line-initial exclusion (C1909): the most robust positional constraint found in this phase. Bare aiin NEVER starts a line in any system (0/469). This is not a soft preference — it is a hard morphological exclusion. daiin (da-prefixed) serves as the line-opener in B (27.1%) but not in A, consistent with A's non-sequential grammar (C240).
+- The safety architecture is morphologically encoded (C1910-C1912): ii-tokens lock to n-terminal at 93-95% across all systems, and the ii/ee domain split holds universally. The notation itself enforces that iteration tokens always resolve to safe containment — you cannot compose an unsafe ii-token in any system.
+- HEAD anatomy divergence (C1911) reveals the execution-layer: A's ii-tokens are 57% headless (infrastructure), B's are 36% a-headed (yield operations), AZC's are 36% a-headed. Same safety mechanism, different operational deployment.
+- C1908 decomposed (C1913): the zodiac seasonal i/d swap is specifically an aiin/ody swap. Summer/Winter favor repeated cycling (aiin), Spring/Autumn favor sequential staging (ody).
+- daiin marks simple content (C1914): anti-correlates with thermal complexity at folio level (rho=-0.324). Materials requiring complex thermal handling use less daiin infrastructure.
+- AZC treats daiin+aiin as a co-occurrence pair (C1915, OR=5.04), unlike A and B where they're independent. AZC diagram entries may use both tokens in complementary roles within single annotations.
+
+---
 
 **Phase 631 findings (Dark Pipeline PREFIX Domain Locking, DOMAIN_LOCKING_CONFIRMED):**
 - Dark MIDDLEs are not generic identification fillers — each carries MIDDLE-specific PREFIX domain commitment that persists across 14-18 folios in B (C1901) and operates in A's registry (C1902). This extends C1138 from population-level to per-MIDDLE resolution.

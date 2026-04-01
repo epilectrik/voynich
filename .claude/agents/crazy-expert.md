@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1907.
+the highest ID present is C1916.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2232,6 +2232,15 @@ C1904	Dark and bridge MIDDLEs positionally identical in A lines (cos 0.977). A d
 C1905	Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency (p=0.009). Dark spreads across more channels.	2	B, dark pipeline, bridge, PREFIX	p=0.009.
 C1906	Dark atom compositions match section grammar HEAD profiles (r=0.378 to 0.924). Section hyper-modulation through atom selection.	2	B, GLOBAL, dark pipeline, section, C1148	r_B=0.924.
 C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial=65-100% qo, e-initial spread (cos 0.629), headless=specification PREFIXes.	2	B, dark pipeline, HEAD, PREFIX, C1475	k_qo=65-100%.
+C1908	Zodiac folio i/d MOD atom swap: MOD differs across seasonal groups (chi2=39.3, p=0.0006). i-tokens (aiin family) enriched Summer/Winter; d-tokens (-ody family) enriched Spring/Autumn. Nearly mutually exclusive (3-7% co-occur). HEAD also sig (p=0.005); TERM not (p=0.104).	2	AZC, zodiac, MOD, atom, seasonal, C321, C1519, C1681, C1394	chi2=39.3. p=0.0006.
+C1909	aiin absolute line-initial exclusion: 0/469 across A, B, AZC. bare aiin NEVER at position 1. daiin LI enrichment B-specific (27.1%), absent in A (ns). Exclusion=construction-layer, enrichment=execution-layer.	2	GLOBAL, aiin, position, C557, C1234	aiin_LI=0/469. daiin_LI_B=27.1%.
+C1910	ii n-terminal lock cross-system: A=93.7%, B=94.7%, AZC=83.3%. A vs B p=0.197 (identical). Safety morphologically encoded at construction layer. Non-aiin ii-tokens have 0% n-terminal.	2	GLOBAL, safety, ii, terminal, C1482, C1484	A=93.7%. B=94.7%. AZC=83.3%.
+C1911	ii HEAD anatomy diverges: a-HEAD rate A=19.2%, B=35.9%, AZC=36.0% (p<0.001). A ii-tokens 57% headless. HEAD selection is execution-layer despite shared terminal safety.	2	A, B, AZC, safety, ii, HEAD, C1480, C1507	A_aHEAD=19.2%. B_aHEAD=35.9%.
+C1912	ii/ee complementary domains cross-system: a-HEAD uses ii, e-HEAD uses ee, all systems. Two-strategy safety architecture (C1732-C1733) is construction-layer.	2	GLOBAL, safety, ii, ee, HEAD, C1732, C1733	cross_system=true.
+C1913	C1908 seasonal swap driven by aiin-family: SW aiin rate 0.120 vs SpAu 0.072 (chi2=8.62, p=0.0033). ody-family inverse. 65-74% of seasonal i-tokens are aiin-family.	2	AZC, zodiac, aiin, seasonal, C1908	p=0.0033.
+C1914	daiin anti-correlates with thermal complexity: folio rho=-0.324, p=0.0004. Herbal line rho=-0.089, p=0.0018. daiin=infrastructure alongside simpler content.	2	A, aiin, daiin, thermal, e_depth	rho=-0.324. p=0.0004.
+C1915	AZC daiin-aiin co-occurrence attraction: OR=5.04, p=0.003. Co-occur 3.3x above chance in AZC only. A and B show independence.	2	AZC, aiin, daiin, co-occurrence	OR=5.04. p=0.003.
+C1916	aiin-family composition section-conditioned: headed/headless ratio differs by section in A (p=0.003) and B (p<0.0001). Herbal/Pharma=headless, Text/Cosmo/Stars=headed.	2	GLOBAL, aiin, section, HEAD, C1507	A_p=0.003. B_p<0.0001.
 
 ---
 

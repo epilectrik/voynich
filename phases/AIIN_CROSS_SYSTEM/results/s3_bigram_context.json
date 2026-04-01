@@ -1,0 +1,1353 @@
+{
+  "anchors_b": {
+    "or_to_aiin_pct": 16.7,
+    "or_to_aiin_count": 40,
+    "or_successor_total": 240,
+    "daiin_to_chsh_pct": 47.8,
+    "daiin_to_chsh_count": 139,
+    "daiin_successor_total": 291
+  },
+  "predecessors": {
+    "A": {
+      "aiin_top15": [
+        [
+          "s",
+          13
+        ],
+        [
+          "or",
+          10
+        ],
+        [
+          "o",
+          4
+        ],
+        [
+          "r",
+          3
+        ],
+        [
+          "dor",
+          2
+        ],
+        [
+          "d",
+          2
+        ],
+        [
+          "dar",
+          2
+        ],
+        [
+          "oteor",
+          2
+        ],
+        [
+          "ol",
+          1
+        ],
+        [
+          "por",
+          1
+        ],
+        [
+          "okar",
+          1
+        ],
+        [
+          "deeeod",
+          1
+        ],
+        [
+          "she",
+          1
+        ],
+        [
+          "chol",
+          1
+        ],
+        [
+          "chear",
+          1
+        ]
+      ],
+      "daiin_top15": [
+        [
+          "chol",
+          33
+        ],
+        [
+          "daiin",
+          13
+        ],
+        [
+          "shol",
+          10
+        ],
+        [
+          "chor",
+          9
+        ],
+        [
+          "chy",
+          8
+        ],
+        [
+          "qokol",
+          7
+        ],
+        [
+          "ol",
+          7
+        ],
+        [
+          "cthy",
+          7
+        ],
+        [
+          "dy",
+          6
+        ],
+        [
+          "otol",
+          6
+        ],
+        [
+          "cthol",
+          6
+        ],
+        [
+          "okeey",
+          5
+        ],
+        [
+          "shor",
+          5
+        ],
+        [
+          "qoky",
+          4
+        ],
+        [
+          "qokeey",
+          4
+        ]
+      ],
+      "aiin_total_with_pred": 73,
+      "daiin_total_with_pred": 453,
+      "or_precedes_aiin_pct": 13.7,
+      "or_followed_by_aiin_pct": 11.0,
+      "or_to_aiin_count": 10,
+      "or_total_successors": 91
+    },
+    "B": {
+      "aiin_top15": [
+        [
+          "or",
+          40
+        ],
+        [
+          "ar",
+          22
+        ],
+        [
+          "s",
+          18
+        ],
+        [
+          "ol",
+          12
+        ],
+        [
+          "r",
+          7
+        ],
+        [
+          "lor",
+          6
+        ],
+        [
+          "dar",
+          6
+        ],
+        [
+          "ches",
+          6
+        ],
+        [
+          "otar",
+          5
+        ],
+        [
+          "sar",
+          5
+        ],
+        [
+          "char",
+          5
+        ],
+        [
+          "eees",
+          4
+        ],
+        [
+          "sor",
+          4
+        ],
+        [
+          "os",
+          3
+        ],
+        [
+          "chor",
+          3
+        ]
+      ],
+      "daiin_top15": [
+        [
+          "chedy",
+          9
+        ],
+        [
+          "qokeey",
+          6
+        ],
+        [
+          "chckhy",
+          6
+        ],
+        [
+          "ol",
+          5
+        ],
+        [
+          "qoky",
+          5
+        ],
+        [
+          "dal",
+          4
+        ],
+        [
+          "chey",
+          4
+        ],
+        [
+          "daiin",
+          4
+        ],
+        [
+          "qopchedy",
+          3
+        ],
+        [
+          "ytedy",
+          3
+        ],
+        [
+          "shey",
+          3
+        ],
+        [
+          "cheey",
+          3
+        ],
+        [
+          "dy",
+          3
+        ],
+        [
+          "opchdy",
+          2
+        ],
+        [
+          "oto",
+          2
+        ]
+      ],
+      "aiin_total_with_pred": 351,
+      "daiin_total_with_pred": 229,
+      "or_precedes_aiin_pct": 11.4,
+      "or_followed_by_aiin_pct": 16.7,
+      "or_to_aiin_count": 40,
+      "or_total_successors": 240
+    },
+    "AZC": {
+      "aiin_top15": [
+        [
+          "cho",
+          2
+        ],
+        [
+          "aiin",
+          2
+        ],
+        [
+          "d",
+          1
+        ],
+        [
+          "t",
+          1
+        ],
+        [
+          "sor",
+          1
+        ],
+        [
+          "oteochedy",
+          1
+        ],
+        [
+          "daiin",
+          1
+        ],
+        [
+          "sheody",
+          1
+        ],
+        [
+          "orchoer",
+          1
+        ],
+        [
+          "chos",
+          1
+        ],
+        [
+          "okeor",
+          1
+        ],
+        [
+          "sses",
+          1
+        ],
+        [
+          "ocko",
+          1
+        ],
+        [
+          "adairchdy",
+          1
+        ],
+        [
+          "al",
+          1
+        ]
+      ],
+      "daiin_top15": [
+        [
+          "o",
+          1
+        ],
+        [
+          "dsh",
+          1
+        ],
+        [
+          "keey",
+          1
+        ],
+        [
+          "qofchy",
+          1
+        ],
+        [
+          "okchy",
+          1
+        ],
+        [
+          "chol",
+          1
+        ],
+        [
+          "ytor",
+          1
+        ],
+        [
+          "cheo",
+          1
+        ],
+        [
+          "dchedy",
+          1
+        ],
+        [
+          "yky",
+          1
+        ],
+        [
+          "dal",
+          1
+        ],
+        [
+          "chkey",
+          1
+        ],
+        [
+          "dchedal",
+          1
+        ],
+        [
+          "ykor",
+          1
+        ],
+        [
+          "shees",
+          1
+        ]
+      ],
+      "aiin_total_with_pred": 45,
+      "daiin_total_with_pred": 30,
+      "or_precedes_aiin_pct": 0.0,
+      "or_followed_by_aiin_pct": 0.0,
+      "or_to_aiin_count": 0,
+      "or_total_successors": 14
+    }
+  },
+  "successors": {
+    "A": {
+      "aiin_top15": [
+        [
+          "or",
+          2
+        ],
+        [
+          "shol",
+          2
+        ],
+        [
+          "qotchy",
+          2
+        ],
+        [
+          "dy",
+          2
+        ],
+        [
+          "al",
+          2
+        ],
+        [
+          "chol",
+          1
+        ],
+        [
+          "cheol",
+          1
+        ],
+        [
+          "oteol",
+          1
+        ],
+        [
+          "chls",
+          1
+        ],
+        [
+          "okor",
+          1
+        ],
+        [
+          "okeod",
+          1
+        ],
+        [
+          "chefoly",
+          1
+        ],
+        [
+          "chtchor",
+          1
+        ],
+        [
+          "cthy",
+          1
+        ],
+        [
+          "dtoaiin",
+          1
+        ]
+      ],
+      "daiin_top15": [
+        [
+          "daiin",
+          13
+        ],
+        [
+          "cthy",
+          11
+        ],
+        [
+          "cthor",
+          8
+        ],
+        [
+          "s",
+          8
+        ],
+        [
+          "chol",
+          7
+        ],
+        [
+          "dal",
+          7
+        ],
+        [
+          "cthol",
+          7
+        ],
+        [
+          "dain",
+          6
+        ],
+        [
+          "dam",
+          6
+        ],
+        [
+          "chor",
+          6
+        ],
+        [
+          "chy",
+          6
+        ],
+        [
+          "dy",
+          5
+        ],
+        [
+          "otaiin",
+          4
+        ],
+        [
+          "dar",
+          4
+        ],
+        [
+          "chcthy",
+          4
+        ]
+      ],
+      "aiin_total_with_succ": 61,
+      "daiin_total_with_succ": 406,
+      "daiin_succ_chsh_pct": 27.3,
+      "daiin_succ_chsh_count": 111,
+      "daiin_succ_prefix_dist": [
+        [
+          "ch",
+          79
+        ],
+        [
+          "(none)",
+          64
+        ],
+        [
+          "ct",
+          51
+        ],
+        [
+          "da",
+          50
+        ],
+        [
+          "qo",
+          49
+        ],
+        [
+          "sh",
+          32
+        ],
+        [
+          "ok",
+          22
+        ],
+        [
+          "ot",
+          21
+        ],
+        [
+          "yk",
+          12
+        ],
+        [
+          "do",
+          5
+        ]
+      ],
+      "aiin_succ_chsh_pct": 39.3,
+      "aiin_succ_chsh_count": 24,
+      "aiin_succ_prefix_dist": [
+        [
+          "ch",
+          19
+        ],
+        [
+          "(none)",
+          13
+        ],
+        [
+          "ok",
+          8
+        ],
+        [
+          "sh",
+          5
+        ],
+        [
+          "qo",
+          4
+        ],
+        [
+          "ol",
+          3
+        ],
+        [
+          "ot",
+          2
+        ],
+        [
+          "ct",
+          1
+        ],
+        [
+          "to",
+          1
+        ],
+        [
+          "ar",
+          1
+        ]
+      ]
+    },
+    "B": {
+      "aiin_top15": [
+        [
+          "chey",
+          8
+        ],
+        [
+          "al",
+          7
+        ],
+        [
+          "okal",
+          7
+        ],
+        [
+          "okaiin",
+          7
+        ],
+        [
+          "otar",
+          7
+        ],
+        [
+          "ol",
+          7
+        ],
+        [
+          "okain",
+          6
+        ],
+        [
+          "otaiin",
+          5
+        ],
+        [
+          "okeey",
+          5
+        ],
+        [
+          "cheey",
+          4
+        ],
+        [
+          "oteey",
+          4
+        ],
+        [
+          "or",
+          4
+        ],
+        [
+          "otedy",
+          3
+        ],
+        [
+          "y",
+          3
+        ],
+        [
+          "otain",
+          3
+        ]
+      ],
+      "daiin_top15": [
+        [
+          "chey",
+          11
+        ],
+        [
+          "chedy",
+          10
+        ],
+        [
+          "shey",
+          7
+        ],
+        [
+          "ol",
+          5
+        ],
+        [
+          "chckhy",
+          5
+        ],
+        [
+          "al",
+          5
+        ],
+        [
+          "or",
+          5
+        ],
+        [
+          "dal",
+          5
+        ],
+        [
+          "okaiin",
+          5
+        ],
+        [
+          "shedy",
+          5
+        ],
+        [
+          "shody",
+          4
+        ],
+        [
+          "okedy",
+          4
+        ],
+        [
+          "sheol",
+          4
+        ],
+        [
+          "okar",
+          4
+        ],
+        [
+          "otal",
+          4
+        ]
+      ],
+      "aiin_total_with_succ": 337,
+      "daiin_total_with_succ": 291,
+      "daiin_succ_chsh_pct": 47.8,
+      "daiin_succ_chsh_count": 139,
+      "daiin_succ_prefix_dist": [
+        [
+          "ch",
+          84
+        ],
+        [
+          "sh",
+          55
+        ],
+        [
+          "(none)",
+          38
+        ],
+        [
+          "ok",
+          25
+        ],
+        [
+          "da",
+          20
+        ],
+        [
+          "ot",
+          19
+        ],
+        [
+          "qo",
+          14
+        ],
+        [
+          "ol",
+          12
+        ],
+        [
+          "yk",
+          8
+        ],
+        [
+          "do",
+          4
+        ]
+      ],
+      "aiin_succ_chsh_pct": 31.5,
+      "aiin_succ_chsh_count": 106,
+      "aiin_succ_prefix_dist": [
+        [
+          "ch",
+          75
+        ],
+        [
+          "(none)",
+          72
+        ],
+        [
+          "ok",
+          51
+        ],
+        [
+          "ot",
+          40
+        ],
+        [
+          "sh",
+          31
+        ],
+        [
+          "ol",
+          17
+        ],
+        [
+          "qo",
+          10
+        ],
+        [
+          "da",
+          9
+        ],
+        [
+          "al",
+          7
+        ],
+        [
+          "te",
+          5
+        ]
+      ]
+    },
+    "AZC": {
+      "aiin_top15": [
+        [
+          "al",
+          3
+        ],
+        [
+          "ar",
+          2
+        ],
+        [
+          "am",
+          2
+        ],
+        [
+          "aiin",
+          2
+        ],
+        [
+          "oteos",
+          2
+        ],
+        [
+          "daram",
+          1
+        ],
+        [
+          "okeohdar",
+          1
+        ],
+        [
+          "os",
+          1
+        ],
+        [
+          "okeeody",
+          1
+        ],
+        [
+          "ykeeykeey",
+          1
+        ],
+        [
+          "okeyteey",
+          1
+        ],
+        [
+          "chol",
+          1
+        ],
+        [
+          "okar",
+          1
+        ],
+        [
+          "okees",
+          1
+        ],
+        [
+          "aral",
+          1
+        ]
+      ],
+      "daiin_top15": [
+        [
+          "o",
+          1
+        ],
+        [
+          "y",
+          1
+        ],
+        [
+          "sheek",
+          1
+        ],
+        [
+          "keo",
+          1
+        ],
+        [
+          "aiin",
+          1
+        ],
+        [
+          "dal",
+          1
+        ],
+        [
+          "okol",
+          1
+        ],
+        [
+          "or",
+          1
+        ],
+        [
+          "ypcheg",
+          1
+        ],
+        [
+          "taedaiin",
+          1
+        ],
+        [
+          "oteeody",
+          1
+        ],
+        [
+          "dcheeody",
+          1
+        ],
+        [
+          "dakeey",
+          1
+        ],
+        [
+          "chey",
+          1
+        ],
+        [
+          "oekaiin",
+          1
+        ]
+      ],
+      "aiin_total_with_succ": 40,
+      "daiin_total_with_succ": 33,
+      "daiin_succ_chsh_pct": 33.3,
+      "daiin_succ_chsh_count": 11,
+      "daiin_succ_prefix_dist": [
+        [
+          "(none)",
+          8
+        ],
+        [
+          "ch",
+          7
+        ],
+        [
+          "sh",
+          4
+        ],
+        [
+          "ot",
+          4
+        ],
+        [
+          "da",
+          3
+        ],
+        [
+          "ok",
+          2
+        ],
+        [
+          "ke",
+          1
+        ],
+        [
+          "pch",
+          1
+        ],
+        [
+          "ta",
+          1
+        ],
+        [
+          "dch",
+          1
+        ]
+      ],
+      "aiin_succ_chsh_pct": 15.0,
+      "aiin_succ_chsh_count": 6,
+      "aiin_succ_prefix_dist": [
+        [
+          "(none)",
+          10
+        ],
+        [
+          "ot",
+          10
+        ],
+        [
+          "ok",
+          6
+        ],
+        [
+          "ch",
+          4
+        ],
+        [
+          "da",
+          2
+        ],
+        [
+          "yk",
+          2
+        ],
+        [
+          "sh",
+          2
+        ],
+        [
+          "ol",
+          2
+        ],
+        [
+          "ar",
+          1
+        ],
+        [
+          "te",
+          1
+        ]
+      ]
+    }
+  },
+  "entropy": {
+    "A": {
+      "h_aiin": 5.7668,
+      "h_daiin": 7.6516,
+      "h_baseline": 2.7587,
+      "n_aiin": 61,
+      "n_daiin": 406,
+      "aiin_constraint_ratio": 2.0904,
+      "daiin_constraint_ratio": 2.7736
+    },
+    "B": {
+      "h_aiin": 7.5218,
+      "h_daiin": 7.1489,
+      "h_baseline": 2.9291,
+      "n_aiin": 337,
+      "n_daiin": 291,
+      "aiin_constraint_ratio": 2.5679,
+      "daiin_constraint_ratio": 2.4406
+    },
+    "AZC": {
+      "h_aiin": 5.0031,
+      "h_daiin": 5.0444,
+      "h_baseline": 2.4858,
+      "n_aiin": 40,
+      "n_daiin": 33,
+      "aiin_constraint_ratio": 2.0127,
+      "daiin_constraint_ratio": 2.0293
+    }
+  },
+  "a_cooccurrence": {
+    "daiin_top20": [
+      [
+        "chol",
+        97
+      ],
+      [
+        "chor",
+        58
+      ],
+      [
+        "s",
+        46
+      ],
+      [
+        "cthy",
+        39
+      ],
+      [
+        "dy",
+        36
+      ],
+      [
+        "chy",
+        35
+      ],
+      [
+        "shol",
+        35
+      ],
+      [
+        "sho",
+        34
+      ],
+      [
+        "dain",
+        31
+      ],
+      [
+        "cheol",
+        25
+      ],
+      [
+        "or",
+        25
+      ],
+      [
+        "ol",
+        24
+      ],
+      [
+        "dor",
+        24
+      ],
+      [
+        "dal",
+        24
+      ],
+      [
+        "qotchy",
+        23
+      ],
+      [
+        "aiin",
+        22
+      ],
+      [
+        "dar",
+        22
+      ],
+      [
+        "dol",
+        19
+      ],
+      [
+        "shy",
+        19
+      ],
+      [
+        "y",
+        19
+      ]
+    ],
+    "aiin_top20": [
+      [
+        "daiin",
+        23
+      ],
+      [
+        "s",
+        20
+      ],
+      [
+        "or",
+        18
+      ],
+      [
+        "chol",
+        17
+      ],
+      [
+        "ol",
+        10
+      ],
+      [
+        "chor",
+        9
+      ],
+      [
+        "cheor",
+        8
+      ],
+      [
+        "dol",
+        7
+      ],
+      [
+        "r",
+        7
+      ],
+      [
+        "dar",
+        7
+      ],
+      [
+        "shol",
+        7
+      ],
+      [
+        "o",
+        6
+      ],
+      [
+        "odaiin",
+        6
+      ],
+      [
+        "sho",
+        6
+      ],
+      [
+        "dy",
+        6
+      ],
+      [
+        "dam",
+        6
+      ],
+      [
+        "qokol",
+        6
+      ],
+      [
+        "cheol",
+        5
+      ],
+      [
+        "okol",
+        5
+      ],
+      [
+        "sheol",
+        5
+      ]
+    ],
+    "jaccard_top20": 0.3793,
+    "intersection": [
+      "cheol",
+      "chol",
+      "chor",
+      "dar",
+      "dol",
+      "dy",
+      "ol",
+      "or",
+      "s",
+      "sho",
+      "shol"
+    ],
+    "daiin_only": [
+      "aiin",
+      "chy",
+      "cthy",
+      "dain",
+      "dal",
+      "dor",
+      "qotchy",
+      "shy",
+      "y"
+    ],
+    "aiin_only": [
+      "cheor",
+      "daiin",
+      "dam",
+      "o",
+      "odaiin",
+      "okol",
+      "qokol",
+      "r",
+      "sheol"
+    ]
+  },
+  "or_aiin_cross": {
+    "A": {
+      "aiin_preceded_by_or_pct": 13.7,
+      "aiin_preceded_by_or_count": 10,
+      "or_followed_by_aiin_pct": 11.0,
+      "or_followed_by_aiin_count": 10,
+      "dominant_predecessor": "s",
+      "dominant_predecessor_count": 13,
+      "aiin_total_with_pred": 73,
+      "or_total_with_succ": 91
+    },
+    "B": {
+      "aiin_preceded_by_or_pct": 11.4,
+      "aiin_preceded_by_or_count": 40,
+      "or_followed_by_aiin_pct": 16.7,
+      "or_followed_by_aiin_count": 40,
+      "dominant_predecessor": "or",
+      "dominant_predecessor_count": 40,
+      "aiin_total_with_pred": 351,
+      "or_total_with_succ": 240
+    },
+    "AZC": {
+      "aiin_preceded_by_or_pct": 0.0,
+      "aiin_preceded_by_or_count": 0,
+      "or_followed_by_aiin_pct": 0.0,
+      "or_followed_by_aiin_count": 0,
+      "dominant_predecessor": "cho",
+      "dominant_predecessor_count": 2,
+      "aiin_total_with_pred": 45,
+      "or_total_with_succ": 14
+    }
+  },
+  "wind_down": {
+    "B": {
+      "lines_with_aiin": 309,
+      "lines_with_both_aiin_ain": 10,
+      "pct_aiin_lines_also_ain": 3.2,
+      "aiin_before_ain": 8,
+      "pct_aiin_before_ain": 80.0,
+      "three_step_aiin_ain_am": 0,
+      "paragraph_position": {
+        "avg_line_num_aiin_and_ain": 19.2,
+        "avg_line_num_aiin_only": 19.41,
+        "n_both": 10,
+        "n_aiin_only": 295,
+        "later_in_folio": false
+      }
+    },
+    "A": {
+      "lines_with_aiin": 71,
+      "lines_with_both_aiin_ain": 0,
+      "pct_aiin_lines_also_ain": 0.0,
+      "aiin_before_ain": 0,
+      "pct_aiin_before_ain": 0,
+      "three_step_aiin_ain_am": 0,
+      "paragraph_position": {
+        "avg_line_num_aiin_and_ain": 0,
+        "avg_line_num_aiin_only": 9.3,
+        "n_both": 0,
+        "n_aiin_only": 70,
+        "later_in_folio": null
+      }
+    }
+  }
+}

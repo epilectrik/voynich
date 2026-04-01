@@ -1,0 +1,6258 @@
+{
+  "description": "Currier A record-level atom decode, 5 records per cluster",
+  "n_records": 20,
+  "records": [
+    {
+      "cluster_id": 1,
+      "cluster_name": "Thermal/Pharma",
+      "folio": "f101v2",
+      "line": "9",
+      "n_tokens": 9,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "soraly",
+          "prefix": "so",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) a(MOD:into) l(MOD:state) y(TERM:end)",
+          "gloss": "so:respond.into.state.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ra",
+          "suffix": "ly"
+        },
+        {
+          "position": 2,
+          "word": "olaran",
+          "prefix": "ol",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "MOD",
+              "gloss": "respond"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "a(HEAD:into) r(MOD:respond) a(MOD:into) n(TERM:bind)",
+          "gloss": "ol:into.respond.into.bind",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "ar",
+          "suffix": "an"
+        },
+        {
+          "position": 3,
+          "word": "teol",
+          "prefix": "te",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "te:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "cheol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange) l(TERM:state)",
+          "gloss": "ch:cool.arrange.state",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eol",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "ekchey",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) k(MOD:heat) c(MOD:adjust) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "cool.heat.adjust.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ekch",
+          "suffix": "ey"
+        },
+        {
+          "position": 6,
+          "word": "cheol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange) l(TERM:state)",
+          "gloss": "ch:cool.arrange.state",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eol",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "cholaiin",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(MOD:state) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "ch:arrange.state.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": "aiin"
+        },
+        {
+          "position": 8,
+          "word": "chol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "ch:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 9,
+          "word": "qkos",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "q",
+              "role": "PSEUDO_HEAD",
+              "gloss": "?"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "q(PSEUDO_HEAD:?) k(MOD:heat) o(MOD:arrange) s(MOD:sequence)",
+          "gloss": "?.heat.arrange.sequence",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": true,
+          "head": null,
+          "middle": "qko",
+          "suffix": "s"
+        }
+      ],
+      "record_gloss": "so:respond.into.state.end -> ol:into.respond.into.bind -> te:arrange.state -> ch:cool.arrange.state -> cool.heat.adjust.watch.cool.end -> ch:cool.arrange.state -> ch:arrange.state.into.iterate.iterate.bind -> ch:arrange.state -> ?.heat.arrange.sequence",
+      "head_sequence": [
+        "?",
+        "a",
+        "o",
+        "e",
+        "e",
+        "e",
+        "o",
+        "o",
+        "?"
+      ],
+      "prefix_sequence": [
+        "so",
+        "ol",
+        "te",
+        "ch",
+        "-",
+        "ch",
+        "ch",
+        "ch",
+        "-"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "NONE"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "cluster_name": "Thermal/Pharma",
+      "folio": "f102r1",
+      "line": "1",
+      "n_tokens": 7,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "polaiin",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "l",
+              "role": "PSEUDO_HEAD",
+              "gloss": "state"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "l(PSEUDO_HEAD:state) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "po:state.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "l",
+          "suffix": "aiin"
+        },
+        {
+          "position": 2,
+          "word": "shocthy",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "t",
+              "role": "MOD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) t(MOD:transfer) h(MOD:watch) y(TERM:end)",
+          "gloss": "sh:arrange.adjust.transfer.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "oct",
+          "suffix": "hy"
+        },
+        {
+          "position": 3,
+          "word": "qoteol",
+          "prefix": "qo",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) e(MOD:cool) o(MOD:arrange) l(TERM:state)",
+          "gloss": "qo:transfer.cool.arrange.state",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "t",
+          "middle": "t",
+          "suffix": "eol"
+        },
+        {
+          "position": 4,
+          "word": "loiiin",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "l",
+              "role": "PSEUDO_HEAD",
+              "gloss": "state"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "l(PSEUDO_HEAD:state) o(MOD:arrange) i(MOD:iterate) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "state.arrange.iterate.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 3,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "loi",
+          "suffix": "iin"
+        },
+        {
+          "position": 5,
+          "word": "oteeor",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) e(MOD:cool) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "ot:cool.cool.arrange.respond",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ee",
+          "suffix": "or"
+        },
+        {
+          "position": 6,
+          "word": "cpheodar",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) p(MOD:pause) h(MOD:watch) e(MOD:cool) o(MOD:arrange) d(MOD:mark) a(MOD:into) r(TERM:respond)",
+          "gloss": "adjust.pause.watch.cool.arrange.mark.into.respond",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "cpheod",
+          "suffix": "ar"
+        },
+        {
+          "position": 7,
+          "word": "sholdaiin",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(MOD:state) d(MOD:mark) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "sh:arrange.state.mark.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "old",
+          "suffix": "aiin"
+        }
+      ],
+      "record_gloss": "po:state.into.iterate.iterate.bind -> sh:arrange.adjust.transfer.watch.end -> qo:transfer.cool.arrange.state -> state.arrange.iterate.iterate.iterate.bind -> ot:cool.cool.arrange.respond -> adjust.pause.watch.cool.arrange.mark.into.respond -> sh:arrange.state.mark.into.iterate.iterate.bind",
+      "head_sequence": [
+        "?",
+        "o",
+        "t",
+        "?",
+        "e",
+        "?",
+        "o"
+      ],
+      "prefix_sequence": [
+        "po",
+        "sh",
+        "qo",
+        "-",
+        "ot",
+        "-",
+        "sh"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "cluster_name": "Thermal/Pharma",
+      "folio": "f102r2",
+      "line": "1",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "lsais",
+          "prefix": "sa",
+          "articulator": "l",
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) s(MOD:sequence)",
+          "gloss": "[l]sa:iterate.sequence",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "NONE",
+          "is_headless": true,
+          "head": null,
+          "middle": "i",
+          "suffix": "s"
+        },
+        {
+          "position": 2,
+          "word": "amg",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "m",
+              "role": "MOD",
+              "gloss": "final"
+            },
+            {
+              "char": "g",
+              "role": "MOD",
+              "gloss": "?"
+            }
+          ],
+          "atom_display": "a(HEAD:into) m(MOD:final) g(MOD:?)",
+          "gloss": "into.final.?",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "am",
+          "suffix": "g"
+        },
+        {
+          "position": 3,
+          "word": "cheey",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) e(MOD:cool) y(TERM:end)",
+          "gloss": "ch:cool.cool.end",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eey",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "cfhey",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "f",
+              "role": "MOD",
+              "gloss": "flag"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) f(MOD:flag) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "adjust.flag.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "cfh",
+          "suffix": "ey"
+        },
+        {
+          "position": 5,
+          "word": "por",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "SOLE",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "r(SOLE:respond)",
+          "gloss": "po:respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "r",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "aiin",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "a(HEAD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "aiin",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "chefoly",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "f",
+              "role": "MOD",
+              "gloss": "flag"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) f(MOD:flag) o(MOD:arrange) l(MOD:state) y(TERM:end)",
+          "gloss": "ch:cool.flag.arrange.state.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "efo",
+          "suffix": "ly"
+        },
+        {
+          "position": 8,
+          "word": "koldarod",
+          "prefix": "ko",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "l",
+              "role": "PSEUDO_HEAD",
+              "gloss": "state"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "MOD",
+              "gloss": "respond"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            }
+          ],
+          "atom_display": "l(PSEUDO_HEAD:state) d(MOD:mark) a(MOD:into) r(MOD:respond) o(MOD:arrange) d(MOD:mark)",
+          "gloss": "ko:state.mark.into.respond.arrange.mark",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ldarod",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "[l]sa:iterate.sequence -> into.final.? -> ch:cool.cool.end -> adjust.flag.watch.cool.end -> po:respond -> into.iterate.iterate.bind -> ch:cool.flag.arrange.state.end -> ko:state.mark.into.respond.arrange.mark",
+      "head_sequence": [
+        "?",
+        "a",
+        "e",
+        "?",
+        "?",
+        "a",
+        "e",
+        "?"
+      ],
+      "prefix_sequence": [
+        "sa",
+        "-",
+        "ch",
+        "-",
+        "po",
+        "-",
+        "ch",
+        "ko"
+      ],
+      "opacity_sequence": [
+        "NONE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "NONE"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "cluster_name": "Thermal/Pharma",
+      "folio": "f102v1",
+      "line": "1",
+      "n_tokens": 9,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "poaiin",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "a(HEAD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "po:into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "aiin",
+          "suffix": null
+        },
+        {
+          "position": 2,
+          "word": "ockhey",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) k(MOD:heat) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "arrange.adjust.heat.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ockh",
+          "suffix": "ey"
+        },
+        {
+          "position": 3,
+          "word": "pchol",
+          "prefix": "pch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "pch:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "doiin",
+          "prefix": "do",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "do:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "shey",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) y(TERM:end)",
+          "gloss": "sh:cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ey",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "shockhsy",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) k(MOD:heat) h(MOD:watch) s(MOD:sequence) y(TERM:end)",
+          "gloss": "sh:arrange.adjust.heat.watch.sequence.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ockhs",
+          "suffix": "y"
+        },
+        {
+          "position": 7,
+          "word": "sheo",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange)",
+          "gloss": "sh:cool.arrange",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eo",
+          "suffix": null
+        },
+        {
+          "position": 8,
+          "word": "cthy",
+          "prefix": "ct",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "h",
+              "role": "PSEUDO_HEAD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "h(PSEUDO_HEAD:watch) y(TERM:end)",
+          "gloss": "ct:watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "hy",
+          "suffix": null
+        },
+        {
+          "position": 9,
+          "word": "qoteody",
+          "prefix": "qo",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) e(MOD:cool) o(MOD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "qo:transfer.cool.arrange.mark.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "t",
+          "middle": "teo",
+          "suffix": "dy"
+        }
+      ],
+      "record_gloss": "po:into.iterate.iterate.bind -> arrange.adjust.heat.watch.cool.end -> pch:arrange.state -> do:iterate.iterate.bind -> sh:cool.end -> sh:arrange.adjust.heat.watch.sequence.end -> sh:cool.arrange -> ct:watch.end -> qo:transfer.cool.arrange.mark.end",
+      "head_sequence": [
+        "a",
+        "o",
+        "o",
+        "?",
+        "e",
+        "o",
+        "e",
+        "?",
+        "t"
+      ],
+      "prefix_sequence": [
+        "po",
+        "-",
+        "pch",
+        "do",
+        "sh",
+        "sh",
+        "sh",
+        "ct",
+        "qo"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "cluster_name": "Thermal/Pharma",
+      "folio": "f102v2",
+      "line": "1",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "porshols",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) s(MOD:sequence) h(MOD:watch) o(MOD:arrange) l(MOD:state) s(MOD:sequence)",
+          "gloss": "po:respond.sequence.watch.arrange.state.sequence",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": true,
+          "head": null,
+          "middle": "rshol",
+          "suffix": "s"
+        },
+        {
+          "position": 2,
+          "word": "podeesho",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) e(MOD:cool) e(MOD:cool) s(MOD:sequence) h(MOD:watch) o(MOD:arrange)",
+          "gloss": "po:mark.cool.cool.sequence.watch.arrange",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": true,
+          "head": null,
+          "middle": "deesho",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "oteeos",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) e(MOD:cool) o(MOD:arrange) s(MOD:sequence)",
+          "gloss": "ot:cool.cool.arrange.sequence",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eeo",
+          "suffix": "s"
+        },
+        {
+          "position": 4,
+          "word": "sheos",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange) s(MOD:sequence)",
+          "gloss": "sh:cool.arrange.sequence",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eo",
+          "suffix": "s"
+        },
+        {
+          "position": 5,
+          "word": "qokeeo",
+          "prefix": "qo",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "k",
+              "role": "HEAD",
+              "gloss": "heat"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            }
+          ],
+          "atom_display": "k(HEAD:heat) e(MOD:cool) e(MOD:cool) o(MOD:arrange)",
+          "gloss": "qo:heat.cool.cool.arrange",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "k",
+          "middle": "keeo",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "chckhhy",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) k(MOD:heat) h(MOD:watch) h(MOD:watch) y(TERM:end)",
+          "gloss": "ch:adjust.heat.watch.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ckh",
+          "suffix": "hy"
+        },
+        {
+          "position": 7,
+          "word": "shkeey",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "k",
+              "role": "HEAD",
+              "gloss": "heat"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "k(HEAD:heat) e(MOD:cool) e(MOD:cool) y(TERM:end)",
+          "gloss": "sh:heat.cool.cool.end",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "k",
+          "middle": "k",
+          "suffix": "eey"
+        },
+        {
+          "position": 8,
+          "word": "chekeod",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) k(MOD:heat) e(MOD:cool) o(MOD:arrange) d(MOD:mark)",
+          "gloss": "ch:cool.heat.cool.arrange.mark",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ekeod",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "po:respond.sequence.watch.arrange.state.sequence -> po:mark.cool.cool.sequence.watch.arrange -> ot:cool.cool.arrange.sequence -> sh:cool.arrange.sequence -> qo:heat.cool.cool.arrange -> ch:adjust.heat.watch.watch.end -> sh:heat.cool.cool.end -> ch:cool.heat.cool.arrange.mark",
+      "head_sequence": [
+        "?",
+        "?",
+        "e",
+        "e",
+        "k",
+        "?",
+        "k",
+        "e"
+      ],
+      "prefix_sequence": [
+        "po",
+        "po",
+        "ot",
+        "sh",
+        "qo",
+        "ch",
+        "sh",
+        "ch"
+      ],
+      "opacity_sequence": [
+        "NONE",
+        "NONE",
+        "NONE",
+        "NONE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE",
+        "NONE"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "cluster_name": "Arrangement",
+      "folio": "f100r",
+      "line": "10",
+      "n_tokens": 5,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "chol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "ch:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 2,
+          "word": "cheol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange) l(TERM:state)",
+          "gloss": "ch:cool.arrange.state",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eol",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "cho",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "SOLE",
+              "gloss": "arrange"
+            }
+          ],
+          "atom_display": "o(SOLE:arrange)",
+          "gloss": "ch:arrange",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": null,
+          "middle": "o",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "chckheody",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) k(MOD:heat) h(MOD:watch) e(MOD:cool) o(MOD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "ch:adjust.heat.watch.cool.arrange.mark.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ckheo",
+          "suffix": "dy"
+        },
+        {
+          "position": 5,
+          "word": "otolchey",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(MOD:state) c(MOD:adjust) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "ot:arrange.state.adjust.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "olch",
+          "suffix": "ey"
+        }
+      ],
+      "record_gloss": "ch:arrange.state -> ch:cool.arrange.state -> ch:arrange -> ch:adjust.heat.watch.cool.arrange.mark.end -> ot:arrange.state.adjust.watch.cool.end",
+      "head_sequence": [
+        "o",
+        "e",
+        "?",
+        "?",
+        "o"
+      ],
+      "prefix_sequence": [
+        "ch",
+        "ch",
+        "ch",
+        "ch",
+        "ot"
+      ],
+      "opacity_sequence": [
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "cluster_name": "Arrangement",
+      "folio": "f100v",
+      "line": "6",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "sain",
+          "prefix": "sa",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) n(TERM:bind)",
+          "gloss": "sa:iterate.bind",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "in",
+          "suffix": null
+        },
+        {
+          "position": 2,
+          "word": "cheokeos",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange) k(MOD:heat) e(MOD:cool) o(MOD:arrange) s(MOD:sequence)",
+          "gloss": "ch:cool.arrange.heat.cool.arrange.sequence",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eokeo",
+          "suffix": "s"
+        },
+        {
+          "position": 3,
+          "word": "chockhy",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) k(MOD:heat) h(MOD:watch) y(TERM:end)",
+          "gloss": "ch:arrange.adjust.heat.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ock",
+          "suffix": "hy"
+        },
+        {
+          "position": 4,
+          "word": "chocthey",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "t",
+              "role": "MOD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) t(MOD:transfer) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "ch:arrange.adjust.transfer.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "octh",
+          "suffix": "ey"
+        },
+        {
+          "position": 5,
+          "word": "kchody",
+          "prefix": "kch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "kch:arrange.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "o",
+          "suffix": "dy"
+        },
+        {
+          "position": 6,
+          "word": "chockhhor",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) k(MOD:heat) h(MOD:watch) h(MOD:watch) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "ch:arrange.adjust.heat.watch.watch.arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ockhh",
+          "suffix": "or"
+        },
+        {
+          "position": 7,
+          "word": "chckhey",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) k(MOD:heat) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "ch:adjust.heat.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ckh",
+          "suffix": "ey"
+        },
+        {
+          "position": 8,
+          "word": "dan",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "n",
+              "role": "SOLE",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "n(SOLE:bind)",
+          "gloss": "da:bind",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "n",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "sa:iterate.bind -> ch:cool.arrange.heat.cool.arrange.sequence -> ch:arrange.adjust.heat.watch.end -> ch:arrange.adjust.transfer.watch.cool.end -> kch:arrange.mark.end -> ch:arrange.adjust.heat.watch.watch.arrange.respond -> ch:adjust.heat.watch.cool.end -> da:bind",
+      "head_sequence": [
+        "?",
+        "e",
+        "o",
+        "o",
+        "o",
+        "o",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "sa",
+        "ch",
+        "ch",
+        "ch",
+        "kch",
+        "ch",
+        "ch",
+        "da"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "cluster_name": "Arrangement",
+      "folio": "f17r",
+      "line": "1",
+      "n_tokens": 9,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "fshody",
+          "prefix": "sh",
+          "articulator": "f",
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "[f]sh:arrange.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "o",
+          "suffix": "dy"
+        },
+        {
+          "position": 2,
+          "word": "daram",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "m",
+              "role": "TERM",
+              "gloss": "final"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) a(MOD:into) m(TERM:final)",
+          "gloss": "da:respond.into.final",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "r",
+          "suffix": "am"
+        },
+        {
+          "position": 3,
+          "word": "ydarchom",
+          "prefix": "da",
+          "articulator": "y",
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "m",
+              "role": "TERM",
+              "gloss": "final"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) c(MOD:adjust) h(MOD:watch) o(MOD:arrange) m(TERM:final)",
+          "gloss": "[y]da:respond.adjust.watch.arrange.final",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "rch",
+          "suffix": "om"
+        },
+        {
+          "position": 4,
+          "word": "opydy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "y",
+              "role": "MOD",
+              "gloss": "end"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) y(MOD:end) d(MOD:mark) y(TERM:end)",
+          "gloss": "arrange.pause.end.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "opy",
+          "suffix": "dy"
+        },
+        {
+          "position": 5,
+          "word": "ypod",
+          "prefix": "po",
+          "articulator": "y",
+          "atoms": [
+            {
+              "char": "d",
+              "role": "SOLE",
+              "gloss": "mark"
+            }
+          ],
+          "atom_display": "d(SOLE:mark)",
+          "gloss": "[y]po:mark",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": true,
+          "head": null,
+          "middle": "d",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "chop",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause)",
+          "gloss": "ch:arrange.pause",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "op",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "otchy",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "ot:adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": null
+        },
+        {
+          "position": 8,
+          "word": "dody",
+          "prefix": "do",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) y(TERM:end)",
+          "gloss": "do:mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "dy",
+          "suffix": null
+        },
+        {
+          "position": 9,
+          "word": "oldckhy",
+          "prefix": "ol",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "k",
+              "role": "MOD",
+              "gloss": "heat"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) c(MOD:adjust) k(MOD:heat) h(MOD:watch) y(TERM:end)",
+          "gloss": "ol:mark.adjust.heat.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "dck",
+          "suffix": "hy"
+        }
+      ],
+      "record_gloss": "[f]sh:arrange.mark.end -> da:respond.into.final -> [y]da:respond.adjust.watch.arrange.final -> arrange.pause.end.mark.end -> [y]po:mark -> ch:arrange.pause -> ot:adjust.watch.end -> do:mark.end -> ol:mark.adjust.heat.watch.end",
+      "head_sequence": [
+        "o",
+        "?",
+        "?",
+        "o",
+        "?",
+        "o",
+        "?",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "sh",
+        "da",
+        "da",
+        "-",
+        "po",
+        "ch",
+        "ot",
+        "do",
+        "ol"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "NONE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "cluster_name": "Arrangement",
+      "folio": "f1v",
+      "line": "1",
+      "n_tokens": 7,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "kchsy",
+          "prefix": "kch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "s",
+              "role": "PSEUDO_HEAD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "s(PSEUDO_HEAD:sequence) y(TERM:end)",
+          "gloss": "kch:sequence.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "s",
+          "suffix": "y"
+        },
+        {
+          "position": 2,
+          "word": "chadaiin",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "a(HEAD:into) d(MOD:mark) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "ch:into.mark.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "ad",
+          "suffix": "aiin"
+        },
+        {
+          "position": 3,
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "oltchey",
+          "prefix": "ol",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) c(MOD:adjust) h(MOD:watch) e(MOD:cool) y(TERM:end)",
+          "gloss": "ol:transfer.adjust.watch.cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "t",
+          "middle": "tch",
+          "suffix": "ey"
+        },
+        {
+          "position": 5,
+          "word": "char",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "a(HEAD:into) r(TERM:respond)",
+          "gloss": "ch:into.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "a",
+          "middle": "ar",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "cfhar",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "f",
+              "role": "MOD",
+              "gloss": "flag"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) f(MOD:flag) h(MOD:watch) a(MOD:into) r(TERM:respond)",
+          "gloss": "adjust.flag.watch.into.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "cfh",
+          "suffix": "ar"
+        },
+        {
+          "position": 7,
+          "word": "am",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "m",
+              "role": "TERM",
+              "gloss": "final"
+            }
+          ],
+          "atom_display": "a(HEAD:into) m(TERM:final)",
+          "gloss": "into.final",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "am",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "kch:sequence.end -> ch:into.mark.into.iterate.iterate.bind -> arrange.state -> ol:transfer.adjust.watch.cool.end -> ch:into.respond -> adjust.flag.watch.into.respond -> into.final",
+      "head_sequence": [
+        "?",
+        "a",
+        "o",
+        "t",
+        "a",
+        "?",
+        "a"
+      ],
+      "prefix_sequence": [
+        "kch",
+        "ch",
+        "-",
+        "ol",
+        "ch",
+        "-",
+        "-"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "cluster_name": "Arrangement",
+      "folio": "f24r",
+      "line": "1",
+      "n_tokens": 7,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "porory",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "MOD",
+              "gloss": "respond"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) o(MOD:arrange) r(MOD:respond) y(TERM:end)",
+          "gloss": "po:respond.arrange.respond.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ro",
+          "suffix": "ry"
+        },
+        {
+          "position": 2,
+          "word": "chor",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(TERM:respond)",
+          "gloss": "ch:arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "or",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "opchar",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) c(MOD:adjust) h(MOD:watch) a(MOD:into) r(TERM:respond)",
+          "gloss": "arrange.pause.adjust.watch.into.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "opch",
+          "suffix": "ar"
+        },
+        {
+          "position": 4,
+          "word": "she",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "SOLE",
+              "gloss": "cool"
+            }
+          ],
+          "atom_display": "e(SOLE:cool)",
+          "gloss": "sh:cool",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": null,
+          "middle": "e",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "cheol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange) l(TERM:state)",
+          "gloss": "ch:cool.arrange.state",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eol",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(TERM:respond)",
+          "gloss": "arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "or",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "po:respond.arrange.respond.end -> ch:arrange.respond -> arrange.pause.adjust.watch.into.respond -> sh:cool -> ch:cool.arrange.state -> da:iterate.iterate.bind -> arrange.respond",
+      "head_sequence": [
+        "?",
+        "o",
+        "o",
+        "?",
+        "e",
+        "?",
+        "o"
+      ],
+      "prefix_sequence": [
+        "po",
+        "ch",
+        "-",
+        "sh",
+        "ch",
+        "da",
+        "-"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "NONE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "cluster_name": "Stripped-down Herbal",
+      "folio": "f10v",
+      "line": "1",
+      "n_tokens": 9,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "paiin",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "p",
+              "role": "PSEUDO_HEAD",
+              "gloss": "pause"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "p(PSEUDO_HEAD:pause) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "pause.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "p",
+          "suffix": "aiin"
+        },
+        {
+          "position": 2,
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "sheo",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) o(MOD:arrange)",
+          "gloss": "sh:cool.arrange",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eo",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "pcheey",
+          "prefix": "pch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "e",
+              "role": "MOD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) e(MOD:cool) y(TERM:end)",
+          "gloss": "pch:cool.cool.end",
+          "e_depth": 2,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "eey",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "qoty",
+          "prefix": "qo",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) y(TERM:end)",
+          "gloss": "qo:transfer.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "t",
+          "middle": "t",
+          "suffix": "y"
+        },
+        {
+          "position": 6,
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "cthor",
+          "prefix": "ct",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "h",
+              "role": "PSEUDO_HEAD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "h(PSEUDO_HEAD:watch) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "ct:watch.arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "h",
+          "suffix": "or"
+        },
+        {
+          "position": 8,
+          "word": "otydy",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "y",
+              "role": "PSEUDO_HEAD",
+              "gloss": "end"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "y(PSEUDO_HEAD:end) d(MOD:mark) y(TERM:end)",
+          "gloss": "ot:end.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": "dy"
+        },
+        {
+          "position": 9,
+          "word": "sain",
+          "prefix": "sa",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) n(TERM:bind)",
+          "gloss": "sa:iterate.bind",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "in",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "pause.into.iterate.iterate.bind -> da:iterate.iterate.bind -> sh:cool.arrange -> pch:cool.cool.end -> qo:transfer.end -> da:iterate.iterate.bind -> ct:watch.arrange.respond -> ot:end.mark.end -> sa:iterate.bind",
+      "head_sequence": [
+        "?",
+        "?",
+        "e",
+        "e",
+        "t",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "-",
+        "da",
+        "sh",
+        "pch",
+        "qo",
+        "da",
+        "ct",
+        "ot",
+        "sa"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "cluster_name": "Stripped-down Herbal",
+      "folio": "f11r",
+      "line": "1",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "tshol",
+          "prefix": "sh",
+          "articulator": "t",
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "[t]sh:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 2,
+          "word": "schoal",
+          "prefix": "sch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) a(MOD:into) l(TERM:state)",
+          "gloss": "sch:arrange.into.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "o",
+          "suffix": "al"
+        },
+        {
+          "position": 3,
+          "word": "cfhy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "f",
+              "role": "MOD",
+              "gloss": "flag"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) f(MOD:flag) h(MOD:watch) y(TERM:end)",
+          "gloss": "adjust.flag.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "cf",
+          "suffix": "hy"
+        },
+        {
+          "position": 4,
+          "word": "shfydaiin",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "f",
+              "role": "PSEUDO_HEAD",
+              "gloss": "flag"
+            },
+            {
+              "char": "y",
+              "role": "MOD",
+              "gloss": "end"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "f(PSEUDO_HEAD:flag) y(MOD:end) d(MOD:mark) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "sh:flag.end.mark.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "fyd",
+          "suffix": "aiin"
+        },
+        {
+          "position": 5,
+          "word": "cphy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) p(MOD:pause) h(MOD:watch) y(TERM:end)",
+          "gloss": "adjust.pause.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "cp",
+          "suffix": "hy"
+        },
+        {
+          "position": 6,
+          "word": "shey",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) y(TERM:end)",
+          "gloss": "sh:cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ey",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "tchody",
+          "prefix": "tch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "tch:arrange.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "o",
+          "suffix": "dy"
+        },
+        {
+          "position": 8,
+          "word": "shoyty",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "y",
+              "role": "MOD",
+              "gloss": "end"
+            },
+            {
+              "char": "t",
+              "role": "MOD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) y(MOD:end) t(MOD:transfer) y(TERM:end)",
+          "gloss": "sh:arrange.end.transfer.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "oyt",
+          "suffix": "y"
+        }
+      ],
+      "record_gloss": "[t]sh:arrange.state -> sch:arrange.into.state -> adjust.flag.watch.end -> sh:flag.end.mark.into.iterate.iterate.bind -> adjust.pause.watch.end -> sh:cool.end -> tch:arrange.mark.end -> sh:arrange.end.transfer.end",
+      "head_sequence": [
+        "o",
+        "o",
+        "?",
+        "?",
+        "?",
+        "e",
+        "o",
+        "o"
+      ],
+      "prefix_sequence": [
+        "sh",
+        "sch",
+        "-",
+        "sh",
+        "-",
+        "sh",
+        "tch",
+        "sh"
+      ],
+      "opacity_sequence": [
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "cluster_name": "Stripped-down Herbal",
+      "folio": "f13v",
+      "line": "1",
+      "n_tokens": 7,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "koair",
+          "prefix": "ko",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "a(HEAD:into) i(MOD:iterate) r(TERM:respond)",
+          "gloss": "ko:into.iterate.respond",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "a",
+          "middle": "ai",
+          "suffix": "r"
+        },
+        {
+          "position": 2,
+          "word": "chtoiin",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) o(MOD:arrange) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "ch:transfer.arrange.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "t",
+          "middle": "t",
+          "suffix": "oiin"
+        },
+        {
+          "position": 3,
+          "word": "otchy",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "ot:adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "kchod",
+          "prefix": "kch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) d(MOD:mark)",
+          "gloss": "kch:arrange.mark",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "od",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "otol",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "ot:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "otchy",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "ot:adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "octhos",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "t",
+              "role": "MOD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) t(MOD:transfer) h(MOD:watch) o(MOD:arrange) s(MOD:sequence)",
+          "gloss": "arrange.adjust.transfer.watch.arrange.sequence",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "octho",
+          "suffix": "s"
+        }
+      ],
+      "record_gloss": "ko:into.iterate.respond -> ch:transfer.arrange.iterate.iterate.bind -> ot:adjust.watch.end -> kch:arrange.mark -> ot:arrange.state -> ot:adjust.watch.end -> arrange.adjust.transfer.watch.arrange.sequence",
+      "head_sequence": [
+        "a",
+        "t",
+        "?",
+        "o",
+        "o",
+        "?",
+        "o"
+      ],
+      "prefix_sequence": [
+        "ko",
+        "ch",
+        "ot",
+        "kch",
+        "ot",
+        "ot",
+        "-"
+      ],
+      "opacity_sequence": [
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "NONE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "NONE"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "cluster_name": "Stripped-down Herbal",
+      "folio": "f15r",
+      "line": "1",
+      "n_tokens": 7,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "tshor",
+          "prefix": "sh",
+          "articulator": "t",
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(TERM:respond)",
+          "gloss": "[t]sh:arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "or",
+          "suffix": null
+        },
+        {
+          "position": 2,
+          "word": "shey",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) y(TERM:end)",
+          "gloss": "sh:cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ey",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "tchaly",
+          "prefix": "tch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "a(HEAD:into) l(MOD:state) y(TERM:end)",
+          "gloss": "tch:into.state.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "a",
+          "suffix": "ly"
+        },
+        {
+          "position": 4,
+          "word": "shy",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "y",
+              "role": "SOLE",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "y(SOLE:end)",
+          "gloss": "sh:end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "chtols",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "MOD",
+              "gloss": "state"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) o(MOD:arrange) l(MOD:state) s(MOD:sequence)",
+          "gloss": "ch:transfer.arrange.state.sequence",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "NONE",
+          "is_headless": false,
+          "head": "t",
+          "middle": "tol",
+          "suffix": "s"
+        },
+        {
+          "position": 6,
+          "word": "shey",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "e",
+              "role": "HEAD",
+              "gloss": "cool"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "e(HEAD:cool) y(TERM:end)",
+          "gloss": "sh:cool.end",
+          "e_depth": 1,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "e",
+          "middle": "ey",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "[t]sh:arrange.respond -> sh:cool.end -> tch:into.state.end -> sh:end -> ch:transfer.arrange.state.sequence -> sh:cool.end -> da:iterate.iterate.bind",
+      "head_sequence": [
+        "o",
+        "e",
+        "a",
+        "?",
+        "t",
+        "e",
+        "?"
+      ],
+      "prefix_sequence": [
+        "sh",
+        "sh",
+        "tch",
+        "sh",
+        "ch",
+        "sh",
+        "da"
+      ],
+      "opacity_sequence": [
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "NONE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "cluster_name": "Stripped-down Herbal",
+      "folio": "f15v",
+      "line": "1",
+      "n_tokens": 6,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "poror",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "po:respond.arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "r",
+          "suffix": "or"
+        },
+        {
+          "position": 2,
+          "word": "orshy",
+          "prefix": "or",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "s",
+              "role": "PSEUDO_HEAD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "s(PSEUDO_HEAD:sequence) h(MOD:watch) y(TERM:end)",
+          "gloss": "or:sequence.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "choiin",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "ch:arrange.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "oiin",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "dtchan",
+          "prefix": "tch",
+          "articulator": "d",
+          "atoms": [
+            {
+              "char": "a",
+              "role": "HEAD",
+              "gloss": "into"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "a(HEAD:into) n(TERM:bind)",
+          "gloss": "[d]tch:into.bind",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "a",
+          "middle": "an",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "opchor",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) c(MOD:adjust) h(MOD:watch) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "arrange.pause.adjust.watch.arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "opch",
+          "suffix": "or"
+        },
+        {
+          "position": 6,
+          "word": "dy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) y(TERM:end)",
+          "gloss": "mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "dy",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "po:respond.arrange.respond -> or:sequence.watch.end -> ch:arrange.iterate.iterate.bind -> [d]tch:into.bind -> arrange.pause.adjust.watch.arrange.respond -> mark.end",
+      "head_sequence": [
+        "?",
+        "?",
+        "o",
+        "a",
+        "o",
+        "?"
+      ],
+      "prefix_sequence": [
+        "po",
+        "or",
+        "ch",
+        "tch",
+        "-",
+        "-"
+      ],
+      "opacity_sequence": [
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "cluster_name": "Closure-heavy Herbal",
+      "folio": "f10r",
+      "line": "1",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "pchocthy",
+          "prefix": "pch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "t",
+              "role": "MOD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) t(MOD:transfer) h(MOD:watch) y(TERM:end)",
+          "gloss": "pch:arrange.adjust.transfer.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "oct",
+          "suffix": "hy"
+        },
+        {
+          "position": 2,
+          "word": "shor",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(TERM:respond)",
+          "gloss": "sh:arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "or",
+          "suffix": null
+        },
+        {
+          "position": 3,
+          "word": "octhody",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "t",
+              "role": "MOD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) c(MOD:adjust) t(MOD:transfer) h(MOD:watch) o(MOD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "arrange.adjust.transfer.watch.arrange.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "octho",
+          "suffix": "dy"
+        },
+        {
+          "position": 4,
+          "word": "chorchy",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "MOD",
+              "gloss": "respond"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(MOD:respond) c(MOD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "ch:arrange.respond.adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "orc",
+          "suffix": "hy"
+        },
+        {
+          "position": 5,
+          "word": "pchodol",
+          "prefix": "pch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) d(MOD:mark) o(MOD:arrange) l(TERM:state)",
+          "gloss": "pch:arrange.mark.arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "od",
+          "suffix": "ol"
+        },
+        {
+          "position": 6,
+          "word": "chopchal",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) c(MOD:adjust) h(MOD:watch) a(MOD:into) l(TERM:state)",
+          "gloss": "ch:arrange.pause.adjust.watch.into.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "opch",
+          "suffix": "al"
+        },
+        {
+          "position": 7,
+          "word": "ypch",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "y",
+              "role": "PSEUDO_HEAD",
+              "gloss": "end"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "TERM",
+              "gloss": "watch"
+            }
+          ],
+          "atom_display": "y(PSEUDO_HEAD:end) p(MOD:pause) c(MOD:adjust) h(TERM:watch)",
+          "gloss": "end.pause.adjust.watch",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "ypch",
+          "suffix": null
+        },
+        {
+          "position": 8,
+          "word": "kom",
+          "prefix": "ko",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "m",
+              "role": "SOLE",
+              "gloss": "final"
+            }
+          ],
+          "atom_display": "m(SOLE:final)",
+          "gloss": "ko:final",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "m",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "pch:arrange.adjust.transfer.watch.end -> sh:arrange.respond -> arrange.adjust.transfer.watch.arrange.mark.end -> ch:arrange.respond.adjust.watch.end -> pch:arrange.mark.arrange.state -> ch:arrange.pause.adjust.watch.into.state -> end.pause.adjust.watch -> ko:final",
+      "head_sequence": [
+        "o",
+        "o",
+        "o",
+        "o",
+        "o",
+        "o",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "pch",
+        "sh",
+        "-",
+        "ch",
+        "pch",
+        "ch",
+        "-",
+        "ko"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "TRANSPARENT",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "cluster_name": "Closure-heavy Herbal",
+      "folio": "f11v",
+      "line": "1",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "poldchody",
+          "prefix": "po",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "l",
+              "role": "PSEUDO_HEAD",
+              "gloss": "state"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "l(PSEUDO_HEAD:state) d(MOD:mark) c(MOD:adjust) h(MOD:watch) o(MOD:arrange) d(MOD:mark) y(TERM:end)",
+          "gloss": "po:state.mark.adjust.watch.arrange.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ldcho",
+          "suffix": "dy"
+        },
+        {
+          "position": 2,
+          "word": "shcphy",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) p(MOD:pause) h(MOD:watch) y(TERM:end)",
+          "gloss": "sh:adjust.pause.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "cp",
+          "suffix": "hy"
+        },
+        {
+          "position": 3,
+          "word": "shordy",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "MOD",
+              "gloss": "respond"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(MOD:respond) d(MOD:mark) y(TERM:end)",
+          "gloss": "sh:arrange.respond.mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "or",
+          "suffix": "dy"
+        },
+        {
+          "position": 4,
+          "word": "qoty",
+          "prefix": "qo",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "t",
+              "role": "HEAD",
+              "gloss": "transfer"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "t(HEAD:transfer) y(TERM:end)",
+          "gloss": "qo:transfer.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "t",
+          "middle": "t",
+          "suffix": "y"
+        },
+        {
+          "position": 5,
+          "word": "shol",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "sh:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "cphar",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "c",
+              "role": "PSEUDO_HEAD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "c(PSEUDO_HEAD:adjust) p(MOD:pause) h(MOD:watch) a(MOD:into) r(TERM:respond)",
+          "gloss": "adjust.pause.watch.into.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "cph",
+          "suffix": "ar"
+        },
+        {
+          "position": 7,
+          "word": "dan",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "n",
+              "role": "SOLE",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "n(SOLE:bind)",
+          "gloss": "da:bind",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "n",
+          "suffix": null
+        },
+        {
+          "position": 8,
+          "word": "y",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "y",
+              "role": "SOLE",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "y(SOLE:end)",
+          "gloss": "end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "y",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "po:state.mark.adjust.watch.arrange.mark.end -> sh:adjust.pause.watch.end -> sh:arrange.respond.mark.end -> qo:transfer.end -> sh:arrange.state -> adjust.pause.watch.into.respond -> da:bind -> end",
+      "head_sequence": [
+        "?",
+        "?",
+        "o",
+        "t",
+        "o",
+        "?",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "po",
+        "sh",
+        "sh",
+        "qo",
+        "sh",
+        "-",
+        "da",
+        "-"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "cluster_name": "Closure-heavy Herbal",
+      "folio": "f13r",
+      "line": "1",
+      "n_tokens": 9,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "torshor",
+          "prefix": "to",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "r",
+              "role": "PSEUDO_HEAD",
+              "gloss": "respond"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "r(PSEUDO_HEAD:respond) s(MOD:sequence) h(MOD:watch) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "to:respond.sequence.watch.arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "rsh",
+          "suffix": "or"
+        },
+        {
+          "position": 2,
+          "word": "opchy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) c(MOD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "arrange.pause.adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "opc",
+          "suffix": "hy"
+        },
+        {
+          "position": 3,
+          "word": "shol",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "sh:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "dy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) y(TERM:end)",
+          "gloss": "mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "dy",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "qopchy",
+          "prefix": "qo",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "p",
+              "role": "PSEUDO_HEAD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "p(PSEUDO_HEAD:pause) c(MOD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "qo:pause.adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "pc",
+          "suffix": "hy"
+        },
+        {
+          "position": 6,
+          "word": "shol",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) l(TERM:state)",
+          "gloss": "sh:arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "ol",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "opchor",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) c(MOD:adjust) h(MOD:watch) o(MOD:arrange) r(TERM:respond)",
+          "gloss": "arrange.pause.adjust.watch.arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "opch",
+          "suffix": "or"
+        },
+        {
+          "position": 8,
+          "word": "dypchy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "MOD",
+              "gloss": "end"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) y(MOD:end) p(MOD:pause) c(MOD:adjust) h(MOD:watch) y(TERM:end)",
+          "gloss": "mark.end.pause.adjust.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "dypc",
+          "suffix": "hy"
+        },
+        {
+          "position": 9,
+          "word": "dchm",
+          "prefix": "dch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "m",
+              "role": "SOLE",
+              "gloss": "final"
+            }
+          ],
+          "atom_display": "m(SOLE:final)",
+          "gloss": "dch:final",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "m",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "to:respond.sequence.watch.arrange.respond -> arrange.pause.adjust.watch.end -> sh:arrange.state -> mark.end -> qo:pause.adjust.watch.end -> sh:arrange.state -> arrange.pause.adjust.watch.arrange.respond -> mark.end.pause.adjust.watch.end -> dch:final",
+      "head_sequence": [
+        "?",
+        "o",
+        "o",
+        "?",
+        "?",
+        "o",
+        "o",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "to",
+        "-",
+        "sh",
+        "-",
+        "qo",
+        "sh",
+        "-",
+        "-",
+        "dch"
+      ],
+      "opacity_sequence": [
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "cluster_name": "Closure-heavy Herbal",
+      "folio": "f14r",
+      "line": "1",
+      "n_tokens": 5,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "pchodaiin",
+          "prefix": "pch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) d(MOD:mark) a(MOD:into) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "pch:arrange.mark.into.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "od",
+          "suffix": "aiin"
+        },
+        {
+          "position": 2,
+          "word": "chopol",
+          "prefix": "ch",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "p",
+              "role": "MOD",
+              "gloss": "pause"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "l",
+              "role": "TERM",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) p(MOD:pause) o(MOD:arrange) l(TERM:state)",
+          "gloss": "ch:arrange.pause.arrange.state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "op",
+          "suffix": "ol"
+        },
+        {
+          "position": 3,
+          "word": "shoiin",
+          "prefix": "sh",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "sh:arrange.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": false,
+          "head": "o",
+          "middle": "oiin",
+          "suffix": null
+        },
+        {
+          "position": 4,
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "dain",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.bind",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "in",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "pch:arrange.mark.into.iterate.iterate.bind -> ch:arrange.pause.arrange.state -> sh:arrange.iterate.iterate.bind -> da:iterate.iterate.bind -> da:iterate.bind",
+      "head_sequence": [
+        "o",
+        "o",
+        "o",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "pch",
+        "ch",
+        "sh",
+        "da",
+        "da"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "cluster_name": "Closure-heavy Herbal",
+      "folio": "f14v",
+      "line": "1",
+      "n_tokens": 8,
+      "tokens": [
+        {
+          "position": 1,
+          "word": "pdychoiin",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "p",
+              "role": "PSEUDO_HEAD",
+              "gloss": "pause"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "MOD",
+              "gloss": "end"
+            },
+            {
+              "char": "c",
+              "role": "MOD",
+              "gloss": "adjust"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "p(PSEUDO_HEAD:pause) d(MOD:mark) y(MOD:end) c(MOD:adjust) h(MOD:watch) o(MOD:arrange) i(MOD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "pause.mark.end.adjust.watch.arrange.iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "pdych",
+          "suffix": "oiin"
+        },
+        {
+          "position": 2,
+          "word": "yfodain",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "y",
+              "role": "PSEUDO_HEAD",
+              "gloss": "end"
+            },
+            {
+              "char": "f",
+              "role": "MOD",
+              "gloss": "flag"
+            },
+            {
+              "char": "o",
+              "role": "MOD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "d",
+              "role": "MOD",
+              "gloss": "mark"
+            },
+            {
+              "char": "a",
+              "role": "MOD",
+              "gloss": "into"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "y(PSEUDO_HEAD:end) f(MOD:flag) o(MOD:arrange) d(MOD:mark) a(MOD:into) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "end.flag.arrange.mark.into.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "yfod",
+          "suffix": "ain"
+        },
+        {
+          "position": 3,
+          "word": "otyshy",
+          "prefix": "ot",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "y",
+              "role": "PSEUDO_HEAD",
+              "gloss": "end"
+            },
+            {
+              "char": "s",
+              "role": "MOD",
+              "gloss": "sequence"
+            },
+            {
+              "char": "h",
+              "role": "MOD",
+              "gloss": "watch"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "y(PSEUDO_HEAD:end) s(MOD:sequence) h(MOD:watch) y(TERM:end)",
+          "gloss": "ot:end.sequence.watch.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "ys",
+          "suffix": "hy"
+        },
+        {
+          "position": 4,
+          "word": "dy",
+          "prefix": null,
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "d",
+              "role": "PSEUDO_HEAD",
+              "gloss": "mark"
+            },
+            {
+              "char": "y",
+              "role": "TERM",
+              "gloss": "end"
+            }
+          ],
+          "atom_display": "d(PSEUDO_HEAD:mark) y(TERM:end)",
+          "gloss": "mark.end",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "dy",
+          "suffix": null
+        },
+        {
+          "position": 5,
+          "word": "ypchor",
+          "prefix": "pch",
+          "articulator": "y",
+          "atoms": [
+            {
+              "char": "o",
+              "role": "HEAD",
+              "gloss": "arrange"
+            },
+            {
+              "char": "r",
+              "role": "TERM",
+              "gloss": "respond"
+            }
+          ],
+          "atom_display": "o(HEAD:arrange) r(TERM:respond)",
+          "gloss": "[y]pch:arrange.respond",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": false,
+          "head": "o",
+          "middle": "or",
+          "suffix": null
+        },
+        {
+          "position": 6,
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "i",
+              "role": "MOD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) i(MOD:iterate) n(TERM:bind)",
+          "gloss": "da:iterate.iterate.bind",
+          "e_depth": 0,
+          "i_depth": 2,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "iin",
+          "suffix": null
+        },
+        {
+          "position": 7,
+          "word": "kol",
+          "prefix": "ko",
+          "articulator": null,
+          "atoms": [
+            {
+              "char": "l",
+              "role": "SOLE",
+              "gloss": "state"
+            }
+          ],
+          "atom_display": "l(SOLE:state)",
+          "gloss": "ko:state",
+          "e_depth": 0,
+          "i_depth": 0,
+          "terminal_opacity": "SEMI_TRANSPARENT",
+          "is_headless": true,
+          "head": null,
+          "middle": "l",
+          "suffix": null
+        },
+        {
+          "position": 8,
+          "word": "ydain",
+          "prefix": "da",
+          "articulator": "y",
+          "atoms": [
+            {
+              "char": "i",
+              "role": "PSEUDO_HEAD",
+              "gloss": "iterate"
+            },
+            {
+              "char": "n",
+              "role": "TERM",
+              "gloss": "bind"
+            }
+          ],
+          "atom_display": "i(PSEUDO_HEAD:iterate) n(TERM:bind)",
+          "gloss": "[y]da:iterate.bind",
+          "e_depth": 0,
+          "i_depth": 1,
+          "terminal_opacity": "OPAQUE",
+          "is_headless": true,
+          "head": null,
+          "middle": "in",
+          "suffix": null
+        }
+      ],
+      "record_gloss": "pause.mark.end.adjust.watch.arrange.iterate.iterate.bind -> end.flag.arrange.mark.into.iterate.bind -> ot:end.sequence.watch.end -> mark.end -> [y]pch:arrange.respond -> da:iterate.iterate.bind -> ko:state -> [y]da:iterate.bind",
+      "head_sequence": [
+        "?",
+        "?",
+        "?",
+        "?",
+        "o",
+        "?",
+        "?",
+        "?"
+      ],
+      "prefix_sequence": [
+        "-",
+        "-",
+        "ot",
+        "-",
+        "pch",
+        "da",
+        "ko",
+        "da"
+      ],
+      "opacity_sequence": [
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE",
+        "SEMI_TRANSPARENT",
+        "OPAQUE"
+      ]
+    }
+  ],
+  "cluster_summaries": {
+    "1": {
+      "name": "Thermal/Pharma",
+      "n_records": 5,
+      "head_distribution": {
+        "?": 14,
+        "a": 4,
+        "o": 8,
+        "e": 11,
+        "t": 2,
+        "k": 2
+      },
+      "prefix_distribution": {
+        "so": 1,
+        "ol": 1,
+        "te": 1,
+        "ch": 8,
+        "-": 8,
+        "po": 5,
+        "sh": 7,
+        "qo": 3,
+        "ot": 2,
+        "sa": 1,
+        "ko": 1,
+        "pch": 1,
+        "do": 1,
+        "ct": 1
+      },
+      "mean_e_depth": 0.6097560975609756
+    },
+    "2": {
+      "name": "Arrangement",
+      "n_records": 5,
+      "head_distribution": {
+        "o": 13,
+        "e": 3,
+        "?": 16,
+        "a": 3,
+        "t": 1
+      },
+      "prefix_distribution": {
+        "ch": 14,
+        "ot": 2,
+        "sa": 1,
+        "kch": 2,
+        "da": 4,
+        "sh": 2,
+        "-": 6,
+        "po": 2,
+        "do": 1,
+        "ol": 2
+      },
+      "mean_e_depth": 0.25
+    },
+    "3": {
+      "name": "Stripped-down Herbal",
+      "n_records": 5,
+      "head_distribution": {
+        "?": 16,
+        "e": 5,
+        "t": 3,
+        "o": 10,
+        "a": 3
+      },
+      "prefix_distribution": {
+        "-": 6,
+        "da": 3,
+        "sh": 9,
+        "pch": 1,
+        "qo": 1,
+        "ct": 1,
+        "ot": 4,
+        "sa": 1,
+        "sch": 1,
+        "tch": 3,
+        "ko": 1,
+        "ch": 3,
+        "kch": 1,
+        "po": 1,
+        "or": 1
+      },
+      "mean_e_depth": 0.16216216216216217
+    },
+    "4": {
+      "name": "Closure-heavy Herbal",
+      "n_records": 5,
+      "head_distribution": {
+        "o": 16,
+        "?": 21,
+        "t": 1
+      },
+      "prefix_distribution": {
+        "pch": 4,
+        "sh": 7,
+        "-": 11,
+        "ch": 3,
+        "ko": 2,
+        "po": 1,
+        "qo": 2,
+        "da": 5,
+        "to": 1,
+        "dch": 1,
+        "ot": 1
+      },
+      "mean_e_depth": 0.0
+    }
+  }
+}

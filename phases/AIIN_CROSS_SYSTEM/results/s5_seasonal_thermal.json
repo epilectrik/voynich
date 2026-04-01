@@ -1,0 +1,1299 @@
+{
+  "part_a": {
+    "folio_results": {
+      "f70v1": {
+        "season": "Spring",
+        "total": 86,
+        "aiin_family": 9,
+        "aiin_rate": 0.1047,
+        "ody_family": 7,
+        "ody_rate": 0.0814,
+        "i_bearing": 11
+      },
+      "f70v2": {
+        "season": "Spring",
+        "total": 139,
+        "aiin_family": 10,
+        "aiin_rate": 0.0719,
+        "ody_family": 8,
+        "ody_rate": 0.0576,
+        "i_bearing": 18
+      },
+      "f71r": {
+        "season": "Spring",
+        "total": 91,
+        "aiin_family": 4,
+        "aiin_rate": 0.044,
+        "ody_family": 9,
+        "ody_rate": 0.0989,
+        "i_bearing": 4
+      },
+      "f71v": {
+        "season": "Winter",
+        "total": 99,
+        "aiin_family": 10,
+        "aiin_rate": 0.101,
+        "ody_family": 4,
+        "ody_rate": 0.0404,
+        "i_bearing": 11
+      },
+      "f72r1": {
+        "season": "Winter",
+        "total": 105,
+        "aiin_family": 15,
+        "aiin_rate": 0.1429,
+        "ody_family": 2,
+        "ody_rate": 0.019,
+        "i_bearing": 20
+      },
+      "f72r2": {
+        "season": "Summer",
+        "total": 110,
+        "aiin_family": 16,
+        "aiin_rate": 0.1455,
+        "ody_family": 1,
+        "ody_rate": 0.0091,
+        "i_bearing": 24
+      },
+      "f72r3": {
+        "season": "Summer",
+        "total": 163,
+        "aiin_family": 25,
+        "aiin_rate": 0.1534,
+        "ody_family": 5,
+        "ody_rate": 0.0307,
+        "i_bearing": 35
+      },
+      "f72v1": {
+        "season": "Summer",
+        "total": 99,
+        "aiin_family": 10,
+        "aiin_rate": 0.101,
+        "ody_family": 3,
+        "ody_rate": 0.0303,
+        "i_bearing": 15
+      },
+      "f72v2": {
+        "season": "Autumn",
+        "total": 105,
+        "aiin_family": 10,
+        "aiin_rate": 0.0952,
+        "ody_family": 3,
+        "ody_rate": 0.0286,
+        "i_bearing": 16
+      },
+      "f72v3": {
+        "season": "Autumn",
+        "total": 111,
+        "aiin_family": 6,
+        "aiin_rate": 0.0541,
+        "ody_family": 5,
+        "ody_rate": 0.045,
+        "i_bearing": 11
+      },
+      "f73r": {
+        "season": "Autumn",
+        "total": 94,
+        "aiin_family": 6,
+        "aiin_rate": 0.0638,
+        "ody_family": 4,
+        "ody_rate": 0.0426,
+        "i_bearing": 11
+      },
+      "f73v": {
+        "season": "Winter",
+        "total": 97,
+        "aiin_family": 6,
+        "aiin_rate": 0.0619,
+        "ody_family": 12,
+        "ody_rate": 0.1237,
+        "i_bearing": 11
+      }
+    },
+    "season_data": {
+      "Spring": {
+        "total": 316,
+        "aiin": 23,
+        "aiin_rate": 0.0728,
+        "ody": 24,
+        "ody_rate": 0.0759,
+        "i_bearing": 33,
+        "aiin_fraction_of_i": 0.697
+      },
+      "Summer": {
+        "total": 372,
+        "aiin": 51,
+        "aiin_rate": 0.1371,
+        "ody": 9,
+        "ody_rate": 0.0242,
+        "i_bearing": 74,
+        "aiin_fraction_of_i": 0.6892
+      },
+      "Autumn": {
+        "total": 310,
+        "aiin": 22,
+        "aiin_rate": 0.071,
+        "ody": 12,
+        "ody_rate": 0.0387,
+        "i_bearing": 38,
+        "aiin_fraction_of_i": 0.5789
+      },
+      "Winter": {
+        "total": 301,
+        "aiin": 31,
+        "aiin_rate": 0.103,
+        "ody": 18,
+        "ody_rate": 0.0598,
+        "i_bearing": 42,
+        "aiin_fraction_of_i": 0.7381
+      }
+    },
+    "seasonal_test": {
+      "test": "chi_squared",
+      "chi2": 8.6187,
+      "p_value": 0.003327,
+      "dof": 1
+    }
+  },
+  "part_b": {
+    "cluster_data": {
+      "Cluster 1 (Thermal/Pharma)": {
+        "total": 3730,
+        "daiin_count": 134,
+        "aiin_count": 430,
+        "daiin_rate": 0.0359,
+        "aiin_rate": 0.1153
+      },
+      "Cluster 2 (Arrangement)": {
+        "total": 1622,
+        "daiin_count": 27,
+        "aiin_count": 89,
+        "daiin_rate": 0.0166,
+        "aiin_rate": 0.0549
+      },
+      "Cluster 3 (Stripped-down)": {
+        "total": 3514,
+        "daiin_count": 229,
+        "aiin_count": 653,
+        "daiin_rate": 0.0652,
+        "aiin_rate": 0.1858
+      },
+      "Cluster 4 (Closure-heavy)": {
+        "total": 2308,
+        "daiin_count": 121,
+        "aiin_count": 286,
+        "daiin_rate": 0.0524,
+        "aiin_rate": 0.1239
+      }
+    },
+    "daiin_edepth_correlation": {
+      "pre_registered_metric": "mean e_depth of non-daiin tokens on same line",
+      "hypothesis": "daiin-dense lines have lower non-daiin e_depth",
+      "overall": {
+        "n_lines": 1559,
+        "rho": -0.0455,
+        "p_value": 0.072761
+      },
+      "by_section": {
+        "Herbal": {
+          "n_lines": 1224,
+          "rho": -0.0891,
+          "p_value": 0.001799
+        },
+        "Pharma": {
+          "n_lines": 227,
+          "rho": -0.0375,
+          "p_value": 0.573869
+        },
+        "Text": {
+          "n_lines": 108,
+          "rho": 0.1086,
+          "p_value": 0.263119
+        }
+      }
+    },
+    "folio_level_correlation": {
+      "n_folios": 114,
+      "rho": -0.3237,
+      "p_value": 0.000444
+    },
+    "folio_metrics": {
+      "f100r": {
+        "folio": "f100r",
+        "total": 92,
+        "daiin_rate": 0.043478260869565216,
+        "aiin_rate": 0.08695652173913043,
+        "mean_e_depth": 0.6739
+      },
+      "f100v": {
+        "folio": "f100v",
+        "total": 91,
+        "daiin_rate": 0.02197802197802198,
+        "aiin_rate": 0.02197802197802198,
+        "mean_e_depth": 0.5714
+      },
+      "f101r1": {
+        "folio": "f101r1",
+        "total": 208,
+        "daiin_rate": 0.057692307692307696,
+        "aiin_rate": 0.12980769230769232,
+        "mean_e_depth": 0.5817
+      },
+      "f101v2": {
+        "folio": "f101v2",
+        "total": 192,
+        "daiin_rate": 0.036458333333333336,
+        "aiin_rate": 0.125,
+        "mean_e_depth": 0.5312
+      },
+      "f102r1": {
+        "folio": "f102r1",
+        "total": 105,
+        "daiin_rate": 0.0380952380952381,
+        "aiin_rate": 0.14285714285714285,
+        "mean_e_depth": 0.581
+      },
+      "f102r2": {
+        "folio": "f102r2",
+        "total": 131,
+        "daiin_rate": 0.022900763358778626,
+        "aiin_rate": 0.07633587786259542,
+        "mean_e_depth": 0.6489
+      },
+      "f102v1": {
+        "folio": "f102v1",
+        "total": 117,
+        "daiin_rate": 0.02564102564102564,
+        "aiin_rate": 0.1452991452991453,
+        "mean_e_depth": 0.6239
+      },
+      "f102v2": {
+        "folio": "f102v2",
+        "total": 163,
+        "daiin_rate": 0.006134969325153374,
+        "aiin_rate": 0.05521472392638037,
+        "mean_e_depth": 0.8712
+      },
+      "f10r": {
+        "folio": "f10r",
+        "total": 92,
+        "daiin_rate": 0.05434782608695652,
+        "aiin_rate": 0.15217391304347827,
+        "mean_e_depth": 0.0326
+      },
+      "f10v": {
+        "folio": "f10v",
+        "total": 53,
+        "daiin_rate": 0.1509433962264151,
+        "aiin_rate": 0.2830188679245283,
+        "mean_e_depth": 0.1509
+      },
+      "f11r": {
+        "folio": "f11r",
+        "total": 57,
+        "daiin_rate": 0.12280701754385964,
+        "aiin_rate": 0.17543859649122806,
+        "mean_e_depth": 0.0175
+      },
+      "f11v": {
+        "folio": "f11v",
+        "total": 47,
+        "daiin_rate": 0.02127659574468085,
+        "aiin_rate": 0.02127659574468085,
+        "mean_e_depth": 0.1277
+      },
+      "f13r": {
+        "folio": "f13r",
+        "total": 78,
+        "daiin_rate": 0.038461538461538464,
+        "aiin_rate": 0.08974358974358974,
+        "mean_e_depth": 0.0769
+      },
+      "f13v": {
+        "folio": "f13v",
+        "total": 67,
+        "daiin_rate": 0.04477611940298507,
+        "aiin_rate": 0.1044776119402985,
+        "mean_e_depth": 0.0299
+      },
+      "f14r": {
+        "folio": "f14r",
+        "total": 77,
+        "daiin_rate": 0.03896103896103896,
+        "aiin_rate": 0.12987012987012986,
+        "mean_e_depth": 0.1558
+      },
+      "f14v": {
+        "folio": "f14v",
+        "total": 68,
+        "daiin_rate": 0.10294117647058823,
+        "aiin_rate": 0.1323529411764706,
+        "mean_e_depth": 0.0
+      },
+      "f15r": {
+        "folio": "f15r",
+        "total": 92,
+        "daiin_rate": 0.05434782608695652,
+        "aiin_rate": 0.21739130434782608,
+        "mean_e_depth": 0.0761
+      },
+      "f15v": {
+        "folio": "f15v",
+        "total": 70,
+        "daiin_rate": 0.05714285714285714,
+        "aiin_rate": 0.21428571428571427,
+        "mean_e_depth": 0.0429
+      },
+      "f16r": {
+        "folio": "f16r",
+        "total": 77,
+        "daiin_rate": 0.03896103896103896,
+        "aiin_rate": 0.14285714285714285,
+        "mean_e_depth": 0.1558
+      },
+      "f16v": {
+        "folio": "f16v",
+        "total": 73,
+        "daiin_rate": 0.0410958904109589,
+        "aiin_rate": 0.1095890410958904,
+        "mean_e_depth": 0.0274
+      },
+      "f17r": {
+        "folio": "f17r",
+        "total": 72,
+        "daiin_rate": 0.0,
+        "aiin_rate": 0.041666666666666664,
+        "mean_e_depth": 0.1111
+      },
+      "f17v": {
+        "folio": "f17v",
+        "total": 134,
+        "daiin_rate": 0.007462686567164179,
+        "aiin_rate": 0.11194029850746269,
+        "mean_e_depth": 0.4478
+      },
+      "f18r": {
+        "folio": "f18r",
+        "total": 83,
+        "daiin_rate": 0.024096385542168676,
+        "aiin_rate": 0.12048192771084337,
+        "mean_e_depth": 0.0482
+      },
+      "f18v": {
+        "folio": "f18v",
+        "total": 71,
+        "daiin_rate": 0.014084507042253521,
+        "aiin_rate": 0.028169014084507043,
+        "mean_e_depth": 0.1127
+      },
+      "f19r": {
+        "folio": "f19r",
+        "total": 76,
+        "daiin_rate": 0.10526315789473684,
+        "aiin_rate": 0.14473684210526316,
+        "mean_e_depth": 0.0132
+      },
+      "f19v": {
+        "folio": "f19v",
+        "total": 77,
+        "daiin_rate": 0.11688311688311688,
+        "aiin_rate": 0.18181818181818182,
+        "mean_e_depth": 0.1039
+      },
+      "f1r": {
+        "folio": "f1r",
+        "total": 202,
+        "daiin_rate": 0.034653465346534656,
+        "aiin_rate": 0.14356435643564355,
+        "mean_e_depth": 0.2228
+      },
+      "f1v": {
+        "folio": "f1v",
+        "total": 90,
+        "daiin_rate": 0.011111111111111112,
+        "aiin_rate": 0.03333333333333333,
+        "mean_e_depth": 0.1556
+      },
+      "f20r": {
+        "folio": "f20r",
+        "total": 85,
+        "daiin_rate": 0.047058823529411764,
+        "aiin_rate": 0.17647058823529413,
+        "mean_e_depth": 0.4471
+      },
+      "f20v": {
+        "folio": "f20v",
+        "total": 89,
+        "daiin_rate": 0.0449438202247191,
+        "aiin_rate": 0.14606741573033707,
+        "mean_e_depth": 0.0899
+      },
+      "f21r": {
+        "folio": "f21r",
+        "total": 95,
+        "daiin_rate": 0.042105263157894736,
+        "aiin_rate": 0.16842105263157894,
+        "mean_e_depth": 0.3895
+      },
+      "f21v": {
+        "folio": "f21v",
+        "total": 56,
+        "daiin_rate": 0.10714285714285714,
+        "aiin_rate": 0.21428571428571427,
+        "mean_e_depth": 0.1786
+      },
+      "f22r": {
+        "folio": "f22r",
+        "total": 106,
+        "daiin_rate": 0.10377358490566038,
+        "aiin_rate": 0.2358490566037736,
+        "mean_e_depth": 0.0472
+      },
+      "f22v": {
+        "folio": "f22v",
+        "total": 75,
+        "daiin_rate": 0.09333333333333334,
+        "aiin_rate": 0.22666666666666666,
+        "mean_e_depth": 0.0267
+      },
+      "f23r": {
+        "folio": "f23r",
+        "total": 106,
+        "daiin_rate": 0.05660377358490566,
+        "aiin_rate": 0.12264150943396226,
+        "mean_e_depth": 0.066
+      },
+      "f23v": {
+        "folio": "f23v",
+        "total": 89,
+        "daiin_rate": 0.0449438202247191,
+        "aiin_rate": 0.12359550561797752,
+        "mean_e_depth": 0.191
+      },
+      "f24r": {
+        "folio": "f24r",
+        "total": 106,
+        "daiin_rate": 0.02830188679245283,
+        "aiin_rate": 0.05660377358490566,
+        "mean_e_depth": 0.3208
+      },
+      "f24v": {
+        "folio": "f24v",
+        "total": 80,
+        "daiin_rate": 0.0,
+        "aiin_rate": 0.075,
+        "mean_e_depth": 0.2
+      },
+      "f25r": {
+        "folio": "f25r",
+        "total": 48,
+        "daiin_rate": 0.10416666666666667,
+        "aiin_rate": 0.1875,
+        "mean_e_depth": 0.125
+      },
+      "f25v": {
+        "folio": "f25v",
+        "total": 57,
+        "daiin_rate": 0.19298245614035087,
+        "aiin_rate": 0.2631578947368421,
+        "mean_e_depth": 0.2632
+      },
+      "f27r": {
+        "folio": "f27r",
+        "total": 91,
+        "daiin_rate": 0.02197802197802198,
+        "aiin_rate": 0.054945054945054944,
+        "mean_e_depth": 0.3077
+      },
+      "f27v": {
+        "folio": "f27v",
+        "total": 58,
+        "daiin_rate": 0.0,
+        "aiin_rate": 0.0,
+        "mean_e_depth": 0.2414
+      },
+      "f28r": {
+        "folio": "f28r",
+        "total": 67,
+        "daiin_rate": 0.05970149253731343,
+        "aiin_rate": 0.13432835820895522,
+        "mean_e_depth": 0.0448
+      },
+      "f28v": {
+        "folio": "f28v",
+        "total": 68,
+        "daiin_rate": 0.07352941176470588,
+        "aiin_rate": 0.19117647058823528,
+        "mean_e_depth": 0.1029
+      },
+      "f29r": {
+        "folio": "f29r",
+        "total": 65,
+        "daiin_rate": 0.03076923076923077,
+        "aiin_rate": 0.12307692307692308,
+        "mean_e_depth": 0.2615
+      },
+      "f29v": {
+        "folio": "f29v",
+        "total": 95,
+        "daiin_rate": 0.031578947368421054,
+        "aiin_rate": 0.16842105263157894,
+        "mean_e_depth": 0.1053
+      },
+      "f2r": {
+        "folio": "f2r",
+        "total": 99,
+        "daiin_rate": 0.030303030303030304,
+        "aiin_rate": 0.1717171717171717,
+        "mean_e_depth": 0.1414
+      },
+      "f2v": {
+        "folio": "f2v",
+        "total": 61,
+        "daiin_rate": 0.08196721311475409,
+        "aiin_rate": 0.16393442622950818,
+        "mean_e_depth": 0.2623
+      },
+      "f30r": {
+        "folio": "f30r",
+        "total": 95,
+        "daiin_rate": 0.021052631578947368,
+        "aiin_rate": 0.12631578947368421,
+        "mean_e_depth": 0.5158
+      },
+      "f30v": {
+        "folio": "f30v",
+        "total": 63,
+        "daiin_rate": 0.1111111111111111,
+        "aiin_rate": 0.1746031746031746,
+        "mean_e_depth": 0.3175
+      },
+      "f32r": {
+        "folio": "f32r",
+        "total": 77,
+        "daiin_rate": 0.09090909090909091,
+        "aiin_rate": 0.12987012987012986,
+        "mean_e_depth": 0.1169
+      },
+      "f32v": {
+        "folio": "f32v",
+        "total": 85,
+        "daiin_rate": 0.1411764705882353,
+        "aiin_rate": 0.2235294117647059,
+        "mean_e_depth": 0.0588
+      },
+      "f35r": {
+        "folio": "f35r",
+        "total": 92,
+        "daiin_rate": 0.08695652173913043,
+        "aiin_rate": 0.358695652173913,
+        "mean_e_depth": 0.1957
+      },
+      "f35v": {
+        "folio": "f35v",
+        "total": 87,
+        "daiin_rate": 0.09195402298850575,
+        "aiin_rate": 0.21839080459770116,
+        "mean_e_depth": 0.2414
+      },
+      "f36r": {
+        "folio": "f36r",
+        "total": 62,
+        "daiin_rate": 0.04838709677419355,
+        "aiin_rate": 0.1935483870967742,
+        "mean_e_depth": 0.0
+      },
+      "f36v": {
+        "folio": "f36v",
+        "total": 71,
+        "daiin_rate": 0.09859154929577464,
+        "aiin_rate": 0.2112676056338028,
+        "mean_e_depth": 0.0423
+      },
+      "f37r": {
+        "folio": "f37r",
+        "total": 77,
+        "daiin_rate": 0.1038961038961039,
+        "aiin_rate": 0.23376623376623376,
+        "mean_e_depth": 0.039
+      },
+      "f37v": {
+        "folio": "f37v",
+        "total": 88,
+        "daiin_rate": 0.18181818181818182,
+        "aiin_rate": 0.3409090909090909,
+        "mean_e_depth": 0.125
+      },
+      "f38r": {
+        "folio": "f38r",
+        "total": 41,
+        "daiin_rate": 0.07317073170731707,
+        "aiin_rate": 0.24390243902439024,
+        "mean_e_depth": 0.0976
+      },
+      "f38v": {
+        "folio": "f38v",
+        "total": 65,
+        "daiin_rate": 0.12307692307692308,
+        "aiin_rate": 0.24615384615384617,
+        "mean_e_depth": 0.2923
+      },
+      "f3r": {
+        "folio": "f3r",
+        "total": 114,
+        "daiin_rate": 0.017543859649122806,
+        "aiin_rate": 0.07894736842105263,
+        "mean_e_depth": 0.2982
+      },
+      "f3v": {
+        "folio": "f3v",
+        "total": 83,
+        "daiin_rate": 0.012048192771084338,
+        "aiin_rate": 0.060240963855421686,
+        "mean_e_depth": 0.3253
+      },
+      "f42r": {
+        "folio": "f42r",
+        "total": 140,
+        "daiin_rate": 0.03571428571428571,
+        "aiin_rate": 0.15714285714285714,
+        "mean_e_depth": 0.1571
+      },
+      "f42v": {
+        "folio": "f42v",
+        "total": 113,
+        "daiin_rate": 0.02654867256637168,
+        "aiin_rate": 0.11504424778761062,
+        "mean_e_depth": 0.4071
+      },
+      "f44r": {
+        "folio": "f44r",
+        "total": 75,
+        "daiin_rate": 0.02666666666666667,
+        "aiin_rate": 0.04,
+        "mean_e_depth": 0.2667
+      },
+      "f44v": {
+        "folio": "f44v",
+        "total": 96,
+        "daiin_rate": 0.020833333333333332,
+        "aiin_rate": 0.125,
+        "mean_e_depth": 0.125
+      },
+      "f45r": {
+        "folio": "f45r",
+        "total": 86,
+        "daiin_rate": 0.03488372093023256,
+        "aiin_rate": 0.16279069767441862,
+        "mean_e_depth": 0.093
+      },
+      "f45v": {
+        "folio": "f45v",
+        "total": 87,
+        "daiin_rate": 0.011494252873563218,
+        "aiin_rate": 0.05747126436781609,
+        "mean_e_depth": 0.0575
+      },
+      "f47r": {
+        "folio": "f47r",
+        "total": 79,
+        "daiin_rate": 0.06329113924050633,
+        "aiin_rate": 0.1518987341772152,
+        "mean_e_depth": 0.1392
+      },
+      "f47v": {
+        "folio": "f47v",
+        "total": 85,
+        "daiin_rate": 0.058823529411764705,
+        "aiin_rate": 0.09411764705882353,
+        "mean_e_depth": 0.2824
+      },
+      "f49r": {
+        "folio": "f49r",
+        "total": 114,
+        "daiin_rate": 0.06140350877192982,
+        "aiin_rate": 0.11403508771929824,
+        "mean_e_depth": 0.2982
+      },
+      "f49v": {
+        "folio": "f49v",
+        "total": 142,
+        "daiin_rate": 0.056338028169014086,
+        "aiin_rate": 0.14788732394366197,
+        "mean_e_depth": 0.3099
+      },
+      "f4r": {
+        "folio": "f4r",
+        "total": 64,
+        "daiin_rate": 0.078125,
+        "aiin_rate": 0.296875,
+        "mean_e_depth": 0.1094
+      },
+      "f4v": {
+        "folio": "f4v",
+        "total": 83,
+        "daiin_rate": 0.04819277108433735,
+        "aiin_rate": 0.18072289156626506,
+        "mean_e_depth": 0.253
+      },
+      "f51r": {
+        "folio": "f51r",
+        "total": 86,
+        "daiin_rate": 0.03488372093023256,
+        "aiin_rate": 0.16279069767441862,
+        "mean_e_depth": 0.407
+      },
+      "f51v": {
+        "folio": "f51v",
+        "total": 79,
+        "daiin_rate": 0.0759493670886076,
+        "aiin_rate": 0.20253164556962025,
+        "mean_e_depth": 0.2911
+      },
+      "f52r": {
+        "folio": "f52r",
+        "total": 68,
+        "daiin_rate": 0.029411764705882353,
+        "aiin_rate": 0.058823529411764705,
+        "mean_e_depth": 0.1765
+      },
+      "f52v": {
+        "folio": "f52v",
+        "total": 75,
+        "daiin_rate": 0.04,
+        "aiin_rate": 0.14666666666666667,
+        "mean_e_depth": 0.4133
+      },
+      "f53r": {
+        "folio": "f53r",
+        "total": 56,
+        "daiin_rate": 0.0,
+        "aiin_rate": 0.017857142857142856,
+        "mean_e_depth": 0.2143
+      },
+      "f53v": {
+        "folio": "f53v",
+        "total": 75,
+        "daiin_rate": 0.08,
+        "aiin_rate": 0.17333333333333334,
+        "mean_e_depth": 0.3333
+      },
+      "f54r": {
+        "folio": "f54r",
+        "total": 111,
+        "daiin_rate": 0.018018018018018018,
+        "aiin_rate": 0.07207207207207207,
+        "mean_e_depth": 0.2342
+      },
+      "f54v": {
+        "folio": "f54v",
+        "total": 90,
+        "daiin_rate": 0.022222222222222223,
+        "aiin_rate": 0.18888888888888888,
+        "mean_e_depth": 0.1778
+      },
+      "f56r": {
+        "folio": "f56r",
+        "total": 99,
+        "daiin_rate": 0.050505050505050504,
+        "aiin_rate": 0.0707070707070707,
+        "mean_e_depth": 0.2727
+      },
+      "f56v": {
+        "folio": "f56v",
+        "total": 87,
+        "daiin_rate": 0.06896551724137931,
+        "aiin_rate": 0.12643678160919541,
+        "mean_e_depth": 0.4368
+      },
+      "f58r": {
+        "folio": "f58r",
+        "total": 366,
+        "daiin_rate": 0.00819672131147541,
+        "aiin_rate": 0.07377049180327869,
+        "mean_e_depth": 0.2623
+      },
+      "f58v": {
+        "folio": "f58v",
+        "total": 365,
+        "daiin_rate": 0.01643835616438356,
+        "aiin_rate": 0.10136986301369863,
+        "mean_e_depth": 0.3123
+      },
+      "f5r": {
+        "folio": "f5r",
+        "total": 55,
+        "daiin_rate": 0.03636363636363636,
+        "aiin_rate": 0.12727272727272726,
+        "mean_e_depth": 0.4182
+      },
+      "f5v": {
+        "folio": "f5v",
+        "total": 45,
+        "daiin_rate": 0.1111111111111111,
+        "aiin_rate": 0.24444444444444444,
+        "mean_e_depth": 0.1556
+      },
+      "f6r": {
+        "folio": "f6r",
+        "total": 85,
+        "daiin_rate": 0.03529411764705882,
+        "aiin_rate": 0.17647058823529413,
+        "mean_e_depth": 0.1529
+      },
+      "f6v": {
+        "folio": "f6v",
+        "total": 114,
+        "daiin_rate": 0.017543859649122806,
+        "aiin_rate": 0.043859649122807015,
+        "mean_e_depth": 0.1667
+      },
+      "f7r": {
+        "folio": "f7r",
+        "total": 62,
+        "daiin_rate": 0.03225806451612903,
+        "aiin_rate": 0.12903225806451613,
+        "mean_e_depth": 0.4839
+      },
+      "f7v": {
+        "folio": "f7v",
+        "total": 73,
+        "daiin_rate": 0.0684931506849315,
+        "aiin_rate": 0.136986301369863,
+        "mean_e_depth": 0.411
+      },
+      "f87r": {
+        "folio": "f87r",
+        "total": 98,
+        "daiin_rate": 0.04081632653061224,
+        "aiin_rate": 0.12244897959183673,
+        "mean_e_depth": 0.6122
+      },
+      "f87v": {
+        "folio": "f87v",
+        "total": 89,
+        "daiin_rate": 0.011235955056179775,
+        "aiin_rate": 0.06741573033707865,
+        "mean_e_depth": 0.5281
+      },
+      "f88r": {
+        "folio": "f88r",
+        "total": 150,
+        "daiin_rate": 0.013333333333333334,
+        "aiin_rate": 0.05333333333333334,
+        "mean_e_depth": 0.4467
+      },
+      "f88v": {
+        "folio": "f88v",
+        "total": 146,
+        "daiin_rate": 0.0410958904109589,
+        "aiin_rate": 0.1232876712328767,
+        "mean_e_depth": 0.5685
+      },
+      "f89r1": {
+        "folio": "f89r1",
+        "total": 141,
+        "daiin_rate": 0.05673758865248227,
+        "aiin_rate": 0.14184397163120568,
+        "mean_e_depth": 0.3759
+      },
+      "f89r2": {
+        "folio": "f89r2",
+        "total": 220,
+        "daiin_rate": 0.08636363636363636,
+        "aiin_rate": 0.1590909090909091,
+        "mean_e_depth": 0.6136
+      },
+      "f89v1": {
+        "folio": "f89v1",
+        "total": 159,
+        "daiin_rate": 0.06289308176100629,
+        "aiin_rate": 0.13836477987421383,
+        "mean_e_depth": 0.2893
+      },
+      "f89v2": {
+        "folio": "f89v2",
+        "total": 153,
+        "daiin_rate": 0.0457516339869281,
+        "aiin_rate": 0.1568627450980392,
+        "mean_e_depth": 0.3791
+      },
+      "f8r": {
+        "folio": "f8r",
+        "total": 146,
+        "daiin_rate": 0.03424657534246575,
+        "aiin_rate": 0.13013698630136986,
+        "mean_e_depth": 0.2808
+      },
+      "f8v": {
+        "folio": "f8v",
+        "total": 119,
+        "daiin_rate": 0.03361344537815126,
+        "aiin_rate": 0.15126050420168066,
+        "mean_e_depth": 0.2269
+      },
+      "f90r1": {
+        "folio": "f90r1",
+        "total": 70,
+        "daiin_rate": 0.0,
+        "aiin_rate": 0.014285714285714285,
+        "mean_e_depth": 0.3143
+      },
+      "f90r2": {
+        "folio": "f90r2",
+        "total": 49,
+        "daiin_rate": 0.061224489795918366,
+        "aiin_rate": 0.16326530612244897,
+        "mean_e_depth": 0.5306
+      },
+      "f90v1": {
+        "folio": "f90v1",
+        "total": 96,
+        "daiin_rate": 0.020833333333333332,
+        "aiin_rate": 0.10416666666666667,
+        "mean_e_depth": 0.7708
+      },
+      "f90v2": {
+        "folio": "f90v2",
+        "total": 69,
+        "daiin_rate": 0.0,
+        "aiin_rate": 0.057971014492753624,
+        "mean_e_depth": 0.7391
+      },
+      "f93r": {
+        "folio": "f93r",
+        "total": 152,
+        "daiin_rate": 0.019736842105263157,
+        "aiin_rate": 0.06578947368421052,
+        "mean_e_depth": 0.2237
+      },
+      "f93v": {
+        "folio": "f93v",
+        "total": 87,
+        "daiin_rate": 0.022988505747126436,
+        "aiin_rate": 0.06896551724137931,
+        "mean_e_depth": 0.3793
+      },
+      "f96r": {
+        "folio": "f96r",
+        "total": 86,
+        "daiin_rate": 0.023255813953488372,
+        "aiin_rate": 0.05813953488372093,
+        "mean_e_depth": 0.5
+      },
+      "f96v": {
+        "folio": "f96v",
+        "total": 61,
+        "daiin_rate": 0.03278688524590164,
+        "aiin_rate": 0.06557377049180328,
+        "mean_e_depth": 0.5738
+      },
+      "f99r": {
+        "folio": "f99r",
+        "total": 162,
+        "daiin_rate": 0.04938271604938271,
+        "aiin_rate": 0.08641975308641975,
+        "mean_e_depth": 0.6235
+      },
+      "f99v": {
+        "folio": "f99v",
+        "total": 147,
+        "daiin_rate": 0.02040816326530612,
+        "aiin_rate": 0.14965986394557823,
+        "mean_e_depth": 0.5306
+      },
+      "f9r": {
+        "folio": "f9r",
+        "total": 84,
+        "daiin_rate": 0.023809523809523808,
+        "aiin_rate": 0.17857142857142858,
+        "mean_e_depth": 0.0714
+      },
+      "f9v": {
+        "folio": "f9v",
+        "total": 84,
+        "daiin_rate": 0.08333333333333333,
+        "aiin_rate": 0.20238095238095238,
+        "mean_e_depth": 0.0952
+      }
+    }
+  },
+  "part_c": {
+    "currier_a": {
+      "section_profiles": {
+        "Herbal": {
+          "total_tokens": 7864,
+          "aiin_family": 1090,
+          "aiin_rate": 0.1386,
+          "headed": 458,
+          "headless": 632,
+          "prefix_distribution": {
+            "ch": 122,
+            "ot": 38,
+            "da": 419,
+            "pch": 9,
+            "qo": 70,
+            "sh": 59,
+            "tch": 5,
+            "sa": 32,
+            "ol": 8,
+            "ko": 11,
+            "ok": 41,
+            "(none)": 116,
+            "yk": 19,
+            "do": 18,
+            "so": 19,
+            "to": 11,
+            "ta": 24,
+            "ct": 18,
+            "fch": 2,
+            "dch": 7,
+            "sch": 3,
+            "ka": 16,
+            "or": 5,
+            "kch": 5,
+            "po": 5,
+            "de": 1,
+            "ke": 2,
+            "lch": 1,
+            "te": 2,
+            "se": 1,
+            "ar": 1
+          }
+        },
+        "Pharma": {
+          "total_tokens": 2377,
+          "aiin_family": 275,
+          "aiin_rate": 0.1157,
+          "headed": 119,
+          "headless": 156,
+          "prefix_distribution": {
+            "da": 106,
+            "(none)": 67,
+            "sa": 12,
+            "ok": 15,
+            "qo": 10,
+            "or": 6,
+            "ol": 14,
+            "ke": 1,
+            "ar": 1,
+            "ch": 14,
+            "ta": 1,
+            "do": 6,
+            "so": 8,
+            "ko": 2,
+            "ot": 5,
+            "to": 2,
+            "po": 2,
+            "sh": 2,
+            "pch": 1
+          }
+        },
+        "Text": {
+          "total_tokens": 933,
+          "aiin_family": 93,
+          "aiin_rate": 0.0997,
+          "headed": 56,
+          "headless": 37,
+          "prefix_distribution": {
+            "(none)": 25,
+            "ch": 7,
+            "yk": 5,
+            "da": 18,
+            "ot": 3,
+            "ct": 1,
+            "ko": 2,
+            "sh": 5,
+            "ka": 3,
+            "dch": 1,
+            "sa": 3,
+            "te": 1,
+            "qo": 12,
+            "ol": 1,
+            "ta": 3,
+            "ok": 1,
+            "al": 2
+          }
+        }
+      },
+      "chi_squared_test": {
+        "test": "chi_squared",
+        "chi2": 11.5524,
+        "p_value": 0.0031,
+        "dof": 2,
+        "sections": [
+          "Herbal",
+          "Pharma",
+          "Text"
+        ]
+      }
+    },
+    "currier_b": {
+      "section_profiles": {
+        "Bio": {
+          "total_tokens": 6850,
+          "aiin_family": 456,
+          "aiin_rate": 0.0666,
+          "headed": 262,
+          "headless": 194,
+          "prefix_distribution": {
+            "sa": 42,
+            "ol": 22,
+            "qo": 109,
+            "ok": 36,
+            "da": 89,
+            "(none)": 81,
+            "so": 9,
+            "ch": 12,
+            "lk": 5,
+            "or": 7,
+            "sh": 7,
+            "ta": 7,
+            "ot": 15,
+            "ka": 6,
+            "do": 2,
+            "po": 2,
+            "yk": 3,
+            "ko": 1,
+            "te": 1
+          }
+        },
+        "Cosmo": {
+          "total_tokens": 1480,
+          "aiin_family": 251,
+          "aiin_rate": 0.1696,
+          "headed": 182,
+          "headless": 69,
+          "prefix_distribution": {
+            "ch": 13,
+            "ot": 17,
+            "(none)": 72,
+            "ol": 9,
+            "qo": 37,
+            "sh": 11,
+            "da": 24,
+            "or": 5,
+            "so": 1,
+            "yk": 15,
+            "ar": 5,
+            "ta": 19,
+            "ok": 4,
+            "po": 4,
+            "sa": 2,
+            "ka": 5,
+            "lk": 4,
+            "al": 1,
+            "te": 2,
+            "pch": 1
+          }
+        },
+        "Herbal": {
+          "total_tokens": 3433,
+          "aiin_family": 399,
+          "aiin_rate": 0.1162,
+          "headed": 228,
+          "headless": 171,
+          "prefix_distribution": {
+            "(none)": 104,
+            "sa": 18,
+            "da": 82,
+            "or": 5,
+            "ch": 29,
+            "ok": 34,
+            "qo": 33,
+            "al": 3,
+            "ta": 9,
+            "ot": 12,
+            "ol": 21,
+            "ka": 10,
+            "ke": 2,
+            "tch": 3,
+            "pch": 3,
+            "yk": 9,
+            "sh": 6,
+            "to": 5,
+            "so": 2,
+            "ar": 3,
+            "te": 2,
+            "po": 2,
+            "fch": 1,
+            "kch": 1
+          }
+        },
+        "Stars": {
+          "total_tokens": 10671,
+          "aiin_family": 1351,
+          "aiin_rate": 0.1266,
+          "headed": 932,
+          "headless": 419,
+          "prefix_distribution": {
+            "lk": 44,
+            "da": 133,
+            "ot": 87,
+            "(none)": 370,
+            "se": 1,
+            "ok": 111,
+            "qo": 221,
+            "so": 13,
+            "ka": 31,
+            "or": 14,
+            "ch": 113,
+            "ol": 37,
+            "sa": 42,
+            "do": 5,
+            "lch": 2,
+            "ar": 12,
+            "sh": 36,
+            "to": 4,
+            "ta": 27,
+            "pch": 7,
+            "yk": 10,
+            "fch": 2,
+            "po": 11,
+            "tch": 4,
+            "al": 7,
+            "te": 3,
+            "kch": 2,
+            "lsh": 1,
+            "dch": 1
+          }
+        },
+        "Text": {
+          "total_tokens": 662,
+          "aiin_family": 61,
+          "aiin_rate": 0.0921,
+          "headed": 34,
+          "headless": 27,
+          "prefix_distribution": {
+            "da": 16,
+            "ot": 2,
+            "ok": 4,
+            "sh": 5,
+            "qo": 5,
+            "(none)": 17,
+            "or": 5,
+            "sa": 2,
+            "ch": 1,
+            "ol": 1,
+            "pch": 1,
+            "po": 1,
+            "ar": 1
+          }
+        }
+      },
+      "chi_squared_test": {
+        "test": "chi_squared",
+        "chi2": 40.2165,
+        "p_value": 0.0,
+        "dof": 4,
+        "sections": [
+          "Bio",
+          "Cosmo",
+          "Herbal",
+          "Stars",
+          "Text"
+        ]
+      }
+    }
+  }
+}
