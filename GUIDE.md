@@ -21,7 +21,7 @@ For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTI
 
 ## The Short Version
 
-The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar** — a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 forbidden transitions) is established at high confidence across 1,933 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 3 structurally confirmed folio-chapter correspondences and ~12 more supported by 8-dimensional feature matching.
+The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar** — a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 forbidden transitions) is established at high confidence across 1,938 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 44 procedural chapters matched to ~25 folios covering 94% of the *Testamentum*'s procedural content — including 3 confirmed by independent structural evidence and 5 more confirmed via reverse-blind prediction.
 
 The manuscript reorganizes this content for workshop use: preparation procedures cluster in Herbal B, transmutation procedures cluster in Section S, and theoretical content is entirely absent. An 18-atom compositional architecture produces readable operational descriptions for every token (100% coverage), and cross-folio vocabulary analysis has identified specific tokens encoding material introduction (`dar`, 6/6 partition) and quality checking (`chekar`, 7/7 folios).
 
@@ -275,7 +275,7 @@ Three folios are **confirmed** with multiple independent structural validations:
 | f76r | Ch18 Pract | Element separation (silver-plate purity test) | Strongest monitoring gradient in corpus (rho=0.710, rank 1/13); ch→sh transition maps active→passive testing |
 | f84r | Ch14 Pract | Gold dissolution (balneum mariae + putrefaction) | Dual-layer 12-header architecture; lowest distance in dataset; product chain input from f75r |
 
-~12 more are **supported** by atom-level decode, with the rest moderate or partial. Individual folio documentation: `context/FOLIOS/`.
+5 more are **confirmed via reverse-blind prediction** (recipe → predictions → scan → match): f103v (Ch27P, 6/7), f77r (Ch2+3+6M, 7/7 perfect), f39r (Ch7-10M, 6/7). The remainder are supported or speculative via 8D matching, expanded matching, or atom-level decode. In total, 44 procedural chapters map to ~25 folios. Short related procedures are consolidated onto single folios (C1937); sequential operations appear on recto/verso pairs of the same leaf (C1936). Individual folio documentation: `context/FOLIOS/`.
 
 ### Section-Level Correspondence
 
@@ -395,9 +395,9 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 635 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 636 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
-The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 635 phases, each building on validated prior work, produced 1,933 constraints — a depth no single analytical session could achieve.
+The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 636 phases, each building on validated prior work, produced 1,938 constraints — a depth no single analytical session could achieve.
 
 For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
