@@ -304,6 +304,20 @@ Lunaria → Quicksilver (f112v, Ch1M)
 
 The f75r→f84r link is explicit: the *Testamentum*'s cipher key identifies "vegetable G" (Ch14's input) as the quintessence produced by Ch19. Two independently-matched folios connect through the source text's own cipher system.
 
+### Manuscript Organization: Multi-Chapter Folios and Recto/Verso Pairing
+
+The manuscript does not follow a "one chapter = one folio" rule. Related short procedures are combined onto a single folio, while complex single procedures occupy their own folio. f80r (441 tokens) encodes five short animal-extraction chapters (Ch21-25M), each only 1-2 sentences. f75r (412 tokens) encodes one complex 9-cycle recipe (Ch19M).
+
+Recto/verso pairs on the same physical leaf encode **sequential or related procedures**:
+
+| Leaf | Recto | Verso |
+|------|-------|-------|
+| f66 | Ch24P fixation (ring diagram) | Ch26P inceration / fusibility test |
+| f103 | Ch16M ferment multiplication | Ch27P Mercury imbibition |
+| f108 | Ch16P element separation | Ch10P silver balneum dissolution |
+
+On f66, fixation (Ch24) and inceration (Ch26) are consecutive Practica operations — you fix the substance first, then incerate it for fusibility. The recto/verso pairing preserves the procedural sequence across the page turn. This suggests the manuscript was deliberately organized by operational logic, not by source text order.
+
 ### Cross-Folio Vocabulary
 
 Specific tokens produce consistent operational readings across independently-matched folios:
