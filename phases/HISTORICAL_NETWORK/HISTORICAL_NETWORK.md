@@ -172,6 +172,28 @@ The Schedel correspondence (1473) documents that Regiomontanus, operating in Nur
 ### 8. Cross-Border Knowledge Seeking Was Documented
 Piccolomini's correspondence (1444) records a Saxon court physician traveling to Italy seeking magical arts at Mons Veneris. The same letters explicitly document the Vienna-Padua student pipeline: "*many will remain in Vienna who now go to Padua.*" Johann Schindel, a Prague physician-astronomer, maintained a 200-volume personal library — the kind of private collection where encoded manuscripts could circulate.
 
+## Update: Pseudo-Lullian Source Identification (Phases 628-635)
+
+Since this document was written, computational matching (Phases 628-635, C1882-C1933) has identified the Pseudo-Lullian *Testamentum* (Practica + Liber Mercuriorum) as the leading candidate for the manuscript's source tradition. 3 folio-chapter correspondences are structurally confirmed (f75r/Ch19, f76r/Ch18P, f84r/Ch14P), with ~12 more supported. The Testamentum slots directly into Chain 1:
+
+```
+Arnald of Villanova (~1300)
+    ↓ [attributed tradition]
+Pseudo-Lullian Testamentum (14th C) — the source text
+    ↓ [shared quintessence framework]
+John of Rupescissa (1351)
+    ↓ [commentary/gloss]
+UNIDENTIFIED GLOSSATOR (Padua, 1463) — "der glosierer uber Rupescissus"
+    ↓
+Brunschwig (Strasbourg, 1500/1512) — printed
+```
+
+The Glossator who defended quintessence theory at Padua in 1463 may have been working directly from the Testamentum tradition. Brunschwig's recipe content (particularly in the 1512 Large Book) independently matches the same Voynich folios as the Testamentum, strengthening the identification.
+
+Full details: `phases/RECIPE_FOLIO_CORRESPONDENCE/`, `phases/CRIB_DECODE_SYNTHESIS/`, `phases/FULL_SPECTRUM_SCAN/`. Folio-level documentation: `context/FOLIOS/INDEX.md`.
+
+---
+
 ## Connection to Structural Analysis
 
 This historical network provides **context** for our structural findings but does not modify them:
