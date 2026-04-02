@@ -32,6 +32,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f82r | R1 | Herbal B | Ch22 Mercuriorum match (lunaria maceration); dar=1 for lunaria; **5-token sealing micro-para (P3)**; 12 consecutive qo lines = 3-day maceration; cleanest non-confirmed match | [f82r.md](f82r.md) |
 | f82v | R1 | Herbal B | Ch28 Mercuriorum (vessel spec); near-twin of f77v; qokain=13 (use-case enumeration); da lower than f77v (describing vs building) | [f82v.md](f82v.md) |
 | f83r | R1 | Herbal B | Ch9 Practica (first distillation, grinding); qo=24.6%, 75.7% opaque terminals (sealed ops); moderate match | [f83r.md](f83r.md) |
+| f76v | R1 | Herbal B | Ch15 Mercuriorum (ferment conversion); balneum 21.2%; **P4 n-atom explosion (22 bind atoms)**; dal at join-point; sh elevated for sensory observation | [f76v.md](f76v.md) |
 | f78v | R1 | Herbal B | Ch14 Mercuriorum (composite ferments); dar=2, dal=6 (heavy material handling); daiin=2 iterative cycling; P1→P2 fire→monitoring shift; moderate match | [f78v.md](f78v.md) |
 | f103r | R1 | S (Pharma) | Ch16 Mercuriorum (ferment multiplication); **strongly supported** — balneum 20.3%, P18 hits 48% qo (heat escalation), 18 paragraphs for multi-chamber recipe | [f103r.md](f103r.md) |
 | f111v | R1 | S (Pharma) | Competing: Ch10 Merc (pearl finishing) or Ch20 Merc (flesh bath); anomalous — lowest gentle heat in S neighborhood, zero dar/dal, 69 unique words; unclear | [f111v.md](f111v.md) |
