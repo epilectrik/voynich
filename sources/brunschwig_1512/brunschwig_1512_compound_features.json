@@ -1,0 +1,775 @@
+{
+  "metadata": {
+    "source": "brunschwig_1512_english.txt",
+    "method": "4-channel featurization (k/h/t/e) + structural metadata",
+    "n_recipes": 20,
+    "channels": {
+      "k": "heat/thermal (fire intensity, transitions)",
+      "h": "monitoring (color, consistency, volatility, sequential observation)",
+      "t": "termination (threshold vs time-based endpoints)",
+      "e": "correction (caution, recoverable vs fatal errors, process drift)"
+    }
+  },
+  "recipes": [
+    {
+      "recipe_idx": 0,
+      "name": "Quintessence (pelican method)",
+      "lines": "3687-3784",
+      "n_words": 661,
+      "n_ingredients": 1,
+      "n_steps": 5,
+      "primary_technique": "circulation",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": true,
+      "k_channel": {
+        "heat_rate": 0.0151,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 10
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0408,
+        "color_frac": 0.0,
+        "consistency_frac": 0.074,
+        "volatility_frac": 0.593,
+        "chain_rate": 0.259,
+        "raw_monitoring_mentions": 27
+      },
+      "t_channel": {
+        "termination_rate": 0.0091,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 6
+      },
+      "e_channel": {
+        "correction_rate": 0.0106,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.143,
+        "raw_correction_mentions": 7
+      }
+    },
+    {
+      "recipe_idx": 1,
+      "name": "Albertus Magnus Aqua Vitae",
+      "lines": "11875-11918",
+      "n_words": 232,
+      "n_ingredients": 10,
+      "n_steps": 6,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0216,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0216,
+        "color_frac": 0.4,
+        "consistency_frac": 0.6,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.8,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0086,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 2,
+      "name": "Drink of Youth / Second Balsam",
+      "lines": "12293-12329",
+      "n_words": 272,
+      "n_ingredients": 14,
+      "n_steps": 7,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0221,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 6
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0147,
+        "color_frac": 0.75,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0037,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0074,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 3,
+      "name": "Anti-pestilence Aqua Vitae (1511)",
+      "lines": "12445-12543",
+      "n_words": 695,
+      "n_ingredients": 27,
+      "n_steps": 4,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0058,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0129,
+        "color_frac": 0.333,
+        "consistency_frac": 0.111,
+        "volatility_frac": 0.222,
+        "chain_rate": 0.444,
+        "raw_monitoring_mentions": 9
+      },
+      "t_channel": {
+        "termination_rate": 0.0072,
+        "threshold_frac": 0.8,
+        "raw_termination_mentions": 5
+      },
+      "e_channel": {
+        "correction_rate": 0.0115,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 8
+      }
+    },
+    {
+      "recipe_idx": 4,
+      "name": "Fourth Aqua Vitae Composita",
+      "lines": "12596-12621",
+      "n_words": 182,
+      "n_ingredients": 3,
+      "n_steps": 5,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0055,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.022,
+        "color_frac": 0.25,
+        "consistency_frac": 0.75,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0055,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0055,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 5,
+      "name": "Pfalzgraf Aqua Vitae",
+      "lines": "12630-12675",
+      "n_words": 310,
+      "n_ingredients": 24,
+      "n_steps": 7,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0065,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0097,
+        "color_frac": 0.667,
+        "consistency_frac": 0.333,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0032,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 6,
+      "name": "Sixth Aqua Vitae / Water of Life",
+      "lines": "12684-12760",
+      "n_words": 700,
+      "n_ingredients": 8,
+      "n_steps": 9,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0071,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0286,
+        "color_frac": 0.4,
+        "consistency_frac": 0.35,
+        "volatility_frac": 0.15,
+        "chain_rate": 0.8,
+        "raw_monitoring_mentions": 20
+      },
+      "t_channel": {
+        "termination_rate": 0.0029,
+        "threshold_frac": 0.333,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0171,
+        "recoverable_frac": 0.667,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 12
+      }
+    },
+    {
+      "recipe_idx": 7,
+      "name": "Turpentine/Honey Aqua Vitae",
+      "lines": "13098-13236",
+      "n_words": 813,
+      "n_ingredients": 38,
+      "n_steps": 8,
+      "primary_technique": "distillation",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0123,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 10
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0295,
+        "color_frac": 0.583,
+        "consistency_frac": 0.125,
+        "volatility_frac": 0.167,
+        "chain_rate": 0.458,
+        "raw_monitoring_mentions": 24
+      },
+      "t_channel": {
+        "termination_rate": 0.0098,
+        "threshold_frac": 0.727,
+        "raw_termination_mentions": 8
+      },
+      "e_channel": {
+        "correction_rate": 0.0098,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.375,
+        "raw_correction_mentions": 8
+      }
+    },
+    {
+      "recipe_idx": 8,
+      "name": "Bishop of Strasbourg's Aqua Vitae",
+      "lines": "13490-13530",
+      "n_words": 279,
+      "n_ingredients": 4,
+      "n_steps": 3,
+      "primary_technique": "infusion",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0036,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0143,
+        "color_frac": 0.0,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.5,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0072,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0036,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 9,
+      "name": "Grand Aqua Vitae Composita",
+      "lines": "15426-15641",
+      "n_words": 1119,
+      "n_ingredients": 58,
+      "n_steps": 7,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0098,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 11
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0286,
+        "color_frac": 0.344,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.219,
+        "chain_rate": 0.219,
+        "raw_monitoring_mentions": 32
+      },
+      "t_channel": {
+        "termination_rate": 0.008,
+        "threshold_frac": 0.818,
+        "raw_termination_mentions": 9
+      },
+      "e_channel": {
+        "correction_rate": 0.0152,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.059,
+        "raw_correction_mentions": 17
+      }
+    },
+    {
+      "recipe_idx": 10,
+      "name": "Theriac (Andromachus + Galen)",
+      "lines": "16083-16688",
+      "n_words": 3368,
+      "n_ingredients": 64,
+      "n_steps": 12,
+      "primary_technique": "infusion",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0053,
+        "mean_heat_intensity": 2.78,
+        "heat_transition_rate": 0.111,
+        "raw_heat_mentions": 18
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0128,
+        "color_frac": 0.419,
+        "consistency_frac": 0.116,
+        "volatility_frac": 0.163,
+        "chain_rate": 0.535,
+        "raw_monitoring_mentions": 43
+      },
+      "t_channel": {
+        "termination_rate": 0.005,
+        "threshold_frac": 0.722,
+        "raw_termination_mentions": 17
+      },
+      "e_channel": {
+        "correction_rate": 0.011,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.108,
+        "raw_correction_mentions": 37
+      }
+    },
+    {
+      "recipe_idx": 11,
+      "name": "Mithridate",
+      "lines": "16288-16423",
+      "n_words": 455,
+      "n_ingredients": 72,
+      "n_steps": 4,
+      "primary_technique": "infusion",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0154,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 7
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 12,
+      "name": "Artificial Balsam (Gentile's)",
+      "lines": "8608-8663",
+      "n_words": 334,
+      "n_ingredients": 19,
+      "n_steps": 8,
+      "primary_technique": "distillation",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": true,
+      "k_channel": {
+        "heat_rate": 0.018,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 6
+      },
+      "h_channel": {
+        "monitoring_rate": 0.024,
+        "color_frac": 0.5,
+        "consistency_frac": 0.375,
+        "volatility_frac": 0.125,
+        "chain_rate": 1.125,
+        "raw_monitoring_mentions": 8
+      },
+      "t_channel": {
+        "termination_rate": 0.012,
+        "threshold_frac": 0.4,
+        "raw_termination_mentions": 4
+      },
+      "e_channel": {
+        "correction_rate": 0.006,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 13,
+      "name": "Aurum Potabile (amalgam method)",
+      "lines": "22157-22261",
+      "n_words": 758,
+      "n_ingredients": 7,
+      "n_steps": 10,
+      "primary_technique": "calcination",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0198,
+        "mean_heat_intensity": 1.91,
+        "heat_transition_rate": 0.545,
+        "raw_heat_mentions": 15
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0501,
+        "color_frac": 0.658,
+        "consistency_frac": 0.263,
+        "volatility_frac": 0.053,
+        "chain_rate": 0.184,
+        "raw_monitoring_mentions": 38
+      },
+      "t_channel": {
+        "termination_rate": 0.0132,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 10
+      },
+      "e_channel": {
+        "correction_rate": 0.0106,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 8
+      }
+    },
+    {
+      "recipe_idx": 14,
+      "name": "Hair growth water",
+      "lines": "33407-33419",
+      "n_words": 427,
+      "n_ingredients": 3,
+      "n_steps": 5,
+      "primary_technique": "distillation",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0141,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 6
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0351,
+        "color_frac": 0.533,
+        "consistency_frac": 0.4,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.867,
+        "raw_monitoring_mentions": 15
+      },
+      "t_channel": {
+        "termination_rate": 0.0164,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 7
+      },
+      "e_channel": {
+        "correction_rate": 0.007,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 15,
+      "name": "Hair color-change water",
+      "lines": "33431-33449",
+      "n_words": 260,
+      "n_ingredients": 7,
+      "n_steps": 5,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0154,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0154,
+        "color_frac": 0.5,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.25,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0115,
+        "threshold_frac": 0.667,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0038,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 16,
+      "name": "Noble Memory Water",
+      "lines": "33520-33596",
+      "n_words": 1182,
+      "n_ingredients": 23,
+      "n_steps": 8,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0102,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 12
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0178,
+        "color_frac": 0.476,
+        "consistency_frac": 0.286,
+        "volatility_frac": 0.048,
+        "chain_rate": 0.429,
+        "raw_monitoring_mentions": 21
+      },
+      "t_channel": {
+        "termination_rate": 0.011,
+        "threshold_frac": 0.812,
+        "raw_termination_mentions": 13
+      },
+      "e_channel": {
+        "correction_rate": 0.0076,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 9
+      }
+    },
+    {
+      "recipe_idx": 17,
+      "name": "Anti-melancholy Heart Water",
+      "lines": "33724-33741",
+      "n_words": 191,
+      "n_ingredients": 16,
+      "n_steps": 5,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0052,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0157,
+        "color_frac": 0.667,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.333,
+        "chain_rate": 1.667,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0052,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0052,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 18,
+      "name": "Cold-type Dizziness Water",
+      "lines": "33638-33645",
+      "n_words": 120,
+      "n_ingredients": 6,
+      "n_steps": 5,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0083,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0083,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 2.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 19,
+      "name": "Anti-drunkenness Water",
+      "lines": "33649-33655",
+      "n_words": 156,
+      "n_ingredients": 3,
+      "n_steps": 5,
+      "primary_technique": "distillation",
+      "fire_degree": 1,
+      "has_cohobation": true,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0192,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0064,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 3.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0064,
+        "threshold_frac": 0.333,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0192,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    }
+  ]
+}
