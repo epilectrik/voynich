@@ -2,7 +2,7 @@
 
 This document states the project's claims explicitly, with the evidence tier and constraint basis for each. It exists because the Voynich Manuscript attracts extraordinary claims, and readers deserve to know exactly where our confidence is high and where it is not.
 
-For the full constraint system, see `context/CLAIMS/INDEX.md` (1,711 validated constraints).
+For the full constraint system, see `context/CLAIMS/INDEX.md` (1,933 validated constraints).
 
 ---
 
@@ -28,37 +28,51 @@ These claims are grounded in statistical evidence from the transcript. They do n
 
 - **A simple Markov model using the discovered grammar reproduces 87% of measurable structure.** The M2.1 generative model passes 21/21 closure metrics. This means the grammar is sufficient to regenerate the data's statistical properties. (C1365)
 
-### Domain identification (Tier 3: consistent with evidence, not proven by it)
+- **Every token decomposes into operational atoms with 100% coverage.** The HEAD+MOD*+TERM architecture (C1394) with 18 atoms at four confidence tiers (C1195) produces readable operational descriptions for all 23,096 Currier B tokens. (C1897)
 
-These claims go beyond the structural data. They are the best current interpretation but could be wrong.
+- **Specific tokens encode identifiable operational functions across multiple independently-matched folios.** `dar` (da+r) = material introduction — present on all folios matched to recipes introducing new materials, absent on all folios matched to cohobation/separation-only recipes (6/6 partition, C1925). `chekar` (ch+ek+ar) = post-thermal quality check — appears in structurally identical context across 7/83 folios (C1926).
 
-- **The grammar's structural properties align with thermal process control — most likely reflux distillation.** 28 tests across 4 test suites comparing the VMS structure to Hieronymus Brunschwig's *Liber de arte distillandi* (1500), the first printed distillation manual. The forbidden transitions map onto physical failure modes. The convergence behavior matches distillation physics. (F-BRU-001 through F-BRU-034)
+- **The manuscript encodes only procedural content.** Full-spectrum scan of all 209 *Testamentum* chapters: 96 theoretical chapters and 30 furnace-specification chapters produce zero atom-validated matches. Only procedural Practica and Mercuriorum chapters match. (C1932)
 
-- **The manuscript is best modeled as a multi-register technical control notation.** The four-register architecture (specification catalog, legality bridge, execution grammar, orientation layer) functions as a coordinated document stack for expert practitioners. (C1499, Phase 551)
+### Historical source tradition (Tier 2-3: framework established, specific assignments interpretive)
 
-- **No existing medieval document genre matches the VMS structural profile.** Eight genres compared across 7 dimensions; best match scores 2.5/7. Three VMS properties have zero historical precedent: structural safety architecture, multi-register architecture, formal operational grammar. We propose the classification OPERATIONAL CONTROL CODEX as an analytical category. (Phase 552)
+These claims combine structural evidence (Tier 2) with interpretive identification (Tier 3). The structural matching is validated; the specific recipe assignments could be revised by new evidence.
+
+- **The best-fit historical source tradition is Pseudo-Lullian alchemy.** Statistical matching using 8 locked feature dimensions identifies the *Testamentum*'s Practica and Liber Mercuriorum as the source, calibrated independently against Brunschwig's distillation manual (1500). Permutation test: p<0.001 (C1887). Cross-family replication confirmed (C1885). Wrong-regime negative control collapses (C1886). (Tier 2 for the matching framework; Tier 3 for the specific PL identification)
+
+- **3 folio-chapter correspondences are supported by independent structural evidence** (f75r/Ch19, f76r/Ch18P, f84r/Ch14P), each with multiple converging validations beyond the matching features. **~12 additional matches** show plausible correspondence via 8D proximity and atom-level decode. Individual assignments are Tier 3. The matching framework was trained on distillation chapters; hit rates on Practica are not fully independent of the training procedure. (C1882-C1890, C1896, C1933)
+
+- **The manuscript's sections map to *Testamentum* book divisions.** Section B folios f75-f84 correspond to Liber Mercuriorum preparation chapters (Ch1-28). Section S folios f103-f116 correspond to transmutation/multiplication chapters (Ch40+). The ordering follows product chains, not book order. (C1927, C1930 — Tier 2 for the clustering, Tier 3 for the specific mapping)
+
+- **A product chain links folios across the manuscript.** f75r (Ch19 aqua vitae / quintessence) produces the input for f84r (Ch14 gold dissolution, which requires "vegetable G" = quintessence per the *Testamentum*'s cipher key). Parallel mineral and animal production chains converge at medical administration. (C1928 — Tier 3)
+
+### Structural domain alignment (Tier 3: consistent with evidence, not proven by it)
+
+- **The grammar's structural properties align with thermal process control.** 28 tests across 4 test suites comparing VMS structure to Brunschwig's *Liber de arte distillandi* (1500). Forbidden transitions map onto physical failure modes. Recovery architecture matches Brunschwig's bounded retry rule. Fire degrees correlate with stability proxy. (F-BRU-001 through F-BRU-034)
+
+- **The manuscript is best modeled as a multi-register technical control notation.** The four-register architecture functions as a coordinated document stack for expert practitioners. (C1499, Phase 551)
+
+- **No existing medieval document genre matches the VMS structural profile.** Eight genres compared across 7 dimensions; best match scores 2.5/7. We propose the classification OPERATIONAL CONTROL CODEX as an analytical category. (Phase 552)
 
 ---
 
 ## What We Do Not Claim
 
-- **We do not claim plaintext translation.** No token has a proven English (or any language) equivalent. The structural reconstruction recovers formal operating logic, not natural-language content.
+- **We do not claim plaintext translation.** No token has a proven English (or any language) equivalent. The atom glosses describe operational functions within the control grammar, not natural-language content. (C171: semantic ceiling)
 
-- **We do not claim exact substance identification.** The manuscript externalized material identity — the notation discriminates materials from each other but does not name them. The "semantic ceiling" (C171) means substance names are irrecoverable from the notation alone.
+- **We do not claim exact substance identification from tokens alone.** `dar` identifies a material-introduction EVENT but not WHICH material. `chekar` identifies a quality-check EVENT but not what is being checked. The notation discriminates materials from each other but does not name them — material identity was externalized to the practitioner's knowledge. (C120: PURE_OPERATIONAL)
 
-- **We do not claim exact product identification.** We cannot determine what the processes produce. The grammar specifies operations, not outcomes.
+- **We do not claim exact product identification from tokens alone.** The product chain (quintessence → gold tincture) is established through the *Testamentum*'s cipher key, not through reading Voynich tokens as product names. Without the external text, the tokens would reveal only that one folio's output feeds another folio's input.
 
-- **We do not claim exact apparatus schematics.** The structural evidence is consistent with circulatory thermal equipment (pelican alembics, reflux apparatus), but the manuscript describes how to *operate* apparatus, not how to *build* it.
+- **We do not claim text equivalence with the *Testamentum*.** The VMS is not a cipher for the *Testamentum* text. It encodes the same operational CONTENT in a completely different notation system, reorganized for workshop use. The relationship is content correspondence, not textual derivation.
 
-- **We do not claim one-to-one Brunschwig equivalence.** The Brunschwig comparison is a structural parallel demonstrating domain alignment. It is not a claim that the VMS is a cipher for Brunschwig's text, nor that the two manuscripts describe the same specific processes.
+- **We do not claim that operational glosses are proven translations.** When we label an atom "heat" or a category "CONTAINMENT," these are interpretive labels for structurally validated clusters. They are consistent with the domain identification but are not recovered plaintext. (C171)
 
 - **We do not claim authorship or provenance proof.** The radiocarbon date (1404-1438) and structural properties are consistent with Central European guild workshop culture, but this is historical interpretation (Tier 3-4), not proof.
 
-- **We do not claim that operational labels are proven translations.** When we label an atom "thermal" or a category "CONTAINMENT," these are interpretive labels for structurally validated clusters. They are consistent with the domain identification but are not recovered plaintext.
+- **We do not claim that all folios are Pseudo-Lullian.** 30 folios have been individually analyzed (with per-folio documentation), of which 3 have confirmed and ~12 supported recipe correspondences. The remaining ~53 uninvestigated folios use the same grammar and operational vocabulary but have not been matched to specific source chapters. They may correspond to other Pseudo-Lullian texts, related traditions, or workshop-specific procedures.
 
 - **We do not claim that illustrations carry semantic content.** Illustration-text coupling tests show swap invariance (C138) — the illustrations are orientation aids, not information carriers.
-
-- **We do not claim historical genre discovery.** OPERATIONAL CONTROL CODEX is a proposed analytical classification based on structural properties, not a recovered medieval native genre term. No medieval source describes such a genre.
 
 ---
 
@@ -71,12 +85,13 @@ The structural findings (Tier 0-2) are falsifiable. Here is what would overturn 
 - **Evidence that the 49 instruction classes do not have 100% coverage** — tokens that fall outside all classes. (Would overturn C121)
 - **A folio that uses a different grammar** from the other 82. (Would overturn C124)
 
-The domain identification (Tier 3) is more easily revised:
+The historical identification (Tier 2-3) is more easily revised:
 
-- **A better-fitting domain** whose physics match the forbidden transitions, convergence behavior, and recovery architecture more closely than distillation. We would adopt it.
-- **Evidence that the Brunschwig structural alignment is coincidental** — a non-distillation domain that matches equally well on the same test battery.
+- **A better-fitting source tradition** whose operational features match the 8D feature space more closely than the *Testamentum*. We would adopt it.
+- **Evidence that the *Testamentum* postdates the manuscript's radiocarbon window** (currently compatible: PL tradition active 1330s-1500s, manuscript 1404-1438).
+- **Evidence that the 8D matching features are artifacts of an uncontrolled confound** rather than genuine operational correspondence.
+- **A demonstration that the section-to-book mapping (f75-f84 = Mercuriorum) is coincidental** — e.g., that any 11 contiguous folios would match a single PL book at 8/11 by chance.
 
 ---
 
-*Phase 553 | Part of the public documentation editorial pass*
-*Based on 1,711 validated constraints across 589 research phases*
+*For the full constraint system, see `context/CLAIMS/INDEX.md`. For the conceptual walkthrough, see [GUIDE.md](GUIDE.md).*

@@ -21,7 +21,9 @@ For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTI
 
 ## The Short Version
 
-The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar** — a collection of structured programs whose architecture is consistent with maintaining a physical process within safe operating limits. Structural comparison with Brunschwig's distillation manual (1500) suggests reflux distillation as one plausible domain (Tier 3 interpretation).
+The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar** — a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 forbidden transitions) is established at high confidence across 1,933 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 3 structurally confirmed folio-chapter correspondences and ~12 more supported by 8-dimensional feature matching.
+
+The manuscript reorganizes this content for workshop use: preparation procedures cluster in Herbal B, transmutation procedures cluster in Section S, and theoretical content is entirely absent. An 18-atom compositional architecture produces readable operational descriptions for every token (100% coverage), and cross-folio vocabulary analysis has identified specific tokens encoding material introduction (`dar`, 6/6 partition) and quality checking (`chekar`, 7/7 folios).
 
 The manuscript is organized into four structurally distinct layers, each serving a different function. Together they form a self-contained system: the structure itself encodes operational sequences, intervention points, and avoidance constraints without requiring external explanation.
 
@@ -251,6 +253,74 @@ The manuscript's radiocarbon date (1404-1438) places it in the pre-publication s
 
 ---
 
+## The Pseudo-Lullian Source Tradition
+
+The strongest external content alignment comes from the Pseudo-Lullian *Testamentum* — a 14th-15th century alchemical treatise in the tradition of Ramon Llull (though not written by Llull himself). This is **Tier 2-3**: the matching framework is statistically validated (Tier 2), individual chapter-folio assignments are interpretive (Tier 3).
+
+### Recipe-Folio Matching (Phases 628-635)
+
+An 8-dimensional residual feature system matches individual *Testamentum* chapters to individual Voynich folios:
+
+- **Training:** 16 distillation chapters → 32 REGIME_1 folios. 9/16 confident matches.
+- **Validation:** Permutation test (real beats 1,000 random shuffles, p<0.001). Cross-family replication (features generalize to sublimation, fermentation, fixation, dissolution without retuning). Wrong-regime negative control (collapses to 1/16).
+- **Expansion:** Full-spectrum scan of all 209 *Testamentum* chapters across all operation families. 22+ atom-validated matches total.
+
+### The Matched Folios
+
+Three folios are **confirmed** with multiple independent structural validations:
+
+| Folio | Chapter | Recipe | Key evidence |
+|-------|---------|--------|-------------|
+| f75r | Ch19 Merc | Aqua vitae composite (9x reflux with honey+wax) | Only 4+ consecutive identical token run in corpus; unique double-dar; Brunschwig cross-confirmation |
+| f76r | Ch18 Pract | Element separation (silver-plate purity test) | Strongest monitoring gradient in corpus (rho=0.710, rank 1/13); ch→sh transition maps active→passive testing |
+| f84r | Ch14 Pract | Gold dissolution (balneum mariae + putrefaction) | Dual-layer 12-header architecture; lowest distance in dataset; product chain input from f75r |
+
+~12 more are **supported** by atom-level decode, with the rest moderate or partial. Individual folio documentation: `context/FOLIOS/`.
+
+### Section-Level Correspondence
+
+The manuscript's sections map to *Testamentum* book divisions:
+
+- **Section B (f75-f84):** 8/11 folios match Liber Mercuriorum preparation chapters (Ch1-28)
+- **Section S (f103-f116):** 6 folios match Mercuriorum transmutation/multiplication chapters (Ch40+)
+- **Section T (f66r):** One fixation recipe encoded in ring-diagram format
+
+The split is functional: preparation in Herbal B, transmutation in Section S. The ordering follows product chains, not book order (r=-0.179).
+
+### Product Chain (Tier 3 — interpretive reconstruction)
+
+The structural profiles of matched folios are consistent with a production chain, reconstructed via *Testamentum* chapter content. Each link depends on the correctness of the underlying recipe-folio assignment (itself Tier 3):
+
+```
+Lunaria → Quicksilver (f112v, Ch1M)
+    → Fix and test (f116r, Ch4M)
+    → Sublimate to elixir (f79r, Ch12M)
+    → Composite ferments (f78v, Ch14M → f76v, Ch15M → f103r, Ch16M)
+    → Potable gold (f81v, Ch18M)
+    → Quintessence (f75r, Ch19M) ←──── feeds into ────→ Gold tincture (f84r, Ch14P)
+    → Animal waters (f80r, Ch21-25M)
+    → Furnace/vessel specs (f77v, Ch27M; f82v, Ch28M)
+```
+
+The f75r→f84r link is explicit: the *Testamentum*'s cipher key identifies "vegetable G" (Ch14's input) as the quintessence produced by Ch19. Two independently-matched folios connect through the source text's own cipher system.
+
+### Cross-Folio Vocabulary
+
+Specific tokens produce consistent operational readings across independently-matched folios:
+
+- **`dar`** (da+r): material introduction. Present on all 4 folios matched to recipes introducing new materials; absent on both folios matched to cohobation/separation-only recipes. 6/6 partition. (C1925, Tier 2)
+- **`chekar`** (ch+ek+ar): post-thermal quality check. Appears on 7/83 folios in structurally identical context: qo depleted 0.48x (check happens after heat), daiin enriched 3.7x (distillation context). 3/3 confirmed balneum folios. (C1926, Tier 2)
+- **`dal`** (da+l): passive material transfer (output/settling). Complementary to dar.
+
+### What This Does Not Establish
+
+- The manuscript is not a **cipher** for the *Testamentum* text — it encodes the same operational CONTENT in a different notation system
+- ~53 of 83 folios remain unmatched — they may correspond to other Pseudo-Lullian texts or workshop-specific procedures
+- The **genealogical relationship** (direct derivation vs. shared tradition) cannot be determined from internal analysis
+- **Material identity** is still not recoverable from tokens alone (C171) — dar marks "add material" but not which material
+
+---
+
 ## The Galenic Framework
 
 The project also tested against John of Rupescissa's *De consideratione quintae essentiae* (1351) — a text using the full Galenic classification: 4 qualities × 4 degrees of intensity. This comparison is **Tier 4** (exploratory).
@@ -274,14 +344,15 @@ For detailed comparisons: `context/SPECULATIVE/rupescissa_comparative.md` (Galen
 
 ## What This Analysis Cannot Determine
 
-Certain questions are structurally unanswerable from the manuscript's grammar:
+Certain questions remain open:
 
-- **What substance is being processed** — The grammar encodes operations, not materials
-- **Who wrote it** — Nothing in the structure identifies an author or school
-- **What individual tokens "mean"** — Operational roles are not word meanings
-- **What the illustrations depict** — Illustrations do not constrain text content (statistically proven)
+- **What specific substance is referenced by a token** — The grammar encodes operational functions, not material names. `dar` means "add material" but not WHICH material. The *Testamentum* recipe context supplies material identity externally.
+- **Who wrote it** — Nothing in the structure identifies an author or school. The historical network analysis identifies the Vienna-Padua academic corridor as the most likely context (Tier 4).
+- **What individual tokens "translate to" in natural language** — Operational glosses (k=heat, e=cool) describe function within the control grammar. They are not word meanings in the linguistic sense.
+- **What the illustrations depict** — Illustrations do not constrain text content (statistically proven, C138). However, some illustration-structure-product matches exist (f31r/rose/rosewater) at Tier 3-4.
+- **What the remaining ~53 unmatched folios encode** — They use the same grammar and vocabulary as the matched folios but have not been mapped to specific historical source chapters.
 
-These are not gaps in the analysis. They are properties of the system: a control grammar that works precisely because it is domain-general. The remaining questions will likely be resolved through **archival research** (uncatalogued guild records, apothecary inventories from early 15th-century Central Europe) and **domain expertise** from historians of distillation or practitioners familiar with pre-industrial reflux technique.
+These are not all permanent gaps. The *Testamentum* matching has already resolved some questions previously thought unanswerable — specific recipe identification, product chain reconstruction, and operational vocabulary functions. The remaining questions will likely be resolved through **alchemical historians** evaluating the recipe matches against the broader Pseudo-Lullian corpus, and **archival research** in uncatalogued Central European collections.
 
 ### Common Questions
 
@@ -310,9 +381,9 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 589 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 635 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
-The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 589 phases, each building on validated prior work, produced 1,711 constraints — a depth no single analytical session could achieve.
+The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 635 phases, each building on validated prior work, produced 1,933 constraints — a depth no single analytical session could achieve.
 
 For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
@@ -331,6 +402,10 @@ For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](M
 | See paragraph structure contract | `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml` |
 | See the Brunschwig comparison | `context/SPECULATIVE/brunschwig_comparison.md` |
 | See the Rupescissa/Galenic comparison | `context/SPECULATIVE/rupescissa_comparative.md` |
+| See the recipe-folio matching | `phases/RECIPE_FOLIO_CORRESPONDENCE/` (Phase 628) |
+| See individual folio decode notes | `context/FOLIOS/INDEX.md` (30 documented folios) |
+| See the PL Testamentum text | `sources/pseudo_lull_testamentum/testamentum_complete_english.txt` |
+| See the glossing system | `context/GLOSSING.md` |
 | See the historical network | `phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md` |
 | Run the core analysis library | `scripts/voynich.py` (see `METHODS_AND_TOOLS.md` for examples) |
 | View a decoded folio | `python scripts/show_b_folio.py f76r -p` |
