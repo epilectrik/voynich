@@ -34,7 +34,9 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f83r | R1 | Herbal B | Ch9 Practica (first distillation, grinding); qo=24.6%, 75.7% opaque terminals (sealed ops); moderate match | [f83r.md](f83r.md) |
 | f76v | R1 | Herbal B | Ch15 Mercuriorum (ferment conversion); balneum 21.2%; **P4 n-atom explosion (22 bind atoms)**; dal at join-point; sh elevated for sensory observation | [f76v.md](f76v.md) |
 | f78v | R1 | Herbal B | Ch14 Mercuriorum (composite ferments); dar=2, dal=6 (heavy material handling); daiin=2 iterative cycling; P1→P2 fire→monitoring shift; moderate match | [f78v.md](f78v.md) |
+| f66r | R4 | T (zodiac) | Ch24 Practica (fixation) in **ring diagram format**; da=10% (rank 5/82); 82% dry heat; 62 folio-unique words; first recipe match in Section T | [f66r.md](f66r.md) |
 | f103r | R1 | S (Pharma) | Ch16 Mercuriorum (ferment multiplication); **strongly supported** — balneum 20.3%, P18 hits 48% qo (heat escalation), 18 paragraphs for multi-chamber recipe | [f103r.md](f103r.md) |
+| f107r | R3 | S (Pharma) | Ch44 Mercuriorum (quicksilver coagulation); dar=3 maps 3 materials; P11 dar+dal cluster = projection step; Section S = late Mercuriorum | [f107r.md](f107r.md) |
 | f111v | R1 | S (Pharma) | Competing: Ch10 Merc (pearl finishing) or Ch20 Merc (flesh bath); anomalous — lowest gentle heat in S neighborhood, zero dar/dal, 69 unique words; unclear | [f111v.md](f111v.md) |
 | f112v | R1 | S (Pharma) | Ch1 Mercuriorum (lunaria→quicksilver); balneum 25.1%, heavy iteration (daiin+aiin+aiiin), thermal arc (gentle→strong→gentle); zero dar is one miss | [f112v.md](f112v.md) |
 | f116r | R1 | S (Pharma) | Ch4 Mercuriorum (fixation, fusibility test); ch=14.9% (testing-heavy), dar=5, dain=11, low balneum correct for sublimation | [f116r.md](f116r.md) |
