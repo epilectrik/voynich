@@ -42,6 +42,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f111v | R1 | S (Pharma) | Competing: Ch10 Merc (pearl finishing) or Ch20 Merc (flesh bath); anomalous — lowest gentle heat in S neighborhood, zero dar/dal, 69 unique words; unclear | [f111v.md](f111v.md) |
 | f112v | R1 | S (Pharma) | Ch1 Mercuriorum (lunaria→quicksilver); balneum 25.1%, heavy iteration (daiin+aiin+aiiin), thermal arc (gentle→strong→gentle); zero dar is one miss | [f112v.md](f112v.md) |
 | f116r | R1 | S (Pharma) | Ch4 Mercuriorum (fixation, fusibility test); ch=14.9% (testing-heavy), dar=5, dain=11, low balneum correct for sublimation | [f116r.md](f116r.md) |
+| f39r | ? | B (Herbal B) | Ch7-10 Mercuriorum candidate (pearl-making sequence); **REVERSE BLIND: 6/7 + 1P, score 10/11** — distinctive non-distillation profile: qo=9% LOW, da=9%, dar=6, ch=21% | [f39r.md](f39r.md) |
 | f43v | ? | H (Herbal) | Ch29 Practica candidate (troubleshooting/correction); **REVERSE BLIND: 4/6 + 2P** — ch=22.9%, ok+ot=15%, dar=2 for corrective additions | [f43v.md](f43v.md) |
 | f85r1 | ? | B/C | Multi-chapter Practica candidate (Ch12/20/22P); dar=5 dal=4 daiin=5 — scores top 2-3 for three dissolution/preparation recipes. Likely consolidates related procedures. | [f85r1.md](f85r1.md) |
 | f103v | R1/R3 | S (Pharma) | Ch27 Practica (Mercury imbibition); **REVERSE BLIND: 6/7 predictions correct** — recipe-derived predictions identified f103v from 49 unmatched folios. Verso of f103r (Ch16M). | [f103v.md](f103v.md) |
