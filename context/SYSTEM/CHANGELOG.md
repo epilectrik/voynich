@@ -4,6 +4,37 @@
 
 ---
 
+## Version 6.09 (2026-04-02) - Phase 636: Reverse-Blind Matching and Atom Refinement
+
+### Summary
+
+Phase 636 extends recipe matching from confirmatory to predictive. Reverse-blind method: derive folio predictions from recipe text, scan 49 unmatched folios, identify match. f103v confirmed as Ch27P imbibition (6/7 at atom level) — first predictive match. 7-axis discrimination battery resolves d=do/execute (replaces mark, 4-point margin). Recto/verso pairs encode sequential operations on same leaf (3 pairs confirmed). Multi-chapter folios combine short related procedures. Blind atom reading of untouched f115r correctly predicted fixation recipe type (6/8). 5 constraints (C1934-C1938), 37 documented folios.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/REVERSE_BLIND_MATCHING/` — Phase 636 INDEX.md |
+| **ADDED** | C1934: d=do/execute replaces d=mark (7-axis battery, margin 4) |
+| **ADDED** | C1935: Reverse-blind matching produces predictive identifications |
+| **ADDED** | C1936: Recto/verso pairs encode sequential operations |
+| **ADDED** | C1937: Multi-chapter folios combine related procedures |
+| **ADDED** | C1938: Blind atom reading predicts recipe type |
+| **REVISED** | `scripts/voynich.py` ATOM_GLOSSES: d='do' (was 'mark'), a='yield' (was 'into') |
+| **CREATED** | Folio notes: f103v, f43v, f105v, f46r, f108v, f66v, f106r, f115r |
+| **UPDATED** | GUIDE.md: manuscript organization section, local adjacency |
+| **UPDATED** | GLOSSING.md: prep verb hypothesis definitively closed |
+| **UPDATED** | INDEX.md — +5 constraints (1938 total), Phase 636 section |
+
+### Key Findings
+
+1. **d=do/execute (C1934):** The 7-axis battery discriminated where recipe comparison could not. "Mark" fails on category shift (OPERATION, not MARKING) and tautology (dy="mark+end" ≈ redundant). "Do/execute" passes all 7 axes. Compounds improve: ed=cool+do=discharge.
+2. **Predictive matching (C1935):** f103v identified from 49 candidates using recipe-derived predictions. Confirmed 6/7 at atom level. First predictive (not confirmatory) match.
+3. **Recto/verso pairing (C1936):** 3 confirmed pairs with sequential procedural logic. Workshop manual organized for operational use.
+4. **Blind recipe prediction (C1938):** f115r (fully blind) — fixation type correctly predicted from atom patterns alone.
+
+---
+
 ## Version 6.08 (2026-04-01) - Phase 635: Full-Spectrum Recipe Scan
 
 ### Summary

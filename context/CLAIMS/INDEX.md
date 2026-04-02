@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1933 validated constraints | **Version:** 6.08 | **Date:** 2026-04-01
+**Total:** 1938 validated constraints | **Version:** 6.09 | **Date:** 2026-04-02
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 636: Reverse-Blind Matching and Atom Refinement — PREDICTIVE_MATCHING_CONFIRMED (C1934-C1938)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1934 | d=do/execute replaces d=mark: 7-axis battery scores 12/14 (margin 4). Matches OPERATION category shift (+55.6%), 2.11x B-enriched, non-tautological with y=end. Compounds improve: ed=cool+do=discharge, od=arrange+do=collect, dy=do+end=done. o/c/p/s confirmed at current glosses | 2 | B, atom, d, C1195, C1394 | d_score=12/14. margin=4. B_enrichment=2.11x. |
+| 1935 | Reverse-blind matching produces predictive folio identifications: recipe-derived predictions scan 49 unmatched folios. f103v/Ch27P scored 10/11 in scan, confirmed 6/7 at atom level. First predictive (not confirmatory) recipe-folio match | 2 | B, PL, matching, C1882 | ch27p_confirmed=6/7. candidates=49. |
+| 1936 | Recto/verso pairs encode sequential operations on same leaf: f66r/v (fixation→inceration), f103r/v (multiplication→imbibition), f108r/v (separation→dissolution). Procedural sequence preserved across page turn | 2 | B, manuscript organization, C1927 | paired_leaves=3. sequential=3/3. |
+| 1937 | Multi-chapter folios combine related short procedures: f80r = Ch21-25M (5 chapters). Ch10P+Ch11P within f108v. Organizing unit is operational scope not chapter count. Explains Phase 628 paragraph-count null result | 2 | B, manuscript organization, C1927 | f80r_chapters=5. |
+| 1938 | Blind atom reading correctly predicts recipe type: f115r (fully blind) predicted fixation from atoms, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8. Prediction accuracy tracks recipe detail level | 2 | B, atom, blind test, C1394, C1897 | f115r=6/8. f112v=7/8. |
+
+**Phase 636 findings (Reverse-Blind Matching and Atom Refinement, PREDICTIVE_MATCHING_CONFIRMED):**
+- d=do/execute is the single atom revision from the 7-axis battery (C1934). The other 4 tested atoms (o, c, p, s) confirmed at current glosses. "Mark" failed on category shift (predicted MARKING, measured OPERATION) and tautology with y=end. "Do/execute" matches on all 7 axes.
+- The reverse-blind method (C1935) extends matching from confirmatory to predictive. Recipe-derived feature predictions identified f103v as the best match for Ch27P imbibition from 49 candidates, confirmed at 6/7 by atom-level cold reading. Additional candidates identified for Ch29P (f43v), Ch30P (f105v), Ch19P (f46r), Ch26P (f66v), Ch10P (f108v).
+- Recto/verso pairing (C1936) reveals deliberate organizational logic: sequential Practica operations appear on the same physical leaf. This is consistent with a workshop manual organized for operational use, not a copy of a source text.
+- Multi-chapter folios (C1937) combine short related procedures from the same source section. The manuscript's unit of organization is operational scope, not source chapter boundaries. This resolves the paragraph-count null result from Phase 628.
+- Blind atom reading (C1938) correctly predicts recipe TYPE from structural atom patterns on untouched folios. The fully blind f115r test (fixation predicted, fixation confirmed) is the strongest single piece of evidence that the atom system captures genuine operational content.
 
 ---
 

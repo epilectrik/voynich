@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1933.
+the highest ID present is C1938.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2258,6 +2258,11 @@ C1930	Mercuriorum two-section split: Ch1-28 → Section B (f75-f84, 14 folios, p
 C1931	B-grammar recipe in Section T ring format: f66r (349 B tokens, 0 A/AZC) = Ch24P fixation. da=10% rank 5/82, 82% dry heat, 62 unique words. Ring format is physical not functional. Contrasts C1127 rosettes (AZC-like).	2	B, T, f66r, ring, C1127	da=10%. dry=82%. unique=62.
 C1932	Full-spectrum: Theorica (96ch) + Furnis (30ch) produce zero atom-validated matches. Confident hits collapse onto attractor folios (f84v=24ch, f34v=17ch) or are metaphorical false positives. Manuscript = procedural only.	2	B, PL, Theorica, Furnis, C171	validated=0. attractors=f84v+f34v.
 C1933	Expanded matching beyond distillation generalizes: +7% distance (2.358 vs 2.214), 8+ new validated matches. f79r←Ch12M d=1.02 (3 dar at 3 positions, P7 color endpoint). Cross-family operational similarity captured by 8D features.	2	B, PL, matching, C1882	ratio=1.07x. new=8+. best=f79r(1.02).
+C1934	d=do/execute replaces d=mark: 7-axis battery 12/14 (margin 4). OPERATION shift +55.6%, B-enriched 2.11x, non-tautological with y=end. ed=cool+do=discharge, od=arrange+do=collect, dy=do+end=done.	2	B, atom, d, C1195, C1394	score=12/14. margin=4.
+C1935	Reverse-blind matching: recipe predictions scan 49 unmatched folios. f103v/Ch27P confirmed 6/7 at atom level. First predictive recipe-folio identification.	2	B, PL, matching, C1882	f103v=6/7. candidates=49.
+C1936	Recto/verso sequential pairing: f66r/v (fixation→inceration), f103r/v (multiplication→imbibition), f108r/v (separation→dissolution). 3/3 sequential.	2	B, manuscript organization, C1927	pairs=3. sequential=3/3.
+C1937	Multi-chapter folios: f80r=Ch21-25M (5 chapters). Ch10P+Ch11P in f108v. Organizing unit=operational scope, not chapter count.	2	B, manuscript organization, C1927	f80r=5ch.
+C1938	Blind atom reading predicts recipe type: f115r fully blind predicted fixation, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8.	2	B, atom, blind test, C1394	f115r=6/8. f112v=7/8.
 
 ---
 
