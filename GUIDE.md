@@ -285,7 +285,7 @@ The manuscript's sections map to *Testamentum* book divisions:
 - **Section S (f103-f116):** 6 folios match Mercuriorum transmutation/multiplication chapters (Ch40+)
 - **Section T (f66r):** One fixation recipe encoded in ring-diagram format
 
-The split is functional: preparation in Herbal B, transmutation in Section S. The ordering follows product chains, not book order (r=-0.179).
+The split is functional: preparation in Herbal B, transmutation in Section S. Global ordering does not follow book order (r=-0.179), suggesting the author reorganized by operational logic rather than copying sequentially. However, **local adjacency exists**: f75r, f76r, and f77v are three consecutive manuscript folios matching three chapters from the same Liber Mercuriorum section, with f75r and f76r adjacent in both texts (Ch19 and Ch18 — one chapter apart in the *Testamentum*, one folio apart in the manuscript). This implies the author placed related procedures together, preserving source proximity for closely related operations while reorganizing the broader sequence.
 
 ### Product Chain (Tier 3 — interpretive reconstruction)
 
