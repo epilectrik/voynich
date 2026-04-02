@@ -40,6 +40,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f111v | R1 | S (Pharma) | Competing: Ch10 Merc (pearl finishing) or Ch20 Merc (flesh bath); anomalous — lowest gentle heat in S neighborhood, zero dar/dal, 69 unique words; unclear | [f111v.md](f111v.md) |
 | f112v | R1 | S (Pharma) | Ch1 Mercuriorum (lunaria→quicksilver); balneum 25.1%, heavy iteration (daiin+aiin+aiiin), thermal arc (gentle→strong→gentle); zero dar is one miss | [f112v.md](f112v.md) |
 | f116r | R1 | S (Pharma) | Ch4 Mercuriorum (fixation, fusibility test); ch=14.9% (testing-heavy), dar=5, dain=11, low balneum correct for sublimation | [f116r.md](f116r.md) |
+| f106r | ? | S (Pharma) | **UNMATCHED** — blind structural characterization: two-phase thermal (moderate→aggressive), dar=2, P14 sh=11 monitoring endpoint, predicted distillation/dissolution | [f106r.md](f106r.md) |
 | f115r | R3 | S (Pharma) | Ch28 Practica (red elixir fixation); **BLIND TEST: 6/8 predictions correct** from atom data alone (fixation type, non-balneum, multiple materials, testing-dominant) | [f115r.md](f115r.md) |
 | f75v | — | — | Codicillus mercury preparation candidate | [f75v.md](f75v.md) |
 
