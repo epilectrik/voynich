@@ -23,6 +23,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f77v | R1 | Herbal B | Ch27 match (furnace specification, three fire regimes); strongest ratio in Phase 628 (2.805); qo-dominant (29%); all paragraph gallows are t; thermal gradient P3→P7 maps bath→ashes→flame | [f77v.md](f77v.md) |
 | f84r | R1 | Herbal B | Ch14 match (gold dissolution, balneum mariae + putrefaction); dual-layer 12-header architecture; lowest distance in dataset (0.723); 84% CV consensus | [f84r.md](f84r.md) |
 | f108r | R1 | S (Pharma) | Ch16 match (two-phase element separation); blind prediction test FAILED (1/8); ok+ot correction rate 22.4%; zero iteration | [f108r.md](f108r.md) |
+| f108v | ? | S (Pharma) | Ch10 Practica candidate (silver balneum dissolution); gentle=31.4% (highest); VERSO of f108r — different dissolution recipes on same leaf | [f108v.md](f108v.md) |
 | f112r | R1 | S (Pharma) | Ch11 match (red mercury tincture); ok escalation 5%→27% matches recipe monitoring shift; zero dar (cohobation only); 10 paragraphs / 10 recipe steps | [f112r.md](f112r.md) |
 | f84v | R1 | Herbal B | Ch24 match **REJECTED** — single-sentence recipe vs 347-token folio; statistical false positive | [f84v.md](f84v.md) |
 | f81v | R1 | Herbal B | Ch18 Mercuriorum match (potable gold); dar+dal on L1 (gold+water); daiin x9 all in P1 (cohobation); weak stats but operationally coherent | [f81v.md](f81v.md) |
@@ -35,6 +36,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f76v | R1 | Herbal B | Ch15 Mercuriorum (ferment conversion); balneum 21.2%; **P4 n-atom explosion (22 bind atoms)**; dal at join-point; sh elevated for sensory observation | [f76v.md](f76v.md) |
 | f78v | R1 | Herbal B | Ch14 Mercuriorum (composite ferments); dar=2, dal=6 (heavy material handling); daiin=2 iterative cycling; P1→P2 fire→monitoring shift; moderate match | [f78v.md](f78v.md) |
 | f66r | R4 | T (zodiac) | Ch24 Practica (fixation) in **ring diagram format**; da=10% (rank 5/82); 82% dry heat; 62 folio-unique words; first recipe match in Section T | [f66r.md](f66r.md) |
+| f66v | ? | T (zodiac) | Ch26 Practica candidate (oil inceration/fusibility test); ch=19.5%, sh=16.8%; VERSO of f66r — fixation then inceration on same leaf | [f66v.md](f66v.md) |
 | f103r | R1 | S (Pharma) | Ch16 Mercuriorum (ferment multiplication); **strongly supported** — balneum 20.3%, P18 hits 48% qo (heat escalation), 18 paragraphs for multi-chamber recipe | [f103r.md](f103r.md) |
 | f107r | R3 | S (Pharma) | Ch44 Mercuriorum (quicksilver coagulation); dar=3 maps 3 materials; P11 dar+dal cluster = projection step; Section S = late Mercuriorum | [f107r.md](f107r.md) |
 | f111v | R1 | S (Pharma) | Competing: Ch10 Merc (pearl finishing) or Ch20 Merc (flesh bath); anomalous — lowest gentle heat in S neighborhood, zero dar/dal, 69 unique words; unclear | [f111v.md](f111v.md) |
