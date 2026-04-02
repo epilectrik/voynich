@@ -1,130 +1,94 @@
-# Session Handoff: Atom-Level Cross-System Analysis
+# Session Handoff: Full-Spectrum Recipe Matching
 
 **Date:** 2026-04-01
-**Last commit:** `11c3740` (Phase 633 complete, C1917-C1924)
+**Last commit:** `ce017e2`
 **Current branch:** master
-**Version:** 6.06 | **Constraints:** 1924 | **Phases:** 633
-**Status:** Two formal phases completed, exploratory work preserved
+**Version:** 6.07 | **Constraints:** 1929 | **Phases:** 634
+**Status:** Phase 634 complete, 28 documented folios, ready for full-spectrum matching
 
 ---
 
 ## What We Did This Session
 
-### Phase 632: aiin Cross-System Dual-Layer Architecture (C1908-C1916)
+### Phase 634: Cross-Folio Crib Decode Synthesis (C1925-C1929)
 
-Investigated the aiin/daiin token family — the manuscript's most frequent token — across A/B/AZC at atom level. Both expert advisors independently identified this as the highest-leverage target.
+Formalized 5 constraints from accumulated exploratory work:
+- **C1925:** dar encodes new material introduction (6/6 partition across matched folios)
+- **C1926:** chekar appears in post-thermal vessel-monitoring context (7 folios)
+- **C1927:** f75-f84 = Liber Mercuriorum section correspondence (8/11 folios)
+- **C1928:** Mercuriorum parallel mineral + animal production chains
+- **C1929:** f82r 5-token sealing micro-paragraph
 
-**Central finding:** The family has **dual-layer architecture**:
-- **Construction-layer** (same across all systems): n-terminal lock (93-95%), ii/ee domain complementarity (a-HEAD uses ii, e-HEAD uses ee)
-- **Execution-layer** (system-specific): HEAD selection (A=57% headless, B=36% a-headed), positional grammar (daiin opens lines in B but not A)
+### Mercuriorum Chain Mapping (20/25 chapters matched)
 
-**Key constraints:**
-| C# | Finding |
-|----|---------|
-| C1908 | Zodiac i/d MOD swap (chi2=39.3, p=0.0006) — Summer/Winter = aiin, Spring/Autumn = ody |
-| C1909 | aiin NEVER line-initial (0/469, all systems) — hardest positional constraint |
-| C1910 | n-terminal lock cross-system (A=93.7%, B=94.7%, p=0.197) |
-| C1911 | HEAD anatomy diverges (A=19.2% a-HEAD, B=35.9%, p<0.001) |
-| C1912 | ii/ee complementary domains confirmed cross-system |
-| C1913 | C1908 driven by aiin-family specifically (p=0.0033) |
-| C1914 | daiin anti-correlates with thermal complexity (rho=-0.324, p=0.0004) |
-| C1915 | AZC daiin-aiin co-occurrence attraction (OR=5.04, p=0.003) |
-| C1916 | Section-conditioned family composition (A p=0.003, B p<0.0001) |
+Decoded and documented 17 NEW folios beyond Phase 629's confirmed pair:
 
-**Interpretive meaning:** aiin = "yield through repeated cycling into containment" = the basic distillation operation. The notation enforces that ii-tokens always resolve safely (n-terminal lock). Two safety pathways: ii for a-domain (yield), ee for e-domain (cooling).
+| Ch | Folio | Content | Verdict |
+|----|-------|---------|---------|
+| Ch1 | f112v | Lunaria → quicksilver (pipeline origin) | Supported |
+| Ch4 | f116r | Fixation, fusibility test | Supported |
+| Ch11 | f112r | Red mercury tincture | Supported |
+| Ch12 | **f79r** | Mercury sublimation → elixir | **Supported (strong, d=1.02)** |
+| Ch14M | f78v | Composite ferments | Moderate |
+| Ch15 | **f76v** | Ferment conversion (join H + bind) | **Supported (P4 n-atom explosion)** |
+| Ch16M | **f103r** | Ferment multiplication | **Strongly supported (balneum + escalation)** |
+| Ch18M | f81v | Potable gold / water of life | Supported |
+| Ch19M | f75r | 9x reflux aqua vitae | CONFIRMED |
+| Ch21-25 | f80r | Animal ash chain (multi-chapter) | Supported |
+| Ch22 | **f82r** | Lunaria maceration | **Supported (strong, sealing para)** |
+| Ch27 | f77v | Furnace specification | Supported |
+| Ch28 | f82v | Vessel specification (twin of f77v) | Supported |
+| Ch9P | f83r | First distillation (grinding) | Moderate |
+| Ch14P | f84r | Gold dissolution | CONFIRMED |
+| Ch18P | f76r | Element separation | CONFIRMED |
+| Ch16P | f108r | Element separation | Head-scratcher |
+| Ch24 | f84v | Bone distillation | REJECTED |
 
-Scripts: `phases/AIIN_CROSS_SYSTEM/scripts/s1-s5`
+Also profiled: f83v (Ch2 partial), f80v (Ch3 failed), f111v (Ch10 unclear), f79v (balneum candidate).
 
-### Phase 633: Folio Design Freedom Decomposition (C1917-C1924)
+### Key Methodological Finding
 
-Decomposed within-section B folio differentiation at atom resolution. Probe found 75% within-section variance; phase reconciled this with C1169's 27% AXM residual.
+The 8D aggregate matching (Phase 628) is a good FILTER but misses structural correspondence. The atom-level decode catches things no automated system would flag:
+- f82r's 5-token sealing paragraph (ratio 0.791, NOT confident by 8D)
+- f79r's P7 monitoring spike for color endpoint (not in Phase 628 at all)
+- f76v's P4 n-atom explosion for binding (not directly matched)
 
-**Central finding:** 67% genuine atom freedom, orthogonal to AXM. REGIME constrains only head_k + pfx_qo (thermal intensity). Everything else is design freedom — the operational style choices that make each recipe unique.
-
-**Key constraints:**
-| C# | Finding |
-|----|---------|
-| C1917 | 67% genuine atom freedom, AXM captures <2% |
-| C1918 | 11 effective dimensions at atom level (PC1=23.8% yield vs cooling) |
-| C1919 | 4 FREEDOM features: mod_c, term_h, mod_d, mod_s (monitoring/closure cluster) |
-| C1920 | REGIME decomposable but narrow (RF 85.4%, head_k+pfx_qo only) |
-| C1921 | Freedom channels consistent cross-section (rho=0.783+) |
-| C1922 | PREFIX+MOD drive ~60% of folio differentiation |
-| C1923 | Atom-operational correlations (head_e↔e_ratio rho=0.816) |
-| C1924 | Freedom in monitoring/closure clusters, not energy/iteration |
-
-Scripts: `phases/FOLIO_DESIGN_FREEDOM/scripts/s1-s5`
-
-### Exploratory Work (Not Formalized)
-
-#### AZC Zodiac Atom Analysis (`phases/AZC_ATOM_SEASONAL/`)
-- MOD atoms differ significantly across zodiac seasonal groups (C1908, registered in Phase 632)
-- i/d swap = two distinct token families: aiin (yield-iterate-bind) vs ody (arrange-mark-end)
-- e_depth gradient: Autumn 0.813 > Winter 0.515
-- f57v R2 variant mapping: **negative** (p=0.34)
-- 3 scripts, INDEX.md preserved
-
-#### Currier A Atom Deep Dive (`phases/CURRIER_A_ATOMS/`)
-- Confirmed A as materials property database at atom level
-- e_depth: A=0.304 vs B=0.579 (A has almost no thermal modulation)
-- 4 folio clusters by thermal complexity, section-associated (p=1.3e-07)
-- Record opacity gradient: open semi-transparent, close opaque
-- Cluster 1 (Pharma) entries contain thermal test protocol compounds (`cool.heat.adjust.watch`)
-- Bridge MIDDLE A→B specificity: **negative** (p=1.0) — shared grammar, not cross-references
-- Bridge HEAD-channel probe: real signal (e-HEAD rho=0.749) but **system-wide**, not folio-specific
-- 7 scripts, INDEX.md preserved
-
-#### f108r Crib Decode
-- f108r → Ch16 (element separation from putrefied white composite)
-- 4/4 aggregate predictions pass (high e_depth, cooling vocabulary, staging, early arrangement)
-- BUT trajectory prediction failed (folio gets gentler, recipe says strengthen fire)
-- Zero dar tokens (red flag — all confirmed matches have dar)
-- Verdict: **inconclusive** — may be wrong match
-- Script: `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/_full_decode_f108r.py`
-
-#### Freedom Space + Crib Decode Connection
-- Tested whether decoded recipe folios land at predicted positions in freedom space
-- 2/4 predictions match (f75r term_h elevated, f84r mod_d elevated)
-- f77v (furnace spec) signals through pfx_da (infrastructure prefix), not freedom features
-- Small N (4 folios) limits conclusions but validates interpretive content
-- Script: `phases/FOLIO_DESIGN_FREEDOM/scripts/s6_crib_decode_freedom_probe.py`
+Three improvements identified for the matching algorithm:
+1. **dar/dal as a feature dimension** — cleanest single discriminator (6/6)
+2. **Expand beyond distillation family** — found f79r, f103r, f116r
+3. **Size-complexity gate** — catches f84v-type false positives
 
 ---
 
-## Recipe-Folio Match Candidates (Untested)
+## Next Session: Path A — Full-Spectrum Matcher
 
-From Phase 628 matching, confident matches not yet decoded:
+### Goal
+Scan the FULL Testamentum (209 chapters) + Codicillus against ALL 83 Currier B folios. Find section-level correspondences beyond the Mercuriorum.
 
-| Folio | PL Chapter | Content | CV% | Priority |
-|-------|-----------|---------|-----|----------|
-| **f83r** | Ch9 (Practica) | Grinding D+C, distillation | 37% | Medium |
-| **f84v** | Ch24 (Mercuriorum) | Sixth water constitution | 57% | High (verso of decoded f84r) |
-| **f112r** | Ch11 (Mercuriorum) | Red mercury tincture creation | 71% | High |
-| **f81v** | Ch18 (Mercuriorum) | Potable water composition | 67% | Medium |
+### Approach
+1. Build improved matching script incorporating:
+   - dar/dal as matching dimension
+   - All operation families (not just distillation)
+   - Size-complexity gate
+   - Paragraph-count sanity check
+2. Run full scan: 209 PL chapters × 83 folios + Codicillus chapters × 83 folios
+3. Identify clusters: which folio neighborhoods match which PL sections?
+4. Atom-decode the top candidates from new section matches
 
-Plus 3 untested **Codicillus** candidates: f79r, f79v, f80r
+### What We Know About PL Structure
+- **Practica** (~30 chapters): Only 4 matched so far (Ch9, Ch14, Ch16, Ch18). ~26 untested.
+- **Mercuriorum** (29 chapters): 20 matched. Nearly complete.
+- **Theorica** (~80 chapters): Mostly theoretical, but some may be procedural.
+- **Other parts:** De Essentia, De Inventione, etc. Unknown procedural content.
 
----
+### What We Know About Folio Coverage
+- **f75-f84 (Herbal B):** Mercuriorum section. 20 folios, nearly fully mapped.
+- **Section S (f103-f116):** 5 matches found (f103r, f108r, f112r, f112v, f116r). May correspond to a different PL part.
+- **Section H (Herbal):** Only illustration matches (f31r, f46v, f55r) and chekar prediction folios. Unexplored for recipe matching.
+- **Rest of Herbal B (f43-f74, f85-f102):** Completely unmapped. ~40 folios.
 
-## Key Interpretive Insights From This Session
-
-1. **aiin = distillation cycle.** The most common word in the manuscript encodes its most common operation: "yield through repeated cycling into containment." The notation enforces safety — you cannot compose an unsafe iteration token.
-
-2. **A is a practitioner's reference.** A entries describe material thermal properties. B recipes are complete programs. The practitioner consults A to know HOW to handle materials (balneum mariae vs direct flame), not to modify B's program.
-
-3. **Recipe individuality = monitoring style.** REGIME constrains thermal intensity. What makes each recipe unique is how much monitoring, adjustment, staging, and sequencing it requires — the FREEDOM features.
-
-4. **Two safety pathways.** ii (in a-domain) locks to n-terminal (containment). ee (in e-domain) routes to y-terminal (closure). Construction-layer — baked into the morphology.
-
----
-
-## Pending Work
-
-- **dar/dal document type constraint** — still unregistered from earlier session
-- **Atom gloss refinements** — r→receive, d→close, n→hold, l→level need cross-folio validation
-- **More recipe decodes** — f84v, f112r, f81v are the best untested candidates
-- **Codicillus recipe matching** — f79r, f79v, f80r never tested
-- **chekar prediction** — f33r, f34r, f94r, f95r1 should describe water-bath procedures (falsifiable)
+### Codicillus
+Fully transcribed and translated (`sources/codicillus/`). 205 pages, heavy on mercury preparation. Never matched against Voynich folios. Three candidates flagged (f79r, f79v, f80r) but never tested.
 
 ---
 
@@ -132,20 +96,34 @@ Plus 3 untested **Codicillus** candidates: f79r, f79v, f80r
 
 | File | What |
 |------|------|
-| `scripts/voynich.py` | Core library with atomize(), Transcript, Morphology |
-| `context/CLAIMS/INDEX.md` | 1924 constraints, v6.06 |
-| `phases/AIIN_CROSS_SYSTEM/` | Phase 632 (5 scripts, results) |
-| `phases/FOLIO_DESIGN_FREEDOM/` | Phase 633 (5+1 scripts, results, CSVs) |
-| `phases/AZC_ATOM_SEASONAL/` | Exploratory AZC work (3 scripts) |
-| `phases/CURRIER_A_ATOMS/` | Exploratory A work (7 scripts) |
-| `sources/pseudo_lull_testamentum/` | PL text (English + Latin) |
-| `sources/codicillus/` | Codicillus transcription + translation |
+| `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/shared_628.py` | 8D matching infrastructure (TUNED_DIMS, residual_match) |
+| `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/_match_unmatched_merc.py` | Expanded matching script |
+| `phases/PER_DOMAIN_BRIDGE_CALIBRATION/results/` | PL chapter feature data |
+| `results/folio_operational_profiles_v3.json` | Folio operational profiles |
+| `phases/ATOM_FOLIO_ATLAS/results/folio_atlas.json` | Atom-level folio atlas |
+| `sources/pseudo_lull_testamentum/testamentum_complete_english.txt` | PL English (209 chapters) |
+| `sources/codicillus/codicillus_complete_english.txt` | Codicillus English |
+| `context/FOLIOS/` | 28 documented folios |
+| `context/CLAIMS/INDEX.md` | 1929 constraints, v6.07 |
 
 ---
 
-## Git Notes
+## dar Hypothesis Status (C1925)
 
-- 18 commits ahead of origin/master
-- `sources/codicillus/about.txt` is untracked (minor)
-- Expert-advisor agent regenerated but needs Claude Code restart to take effect
-- Push pending to both gitea (origin/master) and github (github/main)
+Tested on 6 folios, 6/6 correct. Untested on 14+ new matches from this session. Quick validation pass recommended before building it into the matcher.
+
+| Folio | Recipe adds new material? | dar | Status |
+|-------|--------------------------|-----|--------|
+| f75r | YES (honey+wax) | 10 | ✓ |
+| f84r | YES (gold+quintessence) | 13 | ✓ |
+| f76r | YES (test material) | 7 | ✓ |
+| f82r | YES (lunaria) | 1 | ✓ |
+| f112r | NO (cohobation) | 0 | ✓ |
+| f108r | NO (pure separation) | 0 | ✓ |
+| f79r | YES (mercury+water+stone-water) | 3 | untested |
+| f78v | YES (ferment components) | 2 | untested |
+| f116r | YES (quicksilver) | 5 | untested |
+| f103r | YES (chamber mixtures) | 2 | untested |
+| f76v | YES? (join H) | 0 dar, 2 dal | needs review |
+| f81v | YES (gold) | 3 | untested |
+| f80r | YES (multiple materials) | 3 | untested |
