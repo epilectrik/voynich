@@ -4,6 +4,35 @@
 
 ---
 
+## Version 6.08 (2026-04-01) - Phase 635: Full-Spectrum Recipe Scan
+
+### Summary
+
+Phase 635 expands recipe matching from 16 distillation-family chapters to ALL 209 Testamentum chapters plus 19 Codicillus segments. Key findings: (1) Mercuriorum splits across Section B (preparation) and Section S (transmutation), (2) f66r is a B-grammar recipe in Section T ring format, (3) Theorica/Furnis produce zero real matches, (4) expanded matching adds 8+ validated matches at 7% distance penalty, (5) Codicillus adds nothing. 30 documented folios, 4 new constraints (C1930-C1933).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/FULL_SPECTRUM_SCAN/` — Phase 635 INDEX.md |
+| **ADDED** | C1930: Mercuriorum two-section split (B preparation + S transmutation) |
+| **ADDED** | C1931: B-grammar recipe in Section T ring format (f66r) |
+| **ADDED** | C1932: Theorica/Furnis produce zero atom-validated matches |
+| **ADDED** | C1933: Expanded matching generalizes beyond distillation (+7% distance) |
+| **ADDED** | `sources/codicillus/codicillus_channel_features.json` — 19 segment featurization |
+| **ADDED** | `phases/RECIPE_FOLIO_CORRESPONDENCE/results/full_spectrum_results.txt` |
+| **CREATED** | Folio notes: f66r, f76v, f78v, f79r, f79v, f80r, f82v, f83r, f103r, f107r, f111v, f112v, f116r |
+| **UPDATED** | INDEX.md — +4 constraints (1933 total), Phase 635 section |
+
+### Key Findings
+
+1. **Mercuriorum two-section split (C1930):** Preparation (Ch1-28) maps to f75-f84 (Herbal B), transmutation (Ch40+) maps to f103-f116 (Section S). The production chain starts in B and moves to S.
+2. **Recipe in ring format (C1931):** f66r has exclusively B-grammar tokens in ring layout within Section T. The ring is a physical format, not a functional marker — contrasts with rosettes which are AZC metalayer (C1127).
+3. **Procedural content only (C1932):** 96 Theorica chapters and 30 Furnis chapters produce no atom-validated matches. The manuscript encodes what you DO, not what you THINK or how you BUILD.
+4. **Cross-family generalization (C1933):** The 8D features work for sublimation, fermentation, fixation, coagulation, dissolution — not just distillation. f79r (Ch12M sublimation) at d=1.02 is the strongest expanded match.
+
+---
+
 ## Version 6.07 (2026-04-01) - Phase 634: Cross-Folio Crib Decode Synthesis
 
 ### Summary

@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1929.
+the highest ID present is C1933.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2254,6 +2254,10 @@ C1926	chekar post-thermal vessel-monitoring context: 7/83 folios. qo depleted 0.
 C1927	f75-f84 = Liber Mercuriorum section correspondence: 8/11 folios match Mercuriorum chapters. Folio-chapter order r=-0.179 (no book order).	2	B, section, PL, Mercuriorum, C1882	merc=8of11. order_r=-0.179.
 C1928	Mercuriorum parallel production chains: mineral (Ch15-19, mercury→gold→quintessence) + animal (Ch20-25, capon→5 waters) → Ch26 medical administration. f75r→f84r link confirmed (vegetable G = quintessence).	3	B, PL, Mercuriorum, product chain, C1927	mineral=Ch15-19. animal=Ch20-25.
 C1929	f82r sealing micro-paragraph: P3 (5 tok, L18) at material→maceration boundary, 2x okain. Ch22 says seal cucurbit with glass+wax. dar=1, P4=12 consecutive qo lines, gentle=22.9%. NOT confident by 8D (ratio=0.791) but atom evidence strong.	2	B, f82r, PL, Ch22, C1925	P3=5tok. okain=2. dar=1. qo_lines=12.
+C1930	Mercuriorum two-section split: Ch1-28 → Section B (f75-f84, 14 folios, preparation), Ch40+ → Section S (f103-f116, 6 folios, transmutation). Functional split, not book order.	2	B, S, PL, Mercuriorum, C1927	B=14. S=6.
+C1931	B-grammar recipe in Section T ring format: f66r (349 B tokens, 0 A/AZC) = Ch24P fixation. da=10% rank 5/82, 82% dry heat, 62 unique words. Ring format is physical not functional. Contrasts C1127 rosettes (AZC-like).	2	B, T, f66r, ring, C1127	da=10%. dry=82%. unique=62.
+C1932	Full-spectrum: Theorica (96ch) + Furnis (30ch) produce zero atom-validated matches. Confident hits collapse onto attractor folios (f84v=24ch, f34v=17ch) or are metaphorical false positives. Manuscript = procedural only.	2	B, PL, Theorica, Furnis, C171	validated=0. attractors=f84v+f34v.
+C1933	Expanded matching beyond distillation generalizes: +7% distance (2.358 vs 2.214), 8+ new validated matches. f79r←Ch12M d=1.02 (3 dar at 3 positions, P7 color endpoint). Cross-family operational similarity captured by 8D features.	2	B, PL, matching, C1882	ratio=1.07x. new=8+. best=f79r(1.02).
 
 ---
 

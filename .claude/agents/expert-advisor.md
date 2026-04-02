@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1929 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1933 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1929.
+the highest ID present is C1933.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1929 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1933 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1929 validated constraints are present as canonical one-line claims with tier
+1933 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-01 20:44
-**Version:** FROZEN STATE (1929 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-01 22:58
+**Version:** FROZEN STATE (1933 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2168,6 +2168,10 @@ C1926	chekar (ch+ek+ar) appears in post-thermal vessel-monitoring context across
 C1927	f75-f84 maps to Liber Mercuriorum at section level: 8/11 folios match Mercuriorum chapters (3 confirmed, 3 supported, 2 not confident), 3 match Practica (base preparations). Folio-chapter ordering does NOT follow book order (r=-0.179) — manuscript may follow procedural/product-chain order	2	B, section, PL, Mercuriorum, C1882
 C1928	Mercuriorum Ch18-Ch29 encodes parallel mineral + animal production chains: mineral chain (Ch15-19, mercury→gold→quintessence) produces active medicine; animal chain (Ch20-25, systematic capon disassembly into 5 waters) produces carrier vehicles; both converge at Ch26 (humoral medical administration). f75r quintessence is explicit input to f84r gold tincture (Ch14 requires "vegetable G" = quintessence)	3	B, PL, Mercuriorum, product chain, C1882, C1927
 C1929	f82r exhibits recipe-predicted sealing micro-paragraph: P3 (5 tokens, L18) at material→maceration boundary contains 2x okain (vessel-intake). Ch22 says "close the cucurbit with glass cover and wax." Supporting: dar=1 (single new material=lunaria), P4 has 12 consecutive qo lines (3-day sustained heat), gentle=22.9%, sh=11.3% elevated. Match NOT confident by 8D criteria (ratio=0.791, CV=48.2%) but atom-level evidence exceeds several confident matches	2	B, f82r, PL, Ch22, C1882, C1925
+C1930	Mercuriorum splits across two manuscript sections: Ch1-28 → Section B (f75-f84, 14 folios, preparation), Ch40+ → Section S (f103-f116, 6 folios, transmutation/multiplication). Split is functional. Folio-chapter ordering does not follow book order within either section	2	B, S, PL, Mercuriorum, C1927
+C1931	B-grammar recipe content in Section T ring format: f66r (language=B, 349 tokens, 0 A/AZC) matches Ch24 Practica fixation with da=10.0% (rank 5/82), 82% dry heat, 62 folio-unique words. Ring physical format, B operational grammar. Contrasts C1127 (rosettes = AZC-like)	2	B, T, f66r, ring, C1127
+C1932	Full-spectrum scan: Theorica (96 ch) and Furnis (30 ch) produce zero atom-validated matches. "Confident" theoretical matches collapse onto universal attractor folios (f84v=24ch, f34v=17ch) or are metaphorical keyword false positives. Manuscript encodes procedural Practica + Mercuriorum content only	2	B, PL, Theorica, Furnis, C171
+C1933	Expanded matching beyond distillation family generalizes: mean distance +7% (2.358 vs 2.214). 8+ new atom-validated matches including f79r←Ch12M (d=1.02, 3 dar at 3 predicted positions, P7 color endpoint). 8D features capture cross-family operational similarity	2	B, PL, matching, C1882
 
 ---
 

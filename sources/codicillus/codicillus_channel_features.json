@@ -1,0 +1,562 @@
+{
+  "metadata": {
+    "source": "codicillus",
+    "title": "Pseudo-Lull Codicillus (c. 1470, Northern Italy)",
+    "n_segments": 19,
+    "date": "2026-04-01",
+    "note": "Pages 6-40 (apparatus/cipher/theory) and 101-130 (not transcribed) excluded. Pages 156-165 (theoretical) excluded."
+  },
+  "segments": [
+    {
+      "segment_idx": 0,
+      "pages": "16-20",
+      "summary": "Early procedural text: distillation, rectification, separation, purification methods",
+      "family": "distillation",
+      "n_lines": 22,
+      "n_words": 115,
+      "k_channel": {
+        "heat_rate": 0.0087,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0087,
+        "color_frac": 0.5,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0435,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 1,
+      "pages": "22-27",
+      "summary": "Final decoction, alchemical operation with red bath, dissolution, properties of mercury and moon",
+      "family": "dissolution",
+      "n_lines": 16,
+      "n_words": 99,
+      "k_channel": {
+        "heat_rate": 0.0404,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0606,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 2,
+      "pages": "28-29",
+      "summary": "Sublimation and circulation procedures with calcination and reduction",
+      "family": "sublimation",
+      "n_lines": 142,
+      "n_words": 1098,
+      "k_channel": {
+        "heat_rate": 0.0091,
+        "mean_heat_intensity": 1.7,
+        "heat_transition_rate": 0.3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0046,
+        "color_frac": 0.4107,
+        "consistency_frac": 0.2321,
+        "volatility_frac": 0.2679,
+        "chain_rate": 0.3929
+      },
+      "t_channel": {
+        "termination_rate": 0.0128,
+        "threshold_frac": 0.9667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 3,
+      "pages": "47-48",
+      "summary": "Three core operations: dissolve, wash, reduce, and fix \u2014 with fire management",
+      "family": "dissolution",
+      "n_lines": 31,
+      "n_words": 546,
+      "k_channel": {
+        "heat_rate": 0.011,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0238,
+        "color_frac": 0.4474,
+        "consistency_frac": 0.2105,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.011,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0147,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.1111
+      }
+    },
+    {
+      "segment_idx": 4,
+      "pages": "48-52",
+      "summary": "Corruption of matter: heat management, color observation, digestion in vessel, elixir formation",
+      "family": "calcination",
+      "n_lines": 44,
+      "n_words": 1287,
+      "k_channel": {
+        "heat_rate": 0.0101,
+        "mean_heat_intensity": 1.85,
+        "heat_transition_rate": 0.1538
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0202,
+        "color_frac": 0.2537,
+        "consistency_frac": 0.3582,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6744
+      },
+      "t_channel": {
+        "termination_rate": 0.0085,
+        "threshold_frac": 0.8
+      },
+      "e_channel": {
+        "correction_rate": 0.021,
+        "recoverable_frac": 0.375,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 5,
+      "pages": "59-65",
+      "summary": "Fire regulation: natural vs artificial fire, debilitation and fortification, sublimation with Luna",
+      "family": "distillation",
+      "n_lines": 65,
+      "n_words": 1594,
+      "k_channel": {
+        "heat_rate": 0.0194,
+        "mean_heat_intensity": 1.65,
+        "heat_transition_rate": 0.3226
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0163,
+        "color_frac": 0.2532,
+        "consistency_frac": 0.2911,
+        "volatility_frac": 0.1266,
+        "chain_rate": 0.5435
+      },
+      "t_channel": {
+        "termination_rate": 0.0113,
+        "threshold_frac": 0.9545
+      },
+      "e_channel": {
+        "correction_rate": 0.0088,
+        "recoverable_frac": 0.3333,
+        "process_drift_frac": 0.4167
+      }
+    },
+    {
+      "segment_idx": 6,
+      "pages": "66-70",
+      "summary": "Nine operations: calcination, dissolution, separation, sweetening, fermentation, fixation; stone fortification with graduated heating",
+      "family": "calcination",
+      "n_lines": 46,
+      "n_words": 1095,
+      "k_channel": {
+        "heat_rate": 0.0174,
+        "mean_heat_intensity": 1.89,
+        "heat_transition_rate": 0.7895
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0119,
+        "color_frac": 0.2203,
+        "consistency_frac": 0.4576,
+        "volatility_frac": 0.1017,
+        "chain_rate": 0.3846
+      },
+      "t_channel": {
+        "termination_rate": 0.01,
+        "threshold_frac": 0.95
+      },
+      "e_channel": {
+        "correction_rate": 0.0027,
+        "recoverable_frac": 0.6667,
+        "process_drift_frac": 0.25
+      }
+    },
+    {
+      "segment_idx": 7,
+      "pages": "71-75",
+      "summary": "Practical recipe: mercury sublimation with saltpeter, balneum distillation, 3-day cycles, cucurbit apparatus, rubification",
+      "family": "distillation",
+      "n_lines": 79,
+      "n_words": 1221,
+      "k_channel": {
+        "heat_rate": 0.0238,
+        "mean_heat_intensity": 1.62,
+        "heat_transition_rate": 0.2414
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0156,
+        "color_frac": 0.4932,
+        "consistency_frac": 0.2192,
+        "volatility_frac": 0.0274,
+        "chain_rate": 0.6545
+      },
+      "t_channel": {
+        "termination_rate": 0.0139,
+        "threshold_frac": 0.8696
+      },
+      "e_channel": {
+        "correction_rate": 0.0041,
+        "recoverable_frac": 0.25,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 8,
+      "pages": "76-82",
+      "summary": "Rarefaction and distillation in bath, 5-day digestion cycles, moistening-liquefaction-vivification of rubified body, binding operations",
+      "family": "distillation",
+      "n_lines": 92,
+      "n_words": 1514,
+      "k_channel": {
+        "heat_rate": 0.0099,
+        "mean_heat_intensity": 1.53,
+        "heat_transition_rate": 0.4667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0053,
+        "color_frac": 0.4328,
+        "consistency_frac": 0.2388,
+        "volatility_frac": 0.209,
+        "chain_rate": 0.3514
+      },
+      "t_channel": {
+        "termination_rate": 0.0079,
+        "threshold_frac": 0.6735
+      },
+      "e_channel": {
+        "correction_rate": 0.0033,
+        "recoverable_frac": 0.2,
+        "process_drift_frac": 0.1667
+      }
+    },
+    {
+      "segment_idx": 9,
+      "pages": "82-86",
+      "summary": "Operational wheel (rota): sublimation-distillation-imbibition-separation-fixation cycle, retort with flame, dragon/lion sulfur procedure",
+      "family": "sublimation",
+      "n_lines": 56,
+      "n_words": 1035,
+      "k_channel": {
+        "heat_rate": 0.0087,
+        "mean_heat_intensity": 1.78,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0087,
+        "color_frac": 0.3235,
+        "consistency_frac": 0.2941,
+        "volatility_frac": 0.1176,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0058,
+        "threshold_frac": 0.6087
+      },
+      "e_channel": {
+        "correction_rate": 0.0058,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 10,
+      "pages": "88-95",
+      "summary": "Putrefaction and quinta essentia extraction: dissolved stone putrefied, bath distillation, air separation, mortification, fermentation",
+      "family": "separation",
+      "n_lines": 98,
+      "n_words": 1709,
+      "k_channel": {
+        "heat_rate": 0.0164,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0076,
+        "color_frac": 0.35,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.1,
+        "chain_rate": 0.4412
+      },
+      "t_channel": {
+        "termination_rate": 0.0117,
+        "threshold_frac": 0.8387
+      },
+      "e_channel": {
+        "correction_rate": 0.0129,
+        "recoverable_frac": 0.25,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 11,
+      "pages": "95-100",
+      "summary": "Dissolution of elements, fire-earth accord, gentle fire distillation, green lion / devouring dragon earth procedures",
+      "family": "dissolution",
+      "n_lines": 75,
+      "n_words": 1424,
+      "k_channel": {
+        "heat_rate": 0.0077,
+        "mean_heat_intensity": 1.36,
+        "heat_transition_rate": 0.2727
+      },
+      "h_channel": {
+        "monitoring_rate": 0.014,
+        "color_frac": 0.3125,
+        "consistency_frac": 0.3281,
+        "volatility_frac": 0.0469,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0154,
+        "threshold_frac": 0.8125
+      },
+      "e_channel": {
+        "correction_rate": 0.0056,
+        "recoverable_frac": 0.4,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 12,
+      "pages": "131-138",
+      "summary": "Sulfur incorporation and color transmutation: digestion, calcination, congelation into sulfur, body-spirit dissolution/fixation cycle",
+      "family": "fixation",
+      "n_lines": 68,
+      "n_words": 1662,
+      "k_channel": {
+        "heat_rate": 0.0138,
+        "mean_heat_intensity": 2.09,
+        "heat_transition_rate": 0.1739
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0126,
+        "color_frac": 0.3232,
+        "consistency_frac": 0.2626,
+        "volatility_frac": 0.202,
+        "chain_rate": 0.6038
+      },
+      "t_channel": {
+        "termination_rate": 0.009,
+        "threshold_frac": 0.8837
+      },
+      "e_channel": {
+        "correction_rate": 0.006,
+        "recoverable_frac": 0.3077,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 13,
+      "pages": "139-150",
+      "summary": "Conjunction and decoction: body drinks spirit paulatim, gentle fire to albedo, assation cycles, nutritive moisture management",
+      "family": "distillation",
+      "n_lines": 78,
+      "n_words": 2333,
+      "k_channel": {
+        "heat_rate": 0.0244,
+        "mean_heat_intensity": 1.91,
+        "heat_transition_rate": 0.1579
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0124,
+        "color_frac": 0.3357,
+        "consistency_frac": 0.1786,
+        "volatility_frac": 0.2786,
+        "chain_rate": 0.75
+      },
+      "t_channel": {
+        "termination_rate": 0.0154,
+        "threshold_frac": 0.8788
+      },
+      "e_channel": {
+        "correction_rate": 0.009,
+        "recoverable_frac": 0.6667,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 14,
+      "pages": "150-155",
+      "summary": "Color sequence operations: nigredo to albedo via washing/trituration, rubification by continued fire, moisture-heat balance",
+      "family": "calcination",
+      "n_lines": 49,
+      "n_words": 1219,
+      "k_channel": {
+        "heat_rate": 0.0377,
+        "mean_heat_intensity": 1.87,
+        "heat_transition_rate": 0.1522
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0312,
+        "color_frac": 0.6713,
+        "consistency_frac": 0.042,
+        "volatility_frac": 0.021,
+        "chain_rate": 0.8881
+      },
+      "t_channel": {
+        "termination_rate": 0.0254,
+        "threshold_frac": 0.962
+      },
+      "e_channel": {
+        "correction_rate": 0.009,
+        "recoverable_frac": 0.7778,
+        "process_drift_frac": 0.1538
+      }
+    },
+    {
+      "segment_idx": 15,
+      "pages": "166-175",
+      "summary": "Stone augmentation: sulfur sublimation, quicksilver flower reduction, nutritive decoction, milk nourishment of stone",
+      "family": "sublimation",
+      "n_lines": 66,
+      "n_words": 1627,
+      "k_channel": {
+        "heat_rate": 0.0037,
+        "mean_heat_intensity": 2.17,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0086,
+        "color_frac": 0.2308,
+        "consistency_frac": 0.4462,
+        "volatility_frac": 0.1077,
+        "chain_rate": 0.3448
+      },
+      "t_channel": {
+        "termination_rate": 0.0191,
+        "threshold_frac": 0.7931
+      },
+      "e_channel": {
+        "correction_rate": 0.0037,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.4
+      }
+    },
+    {
+      "segment_idx": 16,
+      "pages": "181-188",
+      "summary": "Sulfur sublimation: heat moderation, white powder production, aludel collection, red sulfur fixation, elixir with gold",
+      "family": "sublimation",
+      "n_lines": 62,
+      "n_words": 1400,
+      "k_channel": {
+        "heat_rate": 0.0171,
+        "mean_heat_intensity": 2.04,
+        "heat_transition_rate": 0.2083
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0036,
+        "color_frac": 0.4947,
+        "consistency_frac": 0.3158,
+        "volatility_frac": 0.1368,
+        "chain_rate": 0.5962
+      },
+      "t_channel": {
+        "termination_rate": 0.015,
+        "threshold_frac": 0.9231
+      },
+      "e_channel": {
+        "correction_rate": 0.0129,
+        "recoverable_frac": 0.5714,
+        "process_drift_frac": 0.0526
+      }
+    },
+    {
+      "segment_idx": 17,
+      "pages": "190-198",
+      "summary": "Final fermentation: white and red sulfur fixed to body, ferment with sol/luna, re-crudation, amalgamation with quicksilver",
+      "family": "fermentation",
+      "n_lines": 59,
+      "n_words": 1286,
+      "k_channel": {
+        "heat_rate": 0.0054,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.4286
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0101,
+        "color_frac": 0.5479,
+        "consistency_frac": 0.2466,
+        "volatility_frac": 0.0274,
+        "chain_rate": 0.6792
+      },
+      "t_channel": {
+        "termination_rate": 0.0109,
+        "threshold_frac": 0.9783
+      },
+      "e_channel": {
+        "correction_rate": 0.0047,
+        "recoverable_frac": 0.6667,
+        "process_drift_frac": 0.5
+      }
+    },
+    {
+      "segment_idx": 18,
+      "pages": "199-205",
+      "summary": "Final operations: ferment testing, sulfur-ferment mixing in mortar, first sublimation of mass with slow fire, water-air separation",
+      "family": "fermentation",
+      "n_lines": 59,
+      "n_words": 1007,
+      "k_channel": {
+        "heat_rate": 0.007,
+        "mean_heat_intensity": 1.43,
+        "heat_transition_rate": 0.1429
+      },
+      "h_channel": {
+        "monitoring_rate": 0.007,
+        "color_frac": 0.3684,
+        "consistency_frac": 0.3947,
+        "volatility_frac": 0.0526,
+        "chain_rate": 0.4762
+      },
+      "t_channel": {
+        "termination_rate": 0.0129,
+        "threshold_frac": 0.8333
+      },
+      "e_channel": {
+        "correction_rate": 0.001,
+        "recoverable_frac": 0.8333,
+        "process_drift_frac": 0.5
+      }
+    }
+  ]
+}

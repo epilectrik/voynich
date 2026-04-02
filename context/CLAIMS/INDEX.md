@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1929 validated constraints | **Version:** 6.07 | **Date:** 2026-04-01
+**Total:** 1933 validated constraints | **Version:** 6.08 | **Date:** 2026-04-01
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 635: Full-Spectrum Recipe Scan — PROCEDURAL_CONTENT_ONLY (C1930-C1933)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1930 | Mercuriorum splits across two manuscript sections: Ch1-28 → Section B (f75-f84, 14 folios, preparation), Ch40+ → Section S (f103-f116, 6 folios, transmutation/multiplication). Split is functional. Folio-chapter ordering does not follow book order within either section | 2 | B, S, PL, Mercuriorum, C1927 | section_B=14. section_S=6. preparation=Ch1-28. transmutation=Ch40+. |
+| 1931 | B-grammar recipe content in Section T ring format: f66r (language=B, 349 tokens, 0 A/AZC) matches Ch24 Practica fixation with da=10.0% (rank 5/82), 82% dry heat, 62 folio-unique words. Ring physical format, B operational grammar. Contrasts C1127 (rosettes = AZC-like) | 2 | B, T, f66r, ring, C1127 | B_tok=349. A_tok=0. da=10.0%. da_rank=5of82. dry_heat=82%. unique=62. |
+| 1932 | Full-spectrum scan: Theorica (96 ch) and Furnis (30 ch) produce zero atom-validated matches. "Confident" theoretical matches collapse onto universal attractor folios (f84v=24ch, f34v=17ch) or are metaphorical keyword false positives. Manuscript encodes procedural Practica + Mercuriorum content only | 2 | B, PL, Theorica, Furnis, C171 | theorica=96ch. furnis=30ch. validated=0. attractors=f84v(24)+f34v(17). |
+| 1933 | Expanded matching beyond distillation family generalizes: mean distance +7% (2.358 vs 2.214). 8+ new atom-validated matches including f79r←Ch12M (d=1.02, 3 dar at 3 predicted positions, P7 color endpoint). 8D features capture cross-family operational similarity | 2 | B, PL, matching, C1882 | dist_ratio=1.07x. new_validated=8+. best=f79r(d=1.02). |
+
+**Phase 635 findings (Full-Spectrum Recipe Scan, PROCEDURAL_CONTENT_ONLY):**
+- The Mercuriorum production chain splits functionally across two manuscript sections (C1930): preparation in Herbal B (f75-f84), transmutation/multiplication in Pharmaceutical S (f103-f116). 20 folios total across both sections encode Mercuriorum content.
+- f66r is a B-grammar fixation recipe in Section T ring diagram format (C1931). This expands where recipe content can appear in the manuscript beyond standard text sections. The ring FORMAT is physical, not functional — the grammar is standard B, not AZC (contrasts C1127).
+- The full-spectrum scan comprehensively rules out Theorica and Furnis as source material (C1932). The manuscript encodes only the PROCEDURAL portions of the Testamentum. This is consistent with C171 (semantic ceiling) — the notation can express operational instructions but not philosophical discourse or construction specifications.
+- Expanding beyond the distillation family (C1933) recovers 8+ new validated matches at minimal distance penalty (+7%). The 8D feature space is operation-family-agnostic. The strongest expanded match (f79r←Ch12M, d=1.02) has 3 dar tokens at 3 recipe-predicted material positions and a P7 monitoring spike mapping the color endpoint.
+- The Codicillus (19 featurized segments) adds zero folio assignments — 18/19 segments collapse onto f75r, confirming the Testamentum comprehensively covers the Codicillus's operational space.
 
 ---
 
