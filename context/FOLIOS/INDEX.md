@@ -20,6 +20,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f50r | R2 | Herbal H | Highest iteration in Section H (4.35%); OIL output; BALANCED kernel; large ray-floret flower (sunflower-like?) | [f50r.md](f50r.md) |
 | f41v | R4 | Herbal H | Most distinctive folio in Section H (z=13.75); extreme terminal_rate (48.4%); very high e_ratio (69.2%); tiny (68 tokens); feathery leaves + tuberous roots | [f41v.md](f41v.md) |
 | f40v | R2 | Herbal H | Highest paragraph density in Section H (19 para/106 tokens); iterative; borderline R2; ornate flower with thick striped calyx | [f40v.md](f40v.md) |
+| f77r | ? | Herbal B | Ch2+Ch3+Ch6 Mercuriorum candidate (coagulate+sublimate+rectify); **REVERSE BLIND 7/7 PERFECT** — dar=0, dal=3, qo=33.5% (highest undocumented), daiin=6. RECTO of f77v. | [f77r.md](f77r.md) |
 | f77v | R1 | Herbal B | Ch27 match (furnace specification, three fire regimes); strongest ratio in Phase 628 (2.805); qo-dominant (29%); all paragraph gallows are t; thermal gradient P3→P7 maps bath→ashes→flame | [f77v.md](f77v.md) |
 | f84r | R1 | Herbal B | Ch14 match (gold dissolution, balneum mariae + putrefaction); dual-layer 12-header architecture; lowest distance in dataset (0.723); 84% CV consensus | [f84r.md](f84r.md) |
 | f108r | R1 | S (Pharma) | Ch16 match (two-phase element separation); blind prediction test FAILED (1/8); ok+ot correction rate 22.4%; zero iteration | [f108r.md](f108r.md) |
