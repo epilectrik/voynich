@@ -4,6 +4,35 @@
 
 ---
 
+## Version 6.07 (2026-04-01) - Phase 634: Cross-Folio Crib Decode Synthesis
+
+### Summary
+
+Phase 634 synthesizes cross-folio findings from atom-level decodes of 8 folios beyond the Phase 629 confirmed pair. Five constraints register: (1) dar encodes new material introduction with 6/6 cross-folio partition, (2) chekar appears in post-thermal vessel-monitoring context across 7 folios, (3) f75-f84 maps to Liber Mercuriorum at section level (8/11), (4) Mercuriorum encodes parallel mineral + animal production chains, (5) f82r exhibits a recipe-predicted sealing micro-paragraph. The section-level correspondence is the first PL-part identification in the project.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CRIB_DECODE_SYNTHESIS/` — Phase 634 INDEX.md |
+| **ADDED** | C1925: dar encodes new material introduction (6/6 partition) |
+| **ADDED** | C1926: chekar post-thermal vessel-monitoring context (7 folios) |
+| **ADDED** | C1927: f75-f84 = Liber Mercuriorum section correspondence (8/11) |
+| **ADDED** | C1928: Mercuriorum parallel production chains (mineral + animal → Ch26) |
+| **ADDED** | C1929: f82r sealing micro-paragraph (5 tokens, 2x okain) |
+| **CREATED** | Folio notes: f82r.md, f81v.md, f112r.md, f84v.md |
+| **UPDATED** | Folio notes: f108r.md (atom decode, trajectory, dar hypothesis), f84r.md (product chain) |
+| **UPDATED** | INDEX.md — +5 constraints (1929 total), Phase 634 section |
+
+### Key Findings
+
+1. **dar = new material (C1925):** 6/6 folios partition cleanly — dar present iff recipe introduces new/distinct materials. Cohobation (recycling) and pure separation produce zero dar. First cross-folio semantic confirmation from crib decode work.
+2. **Section-level correspondence (C1927):** f75-f84 is the Mercuriorum section. 8/11 folios match Mercuriorum chapters; 3 Practica chapters interspersed are base preparations. Ordering doesn't follow book order — may follow product chain order.
+3. **Product chain (C1928):** f75r quintessence → f84r gold tincture explicitly confirmed by cipher key ("vegetable G" = quintessence). Mineral and animal chains converge at Ch26 medical administration.
+4. **f82r sealing paragraph (C1929):** 5-token micro-paragraph with 2x okain at material→maceration boundary. Recipe says "close cucurbit with glass cover and wax." The match failed automated 8D criteria (ratio 0.791) but atom-level evidence is stronger than several confident matches.
+
+---
+
 ## Version 6.06 (2026-04-01) - Phase 633: Folio Design Freedom Decomposition
 
 ### Summary

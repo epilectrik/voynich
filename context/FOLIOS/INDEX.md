@@ -23,6 +23,11 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f77v | R1 | Herbal B | Ch27 match (furnace specification, three fire regimes); strongest ratio in Phase 628 (2.805); qo-dominant (29%); all paragraph gallows are t; thermal gradient P3→P7 maps bath→ashes→flame | [f77v.md](f77v.md) |
 | f84r | R1 | Herbal B | Ch14 match (gold dissolution, balneum mariae + putrefaction); dual-layer 12-header architecture; lowest distance in dataset (0.723); 84% CV consensus | [f84r.md](f84r.md) |
 | f108r | R1 | S (Pharma) | Ch16 match (two-phase element separation); blind prediction test FAILED (1/8); ok+ot correction rate 22.4%; zero iteration | [f108r.md](f108r.md) |
+| f112r | R1 | S (Pharma) | Ch11 match (red mercury tincture); ok escalation 5%→27% matches recipe monitoring shift; zero dar (cohobation only); 10 paragraphs / 10 recipe steps | [f112r.md](f112r.md) |
+| f84v | R1 | Herbal B | Ch24 match **REJECTED** — single-sentence recipe vs 347-token folio; statistical false positive | [f84v.md](f84v.md) |
+| f81v | R1 | Herbal B | Ch18 Mercuriorum match (potable gold); dar+dal on L1 (gold+water); daiin x9 all in P1 (cohobation); weak stats but operationally coherent | [f81v.md](f81v.md) |
+| f82r | R1 | Herbal B | Ch22 Mercuriorum match (lunaria maceration); dar=1 for lunaria; **5-token sealing micro-para (P3)**; 12 consecutive qo lines = 3-day maceration; cleanest non-confirmed match | [f82r.md](f82r.md) |
+| f75v | — | — | Codicillus mercury preparation candidate | [f75v.md](f75v.md) |
 
 ---
 

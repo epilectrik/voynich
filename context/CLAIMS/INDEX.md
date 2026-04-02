@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1924 validated constraints | **Version:** 6.06 | **Date:** 2026-04-01
+**Total:** 1929 validated constraints | **Version:** 6.07 | **Date:** 2026-04-01
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,25 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 634: Cross-Folio Crib Decode Synthesis — SECTION_CORRESPONDENCE_ESTABLISHED (C1925-C1929)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1925 | dar encodes new material introduction: dar present on all 4 folios matched to recipes introducing new/distinct materials (f75r=10, f84r=13, f76r=7, f82r=1), absent on all 2 folios matched to cohobation/separation-only recipes (f112r=0, f108r=0). 6/6 partition. dal is the passive counterpart (output/transfer). f75r double-dar maps to Ch19's two-ingredient addition (honey+wax) | 2 | B, cross-folio, PL, dar, dal, C1894 | partition=6of6. f75r=10. f84r=13. f76r=7. f82r=1. f112r=0. f108r=0. |
+| 1926 | chekar (ch+ek+ar) appears in post-thermal vessel-monitoring context across 7/83 B folios: on chekar lines qo depleted 0.48x, ok enriched 1.60x, daiin enriched 3.7x, okal enriched 3.8x. 3/3 confirmed balneum folios have chekar. 4 predicted folios (f33r, f34r, f94r, f95r1) show chekar in balneum-compatible local context but NOT balneum-dominated folio profiles (Section H folios with balneum as one step). f76r absence = correct negative (silver-plate test, not balneum) | 2 | B, cross-folio, chekar, ek-MIDDLE, C929 | folios=7of83. qo_depleted=0.48x. ok_enriched=1.60x. daiin_enriched=3.7x. okal_enriched=3.8x. balneum_confirmed=3of3. predicted_local=4of4. |
+| 1927 | f75-f84 maps to Liber Mercuriorum at section level: 8/11 folios match Mercuriorum chapters (3 confirmed, 3 supported, 2 not confident), 3 match Practica (base preparations). Folio-chapter ordering does NOT follow book order (r=-0.179) — manuscript may follow procedural/product-chain order | 2 | B, section, PL, Mercuriorum, C1882 | merc=8of11. prac=3of11. order_r=-0.179. confirmed=3. supported=3. |
+| 1928 | Mercuriorum Ch18-Ch29 encodes parallel mineral + animal production chains: mineral chain (Ch15-19, mercury→gold→quintessence) produces active medicine; animal chain (Ch20-25, systematic capon disassembly into 5 waters) produces carrier vehicles; both converge at Ch26 (humoral medical administration). f75r quintessence is explicit input to f84r gold tincture (Ch14 requires "vegetable G" = quintessence) | 3 | B, PL, Mercuriorum, product chain, C1882, C1927 | mineral=Ch15-19. animal=Ch20-25. convergence=Ch26. f75r_to_f84r=confirmed. |
+| 1929 | f82r exhibits recipe-predicted sealing micro-paragraph: P3 (5 tokens, L18) at material→maceration boundary contains 2x okain (vessel-intake). Ch22 says "close the cucurbit with glass cover and wax." Supporting: dar=1 (single new material=lunaria), P4 has 12 consecutive qo lines (3-day sustained heat), gentle=22.9%, sh=11.3% elevated. Match NOT confident by 8D criteria (ratio=0.791, CV=48.2%) but atom-level evidence exceeds several confident matches | 2 | B, f82r, PL, Ch22, C1882, C1925 | P3_tokens=5. okain=2. dar=1. P4_qo_lines=12. gentle=22.9%. ratio=0.791. cv=48.2%. |
+
+**Phase 634 findings (Cross-Folio Crib Decode Synthesis, SECTION_CORRESPONDENCE_ESTABLISHED):**
+- dar (da+r) consistently encodes new material introduction across 6 independently-matched folios with zero exceptions (C1925). Recipes with new material additions (honey, wax, gold, lunaria) produce dar tokens; recipes with only cohobation or pure separation produce zero dar. The dar/dal distinction (active introduction vs passive transfer) is the first cross-folio semantic confirmation from the crib decode work.
+- chekar (ch+ek+ar) appears in structurally identical post-thermal, vessel-monitoring contexts across all 7 folios where it occurs (C1926). The local PREFIX environment (depleted qo, enriched ok/daiin/okal) is consistent regardless of section membership or folio-level profile. chekar marks a quality check at thermal endpoints, not specifically balneum mariae — the balneum association comes from balneum recipes requiring more quality checks.
+- The f75-f84 manuscript region constitutes a section-level correspondence with the Liber Mercuriorum (C1927). 8/11 folios match Mercuriorum chapters, with 3 Practica chapters interspersed (base preparations used by the Mercuriorum procedures). This is the first section-level identification in the project.
+- The Mercuriorum product chain (C1928) reveals two parallel tracks — mineral (mercury→gold→quintessence) and animal (capon→5 waters) — converging at the medical administration chapter (Ch26). The f75r→f84r product link (quintessence as input to gold tincture) is explicitly confirmed by the cipher key in Ch14.
+- f82r's 5-token sealing micro-paragraph (C1929) demonstrates that recipe-specific structural features are recoverable at the paragraph level, even on folios that fail automated matching. The paragraph's position (between material introduction and sustained maceration), content (2x vessel-intake), and surrounding context (dar on L11, 12 consecutive qo lines in P4) all align with Ch22's cucurbit-sealing step.
 
 ---
 

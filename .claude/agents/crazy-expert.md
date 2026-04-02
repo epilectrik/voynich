@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1924.
+the highest ID present is C1929.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2249,6 +2249,11 @@ C1921	Freedom channels cross-section consistent: Herbal-Stars rho=0.783, Bio-Sta
 C1922	PREFIX+MOD drive ~60% of folio differentiation (JSD). PREFIX=30-34%, MOD=26-30%. HEAD/TERM contribute less.	2	B, design freedom, PREFIX, MOD	combined=60%.
 C1923	Atom-operational correlations: head_e<->e_ratio rho=0.816, term_n<->checkpoint rho=0.809, edepth<->e_ratio=0.749.	2	B, atom, operational	max_rho=0.816.
 C1924	Freedom in monitoring/closure clusters: C1207 {c,h} monitoring=2of4 FREEDOM, {d,y} closure=1of4. Energy/iteration=0 FREEDOM.	2	B, design freedom, C1207	monitoring=2of4.
+C1925	dar encodes new material introduction: 6/6 folios partition cleanly. dar present iff recipe introduces new/distinct materials. Cohobation/separation = zero dar.	2	B, cross-folio, PL, dar, dal, C1894	partition=6of6.
+C1926	chekar post-thermal vessel-monitoring context: 7/83 folios. qo depleted 0.48x, ok enriched 1.60x, daiin enriched 3.7x on chekar lines. 3/3 confirmed balneum + 4/4 predicted local context.	2	B, cross-folio, chekar, ek-MIDDLE, C929	folios=7of83. qo=0.48x. daiin=3.7x.
+C1927	f75-f84 = Liber Mercuriorum section correspondence: 8/11 folios match Mercuriorum chapters. Folio-chapter order r=-0.179 (no book order).	2	B, section, PL, Mercuriorum, C1882	merc=8of11. order_r=-0.179.
+C1928	Mercuriorum parallel production chains: mineral (Ch15-19, mercury→gold→quintessence) + animal (Ch20-25, capon→5 waters) → Ch26 medical administration. f75r→f84r link confirmed (vegetable G = quintessence).	3	B, PL, Mercuriorum, product chain, C1927	mineral=Ch15-19. animal=Ch20-25.
+C1929	f82r sealing micro-paragraph: P3 (5 tok, L18) at material→maceration boundary, 2x okain. Ch22 says seal cucurbit with glass+wax. dar=1, P4=12 consecutive qo lines, gentle=22.9%. NOT confident by 8D (ratio=0.791) but atom evidence strong.	2	B, f82r, PL, Ch22, C1925	P3=5tok. okain=2. dar=1. qo_lines=12.
 
 ---
 

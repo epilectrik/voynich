@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1924 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1929 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1924.
+the highest ID present is C1929.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1924 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1929 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1924 validated constraints are present as canonical one-line claims with tier
+1929 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-01 12:31
-**Version:** FROZEN STATE (1924 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-01 20:44
+**Version:** FROZEN STATE (1929 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2163,6 +2163,11 @@ C1921	Freedom channels consistent across sections: Bio-Herbal, Bio-Stars, Herbal
 C1922	PREFIX and MOD layers drive folio differentiation: ~60% of pairwise JSD between folios comes from PREFIX (~30-34%) and MOD (~26-30%) distributions. HEAD and TERM contribute less. Within-section, these layers carry the operational tuning that makes each program unique	2	B, design freedom, PREFIX, MOD, JSD
 C1923	Atom features predict operational profiles strongly: head_e↔e_ratio rho=+0.816, term_n↔checkpoint_rate rho=+0.809, e_depth↔e_ratio rho=+0.749. Atom-level composition directly maps to known operational metrics	2	B, atom, operational, e_ratio, checkpoint
 C1924	Freedom concentrates in monitoring/closure atom clusters: of C1207's 5 clusters, {c,h} monitoring contains 2 of 4 FREEDOM features, {d,y} closure contains 1. Energy ({k,l}) and iteration ({a,i,n,r}) clusters have zero FREEDOM features — they are section/REGIME-constrained	2	B, design freedom, C1207, monitoring, closure
+C1925	dar encodes new material introduction: dar present on all 4 folios matched to recipes introducing new/distinct materials (f75r=10, f84r=13, f76r=7, f82r=1), absent on all 2 folios matched to cohobation/separation-only recipes (f112r=0, f108r=0). 6/6 partition. dal is the passive counterpart (output/transfer). f75r double-dar maps to Ch19's two-ingredient addition (honey+wax)	2	B, cross-folio, PL, dar, dal, C1894
+C1926	chekar (ch+ek+ar) appears in post-thermal vessel-monitoring context across 7/83 B folios: on chekar lines qo depleted 0.48x, ok enriched 1.60x, daiin enriched 3.7x, okal enriched 3.8x. 3/3 confirmed balneum folios have chekar. 4 predicted folios (f33r, f34r, f94r, f95r1) show chekar in balneum-compatible local context but NOT balneum-dominated folio profiles (Section H folios with balneum as one step). f76r absence = correct negative (silver-plate test, not balneum)	2	B, cross-folio, chekar, ek-MIDDLE, C929
+C1927	f75-f84 maps to Liber Mercuriorum at section level: 8/11 folios match Mercuriorum chapters (3 confirmed, 3 supported, 2 not confident), 3 match Practica (base preparations). Folio-chapter ordering does NOT follow book order (r=-0.179) — manuscript may follow procedural/product-chain order	2	B, section, PL, Mercuriorum, C1882
+C1928	Mercuriorum Ch18-Ch29 encodes parallel mineral + animal production chains: mineral chain (Ch15-19, mercury→gold→quintessence) produces active medicine; animal chain (Ch20-25, systematic capon disassembly into 5 waters) produces carrier vehicles; both converge at Ch26 (humoral medical administration). f75r quintessence is explicit input to f84r gold tincture (Ch14 requires "vegetable G" = quintessence)	3	B, PL, Mercuriorum, product chain, C1882, C1927
+C1929	f82r exhibits recipe-predicted sealing micro-paragraph: P3 (5 tokens, L18) at material→maceration boundary contains 2x okain (vessel-intake). Ch22 says "close the cucurbit with glass cover and wax." Supporting: dar=1 (single new material=lunaria), P4 has 12 consecutive qo lines (3-day sustained heat), gentle=22.9%, sh=11.3% elevated. Match NOT confident by 8D criteria (ratio=0.791, CV=48.2%) but atom-level evidence exceeds several confident matches	2	B, f82r, PL, Ch22, C1882, C1925
 
 ---
 
