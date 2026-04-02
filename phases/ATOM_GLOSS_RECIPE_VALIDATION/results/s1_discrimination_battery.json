@@ -1,0 +1,287 @@
+{
+  "d": {
+    "winner": "do/execute",
+    "winner_score": 12,
+    "runner_up": "mark",
+    "runner_up_score": 8,
+    "margin": 4,
+    "all_scores": {
+      "mark": {
+        "total": 8,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 0,
+          "Terminal": 1,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 0,
+          "CoOccur": 2
+        }
+      },
+      "do/execute": {
+        "total": 12,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 2,
+          "CoOccur": 0
+        }
+      },
+      "product/yield": {
+        "total": 6,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 1,
+          "Terminal": 1,
+          "Tautology": 1,
+          "CrossSys": 0,
+          "Compounds": 1,
+          "CoOccur": 1
+        }
+      },
+      "complete": {
+        "total": 7,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 2,
+          "Terminal": 0,
+          "Tautology": 0,
+          "CrossSys": 2,
+          "Compounds": 1,
+          "CoOccur": 1
+        }
+      }
+    }
+  },
+  "o": {
+    "winner": "arrange",
+    "winner_score": 13,
+    "runner_up": "configure",
+    "runner_up_score": 13,
+    "margin": 0,
+    "all_scores": {
+      "arrange": {
+        "total": 13,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 2,
+          "CoOccur": 1
+        }
+      },
+      "work": {
+        "total": 5,
+        "axes": {
+          "Cat-Shift": 0,
+          "Scope": 2,
+          "Terminal": 1,
+          "Tautology": 1,
+          "CrossSys": 0,
+          "Compounds": 0,
+          "CoOccur": 1
+        }
+      },
+      "configure": {
+        "total": 13,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 2,
+          "CoOccur": 1
+        }
+      },
+      "organize": {
+        "total": 11,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 1,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 1,
+          "CoOccur": 1
+        }
+      }
+    }
+  },
+  "c": {
+    "winner": "adjust",
+    "winner_score": 12,
+    "runner_up": "correct",
+    "runner_up_score": 10,
+    "margin": 2,
+    "all_scores": {
+      "adjust": {
+        "total": 12,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 0,
+          "Compounds": 2,
+          "CoOccur": 2
+        }
+      },
+      "classify/sort": {
+        "total": 9,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 1,
+          "Terminal": 1,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 0,
+          "CoOccur": 1
+        }
+      },
+      "check": {
+        "total": 2,
+        "axes": {
+          "Cat-Shift": 0,
+          "Scope": 1,
+          "Terminal": 0,
+          "Tautology": 0,
+          "CrossSys": 0,
+          "Compounds": 0,
+          "CoOccur": 1
+        }
+      },
+      "correct": {
+        "total": 10,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 0,
+          "Compounds": 2,
+          "CoOccur": 1
+        }
+      }
+    }
+  },
+  "p": {
+    "winner": "pause",
+    "winner_score": 13,
+    "runner_up": "specify/note",
+    "runner_up_score": 11,
+    "margin": 2,
+    "all_scores": {
+      "pause": {
+        "total": 13,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 1,
+          "Compounds": 2,
+          "CoOccur": 2
+        }
+      },
+      "specify/note": {
+        "total": 11,
+        "axes": {
+          "Cat-Shift": 2,
+          "Scope": 2,
+          "Terminal": 1,
+          "Tautology": 2,
+          "CrossSys": 1,
+          "Compounds": 1,
+          "CoOccur": 2
+        }
+      },
+      "prepare": {
+        "total": 8,
+        "axes": {
+          "Cat-Shift": 0,
+          "Scope": 1,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 1,
+          "Compounds": 2,
+          "CoOccur": 0
+        }
+      },
+      "stage": {
+        "total": 7,
+        "axes": {
+          "Cat-Shift": 0,
+          "Scope": 1,
+          "Terminal": 2,
+          "Tautology": 1,
+          "CrossSys": 1,
+          "Compounds": 2,
+          "CoOccur": 0
+        }
+      }
+    }
+  },
+  "s": {
+    "winner": "sequence",
+    "winner_score": 12,
+    "runner_up": "order",
+    "runner_up_score": 12,
+    "margin": 0,
+    "all_scores": {
+      "sequence": {
+        "total": 12,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 1,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 2,
+          "CoOccur": 2
+        }
+      },
+      "order": {
+        "total": 12,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 1,
+          "Terminal": 2,
+          "Tautology": 2,
+          "CrossSys": 2,
+          "Compounds": 2,
+          "CoOccur": 2
+        }
+      },
+      "separate": {
+        "total": 7,
+        "axes": {
+          "Cat-Shift": 0,
+          "Scope": 2,
+          "Terminal": 1,
+          "Tautology": 2,
+          "CrossSys": 0,
+          "Compounds": 2,
+          "CoOccur": 0
+        }
+      },
+      "step": {
+        "total": 9,
+        "axes": {
+          "Cat-Shift": 1,
+          "Scope": 2,
+          "Terminal": 2,
+          "Tautology": 1,
+          "CrossSys": 0,
+          "Compounds": 2,
+          "CoOccur": 1
+        }
+      }
+    }
+  }
+}
