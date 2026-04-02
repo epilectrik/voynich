@@ -94,8 +94,8 @@ SUFFIXES = sorted(set(SUFFIXES), key=len, reverse=True)
 # PLAUSIBLE (5): f, s, g, x, r — thin evidence, nothing contradicts
 ATOM_GLOSSES = {
     'k': 'heat',      'e': 'cool',      'h': 'watch',     'y': 'end',        # LOCKED
-    'i': 'iterate',   'n': 'bind',      'a': 'into',      'm': 'final',      # LOCKED
-    'd': 'mark',      't': 'transfer',  'l': 'state',     'o': 'arrange',    # SOLID
+    'i': 'iterate',   'n': 'bind',      'a': 'yield',     'm': 'final',      # LOCKED (a reconciled to C1195 'yield'; directional — a+r=outward, a+n=inward)
+    'd': 'do',        't': 'transfer',  'l': 'state',     'o': 'arrange',    # SOLID (d revised from 'mark' to 'do/execute' by 7-axis battery 2026-04-01)
     'c': 'adjust',    'p': 'pause',                                           # SOLID
     'f': 'flag',      's': 'sequence',  'r': 'respond',                      # PLAUSIBLE
     'g': '?',         'x': 'diagram',  'q': '?',                             # PLAUSIBLE/UNTIERED
@@ -126,6 +126,35 @@ SEMI_TRANSPARENT_TERMS = frozenset('lr')
 
 # ============================================================
 # TOKEN DATA CLASS
+# ============================================================
+#
+# AZC PLACEMENT CODES — Physical Ring Order
+# ------------------------------------------
+# Placement codes (C, P, R, S, W) are transcriber-assigned based on
+# physical position type on the manuscript page:
+#   C = "circle" text (continuous ring)
+#   P = "paragraph" text (horizontal lines)
+#   R = "ring" text (continuous ring; R1-R4 subscripts on zodiac folios)
+#   S = "star/sector" text (nymph-divided ring; S0-S3 subscripts)
+#   W = center characters (single glyphs at diagram center)
+#
+# PHYSICAL RING ORDER (confirmed on f69r, A/C family):
+#   C = OUTER ring (43 tokens, 16 groups of 2-3)
+#   R = radial spokes (22 spokes between S and C)
+#   S = INNER ring (11 tokens, continuous)
+#   W = CENTER characters (6 single glyphs)
+#   P = paragraph text ABOVE the diagram
+#
+# CAUTION — Zodiac folio R-subscript numbering is INCONSISTENT:
+#   f70v2: R3=outermost, R1=innermost (higher number = outer)
+#   f72r1, f71r, f73r etc: R1=outermost, R3=innermost (lower number = outer)
+#   Transcribers numbered rings from wherever they started reading.
+#   DO NOT assume R1 is always the same physical ring across folios.
+#
+# The constraint system (C317, C435, C443 etc.) defines C/R/S by
+# functional properties (escape rates, rotation tolerance), not
+# physical position. Physical mapping requires per-folio verification.
+# See: data/folio_annotations/azc/ for per-folio layout maps.
 # ============================================================
 @dataclass
 class Token:
