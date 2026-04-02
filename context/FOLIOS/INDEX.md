@@ -43,6 +43,7 @@ Per-folio findings from individual analysis. Each file captures structural prope
 | f112v | R1 | S (Pharma) | Ch1 Mercuriorum (lunaria→quicksilver); balneum 25.1%, heavy iteration (daiin+aiin+aiiin), thermal arc (gentle→strong→gentle); zero dar is one miss | [f112v.md](f112v.md) |
 | f116r | R1 | S (Pharma) | Ch4 Mercuriorum (fixation, fusibility test); ch=14.9% (testing-heavy), dar=5, dain=11, low balneum correct for sublimation | [f116r.md](f116r.md) |
 | f43v | ? | H (Herbal) | Ch29 Practica candidate (troubleshooting/correction); **REVERSE BLIND: 4/6 + 2P** — ch=22.9%, ok+ot=15%, dar=2 for corrective additions | [f43v.md](f43v.md) |
+| f85r1 | ? | B/C | Multi-chapter Practica candidate (Ch12/20/22P); dar=5 dal=4 daiin=5 — scores top 2-3 for three dissolution/preparation recipes. Likely consolidates related procedures. | [f85r1.md](f85r1.md) |
 | f103v | R1/R3 | S (Pharma) | Ch27 Practica (Mercury imbibition); **REVERSE BLIND: 6/7 predictions correct** — recipe-derived predictions identified f103v from 49 unmatched folios. Verso of f103r (Ch16M). | [f103v.md](f103v.md) |
 | f106r | ? | S (Pharma) | **UNMATCHED** — blind structural characterization: two-phase thermal (moderate→aggressive), dar=2, P14 sh=11 monitoring endpoint, predicted distillation/dissolution | [f106r.md](f106r.md) |
 | f115r | R3 | S (Pharma) | Ch28 Practica (red elixir fixation); **BLIND TEST: 6/8 predictions correct** from atom data alone (fixation type, non-balneum, multiple materials, testing-dominant) | [f115r.md](f115r.md) |
