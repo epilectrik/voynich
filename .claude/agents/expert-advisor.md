@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1942 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1946 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1942.
+the highest ID present is C1946.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1942 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1946 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1942 validated constraints are present as canonical one-line claims with tier
+1946 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-02 22:12
-**Version:** FROZEN STATE (1942 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-03 13:35
+**Version:** FROZEN STATE (1946 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2179,8 +2179,12 @@ C1937	Multi-chapter folios combine related short procedures: f80r = Ch21-25M (5 
 C1938	Blind atom reading correctly predicts recipe type: f115r (fully blind) predicted fixation from atoms, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8. Prediction accuracy tracks recipe detail level	2	B, atom, blind test, C1394, C1897
 C1939	fch (flag.adjust.watch) encodes mercury/mercury-water: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens across 19 A folios (79% section overlap). Atom reading "flagged cautious monitoring" matches mercury's volatile/toxic handling profile	3	B, A, dark pipeline, fch, C1901
 C1940	cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf). Atom reading "sequential staged adjustment" matches gold's multi-step processing	3	B, dark pipeline, cs, C1901
-C1941	Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Atom compositions produce coherent handling profiles	3	B, dark pipeline, C1901, C1906
+C1941	Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Structural distinguishability test: 2 STRONG (top_pfx_share eta²>0.25, n_suffix_types eta²>0.25) + 2 MODERATE (par_init_rate, line_init_rate) dimensions separate classes beyond frequency	2	B, dark pipeline, C1901, C1906
 C1942	f58r/f58v (Section T, Currier A) are master catalog folios: contain A-system records for 6/9 tested dark pipeline identifiers (fch, lch, lk, cth, eet, tsh). No other A folio shows this catalog concentration	3	A, T, dark pipeline, C1499, C1903
+C1943	Ch40M (silver transmutation) matches f106v: 8D distance 0.933 (confident, ratio 1.164). 449 tokens, 20 Latin verbs. fch×2 bracket main operations. e_depth clusters match two bath phases. Token/verb ratio 22.5	3	B, S, PL, Ch40M, f106v, fch
+C1944	Ch47M (coded elemental separation) matches f113r: 8D distance 1.245 (ratio 1.992, highest confidence). 518 tokens, 23 verbs. fch×4 tracking 4 element extractions. cs at L43 endpoint matches gold projection discussion. Heavy lk (furnace)	3	B, S, PL, Ch47M, f113r, fch, cs
+C1945	Ch50M (error correction) matches f111r: 8D weak (3.755) but atom-level diagnostic. 614 tokens. Near-zero dar (2+2 on 614 tokens, lowest for size). Inverted e_depth (depth1>depth0, unique in corpus). P2=359 tokens (58%). 5×eed (cooling after overheating). 8D fails on structurally atypical recipes	3	B, S, PL, Ch50M, f111r, fch, eed, cth
+C1946	Higher Mercuriorum chapters (Ch36-Ch52) contain 6+ procedural chapters previously classified as "theoretical." Latin verb counting reveals Ch40M (~20 verbs), Ch42M (~18), Ch43M (~10), Ch47M (~23), Ch48M (~20), Ch50M (~20), Ch51M (~20), Ch52M (~42). Matching extends from 42 to 45 chapters (3 confirmed + 1 tentative)	2	B, PL, Mercuriorum, C1882, C1932
 
 ---
 
@@ -2188,7 +2192,7 @@ C1942	f58r/f58v (Section T, Currier A) are master catalog folios: contain A-syst
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-04-02
+# Generated: 2026-04-03
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

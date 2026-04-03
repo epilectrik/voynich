@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1942 validated constraints | **Version:** 6.10 | **Date:** 2026-04-02
+**Total:** 1946 validated constraints | **Version:** 6.12 | **Date:** 2026-04-03
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6114,21 +6114,40 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 
 ---
 
+### Phase 638: fch Hard-Filter Matching — EXTENDED_MATCHING_CONFIRMED (C1943-C1946)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1943 | Ch40M (silver transmutation) matches f106v: 8D distance 0.933 (confident, ratio 1.164). 449 tokens, 20 Latin verbs. fch×2 bracket main operations. e_depth clusters match two bath phases. Token/verb ratio 22.5 | 3 | B, S, PL, Ch40M, f106v, fch | 8D_dist=0.933. ratio=1.164. tokens=449. verbs=20. fch=2. |
+| 1944 | Ch47M (coded elemental separation) matches f113r: 8D distance 1.245 (ratio 1.992, highest confidence). 518 tokens, 23 verbs. fch×4 tracking 4 element extractions. cs at L43 endpoint matches gold projection discussion. Heavy lk (furnace) | 3 | B, S, PL, Ch47M, f113r, fch, cs | 8D_dist=1.245. ratio=1.992. tokens=518. verbs=23. fch=4. cs_endpoint=yes. |
+| 1945 | Ch50M (error correction) matches f111r: 8D weak (3.755) but atom-level diagnostic. 614 tokens. Near-zero dar (2+2 on 614 tokens, lowest for size). Inverted e_depth (depth1>depth0, unique in corpus). P2=359 tokens (58%). 5×eed (cooling after overheating). 8D fails on structurally atypical recipes | 3 | B, S, PL, Ch50M, f111r, fch, eed, cth | 8D_dist=3.755. tokens=614. dar=2. dal=2. P2=359. eed=5. e_depth_inverted=yes. |
+| 1946 | Higher Mercuriorum chapters (Ch36-Ch52) contain 6+ procedural chapters previously classified as "theoretical." Latin verb counting reveals Ch40M (~20 verbs), Ch42M (~18), Ch43M (~10), Ch47M (~23), Ch48M (~20), Ch50M (~20), Ch51M (~20), Ch52M (~42). Matching extends from 42 to 45 chapters (3 confirmed + 1 tentative) | 2 | B, PL, Mercuriorum, C1882, C1932 | prev_matched=42. new_matched=45. reclassified=6. new_procedural=53. |
+
+**Phase 638 findings (fch Hard-Filter Matching, EXTENDED_MATCHING_CONFIRMED):**
+- Using fch (mercury marker, C1939) as a hard filter, 7 unmatched fch-bearing folios were scanned against 8 higher Mercuriorum chapters. 3 confirmed + 1 tentative new matches found.
+- Ch40M→f106v (C1943): Silver transmutation at d=0.933, beating all Phase 628 confirmed distances. Two fch positions bracket the recipe's two-phase structure.
+- Ch47M→f113r (C1944): Coded elemental separation at ratio 1.992 (highest confidence). Four fch markers track four element extractions. cs at the endpoint matches gold projection discussion.
+- Ch50M→f111r (C1945): Error correction. 8D distance 3.755 but atom-level profile is highly diagnostic — near-zero dar (no material addition), inverted e_depth (unique), massive P2 (359 tokens). Demonstrates that 8D features miss structurally atypical recipes.
+- Higher Mercuriorum reclassification (C1946): 6 chapters reclassified from "theoretical" to "procedural" based on Latin verb counting. Extends total procedural chapter count from 47 to 53.
+- 3 fch folios (f40v, f50r, f86v3) remain unmatched — Section H/C folios likely encoding mercury-involving content from different source traditions.
+
+---
+
 ### Phase 637: Dark Pipeline Material Identification — MATERIAL_IDENTIFICATION_SUPPORTED (C1939-C1942)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
 | 1939 | fch (flag.adjust.watch) encodes mercury/mercury-water: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens across 19 A folios (79% section overlap). Atom reading "flagged cautious monitoring" matches mercury's volatile/toxic handling profile | 3 | B, A, dark pipeline, fch, C1901 | enrichment=∞. corpus=19/82. A_tokens=21. predictions=13. |
 | 1940 | cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf). Atom reading "sequential staged adjustment" matches gold's multi-step processing | 3 | B, dark pipeline, cs, C1901 | enrichment=17.5x. corpus=9/82. f84r=3x. |
-| 1941 | Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Atom compositions produce coherent handling profiles | 3 | B, dark pipeline, C1901, C1906 | tokens=466. unique=152. equipment=3. process=11. material=24+. |
+| 1941 | Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Structural distinguishability test: 2 STRONG (top_pfx_share eta²>0.25, n_suffix_types eta²>0.25) + 2 MODERATE (par_init_rate, line_init_rate) dimensions separate classes beyond frequency | 2 | B, dark pipeline, C1901, C1906 | tokens=466. unique=152. equipment=3. process=11. material=24+. strong_dims=2. moderate_dims=2. |
 | 1942 | f58r/f58v (Section T, Currier A) are master catalog folios: contain A-system records for 6/9 tested dark pipeline identifiers (fch, lch, lk, cth, eet, tsh). No other A folio shows this catalog concentration | 3 | A, T, dark pipeline, C1499, C1903 | dark_represented=6/9. f58r_tokens=366. |
 
 **Phase 637 findings (Dark Pipeline Material Identification, MATERIAL_IDENTIFICATION_SUPPORTED):**
 - fch=mercury is the first specific material identification in the Voynich manuscript (C1939). The dark MIDDLE fch appears on every mercury-recipe folio and no non-mercury recipe folio, with A-system cross-reference confirming catalog presence. 13 unmatched folios containing fch are testable predictions.
 - cs=gold at 17.5x enrichment (C1940) with same-leaf concentration (f84r/f84v) provides a second material identification. Only 9/82 folios corpus-wide.
-- The three-class structure (C1941) shows the dark pipeline is not monolithic: equipment identifiers are universal, process identifiers track techniques, material identifiers track substances. All use atom compositions to describe handling profiles rather than naming substances directly.
+- The three-class structure (C1941, upgraded to Tier 2) shows the dark pipeline is not monolithic: equipment identifiers are universal, process identifiers track techniques, material identifiers track substances. Structural distinguishability test confirms classes separate on PREFIX diversity (eta²>0.25), suffix type count (eta²>0.25), paragraph-initial rate, and line-initial rate — beyond what frequency alone explains. Equipment is positionally flexible with diverse affixes; Process is PREFIX-locked and mid-line; Material falls between.
 - The f58r/f58v master catalog (C1942) connects the B-system dark pipeline to the A-system vocabulary catalog, with one A folio pair containing records for the majority of tested material/equipment identifiers.
-- All findings capped at Tier 3 due to dependence on Tier 3 recipe-folio assignments.
+- C1939, C1940, C1942 remain Tier 3 (depend on Tier 3 recipe-folio assignments). C1941 upgraded to Tier 2: structural distinguishability test shows class separation on measurable dimensions independent of recipe interpretation.
 
 ---
 

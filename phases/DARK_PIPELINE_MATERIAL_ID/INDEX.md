@@ -32,6 +32,7 @@ Phase 631 (C1901-C1907) established that dark pipeline MIDDLEs are PREFIX-locked
 | `_dark_cross_folio.py` | RECIPE_FOLIO_CORRESPONDENCE/scripts/ | Cross-folio dark MIDDLE co-occurrence analysis |
 | `_test_dark_candidates.py` | RECIPE_FOLIO_CORRESPONDENCE/scripts/ | Corpus-wide validation of 7 candidates |
 | `_dark_currier_a_crossref.py` | RECIPE_FOLIO_CORRESPONDENCE/scripts/ | A-system RI derivative cross-reference |
+| `_three_class_taxonomy_test.py` | RECIPE_FOLIO_CORRESPONDENCE/scripts/ | Structural distinguishability test: 7 dimensions, eta² class separation |
 
 ---
 
@@ -57,7 +58,7 @@ The atom composition "adjust.sequence" = sequential staged treatment, describing
 - Metrics: enrichment=17.5x. corpus_folios=9/82. f84r=3x. f84v=2x(same_leaf). A_tokens=3.
 - Tier 3 because: depends on Tier 3 recipe-folio assignments.
 
-### C1941: Dark pipeline MIDDLEs divide into three functional classes (Tier 3)
+### C1941: Dark pipeline MIDDLEs divide into three functional classes (Tier 2)
 
 Manual reading of 466 dark tokens across 19 recipe-matched folios reveals three functional classes:
 
@@ -69,9 +70,16 @@ Manual reading of 466 dark tokens across 19 recipe-matched folios reveals three 
 
 All three classes use the same 18-atom compositional system. The atoms describe WHAT the identified thing requires operationally, not what it IS chemically.
 
+**Structural distinguishability test** (`_three_class_taxonomy_test.py`): 7 structural dimensions measured per dark MIDDLE, controlling for frequency by averaging per-MIDDLE (not per-token). Results:
+- 2 STRONG (eta² > 0.25): top_pfx_share (Equipment 0.53, Process 0.72), n_suffix_types (Equipment 10.7, Process 5.8)
+- 2 MODERATE (eta² 0.10-0.25): par_init_rate (Equipment 8.8%, Process 2.1%), line_init_rate (Equipment 29.2%, Process 11.5%)
+- 4 WEAK (eta² < 0.10): pfx_concentration, section_cv, mean_line_pos, dark_cooccurrence
+
+Equipment is positionally flexible with diverse affixation; Process is PREFIX-locked and positionally constrained; Material falls between.
+
 - Scope: B, dark pipeline, C1901, C1906, C171
-- Metrics: tokens_analyzed=466. unique_middles=152. equipment=3. process=11. material=8+16_exclusive. folios=19.
-- Tier 3 because: class assignments depend on recipe-derived interpretations.
+- Metrics: tokens_analyzed=466. unique_middles=152. equipment=3. process=11. material=8+16_exclusive. folios=19. strong_dims=2. moderate_dims=2.
+- Tier 2 because: structural separation measured on 7 dimensions independent of recipe interpretation. Class membership still informed by recipe reading, but the classes are structurally distinguishable on purely internal evidence.
 
 ### C1942: f58r/f58v are A-system master catalog folios (Tier 3)
 

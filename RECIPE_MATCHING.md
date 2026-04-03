@@ -187,7 +187,32 @@ The instruction-level analysis revealed that different Latin verb types activate
 
 ---
 
-## 6. Negative Controls
+## 6. Stage 5: fch Hard-Filter Extension (Phase 638)
+
+### Method
+
+The dark pipeline marker fch (mercury, C1939) was used as a hard filter: 7 unmatched folios containing fch were scanned against 8 higher Mercuriorum chapters (Ch36-Ch52) that had been previously classified as "theoretical." Full Latin reading revealed these chapters contain genuine procedural content (6+ chapters with 10-42 operational verbs each).
+
+### Results
+
+| Recipe | Folio | 8D dist | Atom verdict | Key evidence |
+|--------|-------|---------|-------------|--------------|
+| Ch40M (silver transmutation) | **f106v** | 0.933 | **SUPPORTED** | fch×2 bracket two-phase structure; e_depth clusters match balneum |
+| Ch47M (coded elemental separation) | **f113r** | 1.245 | **SUPPORTED** | fch×4 track 4 element extractions; cs at endpoint for gold |
+| Ch50M (error correction) | **f111r** | 3.755 | **SUPPORTED** | Near-zero dar (no new materials); inverted e_depth; P2=359 tokens |
+| Ch48M (ferment preparation) | f113v | 2.455 | TENTATIVE | `ro` fermentation marker; fch late; dal > dar |
+
+Three folios (f40v, f50r, f86v3) had no valid Testamentum match — Section H/C folios likely encoding mercury use in herbal/pharmaceutical contexts outside the Testamentum.
+
+### 8D Limitation Discovery
+
+The 8D features (tuned on distillation) fail for structurally atypical recipes. Ch50M (error correction) scored d=3.755 but is highly diagnostic at atom level: its near-zero material addition rate (dar=2 on 614 tokens), inverted e_depth distribution (unique in corpus), and massive single paragraph (P2=359 tokens, 58% of folio) all map precisely to a troubleshooting recipe. The 8D system lacks a dar dimension, can't see paragraph structure, and doesn't distinguish corrective from productive heat operations.
+
+Source: Phase 638 (C1943-C1946). Script: `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/_fch_hard_filter_matching.py`.
+
+---
+
+## 7. Negative Controls
 
 | Source tested | Chapters/segments | Result |
 |--------------|------------------|--------|
@@ -201,9 +226,9 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 
 ---
 
-## 7. Summary of Coverage
+## 8. Summary of Coverage
 
-**Mercuriorum (25 unique chapters matched across 17 folios):**
+**Mercuriorum (28 unique chapters matched across 20 folios):**
 
 *Note: Ch22M appears both within the f80r multi-chapter encoding (Ch21-25M ash chain) and as an independent detailed treatment on f82r. It is counted once in the total.*
 
@@ -226,6 +251,9 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 | Ch27M | Furnace specification | f77v | Phase 628 |
 | Ch28M | Vessel specification | f82v | Phase 628 |
 | Ch44M | Quicksilver coagulation | f107r | Expanded matching |
+| Ch40M | Silver transmutation (dissolve, whiten, sublimate, project 1:50) | f106v | fch hard-filter (d=0.933, CONFIRMED) |
+| Ch47M | Coded elemental separation (ABC cipher, 4 elements) | f113r | fch hard-filter (ratio=1.992, CONFIRMED) |
+| Ch50M | Error correction / troubleshooting (color management) | f111r | fch hard-filter (atom diagnostic) |
 
 **Practica (17 unique chapters matched across 13 folios):**
 
@@ -254,13 +282,13 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 - 96 Theorica chapters (all philosophical)
 - 28/30 Furnis chapters (construction specifications)
 
-**42 unique procedural chapters → ~25 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 42 of 47 chapters classified as procedural (89%).**
+**45 unique procedural chapters → ~28 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 45 of 53 chapters classified as procedural (85%).**
 
-*Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The 5 excluded chapters are: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration — humoral dosing, not operational procedure), Ch29M (elemental theory). This classification was made based on chapter content, not matching results — Ch26M was excluded because the B grammar lacks conditional branching for patient-type selection, not because it failed to match.*
+*Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The original 47-chapter count was revised upward to 53 when Latin verb counting (Phase 638) revealed 6 additional procedural chapters in the higher Mercuriorum (Ch40M, Ch42M, Ch43M, Ch47M, Ch48M, Ch50M) that had been bulk-classified as "theoretical." The 8 unmatched procedural chapters include Ch42M (lead work), Ch43M (tin work), Ch48M (ferment preparation — tentative match to f113v), Ch51M (vinegar recipe), Ch52M (projection technique), and the original 4 exclusions: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration), Ch29M (elemental theory).*
 
 ---
 
-## 8. Limitations
+## 9. Limitations
 
 - **Individual chapter assignments are Tier 3** (interpretive, not proven). The matching FRAMEWORK is Tier 2 (validated by permutation test, cross-family replication, negative controls). But any specific "this folio = this chapter" assignment could be revised by new evidence. No individual false discovery rate has been computed; the permutation test validates aggregate significance, not per-match confidence.
 

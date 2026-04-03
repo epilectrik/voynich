@@ -4,11 +4,66 @@
 
 ---
 
+## Version 6.12 (2026-04-03) - Phase 638: fch Hard-Filter Matching
+
+### Summary
+
+Phase 638 uses the fch (mercury) dark pipeline marker as a hard filter to extend recipe matching. 7 unmatched fch-bearing folios scanned against 8 higher Mercuriorum chapters (Ch36-Ch52, previously classified as "theoretical"). Latin verb counting reveals 6+ procedural chapters. 3 confirmed + 1 tentative new matches: Ch40M→f106v (silver transmutation, d=0.933), Ch47M→f113r (coded elemental separation, ratio=1.992), Ch50M→f111r (error correction, atom-level diagnostic). Coverage extends from 42 to 45 chapters. 4 constraints (C1943-C1946).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/FCH_HARD_FILTER_MATCHING/` — Phase 638 INDEX.md |
+| **ADDED** | C1943: Ch40M→f106v silver transmutation (d=0.933, confident) |
+| **ADDED** | C1944: Ch47M→f113r coded elemental separation (ratio=1.992) |
+| **ADDED** | C1945: Ch50M→f111r error correction (atom-level diagnostic) |
+| **ADDED** | C1946: Higher Mercuriorum reclassification (47→53 procedural) |
+| **CREATED** | Folio notes: f106v, f113r, f111r, f113v, f86v3 |
+| **UPDATED** | Folio notes: f40v, f50r (fch hard-filter results added) |
+| **CREATED** | `_fch_hard_filter_matching.py` — 8D matching script |
+| **UPDATED** | INDEX.md — +4 constraints (1946 total), Phase 638 section |
+
+### Key Findings
+
+1. **Ch40M→f106v (C1943):** Distance 0.933 beats all Phase 628 confirmed matches. fch×2 bracket the recipe's two-phase structure. e_depth clusters match two bath phases.
+2. **Ch47M→f113r (C1944):** Ratio 1.992 is highest confidence in batch. Four fch markers track four element extractions. cs at endpoint matches gold projection.
+3. **Ch50M→f111r (C1945):** 8D fails (3.755) but atom-level is diagnostic: near-zero dar (no new materials), inverted e_depth (unique), massive P2 (359 tokens), 5×eed (cooling corrections).
+4. **Higher Mercuriorum (C1946):** 6 chapters reclassified from theoretical to procedural. Pre-computed features existed but were excluded from matching.
+
+---
+
+## Version 6.11 (2026-04-03) - C1941 Tier Upgrade: Three-Class Taxonomy Structural Validation
+
+### Summary
+
+Structural distinguishability test confirms the three-class dark pipeline taxonomy (C1941) separates equipment, process, and material MIDDLEs on measurable dimensions independent of recipe interpretation. 7 structural features tested per dark MIDDLE using eta-squared class separation. 2 STRONG dimensions (top PREFIX share, suffix type count) + 2 MODERATE (paragraph-initial rate, line-initial rate). C1941 upgraded from Tier 3 to Tier 2.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **UPGRADED** | C1941: Tier 3 → Tier 2 (structural distinguishability test) |
+| **ADDED** | `_three_class_taxonomy_test.py` — 7-dimension structural test |
+| **UPDATED** | INDEX.md C1941 entry, findings summary |
+| **UPDATED** | CONSTRAINT_TABLE.txt C1941 row |
+| **UPDATED** | Phase 637 INDEX.md — added test script, revised constraint text |
+| **UPDATED** | DARK_PIPELINE_DICTIONARY.md — Tier 2 annotation |
+
+### Key Findings
+
+1. **Equipment** (lch, lk, eed): Low PREFIX concentration (0.194), high suffix diversity (10.7 types), high line-initial (29.2%) and paragraph-initial (8.8%) rates. Positionally flexible — behaves like a noun modified by context.
+2. **Process** (cth, lsh, eet, ksh...): High PREFIX concentration (0.385), low suffix diversity (5.8), low positional rates. PREFIX-locked and mid-line — behaves like a fixed verb phrase.
+3. **Material** (fch, cs, eckh, rai): Between Equipment and Process on most dimensions.
+4. The separation is NOT a frequency artifact — Equipment and some Process MIDDLEs span similar folio counts but differ structurally.
+
+---
+
 ## Version 6.10 (2026-04-02) - Phase 637: Dark Pipeline Material Identification
 
 ### Summary
 
-Phase 637 decodes the dark pipeline identification layer through manual reading of 466 dark tokens across 19 recipe-matched folios. Two material identifiers validated corpus-wide: fch=mercury (∞ enrichment, 19/82 folios, A-system cross-reference) and cs=gold (17.5x, 9/82 folios). Dark MIDDLEs divide into three functional classes (equipment/process/material). f58r/f58v identified as A-system master catalog folios. All findings Tier 3 (dependent on Tier 3 recipe assignments). 4 constraints (C1939-C1942).
+Phase 637 decodes the dark pipeline identification layer through manual reading of 466 dark tokens across 19 recipe-matched folios. Two material identifiers validated corpus-wide: fch=mercury (∞ enrichment, 19/82 folios, A-system cross-reference) and cs=gold (17.5x, 9/82 folios). Dark MIDDLEs divide into three functional classes (equipment/process/material). f58r/f58v identified as A-system master catalog folios. C1939-C1940, C1942 Tier 3 (dependent on Tier 3 recipe assignments). C1941 initially Tier 3, upgraded to Tier 2 in v6.11. 4 constraints (C1939-C1942).
 
 ### Changes
 

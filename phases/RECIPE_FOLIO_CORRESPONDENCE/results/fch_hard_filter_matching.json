@@ -1,0 +1,166 @@
+{
+  "match_table": [
+    {
+      "chapter_number": 40,
+      "chapter_idx": 166,
+      "family": "theoretical",
+      "folio": "f106v",
+      "distance": 0.933,
+      "second_distance": 1.0857,
+      "ratio": 1.164,
+      "confident": true,
+      "per_dim_dist_sq": [
+        0.053,
+        0.0224,
+        0.0595,
+        0.0292,
+        0.0878,
+        0.4353,
+        0.0021,
+        0.1812
+      ]
+    },
+    {
+      "chapter_number": 47,
+      "chapter_idx": 173,
+      "family": "separation",
+      "folio": "f113r",
+      "distance": 1.2447,
+      "second_distance": 2.4798,
+      "ratio": 1.992,
+      "confident": true,
+      "per_dim_dist_sq": [
+        0.3386,
+        0.0017,
+        0.1539,
+        0.3001,
+        0.0618,
+        0.0045,
+        0.6401,
+        0.0485
+      ]
+    },
+    {
+      "chapter_number": 48,
+      "chapter_idx": 174,
+      "family": "sublimation",
+      "folio": "f113v",
+      "distance": 2.4551,
+      "second_distance": 2.3349,
+      "ratio": 0.951,
+      "confident": false,
+      "per_dim_dist_sq": [
+        0.8175,
+        0.7512,
+        0.3517,
+        0.0496,
+        1.1855,
+        0.2549,
+        2.5139,
+        0.1034
+      ]
+    },
+    {
+      "chapter_number": 52,
+      "chapter_idx": 178,
+      "family": "theoretical",
+      "folio": "f40v",
+      "distance": 3.0631,
+      "second_distance": 2.8092,
+      "ratio": 0.917,
+      "confident": false,
+      "per_dim_dist_sq": [
+        1.7397,
+        0.0369,
+        0.0002,
+        0.0623,
+        1.3528,
+        0.051,
+        6.1396,
+        0.0001
+      ]
+    },
+    {
+      "chapter_number": 42,
+      "chapter_idx": 167,
+      "family": "fixation",
+      "folio": "f86v3",
+      "distance": 3.5484,
+      "second_distance": 3.1817,
+      "ratio": 0.897,
+      "confident": false,
+      "per_dim_dist_sq": [
+        0.6114,
+        1.3706,
+        0.5441,
+        1.6329,
+        1.3528,
+        1.1736,
+        5.5011,
+        0.4044
+      ]
+    },
+    {
+      "chapter_number": 43,
+      "chapter_idx": 168,
+      "family": "fixation",
+      "folio": "f50r",
+      "distance": 3.5744,
+      "second_distance": 2.6895,
+      "ratio": 0.752,
+      "confident": false,
+      "per_dim_dist_sq": [
+        1.1227,
+        1.8367,
+        4.097,
+        1.1996,
+        0.4821,
+        2.1253,
+        1.7362,
+        0.1767
+      ]
+    },
+    {
+      "chapter_number": 50,
+      "chapter_idx": 176,
+      "family": "separation",
+      "folio": "f111r",
+      "distance": 3.755,
+      "second_distance": 4.3043,
+      "ratio": 1.146,
+      "confident": false,
+      "per_dim_dist_sq": [
+        1.2003,
+        2.4987,
+        0.2075,
+        2.485,
+        2.0658,
+        3.8658,
+        1.3597,
+        0.417
+      ]
+    }
+  ],
+  "mean_distance": 2.3217,
+  "mean_ratio": 1.117,
+  "n_confident": 2,
+  "target_chapters": [
+    "Ch40M",
+    "Ch42M",
+    "Ch43M",
+    "Ch47M",
+    "Ch48M",
+    "Ch50M",
+    "Ch51M",
+    "Ch52M"
+  ],
+  "target_folios": [
+    "f40v",
+    "f50r",
+    "f86v3",
+    "f106v",
+    "f111r",
+    "f113r",
+    "f113v"
+  ]
+}

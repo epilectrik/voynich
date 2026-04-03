@@ -7,7 +7,7 @@
 
 ---
 
-## Three Functional Classes (C1941)
+## Three Functional Classes (C1941, Tier 2)
 
 Dark pipeline MIDDLEs divide into three classes based on folio distribution and recipe correspondence:
 

@@ -2265,8 +2265,12 @@ C1937	Multi-chapter folios: f80r=Ch21-25M (5 chapters). Ch10P+Ch11P in f108v. Or
 C1938	Blind atom reading predicts recipe type: f115r fully blind predicted fixation, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8.	2	B, atom, blind test, C1394	f115r=6/8. f112v=7/8.
 C1939	fch (flag.adjust.watch) encodes mercury: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens (79% section overlap). First material identification.	3	B, A, dark pipeline, fch, C1901	enrichment=∞. corpus=19/82. A=21tok.
 C1940	cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf).	3	B, dark pipeline, cs, C1901	enrichment=17.5x. corpus=9/82.
-C1941	Dark pipeline three functional classes: equipment (lch,lk,eed 10+ folios), process (cth,eke,ksh 3-9 folios), material (fch,cs,eckh enriched). 466 tokens, 152 MIDDLEs analyzed.	3	B, dark pipeline, C1901, C1906	tokens=466. unique=152.
+C1941	Dark pipeline three functional classes: equipment (lch,lk,eed 10+ folios), process (cth,eke,ksh 3-9 folios), material (fch,cs,eckh enriched). 466 tokens, 152 MIDDLEs. Structural test: 2 STRONG eta² dims (top_pfx_share, n_suffix_types) + 2 MODERATE (par_init_rate, line_init_rate).	2	B, dark pipeline, C1901, C1906	tokens=466. unique=152. strong_dims=2. moderate_dims=2.
 C1942	f58r/f58v (Section T, Currier A) = master catalog folios: A records for 6/9 tested dark identifiers. 366+365 tokens.	3	A, T, dark pipeline, C1499	dark_represented=6/9.
+C1943	Ch40M (silver transmutation) → f106v: 8D dist 0.933 (confident). 449 tokens, 20 verbs, fch×2 bracket two-phase structure.	3	B, S, PL, Ch40M, f106v, fch	8D_dist=0.933. tokens=449. fch=2.
+C1944	Ch47M (coded elemental separation) → f113r: 8D dist 1.245, ratio 1.992. fch×4 for 4 elements, cs at endpoint.	3	B, S, PL, Ch47M, f113r, fch, cs	8D_dist=1.245. ratio=1.992. fch=4.
+C1945	Ch50M (error correction) → f111r: 8D weak (3.755) but atom diagnostic. Near-zero dar, inverted e_depth, P2=359tok, 5×eed.	3	B, S, PL, Ch50M, f111r, eed	8D_dist=3.755. dar=2. P2=359. eed=5.
+C1946	Higher Mercuriorum (Ch36-Ch52) = 6+ procedural chapters reclassified from theoretical. Matching: 42→45 chapters.	2	B, PL, Mercuriorum, C1882	prev=42. new=45. reclassified=6.
 
 ---
 
