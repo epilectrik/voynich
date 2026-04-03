@@ -320,6 +320,8 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 - **Architectural guide:** [MODEL_CONTEXT.md](MODEL_CONTEXT.md) - How to interpret the constraint system
 - **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC, PSC)
 - **Per-folio findings:** [FOLIOS/INDEX.md](FOLIOS/INDEX.md) - Individual folio analysis notes (crib decodes, structural properties)
+- **Glossing system:** [GLOSSING.md](GLOSSING.md) - Atom glosses, PREFIX/SUFFIX semantics, expert validation workflow
+- **Dark pipeline dictionary:** [DARK_PIPELINE_DICTIONARY.md](DARK_PIPELINE_DICTIONARY.md) - Candidate material identifications from cross-folio dark MIDDLE analysis (Tier 4 exploratory)
 - **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - Phase index
 - **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
 - **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
