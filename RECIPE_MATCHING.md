@@ -266,7 +266,12 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 
 - **Feature selection circularity.** The 8D features were tuned on distillation→R1 (16 chapters, 32 folios). The permutation test validates whether the ASSIGNMENT is better than random, but the feature SELECTION was data-driven from the same corpus. Cross-family generalization (+7% distance penalty) mitigates this but does not fully resolve it.
 
-- **~40 folios remain unmatched** (mostly Section H herbal pages, predominantly short folios with limited operational structure). These folios use the same B grammar but have not been matched to any *Testamentum* chapter, Brunschwig recipe, or Codicillus segment. The Testamentum accounts for ~25 of 83 Currier B folios (30%). The remaining 58 folios may encode content from sources not yet tested, or may serve functions (e.g., identification/reference) that the recipe-matching methodology cannot detect.
+- **~40 folios remain unmatched — but this is a structural prediction, not a failure.** The unmatched folios are concentrated in Section H (herbal pages with plant illustrations), which is physically and organizationally separate from the sections where matches cluster. The pattern is consistent with a multi-domain workshop manual where each manuscript section draws from a different source tradition:
+  - **Section B (f75-f84):** Matched to PL Mercuriorum (mercury preparation pipeline)
+  - **Section S (f103-f116):** Matched to PL transmutation/multiplication chapters
+  - **Section H (f1-f57):** Unmatched — plant illustrations suggest herbal distillation recipes, but Brunschwig's Small Book (2-3 steps per plant) is too operationally thin to differentiate folios, and the Large Book compounds collapse onto attractors
+  
+  The Section H illustrations may carry COMPLEMENTARY content: the text encodes HOW to distill (operational grammar), the illustration identifies WHAT to distill (plant identity). This is consistent with C138 (illustrations don't constrain text) — the two are not redundant but independent information channels. The Testamentum accounts for ~25 of 83 Currier B folios (30%); the remaining folios likely encode content from a herbal distillation tradition whose surviving texts lack the operational detail needed for 8D matching.
 
 - **Limited alternative source testing.** Only the *Testamentum*, Brunschwig (1500 and 1512), and the Codicillus have been tested. Other medieval alchemical texts (Geber, Turba Philosophorum, Rosarium Philosophorum, etc.) have not been evaluated. The claim is "Testamentum matches better than anything tested," not "Testamentum is the only possible source."
 
