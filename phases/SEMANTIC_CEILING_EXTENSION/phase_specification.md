@@ -164,7 +164,7 @@ Seven tests organized into five categories, designed to push the semantic ceilin
 
 | Test | Primary Data |
 |------|--------------|
-| 2A | `folio_analysis/hazard_maps/*.json`, `folio_analysis/kernel_trajectories/*.json` |
+| 2A | `archive/folio_analysis/hazard_maps/*.json`, `archive/folio_analysis/kernel_trajectories/*.json` |
 | 1A | `results/b_macro_scaffold_audit.json`, `results/middle_zone_survival.json` |
 | 3A | `results/canonical_grammar.json`, `currierB.bcsc.yaml` |
 | 3B | `context/METRICS/hazard_metrics.md` |

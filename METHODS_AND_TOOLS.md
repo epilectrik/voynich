@@ -115,10 +115,9 @@ voynich/
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
   sources/            # Historical texts (PL Testamentum, Brunschwig, Codicillus)
-  phases/             # 635 completed research phases
+  phases/             # 636 completed research phases
   results/            # Legacy analysis outputs (early phases)
-  folio_analysis/     # Per-folio hazard maps
-  archive/            # Archived scripts and old documentation
+  archive/            # Archived scripts, old documentation, legacy folio analysis
 ```
 
 > **Note on repo size:** This repository is large and rough in spots. Every research phase, intermediate result, and dead end has been preserved — the accuracy of the constraint system depends on being able to trace any finding back to the script and data that produced it. We chose reproducibility over tidiness.
