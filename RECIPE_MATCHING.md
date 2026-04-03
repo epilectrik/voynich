@@ -1,6 +1,6 @@
 # Recipe Matching: How We Identified the Source Tradition
 
-This document describes the methodology used to match individual chapters of the Pseudo-Lullian *Testamentum* to individual Voynich manuscript folios. 44 procedural chapters map to ~25 folios, covering 94% of the *Testamentum*'s procedural content. The methodology progressed through four stages: statistical matching, expanded matching, reverse-blind prediction, and instruction-level validation.
+This document describes the methodology used to match individual chapters of the Pseudo-Lullian *Testamentum* to individual Voynich manuscript folios. 42 unique procedural chapters map to ~25 folios, covering approximately 89% of the *Testamentum*'s procedural content (42 of 47 chapters classified as procedural). The methodology progressed through four stages: statistical matching, expanded matching, reverse-blind prediction, and instruction-level validation.
 
 For the broader project context, see [README.md](README.md). For claims and limits, see [WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md).
 
@@ -20,6 +20,8 @@ The Pseudo-Lullian *Testamentum* is a 14th-15th century alchemical treatise attr
 Of these, 47 chapters contain procedural content (specific operational instructions). The remaining 162 are theoretical, descriptive, or philosophical. The manuscript encodes only procedural content — theoretical and descriptive chapters produce zero validated matches (C1932).
 
 The full Latin text and English translation are in `sources/pseudo_lull_testamentum/`.
+
+**Why this text?** The *Testamentum* was selected based on a convergence of prior findings: (1) Brunschwig structural alignment (28 tests, Phases 419-461) established the distillation domain; (2) Brunschwig explicitly cites the Pseudo-Lullian tradition as his source; (3) the manuscript's radiocarbon date (1404-1438) falls within the Pseudo-Lullian production window (1330s-1500s); (4) the *Testamentum* is the most extensive procedural text in the tradition. The *Testamentum* was tested first because it was the most probable candidate from these converging lines of evidence, not because it was randomly selected.
 
 ---
 
@@ -97,14 +99,14 @@ Three tokens show cross-folio consistency across independently-matched folios:
 | Token | Decomposition | Behavior | Evidence |
 |-------|--------------|----------|---------|
 | `dar` | da(setup) + r(respond) | Present on all folios matched to recipes introducing NEW materials; absent on all folios matched to cohobation/separation-only recipes | 6/6 partition (C1925) |
-| `chekar` | ch(test) + ek(precision) + ar(yield+respond) | Appears in post-thermal, vessel-monitoring context | 7/7 folios, qo depleted 0.48× on chekar lines (C1926) |
+| `chekar` | ch(test) + ek(precision) + ar(close) | Appears in post-thermal, vessel-monitoring context | 7/7 folios, qo depleted 0.48× on chekar lines (C1926) |
 | `dal` | da(setup) + l(state) | Marks careful/measured material placement, distinct from dar's vigorous introduction | Confirmed via Latin verb mapping: "coniungendo" (joining) → dal, not dar |
 
 ### Section-Level Correspondence
 
 The matches cluster geographically in the manuscript:
 
-- **Section B (f75-f84):** 14 folios match Mercuriorum preparation chapters Ch1-28 (C1927)
+- **Section B (f75-f84):** 8/11 folios in this range match Mercuriorum chapters (C1927); additional matches from expanded and reverse-blind methods bring the Section B total to ~14 folios
 - **Section S (f103-f116):** 6 folios match transmutation/multiplication chapters Ch40+ (C1930)
 - **Section T (f66r):** One fixation recipe in ring diagram format (C1931)
 
@@ -133,7 +135,7 @@ Procedure:
 | Ch2+3+6 Mercuriorum (coagulate+sublimate+rectify) | **f77r** | — | **7/7 PERFECT** |
 | Ch29 Practica (troubleshooting) | **f43v** | 7/11 | 4/6 + 2 PARTIAL |
 
-The f103v identification was the first **predictive** (not confirmatory) recipe-folio match in the project. f77r scored 7/7 perfect — every prediction derived from the recipe was confirmed on the folio (C1935).
+The f103v identification was the first **predictive** (not confirmatory) recipe-folio match in the project (C1935). f77r scored 7/7 perfect — every prediction derived from the recipe was confirmed on the folio (documented in Phase 636 narrative; no individual constraint for the f77r result).
 
 ### Organizational Findings
 
@@ -190,18 +192,20 @@ The instruction-level analysis revealed that different Latin verb types activate
 | Source tested | Chapters/segments | Result |
 |--------------|------------------|--------|
 | PL Theorica | 96 theoretical chapters | Zero atom-validated matches (C1932) |
-| PL Furnis | 30 construction chapters | 2 genuine matches (furnace + vessel specs), rest noise |
-| Codicillus | 19 procedural segments | Zero new assignments; 18/19 collapse onto f75r |
-| Brunschwig 1512 compounds | 20 complex recipes | Zero confident matches; collapse onto attractors (f34v) |
-| Brunschwig 1500 simples | 245 plant distillations | Too thin (2-3 steps each) to differentiate folios |
+| PL Furnis | 30 construction chapters | 2 genuine matches (furnace + vessel specs), rest noise (C1932) |
+| Codicillus | 19 procedural segments | Zero new folio assignments; most segments collapse onto single attractor folio (informal — not a registered constraint) |
+| Brunschwig 1512 compounds | 20 complex recipes | Zero confident matches; collapse onto attractors (informal — not a registered constraint) |
+| Brunschwig 1500 simples | 245 plant distillations | Too thin (2-3 steps each) to differentiate folios (informal observation) |
 
-The matching system says YES to procedural Practica and Mercuriorum content, and NO to everything else tested.
+The matching system says YES to procedural Practica and Mercuriorum content, and NO to everything else tested. The Theorica/Furnis negatives (C1932) are registered constraints; the Codicillus and Brunschwig negatives are informal observations from exploratory scanning using the same 8D pipeline. No alternative medieval alchemical texts beyond these have been tested.
 
 ---
 
 ## 7. Summary of Coverage
 
-**Mercuriorum (26 chapters matched):**
+**Mercuriorum (25 unique chapters matched across 17 folios):**
+
+*Note: Ch22M appears both within the f80r multi-chapter encoding (Ch21-25M ash chain) and as an independent detailed treatment on f82r. It is counted once in the total.*
 
 | Chapter(s) | Recipe | Folio | Method |
 |-----------|--------|-------|--------|
@@ -223,7 +227,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 | Ch28M | Vessel specification | f82v | Phase 628 |
 | Ch44M | Quicksilver coagulation | f107r | Expanded matching |
 
-**Practica (18 chapters matched):**
+**Practica (17 unique chapters matched across 13 folios):**
 
 | Chapter(s) | Recipe | Folio | Method |
 |-----------|--------|-------|--------|
@@ -250,21 +254,31 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 - 96 Theorica chapters (all philosophical)
 - 28/30 Furnis chapters (construction specifications)
 
-**44 procedural chapters → ~25 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs).**
+**42 unique procedural chapters → ~25 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 42 of 47 chapters classified as procedural (89%).**
+
+*Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The 5 excluded chapters are: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration — humoral dosing, not operational procedure), Ch29M (elemental theory). This classification was made based on chapter content, not matching results — Ch26M was excluded because the B grammar lacks conditional branching for patient-type selection, not because it failed to match.*
 
 ---
 
 ## 8. Limitations
 
-- **Individual chapter assignments are Tier 3** (interpretive, not proven). The matching FRAMEWORK is Tier 2 (validated by permutation test, cross-family replication, negative controls). But any specific "this folio = this chapter" assignment could be revised by new evidence.
+- **Individual chapter assignments are Tier 3** (interpretive, not proven). The matching FRAMEWORK is Tier 2 (validated by permutation test, cross-family replication, negative controls). But any specific "this folio = this chapter" assignment could be revised by new evidence. No individual false discovery rate has been computed; the permutation test validates aggregate significance, not per-match confidence.
 
-- **The 8D features were tuned on distillation→R1.** Cross-family generalization was tested and confirmed (+7% distance penalty), but the features were not derived in a family-agnostic way.
+- **Feature selection circularity.** The 8D features were tuned on distillation→R1 (16 chapters, 32 folios). The permutation test validates whether the ASSIGNMENT is better than random, but the feature SELECTION was data-driven from the same corpus. Cross-family generalization (+7% distance penalty) mitigates this but does not fully resolve it.
 
-- **~40 folios remain unmatched** (mostly Section H herbal pages). These folios use the same B grammar but have not been matched to any *Testamentum* chapter, Brunschwig recipe, or Codicillus segment. They may encode content from sources not yet tested.
+- **~40 folios remain unmatched** (mostly Section H herbal pages, predominantly short folios with limited operational structure). These folios use the same B grammar but have not been matched to any *Testamentum* chapter, Brunschwig recipe, or Codicillus segment. The Testamentum accounts for ~25 of 83 Currier B folios (30%). The remaining 58 folios may encode content from sources not yet tested, or may serve functions (e.g., identification/reference) that the recipe-matching methodology cannot detect.
 
-- **Instruction-level validation is interpretive.** Counting Latin verbs and mapping them to paragraph structure requires judgment about where one instruction ends and the next begins. Different analysts might count differently.
+- **Limited alternative source testing.** Only the *Testamentum*, Brunschwig (1500 and 1512), and the Codicillus have been tested. Other medieval alchemical texts (Geber, Turba Philosophorum, Rosarium Philosophorum, etc.) have not been evaluated. The claim is "Testamentum matches better than anything tested," not "Testamentum is the only possible source."
 
-- **The atom glosses are operational labels, not translations.** When we say `dar` = "material introduction," we mean the token appears at material-introduction points in matched recipes. We do not claim the Voynich author thought of `dar` as meaning "material introduction" in any language.
+- **Instruction-level validation has no reported failures.** Every weak match improved under verb-counting analysis (7/7 upgrades, Section 5). One match was REJECTED before this stage (f84v, single-sentence recipe vs 347-token folio), but no match that entered verb-counting analysis was killed by it. This could indicate the method always confirms, though the f84v rejection shows the broader methodology CAN reject matches.
+
+- **Instruction-level validation is interpretive.** Counting operational verbs and mapping them to paragraph structure requires judgment about where one instruction ends and the next begins. No inter-rater reliability testing was performed. Verb counts were not performed blind to folio properties.
+
+- **The reverse-blind method had implicit constraints.** By Phase 636, the section-level correspondence (Section B = Mercuriorum, Section S = transmutation) was known. This reduced the effective search space for reverse-blind scans from ~49 unmatched folios to ~15-20 section-appropriate candidates.
+
+- **No pre-registration.** Feature dimensions, matching algorithms, and evaluation criteria were developed iteratively. The permutation test and cross-family replication provide post-hoc validation, but no element of the methodology was pre-registered.
+
+- **The atom glosses are operational labels, not translations.** When we say `dar` = "material introduction," we mean the token appears at material-introduction points in matched recipes. We do not claim the Voynich author thought of `dar` as meaning "material introduction" in any language. The Latin verb-to-atom mapping (Section 5) is an interpretive observation, not a registered constraint.
 
 ---
 

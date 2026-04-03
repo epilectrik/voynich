@@ -2,7 +2,7 @@
 
 The Voynich Manuscript's main text (Currier B, 23,243 tokens across 83 folios) encodes closed-loop control programs in a purpose-built operational notation. Each folio is a self-contained program. The notation uses a systematic grammar of 49 instruction types built from an 18-atom compositional architecture. It is not a language, not a cipher, and not a translation of any known text.
 
-The leading interpretive hypothesis identifies the source tradition as **Pseudo-Lullian alchemy** — specifically the *Testamentum* (Practica and Liber Mercuriorum). 44 procedural chapters (26 Mercuriorum + 18 Practica) have been matched to ~25 folios, covering 94% of the *Testamentum*'s procedural content. Some folios encode multiple short chapters; sequential operations appear on recto/verso pairs of the same leaf. Theoretical and descriptive chapters produce zero validated matches — the manuscript encodes only procedural content.
+The leading interpretive hypothesis identifies the source tradition as **Pseudo-Lullian alchemy** — specifically the *Testamentum* (Practica and Liber Mercuriorum). 42 procedural chapters (26 Mercuriorum + 18 Practica) have been matched to ~25 folios, covering 89% of the *Testamentum*'s procedural content. Some folios encode multiple short chapters; sequential operations appear on recto/verso pairs of the same leaf. Theoretical and descriptive chapters produce zero validated matches — the manuscript encodes only procedural content.
 
 Think of sheet music: if you found scores in an unknown notation, you couldn't translate notes into words — because notes aren't words. But structural analysis would reveal patterns matching the harmonic series. You could prove the documents encode music without hearing a note played. We take the same approach: we recovered the formal operating logic without translating individual tokens. The structure *is* the semantics.
 
@@ -24,7 +24,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 
 **We claim** (Tier 2-3: framework established, specific assignments interpretive):
 - The best-fit historical source tradition is Pseudo-Lullian alchemy, calibrated against the *Testamentum* and independently against Brunschwig's distillation manual (1500)
-- 44 procedural chapters from the *Testamentum* (26 Mercuriorum + 18 Practica) match to ~25 folios, covering 94% of the source's procedural content. 3 are confirmed by independent structural evidence (f75r/Ch19, f76r/Ch18P, f84r/Ch14P); 5 more confirmed via reverse-blind prediction; the remainder at supported or speculative confidence
+- 42 procedural chapters from the *Testamentum* (26 Mercuriorum + 18 Practica) match to ~25 folios, covering 89% of the source's procedural content. 3 are confirmed by independent structural evidence (f75r/Ch19, f76r/Ch18P, f84r/Ch14P); 5 more confirmed via reverse-blind prediction; the remainder at supported or speculative confidence
 - The manuscript reorganizes source content for workshop use: preparation in Section B (f75-f84), transmutation in Section S (f103-f116). Multi-chapter folios combine related short procedures; sequential operations appear on recto/verso pairs of the same leaf (C1936, C1937)
 - A product chain links folios: f75r (quintessence) feeds f84r (gold tincture), explicit through the *Testamentum*'s cipher key ("vegetable G" = quintessence)
 
@@ -42,7 +42,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 | Three-level safety | Construction exclusion + hazard typing + transition prohibition |
 | 18-atom instruction encoding | HEAD+MOD*+TERM compositional grammar; frame predicts 64% of category |
 | 18-atom instruction encoding | Every token decomposes structurally; 8 atoms have locked operational glosses, 6 solid, 5 plausible |
-| Pseudo-Lullian source tradition | 44 procedural chapters → ~25 folios (94% coverage); 3 confirmed + 5 reverse-blind + ~36 supported/speculative |
+| Pseudo-Lullian source tradition | 42 procedural chapters → ~25 folios (89% coverage); 3 confirmed + 5 reverse-blind + ~36 supported/speculative |
 | Reverse-blind prediction | Recipe → predictions → scan → match: f103v identified from 49 candidates, confirmed 6/7 (C1935) |
 | Product chain | Explicit: f75r quintessence = f84r input ("vegetable G" per PL cipher key) |
 | Cross-folio vocabulary | `dar` = material introduction (6/6), `chekar` = quality check (7/7) |
@@ -82,7 +82,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 
 ## Historical Source Tradition
 
-The Pseudo-Lullian *Testamentum* — a 14th-15th century alchemical treatise attributed to Ramon Llull but written by an unknown practitioner — provides the closest match to the manuscript's operational content. 44 procedural chapters (26 Mercuriorum + 18 Practica) match to ~25 folios, covering 94% of the source's procedural content. Validated by:
+The Pseudo-Lullian *Testamentum* — a 14th-15th century alchemical treatise attributed to Ramon Llull but written by an unknown practitioner — provides the closest match to the manuscript's operational content. 42 procedural chapters (26 Mercuriorum + 18 Practica) match to ~25 folios, covering 89% of the source's procedural content. Validated by:
 
 - **Permutation testing:** Real chapter-to-folio assignment beats 1,000 random shuffles (p<0.001)
 - **Reverse-blind prediction:** Recipe-derived predictions identify matching folios from pools of unmatched candidates BEFORE examining the folio. f103v identified from 49 candidates, confirmed 6/7 at atom level; f77r scored 7/7 perfect (C1935)
@@ -146,7 +146,7 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 | Research phases | 636 |
 | Model fits tested | 75 |
 | Documented folios | 40 (of 83 Currier B) with per-folio analysis notes |
-| Recipe chapter coverage | 44 procedural chapters → ~25 folios (94% of *Testamentum* procedural content) |
+| Recipe chapter coverage | 42 procedural chapters → ~25 folios (89% of *Testamentum* procedural content) |
 | Atom decomposition | 100% structural coverage; 8 atoms locked, 6 solid, 5 plausible |
 
 **Core model: CLOSED** | **Characterization: ACTIVE** | **Recipe matching: ACTIVE**
@@ -161,7 +161,7 @@ Transcript: EVA (Extensible Voynich Alphabet) interlinear format, H transcriber 
 
 ## Beyond This Project
 
-The structural analysis establishes what the manuscript encodes (a control grammar for Pseudo-Lullian alchemical procedures) and what it does not (natural language). With 94% of the *Testamentum*'s procedural content now matched to folios, the remaining frontiers are: identifying the ~40 unmatched folios (mostly Section H herbal pages), refining atom glosses using the recipe parallel corpus, and tracing the manuscript's relationship to other texts in the Pseudo-Lullian tradition. The next breakthroughs will likely come from **alchemical historians** who can evaluate the recipe matches, **paleographers** who can trace the script's glyph origins to specific scribal traditions, or **uncatalogued archives** that might preserve workshop manuals in the same lineage.
+The structural analysis establishes what the manuscript encodes (a control grammar for Pseudo-Lullian alchemical procedures) and what it does not (natural language). With 89% of the *Testamentum*'s procedural content now matched to folios, the remaining frontiers are: identifying the ~40 unmatched folios (mostly Section H herbal pages), refining atom glosses using the recipe parallel corpus, and tracing the manuscript's relationship to other texts in the Pseudo-Lullian tradition. The next breakthroughs will likely come from **alchemical historians** who can evaluate the recipe matches, **paleographers** who can trace the script's glyph origins to specific scribal traditions, or **uncatalogued archives** that might preserve workshop manuals in the same lineage.
 
 ---
 
