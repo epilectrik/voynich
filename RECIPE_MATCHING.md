@@ -302,6 +302,10 @@ All scripts, data, and results are in this repository:
 | Reverse-blind scripts | `phases/REVERSE_BLIND_MATCHING/` (listed in Phase 636 INDEX) |
 | PL Latin text | `sources/pseudo_lull_testamentum/testamentum_complete_latin.txt` |
 | PL English translation | `sources/pseudo_lull_testamentum/testamentum_complete_english.txt` |
+| Codicillus Latin + English | `sources/codicillus/codicillus_complete_latin.txt`, `codicillus_complete_english.txt` |
+| Brunschwig 1512 (Large Book) | `sources/brunschwig_1512/brunschwig_1512_english.txt` (45,926 lines) |
+| Brunschwig 1512 compound features | `sources/brunschwig_1512/brunschwig_1512_compound_features.json` |
+| Brunschwig 1500 (Small Book) | `sources/brunschwig_1500/` |
 | Voynich transcript | EVA interlinear format, H-track (loaded via `scripts/voynich.py`) |
 | Per-folio analysis | `context/FOLIOS/f*.md` (40 documented folios) |
 | Constraint registry | `context/CLAIMS/INDEX.md` (C1882-C1938) |
