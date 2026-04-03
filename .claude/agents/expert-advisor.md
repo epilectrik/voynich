@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1938 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1942 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1938.
+the highest ID present is C1942.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1938 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1942 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1938 validated constraints are present as canonical one-line claims with tier
+1942 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-02 16:59
-**Version:** FROZEN STATE (1938 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-02 22:12
+**Version:** FROZEN STATE (1942 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2177,6 +2177,10 @@ C1935	Reverse-blind matching produces predictive folio identifications: recipe-d
 C1936	Recto/verso pairs encode sequential operations on same leaf: f66r/v (fixation→inceration), f103r/v (multiplication→imbibition), f108r/v (separation→dissolution). Procedural sequence preserved across page turn	2	B, manuscript organization, C1927
 C1937	Multi-chapter folios combine related short procedures: f80r = Ch21-25M (5 chapters). Ch10P+Ch11P within f108v. Organizing unit is operational scope not chapter count. Explains Phase 628 paragraph-count null result	2	B, manuscript organization, C1927
 C1938	Blind atom reading correctly predicts recipe type: f115r (fully blind) predicted fixation from atoms, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8. Prediction accuracy tracks recipe detail level	2	B, atom, blind test, C1394, C1897
+C1939	fch (flag.adjust.watch) encodes mercury/mercury-water: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens across 19 A folios (79% section overlap). Atom reading "flagged cautious monitoring" matches mercury's volatile/toxic handling profile	3	B, A, dark pipeline, fch, C1901
+C1940	cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf). Atom reading "sequential staged adjustment" matches gold's multi-step processing	3	B, dark pipeline, cs, C1901
+C1941	Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Atom compositions produce coherent handling profiles	3	B, dark pipeline, C1901, C1906
+C1942	f58r/f58v (Section T, Currier A) are master catalog folios: contain A-system records for 6/9 tested dark pipeline identifiers (fch, lch, lk, cth, eet, tsh). No other A folio shows this catalog concentration	3	A, T, dark pipeline, C1499, C1903
 
 ---
 

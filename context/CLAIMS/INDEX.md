@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1938 validated constraints | **Version:** 6.09 | **Date:** 2026-04-02
+**Total:** 1942 validated constraints | **Version:** 6.10 | **Date:** 2026-04-02
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 637: Dark Pipeline Material Identification — MATERIAL_IDENTIFICATION_SUPPORTED (C1939-C1942)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1939 | fch (flag.adjust.watch) encodes mercury/mercury-water: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens across 19 A folios (79% section overlap). Atom reading "flagged cautious monitoring" matches mercury's volatile/toxic handling profile | 3 | B, A, dark pipeline, fch, C1901 | enrichment=∞. corpus=19/82. A_tokens=21. predictions=13. |
+| 1940 | cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf). Atom reading "sequential staged adjustment" matches gold's multi-step processing | 3 | B, dark pipeline, cs, C1901 | enrichment=17.5x. corpus=9/82. f84r=3x. |
+| 1941 | Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Atom compositions produce coherent handling profiles | 3 | B, dark pipeline, C1901, C1906 | tokens=466. unique=152. equipment=3. process=11. material=24+. |
+| 1942 | f58r/f58v (Section T, Currier A) are master catalog folios: contain A-system records for 6/9 tested dark pipeline identifiers (fch, lch, lk, cth, eet, tsh). No other A folio shows this catalog concentration | 3 | A, T, dark pipeline, C1499, C1903 | dark_represented=6/9. f58r_tokens=366. |
+
+**Phase 637 findings (Dark Pipeline Material Identification, MATERIAL_IDENTIFICATION_SUPPORTED):**
+- fch=mercury is the first specific material identification in the Voynich manuscript (C1939). The dark MIDDLE fch appears on every mercury-recipe folio and no non-mercury recipe folio, with A-system cross-reference confirming catalog presence. 13 unmatched folios containing fch are testable predictions.
+- cs=gold at 17.5x enrichment (C1940) with same-leaf concentration (f84r/f84v) provides a second material identification. Only 9/82 folios corpus-wide.
+- The three-class structure (C1941) shows the dark pipeline is not monolithic: equipment identifiers are universal, process identifiers track techniques, material identifiers track substances. All use atom compositions to describe handling profiles rather than naming substances directly.
+- The f58r/f58v master catalog (C1942) connects the B-system dark pipeline to the A-system vocabulary catalog, with one A folio pair containing records for the majority of tested material/equipment identifiers.
+- All findings capped at Tier 3 due to dependence on Tier 3 recipe-folio assignments.
 
 ---
 

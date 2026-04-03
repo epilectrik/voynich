@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1748 constraints | 2026-04-02
+CONSTRAINT_REFERENCE v2.6 | 1752 constraints | 2026-04-02
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1752,3 +1752,7 @@ C1935	Reverse-blind matching produces predictive folio identifications: recipe-d
 C1936	Recto/verso pairs encode sequential operations on same leaf: f66r/v (fixation→inceration), f103r/v (multiplication→imbibition), f108r/v (separation→dissolution). Procedural sequence preserved across page turn	2	B, manuscript organization, C1927	paired_leaves=3. sequential=3/3.
 C1937	Multi-chapter folios combine related short procedures: f80r = Ch21-25M (5 chapters). Ch10P+Ch11P within f108v. Organizing unit is operational scope not chapter count. Explains Phase 628 paragraph-count null result	2	B, manuscript organization, C1927	f80r_chapters=5.
 C1938	Blind atom reading correctly predicts recipe type: f115r (fully blind) predicted fixation from atoms, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8. Prediction accuracy tracks recipe detail level	2	B, atom, blind test, C1394, C1897	f115r=6/8. f112v=7/8.
+C1939	fch (flag.adjust.watch) encodes mercury/mercury-water: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens across 19 A folios (79% section overlap). Atom reading "flagged cautious monitoring" matches mercury's volatile/toxic handling profile	3	B, A, dark pipeline, fch, C1901	enrichment=∞. corpus=19/82. A_tokens=21. predictions=13.
+C1940	cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf). Atom reading "sequential staged adjustment" matches gold's multi-step processing	3	B, dark pipeline, cs, C1901	enrichment=17.5x. corpus=9/82. f84r=3x.
+C1941	Dark pipeline MIDDLEs divide into three functional classes: equipment (lch, lk, eed — 10+ folios), process (cth, eke, ksh — 3-9 folios), material (fch, cs, eckh — enriched on specific recipe types). 466 tokens, 152 unique MIDDLEs analyzed. Atom compositions produce coherent handling profiles	3	B, dark pipeline, C1901, C1906	tokens=466. unique=152. equipment=3. process=11. material=24+.
+C1942	f58r/f58v (Section T, Currier A) are master catalog folios: contain A-system records for 6/9 tested dark pipeline identifiers (fch, lch, lk, cth, eet, tsh). No other A folio shows this catalog concentration	3	A, T, dark pipeline, C1499, C1903	dark_represented=6/9. f58r_tokens=366.

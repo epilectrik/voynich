@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1938.
+the highest ID present is C1942.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2263,6 +2263,10 @@ C1935	Reverse-blind matching: recipe predictions scan 49 unmatched folios. f103v
 C1936	Recto/verso sequential pairing: f66r/v (fixation→inceration), f103r/v (multiplication→imbibition), f108r/v (separation→dissolution). 3/3 sequential.	2	B, manuscript organization, C1927	pairs=3. sequential=3/3.
 C1937	Multi-chapter folios: f80r=Ch21-25M (5 chapters). Ch10P+Ch11P in f108v. Organizing unit=operational scope, not chapter count.	2	B, manuscript organization, C1927	f80r=5ch.
 C1938	Blind atom reading predicts recipe type: f115r fully blind predicted fixation, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8.	2	B, atom, blind test, C1394	f115r=6/8. f112v=7/8.
+C1939	fch (flag.adjust.watch) encodes mercury: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens (79% section overlap). First material identification.	3	B, A, dark pipeline, fch, C1901	enrichment=∞. corpus=19/82. A=21tok.
+C1940	cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf).	3	B, dark pipeline, cs, C1901	enrichment=17.5x. corpus=9/82.
+C1941	Dark pipeline three functional classes: equipment (lch,lk,eed 10+ folios), process (cth,eke,ksh 3-9 folios), material (fch,cs,eckh enriched). 466 tokens, 152 MIDDLEs analyzed.	3	B, dark pipeline, C1901, C1906	tokens=466. unique=152.
+C1942	f58r/f58v (Section T, Currier A) = master catalog folios: A records for 6/9 tested dark identifiers. 366+365 tokens.	3	A, T, dark pipeline, C1499	dark_represented=6/9.
 
 ---
 

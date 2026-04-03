@@ -4,6 +4,33 @@
 
 ---
 
+## Version 6.10 (2026-04-02) - Phase 637: Dark Pipeline Material Identification
+
+### Summary
+
+Phase 637 decodes the dark pipeline identification layer through manual reading of 466 dark tokens across 19 recipe-matched folios. Two material identifiers validated corpus-wide: fch=mercury (∞ enrichment, 19/82 folios, A-system cross-reference) and cs=gold (17.5x, 9/82 folios). Dark MIDDLEs divide into three functional classes (equipment/process/material). f58r/f58v identified as A-system master catalog folios. All findings Tier 3 (dependent on Tier 3 recipe assignments). 4 constraints (C1939-C1942).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DARK_PIPELINE_MATERIAL_ID/` — Phase 637 INDEX.md |
+| **ADDED** | C1939: fch encodes mercury (∞ enrichment, 19/82, A cross-reference) |
+| **ADDED** | C1940: cs encodes gold (17.5x, 9/82, same-leaf concentration) |
+| **ADDED** | C1941: Three functional classes of dark MIDDLEs |
+| **ADDED** | C1942: f58r/f58v master catalog folios |
+| **CREATED** | `context/DARK_PIPELINE_DICTIONARY.md` — 152 MIDDLEs with readings |
+| **UPDATED** | INDEX.md — +4 constraints (1942 total), Phase 637 section |
+
+### Key Findings
+
+1. **fch=mercury (C1939):** First specific material identification. Atom reading "flag.adjust.watch" = hazardous material requiring cautious monitoring. 13 unmatched folios with fch are testable predictions.
+2. **cs=gold (C1940):** Second material identification. 3x on f84r (gold dissolution), 2x on f84v (same physical leaf). Atom reading "adjust.sequence" = sequential staged treatment.
+3. **Three classes (C1941):** Equipment (universal, 10+ folios), process (technique-specific, 3-9 folios), material (substance-specific, enriched on specific recipes). Atom compositions produce coherent handling profiles.
+4. **Master catalog (C1942):** f58r/f58v are Section T Currier A folios containing A-system records for 6/9 tested identifiers. The A system catalogs the same materials the B system uses.
+
+---
+
 ## Version 6.09 (2026-04-02) - Phase 636: Reverse-Blind Matching and Atom Refinement
 
 ### Summary
