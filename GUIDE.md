@@ -129,13 +129,13 @@ At the grammar's center sit three irreducible operators: **k** (energy input, ap
 
 ### Hazard Topology
 
-The grammar disfavors 17 transitions (~65% compliance, C789) organized into 5 hazard classes:
+The grammar disfavors 17 transitions (~65% compliance, C789) organized into 5 structural clusters (C109). The clustering is Tier 0 (proven from the data). The physical failure mode labels below are Tier 3 interpretations based on the distillation domain identification:
 
-| Class | What Goes Wrong |
+| Class | Interpretive Label (Tier 3) |
 |-------|----------------|
 | PHASE_ORDERING (41%) | Material in the wrong phase location |
 | COMPOSITION_JUMP (24%) | Impure fractions passing through |
-| CONTAINMENT_TIMING (24%) | Overflow or pressure events |
+| CONTAINMENT_TIMING (24%) | Overflow or pressure events (zero corpus impact — theoretical only) |
 | RATE_MISMATCH (6%) | Flow imbalance destabilizing the system |
 | ENERGY_OVERSHOOT (6%) | Thermal damage to material |
 
