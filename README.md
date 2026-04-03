@@ -58,11 +58,12 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 | Order | Document | What it covers |
 |-------|----------|---------------|
 | 1 | **[GUIDE.md](GUIDE.md)** | Conceptual walkthrough — grammar, atom encoding, recipe matching (start here) |
-| 2 | **[WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md)** | Precise claims and limits with tier markings and constraint citations |
-| 3 | **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)** | Formal specification — the definitive technical reference |
-| 4 | **[OPERATOR_MODEL.md](phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md)** | How a practitioner would have used the manuscript (Tier 3) |
-| 5 | **[Markov Model Evolution](context/MARKOV_MODEL_EVOLUTION.md)** | Why the model is trustworthy — progression from M0 (73%) to M2.1 (21/21) |
-| 6 | **[Historical Network](phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md)** | Medieval provenance and intellectual context |
+| 2 | **[RECIPE_MATCHING.md](RECIPE_MATCHING.md)** | How we matched 44 recipe chapters to ~25 folios — methods, validation, and full results |
+| 3 | **[WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md)** | Precise claims and limits with tier markings and constraint citations |
+| 4 | **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)** | Formal specification — the definitive technical reference |
+| 5 | **[OPERATOR_MODEL.md](phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md)** | How a practitioner would have used the manuscript (Tier 3) |
+| 6 | **[Markov Model Evolution](context/MARKOV_MODEL_EVOLUTION.md)** | Why the model is trustworthy — progression from M0 (73%) to M2.1 (21/21) |
+| 7 | **[Historical Network](phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md)** | Medieval provenance and intellectual context |
 
 ---
 
