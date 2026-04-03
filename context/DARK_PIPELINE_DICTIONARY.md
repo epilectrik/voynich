@@ -84,13 +84,37 @@ The labels describe HOW the named thing behaves operationally, not WHAT it is ch
 
 ---
 
+## Corpus-Wide Validation (2026-04-02)
+
+6 of 7 candidates tested against all 82 Currier B folios. Results:
+
+| Candidate | Enrichment | Folios with | Verdict |
+|-----------|-----------|-------------|---------|
+| **fch = mercury** | **∞ (8 vs 0 on matched)** | 19/82 | **STRONG** — zero on non-mercury matched folios. 13 unmatched folios with fch are PREDICTIONS (should involve mercury). |
+| **cs = gold** | **17.5x** | 9/82 | **STRONG** — f84r=3x, f84v=2x (same leaf). Only 9 corpus folios. |
+| **eckh = lunaria/plant** | **∞ (4 vs 0 on matched)** | 18/82 | **STRONG** — zero on mineral-only folios. f112v (lunaria→quicksilver) has 3x. |
+| **lsh = ash/fire medium** | 3.46x | 14/82 | **SUPPORTED** — concentrated on ash-distillation folios. |
+| **eet = balneum product** | 3.07x | 16/82 | **SUPPORTED** — concentrated on balneum-recipe folios. |
+| **rai = metallic** | 2.59x | 11/82 | **SUPPORTED** — moderate enrichment on metal-working folios. Mostly Section S. |
+| **cth = organic** | 1.02x | 35/82 | **FAILED** — too widespread (43% of folios). Not a material discriminator. |
+
+### Predictions from fch=mercury
+
+13 unmatched folios contain fch. If fch=mercury holds, these folios should involve mercury or mercury-water:
+f31r, f39r, f40v, f50r, f66v, f85r1, f86v3, f103v, f106v, f111r, f113r, f113v, f115r
+
+Of these, f103v (Ch27P imbibition) and f85r1 (multi-chapter Practica) are reverse-blind matches that DO involve mercury processing — confirming the prediction on 2 folios already matched but not in the original test set.
+
+### Predictions from cs=gold
+
+7 unmatched folios contain cs (beyond f84r and f81v): f75v, f78r, f80r, f84v, f85r2, f86v3, f95v2, f103v. If cs=gold holds, these should involve gold processing.
+
 ## Next Steps
 
-1. **Test cs = gold:** Check whether cs appears on other gold-working folios outside the matched set
-2. **Test fch = mercury:** Check fch concentration across ALL 83 B folios, not just the 19 matched ones
-3. **Test eet = organic:** Verify that eet is absent from mineral-only folios corpus-wide
-4. **Cross-reference with Currier A:** Dark MIDDLEs derive from A's registry (C1903: 78% spawn RI). Do the A-system records for these dark MIDDLEs support the material identifications?
-5. **Test the exclusive-count correlation** on the remaining matched folios (reverse-blind set)
+1. **Cross-reference fch predictions with reverse-blind matches** — do the 13 fch-positive unmatched folios match mercury-related chapters?
+2. **Cross-reference with Currier A:** Dark MIDDLEs derive from A's registry (C1903: 78% spawn RI). Do the A-system records for fch, cs, eckh support the material identifications?
+3. **Test eckh predictions** — 18 folios with eckh; which ones match lunaria/plant-related chapters?
+4. **Revise cth** — organic material hypothesis failed. cth may encode a PROCESS (adjust.transfer.watch) rather than a material class.
 
 ---
 
