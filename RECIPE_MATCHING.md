@@ -76,7 +76,7 @@ The matching procedure:
 
 16 distillation-family chapters matched to REGIME_1 folios. 9/16 confident (ratio > 1.15 between best and second-best distances). 3 individually validated with independent structural evidence:
 
-- **f75r ↔ Ch19 Mercuriorum** (aqua vitae, 9× reflux): Only 4+ consecutive identical token run in the corpus; unique double-dar; Brunschwig cross-confirmation
+- **f75r ↔ Ch19 Mercuriorum** (aqua vitae, 9× reflux): Only 4+ consecutive identical token run in the corpus; unique double-dar; **independent Brunschwig cross-confirmation** — Brunschwig Ch28 (the expanded practical version of the same recipe) ranks #2 for f75r at distance 1.478 vs PL Ch19 at 1.300. Two texts from different traditions independently identify the same folio for the same recipe.
 - **f76r ↔ Ch18 Practica** (element separation, silver-plate test): Strongest monitoring gradient in corpus (ρ = 0.710, rank 1/13); ch→sh active-to-passive transition maps the testing progression
 - **f84r ↔ Ch14 Practica** (gold dissolution): Dual-layer 12-header architecture; product chain link to f75r via PL cipher key ("vegetable G" = quintessence)
 
@@ -270,6 +270,8 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
   - **Section B (f75-f84):** Matched to PL Mercuriorum (mercury preparation pipeline)
   - **Section S (f103-f116):** Matched to PL transmutation/multiplication chapters
   - **Section H (f1-f57):** Unmatched — plant illustrations suggest herbal distillation recipes, but Brunschwig's Small Book (2-3 steps per plant) is too operationally thin to differentiate folios, and the Large Book compounds collapse onto attractors
+  
+  One Section H folio HAS been matched: **f31r** was identified as a rosewater distillation candidate via structural profile scoring against Brunschwig's rosewater recipe — the one herbal recipe with extensive operational detail (cohobation, 5 quality tests, rectification, sun exposure, 3-year shelf life). The match works precisely because Brunschwig devoted pages to rosewater where most herbs get 2-3 lines. This confirms that Section H folios CAN match to herbal recipes when the source text has sufficient operational content.
   
   The Section H illustrations may carry COMPLEMENTARY content: the text encodes HOW to distill (operational grammar), the illustration identifies WHAT to distill (plant identity). This is consistent with C138 (illustrations don't constrain text) — the two are not redundant but independent information channels. The Testamentum accounts for ~25 of 83 Currier B folios (30%); the remaining folios likely encode content from a herbal distillation tradition whose surviving texts lack the operational detail needed for 8D matching.
 
