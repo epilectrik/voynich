@@ -7,6 +7,65 @@
 
 ---
 
+## Three Functional Classes (C1941)
+
+Dark pipeline MIDDLEs divide into three classes based on folio distribution and recipe correspondence:
+
+### Class 1: Equipment Identifiers (universal — appear on 10+ folios)
+
+| MIDDLE | Atoms | Reading | Corpus |
+|--------|-------|---------|--------|
+| lch | state.adjust.watch | Distillation apparatus | 65/82 |
+| lk | state.heat | Fire/furnace state | 60/82 |
+| eed | cool.cool.do | Extended cooling execution | 35/82 |
+
+### Class 2: Process Identifiers (technique-specific — appear on 3-9 folios)
+
+| MIDDLE | Atoms | Reading | Folios |
+|--------|-------|---------|--------|
+| cth | adjust.transfer.watch | State-transition monitoring | 9/19 |
+| lsh | state.sequence.watch | Phase-boundary observation regime | 7/19 |
+| eet | cool.cool.transfer | Cooling transfer operation | 6/19 |
+| ksh | heat.sequence.watch | Sequential thermal observation | 4/19 |
+| ir | iterate.respond | Iteration scaffold | 4/19 |
+| eke | cool.heat.cool | Precision quality assessment | 3/19 |
+| tsh | transfer.sequence.watch | Cohobation / return-distillation | 3/19 |
+| ro | respond.arrange | Fermentation response | 3/19 |
+| ep | cool.pause | Cooling pause test | 3/19 |
+| cfh | adjust.flag.watch | Flagged quality assessment | 3/19 |
+| dyt | do.end.transfer | Complete material transfer | 3/19 |
+| es | cool.sequence | Cooling sequence check | 3/19 |
+| ta | transfer.yield | Thermal transfer yield at transitions | 3/19 |
+| octh | arrange.adjust.transfer.watch | Careful material transfer arrangement | 3/19 |
+| ockh | arrange.adjust.heat.watch | Ash bed / heated arrangement | 3/19 |
+| eok | cool.arrange.heat | Gentle fire / thermal arrangement test | 3/19 |
+
+### Class 3: Material Identifiers (substance-specific — enriched on specific recipe types)
+
+**Corpus-validated:**
+
+| MIDDLE | Atoms | Reading | Corpus | Enrichment |
+|--------|-------|---------|--------|-----------|
+| fch | flag.adjust.watch | Mercury / mercury-water | 19/82 | ∞ |
+| eckh | cool.adjust.heat.watch | Volatile liquid (plant or mineral) | 18/82 | ∞ |
+| rai | respond.yield.iterate | Metallic product/fraction | 11/82 | 2.59x |
+| cs | adjust.sequence | Gold | 9/82 | 17.5x |
+
+**Folio-exclusive (selected — see Tier 4 section below for full list):**
+
+| MIDDLE | Folio | Reading |
+|--------|-------|---------|
+| loch | f82r | Lunaria moisture |
+| rol | f76v | Tincture ferment |
+| ea | f112r | Ruby liquor |
+| fsh | f83r | Lute compound (linen+flour+egg) |
+| alod | f108r | Aludel (ash-phase vessel) |
+| olyd | f81v | Gold solution |
+
+---
+
+## Detailed Entries
+
 ## Tier 1: Universal Equipment/Process Identifiers
 
 These appear on 10+ matched folios. They encode shared apparatus or universal operations.
