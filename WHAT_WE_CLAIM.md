@@ -14,11 +14,11 @@ These claims are grounded in statistical evidence from the transcript. They do n
 
 - **The manuscript's main text (Currier B) forms a closed executable grammar.** 479 token types collapse to 49 instruction classes with 100% coverage. No token falls outside the grammar. (C121, C124)
 
-- **The grammar is governed by a single shared set of rules across all 83 folios.** There is no folio that uses a different grammar. The instruction classes, forbidden transitions, and macro-state dynamics apply universally. (C124, C531)
+- **The grammar is governed by a single shared set of rules across all 83 folios.** There is no folio that uses a different grammar. The instruction classes, disfavored transitions, and macro-state dynamics apply universally. (C124, C531)
 
-- **17 state transitions are structurally forbidden, organized into 5 hazard classes.** These are not rare — they are absent. The forbidden transitions partition into classes with near-orthogonal atom territories. (C109, C110, C1528-C1533)
+- **17 state transitions are structurally disfavored, organized into 5 hazard classes.** These transitions occur at ~65% compliance — strongly suppressed but not absolute. The disfavored transitions partition into classes with near-orthogonal atom territories. (C109, C789, C1528-C1533)
 
-- **The manuscript has a three-level safety architecture.** Level 1: vocabulary exclusion (certain constructions cannot be built). Level 2: hazard source typing (headed tokens have 0% hazard source rate). Level 3: transition prohibition (the 17 forbidden transitions). These are independent, redundant safety layers. (C1446, C1546, C1553-C1555)
+- **The manuscript has a three-level safety architecture.** Level 1: vocabulary exclusion (certain constructions cannot be built). Level 2: hazard source typing (headed tokens have 0% hazard source rate). Level 3: transition suppression (the 17 disfavored transitions, ~65% compliance). These are independent, redundant safety layers. (C1446, C1546, C1553-C1555)
 
 - **Each line is a self-contained safety envelope.** Lines carry no state from previous lines. Within a line, operations follow a fixed positional grammar: specification opens, thermal work fills the middle, closure ends. (C1463-C1471)
 

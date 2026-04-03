@@ -21,7 +21,7 @@ For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTI
 
 ## The Short Version
 
-The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar** — a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 forbidden transitions) is established at high confidence across 1,938 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 42 procedural chapters matched to ~25 folios covering 89% of the *Testamentum*'s procedural content — including 3 confirmed by independent structural evidence and 5 more confirmed via reverse-blind prediction.
+The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar** — a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 disfavored transitions) is established at high confidence across 1,938 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 42 procedural chapters matched to ~25 folios covering 89% of the *Testamentum*'s procedural content — including 3 confirmed by independent structural evidence and 5 more confirmed via reverse-blind prediction.
 
 The manuscript reorganizes this content for workshop use: preparation procedures cluster in Herbal B, transmutation procedures cluster in Section S, and theoretical content is entirely absent. An 18-atom compositional architecture produces readable operational descriptions for every token (100% coverage), and cross-folio vocabulary analysis has identified specific tokens encoding material introduction (`dar`, 6/6 partition) and quality checking (`chekar`, 7/7 folios).
 
@@ -33,11 +33,11 @@ The manuscript is organized into four structurally distinct layers, each serving
 
 Imagine discovering documents in an unknown notation. Translation fails. No dictionary helps.
 
-But structural analysis reveals patterns: the notation uses a small set of symbols in strict positional rules. Certain combinations are forbidden. The symbols cluster into families that correlate with mathematical ratios — ratios that match the harmonic series. The forbidden combinations correspond to dissonant intervals.
+But structural analysis reveals patterns: the notation uses a small set of symbols in strict positional rules. Certain combinations are strongly disfavored. The symbols cluster into families that correlate with mathematical ratios — ratios that match the harmonic series. The forbidden combinations correspond to dissonant intervals.
 
 No one "translated" anything — but they proved, from internal structure alone, that the notation encodes music. The structure *is* the semantics.
 
-**This is exactly what we are doing with the Voynich Manuscript.** We proved that its internal structure — 49 instruction classes, 17 forbidden transitions, kernel-centric convergence, bounded recovery, and dimensionality matching modern distillation manuals — fits the domain of thermodynamic process control and no other domain tested. The forbidden transitions correspond to physical failure modes. The convergence behavior matches distillation physics. The recovery architecture matches Brunschwig's historical practice.
+**This is exactly what we are doing with the Voynich Manuscript.** We proved that its internal structure — 49 instruction classes, 17 disfavored transitions, kernel-centric convergence, bounded recovery, and dimensionality matching modern distillation manuals — fits the domain of thermodynamic process control and no other domain tested. The disfavored transitions correspond to physical failure modes. The convergence behavior matches distillation physics. The recovery architecture matches Brunschwig's historical practice.
 
 ---
 
@@ -129,7 +129,7 @@ At the grammar's center sit three irreducible operators: **k** (energy input, ap
 
 ### Hazard Topology
 
-The grammar enforces 17 forbidden transitions organized into 5 hazard classes:
+The grammar disfavors 17 transitions (~65% compliance, C789) organized into 5 hazard classes:
 
 | Class | What Goes Wrong |
 |-------|----------------|
@@ -139,7 +139,7 @@ The grammar enforces 17 forbidden transitions organized into 5 hazard classes:
 | RATE_MISMATCH (6%) | Flow imbalance destabilizing the system |
 | ENERGY_OVERSHOOT (6%) | Thermal damage to material |
 
-All 17 forbidden transitions are mediated through 23 "hub" MIDDLEs. At the atom level, the k-HEAD atom has complete hazard immunity (0.0% across 3,100 tokens). The system is safe during specification (Mode A: zero violations) and only vulnerable during execution (Mode B: 100% of violations).
+All 17 disfavored transitions are mediated through 23 "hub" MIDDLEs. At the atom level, the k-HEAD atom has complete hazard immunity (0.0% across 3,100 tokens). The system is safe during specification (Mode A: zero violations) and only vulnerable during execution (Mode B: 100% of violations).
 
 ### Program Structure
 
@@ -149,7 +149,7 @@ When the system drifts toward a hazard, the grammar provides escape routes. Haza
 
 ### Generative Sufficiency
 
-A Markov model using the discovered grammar (M2.1: quintile-conditioned 49×49 transition matrices + symmetric forbidden suppression) passes **21/21 structural metrics** — reproducing every measurable property of the real text. A null model with no sequential structure passes at most 14/21. The 7 tests M0 cannot pass require sequential structure, topological constraints, or positional awareness that frequency sampling cannot produce. For the full progression, see **[Markov Model Evolution](context/MARKOV_MODEL_EVOLUTION.md)**.
+A Markov model using the discovered grammar (M2.1: quintile-conditioned 49×49 transition matrices + symmetric disfavored-transition suppression) passes **21/21 structural metrics** — reproducing every measurable property of the real text. A null model with no sequential structure passes at most 14/21. The 7 tests M0 cannot pass require sequential structure, topological constraints, or positional awareness that frequency sampling cannot produce. For the full progression, see **[Markov Model Evolution](context/MARKOV_MODEL_EVOLUTION.md)**.
 
 For the complete formal specification of all structures described above, see **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)**.
 
@@ -230,7 +230,7 @@ For the full usage model, see **[OPERATOR_MODEL.md](phases/OPERATOR_USAGE_MODEL/
 
 Systematic comparison with 8 medieval document genres — recipe collections, herbals, laboratory notebooks, surgical manuals, alchemical treatises, materia medica, trade guild manuals, and mechanical treatises — found no adequate match. The best-fitting genre (laboratory notebooks) achieved only 2.5/7 on structural dimensions.
 
-Three properties of the Voynich Manuscript have zero precedent in medieval documentation: a formal three-level safety architecture, multi-register organization (four independent layers addressing different aspects of the same domain), and a formal operational grammar with forbidden transitions.
+Three properties of the Voynich Manuscript have zero precedent in medieval documentation: a formal three-level safety architecture, multi-register organization (four independent layers addressing different aspects of the same domain), and a formal operational grammar with statistically disfavored transitions.
 
 We propose a new analytical classification — **OPERATIONAL CONTROL CODEX** — defined as a closed-grammar technical control notation for encoding operational procedures with embedded safety constraints. This is a proposed analytical category derived from structural properties, not a recovered medieval native genre term. If this genre existed historically, the structural evidence suggests it would have appeared in Central European guild contexts during the pre-publication secrecy window (1350-1500).
 
@@ -345,7 +345,7 @@ The Galenic framework predicts the organizational *shape* of the Voynich system 
 |----------------|---------------------|
 | 4 named qualities | 9 affordance bins defined by behavioral signatures |
 | 4 discrete degrees | 14-63 frequency-ranked MIDDLEs per channel |
-| "Avoid degree 4" prohibition | Topological forbidden graph (17 transitions, 5 classes) |
+| "Avoid degree 4" prohibition | Topological disfavored graph (17 transitions, 5 classes, ~65% compliance) |
 | 12 named operations | 49 instruction classes |
 
 The conclusion: the Galenic framework is the author's *training background*, not the system's *design principle*. The author organized their work using Galenic categories but built a control grammar that transcended the Galenic framework at every quantitative level. Bio section (f74-f84) is structurally distinct — k-enriched, LINK-depleted, dynamically stable — consistent with balneum mariae (gentle sustained water-bath heating).
@@ -370,9 +370,9 @@ These are not all permanent gaps. The *Testamentum* matching has already resolve
 
 ### Common Questions
 
-**If this isn't a translation, what did you solve?** We recovered the formal structure: 49 instruction classes, their transition rules, forbidden states, compositional encoding, and the safety architecture that constrains them. This is analogous to proving documents contain sheet music without hearing a note played — the structural constraints themselves reveal what the notation encodes.
+**If this isn't a translation, what did you solve?** We recovered the formal structure: 49 instruction classes, their transition rules, disfavored states, compositional encoding, and the safety architecture that constrains them. This is analogous to proving documents contain sheet music without hearing a note played — the structural constraints themselves reveal what the notation encodes.
 
-**Why do you think it isn't a language or cipher?** Natural languages show Zipf's law, flexible word order, and open-class vocabulary growth. The Voynich shows none of these — instead, 100% grammar coverage by 49 rigid classes, 17 forbidden transitions, and zero translation-eligible zones (C132). Cipher tests returned 0/18 (C207).
+**Why do you think it isn't a language or cipher?** Natural languages show Zipf's law, flexible word order, and open-class vocabulary growth. The Voynich shows none of these — instead, 100% grammar coverage by 49 rigid classes, 17 disfavored transitions (~65% compliance), and zero translation-eligible zones (C132). Cipher tests returned 0/18 (C207).
 
 **Why doesn't the inability to identify substances invalidate the model?** Because the system is designed to be substance-independent. A thermostat's control logic works regardless of what room it heats. The manuscript encodes what to do, when to intervene, and what to avoid — without specifying what is being processed. This is a feature, not a limitation.
 
@@ -386,7 +386,7 @@ These interpretations have been structurally ruled out:
 |-----------|-------------|
 | Natural language | 0.19% reference rate to any known language; 49-class grammar with zero translation-eligible zones |
 | Cipher or substitution | 0.19% reference rate (ciphers require consistent mapping) |
-| Glossolalia / random text | 100% grammar coverage with strict forbidden transitions |
+| Glossolalia / random text | 100% grammar coverage with statistically disfavored transitions |
 | Illustrations constrain text | Zero statistical coupling between illustration features and token selection |
 | Calendar encoding (Zodiac) | 0/4 predictions met; 98%+ self-transition incompatible with semantic systems |
 | Simple cycle topology (AZC) | Strict forward-only ordering in R-series |

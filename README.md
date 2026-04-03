@@ -14,7 +14,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 
 **We claim** (Tier 0-2: proven from the data):
 - Currier B forms a closed executable grammar — 49 instruction classes with 100% coverage
-- 17 state transitions are structurally forbidden, organized into 5 hazard classes
+- 17 state transitions are structurally disfavored (~65% compliance), organized into 5 hazard classes (C789)
 - A three-level safety architecture provides defense-in-depth (vocabulary exclusion, hazard typing, transition prohibition)
 - Four registers (A, B, AZC, HT) share a common 18-atom compositional substrate
 - The notation is not natural language (C132) and not cipher (C207, 0/18 tests passed)
@@ -38,7 +38,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 |---------|----------|
 | 49 instruction classes | 9.8x compression from 479 token types, 100% coverage |
 | 83 programs (folios) | 23,243 Currier B instructions, each folio structurally distinct |
-| 17 forbidden transitions | 5 hazard classes with near-orthogonal atom territories |
+| 17 disfavored transitions | 5 hazard classes with near-orthogonal atom territories (~65% compliance, C789) |
 | Three-level safety | Construction exclusion + hazard typing + transition prohibition |
 | 18-atom instruction encoding | HEAD+MOD*+TERM compositional grammar; frame predicts 64% of category |
 | 18-atom instruction encoding | Every token decomposes structurally; 8 atoms have locked operational glosses, 6 solid, 5 plausible |
