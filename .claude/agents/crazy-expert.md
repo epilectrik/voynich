@@ -2273,6 +2273,9 @@ C1945	Ch50M (error correction) → f111r: 8D weak (3.755) but atom diagnostic. N
 C1946	Higher Mercuriorum (Ch36-Ch52) = 6+ procedural chapters reclassified from theoretical. Matching: 42→46 chapters.	2	B, PL, Mercuriorum, C1882	prev=42. new=46. reclassified=6.
 C1947	Ch15P (alt gold dissolution) → f84v: cs×2 early, dar=4 matching 4 introductions, lch×3 for double alembic. Recto/verso of f84r/Ch14P.	3	B, PL, Ch15P, f84v, cs, C1936	tokens=347. dar=4. cs=2.
 C1948	Ch25P (fixation of air) → f115v: dar=0, dal=0, eed×7 (cooling per cycle), lk=31 (graduated 3-day fire). Recto/verso of f115r/Ch21P+28P.	3	S, PL, Ch25P, f115v, eed, C1936	tokens=399. eed=7. lk_pfx=31.
+C1949	A-system RI-embedded dark breadth: f58r=11/16 bases (master catalog), herbal mean=1.1. Section T 2.7x H. Raw density negligible (C755).	2	A, dark pipeline, RI, C1903, C1942	f58r_breadth=11. H_breadth=1.1.
+C1950	Herbal A dark tokens = PROCESS-class (cth, ro, eke). 100% process, 0% equipment per C1941. Complex-technique plants.	2	A, H, dark pipeline, C1941	process=100%. equip=0%.
+C1951	Dark pipeline = text-based channel substitute for illustrations. Visual ID for plants, textual ID (fch, cs) for minerals.	3	A, B, dark pipeline, illustration	channel=visual_vs_textual.
 
 ---
 

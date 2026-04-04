@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1948 validated constraints | **Version:** 6.14 | **Date:** 2026-04-04
+**Total:** 1951 validated constraints | **Version:** 6.15 | **Date:** 2026-04-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6114,7 +6114,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 
 ---
 
-### Phase 638: Material-Marker Hard-Filter Matching — EXTENDED_MATCHING_CONFIRMED (C1943-C1947)
+### Phase 639: A-System Functional Types — FUNCTIONAL_BIFURCATION_CONFIRMED (C1949-C1951)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1949 | A-system RI-embedded dark breadth distinguishes catalog from specification folios. f58r breadth=11/16, herbal mean=1.1. Section T embed 2.7x Section H. Raw dark density negligible (coverage optimization suppresses PP-level signal per C755) | 2 | A, dark pipeline, RI, C1903, C1942, C755 | T_embed=0.040. H_embed=0.015. f58r_breadth=11. H_mean_breadth=1.1. |
+| 1950 | Herbal A folio dark tokens are PROCESS-class (cth, ro, eke), not material or equipment class per C1941 taxonomy. Plants with elevated dark density require complex techniques (fermentation, state-monitoring) | 2 | A, H, dark pipeline, C1941 | outlier_folios=5. process_class=100%. equipment_class=0%. |
+| 1951 | Dark pipeline serves as text-based channel substitute for illustrations: plant illustrations carry material identity visually; dark MIDDLEs (fch, cs) carry material identity textually where illustrations cannot depict the material (minerals, chemicals). A-system expresses this through RI derivative breadth | 3 | A, B, dark pipeline, illustration, C1939, C1940, C1942 | channel=visual_vs_textual. |
+
+**Phase 639 findings (A-System Functional Types, FUNCTIONAL_BIFURCATION_CONFIRMED):**
+- Raw dark MIDDLE density failed to distinguish A folio types (H=0.006, P=0.008, T=0.009). Signal emerges at RI derivative level (C1903).
+- f58r catalogs 11/16 dark base types — near-complete vocabulary reference. Typical herbal folios: breadth 0-1.
+- Herbal outliers (f90r2, f10v, f96v) carry exclusively PROCESS-class dark tokens — these plants require complex techniques.
+- The dark pipeline is a text-based substitute for illustrations where visual material identification is impossible (mercury, gold, apparatus).
+
+---
+
+### Phase 638: Material-Marker Hard-Filter Matching — EXTENDED_MATCHING_CONFIRMED (C1943-C1948)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|

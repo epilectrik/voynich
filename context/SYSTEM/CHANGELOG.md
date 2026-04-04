@@ -4,6 +4,24 @@
 
 ---
 
+## Version 6.15 (2026-04-04) - Phase 639: A-System Functional Types
+
+### Summary
+
+A-system contains functionally distinct folio types distinguished by RI-embedded dark base breadth: master catalog folios (f58r breadth=11/16) vs herbal specification folios (mean breadth=1.1). Raw dark MIDDLE density failed (coverage optimization suppresses PP-level signal); signal emerges at RI derivative level per C1903. Dark pipeline serves as text-based channel substitute for illustrations. 3 constraints (C1949-C1951).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/A_SYSTEM_FUNCTIONAL_TYPES/` — Phase 639 INDEX.md |
+| **ADDED** | C1949: RI-embedded dark breadth distinguishes A folio types |
+| **ADDED** | C1950: Herbal A dark tokens are PROCESS-class per C1941 |
+| **ADDED** | C1951: Dark pipeline as text-based illustration substitute |
+| **UPDATED** | INDEX.md — +3 constraints (1951 total), Phase 639 section |
+
+---
+
 ## Version 6.14 (2026-04-04) - C1948: Recto/Verso Scan Match (Ch25P→f115v)
 
 ### Summary
