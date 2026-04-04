@@ -4,6 +4,22 @@
 
 ---
 
+## Version 6.16 (2026-04-04) - C1952: Ch48M→f113v Upgraded from Tentative
+
+### Summary
+
+Full atom-level cold read against Latin confirms Ch48M (ferment preparation) → f113v. ro (fermentation marker) at L10, fch at L33 (67%) matching mercury at step 11/14, ot=70 dominant (4 powder types), dar=2 (minimal addition), daiin=4 (reiteration/multiplication), rare e_depth=4 tokens. Coverage: 48/53 (91%).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1952: Ch48M→f113v upgraded to SUPPORTED |
+| **UPDATED** | Folio note f113v (replaced TENTATIVE with full cold read) |
+| **UPDATED** | All coverage numbers: 47→48, 89%→91% |
+
+---
+
 ## Version 6.15 (2026-04-04) - Phase 639: A-System Functional Types
 
 ### Summary

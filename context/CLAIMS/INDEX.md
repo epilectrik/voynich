@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1951 validated constraints | **Version:** 6.15 | **Date:** 2026-04-04
+**Total:** 1952 validated constraints | **Version:** 6.16 | **Date:** 2026-04-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6140,6 +6140,7 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 | 1946 | Higher Mercuriorum chapters (Ch36-Ch52) contain 6+ procedural chapters previously classified as "theoretical." Latin verb counting reveals Ch40M (~20 verbs), Ch42M (~18), Ch43M (~10), Ch47M (~23), Ch48M (~20), Ch50M (~20), Ch51M (~20), Ch52M (~42). Matching extends from 42 to 45 chapters (3 confirmed + 1 tentative) | 2 | B, PL, Mercuriorum, C1882, C1932 | prev_matched=42. new_matched=45. reclassified=6. new_procedural=53. |
 | 1947 | Ch15P (alternative gold dissolution) matches f84v: cs×2 at L7,L9 (gold introduced early), dar=4 exactly matching 4 material introductions (vegetable G, rectified water, gold, lunaria juice), dal=1 matching vigorous *proijce* operations, lch×3 matching double alembic. Recto/verso of f84r (Ch14P gold dissolution, C1936). Fourth confirmed recto/verso pair | 3 | B, PL, Ch15P, f84v, cs, C1936 | tokens=347. dar=4. dal=1. cs=2. lch=3. recto_verso=f84r/Ch14P. |
 | 1948 | Ch25P (fixation of air) matches f115v: dar=0, dal=0 (zero material addition — fixation cycles existing material). eed×7 (extended cooling, one per sublimation cycle). lk=31 prefix (graduated fire over 3 days). lch×4 (sublimatory apparatus). cth (fixation monitoring). Recto/verso of f115r (Ch21P+28P red sulfur). Fifth confirmed recto/verso pair | 3 | S, PL, Ch25P, f115v, eed, C1936 | tokens=399. dar=0. dal=0. eed=7. lk_pfx=31. lch=4. recto_verso=f115r/Ch21P+28P. |
+| 1952 | Ch48M (ferment preparation) matches f113v: UPGRADED from tentative. ro (fermentation marker) at L10. fch at L33 (67%) matches mercury at step 11/14. ot=70 dominant (4 powder types). dar=2, daiin=4 (reiteration/multiplication). e_depth=4 tokens (rare, extreme refinement). Token/verb ratio 24.0 | 3 | S, PL, Ch48M, f113v, fch, ro | 8D_dist=2.455. tokens=479. dar=2. daiin=4. ro=1. fch_position=67%. e_depth4=2. |
 
 **Phase 638 findings (Material-Marker Hard-Filter Matching + Recto/Verso Extension, EXTENDED_MATCHING_CONFIRMED):**
 - Using fch (mercury marker, C1939) as a hard filter, 7 unmatched fch-bearing folios were scanned against 8 higher Mercuriorum chapters. 3 confirmed + 1 tentative new matches found.
@@ -6149,6 +6150,7 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Higher Mercuriorum reclassification (C1946): 6 chapters reclassified from "theoretical" to "procedural" based on Latin verb counting. Extends total procedural chapter count from 47 to 53.
 - Ch15P→f84v (C1947): cs hard-filter match. Alternative gold dissolution via alembic + lunaria, verso of f84r (Ch14P). dar=4 matches 4 material introductions exactly. Fourth recto/verso pair (C1936).
 - Ch25P→f115v (C1948): Recto/verso scan match. Fixation of air (reiterated sublimation-imbibition cycles), verso of f115r (Ch21P+28P red sulfur). Zero dar/dal (non-additive recipe), 7×eed (cooling per cycle), lk=31 (graduated fire). Fifth recto/verso pair.
+- Ch48M→f113v (C1952): Upgraded from TENTATIVE to SUPPORTED. Full atom-level cold read confirms: ro (fermentation marker), fch at 67% matching mercury at step 11/14, ot=70 dominant for multi-product steps, dar=2 (minimal addition), daiin=4 (reiteration/multiplication), rare e_depth=4 tokens for extreme refinement. Coverage: 48/53 (91%).
 - 3 fch folios (f40v, f50r, f86v3) remain unmatched — Section H/C folios likely encoding mercury-involving content from different source traditions.
 
 ---

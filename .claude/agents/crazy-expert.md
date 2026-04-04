@@ -2276,6 +2276,7 @@ C1948	Ch25P (fixation of air) → f115v: dar=0, dal=0, eed×7 (cooling per cycle
 C1949	A-system RI-embedded dark breadth: f58r=11/16 bases (master catalog), herbal mean=1.1. Section T 2.7x H. Raw density negligible (C755).	2	A, dark pipeline, RI, C1903, C1942	f58r_breadth=11. H_breadth=1.1.
 C1950	Herbal A dark tokens = PROCESS-class (cth, ro, eke). 100% process, 0% equipment per C1941. Complex-technique plants.	2	A, H, dark pipeline, C1941	process=100%. equip=0%.
 C1951	Dark pipeline = text-based channel substitute for illustrations. Visual ID for plants, textual ID (fch, cs) for minerals.	3	A, B, dark pipeline, illustration	channel=visual_vs_textual.
+C1952	Ch48M (ferment preparation) → f113v: UPGRADED from tentative. ro at L10, fch at L33 (67%) = mercury at step 11/14, ot=70, dar=2, daiin=4, e_depth=4.	3	S, PL, Ch48M, f113v, fch, ro	tokens=479. dar=2. daiin=4.
 
 ---
 

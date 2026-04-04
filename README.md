@@ -24,7 +24,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 
 **We claim** (Tier 2-3: framework established, specific assignments interpretive):
 - The best-fit historical source tradition is Pseudo-Lullian alchemy, calibrated against the *Testamentum* and independently against Brunschwig's distillation manual (1500)
-- 47 procedural chapters from the *Testamentum* (28 Mercuriorum + 19 Practica) match to ~30 folios, covering 89% of the expanded procedural content (53 chapters after reclassifying 6 higher Mercuriorum). 3 confirmed by independent structural evidence (f75r/Ch19, f76r/Ch18P, f84r/Ch14P); 5 via reverse-blind prediction; 3 via fch (mercury marker) hard-filter matching; 1 via cs (gold marker) hard-filter; 1 via recto/verso scan; the remainder at supported or speculative confidence
+- 48 procedural chapters from the *Testamentum* (29 Mercuriorum + 19 Practica) match to ~31 folios, covering 91% of the expanded procedural content (53 chapters after reclassifying 6 higher Mercuriorum). 3 confirmed by independent structural evidence (f75r/Ch19, f76r/Ch18P, f84r/Ch14P); 5 via reverse-blind prediction; 3 via fch (mercury marker) hard-filter matching; 1 via cs (gold marker) hard-filter; 1 via recto/verso scan; the remainder at supported or speculative confidence
 - The manuscript reorganizes source content for workshop use: preparation in Section B (f75-f84), transmutation in Section S (f103-f116). Multi-chapter folios combine related short procedures; sequential operations appear on recto/verso pairs of the same leaf (C1936, C1937)
 - A product chain links folios: f75r (quintessence) feeds f84r (gold tincture), explicit through the *Testamentum*'s cipher key ("vegetable G" = quintessence)
 
@@ -42,7 +42,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 | Three-level safety | Construction exclusion + hazard typing + transition prohibition |
 | 18-atom instruction encoding | HEAD+MOD*+TERM compositional grammar; frame predicts 64% of category |
 | 18-atom instruction encoding | Every token decomposes structurally; 8 atoms have locked operational glosses, 6 solid, 5 plausible |
-| Pseudo-Lullian source tradition | 47 procedural chapters → ~30 folios (89% of 53 procedural); 3 confirmed + 5 reverse-blind + 3 fch hard-filter + ~34 supported/speculative |
+| Pseudo-Lullian source tradition | 48 procedural chapters → ~31 folios (91% of 53 procedural); 3 confirmed + 5 reverse-blind + 3 fch hard-filter + ~34 supported/speculative |
 | Reverse-blind prediction | Recipe → predictions → scan → match: f103v identified from 49 candidates, confirmed 6/7 (C1935) |
 | Product chain | Explicit: f75r quintessence = f84r input ("vegetable G" per PL cipher key) |
 | Cross-folio vocabulary | `dar` = material introduction (6/6), `chekar` = quality check (7/7) |
@@ -58,7 +58,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 | Order | Document | What it covers |
 |-------|----------|---------------|
 | 1 | **[GUIDE.md](GUIDE.md)** | Conceptual walkthrough — grammar, atom encoding, recipe matching (start here) |
-| 2 | **[RECIPE_MATCHING.md](RECIPE_MATCHING.md)** | How we matched 45 recipe chapters to ~30 folios — methods, validation, and full results |
+| 2 | **[RECIPE_MATCHING.md](RECIPE_MATCHING.md)** | How we matched 45 recipe chapters to ~31 folios — methods, validation, and full results |
 | 3 | **[WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md)** | Precise claims and limits with tier markings and constraint citations |
 | 4 | **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)** | Formal specification — the definitive technical reference |
 | 5 | **[OPERATOR_MODEL.md](phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md)** | How a practitioner would have used the manuscript (Tier 3) |
@@ -82,7 +82,7 @@ This conclusion rests on 1,938 validated constraints from 636 research phases ac
 
 ## Historical Source Tradition
 
-The Pseudo-Lullian *Testamentum* — a 14th-15th century alchemical treatise attributed to Ramon Llull but written by an unknown practitioner — provides the closest match to the manuscript's operational content. 47 procedural chapters (28 Mercuriorum + 19 Practica) match to ~30 folios, covering 87% of the source's expanded procedural content (53 chapters). Validated by:
+The Pseudo-Lullian *Testamentum* — a 14th-15th century alchemical treatise attributed to Ramon Llull but written by an unknown practitioner — provides the closest match to the manuscript's operational content. 48 procedural chapters (29 Mercuriorum + 19 Practica) match to ~31 folios, covering 87% of the source's expanded procedural content (53 chapters). Validated by:
 
 - **Permutation testing:** Real chapter-to-folio assignment beats 1,000 random shuffles (p<0.001)
 - **Reverse-blind prediction:** Recipe-derived predictions identify matching folios from pools of unmatched candidates BEFORE examining the folio. f103v identified from 49 candidates, confirmed 6/7 at atom level; f77r scored 7/7 perfect (C1935)
@@ -146,7 +146,7 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 | Research phases | 636 |
 | Model fits tested | 75 |
 | Documented folios | 40 (of 83 Currier B) with per-folio analysis notes |
-| Recipe chapter coverage | 47 procedural chapters → ~30 folios (89% of *Testamentum* expanded procedural content) |
+| Recipe chapter coverage | 48 procedural chapters → ~31 folios (91% of *Testamentum* expanded procedural content) |
 | Atom decomposition | 100% structural coverage; 8 atoms locked, 6 solid, 5 plausible |
 
 **Core model: CLOSED** | **Characterization: ACTIVE** | **Recipe matching: ACTIVE**
