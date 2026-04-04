@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1952 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1955 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1952.
+the highest ID present is C1955.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1952 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1955 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1952 validated constraints are present as canonical one-line claims with tier
+1955 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-04 12:39
-**Version:** FROZEN STATE (1952 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-04 16:03
+**Version:** FROZEN STATE (1955 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2191,6 +2191,9 @@ C1949	A-system RI-embedded dark breadth distinguishes catalog from specification
 C1950	Herbal A folio dark tokens are PROCESS-class (cth, ro, eke), not material or equipment class per C1941 taxonomy. Plants with elevated dark density require complex techniques (fermentation, state-monitoring)	2	A, H, dark pipeline, C1941
 C1951	Dark pipeline serves as text-based channel substitute for illustrations: plant illustrations carry material identity visually; dark MIDDLEs (fch, cs) carry material identity textually where illustrations cannot depict the material (minerals, chemicals). A-system expresses this through RI derivative breadth	3	A, B, dark pipeline, illustration, C1939, C1940, C1942
 C1952	Ch48M (ferment preparation) matches f113v: UPGRADED from tentative. ro (fermentation marker) at L10. fch at L33 (67%) matches mercury at step 11/14. ot=70 dominant (4 powder types). dar=2, daiin=4 (reiteration/multiplication). e_depth=4 tokens (rare, extreme refinement). Token/verb ratio 24.0	3	S, PL, Ch48M, f113v, fch, ro
+C1953	Ch23P (sulfur multiplication testing) matches f114r: eed×8 (cooling per test cycle, highest of all candidates), daiin=11 (iterative testing, highest), zero material markers (testing existing stone), 12 paragraphs for ~12 steps, e_depth=4 (rare extreme refinement), cth (state-transition monitoring). Recto of f114v/Ch31P	3	S, PL, Ch23P, f114r, eed, C1936
+C1954	Ch31P (medicine multiplication in quantity) matches f114v: dar=2, daiin=6 (iterative projections), cth×3 (congelation monitoring), eed×3. Recto/verso of f114r/Ch23P (testing→production). Sixth confirmed recto/verso pair. Non-procedural promotional content (~50% of Latin chapter) not encoded	3	S, PL, Ch31P, f114v, cth, C1936
+C1955	Ch17M (first mercury purification water) matches f106r (TENTATIVE): ro×2 matching fermentation step, lch (cucurbit+alembic), eed×2, ir (iteration). Recto/verso of f106v/Ch40M (preparation→application). Token/verb ratio low (16.8)	3	S, PL, Ch17M, f106r, ro, C1936
 
 ---
 

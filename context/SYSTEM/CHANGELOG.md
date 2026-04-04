@@ -4,6 +4,25 @@
 
 ---
 
+## Version 6.17 (2026-04-04) - C1953-C1955: Recto/Verso Scan Matches (51 chapters, 96%)
+
+### Summary
+
+Systematic recto/verso scan with atom-level cold reads identifies 3 new matches: Ch23P→f114r (sulfur multiplication testing, STRONGLY SUPPORTED: eed×8, daiin=11, zero material markers), Ch31P→f114v (medicine multiplication, 6th r/v pair), Ch17M→f106r (first mercury water, TENTATIVE: ro×2, recto of Ch40M). Coverage: 51/53 (96%).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1953: Ch23P→f114r (sulfur multiplication testing) |
+| **ADDED** | C1954: Ch31P→f114v (medicine multiplication, 6th r/v pair) |
+| **ADDED** | C1955: Ch17M→f106r (first mercury water, TENTATIVE) |
+| **CREATED** | Folio notes: f114r, f114v |
+| **UPDATED** | Folio note: f106r (replaced blind characterization) |
+| **UPDATED** | All coverage numbers: 48→51, 91%→96% |
+
+---
+
 ## Version 6.16 (2026-04-04) - C1952: Ch48M→f113v Upgraded from Tentative
 
 ### Summary

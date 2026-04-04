@@ -2277,6 +2277,9 @@ C1949	A-system RI-embedded dark breadth: f58r=11/16 bases (master catalog), herb
 C1950	Herbal A dark tokens = PROCESS-class (cth, ro, eke). 100% process, 0% equipment per C1941. Complex-technique plants.	2	A, H, dark pipeline, C1941	process=100%. equip=0%.
 C1951	Dark pipeline = text-based channel substitute for illustrations. Visual ID for plants, textual ID (fch, cs) for minerals.	3	A, B, dark pipeline, illustration	channel=visual_vs_textual.
 C1952	Ch48M (ferment preparation) → f113v: UPGRADED from tentative. ro at L10, fch at L33 (67%) = mercury at step 11/14, ot=70, dar=2, daiin=4, e_depth=4.	3	S, PL, Ch48M, f113v, fch, ro	tokens=479. dar=2. daiin=4.
+C1953	Ch23P (sulfur multiplication) → f114r: eed×8 + daiin=11 (both highest), zero material markers, 12 pars for 12 steps, e_depth=4. Recto of Ch31P.	3	S, PL, Ch23P, f114r, eed, C1936	eed=8. daiin=11. markers=0.
+C1954	Ch31P (medicine multiplication) → f114v: dar=2, daiin=6, cth×3. Verso of f114r/Ch23P. 6th r/v pair. Promotional text not encoded.	3	S, PL, Ch31P, f114v, cth, C1936	dar=2. daiin=6. cth=3.
+C1955	Ch17M (first mercury water) → f106r: TENTATIVE. ro×2, lch, eed×2, ir. Recto of f106v/Ch40M. Token/verb=16.8.	3	S, PL, Ch17M, f106r, ro	ro=2. tv=16.8.
 
 ---
 

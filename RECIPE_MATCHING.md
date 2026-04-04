@@ -228,7 +228,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 
 ## 8. Summary of Coverage
 
-**Mercuriorum (29 unique chapters matched across 21 folios):**
+**Mercuriorum (30 unique chapters matched across 22 folios):**
 
 *Note: Ch22M appears both within the f80r multi-chapter encoding (Ch21-25M ash chain) and as an independent detailed treatment on f82r. It is counted once in the total.*
 
@@ -254,9 +254,10 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 | Ch40M | Silver transmutation (dissolve, whiten, sublimate, project 1:50) | f106v | fch hard-filter (d=0.933, CONFIRMED) |
 | Ch47M | Coded elemental separation (ABC cipher, 4 elements) | f113r | fch hard-filter (ratio=1.992, CONFIRMED) |
 | Ch48M | Ferment preparation + multiplication (4 powder types, 1:100:1000 ratios) | f113v | fch hard-filter (atom upgraded from tentative) |
+| Ch17M | First mercury purification water (silver dissolution cycling) | f106r | Recto/verso scan (TENTATIVE) |
 | Ch50M | Error correction / troubleshooting (color management) | f111r | fch hard-filter (atom diagnostic) |
 
-**Practica (19 unique chapters matched across 15 folios):**
+**Practica (21 unique chapters matched across 17 folios):**
 
 | Chapter(s) | Recipe | Folio | Method |
 |-----------|--------|-------|--------|
@@ -274,7 +275,9 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 | Ch26P | Oil inceration / fusibility test | f66v | Reverse blind |
 | Ch27P | Mercury imbibition / exuberation | f103v | Reverse blind (6/7 CONFIRMED) |
 | Ch29P | Troubleshooting / correction | f43v | Reverse blind |
+| Ch23P | Sulfur multiplication testing (iterative potency testing) | f114r | Recto/verso scan (eed×8, daiin=11) |
 | Ch30P | Medicine multiplication | f105v | Reverse blind |
+| Ch31P | Medicine multiplication in quantity (projection onto mercury) | f114v | Recto/verso scan (verso of f114r) |
 
 **Not encoded (confirmed non-procedural):**
 - Ch5M — 4-sentence philosophical stub
@@ -285,9 +288,9 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 - 96 Theorica chapters (all philosophical)
 - 28/30 Furnis chapters (construction specifications)
 
-**48 unique procedural chapters → ~31 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 48 of 53 chapters classified as procedural (91%).**
+**51 unique procedural chapters → ~34 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 51 of 53 chapters classified as procedural (96%).**
 
-*Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The original 47-chapter count was revised upward to 53 when Latin verb counting (Phase 638) revealed 6 additional procedural chapters in the higher Mercuriorum (Ch40M, Ch42M, Ch43M, Ch47M, Ch48M, Ch50M) that had been bulk-classified as "theoretical." The 5 unmatched procedural chapters are Ch42M (lead work), Ch43M (tin work), Ch51M (vinegar recipe), Ch52M (projection technique), and one other. The original 4 exclusions: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration), Ch29M (elemental theory).*
+*Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The original 47-chapter count was revised upward to 53 when Latin verb counting (Phase 638) revealed 6 additional procedural chapters in the higher Mercuriorum (Ch40M, Ch42M, Ch43M, Ch47M, Ch48M, Ch50M) that had been bulk-classified as "theoretical." The 2 unmatched procedural chapters are Ch42M (lead work) and Ch43M (tin work). Ch51M (vinegar recipe) and Ch52M (projection technique) remain unmatched but may correspond to remaining Section S folios (f104r/f104v). The original 4 exclusions: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration), Ch29M (elemental theory).*
 
 ---
 
