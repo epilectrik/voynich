@@ -294,14 +294,20 @@ The product range encoded in the Voynich (47 matched chapters covering mercury p
 - Court botanical/herbal tradition from Gian Galeazzo Visconti
 - Milan had direct connections to Padua's medical school
 
+**Independent architectural evidence:** The Voynich rosette foldout (f85v-f86r) depicts castles with **Ghibelline swallowtail merlons** — the distinctive V-shaped battlements that were the political symbol of the Ghibelline faction and specifically of the Visconti family. Researchers at Cipher Mysteries (Pelling, 2017) independently proposed the top-right rosette castle as Milan based on: swallowtail merlons, circular canals (Milan's Navigli), ravelins, and accentuated gate structures. A 1395 drawing by Anovelo da Imbonate celebrating Gian Galeazzo Visconti's investiture shows swallowtail merlons on Milanese buildings, predating the Castello Sforzesco reconstruction (1450s). This is a completely independent line of evidence — architectural analysis and operational content analysis (Testamentum matching) both point to Visconti Milan without reference to each other.
+
+Note: The rosette TEXT is confirmed as organizational/indexing vocabulary (C1126, C1127), not procedural content. The castle illustration is a geographic marker; the text is a metalayer index. They serve different functions on the same page.
+
 **Tension with German encoding hypothesis:** The Voynich's atom letters may correspond to German operational verbs (k=kochen/cook, e=erkalten/cool). This suggests the encoder was a German speaker — possibly a German-trained physician working at an Italian court, consistent with the documented Padua↔Vienna/Bavaria traffic.
 
-**This is speculative.** No direct documentary evidence connects the Voynich to the Visconti court. The provenance gap (1440s-1560s) remains dark. But the convergence of Northern Italian vellum, Testamentum source text, Milanese reference in the source, court-scale product range, and the Rauwolf acquisition route through Northern Italy is suggestive.
+**This is speculative.** No direct documentary evidence connects the Voynich to the Visconti court. The provenance gap (1440s-1560s) remains dark. But the convergence of Northern Italian vellum, Testamentum source text, Milanese reference in the source, court-scale product range, Rauwolf acquisition route through Northern Italy, and independent architectural identification of Milanese castle features in the rosette foldout is suggestive.
 
 ### Sources
 - Prinke, Rafał T. (2023), research on Voynich manuscript provenance and Widemann transaction
 - Rauwolf's Italian collections: Ferrario et al. (2021), "The early book herbaria of Leonhard Rauwolf (S. France and N. Italy, 1560-1563)", *Rendiconti Lincei*
 - Walter & van Andel (2022), "The emperor's herbarium: Leonhard Rauwolf and his botanical field studies", *History of Science*
+- Pelling, Nick (2017), "Voynich nine-rosette page: (Part 1) Milan and swallow-tail merlons", Cipher Mysteries (https://ciphermysteries.com/2017/04/16/voynich-nine-rosette-page-part-1-milan-swallow-tail-merlons)
+- Ghibelline merlon analysis: various Voynich Ninja forum threads (https://www.voynich.ninja/thread-3643.html)
 
 ---
 
