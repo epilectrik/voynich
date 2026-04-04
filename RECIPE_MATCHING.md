@@ -288,7 +288,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 - 96 Theorica chapters (all philosophical)
 - 28/30 Furnis chapters (construction specifications)
 
-**51 unique procedural chapters → ~34 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 51 of 53 chapters classified as procedural (96%).**
+**51 unique procedural chapters → 41 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 51 of 53 chapters classified as procedural (96%).**
 
 *Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The original 47-chapter count was revised upward to 53 when Latin verb counting (Phase 638) revealed 6 additional procedural chapters in the higher Mercuriorum (Ch40M, Ch42M, Ch43M, Ch47M, Ch48M, Ch50M) that had been bulk-classified as "theoretical." The 2 unmatched procedural chapters are Ch42M (lead work) and Ch43M (tin work). Ch51M (vinegar recipe) and Ch52M (projection technique) remain unmatched but may correspond to remaining Section S folios (f104r/f104v). The original 4 exclusions: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration), Ch29M (elemental theory).*
 
