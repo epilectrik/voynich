@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1946 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1947 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1946.
+the highest ID present is C1947.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1946 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1947 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1946 validated constraints are present as canonical one-line claims with tier
+1947 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-03 13:35
-**Version:** FROZEN STATE (1946 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-03 20:39
+**Version:** FROZEN STATE (1947 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2185,6 +2185,7 @@ C1943	Ch40M (silver transmutation) matches f106v: 8D distance 0.933 (confident, 
 C1944	Ch47M (coded elemental separation) matches f113r: 8D distance 1.245 (ratio 1.992, highest confidence). 518 tokens, 23 verbs. fch×4 tracking 4 element extractions. cs at L43 endpoint matches gold projection discussion. Heavy lk (furnace)	3	B, S, PL, Ch47M, f113r, fch, cs
 C1945	Ch50M (error correction) matches f111r: 8D weak (3.755) but atom-level diagnostic. 614 tokens. Near-zero dar (2+2 on 614 tokens, lowest for size). Inverted e_depth (depth1>depth0, unique in corpus). P2=359 tokens (58%). 5×eed (cooling after overheating). 8D fails on structurally atypical recipes	3	B, S, PL, Ch50M, f111r, fch, eed, cth
 C1946	Higher Mercuriorum chapters (Ch36-Ch52) contain 6+ procedural chapters previously classified as "theoretical." Latin verb counting reveals Ch40M (~20 verbs), Ch42M (~18), Ch43M (~10), Ch47M (~23), Ch48M (~20), Ch50M (~20), Ch51M (~20), Ch52M (~42). Matching extends from 42 to 45 chapters (3 confirmed + 1 tentative)	2	B, PL, Mercuriorum, C1882, C1932
+C1947	Ch15P (alternative gold dissolution) matches f84v: cs×2 at L7,L9 (gold introduced early), dar=4 exactly matching 4 material introductions (vegetable G, rectified water, gold, lunaria juice), dal=1 matching vigorous *proijce* operations, lch×3 matching double alembic. Recto/verso of f84r (Ch14P gold dissolution, C1936). Fourth confirmed recto/verso pair	3	B, PL, Ch15P, f84v, cs, C1936
 
 ---
 

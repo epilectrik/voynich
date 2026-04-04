@@ -2270,7 +2270,8 @@ C1942	f58r/f58v (Section T, Currier A) = master catalog folios: A records for 6/
 C1943	Ch40M (silver transmutation) → f106v: 8D dist 0.933 (confident). 449 tokens, 20 verbs, fch×2 bracket two-phase structure.	3	B, S, PL, Ch40M, f106v, fch	8D_dist=0.933. tokens=449. fch=2.
 C1944	Ch47M (coded elemental separation) → f113r: 8D dist 1.245, ratio 1.992. fch×4 for 4 elements, cs at endpoint.	3	B, S, PL, Ch47M, f113r, fch, cs	8D_dist=1.245. ratio=1.992. fch=4.
 C1945	Ch50M (error correction) → f111r: 8D weak (3.755) but atom diagnostic. Near-zero dar, inverted e_depth, P2=359tok, 5×eed.	3	B, S, PL, Ch50M, f111r, eed	8D_dist=3.755. dar=2. P2=359. eed=5.
-C1946	Higher Mercuriorum (Ch36-Ch52) = 6+ procedural chapters reclassified from theoretical. Matching: 42→45 chapters.	2	B, PL, Mercuriorum, C1882	prev=42. new=45. reclassified=6.
+C1946	Higher Mercuriorum (Ch36-Ch52) = 6+ procedural chapters reclassified from theoretical. Matching: 42→46 chapters.	2	B, PL, Mercuriorum, C1882	prev=42. new=46. reclassified=6.
+C1947	Ch15P (alt gold dissolution) → f84v: cs×2 early, dar=4 matching 4 introductions, lch×3 for double alembic. Recto/verso of f84r/Ch14P.	3	B, PL, Ch15P, f84v, cs, C1936	tokens=347. dar=4. cs=2.
 
 ---
 

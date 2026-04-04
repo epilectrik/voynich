@@ -2,7 +2,7 @@
 
 **Status:** COMPLETE
 **Verdict:** EXTENDED_MATCHING_CONFIRMED
-**Constraints:** C1943-C1946
+**Constraints:** C1943-C1947
 
 ---
 
@@ -42,7 +42,7 @@ Meanwhile, the matching table only covered Mercuriorum Ch1-Ch28 + Ch44. Chapters
 | Ch43M | Tin work | f50r | 3.574 | 0.752 | NOT SUPPORTED (89 tokens too small) |
 | Ch52M | Projection technique | f40v | 3.063 | 0.917 | NOT SUPPORTED (106 tokens for 42-verb chapter) |
 
-3 confirmed + 1 tentative new matches. 3 fch folios (f40v, f50r, f86v3) unmatched — likely encode content from different source tradition (herbal/pharmaceutical mercury use).
+3 confirmed + 1 tentative new matches from fch. Additionally, cs (gold marker) hard-filter identified Ch15P→f84v (alternative gold dissolution, recto/verso of f84r/Ch14P). Total: 4 confirmed + 1 tentative. 3 fch folios (f40v, f50r, f86v3) unmatched — likely encode content from different source tradition (herbal/pharmaceutical mercury use).
 
 ## Key Finding: 8D Limitations
 

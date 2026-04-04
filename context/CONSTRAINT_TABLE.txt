@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1756 constraints | 2026-04-03
+CONSTRAINT_REFERENCE v2.6 | 1757 constraints | 2026-04-03
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1760,3 +1760,4 @@ C1943	Ch40M (silver transmutation) matches f106v: 8D distance 0.933 (confident, 
 C1944	Ch47M (coded elemental separation) matches f113r: 8D distance 1.245 (ratio 1.992, highest confidence). 518 tokens, 23 verbs. fch×4 tracking 4 element extractions. cs at L43 endpoint matches gold projection discussion. Heavy lk (furnace)	3	B, S, PL, Ch47M, f113r, fch, cs	8D_dist=1.245. ratio=1.992. tokens=518. verbs=23. fch=4. cs_endpoint=yes.
 C1945	Ch50M (error correction) matches f111r: 8D weak (3.755) but atom-level diagnostic. 614 tokens. Near-zero dar (2+2 on 614 tokens, lowest for size). Inverted e_depth (depth1>depth0, unique in corpus). P2=359 tokens (58%). 5×eed (cooling after overheating). 8D fails on structurally atypical recipes	3	B, S, PL, Ch50M, f111r, fch, eed, cth	8D_dist=3.755. tokens=614. dar=2. dal=2. P2=359. eed=5. e_depth_inverted=yes.
 C1946	Higher Mercuriorum chapters (Ch36-Ch52) contain 6+ procedural chapters previously classified as "theoretical." Latin verb counting reveals Ch40M (~20 verbs), Ch42M (~18), Ch43M (~10), Ch47M (~23), Ch48M (~20), Ch50M (~20), Ch51M (~20), Ch52M (~42). Matching extends from 42 to 45 chapters (3 confirmed + 1 tentative)	2	B, PL, Mercuriorum, C1882, C1932	prev_matched=42. new_matched=45. reclassified=6. new_procedural=53.
+C1947	Ch15P (alternative gold dissolution) matches f84v: cs×2 at L7,L9 (gold introduced early), dar=4 exactly matching 4 material introductions (vegetable G, rectified water, gold, lunaria juice), dal=1 matching vigorous *proijce* operations, lch×3 matching double alembic. Recto/verso of f84r (Ch14P gold dissolution, C1936). Fourth confirmed recto/verso pair	3	B, PL, Ch15P, f84v, cs, C1936	tokens=347. dar=4. dal=1. cs=2. lch=3. recto_verso=f84r/Ch14P.

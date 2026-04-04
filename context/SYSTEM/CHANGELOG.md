@@ -4,11 +4,27 @@
 
 ---
 
-## Version 6.12 (2026-04-03) - Phase 638: fch Hard-Filter Matching
+## Version 6.13 (2026-04-03) - C1947: cs Hard-Filter Match (Ch15P→f84v)
 
 ### Summary
 
-Phase 638 uses the fch (mercury) dark pipeline marker as a hard filter to extend recipe matching. 7 unmatched fch-bearing folios scanned against 8 higher Mercuriorum chapters (Ch36-Ch52, previously classified as "theoretical"). Latin verb counting reveals 6+ procedural chapters. 3 confirmed + 1 tentative new matches: Ch40M→f106v (silver transmutation, d=0.933), Ch47M→f113r (coded elemental separation, ratio=1.992), Ch50M→f111r (error correction, atom-level diagnostic). Coverage extends from 42 to 45 chapters. 4 constraints (C1943-C1946).
+cs (gold marker) hard-filter identifies Ch15P (alternative gold dissolution via alembic + lunaria) matching f84v. dar=4 matches 4 material introductions exactly. cs×2 at L7,L9 matches early gold introduction. Recto/verso of f84r (Ch14P, CONFIRMED). Fourth recto/verso pair. Coverage extends from 45 to 46 chapters (87%).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1947: Ch15P→f84v (cs hard-filter + recto/verso confirmation) |
+| **CREATED** | Folio note: f84v (replaced rejected Ch24 match) |
+| **UPDATED** | INDEX.md, CONSTRAINT_TABLE.txt, RECIPE_MATCHING.md, README.md, WHAT_WE_CLAIM.md |
+
+---
+
+## Version 6.12 (2026-04-03) - Phase 638: Material-Marker Hard-Filter Matching
+
+### Summary
+
+Phase 638 uses material-marker dark pipeline tokens as hard filters to extend recipe matching. fch (mercury): 7 unmatched folios scanned against 8 higher Mercuriorum chapters (Ch36-Ch52, previously classified as "theoretical"). Latin verb counting reveals 6+ procedural chapters. 3 confirmed + 1 tentative new matches: Ch40M→f106v (silver transmutation, d=0.933), Ch47M→f113r (coded elemental separation, ratio=1.992), Ch50M→f111r (error correction, atom-level diagnostic). cs (gold): Ch15P→f84v confirmed via recto/verso structural prediction. Coverage extends from 42 to 46 chapters. 5 constraints (C1943-C1947).
 
 ### Changes
 
