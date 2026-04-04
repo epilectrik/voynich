@@ -217,6 +217,92 @@ The Glossator who defended quintessence theory at Padua in 1463 may have been wo
 
 Full details: `phases/RECIPE_FOLIO_CORRESPONDENCE/`, `phases/CRIB_DECODE_SYNTHESIS/`, `phases/FULL_SPECTRUM_SCAN/`. Folio-level documentation: `context/FOLIOS/INDEX.md`.
 
+## Provenance Chain: Workshop → Rudolf II
+
+The known provenance and recent scholarship suggest a plausible chain connecting the manuscript's creation to its documented owners:
+
+### Known Provenance (documented)
+```
+[Rudolf II, Prague, ~1599] — purchased for 600 gold florins
+    ↓
+[Jacobus de Tepenec] — Rudolf's Imperial Distiller and botanical garden curator
+    ↓
+[Georg Baresch, Prague] — 17th century alchemist
+    ↓
+[Jan Marek Marci → Athanasius Kircher, 1665]
+    ↓
+[Jesuits → Wilfrid Voynich, 1912 → Yale Beinecke Library]
+```
+
+### The Seller: Carl Widemann → Leonhard Rauwolf
+
+Recent scholarship (Prinke, 2023; earlier work by various researchers) has identified the probable seller to Rudolf II as **Carl Widemann**, a prolific collector of alchemical manuscripts in Augsburg. In March 1599, Widemann sold Rudolf "a couple of remarkable/rare books" for 600 florins (matching the 600 ducats figure). The books were transported in a small barrel.
+
+**Widemann lived in the Augsburg house of Dr. Leonhard Rauwolf** (1535?-1596), a German physician-botanist who:
+- Studied medicine at **Montpellier** (1560-1562) — the same university where the Testamentum's author was trained and where the Pseudo-Lullian tradition was strongest
+- Collected plants and manuscripts in **Southern France and Northern Italy** (1560-1563) — the exact geographic zone where Testamentum manuscripts circulated
+- Traveled the Middle East collecting medicinal plants (1573-1576)
+- Died ~1596, childless
+
+Widemann began selling books to Rudolf **immediately after Rauwolf and his widow died**. The implication: Widemann inherited or acquired Rauwolf's collection and sold the most valuable pieces.
+
+### Plausible Full Chain
+```
+[Northern Italian workshop, ~1420s-1440s]
+    — Testamentum-based pharmaceutical/alchemical procedures
+    — encoded in unreadable script for trade secret protection
+    ↓ [Italian manuscript trade, ~100 years]
+Leonhard Rauwolf acquires it during Italian travels (1560-1563)
+    — Montpellier-trained physician (Pseudo-Lullian network)
+    — collecting in N. Italy (Testamentum circulation zone)
+    — would recognize pharmaceutical/botanical content
+    ↓ [Rauwolf dies ~1596, childless]
+Carl Widemann (living in Rauwolf's house) inherits collection
+    ↓ [sells to Rudolf II, March 1599, 600 florins]
+Rudolf II gives to Jacobus de Tepenec
+    — Imperial Distiller, botanical garden curator, physician
+    — the one person at court who would recognize distillation content
+    ↓ [Rudolf's collection scatters after his death, 1612]
+Georg Baresch → Marci → Kircher → Jesuits → Voynich → Yale
+```
+
+### The Tepenec Connection
+
+Jacobus de Tepenec (Jakub Hořčický, ennobled 1607) ran a distillation laboratory at the Clementinum botanical garden, commercially produced "Aqua Sinapis" (mustard water distillate), and served as Rudolf's personal physician. His name on folio 1r (visible under UV) suggests Rudolf gave the manuscript specifically to the person most likely to understand its content — an Imperial Distiller examining an encoded distillation manual. He could not read it, but would have recognized the apparatus drawings and organizational structure.
+
+### The Montpellier Thread
+
+The Rauwolf provenance link creates a remarkable Montpellier thread running through the entire history:
+- **~1300:** The "Magister Testamenti" trains at Montpellier, composes the Testamentum in Catalan
+- **1332:** Testamentum completed in London, claims Montpellier medical training
+- **~1420s-1440s:** Unknown workshop encodes Testamentum procedures (Voynich created)
+- **1560-1562:** Rauwolf studies medicine at Montpellier, then collects manuscripts in N. Italy
+- **1599:** Manuscript reaches Rudolf II via Rauwolf's collection
+
+The University of Montpellier — the institutional home of the Pseudo-Lullian alchemical tradition — connects the text's composition, its probable acquisition route, and potentially its encoding, across 250 years.
+
+### Candidate Workshop: Milanese Court
+
+The product range encoded in the Voynich (47 matched chapters covering mercury preparations, gold dissolution, quintessence, pearl-making, herbal distillation, transmutation, error correction) implies a well-funded, long-term, comprehensive pharmaceutical-alchemical workshop. Combined with Northern Italian vellum:
+
+**Filippo Maria Visconti's Milan (r. 1412-1447)** is the strongest candidate:
+- Ruled during the Voynich radiocarbon window (1404-1438)
+- Documented obsession with astrology and alchemy
+- Reclusive, secretive rule — operated behind closed doors
+- Wealthy enough to fund gold/mercury/pearl operations
+- The Testamentum itself references Milan (Ch40M: "at Milan in the year 1333")
+- Court botanical/herbal tradition from Gian Galeazzo Visconti
+- Milan had direct connections to Padua's medical school
+
+**Tension with German encoding hypothesis:** The Voynich's atom letters may correspond to German operational verbs (k=kochen/cook, e=erkalten/cool). This suggests the encoder was a German speaker — possibly a German-trained physician working at an Italian court, consistent with the documented Padua↔Vienna/Bavaria traffic.
+
+**This is speculative.** No direct documentary evidence connects the Voynich to the Visconti court. The provenance gap (1440s-1560s) remains dark. But the convergence of Northern Italian vellum, Testamentum source text, Milanese reference in the source, court-scale product range, and the Rauwolf acquisition route through Northern Italy is suggestive.
+
+### Sources
+- Prinke, Rafał T. (2023), research on Voynich manuscript provenance and Widemann transaction
+- Rauwolf's Italian collections: Ferrario et al. (2021), "The early book herbaria of Leonhard Rauwolf (S. France and N. Italy, 1560-1563)", *Rendiconti Lincei*
+- Walter & van Andel (2022), "The emperor's herbarium: Leonhard Rauwolf and his botanical field studies", *History of Science*
+
 ---
 
 ## Connection to Structural Analysis
