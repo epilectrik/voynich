@@ -172,9 +172,34 @@ The Schedel correspondence (1473) documents that Regiomontanus, operating in Nur
 ### 8. Cross-Border Knowledge Seeking Was Documented
 Piccolomini's correspondence (1444) records a Saxon court physician traveling to Italy seeking magical arts at Mons Veneris. The same letters explicitly document the Vienna-Padua student pipeline: "*many will remain in Vienna who now go to Padua.*" Johann Schindel, a Prague physician-astronomer, maintained a 200-volume personal library — the kind of private collection where encoded manuscripts could circulate.
 
-## Update: Pseudo-Lullian Source Identification (Phases 628-635)
+### 9. Alchemical Persecution Explains Both Pseudepigraphy and Encryption
 
-Since this document was written, computational matching (Phases 628-635, C1882-C1933) has identified the Pseudo-Lullian *Testamentum* (Practica + Liber Mercuriorum) as the leading candidate for the manuscript's source tradition. 3 folio-chapter correspondences are structurally confirmed (f75r/Ch19, f76r/Ch18P, f84r/Ch14P), with ~12 more supported. The Testamentum slots directly into Chain 1:
+The Pseudo-Lullian Testamentum was written under a false name because open alchemical authorship was dangerous. Multiple lines of evidence from the Buosi-Moncunill thesis (2023) and broader scholarship:
+
+**Active inquisitorial prosecution:** The inquisitor Nicolau Eimeric (1316-1399) ran anti-Lullian proceedings in 1371 targeting alchemical texts. His inquisitorial process specifically attacked the attribution of alchemy to Llull. Practitioners of alchemy faced prosecution, imprisonment, and execution.
+
+**Why texts were attributed to Llull:**
+1. **Personal safety** — a dead author cannot be prosecuted
+2. **The Ars Magna provided a ready-made framework** — Llull's combinatorial letter system (A, B, C, D... linked in circular diagrams) was repurposed for alchemical notation. The ABC cipher throughout the Testamentum IS the Ars Magna, with alchemical concepts filling the letter slots
+3. **The diagrams look authentically Lullian** — circular figures, triangular figures, and letter wheels in the Testamentum are visually indistinguishable from Llull's authentic works
+4. **Prestige** — Llull was the most famous Catalan intellectual; his name gave authority
+5. **A supporting legend** — a story grew (pre-15th C) that Llull learned alchemy from Arnald of Villanova and made gold for Edward III in London. The Testamentum's colophon citing London 1332 may have fed this legend
+
+**The real Llull rejected alchemy.** His authentic writings warn about its dangers. The earliest attributed alchemical texts appeared ~20 years after his death (1316).
+
+**Candidate author:** Ramon de Tàrrega, a Jewish convert and Dominican friar known from Eimeric's 1371 anti-Lullian proceedings. Another "Master Ramon" from the Catalan intellectual world. Speculative but suggestive.
+
+**John of Rupescissa wrote from prison.** His *De consideratione quintae essentiae* — the most influential alchemical text of the medieval period — was composed inside the papal prison at Avignon. This is what happened to alchemical authors who used their real names.
+
+**The Voynich represents a further escalation.** By the early 15th century, even Lullian pseudepigraphy might not have been safe — Eimeric's inquisition targeted pseudo-Lullian alchemy specifically. Full encryption of operational content (with theoretical material stripped) removes the last readable trace. The scribe encoded what was commercially valuable (procedures) and excluded what was doctrinally dangerous (theory that could be quoted in inquisitorial proceedings).
+
+**Source:** Buosi-Moncunill, Stefania (2023), *El Testament alquímic pseudolul·lià en un manuscrit inèdit català del segle XVI, còpia autògrafa de Jaume Mas*. Doctoral thesis, Universitat de Barcelona. Pages 51, 95, 133-141.
+
+---
+
+## Update: Pseudo-Lullian Source Identification (Phases 628-638)
+
+Computational matching (Phases 628-638, C1882-C1948) has identified the Pseudo-Lullian *Testamentum* (Practica + Liber Mercuriorum) as the source text. 47 procedural chapters match to ~30 folios (89% of procedural content). 3 independently confirmed (f75r/Ch19M, f76r/Ch18P, f84r/Ch14P), 5 reverse-blind confirmed, 3 fch hard-filter confirmed, 1 cs hard-filter, 1 recto/verso scan. The Testamentum was originally composed in Catalan (1332), translated to Latin (1443). The Catalan operational vocabulary matches the Voynich atom system at workshop granularity (fire types, heating rates, drip-count monitoring). The Testamentum slots directly into Chain 1:
 
 ```
 Arnald of Villanova (~1300)
