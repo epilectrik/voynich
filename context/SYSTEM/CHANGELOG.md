@@ -4,6 +4,23 @@
 
 ---
 
+## Version 6.18 (2026-04-04) - C1956: 10-Dimension Shuffle Test (p < 0.0001)
+
+### Summary
+
+10-dimension permutation test validates the full 41-assignment set. 0/10,000 shuffles beat the real assignment on all dimensions simultaneously. ~5-6 effectively independent dimensions after correlation correction. Strongest signals: eed→cooling (p=0.001), Merc-prep→Section-B (p=0.005), Higher-Merc→Section-S (p=0.015), ro→fermentation (p=0.020). Post-hoc dimension selection acknowledged. Extends C1887 from 16 to 41 cross-family assignments.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1956: 10-dimension permutation test (Tier 2) |
+| **CREATED** | `_shuffle_test_v3.py` (10-dimension test) |
+| **CREATED** | `_shuffle_test_v2.py` (5-dimension test) |
+| **CREATED** | `_comprehensive_shuffle_test.py` (initial attempt) |
+
+---
+
 ## Version 6.17 (2026-04-04) - C1953-C1955: Recto/Verso Scan Matches (51 chapters, 96%)
 
 ### Summary

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1955 validated constraints | **Version:** 6.17 | **Date:** 2026-04-04
+**Total:** 1956 validated constraints | **Version:** 6.18 | **Date:** 2026-04-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6144,6 +6144,7 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 | 1953 | Ch23P (sulfur multiplication testing) matches f114r: eed×8 (cooling per test cycle, highest of all candidates), daiin=11 (iterative testing, highest), zero material markers (testing existing stone), 12 paragraphs for ~12 steps, e_depth=4 (rare extreme refinement), cth (state-transition monitoring). Recto of f114v/Ch31P | 3 | S, PL, Ch23P, f114r, eed, C1936 | tokens=447. eed=8. daiin=11. dar=2. material_markers=0. pars=12. e4=1. |
 | 1954 | Ch31P (medicine multiplication in quantity) matches f114v: dar=2, daiin=6 (iterative projections), cth×3 (congelation monitoring), eed×3. Recto/verso of f114r/Ch23P (testing→production). Sixth confirmed recto/verso pair. Non-procedural promotional content (~50% of Latin chapter) not encoded | 3 | S, PL, Ch31P, f114v, cth, C1936 | tokens=362. dar=2. daiin=6. cth=3. eed=3. recto_verso=f114r/Ch23P. |
 | 1955 | Ch17M (first mercury purification water) matches f106r (TENTATIVE): ro×2 matching fermentation step, lch (cucurbit+alembic), eed×2, ir (iteration). Recto/verso of f106v/Ch40M (preparation→application). Token/verb ratio low (16.8) | 3 | S, PL, Ch17M, f106r, ro, C1936 | tokens=421. ro=2. eed=2. ir=1. dar=2. token_verb=16.8. recto_verso=f106v/Ch40M. |
+| 1956 | 10-dimension permutation test: 0/10,000 shuffles beat real 41-assignment set across all dimensions. ~5-6 effectively independent dimensions. Strongest: eed→cooling (p=0.001), Merc-prep→Section-B (p=0.005), Higher-Merc→Section-S (p=0.015), ro→fermentation (p=0.020). Post-hoc dimension selection acknowledged. Extends C1887 from 16 to 41 assignments across families | 2 | B, PL, matching, permutation, C1887, C1936, C1939 | shuffles=10000. beats_all=0. indep_dims=5-6. strongest_p=0.001(eed). |
 
 **Phase 638 findings (Material-Marker Hard-Filter Matching + Recto/Verso Extension, EXTENDED_MATCHING_CONFIRMED):**
 - Using fch (mercury marker, C1939) as a hard filter, 7 unmatched fch-bearing folios were scanned against 8 higher Mercuriorum chapters. 3 confirmed + 1 tentative new matches found.
@@ -6158,6 +6159,7 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Ch31P→f114v (C1954): Medicine multiplication in quantity. Recto/verso of f114r/Ch23P. dar=2, daiin=6 (iterative projections), cth×3 (congelation monitoring). Sixth recto/verso pair.
 - Ch17M→f106r (C1955): First mercury purification water (TENTATIVE). ro×2 matching fermentation step, recto/verso of f106v/Ch40M (preparation → application). Token/verb ratio low.
 - Coverage: 51/53 (96%).
+- 10-dimension shuffle test (C1956): 0/10,000 shuffles beat real assignment on all dimensions simultaneously. Strongest independent signals: eed→cooling (p=0.001), section-split (p=0.005/0.015), ro→fermentation (p=0.020). ~5-6 effectively independent dimensions after correlation correction. Validates the ASSIGNMENT SET, not individual matches.
 - 3 fch folios (f40v, f50r, f86v3) remain unmatched — Section H/C folios likely encoding mercury-involving content from different source traditions.
 
 ---

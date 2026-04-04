@@ -2280,6 +2280,7 @@ C1952	Ch48M (ferment preparation) → f113v: UPGRADED from tentative. ro at L10,
 C1953	Ch23P (sulfur multiplication) → f114r: eed×8 + daiin=11 (both highest), zero material markers, 12 pars for 12 steps, e_depth=4. Recto of Ch31P.	3	S, PL, Ch23P, f114r, eed, C1936	eed=8. daiin=11. markers=0.
 C1954	Ch31P (medicine multiplication) → f114v: dar=2, daiin=6, cth×3. Verso of f114r/Ch23P. 6th r/v pair. Promotional text not encoded.	3	S, PL, Ch31P, f114v, cth, C1936	dar=2. daiin=6. cth=3.
 C1955	Ch17M (first mercury water) → f106r: TENTATIVE. ro×2, lch, eed×2, ir. Recto of f106v/Ch40M. Token/verb=16.8.	3	S, PL, Ch17M, f106r, ro	ro=2. tv=16.8.
+C1956	10-dim permutation: 0/10000 shuffles beat real on all dims. eed→cooling p=0.001, Merc→B p=0.005, ro→ferment p=0.020. ~5-6 indep dims.	2	B, PL, matching, C1887	beats=0/10000.
 
 ---
 
