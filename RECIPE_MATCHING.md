@@ -255,7 +255,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 | Ch47M | Coded elemental separation (ABC cipher, 4 elements) | f113r | fch hard-filter (ratio=1.992, CONFIRMED) |
 | Ch50M | Error correction / troubleshooting (color management) | f111r | fch hard-filter (atom diagnostic) |
 
-**Practica (18 unique chapters matched across 14 folios):**
+**Practica (19 unique chapters matched across 15 folios):**
 
 | Chapter(s) | Recipe | Folio | Method |
 |-----------|--------|-------|--------|
@@ -268,6 +268,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 | Ch18P | Element separation (silver-plate test) | **f76r** | **Phase 628 CONFIRMED** |
 | Ch19P | Washing of fire and earth | f46r | Reverse blind |
 | Ch21P+28P | Red sulfur + red elixir fixation | f115r | Blind test + split |
+| Ch25P | Fixation of air (reiterated sublimation) | f115v | Recto/verso scan (verso of f115r) |
 | Ch24P | Fixation (repeated sublimation) | f66r | Full-spectrum scan |
 | Ch26P | Oil inceration / fusibility test | f66v | Reverse blind |
 | Ch27P | Mercury imbibition / exuberation | f103v | Reverse blind (6/7 CONFIRMED) |
@@ -283,7 +284,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 - 96 Theorica chapters (all philosophical)
 - 28/30 Furnis chapters (construction specifications)
 
-**46 unique procedural chapters → ~29 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 46 of 53 chapters classified as procedural (87%).**
+**47 unique procedural chapters → ~30 folios (some folios encode multiple short chapters; some chapters share a leaf as recto/verso pairs). Coverage: 47 of 53 chapters classified as procedural (89%).**
 
 *Classification note: "Procedural" means the chapter contains specific operational instructions (heat, distill, seal, etc.). The original 47-chapter count was revised upward to 53 when Latin verb counting (Phase 638) revealed 6 additional procedural chapters in the higher Mercuriorum (Ch40M, Ch42M, Ch43M, Ch47M, Ch48M, Ch50M) that had been bulk-classified as "theoretical." The 8 unmatched procedural chapters include Ch42M (lead work), Ch43M (tin work), Ch48M (ferment preparation — tentative match to f113v), Ch51M (vinegar recipe), Ch52M (projection technique), and the original 4 exclusions: Ch5M (philosophical stub), Ch13M (cipher taxonomy), Ch26M (medical administration), Ch29M (elemental theory).*
 

@@ -4,6 +4,22 @@
 
 ---
 
+## Version 6.14 (2026-04-04) - C1948: Recto/Verso Scan Match (Ch25P→f115v)
+
+### Summary
+
+Recto/verso systematic scan identifies Ch25P (fixation of air) matching f115v — verso of f115r (Ch21P+28P red sulfur). Zero dar/dal (non-additive fixation recipe), 7×eed (cooling per sublimation cycle), lk=31 prefix (graduated 3-day fire). Fifth confirmed recto/verso pair. Coverage: 47/53 (89%).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1948: Ch25P→f115v (recto/verso scan + atom validation) |
+| **CREATED** | Folio note: f115v |
+| **UPDATED** | INDEX.md, CONSTRAINT_TABLE.txt, RECIPE_MATCHING.md, README.md, WHAT_WE_CLAIM.md |
+
+---
+
 ## Version 6.13 (2026-04-03) - C1947: cs Hard-Filter Match (Ch15P→f84v)
 
 ### Summary
