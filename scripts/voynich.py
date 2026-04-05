@@ -57,26 +57,32 @@ ARTICULATORS = ['y', 'k', 'l', 'p', 'd', 'f', 'r', 's', 't']
 # All prefixes combined
 ALL_PREFIXES = sorted(set(CORE_PREFIXES + EXTENDED_PREFIXES), key=len, reverse=True)
 
-# Atomic suffix list (revised per expert analysis 2026-01-24)
-# Previous compound suffixes (chol, shol, daiin, etc.) were over-specified
-# and caused 52.9% empty-MIDDLE rate, violating C293/C267.a/C475/C511.
-# Now using only atomic forms - consonant-initial compounds moved to MIDDLE.
+# Atomic suffix list (revised per expert analysis 2026-04-05)
+# Revision history:
+#   2026-01-24: Removed compound suffixes (chol, shol, daiin etc.) that caused
+#               52.9% empty-MIDDLE rate, violating C293/C267.a/C475/C511.
+#   2026-04-05: Blocked e-initial and h-initial suffixes that steal operational
+#               atoms from MIDDLE. e=cool is a MOD atom encoding e_depth (thermal
+#               intensity per C1225). h=watch is a MIDDLE terminal atom (transparent
+#               gating per C1487). Both belong in MIDDLE, not SUFFIX.
+#               Also blocked k,t,p,f,c per C1511 (categorically excluded from suffix).
+#               Allowed: d,a,i,o as suffix-initial (legitimate per C1410/C1510).
 SUFFIXES = [
-    # -iin family (vowel-initial, atomic)
-    'aiin', 'oiin', 'eiin', 'iin',
-    'ain', 'oin', 'ein',
-    # -Vy patterns (vowel + y)
-    'eey', 'edy', 'ey',
-    # -Vl/-Vr patterns (vowel + liquid)
-    'eeol', 'eol', 'ool',
-    'ol', 'or', 'ar', 'al', 'er', 'el',
-    # -Vn patterns (vowel + nasal)
-    'in', 'an', 'on', 'en',
-    # -Vm patterns (vowel + m)
-    'am', 'om', 'em', 'im',
-    # Two-char -Cy (consonant + y, where C is NOT ch/sh/k/t)
-    'dy', 'hy', 'ly', 'ry',
-    # Single char (true atomics)
+    # -iin family (a/i/o-initial — legitimate suffix starters per C1410)
+    'aiin', 'oiin', 'iin',
+    'ain', 'oin',
+    # -d+TERM patterns (d=do is legitimate suffix-initial per C1484)
+    'dy',
+    # -Vl/-Vr patterns (a/i/o-initial only)
+    'ool',
+    'ol', 'or', 'ar', 'al',
+    # -Vn patterns (a/i/o-initial only)
+    'in', 'an', 'on',
+    # -Vm patterns (a/i/o-initial only)
+    'am', 'om', 'im',
+    # Two-char patterns
+    'ly', 'ry',
+    # Single char (true TERM atomics)
     'y', 'l', 'r', 'm', 'n', 's', 'g',
 ]
 SUFFIXES = sorted(set(SUFFIXES), key=len, reverse=True)

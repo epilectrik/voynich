@@ -4,6 +4,25 @@
 
 ---
 
+## Version 6.19 (2026-04-05) - C1957: Suffix Boundary Revision (e-stealing fix)
+
+### Summary
+
+Blocked e-initial and h-initial suffixes from the extract() parser. These suffixes were stealing operational atoms from the MIDDLE: e=cool encodes e_depth (thermal intensity, C1225) and h=watch is a MIDDLE terminal atom (transparent gating, C1487). Fix: e_depth match between MIDDLE and atoms rises from 16.7% to 98.6%; max folio-level distortion drops from 14 percentage points to zero. 3,000+ tokens corrected. Zero empty-MIDDLE regression.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **REVISED** | `scripts/voynich.py` SUFFIXES table: removed all e-initial (-edy, -eey, -ey, -eol, -eeol, -eiin, -ein, -er, -el, -em, -en) and h-initial (-hy) suffixes. Also removed k/t/p/f/c-initial per C1511. |
+| **ADDED** | C1957: Suffix boundary revision (Tier 2) |
+
+### Rationale
+
+Previous suffix table included -edy as a suffix, causing extract() to parse `qokeedy` as PREFIX=qo, MIDDLE=ke, SUFFIX=edy. The second 'e' (encoding balneum/gentle heat) was stolen from the MIDDLE. After fix: MIDDLE=kee, SUFFIX=dy. The atom system (atomize()) was always correct; the morphological parser now agrees.
+
+---
+
 ## Version 6.18 (2026-04-04) - C1956: 10-Dimension Shuffle Test (p < 0.0001)
 
 ### Summary
