@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1957 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1958 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1957.
+the highest ID present is C1958.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1957 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1958 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1957 validated constraints are present as canonical one-line claims with tier
+1958 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-05 09:45
-**Version:** FROZEN STATE (1957 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-05 10:42
+**Version:** FROZEN STATE (1958 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2196,6 +2196,7 @@ C1954	Ch31P (medicine multiplication in quantity) matches f114v: dar=2, daiin=6 
 C1955	Ch17M (first mercury purification water) matches f106r (TENTATIVE): ro×2 matching fermentation step, lch (cucurbit+alembic), eed×2, ir (iteration). Recto/verso of f106v/Ch40M (preparation→application). Token/verb ratio low (16.8)	3	S, PL, Ch17M, f106r, ro, C1936
 C1956	10-dimension permutation test: 0/10,000 shuffles beat real 41-assignment set across all dimensions. ~5-6 effectively independent dimensions. Strongest: eed→cooling, Merc-prep→Section-B, Higher-Merc→Section-S, ro→fermentation. Post-hoc dimension selection acknowledged. Extends C1887 from 16 to 41 assignments across families	2	B, PL, matching, permutation, C1887, C1936, C1939
 C1957	Suffix boundary revision: blocked e-initial and h-initial suffixes from extract() parser. e=cool is a MOD atom encoding e_depth (C1225); h=watch is a MIDDLE terminal (C1487). Both steal operational atoms from MIDDLE when parsed as suffix-initial. Fix: e_depth match MIDDLE-vs-atoms rises from 16.7% to 98.6%; max folio distortion drops from 14pp to 0.000. Suffix set reduced to d/a/i/o-initial + single TERM atoms. Zero empty-MIDDLE regression	2	B, morphology, SUFFIX, atom, C1225, C1487, C1511
+C1958	ot PREFIX = transfer rate / drip rate monitoring (upgraded from "operational verification"). ok/ot ratio correlates with recipe emphasis: f83r (Ch9P drip-counting recipe) has lowest ok/ot=0.38; f81v (Ch18M potable gold/maceration) has highest ok/ot=5.50. On f83r L22, ot×3 clusters exactly where Catalan text specifies drop counting at 6/10/15/20. Three ot MIDDLEs encode check(otchedy), iterate(otaiin), done(otedy) — control actions around drip monitoring, not numerical values. Control loop: sh→qo→ok→ot→sh = watch→heat→vessel temp→drip rate→watch	2	B, PREFIX, ot, ok, C929, C1313, C1316
 
 ---
 

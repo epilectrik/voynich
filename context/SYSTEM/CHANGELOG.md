@@ -4,6 +4,22 @@
 
 ---
 
+## Version 6.20 (2026-04-05) - C1958: ot PREFIX = transfer rate / drip rate
+
+### Summary
+
+ot PREFIX upgraded from "operational verification" to "transfer rate / drip rate monitoring." Validated against Catalan recipe text: on f83r (Ch9P drip-counting recipe), ot×3 clusters on L22 exactly where Catalan specifies counting drops at 6/10/15/20. ok/ot ratio correlates with recipe type: f83r (distillation output) = 0.38; f81v (maceration/temperature) = 5.50. Three ot MIDDLEs on L22 encode check/iterate/done control actions around drip monitoring. Control loop formalized: sh→qo→ok→ot→sh = watch→heat→vessel temp→drip rate→watch.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1958: ot = transfer rate / drip rate (Tier 2, Catalan-validated) |
+| **REVISED** | GLOSSING.md: ot entry updated with recipe correlation and Catalan evidence |
+| **REVISED** | GLOSSING.md: control flow loop description updated |
+
+---
+
 ## Version 6.19 (2026-04-05) - C1957: Suffix Boundary Revision (e-stealing fix)
 
 ### Summary

@@ -171,7 +171,7 @@ All glosses below have been validated by the expert-advisor agent against the co
 | da | setup | Infrastructure, apparatus prep | C911: infrastructure selector. Phase 461 T4 |
 | sa | scaffold | Supporting infrastructure (thermally neutral) | Phase 461 T1 neg: neutral control. Not "dry" (stale). |
 | ok | vessel temperature | **Vessel thermal verification (coarse).** ok selects the vessel/apparatus as action target; MIDDLE provides the action. e-enriched (0.282), THERMAL 24.7%. First stage of post-heat-action verification: checks whether vessel temperature has stabilized. ok->ot = 1.18x (coarse precedes fine). Top MIDDLE: aiin (settling). | C936 (revised), C911: e-family + infra. C1313: e-frac=0.282. C1316: ok->ot asymmetry 1.14 |
-| ot | operational verification | **Vessel operational verification (fine).** e-enriched (0.258), OPERATION 17.3%. Second stage of post-heat-action verification: checks whether the operation/output is running correctly. Top MIDDLE: edy (batching). Enriched in od (collect), or (portion). Follows ok in preferred sequence qo->ok->ot. | C911: h-family selector. C1316: ot +4.9% OPERATION vs ok. C408: ok/ot sister pair |
+| ot | transfer rate / output | **Transfer rate monitoring (drip rate, output flow).** e-enriched (0.258), OPERATION 17.3%. Monitors what is COMING OUT of the apparatus — drip rate, distillate flow, product collection. On f83r (Ch9P drip-counting recipe), ot×3 clusters on L22 exactly where Catalan says *"quant destillara a .VI. punts o a .X. o a .XV. o a .XX."* (count drops at 6/10/15/20). ok/ot ratio correlates with recipe emphasis: maceration/dissolution (temperature-critical) = ok-dominant; distillation/ferment output = ot-dominant. f83r (drop counting) has lowest ok/ot ratio (0.38) in matched corpus. | C911: h-family selector. C1316: ot +4.9% OPERATION vs ok. C408: ok/ot sister pair. C1958 |
 | ct | control | Control, hazard management | |
 
 ### Extended Prefixes
@@ -262,7 +262,7 @@ All glosses below have been validated by the expert-advisor agent against the co
 Within-line bigram analysis reveals a preferred PREFIX sequencing pattern consistent with a closed-loop control cycle:
 
 ```
-sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> sh (watch)
+sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check drip rate) -> sh (watch)
    1.98x          1.08x              1.18x                    (return to monitoring)
 ```
 
@@ -279,7 +279,7 @@ sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> 
 
 **Two-stage verification:** After heat action (qo), the operator performs two sequential checks:
 1. **ok (coarse):** Is the vessel temperature correct? (THERMAL 24.7%, top MIDDLE: aiin = settling)
-2. **ot (fine):** Is the operation running properly? (OPERATION 17.3%, top MIDDLE: edy = batching)
+2. **ot (transfer rate):** Is the output flowing correctly? (OPERATION 17.3%, top MIDDLE: edy = batching, drip rate monitoring)
 
 The operator would not fine-tune flow rate if vessel temperature was not stable yet. Neither verification step leads directly back to heat action — passive monitoring (sh) is the gatekeeper for the next heat cycle.
 
