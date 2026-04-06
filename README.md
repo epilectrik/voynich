@@ -2,11 +2,11 @@
 
 The Voynich Manuscript's main text (Currier B, 23,243 tokens across 83 folios) encodes closed-loop control programs in a purpose-built operational notation. Each folio is a self-contained program. The notation uses a systematic grammar of 49 instruction types built from an 18-atom compositional architecture. It is not a language, not a cipher, and not a translation of any known text.
 
-The leading interpretive hypothesis identifies the source tradition as **Pseudo-Lullian alchemy** — specifically the *Testamentum* (Practica and Liber Mercuriorum). 42 procedural chapters (26 Mercuriorum + 18 Practica) have been matched to ~25 folios, covering 89% of the *Testamentum*'s procedural content. Some folios encode multiple short chapters; sequential operations appear on recto/verso pairs of the same leaf. Theoretical and descriptive chapters produce zero validated matches — the manuscript encodes only procedural content.
+The leading interpretive hypothesis identifies the source tradition as **Pseudo-Lullian alchemy**, specifically the *Testamentum* (Practica and Liber Mercuriorum). 51 procedural chapters (30 Mercuriorum + 21 Practica) have been matched to 41 folios, covering 96% of the *Testamentum*'s procedural content. Some folios encode multiple short chapters; six recto/verso pairs encode sequential chapters on the same physical leaf. Theoretical and descriptive chapters produce zero validated matches, the manuscript encodes only procedural content. A 10-dimension permutation test shows zero out of 10,000 random reassignments replicate the match quality across all dimensions (p < 0.0001).
 
 Think of sheet music: if you found scores in an unknown notation, you couldn't translate notes into words — because notes aren't words. But structural analysis would reveal patterns matching the harmonic series. You could prove the documents encode music without hearing a note played. We take the same approach: we recovered the formal operating logic without translating individual tokens. The structure *is* the semantics.
 
-This conclusion rests on 1,938 validated constraints from 636 research phases across 37,957 tokens.
+This conclusion rests on 1,958 validated constraints from 639 research phases across 37,957 tokens.
 
 ---
 
@@ -132,7 +132,7 @@ These approaches have been structurally ruled out (Tier 1 — cannot be retried)
 
 ## How This Was Built
 
-This project used AI-assisted computational analysis over 636 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1) — they cannot be retried, preventing circular investigation. An embedded expert-advisor agent (carrying all 1,938 constraints) validates new findings against the full body of existing knowledge.
+This project used AI-assisted computational analysis over 639 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1), they cannot be retried, preventing circular investigation. An embedded expert-advisor agent (carrying all 1,958 constraints) validates new findings against the full body of existing knowledge.
 
 The result: knowledge compounds across phases. Early phases discovered morphology, middle phases built grammar, late phases matched individual recipes to folios — and none of this work was ever lost. For methodology details, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
@@ -142,8 +142,8 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,938 |
-| Research phases | 636 |
+| Validated constraints | 1,958 |
+| Research phases | 639 |
 | Model fits tested | 75 |
 | Documented folios | 40 (of 83 Currier B) with per-folio analysis notes |
 | Recipe chapter coverage | 51 procedural chapters → 41 folios (96% of *Testamentum* expanded procedural content) |
@@ -161,7 +161,7 @@ Transcript: EVA (Extensible Voynich Alphabet) interlinear format, H transcriber 
 
 ## Beyond This Project
 
-The structural analysis establishes what the manuscript encodes (a control grammar for Pseudo-Lullian alchemical procedures) and what it does not (natural language). With 89% of the *Testamentum*'s procedural content now matched to folios, the remaining frontiers are: identifying the ~40 unmatched folios (mostly Section H herbal pages), refining atom glosses using the recipe parallel corpus, and tracing the manuscript's relationship to other texts in the Pseudo-Lullian tradition. The next breakthroughs will likely come from **alchemical historians** who can evaluate the recipe matches, **paleographers** who can trace the script's glyph origins to specific scribal traditions, or **uncatalogued archives** that might preserve workshop manuals in the same lineage.
+The structural analysis establishes what the manuscript encodes (a control grammar for Pseudo-Lullian alchemical procedures) and what it does not (natural language). With 96% of the *Testamentum*'s procedural content now matched to 41 folios, the remaining frontiers are: identifying the ~41 unmatched folios (mostly Section H herbal pages), comparing matches against the original Catalan source text (SISMEL critical edition on order), and tracing the manuscript's relationship to other texts in the Pseudo-Lullian tradition. The next breakthroughs will likely come from **alchemical historians** who can evaluate the recipe matches, **Catalan philologists** who can compare the original language against token patterns, **paleographers** who can trace the script's glyph origins to specific scribal traditions, or **uncatalogued archives** that might preserve workshop manuals in the same lineage.
 
 ---
 
