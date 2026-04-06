@@ -67,6 +67,11 @@ phases/VOYNICH_CONTROL_ARCHITECTURE_PHYSICAL_ALIGNMENT/results/t1_physical_proce
 # Working scratchpad (session-specific temp files)
 scratchpad/
 
+# Temporary/scratch scripts (agent-generated throwaway files in root)
+/_tmp_*
+/_*.py
+/_*.ps1
+
 # Brunschwig source materials — large files (hosted separately)
 sources/brunchwig-zip/
 sources/brunschwig_1500/page_images/
@@ -81,3 +86,33 @@ sources/brunschwig_1512/english/_en_T*.txt
 *.pdf
 sources/codicillus/*.jpg
 results/folio_operational_profiles_v2.json
+
+# Puff von Schrick source images (large, download separately)
+sources/puff_von_schrick/pages/*.tif
+sources/puff_von_schrick/pages/*.png
+sources/puff_von_schrick/*.pdf
+
+# Outreach drafts (private, not for public repo)
+outreach/
+
+# Response drafts (temporary)
+response*.md
+
+# Root-level temp/scratch files
+_*.py
+_*.txt
+_*.ps1
+
+# Source intermediate files (final assembled versions are committed)
+sources/brunschwig_1500/DO_NOT_USE_*
+sources/brunschwig_1500/_page_map.json
+sources/brunschwig_1500/brunschwig_1500_corrected.txt
+sources/brunschwig_1500/brunschwig_1500_english.txt
+sources/brunschwig_1512/brunschwig_1512_corrected.txt
+sources/brunschwig_1512/brunschwig_1512_english.txt
+sources/pseudo_lull_testamentum/mercuriorum_1567_ocr.txt
+sources/pseudo_lull_testamentum/pseudo_lull_testamentum.zip
+sources/pseudo_lull_testamentum/pseudo_lull_testamentum_1566_raw.txt
+sources/pseudo_lull_testamentum/release/
+sources/pseudo_lull_testamentum/testamentum_1566_latin.txt
+sources/pseudo_lull_testamentum/testamentum_1566_raw_ocr.txt

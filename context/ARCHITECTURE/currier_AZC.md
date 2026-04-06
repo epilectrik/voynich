@@ -291,6 +291,39 @@ AZC uses the shared core while adding diagram-specific terms.
 
 ---
 
+## Physical Ring Order (Preliminary, Under Verification)
+
+**Status:** Verified on f69r only. Full audit of all AZC folios pending.
+
+Visual matching of the f69r rendering against the manuscript established:
+
+| Code | Physical Position (f69r) | Note |
+|------|--------------------------|------|
+| **C** | OUTER ring | 43 tokens in 16 groups of 2-3 |
+| **R** | Radial spokes | 22 spokes between S and C |
+| **S** | INNER ring | 11 tokens, continuous |
+| **W** | CENTER | 6 single characters |
+| **P** | Paragraph ABOVE diagram | 36 tokens in 4 lines |
+
+This means the abstract functional model (C=Entry/outer, S=Boundary/inner from
+positions.json) **happens to match** the physical layout for f69r. But this
+alignment is NOT confirmed for other folios.
+
+**Zodiac folio R-subscript numbering is inconsistent:**
+- f70v2: R3=outermost, R1=innermost
+- f72r1, f71r, f73r: R1=outermost, R3=innermost
+- Transcribers numbered from wherever they started reading
+
+**Implication:** Any analysis that assumes a fixed physical mapping of
+R1/R2/R3 across zodiac folios may have ordering errors. Per-folio
+verification against manuscript images is required before physical
+position claims can be made.
+
+See `data/folio_annotations/azc/` for per-folio layout maps (note:
+some annotations predate this verification and may have S/C swapped).
+
+---
+
 ## Summary
 
 AZC is not decorative annotation. It is **bulk positional structure** that classifies vocabulary by operational character.

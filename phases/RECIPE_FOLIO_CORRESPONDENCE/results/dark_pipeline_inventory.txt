@@ -1,0 +1,599 @@
+====================================================================================================
+  f75r | Ch19M | Aqua vitae (honey+wax, 9x reflux, balneum)
+  14 dark tokens, 11 unique dark MIDDLEs, 412 total tokens
+====================================================================================================
+
+  DARK MIDDLE: lch (x2)
+    L 2: ...ly ssheol [qo+lch+edy] chedykar chekeedy...
+    L16: ...qokar sheedy [-+lch+-] shokain chy...
+
+  DARK MIDDLE: ksh (x2)
+    L 7: ...pchedy [qo+ksh+dy] ytain chedy...
+    L19: ...(start) [qo+ksh+edy] qol shey... [LINE-INIT]
+
+  DARK MIDDLE: eet (x2)
+    L35: ...qokain [sh+eet+y] qokain dar...
+    L37: ...qokedy dy [sh+eet+y] qokedy qokchdy...
+
+  DARK MIDDLE: eke (x1)
+    L 2: ...qolchedy chedykar [ch+eke+edy] ror...
+
+  DARK MIDDLE: q (x1)
+    L 3: ...chal orchey [-+q+ey] kain sheeky...
+
+  DARK MIDDLE: es (x1)
+    L14: ...sain ol [ke+es+hy] qokain dy...
+
+  DARK MIDDLE: epc (x1)
+    L17: ...pchedar [sh+epc+hy] lshedary dal...
+
+  DARK MIDDLE: lsh (x1)
+    L27: ...(start) [da+lsh+or] shtol qoty... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: ls (x1)
+    L32: ...(start) [po+ls+hy] dal shedy... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: cth (x1)
+    L33: ...chedy qokain [ch+cth+edy] ltedy darom...
+
+  DARK MIDDLE: lk (x1)
+    L34: ...(start) [so+lk+edy] okal dar... [LINE-INIT]
+
+====================================================================================================
+  f76r | Ch18P | Element separation (silver-plate test)
+  30 dark tokens, 20 unique dark MIDDLEs, 546 total tokens
+====================================================================================================
+
+  DARK MIDDLE: lch (x6)
+    L 5: ...(start) [so+lch+edy] qokeedy qopchedy... [LINE-INIT]
+    L14: ...dcheedy [qo+lch+ey] qokeey qokeey...
+    L14: ...shedy lshedy [qo+lch+edy] otedyl...
+    L15: ...lchedy qokey [qo+lch+ey] qotain chckhy...
+    L20: ...shey qokey [qo+lch+edy] qolain ain...
+    L31: ...(start) [qo+lch+ey] shckhy qokey... [LINE-INIT]
+
+  DARK MIDDLE: eed (x3)
+    L 6: ...qoaiin ches [ok+eed+al] qoked qokeey...
+    L13: ...okain chedy [ok+eed+-] qokaloro...
+    L43: ...(start) [ol+eed+-] qokedy qokeedy... [LINE-INIT]
+
+  DARK MIDDLE: lsh (x3)
+    L18: ...(start) [da+lsh+edy] qol sheedy... [LINE-INIT]
+    L33: ...dain chey [-+lsh+-] daiin chey...
+    L46: ...or al [so+lsh+ey] okeedy ldaiin...
+
+  DARK MIDDLE: ep (x2)
+    L 2: ...qotddyar cthar [ch+ep+-] dain okain...
+    L18: ...sheedy qokaldy [ch+ep+y] dain alolor...
+
+  DARK MIDDLE: cfh (x1)
+    L 1: ...potchokar [ch+cfh+dy] opshdy qolp...
+
+  DARK MIDDLE: rai (x1)
+    L 8: ...ol chdy [-+rai+iin] chekain dain...
+
+  DARK MIDDLE: eckh (x1)
+    L10: ...okol okaiin [sh+eckh+ey] okeedy otey...
+
+  DARK MIDDLE: lai (x1)
+    L11: ...lchedy shedy [qo+lai+r] chedy...
+
+  DARK MIDDLE: eke (x1)
+    L12: ...qotey qotain [ch+eke+ar] (end)...
+
+  DARK MIDDLE: qe (x1)
+    L13: ...chckh shey [-+qe+eey] chol lkain...
+
+  DARK MIDDLE: ta (x1)
+    L16: ...olain otshedy [qo+ta+ly] dar sain...
+
+  DARK MIDDLE: kal (x1)
+    L18: ...qol sheedy [qo+kal+dy] chepy dain...
+
+  DARK MIDDLE: kalch (x1)
+    L21: ...qokaiin chey [qo+kalch+ey] dal chdy...
+
+  DARK MIDDLE: yl (x1)
+    L22: ...okar okain [-+yl+aiin] y...
+
+  DARK MIDDLE: rch (x1)
+    L23: ...(start) [da+rch+ey] cheolchey shcthy... [LINE-INIT]
+
+  DARK MIDDLE: olk (x1)
+    L26: ...cheor shey [qo+olk+al] shedy shedy...
+
+  DARK MIDDLE: lc (x1)
+    L26: ...shey shedy [ol+lc+hy] shlches shcthy...
+
+  DARK MIDDLE: lche (x1)
+    L26: ...shedy ollchy [sh+lche+s] shcthy sain...
+
+  DARK MIDDLE: qk (x1)
+    L42: ...(start) [-+qk+or] shedy shey... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: ecth (x1)
+    L46: ...okeedy ldaiin [ch+ecth+ey] okedalor...
+
+====================================================================================================
+  f84r | Ch14P | Gold dissolution (gold+quintessence, balneum+putrefaction)
+  13 dark tokens, 10 unique dark MIDDLEs, 361 total tokens
+====================================================================================================
+
+  DARK MIDDLE: cs (x3)
+    L 1: ...olshed opshed [yk+cs+edy] qotedy opoly...
+    L28: ...qokeedy dkedy [ol+cs+edy] qokal shckhy...
+    L30: ...otchdy qokain [-+cs+edy] qokeey qotedy...
+
+  DARK MIDDLE: lch (x2)
+    L 7: ...qokain shedy [sa+lch+edy] (end)...
+    L11: ...qotedy rshedy [qo+lch+ey] oteey qol...
+
+  DARK MIDDLE: ols (x1)
+    L10: ...(start) [ok+ols+hy] qotchsdy ykeedy... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: dyt (x1)
+    L 1: ...qokeey otedy [-+dyt+edy] okeedy olshed...
+
+  DARK MIDDLE: p (x1)
+    L 5: ...tey qokedy [qo+p+or] oly...
+
+  DARK MIDDLE: lk (x1)
+    L 7: ...sol yqokain [qo+lk+eey] qotedy qokain...
+
+  DARK MIDDLE: cfh (x1)
+    L 8: ...otedy pshol [pch+cfh+dy] qokeedy dy...
+
+  DARK MIDDLE: cth (x1)
+    L14: ...qotol [sh+cth+hy] oty dar...
+
+  DARK MIDDLE: ec (x1)
+    L31: ...rcheky dol [ok+ec+hy] (end)...
+
+  DARK MIDDLE: os (x1)
+    L32: ...dar ar [-+os+y] (end)...
+
+====================================================================================================
+  f79r | Ch12M | Mercury sublimation to elixir (mercury-water+stone-water)
+  24 dark tokens, 16 unique dark MIDDLEs, 389 total tokens
+====================================================================================================
+
+  DARK MIDDLE: tsh (x4)
+    L13: ...pshorol shckhy [qo+tsh+dy] qokaldy opchedy...
+    L31: ...pol shey [ol+tsh+edy] sheol ykeey...
+    L33: ...daiin shedy [qo+tsh+edy] oteeedy oteedy...
+    L40: ...shedy qokched [ol+tsh+ey] otchotor ol...
+
+  DARK MIDDLE: lch (x3)
+    L 5: ...or chear [so+lch+ey] qol shal...
+    L 7: ...(start) [po+lch+edy] qokar shey... [PAR-INIT,LINE-INIT]
+    L 9: ...qokar sheol [qo+lch+ey] qoty qokal...
+
+  DARK MIDDLE: ksh (x2)
+    L10: ...(start) [qo+ksh+edy] qokain cheor... [LINE-INIT]
+    L24: ...(start) [qo+ksh+edy] qolkeey qolkeedy... [LINE-INIT]
+
+  DARK MIDDLE: oik (x2)
+    L11: ...(start) [sh+oik+hy] chedy tshey... [LINE-INIT]
+    L20: ...shal ychedar [-+oik+hy] scthey tal...
+
+  DARK MIDDLE: lk (x2)
+    L24: ...qokshedy [qo+lk+eey] qolkeedy qokedy...
+    L39: ...(start) [po+lk+eey] qokol otshdy... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: eal (x1)
+    L 3: ...(start) [sh+eal+dy] rshedy qoteedy... [LINE-INIT]
+
+  DARK MIDDLE: ls (x1)
+    L 4: ...qokeey okey [qo+ls+hy] olchey qoky...
+
+  DARK MIDDLE: olo (x1)
+    L 8: ...yoky qokal [ch+olo+-] (end)...
+
+  DARK MIDDLE: kal (x1)
+    L13: ...shckhy qotshdy [qo+kal+dy] opchedy qotar...
+
+  DARK MIDDLE: dyt (x1)
+    L15: ...chedy okol [-+dyt+y] saiin ol...
+
+  DARK MIDDLE: eyk (x1)
+    L19: ...shey qokain [sh+eyk+y] shoky oly...
+
+  DARK MIDDLE: fch (x1)
+    L22: ...otain shey [qo+fch+ey] ol dor...
+
+  DARK MIDDLE: olch (x1)
+    L25: ...(start) [ch+olch+ey] qotshy qol... [LINE-INIT]
+
+  DARK MIDDLE: ts (x1)
+    L25: ...cholchey [qo+ts+hy] qol shey...
+
+  DARK MIDDLE: ta (x1)
+    L34: ...lcheol kchedy [qo+ta+s] sheey teol...
+
+  DARK MIDDLE: eke (x1)
+    L35: ...qotain ody [ch+eke+s] otal...
+
+====================================================================================================
+  f82r | Ch22M | Lunaria maceration (lunaria+flesh, sealed 3 days)
+  12 dark tokens, 11 unique dark MIDDLEs, 275 total tokens
+====================================================================================================
+
+  DARK MIDDLE: lch (x2)
+    L 2: ...dchedy [qo+lch+edy] qokain dy...
+    L10: ...(start) [ko+lch+dy] qokedy qopol... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: eckh (x1)
+    L 3: ...qokeey [lch+eckh+edy] qokaly solkaiin...
+
+  DARK MIDDLE: lk (x1)
+    L 3: ...lcheckhedy qokaly [so+lk+aiin] chckhy qokaiin...
+
+  DARK MIDDLE: octh (x1)
+    L 4: ...qokaiin [-+octh+eol] chkeey ldy...
+
+  DARK MIDDLE: lsh (x1)
+    L 7: ...qokar shedy [so+lsh+edy] qokeey qoky...
+
+  DARK MIDDLE: p (x1)
+    L10: ...kolchdy qokedy [qo+p+ol] qotedor chopchedy...
+
+  DARK MIDDLE: eok (x1)
+    L20: ...daiin [ch+eok+y] lkedy rolshey...
+
+  DARK MIDDLE: kee (x1)
+    L22: ...daiin chey [qo+kee+edy] lchedy lar...
+
+  DARK MIDDLE: es (x1)
+    L24: ...dol [qo+es+edy] sheeerl sheedy...
+
+  DARK MIDDLE: loch (x1)
+    L26: ...qoteedy qokeedy [-+loch+edy] (end)...
+
+  DARK MIDDLE: cth (x1)
+    L27: ...qokeedy qotain [ch+cth+ey] qoteeol chey...
+
+====================================================================================================
+  f76v | Ch15M | Ferment conversion (join H, bind)
+  22 dark tokens, 19 unique dark MIDDLEs, 400 total tokens
+====================================================================================================
+
+  DARK MIDDLE: lk (x2)
+    L 4: ...(start) [so+lk+eey] sor shecthy... [LINE-INIT]
+    L29: ...sheedy qokeedy [qo+lk+ey] lchdy scheer...
+
+  DARK MIDDLE: cth (x2)
+    L 5: ...otain okain [ch+cth+edy] qoteed ykedy...
+    L14: ...otedy qoteedy [sh+cth+edy] qoeekeedy deedy...
+
+  DARK MIDDLE: eet (x2)
+    L10: ...shedy tchedy [lsh+eet+al] shecphy daiin...
+    L20: ...dol [sh+eet+ey] qokedy ol...
+
+  DARK MIDDLE: rol (x1)
+    L 1: ...lkodol opa [ko+rol+s] (end)...
+
+  DARK MIDDLE: olke (x1)
+    L 2: ...scsedy keedy [ch+olke+eey] otedor okor...
+
+  DARK MIDDLE: yk (x1)
+    L 2: ...oly shey [qo+yk+y] (end)...
+
+  DARK MIDDLE: tee (x1)
+    L 6: ...(start) [qo+tee+s] olkeey okeedy... [LINE-INIT]
+
+  DARK MIDDLE: da (x1)
+    L 7: ...qokedy okedar [-+da+-] (end)...
+
+  DARK MIDDLE: och (x1)
+    L 8: ...qokeedy [-+och+edy] roiin sheedy...
+
+  DARK MIDDLE: ecth (x1)
+    L15: ...chedal chedy [ch+ecth+ey] (end)...
+
+  DARK MIDDLE: eoke (x1)
+    L16: ...shedy pschedal [sh+eoke+edy] oshepols...
+
+  DARK MIDDLE: eckh (x1)
+    L19: ...shedy otchedy [ch+eckh+ey] olchedy checkhy...
+
+  DARK MIDDLE: dyt (x1)
+    L22: ...qotedy chey [-+dyt+ey] teedy lchey...
+
+  DARK MIDDLE: ksh (x1)
+    L25: ...psheoldy opalshedy [qo+ksh+edy] qokedy dor...
+
+  DARK MIDDLE: ro (x1)
+    L25: ...opchedy dal [-+ro+-] fcham...
+
+  DARK MIDDLE: ckhyd (x1)
+    L26: ...oteoldy qokeey [ch+ckhyd+-] lar aly...
+
+  DARK MIDDLE: lai (x1)
+    L27: ...o kan [ch+lai+iin] (end)...
+
+  DARK MIDDLE: qe (x1)
+    L36: ...lshety okeey [-+qe+edy] (end)...
+
+  DARK MIDDLE: oi (x1)
+    L37: ...chees ol [-+oi+iin] chchky shekeey...
+
+====================================================================================================
+  f103r | Ch16M | Ferment multiplication (chambers B+E+G, balneum)
+  32 dark tokens, 27 unique dark MIDDLEs, 522 total tokens
+====================================================================================================
+
+  DARK MIDDLE: ep (x3)
+    L 2: ...opchedy peshol [ch+ep+-] ar otchy...
+    L21: ...otal qokal [ch+ep+y] okedy qoky...
+    L22: ...qotar chcthy [ch+ep+ar] otar opchy...
+
+  DARK MIDDLE: ec (x2)
+    L 8: ...okey rain [ok+ec+hy] qoisol qotar...
+    L33: ...qokeey [ch+ec+hy] qokey shckhy...
+
+  DARK MIDDLE: lk (x2)
+    L21: ...pcheam sokedy [da+lk+ar] otal qokal...
+    L28: ...deshedy qokchey [da+lk+ain] okaiin chedy...
+
+  DARK MIDDLE: eed (x2)
+    L26: ...qotchy shey [ol+eed+ar] shey lotos...
+    L49: ...l ol [sh+eed+-] qokeey sheol...
+
+  DARK MIDDLE: eot (x1)
+    L 3: ...yshdain sheek [ch+eot+y] chokal chedy...
+
+  DARK MIDDLE: och (x1)
+    L 6: ...(start) [-+och+eey] dain shek... [LINE-INIT]
+
+  DARK MIDDLE: ro (x1)
+    L 8: ...(start) [da+ro+al] okey chedy... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: is (x1)
+    L 8: ...rain okechy [qo+is+ol] qotar adchey...
+
+  DARK MIDDLE: ofcho (x1)
+    L 8: ...qotar adchey [-+ofcho+-] lteody oral...
+
+  DARK MIDDLE: ols (x1)
+    L10: ...otaiin shedy [te+ols+hy] oteedy sarain...
+
+  DARK MIDDLE: olk (x1)
+    L16: ...dshol [sh+olk+ar] sedaiin cheey...
+
+  DARK MIDDLE: lch (x1)
+    L18: ...(start) [po+lch+edy] qokeol okain... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: ls (x1)
+    L22: ...(start) [da+ls+hy] okain shckhody... [LINE-INIT]
+
+  DARK MIDDLE: ckho (x1)
+    L22: ...dalshy okain [sh+ckho+dy] shdal qokeedy...
+
+  DARK MIDDLE: olkch (x1)
+    L30: ...(start) [pch+olkch+dy] sheckhy qokey... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: da (x1)
+    L30: ...opchedy oteeykshy [ch+da+ly] (end)...
+
+  DARK MIDDLE: tai (x1)
+    L33: ...shedy yteedy [qo+tai+l] seedy...
+
+  DARK MIDDLE: osh (x1)
+    L34: ...sheod [-+osh+ey] cheedalaiin...
+
+  DARK MIDDLE: kee (x1)
+    L35: ...(start) [qo+kee+ar] chain olain... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: ool (x1)
+    L36: ...(start) [ok+ool+-] chedy okeedy... [LINE-INIT]
+
+  DARK MIDDLE: ks (x1)
+    L37: ...qokeey qokeodair [qo+ks+hy] qokeedy qokeedy...
+
+  DARK MIDDLE: sk (x1)
+    L37: ...qokeedy qokeedy [ch+sk+y] shey shalky...
+
+  DARK MIDDLE: ode (x1)
+    L44: ...(start) [-+ode+eey] qokeey shey... [LINE-INIT]
+
+  DARK MIDDLE: tol (x1)
+    L48: ...polarar lshedy [qo+tol+aiin] qokeey qokeey...
+
+  DARK MIDDLE: eos (x1)
+    L51: ...chekeey shey [ch+eos+aiin] (end)...
+
+  DARK MIDDLE: epc (x1)
+    L52: ...qokeey qoty [ch+epc+hy] qopchey lkaiin...
+
+  DARK MIDDLE: rch (x1)
+    L54: ...dshey qoteeey [da+rch+edy] qokey qoty...
+
+====================================================================================================
+  f77v | Ch27M | Furnace specification (5 furnaces, 3 fire types)
+  14 dark tokens, 13 unique dark MIDDLEs, 331 total tokens
+====================================================================================================
+
+  DARK MIDDLE: q (x2)
+    L 2: ...olshedy qolsheedy [-+q+y] rchr ycheedy...
+    L 9: ...olchey lchey [-+q+edy] or cheey...
+
+  DARK MIDDLE: alo (x1)
+    L 5: ...(start) [ok+alo+-] tchedar olain... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: lk (x1)
+    L 2: ...shdal chedy [qo+lk+y] (end)...
+
+  DARK MIDDLE: eed (x1)
+    L 6: ...dol chdy [sh+eed+al] qokal chedy...
+
+  DARK MIDDLE: qe (x1)
+    L 9: ...darcheedal [-+qe+edy] qeedeey olchey...
+
+  DARK MIDDLE: lch (x1)
+    L16: ...qokal [sa+lch+edy] shey fchor...
+
+  DARK MIDDLE: ta (x1)
+    L16: ...shey fchor [qo+ta+s] olky darory...
+
+  DARK MIDDLE: ro (x1)
+    L16: ...qotas olky [da+ro+ry] (end)...
+
+  DARK MIDDLE: oqok (x1)
+    L17: ...qol chedy [-+oqok+ain] olkaiin chckhy...
+
+  DARK MIDDLE: ir (x1)
+    L21: ...(start) [da+ir+ol] shedy rchy... [LINE-INIT]
+
+  DARK MIDDLE: lsh (x1)
+    L27: ...ycheey [qo+lsh+edy] qokal chedy...
+
+  DARK MIDDLE: ld (x1)
+    L33: ...(start) [to+ld+al] shedy qokedy... [LINE-INIT]
+
+  DARK MIDDLE: lche (x1)
+    L33: ...qokedy qotain [do+lche+edy] rolchedy qokedy...
+
+====================================================================================================
+  f81v | Ch18M | Potable gold (mercury-water+gold, cohobation, rectification)
+  17 dark tokens, 14 unique dark MIDDLEs, 258 total tokens
+====================================================================================================
+
+  DARK MIDDLE: p (x2)
+    L 1: ...(start) [-+p+ar] shey keedy... [PAR-INIT,LINE-INIT]
+    L10: ...polshy oshyteed [qo+p+-] okeedy otedy...
+
+  DARK MIDDLE: osh (x2)
+    L11: ...(start) [-+osh+ey] qokeey okeey... [LINE-INIT]
+    L25: ...(start) [-+osh+edy] qotedy shol... [LINE-INIT]
+
+  DARK MIDDLE: lk (x2)
+    L19: ...(start) [so+lk+eey] ol shedy... [LINE-INIT]
+    L21: ...lshedy chedy [qo+lk+y] lchedal qol...
+
+  DARK MIDDLE: of (x1)
+    L 1: ...shek dain [-+of+al] sheky otoin...
+
+  DARK MIDDLE: eckh (x1)
+    L 7: ...olor ol [sh+eckh+al] daiin qokeedal...
+
+  DARK MIDDLE: ls (x1)
+    L10: ...(start) [po+ls+hy] oshyteed qop... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: ir (x1)
+    L10: ...okshedy qoty [da+ir+am] (end)...
+
+  DARK MIDDLE: olyd (x1)
+    L11: ...olchy ky [sh+olyd+-] (end)...
+
+  DARK MIDDLE: ip (x1)
+    L13: ...dar ykeda [-+ip+hy] qoty ykedy...
+
+  DARK MIDDLE: fch (x1)
+    L15: ...sheey salshcthdy [qo+fch+edy] r chedy...
+
+  DARK MIDDLE: lch (x1)
+    L17: ...ol shedy [qo+lch+edy] qokain shckhy...
+
+  DARK MIDDLE: cth (x1)
+    L20: ...(start) [qo+cth+ey] chekal chody... [LINE-INIT]
+
+  DARK MIDDLE: oi (x1)
+    L27: ...dsheol [-+oi+iin] olkeedy tedy...
+
+  DARK MIDDLE: oin (x1)
+    L 1: ...ofal sheky [ot+oin+-] olkol... [PAR-INIT,LINE-INIT]
+
+====================================================================================================
+  f112r | Ch11M | Red mercury tincture (ruby liquor, cohobation, calcination)
+  32 dark tokens, 26 unique dark MIDDLEs, 394 total tokens
+====================================================================================================
+
+  DARK MIDDLE: q (x3)
+    L11: ...tchedy qoteey [-+q+eol] qokeey otey...
+    L19: ...saiin sheky [-+q+eey] qokey qokeey...
+    L21: ...okeedy qoteedy [-+q+eey] rair ol...
+
+  DARK MIDDLE: kee (x3)
+    L17: ...qoeeean she [ol+kee+ar] cheey qor...
+    L32: ...ar s [al+kee+ar] alshedy okeechy...
+    L38: ...sar ain [ol+kee+ar] okeody qokeeiin...
+
+  DARK MIDDLE: p (x2)
+    L23: ...dairiy teedy [qo+p+ol] chdy oteor...
+    L39: ...palkeedy [qo+p+al] otedy opal...
+
+  DARK MIDDLE: eet (x2)
+    L24: ...(start) [ch+eet+eey] qoteeey lkeey... [LINE-INIT]
+    L25: ...chor aiin [ch+eet+y] chcthy okey...
+
+  DARK MIDDLE: eed (x1)
+    L 1: ...xar ally [ot+eed+al] or aiin...
+
+  DARK MIDDLE: lk (x1)
+    L 2: ...saiin oar [qo+lk+aiin] otail ol...
+
+  DARK MIDDLE: ody (x1)
+    L 3: ...otaiin oty [-+ody+s] (end)...
+
+  DARK MIDDLE: ir (x1)
+    L 8: ...(start) [sa+ir+or] eteedy chol... [LINE-INIT]
+
+  DARK MIDDLE: ete (x1)
+    L 8: ...sairor [-+ete+edy] chol qotchedy...
+
+  DARK MIDDLE: eee (x1)
+    L17: ...(start) [qo+eee+an] she olkeear... [LINE-INIT]
+
+  DARK MIDDLE: lchd (x1)
+    L18: ...key chey [da+lchd+-] aiin okal...
+
+  DARK MIDDLE: lch (x1)
+    L19: ...(start) [po+lch+dy] ol otaly... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: ko (x1)
+    L19: ...qokey qokeey [qo+ko+-] am...
+
+  DARK MIDDLE: cth (x1)
+    L21: ...solkeedy raiin [ch+cth+ey] okeedy qoteedy...
+
+  DARK MIDDLE: rai (x1)
+    L21: ...qoteedy qeey [-+rai+r] ol sy...
+
+  DARK MIDDLE: octh (x1)
+    L23: ...chdy oteor [-+octh+dy] otychey...
+
+  DARK MIDDLE: och (x1)
+    L25: ...tedain shedy [-+och+or] okchd ykedy...
+
+  DARK MIDDLE: olke (x1)
+    L27: ...(start) [pch+olke+edy] okchoiiin aky... [PAR-INIT,LINE-INIT]
+
+  DARK MIDDLE: oi (x1)
+    L27: ...pcholkeedy [ok+oi+iin] aky opchedy...
+
+  DARK MIDDLE: ak (x1)
+    L27: ...pcholkeedy okchoiiin [-+ak+y] opchedy kolfchdy...
+
+  DARK MIDDLE: eoke (x1)
+    L28: ...ysheedy [sh+eoke+edy] qokeedy qokain...
+
+  DARK MIDDLE: ea (x1)
+    L29: ...olor al [ch+ea+ly] (end)...
+
+  DARK MIDDLE: eok (x1)
+    L30: ...tar ar [ch+eok+ey] okeody chol...
+
+  DARK MIDDLE: rain (x1)
+    L31: ...okeeor oteor [ka+rain+y] (end)...
+
+  DARK MIDDLE: es (x1)
+    L41: ...(start) [sh+es+y] alain cheey... [LINE-INIT]
+
+  DARK MIDDLE: yk (x1)
+    L44: ...ain qokaekeeey [-+yk+-] okaeechey okeeedy...
+
+Traceback (most recent call last):
+  File "C:\git\voynich\phases\RECIPE_FOLIO_CORRESPONDENCE\scripts\_dark_pipeline_inventory.py", line 45, in <module>
+    lines[int(t.line)].append(t)
+          ^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '44a'
