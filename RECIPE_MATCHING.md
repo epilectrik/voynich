@@ -55,7 +55,14 @@ The 8 features used for matching were not developed for recipe comparison. They 
 
 Phase 628 froze the feature set — selected the best 8 from the full inventory and locked them. The Testamentum was identified AFTER this point. The recipe matching was a one-shot application of pre-existing features, not an iterative tuning process.
 
-**Post-match refinements (honest accounting):** After the initial 16 distillation matches, two adjustments were made to the broader analytical system (not the 8D features themselves): (1) `dar` and `dal` tokens were identified as cross-folio material-introduction markers (Phase 634), and (2) the atom gloss for `d` was revised from "mark" to "do/execute" (C1934, Phase 636) based on a 7-axis discrimination battery. Of the 18 atom glosses, 16 have remained unchanged since their original assignment in early phases. The 8D matching features were never re-tuned.
+**Post-match refinements (honest accounting):** The 8D features were never re-tuned. However, the initial 16 matches led to discovery of additional diagnostic signals used in subsequent matching stages:
+
+- `dar` and `dal` tokens identified as material-introduction markers by examining matched folios (Phase 634). Used in atom-level validation of later matches (e.g., dar=4 on f84v matching 4 material introductions in Ch15P).
+- Dark pipeline material markers `fch` (mercury) and `cs` (gold) identified through enrichment analysis on matched folios (Phase 637). Used as hard filters to extend matching to higher Mercuriorum chapters (Phase 638).
+- `eed` (extended cooling), `ro` (fermentation), `cth` (state-transition monitoring) identified as diagnostic dark pipeline tokens through recipe comparison. Used in atom-level cold reads.
+- Recto/verso structural prediction (C1936) discovered from matched pairs. Used to predict new matches on unmatched sides of already-matched leaves.
+
+These signals were discovered AFTER and BECAUSE OF the initial matches — they are iterative refinements, not independent features. The 8D automated matching system remained frozen throughout. Of the 18 atom glosses, only `d` (mark→do) and `a` (into→yield) were revised; the other 16 have remained unchanged since their original assignment in early phases.
 
 ### The 8D Residual Matching
 
