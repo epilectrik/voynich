@@ -40,6 +40,23 @@ Each PL chapter was characterized by a 4-channel feature vector extracted from t
 
 Each Voynich folio was characterized by 12 operational features from the token-level grammar analysis (k_ratio, h_ratio, e_ratio, terminal_rate, and 4 deployment features from the morph system).
 
+### Feature Provenance and Tuning Timeline
+
+The 8 features used for matching were not developed for recipe comparison. They are the end product of ~627 phases of purely internal structural analysis of the Voynich text, performed with zero knowledge of the Testamentum or any external recipe text:
+
+| Feature | Origin | Phase range | What it measures |
+|---------|--------|------------|-----------------|
+| k_ratio, h_ratio, e_ratio | Kernel classification | ~100-200 | Token-internal kernel character ratios |
+| terminal_rate | Opacity/transparency analysis | ~200-300 | Fraction of tokens with opaque terminals |
+| thermo_ke | Thermal gradient work | ~300-400 | Tokens with gentle-heat PREFIX + e_depth |
+| m_linefinal_rate | Paragraph architecture | ~400-500 | Positional behavior of m-terminal tokens |
+| hl_displaced_suffix_transparency | Headless compound analysis | ~500-600 | Suffix behavior in headless domain |
+| hl_header_enrichment | Paragraph header profiling | ~500-600 | Headless token concentration in headers |
+
+Phase 628 froze the feature set — selected the best 8 from the full inventory and locked them. The Testamentum was identified AFTER this point. The recipe matching was a one-shot application of pre-existing features, not an iterative tuning process.
+
+**Post-match refinements (honest accounting):** After the initial 16 distillation matches, two adjustments were made to the broader analytical system (not the 8D features themselves): (1) `dar` and `dal` tokens were identified as cross-folio material-introduction markers (Phase 634), and (2) the atom gloss for `d` was revised from "mark" to "do/execute" (C1934, Phase 636) based on a 7-axis discrimination battery. Of the 18 atom glosses, 16 have remained unchanged since their original assignment in early phases. The 8D matching features were never re-tuned.
+
 ### The 8D Residual Matching
 
 8 locked feature dimensions map recipe features to folio features:
@@ -298,7 +315,7 @@ The matching system says YES to procedural Practica and Mercuriorum content, and
 
 - **Individual chapter assignments are Tier 3** (interpretive, not proven). The matching FRAMEWORK is Tier 2 (validated by permutation test, cross-family replication, negative controls). But any specific "this folio = this chapter" assignment could be revised by new evidence. No individual false discovery rate has been computed; the permutation test validates aggregate significance, not per-match confidence.
 
-- **Feature selection circularity.** The 8D features were tuned on distillation→R1 (16 chapters, 32 folios). The permutation test validates whether the ASSIGNMENT is better than random, but the feature SELECTION was data-driven from the same corpus. Cross-family generalization (+7% distance penalty) mitigates this but does not fully resolve it.
+- **Feature selection circularity.** The 8D features were developed through internal structural analysis (Phases 100-627) and frozen at Phase 628 before the Testamentum was identified as a candidate source. The features were NOT tuned against recipe text. However, the feature SELECTION (which 8 of many available features to use) was data-driven from the same Voynich corpus that the matches operate on. Cross-family generalization (+7% distance penalty, C1885) and wrong-regime collapse (C1886) mitigate this, as does the 10-dimension shuffle test (C1956: 0/10,000 shuffles beat the real assignment across all dimensions). But full resolution would require pre-registration, which was not done. Post-match, only 2 of 18 atom glosses were revised (d and a), and the 8D features themselves were never re-tuned.
 
 - **~40 folios remain unmatched — but this is a structural prediction, not a failure.** The unmatched folios are concentrated in Section H (herbal pages with plant illustrations), which is physically and organizationally separate from the sections where matches cluster. The pattern is consistent with a multi-domain workshop manual where each manuscript section draws from a different source tradition:
   - **Section B (f75-f84):** Matched to PL Mercuriorum (mercury preparation pipeline)
