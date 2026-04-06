@@ -199,7 +199,7 @@ The Pseudo-Lullian Testamentum was written under a false name because open alche
 
 ## Update: Pseudo-Lullian Source Identification (Phases 628-638)
 
-Computational matching (Phases 628-638, C1882-C1948) has identified the Pseudo-Lullian *Testamentum* (Practica + Liber Mercuriorum) as the source text. 47 procedural chapters match to ~30 folios (89% of procedural content). 3 independently confirmed (f75r/Ch19M, f76r/Ch18P, f84r/Ch14P), 5 reverse-blind confirmed, 3 fch hard-filter confirmed, 1 cs hard-filter, 1 recto/verso scan. The Testamentum was originally composed in Catalan (1332), translated to Latin (1443). The Catalan operational vocabulary matches the Voynich atom system at workshop granularity (fire types, heating rates, drip-count monitoring). The Testamentum slots directly into Chain 1:
+Computational matching (Phases 628-639, C1882-C1958) has identified the Pseudo-Lullian *Testamentum* (Practica + Liber Mercuriorum) as the source text. 51 procedural chapters match to 41 folios (96% of procedural content). 3 independently confirmed (f75r/Ch19M, f76r/Ch18P, f84r/Ch14P), 5 reverse-blind confirmed, 4 fch hard-filter confirmed, 1 cs hard-filter, 4 recto/verso scan. A 10-dimension permutation test validates the assignment set at p < 0.0001 (C1956). The Testamentum was originally composed in Catalan (1332), translated to Latin (1443). The Catalan operational vocabulary matches the Voynich atom system at workshop granularity (fire types, heating rates, drip-count monitoring). The Testamentum slots directly into Chain 1:
 
 ```
 Arnald of Villanova (~1300)

@@ -2,7 +2,7 @@
 
 This document states the project's claims explicitly, with the evidence tier and constraint basis for each. It exists because the Voynich Manuscript attracts extraordinary claims, and readers deserve to know exactly where our confidence is high and where it is not.
 
-For the full constraint system, see `context/CLAIMS/INDEX.md` (1,938 validated constraints).
+For the full constraint system, see `context/CLAIMS/INDEX.md` (1,958 validated constraints).
 
 ---
 
@@ -70,7 +70,7 @@ These claims combine structural evidence (Tier 2) with interpretive identificati
 
 - **We do not claim authorship or provenance proof.** The radiocarbon date (1404-1438) and structural properties are consistent with Central European guild workshop culture, but this is historical interpretation (Tier 3-4), not proof.
 
-- **We do not claim that all folios are Pseudo-Lullian.** 40 folios have been individually analyzed (with per-folio documentation), of which 42 procedural chapters map to ~25 folios. The remaining ~40 uninvestigated folios (mostly Section H herbal pages) use the same grammar and operational vocabulary but have not been matched to specific source chapters. They may correspond to other Pseudo-Lullian texts, related traditions, or workshop-specific procedures.
+- **We do not claim that all folios are Pseudo-Lullian.** 51 procedural chapters map to 41 folios (50% of 82 Currier B folios). The remaining 41 unmatched folios (mostly Section H herbal pages) use the same grammar and operational vocabulary but have not been matched to specific source chapters. They may correspond to other Pseudo-Lullian texts, herbal distillation traditions, or workshop-specific procedures.
 
 - **We do not claim that illustrations carry semantic content.** Illustration-text coupling tests show swap invariance (C138) — the illustrations are orientation aids, not information carriers.
 

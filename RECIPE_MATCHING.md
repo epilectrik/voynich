@@ -1,6 +1,6 @@
 # Recipe Matching: How We Identified the Source Tradition
 
-This document describes the methodology used to match individual chapters of the Pseudo-Lullian *Testamentum* to individual Voynich manuscript folios. 42 unique procedural chapters map to ~25 folios, covering approximately 89% of the *Testamentum*'s procedural content (42 of 47 chapters classified as procedural). The methodology progressed through four stages: statistical matching, expanded matching, reverse-blind prediction, and instruction-level validation.
+This document describes the methodology used to match individual chapters of the Pseudo-Lullian *Testamentum* to individual Voynich manuscript folios. 51 procedural chapters map to 41 folios, covering 96% of the *Testamentum*'s procedural content (51 of 53 chapters classified as procedural). The methodology progressed through six stages: statistical matching, expanded matching, reverse-blind prediction, instruction-level validation, material-marker hard-filtering, and recto/verso systematic scanning.
 
 For the broader project context, see [README.md](README.md). For claims and limits, see [WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md).
 
