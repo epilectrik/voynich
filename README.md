@@ -84,7 +84,7 @@ This conclusion rests on 1,958 validated constraints from 639 research phases ac
 
 The Pseudo-Lullian *Testamentum* — a 14th-15th century alchemical treatise attributed to Ramon Llull but written by an unknown practitioner — provides the closest match to the manuscript's operational content. 51 procedural chapters (30 Mercuriorum + 21 Practica) match to 41 folios, covering 96% of the source's expanded procedural content (53 chapters). Validated by:
 
-- **Permutation testing:** Real chapter-to-folio assignment beats 1,000 random shuffles (p<0.001)
+- **Permutation testing:** 10-dimension shuffle test, zero out of 10,000 random reassignments replicate the match quality (p<0.0001, C1956)
 - **Reverse-blind prediction:** Recipe-derived predictions identify matching folios from pools of unmatched candidates BEFORE examining the folio. f103v identified from 49 candidates, confirmed 6/7 at atom level; f77r scored 7/7 perfect (C1935)
 - **Cross-family replication:** Features derived from distillation chapters generalize to sublimation, fermentation, fixation, and dissolution families without retuning (+7% distance penalty, C1933)
 - **Negative controls:** Wrong-regime matching collapses; theoretical (96 chapters), descriptive (30 Furnis chapters), Codicillus (19 segments), and Brunschwig compounds (20 recipes) all produce zero atom-validated matches (C1932)
