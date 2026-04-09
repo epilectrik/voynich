@@ -262,8 +262,8 @@ The strongest external content alignment comes from the Pseudo-Lullian *Testamen
 An 8-dimensional residual feature system matches individual *Testamentum* chapters to individual Voynich folios:
 
 - **Training:** 16 distillation chapters → 32 REGIME_1 folios. 9/16 confident matches.
-- **Validation:** Permutation test (real beats 1,000 random shuffles, p<0.001). Cross-family replication (features generalize to sublimation, fermentation, fixation, dissolution without retuning). Wrong-regime negative control (collapses to 1/16).
-- **Expansion:** Full-spectrum scan of all 209 *Testamentum* chapters across all operation families. 22+ atom-validated matches total.
+- **Validation:** 10-dimension permutation test (0/10,000 shuffles, p<0.0001, C1956). Cross-family replication (features generalize to sublimation, fermentation, fixation, dissolution without retuning). Wrong-regime negative control (collapses to 1/16).
+- **Expansion:** Full-spectrum scan of all 209 *Testamentum* chapters across all operation families. 51 procedural chapters matched to 41 folios (96% of procedural content).
 
 ### The Matched Folios
 
@@ -417,7 +417,7 @@ For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](M
 | See the Brunschwig comparison | `context/SPECULATIVE/brunschwig_comparison.md` |
 | See the Rupescissa/Galenic comparison | `context/SPECULATIVE/rupescissa_comparative.md` |
 | See the recipe-folio matching | `phases/RECIPE_FOLIO_CORRESPONDENCE/` (Phase 628) |
-| See individual folio decode notes | `context/FOLIOS/INDEX.md` (30 documented folios) |
+| See individual folio decode notes | `context/FOLIOS/INDEX.md` (48 documented folios) |
 | See the PL Testamentum text | `sources/pseudo_lull_testamentum/testamentum_complete_english.txt` |
 | See the glossing system | `context/GLOSSING.md` |
 | See the historical network | `phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md` |

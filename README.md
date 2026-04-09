@@ -145,7 +145,7 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 | Validated constraints | 1,958 |
 | Research phases | 639 |
 | Model fits tested | 75 |
-| Documented folios | 40 (of 83 Currier B) with per-folio analysis notes |
+| Documented folios | 48 (of 83 Currier B) with per-folio analysis notes |
 | Recipe chapter coverage | 51 procedural chapters → 41 folios (96% of *Testamentum* expanded procedural content) |
 | Atom decomposition | 100% structural coverage; 8 atoms locked, 6 solid, 5 plausible |
 

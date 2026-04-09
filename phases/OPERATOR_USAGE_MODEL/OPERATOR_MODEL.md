@@ -1,8 +1,8 @@
 # How to Use the Voynich Manuscript: A Practitioner's Guide
 
-**Phase 551 | Version 1.0 | 2026-03-06**
+**Phase 551 | Version 2.0 | 2026-04-09**
 
-**Status:** INTERPRETIVE SYNTHESIS -- derived from 1,410 validated constraints across 550 prior phases. This document is Tier 3 interpretation built on Tier 0-2 structural findings.
+**Status:** INTERPRETIVE SYNTHESIS -- derived from 1,958 validated constraints across 639 prior phases. This document is Tier 3 interpretation built on Tier 0-2 structural findings. Updated to incorporate recipe-matching evidence (51 chapters → 41 folios, C1935-C1937).
 
 ---
 
@@ -85,10 +85,10 @@ The organizational structure is:
 | Level | Unit | What It Does | Internal Order |
 |-------|------|-------------|----------------|
 | **Line** | Safety envelope | Opens safe, works hot, closes dangerous (C1463-C1466) | Fixed: specification -> thermal work -> closure |
-| **Paragraph** | Operational unit | Self-contained subroutine (C845) | Unordered relative to other paragraphs (C1399) |
-| **Folio** | Complete program | All instructions for one process (C531) | Specifies WHAT and HOW MUCH, not sequence (C1399-C1400) |
+| **Paragraph** | Operational unit | Self-contained subroutine (C845) | Sequential in recipe-matched folios (C1935-C1937); grammar does not enforce order (C1399) |
+| **Folio** | Complete program | All instructions for one process (C531) | Maps to a specific recipe chapter or related chapter group (C1935) |
 
-**How the operator uses it:** The operator reads and executes one line at a time. Each line is independent -- there is no memory carried from the previous line (C1470-C1471), no running count, no accumulator. The line opens with specification (what kind of operation), performs the thermal work in the middle, and closes with routing/transition at the end (C1425-C1430). Between lines, the operator applies their own craft judgment. Between paragraphs, they choose the next subroutine based on the current state of their materials -- the manuscript does not dictate the order (C1399-C1400).
+**How the operator uses it:** The operator reads and executes one line at a time. Each line is independent -- there is no memory carried from the previous line (C1470-C1471), no running count, no accumulator. The line opens with specification (what kind of operation), performs the thermal work in the middle, and closes with routing/transition at the end (C1425-C1430). Between lines, the operator applies their own craft judgment. In recipe-matched folios, paragraphs follow the sequential order of recipe steps (C1935-C1937) -- the operator reads top-to-bottom, executing each paragraph as the next step in the procedure. The grammar itself does not enforce this order (C1399), but the content follows it.
 
 ### Register 4: The Orientation Layer (Human Track)
 
@@ -113,7 +113,9 @@ Here is what a typical work session might look like, reconstructed from the stru
 
 ### Step 1: Select the Program
 
-The operator has a task: process a specific material to produce a specific product. They select the appropriate B folio -- the program for that process. Each folio is a distinct procedure defined by unique vocabulary (C531, C532), so each folio defines a structurally distinct procedure. The selection is made by the operator based on external knowledge; nothing in the manuscript makes this choice for them.
+The operator has a task: process a specific material to produce a specific product. They select the appropriate B folio -- the program for that process. Each folio is a distinct procedure defined by unique vocabulary (C531, C532), so each folio defines a structurally distinct procedure.
+
+In the *Testamentum*-matched sections, this selection maps to a specific recipe chapter: f75r encodes Ch19 Mercuriorum (aqua vitae, 9x reflux), f84r encodes Ch14 Practica (gold dissolution), and so on across 41 matched folios (C1935). The manuscript reorganizes source content for workshop use -- preparation chapters cluster in Section B (f75-f84), transmutation chapters cluster in Section S (f103-f116) -- so the operator navigates by production stage, not by book order (C1936, C1937). Some folios encode multiple short related chapters; sequential operations appear on recto/verso pairs of the same leaf.
 
 ### Step 2: Check Configuration
 
@@ -125,13 +127,17 @@ The operator also checks the AZC zones relevant to their current apparatus confi
 
 The first line of the B folio is HT-dense (50.2%, C747). This composite header serves two purposes: it identifies the program (folio-specific vocabulary, C870) and it orients the operator for the first paragraph. The operator reads this line not for operational instructions but for confirmation that they have the right folio and for a preview of what the first subroutine will involve.
 
-### Step 4: Choose a Paragraph
+### Step 4: Execute Paragraphs as Recipe Steps
 
-The folio contains multiple paragraphs, each delimited by a gallows character (C864, 81.5% gallows-initial). These paragraphs are parallel subroutines (C845, C1399-C1400) -- they can be executed in any order. The operator chooses based on the current state of their materials and equipment, not based on position on the page.
+The folio contains multiple paragraphs, each delimited by a gallows character (C864, 81.5% gallows-initial). Each paragraph is a self-contained operational unit (C845).
+
+In recipe-matched folios, paragraphs correspond to sequential steps in the source procedure. On f75r (aqua vitae), the paragraphs track the reflux distillation cycle from initial heating through repeated distillation passes to the final quality check (C1935). The operator reads top-to-bottom, executing each paragraph as the next step. This sequential correspondence was confirmed across multiple recipe-matched folios during atom-level decode sessions.
+
+The grammar itself does not enforce paragraph order (C1399 -- statistical ordering tests across all folios show weak signal). This means the ordering is a property of the *content* (recipe logic), not the *notation* (grammar rules). In non-recipe folios or folios encoding parallel operations, paragraphs may still function as unordered subroutines.
 
 The paragraph header (first line of the paragraph) is enriched in MARKING vocabulary (C1287, 2.44x) and executive modifiers p and f (C1565, 3.66x and 3.90x enriched). This tells the operator what kind of operation this paragraph covers -- a specification of the subroutine's purpose.
 
-Within the paragraph, all lines share a category theme set by the folio (C1288, within-folio JSD=0.109 vs cross-folio 0.122). The paragraph is THERMAL-heavy or TRANSITION-heavy or FLOW-heavy depending on its function. The operator can tell at a glance what kind of work this subroutine involves.
+Within the paragraph, all lines share a category theme set by the folio (C1288, within-folio JSD=0.109 vs cross-folio 0.122). The paragraph is THERMAL-heavy or TRANSITION-heavy or FLOW-heavy depending on its function. The operator can tell at a glance what kind of work this step involves.
 
 ### Step 5: Execute Line by Line
 
@@ -159,13 +165,13 @@ Between lines, the operator:
 
 None of these decisions are encoded. The manuscript trusts the operator's training.
 
-### Step 7: Between Paragraphs -- Choose the Next Subroutine
+### Step 7: Between Paragraphs -- Advance to the Next Step
 
-When a paragraph ends (signaled by -am suffix at 5.19x paragraph-final enrichment, C1237, and shorter final lines), the operator chooses the next paragraph based on the current state of their materials and equipment. The paragraphs are not ordered (C1399 -- 7/8 ordering tests fail). They do not have a preferred sequence (C1400 -- terminal state does not predict next paragraph type).
+When a paragraph ends (signaled by -am suffix at 5.19x paragraph-final enrichment, C1237, and shorter final lines), the operator advances to the next paragraph. In recipe-matched folios, this means the next step in the procedure -- the ordering follows the recipe's operational logic.
 
-The operator might do the thermal processing paragraph first, then the containment paragraph, then the monitoring paragraph -- or the reverse, or interleaved. The folio specifies *what* subroutines are available and *how much* of each, but not *in what order* (C1399).
+Between paragraphs, the operator assesses the current state of their materials before proceeding. Some paragraphs function as quality gates (e.g., f75r P7: pure monitoring with zero heat tokens, positioned between distillation passes). The operator must judge whether the previous step succeeded before the next step makes sense.
 
-This is like a modern kitchen mise en place: you have all the components prepared and you combine them based on what the dish needs at each moment, not based on a rigid step sequence.
+For folios encoding iterative processes (reflux distillation, repeated sublimation), the operator may cycle back through earlier paragraphs. The recipe determines the number of iterations -- the f75r aqua vitae recipe specifies 9 reflux passes -- but the operator judges when each pass is complete.
 
 ### Step 8: Completion
 
@@ -175,11 +181,13 @@ When all relevant paragraphs have been executed (possibly multiple times for ite
 
 ## 4. What Makes This Different
 
-### Not a Recipe Book
+### Not a Recipe Book -- But It Encodes Recipes
 
-A recipe book says: "Take two drams of lavender, add to a flask of wine spirit, heat gently for four hours, then distill." The Voynich says none of this. No materials are named. No quantities appear. No timings are specified. No step-by-step sequence is prescribed.
+A recipe book says: "Take two drams of lavender, add to a flask of wine spirit, heat gently for four hours, then distill." The Voynich says none of this. No materials are named in natural language. No quantities appear as numbers. No timings are specified as durations.
 
-What the Voynich provides is the *control logic* -- the grammar of safe operations that applies regardless of which specific material is being processed. The same folio might be used for lavender or rosemary or oak bark, with the operator supplying the material-specific knowledge (quantities, timing, sensory cues) from their training.
+Yet the manuscript *does* encode specific recipes -- 51 procedural chapters from the Pseudo-Lullian *Testamentum* have been matched to 41 folios (C1935). What the notation captures is the *control logic* of each recipe: the sequence of operations, the thermal profiles, the monitoring checkpoints, the safety constraints. What it omits is the *material content*: specific substances, exact quantities, and sensory cues that the operator supplies from training and from the dark pipeline identification vocabulary.
+
+The same notation system could in principle encode a different recipe tradition. But in practice, this manuscript encodes one specific tradition -- Pseudo-Lullian alchemy -- reorganized for workshop use.
 
 ### Not a Prose Manual
 
@@ -224,7 +232,7 @@ The manuscript implements a precise division of labor between system and operato
 | **Hazard recognition** | Physical signs of failure require trained observation | C197 |
 | **Process monitoring** | MIDPROCESS actions are structurally absent from the notation | C1056 |
 | **Program selection** | Choosing the right folio requires knowing the task | C197 |
-| **Paragraph ordering** | Choosing the next subroutine requires state assessment | C1399, C1400 |
+| **Paragraph ordering** | Follows recipe step order in matched folios; operator judges readiness to advance | C1399, C1935 |
 | **Completion judgment** | Knowing when to stop requires product evaluation | C197 |
 | **Recovery strategy** | How to recover from errors varies freely (CV 0.72-0.82) | C458 |
 
@@ -247,16 +255,18 @@ The operator's ability to read these identification cues depends entirely on the
 
 ---
 
-## 7. Multiple Operators and Parallel Work
+## 7. Workshop Organization and the Two-Scribe Model
 
-A structural finding worth highlighting for the usage model: paragraphs within a folio are parallel subroutines, not sequential steps (C845, C1399-C1400). Combined with the paragraph self-containment property (C845 -- no inter-paragraph linking), this means multiple operators could potentially work from the same folio simultaneously, each executing a different paragraph.
+Recipe matching revealed that the manuscript's content was produced by at least two scribes with distinct operational domains (C1936, C1937):
 
-The evidence for this interpretation:
-- Paragraphs share vocabulary (category JSD within-folio = 0.109 vs cross-folio = 0.122, C1288) -- they describe similar operations over similar materials
-- Paragraph count correlates with folio complexity (rho = 0.836, C858) -- more complex processes require more parallel subroutines
-- No inter-paragraph state dependencies exist (C1399-C1400) -- each paragraph can run independently
+- **Hand 2** wrote Section B (quire 13, f75-f84): all preparation procedures -- mercury sublimation, aqua vitae distillation, ferment preparation. These correspond to Mercuriorum chapters plus early Practica preparation chapters.
+- **Hand 3** wrote Section S (quire 20, f103-f116): all transmutation and multiplication procedures. These correspond to higher Mercuriorum chapters plus Practica transmutation chapters.
 
-This would be consistent with a workshop setting where multiple trained practitioners work from the same folio simultaneously, each executing a different subroutine.
+This is consistent with two practitioners working from the same source text (*Testamentum*) but encoding different operational domains -- a department-head model where each scribe was the specialist for their production stage. The manuscript reorganizes the source text by workshop function, not by book order: you go to Section B for preparation, Section S for transmutation.
+
+A product chain links the sections: f75r (quintessence) feeds f84r (gold tincture), explicit through the *Testamentum*'s cipher key ("vegetable G" = quintessence). The operator completes preparation in Section B, then moves to Section S for the transmutation stage using the products from Section B as inputs.
+
+Paragraphs within a folio are self-contained (C845) and share vocabulary (C1288). While recipe-matched folios show sequential paragraph ordering, the structural self-containment means a senior practitioner could delegate individual paragraphs to assistants working in parallel -- each step is operationally complete without reference to adjacent paragraphs.
 
 ---
 
@@ -288,5 +298,5 @@ The manuscript's genius is in what it chooses not to encode. By deliberately exc
 ---
 
 *Phase 551: Operator/Document-Usage Model*
-*Interpretive synthesis from 1,410 constraints across 550 analytical phases*
-*Generated 2026-03-06*
+*Interpretive synthesis from 1,958 constraints across 639 analytical phases*
+*Updated 2026-04-09 (v2.0: incorporated recipe-matching evidence)*
