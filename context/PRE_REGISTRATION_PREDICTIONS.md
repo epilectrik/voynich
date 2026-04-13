@@ -360,7 +360,29 @@
 | Paragraph count ~ operation count | Validated on f79r (8=8), variable on others | PARTIALLY — count recipe steps, compare |
 | chekar = quality check present | C1926, validated 7/7 | YES — recipe should mention quality testing |
 
-**Total testable predictions:** 42 folios x 6-8 predictions each = ~250-330 individual predictions.
+---
+
+## Recto/Verso Coherence Predictions
+
+**Added 2026-04-13.** Recto/verso pairs are 38.5% closer in 8D feature space than random pairs (p < 0.0001, 0/10,000 shuffles). The physical leaf is a meaningful organizational unit. Closest unmatched pairs should encode related recipes:
+
+| Leaf | Distance | Known side | Prediction for unknown side |
+|------|----------|-----------|---------------------------|
+| f80 | 0.103 | f80r = Ch21-25M animal ash chain | f80v encodes a closely related animal/ash recipe, possibly Ch26M or continuation of ash chain |
+| f78 | 0.111 | f78v = Ch14M composite ferments | f78r encodes a related fermentation/mercury recipe (has fch+cs, dar=3, dal=4) |
+| f34 | 0.084 | both unmatched | f34r and f34v encode similar herbal procedures (both Section H, very close profiles) |
+| f83 | 0.114 | f83r = Ch9P first distillation | f83v encodes a related distillation recipe (highest qo% in unmatched set at 33.7%) |
+| f75 | 0.074 | f75r = Ch19M aqua vitae | f75v encodes a closely related aqua vitae procedure (nearest-twin in entire corpus) |
+
+**Farthest pairs** (most different recto/verso — may encode deliberately contrasting operations):
+| Leaf | Distance | Notes |
+|------|----------|-------|
+| f111 | 0.361 | f111r = Ch50M error correction; f111v unclear — most divergent Section S pair |
+| f43 | 0.350 | f43r (fch, herbal) vs f43v (Ch29P troubleshooting) — different traditions? |
+
+---
+
+**Total testable predictions:** 42 folios x 6-8 predictions each = ~250-330 individual predictions, plus 5 recto/verso pair predictions.
 
 **Expected accuracy:** Based on matched-set validation rates (dar: 100%, fch: 100%, cs: 100%, e_depth: qualitative match), we expect >80% accuracy on binary predictions (mercury yes/no, gold yes/no, material-adding vs processing-only) and >60% accuracy on ordinal predictions (thermal intensity class, complexity level).
 
