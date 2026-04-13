@@ -1,0 +1,27 @@
+Distillation Notes - Joe's Mint Run
+====================================
+
+Date: 2026-04-10
+Setup: 2L flat bottom flask, aluminum pan, thin sand layer, hot plate (1500W)
+Material: Fresh mint, ~200g packed into flask
+
+Notes:
+- Hot plate got hot enough to crack the ceramic plate underneath it in half
+- Flask doing fine in the sand bath
+- Clevenger trap pooling past the spout due to surface tension, then gravity-clearing in surges
+- May need to adjust angle of rig for consistent flow
+- Drip rate unreliable as control signal due to surface tension modifying drip size/timing
+- Plan: use load cell (fluid weight over time) instead of drip counter for automated rig control loop
+- Overfilled with water — mint floated to top, vigorous boil pushes liquid directly into condenser
+- Lowered heat, letting it boil down before adding boiled-over water back in
+- LESSON: fill water only 1/2 to 2/3 of flask max, leave headspace for mint float and foam
+- Mint compacted significantly once heated — could have fit ~300g instead of 200g
+- LESSON: pack more mint, less water next time
+- Steam distillation (mint in separate flask above boiling water) produced very dark water
+  that stained ceramic boiling beads
+- Hydrodistillation (mint directly in boiling water) surprisingly less dark
+- Investigating why steam extraction is more aggressive than direct boil
+- Zero oil collected — likely yield too low (200g mint = 1-2mL max) AND
+  volatiles condensing early on flask walls/neck and dripping back into boiling water
+- TODO: insulate flask neck and path to condenser (foil wrap), reduce condenser cooling,
+  use more plant material (2-3kg for visible oil yield)

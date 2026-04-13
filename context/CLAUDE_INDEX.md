@@ -323,6 +323,7 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 - **Glossing system:** [GLOSSING.md](GLOSSING.md) - Atom glosses, PREFIX/SUFFIX semantics, expert validation workflow
 - **Dark pipeline dictionary:** [DARK_PIPELINE_DICTIONARY.md](DARK_PIPELINE_DICTIONARY.md) - Candidate material identifications from cross-folio dark MIDDLE analysis (Tier 4 exploratory)
 - **Catalan vocabulary mapping:** [CATALAN_VOCABULARY.md](CATALAN_VOCABULARY.md) - Old Catalan → Latin → Voynich verb/term mapping from Buosi-Moncunill thesis. ABC cipher key. Drip-counting system. Partial coverage (Practica Ch1-12, Mercuriorum Ch1-14); full SISMEL edition on order
+- **Pending tests:** [PENDING_TESTS.md](PENDING_TESTS.md) - Informal findings and exploratory results awaiting formal testing (promote to phase when data available, delete when resolved)
 - **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - Phase index
 - **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
 - **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
