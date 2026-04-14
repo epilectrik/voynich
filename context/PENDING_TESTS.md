@@ -127,6 +127,25 @@ Informal observations and exploratory results awaiting formal testing. These are
 
 ---
 
+## Encoding Architecture Insight (2026-04-14)
+
+### PT-012: Vocabulary is a closed dictionary, not a free generative grammar
+- **Discovery:** Blind encoding tests (encoding modern gold refining procedure in Voynich notation) produced 77-89% valid tokens using atom construction rules. But only 36-43 unique tokens vs f84r's 195. Invalid tokens violated co-occurrence constraints we couldn't articulate.
+- **Key insight:** Only 479 of 48,640 possible MIDDLE types exist (0.9% occupancy, C1028). The scribe wasn't generating tokens from atom rules — they were selecting from a fixed vocabulary of ~479 instruction types, then wrapping with PREFIX/SUFFIX.
+- **Analogy:** Atom rules are phonotactics (which letter combinations are legal). The vocabulary is the lexicon (which legal combinations are actual words). Knowing English phonotactics doesn't generate the English dictionary.
+- **Implication for decoding:** We don't need to decode infinite atom combinations. We need to decode 479 specific words. Each recipe match adds entries to the dictionary (dar=material introduction, chekar=quality check, qokeedy=gentle balneum heat, etc.). The SISMEL book is a dictionary-building opportunity, not a cipher-cracking one.
+- **Supporting evidence:** 
+  - C1028: 0.9% product space occupancy, pairwise co-occurrence gating at 100% recall
+  - C121: 479 token types collapse to 49 instruction classes
+  - C1415: 83 forbidden PREFIX x HEAD pairs (selectional constraints on vocabulary)
+  - C1553: ch/sh categorically excluded from MIDDLE-initial position (5821:0)
+  - C1491: Headless MIDDLEs require da/sa/ta PREFIX (94-96% exclusive)
+  - Blind encoding test: 14 invalid tokens all violate specific co-occurrence rules
+- **Status:** Conceptual reframe, not a testable hypothesis. But changes how we approach the SISMEL comparison — focus on dictionary-building (which of the 479 words appear at which recipe steps) rather than atom-level decode.
+- **Session:** 2026-04-14
+
+---
+
 ## Debunked
 
 ### Period 17 (Derek Earnhart / Ed Honeycutt)
