@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "phase": 641,
+    "script": "s3_ordinal_alignment",
+    "n_pairs": 16,
+    "n_valid_rhos": 5,
+    "mean_rho": 0.2599999999999999,
+    "permutation_p": 0.2195,
+    "categories": [
+      "HEAT",
+      "MON",
+      "MAT",
+      "SEAL",
+      "XFER"
+    ]
+  },
+  "pair_results": [
+    {
+      "folio": "f75r",
+      "part": "Mercuriorum",
+      "num": 19,
+      "tier": "CONFIRMED",
+      "recipe_seq": [
+        "XFER",
+        "SEAL",
+        "XFER"
+      ],
+      "recipe_len": 3,
+      "folio_seq": [
+        "SEAL",
+        "XFER",
+        "MAT"
+      ],
+      "folio_len": 3,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 2,
+      "lcs_frac": 0.6666666666666666
+    },
+    {
+      "folio": "f76r",
+      "part": "Practica",
+      "num": 18,
+      "tier": "CONFIRMED",
+      "recipe_seq": [
+        "HEAT",
+        "XFER",
+        "XFER",
+        "XFER",
+        "MAT",
+        "XFER",
+        "XFER",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT"
+      ],
+      "recipe_len": 15,
+      "folio_seq": [
+        "SEAL",
+        "SEAL",
+        "XFER",
+        "MAT"
+      ],
+      "folio_len": 4,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 2,
+      "lcs_frac": 0.5
+    },
+    {
+      "folio": "f84r",
+      "part": "Practica",
+      "num": 14,
+      "tier": "CONFIRMED",
+      "recipe_seq": [
+        "MAT",
+        "MAT",
+        "MAT",
+        "MAT",
+        "MAT"
+      ],
+      "recipe_len": 5,
+      "folio_seq": [
+        "HEAT",
+        "MON",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "MON",
+        "XFER",
+        "HEAT",
+        "HEAT",
+        "XFER",
+        "MON",
+        "MAT",
+        "SEAL",
+        "MAT",
+        "MAT",
+        "SEAL",
+        "XFER"
+      ],
+      "folio_len": 18,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 3,
+      "lcs_frac": 0.6
+    },
+    {
+      "folio": "f79r",
+      "part": "Mercuriorum",
+      "num": 12,
+      "tier": "STRONG",
+      "recipe_seq": [
+        "MON",
+        "MAT",
+        "XFER",
+        "HEAT"
+      ],
+      "recipe_len": 4,
+      "folio_seq": [
+        "MON",
+        "HEAT",
+        "SEAL",
+        "MAT",
+        "SEAL",
+        "XFER",
+        "MON",
+        "SEAL"
+      ],
+      "folio_len": 8,
+      "n_shared_cats": 4,
+      "first_pos_rho": 0.3999999999999999,
+      "lcs_length": 3,
+      "lcs_frac": 0.75
+    },
+    {
+      "folio": "f82r",
+      "part": "Mercuriorum",
+      "num": 22,
+      "tier": "STRONG",
+      "recipe_seq": [
+        "MAT"
+      ],
+      "recipe_len": 1,
+      "folio_seq": [
+        "MON",
+        "MAT",
+        "HEAT",
+        "SEAL"
+      ],
+      "folio_len": 4,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 1,
+      "lcs_frac": 1.0
+    },
+    {
+      "folio": "f103r",
+      "part": "Mercuriorum",
+      "num": 16,
+      "tier": "STRONG",
+      "recipe_seq": [
+        "HEAT",
+        "MAT",
+        "XFER",
+        "MON",
+        "MON",
+        "MON"
+      ],
+      "recipe_len": 6,
+      "folio_seq": [
+        "MAT",
+        "MON",
+        "SEAL",
+        "SEAL",
+        "MON",
+        "SEAL",
+        "MAT",
+        "MAT",
+        "HEAT",
+        "MON",
+        "HEAT",
+        "SEAL",
+        "HEAT",
+        "MAT",
+        "MON",
+        "HEAT",
+        "SEAL",
+        "XFER"
+      ],
+      "folio_len": 18,
+      "n_shared_cats": 4,
+      "first_pos_rho": 0.0,
+      "lcs_length": 4,
+      "lcs_frac": 0.6666666666666666
+    },
+    {
+      "folio": "f76v",
+      "part": "Mercuriorum",
+      "num": 15,
+      "tier": "STRONG",
+      "recipe_seq": [],
+      "recipe_len": 0,
+      "folio_seq": [
+        "XFER",
+        "MON",
+        "MAT",
+        "SEAL",
+        "SEAL",
+        "SEAL"
+      ],
+      "folio_len": 6,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 0,
+      "lcs_frac": 0.0
+    },
+    {
+      "folio": "f77v",
+      "part": "Mercuriorum",
+      "num": 27,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "XFER",
+        "HEAT",
+        "HEAT",
+        "XFER",
+        "HEAT"
+      ],
+      "recipe_len": 5,
+      "folio_seq": [
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "MON",
+        "SEAL",
+        "XFER"
+      ],
+      "folio_len": 8,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 3,
+      "lcs_frac": 0.6
+    },
+    {
+      "folio": "f81v",
+      "part": "Mercuriorum",
+      "num": 18,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "MAT",
+        "MAT",
+        "MAT",
+        "XFER",
+        "MON"
+      ],
+      "recipe_len": 5,
+      "folio_seq": [
+        "MAT",
+        "MON",
+        "XFER"
+      ],
+      "folio_len": 3,
+      "n_shared_cats": 3,
+      "first_pos_rho": 0.4999999999999999,
+      "lcs_length": 2,
+      "lcs_frac": 0.6666666666666666
+    },
+    {
+      "folio": "f82v",
+      "part": "Mercuriorum",
+      "num": 28,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "XFER",
+        "HEAT",
+        "MON"
+      ],
+      "recipe_len": 3,
+      "folio_seq": [
+        "XFER",
+        "MAT",
+        "HEAT",
+        "MON",
+        "SEAL",
+        "SEAL"
+      ],
+      "folio_len": 6,
+      "n_shared_cats": 3,
+      "first_pos_rho": 0.9999999999999998,
+      "lcs_length": 3,
+      "lcs_frac": 1.0
+    },
+    {
+      "folio": "f112r",
+      "part": "Mercuriorum",
+      "num": 11,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "XFER",
+        "XFER",
+        "HEAT"
+      ],
+      "recipe_len": 3,
+      "folio_seq": [
+        "MAT",
+        "XFER",
+        "XFER",
+        "MON",
+        "MAT",
+        "XFER",
+        "MON",
+        "MON",
+        "HEAT",
+        "MON"
+      ],
+      "folio_len": 10,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 3,
+      "lcs_frac": 1.0
+    },
+    {
+      "folio": "f112v",
+      "part": "Mercuriorum",
+      "num": 1,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "HEAT"
+      ],
+      "recipe_len": 1,
+      "folio_seq": [
+        "MON",
+        "SEAL",
+        "MAT",
+        "SEAL",
+        "HEAT",
+        "SEAL",
+        "HEAT",
+        "MON",
+        "MAT",
+        "HEAT",
+        "MAT",
+        "MAT",
+        "XFER"
+      ],
+      "folio_len": 13,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 1,
+      "lcs_frac": 1.0
+    },
+    {
+      "folio": "f116r",
+      "part": "Mercuriorum",
+      "num": 4,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "HEAT",
+        "XFER",
+        "HEAT"
+      ],
+      "recipe_len": 3,
+      "folio_seq": [
+        "MON",
+        "XFER",
+        "HEAT",
+        "SEAL",
+        "MAT",
+        "XFER",
+        "MON",
+        "HEAT"
+      ],
+      "folio_len": 8,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 3,
+      "lcs_frac": 1.0
+    },
+    {
+      "folio": "f107r",
+      "part": "Mercuriorum",
+      "num": 44,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "MAT",
+        "MON"
+      ],
+      "recipe_len": 2,
+      "folio_seq": [
+        "SEAL",
+        "XFER",
+        "HEAT",
+        "MON",
+        "XFER",
+        "MON",
+        "SEAL",
+        "MAT",
+        "MON",
+        "MON",
+        "MAT",
+        "SEAL",
+        "XFER",
+        "HEAT",
+        "XFER"
+      ],
+      "folio_len": 15,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 2,
+      "lcs_frac": 1.0
+    },
+    {
+      "folio": "f80r",
+      "part": "Mercuriorum",
+      "num": "(21, 23, 24, 25)",
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "MAT",
+        "MAT",
+        "MAT",
+        "XFER",
+        "MAT"
+      ],
+      "recipe_len": 5,
+      "folio_seq": [
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "XFER",
+        "HEAT",
+        "XFER",
+        "SEAL",
+        "MAT",
+        "MAT",
+        "MON",
+        "SEAL",
+        "MON"
+      ],
+      "folio_len": 16,
+      "n_shared_cats": 0,
+      "first_pos_rho": null,
+      "lcs_length": 2,
+      "lcs_frac": 0.4
+    },
+    {
+      "folio": "f83r",
+      "part": "Practica",
+      "num": 9,
+      "tier": "SUPPORTED",
+      "recipe_seq": [
+        "SEAL",
+        "MAT",
+        "HEAT",
+        "MAT",
+        "HEAT",
+        "XFER",
+        "HEAT",
+        "XFER",
+        "HEAT",
+        "SEAL",
+        "HEAT",
+        "HEAT",
+        "HEAT",
+        "HEAT"
+      ],
+      "recipe_len": 14,
+      "folio_seq": [
+        "HEAT",
+        "MON",
+        "MON",
+        "HEAT",
+        "XFER",
+        "HEAT",
+        "SEAL",
+        "HEAT",
+        "MAT",
+        "HEAT"
+      ],
+      "folio_len": 10,
+      "n_shared_cats": 4,
+      "first_pos_rho": -0.5999999999999999,
+      "lcs_length": 7,
+      "lcs_frac": 0.7
+    }
+  ]
+}

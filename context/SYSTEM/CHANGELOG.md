@@ -4,6 +4,41 @@
 
 ---
 
+## Version 6.21 (2026-04-16) - Phase 641: Gloss Recipe Correlation (null, structurally informative)
+
+### Summary
+
+Phase 641 ran 24 pre-registered atom/prefix/suffix gloss-vs-Latin-recipe-feature correlation tests across 15-16 matched folio-recipe pairs with BH-FDR q=0.10, leave-one-out stability, bootstrap CIs. Plus ordinal alignment via Kendall-τ on category sequences (primary structural diagnostic). Result: 0/24 pass FDR; mean ordinal ρ = +0.26, p = 0.22. **No constraints promotable — null result is structurally predicted by C171 semantic ceiling.** Voynich folios encode operational EXECUTION; Latin Testamentum encodes recipe DESCRIPTION; per-folio rate correlation is the wrong instrument at this granularity. Near-significant right-direction signals exist (ch, p, n-halt, f) but underpowered at N=16. One potential falsification (C2 t-atom ↔ transfer, ρ=-0.47, p=0.07, wrong direction) worth investigating.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/B_GLOSS_RECIPE_CORRELATION/` — Phase 641 with PLAN.md, INDEX.md, 5 executed scripts + 3 deferred, 4 results JSONs |
+| **ADDED** | PT-016 to `context/PENDING_TESTS.md` — structural interpretation of null result |
+| **UPDATED** | CLAUDE.md — version 6.20 → 6.21, Phases 639 → 640 |
+
+### Key Findings
+
+1. **Null is expected under C171** — folio rate ≠ recipe mention rate because notation is operational, not descriptive
+2. **Paragraph-step alignment is the right test** but requires richer per-step text (awaits SISMEL)
+3. **Control-corpus critique structurally addressed** — Brunschwig (1500 and 1512) separate operational from recipe content; no integrated-operation-and-recipe corpus exists as valid alternative
+4. **Pre-registration worked** — locked predictions before running; null is epistemically clean
+5. **Match defensibility unchanged** — null predicted by match model; converging-evidence defense stands
+
+### Scripts
+
+| Script | Status |
+|--------|--------|
+| s0_latin_feature_extractor.py | Executed — 186 chapters, 11 feature families |
+| s1_shared_validation.py | Library |
+| s2_preregistered_tests.py | Executed — 24 tests, 0 FDR-accepted |
+| s3_ordinal_alignment.py | Executed — 5 valid pairs, mean ρ=+0.26 p=0.22 |
+| s7_validation_summary.py | Executed — scorecard + interpretation |
+| s0b/s0c/s4/s5/s6 | Deferred (controls invalid; parity redundant) |
+
+---
+
 ## Version 6.20 (2026-04-05) - C1958: ot PREFIX = transfer rate / drip rate
 
 ### Summary

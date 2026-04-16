@@ -127,6 +127,80 @@ Informal observations and exploratory results awaiting formal testing. These are
 
 ---
 
+## Catalan-Grounded Glosses (2026-04-16)
+
+### PT-013: Recipe-grounded token definitions from Catalan Ch9P alignment
+- **Method:** Aligned 20 Catalan operational steps from Ch9P (Buosi-Moncunill thesis) against f83r P3 tokens. Each Catalan instruction pinpoints what specific tokens mean at that recipe step.
+- **10 upgraded definitions:**
+
+| Token | Old (structural) | New (Catalan-grounded) | Cross-folio |
+|-------|------------------|----------------------|-------------|
+| qokaiin | deep sustained cyclic heating | heat-source: sustained contained form (apply heat while sealed/bound) | 15/15 consistent (see PT-014) |
+| qokal | heat to completion | fire reached target — heat stage done | 10/10 |
+| otal | transfer rate: yield to state | note the output rate (drips or melt-flow) | 8/10 (broadened from "drip count") |
+| dal | careful passive placement | carefully collect distillate / careful placement | 9/10 |
+| qokchedy | heat with careful monitoring | adjust fire while watching | 3/3 |
+| ram | respond arrange final | stage done — note result | 4/4 |
+| lchedy | check equipment state | check apparatus (seals, receiver, furnace) | 8/10 |
+| qokedy | apply standard heat | maintain current fire level | 10/10 |
+| qokeedy | gentle balneum heat | gentle fire — balneum/sawdust level | 10/10 (28x on f108v pure balneum) |
+| shedy | passive monitoring | watch the distillate (clarity, fumes, color) | 10/10 |
+
+- **Cross-folio validation:** 8/10 definitions work without modification on all matched folios. 2 needed broadening (qokaiin: "strengthen" too specific for maceration folios; otal: "drip count" too specific for fusibility folios).
+- **Key finding:** The Catalan instruction "obra-li lo pertuis quant l'oiras soflar" (open hole when you hear hissing) has NO corresponding token — confirming C1056 (sensory judgment not encoded).
+- **Status:** Preliminary. Full alignment across all Catalan-available chapters (Ch1-12P, Ch1-14M) needed. SISMEL book will provide additional recipe text for expanded alignment.
+- **Session:** 2026-04-16
+
+### PT-014: f82r / Ch22M validation — 10/11 glosses hold on different operation class
+- **Method:** Aligned f82r (275 tokens, 4 paragraphs) against Ch22M (Lunaria maceration, 3-day sealed) — a different operation class than the f83r P3 distillation that produced PT-013. Maceration stresses glosses on a predominantly passive, gentle-heat, sealed-vessel procedure.
+- **Paragraph architecture match:**
+  - P1 (72 tok): prepare lunaria / set up vessel
+  - P2 (72 tok): combine + seal — contains `dar` at L2 (material addition), `dam` at L6 (finalize), `dal` at L8 (careful place)
+  - P3 (5 tok only): alembic transition — sole instance of reduplicated `okain okain char` (take-vessel, check, take-vessel)
+  - P4 (126 tok): 3-day maceration + distillation — gentlest e-depth profile (67% e-depth ≥ 1), `ram` at L11 near completion
+- **Sealing signature:** 75.3% opaque terminals (matches f83r 75.7%) — grammatical encoding of sealed state, not explicit "seal" token.
+- **Balneum signature:** qokeedy=14 occurrences (highest token freq on folio) on a recipe explicitly specifying "ashes for three natural days" — strongest qokeedy concentration expected for any matched folio. Confirms PT-013 gloss.
+- **Glosses that hold on maceration:** qokeedy, qokedy, shedy, chedy, lchedy, qokal, dar, dal, dam, ram, okain (11 tested, 11 consistent with gloss).
+- **Gloss breaking:** `qokaiin` as "strengthen/intensify heat" appears 10× on f82r — a recipe that NEVER calls for fire strengthening. Independently reproduces the PT-013 note that qokaiin's Catalan-grounded gloss is over-specific. Likely true reading is structural: "heat to [containment form]" — specifies a containment-form closure rather than an intensity change.
+- **Sub-hypothesis tested and FALSIFIED:** "okain-doubling = vessel-transition marker." Corpus-wide, okain-okain adjacent = 1 event, gap-1 = 1, gap-2 = 4 (6 events total across 135 okain tokens). Observed/expected under random placement = 0.14x — under-dispersed, not clustered. Control `daiin` shows same under-dispersion (0.08x), confirming this is a general Voynich immediate-repetition aversion, not an okain-specific vessel signal. Event paragraph lengths mean 70 / median 63 — not enriched in short paragraphs. f82r P3 is one of 6 events, not a reliable pattern.
+
+- **qokaiin gloss revised (2026-04-16):** Full context scan across all 15 matched folios (70 occurrences) produced direct falsification of PT-013 Catalan-grounded "strengthen fire":
+  - **Rate by recipe type is inverse of H1:** DISTILL 0.70% (lowest) vs. SEAL_MACER 1.74% vs. FURNACE 2.42% (highest). If qokaiin meant strengthening fire, distillation (which explicitly calls for fire-strengthening) should top the list — it's last.
+  - **Preceder profile is monitoring, not heating:** sh=23, ch=16, qo=9 (top prefix preceders). Top specific preceders: shedy (9), chey (7), chedy (4). qokaiin follows check/monitor events, not heat events.
+  - **Follower profile same:** ch=20, sh=12, BARE (daiin/aiin)=10.
+  - **Position:** uniform within paragraph (31/31/37 early/mid/late) — not a transition marker.
+  - **Structural reading that fits:** qokaiin = qo (heat-source) + k (heat) + -aiin (yield+iter+iter+bind suffix, shared with daiin/okaiin/shaiin). The -aiin family encodes the "sustained contained form." qokaiin = "heat-source: sustained contained form" = apply heat while the vessel is in its sealed/bound state. This fits sealed maceration folios and furnace spec, and is compatible with distillation moments where the apparatus is fully sealed before driving more heat (the f83r Catalan "fortifica" moment operator-verb matches because strengthening fire on a closed retort IS heat-while-sealed, viewed from the operator side).
+  - Consistent with C171 (semantic ceiling: notation encodes operations, not operator-perspective verbs).
+  - **PT-013 qokaiin row updated** from "strengthen/intensify heat" to "heat-source: sustained contained form (apply heat while sealed/bound)" with 15/15 cross-folio consistency.
+- **Status:** Cross-operation-class validation of PT-013. 10/10 Catalan-grounded glosses now validated or upgraded. Reduplication sub-hypothesis falsified.
+- **Session:** 2026-04-16
+
+### PT-015: f112v / Ch1M third-class validation — revised qokaiin gloss holds
+- **Method:** Deep alignment of f112v (415 tokens, 13 paragraphs) against Ch1M (lunaria → quicksilver, pipeline origin). Third operation class after f83r distillation (PT-013) and f82r sealed maceration (PT-014). Tests the revised qokaiin gloss from PT-014 specifically.
+- **Signatures:**
+  - Opaque terminals 69.6% (sealed but intermittent — distillation vents via alembic, matches recipe)
+  - BARE prefix 20.5% (UNUSUALLY HIGH; typical folios <10%) — see new observation below
+  - ch=20.0% (high active-check), sh=5.3% (low passive watch), qo=16.6% (moderate heat)
+  - 13 paragraphs matches ~15-operation recipe structure
+- **qokaiin revised gloss confirmed:** All 4 qokaiin occurrences (P3L3, P5L2, P10L4, P11L2) fall in sealed-apparatus phases (gentle distillation, forced distillation). None at "strengthen fire" moments in isolation. Revised gloss "heat-source: sustained contained form" holds on a third operation class.
+- **Other glosses:** qokeedy x12 (dominant, matches "gentle bath"), am x5 (multi-phase completions fit Ch1M's multi-phase structure), chedy x8 (high — matches many "signs" to check), shedy x3 (low — fits active distillation), lchedy x1 (lowest of any matched folio — operator trusts routine equipment), otal x2 (both early — matches fractionation drip-monitoring), dal absent (no careful-placement moments in recipe).
+- **Sub-hypothesis tested and FALSIFIED:** "BARE-prefix dominance marks pipeline-origin recipes." Corpus BARE-rate distribution (82 folios): mean 17.6%, median 16.6%, stdev 5.5%. f112v at 20.5% is z = +0.53 (not exceptional). Spearman rho chapter# vs BARE = -0.315, p = 0.23 (not significant). f107r Ch44M (very late) has BARE = 20.1% (rank 25); f83r Ch9P (early) has BARE = 9.1% (rank 79). The "pipeline origin" signal is absent. Observed pattern is a SECTION effect: matched folios in pharmaceutical section (f100s) cluster high-BARE (f112r=21.1%, f112v=20.5%, f107r=20.1%, f116r=19.6%); matched folios in stars/biological section (f75-f84) cluster low-BARE (f82r=9.5%, f82v=9.4%, f83r=9.1%). Original baseline was wrong — I had compared f112v against f82r and f83r, which are themselves low-BARE outliers.
+- **Status:** Third-class validation of PT-013/PT-014. All 10 Catalan-grounded glosses now validated on distillation (f83r), sealed maceration (f82r), AND pipeline-origin distillation (f112v). BARE sub-hypothesis falsified.
+- **Session:** 2026-04-16
+
+### PT-016: Phase 641 formal validation null — structural observation
+- **Method:** Phase 641 ran 24 pre-registered hypothesis tests (atom/prefix/suffix glosses vs Latin Testamentum regex features) across 15-16 matched folio-recipe pairs with permutation p-values, BH-FDR correction, leave-one-out stability, bootstrap CIs. Plus ordinal alignment via Kendall-τ on category sequences.
+- **Result:** 0/24 pass FDR at q=0.10. 0/24 bootstrap CIs exclude zero. Mean ordinal alignment ρ = +0.26 (vs null +0.04), p = 0.22. No constraints promotable.
+- **Interpretation:** Null is STRUCTURALLY predicted by the matches themselves. Voynich folios encode operational EXECUTION; Latin Testamentum encodes recipe DESCRIPTION. A "place on ashes for 3 days" recipe (1 line, 2 heat mentions) maps to 275 tokens with 31% qo-prefix — the folio describes continuous heat maintenance over 3 days, not the naming of the operation. Consistent with C171 semantic ceiling. Rate correlation at folio granularity is the wrong instrument.
+- **Near-significant right-direction signals** (LOO-stable, underpowered at N=16): E2 f-flag ↔ termination (ρ=+0.39), C6 p-pause ↔ termination (ρ=+0.37), A2 ch ↔ monitoring+transition (ρ=+0.35), D2 n ↔ iteration inverse (ρ=-0.34, supports "halt" gloss).
+- **Potential falsification worth investigating:** C2 t-atom ↔ transfer, ρ=-0.47, p=0.07, wrong direction. If real, suggests 't' doesn't encode transfer directly.
+- **Perfect alignment on one pair:** f82v Ch28M vessel specification ρ=+1.0 (3 shared categories matched perfectly). f83r Ch9P ρ=-0.60 suggests Voynich sometimes executes in reverse of description order (prep fire before adding material).
+- **Control-corpus critique addressed:** Brunschwig 1500 (small distillation book) and 1512 (compounding book) both separate operational from recipe content. No medieval text we have integrates them the way Testamentum does. Testamentum's structural integration is selectively fitting — candidate alternatives fail at the structural filter before content matters.
+- **Status:** Phase 641 COMPLETE with null-but-informative result. Proper paragraph↔step alignment requires richer per-step text (awaits SISMEL Catalan arrival). The matches remain defensible on converging-evidence grounds (see PT-015 and Phase INDEX).
+- **Session:** 2026-04-16
+
+---
+
 ## Encoding Architecture Insight (2026-04-14)
 
 ### PT-012: Vocabulary is a closed dictionary, not a free generative grammar

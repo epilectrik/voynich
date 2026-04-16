@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "phase": 641,
+    "script": "s7_validation_summary"
+  },
+  "s2_summary": {
+    "n_tests": 26,
+    "verdict_counts": {
+      "INCONCLUSIVE": 24,
+      "SKIPPED_ZERO": 2
+    },
+    "fdr_passed": 0,
+    "fdr_threshold": "BH-FDR q=0.10"
+  },
+  "s3_summary": {
+    "n_valid_rhos": 5,
+    "mean_rho": 0.2599999999999999,
+    "permutation_p": 0.2195
+  },
+  "near_significant": [
+    {
+      "label": "A2_ch_check",
+      "rho": 0.3515513185334316,
+      "p": 0.1764,
+      "predicted_sign": "+",
+      "loo_stable": true
+    },
+    {
+      "label": "C6_p_pause",
+      "rho": 0.37353991054493824,
+      "p": 0.1552,
+      "predicted_sign": "+",
+      "loo_stable": true
+    },
+    {
+      "label": "D2_n_halt_inverse",
+      "rho": -0.339719306429772,
+      "p": 0.1957,
+      "predicted_sign": "-",
+      "loo_stable": true
+    },
+    {
+      "label": "E2_f_flag",
+      "rho": 0.39197592213677646,
+      "p": 0.1279,
+      "predicted_sign": "+",
+      "loo_stable": true
+    }
+  ],
+  "potential_falsifications": [
+    {
+      "label": "C2_t_transfer",
+      "rho": -0.473803963763951,
+      "p": 0.0685,
+      "predicted_sign": "+"
+    }
+  ],
+  "promotable_constraints": [],
+  "interpretation_key_findings": [
+    "Voynich folios encode operational execution; Latin text encodes recipe description",
+    "Per-folio rate correlation is the wrong test at this granularity",
+    "Paragraph-to-paragraph alignment requires richer per-step text (awaits SISMEL Catalan)",
+    "Near-significant signals exist but do not pass FDR at N=15",
+    "Potential falsification on C2 (t-atom ↔ transfer) — wrong direction, p=0.07"
+  ]
+}
