@@ -199,6 +199,40 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Phase 641 COMPLETE with null-but-informative result. Proper paragraph↔step alignment requires richer per-step text (awaits SISMEL Catalan arrival). The matches remain defensible on converging-evidence grounds (see PT-015 and Phase INDEX).
 - **Session:** 2026-04-16
 
+### PT-017: t-atom gloss revision — "apparatus-mediated operation" not "transfer"
+- **Method:** Investigated C2 falsification from Phase 641 (t-atom ↔ transfer_count, ρ=-0.47, p=0.07, wrong direction). Split "transfer_count" feature into three narrower features: physical transfer (pour/decant/vert/funde), distillation only (stilla/distilla), and apparatus operation (vas/seal/cucurbita/alembic/lute). Re-correlated t-atom rate against each.
+- **Finding:** Physical transfer = 0 occurrences across all 16 matched Testamentum chapters (recipes don't describe pouring). t-atom ↔ distillation-only: ρ=-0.49, p=0.05 (inverse). **t-atom ↔ apparatus-operation: ρ=+0.39, p=0.13 (RIGHT direction, underpowered).** The original C2 falsification was contaminated by lumping distillation with transfer.
+- **Proposed revision:** t = "apparatus-mediated operation / through-apparatus step" (vessel-internal stationary work). Distinct from ot-prefix (C1958: transfer-rate/drip-rate monitoring). t-atom encodes work happening WITHIN the apparatus; ot-prefix encodes tracking moving content via drip observation.
+- **Evidence by folio (t_rate, apparatus_count):**
+  - f82v vessel spec: apparatus=8, t_rate=0.097 (HIGHEST t_rate)
+  - f82r sealed maceration: apparatus=5, distill=0, t_rate=0.084
+  - f83r apparatus-heavy: apparatus=19, t_rate=0.091
+  - f75r aqua vitae reflux: apparatus=1, distill=4, t_rate=0.041 (LOW)
+  - f112r cohobation: apparatus=0, distill=5, t_rate=0.048 (LOW)
+- **Compound readings under revised gloss:**
+  - qotedy = heat-source + apparatus-op + cycle-close = apparatus-mediated heating cycle
+  - qotal = heat-source + apparatus-op + state = bring apparatus to state
+  - qotain = heat-source + apparatus-op + contained-form = apparatus-internal contained heating
+- **Why the original SOLID-tier "transfer" gloss held for a while:** In distillation recipes where both apparatus AND transfer are present, the gloss produced coherent compositional readings. The failure only surfaced when tested against recipes where distillation≠physical-transfer and apparatus-only work (maceration, vessel spec) exists.
+- **Constraint implication:** If validated via SISMEL, t-atom SOLID-tier gloss should revise from "transfer" to "apparatus-mediated operation" (or similar narrower term). ot-prefix (C1958) remains as-is — it genuinely tracks drip rate, which is different from t-atom.
+- **Status:** Preliminary. Needs SISMEL validation at paragraph↔step level. Currently near-significant (p=0.13 for right-direction apparatus correlation) — promotion blocked by N=16 sample size.
+- **Session:** 2026-04-16
+
+### PT-017b: f82v/Ch28M deep alignment qualitatively confirms PT-017
+- **Method:** Deep token-by-token alignment of f82v (298 tokens, 6 paragraphs) against Ch28M "De vasis proprijs habendis" (vessel specification chapter). Chapter enumerates ~11 vessel-function-names (distillatory, dissolvatory, putrefactory, calcinatory, mortificatory, congelatory, crematory, informatory, roastatory, odentatory, terminatory). Tests the revised t-atom gloss directly on the folio where it should show most clearly.
+- **Finding:** f82v has 18 qot-compounds (6.0% of tokens) across 9 unique types — qotal, qotedy, qoty, qotar, qotol, qoteedy, qotey, qoteytyqoky, qotshedy. Count matches closely with Ch28M's ~11 enumerated vessel-function-names. P1 (first paragraph) holds 9/18 qot-compounds, consistent with Ch28M's "one form, many names" enumeration section.
+- **Cross-folio qot-density (operational specificity validates PT-017):**
+  - f82r sealed maceration: 6.2% (continuous apparatus-internal work)
+  - f82v vessel specification: 6.0% (enumeration of vessel modes)
+  - f83r Ch9P integrated recipe: 4.1%
+  - f112v distillation: 3.1%
+  - f76r element separation: 2.2%
+  - f75r aqua vitae 9x reflux: 1.9% (vapor-in-motion, ot-prefix territory not t-atom)
+- **Falsification test:** Under old gloss "t = transfer," vessel-specification recipe should have LOW t (no material movement). Instead f82v has the 2nd-highest qot- rate. "Transfer" fails this test. "Apparatus-mediated operation" passes cleanly.
+- **Under revised gloss:** Each qot- variant becomes a distinct apparatus-operation mode (qotal = apparatus-op to state / calcinatory-like; qotedy = apparatus-op cycle-close / distillatory-like; etc.).
+- **Status:** Cross-class qualitative validation of PT-017 on a fourth operation class (vessel specification). Third major gloss revision this session: qokaiin (PT-014) → revised gloss sustained-contained-form; t-atom (PT-017) → apparatus-mediated operation. Both survived direct contrastive testing on specific folios. Formal statistical promotion still blocked by N=16.
+- **Session:** 2026-04-16
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
