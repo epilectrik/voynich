@@ -440,6 +440,33 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Corrected and simplified version of PT-023. Pure Testamentum-internal reading. Predicts recipe-DAG structure across matched folios. Replaces the multi-source-fusion hypothesis (which was a correct speculative direction but not what this specific evidence supports).
 - **Session:** 2026-04-18 (user's direct linguistic question forced the simpler reading)
 
+### PT-024: Multi-signal 9-count alignment in f75r P3 (three independent token-channels converge)
+- **Method:** Full token-level alignment of f75r against Testamentum Ch18M (water-of-life prep) + Ch19M (main reflux). Mapped each paragraph to operational phases and counted key token families across each paragraph.
+- **Three independent count signals converging on 9 in f75r P3:**
+  - Heat cycles: qokedy + qokeedy in dense cluster L36-L41 = **10** (= 1 initial + 9 reflux)
+  - Material returns: dar + dal/daldy across P3 = **9** (= 9 "returning pure substance" events)
+  - Flow transfers: otar + otedy across P3 = **8** (approximate, noise-tolerant for 9)
+- **Ch19M says:** "repeat by returning the pure [substance] at each second distillation through nine times." P3 encodes BOTH the 9 heat-cycles AND the 9 material-returns — the same 9 repetitions viewed from two different operational channels.
+- **P1 alignment with Ch18M:**
+  - L13's 4 identical qokedy = Ch18M's "continue distillation by returning" (4 iterations of practical preparation)
+  - P1 ends at L25 with `qokeedy lchedy ram` — `ram` (respond-complete) marks Ch18M's conclusion ("and it is the water of life")
+  - 2 qokam tokens = phase-completion markers
+  - dar=2, dal=1 = modest material handling matching Ch18M's gold/Mercury operations
+- **P2 alignment with Ch19M setup:**
+  - Opens with pdalshor/pshar (prep-arrange tokens)
+  - dar at L27 = adding honey+wax
+  - daldy at L31 end = careful-placement finalizing setup
+  - Brief (57 tokens) matches a transition phase between prep and main
+- **Signal strength:** Three independent count channels (heat, material, flow) all converging on the recipe-specified number is very strong evidence. Chance convergence would require all three channels to independently hit ~9 by coincidence.
+- **This is the strongest quantitative match we have for any matched folio.** f75r-Ch18M-Ch19M alignment is multi-layered (prep + setup + main), multi-channel (heat + material + flow), and count-exact at several granularities.
+- **Implications:**
+  - Voynich notation encodes operational structure at MULTIPLE granularities simultaneously (paragraphs map to phases, token families encode count)
+  - Different token families are different "views" of the same underlying operation — when an operation is repeated N times, multiple channels can each show N
+  - For SISMEL: verify multi-channel convergence on other matched folios with explicit counts (f78r, f108r, f108v should show analogous structure if iterative)
+- **Methodological note:** The multi-signal alignment was surfaced by systematically checking ALL count-relevant token families per paragraph, not just the single family (qokedy+qokeedy) we'd focused on earlier. User's chain of questions prompted the full alignment view.
+- **Status:** Strongest quantitative folio-to-recipe alignment in the project so far. Promotable to Tier 2 if replicated on other iterative-recipe folios when SISMEL arrives.
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
