@@ -394,6 +394,27 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Exact count match established. Grammatical parsing of "repeat N times" is the key refinement. Sharpens SISMEL prediction to exact-count match, not approximate.
 - **Session:** 2026-04-18
 
+### PT-023: Workshop synthesis — f75r encodes Brunschwig-tradition aqua vitae preparation + Testamentum Ch19M main operation
+- **Method:** User question "is the 4-run in the Brunschwig recipe?" prompted search of Brunschwig 1512 for 4-count distillation patterns. Found Das XIX. Capitel ("Chapter 19 of the first book" — about drawing quintessence from herbs/roots/flowers): explicitly describes 4-iteration digestion-distillation protocol with decreasing durations (1 month, 3 weeks, 14 days, 8 days).
+- **Key insight:** Ch19M (Testamentum Mercuriorum 19) begins "You shall take of the water of life..." — presupposing an already-prepared aqua vitae. In medieval workshop practice, aqua vitae preparation is a multi-stage protocol, typically 4 distillations (as in Brunschwig 1512 Das XIX and Brunschwig 1500 Part 1's 4-degree framework).
+- **Reinterpretation of f75r structure:**
+  - **L13 (4 identical qokedy)** = the PREPARATORY aqua vitae distillation protocol (4-stage, following Brunschwig-tradition or similar contemporaneous practice)
+  - **L36-L41 (10 qokedy+qokeedy)** = the MAIN Ch19M operation (1 initial + 9 reflux cycles with honey+wax)
+  - The folio encodes the COMPLETE workflow: prerequisite + named-recipe, not just the Ch19M fragment
+- **Implications:**
+  - **f75r is a WORKSHOP document, not a recipe-fragment copy.** The scribe was a practitioner who knew the full protocol including prerequisites
+  - **Voynich may synthesize multiple source traditions PER FOLIO.** Crazy-expert's earlier "multi-source fusion" speculation gains support — a single folio can draw from both Testamentum and Brunschwig-style practice
+  - **"Take X" presupposition decoding.** When a recipe says "take water of life" or "take lunaria water," the folio may encode BOTH the named operation AND the prerequisite preparation. Our matching pipelines should look for recipe + preparatory-input structures, not just recipe-only matches
+  - This refines PT-019 (pharmaceutical regime) — regime distinction may be less about source-tradition and more about workshop-synthesis style
+- **Strengthens PT-022c/d:** Exact count matches not only at the iteration level (10 = 1+9) but also at the preparation level (4 preparatory distillations). f75r encodes recipe structure at multiple granularities, each with precise count.
+- **Testable SISMEL predictions:**
+  - Folios with multi-cluster count structures should encode PREP-plus-MAIN workflows, not single-stage recipes
+  - Matched recipes that say "take X" should have folio encoding of X's preparation separately from the named operation
+  - Folios with single-cluster count structures should encode single-stage operations without prerequisite encoding
+- **Implications for matching pipeline:** Aggregating all tokens per folio conflates prep and main operations. Block-level matching (separating L13 setup cluster from L36-L41 main cluster) may reveal that f75r partially matches Brunschwig XIX (for the setup phase) AND Testamentum Ch19M (for the main phase). No single-source match should be expected for workshop-synthesis folios.
+- **Status:** Significant reinterpretation. Synthesizes today's count-enumeration findings (PT-022c/d) with earlier cross-source hypotheses. Moves interpretation toward "Voynich is a workshop compendium drawing from multiple source traditions synthesized per folio" rather than "Voynich fragments map 1:1 to single source chapters."
+- **Session:** 2026-04-18 (emerged from user's question about whether the 4-run has a Brunschwig correspondent — YES, Brunschwig 1512 Das XIX)
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
