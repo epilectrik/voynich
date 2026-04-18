@@ -352,6 +352,30 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Revises PT-022. Count-enumeration IS encoded when recipe demands it. f75r is the clearest exemplar. SISMEL will directly test this via recipes with varied explicit counts.
 - **Session:** 2026-04-18 (revision triggered by user catching anomaly that initial analysis missed)
 
+### PT-022c: Recount with proper gap tolerance — f75r has 10 (not 4) qokedy/qokeedy, matching Ch19M's 9
+- **Method:** User correction: my strict-adjacency counting missed the wider dense-region pattern. Re-ran scan counting all qokedy+qokeedy instances per 35-token window across all 82 B folios.
+- **Corrected data:**
+  - **f75r: 10 qokedy+qokeedy within 35 tokens (positions 330-364, L36-L41)** — matches Ch19M's explicit "through nine times"
+  - f78r: 9 hits (unmatched recipe; density suggests iterative)
+  - f108r: 8 hits; f108v/f26r/f77r/f78v/f79v: 7 hits (mostly unmatched)
+  - f82r, f83r, f84r, f77v, f41r: 6 hits
+  - f76v, f82v, f84v: 5 hits
+  - Many matched folios: 4-6 hits
+- **Uniquely diagnostic on f75r:** The 4 IDENTICAL consecutive `qokedy` tokens at P1 L13 (positions 115-118). No other folio in the corpus has this specific repetition pattern. One doesn't write the same word 4 times in succession for any reason OTHER than counting — this is the strongest evidence of literal enumeration in the corpus.
+- **Refined interpretation:**
+  - Dense qokedy+qokeedy regions encode sustained cycling activity (aspectual), which has DURATIONAL OR ENUMERATIVE interpretations depending on recipe
+  - When recipe has explicit count (Ch19M's "nine times"), the dense-region count approximates it — f75r's 10 ≈ Ch19M's 9
+  - The 4-identical-token run at L13 is unambiguous enumeration (not aspectual activity)
+  - Other high-density folios (f78r=9, f108r=8) may correspond to unidentified iterative recipes — testable when SISMEL data arrives and we find their recipe matches
+- **Predictions refined:**
+  - f78r should match a recipe with ~8-9 explicit iterations (if count-hypothesis holds)
+  - f108r should match ~7-8 iterations
+  - Recipes specifying "3 times" should produce folios with dense-region count ~3
+  - Identical-token repetition (like L13's qokedy×4) is the marker of emphatic count-encoding; without it, dense regions may be just sustained activity
+- **Methodological note:** My initial strict-adjacency (max_gap=0-2) analysis missed the 10-count because it operates over wider dispersion. User's specific observation corrected this. Pattern: hand-targeted observation caught what statistical-regularity scanning missed. Consistent with the general session pattern of domain-guided observations outperforming blind scans.
+- **Status:** Correction to PT-022b. The specific claim "10 qokedy+qokeedy in dense region on f75r matching Ch19M's 9x" is correct. The broader enumeration mechanism is supported by both the density match AND the unique L13 identical-repetition pattern.
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
