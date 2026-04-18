@@ -414,6 +414,31 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Implications for matching pipeline:** Aggregating all tokens per folio conflates prep and main operations. Block-level matching (separating L13 setup cluster from L36-L41 main cluster) may reveal that f75r partially matches Brunschwig XIX (for the setup phase) AND Testamentum Ch19M (for the main phase). No single-source match should be expected for workshop-synthesis folios.
 - **Status:** Significant reinterpretation. Synthesizes today's count-enumeration findings (PT-022c/d) with earlier cross-source hypotheses. Moves interpretation toward "Voynich is a workshop compendium drawing from multiple source traditions synthesized per folio" rather than "Voynich fragments map 1:1 to single source chapters."
 - **Session:** 2026-04-18 (emerged from user's question about whether the 4-run has a Brunschwig correspondent — YES, Brunschwig 1512 Das XIX)
+- **REVISED 2026-04-18 via user follow-up:** User asked "does the Testamentum have a separate recipe for the water of life?" — YES, Ch18M ("Compositio aquæ potabilis simplicis"). Ch18M describes ~4 distillation operations to produce water of life, and Ch18M is already in our matched set (→ f81v). The Brunschwig synthesis reading was unnecessarily complex. The cleaner Testamentum-internal reading is: f75r L13's 4-qokedy is an ABBREVIATED REFERENCE to Ch18M's 4-distillation preparation that Ch19M presupposes. See PT-023b.
+
+### PT-023b: Testamentum-internal presupposition encoding (replaces PT-023's Brunschwig-synthesis interpretation)
+- **Method:** User asked if Testamentum has its own aqua vitae recipe. Searched: YES. **Ch18M "Compositio aquæ potabilis simplicis"** describes multi-distillation preparation of water of life (balneum distillation → gold-in-cucurbit → alembic-until-stronger → Mercury evening-distillation = approximately 4 distillations).
+- **Key alignment:**
+  - **Ch18M** = water of life preparation → matched to **f81v** in our set
+  - **Ch19M** = uses water of life + honey+wax, 9 reflux → matched to **f75r**
+  - **f75r L13 (4 qokedy)** = compact presupposition-reference to Ch18M's 4 distillations that Ch19M requires
+  - **f75r L36-L41 (10 qokedy+qokeedy)** = Ch19M main operation (1 initial + 9 reflux)
+- **Corrected interpretation:** NOT multi-source synthesis (Brunschwig + Testamentum). Instead: **Testamentum-internal presupposition encoding**. When Ch19M says "take water of life," the scribe includes a compact 4-count reference to Ch18M's preparation on f75r itself. f81v then has the FULL detailed preparation.
+- **Why this is a stronger reading:**
+  - Voynich is Testamentum-coherent at the workshop level (no multi-source needed)
+  - Presupposition-encoding is a real structural feature: "take X" prompts compact encoding of X's preparation within the folio
+  - f81v + f75r are now linked via recipe-prerequisite graph — doing Ch19M requires Ch18M; f75r encodes this dependency via L13's 4-count
+- **Methodological lesson:** The simpler Testamentum-internal reading was obscured when I jumped to Brunschwig. User's direct question ("does Testamentum have its own water-of-life recipe?") forced the correct reading. Occam's razor won.
+- **Revised testable prediction for SISMEL:** Matched folios with multi-cluster count structures should correspond to recipe-prerequisite graphs — the main cluster matches the named recipe, the secondary cluster(s) encode presupposed-input recipes from OTHER Testamentum chapters that should ALSO be in our matched set or derivable from them. Check: for each matched folio we identify multi-cluster structure on, is there a "take X" opening that points to another matched chapter's recipe?
+- **Refined model of Voynich structure:**
+  - Each folio maps primarily to ONE Testamentum chapter (the main recipe)
+  - When that chapter opens with "take X" (presupposing a prior preparation), the folio may ALSO encode compact references to the prerequisite chapter(s)
+  - Compact references show up as secondary count-clusters or structural signatures, not as full recipe encodings
+  - The FULL prerequisite recipe is on its own matched folio (like Ch18M → f81v)
+  - This creates a recipe-DAG (directed acyclic graph) structure across matched folios
+- **Implications for Phase 642 matching:** Aggregate-feature matching may fail partly because folios encode BOTH their main recipe and prerequisite references. Block-level matching should identify main cluster as primary match + secondary clusters as prerequisite indicators. This is a richer model than "folio maps to one recipe."
+- **Status:** Corrected and simplified version of PT-023. Pure Testamentum-internal reading. Predicts recipe-DAG structure across matched folios. Replaces the multi-source-fusion hypothesis (which was a correct speculative direction but not what this specific evidence supports).
+- **Session:** 2026-04-18 (user's direct linguistic question forced the simpler reading)
 
 ---
 
