@@ -559,6 +559,46 @@ Informal observations and exploratory results awaiting formal testing. These are
   - f108v (cluster 7): predicts "7-count" iterative recipe
 - **Status:** Very strong systematic evidence. Five independent exact-count matches across five folios is close to the strongest possible evidence for the encoding-channel claim without formal replication on fresh data. SISMEL will provide replication test.
 - **Session:** 2026-04-18
+- **REALITY CHECK 2026-04-18 via PT-028:** Systematic application of the typology classifier to all 82 B folios produces only 2/16 (12%) type-correct predictions and 2/6 (33%) N-correct on the matched set. The "5 exact count matches" claim is significantly weaker than I presented — most were achieved by selecting the channel that happened to match the count in a known recipe (cherry-picking) rather than by a systematic rule that predicts forward. See PT-028.
+
+### PT-028: Systematic classifier reveals PT-027 overconfidence
+- **Method:** Built a count-type classifier using PT-026/PT-027 typology rules (ot-prefix ≥7% = DRIP_COUNT, heat cluster ≥6 = TIGHT_REPETITION, material 3-5 = ELEMENT_ENUM, etc.). Applied to all 82 B folios, compared predictions to known matched-recipe classifications.
+- **Calibration results:**
+  - Type prediction accuracy: **2/16 (12%)** on matched set
+  - Count N prediction accuracy: **2/6 (33%)**
+  - 14 of 16 matched folios were misclassified
+- **What actually validates systematically:**
+  - **f75r (Ch19M TIGHT_REPETITION, N=9)** — type AND count both correct. This is the ONE robust exemplar.
+  - **f81v (Ch18M COMPLEX_PREP)** — type correct (though COMPLEX_PREP is a vague bucket that catches multiple recipe types)
+- **What doesn't validate:**
+  - f82r (Ch22M DURATION) → classifier says TIGHT_REPETITION (heat cluster of 6)
+  - f112r (Ch11M COHOBATION) → classifier says DRIP_COUNT (ot-prefix too high)
+  - f107r (Ch44M ELEMENT_ENUM) → classifier says DRIP_COUNT
+  - f76r (Ch18P SEQUENTIAL_DISTIL) → classifier says COMPLEX_PREP
+  - Many unmatched folios falsely classified as DRIP_COUNT (ot-prefix threshold too loose)
+- **What went wrong:**
+  - PT-027's "exact count matches" were achieved by hand-picking the channel that matched the known count. Channel counts are flexible enough to match many numbers — if I know the recipe says "7," I can find a channel with count 7 on most folios.
+  - The classifier applied forward (no recipe knowledge) produces mostly wrong predictions.
+  - Cherry-picking from multiple channels is what made the post-hoc matches look systematic.
+- **What still holds after this reality check:**
+  - f75r's specific signature IS robust — identical-qokedy×4 run + 10-count dense cluster matching Ch19M's 9x. This survives systematic classification.
+  - PT-022b/d (identical-token-run enumeration): still stands — the 4-qokedy signature is corpus-unique per earlier scan
+  - PT-021 (leaf-level analysis unit), PT-020 (three-part vocabulary): independent of this reality check
+- **What should be DEMOTED:**
+  - PT-026's 9-pattern typology claim
+  - PT-027's "5 exact count matches" claim (reduce to "f75r is the one robust exemplar")
+  - Per-folio predictions for SISMEL need to be reduced to ONLY the high-density outlier folios
+- **Revised sharp predictions for SISMEL:**
+  - f78r (heat cluster 9, SECOND highest in corpus after f75r): strong prediction that its matched recipe will be TIGHT_REPETITION with N≈8
+  - Beyond f78r, predictions are weak — corpus-wide systematic matching doesn't hold
+- **Methodological lesson:** I lost calibration by confirming findings with cherry-picked evidence. Systematic forward-application exposed the weakness. This is why pre-registration matters — running the classifier BEFORE seeing recipe identities would have produced the same 12% accuracy and prevented the overclaim in PT-026/PT-027.
+- **Honest state of count-encoding claim:**
+  - f75r Ch19M has unambiguous count encoding (identical-token run + 10-cluster)
+  - Other matched folios may or may not encode counts — individual careful examination needed per folio, not systematic rules
+  - The VOYNICH may encode counts SOMETIMES, but the encoding isn't consistent enough to classify blindly
+  - Count-encoding is NOT the universal structural feature I claimed; it's a specific signal in SOME folios
+- **Status:** Important correction. PT-026/PT-027 were overclaimed based on cherry-picked post-hoc matches. f75r remains the strongest individual exemplar. The systematic typology needs either significant recalibration or demotion to "pattern observed in f75r, unclear generalization."
+- **Session:** 2026-04-18 (reality check exposed overconfidence)
 
 ---
 

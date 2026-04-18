@@ -1,0 +1,1819 @@
+{
+  "metadata": {
+    "phase": 642,
+    "script": "systematic_classifier",
+    "date": "2026-04-18"
+  },
+  "classifications": {
+    "f103r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 8.4% (drip-rate signature)"
+      ]
+    },
+    "f103v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 9.4% (drip-rate signature)"
+      ]
+    },
+    "f104r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.5% (drip-rate signature)"
+      ]
+    },
+    "f104v": {
+      "predicted_type": "DURATION",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "sustained 8 + low counts (duration/aspectual)"
+      ]
+    },
+    "f105r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.8% (drip-rate signature)"
+      ]
+    },
+    "f105v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 10.5% (drip-rate signature)"
+      ]
+    },
+    "f106r": {
+      "predicted_type": "COHOBATION",
+      "predicted_N": 7,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat 7 + flow 8 (pour-back signature)"
+      ]
+    },
+    "f106v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 8.5% (drip-rate signature)"
+      ]
+    },
+    "f107r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 8.6% (drip-rate signature)"
+      ]
+    },
+    "f107v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.5% (drip-rate signature)"
+      ]
+    },
+    "f108r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.5% (drip-rate signature)"
+      ]
+    },
+    "f108v": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 6,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 7 (predicts ~6 explicit iterations)",
+        "identical-token run of 3 (enumeration signature)"
+      ]
+    },
+    "f111r": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 4 (element enumeration signature)"
+      ]
+    },
+    "f111v": {
+      "predicted_type": "COHOBATION",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat 4 + flow 7 (pour-back signature)"
+      ]
+    },
+    "f112r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 11.2% (drip-rate signature)"
+      ]
+    },
+    "f112v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.2% (drip-rate signature)"
+      ]
+    },
+    "f113r": {
+      "predicted_type": "SEQUENTIAL_DISTIL",
+      "predicted_N": 7,
+      "confidence": "MODERATE",
+      "evidence": [
+        "flow 7 channel dominant (sequential distillation)"
+      ]
+    },
+    "f113v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 14.6% (drip-rate signature)"
+      ]
+    },
+    "f114r": {
+      "predicted_type": "SEQUENTIAL_DISTIL",
+      "predicted_N": 9,
+      "confidence": "MODERATE",
+      "evidence": [
+        "flow 9 channel dominant (sequential distillation)"
+      ]
+    },
+    "f114v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 9.4% (drip-rate signature)"
+      ]
+    },
+    "f115r": {
+      "predicted_type": "COMPLEX_PREP",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "moderate all channels (complex prep)"
+      ]
+    },
+    "f115v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=7, mat=0, flow=3, sust=4)"
+      ]
+    },
+    "f116r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.4% (drip-rate signature)"
+      ]
+    },
+    "f26r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 6,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 7 (predicts ~6 explicit iterations)"
+      ]
+    },
+    "f26v": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 4 (element enumeration signature)"
+      ]
+    },
+    "f31r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=5, mat=5, flow=0, sust=0)"
+      ]
+    },
+    "f31v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=1, flow=2, sust=0)"
+      ]
+    },
+    "f33r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 9.7% (drip-rate signature)"
+      ]
+    },
+    "f33v": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 4 (element enumeration signature)"
+      ]
+    },
+    "f34r": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 3,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 3 (element enumeration signature)"
+      ]
+    },
+    "f34v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=2, mat=0, flow=1, sust=0)"
+      ]
+    },
+    "f39r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=7, flow=2, sust=3)"
+      ]
+    },
+    "f39v": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 5 (element enumeration signature)"
+      ]
+    },
+    "f40r": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 3,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 3 (element enumeration signature)"
+      ]
+    },
+    "f40v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=2, mat=0, flow=0, sust=3)"
+      ]
+    },
+    "f41r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 6 (predicts ~5 explicit iterations)"
+      ]
+    },
+    "f41v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=1, flow=0, sust=0)"
+      ]
+    },
+    "f43r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 8.7% (drip-rate signature)"
+      ]
+    },
+    "f43v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.8% (drip-rate signature)"
+      ]
+    },
+    "f46r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=0, mat=1, flow=1, sust=1)"
+      ]
+    },
+    "f46v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=4, mat=0, flow=3, sust=0)"
+      ]
+    },
+    "f48r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 10.1% (drip-rate signature)"
+      ]
+    },
+    "f48v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 16.7% (drip-rate signature)"
+      ]
+    },
+    "f50r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=1, flow=1, sust=2)"
+      ]
+    },
+    "f50v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=3, mat=1, flow=2, sust=0)"
+      ]
+    },
+    "f55r": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 4 (element enumeration signature)"
+      ]
+    },
+    "f55v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=0, mat=0, flow=2, sust=3)"
+      ]
+    },
+    "f57r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=1, flow=0, sust=0)"
+      ]
+    },
+    "f66r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=2, mat=9, flow=0, sust=0)"
+      ]
+    },
+    "f66v": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=8, flow=3, sust=0)"
+      ]
+    },
+    "f75r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 9,
+      "confidence": "STRONG",
+      "evidence": [
+        "heat dense cluster of 10 (predicts ~9 explicit iterations)",
+        "identical-token run of 4 (enumeration signature)"
+      ]
+    },
+    "f75v": {
+      "predicted_type": "COMPLEX_PREP",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "moderate all channels (complex prep)"
+      ]
+    },
+    "f76r": {
+      "predicted_type": "COMPLEX_PREP",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "moderate all channels (complex prep)"
+      ]
+    },
+    "f76v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.0% (drip-rate signature)"
+      ]
+    },
+    "f77r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 6,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 7 (predicts ~6 explicit iterations)"
+      ]
+    },
+    "f77v": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 6 (predicts ~5 explicit iterations)"
+      ]
+    },
+    "f78r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 8,
+      "confidence": "STRONG",
+      "evidence": [
+        "heat dense cluster of 9 (predicts ~8 explicit iterations)"
+      ]
+    },
+    "f78v": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 6,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 7 (predicts ~6 explicit iterations)"
+      ]
+    },
+    "f79r": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.2% (drip-rate signature)"
+      ]
+    },
+    "f79v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 7.9% (drip-rate signature)"
+      ]
+    },
+    "f80r": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 4 (element enumeration signature)"
+      ]
+    },
+    "f80v": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 4,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 4 (element enumeration signature)"
+      ]
+    },
+    "f81r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=7, mat=1, flow=4, sust=1)"
+      ]
+    },
+    "f81v": {
+      "predicted_type": "COMPLEX_PREP",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "moderate all channels (complex prep)"
+      ]
+    },
+    "f82r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 6 (predicts ~5 explicit iterations)"
+      ]
+    },
+    "f82v": {
+      "predicted_type": "COMPLEX_PREP",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "moderate all channels (complex prep)"
+      ]
+    },
+    "f83r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 6 (predicts ~5 explicit iterations)"
+      ]
+    },
+    "f83v": {
+      "predicted_type": "ELEMENT_ENUM",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "material 5 (element enumeration signature)"
+      ]
+    },
+    "f84r": {
+      "predicted_type": "TIGHT_REPETITION",
+      "predicted_N": 5,
+      "confidence": "MODERATE",
+      "evidence": [
+        "heat dense cluster of 6 (predicts ~5 explicit iterations)"
+      ]
+    },
+    "f84v": {
+      "predicted_type": "COMPLEX_PREP",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "moderate all channels (complex prep)"
+      ]
+    },
+    "f85r1": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 9.9% (drip-rate signature)"
+      ]
+    },
+    "f85r2": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 12.9% (drip-rate signature)"
+      ]
+    },
+    "f86v3": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 8.3% (drip-rate signature)"
+      ]
+    },
+    "f86v4": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 10.6% (drip-rate signature)"
+      ]
+    },
+    "f86v5": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 10.2% (drip-rate signature)"
+      ]
+    },
+    "f86v6": {
+      "predicted_type": "SEQUENTIAL_DISTIL",
+      "predicted_N": 14,
+      "confidence": "MODERATE",
+      "evidence": [
+        "flow 14 channel dominant (sequential distillation)"
+      ]
+    },
+    "f94r": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=0, mat=2, flow=2, sust=1)"
+      ]
+    },
+    "f94v": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 13.9% (drip-rate signature)"
+      ]
+    },
+    "f95r1": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=1, mat=1, flow=0, sust=4)"
+      ]
+    },
+    "f95r2": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "MODERATE",
+      "evidence": [
+        "ot-prefix 8.9% (drip-rate signature)"
+      ]
+    },
+    "f95v1": {
+      "predicted_type": "DRIP_COUNT",
+      "predicted_N": null,
+      "confidence": "STRONG",
+      "evidence": [
+        "ot-prefix 10.3% (drip-rate signature)"
+      ]
+    },
+    "f95v2": {
+      "predicted_type": "SINGLE_UNSPECIFIED",
+      "predicted_N": null,
+      "confidence": "WEAK",
+      "evidence": [
+        "all channels low (heat=0, mat=1, flow=1, sust=0)"
+      ]
+    }
+  },
+  "signatures": {
+    "f103r": {
+      "folio": "f103r",
+      "n_tokens": 522,
+      "n_paragraphs": 18,
+      "heat_total": 13,
+      "heat_max_cluster": 4,
+      "material_total": 5,
+      "flow_total": 5,
+      "sustained_total": 11,
+      "ot_prefix_count": 44,
+      "ot_prefix_rate": 8.42911877394636,
+      "identical_run_max": 2,
+      "opaque_rate": 73.75478927203065
+    },
+    "f103v": {
+      "folio": "f103v",
+      "n_tokens": 449,
+      "n_paragraphs": 13,
+      "heat_total": 5,
+      "heat_max_cluster": 2,
+      "material_total": 4,
+      "flow_total": 13,
+      "sustained_total": 13,
+      "ot_prefix_count": 42,
+      "ot_prefix_rate": 9.35412026726058,
+      "identical_run_max": 0,
+      "opaque_rate": 72.38307349665924
+    },
+    "f104r": {
+      "folio": "f104r",
+      "n_tokens": 438,
+      "n_paragraphs": 13,
+      "heat_total": 4,
+      "heat_max_cluster": 2,
+      "material_total": 2,
+      "flow_total": 6,
+      "sustained_total": 12,
+      "ot_prefix_count": 33,
+      "ot_prefix_rate": 7.534246575342466,
+      "identical_run_max": 0,
+      "opaque_rate": 55.47945205479452
+    },
+    "f104v": {
+      "folio": "f104v",
+      "n_tokens": 458,
+      "n_paragraphs": 13,
+      "heat_total": 4,
+      "heat_max_cluster": 2,
+      "material_total": 2,
+      "flow_total": 1,
+      "sustained_total": 8,
+      "ot_prefix_count": 19,
+      "ot_prefix_rate": 4.148471615720524,
+      "identical_run_max": 0,
+      "opaque_rate": 60.262008733624455
+    },
+    "f105r": {
+      "folio": "f105r",
+      "n_tokens": 370,
+      "n_paragraphs": 12,
+      "heat_total": 7,
+      "heat_max_cluster": 2,
+      "material_total": 5,
+      "flow_total": 7,
+      "sustained_total": 3,
+      "ot_prefix_count": 29,
+      "ot_prefix_rate": 7.837837837837838,
+      "identical_run_max": 0,
+      "opaque_rate": 64.05405405405405
+    },
+    "f105v": {
+      "folio": "f105v",
+      "n_tokens": 390,
+      "n_paragraphs": 10,
+      "heat_total": 2,
+      "heat_max_cluster": 2,
+      "material_total": 6,
+      "flow_total": 7,
+      "sustained_total": 3,
+      "ot_prefix_count": 41,
+      "ot_prefix_rate": 10.512820512820513,
+      "identical_run_max": 0,
+      "opaque_rate": 52.56410256410256
+    },
+    "f106r": {
+      "folio": "f106r",
+      "n_tokens": 421,
+      "n_paragraphs": 15,
+      "heat_total": 7,
+      "heat_max_cluster": 3,
+      "material_total": 2,
+      "flow_total": 8,
+      "sustained_total": 15,
+      "ot_prefix_count": 25,
+      "ot_prefix_rate": 5.938242280285036,
+      "identical_run_max": 0,
+      "opaque_rate": 58.66983372921615
+    },
+    "f106v": {
+      "folio": "f106v",
+      "n_tokens": 449,
+      "n_paragraphs": 15,
+      "heat_total": 2,
+      "heat_max_cluster": 1,
+      "material_total": 3,
+      "flow_total": 8,
+      "sustained_total": 8,
+      "ot_prefix_count": 38,
+      "ot_prefix_rate": 8.46325167037862,
+      "identical_run_max": 0,
+      "opaque_rate": 62.58351893095768
+    },
+    "f107r": {
+      "folio": "f107r",
+      "n_tokens": 488,
+      "n_paragraphs": 15,
+      "heat_total": 4,
+      "heat_max_cluster": 2,
+      "material_total": 4,
+      "flow_total": 10,
+      "sustained_total": 13,
+      "ot_prefix_count": 42,
+      "ot_prefix_rate": 8.60655737704918,
+      "identical_run_max": 0,
+      "opaque_rate": 59.221311475409834
+    },
+    "f107v": {
+      "folio": "f107v",
+      "n_tokens": 455,
+      "n_paragraphs": 15,
+      "heat_total": 5,
+      "heat_max_cluster": 2,
+      "material_total": 3,
+      "flow_total": 13,
+      "sustained_total": 21,
+      "ot_prefix_count": 34,
+      "ot_prefix_rate": 7.472527472527473,
+      "identical_run_max": 0,
+      "opaque_rate": 68.79120879120879
+    },
+    "f108r": {
+      "folio": "f108r",
+      "n_tokens": 491,
+      "n_paragraphs": 16,
+      "heat_total": 32,
+      "heat_max_cluster": 8,
+      "material_total": 3,
+      "flow_total": 20,
+      "sustained_total": 4,
+      "ot_prefix_count": 37,
+      "ot_prefix_rate": 7.535641547861507,
+      "identical_run_max": 2,
+      "opaque_rate": 69.65376782077394
+    },
+    "f108v": {
+      "folio": "f108v",
+      "n_tokens": 570,
+      "n_paragraphs": 10,
+      "heat_total": 36,
+      "heat_max_cluster": 7,
+      "material_total": 3,
+      "flow_total": 9,
+      "sustained_total": 3,
+      "ot_prefix_count": 34,
+      "ot_prefix_rate": 5.964912280701754,
+      "identical_run_max": 3,
+      "opaque_rate": 68.42105263157895
+    },
+    "f111r": {
+      "folio": "f111r",
+      "n_tokens": 614,
+      "n_paragraphs": 6,
+      "heat_total": 19,
+      "heat_max_cluster": 4,
+      "material_total": 4,
+      "flow_total": 3,
+      "sustained_total": 5,
+      "ot_prefix_count": 41,
+      "ot_prefix_rate": 6.677524429967427,
+      "identical_run_max": 2,
+      "opaque_rate": 68.24104234527687
+    },
+    "f111v": {
+      "folio": "f111v",
+      "n_tokens": 561,
+      "n_paragraphs": 7,
+      "heat_total": 4,
+      "heat_max_cluster": 3,
+      "material_total": 0,
+      "flow_total": 7,
+      "sustained_total": 30,
+      "ot_prefix_count": 31,
+      "ot_prefix_rate": 5.52584670231729,
+      "identical_run_max": 0,
+      "opaque_rate": 66.66666666666667
+    },
+    "f112r": {
+      "folio": "f112r",
+      "n_tokens": 394,
+      "n_paragraphs": 10,
+      "heat_total": 7,
+      "heat_max_cluster": 2,
+      "material_total": 1,
+      "flow_total": 10,
+      "sustained_total": 2,
+      "ot_prefix_count": 44,
+      "ot_prefix_rate": 11.16751269035533,
+      "identical_run_max": 0,
+      "opaque_rate": 68.02030456852792
+    },
+    "f112v": {
+      "folio": "f112v",
+      "n_tokens": 415,
+      "n_paragraphs": 13,
+      "heat_total": 15,
+      "heat_max_cluster": 4,
+      "material_total": 1,
+      "flow_total": 3,
+      "sustained_total": 6,
+      "ot_prefix_count": 30,
+      "ot_prefix_rate": 7.228915662650603,
+      "identical_run_max": 0,
+      "opaque_rate": 69.63855421686748
+    },
+    "f113r": {
+      "folio": "f113r",
+      "n_tokens": 518,
+      "n_paragraphs": 16,
+      "heat_total": 3,
+      "heat_max_cluster": 2,
+      "material_total": 1,
+      "flow_total": 7,
+      "sustained_total": 9,
+      "ot_prefix_count": 30,
+      "ot_prefix_rate": 5.7915057915057915,
+      "identical_run_max": 0,
+      "opaque_rate": 58.3011583011583
+    },
+    "f113v": {
+      "folio": "f113v",
+      "n_tokens": 479,
+      "n_paragraphs": 15,
+      "heat_total": 5,
+      "heat_max_cluster": 2,
+      "material_total": 3,
+      "flow_total": 13,
+      "sustained_total": 13,
+      "ot_prefix_count": 70,
+      "ot_prefix_rate": 14.613778705636744,
+      "identical_run_max": 0,
+      "opaque_rate": 56.78496868475992
+    },
+    "f114r": {
+      "folio": "f114r",
+      "n_tokens": 447,
+      "n_paragraphs": 12,
+      "heat_total": 3,
+      "heat_max_cluster": 1,
+      "material_total": 5,
+      "flow_total": 9,
+      "sustained_total": 5,
+      "ot_prefix_count": 30,
+      "ot_prefix_rate": 6.7114093959731544,
+      "identical_run_max": 0,
+      "opaque_rate": 60.62639821029083
+    },
+    "f114v": {
+      "folio": "f114v",
+      "n_tokens": 362,
+      "n_paragraphs": 11,
+      "heat_total": 5,
+      "heat_max_cluster": 2,
+      "material_total": 3,
+      "flow_total": 6,
+      "sustained_total": 5,
+      "ot_prefix_count": 34,
+      "ot_prefix_rate": 9.392265193370166,
+      "identical_run_max": 0,
+      "opaque_rate": 66.29834254143647
+    },
+    "f115r": {
+      "folio": "f115r",
+      "n_tokens": 444,
+      "n_paragraphs": 13,
+      "heat_total": 6,
+      "heat_max_cluster": 3,
+      "material_total": 7,
+      "flow_total": 4,
+      "sustained_total": 6,
+      "ot_prefix_count": 12,
+      "ot_prefix_rate": 2.7027027027027026,
+      "identical_run_max": 0,
+      "opaque_rate": 55.85585585585586
+    },
+    "f115v": {
+      "folio": "f115v",
+      "n_tokens": 399,
+      "n_paragraphs": 13,
+      "heat_total": 7,
+      "heat_max_cluster": 4,
+      "material_total": 0,
+      "flow_total": 3,
+      "sustained_total": 4,
+      "ot_prefix_count": 18,
+      "ot_prefix_rate": 4.511278195488722,
+      "identical_run_max": 2,
+      "opaque_rate": 62.907268170426065
+    },
+    "f116r": {
+      "folio": "f116r",
+      "n_tokens": 537,
+      "n_paragraphs": 8,
+      "heat_total": 6,
+      "heat_max_cluster": 2,
+      "material_total": 5,
+      "flow_total": 14,
+      "sustained_total": 20,
+      "ot_prefix_count": 40,
+      "ot_prefix_rate": 7.4487895716946,
+      "identical_run_max": 0,
+      "opaque_rate": 72.99813780260708
+    },
+    "f26r": {
+      "folio": "f26r",
+      "n_tokens": 85,
+      "n_paragraphs": 2,
+      "heat_total": 8,
+      "heat_max_cluster": 7,
+      "material_total": 1,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 2,
+      "ot_prefix_rate": 2.3529411764705883,
+      "identical_run_max": 0,
+      "opaque_rate": 72.94117647058823
+    },
+    "f26v": {
+      "folio": "f26v",
+      "n_tokens": 89,
+      "n_paragraphs": 4,
+      "heat_total": 3,
+      "heat_max_cluster": 3,
+      "material_total": 4,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 2,
+      "ot_prefix_rate": 2.247191011235955,
+      "identical_run_max": 0,
+      "opaque_rate": 64.04494382022472
+    },
+    "f31r": {
+      "folio": "f31r",
+      "n_tokens": 100,
+      "n_paragraphs": 4,
+      "heat_total": 5,
+      "heat_max_cluster": 5,
+      "material_total": 5,
+      "flow_total": 0,
+      "sustained_total": 0,
+      "ot_prefix_count": 1,
+      "ot_prefix_rate": 1.0,
+      "identical_run_max": 0,
+      "opaque_rate": 61.0
+    },
+    "f31v": {
+      "folio": "f31v",
+      "n_tokens": 108,
+      "n_paragraphs": 2,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 1,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 6,
+      "ot_prefix_rate": 5.555555555555555,
+      "identical_run_max": 0,
+      "opaque_rate": 46.2962962962963
+    },
+    "f33r": {
+      "folio": "f33r",
+      "n_tokens": 72,
+      "n_paragraphs": 1,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 2,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 7,
+      "ot_prefix_rate": 9.722222222222221,
+      "identical_run_max": 0,
+      "opaque_rate": 62.5
+    },
+    "f33v": {
+      "folio": "f33v",
+      "n_tokens": 109,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 4,
+      "flow_total": 1,
+      "sustained_total": 0,
+      "ot_prefix_count": 3,
+      "ot_prefix_rate": 2.7522935779816513,
+      "identical_run_max": 0,
+      "opaque_rate": 65.13761467889908
+    },
+    "f34r": {
+      "folio": "f34r",
+      "n_tokens": 144,
+      "n_paragraphs": 2,
+      "heat_total": 2,
+      "heat_max_cluster": 1,
+      "material_total": 3,
+      "flow_total": 3,
+      "sustained_total": 0,
+      "ot_prefix_count": 7,
+      "ot_prefix_rate": 4.861111111111111,
+      "identical_run_max": 0,
+      "opaque_rate": 61.80555555555556
+    },
+    "f34v": {
+      "folio": "f34v",
+      "n_tokens": 115,
+      "n_paragraphs": 2,
+      "heat_total": 2,
+      "heat_max_cluster": 2,
+      "material_total": 0,
+      "flow_total": 1,
+      "sustained_total": 0,
+      "ot_prefix_count": 3,
+      "ot_prefix_rate": 2.608695652173913,
+      "identical_run_max": 0,
+      "opaque_rate": 67.82608695652173
+    },
+    "f39r": {
+      "folio": "f39r",
+      "n_tokens": 154,
+      "n_paragraphs": 4,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 7,
+      "flow_total": 2,
+      "sustained_total": 3,
+      "ot_prefix_count": 3,
+      "ot_prefix_rate": 1.948051948051948,
+      "identical_run_max": 0,
+      "opaque_rate": 63.63636363636363
+    },
+    "f39v": {
+      "folio": "f39v",
+      "n_tokens": 142,
+      "n_paragraphs": 2,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 5,
+      "flow_total": 3,
+      "sustained_total": 2,
+      "ot_prefix_count": 4,
+      "ot_prefix_rate": 2.816901408450704,
+      "identical_run_max": 0,
+      "opaque_rate": 57.74647887323944
+    },
+    "f40r": {
+      "folio": "f40r",
+      "n_tokens": 97,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 3,
+      "flow_total": 0,
+      "sustained_total": 0,
+      "ot_prefix_count": 1,
+      "ot_prefix_rate": 1.0309278350515463,
+      "identical_run_max": 0,
+      "opaque_rate": 54.63917525773196
+    },
+    "f40v": {
+      "folio": "f40v",
+      "n_tokens": 106,
+      "n_paragraphs": 3,
+      "heat_total": 2,
+      "heat_max_cluster": 2,
+      "material_total": 0,
+      "flow_total": 0,
+      "sustained_total": 3,
+      "ot_prefix_count": 1,
+      "ot_prefix_rate": 0.9433962264150944,
+      "identical_run_max": 0,
+      "opaque_rate": 65.09433962264151
+    },
+    "f41r": {
+      "folio": "f41r",
+      "n_tokens": 97,
+      "n_paragraphs": 2,
+      "heat_total": 9,
+      "heat_max_cluster": 6,
+      "material_total": 0,
+      "flow_total": 1,
+      "sustained_total": 0,
+      "ot_prefix_count": 2,
+      "ot_prefix_rate": 2.0618556701030926,
+      "identical_run_max": 2,
+      "opaque_rate": 76.28865979381443
+    },
+    "f41v": {
+      "folio": "f41v",
+      "n_tokens": 68,
+      "n_paragraphs": 2,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 1,
+      "flow_total": 0,
+      "sustained_total": 0,
+      "ot_prefix_count": 4,
+      "ot_prefix_rate": 5.882352941176471,
+      "identical_run_max": 0,
+      "opaque_rate": 63.23529411764706
+    },
+    "f43r": {
+      "folio": "f43r",
+      "n_tokens": 150,
+      "n_paragraphs": 3,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 5,
+      "flow_total": 1,
+      "sustained_total": 0,
+      "ot_prefix_count": 13,
+      "ot_prefix_rate": 8.666666666666666,
+      "identical_run_max": 0,
+      "opaque_rate": 74.0
+    },
+    "f43v": {
+      "folio": "f43v",
+      "n_tokens": 153,
+      "n_paragraphs": 3,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 2,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 12,
+      "ot_prefix_rate": 7.8431372549019605,
+      "identical_run_max": 0,
+      "opaque_rate": 70.58823529411765
+    },
+    "f46r": {
+      "folio": "f46r",
+      "n_tokens": 157,
+      "n_paragraphs": 4,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 1,
+      "flow_total": 1,
+      "sustained_total": 1,
+      "ot_prefix_count": 2,
+      "ot_prefix_rate": 1.2738853503184713,
+      "identical_run_max": 0,
+      "opaque_rate": 64.96815286624204
+    },
+    "f46v": {
+      "folio": "f46v",
+      "n_tokens": 111,
+      "n_paragraphs": 1,
+      "heat_total": 4,
+      "heat_max_cluster": 3,
+      "material_total": 0,
+      "flow_total": 3,
+      "sustained_total": 0,
+      "ot_prefix_count": 7,
+      "ot_prefix_rate": 6.306306306306307,
+      "identical_run_max": 0,
+      "opaque_rate": 75.67567567567568
+    },
+    "f48r": {
+      "folio": "f48r",
+      "n_tokens": 89,
+      "n_paragraphs": 1,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 1,
+      "flow_total": 1,
+      "sustained_total": 0,
+      "ot_prefix_count": 9,
+      "ot_prefix_rate": 10.112359550561798,
+      "identical_run_max": 0,
+      "opaque_rate": 65.1685393258427
+    },
+    "f48v": {
+      "folio": "f48v",
+      "n_tokens": 126,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 0,
+      "flow_total": 9,
+      "sustained_total": 1,
+      "ot_prefix_count": 21,
+      "ot_prefix_rate": 16.666666666666668,
+      "identical_run_max": 0,
+      "opaque_rate": 68.25396825396825
+    },
+    "f50r": {
+      "folio": "f50r",
+      "n_tokens": 89,
+      "n_paragraphs": 1,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 1,
+      "flow_total": 1,
+      "sustained_total": 2,
+      "ot_prefix_count": 3,
+      "ot_prefix_rate": 3.3707865168539324,
+      "identical_run_max": 0,
+      "opaque_rate": 60.674157303370784
+    },
+    "f50v": {
+      "folio": "f50v",
+      "n_tokens": 98,
+      "n_paragraphs": 1,
+      "heat_total": 3,
+      "heat_max_cluster": 2,
+      "material_total": 1,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 6,
+      "ot_prefix_rate": 6.122448979591836,
+      "identical_run_max": 0,
+      "opaque_rate": 69.38775510204081
+    },
+    "f55r": {
+      "folio": "f55r",
+      "n_tokens": 124,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 4,
+      "flow_total": 4,
+      "sustained_total": 1,
+      "ot_prefix_count": 4,
+      "ot_prefix_rate": 3.225806451612903,
+      "identical_run_max": 0,
+      "opaque_rate": 48.38709677419355
+    },
+    "f55v": {
+      "folio": "f55v",
+      "n_tokens": 104,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 0,
+      "flow_total": 2,
+      "sustained_total": 3,
+      "ot_prefix_count": 5,
+      "ot_prefix_rate": 4.8076923076923075,
+      "identical_run_max": 0,
+      "opaque_rate": 62.5
+    },
+    "f57r": {
+      "folio": "f57r",
+      "n_tokens": 87,
+      "n_paragraphs": 2,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 1,
+      "flow_total": 0,
+      "sustained_total": 0,
+      "ot_prefix_count": 1,
+      "ot_prefix_rate": 1.1494252873563218,
+      "identical_run_max": 0,
+      "opaque_rate": 73.5632183908046
+    },
+    "f66r": {
+      "folio": "f66r",
+      "n_tokens": 329,
+      "n_paragraphs": 37,
+      "heat_total": 2,
+      "heat_max_cluster": 1,
+      "material_total": 9,
+      "flow_total": 0,
+      "sustained_total": 0,
+      "ot_prefix_count": 12,
+      "ot_prefix_rate": 3.6474164133738602,
+      "identical_run_max": 0,
+      "opaque_rate": 54.40729483282675
+    },
+    "f66v": {
+      "folio": "f66v",
+      "n_tokens": 113,
+      "n_paragraphs": 3,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 8,
+      "flow_total": 3,
+      "sustained_total": 0,
+      "ot_prefix_count": 5,
+      "ot_prefix_rate": 4.424778761061947,
+      "identical_run_max": 0,
+      "opaque_rate": 52.21238938053097
+    },
+    "f75r": {
+      "folio": "f75r",
+      "n_tokens": 412,
+      "n_paragraphs": 2,
+      "heat_total": 28,
+      "heat_max_cluster": 10,
+      "material_total": 15,
+      "flow_total": 12,
+      "sustained_total": 22,
+      "ot_prefix_count": 20,
+      "ot_prefix_rate": 4.854368932038835,
+      "identical_run_max": 4,
+      "opaque_rate": 70.87378640776699
+    },
+    "f75v": {
+      "folio": "f75v",
+      "n_tokens": 339,
+      "n_paragraphs": 10,
+      "heat_total": 11,
+      "heat_max_cluster": 4,
+      "material_total": 11,
+      "flow_total": 7,
+      "sustained_total": 14,
+      "ot_prefix_count": 13,
+      "ot_prefix_rate": 3.8348082595870205,
+      "identical_run_max": 2,
+      "opaque_rate": 66.07669616519173
+    },
+    "f76r": {
+      "folio": "f76r",
+      "n_tokens": 546,
+      "n_paragraphs": 4,
+      "heat_total": 13,
+      "heat_max_cluster": 4,
+      "material_total": 12,
+      "flow_total": 7,
+      "sustained_total": 9,
+      "ot_prefix_count": 21,
+      "ot_prefix_rate": 3.8461538461538463,
+      "identical_run_max": 0,
+      "opaque_rate": 69.04761904761905
+    },
+    "f76v": {
+      "folio": "f76v",
+      "n_tokens": 400,
+      "n_paragraphs": 6,
+      "heat_total": 25,
+      "heat_max_cluster": 5,
+      "material_total": 2,
+      "flow_total": 10,
+      "sustained_total": 5,
+      "ot_prefix_count": 28,
+      "ot_prefix_rate": 7.0,
+      "identical_run_max": 0,
+      "opaque_rate": 73.25
+    },
+    "f77r": {
+      "folio": "f77r",
+      "n_tokens": 325,
+      "n_paragraphs": 13,
+      "heat_total": 24,
+      "heat_max_cluster": 7,
+      "material_total": 3,
+      "flow_total": 3,
+      "sustained_total": 20,
+      "ot_prefix_count": 7,
+      "ot_prefix_rate": 2.1538461538461537,
+      "identical_run_max": 2,
+      "opaque_rate": 72.61538461538461
+    },
+    "f77v": {
+      "folio": "f77v",
+      "n_tokens": 331,
+      "n_paragraphs": 8,
+      "heat_total": 23,
+      "heat_max_cluster": 6,
+      "material_total": 15,
+      "flow_total": 1,
+      "sustained_total": 14,
+      "ot_prefix_count": 1,
+      "ot_prefix_rate": 0.3021148036253776,
+      "identical_run_max": 0,
+      "opaque_rate": 63.74622356495468
+    },
+    "f78r": {
+      "folio": "f78r",
+      "n_tokens": 294,
+      "n_paragraphs": 8,
+      "heat_total": 21,
+      "heat_max_cluster": 9,
+      "material_total": 7,
+      "flow_total": 7,
+      "sustained_total": 13,
+      "ot_prefix_count": 14,
+      "ot_prefix_rate": 4.761904761904762,
+      "identical_run_max": 2,
+      "opaque_rate": 71.08843537414965
+    },
+    "f78v": {
+      "folio": "f78v",
+      "n_tokens": 292,
+      "n_paragraphs": 2,
+      "heat_total": 16,
+      "heat_max_cluster": 7,
+      "material_total": 8,
+      "flow_total": 6,
+      "sustained_total": 7,
+      "ot_prefix_count": 18,
+      "ot_prefix_rate": 6.164383561643835,
+      "identical_run_max": 2,
+      "opaque_rate": 59.93150684931507
+    },
+    "f79r": {
+      "folio": "f79r",
+      "n_tokens": 389,
+      "n_paragraphs": 8,
+      "heat_total": 2,
+      "heat_max_cluster": 2,
+      "material_total": 4,
+      "flow_total": 6,
+      "sustained_total": 12,
+      "ot_prefix_count": 28,
+      "ot_prefix_rate": 7.197943444730077,
+      "identical_run_max": 0,
+      "opaque_rate": 63.753213367609256
+    },
+    "f79v": {
+      "folio": "f79v",
+      "n_tokens": 354,
+      "n_paragraphs": 7,
+      "heat_total": 22,
+      "heat_max_cluster": 7,
+      "material_total": 4,
+      "flow_total": 5,
+      "sustained_total": 14,
+      "ot_prefix_count": 28,
+      "ot_prefix_rate": 7.909604519774011,
+      "identical_run_max": 3,
+      "opaque_rate": 74.57627118644068
+    },
+    "f80r": {
+      "folio": "f80r",
+      "n_tokens": 441,
+      "n_paragraphs": 16,
+      "heat_total": 11,
+      "heat_max_cluster": 4,
+      "material_total": 4,
+      "flow_total": 8,
+      "sustained_total": 30,
+      "ot_prefix_count": 21,
+      "ot_prefix_rate": 4.761904761904762,
+      "identical_run_max": 0,
+      "opaque_rate": 66.66666666666667
+    },
+    "f80v": {
+      "folio": "f80v",
+      "n_tokens": 378,
+      "n_paragraphs": 8,
+      "heat_total": 6,
+      "heat_max_cluster": 2,
+      "material_total": 4,
+      "flow_total": 4,
+      "sustained_total": 23,
+      "ot_prefix_count": 9,
+      "ot_prefix_rate": 2.380952380952381,
+      "identical_run_max": 0,
+      "opaque_rate": 64.28571428571429
+    },
+    "f81r": {
+      "folio": "f81r",
+      "n_tokens": 207,
+      "n_paragraphs": 3,
+      "heat_total": 7,
+      "heat_max_cluster": 3,
+      "material_total": 1,
+      "flow_total": 4,
+      "sustained_total": 1,
+      "ot_prefix_count": 13,
+      "ot_prefix_rate": 6.280193236714976,
+      "identical_run_max": 0,
+      "opaque_rate": 64.2512077294686
+    },
+    "f81v": {
+      "folio": "f81v",
+      "n_tokens": 258,
+      "n_paragraphs": 3,
+      "heat_total": 6,
+      "heat_max_cluster": 3,
+      "material_total": 7,
+      "flow_total": 2,
+      "sustained_total": 3,
+      "ot_prefix_count": 4,
+      "ot_prefix_rate": 1.550387596899225,
+      "identical_run_max": 2,
+      "opaque_rate": 65.50387596899225
+    },
+    "f82r": {
+      "folio": "f82r",
+      "n_tokens": 275,
+      "n_paragraphs": 4,
+      "heat_total": 20,
+      "heat_max_cluster": 6,
+      "material_total": 4,
+      "flow_total": 1,
+      "sustained_total": 13,
+      "ot_prefix_count": 4,
+      "ot_prefix_rate": 1.4545454545454546,
+      "identical_run_max": 2,
+      "opaque_rate": 75.27272727272727
+    },
+    "f82v": {
+      "folio": "f82v",
+      "n_tokens": 298,
+      "n_paragraphs": 6,
+      "heat_total": 12,
+      "heat_max_cluster": 5,
+      "material_total": 7,
+      "flow_total": 4,
+      "sustained_total": 18,
+      "ot_prefix_count": 12,
+      "ot_prefix_rate": 4.026845637583893,
+      "identical_run_max": 0,
+      "opaque_rate": 66.44295302013423
+    },
+    "f83r": {
+      "folio": "f83r",
+      "n_tokens": 340,
+      "n_paragraphs": 10,
+      "heat_total": 20,
+      "heat_max_cluster": 6,
+      "material_total": 6,
+      "flow_total": 5,
+      "sustained_total": 7,
+      "ot_prefix_count": 13,
+      "ot_prefix_rate": 3.823529411764706,
+      "identical_run_max": 0,
+      "opaque_rate": 72.94117647058823
+    },
+    "f83v": {
+      "folio": "f83v",
+      "n_tokens": 263,
+      "n_paragraphs": 7,
+      "heat_total": 12,
+      "heat_max_cluster": 4,
+      "material_total": 5,
+      "flow_total": 2,
+      "sustained_total": 12,
+      "ot_prefix_count": 8,
+      "ot_prefix_rate": 3.041825095057034,
+      "identical_run_max": 2,
+      "opaque_rate": 58.555133079847906
+    },
+    "f84r": {
+      "folio": "f84r",
+      "n_tokens": 361,
+      "n_paragraphs": 18,
+      "heat_total": 22,
+      "heat_max_cluster": 6,
+      "material_total": 15,
+      "flow_total": 10,
+      "sustained_total": 6,
+      "ot_prefix_count": 22,
+      "ot_prefix_rate": 6.094182825484765,
+      "identical_run_max": 2,
+      "opaque_rate": 69.25207756232687
+    },
+    "f84v": {
+      "folio": "f84v",
+      "n_tokens": 347,
+      "n_paragraphs": 5,
+      "heat_total": 18,
+      "heat_max_cluster": 5,
+      "material_total": 5,
+      "flow_total": 10,
+      "sustained_total": 4,
+      "ot_prefix_count": 16,
+      "ot_prefix_rate": 4.610951008645533,
+      "identical_run_max": 0,
+      "opaque_rate": 72.91066282420749
+    },
+    "f85r1": {
+      "folio": "f85r1",
+      "n_tokens": 333,
+      "n_paragraphs": 10,
+      "heat_total": 4,
+      "heat_max_cluster": 2,
+      "material_total": 10,
+      "flow_total": 12,
+      "sustained_total": 1,
+      "ot_prefix_count": 33,
+      "ot_prefix_rate": 9.90990990990991,
+      "identical_run_max": 0,
+      "opaque_rate": 63.06306306306306
+    },
+    "f85r2": {
+      "folio": "f85r2",
+      "n_tokens": 155,
+      "n_paragraphs": 5,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 2,
+      "flow_total": 4,
+      "sustained_total": 0,
+      "ot_prefix_count": 20,
+      "ot_prefix_rate": 12.903225806451612,
+      "identical_run_max": 0,
+      "opaque_rate": 58.064516129032256
+    },
+    "f86v3": {
+      "folio": "f86v3",
+      "n_tokens": 277,
+      "n_paragraphs": 7,
+      "heat_total": 2,
+      "heat_max_cluster": 1,
+      "material_total": 5,
+      "flow_total": 0,
+      "sustained_total": 5,
+      "ot_prefix_count": 23,
+      "ot_prefix_rate": 8.303249097472925,
+      "identical_run_max": 0,
+      "opaque_rate": 75.45126353790614
+    },
+    "f86v4": {
+      "folio": "f86v4",
+      "n_tokens": 188,
+      "n_paragraphs": 4,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 5,
+      "flow_total": 8,
+      "sustained_total": 0,
+      "ot_prefix_count": 20,
+      "ot_prefix_rate": 10.638297872340425,
+      "identical_run_max": 0,
+      "opaque_rate": 51.59574468085106
+    },
+    "f86v5": {
+      "folio": "f86v5",
+      "n_tokens": 381,
+      "n_paragraphs": 6,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 3,
+      "flow_total": 12,
+      "sustained_total": 1,
+      "ot_prefix_count": 39,
+      "ot_prefix_rate": 10.236220472440944,
+      "identical_run_max": 0,
+      "opaque_rate": 61.67979002624672
+    },
+    "f86v6": {
+      "folio": "f86v6",
+      "n_tokens": 479,
+      "n_paragraphs": 4,
+      "heat_total": 2,
+      "heat_max_cluster": 2,
+      "material_total": 15,
+      "flow_total": 14,
+      "sustained_total": 17,
+      "ot_prefix_count": 26,
+      "ot_prefix_rate": 5.427974947807933,
+      "identical_run_max": 0,
+      "opaque_rate": 57.620041753653446
+    },
+    "f94r": {
+      "folio": "f94r",
+      "n_tokens": 82,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 2,
+      "flow_total": 2,
+      "sustained_total": 1,
+      "ot_prefix_count": 5,
+      "ot_prefix_rate": 6.097560975609756,
+      "identical_run_max": 0,
+      "opaque_rate": 58.53658536585366
+    },
+    "f94v": {
+      "folio": "f94v",
+      "n_tokens": 101,
+      "n_paragraphs": 3,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 2,
+      "flow_total": 2,
+      "sustained_total": 1,
+      "ot_prefix_count": 14,
+      "ot_prefix_rate": 13.861386138613861,
+      "identical_run_max": 0,
+      "opaque_rate": 64.35643564356435
+    },
+    "f95r1": {
+      "folio": "f95r1",
+      "n_tokens": 103,
+      "n_paragraphs": 2,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 1,
+      "flow_total": 0,
+      "sustained_total": 4,
+      "ot_prefix_count": 1,
+      "ot_prefix_rate": 0.970873786407767,
+      "identical_run_max": 0,
+      "opaque_rate": 73.7864077669903
+    },
+    "f95r2": {
+      "folio": "f95r2",
+      "n_tokens": 79,
+      "n_paragraphs": 2,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 0,
+      "flow_total": 2,
+      "sustained_total": 0,
+      "ot_prefix_count": 7,
+      "ot_prefix_rate": 8.860759493670885,
+      "identical_run_max": 0,
+      "opaque_rate": 58.22784810126582
+    },
+    "f95v1": {
+      "folio": "f95v1",
+      "n_tokens": 117,
+      "n_paragraphs": 4,
+      "heat_total": 1,
+      "heat_max_cluster": 1,
+      "material_total": 2,
+      "flow_total": 4,
+      "sustained_total": 3,
+      "ot_prefix_count": 12,
+      "ot_prefix_rate": 10.256410256410257,
+      "identical_run_max": 0,
+      "opaque_rate": 67.52136752136752
+    },
+    "f95v2": {
+      "folio": "f95v2",
+      "n_tokens": 64,
+      "n_paragraphs": 1,
+      "heat_total": 0,
+      "heat_max_cluster": 0,
+      "material_total": 1,
+      "flow_total": 1,
+      "sustained_total": 0,
+      "ot_prefix_count": 4,
+      "ot_prefix_rate": 6.25,
+      "identical_run_max": 0,
+      "opaque_rate": 70.3125
+    }
+  },
+  "calibration_accuracy_type": 0.125,
+  "calibration_accuracy_N": 0.3333333333333333
+}
