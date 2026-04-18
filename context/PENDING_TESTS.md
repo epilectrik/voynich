@@ -269,6 +269,50 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Pharmaceutical regime established structurally; specific-chapter matching unresolved. Real finding is "there ARE at least two encoding regimes in Voynich B" — not "this specific folio matches this specific chapter."
 - **Session:** 2026-04-18
 
+### PT-020: Voynich B has three-part vocabulary (shared core + two regime extensions)
+- **Method:** Computed token-type inventories for the 26-folio pharmaceutical cluster (PT-019) vs the 16-folio matched Testamentum cluster. Measured type overlap, high-frequency exclusive vocabulary, and PPMI regime-association within shared tokens. Applied robustness filter (types appearing on ≥2 folios).
+- **Finding (PT-012 FALSIFIED in strong form, refined form emerges):**
+  - Full Jaccard = 0.201, Robust Jaccard = 0.431 — well below the ~0.7 threshold PT-012 (one-closed-dictionary) would predict
+  - **563 types are shared** between regimes (common core)
+  - **Alchemical extension: 26 robust high-freq (≥5) EXCLUSIVE types** — sheckhy (19 occurrences, 18 folios), rain (13, 16 folios), lkain (12, 15 folios), shecthy (12, 11 folios), `qo` bare prefix (12, 9 folios), etc. — widely distributed in alchem, NEVER in pharm.
+  - **Pharmaceutical extension: 6 robust high-freq (≥5) EXCLUSIVE types** — qotchdy (10, 19 folios), shor (9, 18 folios), qokshey (5, 7 folios), etc.
+  - Asymmetry: alchemical regime has ~4× the high-freq exclusive vocabulary of pharmaceutical regime
+- **Strong regime-lean on shared tokens (PPMI):**
+  - Pharm-biased: aiin (+2.95x rate), daiin (+2.06x), or (+3.15x), ar (+2.69x), chdy (+3.53x) — containment-form suffixes + route/respond tokens dominant
+  - Alchem-biased: qokeedy (121:8, PMI -2.72), qokain (121:9, PMI -2.56), qokeey (104:9, PMI -2.36), shedy (0.24x), qokedy (0.26x), qokal (0.27x) — qo-prefix heat-cycle operations dominant
+- **Revised PT-012 formulation:** "Voynich B has a shared core vocabulary (~563 types) + two regime-specific extensions (~1080 and ~1150 types respectively), with strong frequency modulation even on shared tokens. The regimes are functionally distinct at the vocabulary level, not just at the deployment level."
+- **SISMEL-testable prediction:** When SISMEL-matched pharmaceutical recipes arrive, Voynich folios matched to them should activate (a) the shared core vocabulary and (b) the pharmaceutical extension, but NOT the alchemical extension (qokeedy, qokain, qokeey, sheckhy, etc.) at their characteristic alchemical frequencies.
+- **Constraint implications:**
+  - Relates to C531-C535 (folio-unique MIDDLEs 98.8%) — but this is at REGIME level, different structural layer
+  - Extends C1049 (shared vocabulary = section-universal substrate) by adding regime extensions on top
+  - Refines C1134 (section-specific vocabulary frequency-modulated) — modulation is so extreme for some tokens (qokeedy 121:8 alchem:pharm) it's functionally exclusive
+  - Does NOT conflict with C121 (479 instruction classes) — instruction classes can span regimes while specific tokens instantiate them differently
+- **Status:** Binary-outcome test run. Strong form of PT-012 FALSIFIED. Revised three-part-vocabulary formulation is a candidate Tier 2 claim pending SISMEL replication. Directly produces two orthogonal SISMEL predictions (one about vocabulary activation, one about extension-exclusive tokens).
+- **Session:** 2026-04-18
+
+### PT-021: Recto/verso continuation is leaf-level not folio-level; OTHER category contains continuation pages
+- **Method:** Computed structural continuation signals (e-depth similarity, opaque-rate similarity, prefix distribution cosine, shared words between last-line-of-r and first-line-of-v) for 39 recto/verso pairs spanning all 82 B folios. Composite score aggregates these four signals. Compared within-regime (BOTH_PHARM, BOTH_ALCHEM) to cross-regime (CROSS_*) pairs.
+- **Key findings:**
+  - Pharm-pharm pairs (11): mean composite 0.592
+  - Alchem-alchem pairs (3): mean composite 0.596
+  - Cross-regime pairs (12): mean composite 0.639 (HIGHER than within-regime)
+- **Interpretation:** Within-regime leaf-as-logical-unit is CONSISTENT (pharm and alchem show nearly identical 0.59 composite). But cross-regime pairs scoring HIGHER reveals something important: many "CROSS_REGIME" pairs actually involve one matched folio + its verso classified as "OTHER" because the verso has shifted structural profile (e.g., recto = distillation, verso = cooling/preservation/observation phase). The OTHER category (40 folios) likely contains many continuation pages of matched recipes.
+- **Specific high-continuation cross-regime pairs (likely unidentified continuations):**
+  - f75r (Ch19M aqua vitae) + f75v(OTHER) composite = 0.911
+  - f114r (PHARM) + f114v(OTHER) composite = 0.861
+  - f77r(OTHER) + f77v (Ch27M furnace) composite = 0.761
+  - f107r (Ch44M) + f107v(OTHER) composite = 0.737
+  - f103r (Ch16M) + f103v(OTHER) composite = 0.741
+- **Implications for Phase 642 cluster / coverage estimates:**
+  - "16 matched Testamentum folios" may underestimate by ~10-30% leaf-level coverage (when versos continue recipes)
+  - "26 pharmaceutical cluster folios" similarly may undercount leaf-level pharmaceutical pages
+  - Current folio-level cluster may be capturing RECIPE-START pages and not continuation pages
+- **Testable refinement:** Re-run s2 unsupervised clustering on LEAF-LEVEL features (recto + verso concatenated or averaged) rather than folio-level features. Predict cleaner cluster separation AND higher pharmaceutical-regime coverage.
+- **SISMEL implication:** When SISMEL data arrives, test whether the recipes for matched folios (like f75r → Ch19M) extend naturally onto the verso pages. If yes, we formalize leaf-level matching; if no, the verso pages are different content that just shares structural statistics.
+- **Does NOT conflict with:** C1399-C1400 (paragraph ordering null) — this is about cross-page continuation, different structural layer. C1936 (recto/verso sequential pairing in matched set) — consistent with, strengthens.
+- **Status:** Novel codicological finding emerging from simple structural continuation test. Suggests revision of analysis unit from folio to leaf. Binary-outcome test complete; re-clustering on leaf-level features is the natural next step but deferred until SISMEL.
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
