@@ -4,6 +4,41 @@
 
 ---
 
+## Version 6.22 (2026-04-18) - Phase 642: Brunschwig-Voynich Matching (neutral, informative)
+
+### Summary
+
+Phase 642 tested whether unmatched Voynich herbal folios match Brunschwig's ingredient-reference chapters. Three foundational tests + one negative finding:
+
+1. **Unsupervised clustering (s2):** 26-folio pharmaceutical-regime cluster identified in Voynich B corpus, 0/16 overlap with matched Testamentum folios, PC1 separation 8-10 standard deviations. Pharmaceutical regime is real.
+
+2. **PT-018 shuffle test:** Brunschwig 1512 opium Ch XXXVI is the uniquely densest extraction-method passage across 648k words of Brunschwig 1500+1512. Only 2 windows with ≥3 extraction patterns, both opium. PT-018 target is specific.
+
+3. **1512 ingredient chapter segmentation (s0c):** 7 dedicated "Von X" ingredient chapters extracted (Piper, Cinnamomum, Rosa, Scordeon, Opium, Agaricus, Crocus).
+
+4. **Systematic matching (s3):** Feature-based cosine similarity between 26 cluster folios and 7 ingredient chapters produced mixed signal. f55r does rank Opium top-3 (#2/7), 4 cluster folios rank Opium top-1, but matched Testamentum folios score at similar strength (mean top-1 +0.46 vs cluster +0.53). Negative control failed. Feature-matching approach is insufficient.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/B_BRUNSCHWIG_MATCHING/` — Phase 642 with PLAN, INDEX, 3 scripts, 3 result JSONs |
+| **ADDED** | PT-019 to `context/PENDING_TESTS.md` — pharmaceutical-regime cluster finding |
+| **UPDATED** | CLAUDE.md — version 6.21 → 6.22, phase count 640 → 641 |
+
+### Key Findings
+
+1. **Pharmaceutical regime cluster is structurally real** — 26 folios differ from alchemical-matched folios along PC1 by 8-10σ (e-depth=0 dominance, a/o-HEAD atoms, BARE prefix, high vocabulary diversity)
+2. **PT-018 target specificity confirmed** — opium extraction-methods passage is unique in Brunschwig corpus
+3. **Feature-matching approach is insufficient** — aggregate folio-level features don't discriminate ingredients well; block-level structural matching is the needed next approach
+4. **Target corpus expansion needed** — 7 ingredient chapters is too small; Book 5 disease index and multi-source fusion are candidate extensions
+
+### No constraint promotions
+
+Phase 642 was exploratory. Findings await block-level pipeline or richer target corpus for constraint-level promotion.
+
+---
+
 ## Version 6.21 (2026-04-16) - Phase 641: Gloss Recipe Correlation (null, structurally informative)
 
 ### Summary

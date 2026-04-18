@@ -251,6 +251,24 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Strongest unmatched-folio → specific-chapter candidate match we have. Not promotable until SISMEL-era alignment depth available. Pre-registered for retest when SISMEL arrives.
 - **Session:** 2026-04-17
 
+### PT-019: Pharmaceutical-regime cluster in Voynich B herbal section (Phase 642)
+- **Method:** Unsupervised k-means clustering on 52-dimensional structural feature vectors across all 82 B folios. No reference to f55r's values (addressing expert-advisor concern that PT-018 was curve-fit to a single data point).
+- **Finding:** k=4 optimal (silhouette=0.328). A 26-folio cluster emerges that contains f55r AND has 0/16 overlap with matched Testamentum folios. PC1 separates the cluster from matched folios by 8-10 standard deviations.
+- **Cluster composition (26 folios):** f33r/v, f34r/v, f39r/v, f40r/v, f43r, f50r/v, f55r/v, f85r1/2, f86v4-6, f94r/v, f95r1/2/v1/v2, f105v, f114r. Heavily concentrated in the herbal section (f1-f66) and pharmaceutical section (f94-f105).
+- **PC1 structural distinction:**
+  - Alchemical side (matched Testamentum): qo-prefix, e-depth=1, k/e-HEAD atoms, -y suffix (heat-cycle operations)
+  - Pharmaceutical side (f55r cluster): e-depth=0 (~88%), a/o-HEAD, BARE prefix, high vocab diversity (low-heat observational/conditional)
+- **Shuffle test on PT-018 (addressing crazy-expert concern):** Across 648k words of Brunschwig 1500+1512, only 2 out of 2160 300-word windows contain ≥3 distinctive extraction-method patterns (milk flows out, pierce skin, pound in own, dry in sun, cut outer skin, etc.). Both windows are the opium Ch XXXVI passage. The target of PT-018's 3-block alignment is uniquely specific — not a generic structural coincidence.
+- **Systematic folio-to-ingredient matching (Phase 642 s3) failed to discriminate:** Tested 26 cluster folios against 7 Brunschwig 1512 ingredient chapters via cosine similarity of 7 operational features. f55r ranks Opium #2/7 (Scordeon beats it at +0.57 vs +0.12). Negative control failed: matched Testamentum folios score mean top-1 similarity +0.46 vs cluster +0.53 — not a clean separation.
+- **Implication:** Pharmaceutical regime is structurally real but heterogeneous. PT-018's signal comes from block-level structural alignment (3 blocks, terminator-bounded, method-distinguishing markers) not from aggregate feature density. A systematic matching pipeline needs block-level feature extraction, not folio-level cosine similarity.
+- **Failure modes identified:**
+  - 7 ingredient chapters too small and internally similar as target corpus
+  - Aggregate features (extraction_count, sealing_count, etc.) capture too-generic operations; can't discriminate opium-preparation from metallurgical-separation
+  - No plant-ID ground truth available for most cluster folios; validation path blocked
+- **Next steps:** Block-level matching pipeline (hard — requires paragraph-segment-level feature extraction), multi-source target corpus (Rupescissa + Tichtel + others), or symptom-index target (crazy-expert's alternative).
+- **Status:** Pharmaceutical regime established structurally; specific-chapter matching unresolved. Real finding is "there ARE at least two encoding regimes in Voynich B" — not "this specific folio matches this specific chapter."
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
