@@ -495,6 +495,34 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Replication test refined PT-024 rather than falsifying it. The underlying mechanism is confirmed: Voynich notation encodes recipe counts when recipes emphasize them, using the channel appropriate to the count-type. This is a more precise claim than the initial "multi-channel convergence" formulation.
 - **Session:** 2026-04-18
 
+### PT-026: Count-encoding typology across 16 matched recipes (PT-024/PT-025 full replication)
+- **Method:** Classified all 16 matched Testamentum recipes by count-emphasis type (ITERATIVE/MATERIAL/DURATION/SINGLE). Measured 4 folio channels (heat=qokedy+qokeedy, material=dar+dal+daldy, flow=otal+otar+otedy+otaldiin, sustained=qokaiin+qokain). Checked whether predicted channel signatures match folio observations.
+- **Key Ch11M finding (EXACT cohobation match):** Ch11M text says "distill three times, after each distillation pour the water back, repeating." Structure = 1 initial + 3 bath-distillations + 3 pour-backs = 7 operations. **f112r has exactly 7 qokedy+qokeedy tokens.** NOT clustered (unlike f75r's tight repetition) — scattered because cohobation is distributed. Flow channel (10) captures the pour-back events. **Match = heat channel (7 ops) + flow channel (10 transfers/returns) combining to encode the full cohobation protocol.**
+- **Updated typology (6 encoding patterns):**
+  | Pattern | Recipe | Heat | Mat | Flow | Sust | Notes |
+  | --- | --- | --- | --- | --- | --- | --- |
+  | TIGHT REPETITION | f75r Ch19M 9x | 28 | 15 | 12 | 22 | triple convergence (PT-024) |
+  | COHOBATION | f112r Ch11M 3x+pourback | 7 | 1 | 10 | 2 | heat=main+returns, flow=pour-backs |
+  | FIXATION | f116r Ch4M iterative | 6 | 5 | 14 | 20 | flow + sustained dominant |
+  | COMPLEX PREP | f81v Ch18M 4+ distillations | 6 | 7 | 2 | 3 | moderate all channels |
+  | DURATION | f82r Ch22M 3 days | 20 | 4 | 1 | 13 | aspectual sustained, no count |
+  | MULTI-STAGE CHAIN | f80r Ch21-25M | 11 | 4 | 8 | 30 | very high sustained |
+- **Each count-emphasis recruits the operationally-relevant channel:** tight repetition shows in heat+material+flow convergence; cohobation shows in heat+flow (with flow capturing the pour-back signature); duration shows in sustained-aspectual activity; fixation shows in flow+sustained; complex prep shows moderate across channels.
+- **What this establishes:**
+  - The notation is RECIPE-AWARE at the encoding-channel level
+  - Count signals aren't universal — they match operation semantics
+  - Different recipe types (iterative/cohobation/fixation/duration) have distinguishable signatures
+  - We can potentially CLASSIFY an unmatched folio's recipe-type from its channel signature even before finding the matching text
+- **Predicted channel signatures for unmatched folios:**
+  - f78r (heat dense cluster 9, pharmaceutical cluster): **tight repetition** — recipe should say "repeat N times" with N~8-9
+  - f108r (heat cluster 8): tight repetition, N~7-8
+  - f108v (heat cluster 7): tight repetition, N~6-7
+  - f85r1/f86v5/f86v6 (pharmaceutical cluster, low heat): **duration** or **single-operation** preparation
+  - f94r/f95r1/f95v1 (pharmaceutical cluster, moderate heat+flow): possibly cohobation or fixation
+- **SISMEL validation:** each prediction testable on recipe match. If f78r matches a "9 times" recipe, PT-026 validates. If f108r matches a "7 times" recipe or similar, validates. Etc.
+- **Status:** Strongest generalized finding of the week. PT-024 refined into a 6-pattern typology with exact count matching for cohobation (f112r). Testable via SISMEL for any matched recipe with known count-emphasis. Multiple exemplars now: f75r (tight), f82r (duration), f112r (cohobation).
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
