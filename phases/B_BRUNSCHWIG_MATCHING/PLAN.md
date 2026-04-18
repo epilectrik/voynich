@@ -1,21 +1,39 @@
 # Phase 642: Brunschwig-Voynich Systematic Matching
 
 **Phase:** 642
-**Status:** DESCOPED to foundational-feasibility test (s0 + unsupervised s2 only)
+**Status:** FOUNDATIONAL TESTS PASSED; full pipeline deferred pending target-corpus extraction
 **Type:** Matching pipeline (parallel to Testamentum matching workflow)
-**Draft:** 2026-04-17 (v2 post-expert review)
+**Draft:** 2026-04-17 (v3 post-foundational-tests)
 **Window:** 3 days before SISMEL Catalan arrival
 
-## EXECUTIVE UPDATE (post-expert review)
+## EXECUTIVE UPDATE (v3)
 
-Both expert-advisor and crazy-expert flagged the same critical weakness: the "pharmaceutical regime" hypothesis was derived from ONE folio (f55r). Building a full matching pipeline on a single data point risks curve-fitting to a single folio masquerading as a discovered principle.
+**Foundational tests both PASSED:**
 
-**Descoped to foundational feasibility test:**
-- s0a + s0b: segment Brunschwig corpora (prerequisite, not controversial)
-- s2: **UNSUPERVISED clustering** of all 82 B folios WITHOUT using f55r as reference
-- Decision gate: if a genuine cluster separates from the matched-Testamentum folio set AND f55r is part of it (not a cluster-of-one), proceed with full matching pipeline. If not, phase is premature.
+1. **Unsupervised cluster test (s2):** k=4 clustering on 52-dim structural features across 82 B folios (no f55r reference) produced a 26-folio cluster containing f55r and **0/16 matched-Testamentum folios**. PC1 separates regimes by ~8-10 standard deviations. Cluster 1 (the pharmaceutical-regime candidates): f33r/v, f34r/v, f39r/v, f40r/v, f43r, f50r/v, f55r/v, f85r1/2, f86v4-6, f94r/v, f95r1/2/v1/v2, f105v, f114r.
 
-Full pipeline (s3-s7) deferred pending foundational test. Plan below retained for reference once foundational test passes.
+2. **Shuffle test (PT-018 specificity):** Across 648k words of Brunschwig 1500 + 1512, only TWO 300-word windows contain ≥3 distinctive extraction-method patterns; both are the opium Ch XXXVI passage. No other Brunschwig passage comes close. The target of PT-018's alignment is uniquely specific.
+
+**Gap identified post-foundational:**
+
+The existing Brunschwig extractions (`data/brunschwig_materials_master.json` = 509 1500 Part 2 materials; `phases/BRUNSCHWIG_1512_BLIND_PREDICTION/results/brunschwig_1512_recipes.json` = 587 1512 recipes) target **distillation products and compound recipes**. But the pharmaceutical-regime folios have signatures AGAINST distillation (low qo, low opaque terminals). The likely match target — **1512 ingredient-reference chapters** (like Ch XXXVI opium, which describe extraction/preparation of source ingredients) — is NOT in the existing extractions.
+
+**Decision:** Rather than force an MVP on the wrong target corpus (1500 herbal-waters + 1512 distillation-recipes), defer the matching pipeline until:
+
+1. 1512 ingredient-reference chapters are extracted (s0c: ingredient-chapter segmenter)
+2. Pharmaceutical-cluster folios can be matched against this more appropriate target corpus
+3. SISMEL Catalan data is available to cross-validate matches on the Testamentum side
+
+**Work product so far:**
+- Plan + 3 executable scripts (s2 + 2 shuffle tests, cleaned up after use)
+- `results/unsupervised_cluster.json` — 26-folio pharmaceutical cluster identified
+- Cluster justifies future full pipeline (gives us 26 candidates, not 1)
+- PT-018 specificity confirmed (Brunschwig 1512 Ch XXXVI is unique extraction-methods passage)
+
+**Deferred for future session:**
+- s0c: 1512 ingredient-reference chapter segmenter
+- s3: per-folio matching of 26-cluster folios against 1512 ingredient chapters
+- s4-s7: validation, deep alignment, blind prediction, summary
 
 ## Context
 
