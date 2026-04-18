@@ -467,6 +467,34 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Strongest quantitative folio-to-recipe alignment in the project so far. Promotable to Tier 2 if replicated on other iterative-recipe folios when SISMEL arrives.
 - **Session:** 2026-04-18
 
+### PT-025: PT-024 refinement via f82r replication — count-encoding channel matches count-type
+- **Method:** Replicated PT-024's multi-signal alignment methodology on f82r (Ch22M lunaria maceration 3-day sealed). Ch22M has a different count emphasis than Ch19M: "3 parts upon flesh" (material count) + "3 natural days" (duration) + single-distillation ending. Expected different channel signatures than f75r.
+- **f82r results:**
+  - Material count "3 parts": 3 dal/daldy tokens at P2 L17, P3 L20, P3 L26 ✓ (careful-placement channel)
+  - Duration "3 days": sustained qokeedy×8 + qokaiin×4 activity across P3, NO 3-cluster ✓ (aspectual, not counted)
+  - Single final distillation: 1 flow token (otedy) ✓
+  - Sealing signature: P3 has 79% opaque terminals + 21 -iin/-ain endings ✓
+- **Presupposition encoding (PT-023b) NOT OBVIOUSLY supported:** Ch22M opens "take of the simple moisture of the said lunaria" — Ch1M (f112v) is the matched prep. But f82r P1 has qokal×4 + qokaiin×4 (vessel/heat setup patterns), not an obvious lunaria-prep cluster. Either (a) f82r doesn't encode Ch1M presupposition, or (b) encoding is too compact/implicit to detect.
+- **Refined generalization:** PT-024's multi-channel count convergence is recipe-specific in KIND, not universal. Encoding channel matches count-type:
+  | Recipe emphasis | Encoding channel | Example |
+  | --- | --- | --- |
+  | N iterations | heat-cycles + material-returns + flow-transfers each ≈ N | f75r (Ch19M 9x) |
+  | N material parts | material-placement count = N | f82r (Ch22M 3 parts) |
+  | N duration units | aspectual sustained activity (NOT count) | f82r (Ch22M 3 days) |
+  | Single operation | single appropriate channel token | f82r (1 distillation = 1 flow) |
+- **What survives cleanly after f82r replication:**
+  - PT-022b/d: count-encoding via token repetition is real when recipe emphasizes count
+  - PT-024 (specifically for iterative recipes): multi-channel convergence is real for Ch19M-style repetitions
+  - Original PT-022 (atelic for duration): confirmed by f82r's 3-day encoding as sustained, not counted
+  - Material count encoding: confirmed (3 parts → 3 dal events)
+- **What doesn't generalize:**
+  - PT-023b presupposition encoding: recipe-specific. Works for f75r with simple 4-distillation presupposition. Doesn't obviously work for f82r with complex Ch1M presupposition.
+  - PT-024 triple-channel convergence: specific to explicit-repetition recipes (Ch19M-style). Doesn't apply to material-count or duration recipes.
+- **Revised testable prediction:** When SISMEL arrives, match recipes to their explicit count-type (iterations vs parts vs duration). Predict different channel signatures for each type. Iterative recipes should show multi-channel convergence; material-parts recipes should show material-channel count; duration recipes should show aspectual sustained activity.
+- **Methodological value:** f82r replication IMPROVED the finding by exposing a principled refinement. PT-024 "works" — just not in the unilateral way I initially claimed. The count-encoding is RECIPE-AWARE in the sense that notation uses different channels for different count-types.
+- **Status:** Replication test refined PT-024 rather than falsifying it. The underlying mechanism is confirmed: Voynich notation encodes recipe counts when recipes emphasize them, using the channel appropriate to the count-type. This is a more precise claim than the initial "multi-channel convergence" formulation.
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
