@@ -327,6 +327,30 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Implication for matching pipeline:** Feature-based matching (as in Phase 642 s3) will naturally capture aspectual profile (good); block-level matching expecting N-to-N correspondence between recipe steps and folio blocks will systematically fail for iterated operations (worth documenting as a constraint on future matching designs).
 - **Status:** Testable corollary of PT-021. Refines interpretation of Voynich notation's grammatical aspect. Has implications for C1399-C1400 (paragraph ordering null is CONSISTENT with aspectual rather than sequential reading), C1394 HEAD+MOD*+TERM model (may need aspectual annotation), and future matching pipeline design.
 - **Session:** 2026-04-18
+- **REVISED 2026-04-18 via PT-022b:** The strong form of PT-022 ("count NEVER encoded") is wrong. User observation led to targeted check: f75r has a run of 4 consecutive identical `qokedy` tokens at P1 L13, plus a 5-token qok-heat sequence at P3 L7, plus surrounding dense qok-family tokens. Wide-set max run on f75r = 11, which is the longest in the entire B corpus (next highest = 6 on f103r). The user correctly identified this as explicit enumeration matching Ch19M's "nine times." See PT-022b.
+
+### PT-022b: Voynich count-enumeration IS encoded via sequential token repetition (PT-022 revision)
+- **Method:** Ran cycle-heat run detection across all 82 B folios, counting contiguous runs of qokedy/qokeedy (narrow) and wider qok-family (qokedy, qokeedy, qokeeedy, qokchdy, qokechdy, qokeey, qoky, qokey) with max_gap=2 tolerance. Triggered by user observation that f75r had ~10 qokedy/qokeedy tokens clustered near end.
+- **Key findings:**
+  - **f75r wide-set max run = 11** — the longest in the entire B corpus by a large margin
+  - **f75r narrow-set: 6-token run + 4-token run (sum = 10)** — matches Ch19M's "nine times" iteration count
+  - **f75r P1 L13: `qokedy qokedy qokedy qokedy`** — 4 IDENTICAL consecutive tokens (specifically diagnostic — one doesn't write "heat heat heat heat" in aspectual notation; this IS enumeration)
+  - **f75r P3 L7: `qokeedy qokeedy qokedy qokedy qokeedy`** — 5 consecutive qok-heat tokens with variation
+  - Next-highest wide-run = 6 (f103r); next after that = 5 (f82r, f107v, f108r, f108v, f83r, f84r). f75r's 11 stands alone.
+- **Interpretation:** Voynich notation is primarily atelic/aspectual (PT-022's main claim stands for most recipes) BUT enumeration can be encoded via sequential token-repetition when the recipe has an explicit emphatic count. f75r's 9-cycle aqua vitae (Ch19M) uses this mechanism.
+- **The distinguishing feature:** Identical-token repetition (qokedy×4) is especially diagnostic because it's not operationally meaningful unless the operator is counting. You don't write "heat heat heat heat" to mean "heat in aspectual mode"; you write it to mean "heat 4 times."
+- **Consistency with existing constraints:**
+  - Extends C1394 (HEAD+MOD*+TERM) — within-token MOD* iteration is different from cross-token repetition; both are forms of iteration at different structural layers
+  - Does NOT conflict with C1399-C1400 (paragraph ordering null) — both are corpus-aggregate findings; folio-specific enumeration is within-paragraph, different layer
+  - Refines PT-022: atelic is default; enumerative is triggered by explicit-count recipes
+- **Testable SISMEL prediction (strengthened):** Catalan recipes with explicit N-counts (e.g., "three times," "five times," "nine times") should match folios where the primary operation token appears in a run of approximately N length in wide-set. Specifically:
+  - Recipe "do 9 times" → folio should have qok-family run ≥ 8-10
+  - Recipe "do 3 times" → folio should have run ≥ 2-4
+  - Non-iterative recipe → no long run expected
+- **Implications for matching pipeline:** Token-run detection should be added as a feature for folios matching iterative recipes. Density-matching (my earlier proposal) is necessary but not sufficient — run-length matching is an additional signal specifically for count-emphasis recipes.
+- **Implication for PT-018 (f55r opium):** f55r's 3-block structure may still be aspectual-phases (extraction/drip/sun-dry) rather than literal 3 methods. The enumeration mechanism (token repetition) is DIFFERENT from the aspectual structure and doesn't appear on f55r — consistent with opium recipe not emphasizing count.
+- **Status:** Revises PT-022. Count-enumeration IS encoded when recipe demands it. f75r is the clearest exemplar. SISMEL will directly test this via recipes with varied explicit counts.
+- **Session:** 2026-04-18 (revision triggered by user catching anomaly that initial analysis missed)
 
 ---
 
