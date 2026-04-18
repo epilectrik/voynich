@@ -313,6 +313,21 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Novel codicological finding emerging from simple structural continuation test. Suggests revision of analysis unit from folio to leaf. Binary-outcome test complete; re-clustering on leaf-level features is the natural next step but deferred until SISMEL.
 - **Session:** 2026-04-18
 
+### PT-022: Voynich notation is ATELIC (state-aspect) not BOUNDED (step-count)
+- **Method:** Deep leaf-unit read of f75r + f75v testing PT-021's prediction that f75v continues f75r's Ch19M aqua vitae recipe. Ch19M specifies "distill + return pure substance through NINE TIMES" — a clean 9-iteration count. If notation encodes iterations, we'd expect 9 bounded structural units across the leaf.
+- **Results:**
+  - **Continuity confirmed:** shared tokens at boundary (`dain`, `qokedy`), material addition at start of verso (`pchedar`), feature profile continuous. PT-021's "operational continuity across leaf" validated.
+  - **Iteration count NOT encoded:** Only 2 strong-close events (`am`, `ram`) across the entire 751-token leaf (f75r 412 + f75v 339). If 9 cycles were segmented, we'd expect ~9 terminator-bounded blocks. Cycling density is distributed (f75r peaks 21-22, f75v peaks 11-15), not enumerated.
+- **Interpretation:** The recipe says "9 times" but the folio captures the OPERATIONAL ENVELOPE (sustained cycling activity), not a LITERAL COUNT. The operator reads the recipe to know 9; the folio captures what the operation LOOKS like (qokeedy balneum + dar material + -dy closures, repeated as needed), not how many times to repeat it.
+- **Linguistic-aspect parallel:** The notation appears ATELIC (unbounded state-aspect, like English "was distilling" with continuous inner structure) rather than TELIC/BOUNDED (count-aspect, like "distilled three times"). This suggests the iterate atom `i` and iterate-suffix encode ITERATIVE ASPECT rather than COUNT-OF-ITERATIONS.
+- **Consistent with C171 (semantic ceiling):** Notation captures operational state, not recipe-level metadata. Count-of-repeats is recipe metadata (in Latin text), not operational state (in folio notation).
+- **Consistent with C1056 (sensory judgment not encoded):** "Knowing when to stop" after 9 cycles is operator-side knowledge; notation doesn't mark cycle boundaries.
+- **Partial falsification of specific PT-018 interpretation:** The 3-block structure we found in f55r P2 may not be "3 preparation methods" in the literal-enumeration sense either — it may be 3 ASPECTUAL phases (setup/main/completion) with internal state differences. The method-distinguishing markers could correspond to aspectual transitions, not step-counts.
+- **New testable prediction for SISMEL:** Catalan recipes that specify N repetitions should produce folios with SUSTAINED feature profiles in that operation channel, but NOT N bounded structural units. Folios matching "repeat 3 times" and "repeat 9 times" should be distinguishable by DENSITY of the iterated operation but not by COUNT of bounded blocks.
+- **Implication for matching pipeline:** Feature-based matching (as in Phase 642 s3) will naturally capture aspectual profile (good); block-level matching expecting N-to-N correspondence between recipe steps and folio blocks will systematically fail for iterated operations (worth documenting as a constraint on future matching designs).
+- **Status:** Testable corollary of PT-021. Refines interpretation of Voynich notation's grammatical aspect. Has implications for C1399-C1400 (paragraph ordering null is CONSISTENT with aspectual rather than sequential reading), C1394 HEAD+MOD*+TERM model (may need aspectual annotation), and future matching pipeline design.
+- **Session:** 2026-04-18
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
