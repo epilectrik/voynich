@@ -233,6 +233,24 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Cross-class qualitative validation of PT-017 on a fourth operation class (vessel specification). Third major gloss revision this session: qokaiin (PT-014) → revised gloss sustained-contained-form; t-atom (PT-017) → apparatus-mediated operation. Both survived direct contrastive testing on specific folios. Formal statistical promotion still blocked by N=16.
 - **Session:** 2026-04-16
 
+### PT-018: f55r → Brunschwig 1512 Ch XXXVI (opium, three-method preparation)
+- **Method:** Cold read of f55r (124 tokens, 2 paragraphs, completely untouched before this session). Prior external identification of the plant illustration as opium poppy (user's memory). Compared structural signature against all 16 matched folios, found radically different profile (opaque terminals 48% vs matched 69-77%, 88% e-depth=0, o/a HEAD atoms dominant, `or` highest-frequency token at 7×, low qo 8.9% / low qot- 1 / low ot 3.2%). Located Brunschwig 1512 Ch XXXVI as dedicated opium chapter with structure: description → three varieties → three preparation methods. Did direct token-by-token alignment of f55r P2 against the three methods.
+- **Three-method structural match via strong terminators:** P2 contains three strong terminator markers (`olkardam`, `kam`, `otaldiin`) bounding 3 natural blocks + a tail. Each block has a distinct operational profile matching one Brunschwig method:
+  - **Block 1 (7 tokens, ends `olkardam`)** = method OVERVIEW ("opium is made thus...")
+  - **Block 2 (20 tokens, ends `kam`)** = Method 1 (cut skin, passive milk flow, gentle dry): core sequence `dal qoko lkeedy dar kaiin dy kam` = carefully place + arrange heat + gentle equipment-fire + add material + contained-heat + cycle-close + heat-final
+  - **Block 3 (22 tokens, ends `otaldiin`)** = Method 2 (pierce, collect drip, dry): has `qokal` (fire-to-state, stronger than kam) + terminal drip pair `otal otaldiin` matching "what comes out is dried"
+  - **Tail (17 tokens, ends `ain`)** = Method 3 (pound in own milk, sun-dry): contains `qokaiin` (PT-014 revised gloss: sustained-contained-heat = "soak in own juice") + multiple flow operations `otol otar` + softest possible terminus `ain` matching passive solar drying
+- **Method-distinguishing markers align:** Method 1 is mildest (weakest heat, passive flow) → f55r block 2 has gentlest `-eedy` cycle and single-heat-final `kam`. Method 2 distinguished by piercing + collecting exudate → f55r block 3 has stronger `qokal` fire + the specific `otal otaldiin` drip pair. Method 3 distinguished by soaking in own juice + sun-drying → f55r tail has `qokaiin` sustained-contained + multiple flows + passive `ain` ending.
+- **Pharmaceutical-regime hypothesis:** f55r's signature class (low opaque, low qo, high `or`, careful-dosing `dal`, low-heat, `otal` flow markers) is **distinct from the alchemical-distillation regime** of matched Testamentum folios. Suggests the Voynich herbal section contains at least two encoding regimes — one mapping to Testamentum (alchemy), another to Brunschwig 1512 ingredient-reference (pharmaceuticals).
+- **Testable prediction:** Other unmatched herbal folios should show signature-class membership: plants with known potent-pharmaceutical uses (henbane, mandrake, hellebore, belladonna, hemlock, saffron, colchicum, etc.) should produce the same low-heat / careful-dosing / flow-marker profile as f55r. Run signature clustering across ~20 unmatched herbal folios to test.
+- **Known limitations:**
+  - Several f55r tokens (char, chek, xar, odar, xaloeees, cpheody, ckhy, dl, oiiin, chelal, shar) don't have clean one-word maps to Brunschwig phases — the alignment isn't 1:1 at every position, consistent with Voynich notation being denser than source text (one instruction → many operator actions)
+  - Method 1/2 intensity distinction (`kam` vs `qokal`) is real in Voynich but Brunschwig doesn't explicitly say Method 2 uses more heat — interpretive
+  - `qokaiin` mapping to Method 3 relies on PT-014 revised gloss holding
+  - Haven't ruled out: any 3-method preparation in our corpus would produce 3 distinguishable token profiles. Need a second 3-method preparation as additional test
+- **Status:** Strongest unmatched-folio → specific-chapter candidate match we have. Not promotable until SISMEL-era alignment depth available. Pre-registered for retest when SISMEL arrives.
+- **Session:** 2026-04-17
+
 ---
 
 ## Encoding Architecture Insight (2026-04-14)
