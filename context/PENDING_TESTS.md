@@ -599,6 +599,39 @@ Informal observations and exploratory results awaiting formal testing. These are
   - Count-encoding is NOT the universal structural feature I claimed; it's a specific signal in SOME folios
 - **Status:** Important correction. PT-026/PT-027 were overclaimed based on cherry-picked post-hoc matches. f75r remains the strongest individual exemplar. The systematic typology needs either significant recalibration or demotion to "pattern observed in f75r, unclear generalization."
 - **Session:** 2026-04-18 (reality check exposed overconfidence)
+- **REFINED 2026-04-18 via PT-029 direct reading:** PT-028 was too pessimistic. Direct token-level reading (not statistical classification) of f76r, f112r, f107r, f80r, f82r shows 3-5 matches hold up under reasonable (not cherry-picked) definitions. Truth is between PT-027's "5 exact matches" optimism and PT-028's "1 exemplar" pessimism. See PT-029.
+
+### PT-029: Direct token-reading refines PT-028 — 3-5 count-encoding matches hold, not 6 or 1
+- **Method:** User requested direct token-level comparison instead of statistical classification. Pulled full token stream for each claimed match and tested count-signals under multiple reasonable definitions (narrow / medium / wide / widest material+heat+flow groupings) to distinguish cherry-picked matches from robust ones.
+- **Results per match:**
+  - **f75r (Ch19M 1+9):** 10 heat + 9 material + 8 flow + 4-identical-qokedy run. **Robust across multiple channels AND definitions.** ✓
+  - **f107r (Ch44M "four elements"):** dar+dal+daldy = **4** under medium definition (consistent, not cherry-picked). Matches "four elements." ✓
+  - **f80r (Ch21-25M 4 chapters):** dar+dal+daldy = **4** under medium definition. Matches 4-chapter chain structure. ✓
+  - **f82r (Ch22M "3 parts"):** dal+daldy = 3 (narrow) OR dar+dal+daldy = 4 (medium). Both readings meaningful: 3 = explicit "three parts," 4 = "take lunaria + 3 parts placements." Plausible but definition-dependent.
+  - **f112r (Ch11M 1+3+3=7):** 7 strict heat tokens match the expected count, but 7 tokens scattered across ~30 lines don't show obvious 3-cycle structure. Plausible under charitable reading; ambiguous under strict.
+  - **f76r (Ch18P "seven distillations"):** FAILED. My earlier "flow=7" claim used narrow token selection; wider flow = 10. Heat = 13. 16 qok-family clusters. Doesn't form clean 7-count under any reasonable reading.
+- **Revised count of robust matches:** 3-5 depending on how generous:
+  - Strong (multi-channel, corpus-unique, or forward-classifier-correct): **f75r**
+  - Real under medium definition with non-arbitrary thresholds: **f107r, f80r**
+  - Plausible but definition-sensitive: f82r, f112r
+  - Retracted: f76r
+- **Methodological lesson (combined from PT-028 + PT-029):**
+  - Cherry-picked channel selection (PT-027) overclaims
+  - Miscalibrated forward classifier (PT-028) underclaims
+  - Direct reading under multiple reasonable definitions (PT-029) is the right calibration
+  - Rule: if the match holds under 2+ independent definitions (e.g., narrow AND medium, OR medium AND structural), it's robust
+- **What now stands as genuinely supported:**
+  - f75r count-encoding is multi-channel robust (PT-022c/d, PT-024)
+  - Material-channel encoding for "N elements/parts/chapters" in iterative/enumerative recipes (f107r, f80r, likely f82r)
+  - f112r's 7-count for cohobation plausible but needs better structural test
+  - Overall: count-encoding is NOT universal but NOT single-exemplar either — it's present in a distinguishable subset of matched folios
+- **Revised honest SISMEL predictions:**
+  - For any iterative recipe with explicit N: check material channel (dar+dal+daldy) first, not just heat
+  - For 4-element or 4-chapter recipes: predict dar+dal+daldy ≈ 4
+  - For single-number-count recipes: predict multi-channel signal (like f75r) only if recipe emphasizes repetition directly
+  - f78r high-cluster prediction still stands (its 9-cluster is unusual)
+- **Status:** More honest middle-ground finding. 3 robust + 2 plausible exemplars of count-encoding. Not a universal rule, not a single outlier. The signal is real but calibration matters.
+- **Session:** 2026-04-18 (user pushed for direct reading; produced calibrated verdict)
 
 ---
 
