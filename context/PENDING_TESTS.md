@@ -703,12 +703,16 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Session:** 2026-04-18 (strategic discussion after PT-029 direct-reading verification)
 
 ### PUB-002: Voynich 2026 International Conference — primary submission target
-- **Conference:** 2026 International Conference on the Voynich Manuscript
+- **Conference:** 2026 International Conference on the Voynich Manuscript (DEDICATED EXCLUSIVELY TO VOYNICH — not a general conference)
 - **Date:** Wednesday, December 9, 2026 (online)
-- **Host:** University of Malta
+- **Host:** University of Malta (Valletta Campus)
+- **Chair:** Dr. Colin Layfield (Senior Lecturer, University of Malta)
+- **Co-Chair:** Prof. John Abela (Associate Professor, University of Malta)
+- **Program Committee:** international — Yale, Utrecht University, University of Iceland, University of Texas at Austin, European Space Agency, and independent researchers specializing in linguistics/cryptography/manuscript analysis (independent researchers EXPLICITLY on the committee — accepts non-credentialed submissions)
 - **Website:** https://www.um.edu.mt/events/voynich2026/
 - **Contact:** voynich2026@um.edu.mt
 - **Submission platform:** EasyChair — https://easychair.org/conferences/?conf=voy2026
+- **Stated objective:** "Provide researchers with the opportunity to present their research and work on the Voynich manuscript." Researchers can present findings, learn about current scholarship, and network with the investigation community focused on this historical document.
 - **Key timeline:**
   - Abstract/summary deadline: **June 30, 2026 (11:59 CEST)** — ~10 weeks from session date (2026-04-18)
   - Acceptance notification: July 24, 2026
