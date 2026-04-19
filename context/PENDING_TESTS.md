@@ -702,6 +702,65 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Status:** Strategic framing for eventual paper submission. Not currently being drafted. To execute: after SISMEL arrives and initial Catalan validation work done, draft a 8-15 page methods-forward paper with set-level claim + individual case studies + explicit limitations + falsifiable predictions. Submit to Ambix or Cryptologia. Total effort estimate: 40-80 hours.
 - **Session:** 2026-04-18 (strategic discussion after PT-029 direct-reading verification)
 
+### PUB-002: Voynich 2026 International Conference — primary submission target
+- **Conference:** 2026 International Conference on the Voynich Manuscript
+- **Date:** Wednesday, December 9, 2026 (online)
+- **Host:** University of Malta
+- **Website:** https://www.um.edu.mt/events/voynich2026/
+- **Contact:** voynich2026@um.edu.mt
+- **Submission platform:** EasyChair — https://easychair.org/conferences/?conf=voy2026
+- **Key timeline:**
+  - Abstract/summary deadline: **June 30, 2026 (11:59 CEST)** — ~10 weeks from session date (2026-04-18)
+  - Acceptance notification: July 24, 2026
+  - Full paper deadline: August 31, 2026
+  - Final acceptance: October 1, 2026
+  - Video presentation deadline: November 9, 2026
+- **Submission requirements:**
+  - Abstract: max 750 words
+  - Full paper: 5-9 pages using CEUR-ART templates (LaTeX or LibreOffice)
+  - 20-minute pre-recorded video presentation + live Q&A
+  - Must be unpublished work
+  - At least one author must register and present
+- **Accepted research areas:** historical approaches and ciphers, NLP techniques, AI/ML applications, image processing, hoax vs. natural language discussions, digital humanities methods
+- **CRITICAL policies:**
+  - **Decipherment claims EXPLICITLY REJECTED** — "Proposed manuscript 'solutions' are rejected." This aligns perfectly with our methods-forward framing (PUB-001). Must avoid decipherment language.
+  - **Generative AI text generation PROHIBITED.** Grammar/translation tools exempt. AI-assisted content requires disclosure. Paper prose must be human-written; AI can be research assistant but not author.
+  - Open about AI tool USE (for analysis) is fine with disclosure
+- **Why this venue is ideal:**
+  - Methods-forward framing explicitly welcomed (NLP/AI/ML/DH)
+  - Decipherment-rejection policy PROTECTS our framing (we're not trying to "solve" anyway)
+  - Medieval Academy institutional backing adds credibility
+  - Online format reduces travel cost
+  - International audience
+  - December 2026 timeline allows full SISMEL validation work before submission
+- **Strategic plan:**
+  - Phase 1 (late April-May 2026): Complete SISMEL Catalan validation work when book arrives
+  - Phase 2 (May-June 2026): Draft 750-word abstract for June 30 deadline
+  - Phase 3 (July-August 2026): If accepted, write 5-9 page paper
+  - Phase 4 (September-November 2026): Prepare video presentation
+  - Phase 5 (December 9 2026): Present
+- **Abstract content draft (tentative):**
+  - Title: "Computational Corpus Analysis of Currier B Folios: Structural Regime Separation and Testamentum-Tradition Correspondence"
+  - Lead findings: PT-019 regime cluster + PT-020 three-part vocabulary + f75r/Ch19M multi-channel alignment
+  - Framing: methods extension of Currier/Landini/Zandbergen tradition, explicitly complementary to Pereira (2002)
+  - Emphasize: pre-registered predictions, self-correction documentation, permutation testing, workshop-adaptation hypothesis
+  - De-emphasize: "decipherment," "solve," broad claims, AI generative tooling
+- **Paper constraints (5-9 pages) force tight scope:**
+  - Cannot cover full matched set in depth
+  - One flagship case (f75r/Ch19M) + set-level statistics
+  - Supporting examples as tables/figures not full discussion
+  - Most PT-series findings compressed to methodology + results sections
+- **Author affiliation:** "Independent Researcher, [location]" — conference accepts independent submissions per their CFP
+- **AI disclosure plan (when submitting):** state clearly that AI models (specifically Claude Opus 4.6/4.7) were used as research assistants for structural analysis, corpus extraction, and statistical validation. State that prose is human-authored. This meets the disclosure requirement without violating the generative-text prohibition.
+- **Risk factors:**
+  - High rejection rate expected (most conference submissions rejected)
+  - "Decipherment-rejection" policy could catch us if reviewers interpret our work as decipherment-adjacent
+  - AI-disclosure requirement could trigger skeptical reviewing even for legitimate methods
+  - 5-9 page constraint is tight for the evidence we have
+- **Backup venues if rejected:** Cryptologia (Voynich statistical work has long history there), Ambix (alchemical manuscript studies), arXiv preprint as priority-preserving fallback
+- **Status:** Primary near-term publication target. Concrete deadlines. Realistic timeline given SISMEL arrival this week.
+- **Session:** 2026-04-18
+
 ---
 
 ## Debunked
