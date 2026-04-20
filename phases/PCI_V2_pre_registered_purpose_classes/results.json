@@ -1,0 +1,1042 @@
+{
+  "metadata": {
+    "phase": "PCI-V2",
+    "executed": "yes",
+    "protocol_commit": "1e973cb"
+  },
+  "verdict": "CLEAR_WINNER",
+  "winner": "CCPC",
+  "margin": 1.0,
+  "results": [
+    {
+      "class": "CCPC",
+      "matches": 15,
+      "mismatches": 0,
+      "incompatibles": 0,
+      "neutrals": 0,
+      "scoring_features": 15,
+      "raw_score": 15,
+      "normalized_score": 1.0,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        }
+      ]
+    },
+    {
+      "class": "HYB",
+      "matches": 0,
+      "mismatches": 0,
+      "incompatibles": 0,
+      "neutrals": 15,
+      "scoring_features": 0,
+      "raw_score": 0,
+      "normalized_score": 0.0,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        }
+      ]
+    },
+    {
+      "class": "POS",
+      "matches": 8,
+      "mismatches": 6,
+      "incompatibles": 0,
+      "neutrals": 1,
+      "scoring_features": 14,
+      "raw_score": -4,
+      "normalized_score": -0.2857142857142857,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        }
+      ]
+    },
+    {
+      "class": "MNEM",
+      "matches": 6,
+      "mismatches": 8,
+      "incompatibles": 0,
+      "neutrals": 1,
+      "scoring_features": 14,
+      "raw_score": -10,
+      "normalized_score": -0.7142857142857143,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        }
+      ]
+    },
+    {
+      "class": "RIT",
+      "matches": 6,
+      "mismatches": 8,
+      "incompatibles": 0,
+      "neutrals": 1,
+      "scoring_features": 14,
+      "raw_score": -10,
+      "normalized_score": -0.7142857142857143,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        }
+      ]
+    },
+    {
+      "class": "CAL",
+      "matches": 6,
+      "mismatches": 9,
+      "incompatibles": 0,
+      "neutrals": 0,
+      "scoring_features": 15,
+      "raw_score": -12,
+      "normalized_score": -0.8,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        }
+      ]
+    },
+    {
+      "class": "GMETA",
+      "matches": 4,
+      "mismatches": 11,
+      "incompatibles": 0,
+      "neutrals": 0,
+      "scoring_features": 15,
+      "raw_score": -18,
+      "normalized_score": -1.2,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        }
+      ]
+    },
+    {
+      "class": "RECIPE",
+      "matches": 3,
+      "mismatches": 12,
+      "incompatibles": 0,
+      "neutrals": 0,
+      "scoring_features": 15,
+      "raw_score": -21,
+      "normalized_score": -1.4,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "LOW",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        }
+      ]
+    },
+    {
+      "class": "MED",
+      "matches": 1,
+      "mismatches": 14,
+      "incompatibles": 0,
+      "neutrals": 0,
+      "scoring_features": 15,
+      "raw_score": -27,
+      "normalized_score": -1.8,
+      "disqualified": false,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "HIGH",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        }
+      ]
+    },
+    {
+      "class": "RAND",
+      "matches": 3,
+      "mismatches": 2,
+      "incompatibles": 7,
+      "neutrals": 3,
+      "scoring_features": 12,
+      "raw_score": -36,
+      "normalized_score": -3.0,
+      "disqualified": true,
+      "details": [
+        {
+          "feature": "F1",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F10",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F11",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        },
+        {
+          "feature": "F12",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F13",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F14",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F15",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F2",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F3",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F4",
+          "observed": "HIGH",
+          "predicted": "LOW",
+          "result": "MISMATCH"
+        },
+        {
+          "feature": "F5",
+          "observed": "LOW",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F6",
+          "observed": "LOW",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F7",
+          "observed": "LOW",
+          "predicted": "NEUTRAL",
+          "result": "NEUTRAL"
+        },
+        {
+          "feature": "F8",
+          "observed": "HIGH",
+          "predicted": "INCOMPATIBLE",
+          "result": "FALSIFIED"
+        },
+        {
+          "feature": "F9",
+          "observed": "HIGH",
+          "predicted": "HIGH",
+          "result": "MATCH"
+        }
+      ]
+    }
+  ]
+}
