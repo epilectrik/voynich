@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "phase": "PCI-V2",
+    "type": "pre-registered predictions",
+    "pre_registration_date": "2026-04-19",
+    "locked": true,
+    "note": "These predictions are LOCKED and must not be modified after commit. Scoring script reads this file mechanically. Any modification constitutes a post-hoc violation of the pre-registration."
+  },
+  "classes": {
+    "CCPC": "Continuous closed-loop process control",
+    "MNEM": "Mnemonic notation system",
+    "POS": "Positional reference system",
+    "GMETA": "Grammatical metadata system",
+    "RECIPE": "Discrete recipe collection",
+    "MED": "Medical treatment protocol",
+    "RIT": "Ritual / liturgical notation",
+    "CAL": "Calendar / astronomical computation",
+    "RAND": "Random / hoax text",
+    "HYB": "Hybrid / multiple purposes"
+  },
+  "features": {
+    "F1": "Forbidden transitions (directional)",
+    "F2": "Kernel convergence structure",
+    "F3": "Hazard 5-class structure",
+    "F4": "Line positional gradient",
+    "F5": "Numeric quantities present",
+    "F6": "Conditional branching",
+    "F7": "Completion markers",
+    "F8": "Macro-state monostate (high self-transition)",
+    "F9": "Cross-line independence (MI=0)",
+    "F10": "Folio atom homogeneity (low JSD)",
+    "F11": "Heaps beta high (0.74)",
+    "F12": "Closed vocabulary (0.9% occupancy)",
+    "F13": "High atom MI (2.5x NL chars)",
+    "F14": "Mode A/B alternation",
+    "F15": "Terminal-HEAD routing"
+  },
+  "predictions": {
+    "F1": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "LOW", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"},
+    "F2": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "LOW", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"},
+    "F3": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "LOW", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"},
+    "F4": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "HIGH", "GMETA": "LOW", "RECIPE": "HIGH", "MED": "HIGH", "RIT": "HIGH", "CAL": "HIGH", "RAND": "LOW", "HYB": "NEUTRAL"},
+    "F5": {"CCPC": "LOW", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "HIGH", "MED": "HIGH", "RIT": "LOW", "CAL": "HIGH", "RAND": "NEUTRAL", "HYB": "NEUTRAL"},
+    "F6": {"CCPC": "LOW", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "HIGH", "RIT": "LOW", "CAL": "LOW", "RAND": "NEUTRAL", "HYB": "NEUTRAL"},
+    "F7": {"CCPC": "LOW", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "HIGH", "MED": "HIGH", "RIT": "HIGH", "CAL": "LOW", "RAND": "NEUTRAL", "HYB": "NEUTRAL"},
+    "F8": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "HIGH", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "HIGH", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"},
+    "F9": {"CCPC": "HIGH", "MNEM": "HIGH", "POS": "HIGH", "GMETA": "LOW", "RECIPE": "HIGH", "MED": "LOW", "RIT": "LOW", "CAL": "HIGH", "RAND": "HIGH", "HYB": "NEUTRAL"},
+    "F10": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "HIGH", "GMETA": "HIGH", "RECIPE": "LOW", "MED": "LOW", "RIT": "HIGH", "CAL": "HIGH", "RAND": "HIGH", "HYB": "NEUTRAL"},
+    "F11": {"CCPC": "HIGH", "MNEM": "HIGH", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "LOW", "CAL": "LOW", "RAND": "HIGH", "HYB": "NEUTRAL"},
+    "F12": {"CCPC": "HIGH", "MNEM": "HIGH", "POS": "HIGH", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "HIGH", "CAL": "HIGH", "RAND": "LOW", "HYB": "NEUTRAL"},
+    "F13": {"CCPC": "HIGH", "MNEM": "NEUTRAL", "POS": "NEUTRAL", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "NEUTRAL", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"},
+    "F14": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "LOW", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"},
+    "F15": {"CCPC": "HIGH", "MNEM": "LOW", "POS": "LOW", "GMETA": "LOW", "RECIPE": "LOW", "MED": "LOW", "RIT": "LOW", "CAL": "LOW", "RAND": "INCOMPATIBLE", "HYB": "NEUTRAL"}
+  }
+}

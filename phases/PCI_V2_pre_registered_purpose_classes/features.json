@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "phase": "PCI-V2",
+    "type": "observed feature values",
+    "source": "documented constraints from existing Voynich analysis",
+    "note": "These are the observed structural facts about Currier B, documented in the constraint system. PCI-V2 does not re-measure them — it uses these documented values to score the candidate classes."
+  },
+  "features": {
+    "F1": {"name": "Forbidden transitions (directional)", "observed": "HIGH", "evidence": "17 disfavored transitions at O/E<0.5, directional, ~65% compliance (C789, C109)"},
+    "F2": {"name": "Kernel convergence structure", "observed": "HIGH", "evidence": "k/h/e kernel with recovery pathways (C085, C089)"},
+    "F3": {"name": "Hazard 5-class structure", "observed": "HIGH", "evidence": "5 natural clusters of disfavored transitions (C109)"},
+    "F4": {"name": "Line positional gradient", "observed": "HIGH", "evidence": "Q0 (SPEC) -> Q1-Q3 (WORK) -> Q4 (CLOSURE) zone structure (C1425-C1430)"},
+    "F5": {"name": "Numeric quantities present", "observed": "LOW", "evidence": "Zero numeric markers detected (C287, C288)"},
+    "F6": {"name": "Conditional branching", "observed": "LOW", "evidence": "Zero if-then structures detected"},
+    "F7": {"name": "Completion markers", "observed": "LOW", "evidence": "Zero explicit completion markers"},
+    "F8": {"name": "Macro-state monostate", "observed": "HIGH", "evidence": "AXM 70% self-transition; MONOSTATE dominance"},
+    "F9": {"name": "Cross-line independence (MI=0)", "observed": "HIGH", "evidence": "MI=0.0172 bits (near-zero); lines are independent safety envelopes (C1470-C1471)"},
+    "F10": {"name": "Folio atom homogeneity", "observed": "HIGH", "evidence": "Per-folio atom JSD ~0.019 vs corpus; low folio-to-folio variance"},
+    "F11": {"name": "Heaps beta high", "observed": "HIGH", "evidence": "Heaps beta = 0.74 for Currier B (above natural language 0.5-0.7 range)"},
+    "F12": {"name": "Closed vocabulary", "observed": "HIGH", "evidence": "479 of 48,640 possible MIDDLEs exist = 0.9% occupancy (C1028)"},
+    "F13": {"name": "High atom MI (vs NL chars)", "observed": "HIGH", "evidence": "Adjacent atom MI 1.65 bits vs 0.65 for English/Latin chars (2.5x)"},
+    "F14": {"name": "Mode A/B alternation", "observed": "HIGH", "evidence": "~80% within-paragraph alternation of two suffix modes (C1229, C1341)"},
+    "F15": {"name": "Terminal-HEAD routing", "observed": "HIGH", "evidence": "Specific terminal-to-next-HEAD enrichment documented (C1563)"}
+  }
+}
