@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1942.
+the highest ID present is C1959.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2283,6 +2283,7 @@ C1955	Ch17M (first mercury water) → f106r: TENTATIVE. ro×2, lch, eed×2, ir. 
 C1956	10-dim permutation: 0/10000 shuffles beat real on all dims. eed→cooling p=0.001, Merc→B p=0.005, ro→ferment p=0.020. ~5-6 indep dims.	2	B, PL, matching, C1887	beats=0/10000.
 C1957	Suffix boundary fix: blocked e/h-initial suffixes stealing MOD atoms from MIDDLE. e_depth match 16.7%→98.6%, max folio distortion 14pp→0.	2	B, morphology, SUFFIX, C1225, C1487	e_match=98.6%. fixed=3000+.
 C1958	ot = transfer rate/drip rate. ok/ot ratio: f83r drip-counting=0.38, f81v maceration=5.50. L22 ot×3 at Catalan drop-counting. Loop: sh→qo→ok→ot→sh.	2	B, PREFIX, ot, ok, C929	catalan_validated.
+C1959	Paragraph layout-order on matched folios tracks recipe-phase order. Mean rho=+0.812 across 5 matches (f84r p=0.0005, f86v3 p=0.025). Random-phase noise floor +0.245, effect size 3.2x. Resolves 3-claim distinction: state-coupling absent (C1399/C1400 preserved at corpus scope), operational-interchangeability untested, semantic-layout-ordering EMPIRICALLY SUPPORTED on matches. C1399's "parallel subroutines, not sequential steps" framing was interpretive overreach beyond measurement; phrasings revised. Tier 3.	3	B, paragraph, ordering, recipe-correspondence, C1399, C1400, C845, C1287, C858, C1888	mean_rho=+0.812. n=5. effect=3.2x.
 
 ---
 

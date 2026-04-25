@@ -10,7 +10,9 @@
 
 ## Statement
 
-Terminal physical state (kernel balance, category profile, tail product type) does **NOT** predict the zone of the next paragraph. 0/8 tests positive after disambiguation. The apparent thermal continuity between consecutive paragraphs (raw rho=+0.230) is entirely explained by **folio-level shared thermal environment** — all paragraphs in a folio share similar thermal profiles because they operate under the same REGIME and section, not because heat carries over sequentially. Paragraph ordering within folios is driven by folio-level program theme, not by cross-paragraph physical state chains.
+Terminal physical state (kernel balance, category profile, tail product type) of paragraph N does **NOT** predict the zone of paragraph N+1 across the Currier B corpus. 0/8 tests positive after disambiguation. The apparent thermal continuity between consecutive paragraphs (raw rho=+0.230) is entirely explained by **folio-level shared thermal environment** — all paragraphs in a folio share similar thermal profiles because they operate under the same REGIME and section, not because heat carries over sequentially via state-coupling.
+
+> **SCOPE NOTE (added 2026-04-25, Phase 643):** This finding is a corpus-aggregate state-coupling test. It does **NOT** establish operational interchangeability of paragraphs (whether shuffled paragraph order preserves operational outcome was never tested). It does NOT test whether paragraph layout-order on the page reflects external operational sequence on individual folios. The earlier framing "ordered neither by position nor by state" combined two separate claims; the measurement supports the state-coupling-absence claim only.
 
 ### Disambiguation Evidence
 

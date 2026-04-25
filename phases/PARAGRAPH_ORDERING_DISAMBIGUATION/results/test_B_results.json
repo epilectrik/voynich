@@ -1,0 +1,94 @@
+{
+  "test": "Test B — Layout-Order vs Recipe-Phase-Order Correlation",
+  "n_matches": 5,
+  "mean_rho": 0.8122789025686574,
+  "n_positive_rho": 5,
+  "n_perm_significant": 2,
+  "results": [
+    {
+      "folio": "f75r",
+      "recipe_id": "III.19.0",
+      "n_paragraphs": 3,
+      "rho": 0.8660254037844387,
+      "p_perm": 0.6811594202898551,
+      "phases": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "folio": "f84r",
+      "recipe_id": "II.12.0",
+      "n_paragraphs": 18,
+      "rho": 0.8271701918685112,
+      "p_perm": 0.0004997501249375312,
+      "phases": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "folio": "f78r",
+      "recipe_id": "III.36.0",
+      "n_paragraphs": 8,
+      "rho": 0.5773502691896257,
+      "p_perm": 0.2463768115942029,
+      "phases": [
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "folio": "f86v3",
+      "recipe_id": "II.10.0",
+      "n_paragraphs": 7,
+      "rho": 0.8964214570007951,
+      "p_perm": 0.025487256371814093,
+      "phases": [
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "folio": "f82r",
+      "recipe_id": "III.19.3",
+      "n_paragraphs": 4,
+      "rho": 0.8944271909999159,
+      "p_perm": 0.31384307846076964,
+      "phases": [
+        2,
+        2,
+        3,
+        3
+      ]
+    }
+  ]
+}

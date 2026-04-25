@@ -4,6 +4,46 @@
 
 ---
 
+## Version 6.23 (2026-04-25) - Phase 643: Paragraph Ordering Disambiguation
+
+### Summary
+
+Phase 643 disambiguated three previously-conflated claims about Voynich paragraph independence and registered new evidence. Triggered by a blind reverse-prediction test (Phase 641 follow-up) that exposed an interpretive overreach in C1399's frozen phrasing. Both internal experts conceded the pushback.
+
+### Three-claim distinction
+
+The phrase "paragraph independence" had silently combined three distinct claims:
+
+1. **State-coupling independence** — paragraph-N's terminal state does not predict paragraph-(N+1)'s features. Measured by C1399/C1400 at corpus-aggregate scope. PRESERVED.
+2. **Operational interchangeability** — paragraphs can be executed in any order. ASSERTED BY INTERPRETATION; NOT TESTED.
+3. **Semantic layout-ordering** — paragraph layout-order reflects recipe-phase order on matched folios. NEWLY TESTED.
+
+### Empirical findings (Test B)
+
+Across 5 confirmed-match folios (f75r, f84r, f78r, f86v3, f82r), paragraph layout-position correlates with recipe-phase ordinal at mean Spearman rho = +0.812. Both folios with sufficient permutation power (f84r n=18 p=0.0005, f86v3 n=7 p=0.025) reach individual significance. Random-phase null on 10 unmatched B folios shows mean rho = +0.245 (noise floor). Effect size 3.2x noise floor.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1959 (NEW) | Paragraph layout-order recipe-phase coherence on matched folios. Tier 3. |
+| C1399 (REVISED) | Scope-restricted to corpus-aggregate composition-vs-position measurements. Original measurements preserved. Interpretive phrasing "parallel subroutines, not sequential steps" removed/qualified. |
+| C1400 (REVISED) | Scope-restricted to corpus-aggregate state-coupling. Original measurements preserved. |
+| CLAUDE.md | Version 6.22 → 6.23, constraints 1958 → 1959, phases 641 → 643 |
+| CLAIMS/INDEX.md | Phase 643 entry added |
+
+### Methodology lesson
+
+Test B was decisive because it tested a specific, falsifiable claim (layout-position vs phase-ordinal correlation on matched folios) rather than running another aggregate cross-folio correlation test. Phase 642 (pre-registered gloss correlation tests against Catalan recipe features) returned 0 SUPPORTED / 1 FALSIFIED / 5 INCONCLUSIVE — methodologically dead-ended. Direct line-by-line reading + reverse-prediction is the right shape of test for structural-positional syntax claims.
+
+This methodology lesson is documented in `memory/feedback_read_first_scripts_verify.md`.
+
+### Follow-up flagged
+
+Crazy-expert identified a class of similar suspect constraints potentially showing the same statistical-finding-extended-to-strong-interpretive-claim pattern: C1402, C1403, C1470, C1471, C1576, C1670. A future PHASE_CONSTRAINT_OVERREACH_AUDIT could systematically check these.
+
+---
+
 ## Version 6.22 (2026-04-18) - Phase 642: Brunschwig-Voynich Matching (neutral, informative)
 
 ### Summary

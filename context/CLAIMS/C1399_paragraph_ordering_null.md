@@ -10,7 +10,14 @@
 
 ## Statement
 
-Paragraphs within folios have **no preferred execution ordering**. The 4 operational gradient zones (C1398: THERMAL-QO, CONTAINMENT-Sealing, OPERATION-Iteration, MONITORING-Phase) do not follow a procedural sequence. There is no thermal-first/monitoring-last ramp. All 8 tests for sequential structure fail except the transition matrix (T4), which reveals **zone inertia** (self-transition O/E=2.02) rather than sequential ordering. Folios run consecutive paragraphs of the same operational type, not a progression through different phases.
+Paragraphs within folios show **no preferred execution ordering at the corpus-aggregate level when measured against operational-zone composition**. The 4 operational gradient zones (C1398: THERMAL-QO, CONTAINMENT-Sealing, OPERATION-Iteration, MONITORING-Phase) do not follow a procedural sequence by zone composition. There is no thermal-first/monitoring-last ramp. All 8 tests for sequential structure fail except the transition matrix (T4), which reveals **zone inertia** (self-transition O/E=2.02) rather than sequential ordering. Folios run consecutive paragraphs of the same operational type, not a progression through different phases.
+
+> **SCOPE NOTE (added 2026-04-25, Phase 643):** This finding applies to corpus-aggregate composition-vs-position measurements. It does **NOT** test:
+> - Paragraph layout-order vs external recipe-phase order on matched folios (see C-NEW Phase 643: layout-order tracks recipe-phase on matched folios at rho=+0.81)
+> - Operational interchangeability (whether shuffling paragraph order preserves operational outcome)
+> - Within-individual-folio sequence relative to external referents
+>
+> The "parallel subroutines, not sequential steps" interpretation in the original Phase 511 framing was an interpretive overreach beyond the actual measurements. The statistical core (zone-composition does not predict folio-position at corpus scale) remains valid.
 
 ---
 
@@ -70,17 +77,19 @@ Within every section (B, C, H, S), zone ordinal tests non-significant (all p>0.1
 
 ---
 
-## Interpretation
+## Interpretation (revised 2026-04-25)
 
-Folios are programs with **parallel subroutines of the same type**, not sequential procedures stepping through phases. The zone inertia (self-transition 2.02x) means folios tend to cluster consecutive paragraphs doing the same kind of work — a thermal folio runs mostly thermal paragraphs, a containment folio runs mostly containment paragraphs.
+At the corpus-aggregate composition level, folios do not show a thermal-first/monitoring-last ramp. The zone inertia (self-transition 2.02x) means folios tend to cluster consecutive paragraphs doing the same kind of work — a thermal folio runs mostly thermal paragraphs, a containment folio runs mostly containment paragraphs.
 
 Combined with C1398 (continuous operational gradient) and C1378 (same material across paragraphs):
 - Same material (C1378)
 - Different operational emphases (C1398)
-- No preferred ordering (C1399)
+- No corpus-aggregate composition-vs-position ordering (C1399, scoped)
 - Same-type clustering within folios (zone inertia)
 
-The folio-program specifies WHAT operational concerns to address and HOW MUCH of each, but not in WHAT ORDER. Paragraph sequence is not procedurally meaningful.
+**The folio-program specifies WHAT operational concerns to address and HOW MUCH of each at the composition level. This does not address whether paragraph layout-order on the page reflects external operational sequence (e.g., recipe phases) on individual folios — that is outside this measurement's scope.**
+
+Phase 643 (PARAGRAPH_ORDERING_DISAMBIGUATION) demonstrated empirically that on confirmed-match folios, paragraph layout-order DOES track recipe-phase order (rho=+0.81 across 5 matches). C1399's measurement is preserved; its earlier framing as "parallel subroutines, not sequential steps" was an interpretive overreach now scoped accordingly.
 
 ---
 

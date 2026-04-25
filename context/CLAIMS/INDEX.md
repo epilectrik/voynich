@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1958 validated constraints | **Version:** 6.20 | **Date:** 2026-04-05
+**Total:** 1959 validated constraints | **Version:** 6.21 | **Date:** 2026-04-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 643: Paragraph Ordering Disambiguation — LAYOUT_PHASE_COHERENCE_CONFIRMED (C1959)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1959 | Paragraph layout-order on confirmed-match folios corresponds to recipe-phase order in matched chapter. Mean Spearman rho=+0.812 across 5 matches; f84r p=0.0005, f86v3 p=0.025; effect size 3.2x random-phase noise floor (0.245). Compatible with C1399/C1400 state-coupling-independence at corpus-aggregate scope; falsifies the strong-form interpretive reading "paragraphs are genuinely parallel subroutines, not sequential steps" when applied to individual matched folios. Resolves three-claim distinction: (1) state-coupling absent, (2) operational interchangeability untested, (3) semantic layout-ordering empirically supported on matches. C1399/C1400 phrasings revised to scope-restrict to corpus-aggregate measurements | 3 | B, paragraph, ordering, recipe-correspondence, C1399, C1400, C845, C1287, C858, C1888 | mean_rho=+0.812. n_matches=5. f84r_p=0.0005. f86v3_p=0.025. noise_floor=+0.245. effect_size=3.2x. |
+
+**Phase 643 findings (Paragraph Ordering Disambiguation, LAYOUT_PHASE_COHERENCE_CONFIRMED):**
+- C1399's interpretive phrasing ("paragraphs are genuinely parallel subroutines, not sequential steps") was an overreach beyond the actual measurement (corpus-aggregate state-coupling absence). Both internal experts (expert-advisor, crazy-expert) conceded the pushback.
+- Test B established: across 5 confirmed-match folios, paragraph layout-order tracks recipe-phase order at mean rho=+0.812. Both folios with sufficient permutation power (f84r n=18, f86v3 n=7) reach individual significance.
+- Test F random-phase null: mean rho=+0.245 across 10 unmatched B folios with random phase assignment. Confirmed-match signal is 3.2x noise floor.
+- C1399 and C1400 phrasings revised to scope-restrict to corpus-aggregate state-coupling measurements. Original measurements preserved unchanged.
+- Crazy-expert flagged a class of similar suspect constraints (C1402, C1403, C1470, C1471, C1576, C1670) potentially showing same conflation pattern — worth a future PHASE_CONSTRAINT_OVERREACH_AUDIT.
 
 ---
 
