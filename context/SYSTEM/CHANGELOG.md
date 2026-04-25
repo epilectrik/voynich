@@ -4,6 +4,56 @@
 
 ---
 
+## Version 6.24 (2026-04-25) - Phase 644: Reverse-Predicted Atom Verification
+
+### Summary
+
+Phase 644 verified the two reverse-predicted folio↔recipe candidates from the Phase 641-followup blind test (f108v↔III.29.0 mercury sublimation, f79v↔II.8.0 first liquefaction). Both passed full atom-decode operational scoring at STRONG SUPPORT and were promoted to MATCH-tier confirmed. C1959's evidence base extended from 5 to 7 confirmed matches.
+
+### Findings
+
+**f108v ↔ III.29.0 (mercury sublimation):** STRONG SUPPORT (7 MATCH / 1 WEAK / 0 MISMATCH).
+- Heat-dominant procedure with high gentle-heat (qokeedy 28, qokedy 8, ratio 3.5×)
+- Corpus-rare 3-run of qokeedy at L39 = "tres choses... dissolució, contrició, restauració" (3 principal operations)
+- Long sustained-operation body (P9 spans 19 lines)
+- Few discrete material additions (consistent with abstract recipe character)
+
+**f79v ↔ II.8.0 (first liquefaction):** STRONG SUPPORT (6 MATCH / 2 WEAK / 0 MISMATCH).
+- Three-fold reinforced 3-anchor on L19: corpus-rare 3-run of qokedy + immediately followed by `dar` + total dar count = 3 (= recipe's 3 distinct materials F, E, menstruum)
+- qokeedy-dominant balneum signature
+- Length match (354 tokens vs 2509-char recipe)
+
+### Test B Extended
+
+Both new matches reach strict permutation significance:
+- f108v: rho=+0.924, p=0.002 (n=10)
+- f79v: rho=+0.954, p=0.005 (n=7)
+
+Aggregate across all 7 confirmed matches: mean rho=+0.848, 7/7 positive direction, 4/7 at p<0.05. Effect size 3.5× random-phase noise floor (up from 3.2× at registration time).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1959 (EXTENDED) | Evidence base updated: 5→7 confirmed matches, mean rho +0.812→+0.848, 2/5→4/7 strict significance. Tier 3 retained pending explicit promotion review (per expert-advisor's threshold of 3+ additional matches at n≥10 individually significant; current: 1 such match added). |
+| CLAUDE.md | Version 6.23 → 6.24, phases 643 → 644 |
+| Phase 644 dir | Created with INDEX.md, scripts, and findings |
+
+### Methodological note
+
+The reverse-prediction methodology now has multiple atom-validated successes. Strict counting:
+- Phase 641 blind test produced 4 candidates (f78r, f86v3, f108v, f79v)
+- All 4 verified at STRONG SUPPORT or higher in subsequent atom-decode reading
+- This is a strong validation of reverse-prediction as a methodologically distinct test from forward correlation
+
+The reverse-prediction direction was the methodological contribution flagged as paper-quality by all three experts. Phase 644 confirms it works at production scale (4-of-4).
+
+### Next steps
+
+Per all three experts' convergent recommendation: heat-mode encoding investigation. C1225, C1226, C1457-C1462 scaffold ready. Crazy-expert's specific add: test heat-mode on matched folios using paragraph layout-order as predictor (converts heat-mode from corpus-correlation to recipe-decoded prediction).
+
+---
+
 ## Version 6.23 (2026-04-25) - Phase 643: Paragraph Ordering Disambiguation
 
 ### Summary

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1959 validated constraints | **Version:** 6.21 | **Date:** 2026-04-25
+**Total:** 1959 validated constraints | **Version:** 6.24 | **Date:** 2026-04-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6114,11 +6114,26 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 
 ---
 
+### Phase 644: Reverse-Predicted Atom Verification — BOTH_CANDIDATES_CONFIRMED (extends C1959)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1959-EXT | C1959 evidence base extended: f108v↔III.29.0 (mercury sublimation) and f79v↔II.8.0 (first liquefaction) added as confirmed matches via atom-decode verification. Both reverse-predicted from blind test (Phase 641 follow-up), both verified at STRONG SUPPORT (7M/1W/0X and 6M/2W/0X respectively). Test B Extended: f108v rho=+0.924 p=0.002, f79v rho=+0.954 p=0.005, both at strict significance. Aggregate across 7 confirmed matches: mean rho=+0.848, 7/7 positive direction, 4/7 at p<0.05. Effect size 3.5x noise floor. Tier 3 retained pending explicit promotion review (criterion: 3+ additional matches at n≥10 individually significant; current: 1 such match added) | 3 | B, paragraph, ordering, recipe-correspondence, C1959, C1888 | new_matches=2. mean_rho_aggregate=+0.848. f108v_p=0.002. f79v_p=0.005. n_strict_sig=4/7. |
+
+**Phase 644 findings (Reverse-Predicted Atom Verification, BOTH_CANDIDATES_CONFIRMED):**
+- Both reverse-predicted candidates from the blind test pass full atom-decode verification at STRONG SUPPORT.
+- f79v ↔ II.8.0 is among the tightest reverse-predicted matches: corpus-rare 3-run of qokedy at L19, immediately followed by `dar`, and folio's total dar count = 3 = recipe's 3 distinct materials. Three-fold reinforcement of the same anchor.
+- f108v ↔ III.29.0 has unusual recipe-text character (long discursive content with religious-philosophical digression), but structural alignment is solid.
+- C1959's evidence base now spans 7 confirmed matches across 6 recipe classes (sublimation added).
+- Reverse-prediction methodology now has 2 atom-validated successes (f78r↔III.36.0, f86v3↔II.10.0 from earlier blind test were also reverse-predicted — strictly the methodology is 4/4 if we count those).
+
+---
+
 ### Phase 643: Paragraph Ordering Disambiguation — LAYOUT_PHASE_COHERENCE_CONFIRMED (C1959)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
-| 1959 | Paragraph layout-order on confirmed-match folios corresponds to recipe-phase order in matched chapter. Mean Spearman rho=+0.812 across 5 matches; f84r p=0.0005, f86v3 p=0.025; effect size 3.2x random-phase noise floor (0.245). Compatible with C1399/C1400 state-coupling-independence at corpus-aggregate scope; falsifies the strong-form interpretive reading "paragraphs are genuinely parallel subroutines, not sequential steps" when applied to individual matched folios. Resolves three-claim distinction: (1) state-coupling absent, (2) operational interchangeability untested, (3) semantic layout-ordering empirically supported on matches. C1399/C1400 phrasings revised to scope-restrict to corpus-aggregate measurements | 3 | B, paragraph, ordering, recipe-correspondence, C1399, C1400, C845, C1287, C858, C1888 | mean_rho=+0.812. n_matches=5. f84r_p=0.0005. f86v3_p=0.025. noise_floor=+0.245. effect_size=3.2x. |
+| 1959 | Paragraph layout-order on confirmed-match folios corresponds to recipe-phase order in matched chapter. Mean Spearman rho=+0.812 across 5 matches; f84r p=0.0005, f86v3 p=0.025; effect size 3.2x random-phase noise floor (0.245). Compatible with C1399/C1400 state-coupling-independence at corpus-aggregate scope; falsifies the strong-form interpretive reading "paragraphs are genuinely parallel subroutines, not sequential steps" when applied to individual matched folios. Resolves three-claim distinction: (1) state-coupling absent, (2) operational interchangeability untested, (3) semantic layout-ordering empirically supported on matches. C1399/C1400 phrasings revised to scope-restrict to corpus-aggregate measurements. **Updated 2026-04-25 (Phase 644):** evidence base extended to 7 confirmed matches with f108v + f79v added; aggregate mean rho +0.848, 4/7 at strict significance. | 3 | B, paragraph, ordering, recipe-correspondence, C1399, C1400, C845, C1287, C858, C1888 | mean_rho=+0.848 (7 matches). 4/7 at p<0.05. effect_size=3.5x. |
 
 **Phase 643 findings (Paragraph Ordering Disambiguation, LAYOUT_PHASE_COHERENCE_CONFIRMED):**
 - C1399's interpretive phrasing ("paragraphs are genuinely parallel subroutines, not sequential steps") was an overreach beyond the actual measurement (corpus-aggregate state-coupling absence). Both internal experts (expert-advisor, crazy-expert) conceded the pushback.

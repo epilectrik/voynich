@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-25 10:33
+**Generated:** 2026-04-25 11:11
 **Version:** FROZEN STATE (1959 validated constraints, 75 fits) [COMPACT]
 
 ---

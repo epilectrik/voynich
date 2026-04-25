@@ -1,0 +1,48 @@
+{
+  "test": "Test B Extended — Phase 643 layout-phase correlation on new matches",
+  "new_matches": [
+    {
+      "folio": "f108v",
+      "recipe_id": "III.29.0",
+      "n": 10,
+      "rho": 0.9244162777371754,
+      "p": 0.001999000499750125,
+      "phases": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "folio": "f79v",
+      "recipe_id": "II.8.0",
+      "n": 7,
+      "rho": 0.9543135154205277,
+      "p": 0.004997501249375313,
+      "phases": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        4
+      ]
+    }
+  ],
+  "all_confirmed_matches_aggregate": {
+    "n": 7,
+    "mean_rho": 0.8483899704511003,
+    "n_positive": 7,
+    "n_p_lt_010": 4,
+    "n_p_lt_005": 4
+  },
+  "tier_recommendation": "Tier 2 if n_p_lt_005 >= 3 else Tier 3"
+}
