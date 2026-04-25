@@ -4,6 +4,58 @@
 
 ---
 
+## Version 6.25 (2026-04-25) - Phase 645: Paragraph Heat-Mode Progression
+
+### Summary
+
+Phase 645 tested whether per-paragraph heat metrics on confirmed-match folios track the matched recipe's expected fire-degree progression. Predictions LOCKED before metric computation (pre-registration discipline). Mixed result: scope-limited support, no new constraint registered.
+
+### Findings
+
+**Aggregate across 7 confirmed matches:**
+- Best metric `qok_class_frac` (heat-token density per paragraph): mean rho = +0.484
+- 5/7 positive direction, 1/7 strict significance (p<0.05)
+- Below threshold for stand-alone constraint registration
+
+**Strong individual results:**
+- f84r ↔ II.12.0: rho=+0.983, p=0.001 on three metrics. The 12-spec / 5-body / 1-closure structure shows clean heat-density contrast.
+- f82r ↔ III.19.3: balneum_score rho=+1.000, p=0.082 (n=4). Setup → cendres → bath progression shown in qokeedy/qokedy ratio.
+
+**Null on uniform-heat recipes:**
+- f108v ↔ III.29.0 (sublimation = "longues e lentes decoccions" uniform throughout)
+- f75r ↔ III.19.0 (mostly balneum throughout)
+- f79v ↔ II.8.0 (sustained balneum × 3 days)
+
+These nulls are methodological: my predictions assumed all recipes have heat-progression, but uniform-heat recipes can't show progression-encoding because there's nothing to progress.
+
+### Scope-limited finding
+
+Heat-progression encoding holds where recipes have distinct heat-phase differences; absent where recipes are heat-uniform throughout. Genuine effect on the right subset (f84r, f82r) but not universal.
+
+### Decision
+
+**HOLD on constraint registration.** Mixed result with 1/7 strict significance is below threshold. Document in phase findings; consider Phase 645b refinement on heat-phase-distinct subset only.
+
+### Methodology lesson
+
+Pre-registration discipline worked: locked predictions before computing metrics. The null on uniform-heat recipes is honest, not retrofittable. A refined version would pre-classify recipes by heat-uniformity and test only on the heat-progression subset.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| Phase 645 dir | Created with predictions, scripts, findings |
+| CLAUDE.md | Version 6.24 → 6.25, phases 644 → 645 |
+
+### Next investigation candidates
+
+- Vessel-state grammar (ok/ot/or/ol 4-axis hypothesis per crazy-expert)
+- Material-class encoding (dar/dal/daiin distinctions)
+- Reverse-direction test (find OTHER folios matching confirmed recipe signatures)
+- Constraint overreach audit (C1576 specifically per crazy-expert)
+
+---
+
 ## Version 6.24 (2026-04-25) - Phase 644: Reverse-Predicted Atom Verification
 
 ### Summary
