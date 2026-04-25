@@ -31,7 +31,7 @@ For each confirmed-match folio, each paragraph was assigned a recipe-phase ordin
 | f78r | III.36.0 (mercury congelation) | 8 | +0.577 | 0.246 | underpowered |
 | f82r | III.19.3 (lunaria 3-day sealed) | 4 | +0.894 | 0.314 | underpowered |
 
-### Extended evidence (REVERSE_PREDICTED_ATOM_VERIFICATION — Test B Extended)
+### Extended evidence (Phase 644 REVERSE_PREDICTED_ATOM_VERIFICATION — Test B Extended)
 
 Two additional confirmed matches added 2026-04-25 (reverse-predicted from blind test, then atom-decode verified at STRONG SUPPORT):
 
@@ -40,14 +40,25 @@ Two additional confirmed matches added 2026-04-25 (reverse-predicted from blind 
 | f108v | III.29.0 (mercury sublimation) | 10 | +0.924 | **0.0020** | ✓★ |
 | f79v | II.8.0 (first liquefaction) | 7 | +0.954 | **0.0050** | ✓★ |
 
-### Aggregate across all 7 confirmed matches
+### Further extension (Phase 646 RECIPE_REVERSE_FOLIO_SEARCH)
 
-- **Mean rho: +0.848**
-- All 7 folios show positive direction (7/7)
-- **4 folios reach strict significance (perm p < 0.05):** f84r, f86v3, f108v, f79v
+One additional confirmed match added 2026-04-25 via reverse-direction signature search (recipe → folio):
+
+| Folio | Match | n_paragraphs | rho | perm p | Significant? |
+|-------|-------|:---:|:---:|:---:|:-:|
+| f77r | III.28.0 (4-element temperament) | 13 | +0.861 | **0.0005** | ✓★ |
+
+f77r has within-line 4-clusters at L11 and L34 matching recipe's `.iiii. elements`. 4 paragraph-initial line-starts at L1-L4 form a 4-element specification block. Recipe is theoretical-exposition + operational iteration; folio profile is high-qokeedy + low-dar matching the abstract recipe character. Atom-decode score: 7 MATCH / 1 WEAK / 0 MISMATCH = STRONG SUPPORT.
+
+### Aggregate across all 8 confirmed matches
+
+- **Mean rho: ~+0.85**
+- All 8 folios show positive direction (8/8)
+- **5 folios reach strict significance (perm p < 0.05):** f84r, f86v3, f108v, f79v, f77r
+- **3 folios at n≥10 reach strict significance:** f84r (n=18), f108v (n=10), f77r (n=13)
 - Random-phase null mean rho = +0.245 (Test F subtest c, n=10 unmatched B folios with random phase assignments)
 
-**Effect size: ~3.5x noise floor (0.848 / 0.245).**
+**Effect size: ~3.5x noise floor.**
 
 ---
 

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1959 validated constraints | **Version:** 6.24 | **Date:** 2026-04-25
+**Total:** 1959 validated constraints | **Version:** 6.26 | **Date:** 2026-04-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,20 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 646: Recipe Reverse-Folio Search — ONE_NEW_MATCH_CONFIRMED (extends C1959)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1959-EXT2 | C1959 evidence base extended further: f77r↔III.28.0 (4-element temperament theoretical exposition + iteration) added as confirmed match via reverse-direction signature search. f77r has within-line 4-clusters at L11 and L34 matching recipe's `.iiii. elements` + 4 paragraph-initial line-starts at L1-L4 forming 4-element specification block. Atom-decode 7M/1W/0X = STRONG SUPPORT. Test B rho=+0.861 p=0.0005 (n=13). C1959 evidence aggregate now: 8 confirmed matches across 7 recipe classes, 5/8 strict significance, 3/8 at n≥10 strict-sig (f84r, f108v, f77r). Tier 3 retained pending explicit Tier 2 promotion review (need 1 more n≥10 strict-sig for strict threshold). | 3 | B, paragraph, ordering, recipe-correspondence, C1959, C1888 | new_matches=1. f77r_rho=+0.861. f77r_p=0.0005. n_sig_total=5/8. n_sig_at_n_ge_10=3. |
+
+**Phase 646 findings (Recipe Reverse-Folio Search, ONE_NEW_MATCH_CONFIRMED):**
+- Reverse-direction methodology validated: scanning unmatched folios for closest-template structural signatures and verifying via atom-decode + Test B yields new confirmed matches.
+- f77r's 4-cluster anchors map cleanly to III.28.0's 4-element framework. Recipe is theoretical exposition (similar character to III.29.0); folio profile (high qokeedy, low dar) matches the abstract recipe character.
+- Other reverse-scan candidates (f104v, f114r, f105v, f114v, f105r) clustered near II.10.0 template by general signature similarity but lacked distinctive count anchors — confirming that distinctive count anchors (not generic profile match) drive successful confirmations.
+- Bidirectional methodology now established: (a) folio→recipe forward prediction (Phases 641+644), (b) recipe→folio reverse search (Phase 646). Both directions produce strict-significant confirmations.
 
 ---
 

@@ -4,6 +4,50 @@
 
 ---
 
+## Version 6.26 (2026-04-25) - Phase 646: Recipe Reverse-Folio Search
+
+### Summary
+
+Phase 646 ran a reverse-direction match search: for each confirmed-match folio (treated as template), found unmatched B folios with the closest structural signature, then verified the top candidate via raw-line reading + Test B. f77r ↔ III.28.0 emerged as a new confirmed match. Total confirmed matches: 7 → 8.
+
+### Findings
+
+**f77r ↔ III.28.0 (4-element temperament): NEW CONFIRMED MATCH**
+- Recipe: theoretical chapter on the stone's existence across 4 elements (earth, water, air, fire)
+- Anchor: within-line 4-clusters of qok-class at L11 and L34, plus 4 paragraph-initial line-starts at L1-L4 forming a 4-element specification block
+- Atom-decode score: 7 MATCH / 1 WEAK / 0 MISMATCH = STRONG SUPPORT
+- Test B: rho=+0.861, p=0.0005 (n=13) — strict significance
+
+### C1959 evidence base extended
+
+- Confirmed matches: 7 → 8 (across 7 distinct recipe classes)
+- Strict significance (p<0.05): 4/7 → 5/8
+- n≥10 individually-significant folios: 2 → 3 (f84r n=18, f108v n=10, f77r n=13)
+- Mean rho: ~+0.85
+- 8/8 positive direction
+
+### Tier 2 promotion threshold
+
+Per expert-advisor's "3+ additional confirmed-match folios with n≥10 paragraphs reach individual significance," the additional-at-n≥10 count is now 2 (f108v + f77r) beyond original baseline (f84r). One more such match would meet the strict threshold. C1959 retained at Tier 3 pending explicit promotion review.
+
+### Other reverse-scan candidates (deferred)
+
+f104v (closest by signature distance) had only a 3-run of `sheol` (sh-prefix monitor token, not heat) — unusual anchor type without clean recipe-count fit. f114r, f105v, f114v etc. clustered near II.10.0 template by general signature similarity but lacked distinctive count anchors. The reverse-scan demonstrates that distinctive count anchors (not generic similarity) drive successful matches.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| Phase 646 dir | Created with reverse_scan, verify_top_candidates, verify_f77r, test_B_f77r |
+| C1959 (EXTENDED) | Evidence base updated with f77r addition |
+| CLAUDE.md | Version 6.25 → 6.26, phases 645 → 646 |
+
+### Methodology validation
+
+Reverse-direction search is a meaningful extension of the methodology. Bidirectional alignment now established: (a) folio-anchor → recipe (forward, Phase 641 + 644), and (b) recipe-template → folio (reverse, Phase 646). Both directions produce confirmed matches at strict significance.
+
+---
+
 ## Version 6.25 (2026-04-25) - Phase 645: Paragraph Heat-Mode Progression
 
 ### Summary
