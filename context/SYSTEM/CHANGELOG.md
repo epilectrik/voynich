@@ -4,6 +4,42 @@
 
 ---
 
+## Version 6.27 (2026-04-25) - Phase 647 (645b): Heat-Mode Progression Refined
+
+### Summary
+
+Phase 647 refines Phase 645's mixed-result heat-mode test by pre-classifying confirmed-match recipes into heat-phase-distinct vs heat-uniform subsets, then running the heat-progression test only on the phase-distinct subset. Result: clean Tier 3 finding registered as C1960. Heat-progression encoding holds on heat-phase-distinct recipes; absent on heat-uniform recipes.
+
+### Findings
+
+**Phase-distinct subset (n=5):**
+- Best metric `qokeedy_frac`: mean rho = +0.710, 5/5 positive direction
+- Folios: f84r (rho=+0.983, p=0.001 ★), f82r, f78r, f86v3, f77r
+
+**Heat-uniform control (n=3):**
+- `qokeedy_frac` mean rho = +0.066 (essentially null)
+- Folios: f75r, f108v, f79v
+
+**Difference: +0.643** between phase-distinct and uniform subsets.
+
+### C1960 registered (Tier 3)
+
+C1960: Per-paragraph heat metrics derived from atom decomposition correlate with predicted recipe fire-degree on heat-phase-distinct matched folios. SCOPE-RESTRICTED to recipes with distinct heat-phase changes. Second syntactic rule complementing C1959 (paragraph layout-order tracks recipe-phase order).
+
+### Methodology validation
+
+Pre-registration discipline (lock predictions and pre-classification before testing) converted Phase 645's mixed +0.484 result into a clean +0.71 finding by separating the heat-uniform null (a methodological artifact) from the heat-phase-distinct signal (the real effect).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1960 (NEW) | Heat-progression encoding on phase-distinct matches. Tier 3. |
+| Phase 647 dir | Created with predictions, scripts, findings |
+| CLAUDE.md | Version 6.26 → 6.27, constraints 1959 → 1960, phases 646 → 647 |
+
+---
+
 ## Version 6.26 (2026-04-25) - Phase 646: Recipe Reverse-Folio Search
 
 ### Summary

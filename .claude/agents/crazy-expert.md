@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1706 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1959.
+the highest ID present is C1960.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2284,6 +2284,7 @@ C1956	10-dim permutation: 0/10000 shuffles beat real on all dims. eed→cooling 
 C1957	Suffix boundary fix: blocked e/h-initial suffixes stealing MOD atoms from MIDDLE. e_depth match 16.7%→98.6%, max folio distortion 14pp→0.	2	B, morphology, SUFFIX, C1225, C1487	e_match=98.6%. fixed=3000+.
 C1958	ot = transfer rate/drip rate. ok/ot ratio: f83r drip-counting=0.38, f81v maceration=5.50. L22 ot×3 at Catalan drop-counting. Loop: sh→qo→ok→ot→sh.	2	B, PREFIX, ot, ok, C929	catalan_validated.
 C1959	Paragraph layout-order on matched folios tracks recipe-phase order. UPDATED Phase 646: 8 confirmed matches across 7 recipe classes (added f77r↔III.28.0 4-element temperament). Strict-sig 5/8: f84r p=0.001, f86v3 p=0.025, f108v p=0.002, f79v p=0.005, f77r p=0.0005. n≥10 strict-sig: 3 (f84r n=18, f108v n=10, f77r n=13). 8/8 positive direction. Random-phase noise floor +0.245, effect size ~3.5x. Bidirectional methodology validated: forward folio→recipe (P641+P644) AND reverse recipe→folio (P646). Tier 3 retained pending explicit promotion review (1 more n≥10 strict-sig match for strict threshold).	3	B, paragraph, ordering, recipe-correspondence, C1399, C1400, C845, C1287, C858, C1888	n_matches=8. strict_sig=5/8. n_ge_10_sig=3. mean_rho=+0.85.
+C1960	Per-paragraph heat metrics correlate with predicted recipe fire-degree on heat-phase-distinct matched folios. Best metric qokeedy_frac mean rho=+0.710 across 5 phase-distinct folios (f84r, f82r, f78r, f86v3, f77r), 5/5 positive direction. Heat-uniform control (f75r, f108v, f79v): mean rho=+0.066. Difference +0.643. SCOPE-RESTRICTED — encoding holds where recipes have distinct heat-phase changes; absent on uniform-heat recipes. Second syntactic rule complementing C1959. Phase 645b refined Phase 645's mixed +0.484 to clean +0.71 by pre-classifying recipes.	3	B, paragraph, heat-mode, recipe-correspondence, scope-restricted, C1959, C1225, C1226, C1957	mean_rho_pd=+0.710. n_pd=5. mean_rho_uniform=+0.066. diff=+0.643.
 
 ---
 

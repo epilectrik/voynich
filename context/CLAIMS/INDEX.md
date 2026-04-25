@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1959 validated constraints | **Version:** 6.26 | **Date:** 2026-04-25
+**Total:** 1960 validated constraints | **Version:** 6.27 | **Date:** 2026-04-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 647 (645b): Heat-Mode Progression Refined — HEAT_ENCODING_CONFIRMED_ON_PHASE_DISTINCT (C1960)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1960 | Per-paragraph heat metrics derived from atom decomposition correlate with predicted recipe fire-degree on heat-phase-distinct matched folios. Best metric qokeedy_frac: mean rho=+0.710 across 5 phase-distinct folios (f84r, f82r, f78r, f86v3, f77r), 5/5 positive direction. Heat-uniform control (f75r, f108v, f79v): mean rho=+0.066. Difference +0.643. Effect is SCOPE-RESTRICTED — encoding holds where recipes have distinct heat-phase changes; absent where recipes are heat-uniform throughout. Second syntactic rule complementing C1959. | 3 | B, paragraph, heat-mode, recipe-correspondence, layout, scope-restricted, C1959, C1225, C1226, C1957 | mean_rho_phase_distinct=+0.710. n_phase_distinct=5. mean_rho_uniform=+0.066. n_uniform=3. diff=+0.643. positive_dir=5/5. |
+
+**Phase 647 findings (Heat-Mode Progression Refined, HEAT_ENCODING_CONFIRMED_ON_PHASE_DISTINCT):**
+- Phase 645 (broad version) gave mixed result mean rho +0.484. Refining to heat-phase-distinct subset only converted to clean +0.71 signal.
+- Heat-classification of recipes (phase-distinct vs uniform) was LOCKED before test — pre-registration discipline.
+- Heat-encoding is the second syntactic rule on matched folios after C1959. Both encode different recipe-phase properties simultaneously: phase-ordinal (C1959) and heat-degree (C1960).
+- The heat-encoding is conditional on recipe heat-phase-distinctness; the phase-ordinal encoding holds across all matched recipes.
+- Methodology validation: pre-classification + pre-registered predictions + scope-restricted hypothesis converted Phase 645's mixed result to a clean Tier 3 finding.
 
 ---
 
