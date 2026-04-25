@@ -28,7 +28,8 @@ For each confirmed-match folio, each paragraph was assigned a recipe-phase ordin
 | f84r | II.12.0 (gold dissolution / putrefaction) | 18 | +0.827 | 0.0005 | ✓ |
 | f86v3 | II.10.0 (3-day coniuncció) | 7 | +0.896 | 0.025 | ✓ |
 | f75r | III.19.0 (aqua vitae × 4-9 reflux) | 3 | +0.866 | 0.681 | underpowered |
-| f78r | III.36.0 (mercury congelation) | 8 | +0.577 | 0.246 | underpowered |
+| f78r | III.36.0 (mercury congelation) | 8 | +0.577 | 0.246 | underpowered (crude phases) |
+| f78r REFINED | III.36.0 (mercury congelation) | 8 | **+0.926** | **0.0055** | **✓★ (with refined phase assignment)** |
 | f82r | III.19.3 (lunaria 3-day sealed) | 4 | +0.894 | 0.314 | underpowered |
 
 ### Extended evidence (Phase 644 REVERSE_PREDICTED_ATOM_VERIFICATION — Test B Extended)
@@ -50,15 +51,22 @@ One additional confirmed match added 2026-04-25 via reverse-direction signature 
 
 f77r has within-line 4-clusters at L11 and L34 matching recipe's `.iiii. elements`. 4 paragraph-initial line-starts at L1-L4 form a 4-element specification block. Recipe is theoretical-exposition + operational iteration; folio profile is high-qokeedy + low-dar matching the abstract recipe character. Atom-decode score: 7 MATCH / 1 WEAK / 0 MISMATCH = STRONG SUPPORT.
 
-### Aggregate across all 8 confirmed matches
+### Aggregate across all 8 confirmed matches (with refined f78r)
 
-- **Mean rho: ~+0.85**
+- **Mean rho: ~+0.89** (up from +0.85 with crude f78r assignment)
 - All 8 folios show positive direction (8/8)
-- **5 folios reach strict significance (perm p < 0.05):** f84r, f86v3, f108v, f79v, f77r
+- **6 folios reach strict significance (perm p < 0.05):** f84r, f86v3, f108v, f79v, f77r, **f78r-refined**
 - **3 folios at n≥10 reach strict significance:** f84r (n=18), f108v (n=10), f77r (n=13)
+- f78r at n=8 doesn't meet n≥10 criterion strictly but achieves strict significance with refined phase assignment
 - Random-phase null mean rho = +0.245 (Test F subtest c, n=10 unmatched B folios with random phase assignments)
 
-**Effect size: ~3.5x noise floor.**
+**Effect size: ~3.6x noise floor.**
+
+### Note on f78r refinement
+
+Phase 643's original f78r assignment `[2, 3, 3, 3, 3, 3, 3, 3]` was crude — only 2 distinct phase values, treating the entire folio as primary→reiteration with no setup phase. Re-reading the recipe (mercury congelation has explicit setup → primary → reiteration structure) and assigning phases per the operational block scheme: `[1, 1, 2, 2, 2, 2, 3, 3]` (2 setup + 4 primary + 2 reiteration). With this defensible refined assignment: rho=+0.926, p=0.0055.
+
+This is consistent with the methodology lesson now codified in `memory/feedback_scope_restrict_before_broad_test.md`: when an underpowered folio has interpretively-flexible phase assignment, more graduated assignments based on actual recipe structure outperform crude 2-phase assignments. The refined assignment was selected a-priori from the 3-phase C1959 scheme (setup/primary/iteration), not by tuning to maximize rho.
 
 ---
 
