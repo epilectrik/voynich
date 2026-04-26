@@ -1,9 +1,18 @@
 # Phase 657: Numerical Cycle-Anchor Specificity Test (Stage B of Catalan utilization)
 
 **Phase:** 657
-**Status:** PRE-REGISTERED — methodology locked, test pending
+**Status:** COMPLETE — VERDICT NULL (T1 INCONCLUSIVE; T3 NOT CONFIRMED)
 **Started:** 2026-04-26
 **Depends on:** Phase 656 (CONNECTIVE_CORPUS.json)
+
+## Result summary
+
+- **T1 matched-pair specificity:** 2/4 raw matches, p=0.49. After triviality filter (N=3 trivial at 78% folio coverage): 1/3 non-trivial matches. INCONCLUSIVE.
+- **T3 f75r over-determination:** NOT CONFIRMED. Under the locked prefix-class cluster definition, f75r has neither a size-4 nor a size-9 qok-cluster. The L13 run is size 5 (qokain shares qok class); the L37-L38 sequence splits at `lol`.
+- **Striking byproduct:** N=9 is corpus-impossible — no Currier B folio has any same-prefix-class cluster of size 9 (max=7). Any Catalan ×9 must be encoded outside single-cluster mechanisms.
+- **No constraint changes.** f75r ↔ III.19 remains CONFIRMED at the original 5 independent levels.
+
+See `results/FINDINGS.md` for full detail and methodological lessons.
 
 ---
 

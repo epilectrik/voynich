@@ -1,0 +1,164 @@
+{
+  "phase": 657,
+  "stage": "B",
+  "script": "s3",
+  "pre_registration_commit": "7227532",
+  "s1_commit": "79e146f",
+  "s2_commit": "74dddf7",
+  "n_primary_items": 4,
+  "n_control_items": 4,
+  "T1_matched_pair_specificity": {
+    "observed_matches": 2,
+    "observed_proportion": 0.5,
+    "null_n_perm": 10000,
+    "null_mean": 1.5061,
+    "null_p_value_one_sided": 0.4939,
+    "null_histogram": {
+      "0": 879,
+      "1": 4182,
+      "2": 3938,
+      "3": 1001,
+      "4": 0
+    },
+    "per_item_results": [
+      {
+        "subrecipe_id": "III.11.0",
+        "count": 3,
+        "matched_folio": "f112r",
+        "has_cluster_of_size_N": true
+      },
+      {
+        "subrecipe_id": "III.19.0",
+        "count": 4,
+        "matched_folio": "f75r",
+        "has_cluster_of_size_N": false
+      },
+      {
+        "subrecipe_id": "III.19.0",
+        "count": 9,
+        "matched_folio": "f75r",
+        "has_cluster_of_size_N": false
+      },
+      {
+        "subrecipe_id": "III.28.0",
+        "count": 4,
+        "matched_folio": "f82v",
+        "has_cluster_of_size_N": true
+      }
+    ]
+  },
+  "T2_negative_control": {
+    "control_results": [
+      {
+        "subrecipe_id": "II.17.0",
+        "count": 7,
+        "n_folios_with_size_N": 1,
+        "total_folios": 82,
+        "pct_folios_with_size_N": 1.2195121951219512,
+        "trivial_threshold_exceeded": false
+      },
+      {
+        "subrecipe_id": "II.20.0",
+        "count": 3,
+        "n_folios_with_size_N": 64,
+        "total_folios": 82,
+        "pct_folios_with_size_N": 78.04878048780488,
+        "trivial_threshold_exceeded": true
+      },
+      {
+        "subrecipe_id": "III.17.0",
+        "count": 6,
+        "n_folios_with_size_N": 3,
+        "total_folios": 82,
+        "pct_folios_with_size_N": 3.658536585365854,
+        "trivial_threshold_exceeded": false
+      },
+      {
+        "subrecipe_id": "III.29.0",
+        "count": 3,
+        "n_folios_with_size_N": 64,
+        "total_folios": 82,
+        "pct_folios_with_size_N": 78.04878048780488,
+        "trivial_threshold_exceeded": true
+      }
+    ],
+    "primary_count_triviality": {
+      "3": {
+        "n_folios_with_size_N": 64,
+        "pct": 78.04878048780488,
+        "trivial": true
+      },
+      "4": {
+        "n_folios_with_size_N": 30,
+        "pct": 36.58536585365854,
+        "trivial": false
+      },
+      "9": {
+        "n_folios_with_size_N": 0,
+        "pct": 0.0,
+        "trivial": false
+      }
+    }
+  },
+  "T3_f75r_over_determination": {
+    "pre_registered_test": "f75r unique with qok-cluster sizes {4 AND 9}",
+    "matching_folios_strict": [],
+    "verdict": "NOT CONFIRMED (f75r does not contain both size-4 and size-9 qok-clusters)",
+    "descriptive_variants_NOT_in_pre_reg": {
+      "folios_with_qok_size_5": [
+        "f103r",
+        "f75r"
+      ],
+      "folios_with_two_qok_size_5": [
+        "f75r"
+      ],
+      "qok_token_totals_top10": [
+        [
+          "f108r",
+          18
+        ],
+        [
+          "f75r",
+          13
+        ],
+        [
+          "f108v",
+          12
+        ],
+        [
+          "f77r",
+          10
+        ],
+        [
+          "f107v",
+          9
+        ],
+        [
+          "f75v",
+          9
+        ],
+        [
+          "f111v",
+          6
+        ],
+        [
+          "f112r",
+          6
+        ],
+        [
+          "f76r",
+          6
+        ],
+        [
+          "f80r",
+          6
+        ]
+      ]
+    }
+  },
+  "final_verdict": {
+    "T1_specificity": "INCONCLUSIVE",
+    "T3_over_determination": "NOT CONFIRMED (f75r does not contain both size-4 and size-9 qok-clusters)",
+    "note": "Locked exact-cluster definition produces no size-9 qok-cluster on f75r (interrupted by lol). f75r L13 qok-cluster is size 5, not 4 (qokain shares qok class with the 4 qokedy tokens). These are honest consequences of the pre-registered methodology."
+  }
+}
