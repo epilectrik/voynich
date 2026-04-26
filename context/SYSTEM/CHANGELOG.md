@@ -4,6 +4,64 @@
 
 ---
 
+## Version 6.28 (2026-04-25) - Phase 648: Vessel-State 4-Axis Recipe Validation
+
+### Summary
+
+Phase 648 promotes the four o-prefixes (ok, ot, ol, or) from category-level glosses (per C1316/C1388) to specific physical-channel readings, derived from reading SISMEL Catalan recipe text for the 16 matched folios. Tests a user-proposed folio-level fire-side / vessel-side architecture distinct from the registered token-scope QO-lane / CHSH-lane partition. Both findings registered: C1961 (Tier 2) and C1962 (Tier 3).
+
+### Findings
+
+**Refined channel definitions (C1962, Tier 3):**
+- ol = vessel-content state monitoring (which vessel holds what, batch identity, vessel role)
+- ot = material transfer / addition / iteration cycles (broadens C1958 drip-rate)
+- ok = thermal regime / fire-degree state on contents
+- or = outcome / completion state (per C539 LATE positional class; weakest gloss, no matched recipes)
+
+**Within-sample fit:** 16/16 top-1 (100%); 7/16 top-2 strict (43.8% vs 17% random). All four o-prefixes positionally uniform within paragraphs (early/base 0.75–1.13×) — falsifies alternative ol-as-setup-phase reading.
+
+**Folio-level fire-side / vessel-side architecture (C1961, Tier 2):**
+- Mean cross-block correlation: −0.232 (anti-correlated)
+- Folio differential: +0.295 (n=82, p=0.058 borderline)
+- **Paragraph differential: +0.131 (n=466, p=0.024)** — survives at PREFIX-load-bearing scale per C1811-C1812
+- Survives 3/4 sections (B p=0.015, H p=0.027, S p=0.018; C directional)
+- Survives 3/4 regimes (R3 p=0.011, R4 p=0.025, R1 directional); **REGIME_2 fails directionally (n=32, low-link)** — documented scope exception
+- The bridge: qo↔ol = +0.29 (heat application correlates with vessel-state change, the only positive cross-block cell)
+- ch is paragraph-LATE enriched (1.18×), sh is paragraph-EARLY enriched (1.13×) — refines C929 modality split with temporal positioning; documented as commentary
+
+### Refinement notes
+
+- **C1958 (ot transfer rate):** generalized to "transfer / addition / iteration cycles." Drip-rate is the f83r-specific manifestation. C1958 itself notes ot encodes "control actions around drip monitoring, not numerical values" — broadening is consistent.
+- **C1388 (ol = STAGING):** sharpened within-category gloss to "vessel-content state monitoring." Preserves C1174 deflation (ol is morphological component, not functional LINK substrate).
+
+### Pending validation (flagged by crazy-expert)
+
+Three discriminating tests not run in Phase 648:
+1. Paragraph-shuffle null within REGIME_2 (distinguishes "underpowered" from "structural collapse")
+2. Variance decomposition of differential at paragraph vs folio level
+3. MIDDLE-pool comparison across o-prefixes at fixed paragraph position (distinguishes "4 channels" from "4 allomorphs")
+
+### Methodology
+
+Reading actual recipe text instead of label-based prediction was the methodological pivot. Round 1 (label-based) accuracy was 6/16 = 37.5%; Round 2 (text-grounded) was 16/16 = 100%. The within-sample caveat is preserved in the constraint text: definitions came from these same texts, so out-of-sample validation is the next move.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1961 (NEW) | Fire-side / vessel-side paragraph-level partition. Tier 2. |
+| C1962 (NEW) | 4-axis o-prefix runtime channel taxonomy. Tier 3. |
+| C1958 | Refinement note: ot generalized from drip-rate to transfer/iteration |
+| C1388 | Refinement note: ol gloss sharpened to vessel-content state monitoring |
+| Phase 648 dir | Created: 7 scripts, 7 result files, INDEX.md |
+| CLAUDE.md | Version 6.27 → 6.28, constraints 1960 → 1962, phases 647 → 648 |
+| CLAIMS/INDEX.md | Phase 648 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh (1960 → 1962, 647 → 648) |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1961, C1962 added manually |
+
+---
+
 ## Version 6.27 (2026-04-25) - Phase 647 (645b): Heat-Mode Progression Refined
 
 ### Summary

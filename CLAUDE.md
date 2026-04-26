@@ -181,9 +181,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 6.27 |
-| Constraints | 1960 validated |
-| Phases | 647 completed |
+| Version | 6.28 |
+| Constraints | 1962 validated |
+| Phases | 648 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 passed) |
 | Characterization | ACTIVE |

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1960 validated constraints | **Version:** 6.27 | **Date:** 2026-04-25
+**Total:** 1962 validated constraints | **Version:** 6.28 | **Date:** 2026-04-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 648: Vessel-State 4-Axis Recipe Validation — FIRE_VESSEL_PARTITION_CONFIRMED + 4_AXIS_TAXONOMY (C1961, C1962)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1961 | Fire-side / vessel-side paragraph-level PREFIX partition. Fire-side {qo, ch, sh} anti-correlates with vessel-side {ok, ot, ol, or}: mean cross-block r=−0.232, within-block r=+0.080. Folio-level differential +0.295 (n=82, p=0.058 borderline). **Paragraph-level differential +0.131 (n=466, p=0.024)** — survives at PREFIX-load-bearing scale per C1811-C1812. Survives 3/4 sections (B, H, S all p<0.05; C directional) and 3/4 regimes (R3 +0.139 p=0.011, R4 +0.290 p=0.025, R1 directional). REGIME_2 (iteration-dominated, low-link) fails directionally — documented scope exception, possibly LINK-as-separator mechanism (Tier 3 candidate). The bridge: qo↔ol = +0.29 (heat application correlates with vessel-state change). Compatible with token-scope C1217/C1242/C1306 lane architecture at orthogonal scale. | 2 | B, PREFIX, paragraph, partition, fire-vessel, architecture, C1811, C1812, C1217, C1242, C1306 | folio_diff=+0.295. par_diff=+0.131. par_p=0.024. n_par=466. sec_pass=3/4. reg_pass=3/4. qo_ok=−0.42. ch_ol=−0.45. qo_ol=+0.29 (bridge). |
+| 1962 | 4-axis o-prefix runtime channel taxonomy. ol = vessel-content state monitoring (which vessel holds what, batch identity, vessel role). ot = material transfer / addition / iteration cycles (broadens C1958 drip-rate). ok = thermal regime / fire-degree state on contents. or = outcome / completion state (per C539 LATE class; weakest gloss, no matched recipes). All four positionally uniform within paragraphs (early/base 0.75–1.13×). Within-sample top-1 fit 16/16 (100%) on matched recipes; top-2 strict 7/16 (43.8% vs 17% random). Refines C1388 (ol gloss sharpened, preserving C1174 deflation) and C1958 (ot generalized; drip-rate is f83r-specific manifestation). Out-of-sample validation pending. | 3 | B, PREFIX, o-prefix, taxonomy, channels, recipe-correspondence, C1388, C1958, C1316, C539 | top1=16/16. top2_strict=7/16. n_matches=16. ol_top=8. ot_top=6. ok_top=2. or_top=0. position_uniform=4/4. |
+
+**Phase 648 findings (Vessel-State 4-Axis Recipe Validation, FIRE_VESSEL_PARTITION_CONFIRMED + 4_AXIS_TAXONOMY):**
+- The four o-prefixes (ok/ot/ol/or) form a 4-axis runtime channel architecture. Channel definitions derived from reading SISMEL Catalan recipe text for 16 matched folios, then verified at 100% within-sample top-1 fit.
+- ol does NOT function as a setup-phase declaration — all four o-prefixes are positionally uniform within paragraphs. The 4-axis runtime-channel reading is preferred over the alternative setup/runtime split.
+- Folio-level fire-side / vessel-side partition (qo+ch+sh vs ok+ot+ol+or) is a real architectural feature distinct from the registered token-scope QO/CHSH lane architecture. The two operate at orthogonal scales: folio-level specialization vs within-line cross-lane routing.
+- The qo↔ol bridge (+0.29) is the only positive cross-block correlation — it represents the coupling point where fire-side action (heat application) causes vessel-side state change.
+- ch is paragraph-LATE enriched (1.18× base), sh is paragraph-EARLY enriched (1.13×). Refines C929 modality split with temporal positioning (continuous-monitor early, event-monitor late). Effect sizes below 1.5× threshold; documented as commentary in C1961 rather than separate constraint.
+- REGIME_2 (iteration-dominated, low-link, k-heavy paragraphs) is the documented scope exception. Potential mechanism (Tier 3 candidate, pending validation): without LINK density, there is no boundary between monitoring and intervention, so the fire-side / vessel-side ontology has no contrast to recover.
+- Refinements registered as notes on C1958 (transfer/iteration generalized) and C1388 (ol gloss sharpened), not as new constraints — preserving constraint history.
 
 ---
 

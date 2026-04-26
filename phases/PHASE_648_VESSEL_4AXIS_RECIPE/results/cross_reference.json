@@ -1,0 +1,482 @@
+[
+  {
+    "folio": "f75r",
+    "recipe": "Aqua vitae (4x/9x reflux, honey+wax)",
+    "tier": "CONFIRMED",
+    "predicted_prefix": "ot",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 0.341,
+    "second_prefix": "ot",
+    "second_rel_enrichment": -0.179,
+    "all_ranks": [
+      [
+        "ol",
+        0.341
+      ],
+      [
+        "ot",
+        -0.179
+      ],
+      [
+        "or",
+        -0.319
+      ],
+      [
+        "ok",
+        -0.473
+      ]
+    ],
+    "match": "2nd",
+    "reason": "9x/4x reflux distillation = transfer"
+  },
+  {
+    "folio": "f76r",
+    "recipe": "Element separation (silver-plate test)",
+    "tier": "CONFIRMED",
+    "predicted_prefix": "or",
+    "top_prefix": "ok",
+    "top_rel_enrichment": 0.034,
+    "second_prefix": "ol",
+    "second_rel_enrichment": -0.022,
+    "all_ranks": [
+      [
+        "ok",
+        0.034
+      ],
+      [
+        "ol",
+        -0.022
+      ],
+      [
+        "or",
+        -0.315
+      ],
+      [
+        "ot",
+        -0.349
+      ]
+    ],
+    "match": "no",
+    "reason": "silver-plate test = observation/yield"
+  },
+  {
+    "folio": "f84r",
+    "recipe": "Gold dissolution (balneum + putrefaction)",
+    "tier": "CONFIRMED",
+    "predicted_prefix": "ol",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 0.837,
+    "second_prefix": "or",
+    "second_rel_enrichment": 0.812,
+    "all_ranks": [
+      [
+        "ol",
+        0.837
+      ],
+      [
+        "or",
+        0.812
+      ],
+      [
+        "ot",
+        0.031
+      ],
+      [
+        "ok",
+        -0.238
+      ]
+    ],
+    "match": "YES",
+    "reason": "balneum + putrefaction = multi-chamber staging"
+  },
+  {
+    "folio": "f79r",
+    "recipe": "Mercury sublimation -> elixir",
+    "tier": "strong-supported",
+    "predicted_prefix": "ot",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 1.083,
+    "second_prefix": "or",
+    "second_rel_enrichment": 0.321,
+    "all_ranks": [
+      [
+        "ol",
+        1.083
+      ],
+      [
+        "or",
+        0.321
+      ],
+      [
+        "ot",
+        0.218
+      ],
+      [
+        "ok",
+        -0.405
+      ]
+    ],
+    "match": "no",
+    "reason": "sublimation = transfer (vapor to recipient)"
+  },
+  {
+    "folio": "f82r",
+    "recipe": "Lunaria maceration (3-day sealed)",
+    "tier": "strong-supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ok",
+    "top_rel_enrichment": -0.526,
+    "second_prefix": "ol",
+    "second_rel_enrichment": -0.531,
+    "all_ranks": [
+      [
+        "ok",
+        -0.526
+      ],
+      [
+        "ol",
+        -0.531
+      ],
+      [
+        "ot",
+        -0.754
+      ],
+      [
+        "or",
+        -0.83
+      ]
+    ],
+    "match": "2nd",
+    "reason": "sealed maceration = chamber-state staging"
+  },
+  {
+    "folio": "f103r",
+    "recipe": "Ferment multiplication (multi-chamber)",
+    "tier": "strong-supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ot",
+    "top_rel_enrichment": 0.329,
+    "second_prefix": "ok",
+    "second_rel_enrichment": 0.303,
+    "all_ranks": [
+      [
+        "ot",
+        0.329
+      ],
+      [
+        "ok",
+        0.303
+      ],
+      [
+        "ol",
+        -0.506
+      ],
+      [
+        "or",
+        -0.552
+      ]
+    ],
+    "match": "no",
+    "reason": "multi-chamber ferment multiplication"
+  },
+  {
+    "folio": "f76v",
+    "recipe": "Ferment conversion (join H + bind)",
+    "tier": "strong-supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ot",
+    "top_rel_enrichment": 0.184,
+    "second_prefix": "ol",
+    "second_rel_enrichment": -0.309,
+    "all_ranks": [
+      [
+        "ot",
+        0.184
+      ],
+      [
+        "ol",
+        -0.309
+      ],
+      [
+        "ok",
+        -0.349
+      ],
+      [
+        "or",
+        -0.883
+      ]
+    ],
+    "match": "2nd",
+    "reason": "ferment join+bind = staging"
+  },
+  {
+    "folio": "f77v",
+    "recipe": "Furnace specification",
+    "tier": "supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 0.28,
+    "second_prefix": "or",
+    "second_rel_enrichment": -0.718,
+    "all_ranks": [
+      [
+        "ol",
+        0.28
+      ],
+      [
+        "or",
+        -0.718
+      ],
+      [
+        "ok",
+        -0.738
+      ],
+      [
+        "ot",
+        -0.949
+      ]
+    ],
+    "match": "YES",
+    "reason": "furnace specification = staging/setup"
+  },
+  {
+    "folio": "f81v",
+    "recipe": "Potable gold / water of life",
+    "tier": "supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 1.07,
+    "second_prefix": "ok",
+    "second_rel_enrichment": 0.234,
+    "all_ranks": [
+      [
+        "ol",
+        1.07
+      ],
+      [
+        "ok",
+        0.234
+      ],
+      [
+        "ot",
+        -0.738
+      ],
+      [
+        "or",
+        -0.819
+      ]
+    ],
+    "match": "YES",
+    "reason": "potable gold = multi-step staging"
+  },
+  {
+    "folio": "f82v",
+    "recipe": "Vessel specification",
+    "tier": "supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 0.483,
+    "second_prefix": "ot",
+    "second_rel_enrichment": -0.319,
+    "all_ranks": [
+      [
+        "ol",
+        0.483
+      ],
+      [
+        "ot",
+        -0.319
+      ],
+      [
+        "ok",
+        -0.514
+      ],
+      [
+        "or",
+        -0.53
+      ]
+    ],
+    "match": "YES",
+    "reason": "vessel specification = staging/setup"
+  },
+  {
+    "folio": "f112r",
+    "recipe": "Red mercury tincture (cohobation)",
+    "tier": "supported",
+    "predicted_prefix": "ot",
+    "top_prefix": "ot",
+    "top_rel_enrichment": 0.89,
+    "second_prefix": "ok",
+    "second_rel_enrichment": 0.8,
+    "all_ranks": [
+      [
+        "ot",
+        0.89
+      ],
+      [
+        "ok",
+        0.8
+      ],
+      [
+        "or",
+        -0.051
+      ],
+      [
+        "ol",
+        -0.159
+      ]
+    ],
+    "match": "YES",
+    "reason": "cohobation = explicit repeated transfer"
+  },
+  {
+    "folio": "f112v",
+    "recipe": "Lunaria -> quicksilver",
+    "tier": "supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ot",
+    "top_rel_enrichment": 0.223,
+    "second_prefix": "ok",
+    "second_rel_enrichment": 0.151,
+    "all_ranks": [
+      [
+        "ot",
+        0.223
+      ],
+      [
+        "ok",
+        0.151
+      ],
+      [
+        "or",
+        -0.212
+      ],
+      [
+        "ol",
+        -0.334
+      ]
+    ],
+    "match": "no",
+    "reason": "lunaria\u2192quicksilver = multi-stage"
+  },
+  {
+    "folio": "f116r",
+    "recipe": "Fixation / fusibility test",
+    "tier": "supported",
+    "predicted_prefix": "ok",
+    "top_prefix": "ot",
+    "top_rel_enrichment": 0.229,
+    "second_prefix": "ok",
+    "second_rel_enrichment": -0.003,
+    "all_ranks": [
+      [
+        "ot",
+        0.229
+      ],
+      [
+        "ok",
+        -0.003
+      ],
+      [
+        "ol",
+        -0.143
+      ],
+      [
+        "or",
+        -0.304
+      ]
+    ],
+    "match": "2nd",
+    "reason": "fusibility test = temperature-driven"
+  },
+  {
+    "folio": "f107r",
+    "recipe": "Quicksilver coagulation",
+    "tier": "supported",
+    "predicted_prefix": "ok",
+    "top_prefix": "ot",
+    "top_rel_enrichment": 0.456,
+    "second_prefix": "ok",
+    "second_rel_enrichment": 0.157,
+    "all_ranks": [
+      [
+        "ot",
+        0.456
+      ],
+      [
+        "ok",
+        0.157
+      ],
+      [
+        "ol",
+        -0.396
+      ],
+      [
+        "or",
+        -0.617
+      ]
+    ],
+    "match": "2nd",
+    "reason": "coagulation = temperature transition"
+  },
+  {
+    "folio": "f80r",
+    "recipe": "Animal ash chain Ch21 (multi-chapter 21-25)",
+    "tier": "supported",
+    "predicted_prefix": "ol",
+    "top_prefix": "ol",
+    "top_rel_enrichment": 1.004,
+    "second_prefix": "ok",
+    "second_rel_enrichment": -0.18,
+    "all_ranks": [
+      [
+        "ol",
+        1.004
+      ],
+      [
+        "ok",
+        -0.18
+      ],
+      [
+        "ot",
+        -0.194
+      ],
+      [
+        "or",
+        -0.364
+      ]
+    ],
+    "match": "YES",
+    "reason": "animal ash multi-chapter = multi-step staging"
+  },
+  {
+    "folio": "f83r",
+    "recipe": "Drip-counted mercurial solvent",
+    "tier": "supported",
+    "predicted_prefix": "ot",
+    "top_prefix": "ol",
+    "top_rel_enrichment": -0.296,
+    "second_prefix": "ot",
+    "second_rel_enrichment": -0.353,
+    "all_ranks": [
+      [
+        "ol",
+        -0.296
+      ],
+      [
+        "ot",
+        -0.353
+      ],
+      [
+        "ok",
+        -0.787
+      ],
+      [
+        "or",
+        -0.863
+      ]
+    ],
+    "match": "2nd",
+    "reason": "drip-counted = transfer/drip (C1958 anchor)"
+  }
+]

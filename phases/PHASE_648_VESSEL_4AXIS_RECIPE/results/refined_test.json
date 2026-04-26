@@ -1,0 +1,265 @@
+{
+  "results": [
+    {
+      "folio": "f75r",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ot",
+      "actual_top": "ol",
+      "actual_second": "ot",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "first/second/third water kept separate (\"metr\u00e0s a part\"); 4x/9x reflux iteration",
+      "rates": {
+        "ok": 0.03640776699029126,
+        "ot": 0.04854368932038835,
+        "ol": 0.07281553398058252,
+        "or": 0.014563106796116505
+      }
+    },
+    {
+      "folio": "f76r",
+      "predicted_primary": "ok",
+      "predicted_secondary": "ol",
+      "actual_top": "ok",
+      "actual_second": "ol",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "theoretical M/O/L symbolic chapter; calcination-driven preparation; \"preparaci\u00f3 de O e de L se fa...\"",
+      "rates": {
+        "ok": 0.07142857142857142,
+        "ot": 0.038461538461538464,
+        "ol": 0.05311355311355311,
+        "or": 0.014652014652014652
+      }
+    },
+    {
+      "folio": "f84r",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ot",
+      "actual_top": "ol",
+      "actual_second": "or",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "apparatus arrangement (alembic on cucurbit, vessel in balneum); transfer between configurations",
+      "rates": {
+        "ok": 0.05263157894736842,
+        "ot": 0.060941828254847646,
+        "ol": 0.0997229916897507,
+        "or": 0.038781163434903045
+      }
+    },
+    {
+      "folio": "f79r",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ot",
+      "actual_top": "ol",
+      "actual_second": "or",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "state transition (sublimative -> fixed); iterative return of distillate",
+      "rates": {
+        "ok": 0.04113110539845758,
+        "ot": 0.07197943444730077,
+        "ol": 0.11311053984575835,
+        "or": 0.028277634961439587
+      }
+    },
+    {
+      "folio": "f82r",
+      "predicted_primary": "ok",
+      "predicted_secondary": "ol",
+      "actual_top": "ok",
+      "actual_second": "ol",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "theoretical fire-regime: \"multiplicaci\u00f3 del foch\", \"calor temprada/naturall/excellent\", \"lent foch\"",
+      "rates": {
+        "ok": 0.03272727272727273,
+        "ot": 0.014545454545454545,
+        "ol": 0.025454545454545455,
+        "or": 0.0036363636363636364
+      }
+    },
+    {
+      "folio": "f103r",
+      "predicted_primary": "ot",
+      "predicted_secondary": "ol",
+      "actual_top": "ot",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "chamber B+C combination (\"mesclar s'[h]a tot en un\"); multi-chamber arrangement",
+      "rates": {
+        "ok": 0.09003831417624521,
+        "ot": 0.07854406130268199,
+        "ol": 0.02681992337164751,
+        "or": 0.009578544061302681
+      }
+    },
+    {
+      "folio": "f76v",
+      "predicted_primary": "ot",
+      "predicted_secondary": "ol",
+      "actual_top": "ot",
+      "actual_second": "ol",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "adding H by weight; adding fifth letter; explicit additions until state",
+      "rates": {
+        "ok": 0.045,
+        "ot": 0.07,
+        "ol": 0.0375,
+        "or": 0.0025
+      }
+    },
+    {
+      "folio": "f77v",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ok",
+      "actual_top": "ol",
+      "actual_second": "or",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "specification of subjects (leon vert, fum gelat); classifying contents",
+      "rates": {
+        "ok": 0.01812688821752266,
+        "ot": 0.0030211480362537764,
+        "ol": 0.06948640483383686,
+        "or": 0.006042296072507553
+      }
+    },
+    {
+      "folio": "f81v",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ot",
+      "actual_top": "ol",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "multi-vessel work (caraba\u00e7a, balneum); distillation transfer steps",
+      "rates": {
+        "ok": 0.08527131782945736,
+        "ot": 0.015503875968992248,
+        "ol": 0.1124031007751938,
+        "or": 0.003875968992248062
+      }
+    },
+    {
+      "folio": "f82v",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ok",
+      "actual_top": "ol",
+      "actual_second": "ot",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "stone-in-elements specification (where the stone resides in each element)",
+      "rates": {
+        "ok": 0.03355704697986577,
+        "ot": 0.040268456375838924,
+        "ol": 0.08053691275167785,
+        "or": 0.010067114093959731
+      }
+    },
+    {
+      "folio": "f112r",
+      "predicted_primary": "ot",
+      "predicted_secondary": "ok",
+      "actual_top": "ot",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "3x distill in balneum, pour back onto earth, repeated cohobation cycle",
+      "rates": {
+        "ok": 0.12436548223350254,
+        "ot": 0.1116751269035533,
+        "ol": 0.04568527918781726,
+        "or": 0.02030456852791878
+      }
+    },
+    {
+      "folio": "f112v",
+      "predicted_primary": "ot",
+      "predicted_secondary": "ol",
+      "actual_top": "ot",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "distillation separating elements one by one; \"continua en bany ta distillaci\u00f3 en tro...\"",
+      "rates": {
+        "ok": 0.07951807228915662,
+        "ot": 0.07228915662650602,
+        "ol": 0.03614457831325301,
+        "or": 0.016867469879518072
+      }
+    },
+    {
+      "folio": "f116r",
+      "predicted_primary": "ot",
+      "predicted_secondary": "ol",
+      "actual_top": "ot",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "reiterate sublimation of unfixed onto fixed until similarly fixed",
+      "rates": {
+        "ok": 0.06890130353817504,
+        "ot": 0.07262569832402235,
+        "ol": 0.04655493482309125,
+        "or": 0.0148975791433892
+      }
+    },
+    {
+      "folio": "f107r",
+      "predicted_primary": "ot",
+      "predicted_secondary": "ok",
+      "actual_top": "ot",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "color transitions through repeated heating cycles",
+      "rates": {
+        "ok": 0.07991803278688525,
+        "ot": 0.0860655737704918,
+        "ol": 0.03278688524590164,
+        "or": 0.00819672131147541
+      }
+    },
+    {
+      "folio": "f80r",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ot",
+      "actual_top": "ol",
+      "actual_second": "ok",
+      "top1_correct": true,
+      "top2_correct": false,
+      "evidence": "vessel-naming chapter: distillatori/dissolutori/putrefactori/calcinatori \u2014 vessel role identity",
+      "rates": {
+        "ok": 0.05668934240362812,
+        "ot": 0.047619047619047616,
+        "ol": 0.10884353741496598,
+        "or": 0.013605442176870748
+      }
+    },
+    {
+      "folio": "f83r",
+      "predicted_primary": "ol",
+      "predicted_secondary": "ot",
+      "actual_top": "ol",
+      "actual_second": "ot",
+      "top1_correct": true,
+      "top2_correct": true,
+      "evidence": "sealed in ampoule with cera comuna for 2 days; vessel-content state maintained",
+      "rates": {
+        "ok": 0.014705882352941176,
+        "ot": 0.03823529411764706,
+        "ol": 0.03823529411764706,
+        "or": 0.0029411764705882353
+      }
+    }
+  ],
+  "top1_acc": 1.0,
+  "top2_acc": 0.4375,
+  "primary_in_top2_acc": 1.0,
+  "n": 16,
+  "caveat": "Within-sample test \u2014 predictions were derived from reading these same recipes"
+}

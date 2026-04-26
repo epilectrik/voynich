@@ -1,0 +1,88 @@
+{
+  "test1_position": {
+    "ch": {
+      "early_rate": 0.11533437826541275,
+      "mid_rate": 0.150390625,
+      "late_rate": 0.17186887815071178,
+      "base_rate": 0.1458704823207063,
+      "early_enrich": 0.7906628978701955,
+      "late_enrich": 1.1782293128560872,
+      "verdict": "mixed",
+      "n_tokens": 3354
+    },
+    "sh": {
+      "early_rate": 0.09979101358411703,
+      "mid_rate": 0.08294270833333334,
+      "late_rate": 0.08110225937051065,
+      "base_rate": 0.08793980776758144,
+      "early_enrich": 1.1347649729671627,
+      "late_enrich": 0.922247403415505,
+      "verdict": "UNIFORM",
+      "n_tokens": 2022
+    },
+    "qo": {
+      "early_rate": 0.18547544409613376,
+      "mid_rate": 0.19049479166666666,
+      "late_rate": 0.15671934177876454,
+      "base_rate": 0.17757578393424087,
+      "early_enrich": 1.0444861342401184,
+      "late_enrich": 0.8825490633159767,
+      "verdict": "UNIFORM",
+      "n_tokens": 4083
+    },
+    "ok": {
+      "early_rate": 0.05721003134796238,
+      "mid_rate": 0.0625,
+      "late_rate": 0.06974010709155022,
+      "base_rate": 0.06314965424259557,
+      "early_enrich": 0.9059436988868451,
+      "late_enrich": 1.104362453413233,
+      "verdict": "UNIFORM",
+      "n_tokens": 1452
+    },
+    "ot": {
+      "early_rate": 0.05995297805642633,
+      "mid_rate": 0.06692708333333333,
+      "late_rate": 0.05916155152148361,
+      "base_rate": 0.06201887530987692,
+      "early_enrich": 0.9666892177078616,
+      "late_enrich": 0.9539281585788729,
+      "verdict": "UNIFORM",
+      "n_tokens": 1426
+    },
+    "ol": {
+      "early_rate": 0.04741379310344827,
+      "mid_rate": 0.055859375,
+      "late_rate": 0.059683949327412826,
+      "base_rate": 0.05432088026790762,
+      "early_enrich": 0.8728465531045526,
+      "late_enrich": 1.0987294210449985,
+      "verdict": "UNIFORM",
+      "n_tokens": 1249
+    },
+    "or": {
+      "early_rate": 0.01319226750261233,
+      "mid_rate": 0.019661458333333333,
+      "late_rate": 0.020242914979757085,
+      "base_rate": 0.017701039446788153,
+      "early_enrich": 0.7452820803134282,
+      "late_enrich": 1.14360035412667,
+      "verdict": "mixed",
+      "n_tokens": 407
+    }
+  },
+  "test2_permutation": {
+    "real_differential": 0.2948938803332942,
+    "p_value": 0.058,
+    "null_mean": 0.004083799722217526,
+    "null_median": -0.02078801058383585,
+    "null_p95": 0.2948938803332943,
+    "null_p99": 0.2949837896591062
+  },
+  "test3_paragraph_replication": {
+    "real_differential_paragraph": 0.13141074632610056,
+    "real_differential_folio": 0.2948938803332942,
+    "p_value_paragraph": 0.024,
+    "n_paragraphs": 466
+  }
+}
