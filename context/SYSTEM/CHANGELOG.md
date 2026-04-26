@@ -4,6 +4,56 @@
 
 ---
 
+## Version 6.33 (2026-04-26) - Phase 653 + 654: Dark Pipeline Material-Atom Typology — NULL
+
+### Summary
+
+Two-phase arc on the materials-as-identifiers thesis (crazy-expert's "killer test" framing). Phase 653 ran exploratory paragraph-resolution alignment tests; results were directional but underpowered. Crazy-expert post-mortem identified the framing as rhetoric rather than analysis (paragraph-density test against folio-presence signal was structurally underpowered before it ran). Phase 654 re-ran at folio resolution with full pre-registration discipline (categories, classifications, statistical protocol all locked before any atom analysis). VERDICT: NULL.
+
+### Phase 653 (deferred to scratch, not registered as phase)
+
+- Per-paragraph eckh and eet alignment with material-introduction events
+- eckh directional (38% organic vs 23% mineral, p>0.10, n=26) — doesn't meet registration bar
+- eet animal-mercury hypothesis: post-hoc atom-decomposition story (e+e+t = "deeply cooled transfer" matching sal ammoniac) generated from observed 4:1:0 ratio, then tested against same data — null at paragraph resolution (p=1.0)
+- Crazy-expert post-mortem: "I oversold it. Calling materials-as-identifiers 'the test where the ground has been prepared for two years' was rhetoric, not analysis."
+
+### Phase 654 PRE-REGISTERED + NULL
+
+Pre-registration committed at f346cbb BEFORE test execution. 8 substrate categories locked. 21 matched folios classified. 9 atoms tested. Bonferroni alpha=0.0056. Pass criteria: ≥3 atoms with enrichment ≥4× and corrected p<0.0056.
+
+**Result: 0 atoms passed.**
+- Closest: cs→GOLD at 2.71× enrichment, p=0.17 (NS after Bonferroni)
+- fch→MINERAL_MERCURY at 1.09× (essentially universal across matched folios)
+
+Why this apparently contradicts C1939/C1940: those constraints use morphological/structural extraction; Phase 654 used pre-registered substring-presence. Different definitions of "atom occurrence." Per pre-registration discipline, the locked methodology was what was tested.
+
+### What survives
+
+- C1939 (fch=mercury, Tier 3) and C1940 (cs=gold, Tier 3) preserved on their original methodology
+- The broader unified atom-substrate typology — all 9 dark-pipeline atoms map to categories under uniform substring-presence methodology — is **empirically refuted at this resolution**
+
+### Methodology lesson
+
+Pre-registration discipline holds even when post-hoc reasoning wants to revise. Phase 654 NULL is a feature, not a failure. The framing was wrong (paragraph-resolution test on folio-resolution signal); pre-registration caught it before any constraint was inflated.
+
+A morphological-extraction version of the same test could give different results. That would require its own pre-registration. Future work, not this phase.
+
+### No new constraints registered
+
+Per locked outcome plan: "If Phase 654 NULL — Document the null result; no new constraint registered." Phase 654 ships as a clean null. Constraint count unchanged at 1967.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| Phase 654 dir | Created: PRE_REGISTRATION.md, locked_classifications.json, s1 test script, INDEX.md |
+| INTERPRETATION_SUMMARY.md | Added refuted-typology note in Architectural Layering section |
+| CLAUDE.md | Version 6.32 → 6.33, phases 652 → 654 (constraints unchanged at 1967) |
+| CLAIMS/INDEX.md | Phase 653+654 section added documenting null verdict |
+| README.md, GUIDE.md, METHODS_AND_TOOLS.md | Phase count refresh (652 → 654) |
+
+---
+
 ## Version 6.32 (2026-04-26) - Phase 652: Block-Pure Paragraph Signatures
 
 ### Summary

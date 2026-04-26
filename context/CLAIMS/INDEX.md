@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1967 validated constraints | **Version:** 6.32 | **Date:** 2026-04-26
+**Total:** 1967 validated constraints | **Version:** 6.33 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,30 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 653 + 654: Dark Pipeline Material-Atom Typology — NULL (no new constraint)
+
+Two-phase arc on the materials-as-identifiers thesis:
+
+**Phase 653** (deferred to scratch, not registered): tested per-paragraph eckh and eet alignment with material-introduction events in matched recipes. Results: eckh directional but underpowered (38% vs 23%, p>0.10, n=26); eet animal-mercury hypothesis post-hoc storytelling, returned null at paragraph resolution (p=1.0). Crazy-expert post-mortem: "the killer test wasn't killable at this scale" — paragraph-density test against folio-presence signal was structurally underpowered.
+
+**Phase 654** (PRE-REGISTERED, NULL): re-ran at folio resolution with locked categories, classifications, and Bonferroni-corrected statistical protocol (alpha=0.05/9=0.0056, enrichment threshold 4×). Tested all 9 named dark-pipeline atoms (C1941) against 21 matched folios in 8 substrate categories. **0 atoms passed strict criteria.** Closest: cs→GOLD at 2.71× enrichment, p=0.17 (NS after Bonferroni); fch→MINERAL_MERCURY at 1.09× (essentially universal).
+
+Why this contradicts C1939/C1940 apparently:
+- C1939/C1940 use morphological extraction (e.g., f-prefix + ch in MIDDLE position)
+- Phase 654 used pre-registered substring-presence methodology
+- Different definitions of "fch occurrence." Under substring-presence, fch is essentially universal across matched folios. Under morphological extraction, fch may be more specific.
+- Per pre-registration discipline, the locked methodology is what was tested. Retroactive switch would violate pre-registration.
+
+**What survives:** C1939 and C1940 stand on their original methodology. Tier 3 status preserved.
+
+**What is refuted:** the unified atom-substrate typology framework — all 9 dark-pipeline atoms mapping to substrate categories under folio-presence-by-substring methodology — is empirically NOT supported at this resolution and methodology.
+
+**Methodology lesson:** pre-registration discipline enforced rigor where Phase 653's post-hoc storytelling would have produced over-claims (eet=animal mercury was post-hoc apophenia). Phase 654 NULL is a feature: pre-registered tests sometimes return null and that's the discipline working as intended. A morphological-extraction version of the same test could give different results; would require its own pre-registration.
+
+INTERPRETATION_SUMMARY.md "Architectural Layering" section updated with refuted-typology note.
 
 ---
 

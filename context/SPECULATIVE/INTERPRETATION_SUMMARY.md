@@ -65,6 +65,8 @@ These features look like a designed grammatical system — the kind of thing a f
 - Possibly plant-specific markers in herbal sections
 - Possibly numerological encoding tricks in pseudo-Lullian quintessence work
 
+**Refuted at folio-substring resolution (Phase 654):** the broader claim that all 9 named dark-pipeline atoms map to substrate categories under uniform folio-presence-by-substring methodology was tested under pre-registration and returned null. C1939 (fch=mercury) and C1940 (cs=gold) survive on their original methodology (more specific than substring-presence). The unified atom-substrate typology framework — that all dark-pipeline atoms encode substrate categories — is **not supported at this resolution and methodology**. A stricter morphological-extraction test could give different results; would require separate pre-registration.
+
 Real workshop notation systems in the medieval period weren't formal grammars. They accumulated special-case conventions where general rules didn't cover the case — the way medieval manuscripts have systematic abbreviation conventions AND ad-hoc scribal abbreviations. The Voynich is unlikely to be an exception.
 
 **What this means for interpretation:**
