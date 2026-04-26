@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1967 validated constraints | **Version:** 6.33 | **Date:** 2026-04-26
+**Total:** 1968 validated constraints | **Version:** 6.34 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 655: Header-Body HT Density Gap — CH_CLASS_SPECIFIC (C1968)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1968 | ch-class paragraph-header compound-specification concentration. Block-pure Currier B paragraphs with ch-dominant channel show shared-token-controlled HT-rate gap of +0.066 (p=0.007, n=82). Other channel classes (qo, sh) do NOT show genuine concentration after token-pool control: qo collapses (+0.012, p=0.59); sh actually reverses (-0.041). Refines C929 (ch=active test) with operational claim: active-testing operations require explicit compound-specification at the paragraph header before test execution in the body. Pairs with C1967 supplement (sh-class largest e_depth body-concentration) to establish channel-class-distinctive header-body specialization. The architecture is NOT universal "headers=spec, bodies=execution" — it's channel-class-specific with each class concentrating different content (ch: compound-spec at header; sh: thermal-commitment at body; qo: consistent throughout). Token-pool control addresses C1789 86% header-vocabulary-exclusivity caveat. | 2 | B, paragraph, header-body, ch, compound-specification, channel-class, C929, C935, C966, C1789, C1967 | ch_shared_gap=+0.066. ch_shared_p=0.007. ch_n=82. qo_collapsed=+0.012 NS. sh_reversed=-0.041. token_pool_overlap=38pct. |
+
+**Phase 655 findings (Header-Body HT Density Gap, CH_CLASS_SPECIFIC):**
+- Initial all-tokens test confirmed direction (header > body in HT) across all three fire-side channel classes (qo +0.038 p=0.032; ch +0.088 p<0.0001; sh +0.050 NS).
+- **Token-pool control was decisive.** Restricting to tokens that appear in BOTH header and body positions: qo gap collapses (+0.012 NS, vocabulary artifact); ch survives at +0.066 p=0.007 (genuine deployment); sh REVERSES to -0.041 (vocabulary artifact).
+- The "headers > bodies" symmetric prediction holds **specifically for ch-class**, not universally. qo and sh apparent gaps were token-pool effects.
+- Operational interpretation: active testing operations (ch) require explicit target specification at paragraph header before test execution in body. Heat-driving (qo) and passive monitoring (sh) don't have discrete events requiring front-loaded specification.
+- Channel-class architectural patterns are now richer: ch concentrates compound-spec at header; sh concentrates thermal-commitment at body; qo is consistent throughout. Each operational mode has its own distinct concentration pattern.
+- Methodology lesson: C1789 caveat was real and consequential. Without token-pool control, would have registered the broad "universal direction" claim. Control narrowed scope from "all three classes" to "ch-specific" and INCREASED interpretive strength (genuine deployment effect, not vocabulary artifact). Pre-registration discipline working as intended.
 
 ---
 

@@ -4,6 +4,60 @@
 
 ---
 
+## Version 6.34 (2026-04-26) - Phase 655: Header-Body HT Density Gap
+
+### Summary
+
+Symmetric test to C1967 supplement (Phase 652 found bodies > headers in e_depth). Tested whether headers > bodies in HT density (compound-spec). Initial direction confirmed across all three fire-side channel classes. **Token-pool control (per C1789 caveat) was decisive:** narrowed scope from "universal" to "ch-class-specific." C1968 registered as Tier 2 with refined ch-only claim.
+
+### Findings
+
+**Test 1: all-tokens header-body HT gap**
+- qo (n=102): +0.038, p=0.032
+- ch (n=82): +0.088, p<0.0001
+- sh (n=25): +0.050, NS
+
+**Test 2: shared-token control (the decisive test)**
+- qo: +0.012 (collapsed, NS) — apparent gap was vocabulary artifact
+- **ch: +0.066 (survives, p=0.007)** — genuine deployment effect
+- sh: -0.041 (REVERSED) — apparent gap was vocabulary artifact
+
+The token-pool control narrowed the architectural claim from "headers > bodies in HT across all three fire-side classes" to "ch-class specifically concentrates compound-specification at paragraph header." The narrower claim is structurally stronger.
+
+### C1968 registered (Tier 2)
+
+C1968: ch-class paragraph-header compound-specification concentration. Active-testing operations require explicit compound-spec at paragraph header before test execution. Refines C929 (ch=active test) with paragraph-architectural claim. Pairs with C1967 supplement to establish channel-class-distinctive specialization patterns:
+- ch concentrates compound-spec at header (+0.066, p=0.007)
+- sh concentrates thermal-commitment at body (e_depth gap -0.123)
+- qo is consistent throughout in both dimensions
+
+The header-body division is **channel-class-specific**, not universal.
+
+### Methodology lesson
+
+The C1789 token-pool caveat was real and load-bearing. Without the control:
+- Would have registered "headers > bodies universal across fire-side classes"
+- Apparent qo and sh gaps would have inflated the architectural claim
+With the control:
+- Two of three apparent gaps were vocabulary artifacts
+- Only ch survives, but with stronger interpretation (genuine deployment vs vocabulary effect)
+
+Pre-registration-style discipline (expert-advisor flagged the caveat BEFORE the test ran) prevented over-claim. Control narrowed scope but increased interpretive validity.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1968 (NEW) | ch-class paragraph-header compound-specification concentration. Tier 2. |
+| Phase 655 dir | Created: 2 scripts (initial test + token-pool control), 2 result files, INDEX.md |
+| CLAUDE.md | Version 6.33 → 6.34, constraints 1967 → 1968, phases 654 → 655 |
+| CLAIMS/INDEX.md | Phase 655 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1968 added; highest ID bumped to C1968 |
+
+---
+
 ## Version 6.33 (2026-04-26) - Phase 653 + 654: Dark Pipeline Material-Atom Typology — NULL
 
 ### Summary
