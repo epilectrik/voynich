@@ -104,6 +104,26 @@ To distinguish: search the corpus for unmatched folios with corpus-rare closed-c
 
 ---
 
+## Generalization sanity-check (2026-04-26, off-books)
+
+Searched all 82 Currier B folios for closed-cycle line-windows ≥7 in 1-3 line spans (the corpus-rare territory where the idiom would be detectable). Three candidates emerged. Each tested against a folio-internal permutation null (1000-2000 trials, qok+...+dy positions shuffled across folio lines weighted by line length).
+
+| Folio | Matched recipe | Real max window | Null mean | p-value | Verdict |
+|---|---|---|:---:|:---:|---|
+| f75r | III.19 (× 4 + × 9 reflux) | 11 | 6.62 | **0.002** | Structurally concentrated |
+| f108v | III.29 (mercury sublimation) | 9 | 6.63 | **0.043** | Borderline significant |
+| f78r | III.36 (mercury congelation) | 7 | 5.87 | **0.22** | NOT survived — folio-density artifact |
+
+Three control folios with high closed-cycle rates (f108r, f83r, f76v) all showed p > 0.78, confirming the test correctly identifies non-structural clusters.
+
+**Implication:** the cycle-counting idiom does NOT robustly generalize to iterative mercury operations. f78r's 7-cycle window is statistically consistent with the folio's overall qok-density and provides no independent evidence for the idiom. f108v is suggestive (p=0.043) but underpowered — could be real or could be the folio's natural clustering tendency. **f75r remains the only definitively structurally-concentrated cycle-counting cluster in Currier B.**
+
+This reinforces the special-case-notation framing: the idiom is plausibly used only on recipes with operationally-non-derivable counts (numerologically-specified ×9 reflux), and even within candidate iterative-mercury recipes the encoding is at most weakly present. C1965 stays scope-restricted to f75r.
+
+The negative result is itself informative: it rules out the simpler "idiom generalizes to mercury operations" reading and clarifies that f75r's encoding is genuinely sui generis at strict-significance level.
+
+---
+
 ## Falsification
 
 Would be falsified if:
