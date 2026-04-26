@@ -72,7 +72,43 @@ The monotonic ordering across all four signatures (e_depth, k-HEAD, sample size,
 
 ---
 
-## Tier 3 candidate: attentional-commitment reframing
+## Header-body e_depth gap test (added 2026-04-26, off-books)
+
+**The simple Tier 3 candidate as originally stated is FALSIFIED directionally.** A test predicting that paragraph headers should have higher e_depth than bodies (operator commits thermal precision at specification) found the opposite:
+
+| Class | n | Header e_depth | Body e_depth | Gap (H-B) | p (paired) |
+|---|:---:|:---:|:---:|:---:|:---:|
+| qo | 112 | 0.651 | 0.684 | **−0.034** | 0.24 |
+| ch | 72 | 0.569 | 0.631 | **−0.062** | 0.07 |
+| sh | 25 | 0.463 | 0.586 | **−0.123** | **0.024** |
+
+Headers have *lower* e_depth than bodies, not higher. The simple "header is specification commitment, body is execution" reading is wrong in direction.
+
+**However, the cross-class gap-magnitude ordering is monotonic and informative:**
+
+- qo paragraphs: gap −0.034 — thermal commitment is *consistent* header-to-body
+- ch paragraphs: gap −0.062 — some drop-off
+- sh paragraphs: gap −0.123 — large drop-off (significant)
+- Permutation p (qo gap > sh gap, one-sided): 0.089
+
+**Refined Tier 4 candidate (less developed):** the e_depth header-body gap may index *consistency of thermal commitment* across the paragraph rather than commitment magnitude per se. qo paragraphs maintain thermal precision throughout (drivers commit consistently); sh paragraphs only carry thermal context in body (passive monitors don't actively commit thermal precision).
+
+Architectural implication: headers carry compound specification (high HT density per C1966, low e_depth — specification of *what* compound, not *how thermal*). Bodies carry thermal execution (lower HT, higher e_depth). The header-body division may reflect a *what-vs-how* split where:
+- Header = "specify the compound and apparatus"
+- Body = "execute the operation with detailed thermal regulation"
+
+This Tier 4 candidate is registered for record only. Promotion would require:
+1. Independent test that the gap-magnitude correlates with operator-mode (e.g., does it co-vary with sh→qo decision-gate density per C1963?)
+2. Cross-validation that the header-body division is functionally what-vs-how, not just positional artifact
+3. A more rigorous gap statistic (current paired test on 25 sh-class paragraphs is borderline by sample-size)
+
+---
+
+## Tier 3 candidate: attentional-commitment reframing (FALSIFIED IN ORIGINAL FORM)
+
+The original Tier 3 candidate framing — "headers should have higher e_depth because the operator commits thermal precision at specification" — is empirically falsified by the header-body gap test. Headers consistently have *lower* e_depth than bodies. The simple version of the reframing is dead.
+
+The refined reading (above, registered as Tier 4 candidate) — that the *header-body gap-magnitude* indexes thermal-commitment consistency — is plausible but unverified. The original Tier 3 candidate is retired; the refined Tier 4 candidate replaces it.
 
 If the gradient is taken as primary evidence, **e_depth may index operator attentional commitment to thermal specification** rather than just thermal intensity itself:
 
