@@ -1,0 +1,596 @@
+{
+  "predictors": {
+    "distinct_compound_middles (specification)": {
+      "rho": 0.6024423657440229,
+      "p": 0.0
+    },
+    "total tokens (condensation - inverse)": {
+      "rho": 0.26000925163759875,
+      "p": 0.021
+    },
+    "sh_rate (passive monitoring)": {
+      "rho": -0.1954200633904794,
+      "p": 0.075
+    },
+    "qo_rate (active fire)": {
+      "rho": 0.04761593800676963,
+      "p": 0.648
+    }
+  },
+  "folio_metrics": {
+    "f26r": {
+      "total": 85,
+      "ht_rate": 0.2823529411764706,
+      "distinct_compound_middles": 19,
+      "sh_rate": 0.10588235294117647,
+      "qo_rate": 0.12941176470588237
+    },
+    "f26v": {
+      "total": 89,
+      "ht_rate": 0.2247191011235955,
+      "distinct_compound_middles": 16,
+      "sh_rate": 0.056179775280898875,
+      "qo_rate": 0.11235955056179775
+    },
+    "f31r": {
+      "total": 100,
+      "ht_rate": 0.35,
+      "distinct_compound_middles": 22,
+      "sh_rate": 0.11,
+      "qo_rate": 0.18
+    },
+    "f31v": {
+      "total": 108,
+      "ht_rate": 0.2962962962962963,
+      "distinct_compound_middles": 22,
+      "sh_rate": 0.037037037037037035,
+      "qo_rate": 0.037037037037037035
+    },
+    "f33r": {
+      "total": 72,
+      "ht_rate": 0.375,
+      "distinct_compound_middles": 16,
+      "sh_rate": 0.06944444444444445,
+      "qo_rate": 0.08333333333333333
+    },
+    "f33v": {
+      "total": 109,
+      "ht_rate": 0.12844036697247707,
+      "distinct_compound_middles": 6,
+      "sh_rate": 0.07339449541284404,
+      "qo_rate": 0.009174311926605505
+    },
+    "f34r": {
+      "total": 144,
+      "ht_rate": 0.19444444444444445,
+      "distinct_compound_middles": 22,
+      "sh_rate": 0.05555555555555555,
+      "qo_rate": 0.09027777777777778
+    },
+    "f34v": {
+      "total": 115,
+      "ht_rate": 0.14782608695652175,
+      "distinct_compound_middles": 14,
+      "sh_rate": 0.05217391304347826,
+      "qo_rate": 0.08695652173913043
+    },
+    "f39r": {
+      "total": 154,
+      "ht_rate": 0.24025974025974026,
+      "distinct_compound_middles": 25,
+      "sh_rate": 0.11688311688311688,
+      "qo_rate": 0.09090909090909091
+    },
+    "f39v": {
+      "total": 142,
+      "ht_rate": 0.22535211267605634,
+      "distinct_compound_middles": 18,
+      "sh_rate": 0.09154929577464789,
+      "qo_rate": 0.04929577464788732
+    },
+    "f40r": {
+      "total": 97,
+      "ht_rate": 0.20618556701030927,
+      "distinct_compound_middles": 10,
+      "sh_rate": 0.030927835051546393,
+      "qo_rate": 0.08247422680412371
+    },
+    "f40v": {
+      "total": 106,
+      "ht_rate": 0.22641509433962265,
+      "distinct_compound_middles": 13,
+      "sh_rate": 0.02830188679245283,
+      "qo_rate": 0.1509433962264151
+    },
+    "f41r": {
+      "total": 97,
+      "ht_rate": 0.29896907216494845,
+      "distinct_compound_middles": 25,
+      "sh_rate": 0.08247422680412371,
+      "qo_rate": 0.1958762886597938
+    },
+    "f41v": {
+      "total": 68,
+      "ht_rate": 0.29411764705882354,
+      "distinct_compound_middles": 14,
+      "sh_rate": 0.04411764705882353,
+      "qo_rate": 0.11764705882352941
+    },
+    "f43r": {
+      "total": 150,
+      "ht_rate": 0.21333333333333335,
+      "distinct_compound_middles": 24,
+      "sh_rate": 0.12666666666666668,
+      "qo_rate": 0.10666666666666667
+    },
+    "f43v": {
+      "total": 153,
+      "ht_rate": 0.23529411764705882,
+      "distinct_compound_middles": 28,
+      "sh_rate": 0.06535947712418301,
+      "qo_rate": 0.06535947712418301
+    },
+    "f46r": {
+      "total": 157,
+      "ht_rate": 0.25477707006369427,
+      "distinct_compound_middles": 31,
+      "sh_rate": 0.22929936305732485,
+      "qo_rate": 0.08917197452229299
+    },
+    "f46v": {
+      "total": 111,
+      "ht_rate": 0.23423423423423423,
+      "distinct_compound_middles": 19,
+      "sh_rate": 0.07207207207207207,
+      "qo_rate": 0.07207207207207207
+    },
+    "f48r": {
+      "total": 89,
+      "ht_rate": 0.24719101123595505,
+      "distinct_compound_middles": 19,
+      "sh_rate": 0.056179775280898875,
+      "qo_rate": 0.0898876404494382
+    },
+    "f48v": {
+      "total": 126,
+      "ht_rate": 0.14285714285714285,
+      "distinct_compound_middles": 16,
+      "sh_rate": 0.047619047619047616,
+      "qo_rate": 0.023809523809523808
+    },
+    "f50r": {
+      "total": 89,
+      "ht_rate": 0.23595505617977527,
+      "distinct_compound_middles": 16,
+      "sh_rate": 0.056179775280898875,
+      "qo_rate": 0.1348314606741573
+    },
+    "f50v": {
+      "total": 98,
+      "ht_rate": 0.2755102040816326,
+      "distinct_compound_middles": 17,
+      "sh_rate": 0.05102040816326531,
+      "qo_rate": 0.11224489795918367
+    },
+    "f55r": {
+      "total": 124,
+      "ht_rate": 0.20967741935483872,
+      "distinct_compound_middles": 16,
+      "sh_rate": 0.03225806451612903,
+      "qo_rate": 0.08870967741935484
+    },
+    "f55v": {
+      "total": 104,
+      "ht_rate": 0.3173076923076923,
+      "distinct_compound_middles": 13,
+      "sh_rate": 0.009615384615384616,
+      "qo_rate": 0.07692307692307693
+    },
+    "f57r": {
+      "total": 87,
+      "ht_rate": 0.45977011494252873,
+      "distinct_compound_middles": 35,
+      "sh_rate": 0.12643678160919541,
+      "qo_rate": 0.06896551724137931
+    },
+    "f66r": {
+      "total": 329,
+      "ht_rate": 0.25227963525835867,
+      "distinct_compound_middles": 58,
+      "sh_rate": 0.16109422492401215,
+      "qo_rate": 0.1337386018237082
+    },
+    "f66v": {
+      "total": 113,
+      "ht_rate": 0.24778761061946902,
+      "distinct_compound_middles": 21,
+      "sh_rate": 0.1504424778761062,
+      "qo_rate": 0.07079646017699115
+    },
+    "f75r": {
+      "total": 412,
+      "ht_rate": 0.13349514563106796,
+      "distinct_compound_middles": 26,
+      "sh_rate": 0.11650485436893204,
+      "qo_rate": 0.2621359223300971
+    },
+    "f75v": {
+      "total": 339,
+      "ht_rate": 0.1710914454277286,
+      "distinct_compound_middles": 33,
+      "sh_rate": 0.0943952802359882,
+      "qo_rate": 0.2713864306784661
+    },
+    "f76r": {
+      "total": 546,
+      "ht_rate": 0.2271062271062271,
+      "distinct_compound_middles": 52,
+      "sh_rate": 0.14102564102564102,
+      "qo_rate": 0.19963369963369965
+    },
+    "f76v": {
+      "total": 400,
+      "ht_rate": 0.3125,
+      "distinct_compound_middles": 53,
+      "sh_rate": 0.1225,
+      "qo_rate": 0.1775
+    },
+    "f77r": {
+      "total": 325,
+      "ht_rate": 0.28307692307692306,
+      "distinct_compound_middles": 38,
+      "sh_rate": 0.11384615384615385,
+      "qo_rate": 0.3353846153846154
+    },
+    "f77v": {
+      "total": 331,
+      "ht_rate": 0.15709969788519637,
+      "distinct_compound_middles": 30,
+      "sh_rate": 0.11782477341389729,
+      "qo_rate": 0.29003021148036257
+    },
+    "f78r": {
+      "total": 294,
+      "ht_rate": 0.21428571428571427,
+      "distinct_compound_middles": 31,
+      "sh_rate": 0.061224489795918366,
+      "qo_rate": 0.20408163265306123
+    },
+    "f78v": {
+      "total": 292,
+      "ht_rate": 0.13013698630136986,
+      "distinct_compound_middles": 24,
+      "sh_rate": 0.09931506849315068,
+      "qo_rate": 0.1952054794520548
+    },
+    "f79r": {
+      "total": 389,
+      "ht_rate": 0.17223650385604114,
+      "distinct_compound_middles": 30,
+      "sh_rate": 0.14910025706940874,
+      "qo_rate": 0.20308483290488433
+    },
+    "f79v": {
+      "total": 354,
+      "ht_rate": 0.268361581920904,
+      "distinct_compound_middles": 38,
+      "sh_rate": 0.07062146892655367,
+      "qo_rate": 0.2570621468926554
+    },
+    "f80r": {
+      "total": 441,
+      "ht_rate": 0.23356009070294784,
+      "distinct_compound_middles": 40,
+      "sh_rate": 0.12244897959183673,
+      "qo_rate": 0.2494331065759637
+    },
+    "f80v": {
+      "total": 378,
+      "ht_rate": 0.15343915343915343,
+      "distinct_compound_middles": 27,
+      "sh_rate": 0.10582010582010581,
+      "qo_rate": 0.24867724867724866
+    },
+    "f81r": {
+      "total": 207,
+      "ht_rate": 0.16908212560386474,
+      "distinct_compound_middles": 20,
+      "sh_rate": 0.10628019323671498,
+      "qo_rate": 0.18357487922705315
+    },
+    "f81v": {
+      "total": 258,
+      "ht_rate": 0.2054263565891473,
+      "distinct_compound_middles": 27,
+      "sh_rate": 0.08527131782945736,
+      "qo_rate": 0.16279069767441862
+    },
+    "f82r": {
+      "total": 275,
+      "ht_rate": 0.27636363636363637,
+      "distinct_compound_middles": 29,
+      "sh_rate": 0.08727272727272728,
+      "qo_rate": 0.31272727272727274
+    },
+    "f82v": {
+      "total": 298,
+      "ht_rate": 0.23825503355704697,
+      "distinct_compound_middles": 42,
+      "sh_rate": 0.11073825503355705,
+      "qo_rate": 0.32550335570469796
+    },
+    "f83r": {
+      "total": 340,
+      "ht_rate": 0.27941176470588236,
+      "distinct_compound_middles": 46,
+      "sh_rate": 0.13529411764705881,
+      "qo_rate": 0.22941176470588234
+    },
+    "f83v": {
+      "total": 263,
+      "ht_rate": 0.26996197718631176,
+      "distinct_compound_middles": 35,
+      "sh_rate": 0.155893536121673,
+      "qo_rate": 0.3193916349809886
+    },
+    "f84r": {
+      "total": 361,
+      "ht_rate": 0.1523545706371191,
+      "distinct_compound_middles": 26,
+      "sh_rate": 0.11357340720221606,
+      "qo_rate": 0.19113573407202217
+    },
+    "f84v": {
+      "total": 347,
+      "ht_rate": 0.19596541786743515,
+      "distinct_compound_middles": 25,
+      "sh_rate": 0.1037463976945245,
+      "qo_rate": 0.1786743515850144
+    },
+    "f85r1": {
+      "total": 333,
+      "ht_rate": 0.25825825825825827,
+      "distinct_compound_middles": 55,
+      "sh_rate": 0.0990990990990991,
+      "qo_rate": 0.12912912912912913
+    },
+    "f85r2": {
+      "total": 155,
+      "ht_rate": 0.2709677419354839,
+      "distinct_compound_middles": 27,
+      "sh_rate": 0.07741935483870968,
+      "qo_rate": 0.14193548387096774
+    },
+    "f86v4": {
+      "total": 188,
+      "ht_rate": 0.26595744680851063,
+      "distinct_compound_middles": 37,
+      "sh_rate": 0.11702127659574468,
+      "qo_rate": 0.0797872340425532
+    },
+    "f86v6": {
+      "total": 479,
+      "ht_rate": 0.24843423799582465,
+      "distinct_compound_middles": 55,
+      "sh_rate": 0.054279749478079335,
+      "qo_rate": 0.1837160751565762
+    },
+    "f86v5": {
+      "total": 381,
+      "ht_rate": 0.26246719160104987,
+      "distinct_compound_middles": 35,
+      "sh_rate": 0.08136482939632546,
+      "qo_rate": 0.09711286089238845
+    },
+    "f86v3": {
+      "total": 277,
+      "ht_rate": 0.2996389891696751,
+      "distinct_compound_middles": 44,
+      "sh_rate": 0.06859205776173286,
+      "qo_rate": 0.1624548736462094
+    },
+    "f94r": {
+      "total": 82,
+      "ht_rate": 0.23170731707317074,
+      "distinct_compound_middles": 13,
+      "sh_rate": 0.024390243902439025,
+      "qo_rate": 0.12195121951219512
+    },
+    "f94v": {
+      "total": 101,
+      "ht_rate": 0.2079207920792079,
+      "distinct_compound_middles": 16,
+      "sh_rate": 0.039603960396039604,
+      "qo_rate": 0.12871287128712872
+    },
+    "f95r1": {
+      "total": 103,
+      "ht_rate": 0.1650485436893204,
+      "distinct_compound_middles": 9,
+      "sh_rate": 0.02912621359223301,
+      "qo_rate": 0.13592233009708737
+    },
+    "f95r2": {
+      "total": 79,
+      "ht_rate": 0.17721518987341772,
+      "distinct_compound_middles": 9,
+      "sh_rate": 0.06329113924050633,
+      "qo_rate": 0.12658227848101267
+    },
+    "f95v2": {
+      "total": 64,
+      "ht_rate": 0.234375,
+      "distinct_compound_middles": 8,
+      "sh_rate": 0.125,
+      "qo_rate": 0.09375
+    },
+    "f95v1": {
+      "total": 117,
+      "ht_rate": 0.17094017094017094,
+      "distinct_compound_middles": 14,
+      "sh_rate": 0.10256410256410256,
+      "qo_rate": 0.1452991452991453
+    },
+    "f103r": {
+      "total": 522,
+      "ht_rate": 0.27011494252873564,
+      "distinct_compound_middles": 59,
+      "sh_rate": 0.1685823754789272,
+      "qo_rate": 0.2164750957854406
+    },
+    "f103v": {
+      "total": 449,
+      "ht_rate": 0.23162583518930957,
+      "distinct_compound_middles": 42,
+      "sh_rate": 0.1403118040089087,
+      "qo_rate": 0.16481069042316257
+    },
+    "f104r": {
+      "total": 438,
+      "ht_rate": 0.3698630136986301,
+      "distinct_compound_middles": 87,
+      "sh_rate": 0.0365296803652968,
+      "qo_rate": 0.20776255707762556
+    },
+    "f104v": {
+      "total": 458,
+      "ht_rate": 0.33624454148471616,
+      "distinct_compound_middles": 78,
+      "sh_rate": 0.05895196506550218,
+      "qo_rate": 0.2292576419213974
+    },
+    "f105r": {
+      "total": 370,
+      "ht_rate": 0.33783783783783783,
+      "distinct_compound_middles": 74,
+      "sh_rate": 0.043243243243243246,
+      "qo_rate": 0.12702702702702703
+    },
+    "f105v": {
+      "total": 390,
+      "ht_rate": 0.40512820512820513,
+      "distinct_compound_middles": 70,
+      "sh_rate": 0.023076923076923078,
+      "qo_rate": 0.07948717948717948
+    },
+    "f106r": {
+      "total": 421,
+      "ht_rate": 0.3491686460807601,
+      "distinct_compound_middles": 77,
+      "sh_rate": 0.09738717339667459,
+      "qo_rate": 0.15914489311163896
+    },
+    "f106v": {
+      "total": 449,
+      "ht_rate": 0.24498886414253898,
+      "distinct_compound_middles": 55,
+      "sh_rate": 0.11358574610244988,
+      "qo_rate": 0.14699331848552338
+    },
+    "f107r": {
+      "total": 488,
+      "ht_rate": 0.29713114754098363,
+      "distinct_compound_middles": 60,
+      "sh_rate": 0.05737704918032787,
+      "qo_rate": 0.12704918032786885
+    },
+    "f107v": {
+      "total": 455,
+      "ht_rate": 0.3362637362637363,
+      "distinct_compound_middles": 51,
+      "sh_rate": 0.03736263736263736,
+      "qo_rate": 0.1956043956043956
+    },
+    "f108r": {
+      "total": 491,
+      "ht_rate": 0.2729124236252546,
+      "distinct_compound_middles": 61,
+      "sh_rate": 0.04684317718940937,
+      "qo_rate": 0.19144602851323828
+    },
+    "f108v": {
+      "total": 570,
+      "ht_rate": 0.3456140350877193,
+      "distinct_compound_middles": 64,
+      "sh_rate": 0.09649122807017543,
+      "qo_rate": 0.21052631578947367
+    },
+    "f111r": {
+      "total": 614,
+      "ht_rate": 0.34527687296416937,
+      "distinct_compound_middles": 79,
+      "sh_rate": 0.09120521172638436,
+      "qo_rate": 0.16286644951140064
+    },
+    "f111v": {
+      "total": 561,
+      "ht_rate": 0.28520499108734404,
+      "distinct_compound_middles": 54,
+      "sh_rate": 0.09982174688057041,
+      "qo_rate": 0.16934046345811052
+    },
+    "f112r": {
+      "total": 394,
+      "ht_rate": 0.27918781725888325,
+      "distinct_compound_middles": 46,
+      "sh_rate": 0.03553299492385787,
+      "qo_rate": 0.14974619289340102
+    },
+    "f112v": {
+      "total": 415,
+      "ht_rate": 0.36626506024096384,
+      "distinct_compound_middles": 62,
+      "sh_rate": 0.05301204819277108,
+      "qo_rate": 0.1686746987951807
+    },
+    "f113r": {
+      "total": 518,
+      "ht_rate": 0.333976833976834,
+      "distinct_compound_middles": 77,
+      "sh_rate": 0.09845559845559845,
+      "qo_rate": 0.1274131274131274
+    },
+    "f113v": {
+      "total": 479,
+      "ht_rate": 0.33194154488517746,
+      "distinct_compound_middles": 73,
+      "sh_rate": 0.029227557411273485,
+      "qo_rate": 0.12108559498956159
+    },
+    "f114r": {
+      "total": 447,
+      "ht_rate": 0.3668903803131991,
+      "distinct_compound_middles": 88,
+      "sh_rate": 0.024608501118568233,
+      "qo_rate": 0.15212527964205816
+    },
+    "f114v": {
+      "total": 362,
+      "ht_rate": 0.36187845303867405,
+      "distinct_compound_middles": 71,
+      "sh_rate": 0.055248618784530384,
+      "qo_rate": 0.23204419889502761
+    },
+    "f115r": {
+      "total": 444,
+      "ht_rate": 0.3108108108108108,
+      "distinct_compound_middles": 79,
+      "sh_rate": 0.04279279279279279,
+      "qo_rate": 0.25225225225225223
+    },
+    "f115v": {
+      "total": 399,
+      "ht_rate": 0.3007518796992481,
+      "distinct_compound_middles": 65,
+      "sh_rate": 0.07518796992481203,
+      "qo_rate": 0.18295739348370926
+    },
+    "f116r": {
+      "total": 537,
+      "ht_rate": 0.18435754189944134,
+      "distinct_compound_middles": 35,
+      "sh_rate": 0.12476722532588454,
+      "qo_rate": 0.15456238361266295
+    }
+  }
+}

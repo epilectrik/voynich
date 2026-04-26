@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1965 validated constraints | **Version:** 6.30 | **Date:** 2026-04-26
+**Total:** 1966 validated constraints | **Version:** 6.31 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 651: HT-Density Validation — SPECIFICATION_DOMINANT + ATTENTION_REJECTED (C1966)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1966 | HT density per Currier B folio correlates with distinct compound MIDDLE count at Spearman ρ=+0.602 (n=82, p<0.0001). Within-section robustness: Section B ρ=+0.764 (n=20), Section H ρ=+0.507 (n=32), Section S ρ=+0.686 (n=23). Promotes C935 from "HT carries compound specification (corpus-wide)" to "HT density quantitatively tracks per-folio compound specification load." Mechanistically: HT density tracks compound DIVERSITY (different compound specs deployed) not merely instance count. Three competing readings tested: specification (current C935) strongly supported; attention-scaffolding (early Tier 4) REJECTED — sh_rate correlation goes opposite predicted direction (ρ=-0.195, p=0.075); condensation hypothesis null at corpus level but present within H and S sections (ρ=-0.34, -0.40 vs total tokens, secondary effect). | 2 | B, HT, compound, specification, per-folio, density, C935, C740, HTSC | rho=+0.602. p<0.0001. n=82. sec_B_rho=+0.764. sec_H_rho=+0.507. sec_S_rho=+0.686. attention_rejected_sh=-0.195. condensation_H=-0.335. |
+
+**Phase 651 findings (HT-Density Validation, SPECIFICATION_DOMINANT + ATTENTION_REJECTED):**
+- HT density quantitatively tracks per-folio compound specification load. The relationship is robust across all three major sections and not driven by section confound.
+- Specifically tracks compound DIVERSITY, not just instance count: high-HT folios deploy many different compound specs, not repeated instances of the same.
+- Attention-scaffolding hypothesis (early Tier 4) is empirically rejected: sh_rate correlation went opposite predicted direction. Removed from live interpretation set for HT specifically. The broader scribe-attention infrastructure speculation (distributed across HT, line-as-safety-packet, transition markers, cycle-counting per Phase 650) remains open in INTERPRETATION_SUMMARY.md.
+- Condensation effect (HT inversely correlates with folio length) is present within Section H and S (ρ=-0.34, -0.40) but absent in Section B. Long-form bath procedures don't show condensation pressure; short herbal/recipes folios do. Section-localized secondary effect, not primary function.
+- Cross-tested rejected: qo_rate (active fire, rho=+0.05 null), total tokens at corpus level (rho=+0.26 mild positive, opposite condensation prediction).
+- Methodology: first version of test (s1) had crude metrics — compound_complexity capped at 5 distinct o-prefixes, char_rarity_diff partly tautological. Refined v2 with proper distinct compound MIDDLE counting via MiddleAnalyzer.is_compound() produced the clean signal. Within-section robustness check was the decisive control against section confound.
 
 ---
 

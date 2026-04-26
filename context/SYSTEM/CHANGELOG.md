@@ -4,6 +4,65 @@
 
 ---
 
+## Version 6.31 (2026-04-26) - Phase 651: HT-Density Validation
+
+### Summary
+
+Phase 651 quantitatively validates C935 (HT compound specification) at per-folio resolution. HT density per Currier B folio correlates with distinct compound MIDDLE count at Spearman ρ=+0.602 (n=82, p<0.0001), with within-section robustness ρ=0.51-0.76 across all three major sections. The result decisively supports the specification reading of HT and rejects the early Tier 4 attention-scaffolding hypothesis (sh_rate correlation goes opposite predicted direction).
+
+### Findings
+
+**Cross-folio Spearman correlations (n=82):**
+- distinct compound MIDDLEs: ρ=+0.602, p<0.0001 — specification (#3) strongly supported
+- total tokens: ρ=+0.260, p=0.021 — condensation hypothesis null at corpus level
+- sh_rate (passive monitoring): ρ=-0.195, p=0.075 — opposite predicted, attention-scaffolding rejected
+- qo_rate (active fire): ρ=+0.048, p=0.65 — null
+
+**Within-section robustness (specification correlation):**
+- Section B (Bath, n=20): ρ=+0.764
+- Section H (Herbal, n=32): ρ=+0.507
+- Section S (Stars/Recipes, n=23): ρ=+0.686
+
+Every section shows the same strong positive correlation. Signal is structural, not section-driven.
+
+**Secondary condensation effect (within section only):**
+- Section H: HT vs total tokens ρ=-0.335
+- Section S: HT vs total tokens ρ=-0.398
+- Section B: ρ=-0.05 (no condensation pressure for long-form bath operations)
+
+### C1966 registered (Tier 2)
+
+C1966: HT density quantitatively tracks per-folio compound specification load. Promotes C935 from corpus-wide qualitative claim to per-folio quantitative relationship. HT density tracks compound DIVERSITY (different compound specs deployed) not merely instance count.
+
+### Resolved interpretive questions
+
+- **Specification reading (#3, current C935):** strongly confirmed at per-folio resolution
+- **Attention-scaffolding (#2, early Tier 4):** empirically REJECTED for HT specifically — sh_rate correlation reversed
+- **Fluency-practice (#1, early Tier 4):** not separately tested but specification reading dominates; could be a side effect but not primary function
+- **Section S enrichment** (HT 31.6% vs B 21.2%) is downstream consequence of S having more compound diversity per folio, not a separate phenomenon
+
+### What's NOT changed
+
+The broader scribe-attention infrastructure speculation in INTERPRETATION_SUMMARY.md remains open. Phase 651 only refutes the specific reading "HT density tracks passive-monitoring duration." The distributed-attention-infrastructure reading (HT compound spec redundancy + line-as-safety-packet + transition markers + cycle-counting per Phase 650) is not refuted — only the specific HT-density-vs-monitoring prediction is.
+
+### Methodology
+
+Two-stage test. v1 had crude metrics: compound_complexity capped at 5 distinct o-prefixes (no discriminating power), char_rarity_diff partly tautological (HT MIDDLEs are compound by definition, so naturally rarer than body MIDDLEs). v2 used proper distinct compound MIDDLE counting via MiddleAnalyzer.is_compound() and produced the clean +0.602 signal. Within-section robustness check confirmed the result is structural rather than section-driven.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1966 (NEW) | HT density tracks compound specification load. Tier 2. Refines C935. |
+| Phase 651 dir | Created: 2 scripts (v1 crude + v2 refined), 2 result files, INDEX.md |
+| CLAUDE.md | Version 6.30 → 6.31, constraints 1965 → 1966, phases 650 → 651 |
+| CLAIMS/INDEX.md | Phase 651 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1966 added; highest ID bumped to C1966 |
+
+---
+
 ## Version 6.30 (2026-04-26) - Phase 650: Cycle-Counting Idiom
 
 ### Summary

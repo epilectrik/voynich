@@ -21,7 +21,7 @@ For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTI
 
 ## The Short Version
 
-The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar**, a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 disfavored transitions) is established at high confidence across 1,965 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 51 procedural chapters matched to 41 folios covering 96% of the *Testamentum*'s procedural content, validated by a 10-dimension permutation test (0/10,000 shuffles, p < 0.0001).
+The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar**, a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 disfavored transitions) is established at high confidence across 1,966 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 51 procedural chapters matched to 41 folios covering 96% of the *Testamentum*'s procedural content, validated by a 10-dimension permutation test (0/10,000 shuffles, p < 0.0001).
 
 The manuscript reorganizes this content for workshop use: preparation procedures cluster in Herbal B, transmutation procedures cluster in Section S, and theoretical content is entirely absent. An 18-atom compositional architecture produces readable operational descriptions for every token (100% coverage), and cross-folio vocabulary analysis has identified specific tokens encoding material introduction (`dar`, 6/6 partition) and quality checking (`chekar`, 7/7 folios).
 
@@ -395,9 +395,9 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 650 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 651 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
-The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 650 phases, each building on validated prior work, produced 1,965 constraints, a depth no single analytical session could achieve.
+The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 651 phases, each building on validated prior work, produced 1,966 constraints, a depth no single analytical session could achieve.
 
 For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
