@@ -1,0 +1,193 @@
+[
+  {
+    "folio": "f75r",
+    "recipe": "Aqua vitae (4x/9x reflux, honey+wax)",
+    "explicit_counts": [
+      [
+        0,
+        4,
+        " a cascuna segona distillaci\u00f3 per quatre vegades aliter broic\u00e9 e tribl\u00e9; e apr"
+      ],
+      [
+        0,
+        9,
+        "iter broic\u00e9 e tribl\u00e9; e apr\u00e9s ix vegades. La confectio de\u00b9 la segona a"
+      ]
+    ],
+    "qok_by_line": {
+      "1": 1,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 3,
+      "7": 3,
+      "8": 1,
+      "9": 4,
+      "10": 1,
+      "11": 4,
+      "12": 2,
+      "13": 5,
+      "14": 3,
+      "15": 2,
+      "16": 2,
+      "17": 1,
+      "19": 3,
+      "20": 1,
+      "22": 1,
+      "23": 3,
+      "24": 1,
+      "25": 2,
+      "28": 2,
+      "29": 1,
+      "30": 3,
+      "31": 4,
+      "32": 2,
+      "33": 2,
+      "35": 3,
+      "36": 2,
+      "37": 4,
+      "38": 5,
+      "39": 2,
+      "40": 1,
+      "41": 2,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 3
+    },
+    "qok_by_par": {
+      "0": 57,
+      "1": 30
+    },
+    "matches": [
+      {
+        "count": 4,
+        "context": "a cascuna segona distillaci\u00f3 per quatre vegades aliter broic\u00e9 e tribl\u00e9; e apr",
+        "verdict": "LINE EXACT"
+      },
+      {
+        "count": 9,
+        "context": "iter broic\u00e9 e tribl\u00e9; e apr\u00e9s ix vegades. La confectio de\u00b9 la segona a",
+        "verdict": "2-LINE EXACT"
+      }
+    ]
+  },
+  {
+    "folio": "f82v",
+    "recipe": "Vessel specification",
+    "explicit_counts": [
+      [
+        1,
+        4,
+        "ue la pedra no \u00e9s feta en tro per .iiii. vegades sia molt bes dissolta e apr\u00e9s"
+      ]
+    ],
+    "qok_by_line": {
+      "1": 2,
+      "2": 1,
+      "3": 2,
+      "4": 4,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 3,
+      "9": 3,
+      "11": 2,
+      "12": 3,
+      "13": 2,
+      "14": 4,
+      "15": 1,
+      "16": 2,
+      "17": 2,
+      "18": 2,
+      "20": 2,
+      "21": 2,
+      "22": 3,
+      "23": 2,
+      "24": 2,
+      "25": 3,
+      "26": 2,
+      "27": 2,
+      "28": 1,
+      "29": 1,
+      "30": 1,
+      "31": 3,
+      "32": 3,
+      "34": 1
+    },
+    "qok_by_par": {
+      "0": 13,
+      "1": 8,
+      "2": 12,
+      "3": 15,
+      "4": 10,
+      "5": 9
+    },
+    "matches": [
+      {
+        "count": 4,
+        "context": "ue la pedra no \u00e9s feta en tro per .iiii. vegades sia molt bes dissolta e apr\u00e9s",
+        "verdict": "LINE EXACT"
+      }
+    ]
+  },
+  {
+    "folio": "f112r",
+    "recipe": "Red mercury tincture (cohobation)",
+    "explicit_counts": [
+      [
+        0,
+        3,
+        "e aquella distillar\u00e0s en bany per .iii. vegades. E apr\u00e9s cascuna distillaci\u00f3,"
+      ]
+    ],
+    "qok_by_line": {
+      "1": 1,
+      "4": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 3,
+      "11": 3,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 3,
+      "17": 1,
+      "19": 3,
+      "24": 1,
+      "28": 2,
+      "29": 1,
+      "30": 1,
+      "34": 2,
+      "35": 1,
+      "37": 1,
+      "38": 2,
+      "40": 1,
+      "41": 1,
+      "42": 1,
+      "44": 1,
+      "45": 1
+    },
+    "qok_by_par": {
+      "0": 8,
+      "1": 6,
+      "2": 1,
+      "3": 4,
+      "4": 3,
+      "5": 1,
+      "6": 4,
+      "8": 3,
+      "9": 8
+    },
+    "matches": [
+      {
+        "count": 3,
+        "context": "e aquella distillar\u00e0s en bany per .iii. vegades. E apr\u00e9s cascuna distillaci\u00f3,",
+        "verdict": "LINE EXACT"
+      }
+    ]
+  }
+]

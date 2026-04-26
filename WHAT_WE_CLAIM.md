@@ -2,7 +2,7 @@
 
 This document states the project's claims explicitly, with the evidence tier and constraint basis for each. It exists because the Voynich Manuscript attracts extraordinary claims, and readers deserve to know exactly where our confidence is high and where it is not.
 
-For the full constraint system, see `context/CLAIMS/INDEX.md` (1,964 validated constraints).
+For the full constraint system, see `context/CLAIMS/INDEX.md` (1,965 validated constraints).
 
 ---
 

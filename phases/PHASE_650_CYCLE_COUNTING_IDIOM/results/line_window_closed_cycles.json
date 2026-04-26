@@ -1,0 +1,104 @@
+{
+  "results": [
+    {
+      "folio": "f75r",
+      "recipe_count": 4,
+      "best_n_plus_1": [
+        "38",
+        "38",
+        5,
+        1
+      ],
+      "best_n": [
+        "13",
+        "13",
+        4,
+        1
+      ]
+    },
+    {
+      "folio": "f75r",
+      "recipe_count": 9,
+      "best_n_plus_1": [
+        "36",
+        "38",
+        10,
+        3
+      ],
+      "best_n": [
+        "37",
+        "38",
+        9,
+        2
+      ]
+    },
+    {
+      "folio": "f82v",
+      "recipe_count": 4,
+      "best_n_plus_1": [
+        "13",
+        "16",
+        5,
+        4
+      ],
+      "best_n": [
+        "12",
+        "14",
+        4,
+        3
+      ]
+    },
+    {
+      "folio": "f112r",
+      "recipe_count": 3,
+      "best_n_plus_1": null,
+      "best_n": null
+    }
+  ],
+  "corpus_window_distribution": {
+    "4line_2cycles": 359,
+    "5line_4cycles": 138,
+    "3line_2cycles": 305,
+    "4line_4cycles": 105,
+    "5line_5cycles": 79,
+    "2line_2cycles": 241,
+    "3line_4cycles": 64,
+    "4line_5cycles": 51,
+    "5line_6cycles": 37,
+    "1line_2cycles": 109,
+    "2line_4cycles": 34,
+    "3line_5cycles": 30,
+    "4line_6cycles": 28,
+    "5line_9cycles": 5,
+    "2line_3cycles": 78,
+    "4line_7cycles": 13,
+    "5line_7cycles": 22,
+    "1line_1cycles": 444,
+    "1line_3cycles": 22,
+    "3line_3cycles": 149,
+    "4line_3cycles": 183,
+    "2line_1cycles": 600,
+    "5line_2cycles": 359,
+    "3line_1cycles": 619,
+    "4line_1cycles": 573,
+    "5line_1cycles": 524,
+    "5line_3cycles": 215,
+    "1line_4cycles": 7,
+    "5line_8cycles": 15,
+    "3line_6cycles": 12,
+    "5line_10cycles": 2,
+    "4line_10cycles": 1,
+    "5line_12cycles": 3,
+    "2line_5cycles": 5,
+    "3line_10cycles": 1,
+    "4line_12cycles": 1,
+    "2line_9cycles": 1,
+    "3line_11cycles": 1,
+    "4line_11cycles": 1,
+    "1line_5cycles": 1,
+    "2line_7cycles": 1,
+    "3line_7cycles": 3,
+    "4line_8cycles": 4,
+    "2line_6cycles": 1
+  }
+}

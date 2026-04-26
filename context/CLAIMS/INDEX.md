@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1964 validated constraints | **Version:** 6.29 | **Date:** 2026-04-25
+**Total:** 1965 validated constraints | **Version:** 6.30 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 650: Cycle-Counting Idiom — F75R_LINE_LOCALIZED_ENCODING_CONFIRMED (C1965)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1965 | f75r cycle-counting + per-cycle annotation idiom. The recipe's two-phase reflux specification (×4 then ×9 vegades, III.19) is encoded as line-localized closed-cycle clusters. Closed cycles = tokens matching qok+...+dy (qok prefix + -dy closure suffix; transitional sub-states like qokey are excluded). ×4 phase: 4 closed cycles on L13 single line (4-qokedy identical run, corpus rarity ~7). ×9 phase: 10 closed cycles in L36-L38 3-line window (1 initial + 9 redistillations) — **CORPUS-SINGULAR** (only such window in all of Currier B). Cycles 4-5 (qokchdy, qokechdy) carry ch MOD atoms at the recipe's phase boundary, marking active-test cycles per C929 generalized to per-cycle annotation. Idiom does NOT generalize to small-count recipes (f82v ×4: corpus rarity 30+; f112r ×3: no clean window match) — small counts are structurally indistinguishable from corpus noise at line-window resolution. Refinement of C1394: MOD-atom class includes both continuous-extensible (e for thermal degree per F-B-007/C1735) and discrete-event (ch for tests per C929) subtypes; should not be conflated. | 3 | B, f75r, qok-cycles, recipe-correspondence, atom-annotation, C929, C1394, C1735, C1300, C1958, C1316 | x4_window=L13_4cycles. x9_window=L36-L38_10cycles. corpus_rarity_x9=1 (singular). ch_at_cycles=4,5. phase_boundary_aligned=yes. |
+
+**Phase 650 findings (Cycle-Counting Idiom, F75R_LINE_LOCALIZED_ENCODING_CONFIRMED):**
+- f75r encodes BOTH phases of its two-phase reflux recipe (× 4 + × 9 vegades) at line-localized resolution. The × 9 phase encodes as a corpus-singular 10-cycle 3-line window (L36-L38) — the only such window in all of Currier B.
+- Per-cycle MOD-atom annotation observed: cycles 4-5 of the L36-L38 cluster carry ch atoms (qokchdy, qokechdy) marking active-test cycles at the recipe's phase boundary. Generalizes C929 from standalone-prefix observation to per-cycle annotation marker.
+- C1394 (HEAD+MOD*+TERM atom architecture) refined: MOD-atom class includes two distinguishable subtypes — continuous-extensible (e for intensity, per F-B-007/C1735) and discrete-event (ch for tests, per C929). Earlier loose readings conflating them (e.g., qokeedy as "fire+heat+cool+cool+end") corrected.
+- The idiom does NOT generalize to small-count recipes (×3, ×4) — these are structurally indistinguishable from corpus noise at line-window resolution. Epistemic limit, not sample-size issue. The idiom is detectable only at iteration counts large enough to be corpus-rare (≥9 or so).
+- Methodology lesson: 4 test rounds were required to land the right answer. Direct folio reading (memory note) found the pattern; scripts repeatedly missed it until filter (qok-class → qok+...+dy closed cycles) and granularity (paragraph → line-window) were both corrected to match what was actually observed. Reaffirms project memory `feedback_read_first_scripts_verify`.
 
 ---
 

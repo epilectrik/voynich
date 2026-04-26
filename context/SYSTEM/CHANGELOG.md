@@ -4,6 +4,63 @@
 
 ---
 
+## Version 6.30 (2026-04-26) - Phase 650: Cycle-Counting Idiom
+
+### Summary
+
+Phase 650 confirms a corpus-singular cycle-counting encoding on f75r (the III.19 aqua vitae reflux recipe). The recipe's two-phase specification (× 4 vegades, then × 9 vegades) is encoded as line-localized closed-cycle clusters: 4 cycles on L13 for the first phase, 10 cycles in L36-L38 for the second phase (= 1 initial + 9 redistillations). The 10-cycle 3-line window is the only such window in all of Currier B — corpus-singular. Per-cycle MOD-atom annotation (ch markers at cycles 4-5) sits exactly at the recipe's phase boundary, marking active-test cycles. C1965 registered as Tier 3 anchor scope-restricted to f75r; idiom does NOT generalize to small-count recipes (×3, ×4 are structurally indistinguishable from corpus noise).
+
+### Findings
+
+**f75r encoding at line-localized resolution:**
+- × 4 phase: 4 closed cycles on L13 (4-qokedy identical-token run, corpus rarity ~7 with 4 cycles in 1 line)
+- × 9 phase: 10 closed cycles in L36-L38 3-line window (CORPUS-SINGULAR — only 3-line window in all of Currier B with 10 closed cycles)
+- × 9 (without initial): 9 closed cycles in L37-L38 2-line window (also corpus-singular)
+
+**Per-cycle MOD-atom annotation:**
+- Cycles 4-5 of the L36-L38 cluster: qokchdy and qokechdy (ch atoms inserted at exactly the recipe's ×4/×9 phase boundary)
+- Operationally: hot-test (cycle 4) → cool-then-test (cycle 5) → resume routine
+- Generalizes C929 (ch=active test) from standalone-prefix observation to per-cycle annotation marker
+
+**C1394 MOD-atom class refined:**
+- Continuous-extensible MOD atoms: e (thermal intensity, per F-B-007/C1735), i (duration)
+- Discrete-event MOD atoms: ch (active test, per C929), d (mark), n (halt/bind)
+- Earlier loose readings conflating these (e.g., qokeedy as "fire+heat+cool+cool+end") corrected to "fire-on + heat-at-degree-2 + close"
+
+**Non-generalization:**
+- f82v ×4 vessel spec: best window match has corpus rarity 30+ (indistinguishable from noise)
+- f112r ×3 cohobation: no 1-5 line window has 3 or 4 closed cycles
+- Small counts cannot be detected at line-window resolution — epistemic limit
+
+### C1965 registered (Tier 3, scope-restricted to f75r)
+
+C1965: f75r cycle-counting + per-cycle annotation idiom. Both phases of the III.19 reflux recipe encode at line-localized resolution as closed-cycle clusters; cycles 4-5 carry ch MOD atoms at the recipe's phase boundary. Idiom does not generalize to small-count recipes.
+
+### Methodology lesson
+
+Four test rounds were required to land the right answer:
+- Round 1: line-bounded qok-class — null
+- Round 2: gap-tolerant qok-runs — partial signal (rho=+0.04 on f75r)
+- Round 3: paragraph-bounded closed cycles — too coarse
+- Round 4: line-window closed cycles — correct, corpus-singular f75r anchor
+
+The user's direct-reading correction (filter to qok+...+dy closed cycles, account for "1 initial + N redistillations") was what landed it. Reaffirms project memory `feedback_read_first_scripts_verify`: direct folio reading found the pattern; scripts kept missing it until filter and granularity were corrected.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1965 (NEW) | f75r cycle-counting + per-cycle annotation idiom. Tier 3, scope-restricted to f75r. |
+| C1394 | Refinement note: MOD-atom class subtypes (continuous-extensible vs discrete-event) |
+| Phase 650 dir | Created: 4 scripts, 4 result files, INDEX.md |
+| CLAUDE.md | Version 6.29 → 6.30, constraints 1964 → 1965, phases 649 → 650 |
+| CLAIMS/INDEX.md | Phase 650 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1965 added; highest ID bumped to C1965 |
+
+---
+
 ## Version 6.29 (2026-04-25) - Phase 649: O-Prefix Validation
 
 ### Summary

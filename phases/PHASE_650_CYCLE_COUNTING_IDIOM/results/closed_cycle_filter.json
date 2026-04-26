@@ -1,0 +1,91 @@
+{
+  "results": [
+    {
+      "folio": "f75r",
+      "recipe_count": 4,
+      "target_n_plus_1": 5,
+      "target_n": 4,
+      "exact_match_n_plus_1": false,
+      "exact_match_n": false,
+      "folio_par_counts": [
+        17,
+        17
+      ],
+      "corpus_rarity_n_plus_1": 14,
+      "corpus_rarity_n": 15
+    },
+    {
+      "folio": "f75r",
+      "recipe_count": 9,
+      "target_n_plus_1": 10,
+      "target_n": 9,
+      "exact_match_n_plus_1": false,
+      "exact_match_n": false,
+      "folio_par_counts": [
+        17,
+        17
+      ],
+      "corpus_rarity_n_plus_1": 0,
+      "corpus_rarity_n": 3
+    },
+    {
+      "folio": "f82v",
+      "recipe_count": 4,
+      "target_n_plus_1": 5,
+      "target_n": 4,
+      "exact_match_n_plus_1": true,
+      "exact_match_n": true,
+      "folio_par_counts": [
+        5,
+        4,
+        2,
+        1,
+        1,
+        1
+      ],
+      "corpus_rarity_n_plus_1": 14,
+      "corpus_rarity_n": 15
+    },
+    {
+      "folio": "f112r",
+      "recipe_count": 3,
+      "target_n_plus_1": 4,
+      "target_n": 3,
+      "exact_match_n_plus_1": false,
+      "exact_match_n": false,
+      "folio_par_counts": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "corpus_rarity_n_plus_1": 15,
+      "corpus_rarity_n": 23
+    }
+  ],
+  "corpus_distribution": {
+    "5": 14,
+    "4": 15,
+    "2": 60,
+    "1": 137,
+    "0": 304,
+    "3": 23,
+    "7": 3,
+    "17": 2,
+    "6": 8,
+    "12": 1,
+    "8": 6,
+    "16": 1,
+    "19": 2,
+    "18": 2,
+    "9": 3,
+    "11": 1,
+    "14": 1
+  }
+}

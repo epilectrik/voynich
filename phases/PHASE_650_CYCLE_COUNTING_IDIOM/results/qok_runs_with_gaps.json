@@ -1,0 +1,42 @@
+{
+  "recipe_results": [
+    {
+      "folio": "f75r",
+      "recipe": "Aqua vitae (4x/9x reflux, honey+wax)",
+      "counts": [
+        4,
+        9
+      ],
+      "folio_runs": 53,
+      "longest": 8
+    },
+    {
+      "folio": "f82v",
+      "recipe": "Vessel specification",
+      "counts": [
+        4
+      ],
+      "folio_runs": 42,
+      "longest": 3
+    },
+    {
+      "folio": "f112r",
+      "recipe": "Red mercury tincture (cohobation)",
+      "counts": [
+        3
+      ],
+      "folio_runs": 29,
+      "longest": 3
+    }
+  ],
+  "corpus_run_distribution": {
+    "1": 1323,
+    "2": 340,
+    "4": 35,
+    "3": 112,
+    "5": 9,
+    "8": 1,
+    "6": 2
+  },
+  "total_runs": 1822
+}
