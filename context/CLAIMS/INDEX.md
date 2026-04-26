@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1966 validated constraints | **Version:** 6.31 | **Date:** 2026-04-26
+**Total:** 1967 validated constraints | **Version:** 6.32 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 652: Block-Pure Paragraph Signatures — E_DEPTH_GRADIENT_CONFIRMED (C1967)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1967 | e_depth paragraph-channel gradient. Among block-pure Currier B paragraphs (n=222 of 477 per C1961), mean e_depth orders monotonically across the three primary fire-side channel classes: qo (heat application, n=102) = 0.679 > ch (active test, n=82) = 0.606 > sh (passive monitor, n=25) = 0.538. Difference qo-sh = +0.141. Cross-validates F-B-007 (e_depth = thermal-intensity continuous modifier, atom level) at paragraph aggregation. Tier 3 attentional-commitment reframing of e_depth (operator commits more thermal precision when actively driving heat than when passively monitoring) registered as candidate, not promoted. Vessel-side channel classes (ok=5, ot=5, ol=3, or=0) too rare in block-pure subset to characterize, consistent with C1964 within-line interleaving. Vessel-state preamble hypothesis (positional clustering at folio openings) tested and FALSIFIED — 5/13 at par 0/1 vs expected 3.9 under null, within noise. | 2 | B, paragraph, e_depth, channel-class, thermal-intensity, F-B-007, C1300, C929, C1961, C1225 | qo_e_depth=0.679. ch_e_depth=0.606. sh_e_depth=0.538. delta_qo_sh=+0.141. baseline=0.636. n_qo=102. n_ch=82. n_sh=25. block_pure_94pct_fire_side. preamble_hypothesis_falsified. |
+
+**Phase 652 findings (Block-Pure Paragraph Signatures, E_DEPTH_GRADIENT_CONFIRMED):**
+- The e_depth paragraph-channel gradient (qo > ch > sh) is monotonic and not predicted by any prior constraint. Cross-validates F-B-007 at paragraph aggregation.
+- 94% of block-pure paragraphs are fire-side (qo + ch + sh = 209 of 222). Vessel-side prefixes rarely concentrate enough to dominate paragraphs — independent confirmation of C1964 (vessel-side rapid interleaving).
+- Channel-class signatures match registered roles across multiple dimensions (k-HEAD rate, section concentration, regime), but expert-advisor circularity audit identified section/regime co-concentrations as tautological with C909/C1404/C547. Genuinely independent novel finding: e_depth gradient.
+- Vessel-pure paragraph case study (Test 2) FALSIFIED the "vessel-state preamble" hypothesis. 13 vessel-pure paragraphs scatter across folio positions without significant clustering at folio openings (5/13 at par 0/1 vs expected 3.9, within noise). Section S over-representation (7/13) reflects recipes-section condensation, not a distinctive structural class.
+- Tier 3 attentional-commitment reframing of e_depth (registered as candidate in C1967): under this reading, e_depth indexes how much thermal precision the operator commits to a token, not just thermal intensity. qo paragraphs commit most (driving heat requires precision); sh paragraphs commit least (passive observation reads ambient state). Candidate, awaits header-vs-body gap test.
+- Methodology lesson: original "12/12 confirmed" framing overstated. Multiple dimensions tested were tautological with existing constraints (sections defined by operations per C909/C1404, regimes correlated with channels per C547). Independence audit (per crazy-expert) and circularity controls (per expert-advisor) reduced effective novel signature count from 12 to 1 (e_depth gradient). Lesson registered: when multi-dimensional test produces "all confirmed," run circularity audit before registering.
 
 ---
 

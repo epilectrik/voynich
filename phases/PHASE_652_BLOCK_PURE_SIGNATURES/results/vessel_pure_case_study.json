@@ -1,0 +1,252 @@
+{
+  "count": 13,
+  "paragraphs": [
+    {
+      "folio": "f105r",
+      "par_idx": 10,
+      "token_count": 24,
+      "vessel_frac": 0.7142857142857143,
+      "dom_channel": "ot",
+      "prefix_counts": {
+        "ok": 1,
+        "qo": 3,
+        "ot": 6,
+        "ol": 2,
+        "or": 1,
+        "ch": 1
+      },
+      "max_par_in_folio": 11,
+      "rel_position": 0.9090909090909091,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f105v",
+      "par_idx": 1,
+      "token_count": 30,
+      "vessel_frac": 0.8,
+      "dom_channel": "ol",
+      "prefix_counts": {
+        "qo": 1,
+        "ch": 1,
+        "ok": 2,
+        "ol": 3,
+        "ot": 3
+      },
+      "max_par_in_folio": 9,
+      "rel_position": 0.1111111111111111,
+      "is_first_par": false,
+      "is_first_two": true
+    },
+    {
+      "folio": "f105v",
+      "par_idx": 2,
+      "token_count": 70,
+      "vessel_frac": 0.7142857142857143,
+      "dom_channel": "ot",
+      "prefix_counts": {
+        "ol": 2,
+        "qo": 3,
+        "ok": 5,
+        "ot": 6,
+        "or": 2,
+        "ch": 3
+      },
+      "max_par_in_folio": 9,
+      "rel_position": 0.2222222222222222,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f108r",
+      "par_idx": 3,
+      "token_count": 28,
+      "vessel_frac": 0.8,
+      "dom_channel": "ok",
+      "prefix_counts": {
+        "ok": 5,
+        "ot": 2,
+        "ol": 1,
+        "qo": 1,
+        "ch": 1
+      },
+      "max_par_in_folio": 15,
+      "rel_position": 0.2,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f113v",
+      "par_idx": 3,
+      "token_count": 34,
+      "vessel_frac": 0.7368421052631579,
+      "dom_channel": "ot",
+      "prefix_counts": {
+        "ot": 7,
+        "qo": 2,
+        "ol": 3,
+        "or": 2,
+        "sh": 1,
+        "ch": 2,
+        "ok": 2
+      },
+      "max_par_in_folio": 14,
+      "rel_position": 0.21428571428571427,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f113v",
+      "par_idx": 12,
+      "token_count": 30,
+      "vessel_frac": 0.7647058823529411,
+      "dom_channel": "ot",
+      "prefix_counts": {
+        "qo": 2,
+        "or": 2,
+        "ot": 6,
+        "ol": 4,
+        "ch": 2,
+        "ok": 1
+      },
+      "max_par_in_folio": 14,
+      "rel_position": 0.8571428571428571,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f114r",
+      "par_idx": 0,
+      "token_count": 21,
+      "vessel_frac": 0.75,
+      "dom_channel": "ok",
+      "prefix_counts": {
+        "ok": 4,
+        "ot": 1,
+        "qo": 1,
+        "ch": 1,
+        "ol": 1
+      },
+      "max_par_in_folio": 11,
+      "rel_position": 0.0,
+      "is_first_par": true,
+      "is_first_two": true
+    },
+    {
+      "folio": "f40r",
+      "par_idx": 1,
+      "token_count": 32,
+      "vessel_frac": 0.8461538461538461,
+      "dom_channel": "ok",
+      "prefix_counts": {
+        "or": 3,
+        "ch": 2,
+        "ol": 3,
+        "ok": 5
+      },
+      "max_par_in_folio": 1,
+      "rel_position": 1.0,
+      "is_first_par": false,
+      "is_first_two": true
+    },
+    {
+      "folio": "f55v",
+      "par_idx": 1,
+      "token_count": 59,
+      "vessel_frac": 0.7419354838709677,
+      "dom_channel": "ok",
+      "prefix_counts": {
+        "ok": 8,
+        "sh": 1,
+        "or": 6,
+        "qo": 3,
+        "ot": 4,
+        "ch": 4,
+        "ol": 5
+      },
+      "max_par_in_folio": 1,
+      "rel_position": 1.0,
+      "is_first_par": false,
+      "is_first_two": true
+    },
+    {
+      "folio": "f79v",
+      "par_idx": 3,
+      "token_count": 42,
+      "vessel_frac": 0.7307692307692307,
+      "dom_channel": "ol",
+      "prefix_counts": {
+        "ok": 6,
+        "ol": 7,
+        "qo": 6,
+        "ch": 1,
+        "ot": 6
+      },
+      "max_par_in_folio": 6,
+      "rel_position": 0.5,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f84v",
+      "par_idx": 0,
+      "token_count": 9,
+      "vessel_frac": 0.8,
+      "dom_channel": "ok",
+      "prefix_counts": {
+        "ot": 1,
+        "ch": 1,
+        "or": 1,
+        "ok": 2
+      },
+      "max_par_in_folio": 4,
+      "rel_position": 0.0,
+      "is_first_par": true,
+      "is_first_two": true
+    },
+    {
+      "folio": "f85r2",
+      "par_idx": 4,
+      "token_count": 15,
+      "vessel_frac": 1.0,
+      "dom_channel": "ot",
+      "prefix_counts": {
+        "ok": 1,
+        "ot": 4,
+        "ol": 2,
+        "or": 1
+      },
+      "max_par_in_folio": 4,
+      "rel_position": 1.0,
+      "is_first_par": false,
+      "is_first_two": false
+    },
+    {
+      "folio": "f86v4",
+      "par_idx": 2,
+      "token_count": 11,
+      "vessel_frac": 0.7142857142857143,
+      "dom_channel": "ol",
+      "prefix_counts": {
+        "ol": 2,
+        "ot": 1,
+        "ok": 2,
+        "ch": 1,
+        "sh": 1
+      },
+      "max_par_in_folio": 3,
+      "rel_position": 0.6666666666666666,
+      "is_first_par": false,
+      "is_first_two": false
+    }
+  ],
+  "position_counts": {
+    "late": 3,
+    "first_two": 3,
+    "middle": 5,
+    "first": 2
+  },
+  "baseline_early_rate": 0.29916317991631797,
+  "expected_early": 3.8891213389121337,
+  "observed_early": 5
+}

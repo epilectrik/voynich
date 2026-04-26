@@ -6,7 +6,7 @@ The leading interpretive hypothesis identifies the source tradition as **Pseudo-
 
 The approach is structural rather than linguistic. Just as one can prove an unknown notation encodes music — not by translating, but by showing its symbol families correspond to the harmonic series and its forbidden combinations to dissonant intervals — we identified the domain of the Voynich's notation by showing that its disfavored transitions match physical failure modes, its convergence behavior matches distillation physics, and its recovery architecture matches Brunschwig's historical practice. **We did not translate the manuscript. We located the domain it operates in.**
 
-This conclusion rests on 1,966 validated constraints from 651 research phases across 37,957 tokens.
+This conclusion rests on 1,967 validated constraints from 652 research phases across 37,957 tokens.
 
 ---
 
@@ -132,7 +132,7 @@ These approaches have been structurally ruled out (Tier 1 — cannot be retried)
 
 ## How This Was Built
 
-This project used AI-assisted computational analysis over 651 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1), they cannot be retried, preventing circular investigation. An embedded expert-advisor agent (carrying all 1,966 constraints) validates new findings against the full body of existing knowledge.
+This project used AI-assisted computational analysis over 652 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1), they cannot be retried, preventing circular investigation. An embedded expert-advisor agent (carrying all 1,967 constraints) validates new findings against the full body of existing knowledge.
 
 The result: knowledge compounds across phases. Early phases discovered morphology, middle phases built grammar, late phases matched individual recipes to folios — and none of this work was ever lost. For methodology details, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
@@ -142,7 +142,7 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,966 |
+| Validated constraints | 1,967 |
 | Research phases | 647 |
 | Model fits tested | 75 |
 | Documented folios | 48 (of 83 Currier B) with per-folio analysis notes |

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1966 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1967 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1966.
+the highest ID present is C1967.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1966 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1967 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1966 validated constraints are present as canonical one-line claims with tier
+1967 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-26 10:38
-**Version:** FROZEN STATE (1966 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-26 14:56
+**Version:** FROZEN STATE (1967 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2205,6 +2205,7 @@ C1963	qo as paragraph operational opener. When qo and any o-prefix appear in sam
 C1964	o-Prefix within-line interleaving dominance. The 4-axis o-prefix architecture (C1962) is token-scoped at prefix level, NOT line-scoped. Mean prefix run length 1.27, median 1, 80.8% singletons, max 10. 85.3% of prefix transitions occur within-line, not at line breaks. Falsifies "channels persist within lines" intuition. Block-level (fire/vessel) coherence: mean run 2.39, max 50, 50.3% singletons, 11.7% reach length 5. Paragraph-level: 46% >70% block-pure (independent confirmation of C1961), 13% >85%, 1% 100% block-pure. Tokens are atomic instruction primitives (per C1394) interleaving rapidly; paragraphs are block-specialized units (per C1961). Line is not an architectural unit for this dimension.	2	B, PREFIX, line, paragraph, persistence, interleaving, run-length, C1962, C1228, C1722, C1394, C1961
 C1965	f75r cycle-counting + per-cycle annotation idiom. The recipe's two-phase reflux specification (×4 then ×9 vegades, III.19) is encoded as line-localized closed-cycle clusters. Closed cycles = tokens matching qok+...+dy (qok prefix + -dy closure suffix; transitional sub-states like qokey are excluded). ×4 phase: 4 closed cycles on L13 single line (4-qokedy identical run, corpus rarity ~7). ×9 phase: 10 closed cycles in L36-L38 3-line window (1 initial + 9 redistillations) — **CORPUS-SINGULAR** (only such window in all of Currier B). Cycles 4-5 (qokchdy, qokechdy) carry ch MOD atoms at the recipe's phase boundary, marking active-test cycles per C929 generalized to per-cycle annotation. Idiom does NOT generalize to small-count recipes (f82v ×4: corpus rarity 30+; f112r ×3: no clean window match) — small counts are structurally indistinguishable from corpus noise at line-window resolution. Refinement of C1394: MOD-atom class includes both continuous-extensible (e for thermal degree per F-B-007/C1735) and discrete-event (ch for tests per C929) subtypes; should not be conflated.	3	B, f75r, qok-cycles, recipe-correspondence, atom-annotation, C929, C1394, C1735, C1300, C1958, C1316
 C1966	HT density per Currier B folio correlates with distinct compound MIDDLE count at Spearman ρ=+0.602. Within-section robustness: Section B ρ=+0.764, Section H ρ=+0.507, Section S ρ=+0.686. Promotes C935 from "HT carries compound specification (corpus-wide)" to "HT density quantitatively tracks per-folio compound specification load." Mechanistically: HT density tracks compound DIVERSITY (different compound specs deployed) not merely instance count. Three competing readings tested: specification (current C935) strongly supported; attention-scaffolding (early Tier 4) REJECTED — sh_rate correlation goes opposite predicted direction; condensation hypothesis null at corpus level but present within H and S sections (ρ=-0.34, -0.40 vs total tokens, secondary effect).	2	B, HT, compound, specification, per-folio, density, C935, C740, HTSC
+C1967	e_depth paragraph-channel gradient. Among block-pure Currier B paragraphs, mean e_depth orders monotonically across the three primary fire-side channel classes: qo = 0.679 > ch = 0.606 > sh = 0.538. Difference qo-sh = +0.141. Cross-validates F-B-007 (e_depth = thermal-intensity continuous modifier, atom level) at paragraph aggregation. Tier 3 attentional-commitment reframing of e_depth (operator commits more thermal precision when actively driving heat than when passively monitoring) registered as candidate, not promoted. Vessel-side channel classes (ok=5, ot=5, ol=3, or=0) too rare in block-pure subset to characterize, consistent with C1964 within-line interleaving. Vessel-state preamble hypothesis (positional clustering at folio openings) tested and FALSIFIED — 5/13 at par 0/1 vs expected 3.9 under null, within noise.	2	B, paragraph, e_depth, channel-class, thermal-intensity, F-B-007, C1300, C929, C1961, C1225
 
 ---
 

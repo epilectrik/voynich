@@ -4,6 +4,66 @@
 
 ---
 
+## Version 6.32 (2026-04-26) - Phase 652: Block-Pure Paragraph Signatures
+
+### Summary
+
+Phase 652 ran crazy-expert's recommended block-pure paragraph signature test (deferred from Phase 649 wrap-up) plus a follow-up case study on the unexpected vessel-pure outliers. After expert circularity audit, the genuinely novel finding is the e_depth paragraph-channel gradient (qo > ch > sh, monotonic). C1967 registered narrowly. Vessel-state preamble hypothesis falsified by case study.
+
+### Findings
+
+**e_depth paragraph-channel gradient (registered as C1967):**
+- qo-dominant block-pure paragraphs (n=102): mean e_depth = 0.679
+- ch-dominant (n=82): 0.606
+- sh-dominant (n=25): 0.538
+- Monotonic across the three primary fire-side channel classes
+- Difference qo-sh = +0.141
+- Baseline (all block-pure): 0.636
+
+Cross-validates F-B-007 at paragraph aggregation. Tier 3 attentional-commitment reframing of e_depth registered as candidate within C1967.
+
+**94/6 fire/vessel asymmetry:**
+- 222 block-pure paragraphs total (46.5% of 477)
+- Fire-side: 209 (94%) — qo + ch + sh
+- Vessel-side: 13 (6%) — ok + ot + ol + or
+- or-dominant: 0 paragraphs
+- Independent confirmation of C1964 (vessel-side rapid interleaving)
+
+**Vessel-state preamble hypothesis FALSIFIED:**
+- 13 vessel-pure paragraphs do not cluster at folio openings
+- 5/13 at par 0 or 1 (vs expected 3.9 under null) — within noise
+- Scattered across positions without distinctive structural feature
+- Section S over-represented (7/13) but reflects recipes-section condensation, not new class
+
+**Tautological signatures excluded:**
+- qo concentration in Section B is downstream of C909/C1404 (sections defined by operations)
+- qo concentration in REGIME_1 is downstream of C547 (qo-chain R1 enrichment)
+- Original "12/12 confirmed" framing overstates after independence audit
+
+### C1967 registered (Tier 2)
+
+C1967: e_depth paragraph-channel gradient. The genuinely novel finding from Phase 652. Cross-validates F-B-007 at paragraph aggregation; opens Tier 3 candidate reframing of e_depth as attentional-commitment metric (registered as candidate within C1967, not promoted).
+
+### Methodology lesson
+
+When a multi-dimensional test produces "all predictions confirmed," run circularity audit before registering. Confirmation across dimensions that are downstream of existing structural couplings is not multiple independent confirmations. In Phase 652, expert-advisor and crazy-expert independently identified that section concentration and regime mapping were tautological with existing constraints; the effective novel signature count dropped from 12 to 1 after audit.
+
+The crazy-expert pushback (run the case study on outliers, don't register confirmation theater) was correct. The case study cleanly falsified the preamble hypothesis and prevented registering a finding that would have been substantially over-claimed.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1967 (NEW) | e_depth paragraph-channel gradient. Tier 2. Cross-validates F-B-007 at paragraph aggregation. |
+| Phase 652 dir | Created: 2 scripts (signature analysis + case study), 2 result files, INDEX.md |
+| CLAUDE.md | Version 6.31 → 6.32, constraints 1966 → 1967, phases 651 → 652 |
+| CLAIMS/INDEX.md | Phase 652 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1967 added; highest ID bumped to C1967 |
+
+---
+
 ## Version 6.31 (2026-04-26) - Phase 651: HT-Density Validation
 
 ### Summary
