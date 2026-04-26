@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1962 validated constraints | **Version:** 6.28 | **Date:** 2026-04-25
+**Total:** 1964 validated constraints | **Version:** 6.29 | **Date:** 2026-04-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,28 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 649: O-Prefix Validation — QO_OPENER_GENERIC + INTERLEAVING_DOMINANT (C1963, C1964)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1963 | qo as paragraph operational opener. When qo and any o-prefix appear in same paragraph, qo precedes the o-prefix in 77.9% of cases on average (range 72.9-84.7%, n=209-394 per pair). qo→ok 72.9% (n=391), qo→ot 73.6% (n=394), qo→ol 80.5% (n=343), qo→or 84.7% (n=209). Sister pairs ok↔ot, ol↔ot symmetric ~50/50 (confirms C1304). ch/sh asymmetric: sh→ch 61.2% (passive monitor before active test, refines C929). qo precedes da in 80% (heat-setup before material-introduction). Mechanism: grammatical precedence of operational opener per C1300/C1316/C1394, NOT pair-specific. Thermal-mass alternative tested (T5/T6/T7), directional but not significant; not registered. | 2 | B, PREFIX, paragraph, ordering, qo, generic-precedence, C1300, C1316, C1394, C929, C1304 | mean=77.9%. spread=11.8pp. qo_ok=72.9% n=391. qo_ot=73.6% n=394. qo_ol=80.5% n=343. qo_or=84.7% n=209. sh_ch=61.2%. qo_da=80%. |
+| 1964 | o-Prefix within-line interleaving dominance. The 4-axis o-prefix architecture (C1962) is token-scoped at prefix level, NOT line-scoped. Mean prefix run length 1.27, median 1, 80.8% singletons, max 10. 85.3% of prefix transitions occur within-line, not at line breaks. Falsifies "channels persist within lines" intuition. Block-level (fire/vessel) coherence: mean run 2.39, max 50, 50.3% singletons, 11.7% reach length 5. Paragraph-level: 46% >70% block-pure (independent confirmation of C1961), 13% >85%, 1% 100% block-pure. Tokens are atomic instruction primitives (per C1394) interleaving rapidly; paragraphs are block-specialized units (per C1961). Line is not an architectural unit for this dimension. | 2 | B, PREFIX, line, paragraph, persistence, interleaving, run-length, C1962, C1228, C1722, C1394, C1961 | mean_run=1.27. singletons=80.8%. block_run=2.39. par_70pct_pure=46%. par_85pct_pure=13%. transitions_within_line=85.3%. |
+
+**Phase 649 findings (O-Prefix Validation, QO_OPENER_GENERIC + INTERLEAVING_DOMINANT):**
+- Phase 648 registered C1961 (fire/vessel partition, Tier 2) and C1962 (4-axis taxonomy, Tier 3) as within-sample findings. Phase 649 ran 8 follow-up tests to confirm, refine, or break the architecture.
+- **The allomorph hypothesis is falsified** (T1 MIDDLE-pool comparison): JS divergence 0.34-0.44 across non-sister pairs; ok-ot is sister pair (JS 0.05) per C1304.
+- **The within-line control loop is NOT supported** (T2 within-line bigrams + T3 mode-stratified): predicted topology qo→ol→ok→ot→ch/sh→qo doesn't manifest as enriched bigrams. sh→qo +0.62 is the only strong cross-channel transition (operator decision gate).
+- **Mode A/B is parallel/orthogonal to the o-prefix architecture, not nested** (T3): mode stratification doesn't recover the control loop. The two architectural axes operate independently.
+- **Within-line dynamic is rapid prefix INTERLEAVING, not persistence** (T4 channel-run): mean run 1.27, 80.8% singletons. Tokens are atomic instruction primitives per C1394. The "self-loop enrichment" from T2 was misleading (relative not absolute).
+- **qo as paragraph operational opener confirmed generically** (T8 prefix-pair ordering generalization, crazy-expert's discriminator): qo precedes ALL o-prefixes at 73-85% (mean 77.9%). C1963 reframed from qo→ok-specific to qo-generic.
+- **Sister pair symmetry confirmed** (T8): ok↔ot, ol↔ot near 50/50; consistent with C1304/C1316.
+- **ch/sh asymmetry discovered** (T8): sh precedes ch in 61.2% — passive observation before active testing at paragraph scale, refines C929.
+- **Surprising finding**: qo precedes da in 80% (heat-setup before material-introduction). Crazy-expert's "da → 80%+" prediction reversed.
+- **Thermal-mass-mediated lag hypothesis: directional but underpowered** (T5/T6/T7): rho ≈ +0.20 across three test framings (token-distance, Mode B fraction within qo-ok subset, Mode B fraction across all matched paragraphs), no test reaches p<0.05. Section S reversal flagged as likely section-confound shadow per crazy-expert. Not registered as constraint; documented in phase INDEX as Tier 4 hypothesis pending corpus expansion + within-section test.
+- **Pre-registration discipline maintained**: T5 (token-distance) was the pre-registered thermal-mass test → null. T6/T7 alternative operationalizations were post-hoc but reported transparently with the failed T5. Per memory `feedback_scope_restrict_before_broad_test`: this is honest scope-refinement, not p-hunting.
 
 ---
 

@@ -1,0 +1,128 @@
+{
+  "qo->ok": {
+    "n": 391,
+    "a_first_pct": 0.7289002557544757,
+    "a_first": 285,
+    "b_first": 106
+  },
+  "qo->ot": {
+    "n": 394,
+    "a_first_pct": 0.7360406091370558,
+    "a_first": 290,
+    "b_first": 104
+  },
+  "qo->ol": {
+    "n": 343,
+    "a_first_pct": 0.8046647230320699,
+    "a_first": 276,
+    "b_first": 67
+  },
+  "qo->or": {
+    "n": 209,
+    "a_first_pct": 0.84688995215311,
+    "a_first": 177,
+    "b_first": 32
+  },
+  "ok->ot": {
+    "n": 340,
+    "a_first_pct": 0.4852941176470588,
+    "a_first": 165,
+    "b_first": 175
+  },
+  "ot->ok": {
+    "n": 340,
+    "a_first_pct": 0.5147058823529411,
+    "a_first": 175,
+    "b_first": 165
+  },
+  "ch->sh": {
+    "n": 399,
+    "a_first_pct": 0.38847117794486213,
+    "a_first": 155,
+    "b_first": 244
+  },
+  "sh->ch": {
+    "n": 399,
+    "a_first_pct": 0.6115288220551378,
+    "a_first": 244,
+    "b_first": 155
+  },
+  "da->qo": {
+    "n": 340,
+    "a_first_pct": 0.2,
+    "a_first": 68,
+    "b_first": 272
+  },
+  "da->ok": {
+    "n": 298,
+    "a_first_pct": 0.5134228187919463,
+    "a_first": 153,
+    "b_first": 145
+  },
+  "da->ot": {
+    "n": 297,
+    "a_first_pct": 0.468013468013468,
+    "a_first": 139,
+    "b_first": 158
+  },
+  "da->ol": {
+    "n": 268,
+    "a_first_pct": 0.4925373134328358,
+    "a_first": 132,
+    "b_first": 136
+  },
+  "da->or": {
+    "n": 173,
+    "a_first_pct": 0.6589595375722543,
+    "a_first": 114,
+    "b_first": 59
+  },
+  "ch->qo": {
+    "n": 456,
+    "a_first_pct": 0.33114035087719296,
+    "a_first": 151,
+    "b_first": 305
+  },
+  "sh->qo": {
+    "n": 403,
+    "a_first_pct": 0.511166253101737,
+    "a_first": 206,
+    "b_first": 197
+  },
+  "ch->ok": {
+    "n": 386,
+    "a_first_pct": 0.6139896373056994,
+    "a_first": 237,
+    "b_first": 149
+  },
+  "sh->ok": {
+    "n": 344,
+    "a_first_pct": 0.6947674418604651,
+    "a_first": 239,
+    "b_first": 105
+  },
+  "ol->ot": {
+    "n": 300,
+    "a_first_pct": 0.4533333333333333,
+    "a_first": 136,
+    "b_first": 164
+  },
+  "ot->ol": {
+    "n": 300,
+    "a_first_pct": 0.5466666666666666,
+    "a_first": 164,
+    "b_first": 136
+  },
+  "ol->or": {
+    "n": 175,
+    "a_first_pct": 0.68,
+    "a_first": 119,
+    "b_first": 56
+  },
+  "or->ol": {
+    "n": 175,
+    "a_first_pct": 0.32,
+    "a_first": 56,
+    "b_first": 119
+  }
+}

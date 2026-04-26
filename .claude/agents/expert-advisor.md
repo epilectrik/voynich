@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1962 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1964 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1962.
+the highest ID present is C1964.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1962 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1964 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1962 validated constraints are present as canonical one-line claims with tier
+1964 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-25 22:03
-**Version:** FROZEN STATE (1962 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-25 23:12
+**Version:** FROZEN STATE (1964 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2201,6 +2201,8 @@ C1959	Paragraph layout-order on confirmed-match folios corresponds to recipe-pha
 C1960	Per-paragraph heat metrics derived from atom decomposition correlate with predicted recipe fire-degree on heat-phase-distinct matched folios. Best metric qokeedy_frac: mean rho=+0.710 across 5 phase-distinct folios (f84r, f82r, f78r, f86v3, f77r), 5/5 positive direction. Heat-uniform control (f75r, f108v, f79v): mean rho=+0.066. Difference +0.643. Effect is SCOPE-RESTRICTED — encoding holds where recipes have distinct heat-phase changes; absent where recipes are heat-uniform throughout. Second syntactic rule complementing C1959.	3	B, paragraph, heat-mode, recipe-correspondence, layout, scope-restricted, C1959, C1225, C1226, C1957
 C1961	Fire-side / vessel-side paragraph-level PREFIX partition. Fire-side {qo, ch, sh} anti-correlates with vessel-side {ok, ot, ol, or}: mean cross-block r=−0.232, within-block r=+0.080. Folio-level differential +0.295. **Paragraph-level differential +0.131** — survives at PREFIX-load-bearing scale per C1811-C1812. Survives 3/4 sections and 3/4 regimes. REGIME_2 (iteration-dominated, low-link) fails directionally — documented scope exception, possibly LINK-as-separator mechanism (Tier 3 candidate). The bridge: qo↔ol = +0.29 (heat application correlates with vessel-state change). Compatible with token-scope C1217/C1242/C1306 lane architecture at orthogonal scale.	2	B, PREFIX, paragraph, partition, fire-vessel, architecture, C1811, C1812, C1217, C1242, C1306
 C1962	4-axis o-prefix runtime channel taxonomy. ol = vessel-content state monitoring (which vessel holds what, batch identity, vessel role). ot = material transfer / addition / iteration cycles (broadens C1958 drip-rate). ok = thermal regime / fire-degree state on contents. or = outcome / completion state (per C539 LATE class; weakest gloss, no matched recipes). All four positionally uniform within paragraphs (early/base 0.75–1.13×). Within-sample top-1 fit 16/16 (100%) on matched recipes; top-2 strict 7/16 (43.8% vs 17% random). Refines C1388 (ol gloss sharpened, preserving C1174 deflation) and C1958 (ot generalized; drip-rate is f83r-specific manifestation). Out-of-sample validation pending.	3	B, PREFIX, o-prefix, taxonomy, channels, recipe-correspondence, C1388, C1958, C1316, C539
+C1963	qo as paragraph operational opener. When qo and any o-prefix appear in same paragraph, qo precedes the o-prefix in 77.9% of cases on average. qo→ok 72.9%, qo→ot 73.6%, qo→ol 80.5%, qo→or 84.7%. Sister pairs ok↔ot, ol↔ot symmetric ~50/50 (confirms C1304). ch/sh asymmetric: sh→ch 61.2% (passive monitor before active test, refines C929). qo precedes da in 80% (heat-setup before material-introduction). Mechanism: grammatical precedence of operational opener per C1300/C1316/C1394, NOT pair-specific. Thermal-mass alternative tested (T5/T6/T7), directional but not significant; not registered.	2	B, PREFIX, paragraph, ordering, qo, generic-precedence, C1300, C1316, C1394, C929, C1304
+C1964	o-Prefix within-line interleaving dominance. The 4-axis o-prefix architecture (C1962) is token-scoped at prefix level, NOT line-scoped. Mean prefix run length 1.27, median 1, 80.8% singletons, max 10. 85.3% of prefix transitions occur within-line, not at line breaks. Falsifies "channels persist within lines" intuition. Block-level (fire/vessel) coherence: mean run 2.39, max 50, 50.3% singletons, 11.7% reach length 5. Paragraph-level: 46% >70% block-pure (independent confirmation of C1961), 13% >85%, 1% 100% block-pure. Tokens are atomic instruction primitives (per C1394) interleaving rapidly; paragraphs are block-specialized units (per C1961). Line is not an architectural unit for this dimension.	2	B, PREFIX, line, paragraph, persistence, interleaving, run-length, C1962, C1228, C1722, C1394, C1961
 
 ---
 

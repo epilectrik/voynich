@@ -1,0 +1,43 @@
+{
+  "within_paragraph": {
+    "n": 17,
+    "tier_means": {
+      "3": {
+        "tok": 12.125,
+        "line": 1.25,
+        "iter": 0.026411290322580647,
+        "mode_b": 0.6619047619047619
+      },
+      "1": {
+        "tok": 14.666666666666666,
+        "line": 1.2222222222222223,
+        "iter": 0.07697956577266922,
+        "mode_b": 0.48148148148148145
+      },
+      "4": {
+        "tok": NaN,
+        "line": NaN,
+        "iter": NaN,
+        "mode_b": NaN
+      },
+      "2": {
+        "tok": NaN,
+        "line": NaN,
+        "iter": NaN,
+        "mode_b": NaN
+      }
+    },
+    "correlations": {
+      "tok_dist": -0.16849710594040815,
+      "line_dist": -0.050151420371027815,
+      "iter_density": -0.2251853160118411
+    }
+  },
+  "cross_paragraph": {
+    "n": 3,
+    "tier_means": {
+      "3": 1.5,
+      "1": 1.0
+    }
+  }
+}

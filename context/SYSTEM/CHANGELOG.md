@@ -4,6 +4,76 @@
 
 ---
 
+## Version 6.29 (2026-04-25) - Phase 649: O-Prefix Validation
+
+### Summary
+
+Phase 649 ran 8 follow-up tests to confirm, refine, or break the Phase 648 4-axis o-prefix architecture (C1961, C1962). Two new constraints registered: C1963 (qo as paragraph operational opener, Tier 2) and C1964 (within-line interleaving dominance, Tier 2). The within-line control-loop hypothesis was falsified; Mode A/B was confirmed orthogonal to the o-prefix architecture; qo→ok at 72.9% was reframed as part of a generic qo→{any o-prefix} pattern at 73-85%. Thermal-mass-mediated lag tested across three framings; directional support (rho ≈ +0.20) but no test reached p<0.05; not registered.
+
+### Findings
+
+**Allomorph hypothesis falsified** (T1):
+- JS divergence: ok ↔ ot 0.049 (sister pair), all other pairs 0.34-0.44 (distinct)
+- 4 channels carry distinct content; ok-ot sister structure preserved per C1304
+
+**Within-line control loop NOT supported** (T2/T3):
+- Predicted topology qo→ol→ok→ot→ch/sh→qo: only 2/12 strict-threshold hits
+- Mode-stratification (Mode A vs Mode B) does not recover the loop
+- Mode A/B is parallel/orthogonal to o-prefix architecture, not nested
+
+**Within-line dynamic is rapid interleaving, NOT persistence** (T4):
+- Mean prefix run length 1.27, 80.8% singletons
+- 85% of transitions occur within-line, not at line breaks
+- Block-level (fire/vessel) coherence: mean run 2.39, 46% paragraphs >70% block-pure
+
+**qo as generic paragraph opener confirmed** (T8 — crazy-expert's discriminator):
+- qo precedes every o-prefix at 73-85% (mean 77.9% across 4 pairs, n=209-394 each)
+- Sister pairs ok↔ot, ol↔ot near 50/50 — symmetric, confirms C1304
+- ch/sh asymmetric: sh→ch 61.2% (passive monitor before active test, refines C929)
+- qo precedes da in 80% (heat-setup before material-introduction)
+
+**Thermal-mass directional but underpowered** (T5/T6/T7):
+- T5 token-distance: null (rho -0.20, p=0.80)
+- T6 Mode B fraction within qo-ok subset: rho +0.20, p=0.26
+- T7 Mode B fraction across all matched paragraphs: rho +0.20, p=0.19
+- T7 Section B subset: rho +0.24 (predicted direction)
+- T7 Section S subset: rho -0.23 (REVERSED — likely section-confound per crazy-expert)
+- NOT registered as constraint; documented in phase INDEX as Tier 4 hypothesis
+
+### C1963 registered (Tier 2)
+
+C1963: qo as paragraph operational opener. When qo and any o-prefix appear in the same paragraph, qo precedes the o-prefix in 77.9% of cases on average. Sister pairs symmetric. ch/sh asymmetric (sh→ch 61.2%). Mechanism: grammatical precedence per C1300/C1316/C1394, not pair-specific encoding.
+
+### C1964 registered (Tier 2)
+
+C1964: o-Prefix within-line interleaving dominance. Architecture is token-scoped at prefix level, NOT line-scoped. Mean prefix run 1.27, 80.8% singletons, 85% within-line transitions. Block-level shows moderate coherence (46% paragraphs >70% block-pure). Refines C1962 with explicit scope: token + block, NOT line.
+
+### Refinement note on C929
+
+sh precedes ch in 61.2% of paragraphs where both appear (n=399). Refines modality split (active vs passive monitoring) with paragraph-scale temporal positioning. Not registered as separate constraint; documented in C1963.
+
+### Methodology validation
+
+Pre-registration discipline maintained: T5 was the pre-registered thermal-mass test (returned null). T6/T7 were post-hoc operationalizations; reported transparently with the failed T5. Per memory feedback `feedback_scope_restrict_before_broad_test`: honest scope-refinement, not p-hunting.
+
+Crazy-expert's predicted discriminator (T8 prefix-pair ordering generalization) was decisive: qo→ok was reframed from pair-specific to generic-precedence finding. Without T8 the C1963 wording would have over-specified.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1963 (NEW) | qo as paragraph operational opener. Tier 2. |
+| C1964 (NEW) | o-Prefix within-line interleaving dominance. Tier 2. Refines C1962. |
+| C929 | Refinement note: sh→ch 61.2% paragraph-scale temporal positioning |
+| Phase 649 dir | Created: 8 scripts, 8 result files, INDEX.md |
+| CLAUDE.md | Version 6.28 → 6.29, constraints 1962 → 1964, phases 648 → 649 |
+| CLAIMS/INDEX.md | Phase 649 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1963, C1964 added; highest ID bumped to C1964 |
+
+---
+
 ## Version 6.28 (2026-04-25) - Phase 648: Vessel-State 4-Axis Recipe Validation
 
 ### Summary

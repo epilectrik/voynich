@@ -1,0 +1,46 @@
+{
+  "prefix_run_stats": {
+    "mean": 1.2656334964654703,
+    "median": 1,
+    "p25": 1,
+    "p75": 1,
+    "max": 10,
+    "n_runs": 11034,
+    "frac_singletons": 0.8081384810585464,
+    "frac_long_5plus": 0.004622077215878194,
+    "frac_long_10plus": 9.062896501721951e-05
+  },
+  "block_run_stats": {
+    "mean": 2.39290610006854,
+    "median": 1,
+    "p25": 1,
+    "p75": 3,
+    "max": 50,
+    "n_runs": 5836,
+    "frac_singletons": 0.502570253598355,
+    "frac_long_5plus": 0.11668951336531871,
+    "frac_long_10plus": 0.023646333104866347
+  },
+  "prefix_transition_location": {
+    "within-line": 8999,
+    "line-break": 1557
+  },
+  "block_transition_location": {
+    "within-line": 4521,
+    "line-break": 837
+  },
+  "mean_prefix_purity": 0.37290723633470785,
+  "mean_block_purity": 0.6960947811042647,
+  "paragraphs_70pct_block_pure": 0.46443514644351463,
+  "paragraphs_85pct_block_pure": 0.1297071129707113,
+  "ol_before_ot": {
+    "count": 136,
+    "total": 300,
+    "pct": 0.4533333333333333
+  },
+  "qo_before_ok": {
+    "count": 285,
+    "total": 391,
+    "pct": 0.7289002557544757
+  }
+}
