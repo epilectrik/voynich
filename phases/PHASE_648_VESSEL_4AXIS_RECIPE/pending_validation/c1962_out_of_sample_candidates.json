@@ -1,0 +1,2921 @@
+{
+  "candidates": [
+    {
+      "folio": "f40r",
+      "top_prefix": "or",
+      "top_rel": 2.8539358319683976,
+      "rates": {
+        "ok": 0.20618556701030927,
+        "ot": 0.010309278350515464,
+        "ol": 0.07216494845360824,
+        "or": 0.08247422680412371
+      },
+      "all_ranks": [
+        [
+          "or",
+          2.8539358319683976
+        ],
+        [
+          "ok",
+          1.983872170916198
+        ],
+        [
+          "ol",
+          0.32900457557289575
+        ],
+        [
+          "ot",
+          -0.8255621260488077
+        ]
+      ]
+    },
+    {
+      "folio": "f55r",
+      "top_prefix": "or",
+      "top_rel": 2.391618932770576,
+      "rates": {
+        "ok": 0.11290322580645161,
+        "ot": 0.03225806451612903,
+        "ol": 0.03225806451612903,
+        "or": 0.07258064516129033
+      },
+      "all_ranks": [
+        [
+          "or",
+          2.391618932770576
+        ],
+        [
+          "ok",
+          0.6339106484291117
+        ],
+        [
+          "ol",
+          -0.40592883027386684
+        ],
+        [
+          "ot",
+          -0.4541782653785274
+        ]
+      ]
+    },
+    {
+      "folio": "f81r",
+      "top_prefix": "ol",
+      "top_rel": 2.3807528402772222,
+      "rates": {
+        "ok": 0.04830917874396135,
+        "ot": 0.06280193236714976,
+        "ol": 0.18357487922705315,
+        "or": 0.028985507246376812
+      },
+      "all_ranks": [
+        [
+          "ol",
+          2.3807528402772222
+        ],
+        [
+          "or",
+          0.35446295543816886
+        ],
+        [
+          "ot",
+          0.06263844952876074
+        ],
+        [
+          "ok",
+          -0.3008801918384753
+        ]
+      ]
+    },
+    {
+      "folio": "f39v",
+      "top_prefix": "or",
+      "top_rel": 2.29077267342372,
+      "rates": {
+        "ok": 0.09859154929577464,
+        "ot": 0.028169014084507043,
+        "ol": 0.04929577464788732,
+        "or": 0.07042253521126761
+      },
+      "all_ranks": [
+        [
+          "or",
+          2.29077267342372
+        ],
+        [
+          "ok",
+          0.4267952141211961
+        ],
+        [
+          "ol",
+          -0.09215884626358527
+        ],
+        [
+          "ot",
+          -0.5233669359643478
+        ]
+      ]
+    },
+    {
+      "folio": "f85r2",
+      "top_prefix": "or",
+      "top_rel": 1.7132951462164612,
+      "rates": {
+        "ok": 0.012903225806451613,
+        "ot": 0.12903225806451613,
+        "ol": 0.1032258064516129,
+        "or": 0.05806451612903226
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.7132951462164612
+        ],
+        [
+          "ot",
+          1.1832869384858904
+        ],
+        [
+          "ol",
+          0.9010277431236262
+        ],
+        [
+          "ok",
+          -0.8132673544652445
+        ]
+      ]
+    },
+    {
+      "folio": "f55v",
+      "top_prefix": "or",
+      "top_rel": 1.6959022286125092,
+      "rates": {
+        "ok": 0.10576923076923077,
+        "ot": 0.04807692307692308,
+        "ol": 0.057692307692307696,
+        "or": 0.057692307692307696
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.6959022286125092
+        ],
+        [
+          "ok",
+          0.5306690415228766
+        ],
+        [
+          "ol",
+          0.062473438164045936
+        ],
+        [
+          "ot",
+          -0.18651568397761287
+        ]
+      ]
+    },
+    {
+      "folio": "f48v",
+      "top_prefix": "ot",
+      "top_rel": 1.6857894878199446,
+      "rates": {
+        "ok": 0.06349206349206349,
+        "ot": 0.15873015873015872,
+        "ol": 0.031746031746031744,
+        "or": 0.023809523809523808
+      },
+      "all_ranks": [
+        [
+          "ot",
+          1.6857894878199446
+        ],
+        [
+          "or",
+          0.11259457053849577
+        ],
+        [
+          "ok",
+          -0.08115682355913903
+        ],
+        [
+          "ol",
+          -0.4153585313806309
+        ]
+      ]
+    },
+    {
+      "folio": "f78v",
+      "top_prefix": "ol",
+      "top_rel": 1.6489063800802237,
+      "rates": {
+        "ok": 0.06506849315068493,
+        "ot": 0.06164383561643835,
+        "ol": 0.14383561643835616,
+        "or": 0.030821917808219176
+      },
+      "all_ranks": [
+        [
+          "ol",
+          1.6489063800802237
+        ],
+        [
+          "or",
+          0.4402765330943541
+        ],
+        [
+          "ot",
+          0.04304290383144421
+        ],
+        [
+          "ok",
+          -0.058343080308466966
+        ]
+      ]
+    },
+    {
+      "folio": "f26v",
+      "top_prefix": "or",
+      "top_rel": 1.625223143967237,
+      "rates": {
+        "ok": 0.06741573033707865,
+        "ot": 0.02247191011235955,
+        "ol": 0.0,
+        "or": 0.056179775280898875
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.625223143967237
+        ],
+        [
+          "ok",
+          -0.024374380071220624
+        ],
+        [
+          "ot",
+          -0.619764634308637
+        ],
+        [
+          "ol",
+          -1.0
+        ]
+      ]
+    },
+    {
+      "folio": "f33v",
+      "top_prefix": "or",
+      "top_rel": 1.5722369887678986,
+      "rates": {
+        "ok": 0.12844036697247707,
+        "ot": 0.027522935779816515,
+        "ol": 0.027522935779816515,
+        "or": 0.05504587155963303
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.5722369887678986
+        ],
+        [
+          "ok",
+          0.8587607376624758
+        ],
+        [
+          "ol",
+          -0.4931319377566019
+        ],
+        [
+          "ot",
+          -0.5342988869743398
+        ]
+      ]
+    },
+    {
+      "folio": "f31v",
+      "top_prefix": "ok",
+      "top_rel": 1.5459613013882192,
+      "rates": {
+        "ok": 0.17592592592592593,
+        "ot": 0.05555555555555555,
+        "ol": 0.009259259259259259,
+        "or": 0.027777777777777776
+      },
+      "all_ranks": [
+        [
+          "ok",
+          1.5459613013882192
+        ],
+        [
+          "or",
+          0.2980269989615784
+        ],
+        [
+          "ot",
+          -0.059973679263019414
+        ],
+        [
+          "ol",
+          -0.829479571652684
+        ]
+      ]
+    },
+    {
+      "folio": "f80v",
+      "top_prefix": "ol",
+      "top_rel": 1.5334463640172662,
+      "rates": {
+        "ok": 0.037037037037037035,
+        "ot": 0.026455026455026454,
+        "ol": 0.13756613756613756,
+        "or": 0.018518518518518517
+      },
+      "all_ranks": [
+        [
+          "ol",
+          1.5334463640172662
+        ],
+        [
+          "or",
+          -0.13464866735894773
+        ],
+        [
+          "ok",
+          -0.46400814707616445
+        ],
+        [
+          "ot",
+          -0.5523684186966759
+        ]
+      ]
+    },
+    {
+      "folio": "f86v4",
+      "top_prefix": "or",
+      "top_rel": 1.4855836150328101,
+      "rates": {
+        "ok": 0.015957446808510637,
+        "ot": 0.10638297872340426,
+        "ol": 0.07446808510638298,
+        "or": 0.05319148936170213
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.4855836150328101
+        ],
+        [
+          "ot",
+          0.8000504014112395
+        ],
+        [
+          "ol",
+          0.3714196152188393
+        ],
+        [
+          "ok",
+          -0.7690673399636666
+        ]
+      ]
+    },
+    {
+      "folio": "f75v",
+      "top_prefix": "ol",
+      "top_rel": 1.444629149757982,
+      "rates": {
+        "ok": 0.035398230088495575,
+        "ot": 0.038348082595870206,
+        "ol": 0.13274336283185842,
+        "or": 0.017699115044247787
+      },
+      "all_ranks": [
+        [
+          "ol",
+          1.444629149757982
+        ],
+        [
+          "or",
+          -0.1729385493342155
+        ],
+        [
+          "ot",
+          -0.3511322741815532
+        ],
+        [
+          "ok",
+          -0.48772460074536067
+        ]
+      ]
+    },
+    {
+      "folio": "f113v",
+      "top_prefix": "ot",
+      "top_rel": 1.437396013267912,
+      "rates": {
+        "ok": 0.08977035490605428,
+        "ot": 0.1440501043841336,
+        "ol": 0.054279749478079335,
+        "or": 0.016701461377870562
+      },
+      "all_ranks": [
+        [
+          "ot",
+          1.437396013267912
+        ],
+        [
+          "ok",
+          0.29913682932061203
+        ],
+        [
+          "ol",
+          -0.0003729377885942144
+        ],
+        [
+          "or",
+          -0.21955787953875874
+        ]
+      ]
+    },
+    {
+      "folio": "f50v",
+      "top_prefix": "ok",
+      "top_rel": 1.3627395965622138,
+      "rates": {
+        "ok": 0.16326530612244897,
+        "ot": 0.061224489795918366,
+        "ol": 0.07142857142857142,
+        "or": 0.02040816326530612
+      },
+      "all_ranks": [
+        [
+          "ok",
+          1.3627395965622138
+        ],
+        [
+          "ol",
+          0.31544330439358054
+        ],
+        [
+          "ot",
+          0.03594737387340721
+        ],
+        [
+          "or",
+          -0.04634751096700365
+        ]
+      ]
+    },
+    {
+      "folio": "f94v",
+      "top_prefix": "ot",
+      "top_rel": 1.345412206195239,
+      "rates": {
+        "ok": 0.07920792079207921,
+        "ot": 0.13861386138613863,
+        "ol": 0.04950495049504951,
+        "or": 0.009900990099009901
+      },
+      "all_ranks": [
+        [
+          "ot",
+          1.345412206195239
+        ],
+        [
+          "ok",
+          0.14627960625295536
+        ],
+        [
+          "ol",
+          -0.08830662071732033
+        ],
+        [
+          "or",
+          -0.5373369112612195
+        ]
+      ]
+    },
+    {
+      "folio": "f86v6",
+      "top_prefix": "or",
+      "top_rel": 1.2437710963260686,
+      "rates": {
+        "ok": 0.033402922755741124,
+        "ot": 0.054279749478079335,
+        "ol": 0.08559498956158663,
+        "or": 0.04801670146137787
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.2437710963260686
+        ],
+        [
+          "ol",
+          0.5763349827179859
+        ],
+        [
+          "ot",
+          -0.08156092253672867
+        ],
+        [
+          "ok",
+          -0.5166002495551212
+        ]
+      ]
+    },
+    {
+      "folio": "f108r",
+      "top_prefix": "ok",
+      "top_rel": 1.1221347496617848,
+      "rates": {
+        "ok": 0.14663951120162932,
+        "ot": 0.07535641547861507,
+        "ol": 0.020366598778004074,
+        "or": 0.012219959266802444
+      },
+      "all_ranks": [
+        [
+          "ok",
+          1.1221347496617848
+        ],
+        [
+          "ot",
+          0.27506625175321614
+        ],
+        [
+          "or",
+          -0.42897386603726895
+        ],
+        [
+          "ol",
+          -0.6249245160588568
+        ]
+      ]
+    },
+    {
+      "folio": "f41v",
+      "top_prefix": "or",
+      "top_rel": 1.0615722924683895,
+      "rates": {
+        "ok": 0.1323529411764706,
+        "ot": 0.058823529411764705,
+        "ol": 0.10294117647058823,
+        "or": 0.04411764705882353
+      },
+      "all_ranks": [
+        [
+          "or",
+          1.0615722924683895
+        ],
+        [
+          "ok",
+          0.915382650889589
+        ],
+        [
+          "ol",
+          0.8957859386848661
+        ],
+        [
+          "ot",
+          -0.004678013337314631
+        ]
+      ]
+    },
+    {
+      "folio": "f40v",
+      "top_prefix": "ok",
+      "top_rel": 1.047893400322202,
+      "rates": {
+        "ok": 0.14150943396226415,
+        "ot": 0.009433962264150943,
+        "ol": 0.05660377358490566,
+        "or": 0.018867924528301886
+      },
+      "all_ranks": [
+        [
+          "ok",
+          1.047893400322202
+        ],
+        [
+          "ol",
+          0.042426769519441264
+        ],
+        [
+          "or",
+          -0.11832128372421089
+        ],
+        [
+          "ot",
+          -0.8403728889314561
+        ]
+      ]
+    },
+    {
+      "folio": "f79v",
+      "top_prefix": "ol",
+      "top_rel": 1.0289040796578954,
+      "rates": {
+        "ok": 0.06779661016949153,
+        "ot": 0.07909604519774012,
+        "ol": 0.11016949152542373,
+        "or": 0.03389830508474576
+      },
+      "all_ranks": [
+        [
+          "ol",
+          1.0289040796578954
+        ],
+        [
+          "or",
+          0.5840329478853161
+        ],
+        [
+          "ot",
+          0.3383425583373963
+        ],
+        [
+          "ok",
+          -0.018862370919080603
+        ]
+      ]
+    },
+    {
+      "folio": "f84v",
+      "top_prefix": "ol",
+      "top_rel": 1.01676033987719,
+      "rates": {
+        "ok": 0.1239193083573487,
+        "ot": 0.04610951008645533,
+        "ol": 0.10951008645533142,
+        "or": 0.01440922190201729
+      },
+      "all_ranks": [
+        [
+          "ol",
+          1.01676033987719
+        ],
+        [
+          "ok",
+          0.7933329718863779
+        ],
+        [
+          "ot",
+          -0.2198052438840046
+        ],
+        [
+          "or",
+          -0.3266718737375098
+        ]
+      ]
+    },
+    {
+      "folio": "f33r",
+      "top_prefix": "or",
+      "top_rel": 0.9470404984423676,
+      "rates": {
+        "ok": 0.1111111111111111,
+        "ot": 0.09722222222222222,
+        "ol": 0.027777777777777776,
+        "or": 0.041666666666666664
+      },
+      "all_ranks": [
+        [
+          "or",
+          0.9470404984423676
+        ],
+        [
+          "ot",
+          0.6450460612897162
+        ],
+        [
+          "ok",
+          0.6079755587715067
+        ],
+        [
+          "ol",
+          -0.488438714958052
+        ]
+      ]
+    },
+    {
+      "folio": "f95r2",
+      "top_prefix": "ok",
+      "top_rel": 0.8318708897396914,
+      "rates": {
+        "ok": 0.12658227848101267,
+        "ot": 0.08860759493670886,
+        "ol": 0.05063291139240506,
+        "or": 0.0379746835443038
+      },
+      "all_ranks": [
+        [
+          "ok",
+          0.8318708897396914
+        ],
+        [
+          "or",
+          0.7745179226310187
+        ],
+        [
+          "ot",
+          0.4992824862387286
+        ],
+        [
+          "ol",
+          -0.06753386017670236
+        ]
+      ]
+    },
+    {
+      "folio": "f95v2",
+      "top_prefix": "ok",
+      "top_rel": 0.8089725036179451,
+      "rates": {
+        "ok": 0.125,
+        "ot": 0.0625,
+        "ol": 0.09375,
+        "or": 0.015625
+      },
+      "all_ranks": [
+        [
+          "ok",
+          0.8089725036179451
+        ],
+        [
+          "ol",
+          0.7265193370165746
+        ],
+        [
+          "ot",
+          0.05752961082910322
+        ],
+        [
+          "or",
+          -0.2698598130841121
+        ]
+      ]
+    },
+    {
+      "folio": "f34r",
+      "top_prefix": "ol",
+      "top_rel": 0.790464497646818,
+      "rates": {
+        "ok": 0.05555555555555555,
+        "ot": 0.04861111111111111,
+        "ol": 0.09722222222222222,
+        "or": 0.013888888888888888
+      },
+      "all_ranks": [
+        [
+          "ol",
+          0.790464497646818
+        ],
+        [
+          "ot",
+          -0.17747696935514193
+        ],
+        [
+          "ok",
+          -0.19601222061424664
+        ],
+        [
+          "or",
+          -0.3509865005192108
+        ]
+      ]
+    },
+    {
+      "folio": "f105v",
+      "top_prefix": "ot",
+      "top_rel": 0.7788190377022864,
+      "rates": {
+        "ok": 0.06153846153846154,
+        "ot": 0.10512820512820513,
+        "ol": 0.041025641025641026,
+        "or": 0.02564102564102564
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.7788190377022864
+        ],
+        [
+          "or",
+          0.19817876827222625
+        ],
+        [
+          "ok",
+          -0.1094289212957808
+        ],
+        [
+          "ol",
+          -0.24446333286112293
+        ]
+      ]
+    },
+    {
+      "folio": "f95v1",
+      "top_prefix": "ot",
+      "top_rel": 0.7354332075144258,
+      "rates": {
+        "ok": 0.06837606837606838,
+        "ot": 0.10256410256410256,
+        "ol": 0.03418803418803419,
+        "or": 0.008547008547008548
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.7354332075144258
+        ],
+        [
+          "ok",
+          -0.01047657921753418
+        ],
+        [
+          "ol",
+          -0.37038611071760236
+        ],
+        [
+          "or",
+          -0.6006070772425912
+        ]
+      ]
+    },
+    {
+      "folio": "f86v5",
+      "top_prefix": "ot",
+      "top_rel": 0.7320170004130194,
+      "rates": {
+        "ok": 0.026246719160104987,
+        "ot": 0.10236220472440945,
+        "ol": 0.05511811023622047,
+        "or": 0.031496062992125984
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.7320170004130194
+        ],
+        [
+          "or",
+          0.47177864449186846
+        ],
+        [
+          "ol",
+          0.015066486854888962
+        ],
+        [
+          "ok",
+          -0.6201632538335023
+        ]
+      ]
+    },
+    {
+      "folio": "f94r",
+      "top_prefix": "or",
+      "top_rel": 0.7095965352176886,
+      "rates": {
+        "ok": 0.07317073170731707,
+        "ot": 0.06097560975609756,
+        "ol": 0.07317073170731707,
+        "or": 0.036585365853658534
+      },
+      "all_ranks": [
+        [
+          "or",
+          0.7095965352176886
+        ],
+        [
+          "ol",
+          0.3475272874275703
+        ],
+        [
+          "ok",
+          0.058910733825138555
+        ],
+        [
+          "ot",
+          0.03173620568692995
+        ]
+      ]
+    },
+    {
+      "folio": "f85r1",
+      "top_prefix": "ot",
+      "top_rel": 0.67680370726056,
+      "rates": {
+        "ok": 0.05405405405405406,
+        "ot": 0.0990990990990991,
+        "ol": 0.057057057057057055,
+        "or": 0.03003003003003003
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.67680370726056
+        ],
+        [
+          "or",
+          0.40327243130981455
+        ],
+        [
+          "ol",
+          0.0507745314375148
+        ],
+        [
+          "ok",
+          -0.21774162005710476
+        ]
+      ]
+    },
+    {
+      "folio": "f34v",
+      "top_prefix": "or",
+      "top_rel": 0.6253555465258026,
+      "rates": {
+        "ok": 0.0782608695652174,
+        "ot": 0.02608695652173913,
+        "ol": 0.06956521739130435,
+        "or": 0.034782608695652174
+      },
+      "all_ranks": [
+        [
+          "or",
+          0.6253555465258026
+        ],
+        [
+          "ol",
+          0.28112739210505244
+        ],
+        [
+          "ok",
+          0.1325740892216701
+        ],
+        [
+          "ot",
+          -0.5585963363495917
+        ]
+      ]
+    },
+    {
+      "folio": "f114v",
+      "top_prefix": "ot",
+      "top_rel": 0.5892157687597572,
+      "rates": {
+        "ok": 0.04143646408839779,
+        "ot": 0.09392265193370165,
+        "ol": 0.03867403314917127,
+        "or": 0.0
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.5892157687597572
+        ],
+        [
+          "ol",
+          -0.2877710285603818
+        ],
+        [
+          "ok",
+          -0.4003406065354878
+        ],
+        [
+          "or",
+          -1.0
+        ]
+      ]
+    },
+    {
+      "folio": "f103v",
+      "top_prefix": "ot",
+      "top_rel": 0.5827614665415533,
+      "rates": {
+        "ok": 0.062360801781737196,
+        "ot": 0.0935412026726058,
+        "ol": 0.0779510022271715,
+        "or": 0.015590200445434299
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.5827614665415533
+        ],
+        [
+          "ol",
+          0.4355617353070257
+        ],
+        [
+          "ok",
+          -0.0975281941861476
+        ],
+        [
+          "or",
+          -0.2714859604937243
+        ]
+      ]
+    },
+    {
+      "folio": "f50r",
+      "top_prefix": "or",
+      "top_rel": 0.5751338863803424,
+      "rates": {
+        "ok": 0.0898876404494382,
+        "ot": 0.033707865168539325,
+        "ol": 0.06741573033707865,
+        "or": 0.033707865168539325
+      },
+      "all_ranks": [
+        [
+          "or",
+          0.5751338863803424
+        ],
+        [
+          "ok",
+          0.30083415990503914
+        ],
+        [
+          "ol",
+          0.24154199515798616
+        ],
+        [
+          "ot",
+          -0.42964695146295556
+        ]
+      ]
+    },
+    {
+      "folio": "f48r",
+      "top_prefix": "ot",
+      "top_rel": 0.5209414627654517,
+      "rates": {
+        "ok": 0.06741573033707865,
+        "ot": 0.0898876404494382,
+        "ol": 0.02247191011235955,
+        "or": 0.011235955056179775
+      },
+      "all_ranks": [
+        [
+          "ot",
+          0.5209414627654517
+        ],
+        [
+          "ok",
+          -0.024374380071220624
+        ],
+        [
+          "or",
+          -0.47495537120655257
+        ],
+        [
+          "ol",
+          -0.5861526682806713
+        ]
+      ]
+    }
+  ],
+  "unmatched_chapters": [
+    {
+      "part": "I",
+      "num": 1,
+      "title": "",
+      "dominant": "ol",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 0,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 2,
+      "title": "De la temperament des corsos e entemperament e neutralit\u00e9; e de la medicine; e d",
+      "dominant": "or",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 1,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 3,
+      "title": "Des principes de natura universal; e com els\u00b9 s\u00f3n extrais de la massa\u00b2 confusa; ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 3,
+        "ot": 4,
+        "ok": 10,
+        "or": 6
+      }
+    },
+    {
+      "part": "I",
+      "num": 4,
+      "title": "Capitol de minor forma; e de principis de la natura mineral simpla per los extre",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 8,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 5,
+      "title": "Des quals principis lo magisterii \u00e9s feta; e quant els s\u00f3n en nombre; e de lur c",
+      "dominant": "ot",
+      "scores": {
+        "ol": 2,
+        "ot": 4,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 6,
+      "title": "De l'approximaci\u00f3 de lo temperament au reguart de la natura de linyatges secuns ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 0,
+        "ok": 6,
+        "or": 6
+      }
+    },
+    {
+      "part": "I",
+      "num": 7,
+      "title": "De la qual cosa tu has extrayr\u00b9 la materia m\u00e9s propinch et cov\u00e9 per fair lo magi",
+      "dominant": "ol",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 2,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 9,
+      "title": "De la causa car nostra cosa \u00e9s nomeada\u2077 la pedra; e de sa proprietat et sa natur",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 7,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 10,
+      "title": "De la preparaci\u00f3 de la pedra",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 4,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 11,
+      "title": "Qual cosa \u00e9s la pedra; e que el \u00e9s de .iiii. elements; e en qual loch ella es tr",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 12,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 12,
+      "title": "De la divisi\u00f3 et resoluci\u00f3 de la pedra en .iii. vius argents principaux; et de d",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 0,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 13,
+      "title": "De la dissoluci\u00f3 de la pedra en forma speciall; et de la [mudaci\u00f3 de] son nom",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 2,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 14,
+      "title": "De la causa et rah\u00f3 de lo passament de la pedra per esser convertie en medicina;",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 2,
+        "or": 11
+      }
+    },
+    {
+      "part": "I",
+      "num": 15,
+      "title": "Mas n\u00f3s ab clara veu te manifestam lo principal celat per entrar al secret de na",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 1,
+        "ok": 5,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 16,
+      "title": "De lo ultimat terme de la transmutaci\u00f3 per reincrudaci\u00f3 de la cuyt e decocci\u00f3 de",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 10,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 17,
+      "title": "De l'atrobament de questa art, per qu\u00e8 \u00e9s feyta multiplicaci\u00f3; e des diverses di",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 2,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 18,
+      "title": "De la divisi\u00f3 de la pedra en .iii. coses; e de ses colors principals; e de qual ",
+      "dominant": "or",
+      "scores": {
+        "ol": 2,
+        "ot": 1,
+        "ok": 23,
+        "or": 36
+      }
+    },
+    {
+      "part": "I",
+      "num": 19,
+      "title": "En qual manera l'artista deu enquir la primera noticia de la pedra e de qual mat",
+      "dominant": "ot",
+      "scores": {
+        "ol": 1,
+        "ot": 8,
+        "ok": 3,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 20,
+      "title": "De la prima conexen\u00e7a de la pedra; e de qual materia \u00e9s feta; e de la virtut de ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 9,
+        "ok": 20,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 21,
+      "title": "De la creaci\u00f3 de la pedra per les virtuts de certayn digestions; et de lurs prop",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 0,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 22,
+      "title": "De la soluci\u00f3 de questi\u00f3 si le species de metallis pusquen se transmudar; e de f",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 3,
+        "ok": 24,
+        "or": 5
+      }
+    },
+    {
+      "part": "I",
+      "num": 25,
+      "title": "Coment l'artiste doit conoistre nature a fin que il la puis resambler in ascun c",
+      "dominant": "ok",
+      "scores": {
+        "ol": 5,
+        "ot": 0,
+        "ok": 10,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 26,
+      "title": "De la virtut enformativa, per la qual nostra pedra pren creaci\u00f3 e multiplicaci\u00f3 ",
+      "dominant": "ol",
+      "scores": {
+        "ol": 4,
+        "ot": 0,
+        "ok": 2,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 27,
+      "title": "De la mort de la pedra e des autres causes et choses en particularitat que empec",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 22,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 28,
+      "title": "De la corrupci\u00f3 e putrefacci\u00f3 de tots choses; e com tota chosa \u00e9[s] nada e pren ",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 0,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 29,
+      "title": "De la humiditat du nostra pedra e en qual manera ella est aygua\u00b9 permanent; e de",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 2,
+        "ok": 21,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 30,
+      "title": "De la manera de philosophier\u2074; et coment cest art et sciencie n'est pas donn\u00e9 si",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 5,
+        "ok": 13,
+        "or": 12
+      }
+    },
+    {
+      "part": "I",
+      "num": 31,
+      "title": "De quoy se trait propriement la teyntur des philosofs que teynt le vif argent co",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 13,
+        "or": 9
+      }
+    },
+    {
+      "part": "I",
+      "num": 32,
+      "title": "De la manere coment on doit procedre; et quantes choses se requirent a nostre di",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 4,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 33,
+      "title": "De .iiii. vertuts mudatives naturals; e coment els se appellen et coment on en o",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 34,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 34,
+      "title": "De la enformaci\u00f3 de calor natural ovesque la calor qu'est contra natura, per exc",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 46,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 35,
+      "title": "De les qualitats accidentals\u00b9; de la humiditat de la natura",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 6,
+        "ok": 1,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 36,
+      "title": "De linyatge sobir\u00e0 d'on tota natura hixit e est venguda et descendu",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 37,
+      "title": "De la materia, que desira haver la entegraci\u00f3 de la unitat de l'espirit de quint",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 0,
+        "or": 5
+      }
+    },
+    {
+      "part": "I",
+      "num": 38,
+      "title": "Coment tots les choses de lo m\u00f3n s\u00f3n de sofre e de viu argent, aux\u00ed com         ",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 7,
+        "or": 10
+      }
+    },
+    {
+      "part": "I",
+      "num": 39,
+      "title": "Coment en tout lieu se peut trouver nostre perre; et de l'engyn comment elle se ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 15,
+        "or": 6
+      }
+    },
+    {
+      "part": "I",
+      "num": 40,
+      "title": "[Senza rubrica]",
+      "dominant": "ol",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 41,
+      "title": "Coment la pedra, apr\u00e9s qu'ella es troba, pren adjutament de altres choses pur\u2078 e",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 1,
+        "ok": 4,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 42,
+      "title": "De la terminacion et fin de la perre; et des diverses figures; e comment elle es",
+      "dominant": "ol",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 43,
+      "title": "De la graunt conjunccion e de la maneure du mascle\u00b2 e de la femelle e de le ecli",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 4,
+        "or": 8
+      }
+    },
+    {
+      "part": "I",
+      "num": 44,
+      "title": "De natures radicaux pour aconsuir e pluis tost ataindre a la perfeccion et a la ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 19,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 45,
+      "title": "Coment la tout entencion de l'artiste doit estre en la preparacion de la materie",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 0,
+        "ok": 10,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 46,
+      "title": "Coment de la unit\u00e9 de nostre viu argent, qui est pluralit\u00e9, ist et saut la virtu",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 0,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 47,
+      "title": "Coment l'artiste doit considerer le povoir .ii. vifez argents phisiques apres le",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 10,
+        "ok": 28,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 48,
+      "title": "Coment la perre sortist divers nons per ses diverses effets",
+      "dominant": "ok",
+      "scores": {
+        "ol": 3,
+        "ot": 1,
+        "ok": 11,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 49,
+      "title": "Coment l'artiste doit guardier la nature de l'esperit de quint essencie ainsi co",
+      "dominant": "ok",
+      "scores": {
+        "ol": 10,
+        "ot": 12,
+        "ok": 38,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 50,
+      "title": "Coment nature separe le pur de l'impur et l'ord du net per soutilet\u00e9 e engyn de ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 4,
+        "ok": 12,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 51,
+      "title": "Coment les .iiii. elementaux natures issent e nayssent du mascle e de la femelle",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 7,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 52,
+      "title": "De la entencion per laquelle se fait union des .iiii. elements; e coment elle se",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 2,
+        "ok": 17,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 53,
+      "title": "Coment tout la substance de la perre est e doit estre empregn\u00e9 du fieu, en quel ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 5,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 54,
+      "title": "De la virtut universal que separe les elements et qui les conjoint; e dont elle ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 3,
+        "ok": 10,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 55,
+      "title": "De la nature de menstrual puant, en quel menstrual est le feu contra nature; e d",
+      "dominant": "ok",
+      "scores": {
+        "ol": 5,
+        "ot": 16,
+        "ok": 41,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 56,
+      "title": "Coment l'artist se doit habituer pur trover le dit menstrual et bien entendre sa",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 24,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 57,
+      "title": "Des principiis naturels confuz; et coment\u2079 il se engenrent\u00b9\u2070 e sont engenr\u00e9s per",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 1,
+        "ok": 5,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 58,
+      "title": "De la materie du souffre proporcion\u00e9 et de son equipollence a l'euvre de nature",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 7,
+        "ok": 8,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 59,
+      "title": "Coment art corrige et supploie les forces que elle trouve en la materie nature p",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 2,
+        "or": 8
+      }
+    },
+    {
+      "part": "I",
+      "num": 60,
+      "title": "De la nature de nostre viu argent et de ses extrems",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 13,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 61,
+      "title": "De la nature des eaues fors; et de leur experience et probacion",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 12,
+        "ok": 4,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 62,
+      "title": "Coment l'artiste doit entendre les bons esperits et les malvais et congnoystre p",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 6,
+        "ok": 26,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 63,
+      "title": "De la nature des fermens e des eaues; e de nos viu argent; e des terres du magis",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 2,
+        "ok": 14,
+        "or": 5
+      }
+    },
+    {
+      "part": "I",
+      "num": 64,
+      "title": "De la preparacion de la perre per la division d'elle en quatre elemens apres leu",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 37,
+        "ok": 16,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 65,
+      "title": "Dell fet de tota l'art e de tota esta sciencia en summa universall",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 10,
+        "or": 28
+      }
+    },
+    {
+      "part": "I",
+      "num": 66,
+      "title": "Qual cosa \u00e9s la materia del dit argent viu e del sofre e del sofre m\u00e9s propinch ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 6,
+        "ok": 10,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 67,
+      "title": "De la noticia de la calor naturall e del loch e de sa disposici\u00f3 per crear lo so",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 19,
+        "ok": 46,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 68,
+      "title": "Dell effectus del foch; e com n\u00f3s lo appellam en cest\u2075 magisterii",
+      "dominant": "ok",
+      "scores": {
+        "ol": 7,
+        "ot": 14,
+        "ok": 79,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 69,
+      "title": "Coment l'artiste se doit habituer pur mesurer ses imbibicions en prenant guarde ",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 8,
+        "ok": 8,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 70,
+      "title": "Coment la debilitacion de l'un es la confortacion de l'autre; e coment per la co",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 6,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 71,
+      "title": "",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 3,
+        "ok": 2,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 72,
+      "title": "Coment nostre perre se mue en touts les qualit\u00e9s elementaulx",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 6,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 73,
+      "title": "Que tout la substancie de la perre es essenciall",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 7,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 74,
+      "title": "Que la dit medicine doit estre de subtil substancie",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 1,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 75,
+      "title": "De recapitulacion; et comment d'un nature seule se fait tout ce que on demande",
+      "dominant": "ol",
+      "scores": {
+        "ol": 4,
+        "ot": 0,
+        "ok": 3,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 76,
+      "title": "*Coment on doit entendre le magisterii au reguard de la constitucion de cest sec",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 14,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 77,
+      "title": "",
+      "dominant": "ol",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 1,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 78,
+      "title": "Coment l'artist se doit en ordre metre pour resambler son magisterie a l'euvre d",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 1,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 79,
+      "title": "Coment les philosophes clamerent la dicte masse confuse\u00b9; e de la division de yc",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 8,
+        "ok": 23,
+        "or": 8
+      }
+    },
+    {
+      "part": "I",
+      "num": 80,
+      "title": "Coment les elemens s'assoubtilient et coment il se engrossissent par la roe circ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 26,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 81,
+      "title": "Coment l'artiste doit saver tout per cuer le roe circuler et la nature de la con",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 20,
+        "or": 6
+      }
+    },
+    {
+      "part": "I",
+      "num": 82,
+      "title": "De la cause pour laquelle les elemens ne puent convertir; e de la causa et rayso",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 0,
+        "ok": 8,
+        "or": 5
+      }
+    },
+    {
+      "part": "I",
+      "num": 83,
+      "title": "De lo simbolich retinacle de les elements",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 11,
+        "or": 3
+      }
+    },
+    {
+      "part": "I",
+      "num": 84,
+      "title": "De les qualitats accidentals\u00b9; de la humiditat de la natura",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 2,
+        "ok": 10,
+        "or": 2
+      }
+    },
+    {
+      "part": "I",
+      "num": 85,
+      "title": "Coment la tout entencion de l'artiste doit estre en la preparacion de la materie",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 9,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 86,
+      "title": "Demonstraci\u00f3 de la preparaci\u00f3 de la perre per difference exemplifi\u00e9 en operacion",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 6,
+        "ok": 4,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 87,
+      "title": "De los extrems de nostre perre; et quels sount et dont sount extraits ycelles ex",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 5,
+        "ok": 5,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 90,
+      "title": "Coment cest magisterie est feit per nature e per la operacion de l'art et non pa",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 5,
+        "ok": 10,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 91,
+      "title": "De la natura abortiva\u2075 de los corsos imperfets au reguart de los perfets; e de l",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 10,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 92,
+      "title": "Coment l'artiste [doit] noteer iceulx virtuts mineraulx pluis prochains au perfe",
+      "dominant": "or",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 1,
+        "or": 5
+      }
+    },
+    {
+      "part": "I",
+      "num": 93,
+      "title": "Coment l'artiste doit entendre quant la perre perdra de sa primere nature attemp",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 3,
+        "or": 1
+      }
+    },
+    {
+      "part": "I",
+      "num": 94,
+      "title": "*Coment e quant la perre est pluis* alunyat ab son temperament",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 3,
+        "or": 6
+      }
+    },
+    {
+      "part": "I",
+      "num": 95,
+      "title": "De la causa de l'acomplissement de la diminucion de corsos imperfets; et coment ",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 0,
+        "or": 7
+      }
+    },
+    {
+      "part": "I",
+      "num": 96,
+      "title": "De la latitude de complexion; et coment ille est comprise entre deux termes",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 3,
+        "ok": 11,
+        "or": 0
+      }
+    },
+    {
+      "part": "I",
+      "num": 97,
+      "title": "Coment la substancie du soufre se gete hors du ses extremes, quant la perre si s",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 9,
+        "or": 4
+      }
+    },
+    {
+      "part": "I",
+      "num": 100,
+      "title": "",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 1,
+        "ok": 27,
+        "or": 6
+      }
+    },
+    {
+      "part": "II",
+      "num": 1,
+      "title": "Ci commen\u00e7a la segona partida de questa libre, qu'\u00e9s la pratique; e primirament ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 2,
+        "ok": 14,
+        "or": 2
+      }
+    },
+    {
+      "part": "II",
+      "num": 2,
+      "title": "La primera distincci\u00f3 de l'alphabet conseguiex",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 2,
+        "or": 4
+      }
+    },
+    {
+      "part": "II",
+      "num": 4,
+      "title": "De la ter\u00e7a distincci\u00f3\u2074, que \u00e9s de les figures de la segona partida solutiva",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 1,
+        "or": 0
+      }
+    },
+    {
+      "part": "II",
+      "num": 6,
+      "title": "De la figura triangular, que demonstra lo commen\u00e7ament de la practique, e de l'e",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 4,
+        "or": 0
+      }
+    },
+    {
+      "part": "II",
+      "num": 7,
+      "title": "La primera disposici\u00f3 de comen\u00e7ar nostre obratge en forma de pratica; e de la co",
+      "dominant": "ok",
+      "scores": {
+        "ol": 16,
+        "ot": 23,
+        "ok": 36,
+        "or": 2
+      }
+    },
+    {
+      "part": "II",
+      "num": 8,
+      "title": "De la primera partida solutiva per forma de pratica; e de la liquefacti\u00f3 de F e ",
+      "dominant": "ol",
+      "scores": {
+        "ol": 12,
+        "ot": 0,
+        "ok": 5,
+        "or": 0
+      }
+    },
+    {
+      "part": "II",
+      "num": 10,
+      "title": "De la coniuncci\u00f3 de les dits liquefactions                 f. 48rb",
+      "dominant": "ok",
+      "scores": {
+        "ol": 11,
+        "ot": 10,
+        "ok": 21,
+        "or": 0
+      }
+    },
+    {
+      "part": "II",
+      "num": 11,
+      "title": "De ruyo e de les aygues corruptibles\u00b2",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 0,
+        "or": 1
+      }
+    },
+    {
+      "part": "II",
+      "num": 12,
+      "title": "De l'aygua corruptible",
+      "dominant": "ol",
+      "scores": {
+        "ol": 4,
+        "ot": 4,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "II",
+      "num": 13,
+      "title": "De altra aygua corruptible",
+      "dominant": "ol",
+      "scores": {
+        "ol": 4,
+        "ot": 2,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "II",
+      "num": 15,
+      "title": "Quals obratges fa cascuna element; e de proprietats d'aquelles",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 10,
+        "ok": 37,
+        "or": 3
+      }
+    },
+    {
+      "part": "II",
+      "num": 16,
+      "title": "La operaci\u00f3 del segon regiment qui \u00e9s lavar; e primer de l'aygua e de l'ayre que",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 38,
+        "ok": 29,
+        "or": 19
+      }
+    },
+    {
+      "part": "II",
+      "num": 17,
+      "title": "De lavament del foch e de la terra                                    f. 50rb",
+      "dominant": "ot",
+      "scores": {
+        "ol": 1,
+        "ot": 16,
+        "ok": 9,
+        "or": 3
+      }
+    },
+    {
+      "part": "II",
+      "num": 19,
+      "title": "La composici\u00f3 de sofre roig",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 4,
+        "or": 9
+      }
+    },
+    {
+      "part": "II",
+      "num": 20,
+      "title": "De la 4\u00aa operaci\u00f3 per la qual \u00e9s feta la composici\u00f3 de elixir; e primerament de ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 10,
+        "ok": 28,
+        "or": 2
+      }
+    },
+    {
+      "part": "II",
+      "num": 21,
+      "title": "De la composici\u00f3 de medicina reall",
+      "dominant": "ok",
+      "scores": {
+        "ol": 14,
+        "ot": 0,
+        "ok": 19,
+        "or": 3
+      }
+    },
+    {
+      "part": "II",
+      "num": 22,
+      "title": "La multiplicaci\u00f3 del nostre sofre segon",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 12,
+        "or": 8
+      }
+    },
+    {
+      "part": "II",
+      "num": 23,
+      "title": "De la confecci\u00f3 de la medicina",
+      "dominant": "ot",
+      "scores": {
+        "ol": 6,
+        "ot": 14,
+        "ok": 13,
+        "or": 5
+      }
+    },
+    {
+      "part": "II",
+      "num": 24,
+      "title": "De la fixaci\u00f3 de l'ayre",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 11,
+        "ok": 34,
+        "or": 1
+      }
+    },
+    {
+      "part": "II",
+      "num": 25,
+      "title": "De la enceraci\u00f3 que dona la fusi\u00f3 al elixir apr\u00e9s sa perfeta fixaci\u00f3",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 6,
+        "ok": 6,
+        "or": 6
+      }
+    },
+    {
+      "part": "II",
+      "num": 26,
+      "title": "De la exuberaci\u00f3 dell humit nutrimentall; e de liquefaci\u00f3",
+      "dominant": "ok",
+      "scores": {
+        "ol": 3,
+        "ot": 9,
+        "ok": 17,
+        "or": 2
+      }
+    },
+    {
+      "part": "II",
+      "num": 27,
+      "title": "De la composici\u00f3 de elixir a vermel",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 6,
+        "ok": 12,
+        "or": 8
+      }
+    },
+    {
+      "part": "II",
+      "num": 28,
+      "title": "De la perfecci\u00f3 e milloraci\u00f3 de les medicines e elixiris",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 7,
+        "ok": 10,
+        "or": 2
+      }
+    },
+    {
+      "part": "II",
+      "num": 29,
+      "title": "La manera com se multipliquen les medicines sobredites en virtut e en poder",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 17,
+        "ok": 3,
+        "or": 7
+      }
+    },
+    {
+      "part": "II",
+      "num": 30,
+      "title": "La multiplicaci\u00f3 de la medicina en quantitat                        f. 57ra",
+      "dominant": "ok",
+      "scores": {
+        "ol": 1,
+        "ot": 2,
+        "ok": 15,
+        "or": 8
+      }
+    },
+    {
+      "part": "II",
+      "num": 31,
+      "title": "De la recapitulaci\u00f3 del magisterii en forma de divisi\u00f3",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 1,
+        "or": 8
+      }
+    },
+    {
+      "part": "III",
+      "num": 2,
+      "title": "La assaci\u00f3 del mercuri dissolt e sa congelaci\u00f3",
+      "dominant": "ol",
+      "scores": {
+        "ol": 4,
+        "ot": 4,
+        "ok": 4,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 3,
+      "title": "La sublimaci\u00f3 del mercuri mortificat ab la vapor de son sofre",
+      "dominant": "ok",
+      "scores": {
+        "ol": 43,
+        "ot": 71,
+        "ok": 102,
+        "or": 36
+      }
+    },
+    {
+      "part": "III",
+      "num": 5,
+      "title": "Exuberaci\u00f3 altra feta de cors",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 6,
+        "or": 6
+      }
+    },
+    {
+      "part": "III",
+      "num": 6,
+      "title": "La rectificaci\u00f3 de la humor exuberada per la fusi\u00f3 de la tinctura",
+      "dominant": "ok",
+      "scores": {
+        "ol": 19,
+        "ot": 10,
+        "ok": 25,
+        "or": 21
+      }
+    },
+    {
+      "part": "III",
+      "num": 7,
+      "title": "La rectificaci\u00f3 de les perles",
+      "dominant": "ol",
+      "scores": {
+        "ol": 1,
+        "ot": 0,
+        "ok": 0,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 8,
+      "title": "La divisi\u00f3 de la especie e de la unitat de aquella ab la limositat de l'aygua",
+      "dominant": "ol",
+      "scores": {
+        "ol": 10,
+        "ot": 0,
+        "ok": 4,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 9,
+      "title": "La formaci\u00f3 de les perles ab la introducci\u00f3 de lur forma novela",
+      "dominant": "ol",
+      "scores": {
+        "ol": 4,
+        "ot": 0,
+        "ok": 0,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 10,
+      "title": "La manera com tu deus introduir la forma perfeta a les perles apr\u00e9s \u00e7o que elle ",
+      "dominant": "ol",
+      "scores": {
+        "ol": 15,
+        "ot": 0,
+        "ok": 2,
+        "or": 2
+      }
+    },
+    {
+      "part": "III",
+      "num": 13,
+      "title": "De la manera dels ferments composts                                            f",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 0,
+        "ok": 0,
+        "or": 5
+      }
+    },
+    {
+      "part": "III",
+      "num": 14,
+      "title": "De la manera dels ferments compost de liquefacti\u00f3, que n\u00f3s appellam 'gommes'",
+      "dominant": "or",
+      "scores": {
+        "ol": 3,
+        "ot": 4,
+        "ok": 4,
+        "or": 15
+      }
+    },
+    {
+      "part": "III",
+      "num": 17,
+      "title": "Ara direm la primera obra que veurem a la inquisici\u00f3 de la perfecti\u00f3 de mercuri",
+      "dominant": "ot",
+      "scores": {
+        "ol": 21,
+        "ot": 42,
+        "ok": 19,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 20,
+      "title": "Dels forns e dels vexels; e primerament dels forns",
+      "dominant": "ok",
+      "scores": {
+        "ol": 7,
+        "ot": 14,
+        "ok": 18,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 23,
+      "title": "La animaci\u00f3 dels elements e la conexen\u00e7a de aquella",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 18,
+        "ok": 36,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 24,
+      "title": "Apr\u00e9s direm com deus entendre los actes per contemprar\u00b2 lo elixir",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 8,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 25,
+      "title": "Ara direm dels .iii. instruments sens los quals la nostra obra no\u00b7s pot fer",
+      "dominant": "ol",
+      "scores": {
+        "ol": 6,
+        "ot": 2,
+        "ok": 2,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 26,
+      "title": "Ara direm que la colligaci\u00f3 dels elements \u00e9s feta en diverses proporcions",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 2,
+        "ok": 19,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 29,
+      "title": "Ara direm com tu deus entendre la sublimaci\u00f3 del mercuri e quanta \u00e9s       f. 69",
+      "dominant": "ot",
+      "scores": {
+        "ol": 4,
+        "ot": 36,
+        "ok": 35,
+        "or": 2
+      }
+    },
+    {
+      "part": "III",
+      "num": 30,
+      "title": "Ara direm de la diversitat del foch contra natura segons la proprietat de les me",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 3,
+        "or": 4
+      }
+    },
+    {
+      "part": "III",
+      "num": 31,
+      "title": "De la incrudaci\u00f3 del cors perfet e de sa diversitat; e del\u00b3 / accidents; e del  ",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 0,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 32,
+      "title": "Del doble guardament del cors; e del mercuri; e de lurs operacions con-      f. ",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 7,
+        "ok": 36,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 33,
+      "title": "Ara direm per via de pratica alguns branques de tinctura en les quals te porr\u00e0s ",
+      "dominant": "or",
+      "scores": {
+        "ol": 9,
+        "ot": 17,
+        "ok": 18,
+        "or": 22
+      }
+    },
+    {
+      "part": "III",
+      "num": 34,
+      "title": "Ara direm la obra que's fa de plom",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 4,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 35,
+      "title": "De la obra del estany",
+      "dominant": "or",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 0,
+        "or": 5
+      }
+    },
+    {
+      "part": "III",
+      "num": 36,
+      "title": "La congelaci\u00f3 de l'argent viu per pendre medicina en forma de metall\u00b9",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 3,
+        "ok": 2,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 37,
+      "title": "De la obra del Venus e del Mars",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 2,
+        "ok": 1,
+        "or": 0
+      }
+    },
+    {
+      "part": "III",
+      "num": 38,
+      "title": "Ara direm del cors e de l'espirit ensemps donant exemple per la generaci\u00f3 humana",
+      "dominant": "ok",
+      "scores": {
+        "ol": 4,
+        "ot": 13,
+        "ok": 38,
+        "or": 4
+      }
+    },
+    {
+      "part": "III",
+      "num": 39,
+      "title": "Ara direm de les condicions de nostra medicina; e quants n'[h]a; e com de aquell",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 17,
+        "ok": 34,
+        "or": 3
+      }
+    },
+    {
+      "part": "III",
+      "num": 40,
+      "title": "Ara direm la manera de separar los elements en 8 dias per aconseguir totes obres",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 23,
+        "ok": 6,
+        "or": 5
+      }
+    },
+    {
+      "part": "III",
+      "num": 41,
+      "title": "Ara direm de la natura del sobiran ferment",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 22,
+        "ok": 3,
+        "or": 8
+      }
+    },
+    {
+      "part": "III",
+      "num": 42,
+      "title": "Ara direm per altres revelacions de les propries nature e de lurs subiechs",
+      "dominant": "ok",
+      "scores": {
+        "ol": 0,
+        "ot": 7,
+        "ok": 17,
+        "or": 9
+      }
+    },
+    {
+      "part": "III",
+      "num": 43,
+      "title": "[Senza rubrica]",
+      "dominant": "ok",
+      "scores": {
+        "ol": 2,
+        "ot": 0,
+        "ok": 20,
+        "or": 10
+      }
+    },
+    {
+      "part": "III",
+      "num": 45,
+      "title": "Ara direm la composici\u00f3 de vinagre nostre, qui constreyn l'argent viu per     f.",
+      "dominant": "ot",
+      "scores": {
+        "ol": 0,
+        "ot": 4,
+        "ok": 2,
+        "or": 1
+      }
+    },
+    {
+      "part": "III",
+      "num": 46,
+      "title": "Ara direm de totes les proiections de totes medicines ax\u00ed universalment cum part",
+      "dominant": "ok",
+      "scores": {
+        "ol": 23,
+        "ot": 23,
+        "ok": 38,
+        "or": 12
+      }
+    },
+    {
+      "part": "III",
+      "num": 95,
+      "title": "",
+      "dominant": "ok",
+      "scores": {
+        "ol": 7,
+        "ot": 4,
+        "ok": 19,
+        "or": 3
+      }
+    }
+  ],
+  "chapters_by_dominant": {
+    "ol": 16,
+    "or": 22,
+    "ok": 86,
+    "ot": 29
+  }
+}

@@ -117,8 +117,14 @@ Would be falsified if:
 Three tests recommended by crazy-expert before pushing this constraint to Tier 2:
 
 1. **Out-of-sample recipe match** — pick an unmatched ot-dominant or ol-dominant Currier B folio, predict recipe content from prefix profile, attempt match against PL Testamentum or Brunschwig
-2. **MIDDLE-pool comparison** — compute MIDDLE distributions for ok/ot/ol/or at fixed paragraph position; test for distinctness
-3. **Within-paragraph sequencing** — test whether the predicted control-loop topology (qo→ol→ok→ot→ch/sh→qo) appears at the line-bigram level
+2. **MIDDLE-pool comparison** — completed in Phase 649 (s1); ok-ot identified as sister pair (JS=0.05); other pairs distinct (JS 0.34-0.44); allomorph hypothesis falsified
+3. **Within-paragraph sequencing** — completed in Phase 649 (s2/s3); predicted control-loop topology NOT supported as within-line bigram pattern; only sh→qo decision-gate transition at log2 +0.62
+
+### Update 2026-04-26: out-of-sample candidate identification (exploratory)
+
+Identified 37 unmatched Currier B folios with strong o-prefix dominance (top rel-enrichment ≥ +0.5). Distribution: or-dominant (14), ot-dominant (10), ol-dominant (7), ok-dominant (6). Cross-checked against 153 unmatched PL Testamentum chapters classified by content keywords. **Narrative concordance is suggestive** — ol-dominant folios point to multi-vessel coordination recipes, ot-dominant point to iteration/transfer recipes, or-dominant to outcome/tincture recipes. **Not statistically validated** — keyword classification too crude for discriminating-power test. Proper out-of-sample validation requires running Phase 628's 8D matching infrastructure on these candidates (half-day research phase, deferred).
+
+Candidates preserved at `phases/PHASE_648_VESSEL_4AXIS_RECIPE/pending_validation/`.
 
 ---
 
