@@ -73,7 +73,23 @@ Tested on f82v (×4 vessel spec) and f112r (×3 cohobation):
 
 Small iteration counts (×3, ×4) are structurally **indistinguishable from corpus noise** at line-window resolution. Many windows have those counts by chance. The cycle-counting idiom is **detectable only when the iteration count is large enough to be corpus-rare** (≥9 or so).
 
-This is an epistemic limit, not a sample-size issue: you cannot detect "encoded ×3" in a corpus where dozens of windows have 3 closed cycles by chance. The idiom may still operate on small-count recipes, but evidence at that scale is structurally invisible.
+## Reframing: idiom is plausibly special-case notation, not a general grammatical rule
+
+The original framing of this constraint treated the non-generalization as a **detection limit** — implying the idiom may exist on small-count recipes but signal is below corpus-noise floor. A more honest reading is that the idiom is plausibly **special-case notation used only when the iteration count is operationally non-derivable**:
+
+- For most distillation recipes (×2-4 cycles), count is implicit in observable state — the operator stops when distillate is clear / residue is exhausted / state looks right. Explicit count-encoding would be redundant.
+- For unusual high-iteration recipes (×9, ×13, ×21), the count itself is part of the recipe specification because it's tied to numerological/symbolic significance (common in Pseudo-Lullian work), traditional reference points, or empirical anchors. The operator can't derive it from state.
+
+f75r's III.19 is in pseudo-Lullian quintessence territory where numerological iteration counts appear most often. The cycle-counting idiom may therefore be a notation pattern reserved for this kind of recipe — not a general feature of the grammar.
+
+Under this reframing:
+- The constraint claim is **"f75r encodes its specifically-stated iteration counts at line-localized resolution via closed-cycle clusters"** (specific empirical fact).
+- The constraint does NOT claim **"the grammar has a general cycle-counting idiom"** (general grammatical rule).
+- Small-count recipes don't show the pattern not because we can't detect it, but plausibly because they don't use it (count is derivable from state).
+
+This treats the architecture as having both **finite-grammar layers** (uniform across the corpus, e.g., 49 instruction classes, sister-pair structure, atom morphology) and **special-case operational notation** (used when general rules don't suffice — operator improvisation for non-routine specifications). C1965 is in the second category; that's not a weakness, it's a clarification of what the constraint actually documents.
+
+Future tests of cycle-counting should target unmatched folios with corpus-rare closed-cycle clusters, then check whether their content suggests recipes with **operationally-non-derivable counts** (multiplication recipes, philosophers' stone work, named numerological operations). If those folios cluster on such content, the idiom is a real special-case pattern.
 
 ---
 

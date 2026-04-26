@@ -44,6 +44,42 @@ This framing applies to ALL interpretations below: each section explores what sp
 
 ---
 
+## Architectural Layering: Finite-Grammar vs. Special-Case Notation
+
+**Note added 2026-04-26 (Phase 650):** the manuscript's encoding architecture is plausibly **two-layered**, not uniformly finite-grammatical:
+
+**Finite-grammar layer** (uniform across the corpus, expected to obey consistent rules):
+- Token morphology (HEAD+MOD*+TERM atom architecture, C1394)
+- Forbidden transitions (5 hazard classes, C789)
+- Macro-state automaton (6 states)
+- Sister-pair structure (ch/sh, ok/ot)
+- Closed instruction-class system (49 classes, 100% coverage)
+- Block-level paragraph specialization (C1961)
+- Within-line interleaving (C1964)
+
+These features look like a designed grammatical system — the kind of thing a finite specification could capture.
+
+**Special-case operational notation** (used when general rules don't suffice; operator improvisation):
+- Cycle-counting idiom on f75r (C1965) — used for operationally-non-derivable iteration counts; does not generalize because most recipes don't need it
+- Possibly some HT compound-spec patterns specific to certain recipe types
+- Possibly plant-specific markers in herbal sections
+- Possibly numerological encoding tricks in pseudo-Lullian quintessence work
+
+Real workshop notation systems in the medieval period weren't formal grammars. They accumulated special-case conventions where general rules didn't cover the case — the way medieval manuscripts have systematic abbreviation conventions AND ad-hoc scribal abbreviations. The Voynich is unlikely to be an exception.
+
+**What this means for interpretation:**
+
+A constraint that fails to generalize is not necessarily "wrong scope-restriction." It may be capturing genuine special-case notation that operates only when the operational situation calls for it. C1965 (cycle-counting idiom) is the cleanest example: it works on f75r because the recipe's ×9 count is operationally non-derivable; it doesn't work on f82v's ×4 not because we can't detect it but plausibly because the idiom isn't there at all.
+
+Researchers approaching this corpus should expect:
+- Most structural features (Tier 0-2) ARE part of a coherent finite system
+- Some features (often Tier 3) are special-case notation for unusual operational requirements
+- Distinguishing the two requires testing for generalization AND for whether the operational situation required the encoding in the first place
+
+This is consistent with the project's broader frame: we are decoding **operational documentation**, not a formal language. Operational documentation in real workshops mixes systematic and improvisational elements.
+
+---
+
 ## 0. APPARATUS-CENTRIC SEMANTICS (CCM Phase)
 
 ### Tier 3: Core Finding
