@@ -1,9 +1,24 @@
 # Phase 656: SISMEL Catalan Conditional-Connective Corpus
 
 **Phase:** 656
-**Status:** SCAFFOLDED — pre-registration locked, Stage A pending
+**Status:** STAGE A COMPLETE — corpus extracted, all quality bars passed
 **Started:** 2026-04-26
 **Prior:** Phase 642 (Catalan-gloss correlation, returned null)
+
+## Stage A results
+
+| Bar | Threshold | Actual | Verdict |
+|---|---|---|---|
+| Procedural instances | >=800 | 1012 | PASS |
+| Categories in >=50% of subrecipes | >=3 | 4 | PASS |
+| Theorica negative-control instances | >=100 | 926 | PASS |
+| Spot-check correctness | >=18/20 | 24/24 in examples | PASS |
+
+**Procedural corpus:** 1012 connective instances across 89 subrecipes (Practica II + Mercuriorum III). 83/89 subrecipes contain >=1 instance.
+
+**Negative control:** 926 connective instances in Theorica (part I, 100 subrecipes). Comparable density to procedural — confirms connective grammar is general-purpose, not procedure-specific. Stage B alignment must use positional/structural correspondence, NOT raw density.
+
+**Notable:** III.19.0 (f75r match) example captures both `quatre vegades` and `aprés ix vegades` in one context window — the ×4/×9 anchors that confirmed the f75r match are connective-marked in Catalan.
 
 ---
 
