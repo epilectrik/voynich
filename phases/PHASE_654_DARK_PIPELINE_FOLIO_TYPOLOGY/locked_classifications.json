@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "phase": "PHASE_654_DARK_PIPELINE_FOLIO_TYPOLOGY",
+    "status": "PRE_REGISTERED",
+    "locked_date": "2026-04-26",
+    "purpose": "Folio-resolution atom-substrate typology test. Categories and per-folio classifications LOCKED before atom analysis. See PRE_REGISTRATION.md for full protocol."
+  },
+
+  "categories": [
+    "MINERAL_MERCURY",
+    "GOLD",
+    "SILVER",
+    "ANIMAL_SUBSTRATE",
+    "VEGETABLE_SUBSTRATE",
+    "FERMENT_GENERIC",
+    "MIXED_MINERAL",
+    "THEORETICAL"
+  ],
+
+  "classification_rule": "Primary substrate = the material being PROCESSED in the recipe, prioritizing the input substrate over solvent or product. For ambiguous cases, default to the most prominent substance in the recipe text.",
+
+  "folio_classifications": {
+    "f75r":  {"category": "VEGETABLE_SUBSTRATE", "recipe": "Aqua vitae 4x/9x reflux", "rationale": "wine + honey/wax = vegetable origin"},
+    "f76r":  {"category": "MIXED_MINERAL", "recipe": "Element separation silver-plate", "rationale": "M/O/L symbolic, silver test"},
+    "f84r":  {"category": "GOLD", "recipe": "Gold dissolution balneum+putrefaction", "rationale": "gold primary substrate"},
+    "f79r":  {"category": "MINERAL_MERCURY", "recipe": "Mercury sublimation -> elixir", "rationale": "Hg sublimation"},
+    "f82r":  {"category": "VEGETABLE_SUBSTRATE", "recipe": "Lunaria maceration 3-day sealed", "rationale": "lunaria primary"},
+    "f103r": {"category": "FERMENT_GENERIC", "recipe": "Ferment multiplication multi-chamber", "rationale": "B+C chambers symbolic ferment"},
+    "f76v":  {"category": "FERMENT_GENERIC", "recipe": "Ferment conversion (join H + bind)", "rationale": "H letter + 5th letter symbolic"},
+    "f77v":  {"category": "THEORETICAL", "recipe": "Furnace specification", "rationale": "leon vert / fum gelat conceptual"},
+    "f81v":  {"category": "GOLD", "recipe": "Potable gold / water of life", "rationale": "gold target substrate"},
+    "f82v":  {"category": "THEORETICAL", "recipe": "Vessel specification", "rationale": "stone-in-elements theory"},
+    "f112r": {"category": "MINERAL_MERCURY", "recipe": "Red mercury tincture (cohobation)", "rationale": "Hg cohobation"},
+    "f112v": {"category": "VEGETABLE_SUBSTRATE", "recipe": "Lunaria -> quicksilver", "rationale": "lunaria input substrate"},
+    "f116r": {"category": "MINERAL_MERCURY", "recipe": "Fixation / fusibility test", "rationale": "Hg fixation"},
+    "f107r": {"category": "MINERAL_MERCURY", "recipe": "Quicksilver coagulation", "rationale": "Hg coagulation"},
+    "f80r":  {"category": "ANIMAL_SUBSTRATE", "recipe": "Animal ash chain Ch21 multi", "rationale": "animal ash Ch21-25"},
+    "f83r":  {"category": "MINERAL_MERCURY", "recipe": "Drip-counted mercurial solvent", "rationale": "Hg-solvent work"},
+    "f108v": {"category": "MINERAL_MERCURY", "recipe": "Mercury sublimation III.29", "rationale": "Hg sublimation chapter (Phase 644 extension)"},
+    "f79v":  {"category": "VEGETABLE_SUBSTRATE", "recipe": "First liquefaction II.8", "rationale": "F-letter = vegetable per cipher (Phase 644 extension)"},
+    "f78r":  {"category": "MINERAL_MERCURY", "recipe": "Mercury congelation III.36", "rationale": "Hg congelation"},
+    "f86v3": {"category": "MIXED_MINERAL", "recipe": "3-day coniuncció II.10", "rationale": "conjunction work"},
+    "f77r":  {"category": "THEORETICAL", "recipe": "4-element temperament III.28", "rationale": "element temperament theoretical"}
+  },
+
+  "category_counts": {
+    "MINERAL_MERCURY": 7,
+    "GOLD": 2,
+    "SILVER": 0,
+    "ANIMAL_SUBSTRATE": 1,
+    "VEGETABLE_SUBSTRATE": 4,
+    "FERMENT_GENERIC": 2,
+    "MIXED_MINERAL": 2,
+    "THEORETICAL": 3,
+    "TOTAL": 21
+  },
+
+  "atoms_tested": ["lch", "lk", "eed", "cth", "eke", "ksh", "fch", "cs", "eckh"],
+
+  "statistical_protocol": {
+    "test": "Fisher exact, 2x2 contingency (folio-with-atom present/absent x in-category yes/no)",
+    "alpha_per_test": 0.05,
+    "bonferroni_correction": "alpha / 9 atoms = 0.00556",
+    "enrichment_threshold": "ratio >= 4x (category folio-presence rate / non-category folio-presence rate)"
+  },
+
+  "pass_criteria": {
+    "PASS": ">=3 atoms with enrichment >= 4x AND Bonferroni-corrected p < 0.00556",
+    "INCONCLUSIVE": "exactly 2 atoms pass — Tier 3 with underpowered note",
+    "NULL": "<=1 atom passes — typology framework refuted; C1939 and C1940 stand as isolated findings"
+  },
+
+  "pre_registered_predictions": {
+    "fch": "MINERAL_MERCURY (per C1939)",
+    "cs": "GOLD (per C1940)",
+    "eckh": "VEGETABLE_SUBSTRATE (per Phase 653 directional 38% vs 23%)",
+    "lch": "no prediction (equipment atom, expected null)",
+    "lk":  "no prediction (equipment atom, expected null)",
+    "eed": "no prediction (equipment atom, expected null)",
+    "cth": "no prediction (process atom, expected null)",
+    "eke": "no prediction (process atom, expected null)",
+    "ksh": "no prediction (process atom, expected null)"
+  }
+}
