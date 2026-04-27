@@ -1,0 +1,97 @@
+{
+  "phase": 662,
+  "pre_registration_commit": "d3fb478",
+  "superclass_categories": [
+    "DISTILLATION",
+    "IMBIBITION",
+    "PUTREFACTION",
+    "REFINEMENT"
+  ],
+  "partition": {
+    "superclass_positive": [
+      [
+        "III.19",
+        "f75r"
+      ],
+      [
+        "III.11",
+        "f112r"
+      ],
+      [
+        "III.28",
+        "f82v"
+      ],
+      [
+        "II.18",
+        "f76r"
+      ],
+      [
+        "II.14",
+        "f84r"
+      ],
+      [
+        "III.12",
+        "f79r"
+      ],
+      [
+        "III.22",
+        "f82r"
+      ],
+      [
+        "III.16",
+        "f103r"
+      ],
+      [
+        "III.18",
+        "f81v"
+      ],
+      [
+        "III.1",
+        "f112v"
+      ],
+      [
+        "III.4",
+        "f116r"
+      ],
+      [
+        "III.44",
+        "f107r"
+      ]
+    ],
+    "superclass_negative": [
+      [
+        "III.15",
+        "f76v"
+      ],
+      [
+        "III.27",
+        "f77v"
+      ]
+    ]
+  },
+  "pos_values": {
+    "f75r": 8.428571428571429,
+    "f112r": 41.5,
+    "f82v": 10.0,
+    "f76r": 16.75,
+    "f84r": 9.833333333333334,
+    "f79r": 4.0,
+    "f82r": 45.0,
+    "f103r": 14.285714285714286,
+    "f81v": 3.2,
+    "f112v": 9.875,
+    "f116r": 6.875,
+    "f107r": 7.0
+  },
+  "neg_values": {
+    "f76v": 8.285714285714286,
+    "f77v": 9.0
+  },
+  "pos_mean": 14.728968253968253,
+  "neg_mean": 8.642857142857142,
+  "observed_diff": 6.08611111111111,
+  "cohens_d": 0.4582595745597491,
+  "p_predicted": 0.3411,
+  "p_reversed": 0.6512,
+  "verdict": "INCONCLUSIVE"
+}
