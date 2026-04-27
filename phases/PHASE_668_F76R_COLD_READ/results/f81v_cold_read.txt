@@ -1,0 +1,353 @@
+=== RECIPE III.18 ===
+
+--- III.18.0 Catalan (1003 chars) ---
+Ara direm la composició de l'aygua potable simpla, que·s fa de sanch fixat per natura per confortar lo humit radicall humanal. Pren l'aygua que dessús te havem dit, que ha poder de sobre aliter dissolre or sots la conservació de sa specie o forme; e subtilia-lo en aquella per via de continuació ab inhumació en bany e laugera decocció. E aprés posa l'or dissolt en una carabaça de fin vidre, e distilla l'aygua e separa'n tota la humor. E estarà la substancia de l'or al fons del vexell tota secca. Puis pren de la lunaria e distilla la humor per alembich, en tro veuràs que par la diminució de sa sulphureitat no porà pus cremar. Continua ta distillació en altre receptori e aquella aygua pren en tro sobre'l cap de l'alembich no apparrà res de venes. En aquesta aygua gitaràs la substancia de l'or
+  ... (203 more chars)
+
+============================================================
+
+=== f81v DECODE ===
+Total tokens: 258
+Lines: 27 (1-27)
+Gallows-initial lines: ['1', '10']
+Paragraphs: 2
+  P1: 91 tokens, lines 1-9
+  P2: 167 tokens, lines 10-27
+
+================================================================================
+SEQUENTIAL TOKEN DECODE
+================================================================================
+
+============================================================
+PARAGRAPH 1 (lines 1-9, 91 tokens)
+============================================================
+
+  --- Line 1 ---
+    par                    [?               ] p.a.r           pause.yield.respond
+    shey                   [OBSERVE         ] e.y             cool.end
+    keedy                  [ke              ] e.d.y           cool.do.end
+    shekal                 [OBSERVE         ] e.k.a.l         cool.heat.yield.state
+    dal                    [MATERIAL-ADD    ] l               state
+    dar                    [MATERIAL-ADD    ] r               respond
+    ol                     [?               ] o.l             arrange.state
+    pchedy                 [pch             ] e.d.y           cool.do.end
+    shek                   [OBSERVE         ] e.k             cool.heat
+    dain                   [MATERIAL-ADD    ] i.n             iterate.bind
+    ofal                   [?               ] o.f.a.l         arrange.flag.yield.state
+    sheky                  [OBSERVE         ] e.k.y           cool.heat.end
+    otoin                  [VESSEL-SEAL     ] o.i.n           arrange.iterate.bind
+    olkol                  [VESSEL-LOAD     ] k.o.l           heat.arrange.state
+
+  --- Line 2 ---
+    qokedy                 [HEAT-OP         ] k.e.d.y         heat.cool.do.end
+    okaiin                 [VESSEL-CORRECT  ] a.i.i.n         yield.iterate.iterate.bind
+    kair                   [ka              ] i.r             iterate.respond
+    okal                   [VESSEL-CORRECT  ] a.l             yield.state
+    sar                    [sa              ] r               respond
+    ol                     [?               ] o.l             arrange.state
+    kain                   [ka              ] i.n             iterate.bind
+    olkain                 [VESSEL-LOAD     ] k.a.i.n         heat.yield.iterate.bind
+    al                     [?               ] a.l             yield.state
+    ol                     [?               ] o.l             arrange.state
+    rol                    [?               ] r.o.l           respond.arrange.state
+    dl                     [?               ] d.l             do.state
+
+  --- Line 3 ---
+    saiin                  [sa              ] i.i.n           iterate.iterate.bind
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    olkeedy                [VESSEL-LOAD     ] k.e.e.d.y       heat.cool.cool.do.end
+    okedy                  [VESSEL-CORRECT  ] e.d.y           cool.do.end
+    dykain                 [yk              ] a.i.n           yield.iterate.bind
+    shek                   [OBSERVE         ] e.k             cool.heat
+    chdy                   [MONITOR         ] d.y             do.end
+    dalal                  [MATERIAL-ADD    ] l.a.l           state.yield.state
+    oldy                   [VESSEL-LOAD     ] d.y             do.end
+
+  --- Line 4 ---
+    qokaiin                [HEAT-OP         ] k.a.i.i.n       heat.yield.iterate.iterate.bind
+    okain                  [VESSEL-CORRECT  ] a.i.n           yield.iterate.bind
+    cheeky                 [MONITOR         ] e.e.k.y         cool.cool.heat.end
+    dy                     [?               ] d.y             do.end
+    ol                     [?               ] o.l             arrange.state
+    kaiin                  [ka              ] i.i.n           iterate.iterate.bind
+    dain                   [MATERIAL-ADD    ] i.n             iterate.bind
+    dy                     [?               ] d.y             do.end
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    chckhy                 [MONITOR         ] c.k.h.y         adjust.heat.watch.end << heat-level-check
+
+  --- Line 5 ---
+    okaiin                 [VESSEL-CORRECT  ] a.i.i.n         yield.iterate.iterate.bind
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    otain                  [VESSEL-SEAL     ] a.i.n           yield.iterate.bind
+    chckhy                 [MONITOR         ] c.k.h.y         adjust.heat.watch.end << heat-level-check
+    okeedy                 [VESSEL-CORRECT  ] e.e.d.y         cool.cool.do.end
+    qoky                   [HEAT-OP         ] k.y             heat.end
+    kar                    [ka              ] r               respond
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    okar                   [VESSEL-CORRECT  ] a.r             yield.respond
+
+  --- Line 6 ---
+    qokain                 [HEAT-OP         ] k.a.i.n         heat.yield.iterate.bind
+    okaiin                 [VESSEL-CORRECT  ] a.i.i.n         yield.iterate.iterate.bind
+    ol                     [?               ] o.l             arrange.state
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    cheol                  [MONITOR         ] e.o.l           cool.arrange.state
+    lky                    [lk              ] y               end
+    ls                     [?               ] l.s             state.sequence
+    aiin                   [?               ] a.i.i.n         yield.iterate.iterate.bind
+    okain                  [VESSEL-CORRECT  ] a.i.n           yield.iterate.bind
+    daldy                  [MATERIAL-ADD    ] l.d.y           state.do.end
+
+  --- Line 7 ---
+    olor                   [VESSEL-LOAD     ] o.r             arrange.respond
+    ol                     [?               ] o.l             arrange.state
+    sheckhal               [OBSERVE         ] e.c.k.h.a.l     cool.adjust.heat.watch.yield.state
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    qokeedal               [HEAT-OP         ] k.e.e.d.a.l     heat.cool.cool.do.yield.state
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    chckhy                 [MONITOR         ] c.k.h.y         adjust.heat.watch.end << heat-level-check
+    schedy                 [sch             ] e.d.y           cool.do.end
+    qol                    [HEAT-OP         ] l               state
+
+  --- Line 8 ---
+    ykol                   [yk              ] o.l             arrange.state
+    or                     [?               ] o.r             arrange.respond
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    sheedy                 [OBSERVE         ] e.e.d.y         cool.cool.do.end
+    qol                    [HEAT-OP         ] l               state
+    keedy                  [ke              ] e.d.y           cool.do.end
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    dkain                  [ka              ] i.n             iterate.bind
+    cphedy                 [?               ] c.p.h.e.d.y     adjust.pause.watch.cool.do.end
+    oldy                   [VESSEL-LOAD     ] d.y             do.end
+
+  --- Line 9 ---
+    yar                    [?               ] y.a.r           end.yield.respond
+    olchey                 [VESSEL-LOAD     ] c.h.e.y         adjust.watch.cool.end
+    kaiin                  [ka              ] i.i.n           iterate.iterate.bind
+    okeey                  [VESSEL-CORRECT  ] e.e.y           cool.cool.end
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    olor                   [VESSEL-LOAD     ] o.r             arrange.respond
+    checkhy                [MONITOR         ] e.c.k.h.y       cool.adjust.heat.watch.end
+    daiidy                 [MATERIAL-ADD    ] i.i.d.y         iterate.iterate.do.end
+
+  SUMMARY P1:
+    Prefixes: {'none': 18, 'da': 15, 'ok': 10, 'sh': 8, 'ol': 8, 'ch': 8, 'qo': 7, 'ka': 6, 'ke': 2, 'ot': 2, 'sa': 2, 'yk': 2, 'pch': 1, 'lk': 1, 'sch': 1}
+    HEADs: {'e': 19, 'i': 17, 'o': 12, 'a': 11, 'k': 8, 'l': 6, 'd': 6, 'c': 5, 'r': 4, 'y': 2, 'p': 1}
+    dar(material-add): 15  chekar(quality-check): 4
+    Mean e-depth: 0.33  Obs MIDDLEs: {'ckh': 3}  hh: 0
+
+============================================================
+PARAGRAPH 2 (lines 10-27, 167 tokens)
+============================================================
+
+  --- Line 10 ---
+    polshy                 [po              ] l.s.h.y         state.sequence.watch.end
+    oshyteed               [?               ] o.s.h.y.t.e.e.d arrange.sequence.watch.end.transfer.cool.cool.do
+    qop                    [HEAT-OP         ] p               pause
+    okeedy                 [VESSEL-CORRECT  ] e.e.d.y         cool.cool.do.end
+    otedy                  [VESSEL-SEAL     ] e.d.y           cool.do.end
+    okshedy                [VESSEL-CORRECT  ] s.h.e.d.y       sequence.watch.cool.do.end
+    qoty                   [HEAT-OP         ] t.y             transfer.end
+    dairam                 [MATERIAL-ADD    ] i.r.a.m         iterate.respond.yield.final
+
+  --- Line 11 ---
+    oshey                  [?               ] o.s.h.e.y       arrange.sequence.watch.cool.end
+    qokeey                 [HEAT-OP         ] k.e.e.y         heat.cool.cool.end
+    okeey                  [VESSEL-CORRECT  ] e.e.y           cool.cool.end
+    oky                    [VESSEL-CORRECT  ] y               end
+    ykeey                  [yk              ] e.e.y           cool.cool.end
+    qoky                   [HEAT-OP         ] k.y             heat.end
+    okylky                 [VESSEL-CORRECT  ] y.l.k.y         end.state.heat.end
+    olchy                  [VESSEL-LOAD     ] c.h.y           adjust.watch.end
+    ky                     [?               ] k.y             heat.end
+    dsholyd                [OBSERVE         ] o.l.y.d         arrange.state.end.do
+
+  --- Line 12 ---
+    qol                    [HEAT-OP         ] l               state
+    ol                     [?               ] o.l             arrange.state
+    chdy                   [MONITOR         ] d.y             do.end
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    qokedy                 [HEAT-OP         ] k.e.d.y         heat.cool.do.end
+    ytedy                  [te              ] d.y             do.end
+    chetedy                [MONITOR         ] e.t.e.d.y       cool.transfer.cool.do.end
+    lkedey                 [lk              ] e.d.e.y         cool.do.cool.end
+    ytedy                  [te              ] d.y             do.end
+
+  --- Line 13 ---
+    ykecsey                [yk              ] e.c.s.e.y       cool.adjust.sequence.cool.end
+    dched                  [dch             ] e.d             cool.do
+    ytedy                  [te              ] d.y             do.end
+    ytedy                  [te              ] d.y             do.end
+    dar                    [MATERIAL-ADD    ] r               respond
+    ykeda                  [yk              ] e.d.a           cool.do.yield
+    iphy                   [?               ] i.p.h.y         iterate.pause.watch.end
+    qoty                   [HEAT-OP         ] t.y             transfer.end
+    ykedy                  [yk              ] e.d.y           cool.do.end
+    okal                   [VESSEL-CORRECT  ] a.l             yield.state
+
+  --- Line 14 ---
+    dshedy                 [OBSERVE         ] e.d.y           cool.do.end
+    ykeedy                 [yk              ] e.e.d.y         cool.cool.do.end
+    cseeky                 [?               ] c.s.e.e.k.y     adjust.sequence.cool.cool.heat.end
+    daiin                  [MATERIAL-ADD    ] i.i.n           iterate.iterate.bind
+    okedy                  [VESSEL-CORRECT  ] e.d.y           cool.do.end
+    qokeed                 [HEAT-OP         ] k.e.e.d         heat.cool.cool.do
+    qokedy                 [HEAT-OP         ] k.e.d.y         heat.cool.do.end
+    lchpchdy               [lch             ] p.c.h.d.y       pause.adjust.watch.do.end
+
+  --- Line 15 ---
+    qokal                  [HEAT-OP         ] k.a.l           heat.yield.state
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    ol                     [?               ] o.l             arrange.state
+    sheey                  [OBSERVE         ] e.e.y           cool.cool.end
+    salshcthdy             [sa              ] l.s.h.c.t.h.d.y state.sequence.watch.adjust.transfer.watch.do.end
+    qofchedy               [HEAT-OP         ] f.c.h.e.d.y     flag.adjust.watch.cool.do.end
+    r                      [?               ] r               respond
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    ltary                  [ta              ] r.y             respond.end
+
+  --- Line 16 ---
+    lor                    [?               ] l.o.r           state.arrange.respond
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    qoeedy                 [HEAT-OP         ] e.e.d.y         cool.cool.do.end
+    ol                     [?               ] o.l             arrange.state
+    chy                    [MONITOR         ] y               end
+    rshdy                  [OBSERVE         ] d.y             do.end
+    lshedy                 [lsh             ] e.d.y           cool.do.end
+    dar                    [MATERIAL-ADD    ] r               respond
+    chdy                   [MONITOR         ] d.y             do.end
+    pchdy                  [pch             ] d.y             do.end
+
+  --- Line 17 ---
+    sshkchdy               [OBSERVE         ] k.c.h.d.y       heat.adjust.watch.do.end
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    ol                     [?               ] o.l             arrange.state
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    qolchedy               [HEAT-OP         ] l.c.h.e.d.y     state.adjust.watch.cool.do.end
+    qokain                 [HEAT-OP         ] k.a.i.n         heat.yield.iterate.bind
+    shckhy                 [OBSERVE         ] c.k.h.y         adjust.heat.watch.end << heat-level-check
+    dl                     [?               ] d.l             do.state
+    ral                    [?               ] r.a.l           respond.yield.state
+
+  --- Line 18 ---
+    qokchdy                [HEAT-OP         ] k.c.h.d.y       heat.adjust.watch.do.end
+    chey                   [MONITOR         ] e.y             cool.end
+    ol                     [?               ] o.l             arrange.state
+    cheky                  [MONITOR         ] e.k.y           cool.heat.end
+    ol                     [?               ] o.l             arrange.state
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    qokedy                 [HEAT-OP         ] k.e.d.y         heat.cool.do.end
+    qokedy                 [HEAT-OP         ] k.e.d.y         heat.cool.do.end
+    chckhy                 [MONITOR         ] c.k.h.y         adjust.heat.watch.end << heat-level-check
+    qoky                   [HEAT-OP         ] k.y             heat.end
+
+  --- Line 19 ---
+    solkeey                [so              ] l.k.e.e.y       state.heat.cool.cool.end
+    ol                     [?               ] o.l             arrange.state
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    qokar                  [HEAT-OP         ] k.a.r           heat.yield.respond
+    sheckhy                [OBSERVE         ] e.c.k.h.y       cool.adjust.heat.watch.end
+    dcsedy                 [?               ] d.c.s.e.d.y     do.adjust.sequence.cool.do.end
+    qokar                  [HEAT-OP         ] k.a.r           heat.yield.respond
+    qokal                  [HEAT-OP         ] k.a.l           heat.yield.state
+    dol                    [do              ] l               state
+    chy                    [MONITOR         ] y               end
+
+  --- Line 20 ---
+    qocthey                [HEAT-OP         ] c.t.h.e.y       adjust.transfer.watch.cool.end
+    chekal                 [MONITOR         ] e.k.a.l         cool.heat.yield.state
+    chody                  [MONITOR         ] o.d.y           arrange.do.end
+    qokedy                 [HEAT-OP         ] k.e.d.y         heat.cool.do.end
+    lshety                 [lsh             ] e.t.y           cool.transfer.end
+    qoldy                  [HEAT-OP         ] l.d.y           state.do.end
+    ltedy                  [te              ] d.y             do.end
+    qotain                 [HEAT-OP         ] t.a.i.n         transfer.yield.iterate.bind
+
+  --- Line 21 ---
+    lsho                   [lsh             ] o               arrange
+    qokey                  [HEAT-OP         ] k.e.y           heat.cool.end
+    lshedy                 [lsh             ] e.d.y           cool.do.end
+    lshedy                 [lsh             ] e.d.y           cool.do.end
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    qolky                  [HEAT-OP         ] l.k.y           state.heat.end
+    lchedal                [lch             ] e.d.a.l         cool.do.yield.state
+    qol                    [HEAT-OP         ] l               state
+    otar                   [VESSEL-SEAL     ] a.r             yield.respond
+
+  --- Line 22 ---
+    qokal                  [HEAT-OP         ] k.a.l           heat.yield.state
+    qol                    [HEAT-OP         ] l               state
+    oiin                   [?               ] o.i.i.n         arrange.iterate.iterate.bind
+    cheey                  [MONITOR         ] e.e.y           cool.cool.end
+    dal                    [MATERIAL-ADD    ] l               state
+    lohedy                 [?               ] l.o.h.e.d.y     state.arrange.watch.cool.do.end
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    sal                    [sa              ] l               state
+    chtedytar              [MONITOR         ] t.e.d.y.t.a.r   transfer.cool.do.end.transfer.yield.respond
+
+  --- Line 23 ---
+    shol                   [OBSERVE         ] o.l             arrange.state
+    qekchy                 [?               ] q.e.k.c.h.y     ?.cool.heat.adjust.watch.end
+    ykaiin                 [yk              ] a.i.i.n         yield.iterate.iterate.bind
+    olkain                 [VESSEL-LOAD     ] k.a.i.n         heat.yield.iterate.bind
+    shedy                  [OBSERVE         ] e.d.y           cool.do.end
+    qoky                   [HEAT-OP         ] k.y             heat.end
+    dchedy                 [dch             ] e.d.y           cool.do.end
+    rol                    [?               ] r.o.l           respond.arrange.state
+    ol                     [?               ] o.l             arrange.state
+    cthdy                  [ct              ] h.d.y           watch.do.end
+
+  --- Line 24 ---
+    ytey                   [te              ] y               end
+    okchedy                [VESSEL-CORRECT  ] c.h.e.d.y       adjust.watch.cool.do.end
+    qokal                  [HEAT-OP         ] k.a.l           heat.yield.state
+    okeey                  [VESSEL-CORRECT  ] e.e.y           cool.cool.end
+    qol                    [HEAT-OP         ] l               state
+    cheedy                 [MONITOR         ] e.e.d.y         cool.cool.do.end
+    sal                    [sa              ] l               state
+    teol                   [te              ] o.l             arrange.state
+    dchdy                  [dch             ] d.y             do.end
+    ly                     [?               ] l.y             state.end
+
+  --- Line 25 ---
+    oshedy                 [?               ] o.s.h.e.d.y     arrange.sequence.watch.cool.do.end
+    qotedy                 [HEAT-OP         ] t.e.d.y         transfer.cool.do.end
+    shol                   [OBSERVE         ] o.l             arrange.state
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    yshchey                [OBSERVE         ] c.h.e.y         adjust.watch.cool.end
+    ol                     [?               ] o.l             arrange.state
+    chey                   [MONITOR         ] e.y             cool.end
+    qol                    [HEAT-OP         ] l               state
+    chedy                  [MONITOR         ] e.d.y           cool.do.end
+    tchd                   [tch             ] d               do
+    oky                    [VESSEL-CORRECT  ] y               end
+
+  --- Line 26 ---
+    ol                     [?               ] o.l             arrange.state
+    chechol                [MONITOR         ] e.c.h.o.l       cool.adjust.watch.arrange.state
+    tar                    [ta              ] r               respond
+    oiin                   [?               ] o.i.i.n         arrange.iterate.iterate.bind
+    okedy                  [VESSEL-CORRECT  ] e.d.y           cool.do.end
+    dal                    [MATERIAL-ADD    ] l               state
+    shey                   [OBSERVE         ] e.y             cool.end
+    olkeol                 [VESSEL-LOAD     ] k.e.o.l         heat.cool.arrange.state
+    olkeedy                [VESSEL-LOAD     ] k.e.e.d.y       heat.cool.cool.do.end
+    okeol                  [VESSEL-CORRECT  ] e.o.l           cool.arrange.state
+
+  --- Line 27 ---
+    dsheol                 [OBSERVE         ] e.o.l           cool.arrange.state
+    oiiin                  [?               ] o.i.i.i.n       arrange.iterate.iterate.iterate.bind
+    olkeedy                [VESSEL-LOAD     ] k.e.e.d.y       heat.cool.cool.do.end
+    tedy                   [te              ] d.y             do.end
+    cheky                  [MONITOR         ] e.k.y           cool.heat.end
+    shckhedy               [OBSERVE         ] c.k.h.e.d.y     adjust.heat.watch.cool.do.end
+    chal                   [MONITOR         ] a.l             yield.state
+
+  SUMMARY P2:
+    Prefixes: {'qo': 35, 'none': 28, 'ch': 23, 'sh': 20, 'ok': 12, 'te': 8, 'da': 6, 'yk': 6, 'ol': 5, 'lsh': 5, 'dch': 3, 'sa': 3, 'ot': 2, 'lch': 2, 'ta': 2, 'po': 1, 'lk': 1, 'pch': 1, 'so': 1, 'do': 1, 'ct': 1, 'tch': 1}
+    HEADs: {'e': 48, 'k': 25, 'o': 22, 'l': 19, 'd': 14, 'c': 8, 'r': 7, 'y': 6, 't': 5, 'a': 4, 'i': 3, 'p': 2, 's': 1, 'f': 1, 'q': 1, 'h': 1}
+    dar(material-add): 6  chekar(quality-check): 3
+    Mean e-depth: 0.55  Obs MIDDLEs: {'ckh': 2}  hh: 0
+
+Saved to C:\git\voynich\phases\PHASE_668_F76R_COLD_READ\results\f81v_decode_summary.json

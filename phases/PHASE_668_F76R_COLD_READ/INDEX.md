@@ -66,6 +66,30 @@ For each matched folio:
 
 ## Results
 
+### Line-by-Line Cold Reads
+
+Full sequential token decode for each folio: recipe text + every token with prefix gloss, atom codes, atom glosses, and observation MIDDLE annotations.
+
+| File | Folio | Recipe | Lines |
+|------|-------|--------|-------|
+| f76r_cold_read.txt | f76r | II.16.0 element separation | 705 |
+| f84r_cold_read.txt | f84r | II.12.0 gold dissolution | 480 |
+| f79r_cold_read.txt | f79r | III.12.0 mercury sublimation | 608 |
+| f103r_cold_read.txt | f103r | III.16.0 ferment multiplication | 781 |
+| f82r_cold_read.txt | f82r | III.22.0 fire governance | 457 |
+| f76v_cold_read.txt | f76v | III.15.0 ferment conversion | 566 |
+| f75r_cold_read.txt | f75r | III.19.0 aqua vitae | 657 |
+| f77v_cold_read.txt | f77v | III.27.0 furnace specification | 501 |
+| f81v_cold_read.txt | f81v | III.18.0 potable gold | 353 |
+| f82v_cold_read.txt | f82v | III.28.0 vessel specification | 473 |
+| f112r_cold_read.txt | f112r | III.11.0 red mercury tincture | 657 |
+| f112v_cold_read.txt | f112v | III.1.0 lunaria → quicksilver | 785 |
+| f116r_cold_read.txt | f116r | III.4.0 fixation / fusibility test | 783 |
+| f107r_cold_read.txt | f107r | III.44.0 quicksilver coagulation | 807 |
+| f80r_cold_read.txt | f80r | III.21.0 animal ash chain | 623 |
+
+### Paragraph Summary JSONs
+
 | File | Contents |
 |------|----------|
 | f76r_decode_summary.json | Per-paragraph stats for f76r |
