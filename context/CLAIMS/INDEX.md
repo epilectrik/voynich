@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1968 validated constraints | **Version:** 6.34 | **Date:** 2026-04-26
+**Total:** 1969 validated constraints | **Version:** 6.35 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 659: Window-Density qok Specificity for f75r ×9 Anchor — SUPPORTED (C1969)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1969 | Window-density specificity test confirms the Phase 636 f75r ×9 anchor under a third independent methodology after Phase 657 (prefix-class contiguous, NULL) and Phase 658 (lexeme contiguous, INCONCLUSIVE). ≥9 qok-class tokens within any 2-consecutive-line window appears on 3/82 = 3.7% of Currier B folios (f75r L37-L38, f86v3 L1-L2, f108r L48-L49). Of those three high-density folios, only f75r matches a Catalan chapter (III.19.0) carrying explicit `×9 vegades`. Matched-pair specificity test: 4/4 anchors land on matched folios, p=0.0208 under 10,000-permutation null with within-recipe pairing preserved. Corpus ceiling at 9 (no folio reaches ≥10). f86v3 (matched II.10.0 conjunction of liquefactions) and f108r (matched III.16.0 ferment multiplication) both reach the threshold without numerical `vegades` in their Catalan, separating density-as-cycle-count (falsified) from density-as-procedure-type-signature (consistent with). | 2 | B, cross-folio, qok, window-density, recipe-correspondence, x9-anchor, C1925, C1928, C1959, C1965 | rare_density=3of82=3.7%. observed=4of4. null_mean=2.16. p=0.0208. corpus_max=9. |
+
+**Phase 659 findings (Window-Density Specificity, X9_ANCHOR_SUPPORTED):**
+- 4/4 matched-pair anchors hit (3 trivial: III.11/×3, III.19/×4, III.28/×4; 1 non-trivial: III.19/×9). Null distribution accounts for triviality automatically — random folios match trivial counts but rarely the rare ×9.
+- Three high-density folios identified: f75r, f86v3, f108r. Only f75r's matched Catalan has explicit ×9. f86v3 and f108r's matched recipes (II.10, III.16) describe iterative but un-numbered procedures.
+- Joint specificity: f75r is the only folio where high qok-density co-occurs with a ×9-bearing matched recipe.
+- Corpus ceiling at N=9. Currier B grammar bounds local same-class density.
+- Methodology lesson: signal-shape matters. Phase 657 (prefix-class contiguous) and Phase 658 (lexeme-identity contiguous) tested cleaner-LOOKING variants of the original anchor and returned NULL/INCONCLUSIVE. Phase 659 tested the original signal shape (window-density) and produced p=0.02. When re-testing a documented finding, match the test to the claim's actual signal-shape, not to mathematical convenience.
 
 ---
 

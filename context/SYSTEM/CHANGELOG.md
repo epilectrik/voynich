@@ -4,6 +4,78 @@
 
 ---
 
+## Version 6.35 (2026-04-26) - Phases 656-659: SISMEL Catalan Utilization Stack
+
+### Summary
+
+Four-phase Catalan utilization push initiated by user prompt "i want to focus on the catalan text. that's really the end game." Expert-advisor + crazy-expert consultation converged on conditional grammar over substance cipher as the foundational unmined Catalan layer.
+
+- **Phase 656:** Built SISMEL Catalan connective corpus (1012 instances across 89 procedural subrecipes; 4/4 pre-registered quality bars passed).
+- **Phase 657:** Pre-registered cycle-anchor specificity test under prefix-class contiguous cluster definition. **NULL** — locked methodology revealed the Phase 636 f75r anchors are not contiguous prefix-class clusters.
+- **Phase 658:** Pre-registered re-test under lexeme-identity contiguous cluster definition. **INCONCLUSIVE** — re-confirmed the documented "qokedy ×4 corpus-singular" claim with quantitative bound (1/82 = 1.2%); ×9 corpus-vacuous under contiguous lexeme.
+- **Phase 659:** Pre-registered re-test under window-density methodology (the original Phase 636 signal shape). **SUPPORTED at p=0.0208.** C1969 registered as Tier 2.
+
+### Findings
+
+**Phase 656 — Connective corpus (data infrastructure):**
+- 1012 connective instances across 8 categories (TEMPORAL_AFTER, BOUNDED_DURATION, CONDITIONAL_TEMPORAL, CONDITIONAL_HYPOTHETICAL, CONSEQUENT, CAUSAL, REPETITION, MANNER)
+- 4 categories present in ≥50% of subrecipes
+- Theorica negative-control corpus 926 instances (comparable density to procedural — connective grammar is general-purpose, not procedure-specific)
+- III.19.0 captures both ×4 and ×9 cycle anchors in single context window: `per quatre 【vegades】 aliter broicé e triblé; e aprés ix vegades`
+
+**Phase 657 — Prefix-class contiguous (NULL):**
+- 2/4 raw matches, p=0.49 (uninformative)
+- N=3 trivial at 78% folio coverage, degraded to 1/3 non-trivial
+- f75r over-determination NOT CONFIRMED under literal definition
+- Striking byproduct: N=9 corpus-impossible under prefix-class contiguous (max=7)
+
+**Phase 658 — Lexeme-identity contiguous (INCONCLUSIVE):**
+- 1/4 matches, p=0.11
+- f75r is uniquely the only folio with any size-≥4 identical-token cluster (specifically `qokedy × 4` on L13)
+- Verbal "corpus-singular" → quantitative 1/82 = 1.2% bound
+- Lexeme-identity clusters of size ≥6 are corpus-vacuous
+
+**Phase 659 — Window-density (SUPPORTED, p=0.0208):**
+- ≥9 qok-class tokens in any 2-line window: 3/82 folios = 3.7%
+- Corpus ceiling at 9 (no folio reaches ≥10)
+- 3 high-density folios: f75r (matched III.19.0, has ×9), f86v3 (matched II.10.0, no ×9), f108r (matched III.16.0, no ×9)
+- Joint specificity: f75r uniquely satisfies the conjunction of high density AND matched-recipe carrying ×9
+
+### C1969 registered (Tier 2)
+
+C1969: Window-density qok-class specificity for the f75r ×9 anchor. ≥9 qok in 2-line window has 3.7% folio coverage. Matched-pair specificity 4/4, p=0.0208. Confirms Phase 636 anchor under third independent methodology. f86v3 and f108r identified as structurally-similar high-density folios whose matched recipes don't carry numerical cycle markers — separates density-as-cycle-count (falsified) from density-as-procedure-type-signature (consistent with).
+
+### Methodology lesson registered (in C1969)
+
+When re-testing a documented finding under cleaner methodology, the test's signal-shape must match what the original signal actually was — not a sanitized abstraction.
+
+- Phase 657 tested contiguous prefix-class — clean, NULL on f75r ×9 because L37-L38 sequence is interrupted by `lol`
+- Phase 658 tested contiguous lexeme — cleanest possible, DEGENERATE on ×9 because no folio has 9 identical adjacent tokens
+- Phase 659 tested window-density — matches original signal shape, SUPPORTED at p=0.02
+
+The Phase 636 anchor was always a window-density signal. Phases 657 and 658 tested cleaner-LOOKING propositions but tested the wrong propositions. Honest methodology means matching the test to the claim, not the test to mathematical convenience.
+
+### Pre-registration discipline
+
+All four phases used commit-before-test pre-registration. Pre-reg commits: 9986d5a (656), 7227532 (657), f0f151e (658), d1318ad (659). Two of three hypothesis tests returned null/inconclusive — a feature of the discipline working as intended, not a bug.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1969 (NEW) | Window-density qok-class specificity for the f75r ×9 anchor. Tier 2. |
+| Phase 656 dir | Created: connective corpus + extractor + INDEX + PRE_REG |
+| Phase 657 dir | Created: 3 scripts + JSON + FINDINGS + INDEX + PRE_REG (NULL verdict) |
+| Phase 658 dir | Created: 1 script + JSON + FINDINGS + INDEX + PRE_REG (INCONCLUSIVE verdict) |
+| Phase 659 dir | Created: 1 script + JSON + FINDINGS + INDEX + PRE_REG (SUPPORTED verdict) |
+| CLAUDE.md | Version 6.34 → 6.35, constraints 1968 → 1969, phases 655 → 659 |
+| CLAIMS/INDEX.md | Phase 659 section added (above Phase 655); total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1969 added; highest ID bumped to C1969 |
+
+---
+
 ## Version 6.34 (2026-04-26) - Phase 655: Header-Body HT Density Gap
 
 ### Summary

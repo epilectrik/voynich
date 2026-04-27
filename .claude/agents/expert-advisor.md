@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1968 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1969 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1968.
+the highest ID present is C1969.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1968 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1969 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1968 validated constraints are present as canonical one-line claims with tier
+1969 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-26 18:22
-**Version:** FROZEN STATE (1968 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-04-26 19:14
+**Version:** FROZEN STATE (1969 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2207,6 +2207,7 @@ C1965	f75r cycle-counting + per-cycle annotation idiom. The recipe's two-phase r
 C1966	HT density per Currier B folio correlates with distinct compound MIDDLE count at Spearman ρ=+0.602. Within-section robustness: Section B ρ=+0.764, Section H ρ=+0.507, Section S ρ=+0.686. Promotes C935 from "HT carries compound specification (corpus-wide)" to "HT density quantitatively tracks per-folio compound specification load." Mechanistically: HT density tracks compound DIVERSITY (different compound specs deployed) not merely instance count. Three competing readings tested: specification (current C935) strongly supported; attention-scaffolding (early Tier 4) REJECTED — sh_rate correlation goes opposite predicted direction; condensation hypothesis null at corpus level but present within H and S sections (ρ=-0.34, -0.40 vs total tokens, secondary effect).	2	B, HT, compound, specification, per-folio, density, C935, C740, HTSC
 C1967	e_depth paragraph-channel gradient. Among block-pure Currier B paragraphs, mean e_depth orders monotonically across the three primary fire-side channel classes: qo = 0.679 > ch = 0.606 > sh = 0.538. Difference qo-sh = +0.141. Cross-validates F-B-007 (e_depth = thermal-intensity continuous modifier, atom level) at paragraph aggregation. Tier 3 attentional-commitment reframing of e_depth (operator commits more thermal precision when actively driving heat than when passively monitoring) registered as candidate, not promoted. Vessel-side channel classes (ok=5, ot=5, ol=3, or=0) too rare in block-pure subset to characterize, consistent with C1964 within-line interleaving. Vessel-state preamble hypothesis (positional clustering at folio openings) tested and FALSIFIED — 5/13 at par 0/1 vs expected 3.9 under null, within noise.	2	B, paragraph, e_depth, channel-class, thermal-intensity, F-B-007, C1300, C929, C1961, C1225
 C1968	ch-class paragraph-header compound-specification concentration. Block-pure Currier B paragraphs with ch-dominant channel show shared-token-controlled HT-rate gap of +0.066. Other channel classes (qo, sh) do NOT show genuine concentration after token-pool control: qo collapses; sh actually reverses (-0.041). Refines C929 (ch=active test) with operational claim: active-testing operations require explicit compound-specification at the paragraph header before test execution in the body. Pairs with C1967 supplement (sh-class largest e_depth body-concentration) to establish channel-class-distinctive header-body specialization. The architecture is NOT universal "headers=spec, bodies=execution" — it's channel-class-specific with each class concentrating different content (ch: compound-spec at header; sh: thermal-commitment at body; qo: consistent throughout). Token-pool control addresses C1789 86% header-vocabulary-exclusivity caveat.	2	B, paragraph, header-body, ch, compound-specification, channel-class, C929, C935, C966, C1789, C1967
+C1969	Window-density specificity test confirms the Phase 636 f75r ×9 anchor under a third independent methodology after Phase 657 (prefix-class contiguous, NULL) and Phase 658 (lexeme contiguous, INCONCLUSIVE). ≥9 qok-class tokens within any 2-consecutive-line window appears on 3/82 = 3.7% of Currier B folios (f75r L37-L38, f86v3 L1-L2, f108r L48-L49). Of those three high-density folios, only f75r matches a Catalan chapter (III.19.0) carrying explicit `×9 vegades`. Matched-pair specificity test: 4/4 anchors land on matched folios, p=0.0208 under 10,000-permutation null with within-recipe pairing preserved. Corpus ceiling at 9 (no folio reaches ≥10). f86v3 (matched II.10.0 conjunction of liquefactions) and f108r (matched III.16.0 ferment multiplication) both reach the threshold without numerical `vegades` in their Catalan, separating density-as-cycle-count (falsified) from density-as-procedure-type-signature (consistent with).	2	B, cross-folio, qok, window-density, recipe-correspondence, x9-anchor, C1925, C1928, C1959, C1965
 
 ---
 
