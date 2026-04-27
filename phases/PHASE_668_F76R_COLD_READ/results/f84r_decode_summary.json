@@ -1,0 +1,144 @@
+{
+  "folio": "f84r",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "lines": "1-12",
+      "n_tokens": 158,
+      "prefix_counts": {
+        "none": 23,
+        "ka": 1,
+        "ch": 17,
+        "qo": 39,
+        "ot": 9,
+        "ok": 8,
+        "ol": 7,
+        "yk": 2,
+        "sh": 22,
+        "to": 3,
+        "sch": 2,
+        "da": 9,
+        "or": 1,
+        "te": 4,
+        "pch": 2,
+        "so": 2,
+        "ke": 1,
+        "do": 1,
+        "sa": 1,
+        "lk": 1,
+        "lsh": 1,
+        "po": 1,
+        "ta": 1
+      },
+      "head_counts": {
+        "l": 13,
+        "e": 40,
+        "k": 30,
+        "d": 5,
+        "s": 2,
+        "o": 22,
+        "c": 15,
+        "t": 5,
+        "y": 4,
+        "r": 11,
+        "a": 7,
+        "p": 1,
+        "i": 3
+      },
+      "dar_count": 9,
+      "chekar_count": 2,
+      "mean_e_depth": 0.582,
+      "obs_middle_counts": {
+        "ckh": 6,
+        "ecth": 2,
+        "cth": 1
+      }
+    },
+    {
+      "paragraph": 2,
+      "lines": "13-14",
+      "n_tokens": 21,
+      "prefix_counts": {
+        "pch": 1,
+        "qo": 5,
+        "ot": 5,
+        "ch": 1,
+        "sh": 3,
+        "none": 2,
+        "ok": 1,
+        "da": 1,
+        "sch": 1,
+        "ol": 1
+      },
+      "head_counts": {
+        "e": 5,
+        "t": 4,
+        "a": 2,
+        "c": 3,
+        "o": 1,
+        "r": 2,
+        "y": 1,
+        "d": 1,
+        "k": 2
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.476,
+      "obs_middle_counts": {
+        "cth": 2,
+        "cthh": 1
+      }
+    },
+    {
+      "paragraph": 3,
+      "lines": "15-34",
+      "n_tokens": 182,
+      "prefix_counts": {
+        "al": 4,
+        "fch": 1,
+        "sh": 23,
+        "ol": 15,
+        "da": 15,
+        "none": 25,
+        "or": 5,
+        "so": 3,
+        "qo": 27,
+        "ch": 16,
+        "ok": 10,
+        "ot": 8,
+        "dch": 1,
+        "sa": 3,
+        "yk": 5,
+        "ar": 4,
+        "te": 7,
+        "tch": 2,
+        "do": 4,
+        "lsh": 1,
+        "ke": 2,
+        "rch": 1
+      },
+      "head_counts": {
+        "c": 20,
+        "e": 49,
+        "k": 28,
+        "r": 13,
+        "o": 22,
+        "a": 14,
+        "q": 1,
+        "l": 5,
+        "d": 9,
+        "i": 9,
+        "t": 7,
+        "y": 3,
+        "m": 2
+      },
+      "dar_count": 15,
+      "chekar_count": 3,
+      "mean_e_depth": 0.495,
+      "obs_middle_counts": {
+        "cth": 2,
+        "ckh": 5
+      }
+    }
+  ]
+}

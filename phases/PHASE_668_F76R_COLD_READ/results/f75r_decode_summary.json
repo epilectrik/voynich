@@ -1,0 +1,334 @@
+{
+  "folio": "f75r",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "lines": "1-5",
+      "n_tokens": 46,
+      "prefix_counts": {
+        "kch": 2,
+        "ka": 4,
+        "ok": 1,
+        "qo": 7,
+        "sh": 9,
+        "da": 2,
+        "none": 11,
+        "ch": 4,
+        "or": 1,
+        "ta": 1,
+        "ol": 1,
+        "lk": 1,
+        "yk": 1,
+        "lsh": 1
+      },
+      "head_counts": {
+        "e": 16,
+        "r": 4,
+        "k": 6,
+        "y": 1,
+        "t": 1,
+        "i": 3,
+        "l": 3,
+        "a": 3,
+        "c": 3,
+        "q": 1,
+        "o": 4,
+        "d": 1
+      },
+      "dar_count": 2,
+      "chekar_count": 1,
+      "mean_e_depth": 0.63,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 2,
+      "lines": "6-6",
+      "n_tokens": 9,
+      "prefix_counts": {
+        "pch": 1,
+        "ke": 1,
+        "ol": 1,
+        "da": 1,
+        "ok": 1,
+        "qo": 3,
+        "ch": 1
+      },
+      "head_counts": {
+        "e": 3,
+        "k": 4,
+        "r": 1,
+        "c": 1
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.556,
+      "obs_middle_counts": {
+        "cth": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 3,
+      "lines": "7-12",
+      "n_tokens": 58,
+      "prefix_counts": {
+        "pch": 1,
+        "qo": 17,
+        "ta": 1,
+        "ch": 11,
+        "none": 8,
+        "so": 1,
+        "sh": 8,
+        "lsh": 1,
+        "ok": 2,
+        "ol": 3,
+        "sa": 1,
+        "ot": 1,
+        "te": 1,
+        "lch": 1,
+        "do": 1
+      },
+      "head_counts": {
+        "e": 18,
+        "k": 15,
+        "i": 1,
+        "y": 3,
+        "l": 3,
+        "r": 3,
+        "t": 2,
+        "c": 4,
+        "o": 3,
+        "d": 5,
+        "a": 1
+      },
+      "dar_count": 0,
+      "chekar_count": 1,
+      "mean_e_depth": 0.448,
+      "obs_middle_counts": {
+        "ckh": 2,
+        "cth": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 4,
+      "lines": "13-16",
+      "n_tokens": 39,
+      "prefix_counts": {
+        "pch": 1,
+        "ke": 3,
+        "qo": 13,
+        "ol": 2,
+        "sa": 3,
+        "none": 4,
+        "ch": 4,
+        "ot": 2,
+        "al": 1,
+        "so": 1,
+        "sh": 4,
+        "ok": 1
+      },
+      "head_counts": {
+        "e": 9,
+        "k": 12,
+        "s": 3,
+        "i": 3,
+        "o": 3,
+        "d": 1,
+        "c": 2,
+        "a": 1,
+        "y": 2,
+        "l": 3
+      },
+      "dar_count": 0,
+      "chekar_count": 0,
+      "mean_e_depth": 0.436,
+      "obs_middle_counts": {
+        "ckh": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 5,
+      "lines": "17-22",
+      "n_tokens": 52,
+      "prefix_counts": {
+        "pch": 1,
+        "sh": 13,
+        "lsh": 1,
+        "da": 2,
+        "ko": 1,
+        "qo": 10,
+        "so": 1,
+        "ot": 1,
+        "ch": 5,
+        "sa": 2,
+        "ol": 1,
+        "none": 12,
+        "lch": 1,
+        "ka": 1
+      },
+      "head_counts": {
+        "e": 18,
+        "l": 8,
+        "a": 5,
+        "y": 2,
+        "k": 6,
+        "r": 5,
+        "i": 2,
+        "o": 5,
+        "q": 1
+      },
+      "dar_count": 2,
+      "chekar_count": 0,
+      "mean_e_depth": 0.423,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 6,
+      "lines": "23-26",
+      "n_tokens": 31,
+      "prefix_counts": {
+        "pch": 1,
+        "sh": 5,
+        "qo": 9,
+        "ch": 2,
+        "ol": 1,
+        "sa": 2,
+        "none": 7,
+        "lch": 1,
+        "da": 3
+      },
+      "head_counts": {
+        "e": 7,
+        "k": 7,
+        "l": 4,
+        "i": 4,
+        "o": 3,
+        "c": 1,
+        "y": 1,
+        "d": 1,
+        "r": 2,
+        "a": 1
+      },
+      "dar_count": 3,
+      "chekar_count": 0,
+      "mean_e_depth": 0.484,
+      "obs_middle_counts": {
+        "ecth": 1,
+        "ckh": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 7,
+      "lines": "27-27",
+      "n_tokens": 11,
+      "prefix_counts": {
+        "da": 2,
+        "sh": 3,
+        "qo": 1,
+        "ok": 1,
+        "ot": 2,
+        "none": 2
+      },
+      "head_counts": {
+        "l": 1,
+        "t": 2,
+        "a": 3,
+        "e": 2,
+        "r": 2,
+        "d": 1
+      },
+      "dar_count": 2,
+      "chekar_count": 0,
+      "mean_e_depth": 0.182,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 8,
+      "lines": "28-31",
+      "n_tokens": 46,
+      "prefix_counts": {
+        "tch": 1,
+        "pch": 1,
+        "qo": 14,
+        "so": 1,
+        "none": 5,
+        "da": 5,
+        "sh": 5,
+        "ch": 8,
+        "ol": 3,
+        "ok": 3
+      },
+      "head_counts": {
+        "e": 14,
+        "k": 12,
+        "l": 6,
+        "o": 3,
+        "i": 4,
+        "d": 2,
+        "c": 2,
+        "t": 1,
+        "a": 2
+      },
+      "dar_count": 5,
+      "chekar_count": 1,
+      "mean_e_depth": 0.609,
+      "obs_middle_counts": {
+        "ecth": 1,
+        "ckh": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 9,
+      "lines": "32-46",
+      "n_tokens": 120,
+      "prefix_counts": {
+        "po": 1,
+        "da": 12,
+        "sh": 16,
+        "qo": 34,
+        "ch": 7,
+        "none": 11,
+        "lsh": 1,
+        "te": 1,
+        "so": 4,
+        "ok": 6,
+        "ot": 14,
+        "ka": 1,
+        "ol": 6,
+        "ke": 2,
+        "ko": 1,
+        "yk": 1,
+        "dch": 1,
+        "sa": 1
+      },
+      "head_counts": {
+        "l": 10,
+        "e": 30,
+        "k": 34,
+        "s": 3,
+        "c": 3,
+        "d": 8,
+        "r": 9,
+        "a": 10,
+        "y": 2,
+        "o": 5,
+        "i": 3,
+        "t": 3
+      },
+      "dar_count": 12,
+      "chekar_count": 1,
+      "mean_e_depth": 0.6,
+      "obs_middle_counts": {
+        "ckh": 1
+      },
+      "hh_count": 0
+    }
+  ]
+}

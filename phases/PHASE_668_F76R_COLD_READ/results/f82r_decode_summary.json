@@ -1,0 +1,293 @@
+{
+  "folio": "f82r",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "lines": "1-9",
+      "n_tokens": 72,
+      "prefix_counts": {
+        "qo": 28,
+        "da": 3,
+        "sh": 12,
+        "ok": 2,
+        "ch": 9,
+        "dch": 1,
+        "none": 4,
+        "lch": 4,
+        "so": 5,
+        "ot": 1,
+        "lk": 1,
+        "ct": 1,
+        "rch": 1
+      },
+      "head_counts": {
+        "c": 4,
+        "k": 23,
+        "i": 3,
+        "e": 23,
+        "l": 7,
+        "d": 1,
+        "o": 3,
+        "h": 1,
+        "t": 5,
+        "r": 1,
+        "a": 1
+      },
+      "dar_count": 3,
+      "chekar_count": 1,
+      "mean_e_depth": 0.764,
+      "obs_middle_counts": {
+        "ckh": 2,
+        "ecth": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 2,
+      "lines": "10-11",
+      "n_tokens": 17,
+      "prefix_counts": {
+        "ko": 1,
+        "qo": 5,
+        "ch": 4,
+        "ka": 1,
+        "ot": 1,
+        "ol": 2,
+        "da": 1,
+        "ok": 2
+      },
+      "head_counts": {
+        "l": 1,
+        "k": 1,
+        "p": 1,
+        "t": 2,
+        "o": 2,
+        "e": 4,
+        "m": 1,
+        "d": 1,
+        "q": 1,
+        "r": 1,
+        "a": 2
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.471,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 3,
+      "lines": "12-13",
+      "n_tokens": 17,
+      "prefix_counts": {
+        "tch": 1,
+        "ol": 3,
+        "qo": 6,
+        "ch": 3,
+        "lch": 1,
+        "sa": 1,
+        "ar": 1,
+        "de": 1
+      },
+      "head_counts": {
+        "e": 6,
+        "c": 3,
+        "k": 5,
+        "t": 1,
+        "l": 1,
+        "o": 1
+      },
+      "dar_count": 0,
+      "chekar_count": 0,
+      "mean_e_depth": 0.882,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 4,
+      "lines": "14-16",
+      "n_tokens": 28,
+      "prefix_counts": {
+        "te": 2,
+        "lch": 2,
+        "qo": 9,
+        "lk": 1,
+        "none": 5,
+        "da": 2,
+        "ch": 4,
+        "sa": 1,
+        "sh": 1,
+        "ol": 1
+      },
+      "head_counts": {
+        "d": 4,
+        "e": 8,
+        "k": 8,
+        "i": 2,
+        "r": 2,
+        "o": 1,
+        "m": 1,
+        "t": 1,
+        "c": 1
+      },
+      "dar_count": 2,
+      "chekar_count": 0,
+      "mean_e_depth": 0.857,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 5,
+      "lines": "17-18",
+      "n_tokens": 15,
+      "prefix_counts": {
+        "po": 1,
+        "ot": 1,
+        "sh": 2,
+        "da": 1,
+        "ch": 2,
+        "qo": 2,
+        "ok": 3,
+        "so": 1,
+        "or": 1,
+        "lch": 1
+      },
+      "head_counts": {
+        "l": 2,
+        "a": 4,
+        "e": 4,
+        "k": 2,
+        "r": 1,
+        "y": 2
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.667,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 6,
+      "lines": "19-24",
+      "n_tokens": 57,
+      "prefix_counts": {
+        "po": 1,
+        "qo": 16,
+        "none": 8,
+        "sh": 8,
+        "ke": 2,
+        "lk": 3,
+        "da": 4,
+        "ch": 6,
+        "ol": 1,
+        "ar": 1,
+        "lch": 4,
+        "sa": 1,
+        "do": 1,
+        "lsh": 1
+      },
+      "head_counts": {
+        "s": 2,
+        "k": 11,
+        "c": 3,
+        "e": 23,
+        "a": 1,
+        "l": 8,
+        "i": 3,
+        "y": 2,
+        "q": 1,
+        "r": 3
+      },
+      "dar_count": 4,
+      "chekar_count": 0,
+      "mean_e_depth": 1.0,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 7,
+      "lines": "25-25",
+      "n_tokens": 9,
+      "prefix_counts": {
+        "sh": 1,
+        "qo": 2,
+        "ch": 2,
+        "lch": 1,
+        "none": 1,
+        "ot": 1,
+        "ok": 1
+      },
+      "head_counts": {
+        "e": 6,
+        "k": 2,
+        "a": 1
+      },
+      "dar_count": 0,
+      "chekar_count": 0,
+      "mean_e_depth": 1.0,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 8,
+      "lines": "26-30",
+      "n_tokens": 44,
+      "prefix_counts": {
+        "pch": 1,
+        "sh": 5,
+        "da": 1,
+        "qo": 18,
+        "none": 4,
+        "ch": 5,
+        "ol": 1,
+        "dch": 1,
+        "lch": 5,
+        "rch": 1,
+        "ok": 1,
+        "lsh": 1
+      },
+      "head_counts": {
+        "e": 18,
+        "l": 2,
+        "k": 9,
+        "t": 9,
+        "c": 2,
+        "y": 1,
+        "r": 2,
+        "o": 1
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 1.023,
+      "obs_middle_counts": {},
+      "hh_count": 1
+    },
+    {
+      "paragraph": 9,
+      "lines": "31-32",
+      "n_tokens": 16,
+      "prefix_counts": {
+        "te": 1,
+        "sh": 2,
+        "da": 1,
+        "ch": 5,
+        "lch": 2,
+        "none": 4,
+        "sa": 1
+      },
+      "head_counts": {
+        "o": 2,
+        "e": 8,
+        "i": 3,
+        "c": 1,
+        "l": 1,
+        "r": 1
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.688,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    }
+  ]
+}

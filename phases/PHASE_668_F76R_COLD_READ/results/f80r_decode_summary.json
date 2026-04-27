@@ -1,0 +1,272 @@
+{
+  "folio": "f80r",
+  "paragraphs": [
+    {
+      "paragraph": 1,
+      "lines": "1-17",
+      "n_tokens": 204,
+      "prefix_counts": {
+        "or": 4,
+        "do": 2,
+        "sh": 27,
+        "qo": 55,
+        "none": 23,
+        "ok": 11,
+        "ol": 18,
+        "da": 7,
+        "yk": 1,
+        "ch": 23,
+        "tch": 1,
+        "so": 4,
+        "lk": 1,
+        "lch": 2,
+        "ot": 12,
+        "sa": 2,
+        "dch": 1,
+        "sch": 1,
+        "ke": 3,
+        "te": 2,
+        "ka": 1,
+        "ta": 1,
+        "rch": 1,
+        "lsh": 1
+      },
+      "head_counts": {
+        "a": 18,
+        "l": 19,
+        "e": 45,
+        "p": 3,
+        "o": 21,
+        "c": 15,
+        "k": 46,
+        "t": 18,
+        "y": 8,
+        "r": 6,
+        "s": 2,
+        "d": 1,
+        "i": 2
+      },
+      "dar_count": 7,
+      "chekar_count": 3,
+      "mean_e_depth": 0.397,
+      "obs_middle_counts": {
+        "ckh": 4,
+        "cth": 5,
+        "ecth": 6
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 2,
+      "lines": "18-29",
+      "n_tokens": 117,
+      "prefix_counts": {
+        "pch": 1,
+        "da": 3,
+        "ko": 2,
+        "qo": 35,
+        "rch": 3,
+        "ol": 8,
+        "sh": 16,
+        "ch": 7,
+        "ok": 6,
+        "none": 14,
+        "ar": 1,
+        "so": 5,
+        "lk": 1,
+        "ot": 5,
+        "ct": 1,
+        "lsh": 1,
+        "ta": 2,
+        "or": 1,
+        "al": 2,
+        "to": 2,
+        "yk": 1
+      },
+      "head_counts": {
+        "e": 29,
+        "l": 10,
+        "r": 7,
+        "t": 8,
+        "k": 31,
+        "c": 6,
+        "y": 3,
+        "a": 9,
+        "i": 2,
+        "o": 10,
+        "h": 1,
+        "s": 1
+      },
+      "dar_count": 3,
+      "chekar_count": 2,
+      "mean_e_depth": 0.564,
+      "obs_middle_counts": {
+        "cth": 1,
+        "ecth": 2
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 3,
+      "lines": "30-30",
+      "n_tokens": 7,
+      "prefix_counts": {
+        "to": 1,
+        "none": 1,
+        "sh": 2,
+        "qo": 2,
+        "da": 1
+      },
+      "head_counts": {
+        "r": 1,
+        "o": 1,
+        "e": 1,
+        "t": 1,
+        "c": 1,
+        "k": 1,
+        "l": 1
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.429,
+      "obs_middle_counts": {
+        "cth": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 4,
+      "lines": "31-36",
+      "n_tokens": 45,
+      "prefix_counts": {
+        "to": 1,
+        "ot": 1,
+        "ch": 11,
+        "qo": 13,
+        "none": 5,
+        "sh": 6,
+        "or": 2,
+        "so": 1,
+        "ok": 2,
+        "te": 1,
+        "ol": 2
+      },
+      "head_counts": {
+        "l": 3,
+        "a": 3,
+        "e": 17,
+        "k": 13,
+        "o": 5,
+        "r": 1,
+        "c": 1,
+        "t": 1,
+        "s": 1
+      },
+      "dar_count": 0,
+      "chekar_count": 1,
+      "mean_e_depth": 0.467,
+      "obs_middle_counts": {
+        "ecth": 3,
+        "ckh": 1
+      },
+      "hh_count": 0
+    },
+    {
+      "paragraph": 5,
+      "lines": "37-38",
+      "n_tokens": 19,
+      "prefix_counts": {
+        "po": 1,
+        "none": 4,
+        "ok": 2,
+        "ch": 4,
+        "ka": 1,
+        "ol": 1,
+        "qo": 3,
+        "sa": 1,
+        "sh": 2
+      },
+      "head_counts": {
+        "l": 3,
+        "e": 6,
+        "a": 2,
+        "i": 1,
+        "y": 2,
+        "k": 3,
+        "t": 1,
+        "r": 1
+      },
+      "dar_count": 0,
+      "chekar_count": 0,
+      "mean_e_depth": 0.579,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 6,
+      "lines": "39-40",
+      "n_tokens": 20,
+      "prefix_counts": {
+        "ta": 1,
+        "ch": 3,
+        "none": 3,
+        "ka": 1,
+        "lk": 2,
+        "sh": 3,
+        "ok": 4,
+        "ol": 1,
+        "sa": 1,
+        "tch": 1
+      },
+      "head_counts": {
+        "i": 2,
+        "e": 7,
+        "r": 1,
+        "s": 1,
+        "l": 3,
+        "o": 1,
+        "a": 4,
+        "k": 1
+      },
+      "dar_count": 0,
+      "chekar_count": 0,
+      "mean_e_depth": 0.4,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    },
+    {
+      "paragraph": 7,
+      "lines": "41-43",
+      "n_tokens": 29,
+      "prefix_counts": {
+        "ta": 1,
+        "none": 8,
+        "ch": 4,
+        "da": 2,
+        "ot": 3,
+        "lk": 2,
+        "ol": 2,
+        "so": 1,
+        "sh": 1,
+        "qo": 2,
+        "ka": 1,
+        "lch": 2
+      },
+      "head_counts": {
+        "l": 4,
+        "o": 5,
+        "s": 1,
+        "a": 6,
+        "e": 7,
+        "i": 3,
+        "t": 1,
+        "k": 2
+      },
+      "dar_count": 2,
+      "chekar_count": 0,
+      "mean_e_depth": 0.345,
+      "obs_middle_counts": {},
+      "hh_count": 0
+    }
+  ]
+}

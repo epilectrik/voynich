@@ -4,6 +4,30 @@
 
 ---
 
+## Version 6.38 (2026-04-27) - Phase 668: Folio Cold Reads Against Matched Recipes
+
+### Summary
+
+All 15 matched Voynich folios cold-read at the paragraph level against their Pseudo-Lull Testamentum recipe matches. 12/15 coherent, 3/15 plausible (specification/philosophical chapters), 0 incoherent. Cross-folio patterns confirmed: e-depth encodes thermal regime (0.09-1.50), observation MIDDLE density tracks monitoring requirement, paragraph count tracks recipe step complexity, dar distribution tracks material-addition pattern. Polyalphabetic cipher hypothesis rejected (atom bigram cosine similarity 0.609-0.994 across prefix classes). 6 new constraints registered.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1971 | Cold read coherence: 12 coherent, 3 plausible, 0 incoherent across 15 matched folios |
+| C1972 | e-depth quantitative thermal encoding (0.09-1.50 range, cross-validates C1967) |
+| C1973 | Observation MIDDLE density tracks recipe monitoring requirement (fade-out confirmed) |
+| C1974 | Paragraph count tracks recipe step complexity (2-18 range) |
+| C1975 | dar distribution tracks recipe material-addition pattern (5 patterns identified) |
+| C1976 | Polyalphabetic cipher hypothesis REJECTED (Tier 1 falsification) |
+| Phase 668 dir | Created: decode scripts + 15 decode summary JSONs + COLD_READ_FINDINGS.md + INDEX |
+| CLAIMS/INDEX.md | 6 new constraints (C1971-C1976); total 1966 → 1972, version 6.38 |
+| CLAUDE.md | Version 6.37 → 6.38, constraints → 1972, phases 667 → 668 |
+| Expert sync files | Regenerated |
+| Crazy-expert | Updated with C1971-C1976 |
+
+---
+
 ## Version 6.37 (2026-04-27) - Phase 667: Retraction Retests (Audit of Phases 643-666)
 
 ### Summary

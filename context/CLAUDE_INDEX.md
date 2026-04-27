@@ -194,6 +194,7 @@ requires explicit authorization from the user.
 
 | I need to... | Read this file |
 |--------------|----------------|
+| **Find a primary/secondary source text** | [SOURCES.md](SOURCES.md) — what's under `sources/` |
 | **Load transcript data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) |
 | **Token annotation data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) → Annotation Data Files |
 | **Rosettes foldout data** | [DATA/ROSETTES_DATA_ARCHITECTURE.md](DATA/ROSETTES_DATA_ARCHITECTURE.md) |
