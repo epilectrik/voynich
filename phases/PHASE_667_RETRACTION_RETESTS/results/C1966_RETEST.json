@@ -1,0 +1,9 @@
+{
+  "n_folios": 82,
+  "original_rho": 0.6024423657440229,
+  "original_p": 0.0,
+  "confound_rho_count_vs_types": 0.9597003378158326,
+  "partial_rho": 0.18932088604151698,
+  "partial_p": 0.0453,
+  "verdict": "CONFIRMED"
+}

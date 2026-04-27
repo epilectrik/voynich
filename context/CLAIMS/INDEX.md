@@ -1,6 +1,8 @@
 # Constraint Index
 
-**Total:** 1970 validated constraints | **Version:** 6.36 | **Date:** 2026-04-26
+**Total:** 1966 validated constraints | **Version:** 6.37 | **Date:** 2026-04-27
+
+> **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6114,7 +6116,7 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 
 ---
 
-### Phase 664: CONFIRMED-Tier Paragraph Stratification — SUPPORTED with LOO (C1970)
+### Phase 664: CONFIRMED-Tier Paragraph Stratification — PERMANENTLY RETRACTED v6.37 (C1970 — metric artifact, see Phase 667)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
@@ -6185,11 +6187,11 @@ INTERPRETATION_SUMMARY.md "Architectural Layering" section updated with refuted-
 
 ---
 
-### Phase 652: Block-Pure Paragraph Signatures — E_DEPTH_GRADIENT_CONFIRMED (C1967)
+### Phase 652/667: Block-Pure Paragraph Signatures — E_DEPTH_GRADIENT_CONFIRMED (C1967, retested v6.37)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
-| 1967 | e_depth paragraph-channel gradient. Among block-pure Currier B paragraphs (n=222 of 477 per C1961), mean e_depth orders monotonically across the three primary fire-side channel classes: qo (heat application, n=102) = 0.679 > ch (active test, n=82) = 0.606 > sh (passive monitor, n=25) = 0.538. Difference qo-sh = +0.141. Cross-validates F-B-007 (e_depth = thermal-intensity continuous modifier, atom level) at paragraph aggregation. Tier 3 attentional-commitment reframing of e_depth (operator commits more thermal precision when actively driving heat than when passively monitoring) registered as candidate, not promoted. Vessel-side channel classes (ok=5, ot=5, ol=3, or=0) too rare in block-pure subset to characterize, consistent with C1964 within-line interleaving. Vessel-state preamble hypothesis (positional clustering at folio openings) tested and FALSIFIED — 5/13 at par 0/1 vs expected 3.9 under null, within noise. | 2 | B, paragraph, e_depth, channel-class, thermal-intensity, F-B-007, C1300, C929, C1961, C1225 | qo_e_depth=0.679. ch_e_depth=0.606. sh_e_depth=0.538. delta_qo_sh=+0.141. baseline=0.636. n_qo=102. n_ch=82. n_sh=25. block_pure_94pct_fire_side. preamble_hypothesis_falsified. |
+| 1967 | e_depth paragraph-channel gradient survives compositional control. Among block-pure Currier B paragraphs, mean e_depth on NON-PREFIX tokens (removing qo/ch/sh/ok/ot/ol/or tokens to eliminate compositional confound) orders monotonically: qo-dominant (n=102) = 0.471 > ch-dominant (n=85) = 0.446 > sh-dominant (n=22) = 0.357. Gradient (qo-sh) = +0.114, permutation p=0.024. Monotonicity p=0.20 (gradient significant, strict monotonic ordering marginal). All-token gradient also confirmed: qo 0.670 > ch 0.609 > sh 0.536, p=0.005. Original C1967 (v6.36) lacked statistical test and did not control for compositional confound (qo tokens inherently carry higher e_depth). Phase 667 retest adds both. Cross-validates F-B-007 at paragraph aggregation. | 2 | B, paragraph, e_depth, channel-class, thermal-intensity, F-B-007, C1300, C929, C1961, C1225 | qo_nonpfx=0.471. ch_nonpfx=0.446. sh_nonpfx=0.357. gradient_nonpfx=+0.114. p_gradient_nonpfx=0.024. p_mono_nonpfx=0.20. n_qo=102. n_ch=85. n_sh=22. retested_phase_667. |
 
 **Phase 652 findings (Block-Pure Paragraph Signatures, E_DEPTH_GRADIENT_CONFIRMED):**
 - The e_depth paragraph-channel gradient (qo > ch > sh) is monotonic and not predicted by any prior constraint. Cross-validates F-B-007 at paragraph aggregation.
@@ -6201,11 +6203,11 @@ INTERPRETATION_SUMMARY.md "Architectural Layering" section updated with refuted-
 
 ---
 
-### Phase 651: HT-Density Validation — SPECIFICATION_DOMINANT + ATTENTION_REJECTED (C1966)
+### Phase 651/667: HT-Density Validation — SPECIFICATION_CONFIRMED_WEAK (C1966, retested v6.37)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
-| 1966 | HT density per Currier B folio correlates with distinct compound MIDDLE count at Spearman ρ=+0.602 (n=82, p<0.0001). Within-section robustness: Section B ρ=+0.764 (n=20), Section H ρ=+0.507 (n=32), Section S ρ=+0.686 (n=23). Promotes C935 from "HT carries compound specification (corpus-wide)" to "HT density quantitatively tracks per-folio compound specification load." Mechanistically: HT density tracks compound DIVERSITY (different compound specs deployed) not merely instance count. Three competing readings tested: specification (current C935) strongly supported; attention-scaffolding (early Tier 4) REJECTED — sh_rate correlation goes opposite predicted direction (ρ=-0.195, p=0.075); condensation hypothesis null at corpus level but present within H and S sections (ρ=-0.34, -0.40 vs total tokens, secondary effect). | 2 | B, HT, compound, specification, per-folio, density, C935, C740, HTSC | rho=+0.602. p<0.0001. n=82. sec_B_rho=+0.764. sec_H_rho=+0.507. sec_S_rho=+0.686. attention_rejected_sh=-0.195. condensation_H=-0.335. |
+| 1966 | HT density per Currier B folio correlates with distinct compound MIDDLE count after controlling for type-token confound. Original bivariate rho=+0.602 was ~70% inflated by type-token coupling (HT token count vs distinct types: rho=+0.960). Partial Spearman controlling for total HT token count: rho=+0.189, p=0.045 (n=82). Signal survives but is weak. HT rate tracks compound diversity independently of total HT token sampling, but the effect is small. Attention-scaffolding hypothesis remains REJECTED (sh_rate opposite direction). Original C1966 (v6.36) did not control for the species-area relationship between token count and type count. Phase 667 retest adds partial correlation. | 2 | B, HT, compound, specification, per-folio, density, C935, C740, HTSC | partial_rho=+0.189. partial_p=0.045. n=82. original_bivariate_rho=+0.602. confound_rho=+0.960. retested_phase_667. |
 
 **Phase 651 findings (HT-Density Validation, SPECIFICATION_DOMINANT + ATTENTION_REJECTED):**
 - HT density quantitatively tracks per-folio compound specification load. The relationship is robust across all three major sections and not driven by section confound.
@@ -6232,7 +6234,7 @@ INTERPRETATION_SUMMARY.md "Architectural Layering" section updated with refuted-
 
 ---
 
-### Phase 649: O-Prefix Validation — QO_OPENER_GENERIC + INTERLEAVING_DOMINANT (C1963, C1964)
+### Phase 649: O-Prefix Validation — QO_OPENER_GENERIC (C1963; C1964 PERMANENTLY RETRACTED v6.37 — baseline artifact, see Phase 667)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
@@ -6272,7 +6274,7 @@ INTERPRETATION_SUMMARY.md "Architectural Layering" section updated with refuted-
 
 ---
 
-### Phase 647 (645b): Heat-Mode Progression Refined — HEAT_ENCODING_CONFIRMED_ON_PHASE_DISTINCT (C1960)
+### Phase 647 (645b): Heat-Mode Progression Refined — ~~HEAT_ENCODING_CONFIRMED~~ RETRACTED v6.37 (C1960)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|
@@ -6316,7 +6318,7 @@ INTERPRETATION_SUMMARY.md "Architectural Layering" section updated with refuted-
 
 ---
 
-### Phase 643: Paragraph Ordering Disambiguation — LAYOUT_PHASE_COHERENCE_CONFIRMED (C1959)
+### Phase 643: Paragraph Ordering Disambiguation — ~~LAYOUT_PHASE_COHERENCE_CONFIRMED~~ RETRACTED v6.37 (C1959)
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |----|-------|------|-------|-------------|

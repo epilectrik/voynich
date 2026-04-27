@@ -1,0 +1,26 @@
+{
+  "channel_means_all": {
+    "qo": 0.66971636636264,
+    "ch": 0.6092880622712464,
+    "sh": 0.536416621212105
+  },
+  "channel_means_nonpfx": {
+    "qo": 0.4713799506138558,
+    "ch": 0.4461433310456316,
+    "sh": 0.3569232315772776
+  },
+  "channel_counts": {
+    "qo": 102,
+    "ch": 85,
+    "sh": 22
+  },
+  "gradient_all": 0.133299745150535,
+  "gradient_nonpfx": 0.11445671903657817,
+  "monotonic_all": true,
+  "monotonic_nonpfx": true,
+  "p_gradient_all": 0.0048,
+  "p_gradient_nonpfx": 0.0239,
+  "p_monotonic_all": 0.1959,
+  "p_monotonic_nonpfx": 0.2003,
+  "verdict": "CONFIRMED"
+}

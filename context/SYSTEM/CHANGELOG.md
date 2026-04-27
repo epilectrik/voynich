@@ -4,6 +4,56 @@
 
 ---
 
+## Version 6.37 (2026-04-27) - Phase 667: Retraction Retests (Audit of Phases 643-666)
+
+### Summary
+
+Comprehensive audit of Phases 620-666 found 6 constraints with serious methodological issues. 4 were retested with corrected methodology; 2 were deferred for full methodology redesign. Net result: 4 permanent retractions, 2 re-registered with corrected metrics. Constraint count 1970 → 1966.
+
+### Findings
+
+**C1964 (Phase 649) — Within-line interleaving rate: PERMANENTLY RETRACTED.**
+Original claim: 85% within-line interleaving rate. Baseline artifact — all-token same-line rate is 91.2%, prefixed-token baseline is 85.6%. Transition rate (85.3%) is *below* baseline (z=-0.96, NS). The original claim reported a number without computing what chance gives you.
+
+**C1966 (Phase 651) — HT density vs compound diversity: RE-REGISTERED with corrected metrics.**
+Original rho=+0.602 had type-token confound — HT token count mechanically predicts distinct compound MIDDLE types (confound rho=+0.960). Partial Spearman controlling for HT count: rho=+0.189, p=0.045. Signal survives but ~70% was confound. Re-registered at Tier 2 with partial correlation.
+
+**C1967 (Phase 652) — e_depth paragraph-channel gradient: RE-REGISTERED with stats + control.**
+Original claim: qo>ch>sh gradient with no statistical test and compositional confound (qo-prefix tokens inherently carry higher e_depth). Non-prefix token gradient: 0.471>0.446>0.357, permutation p=0.024. Gradient survives after removing prefix-token composition. Re-registered at Tier 2.
+
+**C1970 (Phase 664) — ke density balneum signature: PERMANENTLY RETRACTED.**
+Original d=+1.04 used ke/max(1,ek) — inconsistent units (ratio when ek>0, count when ek=0). With ke/(ke+ek) proportion: d=+0.256, p=0.24. Metric artifact produced artificial outlier separation.
+
+**C1959 (Phase 643) — RETRACTED, deferred.** Monotone-by-construction circularity in phase assignment (researcher read top-to-bottom, guaranteeing positive Spearman rho). Awaiting independent phase-assignment methodology.
+
+**C1960 (Phase 647) — RETRACTED, deferred.** Failed own pre-reg criteria (1/5 significant vs required 3/5); paragraph-size confound. Awaiting size-controlled redesign.
+
+### Methodology lessons registered
+
+1. Always compute a null baseline before claiming a rate is "high."
+2. Type-token confounds require partial correlation when X predicts count-of-Y and also predicts total-Y.
+3. Statistical tests are not optional — point estimates without significance tests are not registrable.
+4. Metric units must be consistent across all conditions.
+5. Pre-registration criteria are binding — if the result doesn't meet the locked bar, the test failed.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1959 | RETRACTED — monotone-by-construction circularity |
+| C1960 | RETRACTED — pre-reg violation + size confound |
+| C1964 | PERMANENTLY RETRACTED — baseline artifact |
+| C1966 | RE-REGISTERED — partial rho=+0.189, p=0.045 (was rho=+0.602) |
+| C1967 | RE-REGISTERED — non-prefix gradient p=0.024 (was no test) |
+| C1970 | PERMANENTLY RETRACTED — metric artifact (d=+0.256 from d=+1.04) |
+| Phase 667 dir | Created: 4 retest scripts + results JSONs + INDEX |
+| CLAIMS/INDEX.md | 4 entries retracted, 2 rewritten; total 1970 → 1966, version 6.37 |
+| CLAUDE.md | Version 6.36 → 6.37, constraints → 1966, phases 666 → 667 |
+| Expert sync files | Regenerated |
+| Crazy-expert | Retracted constraints removed; surviving corrections updated |
+
+---
+
 ## Version 6.36 (2026-04-26) - Phases 660-664: Operator-Verb Corpus + ke Density Balneum Signature
 
 ### Summary

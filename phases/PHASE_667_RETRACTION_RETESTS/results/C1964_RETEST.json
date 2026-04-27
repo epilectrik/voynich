@@ -1,0 +1,10 @@
+{
+  "all_token_same_line_rate": 0.9123970620965947,
+  "prefixed_token_same_line_rate": 0.8557870542003411,
+  "prefix_transition_same_line_rate": 0.8525009473285335,
+  "delta_vs_all": -0.059896114768061115,
+  "delta_vs_prefixed": -0.003286106871807526,
+  "n_transitions": 10556,
+  "z_score": -0.9610509095131337,
+  "verdict": "REVERSED"
+}

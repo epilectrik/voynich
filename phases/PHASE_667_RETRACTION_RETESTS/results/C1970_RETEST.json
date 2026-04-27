@@ -1,0 +1,120 @@
+{
+  "metric": "ke/(ke+ek) proportion",
+  "T1": {
+    "confirmed_n": 12,
+    "supported_n": 83,
+    "confirmed_mean": 0.9361269116154175,
+    "supported_mean": 0.8766111779596002,
+    "cohens_d": 0.2556192907257762,
+    "perm_p": 0.2357
+  },
+  "T2_sanity": {
+    "corpus_n": 468,
+    "corpus_mean": 0.8564370546277685,
+    "cohens_d": 0.36285255657272725,
+    "perm_p": 0.0969
+  },
+  "loo_folio": [
+    {
+      "drop": "f75r",
+      "d": 0.3421733631883929,
+      "p": 0.173,
+      "n": 9
+    },
+    {
+      "drop": "f76r",
+      "d": 0.1581496021769928,
+      "p": 0.4065,
+      "n": 8
+    },
+    {
+      "drop": "f84r",
+      "d": 0.23976986498447622,
+      "p": 0.3362,
+      "n": 7
+    }
+  ],
+  "min_loo_d": 0.1581496021769928,
+  "loo_paragraph_min_d": 0.22953760448131338,
+  "loo_paragraph_worst": {
+    "folio": "f76r",
+    "idx": 1,
+    "n_tokens": 58,
+    "ke_prop": 1.0
+  },
+  "confirmed_meta": [
+    {
+      "folio": "f75r",
+      "idx": 0,
+      "n_tokens": 235,
+      "ke_prop": 0.8518518518518519
+    },
+    {
+      "folio": "f75r",
+      "idx": 1,
+      "n_tokens": 57,
+      "ke_prop": 0.8
+    },
+    {
+      "folio": "f75r",
+      "idx": 2,
+      "n_tokens": 120,
+      "ke_prop": 0.9655172413793104
+    },
+    {
+      "folio": "f76r",
+      "idx": 0,
+      "n_tokens": 357,
+      "ke_prop": 0.92
+    },
+    {
+      "folio": "f76r",
+      "idx": 1,
+      "n_tokens": 58,
+      "ke_prop": 1.0
+    },
+    {
+      "folio": "f76r",
+      "idx": 2,
+      "n_tokens": 74,
+      "ke_prop": 1.0
+    },
+    {
+      "folio": "f76r",
+      "idx": 3,
+      "n_tokens": 57,
+      "ke_prop": 1.0
+    },
+    {
+      "folio": "f84r",
+      "idx": 0,
+      "n_tokens": 48,
+      "ke_prop": 1.0
+    },
+    {
+      "folio": "f84r",
+      "idx": 1,
+      "n_tokens": 35,
+      "ke_prop": 1.0
+    },
+    {
+      "folio": "f84r",
+      "idx": 2,
+      "n_tokens": 81,
+      "ke_prop": 0.9230769230769231
+    },
+    {
+      "folio": "f84r",
+      "idx": 3,
+      "n_tokens": 102,
+      "ke_prop": 0.9230769230769231
+    },
+    {
+      "folio": "f84r",
+      "idx": 4,
+      "n_tokens": 80,
+      "ke_prop": 0.85
+    }
+  ],
+  "verdict": "INCONCLUSIVE"
+}
