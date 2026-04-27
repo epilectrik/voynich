@@ -1,0 +1,105 @@
+{
+  "phase": 658,
+  "pre_registration_commit": "f0f151e",
+  "T1": {
+    "observed_matches": 1,
+    "n_primary": 4,
+    "null_mean": 0.1123,
+    "null_p_value": 0.11,
+    "per_item": [
+      {
+        "subrecipe_id": "III.11.0",
+        "count": 3,
+        "matched_folio": "f112r",
+        "has_lexeme_cluster_size_ge_N": false,
+        "matched_clusters": [],
+        "folio_max_cluster_size": 2
+      },
+      {
+        "subrecipe_id": "III.19.0",
+        "count": 4,
+        "matched_folio": "f75r",
+        "has_lexeme_cluster_size_ge_N": true,
+        "matched_clusters": [
+          {
+            "size": 4,
+            "lexeme": "qokedy",
+            "line_start": 13,
+            "line_end": 13,
+            "token_indices": [
+              115,
+              116,
+              117,
+              118
+            ]
+          }
+        ],
+        "folio_max_cluster_size": 4
+      },
+      {
+        "subrecipe_id": "III.19.0",
+        "count": 9,
+        "matched_folio": "f75r",
+        "has_lexeme_cluster_size_ge_N": false,
+        "matched_clusters": [],
+        "folio_max_cluster_size": 4
+      },
+      {
+        "subrecipe_id": "III.28.0",
+        "count": 4,
+        "matched_folio": "f82v",
+        "has_lexeme_cluster_size_ge_N": false,
+        "matched_clusters": [],
+        "folio_max_cluster_size": 2
+      }
+    ]
+  },
+  "T2": {
+    "triviality": {
+      "3": {
+        "n_folios": 7,
+        "pct": 8.536585365853659,
+        "trivial": false
+      },
+      "4": {
+        "n_folios": 1,
+        "pct": 1.2195121951219512,
+        "trivial": false
+      },
+      "6": {
+        "n_folios": 0,
+        "pct": 0.0,
+        "trivial": false
+      },
+      "7": {
+        "n_folios": 0,
+        "pct": 0.0,
+        "trivial": false
+      },
+      "9": {
+        "n_folios": 0,
+        "pct": 0.0,
+        "trivial": false
+      }
+    }
+  },
+  "T3": {
+    "verdict": "DEGENERATE (size>=9 cluster corpus-vacuous)",
+    "f75r_max_cluster_size": 4,
+    "folios_with_size_ge_4": [
+      "f75r"
+    ],
+    "folios_with_size_ge_9": [],
+    "qokedy_x4_folios": [
+      [
+        "f75r",
+        4,
+        13
+      ]
+    ]
+  },
+  "final_verdict": {
+    "T1": "INCONCLUSIVE",
+    "T3": "DEGENERATE (size>=9 cluster corpus-vacuous)"
+  }
+}
