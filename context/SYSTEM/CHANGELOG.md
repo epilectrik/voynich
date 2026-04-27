@@ -4,6 +4,63 @@
 
 ---
 
+## Version 6.36 (2026-04-26) - Phases 660-664: Operator-Verb Corpus + ke Density Balneum Signature
+
+### Summary
+
+Five-phase arc following the Catalan utilization push (656-659). Built operator-verb corpus (Phase 660), ran three pre-registered partition tests on it (661, 662, 663) — all NULL or REVERSED-NULL. Phase 663's sensitivity check observed a striking CONFIRMED-vs-supported tier difference. Phase 664 pre-registered that observation as a primary test with corpus-wide control + LOO safeguard. SUPPORTED with d > 1.0. **C1970 registered Tier 3.**
+
+### Findings
+
+**Phase 660 — Catalan operator-verb corpus:** 1,606 verb instances across 18 categories; 5 categories at ≥50% subrecipe coverage. Total-count bar overcalibrated (failed at 1606<2000); distributional bars passed. Notable Theorica-vs-procedural splits: DISTILLATION 83/14, SUBLIMATION 82/15, CONTAINMENT 18/3 sharply procedural; PUTREFACTION 30/80 Theorica-enriched.
+
+**Phase 661 — DISTILLATION verb folio-binary partition:** INCONCLUSIVE-reversed (d=-0.62, p_rev=0.14). Verb-category granularity doesn't carve VMS folio-aggregate signatures. Lunaria maceration (f82r ke/ek=45) and element separation (f76r) are thermally-intensive non-distillation recipes that share VMS thermal-marker signatures.
+
+**Phase 662 — Thermal-iteration superclass folio-binary:** INCONCLUSIVE (d=+0.46, predicted direction confirmed but underpowered; 12/14 superclass-positive, only 2 negatives). Aggregation went too broad.
+
+**Phase 663 — Paragraph-level partition:** REVERSED-NULL (d=-0.57, p_rev=0.065). But pre-registered sensitivity check produced incidental: CONFIRMED-match paragraphs (mean ke/ek=9.74, n=12) vs supported-match paragraphs (mean=5.03, n=83) — striking ~2× difference.
+
+**Phase 664 — CONFIRMED-tier stratification (the actual finding):**
+- T1: CONFIRMED (n=12) vs supported-tier (n=83): d=+1.04, p=0.0023, SUPPORTED
+- T2 sanity: CONFIRMED vs corpus baseline (n=468): d=+0.97, p=0.0057
+- LOO safeguard (post-pre-reg, before registration per expert-advisor): all three single-folio drops maintain d ≥ 0.8 (min d=+0.92)
+- All 3 CONFIRMED matches explicitly use balneum mariae or indirect-heat in their Catalan recipes (`en bany`, `met al bany`, controlled bath)
+
+### C1970 registered (Tier 3)
+
+C1970: Token-internal ke pattern density tracks dampened/indirect thermal regime on CONFIRMED-tier matched folios. `ke` = k(HEAD heat) + e(MOD intensity-dampener) per C1394/C1225 atom system. Refines C1226 (ke/ek = process-context conditioning) with external Catalan recipe-content alignment.
+
+**Tier 3 rationale:** Statistical evidence (d>1.0, p<0.01 on both T1 and T2, LOO d≥0.8) is Tier 2 caliber. Interpretive routing through Catalan content (`en bany`, etc.) places substantive claim at Tier 3. HARKing-borderline mitigated by transparent disclosure + T2 corpus-wide control + LOO safeguard. Both expert agents converged on Tier 3 registration with tight scoping.
+
+### Methodology lessons (registered in C1970 caveats)
+
+1. Match-tier stratification matters for verb-corpus partition tests; future tests should restrict to CONFIRMED matches.
+2. Pre-registered absolute count thresholds should be calibrated from empirical pre-survey ceilings (Phase 660 lesson).
+3. Verb-category folio-binary partition methodology is exhausted at this corpus size (3 phases failed: 661, 662, 663).
+4. Match-tier within-table stratification — when motivated by transparently pre-registered sensitivity check + sanity-checked against corpus baseline + LOO-validated — survives the HARKing concern at Tier 3.
+
+### Pre-registration discipline
+
+Five pre-registrations committed before each test ran (commits c790cf1, 780a509, d3fb478, 766b78a, b9b16da). Three failed (661, 662, 663). One succeeded (664). Discipline working as intended; signal extracted only when methodology matched the structural reality of the data.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1970 (NEW) | ke density balneum signature on CONFIRMED-tier matches. Tier 3. |
+| Phase 660 dir | Created: pre-reg + extractor + verb corpus (1606 instances) + INDEX |
+| Phase 661 dir | Created: pre-reg + script + JSON + INDEX (INCONCLUSIVE-reversed) |
+| Phase 662 dir | Created: pre-reg + script + JSON + INDEX (INCONCLUSIVE underpowered) |
+| Phase 663 dir | Created: pre-reg + script + JSON + INDEX (REVERSED-NULL) |
+| Phase 664 dir | Created: pre-reg + scripts + JSONs + INDEX (SUPPORTED, LOO passed) |
+| CLAUDE.md | Version 6.35 → 6.36, constraints 1969 → 1970, phases 659 → 664 |
+| CLAIMS/INDEX.md | Phase 664 section added; total updated |
+| README.md, GUIDE.md, WHAT_WE_CLAIM.md, METHODS_AND_TOOLS.md | Constraint count refresh |
+| Expert sync files | Regenerated |
+| Crazy-expert | C1970 added; highest ID bumped to C1970 |
+
+---
+
 ## Version 6.35 (2026-04-26) - Phases 656-659: SISMEL Catalan Utilization Stack
 
 ### Summary

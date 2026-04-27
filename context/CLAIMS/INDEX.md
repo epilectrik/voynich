@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1969 validated constraints | **Version:** 6.35 | **Date:** 2026-04-26
+**Total:** 1970 validated constraints | **Version:** 6.36 | **Date:** 2026-04-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -6111,6 +6111,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - The 4 FREEDOM features (C1919) — mod_c, term_h, mod_d, mod_s — are the manuscript's operational tuning knobs. They belong to the monitoring and closure atom clusters (C1924), meaning recipe individuality is primarily expressed through HOW MUCH monitoring/adjustment/staging each procedure requires, not through thermal intensity (which is REGIME-constrained).
 - Freedom channels replicate across sections (C1921, rho=0.783+), confirming this is a manuscript-wide design principle, not an artifact of any single section.
 - PREFIX and MOD drive ~60% of pairwise folio differentiation (C1922). Atom-level features predict operational profiles at rho > 0.8 (C1923), connecting compositional choices to measurable operational outcomes.
+
+---
+
+### Phase 664: CONFIRMED-Tier Paragraph Stratification — SUPPORTED with LOO (C1970)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1970 | Token-internal ke pattern density tracks dampened/indirect thermal regime on CONFIRMED-tier matched folios. The 3 CONFIRMED matches (f75r/III.19 aqua vitae `en bany`, f76r/II.18 element separation in controlled bath, f84r/II.14 gold dissolution `met al bany`) show paragraph-level ke/ek mean = 9.74 (n=12) vs supported-tier mean = 5.03 (n=83), Cohen's d=+1.04, p=0.0023. Corpus-wide sanity check: CONFIRMED 9.74 vs corpus baseline 4.68 (n=468 unmatched paragraphs), d=+0.97, p=0.0057. Leave-one-folio-out safeguard: all three LOO splits maintain d≥0.8 (min d=+0.92). `ke` decomposes as k(HEAD heat)+e(MOD intensity-dampener) per C1394/C1225 atom system, so high ke density indicates dampened/indirect thermal regime. Refines C1226 (ke/ek = process-context conditioning) with external Catalan recipe-content alignment. Phrasing scoped to "indirect/dampened thermal regime" not "balneum specifically" — 3-folio sample cannot distinguish balneum from cognate gentle-heat operations. Tier 3 due to interpretive routing through Catalan content; statistical evidence Tier 2 caliber. HARKing-borderline (motivated by Phase 663 sensitivity check) disclosed and bounded by T2 corpus-wide control + LOO safeguard per expert consensus. | 3 | B, paragraph, ke/ek, balneum-mariae, indirect-heat, recipe-correspondence, match-tier, C1225, C1226, C1735, C1872, C1899 | confirmed_n=12. supported_n=83. corpus_n=468. confirmed_mean=9.74. supported_mean=5.03. corpus_mean=4.68. d_supported=+1.04. d_corpus=+0.97. p_supported=0.0023. p_corpus=0.0057. loo_min_d=+0.92. |
+
+**Phase 664 findings (CONFIRMED-Tier Stratification, BALNEUM_KE_SIGNATURE):**
+- Phase 661+662+663 verb-corpus folio-binary partition tests all returned INCONCLUSIVE/REVERSED-NULL. Phase 663 pre-registered sensitivity check incidentally observed CONFIRMED-match paragraphs (mean ke/ek=9.74) elevated above supported-match paragraphs (mean=5.03).
+- Phase 664 pre-registered the sensitivity finding as a primary hypothesis with locked methodology + corpus-wide T2 sanity check. Result: SUPPORTED with d > 1.0 on both T1 and T2.
+- Expert-advisor recommended LOO safeguard before registration. LOO passed: all three single-folio drops maintain d ≥ 0.8.
+- Both expert-advisor and crazy-expert converged on Tier 3 with tightly-scoped phrasing — interpretive routing through Catalan content + small-N + selection-bias considerations.
+- The 3 CONFIRMED matches all use indirect-heat operations explicitly in their Catalan recipes (`en bany`, `met al bany`, controlled-bath separation), consistent with the ke = gentle-heat atom interpretation.
+- Methodological lesson registered: match-tier-stratification matters for verb-corpus partition tests. Future tests should restrict to CONFIRMED matches; supported-tier dilutes signal.
 
 ---
 

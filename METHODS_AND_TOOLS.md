@@ -6,7 +6,7 @@ This document covers the project's research methodology, tools, and repository s
 
 ## Methodology
 
-This project was built using AI-assisted computational analysis over 659 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), which wrote the analysis scripts, maintained the constraint system, and performed statistical validation. GPT-5 (OpenAI) provided independent cross-validation at key decision points. All claims are grounded in statistical evidence from the transcript data — no result depends on AI intuition or pattern-matching alone.
+This project was built using AI-assisted computational analysis over 664 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), which wrote the analysis scripts, maintained the constraint system, and performed statistical validation. GPT-5 (OpenAI) provided independent cross-validation at key decision points. All claims are grounded in statistical evidence from the transcript data — no result depends on AI intuition or pattern-matching alone.
 
 ### Progressive Context Architecture
 
@@ -24,7 +24,7 @@ The central methodological innovation is a **progressive context system** — a 
 
 6. **Expert validation prevents drift.** An embedded expert-advisor agent carries all constraints pre-loaded. It validates new findings against the full body of existing knowledge, catching contradictions and tier violations.
 
-The result: knowledge compounds across phases. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, an 18-atom instruction encoding architecture, the Brunschwig alignment, and 51 recipe-folio correspondences — but 659 phases, each building on validated prior work, could.
+The result: knowledge compounds across phases. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, an 18-atom instruction encoding architecture, the Brunschwig alignment, and 51 recipe-folio correspondences — but 664 phases, each building on validated prior work, could.
 
 ---
 
@@ -38,7 +38,7 @@ The result: knowledge compounds across phases. No individual analysis session co
 | 3 | SPECULATIVE — interpretive layer | ~40 |
 | 4 | EXPLORATORY — idea generation only | 2 |
 
-Total: 1,969 validated constraints.
+Total: 1,970 validated constraints.
 
 ---
 
@@ -84,7 +84,7 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ### AI Expert Mode
 
-Running [Claude Code](https://claude.ai/claude-code) in this repository automatically creates a Voynich expert with the full constraint system loaded as permanent context. The `CLAUDE.md` instructions, context architecture, and embedded agent definitions give the AI access to all 1,969 constraints, 6 structural contracts, and 75 model fits.
+Running [Claude Code](https://claude.ai/claude-code) in this repository automatically creates a Voynich expert with the full constraint system loaded as permanent context. The `CLAUDE.md` instructions, context architecture, and embedded agent definitions give the AI access to all 1,970 constraints, 6 structural contracts, and 75 model fits.
 
 ### Recipe-Folio Matching System
 
@@ -103,7 +103,7 @@ Infrastructure: `phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/shared_628.py`
 
 ```
 voynich/
-  context/            # Constraint system (1,969 validated constraints)
+  context/            # Constraint system (1,970 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     FOLIOS/           # Per-folio analysis notes (48 documented folios)
