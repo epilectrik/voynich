@@ -55,43 +55,49 @@ For each matched folio:
 
 Both need new recipe assignments. All f77v/f82v files deleted from this phase.
 
-## File Organization
+## Directory Structure
 
-### Narrative Cold Reads (expert-reviewed, fixes applied)
+```
+results/
+  cold_reads/           ← 13 narrative cold reads (one .md per folio)
+  data/                 ← raw .txt decodes and .json paragraph summaries
+  validation/           ← expert controls, positive tests, and reviews
+  _cold_read_reference.md   ← shared atom/prefix/observation reference
+  COLD_READ_FINDINGS.md     ← cross-folio patterns (pre-expert-review, preliminary)
+```
 
-| File | Status |
-|------|--------|
-| f75r_cold_read.md | Coherent (minor fixes applied) |
-| f84r_cold_read.md | Coherent (fixes applied: dar wording, ot-prefix, fch added) |
-| f76r_cold_read.md | Coherent (fixes applied: count corrections) |
-| f79r_cold_read.md | Coherent (fixes applied: fch/cipher conflation corrected) |
-| f76v_cold_read.md | Coherent (chekar counts verified real — shek/chek class tokens) |
-| f81v_cold_read.md | Coherent (fixes applied: ot prefix, fch added) |
-| f112v_cold_read.md | Coherent (fixes applied: line attribution, fch added) |
-| f103r_cold_read.md | **Partial** (verdict downgraded, tensions documented) |
-| f116r_cold_read.md | **Partial** (verdict downgraded, fch absence documented) |
-| f112r_cold_read.md | Partial (P14 calcination discordance added) |
-| f82r_cold_read_MULTI.md | Coherent (multi-recipe: III.19.1-5) |
+### cold_reads/ (the cold reads)
+
+| File | Verdict |
+|------|---------|
+| f75r_cold_read.md | Coherent |
+| f76r_cold_read.md | Coherent |
+| f76v_cold_read.md | Coherent |
+| f79r_cold_read.md | Coherent |
+| f81v_cold_read.md | Coherent |
+| f82r_cold_read.md | Coherent (multi-recipe: III.19.1-5) |
+| f84r_cold_read.md | Coherent |
+| f112v_cold_read.md | Coherent |
+| f103r_cold_read.md | Partially Coherent |
+| f112r_cold_read.md | Partially Coherent |
+| f116r_cold_read.md | Partially Coherent |
 | f107r_cold_read.md | Token-analysis only |
 | f80r_cold_read.md | Token-analysis only |
 
-### Expert Validation Layer
+### validation/ (expert testing layer)
 
 | File type | Count | Purpose |
 |-----------|-------|---------|
 | *_CONTROL.md | 4 | Negative controls (wrong recipe, expert-advisor) |
-| *_POSITIVE.md | 11 | Positive controls (right recipe, expert-advisor, prediction-first) |
-| *_REVIEW.md | 10 | Expert error-check of original cold reads |
-| *_MULTI.md | 1 | Multi-recipe hypothesis test (f82r) |
+| *_POSITIVE.md | 11 | Positive controls (right recipe, prediction-first) |
+| *_REVIEW.md | 10 | Expert error-check of cold reads |
 
-### Raw Data
+### data/ (raw decode output)
 
 | File type | Count | Purpose |
 |-----------|-------|---------|
 | *_cold_read.txt | 13 | Line-by-line token decode with prefix, atoms, glosses |
 | *_decode_summary.json | 13 | Per-paragraph quantitative stats |
-| _cold_read_reference.md | 1 | Shared atom/prefix/observation reference |
-| COLD_READ_FINDINGS.md | 1 | Cross-folio pattern analysis (pre-expert-review) |
 
 ## Auxiliary Analyses
 
