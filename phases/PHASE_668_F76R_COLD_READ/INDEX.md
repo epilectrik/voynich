@@ -1,17 +1,27 @@
-# Phase 668: Folio Cold Reads Against Matched Recipes
+# Phase 668: Validated Recipe-Folio Correspondence
 
-**Status:** COMPLETE (expert-reviewed)
+**Status:** IN PROGRESS
 **Started:** 2026-04-27
-**Goal:** Read decoded folios sequentially against their matched Pseudo-Lull Testamentum recipes, judging coherence at the control-grammar level.
+**Goal:** Validate folio-recipe matches through prediction-first structural assessment, negative controls, expert review, and complete token-level documentation with workshop readings.
+
+## What This Phase Produced
+
+1. **Discrimination methodology** — proved that prediction-first quantitative assessment (not narrative) can distinguish correct from incorrect recipe-folio pairings (4/4 negative controls INCOHERENT, 8/13 positive controls COHERENT)
+2. **Two rejected matches** — f77v (furnace spec) and f82v (vessel spec) identified as wrong assignments; both are procedural folios matched to specification chapters
+3. **Multi-recipe confirmation** — f82r encodes III.19.1-5 (waters 2-6), not just III.19.3 alone, per C1937
+4. **B Dictionary v3** — 52/100 entries revised through two independent expert audits; `e` defaults to "steady" not "cool"; workshop readings tested for sequential coherence
+5. **Complete token documentation** — every token on every line shown with workshop reading and source; 96-99% workshop-readable, 1-4% truly unrecognized
+6. **Validated folio readings** — recipe text + structural predictions + per-line token tables + cross-paragraph patterns + verdict, for 13 folios
 
 ## Approach
 
 For each matched folio:
-1. Pull the SISMEL Catalan recipe text (primary source)
-2. Produce full atom-level decode (prefix, atoms, glosses, e-depth)
-3. Identify paragraph structure (gallows-delimited)
-4. Read token sequence against recipe operations
-5. Check observation MIDDLEs, dar distribution, e-depth profile, and thermal signature
+1. Derive structural predictions from the recipe BEFORE reading the folio
+2. Pull SISMEL Catalan recipe text (primary source) with cipher resolved
+3. Produce full atom-level decode (prefix, atoms, v3 workshop readings)
+4. Assess every token on every line — nothing omitted
+5. Check structural features: e-depth arc, dar distribution, prefix shifts, observation MIDDLEs, material markers (fch/cs), counting anchors
+6. Compare prediction scorecard against negative control baseline
 
 ## Methodology Validation
 
@@ -59,30 +69,39 @@ Both need new recipe assignments. All f77v/f82v files deleted from this phase.
 
 ```
 results/
-  cold_reads/           ← 13 narrative cold reads (one .md per folio)
-  data/                 ← raw .txt decodes and .json paragraph summaries
-  validation/           ← expert controls, positive tests, and reviews
+  readings/             ← 13 validated folio readings (one .md per folio)
+  data/                 ← raw .txt decodes, .json summaries, workshop tables
+  validation/           ← expert controls, positive tests, reviews, v3 audits
+  headers/              ← per-folio header templates (recipe, predictions, overview)
+  footers/              ← per-folio footer templates (cross-paragraph, verdict)
   _cold_read_reference.md   ← shared atom/prefix/observation reference
-  COLD_READ_FINDINGS.md     ← cross-folio patterns (pre-expert-review, preliminary)
+  COLD_READ_FINDINGS.md     ← cross-folio patterns (preliminary, pre-expert-review)
 ```
 
-### cold_reads/ (the cold reads)
+### readings/ (the validated folio readings)
 
-| File | Verdict |
-|------|---------|
-| f75r_cold_read.md | Coherent |
-| f76r_cold_read.md | Coherent |
-| f76v_cold_read.md | Coherent |
-| f79r_cold_read.md | Coherent |
-| f81v_cold_read.md | Coherent |
-| f82r_cold_read.md | Coherent (multi-recipe: III.19.1-5) |
-| f84r_cold_read.md | Coherent |
-| f112v_cold_read.md | Coherent |
-| f103r_cold_read.md | Partially Coherent |
-| f112r_cold_read.md | Partially Coherent |
-| f116r_cold_read.md | Partially Coherent |
-| f107r_cold_read.md | Token-analysis only |
-| f80r_cold_read.md | Token-analysis only |
+**Rebuilt with v3 workshop readings (every token, every line):**
+
+| File | Verdict | Status |
+|------|---------|--------|
+| f75r_cold_read.md | Coherent (8/8) | **v3 rebuilt** |
+| f84r_cold_read.md | Coherent (7/9) | **v3 rebuilt** |
+
+**Awaiting v3 rebuild (structural verdicts confirmed, old token format):**
+
+| File | Verdict | Status |
+|------|---------|--------|
+| f76r_cold_read.md | Coherent (5/8) | v3 tables generated |
+| f76v_cold_read.md | Coherent (5/7) | v3 tables generated |
+| f79r_cold_read.md | Coherent (5/7) | v3 tables generated |
+| f81v_cold_read.md | Coherent | v3 tables generated |
+| f112v_cold_read.md | Coherent (6/8) | v3 tables generated |
+| f82r_cold_read.md | Coherent (multi-recipe: III.19.1-5) | v3 tables generated |
+| f103r_cold_read.md | Partially Coherent (5/7) | v3 tables generated |
+| f112r_cold_read.md | Partially Coherent | v3 tables generated |
+| f116r_cold_read.md | Partially Coherent (4/7) | v3 tables generated |
+| f107r_cold_read.md | Token-analysis only | no recipe |
+| f80r_cold_read.md | Token-analysis only | no recipe |
 
 ### validation/ (expert testing layer)
 
@@ -90,14 +109,27 @@ results/
 |-----------|-------|---------|
 | *_CONTROL.md | 4 | Negative controls (wrong recipe, expert-advisor) |
 | *_POSITIVE.md | 11 | Positive controls (right recipe, prediction-first) |
-| *_REVIEW.md | 10 | Expert error-check of cold reads |
+| *_REVIEW.md | 10 | Expert error-check of original readings |
+| v3_expert_validation.md | 1 | Expert v3 workshop reading validation (4 folios) |
+| v3_crazy_validation.md | 1 | Outsider v3 readability test (4 folios) |
 
-### data/ (raw decode output)
+### data/ (raw decode output + workshop tables)
 
 | File type | Count | Purpose |
 |-----------|-------|---------|
 | *_cold_read.txt | 13 | Line-by-line token decode with prefix, atoms, glosses |
 | *_decode_summary.json | 13 | Per-paragraph quantitative stats |
+| *_workshop_tables.md | 10 | v3 workshop reading tables (generated) |
+
+### B Dictionary (in `phases/B_OPERATIONAL_DICTIONARY/results/`)
+
+| File | Purpose |
+|------|---------|
+| b_dictionary_top100.md | Original (D0/D1 seeded, D2+ auto-generated) |
+| b_dictionary_top100_v2.md | v2: D2/D3 composed to workshop readings |
+| b_dictionary_top100_v3.md | **v3: "steady" not "cool", consistent labels, expert-audited** |
+| b_dictionary_audit.md | Expert-advisor audit (34 revisions) |
+| b_dictionary_crazy_audit.md | Crazy-expert audit (principles + 10 rewrites) |
 
 ## Auxiliary Analyses
 
