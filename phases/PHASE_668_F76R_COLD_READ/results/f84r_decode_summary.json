@@ -52,7 +52,8 @@
         "ckh": 6,
         "ecth": 2,
         "cth": 1
-      }
+      },
+      "hh_count": 0
     },
     {
       "paragraph": 2,
@@ -87,7 +88,8 @@
       "obs_middle_counts": {
         "cth": 2,
         "cthh": 1
-      }
+      },
+      "hh_count": 1
     },
     {
       "paragraph": 3,
@@ -138,7 +140,8 @@
       "obs_middle_counts": {
         "cth": 2,
         "ckh": 5
-      }
+      },
+      "hh_count": 1
     }
   ]
 }

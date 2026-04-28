@@ -1,14 +1,14 @@
 {
-  "total_tokens": 546,
-  "paragraphs": 4,
-  "par_data": [
+  "folio": "f76r",
+  "paragraphs": [
     {
-      "par": 1,
+      "paragraph": 1,
+      "lines": "1-29",
       "n_tokens": 357,
-      "line_range": "L1-L9",
-      "prefixes": {
+      "prefix_counts": {
         "po": 1,
         "ch": 73,
+        "none": 44,
         "qo": 75,
         "sa": 10,
         "sh": 54,
@@ -30,35 +30,43 @@
         "ta": 2,
         "pch": 1
       },
-      "dar": 7,
-      "chekar": 0,
-      "mean_e_depth": 0.5994397759103641,
-      "heads": {
-        "transfer": 10,
-        "adjust": 25,
-        "arrange": 19,
-        "state": 33,
-        "flag": 1,
-        "iterate": 14,
-        "cool": 122,
-        "watch": 1,
-        "yield": 38,
-        "heat": 52,
-        "do": 7,
-        "pause": 2,
-        "respond": 13,
-        "end": 9,
-        "?": 7,
-        "sequence": 4
-      }
+      "head_counts": {
+        "t": 10,
+        "c": 25,
+        "o": 19,
+        "l": 33,
+        "f": 1,
+        "i": 14,
+        "e": 122,
+        "h": 1,
+        "a": 38,
+        "k": 52,
+        "d": 7,
+        "p": 2,
+        "r": 13,
+        "y": 9,
+        "q": 7,
+        "s": 4
+      },
+      "dar_count": 19,
+      "chekar_count": 3,
+      "mean_e_depth": 0.599,
+      "obs_middle_counts": {
+        "cfh": 1,
+        "ckh": 10,
+        "ecth": 2,
+        "cth": 4
+      },
+      "hh_count": 0
     },
     {
-      "par": 2,
+      "paragraph": 2,
+      "lines": "30-34",
       "n_tokens": 58,
-      "line_range": "L30-L34",
-      "prefixes": {
+      "prefix_counts": {
         "po": 1,
         "sh": 9,
+        "none": 7,
         "qo": 13,
         "yk": 1,
         "ot": 4,
@@ -72,104 +80,120 @@
         "sa": 1,
         "ok": 1
       },
-      "dar": 0,
-      "chekar": 0,
+      "head_counts": {
+        "l": 6,
+        "e": 15,
+        "o": 3,
+        "k": 10,
+        "s": 1,
+        "y": 4,
+        "p": 1,
+        "c": 3,
+        "i": 5,
+        "d": 4,
+        "r": 2,
+        "a": 3,
+        "t": 1
+      },
+      "dar_count": 4,
+      "chekar_count": 0,
       "mean_e_depth": 0.5,
-      "heads": {
-        "state": 6,
-        "cool": 15,
-        "arrange": 3,
-        "heat": 10,
-        "sequence": 1,
-        "end": 4,
-        "pause": 1,
-        "adjust": 3,
-        "iterate": 5,
-        "do": 4,
-        "respond": 2,
-        "yield": 3,
-        "transfer": 1
-      }
+      "obs_middle_counts": {
+        "ckh": 2,
+        "ecth": 1
+      },
+      "hh_count": 0
     },
     {
-      "par": 3,
-      "n_tokens": 74,
-      "line_range": "L35-L41",
-      "prefixes": {
+      "paragraph": 3,
+      "lines": "35-40",
+      "n_tokens": 65,
+      "prefix_counts": {
         "po": 1,
-        "sh": 11,
-        "qo": 7,
+        "sh": 10,
+        "qo": 6,
         "yk": 1,
         "al": 1,
         "lk": 4,
-        "ol": 5,
-        "ot": 6,
+        "ol": 4,
+        "ot": 5,
         "ok": 11,
+        "none": 7,
         "ko": 1,
         "ch": 5,
-        "do": 2,
+        "do": 1,
         "lch": 1,
         "da": 1,
-        "or": 3,
-        "sa": 4,
-        "ta": 1,
-        "fch": 1
+        "or": 2,
+        "sa": 3,
+        "ta": 1
       },
-      "dar": 0,
-      "chekar": 0,
-      "mean_e_depth": 0.43243243243243246,
-      "heads": {
-        "state": 4,
-        "adjust": 8,
-        "transfer": 1,
-        "yield": 19,
-        "arrange": 4,
-        "sequence": 1,
-        "cool": 20,
-        "?": 1,
-        "heat": 5,
-        "iterate": 6,
-        "end": 4,
-        "do": 1
-      }
+      "head_counts": {
+        "l": 2,
+        "c": 7,
+        "t": 1,
+        "a": 18,
+        "o": 4,
+        "s": 1,
+        "e": 19,
+        "q": 1,
+        "k": 3,
+        "i": 6,
+        "y": 3
+      },
+      "dar_count": 1,
+      "chekar_count": 0,
+      "mean_e_depth": 0.462,
+      "obs_middle_counts": {
+        "ckh": 4
+      },
+      "hh_count": 0
     },
     {
-      "par": 4,
-      "n_tokens": 57,
-      "line_range": "L42-L47",
-      "prefixes": {
-        "sh": 9,
+      "paragraph": 4,
+      "lines": "41-47",
+      "n_tokens": 66,
+      "prefix_counts": {
+        "fch": 1,
+        "none": 12,
+        "sa": 4,
+        "do": 1,
+        "sh": 10,
+        "ol": 4,
+        "qo": 10,
+        "ot": 2,
+        "or": 2,
         "ke": 1,
-        "sa": 3,
         "da": 3,
         "ch": 8,
-        "qo": 9,
-        "or": 1,
-        "ol": 3,
         "lk": 1,
         "lsh": 1,
         "ok": 5,
-        "ot": 1,
         "so": 1
       },
-      "dar": 1,
-      "chekar": 0,
-      "mean_e_depth": 0.631578947368421,
-      "heads": {
-        "?": 1,
-        "cool": 19,
-        "state": 5,
-        "respond": 2,
-        "arrange": 9,
-        "pause": 1,
-        "sequence": 1,
-        "heat": 5,
-        "yield": 6,
-        "iterate": 3,
-        "transfer": 1,
-        "adjust": 2,
-        "do": 2
-      }
+      "head_counts": {
+        "e": 20,
+        "c": 3,
+        "l": 7,
+        "d": 3,
+        "k": 7,
+        "a": 7,
+        "y": 1,
+        "q": 1,
+        "r": 2,
+        "o": 9,
+        "p": 1,
+        "s": 1,
+        "i": 3,
+        "t": 1
+      },
+      "dar_count": 3,
+      "chekar_count": 0,
+      "mean_e_depth": 0.576,
+      "obs_middle_counts": {
+        "ecthe": 1
+      },
+      "hh_count": 0
     }
   ]
 }
