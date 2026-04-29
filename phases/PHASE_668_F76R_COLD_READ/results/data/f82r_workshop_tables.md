@@ -1,101 +1,3 @@
-# Validated Reading: f82r ↔ III.19.1-5 Medicinal Waters 2-6 (Multi-Recipe)
-
-**Match tier:** Strong-supported (multi-recipe per C1937)
-**Expert verdict:** Coherent under multi-recipe hypothesis (4/8 PASS, 3 PARTIAL, 1 FAIL)
-**Full token listing:** `data/f82r_cold_read.txt` (275 tokens, 32 lines)
-
----
-
-## How to Read This Document
-
-This folio encodes five related sub-recipes from III.19 — the second through sixth medicinal waters, all prepared from a single capon/chicken. The combined recipe text is 1,251 characters (~230 words). The folio is 275 tokens — a 1.2:1 ratio under the multi-recipe model.
-
-C1937 established that "short related procedures are consolidated onto single folios" (f80r = Ch21-25, f77r = Ch2+3+6). f82r follows this pattern: five brief water preparations sharing the same source material (capon parts), each with 1-2 operational steps.
-
-The single-recipe test (f82r ↔ III.19.3 alone) returned PARTIALLY COHERENT with three tensions: 275 tokens for a 369-character recipe (scale mismatch), 13 dar for a recipe with 1 material addition, and 9 paragraphs for a 2-step recipe. All three tensions resolve under the multi-recipe hypothesis: 5 waters × ~50 tokens each, 13 dar for 5 "take..." instructions, 9 paragraphs for 5 operations plus transitions.
-
-**What makes this match credible:**
-- **P5 triple okain** (sealing step) maps to the 4th water's glass+wax sealing per C1929
-- **P2 lowest e-depth** (0.47) + active monitoring + kam closure maps to 3rd water's ash distillation with "beware burning" warning
-- **P8 extreme transfer concentration** (t-HEAD = 20.5%) maps to bone distillation's "take all their liquor"
-- **dar distributed across 7/9 paragraphs** tracks 5 distinct material introductions
-- **Alternating heat modes**: balneum (P1, P6-P8 high e-depth) vs ashes (P2, P5 low e-depth)
-
-Every token on every line appears in this document.
-
----
-
-## The Recipes (III.19.1-5, combined)
-
-### Catalan (Part III cipher, no letter codes)
-
-**2nd water (III.19.1):** Pren una capó veel o una gallina e plomen-lo, e gita'n los budells; e separa los pes e los ossos. E tota la carn sia picada; e aprés met-la dedins lo alembich e en bany; distilla tota l'aygua.
-
-**3rd water (III.19.2):** Pren la carn de la gallina o del capó e sobre cenres distilla sa humiditat ab foch mijà bé continuat; e guarda't de la combustibilitat de la carn.
-
-**4th water (III.19.3):** Pren de la humiditat simpla de la dita lunaria, e mit .iii. parts sobre la substancia de la dit carn. Puys tapa la carabasa ab son cubertor de vidre ab cera communa, e posa-u tot sobre cendres per .iii. dies naturalls ab foch de serradura composta. Puis distilla tota l'aygua per lo bany.
-
-**5th water (III.19.4):** Pren de la substancia de la dita gallina o del capó, e sobre cendres separa tota la humiditat per distillació.
-
-**6th water (III.19.5):** Pren los ossos del dit capó o de la gallina, e ben menudament picats mit-los en lo alembich e sobre cendres; pren tota lur liquor ab distillació.
-
-### English (combined)
-
-- **2nd water:** Take capon/hen, pluck, gut, separate feet and bones. Mince all flesh, put in alembic in balneum, distill all water.
-- **3rd water:** Take the flesh, distill moisture on ashes with moderate continuous fire. **Beware burning the flesh.**
-- **4th water:** Take lunaria moisture, put 3 parts on flesh substance. **Seal cucurbit with glass cover + common wax.** Place on ashes 3 days with sawdust fire. Then distill through balneum.
-- **5th water:** Take flesh substance, distill all moisture on ashes.
-- **6th water:** Take the bones, mince finely, put in alembic on ashes, take all liquor by distillation.
-
-### Combined Structure
-
-| Water | Material | Heat | Special |
-|-------|----------|------|---------|
-| 2nd | Minced flesh | balneum | butchery first |
-| 3rd | Flesh | ashes (moderate) | "beware burning" |
-| 4th | Lunaria + flesh | ashes → balneum | **seal** (glass+wax), ×3 |
-| 5th | Flesh substance | ashes | brief extraction |
-| 6th | Bones (minced) | ashes | final extraction |
-
----
-
-## Structural Predictions (multi-recipe)
-
-| # | Prediction | Rationale | Result |
-|---|-----------|-----------|--------|
-| 1 | 9 paragraphs ≈ 5 operations + transitions | 5 waters + prep/transitions | **MATCH** |
-| 2 | Multiple dar (5+ distinct introductions) | each water "take..." | **MATCH** — 13 dar across 7/9 paragraphs |
-| 3 | Alternating balneum/ashes | waters alternate heat modes | **PARTIAL** — e-depth varies but not cleanly binary |
-| 4 | Sealing signature in P5 | 4th water glass+wax seal (C1929) | **MATCH** — triple okain |
-| 5 | "Beware burning" quality gate | 3rd water warning | **PARTIAL** — P2 has monitoring + kam closure |
-| 6 | Transfer concentration at end | 6th water "take all liquor" | **MATCH** — P8 t-HEAD 20.5% |
-| 7 | Bone processing at end | last water processes bones | **PARTIAL** — P8-P9 are folio-final |
-| 8 | ×3 counting for 4th water | ".iii. parts", ".iii. dies" | **FAIL** — no 3-token counting run |
-
-**Score: 4 MATCH, 3 PARTIAL, 1 FAIL. Multi-recipe wins 8/10 criteria vs single-recipe.**
-
----
-
-## Folio Overview
-
-| Metric | Value |
-|--------|-------|
-| Total tokens | 275 |
-| Lines | 32 |
-| Paragraphs | 9 |
-| dar (material-add) | 13 |
-| Quality checks (chek/shek class) | 1 |
-| Observation MIDDLEs | ckh×3, cth×1 |
-| hh (extended observation) | 0 |
-
----
-
-## Paragraph 1: Lines 1-9 (72 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
-
 **L1 (8 tokens)**
 | Token | Prefix | Reading | Source |
 |-------|--------|---------|--------|
@@ -222,35 +124,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 
 → 7/7 recognized (100%).
 
-
-### P1 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 72 (26% of folio) |
-| e-depth | 0.764 |
-| dar count | 3 |
-| Quality checks (chek/shek) | 1 |
-| Observation MIDDLEs | ckhx2, ecthx1 |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- qo: 28 (38%)
-- sh: 12 (16%)
-- ch: 9 (12%)
-- so: 5 (6%)
-- lch: 4 (5%)
-- da: 3 (4%)
-- ok: 2 (2%)
-
----
-
-## Paragraph 2: Lines 10-11 (17 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
-
 **L10 (8 tokens)**
 | Token | Prefix | Reading | Source |
 |-------|--------|---------|--------|
@@ -280,36 +153,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 
 → 9/9 recognized (100%).
 
-
-### P2 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 17 (6% of folio) |
-| e-depth | 0.471 |
-| dar count | 1 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- qo: 5 (29%)
-- ch: 4 (23%)
-- ol: 2 (11%)
-- ok: 2 (11%)
-- ko: 1 (5%)
-- ka: 1 (5%)
-- ot: 1 (5%)
-- da: 1 (5%)
-
----
-
-## Paragraph 3: Lines 12-13 (17 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
-
 **L12 (9 tokens)**
 | Token | Prefix | Reading | Source |
 |-------|--------|---------|--------|
@@ -338,36 +181,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 | olchedy | ol | Steady: adjust, watch, steady, do | Comp-v2 |
 
 → 8/8 recognized (100%).
-
-
-### P3 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 17 (6% of folio) |
-| e-depth | 0.882 |
-| dar count | 0 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- qo: 6 (35%)
-- ol: 3 (17%)
-- ch: 3 (17%)
-- tch: 1 (5%)
-- lch: 1 (5%)
-- sa: 1 (5%)
-- ar: 1 (5%)
-- de: 1 (5%)
-
----
-
-## Paragraph 4: Lines 14-16 (28 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
 
 **L14 (10 tokens)**
 | Token | Prefix | Reading | Source |
@@ -415,35 +228,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 
 → 8/8 recognized (100%).
 
-
-### P4 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 28 (10% of folio) |
-| e-depth | 0.857 |
-| dar count | 2 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- qo: 9 (32%)
-- ch: 4 (14%)
-- te: 2 (7%)
-- lch: 2 (7%)
-- da: 2 (7%)
-- lk: 1 (3%)
-- sa: 1 (3%)
-
----
-
-## Paragraph 5: Lines 17-18 (15 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
-
 **L17 (10 tokens)**
 | Token | Prefix | Reading | Source |
 |-------|--------|---------|--------|
@@ -470,36 +254,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 | lchy | lch | Check equipment: complete | Comp-v2 |
 
 → 5/5 recognized (100%).
-
-
-### P5 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 15 (5% of folio) |
-| e-depth | 0.667 |
-| dar count | 1 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- ok: 3 (20%)
-- sh: 2 (13%)
-- ch: 2 (13%)
-- qo: 2 (13%)
-- po: 1 (6%)
-- ot: 1 (6%)
-- da: 1 (6%)
-- so: 1 (6%)
-
----
-
-## Paragraph 6: Lines 19-24 (57 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
 
 **L19 (9 tokens)**
 | Token | Prefix | Reading | Source |
@@ -594,35 +348,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 
 → 9/10 recognized (90%).
 
-
-### P6 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 57 (20% of folio) |
-| e-depth | 1.000 |
-| dar count | 4 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- qo: 16 (28%)
-- sh: 8 (14%)
-- ch: 6 (10%)
-- da: 4 (7%)
-- lch: 4 (7%)
-- lk: 3 (5%)
-- ke: 2 (3%)
-
----
-
-## Paragraph 7: Lines 25-25 (9 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
-
 **L25 (9 tokens)**
 | Token | Prefix | Reading | Source |
 |-------|--------|---------|--------|
@@ -637,34 +362,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 | okey | ok | Vessel: steady | Comp-v2 |
 
 → 9/9 recognized (100%).
-
-
-### P7 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 9 (3% of folio) |
-| e-depth | 1.000 |
-| dar count | 0 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- qo: 2 (22%)
-- ch: 2 (22%)
-- sh: 1 (11%)
-- lch: 1 (11%)
-- ot: 1 (11%)
-- ok: 1 (11%)
-
----
-
-## Paragraph 8: Lines 26-30 (44 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
 
 **L26 (8 tokens)**
 | Token | Prefix | Reading | Source |
@@ -740,35 +437,6 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 
 → 9/9 recognized (100%).
 
-
-### P8 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 44 (16% of folio) |
-| e-depth | 1.023 |
-| dar count | 1 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 1 |
-
-**Top prefixes:**
-- qo: 18 (40%)
-- sh: 5 (11%)
-- ch: 5 (11%)
-- lch: 5 (11%)
-- pch: 1 (2%)
-- da: 1 (2%)
-- ol: 1 (2%)
-
----
-
-## Paragraph 9: Lines 31-32 (16 tokens)
-
-### Token Reading (v2 workshop readings)
-
-Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = composed from atoms, **---** = truly unrecognized.
-
 **L31 (10 tokens)**
 | Token | Prefix | Reading | Source |
 |-------|--------|---------|--------|
@@ -797,83 +465,3 @@ Every token on every line. **B Dict** = B Operational Dictionary, **Comp-v2** = 
 
 → 5/6 recognized (83%).
 
-
-
-### P9 Structural Profile
-
-| Feature | Value |
-|---------|-------|
-| Tokens | 16 (5% of folio) |
-| e-depth | 0.688 |
-| dar count | 1 |
-| Quality checks (chek/shek) | 0 |
-| Observation MIDDLEs | none |
-| hh (extended obs) | 0 |
-
-**Top prefixes:**
-- ch: 5 (31%)
-- sh: 2 (12%)
-- lch: 2 (12%)
-- te: 1 (6%)
-- da: 1 (6%)
-- sa: 1 (6%)
-
----
-
-## Cross-Paragraph Patterns
-
-### e-depth Thermal Arc
-
-| Para | Lines | Tokens | e-depth | Mapped water |
-|------|-------|--------|---------|-------------|
-| P1 | 1-9 | 72 | 0.764 | 2nd water: flesh in balneum |
-| P2 | 10-11 | 17 | **0.471** | **3rd water: flesh on ashes** (lowest e-depth) |
-| P3 | 12-13 | 17 | 0.882 | Transition / apparatus change |
-| P4 | 14-16 | 28 | 0.857 | 4th water: lunaria + flesh preparation |
-| P5 | 17-18 | 15 | 0.667 | 4th water: sealing step (triple okain) |
-| P6 | 19-24 | 57 | 1.000 | 4th water: maceration → balneum distillation |
-| P7 | 25 | 9 | 1.000 | Quality checkpoint |
-| P8 | 26-30 | 44 | **1.023** | **5th/6th water: distillation** (highest e-depth) |
-| P9 | 31-32 | 16 | 0.688 | Completion / close |
-
-The two-phase arc: P1-P2 (flesh processing, mixed heat) → P3-P5 (transition + sealing) → P6-P8 (balneum distillation, e-depth ~1.0). P2's lowest e-depth (0.47) corresponds to the 3rd water's ash distillation with "beware burning" — the most fire-intensive step, least cooling. P6-P8's e-depth at 1.0+ encodes the sustained balneum distillation that the 4th-6th waters share.
-
-### dar Distribution
-
-| Para | dar | % | Mapped water |
-|------|-----|---|-------------|
-| P1 | 3 | 23% | 2nd water: loading flesh |
-| P2 | 1 | 8% | 3rd water: flesh extraction |
-| P3 | 0 | 0% | Transition (no material) |
-| P4 | 2 | 15% | 4th water: lunaria + flesh |
-| P5 | 1 | 8% | 4th water: sealing materials (glass, wax) |
-| P6 | 4 | 31% | 4th water: maceration handling |
-| P7 | 0 | 0% | Checkpoint (no material) |
-| P8 | 1 | 8% | 5th/6th water: bone loading |
-| P9 | 1 | 8% | Final handling |
-
-dar distributes across 7/9 paragraphs matching 5 distinct "take..." instructions. P6 has the highest dar (31%) corresponding to the 4th water — the most complex sub-recipe (lunaria + sealed maceration + balneum distillation).
-
-### Key Structural Features
-
-**P5 triple okain (sealing):** The 4th water recipe says "tapa la carabasa ab son cubertor de vidre ab cera communa" (seal the cucurbit with glass cover + common wax). P5 contains triple `okain` (vessel: seal for processing cycle) — the C1929 sealing diagnostic.
-
-**P2 lowest e-depth (ash fire with warning):** The 3rd water says "sobre cenres distilla sa humiditat ab foch mijà bé continuat; e guarda't de la combustibilitat de la carn" (on ashes with moderate fire; beware burning the flesh). P2 has the lowest e-depth (0.47), active monitoring, and a `kam` closure — encoding the careful ash distillation with the burning warning.
-
-**P8 transfer concentration:** The 6th water says "pren tota lur liquor ab distillació" (take all their liquor by distillation). P8 has the highest transfer-HEAD density on the folio (t-HEAD = 20.5%), with a `qoty` triplet on L28 and `ram` (stage done) on L29 marking collection completion.
-
----
-
-## Verdict: COHERENT (multi-recipe)
-
-f82r produces a coherent reading against III.19.1-5 (medicinal waters 2-6) under the multi-recipe hypothesis. The folio's 9 paragraphs map to 5 water preparations from a single capon:
-
-1. **2nd water — flesh balneum** (P1) — 72 tokens, e-depth 0.76, 3 dar
-2. **3rd water — flesh on ashes** (P2) — 17 tokens, e-depth 0.47 (lowest), "beware burning"
-3. **Transition** (P3) — apparatus change
-4. **4th water — lunaria maceration** (P4-P6) — sealing (P5 triple okain), maceration, balneum
-5. **Checkpoint** (P7) — 9 tokens, quality verification
-6. **5th/6th water — substance + bone distillation** (P8) — t-HEAD surge (20.5%)
-7. **Completion** (P9) — close
-
-The multi-recipe model resolves all three tensions from the single-recipe test: scale is proportionate (275 tokens / 1,251 chars = 1.2:1), dar count matches 5 distinct material introductions, and 9 paragraphs maps to 5 operations with transitions. This is consistent with C1937: short related procedures consolidated onto single folios.

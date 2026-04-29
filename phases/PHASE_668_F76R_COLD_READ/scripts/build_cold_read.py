@@ -14,7 +14,7 @@ Expects:
 - results/footers/{folio}_footer.md (cross-paragraph patterns, verdict — hand-written)
 
 Outputs:
-- results/cold_reads/{folio}_cold_read.md
+- results/readings/{folio}_cold_read.md
 """
 import json, sys, re, os
 
@@ -25,7 +25,7 @@ tables_path = f'{base}/data/{folio}_workshop_tables.md'
 json_path = f'{base}/data/{folio}_decode_summary.json'
 header_path = f'{base}/headers/{folio}_header.md'
 footer_path = f'{base}/footers/{folio}_footer.md'
-output_path = f'{base}/cold_reads/{folio}_cold_read.md'
+output_path = f'{base}/readings/{folio}_cold_read.md'
 
 with open(tables_path, encoding='utf-8') as f:
     tables_text = f.read()
