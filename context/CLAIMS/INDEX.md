@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1979 validated constraints | **Version:** 6.43 | **Date:** 2026-05-01
+**Total:** 1980 validated constraints | **Version:** 6.44 | **Date:** 2026-05-01
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7315,6 +7315,18 @@ Investigating Phase 671's okar outlier surfaced a broader pattern. Crazy-expert'
 - C1983 directly extends C1001 (PREFIX dual encoding: content + line position): provides quantified evidence with explicit confound controls.
 - Aligns with C929 (sh=passive monitor, ch=active test): the start-loading of sh adds a positional dimension to the semantic distinction.
 - Pre-registered by crazy-expert as the discriminating test for the broader Phase 671 follow-up. Test passed; broader prefix-shape taxonomy (start-loaders, flat, end-loaders, bimodal interior) remains unconfirmed pending per-pair tests on other frames.
+
+### Phase 673: PREFIX-Recipe Content Alignment (External Anchor) (1 constraint)
+
+External anchor test proposed by crazy-expert to break out of Phases 670-672's internal-permutation chain. Tests whether PREFIX rates in matched Voynich folios correlate with corresponding recipe-content category densities. Result: clean NULL after multiple-comparison correction. Limits the operationalization scale of PREFIX glosses.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1984 | Folio-level PREFIX-content alignment fails. Across 11 Phase-668-validated Voynich-Pseudo-Lull folio-recipe pairs, PREFIX rates (qo, ch, sh, ok, ot, ol, lk, lch) tested against keyword-density categories (heat, monitor, transfer, iter, vessel, complete) show no surviving correlations after multiple-comparison correction. 2/48 cells passed uncorrected p<0.05 (ok-monitor rho=+0.645 p=0.042; ot-complete rho=+0.618 p=0.049) — within chance frequency (~2.4 expected). PREFIX gloss system survives at category level (intra-folio operational classification per C1300, C929, C1962) but fails at folio-density-prediction level (cross-folio rate vs recipe content density). | 3 | B, PREFIX, recipe-correspondence, alignment, scale, NULL, C1300, C929, C1962, C1971, C1983 | n_folios=11. n_cells=48. uncorrected_significant=2. corrected_threshold=0.001. survivors=0. qo_heat_rho=-0.118 p=0.73. ok_monitor_rho=+0.645 p=0.042. ot_complete_rho=+0.618 p=0.049. |
+
+- C1984 is a Tier 3 observation that constrains future scale claims, NOT a Tier 1 falsification. Underlying PREFIX glosses are not refuted; only the strong-form scale claim (gloss density predicts folio recipe density) is.
+- Methodological lesson: crazy-expert flagged Phases 670-672 as drifting toward "registration mining" via increasingly narrow internal permutation tests. The external anchor test produces a clean null where internal tests would have produced numbers from sheer power.
+- Survives the prediction asymmetry: 2/48 = 4.2% uncorrected positives is exactly chance frequency (5%); no positive bias toward gloss-aligned categories.
 
 ---
 

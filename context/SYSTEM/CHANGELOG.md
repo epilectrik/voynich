@@ -4,6 +4,32 @@
 
 ---
 
+## Version 6.44 (2026-05-01) - Phase 673: PREFIX-Recipe Content Alignment (External Anchor)
+
+### Summary
+
+External anchor test proposed by crazy-expert to break the Phases 670-672 internal-permutation chain. Tests whether PREFIX rates in matched Voynich folios correlate with corresponding recipe-content category densities (gloss-aligned). 11 matched folio-recipe pairs from Phase 668; 8 prefixes x 6 categories = 48 cells; Spearman + 5000-shuffle permutation per cell. Result: 2/48 cells uncorrected p<0.05 (ok-monitor, ot-complete) within chance frequency (~2.4 expected). Zero cells survive Bonferroni correction. Clean NULL. PREFIX gloss system survives at category level but fails at folio-density-prediction level. One Tier 3 constraint registered: C1984.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1984 | Folio-level PREFIX-content alignment fails (Tier 3 observation) |
+| Phase 673 dir | Created: script + INDEX |
+| CLAIMS/INDEX.md | 1 new constraint (C1984); total 1979 -> 1980, version 6.44 |
+| CLAUDE.md | Version 6.43 -> 6.44, constraints -> 1980, phases 672 -> 673 |
+
+### Key Findings
+
+- External anchoring produces clean negative results where internal permutation would have produced significance from sheer power
+- Both apparent positives (ok-monitor, ot-complete) are loose semantic matches but indistinguishable from chance
+- PREFIX gloss system valid at category level (intra-folio): C1300 qo=THERMAL 59%, C1962 o-prefix top1=16/16
+- PREFIX gloss system fails at folio-density-prediction level (cross-folio): qo-rate uncorrelated with recipe heat-density
+- Methodological lesson: crazy-expert flagged Phase 670-672 chain as drifting toward registration mining; external anchor test confirmed
+- C1984 limits scale claims, does NOT falsify underlying glosses
+
+---
+
 ## Version 6.43 (2026-05-01) - Phase 672: PREFIX Positional Role on Fixed Frame
 
 ### Summary

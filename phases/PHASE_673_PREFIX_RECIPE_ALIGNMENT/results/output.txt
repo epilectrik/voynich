@@ -1,0 +1,66 @@
+Loading data...
+  PL chapters: 209, T1 entries: 209
+
+Sample chapter (idx 0):
+  {'number': 2, 'part': 'Theorica', 'title_latin': 'CAP. II.', 'page': '25', 'en_line_start': 314, 'en_line_end': 366, 'primary_family': 'theoretical', 'secondary_family': None, 'theory_practice': 'mixed', 'monitoring_density': 0.0, 'symbolic_density': 1.15, 'judgment_density': 0.0, 'operational_density': 0.0, 'monitoring_count': 0, 'termination_count': 0, 'heat_count': 0, 'correction_count': 0, 'cipher_count': 2, 'judgment_count': 0, 'chain_count': 0}
+  T1[0]: {'chapter_idx': 0, 'chapter_number': 2, 'family': 'theoretical', 'mode_counts': {}, 'dominant_mode': None, 'mean_intensity': 0.0, 'transition_count': 0, 'total_heat': 0}
+
+=== PER-FOLIO qo RATES (body-only) ===
+  f75r   M.19  qo=105 total= 391 rate=0.269
+  f76r   P.16  qo= 98 total= 504 rate=0.194
+  f84r   P.12  qo= 31 total= 179 rate=0.173
+  f79r   M.12  qo= 66 total= 318 rate=0.208
+  f82r   M.19  qo= 77 total= 245 rate=0.314
+  f76v   M.15  qo= 60 total= 339 rate=0.177
+  f81v   M.18  qo= 40 total= 236 rate=0.169
+  f112v  M.1   qo= 45 total= 293 rate=0.154
+  f103r  M.16  qo= 65 total= 324 rate=0.201
+  f116r  M.4   qo= 71 total= 448 rate=0.158
+  f112r  M.11  qo= 39 total= 298 rate=0.131
+
+=== CHAPTER MATCHING ===
+
+=== HEAT KEYWORD DENSITY (from English recipe text) ===
+  Folio    Chapter     qo_rate   words   heat_kw  heat_density
+  f75r     M.19          0.269     120         6        0.0500
+  f76r     P.16          0.194     393        21        0.0534
+  f84r     P.12          0.173     484        18        0.0372
+  f79r     M.12          0.208     250        10        0.0400
+  f82r     M.19          0.314     120         6        0.0500
+  f76v     M.15          0.177     132         3        0.0227
+  f81v     M.18          0.169     206         9        0.0437
+  f112v    M.1           0.154     566        30        0.0530
+  f103r    M.16          0.201     664        15        0.0226
+  f116r    M.4           0.158     379         7        0.0185
+  f112r    M.11          0.131     248        17        0.0685
+
+=== SPEARMAN CORRELATION + PERMUTATION TEST ===
+  N folios: 11
+  Actual Spearman rho: -0.1182
+  Two-sided p (permutation, 10000 shuffles): 0.7340
+  One-sided p(rho >= actual) approx: derived from above
+  Verdict: NULL
+
+=== MULTI-PREFIX x MULTI-CATEGORY MATRIX ===
+
+  Spearman rho matrix (PREFIX rows x CATEGORY cols):
+  PREFIX         heat     monitor    transfer        iter      vessel    complete
+  qo           -0.118      -0.418      +0.491      +0.273      -0.173      -0.209
+  ch           -0.045      -0.282      -0.018      -0.491      -0.009      +0.491
+  sh           -0.473      -0.164      +0.145      -0.227      -0.009      +0.218
+  ok           +0.173      +0.645      -0.473      -0.418      +0.136      +0.309
+  ot           -0.173      +0.336      -0.218      +0.073      -0.327      +0.618
+  ol           -0.164      +0.109      -0.091      -0.064      +0.400      -0.109
+  lk           -0.018      -0.100      -0.118      -0.218      -0.064      +0.182
+  lch          -0.264      -0.500      +0.364      -0.173      -0.055      +0.073
+
+  Permutation p-values (one-sided, |rho| extreme, 5000 shuffles):
+  PREFIX         heat     monitor    transfer        iter      vessel    complete
+  qo          0.7316      0.2034      0.1274      0.4334      0.6280      0.5442 
+  ch          0.9030      0.3946      0.9678      0.1252      0.9878      0.1204 
+  sh          0.1564      0.6474      0.6744      0.5030      0.9916      0.5380 
+  ok          0.6056      0.0418*     0.1470      0.2116      0.7160      0.3644 
+  ot          0.6178      0.3218      0.5090      0.8382      0.3246      0.0494*
+  ol          0.6306      0.7512      0.7898      0.8490      0.2182      0.7530 
+  lk          0.9676      0.7668      0.7306      0.5094      0.8502      0.5916 
+  lch         0.4396      0.1092      0.2674      0.6102      0.8904      0.8396 
