@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1972 validated constraints | **Version:** 6.38 | **Date:** 2026-04-27
+**Total:** 1974 validated constraints | **Version:** 6.40 | **Date:** 2026-05-01
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7264,6 +7264,19 @@ All 15 matched folios cold-read against their Pseudo-Lull Testamentum recipes at
 - Material-addition patterns (C1975): dar distribution is not random — it tracks recipe material-addition structure with five identifiable patterns. The zero-after-midpoint pattern (f112r) is particularly diagnostic: 14-paragraph cohobation folio with dar only in the first 5 paragraphs, matching a recipe that loads material once then recycles it through 9 distillation cycles.
 - Polyalphabetic rejection (C1976): the strongest falsification of the session. If atoms changed meaning by prefix context (polyalphabetic cipher), bigram distributions after different prefixes would diverge. They don't: d=0.994, o=0.924, r=0.939 cosine similarity across prefix classes. The manuscript uses one cipher system with stable atom semantics.
 - Auxiliary: h-stacking confirmed rare (1.5% depth-2, one depth-3 in entire manuscript). 49 hh tokens across 31 folios encode sustained observation of specific operations. cth (transfer-watch) present on 11-15 of 15 matched folios with positional correlation to recipe transfer steps.
+
+### Phase 669: Recto/Verso Operational Pairing — CONFIRMED (C1977-C1978)
+
+Both sides of a physical leaf encode operationally similar recipes, significantly beyond section membership or sequential proximity.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1977 | Recto/verso thermal pairing: same-leaf folios have correlated e-depth (Pearson r=0.665, p=0.0001) | 2 | n=35 pairs, mean diff=0.124 vs 0.213 random |
+| 1978 | Recto/verso operational profile pairing: same-leaf folios share PREFIX distributions (cosine 0.931, section-stratified p<0.0001). Survives all 4 controls: section-stratified permutation, adjacent-folio comparison (+0.038 advantage), without-qo channel, broader 83-folio baseline | 2 | n=35 pairs, 9 prefix channels all positively correlated |
+
+- C1977 extends C1936 (recto/verso sequential operations) from semantic to structural: not just matched pairs, but ALL 35 r/v pairs show thermal correlation.
+- C1978 extends beyond thermal: all 9 prefix channels correlate (qo r=0.811, lk r=0.649, sa r=0.544, sh r=0.531, ok r=0.486, ot r=0.486, da r=0.437, ch r=0.399, ol r=0.384). R/V pairs are more similar than adjacent-different-leaf pairs, ruling out sequential proximity (C361).
+- Physical interpretation: the scribe organized recipes by operational type on the same leaf. Both sides of a sheet require the same furnace setup.
 
 ---
 

@@ -4,6 +4,24 @@
 
 ---
 
+## Version 6.40 (2026-05-01) - Phase 669: Recto/Verso Operational Pairing
+
+### Summary
+
+Both sides of a physical leaf encode operationally similar recipes. Tested with 4 controls: section-stratified permutation (p<0.0001), adjacent-folio comparison (R/V +0.038 advantage), without-qo channel (p<0.0001), broader 83-folio baseline (p<0.0001). Two new Tier 2 constraints registered.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1977 | Recto/verso thermal pairing (r=0.665, p=0.0001) |
+| C1978 | Recto/verso operational profile pairing (cosine 0.931, section-stratified p<0.0001) |
+| Phase 669 dir | Created: script + INDEX |
+| CLAIMS/INDEX.md | 2 new constraints (C1977-C1978); total 1972 -> 1974, version 6.40 |
+| CLAUDE.md | Version 6.39 -> 6.40, constraints -> 1974, phases 668 -> 669 |
+
+---
+
 ## Version 6.39 (2026-04-30) - Phase 668: Validated Recipe-Folio Correspondence (expanded)
 
 ### Summary
