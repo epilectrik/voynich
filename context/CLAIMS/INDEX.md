@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1980 validated constraints | **Version:** 6.44 | **Date:** 2026-05-01
+**Total:** 1981 validated constraints | **Version:** 6.45 | **Date:** 2026-05-01
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7327,6 +7327,18 @@ External anchor test proposed by crazy-expert to break out of Phases 670-672's i
 - C1984 is a Tier 3 observation that constrains future scale claims, NOT a Tier 1 falsification. Underlying PREFIX glosses are not refuted; only the strong-form scale claim (gloss density predicts folio recipe density) is.
 - Methodological lesson: crazy-expert flagged Phases 670-672 as drifting toward "registration mining" via increasingly narrow internal permutation tests. The external anchor test produces a clean null where internal tests would have produced numbers from sheer power.
 - Survives the prediction asymmetry: 2/48 = 4.2% uncorrected positives is exactly chance frequency (5%); no positive bias toward gloss-aligned categories.
+
+### Phase 674: Pharmaceutical Cluster Operational Profile (1 constraint)
+
+Tested whether Phase 642's 26-folio pharmaceutical-regime cluster has distinct operational signature beyond the PC1 axis. Naïve comparison vs matched alchemical folios showed multiple |d|>2.0 effects (e-channel suppression, BARE/a-HEAD enrichment, TERM-r doubling). Both experts flagged section confound. Within-section test could not be run: zero matched-Herbal folios, while cluster is 73% Herbal. Cannot distinguish cluster-property from Herbal-section-property.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1985 | Phase 642 26-folio pharmaceutical cluster maps to Herbal section (19/26 H, 4 C, 2 S, 1 T) with zero overlap with Phase 668 matched-alchemical folios (7 B + 4 S, no H). Naïve cluster-vs-matched comparison shows multiple |d|>2.0 effects on e-channel suppression and morphological palette (HEAD-e d=-2.68, TERM-r d=+2.59, e-depth=0 d=+2.75, qo d=-2.06, kernel-e d=-2.46) but these recapitulate known section-mediated effects (C939, C1404, C1893, C1808) and cannot be distinguished from them given zero matched folios in Herbal section. Limits cluster-property claims pending matched-H folios or within-folio tests. | 3 | B, cluster, herbal, section, scope-limit, confound, NULL, C939, C1404, C1893, C1808, Phase642 | cluster=26, matched=11. cluster_section: 19H 4C 2S 1T. matched_section: 7B 4S 0H. naive_HEAD_e_d=-2.68. naive_qo_d=-2.06. naive_e_depth=0_d=+2.75. within_section_test: insufficient_overlap. |
+
+- C1985 is a methodological-scope-limit constraint, not a falsification of the cluster identification. Phase 642's PC1 separation is real (8-10σ). Only the operational-property interpretation is constrained.
+- Demonstrates the value of section-stratification falsifiers: the Phase 1 |d|>2.0 effects would have registered as Tier 2 cluster-property without confound testing.
+- Three established confound paths flagged before this phase: C939 (low-heat herbal), C1404 (section-determined PREFIX programs), C1893 (sh/ch section redistribution), C1808 (13/14 PREFIX fractions section-affected). Phase 674 cluster differences map onto these.
 
 ---
 

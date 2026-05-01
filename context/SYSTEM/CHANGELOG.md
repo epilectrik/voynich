@@ -4,6 +4,32 @@
 
 ---
 
+## Version 6.45 (2026-05-01) - Phase 674: Pharmaceutical Cluster Operational Profile
+
+### Summary
+
+Tested whether Phase 642's 26-folio pharmaceutical-regime cluster has distinct operational signature beyond PC1 axis. Naïve comparison vs 11 matched alchemical folios showed multiple |d|>2.0 effects (HEAD-e d=-2.68, TERM-r d=+2.59, e-depth=0 d=+2.75, qo d=-2.06, kernel-e d=-2.46). Both experts flagged section confound. Within-section test could not be run: cluster is 73% Herbal (19/26), matched is 0% Herbal (7B+4S). Effects recapitulate known section-mediated patterns (C939, C1404, C1893, C1808). Cannot distinguish cluster-property from Herbal-section-property. One Tier 3 scope-limit constraint registered: C1985.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1985 | Phase 642 cluster maps to Herbal section; operational profile section-confounded (Tier 3 scope-limit) |
+| Phase 674 dir | Created: 2 scripts + INDEX |
+| CLAIMS/INDEX.md | 1 new constraint (C1985); total 1980 -> 1981, version 6.45 |
+| CLAUDE.md | Version 6.44 -> 6.45, constraints -> 1981, phases 673 -> 674 |
+
+### Key Findings
+
+- Pre-registered cluster-property hypothesis FAILS scrutiny: section confound dominates
+- Phase 642 PC1 cluster identification (8-10σ) is real; the operational-property interpretation is what's constrained
+- Section-stratification falsifier worked as designed: prevented registration of section-recapitulation as novel cluster-property
+- Both experts converged on the same critique (section confound + effect-collapse + size-confounded diversity metrics) — alignment increases confidence in the verdict
+- Methodological lesson: when comparing populations from different sampling processes, section confound check should precede rate-based comparison
+- Phase 674 itself is a clean negative ("can't adjudicate"); follow-up requires matched-Herbal folios or within-folio tests
+
+---
+
 ## Version 6.44 (2026-05-01) - Phase 673: PREFIX-Recipe Content Alignment (External Anchor)
 
 ### Summary
