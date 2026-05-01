@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1978 validated constraints | **Version:** 6.42 | **Date:** 2026-05-01
+**Total:** 1979 validated constraints | **Version:** 6.43 | **Date:** 2026-05-01
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7303,6 +7303,18 @@ Pre-registered test of whether dar's bimodal line-position distribution reflects
 - C1981 is a clean falsification: a specific mechanism (clause structure) was pre-registered with two discriminating tests (length-conditional peak shift + conditional mutual information) and both rejected the prediction. Falsification of a hypothesis, not a registered claim.
 - C1982 generalizes C1980: dar's edge-concentration is shared across the a-HEAD r-TERM class. Mechanism remains open (interior clause structure is excluded by C1981; possibilities include discourse-level scope, RI/PP/INFRA partitioning at edges, or atom-frame-specific deployment patterns).
 - F2 (a-HEAD frame leakage falsifier) was the breakthrough. Crazy-expert flagged this as the top alternative; data confirmed it. okar is unexplained outlier — flagged for follow-up.
+
+### Phase 672: PREFIX Positional Role on Fixed Frame (1 constraint)
+
+Investigating Phase 671's okar outlier surfaced a broader pattern. Crazy-expert's discriminating test (hold HEAD+TERM frame fixed at e->y, vary only PREFIX) confirmed that PREFIX class carries within-line positional information beyond frame composition, articulator presence, LATE-class membership, and line-zone effects. The sh-vs-ch contrast is the cleanest case.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1983 | sh-prefix and ch-prefix differ in within-line position on fixed e->y frame (Currier B body-only, articulators excluded). sh-e->y start-loaded (mean=0.433, n=783); ch-e->y flat (mean=0.521, n=1133). Within-line permutation diff=-0.088, p=0.0000. Survives paragraph-line>=3 (diff=-0.101, p=0.0001), section stratification (sh start-loaded in H, B, S; ch flat in all 3), articulator exclusion (C1417), LATE-class exclusion (C539). PREFIX carries positional info beyond frame composition, articulator, LATE-class, and line-zone effects (C1426). Direct extension of C1001 (PREFIX dual encoding). | 2 | B, PREFIX, position, sh, ch, e->y, frame, C1001, C929, C1426, C1457, C1808, C1417, C539 | sh n=783 mean=0.433 BC=0.564. ch n=1133 mean=0.521 BC=0.556. perm_p_body=0.0000. perm_p_para3=0.0001. sh_H_mean=0.379, sh_B_mean=0.450, sh_S_mean=0.411. ch_H_mean=0.530, ch_B_mean=0.527, ch_S_mean=0.510. |
+
+- C1983 directly extends C1001 (PREFIX dual encoding: content + line position): provides quantified evidence with explicit confound controls.
+- Aligns with C929 (sh=passive monitor, ch=active test): the start-loading of sh adds a positional dimension to the semantic distinction.
+- Pre-registered by crazy-expert as the discriminating test for the broader Phase 671 follow-up. Test passed; broader prefix-shape taxonomy (start-loaders, flat, end-loaders, bimodal interior) remains unconfirmed pending per-pair tests on other frames.
 
 ---
 

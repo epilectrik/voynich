@@ -4,6 +4,32 @@
 
 ---
 
+## Version 6.43 (2026-05-01) - Phase 672: PREFIX Positional Role on Fixed Frame
+
+### Summary
+
+Investigating Phase 671's okar outlier surfaced a broader pattern of prefix-class positional shapes. Both experts flagged the broad observation as likely confounded by C1426 (line-zone), C539 (LATE-class), C1417 (y-articulator), and C1808 (section). Crazy-expert proposed a discriminating test: hold HEAD+TERM frame fixed at e->y (highest-power frame per C1457), exclude articulators, vary only PREFIX. If different prefixes show different positional distributions on the same frame, prefix carries independent info. The test passed: sh-prefix is start-loaded (mean=0.433, n=783) while ch-prefix is flat (mean=0.521, n=1133), with within-line permutation diff=-0.088, p=0.0000. Survives paragraph-line>=3 control (p=0.0001), section stratification (sh start-loaded in H, B, S), and articulator exclusion. PREFIX carries positional info beyond frame composition, articulator, LATE-class, and line-zone effects. One Tier 2 constraint registered: C1983.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1983 | sh-vs-ch differential positional bias on fixed e->y frame, Tier 2 |
+| Phase 672 dir | Created: script + INDEX |
+| CLAIMS/INDEX.md | 1 new constraint (C1983); total 1978 -> 1979, version 6.43 |
+| CLAUDE.md | Version 6.42 -> 6.43, constraints -> 1979, phases 671 -> 672 |
+
+### Key Findings
+
+- Pre-registered discriminating test (frame held fixed) cleanly separated PREFIX-positional info from frame/articulator/section confounds
+- sh-vs-ch difference of -0.088 in mean position survives every proposed killer
+- Aligns with C929 (sh=passive monitor / ch=active test): semantic distinction has positional dimension
+- Direct extension of C1001 (PREFIX dual encoding: content + line position) with quantified evidence
+- Crazy-expert's bet (70% null after controls) was wrong on this test — finding is real
+- Broader prefix-shape taxonomy (start-loaders, flat, end-loaders, bimodal interior) remains unconfirmed pending per-pair tests on other frames
+
+---
+
 ## Version 6.42 (2026-05-01) - Phase 671: dar Bimodality vs Clause-Structure Hypothesis
 
 ### Summary
