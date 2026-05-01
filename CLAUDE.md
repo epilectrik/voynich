@@ -181,7 +181,7 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 6.38 |
+| Version | 6.39 |
 | Constraints | 1972 validated (4 retracted, 2 retested) |
 | Phases | 668 completed |
 | Folios | 83 (Currier B) |

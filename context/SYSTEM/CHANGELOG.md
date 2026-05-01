@@ -4,6 +4,35 @@
 
 ---
 
+## Version 6.39 (2026-04-30) - Phase 668: Validated Recipe-Folio Correspondence (expanded)
+
+### Summary
+
+Phase 668 expanded from cold reads into a full methodology validation project. B Dictionary upgraded to v3 (52/100 entries revised: `e` defaults to "steady" not "cool", `qoky` = "fire set" not "cease heating", consistent prefix labels). Two expert audits (expert-advisor + crazy-expert) identified and fixed systematic workshop reading problems. All 11 matched folios rebuilt with complete v3 token-level documentation (every token on every line, workshop reading + source). Two matches rejected (f77v ↔ III.20.0 furnace spec, f82v ↔ III.21.0 vessel spec — both procedural folios incorrectly matched to specification chapters). f82r confirmed as multi-recipe (III.19.1-5, five medicinal waters per C1937). No new constraints registered — phase was methodology/documentation work.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| B Dictionary v3 | 52/100 entries revised; expert-audited workshop readings |
+| B Dictionary audit files | b_dictionary_audit.md + b_dictionary_crazy_audit.md |
+| Phase 668 readings/ | 11 validated readings rebuilt with v3 workshop readings |
+| Phase 668 validation/ | 4 negative controls, 11 positive controls, 10 reviews, 2 v3 validations |
+| Phase 668 scripts/ | compose_workshop_readings.py + build_cold_read.py pipeline |
+| Phase 668 INDEX | Reframed as "Validated Recipe-Folio Correspondence" |
+| f77v, f82v files | Removed — matches rejected |
+| C1971 | Updated: 8 coherent, 3 partially coherent (was 12 coherent, 3 plausible) |
+| CLAUDE.md | Version 6.38 → 6.39 |
+
+### Key Findings
+
+- Expert prediction-first methodology discriminates correct from incorrect recipe pairings; post-hoc narrative does not
+- Workshop readings require "steady" not "cool" for `e` atom in balneum/fermentation contexts
+- Operational shape recovery ~60% fidelity; the grammar encodes verbs (heat, test, watch, load) not nouns (which substance, which temperature)
+- Token-to-recipe-word ratios range from 0.8:1 (f112v) to 4.7:1 (f76v); recipe is spec, folio is implementation
+
+---
+
 ## Version 6.38 (2026-04-27) - Phase 668: Folio Cold Reads Against Matched Recipes
 
 ### Summary
