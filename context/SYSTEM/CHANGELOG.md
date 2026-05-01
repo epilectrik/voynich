@@ -4,6 +4,32 @@
 
 ---
 
+## Version 6.41 (2026-05-01) - Phase 670: da-Prefix Terminal-Atom Positional Gradient
+
+### Summary
+
+Within the da-prefix family in Currier B, terminal atoms encode position-of-line role. Same prefix (da) → systematically different line positions by terminal atom (-ir/-iin/-in early, -l late, -m strict line-final). Within-line and folio-level permutation tests both p<0.01 for 5 of 6 tokens. Length, dam-adjacency, and paragraph-initial confounds all excluded. Separately, dar's apparent uniformity (mean 0.507) was found to be bimodal — concentrating at line edges, avoiding middle (BC=0.581). Two constraints registered: C1979 (Tier 2 gradient), C1980 (Tier 3 dar bimodality observation).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1979 | PREFIX-conditional terminal-atom positional gradient (da family), Tier 2 |
+| C1980 | dar bimodal line-position distribution observation, Tier 3 |
+| Phase 670 dir | Created: 2 scripts + INDEX |
+| CLAIMS/INDEX.md | 2 new constraints (C1979-C1980); total 1974 → 1976, version 6.41 |
+| CLAUDE.md | Version 6.40 → 6.41, constraints → 1976, phases 669 → 670 |
+
+### Key Findings
+
+- The da-family gradient is structural, not stylistic: 5/6 tokens reject within-line and folio-level random-position nulls at p<0.01
+- dar's "uniform" mean masks a U-shaped distribution — the mean-position permutation test cannot detect this, requiring distributional analysis
+- C1979 cross-references C1486 (universal -m line-final) directly: dam is the da-family manifestation of the universal pattern
+- Pre-empted overclaim: terminal-role gradient is registered as PREFIX-conditional (within da only), not as a corpus-wide claim about each terminal. Replication on qo/ch/sh/ok/ot families is the suggested follow-up to promote.
+- Pre-empted overclaim: dar bimodality is registered as observation, not as "clause-edge marker". Mechanism left for a dedicated phase.
+
+---
+
 ## Version 6.40 (2026-05-01) - Phase 669: Recto/Verso Operational Pairing
 
 ### Summary

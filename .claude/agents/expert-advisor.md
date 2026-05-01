@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1972 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1976 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1976.
+the highest ID present is C1980.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1972 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1976 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1972 validated constraints are present as canonical one-line claims with tier
+1976 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-04-27 17:37
-**Version:** FROZEN STATE (1972 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-01 11:26
+**Version:** FROZEN STATE (1976 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2215,6 +2215,9 @@ C1973	Observation MIDDLE density tracks recipe monitoring requirement across 15 
 C1974	Paragraph count tracks recipe step complexity across 15 matched folios. Range 2 (two-phase potable gold, f81v) to 18 (highly iterative coagulation, f107r). Simple single-operation recipes → 2-4 paragraphs; multi-step distillation/sublimation → 8-12; highly iterative → 14-18. Extends C1399/C1400 paragraph model.	2	B, paragraph, recipe-correspondence, C1399, C1400
 C1975	dar distribution tracks recipe material-addition pattern across 15 matched folios. Five patterns: front-loaded (preparation then processing, f103r 81% in P1-P5), back-loaded (material renewal during reiteration, f75r P9 46%), zero-after-midpoint (cohobation recycling, f112r P6-P14 zero dar), extreme-density (specification/dissolution, f77v P2 17.2%, f81v P1 16.5%), uniform-low (existing material, f107r 2.0%).	2	B, PREFIX, dar, recipe-correspondence, paragraph
 C1976	Polyalphabetic cipher hypothesis REJECTED. Soft atoms (d,o,c,p,s,f,r) tested for meaning shift across prefix classes via bigram cosine similarity. Core atoms stable: d=0.994, o=0.924, r=0.939. Lower c=0.640, p=0.660, f=0.609 explained by positional artifact (PSEUDO_HEAD under ch vs MOD under qo), not semantic shift. One cipher system; atoms have stable meaning across all prefix channels.	1	B, atom, cipher, falsification, C1394
+C1977	Recto/verso thermal pairing: same-leaf folios have correlated e-depth	2	n=35 pairs, mean diff=0.124 vs 0.213 random
+C1979	PREFIX-conditional terminal-atom positional gradient (da family). Same-prefix tokens sort to systematically different line positions by terminal atom: -ir/-iin/-in early, -l late, -m strict line-final. Within-line and folio-level permutation tests both p<0.01 for 5 of 6 tokens. Length and dam-adjacency confounds excluded. Cross-references C1486 (universal -m line-final).	2	B, PREFIX, terminal, atom, da, position, gradient, C1486, C1394, C1925
+C1980	dar bimodal line-position distribution (observation). Despite mean=0.507, dar distribution is bimodal — concentrating at line edges (deciles 13.3,6.4,11.7,8.0,6.9,8.5,8.0,11.7,12.2,13.3), avoiding middle. Bimodality coefficient 0.581 (threshold 0.555). Mechanism (clause-edge marker, mixed populations, deployment artifact) not adjudicated.	3	B, PREFIX, dar, distribution, bimodal, observation, C1925, C1979
 
 ---
 
@@ -2222,7 +2225,7 @@ C1976	Polyalphabetic cipher hypothesis REJECTED. Soft atoms (d,o,c,p,s,f,r) test
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-04-27
+# Generated: 2026-05-01
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1974 validated constraints | **Version:** 6.40 | **Date:** 2026-05-01
+**Total:** 1976 validated constraints | **Version:** 6.41 | **Date:** 2026-05-01
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7277,6 +7277,19 @@ Both sides of a physical leaf encode operationally similar recipes, significantl
 - C1977 extends C1936 (recto/verso sequential operations) from semantic to structural: not just matched pairs, but ALL 35 r/v pairs show thermal correlation.
 - C1978 extends beyond thermal: all 9 prefix channels correlate (qo r=0.811, lk r=0.649, sa r=0.544, sh r=0.531, ok r=0.486, ot r=0.486, da r=0.437, ch r=0.399, ol r=0.384). R/V pairs are more similar than adjacent-different-leaf pairs, ruling out sequential proximity (C361).
 - Physical interpretation: the scribe organized recipes by operational type on the same leaf. Both sides of a sheet require the same furnace setup.
+
+### Phase 670: da-Prefix Terminal-Atom Positional Gradient (2 constraints)
+
+Within the da-prefix family in Currier B, terminal atoms encode position-of-line role. Same prefix (da), different terminals → systematically different line positions.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1979 | PREFIX-conditional terminal-atom positional gradient (da family). Same-prefix tokens sort to systematically different line positions by terminal atom: -ir/-iin/-in early, -l late, -m strict line-final. Within-line and folio-level permutation tests both p<0.01 for 5 of 6 tokens. Length and dam-adjacency confounds excluded. Cross-references C1486 (universal -m line-final). | 2 | B, PREFIX, terminal, atom, da, position, gradient, C1486, C1394, C1925 | daiin n=310 mean=0.413 p<0.0001. dain n=113 mean=0.421 p=0.008. dair n=49 mean=0.345 p<0.001. dar n=188 mean=0.507 n.s. dal n=130 mean=0.618 p<0.0001. dam n=42 mean=0.861 p<0.0001. |
+| 1980 | dar bimodal line-position distribution (observation). Despite mean=0.507, dar distribution is bimodal — concentrating at line edges (deciles 13.3,6.4,11.7,8.0,6.9,8.5,8.0,11.7,12.2,13.3), avoiding middle. Bimodality coefficient 0.581 (threshold 0.555). Mechanism (clause-edge marker, mixed populations, deployment artifact) not adjudicated. | 3 | B, PREFIX, dar, distribution, bimodal, observation, C1925, C1979 | n=188. mean=0.507. std=0.320. var/uniform=1.23. bimod_coef=0.581. skew=-0.106. kurt=1.741. |
+
+- C1979 cross-references C1486 directly: dam (mean=0.861, 85.7% line-final) within the da family is the manifestation of the universal -m line-final marker (C1486: 88.8% line-final across 578 -m tokens).
+- C1980 is registered as observation, not interpretation. Candidate mechanisms remain to be tested in a dedicated phase.
+- Both constraints emerged from controlled testing: 4 kill tests (bimodality decomposition, body-only line-1 exclusion, dal-dam adjacency, folio-level permutation) all passed before registration.
 
 ---
 
