@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1976 validated constraints | **Version:** 6.41 | **Date:** 2026-05-01
+**Total:** 1978 validated constraints | **Version:** 6.42 | **Date:** 2026-05-01
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7290,6 +7290,19 @@ Within the da-prefix family in Currier B, terminal atoms encode position-of-line
 - C1979 cross-references C1486 directly: dam (mean=0.861, 85.7% line-final) within the da family is the manifestation of the universal -m line-final marker (C1486: 88.8% line-final across 578 -m tokens).
 - C1980 is registered as observation, not interpretation. Candidate mechanisms remain to be tested in a dedicated phase.
 - Both constraints emerged from controlled testing: 4 kill tests (bimodality decomposition, body-only line-1 exclusion, dal-dam adjacency, folio-level permutation) all passed before registration.
+
+### Phase 671: dar Bimodality vs Clause-Structure Hypothesis (2 constraints)
+
+Pre-registered test of whether dar's bimodal line-position distribution reflects line-internal clause structure (crazy-expert hypothesis). Five-test design: 3 falsifiers + 2 joint tests. Result: clause-structure mechanism FALSIFIED, but a-HEAD r-TERM frame property confirmed as the generalization.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1981 | Clause-structure hypothesis for dar bimodality REJECTED. Pre-registered test: J1 length-conditional peak tracking shows peaks are position-absolute (decile 0 + line-end), NOT scaling with line length to mark interior boundaries. J2 conditional MI(dar_pos; nearest_headless_offset \| length_bin) = 0.0000 bits, p=1.0000. dar bimodality = line-edge concentration only, not interior clause-boundary marking. C1980 observation stable but mechanism falsified. | 1 | B, dar, bimodality, falsification, clause-structure, C1980, C964 | J1 4-7tok peaks=0.05/0.25, 8-12tok=0.05/0.85, 13+=0.05/0.95. J2 MI=0.0000 vs null mean 0.7139, p=1.0. F3 residualization survived (BC 0.564 -> 0.557). |
+| 1982 | a-HEAD r-TERM tokens share bimodal line-position class profile. 4 of 5 a-HEAD r-TERM tokens with n>=30 are bimodal (BC > 0.555): ar (BC=0.600), dar (BC=0.581), otar (BC=0.576), air (BC=0.638). One outlier: okar (BC=0.490). dar bimodality (C1980) is not dar-specific — generalizes to a-HEAD r-TERM frame class. Mechanism unknown (clause structure rejected per C1981). | 3 | B, atom, frame, a-HEAD, r-TERM, bimodality, observation, C1980, C1394 | ar n=198 BC=0.600. dar n=188 BC=0.581. otar n=92 BC=0.576. air n=34 BC=0.638. okar n=85 BC=0.490 (outlier). 4/5 bimodal at threshold 0.555. |
+
+- C1981 is a clean falsification: a specific mechanism (clause structure) was pre-registered with two discriminating tests (length-conditional peak shift + conditional mutual information) and both rejected the prediction. Falsification of a hypothesis, not a registered claim.
+- C1982 generalizes C1980: dar's edge-concentration is shared across the a-HEAD r-TERM class. Mechanism remains open (interior clause structure is excluded by C1981; possibilities include discourse-level scope, RI/PP/INFRA partitioning at edges, or atom-frame-specific deployment patterns).
+- F2 (a-HEAD frame leakage falsifier) was the breakthrough. Crazy-expert flagged this as the top alternative; data confirmed it. okar is unexplained outlier — flagged for follow-up.
 
 ---
 

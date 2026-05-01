@@ -4,6 +4,33 @@
 
 ---
 
+## Version 6.42 (2026-05-01) - Phase 671: dar Bimodality vs Clause-Structure Hypothesis
+
+### Summary
+
+Pre-registered test of crazy-expert's hypothesis that dar's bimodal line-position distribution (C1980) reflects line-internal clause structure. Five-test design: 3 falsifiers (F1 headless pre-screen, F2 a-HEAD frame leakage, F3 paragraph-zone residualization) + 2 joint tests (J1 length-conditional peak tracking, J2 conditional mutual information). Result: clause-structure mechanism FALSIFIED. dar's peaks are position-absolute (always at line-start + line-end), not length-scaling. MI = 0.0000 bits. But F2 found that a-HEAD r-TERM is a CLASS property: 4/5 a-HEAD r-TERM tokens with n>=30 share the bimodal profile. C1980 reframed as instance of broader phenomenon. Two constraints registered: C1981 (Tier 1 falsification), C1982 (Tier 3 class observation).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1981 | Clause-structure hypothesis for dar bimodality REJECTED, Tier 1 |
+| C1982 | a-HEAD r-TERM tokens share bimodal line-position class profile, Tier 3 |
+| Phase 671 dir | Created: script + INDEX |
+| CLAIMS/INDEX.md | 2 new constraints (C1981-C1982); total 1976 -> 1978, version 6.42 |
+| CLAUDE.md | Version 6.41 -> 6.42, constraints -> 1978, phases 670 -> 671 |
+
+### Key Findings
+
+- Pre-registered falsification design worked: J1 + J2 both rejected the predicted clause-structure mechanism
+- F2 (a-HEAD frame leakage check) was the methodological breakthrough — caught the right level of generality
+- 4 of 5 a-HEAD r-TERM tokens (ar, dar, otar, air) share BC > 0.555; only okar (BC=0.490) is outlier
+- F3 (paragraph-zone residualization) ruled out crazy-expert's bet that dar bimodality was a paragraph-position aggregation artifact (BC drop 0.564 → 0.557)
+- C964 ("boundary-constrained free-interior grammar") supported by C1981: interior IS free of dar-bimodality structure
+- Clean negative results are usable: C1981 is registered as Tier 1 falsification of a specific mechanism, not a Tier 0 frozen fact
+
+---
+
 ## Version 6.41 (2026-05-01) - Phase 670: da-Prefix Terminal-Atom Positional Gradient
 
 ### Summary

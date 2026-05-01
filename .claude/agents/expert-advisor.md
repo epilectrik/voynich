@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1976 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1978 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1980.
+the highest ID present is C1982.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1976 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1978 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1976 validated constraints are present as canonical one-line claims with tier
+1978 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-01 11:26
-**Version:** FROZEN STATE (1976 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-01 13:18
+**Version:** FROZEN STATE (1978 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2218,6 +2218,8 @@ C1976	Polyalphabetic cipher hypothesis REJECTED. Soft atoms (d,o,c,p,s,f,r) test
 C1977	Recto/verso thermal pairing: same-leaf folios have correlated e-depth	2	n=35 pairs, mean diff=0.124 vs 0.213 random
 C1979	PREFIX-conditional terminal-atom positional gradient (da family). Same-prefix tokens sort to systematically different line positions by terminal atom: -ir/-iin/-in early, -l late, -m strict line-final. Within-line and folio-level permutation tests both p<0.01 for 5 of 6 tokens. Length and dam-adjacency confounds excluded. Cross-references C1486 (universal -m line-final).	2	B, PREFIX, terminal, atom, da, position, gradient, C1486, C1394, C1925
 C1980	dar bimodal line-position distribution (observation). Despite mean=0.507, dar distribution is bimodal — concentrating at line edges (deciles 13.3,6.4,11.7,8.0,6.9,8.5,8.0,11.7,12.2,13.3), avoiding middle. Bimodality coefficient 0.581 (threshold 0.555). Mechanism (clause-edge marker, mixed populations, deployment artifact) not adjudicated.	3	B, PREFIX, dar, distribution, bimodal, observation, C1925, C1979
+C1981	Clause-structure hypothesis for dar bimodality REJECTED. Pre-registered test: J1 length-conditional peak tracking shows peaks are position-absolute (decile 0 + line-end), NOT scaling with line length to mark interior boundaries. J2 conditional MI(dar_pos; nearest_headless_offset \| length_bin) = 0.0000 bits, p=1.0000. dar bimodality = line-edge concentration only, not interior clause-boundary marking. C1980 observation stable but mechanism falsified.	1	B, dar, bimodality, falsification, clause-structure, C1980, C964
+C1982	a-HEAD r-TERM tokens share bimodal line-position class profile. 4 of 5 a-HEAD r-TERM tokens with n>=30 are bimodal (BC > 0.555): ar (BC=0.600), dar (BC=0.581), otar (BC=0.576), air (BC=0.638). One outlier: okar (BC=0.490). dar bimodality (C1980) is not dar-specific — generalizes to a-HEAD r-TERM frame class. Mechanism unknown (clause structure rejected per C1981).	3	B, atom, frame, a-HEAD, r-TERM, bimodality, observation, C1980, C1394
 
 ---
 
