@@ -1,0 +1,430 @@
+{
+  "f75r": {
+    "book": "Mercuriorum",
+    "chapter": 19,
+    "label": "aqua vitae (\u00d74 reflux + \u00d79 cycles per memory)",
+    "n_words": 120,
+    "digits": [
+      {
+        "n": 35,
+        "context": "bstance] at each sec-  --- page m35 (printed page 35, liber mercuriorum, caput xix-xxii) --- mercvrior",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 9,
+        "word": "nine",
+        "context": "i) --- mercvriorvm lib.  ond distillation through nine times. ",
+        "mult_hint": true
+      },
+      {
+        "n": 3,
+        "word": "third",
+        "context": " gold, of vegetable brazilwood. you shall place a third part of pure honey with all its substances, namel",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f76r": {
+    "book": "Practica",
+    "chapter": 16,
+    "label": "element separation (silver-plate test)",
+    "n_words": 393,
+    "digits": [],
+    "written_numbers": [
+      {
+        "n": 3,
+        "word": "three",
+        "context": "o the air. thus you shall divide and separate the three elements, which pertain to the white, signified b",
+        "mult_hint": false
+      },
+      {
+        "n": 4,
+        "word": "four",
+        "context": "e there is no fire, but for the red there are all four elements signified by o, p, q, r.  how the artist",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "first",
+        "context": "w, and as will be shown through our teaching. and first you shall receive the water that will come out th",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f84r": {
+    "book": "Practica",
+    "chapter": 12,
+    "label": "gold dissolution (balneum + putrefaction)",
+    "n_words": 484,
+    "digits": [],
+    "written_numbers": [
+      {
+        "n": 3,
+        "word": "three",
+        "context": " thus sealed place it in a hot balneum mariae for three natural days, as you have done on other occasions",
+        "mult_hint": false
+      },
+      {
+        "n": 11,
+        "word": "eleven",
+        "context": "ecome a fool, and give this heat continuously for eleven hours, then seal the small furnace, and go to sle",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "first",
+        "context": "aced thereupon on the small furnace, and make the first fire, and cause it to distill, and collect the mo",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f79r": {
+    "book": "Mercuriorum",
+    "chapter": 12,
+    "label": "mercury sublimation -> elixir",
+    "n_words": 250,
+    "digits": [
+      {
+        "n": 21,
+        "context": "ed with this sublima-  --- page m21 (printed page 21, liber mercuriorum, cap. xii cont.) --- mercvrior",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 3,
+        "word": "third",
+        "context": "tillation, so that there is another return, and a third time distill, and afterward gradually strengthen ",
+        "mult_hint": true
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f82r": {
+    "book": "Mercuriorum",
+    "chapter": 19,
+    "label": "III.19.1-5 multi-recipe",
+    "n_words": 120,
+    "digits": [
+      {
+        "n": 35,
+        "context": "bstance] at each sec-  --- page m35 (printed page 35, liber mercuriorum, caput xix-xxii) --- mercvrior",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 9,
+        "word": "nine",
+        "context": "i) --- mercvriorvm lib.  ond distillation through nine times. ",
+        "mult_hint": true
+      },
+      {
+        "n": 3,
+        "word": "third",
+        "context": " gold, of vegetable brazilwood. you shall place a third part of pure honey with all its substances, namel",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f76v": {
+    "book": "Mercuriorum",
+    "chapter": 15,
+    "label": "ferment conversion (join H + bind)",
+    "n_words": 132,
+    "digits": [
+      {
+        "n": 26,
+        "context": "ans of c5 of the sen-  --- page m26 (printed page 26, liber mercuriorum, caput xv cont. / caput xvi) -",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 1,
+        "word": "first",
+        "context": "nt will have been made by the liquefaction of the first chamber. if you wish, you can multiply it infinit",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f81v": {
+    "book": "Mercuriorum",
+    "chapter": 18,
+    "label": "potable gold / water of life",
+    "n_words": 206,
+    "digits": [
+      {
+        "n": 34,
+        "context": "of the veins appears.  --- page m34 (printed page 34, liber mercuriorum, caput xviii-xix) --- raymvndi",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 1,
+        "word": "one",
+        "context": "istill through the alembic, until you see through one day of return its stronger [form], which cannot b",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f112v": {
+    "book": "Mercuriorum",
+    "chapter": 1,
+    "label": "lunaria -> quicksilver pipeline origin",
+    "n_words": 566,
+    "digits": [
+      {
+        "n": 2,
+        "context": "n a gentle bath, until  --- page m2 (printed page 2, liber mercuriorum, caput primum cont.) --- raymv",
+        "mult_hint": false
+      },
+      {
+        "n": 3,
+        "context": " grate, and at the end  --- page m3 (printed page 3, liber mercuriorum, caput primum cont.) --- mercv",
+        "mult_hint": false
+      },
+      {
+        "n": 4,
+        "context": "d until with no gentle  --- page m4 (printed page 4, liber mercuriorum, caput secundum) --- raymvndi ",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 1,
+        "word": "one",
+        "context": "all the operations are nothing more than a single one, which is done by the method that we shall tell y",
+        "mult_hint": true
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "hich begins to burn, and let that be distilled to one side, and when that which could be distilled by t",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "ning make manifest, divide it into two parts, and one part you shall keep for creating and with it you ",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "blending of these is as we have told you, because one enters into the other and flees into it, and the ",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "vndi lvlli  fire it is dried, and know, son, that one burns the other, and strengthens it, and teaches ",
+        "mult_hint": false
+      },
+      {
+        "n": 2,
+        "word": "two",
+        "context": "he signs of burning make manifest, divide it into two parts, and one part you shall keep for creating a",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "first",
+        "context": "om it by distillation, separate the elements: but first you will separate the phlegmatic water, in which ",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "first",
+        "context": "al to cool with the whole vessel, then return the first liquor, which is the water in a mass, over the dr",
+        "mult_hint": false
+      },
+      {
+        "n": 2,
+        "word": "second",
+        "context": "ll sublimate the earth of the stone, and from the second part you shall draw the elements without any comb",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f103r": {
+    "book": "Mercuriorum",
+    "chapter": 16,
+    "label": "ferment multiplication",
+    "n_words": 664,
+    "digits": [
+      {
+        "n": 27,
+        "context": "ard place [them] upon  --- page m27 (printed page 27, liber mercuriorum, caput xvi cont.) --- mercvrio",
+        "mult_hint": false
+      },
+      {
+        "n": 28,
+        "context": "] quickly if a little  --- page m28 (printed page 28, liber mercuriorum, caput xvi cont.) --- raymvndi",
+        "mult_hint": false
+      },
+      {
+        "n": 29,
+        "context": " three months of ses-  --- page m29 (printed page 29, liber mercuriorum, caput xvi cont. / caput xvii)",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 1,
+        "word": "one",
+        "context": "ich are two chambers, let the whole be mixed into one reduction of liquefaction with heat, forming [it]",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "h this the fifth separation is revealed to you as one of those displayed: restore to it four [parts] in",
+        "mult_hint": false
+      },
+      {
+        "n": 2,
+        "word": "two",
+        "context": "mixtionum.  son, if you place b with e, which are two chambers, let the whole be mixed into one reducti",
+        "mult_hint": false
+      },
+      {
+        "n": 3,
+        "word": "three",
+        "context": "ght chambers primarily of tablets and tables over three years with great solicitude. secondly we made eac",
+        "mult_hint": false
+      },
+      {
+        "n": 3,
+        "word": "three",
+        "context": "ondly we made each chamber's [work] annual within three months of ses-  --- page m29 (printed page 29, li",
+        "mult_hint": false
+      },
+      {
+        "n": 4,
+        "word": "four",
+        "context": "d to you as one of those displayed: restore to it four [parts] in proportion [?], and more, and thus the",
+        "mult_hint": false
+      },
+      {
+        "n": 4,
+        "word": "four",
+        "context": "l method. i and some of my companions emptied all four or eight chambers primarily of tablets and tables",
+        "mult_hint": false
+      },
+      {
+        "n": 8,
+        "word": "eight",
+        "context": ". i and some of my companions emptied all four or eight chambers primarily of tablets and tables over thr",
+        "mult_hint": false
+      },
+      {
+        "n": 3,
+        "word": "triple",
+        "context": "quefaction with heat, forming [it]. but if with a triple or secret [proportion] in the mixing, that will b",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "first",
+        "context": "as] we shall tell you through the practice of the first chambers, or of their multiplication, it will eas",
+        "mult_hint": false
+      },
+      {
+        "n": 5,
+        "word": "fifth",
+        "context": "wn out through distillation. and through this the fifth separation is revealed to you as one of those dis",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f116r": {
+    "book": "Mercuriorum",
+    "chapter": 4,
+    "label": "fixation / fusibility test",
+    "n_words": 379,
+    "digits": [
+      {
+        "n": 7,
+        "context": " perfectione ipsius &.  --- page m7 (printed page 7, liber mercuriorum, caput quartum) --- mercvriorv",
+        "mult_hint": false
+      },
+      {
+        "n": 8,
+        "context": "d, and so make it from  --- page m8 (printed page 8, liber mercuriorum, caput quartum cont.) --- raym",
+        "mult_hint": false
+      },
+      {
+        "n": 9,
+        "context": " in its proper virtue.  --- page m9 (printed page 9, liber mercuriorum, caput v-vi) --- mercvriorvm l",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 1,
+        "word": "one",
+        "context": " taken the said pure substance, then you will fix one part of it, and we shall tell you the method of f",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "pter that begins, \"you shall take,\" etc. but that one does it from its own quicksilver, and therefore i",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": "excellent medicine of whiteness. and as we say of one, so understand us to say of all: we exclude none,",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "one",
+        "context": " shops: but understand well that where the common one is employed, as we know it, who recognize it in i",
+        "mult_hint": false
+      },
+      {
+        "n": 1,
+        "word": "first",
+        "context": "tum cont.) --- raymvndi lvlli  dissolve it in the first water, which is exuberated from the soul of the s",
+        "mult_hint": false
+      }
+    ],
+    "latin_numerals": []
+  },
+  "f112r": {
+    "book": "Mercuriorum",
+    "chapter": 11,
+    "label": "red mercury tincture (cohobation)",
+    "n_words": 248,
+    "digits": [
+      {
+        "n": 20,
+        "context": ", draw the dregs from  --- page m20 (printed page 20, liber mercuriorum, cap. xi cont.) --- raymvndi l",
+        "mult_hint": false
+      }
+    ],
+    "written_numbers": [
+      {
+        "n": 3,
+        "word": "three",
+        "context": " over ashes, and you shall distill it in the bath three times. and after each distillation you shall pour",
+        "mult_hint": true
+      }
+    ],
+    "latin_numerals": []
+  }
+}

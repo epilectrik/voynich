@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1982 validated constraints | **Version:** 6.46 | **Date:** 2026-05-03
+**Total:** 1984 validated constraints | **Version:** 6.47 | **Date:** 2026-05-03
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7352,6 +7352,31 @@ Pre-registered test of whether paragraph layout-position correlates with interna
 - Failed sanity check: prior memory note "Test B 2026-04-25 mean rho=+0.81 across 5 matched folios" did not replicate (-0.18 on 9 matched folios). NOT a contradiction: prior Test B used external recipe-phase ordinal; Phase 675 used internal e-depth gradient. Different proxies measure different things.
 - Methodological lesson: pre-registration discipline saved this phase from registering an artifact. The headline H-section -0.48 effect would have looked like Tier 2 without the P1 ablation falsifier.
 - Phase 674 cluster scope-limit (C1985) UNCHANGED — this phase did not refine the cluster operational signature claim.
+
+### Phase 676: Cross-Cipher Token Consistency (1 constraint)
+
+Foundational test: do Voynich tokens carry cipher-invariant operational meaning? SISMEL Testamentum source uses 4 cipher systems with different substance assignments (Part II B=mercury, Part III B=water). Matching catalog (C1971) implicitly assumes invariance — never directly tested. REGIME-controlled comparison: Part-II-matched (f76r, f84r) vs Part-III B-section-matched (f75r, f79r, f82r, f76v, f81v).
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1987 | Cross-cipher token operational profiles equivalent under section-matched comparison. For 30 frequent tokens (n>=5) appearing in both Part-II-matched and Part-III B-section-matched folios, per-token operational profiles (position, e-depth, terminal/head rates) are statistically equivalent. Mean profile distance Part II vs Part III B-sec = 0.086, smaller than within-Part III random-split null (0.139). REGIME-mismatched control (Part II vs Part III S-sec) = 0.124, slightly higher, consistent with REGIME secondary factor. Foundation of matching catalog (C1971) survives controlled test for first time. Scope: n=2 Part-II folios; cannot generalize to all cipher systems. | 3 | B, cipher, token, invariance, foundation, recipe-correspondence, C171, C1394, C1976, C1971 | n_common_tokens=30. p2_vs_p3b_dist=0.086. within_p3b_null=0.139. p2_vs_p3s_dist=0.124. mean_edepth_diff=0.000. mean_position_diff=0.086. n_p2_folios=2. n_p3b_folios=5. n_p3s_folios=4. |
+
+- C1987 is foundation-consistent observation, NOT generalized cipher-invariance proof. n=2 Part-II sample is the binding constraint; promotion to Tier 2 requires more matched Part-II folios.
+- Both experts converged on Tier 3 with scope-limit framing. Expert-advisor would accept Tier 2; crazy-expert flagged n=2 sample as "coincidence with error bars." Conservative call: Tier 3.
+- Mean e-depth diff = 0.000 is partly structurally trivial (per-word e-depth is invariant). Position-only variance (0.086) is the load-bearing measurement.
+
+### Phase 677: Iteration Cardinality Generalization (1 constraint)
+
+Tested whether f75r's ×4/×9 cardinality match (per C1965/C1969) generalizes to other matched folios. Pre-registered iteration counts from English recipe text BEFORE folio inspection. Test: max qok-class cluster size in 2-line windows.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1988 | f103r encodes rare-cardinality cluster matching source iteration count. f103r matched to III.16 (ferment multiplication "all four or eight chambers"). Pre-registered N=8 from source. Observed exactly 8 qok-class tokens (qokeedy x3, qokeey x3, qokeodair, qokshy) at L36-L37, in rare 15% folio-relative baseline band. Position aligns with recipe's late chamber-multiplication passage. Joint with f75r ×9 template (C1965): 2/2 rare-N predictions hit exactly, joint chance p=0.006. Adds one novel anchor to C1965/C1969 evidence base. Limitations: single novel case (f75r is template); f82r ×9 miss explainable but post-hoc; N=3 cases corpus-trivial (83% baseline) and uninformative; qualitative cluster-reading inadmissible for tier promotion. | 3 | B, cardinality, iteration, recipe-correspondence, qok-class, f103r, C1965, C1969, C1925, C1971 | f75r_N=9_observed=9_baseline=4pct. f103r_N=8_observed=8_baseline=15pct. f82r_N=9_observed=7_miss. N3_baseline=83pct (uninformative). joint_p_rare_N=0.006. |
+
+- C1988 contributes one novel anchor to C1965/C1969 evidence base. Promotion to Tier 2 requires third pre-registered rare-N anchor on novel folio.
+- Pre-registered pass criterion (>=5/7 within +-1) was missed by own threshold. Discriminating rare-N evidence is 2/3 hits.
+- f82r miss rescue ("multi-recipe sub-recipes don't share parent count") is post-hoc and unfalsifiable; flagged as methodological concern.
+- N=3 trivial-baseline lesson: rarity threshold determines whether a count-match is informative. Future cardinality tests should focus on rare-N cases only.
 
 ---
 

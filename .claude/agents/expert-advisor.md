@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1982 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1984 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1986.
+the highest ID present is C1988.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1982 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1984 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1982 validated constraints are present as canonical one-line claims with tier
+1984 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-03 08:49
-**Version:** FROZEN STATE (1982 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-03 11:34
+**Version:** FROZEN STATE (1984 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2224,6 +2224,8 @@ C1983	sh-prefix and ch-prefix differ in within-line position on fixed e->y frame
 C1984	Folio-level PREFIX-content alignment fails. Across 11 Phase-668-validated Voynich-Pseudo-Lull folio-recipe pairs, PREFIX rates (qo, ch, sh, ok, ot, ol, lk, lch) tested against keyword-density categories (heat, monitor, transfer, iter, vessel, complete) show no surviving correlations after multiple-comparison correction. 2/48 cells passed uncorrected p<0.05 — within chance frequency (~2.4 expected). PREFIX gloss system survives at category level (intra-folio operational classification per C1300, C929, C1962) but fails at folio-density-prediction level (cross-folio rate vs recipe content density).	3	B, PREFIX, recipe-correspondence, alignment, scale, NULL, C1300, C929, C1962, C1971, C1983
 C1985	Phase 642 26-folio pharmaceutical cluster maps to Herbal section (19/26 H, 4 C, 2 S, 1 T) with zero overlap with Phase 668 matched-alchemical folios (7 B + 4 S, no H). Naïve cluster-vs-matched comparison shows multiple |d|>2.0 effects on e-channel suppression and morphological palette (HEAD-e d=-2.68, TERM-r d=+2.59, e-depth=0 d=+2.75, qo d=-2.06, kernel-e d=-2.46) but these recapitulate known section-mediated effects (C939, C1404, C1893, C1808) and cannot be distinguished from them given zero matched folios in Herbal section. Limits cluster-property claims pending matched-H folios or within-folio tests.	3	B, cluster, herbal, section, scope-limit, confound, NULL, C939, C1404, C1893, C1808, Phase642
 C1986	Manuscript-wide procedural arc via internal e-depth gradient REJECTED. Pre-registered Phase 675 test failed at baseline (|mean_rho|=0.367 < 0.4 threshold). Section-conditional pattern (Herbal -0.48, Cluster -0.29) collapsed under paragraph-1 ablation (Herbal: -0.48 → -0.10; Cluster: -0.29 → -0.04). C1287 (paragraph-header MARKING-enrichment) explains the apparent gradient as paragraph-1 specification-vocabulary artifact. Only Biological-section weak gradient survives — no manuscript-wide procedural-arc signature. C1399 (paragraph independence) survives this test.	1	B, paragraph, layout, e-depth, gradient, falsification, NULL, C1287, C1399, C939, C1985
+C1987	Cross-cipher token operational profiles equivalent under section-matched comparison. For 30 frequent tokens (n>=5) appearing in both Part-II-matched and Part-III B-section-matched folios, per-token operational profiles (position, e-depth, terminal/head rates) are statistically equivalent. Mean profile distance Part II vs Part III B-sec = 0.086, smaller than within-Part III random-split null (0.139). REGIME-mismatched control (Part II vs Part III S-sec) = 0.124, slightly higher, consistent with REGIME secondary factor. Foundation of matching catalog (C1971) survives controlled test for first time. Scope: n=2 Part-II folios; cannot generalize to all cipher systems.	3	B, cipher, token, invariance, foundation, recipe-correspondence, C171, C1394, C1976, C1971
+C1988	f103r encodes rare-cardinality cluster matching source iteration count. f103r matched to III.16 (ferment multiplication "all four or eight chambers"). Pre-registered N=8 from source. Observed exactly 8 qok-class tokens (qokeedy x3, qokeey x3, qokeodair, qokshy) at L36-L37, in rare 15% folio-relative baseline band. Position aligns with recipe's late chamber-multiplication passage. Joint with f75r ×9 template (C1965): 2/2 rare-N predictions hit exactly, joint chance p=0.006. Adds one novel anchor to C1965/C1969 evidence base. Limitations: single novel case (f75r is template); f82r ×9 miss explainable but post-hoc; N=3 cases corpus-trivial (83% baseline) and uninformative; qualitative cluster-reading inadmissible for tier promotion.	3	B, cardinality, iteration, recipe-correspondence, qok-class, f103r, C1965, C1969, C1925, C1971
 
 ---
 

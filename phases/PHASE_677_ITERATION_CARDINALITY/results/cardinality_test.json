@@ -1,0 +1,552 @@
+{
+  "preregistered": [
+    {
+      "folio": "f75r",
+      "N": 9,
+      "class": "qok",
+      "strength": "strong (template)",
+      "source": "III.19 aqua vitae 9x reflux"
+    },
+    {
+      "folio": "f82r",
+      "N": 9,
+      "class": "qok",
+      "strength": "strong",
+      "source": "III.19.1-5 (same chapter as f75r)"
+    },
+    {
+      "folio": "f79r",
+      "N": 3,
+      "class": "qok",
+      "strength": "strong",
+      "source": "III.12 'third time distill'"
+    },
+    {
+      "folio": "f112r",
+      "N": 3,
+      "class": "qok",
+      "strength": "strong",
+      "source": "III.11 'distill...three times'"
+    },
+    {
+      "folio": "f103r",
+      "N": 8,
+      "class": "qok",
+      "strength": "weak",
+      "source": "III.16 'four or eight chambers'"
+    },
+    {
+      "folio": "f84r",
+      "N": 3,
+      "class": "qok",
+      "strength": "weak",
+      "source": "II.12 'three natural days'"
+    }
+  ],
+  "rarity_by_N": {
+    "3": {
+      "n_folios_with_max_>=N": 68,
+      "n_total": 82,
+      "pct": 82.92682926829268
+    },
+    "8": {
+      "n_folios_with_max_>=N": 12,
+      "n_total": 82,
+      "pct": 14.634146341463413
+    },
+    "9": {
+      "n_folios_with_max_>=N": 3,
+      "n_total": 82,
+      "pct": 3.6585365853658534
+    }
+  },
+  "results": [
+    {
+      "folio": "f75r",
+      "predicted_N": 9,
+      "max_observed": 9,
+      "hit_at_or_above": true,
+      "within_pm_1": true,
+      "clusters_at_N": [
+        {
+          "window_size": 2,
+          "start_line": "37",
+          "end_line": "38",
+          "count": 9,
+          "qok_words": [
+            "qokedy",
+            "qokedy",
+            "qokchdy",
+            "qokechdy",
+            "qokeedy",
+            "qokeedy",
+            "qokedy",
+            "qokedy",
+            "qokeedy"
+          ]
+        }
+      ],
+      "cluster_distribution": {
+        "1": 20,
+        "0": 7,
+        "2": 18,
+        "3": 17,
+        "5": 8,
+        "6": 4,
+        "4": 12,
+        "7": 3,
+        "8": 1,
+        "9": 1
+      },
+      "strength": "strong (template)",
+      "source": "III.19 aqua vitae 9x reflux"
+    },
+    {
+      "folio": "f82r",
+      "predicted_N": 9,
+      "max_observed": 7,
+      "hit_at_or_above": false,
+      "within_pm_1": false,
+      "clusters_at_N": [],
+      "cluster_distribution": {
+        "1": 12,
+        "4": 8,
+        "3": 15,
+        "6": 5,
+        "0": 6,
+        "5": 6,
+        "2": 10,
+        "7": 1
+      },
+      "strength": "strong",
+      "source": "III.19.1-5 (same chapter as f75r)"
+    },
+    {
+      "folio": "f79r",
+      "predicted_N": 3,
+      "max_observed": 7,
+      "hit_at_or_above": true,
+      "within_pm_1": false,
+      "clusters_at_N": [
+        {
+          "window_size": 2,
+          "start_line": "3",
+          "end_line": "4",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qokeey",
+            "qoky"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "4",
+          "end_line": "5",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qoky",
+            "qokal"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "8",
+          "end_line": "8",
+          "count": 3,
+          "qok_words": [
+            "qokol",
+            "qokal",
+            "qokal"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "9",
+          "end_line": "9",
+          "count": 3,
+          "qok_words": [
+            "qokar",
+            "qokal",
+            "qokam"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "14",
+          "end_line": "15",
+          "count": 3,
+          "qok_words": [
+            "qokain",
+            "qokl",
+            "qokal"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "16",
+          "end_line": "17",
+          "count": 3,
+          "qok_words": [
+            "qokain",
+            "qokam",
+            "qokaiin"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "17",
+          "end_line": "18",
+          "count": 3,
+          "qok_words": [
+            "qokaiin",
+            "qokaiin",
+            "qokain"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "18",
+          "end_line": "19",
+          "count": 3,
+          "qok_words": [
+            "qokaiin",
+            "qokain",
+            "qokain"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "24",
+          "end_line": "25",
+          "count": 3,
+          "qok_words": [
+            "qokshedy",
+            "qokedy",
+            "qokar"
+          ]
+        }
+      ],
+      "cluster_distribution": {
+        "0": 25,
+        "1": 26,
+        "3": 9,
+        "2": 21,
+        "5": 2,
+        "4": 2,
+        "7": 1,
+        "6": 1
+      },
+      "strength": "strong",
+      "source": "III.12 'third time distill'"
+    },
+    {
+      "folio": "f112r",
+      "predicted_N": 3,
+      "max_observed": 4,
+      "hit_at_or_above": true,
+      "within_pm_1": true,
+      "clusters_at_N": [
+        {
+          "window_size": 1,
+          "start_line": "9",
+          "end_line": "9",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qokchy",
+            "qokary"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "9",
+          "end_line": "10",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qokchy",
+            "qokary"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "10",
+          "end_line": "11",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qokeey",
+            "qokedy"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "11",
+          "end_line": "11",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qokeey",
+            "qokedy"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "16",
+          "end_line": "16",
+          "count": 3,
+          "qok_words": [
+            "qokeey",
+            "qokeeey",
+            "qokedain"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "18",
+          "end_line": "19",
+          "count": 3,
+          "qok_words": [
+            "qokey",
+            "qokeey",
+            "qoko"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "19",
+          "end_line": "19",
+          "count": 3,
+          "qok_words": [
+            "qokey",
+            "qokeey",
+            "qoko"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "19",
+          "end_line": "20",
+          "count": 3,
+          "qok_words": [
+            "qokey",
+            "qokeey",
+            "qoko"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "28",
+          "end_line": "29",
+          "count": 3,
+          "qok_words": [
+            "qokeedy",
+            "qokain",
+            "qokeey"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "34",
+          "end_line": "35",
+          "count": 3,
+          "qok_words": [
+            "qokar",
+            "qokchdy",
+            "qoky"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "37",
+          "end_line": "38",
+          "count": 3,
+          "qok_words": [
+            "qoky",
+            "qokeeiin",
+            "qokey"
+          ]
+        }
+      ],
+      "cluster_distribution": {
+        "1": 33,
+        "0": 26,
+        "2": 15,
+        "4": 4,
+        "3": 11
+      },
+      "strength": "strong",
+      "source": "III.11 'distill...three times'"
+    },
+    {
+      "folio": "f103r",
+      "predicted_N": 8,
+      "max_observed": 8,
+      "hit_at_or_above": true,
+      "within_pm_1": true,
+      "clusters_at_N": [
+        {
+          "window_size": 2,
+          "start_line": "36",
+          "end_line": "37",
+          "count": 8,
+          "qok_words": [
+            "qokeedy",
+            "qokeey",
+            "qokeey",
+            "qokeey",
+            "qokeodair",
+            "qokshy",
+            "qokeedy",
+            "qokeedy"
+          ]
+        }
+      ],
+      "cluster_distribution": {
+        "0": 16,
+        "2": 25,
+        "3": 18,
+        "1": 25,
+        "5": 12,
+        "4": 5,
+        "6": 4,
+        "7": 1,
+        "8": 1
+      },
+      "strength": "weak",
+      "source": "III.16 'four or eight chambers'"
+    },
+    {
+      "folio": "f84r",
+      "predicted_N": 3,
+      "max_observed": 6,
+      "hit_at_or_above": true,
+      "within_pm_1": false,
+      "clusters_at_N": [
+        {
+          "window_size": 1,
+          "start_line": "5",
+          "end_line": "5",
+          "count": 3,
+          "qok_words": [
+            "qokeedy",
+            "qokeey",
+            "qokedy"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "6",
+          "end_line": "7",
+          "count": 3,
+          "qok_words": [
+            "qokedy",
+            "qokey",
+            "qokain"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "8",
+          "end_line": "8",
+          "count": 3,
+          "qok_words": [
+            "qokeedy",
+            "qokedy",
+            "qokaiin"
+          ]
+        },
+        {
+          "window_size": 1,
+          "start_line": "19",
+          "end_line": "19",
+          "count": 3,
+          "qok_words": [
+            "qokal",
+            "qokedy",
+            "qoky"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "19",
+          "end_line": "20",
+          "count": 3,
+          "qok_words": [
+            "qokal",
+            "qokedy",
+            "qoky"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "24",
+          "end_line": "25",
+          "count": 3,
+          "qok_words": [
+            "qoky",
+            "qokol",
+            "qokeedy"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "25",
+          "end_line": "26",
+          "count": 3,
+          "qok_words": [
+            "qokol",
+            "qokeedy",
+            "qokchy"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "26",
+          "end_line": "27",
+          "count": 3,
+          "qok_words": [
+            "qokchy",
+            "qokedy",
+            "qokeedy"
+          ]
+        },
+        {
+          "window_size": 2,
+          "start_line": "30",
+          "end_line": "31",
+          "count": 3,
+          "qok_words": [
+            "qokain",
+            "qokeey",
+            "qokain"
+          ]
+        }
+      ],
+      "cluster_distribution": {
+        "1": 21,
+        "2": 13,
+        "6": 3,
+        "5": 5,
+        "4": 7,
+        "3": 9,
+        "0": 9
+      },
+      "strength": "weak",
+      "source": "II.12 'three natural days'"
+    }
+  ],
+  "summary": {
+    "n_strong": 4,
+    "n_strong_hits": 3,
+    "n_strong_within_1": 2,
+    "n_all": 6,
+    "n_all_hits": 5,
+    "n_all_within_1": 3,
+    "n_test_excluding_template": 5,
+    "n_test_hits": 4,
+    "n_test_within_1": 2
+  }
+}

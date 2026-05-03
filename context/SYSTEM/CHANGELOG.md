@@ -4,6 +4,39 @@
 
 ---
 
+## Version 6.47 (2026-05-03) - Phases 676 + 677: Cipher Consistency + Iteration Cardinality
+
+### Summary
+
+Two "must-be-true" tests proposed by experts after the 670-675 methodological calibration session. Both pre-registered, both controlled, both produced clean results that registered at Tier 3 after expert review.
+
+**Phase 676 (cross-cipher token consistency):** Foundational test of whether Voynich tokens carry cipher-invariant operational meaning given that SISMEL Testamentum source uses 4 cipher systems with different substance assignments. REGIME-controlled comparison between Part-II-matched (n=2: f76r, f84r) and Part-III B-section-matched (n=5: f75r, f79r, f82r, f76v, f81v) folios on 30 frequent common tokens. Result: Part II vs Part III B-sec mean profile distance = 0.086, smaller than within-Part III random null = 0.139. Section-confound check (Part II vs Part III S-sec) = 0.124, slightly higher. Foundation of matching catalog (C1971) survives controlled test. Tier 3 with explicit n=2 Part-II scope-limit per crazy-expert review.
+
+**Phase 677 (iteration cardinality):** Tested whether f75r's ×9 reflux pattern (C1965) generalizes. Pre-registered iteration counts from source recipe text BEFORE folio inspection. Result: f75r ×9 hit exact (template, known); f103r ×8 hit exact NOVEL (cluster at L36-L37, position-aligned with "all four or eight chambers" passage in III.16); f82r ×9 missed (max=7, multi-recipe folio); N=3 cases (f79r, f112r, f84r) all hit but at 83% corpus-trivial baseline (uninformative). Joint p(rare-N hits) = 0.006. One novel anchor; Tier 3 candidate evidence pending more cases.
+
+Two Tier 3 constraints registered: C1987 (cipher invariance), C1988 (cardinality novel anchor).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1987 | Cross-cipher token operational profiles equivalent under section-matched comparison, Tier 3 |
+| C1988 | f103r encodes ×8 rare-cardinality cluster matching source "four or eight chambers", Tier 3 |
+| Phase 676 dir | Created: script + INDEX |
+| Phase 677 dir | Created: 2 scripts + INDEX |
+| CLAIMS/INDEX.md | 2 new constraints; total 1982 -> 1984, version 6.47 |
+| CLAUDE.md | Version 6.46 -> 6.47, constraints -> 1984, phases 675 -> 677 |
+
+### Key Findings
+
+- Phase 676: foundational cipher-invariance assumption survives controlled test for first time. Token operational profiles statistically equivalent across Part II vs Part III B-section, with Part III S-section as section-confound control showing slightly higher distance.
+- Phase 677: f103r ×8 is the cleanest novel evidence in the cardinality channel. 8 qok-class tokens at L36-L37 position-aligned with the recipe's late chamber-multiplication passage. Rare 15% folio-relative baseline band.
+- Both experts converged on Tier 3 for both findings — the conservative call given (a) n=2 Part-II sample for 676 and (b) single novel anchor for 677.
+- N=3 cases in 677 are corpus-trivial (83% baseline); rarity threshold determines informativeness of cardinality match.
+- f82r ×9 miss is explainable (multi-recipe sub-recipes don't share parent count) but post-hoc rescue is unfalsifiable — flagged as methodological concern.
+
+---
+
 ## Version 6.46 (2026-05-03) - Phase 675: Manuscript-Wide Layout-Ordering Test
 
 ### Summary
