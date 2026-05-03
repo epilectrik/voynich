@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1981 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1982 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1985.
+the highest ID present is C1986.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1981 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1982 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1981 validated constraints are present as canonical one-line claims with tier
+1982 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-01 16:59
-**Version:** FROZEN STATE (1981 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-03 08:49
+**Version:** FROZEN STATE (1982 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2223,6 +2223,7 @@ C1982	a-HEAD r-TERM tokens share bimodal line-position class profile. 4 of 5 a-H
 C1983	sh-prefix and ch-prefix differ in within-line position on fixed e->y frame (Currier B body-only, articulators excluded). sh-e->y start-loaded; ch-e->y flat. Within-line permutation diff=-0.088, p=0.0000. Survives paragraph-line>=3, section stratification (sh start-loaded in H, B, S; ch flat in all 3), articulator exclusion (C1417), LATE-class exclusion (C539). PREFIX carries positional info beyond frame composition, articulator, LATE-class, and line-zone effects (C1426). Direct extension of C1001 (PREFIX dual encoding).	2	B, PREFIX, position, sh, ch, e->y, frame, C1001, C929, C1426, C1457, C1808, C1417, C539
 C1984	Folio-level PREFIX-content alignment fails. Across 11 Phase-668-validated Voynich-Pseudo-Lull folio-recipe pairs, PREFIX rates (qo, ch, sh, ok, ot, ol, lk, lch) tested against keyword-density categories (heat, monitor, transfer, iter, vessel, complete) show no surviving correlations after multiple-comparison correction. 2/48 cells passed uncorrected p<0.05 — within chance frequency (~2.4 expected). PREFIX gloss system survives at category level (intra-folio operational classification per C1300, C929, C1962) but fails at folio-density-prediction level (cross-folio rate vs recipe content density).	3	B, PREFIX, recipe-correspondence, alignment, scale, NULL, C1300, C929, C1962, C1971, C1983
 C1985	Phase 642 26-folio pharmaceutical cluster maps to Herbal section (19/26 H, 4 C, 2 S, 1 T) with zero overlap with Phase 668 matched-alchemical folios (7 B + 4 S, no H). Naïve cluster-vs-matched comparison shows multiple |d|>2.0 effects on e-channel suppression and morphological palette (HEAD-e d=-2.68, TERM-r d=+2.59, e-depth=0 d=+2.75, qo d=-2.06, kernel-e d=-2.46) but these recapitulate known section-mediated effects (C939, C1404, C1893, C1808) and cannot be distinguished from them given zero matched folios in Herbal section. Limits cluster-property claims pending matched-H folios or within-folio tests.	3	B, cluster, herbal, section, scope-limit, confound, NULL, C939, C1404, C1893, C1808, Phase642
+C1986	Manuscript-wide procedural arc via internal e-depth gradient REJECTED. Pre-registered Phase 675 test failed at baseline (|mean_rho|=0.367 < 0.4 threshold). Section-conditional pattern (Herbal -0.48, Cluster -0.29) collapsed under paragraph-1 ablation (Herbal: -0.48 → -0.10; Cluster: -0.29 → -0.04). C1287 (paragraph-header MARKING-enrichment) explains the apparent gradient as paragraph-1 specification-vocabulary artifact. Only Biological-section weak gradient survives — no manuscript-wide procedural-arc signature. C1399 (paragraph independence) survives this test.	1	B, paragraph, layout, e-depth, gradient, falsification, NULL, C1287, C1399, C939, C1985
 
 ---
 
@@ -2230,7 +2231,7 @@ C1985	Phase 642 26-folio pharmaceutical cluster maps to Herbal section (19/26 H,
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-01
+# Generated: 2026-05-03
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

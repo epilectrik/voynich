@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1981 validated constraints | **Version:** 6.45 | **Date:** 2026-05-01
+**Total:** 1982 validated constraints | **Version:** 6.46 | **Date:** 2026-05-03
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7339,6 +7339,19 @@ Tested whether Phase 642's 26-folio pharmaceutical-regime cluster has distinct o
 - C1985 is a methodological-scope-limit constraint, not a falsification of the cluster identification. Phase 642's PC1 separation is real (8-10σ). Only the operational-property interpretation is constrained.
 - Demonstrates the value of section-stratification falsifiers: the Phase 1 |d|>2.0 effects would have registered as Tier 2 cluster-property without confound testing.
 - Three established confound paths flagged before this phase: C939 (low-heat herbal), C1404 (section-determined PREFIX programs), C1893 (sh/ch section redistribution), C1808 (13/14 PREFIX fractions section-affected). Phase 674 cluster differences map onto these.
+
+### Phase 675: Manuscript-Wide Layout-Ordering Test (Internal Proxy) (1 constraint)
+
+Pre-registered test of whether paragraph layout-position correlates with internal e-depth gradient across 46 Currier B folios with ≥4 paragraphs. Pre-registered procedural threshold |mean_rho|>0.4 missed (got 0.367). Apparent section-conditional finding (Herbal -0.48, cluster -0.29) collapsed under paragraph-1 ablation falsifier predicted by crazy-expert.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1986 | Manuscript-wide procedural arc via internal e-depth gradient REJECTED. Pre-registered Phase 675 test failed at baseline (|mean_rho|=0.367 < 0.4 threshold). Section-conditional pattern (Herbal -0.48, Cluster -0.29) collapsed under paragraph-1 ablation (Herbal: -0.48 → -0.10; Cluster: -0.29 → -0.04). C1287 (paragraph-header MARKING-enrichment) explains the apparent gradient as paragraph-1 specification-vocabulary artifact. Only Biological-section weak gradient (-0.18 after P1, n=13) survives — no manuscript-wide procedural-arc signature. C1399 (paragraph independence) survives this test. | 1 | B, paragraph, layout, e-depth, gradient, falsification, NULL, C1287, C1399, C939, C1985 | n_folios=46. baseline_mean_rho=-0.174 (|rho|=0.367). H_baseline=-0.48, H_p1_drop=-0.10. cluster_baseline=-0.29, cluster_p1_drop=-0.04. B_p1_drop=-0.18. S_p1_drop=-0.02. |
+
+- C1986 is a clean Tier 1 falsification: pre-registered hypothesis, two falsifiers (P1 ablation, H-section drop, section-mean residualization), apparent signal collapsed under P1 ablation as crazy-expert predicted.
+- Failed sanity check: prior memory note "Test B 2026-04-25 mean rho=+0.81 across 5 matched folios" did not replicate (-0.18 on 9 matched folios). NOT a contradiction: prior Test B used external recipe-phase ordinal; Phase 675 used internal e-depth gradient. Different proxies measure different things.
+- Methodological lesson: pre-registration discipline saved this phase from registering an artifact. The headline H-section -0.48 effect would have looked like Tier 2 without the P1 ablation falsifier.
+- Phase 674 cluster scope-limit (C1985) UNCHANGED — this phase did not refine the cluster operational signature claim.
 
 ---
 

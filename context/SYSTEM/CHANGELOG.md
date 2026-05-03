@@ -4,6 +4,32 @@
 
 ---
 
+## Version 6.46 (2026-05-03) - Phase 675: Manuscript-Wide Layout-Ordering Test
+
+### Summary
+
+Pre-registered test (per crazy-expert recommendation): does paragraph layout-position correlate with internal e-depth gradient across all Currier B folios with ≥4 paragraphs (n=46)? Pre-registered procedural threshold |mean_rho|>0.4 + 60% same direction missed at baseline (got 0.367, 70% same direction). Apparent section-conditional finding (Herbal -0.48, cluster -0.29) collapsed under paragraph-1 ablation falsifier (Herbal: -0.48 → -0.10; Cluster: -0.29 → -0.04). C1287 (paragraph-header MARKING-enrichment) is the dominant confound. Only Biological-section weak gradient (-0.18 after P1, n=13) survives. C1399 (paragraph independence) survives this test. One Tier 1 falsification registered: C1986.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1986 | Manuscript-wide procedural arc via internal e-depth gradient REJECTED, Tier 1 falsification |
+| Phase 675 dir | Created: 2 scripts + INDEX |
+| CLAIMS/INDEX.md | 1 new constraint (C1986); total 1981 -> 1982, version 6.46 |
+| CLAUDE.md | Version 6.45 -> 6.46, constraints -> 1982, phases 674 -> 675 |
+
+### Key Findings
+
+- Pre-registration discipline saved this phase from registering a paragraph-1 artifact as Tier 2 cluster-property finding
+- Crazy-expert correctly predicted the P1 confound: "If it drops to |rho|<0.1, finding is a header artifact" — Herbal dropped from -0.48 to -0.10, Cluster from -0.29 to -0.04
+- C1287 paragraph-header MARKING-enrichment is the dominant confound in within-folio thermal-gradient tests
+- Failed sanity check (matched alchemical -0.18 vs prior +0.81) is informative: prior Test B used external recipe-phase ordinal; Phase 675 used internal e-depth gradient. Different proxies, different findings, no contradiction
+- Phase 674 cluster scope-limit (C1985) unchanged — this phase did not validate the "cluster procedural" framing
+- C1399 (paragraph independence universal) survives — apparent gradient was confound, not real procedural sequencing
+
+---
+
 ## Version 6.45 (2026-05-01) - Phase 674: Pharmaceutical Cluster Operational Profile
 
 ### Summary
