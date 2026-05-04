@@ -1,0 +1,121 @@
+{
+  "recipe_results": {
+    "f112v": {
+      "label": "lunaria_quicksilver",
+      "n_paragraphs": 13,
+      "start_paragraphs": 3,
+      "end_paragraphs": 3,
+      "start_node": "WEST",
+      "start_distance": 1.6360248447204975,
+      "end_node": "NW",
+      "end_distance": 1.7105042016806729,
+      "same_node": false,
+      "adjacent_path": true
+    },
+    "f76v": {
+      "label": "ferment_conversion",
+      "n_paragraphs": 6,
+      "start_paragraphs": 2,
+      "end_paragraphs": 2,
+      "start_node": "EAST",
+      "start_distance": 2.4862895493767976,
+      "end_node": "WEST",
+      "end_distance": 2.413019891500904,
+      "same_node": false,
+      "adjacent_path": false
+    },
+    "f82r": {
+      "label": "multi_recipe_aqua",
+      "n_paragraphs": 4,
+      "start_paragraphs": 1,
+      "end_paragraphs": 1,
+      "start_node": "EAST",
+      "start_distance": 3.0432539682539668,
+      "end_node": "EAST",
+      "end_distance": 3.0825396825396814,
+      "same_node": true,
+      "adjacent_path": false
+    },
+    "f76r": {
+      "label": "element_separation",
+      "n_paragraphs": 4,
+      "start_paragraphs": 1,
+      "end_paragraphs": 1,
+      "start_node": "EAST",
+      "start_distance": 2.121008403361344,
+      "end_node": "EAST",
+      "end_distance": 1.8852130325814536,
+      "same_node": true,
+      "adjacent_path": false
+    },
+    "f103r": {
+      "label": "ferment_multipl",
+      "n_paragraphs": 18,
+      "start_paragraphs": 3,
+      "end_paragraphs": 3,
+      "start_node": "EAST",
+      "start_distance": 1.7294705294705295,
+      "end_node": "EAST",
+      "end_distance": 2.9422003284072247,
+      "same_node": true,
+      "adjacent_path": false
+    },
+    "f79r": {
+      "label": "mercury_sublim",
+      "n_paragraphs": 8,
+      "start_paragraphs": 2,
+      "end_paragraphs": 2,
+      "start_node": "EAST",
+      "start_distance": 2.127318295739349,
+      "end_node": "WEST",
+      "end_distance": 1.8879120879120874,
+      "same_node": false,
+      "adjacent_path": false
+    },
+    "f112r": {
+      "label": "red_mercury_tincture",
+      "n_paragraphs": 10,
+      "start_paragraphs": 3,
+      "end_paragraphs": 3,
+      "start_node": "EAST",
+      "start_distance": 1.7678571428571426,
+      "end_node": "EAST",
+      "end_distance": 1.5575452716297784,
+      "same_node": true,
+      "adjacent_path": false
+    },
+    "f84r": {
+      "label": "gold_dissolution",
+      "n_paragraphs": 14,
+      "start_paragraphs": 3,
+      "end_paragraphs": 3,
+      "start_node": "EAST",
+      "start_distance": 2.1,
+      "end_node": "EAST",
+      "end_distance": 1.7235449735449737,
+      "same_node": true,
+      "adjacent_path": false
+    },
+    "f116r": {
+      "label": "fixation",
+      "n_paragraphs": 8,
+      "start_paragraphs": 2,
+      "end_paragraphs": 2,
+      "start_node": "EAST",
+      "start_distance": 1.6484848484848487,
+      "end_node": "EAST",
+      "end_distance": 2.1486542443064187,
+      "same_node": true,
+      "adjacent_path": false
+    }
+  },
+  "n_diff": 3,
+  "n_adjacent": 1,
+  "n_coherent_walk": 7,
+  "p_test2_perm": 0.9959,
+  "p_test3_perm": 0.0557,
+  "pass_test1": false,
+  "pass_test2": false,
+  "pass_test3": true,
+  "verdict": "Recipes-as-transitions NOT supported; no registration"
+}

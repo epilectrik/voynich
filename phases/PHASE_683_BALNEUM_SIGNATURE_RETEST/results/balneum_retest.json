@@ -1,0 +1,15 @@
+{
+  "matched_n": 84,
+  "corpus_n": 284,
+  "matched_mean": 0.870908744279211,
+  "corpus_mean": 0.8168402212958522,
+  "cluster_mean": 0.6757959782153331,
+  "cohens_d_matched_corpus": 0.20683602825203445,
+  "p_one_tailed": 0.25660979013390883,
+  "loo_min_d": 0.16309959184337147,
+  "permutation_p": 0.0547,
+  "cluster_vs_corpus_d": -0.44979847503418713,
+  "matched_vs_cluster_d": 0.6987603291885781,
+  "t1_pass": false,
+  "verdict": "T1 FAIL: workshop interpretation stays Tier 4"
+}

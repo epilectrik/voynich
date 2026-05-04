@@ -1,0 +1,109 @@
+{
+  "real_assignment": {
+    "CENTER": "f81v",
+    "NORTH": "f81v",
+    "NE": "f112r",
+    "EAST": "f84r",
+    "SE": "f116r",
+    "SOUTH": "f116r",
+    "SW": "f116r",
+    "WEST": "f112r",
+    "NW": "f81v"
+  },
+  "real_score": {
+    "bottom_uniform": 3,
+    "top_uniform": 2,
+    "adjacency_score": 0.25,
+    "combined": 6.0
+  },
+  "F1_permutation_null": {
+    "n_perm": 10000,
+    "p_combined": 0.0242,
+    "p_bottom_uniform": 0.0248,
+    "p_top_uniform": 0.5416,
+    "null_mean_combined": 3.9127199999999998
+  },
+  "F2_subregion_assignments": {
+    "CENTER|ring": {
+      "match": "f116r",
+      "distance": 3.038175046554935
+    },
+    "CENTER|inner_label": {
+      "match": "f81v",
+      "distance": 3.230066445182725
+    },
+    "NORTH|ring": {
+      "match": "f81v",
+      "distance": 3.018087855297158
+    },
+    "NORTH|inner_label": {
+      "match": "f81v",
+      "distance": 3.907751937984497
+    },
+    "NE|outer_label": {
+      "match": "f116r",
+      "distance": 2.929469273743018
+    },
+    "NE|inner_label": {
+      "match": "f81v",
+      "distance": 4.406976744186047
+    },
+    "NE|ring": {
+      "match": "f116r",
+      "distance": 2.379380396140173
+    },
+    "NE|spiral": {
+      "match": "f81v",
+      "distance": 4.313953488372093
+    },
+    "EAST|ring": {
+      "match": "f84r",
+      "distance": 2.1075715604801473
+    },
+    "EAST|inner_label": {
+      "match": "f81v",
+      "distance": 3.713953488372093
+    },
+    "SE|ring": {
+      "match": "f112r",
+      "distance": 2.3166731745411946
+    },
+    "SOUTH|ring": {
+      "match": "f116r",
+      "distance": 2.8130594101039237
+    },
+    "SOUTH|inner_label": {
+      "match": "f116r",
+      "distance": 3.0872905027932966
+    },
+    "SW|ring": {
+      "match": "f116r",
+      "distance": 3.264852525980657
+    },
+    "SW|inner_label": {
+      "match": "f81v",
+      "distance": 3.1550387596899214
+    },
+    "WEST|ring": {
+      "match": "f112v",
+      "distance": 2.4455153949129844
+    },
+    "WEST|inner_label": {
+      "match": "f112r",
+      "distance": 2.8876903553299496
+    },
+    "NW|ring": {
+      "match": "f112r",
+      "distance": 2.1058738216098627
+    },
+    "NW|outer_label": {
+      "match": "f79r",
+      "distance": 2.8485627483056786
+    }
+  },
+  "F3_whitelist_sensitivity": {
+    "n_trials": 100,
+    "persist_count": 45,
+    "p_arbitrary_pool": 0.45
+  }
+}

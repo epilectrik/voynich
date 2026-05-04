@@ -4,6 +4,53 @@
 
 ---
 
+## Version 6.48 (2026-05-04) - Phases 680-683: Rosettes Foldout Multi-Phase Investigation
+
+### Summary
+
+Four-phase investigation of the f85-86 rosettes foldout, prompted by user instinct that "the foldout is too prominent for its purpose to be obscure." Combined visual + structural evidence converges on **workshop-diagram interpretation** (Tier 4 SPECULATIVE synthesis).
+
+The visual annotations in `data/rosettes_annotated.json` (manual ZL annotation, Feb 2026) explicitly identify CENTER as a multi-alembic balneum mariae apparatus matching Brunschwig's woodcuts; cardinals as operational outlets; corners as workshop context (architecture, facility plan, water source, botanical materials). Text-only methods correctly identified structural properties (path/node differentiation, AZC-like metalayer, central-vs-peripheral structural difference) but cannot independently validate the iconographic identification.
+
+Three constraints registered: 1 Tier 3 supporting structural property + 2 Tier 1 falsifications.
+
+**Phases:**
+- **680:** Rosette ↔ matched-recipe operational fingerprint. Path/node differentiation real; recipe-class operational map FALSIFIED via whitelist sensitivity (45/100 random pools reproduce).
+- **681:** da-MIDDLE state encoding test on f84r. dar tokens have no MIDDLE variability — test structurally inapplicable. Documented but not registered.
+- **682:** Recipes-as-transitions test. Pre-registered hypothesis FALSIFIED on all 3 tests. 8/9 recipe starts collapse to EAST.
+- **683:** C1970 balneum signature retest with corrected methodology. Failed all 4 pre-registered criteria (d=+0.21 vs req 0.35). C1970 retraction final.
+
+**Workshop-diagram synthesis (Tier 4):** SPECULATIVE/rosettes_workshop_diagram.md documents the most coherent integration of visual + structural evidence. Cannot promote above Tier 4 because text-statistical anchors don't support specific iconographic identifications.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1989 | Rosette path/node structural differentiation, Tier 3 |
+| C1990 | Recipes-as-transitions REJECTED, Tier 1 falsification |
+| C1991 | C1970 balneum signature retest NULL with corrected methodology, Tier 1 falsification |
+| Phase 680/681/682/683 dirs | Created with INDEX, scripts, results, pre-registrations |
+| SPECULATIVE/rosettes_workshop_diagram.md | Tier 4 synthesis document |
+| CLAIMS/INDEX.md | 3 new constraints; total 1984 -> 1987, version 6.48 |
+| CLAUDE.md | Version 6.47 -> 6.48, constraints -> 1987, phases 677 -> 683 |
+
+### Key Findings
+
+- The foldout is most plausibly a medieval alchemical workshop diagram with multi-alembic balneum mariae at center, operational outlets at cardinals, workshop context at corners
+- Path/node textual differentiation (9.4x da-prefix paths vs 4.3x ok-prefix nodes) is real and survives same-folio baseline
+- Recipes are NOT single transitions in the rosette graph; they're operational programs sharing a common preparation signature (8/9 start_nodes = EAST)
+- C1970 balneum signature claim is not statistically supported even with corrected methodology and expanded sample
+- Text-only methods cannot decode pictorial content; the workshop interpretation requires visual evidence to ground specific iconographic identifications
+
+### Methodological Lessons
+
+1. Visual content is a different information channel than text labels. Text-feature engineering can characterize structural properties of a diagram but cannot decode pictorial content.
+2. Constraint retractions are metric-specific, not claim-permanent. Re-testing with corrected methodology is methodologically sound (per C1966/C1967 precedent). Phase 683 confirmed C1970's retraction is also substantively final, not just methodologically.
+3. Pre-registration discipline held: Phases 681-683 produced 2 Tier 1 falsifications and 0 Tier 2-3 promotions of interpretive claims. The synthesis stays at Tier 4 because that's where the evidence supports it.
+4. User intuition ("this thing is too prominent for its purpose to be obscure") was sharp — the foldout's purpose IS legible, just through visual iconography rather than text-statistical analysis.
+
+---
+
 ## Version 6.47 (2026-05-03) - Phases 676 + 677: Cipher Consistency + Iteration Cardinality
 
 ### Summary

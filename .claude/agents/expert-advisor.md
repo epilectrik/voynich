@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1984 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1987 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1988.
+the highest ID present is C1991.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1984 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1987 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1984 validated constraints are present as canonical one-line claims with tier
+1987 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-03 11:34
-**Version:** FROZEN STATE (1984 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-04 14:31
+**Version:** FROZEN STATE (1987 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2226,6 +2226,9 @@ C1985	Phase 642 26-folio pharmaceutical cluster maps to Herbal section (19/26 H,
 C1986	Manuscript-wide procedural arc via internal e-depth gradient REJECTED. Pre-registered Phase 675 test failed at baseline (|mean_rho|=0.367 < 0.4 threshold). Section-conditional pattern (Herbal -0.48, Cluster -0.29) collapsed under paragraph-1 ablation (Herbal: -0.48 → -0.10; Cluster: -0.29 → -0.04). C1287 (paragraph-header MARKING-enrichment) explains the apparent gradient as paragraph-1 specification-vocabulary artifact. Only Biological-section weak gradient survives — no manuscript-wide procedural-arc signature. C1399 (paragraph independence) survives this test.	1	B, paragraph, layout, e-depth, gradient, falsification, NULL, C1287, C1399, C939, C1985
 C1987	Cross-cipher token operational profiles equivalent under section-matched comparison. For 30 frequent tokens (n>=5) appearing in both Part-II-matched and Part-III B-section-matched folios, per-token operational profiles (position, e-depth, terminal/head rates) are statistically equivalent. Mean profile distance Part II vs Part III B-sec = 0.086, smaller than within-Part III random-split null (0.139). REGIME-mismatched control (Part II vs Part III S-sec) = 0.124, slightly higher, consistent with REGIME secondary factor. Foundation of matching catalog (C1971) survives controlled test for first time. Scope: n=2 Part-II folios; cannot generalize to all cipher systems.	3	B, cipher, token, invariance, foundation, recipe-correspondence, C171, C1394, C1976, C1971
 C1988	f103r encodes rare-cardinality cluster matching source iteration count. f103r matched to III.16 (ferment multiplication "all four or eight chambers"). Pre-registered N=8 from source. Observed exactly 8 qok-class tokens (qokeedy x3, qokeey x3, qokeodair, qokshy) at L36-L37, in rare 15% folio-relative baseline band. Position aligns with recipe's late chamber-multiplication passage. Joint with f75r ×9 template (C1965): 2/2 rare-N predictions hit exactly, joint chance p=0.006. Adds one novel anchor to C1965/C1969 evidence base. Limitations: single novel case (f75r is template); f82r ×9 miss explainable but post-hoc; N=3 cases corpus-trivial (83% baseline) and uninformative; qualitative cluster-reading inadmissible for tier promotion.	3	B, cardinality, iteration, recipe-correspondence, qok-class, f103r, C1965, C1969, C1925, C1971
+C1989	Rosette path/node structural differentiation. Within the f85-86 rosettes foldout (data/rosettes_annotated.json), path tokens between rosettes differ structurally from rosette node tokens. Paths show 9.4x enrichment in da-prefix (16% vs 1.7%) and 4.3x depletion in ok-prefix (4% vs 17.1%). Survives same-folio baseline control (f85+f86 body has 6% da-prefix, intermediate). Recipe-class operational map interpretation FALSIFIED by whitelist-sensitivity test (45/100 random non-matched 11-folio pools reproduce same spatial coherence). Path/node distinction is intentional structural property, not arithmetic artifact. Mechanism not adjudicated; consistent with workshop-apparatus-diagram interpretation.	3	Rosettes, foldout, path-node, da-prefix, ok-prefix, structural, C1124, C1126, C1128
+C1990	Recipes-as-transitions in rosette graph REJECTED. Pre-registered Phase 682 test of "recipes are single state transitions in the rosette graph (recipe-as-edge)" with 11 matched-recipe folios. Test 1 (start_node != end_node, >=10/11): FAIL (3/9 testable). Test 2 (path-aligned, >=8/11): FAIL. Test 3 (coherent walk): trivial pass (8/9 starts collapse to EAST). Recipes are NOT single edges in operations graph; they share common preparation/apparatus signature. The "rosettes-as-PFD with recipes-as-paths" interpretation falsified at structural level.	1	B, Rosettes, recipe-correspondence, falsification, NULL, C1124, C1128, C1989
+C1991	C1970 underlying balneum text-signature claim NOT supported with corrected methodology. Pre-registered Phase 683 retest of C1970's underlying claim ("CONFIRMED-tier matched folios have elevated indirect/dampened-thermal signature") with corrected metric ke/(ke+ek) proportion and expanded sample. Failed all 4 pre-registered criteria: d=+0.207 (req >=0.35), p=0.257 (req <0.05), LOO min d=+0.163 (req >=0.20), perm p=0.0547 (req <0.05). C1970 retraction final; underlying balneum text-signature claim is not statistically distinguishable from chance even with corrected methodology. Workshop-diagram interpretation cannot lean on body-text balneum signature as anchor.	1	B, paragraph, ke, balneum, falsification, NULL, C1970-retracted, C1972, C1225
 
 ---
 
@@ -2233,7 +2236,7 @@ C1988	f103r encodes rare-cardinality cluster matching source iteration count. f1
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-03
+# Generated: 2026-05-04
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

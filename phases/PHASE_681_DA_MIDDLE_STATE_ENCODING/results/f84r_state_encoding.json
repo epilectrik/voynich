@@ -1,0 +1,84 @@
+{
+  "n": 8,
+  "dar_records": [
+    {
+      "paragraph": 8,
+      "para_position": 6,
+      "word": "daiin",
+      "line": "8",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 11,
+      "para_position": 12,
+      "word": "daiin",
+      "line": "11",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 13,
+      "para_position": 50,
+      "word": "daiin",
+      "line": "19",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 13,
+      "para_position": 56,
+      "word": "daiin",
+      "line": "19",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 13,
+      "para_position": 91,
+      "word": "daiin",
+      "line": "22",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 13,
+      "para_position": 94,
+      "word": "daiin",
+      "line": "23",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 13,
+      "para_position": 95,
+      "word": "dain",
+      "line": "23",
+      "middle_atoms": [
+        "i"
+      ]
+    },
+    {
+      "paragraph": 14,
+      "para_position": 3,
+      "word": "dain",
+      "line": "24",
+      "middle_atoms": [
+        "i"
+      ]
+    }
+  ],
+  "actual_ari": -0.08888888888888892,
+  "ari_p": 0.8239,
+  "actual_mantel": 0,
+  "mantel_p": 1.0,
+  "pass_primary": false,
+  "pass_secondary": false,
+  "verdict": "STATE-ENCODING REJECTED for f84r dar; identification-vocabulary per C1135 prevails"
+}

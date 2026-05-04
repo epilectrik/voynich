@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1984 validated constraints | **Version:** 6.47 | **Date:** 2026-05-03
+**Total:** 1987 validated constraints | **Version:** 6.48 | **Date:** 2026-05-04
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7377,6 +7377,21 @@ Tested whether f75r's ×4/×9 cardinality match (per C1965/C1969) generalizes to
 - Pre-registered pass criterion (>=5/7 within +-1) was missed by own threshold. Discriminating rare-N evidence is 2/3 hits.
 - f82r miss rescue ("multi-recipe sub-recipes don't share parent count") is post-hoc and unfalsifiable; flagged as methodological concern.
 - N=3 trivial-baseline lesson: rarity threshold determines whether a count-match is informative. Future cardinality tests should focus on rare-N cases only.
+
+### Phases 680-683: Rosettes Foldout Multi-Phase Investigation (3 constraints)
+
+Four-phase investigation of the f85-86 rosettes foldout's structure and purpose. Combined visual + structural evidence converges on workshop-diagram interpretation (Tier 4 synthesis, see SPECULATIVE/rosettes_workshop_diagram.md). Three Tier 1-3 constraints registered from text-structural findings: 1 Tier 3 supporting structural property, 2 Tier 1 falsifications of specific hypotheses.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1989 | Rosette path/node structural differentiation. Within the f85-86 rosettes foldout (data/rosettes_annotated.json), path tokens between rosettes (n=25, 8 paths in octagonal cycle) differ structurally from rosette node tokens (n=409, 9 rosettes). Paths show 9.4x enrichment in da-prefix (16% vs 1.7%) and 4.3x depletion in ok-prefix (4% vs 17.1%). Survives same-folio baseline control (f85+f86 body has 6% da-prefix, intermediate). Recipe-class operational map interpretation FALSIFIED by whitelist-sensitivity test (45/100 random non-matched 11-folio pools reproduce same spatial coherence). Path/node distinction is intentional structural property, not arithmetic artifact. Mechanism not adjudicated; consistent with workshop-apparatus-diagram interpretation. | 3 | Rosettes, foldout, path-node, da-prefix, ok-prefix, structural, C1124, C1126, C1128 | path_da=16pct. node_da=1.7pct. path_ok=4pct. node_ok=17.1pct. folio_baseline_da=6pct. F3_random_pool_p=0.45. |
+| 1990 | Recipes-as-transitions in rosette graph REJECTED. Pre-registered Phase 682 test of "recipes are single state transitions in the rosette graph (recipe-as-edge)" with 11 matched-recipe folios. Test 1 (start_node != end_node, >=10/11): FAIL (3/9 testable). Test 2 (path-aligned, >=8/11): FAIL (1/9, p=0.9959, worse than random). Test 3 (coherent walk): trivial pass (8/9 starts collapse to EAST). Recipes are NOT single edges in operations graph; they share common preparation/apparatus signature. The "rosettes-as-PFD with recipes-as-paths" interpretation falsified at structural level. | 1 | B, Rosettes, recipe-correspondence, falsification, NULL, C1124, C1128, C1989 | n_recipes=9_testable. start_neq_end=3of9. path_aligned=1of9. perm_p_path=0.9959. eight_of_nine_starts=EAST. |
+| 1991 | C1970 underlying balneum text-signature claim NOT supported with corrected methodology. Pre-registered Phase 683 retest of C1970's underlying claim ("CONFIRMED-tier matched folios have elevated indirect/dampened-thermal signature") with corrected metric ke/(ke+ek) proportion and expanded sample (11 matched folios, n=84 paragraphs vs corpus n=284). Failed all 4 pre-registered criteria: d=+0.207 (req >=0.35), p=0.257 (req <0.05), LOO min d=+0.163 (req >=0.20), perm p=0.0547 (req <0.05). C1970 retraction final; underlying balneum text-signature claim is not statistically distinguishable from chance even with corrected methodology. Workshop-diagram interpretation cannot lean on body-text balneum signature as anchor. | 1 | B, paragraph, ke, balneum, falsification, NULL, C1970-retracted, C1972, C1225 | matched_n_paras=84. corpus_n_paras=284. d=+0.207. p=0.257. loo_min_d=+0.163. perm_p=0.0547. |
+
+- C1989 is the substantive structural finding from Phases 680-683. It establishes that path/node differentiation is real but mechanism remains under-determined.
+- C1990 is a clean falsification: pre-registered specific hypothesis (recipes are single state transitions), rejected.
+- C1991 is a methodological closure: tested whether C1970's retraction was metric-specific (signal preserved) or substantive (signal absent). With corrected methodology + expanded sample, signal still not significant. Retraction final on substantive grounds, not just methodological.
+- The workshop-diagram interpretation (SPECULATIVE/rosettes_workshop_diagram.md) is the most coherent integration of visual + structural evidence available, but stays at Tier 4 ceiling.
 
 ---
 
