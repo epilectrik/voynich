@@ -4,6 +4,48 @@
 
 ---
 
+## Version 6.49 (2026-05-04) - Phase 684: f66r as Character-Key/Glossary Page
+
+### Summary
+
+Scatter-shot exploration phase (user prompt: "make a 'scatter shot test' that test 5-10 different ideas, and follow the evidence where it leads") surfaced f66r as a singular structural anomaly in Currier B. Two killer tests confirmed both findings register cleanly.
+
+**Test 1 (Killer): max-folio short-start null distribution.** 10000-permutation null on max short-start rate across 82 Currier B folios. Actual f66r=88.2%; null max mean=22.1%, std=6.0%; **z=11.11, p<0.0001**. f66r is a genuine structural outlier, not a long-tail extreme. Next-highest folio is f43v at 18.8% — a 69-percentage-point gap.
+
+**Test 2: pre-registered atom-gloss header-to-content correspondence.** 4 pre-registered mappings per C1195 atom glosses. d-header → da-prefix at 5.4x (p=0.012) PASS; t-header → ot-prefix at 3.7x (p=0.014) PASS; l→ol borderline (2.6x, p=0.056); sh→sh inverted (depleted at 0.6x). Strict pre-reg criterion (3/4) FAILED.
+
+**Test 3 (Killer): cross-folio atom-gloss specificity.** Run same 4-mapping test on every Currier B folio with >=30 lines (n=46). Only **1/46 folios** (2%) passes 2+ mappings — and that 1 is f66r. Crazy-expert predicted ~30% would pass by chance; actual 2% confirms f66r-uniqueness, not registration-mining.
+
+**Tier 4 synthesis:** f66r appears to be the manuscript's internal **character-key/operational reference page** — each line headed by a character that marks an operational role, with content listing examples within or adjacent to that role. Stays at Tier 4 because text-only methods cannot validate iconographic claims (the small drawing at top, layout features, 16th-century Latin marginalia).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1992 | f66r short-start structural singleton, Tier 2 (z=11.11, p<0.0001) |
+| C1993 | f66r atom-gloss header-to-content correspondence, Tier 3 (cross-folio specific 1/46) |
+| Phase 684 dir | Created with INDEX, s1_keypage_test.py, s2_killer_tests.py |
+| SPECULATIVE/f66r_keypage.md | Tier 4 character-key page synthesis |
+| CLAIMS/INDEX.md | 2 new constraints; total 1987 -> 1989, version 6.48 -> 6.49 |
+| CLAUDE.md | Version 6.48 -> 6.49, constraints -> 1989, phases 683 -> 684 |
+
+### Key Findings
+
+- f66r is a structural singleton in Currier B for line-initial token brevity (88% short-start vs <19% next-highest, z=11 vs null max)
+- f66r exhibits f66r-specific atom-gloss header-content correspondence: only 1/46 folios passes 2+ pre-registered mappings (vs 30% predicted by chance)
+- d="do" → da-prefix and t="transfer" → ot-prefix are the two clean individually-significant mappings; both are SOLID-tier atoms in the C1195 system, providing internal validation of those gloss assignments
+- Tier 4 synthesis: f66r as manuscript's internal character-key page — operational vocabulary catalog where each character marks an operational role with examples
+- Historical convergence: 16th-century Latin marginalia, bridge-folio location (between herbal f1-56 and astronomical f67+), small figure at top
+
+### Methodological Lessons
+
+1. **Scatter-shot exploration found this** — systematic phase work had not characterized f66r as alphabet-organized despite z=11 outlier status. Wide-net probing surfaces patterns that targeted hypothesis testing misses.
+2. **Null-distribution testing was decisive.** The 88% short-start could have been long-tail noise; the null max test (mean 22%, std 6%, p<0.0001) ruled this out. Crazy-expert's predicted "30%+ folios pass relaxed criterion by chance" was empirically wrong (actual 2%).
+3. **Pre-reg failure can be salvaged by NEW evidence (not subsetting).** The strict 3/4 criterion failed, but the cross-folio test (NOT in original pre-reg) provided independent specificity evidence. This is methodologically distinct from post-hoc subsetting (which is what Phase 675 lesson warns against).
+4. **Visual + structural convergence requires both modalities** — same lesson as the rosettes (Phase 680-683). Tier 4 ceiling on the "key page" interpretation reflects text-only methodology limit, not weak evidence.
+
+---
+
 ## Version 6.48 (2026-05-04) - Phases 680-683: Rosettes Foldout Multi-Phase Investigation
 
 ### Summary

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1987 validated constraints | **Version:** 6.48 | **Date:** 2026-05-04
+**Total:** 1989 validated constraints | **Version:** 6.49 | **Date:** 2026-05-04
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7392,6 +7392,21 @@ Four-phase investigation of the f85-86 rosettes foldout's structure and purpose.
 - C1990 is a clean falsification: pre-registered specific hypothesis (recipes are single state transitions), rejected.
 - C1991 is a methodological closure: tested whether C1970's retraction was metric-specific (signal preserved) or substantive (signal absent). With corrected methodology + expanded sample, signal still not significant. Retraction final on substantive grounds, not just methodological.
 - The workshop-diagram interpretation (SPECULATIVE/rosettes_workshop_diagram.md) is the most coherent integration of visual + structural evidence available, but stays at Tier 4 ceiling.
+
+---
+
+### Phase 684: f66r as Character-Key/Glossary Page (2 constraints)
+
+Scatter-shot exploration surfaced f66r as a structural outlier (88% short-start rate). Two killer tests confirmed: (1) null-distribution test on max short-start rate yielded z=11.11 vs corpus null max distribution; (2) cross-folio atom-gloss specificity test yielded 1/46 folios passing 2+ mappings (only f66r). Tier 4 interpretive synthesis (f66r as manuscript's internal character-key/operational reference page) registered as SPECULATIVE/f66r_keypage.md.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1992 | f66r is a structural singleton in Currier B for line-initial token brevity. 30 of 34 lines (88.2%) start with a 1-2 character token, vs corpus null max distribution mean=22.1% (z=11.11, p<0.0001 from 10000-permutation null shuffling line-first-tokens across folios). Next-highest folio is f43v at 18.8%, a 69-percentage-point gap. Corpus-rare standalone characters cluster as f66r line-starts (f: 4/4 corpus instances, x: 3/3, t: 2/3, d: 4/6). Pure structural fact about line-first-token brevity distribution; no interpretation of WHY f66r has this property is registered. Cross-references C156 (quire alignment), C260 (section isolation), C763-C764 (f57v R2 single-char ring as comparable structural singleton). | 2 | B, f66r, short-start, structural-singleton, line-first-token, null-distribution, C156, C260, C763, C764 | short_start_pct=88.2. n_lines=34. null_max_mean=22.1. null_max_std=6.0. z=11.11. p_lt=0.0001. f43v_next=18.8pct. corpus_rare_f=4of4. corpus_rare_x=3of3. |
+| 1993 | f66r exhibits systematic atom-gloss header-to-content prefix correspondence. Pre-registered 4 specific mappings (per C1195 atom glosses): d="do"→da-prefix, t="transfer"→ot-prefix, l="state"→ol-prefix, sh="passive monitor"→sh-prefix. Two pass at p<0.05 with >2x enrichment: d-header → da-prefix at 5.4x (p=0.012, n=32), t-header → ot-prefix at 3.7x (p=0.014, n=17). l→ol borderline (2.6x, p=0.056). sh→sh inverted (depleted at 0.6x). Strict pre-reg criterion (3/4) FAILED. However: cross-folio specificity test confirms f66r-uniqueness — only 1/46 folios with >=30 lines passes 2+ mappings (that 1 is f66r), vs predicted ~30% under noise hypothesis. Pattern is f66r-specific, not generic. Consistent with f66r functioning as character-key/operational reference page (SPECULATIVE/f66r_keypage.md). | 3 | B, f66r, atom-gloss, header-content, character-key, cross-folio-specific, C1195, C1992 | d_to_da_enrichment=5.4x. d_to_da_p=0.012. t_to_ot_enrichment=3.7x. t_to_ot_p=0.014. l_to_ol_enrichment=2.6x. l_to_ol_p=0.056. sh_to_sh_enrichment=0.6x. cross_folio_2plus_pass=1of46. cross_folio_pct=2pct. predicted_chance=30pct. |
+
+- C1992 is a Tier 2 structural fact established by null-distribution testing (z=11.11). f66r is statistically singular among 82 Currier B folios for line-initial token brevity. No interpretation of WHY is registered at this tier.
+- C1993 is a Tier 3 observation: pre-registered strict criterion (3/4 mappings) failed, but cross-folio specificity test (only 1/46 folios passes 2+ vs predicted 30%) provides independent evidence that the pattern is f66r-specific. This is methodologically distinct from post-hoc subsetting (Phase 675 lesson) — the cross-folio test is NEW evidence, not a relaxation of the original criterion.
+- Tier 4 synthesis: f66r as manuscript's internal character-key/operational reference page (SPECULATIVE/f66r_keypage.md). Cannot promote without cross-corpus structural comparison + visual content analysis + iconographic identification.
 
 ---
 
