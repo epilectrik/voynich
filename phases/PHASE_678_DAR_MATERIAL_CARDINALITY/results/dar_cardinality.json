@@ -1,0 +1,183 @@
+{
+  "f76r": {
+    "paragraphs": [
+      {
+        "n_tokens": 357,
+        "dar_count": 6,
+        "dar_words": [
+          "dar",
+          "dar",
+          "dar",
+          "dar",
+          "dar",
+          "dar"
+        ],
+        "first_line": "1",
+        "last_line": "29"
+      },
+      {
+        "n_tokens": 58,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "30",
+        "last_line": "34"
+      },
+      {
+        "n_tokens": 74,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "35",
+        "last_line": "41"
+      },
+      {
+        "n_tokens": 57,
+        "dar_count": 1,
+        "dar_words": [
+          "dar"
+        ],
+        "first_line": "42",
+        "last_line": "47"
+      }
+    ],
+    "counts": [
+      6,
+      0,
+      0,
+      1
+    ],
+    "has_3_strict": false,
+    "has_4_strict": false,
+    "has_3_pm1": false,
+    "has_4_pm1": false,
+    "joint_strict_pass": false,
+    "joint_pm1_pass": false
+  },
+  "f112v": {
+    "paragraphs": [
+      {
+        "n_tokens": 52,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "1",
+        "last_line": "6"
+      },
+      {
+        "n_tokens": 28,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "7",
+        "last_line": "10"
+      },
+      {
+        "n_tokens": 35,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "11",
+        "last_line": "14"
+      },
+      {
+        "n_tokens": 45,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "15",
+        "last_line": "19"
+      },
+      {
+        "n_tokens": 24,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "20",
+        "last_line": "22"
+      },
+      {
+        "n_tokens": 18,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "23",
+        "last_line": "24"
+      },
+      {
+        "n_tokens": 17,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "25",
+        "last_line": "26"
+      },
+      {
+        "n_tokens": 28,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "27",
+        "last_line": "29"
+      },
+      {
+        "n_tokens": 15,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "30",
+        "last_line": "31"
+      },
+      {
+        "n_tokens": 34,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "32",
+        "last_line": "35"
+      },
+      {
+        "n_tokens": 33,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "36",
+        "last_line": "38"
+      },
+      {
+        "n_tokens": 24,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "39",
+        "last_line": "41"
+      },
+      {
+        "n_tokens": 62,
+        "dar_count": 0,
+        "dar_words": [],
+        "first_line": "42",
+        "last_line": "44a"
+      }
+    ],
+    "counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "early_section": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "has_2_strict_early": false,
+    "has_2_pm1_early": false
+  },
+  "rarity": {
+    "n_total_folios": 82,
+    "exactly_3": 5,
+    "exactly_4": 2,
+    "exactly_2": 21,
+    "at_3_pm1": 28,
+    "at_4_pm1": 8,
+    "at_2_pm1": 64,
+    "joint_3_and_4_strict": 0
+  }
+}
