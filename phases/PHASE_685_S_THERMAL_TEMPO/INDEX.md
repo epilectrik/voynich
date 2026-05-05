@@ -1,6 +1,6 @@
 # Phase 685: Section S Token-Level Thermal Coupling
 
-**Status:** COMPLETE — 1 constraint registered (Tier 2)
+**Status:** COMPLETE — 2 constraints registered (Tier 2 + revised Tier 3)
 **Started:** 2026-05-04
 **Goal:** Test whether Currier B Section S folios exhibit token-level e-depth autocorrelation absent from Section B.
 
@@ -73,6 +73,24 @@ Per crazy-expert framing: "B encodes thermal state at REGIME/PREFIX level (set o
 
 f80r at z=-2.77 is the only significant anti-correlation in the corpus (Section B). Recipes that *alternate* e-depth token-to-token rather than coupling.
 
+## Post-hoc revision: three-tier control test (s4)
+
+After initial registration, user pushback challenged C1995's "continuous thermal tracking" interpretation: no medieval source corpus has token-by-token thermal description. Three-tier autocorrelation test (s4_three_tier_test.py) decomposed C1994's signal:
+
+| Tier | Description | S mean z | B mean z | S vs B p |
+|------|-------------|----------|----------|----------|
+| A | Near-relatives (Lev≤1 OR same MIDDLE) | +5.43 | +4.53 | 0.0022 |
+| B | Same-PREFIX, different MIDDLE | +0.79 | +0.36 | 0.119 |
+| C | Cross-PREFIX (operationally distinct) | -0.01 | **-1.47** | **0.0001** |
+
+**Continuous-state reading rejected:** Tier C in S collapses to ~0. Original C1994 aggregate signal was driven by Tier A near-relatives, not by genuine cross-operation state-coupling.
+
+**Two distinct findings emerge from the decomposition:**
+- **S = operational compactness** (3.0% near-relative pair fraction vs B's 2.0%; dense same-stem runs consistent with pharmacy-index format)
+- **B = operational alternation** (Tier C anti-correlation z=-1.47; cross-PREFIX adjacent operations have opposing e-depth, consistent with thermal cycling between distinct operation types)
+
+C1995 revised in-place to reflect the actual structural decomposition. Continuous-state thermal tracking removed; operational compactness + operational alternation substituted.
+
 ## Verdict
 
 **Tier 2 structural fact registered as C1994.** Effect survives:
@@ -92,11 +110,16 @@ Currier B Section S folios (n=23, Pharmaceutical/Stars f103-f116) exhibit lag-1 
 
 **Tier:** 2 (Currier B section-comparison structural fact, all confounds controlled)
 
-### C1995 (Tier 3): Different thermal-control architectures S vs B
+### C1995 (Tier 3, REVISED): Operational compactness in S, operational alternation in B
 
-Section S and Section B exhibit different thermal-control granularities consistent with C1994's structural finding. Section B encodes thermal state categorically (REGIME/PREFIX selects a thermal commitment that is executed across an entire paragraph; token-level e-depth values are independent given the commitment). Section S encodes thermal state continuously (e-depth values propagate token-to-token within a paragraph; sustained-state behavior at the token level). Direct corollary: matched alchemical recipes (Pseudo-Lull Testamentum) in Section B operate as discrete-batch thermal programs; Section S pharmaceutical-style recipes operate as closed-loop continuous-state thermal programs. Generalizes C1206 paragraph kernel gradient (smooth e-depth across paragraph) from paragraph-scale to token-scale, but only in Section S. Connects to C1260 thermal state propagation (Mode B mechanic) and C1768-C1771 Stars monitoring axis as operational philosophy. Not falsification of C1404 (REGIME-determined PREFIX programs) — the architectures are orthogonal: REGIME selects PREFIX program, granularity selects how thermal state evolves within that program.
+Section S exhibits operational-compactness; Section B exhibits operational-alternation. Three-tier autocorrelation decomposition of C1994 controlling for stem-locality (Tier A=near-relatives; Tier B=same-PREFIX different-MIDDLE; Tier C=cross-PREFIX): Tier A both sections strong (S=+5.43, B=+4.53 — morphological clustering universal). Tier C cross-PREFIX S=-0.01 (null), B=-1.47 (anti-correlated, p=0.0001 vs S). Original C1994 aggregate difference decomposes into: (a) S has more near-relative pairs in proportion (3.0% vs 2.0%), (b) B's cross-PREFIX pairs alternate between high-e and low-e operations. Continuous-state thermal tracking interpretation REJECTED — Tier C collapses in S. Replaces previous architectural-granularity reading with structural decomposition. S consistent with pharmacy-index or short-recipe-list format; B consistent with multi-step alchemical procedures alternating thermal regimes between PREFIX classes. No source-corpus contortion required.
 
-**Tier:** 3 (Currier B, observation; substantive interpretation derived from C1994 structural fact)
+**Tier:** 3 (Currier B, observation; structural decomposition of C1994)
+
+### Revision history
+
+- 2026-05-04 (initial): C1995 registered as "different thermal-control granularities (S=continuous, B=discrete)" reading.
+- 2026-05-04 (revised): Post-hoc three-tier test (s4_three_tier_test.py) prompted by user pushback (no medieval source has token-by-token thermal description). Continuous-state reading falsified by Tier C control. C1995 revised to operational-compactness-vs-alternation framing. C1994 unchanged.
 
 ## Scripts
 

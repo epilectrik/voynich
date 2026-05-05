@@ -1,85 +1,86 @@
-# S vs B Thermal Control Architectures (Tier 4 Synthesis)
+# S vs B Operational Structure (Tier 4 Synthesis — REVISED)
 
-**Status:** Tier 4 substantive interpretation (text-structural evidence, Tier 2-3 anchors)
-**Date:** 2026-05-04
+**Status:** Tier 4 substantive interpretation (Tier 2-3 anchors), revised after three-tier control test
+**Date:** 2026-05-04 (revised)
 **Phase:** 685
 
-## Summary
+## Revision Note
 
-Currier B Section S (Pharmaceutical/Stars, f103-f116) and Section B (alchemical recipes, f75-f86) implement **different thermal-control architectures** at the token level, on top of the same execution-grammar substrate. The structural fact (C1994) is anchored at Tier 2; the granularity-architecture interpretation (C1995) at Tier 3. The substantive synthesis below reaches Tier 4.
+Original synthesis (drafted 2026-05-04, revised same day) proposed S as "continuous-state thermal tracking" vs B as "discrete-batch thermal programming." User pushback: no medieval source corpus (Brunschwig, Pseudo-Lull, Pseudo-Geber, Mesue, Antidotarium Nicolai) has token-by-token thermal description — all are stage-bound. The continuous-state reading required the Voynich to do something no source has been shown to do.
 
-## The Structural Asymmetry
+**Three-tier autocorrelation control test** (s4_three_tier_test.py) confirmed the user's pushback. Tier C (cross-PREFIX, genuinely operationally distinct pairs) collapses in Section S to z=-0.01. The original z=+1.51 aggregate finding was driven by Tier A near-relatives (qokedy → qokeedy etc.), not by genuine state-coupling across distinct operations.
 
-Section S exhibits token-level e-depth autocorrelation at z=+1.51 (within-paragraph, cross-token-type, marginal-preserving null). Section B is at z=-0.36, with **0/19 folios at z>2**.
+Continuous-state interpretation **rejected**.
 
-The asymmetry is striking because Section B is the section we expect to track thermal state most carefully — it contains the matched alchemical recipes (Pseudo-Lull Testamentum), it is the section richest in balneum mariae references (C1455), and it is REGIME_1-dominated (the thermal-control-intensive cluster per C494). Yet at the token-token resolution, Section B is thermally **uncoupled**.
+## What the Decomposition Actually Shows
 
-## The Architectural Reading
+Three-tier breakdown of C1994's S-vs-B autocorrelation:
 
-**Section B as discrete-batch thermal programming.** Each paragraph in B is a thermal commitment: the PREFIX program (qo-, ch-, sh-, ok-, ot-, ol-) and the REGIME assignment together specify a thermal regime that holds across the paragraph. Token-level e-depth variation reflects which operations execute under that regime, not what the regime *is*. Adjacent tokens are independent because each token is an operation drawn from a paragraph-scoped instruction set, not a state update.
+| Tier | Description | S mean z | B mean z |
+|------|-------------|----------|----------|
+| A | Near-relatives (Lev≤1 OR same MIDDLE) | +5.43 | +4.53 |
+| B | Same-PREFIX, different MIDDLE | +0.79 | +0.36 |
+| C | Cross-PREFIX (operationally distinct) | -0.01 | -1.47 |
 
-Cooking analogy: B reads like *"set the bath to 60°C; do A, B, C, D, E"* — five discrete instructions executed under the same thermal commitment. The instructions don't update the state; they consume it.
+Two genuine findings emerge from the decomposition:
 
-**Section S as continuous-state thermal tracking.** Each paragraph in S threads thermal state through its tokens: token N's e-depth nudges token N+1's. Adjacent tokens are coupled because each token is a state-update annotation, not a discrete instruction. The paragraph's thermal trajectory is the *content*.
+### Finding 1: Section S is operationally compact
 
-Cooking analogy: S reads like *"warm slowly, slightly warmer, hold steady, hold steady, slightly cooler"* — five state-updates encoding a continuous thermal arc.
+S folios have **more near-relative pairs in proportion** (3.0% of pairs vs 2.0% in B). When tokens cluster as morphological neighbors (qokedy → qokeedy → qokeey, same stem with MOD-count variation), they cluster densely within paragraphs. This is consistent with **pharmacy-index or short-recipe-list format**: dense same-stem runs reflect listing variants of one operation rather than progressing through different operations.
 
-## What This Predicts
+### Finding 2: Section B exhibits operational alternation
 
-If the architectural reading is right:
+B's Tier C is anti-correlated (z=-1.47, p=0.0001 vs S's null). Cross-PREFIX adjacent pairs in B systematically have **opposing e-depth values** — when a high-e operation is followed by a different-PREFIX operation, the next operation tends to be low-e, and vice versa.
 
-1. **S-section recipes should map to source recipes that emphasize duration and process curve** (boil-down profiles, slow infusions, multi-stage tempering) more than B-section recipes. B should map to recipes that name distinct operations under a single thermal commitment.
+This is consistent with **multi-step alchemical procedures with thermal cycling**: balneum-warm step → cool extraction step → warm distillation → cool collection. Each step uses a different PREFIX class, and adjacent steps deliberately *alternate* thermal regimes.
 
-2. **Section S should be where C1260 Mode B (thermal state propagation) is most operationally visible** at token resolution — but C1994 controls show that token-level coupling in S is NOT a sub-effect of Mode B fraction. The architectures are orthogonal but compatible.
+f80r (z=-2.77 in original killer test) is the most extreme case — a Section B folio where adjacent operations alternate aggressively. Not anomalous, just an extreme exemplar of B's general pattern.
 
-3. **f80r's anti-correlation (z=-2.77, only significant negative in corpus, Section B)** is a Section-B recipe where adjacent tokens *alternate* e-depth. Either f80r is a special-case (e.g., explicit two-state oscillation like fire-cooling cycles) or it indicates Section B can also encode continuous trajectories when needed — just rarely.
+## What This Means in Plain Terms
 
-4. **The matched alchemical recipes (C1924-C1928) should re-read more naturally as discrete-instruction programs than as continuous arcs** when Section-B-matched. We've already characterized them this way (paragraph = recipe-step) but the architectural distinction sharpens this.
+**Cooking analogy (revised):**
 
-## Connection to Manuscript-Level Frame
+- **Section S** reads like *"infusion of X. infusion of X with Y. infusion of X with Z. decoction of X. decoction of X with Y..."* — a list of variants on a few base operations. The morphological clustering reflects "same operation, different ingredient/dose."
 
-The frozen Tier 0 conclusion holds the manuscript as encoding "closed-loop, kernel-centric control programs." C1995 refines this: the manuscript implements **two control architectures** within that frame.
+- **Section B** reads like *"warm in bath. cool. distill. collect. heat strongly. cool. add..."* — a sequence of operations that alternate thermal regimes. The cross-PREFIX anti-correlation reflects deliberate cycling between heat states across operation types.
 
-- **B's discrete-batch architecture** is what most medieval recipe corpora look like. Brunschwig's Distillationes, Pseudo-Lull's Testamentum, von Aragon's recipes — they are batch programs: set the apparatus, execute the operations, harvest the product. Currier B's recipe section uses this style.
+## Relationship to Source Corpora
 
-- **S's continuous-state architecture** is more unusual for medieval texts. Closer analogues might be alchemical regimen literature (where the *time-curve* of a single operation matters — calcination over weeks, putrefaction over months, slow distillation tracking the rising spirits) than to discrete-instruction recipe books.
+This revised reading aligns naturally with what we'd expect:
 
-If the S-section continuous-state reading holds, it's a hint that the manuscript's pharmaceutical/stars section encodes *process control over time* in a way the alchemical recipe section doesn't. The "stars" iconographic association (zodiac as time/calendar) becomes operationally meaningful: Section S's recipes may be *time-keyed* in a way that demands continuous state tracking.
+- **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928). Multi-step alchemical procedures with explicit thermal-regime cycling.
+- **Section S** would match medieval pharmacy-index literature: *Antidotarium Nicolai*, *Mesue's Grabadin*, simple-collections, herbal-preparation lists. Many short entries, each a variant of base operations, rather than long multi-step procedures.
 
-## Limits
+Crucially, **neither section requires the Voynich to do something no source corpus does.** Both readings are realizable in known medieval programming styles.
 
-**Cannot recover from text alone:**
-- The actual time-coupling of Section S programs (no time-stamps in the text)
-- Whether Section S's continuous tracking is calendar-locked, ritual-locked, or process-internal
-- What "1 e-depth nudge" means in physical terms (incremental temperature? incremental dampening? incremental dilution?)
+## What Falls Through the Cracks
 
-**Cannot test cross-corpus:**
-- We don't have a parallel medieval pharmacy/regimen corpus encoded with operational atom decomposition
-- Brunschwig's text is a comparator for B-matched recipes but not for S
-- No external grounding for "continuous-state thermal tracking" as a medieval programming style
+The "continuous thermal trajectory" reading was attractive because it gave Section S a distinctive *operational identity*. The revised reading is more conservative — S is "dense pharmacy-list" — but this is closer to what medieval pharmacy texts actually look like, and doesn't require a unique-to-Voynich encoding scheme.
 
-**Open questions:**
-- Why is f80r (Section B) anti-correlated rather than uncorrelated? Is f80r encoding something other than alchemy?
-- Can we predict S vs B classification from external recipe-source structure? (would promote C1995 to Tier 2)
-- Do f55v and f95r2 (the two H-section folios that survive the killer test) represent S-architecture inclusions in Section H, or coincidental autocorrelation? (small-n, but worth a closer look)
-- Is the H-section bimodal: most H folios are H-architecture (registry-mode plant identifiers), but a few are S-architecture (continuous-state preparation programs)?
+What we DO lose:
+- The poetic alignment with C1768-C1771 (Stars monitoring axis as operational philosophy) — the revised reading doesn't directly extend this.
+- The mapping of Section S to "closed-loop continuous-state programming" — a sharper architectural claim that would have differentiated medieval pharmacy from medieval alchemy.
 
-## What Would Promote Beyond Tier 4
+What we GAIN:
+- A simpler interpretation that survives parsimony.
+- A new finding (B's cross-PREFIX anti-correlation, Finding 2) that wasn't visible at aggregate level.
+- Discoverable historical match candidates for S (pharmacy-index literature).
 
-Tier 3 promotion of C1995 (already at Tier 3 as observation) to a *predictive* Tier 3 would require:
-- External recipe-source structure (continuous vs discrete) predicts S vs B classification at p<0.05
-- Two new folio cold-reads matched to source recipes where the predicted granularity matches
+## Open Questions
 
-Tier 2 promotion would require:
-- Cross-corpus validation that the granularity distinction tracks medieval programming style families
-- Independent test that predicts non-text features (apparatus type, operation duration) from C1994's z value
+1. **Can we predict S vs B classification from external recipe-source structure?** Pharmacy-index sources should match S folios; multi-step alchemy sources should match B folios.
+2. **Is f80r (z=-2.77, most-anti-correlated B folio) a genuinely distinct sub-procedure within B?** Or just an extreme tail of the alternation pattern?
+3. **Does B's cross-PREFIX anti-correlation predict specific operation-pair structures?** E.g., do qok-PREFIX tokens systematically follow ch-PREFIX tokens with opposing e-counts?
+4. **The H folios that survived the killer test (f55v, f95r2, f43v, f66v) — do they share the S compactness pattern, or are they H-specific?** Small-n cases worth checking.
 
-## Methodological Lessons
+## Methodological Lessons (revised)
 
-1. **The expected-result inversion was the finding.** A priori, Section B should have token-level thermal coupling (it's where balneum mariae lives). It doesn't — and that's the result. C1995 reframes B's thermal vocabulary as *categorical commitment* rather than *continuous tracking*.
+1. **Pre-registered controls don't catch all confounds.** The killer test had 5 confounds controlled but missed near-relative-clustering — caught only by user pushback and post-hoc decomposition.
 
-2. **Crazy-expert's wild interpretation came true.** The pre-test prediction "B encodes thermal state at REGIME/PREFIX level (set once, executed); S encodes it at token level (tracked continuously)" was issued before the killer test ran, and survived all six pre-registered controls.
+2. **Source-corpus absence is a real epistemic constraint.** Interpretations that require the Voynich to do something no source has been shown to do bear an extraordinary-claim burden. The user's instinct (sources are stage-bound, so the continuous-state reading overreaches) was decisive.
 
-3. **Five-confound controls are tractable.** C1789 (repetition), C1308 (within-paragraph), C1106 (marginal), C1404 (REGIME), C1260 (Mode B) all controlled simultaneously in one phase. The result is more robust than single-control phases.
+3. **The aggregate finding can hide multiple sub-findings.** C1994's z=+1.51 vs -0.36 was a real difference, but it decomposed into two distinct phenomena (S compactness + B alternation), neither matching the original interpretation.
 
-4. **Scatter-shot → killer-test pattern works repeatedly.** Phase 684 (f66r) and Phase 685 (S thermal coupling) both used wide-net exploration → expert-flagged confounds → pre-registered killer test → register. Two clean Tier 2 registrations from the pattern.
+4. **Demoting an interpretation is not retracting the structural fact.** C1994 remains Tier 2. C1995 was revised, not retracted. The data didn't lie; the reading did.
+
+5. **Crazy-expert's three-tier test design was the cleanest possible discriminator.** Tier C (cross-PREFIX) avoided circularity by definition — pairs that share neither stem nor PREFIX are operationally distinct, so any signal there can't be explained by stem-locality.

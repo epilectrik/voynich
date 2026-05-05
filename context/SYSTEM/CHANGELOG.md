@@ -23,7 +23,18 @@ Second scatter-shot exploration phase (user prompt: "ok lets start over with a n
 
 All 6 pre-registered criteria passed cleanly: P1 p=0.0001, P2 S mean +1.51, P3 5/5 top folios survive, P4 S=39.1% B=0/19, P5 within-REGIME_1 p<0.0001, P6 Mode-B-residualized p<0.0001.
 
-**Tier 4 substantive interpretation:** B encodes thermal state categorically (paragraph-scoped commitment, token-level independence). S encodes thermal state continuously (token-to-token state propagation). Different control architectures within the shared kernel-centric grammar — alchemical-recipe discrete-batch vs pharmaceutical-style continuous-state.
+**Tier 4 substantive interpretation (REVISED post-registration):**
+
+Initial framing was "B encodes thermal state categorically; S encodes thermal state continuously." User pushback: no medieval source corpus (Brunschwig, Pseudo-Lull, Pseudo-Geber, Mesue, Antidotarium Nicolai) has token-by-token thermal description — all are stage-bound. Continuous-state reading required the Voynich to do something no source has been shown to do.
+
+**Three-tier control test (s4_three_tier_test.py)** decomposed C1994's signal by pair type:
+- Tier A (near-relatives, Lev≤1 OR same MIDDLE): S=+5.43, B=+4.53 — morphological clustering universal, not S-specific
+- Tier B (same-PREFIX, different MIDDLE): S=+0.79, B=+0.36 — small effects
+- Tier C (cross-PREFIX, operationally distinct): S=-0.01 (null), B=-1.47 (anti-correlated, p=0.0001 vs S)
+
+**Continuous-state interpretation REJECTED.** Tier C collapses in S — the original aggregate signal was driven by near-relative clustering (qokedy → qokeedy etc.), not by genuine cross-operation state-coupling.
+
+C1995 revised in-place to: **S exhibits operational-compactness (dense same-stem runs, consistent with pharmacy-index format); B exhibits operational-alternation (cross-PREFIX adjacent operations alternate e-depth, consistent with multi-step thermal cycling).** Neither requires source-corpus contortion. C1994 structural fact unchanged.
 
 ### Changes
 
