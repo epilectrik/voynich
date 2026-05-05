@@ -4,6 +4,56 @@
 
 ---
 
+## Version 6.50 (2026-05-04) - Phase 685: Section S Token-Level Thermal Coupling
+
+### Summary
+
+Second scatter-shot exploration phase (user prompt: "ok lets start over with a new scatter. be creative. consult the experts for some ideas if you want"). Crazy-expert proposed 10 creative probes; the third (folio-internal e-depth tempo) hit hard. Pre-registered killer test passed all 6 controls.
+
+**The finding:** Currier B Section S folios (Pharmaceutical/Stars, f103-f116, n=23) exhibit token-level lag-1 autocorrelation of e-depth (count of 'e' atoms in MIDDLE — interpreted per C1455 as balneum mariae thermal signature). Section B folios (alchemical recipes, f75-f86, n=19) show **zero** such autocorrelation (0/19 folios at z>2). S vs B permutation p=0.0001.
+
+**The architectural inversion:** Section B was the *expected* high-coupling section — it contains the matched Pseudo-Lull recipes, is REGIME_1-dominated, and is balneum-mariae-rich. Yet at token resolution, B is thermally **uncoupled**. S, which we expected to be simpler pharmaceutical content, is the section with continuous thermal-state tracking.
+
+**Killer test controls (all simultaneously):**
+- C1789 vocabulary repetition (skip token[t]==token[t+1])
+- C1308 within-paragraph stratification
+- C1106 marginal-preserving null
+- C1404 REGIME stratification (effect WIDENS within REGIME_1)
+- C1260 Mode-B-line-fraction residualization
+
+All 6 pre-registered criteria passed cleanly: P1 p=0.0001, P2 S mean +1.51, P3 5/5 top folios survive, P4 S=39.1% B=0/19, P5 within-REGIME_1 p<0.0001, P6 Mode-B-residualized p<0.0001.
+
+**Tier 4 substantive interpretation:** B encodes thermal state categorically (paragraph-scoped commitment, token-level independence). S encodes thermal state continuously (token-to-token state propagation). Different control architectures within the shared kernel-centric grammar — alchemical-recipe discrete-batch vs pharmaceutical-style continuous-state.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1994 | Section S token-level e-depth autocorrelation, Tier 2 (z=+1.51, p<0.0001, 5-confound-controlled) |
+| C1995 | S vs B different thermal-control granularities, Tier 3 |
+| Phase 685 dir | Created with INDEX, s1_exploration.py, s2_killer_test.py, s3_save_results.py, killer_test_output.txt, folio_killer_results.json |
+| SPECULATIVE/section_thermal_architectures.md | Tier 4 substantive synthesis |
+| CLAIMS/INDEX.md | 2 new constraints; total 1989 -> 1991, version 6.49 -> 6.50 |
+| CLAUDE.md | Version 6.49 -> 6.50, constraints -> 1991, phases 684 -> 685 |
+
+### Key Findings
+
+- Token-level e-depth coupling is Section-S-specific in Currier B; Section B is uncoupled at token resolution
+- Effect WIDENS when restricted to REGIME_1 (S_R1 +2.31 vs B_R1 -0.35) — not a REGIME confound
+- Effect survives Mode-B-line-fraction residualization — not a Mode-B-mediation
+- Top folios: f112v (z=+4.98), f111r (+4.05), f108r (+3.91), f55v H (+3.34), f95r2 H (+2.76)
+- f80r is the only significant negative outlier (z=-2.77, Section B) — alternating e-depth, possibly explicit two-state cycling
+- Substantive: B uses categorical thermal commitments (set REGIME, execute under it); S uses continuous tracking (state propagates token-by-token)
+
+### Methodological Lessons
+
+1. **Expected-result inversion as finding.** A priori prediction was B>>S for thermal coupling (B is balneum-mariae-rich). The inversion IS the finding, and reframes B's thermal vocabulary as categorical commitment rather than continuous tracking.
+2. **Five-confound simultaneous control is tractable.** All five expert-flagged confounds (C1789, C1308, C1106, C1404, C1260) controlled in one phase. Result is more robust than single-control phases.
+3. **Crazy-expert wild interpretation called pre-test was confirmed.** "B encodes thermal state at REGIME/PREFIX level (set once, executed); S encodes it at token level (tracked continuously)" was issued before the killer test ran and survived all controls.
+4. **Scatter-shot → killer-test pattern works repeatedly.** Phase 684 (f66r) and Phase 685 (S thermal coupling) both used wide-net exploration → expert-flagged confounds → pre-registered killer test → register. Two clean Tier 2 registrations from the pattern in two consecutive sessions.
+
+---
+
 ## Version 6.49 (2026-05-04) - Phase 684: f66r as Character-Key/Glossary Page
 
 ### Summary

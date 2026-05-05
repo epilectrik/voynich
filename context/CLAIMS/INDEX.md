@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1989 validated constraints | **Version:** 6.49 | **Date:** 2026-05-04
+**Total:** 1991 validated constraints | **Version:** 6.50 | **Date:** 2026-05-04
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7407,6 +7407,21 @@ Scatter-shot exploration surfaced f66r as a structural outlier (88% short-start 
 - C1992 is a Tier 2 structural fact established by null-distribution testing (z=11.11). f66r is statistically singular among 82 Currier B folios for line-initial token brevity. No interpretation of WHY is registered at this tier.
 - C1993 is a Tier 3 observation: pre-registered strict criterion (3/4 mappings) failed, but cross-folio specificity test (only 1/46 folios passes 2+ vs predicted 30%) provides independent evidence that the pattern is f66r-specific. This is methodologically distinct from post-hoc subsetting (Phase 675 lesson) — the cross-folio test is NEW evidence, not a relaxation of the original criterion.
 - Tier 4 synthesis: f66r as manuscript's internal character-key/operational reference page (SPECULATIVE/f66r_keypage.md). Cannot promote without cross-corpus structural comparison + visual content analysis + iconographic identification.
+
+---
+
+### Phase 685: Section S Token-Level Thermal Coupling (2 constraints)
+
+Scatter-shot exploration (round 2, crazy-expert top picks) surfaced token-level e-depth autocorrelation as a section-distinguishing structural feature. Pre-registered killer test passed all 6 controls (vocabulary repetition, within-paragraph stratification, marginal-preserving null, REGIME stratification, Mode B residualization). Section S folios cluster e-depth values token-to-token; Section B folios do not. Tier 4 substantive synthesis: S and B implement different thermal-control architectures (continuous-state vs discrete-batch).
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 1994 | Currier B Section S folios (n=23, Pharmaceutical/Stars f103-f116) exhibit lag-1 autocorrelation of e-depth on within-paragraph cross-token-type adjacent pairs at mean z=+1.51 vs marginal-preserving null. Section B folios (n=19, alchemical recipes f75-f86) show mean z=-0.36 with 0/19 folios at z>2. S vs B permutation p=0.0001 (10000 perms, n_perm=500 per folio for null). Effect WIDENS when restricted to REGIME_1 (S_R1 mean=+2.31, B_R1 mean=-0.35, diff=+2.66, p<0.0001 — not REGIME-mediated). Survives Mode-B-line-fraction residualization (residualized S vs B diff=+1.81, p<0.0001 — not Mode-B-mediated). Five top folios from exploration (f112v=+4.98, f108r=+3.91, f111r=+4.05, f55v=+3.34, f95r2=+2.76) survive killer-test controls. Pure structural fact about token-token e-depth coupling distribution; interpretation registered separately as C1995. | 2 | B, section, S-section, e-depth, autocorrelation, thermal-coupling, killer-test, C1404-controlled, C1260-controlled, C1789-controlled, C1308-controlled, C1106-controlled, C1206, C1455 | S_mean_z=+1.51. B_mean_z=-0.36. p_perm=0.0001. S_R1_mean=+2.31. B_R1_mean=-0.35. p_R1=0.0000. S_resid_diff=+1.81. p_resid=0.0000. S_frac_sig=39.1pct. B_frac_sig=0pct. top5_survival=5of5. f112v_z=4.98. f108r_z=3.91. f111r_z=4.05. |
+| 1995 | Section S and Section B exhibit different thermal-control granularities. Section B encodes thermal state categorically (REGIME/PREFIX selects a thermal commitment that is executed across an entire paragraph; token-level e-depth values are independent given the commitment). Section S encodes thermal state continuously (e-depth values propagate token-to-token within a paragraph; sustained-state behavior at the token level). Direct corollary: matched alchemical recipes (Pseudo-Lull Testamentum) in Section B operate as discrete-batch thermal programs; Section S pharmaceutical-style recipes operate as closed-loop continuous-state thermal programs. Generalizes C1206 (paragraph kernel gradient) from paragraph-scale to token-scale, but only in Section S. Connects to C1260 (Mode B thermal state propagation) and C1768-C1771 (Stars monitoring axis as operational philosophy). Not falsification of C1404 — REGIME selects PREFIX program; granularity selects how thermal state evolves within that program. Tier 4 substantive synthesis: SPECULATIVE/section_thermal_architectures.md. | 3 | B, section, granularity, control-architecture, thermal, observation, C1206, C1260, C1404, C1455, C1733, C1768, C1769, C1770, C1771, C1994 | S_continuous=token-level. B_categorical=paragraph-level. f80r_anti_corr_z=-2.77. matched_alchemy=B_section_discrete_batch. matched_pharma=S_section_continuous_state. |
+
+- C1994 is a Tier 2 structural fact with five-confound controls (C1789 repetition, C1308 within-paragraph, C1106 marginal, C1404 REGIME, C1260 Mode B). All six pre-registered criteria passed.
+- C1995 is a Tier 3 observation deriving the architectural interpretation from C1994's structural asymmetry. The B "expected to be thermal" prediction inverts: B is thermally categorical, S is thermally continuous. Promotion to Tier 2 would require predicting external recipe-source structure from S/B classification.
+- Tier 4 synthesis: S and B implement orthogonal thermal-control architectures within the manuscript's shared kernel-centric grammar (SPECULATIVE/section_thermal_architectures.md). Connects to the manuscript's pharmaceutical/stars section as time-keyed continuous-state programming distinct from alchemical-recipe discrete-batch programming.
 
 ---
 

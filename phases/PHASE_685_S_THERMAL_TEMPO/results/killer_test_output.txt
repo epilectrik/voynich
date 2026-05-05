@@ -1,0 +1,132 @@
+Computing Mode B fraction per folio...
+Running killer test...
+
+REGIME breakdown by section:
+  sec  REGIME        n    mean_z    sig_z>2
+  B    REGIME_1     19     -0.34    0/19 
+  C    REGIME_2      2     +1.53    1/2  
+  C    REGIME_3      2     +0.67    0/2  
+  H    REGIME_1      2     -0.27    0/2  
+  H    REGIME_2     13     +0.73    2/13 
+  H    REGIME_3      5     +1.00    0/5  
+  H    REGIME_4     12     +0.89    3/12 
+  S    REGIME_1     10     +2.27    5/10 
+  S    REGIME_3     12     +0.86    3/12 
+  S    REGIME_4      1     +1.39    0/1  
+  T    REGIME_3      1     -0.35    0/1  
+
+P5: Within REGIME_1 — S vs B
+  S | REGIME_1: n=10, mean_z=+2.27
+  B | REGIME_1: n=19, mean_z=-0.34
+  Difference: +2.607  permutation p=0.0000
+
+P6: Mode B mediation — residualize folio z on Mode-B-line fraction
+  Mode B fraction by section:
+    B: n=19, mean Mode B frac=15.0%
+    C: n=4, mean Mode B frac=41.9%
+    H: n=32, mean Mode B frac=34.2%
+    S: n=23, mean Mode B frac=23.3%
+    T: n=1, mean Mode B frac=20.0%
+  Regression: z = +0.542 + +0.655 * mode_b_frac
+  After residualization (z - predicted):
+    B: n=19, mean z_resid=-0.981, sig>2: 0/19
+    C: n=4, mean z_resid=+0.286, sig>2: 0/4
+    H: n=32, mean z_resid=+0.005, sig>2: 1/32
+    S: n=23, mean z_resid=+0.799, sig>2: 3/23
+    T: n=1, mean z_resid=-1.027, sig>2: 0/1
+  S vs B on residualized z: diff=+1.780, p=0.0000
+
+======================================================================
+FINAL PRE-REG VERDICT (P1-P6)
+======================================================================
+  P1: S vs B p<0.01                          PASS  (p=0.0002)
+  P2: S mean z >= 1.5                        FAIL  (mean=1.494)
+  P3: >=3 of top-5 survive                   PASS  (5/5)
+  P4: S frac>2 >= 30% AND B frac>2 == 0      PASS  (S=34.8%, B=0/19)
+  P5: Within REGIME_1, S vs B p<0.05         PASS  (p=0.0000)
+  P6: Mode-B-residualized S vs B p<0.05      PASS  (p=0.0000)
+
+  CRITERIA PASSED: 5/6
+  REGISTRATION: TIER 3 (some controls fail; report what survives)
+
+Folio-level results (for phase results dir):
+  folio     sec  regime      mode_b      lag1       z  pairs
+  f112v     S    REGIME_1       23%   +0.2403   +4.89    401
+  f111r     S    REGIME_1       11%   +0.1620   +3.95    601
+  f108r     S    REGIME_1        8%   +0.1806   +3.80    468
+  f55v      H    REGIME_2       58%   +0.3046   +3.11    101
+  f95r2     H    REGIME_2       56%   +0.2780   +2.89     76
+  f107r     S    REGIME_3       42%   +0.1132   +2.51    470
+  f66v      H    REGIME_4       23%   +0.1928   +2.28    109
+  f112r     S    REGIME_1       16%   +0.1130   +2.22    381
+  f113v     S    REGIME_3       41%   +0.0954   +2.11    460
+  f86v5     C    REGIME_2       44%   +0.1034   +2.10    369
+  f46v      H    REGIME_4       18%   +0.1790   +2.08    109
+  f106v     S    REGIME_3       22%   +0.0906   +2.03    433
+  f43r      H    REGIME_4       21%   +0.1522   +2.03    146
+  f107v     S    REGIME_1       31%   +0.0916   +2.00    436
+  f113r     S    REGIME_3       25%   +0.0915   +1.99    500
+  f104v     S    REGIME_3       25%   +0.0896   +1.92    438
+  f108v     S    REGIME_1       11%   +0.0750   +1.87    546
+  f94v      H    REGIME_3       42%   +0.1602   +1.79     98
+  f84v      B    REGIME_1       10%   +0.0910   +1.78    324
+  f48r      H    REGIME_4       11%   +0.1777   +1.75     88
+  f55r      H    REGIME_2       69%   +0.1361   +1.66    121
+  f41r      H    REGIME_4        0%   +0.1554   +1.66     94
+  f111v     S    REGIME_1       37%   +0.0660   +1.62    552
+  f34r      H    REGIME_3       20%   +0.1256   +1.62    141
+  f76v      B    REGIME_1        5%   +0.0787   +1.57    393
+  f50r      H    REGIME_2       50%   +0.1299   +1.40     87
+  f105r     S    REGIME_4       11%   +0.0703   +1.39    351
+  f103v     S    REGIME_1        9%   +0.0665   +1.39    428
+  f41v      H    REGIME_4       29%   +0.1510   +1.38     66
+  f84r      B    REGIME_1       12%   +0.0604   +1.21    337
+  f86v3     C    REGIME_3       25%   +0.0772   +1.15    209
+  f39v      H    REGIME_2       57%   +0.0789   +1.14    140
+  f115r     S    REGIME_3       29%   +0.0513   +1.13    428
+  f114v     S    REGIME_3       20%   +0.0543   +1.00    350
+  f86v6     C    REGIME_2       47%   +0.0411   +0.97    474
+  f39r      H    REGIME_3       44%   +0.0641   +0.92    146
+  f103r     S    REGIME_1        4%   +0.0371   +0.84    499
+  f104r     S    REGIME_3       36%   +0.0417   +0.83    425
+  f34v      H    REGIME_3       36%   +0.0669   +0.77    113
+  f57r      H    REGIME_4        9%   +0.0681   +0.76     85
+  f48v      H    REGIME_4       27%   +0.0516   +0.72    124
+  f95v1     H    REGIME_2       38%   +0.0382   +0.51    113
+  f78r      B    REGIME_1       27%   +0.0220   +0.45    281
+  f83r      B    REGIME_1       14%   +0.0211   +0.34    303
+  f26r      H    REGIME_4       11%   +0.0238   +0.31     81
+  f33v      H    REGIME_2       55%   +0.0136   +0.30    105
+  f95v2     H    REGIME_2       57%   +0.0061   +0.22     63
+  f95r1     H    REGIME_1       36%   +0.0155   +0.21     99
+  f85r2     C    REGIME_3       52%   +0.0148   +0.19    101
+  f79v      B    REGIME_1        7%   +0.0038   +0.18    342
+  f116r     S    REGIME_1       14%   -0.0001   +0.09    322
+  f78v      B    REGIME_1       22%   +0.0009   +0.07    287
+  f33r      H    REGIME_2       43%   -0.0077   +0.04     70
+  f46r      H    REGIME_3       27%   -0.0139   -0.11    152
+  f43v      H    REGIME_4        6%   -0.0218   -0.14    150
+  f50v      H    REGIME_2       45%   -0.0337   -0.16     96
+  f82r      B    REGIME_1        9%   -0.0172   -0.19    268
+  f82v      B    REGIME_1        6%   -0.0158   -0.22    288
+  f40r      H    REGIME_2       64%   -0.0461   -0.33     92
+  f85r1     T    REGIME_3       20%   -0.0229   -0.35    318
+  f114r     S    REGIME_3       34%   -0.0223   -0.46    430
+  f94r      H    REGIME_2       44%   -0.0599   -0.47     78
+  f115v     S    REGIME_3       16%   -0.0293   -0.47    384
+  f79r      B    REGIME_1       18%   -0.0285   -0.49    377
+  f31v      H    REGIME_4       36%   -0.0680   -0.63    106
+  f31r      H    REGIME_1       13%   -0.0811   -0.75     94
+  f81r      B    REGIME_1       13%   -0.0573   -0.75    201
+  f75v      B    REGIME_1       12%   -0.0423   -0.79    323
+  f40v      H    REGIME_2       37%   -0.0910   -0.82    100
+  f106r     S    REGIME_3       36%   -0.0551   -0.95    404
+  f83v      B    REGIME_1       13%   -0.0658   -0.96    254
+  f77v      B    REGIME_1        5%   -0.0573   -0.99    319
+  f80v      B    REGIME_1       28%   -0.0596   -0.99    366
+  f81v      B    REGIME_1       41%   -0.0691   -1.03    251
+  f77r      B    REGIME_1       13%   -0.0633   -1.05    305
+  f105v     S    REGIME_3       37%   -0.0682   -1.35    378
+  f26v      H    REGIME_4       11%   -0.1667   -1.48     84
+  f75r      B    REGIME_1       15%   -0.0838   -1.82    400
+  f80r      B    REGIME_1       16%   -0.1436   -2.77    423
