@@ -1,6 +1,6 @@
 # Phase 688: qokedy Context Propagation Decomposition
 
-**Status:** COMPLETE — 1 constraint registered (C2001); operational embedding CONFIRMED
+**Status:** COMPLETE — 1 constraint registered (C2001); operational embedding CONFIRMED. **See Phase 689 (C2002):** the "morphological clusterer" framing of qotar/chol in this phase's auxiliary T4 narrative was empirically refuted at same-stem density level. Cross-tier z=−0.20 measurement stands; the mechanism inference was over-stepping.
 **Started:** 2026-05-07
 **Completed:** 2026-05-07
 **Goal:** Test whether qokedy's high MI propagation (Phase 687, z=+2.51, 4th-highest of 72 eligible tokens) reflects **operational embedding** (qokedy is structurally embedded in recipe sequences with predictive prev→next pairs) versus **morphological clustering** (MI is dominated by adjacent qo-prefix tokens like qokeedy/qokeey appearing near qokedy).

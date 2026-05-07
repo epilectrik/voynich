@@ -1,0 +1,255 @@
+{
+  "phase": 689,
+  "qotar": {
+    "target": "qotar",
+    "n_instances": 61,
+    "n_adjacent": 121,
+    "same_stem_count": 2,
+    "same_stem_frac": 0.01652892561983471,
+    "n_folios_with": 35,
+    "n_folios_total": 82,
+    "gini_folio": 0.6843262694922032,
+    "top_folios": [
+      [
+        "f86v6",
+        5
+      ],
+      [
+        "f114r",
+        4
+      ],
+      [
+        "f106v",
+        3
+      ],
+      [
+        "f113v",
+        3
+      ],
+      [
+        "f114v",
+        3
+      ],
+      [
+        "f43r",
+        2
+      ],
+      [
+        "f75r",
+        2
+      ],
+      [
+        "f79r",
+        2
+      ]
+    ],
+    "section_dist": {
+      "H": 8,
+      "T": 2,
+      "B": 14,
+      "C": 8,
+      "S": 29
+    },
+    "section_chi2": 5.392669308526139,
+    "section_df": 4,
+    "section_p": 0.24826952937083768,
+    "sc_observed": 37,
+    "sc_expected": 32.09261343955664,
+    "sc_ratio": 1.1529132730086304,
+    "top_adjacent": [
+      [
+        "otal",
+        5
+      ],
+      [
+        "shedy",
+        4
+      ],
+      [
+        "okar",
+        3
+      ],
+      [
+        "ain",
+        3
+      ],
+      [
+        "qotchdy",
+        3
+      ],
+      [
+        "okedy",
+        2
+      ],
+      [
+        "chdy",
+        2
+      ],
+      [
+        "otedy",
+        2
+      ],
+      [
+        "chedy",
+        2
+      ],
+      [
+        "opchedy",
+        2
+      ],
+      [
+        "ol",
+        2
+      ],
+      [
+        "daiin",
+        2
+      ],
+      [
+        "ytedy",
+        2
+      ],
+      [
+        "oteedy",
+        2
+      ],
+      [
+        "olkchedy",
+        2
+      ]
+    ]
+  },
+  "qokedy": {
+    "target": "qokedy",
+    "n_instances": 271,
+    "n_adjacent": 541,
+    "same_stem_count": 85,
+    "same_stem_frac": 0.15711645101663585,
+    "n_folios_with": 61,
+    "n_folios_total": 82,
+    "gini_folio": 0.620421204212042,
+    "top_folios": [
+      [
+        "f77v",
+        16
+      ],
+      [
+        "f108r",
+        16
+      ],
+      [
+        "f78r",
+        15
+      ],
+      [
+        "f75r",
+        14
+      ],
+      [
+        "f78v",
+        13
+      ],
+      [
+        "f83r",
+        13
+      ],
+      [
+        "f84r",
+        12
+      ],
+      [
+        "f84v",
+        12
+      ]
+    ],
+    "section_dist": {
+      "H": 40,
+      "T": 4,
+      "B": 164,
+      "C": 2,
+      "S": 61
+    },
+    "section_chi2": 135.35852388528667,
+    "section_df": 4,
+    "section_p": 0.0,
+    "sc_observed": 63,
+    "sc_expected": 142.57538101835817,
+    "sc_ratio": 0.44187151771937433,
+    "top_adjacent": [
+      [
+        "shedy",
+        30
+      ],
+      [
+        "qokedy",
+        28
+      ],
+      [
+        "chedy",
+        25
+      ],
+      [
+        "qokeedy",
+        23
+      ],
+      [
+        "otedy",
+        14
+      ],
+      [
+        "qokeey",
+        11
+      ],
+      [
+        "okedy",
+        10
+      ],
+      [
+        "dal",
+        10
+      ],
+      [
+        "qokey",
+        7
+      ],
+      [
+        "dy",
+        6
+      ],
+      [
+        "qokain",
+        6
+      ],
+      [
+        "sheedy",
+        6
+      ],
+      [
+        "qoteedy",
+        6
+      ],
+      [
+        "lchedy",
+        6
+      ],
+      [
+        "qoky",
+        5
+      ]
+    ]
+  },
+  "verdicts": {
+    "T1": "FAIL",
+    "T2": "FAIL",
+    "T3": "FAIL",
+    "T4": "PARTIAL"
+  },
+  "c2002_verdict": "NONE_PASS",
+  "pass_count_T1_T2_T3": 0,
+  "thresholds": {
+    "same_stem_threshold": 0.3,
+    "gini_threshold": 0.7,
+    "chi2_p_threshold": 0.01,
+    "sc_ratio_threshold": 1.5
+  }
+}

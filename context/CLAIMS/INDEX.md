@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1997 validated constraints | **Version:** 6.53 | **Date:** 2026-05-07
+**Total:** 1998 validated constraints | **Version:** 6.54 | **Date:** 2026-05-07
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7469,8 +7469,25 @@ Direct test of qokedy's high MI propagation (Phase 687 z=+2.51, rank 4/72): oper
 
 - **C2001 is a Tier 2 structural fact.** Pre-registered prediction (operational embedding) confirmed at z=+2.49 in cross-tier sample (n=140 well above n=30 threshold).
 - **Phase 688 establishes that cross-tier MI z is the discriminating metric** between operational embedding and morphological clustering. Phase 687's overall MI z does not separate these; only the tier decomposition does.
-- **Major auxiliary finding (NOT registered):** Top-MI tokens from Phase 687 split into operational embedders (chcthy +3.78, qokedy +2.49, okain +2.26, s +2.24 cross-tier) vs morphological clusterers (qotar -0.20, chol -0.23 cross-tier). qotar's #1 ranking in Phase 687 was misleading — it's a morphological cluster, not a structural propagator. Future phase could pre-register and test the operational vs morphological dichotomy systematically.
+- **Major auxiliary finding (NOT registered):** Top-MI tokens from Phase 687 split into operational embedders (chcthy +3.78, qokedy +2.49, okain +2.26, s +2.24 cross-tier) vs cross-tier-collapse tokens (qotar −0.20, chol −0.23 cross-tier). **CAVEAT (added Phase 689):** the "morphological clusterer" label initially attached to qotar/chol is empirically refuted at same-stem density level — see C2002. The cross-tier z=−0.20 measurement stands; the mechanism inference was over-stepping. qotar's actual structural role is under-determined (likely junction/marker per atom decomposition; not same-stem clustered).
 - **Combined with Phase 685 (C1995):** S exhibits operational compactness (dense same-stem runs); now we know specific tokens (qokedy, chcthy) are operationally embedded across operationally distinct contexts. Different scales: C1995 is a section-level structural property; C2001 is a token-level structural property.
+
+---
+
+### Phase 689: qotar Morphological Clustering Mechanism (1 constraint, NULL result)
+
+Direct mechanism test of Phase 688's "morphological clustering" framing for qotar (cross-tier z=−0.20). Three pre-registered candidate mechanisms tested: same-stem density, folio concentration, S/C section concentration. ALL THREE FAILED. The cross-tier collapse measurement is preserved; the mechanism inference is empirically refuted.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2002 | qotar cross-tier MI collapse mechanism — three pre-registered candidates FALSIFIED. T1 (same-stem density >30% per C1995 Section S compactness): observed 1.7% (2/121 adjacent positions). T2 (folio Gini >0.70): observed 0.684 (just below threshold). T3 (S/C section concentration χ² p<0.01 AND ratio>1.5): observed χ²=5.39, p=0.25, ratio=1.15. None of the three mechanisms predicted by C1995/C1404 explain qotar's clustering. Surprising counter-finding (T4 partial): qokedy (operational embedder per C2001) has 9.2× higher same-stem density (15.7%) than qotar (1.7%) — opposite of Phase 688's framing. The cross-tier z=−0.20 measurement (Phase 688) is preserved; the "morphological clustering" mechanism inference is refuted at same-stem level. Likely actual mechanism (NOT registered, observation only): qotar's neighbors dominated by o-prefix family (otal, okar, okedy, otedy) but not same-stem; qotar plausibly functions as a junction/marker token (t-HEAD=transfer, r-TERM=respond per C1394 atom decomposition) rather than an iterative operational primitive like qokedy (k-HEAD=heat, thermal cycle). | 2 | B, qotar, NULL, falsification, mechanism, same-stem-density, folio-Gini, section-concentration, C1995, C1404, C1962, C2001 | qotar_n=61. n_adjacent=121. same_stem_frac=1.7pct. folio_Gini=0.684. section_chi2=5.39. section_p=0.25. SC_ratio=1.15. T1=FAIL. T2=FAIL. T3=FAIL. T4=PARTIAL. qokedy_same_stem=15.7pct. qokedy_self_iteration_28x. |
+
+- **C2002 is a Tier 2 NULL.** Pre-registered with locked thresholds; three candidate mechanisms cleanly falsified. Fits the project's NULL constraint pattern (peer: C1005, C1108, C1583, C1986).
+- **C2001 narrative amended:** the "morphological clusterer" framing for qotar/chol was over-interpretation. Cross-tier z=−0.20 measurement preserved; mechanism inference revised.
+- **Methodological lesson saved as feedback memory** (`feedback_measurement_vs_mechanism.md`): cross-tier MI z is a measurement, not a mechanism. Phase 688 jumped from "MI collapses cross-tier" to "morphological clustering" without testing whether adjacents are actually morphologically related. Phase 689 directly tested this and falsified the inference.
+- **Pattern across Phase 686-689:** three falsifications of mechanism inferences from MI measurements (C1998 INFRA glue framing, C2000 daiin state-flush, C2002 qotar morphological clustering). The Phase 686 metric family produces measurements but mechanism interpretations require separate pre-registered tests.
+- **Three-mode framework (NOT registered, candidate for follow-up):** Phase 688's binary classification (operational embedder vs morphological clusterer) was too coarse. Likely three modes: operational embedder (qokedy, k-HEAD thermal cycle), family-pooled (chol, predicted), junction/marker (qotar, t-HEAD transfer). Atom-level HEAD difference predicts the mode.
+- **Five candidate follow-up phases** documented in Phase 689 INDEX.md "Candidates" section — chol mechanism test, o-prefix family concentration on qotar, recipe-positional analysis, chcthy mechanism test, self-iteration bias correction. None committed.
 
 ---
 

@@ -4,6 +4,64 @@
 
 ---
 
+## Version 6.54 (2026-05-07) - Phase 689: qotar Morphological Clustering Mechanism
+
+### Summary
+
+Mechanism test of Phase 688's "morphological clustering" framing for qotar (cross-tier z=−0.20). Three pre-registered candidate mechanisms — same-stem density (per C1995 Section S compactness), folio Gini concentration, S/C section concentration — ALL THREE FAILED.
+
+**Surprising counter-finding:** qokedy (operational embedder per C2001) has 9.2× higher same-stem density (15.7%) than qotar (alleged morphological clusterer at 1.7%). The operational embedder has *more* morphological clustering than the alleged clusterer — opposite of Phase 688's framing.
+
+The cross-tier z=−0.20 measurement (Phase 688) is preserved. What is refuted is the mechanism inference. qotar's neighbors are dominated by o-prefix family (otal, okar, okedy, otedy, opchedy) but NOT same-stem. The actual mechanism is under-determined; likely junction/marker function per atom decomposition (qotar = qo + t-HEAD-transfer + a-MOD-yield + r-TERM-respond), distinct from qokedy's iterative thermal-cycle role (k-HEAD-heat).
+
+**Methodological lesson:** cross-tier MI z is a measurement, not a mechanism. Phase 688 inferred "morphological clustering" from "MI collapses cross-tier" without directly testing whether adjacents are actually morphologically related. Phase 689 tested this and falsified it. Saved as feedback memory `feedback_measurement_vs_mechanism.md`.
+
+**Pattern across Phase 686-689:** three falsifications of mechanism inferences from MI measurements:
+- C1998: INFRA-as-glue framing falsified (Phase 686)
+- C2000: daiin-as-state-flush falsified (Phase 687)
+- C2002: qotar-as-morphological-clusterer mechanism falsified (Phase 689)
+
+The Phase 686 transition-graph metric family produces solid measurements (cross-tier z, MI, etc.) but mechanism interpretations require separate pre-registered tests.
+
+**Three-mode framework (NOT registered, follow-up candidate):** Phase 688's binary classification (operational embedder vs morphological clusterer) was too coarse. Likely three structural modes:
+1. Operational embedder (qokedy, k-HEAD thermal cycle, iterative)
+2. Family-pooled (chol predicted, ch-prefix family without same-stem repetition)
+3. Junction/marker (qotar, t-HEAD transfer, position-specific)
+
+Atom-level HEAD/TERM composition predicts the mode. Five candidate follow-up phases listed in Phase 689 INDEX (chol mechanism, qotar family-pooling, recipe-positional, chcthy mechanism, self-iteration bias correction). None committed.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2002 | qotar morphological clustering mechanism FALSIFIED (T1 1.7%, T2 0.684, T3 p=0.25); Tier 2 NULL Scope B |
+| C2001 narrative | amended in CLAIMS/INDEX.md and Phase 688 INDEX.md — "morphological clusterer" framing for qotar/chol marked as over-interpretation |
+| Phase 689 dir | Created with INDEX, s1_qotar_mechanism.py, t1_qotar_mechanism.json |
+| memory/feedback_measurement_vs_mechanism.md | New feedback memory: cross-tier MI z is a measurement, not a mechanism |
+| CLAIMS/INDEX.md | 1 new constraint; total 1997 → 1998, version 6.53 → 6.54 |
+| CLAUDE.md | Version 6.53 → 6.54, constraints → 1998, phases 688 → 689 |
+
+### Key Findings
+
+1. **Three candidate mechanisms FALSIFIED.** Same-stem density, folio Gini, S/C section concentration — none explain qotar's MI inflation.
+2. **Phase 688's "morphological clustering" framing was over-stepping.** Cross-tier collapse measurement is real; mechanism explanation needed independent test.
+3. **qokedy has 9.2× higher same-stem density than qotar** — operational embedders can have more morphological clustering than alleged clusterers.
+4. **qotar's likely mechanism (NOT registered):** junction/marker function via t-HEAD transfer + r-TERM respond atom composition; o-prefix family pooling (not same-stem) at adjacent positions.
+5. **Three-mode classification candidate:** operational embedder, family-pooled, junction/marker — distinguished by atom-level HEAD/TERM composition.
+
+### Methodological Notes
+
+- Pre-reg discipline preserved: 0/3 PASS registered as Tier 2 NULL.
+- C2001's narrative amended (qotar/chol "morphological clusterer" → cross-tier collapse with under-determined mechanism); the constraint's primary content (qokedy operational embedding) is unaffected.
+- Phase 688 INDEX.md updated with forward-reference to Phase 689.
+- Methodological lesson saved as feedback memory rather than constraint — applies to future MI/decomposition work, not Voynich-structural facts.
+
+### Expert Validation
+
+Both experts (rigor + speculation) independently recommended bookkeeping with C2001 narrative amendment. Crazy-expert proposed the three-mode classification (not yet registered) and identified atom-level HEAD/TERM composition as the predictive mechanism. Five follow-up candidates listed; none committed in this phase.
+
+---
+
 ## Version 6.53 (2026-05-07) - Phase 688: qokedy Context Propagation Decomposition
 
 ### Summary
