@@ -116,3 +116,8 @@ sources/pseudo_lull_testamentum/pseudo_lull_testamentum_1566_raw.txt
 sources/pseudo_lull_testamentum/release/
 sources/pseudo_lull_testamentum/testamentum_1566_latin.txt
 sources/pseudo_lull_testamentum/testamentum_1566_raw_ocr.txt
+
+# Beinecke IIIF dataset - large image files (535 MB)
+# Metadata (manifest.json, canvas_index.json, folio_mapping.json, README.md) is committed
+sources/voynich_scans/images/
+sources/voynich_scans/foldouts/
