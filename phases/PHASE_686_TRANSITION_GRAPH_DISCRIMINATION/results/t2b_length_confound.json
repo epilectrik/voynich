@@ -1,0 +1,19 @@
+{
+  "test": "T2-supplement: length confound",
+  "n_folios": 115,
+  "regression": {
+    "slope": -1.1408275144875968,
+    "intercept": 4.850529040027846,
+    "r": -0.4221472120863783,
+    "r_squared": 0.17820826867230166,
+    "t_slope": -4.950194503804824,
+    "p_two_sided": 7.413934905997621e-07
+  },
+  "predicted_zmu_at_n100": -0.4031758170453328,
+  "predicted_zmu_at_median": -0.9744740440713473,
+  "predicted_zmu_at_max": -2.4735778168732363,
+  "median_n_tokens": 164.99999999999994,
+  "min_n_tokens": 100,
+  "max_n_tokens": 614,
+  "interpretation": "genuine_with_size_amplification"
+}

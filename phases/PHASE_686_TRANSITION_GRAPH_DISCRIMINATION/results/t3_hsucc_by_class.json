@@ -1,0 +1,27 @@
+{
+  "test": "T3",
+  "hypothesis": "E[H_succ|INFRA] < E[H_succ|RI], MWU p<0.01, diff>0.3 bits",
+  "min_token_count": 3,
+  "corpus": "Currier B",
+  "n_currier_b_tokens": 23096,
+  "n_currier_b_types": 4889,
+  "n_types_with_hsucc": 1032,
+  "class_counts": {
+    "INFRA": 54,
+    "RI": 6,
+    "PP": 897,
+    "UNKNOWN": 75
+  },
+  "class_means": {
+    "INFRA": 2.889994327896277,
+    "RI": 2.294911088858132,
+    "PP": 2.978528438097284,
+    "UNKNOWN": 1.9858112179513652
+  },
+  "mwu_u_infra": 166.0,
+  "mean_infra": 2.889994327896277,
+  "mean_ri": 2.294911088858132,
+  "diff_ri_minus_infra": -0.5950832390381451,
+  "p_one_sided_infra_lt_ri": 0.5392573106169672,
+  "verdict": "FAIL"
+}

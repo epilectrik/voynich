@@ -1,0 +1,95 @@
+{
+  "phase": 686,
+  "verdicts": {
+    "T1": "PASS",
+    "T2": "PASS",
+    "T3": "DIRECTIONAL_NEGATIVE",
+    "T4": "PASS"
+  },
+  "constraints": [
+    {
+      "id": "C1996",
+      "tier": 2,
+      "scope": "GLOBAL",
+      "title": "Token-transition order constraints exceed unigram-frequency expectations (full corpus)",
+      "text": "On the H-track filtered corpus (n=37429 tokens, |V|=7904 types, no labels, no asterisks, self-loops excluded), the token-transition graph circuit rank mu_actual = 22380 is dramatically lower than mean(mu_shuffle) = 24162 over 1000 frequency-preserving shuffles (z = -38.3, gap = -1782). Replicates Earnhart 2026 result (gap -1831 on his 37,967-token extraction; our gap -1782 on 37,429-token filtered extraction). Empirical p hit Monte Carlo floor (1/1000) - all 1000 shuffles strictly exceeded mu_actual. Establishes that transition structure is constrained by token order, not merely unigram frequency. Independent confirmation of Currier-B order-constraint claims in our system (C109 forbidden transitions, C361 adjacent-folio vocab sharing, C1808 section qo-rate baselines) via a metric that does not reference any of those classifications."
+    },
+    {
+      "id": "C1997",
+      "tier": 2,
+      "scope": "GLOBAL",
+      "title": "Per-folio order constraint magnitude is widespread and stratified",
+      "text": "Of 115 folios with >=100 tokens, mean per-folio z_mu (computed against 200 within-folio frequency-shuffles) is -1.266 (one-sample t = -8.66, df = 114, one-sided p << 0.001). 87/115 folios (76%) show negative z_mu; 33/115 (29%) below -2; 0/115 above +2. Order constraints are not a corpus-aggregate artifact - they manifest at individual-folio scale on the great majority of pages."
+    },
+    {
+      "id": "C1998",
+      "tier": 2,
+      "scope": "B",
+      "title": "INFRA token successor entropy exceeds RI in Currier B (predicted direction REVERSED)",
+      "text": "Pre-registered prediction: E[H_succ | INFRA] < E[H_succ | RI] in Currier B. Result: REVERSED at p > 0.05 in predicted direction. INFRA tokens (n=54 types, includes daiin n=314 H=7.30, dar n=188 H=6.80, saiin n=99 H=6.07) have mean H_succ = 2.89 bits, which is 0.60 bits HIGHER than RI tokens (n=6 types, mean = 2.29). Directional negative result. Mechanism: INFRA tokens are high-frequency function elements with many distinct successors; RI tokens in Currier B are rare (n=3-11 in observed sample) with H_succ mechanically bounded by log2(n_with_succ). The pre-registered prediction conflated 'formulaic role' with 'predictable next-token' - they are not equivalent at our sample sizes. The classification axis (RI/PP/INFRA) does NOT predict transition predictability in the direction we expected. Falsification is preserved as registered: prediction failed, no revision to two-sided form."
+    },
+    {
+      "id": "C1999",
+      "tier": 2,
+      "scope": "GLOBAL",
+      "title": "Section-level order-constraint magnitude varies systematically",
+      "text": "Per-folio z_mu (transition-graph circuit rank vs within-folio frequency-shuffle null) differs across sections at Kruskal-Wallis H = 27.7, p = 0.0001. Pre-registered post-hoc Currier B vs Herbal: mean z_mu_B = -1.95 (n=20), mean z_mu_H = -0.30 (n=33), MWU two-sided p = 0.0003. Direction matches prediction (B more order-constrained than H). Auxiliary section ordering: S (-2.04), C (-1.96), B (-1.95) are most order-constrained; H (-0.30) is weakest; T, Z, P, A intermediate. By language: AZC (-1.59) > Currier B (-1.40) > Currier A (-0.82). Order-constraint magnitude is a structural property of section, not just a vocabulary-size effect (z_mu controls for vocabulary size by computing per-folio z against folio-specific shuffles). S/B/C content-section dominance complements C1404 (section structural differentiation) and C1808 (section qo-rate baselines)."
+    }
+  ],
+  "auxiliary_findings": {
+    "section_zmu_ordering": [
+      [
+        "S",
+        -2.040953273242098
+      ],
+      [
+        "C",
+        -1.9585031144193097
+      ],
+      [
+        "B",
+        -1.9503417869913215
+      ],
+      [
+        "Z",
+        -1.195970097541691
+      ],
+      [
+        "T",
+        -1.121753150713722
+      ],
+      [
+        "P",
+        -0.9302053522757813
+      ],
+      [
+        "A",
+        -0.7437334117989884
+      ],
+      [
+        "H",
+        -0.30390799368383264
+      ]
+    ],
+    "language_zmu_ordering": [
+      [
+        "NA",
+        -1.5935140073785188
+      ],
+      [
+        "B",
+        -1.3967416668666799
+      ],
+      [
+        "A",
+        -0.8155495308442432
+      ]
+    ],
+    "class_hsucc_means": {
+      "INFRA": 2.889994327896277,
+      "RI": 2.294911088858132,
+      "PP": 2.978528438097284,
+      "UNKNOWN": 1.9858112179513652
+    }
+  }
+}

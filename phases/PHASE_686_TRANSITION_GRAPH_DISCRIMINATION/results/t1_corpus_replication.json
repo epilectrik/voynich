@@ -1,0 +1,27 @@
+{
+  "test": "T1",
+  "hypothesis": "mu_actual < mean(mu_shuffle), one-sided p<0.001",
+  "tokens": 37429,
+  "unique_types": 7904,
+  "mu_actual": 22380,
+  "V": 7904,
+  "E": 30283,
+  "c": 1,
+  "mean_shuffle_mu": 24162.023,
+  "std_shuffle_mu": 46.48590550274793,
+  "min_shuffle_mu": 24014,
+  "max_shuffle_mu": 24322,
+  "z": -38.33469480108675,
+  "p_one_sided": 0.001,
+  "n_shuffles": 1000,
+  "threshold_z": -3.09,
+  "threshold_p": 0.001,
+  "pass_z": true,
+  "pass_p": false,
+  "verdict": "FAIL",
+  "earnhart_reference": {
+    "mu_actual": 22675,
+    "mean_shuffle_mu": 24506,
+    "gap": -1831
+  }
+}

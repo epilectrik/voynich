@@ -4,6 +4,61 @@
 
 ---
 
+## Version 6.51 (2026-05-06) - Phase 686: Transition-Graph Structural Discrimination
+
+### Summary
+
+Side quest: analyzed Earnhart 2026 ("Harmonic-Topological Analysis of the Voynich Manuscript," voynichframework.com), an external paper proposing graph-Hodge analysis of token transitions. Their methodology is mostly mathematical machinery on simple operations, but their two empirical metrics (circuit rank μ and successor entropy H_succ) are useful structural lenses we don't have. Phase 686 imports both and tests them against our existing classifications.
+
+**The finding:** Earnhart's full-corpus result replicates on our filtered H-track (gap −1782 vs his −1831). The order constraint extends to per-folio scale (76% of 115 folios show negative z_μ, 0/115 above +2). Section ordering by order-constraint magnitude: S (−2.04) > C (−1.96) > B (−1.95) > Z > T > P > A > H (−0.30). AZC is more order-constrained than Currier B itself. By language: AZC > Currier B > Currier A.
+
+**The directional negative:** Pre-registered prediction that INFRA tokens (formulaic glue) would have lower H_succ than RI tokens (recipe-internal content) **failed in registered direction**. INFRA mean H_succ = 2.89 bits vs RI 2.29 — INFRA HIGHER. Mechanism: INFRA tokens (daiin, dar, saiin) are high-frequency function elements with many distinct successors; RI tokens in Currier B are rare (n=3-11) with H_succ mechanically capped. Test as designed cannot distinguish predicted effect from frequency confound. Falsification preserved as registered per pre-reg discipline. No revision to two-sided form.
+
+**Pre-reg discipline note:** Compared to Earnhart's "revised BEH" (he tested A>B entropy one-sided, found B>A, "revised" hypothesis to two-sided heterogeneity and continued the framework), Phase 686 keeps the directional failure registered as a falsification (C1998). The two-sided form is not licensed by the failed test; future retest requires explicit frequency-matched controls.
+
+**Length-confound check (post pre-reg, per expert validator recommendation):** T2 per-folio z_μ regressed on log(n_tokens) shows slope = −1.14 (t=−4.95, p<0.0001, R²=0.18). Effect partly size-amplified but genuine even at small folios (n=100 projects to z_μ ≈ −0.40). Disclosed in C1997 text.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1996 | Token-transition order constraints exceed unigram expectations on full corpus, Tier 2 GLOBAL (gap −1782, z=−38.3, replicates Earnhart 2026) |
+| C1997 | Per-folio order constraint widespread but heterogeneous, Tier 2 GLOBAL (mean z_μ=−1.27 over 115 folios, length-confound disclosed) |
+| C1998 | INFRA H_succ EXCEEDS RI in B (predicted direction REVERSED), Tier 2 B (directional negative, no retest without frequency control) |
+| C1999 | Section-level z_μ ordering S/C/B > Z/T/P/A > H, Tier 2 GLOBAL (KW p=0.0001, B vs H p=0.0003, REGIME-mediation flagged) |
+| Phase 686 dir | Created with INDEX, s1-s5 + s2b length-confound supplement, all results JSON |
+| CLAIMS/INDEX.md | 4 new constraints; total 1991 → 1995, version 6.50 → 6.51 |
+| CLAUDE.md | Version 6.50 → 6.51, constraints → 1995, phases 685 → 686 |
+
+### Key Findings
+
+1. **Earnhart 2026 replicates:** Independent extraction (37,967 tokens vs our 37,429) yields almost identical order-constraint gap (−1831 vs −1782). Cross-validation of our filtering pipeline.
+
+2. **Order constraint is universal in direction:** 0/115 folios above z_μ = +2. No folio is *more* random than its frequency-shuffle null. Some mechanism imposes order constraint at every level tested, with section modulating intensity.
+
+3. **Section S is the most order-constrained section** (z_μ = −2.04), beating Currier B's matched-recipe section (−1.95). Consistent with C1994/C1995 (S operational compactness from dense same-stem runs).
+
+4. **AZC > Currier B in order-constraint magnitude** (−1.59 vs −1.40). Diagram-annotation system has tighter positional grammar than running-text system. Consistent with C302/C311/C313.
+
+5. **Herbal section is the structural outlier** at z_μ = −0.30, near-shuffle. Either H is genuinely less ordered or its order operates at a different granularity (per-record/per-label) the bigram graph misses.
+
+6. **T3 falsification reframes daiin/dar/saiin:** These "infrastructure" tokens have H_succ = 7.30/6.80/6.07 bits — near-uniform distribution across ~150 distinct successors. They do NOT propagate context; they may function as state-flush markers rather than formulaic glue. Worth follow-up via conditional H_succ test.
+
+### Methodological Notes
+
+- Pre-registration discipline held: T1, T2, T4 thresholds met; T3 directional failure registered as such, no revision.
+- Length-confound check was added after pre-reg per expert recommendation. Disclosed in constraint text; not used to override the original test verdicts.
+- All four constraints registered at Tier 2 (descriptive structural facts). Interpretive content (e.g., S/C/B "static-enumeration" hypothesis from crazy-expert speculation) deferred to Tier 3/4 follow-up phases.
+- External replication (Earnhart 2026) provides cross-validation of our extraction pipeline — token count match within ~1%.
+
+### Expert Validation
+
+Expert-advisor (rigorous): All four constraints register at Tier 2 with revisions. Flagged: cross-references to C389 (low bigram entropy) and C1025 (49-class Markov sufficiency); REGIME-mediation disclaimer for C1999 (S dominated by REGIME_3/4); length-confound regression on T2; mechanism note citing C498.b/d on T3. All revisions incorporated.
+
+Crazy-expert (speculative): Three reframes worth follow-up phases — (1) S/C/B "static-enumeration" hypothesis (extend Phase 685 e-depth methodology to C and B); (2) daiin/dar/saiin as state-flush markers (test conditional H_succ); (3) line-format vs content as universal constraint mechanism (test z_μ on continuous-token corpus). None affect Phase 686 registration; all candidates for future phases.
+
+---
+
 ## Version 6.50 (2026-05-04) - Phase 685: Section S Token-Level Thermal Coupling
 
 ### Summary

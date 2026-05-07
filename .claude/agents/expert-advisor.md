@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1991 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1995 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1995.
+the highest ID present is C1999.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1991 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1995 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1991 validated constraints are present as canonical one-line claims with tier
+1995 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-05 10:59
-**Version:** FROZEN STATE (1991 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-06 21:58
+**Version:** FROZEN STATE (1995 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2233,6 +2233,10 @@ C1992	f66r is a structural singleton in Currier B for line-initial token brevity
 C1993	f66r exhibits systematic atom-gloss header-to-content prefix correspondence. Pre-registered 4 specific mappings (per C1195 atom glosses): d="do"→da-prefix, t="transfer"→ot-prefix, l="state"→ol-prefix, sh="passive monitor"→sh-prefix. Two pass at p<0.05 with >2x enrichment: d-header → da-prefix at 5.4x, t-header → ot-prefix at 3.7x. l→ol borderline. sh→sh inverted (depleted at 0.6x). Strict pre-reg criterion (3/4) FAILED. However: cross-folio specificity test confirms f66r-uniqueness — only 1/46 folios with >=30 lines passes 2+ mappings (that 1 is f66r), vs predicted ~30% under noise hypothesis. Pattern is f66r-specific, not generic. Consistent with f66r functioning as character-key/operational reference page (SPECULATIVE/f66r_keypage.md).	3	B, f66r, atom-gloss, header-content, character-key, cross-folio-specific, C1195, C1992
 C1994	Currier B Section S folios exhibit lag-1 autocorrelation of e-depth on within-paragraph cross-token-type adjacent pairs at mean z=+1.51 vs marginal-preserving null. Section B folios show mean z=-0.36 with 0/19 folios at z>2. S vs B permutation p=0.0001 (10000 perms, n_perm=500 per folio for null). Effect WIDENS when restricted to REGIME_1. Survives Mode-B-line-fraction residualization. Five top folios from exploration (f112v=+4.98, f108r=+3.91, f111r=+4.05, f55v=+3.34, f95r2=+2.76) survive killer-test controls. Pure structural fact about token-token e-depth coupling distribution; interpretation registered separately as C1995.	2	B, section, S-section, e-depth, autocorrelation, thermal-coupling, killer-test, C1404-controlled, C1260-controlled, C1789-controlled, C1308-controlled, C1106-controlled, C1206, C1455
 C1995	Section S exhibits operational-compactness (dense morphological near-relative runs); Section B exhibits operational-alternation (cross-PREFIX e-depth anti-correlation). Three-tier autocorrelation decomposition of C1994 controlling for stem-locality (Tier A=near-relatives Levenshtein<=1 OR same MIDDLE; Tier B=same-PREFIX different-MIDDLE; Tier C=cross-PREFIX): Tier A both sections strong (S=+5.43, B=+4.53 — morphological clustering universal, not S-specific). Tier C cross-PREFIX S=-0.01 (null), B=-1.47. Original C1994 aggregate difference (S>+1.51, B<-0.36) decomposes into: (a) S has more near-relative pairs in proportion (3.0% vs 2.0%), (b) B's cross-PREFIX pairs alternate between high-e and low-e operations. Continuous-state thermal tracking interpretation REJECTED — Tier C collapses in S. Replaces previous architectural-granularity reading with structural decomposition: S is index/list-format dense (consistent with pharmacy-index or short-recipe-list); B is operationally varied with thermal cycling between PREFIX classes (consistent with multi-step alchemical procedures alternating thermal regimes). Tier 4 synthesis: SPECULATIVE/section_thermal_architectures.md (revised).	3	B, section, operational-compactness, near-relative, cross-PREFIX, anti-correlation, observation, C1789, C1206, C1404, C1994, three-tier-decomposition
+C1996	Token-transition order constraints exceed unigram-frequency expectations on full H-track corpus. μ_actual = 22380 vs mean(μ_shuffle) = 24162 over 1000 frequency-preserving shuffles, gap = -1782, z = -38.3. Replicates Earnhart 2026 (their gap = -1831 on 37,967-token extraction; ours = -1782 on 37,429-token filtered). Convergent measurement of same constraint phenomenon captured at class level by C389 (low bigram conditional entropy H=0.41 bits) and C1025 (49-class Markov + symmetric forbidden suppression). Compatible with C109, C361, C1808. External replication.	2	GLOBAL, transition-graph, circuit-rank, order-constraint, replication, Earnhart-2026, C389, C1025, C109
+C1997	Per-folio token-transition order constraint is widespread but heterogeneous. 115 folios with n>=100 tokens, mean z_μ = -1.266 (one-sample t = -8.66, df = 114, one-sided p << 1e-13), 76% folios negative, 29% below -2, 0/115 above +2. Length-confound: regression z_μ ~ log(n_tokens) gives slope = -1.14; effect partly size-amplified but genuine even at small sizes. Cross-section heterogeneity per C1999 dominates within sections. Order constraint is not corpus-aggregate artifact.	2	GLOBAL, per-folio, transition-graph, z-score, order-constraint, length-confound-controlled, C1999
+C1998	INFRA token successor entropy EXCEEDS RI in Currier B (predicted direction REVERSED). Pre-registered prediction: E[H_succ\|INFRA] < E[H_succ\|RI], MWU one-sided p<0.01, gap > 0.3 bits. Result: E[INFRA] = 2.89 bits vs E[RI] = 2.29 bits — INFRA HIGHER by 0.60 bits, MWU one-sided p in predicted direction = 0.539. Mechanism (per C498.b/C498.d): RI tokens in B are predominantly singletons (~977 RI singletons per C498.b; mean ~4.82 chars); H_succ mechanically bounded by log₂(n_with_observed_successors). Test as designed cannot distinguish predicted formulaic-glue effect from rarity-driven H bound. Falsification preserved as registered. RI/PP/INFRA classification axis does NOT predict transition predictability in expected direction. Forecloses retest without explicit frequency-matched controls. Methodologically equivalent to C415, C946, C947.	2	B, falsification, NULL, transition-graph, H_succ, INFRA, RI, directional-negative, frequency-confound, C498, C415, C946, C947
+C1999	Section-level transition-graph order-constraint magnitude varies systematically. Per-folio z_μ differs across 7 sections: Kruskal-Wallis H = 27.7, df = 6, p = 0.0001. Section ordering: S (-2.04) > C (-1.96) > B (-1.95) > Z (-1.20) > T (-1.12) > P (-0.93) > A (-0.74) > H (-0.30). Pre-registered post-hoc B vs H: MWU two-sided p = 0.0003, mean B (-1.95) < mean H (-0.30). By Currier language: AZC (-1.59) > B (-1.40) > A (-0.82). z_μ controls for vocabulary size via folio-specific shuffles. REGIME-mediation caveat (C1404): S-section dominated by REGIME_3/REGIME_4; section effect could be partly REGIME-composition. Length-confound caveat (C1997): partly mediated by section-typical folio length. A weakest consistent with C233 (LINE_ATOMIC), C234 (POSITION_FREE). AZC strongest consistent with C302, C311, C313 (positional grammar). Descriptive measurement; functional interpretation reserved.	2	GLOBAL, section, transition-graph, z-mu, ordering, KW-test, C1404-flagged, C233, C234, C302, C311, C313
 
 ---
 
@@ -2240,7 +2244,7 @@ C1995	Section S exhibits operational-compactness (dense morphological near-relat
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-04
+# Generated: 2026-05-06
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
