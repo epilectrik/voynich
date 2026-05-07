@@ -4,6 +4,48 @@
 
 ---
 
+## Version 6.52 (2026-05-06) - Phase 687: Daiin State-Flush Hypothesis
+
+### Summary
+
+Direct test of crazy-expert's reframe of daiin from Phase 686 Tier 4 speculation: daiin/dar/saiin function as state-flush / context-reset operators rather than formulaic glue. Test methodology: mutual information I(prev; next | T) per token vs 200-shuffle null per token.
+
+**The result: REJECTED.** daiin's z_T = +0.76 (67th percentile of 72 eligible tokens). The state-flush prediction required daiin to be in the lower half of MI propagation; instead daiin sits above median. T2 passed (daiin doesn't significantly propagate above shuffle, z<+1.0), but T1's "unusually low MI" prediction failed.
+
+**Both framings of daiin/dar/saiin are inadequate.** The original "infrastructure glue" naming was falsified at H_succ resolution by Phase 686 C1998 (INFRA H_succ HIGHER than RI). The proposed "state-flush operator" reframe is now falsified at MI resolution by Phase 687 C2000. daiin is just a high-throughput junction with diverse predecessors and successors that don't strongly relate through it.
+
+**The methodologically interesting auxiliary finding** (not pre-registered, not registered): MI propagation correlates with token *complexity*, not function class. Long compound operational tokens are top context-propagators (qotar z=+3.95, chol +3.17, qokedy +2.51, shedy +2.07). Short suffix-like or bare-stem tokens are most state-flush-like (qokal −1.31, shey −1.24, al −0.95). Function-class tokens (daiin, dar, saiin) span the middle of the distribution with no class-coherence.
+
+**T3 PARTIAL** (dar above median, saiin below) means class-level state-flush hypothesis (C2001) NOT registered per pre-reg. The pre-reg explicitly required clean PASS or FAIL on T3 for class registration; partial result excluded.
+
+**qokedy as 4th-most-context-propagating token** is the auxiliary finding worth noting — the famous f75r ×4 balneum mariae signature is operationally embedded (predecessor predicts successor through it). Consistent with our existing reading (C1300, qokedy counting shorthand from f75r↔Pseudo-Lull III.19). Observation only, not registered.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2000 | daiin state-flush hypothesis REJECTED, Tier 2 B (T1 FAIL: daiin z=+0.76 ABOVE median) |
+| Phase 687 dir | Created with INDEX, s1_mi_per_token.py, t1_mi_per_token.json |
+| CLAIMS/INDEX.md | 1 new constraint; total 1995 → 1996, version 6.51 → 6.52 |
+| CLAUDE.md | Version 6.51 → 6.52, constraints → 1996, phases 686 → 687 |
+
+### Key Findings
+
+1. **State-flush hypothesis fails at MI resolution.** daiin z=+0.76 is above median, contradicting the prediction.
+2. **No class-coherence among daiin/dar/saiin.** dar above median (+0.91), saiin below (−0.41). They don't form a state-flush class.
+3. **Both framings of daiin/dar/saiin failed.** Phase 686 C1998 + Phase 687 C2000 jointly establish that neither "infrastructure glue" nor "state-flush operator" predicts their actual MI behavior.
+4. **Methodology can detect context propagation when present.** qokedy z=+2.51, shedy z=+2.07 — T4 sanity check confirms negative results on daiin are signal-detection, not methodology limit.
+5. **Token complexity tracks MI propagation more cleanly than function class.** Long compounds (qotar +3.95, chol +3.17) propagate; short stems (al, ar, shey) flush. Observation only, not registered.
+
+### Methodological Notes
+
+- Pre-reg discipline preserved: T1 FAIL registered as such, no revision to "low z but not unusually low" or any softer form.
+- T3 PARTIAL excluded class-level registration per pre-reg. dar/saiin individual results documented in narrative only.
+- Auxiliary findings (qokedy top-MI ranking, complexity correlates) noted as observations — registering them would be HARK.
+- Phase closes the Tier 4 speculative reframe from Phase 686 INDEX.md (crazy-expert section). Tier 4 hypothesis tested and rejected at Tier 2.
+
+---
+
 ## Version 6.51 (2026-05-06) - Phase 686: Transition-Graph Structural Discrimination
 
 ### Summary

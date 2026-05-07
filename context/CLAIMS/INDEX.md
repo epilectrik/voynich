@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1995 validated constraints | **Version:** 6.51 | **Date:** 2026-05-06
+**Total:** 1996 validated constraints | **Version:** 6.52 | **Date:** 2026-05-06
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7441,6 +7441,21 @@ Imported circuit rank μ on token-transition graph and per-token successor entro
 - **C1998 is a directional negative.** Pre-registered prediction failed in registered direction. Per project standard (no revision to two-sided after directional failure; cf Earnhart's "revised BEH" example flagged in feedback memory), result registers as falsification of the predicted direction. Mechanism (sample-size confound on RI tokens) documented; future retest requires explicit frequency-matching.
 - **C1999 includes REGIME-mediation disclaimer.** Section effect could be partly REGIME-composition; not controlled in this phase to preserve pre-reg discipline. S-section's strong z_μ is consistent with C1995 (S operational compactness) but interpretation reserved as Tier 3 follow-up.
 - Phase 686 imports two structural metrics from external work (Earnhart 2026) and tests them against our existing classifications. Three of four pre-registered predictions held; one failed in registered direction. The phase replicates an independent extraction (corpus token count 37,429 vs Earnhart 37,967), produces a convergent-evidence Tier 2 fact (C1996), extends to per-folio scale (C1997), and produces a section-level structural ordering (C1999) plus a clean falsification (C1998).
+
+---
+
+### Phase 687: Daiin State-Flush Hypothesis (1 constraint, falsification)
+
+Direct test of crazy-expert reframe from Phase 686 (Tier 4 speculation): daiin/dar/saiin function as state-flush / context-reset operators rather than formulaic glue. Test methodology: mutual information I(prev; next | T) per token T with n_triplets ≥ 50, vs 200-shuffle null per token. Pre-registered T1 (daiin z below median), T2 (daiin z < +1.0), T3 (class generalization to dar+saiin), T4 (methodology sanity via content reference tokens).
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2000 | daiin state-flush hypothesis REJECTED. Pre-registered prediction: MI(prev; next \| T=daiin) below population median AND below significance threshold z<+1.0. Result: T1 FAILS (daiin z=+0.76 at 67th percentile of 72 eligible tokens, ABOVE median z=-0.11). T2 PASSES (daiin z<+1.0, MI not significantly above shuffle null). T3 PARTIAL (dar z=+0.91 above median, saiin z=-0.41 below — no class-level pattern). T4 PASSES (qokedy z=+2.51, shedy z=+2.07 confirm methodology detects context propagation). State-flush rejected: daiin is moderate-context-propagation, not unusually low MI. Both "infrastructure glue" framing AND "state-flush operator" reframe fail to predict daiin's transition behavior at MI resolution. daiin is high-throughput junction with diverse contexts that don't strongly relate through it. C998 INFRA classification stands at structural level despite C1998+C2000 showing the naming is partially misleading. T3 PARTIAL means class-level test (C2001) NOT registered per pre-reg. Auxiliary observation (NOT registered): MI propagation correlates with token complexity not function class — long compound operational tokens (qotar +3.95, chol +3.17, qokedy +2.51) are top context-propagators; short suffix-like tokens (qokal -1.31, shey -1.24, al -0.95) are most state-flush-like. | 2 | B, falsification, NULL, daiin, state-flush, mutual-information, MI, context-propagation, C557, C998, C1998 | daiin_z=+0.76. dar_z=+0.91. saiin_z=-0.41. median_z=-0.11. n_eligible_tokens=72. daiin_n_triplets=314. daiin_distinct_prev=232. daiin_distinct_next=203. daiin_MI_actual=6.585. daiin_MI_null=6.581. T1=FAIL. T2=PASS. T3=PARTIAL. T4=PASS. qokedy_z=+2.51. shedy_z=+2.07. |
+
+- **C2000 is a Tier 2 falsification.** Pre-registered specific prediction (state-flush hypothesis from Phase 686 Tier 4 speculation) failed in registered direction. daiin is at the 67th percentile of MI propagation, not below median.
+- **Two failed framings.** Both the original "infrastructure glue" naming (implied INFRA tokens are predictable next-token glue, falsified by C1998) AND the proposed "state-flush operator" reframe (predicted unusually low MI, falsified by C2000) fail to capture daiin's actual transition behavior.
+- **Methodological discipline preserved:** Per Phase 687 pre-reg, T3 PARTIAL excludes class-level constraint registration. Auxiliary observations about token-complexity correlates of MI (long compounds propagate; short stems don't) noted in narrative but not registered as constraints — these were not pre-registered and registering them would be HARK.
+- **Phase 687 closes the speculative reframe** documented in Phase 686 INDEX.md (crazy-expert section). The reframe was a Tier 4 hypothesis; it has now been tested and rejected at Tier 2.
 
 ---
 

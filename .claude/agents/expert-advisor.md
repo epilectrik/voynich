@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1995 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1996 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1999.
+the highest ID present is C2000.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1995 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1996 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1995 validated constraints are present as canonical one-line claims with tier
+1996 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-06 21:58
-**Version:** FROZEN STATE (1995 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-06 22:18
+**Version:** FROZEN STATE (1996 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2237,6 +2237,7 @@ C1996	Token-transition order constraints exceed unigram-frequency expectations o
 C1997	Per-folio token-transition order constraint is widespread but heterogeneous. 115 folios with n>=100 tokens, mean z_μ = -1.266 (one-sample t = -8.66, df = 114, one-sided p << 1e-13), 76% folios negative, 29% below -2, 0/115 above +2. Length-confound: regression z_μ ~ log(n_tokens) gives slope = -1.14; effect partly size-amplified but genuine even at small sizes. Cross-section heterogeneity per C1999 dominates within sections. Order constraint is not corpus-aggregate artifact.	2	GLOBAL, per-folio, transition-graph, z-score, order-constraint, length-confound-controlled, C1999
 C1998	INFRA token successor entropy EXCEEDS RI in Currier B (predicted direction REVERSED). Pre-registered prediction: E[H_succ\|INFRA] < E[H_succ\|RI], MWU one-sided p<0.01, gap > 0.3 bits. Result: E[INFRA] = 2.89 bits vs E[RI] = 2.29 bits — INFRA HIGHER by 0.60 bits, MWU one-sided p in predicted direction = 0.539. Mechanism (per C498.b/C498.d): RI tokens in B are predominantly singletons (~977 RI singletons per C498.b; mean ~4.82 chars); H_succ mechanically bounded by log₂(n_with_observed_successors). Test as designed cannot distinguish predicted formulaic-glue effect from rarity-driven H bound. Falsification preserved as registered. RI/PP/INFRA classification axis does NOT predict transition predictability in expected direction. Forecloses retest without explicit frequency-matched controls. Methodologically equivalent to C415, C946, C947.	2	B, falsification, NULL, transition-graph, H_succ, INFRA, RI, directional-negative, frequency-confound, C498, C415, C946, C947
 C1999	Section-level transition-graph order-constraint magnitude varies systematically. Per-folio z_μ differs across 7 sections: Kruskal-Wallis H = 27.7, df = 6, p = 0.0001. Section ordering: S (-2.04) > C (-1.96) > B (-1.95) > Z (-1.20) > T (-1.12) > P (-0.93) > A (-0.74) > H (-0.30). Pre-registered post-hoc B vs H: MWU two-sided p = 0.0003, mean B (-1.95) < mean H (-0.30). By Currier language: AZC (-1.59) > B (-1.40) > A (-0.82). z_μ controls for vocabulary size via folio-specific shuffles. REGIME-mediation caveat (C1404): S-section dominated by REGIME_3/REGIME_4; section effect could be partly REGIME-composition. Length-confound caveat (C1997): partly mediated by section-typical folio length. A weakest consistent with C233 (LINE_ATOMIC), C234 (POSITION_FREE). AZC strongest consistent with C302, C311, C313 (positional grammar). Descriptive measurement; functional interpretation reserved.	2	GLOBAL, section, transition-graph, z-mu, ordering, KW-test, C1404-flagged, C233, C234, C302, C311, C313
+C2000	daiin state-flush hypothesis REJECTED. Pre-registered prediction: MI(prev; next \| T=daiin) below population median AND below significance threshold z<+1.0. Result: T1 FAILS (daiin z=+0.76 at 67th percentile of 72 eligible tokens, ABOVE median z=-0.11). T2 PASSES (daiin z<+1.0, MI not significantly above shuffle null). T3 PARTIAL (dar z=+0.91 above median, saiin z=-0.41 below — no class-level pattern). T4 PASSES (qokedy z=+2.51, shedy z=+2.07 confirm methodology detects context propagation). State-flush rejected: daiin is moderate-context-propagation, not unusually low MI. Both "infrastructure glue" framing AND "state-flush operator" reframe fail to predict daiin's transition behavior at MI resolution. daiin is high-throughput junction with diverse contexts that don't strongly relate through it. C998 INFRA classification stands at structural level despite C1998+C2000 showing the naming is partially misleading. T3 PARTIAL means class-level test (C2001) NOT registered per pre-reg. Auxiliary observation (NOT registered): MI propagation correlates with token complexity not function class — long compound operational tokens (qotar +3.95, chol +3.17, qokedy +2.51) are top context-propagators; short suffix-like tokens (qokal -1.31, shey -1.24, al -0.95) are most state-flush-like.	2	B, falsification, NULL, daiin, state-flush, mutual-information, MI, context-propagation, C557, C998, C1998
 
 ---
 
