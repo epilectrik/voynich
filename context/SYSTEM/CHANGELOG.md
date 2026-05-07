@@ -4,6 +4,61 @@
 
 ---
 
+## Version 6.55 (2026-05-07) - C1998-C2002 Hygiene Pass
+
+### Summary
+
+Targeted constraint hygiene revision following the Phase 689 measurement-vs-mechanism methodological lesson. **Not a research phase** — no new measurements, no new tests. Revises four recent constraints (C1998, C2000, C2001, C2002) and adds one new Tier 3 constraint (C2003) to separate measurement from mechanism interpretation.
+
+The pattern identified across Phase 686-689: each Earnhart-metric-derived constraint registered both a structural measurement and a mechanism interpretation as if both were tested. Direct mechanism tests (Phase 687, 689) failed; the measurements remain valid. The hygiene pass revises constraint texts to reflect what was actually established.
+
+Both experts (rigor + speculation) concurred on the action items: revise C1998, C2000, C2001 in place; cosmetic touch-up on C2002; optionally add C2003 (Tier 3 operational-embedding candidate). Don't broad-audit older constraints; don't a/b-split.
+
+### Specific revisions
+
+**C1998 (revised):** Original framing "INFRA exceeds RI in Currier B (predicted direction REVERSED)" implied a structural finding. Expert-advisor identified this as a **construct-validity issue, not a directional negative**: H_succ is mechanically bounded by log2(k); RI tokens in B are 95%+ singleton-tier (per C498.b/C831), capping their H_succ regardless of any structural property. The +0.60 bit gap reflects frequency-induced ceiling, not a finding about INFRA vs RI semantic role. Revised text: "comparison confounded by frequency-induced ceiling on RI; pre-registered direction not testable under naive comparison; pre-registered formulaic-glue mechanism is NOT TESTED."
+
+**C2000 (revised):** Original framing said "daiin is moderate-context-propagation, not unusually low MI." Expert-advisor identified this as **negative-result-dressed-as-positive**: daiin's z=+0.76 is statistically indistinguishable from median (|z|<2). The state-flush hypothesis was rejected; no positive characterization was established. Revised text retains the directional rejection and the population-median indistinguishability; removes the "moderate context propagation" positive characterization.
+
+**C2001 (revised) + C2003 (new):** Original framing "qokedy operational embedding CONFIRMED via cross-PREFIX MI persistence" smuggled mechanism interpretation. Expert-advisor identified the mechanism overreach: the test directly ruled out morphological-clustering as one alternative, but did not affirmatively confirm operational embedding — that's just the surviving guess. Revised C2001 retains only what was tested: cross-tier MI persistence at z=+2.49 (Tier 2 measurement) and the rejection of the morphological-clustering alternative. Added C2003 as Tier 3 interpretation of the operational-embedding hypothesis, explicitly listing competing mechanisms (REGIME-conditioning per C979, section-conditioning per C1029, category-routing per C1286) that were not isolated. Direct test of recipe-structural embedding requires source-aligned phase-ordinal correspondence; not performed.
+
+**C2002 (cosmetic):** Auxiliary observation about qotar's t-HEAD/r-TERM atom composition now explicitly cites C1195 (atom gloss tiers) and C1487 (terminal taxonomy) as borrowed framing, flagged as no-mechanism-test-performed.
+
+### Methodological framework (now in force)
+
+The line for Tier 2: **the constraint text must be true even if any interpretation attached to it is wrong.** Mechanism words at Tier 2 are OK if (a) the test directly confirmed them, OR (b) they are structural shorthand whose meaning is fixed by the measurement itself. Mechanism interpretations beyond the measurement go to Tier 3 (separate constraint number) or SPECULATIVE/ narrative.
+
+Bigram-graph metrics (Earnhart's μ, H_succ, cross-tier MI) are jointly identified by frequency, length, prefix domain, section, REGIME, atom composition, and layout position. Single-mechanism inferences from these metrics are confounded; mechanism interpretation requires either multi-confound joint controls or escape to a different scale (atom-level, paragraph-internal, source-aligned).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C1998 | Revised in place — construct-validity finding, NOT a directional negative |
+| C2000 | Revised in place — directional rejection only, no positive characterization |
+| C2001 | Revised in place — measurement-only (cross-tier MI persistence + morphological-clustering rejection) |
+| C2002 | Cosmetic — auxiliary citations made explicit |
+| C2003 | New Tier 3 — operational-embedding candidate as interpretation of C2001 |
+| CLAIMS/INDEX.md | 4 revisions + 1 new constraint; total 1998 → 1999, version 6.54 → 6.55 |
+| CLAUDE.md | Version 6.54 → 6.55, constraints → 1999 |
+
+### What's NOT in this hygiene pass
+
+- No spot-check of C1965-onward (deferred — do if pattern reappears)
+- No revision of C1994/C1995 (already correctly tier-stratified per expert)
+- No retirement of Earnhart metrics (crazy-expert's deeper reframe; strategic decision separate from hygiene)
+- No broad audit of older constraints (downstream phases already settled on existing texts)
+
+### Phase count unchanged
+
+This is a hygiene revision, not a phase. Phase count stays at 689.
+
+### Expert validation
+
+Both expert-advisor (rigor) and crazy-expert (speculation) recommended this specific scope. Expert-advisor provided the proposed revised text for each constraint; crazy-expert flagged the deeper measurement-vs-mechanism issue but agreed the immediate hygiene pass is the right call.
+
+---
+
 ## Version 6.54 (2026-05-07) - Phase 689: qotar Morphological Clustering Mechanism
 
 ### Summary
