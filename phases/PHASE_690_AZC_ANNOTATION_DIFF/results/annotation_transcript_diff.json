@@ -1,0 +1,1029 @@
+{
+  "phase": 690,
+  "aggregate": {
+    "n_total_folios": 26,
+    "n_flagged": 20,
+    "n_with_total_diff": 17,
+    "n_with_center_diff": 9,
+    "n_with_ring_diff": 1
+  },
+  "by_diagram_type": {
+    "ring_with_short_spokes": {
+      "n_folios": 1,
+      "n_flagged": 0,
+      "folios": [
+        "f67r1"
+      ]
+    },
+    "segmented_ring_complex": {
+      "n_folios": 1,
+      "n_flagged": 1,
+      "folios": [
+        "f67r2"
+      ]
+    },
+    "artistic_unconventional": {
+      "n_folios": 1,
+      "n_flagged": 1,
+      "folios": [
+        "f67v2"
+      ]
+    },
+    "spoke_only": {
+      "n_folios": 1,
+      "n_flagged": 1,
+      "folios": [
+        "f67v1"
+      ]
+    },
+    "scatter_circular": {
+      "n_folios": 2,
+      "n_flagged": 2,
+      "folios": [
+        "f68r1",
+        "f68r2"
+      ]
+    },
+    "ring_spoke_hybrid": {
+      "n_folios": 1,
+      "n_flagged": 1,
+      "folios": [
+        "f68r3"
+      ]
+    },
+    "ring_spoke_segmented_center": {
+      "n_folios": 1,
+      "n_flagged": 0,
+      "folios": [
+        "f68v3"
+      ]
+    },
+    "single_ring_spoke": {
+      "n_folios": 1,
+      "n_flagged": 1,
+      "folios": [
+        "f68v2"
+      ]
+    },
+    "double_ring_spoke": {
+      "n_folios": 1,
+      "n_flagged": 0,
+      "folios": [
+        "f68v1"
+      ]
+    },
+    "multi_ring_character_center": {
+      "n_folios": 1,
+      "n_flagged": 0,
+      "folios": [
+        "f69r"
+      ]
+    },
+    "UNKNOWN": {
+      "n_folios": 7,
+      "n_flagged": 6,
+      "folios": [
+        "f69v",
+        "f70r1",
+        "f70r2",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3"
+      ]
+    },
+    "multi_ring_nymph": {
+      "n_folios": 8,
+      "n_flagged": 7,
+      "folios": [
+        "f70v2",
+        "f70v1",
+        "f71r",
+        "f72v1",
+        "f72v3",
+        "f72v2",
+        "f73r",
+        "f73v"
+      ]
+    }
+  },
+  "per_folio": [
+    {
+      "folio": "f67r1",
+      "diagram_type": "ring_with_short_spokes",
+      "description": "",
+      "user_total": 155,
+      "transcript_total": 155,
+      "total_diff": 0,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 2,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "P",
+        "R",
+        "S"
+      ],
+      "oddities_count": 0,
+      "oddities": [],
+      "flag_for_review": false,
+      "annotation_file": "f67r1_f67r2_foldout.json"
+    },
+    {
+      "folio": "f67r2",
+      "diagram_type": "segmented_ring_complex",
+      "description": "",
+      "user_total": 176,
+      "transcript_total": 174,
+      "total_diff": 2,
+      "user_center": null,
+      "transcript_center": 86,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "L",
+        "P",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "oddities_count": 0,
+      "oddities": [],
+      "flag_for_review": true,
+      "annotation_file": "f67r1_f67r2_foldout.json"
+    },
+    {
+      "folio": "f67v2",
+      "diagram_type": "artistic_unconventional",
+      "description": "Oddball diagram - artistic liberties with structure",
+      "user_total": 61,
+      "transcript_total": 60,
+      "total_diff": 1,
+      "user_center": null,
+      "transcript_center": 36,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 3,
+      "transcript_continuous_rings": 2,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "F",
+        "L",
+        "R",
+        "S"
+      ],
+      "oddities_count": 0,
+      "oddities": [],
+      "flag_for_review": true,
+      "annotation_file": "f67v2_f67v1_foldout.json"
+    },
+    {
+      "folio": "f67v1",
+      "diagram_type": "spoke_only",
+      "description": "Spoke diagram with decorative boxing",
+      "user_total": 71,
+      "transcript_total": 69,
+      "total_diff": 2,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 0,
+      "transcript_continuous_rings": 0,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "X",
+        "Y"
+      ],
+      "oddities_count": 0,
+      "oddities": [],
+      "flag_for_review": true,
+      "annotation_file": "f67v2_f67v1_foldout.json"
+    },
+    {
+      "folio": "f68r1",
+      "diagram_type": "scatter_circular",
+      "description": "",
+      "user_total": 65,
+      "transcript_total": 64,
+      "total_diff": 1,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 0,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "P",
+        "S",
+        "X",
+        "Y"
+      ],
+      "oddities_count": 2,
+      "oddities": [
+        {
+          "type": "non_ring_circular_diagram",
+          "desc": "Circular diagrams that are NOT organized as rings - tokens scattered uniformly"
+        },
+        {
+          "type": "a_like_paragraph_on_azc",
+          "desc": "Paragraph text above diagrams that resembles Currier A"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f68r1_f68r2_f68r3_foldout.json"
+    },
+    {
+      "folio": "f68r2",
+      "diagram_type": "scatter_circular",
+      "description": "",
+      "user_total": 81,
+      "transcript_total": 80,
+      "total_diff": 1,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 0,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "L",
+        "P",
+        "S",
+        "U"
+      ],
+      "oddities_count": 2,
+      "oddities": [
+        {
+          "type": "non_ring_circular_diagram",
+          "desc": "Circular diagrams that are NOT organized as rings - tokens scattered uniformly"
+        },
+        {
+          "type": "a_like_paragraph_on_azc",
+          "desc": "Paragraph text above diagrams that resembles Currier A"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f68r1_f68r2_f68r3_foldout.json"
+    },
+    {
+      "folio": "f68r3",
+      "diagram_type": "ring_spoke_hybrid",
+      "description": "",
+      "user_total": 102,
+      "transcript_total": 100,
+      "total_diff": 2,
+      "user_center": null,
+      "transcript_center": 46,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "C1",
+        "C2",
+        "R",
+        "X"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "hybrid_structure",
+          "desc": "Ring + spoke + scatter hybrid - more complex than simple ring diagram"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f68r1_f68r2_f68r3_foldout.json"
+    },
+    {
+      "folio": "f68v3",
+      "diagram_type": "ring_spoke_segmented_center",
+      "description": "Full ring-spoke-center structure with segmented center",
+      "user_total": 159,
+      "transcript_total": 159,
+      "total_diff": 0,
+      "user_center": null,
+      "transcript_center": 23,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 0,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "B",
+        "I",
+        "L",
+        "O",
+        "P",
+        "S"
+      ],
+      "oddities_count": 2,
+      "oddities": [
+        {
+          "type": "segmented_center",
+          "desc": "Center divided into 3 areas by drawn lines, with different token counts"
+        },
+        {
+          "type": "placement_code_inconsistency",
+          "desc": "Each folio uses different placement codes for similar structures"
+        }
+      ],
+      "flag_for_review": false,
+      "annotation_file": "f68v3_f68v2_f68v1_foldout.json"
+    },
+    {
+      "folio": "f68v2",
+      "diagram_type": "single_ring_spoke",
+      "description": "Single ring with spokes, illustration-heavy center",
+      "user_total": 100,
+      "transcript_total": 99,
+      "total_diff": 1,
+      "user_center": null,
+      "transcript_center": 31,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 3,
+      "transcript_continuous_rings": 2,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "P",
+        "R",
+        "S"
+      ],
+      "oddities_count": 2,
+      "oddities": [
+        {
+          "type": "placement_code_inconsistency",
+          "desc": "Each folio uses different placement codes for similar structures"
+        },
+        {
+          "type": "illustration_only_center",
+          "desc": "Center areas contain illustration but no text tokens"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f68v3_f68v2_f68v1_foldout.json"
+    },
+    {
+      "folio": "f68v1",
+      "diagram_type": "double_ring_spoke",
+      "description": "Double ring with spokes, no paragraph, illustration-heavy",
+      "user_total": 96,
+      "transcript_total": 96,
+      "total_diff": 0,
+      "user_center": null,
+      "transcript_center": 76,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "X"
+      ],
+      "oddities_count": 3,
+      "oddities": [
+        {
+          "type": "missing_paragraph",
+          "desc": "No A-like paragraph text - only diagram content"
+        },
+        {
+          "type": "placement_code_inconsistency",
+          "desc": "Each folio uses different placement codes for similar structures"
+        },
+        {
+          "type": "illustration_only_center",
+          "desc": "Center areas contain illustration but no text tokens"
+        }
+      ],
+      "flag_for_review": false,
+      "annotation_file": "f68v3_f68v2_f68v1_foldout.json"
+    },
+    {
+      "folio": "f69r",
+      "diagram_type": "multi_ring_character_center",
+      "description": "Multi-layer ring diagram with unique innermost character ring",
+      "user_total": 164,
+      "transcript_total": 164,
+      "total_diff": 0,
+      "user_center": null,
+      "transcript_center": 49,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 3,
+      "transcript_continuous_rings": 2,
+      "transcript_s_layers": 1,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "P",
+        "R",
+        "S",
+        "W"
+      ],
+      "oddities_count": 4,
+      "oddities": [
+        {
+          "type": "character_ring",
+          "desc": "Innermost layer has single characters (d,o,l,s,em,y) spaced around center with illustration between"
+        },
+        {
+          "type": "segmented_inner_ring",
+          "desc": "C placement has 16 lines instead of 1 - inner ring appears divided into segments"
+        },
+        {
+          "type": "high_spoke_count",
+          "desc": "22 spokes is unusually high compared to other AZC diagrams"
+        },
+        {
+          "type": "W_placement_unique",
+          "desc": "W placement code appears unique to this folio"
+        }
+      ],
+      "flag_for_review": false,
+      "annotation_file": "f69r.json"
+    },
+    {
+      "folio": "f69v",
+      "diagram_type": "UNKNOWN",
+      "description": "",
+      "user_total": 137,
+      "transcript_total": 137,
+      "total_diff": 0,
+      "user_center": null,
+      "transcript_center": 103,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "L"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "separate_text_block",
+          "desc": "Large block of paragraph text separate from circular diagram"
+        }
+      ],
+      "flag_for_review": false,
+      "annotation_file": "f69v_f70r1_f70r2_foldout.json"
+    },
+    {
+      "folio": "f70r1",
+      "diagram_type": "UNKNOWN",
+      "description": "",
+      "user_total": 112,
+      "transcript_total": 111,
+      "total_diff": 1,
+      "user_center": null,
+      "transcript_center": 85,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "I",
+        "X",
+        "Y"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "separate_text_block",
+          "desc": "Large block of paragraph text separate from circular diagram"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f69v_f70r1_f70r2_foldout.json"
+    },
+    {
+      "folio": "f70r2",
+      "diagram_type": "UNKNOWN",
+      "description": "",
+      "user_total": 248,
+      "transcript_total": 247,
+      "total_diff": 1,
+      "user_center": null,
+      "transcript_center": 147,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 1,
+      "transcript_continuous_rings": 1,
+      "transcript_s_layers": 0,
+      "ring_diff": null,
+      "placement_codes": [
+        "C",
+        "I",
+        "P"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "separate_text_block",
+          "desc": "Large block of paragraph text separate from circular diagram"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f69v_f70r1_f70r2_foldout.json"
+    },
+    {
+      "folio": "f70v2",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring diagram with nymphs in tubes and fish at center",
+      "user_total": 141,
+      "transcript_total": 139,
+      "total_diff": 2,
+      "user_center": 2,
+      "transcript_center": 1,
+      "center_diff": 1,
+      "user_ring_layers": 5,
+      "transcript_ring_layers": 6,
+      "transcript_continuous_rings": 4,
+      "transcript_s_layers": 2,
+      "ring_diff": -1,
+      "placement_codes": [
+        "C",
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 5,
+      "oddities": [
+        {
+          "type": "nymph_illustration_encoding",
+          "desc": "Nymph figures interrupt ring text, causing S encoding instead of R"
+        },
+        {
+          "type": "no_paragraph_text",
+          "desc": "No A-like text blocks - diagram only"
+        },
+        {
+          "type": "center_token_discrepancy",
+          "desc": "User observes center tokens but transcript shows fewer or none"
+        },
+        {
+          "type": "high_ring_count",
+          "desc": "5 and 4 rings respectively - more than typical diagrams"
+        },
+        {
+          "type": "distinctive_illustrations",
+          "desc": "Nymphs in tubes, fish, goat - unusual iconography"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f70v2_f70v1_foldout.json"
+    },
+    {
+      "folio": "f70v1",
+      "diagram_type": "multi_ring_nymph",
+      "description": "4-ring diagram with nymphs in tubes and goat at center",
+      "user_total": 86,
+      "transcript_total": 86,
+      "total_diff": 0,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 4,
+      "transcript_ring_layers": 4,
+      "transcript_continuous_rings": 2,
+      "transcript_s_layers": 2,
+      "ring_diff": 0,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 5,
+      "oddities": [
+        {
+          "type": "nymph_illustration_encoding",
+          "desc": "Nymph figures interrupt ring text, causing S encoding instead of R"
+        },
+        {
+          "type": "no_paragraph_text",
+          "desc": "No A-like text blocks - diagram only"
+        },
+        {
+          "type": "center_token_discrepancy",
+          "desc": "User observes center tokens but transcript shows fewer or none"
+        },
+        {
+          "type": "high_ring_count",
+          "desc": "5 and 4 rings respectively - more than typical diagrams"
+        },
+        {
+          "type": "distinctive_illustrations",
+          "desc": "Nymphs in tubes, fish, goat - unusual iconography"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f70v2_f70v1_foldout.json"
+    },
+    {
+      "folio": "f71r",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring diagram with clothed ladies in tubes and goat eating plant at center",
+      "user_total": 91,
+      "transcript_total": 91,
+      "total_diff": 0,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 5,
+      "transcript_ring_layers": 5,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 2,
+      "ring_diff": 0,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 3,
+      "oddities": [
+        {
+          "type": "clothed_vs_naked",
+          "desc": "Ladies have clothes - contrasts with naked nymphs on f70v2/f70v1"
+        },
+        {
+          "type": "center_token_missing",
+          "desc": "User observes 1 center token but no C placement in transcript"
+        },
+        {
+          "type": "goat_with_plant",
+          "desc": "Goat eating plant - more detailed than f70v1's plain goat"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f71r.json"
+    },
+    {
+      "folio": "f71v",
+      "diagram_type": "UNKNOWN",
+      "description": "5-ring nymph diagram",
+      "user_total": 101,
+      "transcript_total": 99,
+      "total_diff": 2,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 5,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 2,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "center_tokens_missing",
+          "desc": "User observes center tokens but no C placement in any transcript"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f71v_f72r1_f72r2_f72r3_foldout.json"
+    },
+    {
+      "folio": "f72r1",
+      "diagram_type": "UNKNOWN",
+      "description": "5-ring nymph diagram",
+      "user_total": 105,
+      "transcript_total": 105,
+      "total_diff": 0,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 5,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 2,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "center_tokens_missing",
+          "desc": "User observes center tokens but no C placement in any transcript"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f71v_f72r1_f72r2_f72r3_foldout.json"
+    },
+    {
+      "folio": "f72r2",
+      "diagram_type": "UNKNOWN",
+      "description": "6-ring nymph diagram with MAN AND WOMAN at center",
+      "user_total": 111,
+      "transcript_total": 110,
+      "total_diff": 1,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 6,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 3,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S0",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 2,
+      "oddities": [
+        {
+          "type": "human_couple_center",
+          "desc": "Man and woman at center instead of animal - unique in the nymph series"
+        },
+        {
+          "type": "center_tokens_missing",
+          "desc": "User observes center tokens but no C placement in any transcript"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f71v_f72r1_f72r2_f72r3_foldout.json"
+    },
+    {
+      "folio": "f72r3",
+      "diagram_type": "UNKNOWN",
+      "description": "7-ring nymph diagram - largest in series",
+      "user_total": 169,
+      "transcript_total": 163,
+      "total_diff": 6,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 7,
+      "transcript_continuous_rings": 4,
+      "transcript_s_layers": 3,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "oddities_count": 2,
+      "oddities": [
+        {
+          "type": "largest_nymph_diagram",
+          "desc": "7 total rings (4 continuous + 3 nymph-divided) - most complex"
+        },
+        {
+          "type": "center_tokens_missing",
+          "desc": "User observes center tokens but no C placement in any transcript"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f71v_f72r1_f72r2_f72r3_foldout.json"
+    },
+    {
+      "folio": "f72v1",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring nymph diagram with balancing scale at center",
+      "user_total": 102,
+      "transcript_total": 99,
+      "total_diff": 3,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 5,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 2,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 4,
+      "oddities": [
+        {
+          "type": "balancing_scale_center",
+          "desc": "Unique center illustration - scale with 2 hanging baskets, suggesting weighing/balance"
+        },
+        {
+          "type": "physical_damage",
+          "desc": "Hole in page with damaged token"
+        },
+        {
+          "type": "dense_packing",
+          "desc": "Illustrations so dense that each token is isolated (1 per line in S placements)"
+        },
+        {
+          "type": "center_token_missing",
+          "desc": "User sees center token but no C placement in transcript"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f72v1.json"
+    },
+    {
+      "folio": "f72v3",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring nymph diagram with large feline at center",
+      "user_total": 121,
+      "transcript_total": 111,
+      "total_diff": 10,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 5,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 2,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "exotic_feline",
+          "desc": "Large cat (tiger?) - more exotic than typical goat imagery"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f72v3_f72v2_foldout.json"
+    },
+    {
+      "folio": "f72v2",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring nymph diagram with lady of status at center",
+      "user_total": 110,
+      "transcript_total": 105,
+      "total_diff": 5,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 5,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 2,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 1,
+      "oddities": [
+        {
+          "type": "lady_of_status",
+          "desc": "Distinguished female figure at center - another human center like f72r2"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f72v3_f72v2_foldout.json"
+    },
+    {
+      "folio": "f73r",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring nymph diagram with 4 tokens at top and reptile-like center",
+      "user_total": 96,
+      "transcript_total": 94,
+      "total_diff": 2,
+      "user_center": 1,
+      "transcript_center": 0,
+      "center_diff": 1,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 6,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 3,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S0",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 3,
+      "oddities": [
+        {
+          "type": "top_tokens",
+          "desc": "S0 has 4 tokens at top - unique positioning, ambiguous structure"
+        },
+        {
+          "type": "reptile_center",
+          "desc": "Animal has reptile-like tail - unusual for nymph series (mostly mammals)"
+        },
+        {
+          "type": "poor_drawing",
+          "desc": "Center animal poorly drawn - identification uncertain"
+        }
+      ],
+      "flag_for_review": true,
+      "annotation_file": "f73r.json"
+    },
+    {
+      "folio": "f73v",
+      "diagram_type": "multi_ring_nymph",
+      "description": "5-ring nymph diagram with lady and crossbow at center",
+      "user_total": 97,
+      "transcript_total": 97,
+      "total_diff": 0,
+      "user_center": null,
+      "transcript_center": 0,
+      "center_diff": null,
+      "user_ring_layers": 0,
+      "transcript_ring_layers": 6,
+      "transcript_continuous_rings": 3,
+      "transcript_s_layers": 3,
+      "ring_diff": null,
+      "placement_codes": [
+        "R1",
+        "R2",
+        "R3",
+        "S0",
+        "S1",
+        "S2"
+      ],
+      "oddities_count": 4,
+      "oddities": [
+        {
+          "type": "crossbow_apparatus",
+          "desc": "Crossbow is second apparatus in nymph series (after scale on f72v1)"
+        },
+        {
+          "type": "weapon_imagery",
+          "desc": "Only weapon in the entire nymph series - intimidating/aggressive"
+        },
+        {
+          "type": "lady_with_weapon",
+          "desc": "Fancy/distinguished lady holding the crossbow - combines human + apparatus"
+        },
+        {
+          "type": "s0_pattern",
+          "desc": "Same 4 top tokens as f73r - may indicate paired folios"
+        }
+      ],
+      "flag_for_review": false,
+      "annotation_file": "f73v.json"
+    }
+  ]
+}

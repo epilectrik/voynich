@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1999 validated constraints | **Version:** 6.55 | **Date:** 2026-05-07
+**Total:** 2001 validated constraints | **Version:** 6.56 | **Date:** 2026-05-07
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7489,6 +7489,22 @@ Direct mechanism test of Phase 688's "morphological clustering" framing for qota
 - **Pattern across Phase 686-689:** three falsifications of mechanism inferences from MI measurements (C1998 INFRA glue framing, C2000 daiin state-flush, C2002 qotar morphological clustering). The Phase 686 metric family produces measurements but mechanism interpretations require separate pre-registered tests.
 - **Three-mode framework (NOT registered, candidate for follow-up):** Phase 688's binary classification (operational embedder vs morphological clusterer) was too coarse. Likely three modes: operational embedder (qokedy, k-HEAD thermal cycle), family-pooled (chol, predicted), junction/marker (qotar, t-HEAD transfer). Atom-level HEAD difference predicts the mode.
 - **Five candidate follow-up phases** documented in Phase 689 INDEX.md "Candidates" section — chol mechanism test, o-prefix family concentration on qotar, recipe-positional analysis, chcthy mechanism test, self-iteration bias correction. None committed.
+
+---
+
+### Phase 690: AZC Annotation-Transcript Systematic Diff (2 constraints)
+
+Audit of user manual annotations (13 files, 26 folios) against H-track transcript encoding for AZC diagrams. Methodology locked descriptive — no hypothesis prediction, just measurement. Identifies systematic gap in transcript encoding of center tokens on nymph-page folios, statistically distinguishable from noise. Provides 9 specific candidate transcript-error folios for follow-up verification (e.g., via independent OCR).
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2004 | AZC annotation-transcript audit summary. Of 26 user-annotated AZC folios audited against H-track transcript (sample: 13 annotation files in data/folio_annotations/azc/), 20 (77%) show non-zero discrepancy on at least one of three measures (total token count, center-token count, ring-layer count). 17/26 (65%) show non-zero total-token discrepancy. 9/26 (35%) show center-token discrepancy. 1/26 shows ring-layer count discrepancy. Methodology: H-track only, uncertain tokens excluded, center-token detection via placement codes C/C1/C2/W/I/B. AZC transcript encoding has documented gaps relative to user visual inspection at scale. | 2 | AZC, audit, transcript-encoding, annotation-diff, measurement, gaps, C302, C311, C313 | n_folios=26. n_flagged=20. flagged_pct=77pct. n_total_diff=17. n_center_diff=9. n_ring_diff=1. |
+| 2005 | Nymph-page center-token systematic gap in H-track transcript. Of 26 audited AZC folios, 9 show user-observed center tokens that H-track transcript does not encode under center placement codes (C/C1/C2/W/I/B). ALL 9 discrepancies are in user > transcript direction. 8 of 9 are on nymph-page folios (f70v-f73r). Hypergeometric p ≈ 0.0023 for nymph-concentration vs random base rate (12/26 nymph-type folios). Binomial p ≈ 0.0039 for same-sign direction vs random. Both patterns statistically real. Specific candidate transcript-error folios (n=9): f70v2 (user=2 vs transcript=1), f70v1, f71r, f71v, f72r1, f72r2 (man+woman center), f72r3 (largest), f72v1 (balancing scale), f73r (reptile). Mechanism reserved at Tier 2: gap could reflect (a) transcriber methodological choice on nymph pages, (b) genuine missing transcription, (c) center text encoded under non-center placement codes (R3 inner ring or S0 top), or (d) user mis-counting figure elements. Direct verification requires high-resolution scan inspection or independent OCR. | 2 | AZC, nymph-page, center-token, transcript-gap, systematic, candidate-errors, audit, C302, C311, C313, OCR-target | n_center_diffs=9. nymph_concentration=8of9. hypergeometric_p=0.0023. direction_p_binomial=0.0039. all_user_gt_transcript=true. candidate_folios=9. mechanism=reserved. |
+
+- **C2004 is descriptive audit measurement.** No prediction, just locked methodology and reported measurements. Per the post-Phase-689 hygiene framework, mechanism interpretations reserved.
+- **C2005 is the statistically interesting finding.** Both the nymph-concentration and the same-direction sign pattern survive significance tests at p<0.01 each. The transcript almost certainly under-represents nymph-page center tokens; whether by missed text, methodological encoding choice, or alternate placement code is not adjudicated by this measurement.
+- **C2005 is an OCR-validation target.** When the OCR project produces a candidate transcript, comparison on these 9 folios will adjudicate among the candidate mechanisms.
+- **Implications for downstream analysis:** any constraint or analysis that depends on AZC center-token statistics on nymph pages should treat this as a known caveat. C302/C311/C313 (positional grammar) are unaffected by this gap; counting-based constraints would need re-checking.
 
 ---
 

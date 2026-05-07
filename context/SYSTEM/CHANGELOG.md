@@ -4,6 +4,44 @@
 
 ---
 
+## Version 6.56 (2026-05-07) - Phase 690: AZC Annotation-Transcript Systematic Diff
+
+### Summary
+
+Audit of 13 user manual annotation files (covering 26 AZC folios) against H-track transcript encoding. Methodology locked descriptive — no hypothesis prediction, just measurement of discrepancies.
+
+**The finding:** AZC transcript encoding has measurable systematic gaps relative to user visual inspection. 20 of 26 audited folios (77%) show non-zero discrepancy on at least one of three measures. The single most striking pattern: **9 folios show center-token discrepancies, ALL in user > transcript direction (+1 each), 8 of 9 concentrated on nymph-page folios** (f70v-f73r). Hypergeometric p ≈ 0.0023 for nymph-concentration; binomial p ≈ 0.0039 for same-sign direction. Both patterns statistically real.
+
+**Specific candidate transcript-error folios (9):** f70v2, f70v1, f71r, f71v, f72r1, f72r2 (man+woman center), f72r3 (7-ring largest), f72v1 (balancing scale center), f73r (reptile center). User observed ≥1 center tokens that the H-track transcript does not encode under center placement codes (C/C1/C2/W/I/B).
+
+**Mechanism reserved at Tier 2** per the post-Phase-689 hygiene framework. The gap could reflect transcriber methodology, genuine missing transcription, alternate placement-code encoding, or user mis-counting. Direct verification requires high-resolution scan inspection or independent OCR. Becomes a natural validation target if/when an OCR project is undertaken.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2004 | AZC annotation-transcript audit summary, Tier 2 AZC (descriptive audit) |
+| C2005 | Nymph-page center-token systematic gap in H-track transcript, Tier 2 AZC (statistically real pattern, mechanism reserved) |
+| Phase 690 dir | Created with INDEX, s1_annotation_diff.py, annotation_transcript_diff.json |
+| CLAIMS/INDEX.md | 2 new constraints; total 1999 → 2001, version 6.55 → 6.56 |
+| CLAUDE.md | Version 6.55 → 6.56, constraints → 2001, phases 689 → 690 |
+
+### Key Findings
+
+1. **77% of audited folios show some discrepancy** between user annotations and H-track transcript.
+2. **Nymph-page center-token gap is statistically real** and directional (all user > transcript).
+3. **9 specific folios identified** as candidate transcript errors warranting follow-up verification.
+4. **AZC analysis caveat:** any constraint that depends on AZC center-token statistics on nymph pages should treat this gap as a known limitation.
+5. **Direct validation target for future OCR work:** the 9 flagged folios become test cases.
+
+### Methodological Notes
+
+- Pre-reg discipline preserved: methodology and sample locked; no hypothesis predictions; descriptive measurements only.
+- Per the C1998-C2002 hygiene-pass framework: both constraints register at Tier 2 with measurement-only text; mechanism interpretations are reserved.
+- Statistical tests done post-hoc for descriptive purposes (hypergeometric, binomial), not as gating criteria.
+
+---
+
 ## Version 6.55 (2026-05-07) - C1998-C2002 Hygiene Pass
 
 ### Summary
