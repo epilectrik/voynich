@@ -1,0 +1,403 @@
+{
+  "phase": 688,
+  "target": "qokedy",
+  "target_prefix": "qo",
+  "verdicts": {
+    "T1": "PASS",
+    "T2": "INSUFFICIENT_DATA"
+  },
+  "qokedy": {
+    "cluster": {
+      "n": 19,
+      "mi_actual": 2.4112645159572828,
+      "mi_null_mean": 2.2809787888862423,
+      "mi_null_std": 0.09711465159148232,
+      "z": 1.3415661276229869,
+      "sufficient": false
+    },
+    "boundary": {
+      "n": 112,
+      "mi_actual": 4.674499920392524,
+      "mi_null_mean": 4.6413400096627875,
+      "mi_null_std": 0.026370250177863278,
+      "z": 1.2574742562576373,
+      "sufficient": true
+    },
+    "cross": {
+      "n": 140,
+      "mi_actual": 5.292464822346145,
+      "mi_null_mean": 5.248657944192014,
+      "mi_null_std": 0.01756217968338619,
+      "z": 2.49438731090834,
+      "sufficient": true
+    }
+  },
+  "comparison_top9": {
+    "qotar": {
+      "cluster": {
+        "n": 0,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 13,
+        "mi_actual": 3.334679141051595,
+        "mi_null_mean": 3.1854483718208257,
+        "mi_null_std": 0.026310045398937932,
+        "z": 5.672007287254362,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 48,
+        "mi_actual": 5.126629167387822,
+        "mi_null_mean": 5.128295834054489,
+        "mi_null_std": 0.008185455090700677,
+        "z": -0.20361319538120634,
+        "sufficient": true
+      }
+    },
+    "chol": {
+      "cluster": {
+        "n": 6,
+        "mi_actual": 1.792481250360578,
+        "mi_null_mean": 1.5241479170272447,
+        "mi_null_std": 0.13239831280205505,
+        "z": 2.0267126344314588,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 25,
+        "mi_actual": 4.453660689688184,
+        "mi_null_mean": 4.453660689688184,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 68,
+        "mi_actual": 5.49533545144901,
+        "mi_null_mean": 5.496806039684306,
+        "mi_null_std": 0.006426231215580918,
+        "z": -0.22884147581412456,
+        "sufficient": true
+      }
+    },
+    "chcthy": {
+      "cluster": {
+        "n": 2,
+        "mi_actual": 1.0,
+        "mi_null_mean": 1.0,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 9,
+        "mi_actual": 2.94770277922009,
+        "mi_null_mean": 2.94770277922009,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 45,
+        "mi_actual": 4.819305040629889,
+        "mi_null_mean": 4.777749485074332,
+        "mi_null_std": 0.010984199831839268,
+        "z": 3.783211903620162,
+        "sufficient": true
+      }
+    },
+    "okedy": {
+      "cluster": {
+        "n": 1,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 28,
+        "mi_actual": 3.8962915290459277,
+        "mi_null_mean": 3.837720100474499,
+        "mi_null_std": 0.028427490987993027,
+        "z": 2.060379813194476,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 85,
+        "mi_actual": 5.2814579598915055,
+        "mi_null_mean": 5.2655023650386905,
+        "mi_null_std": 0.012362012627943036,
+        "z": 1.2906955633380437,
+        "sufficient": true
+      }
+    },
+    "dy": {
+      "cluster": {
+        "n": 0,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 7,
+        "mi_actual": 2.2359263506290326,
+        "mi_null_mean": 2.2559263506290326,
+        "mi_null_std": 0.07308208171380896,
+        "z": -0.2736648920089668,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 102,
+        "mi_actual": 5.706704817814461,
+        "mi_null_mean": 5.69121462173603,
+        "mi_null_std": 0.00870032551218039,
+        "z": 1.780415693268539,
+        "sufficient": true
+      }
+    },
+    "qokar": {
+      "cluster": {
+        "n": 5,
+        "mi_actual": 1.9219280948873623,
+        "mi_null_mean": 1.9219280948873623,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 29,
+        "mi_actual": 4.090234012145146,
+        "mi_null_mean": 4.034716770765835,
+        "mi_null_std": 0.027392754372839074,
+        "z": 2.0267126344314845,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 103,
+        "mi_actual": 5.071223607185048,
+        "mi_null_mean": 5.03513469577875,
+        "mi_null_std": 0.02083483044887293,
+        "z": 1.7321432730089574,
+        "sufficient": true
+      }
+    },
+    "s": {
+      "cluster": {
+        "n": 0,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 7,
+        "mi_actual": 2.807354922057604,
+        "mi_null_mean": 2.807354922057604,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 46,
+        "mi_actual": 3.388433167916656,
+        "mi_null_mean": 3.2583959698847442,
+        "mi_null_std": 0.05806570197910984,
+        "z": 2.2394837847425855,
+        "sufficient": true
+      }
+    },
+    "shedy": {
+      "cluster": {
+        "n": 2,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 48,
+        "mi_actual": 4.35243626199761,
+        "mi_null_mean": 4.3355183427308335,
+        "mi_null_std": 0.0367942903301342,
+        "z": 0.4597974064720891,
+        "sufficient": true
+      },
+      "cross": {
+        "n": 366,
+        "mi_actual": 5.481236702639188,
+        "mi_null_mean": 5.454715823866522,
+        "mi_null_std": 0.015730060878842524,
+        "z": 1.6859997540338414,
+        "sufficient": true
+      }
+    },
+    "okain": {
+      "cluster": {
+        "n": 0,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 18,
+        "mi_actual": 4.058813890331201,
+        "mi_null_mean": 4.058813890331201,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 117,
+        "mi_actual": 5.599337929152927,
+        "mi_null_mean": 5.573419543469353,
+        "mi_null_std": 0.011447908390493266,
+        "z": 2.2640280476997323,
+        "sufficient": true
+      }
+    }
+  },
+  "flush_set_diagnostic": {
+    "qokal": {
+      "cluster": {
+        "n": 3,
+        "mi_actual": 0.9182958340544893,
+        "mi_null_mean": 0.9182958340544893,
+        "mi_null_std": 0.0,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 44,
+        "mi_actual": 3.870428278616988,
+        "mi_null_mean": 3.9004026465159445,
+        "mi_null_std": 0.03779915891828455,
+        "z": -0.792990340440006,
+        "sufficient": true
+      },
+      "cross": {
+        "n": 120,
+        "mi_actual": 5.317662341294304,
+        "mi_null_mean": 5.3337158501491,
+        "mi_null_std": 0.015962515897176354,
+        "z": -1.0057004145340078,
+        "sufficient": true
+      }
+    },
+    "shey": {
+      "cluster": {
+        "n": 1,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 19,
+        "mi_actual": 3.8268748818646396,
+        "mi_null_mean": 3.8268748818646396,
+        "mi_null_std": 2.5720865776286905e-16,
+        "z": 0.0,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 184,
+        "mi_actual": 5.72958658375831,
+        "mi_null_mean": 5.7474086663003074,
+        "mi_null_std": 0.014648469786804223,
+        "z": -1.2166514865635782,
+        "sufficient": true
+      }
+    },
+    "al": {
+      "cluster": {
+        "n": 0,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 8,
+        "mi_actual": 1.5612781244591327,
+        "mi_null_mean": 1.6789435385256894,
+        "mi_null_std": 0.1368758532164263,
+        "z": -0.8596506345096948,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 178,
+        "mi_actual": 5.803020212104799,
+        "mi_null_mean": 5.814131135560464,
+        "mi_null_std": 0.01169189740736208,
+        "z": -0.9503096947009616,
+        "sufficient": true
+      }
+    },
+    "ar": {
+      "cluster": {
+        "n": 0,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 26,
+        "mi_actual": 2.322995967059359,
+        "mi_null_mean": 2.502072173011439,
+        "mi_null_std": 0.132462189356433,
+        "z": -1.3519043194297262,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 222,
+        "mi_actual": 5.630667840632143,
+        "mi_null_mean": 5.650904310510756,
+        "mi_null_std": 0.014767560404019815,
+        "z": -1.37033262942365,
+        "sufficient": true
+      }
+    },
+    "qoky": {
+      "cluster": {
+        "n": 1,
+        "mi_actual": 0.0,
+        "mi_null_mean": 0.0,
+        "mi_null_std": 0.0,
+        "z": null,
+        "sufficient": false
+      },
+      "boundary": {
+        "n": 29,
+        "mi_actual": 3.7714370294611266,
+        "mi_null_mean": 3.7881189066166723,
+        "mi_null_std": 0.0331398003595459,
+        "z": -0.5033789272885736,
+        "sufficient": false
+      },
+      "cross": {
+        "n": 81,
+        "mi_actual": 5.109618638789011,
+        "mi_null_mean": 5.119681573974732,
+        "mi_null_std": 0.015595547402820365,
+        "z": -0.6452441152466768,
+        "sufficient": true
+      }
+    }
+  }
+}

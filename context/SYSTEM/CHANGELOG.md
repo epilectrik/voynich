@@ -4,6 +4,55 @@
 
 ---
 
+## Version 6.53 (2026-05-07) - Phase 688: qokedy Context Propagation Decomposition
+
+### Summary
+
+Follow-up on Phase 687 auxiliary observation (qokedy ranks 4th of 72 eligible tokens for context propagation, z=+2.51). Pre-registered tier decomposition: qokedy's MI restricted to (prev, next) pairs where neither has qo-prefix. T1 hypothesis: cross-tier z > +1.0 = operational embedding; otherwise morphological clustering.
+
+**The result: PASS at z_cross = +2.49 (n=140).** Cross-tier MI is HIGHER than qo-cluster (z=+1.34, n=19) or boundary (z=+1.26, n=112). qokedy is operationally embedded in recipe sequences, not driven by qo-family co-occurrence. Predecessor predicts successor through qokedy via genuine sequential structure even when both prev and next come from operationally distinct token classes.
+
+**The biggest auxiliary surprise (NOT registered):** Phase 687's overall MI z-ranking does NOT predict operational embedding strength.
+
+| Token | Phase 687 z | cross-tier z | Mechanism |
+|-------|-------------|--------------|-----------|
+| qotar | +3.95 (rank 1) | **−0.20** | Morphological clustering (collapses) |
+| chol | +3.17 (rank 2) | **−0.23** | Morphological clustering (collapses) |
+| chcthy | +2.77 (rank 3) | **+3.78** | Strongest operational embedder |
+| qokedy | +2.51 (rank 4) | +2.49 | Strong operational embedder (pre-registered) |
+| okain | +1.97 (rank 10) | +2.26 | Strong operational embedder |
+| s | +2.24 | +2.24 | Strong operational embedder |
+
+qotar (Phase 687 #1) is morphological clustering; chcthy (Phase 687 #3) is the actual strongest structural embedder. Cross-tier MI z is the discriminating metric, not overall MI z.
+
+State-flush bottom tokens (qokal, shey, al, ar, qoky) all remain negative cross-tier — robust state-flush behavior independent of slicing.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2001 | qokedy operational embedding CONFIRMED, Tier 2 B (cross-tier z=+2.49 in n=140 sample) |
+| Phase 688 dir | Created with INDEX, s1_tier_decomposition.py, t1_qokedy_tier_decomposition.json |
+| CLAIMS/INDEX.md | 1 new constraint; total 1996 → 1997, version 6.52 → 6.53 |
+| CLAUDE.md | Version 6.52 → 6.53, constraints → 1997, phases 687 → 688 |
+
+### Key Findings
+
+1. **qokedy is operationally embedded.** Cross-tier z=+2.49 (n=140) confirms predecessor predicts successor through qokedy beyond what qo-family co-occurrence explains.
+2. **Cross-tier MI z discriminates two distinct mechanisms.** Operational embedding (cross-tier z stays high) vs morphological clustering (cross-tier z collapses).
+3. **Phase 687 ranking did NOT predict operational embedding.** qotar (rank 1) and chol (rank 2) are morphological clusterers; chcthy (rank 3) and qokedy (rank 4) are operational embedders. Only the cross-tier decomposition reveals the difference.
+4. **State-flush behavior is robust.** Bottom-of-Phase-687 tokens (qokal, shey, al, ar, qoky) all stay negative cross-tier.
+5. **qokedy validates as the f75r ×4 balneum mariae operational embedding.** The structural test confirms what the source-aligned analysis (PT-013, C1965, C1988) had implied.
+
+### Methodological Notes
+
+- Pre-reg discipline preserved: T1 PASS registered. T2 (morphological dominance check) returned INSUFFICIENT due to small qo-cluster sample (n=19); not registered.
+- T4 comparison (top-9 from Phase 687) reported as observation. The operational vs morphological dichotomy revealed by cross-tier decomposition is striking but was NOT pre-registered; registering it would be HARK.
+- Mirrors Phase 685's three-tier methodology (C1995); same statistical framework applied to MI propagation instead of e-depth autocorrelation.
+- The qotar / chol surprise (high overall MI but morphological-only) suggests a follow-up pre-registered phase: systematic test of the operational-embedder vs morphological-clusterer dichotomy across all Phase 687 high-MI tokens.
+
+---
+
 ## Version 6.52 (2026-05-06) - Phase 687: Daiin State-Flush Hypothesis
 
 ### Summary

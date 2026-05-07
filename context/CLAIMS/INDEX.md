@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1996 validated constraints | **Version:** 6.52 | **Date:** 2026-05-06
+**Total:** 1997 validated constraints | **Version:** 6.53 | **Date:** 2026-05-07
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7456,6 +7456,21 @@ Direct test of crazy-expert reframe from Phase 686 (Tier 4 speculation): daiin/d
 - **Two failed framings.** Both the original "infrastructure glue" naming (implied INFRA tokens are predictable next-token glue, falsified by C1998) AND the proposed "state-flush operator" reframe (predicted unusually low MI, falsified by C2000) fail to capture daiin's actual transition behavior.
 - **Methodological discipline preserved:** Per Phase 687 pre-reg, T3 PARTIAL excludes class-level constraint registration. Auxiliary observations about token-complexity correlates of MI (long compounds propagate; short stems don't) noted in narrative but not registered as constraints — these were not pre-registered and registering them would be HARK.
 - **Phase 687 closes the speculative reframe** documented in Phase 686 INDEX.md (crazy-expert section). The reframe was a Tier 4 hypothesis; it has now been tested and rejected at Tier 2.
+
+---
+
+### Phase 688: qokedy Context Propagation Decomposition (1 constraint)
+
+Direct test of qokedy's high MI propagation (Phase 687 z=+2.51, rank 4/72): operational embedding (recipe structure) vs morphological clustering (qo-family co-occurrence). Three-tier decomposition by (prev, next) qo-prefix membership: qo-cluster, boundary, cross. Pre-registered T1: cross-tier z > +1.0 means operational embedding.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2001 | qokedy operational embedding CONFIRMED via cross-PREFIX MI persistence. Pre-registered Phase 688 hypothesis: MI(prev; next | T=qokedy) restricted to (prev, next) pairs where neither is qo-prefix has z > +1.0. Result: T1 PASSES at z_cross = +2.49 (n=140 cross-tier triplets out of 271 total). Cross-tier z is HIGHER than qo-cluster (z=+1.34, n=19 insufficient) and boundary (z=+1.26, n=112). Morphological clustering hypothesis fails — qokedy's MI is not driven by qo-family co-occurrence. Operational embedding interpretation: qokedy is structurally embedded in recipe sequences; predecessor predicts successor via genuine sequential structure, not morphological clustering. Consistent with C1300 (qo=100% k-HEAD thermal channel), C1394 (HEAD+MOD*+TERM atom model), C1965/C1988 (matched recipe cardinality anchors), PT-013 (qokedy="maintain fire level"). Auxiliary T4 observation (NOT registered): Phase 687's overall z-ranking does NOT equal operational embedding — qotar (Phase 687 rank 1, z=+3.95) is morphological clustering (cross-tier z=-0.20); chcthy (rank 3, z=+2.77) is strongest operational embedder (cross-tier z=+3.78); chol collapses cross-tier (z=-0.23). Operational embedders identified: chcthy, qokedy, okain, s. Morphological clusterers: qotar, chol. Cross-tier MI z discriminates the two mechanisms; Phase 687 ranking does not. | 2 | B, qokedy, operational-embedding, mutual-information, cross-tier, three-tier-decomposition, C1300, C1394, C1965, C1988, C1995, C1971, PT-013 | qokedy_n_triplets=271. cross_n=140. cross_MI=5.292. cross_null=5.249. cross_z=+2.49. cluster_n=19_INSUFFICIENT. cluster_z=+1.34. boundary_n=112. boundary_z=+1.26. T1=PASS. T2=INSUFFICIENT. T4_chcthy_cross_z=+3.78. T4_qotar_cross_z=-0.20. T4_chol_cross_z=-0.23. |
+
+- **C2001 is a Tier 2 structural fact.** Pre-registered prediction (operational embedding) confirmed at z=+2.49 in cross-tier sample (n=140 well above n=30 threshold).
+- **Phase 688 establishes that cross-tier MI z is the discriminating metric** between operational embedding and morphological clustering. Phase 687's overall MI z does not separate these; only the tier decomposition does.
+- **Major auxiliary finding (NOT registered):** Top-MI tokens from Phase 687 split into operational embedders (chcthy +3.78, qokedy +2.49, okain +2.26, s +2.24 cross-tier) vs morphological clusterers (qotar -0.20, chol -0.23 cross-tier). qotar's #1 ranking in Phase 687 was misleading — it's a morphological cluster, not a structural propagator. Future phase could pre-register and test the operational vs morphological dichotomy systematically.
+- **Combined with Phase 685 (C1995):** S exhibits operational compactness (dense same-stem runs); now we know specific tokens (qokedy, chcthy) are operationally embedded across operationally distinct contexts. Different scales: C1995 is a section-level structural property; C2001 is a token-level structural property.
 
 ---
 
