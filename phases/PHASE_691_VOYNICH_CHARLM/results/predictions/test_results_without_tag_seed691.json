@@ -1,0 +1,84 @@
+{
+  "P1": {
+    "effect_size": 0.1127829974023159,
+    "sim_middle_mean": 0.7794286584322806,
+    "sim_prefix_mean": 0.6666456610299647,
+    "n_same_middle_pairs": 20000,
+    "n_same_prefix_pairs": 20000,
+    "p_value": 0.0,
+    "null_n": 200,
+    "pass": true,
+    "criterion": "effect >= 0.10 AND p < 0.01"
+  },
+  "P2": {
+    "n_sister_pairs": 394,
+    "d_sister": 3.4979329109191895,
+    "d_random_mean": 9.507255554199219,
+    "ratio": 0.36792245507240295,
+    "p_value": 0.0,
+    "pass": true,
+    "criterion": "ratio < 0.5 AND p < 0.01"
+  },
+  "P3": {
+    "loo_accuracy": 0.6,
+    "random_init_baseline_acc": 0.55,
+    "lift_pp": 4.999999999999993,
+    "n_chars": 20,
+    "class_counts": {
+      "2": 12,
+      "0": 6,
+      "1": 2
+    },
+    "pass": false,
+    "criterion": "LOO acc >= 0.85 AND >= 30pp over random-init"
+  },
+  "P4": {
+    "probe_acc": 0.9184704422950745,
+    "centroid_cosine": 0.9217525720596313,
+    "shuffled_acc": 0.6284271478652954,
+    "n_A": 2479,
+    "n_B": 4454,
+    "pass": true,
+    "criterion": "acc >= 0.85 AND cos >= 0.6 AND shuffled_acc <= 0.65"
+  },
+  "P5": {
+    "probe_acc_3way": 0.8850793838500977,
+    "shuffled_acc": 0.5593650937080383,
+    "azc_o_head_rate": 0.2951167728237792,
+    "b_o_head_rate": 0.14952851369555456,
+    "o_head_ratio": 1.9736488080437125,
+    "n_AZC": 942,
+    "n_B": 4454,
+    "pass": false,
+    "criterion": "acc >= 0.75 AND o_ratio >= 1.5 AND shuffled_acc <= 0.50"
+  },
+  "P6": {
+    "correlation": -0.023780301423666637,
+    "abs_correlation": 0.023780301423666637,
+    "null_max_abs_corr": 0.03931208534683554,
+    "pass": true,
+    "criterion": "|corr| < 0.3 (geometric independence)"
+  },
+  "P9": {
+    "loo_accuracy": 0.9166666666666666,
+    "random_init_baseline_acc": 0.5833333333333334,
+    "lift_pp": 33.33333333333333,
+    "n_chars": 12,
+    "class_counts": {
+      "2": 7,
+      "1": 1,
+      "0": 4
+    },
+    "pass": false,
+    "criterion": "LOO acc >= 0.80 AND >= 40pp over random-init"
+  },
+  "P10": {
+    "a_bits_per_char_mean": 0.2640861302297996,
+    "b_bits_per_char_mean": 0.2092786579843816,
+    "a_minus_b": 0.05480747224541799,
+    "n_a_lines": 165,
+    "n_b_lines": 225,
+    "pass": true,
+    "criterion": "A bits/char <= B bits/char + 0.10"
+  }
+}

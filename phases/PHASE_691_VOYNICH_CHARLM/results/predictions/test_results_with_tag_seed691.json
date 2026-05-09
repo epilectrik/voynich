@@ -1,0 +1,84 @@
+{
+  "P1": {
+    "effect_size": 0.1084616896269377,
+    "sim_middle_mean": 0.7934092835645191,
+    "sim_prefix_mean": 0.6849475939375814,
+    "n_same_middle_pairs": 20000,
+    "n_same_prefix_pairs": 20000,
+    "p_value": 0.0,
+    "null_n": 200,
+    "pass": true,
+    "criterion": "effect >= 0.10 AND p < 0.01"
+  },
+  "P2": {
+    "n_sister_pairs": 394,
+    "d_sister": 3.73728609085083,
+    "d_random_mean": 9.46142864227295,
+    "ratio": 0.3950023055076599,
+    "p_value": 0.0,
+    "pass": true,
+    "criterion": "ratio < 0.5 AND p < 0.01"
+  },
+  "P3": {
+    "loo_accuracy": 0.6,
+    "random_init_baseline_acc": 0.55,
+    "lift_pp": 4.999999999999993,
+    "n_chars": 20,
+    "class_counts": {
+      "2": 12,
+      "0": 6,
+      "1": 2
+    },
+    "pass": false,
+    "criterion": "LOO acc >= 0.85 AND >= 30pp over random-init"
+  },
+  "P4": {
+    "probe_acc": 0.9838369488716125,
+    "centroid_cosine": 0.9077282547950745,
+    "shuffled_acc": 0.6078706979751587,
+    "n_A": 2816,
+    "n_B": 4302,
+    "pass": true,
+    "criterion": "acc >= 0.85 AND cos >= 0.6 AND shuffled_acc <= 0.65"
+  },
+  "P5": {
+    "probe_acc_3way": 0.9803049564361572,
+    "shuffled_acc": 0.5266836285591125,
+    "azc_o_head_rate": 0.30423280423280424,
+    "b_o_head_rate": 0.14644351464435146,
+    "o_head_ratio": 2.0774754346182918,
+    "n_AZC": 756,
+    "n_B": 4302,
+    "pass": false,
+    "criterion": "acc >= 0.75 AND o_ratio >= 1.5 AND shuffled_acc <= 0.50"
+  },
+  "P6": {
+    "correlation": -0.014080406248637987,
+    "abs_correlation": 0.014080406248637987,
+    "null_max_abs_corr": 0.03878543656762208,
+    "pass": true,
+    "criterion": "|corr| < 0.3 (geometric independence)"
+  },
+  "P9": {
+    "loo_accuracy": 0.9166666666666666,
+    "random_init_baseline_acc": 0.5833333333333334,
+    "lift_pp": 33.33333333333333,
+    "n_chars": 12,
+    "class_counts": {
+      "2": 7,
+      "1": 1,
+      "0": 4
+    },
+    "pass": false,
+    "criterion": "LOO acc >= 0.80 AND >= 40pp over random-init"
+  },
+  "P10": {
+    "a_bits_per_char_mean": 0.31610526132864214,
+    "b_bits_per_char_mean": 0.22998207945456348,
+    "a_minus_b": 0.08612318187407866,
+    "n_a_lines": 165,
+    "n_b_lines": 225,
+    "pass": true,
+    "criterion": "A bits/char <= B bits/char + 0.10"
+  }
+}
