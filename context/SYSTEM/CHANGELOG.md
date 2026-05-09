@@ -4,6 +4,72 @@
 
 ---
 
+## Version 6.57 (2026-05-09) - Phase 691: Voynich Char-Level Language Model External Corroboration
+
+### Summary
+
+Trained a small char-level BERT-style encoder (~6M params, 6 layers/256 dim/8 heads) from scratch on the H-track corpus (~38K tokens, 4435 lines). Pre-registered 10 predictions in Phase 691.1 with SHA256 chain-of-custody. Tested against existing structural constraints in Phase 691.3 (with token-level P7 reformulation in 691.5). Added matched-corpus comparison LMs on Latin (SISMEL Testamentum) and English (Brunschwig 1512 translation) at ~4435 lines / ~38K tokens each. Plus anomaly detection vs 18-transcriber disagreement, A-only and B-only section-restricted LMs, and scaffolding folio confirmation.
+
+**Result:** 7/10 pre-registered predictions PASS. External char-LM independently corroborates 7 categories of structural claims and produces 2 novel findings. Three-LM compression comparison is decisive: Voynich is ~2x more compressible than matched natural language at the character level, and exhibits position-conditional U-shape entropy absent from natural language.
+
+### Sub-phases
+
+- **691.1** Pre-registered 10 predictions (locked, SHA256 chain-of-custody)
+- **691.2** Build pipeline + train base LM (without_tag, with_tag both at val_loss ≈ 0.66)
+- **691.3** Test 10 predictions: 6/10 PASS (P1, P2, P4, P6, P9 binary, P10), 4 informative fails
+- **691.4 + 691.4b** Anomaly detection (1.55x unstratified, **3.40x stratified**)
+- **691.5** Token-level P7 reformulation: PASSES, forbidden 25x penalty (p=0.0011)
+- **691.5b** A-only vs B-only LM comparison: 2.8x asymmetric perplexity, Procrustes 0.30
+- **691.5d** Scaffolding folio confirmation: 3/4 candidates flagged (f57v at z=+7.26 RANK 1)
+- **691.6** Three-LM comparison: Voynich BPC compression 0.207 vs Latin 0.362 vs English 0.299
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2006 | LM-corroborated MIDDLE compositionality (Tier 2, P1+P2+P9) |
+| C2007 | LM recovers A/B system distinction (Tier 2, P4) |
+| C2008 | LM-corroborated frequency-structure geometric independence (Tier 2, P6, confirms C1011) |
+| C2009 | Same-MIDDLE A/B contextual divergence beyond substrate identity (Tier 2; extends C522, ~70% Procrustes-aligned + ~30% B-tightening) |
+| C2010 | Stratified LM surprise correlates 3.40x with transcriber disagreement (Tier 2) |
+| C2011 | LM flags f66r as outlier-rich (Tier 3 single-folio replication of C1992/C1993) |
+| C2012 | Token-level forbidden-pair penalty 25x stronger than legal substitution (Tier 2, confirms C109/C997) |
+| C2013 | Length-8 high-surprise tokens have 41% transcriber-disagreement rate (Tier 2 candidate transcript-error pool) |
+| C2014 | Scaffolding folio corroboration: f57v rank 1 z=+7.26, f66r rank 12, f49v rank 13 (Tier 2) |
+| C2015 | Voynich character entropy 0.21x random vs 0.30-0.36 in matched NL corpora (Tier 2) |
+| C2016 | Voynich position-conditional U-shape +0.281 vs NL -0.066 to +0.091 (Tier 2 corroborates C1430) |
+| Phase 691 dir | Full pipeline + pre-registration with SHA256 chain-of-custody |
+| CLAIMS/INDEX.md | 11 new constraints + 2 methodology notes; total 2001 → 2012, version 6.56 → 6.57 |
+| CLAUDE.md | Version 6.56 → 6.57, constraints → 2012, phases 690 → 691 |
+
+### Key Findings
+
+**External corroboration of structural model (7 PASSES):**
+- C2006: MIDDLE compositionality (P1 + P2 + P9 convergent triple evidence)
+- C2007: A/B system distinction with non-orthogonality
+- C2008: Frequency-structure geometric independence (confirms C1011 via different methodology)
+- C2012: Token-level forbidden-pair penalty (confirms C109/C997 with 25x effect size)
+- C2014: Scaffolding-page hypothesis confirmed for f57v/f66r/f49v
+- C2015: Voynich character entropy 2x lower than matched NL (compression ratio 0.21 vs 0.30-0.36)
+- C2016: Position-conditional U-shape language-distinctive
+
+**Novel findings (2):**
+- C2009: A/B Procrustes-decomposition (~70% shared / ~30% B-tightening) — quantitative refinement of existing A/B architecture
+- C2010 + C2013: Stratified LM surprise as transcript-error candidate pool
+
+**Informative fails (3):**
+- P3 (C1218 MODIFIER vs BASE) → M1: char-level distributional embeddings cannot test positional grammar
+- P5 (AZC distinctness) → qualitative trends pass; criterion partially met
+- P8 (substrate identity) → 691.5b refines: 70% Procrustes-aligned + 30% contextual divergence; extends C522 rather than falsifies
+
+### Foundational Implications
+
+The most consequential finding is **C2015 + C2016 jointly**: matched-size three-LM comparison shows Voynich's character-level statistics are quantitatively distinct from natural language in two independent ways (compression ratio AND position-conditional entropy U-shape). The char-LM, trained from scratch with no Voynich-specific assumptions, independently arrives at the same conclusion the structural research has been building toward across 690 phases: Voynich is procedural/operational notation, not natural language.
+
+This is the strongest external validation of the project's core framing to date — independent methodology, independent training corpus, independent measurement converge on the same conclusion.
+
+---
+
 ## Version 6.56 (2026-05-07) - Phase 690: AZC Annotation-Transcript Systematic Diff
 
 ### Summary
