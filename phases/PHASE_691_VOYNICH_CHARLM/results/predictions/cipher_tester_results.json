@@ -1,0 +1,67 @@
+{
+  "bax_2014": {
+    "name": "bax_2014",
+    "description": "Stephen Bax 2014 partial decoding (10 specific token identifications)",
+    "target_lang": "english",
+    "n_lines": 100,
+    "n_skipped": 0,
+    "voynich_mean_bpc": 0.884006460326377,
+    "decoded_mean_bpc": 5.540504441211042,
+    "target_baseline_bpc": 1.331958945124974,
+    "translated_tokens_pct": 0.4830917874396135,
+    "decoded_to_baseline_ratio": 4.15966607791443,
+    "verdict": "GIBBERISH"
+  },
+  "cheshire_2019": {
+    "name": "cheshire_2019",
+    "description": "Gerard Cheshire 2019 phonetic mapping to proto-Romance (approximation)",
+    "target_lang": "english",
+    "n_lines": 100,
+    "n_skipped": 0,
+    "voynich_mean_bpc": 0.884006460326377,
+    "decoded_mean_bpc": 5.546849175293528,
+    "target_baseline_bpc": 1.331958945124974,
+    "translated_tokens_pct": null,
+    "decoded_to_baseline_ratio": 4.164429538609452,
+    "verdict": "GIBBERISH"
+  },
+  "currier_like": {
+    "name": "currier_like",
+    "description": "Currier-style consonant cipher (illustrative test case)",
+    "target_lang": "english",
+    "n_lines": 100,
+    "n_skipped": 0,
+    "voynich_mean_bpc": 0.884006460326377,
+    "decoded_mean_bpc": 5.378249999163427,
+    "target_baseline_bpc": 1.331958945124974,
+    "translated_tokens_pct": null,
+    "decoded_to_baseline_ratio": 4.037849679112145,
+    "verdict": "GIBBERISH"
+  },
+  "random_control": {
+    "name": "random_control",
+    "description": "Random word substitution (negative control)",
+    "target_lang": "english",
+    "n_lines": 100,
+    "n_skipped": 0,
+    "voynich_mean_bpc": 0.884006460326377,
+    "decoded_mean_bpc": 8.43005607530215,
+    "target_baseline_bpc": 1.295287667315329,
+    "translated_tokens_pct": null,
+    "decoded_to_baseline_ratio": 6.50825008839516,
+    "verdict": "GIBBERISH"
+  },
+  "identity": {
+    "name": "identity",
+    "description": "Pass-through Voynich tokens (positive control / sanity check)",
+    "target_lang": "voynich",
+    "n_lines": 100,
+    "n_skipped": 0,
+    "voynich_mean_bpc": 0.884006460326377,
+    "decoded_mean_bpc": 0.884006460326377,
+    "target_baseline_bpc": 0.89,
+    "translated_tokens_pct": null,
+    "decoded_to_baseline_ratio": 0.9932656857599741,
+    "verdict": "PLAUSIBLE"
+  }
+}
