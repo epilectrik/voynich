@@ -1,0 +1,139 @@
+{
+  "n_confirmed_pairs": 9,
+  "n_candidate_chapters": 45,
+  "top1_recovery": 0,
+  "top3_recovery": 1,
+  "top5_recovery": 1,
+  "verdict": "NO_SIGNAL",
+  "permutation_null_mean": 0.58,
+  "permutation_null_max": 3,
+  "permutation_p_value": 1.0,
+  "detail": [
+    {
+      "folio": "f84r",
+      "true_chapter": 14,
+      "predicted": 1,
+      "true_rank": 45,
+      "pred_distance": 2.100391279808563,
+      "top5_chapters": [
+        1,
+        44,
+        23,
+        34,
+        16
+      ]
+    },
+    {
+      "folio": "f77v",
+      "true_chapter": 27,
+      "predicted": 41,
+      "true_rank": 24,
+      "pred_distance": 1.6359659430698104,
+      "top5_chapters": [
+        41,
+        31,
+        9,
+        44,
+        16
+      ]
+    },
+    {
+      "folio": "f75r",
+      "true_chapter": 19,
+      "predicted": 41,
+      "true_rank": 31,
+      "pred_distance": 1.6795730142580807,
+      "top5_chapters": [
+        41,
+        24,
+        44,
+        31,
+        16
+      ]
+    },
+    {
+      "folio": "f76r",
+      "true_chapter": 18,
+      "predicted": 10,
+      "true_rank": 35,
+      "pred_distance": 1.5142684780201678,
+      "top5_chapters": [
+        10,
+        19,
+        16,
+        28,
+        32
+      ]
+    },
+    {
+      "folio": "f83r",
+      "true_chapter": 9,
+      "predicted": 27,
+      "true_rank": 17,
+      "pred_distance": 1.339160698979913,
+      "top5_chapters": [
+        27,
+        25,
+        26,
+        24,
+        16
+      ]
+    },
+    {
+      "folio": "f84v",
+      "true_chapter": 24,
+      "predicted": 41,
+      "true_rank": 3,
+      "pred_distance": 1.078953205297335,
+      "top5_chapters": [
+        41,
+        16,
+        24,
+        10,
+        44
+      ]
+    },
+    {
+      "folio": "f108r",
+      "true_chapter": 16,
+      "predicted": 34,
+      "true_rank": 14,
+      "pred_distance": 1.723076063017093,
+      "top5_chapters": [
+        34,
+        1,
+        44,
+        23,
+        11
+      ]
+    },
+    {
+      "folio": "f112r",
+      "true_chapter": 11,
+      "predicted": 18,
+      "true_rank": 41,
+      "pred_distance": 2.3124173703065938,
+      "top5_chapters": [
+        18,
+        34,
+        8,
+        45,
+        44
+      ]
+    },
+    {
+      "folio": "f81v",
+      "true_chapter": 18,
+      "predicted": 12,
+      "true_rank": 12,
+      "pred_distance": 2.3415653120107325,
+      "top5_chapters": [
+        12,
+        11,
+        1,
+        23,
+        17
+      ]
+    }
+  ]
+}
