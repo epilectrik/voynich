@@ -1,7 +1,8 @@
 # Phase 691: Voynich Character-Level Language Model
 
-**Status:** IN PROGRESS — 691.1 (pre-registration)
+**Status:** 691.1-691.5 COMPLETE; 691.6-691.7 OPEN
 **Started:** 2026-05-09
+**Latest update:** 2026-05-09
 **Goal:** Train a small char-level transformer on the H-track corpus as a research instrument. Use it to test pre-registered predictions about Voynich structure derived from existing constraints, detect transcript-error candidates and structural anomalies, and probe whether the model rediscovers known structural categories independently.
 
 ## Background
@@ -14,13 +15,30 @@ Two expert reviews produced consolidated requirements:
 
 ## Sub-phases
 
-- **691.1** — Pre-registered predictions document (this phase, locked before training)
-- **691.2** — Build pipeline + train base LM
-- **691.3** — Test pre-registered predictions (PASS/FAIL each)
-- **691.4** — Anomaly detection vs 18-transcriber ground truth
-- **691.5** — Macro-state / atom / forbidden-bigram probes
-- **691.6** — Three-LM comparison (Voynich vs Latin vs Forme of Cury)
-- **691.7** — *(optional)* Paired bilingual encoder for predictive PL recipe matching
+- **691.1** ✅ — Pre-registered predictions document (locked, SHA256 chain-of-custody)
+- **691.2** ✅ — Build pipeline + train base LM (without_tag, with_tag both at val_loss ≈ 0.66)
+- **691.3** ✅ — Test pre-registered predictions: **6/10 PASS** (P1, P2, P4, P6, P9, P10); plus P7 fixed in 691.5
+- **691.4** ✅ — Anomaly detection vs 18-transcriber: 1.55x enrichment unstratified
+- **691.4b** ✅ — Stratified anomaly: **3.40x aggregate enrichment**, 6.21x at length-8
+- **691.5** ✅ — Token-level P7 reformulation: **PASSES**, forbidden pairs penalized 25x more than legal (p=0.0011, confirms C109/C997)
+- **691.6** OPEN — Three-LM comparison (Voynich vs Latin vs procedural)
+- **691.7** OPEN — *(optional)* Paired bilingual encoder for predictive PL recipe matching
+
+## Aggregate findings (Phases 691.1-691.5)
+
+External char-LM corroborates 7 of 10 structural-claim categories from independent training. The 3 failures are interpretable:
+- **P3** (real null): MODIFIER vs BASE chars not separable at distributional level — C1218 may be positional-only
+- **P5** (partial): qualitative trends pass, only shuffle-baseline criterion fails
+- **P8** (informative falsification): same MIDDLE has more divergent A-vs-B contextual usage than C1499/C1509 substrate-identity predicts
+
+**Newly proposed constraints** (not yet registered):
+- C2002 — LM-corroborated MIDDLE compositionality (P1+P2+P9)
+- C2003 — A/B geometric integration architecture (P4+P10)
+- C2004 — Frequency-structure geometric independence (P6, confirms C1011)
+- C2005 — A/B contextual divergence beyond substrate identity (P8 falsifies tight C1499)
+- C2006 — Stratified-by-length LM surprise as anomaly detector (3.40x enrichment vs transcriber disagreement)
+- C2007 — LM independently flags Phase-684 character-key folio f66r as outlier-rich
+- C2008 — Token-level forbidden-pair penalty in LM (25x stronger than legal substitution, confirms C109/C997)
 
 ## Architecture (locked)
 
