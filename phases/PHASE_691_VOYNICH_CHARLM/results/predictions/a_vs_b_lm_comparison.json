@@ -1,0 +1,192 @@
+{
+  "a_lm_val_loss": 0.7904170936262104,
+  "b_lm_val_loss": 0.7223695734495758,
+  "cross_system_perplexity": {
+    "section_A_lines": {
+      "n": 165,
+      "mean_logprob_under_A_LM": -0.7046838027496847,
+      "mean_logprob_under_B_LM": -0.8283521475915858,
+      "A_advantage_over_B": 0.12366834484190116,
+      "native_LM_better": true
+    },
+    "section_B_lines": {
+      "n": 200,
+      "mean_logprob_under_A_LM": -0.9359578235843605,
+      "mean_logprob_under_B_LM": -0.589425033629691,
+      "A_advantage_over_B": -0.34653278995466935,
+      "native_LM_better": true
+    }
+  },
+  "procrustes": {
+    "n_shared_tokens": 369,
+    "procrustes_residual_real": 0.384132981300354,
+    "procrustes_residual_shuffle_mean": 1.2931091165542603,
+    "ratio_real_to_shuffle": 0.29706153671234703
+  },
+  "forbidden_pair": {
+    "A_LM": {
+      "label": "A_LM",
+      "mean_forbidden_delta": -0.03113333745969838,
+      "n_substitutions": 147,
+      "per_pair": [
+        {
+          "pair": "shey -> aiin",
+          "mean_delta": -0.005452397696480327,
+          "n": 10
+        },
+        {
+          "pair": "shey -> al",
+          "mean_delta": -0.0659752863042766,
+          "n": 10
+        },
+        {
+          "pair": "shey -> c",
+          "mean_delta": -0.10901092007704967,
+          "n": 10
+        },
+        {
+          "pair": "chol -> r",
+          "mean_delta": -0.051265139228409605,
+          "n": 10
+        },
+        {
+          "pair": "chedy -> ee",
+          "mean_delta": -0.174791202675292,
+          "n": 10
+        },
+        {
+          "pair": "dy -> aiin",
+          "mean_delta": 0.03672605150816856,
+          "n": 10
+        },
+        {
+          "pair": "dy -> chey",
+          "mean_delta": 0.027658573263757025,
+          "n": 10
+        },
+        {
+          "pair": "l -> chol",
+          "mean_delta": 0.017643358203516944,
+          "n": 10
+        },
+        {
+          "pair": "or -> dal",
+          "mean_delta": -0.010314002915645082,
+          "n": 10
+        },
+        {
+          "pair": "chey -> chedy",
+          "mean_delta": -0.0701624510101517,
+          "n": 10
+        },
+        {
+          "pair": "chey -> shedy",
+          "mean_delta": -0.10614595337570285,
+          "n": 10
+        },
+        {
+          "pair": "ar -> dal",
+          "mean_delta": 0.07562406266826124,
+          "n": 10
+        },
+        {
+          "pair": "c -> ee",
+          "mean_delta": -0.06444273025555709,
+          "n": 7
+        },
+        {
+          "pair": "shedy -> aiin",
+          "mean_delta": 0.06929878350800445,
+          "n": 10
+        },
+        {
+          "pair": "shedy -> o",
+          "mean_delta": -0.04638362534737654,
+          "n": 10
+        }
+      ]
+    },
+    "B_LM": {
+      "label": "B_LM",
+      "mean_forbidden_delta": -0.040396456765951154,
+      "n_substitutions": 147,
+      "per_pair": [
+        {
+          "pair": "shey -> aiin",
+          "mean_delta": -0.044263287931465334,
+          "n": 10
+        },
+        {
+          "pair": "shey -> al",
+          "mean_delta": -0.08920267566837745,
+          "n": 10
+        },
+        {
+          "pair": "shey -> c",
+          "mean_delta": -0.10397272237669744,
+          "n": 10
+        },
+        {
+          "pair": "chol -> r",
+          "mean_delta": -0.040519853209228074,
+          "n": 10
+        },
+        {
+          "pair": "chedy -> ee",
+          "mean_delta": -0.21206790963366337,
+          "n": 10
+        },
+        {
+          "pair": "dy -> aiin",
+          "mean_delta": 0.043502951923167554,
+          "n": 10
+        },
+        {
+          "pair": "dy -> chey",
+          "mean_delta": 0.023223457664001003,
+          "n": 10
+        },
+        {
+          "pair": "l -> chol",
+          "mean_delta": -0.03254773518207278,
+          "n": 10
+        },
+        {
+          "pair": "or -> dal",
+          "mean_delta": -0.1111113210516625,
+          "n": 10
+        },
+        {
+          "pair": "chey -> chedy",
+          "mean_delta": 0.02992876063756833,
+          "n": 10
+        },
+        {
+          "pair": "chey -> shedy",
+          "mean_delta": 0.022292328236066992,
+          "n": 10
+        },
+        {
+          "pair": "ar -> dal",
+          "mean_delta": 0.01634329567564523,
+          "n": 10
+        },
+        {
+          "pair": "c -> ee",
+          "mean_delta": -0.037420970584351135,
+          "n": 7
+        },
+        {
+          "pair": "shedy -> aiin",
+          "mean_delta": 0.015732998126553127,
+          "n": 10
+        },
+        {
+          "pair": "shedy -> o",
+          "mean_delta": -0.08497152226027135,
+          "n": 10
+        }
+      ]
+    }
+  }
+}

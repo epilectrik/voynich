@@ -149,11 +149,15 @@ def main():
     parser.add_argument('--weight-decay', type=float, default=0.01)
     parser.add_argument('--warmup-steps', type=int, default=1000)
     parser.add_argument('--device', default='cuda:0')
+    parser.add_argument('--data-subdir', default='',
+                        help='If set, use PHASE_DIR/data/<subdir>/corpus_*.jsonl')
     parser.add_argument('--output-dir', type=Path,
                         default=PHASE_DIR / 'results' / 'training')
+    parser.add_argument('--run-suffix', default='',
+                        help='Append to output dir name (e.g., "_sectionA")')
     args = parser.parse_args()
 
-    out_dir = args.output_dir / f'{args.variant}_seed{args.seed}'
+    out_dir = args.output_dir / f'{args.variant}_seed{args.seed}{args.run_suffix}'
     out_dir.mkdir(parents=True, exist_ok=True)
     ckpt_dir = out_dir / 'checkpoints'
     ckpt_dir.mkdir(exist_ok=True)
@@ -167,8 +171,11 @@ def main():
 
     # Datasets
     with_tag = (args.variant == 'with_tag')
-    train_ds = MLMDataset(PHASE_DIR / 'data' / 'corpus_train.jsonl', tokenizer, with_tag=with_tag)
-    val_ds = MLMDataset(PHASE_DIR / 'data' / 'corpus_val.jsonl', tokenizer, with_tag=with_tag)
+    data_dir = PHASE_DIR / 'data'
+    if args.data_subdir:
+        data_dir = data_dir / args.data_subdir
+    train_ds = MLMDataset(data_dir / 'corpus_train.jsonl', tokenizer, with_tag=with_tag)
+    val_ds = MLMDataset(data_dir / 'corpus_val.jsonl', tokenizer, with_tag=with_tag)
     print(f"Train: {len(train_ds)}, Val: {len(val_ds)}")
 
     train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True,
