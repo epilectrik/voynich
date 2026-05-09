@@ -1,0 +1,521 @@
+{
+  "method": "folio_embedding_similarity_to_confirmed_matches",
+  "n_folios_with_embeddings": 225,
+  "n_confirmed_matches": 9,
+  "candidates_per_confirmed": {
+    "f84r": [
+      {
+        "folio": "f78r",
+        "similarity": 0.9920599962137056
+      },
+      {
+        "folio": "f81r",
+        "similarity": 0.9908652272077505
+      },
+      {
+        "folio": "f75v",
+        "similarity": 0.9879296277336513
+      }
+    ],
+    "f77v": [
+      {
+        "folio": "f77r",
+        "similarity": 0.9896490339333816
+      },
+      {
+        "folio": "f81r",
+        "similarity": 0.9888564077033857
+      }
+    ],
+    "f75r": [
+      {
+        "folio": "f75v",
+        "similarity": 0.9944916048557153
+      },
+      {
+        "folio": "f78r",
+        "similarity": 0.9943916827560795
+      },
+      {
+        "folio": "f81r",
+        "similarity": 0.9904038442629393
+      }
+    ],
+    "f76r": [
+      {
+        "folio": "f103v",
+        "similarity": 0.9948296482597168
+      },
+      {
+        "folio": "f79r",
+        "similarity": 0.9897524323859933
+      },
+      {
+        "folio": "f115v",
+        "similarity": 0.9886716158593811
+      }
+    ],
+    "f83r": [
+      {
+        "folio": "f76v",
+        "similarity": 0.9926101684998344
+      },
+      {
+        "folio": "f103r",
+        "similarity": 0.9875618510000483
+      },
+      {
+        "folio": "f77r",
+        "similarity": 0.9833885481961772
+      },
+      {
+        "folio": "f115v",
+        "similarity": 0.981906674429305
+      },
+      {
+        "folio": "f103v",
+        "similarity": 0.9812314560531306
+      }
+    ],
+    "f84v": [
+      {
+        "folio": "f78r",
+        "similarity": 0.9923952472625079
+      },
+      {
+        "folio": "f79v",
+        "similarity": 0.9894314809979644
+      },
+      {
+        "folio": "f81r",
+        "similarity": 0.9860237564687921
+      }
+    ],
+    "f108r": [
+      {
+        "folio": "f103r",
+        "similarity": 0.9914089702866299
+      },
+      {
+        "folio": "f108v",
+        "similarity": 0.990989689126285
+      },
+      {
+        "folio": "f111r",
+        "similarity": 0.9888219885234779
+      },
+      {
+        "folio": "f79v",
+        "similarity": 0.9872988150446764
+      },
+      {
+        "folio": "f103v",
+        "similarity": 0.984596911235707
+      },
+      {
+        "folio": "f76v",
+        "similarity": 0.9837387411734093
+      }
+    ],
+    "f112r": [
+      {
+        "folio": "f105r",
+        "similarity": 0.9887700154086347
+      },
+      {
+        "folio": "f79v",
+        "similarity": 0.9886612018452972
+      },
+      {
+        "folio": "f112v",
+        "similarity": 0.9885213845356853
+      },
+      {
+        "folio": "f103v",
+        "similarity": 0.9862406894687445
+      },
+      {
+        "folio": "f31v",
+        "similarity": 0.9839112164961441
+      },
+      {
+        "folio": "f94v",
+        "similarity": 0.983547487152258
+      },
+      {
+        "folio": "f48r",
+        "similarity": 0.9831993647456558
+      },
+      {
+        "folio": "f104r",
+        "similarity": 0.9831885937978999
+      }
+    ],
+    "f81v": [
+      {
+        "folio": "f78r",
+        "similarity": 0.9930564495728318
+      },
+      {
+        "folio": "f81r",
+        "similarity": 0.9922326923191104
+      },
+      {
+        "folio": "f75v",
+        "similarity": 0.9919007482743647
+      }
+    ]
+  },
+  "top_candidates_per_unmatched": [
+    {
+      "folio": "f103v",
+      "similarity": 0.9948296482597168,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 449
+    },
+    {
+      "folio": "f75v",
+      "similarity": 0.9944916048557153,
+      "closest_confirmed": "f75r",
+      "hint_chapter": 19,
+      "n_tokens": 370
+    },
+    {
+      "folio": "f78r",
+      "similarity": 0.9943916827560795,
+      "closest_confirmed": "f75r",
+      "hint_chapter": 19,
+      "n_tokens": 294
+    },
+    {
+      "folio": "f76v",
+      "similarity": 0.9926101684998344,
+      "closest_confirmed": "f83r",
+      "hint_chapter": 9,
+      "n_tokens": 400
+    },
+    {
+      "folio": "f81r",
+      "similarity": 0.9922326923191104,
+      "closest_confirmed": "f81v",
+      "hint_chapter": 18,
+      "n_tokens": 207
+    },
+    {
+      "folio": "f103r",
+      "similarity": 0.9914089702866299,
+      "closest_confirmed": "f108r",
+      "hint_chapter": 16,
+      "n_tokens": 522
+    },
+    {
+      "folio": "f108v",
+      "similarity": 0.990989689126285,
+      "closest_confirmed": "f108r",
+      "hint_chapter": 16,
+      "n_tokens": 570
+    },
+    {
+      "folio": "f79r",
+      "similarity": 0.9897524323859933,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 389
+    },
+    {
+      "folio": "f77r",
+      "similarity": 0.9896490339333816,
+      "closest_confirmed": "f77v",
+      "hint_chapter": 27,
+      "n_tokens": 325
+    },
+    {
+      "folio": "f79v",
+      "similarity": 0.9894314809979644,
+      "closest_confirmed": "f84v",
+      "hint_chapter": 24,
+      "n_tokens": 354
+    },
+    {
+      "folio": "f111r",
+      "similarity": 0.9888219885234779,
+      "closest_confirmed": "f108r",
+      "hint_chapter": 16,
+      "n_tokens": 614
+    },
+    {
+      "folio": "f105r",
+      "similarity": 0.9887700154086347,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 370
+    },
+    {
+      "folio": "f115v",
+      "similarity": 0.9886716158593811,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 399
+    },
+    {
+      "folio": "f112v",
+      "similarity": 0.9885213845356853,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 415
+    },
+    {
+      "folio": "f80v",
+      "similarity": 0.9856328682145559,
+      "closest_confirmed": "f81v",
+      "hint_chapter": 18,
+      "n_tokens": 378
+    },
+    {
+      "folio": "f31v",
+      "similarity": 0.9839112164961441,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 108
+    },
+    {
+      "folio": "f94v",
+      "similarity": 0.983547487152258,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 101
+    },
+    {
+      "folio": "f115r",
+      "similarity": 0.9832895745127931,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 444
+    },
+    {
+      "folio": "f48r",
+      "similarity": 0.9831993647456558,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 89
+    },
+    {
+      "folio": "f104r",
+      "similarity": 0.9831885937978999,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 438
+    },
+    {
+      "folio": "f41v",
+      "similarity": 0.9828841542736513,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 68
+    },
+    {
+      "folio": "f50v",
+      "similarity": 0.980509064930775,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 98
+    },
+    {
+      "folio": "f104v",
+      "similarity": 0.9800370598336947,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 458
+    },
+    {
+      "folio": "f106r",
+      "similarity": 0.9795200849105341,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 421
+    },
+    {
+      "folio": "f95r1",
+      "similarity": 0.9785069568592724,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 103
+    },
+    {
+      "folio": "f43v",
+      "similarity": 0.9761919152951889,
+      "closest_confirmed": "f84r",
+      "hint_chapter": 14,
+      "n_tokens": 153
+    },
+    {
+      "folio": "f34v",
+      "similarity": 0.9760701107698566,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 115
+    },
+    {
+      "folio": "f48v",
+      "similarity": 0.9757303260754364,
+      "closest_confirmed": "f84r",
+      "hint_chapter": 14,
+      "n_tokens": 126
+    },
+    {
+      "folio": "f95v1",
+      "similarity": 0.9755427884155956,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 117
+    },
+    {
+      "folio": "f106v",
+      "similarity": 0.9751075587239866,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 449
+    },
+    {
+      "folio": "f31r",
+      "similarity": 0.974568564125946,
+      "closest_confirmed": "f108r",
+      "hint_chapter": 16,
+      "n_tokens": 100
+    },
+    {
+      "folio": "f113r",
+      "similarity": 0.973548423153906,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 518
+    },
+    {
+      "folio": "f114v",
+      "similarity": 0.9730500637660814,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 362
+    },
+    {
+      "folio": "f34r",
+      "similarity": 0.9726814145191894,
+      "closest_confirmed": "f81v",
+      "hint_chapter": 18,
+      "n_tokens": 144
+    },
+    {
+      "folio": "f113v",
+      "similarity": 0.972421387181776,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 479
+    },
+    {
+      "folio": "f40v",
+      "similarity": 0.9716342314770554,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 106
+    },
+    {
+      "folio": "f95r2",
+      "similarity": 0.969853521864223,
+      "closest_confirmed": "f81v",
+      "hint_chapter": 18,
+      "n_tokens": 79
+    },
+    {
+      "folio": "f86v3",
+      "similarity": 0.96944777550773,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 277
+    },
+    {
+      "folio": "f85r1",
+      "similarity": 0.967781184651201,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 333
+    },
+    {
+      "folio": "f89r2",
+      "similarity": 0.9666274604023244,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 245
+    },
+    {
+      "folio": "f46v",
+      "similarity": 0.9666269227278604,
+      "closest_confirmed": "f84r",
+      "hint_chapter": 14,
+      "n_tokens": 111
+    },
+    {
+      "folio": "f66r",
+      "similarity": 0.966337072939122,
+      "closest_confirmed": "f75r",
+      "hint_chapter": 19,
+      "n_tokens": 344
+    },
+    {
+      "folio": "f114r",
+      "similarity": 0.9650170356871632,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 447
+    },
+    {
+      "folio": "f85r2",
+      "similarity": 0.9648272884695448,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 154
+    },
+    {
+      "folio": "f88v",
+      "similarity": 0.9644266474211807,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 146
+    },
+    {
+      "folio": "f107v",
+      "similarity": 0.9642829426138066,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 455
+    },
+    {
+      "folio": "f43r",
+      "similarity": 0.9636803160773004,
+      "closest_confirmed": "f84r",
+      "hint_chapter": 14,
+      "n_tokens": 150
+    },
+    {
+      "folio": "f101v2",
+      "similarity": 0.963376892848846,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 192
+    },
+    {
+      "folio": "f99r",
+      "similarity": 0.9626172212274728,
+      "closest_confirmed": "f112r",
+      "hint_chapter": 11,
+      "n_tokens": 197
+    },
+    {
+      "folio": "f39r",
+      "similarity": 0.9621448313582301,
+      "closest_confirmed": "f76r",
+      "hint_chapter": 18,
+      "n_tokens": 154
+    }
+  ]
+}
