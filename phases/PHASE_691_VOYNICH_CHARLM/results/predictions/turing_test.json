@@ -1,0 +1,10 @@
+{
+  "real_bpc_mean": 0.9056921130576547,
+  "synthetic_bpc_mean": 0.45280724985642395,
+  "real_bpc_std": 0.4264557084303673,
+  "synthetic_bpc_std": 0.20555183661918816,
+  "mannwhitney_p": 1.7769445420432623e-39,
+  "best_classifier_accuracy": 0.825,
+  "best_threshold": 0.5815658680779743,
+  "distinguishable": true
+}
