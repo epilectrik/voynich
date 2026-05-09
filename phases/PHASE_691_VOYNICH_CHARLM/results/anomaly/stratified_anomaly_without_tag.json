@@ -1,0 +1,665 @@
+{
+  "method": "within-length top-1% surprise + transcriber disagreement overlap",
+  "by_length": {
+    "1": {
+      "n": 696,
+      "n_top": 6,
+      "overlap_rate": 0.0,
+      "baseline_rate": 0.09051724137931035,
+      "enrichment": 0.0,
+      "top_examples": [
+        {
+          "token": "c",
+          "folio": "f66r",
+          "line": "22",
+          "surprise": 7.993230819702148,
+          "n_disagree": 1
+        },
+        {
+          "token": "c",
+          "folio": "f57v",
+          "line": "1",
+          "surprise": 7.555592060089111,
+          "n_disagree": 2
+        },
+        {
+          "token": "x",
+          "folio": "f66r",
+          "line": "32",
+          "surprise": 7.2802839279174805,
+          "n_disagree": 0
+        },
+        {
+          "token": "x",
+          "folio": "f57v",
+          "line": "1",
+          "surprise": 7.257670879364014,
+          "n_disagree": 2
+        },
+        {
+          "token": "x",
+          "folio": "f66r",
+          "line": "24",
+          "surprise": 7.210503578186035,
+          "n_disagree": 0
+        }
+      ]
+    },
+    "2": {
+      "n": 2216,
+      "n_top": 22,
+      "overlap_rate": 0.09090909090909091,
+      "baseline_rate": 0.04648014440433213,
+      "enrichment": 1.9558693733451016,
+      "top_examples": [
+        {
+          "token": "el",
+          "folio": "f8r",
+          "line": "18",
+          "surprise": 5.641590595245361,
+          "n_disagree": 1
+        },
+        {
+          "token": "oy",
+          "folio": "f112v",
+          "line": "13",
+          "surprise": 5.495373725891113,
+          "n_disagree": 0
+        },
+        {
+          "token": "le",
+          "folio": "f113r",
+          "line": "9",
+          "surprise": 5.474782943725586,
+          "n_disagree": 3
+        },
+        {
+          "token": "rn",
+          "folio": "f35r",
+          "line": "9",
+          "surprise": 5.470509052276611,
+          "n_disagree": 0
+        },
+        {
+          "token": "dr",
+          "folio": "f48r",
+          "line": "8",
+          "surprise": 5.138675212860107,
+          "n_disagree": 0
+        }
+      ]
+    },
+    "3": {
+      "n": 3483,
+      "n_top": 34,
+      "overlap_rate": 0.11764705882352941,
+      "baseline_rate": 0.0511053689348263,
+      "enrichment": 2.302048909451421,
+      "top_examples": [
+        {
+          "token": "ska",
+          "folio": "f22r",
+          "line": "7",
+          "surprise": 5.23174524307251,
+          "n_disagree": 2
+        },
+        {
+          "token": "dgs",
+          "folio": "f70r2",
+          "line": "1",
+          "surprise": 4.723414460817973,
+          "n_disagree": 2
+        },
+        {
+          "token": "sls",
+          "folio": "f77r",
+          "line": "37",
+          "surprise": 4.705414215723674,
+          "n_disagree": 1
+        },
+        {
+          "token": "odr",
+          "folio": "f106v",
+          "line": "37",
+          "surprise": 4.55051604906718,
+          "n_disagree": 0
+        },
+        {
+          "token": "lgl",
+          "folio": "f82v",
+          "line": "20",
+          "surprise": 4.337193608283997,
+          "n_disagree": 3
+        }
+      ]
+    },
+    "4": {
+      "n": 6709,
+      "n_top": 67,
+      "overlap_rate": 0.16417910447761194,
+      "baseline_rate": 0.047995230287673274,
+      "enrichment": 3.4207379252804304,
+      "top_examples": [
+        {
+          "token": "lmyl",
+          "folio": "f84r",
+          "line": "1",
+          "surprise": 4.659826695919037,
+          "n_disagree": 4
+        },
+        {
+          "token": "osih",
+          "folio": "f113v",
+          "line": "28",
+          "surprise": 4.508646458387375,
+          "n_disagree": 2
+        },
+        {
+          "token": "diil",
+          "folio": "f23r",
+          "line": "8",
+          "surprise": 4.317959406413138,
+          "n_disagree": 2
+        },
+        {
+          "token": "ctos",
+          "folio": "f29v",
+          "line": "4",
+          "surprise": 4.213412344455719,
+          "n_disagree": 2
+        },
+        {
+          "token": "ckey",
+          "folio": "f99r",
+          "line": "9",
+          "surprise": 4.199514176696539,
+          "n_disagree": 1
+        }
+      ]
+    },
+    "5": {
+      "n": 9457,
+      "n_top": 94,
+      "overlap_rate": 0.20212765957446807,
+      "baseline_rate": 0.04293116210214656,
+      "enrichment": 4.708180484225972,
+      "top_examples": [
+        {
+          "token": "ykchy",
+          "folio": "f70r1",
+          "line": "2",
+          "surprise": 4.103417491912841,
+          "n_disagree": 2
+        },
+        {
+          "token": "dario",
+          "folio": "f50r",
+          "line": "10",
+          "surprise": 3.834136055409908,
+          "n_disagree": 2
+        },
+        {
+          "token": "oeksa",
+          "folio": "f99r",
+          "line": "12",
+          "surprise": 3.549938702583313,
+          "n_disagree": 0
+        },
+        {
+          "token": "kccky",
+          "folio": "f13r",
+          "line": "8",
+          "surprise": 3.5406931802630424,
+          "n_disagree": 2
+        },
+        {
+          "token": "oriid",
+          "folio": "f68r2",
+          "line": "4",
+          "surprise": 3.5225400924682617,
+          "n_disagree": 3
+        }
+      ]
+    },
+    "6": {
+      "n": 7444,
+      "n_top": 74,
+      "overlap_rate": 0.0945945945945946,
+      "baseline_rate": 0.038420204191295,
+      "enrichment": 2.4621054621054625,
+      "top_examples": [
+        {
+          "token": "kchrrr",
+          "folio": "f27v",
+          "line": "6",
+          "surprise": 3.895986016994963,
+          "n_disagree": 1
+        },
+        {
+          "token": "skekyd",
+          "folio": "f102r2",
+          "line": "7",
+          "surprise": 3.751450459162394,
+          "n_disagree": 1
+        },
+        {
+          "token": "kchdpy",
+          "folio": "f116r",
+          "line": "1",
+          "surprise": 3.4724627382432423,
+          "n_disagree": 0
+        },
+        {
+          "token": "qyoeey",
+          "folio": "f102r2",
+          "line": "12",
+          "surprise": 3.2078922415773072,
+          "n_disagree": 0
+        },
+        {
+          "token": "otcsdo",
+          "folio": "f68r1",
+          "line": "29",
+          "surprise": 3.1980041998128095,
+          "n_disagree": 2
+        }
+      ]
+    },
+    "7": {
+      "n": 4413,
+      "n_top": 44,
+      "overlap_rate": 0.20454545454545456,
+      "baseline_rate": 0.050532517561749375,
+      "enrichment": 4.0477986139421125,
+      "top_examples": [
+        {
+          "token": "doeoeas",
+          "folio": "f102r1",
+          "line": "11",
+          "surprise": 3.7722394466400146,
+          "n_disagree": 2
+        },
+        {
+          "token": "oloesdr",
+          "folio": "f67v1",
+          "line": "2",
+          "surprise": 3.76831077677863,
+          "n_disagree": 2
+        },
+        {
+          "token": "otycoyl",
+          "folio": "f72v2",
+          "line": "1",
+          "surprise": 3.6501697631818906,
+          "n_disagree": 1
+        },
+        {
+          "token": "cfarasr",
+          "folio": "f24v",
+          "line": "6",
+          "surprise": 3.545376241207123,
+          "n_disagree": 2
+        },
+        {
+          "token": "ataseos",
+          "folio": "f72v2",
+          "line": "1",
+          "surprise": 2.9316247361046925,
+          "n_disagree": 2
+        }
+      ]
+    },
+    "8": {
+      "n": 1749,
+      "n_top": 17,
+      "overlap_rate": 0.4117647058823529,
+      "baseline_rate": 0.06632361349342482,
+      "enrichment": 6.20841784989858,
+      "top_examples": [
+        {
+          "token": "oleoeder",
+          "folio": "f77v",
+          "line": "3",
+          "surprise": 4.7421446708031,
+          "n_disagree": 3
+        },
+        {
+          "token": "todasihx",
+          "folio": "f108r",
+          "line": "1",
+          "surprise": 3.7125353198498487,
+          "n_disagree": 2
+        },
+        {
+          "token": "oinysarx",
+          "folio": "f106v",
+          "line": "30",
+          "surprise": 3.4479064643383026,
+          "n_disagree": 3
+        },
+        {
+          "token": "chfaikch",
+          "folio": "f73v",
+          "line": "1",
+          "surprise": 2.960487293137703,
+          "n_disagree": 1
+        },
+        {
+          "token": "qotddyar",
+          "folio": "f76r",
+          "line": "2",
+          "surprise": 2.7534312775242142,
+          "n_disagree": 2
+        }
+      ]
+    },
+    "9": {
+      "n": 651,
+      "n_top": 6,
+      "overlap_rate": 0.0,
+      "baseline_rate": 0.06912442396313365,
+      "enrichment": 0.0,
+      "top_examples": [
+        {
+          "token": "ytchcseey",
+          "folio": "f86v3",
+          "line": "3",
+          "surprise": 2.4450309516655073,
+          "n_disagree": 1
+        },
+        {
+          "token": "ofyskydal",
+          "folio": "f88r",
+          "line": "1",
+          "surprise": 2.1828350590334997,
+          "n_disagree": 1
+        },
+        {
+          "token": "okolraiin",
+          "folio": "f72v2",
+          "line": "1",
+          "surprise": 2.1503978901439242,
+          "n_disagree": 1
+        },
+        {
+          "token": "skaiiodar",
+          "folio": "f6r",
+          "line": "9",
+          "surprise": 2.0619687555719994,
+          "n_disagree": 0
+        },
+        {
+          "token": "oyteiedar",
+          "folio": "f72v3",
+          "line": "1",
+          "surprise": 2.050516701406903,
+          "n_disagree": 1
+        }
+      ]
+    },
+    "10": {
+      "n": 192,
+      "n_top": 1,
+      "overlap_rate": 0.0,
+      "baseline_rate": 0.08854166666666667,
+      "enrichment": 0.0,
+      "top_examples": [
+        {
+          "token": "otasodlory",
+          "folio": "f78r",
+          "line": "5",
+          "surprise": 2.10396213196218,
+          "n_disagree": 2
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "total_top_tokens": 365,
+    "overall_overlap_rate": 0.16164383561643836,
+    "overall_baseline_rate": 0.047527695217508784,
+    "enrichment": 3.401045114362924
+  },
+  "top_30_excluding_length_1": [
+    {
+      "token": "el",
+      "L": 2,
+      "folio": "f8r",
+      "line": "18",
+      "surprise": 5.641590595245361,
+      "n_disagree": 1
+    },
+    {
+      "token": "oy",
+      "L": 2,
+      "folio": "f112v",
+      "line": "13",
+      "surprise": 5.495373725891113,
+      "n_disagree": 0
+    },
+    {
+      "token": "le",
+      "L": 2,
+      "folio": "f113r",
+      "line": "9",
+      "surprise": 5.474782943725586,
+      "n_disagree": 3
+    },
+    {
+      "token": "rn",
+      "L": 2,
+      "folio": "f35r",
+      "line": "9",
+      "surprise": 5.470509052276611,
+      "n_disagree": 0
+    },
+    {
+      "token": "ska",
+      "L": 3,
+      "folio": "f22r",
+      "line": "7",
+      "surprise": 5.23174524307251,
+      "n_disagree": 2
+    },
+    {
+      "token": "dr",
+      "L": 2,
+      "folio": "f48r",
+      "line": "8",
+      "surprise": 5.138675212860107,
+      "n_disagree": 0
+    },
+    {
+      "token": "rd",
+      "L": 2,
+      "folio": "f75v",
+      "line": "3",
+      "surprise": 5.095090627670288,
+      "n_disagree": 4
+    },
+    {
+      "token": "em",
+      "L": 2,
+      "folio": "f69r",
+      "line": "5",
+      "surprise": 5.039633750915527,
+      "n_disagree": 2
+    },
+    {
+      "token": "oy",
+      "L": 2,
+      "folio": "f105r",
+      "line": "4",
+      "surprise": 4.7780256271362305,
+      "n_disagree": 0
+    },
+    {
+      "token": "oleoeder",
+      "L": 8,
+      "folio": "f77v",
+      "line": "3",
+      "surprise": 4.7421446708031,
+      "n_disagree": 3
+    },
+    {
+      "token": "dm",
+      "L": 2,
+      "folio": "f40r",
+      "line": "8",
+      "surprise": 4.730119466781616,
+      "n_disagree": 1
+    },
+    {
+      "token": "dgs",
+      "L": 3,
+      "folio": "f70r2",
+      "line": "1",
+      "surprise": 4.723414460817973,
+      "n_disagree": 2
+    },
+    {
+      "token": "sls",
+      "L": 3,
+      "folio": "f77r",
+      "line": "37",
+      "surprise": 4.705414215723674,
+      "n_disagree": 1
+    },
+    {
+      "token": "cs",
+      "L": 2,
+      "folio": "f55v",
+      "line": "7",
+      "surprise": 4.682316303253174,
+      "n_disagree": 2
+    },
+    {
+      "token": "lmyl",
+      "L": 4,
+      "folio": "f84r",
+      "line": "1",
+      "surprise": 4.659826695919037,
+      "n_disagree": 4
+    },
+    {
+      "token": "dl",
+      "L": 2,
+      "folio": "f16r",
+      "line": "13",
+      "surprise": 4.659772038459778,
+      "n_disagree": 1
+    },
+    {
+      "token": "odr",
+      "L": 3,
+      "folio": "f106v",
+      "line": "37",
+      "surprise": 4.55051604906718,
+      "n_disagree": 0
+    },
+    {
+      "token": "sl",
+      "L": 2,
+      "folio": "f55v",
+      "line": "12",
+      "surprise": 4.543140649795532,
+      "n_disagree": 0
+    },
+    {
+      "token": "osih",
+      "L": 4,
+      "folio": "f113v",
+      "line": "28",
+      "surprise": 4.508646458387375,
+      "n_disagree": 2
+    },
+    {
+      "token": "dl",
+      "L": 2,
+      "folio": "f42v",
+      "line": "3",
+      "surprise": 4.501394033432007,
+      "n_disagree": 1
+    },
+    {
+      "token": "dl",
+      "L": 2,
+      "folio": "f70r2",
+      "line": "3",
+      "surprise": 4.34909462928772,
+      "n_disagree": 2
+    },
+    {
+      "token": "lgl",
+      "L": 3,
+      "folio": "f82v",
+      "line": "20",
+      "surprise": 4.337193608283997,
+      "n_disagree": 3
+    },
+    {
+      "token": "diil",
+      "L": 4,
+      "folio": "f23r",
+      "line": "8",
+      "surprise": 4.317959406413138,
+      "n_disagree": 2
+    },
+    {
+      "token": "dl",
+      "L": 2,
+      "folio": "f52r",
+      "line": "2",
+      "surprise": 4.278909921646118,
+      "n_disagree": 0
+    },
+    {
+      "token": "ker",
+      "L": 3,
+      "folio": "f102v1",
+      "line": "0",
+      "surprise": 4.270916144053142,
+      "n_disagree": 0
+    },
+    {
+      "token": "co",
+      "L": 2,
+      "folio": "f35v",
+      "line": "7",
+      "surprise": 4.252701640129089,
+      "n_disagree": 2
+    },
+    {
+      "token": "cy",
+      "L": 2,
+      "folio": "f70r1",
+      "line": "2",
+      "surprise": 4.217102408409119,
+      "n_disagree": 2
+    },
+    {
+      "token": "ctos",
+      "L": 4,
+      "folio": "f29v",
+      "line": "4",
+      "surprise": 4.213412344455719,
+      "n_disagree": 2
+    },
+    {
+      "token": "ckey",
+      "L": 4,
+      "folio": "f99r",
+      "line": "9",
+      "surprise": 4.199514176696539,
+      "n_disagree": 1
+    },
+    {
+      "token": "lg",
+      "L": 2,
+      "folio": "f57v",
+      "line": "1",
+      "surprise": 4.194867253303528,
+      "n_disagree": 2
+    }
+  ]
+}

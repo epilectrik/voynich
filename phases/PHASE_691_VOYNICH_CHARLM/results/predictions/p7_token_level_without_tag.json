@@ -1,0 +1,269 @@
+{
+  "method": "token-level substitution: original_lp - substituted_lp",
+  "n_forbidden_pairs_tested": 15,
+  "n_legal_pairs_tested": 100,
+  "forbidden_mean_delta": -0.055740698060179894,
+  "legal_mean_delta": -0.0022363762128727697,
+  "mannwhitney_p_forb_less_than_legal": 0.001075571913366342,
+  "forbidden_results": [
+    {
+      "pair": "shey -> aiin",
+      "n_substitutions": 20,
+      "mean_delta": -0.013756635546676176,
+      "median_delta": -0.007737038549622266,
+      "all_negative": false
+    },
+    {
+      "pair": "shey -> al",
+      "n_substitutions": 20,
+      "mean_delta": -0.0802796350439745,
+      "median_delta": -0.07480625852115741,
+      "all_negative": false
+    },
+    {
+      "pair": "shey -> c",
+      "n_substitutions": 20,
+      "mean_delta": -0.2013817609772602,
+      "median_delta": -0.18493133226629282,
+      "all_negative": false
+    },
+    {
+      "pair": "chol -> r",
+      "n_substitutions": 20,
+      "mean_delta": -0.059882874078312234,
+      "median_delta": -0.051992787343718094,
+      "all_negative": false
+    },
+    {
+      "pair": "chedy -> ee",
+      "n_substitutions": 20,
+      "mean_delta": -0.2018050668292397,
+      "median_delta": -0.1987251894177867,
+      "all_negative": true
+    },
+    {
+      "pair": "dy -> aiin",
+      "n_substitutions": 20,
+      "mean_delta": -0.0053438686129436645,
+      "median_delta": -0.0099802225669752,
+      "all_negative": false
+    },
+    {
+      "pair": "dy -> chey",
+      "n_substitutions": 20,
+      "mean_delta": -0.011612665354925717,
+      "median_delta": -0.00621644135168023,
+      "all_negative": false
+    },
+    {
+      "pair": "l -> chol",
+      "n_substitutions": 20,
+      "mean_delta": -0.050116247219634015,
+      "median_delta": -0.0013027287004431232,
+      "all_negative": false
+    },
+    {
+      "pair": "or -> dal",
+      "n_substitutions": 20,
+      "mean_delta": -0.08645471704680163,
+      "median_delta": -0.0773902896557587,
+      "all_negative": false
+    },
+    {
+      "pair": "chey -> chedy",
+      "n_substitutions": 20,
+      "mean_delta": 0.0008646103170764057,
+      "median_delta": 0.0143766547294569,
+      "all_negative": false
+    },
+    {
+      "pair": "chey -> shedy",
+      "n_substitutions": 20,
+      "mean_delta": -0.033915196969123006,
+      "median_delta": -0.04460859431925565,
+      "all_negative": false
+    },
+    {
+      "pair": "ar -> dal",
+      "n_substitutions": 20,
+      "mean_delta": -0.015974173391544482,
+      "median_delta": -0.013661649507527074,
+      "all_negative": false
+    },
+    {
+      "pair": "c -> ee",
+      "n_substitutions": 7,
+      "mean_delta": -0.039382122775503584,
+      "median_delta": 0.0,
+      "all_negative": false
+    },
+    {
+      "pair": "shedy -> aiin",
+      "n_substitutions": 20,
+      "mean_delta": 0.030666106131739868,
+      "median_delta": 0.006641841800692022,
+      "all_negative": false
+    },
+    {
+      "pair": "shedy -> o",
+      "n_substitutions": 20,
+      "mean_delta": -0.06773622350557576,
+      "median_delta": -0.08171189976470936,
+      "all_negative": false
+    }
+  ],
+  "legal_results": [
+    {
+      "pair": "qokeey -> qokeey",
+      "n_substitutions": 5,
+      "mean_delta": 0.05071372876647982
+    },
+    {
+      "pair": "chol -> chody",
+      "n_substitutions": 5,
+      "mean_delta": 0.009146140292248717
+    },
+    {
+      "pair": "sheey -> qokey",
+      "n_substitutions": 5,
+      "mean_delta": -0.006598158794773967
+    },
+    {
+      "pair": "aiin -> dy",
+      "n_substitutions": 5,
+      "mean_delta": -0.022693680457838684
+    },
+    {
+      "pair": "daiin -> okedy",
+      "n_substitutions": 5,
+      "mean_delta": 0.022136507283538765
+    },
+    {
+      "pair": "dar -> chor",
+      "n_substitutions": 5,
+      "mean_delta": -0.07098113580899959
+    },
+    {
+      "pair": "ol -> kedy",
+      "n_substitutions": 5,
+      "mean_delta": -0.044871574685585794
+    },
+    {
+      "pair": "dal -> dair",
+      "n_substitutions": 5,
+      "mean_delta": -0.0418921326562968
+    },
+    {
+      "pair": "shey -> ol",
+      "n_substitutions": 5,
+      "mean_delta": -0.0023895219091487783
+    },
+    {
+      "pair": "sheckhy -> qokain",
+      "n_substitutions": 5,
+      "mean_delta": 0.0038582987300076754
+    },
+    {
+      "pair": "dain -> shey",
+      "n_substitutions": 5,
+      "mean_delta": 0.010940720523968984
+    },
+    {
+      "pair": "cheol -> dy",
+      "n_substitutions": 5,
+      "mean_delta": -0.007711024805849803
+    },
+    {
+      "pair": "shey -> qokey",
+      "n_substitutions": 5,
+      "mean_delta": -0.055364602624226114
+    },
+    {
+      "pair": "dar -> shol",
+      "n_substitutions": 5,
+      "mean_delta": 0.020658773345110647
+    },
+    {
+      "pair": "ol -> chedy",
+      "n_substitutions": 5,
+      "mean_delta": -0.013328578272916147
+    },
+    {
+      "pair": "qokal -> dain",
+      "n_substitutions": 5,
+      "mean_delta": -0.022779729438885555
+    },
+    {
+      "pair": "qokar -> okar",
+      "n_substitutions": 5,
+      "mean_delta": -0.01904811776019057
+    },
+    {
+      "pair": "daiin -> dair",
+      "n_substitutions": 5,
+      "mean_delta": -0.09049522867517781
+    },
+    {
+      "pair": "sheey -> qokaiin",
+      "n_substitutions": 5,
+      "mean_delta": 0.04765822397316416
+    },
+    {
+      "pair": "okees -> al",
+      "n_substitutions": 5,
+      "mean_delta": 0.005274225971494029
+    },
+    {
+      "pair": "shol -> chol",
+      "n_substitutions": 5,
+      "mean_delta": -0.026191123286981366
+    },
+    {
+      "pair": "chedy -> qokam",
+      "n_substitutions": 5,
+      "mean_delta": -0.044367042587252346
+    },
+    {
+      "pair": "ol -> aiin",
+      "n_substitutions": 5,
+      "mean_delta": -0.032261393653981105
+    },
+    {
+      "pair": "shedy -> qokaiin",
+      "n_substitutions": 5,
+      "mean_delta": 0.06963904141963327
+    },
+    {
+      "pair": "ol -> cheedy",
+      "n_substitutions": 5,
+      "mean_delta": 0.06902919888487921
+    },
+    {
+      "pair": "daiin -> okar",
+      "n_substitutions": 5,
+      "mean_delta": -0.0265158791727508
+    },
+    {
+      "pair": "chedy -> qokedy",
+      "n_substitutions": 5,
+      "mean_delta": 0.0325534211370747
+    },
+    {
+      "pair": "chy -> daiin",
+      "n_substitutions": 5,
+      "mean_delta": 0.010559558904059196
+    },
+    {
+      "pair": "dain -> al",
+      "n_substitutions": 5,
+      "mean_delta": -0.04561811728164562
+    },
+    {
+      "pair": "okaiin -> chedy",
+      "n_substitutions": 5,
+      "mean_delta": 0.05209480383059435
+    }
+  ],
+  "pass": true,
+  "criterion": "forbidden mean_delta < legal mean_delta with p < 0.01"
+}
