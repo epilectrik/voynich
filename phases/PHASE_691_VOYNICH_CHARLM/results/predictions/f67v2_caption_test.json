@@ -1,0 +1,33 @@
+{
+  "folio": "f67v2",
+  "hypothesis": "caption_inventory_for_central_rosette",
+  "n_tokens": 60,
+  "n_unique": 57,
+  "predictions": {
+    "P-67-1": {
+      "pass": true,
+      "f67v2_avg_len": 4.9,
+      "corpus_avg_len": 5.060289133658124
+    },
+    "P-67-2": {
+      "pass": true,
+      "f67v2_prefix_rate": 0.5666666666666667,
+      "corpus_prefix_rate": 0.8240309256513451
+    },
+    "P-67-3": {
+      "pass": true,
+      "rare_pct": 1.0,
+      "rare_occ_pct": 1.0
+    },
+    "P-67-4": {
+      "pass": true,
+      "n_unique": 57
+    },
+    "P-67-5": {
+      "pass": true,
+      "best_periodicity": 0.037037037037037035
+    }
+  },
+  "n_passed": 5,
+  "verdict": "CAPTION_INVENTORY_HYPOTHESIS_SUPPORTED"
+}
