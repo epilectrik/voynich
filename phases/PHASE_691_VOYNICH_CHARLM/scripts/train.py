@@ -165,9 +165,15 @@ def main():
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
 
-    # Load tokenizer
-    tokenizer = CharTokenizer.load(PHASE_DIR / 'data' / 'tokenizer.json')
-    print(f"Vocab size: {tokenizer.vocab_size}")
+    # Load tokenizer (from data subdir if specified, else global)
+    if args.data_subdir:
+        tok_path = PHASE_DIR / 'data' / args.data_subdir / 'tokenizer.json'
+        if not tok_path.exists():
+            tok_path = PHASE_DIR / 'data' / 'tokenizer.json'
+    else:
+        tok_path = PHASE_DIR / 'data' / 'tokenizer.json'
+    tokenizer = CharTokenizer.load(tok_path)
+    print(f"Vocab size: {tokenizer.vocab_size} (tokenizer: {tok_path.name})")
 
     # Datasets
     with_tag = (args.variant == 'with_tag')
