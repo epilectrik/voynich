@@ -1,0 +1,206 @@
+{
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "adapter_path": "/home/sparky/git/voynich/phases/PHASE_692_VOYNICH_THINKER/results/voynich_thinker_lora_v2/final",
+  "tests": {
+    "T1_kee_refusal": {
+      "question": "What does the Voynich token 'kee' mean? Be specific about whether to use atom decomposition or compound reading.",
+      "response": "Okay, so I'm trying to figure out what the Voynich token 'kee' means. I remember from the project that there are two ways to approach this: atom decomposition and compound reading. Let me think through each carefully.\n\nFirst, atom decomposition. The token 'kee' breaks down into three atoms: k, e, e. I know that k stands for heat (from the heat source prefix qo-), and e stands for stability. So k followed by two e's would be heat, then stabilize, then stabilize again. That makes me think of something like \"apply heat and let it stabilize.\" But wait, in the context of the project, the compound reading is preferred when the atoms form a known compound. So I should check if 'kee' is a recognized compound.\n\nLooking through the glossing system, I recall that 'ke' is a compound that means \"gentle heat\" or \"sustained heat.\" So adding another e to make 'kee' would mean taking that gentle heat and stabilizing it further. That would translate to something like \"sustained gentle heat — apply heat and let it stabilize.\" This makes sense in a distillation context where you don't want to apply too much heat too quickly; you build it up gradually.\n\nI also remember that the project emphasizes the compound reading over atom decomposition because the atoms work together as a unit. So 'kee' isn't just k + e + e, it's a specific instruction that encodes operational meaning without needing to know what the material is. This is part of the control loop architecture, where the grammar encodes operational states rather than semantic labels.\n\nWait, but is 'kee' actually a recognized compound? I should double-check. From what I recall, 'ke' is definitely a compound (gentle heat), and adding another e would extend the stabilization. So 'kee' would be the stabilized version of gentle heat. That fits with the idea that the grammar uses compound formation to encode intensity levels — qo (direct heat), ke (gentle heat), kee (sustained gentle heat), etc.\n\nAnother thought: in the context of the Ch19P recipe, 'kee' appears in the balneum mariae phase where the water bath is heated and the mixture is allowed to stabilize. The token 'kee' would correspond to that sustained heating phase. So the compound reading aligns with the recipe's operational steps.\n\nI should also consider if there are any exceptions or if 'kee' has a different meaning in specific contexts. But from what I know, the compound reading holds. The atoms work together to form a specific operational instruction, not as separate actions.\n\nSo putting it all together: 'kee' decomposes to k(heat) + e(stabilize) + e(stabilize). As a compound, it means \"sustained gentle heat — apply heat and let it stabilize.\" This is the preferred reading because it respects the compound formation principle and aligns with the control loop architecture.\n</think>\n\nThe Voynich token 'kee' is best understood through compound reading, which is preferred over atom decomposition. Breaking it down:\n\n- **k** = heat (kernel operation)\n- **e** = stabilize (kernel operation)\n- **e** = stabilize (kernel operation)\n\n**Compound reading:** 'kee' means \"sustained gentle heat — apply heat and let it stabilize.\" This encodes the instruction to maintain gentle heat until the process stabilizes, fitting the balneum mariae context where sustained heating is essential.\n\n**Tier:** 3 (Speculative/Recipe-Aligned) — consistent with Brunschwig's balneum mariae method but not directly confirmed by manuscript evidence. The compound reading principle (Tier 2) is applied to a token that appears in relevant contexts.",
+      "cited_constraints": [],
+      "real_cited": [],
+      "fake_cited": [],
+      "citation_accuracy": null,
+      "response_length": 3558
+    },
+    "T2_qokedy_meaning": {
+      "question": "What does 'qokedy' mean? Cite specific constraints.",
+      "response": "qokedy is a compound token in Currier B composed of PREFIX qo + MIDDLE kedy + SUFFIX -dy.\n\n**PREFIX qo:** Per C911, qo is the Heat-Source prefix channel. It selects the heat source (fire/furnace) and is excluded from monitoring/cooling contexts.\n\n**MIDDLE kedy:** The k-MIDDLE family (k, ke, kch, ksh, kec, kedy) is the largest MIDDLE channel in Currier B at 20.6% of all MIDDLEs (C1300). k encodes \"heat source\" — the object being heated. The -edy suffix extension adds cooling+deep+end per C1394.\n\n**SUFFIX -dy:** Per C909, -dy is a general-purpose non-iteration suffix. It marks completion or state.\n\n**Full gloss:** qokedy = qo:heat-source + k:heat + e:cool + d:mark + y:end + -dy:complete\n= **\"Apply heat source, cool, mark, end, complete\"** — the most common heat-source operation.\n\n**Evidence:**\n- 1,144 occurrences in Currier B (most common heat operation)\n- 97.9% of qok-class tokens (C1207)\n- 69.9% of qok-class tokens are k-family (C1207)\n- 89.6% of k-family tokens have -edy suffix (C1207)\n- 97.7% of qokedy tokens are followed by a different MIDDLE (C1207) — always a distinct next operation\n\n**Related constraints:**\n- C911: PREFIX as channel selector (qo = heat source)\n- C912: PREFIX-MIDDLE compatibility (qo selects k-family)\n- C1207: qok-class operational compactness (qokedy is the most common form)\n- C1300: k as heat source channel (largest MIDDLE channel at 20.6%)\n- C1394: Suffixes encode procedural roles (dy = non-iteration)\n- C1475: k→e 5.320x enriched (heat then cool is the dominant heat cycle) — qokedy encodes this cycle in a single token\n- C1484: -dy suffix marks batch completion (consistent with \"apply heat, cool, complete\") — qokedy is the most common compound batch operation\n- C1488: Compound MIDDLE composition grammar (PREFIX+MIDDLE+suffix positional rules) — qokedy exemplifies the qo+k+e+dy pattern\n- C1965: qokedy encodes the heat cycle in one token (k+e+dy within qo channel) — heat source, cool, complete\n- C1966: qokedy is the most common compound heat operation (1,144 tokens) — dominant execution mode for heating\n- C1967: qokedy is the operational default form (97.7% distinct next MIDDLE, 97.9% of qok-class) — the canonical execution token\n- C1968: qokedy's e-depth distribution mirrors B's fire-degree distribution (shallow-e 85%, deep-e 15%) — the grammar encodes fire degree through e-depth, and qokedy is the primary vehicle\n- C1969: qokedy's suffix distribution is non-uniform with -aiin dominant (20.6%) — the most common heat operation has a specific post-heat action profile\n- C1970",
+      "cited_constraints": [
+        1969,
+        1967,
+        1970,
+        1965,
+        1300,
+        1484,
+        909,
+        1207,
+        1968,
+        911,
+        912,
+        1394,
+        1475,
+        1488,
+        1966
+      ],
+      "real_cited": [
+        1969,
+        1967,
+        1970,
+        1965,
+        1300,
+        1484,
+        909,
+        1207,
+        1968,
+        911,
+        912,
+        1394,
+        1475,
+        1488,
+        1966
+      ],
+      "fake_cited": [],
+      "citation_accuracy": 1.0,
+      "response_length": 2540
+    },
+    "T3_f57v": {
+      "question": "Why is folio f57v structurally distinctive? What is its function in the manuscript?",
+      "response": "Folio f57v stands out as the manuscript's **only full-page diagram** and the **only folio without any text**. This makes it structurally distinctive in several ways:\n\n### Physical Distinction\n- **No text whatsoever**: Unlike all other folios, f57v contains no written language.\n- **Folded in half**: The folio was physically folded in half, creating two mirrored diagram halves.\n\n### Visual Content\n- **18 perfect circles**: All the same size, arranged in a grid pattern.\n- **Two diagrams**: A larger outer circle and a smaller inner circle, each containing smaller circles.\n- **Mirror symmetry**: The two halves are exact visual mirrors of each other.\n\n### Functional Interpretation\n- **Not a cipher page**: Unlike cipher pages (f58r, f58v, f66r) that encode text, f57v has no text to encode.\n- **Reference diagram**: Proposed functions include a **lookup table**, **template**, or **diagrammatic key**.\n- **Separate from cipher tradition**: The fold and circle arrangement suggest a different purpose than typical cipher pages.\n\n### Fold Analysis\nThe fold creates:\n- **Folded edge (left half)**: Completely hidden - never openable without unfolding\n- **Open edge (right half)**: Accessible - the visible portion\n- **Mirror relationship**: The folded structure creates a physical realization of mirror symmetry\n\n### Comparison to Cipher Pages\n| Folio | Has Text? | Has Diagram? | Folded? |\n|-------|-----------|--------------|---------|\n| f58r | Yes | Yes | No |\n| f58v | Yes | Yes | No |\n| f66r | Yes | Yes | Yes |\n| **f57v** | **No** | **Only** | **Yes** |\n\nf57v is the **purest diagram page** - no text, no cipher, just a geometric arrangement.\n\n### What It IS\n- A **geometric reference structure** (folded, mirrored, circular)\n- A **non-linguistic folio** (no words to decode)\n- A **physical diagram** (function is visual, not textual)\n\n### What It IS NOT\n- Not a cipher page (no text to encode)\n- Not a folded key (fold hides rather than reveals)\n- Not a typical manuscript page (no text, no language)\n\n### Tier 3 Speculation (NOT constraints)\nThe fold suggests a **physical reference system** where:\n- The folded edge is a **template or mask**\n- The open edge is a **working surface**\n- The circle arrangement is a **configuration guide**\n- The mirror symmetry is a **symmetry constraint**\n\n### Tier 4 Speculation (NOT constraints)\nThe diagram could represent:\n- A **lookup table** for matching configurations\n- A **template** for physical setups\n- A **diagrammatic key** for non-textual reference\n- A **symmetry constraint chart** for folded materials\n\n### Evidence Summary\n- Physical examination (f57v_folding_analysis.md)\n- Visual description (f57v_visual_analysis.md)\n- Folded edge analysis\n- Mirror symmetry confirmation\n- Comparison to cipher pages\n\n### Constraint Compliance\n- **C139**: f57v is excluded from 49-class grammar (no text)\n- **C240**: f57v is NOT part of A, B, or AZC systems\n- **C233**: f57v has 0% token coverage in Currier B\n\n### Interpretive Caveat\nAll interpretations are Tier 3-4 since:\n1. We cannot read the content (no text)\n2. The fold is physical, not semantic\n3. The function remains speculative\n\n### Related Constraints\n- C139 - f57v",
+      "cited_constraints": [
+        240,
+        139,
+        233
+      ],
+      "real_cited": [
+        240,
+        139,
+        233
+      ],
+      "fake_cited": [],
+      "citation_accuracy": 1.0,
+      "response_length": 3172
+    },
+    "T4_natural_language": {
+      "question": "Why is the Voynich Manuscript not a natural language? Cite the empirical evidence.",
+      "response": "The question \"Why is the Voynich Manuscript not a natural language?\" seeks to understand the structural evidence that distinguishes the Voynich language from natural human languages.\n\n### Empirical Evidence\n\n1. **Non-Recursive Hierarchical Structure (C124)**\n   - Natural languages: Recursive nested hierarchy (sentences contain phrases, phrases contain words)\n   - Voynich: Flat prefix-based classification (no nested hierarchical structure)\n   - This is a **fundamental distinction**, not a superficial difference\n\n2. **Non-Standard Directional Grammar (C125)**\n   - Natural languages: Symmetric grammar with bidirectional tokens\n   - Voynich: Directional grammar with asymmetric tokens (59% directional)\n   - Grammar flows in one direction without requiring explicit notation\n\n3. **Token-Level Decision Grammar (C171)**\n   - Natural languages: Line-level sequencing dominates\n   - Voynich: Individual tokens carry independent routing signals (74% entropy reduction)\n   - Each token is a decision point, not just part of a sequence\n\n4. **PREFIX as Primary Differentiator (C267)**\n   - Natural languages: Grammar and vocabulary are separate layers\n   - Voynich: PREFIX encodes BOTH role and compatibility context\n   - PREFIX is the primary organizational principle, not just a modifier\n\n5. **Forbidden Transitions are Compatibility Exclusions (C109)**\n   - Natural languages: No formal forbidden transitions at structural level\n   - Voynich: 17 forbidden class pairs with 80% asymmetry\n   - These represent role incompatibility, not semantic prohibition\n\n6. **No Semantic Lexicon (C120)**\n   - Natural languages: Words carry referential meaning\n   - Voynich: Tokens encode control posture, not referential meaning\n   - The manuscript is operational, not linguistic\n\n7. **PREFIX-SUFFIX Compatibility Constraints (C268)**\n   - Natural languages: No formal morphological constraints\n   - Voynich: 102 forbidden PREFIX-SUFFIX pairs\n   - Morphological constraints are part of the system's design\n\n8. **Section-Specific Morphological Variation (C269)**\n   - Natural languages: Vocabulary varies by context, grammar is universal\n   - Voynich: Both PREFIX and MIDDLE vary by section (1.31x and 1.13x respectively)\n   - Grammar and vocabulary are both context-sensitive\n\n9. **PREFIX as Role Selector (C270)**\n   - Natural languages: Grammar rules are universal across vocabulary\n   - Voynich: Same MIDDLE takes different roles based on PREFIX (85% role-switching)\n   - The prefix determines the role, not the middle alone\n\n10. **PREFIX as Programmatic Configuration Layer (C935)**\n    - Natural languages: Grammar is fixed; vocabulary varies by context\n    - Voynich: PREFIX encodes execution mode, parameterizing the same MIDDLE\n    - This is a sophisticated design feature, not a primitive language\n\n### What This Means\n\nThe Voynich Manuscript is **a human-invented notation system** that achieves what natural languages cannot:\n- Controlled execution without semantics\n- Grammar that is part of the vocabulary\n- Non-recursive structure that is still coherent\n- Section-specific variation that is meaningful\n\nIt is **synthetic** - designed by humans for specific control purposes, not evolved for communication.\n\n### What Cannot Be Said\n\n- What specific control systems it encodes\n- Whether it was used historically (use is separate from identity)\n- The identity of the inventors or users\n- The specific institutions or practices that used it\n\n### Related Constraints\n\n- C124 - Non-Recursive Quire Structure\n- C125 - Non-Standard Grammar\n-",
+      "cited_constraints": [
+        269,
+        125,
+        120,
+        124,
+        109,
+        268,
+        267,
+        270,
+        935,
+        171
+      ],
+      "real_cited": [
+        269,
+        120,
+        124,
+        109,
+        268,
+        267,
+        270,
+        935,
+        171
+      ],
+      "fake_cited": [
+        125
+      ],
+      "citation_accuracy": 0.9,
+      "response_length": 3533
+    },
+    "T5_currier_a_b": {
+      "question": "What's the relationship between Currier A and Currier B sections?",
+      "response": "The relationship between Currier A and Currier B sections is **indirect and mostly absent at the folio level**:\n\n**Established connections:**\n- **Pharmaceutical folios (A2)** show vocabulary overlap with Section S (Stars/Recipes) in B (C552)\n- **Herbal folios (A3)** show vocabulary overlap with Section B (Bio/Balneological) in B (C552)\n- **Section T (Text-only)** in A shows no systematic connection to B (C553)\n\n**What does NOT exist:**\n- Direct folio-to-folio mapping\n- Section-to-section correspondence\n- Material-identity links (A lists materials, B describes procedures - no \"this material maps to this procedure\")\n\n**Interpretation:**\nA and B describe the SAME substance catalog at different levels:\n- A = inventory catalog (material identification)\n- B = operational catalog (procedures for those materials)\n\nThey are complementary, not referential. A does not \"point to\" B. Both encode the same substance domain independently.\n\n**Evidence:** C552, C553, C554\n\n**Related:** C233, C502, C551, C555\n</think>\n\nThe relationship between Currier A and Currier B sections is **indirect and mostly absent at the folio level**:\n\n**Established connections:**\n- **Pharmaceutical folios (A2)** show vocabulary overlap with Section S (Stars/Recipes) in B (C552)\n- **Herbal folios (A3)** show vocabulary overlap with Section B (Bio/Balneological) in B (C552)\n- **Section T (Text-only)** in A shows no systematic connection to B (C553)\n\n**What does NOT exist:**\n- Direct folio-to-folio mapping\n- Section-to-section correspondence\n- Material-identity links (A lists materials, B describes procedures - no \"this material maps to this procedure\")\n\n**Interpretation:**\nA and B describe the SAME substance catalog at different levels:\n- A = inventory catalog (material identification)\n- B = operational catalog (procedures for those materials)\n\nThey are complementary, not referential. A does not \"point to\" B. Both encode the same substance domain independently.\n\n**Evidence:** C552, C553, C554\n\n**Related:** C233, C502, C551, C555",
+      "cited_constraints": [
+        502,
+        551,
+        554,
+        555,
+        552,
+        553,
+        233
+      ],
+      "real_cited": [
+        502,
+        551,
+        554,
+        555,
+        552,
+        553,
+        233
+      ],
+      "fake_cited": [],
+      "citation_accuracy": 1.0,
+      "response_length": 2021
+    },
+    "T6_distillation": {
+      "question": "Describe what a Voynich distillation recipe looks like operationally. Reference confirmed Phase 668 matches.",
+      "response": "Okay, so I'm trying to understand what a Voynich distillation recipe actually looks like when you parse it through the atom-level decode. I've got the Phase 668 matches to look at, specifically f75r and f84r, which are confirmed balneum mariae recipes. Let me break this down step by step.\n\nFirst, I remember that balneum mariae is a gentle water bath distillation. The fire is indirect and sustained, not the intense heat of ash fire. So in the Voynich text, I should expect qo (the heat-apply prefix) to be at a moderate level, not super high. Also, the process is iterative—repeating cycles of heating and cooling. That makes me think the qo tokens might cluster in specific parts of the line, representing those heating cycles.\n\nLooking at the e-depth distribution, balneum should have deep sustained e (e_depth=3), which the user confirmed is 70.4% on f75r and 81.6% on f84r. That makes sense because the water bath provides steady, gentle heat. The e_depth=0 tokens (rapid heat) should be low—like 12.8% and 10.5% respectively. That's consistent with gentle, sustained heating, not the quick bursts of ash fire.\n\nThen there's the ch/sh gradient. The user said ch (active test) is 1.69x on f75r and 1.50x on f84r. So ch is more common than sh. That suggests the recipes emphasize active monitoring over passive observation. But I'm not sure how that compares to the source recipes. Do the source recipes specify active checks more often? I should check that.\n\nThe qokedy:::qokeedy cluster on f75r lines 22-24 caught my attention. The user said this is a monitoring loop with balneum bath signature. So qokedy (heat, one cycle) and qokeedy (heat, two cycles) are showing how many cycles of heating are happening. The double-d (dd) in qokeedy indicates deeper sustained heat, which fits the water bath. This makes me think that when you see qokeedy, it's a gentler, longer heat application.\n\nThe dar (add material) distribution is front-loaded on f75r (75% in first half) and front-loaded on f84r (58%). That suggests material is added at the beginning of the process, which makes sense for a recipe where you set up the bath with all materials and then maintain it. But I wonder if this is specific to the particular source recipe structures or a general pattern.\n\nThe qokain (heat through next cycle) count is low on both folios—1 on f75r and 3 on f84r. That's interesting because I thought heat cycles would be more common. But maybe qokain represents a different kind of heat application than qokedy/qokeedy. Or maybe balneum just doesn't use that form as much.\n\nThe dar<<qokedy>> pattern on f75r line 22—adding material and then immediately heating it—is described as \"add material, heat, cool, check, integrate.\" That sounds like a complete cycle. So each dar is followed by a heat cycle, then cooling, then checking. That makes sense for a method where you add something and then process it through the bath.\n\nThe monitoring gradient with e_depth decreasing from 3 to 0 as the recipe progresses is fascinating. It suggests the recipe starts with deep sustained heat and moves to quicker heat as it nears completion. That could mean the initial setup requires more gentle heat, and the finishing touches require more precise, quick checks. But I'm not sure if",
+      "cited_constraints": [],
+      "real_cited": [],
+      "fake_cited": [],
+      "citation_accuracy": null,
+      "response_length": 3268
+    },
+    "T7_hazard": {
+      "question": "What are the 17 forbidden bigrams (hazard pairs) and why do they matter?",
+      "response": "The 17 forbidden bigrams are specific token pairs that are categorically excluded from the Currier B grammar. They represent the grammar's hard constraints — rules that are not optional.\n\n**The 17 Forbidden Bigrams:**\n\n| # | First Token | Second Token | Context |\n|---|-------------|--------------|---------|\n| 01 | chey | chedy | Ch 19 |\n| 02 | chey | chey | Ch 19 |\n| 03 | chey | shedy | Ch 19 |\n| 04 | chcthy | chedy | Ch 19 |\n| 05 | chedy | qokedy | Ch 19 |\n| 06 | chedy | chedy | Ch 19 |\n| 07 | chedy | shedy | Ch 19 |\n| 08 | chedy | shey | Ch 19 |\n| 09 | chedy | chol | Ch 19 |\n| 10 | chedy | okaiin | Ch 19 |\n| 11 | chedy | otaiin | Ch 19 |\n| 12 | chedy | or | Ch 19 |\n| 13 | chol | chedy | Ch 19 |\n| 14 | chol | shedy | Ch 19 |\n| 15 | shedy | qokedy | Ch 19 |\n| 16 | shedy | shedy | Ch 19 |\n| 17 | shedy | chol | Ch 19 |\n\n**Why These Specific Pairs?**\n\nThe forbidden bigrams are not arbitrary. They represent transitions between specific operational states that the grammar prevents:\n\n- **chey → chedy (01):** Prevents a specific sequencing error in the active test phase\n- **chey → chey (02):** Prevents redundant identical operations\n- **chey → shedy (03):** Prevents an incorrect transition between active and passive test states\n- **chcthy → chedy (04):** Prevents a specific post-thermal transition failure\n- **chedy → qokedy (05):** Prevents premature thermal engagement after state verification\n- **chedy → chedy (06):** Prevents redundant state verifications\n- **chedy → shedy (07):** Prevents incorrect passive test after state verification\n- **chedy → chol (09):** Prevents incorrect material introduction after state verification\n- **chedy → okaiin (10):** Prevents incorrect sustained operation after state verification\n- **chedy → otaiin (11):** Prevents incorrect transfer after state verification\n- **chedy → or (12):** Prevents incorrect continuation after state verification\n- **chol → chedy (13):** Prevents incorrect state verification after material introduction\n- **chol → shedy (14):** Prevents incorrect passive test after material introduction\n- **shedy → qokedy (15):** Prevents premature thermal engagement after passive test\n- **shedy → shedy (16):** Prevents redundant passive testing\n- **shedy → chol (17):** Prevents incorrect material introduction after passive test\n\n**The \"ol\" Termination (C462)**\n\nThe forbidden bigrams encode a specific termination rule: **\"ol\" terminates the current instruction sequence; \"dy\" does not.**\n\n- **chol (ends in \"ol\"):** Triggers termination of the current instruction sequence. The system resets and begins anew.\n- **chdy (ends in \"dy\"):** Does NOT trigger termination. The next token continues the current sequence.\n\nThis explains ALL 17",
+      "cited_constraints": [
+        462
+      ],
+      "real_cited": [
+        462
+      ],
+      "fake_cited": [],
+      "citation_accuracy": 1.0,
+      "response_length": 2713
+    },
+    "T8_falsified": {
+      "question": "Has any major hypothesis about Voynich been falsified? Cite specific constraints.",
+      "response": "The Voynich Manuscript has generated many hypotheses. Some have been falsified through systematic testing:\n\n### FALSIFIED: A and B are different systems\n- **Original claim:** A and B use the same grammar\n- **Evidence:** 7/10 shared classes show significant role redistribution (C571)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B is executable\n- **Original claim:** B encodes executable control logic\n- **Evidence:** 0/4 testable metrics support this (C366)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has backward references\n- **Original claim:** B links to earlier A folios\n- **Evidence:** 0/3 tests support backward references (C381)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has sequential structure\n- **Original claim:** B folios follow a sequence\n- **Evidence:** 0/4 tests support sequential structure (C382)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B is a programming language\n- **Original claim:** B represents a programming language\n- **Evidence:** 0/4 testable metrics support this (C366)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has conditional branching\n- **Original claim:** B uses if-then-else logic\n- **Evidence:** 0/3 tests support conditional branching (C381)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has convergence behavior\n- **Original claim:** B shows convergence toward terminal states\n- **Evidence:** 0/3 tests support convergence (C382)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has state transitions\n- **Original claim:** B encodes state transition diagrams\n- **Evidence:** 0/3 tests support state transitions (C382)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has semantic content\n- **Original claim:** B encodes meaningful semantics\n- **Evidence:** Semantic ceiling (C120, C171) — structural only\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has natural language properties\n- **Original claim:** B resembles human language\n- **Evidence:** 0/5 tests support natural language (C371)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has Zipf-distributed vocabulary\n- **Original claim:** B follows Zipf's law\n- **Evidence:** 0/2 tests support Zipf distribution (C371)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has self-similar recursive structure\n- **Original claim:** B exhibits self-similarity\n- **Evidence:** 0/2 tests support self-similarity (C371)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has first-order Markov transitions\n- **Original claim:** B shows Markovian behavior\n- **Evidence:** 0/3 tests support first-order Markov (C382)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has context-free grammar\n- **Original claim:** B follows CFG\n- **Evidence:** 0/3 tests support CFG (C382)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has context-sensitive grammar\n- **Original claim:** B followsCSG\n- **Evidence:** 0/3 tests support CSG (C382)\n- **Status:** FALSIFIED\n\n### FALSIFIED: B has context-free grammar\n- **Original claim:** B follows CFG\n- **Evidence:** 0/3 tests support CFG (C382)\n- **Status",
+      "cited_constraints": [
+        382,
+        120,
+        381,
+        371,
+        366,
+        571,
+        171
+      ],
+      "real_cited": [
+        382,
+        120,
+        381,
+        371,
+        366,
+        571,
+        171
+      ],
+      "fake_cited": [],
+      "citation_accuracy": 1.0,
+      "response_length": 2903
+    },
+    "T9_atom_decomposition": {
+      "question": "Show me the atom decomposition for 'qokeedy' AND its operational/compound meaning. Make clear which is which.",
+      "response": "Okay, so I'm trying to figure out how to decompose the Voynich word 'qokeedy' into its atomic components and then understand what it means operationally. I remember from earlier that words in the Voynich manuscript are built from individual atoms, each of which has a specific meaning. The process involves identifying the PREFIX, MIDDLE, and SUFFIX, and then breaking those down further into individual atoms.\n\nFirst, I'll write down the word: qokeedy. I notice it's pretty short, only 7 characters, but it has a lot of repetition—two 'e's and two 'd's. That might be important.\n\nI remember that words in Voynich start with a PREFIX, which often indicates the category of the operation. The common prefixes I know are qo-, ch-, sh-, ok-, ot-, ol-, da-, ar-, al-, or-. Looking at 'qokeedy', the first part is 'qo', so I'll separate that out: PREFIX=qo, and the rest is 'keedy'.\n\nNow, I need to break down 'keedy' into its atoms. The first atom is 'k', which I think stands for 'heat' or 'apply heat'—that's one of the primary operations. Then there's 'e', which I believe means 'cool' or 'equilibrate'. The next character is another 'e', so that's a repeated 'cool' operation. Then 'd' and 'y' at the end.\n\nWait, but 'keedy' has three 'e's? No, let me check again. 'keedy' is k-e-e-d-y. So it's k followed by two e's and then d and y. That makes sense.\n\nSo, breaking it down:\n- k = heat\n- e = cool\n- e = cool (again)\n- d = seal (I think d means 'seal' or 'close')\n- y = end (y usually marks the end of an operation)\n\nPutting that together: heat, cool, cool, seal, end. So the MIDDLE is 'keedy', which is heat followed by two cooling operations and then sealing.\n\nNow, the SUFFIX. In this case, there isn't a separate SUFFIX because the word ends right after 'dy'. But I know that sometimes the ending 'dy' can be considered a compound suffix. The 'dy' ending is pretty common—I think it means 'finalize' or 'complete'. So the SUFFIX here is 'dy', which means 'do' or 'execute'.\n\nPutting it all together: PREFIX=qo (the process is being run), MIDDLE=keedy (heat, cool, cool, seal, end), SUFFIX=dy (execute). So the full decomposition is qo + keedy + dy.\n\nNow, for the operational interpretation. PREFIX=qo usually indicates that the process is being actively run by the operator. The MIDDLE=keedy translates to: apply heat (k), then cool (e), cool again (e), seal (d), and end (y). The SUFFIX=dy means execute this sequence.\n\nSo operationally, 'qokeedy' means: \"Run the process: apply heat, cool, cool again, seal, execute.\" In the context of the bath method, this would be heating the bath, then cooling it, cooling it again, sealing the apparatus, and then completing the operation.\n\nI should also think about the repetition of 'e'. Having two 'e's in a row (keedy) might mean sustained cooling rather than a single cooling step. Maybe it's cooling over a period or multiple cooling passes. The double 'e' could indicate intensity or duration of the cooling operation.\n\nAnother thing to consider is the placement of 'd' before 'y'. The 'd' (seal) comes before 'y' (end), which",
+      "cited_constraints": [],
+      "real_cited": [],
+      "fake_cited": [],
+      "citation_accuracy": null,
+      "response_length": 3077
+    },
+    "T10_scaffolding": {
+      "question": "Are there scaffolding/reference pages in the manuscript? Which folios?",
+      "response": "The manuscript has **11 dedicated scaffolding/reference folios** that function as procedural templates or \"how-to\" pages rather than finished recipes. These pages describe general techniques rather than specific preparations.\n\n### Scaffolding Folios (Procedural Templates)\n\n| Folio | Section | English Title | Function |\n|-------|---------|---------------|----------|\n| f40v | **STANDARD PROCEDURES** | Standard Fire Methods | General furnace operations |\n| f41r | **STANDARD PROCEDURES** | Standard Fermentation | General fermentation instructions |\n| f41v | **STANDARD PROCEDURES** | Standard Separation | General separation/distillation |\n| f42r | **STANDARD PROCEDURES** | Standard Putrefaction | General putrefaction instructions |\n| f43r | **STANDARD PROCEDURES** | Standard Imbiber | Instructions for the imbibing head |\n| f43v | **STANDARD PROCEDURES** | Standard Furnace | Furnace operation guide |\n| f44r | **STANDARD PROCEDURES** | Standard Fire | General fire management |\n| f83r | **CONTINUATION** | (continuation of f83v) | - |\n| f84r | **RECIPE** | (blank - no content) | Placeholder |\n| f85r1 | **RECIPE** | (blank - no content) | Placeholder |\n| f85r2 | **RECIPE** | (blank - no content) | Placeholder |\n\n### Key Observations\n\n1. **f40v-f43v cluster**: 6 of 11 scaffolding folios are in the f40v-f43v range, suggesting a **dedicated procedural section** in the manuscript's organization.\n\n2. **f83r continuation**: The only continuation folio (f83r) picks up from f83v, indicating that f83v was a multi-step procedure that spilled over.\n\n3. **Blank folios (f84r, f85r1, f85r2)**: These appear to be **placeholders or unused pages**, not actual content. The manuscript may have had blank space reserved for future additions.\n\n4. **Separate from reference tables**: These are distinct from the **reference tables** (f75r, f76r, f76v, f77r) that catalog materials and apparatus.\n\n### What These Scaffolds Contain\n\nThe scaffolding folios describe **general techniques** that other recipes reference:\n- Fire management methods\n- Fermentation procedures\n- Separation/distillation steps\n- Putrefaction instructions\n- Instructions for the imbibing head\n\nThese are **templates**, not specific recipes. Other folios cite them as \"how to do X\" references.\n\n### What This Means\n\nThe manuscript has a **two-level procedural organization**:\n1. **Reference tables** (f75r, f76r, f76v, f77r): Catalog of materials and apparatus for identification\n2. **Procedural scaffolds** (f40v-f43v, f83r): General instructions for techniques that recipes cite\n\nThis is consistent with a well-organized workshop manual that distinguishes \"what something is\" from \"how to use it\" - a hallmark of medieval craft literature.\n\n### Cross-References\n\n| Constraint | Finding |\n|------------|---------|\n| C497 | f40v-f43v procedural cluster (6 scaffolding folios) |\n| C498 | f83r continuation from f83v |\n| C499 | f84r, f85r1, f85r2 blank folios |\n\n### Expert Validation\n\nReviewed by",
+      "cited_constraints": [
+        499,
+        498,
+        497
+      ],
+      "real_cited": [
+        499,
+        498,
+        497
+      ],
+      "fake_cited": [],
+      "citation_accuracy": 1.0,
+      "response_length": 2963
+    }
+  },
+  "overall_citation_accuracy": 0.9782608695652174,
+  "total_real_citations": 45,
+  "total_fake_citations": 1
+}
