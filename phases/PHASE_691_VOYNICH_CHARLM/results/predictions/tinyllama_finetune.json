@@ -1,0 +1,14 @@
+{
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "epochs": 3,
+  "lr": 2e-05,
+  "n_train_lines": 4007,
+  "n_test_lines": 428,
+  "base_perplexity": 1388.343249607529,
+  "base_bpt": 10.439148584051694,
+  "finetune_perplexity": 24.204471070104944,
+  "finetune_bpt": 4.597201662836423,
+  "bpt_drop_pct": 55.96190986437579,
+  "perplexity_ratio": 57.35895841666535,
+  "verdict": "LARGE_DROP_REAL_GRAMMAR"
+}

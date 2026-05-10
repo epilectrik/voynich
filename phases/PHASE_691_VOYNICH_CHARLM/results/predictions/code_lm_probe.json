@@ -1,0 +1,66 @@
+{
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "n_samples_per_corpus": 50,
+  "results": {
+    "voynich": {
+      "mean_loss_nats": 6.767065887451172,
+      "mean_bits_per_token": 9.762812397194677,
+      "perplexity": 868.7591137323766,
+      "std_loss": 0.6659076948564676,
+      "n_samples": 50,
+      "n_total_tokens": 1151
+    },
+    "voynich_shuffled": {
+      "mean_loss_nats": 6.818418083190918,
+      "mean_bits_per_token": 9.836897955327169,
+      "perplexity": 914.5371435010106,
+      "std_loss": 0.5615264649416514,
+      "n_samples": 50,
+      "n_total_tokens": 1440
+    },
+    "voynich_charperm": {
+      "mean_loss_nats": 6.851600761413574,
+      "mean_bits_per_token": 9.88477044064241,
+      "perplexity": 945.3930447692507,
+      "std_loss": 0.5292369781366664,
+      "n_samples": 50,
+      "n_total_tokens": 1354
+    },
+    "python_code": {
+      "mean_loss_nats": 3.108974266052246,
+      "mean_bits_per_token": 4.48530175588498,
+      "perplexity": 22.39805816525681,
+      "std_loss": 0.5667225738050383,
+      "n_samples": 50,
+      "n_total_tokens": 5319
+    },
+    "latin_prose": {
+      "mean_loss_nats": 4.7810822463035585,
+      "mean_bits_per_token": 6.89764364682441,
+      "perplexity": 119.23332006346247,
+      "std_loss": 0.9258727414551345,
+      "n_samples": 50,
+      "n_total_tokens": 2158
+    },
+    "english_prose": {
+      "mean_loss_nats": 5.227021770477295,
+      "mean_bits_per_token": 7.540998386886243,
+      "perplexity": 186.23731926848285,
+      "std_loss": 0.8142425199092158,
+      "n_samples": 50,
+      "n_total_tokens": 1002
+    },
+    "random_chars": {
+      "mean_loss_nats": 6.404265823364258,
+      "mean_bits_per_token": 9.23940254390229,
+      "perplexity": 604.4178862531055,
+      "std_loss": 0.31177713119062966,
+      "n_samples": 50,
+      "n_total_tokens": 3099
+    }
+  },
+  "has_structure": false,
+  "code_ratio": 2.1766233195760556,
+  "lang_ratio": 1.352317257315602,
+  "verdict": "LANGUAGE_LIKE"
+}

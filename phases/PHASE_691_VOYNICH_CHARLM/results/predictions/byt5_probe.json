@@ -1,0 +1,52 @@
+{
+  "model": "google/byt5-small",
+  "n_params": 299637760,
+  "n_samples_per_corpus": 50,
+  "results": {
+    "voynich": {
+      "mean_bpc": 6.96077815118911,
+      "std_bpc": 0.5201458902651995,
+      "median_bpc": 6.87252579048473,
+      "n_samples": 50
+    },
+    "voynich_shuffled": {
+      "mean_bpc": 6.649133480247079,
+      "std_bpc": 0.33243882642247835,
+      "median_bpc": 6.6583757453527745,
+      "n_samples": 50
+    },
+    "voynich_charperm": {
+      "mean_bpc": 7.450730912341011,
+      "std_bpc": 0.5033737584737691,
+      "median_bpc": 7.405083139562882,
+      "n_samples": 50
+    },
+    "python_code": {
+      "mean_bpc": 14.998731029391955,
+      "std_bpc": 3.309367204754826,
+      "median_bpc": 14.646735981525062,
+      "n_samples": 50
+    },
+    "latin_prose": {
+      "mean_bpc": 5.263751754068433,
+      "std_bpc": 0.4300577381226689,
+      "median_bpc": 5.328391254533262,
+      "n_samples": 50
+    },
+    "english_prose": {
+      "mean_bpc": 5.027172309472656,
+      "std_bpc": 0.4143183135282353,
+      "median_bpc": 5.0522504068631084,
+      "n_samples": 50
+    },
+    "random_chars": {
+      "mean_bpc": 7.171659590369051,
+      "std_bpc": 0.2665600696520743,
+      "median_bpc": 7.157119929410092,
+      "n_samples": 50
+    }
+  },
+  "voynich_vs_shuffled_p": 0.0025888186421510096,
+  "voynich_vs_shuffled_classifier_acc": 0.67,
+  "verdict": "CHAR_LEVEL_DISTINGUISHES"
+}
