@@ -69,8 +69,8 @@ guarantees:
     provenance: "C074, C079, C084, C1403"
 
   - id: "HAZARD_TOPOLOGY_FIXED"
-    statement: "17 forbidden transitions in 5 classes are DISFAVORED (~65% compliance, not absolute)"
-    provenance: "C109, C789"
+    statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C1118, C2023). At the 49-class projection, hazard structure is transitional (C2023 within-line shuffle null z=+3.91 in B); at the MIDDLE-token layer, it is co-occurrence-forbidden (z=-0.39 at-null in B; 16/17 pairs zero same-line co-occurrence, 1/17 symmetrically suppressed). ~65% compliance figure refers to class-level transition compliance."
+    provenance: "C109, C783, C789, C1118, C2023"
 
   - id: "KERNEL_CENTRALITY"
     statement: "k, h, e form irreducible morphological core governing within-token construction"

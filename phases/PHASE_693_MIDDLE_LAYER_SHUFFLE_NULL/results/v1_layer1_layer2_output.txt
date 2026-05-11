@@ -1,0 +1,100 @@
+Loading transcript + morphology...
+Collecting tokens (H-track, paragraph only, decomposable morphology)...
+
+###########################################################
+# LAYER 1: SUFFIX/coda — cold agent's stated discriminator #
+###########################################################
+
+=== H-track FULL (n=19836 tokens, 3840 lines) ===
+  Marginal H(coda)         = 3.1061 bits
+  H(coda | stem)           = 2.1328  [I=+0.9734, n_used=16400, n_stems_kept=88/1660]
+  H(coda | prev_coda)      = 3.0305  [I=+0.0756, n_pairs=15996]
+  H(coda | line_pos_bin)   = 3.0426  [I=+0.0635, n_bins=10]
+  RANKED (most informative -> least):
+          stem: I = 0.9734 bits  (31.3% of H(coda))
+     prev_coda: I = 0.0756 bits  (2.4% of H(coda))
+      line_pos: I = 0.0635 bits  (2.0% of H(coda))
+  Top 10 suffixes: [('y', 5986), ('dy', 5204), ('ol', 1356), ('aiin', 1329), ('ar', 1013), ('or', 858), ('al', 814), ('ain', 782), ('s', 716), ('r', 543)]
+  Unique suffixes: 26
+
+=== Currier B only (n=14006 tokens, 2291 lines) ===
+  Marginal H(coda)         = 2.9477 bits
+  H(coda | stem)           = 1.9391  [I=+1.0086, n_used=11574, n_stems_kept=63/1151]
+  H(coda | prev_coda)      = 2.8922  [I=+0.0555, n_pairs=11715]
+  H(coda | line_pos_bin)   = 2.8709  [I=+0.0768, n_bins=10]
+  RANKED (most informative -> least):
+          stem: I = 1.0086 bits  (34.2% of H(coda))
+      line_pos: I = 0.0768 bits  (2.6% of H(coda))
+     prev_coda: I = 0.0555 bits  (1.9% of H(coda))
+  Top 10 suffixes: [('dy', 4610), ('y', 3869), ('aiin', 909), ('ar', 774), ('ain', 703), ('ol', 647), ('al', 623), ('r', 388), ('s', 388), ('or', 375)]
+  Unique suffixes: 24
+
+=== Currier A only (n=5585 tokens, 1501 lines) ===
+  Marginal H(coda)         = 3.2255 bits
+  H(coda | stem)           = 2.1609  [I=+1.0646, n_used=3936, n_stems_kept=41/831]
+  H(coda | prev_coda)      = 3.1327  [I=+0.0928, n_pairs=4084]
+  H(coda | line_pos_bin)   = 3.1469  [I=+0.0786, n_bins=10]
+  RANKED (most informative -> least):
+          stem: I = 1.0646 bits  (33.0% of H(coda))
+     prev_coda: I = 0.0928 bits  (2.9% of H(coda))
+      line_pos: I = 0.0786 bits  (2.4% of H(coda))
+  Top 10 suffixes: [('y', 2009), ('ol', 695), ('dy', 556), ('or', 476), ('aiin', 403), ('s', 314), ('ar', 235), ('al', 172), ('r', 145), ('ly', 116)]
+  Unique suffixes: 24
+
+=== SUFFIX-LAYER SUMMARY (Mutual Info I(coda; X) in bits) ===
+subset                 H(coda)   I(stem)   I(prev_coda)   I(line_pos)  winner      
+  H-track FULL          3.1061    0.9734         0.0756        0.0635  stem
+  Currier B only        2.9477    1.0086         0.0555        0.0768  stem
+  Currier A only        3.2255    1.0646         0.0928        0.0786  stem
+
+###############################################################
+# LAYER 2: MIDDLE/stem — where project's state machine lives  #
+###############################################################
+
+--- H-track FULL MIDDLE layer (n=19836 tokens) ---
+  Marginal H(middle)        = 6.3640 bits  (n_unique=1660)
+  H(middle | prefix)        = 4.7728  [I=+1.5912, n_kept_prefixes=34/35]
+  H(middle | prev_middle)   = 4.5962  [I=+1.7679, n_pairs=15996]
+  H(middle | line_pos_bin)  = 5.9461  [I=+0.4179, n_bins=10]
+  RANKED:
+     prev_middle: I = 1.7679 bits  (27.8% of H(middle))
+          prefix: I = 1.5912 bits  (25.0% of H(middle))
+        line_pos: I = 0.4179 bits  (6.6% of H(middle))
+  WITHIN-LINE-SHUFFLE NULL for I(middle; prev_middle):
+    null I mean = 1.7976 +/- 0.0120  (20 shuffles)
+    real I      = 1.7679
+    excess      = -0.0298 bits  (z = -2.48)
+
+--- Currier B only MIDDLE layer (n=14006 tokens) ---
+  Marginal H(middle)        = 5.9026 bits  (n_unique=1151)
+  H(middle | prefix)        = 4.3597  [I=+1.5429, n_kept_prefixes=32/35]
+  H(middle | prev_middle)   = 4.3567  [I=+1.5459, n_pairs=11715]
+  H(middle | line_pos_bin)  = 5.4830  [I=+0.4196, n_bins=10]
+  RANKED:
+     prev_middle: I = 1.5459 bits  (26.2% of H(middle))
+          prefix: I = 1.5429 bits  (26.1% of H(middle))
+        line_pos: I = 0.4196 bits  (7.1% of H(middle))
+  WITHIN-LINE-SHUFFLE NULL for I(middle; prev_middle):
+    null I mean = 1.5525 +/- 0.0168  (20 shuffles)
+    real I      = 1.5459
+    excess      = -0.0066 bits  (z = -0.39)
+
+--- Currier A only MIDDLE layer (n=5585 tokens) ---
+  Marginal H(middle)        = 6.7527 bits  (n_unique=831)
+  H(middle | prefix)        = 4.9626  [I=+1.7901, n_kept_prefixes=23/35]
+  H(middle | prev_middle)   = 4.0563  [I=+2.6964, n_pairs=4084]
+  H(middle | line_pos_bin)  = 6.0618  [I=+0.6909, n_bins=10]
+  RANKED:
+     prev_middle: I = 2.6964 bits  (39.9% of H(middle))
+          prefix: I = 1.7901 bits  (26.5% of H(middle))
+        line_pos: I = 0.6909 bits  (10.2% of H(middle))
+  WITHIN-LINE-SHUFFLE NULL for I(middle; prev_middle):
+    null I mean = 2.7821 +/- 0.0169  (20 shuffles)
+    real I      = 2.6964
+    excess      = -0.0857 bits  (z = -5.09)
+
+=== MIDDLE-LAYER SUMMARY (Mutual Info I(middle; X) in bits) ===
+subset                       H(mid)   I(prefix)   I(prev_middle)   I(line_pos)  winner        
+  H-track FULL (middle)      6.3640      1.5912           1.7679        0.4179  prev_middle
+  Currier B only (middle)    5.9026      1.5429           1.5459        0.4196  prev_middle
+  Currier A only (middle)    6.7527      1.7901           2.6964        0.6909  prev_middle

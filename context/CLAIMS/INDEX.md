@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2018 validated constraints | **Version:** 6.62 | **Date:** 2026-05-09
+**Total:** 2021 validated constraints | **Version:** 6.63 | **Date:** 2026-05-11
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -7561,6 +7561,33 @@ External instrument independently corroborates 7 categories of structural claims
 - **Most novel claim:** C2009 (A/B 70% Procrustes-aligned + 30% B-tightening) — refines the A/B architecture with quantitative shared-substrate-plus-extension decomposition.
 - **Cleanest corroboration:** C2014 (3/4 testable scaffolding-folio candidates flagged independently; f57v at rank 1 of 224) — independent methodology corroborates Phase 684 + C763/C764 + C497.
 - **Methodology contribution:** Tier 3 methodology notes M1 (positional vs distributional probe distinction) and M2 (char-level vs token-level test design for MIDDLE-class claims) clarify the boundaries of LM-based instrument validity.
+
+### Phase 693: MIDDLE-Layer Sequential Null and Class-Layer Sequential Structure (3 constraints)
+
+A clean Opus agent (no project framing) cold-read the H-track transcript and proposed a discriminator separating natural-language-like from state-machine signature via three conditional entropies of token suffix given (stem, prev-suffix, line-position). Initial run at the SUFFIX layer showed stem strongly dominates (NL-like signature per the cold agent's framing); re-run at the MIDDLE layer with a within-line shuffle null erased all apparent sequential dependency (real I ≤ null I across all subsets). Expert-advisor review (two passes) directed three follow-up tests before registration. All three completed; clean separation between MIDDLE-layer (co-occurrence-only) and 49-class layer (genuinely sequential) confirmed.
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2023 | **MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B.** Within-line shuffle null (randomize MIDDLE/class token order within each transcript line while preserving line membership and length; N=30 shuffles) on Currier B yields opposite verdicts at two abstraction layers. At the MIDDLE-string layer: real I(middle; prev_middle) = 1.546 bits vs null 1.553 ± 0.017, z = −0.39 (at-null). At the 49-class layer: real I(class; prev_class) = 0.264 vs null 0.215 ± 0.013, **z = +3.91 (significantly above null)**. Same data, two layers, two results. The C976/C1010 macro-state automaton at the 49-class projection is genuinely Markov-sequential; the MIDDLE-token layer below it is co-occurrence-only. C109/C997 forbidden pairs are bag-of-line co-occurrence prohibitions: directional analysis of all 17 pairs yields 0 real adjacent occurrences in BOTH directions, 16/17 with zero same-line co-occurrence (per C1552 phantom pattern), 1/17 (`he`→`t`) with both directions symmetrically suppressed against fwd_null=0.53 / bwd_null=0.63. The "forbidden transitions" terminology applies at the 49-class projection (per C783 directional); at the MIDDLE layer, the constraint is co-occurrence-forbidden (per C1118 75.2% bidirectional). Operationalizes via shuffle-null methodology the layer distinction already implicit in C1118 / C1212 / C1024 / C1034 / C886. | 2 | shuffle_null, MIDDLE_layer, class_layer, two_layer, co_occurrence_vs_transition, C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552 | b_middle_real=1.546. b_middle_null_mean=1.553. b_middle_null_sd=0.017. b_middle_z=-0.39. b_class_real=0.264. b_class_null_mean=0.215. b_class_null_sd=0.013. b_class_z=+3.91. forbidden_pairs_fwd=0. forbidden_pairs_bwd=0. fwd_null=0.53. bwd_null=0.63. pairs_with_zero_cooccurrence=16of17. n_shuffles=30. n_b_tokens=14006. n_b_lines=2291. |
+| 2024 | **Bio Section Carries Marginal Residual MIDDLE-Layer Sequential Structure in Currier B; Other Sections at-or-below Null.** Per-section within-line shuffle null on Currier B yields heterogeneous signatures. Section B (Bio, f74-f84 region): z = +1.49 (real I=1.137, null=1.104, excess +0.034). Section H (Herbal_B): z = −2.70. Section S (Stars/Recipe_B): z = −1.33. Section C (Cosmological foldouts, B-language text): z = −1.17. Section T (Top/intro B-tokens): z = −0.91. **Bio is the only B-section with positive residual sequential excess at the MIDDLE layer.** The whole-of-B at-null result (C2023, z = −0.39) is an average of Bio's marginal positive signal and four near-null-or-negative sections. Confirms C1048's prediction that BIO carries the strongest residual sequential structure in B. Section-level heterogeneity in residual sequential signal is consistent with C1047 (section-dynamics interaction absent at macro level but present at residual level) and C1055 (M2 near-section-decomposable). | 2 | shuffle_null, section_stratified, Bio_residual, B_section, MIDDLE_layer, C1047, C1048, C1055, C1085, C1086, C1116, C1404, C2023 | bio_n=4216. bio_real_I=1.137. bio_null=1.104. bio_excess=+0.034. bio_z=+1.49. herbal_z=-2.70. stars_recipe_z=-1.33. cosmo_z=-1.17. top_z=-0.91. only_positive_section=Bio. |
+| 2025 | **Currier A Class-Layer Shuffle Null at-null Confirms C225 via Independent Methodology.** Class-layer within-line shuffle null on Currier A yields real I(class; prev_class) = 0.707 bits vs null 0.698 ± 0.023, z = +0.37 (at-null). Confirms C225's "A Transition Validity = 2.1%" claim via independent shuffle-null methodology — A has minimal class-Markov transition structure. C346's reported "sequential coherence" (1.20x) therefore lives at a different organizational level than class-Markov adjacency: it must be record-level / positional / compositional (C233 LINE_ATOMIC, C240 NON_SEQUENTIAL_CATEGORICAL_REGISTRY, C422 DA articulation, C475/C729 PP co-occurrence compliance, C964 boundary-constrained free-interior). Combined with A's MIDDLE-layer shuffle-null excess of z = −5.09 (the most strongly negative across subsets — entirely sparsity-driven exclusion of unrealizable pairs), A is bag-of-line at both class and MIDDLE layers despite C346's within-record coherence. Methodological strengthening of C225: shuffle-null is a stricter test than the 2.1% validity threshold count. | 2 | shuffle_null, Currier_A, class_layer, sequential_coherence_locus, C225_corroboration, C225, C230, C231, C233, C240, C346, C422, C475, C729, C964 | a_class_real=0.707. a_class_null_mean=0.698. a_class_null_sd=0.023. a_class_z=+0.37. a_middle_z=-5.09. a_class_coverage=47.5pct. n_a_tokens=5585. methodology=within_line_shuffle. corroborates=C225. |
+
+### Phase 693 cross-references with existing constraints
+
+| New | References / extends |
+|-----|----------------------|
+| C2023 | C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552 |
+| C2024 | C1047, C1048, C1055, C1085, C1086, C1116, C1404, C2023 |
+| C2025 | C225, C230, C231, C233, C240, C346, C422, C475, C729, C964 |
+
+### Phase 693 highlights
+
+- **Strongest single result:** C2023 (clean separation at z = +3.91 vs z = −0.39 between class and MIDDLE layers in B) — operationalizes via shuffle-null the layer distinction the constraint system has been dancing around since C1118.
+- **Cleanest corroboration:** C2025 (A class-layer z = +0.37 confirms C225's 2.1% transition validity via shuffle-null methodology).
+- **Section heterogeneity:** C2024 (Bio is the only positive-residual B-section; the whole-of-B at-null result is a section-averaged artifact).
+- **Methodological contribution:** Within-line shuffle null is the cleanest available test for distinguishing co-occurrence from sequence within line units; recommended for any future constraint whose layer-of-application is ambiguous.
+- **BCSC amendment:** `currierB.bcsc.yaml` HAZARD_TOPOLOGY_FIXED guarantee reworded to make the class-vs-MIDDLE layer distinction explicit (C783 directional at class layer; C1118 bidirectional at MIDDLE layer; C2023 confirms both via shuffle-null).
+- **Origin:** Externally-prompted finding from a clean Opus agent cold read. Two expert-advisor passes ratified the layer-separation reading.
 
 ---
 

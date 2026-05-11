@@ -4,6 +4,47 @@
 
 ---
 
+## Version 6.63 (2026-05-11) - Phase 693: MIDDLE-Layer Sequential Null and Class-Layer Sequential Structure
+
+### Summary
+
+External-prompt origin: a clean Opus agent (no project framing) cold-read the H-track transcript and proposed a discriminator between natural-language-like and state-machine signature via conditional entropies of token suffix given (stem, prev-suffix, line-position). Tested at the SUFFIX layer (cold agent's literal request) and at the MIDDLE layer (where the project's forbidden-pair structure actually lives, per C109/C997). Added a within-line shuffle null to separate genuine sequential dependency from bag-of-line composition.
+
+**Result:** Clean separation between layers. MIDDLE-token layer in Currier B is at-null (z = −0.39) — apparent prev_middle predictive power is bag-of-line composition. 49-class layer is significantly above null (z = +3.91) — the macro-state automaton (C976/C1010) is genuinely Markov-sequential. The "forbidden transitions" terminology applies at the 49-class projection (C783 directional); at the MIDDLE layer the constraint is co-occurrence-forbidden (C1118 bidirectional). Operationalizes the layer distinction the constraint system has been dancing around since C1118.
+
+Two expert-advisor validation passes ratified the layer-separation reading and recommended three follow-up tests before registration. All three completed; all confirmed expert predictions.
+
+### Sub-tests
+
+- **T1** Per-section shuffle null within Currier B: Bio is the only positive-residual section (z = +1.49); whole-of-B at-null is a section-averaged artifact.
+- **T2** Directional analysis on the 17 forbidden pairs: 0 real adjacent occurrences in BOTH directions; 16/17 zero same-line co-occurrence (per C1552 phantom pattern); 1/17 (`he`→`t`) symmetrically suppressed against null fwd=0.53 / bwd=0.63.
+- **T3 (KILLER)** Class-layer shuffle null: Currier B z = +3.91 (sequential); Currier A z = +0.37 (at-null, confirms C225 via independent methodology); H-track z = +2.74 (marginal).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2023 | MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B (Tier 2) |
+| C2024 | Bio Section Residual MIDDLE-Layer Sequential Structure (Tier 2; section-stratified heterogeneity) |
+| C2025 | Currier A Class-Layer Shuffle Null Confirms C225 via Independent Methodology (Tier 2) |
+| Phase 693 dir | New phase directory with scripts/, results/, INDEX.md |
+| context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml | HAZARD_TOPOLOGY_FIXED guarantee reworded to make class-vs-MIDDLE layer distinction explicit |
+| context/CLAIMS/INDEX.md | 3 new constraints; total 2018 → 2021; version 6.62 → 6.63 |
+| CLAUDE.md | Version 6.62 → 6.63; constraints → 2021; phases 691 → 693 |
+
+### Key Findings
+
+- **Two-layer architecture confirmed.** Class-layer transitions (C976/C1010, spectral gap 0.894) are genuinely Markov-sequential; MIDDLE-layer forbidden pairs (C109/C997) are co-occurrence-forbidden at line level, not transitional.
+- **Bio section is the marginal sequential carrier in B.** C2024 confirms C1048's prediction that Bio carries the strongest residual sequential structure among B sections.
+- **A is bag-of-line at both layers.** Class z = +0.37, MIDDLE z = −5.09 (entirely sparsity-driven). C346's "sequential coherence" must live at record-level / positional / compositional layers, not class-Markov adjacency.
+- **Methodological precedent:** Within-line shuffle null is the cleanest available test for distinguishing co-occurrence from sequence within line units. Recommended for any future constraint whose layer-of-application is ambiguous.
+
+### Origin Note
+
+This phase was prompted by external adversarial review. A user-spawned clean Opus agent with only the raw transcript (no constraint files, no phase reports, no structural contracts) gave a cold read of the corpus and proposed the entropy discriminator. The expert-advisor (constraint-validation pass) then directed the test design, and the within-line shuffle null produced the clean two-layer separation. The constraint-system framing was sharpened, not overturned — but the methodology demonstrated that cold-read external review can productively interrogate the project's terminological precision.
+
+---
+
 ## Version 6.57 (2026-05-09) - Phase 691: Voynich Char-Level Language Model External Corroboration
 
 ### Summary

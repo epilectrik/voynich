@@ -1,0 +1,74 @@
+Loading transcript + morphology + class lookup...
+  Loaded 480 token->class mappings.
+
+======================================================================
+T1: MIDDLE-layer shuffle null stratified by section
+======================================================================
+
+   section   n_tok   H(mid)   real_I   null_I    excess        z
+         B    4216   4.7206   1.1372   1.1036   +0.0336    +1.49
+         C     703   5.6986   2.8245   2.8790   -0.0545    -1.17
+         H    1911   6.0810   2.6118   2.7082   -0.0965    -2.70
+         S    6971   6.0193   1.8610   1.8863   -0.0253    -1.33
+         T     205   5.4395   3.6342   3.6881   -0.0539    -0.91
+
+Loaded 17 forbidden pairs.
+
+======================================================================
+T2: Forward vs backward count for 17 forbidden MIDDLE pairs
+======================================================================
+(real fwd = count(A then B); real bwd = count(B then A); both line-internal)
+
+pair (A->B)             real_fwd  null_fwd  real_bwd  null_bwd  same_line  verdict                 
+  shey -> aiin                   0      0.00         0      0.00          0  no-cooccur (phantom?)
+  shey -> al                     0      0.00         0      0.00          0  no-cooccur (phantom?)
+  shey -> c                      0      0.00         0      0.00          0  no-cooccur (phantom?)
+  chol -> r                      0      0.00         0      0.00          0  no-cooccur (phantom?)
+  chedy -> ee                    0      0.00         0      0.00          0  no-cooccur (phantom?)
+  dy -> aiin                     0      0.00         0      0.00          0  no-cooccur (phantom?)
+  dy -> chey                     0      0.00         0      0.00          0  no-cooccur (phantom?)
+  l -> chol                      0      0.00         0      0.00          0  no-cooccur (phantom?)
+  or -> dal                      0      0.00         0      0.00          0  no-cooccur (phantom?)
+  chey -> chedy                  0      0.00         0      0.00          0  no-cooccur (phantom?)
+  chey -> shedy                  0      0.00         0      0.00          0  no-cooccur (phantom?)
+  ar -> dal                      0      0.00         0      0.00          0  no-cooccur (phantom?)
+  c -> ee                        0      0.00         0      0.00          0  no-cooccur (phantom?)
+  he -> t                        0      0.53         0      0.63          4  BOTH-SUPPRESSED (cooccur)
+  he -> or                       0      0.00         0      0.00          0  no-cooccur (phantom?)
+  shedy -> aiin                  0      0.00         0      0.00          0  no-cooccur (phantom?)
+  shedy -> o                     0      0.00         0      0.00          0  no-cooccur (phantom?)
+
+TOTAL                          0      0.53         0      0.63          4
+
+  Forward suppression: real 0 vs null 0.53  (ratio=0.000)
+  Backward suppression: real 0 vs null 0.63  (ratio=0.000)
+  Asymmetry (fwd_ratio vs bwd_ratio): 0.000
+  Co-occurrence (both in same line): 4 pairs/lines (compare to total real adjacencies 0)
+
+======================================================================
+T3 (KILLER): Class-layer shuffle null
+======================================================================
+
+  --- H-track FULL ---
+  Class coverage: 11514/19836 = 58.0%
+  H(class)             = 4.5075 bits  (n_unique=42)
+  Real I(class; prev)  = 0.2836  (n_pairs=8015)
+  Null mean +/- sd     = 0.2554 +/- 0.0103  (N=30 shuffles)
+  Excess (real - null) = +0.0282 bits  (z = +2.74)
+  -> Class-layer is at-null. Marginal effect.
+
+  --- Currier B only ---
+  Class coverage: 8755/14006 = 62.5%
+  H(class)             = 4.3107 bits  (n_unique=42)
+  Real I(class; prev)  = 0.2644  (n_pairs=6524)
+  Null mean +/- sd     = 0.2154 +/- 0.0125  (N=30 shuffles)
+  Excess (real - null) = +0.0490 bits  (z = +3.91)
+  -> Class-layer survives shuffle null. Macro-state automaton is genuinely sequential.
+
+  --- Currier A only ---
+  Class coverage: 2655/5585 = 47.5%
+  H(class)             = 4.6394 bits  (n_unique=41)
+  Real I(class; prev)  = 0.7067  (n_pairs=1431)
+  Null mean +/- sd     = 0.6982 +/- 0.0228  (N=30 shuffles)
+  Excess (real - null) = +0.0085 bits  (z = +0.37)
+  -> Class-layer is at-null. Marginal effect.
