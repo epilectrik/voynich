@@ -21,7 +21,7 @@ For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTI
 
 ## The Short Version
 
-The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar**, a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 disfavored transitions) is established at high confidence across 1,966 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 51 procedural chapters matched to 41 folios covering 96% of the *Testamentum*'s procedural content, validated by a 10-dimension permutation test (0/10,000 shuffles, p < 0.0001).
+The Voynich Manuscript is not a language. It is not a cipher. It is a **control grammar**, a collection of structured programs encoding operational procedures in a purpose-built notation. The structural analysis (49 instruction classes, 18-atom compositional grammar, 6-state macro-automaton, 17 disfavored transitions) is established at high confidence across 2,021 validated constraints. The leading interpretive hypothesis identifies the source tradition as Pseudo-Lullian alchemy (*Testamentum* Practica and Liber Mercuriorum), with 51 procedural chapters matched to 41 folios covering 96% of the *Testamentum*'s procedural content, validated by a 10-dimension permutation test (0/10,000 shuffles, p < 0.0001).
 
 The manuscript reorganizes this content for workshop use: preparation procedures cluster in Herbal B, transmutation procedures cluster in Section S, and theoretical content is entirely absent. An 18-atom compositional architecture produces readable operational descriptions for every token (100% coverage), and cross-folio vocabulary analysis has identified specific tokens encoding material introduction (`dar`, 6/6 partition) and quality checking (`chekar`, 7/7 folios).
 
@@ -88,7 +88,7 @@ Every Currier B token decomposes into compositional parts:
 ```
 
 - **PREFIX** selects the operational channel and encodes line position. The base character (h, e, k, o, a) determines which family of core actions is legal — within-base MIDDLE similarity is 0.950, between-base drops to 0.515. PREFIXes read as two-atom instructions: [VERB]+[TARGET] — for example, ok = "operate heat," ch = "adjust watch." Sister pairs (ch/sh, ok/ot) diverge through vocabulary selection, not by changing what any MIDDLE means.
-- **MIDDLE** is the primary discriminative content. MIDDLEs are themselves compositional, decomposing as **HEAD + MOD\* + TERM**: HEAD sets the operational domain (k=thermal, e=cooling, o=staging, a=yielding, t=transfer), the MOD stack parametrizes the action, and TERM sets the exit condition. The frame (HEAD+TERM) predicts 64% of operational category; modifiers shift the remaining 36%. Terminals follow a three-tier opacity gradient controlling suffix attachment: opaque terminals (m, n, y) suppress suffix; transparent h passes through at 98.7%.
+- **MIDDLE** is the primary discriminative content. MIDDLEs are themselves compositional, decomposing as **HEAD + MOD\* + TERM**: HEAD sets the operational domain (k=thermal, e=thermal stabilizer/dampener, o=staging, a=yielding, t=transfer), the MOD stack parametrizes the action, and TERM sets the exit condition. The frame (HEAD+TERM) predicts 64% of operational category; modifiers shift the remaining 36%. Terminals follow a three-tier opacity gradient controlling suffix attachment: opaque terminals (m, n, y) suppress suffix; transparent h passes through at 98.7%.
 - **SUFFIX** is a parallel compositional domain using a 16-atom subset of MIDDLE's inventory. Two alternating suffix modes cycle within every qualifying paragraph: Mode A uses THERMAL/MONITORING atoms (specification), Mode B uses STAGING/FLOW atoms (continuation). The modes interleave at 80%.
 - **ARTICULATOR** is an optional line-position marker (4.41% of tokens) that marks *where* in the line a token sits, not *what* it does — zero information about operational category beyond what MIDDLE already provides.
 
@@ -150,6 +150,10 @@ When the system drifts toward a hazard, the grammar provides escape routes. Haza
 ### Generative Sufficiency
 
 A Markov model using the discovered grammar (M2.1: quintile-conditioned 49×49 transition matrices + symmetric disfavored-transition suppression) passes **21/21 structural metrics** — reproducing every measurable property of the real text. A null model with no sequential structure passes at most 14/21. The 7 tests M0 cannot pass require sequential structure, topological constraints, or positional awareness that frequency sampling cannot produce. For the full progression, see **[Markov Model Evolution](context/MARKOV_MODEL_EVOLUTION.md)**.
+
+**Independent corroboration (Phase 691):** Char-level n-gram models trained on H-track plateau at n=3 (1.95 bpc), with diminishing returns past lag-3 and active degradation past lag-5 (C2018). Voynich's character-level correlation length is ~3 characters — local statistics capture the common-case structure, matching the M2.1 framing.
+
+**Two-layer transition architecture (Phase 693, C2023):** The "closed grammar" framing holds at the **49-class projection layer** (the layer where M2.1 operates and passes 21/21). At the **MIDDLE-token layer** below it, within-folio shuffle null shows no excess sequential structure (z = −0.39 in Currier B). The 17 disfavored class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly *bidirectional co-occurrence prohibitions* (C1118). Different layers, different mechanisms — both governed by the same grammar, but the sequential closure claim is specifically a class-projection-level result.
 
 For the complete formal specification of all structures described above, see **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)**.
 
@@ -362,7 +366,7 @@ Certain questions remain open:
 
 - **What specific substance is referenced by a token** — The grammar encodes operational functions, not material names. `dar` means "add material" but not WHICH material. The *Testamentum* recipe context supplies material identity externally.
 - **Who wrote it** — Nothing in the structure identifies an author or school. The historical network analysis identifies the Vienna-Padua academic corridor as the most likely context (Tier 4).
-- **What individual tokens "translate to" in natural language** — Operational glosses (k=heat, e=cool) describe function within the control grammar. They are not word meanings in the linguistic sense.
+- **What individual tokens "translate to" in natural language** — Operational glosses (k=heat, e=stabilize, h=monitor) describe function within the control grammar. They are not word meanings in the linguistic sense.
 - **What the illustrations depict** — Illustrations do not constrain text content (statistically proven, C138). However, some illustration-structure-product matches exist (f31r/rose/rosewater) at Tier 3-4.
 - **What the remaining ~53 unmatched folios encode** — They use the same grammar and vocabulary as the matched folios but have not been mapped to specific historical source chapters.
 
@@ -395,9 +399,9 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 667 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 693 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
-The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 667 phases, each building on validated prior work, produced 1,966 constraints, a depth no single analytical session could achieve.
+The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across phases. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before. 693 phases, each building on validated prior work, produced 2,021 constraints, a depth no single analytical session could achieve.
 
 For methodology, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 

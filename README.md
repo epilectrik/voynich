@@ -6,7 +6,7 @@ The leading interpretive hypothesis identifies the source tradition as **Pseudo-
 
 The approach is structural rather than linguistic. Just as one can prove an unknown notation encodes music — not by translating, but by showing its symbol families correspond to the harmonic series and its forbidden combinations to dissonant intervals — we identified the domain of the Voynich's notation by showing that its disfavored transitions match physical failure modes, its convergence behavior matches distillation physics, and its recovery architecture matches Brunschwig's historical practice. **We did not translate the manuscript. We located the domain it operates in.**
 
-This conclusion rests on 1,966 validated constraints from 667 research phases across 37,957 tokens.
+This conclusion rests on 2,021 validated constraints from 693 research phases across 37,957 tokens.
 
 ---
 
@@ -104,7 +104,7 @@ Every Currier B token decomposes as: **PREFIX + MIDDLE + SUFFIX**, where MIDDLE 
 
 | Tier | Atoms | Examples |
 |------|-------|---------|
-| **LOCKED** (8) | k=heat, e=cool, h=watch, y=end, i=iterate, n=bind, a=yield, m=final | Validated against 91 compound appearances + 18 recipe-matched folios |
+| **LOCKED** (8) | k=heat, e=stabilize/dampen, h=monitor, y=end, i=iterate, n=bind, a=yield, m=final | Validated against 91 compound appearances + 18 recipe-matched folios |
 | **SOLID** (6) | d=do/execute, t=transfer, l=state, o=arrange, c=adjust, p=pause | Validated against compound decomposition + 7-axis discrimination battery (C1934) |
 | **PLAUSIBLE** (5) | f=flag, s=sequence, r=respond, g=?, x=diagram | Partial evidence |
 
@@ -120,9 +120,9 @@ The e/k pair composes non-literally: k+e = sustained heat, k+ee = gentle/balneum
 
 These approaches have been structurally ruled out (Tier 1 — cannot be retried):
 
-- Natural language encoding (C132: language encoding CLOSED)
-- Cipher / substitution system (C130: 0.19% reference rate to any known language)
-- Glossolalia / random generation (C124: 100% grammar coverage rules out meaningless text)
+- Natural language encoding (C132: language encoding CLOSED; C2015: Voynich is ~2x more compressible than matched-size natural language at the character level; C2022: pretrained-model probes show anti-NL signature — real Voynich has *higher* perplexity than shuffled Voynich, the structural arrangement actively contradicts NL char-level priors)
+- Cipher / substitution system (C130: 0.19% reference rate to any known language; C2017: three published cipher hypotheses — Bax 2014, Cheshire 2019, Currier-like — decode at 4.04–4.16x worse than baseline, none meet the 1.5x plausibility threshold; C1976: polyalphabetic cipher rejected with stable atom semantics)
+- Glossolalia / random generation (C124: 100% grammar coverage rules out meaningless text; C2018: Voynich n-gram bpc plateaus at n=3 with structural depth)
 - Illustrations constrain text (C138: swap invariance confirmed)
 - Calendar / seasonal encoding of Zodiac pages (F-AZC-010: 0/4 predictions confirmed)
 - Simple cycle topology for AZC diagrams (C455)
@@ -132,7 +132,7 @@ These approaches have been structurally ruled out (Tier 1 — cannot be retried)
 
 ## How This Was Built
 
-This project used AI-assisted computational analysis over 667 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1), they cannot be retried, preventing circular investigation. An embedded expert-advisor agent (carrying all 1,966 constraints) validates new findings against the full body of existing knowledge.
+This project used AI-assisted computational analysis over 693 research phases. Every finding became a numbered constraint with an explicit confidence tier and provenance chain. Falsified hypotheses were permanently closed (Tier 1), they cannot be retried, preventing circular investigation. An embedded expert-advisor agent (carrying all 2,021 constraints) validates new findings against the full body of existing knowledge.
 
 The result: knowledge compounds across phases. Early phases discovered morphology, middle phases built grammar, late phases matched individual recipes to folios — and none of this work was ever lost. For methodology details, tools, and repository structure, see **[METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md)**.
 
@@ -142,8 +142,8 @@ The result: knowledge compounds across phases. Early phases discovered morpholog
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,966 |
-| Research phases | 667 |
+| Validated constraints | 2,021 |
+| Research phases | 693 |
 | Model fits tested | 75 |
 | Documented folios | 48 (of 83 Currier B) with per-folio analysis notes |
 | Recipe chapter coverage | 51 procedural chapters → 41 folios (96% of *Testamentum* expanded procedural content) |

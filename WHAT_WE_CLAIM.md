@@ -2,7 +2,7 @@
 
 This document states the project's claims explicitly, with the evidence tier and constraint basis for each. It exists because the Voynich Manuscript attracts extraordinary claims, and readers deserve to know exactly where our confidence is high and where it is not.
 
-For the full constraint system, see `context/CLAIMS/INDEX.md` (1,966 validated constraints).
+For the full constraint system, see `context/CLAIMS/INDEX.md` (2,021 validated constraints).
 
 ---
 
@@ -24,7 +24,11 @@ These claims are grounded in statistical evidence from the transcript. They do n
 
 - **The manuscript uses four structurally distinct registers (A, B, AZC, HT) sharing a common compositional substrate.** All four registers build tokens from the same 18 atoms but deploy them in different proportions. Pairwise Jaccard similarity of atom inventories is 0.895 or higher. (C1499, C1500-C1509)
 
-- **The notation is not a natural language and not an ordinary cipher.** Language encoding tests: CLOSED (C132). Micro-cipher tests: 0/18 passed (C207). Reference rate to any known language: 0.19% (C130). The notation has no linguistic source text.
+- **The notation is not a natural language and not an ordinary cipher.** Multiple independent lines of evidence:
+  - **External pretrained-model probes (Phase 691, strongest single test):** TinyLlama-1.1B fine-tuned on H-track achieves 24.2 perplexity (4.60 bits/token), comparable to its perplexity on Python code (22.4) — Voynich is as learnable as code, not as natural language. ByT5 char-level model shows real Voynich has *higher* perplexity than token-shuffled Voynich (6.96 vs 6.65 bpc): the structural arrangement actively contradicts NL char-level priors (C2022).
+  - **Char-level compression (Phase 691):** Voynich is ~2x more compressible than matched-size Latin (SISMEL) and English (Brunschwig) at the character level (Voynich BPC 0.893 vs Latin 1.704, English 1.403). Char-level statistics are consistent with constructed slot-grammar notation, not natural-language phoneme distributions (C2015).
+  - **Cipher hypothesis falsification (Phase 691):** Three published cipher hypotheses (Bax 2014, Cheshire 2019, Currier-like consonant cipher) decode at 4.04–4.16x worse than real-English baseline. None meet the 1.5x plausibility threshold for a real cipher (C2017). Polyalphabetic cipher independently rejected via stable atom semantics across PREFIX channels (C1976).
+  - **Internal evidence:** Language encoding tests CLOSED (C132). Micro-cipher tests: 0/18 passed (C207). Reference rate to any known language: 0.19% (C130). The notation has no linguistic source text.
 
 - **A simple Markov model using the discovered grammar reproduces 87% of measurable structure.** The M2.1 generative model passes 21/21 closure metrics. This means the grammar is sufficient to regenerate the data's statistical properties. (C1365)
 

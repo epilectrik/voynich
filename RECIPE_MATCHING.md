@@ -369,7 +369,7 @@ All scripts, data, and results are in this repository:
 | Brunschwig 1512 compound features | `sources/brunschwig_1512/brunschwig_1512_compound_features.json` |
 | Brunschwig 1500 (Small Book) | `sources/brunschwig_1500/` |
 | Voynich transcript | EVA interlinear format, H-track (loaded via `scripts/voynich.py`) |
-| Per-folio analysis | `context/FOLIOS/f*.md` (40 documented folios) |
+| Per-folio analysis | `context/FOLIOS/f*.md` (48 documented folios) |
 | Constraint registry | `context/CLAIMS/INDEX.md` (C1882-C1938) |
 
 ---
