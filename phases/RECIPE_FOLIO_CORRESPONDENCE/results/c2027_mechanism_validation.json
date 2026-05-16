@@ -1,0 +1,82 @@
+{
+  "method": "C2027 mechanism discriminating control via family-stratified excess",
+  "n_paragraphs": 163,
+  "n_perm": 200,
+  "length_filter": "20-50 word paragraphs",
+  "total_pair_excess": 0.004762745098039221,
+  "family_breakdown": [
+    {
+      "family": "ch_observe",
+      "n_pairs": 2,
+      "obs_same": 0,
+      "null_same": 0.0,
+      "obs_rate": 0.0,
+      "null_rate": 0.0,
+      "excess": 0.0
+    },
+    {
+      "family": "d_addition",
+      "n_pairs": 8,
+      "obs_same": 0,
+      "null_same": 0.0,
+      "obs_rate": 0.0,
+      "null_rate": 0.0,
+      "excess": 0.0
+    },
+    {
+      "family": "heat_cycle",
+      "n_pairs": 653,
+      "obs_same": 64,
+      "null_same": 46.79,
+      "obs_rate": 0.098,
+      "null_rate": 0.0717,
+      "excess": 0.02636
+    },
+    {
+      "family": "iteration",
+      "n_pairs": 255,
+      "obs_same": 17,
+      "null_same": 16.93,
+      "obs_rate": 0.0667,
+      "null_rate": 0.0664,
+      "excess": 0.00029
+    },
+    {
+      "family": "late_term",
+      "n_pairs": 322,
+      "obs_same": 24,
+      "null_same": 12.55,
+      "obs_rate": 0.0745,
+      "null_rate": 0.039,
+      "excess": 0.03556
+    },
+    {
+      "family": "o_dispatch",
+      "n_pairs": 5,
+      "obs_same": 0,
+      "null_same": 0.0,
+      "obs_rate": 0.0,
+      "null_rate": 0.0,
+      "excess": 0.0
+    },
+    {
+      "family": "other",
+      "n_pairs": 3855,
+      "obs_same": 162,
+      "null_same": 166.44,
+      "obs_rate": 0.042,
+      "null_rate": 0.0432,
+      "excess": -0.00115
+    }
+  ],
+  "heat_cycle_excess": 0.02636,
+  "non_hc_excesses": {
+    "ch_observe": 0.0,
+    "d_addition": 0.0,
+    "iteration": 0.00029,
+    "late_term": 0.03556,
+    "o_dispatch": 0.0
+  },
+  "verdict": "MISIDENTIFIED",
+  "reasoning": "non-heat-cycle family 'late_term' has higher excess (+0.03556) than heat_cycle (+0.02636). Mechanism is real but mis-attributed to heat-cycle."
+}

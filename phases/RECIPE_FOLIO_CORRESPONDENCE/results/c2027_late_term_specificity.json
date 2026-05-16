@@ -1,0 +1,93 @@
+{
+  "method": "Family-stratified autocorr excess across 3 groups",
+  "n_perm": 200,
+  "groups": {
+    "matched-S": {
+      "n_paragraphs": 163,
+      "families": {
+        "other": {
+          "n_pairs": 3855,
+          "obs_rate": 0.04202,
+          "null_rate": 0.04333,
+          "excess": -0.0013
+        },
+        "heat_cycle": {
+          "n_pairs": 653,
+          "obs_rate": 0.09801,
+          "null_rate": 0.0718,
+          "excess": 0.02621
+        },
+        "iteration": {
+          "n_pairs": 255,
+          "obs_rate": 0.06667,
+          "null_rate": 0.06533,
+          "excess": 0.00133
+        },
+        "late_term": {
+          "n_pairs": 322,
+          "obs_rate": 0.07453,
+          "null_rate": 0.03682,
+          "excess": 0.03772
+        }
+      }
+    },
+    "unmatched-S": {
+      "n_paragraphs": 52,
+      "families": {
+        "other": {
+          "n_pairs": 1350,
+          "obs_rate": 0.02667,
+          "null_rate": 0.03413,
+          "excess": -0.00747
+        },
+        "iteration": {
+          "n_pairs": 110,
+          "obs_rate": 0.06364,
+          "null_rate": 0.08409,
+          "excess": -0.02045
+        },
+        "heat_cycle": {
+          "n_pairs": 158,
+          "obs_rate": 0.07595,
+          "null_rate": 0.05367,
+          "excess": 0.02228
+        },
+        "late_term": {
+          "n_pairs": 108,
+          "obs_rate": 0.06481,
+          "null_rate": 0.04736,
+          "excess": 0.01745
+        }
+      }
+    },
+    "Section B": {
+      "n_paragraphs": 18,
+      "families": {
+        "other": {
+          "n_pairs": 561,
+          "obs_rate": 0.0713,
+          "null_rate": 0.07684,
+          "excess": -0.00553
+        },
+        "late_term": {
+          "n_pairs": 17,
+          "obs_rate": 0.05882,
+          "null_rate": 0.01765,
+          "excess": 0.04118
+        },
+        "iteration": {
+          "n_pairs": 16,
+          "obs_rate": 0.0625,
+          "null_rate": 0.02125,
+          "excess": 0.04125
+        },
+        "heat_cycle": {
+          "n_pairs": 84,
+          "obs_rate": 0.03571,
+          "null_rate": 0.07065,
+          "excess": -0.03494
+        }
+      }
+    }
+  }
+}

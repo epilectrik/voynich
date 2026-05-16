@@ -4,6 +4,59 @@
 
 ---
 
+## Version 6.65 (2026-05-16) - C2027 Audit + Class-Adjacency Mining Refinement
+
+### Summary
+
+Morning session: applied the framework-as-null discriminating-control discipline to C2027 (registered yesterday). Crazy-expert called the discriminating test ("weaponize C2027 against itself") in morning consult. Family-stratified shuffle null + cross-group comparison + within-line shuffle controls falsified three of four pillars of C2027 within hours.
+
+**Result:** C2027 retracted to Tier 1 with full narrative. Three replacement constraints registered (C2028, C2029, C2030) covering the surviving structural facts at the correct scope. Methodology: discriminating-test discipline catches expert speculation as effectively as initial registrations.
+
+### Sub-tests
+
+- **C2027 mechanism control**: family-stratified within-paragraph shuffle null revealed late_term (+0.038) and heat_cycle (+0.026) both contribute to C2027's +0.0037 baseline; iteration markers (aii) at +0.001 don't chain.
+- **Cross-group specificity**: Section B near-zero on heat-cycle adjacency (+0.003); both matched-S and unmatched-S Section S positive (+0.034/+0.044). The "matched-S unique" framing of C2027 is wrong — the pattern is Section-level.
+- **Within-line vs within-paragraph shuffle**: tested whether late_term clustering was positional artifact (crazy-expert 70-30 prediction). It wasn't — within-line excess +0.0365 vs within-paragraph +0.0391, delta only +0.0026. Genuine adjacency.
+- **Multi-folio daiin replication**: pre-registered binary thresholds. 1/3 folios passed all 3 criteria. Late-position bias is f114r-specific, doesn't generalize. C2029 stays strict measurement-only.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2027 | RETRACTED to Tier 1; full narrative for traceability |
+| C2028 | Section S vs Section B heat-cycle MIDDLE-class adjacency divergence (Tier 2) |
+| C2029 | Iteration markers (aii / daiin) do NOT chain at adjacency — measurement only (Tier 2) |
+| C2030 | Voynich-wide late-term MIDDLE-class within-line adjacency clustering (Tier 2) |
+| C1995 | Verbosity reframe candidate formally FALSIFIED — both interpretive framings now retracted |
+| context/CLAIMS/INDEX.md | C2027 retraction + 3 new constraints; total 2023 → 2025; version 6.64 → 6.65 |
+| CLAUDE.md | Version 6.64 → 6.65; constraints → 2025; retraction count → 6 |
+| memory/feedback_expert_predictions_are_pre_registrations.md | NEW methodology rule: expert mechanism predictions are pre-registrations |
+| memory/project_daiin_position_variability_2026_05_16.md | NEW: daiin distribution varies by folio (3 folios tested) |
+| memory/project_closure_protocol_grammar_future_target.md | NEW: future-investigation target for closure bigram grammar |
+| memory/project_section_s_verbosity_reframe_candidate.md | Updated to FALSIFIED status |
+| memory/project_section_s_remap_2026_05_15.md | Corrected the "f104-105 lacks signature" misreading |
+| memory/MEMORY.md | Index updated with 3 new entries |
+
+### Key Findings
+
+- **C2027's mechanism interpretation was wrong on three pillars** caught within 24 hours of registration: matched-S unique framing FALSE, iteration-encoding mechanism PARTIALLY FALSE, distribution misread (paragraph-level mean confused with token-density vs adjacency-rule).
+- **Real structural finding**: Section S vs Section B differ on heat-cycle MIDDLE-class adjacency. Section S clusters (+0.034 to +0.044 across length filters and matched/unmatched). Section B doesn't (+0.003 to +0.006). This is a Section-level architectural distinction.
+- **daiin doesn't chain**: zero adjacent daiin pairs across 4 daiin-heavy folios; corpus excess +0.001. C1953 documents daiin count-clustering; this finding establishes count and adjacency are independent.
+- **late_term Voynich-wide clustering**: closure-class MIDDLEs (ar/ary/aly/al) cluster adjacently across all Voynich sections at +0.036 within-line excess. Genuine adjacency, not positional artifact. Predicts (untested) closure protocol bigram grammar.
+- **Verbosity reframe FALSIFIED**: if Section S = Section B at higher verbosity, both should show the same structural signatures. They don't (heat-cycle adjacency differs by section).
+
+### Methodology Contributions
+
+- **Family-stratified shuffle null on MIDDLE-class adjacency**: stratifies the +0.0037 paragraph-level excess by MIDDLE-class family to isolate the mechanism source. Used in C2027 audit. Recommended for any future structural-signature mining that claims a specific class-driver.
+- **Within-line vs within-paragraph shuffle nulls**: discriminates positional artifact from genuine adjacency. Within-line preserves line membership and position; within-paragraph randomizes all positions. Comparison delta indicates positional contribution to observed excess.
+- **Expert predictions as pre-registrations**: new methodology rule (memory/feedback_expert_predictions_are_pre_registrations.md). When an expert offers a directional prediction with confidence rating, treat it as a pre-registered discriminating test, not a Tier 3 fact. Run the test before using the mechanism as scaffolding. Applies to both user speculation and expert-agent speculation.
+
+### Origin Note
+
+Session opened with user asking which of three options to pursue (verbosity reframe, class-adjacency mining, f104-105 vs PL Theorica). Both expert agents (now fresh-cache with yesterday's methodology notes loaded) converged on: don't run option 1 — run the discriminating control on C2027 itself first. Crazy-expert specifically called "weaponize C2027 against itself" with the AX_MED control framing; expert-advisor agreed test (d) iteration-chain attenuation was the cleanest discriminator. Adapted the test to family-stratified analysis (AX_MED Class 22 has only 7 member tokens / 45 occurrences corpus-wide, too sparse for the test as crazy-expert framed it). The methodology held: framework-as-null discipline applied to my own freshest constraint, caught the overclaim, replaced with correctly-scoped findings.
+
+---
+
 ## Version 6.64 (2026-05-15) - Pharmacy Source Acquisitions + Iteration-Chain Signature
 
 ### Summary

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2023 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2025 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2027.
+the highest ID present is C2030.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2023 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2025 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2023 validated constraints are present as canonical one-line claims with tier
+2025 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-15 21:33
-**Version:** FROZEN STATE (2023 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-16 08:37
+**Version:** FROZEN STATE (2025 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (9 feedback rules)
+6. Session Methodology Notes (10 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -2265,7 +2265,10 @@ C2023	**MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Curr
 C2024	**Bio Section Carries Marginal Residual MIDDLE-Layer Sequential Structure in Currier B; Other Sections at-or-below Null.** Per-section within-line shuffle null on Currier B yields heterogeneous signatures. Section B (Bio, f74-f84 region): z = +1.49 (real I=1.137, null=1.104, excess +0.034). Section H (Herbal_B): z = −2.70. Section S (Stars/Recipe_B): z = −1.33. Section C (Cosmological foldouts, B-language text): z = −1.17. Section T (Top/intro B-tokens): z = −0.91. **Bio is the only B-section with positive residual sequential excess at the MIDDLE layer.** The whole-of-B at-null result (C2023, z = −0.39) is an average of Bio's marginal positive signal and four near-null-or-negative sections. Confirms C1048's prediction that BIO carries the strongest residual sequential structure in B. Section-level heterogeneity in residual sequential signal is consistent with C1047 (section-dynamics interaction absent at macro level but present at residual level) and C1055 (M2 near-section-decomposable).	2	shuffle_null, section_stratified, Bio_residual, B_section, MIDDLE_layer, C1047, C1048, C1055, C1085, C1086, C1116, C1404, C2023
 C2025	**Currier A Class-Layer Shuffle Null at-null Confirms C225 via Independent Methodology.** Class-layer within-line shuffle null on Currier A yields real I(class; prev_class) = 0.707 bits vs null 0.698 ± 0.023, z = +0.37 (at-null). Confirms C225's "A Transition Validity = 2.1%" claim via independent shuffle-null methodology — A has minimal class-Markov transition structure. C346's reported "sequential coherence" (1.20x) therefore lives at a different organizational level than class-Markov adjacency: it must be record-level / positional / compositional (C233 LINE_ATOMIC, C240 NON_SEQUENTIAL_CATEGORICAL_REGISTRY, C422 DA articulation, C475/C729 PP co-occurrence compliance, C964 boundary-constrained free-interior). Combined with A's MIDDLE-layer shuffle-null excess of z = −5.09 (the most strongly negative across subsets — entirely sparsity-driven exclusion of unrealizable pairs), A is bag-of-line at both class and MIDDLE layers despite C346's within-record coherence. Methodological strengthening of C225: shuffle-null is a stricter test than the 2.1% validity threshold count.	2	shuffle_null, Currier_A, class_layer, sequential_coherence_locus, C225_corroboration, C225, C230, C231, C233, C240, C346, C422, C475, C729, C964
 C2026	**Antidotarium Nicolai 8D Matcher Baseline — Section S Source-Matching Not Closed by Acquisition.** Featurized 124 named Antidotarium recipes using Latin keyword patterns (ignis/calefac/bulli for k; videre/color/consistency for h; donec/dum/sufficit for t; addatur/agitando for e) substituting for English in the Brunschwig compound-matcher featurizer; ran through TUNED_DIMS residual matcher. Result: no Antidotarium recipe matches any Section S folio under d=1.0 (min Section S distance = 1.375 on f106v↔YEra; min anywhere = 1.058). Top-1 attractor degenerates to f34v (Section H, REGIME_3, 115 tokens) for 82 of 124 recipes (66%). **Same f34v collapse observed for two control corpora**: Codicillus (19 PL-companion alchemy segments, in-domain): 11/19 default to f34v, no ratios > 1.30; Brunschwig 1512 (20 validated compound recipes, in-domain): 12/20 default to f34v, no ratios > 1.30. f34v universal attractor consistent with C1366 (top-5 least-anomalous folio = f34v 0.71 / f106r 0.67 / f106v 0.65 / f31r 0.62 / f66v 0.62) — a geometric centrality property of the V-side feature space, not a corpus signal. **Top-1 ratio-confidence mode of the 8D matcher is therefore not a validated evaluation method**; validated C1971 matches (e.g., C1943 f106v↔Ch40M d=0.933, C1990 f75r↔Ch.28) use hypothesis-driven distance gating instead. Antidotarium Nicolai itself is over-curated 12th-c. Salernitan teaching canon; practitioner-use sources (Mesue's Grabadin, Antidotarium Magnum) remain candidate Section S source classes per `project_section_s_source_genre_gap.md`. Acquisition closes the corpus-availability gap for Nicolai specifically but does not close the Section S source-matching gap.	2	matcher_baseline, Section_S_source_gap, top1_degeneracy, geometric_centrality, C1366, C1971, C1943, C1955, C1990, C1995, Antidotarium_Nicolai, project_section_s_source_genre_gap
-C2027	**Heat-Cycle MIDDLE-Class Adjacency Chains in PL-Matched Section S — New Methodology Corroborating C1394/C1969/C1953.** Length-controlled (20-50 word) per-paragraph analysis of MIDDLE-class lag-1 autocorrelation in Currier B, with within-paragraph shuffle null isolating sequence structure from compositional artifact. Matched-Section-S folios (17 PL Mercuriorum attributions) exhibit observed autocorr 0.0512 vs shuffled null 0.0475 = **excess +0.0037** (the only group across all tested corpora with POSITIVE excess; Section B alchemy: −0.0070, Mesue Latin pharmacy: −0.0020, Codicillus Latin alchemy: −0.0077, Antidotarium Latin pharmacy: −0.0090). Excess driven by chains of consecutive `qokee*` / kee-class MIDDLE-class tokens encoding heat-cycle iterations: f112v P4 triple-run `qokeedy → qokeeey → qokeeody`; f111r P5 six-token kee/ee chain `qockhey, qokeey, keeor, okeey, lkeedy, lkeey`; f108r P2 identical-token pair `qokeey → qokeey`; f115r P13 `qokchedy → qokchedy`. 100 same-class adjacency instances aggregate to e-class (broad), 35 to ee, 27 to kee specifically. **Independent corroboration via class-adjacency methodology of the iteration-encoding mechanism already documented at atom level (C1394 e MOD = thermal microstate), at anchor level (C1969 qok-window-density ×9 anchor on f75r), and at marker level (C1953 daiin×11 iterative testing on f114r). The 6 currently-unmatched Section S folios (f104r/v, f105r/v, f107v, f111v) all LACK this signature** (candidate group autocorr excess −0.0030; f107v+f111v: −0.0034), consistent with either (a) non-iterative-procedure PL chapters awaiting attribution, or (b) different operational content. Cross-manifold structural NN test on the 4-folio f104-105 sub-group falsifies the pharmacy interpretation: 67.6% of candidate paragraphs are closer to Codicillus alchemy than to Mesue pharmacy (matched-S: 71.8%, expected alchemy direction); both Voynich groups go alchemy-direction, not pharmacy.	2	iteration_encoding, MIDDLE_class_adjacency, autocorr_excess, shuffle_null, qok_cycle, heat_cycle, Section_S, matched_S_signature, cross_manifold_falsification, C1394, C1969, C1953, C1965, C1971, C1988, C2026
+C2027	**[RETRACTED 2026-05-16 to Tier 1]** Originally claimed: heat-cycle MIDDLE-class adjacency chains UNIQUE to PL-matched Section S folios, corroborating iteration-encoding mechanism. Pre-registered discriminating control on 2026-05-16 (family-stratified shuffle null + cross-group comparison) falsified three of the four pillars: (a) **"Matched-S unique" is FALSE** — both matched-S (+0.034) and unmatched-S (+0.044) Section S folios show heat-cycle adjacency excess at comparable strength across length filters; the original "unmatched folios LACK this signature" claim was a paragraph-level-mean confound with token density. (b) **"Iteration-encoding mechanism" is PARTIALLY FALSE** — iteration markers (aii/daiin family) show near-zero adjacency excess (+0.001 corpus level, 0 adjacent pairs across 4 daiin-heavy folios). The chain signal lives in heat-cycle MIDDLE classes specifically AND in closure-class (late_term) markers, NOT in the canonical iteration-marker family. (c) **The +0.0037 baseline excess decomposes** into heat_cycle (+0.026 family-stratified) + late_term (+0.038 family-stratified) — late_term contribution was missed in original framing. Surviving fact (registered as C2028): Section S vs Section B heat-cycle adjacency divergence is real and Section-level. Surviving fact (registered as C2030): late_term Voynich-wide adjacency is real. Surviving fact (registered as C2029): iteration markers don't chain at adjacency (measurement only). Methodology lesson: framework-as-null discriminating-test discipline caught the overclaim within 24 hours of registration. C2027 is preserved as Tier 1 retraction with full narrative for traceability of the audit precedent.	1	RETRACTED, FALSIFIED, iteration_encoding_mismatched, framework_as_null_caught, audit_2026_05_16, C2028, C2029, C2030
+C2028	**Section S vs Section B Heat-Cycle MIDDLE-Class Adjacency Divergence.** Length-controlled within-paragraph shuffle null on MIDDLE-class first-3-chars lag-1 adjacency, stratified by class family. Heat-cycle MIDDLE classes (kee/ee — the qokee* family) cluster adjacently in Section S folios but not Section B. Section S matched (+0.034 at length 20-100, +0.037 all paragraphs ≥10, +0.060 at length 50-150). Section S unmatched (+0.044, +0.044, +0.093). **Section B near-zero across all length filters: +0.003 to +0.006.** The pattern is Section-level structural distinction, NOT matched-folio-level — both matched and unmatched Section S folios show the signature at comparable or higher strength. Survives stricter within-line shuffle null (+0.026 within-line excess vs +0.034 within-paragraph excess at matched-S, length 20-100; delta only +0.008 indicates clustering is genuine token-sequence adjacency not line-boundary positional). Concrete examples: f112v P4 `qokeedy → qokeeey → qokeeody` triple-run; f111r P5 six-token kee/ee chain `qockhey, qokeey, keeor, okeey, lkeedy, lkeey`; f108r P2 identical-token pair `qokeey → qokeey`. Cross-references heat-cycle iteration encoding documented at atom level (C1394 e MOD = thermal microstate) and anchor level (C1969 qok-window-density ×9 anchor on f75r). Refines C2027's matched-folio framing to the correct Section-level scope.	2	heat_cycle, MIDDLE_class_adjacency, Section_S_signature, Section_B_negative, structural_divergence, within_line_null, C1394, C1969, C1971
+C2029	**Iteration Markers (aii / daiin Family) Do NOT Chain at Adjacency.** Across 4 daiin-heavy matched-S folios tested (f114r×11, f112v×6, f106v×3, f103r insufficient), zero pairs of daiin tokens occur in adjacent positions. Corpus-level aii MIDDLE-class adjacency excess: +0.001 (essentially zero) under within-paragraph shuffle null. Distributional measurement-only — no mechanism inference claimed for what daiin DOES do positionally. Resolves a measurement-vs-mechanism asymmetry in the prior literature: C1953 documents daiin×N count-clustering at folio/paragraph level (e.g., f114r daiin×11, f114r is C1953's canonical case), but count-clustering and adjacency-clustering are independent measurements; count-presence does not entail token-sequence chaining. Daiin distribution within paragraphs is non-uniform across all 3 folios with sufficient data (max-deviation-from-uniform >0.20), but the LOCATION of clustering varies by folio (f114r late-biased 0.455, f112v mid-range 0.333, f106v early-biased 0.000). Single-folio late-position bias on f114r does not generalize per pre-registered multi-folio replication test (1/3 folios pass late-bias criterion). C2029 registers only the chaining-null measurement; the f114r-specific phase-boundary observation is logged in memory at Tier 4 pending more data.	2	iteration_markers, daiin_no_chain, aii_class_null, measurement_only, no_mechanism, distinction_from_count_clustering, C1953, C2000, C2001, C2002
+C2030	**Voynich-Wide Late-Term MIDDLE-Class Adjacency Clustering Within-Line.** LATE-class MIDDLE families (ar, ary, aly, al — the closure/output-terminal markers per C539/C562) chain adjacently at +0.036 within-line excess in matched-S folios (within-line null isolates positional artifact from genuine adjacency). Voynich-wide pattern across all tested groups: matched-S +0.038, unmatched-S +0.017, Section B +0.041 (at length-filtered comparison). Survives stricter within-line shuffle null (preserves line membership and position): late_term within-line excess +0.0365 vs within-paragraph excess +0.0391, delta only +0.0026. Clustering is genuine token-sequence adjacency within lines, not purely line-boundary positional artifact. **Scope clarification:** the within-line shuffle controls for within-line position randomization but does not control for cross-line adjacency at line boundaries (last token of line N to first token of line N+1 remain canonically paired). The +0.036 within-line excess therefore reflects within-line adjacency clustering specifically. Cross-references C1235 (line-final routing) and C539 (LATE prefix class line-final concentration) as related but distinct phenomena — those describe line-final concentration; C2030 describes within-line adjacency clustering of closure-class MIDDLEs. Predicts (NOT tested): closure protocols may have internal bigram grammar (e.g., directional `or → al` vs `al → or` asymmetries, forbidden LATE-LATE pairs parallel to C109's class-level forbidden transitions).	2	late_term, closure_protocol, MIDDLE_class_adjacency, within_line_null, Voynich_wide, C1235, C539, C562
 
 ---
 
@@ -2273,7 +2276,7 @@ C2027	**Heat-Cycle MIDDLE-Class Adjacency Chains in PL-Matched Section S — New
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-15
+# Generated: 2026-05-16
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -5185,6 +5188,108 @@ Atom-by-atom token decomposition in cold reads produces word salad like "add mat
 **Why:** Tokens take on operational identity in practice beyond their atom composition. C1193 (core prefixes as frozen functional units), C171 (semantic ceiling), MODEL_CONTEXT.md ("tokens have roles, not meanings — semantics exist only in operator practice"). Token meanings are listed as IRRECOVERABLE. The atom glosses (C1195, Tier 3-4) describe positional role in the grammar, not what the operator was doing.
 
 **How to apply:** In cold reads and external-facing documents, lead with the quantitative structural evidence that doesn't require believing the gloss system: counting anchors (corpus-singular token runs), e-depth thermal arcs, dar distribution patterns, observation MIDDLE distribution, paragraph structure. Use atom glosses only as supporting context with heavy caveats, not as the primary argument. When glossing tokens for a reader, use whole-token operational descriptions ("one complete heat cycle", "material addition") rather than atom chains ("heat.cool.do.end", "into.iterate.bind").
+
+---
+
+## Expert mechanism predictions are pre-registrations, not Tier 3 facts
+
+*When an expert (yours or theirs) makes a directional structural prediction with confidence rating, that's a pre-registered discriminating test, not a load-bearing fact. Run it before treating the mechanism as scaffolding for downstream work. Two cycles documented (2026-05-15 to 2026-05-16): user's f66r-as-glossary overclaim caught by discriminating test; crazy-expert's positional-artifact prediction misfired with 70-30 confidence on late_term clustering, caught by the same discipline.*
+
+## The rule
+
+When an expert (the expert-advisor or crazy-expert agent, OR the user, OR yourself in
+synthesis mode) makes a directional structural prediction with a confidence rating like
+"70-30 X collapses under Y," that prediction is a **pre-registered discriminating test**,
+not a Tier 3 mechanism fact.
+
+- Run the test before using the prediction as scaffolding for downstream investigation.
+- Treat the prediction's failure or confirmation as data, not as expert mispredition or
+  confirmation per se.
+- The same framework-as-null discipline that catches initial registration overclaims
+  applies to expert mechanism predictions.
+
+## Why
+
+Two cycles documented in successive sessions:
+
+**Cycle 1 (2026-05-15)**: I (user prompting) registered C1993 (f66r-as-glossary) on a
+clean operational story built from existing atom-gloss vocabulary. Discriminating test
+(M-marker dominance on cross-referenced labels) failed 0/4 top-1. C1993 retracted same
+session. The framework-as-null discipline caught my overclaim.
+
+**Cycle 2 (2026-05-16)**: Crazy-expert proposed (70-30 confidence) that the +0.038
+late_term Voynich-wide adjacency excess was line-position artifact — "LATE-class tokens
+land at line-finals per C539; clustering is driven by cross-line co-occurrence at
+line-boundaries; within-line shuffle will collapse it to <+0.005." Within-line shuffle
+test: late_term excess **+0.0365 (delta only +0.0026 vs within-paragraph)**. Genuine
+adjacency, not positional. **Crazy-expert's confident structural prediction was wrong.**
+
+Both cycles used the same methodology (pre-registered binary thresholds, run the test,
+verdict follows mechanically). Both caught overclaims that fit existing operational
+vocabulary cleanly.
+
+## How to apply
+
+**When an expert proposes a mechanism interpretation with confidence (70-30, "I bet X
+collapses," "almost certainly Y"):**
+
+1. **Treat as pre-registration.** The prediction is a falsifiable directional claim.
+2. **Design the discriminating test before running it.** If the expert proposed the test
+   structure ("within-line shuffle should collapse this"), use their test design.
+3. **Lock thresholds before running.** What constitutes "collapse" vs "survives"? The
+   expert's confidence rating implies a binary threshold — use it.
+4. **Run the test promptly.** Don't let the prediction sit as load-bearing scaffolding
+   for downstream work. Expert speculation is cheap; running the actual test is the
+   bottleneck.
+5. **Update the registration plan based on the test result.** A failed expert prediction
+   is a clean discriminating control that sharpens the registration. A confirmed
+   prediction adds corroboration.
+
+**Specific anti-patterns this prevents:**
+
+- **Cascading expert mechanism scaffolding.** Expert A proposes mechanism M for finding F.
+  Expert B builds interpretation I on M. Without testing M, I inherits M's epistemic
+  status (which is "untested speculation," not "validated mechanism").
+- **Asymmetric trust by expert source.** Treating crazy-expert speculation as "weak prior"
+  but expert-advisor speculation as "validated mechanism" — both are speculation until
+  tested.
+- **Letting expert confidence ratings substitute for test results.** "70-30 X" is a
+  pre-registration, not a probability the proposed mechanism is true. The test is
+  the probability.
+
+## Why this matters at the current project stage
+
+The project has ~2025 constraints. Expert agents now have rich operational vocabulary
+loaded into their context. The same framework-as-null trap that catches user
+registrations also catches expert speculations — both can build coherent operational
+stories using the existing vocabulary without testing the mechanism.
+
+The discriminating-test discipline is the protection. It applies to both sources of
+speculation, regardless of which agent produced the candidate mechanism.
+
+## Procedural codification
+
+When consulting an expert and they offer a confident structural prediction:
+
+```
+Expert says: "X will Y under Z, confidence W%"
+↓
+Treat as: Pre-registered prediction with W% prior
+↓
+Action: Design test of Z, lock threshold for "collapse" vs "survives," run.
+↓
+If prediction confirmed: registration plan can use mechanism as load-bearing
+If prediction failed: prediction is data (a clean negative discriminator), not
+  mechanism. The structural fact survives or doesn't on its own merits.
+```
+
+## See also
+
+- `feedback_operational_story_first_trap.md` — the original framework-as-null formalization
+- `feedback_framework_as_null.md` — sharper framework-as-null discipline (2026-05-15)
+- C1993 retraction narrative — Cycle 1 example
+- C2027 retraction narrative — Cycle 2 example (crazy-expert prediction misfire)
+- `phases/RECIPE_FOLIO_CORRESPONDENCE/results/c2027_two_discriminating_tests.json` — the test that falsified crazy-expert's prediction
 
 ---
 
