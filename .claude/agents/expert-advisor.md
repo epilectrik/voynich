@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2026 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2027 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2031.
+the highest ID present is C2032.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2026 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2027 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2026 validated constraints are present as canonical one-line claims with tier
+2027 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-16 09:44
-**Version:** FROZEN STATE (2026 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-16 11:30
+**Version:** FROZEN STATE (2027 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (11 feedback rules)
+6. Session Methodology Notes (12 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -2269,7 +2269,8 @@ C2027	**[RETRACTED 2026-05-16 to Tier 1]** Originally claimed: heat-cycle MIDDLE
 C2028	**Section S vs Section B Heat-Cycle MIDDLE-Class Adjacency Divergence.** Length-controlled within-paragraph shuffle null on MIDDLE-class first-3-chars lag-1 adjacency, stratified by class family. Heat-cycle MIDDLE classes (kee/ee — the qokee* family) cluster adjacently in Section S folios but not Section B. Section S matched (+0.034 at length 20-100, +0.037 all paragraphs ≥10, +0.060 at length 50-150). Section S unmatched (+0.044, +0.044, +0.093). **Section B near-zero across all length filters: +0.003 to +0.006.** The pattern is Section-level structural distinction, NOT matched-folio-level — both matched and unmatched Section S folios show the signature at comparable or higher strength. Survives stricter within-line shuffle null (+0.026 within-line excess vs +0.034 within-paragraph excess at matched-S, length 20-100; delta only +0.008 indicates clustering is genuine token-sequence adjacency not line-boundary positional). Concrete examples: f112v P4 `qokeedy → qokeeey → qokeeody` triple-run; f111r P5 six-token kee/ee chain `qockhey, qokeey, keeor, okeey, lkeedy, lkeey`; f108r P2 identical-token pair `qokeey → qokeey`. Cross-references heat-cycle iteration encoding documented at atom level (C1394 e MOD = thermal microstate) and anchor level (C1969 qok-window-density ×9 anchor on f75r). Refines C2027's matched-folio framing to the correct Section-level scope.	2	heat_cycle, MIDDLE_class_adjacency, Section_S_signature, Section_B_negative, structural_divergence, within_line_null, C1394, C1969, C1971
 C2029	**Iteration Markers (aii / daiin Family) Do NOT Chain at Adjacency.** Across 4 daiin-heavy matched-S folios tested (f114r×11, f112v×6, f106v×3, f103r insufficient), zero pairs of daiin tokens occur in adjacent positions. Corpus-level aii MIDDLE-class adjacency excess: +0.001 (essentially zero) under within-paragraph shuffle null. Distributional measurement-only — no mechanism inference claimed for what daiin DOES do positionally. Resolves a measurement-vs-mechanism asymmetry in the prior literature: C1953 documents daiin×N count-clustering at folio/paragraph level (e.g., f114r daiin×11, f114r is C1953's canonical case), but count-clustering and adjacency-clustering are independent measurements; count-presence does not entail token-sequence chaining. Daiin distribution within paragraphs is non-uniform across all 3 folios with sufficient data (max-deviation-from-uniform >0.20), but the LOCATION of clustering varies by folio (f114r late-biased 0.455, f112v mid-range 0.333, f106v early-biased 0.000). Single-folio late-position bias on f114r does not generalize per pre-registered multi-folio replication test (1/3 folios pass late-bias criterion). C2029 registers only the chaining-null measurement; the f114r-specific phase-boundary observation is logged in memory at Tier 4 pending more data.	2	iteration_markers, daiin_no_chain, aii_class_null, measurement_only, no_mechanism, distinction_from_count_clustering, C1953, C2000, C2001, C2002
 C2030	**Voynich-Wide Late-Term MIDDLE-Class Adjacency Clustering Within-Line.** LATE-class MIDDLE families (ar, ary, aly, al — the closure/output-terminal markers per C539/C562) chain adjacently at +0.036 within-line excess in matched-S folios (within-line null isolates positional artifact from genuine adjacency). Voynich-wide pattern across all tested groups: matched-S +0.038, unmatched-S +0.017, Section B +0.041 (at length-filtered comparison). Survives stricter within-line shuffle null (preserves line membership and position): late_term within-line excess +0.0365 vs within-paragraph excess +0.0391, delta only +0.0026. Clustering is genuine token-sequence adjacency within lines, not purely line-boundary positional artifact. **Scope clarification:** the within-line shuffle controls for within-line position randomization but does not control for cross-line adjacency at line boundaries (last token of line N to first token of line N+1 remain canonically paired). The +0.036 within-line excess therefore reflects within-line adjacency clustering specifically. Cross-references C1235 (line-final routing) and C539 (LATE prefix class line-final concentration) as related but distinct phenomena — those describe line-final concentration; C2030 describes within-line adjacency clustering of closure-class MIDDLEs. Predicts (NOT tested): closure protocols may have internal bigram grammar (e.g., directional `or → al` vs `al → or` asymmetries, forbidden LATE-LATE pairs parallel to C109's class-level forbidden transitions).	2	late_term, closure_protocol, MIDDLE_class_adjacency, within_line_null, Voynich_wide, C1235, C539, C562
-C2031	**Section B vs matched-S Operational e-Depth Sequential Asymmetry.** Per-paragraph e-depth (number of consecutive `e` MOD atoms in MIDDLE per C1394, the registered thermal microstate control parameter per C1225) lag-N autocorrelation analysis, length-controlled (20-200 word paragraphs), with within-folio shuffle null per `feedback_within_folio_shuffle_null_first.md`. Two complementary measurements form one structural divergence: **(a) Section B operational tokens show period-2 e-depth modulation** (lag-1 excess = −0.026 in operational-only subset, stronger than mixed-token −0.016; lag-2 = +0.011 positive jump, lag-3 = +0.000 back to null; lag2/lag1 ratio = −0.66, textbook period-2 sign-reversal pattern). **(b) matched-S operational tokens show NULL sequential e-depth structure** (lag-1 excess = −0.002, indistinguishable from null; lag-2 = −0.003, lag-3 = +0.006). Within-folio shuffle null: matched-S all-tokens lag-1 +0.022→+0.033 (sustained or stronger), Section B all-tokens lag-1 −0.016→−0.011 (oscillation preserved); signal is line-level structure, not folio-composition shadow. AX/operational decomposition: matched-S all-tokens sustain (+0.023) is driven by SCAFFOLD tokens (+0.019), not operational tokens (NULL); Section B operational tokens carry the period-2 signature (−0.026 stronger than mixed −0.016). **Scaffold-token e-depth clustering at +0.016-0.019 is Voynich-wide background** (same in both groups; non-discriminating; likely connected to C539/C1235/C2030 line-final routing phenomena, NOT registered as separate finding here). Subsumes C2027's narrow-heat-cycle surface measurement (lag-2/lag-1 ratio 8.28 in Section B vs 0.36 in matched-S) — that pattern is the surface manifestation of underlying e-depth control parameter divergence at the operational-token level. **Pre-registered binary criteria locked before running:** SUSTAINED-DEPTH (SS1 lag1>+0.010, SS2 lag2>0 AND lag2/lag1<1.0, SS3 lag3>0 AND lag3<=lag2) — matched-S 3/3 PASS in all-tokens but FAIL in operational-only (operational FLAT, not sustained). OSCILLATING-DEPTH (OD1 lag1<+0.005, OD2 lag2>+0.005, OD3 lag2/lag1>1.2 or lag2>+0.010 if lag1≈0) — Section B 3/3 PASS in all-tokens AND in operational-only (oscillation strengthens under operational restriction). The asymmetric outcome (Section B operational has structure; matched-S operational has none) cannot be produced by framework vocabulary echo, which would predict uniform behavior. Measurement-only Tier 2 registration; operational interpretation candidate ("trajectory-encoded vs instruction-encoded") deferred to SPECULATIVE/encoding_modes.md at Tier 3.	2	e_depth, sequential_structure, operational_vs_scaffold_decomposition, within_folio_shuffle_null, period_2_oscillation, sustained_depth, Section_B, matched_S, asymmetry, mechanism_measurement, C1394, C1225, C1197, C1995, C2027_retracted_predecessor, C2028, C2030
+C2031	**Section B vs matched-S Operational e-Depth Sequential Asymmetry.** Per-paragraph e-depth (number of consecutive `e` MOD atoms in MIDDLE per C1394, the registered thermal microstate control parameter per C1225) lag-N autocorrelation analysis, length-controlled (20-200 word paragraphs), with within-folio shuffle null per `feedback_within_folio_shuffle_null_first.md`. Two complementary measurements form one structural divergence: **(a) Section B operational tokens show period-2 e-depth modulation** (lag-1 excess = −0.026 in operational-only subset, stronger than mixed-token −0.016; lag-2 = +0.011 positive jump, lag-3 = +0.000 back to null; lag2/lag1 ratio = −0.66, textbook period-2 sign-reversal pattern). **(b) matched-S operational tokens show NULL sequential e-depth structure** (lag-1 excess = −0.002, indistinguishable from null; lag-2 = −0.003, lag-3 = +0.006). Within-folio shuffle null: matched-S all-tokens lag-1 +0.022→+0.033 (sustained or stronger), Section B all-tokens lag-1 −0.016→−0.011 (oscillation preserved); signal is line-level structure, not folio-composition shadow. AX/operational decomposition: matched-S all-tokens sustain (+0.023) is driven by SCAFFOLD tokens (+0.019), not operational tokens (NULL); Section B operational tokens carry the period-2 signature (−0.026 stronger than mixed −0.016). **Scaffold-token e-depth clustering at +0.016-0.019 is Voynich-wide background** (same in both groups; non-discriminating; likely connected to C539/C1235/C2030 line-final routing phenomena, NOT registered as separate finding here). Subsumes C2027's narrow-heat-cycle surface measurement (lag-2/lag-1 ratio 8.28 in Section B vs 0.36 in matched-S) — that pattern is the surface manifestation of underlying e-depth control parameter divergence at the operational-token level. **Pre-registered binary criteria locked before running:** SUSTAINED-DEPTH (SS1 lag1>+0.010, SS2 lag2>0 AND lag2/lag1<1.0, SS3 lag3>0 AND lag3<=lag2) — matched-S 3/3 PASS in all-tokens but FAIL in operational-only (operational FLAT, not sustained). OSCILLATING-DEPTH (OD1 lag1<+0.005, OD2 lag2>+0.005, OD3 lag2/lag1>1.2 or lag2>+0.010 if lag1≈0) — Section B 3/3 PASS in all-tokens AND in operational-only (oscillation strengthens under operational restriction). The asymmetric outcome (Section B operational has structure; matched-S operational has none) cannot be produced by framework vocabulary echo, which would predict uniform behavior. Measurement-only Tier 2 registration; operational interpretation candidate ("trajectory-encoded vs instruction-encoded") deferred to SPECULATIVE/encoding_modes.md at Tier 3. **2026-05-16 update:** Codicillus cross-validation FAILED for the trajectory-encoded-alchemy cross-language framing (see C2032); structural divergence is Voynich-internal, mechanism unidentified; SPECULATIVE/encoding_modes.md marked half-falsified accordingly.	2	e_depth, sequential_structure, operational_vs_scaffold_decomposition, within_folio_shuffle_null, period_2_oscillation, sustained_depth, Section_B, matched_S, asymmetry, mechanism_measurement, C1394, C1225, C1197, C1995, C2027_retracted_predecessor, C2028, C2030
+C2032	**Voynich Sequential Stem-Class Structure is Absent from Natural-Language Latin Reference Corpora (Engineered Substrate Triad, Third Axis).** Cross-language test of the C2031 sequential e-depth asymmetry. Per-paragraph stem-class lag-N autocorrelation (Latin stem-class = first 3 chars after case-ending stripping; methodology consistent with prior cross-corpus tests) applied at length-matched 20-50 word paragraphs to Codicillus Latin and Mesue Liber Primus Latin. Pre-registered binary criteria for the encoding-modes Tier 3 interpretation: Codicillus should show period-2 sign-reversal matching Voynich Section B's lag2/lag1 = −0.66; Mesue should show monotonic decay matching matched-S's +0.66. **Result: NEITHER Latin corpus shows the predicted pattern.** Codicillus alchemy Latin: lag-1 = −0.006, lag-2 = −0.000, lag-3 = +0.005, lag2/lag1 = +0.05 (near-zero, natural-language baseline). Mesue pharmacy Latin: lag-1 = −0.002, lag-2 = +0.000, lag-3 = +0.001, lag2/lag1 = −0.17 (near-zero). Voynich reference values: Section B −0.66, matched-S +0.66 — order-of-magnitude separation from Latin baselines with NO overlap. **Cross-language structural corroboration FAILS for the trajectory-encoded-alchemy interpretation;** what survives is the demonstration that the Voynich-internal section-divergent sequential e-depth structure (C2031) is ABSENT from genre-matched natural-language Latin reference corpora. The asymmetric pattern is Voynich-specific structural engineering, not a generic alchemy/pharmacy linguistic property. Forms the **third axis of the engineered substrate triad** alongside C2015 (Voynich ~2× more compressible than NL at char level) and C2022 (anti-NL char distribution + Markov plateau at higher-order). Three orthogonal measurement axes — information density (C2015), surface statistics (C2022), sequential grammar (C2032) — independently establish that Voynich is structurally distinct from genre-matched natural-language baseline at multiple decomposition levels. SPECULATIVE synthesis: see `context/SPECULATIVE/engineered_substrate_triad.md`. Methodology vindicates `feedback_mechanism_cycle_procedural_ceiling.md` (2026-05-16): the encoding-modes interpretation was a Tier 3 candidate that survived all Voynich-internal discriminating controls but failed external grounding — exactly the trap pattern the ceiling memory note predicts at this project stage.	2	engineered_substrate, Voynich_vs_NL, sequential_grammar, cross_language_test, encoding_modes_falsification, structural_distinctness, C2015, C2022, C2031, Codicillus, Mesue_Liber_Primus, SPECULATIVE_engineered_substrate_triad
 
 ---
 
@@ -5734,6 +5735,89 @@ hits and the genuine nulls are mixing. Separate them.
   of the constraint-system gap this pattern reveals
 - `project_paragraph_layout_ordering_empirical.md` — what the refined
   test actually produced
+
+---
+
+## Three-mechanism-demotion trifecta (2026-05-16) — operational interpretations at "middle layer" specificity all die within the procedural ceiling
+
+*Single session, three mechanism-interpretation candidates, all failed at successively deeper levels of validation (Voynich-internal control → Voynich-internal extended test → cross-language external grounding). Structural measurements survived every cycle. The pattern indicates the project has a stable "operational-specificity death zone" — interpretations at the "encodes X" / "represents Y" level reliably die under discriminating tests, while measurement-level structural facts and substrate-level claims survive. Tighten promotion discipline: Tier 3 → Tier 2 for mechanism claims now requires BOTH Voynich-internal discriminating test pass AND external-corpus validation, not just one.*
+
+## The trifecta
+
+Single session (2026-05-16) produced three mechanism-interpretation candidates, all demoted:
+
+### Cycle 1 — C2027 retraction (morning)
+
+Original Tier 2 registration: "Heat-cycle MIDDLE-class adjacency chains UNIQUE to PL-matched Section S folios, corroborating iteration-encoding mechanism." Survived original Voynich-internal control (within-paragraph shuffle null).
+
+**Failed at:** Pre-registered family-stratified shuffle null discriminating control (crazy-expert's "weaponize C2027 against itself"). Three of four pillars falsified: "matched-S unique" was wrong; "iteration-encoding mechanism" was wrong; distribution misread.
+
+**Retracted to Tier 1.** Replaced by C2028/C2029/C2030 covering corrected scope.
+
+### Cycle 2 — Sustain-vs-phase-switch interpretation death (afternoon)
+
+Tier 2 candidate registered conceptually: "Section S sustains thermal intensity; Section B phase-switches between heat and cool." Survived initial multi-lag autocorrelation pre-registered binary test (3/3 sustain criteria for matched-S, 3/3 alternation criteria for Section B at narrow-heat-cycle class).
+
+**Failed at:** Alternation-slot follow-up revealed Section B's i+1 position was mostly other-thermal-class tokens (chedy/shedy with single-`e` MIDDLE), not non-thermal. The "heat alternating with non-heat" framing was framework echo at the wrong class-boundary.
+
+**Demoted before registration.** Sharpened to e-depth oscillation hypothesis.
+
+### Cycle 3 — Trajectory-encoded interpretation death (evening, Codicillus cross-validation)
+
+Tier 3 SPECULATIVE candidate registered in `encoding_modes.md`: "Section B alchemy is trajectory-encoded (thermal narrative IS sequential structure); matched-S Mercuriorum is instruction-encoded (self-contained operational specs)." Survived all Voynich-internal controls: multi-lag autocorrelation, within-folio shuffle null, AX/operational decomposition. The asymmetric outcome (Section B operational period-2 + matched-S operational NULL) ruled out pure-framework-vocabulary-echo.
+
+**Failed at:** Codicillus cross-validation (external grounding). Both Latin alchemy (Codicillus) and Latin pharmacy (Mesue) showed near-zero sequential autocorrelation at all lags. The cross-language alchemy/pharmacy structural distinction predicted by the encoding-modes interpretation did NOT replicate. lag2/lag1 ratios: Codicillus +0.05, Mesue −0.17, vs Voynich's ±0.66 — order-of-magnitude separation with no overlap.
+
+**Half-falsified.** Cross-language genre framing dies; Voynich-internal structural divergence (C2031) preserved. **The Voynich-vs-NL distinctness IS the substantive new finding** (registered as C2032, third axis of "engineered substrate triad" alongside C2015 and C2022).
+
+## What the pattern reveals
+
+**The "middle layer" death zone.** Interpretations at the operational-specificity level — "encodes X procedurally," "represents Y operationally," "alchemy IS Z" — die reliably under discriminating tests at this project stage. What survives:
+
+- **Lower layer**: measurement-level structural facts (C2028, C2029, C2030, C2031, C2032 all measurement-only)
+- **Upper layer**: substrate-level claims that name an axis without committing to operational interpretation ("engineered sequential grammar"; "Voynich-vs-NL structural distinctness")
+
+The middle layer is where framework-as-null applies hardest. Operational vocabulary at this project stage gives interpretations a place to land too cleanly; the data alone cannot select among admissible operational readings; external grounding either succeeds (rare) or fails (today's pattern).
+
+## How to apply
+
+**Tightened registration discipline (proposed):**
+
+Tier 3 → Tier 2 for mechanism interpretations now requires BOTH:
+
+1. **Voynich-internal discriminating test pass** with pre-registered binary criteria (existing rule)
+2. **External-corpus validation** on a pre-registered prediction that distinguishes the proposed mechanism from natural-language baseline OR from alternative operational frames
+
+Either alone is necessary but not sufficient. Today demonstrated that internal discriminating tests can be passed by mechanism interpretations that fail external validation.
+
+**The exception**: substrate-level claims that don't commit to operational interpretation (today's C2032, the engineered substrate triad framing). These are measurement-level claims at the inter-corpus comparison level; they survive both internal and external tests because they don't propose an operational interpretation in the first place.
+
+**For session-level discipline**: when three mechanism candidates die in one session, the next session should NOT propose more middle-layer operational interpretations. Either move to substrate-level claims (measurement convergence across axes) or move to external-grounding work (acquire new corpora, run cross-language tests, build apparatus reconstructions).
+
+## Connection to other methodology notes
+
+- `feedback_operational_story_first_trap.md` — the original framework-as-null trap pattern (the lower-resolution version of this rule)
+- `feedback_framework_as_null.md` — 2026-05-15 sharpening
+- `feedback_expert_predictions_are_pre_registrations.md` — expert mechanism predictions discipline
+- `feedback_mechanism_cycle_procedural_ceiling.md` — yesterday's session-level rule about the discrimination cycle
+- `feedback_within_folio_shuffle_null_first.md` — mandatory control #1
+
+This note formalizes the three-strike confirmation of the procedural ceiling and proposes tighter promotion discipline for the next phase of the project.
+
+## What the trifecta produced in the end
+
+- C2027 retraction → C2028 (Section S vs Section B heat-cycle MIDDLE-class divergence)
+- Sustain-vs-phase-switch demoted → C2029 (daiin doesn't chain), C2030 (Voynich-wide late-term clustering), C2031 (e-depth asymmetry mechanism-level measurement)
+- Trajectory-encoded demoted → C2032 (Voynich-vs-NL sequential structural distinctness)
+
+Four substantive Tier 2 structural measurements registered. Three operational interpretations died. **The discipline produced more measurement-level findings by failing more operational interpretations.** This is the system working at the procedural ceiling.
+
+## See also
+
+- `SPECULATIVE/engineered_substrate_triad.md` — synthesis of C2015 + C2022 + C2032 as the substrate-level survival
+- `SPECULATIVE/encoding_modes.md` — the half-falsified Tier 3 interpretation that led to C2032's cross-language test
+- C2027 retraction narrative in CLAIMS/INDEX.md
+- C2028, C2029, C2030, C2031, C2032 — the surviving measurement registrations
 
 ---
 

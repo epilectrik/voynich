@@ -1,0 +1,131 @@
+{
+  "method": "External-grounding cross-validation of C2031 encoding-modes interpretation",
+  "pre_registered_criteria": {
+    "codicillus_trajectory": "CT1 lag1<+0.005 AND CT2 lag2>+0.005 AND CT3 lag2/lag1<-0.3 (or >1.5 if lag1\u22480)",
+    "mesue_instruction": "MI1 lag1>+0.005 AND MI2 lag2/lag1<1.0 AND MI3 lag3<=lag2"
+  },
+  "results": {
+    "Codicillus (alchemy, length 20-50)": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 2650,
+        "obs_rate": 0.015849056603773583,
+        "null_rate": 0.02216415094339766,
+        "excess": -0.006315094339624073
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 2562,
+        "obs_rate": 0.02224824355971897,
+        "null_rate": 0.02255854800936902,
+        "excess": -0.0003103044496500522
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 2474,
+        "obs_rate": 0.0274858528698464,
+        "null_rate": 0.022075586095393417,
+        "excess": 0.005410266774452986
+      }
+    },
+    "Mesue Liber Primus (pharmacy, length 20-50)": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 61083,
+        "obs_rate": 0.0027176137386834306,
+        "null_rate": 0.004857570846222599,
+        "excess": -0.002139957107539168
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 59102,
+        "obs_rate": 0.005177489763459781,
+        "null_rate": 0.004820395248888793,
+        "excess": 0.0003570945145709879
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 57121,
+        "obs_rate": 0.005619649515939847,
+        "null_rate": 0.004868612244180455,
+        "excess": 0.0007510372717593921
+      }
+    },
+    "Codicillus (broader length 15-80)": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 5331,
+        "obs_rate": 0.012943162633652222,
+        "null_rate": 0.02294972800600197,
+        "excess": -0.010006565372349745
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 5183,
+        "obs_rate": 0.025467875747636502,
+        "null_rate": 0.023230754389348997,
+        "excess": 0.0022371213582875068
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 5035,
+        "obs_rate": 0.02423038728897716,
+        "null_rate": 0.02316782522343529,
+        "excess": 0.0010625620655418707
+      }
+    },
+    "Mesue (broader length 15-80)": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 120698,
+        "obs_rate": 0.0025518235596281628,
+        "null_rate": 0.004908739167173846,
+        "excess": -0.002356915607545683
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 117164,
+        "obs_rate": 0.0049588610836093,
+        "null_rate": 0.0048676214536851545,
+        "excess": 9.123962992414495e-05
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 113630,
+        "obs_rate": 0.005737921323594121,
+        "null_rate": 0.004895626155060987,
+        "excess": 0.0008422951685331348
+      }
+    }
+  },
+  "ratios": {
+    "Codicillus (alchemy, length 20-50)": {
+      "lag1": -0.006315094339624073,
+      "lag2": -0.0003103044496500522,
+      "lag3": 0.005410266774452986,
+      "r21": 0.04913694601568281
+    },
+    "Mesue Liber Primus (pharmacy, length 20-50)": {
+      "lag1": -0.002139957107539168,
+      "lag2": 0.0003570945145709879,
+      "lag3": 0.0007510372717593921,
+      "r21": -0.16686994020250562
+    },
+    "Codicillus (broader length 15-80)": {
+      "lag1": -0.010006565372349745,
+      "lag2": 0.0022371213582875068,
+      "lag3": 0.0010625620655418707,
+      "r21": -0.2235653568475299
+    },
+    "Mesue (broader length 15-80)": {
+      "lag1": -0.002356915607545683,
+      "lag2": 9.123962992414495e-05,
+      "lag3": 0.0008422951685331348,
+      "r21": -0.03871145391546502
+    }
+  },
+  "codicillus_trajectory_pass": false,
+  "mesue_instruction_pass": false,
+  "verdict": "ENCODING-MODES NOT CROSS-LANGUAGE CORROBORATED",
+  "detail": "Neither Latin corpus shows the predicted pattern. Voynich Section B period-2 e-depth modulation is Voynich-specific structural feature, NOT a cross-language alchemy/pharmacy distinction. Encoding-modes interpretation in SPECULATIVE/encoding_modes.md should be retracted or fundamentally revised."
+}

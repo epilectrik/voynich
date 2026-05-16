@@ -1,10 +1,14 @@
 # Encoding Modes: Trajectory-Encoded (Section B) vs Instruction-Encoded (matched-S Mercuriorum)
 
-**Tier:** 3 (candidate interpretation; measurement-level basis registered as C2031)
+**Tier:** 3 (HALF-FALSIFIED 2026-05-16)
 
 **Date:** 2026-05-16
 
-**Status:** Candidate interpretation derived from C2031 measurement. Not registered as constraint. Survives the discriminating tests for C2031 but uses only existing operational vocabulary, so additional cross-validation needed before promotion to Tier 2.
+**Status:** HALF-FALSIFIED via Codicillus cross-validation same session. The cross-language alchemy/pharmacy framing FAILS external grounding — Codicillus alchemy Latin shows neither period-2 nor monotonic decay (both lag2/lag1 ratios fall in [−0.17, +0.05] vs Voynich's [−0.66, +0.66]). The trajectory-encoded interpretation as a cross-language genre property is FALSIFIED.
+
+**What survives:** The Voynich-internal observation (C2031) that Section B and matched-S have asymmetric sequential e-depth structure is real and Voynich-specific. What dies is the operational interpretation "Section B alchemy is trajectory-encoded as a generic genre property." The structural asymmetry is Voynich-engineered, not a natural-language alchemy/pharmacy distinction.
+
+**See instead:** `engineered_substrate_triad.md` for the corrected framing — Voynich's section-divergent sequential structure (C2031/C2032) is part of a three-axis Voynich-vs-NL structural distinctness pattern alongside C2015 (compression) and C2022 (anti-NL char distribution), framed as engineered structural substrate rather than operational rhetoric.
 
 ---
 

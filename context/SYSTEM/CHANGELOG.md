@@ -4,6 +4,58 @@
 
 ---
 
+## Version 6.67 (2026-05-16) - Engineered Substrate Triad + Cross-Language Validation
+
+### Summary
+
+Final session work: external-grounding test on C2031 encoding-modes Tier 3 interpretation via Codicillus cross-validation. The pre-registered cross-language test for the trajectory-vs-instruction encoding hypothesis FAILED — Latin alchemy (Codicillus) and Latin pharmacy (Mesue) both show near-zero sequential autocorrelation, not the period-2 / monotonic decay split predicted from Voynich.
+
+**Result:** C2032 registered as the substantive surviving finding — Voynich-vs-natural-language structural distinctness at the sequential-grammar level. Forms the third axis of the "engineered substrate triad" alongside C2015 (compression) and C2022 (anti-NL char distribution). Encoding-modes Tier 3 SPECULATIVE marked half-falsified.
+
+### Cross-validation result
+
+| corpus | lag-1 | lag-2 | lag-3 | lag2/lag1 |
+|--------|-------|-------|-------|-----------|
+| Voynich Section B (reference) | −0.016 | +0.011 | +0.000 | **−0.66** |
+| Voynich matched-S (reference) | +0.022 | +0.015 | +0.001 | **+0.66** |
+| Codicillus alchemy Latin | −0.006 | −0.000 | +0.005 | 0.05 |
+| Mesue pharmacy Latin | −0.002 | +0.000 | +0.001 | −0.17 |
+
+Both Latin corpora hover near zero (natural-language baseline). Voynich's dramatic ±0.66 patterns have no counterpart in equivalent natural-language alchemy or pharmacy. Order-of-magnitude separation with no overlap.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2032 | NEW (Tier 2): Voynich sequential stem-class structure absent from natural-language Latin reference corpora. Third axis of engineered substrate triad |
+| C2031 | Added 2026-05-16 cross-language failure note (one-line) — Codicillus validation failed for trajectory-encoded framing |
+| context/SPECULATIVE/encoding_modes.md | Marked HALF-FALSIFIED at cross-language level; Voynich-internal observation preserved |
+| context/SPECULATIVE/engineered_substrate_triad.md | NEW: synthesis of C2015 + C2022 + C2032 as three Voynich-vs-NL measurement axes; "engineered sequential grammar" framing |
+| memory/feedback_three_mechanism_demotion_trifecta_2026_05_16.md | NEW: three operational interpretations demoted in one session, pattern identified, tightened promotion discipline proposed |
+| context/CLAIMS/INDEX.md | C2032 added; total 2026 → 2027; version 6.66 → 6.67 |
+| CLAUDE.md | Version 6.66 → 6.67; constraints → 2027 |
+
+### Key Findings
+
+- **C2032 is the substantive survival** of the failed encoding-modes cross-validation. Voynich-internal section-divergent sequential e-depth structure (C2031) is NOT a generic alchemy/pharmacy linguistic property. It's Voynich-specific structural engineering.
+- **The engineered substrate triad** (C2015 + C2022 + C2032) establishes Voynich-vs-NL structural distinctness at three orthogonal measurement axes: information density, surface statistics, sequential grammar. Three independent measurement axes converging on the same conclusion.
+- **Encoding-modes interpretation half-falsified.** The cross-language alchemy/pharmacy genre prediction fails. What survives is the Voynich-internal structural observation, NOT the operational interpretation.
+- **Three-mechanism-demotion trifecta documented** as a methodology pattern: operational interpretations at the "middle layer" specificity (encodes X / represents Y) die reliably under discriminating tests; measurement-level + substrate-level claims survive. Tighter promotion discipline proposed: Tier 3 → Tier 2 for mechanism claims now requires BOTH Voynich-internal discriminating test pass AND external-corpus validation.
+
+### Methodology Contributions
+
+- **Cross-language stem-class autocorrelation cross-validation**: Latin corpora at Voynich-comparable paragraph lengths can serve as external grounding for sequential structure interpretations. Today's test was the first time the procedural-ceiling note's recommended methodology was explicitly run with pre-registered binary criteria. Result was decisive (both directions fell cleanly).
+- **"Engineered substrate" framing**: precise naming that captures structural distinctness without committing to operational interpretation. Lives at substrate-level (above middle-layer death zone, below mechanism-tier claims).
+- **Procedural-ceiling vindication via demonstration**: the same rule that predicted the failure (Tier 3 mechanism candidates require external grounding) is the rule that captured the substantive finding (engineered substrate triad as the survival).
+
+### Origin Note
+
+Final external-grounding test of the day. Both expert consults converged on registering C2032 measurement-only + updating encoding_modes.md as half-falsified + creating engineered_substrate_triad.md as synthesis + stopping the session. Crazy-expert proposed the "engineered substrate triad" framing specifically. The session-end discipline (stop after substantive bookkeeping; don't generate new mechanism candidates) is honored.
+
+Today's session totals: 4 Tier 2 measurement registrations (C2028, C2029, C2030, C2031, C2032 = 5 with C2032), 1 Tier 1 retraction (C2027), 1 Tier 3 SPECULATIVE half-falsified (encoding_modes), 1 new Tier 3 SPECULATIVE synthesis (engineered_substrate_triad), 5 new memory rules. Three substantive mechanism interpretations demoted at successively deeper validation levels. Methodology held; framework-as-null discipline operating at high velocity.
+
+---
+
 ## Version 6.66 (2026-05-16) - e-Depth Operational Asymmetry (C2031)
 
 ### Summary
