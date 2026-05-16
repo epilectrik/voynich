@@ -654,116 +654,83 @@ Informal observations and exploratory results awaiting formal testing. These are
 
 ---
 
-## Publication Strategy (not an empirical test — future work planning)
+## Open Research Directions
 
-### PUB-001: Methodological-novelty paper framing — the "Category 3 gap" in Voynich scholarship
-- **Context:** Strategic thinking about how to eventually publish this work given (a) anti-AI sentiment in Voynich field, (b) history of failed decipherment claims (Newbold, Bax, Gibbs, Cheshire), (c) user has already emailed repo to top researchers establishing priority, (d) need to position work defensibly without overclaiming.
-- **Key insight (from conversation 2026-04-18):** Voynich scholarship has a methodological gap that our work fills:
-  - **Category 1 (accepted, content-neutral):** Structural analyses tying folios together by scribal hand, statistical properties, codicological features. Examples: Currier (A/B hands), Landini (Zipf/word-length), Zandbergen (structural+codicological).
-  - **Category 2 (mostly wrong, narrow scope):** Content-level decipherment claims. Newbold (whole manuscript, fabricated), Bax (10 words, cherry-picked), Gibbs (few abbreviations, wrong), Cheshire (broad but unrigorous).
-  - **Category 3 (the gap — previously unoccupied):** Systematic content-level claims spanning multiple folios with statistical validation and external source-text anchoring.
-- **Our work fills Category 3 via the combination of:**
-  1. Systematic matching methodology (not anecdotal)
-  2. 15-16 folio-recipe pairs (population-size, not single-case)
-  3. Pre-computed token glosses (independent derivation before matching; C1195, C1394)
-  4. External source text (Testamentum — specific, historically grounded)
-  5. Permutation-validated correspondence (10,000-shuffle significance tests)
-  6. Cross-operation-class generalization (distillation, maceration, vessel spec, cohobation)
-  7. Falsifiable predictions (pre-registered)
-  8. Documented self-correction (PT-027 → PT-028 → PT-029 arc)
-- **Recommended paper framing (NOT a decipherment claim):**
-  - **Title (approximate):** "Structural Correspondence Between Currier B Folios and Pseudo-Lull Testamentum Recipes: A 10,000-Permutation Test"
-  - **Main claim (narrow + statistically-anchored):** 15-16 folio-recipe pairings show structural correspondence exceeding random pairing at p<0.001 across 10,000 permutation trials. Individual-folio interpretations are tentative; set-level correspondence is robust.
-  - **Evidence structure:** permutation test as primary evidence, individual cases (f75r/Ch19M most developed) as illustrative supporting examples, NOT as load-bearing claims.
-  - **Positioning:** extends Currier/Landini/Zandbergen methodological tradition by adding content-level dimension while maintaining statistical rigor. Explicitly distinguish from Bax/Gibbs/Cheshire cherry-picking by reference to pre-computed glosses + permutation test + leave-one-out robustness.
-  - **Limitations section must include:** PT-028 calibration issues, single-interpretation uncertainties, workshop-adaptation complexity, alternative source texts not definitively ruled out.
-- **Key rhetorical move:** Don't claim decipherment. Claim "first systematic content-level analysis with statistical validation in the manuscript's research history." Methodological firsts get cited even when specific claims get revised (cf. Currier's A/B work). Decipherment claims get debunked (cf. Cheshire).
-- **What to DE-emphasize in paper writing:**
-  - "AI-assisted" anything (describe as "computational corpus analysis")
-  - Broad decipherment language ("solved," "decoded," "translated")
-  - Strong claims about specific material identities (respect C171 semantic ceiling)
-  - Single-folio anecdotes without set-level context
-- **Target venues (ranked):**
-  1. **Ambix** — Society for History of Alchemy and Chemistry. Specializes in alchemical manuscript studies. Reviewers would understand operational recipe analysis. Best fit.
-  2. **Cryptologia** — publishes Voynich statistical work historically. Permutation-test papers align with their tradition.
-  3. **Early Science and Medicine** (Brill) — history of science including alchemy.
-  4. **Digital Humanities Quarterly** — open-access, methods-friendly.
-  5. **PLOS ONE** — accepts methodology papers, low scope-expectation.
-- **Preprint first:** arXiv (cs.CL or stat.AP) or Zenodo with DOI. Establishes dated priority without peer-review gatekeeping. User's existing emails to top researchers already establish priority; preprint formalizes it.
-- **Credentials/affiliation:** "Independent Researcher" is a valid affiliation. ORCID ID (free) adds legitimacy. No credential gatekeeping at most journals; desk-rejection rate elevated ~20-30% for uncredentialed but not categorical. Historical precedents: Einstein (patent clerk), Perelman (unaffiliated), Mendel (provincial monk).
-- **Workshop-adaptation hypothesis** (discussed 2026-04-18 conversation): The paper should acknowledge that Voynich encoding is workshop-specific adaptation of Testamentum recipes, not literal text transcription. This explains count-encoding inconsistencies (operator-specific counting), aspectual vs. enumerative distinction, and why no single folio maps 1:1 to a recipe. This is a more defensible and more sophisticated thesis than direct encoding.
-- **Evidence that Testamentum IS specifically the source (not just a tradition):**
-  - Preserved ordering between Testamentum chapters and matched folios
-  - Ch18M→Ch19M presupposition encoding (f81v→f75r recipe-DAG)
-  - Multi-chapter folios (f80r = Ch21-25M) preserving Testamentum chapter-sequence
-  - Testamentum uniquely integrates Theorica+Practica+recipes in the way the manuscript appears to
-  - Specific vocabulary matches (lunaria as starting material, mercury preparations, vessel specification)
-- **Self-correction as strength, not weakness:** The PT-027→PT-029 arc documenting overclaim-then-walk-back is CREDIBILITY-BUILDING, not reputation-damaging. Distinguishes our methodology from Cheshire (never retracted), Gibbs (never retracted), Bax (never retracted). Explicitly frame this in the paper.
-- **Status:** Strategic framing for eventual paper submission. Not currently being drafted. To execute: after SISMEL arrives and initial Catalan validation work done, draft a 8-15 page methods-forward paper with set-level claim + individual case studies + explicit limitations + falsifiable predictions. Submit to Ambix or Cryptologia. Total effort estimate: 40-80 hours.
-- **Session:** 2026-04-18 (strategic discussion after PT-029 direct-reading verification)
+> **Note:** Paper-drafting material (publication strategy, citations, methodology framing, research chronology audit, doc overclaim audit, language discipline patterns) has been split out to `context/PAPER_NOTES.md`.
 
-### PUB-002: Voynich 2026 International Conference — primary submission target
-- **Conference:** 2026 International Conference on the Voynich Manuscript (DEDICATED EXCLUSIVELY TO VOYNICH — not a general conference)
-- **Date:** Wednesday, December 9, 2026 (online)
-- **Host:** University of Malta (Valletta Campus)
-- **Chair:** Dr. Colin Layfield (Senior Lecturer, University of Malta)
-- **Co-Chair:** Prof. John Abela (Associate Professor, University of Malta)
-- **Program Committee:** international — Yale, Utrecht University, University of Iceland, University of Texas at Austin, European Space Agency, and independent researchers specializing in linguistics/cryptography/manuscript analysis (independent researchers EXPLICITLY on the committee — accepts non-credentialed submissions)
-- **Website:** https://www.um.edu.mt/events/voynich2026/
-- **Contact:** voynich2026@um.edu.mt
-- **Submission platform:** EasyChair — https://easychair.org/conferences/?conf=voy2026
-- **Stated objective:** "Provide researchers with the opportunity to present their research and work on the Voynich manuscript." Researchers can present findings, learn about current scholarship, and network with the investigation community focused on this historical document.
-- **Key timeline:**
-  - Abstract/summary deadline: **June 30, 2026 (11:59 CEST)** — ~10 weeks from session date (2026-04-18)
-  - Acceptance notification: July 24, 2026
-  - Full paper deadline: August 31, 2026
-  - Final acceptance: October 1, 2026
-  - Video presentation deadline: November 9, 2026
-- **Submission requirements:**
-  - Abstract: max 750 words
-  - Full paper: 5-9 pages using CEUR-ART templates (LaTeX or LibreOffice)
-  - 20-minute pre-recorded video presentation + live Q&A
-  - Must be unpublished work
-  - At least one author must register and present
-- **Accepted research areas:** historical approaches and ciphers, NLP techniques, AI/ML applications, image processing, hoax vs. natural language discussions, digital humanities methods
-- **CRITICAL policies:**
-  - **Decipherment claims EXPLICITLY REJECTED** — "Proposed manuscript 'solutions' are rejected." This aligns perfectly with our methods-forward framing (PUB-001). Must avoid decipherment language.
-  - **Generative AI text generation PROHIBITED.** Grammar/translation tools exempt. AI-assisted content requires disclosure. Paper prose must be human-written; AI can be research assistant but not author.
-  - Open about AI tool USE (for analysis) is fine with disclosure
-- **Why this venue is ideal:**
-  - Methods-forward framing explicitly welcomed (NLP/AI/ML/DH)
-  - Decipherment-rejection policy PROTECTS our framing (we're not trying to "solve" anyway)
-  - Medieval Academy institutional backing adds credibility
-  - Online format reduces travel cost
-  - International audience
-  - December 2026 timeline allows full SISMEL validation work before submission
-- **Strategic plan:**
-  - Phase 1 (late April-May 2026): Complete SISMEL Catalan validation work when book arrives
-  - Phase 2 (May-June 2026): Draft 750-word abstract for June 30 deadline
-  - Phase 3 (July-August 2026): If accepted, write 5-9 page paper
-  - Phase 4 (September-November 2026): Prepare video presentation
-  - Phase 5 (December 9 2026): Present
-- **Abstract content draft (tentative):**
-  - Title: "Computational Corpus Analysis of Currier B Folios: Structural Regime Separation and Testamentum-Tradition Correspondence"
-  - Lead findings: PT-019 regime cluster + PT-020 three-part vocabulary + f75r/Ch19M multi-channel alignment
-  - Framing: methods extension of Currier/Landini/Zandbergen tradition, explicitly complementary to Pereira (2002)
-  - Emphasize: pre-registered predictions, self-correction documentation, permutation testing, workshop-adaptation hypothesis
-  - De-emphasize: "decipherment," "solve," broad claims, AI generative tooling
-- **Paper constraints (5-9 pages) force tight scope:**
-  - Cannot cover full matched set in depth
-  - One flagship case (f75r/Ch19M) + set-level statistics
-  - Supporting examples as tables/figures not full discussion
-  - Most PT-series findings compressed to methodology + results sections
-- **Author affiliation:** "Independent Researcher, [location]" — conference accepts independent submissions per their CFP
-- **AI disclosure plan (when submitting):** state clearly that AI models (specifically Claude Opus 4.6/4.7) were used as research assistants for structural analysis, corpus extraction, and statistical validation. State that prose is human-authored. This meets the disclosure requirement without violating the generative-text prohibition.
-- **Risk factors:**
-  - High rejection rate expected (most conference submissions rejected)
-  - "Decipherment-rejection" policy could catch us if reviewers interpret our work as decipherment-adjacent
-  - AI-disclosure requirement could trigger skeptical reviewing even for legitimate methods
-  - 5-9 page constraint is tight for the evidence we have
-- **Backup venues if rejected:** Cryptologia (Voynich statistical work has long history there), Ambix (alchemical manuscript studies), arXiv preprint as priority-preserving fallback
-- **Status:** Primary near-term publication target. Concrete deadlines. Realistic timeline given SISMEL arrival this week.
-- **Session:** 2026-04-18
+### PT-030: Currier A may encode externally-matchable content we have not tested for (open research direction)
+- **Purpose:** Off-the-books atom-level statistical testing (2026-04-19) revealed that the project's "Currier A is flat / Currier B is structured" narrative is quantitatively weaker than the docs imply. A may encode content that we haven't systematically looked for.
+- **Evidence triggering this question:**
+
+  | Metric | A | B | Ratio B/A |
+  |---|---|---|---|
+  | Adjacent atom MI | 1.46 | 1.65 | 1.14x |
+  | Within-token atom MI | 1.69 | 1.91 | 1.13x |
+  | Paragraph-scoped atom MI | 1.75 | 1.81 | 1.03x |
+  | Heaps β | 0.76 | 0.74 | ~same |
+  | Atom inventory | 19 | 20 | ~same |
+  | Folio atom JSD | 0.030 | 0.019 | A varies MORE |
+  | Atom MI vs natural language chars | 2.2x | 2.5x | Both far above NL |
+
+  A and B share the same atom inventory and similar baseline adjacency statistics. A is 85-90% as structurally rich as B at the atomic level. The "flat vs. structured" framing doesn't survive quantitative comparison. The real B/A distinction is architectural (gallows-delimited paragraphs, 49-class instruction hierarchy, 17 forbidden transitions, positional line zones) — all features B has and A lacks — but NOT statistical richness at the atom level.
+
+- **What we have falsified about A:**
+  - A is natural language (C130, C132)
+  - A is a cipher over natural language (C207)
+  - A → B semantic lookup (C384)
+  - A is apparatus diagrams (C454-C456, specifically targeted AZC but related)
+
+- **What we have NOT falsified / NOT tested:**
+  1. **A has never been matched against any external corpus.** The recipe-matching pipeline (Phases 628-638) was designed for B paragraph-structured content. A is record-based; the pipeline does not apply without modification.
+  2. **"Discrimination registry" framing is Tier 3.** It's a hypothesis, not an empirical finding. The interpretive language in synthesis docs ("A catalogs materials," "A encodes what operations exist") is not backed by external validation.
+  3. **The herbal section (f1-f66, largely Currier A) is unmatched.** The manuscript's most iconic visual content has never been externally anchored. Section H folios are the "empty" part of our match coverage.
+  4. **A's folio-to-folio atom variation (JSD = 0.030) is HIGHER than B's (0.019).** Folios differ from each other more in A than in B — suggesting folio-level semantic differentiation we haven't exploited.
+
+- **Candidate target corpora for future A matching:**
+  - **Dioscorides, *De Materia Medica*** — classical reference, widely circulated in medieval copies
+  - **Circa Instans** (12th century materia medica, ~400 entries)
+  - **Serapion the Younger's *Liber de simplicibus***
+  - **Tractatus de Herbis** manuscripts (illustrated herbals)
+  - **Ibn Sina's *Canon*, Book II** (plant properties)
+  - **Matthaeus Platearius** plant lists
+  - **Brunschwig's 1500 Small Book** (plant-by-plant distillation — 245 entries, already in repo)
+  - **Hildegard von Bingen's *Physica*** (12th century German plant-medicine)
+  - **Regional monastic infirmary plant lists** (Benedictine, Augustinian)
+
+  Each of these is a record-based plant catalogue that might structurally parallel A's record-based entries.
+
+- **Why A matching would require new methodology:**
+  1. A is non-sequential (records, not paragraphs) — can't use the 8D residual feature matching as-is
+  2. Matching unit is likely per-record rather than per-folio
+  3. Feature set needs to be A-appropriate (A has distinct terminal emphasis: l 1.84x enriched vs B's dy 144x, per CHRON-001)
+  4. Target corpora would need parallel per-entry feature extraction (the Brunschwig Small Book is the best candidate for a pre-registered A-matching test)
+  5. Brunschwig's 1500 Small Book has been flagged in Phase 642 as "too operationally thin (2-3 steps each)" for B-style matching — but that thinness is exactly what might make it MATCH A's record-level granularity
+
+- **Paper framing implications:**
+  - **Revise "A flat / B structured" language everywhere.** The atom statistics do not support this dichotomy.
+  - **Make A's treatment explicitly scope-limited.** Say "our methodology was designed for B-type paragraph-structured content; A-type record-structured content may encode its own externally-anchorable material that remains to be systematically tested."
+  - **Do not claim A is a registry as an established finding.** It's a Tier 3 hypothesis.
+  - **Acknowledge the herbal section as an open frontier.** The manuscript's most visually iconic content is the computationally least characterized.
+
+- **Priority and effort estimate:**
+  - Not paper-critical for Voynich 2026 submission (scope decision: paper is B-focused, A acknowledged but not claimed)
+  - Post-paper: genuine research direction, 2-4 weeks of work to build A-matching pipeline
+  - Target corpus: start with Brunschwig 1500 Small Book (already in repo) and Circa Instans (needs acquisition)
+  - First test: can A record-level features match Brunschwig Small Book plant entries at statistically significant rates?
+
+- **What a successful A match would mean:**
+  - External anchoring of the herbal section illustrations
+  - Revelation of a second source tradition for the manuscript (beyond Pseudo-Lull)
+  - Potential identification of specific plants per folio (at operation-level, not semantic decode)
+  - Major extension of the workshop-adaptation hypothesis
+
+- **What a failed A match across multiple candidate corpora would mean:**
+  - Stronger case that A really is a registry without external source text
+  - OR: A encodes a genre/tradition we haven't identified
+  - Either outcome is informative
+
+- **Status:** Open research direction. Not blocking the Voynich 2026 paper. Logged as post-paper follow-up.
+- **Session:** 2026-04-19
 
 ---
 

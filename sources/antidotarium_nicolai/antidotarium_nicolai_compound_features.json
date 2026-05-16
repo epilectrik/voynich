@@ -1,0 +1,4727 @@
+{
+  "metadata": {
+    "source": "antidotarium_nicolai_latin_plain.txt",
+    "method": "4-channel Latin pharmacy featurization",
+    "n_recipes": 124,
+    "channels": {
+      "k": "heat / thermal (ignis, calefac, bulli, balneo)",
+      "h": "monitoring (videre, color, consistency, vapor)",
+      "t": "termination (donec, dum, sufficit, time spans)",
+      "e": "correction (caute, ne, addatur, agitando)"
+    }
+  },
+  "recipes": [
+    {
+      "recipe_idx": 0,
+      "name": "AUrea",
+      "lines": "",
+      "n_words": 182,
+      "n_ingredients": 6,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0275,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0055,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.011,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 1,
+      "name": "ADrianum",
+      "lines": "",
+      "n_words": 162,
+      "n_ingredients": 10,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0185,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0062,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0062,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 2,
+      "name": "ACHaristum",
+      "lines": "",
+      "n_words": 103,
+      "n_ingredients": 4,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0097,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0194,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0097,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 3,
+      "name": "ATHanasia",
+      "lines": "",
+      "n_words": 135,
+      "n_ingredients": 4,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0074,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0074,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0148,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 4,
+      "name": "ALcancalon",
+      "lines": "",
+      "n_words": 209,
+      "n_ingredients": 6,
+      "n_steps": 17,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0526,
+        "mean_heat_intensity": 2.3,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 11
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0239,
+        "color_frac": 0.2,
+        "consistency_frac": 0.4,
+        "volatility_frac": 0.2,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0191,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 4
+      },
+      "e_channel": {
+        "correction_rate": 0.0144,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 5,
+      "name": "ANtimaron",
+      "lines": "",
+      "n_words": 107,
+      "n_ingredients": 14,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.028,
+        "color_frac": 0.333,
+        "consistency_frac": 0.667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0093,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 6,
+      "name": "ANtidotum",
+      "lines": "",
+      "n_words": 357,
+      "n_ingredients": 31,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0084,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0084,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.333,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0056,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0028,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 7,
+      "name": "BEnedicta",
+      "lines": "",
+      "n_words": 77,
+      "n_ingredients": 4,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.026,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.013,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 8,
+      "name": "COnfectio",
+      "lines": "",
+      "n_words": 186,
+      "n_ingredients": 3,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0161,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0323,
+        "color_frac": 0.333,
+        "consistency_frac": 0.667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.333,
+        "raw_monitoring_mentions": 6
+      },
+      "t_channel": {
+        "termination_rate": 0.0161,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0108,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 9,
+      "name": "COnfectio",
+      "lines": "",
+      "n_words": 89,
+      "n_ingredients": 3,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0112,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0449,
+        "color_frac": 0.0,
+        "consistency_frac": 0.75,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 10,
+      "name": "COnfectio",
+      "lines": "",
+      "n_words": 107,
+      "n_ingredients": 3,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0093,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.028,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.333,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.028,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 11,
+      "name": "DIamargariton",
+      "lines": "",
+      "n_words": 99,
+      "n_ingredients": 6,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0101,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 12,
+      "name": "DIantos",
+      "lines": "",
+      "n_words": 65,
+      "n_ingredients": 2,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0154,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 13,
+      "name": "DIasatirion",
+      "lines": "",
+      "n_words": 369,
+      "n_ingredients": 8,
+      "n_steps": 17,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0325,
+        "mean_heat_intensity": 2.8,
+        "heat_transition_rate": 0.4,
+        "raw_heat_mentions": 12
+      },
+      "h_channel": {
+        "monitoring_rate": 0.019,
+        "color_frac": 0.714,
+        "consistency_frac": 0.143,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.857,
+        "raw_monitoring_mentions": 7
+      },
+      "t_channel": {
+        "termination_rate": 0.0081,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0081,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 14,
+      "name": "DIamoron",
+      "lines": "",
+      "n_words": 195,
+      "n_ingredients": 11,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0154,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0103,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 15,
+      "name": "DIalacca",
+      "lines": "",
+      "n_words": 91,
+      "n_ingredients": 9,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.011,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 16,
+      "name": "DIacurcuma",
+      "lines": "",
+      "n_words": 30,
+      "n_ingredients": 2,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0333,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 17,
+      "name": "DIagalanga",
+      "lines": "",
+      "n_words": 72,
+      "n_ingredients": 4,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0139,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0139,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 18,
+      "name": "DIatrionpipereon",
+      "lines": "",
+      "n_words": 191,
+      "n_ingredients": 4,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0209,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0105,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0052,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0105,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 19,
+      "name": "DIaciminum",
+      "lines": "",
+      "n_words": 68,
+      "n_ingredients": 7,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0147,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 20,
+      "name": "DIaysopum",
+      "lines": "",
+      "n_words": 33,
+      "n_ingredients": 4,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0303,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 21,
+      "name": "DIasene",
+      "lines": "",
+      "n_words": 96,
+      "n_ingredients": 4,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0104,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0104,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0104,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 22,
+      "name": "ALia",
+      "lines": "",
+      "n_words": 51,
+      "n_ingredients": 1,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0196,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 23,
+      "name": "DIaprassium",
+      "lines": "",
+      "n_words": 307,
+      "n_ingredients": 7,
+      "n_steps": 8,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0195,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.75,
+        "raw_heat_mentions": 6
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0065,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.5,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0065,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0098,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 24,
+      "name": "DIalibanum",
+      "lines": "",
+      "n_words": 73,
+      "n_ingredients": 9,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0411,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0137,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 25,
+      "name": "DIarodon",
+      "lines": "",
+      "n_words": 136,
+      "n_ingredients": 7,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0147,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0221,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0074,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 26,
+      "name": "DIapenidion",
+      "lines": "",
+      "n_words": 167,
+      "n_ingredients": 8,
+      "n_steps": 11,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0359,
+        "mean_heat_intensity": 2.33,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 6
+      },
+      "h_channel": {
+        "monitoring_rate": 0.024,
+        "color_frac": 0.25,
+        "consistency_frac": 0.75,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.25,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.018,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0359,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 6
+      }
+    },
+    {
+      "recipe_idx": 27,
+      "name": "DIadragantum",
+      "lines": "",
+      "n_words": 115,
+      "n_ingredients": 6,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0435,
+        "mean_heat_intensity": 2.33,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0348,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0261,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 28,
+      "name": "DIacastoreum",
+      "lines": "",
+      "n_words": 208,
+      "n_ingredients": 10,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0048,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0096,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0096,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 29,
+      "name": "DIacostum",
+      "lines": "",
+      "n_words": 72,
+      "n_ingredients": 6,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0556,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0139,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 30,
+      "name": "DIairis",
+      "lines": "",
+      "n_words": 50,
+      "n_ingredients": 6,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.04,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.02,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.02,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 31,
+      "name": "DIacalamentum",
+      "lines": "",
+      "n_words": 98,
+      "n_ingredients": 6,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0204,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0102,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 32,
+      "name": "DIacodion",
+      "lines": "",
+      "n_words": 140,
+      "n_ingredients": 11,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0286,
+        "mean_heat_intensity": 2.25,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0286,
+        "color_frac": 0.75,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0143,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0071,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 33,
+      "name": "DIacitoniten",
+      "lines": "",
+      "n_words": 237,
+      "n_ingredients": 8,
+      "n_steps": 9,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0295,
+        "mean_heat_intensity": 2.2,
+        "heat_transition_rate": 0.6,
+        "raw_heat_mentions": 7
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0127,
+        "color_frac": 0.667,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.333,
+        "chain_rate": 0.667,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0084,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0211,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.2,
+        "raw_correction_mentions": 5
+      }
+    },
+    {
+      "recipe_idx": 34,
+      "name": "DIapapaver",
+      "lines": "",
+      "n_words": 45,
+      "n_ingredients": 5,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0222,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0222,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 35,
+      "name": "CAtolicon",
+      "lines": "",
+      "n_words": 44,
+      "n_ingredients": 1,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0227,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0227,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 36,
+      "name": "ELectuarium",
+      "lines": "",
+      "n_words": 93,
+      "n_ingredients": 2,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0323,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0215,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 37,
+      "name": "ELectuarium",
+      "lines": "",
+      "n_words": 241,
+      "n_ingredients": 3,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0539,
+        "mean_heat_intensity": 2.46,
+        "heat_transition_rate": 0.462,
+        "raw_heat_mentions": 13
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0166,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0249,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 6
+      },
+      "e_channel": {
+        "correction_rate": 0.0083,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 38,
+      "name": "EMplastrum",
+      "lines": "",
+      "n_words": 149,
+      "n_ingredients": 3,
+      "n_steps": 8,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.047,
+        "mean_heat_intensity": 2.25,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 7
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0201,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.667,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0067,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 39,
+      "name": "ELectuarium",
+      "lines": "",
+      "n_words": 102,
+      "n_ingredients": 5,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0098,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0098,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 40,
+      "name": "ESdra",
+      "lines": "",
+      "n_words": 254,
+      "n_ingredients": 6,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0079,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0039,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0039,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 41,
+      "name": "EMplastrum",
+      "lines": "",
+      "n_words": 300,
+      "n_ingredients": 4,
+      "n_steps": 17,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0133,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0133,
+        "color_frac": 0.25,
+        "consistency_frac": 0.75,
+        "volatility_frac": 0.0,
+        "chain_rate": 2.0,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0133,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 4
+      },
+      "e_channel": {
+        "correction_rate": 0.0267,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.125,
+        "raw_correction_mentions": 8
+      }
+    },
+    {
+      "recipe_idx": 42,
+      "name": "ELectuarium",
+      "lines": "",
+      "n_words": 181,
+      "n_ingredients": 4,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0055,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0166,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0166,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 43,
+      "name": "EMplastrum",
+      "lines": "",
+      "n_words": 332,
+      "n_ingredients": 10,
+      "n_steps": 10,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0211,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.4,
+        "raw_heat_mentions": 7
+      },
+      "h_channel": {
+        "monitoring_rate": 0.006,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 2.5,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.006,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.009,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 44,
+      "name": "FIlonium",
+      "lines": "",
+      "n_words": 95,
+      "n_ingredients": 9,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0105,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 45,
+      "name": "GAriofilatum",
+      "lines": "",
+      "n_words": 97,
+      "n_ingredients": 4,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0103,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0103,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 1.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0103,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 46,
+      "name": "HYgia",
+      "lines": "",
+      "n_words": 172,
+      "n_ingredients": 9,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0291,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0116,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 47,
+      "name": "IUstinum",
+      "lines": "",
+      "n_words": 87,
+      "n_ingredients": 2,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0115,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0115,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 48,
+      "name": "KAtarticum",
+      "lines": "",
+      "n_words": 82,
+      "n_ingredients": 4,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0488,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0122,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 49,
+      "name": "LItontripon",
+      "lines": "",
+      "n_words": 108,
+      "n_ingredients": 3,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0185,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0093,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 50,
+      "name": "MEtridatum",
+      "lines": "",
+      "n_words": 342,
+      "n_ingredients": 6,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0058,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0029,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 51,
+      "name": "MUsa",
+      "lines": "",
+      "n_words": 133,
+      "n_ingredients": 5,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0226,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0075,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0075,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 52,
+      "name": "MIcleta",
+      "lines": "",
+      "n_words": 208,
+      "n_ingredients": 7,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0337,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.167,
+        "raw_heat_mentions": 7
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0192,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.25,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0048,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0144,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.333,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 53,
+      "name": "NEfrocatarticum",
+      "lines": "",
+      "n_words": 157,
+      "n_ingredients": 8,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0191,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0127,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0064,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 54,
+      "name": "OPopira",
+      "lines": "",
+      "n_words": 496,
+      "n_ingredients": 14,
+      "n_steps": 15,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0343,
+        "mean_heat_intensity": 2.36,
+        "heat_transition_rate": 0.286,
+        "raw_heat_mentions": 17
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0161,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 8
+      },
+      "t_channel": {
+        "termination_rate": 0.0121,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 6
+      },
+      "e_channel": {
+        "correction_rate": 0.0081,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 4
+      }
+    },
+    {
+      "recipe_idx": 55,
+      "name": "OXizaccare",
+      "lines": "",
+      "n_words": 63,
+      "n_ingredients": 2,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0317,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0159,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0159,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 56,
+      "name": "OLeum",
+      "lines": "",
+      "n_words": 275,
+      "n_ingredients": 2,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0291,
+        "mean_heat_intensity": 2.6,
+        "heat_transition_rate": 0.6,
+        "raw_heat_mentions": 8
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0182,
+        "color_frac": 0.8,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0109,
+        "threshold_frac": 0.667,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 57,
+      "name": "OLeum",
+      "lines": "",
+      "n_words": 130,
+      "n_ingredients": 1,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0308,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0308,
+        "color_frac": 0.75,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0231,
+        "threshold_frac": 0.667,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 58,
+      "name": "POtio",
+      "lines": "",
+      "n_words": 214,
+      "n_ingredients": 9,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0093,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0093,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0047,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 59,
+      "name": "PAulinum",
+      "lines": "",
+      "n_words": 276,
+      "n_ingredients": 7,
+      "n_steps": 12,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.029,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.6,
+        "raw_heat_mentions": 8
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0145,
+        "color_frac": 0.25,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.5,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0072,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0109,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 60,
+      "name": "PAncristum",
+      "lines": "",
+      "n_words": 78,
+      "n_ingredients": 6,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0256,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0128,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0128,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 61,
+      "name": "PIgra",
+      "lines": "",
+      "n_words": 69,
+      "n_ingredients": 3,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.029,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0145,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 62,
+      "name": "POtio",
+      "lines": "",
+      "n_words": 177,
+      "n_ingredients": 4,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0113,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0056,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 63,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 73,
+      "n_ingredients": 0,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0137,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0137,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 64,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 83,
+      "n_ingredients": 5,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 65,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 88,
+      "n_ingredients": 2,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0227,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0114,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 66,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 39,
+      "n_ingredients": 2,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 67,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 54,
+      "n_ingredients": 1,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.037,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 68,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 42,
+      "n_ingredients": 2,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0238,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 69,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 60,
+      "n_ingredients": 2,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 70,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 57,
+      "n_ingredients": 6,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 71,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 44,
+      "n_ingredients": 0,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 72,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 73,
+      "n_ingredients": 3,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 73,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 31,
+      "n_ingredients": 0,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0323,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0323,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 74,
+      "name": "PIlule",
+      "lines": "",
+      "n_words": 126,
+      "n_ingredients": 6,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0159,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0079,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 75,
+      "name": "ROsata",
+      "lines": "",
+      "n_words": 71,
+      "n_ingredients": 3,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0141,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 76,
+      "name": "RVbea",
+      "lines": "",
+      "n_words": 90,
+      "n_ingredients": 6,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0222,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0111,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 77,
+      "name": "REquies",
+      "lines": "",
+      "n_words": 186,
+      "n_ingredients": 4,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0269,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0108,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0054,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 78,
+      "name": "ROdozacara",
+      "lines": "",
+      "n_words": 96,
+      "n_ingredients": 1,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0312,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0104,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 79,
+      "name": "EOdem",
+      "lines": "",
+      "n_words": 92,
+      "n_ingredients": 1,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0217,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.5,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 80,
+      "name": "SOtira",
+      "lines": "",
+      "n_words": 187,
+      "n_ingredients": 13,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0107,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.016,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0053,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 81,
+      "name": "STomaticon",
+      "lines": "",
+      "n_words": 135,
+      "n_ingredients": 4,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0519,
+        "mean_heat_intensity": 2.25,
+        "heat_transition_rate": 0.25,
+        "raw_heat_mentions": 7
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0148,
+        "color_frac": 0.5,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.5,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0148,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0222,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.333,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 82,
+      "name": "STomaticum",
+      "lines": "",
+      "n_words": 42,
+      "n_ingredients": 5,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0238,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0476,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 83,
+      "name": "SIrupus",
+      "lines": "",
+      "n_words": 170,
+      "n_ingredients": 1,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0412,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 7
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0294,
+        "color_frac": 0.6,
+        "consistency_frac": 0.2,
+        "volatility_frac": 0.2,
+        "chain_rate": 0.6,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0118,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0059,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 84,
+      "name": "SIrupus",
+      "lines": "",
+      "n_words": 75,
+      "n_ingredients": 4,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0133,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0267,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0133,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 85,
+      "name": "SYrupus",
+      "lines": "",
+      "n_words": 120,
+      "n_ingredients": 7,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0333,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0417,
+        "color_frac": 0.4,
+        "consistency_frac": 0.6,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0167,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 86,
+      "name": "SYrupus",
+      "lines": "",
+      "n_words": 74,
+      "n_ingredients": 4,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0135,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0405,
+        "color_frac": 0.667,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.333,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.027,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 87,
+      "name": "SYrupus",
+      "lines": "",
+      "n_words": 78,
+      "n_ingredients": 2,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": true,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0256,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0128,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 3.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0256,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 88,
+      "name": "SPongia",
+      "lines": "",
+      "n_words": 81,
+      "n_ingredients": 1,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0123,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0123,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0123,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 89,
+      "name": "SYrupus",
+      "lines": "",
+      "n_words": 74,
+      "n_ingredients": 1,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0135,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 90,
+      "name": "TYriaca",
+      "lines": "",
+      "n_words": 345,
+      "n_ingredients": 9,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0261,
+        "mean_heat_intensity": 1.62,
+        "heat_transition_rate": 0.25,
+        "raw_heat_mentions": 9
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0058,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0058,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0029,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 91,
+      "name": "TYriaca",
+      "lines": "",
+      "n_words": 121,
+      "n_ingredients": 7,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0083,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0083,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 92,
+      "name": "TRifera",
+      "lines": "",
+      "n_words": 224,
+      "n_ingredients": 8,
+      "n_steps": 13,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0402,
+        "mean_heat_intensity": 2.33,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 9
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0268,
+        "color_frac": 0.333,
+        "consistency_frac": 0.667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.667,
+        "raw_monitoring_mentions": 6
+      },
+      "t_channel": {
+        "termination_rate": 0.0089,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0179,
+        "recoverable_frac": 0.75,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 4
+      }
+    },
+    {
+      "recipe_idx": 93,
+      "name": "TRifera",
+      "lines": "",
+      "n_words": 153,
+      "n_ingredients": 3,
+      "n_steps": 8,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0131,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0065,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 94,
+      "name": "TRionfilon",
+      "lines": "",
+      "n_words": 72,
+      "n_ingredients": 3,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0694,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0139,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 95,
+      "name": "TRiasandali",
+      "lines": "",
+      "n_words": 75,
+      "n_ingredients": 3,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0133,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0133,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0133,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 96,
+      "name": "THeodoriton",
+      "lines": "",
+      "n_words": 135,
+      "n_ingredients": 8,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0148,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0222,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0074,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 97,
+      "name": "THeodoriton",
+      "lines": "",
+      "n_words": 151,
+      "n_ingredients": 6,
+      "n_steps": 8,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0132,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0066,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0199,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0066,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 98,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 69,
+      "n_ingredients": 5,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0435,
+        "color_frac": 0.667,
+        "consistency_frac": 0.333,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0145,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 99,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 32,
+      "n_ingredients": 6,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.125,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0312,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 100,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 51,
+      "n_ingredients": 3,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0392,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.5,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0196,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 101,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 20,
+      "n_ingredients": 3,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 102,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 64,
+      "n_ingredients": 0,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": true,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0156,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0469,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 103,
+      "name": "TRocissci",
+      "lines": "",
+      "n_words": 44,
+      "n_ingredients": 3,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0455,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 104,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 28,
+      "n_ingredients": 3,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0,
+        "raw_termination_mentions": 0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 105,
+      "name": "TRocisci",
+      "lines": "",
+      "n_words": 89,
+      "n_ingredients": 0,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0112,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0112,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0112,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 106,
+      "name": "VOmitus",
+      "lines": "",
+      "n_words": 167,
+      "n_ingredients": 2,
+      "n_steps": 13,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0479,
+        "mean_heat_intensity": 2.25,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 8
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.018,
+        "threshold_frac": 0.667,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 107,
+      "name": "VOmitus",
+      "lines": "",
+      "n_words": 19,
+      "n_ingredients": 2,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0526,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0526,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 108,
+      "name": "VOmitus",
+      "lines": "",
+      "n_words": 28,
+      "n_ingredients": 0,
+      "n_steps": 2,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0357,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0357,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 109,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 233,
+      "n_ingredients": 6,
+      "n_steps": 10,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0215,
+        "mean_heat_intensity": 2.75,
+        "heat_transition_rate": 0.25,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0515,
+        "color_frac": 0.667,
+        "consistency_frac": 0.333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 12
+      },
+      "t_channel": {
+        "termination_rate": 0.0086,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0258,
+        "recoverable_frac": 0.667,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 6
+      }
+    },
+    {
+      "recipe_idx": 110,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 192,
+      "n_ingredients": 4,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.026,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0104,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.5,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.026,
+        "threshold_frac": 0.75,
+        "raw_termination_mentions": 5
+      },
+      "e_channel": {
+        "correction_rate": 0.0052,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 111,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 166,
+      "n_ingredients": 4,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0181,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 3.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.006,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.006,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 112,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 148,
+      "n_ingredients": 3,
+      "n_steps": 7,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.027,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0203,
+        "color_frac": 0.333,
+        "consistency_frac": 0.333,
+        "volatility_frac": 0.333,
+        "chain_rate": 0.333,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0068,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 113,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 221,
+      "n_ingredients": 8,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0045,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.009,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.009,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0045,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 114,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 195,
+      "n_ingredients": 7,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 3,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0205,
+        "mean_heat_intensity": 2.67,
+        "heat_transition_rate": 0.333,
+        "raw_heat_mentions": 4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0051,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 7.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0051,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0103,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 115,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 226,
+      "n_ingredients": 10,
+      "n_steps": 10,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0354,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 8
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0133,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.667,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0088,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0177,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 4
+      }
+    },
+    {
+      "recipe_idx": 116,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 41,
+      "n_ingredients": 0,
+      "n_steps": 1,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0732,
+        "color_frac": 0.333,
+        "consistency_frac": 0.667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.667,
+        "raw_monitoring_mentions": 3
+      },
+      "t_channel": {
+        "termination_rate": 0.0488,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 117,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 147,
+      "n_ingredients": 4,
+      "n_steps": 4,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0068,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0068,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 2.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0204,
+        "threshold_frac": 0.667,
+        "raw_termination_mentions": 3
+      },
+      "e_channel": {
+        "correction_rate": 0.0136,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 2
+      }
+    },
+    {
+      "recipe_idx": 118,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 93,
+      "n_ingredients": 5,
+      "n_steps": 5,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 2,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0215,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0108,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 5.0,
+        "raw_monitoring_mentions": 1
+      },
+      "t_channel": {
+        "termination_rate": 0.0108,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0108,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 119,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 66,
+      "n_ingredients": 3,
+      "n_steps": 6,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0303,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 2
+      },
+      "t_channel": {
+        "termination_rate": 0.0152,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0455,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 3
+      }
+    },
+    {
+      "recipe_idx": 120,
+      "name": "UNguentum",
+      "lines": "",
+      "n_words": 46,
+      "n_ingredients": 0,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 1.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0217,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 1
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 121,
+      "name": "YErapigra",
+      "lines": "",
+      "n_words": 86,
+      "n_ingredients": 3,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0116,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 0
+      },
+      "t_channel": {
+        "termination_rate": 0.0233,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0116,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    },
+    {
+      "recipe_idx": 122,
+      "name": "YEralogodion",
+      "lines": "",
+      "n_words": 163,
+      "n_ingredients": 7,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 0,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0184,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 3
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0307,
+        "color_frac": 0.8,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 5
+      },
+      "t_channel": {
+        "termination_rate": 0.0123,
+        "threshold_frac": 0.5,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 0
+      }
+    },
+    {
+      "recipe_idx": 123,
+      "name": "YEra",
+      "lines": "",
+      "n_words": 132,
+      "n_ingredients": 7,
+      "n_steps": 3,
+      "primary_technique": "compound_pharmacy",
+      "fire_degree": 1,
+      "has_cohobation": false,
+      "has_digestion": false,
+      "has_circulation": false,
+      "k_channel": {
+        "heat_rate": 0.0152,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0,
+        "raw_heat_mentions": 2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0303,
+        "color_frac": 0.5,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.25,
+        "chain_rate": 0.0,
+        "raw_monitoring_mentions": 4
+      },
+      "t_channel": {
+        "termination_rate": 0.0152,
+        "threshold_frac": 1.0,
+        "raw_termination_mentions": 2
+      },
+      "e_channel": {
+        "correction_rate": 0.0076,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0,
+        "raw_correction_mentions": 1
+      }
+    }
+  ]
+}

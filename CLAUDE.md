@@ -181,8 +181,8 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 6.63 |
-| Constraints | 2021 validated (4 retracted, 2 retested) |
+| Version | 6.64 |
+| Constraints | 2023 validated (5 retracted, 2 retested, 1 demoted) |
 | Phases | 693 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 passed) |
@@ -308,6 +308,8 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 
 **Internal Expert:** The expert-advisor agent (`.claude/agents/expert-advisor.md`) has the full constraint system embedded. It is invoked via automatic delegation - mention "ask the expert-advisor" or "have the expert validate" in your request.
 
+**Session methodology memories auto-embedded:** `generate_expert_context.py` now pulls feedback-type memory notes from `~/.claude/projects/C--git-voynich/memory/` and embeds them in the expert-advisor agent under a "Session Methodology Notes" section. Project-type and other-type memories are NOT included (those are individual findings the expert can re-derive). Feedback memories document recurring trap patterns and discipline rules — when added, they become part of the expert's permanent context. After regenerating expert-advisor, the same methodology section should be manually appended to `crazy-expert.md` (since crazy-expert doesn't auto-generate).
+
 **IMPORTANT — Cache refresh:** After regenerating the expert-advisor agent file, you must **restart Claude Code** for the changes to take effect. Claude Code caches agent definitions at startup; edits to `.claude/agents/expert-advisor.md` during a session will not be picked up until the next session.
 
 ---
@@ -345,6 +347,7 @@ The crazy-expert agent (`.claude/agents/crazy-expert.md`) does NOT auto-generate
 - Add new constraints as tab-separated lines after the last existing constraint
 - Update the "highest ID present" note to the new max constraint ID
 - Format: `C####\tClaim text\tTier\tScope tags\tKey metrics`
+- **If feedback-type memory notes have been added/updated:** copy the `# Session Methodology Notes` section from the regenerated `expert-advisor.md` and replace the equivalent section in `crazy-expert.md`. Both agents should carry the same methodology context.
 
 ### 7. Commit and Push
 ```bash

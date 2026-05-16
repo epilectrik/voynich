@@ -4,6 +4,62 @@
 
 ---
 
+## Version 6.64 (2026-05-15) - Pharmacy Source Acquisitions + Iteration-Chain Signature
+
+### Summary
+
+Off-books standalone session investigating Section S source-matching gap with two newly-acquired pharmacy corpora. Antidotarium Nicolai (van den Berg 1917 DBNL ed., 17K Latin tokens, 124 named recipes) and Mesue's Grabadin (1602 Lyon Opera, 329K combined Latin tokens, Liber Primus + Secundus). Both acquired to test C1995 (revised) hypothesis that Section S = pharmacy-list register.
+
+**Result:** Pharmacy interpretation falsified at structural level. 8D top-1 matcher mode revealed as geometric-centrality artifact (C2026). New class-adjacency methodology surfaced an iteration-encoding signature in matched-S folios independently corroborating C1394/C1969/C1953 (C2027). Section S source-matching gap re-scoped from 23 folios to ~4 specific unmatched folios; 17/23 already PL Mercuriorum attributed in existing catalog. C1995 pharmacy-register interpretation demoted; measurement stands.
+
+### Sub-tests
+
+- **T1** Antidotarium 8D baseline: no recipe matches any Section S folio under d=1.0; top-1 collapses to f34v across Antidotarium (66%), Codicillus in-domain alchemy (58%), Brunschwig validated (60%). f34v is documented geometric center per C1366.
+- **T2** Cross-text class-entropy + lag-1 autocorrelation comparison: at length-controlled paragraphs, candidate Voynich f104-105 group has higher entropy and lower autocorrelation than matched-S, matching Latin pharmacy direction (Mesue > Codicillus on entropy, < on autocorr).
+- **T3** Cross-manifold structural NN test (the discriminating test): 67.6% of f104-105 candidate paragraphs are closer to Codicillus Latin alchemy than to Mesue Liber Primus pharmacy reference. Both Voynich groups go alchemy-direction. Pharmacy interpretation FALSIFIED.
+- **T4** Shuffle-null isolation of sequence structure: matched-S folios are the ONLY group across all tested corpora (Latin pharmacy/alchemy + 4 Voynich groups) with positive autocorr excess (+0.0037); driven by chains of consecutive `qokee*` heat-cycle MIDDLE-class tokens.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2026 | Antidotarium Nicolai 8D Matcher Baseline — Section S Source-Matching Not Closed by Acquisition (Tier 2) |
+| C2027 | Heat-Cycle MIDDLE-Class Adjacency Chains in PL-Matched Section S — Independent Class-Adjacency Methodology Corroborating C1394/C1969/C1953 (Tier 2) |
+| C1995 | DEMOTION NOTE 2026-05-15: pharmacy-list register interpretation retracted; measurement stands |
+| C1939 | DEMOTED to Tier 4 (audit, earlier session today) |
+| C1940 | AUDIT_REFINED (held-out f81v test, weakened but technical pass) |
+| C1941 | RETRACTED to Tier 1 (audit, all 7 MIDDLEs fail) |
+| C1950 | DEPENDS_RETRACTED (depends on C1941) |
+| C1951 | DEPENDS_REFINED (depends on C1939/C1940) |
+| C1993 | RETRACTED 2026-05-15 (f66r-as-glossary collapse, three diagnostic tests failed) |
+| sources/antidotarium_nicolai/ | New corpus dir with DBNL PDF, plain-text extraction, README |
+| sources/mesue_grabadin/ | New corpus dir with 1602 Lyon + 1513 Venice OCRs, Liber Primus/Secundus extractions, README |
+| context/SOURCES.md | Added Antidotarium Nicolai and Mesue's Grabadin entries |
+| context/CLAIMS/INDEX.md | 2 new constraints; total 2021 → 2023; version 6.63 → 6.64; standalone section expanded with C2026 + C2027 |
+| CLAUDE.md | Version 6.63 → 6.64; constraints → 2023; retraction count updated |
+| phases/RECIPE_FOLIO_CORRESPONDENCE/scripts/ | 6 new investigation scripts (baseline matcher, control matcher, iteration profile, TTR robustness, sequence-level probe, shuffle null, cross-manifold, mechanism diagnostic) |
+| memory/ | 3 new notes: feedback_top1_matcher_mode_is_degenerate, project_section_s_remap_2026_05_15, project_section_s_verbosity_reframe_candidate; updates to project_section_s_source_genre_gap |
+
+### Key Findings
+
+- **8D top-1 ratio-confidence mode is not validated** (C2026). Real C1971 matches use hypothesis-driven distance gating; top-1 collapse to f34v is geometric centrality per C1366.
+- **Iteration encoding visible at four methodologies** (C2027 + C1394 + C1969 + C1953): atom level, anchor level, marker level, and now class-adjacency level. Three independent measurements hitting the same target = strong convergent corroboration.
+- **Section S source-matching gap is ~4 folios** (f104r/v + f105r/v), not 23. 17 already PL-attributed; f107v + f111v indistinguishable from Section B alchemy.
+- **Pharmacy hypothesis structurally falsified** for f104-105: 67.6% closer to Codicillus alchemy than Mesue pharmacy under cross-manifold NN. Direction is alchemy regardless of feature-extraction quality.
+- **Phase 641-R retrospective:** user surfaced that 8D matcher worked on English Testamentum but failed on Latin/Catalan SISMEL (mean d=4.4-5.0, 0 confident). Diagnosed: morphological polysemy + compression mismatch + rhetorical-mode mismatch (PT-016). PL match catalog strength rests on cross-language methods (atom decode, cardinality anchors, iteration markers), not 8D rate-correlation.
+- **Candidate reframe (NOT registered):** "Section S = same operational substrate as Section B at higher TTR/length verbosity" — logged in memory as future-investigation target. 4 pre-registered tests for promotion.
+
+### Methodology Contributions
+
+- **Within-paragraph shuffle null on MIDDLE-class autocorrelation** isolates real sequence structure from compositional artifact. Used in C2027. Recommended for future structural-signature mining.
+- **Cross-manifold structural NN test** (3-feature vector: normalized entropy, autocorr excess, distinct-per-log-length) is a cheap discriminating tool for source-class hypotheses. Works language-agnostically. Worked decisively in today's pharmacy falsification.
+
+### Origin Note
+
+Session prompted by user request to acquire Section S candidate sources. Direction evolved through user-led investigation: Antidotarium baseline → Mesue acquisition → sequence-level probe → cross-text validation → shuffle-null control → mechanism diagnosis → cross-manifold falsification → Phase 641-R methodological retrospective. Both expert-advisor and crazy-expert consults caught the f66r-glossary trap pattern (pharmacy-direction framing on candidate folios) and recommended the cross-manifold discriminating test, which produced the falsification.
+
+---
+
 ## Version 6.63 (2026-05-11) - Phase 693: MIDDLE-Layer Sequential Null and Class-Layer Sequential Structure
 
 ### Summary

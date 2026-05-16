@@ -1103,6 +1103,12 @@ tables are quarantined — do not use for structural answers.
 AGENT_FILE = CONTEXT_DIR.parent / ".claude" / "agents" / "expert-advisor.md"
 LEGACY_FILE = CONTEXT_DIR / "EXPERT_CONTEXT.md"
 
+# Session methodology memory directory (per-project Claude Code memory).
+# Feedback-type notes are auto-included into expert agents; project-type and
+# other types are NOT included (those are individual findings derivable from
+# the constraint system, and including all of them would blow the token budget).
+MEMORY_DIR = Path.home() / ".claude" / "projects" / "C--git-voynich" / "memory"
+
 # Core documents (always included)
 CORE_DOCS = [
     ("CLAUDE_INDEX.md", "Project Overview & Navigation"),
@@ -1193,6 +1199,57 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 """
 
 
+def load_methodology_memories():
+    """Load feedback-type session memory notes for expert agent embedding.
+
+    Reads MEMORY_DIR for .md files with YAML frontmatter `type: feedback`.
+    Returns list of (filename, body_content) tuples. Body has YAML frontmatter
+    stripped; the `name` field is preserved as a heading.
+
+    Project-type, user-type, and reference-type memories are NOT included --
+    they're either individual findings (project) the expert can re-derive from
+    constraints, or non-methodology (user/reference). Token budget restricted to
+    methodology-relevant feedback rules only.
+    """
+    if not MEMORY_DIR.exists():
+        return []
+
+    methodology_notes = []
+    for path in sorted(MEMORY_DIR.glob("*.md")):
+        if path.name == "MEMORY.md":  # skip the index file
+            continue
+        try:
+            content = path.read_text(encoding='utf-8')
+        except Exception:
+            continue
+
+        # Parse YAML frontmatter
+        if not content.startswith("---"):
+            continue
+        try:
+            end_idx = content.index("\n---\n", 4)
+        except ValueError:
+            continue
+        frontmatter_raw = content[4:end_idx]
+        body = content[end_idx + 5:].strip()
+
+        # Extract frontmatter fields (simple line-by-line; no PyYAML dependency)
+        frontmatter = {}
+        for line in frontmatter_raw.split("\n"):
+            if ":" in line:
+                k, _, v = line.partition(":")
+                frontmatter[k.strip()] = v.strip()
+
+        if frontmatter.get("type", "").lower() != "feedback":
+            continue
+
+        name = frontmatter.get("name", path.stem)
+        description = frontmatter.get("description", "")
+        methodology_notes.append((path.name, name, description, body))
+
+    return methodology_notes
+
+
 def generate_content(header, include_contracts=True, apply_filters=True, compact=False):
     """Generate expert context content with given header."""
     constraint_count, fit_count, highest_id = get_counts()
@@ -1219,10 +1276,16 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
 
 """)
 
+    # Load methodology memories (feedback-type only)
+    methodology_notes = load_methodology_memories()
+
     # TOC
     toc_num = 1
     for _, title in CORE_DOCS:
         sections[-1] += f"{toc_num}. {title}\n"
+        toc_num += 1
+    if methodology_notes:
+        sections[-1] += f"{toc_num}. Session Methodology Notes ({len(methodology_notes)} feedback rules)\n"
         toc_num += 1
     if include_contracts:
         if compact:
@@ -1248,6 +1311,25 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
             sections.append(f"\n# {title}\n\n{content}\n\n---\n")
         else:
             print(f"WARNING: {filename} not found")
+
+    # Session methodology notes (feedback-type memories from
+    # `~/.claude/projects/C--git-voynich/memory/`)
+    if methodology_notes:
+        memory_section = [
+            "\n# Session Methodology Notes\n",
+            "\nThese are project-level methodology rules accumulated across sessions.",
+            " They document trap patterns we have already caught, controls that are load-bearing,",
+            " and discipline rules that govern how new findings should be validated.",
+            " **Apply these as priors when assessing new proposals.**\n\n",
+        ]
+        for filename, name, description, body in methodology_notes:
+            memory_section.append(f"\n## {name}\n\n")
+            if description:
+                memory_section.append(f"*{description}*\n\n")
+            memory_section.append(f"{body}\n\n---\n")
+        full_memory_text = "".join(memory_section)
+        component_sizes['Session Methodology Notes'] = len(full_memory_text)
+        sections.append(full_memory_text)
 
     # Contracts
     if include_contracts:

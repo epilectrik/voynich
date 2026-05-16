@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1712 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2025. C2006-C2022 (Phase 691 char-LM external corroboration; 11 constraints) and C2023-C2025 (Phase 693 MIDDLE-layer sequential null and class-layer sequential structure; 3 constraints) are documented in context/CLAIMS/INDEX.md; this crazy-expert agent has tab-separated rows through C2002 and then jumps to C2023-C2025 (Phase 691 backlog of C2006-C2022 not yet inlined here — query expert-advisor for full text). NOTE: C1959, C1960, C1964, C1970 are RETRACTED (v6.37 Phase 667). C1966, C1967 retested with corrected methodology. C1971-C1976 added Phase 668 (folio cold reads). C1976 is Tier 1 falsification (polyalphabetic cipher REJECTED). C1977-C1978 added Phase 669 (recto/verso pairing). C1979-C1980 added Phase 670 (da-prefix terminal-atom positional gradient). C1981-C1982 added Phase 671 (clause-structure hypothesis falsified, a-HEAD r-TERM bimodal class confirmed). C1981 is Tier 1 falsification. C1983 added Phase 672 (sh-vs-ch differential positional bias on fixed e->y frame, Tier 2). C1984 added Phase 673 (folio-level PREFIX-content alignment NULL, Tier 3 scale-limit). C1985 added Phase 674 (Phase 642 cluster maps to Herbal section, operational profile section-confounded, Tier 3 scope-limit). C1986 added Phase 675 (manuscript-wide procedural arc via internal e-depth gradient REJECTED — paragraph-1 confound, Tier 1 falsification). C1987 added Phase 676 (cross-cipher token consistency under section-matched comparison, Tier 3 foundation-consistent observation). C1988 added Phase 677 (f103r ×8 rare-cardinality cluster matches III.16 "four or eight chambers", Tier 3 single novel anchor). C1989-C1991 added Phases 680-683 (rosettes foldout multi-phase investigation; workshop-diagram synthesis at SPECULATIVE/rosettes_workshop_diagram.md). C1989 Tier 3 path/node differentiation; C1990 Tier 1 recipes-as-transitions falsified; C1991 Tier 1 C1970 retest null. C1992-C1993 added Phase 684 (f66r as character-key page; scatter-shot exploration). C1992 Tier 2 f66r short-start structural singleton (z=11.11 vs null max). C1993 Tier 3 f66r atom-gloss header-content correspondence (cross-folio specific 1/46). C1994-C1995 added Phase 685 (Section S token-level thermal coupling; second scatter-shot exploration). C1994 Tier 2 S vs B token-level e-depth autocorrelation (5-confound-controlled, p<0.0001). C1995 Tier 3 (REVISED 2026-05-04) S=operational-compactness, B=operational-alternation; original continuous-state-vs-categorical reading REJECTED via three-tier control test (Tier C cross-PREFIX collapses in S). C1996-C1999 added Phase 686 (transition-graph structural discrimination; Earnhart 2026 import). C1996 Tier 2 corpus-level mu vs shuffle gap = -1782 (replicates Earnhart -1831). C1997 Tier 2 per-folio order constraint widespread (mean z_mu=-1.27 over 115 folios, 0/115 above +2). C1998 Tier 2 directional negative — INFRA H_succ EXCEEDS RI in B (predicted direction REVERSED). C1999 Tier 2 section z_mu ordering S/C/B(~-2.0) > Z/T/P/A > H(-0.30); KW p=0.0001, B vs H p=0.0003. Length-confound disclosed in C1997; REGIME-mediation flagged in C1999. C2000 added Phase 687 (daiin state-flush hypothesis test). C2000 Tier 2 falsification — daiin z=+0.76 at 67th percentile, ABOVE median (state-flush hypothesis REJECTED). T3 PARTIAL excluded class-level registration. Methodology validated by T4 (qokedy z=+2.51, shedy z=+2.07). Both "infrastructure glue" and "state-flush operator" framings of daiin/dar/saiin now falsified. C2001 added Phase 688 (qokedy context propagation tier decomposition). C2001 Tier 2 — qokedy operational embedding CONFIRMED at cross-tier z=+2.49 (n=140); MI persists when prev and next have non-qo prefixes. Morphological clustering hypothesis fails. Auxiliary (not registered): Phase 687 MI ranking does NOT predict operational embedding — qotar (Phase 687 rank 1) collapses cross-tier z=-0.20; chcthy (rank 3) is strongest operational embedder at cross-tier z=+3.78. Cross-tier MI z is the discriminating metric. C2002 added Phase 689 (qotar mechanism test). C2002 Tier 2 NULL — three candidate mechanisms for qotar's cross-tier collapse FALSIFIED (same-stem density 1.7% vs >30%, folio Gini 0.684 vs >0.70, S/C concentration p=0.25). Phase 688's "morphological clustering" framing for qotar/chol was over-stepping; cross-tier z=-0.20 measurement preserved, mechanism inference revised. qokedy has 9.2x higher same-stem density (15.7%) than qotar — opposite of expectation. Methodological lesson saved: cross-tier MI z is a measurement, not a mechanism (Phase 688 → 689 case). C1998-C2002 hygiene pass (2026-05-07, no new phase) revised C1998 (construct-validity, not directional negative), C2000 (no positive characterization established), C2001 (measurement-only at Tier 2; mechanism interpretation moved to new C2003 Tier 3). Pattern across Phase 686-689: Earnhart-metric-derived constraints conflated measurement with mechanism interpretation; hygiene pass corrects this without expanding scope. C2004-C2005 added Phase 690 (AZC annotation-transcript audit). C2004 Tier 2 — 26 annotated folios audited, 20/26 (77%) show non-zero discrepancy. C2005 Tier 2 — nymph-page center-token systematic gap statistically real (hypergeometric p~0.0023, all 9 same-sign direction); 9 specific candidate transcript-error folios identified (f70v2, f70v1, f71r, f71v, f72r1, f72r2, f72r3, f72v1, f73r). Becomes natural OCR validation target.
+the highest ID present is C2027. C2006-C2022 (Phase 691 char-LM external corroboration; 11 constraints), C2023-C2025 (Phase 693 MIDDLE-layer sequential null and class-layer sequential structure; 3 constraints), and C2026-C2027 (2026-05-15 standalone: Antidotarium 8D baseline + heat-cycle MIDDLE-class adjacency chains; 2 constraints) are documented in context/CLAIMS/INDEX.md; this crazy-expert agent has tab-separated rows through C2002 and then jumps to C2023-C2027 (Phase 691 backlog of C2006-C2022 not yet inlined here — query expert-advisor for full text). NOTE: C1959, C1960, C1964, C1970 are RETRACTED (v6.37 Phase 667). C1966, C1967 retested with corrected methodology. C1971-C1976 added Phase 668 (folio cold reads). C1976 is Tier 1 falsification (polyalphabetic cipher REJECTED). C1977-C1978 added Phase 669 (recto/verso pairing). C1979-C1980 added Phase 670 (da-prefix terminal-atom positional gradient). C1981-C1982 added Phase 671 (clause-structure hypothesis falsified, a-HEAD r-TERM bimodal class confirmed). C1981 is Tier 1 falsification. C1983 added Phase 672 (sh-vs-ch differential positional bias on fixed e->y frame, Tier 2). C1984 added Phase 673 (folio-level PREFIX-content alignment NULL, Tier 3 scale-limit). C1985 added Phase 674 (Phase 642 cluster maps to Herbal section, operational profile section-confounded, Tier 3 scope-limit). C1986 added Phase 675 (manuscript-wide procedural arc via internal e-depth gradient REJECTED — paragraph-1 confound, Tier 1 falsification). C1987 added Phase 676 (cross-cipher token consistency under section-matched comparison, Tier 3 foundation-consistent observation). C1988 added Phase 677 (f103r ×8 rare-cardinality cluster matches III.16 "four or eight chambers", Tier 3 single novel anchor). C1989-C1991 added Phases 680-683 (rosettes foldout multi-phase investigation; workshop-diagram synthesis at SPECULATIVE/rosettes_workshop_diagram.md). C1989 Tier 3 path/node differentiation; C1990 Tier 1 recipes-as-transitions falsified; C1991 Tier 1 C1970 retest null. C1992-C1993 added Phase 684 (f66r as character-key page; scatter-shot exploration). C1992 Tier 2 f66r short-start structural singleton (z=11.11 vs null max). C1993 Tier 3 f66r atom-gloss header-content correspondence (cross-folio specific 1/46). C1994-C1995 added Phase 685 (Section S token-level thermal coupling; second scatter-shot exploration). C1994 Tier 2 S vs B token-level e-depth autocorrelation (5-confound-controlled, p<0.0001). C1995 Tier 3 (REVISED 2026-05-04) S=operational-compactness, B=operational-alternation; original continuous-state-vs-categorical reading REJECTED via three-tier control test (Tier C cross-PREFIX collapses in S). C1996-C1999 added Phase 686 (transition-graph structural discrimination; Earnhart 2026 import). C1996 Tier 2 corpus-level mu vs shuffle gap = -1782 (replicates Earnhart -1831). C1997 Tier 2 per-folio order constraint widespread (mean z_mu=-1.27 over 115 folios, 0/115 above +2). C1998 Tier 2 directional negative — INFRA H_succ EXCEEDS RI in B (predicted direction REVERSED). C1999 Tier 2 section z_mu ordering S/C/B(~-2.0) > Z/T/P/A > H(-0.30); KW p=0.0001, B vs H p=0.0003. Length-confound disclosed in C1997; REGIME-mediation flagged in C1999. C2000 added Phase 687 (daiin state-flush hypothesis test). C2000 Tier 2 falsification — daiin z=+0.76 at 67th percentile, ABOVE median (state-flush hypothesis REJECTED). T3 PARTIAL excluded class-level registration. Methodology validated by T4 (qokedy z=+2.51, shedy z=+2.07). Both "infrastructure glue" and "state-flush operator" framings of daiin/dar/saiin now falsified. C2001 added Phase 688 (qokedy context propagation tier decomposition). C2001 Tier 2 — qokedy operational embedding CONFIRMED at cross-tier z=+2.49 (n=140); MI persists when prev and next have non-qo prefixes. Morphological clustering hypothesis fails. Auxiliary (not registered): Phase 687 MI ranking does NOT predict operational embedding — qotar (Phase 687 rank 1) collapses cross-tier z=-0.20; chcthy (rank 3) is strongest operational embedder at cross-tier z=+3.78. Cross-tier MI z is the discriminating metric. C2002 added Phase 689 (qotar mechanism test). C2002 Tier 2 NULL — three candidate mechanisms for qotar's cross-tier collapse FALSIFIED (same-stem density 1.7% vs >30%, folio Gini 0.684 vs >0.70, S/C concentration p=0.25). Phase 688's "morphological clustering" framing for qotar/chol was over-stepping; cross-tier z=-0.20 measurement preserved, mechanism inference revised. qokedy has 9.2x higher same-stem density (15.7%) than qotar — opposite of expectation. Methodological lesson saved: cross-tier MI z is a measurement, not a mechanism (Phase 688 → 689 case). C1998-C2002 hygiene pass (2026-05-07, no new phase) revised C1998 (construct-validity, not directional negative), C2000 (no positive characterization established), C2001 (measurement-only at Tier 2; mechanism interpretation moved to new C2003 Tier 3). Pattern across Phase 686-689: Earnhart-metric-derived constraints conflated measurement with mechanism interpretation; hygiene pass corrects this without expanding scope. C2004-C2005 added Phase 690 (AZC annotation-transcript audit). C2004 Tier 2 — 26 annotated folios audited, 20/26 (77%) show non-zero discrepancy. C2005 Tier 2 — nymph-page center-token systematic gap statistically real (hypergeometric p~0.0023, all 9 same-sign direction); 9 specific candidate transcript-error folios identified (f70v2, f70v1, f71r, f71v, f72r1, f72r2, f72r3, f72v1, f73r). Becomes natural OCR validation target.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2263,9 +2263,9 @@ C1935	Reverse-blind matching: recipe predictions scan 49 unmatched folios. f103v
 C1936	Recto/verso sequential pairing: f66r/v (fixation→inceration), f103r/v (multiplication→imbibition), f108r/v (separation→dissolution). 3/3 sequential.	2	B, manuscript organization, C1927	pairs=3. sequential=3/3.
 C1937	Multi-chapter folios: f80r=Ch21-25M (5 chapters). Ch10P+Ch11P in f108v. Organizing unit=operational scope, not chapter count.	2	B, manuscript organization, C1927	f80r=5ch.
 C1938	Blind atom reading predicts recipe type: f115r fully blind predicted fixation, confirmed by Ch28P. Score 6/8. f112v partial blind 7/8.	2	B, atom, blind test, C1394	f115r=6/8. f112v=7/8.
-C1939	fch (flag.adjust.watch) encodes mercury: ∞ enrichment on 6/6 mercury-recipe folios, 19/82 corpus, 21 A-system tokens (79% section overlap). First material identification.	3	B, A, dark pipeline, fch, C1901	enrichment=∞. corpus=19/82. A=21tok.
-C1940	cs (adjust.sequence) encodes gold: 17.5x enrichment, 9/82 corpus, f84r=3x + f84v=2x (same leaf).	3	B, dark pipeline, cs, C1901	enrichment=17.5x. corpus=9/82.
-C1941	Dark pipeline three functional classes: equipment (lch,lk,eed 10+ folios), process (cth,eke,ksh 3-9 folios), material (fch,cs,eckh enriched). 466 tokens, 152 MIDDLEs. Structural test: 2 STRONG eta² dims (top_pfx_share, n_suffix_types) + 2 MODERATE (par_init_rate, line_init_rate).	2	B, dark pipeline, C1901, C1906	tokens=466. unique=152. strong_dims=2. moderate_dims=2.
+C1939	DEMOTED 2026-05-15 to Tier 4. fch=mercury claim does not survive strict audit. At MIDDLE=='fch' exact (N=6 tokens corpus-wide) enrich=4.70x p=0.016 but underpowered. At MIDDLE starts-with 'fch' (broader, N=27, 23 folios) enrich=1.65x p=0.094 FAILS. Broader (substring) defs depleted (0.57x). The ∞ enrichment was a sparse-data artifact. At broader defs fch-token concentration tracks botanical-section, not mercury-recipe.	4	B, A, dark pipeline, fch, DEMOTED, AUDIT_FAIL, C1901	s1_enrich=4.70x. s1_p=0.016. s1_N=6. s2_enrich=1.65x. s2_p=0.094. s3_enrich=0.57x.
+C1940	cs concentrates on f84 leaf (Ch.14P/Ch.15P gold). AUDIT 2026-05-15: at MIDDLE starts-with 'cs' f84r+f84v rate 8.90/1k vs baseline 0.68/1k = 13.15x enrich p=0.004 (within-section shuffle null). HELD-OUT on f81v (Ch.18M potable gold, NOT in derivation): 5.77x enrich passes 3x threshold but only N=1 cs-initial token at 3.91/1k (less than half training rate). REFINED: cs concentration on f84 leaf structurally validated; broader cs=gold lexicon-gloss partially supported with held-out attenuation.	3	B, dark pipeline, cs, AUDIT_REFINED, C1901, C1958	s2_train_enrich=13.15x. s2_train_p=0.004. heldout_f81v_enrich=5.77x. heldout_N=1.
+C1941	RETRACTED 2026-05-15 to Tier 1. Three functional classes (equipment/process/material) do not survive distribution testing. AUDIT: all 7 named MIDDLEs FAIL their predicate enrichment. eckh material=0.27-1.08x. lch equip=1.18-1.24x. lk equip=0.62-0.95x. eed equip=0.98x. cth process=0.71x. eke process=0.71-0.82x. ksh process=0.85-0.93x. Only cs survives (C1940). Operational-story-first post-hoc clustering on frequency×folio-breadth, not functional separation. Same trap pattern as C1993, triple-i, hh, k-e-depth.	1	B, dark pipeline, RETRACTED, AUDIT_FAIL, post-hoc-classification, C1901, C1906	n_tested=7. n_failing=7. eckh=0.27-1.08x. lch=1.18-1.24x. lk=0.62-0.95x. eed=0.98x. cth=0.71x. eke=0.71-0.82x. ksh=0.85-0.93x.
 C1942	f58r/f58v (Section T, Currier A) = master catalog folios: A records for 6/9 tested dark identifiers. 366+365 tokens.	3	A, T, dark pipeline, C1499	dark_represented=6/9.
 C1943	Ch40M (silver transmutation) → f106v: 8D dist 0.933 (confident). 449 tokens, 20 verbs, fch×2 bracket two-phase structure.	3	B, S, PL, Ch40M, f106v, fch	8D_dist=0.933. tokens=449. fch=2.
 C1944	Ch47M (coded elemental separation) → f113r: 8D dist 1.245, ratio 1.992. fch×4 for 4 elements, cs at endpoint.	3	B, S, PL, Ch47M, f113r, fch, cs	8D_dist=1.245. ratio=1.992. fch=4.
@@ -2274,8 +2274,8 @@ C1946	Higher Mercuriorum (Ch36-Ch52) = 6+ procedural chapters reclassified from 
 C1947	Ch15P (alt gold dissolution) → f84v: cs×2 early, dar=4 matching 4 introductions, lch×3 for double alembic. Recto/verso of f84r/Ch14P.	3	B, PL, Ch15P, f84v, cs, C1936	tokens=347. dar=4. cs=2.
 C1948	Ch25P (fixation of air) → f115v: dar=0, dal=0, eed×7 (cooling per cycle), lk=31 (graduated 3-day fire). Recto/verso of f115r/Ch21P+28P.	3	S, PL, Ch25P, f115v, eed, C1936	tokens=399. eed=7. lk_pfx=31.
 C1949	A-system RI-embedded dark breadth: f58r=11/16 bases (master catalog), herbal mean=1.1. Section T 2.7x H. Raw density negligible (C755).	2	A, dark pipeline, RI, C1903, C1942	f58r_breadth=11. H_breadth=1.1.
-C1950	Herbal A dark tokens = PROCESS-class (cth, ro, eke). 100% process, 0% equipment per C1941. Complex-technique plants.	2	A, H, dark pipeline, C1941	process=100%. equip=0%.
-C1951	Dark pipeline = text-based channel substitute for illustrations. Visual ID for plants, textual ID (fch, cs) for minerals.	3	A, B, dark pipeline, illustration	channel=visual_vs_textual.
+C1950	DEPENDS ON RETRACTED C1941. Original: Herbal A dark tokens = PROCESS-class (cth, ro, eke). 100% process, 0% equipment per C1941. C1941 retracted 2026-05-15 after all 7 named MIDDLEs failed enrichment audit. Functional-class interpretation gone; structural observation of elevated cth/ro/eke density on 5 outlier folios may survive. Re-audit needed.	2	A, H, dark pipeline, DEPENDS_RETRACTED, C1941	outlier_folios=5. needs_reaudit=true.
+C1951	DEPENDS ON DEMOTED C1939 + REFINED C1940. Original: dark pipeline = text-based channel substitute for illustrations (fch+cs jointly carry material identity). 2026-05-15: C1939 demoted to Tier 4 (fch material-identifier not supported beyond N=6); C1940 refined (cs concentration on f84 leaf validated, broader gold-gloss partially supported). fch component weakened, joint claim partially weakened.	3	A, B, dark pipeline, illustration, DEPENDS_REFINED, C1939, C1940	fch_status=demoted. cs_status=refined.
 C1952	Ch48M (ferment preparation) → f113v: UPGRADED from tentative. ro at L10, fch at L33 (67%) = mercury at step 11/14, ot=70, dar=2, daiin=4, e_depth=4.	3	S, PL, Ch48M, f113v, fch, ro	tokens=479. dar=2. daiin=4.
 C1953	Ch23P (sulfur multiplication) → f114r: eed×8 + daiin=11 (both highest), zero material markers, 12 pars for 12 steps, e_depth=4. Recto of Ch31P.	3	S, PL, Ch23P, f114r, eed, C1936	eed=8. daiin=11. markers=0.
 C1954	Ch31P (medicine multiplication) → f114v: dar=2, daiin=6, cth×3. Verso of f114r/Ch23P. 6th r/v pair. Promotional text not encoded.	3	S, PL, Ch31P, f114v, cth, C1936	dar=2. daiin=6. cth=3.
@@ -2317,7 +2317,7 @@ C1989	Rosette path/node structural differentiation. Within the f85-86 rosettes f
 C1990	Recipes-as-transitions in rosette graph REJECTED. Pre-registered Phase 682 test of "recipes are single state transitions in the rosette graph (recipe-as-edge)" with 11 matched-recipe folios. Test 1 (start_node != end_node, >=10/11): FAIL (3/9 testable). Test 2 (path-aligned, >=8/11): FAIL (1/9, p=0.9959, worse than random). Test 3 (coherent walk): trivial pass (8/9 starts collapse to EAST). Recipes are NOT single edges in operations graph; they share common preparation/apparatus signature. The "rosettes-as-PFD with recipes-as-paths" interpretation falsified at structural level.	1	B, Rosettes, recipe-correspondence, falsification, NULL, C1124, C1128, C1989	n_recipes=9_testable. start_neq_end=3of9. path_aligned=1of9. perm_p_path=0.9959. eight_of_nine_starts=EAST.
 C1991	C1970 underlying balneum text-signature claim NOT supported with corrected methodology. Pre-registered Phase 683 retest of C1970's underlying claim ("CONFIRMED-tier matched folios have elevated indirect/dampened-thermal signature") with corrected metric ke/(ke+ek) proportion and expanded sample (11 matched folios, n=84 paragraphs vs corpus n=284). Failed all 4 pre-registered criteria: d=+0.207 (req >=0.35), p=0.257 (req <0.05), LOO min d=+0.163 (req >=0.20), perm p=0.0547 (req <0.05). C1970 retraction final; underlying balneum text-signature claim is not statistically distinguishable from chance even with corrected methodology. Workshop-diagram interpretation cannot lean on body-text balneum signature as anchor.	1	B, paragraph, ke, balneum, falsification, NULL, C1970-retracted, C1972, C1225	matched_n_paras=84. corpus_n_paras=284. d=+0.207. p=0.257. loo_min_d=+0.163. perm_p=0.0547.
 C1992	f66r is a structural singleton in Currier B for line-initial token brevity. 30 of 34 lines (88.2%) start with a 1-2 character token, vs corpus null max distribution mean=22.1% (z=11.11, p<0.0001 from 10000-permutation null shuffling line-first-tokens across folios). Next-highest folio is f43v at 18.8%, a 69-percentage-point gap. Corpus-rare standalone characters cluster as f66r line-starts (f: 4/4 corpus instances, x: 3/3, t: 2/3, d: 4/6). Pure structural fact about line-first-token brevity distribution; no interpretation of WHY f66r has this property is registered. Cross-references C156 (quire alignment), C260 (section isolation), C763-C764 (f57v R2 single-char ring as comparable structural singleton).	2	B, f66r, short-start, structural-singleton, line-first-token, null-distribution, C156, C260, C763, C764	short_start_pct=88.2. n_lines=34. null_max_mean=22.1. null_max_std=6.0. z=11.11. p_lt=0.0001. f43v_next=18.8pct. corpus_rare_f=4of4. corpus_rare_x=3of3.
-C1993	f66r exhibits systematic atom-gloss header-to-content prefix correspondence. Pre-registered 4 specific mappings (per C1195 atom glosses): d="do"->da-prefix, t="transfer"->ot-prefix, l="state"->ol-prefix, sh="passive monitor"->sh-prefix. Two pass at p<0.05 with >2x enrichment: d-header -> da-prefix at 5.4x (p=0.012, n=32), t-header -> ot-prefix at 3.7x (p=0.014, n=17). l->ol borderline (2.6x, p=0.056). sh->sh inverted (depleted at 0.6x). Strict pre-reg criterion (3/4) FAILED. However: cross-folio specificity test confirms f66r-uniqueness — only 1/46 folios with >=30 lines passes 2+ mappings (that 1 is f66r), vs predicted ~30% under noise hypothesis. Pattern is f66r-specific, not generic. Consistent with f66r functioning as character-key/operational reference page (SPECULATIVE/f66r_keypage.md).	3	B, f66r, atom-gloss, header-content, character-key, cross-folio-specific, C1195, C1992	d_to_da_enrichment=5.4x. d_to_da_p=0.012. t_to_ot_enrichment=3.7x. t_to_ot_p=0.014. l_to_ol_enrichment=2.6x. l_to_ol_p=0.056. sh_to_sh_enrichment=0.6x. cross_folio_2plus_pass=1of46. cross_folio_pct=2pct. predicted_chance=30pct.
+C1993	RETRACTED 2026-05-15 to Tier 1 — atom-gloss header-content correspondence FALSIFIED. Original: f66r M-column atoms systematically classify L-label operational role (d→da 5.4x, t→ot 3.7x; cross-folio specificity 1/46 of folios pass 2+ mappings). DISCRIMINATING TEST: M-marker dominance on 4 cross-referenced L-labels (rary, qor, raiin, qokal) — f66r-assigned M should be top-1 dominant atom in label's neighborhood across matched recipes. Result: 0/4 top-1; 1/4 top-3 (qokal sh ranks 3rd behind o, ch). For rary [M=y], qor [M=s], raiin [M=d], the f66r M is not even in top-3. Strict Phase-684 pre-reg also failed (2/4 with sh-inverted at 0.6x). Combined with frequency-matched null on singleton split AND L1-L15 vs L16-L32 R-body zone test, unified glossary frame collapses. Cross-folio specificity (1/46) reinterpreted as multiple-comparison artifact: f66r is structurally unique on many axes (C1992), so uniquely passing any pattern test is unsurprising. C1992 (line-initial brevity) stays Tier 2 unchanged. f66r-as-glossary interpretation withdrawn.	1	B, f66r, RETRACTED, FALSIFIED, atom-gloss, character-key, C1992	n_top1_match=0of4. n_top3_match=1of4. zone_jsd=0.1043. zone_split_p=0.045. singleton_null_p=0.0001.
 C1994	Currier B Section S folios (n=23, Pharmaceutical/Stars f103-f116) exhibit lag-1 autocorrelation of e-depth on within-paragraph cross-token-type adjacent pairs at mean z=+1.51 vs marginal-preserving null. Section B folios (n=19, alchemical recipes f75-f86) show mean z=-0.36 with 0/19 folios at z>2. S vs B permutation p=0.0001 (10000 perms, n_perm=500 per folio for null). Effect WIDENS when restricted to REGIME_1 (S_R1 mean=+2.31, B_R1 mean=-0.35, diff=+2.66, p<0.0001 — not REGIME-mediated). Survives Mode-B-line-fraction residualization (residualized S vs B diff=+1.81, p<0.0001 — not Mode-B-mediated). Five top folios from exploration (f112v=+4.98, f108r=+3.91, f111r=+4.05, f55v=+3.34, f95r2=+2.76) survive killer-test controls. Pure structural fact about token-token e-depth coupling distribution; interpretation registered separately as C1995.	2	B, section, S-section, e-depth, autocorrelation, thermal-coupling, killer-test, C1404-controlled, C1260-controlled, C1789-controlled, C1308-controlled, C1106-controlled, C1206, C1455	S_mean_z=+1.51. B_mean_z=-0.36. p_perm=0.0001. S_R1_mean=+2.31. B_R1_mean=-0.35. p_R1=0.0000. S_resid_diff=+1.81. p_resid=0.0000. S_frac_sig=39.1pct. B_frac_sig=0pct. top5_survival=5of5. f112v_z=4.98. f108r_z=3.91. f111r_z=4.05.
 C1995	Section S exhibits operational-compactness (dense morphological near-relative runs); Section B exhibits operational-alternation (cross-PREFIX e-depth anti-correlation). Three-tier autocorrelation decomposition of C1994 controlling for stem-locality (Tier A=near-relatives Levenshtein<=1 OR same MIDDLE; Tier B=same-PREFIX different-MIDDLE; Tier C=cross-PREFIX): Tier A both sections strong (S=+5.43, B=+4.53). Tier C cross-PREFIX S=-0.01 (null), B=-1.47 (anti-correlated, p=0.0001 vs S). Original C1994 aggregate difference decomposes into: (a) S has more near-relative pairs in proportion (3.0% vs 2.0%), (b) B's cross-PREFIX pairs alternate high-e and low-e. Continuous-state thermal tracking interpretation REJECTED — Tier C collapses in S. S consistent with pharmacy-index or short-recipe-list format; B consistent with multi-step alchemical procedures alternating thermal regimes. Tier 4 synthesis: SPECULATIVE/section_thermal_architectures.md (revised).	3	B, section, operational-compactness, near-relative, cross-PREFIX, anti-correlation, observation, C1789, C1206, C1404, C1994, three-tier-decomposition	S_tierA_z=+5.43. B_tierA_z=+4.53. S_tierB_z=+0.79. B_tierB_z=+0.36. S_tierC_z=-0.01. B_tierC_z=-1.47. p_S_vs_B_tierC=0.0001. S_near_relative_pair_frac=3.0pct. B_near_relative_pair_frac=2.0pct. continuous_state_REJECTED.
 C1996	Token-transition order constraints exceed unigram-frequency expectations on full H-track corpus. mu_actual=22380 vs mean(mu_shuffle)=24162 over 1000 frequency-preserving shuffles, gap=-1782, z=-38.3. Replicates Earnhart 2026 (their gap=-1831 on 37,967-token extraction). Convergent evidence with C389 (low bigram conditional entropy H=0.41 bits) and C1025 (49-class Markov + symmetric forbidden suppression). Compatible with C109, C361, C1808. External replication via metric not referencing instruction-class taxonomy.	2	GLOBAL, transition-graph, circuit-rank, order-constraint, replication, Earnhart-2026, C389, C1025, C109	mu_actual=22380. mu_shuffle_mean=24162. gap=-1782. z=-38.3. n_tokens=37429. n_types=7904. earnhart_gap=-1831.
@@ -2333,6 +2333,8 @@ C2002	qotar cross-tier MI collapse mechanism — three pre-registered candidates
 C2023	MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B. Within-line shuffle null (randomize MIDDLE/class token order within each transcript line, preserving line membership and length; N=30 shuffles) yields opposite verdicts at two abstraction layers. MIDDLE-string layer: real I(middle; prev_middle)=1.546 bits vs null 1.553+/-0.017, z=-0.39 (at-null). 49-class layer: real I(class; prev_class)=0.264 vs null 0.215+/-0.013, z=+3.91 (significantly above null). The C976/C1010 macro-state automaton at the 49-class projection is genuinely Markov-sequential; MIDDLE-token layer below it is co-occurrence-only. Directional analysis of all 17 forbidden pairs (C109/C997): 0 real adjacent occurrences in BOTH directions; 16/17 zero same-line co-occurrence (per C1552 phantom pattern); 1/17 (he->t) symmetrically suppressed against null fwd=0.53 / bwd=0.63. "Forbidden transitions" terminology applies at the 49-class projection (per C783 directional); MIDDLE layer is co-occurrence-forbidden (per C1118 75.2% bidirectional). Operationalizes via shuffle-null the layer distinction already implicit in C1118/C1212/C1024/C1034/C886.	2	shuffle_null, MIDDLE_layer, class_layer, two_layer, co_occurrence_vs_transition, C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552	b_middle_real=1.546. b_middle_null=1.553. b_middle_z=-0.39. b_class_real=0.264. b_class_null=0.215. b_class_z=+3.91. forbidden_pairs_fwd=0. forbidden_pairs_bwd=0. fwd_null=0.53. bwd_null=0.63. zero_cooccurrence=16of17. n_shuffles=30. n_b_tokens=14006.
 C2024	Bio Section Carries Marginal Residual MIDDLE-Layer Sequential Structure in Currier B; Other Sections at-or-below Null. Per-section within-line shuffle null on Currier B yields heterogeneous signatures: Bio (data section B, f74-f84) z=+1.49 (real 1.137, null 1.104, excess +0.034); Herbal_B z=-2.70; Stars/Recipe_B z=-1.33; Cosmo foldouts (C section) z=-1.17; Top/intro B-tokens (T section) z=-0.91. Bio is the only B-section with positive residual sequential excess. The whole-of-B at-null result (C2023, z=-0.39) is the average of Bio's marginal positive signal and four near-null-or-negative sections. Confirms C1048 prediction. Section-level heterogeneity is consistent with C1047 / C1055.	2	shuffle_null, section_stratified, Bio_residual, B_section, MIDDLE_layer, C1047, C1048, C1055, C1085, C1086, C1116, C1404, C2023	bio_n=4216. bio_real=1.137. bio_null=1.104. bio_z=+1.49. herbal_z=-2.70. stars_z=-1.33. cosmo_z=-1.17. top_z=-0.91. only_positive=Bio.
 C2025	Currier A Class-Layer Shuffle Null at-null Confirms C225 via Independent Methodology. Class-layer within-line shuffle null on Currier A yields real I(class; prev_class)=0.707 bits vs null 0.698+/-0.023, z=+0.37 (at-null). Confirms C225's "A Transition Validity = 2.1%" via independent shuffle-null methodology — A has minimal class-Markov transition structure. C346's reported "sequential coherence" (1.20x) therefore lives at a different organizational level than class-Markov adjacency: record-level / positional / compositional (C233 LINE_ATOMIC, C240 NON_SEQUENTIAL_CATEGORICAL_REGISTRY, C422 DA articulation, C475/C729 PP co-occurrence compliance, C964 boundary-constrained free-interior). Combined with A's MIDDLE-layer z=-5.09 (entirely sparsity-driven exclusion of unrealizable pairs), A is bag-of-line at both class and MIDDLE layers despite C346's within-record coherence. Methodological strengthening of C225: shuffle-null is a stricter test than the 2.1% validity threshold count.	2	shuffle_null, Currier_A, class_layer, sequential_coherence_locus, C225_corroboration, C225, C230, C231, C233, C240, C346, C422, C475, C729, C964	a_class_real=0.707. a_class_null=0.698. a_class_z=+0.37. a_middle_z=-5.09. a_class_coverage=47.5pct. n_a_tokens=5585. methodology=within_line_shuffle. corroborates=C225.
+C2026	Antidotarium Nicolai 8D Matcher Baseline — Section S Source-Matching Not Closed by Acquisition. Featurized 124 named Antidotarium recipes using Latin keyword patterns substituting for English in the Brunschwig compound-matcher featurizer; ran through TUNED_DIMS residual matcher. Result: no Antidotarium recipe matches any Section S folio under d=1.0 (min Section S distance = 1.375 on f106v↔YEra; min anywhere = 1.058). Top-1 attractor degenerates to f34v (Section H, REGIME_3, 115 tokens) for 82 of 124 recipes (66%). Same f34v collapse observed for two control corpora: Codicillus (in-domain alchemy 19 segments): 11/19 default to f34v, 0 ratios > 1.30; Brunschwig 1512 (in-domain validated 20 recipes): 12/20 default to f34v, 0 ratios > 1.30. f34v universal attractor consistent with C1366 (top-5 least-anomalous folio = f34v 0.71/f106r 0.67/f106v 0.65/f31r 0.62/f66v 0.62) — geometric centrality property of V-side feature space, not a corpus signal. Top-1 ratio-confidence mode of 8D matcher therefore not validated; C1971 matches (C1943 d=0.933, C1990 etc.) use hypothesis-driven distance gating instead. Antidotarium Nicolai is over-curated 12th-c. Salernitan teaching canon; Mesue's Grabadin / Antidotarium Magnum remain candidate Section S source classes. Acquisition closes Nicolai-specific corpus gap but does not close Section S source-matching gap.	2	matcher_baseline, Section_S_source_gap, top1_degeneracy, geometric_centrality, C1366, C1971, C1943, C1955, C1990, C1995, Antidotarium_Nicolai	n_recipes=124. n_folios=82. min_section_s_d=1.375. min_d=1.058. f34v_ant=82. f34v_codic=11. f34v_brun=12. mean_ratio_ant=1.11. n_confident_130_codic=0. n_confident_130_brun=0. unique_top1_ant=7. unique_top1_codic=5.
+C2027	Heat-Cycle MIDDLE-Class Adjacency Chains in PL-Matched Section S — New Methodology Corroborating C1394/C1969/C1953. Length-controlled (20-50 word) per-paragraph analysis of MIDDLE-class lag-1 autocorrelation in Currier B, with within-paragraph shuffle null isolating sequence structure from compositional artifact. Matched-Section-S folios (17 PL Mercuriorum attributions) exhibit observed autocorr 0.0512 vs shuffled null 0.0475 = excess +0.0037 (only group across all tested corpora with POSITIVE excess; Section B alchemy: −0.0070, Mesue Latin pharmacy: −0.0020, Codicillus Latin alchemy: −0.0077, Antidotarium Latin pharmacy: −0.0090). Excess driven by chains of consecutive qokee* / kee-class MIDDLE-class tokens encoding heat-cycle iterations: f112v P4 triple-run qokeedy → qokeeey → qokeeody; f111r P5 six-token kee/ee chain qockhey/qokeey/keeor/okeey/lkeedy/lkeey; f108r P2 identical-token pair qokeey → qokeey; f115r P13 qokchedy → qokchedy. 100 same-class adjacency instances aggregate to e-class (broad), 35 to ee, 27 to kee specifically. Independent corroboration via class-adjacency methodology of iteration-encoding mechanism already documented at atom level (C1394 e MOD = thermal microstate), at anchor level (C1969 qok-window-density ×9 anchor on f75r), and at marker level (C1953 daiin×11 iterative testing on f114r). The 6 currently-unmatched Section S folios (f104r/v, f105r/v, f107v, f111v) all LACK this signature (candidate group excess −0.0030; f107v+f111v: −0.0034), consistent with either (a) non-iterative-procedure PL chapters awaiting attribution, or (b) different operational content. Cross-manifold structural NN test on f104-105 sub-group falsifies pharmacy interpretation: 67.6% of candidate paragraphs are closer to Codicillus alchemy than to Mesue pharmacy (matched-S: 71.8%, expected alchemy direction); both Voynich groups go alchemy-direction.	2	iteration_encoding, MIDDLE_class_adjacency, autocorr_excess, shuffle_null, qok_cycle, heat_cycle, Section_S, matched_S_signature, cross_manifold_falsification, C1394, C1969, C1953, C1965, C1971, C1988, C2026	matched_s_excess=+0.0037. cand_excess=-0.0030. section_b_excess=-0.0070. mesue_excess=-0.0020. codic_excess=-0.0077. ant_excess=-0.0090. kee_pairs=27. ee_pairs=35. e_pairs=100. n_perm=50. length_filter=20to50. cross_manifold_pharmacy_falsified=yes. cand_closer_to_codic_pct=67.6.
 
 ---
 
@@ -5427,3 +5429,448 @@ Only Tier 0-2 structural findings are binding.
 
 
 ---
+
+# Session Methodology Notes
+
+These are project-level methodology rules accumulated across sessions. They document trap patterns we have already caught, controls that are load-bearing, and discipline rules that govern how new findings should be validated. **Apply these as priors when assessing new proposals.**
+
+
+## Atom decomposition reads as word salad in cold reads
+
+*Token-level atom glosses (heat.cool.mark.end) are not compelling to outsiders — cold reads should lean on structural patterns (counting anchors, e-depth arcs, dar distribution) not atom-by-atom decomposition*
+
+Atom-by-atom token decomposition in cold reads produces word salad like "add material, iterate bind" that is unconvincing to outsiders and academics. "Iterate what? Bind what?" — the atoms are structural labels, not readable language.
+
+**Why:** Tokens take on operational identity in practice beyond their atom composition. C1193 (core prefixes as frozen functional units), C171 (semantic ceiling), MODEL_CONTEXT.md ("tokens have roles, not meanings — semantics exist only in operator practice"). Token meanings are listed as IRRECOVERABLE. The atom glosses (C1195, Tier 3-4) describe positional role in the grammar, not what the operator was doing.
+
+**How to apply:** In cold reads and external-facing documents, lead with the quantitative structural evidence that doesn't require believing the gloss system: counting anchors (corpus-singular token runs), e-depth thermal arcs, dar distribution patterns, observation MIDDLE distribution, paragraph structure. Use atom glosses only as supporting context with heavy caveats, not as the primary argument. When glossing tokens for a reader, use whole-token operational descriptions ("one complete heat cycle", "material addition") rather than atom chains ("heat.cool.do.end", "into.iterate.bind").
+
+---
+
+## At mature-framework stage, treat framework-fit as prior toward null (2026-05-15)
+
+*When a finding fits existing tier-2 operational glosses cleanly, the operational vocabulary itself can produce the appearance of signal. New findings that slot neatly into existing framework deserve MORE skepticism, not less. Sharper than "run controls earlier."*
+
+**The principle:**
+
+The project has ~2000 constraints, six tiers, mature operational vocabulary (atom glosses per C1195, channel taxonomy per C1394, PREFIX classes per C1300/C1313/C1316/C1962, etc.). At this stage of a research program, **framework-fit is no longer evidence of confirmation — it's evidence of confirmation bias**.
+
+The framework gives new findings a place to land. When a new pattern can be told as a clean operational story using existing vocabulary, that cleanness is partly the framework matching itself, not the data matching the framework.
+
+**Why:** Crazy-expert formalization 2026-05-15 after f66r-as-glossary collapse (4th operational-story-first trap in one session window):
+
+> "When a finding fits existing tier-2 operational glosses (C1195, C1394, C1300, etc.) and uses their interpretive language, treat the existing fit as a prior toward null — the operational vocabulary itself might be producing the appearance of signal in the data. This is the harshest form of 'framework as null' and I haven't been applying it. The strongest discoveries late in a research program are usually the ones that don't fit cleanly."
+
+**How to apply:**
+
+- **Vocabulary check:** If the proposed interpretation can be stated entirely in existing atom glosses, channel labels, and operational class names (qokedy=cycle, ch=adjust, sh=passive-monitor, etc.) without introducing new mechanism, it's probably a vocabulary echo, not a discovery. The vocabulary IS the hypothesis at this stage.
+
+- **Surprise test:** Does the finding require something NEW (a new mechanism, a new constraint, a new structural relationship)? If everything in the finding was already nameable in the existing system, increase skepticism.
+
+- **Three Outs procedural rule** (crazy-expert formalization):
+  1. "What would this look like if I were wrong?" — Articulate the specific discriminating test in one sentence. If you can't, you're story-building.
+  2. "Is my classification post-hoc?" — If the units being classified were selected based on the property being tested, the test is circular.
+  3. "Does my framework predict the right SIZE of effect?" — Operational mechanisms predict large effects. Marginal p-values with operational stories should trigger within-folio shuffle null as control #1, not as a later check.
+
+- **Cooling period** (expert-advisor formalization): When a structural anomaly survives a permutation null, do NOT propose an operational constraint in the same session. Enumerate simplest non-operational explanations first. Design discriminating test before writing operational interpretation.
+
+**Discriminating-test orientation:**
+
+The right pre-registration order:
+1. Structural anomaly survives null test → register as Tier 2 anomaly fact (no interpretation)
+2. STOP
+3. Enumerate non-operational explanations
+4. Design test that distinguishes anomaly from operational story
+5. Run test
+6. ONLY after test passes, propose operational interpretation at appropriate tier
+
+**Concrete instances where this would have helped:**
+
+- **C1993 / f66r-as-glossary:** Operational story (3-column glossary, atom-classifier M-column, named-procedure L-labels) was built on Tier 2 structural anomaly (C1992) before discriminating test. Discriminating test (M-marker dominance on cross-referenced labels) failed 0/4 top-1 when run later. The story used entirely existing vocabulary (atom glosses, prefix classes, operational types) — no new mechanism. Should have triggered framework-as-null skepticism.
+
+- **C1965/C1988 cardinality generalization:** Individual anchors at f75r×4/×9 and f103r×8 are real (Tier 2 / individual Tier 3). The systematic "cardinality counting framework" generalization was framework-echo — assumed all matched recipes encode cardinality via similar mechanisms. Within-folio shuffle null killed it (mean z=+0.18 across matched folios). Memory note `project_cardinality_anchors_dont_generalize.md` records this correctly.
+
+- **C1971 cluster readings:** 15/15 qualitative coherence claims used same atom-gloss dictionary at multiple scales — tautological confirmation. The vocabulary IS what fit; the data didn't independently validate.
+
+**The trap pattern recurs because the framework rewards the trap:**
+
+The more mature and consistent the framework, the easier it is to tell coherent operational stories about new data. The cleaner the story, the more it feels like discovery. The same vocabulary that enables description also enables overfitting.
+
+**At this stage, registration discipline must include:** show what mechanism this finding requires that's NOT already in the framework. If the answer is "none — it's a clean fit," that's the warning, not the proof.
+
+**Where this points:**
+
+- New high-confidence findings late in the project lifecycle are most likely either (a) negative results / falsifications, (b) findings that introduce new structural relationships outside existing atom/channel vocabulary, or (c) findings that genuinely challenge an existing constraint. "Yet another clean operational story" is the lowest-EV category.
+
+- Audit existing Tier 3 constraints for trap signature: was the operational interpretation registered before or after the discriminating test? If before, it's a candidate for re-audit even if currently uncontested.
+
+**Related notes:**
+- `feedback_operational_story_first_trap.md` — the original trap pattern
+- `feedback_within_folio_shuffle_null_first.md` — what to run as control #1
+- `feedback_measurement_vs_mechanism.md` — measurement is not the same as mechanism inference
+- `feedback_atom_gloss_word_salad.md` — atom-decompositions read as word salad and shouldn't be primary evidence
+
+---
+
+## Cross-tier / decomposed information-theoretic measurements are observations, not mechanisms
+
+*When a measurement (cross-tier MI z, autocorrelation tier collapse, residual-after-control, etc.) shows a pattern, the mechanism interpretation is a SEPARATE testable claim that requires its own pre-registered test. Phase 688 → 689 case: cross-tier MI z=−0.20 for qotar got labeled "morphological clustering" without testing whether adjacents are actually morphologically related (Phase 689 found same-stem density 1.7%, refuting the inference).*
+
+**Rule:** Information-theoretic decomposition results (cross-tier MI, autocorrelation by stem-locality tier, conditional entropy stratifications, residual-after-control measurements) are MEASUREMENTS. The mechanism interpretation is a separate testable claim and requires its own pre-registered test before registration.
+
+**Why:** Phase 688 measured qotar's cross-tier MI z and found −0.20 (collapse from overall +3.95). The intuitive interpretation was "morphological clustering" — qotar's high MI is qo-family co-occurrence around it. Phase 689 directly tested this and falsified it: qotar's same-stem density is 1.7%, not the 30%+ a morphological-clustering mechanism would predict. The cross-tier collapse measurement is real; the inferred mechanism was wrong.
+
+**The pattern that creates this trap:**
+- A novel decomposition produces a striking measurement
+- The author has an intuitive interpretation ready (often the "obvious" reading)
+- Pre-registration gets done on the measurement, not the mechanism
+- The interpretation gets attached to the constraint as if it were tested
+- A follow-up phase reveals the mechanism is something else
+
+**How to apply:**
+- When a decomposed measurement reveals something interesting, write down the inference SEPARATELY from the measurement before registering
+- If the constraint claims a mechanism (X clusters because Y), the mechanism must be pre-registered and tested directly
+- A measurement-only Tier 2 constraint should NOT include mechanism interpretation in the constraint text — only in the auxiliary narrative, clearly labeled as interpretation
+- If you write "X is Y" where Y is a mechanism (clusters morphologically, propagates context, resets state), check whether you've actually tested Y or just measured something Y would also produce
+
+**Examples of measurement-mechanism conflation in our project:**
+- Phase 686 C1998: INFRA tokens have higher H_succ than RI was framed as INFRA-naming-misleading. The INFRA classification is structural; "infrastructure glue" was a mechanism inference that wasn't directly tested.
+- Phase 687 C2000: daiin's MI z=+0.76 above median was framed as state-flush rejection. The "state-flush operator" was a mechanism inference; the test measured MI propagation (a related but distinct property).
+- Phase 688 C2001 auxiliary: qotar's cross-tier z=−0.20 was framed as "morphological clustering." Phase 689 falsified.
+- Phase 685 C1995: Section S = "operational compactness" was framed via three-tier near-relative dominance. The "compactness" interpretation IS a mechanism inference — it survived the three-tier test but wasn't directly tested at the operational-semantic level.
+
+**The specific cross-tier MI case:**
+- Cross-tier MI z = "MI conditional on (prev, next) being from operationally distinct token families"
+- LOW cross-tier z does NOT mean "morphological clustering"
+- LOW cross-tier z means "this token's predictive power requires same-family adjacency"
+- WHY same-family adjacency matters needs separate test (same-stem density, family pooling, recipe positional, etc.)
+
+**Red flag for future phases:** if the constraint text contains "X clusters by Y" or "X functions as Z" without a specific test of the Y/Z mechanism, the constraint is conflating measurement with mechanism. Either reword to remove the mechanism claim, or add a pre-registered mechanism test.
+
+**Connection to existing constraints:**
+- C1995 (S operational compactness) — was tested via three-tier near-relative test; the "operational" interpretation is grounded in the test, but the deeper mechanism (WHY S has dense same-stem runs) is a Tier 3/4 question
+- C2002 (qotar mechanism FALSIFIED) — direct application: pre-registered mechanism, test failed
+- C1998, C2000 — earlier examples of measurement-mechanism conflation in this same metric family
+
+---
+
+## Operational-story-first, controls-second is the dominant trap pattern when registering co-occurrence findings
+
+*When a finding "fits the existing framework cleanly," that is a warning sign and not a confirmation. Four traps now documented (2026-05-11/12/13/15). The control burden scales with the coherence of the operational story. The framework itself produces apparent signal in mature research programs.*
+
+When a finding fits the project's existing interpretive framework cleanly, the urge to register is strongest, but the control burden is also highest — exactly because confirmation bias is highest. Build operational stories AFTER the controls pass, not before.
+
+**Update 2026-05-15 — the framework-as-null principle:**
+
+After four traps in one session (the three below + f66r as glossary, C1993 retracted), the deeper diagnostic crazy-expert formalized: **at this stage of the project (1995+ constraints, six tiers, mature operational vocabulary), framework-fit is evidence of confirmation bias, not confirmation.** When a finding fits existing tier-2 operational glosses (C1195, C1394, C1300, etc.) and uses their interpretive language, **treat the existing fit as a prior toward null** — the operational vocabulary itself can produce the appearance of signal in the data by giving new findings a place to land.
+
+This is sharper than "run controls earlier." It says: the strongest discoveries late in a research program are usually the ones that *don't* fit cleanly. New findings that slot neatly into existing vocabulary deserve MORE skepticism, not less.
+
+**Concrete procedure (expert-advisor formalization):**
+1. Identify the structural anomaly. Register at Tier 2 (anomaly fact only, no interpretation).
+2. STOP. Do not propose an operational interpretation yet.
+3. Enumerate the simplest non-operational explanations that could produce the anomaly.
+4. Design and run the discriminating test that distinguishes anomaly from operational story.
+5. Only after the discriminating test passes do you register the operational interpretation.
+
+**The trap's recurring signature (now generalized):**
+1. Real structural anomaly with strong null-test support
+2. Cleanly-structured story that fits the anomaly using existing operational vocabulary
+3. Cherry-picked corroborating test (one direction, one metric, no discriminating control)
+4. Pre-registration partial-failure rationalized via post-hoc cross-folio specificity or similar
+5. Discriminating test (run later, often by experts pushing back) kills the story
+
+**Why:** Three identical traps in one session (2026-05-11/12), all with the same signature, all caught by expert-advisor on the same controls:
+
+1. **K-prefix thermal regime co-occurrence (k-e-depth).** Story: three thermal regimes (bare-k = active heat, ke/kee/keee = balneum mariae, keeee = congelation). Surface evidence: matched-folio lift 1.59 for kee+keee, clean rank-table separation, length stratification consistent. Failed at within-folio shuffle null (z=+1.25, p=0.21).
+
+2. **Triple-i ↔ iter-terminal co-occurrence.** Story: two iteration-encoding mechanisms (qok-class repetition for discrete cycles vs aiin-family extension for gradient depth), mutually exclusive across recipe types. Surface evidence: matched-folio ρ=+0.702 (p=0.001), corpus-wide ρ=+0.228 (p=0.003), joint zero on f75r+f103r (p=0.011), f108v independent prediction-confirmation. Failed at within-folio shuffle null (mean z=+0.06 across testable folios, f112v at z=-1.10).
+
+3. **hh = intense monitoring on matched recipes.** Story: hh tokens mark observation-intensive operations (nigredo watch, mercury sublimation observation, ferment monitoring); absent from cycle-counted/process-driven/specification recipes. Surface evidence: 6/71 hh on matched folios (0.53 depletion ratio), 5 hh-bearing matched folios all observation-intensive, 10 hh-empty matched folios all "non-observation," f84r cthh cold-read note matching the interpretation. Expert verdict: same trap. Post-hoc 3-bucket disjunction unfalsifiable; n=6 statistically meaningless with f84r driving 33%; "independent" cold-read corroboration tautological (same atom dictionary at two scales).
+
+4. **f66r as character-key / glossary page (2026-05-15, C1993 retracted).** Story: f66r is a three-column glossary — L-labels are named operations, M-column atoms classify them by operational type, R-body provides examples. Surface evidence: 88% short-start anomaly (z=11.11), atom-gloss correspondence d→da 5.4× and t→ot 3.7×, 11/15 labels corpus-singular + 4/15 heavily cross-referenced (qokal 96× in matched recipes, raiin 24×), qokal anchor test 1.44× sh enrichment in predicted direction. Failed three discriminating tests: (1) frequency-matched null PASSED (anomaly is real); (2) L1-L15 vs L16-L32 R-body equivalence FAILED at p=0.045 (two structurally distinct zones, not unified glossary); (3) M-marker dominance on cross-referenced labels FAILED at 0/4 top-1, 1/4 top-3 (M doesn't predict label's actual operational neighborhood). The "qokal as named procedure cataloged here" lexicon anchor: qokal's M=sh ranks 3rd in qokal's neighborhood (behind o, ch), not dominant. Cross-folio specificity (1/46 folios pass 2+ atom-gloss mappings) that originally justified Tier 3 reinterpreted as multiple-comparison artifact: f66r is structurally unique on many axes, uniquely passing any pattern test is unsurprising. The qokal "1.44× sh enrichment in predicted direction" was cherry-picked — proper test shows sh comes in 3rd, not 1st. Atom-decomposition glosses ("rary = end.yield.respond.end") generated readings, then matched to the pre-chosen frame. Classic operational-story-first.
+
+**Common failure-mode signatures:**
+
+- **Post-hoc classification dressed as pre-registered.** Creating a disjunctive category ("X is A OR B OR C") capacious enough to absorb every observation, then claiming the partition is meaningful. The hh trap used "cycle-counted OR process-driven OR specification" for non-observation matched folios — any zero-hh folio fits at least one.
+
+- **Ratio-language masks small-n.** "6 observed vs 11.3 expected" sounds substantial; "we observed 6 events" exposes the actual evidence base. Always frame absolute counts before ratios.
+
+- **Tautological "independent corroboration."** Cold-read interpretations derived from the C1394 atom dictionary (h=monitor, k=heat, etc.) are not independent confirmation of claims framed in those same atom semantics. The dictionary IS the hypothesis; applying it at two scales doesn't validate it.
+
+- **"Fits framework cleanly" feels like confirmation but is the strongest warning sign.** The cleaner the operational story, the higher the prior that you're pattern-matching rather than discovering.
+
+- **Aggregation scope does not exempt from within-folio control.** Folio-level claims are coarse-grained within-folio claims and shuffle null applies. Don't argue "this is folio-level so the line-level control doesn't apply" — reformulate the null at folio level (shuffle token identities across folios preserving per-folio token counts; recompute claimed rate).
+
+**How to apply:**
+
+- **Pre-register the operational classification BEFORE looking at the distribution.** If "observation-intensive recipe" is the claim, derive the classification from source-text criteria (e.g., "Pseudo-Lull chapter contains explicit color-change instruction") before counting Voynich tokens. If the classification comes from reading the Voynich pattern, the test is circular.
+
+- **Run the discriminating control FIRST**, not after building the registration draft. For the hh case the discriminating control was single-h: does it show the same depletion as hh, or does hh depart from h-generally? That test should have preceded the operational story, not followed it.
+
+- **The within-folio shuffle null is the load-bearing first control for ALL co-occurrence and density-correlation findings**, whether framed at line, paragraph, or folio level. See `feedback_within_folio_shuffle_null_first.md`.
+
+- **When an operational story emerges cleanly, increase the control burden, don't decrease it.** Confirmation bias is highest when the story fits.
+
+- **Three identical failures in one session is a calibration signal.** When the trap pattern repeats, the right response is to stop generating new findings and re-examine the methodology, not to push the next candidate through.
+
+The C1197 mechanical count correction (71 P-placement hh / 85 H-track, not 9 — falsification clause tripped) remains valid as a bookkeeping fix. The operational hh-as-monitoring story does NOT register without the source-text pre-registration and single-h discriminator.
+
+---
+
+## Read the folio/data directly first; scripts only verify
+
+*For Voynich structural-pattern work, eyeball the raw transcript before writing aggregation scripts. Scripts that ask the wrong shape of question miss patterns that are obvious on direct reading.*
+
+For any structural-pattern question on Voynich folios (count anchors, paragraph
+shape, line-bounded clusters, sequence patterns), **read the raw transcript
+line-by-line first**. Use scripts only to verify or quantify what eyeballing
+already surfaced. Never the reverse.
+
+**Why:** During the 2026-04-24 session, a script-based search for "identical-
+token runs" capped the f75r count anchor at 4 (the corpus-singular qokedy run
+on L13). The user pointed out a 9-token qok-class cluster across L37-L38 that
+was obvious on visual inspection but invisible to my run-detection algorithm.
+The 9-cluster is the encoding of `e aprés ix vegades` — a load-bearing anchor
+for the Catalan-tradition source claim. Missing it nearly cost us the
+strongest piece of Voynich-Testamentum evidence. Several other patterns that
+night were similarly visible-when-read but missed-when-aggregated: f84r body
+operational sequences, f78r line-initial structure, dar-cluster shapes.
+
+**How to apply:**
+
+1. **Before writing a script:** dump the relevant folio's raw lines (with
+   paragraph markers if useful) and read them. State what patterns you see
+   in plain language. Only then pick a script question.
+2. **Aggregation traps to avoid:** "longest identical-token run" misses
+   mixed-class clusters (qokedy + qokeedy interleaved). "Density per kchar"
+   smears out positional structure. "Spearman rho across folios" destroys
+   the per-pair structural alignment that's actually doing the work.
+3. **The right shape of test for syntactic claims is reverse-prediction**,
+   not aggregate correlation. Pick a structural anchor on an unmatched folio,
+   predict what the source recipe must contain, search the corpus, see if
+   it's there. That distinguishes "real rule" from "pattern matching" in a
+   way correlation tests cannot. Phase 642 was a methodological dead-end
+   for exactly this reason — wrong shape of question.
+4. **When the user pushes back on aggregate results,** their intuition is
+   probably right. Match it by reading the folio, not by adjusting the
+   script's threshold or hyperparameters.
+
+**Related self-check rules from the same session:**
+
+- **Check memory before stating chains of fact confidently.** I had
+  `project_sismel_authoritative.md` indexed and still misstated the 1566/SISMEL
+  Latin/Catalan split chain twice in one session. Read the relevant memory
+  files before answering source-tradition questions.
+- **Do not restate a corrected position later in the same session as if
+  the correction didn't happen.** When the user has already corrected a
+  factual claim, that correction is binding for the rest of the session;
+  re-asserting the original is gaslighting them. Track corrections.
+- **For structural-pattern claims, "look at the folio directly" beats
+  any amount of statistical apparatus.** Save the apparatus for verifying
+  what direct reading already found.
+
+---
+
+## Recto/verso recipe-continuation claims need section-matched controls
+
+*Phase 686 candidate (matched-recto verso P1 continues alchemy genre) PASSED naive baseline test (qo_rate vs all-Currier-B) at p<0.001 but FAILED section-matched control (Jaccard vs Section-B-only random pairs). Section B's intrinsic paragraph-1 vocabulary similarity (~0.13 Jaccard, per C361 adjacent-folio vocab sharing) fake-passes any bare baseline. Future r/v continuation claims must use section-matched random pairs as null.*
+
+**Why:** On 2026-05-06, qo_rate-based test of "matched recipes continue onto verso P1" passed all 4 pre-reg criteria at p<0.01 vs Currier B baseline. Looked like a clean Tier 3 register. Expert consultation (both expert-advisor and crazy-expert) flagged section confound. Corrective test using token-Jaccard:
+- Matched r/v P1 mean Jaccard: 0.126
+- All-Currier-B random pair mean Jaccard: 0.059 (would falsely "confirm")
+- **Section-B-only random pair mean Jaccard: 0.129** (kills the signal — matched pairs are at section baseline, not above)
+
+The original qo_rate result was the same confound at single-feature level. Matched versos are alchemy-section folios, so they have alchemy qo_rate. The "signal" was section membership re-discovered.
+
+**How to apply:**
+- For ANY claim about recto-verso recipe spillover, paragraph-pair similarity, or matched-folio-cluster behavior — use section-matched random null, not all-Currier-B random null.
+- Section B's intrinsic paragraph-1 vocabulary similarity (~0.13 Jaccard per pair) is the floor any "matched pair" claim has to clear.
+- C361 documents adjacent-B-folio vocab sharing at 1.30× — this is the structural fact future tests must control for.
+- qo_rate as alchemy-discriminator confounds with section membership; use recipe-distinctive features (e-depth gradient, ke/ek ratio, dar-distribution shape) for recipe-specific claims.
+
+**What still survives from Phase 686 attempt:**
+- f103v as hybrid folio (P1 alchemy → P2-P13 pharmacy) is still validated by direct reading — see project_f103v_hybrid_folio.md
+- Per-pair pair-specific signals on f80r/v (rank 2/79) and f81r/v (rank 4/79) — these specific pairs show pair-specific Jaccard above what their section average would predict. Worth individual investigation if pursued.
+- C1936 (f66r/v, f103r/v, f108r/v as sequential pairs) and C1947/C1948/C1953/C1954 (specific r/v pairs in matched catalog) are unaffected — they were already pair-specific findings, not generalizations.
+
+**Connection to existing constraints:**
+- C361 adjacent-folio vocabulary sharing — the floor that fake-passes naive baselines
+- C1287 paragraph-1 MARKING enrichment — P1 has known enrichment effects, exacerbates baseline issues for any P1-vs-P1 test
+- C1300 qo as 100% k-HEAD thermal channel — qo_rate is genre indicator (alchemy/non-alchemy), not recipe indicator
+- C1808 section qo-rate baselines — H ≈ 0.10, B ≈ 0.20, S ≈ 0.15
+
+**Per-pair follow-up (2026-05-06, after corpus-wide null):**
+
+The corpus-wide test surfaced two pair-specific outliers (f80r/v rank 2/79, f81r/v rank 4/79). Direct drills with proper controls killed both:
+
+**f81r/f81v: not a continuation.** Both folios are independently matched in C1971 (f81r→Ch.10 dissolution, f81v→III.18 potable gold). Pair similarity reflects two adjacent matched alchemy recipes, not one recipe across the leaf.
+
+**f80r/f80v: not a continuation either, despite passing first-pass plausibility.** Three corrective controls (per crazy-expert) decisively rejected:
+
+1. **Continuation vs genre-mate test (THE KILLER):** f80v P1 should be closer to f80r-LAST than f80r-FIRST if continuation. Result: f80v P1 is **2× closer to f80r FIRST** (0.27 vs 0.53). f80v starts at f80r's opening profile (qo=38%, fresh fire) not f80r's closing profile (qo=7%, fire dropped). f80v is opening a NEW recipe in the same calcination genre, not continuing f80r.
+
+2. **dar=0 baseline check:** 56% of Currier B P1s have dar=0. f80v's dar=0 is the COMMON case, not distinctive evidence. The "no fresh material loading implies pre-loaded" argument was rhetorical filler.
+
+3. **Pair-exclusive rare vocabulary baseline:** f80r/f80v shares 4 corpus-rare (n≤5) tokens. Median r/v pair shares 2. f80r/f80v ranks #9/33 — top 27% but NOT exceptional. f111r/v shares 7, f104r/v shares 6, f105r/v shares 6, f112r/v shares 6, f107r/v shares 5, f114r/v shares 5, f115r/v shares 5. Same-scribe-same-session r/v writing produces baseline rare-token sharing of 2-7. f80r/v's 4 is in normal range — codicological signature, not procedural continuation.
+
+**Key methodological lessons:**
+
+1. **The cleanest test for r/v continuation is the FIRST-vs-LAST atom comparison** of verso P1 against recto's first paragraph vs recto's last paragraph. If continuation, P1 should be closer to recto-LAST. If genre-mate (next recipe in same genre), P1 will be closer to recto-FIRST. Always run this test before claiming continuation.
+
+2. **Pair-specific Jaccard rank from a failed null test is a weak prior, not evidence.** Outlier status from one test doesn't survive different framings. Always test with multiple orthogonal proxies before treating an outlier as a real signal.
+
+3. **C1936 (3 documented r/v continuation pairs: f66r/v, f103r/v, f108r/v) is the limit of evidence.** Multiple attempts to extend the pattern beyond these three have failed. Future r/v continuation claims need either source-text alignment proving the recipe continues, OR the FIRST-vs-LAST atom test plus 2+ supporting features.
+
+4. **Corpus-rare token co-occurrence on r/v pairs is a baseline scribal signature**, not evidence of recipe continuation. Median 2 tokens shared per r/v pair means same-scribe-same-session writing produces this baseline level of rare-token sharing without any recipe semantics.
+
+**See also:**
+- memory/project_f103v_hybrid_folio.md — the hybrid finding survives (P1 alchemy + P2-P13 pharmacy is structural observation independent of continuation question)
+- memory/project_section_s_source_genre_gap.md — related sourcing-vs-analysis distinction
+- C1936 — the documented r/v continuation pairs (limit of evidence)
+- C1977-C1978 — r/v PREFIX profile coherence (cos 0.931 baseline that any pair-specific claim must beat)
+
+---
+
+## When a broad test gives mean rho +0.4-0.5, suspect scope conflation
+
+*Recurring pattern across Phase 643, 645→647 — broad tests produce mixed/moderate aggregate signal because they include cases where the effect cannot exist by construction. Pre-classify by what the underlying data could plausibly support BEFORE running aggregate tests. The refined test almost always produces clean signal where the broad test produced noise.*
+
+When a correlation/aggregation test on N units produces mean rho in the
++0.4 to +0.5 range with mixed individual significance (some hits, several
+nulls), don't conclude "weak signal." Stop and ask: **could the effect
+exist on every unit in this test, or only on a subset?**
+
+If the test units include cases where the effect is structurally
+impossible (uniform-heat recipes can't show heat-progression; theoretical-
+exposition recipes can't show count-anchors at the same scale; etc.),
+the broad aggregate is averaging real signal with structural zeros.
+**Restrict to the subset where the effect could plausibly exist, lock
+the classification before re-running, and the clean signal usually
+emerges.**
+
+**Why:** This pattern has now appeared three times in the project:
+
+1. **Phase 643 (paragraph independence)** — C1399 measured corpus-aggregate
+   state-coupling. Its phrasing extended that to "paragraphs are parallel
+   subroutines, not sequential steps" — a stronger claim never tested.
+   Test B restricted to matched folios with documented recipe-phase
+   structure showed clean rho +0.81 vs the apparent corpus-aggregate null.
+
+2. **Phase 642 → Phase 643 transition** — pre-registered Spearman rho on
+   gloss feature rates returned 0/6 supported. Same data, restructured
+   into per-folio reading + reverse-prediction, produced 4 confirmed
+   matches at strict significance. Aggregate cross-folio correlation was
+   the wrong shape of test for structural-positional syntax.
+
+3. **Phase 645 → Phase 647** — heat-progression test on all 7 matches
+   gave mean rho +0.484 with 1/7 strict significance. Pre-classifying
+   recipes into heat-phase-distinct (5) vs heat-uniform (3) and re-running
+   on phase-distinct only gave mean rho +0.71 with 5/5 positive direction.
+   The heat-uniform nulls were structural (no heat progression to encode)
+   not data-failure.
+
+**How to apply:**
+
+1. **Before running an aggregate test**, articulate what conditions each
+   test unit must satisfy for the effect to be detectable. Pre-classify
+   units that don't satisfy the conditions.
+2. **If the broad test gives mean rho ~+0.5 with mixed direction**, don't
+   register it as "weak support." Stop, identify the structural-zeros,
+   pre-classify, re-run.
+3. **Lock the pre-classification before re-testing** — pre-registration
+   discipline prevents post-hoc selection of the convenient subset.
+4. **Test the heat-uniform / non-applicable subset as a control** — its
+   null result corroborates that the restriction is principled, not
+   cherry-picked.
+5. **Register the scope-restricted version**, not the broad version.
+   Document the scope explicitly in the constraint phrasing.
+
+**Failure mode this prevents:**
+
+- Registering a watered-down version of a strong effect because the
+  broad test averaged signal with structural zeros
+- Running follow-up investigations on the wrong scope (overgeneralized
+  null) and missing real findings
+- Inheriting overstrong interpretive phrasings from constraints whose
+  measurements were narrower than their phrasings suggested (the C1399
+  pattern that crazy-expert flagged as a class issue)
+
+**The diagnostic:** mean rho 0.4-0.5 with 1/N strict significance and
+mixed direction is the signature of scope conflation. If 5/N show
+positive direction at moderate strength but only 1/N reaches significance,
+the data is telling you most units have signal — the underpowered
+hits and the genuine nulls are mixing. Separate them.
+
+**Related:**
+- `feedback_read_first_scripts_verify.md` — read the data directly first
+- `project_paragraph_independence_vs_enumeration.md` — concrete example
+  of the constraint-system gap this pattern reveals
+- `project_paragraph_layout_ordering_empirical.md` — what the refined
+  test actually produced
+
+---
+
+## 8D matcher top-1 ratio-confidence mode is degenerate; use hypothesis-driven distance gating
+
+*Phase 627/628 8D matcher (TUNED_DIMS) collapses to f34v for ~60% of input units regardless of corpus domain (Antidotarium 66%, Codicillus 58%, Brunschwig 60%). This is geometric-centrality property of the V-side feature space per C1366 (f34v is the top least-anomalous folio at 0.71). Top-1 ranking + ratio-confidence is therefore not a valid evaluation mode. Real C1971 matches use hypothesis-driven absolute-distance gating (d < 1.0 threshold).*
+
+## The rule
+
+When evaluating 8D matcher results on a new source corpus, do NOT use top-1 ranking + d2/d1 ratio-confidence as the evaluation method. The matcher's top-1 mode degenerates to f34v (or one of the 5 least-anomalous folios per C1366) for the majority of input units, regardless of whether the corpus is in-domain or out-of-domain.
+
+The validated evaluation method is **hypothesis-driven absolute-distance gating**: pre-identify candidate Voynich folios for specific source units, compute pairwise distances, accept matches at d < 1.0 with secondary structural criteria (token/verb ratio, instruction count, fch positions, etc.).
+
+**Why:** The 8D feature space has a geometric center where folios with low operational signal (low token counts, near-zero on most TUNED_DIMS) accumulate. f34v (115 tokens, REGIME_3, Section H) sits at that center per C1366 (least-anomalous at 0.71). Any source unit with weak or missing operational signal will default to that center under top-1 nearest-neighbor — not because the source matches f34v's content, but because f34v is closest to the all-zero "no signal" vector.
+
+**How to apply:** 
+
+- When testing a new source corpus, FIRST run the matcher on a validated in-domain control (Codicillus or a PL chapter subset). If the control's top-1 results don't recover its expected Section B alchemy matches, do NOT trust top-1 mode for the new corpus.
+- For real corpus-corpus matching: build hypothesis-target pairs from external evidence (genre, period, specific operational claims) and test distance < 1.0 with structural co-criteria. C1943, C1955, C1990, C1992 are exemplars.
+- The top-1 mode is informative as a **null-shape diagnostic**: if your corpus produces a different top-1 distribution than f34v-dominated, that's evidence the corpus has unusual signal worth investigating. Same distribution = corpus is uninformative under TUNED_DIMS.
+- For corpus-class falsification (e.g., "is Section S genuinely pharmacy?"), top-1 cannot answer either way. You need absolute-distance comparisons against pre-identified candidate folios.
+
+**Test cases that confirmed this (2026-05-15):**
+- Antidotarium Nicolai (out-of-domain compound pharmacy, 124 recipes): 82/124 → f34v top-1
+- Codicillus (in-domain PL alchemy companion text, 19 segments): 11/19 → f34v top-1
+- Brunschwig 1512 (in-domain validated 20 compound recipes): 12/20 → f34v top-1
+- All three: mean d2/d1 ratio at 1.0-1.1; 0 confident matches at ratio > 1.30; 5-7 unique top-1 folios out of 82
+
+The matcher discriminates corpora through absolute distance levels (Antidotarium min d=1.06 worse than Codicillus 1.16 worse than Brunschwig 1.13), not through top-1 attractor patterns.
+
+## Connection to existing constraints
+
+- **C1366**: top-5 least-anomalous folios = f34v (0.71), f106r (0.67), f106v (0.65), f31r (0.62), f66v (0.62). These are the geometric attractors. f34v's overwhelming dominance suggests the matcher's distance metric is biased toward low-token-count folios.
+- **C1943/C1955/C1990**: validated matches use d<1.0 hypothesis-driven gating, not top-1 ranking. f106v↔Ch40M at d=0.933 ratio=1.164 (not a high ratio, but the absolute distance is the load-bearing claim).
+- **C2026**: the registering constraint documenting the baseline-fail observation.
+
+## Anti-trap value
+
+This is critical against the framework-echo trap. When a new corpus produces "interesting" top-1 attractor patterns that fit existing hypotheses (e.g., "Antidotarium pharmacy recipes attract Section S folios"), the right reaction is suspicion: top-1 mode is so degenerate that ANY pattern emerging from it could be artifact. The discipline is to ask "what does the absolute distance say, against an external prediction?" before any interpretive read.
+
+---
+
+## Within-folio shuffle null is the load-bearing first control for co-occurrence claims
+
+*For any co-occurrence or density-correlation claim, run within-folio shuffle null BEFORE other refinements. Aggregate rho in the +0.15 to +0.65 range is the diagnostic signature of folio-composition shadow.*
+
+For any co-occurrence or density-correlation claim, **within-folio shuffle null is the load-bearing first control**, not a late one. Aggregate Spearman rho in the +0.15 to +0.65 range is the diagnostic signature of folio-composition shadow when no within-folio null has been run.
+
+**Why:** Demonstrated twice in one session (2026-05-11):
+
+1. **K-prefix thermal regime co-occurrence (k-e-depth):** matched-folio pooled ρ = 1.59 lift for kee+keee co-occurrence, looked like clean 3-regime / 2-regime mechanism. Within-folio shuffle null killed it: z = +1.25 (p = 0.21), folio-composition shadow entirely.
+
+2. **Triple-i ↔ iter-terminal co-occurrence:** matched-folio ρ = +0.702 (permutation p = 0.001), corpus-wide ρ = +0.228 (p = 0.003), clean folio-level rank segregation, f108v independent prediction-confirmation. Within-folio shuffle null killed it: mean z = +0.06 across testable folios, zero folios with z > +2, f112v (highest-triple-i folio) at z = −1.10. The matched-folio ρ was reading "folios with more triple-i also have more iter-terminal tokens overall" — exactly folio composition.
+
+Both findings looked great descriptively. Both survived simple controls (permutation null on ρ, binomial test on extreme cases, rank-table inspection). Both died at within-folio shuffle null.
+
+**How to apply:**
+
+- Before claiming any line-level or paragraph-level co-occurrence pattern, run within-folio shuffle null as control #1. NOT control #4.
+- Test: per folio, redistribute tokens across lines (preserving line lengths), recompute the statistic. If real exceeds null by z > 2, line-level co-occurrence is real. If real ≈ null, the apparent pattern is folio-composition shadow.
+- Aggregate ρ across folios in the +0.15 to +0.65 range with no within-folio null = strong prior that what you have is composition shadow, not mechanism. The matched-folio enrichment (matched ρ > all-folio ρ) doesn't rescue this — it just means operationally-aligned folios have stronger composition signals.
+- Section stratification, length stratification, placement filtering are second-order controls. They refine an already-validated finding. They cannot substitute for the within-folio null.
+- Constraints are claims about the manuscript; methodology lessons are claims about how to investigate it. This rule generalizes beyond Voynich and belongs in MEMORY, not in the constraint table.
+
+---
+

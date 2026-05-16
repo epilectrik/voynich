@@ -1,8 +1,23 @@
-# Phase 684: f66r as Character-Key/Glossary Page
+# Phase 684: f66r as Character-Key/Glossary Page — PARTIALLY FALSIFIED
 
-**Status:** COMPLETE — 2 constraints registered
+**Status:** C1992 holds (structural singleton). C1993 RETRACTED 2026-05-15 — glossary interpretation falsified.
 **Started:** 2026-05-04
+**Updated:** 2026-05-15
 **Goal:** Test the structural anomaly of f66r (high short-start rate, anomalous header structure) against null distributions.
+
+## Retraction notice (2026-05-15)
+
+The "f66r is a character-key / glossary page" interpretation does not survive diagnostic testing. Both expert-advisor and crazy-expert independently flagged the C1993 claim as over-fit. Three pre-registered diagnostic tests were run (`scripts/_three_diagnostic_tests.py`):
+
+| Test | Result |
+|---|---|
+| 1. Frequency-matched null on 11/15 singleton split | **PASS** (z=4.32, p=0.0001) — singleton concentration is real |
+| 2. L1-L15 vs L16-L32 R-body structural equivalence | **FAIL** (JSD 0.1043, p=0.045) — two structurally distinct zones |
+| 3. M-marker dominance on cross-referenced labels | **FAIL** (0/4 top-1, 1/4 top-3) — M-column does not predict neighborhood |
+
+Combined with the original Phase 684 strict pre-reg failure (2/4 with sh-inverted), C1993 is now Tier 1 falsification. Updated speculation file at `context/SPECULATIVE/f66r_keypage.md` (marked FALSIFIED). C1992 remains Tier 2 (structural anomaly fact only; no interpretation registered).
+
+The "qokal as named procedure cataloged by f66r" lexicon-anchor claim is also retracted. The qokal anchor test had M=sh ranking 3rd in qokal's neighborhood (behind o, ch), not dominant as required.
 
 ## Background
 

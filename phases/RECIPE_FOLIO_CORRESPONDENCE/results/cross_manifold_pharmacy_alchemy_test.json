@@ -1,0 +1,39 @@
+{
+  "method": "Cross-manifold structural NN matching",
+  "features": [
+    "norm_entropy",
+    "autocorr_excess",
+    "distinct_per_log_length"
+  ],
+  "length_filter": "20-50 word paragraphs",
+  "stats": {
+    "cand_to_mesue": {
+      "n": 37,
+      "mean": 0.8343679679356253,
+      "median": 0.544002908010708,
+      "min": 0.06535091525842326
+    },
+    "cand_to_codic": {
+      "n": 37,
+      "mean": 0.7081716153427682,
+      "median": 0.4681688160978932,
+      "min": 0.10820212974543227
+    },
+    "matched_to_mesue": {
+      "n": 163,
+      "mean": 1.4821367751545131,
+      "median": 1.2161219011776556,
+      "min": 0.0
+    },
+    "matched_to_codic": {
+      "n": 163,
+      "mean": 1.176516704962445,
+      "median": 0.9501126099103541,
+      "min": 0.051717033114075654
+    }
+  },
+  "permutation_p_cand": 0.003,
+  "permutation_p_match": 0.997,
+  "candidates_closer_to_mesue": 0.32432432432432434,
+  "matched_closer_to_codic": 0.7177914110429447
+}

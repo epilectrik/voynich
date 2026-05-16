@@ -1,0 +1,112 @@
+======================================================================
+Theophilus Negative Control: 8D Matcher Audit
+======================================================================
+
+Step 1: Parse Theophilus chapters from Hendrie 1847...
+  Extracted 171 Theophilus chapters
+    Book 1: 38 chapters
+    Book 2: 31 chapters
+    Book 3: 102 chapters
+
+Step 2: Compute channel features per chapter...
+  Operational chapters (heat>0 or monitoring>0): 124/171
+  Subsampled to top 30 most operationally-rich chapters
+
+  Sample operational chapters:
+  Ch       Book  Lines  Heat  Mon  Term  HeatRate  MonRate
+  B3.108      ?    619    14   18    10     0.023    0.029
+  B3.85       ?    478    17    3     8     0.036    0.006
+  B3.94       ?    146     8    7    11     0.055    0.048
+  B3.74       ?    207     4    7    10     0.019    0.034
+  B3.53       ?    141     5   14     4     0.035    0.099
+  B3.61       ?    368    11    3     7     0.030    0.008
+  B3.51       ?     64     3   12     2     0.047    0.188
+  B3.101      ?    120     8    8     1     0.067    0.067
+  B3.90       ?    138     2   10     5     0.014    0.072
+  B2.23       ?     54     8    3     3     0.148    0.056
+  ...
+
+Step 3: Load Voynich data...
+  REGIME_1 folios: 32
+
+======================================================================
+T1: Theophilus chapters -> REGIME_1 folios (same as PL training)
+======================================================================
+  Theophilus chapters tested: 30
+  REGIME_1 folios:            32
+  Mean distance:              2.7165
+  Mean ratio:                 0.878
+  Confident matches (>1.15):  4 / 30
+  Unique NN folios:           9 / 32
+
+  TheoCh     Folio       Dist  Ratio  Conf  OnPL?
+  ------     -----       ----  -----  ----  -----
+  B2.23      f112r     1.2891  1.710     Y       
+  B3.95      f84r      1.5417  1.328     Y    YES
+  B3.28      f78v      1.7739  1.045             
+  B3.54      f75r      1.7888  1.068          YES
+  B3.61      f77v      1.8421  1.214     Y    YES
+  B3.33      f84v      2.0992  1.150     Y    YES
+  B3.76      f83r      2.1020  0.894          YES
+  B3.65      f103v     2.1034  1.037             
+  B3.90      f79v      2.1312  0.836          YES
+  B3.74      f103r     2.1708  0.874             
+  B3.108     f82r      2.1908  0.857          YES
+  B3.23      f76v      2.3134  0.745          YES
+  B3.75      f82v      2.3290  0.714             
+  B2.6       f108r     2.3646  0.837             
+  B3.26      f80r      2.4438  0.833          YES
+  B3.94      f78r      2.4503  0.858             
+  B3.53      f83v      2.4572  0.871             
+  B3.31      f116r     2.5169  0.876             
+  B3.101     f76r      2.7296  0.736          YES
+  B1.26      f80v      2.8102  0.637          YES
+  B3.52      f81v      2.8806  0.686          YES
+  B3.87      f75v      2.9547  0.586          YES
+  B3.63      f77r      3.0584  0.653          YES
+  B3.85      f111v     3.0908  0.604             
+  B3.38      f107v     3.3533  0.595             
+  B2.30      f112v     3.4754  0.937             
+  B3.70      f81r      3.5765  0.561          YES
+  B3.51      f79r      3.7296  1.101          YES
+  B2.25      f31r      5.8192  0.695             
+  B3.40      f95r1     6.1081  0.815             
+
+  Matches landing on Section B alchemy folios: 16/30 (53.3%)
+
+======================================================================
+T2: Permutation test (random chapter-to-folio assignment)
+======================================================================
+  Real mean ratio:         0.8780
+  Random mean ratio:       0.6125
+  Real confident matches:  4
+  Random confident mean:   0.32
+  p(ratio):                0.0000
+  p(confident):            0.0000
+  p(distance):             0.0000
+
+======================================================================
+PRE-REGISTERED BINDING CRITERIA
+======================================================================
+
+  Criterion 1: confident ratio  expected ≤2/30 (≤7%)
+    Observed: 4/30 (13.3%)
+    Verdict: AMBIGUOUS
+
+  Criterion 2: mean ratio ≤1.10
+    Observed: 0.878
+    Verdict: PASS
+
+  Criterion 3: permutation p ≥ 0.10
+    Observed: p=0.0000
+    Verdict: FAIL
+
+  Criterion 4: Theophilus should NOT land on Section B alchemy folios
+    Observed: 16/30 (53.3%) on PL-matched folios
+    Verdict: FAIL
+
+======================================================================
+OVERALL VERDICT: FAIL — matcher is generic; demote C1882-C1956 to structural-similarity
+======================================================================
+
+Output: C:\git\voynich\phases\RECIPE_FOLIO_CORRESPONDENCE\results\theophilus_negative_control.json

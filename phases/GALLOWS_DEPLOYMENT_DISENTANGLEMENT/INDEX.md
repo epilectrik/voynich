@@ -68,7 +68,7 @@ Consolidated analysis across 572 gallows-initial paragraphs (k=35, t=230, p=287,
 ## Findings
 
 ### F1: Gallows carry no unique variance after full controls
-All gallows body-ecology effects are absorbed by the control hierarchy (section → folio → block position → archetype → ambient context). The 6.7% apparent gallows SS share falls within the permutation null (mean=7.2%, z=-0.61, p=0.73). Mediation delta R²=0.006. Gallows do not contribute unique body-ecology information beyond the modeled contextual hierarchy.
+All gallows body-ecology effects are absorbed by the control hierarchy (section → folio → block position → archetype → ambient context). The 6.7% apparent gallows SS share falls within the permutation null (mean=7.2%, z=-0.61, p=0.73). Mediation delta R²=0.006. Gallows are compressed context labels, not independent information channels.
 
 ### F2: Gallows signal attenuates from header to body
 The gallows-body association exists (V_Z3=0.046, p<10⁻⁶) but is 81% confined to the header zone (V_Z1=0.238). Gallows are primarily header-specification markers with attenuated body echo. The body signal is real but is mediated by the same upstream context that selects both gallows type and body composition.
@@ -84,7 +84,7 @@ Section-to-global cosines range from 0.455 (Bio) to 0.817 (Herbal). Cross-sectio
 ### C1778: Gallows Variance Absorption
 **Tier 2 | Scope: B_paragraph, gallows, disentanglement**
 
-Gallows type does not contribute unique variance to paragraph body atom ecology after sequential control for section, folio (within section), block position (within folio), paragraph archetype (within position), and ambient context (within archetype). Forward sequential SS: gallows|context = 6.72% of total, but permutation null (200 shuffles within section) gives mean=7.16%, z=-0.61, p_perm=0.73. Mediation test: adding gallows to a context-only body-prediction model improves R² by 0.006 (from 0.069 to 0.075). Within-archetype effects (significant in 3/4 archetypes under simple thermal control) are absorbed by the full control hierarchy, indicating section/folio mediation. Gallows do not contribute unique body-ecology variance beyond the modeled contextual hierarchy; they function primarily as explicit paragraph-header labels of deployment context.
+Gallows type does not contribute unique variance to paragraph body atom ecology after sequential control for section, folio (within section), block position (within folio), paragraph archetype (within position), and ambient context (within archetype). Forward sequential SS: gallows|context = 6.72% of total, but permutation null (200 shuffles within section) gives mean=7.16%, z=-0.61, p_perm=0.73. Mediation test: adding gallows to a context-only body-prediction model improves R² by 0.006 (from 0.069 to 0.075). Within-archetype effects (significant in 3/4 archetypes under simple thermal control) are absorbed by the full control hierarchy, indicating section/folio mediation. Gallows are compressed context labels that index the joint section/folio/position/archetype/context state, not independent deployment channels.
 
 ### C1779: Gallows Header-Body Signal Attenuation
 **Tier 2 | Scope: B_paragraph, gallows, header, body**
@@ -99,15 +99,13 @@ The four-gallows system (k/t/p/f) is not reducible to a simple opener/mode binar
 ### C1781: Gallows Section-Conditional Posture
 **Tier 2 | Scope: B_paragraph, gallows, section, stability**
 
-The gallows posture system (p-gallows body O/E vectors) varies across sections in direction, not just amplitude. Section-to-global cosine similarities: Bio=0.455, Cosmo=0.809, Herbal=0.817, Stars=0.746. Cross-section cosines reach as low as 0.233 (Bio vs Herbal). Bootstrap 90% CIs (200 resamples) are wide: all lower bounds below 0.30. Bio shows the strongest divergence from the global posture pattern. Stars-Bio alignment (0.895) contrasts with Bio-Herbal (0.233) and Herbal-Stars (0.436). The posture system is section-conditional and non-universal: section does not merely scale gallows effects but alters their direction in atom-composition space. Wide bootstrap CIs warrant caution about the precision of section-specific posture geometry.
+The gallows posture system (p-gallows body O/E vectors) varies across sections in direction, not just amplitude. Section-to-global cosine similarities: Bio=0.455, Cosmo=0.809, Herbal=0.817, Stars=0.746. Cross-section cosines reach as low as 0.233 (Bio vs Herbal). Bootstrap 90% CIs (200 resamples) are wide: all lower bounds below 0.30. Bio shows the strongest divergence from the global posture pattern. Stars-Bio alignment (0.895) contrasts with Bio-Herbal (0.233) and Herbal-Stars (0.436). The posture system is section-conditional: section does not merely scale gallows effects but alters their direction in atom-composition space.
 
 ## Tier 3 Synthesis
 
-Gallows are explicit paragraph-header labels of deployment context. Their strong header-local signal (V=0.238) and weak body echo (V=0.046) show that they primarily mark contextual paragraph posture at entry. They do not add independent body-ecology variance beyond section, folio, block position, paragraph archetype, and ambient context. The labeling system is irreducibly four-way and section-conditional.
+Gallows function as compressed context labels, not independent deployment channels. They reliably index the joint section/folio/position/archetype/context state (Phase 611 confirmed the correlations) but carry no unique information beyond that state (Phase 612 confirmed the absorption). The four-type architecture is genuine and irreducible, with a partially independent positional axis (opener/mode) and compositional axis (within-family contrasts). The posture system is section-conditional, meaning gallows-body relationships change direction across sections — the gallows "vocabulary" means different things in different manuscript sections.
 
-Both gallows type and body atom composition are determined by the shared upstream context (section identity, folio position, paragraph archetype, ambient operational state). Gallows declare the label; the body implements the content. Neither controls the other — both are driven by the same contextual state. This means the Phase 611 body-ecology correlations (C1772-C1777) are real patterns but mediated echoes, not independently generated by gallows labels themselves: p labels contexts whose bodies are already p-like; k labels contexts whose handling is e-biased.
-
-Gallows are explanatorily redundant with the contextual state but operationally real — they are the manuscript's actual encoding interface for paragraph posture at entry, analogous to a packet type tag or mode bit. This distinction (explanatory redundancy ≠ structural irrelevance) is the final resolution of the gallows layer.
+The closure interpretation: gallows are the manuscript's own labeling system for paragraph context. Both gallows type and body atom composition are determined by the shared upstream context (section identity, folio position, paragraph archetype, ambient operational state). Gallows declare the label; the body implements the content. Neither controls the other — both are driven by the same contextual state.
 
 ## Observations Preserved (Not Registered as Tier 2)
 

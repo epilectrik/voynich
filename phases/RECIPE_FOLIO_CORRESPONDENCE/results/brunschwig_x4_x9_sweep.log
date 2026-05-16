@@ -1,0 +1,179 @@
+======================================================================
+Brunschwig × Cardinality Sweep
+======================================================================
+
+Brunschwig 1512: 1690 pages parsed
+Brunschwig 1500: 390 pages parsed
+Puff: 1 chunks parsed
+Rupescissa: 101 chunks parsed
+Codicillus: 183 chunks parsed
+PL English: 769 chunks parsed
+SISMEL: 105 chunks parsed
+
+======================================================================
+Per-corpus cardinality survey
+======================================================================
+
+--- Brunschwig 1512 (Compositis) (1690 segments) ---
+  Segments with ×4: 91
+  Segments with ×9: 28
+  Segments with BOTH ×4 AND ×9: 5
+    p164 (page 164): ×4=2, ×9=1
+    p534 (page 534): ×4=1, ×9=1
+    p1119 (page 1119): ×4=1, ×9=1
+    p1246 (page 1246): ×4=1, ×9=2
+    p1446 (page 1446): ×4=1, ×9=2
+  Expected (if independent): 1.51
+  Observed/Expected ratio: 3.32x
+
+--- Brunschwig 1500 (Simplicibus) (390 segments) ---
+  Segments with ×4: 122
+  Segments with ×9: 10
+  Segments with BOTH ×4 AND ×9: 4
+    1500_p57 (page 57): ×4=1, ×9=1
+    1500_p64 (page 64): ×4=1, ×9=1
+    1500_p267 (page 267): ×4=1, ×9=1
+    1500_p332 (page 332): ×4=1, ×9=1
+  Expected (if independent): 3.13
+  Observed/Expected ratio: 1.28x
+
+--- Puff von Schrick (English) (1 segments) ---
+  Segments with ×4: 0
+  Segments with ×9: 0
+  Segments with BOTH ×4 AND ×9: 0
+
+--- Rupescissa (English) (101 segments) ---
+  Segments with ×4: 0
+  Segments with ×9: 0
+  Segments with BOTH ×4 AND ×9: 0
+
+--- Codicillus (English) (183 segments) ---
+  Segments with ×4: 2
+  Segments with ×9: 0
+  Segments with BOTH ×4 AND ×9: 0
+
+--- PL Testamentum (English, prints) (769 segments) ---
+  Segments with ×4: 5
+  Segments with ×9: 5
+  Segments with BOTH ×4 AND ×9: 0
+  Expected (if independent): 0.03
+
+--- SISMEL Testamentum (Catalan, authoritative) (105 segments) ---
+  Segments with ×4: 1
+  Segments with ×9: 1
+  Segments with BOTH ×4 AND ×9: 1
+    sismel_ch101 (page 101): ×4=1, ×9=1
+  Expected (if independent): 0.01
+  Observed/Expected ratio: 105.00x
+
+======================================================================
+DETAILED LOOK: segments with both ×4 AND ×9
+======================================================================
+
+Total segments containing both ×4 and ×9 cardinality: 10
+
+--- Brunschwig 1512 (Compositis) :: p164 (page 164) ---
+  ×4 occurrences: 2
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ... ne mixes aqua vitae with a little Tiriack (theriac), and drinks it for three or four days in a row in the morning on an empty stomach, it cleanses the head of all superf ...
+    ... ice as much as the aqua vitae -- or else the herbs steeped therein for three or four days, and then the head anointed with it and a little drunk -- the head is wonderful ...
+  ×9 contexts:
+    ... e scabbiness. And when one applies it to a scabby forehead, it is healed within nine days. And if one mixes in the juice of Benwen Wurtzel (comfrey root), it heals hered ...
+
+--- Brunschwig 1512 (Compositis) :: p534 (page 534) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ...  is, with honey and wax -- and set it in a small warmth to putrefy for three or four days, and the longer it stands the better it is, in Balneo. And the distillation and ...
+  ×9 contexts:
+    ...  the distillation and fermentation, do that many times in dung or Balneo, up to nine times, and then it will be proper.  The second water. Take an old Kappen (capon) or a ...
+
+--- Brunschwig 1512 (Compositis) :: p1119 (page 1119) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ...  and steep it a second time in balneum Mariae for a natural day, that is twenty-four hours, and distill again as before. And then keep it with care, well stoppered. I was ...
+  ×9 contexts:
+    ... four lot of good and proper distilled spirits that have been distilled eight or nine times per alembicum. And set it in balneum Mariae for three days and nights, with a b ...
+
+--- Brunschwig 1512 (Compositis) :: p1246 (page 1246) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 2
+
+  ×4 contexts:
+    ... fili (cloves), each 1 quintin. Aqua vite simplex (simple aqua vitae), distilled four times, half a pfund. Gumi Arabicum (gum arabic), 3 quintin. Croci (saffron), one and  ...
+  ×9 contexts:
+    ... fron), each 5 lot. Bisem (musk), half a quintin. Terpentin (turpentine), washed 9 times with rose water, as much in weight as all the other ingredients together. Rose  ...
+    ... digest, and distill per alembicum.  The eighth balsam.  Take turpentine, washed 9 times with good wine, 1 pfund. Rose oil, 1 pfund. Skimmed honey, half a pfund. Musci  ...
+
+--- Brunschwig 1512 (Compositis) :: p1446 (page 1446) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 2
+
+  ×4 contexts:
+    ... ne 1 quintin saffron and 1 quintin Ziment (cinnamon), both ground, let it stand four days well sealed, stir it once each day. When you wish to use it, let it stand un- s ...
+  ×9 contexts:
+    ... y best distilled wine that you can obtain. Take a gold coin and heat it glowing nine times and quench it each time in the distilled wine; as you quench it, the water beco ...
+    ... t strengthens the body. Take distilled wine, one pfund, that has been distilled nine times. Put therein a handful of Schelkraut (celandine), let it lie therein for 6 days ...
+
+--- Brunschwig 1500 (Simplicibus) :: 1500_p57 (page 57) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ... nine days, drives away gout in people. H. Burnet saxifrage water drunk three or four days, every morning and evening, brings women their monthly flow. I. Burnet saxifrag ...
+  ×9 contexts:
+    ... th castoreum (that is, beaver gland secretion), and drunk two lot every day for nine days, drives away gout in people. H. Burnet saxifrage water drunk three or four days ...
+
+--- Brunschwig 1500 (Simplicibus) :: 1500_p64 (page 64) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ... tuated. A Brown betony water is good for those who have a cold headache: soak a fourfold linen cloth in it and wring it out a little, and lay it moist around the head,  ...
+  ×9 contexts:
+    ... h time 4 lot, produces a good digestive stomach. AA Betony water drunk for 8 or 9 days every morning on an empty stomach, at midday, and at night, each time 4 or 5 lo ...
+
+--- Brunschwig 1500 (Simplicibus) :: 1500_p267 (page 267) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ... tens the chest. At the ninety-fourth leaf.  Gentian root water (Gentiana) drunk four times a day, each time four lot, softens the chest. At the one hundred and twenty-fir ...
+  ×9 contexts:
+    ... oftens the slimy phlegmatic matter of the chest and cleanses it, drunk thus for nine days. At the sixty-second leaf.  Rue water (Ruta graveolens) drunk twice a day, each ...
+
+--- Brunschwig 1500 (Simplicibus) :: 1500_p332 (page 332) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ... eanses the blood. On page VIII.  Borage blossom water, drunk for about three or four days, every day morning and evening each time at three lot, makes good and clean blo ...
+  ×9 contexts:
+    ... illing it wonderfully. Cloths soaked in it and laid over the affected limbs for nine days, or three times three days. On page CXIII.  Here begins the twentieth treatise  ...
+
+--- SISMEL Testamentum (Catalan, authoritative) :: sismel_ch101 (page 101) ---
+  ×4 occurrences: 1
+  ×9 occurrences: 1
+
+  ×4 contexts:
+    ... entació reitera en renovellant la bresca a cascuna       segona distillació per quatre vegades aliter broicé e triblé; e aprés ix vegades.          La confectio de¹ la segona ...
+  ×9 contexts:
+    ... una       segona distillació per quatre vegades aliter broicé e triblé; e aprés ix vegades.          La confectio de¹ la segona aygua: Pren una² capó veel³ o una gallina  ...
+
+======================================================================
+VERDICT
+======================================================================
+
+Total segments surveyed: 3239
+Segments with both ×4 and ×9 cardinality: 10
+
+RESULT: 10 segments have ×4 + ×9 cardinality.
+Implication: ×4 + ×9 is a relatively common cardinality pattern.
+f75r↔Ch.19 match: cardinality alone is NOT diagnostic; relies on other anchors.
+
+Saved: C:\git\voynich\phases\RECIPE_FOLIO_CORRESPONDENCE\results\brunschwig_x4_x9_sweep.json

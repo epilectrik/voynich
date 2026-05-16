@@ -1,0 +1,305 @@
+{
+  "method": "Antidotarium 8D baseline using Phase 627/628 TUNED_DIMS",
+  "n_recipes": 124,
+  "n_folios": 82,
+  "section_attraction": {
+    "H": 83,
+    "S": 9,
+    "B": 32
+  },
+  "regime_attraction": {
+    "REGIME_3": 88,
+    "REGIME_1": 35,
+    "REGIME_2": 1
+  },
+  "top_folios_attracting_recipes": [
+    [
+      "f34v",
+      82
+    ],
+    [
+      "f83r",
+      32
+    ],
+    [
+      "f106v",
+      5
+    ],
+    [
+      "f108r",
+      2
+    ],
+    [
+      "f112r",
+      1
+    ],
+    [
+      "f106r",
+      1
+    ],
+    [
+      "f95v1",
+      1
+    ]
+  ],
+  "mean_d1": 1.8020762481438848,
+  "mean_ratio": 1.1118595490827505,
+  "n_confident_115": 31,
+  "n_confident_130": 10,
+  "n_unique_top1_folios": 7,
+  "confident_pairs": [
+    {
+      "recipe": "ANtimaron",
+      "recipe_idx": 5,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.2384778325887211,
+      "ratio": 1.4823897343026056
+    },
+    {
+      "recipe": "COnfectio",
+      "recipe_idx": 9,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.3006862802378503,
+      "ratio": 1.3252585579815837
+    },
+    {
+      "recipe": "DIasene",
+      "recipe_idx": 21,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.215200101684234,
+      "ratio": 1.447919966636868
+    },
+    {
+      "recipe": "DIapapaver",
+      "recipe_idx": 34,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.2089030795445592,
+      "ratio": 1.3091084603906695
+    },
+    {
+      "recipe": "CAtolicon",
+      "recipe_idx": 35,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.1867354041358005,
+      "ratio": 1.5597195003749833
+    },
+    {
+      "recipe": "PIlule",
+      "recipe_idx": 67,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.5467768870770229,
+      "ratio": 1.3047846351184065
+    },
+    {
+      "recipe": "EOdem",
+      "recipe_idx": 79,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.4974934342493005,
+      "ratio": 1.3373360092053748
+    },
+    {
+      "recipe": "SYrupus",
+      "recipe_idx": 86,
+      "folio": "f34v",
+      "section": "H",
+      "regime": "REGIME_3",
+      "distance": 1.0583129088092942,
+      "ratio": 1.372479895609702
+    },
+    {
+      "recipe": "TRocissci",
+      "recipe_idx": 103,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.2343864812059666,
+      "ratio": 1.439134941026946
+    },
+    {
+      "recipe": "TRocisci",
+      "recipe_idx": 105,
+      "folio": "f83r",
+      "section": "B",
+      "regime": "REGIME_1",
+      "distance": 1.2160446257002748,
+      "ratio": 1.4424797610736007
+    }
+  ],
+  "section_s_best_matches": [
+    {
+      "folio": "f103r",
+      "regime": "REGIME_1",
+      "tokens": 522,
+      "best_recipe": "STomaticum",
+      "distance": 2.8873321637211946
+    },
+    {
+      "folio": "f103v",
+      "regime": "REGIME_1",
+      "tokens": 449,
+      "best_recipe": "MIcleta",
+      "distance": 2.8576036331602763
+    },
+    {
+      "folio": "f104r",
+      "regime": "REGIME_3",
+      "tokens": 438,
+      "best_recipe": "TRionfilon",
+      "distance": 2.3319732254054855
+    },
+    {
+      "folio": "f104v",
+      "regime": "REGIME_3",
+      "tokens": 458,
+      "best_recipe": "ELectuarium",
+      "distance": 2.5987492555020903
+    },
+    {
+      "folio": "f105r",
+      "regime": "REGIME_4",
+      "tokens": 370,
+      "best_recipe": "STomaticum",
+      "distance": 3.0531267437323977
+    },
+    {
+      "folio": "f105v",
+      "regime": "REGIME_3",
+      "tokens": 390,
+      "best_recipe": "TRionfilon",
+      "distance": 2.431531391628888
+    },
+    {
+      "folio": "f106r",
+      "regime": "REGIME_3",
+      "tokens": 421,
+      "best_recipe": "COnfectio",
+      "distance": 1.4914097478089088
+    },
+    {
+      "folio": "f106v",
+      "regime": "REGIME_3",
+      "tokens": 449,
+      "best_recipe": "YEra",
+      "distance": 1.3749352706518825
+    },
+    {
+      "folio": "f107r",
+      "regime": "REGIME_3",
+      "tokens": 488,
+      "best_recipe": "PIlule",
+      "distance": 1.623058027168201
+    },
+    {
+      "folio": "f107v",
+      "regime": "REGIME_1",
+      "tokens": 455,
+      "best_recipe": "PIlule",
+      "distance": 3.395303121415271
+    },
+    {
+      "folio": "f108r",
+      "regime": "REGIME_1",
+      "tokens": 491,
+      "best_recipe": "STomaticum",
+      "distance": 1.7635182452540297
+    },
+    {
+      "folio": "f108v",
+      "regime": "REGIME_1",
+      "tokens": 570,
+      "best_recipe": "STomaticum",
+      "distance": 4.005333494528402
+    },
+    {
+      "folio": "f111r",
+      "regime": "REGIME_1",
+      "tokens": 614,
+      "best_recipe": "STomaticum",
+      "distance": 2.883322521711813
+    },
+    {
+      "folio": "f111v",
+      "regime": "REGIME_1",
+      "tokens": 561,
+      "best_recipe": "DIagalanga",
+      "distance": 3.045368775729095
+    },
+    {
+      "folio": "f112r",
+      "regime": "REGIME_1",
+      "tokens": 394,
+      "best_recipe": "STomaticum",
+      "distance": 1.825620909846384
+    },
+    {
+      "folio": "f112v",
+      "regime": "REGIME_1",
+      "tokens": 415,
+      "best_recipe": "STomaticum",
+      "distance": 2.5729851964568202
+    },
+    {
+      "folio": "f113r",
+      "regime": "REGIME_3",
+      "tokens": 518,
+      "best_recipe": "UNguentum",
+      "distance": 1.9510756344031308
+    },
+    {
+      "folio": "f113v",
+      "regime": "REGIME_3",
+      "tokens": 479,
+      "best_recipe": "YEralogodion",
+      "distance": 1.665485432862673
+    },
+    {
+      "folio": "f114r",
+      "regime": "REGIME_3",
+      "tokens": 447,
+      "best_recipe": "MIcleta",
+      "distance": 3.3470160849563517
+    },
+    {
+      "folio": "f114v",
+      "regime": "REGIME_3",
+      "tokens": 362,
+      "best_recipe": "STomaticon",
+      "distance": 3.3263872427413137
+    },
+    {
+      "folio": "f115r",
+      "regime": "REGIME_3",
+      "tokens": 444,
+      "best_recipe": "STomaticon",
+      "distance": 2.425382858734416
+    },
+    {
+      "folio": "f115v",
+      "regime": "REGIME_3",
+      "tokens": 399,
+      "best_recipe": "TRionfilon",
+      "distance": 2.351796334489617
+    },
+    {
+      "folio": "f116r",
+      "regime": "REGIME_1",
+      "tokens": 537,
+      "best_recipe": "STomaticum",
+      "distance": 2.3753795191151807
+    }
+  ]
+}

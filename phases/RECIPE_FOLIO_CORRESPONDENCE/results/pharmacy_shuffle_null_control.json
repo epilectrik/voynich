@@ -1,0 +1,63 @@
+{
+  "method": "Shuffle null control on lag-1 autocorr",
+  "n_perm_per_paragraph": 50,
+  "length_filter": "20-50 word paragraphs",
+  "results": [
+    {
+      "label": "Mesue Liber Primus (pharmacy)",
+      "n_para": 1981,
+      "obs_autocorr_mean": 0.002795492609696894,
+      "null_autocorr_mean": 0.004796559102460663,
+      "excess_mean": -0.00200106649276376,
+      "excess_pos_frac": 0.0812720848056537
+    },
+    {
+      "label": "Antidotarium Nicolai (pharmacy)",
+      "n_para": 60,
+      "obs_autocorr_mean": 0.0034894179894179892,
+      "null_autocorr_mean": 0.012506336321878607,
+      "excess_mean": -0.00901691833246062,
+      "excess_pos_frac": 0.08333333333333333
+    },
+    {
+      "label": "Codicillus (alchemy Latin)",
+      "n_para": 88,
+      "obs_autocorr_mean": 0.015244387462727839,
+      "null_autocorr_mean": 0.022911796151014633,
+      "excess_mean": -0.0076674086882867944,
+      "excess_pos_frac": 0.26136363636363635
+    },
+    {
+      "label": "Voynich f104-105 (candidate)",
+      "n_para": 37,
+      "obs_autocorr_mean": 0.03140436421139705,
+      "null_autocorr_mean": 0.03444420858189247,
+      "excess_mean": -0.003039844370495412,
+      "excess_pos_frac": 0.40540540540540543
+    },
+    {
+      "label": "Voynich f107v+f111v (alchemy-like)",
+      "n_para": 15,
+      "obs_autocorr_mean": 0.05351305471192594,
+      "null_autocorr_mean": 0.056927666880808296,
+      "excess_mean": -0.0034146121688823617,
+      "excess_pos_frac": 0.3333333333333333
+    },
+    {
+      "label": "Voynich matched Section S (alchemy)",
+      "n_para": 163,
+      "obs_autocorr_mean": 0.0512273474884398,
+      "null_autocorr_mean": 0.04753299734486679,
+      "excess_mean": 0.0036943501435730652,
+      "excess_pos_frac": 0.5030674846625767
+    },
+    {
+      "label": "Voynich Section B (alchemy)",
+      "n_para": 18,
+      "obs_autocorr_mean": 0.06833160609310218,
+      "null_autocorr_mean": 0.07534221856544009,
+      "excess_mean": -0.007010612472337929,
+      "excess_pos_frac": 0.3888888888888889
+    }
+  ]
+}

@@ -165,6 +165,11 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(
         args.model, torch_dtype=torch.bfloat16, trust_remote_code=True,
     ).to(device)
+    # Enable gradient checkpointing — recomputes activations to save memory
+    model.gradient_checkpointing_enable()
+    model.enable_input_require_grads()  # required for grad checkpointing with PEFT
+    if hasattr(model, 'config'):
+        model.config.use_cache = False  # incompatible with grad ckpt
     print(f"  Base params: {sum(p.numel() for p in model.parameters()):,}")
 
     # Configure LoRA

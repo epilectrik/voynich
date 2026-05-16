@@ -1,0 +1,44 @@
+{
+  "method": "Codicillus 8D control matcher (alchemy in-domain)",
+  "n_segments": 19,
+  "section_attraction": {
+    "H": 12,
+    "S": 7
+  },
+  "regime_attraction": {
+    "REGIME_3": 15,
+    "REGIME_1": 4
+  },
+  "top_folios": [
+    [
+      "f34v",
+      11
+    ],
+    [
+      "f108r",
+      4
+    ],
+    [
+      "f107r",
+      2
+    ],
+    [
+      "f106v",
+      1
+    ],
+    [
+      "f46r",
+      1
+    ]
+  ],
+  "mean_d1": 2.0959520240360185,
+  "mean_ratio": 1.024659725759435,
+  "n_confident_130": 0,
+  "n_unique_top1_folios": 5,
+  "verdict_helper": {
+    "antidotarium_unique_top1": 7,
+    "codicillus_unique_top1": 5,
+    "antidotarium_mean_ratio": 1.1118595490827505,
+    "codicillus_mean_ratio": 1.024659725759435
+  }
+}

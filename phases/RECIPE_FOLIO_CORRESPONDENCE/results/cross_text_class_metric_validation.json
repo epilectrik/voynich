@@ -1,0 +1,68 @@
+{
+  "method": "cross-text class entropy + autocorr metric validation",
+  "results": [
+    {
+      "label": "Mesue Liber Primus (pharmacy)",
+      "n_para": 1981,
+      "avg_para_len": 31.834427057041896,
+      "entropy_mean": 4.806173934696842,
+      "entropy_med": 4.789015477886192,
+      "autocorr_mean": 0.002795492609696894,
+      "autocorr_med": 0.0
+    },
+    {
+      "label": "Antidotarium Nicolai (pharmacy)",
+      "n_para": 60,
+      "avg_para_len": 33.666666666666664,
+      "entropy_mean": 4.691720931075426,
+      "entropy_med": 4.754887502163471,
+      "autocorr_mean": 0.0034894179894179892,
+      "autocorr_med": 0.0
+    },
+    {
+      "label": "Codicillus (alchemy Latin)",
+      "n_para": 88,
+      "avg_para_len": 31.113636363636363,
+      "entropy_mean": 4.414901570236809,
+      "entropy_med": 4.396291529045929,
+      "autocorr_mean": 0.015244387462727839,
+      "autocorr_med": 0.0
+    },
+    {
+      "label": "Voynich f104-105 (candidate)",
+      "n_para": 37,
+      "avg_para_len": 34.810810810810814,
+      "entropy_mean": 4.258731324778822,
+      "entropy_med": 4.250623273270421,
+      "autocorr_mean": 0.03140436421139705,
+      "autocorr_med": 0.024390243902439025
+    },
+    {
+      "label": "Voynich f107v+f111v (alchemy-like)",
+      "n_para": 15,
+      "avg_para_len": 32.8,
+      "entropy_mean": 3.859880929545872,
+      "entropy_med": 3.931716659996124,
+      "autocorr_mean": 0.05351305471192594,
+      "autocorr_med": 0.041666666666666664
+    },
+    {
+      "label": "Voynich matched Section S (alchemy)",
+      "n_para": 163,
+      "avg_para_len": 32.28834355828221,
+      "entropy_mean": 4.03135434548202,
+      "entropy_med": 4.034274333747601,
+      "autocorr_mean": 0.05122734748843982,
+      "autocorr_med": 0.043478260869565216
+    },
+    {
+      "label": "Voynich Section B (alchemy)",
+      "n_para": 18,
+      "avg_para_len": 38.666666666666664,
+      "entropy_mean": 3.78320374839378,
+      "entropy_med": 3.8997141947882312,
+      "autocorr_mean": 0.06833160609310217,
+      "autocorr_med": 0.06521739130434782
+    }
+  ]
+}

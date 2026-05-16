@@ -1,0 +1,186 @@
+{
+  "corpora_surveyed": [
+    "Brunschwig 1512 (Compositis)",
+    "Brunschwig 1500 (Simplicibus)",
+    "Puff von Schrick (English)",
+    "Rupescissa (English)",
+    "Codicillus (English)",
+    "PL Testamentum (English, prints)",
+    "SISMEL Testamentum (Catalan, authoritative)"
+  ],
+  "segment_counts": {
+    "Brunschwig 1512 (Compositis)": 1690,
+    "Brunschwig 1500 (Simplicibus)": 390,
+    "Puff von Schrick (English)": 1,
+    "Rupescissa (English)": 101,
+    "Codicillus (English)": 183,
+    "PL Testamentum (English, prints)": 769,
+    "SISMEL Testamentum (Catalan, authoritative)": 105
+  },
+  "both_x4_x9_segments": [
+    {
+      "corpus": "Brunschwig 1512 (Compositis)",
+      "id": "p164",
+      "page": 164,
+      "x4_count": 2,
+      "x9_count": 1,
+      "x3_count": 1,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "ne mixes aqua vitae with a little Tiriack (theriac), and drinks it for three or four days in a row in the morning on an empty stomach, it cleanses the head of all superf",
+        "ice as much as the aqua vitae -- or else the herbs steeped therein for three or four days, and then the head anointed with it and a little drunk -- the head is wonderful"
+      ],
+      "contexts_x9": [
+        "e scabbiness. And when one applies it to a scabby forehead, it is healed within nine days. And if one mixes in the juice of Benwen Wurtzel (comfrey root), it heals hered"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1512 (Compositis)",
+      "id": "p534",
+      "page": 534,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 0,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        " is, with honey and wax -- and set it in a small warmth to putrefy for three or four days, and the longer it stands the better it is, in Balneo. And the distillation and"
+      ],
+      "contexts_x9": [
+        " the distillation and fermentation, do that many times in dung or Balneo, up to nine times, and then it will be proper.  The second water. Take an old Kappen (capon) or a"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1512 (Compositis)",
+      "id": "p1119",
+      "page": 1119,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 3,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        " and steep it a second time in balneum Mariae for a natural day, that is twenty-four hours, and distill again as before. And then keep it with care, well stoppered. I was"
+      ],
+      "contexts_x9": [
+        "four lot of good and proper distilled spirits that have been distilled eight or nine times per alembicum. And set it in balneum Mariae for three days and nights, with a b"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1512 (Compositis)",
+      "id": "p1246",
+      "page": 1246,
+      "x4_count": 1,
+      "x9_count": 2,
+      "x3_count": 0,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "fili (cloves), each 1 quintin. Aqua vite simplex (simple aqua vitae), distilled four times, half a pfund. Gumi Arabicum (gum arabic), 3 quintin. Croci (saffron), one and "
+      ],
+      "contexts_x9": [
+        "fron), each 5 lot. Bisem (musk), half a quintin. Terpentin (turpentine), washed 9 times with rose water, as much in weight as all the other ingredients together. Rose ",
+        "digest, and distill per alembicum.  The eighth balsam.  Take turpentine, washed 9 times with good wine, 1 pfund. Rose oil, 1 pfund. Skimmed honey, half a pfund. Musci "
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1512 (Compositis)",
+      "id": "p1446",
+      "page": 1446,
+      "x4_count": 1,
+      "x9_count": 2,
+      "x3_count": 0,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "ne 1 quintin saffron and 1 quintin Ziment (cinnamon), both ground, let it stand four days well sealed, stir it once each day. When you wish to use it, let it stand un- s"
+      ],
+      "contexts_x9": [
+        "y best distilled wine that you can obtain. Take a gold coin and heat it glowing nine times and quench it each time in the distilled wine; as you quench it, the water beco",
+        "t strengthens the body. Take distilled wine, one pfund, that has been distilled nine times. Put therein a handful of Schelkraut (celandine), let it lie therein for 6 days"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1500 (Simplicibus)",
+      "id": "1500_p57",
+      "page": 57,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 2,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "nine days, drives away gout in people. H. Burnet saxifrage water drunk three or four days, every morning and evening, brings women their monthly flow. I. Burnet saxifrag"
+      ],
+      "contexts_x9": [
+        "th castoreum (that is, beaver gland secretion), and drunk two lot every day for nine days, drives away gout in people. H. Burnet saxifrage water drunk three or four days"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1500 (Simplicibus)",
+      "id": "1500_p64",
+      "page": 64,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 1,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "tuated. A Brown betony water is good for those who have a cold headache: soak a fourfold linen cloth in it and wring it out a little, and lay it moist around the head, "
+      ],
+      "contexts_x9": [
+        "h time 4 lot, produces a good digestive stomach. AA Betony water drunk for 8 or 9 days every morning on an empty stomach, at midday, and at night, each time 4 or 5 lo"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1500 (Simplicibus)",
+      "id": "1500_p267",
+      "page": 267,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 2,
+      "x7_count": 0,
+      "x8_count": 1,
+      "contexts_x4": [
+        "tens the chest. At the ninety-fourth leaf.  Gentian root water (Gentiana) drunk four times a day, each time four lot, softens the chest. At the one hundred and twenty-fir"
+      ],
+      "contexts_x9": [
+        "oftens the slimy phlegmatic matter of the chest and cleanses it, drunk thus for nine days. At the sixty-second leaf.  Rue water (Ruta graveolens) drunk twice a day, each"
+      ]
+    },
+    {
+      "corpus": "Brunschwig 1500 (Simplicibus)",
+      "id": "1500_p332",
+      "page": 332,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 4,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "eanses the blood. On page VIII.  Borage blossom water, drunk for about three or four days, every day morning and evening each time at three lot, makes good and clean blo"
+      ],
+      "contexts_x9": [
+        "illing it wonderfully. Cloths soaked in it and laid over the affected limbs for nine days, or three times three days. On page CXIII.  Here begins the twentieth treatise "
+      ]
+    },
+    {
+      "corpus": "SISMEL Testamentum (Catalan, authoritative)",
+      "id": "sismel_ch101",
+      "page": 101,
+      "x4_count": 1,
+      "x9_count": 1,
+      "x3_count": 0,
+      "x7_count": 0,
+      "x8_count": 0,
+      "contexts_x4": [
+        "entació reitera en renovellant la bresca a cascuna       segona distillació per quatre vegades aliter broicé e triblé; e aprés ix vegades.          La confectio de¹ la segona"
+      ],
+      "contexts_x9": [
+        "una       segona distillació per quatre vegades aliter broicé e triblé; e aprés ix vegades.          La confectio de¹ la segona aygua: Pren una² capó veel³ o una gallina "
+      ]
+    }
+  ],
+  "n_both_x4_x9": 10
+}
