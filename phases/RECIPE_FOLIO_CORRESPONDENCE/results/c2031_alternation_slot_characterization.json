@@ -1,0 +1,460 @@
+{
+  "method": "Characterize MIDDLE-family at position i+1 in heat-cycle alternation triples",
+  "section_b": {
+    "label": "Section B",
+    "n_paragraphs": 78,
+    "total_tokens": 5931,
+    "n_hc_starts": 818,
+    "n_alternation_triples": 132,
+    "baseline_distribution": {
+      "heat_cycle": 826,
+      "other": 4456,
+      "late_term": 158,
+      "iteration": 87,
+      "ol_or_short": 399,
+      "d_addition": 3,
+      "sh_monitor": 1,
+      "o_dispatch": 1
+    },
+    "after_hc_distribution": {
+      "other": 579,
+      "ol_or_short": 47,
+      "heat_cycle": 163,
+      "late_term": 20,
+      "iteration": 9
+    },
+    "in_alternation_distribution": {
+      "other": 83,
+      "ol_or_short": 11,
+      "heat_cycle": 32,
+      "iteration": 1,
+      "late_term": 5
+    },
+    "sample_alternations": [
+      {
+        "tokens": [
+          "pcheedy",
+          "dolfchedy",
+          "qokeedy"
+        ],
+        "classes": [
+          "ee",
+          "lfc",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "okeedy",
+          "chedy",
+          "olkeedy"
+        ],
+        "classes": [
+          "ee",
+          "e",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "oteedy",
+          "shedy",
+          "qokeed"
+        ],
+        "classes": [
+          "ee",
+          "e",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "qokeed",
+          "or",
+          "okeedy"
+        ],
+        "classes": [
+          "kee",
+          "or",
+          "ee"
+        ],
+        "middle_family": "ol_or_short"
+      },
+      {
+        "tokens": [
+          "okeedy",
+          "ry",
+          "ykeedy"
+        ],
+        "classes": [
+          "ee",
+          "ry",
+          "ee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "ykeedy",
+          "qoeedy",
+          "olkeey"
+        ],
+        "classes": [
+          "ee",
+          "ee",
+          "kee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "olkeey",
+          "sheky",
+          "qokeey"
+        ],
+        "classes": [
+          "kee",
+          "ek",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "okeedy",
+          "qokey",
+          "qokedy"
+        ],
+        "classes": [
+          "ee",
+          "ke",
+          "ke"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "qokedy",
+          "okedy",
+          "qokeedy"
+        ],
+        "classes": [
+          "ke",
+          "e",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "okeedy",
+          "saiin",
+          "okeedy"
+        ],
+        "classes": [
+          "ee",
+          "iin",
+          "ee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "sheedy",
+          "qokeedy",
+          "qoeedy"
+        ],
+        "classes": [
+          "ee",
+          "kee",
+          "ee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "qokeedy",
+          "qoeedy",
+          "okeedy"
+        ],
+        "classes": [
+          "kee",
+          "ee",
+          "ee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "qoeedy",
+          "ol",
+          "cheey"
+        ],
+        "classes": [
+          "ee",
+          "ol",
+          "ee"
+        ],
+        "middle_family": "ol_or_short"
+      },
+      {
+        "tokens": [
+          "qokedy",
+          "dol",
+          "olkeedy"
+        ],
+        "classes": [
+          "ke",
+          "l",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "dokedy",
+          "dol",
+          "lkeey"
+        ],
+        "classes": [
+          "ke",
+          "l",
+          "ee"
+        ],
+        "middle_family": "other"
+      }
+    ]
+  },
+  "matched_s": {
+    "label": "matched-S",
+    "n_paragraphs": 185,
+    "total_tokens": 6755,
+    "n_hc_starts": 858,
+    "n_alternation_triples": 152,
+    "baseline_distribution": {
+      "other": 4813,
+      "heat_cycle": 875,
+      "ol_or_short": 278,
+      "late_term": 444,
+      "iteration": 324,
+      "d_addition": 12,
+      "o_dispatch": 6,
+      "ch_observe": 3
+    },
+    "after_hc_distribution": {
+      "other": 572,
+      "heat_cycle": 196,
+      "ol_or_short": 34,
+      "iteration": 27,
+      "late_term": 27,
+      "d_addition": 2
+    },
+    "in_alternation_distribution": {
+      "other": 86,
+      "late_term": 2,
+      "heat_cycle": 53,
+      "iteration": 7,
+      "ol_or_short": 4
+    },
+    "sample_alternations": [
+      {
+        "tokens": [
+          "qokeeo",
+          "qoky",
+          "qokeeor"
+        ],
+        "classes": [
+          "kee",
+          "k",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "qokeeor",
+          "cheody",
+          "qokeeo"
+        ],
+        "classes": [
+          "kee",
+          "eo",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "ycheedy",
+          "chedar",
+          "olkees"
+        ],
+        "classes": [
+          "ee",
+          "ed",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "cheey",
+          "saiin",
+          "cheedy"
+        ],
+        "classes": [
+          "ee",
+          "iin",
+          "ee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "cheedy",
+          "ykhy",
+          "cheedy"
+        ],
+        "classes": [
+          "ee",
+          "h",
+          "ee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "cheey",
+          "qotchedy",
+          "qokeeody"
+        ],
+        "classes": [
+          "ee",
+          "tch",
+          "kee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "qokeeody",
+          "choar",
+          "cheey"
+        ],
+        "classes": [
+          "kee",
+          "o",
+          "ee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "qokeeor",
+          "ar",
+          "sheey"
+        ],
+        "classes": [
+          "kee",
+          "ar",
+          "ee"
+        ],
+        "middle_family": "late_term"
+      },
+      {
+        "tokens": [
+          "okeey",
+          "lkeeody",
+          "sheedy"
+        ],
+        "classes": [
+          "ee",
+          "eeo",
+          "ee"
+        ],
+        "middle_family": "other"
+      },
+      {
+        "tokens": [
+          "oteey",
+          "qokeedy",
+          "okeey"
+        ],
+        "classes": [
+          "ee",
+          "kee",
+          "ee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "qokeedy",
+          "okeey",
+          "qokeedy"
+        ],
+        "classes": [
+          "kee",
+          "ee",
+          "kee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "olkeedain",
+          "oteey",
+          "sheeol"
+        ],
+        "classes": [
+          "kee",
+          "ee",
+          "ee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "oteey",
+          "sheeol",
+          "qokeedy"
+        ],
+        "classes": [
+          "ee",
+          "ee",
+          "kee"
+        ],
+        "middle_family": "heat_cycle"
+      },
+      {
+        "tokens": [
+          "qokeedy",
+          "qochaiin",
+          "oteey"
+        ],
+        "classes": [
+          "kee",
+          "aii",
+          "ee"
+        ],
+        "middle_family": "iteration"
+      },
+      {
+        "tokens": [
+          "okeedy",
+          "qokeedy",
+          "olkeedy"
+        ],
+        "classes": [
+          "ee",
+          "kee",
+          "kee"
+        ],
+        "middle_family": "heat_cycle"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "method": "Pre-registered e-depth oscillation test for C2031 mechanism interpretation",
+  "n_perm": 200,
+  "pre_registered_criteria": {
+    "sustained_depth": "SS1 lag1>+0.010 AND SS2 lag2>0 AND lag2/lag1<1.0 AND SS3 lag3>0 AND lag3<=lag2",
+    "oscillating_depth": "OD1 lag1<+0.005 AND OD2 lag2>+0.005 AND OD3 (lag2/lag1>1.2 OR lag2>+0.010 if lag1\u22480)"
+  },
+  "results": {
+    "matched-S": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 6570,
+        "obs_rate": 0.441248097412481,
+        "null_rate": 0.41923820395738615,
+        "excess": 0.022009893455094853
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 6385,
+        "obs_rate": 0.43351605324980425,
+        "null_rate": 0.41894988253720516,
+        "excess": 0.014566170712599073
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 6200,
+        "obs_rate": 0.42016129032258065,
+        "null_rate": 0.4192354838709722,
+        "excess": 0.0009258064516084672
+      }
+    },
+    "unmatched-S": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 2175,
+        "obs_rate": 0.4528735632183908,
+        "null_rate": 0.452114942528732,
+        "excess": 0.0007586206896587686
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 2116,
+        "obs_rate": 0.4551039697542533,
+        "null_rate": 0.4511389413988666,
+        "excess": 0.003965028355386711
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 2057,
+        "obs_rate": 0.44871171609139526,
+        "null_rate": 0.45154107924161235,
+        "excess": -0.0028293631502171314
+      }
+    },
+    "Section B": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 5853,
+        "obs_rate": 0.41158380317785753,
+        "null_rate": 0.42784811207926954,
+        "excess": -0.016264308901412044
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 5775,
+        "obs_rate": 0.43792207792207793,
+        "null_rate": 0.4272709956709892,
+        "excess": 0.010651082251088746
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 5697,
+        "obs_rate": 0.4274179392662805,
+        "null_rate": 0.42735474811303226,
+        "excess": 6.319115324822745e-05
+      }
+    }
+  },
+  "ratios": {
+    "matched-S": {
+      "lag1": 0.022009893455094853,
+      "lag2": 0.014566170712599073,
+      "lag3": 0.0009258064516084672,
+      "r21": 0.6618010551626407,
+      "r31": 0.04206319551238725
+    },
+    "unmatched-S": {
+      "lag1": 0.0007586206896587686,
+      "lag2": 0.003965028355386711,
+      "lag3": -0.0028293631502171314,
+      "r21": NaN,
+      "r31": NaN
+    },
+    "Section B": {
+      "lag1": -0.016264308901412044,
+      "lag2": 0.010651082251088746,
+      "lag3": 6.319115324822745e-05,
+      "r21": -0.6548745671058938,
+      "r31": -0.003885265192100556
+    }
+  },
+  "sustain_matched_pass": true,
+  "oscillate_section_b_pass": true,
+  "verdict": "e-DEPTH OSCILLATION MECHANISM CONFIRMED",
+  "summary": "e-depth shows the same sustain-vs-alternate pattern as narrow heat_cycle. Section B paragraphs procedurally MODULATE thermal intensity (e-depth) on period-2 cycle; Section S paragraphs HOLD thermal intensity across runs. C2031's lag-2 spike on heat-cycle MIDDLE is the surface manifestation of underlying e-depth control. The mechanism interpretation is at the e-depth control parameter level, not at the operational-class level. C2032 register as Tier 2 mechanism."
+}

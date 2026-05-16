@@ -1,0 +1,97 @@
+{
+  "method": "Within-folio shuffle null + AX/operational decomposition for C2031 mechanism",
+  "control_1_within_folio": {
+    "matched-S": {
+      "lag1": {
+        "within_paragraph_excess": 0.022830289193311804,
+        "within_folio_excess": 0.032678843226788545
+      },
+      "lag2": {
+        "within_paragraph_excess": 0.014611589663278721,
+        "within_folio_excess": 0.026870790916209964
+      },
+      "lag3": {
+        "within_paragraph_excess": 0.002105645161294037,
+        "within_folio_excess": 0.014053225806451703
+      }
+    },
+    "unmatched-S": {
+      "lag1": {
+        "within_paragraph_excess": 0.0007609195402427831,
+        "within_folio_excess": 0.012850574712643437
+      },
+      "lag2": {
+        "within_paragraph_excess": 0.0035798676748769955,
+        "within_folio_excess": 0.017192816635160677
+      },
+      "lag3": {
+        "within_paragraph_excess": -0.0019202722411039471,
+        "within_folio_excess": 0.010918813806514082
+      }
+    },
+    "Section B": {
+      "lag1": {
+        "within_paragraph_excess": -0.015849991457361174,
+        "within_folio_excess": -0.01113958653681885
+      },
+      "lag2": {
+        "within_paragraph_excess": 0.010357575757588918,
+        "within_folio_excess": 0.015239826839826956
+      },
+      "lag3": {
+        "within_paragraph_excess": 0.00018606284010427756,
+        "within_folio_excess": 0.005100930314200447
+      }
+    }
+  },
+  "control_1_verdict": "SURVIVES \u2014 within-folio shuffle null preserves both signatures",
+  "control_2_decomposition": {
+    "matched-S": {
+      "lag1": {
+        "all": 0.023130898021318708,
+        "operational": -0.002201607185038087,
+        "scaffold": 0.019083101207178883,
+        "n_op_pairs": 4231,
+        "n_sc_pairs": 2154
+      },
+      "lag2": {
+        "all": 0.014763508222402702,
+        "operational": -0.003392239248620379,
+        "scaffold": 0.013550025393765285,
+        "n_op_pairs": 4046,
+        "n_sc_pairs": 1969
+      },
+      "lag3": {
+        "all": 0.0020024193548488257,
+        "operational": 0.005634550634571038,
+        "scaffold": -0.00014854260071313184,
+        "n_op_pairs": 3861,
+        "n_sc_pairs": 1784
+      }
+    },
+    "Section B": {
+      "lag1": {
+        "all": -0.01614471211343396,
+        "operational": -0.025917387127764025,
+        "scaffold": 0.015918684047252506,
+        "n_op_pairs": 4164,
+        "n_sc_pairs": 1611
+      },
+      "lag2": {
+        "all": 0.010822510822524603,
+        "operational": 0.010956926089083729,
+        "scaffold": 0.018326810176204168,
+        "n_op_pairs": 4086,
+        "n_sc_pairs": 1533
+      },
+      "lag3": {
+        "all": -0.00010180796909480066,
+        "operational": -0.0013435628742538206,
+        "scaffold": 0.004656357388392161,
+        "n_op_pairs": 4008,
+        "n_sc_pairs": 1455
+      }
+    }
+  },
+  "control_2_verdict": "INTENSITY-MODULATION \u2014 period-2 oscillation survives in operational-only tokens"
+}

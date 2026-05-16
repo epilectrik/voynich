@@ -4,6 +4,54 @@
 
 ---
 
+## Version 6.66 (2026-05-16) - e-Depth Operational Asymmetry (C2031)
+
+### Summary
+
+Afternoon session building on morning's C2027/C2028/C2029/C2030 work. Tested the C2028 mechanism interpretation through multi-lag autocorrelation + crazy-expert's sharpened e-depth oscillation hypothesis + mandatory controls.
+
+**Result:** C2031 registered — single Tier 2 constraint covering the operational e-depth asymmetry between Section B (period-2 modulation) and matched-S (operational flatness). Mechanism-level structural divergence demonstrated; operational interpretation deferred to Tier 3 SPECULATIVE.
+
+### Sub-tests
+
+- **Sustain-vs-alternation mechanism test on C2028**: pre-registered multi-lag autocorrelation. Both signatures pass 3/3 on narrow heat-cycle MIDDLE class.
+- **Alternation-slot follow-up**: revealed Section B's "alternation" partner is mostly other-e-class tokens, not non-thermal. Original "phase-switching" mechanism interpretation falsified.
+- **e-depth oscillation test**: sharpened mechanism candidate at the underlying control parameter level. Both signatures pass 3/3 with clean lag2/lag1 ratios (0.66 sustain in matched-S; −0.66 oscillation in Section B).
+- **Within-folio shuffle null** (mandatory control per `feedback_within_folio_shuffle_null_first.md`): patterns survive at line-level, not folio-composition shadow.
+- **AX/operational decomposition** (crazy-expert's discriminating control): Section B period-2 strengthens in operational-only subset (−0.026 vs −0.016 mixed); matched-S all-tokens sustain (+0.023) is driven by scaffold tokens, operational tokens are NULL (−0.002).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2031 | NEW (Tier 2): Section B vs matched-S operational e-depth sequential asymmetry. Single constraint subsuming both halves (Section B operational period-2 + matched-S operational flatness) + Voynich-wide scaffold-token clustering as non-discriminating background |
+| context/SPECULATIVE/encoding_modes.md | NEW Tier 3 interpretation: trajectory-encoded (Section B) vs instruction-encoded (matched-S Mercuriorum). Explicit falsification candidates listed (REGIME stratification, Codicillus cross-validation, length stratification) |
+| memory/feedback_mechanism_cycle_procedural_ceiling.md | NEW methodology rule: discrimination cycle has procedural ceiling; operational interpretation requires external grounding to exceed Tier 3 |
+| context/CLAIMS/INDEX.md | C2031 added; total 2025 → 2026; version 6.65 → 6.66 |
+| CLAUDE.md | Version 6.65 → 6.66; constraints → 2026 |
+
+### Key Findings
+
+- **C2031 is a SINGLE-CONSTRAINT asymmetric measurement.** Section B operational tokens carry period-2 e-depth modulation; matched-S operational tokens are flat. Both halves are necessary for the finding — registering separately would double-count evidence; ASYMMETRY is the structural fact.
+- **Asymmetric outcome cannot be produced by framework vocabulary echo.** If "intensity modulation" were just a vocabulary description of any thermal-class behavior, both groups would exhibit it. The matched-S NULL on operational tokens is the discriminating falsification of pure-framework-echo readings.
+- **Scaffold-token e-depth clustering is Voynich-wide background** (+0.016-0.019 in both groups). Possible connection to C539/C1235/C2030 line-final routing phenomena at e-depth level. Not registered as separate constraint; methodology note in C2031 body.
+- **C1995 connection**: C2031 is mechanism-level structural divergence consistent with C1995's three-tier decomposition. Section S e-depth structure lives at near-relative level (C1995 Tier A z=+5.43); Section B e-depth structure lives at cross-token operational level via period-2 modulation. Cross-referenced at metadata level only; explicit synthesis deferred to SPECULATIVE.
+- **Tier 3 interpretation candidate (SPECULATIVE/encoding_modes.md)**: trajectory-encoded vs instruction-encoded operational rhetoric. Three pre-registered falsification candidates for future promotion to Tier 2 (REGIME stratification, Codicillus cross-validation, length stratification).
+
+### Methodology Contributions
+
+- **AX/operational decomposition of autocorrelation tests** (crazy-expert): isolates which subset of tokens carries the sequential structure. Used in C2031 to reveal that matched-S all-tokens sustain was scaffold-driven, while Section B period-2 was operational-driven.
+- **Asymmetry as discriminating fact**: when a discriminating test produces opposite-direction results on two groups (one positive, one NULL), this rules out pure-framework-echo by construction. Vocabulary echo predicts uniform behavior; data-driven asymmetry is the falsification of that null.
+- **Procedural ceiling identification**: the surface→candidate→discriminating-tests→sharpened cycle now runs in hours, but cannot promote operational interpretations to mechanism-tier facts without external grounding. Memory rule `feedback_mechanism_cycle_procedural_ceiling.md` codifies this.
+
+### Origin Note
+
+Continuation of morning session (C2027 audit + C2028/C2029/C2030 registration). User invoked mechanism-test on C2028 after expert consult. Both experts converged on running discriminating controls (within-folio shuffle null + AX/operational decomposition) before mechanism registration. Both controls passed cleanly with sharpened picture: the asymmetry between Section B operational period-2 modulation and matched-S operational flatness is the registerable structural fact; trajectory-vs-instruction encoding interpretation is the Tier 3 candidate.
+
+Third trap-pattern catch in 24 hours: original C2031 candidate framed as "sustain vs phase-switch" via existing operational vocabulary, sharpened to e-depth oscillation via crazy-expert's specific control proposal, refined to operational-vs-scaffold asymmetry via discriminating decomposition. Framework-as-null discipline operating at high velocity.
+
+---
+
 ## Version 6.65 (2026-05-16) - C2027 Audit + Class-Adjacency Mining Refinement
 
 ### Summary

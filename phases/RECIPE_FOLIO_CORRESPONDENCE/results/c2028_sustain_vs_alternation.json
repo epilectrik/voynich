@@ -1,0 +1,108 @@
+{
+  "method": "Multi-lag autocorrelation test for sustain vs alternation operational reading of C2028",
+  "n_perm": 200,
+  "length_filter": "20-200 word paragraphs",
+  "pre_registered_criteria": {
+    "sustainment": "SU1 lag1>+0.020 AND SU2 lag2>0 AND lag2/lag1<1.0 AND SU3 lag3>0 AND lag3<=lag2",
+    "alternation": "AL1 lag1<+0.005 AND AL2 lag2>+0.010 AND AL3 (lag2/lag1>1.2 OR lag2>+0.010 if lag1\u22480)"
+  },
+  "results": {
+    "matched-S": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 858,
+        "obs_rate": 0.10722610722610723,
+        "null_rate": 0.07258741258742822,
+        "excess": 0.03463869463867901
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 836,
+        "obs_rate": 0.08373205741626795,
+        "null_rate": 0.0713397129186747,
+        "excess": 0.012392344497593232
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 809,
+        "obs_rate": 0.07911001236093942,
+        "null_rate": 0.07223114956738126,
+        "excess": 0.006878862793558168
+      }
+    },
+    "unmatched-S": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 218,
+        "obs_rate": 0.10091743119266056,
+        "null_rate": 0.05839449541284674,
+        "excess": 0.04252293577981381
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 209,
+        "obs_rate": 0.06220095693779904,
+        "null_rate": 0.058014354066988016,
+        "excess": 0.004186602870811026
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 203,
+        "obs_rate": 0.07389162561576355,
+        "null_rate": 0.05795566502463271,
+        "excess": 0.01593596059113084
+      }
+    },
+    "Section B": {
+      "lag1": {
+        "lag": 1,
+        "n_pairs": 818,
+        "obs_rate": 0.06234718826405868,
+        "null_rate": 0.05959046454768519,
+        "excess": 0.0027567237163734905
+      },
+      "lag2": {
+        "lag": 2,
+        "n_pairs": 809,
+        "obs_rate": 0.08281829419035847,
+        "null_rate": 0.059987639060576484,
+        "excess": 0.022830655129781986
+      },
+      "lag3": {
+        "lag": 3,
+        "n_pairs": 795,
+        "obs_rate": 0.0729559748427673,
+        "null_rate": 0.060000000000007485,
+        "excess": 0.012955974842759812
+      }
+    }
+  },
+  "ratios": {
+    "matched-S": {
+      "lag1": 0.03463869463867901,
+      "lag2": 0.012392344497593232,
+      "lag3": 0.006878862793558168,
+      "r21": 0.3577601473398314,
+      "r31": 0.19858897297697078
+    },
+    "unmatched-S": {
+      "lag1": 0.04252293577981381,
+      "lag2": 0.004186602870811026,
+      "lag3": 0.01593596059113084,
+      "r21": 0.09845516999318897,
+      "r31": 0.3747615327795841
+    },
+    "Section B": {
+      "lag1": 0.0027567237163734905,
+      "lag2": 0.022830655129781986,
+      "lag3": 0.012955974842759812,
+      "r21": 8.281807492778434,
+      "r31": 4.6997726924204
+    }
+  },
+  "sustain_matched_pass": true,
+  "sustain_unmatched_pass": false,
+  "alternation_pass": true,
+  "verdict": "MECHANISM CONFIRMED \u2014 both signatures present",
+  "summary": "Section S shows sustainment signature (monotonic lag decay); Section B shows alternation signature (period-2 jump at lag-2). C2028 promotes from measurement to mechanism: heat-cycle clustering in Section S encodes operational sustainment recipes; Section B's lack of clustering is phase-switching recipes with period-2 structure."
+}
