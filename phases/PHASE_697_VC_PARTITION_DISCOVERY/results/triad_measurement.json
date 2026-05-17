@@ -1,0 +1,103 @@
+{
+  "method": "Engineered substrate triad measurement on Measuring Polyphony mensural corpus",
+  "corpus": {
+    "n_motets_used": 194,
+    "n_duration_tokens": 27528,
+    "vocab_full": [
+      "BRE",
+      "BRE+",
+      "BRE-",
+      "LON",
+      "LON+",
+      "LON-",
+      "MAX",
+      "MIN",
+      "MIN-",
+      "SEM",
+      "SEM+",
+      "SEM-"
+    ],
+    "vocab_class": [
+      "BRE",
+      "LON",
+      "MAX",
+      "MIN",
+      "SEM"
+    ],
+    "class_freq": {
+      "SEM": 12749,
+      "BRE": 6665,
+      "LON": 4406,
+      "MIN": 3545,
+      "MAX": 163
+    }
+  },
+  "C2015_compression": {
+    "entropy_full_dur_token_bpc": 2.6309972163605333,
+    "entropy_duration_class_bpc": 1.8574387597171387,
+    "voynich_reference_range": [
+      1.0,
+      3.0
+    ],
+    "pass": true,
+    "notes": "Entropy of duration-class symbol; analog of Voynich e-depth/stem-class entropy."
+  },
+  "C2022_markov_plateau": {
+    "ngram_surprise_bpc_by_order": {
+      "0": 1.8574387597171387,
+      "1": 1.5808174307504335,
+      "2": 1.3954218368422506,
+      "3": 1.3345891171901052,
+      "4": 1.2817786851688784
+    },
+    "plateau_order_detected": 2,
+    "voynich_reference_plateau": [
+      2,
+      3
+    ],
+    "pass": true,
+    "notes": "Order at which incremental bpc drop falls below 0.1."
+  },
+  "C2032_chain_excess": {
+    "target_class": "SEM",
+    "lag_results": {
+      "1": {
+        "n_pairs": 12746,
+        "obs_rate": 0.6314137768711753,
+        "null_rate": 0.5886331687264653,
+        "excess": 0.042780608144709964
+      },
+      "2": {
+        "n_pairs": 12697,
+        "obs_rate": 0.596518862723478,
+        "null_rate": 0.5888155059041703,
+        "excess": 0.007703356819307672
+      },
+      "3": {
+        "n_pairs": 12623,
+        "obs_rate": 0.5832211043333597,
+        "null_rate": 0.5890884851847157,
+        "excess": -0.005867380851355963
+      }
+    },
+    "r21": 0.18006655710106426,
+    "r31": -0.13715047788729237,
+    "voynich_reference": {
+      "matched-S r21": 0.66,
+      "Section B r21": -0.65
+    },
+    "nl_reference": {
+      "Codicillus r21": -0.22,
+      "Mesue r21": -0.17
+    },
+    "pass": false,
+    "notes": "Within-motet shuffle null; |r21|>0.4 with substantial lag1."
+  },
+  "summary": {
+    "n_pass": 2,
+    "verdict": "STRUCTURAL CLASS MATCH (>=2/3 axes pass)",
+    "C2015_pass": true,
+    "C2022_pass": true,
+    "C2032_pass": false
+  }
+}

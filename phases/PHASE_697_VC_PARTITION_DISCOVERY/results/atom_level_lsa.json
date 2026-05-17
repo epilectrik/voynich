@@ -1,0 +1,123 @@
+{
+  "method": "Atom-level LSA test (crazy-expert Test A 2026-05-16)",
+  "hypothesis": "Voynich's position inside operational-Latin band reflects lexical thinning at token level; atom-level vectorization should rise into upper operational range",
+  "pre_registered_criterion": "Voynich atom-level adj > 0.366 (operational centroid + 0.02)",
+  "voynich_results": {
+    "token_level": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 1437,
+      "adj_mean": 0.30187649776627334,
+      "rand_mean": 0.16913398970858645,
+      "rand_sd": 0.13326150905419443,
+      "gap": 0.1327425080576869
+    },
+    "head_term_pair": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 167,
+      "adj_mean": 0.5565161423869128,
+      "rand_mean": 0.46215255195272836,
+      "rand_sd": 0.13208526515746238,
+      "gap": 0.09436359043418446
+    },
+    "full_atom_sequence": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 781,
+      "adj_mean": 0.4022526482889131,
+      "rand_mean": 0.2676258700899997,
+      "rand_sd": 0.13098923859395115,
+      "gap": 0.1346267781989134
+    },
+    "currier_A_token": {
+      "n_tokens": 11029,
+      "n_blocks": 368,
+      "vocab_size": 969,
+      "adj_mean": 0.27502333155043684,
+      "rand_mean": 0.1561830637927883,
+      "rand_sd": 0.13707672355912429,
+      "gap": 0.11884026775764855
+    },
+    "currier_A_head_term": {
+      "n_tokens": 11029,
+      "n_blocks": 368,
+      "vocab_size": 181,
+      "adj_mean": 0.489594309221051,
+      "rand_mean": 0.37057719638845765,
+      "rand_sd": 0.1292322480274892,
+      "gap": 0.11901711283259336
+    }
+  },
+  "latin_baseline_results": {
+    "Codicillus": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 1634,
+      "adj_mean": 0.36049838918481664,
+      "rand_mean": 0.17624208094317528,
+      "rand_sd": 0.13516668138545695,
+      "gap": 0.18425630824164135,
+      "category": "op"
+    },
+    "Mesue": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 1691,
+      "adj_mean": 0.24512130033546803,
+      "rand_mean": 0.08815904760116866,
+      "rand_sd": 0.1318160487659529,
+      "gap": 0.15696225273429937,
+      "category": "op"
+    },
+    "PL Testamentum 1566": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 2010,
+      "adj_mean": 0.29318671215879016,
+      "rand_mean": 0.1391785605781418,
+      "rand_sd": 0.11940143950750338,
+      "gap": 0.15400815158064837,
+      "category": "op"
+    },
+    "Caesar": {
+      "n_tokens": 8012,
+      "n_blocks": 267,
+      "vocab_size": 959,
+      "adj_mean": 0.20756101116451262,
+      "rand_mean": 0.11653677287816133,
+      "rand_sd": 0.12669780273624454,
+      "gap": 0.09102423828635128,
+      "category": "nl"
+    },
+    "Piccolomini": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 2155,
+      "adj_mean": 0.24327857748913678,
+      "rand_mean": 0.12420622881723611,
+      "rand_sd": 0.14794108447087678,
+      "gap": 0.11907234867190067,
+      "category": "nl"
+    },
+    "Ebendorfer": {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab_size": 2127,
+      "adj_mean": 0.22480125795026704,
+      "rand_mean": 0.14595916975792345,
+      "rand_sd": 0.1251836675726975,
+      "gap": 0.07884208819234359,
+      "category": "nl"
+    }
+  },
+  "reference_centroids": {
+    "operational_centroid_from_step_1a": 0.346,
+    "nl_centroid_from_step_1a": 0.229,
+    "pass_threshold": 0.366
+  },
+  "pass_head_term": true,
+  "pass_full_atom": true,
+  "pass_overall": true,
+  "verdict": "LEXICAL-THINNING HYPOTHESIS SURVIVES: atom-level Voynich rises above operational centroid"
+}

@@ -1,0 +1,167 @@
+{
+  "method": "Phonotactics V/C-partition search via hill-climbing",
+  "voynich_chars": [
+    "a",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "x",
+    "y"
+  ],
+  "eva_vowels": [
+    "a",
+    "e",
+    "i",
+    "o",
+    "y"
+  ],
+  "n_restarts": 30,
+  "results": {
+    "Latin: Mesue Grabadin": {
+      "target_n_tokens": 271921,
+      "target_vowels": "aeiouy",
+      "eva_baseline_js": 0.39788233476081003,
+      "optimal_js": 0.2566428694256214,
+      "improvement_bits": 0.1412394653351886,
+      "optimal_voynich_vowels": [
+        "d",
+        "f",
+        "g",
+        "h",
+        "i",
+        "m",
+        "o",
+        "r",
+        "t"
+      ],
+      "n_voynich_vowels": 9,
+      "all_restart_finals_min": 0.2566428694256214,
+      "all_restart_finals_mean": 0.3021871647286076,
+      "all_restart_finals_max": 0.39265048707392936
+    },
+    "Latin: Codicillus": {
+      "target_n_tokens": 28171,
+      "target_vowels": "aeiouy",
+      "eva_baseline_js": 0.4344241681954073,
+      "optimal_js": 0.2798355511547352,
+      "improvement_bits": 0.15458861704067212,
+      "optimal_voynich_vowels": [
+        "d",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "m",
+        "o",
+        "r"
+      ],
+      "n_voynich_vowels": 9,
+      "all_restart_finals_min": 0.2798355511547352,
+      "all_restart_finals_mean": 0.34249192480788226,
+      "all_restart_finals_max": 0.4521680736435234
+    },
+    "Latin: PL Testamentum": {
+      "target_n_tokens": 111795,
+      "target_vowels": "aeiouy",
+      "eva_baseline_js": 0.44899358989923444,
+      "optimal_js": 0.308290258753401,
+      "improvement_bits": 0.14070333114583344,
+      "optimal_voynich_vowels": [
+        "d",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "m",
+        "o",
+        "r"
+      ],
+      "n_voynich_vowels": 9,
+      "all_restart_finals_min": 0.308290258753401,
+      "all_restart_finals_mean": 0.3615971768840732,
+      "all_restart_finals_max": 0.47370922145005756
+    },
+    "Italian: Dante Inferno": {
+      "target_n_tokens": 89353,
+      "target_vowels": "aeiou",
+      "eva_baseline_js": 0.5456467974900447,
+      "optimal_js": 0.25592645520320056,
+      "improvement_bits": 0.2897203422868442,
+      "optimal_voynich_vowels": [
+        "a",
+        "g",
+        "h",
+        "n",
+        "o",
+        "r",
+        "y"
+      ],
+      "n_voynich_vowels": 7,
+      "all_restart_finals_min": 0.25592645520320056,
+      "all_restart_finals_mean": 0.3002676344057013,
+      "all_restart_finals_max": 0.4516934874502202
+    },
+    "German: Goethe Faust": {
+      "target_n_tokens": 30740,
+      "target_vowels": "aeiouy",
+      "eva_baseline_js": 0.5866954936668529,
+      "optimal_js": 0.2967710428147158,
+      "improvement_bits": 0.28992445085213714,
+      "optimal_voynich_vowels": [
+        "d",
+        "g",
+        "h",
+        "i",
+        "k",
+        "m",
+        "o",
+        "x"
+      ],
+      "n_voynich_vowels": 8,
+      "all_restart_finals_min": 0.2967710428147158,
+      "all_restart_finals_mean": 0.3322046819343518,
+      "all_restart_finals_max": 0.48801701091782135
+    },
+    "German: Tichtel diary": {
+      "target_n_tokens": 22684,
+      "target_vowels": "aeiouy",
+      "eva_baseline_js": 0.43849615175257917,
+      "optimal_js": 0.25972416745035315,
+      "improvement_bits": 0.17877198430222602,
+      "optimal_voynich_vowels": [
+        "a",
+        "d",
+        "f",
+        "g",
+        "h",
+        "m",
+        "n",
+        "o",
+        "p"
+      ],
+      "n_voynich_vowels": 9,
+      "all_restart_finals_min": 0.25972416745035315,
+      "all_restart_finals_mean": 0.34065977374572004,
+      "all_restart_finals_max": 0.4859909554657877
+    }
+  },
+  "overall_min_js": 0.25592645520320056,
+  "best_target": "Italian: Dante Inferno",
+  "verdict": "PARTIAL PASS Reading B: optimal V/C assignment gives JS=0.2559 (0.20-0.30). NL-like but not strongly matched."
+}

@@ -1,0 +1,346 @@
+{
+  "method": "Cross-corpus V/C ceiling + bootstrap stability",
+  "step_1_cross_corpus": {
+    "Cicero -> Caesar (Latin sanity)": {
+      "baseline_js": 0.11042493708826441,
+      "optimal_js": 0.11042493708826441,
+      "improvement": 0.0,
+      "optimal_source_vowels": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ],
+      "n_optimal_vowels": 5,
+      "source_chars_searched": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "x"
+      ]
+    },
+    "Dante Inferno -> Dante Paradiso (Italian sanity)": {
+      "baseline_js": 0.0052085699426569375,
+      "optimal_js": 0.0052085699426569375,
+      "improvement": 0.0,
+      "optimal_source_vowels": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ],
+      "n_optimal_vowels": 5,
+      "source_chars_searched": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "Cicero -> Dante Inferno (Latin->Italian)": {
+      "baseline_js": 0.3189907504094386,
+      "optimal_js": 0.3189907504094386,
+      "improvement": 0.0,
+      "optimal_source_vowels": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u"
+      ],
+      "n_optimal_vowels": 5,
+      "source_chars_searched": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "x"
+      ]
+    },
+    "Cicero -> Goethe (Latin->German)": {
+      "baseline_js": 0.3873609515492803,
+      "optimal_js": 0.30819026612838485,
+      "improvement": 0.07917068542089545,
+      "optimal_source_vowels": [
+        "e",
+        "g",
+        "h",
+        "i",
+        "k",
+        "o",
+        "u"
+      ],
+      "n_optimal_vowels": 7,
+      "source_chars_searched": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "x"
+      ]
+    },
+    "Dante -> Goethe (Italian->German)": {
+      "baseline_js": 0.48542842432727906,
+      "optimal_js": 0.32965983761330775,
+      "improvement": 0.1557685867139713,
+      "optimal_source_vowels": [
+        "b",
+        "h",
+        "i",
+        "o",
+        "p",
+        "t",
+        "u",
+        "v",
+        "z"
+      ],
+      "n_optimal_vowels": 9,
+      "source_chars_searched": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "Caesar -> Tichtel (Latin->medieval German)": {
+      "baseline_js": 0.17523114975460694,
+      "optimal_js": 0.17523114975460694,
+      "improvement": 0.0,
+      "optimal_source_vowels": [
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
+        "y"
+      ],
+      "n_optimal_vowels": 6,
+      "source_chars_searched": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "x",
+        "y"
+      ]
+    }
+  },
+  "step_2_voynich_bootstrap": {
+    "iterations": [
+      {
+        "iter": 0,
+        "optimal_js": 0.25674031253532226,
+        "optimal_vowels": [
+          "a",
+          "g",
+          "h",
+          "n",
+          "o",
+          "r",
+          "y"
+        ]
+      },
+      {
+        "iter": 1,
+        "optimal_js": 0.2576261805829329,
+        "optimal_vowels": [
+          "a",
+          "g",
+          "h",
+          "n",
+          "o",
+          "r",
+          "y"
+        ]
+      },
+      {
+        "iter": 2,
+        "optimal_js": 0.25727981342882855,
+        "optimal_vowels": [
+          "a",
+          "g",
+          "h",
+          "n",
+          "o",
+          "r",
+          "y"
+        ]
+      },
+      {
+        "iter": 3,
+        "optimal_js": 0.2560410259729427,
+        "optimal_vowels": [
+          "a",
+          "g",
+          "h",
+          "n",
+          "o",
+          "r",
+          "y"
+        ]
+      },
+      {
+        "iter": 4,
+        "optimal_js": 0.25491659681221374,
+        "optimal_vowels": [
+          "a",
+          "g",
+          "h",
+          "n",
+          "o",
+          "r",
+          "y"
+        ]
+      }
+    ],
+    "char_appearance_counts": {
+      "a": 5,
+      "g": 5,
+      "h": 5,
+      "n": 5,
+      "o": 5,
+      "r": 5,
+      "y": 5
+    },
+    "consistent_core": [
+      "a",
+      "g",
+      "h",
+      "n",
+      "o",
+      "r",
+      "y"
+    ],
+    "original_consistent_core": [
+      "g",
+      "h",
+      "o"
+    ],
+    "overlap": [
+      "g",
+      "h",
+      "o"
+    ]
+  },
+  "voynich_reference_optimal_js": 0.256,
+  "verdicts": {
+    "sanity": "FAIL sanity: Cicero->Caesar at JS=0.1104 > 0.05 (metric is noisy)",
+    "cross_nl_ceiling": "FAIL Reading B (overfitting confirmed): Cross-NL ceiling JS=0.3190 >= 0.20; Voynich's 0.256 is at ceiling of any cross-language permutation search.",
+    "bootstrap": "Bootstrap stable core present: ['a', 'g', 'h', 'n', 'o', 'r', 'y']. The {g,h,o} pattern from the original search survived bootstrap resampling: ['g', 'h', 'o']"
+  }
+}

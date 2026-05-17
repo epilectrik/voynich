@@ -1,0 +1,136 @@
+{
+  "method": "Comparison-text LSA: Voynich vs loaded Latin corpora at L&D block-coherence axis",
+  "parameters": {
+    "block_size": 30,
+    "lsa_latent_dims": 50,
+    "tfidf_min_df": 2,
+    "random_pairs_for_null": 1000
+  },
+  "results_per_corpus": [
+    {
+      "name": "Voynich (all H+P)",
+      "n_tokens": 33036,
+      "n_blocks": 1101,
+      "vocab_size": 2216,
+      "lsa_dim": 50,
+      "adj_mean": 0.3579958562215455,
+      "adj_sd": 0.15996834412125405,
+      "rand_mean": 0.16161167943550322,
+      "rand_sd": 0.13542036654190745,
+      "adj_minus_random_gap": 0.19638417678604228,
+      "z_adjacent_vs_random": 1.4501819910911913
+    },
+    {
+      "name": "Voynich Currier B",
+      "n_tokens": 21610,
+      "n_blocks": 720,
+      "vocab_size": 1530,
+      "lsa_dim": 50,
+      "adj_mean": 0.3040464995050585,
+      "adj_sd": 0.14990342030568976,
+      "rand_mean": 0.1657271359012157,
+      "rand_sd": 0.12705713733757798,
+      "adj_minus_random_gap": 0.1383193636038428,
+      "z_adjacent_vs_random": 1.0886390682354368
+    },
+    {
+      "name": "Voynich Currier A",
+      "n_tokens": 11029,
+      "n_blocks": 368,
+      "vocab_size": 969,
+      "lsa_dim": 50,
+      "adj_mean": 0.27502333155043684,
+      "adj_sd": 0.15860825144729848,
+      "rand_mean": 0.14709007394937465,
+      "rand_sd": 0.13047777066054414,
+      "adj_minus_random_gap": 0.1279332576010622,
+      "z_adjacent_vs_random": 0.9804984937541442
+    },
+    {
+      "name": "Codicillus (Latin alchemy)",
+      "n_tokens": 29679,
+      "n_blocks": 989,
+      "vocab_size": 2358,
+      "lsa_dim": 50,
+      "adj_mean": 0.4426783668497158,
+      "adj_sd": 0.1861879654352042,
+      "rand_mean": 0.16705030767417056,
+      "rand_sd": 0.15038027290330186,
+      "adj_minus_random_gap": 0.2756280591755452,
+      "z_adjacent_vs_random": 1.832873779613239
+    },
+    {
+      "name": "Mesue Grabadin (Latin pharmacy)",
+      "n_tokens": 294752,
+      "n_blocks": 9825,
+      "vocab_size": 17375,
+      "lsa_dim": 50,
+      "adj_mean": 0.25760865833256674,
+      "adj_sd": 0.18237010214407523,
+      "rand_mean": 0.1461008275041068,
+      "rand_sd": 0.1471764335134346,
+      "adj_minus_random_gap": 0.11150783082845994,
+      "z_adjacent_vs_random": 0.7576473227847396
+    },
+    {
+      "name": "Brunschwig 1512 (Latin distillation)",
+      "n_tokens": 398010,
+      "n_blocks": 13267,
+      "vocab_size": 12602,
+      "lsa_dim": 50,
+      "adj_mean": 0.41989955572359045,
+      "adj_sd": 0.18573852777059208,
+      "rand_mean": 0.21874441209803286,
+      "rand_sd": 0.14929676501956285,
+      "adj_minus_random_gap": 0.2011551436255576,
+      "z_adjacent_vs_random": 1.3473509864677882
+    },
+    {
+      "name": "SISMEL Testamentum (Latin alchemy)",
+      "n_tokens": 309110,
+      "n_blocks": 10304,
+      "vocab_size": 16698,
+      "lsa_dim": 50,
+      "adj_mean": 0.4610632412648555,
+      "adj_sd": 0.21269768656075763,
+      "rand_mean": 0.17062417113543496,
+      "rand_sd": 0.1748515494148416,
+      "adj_minus_random_gap": 0.2904390701294205,
+      "z_adjacent_vs_random": 1.661060889087939
+    },
+    {
+      "name": "PL Testamentum 1566",
+      "n_tokens": 113774,
+      "n_blocks": 3792,
+      "vocab_size": 7014,
+      "lsa_dim": 50,
+      "adj_mean": 0.34787831030521527,
+      "adj_sd": 0.1780901212576516,
+      "rand_mean": 0.19121330007935036,
+      "rand_sd": 0.13229358658169635,
+      "adj_minus_random_gap": 0.1566650102258649,
+      "z_adjacent_vs_random": 1.1842222610626576
+    },
+    {
+      "name": "Antidotarium Nicolai (Latin pharmacy)",
+      "n_tokens": 18069,
+      "n_blocks": 602,
+      "vocab_size": 1442,
+      "lsa_dim": 50,
+      "adj_mean": 0.30363503928462265,
+      "adj_sd": 0.2050142231877033,
+      "rand_mean": 0.14615787200967598,
+      "rand_sd": 0.13800967074492912,
+      "adj_minus_random_gap": 0.15747716727494668,
+      "z_adjacent_vs_random": 1.141058930326684
+    }
+  ],
+  "latin_centroid": {
+    "n_latin_corpora": 6,
+    "centroid_adj_mean": 0.37212719529342775,
+    "sd_adj_mean": 0.08193041641249996,
+    "centroid_gap": 0.19881204687663248,
+    "sd_gap": 0.07128628528400326
+  },
+  "verdict": "VOYNICH CURRIER B IS AMBIGUOUS (total_z=1.19, 1.0-2.0)"
+}

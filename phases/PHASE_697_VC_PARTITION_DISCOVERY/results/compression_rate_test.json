@@ -1,0 +1,236 @@
+{
+  "method": "Differential token-compression rate test (crazy-expert pitch 2026-05-16)",
+  "metric": "exact-string adjacent-token repetition rate, qok+ch family",
+  "pre_registered_criteria": "{'matched-S mean >= 0.12', 'Latin arbitrary-partition gap < 0.05 (no framework-echo)', 'Gap (S-B) >= +0.05 with z >= 2.58 (p<0.01)', 'Within-paragraph shuffle null: majority of matched-S folios z > 2', 'matched-B mean <= 0.07'}",
+  "results": {
+    "matched_B": {
+      "n_folios": 14,
+      "mean_rep_rate": 0.01570019364005735,
+      "per_folio": {
+        "f75r": {
+          "rate": 0.03875968992248062,
+          "n_rep": 5,
+          "n_pairs": 129
+        },
+        "f76v": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 104
+        },
+        "f77r": {
+          "rate": 0.036036036036036036,
+          "n_rep": 4,
+          "n_pairs": 111
+        },
+        "f77v": {
+          "rate": 0.01818181818181818,
+          "n_rep": 2,
+          "n_pairs": 110
+        },
+        "f78v": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 56
+        },
+        "f79r": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 89
+        },
+        "f79v": {
+          "rate": 0.03529411764705882,
+          "n_rep": 3,
+          "n_pairs": 85
+        },
+        "f80r": {
+          "rate": 0.015384615384615385,
+          "n_rep": 2,
+          "n_pairs": 130
+        },
+        "f81v": {
+          "rate": 0.018518518518518517,
+          "n_rep": 1,
+          "n_pairs": 54
+        },
+        "f82r": {
+          "rate": 0.010309278350515464,
+          "n_rep": 1,
+          "n_pairs": 97
+        },
+        "f82v": {
+          "rate": 0.009708737864077669,
+          "n_rep": 1,
+          "n_pairs": 103
+        },
+        "f83r": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 99
+        },
+        "f84r": {
+          "rate": 0.024096385542168676,
+          "n_rep": 2,
+          "n_pairs": 83
+        },
+        "f84v": {
+          "rate": 0.013513513513513514,
+          "n_rep": 1,
+          "n_pairs": 74
+        }
+      }
+    },
+    "matched_S": {
+      "n_folios": 19,
+      "mean_rep_rate": 0.012275712596588535,
+      "per_folio": {
+        "f103r": {
+          "rate": 0.034482758620689655,
+          "n_rep": 5,
+          "n_pairs": 145
+        },
+        "f103v": {
+          "rate": 0.02040816326530612,
+          "n_rep": 2,
+          "n_pairs": 98
+        },
+        "f105v": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 45
+        },
+        "f106r": {
+          "rate": 0.009615384615384616,
+          "n_rep": 1,
+          "n_pairs": 104
+        },
+        "f106v": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 101
+        },
+        "f107r": {
+          "rate": 0.008928571428571428,
+          "n_rep": 1,
+          "n_pairs": 112
+        },
+        "f108r": {
+          "rate": 0.034722222222222224,
+          "n_rep": 5,
+          "n_pairs": 144
+        },
+        "f108v": {
+          "rate": 0.045714285714285714,
+          "n_rep": 8,
+          "n_pairs": 175
+        },
+        "f111r": {
+          "rate": 0.017241379310344827,
+          "n_rep": 3,
+          "n_pairs": 174
+        },
+        "f111v": {
+          "rate": 0.005376344086021506,
+          "n_rep": 1,
+          "n_pairs": 186
+        },
+        "f112r": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 80
+        },
+        "f112v": {
+          "rate": 0.00847457627118644,
+          "n_rep": 1,
+          "n_pairs": 118
+        },
+        "f113r": {
+          "rate": 0.013888888888888888,
+          "n_rep": 2,
+          "n_pairs": 144
+        },
+        "f113v": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 83
+        },
+        "f114r": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 107
+        },
+        "f114v": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 95
+        },
+        "f115r": {
+          "rate": 0.013333333333333334,
+          "n_rep": 2,
+          "n_pairs": 150
+        },
+        "f115v": {
+          "rate": 0.021052631578947368,
+          "n_rep": 2,
+          "n_pairs": 95
+        },
+        "f116r": {
+          "rate": 0.0,
+          "n_rep": 0,
+          "n_pairs": 78
+        }
+      }
+    },
+    "gap_S_minus_B": -0.0034244810434688137,
+    "gap_z_score": -0.7052939176356612,
+    "shuffle_null": {
+      "matched_S_folios_z_above_2": 2,
+      "matched_S_total": 19,
+      "matched_S_mean_z": 0.30859582743535546,
+      "folio_z_scores": {
+        "f103r": 1.5638758029550408,
+        "f103v": 0.8718455847637276,
+        "f105v": -0.17497225370438216,
+        "f106r": 0.2610018581184209,
+        "f106v": -0.9642095947867436,
+        "f107r": -0.005215849428132099,
+        "f108r": 1.8375908289770506,
+        "f108v": 2.6125185165684113,
+        "f111r": 0.8123179353480842,
+        "f111v": -1.1992382290695782,
+        "f112r": -1.2174735776690717,
+        "f112v": 0.18857519978824025,
+        "f113r": 1.32237233092145,
+        "f113v": -0.9389979698606007,
+        "f114r": -0.5451887603217597,
+        "f114v": -0.46851023031746614,
+        "f115r": 0.8690678222512277,
+        "f115v": 2.227640715280608,
+        "f116r": -1.189679408542774
+      }
+    },
+    "Codicillus": {
+      "overall": [
+        0.011473737888832228,
+        45,
+        3922
+      ],
+      "arbitrary_partition_mean_gap": 0.0038531881823092528,
+      "arbitrary_partition_max_gap": 0.011173712023026541
+    },
+    "Mesue": {
+      "overall": [
+        0.00016388964763725759,
+        3,
+        18305
+      ],
+      "arbitrary_partition_mean_gap": null
+    }
+  },
+  "pass_matched_S": false,
+  "pass_matched_B": true,
+  "pass_gap": false,
+  "pass_shuffle": false,
+  "pass_latin_baseline": false,
+  "pass_overall": false,
+  "verdict": "DIFFERENTIAL-COMPRESSION-RATE FALSIFIED: matched-S mean 0.012 < 0.12; Gap -0.003 (z=-0.7052939176356612) not >= +0.05 at p<0.01; shuffle null: only 2/19 matched-S folios z>2; Latin arbitrary-partition gap mean 0.0038531881823092528 suggests artifact"
+}

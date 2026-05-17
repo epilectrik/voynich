@@ -1,0 +1,67 @@
+{
+  "method": "Double-entry accounting hypothesis test (crazy-expert proposal 2026-05-16)",
+  "atom_mapping": {
+    "POSITIVE (debit-flavored)": [
+      "a",
+      "c",
+      "h",
+      "k",
+      "m",
+      "p",
+      "r",
+      "s",
+      "t"
+    ],
+    "NEGATIVE (credit-flavored)": [
+      "e",
+      "i",
+      "n",
+      "y"
+    ],
+    "NEUTRAL excluded": [
+      "d",
+      "f",
+      "l",
+      "o",
+      "q"
+    ]
+  },
+  "pre_registered_criteria": {
+    "Section B mean balance ratio": "< 0.15",
+    "matched-S mean balance ratio": "> 0.30",
+    "within-folio shuffle null on B": "p < 0.01",
+    "anti-framework-echo": "Codicillus AND Mesue mean balance >= 0.15"
+  },
+  "results": {
+    "section_B": {
+      "n_paragraphs": 81,
+      "mean_balance_ratio": 0.11116920169911501,
+      "shuffle_null_mean": 0.11335336599540005,
+      "shuffle_null_p_le_obs": 0.24
+    },
+    "matched_S": {
+      "n_paragraphs": 215,
+      "mean_balance_ratio": 0.15213719862797417,
+      "shuffle_null_mean": 0.14003774290635826,
+      "shuffle_null_p_ge_obs": 0.0
+    },
+    "unmatched_S": {
+      "n_paragraphs": 68,
+      "mean_balance_ratio": 0.1610183992751977
+    },
+    "Codicillus (Latin alchemy)": {
+      "n_paragraphs": 403,
+      "mean_balance_ratio": 0.2167829691184787
+    },
+    "Mesue (Latin pharmacy)": {
+      "n_paragraphs": 5,
+      "mean_balance_ratio": 0.25717083065368807
+    }
+  },
+  "pass_section_B": true,
+  "pass_matched_S": false,
+  "pass_shuffle_B": false,
+  "pass_latin_anti_echo": true,
+  "pass_overall": false,
+  "verdict": "DOUBLE-ENTRY HYPOTHESIS FALSIFIED: matched-S balance 0.152 not > 0.30; within-folio shuffle null p=0.2400 not < 0.01"
+}

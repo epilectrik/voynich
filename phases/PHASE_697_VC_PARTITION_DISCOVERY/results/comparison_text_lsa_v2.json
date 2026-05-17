@@ -1,0 +1,183 @@
+{
+  "method": "Comparison-text LSA v2 with operational Latin + NL Latin baselines",
+  "block_size": 30,
+  "results": [
+    {
+      "name": "Voynich (all H+P)",
+      "category": "voynich",
+      "n_tokens": 33036,
+      "n_blocks": 1101,
+      "adj_mean": 0.3579958562215455,
+      "rand_mean": 0.16161167943550322,
+      "rand_sd": 0.13542036654190745,
+      "adj_minus_random_gap": 0.19638417678604228,
+      "z_adj_vs_random": 1.4501819910911913
+    },
+    {
+      "name": "Voynich Currier B",
+      "category": "voynich",
+      "n_tokens": 21610,
+      "n_blocks": 720,
+      "adj_mean": 0.3040464995050585,
+      "rand_mean": 0.1657271359012157,
+      "rand_sd": 0.12705713733757798,
+      "adj_minus_random_gap": 0.1383193636038428,
+      "z_adj_vs_random": 1.0886390682354368
+    },
+    {
+      "name": "Voynich Currier A",
+      "category": "voynich",
+      "n_tokens": 11029,
+      "n_blocks": 368,
+      "adj_mean": 0.27502333155043684,
+      "rand_mean": 0.14709007394937465,
+      "rand_sd": 0.13047777066054414,
+      "adj_minus_random_gap": 0.1279332576010622,
+      "z_adj_vs_random": 0.9804984937541442
+    },
+    {
+      "name": "Codicillus (Latin alchemy)",
+      "category": "operational_latin",
+      "n_tokens": 28171,
+      "n_blocks": 939,
+      "adj_mean": 0.4149377204476751,
+      "rand_mean": 0.17478168380602785,
+      "rand_sd": 0.15026770881044657,
+      "adj_minus_random_gap": 0.24015603664164722,
+      "z_adj_vs_random": 1.5981879177021938
+    },
+    {
+      "name": "Mesue Grabadin (Latin pharmacy)",
+      "category": "operational_latin",
+      "n_tokens": 271921,
+      "n_blocks": 9064,
+      "adj_mean": 0.23081110325655146,
+      "rand_mean": 0.12053204112260262,
+      "rand_sd": 0.14063155145347336,
+      "adj_minus_random_gap": 0.11027906213394885,
+      "z_adj_vs_random": 0.784170131056498
+    },
+    {
+      "name": "Brunschwig 1512 (Latin distillation)",
+      "category": "operational_latin",
+      "n_tokens": 396107,
+      "n_blocks": 13204,
+      "adj_mean": 0.41656448936624935,
+      "rand_mean": 0.2128438073997293,
+      "rand_sd": 0.1412730093184531,
+      "adj_minus_random_gap": 0.20372068196652005,
+      "z_adj_vs_random": 1.4420354103684405
+    },
+    {
+      "name": "SISMEL Testamentum (Latin alchemy)",
+      "category": "operational_latin",
+      "n_tokens": 287572,
+      "n_blocks": 9586,
+      "adj_mean": 0.45684186366936175,
+      "rand_mean": 0.17199539051862314,
+      "rand_sd": 0.176157002232578,
+      "adj_minus_random_gap": 0.28484647315073863,
+      "z_adj_vs_random": 1.6170034091217063
+    },
+    {
+      "name": "PL Testamentum 1566",
+      "category": "operational_latin",
+      "n_tokens": 111786,
+      "n_blocks": 3726,
+      "adj_mean": 0.3397554416221597,
+      "rand_mean": 0.1902963324472665,
+      "rand_sd": 0.12966805598689746,
+      "adj_minus_random_gap": 0.14945910917489322,
+      "z_adj_vs_random": 1.1526285948946098
+    },
+    {
+      "name": "Antidotarium Nicolai (Latin pharmacy)",
+      "category": "operational_latin",
+      "n_tokens": 17896,
+      "n_blocks": 597,
+      "adj_mean": 0.30226371395778195,
+      "rand_mean": 0.1637173376715552,
+      "rand_sd": 0.14752047494181528,
+      "adj_minus_random_gap": 0.13854637628622676,
+      "z_adj_vs_random": 0.9391670975901613
+    },
+    {
+      "name": "Cicero Catilinarian 1 (NL Latin oratory)",
+      "category": "nl_latin",
+      "n_tokens": 3287,
+      "n_blocks": 110,
+      "adj_mean": 0.17449048528351832,
+      "rand_mean": 0.10034353932363484,
+      "rand_sd": 0.11009812120538721,
+      "adj_minus_random_gap": 0.07414694595988348,
+      "z_adj_vs_random": 0.6734624092409617
+    },
+    {
+      "name": "Caesar Bellum Gallicum 1 (NL Latin history)",
+      "category": "nl_latin",
+      "n_tokens": 8012,
+      "n_blocks": 267,
+      "adj_mean": 0.20756101116451262,
+      "rand_mean": 0.11596522089082771,
+      "rand_sd": 0.12340321373957899,
+      "adj_minus_random_gap": 0.0915957902736849,
+      "z_adj_vs_random": 0.7422480136293848
+    },
+    {
+      "name": "Piccolomini correspondence (NL Latin)",
+      "category": "nl_latin",
+      "n_tokens": 209563,
+      "n_blocks": 6985,
+      "adj_mean": 0.3061412298399181,
+      "rand_mean": 0.15287155835490177,
+      "rand_sd": 0.14693415373792282,
+      "adj_minus_random_gap": 0.15326967148501633,
+      "z_adj_vs_random": 1.0431180742252326
+    },
+    {
+      "name": "Ebendorfer Chronica (NL Latin chronicle)",
+      "category": "nl_latin",
+      "n_tokens": 125689,
+      "n_blocks": 4190,
+      "adj_mean": 0.2892755369426926,
+      "rand_mean": 0.18578555413150752,
+      "rand_sd": 0.13293563666162236,
+      "adj_minus_random_gap": 0.10348998281118507,
+      "z_adj_vs_random": 0.7784969133191201
+    },
+    {
+      "name": "Celtis correspondence (NL Latin)",
+      "category": "nl_latin",
+      "n_tokens": 2783,
+      "n_blocks": 93,
+      "adj_mean": 0.1797205056910464,
+      "rand_mean": 0.10243954489090419,
+      "rand_sd": 0.10333152667945046,
+      "adj_minus_random_gap": 0.0772809608001422,
+      "z_adj_vs_random": 0.7478933417859882
+    }
+  ],
+  "category_centroids": {
+    "voynich": {
+      "n": 3,
+      "adj_mean": 0.312355229092347,
+      "adj_sd": 0.04210565523882089,
+      "gap_mean": 0.15421226599698243,
+      "gap_sd": 0.03688929850479087
+    },
+    "operational_latin": {
+      "n": 6,
+      "adj_mean": 0.36019572205329653,
+      "adj_sd": 0.08488686967149373,
+      "gap_mean": 0.18783462322566247,
+      "gap_sd": 0.06681028754813734
+    },
+    "nl_latin": {
+      "n": 5,
+      "adj_mean": 0.2314377537843376,
+      "adj_sd": 0.06207572487220827,
+      "gap_mean": 0.0999566702659824,
+      "gap_sd": 0.03203511502751484
+    }
+  }
+}

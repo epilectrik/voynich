@@ -1,0 +1,202 @@
+{
+  "method": "A-prime vs B-prime discriminator (3 tests)",
+  "results": {
+    "test_1_positional_clustering": {
+      "char_position_data": {
+        "a": {
+          "INITIAL_pct": 15.313332561102746,
+          "MIDDLE_pct": 84.47816518012279,
+          "FINAL_pct": 0.20850225877447007,
+          "total": 8633,
+          "max_pct": 84.47816518012279
+        },
+        "g": {
+          "INITIAL_pct": 12.0,
+          "MIDDLE_pct": 8.0,
+          "FINAL_pct": 80.0,
+          "total": 25,
+          "max_pct": 80.0
+        },
+        "h": {
+          "INITIAL_pct": 0.010584250635055038,
+          "MIDDLE_pct": 99.86240474174429,
+          "FINAL_pct": 0.12701100762066045,
+          "total": 9448,
+          "max_pct": 99.86240474174429
+        },
+        "n": {
+          "INITIAL_pct": 0.0,
+          "MIDDLE_pct": 0.6834910620399579,
+          "FINAL_pct": 99.31650893796004,
+          "total": 3804,
+          "max_pct": 99.31650893796004
+        },
+        "o": {
+          "INITIAL_pct": 37.81178270849273,
+          "MIDDLE_pct": 59.166029074215764,
+          "FINAL_pct": 3.0221882172915073,
+          "total": 13070,
+          "max_pct": 59.166029074215764
+        },
+        "r": {
+          "INITIAL_pct": 7.857503789792824,
+          "MIDDLE_pct": 17.15512885295604,
+          "FINAL_pct": 74.98736735725113,
+          "total": 3958,
+          "max_pct": 74.98736735725113
+        },
+        "y": {
+          "INITIAL_pct": 7.842771982116244,
+          "MIDDLE_pct": 1.7231743666169896,
+          "FINAL_pct": 90.43405365126677,
+          "total": 10736,
+          "max_pct": 90.43405365126677
+        }
+      },
+      "avg_max_bucket_pct": 84.03493270608011,
+      "verdict": "PASS A-prime: avg max-bucket 84.0% >= 60% (strong positional segregation)",
+      "pass_aprime": true,
+      "pass_bprime": false
+    },
+    "test_2_within_token_scramble": {
+      "reference_js": 0.2559264552031979,
+      "reference_vowels": [
+        "a",
+        "g",
+        "h",
+        "n",
+        "o",
+        "r",
+        "y"
+      ],
+      "reference_recovers_core": true,
+      "scramble_trials": [
+        {
+          "trial": 0,
+          "best_js": 0.43798143045399573,
+          "best_vowels": [
+            "a",
+            "c",
+            "g",
+            "n",
+            "o",
+            "q",
+            "s",
+            "y"
+          ],
+          "recovers_core": false
+        },
+        {
+          "trial": 1,
+          "best_js": 0.4314736529739879,
+          "best_vowels": [
+            "a",
+            "c",
+            "g",
+            "n",
+            "o",
+            "q",
+            "s",
+            "y"
+          ],
+          "recovers_core": false
+        },
+        {
+          "trial": 2,
+          "best_js": 0.4347110415064168,
+          "best_vowels": [
+            "a",
+            "g",
+            "h",
+            "k",
+            "n",
+            "o",
+            "x",
+            "y"
+          ],
+          "recovers_core": false
+        },
+        {
+          "trial": 3,
+          "best_js": 0.43110943280270514,
+          "best_vowels": [
+            "a",
+            "c",
+            "n",
+            "o",
+            "p",
+            "s",
+            "x",
+            "y"
+          ],
+          "recovers_core": false
+        },
+        {
+          "trial": 4,
+          "best_js": 0.4343888504986694,
+          "best_vowels": [
+            "a",
+            "c",
+            "f",
+            "g",
+            "n",
+            "o",
+            "p",
+            "s",
+            "y"
+          ],
+          "recovers_core": false
+        }
+      ],
+      "n_recoveries": 0,
+      "n_unique_partitions": 4,
+      "verdict": "PASS A-prime: scrambling destroys partition recovery; partition is positional/grammatical"
+    },
+    "test_3_currier_a_vs_b": {
+      "currier_A_vowels": [
+        "a",
+        "g",
+        "h",
+        "k",
+        "l",
+        "n",
+        "r",
+        "t",
+        "y"
+      ],
+      "currier_A_js": 0.23412586621002007,
+      "currier_B_vowels": [
+        "a",
+        "g",
+        "h",
+        "n",
+        "o",
+        "r",
+        "y"
+      ],
+      "currier_B_js": 0.2559264552031979,
+      "overlap": [
+        "a",
+        "g",
+        "h",
+        "n",
+        "r",
+        "y"
+      ],
+      "only_in_A": [
+        "k",
+        "l",
+        "t"
+      ],
+      "only_in_B": [
+        "o"
+      ],
+      "a_matches_expected": false,
+      "b_matches_expected": true,
+      "verdict": "PARTIAL: only one Currier dialect matches; overlap = ['a', 'g', 'h', 'n', 'r', 'y']"
+    }
+  },
+  "aprime_votes": 2,
+  "bprime_votes": 0,
+  "overall_verdict": "READING A-PRIME confirmed (2/3 discriminating tests pass)"
+}

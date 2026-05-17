@@ -1,0 +1,100 @@
+{
+  "method": "LSA replication across 4 filter conditions to identify which matches Layfield & Davis",
+  "layfield_davis_reported": {
+    "overall_adjacent": 0.483,
+    "page_break": 0.421,
+    "section_break": 0.323,
+    "A_to_B_or_B_to_A": 0.206,
+    "B_to_B": 0.332
+  },
+  "results_by_condition": {
+    "A_strict": {
+      "description": "H-track only, P-placement only, no uncertain",
+      "n_tokens": 33036,
+      "n_blocks": 1105,
+      "overall_adjacent": 0.3480688326687617,
+      "within_folio": 0.36310844941776177,
+      "page_break": 0.30551470677507997,
+      "section_break": 0.21997739160222282,
+      "language_transition": 0.1379355636168068,
+      "A_to_B_or_B_to_A": 0.14511469266031743,
+      "B_to_B": 0.3396022091201355,
+      "A_to_A": 0.3815393218189109,
+      "random_pair_mean": 0.1615170755194529,
+      "random_pair_sd": 0.1399929930345204,
+      "z_adjacent_vs_random": 1.3325792463291906,
+      "n_pairs_by_btype": {
+        "within_folio": 902,
+        "section_break": 15,
+        "page_break": 165,
+        "language_transition": 22
+      }
+    },
+    "B_alltranscribers_P": {
+      "description": "ALL transcribers, P-placement only",
+      "n_tokens": 106781,
+      "n_blocks": 3558,
+      "overall_adjacent": 0.4538833508848747,
+      "within_folio": 0.4710489675262887,
+      "page_break": 0.18240376739415098,
+      "section_break": 0.1512772008916981,
+      "language_transition": 0.07854606424495027,
+      "A_to_B_or_B_to_A": 0.09967001993380713,
+      "B_to_B": 0.46821891972779284,
+      "A_to_A": 0.4348492532058403,
+      "random_pair_mean": 0.11925391163648821,
+      "random_pair_sd": 0.1420710174758113,
+      "z_adjacent_vs_random": 2.3553673732600653,
+      "n_pairs_by_btype": {
+        "within_folio": 3355,
+        "section_break": 15,
+        "page_break": 165,
+        "language_transition": 22
+      }
+    },
+    "C_alltranscribers_all": {
+      "description": "ALL transcribers, ALL placements",
+      "n_tokens": 120768,
+      "n_blocks": 4022,
+      "overall_adjacent": 0.4571680139329095,
+      "within_folio": 0.47484013723735297,
+      "page_break": 0.1693328536292298,
+      "section_break": 0.13781741027202263,
+      "language_transition": 0.07580180751273423,
+      "A_to_B_or_B_to_A": 0.09666677887518206,
+      "B_to_B": 0.47049631060026886,
+      "A_to_A": 0.4393364392652253,
+      "random_pair_mean": 0.11107416264894197,
+      "random_pair_sd": 0.1346825456082729,
+      "z_adjacent_vs_random": 2.569700845205206,
+      "n_pairs_by_btype": {
+        "within_folio": 3797,
+        "section_break": 21,
+        "page_break": 182,
+        "language_transition": 21
+      }
+    },
+    "D_most_permissive": {
+      "description": "ALL transcribers, ALL placements, INCLUDE uncertain",
+      "n_tokens": 122160,
+      "n_blocks": 4071,
+      "overall_adjacent": 0.4605129924974842,
+      "within_folio": 0.47844444159839533,
+      "page_break": 0.16432502239789332,
+      "section_break": 0.12541880778383016,
+      "language_transition": 0.07855276368827044,
+      "A_to_B_or_B_to_A": 0.09254199204429175,
+      "B_to_B": 0.4754963453323328,
+      "A_to_A": 0.44104745404647383,
+      "random_pair_mean": 0.11843909214348601,
+      "random_pair_sd": 0.13568124944170964,
+      "z_adjacent_vs_random": 2.521158242288721,
+      "n_pairs_by_btype": {
+        "within_folio": 3846,
+        "section_break": 21,
+        "page_break": 182,
+        "language_transition": 21
+      }
+    }
+  }
+}

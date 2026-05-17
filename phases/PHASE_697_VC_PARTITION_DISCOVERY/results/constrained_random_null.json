@@ -1,0 +1,47 @@
+{
+  "method": "Constrained-random null controls for mensural triad r21 metric",
+  "target_class": "SEM",
+  "real_mensural": {
+    "lag1_excess": 0.04275862609121295,
+    "lag2_excess": 0.007718401222383209,
+    "r21": 0.18051097352656445,
+    "n_pairs_lag1": 12746
+  },
+  "iid_marginal": {
+    "lag1_excess": -0.003050430175872587,
+    "lag2_excess": 0.007682223530111498,
+    "r21": -2.5184066138848658,
+    "n_pairs_lag1": 12566
+  },
+  "period_2_synthetic": {
+    "lag1_excess": -0.4977025605475946,
+    "lag2_excess": 0.5017938097163083,
+    "r21": -1.008220269480254,
+    "n_pairs_lag1": 13725
+  },
+  "talea_fixed_12": {
+    "lag1_excess": 0.2732684863078465,
+    "lag2_excess": 0.12726038941241813,
+    "r21": 0.4656972749834566,
+    "n_pairs_lag1": 15968
+  },
+  "talea_varied_per_motet": {
+    "lag1_excess": -0.046429577316636106,
+    "lag2_excess": -0.021782575886711453,
+    "r21": 0.4691530086126064,
+    "n_pairs_lag1": 12373
+  },
+  "voynich_reference": {
+    "matched-S r21": 0.66,
+    "Section B r21": -0.65
+  },
+  "nl_reference": {
+    "Codicillus": -0.22,
+    "Mesue": -0.17
+  },
+  "interpretation": {
+    "iid_should_be": "~0 (no structure baseline)",
+    "period_2_should_be": "strongly positive (high r21 by construction)",
+    "talea_should_be": "depends \u2014 fixed 12-talea creates lag-12 periodicity, may or may not propagate to r21"
+  }
+}

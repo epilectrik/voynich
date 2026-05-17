@@ -1,0 +1,23 @@
+{
+  "method": "Within-folio shuffle null on HEAD+TERM atom-level LSA finding",
+  "pre_registered_criterion": "real adj - within-folio-shuffled adj >= +0.10",
+  "real": {
+    "n_blocks": 667,
+    "vocab": 171,
+    "adj_mean": 0.5579823507969827,
+    "rand_mean": 0.4619151497319781,
+    "gap": 0.09606720106500455
+  },
+  "shuffle_replicates": [
+    0.5631645656702526,
+    0.5663438589183979,
+    0.5642218280479457,
+    0.5672853397820368,
+    0.5694041571383484
+  ],
+  "shuffle_mean": 0.5660839499113962,
+  "shuffle_sd": 0.0022147220378585337,
+  "real_minus_shuffle": -0.008101599114413549,
+  "pass_shuffle": false,
+  "verdict": "WITHIN-FOLIO SHUFFLE NULL FAILS: real-shuffled gap -0.008 < 0.10 (marginal HEAD+TERM distribution is the signal)"
+}

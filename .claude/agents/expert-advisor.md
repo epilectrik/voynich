@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2027 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2028 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2032.
+the highest ID present is C2033.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2027 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2028 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2027 validated constraints are present as canonical one-line claims with tier
+2028 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-16 11:30
-**Version:** FROZEN STATE (2027 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-17 15:50
+**Version:** FROZEN STATE (2028 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (12 feedback rules)
+6. Session Methodology Notes (14 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -2271,6 +2271,7 @@ C2029	**Iteration Markers (aii / daiin Family) Do NOT Chain at Adjacency.** Acro
 C2030	**Voynich-Wide Late-Term MIDDLE-Class Adjacency Clustering Within-Line.** LATE-class MIDDLE families (ar, ary, aly, al — the closure/output-terminal markers per C539/C562) chain adjacently at +0.036 within-line excess in matched-S folios (within-line null isolates positional artifact from genuine adjacency). Voynich-wide pattern across all tested groups: matched-S +0.038, unmatched-S +0.017, Section B +0.041 (at length-filtered comparison). Survives stricter within-line shuffle null (preserves line membership and position): late_term within-line excess +0.0365 vs within-paragraph excess +0.0391, delta only +0.0026. Clustering is genuine token-sequence adjacency within lines, not purely line-boundary positional artifact. **Scope clarification:** the within-line shuffle controls for within-line position randomization but does not control for cross-line adjacency at line boundaries (last token of line N to first token of line N+1 remain canonically paired). The +0.036 within-line excess therefore reflects within-line adjacency clustering specifically. Cross-references C1235 (line-final routing) and C539 (LATE prefix class line-final concentration) as related but distinct phenomena — those describe line-final concentration; C2030 describes within-line adjacency clustering of closure-class MIDDLEs. Predicts (NOT tested): closure protocols may have internal bigram grammar (e.g., directional `or → al` vs `al → or` asymmetries, forbidden LATE-LATE pairs parallel to C109's class-level forbidden transitions).	2	late_term, closure_protocol, MIDDLE_class_adjacency, within_line_null, Voynich_wide, C1235, C539, C562
 C2031	**Section B vs matched-S Operational e-Depth Sequential Asymmetry.** Per-paragraph e-depth (number of consecutive `e` MOD atoms in MIDDLE per C1394, the registered thermal microstate control parameter per C1225) lag-N autocorrelation analysis, length-controlled (20-200 word paragraphs), with within-folio shuffle null per `feedback_within_folio_shuffle_null_first.md`. Two complementary measurements form one structural divergence: **(a) Section B operational tokens show period-2 e-depth modulation** (lag-1 excess = −0.026 in operational-only subset, stronger than mixed-token −0.016; lag-2 = +0.011 positive jump, lag-3 = +0.000 back to null; lag2/lag1 ratio = −0.66, textbook period-2 sign-reversal pattern). **(b) matched-S operational tokens show NULL sequential e-depth structure** (lag-1 excess = −0.002, indistinguishable from null; lag-2 = −0.003, lag-3 = +0.006). Within-folio shuffle null: matched-S all-tokens lag-1 +0.022→+0.033 (sustained or stronger), Section B all-tokens lag-1 −0.016→−0.011 (oscillation preserved); signal is line-level structure, not folio-composition shadow. AX/operational decomposition: matched-S all-tokens sustain (+0.023) is driven by SCAFFOLD tokens (+0.019), not operational tokens (NULL); Section B operational tokens carry the period-2 signature (−0.026 stronger than mixed −0.016). **Scaffold-token e-depth clustering at +0.016-0.019 is Voynich-wide background** (same in both groups; non-discriminating; likely connected to C539/C1235/C2030 line-final routing phenomena, NOT registered as separate finding here). Subsumes C2027's narrow-heat-cycle surface measurement (lag-2/lag-1 ratio 8.28 in Section B vs 0.36 in matched-S) — that pattern is the surface manifestation of underlying e-depth control parameter divergence at the operational-token level. **Pre-registered binary criteria locked before running:** SUSTAINED-DEPTH (SS1 lag1>+0.010, SS2 lag2>0 AND lag2/lag1<1.0, SS3 lag3>0 AND lag3<=lag2) — matched-S 3/3 PASS in all-tokens but FAIL in operational-only (operational FLAT, not sustained). OSCILLATING-DEPTH (OD1 lag1<+0.005, OD2 lag2>+0.005, OD3 lag2/lag1>1.2 or lag2>+0.010 if lag1≈0) — Section B 3/3 PASS in all-tokens AND in operational-only (oscillation strengthens under operational restriction). The asymmetric outcome (Section B operational has structure; matched-S operational has none) cannot be produced by framework vocabulary echo, which would predict uniform behavior. Measurement-only Tier 2 registration; operational interpretation candidate ("trajectory-encoded vs instruction-encoded") deferred to SPECULATIVE/encoding_modes.md at Tier 3. **2026-05-16 update:** Codicillus cross-validation FAILED for the trajectory-encoded-alchemy cross-language framing (see C2032); structural divergence is Voynich-internal, mechanism unidentified; SPECULATIVE/encoding_modes.md marked half-falsified accordingly.	2	e_depth, sequential_structure, operational_vs_scaffold_decomposition, within_folio_shuffle_null, period_2_oscillation, sustained_depth, Section_B, matched_S, asymmetry, mechanism_measurement, C1394, C1225, C1197, C1995, C2027_retracted_predecessor, C2028, C2030
 C2032	**Voynich Sequential Stem-Class Structure is Absent from Natural-Language Latin Reference Corpora (Engineered Substrate Triad, Third Axis).** Cross-language test of the C2031 sequential e-depth asymmetry. Per-paragraph stem-class lag-N autocorrelation (Latin stem-class = first 3 chars after case-ending stripping; methodology consistent with prior cross-corpus tests) applied at length-matched 20-50 word paragraphs to Codicillus Latin and Mesue Liber Primus Latin. Pre-registered binary criteria for the encoding-modes Tier 3 interpretation: Codicillus should show period-2 sign-reversal matching Voynich Section B's lag2/lag1 = −0.66; Mesue should show monotonic decay matching matched-S's +0.66. **Result: NEITHER Latin corpus shows the predicted pattern.** Codicillus alchemy Latin: lag-1 = −0.006, lag-2 = −0.000, lag-3 = +0.005, lag2/lag1 = +0.05 (near-zero, natural-language baseline). Mesue pharmacy Latin: lag-1 = −0.002, lag-2 = +0.000, lag-3 = +0.001, lag2/lag1 = −0.17 (near-zero). Voynich reference values: Section B −0.66, matched-S +0.66 — order-of-magnitude separation from Latin baselines with NO overlap. **Cross-language structural corroboration FAILS for the trajectory-encoded-alchemy interpretation;** what survives is the demonstration that the Voynich-internal section-divergent sequential e-depth structure (C2031) is ABSENT from genre-matched natural-language Latin reference corpora. The asymmetric pattern is Voynich-specific structural engineering, not a generic alchemy/pharmacy linguistic property. Forms the **third axis of the engineered substrate triad** alongside C2015 (Voynich ~2× more compressible than NL at char level) and C2022 (anti-NL char distribution + Markov plateau at higher-order). Three orthogonal measurement axes — information density (C2015), surface statistics (C2022), sequential grammar (C2032) — independently establish that Voynich is structurally distinct from genre-matched natural-language baseline at multiple decomposition levels. SPECULATIVE synthesis: see `context/SPECULATIVE/engineered_substrate_triad.md`. Methodology vindicates `feedback_mechanism_cycle_procedural_ceiling.md` (2026-05-16): the encoding-modes interpretation was a Tier 3 candidate that survived all Voynich-internal discriminating controls but failed external grounding — exactly the trap pattern the ceiling memory note predicts at this project stage.	2	engineered_substrate, Voynich_vs_NL, sequential_grammar, cross_language_test, encoding_modes_falsification, structural_distinctness, C2015, C2022, C2031, Codicillus, Mesue_Liber_Primus, SPECULATIVE_engineered_substrate_triad
+C2033	**Voynich Currier B V/C-Partition Projection Flexibility — Uniquely Tunable vs Natural-Language Latin Baselines.** Voynich Currier B's character-shape V/C-partition optimization (hill-climbing search across 2^20 vowel/consonant partitions to minimize Jensen-Shannon divergence between Voynich CV-pattern distribution and target NL CV-pattern distribution, target=Italian Dante Inferno, 20K-token cap, 15-30 random restarts) produces hill-climb improvement of **+0.286 bits** from EVA-vowel baseline (JS=0.544 → optimal JS=0.257) to bootstrap-stable optimal partition {a, g, h, n, o, r, y} (5/5 identical resamples, JS spread 0.0027). **This improvement is 2.4× the maximum NL Latin improvement** observed across 8 natural-language Latin corpora (Codicillus +0.001, Mesue +0.026, PL Testamentum +0.001, Brunschwig +0.120, SISMEL +0.006, Caesar +0.009, Piccolomini +0.009, Ebendorfer +0.000; max = Brunschwig +0.120; mean = +0.020). Most NL Latin corpora improve essentially zero (≤0.01) — their known vowels {a,e,i,o,u,y} are already near-optimal for projection to Italian, leaving no headroom for hill-climbing. Voynich's EVA partition is far from optimal (baseline 0.544 vs operational Latin 0.235-0.460), giving substantial headroom that hill-climbing exploits. **Substrate finding is FLEXIBILITY, not CLOSENESS:** Voynich's final optimal JS (0.257) is NOT uniquely low — SISMEL Testamentum Latin baseline (0.229) and Codicillus baseline (0.270) match or beat Voynich's hill-climbed optimum. Multiple discriminating tests confirm the partition is positional-grammatical (mean max-position-bucket 84% across 7 chars, within-token character scrambling destroys recovery 0/5 trials, within-folio shuffle null destroys recovery 0/3 trials), NOT identity-phonological (NL-vowel partition gives JS=0.735, much worse than core's 0.250; NL-operational sanity null shows NL Latin corpora recover NL-vowel-like sets at 66% mean overlap vs Voynich's 43%), and combinatorial-not-frequency (top-7-by-frequency overlaps only 4/7 with core). Atom-system correspondence is PARTIAL: 5/7 partition chars map to slot-grammar atoms (h↔C1487 TRANSPARENT terminal, n↔C1209 terminal, y↔end-marker, a↔HEAD slot, o↔C1502 HEAD arrangement); 9 other positionally-locked Voynich chars (e, i, q, m, k, t, d, f, s) are excluded by the optimization (Control 3 atom-role uniqueness check FAILED in narrow framing — partition is a SUBSET of slot-grammar atoms, target-language-fitted). **Explicit confound disclaimers:** (a) Voynich's smaller character inventory (20 vs Latin's 22-26) may give optimizer mechanical headroom — uncontrolled; (b) Voynich's higher baseline JS gives larger improvement room mechanically — normalized improvement (improvement/baseline) gives Voynich 52.5% vs Brunschwig 26%, still 2× max NL but less dramatic than absolute; (c) N=1 in engineered-grammar column — "engineered grammars are tunable" class claim requires synthetic-corpus or cross-script transfer test (queued PHASE_698). Currier A optimal partition {a, g, h, k, l, n, r, t, y} shares 6/7 chars with Currier B's core (substrate-deep shared partition per C1499 with dialect-specific differences). Pre-registered criteria summary: 8 of 10 binary criteria PASS; 2 caught morning's overclaims (atom-role uniqueness narrowed "rediscovers slot grammar" framing; NL→NL ceiling narrowed "uniquely close to Italian" framing). Three operational overclaim retractions documented in PHASE_697 audit trail. Independently motivated: Layfield & Davis (2026 DHQ) LSA-based methodology adapted with project's H-track + P-placement filtering. **Methodology lesson:** the discipline that killed the closeness framing today is the same discipline that makes the flexibility framing trustworthy — register the measurement, not the operational interpretation. See `feedback_calibrate_thresholds_against_controls.md`.	2	engineered_substrate, Voynich_vs_NL, projection_flexibility, V_C_partition, hill_climb, Layfield_Davis_replication, methodology_bridge, NL_distinct_measurement, audit_trail, three_narrowings, C2015, C2022, C2032, C1394, C1209, C1487, C1499, C1502, C864, project_section_s_source_genre_gap
 
 ---
 
@@ -2278,7 +2279,7 @@ C2032	**Voynich Sequential Stem-Class Structure is Absent from Natural-Language 
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-16
+# Generated: 2026-05-17
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -5193,6 +5194,79 @@ Atom-by-atom token decomposition in cold reads produces word salad like "add mat
 
 ---
 
+## Pre-registered numerical thresholds require empirical calibration against in-distribution controls (2026-05-17)
+
+*When a metric is new (no prior project benchmarks), the threshold for "significant" or "pass" must be calibrated against control distributions (other corpora, scrambled data, null shuffles) BEFORE locking binary pre-registration criteria. Pre-locking thresholds based on intuition produces either false-pass (threshold too lenient) or false-fail (threshold too strict for the metric's actual variance). PHASE_697 demonstrated this: pre-bookkeeping cross-NL ceiling threshold was set at ≤0.10 for "Reading B opens" based on theoretical priors, but actual cross-NL ceiling (Latin→Italian) turned out to be 0.319 — making the original criterion uninformative. When the threshold falls inside the calibration range, the test is uninformative; don't flip verdicts on a falsified threshold; register the calibration failure and re-design the test.*
+
+## The rule
+
+When pre-registering binary criteria for a novel metric, calibrate the threshold against in-distribution controls BEFORE locking the binary criteria. Don't pick thresholds from theoretical intuition — pick them from observed control distributions.
+
+## How it failed in PHASE_697
+
+The V/C-partition cross-NL ceiling test was pre-registered with thresholds based on theoretical priors:
+- **"Reading B opens"** if cross-NL ceiling JS ≤ 0.10
+- **"Reading B fails (overfitting confirmed)"** if cross-NL ceiling JS ≥ 0.20
+
+Both thresholds turned out wrong. Actual cross-NL ceiling values:
+- Cicero → Caesar (same-language sanity): JS = 0.110 (not ≤0.05 as another threshold predicted)
+- Cicero → Dante Inferno (Latin → Italian): JS = 0.319 with NO hill-climb improvement
+- Italian → German: JS = 0.330 under optimal V/C
+
+The "Reading B opens" threshold (≤0.10) was unrealistic — no cross-NL pair achieves that. The "overfitting confirmed" threshold (≥0.20) is satisfied by ALL cross-NL pairs trivially. The metric's actual noise floor was higher than either threshold accounted for.
+
+## What this caused
+
+Initial verdict per pre-registration said "FAIL Reading B (overfitting confirmed)" because Voynich's 0.256 was above the 0.20 threshold. But the real comparison was Voynich's 0.256 vs ACTUAL cross-NL ceiling of 0.319 — Voynich is BELOW the real ceiling. The pre-registered verdict reversed the substantive conclusion.
+
+This was caught only because the test was re-run with proper baselines and the threshold was reconsidered. Without that re-examination, the morning's work could have been falsely shut down by an uncalibrated pre-registration.
+
+## How to apply
+
+**Procedure for novel-metric pre-registration:**
+
+1. **Before locking thresholds**, run the metric on at least 2-3 control distributions:
+   - Same-class baseline (e.g., within-language pairs for cross-language metrics)
+   - Different-class baseline (e.g., cross-language pairs)
+   - Random/shuffled baseline (e.g., scrambled corpus)
+2. **Document observed control values** with explicit ranges
+3. **Set thresholds AT calibrated boundaries**, not at theoretical priors:
+   - "PASS" threshold = best observed control value + margin
+   - "FAIL" threshold = worst observed control value − margin
+4. **Lock thresholds, then run main test.** Verdict is now informative.
+
+**When mid-test you find a threshold was wrong:**
+
+1. Acknowledge calibration failure transparently
+2. Do NOT flip the verdict based on the falsified threshold
+3. Register the calibration failure as a methodological note
+4. Re-design the test with calibrated thresholds
+5. Re-run if substantively necessary
+
+## Why this matters at this project stage
+
+PHASE_697 was a substrate-level finding registered after three narrowings of operational interpretations. The discipline that caught the operational overclaims (cardinality, slot-grammar, Italian-ear) is the same discipline that should catch threshold-calibration errors. The framework-as-null memory note warns against operational interpretations fitting the project's framework too cleanly; this companion note warns against numerical thresholds fitting theoretical priors too cleanly.
+
+The metric's behavior is empirical. Treat the threshold as empirical too.
+
+## Connection to other methodology notes
+
+- `feedback_framework_as_null.md` — operational-interpretation overclaim catching (semantic)
+- `feedback_calibrate_thresholds_against_controls.md` (this note) — numerical-threshold overclaim catching (quantitative)
+- `feedback_within_folio_shuffle_null_first.md` — load-bearing first control for paragraph-level metrics
+- `feedback_three_mechanism_demotion_trifecta_2026_05_16.md` — operational interpretations die at any specificity
+- `feedback_mechanism_cycle_procedural_ceiling.md` — internal mechanism cycle has procedural ceiling
+
+Together these establish the substrate-vs-mechanism distinction and the controls each requires.
+
+## See also
+
+- `phases/PHASE_697_VC_PARTITION_DISCOVERY/INDEX.md` — the audit trail of three threshold-related narrowings
+- C2033 — the surviving narrow Tier 2 measurement after the threshold recalibration
+- `phases/PHASE_697_VC_PARTITION_DISCOVERY/results/vc_ceiling_and_bootstrap.json` — the moment the pre-registered threshold was discovered wrong
+
+---
+
 ## Expert mechanism predictions are pre-registrations, not Tier 3 facts
 
 *When an expert (yours or theirs) makes a directional structural prediction with confidence rating, that's a pre-registered discriminating test, not a load-bearing fact. Run it before treating the mechanism as scaffolding for downstream work. Two cycles documented (2026-05-15 to 2026-05-16): user's f66r-as-glossary overclaim caught by discriminating test; crazy-expert's positional-artifact prediction misfired with 70-30 confidence on late_term clustering, caught by the same discipline.*
@@ -5659,6 +5733,63 @@ The corpus-wide test surfaced two pair-specific outliers (f80r/v rank 2/79, f81r
 
 ---
 
+## Pre-registered criteria must be discriminating, not loose floors — calibration lesson (2026-05-16)
+
+*When pre-registering multi-axis binary criteria for a hypothesis test, every axis must be discriminating against the alternative being tested. Loose floors that "any structured system" passes are framework-echo waiting to happen; literal-verdict pass on those axes provides no evidential weight. Lesson came from the mensural hypothesis test where the literal pre-registration verdict said 2/3 PASS but only one of those three axes (C2032 lag2/lag1) actually discriminated Voynich-substrate from NL-baseline. The other two passes (C2015 entropy in [1.0, 3.0] bpc; C2022 Markov plateau at order 2-3) are satisfied by any moderate-vocabulary structured symbolic system. Future cross-corpus engineered-substrate tests should weight C2032 as load-bearing, with C2015/C2022 serving as exclusion floors only.*
+
+## The lesson
+
+Pre-registration discipline is supposed to prevent post-hoc goalpost-moving. But it can also produce false positives if the registered criteria aren't all discriminating against the alternative being tested.
+
+**Mensural test (2026-05-16):** pre-registered three binary criteria, 2-of-3 pass threshold. Two of the three turned out to be non-discriminating in retrospect:
+
+- C2015: "entropy in [1.0, 3.0] bpc" — any moderate-vocabulary structured symbol system satisfies this. The Latin corpora (Codicillus alchemy, Mesue pharmacy) would also pass. Mensural passed at 1.857.
+- C2022: "Markov plateau at order 2 or 3" — any system with limited vocabulary + bigram/trigram structure satisfies this. Latin would also pass. Mensural passed at 2.
+- C2032: "lag2/lag1 ratio magnitude > 0.4" — the ONLY axis that distinguished Voynich (±0.66) from Latin baselines (−0.17 to −0.22). Mensural failed at +0.18.
+
+Literal verdict: 2/3 PASS. Substantive read: only discriminating axis failed.
+
+## Why: necessary-but-not-sufficient floors masquerade as discriminating tests
+
+C2015 and C2022 are necessary conditions for engineered-substrate-class behavior. Voynich passes them. But they are not sufficient — many systems pass them. Treating them as binary pass/fail criteria with equal weight to C2032 gave them undue evidential influence.
+
+**The fix is at the pre-registration design stage:**
+
+For each candidate criterion, ask:
+- Does the alternative-hypothesis baseline (in this case: natural language Latin) ALSO pass this criterion?
+- If yes → it's a floor, not a discriminator. Use it as an exclusion gate, not a vote.
+
+Only criteria that the alternative-baseline FAILS should count toward the pass-threshold vote.
+
+## How to apply
+
+**For multi-axis cross-corpus tests:**
+
+1. Pre-classify each criterion as DISCRIMINATOR or FLOOR before running.
+2. FLOORs are pass-required-to-proceed gates (if mensural failed entropy entirely, that would be informative; passing it is not).
+3. DISCRIMINATORs are the actual vote. Need ALL discriminators to pass (or pre-registered fraction of discriminators) for a substantive PASS verdict.
+4. If only one axis turns out to be discriminating, that axis alone determines the verdict. "2/3 pass" with one discriminator is not "structural class match."
+
+**For the engineered substrate triad specifically:**
+
+- C2032 (lag2/lag1 ratio) is the load-bearing discriminator. Voynich's ±0.66 vs NL Latin's ±0.2 is order-of-magnitude separation.
+- C2015 and C2022 are necessary floors. They confirm "this corpus has engineered-substrate-class structural sophistication" but don't separate Voynich from NL.
+- Future tests with the triad: gate on C2015/C2022 passing as exclusion criteria, then evaluate verdict purely on C2032.
+
+## Connection to other methodology notes
+
+- `feedback_framework_as_null.md` — the umbrella discipline. This note is a specific instantiation: framework-echo can hide inside pre-registered criteria if those criteria aren't all discriminating.
+- `feedback_operational_story_first_trap.md` — adjacent failure mode (story-first interpretation). This note covers the specific design failure of giving non-discriminating axes equal vote weight.
+- `feedback_three_mechanism_demotion_trifecta_2026_05_16.md` (now quartet) — the mensural test was the fourth entry in the demotion log; this note formalizes WHY the literal verdict was misleading.
+
+## See also
+
+- `phases/MENSURAL_NOTATION_HYPOTHESIS/results/triad_measurement.json` — the test result that triggered this lesson
+- `phases/MENSURAL_NOTATION_HYPOTHESIS/results/constrained_random_null.json` — the methodology validation showing C2032 measurement is sound
+- `project_mensural_hypothesis_falsified.md` — companion project memory
+
+---
+
 ## When a broad test gives mean rho +0.4-0.5, suspect scope conflation
 
 *Recurring pattern across Phase 643, 645→647 — broad tests produce mixed/moderate aggregate signal because they include cases where the effect cannot exist by construction. Pre-classify by what the underlying data could plausibly support BEFORE running aggregate tests. The refined test almost always produces clean signal where the broad test produced noise.*
@@ -5738,13 +5869,13 @@ hits and the genuine nulls are mixing. Separate them.
 
 ---
 
-## Three-mechanism-demotion trifecta (2026-05-16) — operational interpretations at "middle layer" specificity all die within the procedural ceiling
+## Mechanism-demotion quartet (2026-05-16) — operational interpretations at "middle layer" specificity all die within the procedural ceiling [UPDATED from trifecta to quartet 2026-05-16 evening]
 
-*Single session, three mechanism-interpretation candidates, all failed at successively deeper levels of validation (Voynich-internal control → Voynich-internal extended test → cross-language external grounding). Structural measurements survived every cycle. The pattern indicates the project has a stable "operational-specificity death zone" — interpretations at the "encodes X" / "represents Y" level reliably die under discriminating tests, while measurement-level structural facts and substrate-level claims survive. Tighten promotion discipline: Tier 3 → Tier 2 for mechanism claims now requires BOTH Voynich-internal discriminating test pass AND external-corpus validation, not just one.*
+*Single session, four mechanism-interpretation candidates, all failed at successively deeper levels of validation (Voynich-internal control → Voynich-internal extended test → cross-language external grounding → external-corpus discriminating test). Structural measurements survived every cycle. The pattern indicates the project has a stable "operational-specificity death zone" — interpretations at the "encodes X" / "represents Y" level reliably die under discriminating tests, while measurement-level structural facts and substrate-level claims survive. Tighten promotion discipline: Tier 3 → Tier 2 for mechanism claims now requires BOTH Voynich-internal discriminating test pass AND external-corpus validation, not just one.*
 
-## The trifecta
+## The quartet (was trifecta, updated 2026-05-16 evening)
 
-Single session (2026-05-16) produced three mechanism-interpretation candidates, all demoted:
+Single session-day (2026-05-16) produced four mechanism-interpretation candidates, all demoted:
 
 ### Cycle 1 — C2027 retraction (morning)
 
@@ -5769,6 +5900,19 @@ Tier 3 SPECULATIVE candidate registered in `encoding_modes.md`: "Section B alche
 **Failed at:** Codicillus cross-validation (external grounding). Both Latin alchemy (Codicillus) and Latin pharmacy (Mesue) showed near-zero sequential autocorrelation at all lags. The cross-language alchemy/pharmacy structural distinction predicted by the encoding-modes interpretation did NOT replicate. lag2/lag1 ratios: Codicillus +0.05, Mesue −0.17, vs Voynich's ±0.66 — order-of-magnitude separation with no overlap.
 
 **Half-falsified.** Cross-language genre framing dies; Voynich-internal structural divergence (C2031) preserved. **The Voynich-vs-NL distinctness IS the substantive new finding** (registered as C2032, third axis of "engineered substrate triad" alongside C2015 and C2022).
+
+### Cycle 4 — Mensural notation falsification (evening, external-corpus discriminating test)
+
+Crazy-expert proposed: "Voynich tokens are MEASURE-units in a quasi-musical mensural notation, contemporary with the manuscript (Franco of Cologne ~1280, Ars Nova 1320s). Compatible with distillation content per C1971; explains the engineered substrate triad as scheduling rather than content."
+
+Acquired Measuring Polyphony mensural corpus (64 motets, 30,375 notes, MEI format). Ran pre-registered binary triad test:
+- C2015 entropy: 1.857 bpc PASS (loose floor)
+- C2022 Markov plateau: order 2 PASS (loose floor)
+- C2032 lag2/lag1: +0.18 **FAIL** (Voynich = ±0.66; mensural sits in NL Latin range)
+
+Literal verdict: 2/3 PASS. Substantive verdict: only discriminating axis failed. Constrained-random null confirmed methodology floor (period-2 synthetic produces r21 = −1.0, qualitatively Voynich Section B shape — metric works).
+
+**Falsified.** Music was the wrong analogy. Both experts independently retracted with no replacement musical-class hypothesis. The two-signature problem (Section B period-2 vs matched-S sustain) is fatal for any single-mechanism notational interpretation. See `project_mensural_hypothesis_falsified.md` and `feedback_registration_calibration_lesson.md`.
 
 ## What the pattern reveals
 
@@ -5804,13 +5948,16 @@ Either alone is necessary but not sufficient. Today demonstrated that internal d
 
 This note formalizes the three-strike confirmation of the procedural ceiling and proposes tighter promotion discipline for the next phase of the project.
 
-## What the trifecta produced in the end
+## What the quartet produced in the end
 
 - C2027 retraction → C2028 (Section S vs Section B heat-cycle MIDDLE-class divergence)
 - Sustain-vs-phase-switch demoted → C2029 (daiin doesn't chain), C2030 (Voynich-wide late-term clustering), C2031 (e-depth asymmetry mechanism-level measurement)
 - Trajectory-encoded demoted → C2032 (Voynich-vs-NL sequential structural distinctness)
+- Mensural notation falsified → registration-calibration lesson (`feedback_registration_calibration_lesson.md`); mensural corpus now available as additional NL-baseline cross-corpus reference
 
-Four substantive Tier 2 structural measurements registered. Three operational interpretations died. **The discipline produced more measurement-level findings by failing more operational interpretations.** This is the system working at the procedural ceiling.
+Four substantive Tier 2 structural measurements registered. Four operational interpretations died. **The discipline produced more measurement-level findings by failing more operational interpretations.** This is the system working at the procedural ceiling.
+
+The fourth cycle also produced a methodology refinement (the calibration lesson): in multi-axis pre-registered tests, all axes must be DISCRIMINATING against the alternative-hypothesis baseline. Loose floors that any structured system passes are not votes; they are exclusion gates only.
 
 ## See also
 

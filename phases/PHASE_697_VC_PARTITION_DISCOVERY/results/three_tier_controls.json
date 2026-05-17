@@ -1,0 +1,320 @@
+{
+  "method": "Three-tier landscape control sweep (expert-advisor 2026-05-16)",
+  "parameters": {
+    "cap_tokens": 20000,
+    "min_keep": 4000
+  },
+  "step_1a_capped": {
+    "results": [
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.3263273136523858,
+        "rand_mean": 0.1641734392198981,
+        "rand_sd": 0.1279104502985759,
+        "gap": 0.16215387443248772,
+        "name": "Voynich (all H+P)",
+        "category": "voynich"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.3078190855202535,
+        "rand_mean": 0.1610866192053785,
+        "rand_sd": 0.12492891578729828,
+        "gap": 0.146732466314875,
+        "name": "Voynich Currier B",
+        "category": "voynich"
+      },
+      {
+        "n_tokens": 11029,
+        "n_blocks": 368,
+        "adj_mean": 0.27502333155043684,
+        "rand_mean": 0.1561830637927883,
+        "rand_sd": 0.13707672355912429,
+        "gap": 0.11884026775764855,
+        "name": "Voynich Currier A",
+        "category": "voynich"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.36049838918481664,
+        "rand_mean": 0.17624208094317528,
+        "rand_sd": 0.13516668138545695,
+        "gap": 0.18425630824164135,
+        "name": "Codicillus (Latin alchemy)",
+        "category": "operational_latin"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.24512130033546803,
+        "rand_mean": 0.08815904760116866,
+        "rand_sd": 0.1318160487659529,
+        "gap": 0.15696225273429937,
+        "name": "Mesue Grabadin (Latin pharmacy)",
+        "category": "operational_latin"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.5012950132672999,
+        "rand_mean": 0.1655048064926467,
+        "rand_sd": 0.1594080295601778,
+        "gap": 0.33579020677465315,
+        "name": "Brunschwig 1512 (Latin distillation)",
+        "category": "operational_latin"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.3902958441226098,
+        "rand_mean": 0.16304082270564715,
+        "rand_sd": 0.16700249738826548,
+        "gap": 0.22725502141696266,
+        "name": "SISMEL Testamentum (Latin alchemy)",
+        "category": "operational_latin"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.2762435664374151,
+        "rand_mean": 0.1425516683524,
+        "rand_sd": 0.11883966826561107,
+        "gap": 0.1336918980850151,
+        "name": "PL Testamentum 1566",
+        "category": "operational_latin"
+      },
+      {
+        "n_tokens": 17896,
+        "n_blocks": 597,
+        "adj_mean": 0.30226371395778195,
+        "rand_mean": 0.15362112207027076,
+        "rand_sd": 0.1426650030744782,
+        "gap": 0.1486425918875112,
+        "name": "Antidotarium Nicolai (Latin pharmacy)",
+        "category": "operational_latin"
+      },
+      {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "adj_mean": 0.20756101116451262,
+        "rand_mean": 0.11653677287816133,
+        "rand_sd": 0.12669780273624454,
+        "gap": 0.09102423828635128,
+        "name": "Caesar Bellum Gallicum 1 (NL Latin history)",
+        "category": "nl_latin"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.2374283190915169,
+        "rand_mean": 0.1328116202865666,
+        "rand_sd": 0.1401082624867321,
+        "gap": 0.10461669880495031,
+        "name": "Piccolomini correspondence (NL Latin)",
+        "category": "nl_latin"
+      },
+      {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "adj_mean": 0.24094760142677313,
+        "rand_mean": 0.12359659718103563,
+        "rand_sd": 0.1260621280769456,
+        "gap": 0.1173510042457375,
+        "name": "Ebendorfer Chronica (NL Latin chronicle)",
+        "category": "nl_latin"
+      }
+    ],
+    "centroids": {
+      "nl_latin": {
+        "n": 3,
+        "adj_mean": 0.22864564389426753,
+        "adj_sd": 0.01834441713574736,
+        "gap_mean": 0.10433064711234637,
+        "gap_sd": 0.013165713829800696
+      },
+      "voynich": {
+        "n": 3,
+        "adj_mean": 0.30305657690769205,
+        "adj_sd": 0.025981450326970138,
+        "gap_mean": 0.1425755361683371,
+        "gap_sd": 0.021953978727740096
+      },
+      "operational_latin": {
+        "n": 6,
+        "adj_mean": 0.34595297121756524,
+        "adj_sd": 0.09299912661642196,
+        "gap_mean": 0.19776637985668044,
+        "gap_sd": 0.07521481418199953
+      }
+    },
+    "voynich_z_distances": {
+      "nl_latin": {
+        "dz_adj": 4.315942067829587,
+        "dz_gap": 3.220624399913036,
+        "total_z": 5.3851441446052615,
+        "vb_adj": 0.3078190855202535,
+        "centroid_adj": 0.22864564389426753
+      },
+      "operational_latin": {
+        "dz_adj": -0.4100456325207896,
+        "dz_gap": -0.678508803044001,
+        "total_z": 0.7927872454559151,
+        "vb_adj": 0.3078190855202535,
+        "centroid_adj": 0.34595297121756524
+      }
+    },
+    "pass": true
+  },
+  "step_1b_leave_one_out": {
+    "results": [
+      {
+        "dropped": "Caesar Bellum Gallicum 1 (NL Latin history)",
+        "voynich_z_from_NL": 27.86350639952845,
+        "nl_centroid": 0.23918796025914502
+      },
+      {
+        "dropped": "Piccolomini correspondence (NL Latin)",
+        "voynich_z_from_NL": 4.2133795990771326,
+        "nl_centroid": 0.22425430629564286
+      },
+      {
+        "dropped": "Ebendorfer Chronica (NL Latin chronicle)",
+        "voynich_z_from_NL": 6.497716876385781,
+        "nl_centroid": 0.22249466512801475
+      }
+    ],
+    "pass": true
+  },
+  "step_1c_window_size": {
+    "results": {
+      "15": {
+        "centroids": {
+          "nl_latin": {
+            "n": 3,
+            "adj_mean": 0.1702995767294538,
+            "adj_sd": 0.01926378182267039,
+            "gap_mean": 0.07364783325410412,
+            "gap_sd": 0.017749100867282392
+          },
+          "voynich": {
+            "n": 3,
+            "adj_mean": 0.2080991663529277,
+            "adj_sd": 0.018530099869167704,
+            "gap_mean": 0.09611556529612851,
+            "gap_sd": 0.014654131816248629
+          },
+          "operational_latin": {
+            "n": 6,
+            "adj_mean": 0.2591072393474699,
+            "adj_sd": 0.07333852971463756,
+            "gap_mean": 0.14328390857441872,
+            "gap_sd": 0.05643284702235696
+          }
+        },
+        "z_voynich_b": {
+          "nl_latin": {
+            "dz_adj": 1.9129942520151648,
+            "dz_gap": 1.3116351338185874,
+            "total_z": 2.319468415932919,
+            "vb_adj": 0.20715108062829649,
+            "centroid_adj": 0.1702995767294538
+          },
+          "operational_latin": {
+            "dz_adj": -0.7084428733618792,
+            "dz_gap": -0.8214317277087286,
+            "total_z": 1.0847310210848506,
+            "vb_adj": 0.20715108062829649,
+            "centroid_adj": 0.2591072393474699
+          }
+        }
+      },
+      "30": {
+        "centroids": {
+          "nl_latin": {
+            "n": 3,
+            "adj_mean": 0.22864564389426753,
+            "adj_sd": 0.01834441713574736,
+            "gap_mean": 0.10433064711234637,
+            "gap_sd": 0.013165713829800696
+          },
+          "voynich": {
+            "n": 3,
+            "adj_mean": 0.30305657690769205,
+            "adj_sd": 0.025981450326970138,
+            "gap_mean": 0.1425755361683371,
+            "gap_sd": 0.021953978727740096
+          },
+          "operational_latin": {
+            "n": 6,
+            "adj_mean": 0.34595297121756524,
+            "adj_sd": 0.09299912661642196,
+            "gap_mean": 0.19776637985668044,
+            "gap_sd": 0.07521481418199953
+          }
+        },
+        "z_voynich_b": {
+          "nl_latin": {
+            "dz_adj": 4.315942067829587,
+            "dz_gap": 3.220624399913036,
+            "total_z": 5.3851441446052615,
+            "vb_adj": 0.3078190855202535,
+            "centroid_adj": 0.22864564389426753
+          },
+          "operational_latin": {
+            "dz_adj": -0.4100456325207896,
+            "dz_gap": -0.678508803044001,
+            "total_z": 0.7927872454559151,
+            "vb_adj": 0.3078190855202535,
+            "centroid_adj": 0.34595297121756524
+          }
+        }
+      },
+      "60": {
+        "centroids": {
+          "nl_latin": {
+            "n": 3,
+            "adj_mean": 0.28194887867670076,
+            "adj_sd": 0.0351143364456049,
+            "gap_mean": 0.13138515698498135,
+            "gap_sd": 0.023558971249230905
+          },
+          "voynich": {
+            "n": 3,
+            "adj_mean": 0.38049821179451326,
+            "adj_sd": 0.04827715571467076,
+            "gap_mean": 0.1784137442050625,
+            "gap_sd": 0.03692358926182763
+          },
+          "operational_latin": {
+            "n": 6,
+            "adj_mean": 0.4216709237997385,
+            "adj_sd": 0.10614720474620239,
+            "gap_mean": 0.23491428517945798,
+            "gap_sd": 0.09575051935509098
+          }
+        },
+        "z_voynich_b": {
+          "nl_latin": {
+            "dz_adj": 3.163450378456581,
+            "dz_gap": 2.2570679545416894,
+            "total_z": 3.8861001078685673,
+            "vb_adj": 0.3930313395948013,
+            "centroid_adj": 0.28194887867670076
+          },
+          "operational_latin": {
+            "dz_adj": -0.269810064932132,
+            "dz_gap": -0.525897190793579,
+            "total_z": 0.5910713378461684,
+            "vb_adj": 0.3930313395948013,
+            "centroid_adj": 0.4216709237997385
+          }
+        }
+      }
+    },
+    "pass": true
+  },
+  "overall_pass": true
+}

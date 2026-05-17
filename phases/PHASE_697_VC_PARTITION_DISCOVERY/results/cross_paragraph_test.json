@@ -1,0 +1,87 @@
+{
+  "method": "Cross-paragraph lag-1 e-depth coupling test (crazy-expert pitch #11 2026-05-16)",
+  "metric": "Pearson r of e-depths at last-token-of-P_i vs first-token-of-P_{i+1}, single pair AND 3-token boundary zone",
+  "pre_registered_criteria": "{'matched-B obs_r significantly negative vs null (p_one_sided < 0.01)', 'matched-S obs_r not significantly different from null (p_two_sided > 0.20)', 'Codicillus matches matched-S (independent paragraphs, no cross-para coupling)'}",
+  "results": {
+    "single_pair": {
+      "matched_B": {
+        "n_pairs": 47,
+        "obs_r": 0.12176782857353098,
+        "null_mean": -0.023047818597245015,
+        "null_ci_95": [
+          -0.2577523891061445,
+          0.2752674508930497
+        ],
+        "p_one_sided_neg": 0.87,
+        "p_two_sided_abs": 0.35
+      },
+      "matched_S": {
+        "n_pairs": 213,
+        "obs_r": 0.19256489732174512,
+        "null_mean": 0.021005937015054283,
+        "null_ci_95": [
+          -0.09367658296413861,
+          0.15485141915385248
+        ],
+        "p_one_sided_neg": 0.99,
+        "p_two_sided_abs": 0.01
+      },
+      "Codicillus": {
+        "n_pairs": 358,
+        "obs_r": 0.03677793355892544,
+        "null_mean": 0.0012433345202093316,
+        "null_ci_95": [
+          -0.09210301145599305,
+          0.09362241464400059
+        ],
+        "p_one_sided_neg": 0.745,
+        "p_two_sided_abs": 0.49
+      }
+    },
+    "boundary_zone": {
+      "matched_B": {
+        "n_pairs": 423,
+        "obs_r": 0.08142036141077674,
+        "null_mean": -0.005845608003377006,
+        "null_ci_95": [
+          -0.09316890136914732,
+          0.0955926589919154
+        ],
+        "p_one_sided_neg": 0.965,
+        "p_two_sided_abs": 0.085
+      },
+      "matched_S": {
+        "n_pairs": 1917,
+        "obs_r": 0.04876433839772916,
+        "null_mean": 0.01638942705792688,
+        "null_ci_95": [
+          -0.03967290843592042,
+          0.059184255488776046
+        ],
+        "p_one_sided_neg": 0.93,
+        "p_two_sided_abs": 0.085
+      },
+      "Codicillus": {
+        "n_pairs": 3222,
+        "obs_r": 0.01980751681807609,
+        "null_mean": 0.0006541330409525364,
+        "null_ci_95": [
+          -0.03599817457435242,
+          0.05032639154607174
+        ],
+        "p_one_sided_neg": 0.805,
+        "p_two_sided_abs": 0.37
+      }
+    },
+    "abs_threshold_check": {
+      "B_r_le_neg_15": false,
+      "abs_S_le_10": true
+    }
+  },
+  "pass_B_negative": false,
+  "pass_S_null": false,
+  "pass_codicillus_match": true,
+  "pass_overall": false,
+  "single_kill_fired": true,
+  "verdict": "PARAGRAPH-UNIT GRANULARITY FALSIFIED: matched-B obs_r +0.0814 not significantly more negative than null mean -0.0058 (p_one_sided=0.9650); matched-S obs_r +0.0488 significantly different from null (p_two_sided=0.0850)"
+}

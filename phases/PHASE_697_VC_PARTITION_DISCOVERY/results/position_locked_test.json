@@ -1,0 +1,330 @@
+{
+  "method": "Position-locked vs length-locked encoding test (crazy-expert pitch #9 2026-05-16)",
+  "metric": "same-slot vs cross-slot atom-identity rate ratio across adjacent MIDDLE pairs",
+  "pre_registered_criteria": "{'matched-B ratio < 0.5 (slot anti-redundancy)', 'B-S difference z < -2.58 (p < 0.01)', 'matched-S ratio in [0.8, 1.25] (slot-blind)', 'Latin baseline ratio in [0.8, 1.25] (slot-blind, anti-framework-echo)'}",
+  "results": {
+    "matched_B": {
+      "n_folios": 14,
+      "mean_ratio": 1.5468965944147917,
+      "per_folio": {
+        "f75r": {
+          "same_rate": 0.20714285714285716,
+          "same_match": 87,
+          "same_total": 420,
+          "cross_rate": 0.09580052493438321,
+          "cross_match": 73,
+          "cross_total": 762,
+          "ratio": 2.1622309197651663
+        },
+        "f76v": {
+          "same_rate": 0.21645796064400716,
+          "same_match": 121,
+          "same_total": 559,
+          "cross_rate": 0.1815680880330124,
+          "cross_match": 264,
+          "cross_total": 1454,
+          "ratio": 1.192158616577221
+        },
+        "f77r": {
+          "same_rate": 0.23095823095823095,
+          "same_match": 94,
+          "same_total": 407,
+          "cross_rate": 0.19011815252416756,
+          "cross_match": 177,
+          "cross_total": 931,
+          "ratio": 1.2148141978650453
+        },
+        "f77v": {
+          "same_rate": 0.18,
+          "same_match": 54,
+          "same_total": 300,
+          "cross_rate": 0.17412140575079874,
+          "cross_match": 109,
+          "cross_total": 626,
+          "ratio": 1.033761467889908
+        },
+        "f78v": {
+          "same_rate": 0.19090909090909092,
+          "same_match": 63,
+          "same_total": 330,
+          "cross_rate": 0.0998439937597504,
+          "cross_match": 64,
+          "cross_total": 641,
+          "ratio": 1.9120738636363637
+        },
+        "f79r": {
+          "same_rate": 0.1842696629213483,
+          "same_match": 82,
+          "same_total": 445,
+          "cross_rate": 0.1149789029535865,
+          "cross_match": 109,
+          "cross_total": 948,
+          "ratio": 1.602638903205855
+        },
+        "f79v": {
+          "same_rate": 0.24845995893223818,
+          "same_match": 121,
+          "same_total": 487,
+          "cross_rate": 0.15355805243445692,
+          "cross_match": 164,
+          "cross_total": 1068,
+          "ratio": 1.618019732558722
+        },
+        "f80r": {
+          "same_rate": 0.1623246492985972,
+          "same_match": 81,
+          "same_total": 499,
+          "cross_rate": 0.10476935105551212,
+          "cross_match": 134,
+          "cross_total": 1279,
+          "ratio": 1.549352436215715
+        },
+        "f81v": {
+          "same_rate": 0.16417910447761194,
+          "same_match": 55,
+          "same_total": 335,
+          "cross_rate": 0.08165997322623829,
+          "cross_match": 61,
+          "cross_total": 747,
+          "ratio": 2.010521164668461
+        },
+        "f82r": {
+          "same_rate": 0.24850299401197604,
+          "same_match": 83,
+          "same_total": 334,
+          "cross_rate": 0.23057644110275688,
+          "cross_match": 184,
+          "cross_total": 798,
+          "ratio": 1.0777466805519396
+        },
+        "f82v": {
+          "same_rate": 0.17665615141955837,
+          "same_match": 56,
+          "same_total": 317,
+          "cross_rate": 0.12054120541205413,
+          "cross_match": 98,
+          "cross_total": 813,
+          "ratio": 1.4655250112663363
+        },
+        "f83r": {
+          "same_rate": 0.19451371571072318,
+          "same_match": 78,
+          "same_total": 401,
+          "cross_rate": 0.13378248315688163,
+          "cross_match": 139,
+          "cross_total": 1039,
+          "ratio": 1.4539550404564128
+        },
+        "f84r": {
+          "same_rate": 0.215311004784689,
+          "same_match": 90,
+          "same_total": 418,
+          "cross_rate": 0.10911136107986502,
+          "cross_match": 97,
+          "cross_total": 889,
+          "ratio": 1.9733142603462734
+        },
+        "f84v": {
+          "same_rate": 0.18427518427518427,
+          "same_match": 75,
+          "same_total": 407,
+          "cross_rate": 0.13253012048192772,
+          "cross_match": 110,
+          "cross_total": 830,
+          "ratio": 1.390440026803663
+        }
+      }
+    },
+    "matched_S": {
+      "n_folios": 19,
+      "mean_ratio": 1.7675043330698603,
+      "per_folio": {
+        "f103r": {
+          "same_rate": 0.2140845070422535,
+          "same_match": 152,
+          "same_total": 710,
+          "cross_rate": 0.13727810650887573,
+          "cross_match": 232,
+          "cross_total": 1690,
+          "ratio": 1.5594949004371055
+        },
+        "f103v": {
+          "same_rate": 0.19931271477663232,
+          "same_match": 116,
+          "same_total": 582,
+          "cross_rate": 0.11296436694465505,
+          "cross_match": 149,
+          "cross_total": 1319,
+          "ratio": 1.764385710002537
+        },
+        "f105v": {
+          "same_rate": 0.18982118294360384,
+          "same_match": 138,
+          "same_total": 727,
+          "cross_rate": 0.08732116428219043,
+          "cross_match": 177,
+          "cross_total": 2027,
+          "ratio": 2.173827897325904
+        },
+        "f106r": {
+          "same_rate": 0.19844961240310077,
+          "same_match": 128,
+          "same_total": 645,
+          "cross_rate": 0.10577472841623785,
+          "cross_match": 185,
+          "cross_total": 1749,
+          "ratio": 1.8761533626649907
+        },
+        "f106v": {
+          "same_rate": 0.16920731707317074,
+          "same_match": 111,
+          "same_total": 656,
+          "cross_rate": 0.08539765319426336,
+          "cross_match": 131,
+          "cross_total": 1534,
+          "ratio": 1.9814047663377399
+        },
+        "f107r": {
+          "same_rate": 0.20810055865921787,
+          "same_match": 149,
+          "same_total": 716,
+          "cross_rate": 0.09513150531617236,
+          "cross_match": 170,
+          "cross_total": 1787,
+          "ratio": 2.187504107788367
+        },
+        "f108r": {
+          "same_rate": 0.23450134770889489,
+          "same_match": 174,
+          "same_total": 742,
+          "cross_rate": 0.14728682170542637,
+          "cross_match": 247,
+          "cross_total": 1677,
+          "ratio": 1.592140729181444
+        },
+        "f108v": {
+          "same_rate": 0.28634850166481685,
+          "same_match": 258,
+          "same_total": 901,
+          "cross_rate": 0.21753097751262046,
+          "cross_match": 474,
+          "cross_total": 2179,
+          "ratio": 1.3163573525899492
+        },
+        "f111r": {
+          "same_rate": 0.2684903748733536,
+          "same_match": 265,
+          "same_total": 987,
+          "cross_rate": 0.20816326530612245,
+          "cross_match": 510,
+          "cross_total": 2450,
+          "ratio": 1.2898067028229732
+        },
+        "f111v": {
+          "same_rate": 0.23076923076923078,
+          "same_match": 174,
+          "same_total": 754,
+          "cross_rate": 0.11006637168141593,
+          "cross_match": 199,
+          "cross_total": 1808,
+          "ratio": 2.096637031310398
+        },
+        "f112r": {
+          "same_rate": 0.21943048576214405,
+          "same_match": 131,
+          "same_total": 597,
+          "cross_rate": 0.14947683109118087,
+          "cross_match": 200,
+          "cross_total": 1338,
+          "ratio": 1.4679899497487436
+        },
+        "f112v": {
+          "same_rate": 0.24517906336088155,
+          "same_match": 178,
+          "same_total": 726,
+          "cross_rate": 0.17006802721088435,
+          "cross_match": 300,
+          "cross_total": 1764,
+          "ratio": 1.4416528925619836
+        },
+        "f113r": {
+          "same_rate": 0.19249394673123488,
+          "same_match": 159,
+          "same_total": 826,
+          "cross_rate": 0.10103383458646617,
+          "cross_match": 215,
+          "cross_total": 2128,
+          "ratio": 1.9052424122979899
+        },
+        "f113v": {
+          "same_rate": 0.25630810092961487,
+          "same_match": 193,
+          "same_total": 753,
+          "cross_rate": 0.10821643286573146,
+          "cross_match": 216,
+          "cross_total": 1996,
+          "ratio": 2.3684767104421818
+        },
+        "f114r": {
+          "same_rate": 0.1848404255319149,
+          "same_match": 139,
+          "same_total": 752,
+          "cross_rate": 0.08921064922933208,
+          "cross_match": 191,
+          "cross_total": 2141,
+          "ratio": 2.0719547176116744
+        },
+        "f114v": {
+          "same_rate": 0.20398009950248755,
+          "same_match": 123,
+          "same_total": 603,
+          "cross_rate": 0.12399077277970011,
+          "cross_match": 215,
+          "cross_total": 1734,
+          "ratio": 1.6451232211037834
+        },
+        "f115r": {
+          "same_rate": 0.2225609756097561,
+          "same_match": 146,
+          "same_total": 656,
+          "cross_rate": 0.1202804746494067,
+          "cross_match": 223,
+          "cross_total": 1854,
+          "ratio": 1.8503499945313353
+        },
+        "f115v": {
+          "same_rate": 0.16229508196721312,
+          "same_match": 99,
+          "same_total": 610,
+          "cross_rate": 0.11805555555555555,
+          "cross_match": 187,
+          "cross_total": 1584,
+          "ratio": 1.37473481195757
+        },
+        "f116r": {
+          "same_rate": 0.17783505154639176,
+          "same_match": 69,
+          "same_total": 388,
+          "cross_rate": 0.10981912144702842,
+          "cross_match": 85,
+          "cross_total": 774,
+          "ratio": 1.6193450576106732
+        }
+      }
+    },
+    "B_minus_S_diff": -0.22060773865506866,
+    "B_minus_S_z": -1.8191227577557383,
+    "Codicillus": {
+      "same_rate": 0.0938061129856548,
+      "cross_rate": 0.07070984964044454,
+      "ratio": 1.326634315624392
+    }
+  },
+  "pass_matched_B": false,
+  "pass_matched_S": false,
+  "pass_diff": false,
+  "pass_latin": false,
+  "pass_overall": false,
+  "single_kill_fired": true,
+  "verdict": "POSITION-LOCKED HYPOTHESIS FALSIFIED: matched-B ratio 1.547 not < 0.5 (no slot anti-redundancy); matched-S ratio 1.768 not in [0.8, 1.25] (not slot-blind); B-S diff z=-1.8191227577557383 not < -2.58; Latin ratio 1.327 suggests artifact"
+}

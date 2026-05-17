@@ -1,0 +1,394 @@
+{
+  "method": "Extended phonotactics test: Voynich vs Latin + Italian + German",
+  "voynich_top_cv": [
+    [
+      "VC",
+      1130
+    ],
+    [
+      "CVC",
+      1123
+    ],
+    [
+      "CCVCV",
+      1082
+    ],
+    [
+      "VCVC",
+      884
+    ],
+    [
+      "CVCVC",
+      730
+    ],
+    [
+      "CVVVC",
+      641
+    ],
+    [
+      "VCVVVC",
+      525
+    ],
+    [
+      "CCVC",
+      506
+    ],
+    [
+      "CVCVVC",
+      485
+    ],
+    [
+      "CCVV",
+      484
+    ],
+    [
+      "VCVVC",
+      464
+    ],
+    [
+      "CCVVC",
+      448
+    ],
+    [
+      "CVCVVVC",
+      428
+    ],
+    [
+      "CVCVCV",
+      420
+    ],
+    [
+      "CVCVVCV",
+      414
+    ]
+  ],
+  "distances": {
+    "Latin: Codicillus": {
+      "n_tokens": 28171,
+      "n_unique_cv_patterns": 1036,
+      "js_divergence_bits": 0.43442416819540774,
+      "top_5_patterns": [
+        [
+          "VC",
+          3803
+        ],
+        [
+          "CVC",
+          2238
+        ],
+        [
+          "CV",
+          1452
+        ],
+        [
+          "CVV",
+          1448
+        ],
+        [
+          "CVCVC",
+          1117
+        ]
+      ]
+    },
+    "Latin: Mesue Grabadin": {
+      "n_tokens": 271921,
+      "n_unique_cv_patterns": 22832,
+      "js_divergence_bits": 0.39788233476078727,
+      "top_5_patterns": [
+        [
+          "CVC",
+          16799
+        ],
+        [
+          "VC",
+          14119
+        ],
+        [
+          "CV",
+          10091
+        ],
+        [
+          "CVCVC",
+          10022
+        ],
+        [
+          "CVCV",
+          7247
+        ]
+      ]
+    },
+    "Latin: PL Testamentum 1566": {
+      "n_tokens": 111795,
+      "n_unique_cv_patterns": 1698,
+      "js_divergence_bits": 0.44899358989923466,
+      "top_5_patterns": [
+        [
+          "CVC",
+          10363
+        ],
+        [
+          "VC",
+          7714
+        ],
+        [
+          "CVCVC",
+          5523
+        ],
+        [
+          "CV",
+          5359
+        ],
+        [
+          "CVCV",
+          4002
+        ]
+      ]
+    },
+    "Latin: Cicero Catilinarian": {
+      "n_tokens": 3287,
+      "n_unique_cv_patterns": 360,
+      "js_divergence_bits": 0.5004497338522331,
+      "top_5_patterns": [
+        [
+          "VC",
+          272
+        ],
+        [
+          "CVC",
+          223
+        ],
+        [
+          "CV",
+          183
+        ],
+        [
+          "CVCVC",
+          164
+        ],
+        [
+          "CVVC",
+          131
+        ]
+      ]
+    },
+    "Latin: Caesar Bellum Gallicum": {
+      "n_tokens": 8012,
+      "n_unique_cv_patterns": 564,
+      "js_divergence_bits": 0.49989200967942915,
+      "top_5_patterns": [
+        [
+          "VC",
+          736
+        ],
+        [
+          "CVC",
+          378
+        ],
+        [
+          "CVVC",
+          316
+        ],
+        [
+          "CVCVCVC",
+          298
+        ],
+        [
+          "CVCVC",
+          260
+        ]
+      ]
+    },
+    "Latin: Piccolomini correspondence": {
+      "n_tokens": 209631,
+      "n_unique_cv_patterns": 2387,
+      "js_divergence_bits": 0.4501950908668179,
+      "top_5_patterns": [
+        [
+          "CVC",
+          18009
+        ],
+        [
+          "VC",
+          16802
+        ],
+        [
+          "CVCVC",
+          10889
+        ],
+        [
+          "CVCV",
+          7967
+        ],
+        [
+          "CV",
+          7513
+        ]
+      ]
+    },
+    "Latin: Ebendorfer Chronica": {
+      "n_tokens": 125689,
+      "n_unique_cv_patterns": 1853,
+      "js_divergence_bits": 0.48205754197663564,
+      "top_5_patterns": [
+        [
+          "VC",
+          13867
+        ],
+        [
+          "CVC",
+          6666
+        ],
+        [
+          "CVCVC",
+          4998
+        ],
+        [
+          "CVCV",
+          4274
+        ],
+        [
+          "CVV",
+          3621
+        ]
+      ]
+    },
+    "Italian: Dante Inferno": {
+      "n_tokens": 89353,
+      "n_unique_cv_patterns": 631,
+      "js_divergence_bits": 0.5456467974900447,
+      "top_5_patterns": [
+        [
+          "CV",
+          15461
+        ],
+        [
+          "CVCCV",
+          9221
+        ],
+        [
+          "CVC",
+          7026
+        ],
+        [
+          "CVCV",
+          6597
+        ],
+        [
+          "CVV",
+          5462
+        ]
+      ]
+    },
+    "Italian: Dante Paradiso": {
+      "n_tokens": 29620,
+      "n_unique_cv_patterns": 465,
+      "js_divergence_bits": 0.5479317172070164,
+      "top_5_patterns": [
+        [
+          "CV",
+          5129
+        ],
+        [
+          "CVCCV",
+          2831
+        ],
+        [
+          "CVCV",
+          2286
+        ],
+        [
+          "CVC",
+          2272
+        ],
+        [
+          "CVV",
+          1780
+        ]
+      ]
+    },
+    "German: Goethe Faust": {
+      "n_tokens": 30740,
+      "n_unique_cv_patterns": 1107,
+      "js_divergence_bits": 0.5866954936668549,
+      "top_5_patterns": [
+        [
+          "CVC",
+          4117
+        ],
+        [
+          "CVCC",
+          3255
+        ],
+        [
+          "VCC",
+          2725
+        ],
+        [
+          "VC",
+          1318
+        ],
+        [
+          "CVV",
+          1310
+        ]
+      ]
+    },
+    "German: Tichtel diary (medieval, 1477-95)": {
+      "n_tokens": 22684,
+      "n_unique_cv_patterns": 1092,
+      "js_divergence_bits": 0.43849615175257856,
+      "top_5_patterns": [
+        [
+          "VC",
+          1871
+        ],
+        [
+          "CVC",
+          1422
+        ],
+        [
+          "VCVC",
+          1059
+        ],
+        [
+          "CVCCVC",
+          926
+        ],
+        [
+          "CVV",
+          882
+        ]
+      ]
+    },
+    "German: Puff von Schrick (medieval pharmacy)": {
+      "n_tokens": 3928,
+      "n_unique_cv_patterns": 294,
+      "js_divergence_bits": 0.5660254618234413,
+      "top_5_patterns": [
+        [
+          "CVC",
+          736
+        ],
+        [
+          "VC",
+          235
+        ],
+        [
+          "CVCCVC",
+          211
+        ],
+        [
+          "CVV",
+          191
+        ],
+        [
+          "VCC",
+          184
+        ]
+      ]
+    }
+  },
+  "min_js": 0.39788233476078727,
+  "closest_match": "Latin: Mesue Grabadin",
+  "verdict": "AMBIGUOUS: minimum JS=0.3979 (0.20-0.40)"
+}

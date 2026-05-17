@@ -1,0 +1,855 @@
+{
+  "method": "Three in-domain crazy hypothesis tests (crazy-expert 2026-05-16)",
+  "Test A: REFLUX vs SINGLE-PASS apparatus split": {
+    "pre_registered": ">=80% matched-B reflux AND >=80% matched-S single-pass",
+    "matched_B_n": 10,
+    "matched_B_reflux": 9,
+    "matched_B_pct_reflux": 90.0,
+    "matched_S_n": 11,
+    "matched_S_singlepass": 2,
+    "matched_S_pct_singlepass": 18.181818181818183,
+    "pass": false,
+    "per_folio": [
+      {
+        "chapter": "Ch1M",
+        "folio": "f112v",
+        "section": "S",
+        "reflux_score": 4,
+        "single_pass_score": 2,
+        "predicted": "REFLUX",
+        "text_len": 2646
+      },
+      {
+        "chapter": "Ch2+3+6M",
+        "folio": "f77r",
+        "section": "B",
+        "reflux_score": 5,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 3299
+      },
+      {
+        "chapter": "Ch4M",
+        "folio": "f116r",
+        "section": "S",
+        "reflux_score": 1,
+        "single_pass_score": 1,
+        "predicted": "TIE",
+        "text_len": 1876
+      },
+      {
+        "chapter": "Ch11M",
+        "folio": "f112r",
+        "section": "S",
+        "reflux_score": 3,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 1762
+      },
+      {
+        "chapter": "Ch12M",
+        "folio": "f79r",
+        "section": "B",
+        "reflux_score": 3,
+        "single_pass_score": 0,
+        "predicted": "REFLUX",
+        "text_len": 1010
+      },
+      {
+        "chapter": "Ch14M",
+        "folio": "f78v",
+        "section": "B",
+        "reflux_score": 2,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 2033
+      },
+      {
+        "chapter": "Ch15M",
+        "folio": "f76v",
+        "section": "B",
+        "reflux_score": 0,
+        "single_pass_score": 1,
+        "predicted": "SINGLE_PASS",
+        "text_len": 945
+      },
+      {
+        "chapter": "Ch16M",
+        "folio": "f103r",
+        "section": "S",
+        "reflux_score": 2,
+        "single_pass_score": 0,
+        "predicted": "REFLUX",
+        "text_len": 3092
+      },
+      {
+        "chapter": "Ch17M",
+        "folio": "f106r",
+        "section": "S",
+        "reflux_score": 5,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 3080
+      },
+      {
+        "chapter": "Ch18M",
+        "folio": "f81v",
+        "section": "B",
+        "reflux_score": 6,
+        "single_pass_score": 2,
+        "predicted": "REFLUX",
+        "text_len": 1756
+      },
+      {
+        "chapter": "Ch19M",
+        "folio": "f75r",
+        "section": "B",
+        "reflux_score": 3,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 741
+      },
+      {
+        "chapter": "Ch20M",
+        "folio": "f79v",
+        "section": "B",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch21-25M",
+        "folio": "f80r",
+        "section": "B",
+        "reflux_score": 4,
+        "single_pass_score": 0,
+        "predicted": "REFLUX",
+        "text_len": 1630
+      },
+      {
+        "chapter": "Ch22M",
+        "folio": "f82r",
+        "section": "B",
+        "reflux_score": 4,
+        "single_pass_score": 0,
+        "predicted": "REFLUX",
+        "text_len": 790
+      },
+      {
+        "chapter": "Ch27M",
+        "folio": "f77v",
+        "section": "B",
+        "reflux_score": 4,
+        "single_pass_score": 2,
+        "predicted": "REFLUX",
+        "text_len": 2727
+      },
+      {
+        "chapter": "Ch28M",
+        "folio": "f82v",
+        "section": "B",
+        "reflux_score": 2,
+        "single_pass_score": 0,
+        "predicted": "REFLUX",
+        "text_len": 1937
+      },
+      {
+        "chapter": "Ch40M",
+        "folio": "f106v",
+        "section": "S",
+        "reflux_score": 3,
+        "single_pass_score": 2,
+        "predicted": "REFLUX",
+        "text_len": 11772
+      },
+      {
+        "chapter": "Ch44M",
+        "folio": "f107r",
+        "section": "S",
+        "reflux_score": 0,
+        "single_pass_score": 1,
+        "predicted": "SINGLE_PASS",
+        "text_len": 1876
+      },
+      {
+        "chapter": "Ch47M",
+        "folio": "f113r",
+        "section": "S",
+        "reflux_score": 2,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 4912
+      },
+      {
+        "chapter": "Ch48M",
+        "folio": "f113v",
+        "section": "S",
+        "reflux_score": 2,
+        "single_pass_score": 1,
+        "predicted": "REFLUX",
+        "text_len": 3152
+      },
+      {
+        "chapter": "Ch50M",
+        "folio": "f111r",
+        "section": "S",
+        "reflux_score": 2,
+        "single_pass_score": 2,
+        "predicted": "TIE",
+        "text_len": 9612
+      },
+      {
+        "chapter": "Ch10M",
+        "folio": "f111v",
+        "section": "S",
+        "reflux_score": 2,
+        "single_pass_score": 3,
+        "predicted": "SINGLE_PASS",
+        "text_len": 3945
+      },
+      {
+        "chapter": "Ch9P",
+        "folio": "f83r",
+        "section": "B",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch10+11P",
+        "folio": "f108v",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch14P",
+        "folio": "f84r",
+        "section": "B",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch15P",
+        "folio": "f84v",
+        "section": "B",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch16P",
+        "folio": "f108r",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch18P",
+        "folio": "f76r",
+        "section": "B",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch21P+28P",
+        "folio": "f115r",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch23P",
+        "folio": "f114r",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch25P",
+        "folio": "f115v",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch27P",
+        "folio": "f103v",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch30P",
+        "folio": "f105v",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch31P",
+        "folio": "f114v",
+        "section": "S",
+        "reflux_score": null,
+        "single_pass_score": null,
+        "predicted": "NO_TEXT",
+        "digestion_score": null,
+        "active_score": null,
+        "phase_predicted": "NO_TEXT"
+      }
+    ]
+  },
+  "Test B: LENGTH-CLUSTERING = BATCH COMPOSITION": {
+    "pre_registered": "dar-rate at length-transitions >= 1.5x within-band; >=12/17 matched-S folios",
+    "n_folios_evaluated": 19,
+    "n_folios_passing": 3,
+    "pass": false,
+    "per_folio": [
+      {
+        "folio": "f103r",
+        "dar_at_transitions": 0,
+        "n_transitions": 74,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 1,
+        "n_within": 430,
+        "rate_within": 0.002325581395348837,
+        "ratio_trans_over_within": 0.0
+      },
+      {
+        "folio": "f103v",
+        "dar_at_transitions": 0,
+        "n_transitions": 90,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 346,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f105v",
+        "dar_at_transitions": 0,
+        "n_transitions": 105,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 275,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f106r",
+        "dar_at_transitions": 0,
+        "n_transitions": 107,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 299,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f106v",
+        "dar_at_transitions": 0,
+        "n_transitions": 92,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 342,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f107r",
+        "dar_at_transitions": 0,
+        "n_transitions": 134,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 339,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f108r",
+        "dar_at_transitions": 0,
+        "n_transitions": 87,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 388,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f108v",
+        "dar_at_transitions": 0,
+        "n_transitions": 136,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 421,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f111r",
+        "dar_at_transitions": 1,
+        "n_transitions": 142,
+        "rate_at_trans": 0.007042253521126761,
+        "dar_within_bands": 0,
+        "n_within": 466,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": Infinity
+      },
+      {
+        "folio": "f111v",
+        "dar_at_transitions": 0,
+        "n_transitions": 105,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 449,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f112r",
+        "dar_at_transitions": 0,
+        "n_transitions": 85,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 299,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f112v",
+        "dar_at_transitions": 0,
+        "n_transitions": 103,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 299,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f113r",
+        "dar_at_transitions": 0,
+        "n_transitions": 123,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 379,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f113v",
+        "dar_at_transitions": 0,
+        "n_transitions": 137,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 327,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      },
+      {
+        "folio": "f114r",
+        "dar_at_transitions": 0,
+        "n_transitions": 114,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 1,
+        "n_within": 317,
+        "rate_within": 0.0031545741324921135,
+        "ratio_trans_over_within": 0.0
+      },
+      {
+        "folio": "f114v",
+        "dar_at_transitions": 0,
+        "n_transitions": 97,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 1,
+        "n_within": 254,
+        "rate_within": 0.003937007874015748,
+        "ratio_trans_over_within": 0.0
+      },
+      {
+        "folio": "f115r",
+        "dar_at_transitions": 2,
+        "n_transitions": 115,
+        "rate_at_trans": 0.017391304347826087,
+        "dar_within_bands": 2,
+        "n_within": 316,
+        "rate_within": 0.006329113924050633,
+        "ratio_trans_over_within": 2.747826086956522
+      },
+      {
+        "folio": "f115v",
+        "dar_at_transitions": 1,
+        "n_transitions": 106,
+        "rate_at_trans": 0.009433962264150943,
+        "dar_within_bands": 0,
+        "n_within": 280,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": Infinity
+      },
+      {
+        "folio": "f116r",
+        "dar_at_transitions": 0,
+        "n_transitions": 58,
+        "rate_at_trans": 0.0,
+        "dar_within_bands": 0,
+        "n_within": 266,
+        "rate_within": 0.0,
+        "ratio_trans_over_within": 0
+      }
+    ]
+  },
+  "Test C: DIGESTION vs ACTIVE phase-of-process split": {
+    "pre_registered": ">=75% matched-B active AND >=75% matched-S digestion",
+    "matched_B_n": 10,
+    "matched_B_active": 9,
+    "matched_B_pct_active": 90.0,
+    "matched_S_n": 11,
+    "matched_S_digestion": 0,
+    "matched_S_pct_digestion": 0.0,
+    "pass": false,
+    "per_folio": [
+      {
+        "chapter": "Ch1M",
+        "folio": "f112v",
+        "section": "S",
+        "digestion_score": 0,
+        "active_score": 5,
+        "predicted": "ACTIVE",
+        "text_len": 2646
+      },
+      {
+        "chapter": "Ch2+3+6M",
+        "folio": "f77r",
+        "section": "B",
+        "digestion_score": 1,
+        "active_score": 7,
+        "predicted": "ACTIVE",
+        "text_len": 3299
+      },
+      {
+        "chapter": "Ch4M",
+        "folio": "f116r",
+        "section": "S",
+        "digestion_score": 0,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 1876
+      },
+      {
+        "chapter": "Ch11M",
+        "folio": "f112r",
+        "section": "S",
+        "digestion_score": 0,
+        "active_score": 6,
+        "predicted": "ACTIVE",
+        "text_len": 1762
+      },
+      {
+        "chapter": "Ch12M",
+        "folio": "f79r",
+        "section": "B",
+        "digestion_score": 0,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 1010
+      },
+      {
+        "chapter": "Ch14M",
+        "folio": "f78v",
+        "section": "B",
+        "digestion_score": 1,
+        "active_score": 5,
+        "predicted": "ACTIVE",
+        "text_len": 2033
+      },
+      {
+        "chapter": "Ch15M",
+        "folio": "f76v",
+        "section": "B",
+        "digestion_score": 1,
+        "active_score": 1,
+        "predicted": "TIE",
+        "text_len": 945
+      },
+      {
+        "chapter": "Ch16M",
+        "folio": "f103r",
+        "section": "S",
+        "digestion_score": 1,
+        "active_score": 3,
+        "predicted": "ACTIVE",
+        "text_len": 3092
+      },
+      {
+        "chapter": "Ch17M",
+        "folio": "f106r",
+        "section": "S",
+        "digestion_score": 1,
+        "active_score": 6,
+        "predicted": "ACTIVE",
+        "text_len": 3080
+      },
+      {
+        "chapter": "Ch18M",
+        "folio": "f81v",
+        "section": "B",
+        "digestion_score": 1,
+        "active_score": 5,
+        "predicted": "ACTIVE",
+        "text_len": 1756
+      },
+      {
+        "chapter": "Ch19M",
+        "folio": "f75r",
+        "section": "B",
+        "digestion_score": 0,
+        "active_score": 3,
+        "predicted": "ACTIVE",
+        "text_len": 741
+      },
+      {
+        "chapter": "Ch20M",
+        "folio": "f79v",
+        "section": "B",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch21-25M",
+        "folio": "f80r",
+        "section": "B",
+        "digestion_score": 0,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 1630
+      },
+      {
+        "chapter": "Ch22M",
+        "folio": "f82r",
+        "section": "B",
+        "digestion_score": 0,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 790
+      },
+      {
+        "chapter": "Ch27M",
+        "folio": "f77v",
+        "section": "B",
+        "digestion_score": 1,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 2727
+      },
+      {
+        "chapter": "Ch28M",
+        "folio": "f82v",
+        "section": "B",
+        "digestion_score": 3,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 1937
+      },
+      {
+        "chapter": "Ch40M",
+        "folio": "f106v",
+        "section": "S",
+        "digestion_score": 1,
+        "active_score": 6,
+        "predicted": "ACTIVE",
+        "text_len": 11772
+      },
+      {
+        "chapter": "Ch44M",
+        "folio": "f107r",
+        "section": "S",
+        "digestion_score": 0,
+        "active_score": 2,
+        "predicted": "ACTIVE",
+        "text_len": 1876
+      },
+      {
+        "chapter": "Ch47M",
+        "folio": "f113r",
+        "section": "S",
+        "digestion_score": 1,
+        "active_score": 3,
+        "predicted": "ACTIVE",
+        "text_len": 4912
+      },
+      {
+        "chapter": "Ch48M",
+        "folio": "f113v",
+        "section": "S",
+        "digestion_score": 1,
+        "active_score": 3,
+        "predicted": "ACTIVE",
+        "text_len": 3152
+      },
+      {
+        "chapter": "Ch50M",
+        "folio": "f111r",
+        "section": "S",
+        "digestion_score": 0,
+        "active_score": 4,
+        "predicted": "ACTIVE",
+        "text_len": 9612
+      },
+      {
+        "chapter": "Ch10M",
+        "folio": "f111v",
+        "section": "S",
+        "digestion_score": 1,
+        "active_score": 2,
+        "predicted": "ACTIVE",
+        "text_len": 3945
+      },
+      {
+        "chapter": "Ch9P",
+        "folio": "f83r",
+        "section": "B",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch10+11P",
+        "folio": "f108v",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch14P",
+        "folio": "f84r",
+        "section": "B",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch15P",
+        "folio": "f84v",
+        "section": "B",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch16P",
+        "folio": "f108r",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch18P",
+        "folio": "f76r",
+        "section": "B",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch21P+28P",
+        "folio": "f115r",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch23P",
+        "folio": "f114r",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch25P",
+        "folio": "f115v",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch27P",
+        "folio": "f103v",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch30P",
+        "folio": "f105v",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      },
+      {
+        "chapter": "Ch31P",
+        "folio": "f114v",
+        "section": "S",
+        "digestion_score": null,
+        "active_score": null,
+        "predicted": "NO_TEXT"
+      }
+    ]
+  },
+  "summary": {
+    "Test A": "FAIL",
+    "Test B": "FAIL",
+    "Test C": "FAIL"
+  }
+}

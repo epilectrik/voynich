@@ -1,0 +1,223 @@
+{
+  "method": "Programming-language LSA comparison (2026-05-17)",
+  "results": [
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1500,
+      "adj_mean": 0.3283994776775151,
+      "rand_mean": 0.14861519828480238,
+      "rand_sd": 0.1301097488368892,
+      "gap": 0.17978427939271271,
+      "name": "Voynich (all H+P)",
+      "category": "voynich"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1428,
+      "adj_mean": 0.3133453378415506,
+      "rand_mean": 0.1669765855653842,
+      "rand_sd": 0.1246669950412995,
+      "gap": 0.14636875227616641,
+      "name": "Voynich Currier B",
+      "category": "voynich"
+    },
+    {
+      "n_tokens": 11029,
+      "n_blocks": 368,
+      "vocab": 969,
+      "adj_mean": 0.27502333155043684,
+      "rand_mean": 0.1561830637927883,
+      "rand_sd": 0.13707672355912429,
+      "gap": 0.11884026775764855,
+      "name": "Voynich Currier A",
+      "category": "voynich"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1650,
+      "adj_mean": 0.38817683805568753,
+      "rand_mean": 0.175338624641113,
+      "rand_sd": 0.14108101358595734,
+      "gap": 0.21283821341457454,
+      "name": "Codicillus (Latin alchemy)",
+      "category": "operational_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1793,
+      "adj_mean": 0.2927912584853171,
+      "rand_mean": 0.14564417693220766,
+      "rand_sd": 0.11334923934435506,
+      "gap": 0.14714708155310946,
+      "name": "PL Testamentum 1566",
+      "category": "operational_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1835,
+      "adj_mean": 0.37086401842273253,
+      "rand_mean": 0.16096969085669044,
+      "rand_sd": 0.1536495288052091,
+      "gap": 0.2098943275660421,
+      "name": "SISMEL Testamentum (Latin alchemy)",
+      "category": "operational_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1665,
+      "adj_mean": 0.17425504173850298,
+      "rand_mean": 0.0865225120157998,
+      "rand_sd": 0.1273272610441992,
+      "gap": 0.08773252972270318,
+      "name": "Mesue Grabadin (Latin pharmacy)",
+      "category": "operational_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1478,
+      "adj_mean": 0.3533035658224146,
+      "rand_mean": 0.1662086145385517,
+      "rand_sd": 0.14568961277905526,
+      "gap": 0.18709495128386291,
+      "name": "Brunschwig 1512 (Latin distillation)",
+      "category": "operational_latin"
+    },
+    {
+      "n_tokens": 8012,
+      "n_blocks": 267,
+      "vocab": 959,
+      "adj_mean": 0.20756101116451262,
+      "rand_mean": 0.11653677287816133,
+      "rand_sd": 0.12669780273624454,
+      "gap": 0.09102423828635128,
+      "name": "Caesar Bellum Gallicum 1 (NL Latin history)",
+      "category": "nl_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 2086,
+      "adj_mean": 0.23821904504681643,
+      "rand_mean": 0.13543974281160823,
+      "rand_sd": 0.13851633449924333,
+      "gap": 0.1027793022352082,
+      "name": "Piccolomini correspondence (NL Latin)",
+      "category": "nl_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 2127,
+      "adj_mean": 0.22819387235160565,
+      "rand_mean": 0.15644481106993982,
+      "rand_sd": 0.13472721144800692,
+      "gap": 0.07174906128166583,
+      "name": "Ebendorfer Chronica (NL Latin chronicle)",
+      "category": "nl_latin"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 759,
+      "adj_mean": 0.6286296014923403,
+      "rand_mean": 0.2685260403823309,
+      "rand_sd": 0.15229808254426547,
+      "gap": 0.36010356111000935,
+      "name": "Python stdlib (urllib/asyncio/argparse)",
+      "category": "programming"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 763,
+      "adj_mean": 0.6257566263603005,
+      "rand_mean": 0.26415439157391735,
+      "rand_sd": 0.1583389667464241,
+      "gap": 0.36160223478638315,
+      "name": "C (Redis server.c)",
+      "category": "programming"
+    },
+    {
+      "n_tokens": 20000,
+      "n_blocks": 667,
+      "vocab": 1104,
+      "adj_mean": 0.6164340893226261,
+      "rand_mean": 0.31952390592929636,
+      "rand_sd": 0.24983554526650098,
+      "gap": 0.29691018339332975,
+      "name": "Emacs Lisp (simple.el)",
+      "category": "programming"
+    },
+    {
+      "n_tokens": 17757,
+      "n_blocks": 592,
+      "vocab": 1022,
+      "adj_mean": 0.659523540664455,
+      "rand_mean": 0.21773711975087895,
+      "rand_sd": 0.19418782759641484,
+      "gap": 0.441786420913576,
+      "name": "LaTeX (acmart class)",
+      "category": "programming"
+    }
+  ],
+  "centroids": {
+    "voynich": {
+      "n": 3,
+      "adj_mean": 0.30558938235650085,
+      "adj_sd": 0.027520344800880635,
+      "gap_mean": 0.14833109980884254,
+      "gap_sd": 0.0305193585191917
+    },
+    "operational_latin": {
+      "n": 5,
+      "adj_mean": 0.31587814450493096,
+      "adj_sd": 0.0869501540017535,
+      "gap_mean": 0.16894142070805845,
+      "gap_sd": 0.05244877705122507
+    },
+    "nl_latin": {
+      "n": 3,
+      "adj_mean": 0.2246579761876449,
+      "adj_sd": 0.01563188029777149,
+      "gap_mean": 0.08851753393440843,
+      "gap_sd": 0.015666257959058422
+    },
+    "programming": {
+      "n": 4,
+      "adj_mean": 0.6325859644599304,
+      "adj_sd": 0.018697671415054257,
+      "gap_mean": 0.36510060005082456,
+      "gap_sd": 0.05935165541925017
+    }
+  },
+  "voynich_b_distances": {
+    "operational_latin": {
+      "dz_adj": -0.02912940974583289,
+      "dz_gap": -0.4303754958832696,
+      "total_z": 0.431360162705031,
+      "vb_adj": 0.3133453378415506,
+      "centroid_adj": 0.31587814450493096
+    },
+    "nl_latin": {
+      "dz_adj": 5.673492885340808,
+      "dz_gap": 3.692727292819004,
+      "total_z": 6.769398524177989,
+      "vb_adj": 0.3133453378415506,
+      "centroid_adj": 0.2246579761876449
+    },
+    "programming": {
+      "dz_adj": -17.073817350397235,
+      "dz_gap": -3.6853537821240696,
+      "total_z": 17.46702812198291,
+      "vb_adj": 0.3133453378415506,
+      "centroid_adj": 0.6325859644599304
+    }
+  }
+}

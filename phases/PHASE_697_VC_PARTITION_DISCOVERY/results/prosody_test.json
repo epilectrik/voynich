@@ -1,0 +1,48 @@
+{
+  "method": "Prosody / transcribed-chant hypothesis test (crazy-expert sixth pitch 2026-05-16)",
+  "metric": "lag-1 Pearson autocorrelation of token-length-in-characters within paragraph",
+  "pre_registered_criteria": {
+    "Section B rho": "< -0.10",
+    "matched-S rho": "in [-0.03, +0.05]",
+    "B - S Delta-rho": "< -0.10 with within-folio shuffle null p < 0.01",
+    "Codicillus rho": ">= -0.05 (Latin must NOT alternate)",
+    "Mesue rho": ">= -0.05"
+  },
+  "results": {
+    "Section B": {
+      "n": 81,
+      "mean_rho": 0.08076733009122196,
+      "null_mean": -0.019046377835119158,
+      "p_null_le_obs": 1.0
+    },
+    "matched_S": {
+      "n": 215,
+      "mean_rho": 0.08643167981341199,
+      "null_mean": -0.034775425312634826
+    },
+    "unmatched_S": {
+      "n": 68,
+      "mean_rho": 0.15575052574446374
+    },
+    "delta_B_minus_S": {
+      "obs": -0.005664349722190029,
+      "null_avg": 0.015729047477515672,
+      "p_null_le_obs": 0.125
+    },
+    "Codicillus": {
+      "n": 376,
+      "mean_rho": -0.09321177598063479
+    },
+    "Mesue": {
+      "n": 3,
+      "mean_rho": 0.06550212583865518
+    }
+  },
+  "pass_section_B": false,
+  "pass_matched_S": false,
+  "pass_delta": false,
+  "pass_codicillus": false,
+  "pass_mesue": true,
+  "pass_overall": false,
+  "verdict": "PROSODY HYPOTHESIS FALSIFIED: Section B rho +0.081 not < -0.10; matched-S rho +0.086 not in [-0.03, +0.05]; Delta-rho -0.006 (p=0.1250) not < -0.10 at p<0.01; Codicillus rho -0.093 < -0.05 (Latin mimics)"
+}

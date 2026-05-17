@@ -1,0 +1,48 @@
+{
+  "method": "Run-internal exchangeability KL test (crazy-expert pitch #12 2026-05-16)",
+  "metric": "KL(P(token_i+1 | flanks-condition) || P(token_i+1)) in bits, per section",
+  "pre_registered_criteria": "{'matched-B KL (class-cond) > 0.15 bits', 'matched-S KL (class-cond) < 0.05 bits'}",
+  "results": {
+    "class_conditioning": {
+      "matched_B": {
+        "n_triples": 4608,
+        "n_matching_triples": 1982,
+        "match_rate": 0.4301215277777778,
+        "kl_bits": 0.30247719025980646,
+        "n_unique_middle_when_matching": 626,
+        "n_unique_middle_overall": 1124
+      },
+      "matched_S": {
+        "n_triples": 8270,
+        "n_matching_triples": 3621,
+        "match_rate": 0.43784764207980653,
+        "kl_bits": 0.3653129230394797,
+        "n_unique_middle_when_matching": 1366,
+        "n_unique_middle_overall": 2436
+      }
+    },
+    "exact_conditioning": {
+      "matched_B": {
+        "n_triples": 4608,
+        "n_matching_triples": 71,
+        "match_rate": 0.015407986111111112,
+        "kl_bits": 2.244799759903582,
+        "n_unique_middle_when_matching": 48,
+        "n_unique_middle_overall": 1124
+      },
+      "matched_S": {
+        "n_triples": 8270,
+        "n_matching_triples": 61,
+        "match_rate": 0.007376058041112455,
+        "kl_bits": 3.514457206902349,
+        "n_unique_middle_when_matching": 48,
+        "n_unique_middle_overall": 2436
+      }
+    }
+  },
+  "pass_S_low": false,
+  "pass_B_high": true,
+  "pass_overall": false,
+  "single_kill_fired": true,
+  "verdict": "SPEC-VS-EXECUTION FALSIFIED: matched-S KL 0.365 not < 0.05 (run-internal NOT exchangeable)"
+}

@@ -1,0 +1,210 @@
+{
+  "method": "Length-stratified C2031 replication using e-depth class methodology (expert-advisor 2026-05-16)",
+  "class_definition": "e-depth binned 0 / 1 / 2plus on ALL operational tokens (per C2031)",
+  "strata_token_count": [
+    [
+      3,
+      30
+    ],
+    [
+      30,
+      60
+    ],
+    [
+      60,
+      120
+    ],
+    [
+      120,
+      500
+    ]
+  ],
+  "pre_registered_criteria": {
+    "PASS": "Sign-opposition (B r21 < -0.40 AND S r21 > +0.40) in >=2 length strata with n>=8",
+    "FAIL": "Sign-opposition only in 1 stratum or fewer"
+  },
+  "aggregate_baseline": {
+    "matched_B": {
+      "lag1": {
+        "n_pairs": 4669,
+        "obs_rate": 0.4056543156992932,
+        "null_rate": 0.4208203041332958,
+        "excess": -0.015165988434002587
+      },
+      "lag2": {
+        "n_pairs": 4608,
+        "obs_rate": 0.4301215277777778,
+        "null_rate": 0.4209635416663153,
+        "excess": 0.009157986111462494
+      },
+      "r21": -0.603850263457278
+    },
+    "matched_S": {
+      "lag1": {
+        "n_pairs": 7568,
+        "obs_rate": 0.44410676532769555,
+        "null_rate": 0.4185266913349256,
+        "excess": 0.025580073992769986
+      },
+      "lag2": {
+        "n_pairs": 7353,
+        "obs_rate": 0.4326125390996872,
+        "null_rate": 0.41828641371150743,
+        "excess": 0.014326125388179784
+      },
+      "r21": 0.5600501934524879
+    },
+    "Section_B_all": {
+      "lag1": {
+        "n_pairs": 6113,
+        "obs_rate": 0.4130541469000491,
+        "null_rate": 0.4304760346819923,
+        "excess": -0.017421887781943233
+      },
+      "lag2": {
+        "n_pairs": 6031,
+        "obs_rate": 0.4405571215387166,
+        "null_rate": 0.4300646658945771,
+        "excess": 0.010492455644139557
+      },
+      "r21": -0.6022571018402709
+    }
+  },
+  "stratified_results": {
+    "3-30": {
+      "n_paragraphs_matched_B": 3,
+      "n_paragraphs_matched_S": 101,
+      "n_paragraphs_Section_B_all": 5
+    },
+    "30-60": {
+      "n_paragraphs_matched_B": 22,
+      "n_paragraphs_matched_S": 101,
+      "n_paragraphs_Section_B_all": 28,
+      "matched_B": {
+        "lag1": {
+          "n_pairs": 997,
+          "obs_rate": 0.39618856569709127,
+          "null_rate": 0.42474423269785344,
+          "excess": -0.02855566700076215
+        },
+        "lag2": {
+          "n_pairs": 975,
+          "obs_rate": 0.40615384615384614,
+          "null_rate": 0.4227282051279694,
+          "excess": -0.01657435897412323
+        },
+        "r21": 0.5804227571949505
+      },
+      "matched_S": {
+        "lag1": {
+          "n_pairs": 3906,
+          "obs_rate": 0.46236559139784944,
+          "null_rate": 0.42979006656390634,
+          "excess": 0.032575524833943104
+        },
+        "lag2": {
+          "n_pairs": 3805,
+          "obs_rate": 0.4423127463863338,
+          "null_rate": 0.4296373193163359,
+          "excess": 0.012675427069997832
+        },
+        "r21": 0.38910891335172804
+      },
+      "Section_B_all": {
+        "lag1": {
+          "n_pairs": 1263,
+          "obs_rate": 0.393507521773555,
+          "null_rate": 0.42974663499576515,
+          "excess": -0.03623911322221015
+        },
+        "lag2": {
+          "n_pairs": 1235,
+          "obs_rate": 0.42267206477732794,
+          "null_rate": 0.42898785425073943,
+          "excess": -0.006315789473411509
+        },
+        "r21": 0.17428101605810548
+      }
+    },
+    "60-120": {
+      "n_paragraphs_matched_B": 27,
+      "n_paragraphs_matched_S": 10,
+      "n_paragraphs_Section_B_all": 39,
+      "matched_B": {
+        "lag1": {
+          "n_pairs": 2225,
+          "obs_rate": 0.4242696629213483,
+          "null_rate": 0.43230112359517764,
+          "excess": -0.008031460673829325
+        },
+        "lag2": {
+          "n_pairs": 2198,
+          "obs_rate": 0.4394904458598726,
+          "null_rate": 0.43195632393051936,
+          "excess": 0.007534121929353251
+        },
+        "r21": -0.9380761775878873
+      },
+      "matched_S": {
+        "lag1": {
+          "n_pairs": 731,
+          "obs_rate": 0.45964432284541723,
+          "null_rate": 0.41194254445946804,
+          "excess": 0.0477017783859492
+        },
+        "lag2": {
+          "n_pairs": 721,
+          "obs_rate": 0.43828016643550627,
+          "null_rate": 0.4095284327321449,
+          "excess": 0.028751733703361357
+        },
+        "r21": 0.6027392410977769
+      },
+      "Section_B_all": {
+        "lag1": {
+          "n_pairs": 3200,
+          "obs_rate": 0.42875,
+          "null_rate": 0.441290624999644,
+          "excess": -0.01254062499964398
+        },
+        "lag2": {
+          "n_pairs": 3161,
+          "obs_rate": 0.45333755140778237,
+          "null_rate": 0.44148054413124826,
+          "excess": 0.011857007276534057
+        },
+        "r21": -0.9454877469719946
+      }
+    },
+    "120-inf": {
+      "n_paragraphs_matched_B": 9,
+      "n_paragraphs_matched_S": 3,
+      "n_paragraphs_Section_B_all": 10,
+      "Section_B_all": {
+        "lag1": {
+          "n_pairs": 1575,
+          "obs_rate": 0.39174603174603173,
+          "null_rate": 0.41079365079336927,
+          "excess": -0.01904761904733754
+        },
+        "lag2": {
+          "n_pairs": 1565,
+          "obs_rate": 0.4293929712460064,
+          "null_rate": 0.4089073482425323,
+          "excess": 0.020485623003474094
+        },
+        "r21": -1.0754952076982849
+      }
+    }
+  },
+  "paired_strata": [
+    "30-60",
+    "60-120"
+  ],
+  "surviving_strata": [
+    "60-120"
+  ],
+  "n_surviving": 1,
+  "verdict_class": "FAIL",
+  "verdict": "C2031 sign-opposition only in 1/2 strata; LENGTH CONFOUND CONFIRMED: surviving=['60-120']"
+}

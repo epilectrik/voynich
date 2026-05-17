@@ -1,0 +1,187 @@
+{
+  "method": "Length-stratified C2032 replication (expert-advisor 2026-05-16)",
+  "strata_definition_token_count": [
+    [
+      3,
+      30
+    ],
+    [
+      30,
+      60
+    ],
+    [
+      60,
+      120
+    ],
+    [
+      120,
+      500
+    ]
+  ],
+  "pre_registered_criteria": {
+    "PASS": "Sign-opposition (B r21 < -0.40 AND S r21 > +0.40) in >=2 length strata with n>=8",
+    "FAIL": "Sign-opposition only in 1 stratum or fewer",
+    "INCONCLUSIVE": "Fewer than 2 paired strata with n>=8 in both sections"
+  },
+  "voynich_results": {
+    "3-30": {
+      "n_paragraphs_B": 3,
+      "n_paragraphs_S": 101,
+      "status": "insufficient"
+    },
+    "30-60": {
+      "n_paragraphs_B": 22,
+      "n_paragraphs_S": 101,
+      "Section_B": {
+        "lag1": {
+          "n_pairs": 135,
+          "obs_rate": 0.05925925925925926,
+          "null_rate": 0.06977777777777662,
+          "excess": -0.01051851851851736
+        },
+        "lag2": {
+          "n_pairs": 132,
+          "obs_rate": 0.09848484848484848,
+          "null_rate": 0.0689393939393928,
+          "excess": 0.02954545454545568
+        },
+        "r21": -2.808898847631659
+      },
+      "matched_S": {
+        "lag1": {
+          "n_pairs": 522,
+          "obs_rate": 0.11302681992337164,
+          "null_rate": 0.07726053639846847,
+          "excess": 0.03576628352490317
+        },
+        "lag2": {
+          "n_pairs": 510,
+          "obs_rate": 0.08823529411764706,
+          "null_rate": 0.07817647058823654,
+          "excess": 0.010058823529410515
+        },
+        "r21": 0.2812375941270724
+      }
+    },
+    "60-120": {
+      "n_paragraphs_B": 27,
+      "n_paragraphs_S": 10,
+      "Section_B": {
+        "lag1": {
+          "n_pairs": 299,
+          "obs_rate": 0.056856187290969896,
+          "null_rate": 0.0538461538461529,
+          "excess": 0.0030100334448169993
+        },
+        "lag2": {
+          "n_pairs": 296,
+          "obs_rate": 0.08108108108108109,
+          "null_rate": 0.05270270270270173,
+          "excess": 0.02837837837837935
+        },
+        "r21": 9.427927927925289
+      },
+      "matched_S": {
+        "lag1": {
+          "n_pairs": 107,
+          "obs_rate": 0.11214953271028037,
+          "null_rate": 0.06859813084112044,
+          "excess": 0.04355140186915993
+        },
+        "lag2": {
+          "n_pairs": 106,
+          "obs_rate": 0.05660377358490566,
+          "null_rate": 0.06679245283018767,
+          "excess": -0.010188679245282014
+        },
+        "r21": -0.23394606850754276
+      }
+    },
+    "120-inf": {
+      "n_paragraphs_B": 9,
+      "n_paragraphs_S": 3,
+      "status": "insufficient"
+    }
+  },
+  "latin_codicillus_results": {
+    "3-30": {
+      "lag1": {
+        "n_pairs": 184,
+        "obs_rate": 0.059782608695652176,
+        "null_rate": 0.0699456521739118,
+        "excess": -0.01016304347825962
+      },
+      "lag2": {
+        "n_pairs": 170,
+        "obs_rate": 0.03529411764705882,
+        "null_rate": 0.06482352941176359,
+        "excess": -0.029529411764704763
+      },
+      "r21": 2.9055677886130185
+    },
+    "30-60": {
+      "lag1": {
+        "n_pairs": 180,
+        "obs_rate": 0.03888888888888889,
+        "null_rate": 0.0660555555555544,
+        "excess": -0.027166666666665507
+      },
+      "lag2": {
+        "n_pairs": 174,
+        "obs_rate": 0.06896551724137931,
+        "null_rate": 0.06189655172413687,
+        "excess": 0.007068965517242443
+      },
+      "r21": -0.26020731965310717
+    },
+    "60-120": {
+      "lag1": {
+        "n_pairs": 318,
+        "obs_rate": 0.03459119496855346,
+        "null_rate": 0.049654088050313544,
+        "excess": -0.015062893081760087
+      },
+      "lag2": {
+        "n_pairs": 317,
+        "obs_rate": 0.04416403785488959,
+        "null_rate": 0.04820189274447861,
+        "excess": -0.004037854889589018
+      },
+      "r21": 0.26806635801448564
+    },
+    "120-inf": {
+      "lag1": {
+        "n_pairs": 990,
+        "obs_rate": 0.0595959595959596,
+        "null_rate": 0.04352525252525252,
+        "excess": 0.016070707070707076
+      },
+      "lag2": {
+        "n_pairs": 986,
+        "obs_rate": 0.037525354969574036,
+        "null_rate": 0.04390466531440158,
+        "excess": -0.006379310344827542
+      },
+      "r21": -0.3969526864474711
+    }
+  },
+  "paired_strata": [
+    "30-60",
+    "60-120"
+  ],
+  "surviving_strata": [],
+  "n_surviving": 0,
+  "latin_clean": false,
+  "latin_contaminated_strata": [
+    [
+      "3-30",
+      2.9055677886130185
+    ],
+    [
+      "120-inf",
+      -0.3969526864474711
+    ]
+  ],
+  "verdict_class": "FAIL",
+  "verdict": "C2032 sign-opposition only in 0/2 strata; length confound possible: surviving=[]"
+}

@@ -1,0 +1,355 @@
+{
+  "method": "NL-operational sanity null for V/C-partition methodology",
+  "target": "Italian Dante Inferno (vowels aeiou)",
+  "pre_registered": "PASS if mean NL-vowel overlap >= 60% across NL operational corpora; FAIL if < 40%",
+  "results": [
+    {
+      "name": "Codicillus (Latin alchemy)",
+      "n_tokens": 20000,
+      "baseline_js": 0.27328244321193407,
+      "optimal_js": 0.27269002360503575,
+      "optimal_vowels": [
+        "a",
+        "e",
+        "i",
+        "j",
+        "k",
+        "o",
+        "u",
+        "y",
+        "z"
+      ],
+      "nl_vowel_overlap": 0.6666666666666666,
+      "non_nl_chars": [
+        "j",
+        "k",
+        "z"
+      ],
+      "bootstrap_unique_partitions": 2,
+      "bootstrap_partitions": [
+        {
+          "iter": 0,
+          "js": 0.2783552713088834,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "k",
+            "o",
+            "u",
+            "y",
+            "z"
+          ]
+        },
+        {
+          "iter": 1,
+          "js": 0.28132489368435365,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "j",
+            "k",
+            "o",
+            "u",
+            "y"
+          ]
+        },
+        {
+          "iter": 2,
+          "js": 0.2729514610215138,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "k",
+            "o",
+            "u",
+            "y",
+            "z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mesue Grabadin (Latin pharmacy)",
+      "n_tokens": 20000,
+      "baseline_js": 0.37612961512541954,
+      "optimal_js": 0.3485979636195621,
+      "optimal_vowels": [
+        "a",
+        "e",
+        "i",
+        "k",
+        "o",
+        "s",
+        "u",
+        "w",
+        "x",
+        "y",
+        "z"
+      ],
+      "nl_vowel_overlap": 0.5454545454545454,
+      "non_nl_chars": [
+        "k",
+        "s",
+        "w",
+        "x",
+        "z"
+      ],
+      "bootstrap_unique_partitions": 1,
+      "bootstrap_partitions": [
+        {
+          "iter": 0,
+          "js": 0.35387163785897335,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "k",
+            "o",
+            "s",
+            "u",
+            "w",
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        {
+          "iter": 1,
+          "js": 0.352614275348754,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "k",
+            "o",
+            "s",
+            "u",
+            "w",
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        {
+          "iter": 2,
+          "js": 0.3442185631682019,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "k",
+            "o",
+            "s",
+            "u",
+            "w",
+            "x",
+            "y",
+            "z"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PL Testamentum 1566",
+      "n_tokens": 20000,
+      "baseline_js": 0.33345772306166016,
+      "optimal_js": 0.3328399178418455,
+      "optimal_vowels": [
+        "a",
+        "e",
+        "i",
+        "j",
+        "o",
+        "u",
+        "y"
+      ],
+      "nl_vowel_overlap": 0.8571428571428571,
+      "non_nl_chars": [
+        "j"
+      ],
+      "bootstrap_unique_partitions": 2,
+      "bootstrap_partitions": [
+        {
+          "iter": 0,
+          "js": 0.33522185022612894,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "j",
+            "o",
+            "u",
+            "y",
+            "z"
+          ]
+        },
+        {
+          "iter": 1,
+          "js": 0.3340155765375664,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "j",
+            "o",
+            "u",
+            "y"
+          ]
+        },
+        {
+          "iter": 2,
+          "js": 0.3328048134789497,
+          "vowels": [
+            "a",
+            "e",
+            "i",
+            "j",
+            "o",
+            "u",
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brunschwig 1512 (Latin distillation)",
+      "n_tokens": 20000,
+      "baseline_js": 0.45974616169712096,
+      "optimal_js": 0.3394568877571182,
+      "optimal_vowels": [
+        "a",
+        "e",
+        "n",
+        "o",
+        "t",
+        "u",
+        "x",
+        "y"
+      ],
+      "nl_vowel_overlap": 0.625,
+      "non_nl_chars": [
+        "n",
+        "t",
+        "x"
+      ],
+      "bootstrap_unique_partitions": 1,
+      "bootstrap_partitions": [
+        {
+          "iter": 0,
+          "js": 0.34357175524729866,
+          "vowels": [
+            "a",
+            "e",
+            "n",
+            "o",
+            "t",
+            "u",
+            "x",
+            "y"
+          ]
+        },
+        {
+          "iter": 1,
+          "js": 0.3373985593764042,
+          "vowels": [
+            "a",
+            "e",
+            "n",
+            "o",
+            "t",
+            "u",
+            "x",
+            "y"
+          ]
+        },
+        {
+          "iter": 2,
+          "js": 0.3385522704265813,
+          "vowels": [
+            "a",
+            "e",
+            "n",
+            "o",
+            "t",
+            "u",
+            "x",
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SISMEL Testamentum (Latin alchemy)",
+      "n_tokens": 20000,
+      "baseline_js": 0.23506490884806366,
+      "optimal_js": 0.22897194687343037,
+      "optimal_vowels": [
+        "a",
+        "e",
+        "h",
+        "i",
+        "k",
+        "o",
+        "u",
+        "x"
+      ],
+      "nl_vowel_overlap": 0.625,
+      "non_nl_chars": [
+        "h",
+        "k",
+        "x"
+      ],
+      "bootstrap_unique_partitions": 2,
+      "bootstrap_partitions": [
+        {
+          "iter": 0,
+          "js": 0.23538366406093036,
+          "vowels": [
+            "a",
+            "e",
+            "h",
+            "i",
+            "k",
+            "o",
+            "u",
+            "x"
+          ]
+        },
+        {
+          "iter": 1,
+          "js": 0.22983100005124057,
+          "vowels": [
+            "a",
+            "e",
+            "h",
+            "i",
+            "k",
+            "o",
+            "u",
+            "x"
+          ]
+        },
+        {
+          "iter": 2,
+          "js": 0.22873556610462747,
+          "vowels": [
+            "a",
+            "e",
+            "h",
+            "i",
+            "o",
+            "u",
+            "x",
+            "z"
+          ]
+        }
+      ]
+    }
+  ],
+  "mean_nl_vowel_overlap": 0.6638528138528138,
+  "n_passing_60pct": 4,
+  "verdict": "PASS sanity null: NL operational text recovers NL-vowel-like sets under hill-climbing. Methodology is sound. Voynich's {a,g,h,n,o,r,y} recovery is genuinely structural, not artifact."
+}

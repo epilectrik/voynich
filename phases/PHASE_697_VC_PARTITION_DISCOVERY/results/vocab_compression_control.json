@@ -1,0 +1,307 @@
+{
+  "method": "Vocabulary-compression control for atom-level LSA finding",
+  "pre_registered_criterion": "HEAD+TERM adj - random_hash_167 adj >= 0.10 (atom system real)",
+  "results": {
+    "Voynich Currier B": {
+      "token": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 1436,
+        "adj_mean": 0.3107291312114493,
+        "rand_mean": 0.16971155994042295,
+        "rand_sd": 0.1251128756965391,
+        "gap": 0.14101757127102635
+      },
+      "head_term": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 167,
+        "adj_mean": 0.5637797260495383,
+        "rand_mean": 0.4667186878376641,
+        "rand_sd": 0.12874342963031857,
+        "gap": 0.09706103821187417
+      },
+      "first_3_chars": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 378,
+        "adj_mean": 0.46229901809993895,
+        "rand_mean": 0.31640695667589763,
+        "rand_sd": 0.13794238980380769,
+        "gap": 0.14589206142404132
+      },
+      "first_last": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 150,
+        "adj_mean": 0.4972749726104578,
+        "rand_mean": 0.3766264008415786,
+        "rand_sd": 0.12423935634231098,
+        "gap": 0.12064857176887916
+      },
+      "random_hash_167": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 167,
+        "adj_mean": 0.3615650657420186,
+        "rand_mean": 0.27631991612334855,
+        "rand_sd": 0.11003471681080525,
+        "gap": 0.08524514961867002
+      },
+      "random_hash_100": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 100,
+        "adj_mean": 0.3775183583145698,
+        "rand_mean": 0.3088451306394462,
+        "rand_sd": 0.10456614095877399,
+        "gap": 0.06867322767512363
+      },
+      "random_hash_50": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 50,
+        "adj_mean": 0.4238605048583627,
+        "rand_mean": 0.3701623032040366,
+        "rand_sd": 0.10161665553195999,
+        "gap": 0.053698201654326094
+      },
+      "first_1_char": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 18,
+        "adj_mean": 0.8007257835436895,
+        "rand_mean": 0.6965022303391297,
+        "rand_sd": 0.13757790483761662,
+        "gap": 0.10422355320455978
+      }
+    },
+    "Codicillus": {
+      "token": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 1638,
+        "adj_mean": 0.370530123467712,
+        "rand_mean": 0.18005784052103382,
+        "rand_sd": 0.13989694933722086,
+        "gap": 0.1904722829466782
+      },
+      "head_term": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 927,
+        "adj_mean": 0.4590030444804717,
+        "rand_mean": 0.3285594198556187,
+        "rand_sd": 0.1320432273433699,
+        "gap": 0.13044362462485298
+      },
+      "first_3_chars": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 966,
+        "adj_mean": 0.41263938944820194,
+        "rand_mean": 0.21964207410769893,
+        "rand_sd": 0.12311554852172991,
+        "gap": 0.19299731534050302
+      },
+      "first_last": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 294,
+        "adj_mean": 0.39594598855235535,
+        "rand_mean": 0.2920723567006685,
+        "rand_sd": 0.1067999627058014,
+        "gap": 0.10387363185168685
+      },
+      "random_hash_167": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 167,
+        "adj_mean": 0.3779886706009017,
+        "rand_mean": 0.28698144369700096,
+        "rand_sd": 0.11167366689521598,
+        "gap": 0.09100722690390073
+      },
+      "random_hash_100": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 100,
+        "adj_mean": 0.3942900637945448,
+        "rand_mean": 0.3195941473962464,
+        "rand_sd": 0.11081780828618655,
+        "gap": 0.07469591639829837
+      },
+      "random_hash_50": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 50,
+        "adj_mean": 0.43810419039714865,
+        "rand_mean": 0.3845181218615147,
+        "rand_sd": 0.10631798842041386,
+        "gap": 0.05358606853563397
+      },
+      "first_1_char": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 24,
+        "adj_mean": 0.681438255141425,
+        "rand_mean": 0.6176174499200552,
+        "rand_sd": 0.11488931600965792,
+        "gap": 0.06382080522136979
+      }
+    },
+    "PL Testamentum 1566": {
+      "token": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 1872,
+        "adj_mean": 0.30319786237215396,
+        "rand_mean": 0.13971661996552348,
+        "rand_sd": 0.1213607097664517,
+        "gap": 0.16348124240663048
+      },
+      "head_term": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 984,
+        "adj_mean": 0.4169898837182397,
+        "rand_mean": 0.33715753120754755,
+        "rand_sd": 0.13013713356855972,
+        "gap": 0.07983235251069215
+      },
+      "first_3_chars": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 581,
+        "adj_mean": 0.39576913429309696,
+        "rand_mean": 0.21261328341012123,
+        "rand_sd": 0.12534510788582937,
+        "gap": 0.18315585088297573
+      },
+      "first_last": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 226,
+        "adj_mean": 0.35080090360162286,
+        "rand_mean": 0.27628168824707483,
+        "rand_sd": 0.10405914754226844,
+        "gap": 0.07451921535454803
+      },
+      "random_hash_167": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 167,
+        "adj_mean": 0.3378410880430114,
+        "rand_mean": 0.26949945412258497,
+        "rand_sd": 0.10696820564529534,
+        "gap": 0.06834163392042641
+      },
+      "random_hash_100": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 100,
+        "adj_mean": 0.3689303240521272,
+        "rand_mean": 0.3114143299536767,
+        "rand_sd": 0.10486597136263008,
+        "gap": 0.05751599409845054
+      },
+      "random_hash_50": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 50,
+        "adj_mean": 0.4115923001986094,
+        "rand_mean": 0.37153663693038075,
+        "rand_sd": 0.0989776243347296,
+        "gap": 0.040055663268228625
+      },
+      "first_1_char": {
+        "n_tokens": 20000,
+        "n_blocks": 667,
+        "vocab_size": 22,
+        "adj_mean": 0.6657774632456058,
+        "rand_mean": 0.6178857132144401,
+        "rand_sd": 0.12368302379747959,
+        "gap": 0.04789175003116575
+      }
+    },
+    "Caesar": {
+      "token": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 959,
+        "adj_mean": 0.20756101116451262,
+        "rand_mean": 0.11653677287816133,
+        "rand_sd": 0.12669780273624454,
+        "gap": 0.09102423828635128
+      },
+      "head_term": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 504,
+        "adj_mean": 0.3776292899561278,
+        "rand_mean": 0.31160125692799,
+        "rand_sd": 0.12768815078362866,
+        "gap": 0.06602803302813781
+      },
+      "first_3_chars": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 494,
+        "adj_mean": 0.2873478949506074,
+        "rand_mean": 0.1814658558966186,
+        "rand_sd": 0.12063927386973726,
+        "gap": 0.10588203905398882
+      },
+      "first_last": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 194,
+        "adj_mean": 0.30027713895134667,
+        "rand_mean": 0.2577138890698336,
+        "rand_sd": 0.10734851600781824,
+        "gap": 0.042563249881513054
+      },
+      "random_hash_167": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 167,
+        "adj_mean": 0.272215877425501,
+        "rand_mean": 0.23771219325857487,
+        "rand_sd": 0.10080260890866662,
+        "gap": 0.034503684166926146
+      },
+      "random_hash_100": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 100,
+        "adj_mean": 0.3125588157996481,
+        "rand_mean": 0.2908676579664391,
+        "rand_sd": 0.0977546426359727,
+        "gap": 0.021691157833209018
+      },
+      "random_hash_50": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 50,
+        "adj_mean": 0.39338234473557626,
+        "rand_mean": 0.380524608141361,
+        "rand_sd": 0.09705380000627002,
+        "gap": 0.012857736594215241
+      },
+      "first_1_char": {
+        "n_tokens": 8012,
+        "n_blocks": 267,
+        "vocab_size": 21,
+        "adj_mean": 0.6626827272594644,
+        "rand_mean": 0.6378970618060117,
+        "rand_sd": 0.10622067272432366,
+        "gap": 0.024785665453452732
+      }
+    }
+  },
+  "voynich_head_term_adj": 0.5637797260495383,
+  "voynich_random_hash_167_adj": 0.3615650657420186,
+  "voynich_gap": 0.20221466030751972,
+  "pass_atom_system_real": true,
+  "verdict": "ATOM-SYSTEM HYPOTHESIS SURVIVES: HEAD+TERM coherence is significantly higher than vocab-matched random hash (gap >= 0.10)"
+}

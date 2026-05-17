@@ -4,6 +4,59 @@
 
 ---
 
+## Version 6.68 (2026-05-17) - PHASE 697: V/C-Partition Projection Flexibility
+
+### Summary
+
+Long-arc session triggered by analysis of Layfield & Davis (2026 DHQ) LSA paper. Evolved through programming-language comparison → EVA-vowel critique → V/C-partition hill-climb discovery → bootstrap stability → three discriminating tests → multiple narrowings → final flexibility-only framing.
+
+**Result:** C2033 registered as Tier 2 measurement at narrow scope (flexibility, NOT closeness). Three operational overclaims caught and retracted by pre-registered controls during the phase, all documented in PHASE_697 audit trail.
+
+### Main finding (C2033)
+
+Voynich Currier B's V/C-partition optimization shows uniquely large hill-climb improvement (+0.286 bits) compared to 8 natural-language Latin baselines (max +0.120, mean +0.020). Most NL Latin corpora improve essentially zero (≤0.01) — their known vowels are already near-optimal for projection to Italian. Voynich is uniquely *flexible* (tunable via V/C choice), NOT uniquely *close* to Italian (SISMEL Latin baseline 0.229 is below Voynich's optimal 0.257).
+
+### The three narrowings (methodology audit trail)
+
+1. **"Methodology rediscovers slot grammar" → false.** Caught by atom-role uniqueness check (Control 3): partition is a SUBSET of positionally-locked atoms (5/7), not all of them. 9 other atoms (e, i, q, m, k, t, d, f, s) excluded.
+
+2. **"Voynich uniquely close to Italian" → false.** Caught by NL→NL hill-climb ceiling control: SISMEL Latin baseline 0.229 is below Voynich's hill-climb optimum 0.257. Codicillus baseline 0.270 ≈ Voynich optimal.
+
+3. **"Designer prosodic bias toward Italian" → false.** Wild Tier 4 hypothesis required Voynich to project closer to Italian than NL does. Killed by narrowing 2.
+
+**Surviving framing:** Voynich has uniquely flexible projection space. Improvement metric is robust to all three narrowings.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| C2033 | NEW (Tier 2): V/C-partition projection flexibility — Voynich uniquely tunable vs NL Latin baselines |
+| context/CLAIMS/INDEX.md | C2033 added; total 2027 → 2028; version 6.67 → 6.68 |
+| CLAUDE.md | Version 6.67 → 6.68; constraints → 2028; phases → 694 |
+| phases/PHASE_697_VC_PARTITION_DISCOVERY/ | NEW phase folder with INDEX.md, 18 scripts, 33 results |
+| memory/feedback_calibrate_thresholds_against_controls.md | NEW: methodology note on pre-registered numerical thresholds requiring empirical calibration before locking |
+
+### Methodology Contributions
+
+- **Pre-registered threshold calibration warning** (`feedback_calibrate_thresholds_against_controls.md`): Pre-bookkeeping ceiling threshold ≤0.10 turned out to be wrong (actual cross-NL ceiling 0.319). When metric is new, calibrate against control distributions BEFORE locking binary criteria.
+- **Improvement-vs-final-JS framing matters**: Today's measurement-class fact ("Voynich uniquely tunable") survives where the operational-class fact ("Voynich uniquely Italian-close") died.
+- **Substrate-axis findings can be re-cast as operational by interpretation creep**: This phase had three narrowings, each killing an operational interpretation while a substrate-level measurement survived.
+
+### Confound disclaimers (in C2033 registration text)
+
+1. **Character inventory asymmetry**: Voynich 20 chars vs Latin 22-26. Uncontrolled.
+2. **Baseline JS asymmetry**: Voynich baseline (0.544) is far higher than NL Latin baselines. Normalized improvement still gives Voynich 52.5% vs Brunschwig 26% (2× max NL).
+3. **N=1 in engineered-grammar column**: Cross-script/synthetic-corpus test queued PHASE_698.
+
+### Queued for next session (PHASE_698 candidates)
+
+1. Synthetic-corpus control (M2.1/C1365 generative test)
+2. Cross-script transfer (Sloane sigils, Datini marks, Trithemius cipher)
+3. Non-romance target test (Greek, Hebrew, Arabic targets)
+4. Atom-partition alignment test (V/C optimum vs HEAD+MOD+TERM grammar)
+
+---
+
 ## Version 6.67 (2026-05-16) - Engineered Substrate Triad + Cross-Language Validation
 
 ### Summary

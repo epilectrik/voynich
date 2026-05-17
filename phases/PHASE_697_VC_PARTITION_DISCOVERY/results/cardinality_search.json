@@ -1,0 +1,403 @@
+{
+  "method": "Cardinality search \u00d74/\u00d79 in non-Voynich corpora (Option A, 2026-05-17)",
+  "pre_registered": "PASS Reading A if zero \u00d74 identical-word runs in any NL Latin corpus per 20K tokens",
+  "voynich_baseline_x4_runs": 1,
+  "voynich_baseline_x9_clusters": 10606,
+  "results": [
+    {
+      "name": "Voynich Currier B (control)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 1,
+      "n_runs_x3_or_longer": 7,
+      "n_runs_x2_or_longer": 165,
+      "n_clusters_9_in_60": 10606,
+      "n_clusters_7_in_60": 21223,
+      "x4_runs": [
+        {
+          "position": 2990,
+          "length": 4,
+          "token": "qokedy"
+        }
+      ],
+      "x9_clusters": [
+        {
+          "position": 9,
+          "class": "qok",
+          "count": 9
+        },
+        {
+          "position": 10,
+          "class": "qok",
+          "count": 9
+        },
+        {
+          "position": 11,
+          "class": "qok",
+          "count": 9
+        },
+        {
+          "position": 12,
+          "class": "qok",
+          "count": 9
+        },
+        {
+          "position": 13,
+          "class": "qok",
+          "count": 9
+        }
+      ],
+      "category": "voynich"
+    },
+    {
+      "name": "Codicillus (Latin alchemy)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 2,
+      "n_runs_x3_or_longer": 4,
+      "n_runs_x2_or_longer": 92,
+      "n_clusters_9_in_60": 5406,
+      "n_clusters_7_in_60": 10922,
+      "x4_runs": [
+        {
+          "position": 18640,
+          "length": 5,
+          "token": "red"
+        },
+        {
+          "position": 18653,
+          "length": 8,
+          "token": "red"
+        }
+      ],
+      "x9_clusters": [
+        {
+          "position": 142,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 143,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 144,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 145,
+          "class": "et",
+          "count": 10
+        },
+        {
+          "position": 146,
+          "class": "et",
+          "count": 10
+        }
+      ],
+      "category": "operational_latin"
+    },
+    {
+      "name": "Mesue Grabadin (Latin pharmacy)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 7,
+      "n_clusters_9_in_60": 0,
+      "n_clusters_7_in_60": 115,
+      "x4_runs": [],
+      "x9_clusters": [],
+      "category": "operational_latin"
+    },
+    {
+      "name": "Brunschwig 1512 (Latin distillation)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 8,
+      "n_clusters_9_in_60": 780,
+      "n_clusters_7_in_60": 3467,
+      "x4_runs": [],
+      "x9_clusters": [
+        {
+          "position": 667,
+          "class": "vnd",
+          "count": 9
+        },
+        {
+          "position": 1158,
+          "class": "vnd",
+          "count": 9
+        },
+        {
+          "position": 1159,
+          "class": "vnd",
+          "count": 9
+        },
+        {
+          "position": 1160,
+          "class": "vnd",
+          "count": 9
+        },
+        {
+          "position": 1161,
+          "class": "vnd",
+          "count": 9
+        }
+      ],
+      "category": "operational_latin"
+    },
+    {
+      "name": "SISMEL Testamentum (Latin alchemy)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 1,
+      "n_runs_x3_or_longer": 2,
+      "n_runs_x2_or_longer": 22,
+      "n_clusters_9_in_60": 66,
+      "n_clusters_7_in_60": 776,
+      "x4_runs": [
+        {
+          "position": 2120,
+          "length": 4,
+          "token": "iii"
+        }
+      ],
+      "x9_clusters": [
+        {
+          "position": 2531,
+          "class": "de",
+          "count": 9
+        },
+        {
+          "position": 2532,
+          "class": "de",
+          "count": 9
+        },
+        {
+          "position": 6408,
+          "class": "del",
+          "count": 9
+        },
+        {
+          "position": 6409,
+          "class": "del",
+          "count": 9
+        },
+        {
+          "position": 6410,
+          "class": "del",
+          "count": 9
+        }
+      ],
+      "category": "operational_latin"
+    },
+    {
+      "name": "PL Testamentum 1566",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 7,
+      "n_clusters_9_in_60": 251,
+      "n_clusters_7_in_60": 1049,
+      "x4_runs": [],
+      "x9_clusters": [
+        {
+          "position": 0,
+          "class": "sig",
+          "count": 14
+        },
+        {
+          "position": 1,
+          "class": "sig",
+          "count": 13
+        },
+        {
+          "position": 2,
+          "class": "sig",
+          "count": 13
+        },
+        {
+          "position": 3,
+          "class": "sig",
+          "count": 12
+        },
+        {
+          "position": 4,
+          "class": "sig",
+          "count": 12
+        }
+      ],
+      "category": "operational_latin"
+    },
+    {
+      "name": "Antidotarium Nicolai (Latin pharmacy)",
+      "n_tokens": 17896,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 59,
+      "n_clusters_9_in_60": 1133,
+      "n_clusters_7_in_60": 4344,
+      "x4_runs": [],
+      "x9_clusters": [
+        {
+          "position": 985,
+          "class": "end",
+          "count": 9
+        },
+        {
+          "position": 986,
+          "class": "end",
+          "count": 9
+        },
+        {
+          "position": 987,
+          "class": "end",
+          "count": 9
+        },
+        {
+          "position": 988,
+          "class": "end",
+          "count": 9
+        },
+        {
+          "position": 989,
+          "class": "end",
+          "count": 9
+        }
+      ],
+      "category": "operational_latin"
+    },
+    {
+      "name": "Cicero Catilinarian 1 (NL Latin)",
+      "n_tokens": 3287,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 4,
+      "n_clusters_9_in_60": 0,
+      "n_clusters_7_in_60": 42,
+      "x4_runs": [],
+      "x9_clusters": [],
+      "category": "nl_latin"
+    },
+    {
+      "name": "Caesar Bellum Gallicum 1 (NL Latin)",
+      "n_tokens": 8012,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 0,
+      "n_clusters_9_in_60": 4,
+      "n_clusters_7_in_60": 71,
+      "x4_runs": [],
+      "x9_clusters": [
+        {
+          "position": 1820,
+          "class": "quo",
+          "count": 9
+        },
+        {
+          "position": 1821,
+          "class": "quo",
+          "count": 9
+        },
+        {
+          "position": 1822,
+          "class": "quo",
+          "count": 9
+        },
+        {
+          "position": 1823,
+          "class": "quo",
+          "count": 9
+        }
+      ],
+      "category": "nl_latin"
+    },
+    {
+      "name": "Piccolomini correspondence (NL Latin)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 24,
+      "n_clusters_9_in_60": 91,
+      "n_clusters_7_in_60": 378,
+      "x4_runs": [],
+      "x9_clusters": [
+        {
+          "position": 4336,
+          "class": "fr",
+          "count": 9
+        },
+        {
+          "position": 4337,
+          "class": "fr",
+          "count": 9
+        },
+        {
+          "position": 4338,
+          "class": "fr",
+          "count": 9
+        },
+        {
+          "position": 4339,
+          "class": "fr",
+          "count": 9
+        },
+        {
+          "position": 4340,
+          "class": "fr",
+          "count": 9
+        }
+      ],
+      "category": "nl_latin"
+    },
+    {
+      "name": "Ebendorfer Chronica (NL Latin)",
+      "n_tokens": 20000,
+      "n_runs_x4_or_longer": 0,
+      "n_runs_x3_or_longer": 0,
+      "n_runs_x2_or_longer": 4,
+      "n_clusters_9_in_60": 89,
+      "n_clusters_7_in_60": 429,
+      "x4_runs": [],
+      "x9_clusters": [
+        {
+          "position": 10065,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 10066,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 10067,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 10075,
+          "class": "et",
+          "count": 9
+        },
+        {
+          "position": 10076,
+          "class": "et",
+          "count": 9
+        }
+      ],
+      "category": "nl_latin"
+    }
+  ],
+  "operational_latin_summary": {
+    "total_x4_runs": 3,
+    "max_x4_runs_per_corpus": 2,
+    "n_corpora": 6
+  },
+  "nl_latin_summary": {
+    "total_x4_runs": 0,
+    "max_x4_runs_per_corpus": 0,
+    "n_corpora": 4
+  },
+  "verdict": "FAIL Reading A (anchor not operational-specific): 2 \u00d74-run found in operational Latin. Anchor occurs in NL operational text."
+}

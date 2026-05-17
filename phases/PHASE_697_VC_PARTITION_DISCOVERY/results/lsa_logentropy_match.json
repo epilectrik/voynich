@@ -1,0 +1,75 @@
+{
+  "method": "Log-Entropy LSA replication of Layfield & Davis with variable 20-40 block sizes",
+  "filtering": "H-track + P-placement",
+  "n_tokens": 33036,
+  "n_blocks": 1136,
+  "layfield_davis_reported": {
+    "overall": 0.483,
+    "page_break": 0.421,
+    "section_break": 0.323,
+    "A_to_B_or_B_to_A": 0.206,
+    "B_to_B": 0.332
+  },
+  "configs": {
+    "variable_20_40_dim_50": {
+      "n_blocks": 1136,
+      "dim": 50,
+      "overall": 0.3420595735071347,
+      "within_folio": 0.3577521405660358,
+      "page_break": 0.30638355398786665,
+      "section_break": 0.17025603894194538,
+      "language_transition": 0.06126099047087612,
+      "A_to_B_or_B_to_A": 0.08029990073801854,
+      "B_to_B": 0.33817854688653265,
+      "A_to_A": 0.3720274026719529,
+      "random_null_mean": 0.15295730420148873,
+      "random_null_sd": 0.13805596216925467,
+      "z": 1.3697508338959619
+    },
+    "variable_20_40_dim_100": {
+      "n_blocks": 1136,
+      "dim": 100,
+      "overall": 0.2295629630950739,
+      "within_folio": 0.2419164937051087,
+      "page_break": 0.1987126530811974,
+      "section_break": 0.08748952860269182,
+      "language_transition": 0.03390653630019715,
+      "A_to_B_or_B_to_A": 0.03941675822619588,
+      "B_to_B": 0.2301608715228424,
+      "A_to_A": 0.24475137412444825,
+      "random_null_mean": 0.10114195763900219,
+      "random_null_sd": 0.10389012157086291,
+      "z": 1.2361233533495908
+    },
+    "variable_20_40_dim_200": {
+      "n_blocks": 1136,
+      "dim": 200,
+      "overall": 0.15594122710867928,
+      "within_folio": 0.1649302994456313,
+      "page_break": 0.1312847101951839,
+      "section_break": 0.056597392162748145,
+      "language_transition": 0.027381150951378472,
+      "A_to_B_or_B_to_A": 0.03447178265244245,
+      "B_to_B": 0.15764249009961462,
+      "A_to_A": 0.1630635541959176,
+      "random_null_mean": 0.05935168675836682,
+      "random_null_sd": 0.07258207028288746,
+      "z": 1.3307630930594325
+    },
+    "variable_20_40_dim_300": {
+      "n_blocks": 1136,
+      "dim": 300,
+      "overall": 0.12353031382268269,
+      "within_folio": 0.13113480075463643,
+      "page_break": 0.101684525095441,
+      "section_break": 0.04855920962580732,
+      "language_transition": 0.015991013615187184,
+      "A_to_B_or_B_to_A": 0.02067400828521093,
+      "B_to_B": 0.12616003540015547,
+      "A_to_A": 0.12680678900910028,
+      "random_null_mean": 0.051887949518034174,
+      "random_null_sd": 0.06369053623137294,
+      "z": 1.1248510146686226
+    }
+  }
+}

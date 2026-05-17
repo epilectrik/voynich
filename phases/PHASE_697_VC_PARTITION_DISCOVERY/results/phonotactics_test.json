@@ -1,0 +1,160 @@
+{
+  "method": "Token-internal phonotactics test (Option C, 2026-05-17)",
+  "metric": "Jensen-Shannon divergence of CV-pattern distributions",
+  "pre_registered": "PASS Reading B if min JS<0.20; PASS Reading A if min JS>0.40; AMBIGUOUS in between",
+  "voynich_top_cv_patterns": [
+    [
+      "VC",
+      1130
+    ],
+    [
+      "CVC",
+      1123
+    ],
+    [
+      "CCVCV",
+      1082
+    ],
+    [
+      "VCVC",
+      884
+    ],
+    [
+      "CVCVC",
+      730
+    ],
+    [
+      "CVVVC",
+      641
+    ],
+    [
+      "VCVVVC",
+      525
+    ],
+    [
+      "CCVC",
+      506
+    ],
+    [
+      "CVCVVC",
+      485
+    ],
+    [
+      "CCVV",
+      484
+    ],
+    [
+      "VCVVC",
+      464
+    ],
+    [
+      "CCVVC",
+      448
+    ],
+    [
+      "CVCVVVC",
+      428
+    ],
+    [
+      "CVCVCV",
+      420
+    ],
+    [
+      "CVCVVCV",
+      414
+    ]
+  ],
+  "cv_pattern_distances": {
+    "Codicillus (Latin)": {
+      "js_divergence_bits": 0.43442416819540686,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 1036,
+      "shared_patterns": 299
+    },
+    "Mesue (Latin pharmacy)": {
+      "js_divergence_bits": 0.3978823347608331,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 22832,
+      "shared_patterns": 556
+    },
+    "PL Testamentum 1566": {
+      "js_divergence_bits": 0.4489791013590603,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 1699,
+      "shared_patterns": 369
+    },
+    "Cicero (Latin)": {
+      "js_divergence_bits": 0.5004497338522325,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 360,
+      "shared_patterns": 145
+    },
+    "Caesar (Latin)": {
+      "js_divergence_bits": 0.49989200967942937,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 564,
+      "shared_patterns": 187
+    },
+    "Piccolomini (Latin)": {
+      "js_divergence_bits": 0.44474517505137157,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 2282,
+      "shared_patterns": 370
+    },
+    "Ebendorfer (Latin)": {
+      "js_divergence_bits": 0.48139141532943686,
+      "voynich_unique_patterns": 577,
+      "comp_unique_patterns": 1840,
+      "shared_patterns": 336
+    }
+  },
+  "position_vowel_voynich": {
+    "0": 0.33563165201295697,
+    "1": 0.37325983369148835,
+    "2": 0.5138091195125606,
+    "3": 0.5828533816027646,
+    "4": 0.5356267029972752,
+    "5": 0.5646787985090989,
+    "6": 0.5872320811246831,
+    "7": 0.6009085009733939,
+    "8": 0.5458015267175572,
+    "9": 0.5231788079470199,
+    "10": 0.6,
+    "11": 0.5263157894736842,
+    "12": 0.6,
+    "13": 0.0
+  },
+  "position_vowel_distances": {
+    "Codicillus (Latin)": {
+      "rmse_position_vowel": 0.16337948569484712,
+      "n_positions": 14
+    },
+    "Mesue (Latin pharmacy)": {
+      "rmse_position_vowel": 0.1749582129032252,
+      "n_positions": 14
+    },
+    "PL Testamentum 1566": {
+      "rmse_position_vowel": 0.158394861398645,
+      "n_positions": 14
+    },
+    "Cicero (Latin)": {
+      "rmse_position_vowel": 0.20105156394969834,
+      "n_positions": 14
+    },
+    "Caesar (Latin)": {
+      "rmse_position_vowel": 0.17475825400415138,
+      "n_positions": 14
+    },
+    "Piccolomini (Latin)": {
+      "rmse_position_vowel": 0.18701465043484206,
+      "n_positions": 14
+    },
+    "Ebendorfer (Latin)": {
+      "rmse_position_vowel": 0.170180177214688,
+      "n_positions": 14
+    }
+  },
+  "min_js": 0.3978823347608331,
+  "closest_match": "Mesue (Latin pharmacy)",
+  "verdict": "AMBIGUOUS: minimum JS=0.3979 bits (0.20-0.40 range; partial NL plausibility)"
+}

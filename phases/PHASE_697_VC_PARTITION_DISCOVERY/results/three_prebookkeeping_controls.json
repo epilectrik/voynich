@@ -1,0 +1,318 @@
+{
+  "method": "Three pre-bookkeeping controls for C2033",
+  "results": {
+    "control_1_shuffle_null": {
+      "reference_recovers": true,
+      "shuffle_trials": [
+        {
+          "trial": 0,
+          "js": 0.5451949781532193,
+          "vowels": [
+            "a",
+            "e",
+            "g",
+            "h",
+            "i",
+            "m",
+            "n",
+            "p",
+            "s",
+            "t"
+          ],
+          "recovers_core": false,
+          "overlap_with_core": 4
+        },
+        {
+          "trial": 1,
+          "js": 0.5463139620358788,
+          "vowels": [
+            "d",
+            "f",
+            "g",
+            "i",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "x",
+            "y"
+          ],
+          "recovers_core": false,
+          "overlap_with_core": 5
+        },
+        {
+          "trial": 2,
+          "js": 0.547580562816906,
+          "vowels": [
+            "d",
+            "e",
+            "g",
+            "l",
+            "o",
+            "r",
+            "s",
+            "t"
+          ],
+          "recovers_core": false,
+          "overlap_with_core": 3
+        }
+      ],
+      "n_recovers": 0,
+      "mean_overlap": 4.0,
+      "verdict": "PASS: shuffled-Voynich does NOT recover core (0/3 trials, mean overlap 4.0/7). Positional structure was load-bearing."
+    },
+    "control_2_frequency_confound": {
+      "char_frequencies": {
+        "e": 13493,
+        "o": 13091,
+        "y": 10796,
+        "h": 9448,
+        "a": 8633,
+        "d": 8243,
+        "i": 7037,
+        "k": 6943,
+        "c": 6783,
+        "l": 6078,
+        "r": 3991,
+        "q": 3980,
+        "s": 3804,
+        "n": 3804,
+        "t": 3672,
+        "p": 1010,
+        "m": 581,
+        "f": 260,
+        "g": 28,
+        "x": 22
+      },
+      "top_7": [
+        "a",
+        "d",
+        "e",
+        "h",
+        "i",
+        "o",
+        "y"
+      ],
+      "top_7_minus_kernel": [
+        "a",
+        "h",
+        "n",
+        "o",
+        "q",
+        "r",
+        "y"
+      ],
+      "exact_match_naive": false,
+      "exact_match_minus_kernel": false,
+      "overlap": 4,
+      "verdict": "PASS: V/C core != top-7-by-frequency (4/7 overlap). Not pure frequency artifact."
+    },
+    "control_3_atom_uniqueness": {
+      "all_chars_position_data": [
+        {
+          "char": "h",
+          "max_pct": 0.9986240474174428,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.00010584250635055038,
+          "MIDDLE": 0.9986240474174428,
+          "FINAL": 0.0012701100762066045,
+          "total": 9448,
+          "in_core": true
+        },
+        {
+          "char": "i",
+          "max_pct": 0.9980105158448203,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.0015631661219269574,
+          "MIDDLE": 0.9980105158448203,
+          "FINAL": 0.0004263180332528066,
+          "total": 7037,
+          "in_core": false
+        },
+        {
+          "char": "q",
+          "max_pct": 0.9944723618090452,
+          "max_bucket": "INITIAL",
+          "INITIAL": 0.9944723618090452,
+          "MIDDLE": 0.005527638190954774,
+          "FINAL": 0.0,
+          "total": 3980,
+          "in_core": false
+        },
+        {
+          "char": "n",
+          "max_pct": 0.9931650893796005,
+          "max_bucket": "FINAL",
+          "INITIAL": 0.0,
+          "MIDDLE": 0.006834910620399579,
+          "FINAL": 0.9931650893796005,
+          "total": 3804,
+          "in_core": true
+        },
+        {
+          "char": "e",
+          "max_pct": 0.9929593122359742,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.004076187652857037,
+          "MIDDLE": 0.9929593122359742,
+          "FINAL": 0.002964500111168754,
+          "total": 13493,
+          "in_core": false
+        },
+        {
+          "char": "m",
+          "max_pct": 0.9636048526863085,
+          "max_bucket": "FINAL",
+          "INITIAL": 0.0,
+          "MIDDLE": 0.036395147313691506,
+          "FINAL": 0.9636048526863085,
+          "total": 577,
+          "in_core": false
+        },
+        {
+          "char": "y",
+          "max_pct": 0.9043405365126677,
+          "max_bucket": "FINAL",
+          "INITIAL": 0.07842771982116245,
+          "MIDDLE": 0.017231743666169894,
+          "FINAL": 0.9043405365126677,
+          "total": 10736,
+          "in_core": true
+        },
+        {
+          "char": "k",
+          "max_pct": 0.9009073887368573,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.09318738297565894,
+          "MIDDLE": 0.9009073887368573,
+          "FINAL": 0.0059052282874837965,
+          "total": 6943,
+          "in_core": false
+        },
+        {
+          "char": "a",
+          "max_pct": 0.8447816518012279,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.15313332561102747,
+          "MIDDLE": 0.8447816518012279,
+          "FINAL": 0.0020850225877447007,
+          "total": 8633,
+          "in_core": true
+        },
+        {
+          "char": "t",
+          "max_pct": 0.837101607191501,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.15826750204304005,
+          "MIDDLE": 0.837101607191501,
+          "FINAL": 0.004630890765459003,
+          "total": 3671,
+          "in_core": false
+        },
+        {
+          "char": "d",
+          "max_pct": 0.783036039315617,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.17461473122193907,
+          "MIDDLE": 0.783036039315617,
+          "FINAL": 0.04234922946244388,
+          "total": 8241,
+          "in_core": false
+        },
+        {
+          "char": "r",
+          "max_pct": 0.7498736735725113,
+          "max_bucket": "FINAL",
+          "INITIAL": 0.07857503789792825,
+          "MIDDLE": 0.1715512885295604,
+          "FINAL": 0.7498736735725113,
+          "total": 3958,
+          "in_core": true
+        },
+        {
+          "char": "f",
+          "max_pct": 0.7192307692307692,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.25,
+          "MIDDLE": 0.7192307692307692,
+          "FINAL": 0.03076923076923077,
+          "total": 260,
+          "in_core": false
+        },
+        {
+          "char": "s",
+          "max_pct": 0.6298960831334932,
+          "max_bucket": "INITIAL",
+          "INITIAL": 0.6298960831334932,
+          "MIDDLE": 0.2533972821742606,
+          "FINAL": 0.11670663469224621,
+          "total": 3753,
+          "in_core": false
+        },
+        {
+          "char": "p",
+          "max_pct": 0.595049504950495,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.39504950495049507,
+          "MIDDLE": 0.595049504950495,
+          "FINAL": 0.009900990099009901,
+          "total": 1010,
+          "in_core": false
+        },
+        {
+          "char": "o",
+          "max_pct": 0.5916602907421576,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.3781178270849273,
+          "MIDDLE": 0.5916602907421576,
+          "FINAL": 0.030221882172915073,
+          "total": 13070,
+          "in_core": true
+        },
+        {
+          "char": "c",
+          "max_pct": 0.5141551164848127,
+          "max_bucket": "MIDDLE",
+          "INITIAL": 0.4858448835151873,
+          "MIDDLE": 0.5141551164848127,
+          "FINAL": 0.0,
+          "total": 6782,
+          "in_core": false
+        },
+        {
+          "char": "l",
+          "max_pct": 0.5023140495867768,
+          "max_bucket": "FINAL",
+          "INITIAL": 0.1925619834710744,
+          "MIDDLE": 0.30512396694214877,
+          "FINAL": 0.5023140495867768,
+          "total": 6050,
+          "in_core": false
+        }
+      ],
+      "high_max_in_core": [
+        "h",
+        "n",
+        "y",
+        "a",
+        "r"
+      ],
+      "high_max_not_in_core": [
+        "i",
+        "q",
+        "e",
+        "m",
+        "k",
+        "t",
+        "d",
+        "f",
+        "s"
+      ],
+      "verdict": "FAIL: 9 chars outside core have max-bucket>=60%. Many chars share positional concentration; core selection is post-hoc."
+    }
+  },
+  "all_pass": false,
+  "overall_verdict": "CONTROLS ['3'] FAILED - registration may need revision before bookkeeping"
+}
