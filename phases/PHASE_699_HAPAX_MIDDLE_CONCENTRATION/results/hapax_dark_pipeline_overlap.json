@@ -1,0 +1,394 @@
+{
+  "method": "Hapax \u00d7 Dark Pipeline overlap test (PHASE_699 follow-up)",
+  "n_dark_pipeline_total": 300,
+  "n_dark_pipeline_in_current_B": 249,
+  "n_hapax_middles": 820,
+  "n_hapax_dark_overlap": 78,
+  "n_hapax_not_dark": 742,
+  "n_dark_not_hapax": 171,
+  "hapax_dark_overlap_list": [
+    "aiino",
+    "aip",
+    "ala",
+    "alod",
+    "cfheo",
+    "ckhyd",
+    "cs",
+    "ctheo",
+    "dair",
+    "dii",
+    "dl",
+    "dyd",
+    "dydy",
+    "dyto",
+    "eam",
+    "eea",
+    "eekeo",
+    "eeok",
+    "eeyt",
+    "ekeod",
+    "eoa",
+    "eold",
+    "eos",
+    "eoteo",
+    "etch",
+    "fo",
+    "fsh",
+    "ik",
+    "ind",
+    "ip",
+    "irai",
+    "kair",
+    "kcheo",
+    "kchod",
+    "keeok",
+    "kol",
+    "kor",
+    "ldak",
+    "loeee",
+    "ockho",
+    "ocpheo",
+    "octho",
+    "odaii",
+    "odal",
+    "odch",
+    "ode",
+    "odo",
+    "ody",
+    "oekeo",
+    "oet",
+    "ofar",
+    "ofcho",
+    "okcho",
+    "okeo",
+    "oksh",
+    "olsh",
+    "olyd",
+    "opcho",
+    "oqo",
+    "oqot",
+    "ord",
+    "otai",
+    "oto",
+    "oy",
+    "pa",
+    "pcho",
+    "pyd",
+    "qeke",
+    "rain",
+    "rais",
+    "rk",
+    "yai",
+    "yaii",
+    "yd",
+    "yf",
+    "yfol",
+    "yod",
+    "ytd"
+  ],
+  "dark_pipeline_freq_mean": 10.72289156626506,
+  "dark_pipeline_freq_median": 3,
+  "dictionary_identifier_frequencies": {
+    "loch": {
+      "freq": 0,
+      "n_folios": 0,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": []
+    },
+    "rol": {
+      "freq": 2,
+      "n_folios": 2,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": [
+        "f76v",
+        "f115r"
+      ]
+    },
+    "ea": {
+      "freq": 8,
+      "n_folios": 8,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": [
+        "f55v",
+        "f75v",
+        "f77r",
+        "f106v",
+        "f107v"
+      ]
+    },
+    "fsh": {
+      "freq": 1,
+      "n_folios": 1,
+      "is_hapax": true,
+      "is_dark": true,
+      "folios": [
+        "f83r"
+      ]
+    },
+    "alod": {
+      "freq": 1,
+      "n_folios": 1,
+      "is_hapax": true,
+      "is_dark": true,
+      "folios": [
+        "f108r"
+      ]
+    },
+    "olyd": {
+      "freq": 1,
+      "n_folios": 1,
+      "is_hapax": true,
+      "is_dark": true,
+      "folios": [
+        "f81v"
+      ]
+    },
+    "fch": {
+      "freq": 6,
+      "n_folios": 6,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": [
+        "f66v",
+        "f85r1",
+        "f106v",
+        "f107r",
+        "f108r"
+      ]
+    },
+    "cs": {
+      "freq": 1,
+      "n_folios": 1,
+      "is_hapax": true,
+      "is_dark": true,
+      "folios": [
+        "f95v2"
+      ]
+    },
+    "eckh": {
+      "freq": 93,
+      "n_folios": 41,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": [
+        "f31v",
+        "f34r",
+        "f34v",
+        "f39r",
+        "f43r"
+      ]
+    },
+    "lch": {
+      "freq": 17,
+      "n_folios": 14,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": [
+        "f75r",
+        "f77r",
+        "f80r",
+        "f81r",
+        "f82r"
+      ]
+    },
+    "lk": {
+      "freq": 35,
+      "n_folios": 26,
+      "is_hapax": false,
+      "is_dark": true,
+      "folios": [
+        "f31r",
+        "f39r",
+        "f48v",
+        "f50r",
+        "f66v"
+      ]
+    }
+  },
+  "n_dark_folio_exclusive": 80,
+  "dark_folio_exclusive_sample": [
+    {
+      "middle": "oeeo",
+      "freq": 2,
+      "folio": "f114v",
+      "is_hapax": false
+    },
+    {
+      "middle": "see",
+      "freq": 2,
+      "folio": "f85r2",
+      "is_hapax": false
+    },
+    {
+      "middle": "oet",
+      "freq": 1,
+      "folio": "f116r",
+      "is_hapax": true
+    },
+    {
+      "middle": "eam",
+      "freq": 1,
+      "folio": "f111r",
+      "is_hapax": true
+    },
+    {
+      "middle": "irai",
+      "freq": 1,
+      "folio": "f106v",
+      "is_hapax": true
+    },
+    {
+      "middle": "ode",
+      "freq": 1,
+      "folio": "f105r",
+      "is_hapax": true
+    },
+    {
+      "middle": "oekeo",
+      "freq": 1,
+      "folio": "f105r",
+      "is_hapax": true
+    },
+    {
+      "middle": "cs",
+      "freq": 1,
+      "folio": "f95v2",
+      "is_hapax": true
+    },
+    {
+      "middle": "eoa",
+      "freq": 1,
+      "folio": "f115r",
+      "is_hapax": true
+    },
+    {
+      "middle": "ind",
+      "freq": 1,
+      "folio": "f104v",
+      "is_hapax": true
+    },
+    {
+      "middle": "yod",
+      "freq": 1,
+      "folio": "f57r",
+      "is_hapax": true
+    },
+    {
+      "middle": "cfheo",
+      "freq": 1,
+      "folio": "f104v",
+      "is_hapax": true
+    },
+    {
+      "middle": "ord",
+      "freq": 1,
+      "folio": "f105v",
+      "is_hapax": true
+    },
+    {
+      "middle": "eea",
+      "freq": 1,
+      "folio": "f111v",
+      "is_hapax": true
+    },
+    {
+      "middle": "dyd",
+      "freq": 1,
+      "folio": "f55v",
+      "is_hapax": true
+    },
+    {
+      "middle": "qeke",
+      "freq": 1,
+      "folio": "f85r1",
+      "is_hapax": true
+    },
+    {
+      "middle": "ofcho",
+      "freq": 1,
+      "folio": "f103r",
+      "is_hapax": true
+    },
+    {
+      "middle": "oy",
+      "freq": 1,
+      "folio": "f114v",
+      "is_hapax": true
+    },
+    {
+      "middle": "yaii",
+      "freq": 1,
+      "folio": "f105r",
+      "is_hapax": true
+    },
+    {
+      "middle": "yf",
+      "freq": 1,
+      "folio": "f43v",
+      "is_hapax": true
+    },
+    {
+      "middle": "aip",
+      "freq": 1,
+      "folio": "f95v2",
+      "is_hapax": true
+    },
+    {
+      "middle": "ekeod",
+      "freq": 1,
+      "folio": "f66v",
+      "is_hapax": true
+    },
+    {
+      "middle": "olyd",
+      "freq": 1,
+      "folio": "f81v",
+      "is_hapax": true
+    },
+    {
+      "middle": "otai",
+      "freq": 1,
+      "folio": "f113v",
+      "is_hapax": true
+    },
+    {
+      "middle": "eeok",
+      "freq": 1,
+      "folio": "f115v",
+      "is_hapax": true
+    },
+    {
+      "middle": "dii",
+      "freq": 1,
+      "folio": "f108r",
+      "is_hapax": true
+    },
+    {
+      "middle": "ocpheo",
+      "freq": 1,
+      "folio": "f114v",
+      "is_hapax": true
+    },
+    {
+      "middle": "odaii",
+      "freq": 1,
+      "folio": "f26r",
+      "is_hapax": true
+    },
+    {
+      "middle": "oqo",
+      "freq": 1,
+      "folio": "f83v",
+      "is_hapax": true
+    },
+    {
+      "middle": "alod",
+      "freq": 1,
+      "folio": "f108r",
+      "is_hapax": true
+    }
+  ]
+}

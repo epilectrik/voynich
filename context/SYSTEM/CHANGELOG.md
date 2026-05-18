@@ -4,6 +4,59 @@
 
 ---
 
+## Version 6.70 (2026-05-18) - PHASE 699: Hapax MIDDLE Concentration — Methodology Correction + Composition Shadow Falsification
+
+### Summary
+
+Deferred PHASE_698 test of crazy-expert's "lexical content tail" hypothesis (per-folio hapax MIDDLE concentration vs frequency-matched controls). Four iterations driven by user methodological challenge and two expert consultation rounds before any registration. Final verdict: lexical-content-tail interpretation self-falsified before registration; three Tier 2 constraints registered (methodology correction + distributional census + composition-shadow falsification).
+
+**Lead finding (C2039):** Third documented within-folio-null falsification in +0.4-aggregate-rho pattern. Per-folio hapax×dark rate vs hapax enrichment partial r=0.40 (TTR-controlled) collapses to z=0.91, p=0.18 under within-folio shuffle null. Folio-composition shadow, not hapax-specific association. Reinforces `feedback_within_folio_shuffle_null_first.md` discipline with third independent data point.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `phases/PHASE_699_HAPAX_MIDDLE_CONCENTRATION/INDEX.md` | New phase index with four-iteration arc, two expert consultation rounds, within-folio shuffle null result |
+| `context/CLAIMS/INDEX.md` | Added C2037 (AZC contamination), C2038 (low-freq census), C2039 (within-folio null negative). Count 2031 → 2034, version 6.69 → 6.70 |
+| `CLAUDE.md` | Version 6.69 → 6.70, constraint count 2031 → 2034, phases 695 → 696 |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `~/.claude/projects/.../memory/feedback_placement_filter_azc_contamination.md` | NEW methodology memory documenting AZC placement contamination pattern |
+
+### Main findings
+
+**C2037 — AZC-Diagram-Token Placement Contamination (Tier 2 methodology).** Pre-registered H3 test verdict depends on placement filter choice:
+- P-only filter: 6/8, p=0.14, FAIL
+- P+L (paragraph + labels): 6/8, p=0.14, FAIL ← identical to P-only
+- All placements (P+L+R+S+C+X+Y+N+T): 7/8, p=0.035, PASS
+
+Labels alone don't contaminate. The flip is driven by 46 AZC diagram singletons (MIDDLEs appearing exactly once on R/S/C/X/Y/N/T positions). Diagram-heavy folios get inflated enrichment ratios. Defensible filter for MIDDLE inventory analyses: P+L.
+
+**C2038 — Low-Frequency Hapax-Band Corpus Census (Tier 2 distributional fact).** Currier B has 866 corpus-wide hapax MIDDLEs (all-placement). 70 corpus-hapax MIDDLEs overlap with C1135 dark pipeline catalog (300 MIDDLEs). 96% of overlap on P-placement. Dark pipeline frequency heavily skewed: median=3, 60% at n≤3, 28% at n=1. Pure measurement, NOT an independent association claim (consistent with C1135's known frequency profile).
+
+**C2039 — Hapax×Dark Rate vs Hapax Enrichment Composition Shadow (Tier 2 negative).** Per-folio analysis: raw r=0.557, TTR-controlled partial r=0.395. Within-folio shuffle null (200 perms): z=0.91, p=0.18. Signal does NOT survive. Folio-composition shadow. Third within-folio-null falsification in +0.4-aggregate-rho pattern, following k-e-depth thermal regimes and triple-i ↔ iter-terminal (both 2026-05-11). Specific lexical-content-tail interpretations NOT supported by per-folio rate analysis.
+
+### Methodology lessons
+
+Three interpretive overshoots in one phase, all caught before registration:
+
+1. **v1 tentative framing** ("hapax×dark overlap suggests small lexical subset") — corrected after user pushback: *"alod = aludel? oddly specific. if it names a vessel we'd see it in other folios."* Full-placement audit revealed 76/78 supposed P-only hapax×dark identifiers were multi-folio under broader filtering.
+
+2. **v2 "lexical content tail SUPPORTED" framing** — corrected after both experts independently flagged convergent gaps (placement-stratified test, TTR control, distribution test). v3 controls revealed v2 PASS was AZC-contamination artifact.
+
+3. **v3 "TTR-controlled signal survives" framing** — corrected after within-folio shuffle null collapsed partial r=0.40 to z=0.91. Composition shadow.
+
+The user's intuition (*"alod = aludel? oddly specific"*) was the load-bearing pushback that motivated the full-placement audit. Without it, the v1 framing would have been registered.
+
+New methodology memory: `feedback_placement_filter_azc_contamination.md` (separate from threshold calibration memory).
+
+Reinforces existing memory: `feedback_within_folio_shuffle_null_first.md` now has three documented within-folio-null falsifications in the +0.4 aggregate-rho range (k-e-depth, triple-i, hapax×dark rate).
+
+### Deferred (next phase)
+
+- **PHASE_700 candidate:** Computus tables alternative-class adversarial test (per crazy-expert recommendation across PHASE_698 + PHASE_699). External adversarial corpus remains highest-EV mechanism for breaking the framework-as-null procedural ceiling.
+
+---
+
 ## Version 6.69 (2026-05-17) - PHASE 698: Known-Plaintext Attack on f75r↔III.19 — Strong-Form Falsified, Operational-Class Match Reinforced
 
 ### Summary

@@ -1,0 +1,102 @@
+{
+  "n_p_only_hapax_in_dark": 78,
+  "truly_hapax_corpus_wide": 2,
+  "multi_occurrence_same_folio": 0,
+  "multi_folio_under_broader_filter": 76,
+  "dictionary_identifiers_full_placement": {
+    "alod": {
+      "n_total": 2,
+      "folios": [
+        "f44v",
+        "f108r"
+      ],
+      "placements": {
+        "P": 2
+      }
+    },
+    "fsh": {
+      "n_total": 2,
+      "folios": [
+        "f76r",
+        "f83r"
+      ],
+      "placements": {
+        "R": 1,
+        "P": 1
+      }
+    },
+    "olyd": {
+      "n_total": 2,
+      "folios": [
+        "f88v",
+        "f81v"
+      ],
+      "placements": {
+        "P": 1,
+        "t": 1
+      }
+    },
+    "cs": {
+      "n_total": 2,
+      "folios": [
+        "f95v2",
+        "f101r1"
+      ],
+      "placements": {
+        "P": 2
+      }
+    },
+    "loch": {
+      "n_total": 0,
+      "folios": [],
+      "placements": {}
+    },
+    "rol": {
+      "n_total": 4,
+      "folios": [
+        "f115r",
+        "f89r1",
+        "f76v",
+        "f58v"
+      ],
+      "placements": {
+        "P2": 2,
+        "P": 2
+      }
+    },
+    "ea": {
+      "n_total": 20,
+      "folios": [
+        "f70v1",
+        "f1v",
+        "f114v",
+        "f55v",
+        "f115r",
+        "f72v2",
+        "f107v",
+        "f65v",
+        "f73r",
+        "f32r",
+        "f112r",
+        "f6v",
+        "f75v",
+        "f89r2",
+        "f8v",
+        "f101r1",
+        "f4r",
+        "f77r",
+        "f70r1",
+        "f106v"
+      ],
+      "placements": {
+        "P": 14,
+        "Y": 1,
+        "S1": 1,
+        "R3": 1,
+        "R2": 1,
+        "P2": 1,
+        "P3": 1
+      }
+    }
+  }
+}

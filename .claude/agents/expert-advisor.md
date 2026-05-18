@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2031 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2034 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2036.
+the highest ID present is C2039.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2031 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2034 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2031 validated constraints are present as canonical one-line claims with tier
+2034 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-17 21:42
-**Version:** FROZEN STATE (2031 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-18 08:37
+**Version:** FROZEN STATE (2034 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (15 feedback rules)
+6. Session Methodology Notes (16 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -2275,6 +2275,9 @@ C2033	**Voynich Currier B V/C-Partition Projection Flexibility — Uniquely Tuna
 C2034	**Catalan Cardinality Baseline — III.19.0 ×4+×9 Conjunction Is Unique in SISMEL.** Systematic regex sweep across 189 SISMEL sub-recipes for Catalan cardinality phrases (quatre/iv/iiii × vegades; nou/ix × vegades; tres/iii × vegades; etc.). Only 2 of 189 contain ANY cardinality phrase in Catalan: III.12.0 (×3 only) and III.19.0 (×4 AND ×9). III.19.0 is the ONLY Catalan sub-recipe with both ×4 and ×9 jointly (1/189 = 0.5% corpus rate). Combined with C1889 (f75r is the corpus-singular Currier B folio with 4-identical-token run, 1/82), the joint conjunction probability under independent random pairing is approximately 1/16,500. Bounds look-elsewhere effect at Catalan corpus level to essentially zero. Reinforces C1889/C1965/C1969/C1971 by confirming the f75r↔III.19 cardinality match is not retrievable from any other Catalan sub-recipe in the corpus. (Latin baseline is higher due to ordinal "quart[oa]" / "tertia" forms appearing in many contexts; the Catalan baseline is the cleaner discriminator because Catalan cardinality phrases use specific "X vegades" construction.)	2	cardinality, baseline_rate, SISMEL_Catalan, look_elsewhere, joint_singular, C1889, C1965, C1969, C1971, C1989, project_chapter_numbering_remap
 C2035	**Mantel Null on Folio-Aggregate Token Similarity vs Latin Chapter Content Similarity.** Across 14 catalogued folios in C1971 (excluding f76r diagram folio), pairwise Voynich token-set Jaccard distance is uncorrelated with pairwise matched-Latin-chapter content-word Jaccard distance. Pearson correlation between distance matrices computed across 6 variants. Range: ρ = −0.21 to +0.12. Most-favorable variant (Part III only, MIDDLE-level, overlap coefficient): ρ = +0.12, z = +1.09, two-tailed p = 0.27, one-tailed positive p = 0.14. Permutation null with 5000 shuffles. **Operational-class signature matching (C1971) does NOT propagate to folio-aggregate lexical overlap.** Bounds the interpretation of C1971: the 8D matcher's operational-class identification is real but does not entail token-level content correspondence between folios and their matched Latin chapters. C2034's specific structural conjunctions (×4 + ×9 anchors) remain discriminating; what fails is the diffuse lexical-overlap signal that would be expected under a textual-cipher reading. Combined with C2034 + sharpened C1971, gives a complete characterization: cold-read matching is structural/operational at the discriminating-feature level, not lexical at the token-aggregate level.	2	bounding_constraint, Mantel_null, folio_aggregate, lexical_overlap, C1971_scope, operational_not_lexical, C1366, C1888, C1971, near_miss_separation_complement
 C2036	**Closed-Lexicon NL Hypothesis FALSIFIED — MIDDLE Inventory Size Refutes Chinese-Character-Style Lexicon.** Crazy-expert speculative hypothesis (PHASE_698): MIDDLEs might be arbitrary lexical units of a restricted technical lexicon (~80-150 morphemes, Chinese-character-style closed inventory) rather than compositional operational primitives. Test: compute MIDDLE distribution statistics on Currier B vs natural-language Catalan morpheme statistics matched in token count. Result: Voynich Currier B MIDDLE inventory = 1,302 unique types in 21,610 tokens — **10× larger than the 80-150 hypothesized closed-lexicon range.** Distribution is more concentrated than NL (top-10 token share 49.1% vs Catalan subsampled 25.3%) and Zipf slope is steeper (−1.51 vs Catalan −0.91). TTR 0.060 (vs Catalan 0.203 at matched n). MIDDLE distribution looks operational with productive tail, not closed lexical inventory. Hapax rate (63.0%) does match NL-Catalan (64.2%), indicating productive-tail behavior similar to natural language's long tail of rare words — but this is consistent with multiple interpretations (open-class operational specifications, productive morphology, or genuinely lexical-content tail) and does NOT salvage the closed-lexicon framing. Parallels C1976 (polyalphabetic cipher rejected), C1376 (Currier B not NL), C130 (DSL rejected). Follow-on phase queued: discriminating test between operational-productive-tail vs lexical-content-tail via per-folio hapax concentration index (crazy-expert proposal; C914's 3.7× label enrichment as precedent).	1	NL_falsification, closed_lexicon, MIDDLE_inventory, Chinese_character_hypothesis, distribution_statistics, productive_tail, C130, C1376, C1976, C2015, C2022
+C2037	**AZC-Diagram-Token Placement Contamination Correction.** Pre-registered H3 test (hapax > n_2_3 paired sign test on top-decile folios) verdict depends on placement filter choice. P-only filter gives 6/8 FAIL. P+L (paragraph + label tokens) gives identical 6/8 FAIL — labels alone do NOT explain placement sensitivity. All-placement filter (P + L + R + S + C + X + Y + N + T) gives 7/8 PASS. The verdict flip is driven specifically by AZC diagram tokens (R rings, S stars, C circles, etc.), NOT by labels. Diagnostic: hapax cohort grows from 820 (P-only) to 866 (all-placement), and the added 46 hapaxes are MIDDLEs that appear exactly once on a diagram position (and nowhere else in B paragraphs/labels). These AZC diagram singletons have categorically different distributional properties per AZC architecture (C300-series), and concentrate on diagram-heavy folios which artificially inflates per-folio enrichment ratios there. For MIDDLE inventory or per-folio frequency analyses on paragraph-text content, the defensible standard placement filter is P+L (equivalent to P-only for this purpose); all-placement contaminates with AZC diagram tokens. PHASE_699 v2 H3 PASS verdict (7/8) is AZC-token-contamination artifact, not a real paragraph-text signal.	2	methodology, placement_filter, AZC_contamination, MIDDLE_inventory, hapax_cohort_definition, C300, C1135, AZC_distinct
+C2038	**Low-Frequency Hapax-Band Corpus Census.** Distributional measurement: Currier B has 866 corpus-wide hapax MIDDLEs (all-placement filter, H-track non-uncertain). The C1135-catalogued unmatched-PP MIDDLE set ("dark pipeline," 300 MIDDLEs, mean 5.7 tokens, section-concentrated Herf=0.716) has a heavily-skewed frequency distribution: median frequency=3, 60% of catalogued MIDDLEs at n≤3, 28% at n=1 (hapax frequency band). 70 corpus-wide hapax MIDDLEs (sample of 866) overlap with C1135's catalog under exact MIDDLE-string match. 96% (67/70) of these overlap MIDDLEs occur on P-placement (paragraph text); 0/70 occur on R (ring) placement; <5% on C (circle), X, or T placements. **Distributional census only.** The 70-MIDDLE overlap is consistent with C1135's own frequency profile (the catalog already documents a long low-frequency tail extending to hapax band) and does NOT constitute independent association evidence beyond what C1135's frequency profile implies. The within-folio shuffle null on the rate-correlation form of this measurement (see C2039) demonstrates that the per-folio relationship is composition shadow, not hapax-specific.	2	distributional_census, hapax_corpus_wide, low_freq_band, MIDDLE_inventory, no_association_claim, C1135, C1137, C1140
+C2039	**Hapax×Dark Rate vs Hapax Enrichment Correlation Is Composition Shadow.** Per-folio analysis: hapax×dark-pipeline rate (count of hapax-MIDDLE occurrences on folio normalized by folio token count, restricted to MIDDLEs in C1135 catalog) vs per-folio hapax enrichment (folio hapax token rate / corpus hapax token rate) gives raw Pearson r=0.557, TTR-controlled partial r=0.395. Within-folio shuffle null (200 permutations preserving per-folio token counts and global MIDDLE frequency distribution): observed partial r vs null mean 0.286 (SD 0.119) gives **z=0.91, p=0.18**. The signal does NOT survive within-folio shuffle null. Folio-composition shadow, NOT hapax-specific association beyond TTR + composition. Notable secondary: raw r=0.56 gives z=2.30 (nominally significant), but TTR control absorbs half the signal and within-folio shuffle absorbs the rest (z_raw=2.30 → z_partial_TTR=NA → z_partial_TTR_plus_within_folio_null=0.91). **Third documented within-folio-null falsification in +0.4-aggregate-rho pattern**, following k-e-depth thermal regimes and triple-i ↔ iter-terminal (both 2026-05-11). Reinforces `feedback_within_folio_shuffle_null_first.md`: aggregate rho in +0.15 to +0.65 range with no within-folio null is the documented composition-shadow signature; PHASE_699 confirms this for the third time. Specific lexical-content-tail interpretations (PHASE_698 crazy-expert proposal of hapaxes as material/parameter identifiers) are NOT supported by per-folio rate analysis at corpus scale.	2	within_folio_shuffle_null, composition_shadow, lexical_content_tail_falsification, third_documented_case, methodology_validation, C2038, C1135, feedback_within_folio_shuffle_null_first
 
 ---
 
@@ -2282,7 +2285,7 @@ C2036	**Closed-Lexicon NL Hypothesis FALSIFIED — MIDDLE Inventory Size Refutes
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-17
+# Generated: 2026-05-18
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -5619,6 +5622,36 @@ This is sharper than "run controls earlier." It says: the strongest discoveries 
 - **Three identical failures in one session is a calibration signal.** When the trap pattern repeats, the right response is to stop generating new findings and re-examine the methodology, not to push the next candidate through.
 
 The C1197 mechanical count correction (71 P-placement hh / 85 H-track, not 9 — falsification clause tripped) remains valid as a bookkeeping fix. The operational hh-as-monitoring story does NOT register without the source-text pre-registration and single-h discriminator.
+
+---
+
+## placement-filter-azc-contamination
+
+*All-placement filter on MIDDLE inventory analyses contaminates paragraph-text frequency claims with AZC diagram-token singletons. Use P+L (paragraph + labels) as the defensible standard; P-only and P+L are equivalent.*
+
+When running MIDDLE inventory analyses or per-folio frequency tests on Currier B, the placement filter choice matters and has a specific failure mode:
+
+- **P-only**: Excludes labels (L), rings (R), stars (S), circles (C), and other non-paragraph placements. Narrower than necessary but safe — gives paragraph-text frequencies.
+- **P+L (paragraph + labels)**: Adds label tokens. **Identical to P-only** for hapax cohort definition in PHASE_699 (Control A: both gave 6/8 paired sign-test FAIL, p=0.14). Labels alone do NOT change frequency distributions enough to flip verdicts.
+- **All-placement (no filter)**: Adds AZC diagram tokens — R rings, S stars, C circles, X, Y, N, T placements. **Contaminates** the analysis with diagram-text MIDDLE singletons that have categorically different distributional behavior per AZC architecture (C300-series).
+
+**Why:** PHASE_699 (2026-05-17/2026-05-18). H3 paired sign test (hapax > n_2_3 enrichment on top-decile folios) gave different verdicts under different placement filters:
+- P-only: FAIL (6/8, p=0.14)
+- P+L: FAIL (6/8, p=0.14) ← identical to P-only
+- All-placement: PASS (7/8, p=0.035)
+
+The flip from FAIL to PASS was driven by 46 MIDDLEs that appeared exactly once on diagram positions (R/S/C/X/Y/N/T) and nowhere else in paragraphs/labels. These "AZC diagram singletons" concentrated on diagram-heavy folios, inflating per-folio hapax enrichment ratios specifically there. The v2 H3 PASS was AZC contamination artifact, not real paragraph-text signal.
+
+**How to apply:**
+
+1. **Default filter for MIDDLE inventory and per-folio frequency analyses: P+L** (paragraph + labels). Excludes AZC diagram tokens.
+2. If you specifically want to include diagram tokens (e.g., for AZC architecture analyses), use targeted filters per the AZC contracts (`azc_activation.act.yaml`), don't use "all placements" as a generic catch-all.
+3. **Never use all-placement filter for "what's the corpus frequency of MIDDLE X" type questions** — it conflates paragraph-text MIDDLEs with diagram annotations that belong to different populations.
+4. When a verdict depends on placement filter choice, run all three (P-only / P+L / all-placement) and report. If only all-placement passes, the result is AZC-contamination-driven.
+
+**Diagnostic:** if your hapax cohort grows substantially (e.g., +5%+) when going from P+L to all-placement, the added hapaxes are AZC diagram singletons. Check if they concentrate on top-enriched folios — if so, your enrichment metric is contaminated.
+
+**Related:** [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null is the next mandatory control after placement filter is correct), [[feedback-framework-as-null]] (placement-induced PASS verdicts that don't survive paragraph-text restriction are framework-echo candidates).
 
 ---
 

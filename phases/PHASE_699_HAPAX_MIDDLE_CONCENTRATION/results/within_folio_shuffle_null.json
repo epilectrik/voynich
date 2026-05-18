@@ -1,0 +1,14 @@
+{
+  "method": "Within-folio shuffle null: permute MIDDLE-folio assignment preserving per-folio token counts and global MIDDLE frequency",
+  "n_perms": 200,
+  "observed_partial_r": 0.39434246052425914,
+  "observed_raw_r": 0.562267302141391,
+  "null_mean_partial": 0.2859307733672754,
+  "null_sd_partial": 0.11867411428385899,
+  "z_score_partial": 0.9135242998121027,
+  "p_value": 0.18,
+  "null_mean_raw": 0.284702585597211,
+  "null_sd_raw": 0.12091197743508506,
+  "z_score_raw": 2.2955932276700897,
+  "decision": "COMPOSITION_SHADOW"
+}

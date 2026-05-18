@@ -1,0 +1,82 @@
+{
+  "control_a_placement_stratified": [
+    {
+      "variant": "P-only (v1)",
+      "n_hapax": 820,
+      "max_enrichment": 3.9379029997196526,
+      "hapax_gini": 0.32533464586781813,
+      "n23_gini": 0.3064190975432961,
+      "n_gt": 6,
+      "n_top": 8,
+      "p_sign": 0.14453125,
+      "h3_pass": false
+    },
+    {
+      "variant": "P+L (paragraph + labels)",
+      "n_hapax": 820,
+      "max_enrichment": 3.9379029997196526,
+      "hapax_gini": 0.32533464586781813,
+      "n23_gini": 0.3064190975432961,
+      "n_gt": 6,
+      "n_top": 8,
+      "p_sign": 0.14453125,
+      "h3_pass": false
+    },
+    {
+      "variant": "All placements (v2)",
+      "n_hapax": 866,
+      "max_enrichment": 3.4234277937233024,
+      "hapax_gini": 0.32383608931603414,
+      "n23_gini": 0.3210431884656837,
+      "n_gt": 7,
+      "n_top": 8,
+      "p_sign": 0.03515625,
+      "h3_pass": true
+    }
+  ],
+  "control_b_ttr_controlled": {
+    "r_ttr_enrich": 0.5662916566435212,
+    "r_size_enrich": -0.1939143734945831,
+    "r_ttr_size": -0.8220554644547132,
+    "r_dark_enrich_raw": 0.5568133411974021,
+    "r_dark_ttr": 0.478784768910915,
+    "r_enrich_ttr_subset": 0.5662916566435212,
+    "partial_r_ttr_controlled": 0.39480796939468465,
+    "ttr_signal_survives": true
+  },
+  "control_c_distribution": {
+    "section_hapax_dark": {
+      "H": 13,
+      "A_Z": 1,
+      "B": 20,
+      "S": 36
+    },
+    "section_total_dark": {
+      "H": 257,
+      "A_Z": 57,
+      "B": 1065,
+      "S": 1455
+    },
+    "placement_hapax_dark": {
+      "P": 67,
+      "X": 1,
+      "C": 1,
+      "T": 1
+    },
+    "placement_total_dark": {
+      "P": 2670,
+      "R": 97,
+      "C": 22,
+      "Q": 25,
+      "Y": 2,
+      "M": 5,
+      "T": 5,
+      "N": 2,
+      "X": 5,
+      "Z": 1
+    },
+    "chi_square": 8.600581589502319,
+    "df": 3,
+    "section_confound": true
+  }
+}
