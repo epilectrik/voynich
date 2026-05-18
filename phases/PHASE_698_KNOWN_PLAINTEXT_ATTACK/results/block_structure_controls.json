@@ -1,0 +1,121 @@
+{
+  "method": "within-folio line-order shuffle null on qok-density clustering",
+  "L31_tokens": [
+    "dshedy",
+    "qokey",
+    "chckhy",
+    "qokar",
+    "shedy",
+    "chey",
+    "qoked",
+    "qokedy",
+    "daldy"
+  ],
+  "L31_neighbors": {
+    "L29": [
+      "dain",
+      "chkal",
+      "dy",
+      "lolkaiin",
+      "ol",
+      "okeedy",
+      "qol",
+      "dain",
+      "olchey",
+      "qokeedy",
+      "chedy",
+      "qotan"
+    ],
+    "L30": [
+      "qodaiin",
+      "cheeky",
+      "qokey",
+      "qokain",
+      "cheky",
+      "qokal",
+      "dain",
+      "chedy",
+      "okalol",
+      "shedy",
+      "okar",
+      "olom"
+    ],
+    "L31": [
+      "dshedy",
+      "qokey",
+      "chckhy",
+      "qokar",
+      "shedy",
+      "chey",
+      "qoked",
+      "qokedy",
+      "daldy"
+    ],
+    "L32": [
+      "polshy",
+      "dal",
+      "shedy",
+      "qokain",
+      "das",
+      "chsdy",
+      "shedy",
+      "qokar",
+      "shedy",
+      "ldy"
+    ],
+    "L33": [
+      "qokeey",
+      "lshedy",
+      "qol",
+      "chedy",
+      "qokain",
+      "chcthedy",
+      "ltedy",
+      "darom"
+    ]
+  },
+  "threshold_0.30": {
+    "obs_max_run": 3,
+    "obs_n_clusters": 2,
+    "obs_largest": 5,
+    "obs_clusters": [
+      [
+        6,
+        7,
+        9,
+        11,
+        13
+      ],
+      [
+        35,
+        37,
+        38,
+        39,
+        41
+      ]
+    ],
+    "null_n_perms": 2000,
+    "p_max_run": 0.632,
+    "p_largest": 0.3535,
+    "p_n_clusters": 0.995,
+    "mean_null_max_run": 2.904,
+    "mean_null_largest": 4.2475,
+    "mean_null_n_clusters": 3.6185
+  },
+  "threshold_0.40": {
+    "obs_max_run": 2,
+    "obs_clusters": [
+      [
+        9,
+        11,
+        13
+      ],
+      [
+        37,
+        38
+      ]
+    ],
+    "mean_null_max_run": 1.602,
+    "p_max_run": 0.5445
+  }
+}

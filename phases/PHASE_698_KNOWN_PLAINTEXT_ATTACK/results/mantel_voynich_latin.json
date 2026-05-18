@@ -1,0 +1,857 @@
+{
+  "method": "Mantel-style correlation: Voynich folio Jaccard vs Latin chapter Jaccard",
+  "n_folios": 14,
+  "folio_chapter_mapping": {
+    "f84r": "II.12",
+    "f79r": "III.12",
+    "f103r": "III.16",
+    "f82r": "III.22",
+    "f76v": "III.15",
+    "f75r": "III.19",
+    "f77v": "III.27",
+    "f81v": "III.18",
+    "f82v": "III.28",
+    "f112r": "III.11",
+    "f112v": "III.1",
+    "f116r": "III.4",
+    "f107r": "III.44",
+    "f80r": "III.21"
+  },
+  "latin_word_set_sizes": {
+    "f103r": 187,
+    "f107r": 194,
+    "f112r": 91,
+    "f112v": 197,
+    "f116r": 115,
+    "f75r": 297,
+    "f76v": 42,
+    "f77v": 267,
+    "f79r": 70,
+    "f80r": 118,
+    "f81v": 78,
+    "f82r": 339,
+    "f82v": 277,
+    "f84r": 29
+  },
+  "voynich_token_set_sizes": {
+    "f103r": 287,
+    "f107r": 316,
+    "f112r": 257,
+    "f112v": 254,
+    "f116r": 188,
+    "f75r": 187,
+    "f76v": 227,
+    "f77v": 165,
+    "f79r": 211,
+    "f80r": 230,
+    "f81v": 157,
+    "f82r": 163,
+    "f82v": 173,
+    "f84r": 185
+  },
+  "all_variants": [
+    {
+      "label": "A. ALL FOLIOS, JACCARD",
+      "n_folios": 14,
+      "n_pairs": 91,
+      "observed_rho": -0.20969868292188884,
+      "null_mean": -0.0015820593905556649,
+      "null_sd": 0.17599802589039348,
+      "z_score": -1.1824940790014442,
+      "two_tailed_p": 0.2388,
+      "one_tailed_p_positive": 0.8896
+    },
+    {
+      "label": "B. ALL FOLIOS, OVERLAP COEFFICIENT (size-normalized)",
+      "n_folios": 14,
+      "n_pairs": 91,
+      "observed_rho": 0.07354085335296831,
+      "null_mean": 0.0008066775830670777,
+      "null_sd": 0.10879284839171734,
+      "z_score": 0.6685565903010098,
+      "two_tailed_p": 0.5014,
+      "one_tailed_p_positive": 0.2572
+    },
+    {
+      "label": "C. PART III ONLY, JACCARD",
+      "n_folios": 13,
+      "n_pairs": 78,
+      "observed_rho": -0.14575477424073432,
+      "null_mean": 0.003265542355435783,
+      "null_sd": 0.16627192675715002,
+      "z_score": -0.8962446006524185,
+      "two_tailed_p": 0.397,
+      "one_tailed_p_positive": 0.8078
+    },
+    {
+      "label": "D. PART III ONLY, OVERLAP COEFFICIENT",
+      "n_folios": 13,
+      "n_pairs": 78,
+      "observed_rho": 0.08971177834830979,
+      "null_mean": 0.0034464668587479478,
+      "null_sd": 0.10927720762874141,
+      "z_score": 0.7894172386124633,
+      "two_tailed_p": 0.4212,
+      "one_tailed_p_positive": 0.2182
+    },
+    {
+      "label": "E. ALL FOLIOS, JACCARD on MIDDLEs",
+      "n_folios": 14,
+      "n_pairs": 91,
+      "observed_rho": -0.0864624113681426,
+      "null_mean": 0.0027764334020803213,
+      "null_sd": 0.1728972859037853,
+      "z_score": -0.5161379156633088,
+      "two_tailed_p": 0.6316,
+      "one_tailed_p_positive": 0.677
+    },
+    {
+      "label": "F. PART III ONLY, OVERLAP on MIDDLEs",
+      "n_folios": 13,
+      "n_pairs": 78,
+      "observed_rho": 0.12286512800073476,
+      "null_mean": 0.0014290241964021945,
+      "null_sd": 0.11179514336974221,
+      "z_score": 1.0862377393506677,
+      "two_tailed_p": 0.2682,
+      "one_tailed_p_positive": 0.1378
+    }
+  ],
+  "headline_observed_pearson_rho": -0.20969868292188884,
+  "headline_permutation_null": {
+    "mean_rho": -0.0015820593905556649,
+    "sd_rho": 0.17599802589039348,
+    "two_tailed_p": 0.2388,
+    "one_tailed_p_positive": 0.8896
+  },
+  "pair_details": [
+    {
+      "folio_i": "f103r",
+      "folio_j": "f107r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.44",
+      "latin_d": 0.8892128279883382,
+      "voynich_d": 0.8514285714285714
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f112r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.11",
+      "latin_d": 0.9182879377431906,
+      "voynich_d": 0.8425531914893617
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f112v",
+      "chapter_i": "III.16",
+      "chapter_j": "III.1",
+      "latin_d": 0.8901734104046243,
+      "voynich_d": 0.8390557939914163
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f116r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.4",
+      "latin_d": 0.9136690647482014,
+      "voynich_d": 0.8095238095238095
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f75r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.19",
+      "latin_d": 0.9172259507829977,
+      "voynich_d": 0.8267326732673268
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f76v",
+      "chapter_i": "III.16",
+      "chapter_j": "III.15",
+      "latin_d": 0.9146919431279621,
+      "voynich_d": 0.8291571753986333
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f77v",
+      "chapter_i": "III.16",
+      "chapter_j": "III.27",
+      "latin_d": 0.9086538461538461,
+      "voynich_d": 0.8527918781725888
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f79r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.12",
+      "latin_d": 0.9201680672268908,
+      "voynich_d": 0.8309859154929577
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f80r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.21",
+      "latin_d": 0.8827838827838828,
+      "voynich_d": 0.825
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f81v",
+      "chapter_i": "III.16",
+      "chapter_j": "III.18",
+      "latin_d": 0.9271255060728745,
+      "voynich_d": 0.8346456692913385
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f82r",
+      "chapter_i": "III.16",
+      "chapter_j": "III.22",
+      "latin_d": 0.8949579831932774,
+      "voynich_d": 0.8431876606683805
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f82v",
+      "chapter_i": "III.16",
+      "chapter_j": "III.28",
+      "latin_d": 0.8926014319809069,
+      "voynich_d": 0.8235294117647058
+    },
+    {
+      "folio_i": "f103r",
+      "folio_j": "f84r",
+      "chapter_i": "III.16",
+      "chapter_j": "II.12",
+      "latin_d": 0.9565217391304348,
+      "voynich_d": 0.8229426433915212
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f112r",
+      "chapter_i": "III.44",
+      "chapter_j": "III.11",
+      "latin_d": 0.8823529411764706,
+      "voynich_d": 0.854
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f112v",
+      "chapter_i": "III.44",
+      "chapter_j": "III.1",
+      "latin_d": 0.8892045454545454,
+      "voynich_d": 0.8484848484848485
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f116r",
+      "chapter_i": "III.44",
+      "chapter_j": "III.4",
+      "latin_d": 0.9195804195804196,
+      "voynich_d": 0.8545454545454545
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f75r",
+      "chapter_i": "III.44",
+      "chapter_j": "III.19",
+      "latin_d": 0.9137168141592921,
+      "voynich_d": 0.8619909502262444
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f76v",
+      "chapter_i": "III.44",
+      "chapter_j": "III.15",
+      "latin_d": 0.9557522123893806,
+      "voynich_d": 0.8663883089770354
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f77v",
+      "chapter_i": "III.44",
+      "chapter_j": "III.27",
+      "latin_d": 0.9023809523809524,
+      "voynich_d": 0.8942528735632184
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f79r",
+      "chapter_i": "III.44",
+      "chapter_j": "III.12",
+      "latin_d": 0.9224489795918367,
+      "voynich_d": 0.8666666666666667
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f80r",
+      "chapter_i": "III.44",
+      "chapter_j": "III.21",
+      "latin_d": 0.9052631578947369,
+      "voynich_d": 0.8505263157894737
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f81v",
+      "chapter_i": "III.44",
+      "chapter_j": "III.18",
+      "latin_d": 0.9457364341085271,
+      "voynich_d": 0.857487922705314
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f82r",
+      "chapter_i": "III.44",
+      "chapter_j": "III.22",
+      "latin_d": 0.9077868852459017,
+      "voynich_d": 0.8782201405152225
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f82v",
+      "chapter_i": "III.44",
+      "chapter_j": "III.28",
+      "latin_d": 0.8917647058823529,
+      "voynich_d": 0.8810068649885583
+    },
+    {
+      "folio_i": "f107r",
+      "folio_j": "f84r",
+      "chapter_i": "III.44",
+      "chapter_j": "II.12",
+      "latin_d": 0.9770642201834863,
+      "voynich_d": 0.8816964285714286
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f112v",
+      "chapter_i": "III.11",
+      "chapter_j": "III.1",
+      "latin_d": 0.875,
+      "voynich_d": 0.814385150812065
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f116r",
+      "chapter_i": "III.11",
+      "chapter_j": "III.4",
+      "latin_d": 0.91005291005291,
+      "voynich_d": 0.8350785340314136
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f75r",
+      "chapter_i": "III.11",
+      "chapter_j": "III.19",
+      "latin_d": 0.8882521489971347,
+      "voynich_d": 0.837696335078534
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f76v",
+      "chapter_i": "III.11",
+      "chapter_j": "III.15",
+      "latin_d": 0.952755905511811,
+      "voynich_d": 0.8166259168704156
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f77v",
+      "chapter_i": "III.11",
+      "chapter_j": "III.27",
+      "latin_d": 0.943952802359882,
+      "voynich_d": 0.8776595744680851
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f79r",
+      "chapter_i": "III.11",
+      "chapter_j": "III.12",
+      "latin_d": 0.8819444444444444,
+      "voynich_d": 0.8472906403940886
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f80r",
+      "chapter_i": "III.11",
+      "chapter_j": "III.21",
+      "latin_d": 0.9114583333333334,
+      "voynich_d": 0.8568075117370892
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f81v",
+      "chapter_i": "III.11",
+      "chapter_j": "III.18",
+      "latin_d": 0.9025974025974026,
+      "voynich_d": 0.853185595567867
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f82r",
+      "chapter_i": "III.11",
+      "chapter_j": "III.22",
+      "latin_d": 0.9382716049382716,
+      "voynich_d": 0.8461538461538461
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f82v",
+      "chapter_i": "III.11",
+      "chapter_j": "III.28",
+      "latin_d": 0.9239766081871346,
+      "voynich_d": 0.8533333333333333
+    },
+    {
+      "folio_i": "f112r",
+      "folio_j": "f84r",
+      "chapter_i": "III.11",
+      "chapter_j": "II.12",
+      "latin_d": 0.9380530973451328,
+      "voynich_d": 0.8429319371727748
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f116r",
+      "chapter_i": "III.1",
+      "chapter_j": "III.4",
+      "latin_d": 0.8736462093862816,
+      "voynich_d": 0.8275862068965517
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f75r",
+      "chapter_i": "III.1",
+      "chapter_j": "III.19",
+      "latin_d": 0.8898876404494382,
+      "voynich_d": 0.8485639686684073
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f76v",
+      "chapter_i": "III.1",
+      "chapter_j": "III.15",
+      "latin_d": 0.947136563876652,
+      "voynich_d": 0.8520286396181385
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f77v",
+      "chapter_i": "III.1",
+      "chapter_j": "III.27",
+      "latin_d": 0.8978622327790974,
+      "voynich_d": 0.8826666666666667
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f79r",
+      "chapter_i": "III.1",
+      "chapter_j": "III.12",
+      "latin_d": 0.9102040816326531,
+      "voynich_d": 0.849009900990099
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f80r",
+      "chapter_i": "III.1",
+      "chapter_j": "III.21",
+      "latin_d": 0.9249146757679181,
+      "voynich_d": 0.863849765258216
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f81v",
+      "chapter_i": "III.1",
+      "chapter_j": "III.18",
+      "latin_d": 0.8955823293172691,
+      "voynich_d": 0.8455056179775281
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f82r",
+      "chapter_i": "III.1",
+      "chapter_j": "III.22",
+      "latin_d": 0.8948453608247423,
+      "voynich_d": 0.8699186991869918
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f82v",
+      "chapter_i": "III.1",
+      "chapter_j": "III.28",
+      "latin_d": 0.9053117782909931,
+      "voynich_d": 0.8792650918635171
+    },
+    {
+      "folio_i": "f112v",
+      "folio_j": "f84r",
+      "chapter_i": "III.1",
+      "chapter_j": "II.12",
+      "latin_d": 0.9680365296803652,
+      "voynich_d": 0.8626943005181347
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f75r",
+      "chapter_i": "III.4",
+      "chapter_j": "III.19",
+      "latin_d": 0.9186351706036745,
+      "voynich_d": 0.805732484076433
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f76v",
+      "chapter_i": "III.4",
+      "chapter_j": "III.15",
+      "latin_d": 0.9172413793103449,
+      "voynich_d": 0.8176638176638177
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f77v",
+      "chapter_i": "III.4",
+      "chapter_j": "III.27",
+      "latin_d": 0.9178470254957507,
+      "voynich_d": 0.8388157894736842
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f79r",
+      "chapter_i": "III.4",
+      "chapter_j": "III.12",
+      "latin_d": 0.8922155688622755,
+      "voynich_d": 0.8018018018018018
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f80r",
+      "chapter_i": "III.4",
+      "chapter_j": "III.21",
+      "latin_d": 0.9162790697674419,
+      "voynich_d": 0.8057142857142857
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f81v",
+      "chapter_i": "III.4",
+      "chapter_j": "III.18",
+      "latin_d": 0.9453551912568307,
+      "voynich_d": 0.8184931506849316
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f82r",
+      "chapter_i": "III.4",
+      "chapter_j": "III.22",
+      "latin_d": 0.919047619047619,
+      "voynich_d": 0.8181818181818181
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f82v",
+      "chapter_i": "III.4",
+      "chapter_j": "III.28",
+      "latin_d": 0.9111111111111111,
+      "voynich_d": 0.8317152103559871
+    },
+    {
+      "folio_i": "f116r",
+      "folio_j": "f84r",
+      "chapter_i": "III.4",
+      "chapter_j": "II.12",
+      "latin_d": 0.9787234042553191,
+      "voynich_d": 0.8083067092651757
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f76v",
+      "chapter_i": "III.19",
+      "chapter_j": "III.15",
+      "latin_d": 0.9696048632218845,
+      "voynich_d": 0.7965116279069767
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f77v",
+      "chapter_i": "III.19",
+      "chapter_j": "III.27",
+      "latin_d": 0.9318181818181819,
+      "voynich_d": 0.8266666666666667
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f79r",
+      "chapter_i": "III.19",
+      "chapter_j": "III.12",
+      "latin_d": 0.9393063583815029,
+      "voynich_d": 0.797583081570997
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f80r",
+      "chapter_i": "III.19",
+      "chapter_j": "III.21",
+      "latin_d": 0.9192708333333334,
+      "voynich_d": 0.7913043478260869
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f81v",
+      "chapter_i": "III.19",
+      "chapter_j": "III.18",
+      "latin_d": 0.9130434782608696,
+      "voynich_d": 0.7714285714285715
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f82r",
+      "chapter_i": "III.19",
+      "chapter_j": "III.22",
+      "latin_d": 0.9292929292929293,
+      "voynich_d": 0.8013698630136986
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f82v",
+      "chapter_i": "III.19",
+      "chapter_j": "III.28",
+      "latin_d": 0.9108159392789373,
+      "voynich_d": 0.7713310580204779
+    },
+    {
+      "folio_i": "f75r",
+      "folio_j": "f84r",
+      "chapter_i": "III.19",
+      "chapter_j": "II.12",
+      "latin_d": 0.9617834394904459,
+      "voynich_d": 0.7803278688524591
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f77v",
+      "chapter_i": "III.15",
+      "chapter_j": "III.27",
+      "latin_d": 0.9665551839464883,
+      "voynich_d": 0.8402366863905325
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f79r",
+      "chapter_i": "III.15",
+      "chapter_j": "III.12",
+      "latin_d": 0.9433962264150944,
+      "voynich_d": 0.832
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f80r",
+      "chapter_i": "III.15",
+      "chapter_j": "III.21",
+      "latin_d": 0.967741935483871,
+      "voynich_d": 0.8282051282051281
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f81v",
+      "chapter_i": "III.15",
+      "chapter_j": "III.18",
+      "latin_d": 0.9565217391304348,
+      "voynich_d": 0.8220858895705522
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f82r",
+      "chapter_i": "III.15",
+      "chapter_j": "III.22",
+      "latin_d": 0.967479674796748,
+      "voynich_d": 0.8109756097560976
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f82v",
+      "chapter_i": "III.15",
+      "chapter_j": "III.28",
+      "latin_d": 0.9642857142857143,
+      "voynich_d": 0.8304093567251463
+    },
+    {
+      "folio_i": "f76v",
+      "folio_j": "f84r",
+      "chapter_i": "III.15",
+      "chapter_j": "II.12",
+      "latin_d": 0.9857142857142858,
+      "voynich_d": 0.8126801152737753
+    },
+    {
+      "folio_i": "f77v",
+      "folio_j": "f79r",
+      "chapter_i": "III.27",
+      "chapter_j": "III.12",
+      "latin_d": 0.940251572327044,
+      "voynich_d": 0.8395061728395061
+    },
+    {
+      "folio_i": "f77v",
+      "folio_j": "f80r",
+      "chapter_i": "III.27",
+      "chapter_j": "III.21",
+      "latin_d": 0.8968481375358166,
+      "voynich_d": 0.8244047619047619
+    },
+    {
+      "folio_i": "f77v",
+      "folio_j": "f81v",
+      "chapter_i": "III.27",
+      "chapter_j": "III.18",
+      "latin_d": 0.9513677811550152,
+      "voynich_d": 0.8248175182481752
+    },
+    {
+      "folio_i": "f77v",
+      "folio_j": "f82r",
+      "chapter_i": "III.27",
+      "chapter_j": "III.22",
+      "latin_d": 0.8694029850746269,
+      "voynich_d": 0.8158844765342961
+    },
+    {
+      "folio_i": "f77v",
+      "folio_j": "f82v",
+      "chapter_i": "III.27",
+      "chapter_j": "III.28",
+      "latin_d": 0.8806584362139918,
+      "voynich_d": 0.8140350877192982
+    },
+    {
+      "folio_i": "f77v",
+      "folio_j": "f84r",
+      "chapter_i": "III.27",
+      "chapter_j": "II.12",
+      "latin_d": 0.9828178694158075,
+      "voynich_d": 0.8054607508532423
+    },
+    {
+      "folio_i": "f79r",
+      "folio_j": "f80r",
+      "chapter_i": "III.12",
+      "chapter_j": "III.21",
+      "latin_d": 0.9378531073446328,
+      "voynich_d": 0.8016304347826086
+    },
+    {
+      "folio_i": "f79r",
+      "folio_j": "f81v",
+      "chapter_i": "III.12",
+      "chapter_j": "III.18",
+      "latin_d": 0.8702290076335878,
+      "voynich_d": 0.8354430379746836
+    },
+    {
+      "folio_i": "f79r",
+      "folio_j": "f82r",
+      "chapter_i": "III.12",
+      "chapter_j": "III.22",
+      "latin_d": 0.9431524547803618,
+      "voynich_d": 0.8012820512820513
+    },
+    {
+      "folio_i": "f79r",
+      "folio_j": "f82v",
+      "chapter_i": "III.12",
+      "chapter_j": "III.28",
+      "latin_d": 0.9290123456790124,
+      "voynich_d": 0.8111455108359134
+    },
+    {
+      "folio_i": "f79r",
+      "folio_j": "f84r",
+      "chapter_i": "III.12",
+      "chapter_j": "II.12",
+      "latin_d": 0.935483870967742,
+      "voynich_d": 0.8
+    },
+    {
+      "folio_i": "f80r",
+      "folio_j": "f81v",
+      "chapter_i": "III.21",
+      "chapter_j": "III.18",
+      "latin_d": 0.9347826086956522,
+      "voynich_d": 0.8201219512195121
+    },
+    {
+      "folio_i": "f80r",
+      "folio_j": "f82r",
+      "chapter_i": "III.21",
+      "chapter_j": "III.22",
+      "latin_d": 0.9093078758949881,
+      "voynich_d": 0.826865671641791
+    },
+    {
+      "folio_i": "f80r",
+      "folio_j": "f82v",
+      "chapter_i": "III.21",
+      "chapter_j": "III.28",
+      "latin_d": 0.9178082191780822,
+      "voynich_d": 0.8112094395280236
+    },
+    {
+      "folio_i": "f80r",
+      "folio_j": "f84r",
+      "chapter_i": "III.21",
+      "chapter_j": "II.12",
+      "latin_d": 0.95,
+      "voynich_d": 0.8108882521489971
+    },
+    {
+      "folio_i": "f81v",
+      "folio_j": "f82r",
+      "chapter_i": "III.18",
+      "chapter_j": "III.22",
+      "latin_d": 0.9626865671641791,
+      "voynich_d": 0.8148148148148149
+    },
+    {
+      "folio_i": "f81v",
+      "folio_j": "f82v",
+      "chapter_i": "III.18",
+      "chapter_j": "III.28",
+      "latin_d": 0.9558823529411765,
+      "voynich_d": 0.7912087912087912
+    },
+    {
+      "folio_i": "f81v",
+      "folio_j": "f84r",
+      "chapter_i": "III.18",
+      "chapter_j": "II.12",
+      "latin_d": 0.9405940594059405,
+      "voynich_d": 0.7872340425531915
+    },
+    {
+      "folio_i": "f82r",
+      "folio_j": "f82v",
+      "chapter_i": "III.22",
+      "chapter_j": "III.28",
+      "latin_d": 0.8485981308411215,
+      "voynich_d": 0.7956989247311828
+    },
+    {
+      "folio_i": "f82r",
+      "folio_j": "f84r",
+      "chapter_i": "III.22",
+      "chapter_j": "II.12",
+      "latin_d": 0.9777777777777777,
+      "voynich_d": 0.8282828282828283
+    },
+    {
+      "folio_i": "f82v",
+      "folio_j": "f84r",
+      "chapter_i": "III.28",
+      "chapter_j": "II.12",
+      "latin_d": 0.9867549668874173,
+      "voynich_d": 0.7781569965870307
+    }
+  ]
+}

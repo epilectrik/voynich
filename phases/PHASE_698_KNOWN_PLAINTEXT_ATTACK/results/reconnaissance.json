@@ -1,0 +1,179 @@
+{
+  "method": "Path A reconnaissance: f75r vs SISMEL III.19",
+  "f75r_voynich": {
+    "n_tokens": 412,
+    "n_lines": 46,
+    "x4_anchors": [
+      {
+        "line_key": [
+          0,
+          "13"
+        ],
+        "position": 2,
+        "tokens": [
+          "qokedy",
+          "qokedy",
+          "qokedy",
+          "qokedy"
+        ]
+      }
+    ],
+    "top_2line_qok_windows": [
+      {
+        "lines": [
+          [
+            0,
+            "37"
+          ],
+          [
+            0,
+            "38"
+          ]
+        ],
+        "qok_count": 9
+      },
+      {
+        "lines": [
+          [
+            0,
+            "13"
+          ],
+          [
+            0,
+            "14"
+          ]
+        ],
+        "qok_count": 8
+      },
+      {
+        "lines": [
+          [
+            0,
+            "12"
+          ],
+          [
+            0,
+            "13"
+          ]
+        ],
+        "qok_count": 7
+      }
+    ]
+  },
+  "sismel_iii_19": {
+    "n_latin_words": 707,
+    "n_catalan_words": 965,
+    "latin_first_50": [
+      "testamentum",
+      "iii",
+      "administracio",
+      "dicte",
+      "aque",
+      "in",
+      "corpore",
+      "humano",
+      "et",
+      "primo",
+      "de",
+      "aquis",
+      "tempe",
+      "rantibus",
+      "illam",
+      "tu",
+      "accipe",
+      "aquam",
+      "vite",
+      "et",
+      "tempera",
+      "suam",
+      "humiditatem",
+      "per",
+      "distillacio",
+      "nem",
+      "et",
+      "substanciam",
+      "aque",
+      "que",
+      "est",
+      "purum",
+      "aurum",
+      "pone",
+      "ad",
+      "partem",
+      "et",
+      "infra",
+      "humiditatem",
+      "vegetabilem",
+      "pones",
+      "tertiam",
+      "partem",
+      "de",
+      "bresis",
+      "alias",
+      "brescis",
+      "cum",
+      "tota",
+      "sua"
+    ],
+    "catalan_first_50": [
+      "testamentum",
+      "iii",
+      "la",
+      "administraci",
+      "de",
+      "la",
+      "dita",
+      "aygua",
+      "en",
+      "cors",
+      "humanall",
+      "e",
+      "primer",
+      "de",
+      "les",
+      "aygues",
+      "temperans",
+      "aquella",
+      "tu",
+      "pendr\u00e0s",
+      "laygua",
+      "de",
+      "vida",
+      "e",
+      "separan",
+      "sa",
+      "humiditat",
+      "tota",
+      "per",
+      "distillaci",
+      "e",
+      "la",
+      "substancia",
+      "de",
+      "laygua",
+      "qui",
+      "\u00e9s",
+      "pur",
+      "or",
+      "tu",
+      "metr\u00e0s",
+      "a",
+      "part",
+      "e",
+      "dedins",
+      "la",
+      "humi",
+      "ditat",
+      "vejetal",
+      "metr\u00e0s"
+    ],
+    "latin_anchor_x4_present": true,
+    "catalan_anchor_x4_present": true,
+    "catalan_anchor_x9_present": true
+  },
+  "scale_analysis": {
+    "voynich_per_latin_ratio": 0.5827439886845828,
+    "voynich_per_catalan_ratio": 0.42694300518134715,
+    "primary_hypothesis": "UNCLEAR scale (ratio 0.58)"
+  }
+}

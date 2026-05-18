@@ -1,0 +1,95 @@
+{
+  "voynich_middles": {
+    "label": "Voynich MIDDLEs (Currier B)",
+    "n_tokens": 21610,
+    "n_types": 1302,
+    "ttr": 0.06024988431281814,
+    "hapax_count": 820,
+    "hapax_rate": 0.6298003072196621,
+    "top_10_freqs": [
+      3155,
+      1263,
+      1248,
+      810,
+      789,
+      714,
+      688,
+      679,
+      629,
+      628
+    ],
+    "top_10_token_share": 0.4906524757056918,
+    "zipf_slope": -1.50752273855563,
+    "n_ranks_for_zipf": 200
+  },
+  "voynich_full_tokens": {
+    "label": "Voynich full tokens (B)",
+    "n_tokens": 21610,
+    "n_types": 4640,
+    "ttr": 0.21471540953262377,
+    "hapax_count": 3106,
+    "hapax_rate": 0.6693965517241379,
+    "top_10_freqs": [
+      455,
+      396,
+      378,
+      341,
+      301,
+      297,
+      263,
+      262,
+      250,
+      234
+    ],
+    "top_10_token_share": 0.14701527070800555,
+    "zipf_slope": -0.7921602640895801,
+    "n_ranks_for_zipf": 200
+  },
+  "sismel_catalan_full": {
+    "label": "SISMEL Catalan words",
+    "n_tokens": 93422,
+    "n_types": 10606,
+    "ttr": 0.11352786281603905,
+    "hapax_count": 6195,
+    "hapax_rate": 0.5841033377333584,
+    "top_10_freqs": [
+      5243,
+      4111,
+      3039,
+      2632,
+      2453,
+      1978,
+      1658,
+      1090,
+      1031,
+      870
+    ],
+    "top_10_token_share": 0.2580227355440903,
+    "zipf_slope": -0.9258589991596315,
+    "n_ranks_for_zipf": 200
+  },
+  "sismel_latin_full": {
+    "label": "SISMEL Latin words",
+    "n_tokens": 103843,
+    "n_types": 14490,
+    "ttr": 0.13953757114104948,
+    "hapax_count": 7912,
+    "hapax_rate": 0.546031746031746,
+    "top_10_freqs": [
+      6137,
+      3472,
+      2124,
+      1977,
+      1976,
+      1916,
+      1363,
+      986,
+      957,
+      941
+    ],
+    "top_10_token_share": 0.21040416783028226,
+    "zipf_slope": -0.815464497769471,
+    "n_ranks_for_zipf": 200
+  },
+  "n_middles": 21610
+}

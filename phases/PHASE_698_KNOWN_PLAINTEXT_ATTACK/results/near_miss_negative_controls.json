@@ -1,0 +1,515 @@
+[
+  {
+    "recipe_id": "III.19.0",
+    "label": "CORRECT MATCH",
+    "total_score": 7,
+    "specific_score": 5,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Balneum-dominant (high steady e-depth 0.45-0.65)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "Distributed/back-loaded material additions (renewal pattern)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "\u00d74 counting anchor (corpus-singular 4-qokedy run)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "\u00d79 secondary cardinality",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Multi-paragraph procedural (~6+ paragraphs)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Sparse/no observation MIDDLEs",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "V-shape thermal arc with transfer interruption (reflux geometry)",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.21.0",
+    "label": "EXTREME CONTROL (vessel specification)",
+    "total_score": 3,
+    "specific_score": 1,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Cendres (ash-based heat \u2014 moderate-high)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "No material additions (descriptive/specification)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "\u00d73 counting anchor",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~1 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "Sublimation signature (ot-heavy, transfer-up tokens, P9-style cooling spike)",
+        false,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.11.0",
+    "label": "near-miss: red mercury cohobation",
+    "total_score": 4,
+    "specific_score": 2,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Balneum-dominant (high steady e-depth 0.45-0.65)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "Front-loaded material additions (single charge)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "\u00d73 counting anchor",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~5 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "V-shape thermal arc with transfer interruption (reflux geometry)",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.12.0",
+    "label": "near-miss: mercury sublimation",
+    "total_score": 2,
+    "specific_score": 0,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Fire-strengthening (decreasing e-depth arc)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "No material additions (descriptive/specification)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "\u00d73 counting anchor",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~5 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "Sublimation signature (ot-heavy, transfer-up tokens, P9-style cooling spike)",
+        false,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.15.0",
+    "label": "near-miss: ferment conversion",
+    "total_score": 4,
+    "specific_score": 1,
+    "tautological_score": 3,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Generic thermal management",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Material additions",
+        "Front-loaded material additions (single charge)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "No primary cardinality anchor expected",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~3 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "No special operational structure",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.16.0",
+    "label": "near-miss: ferment multiplication",
+    "total_score": 4,
+    "specific_score": 2,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Balneum-dominant (high steady e-depth 0.45-0.65)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "Front-loaded material additions (single charge)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "No primary cardinality anchor expected",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~3 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "V-shape thermal arc with transfer interruption (reflux geometry)",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.18.0",
+    "label": "near-miss: potable gold",
+    "total_score": 4,
+    "specific_score": 2,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Balneum-dominant (high steady e-depth 0.45-0.65)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "Front-loaded material additions (single charge)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "No primary cardinality anchor expected",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~4 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "V-shape thermal arc with transfer interruption (reflux geometry)",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.22.0",
+    "label": "near-miss: fire governance",
+    "total_score": 4,
+    "specific_score": 1,
+    "tautological_score": 3,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Generic thermal management",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Material additions",
+        "No material additions (descriptive/specification)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "\u00d73 counting anchor",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~2 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "No special operational structure",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  },
+  {
+    "recipe_id": "III.44.0",
+    "label": "near-miss: quicksilver coagulation",
+    "total_score": 4,
+    "specific_score": 2,
+    "tautological_score": 2,
+    "predictions": [
+      [
+        "Thermal regime",
+        "Balneum-dominant (high steady e-depth 0.45-0.65)",
+        true,
+        "SPECIFIC"
+      ],
+      [
+        "Material additions",
+        "Front-loaded material additions (single charge)",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Heat intensity",
+        "qo-prefix dominant (>20%) \u2014 heat-intensive operation",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Primary cardinality",
+        "No primary cardinality anchor expected",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Secondary cardinality",
+        "No second cardinality",
+        false,
+        "SPECIFIC"
+      ],
+      [
+        "Procedural complexity",
+        "Short folio (~3 paragraphs)",
+        false,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Monitoring",
+        "Observation MIDDLEs present (active monitoring)",
+        true,
+        "TAUTOLOGICAL"
+      ],
+      [
+        "Special structure",
+        "V-shape thermal arc with transfer interruption (reflux geometry)",
+        true,
+        "SPECIFIC"
+      ]
+    ]
+  }
+]

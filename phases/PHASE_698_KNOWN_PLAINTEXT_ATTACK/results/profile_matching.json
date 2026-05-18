@@ -1,0 +1,1282 @@
+{
+  "method": "Voynich line \u2194 Latin phase profile matching (z-scored 4D Euclidean)",
+  "v_feature_names": [
+    "k_ratio",
+    "h_ratio",
+    "e_ratio",
+    "thermo_ke_rate"
+  ],
+  "l_feature_names": [
+    "heat_rate",
+    "monitoring_rate",
+    "correction_rate",
+    "heat_transition_rate"
+  ],
+  "assignments": [
+    {
+      "line": [
+        0,
+        1
+      ],
+      "key": "P0.L1",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.0466155376077504,
+      "ratio_2nd_to_1st": 1.2879661214991551,
+      "top_3_distances": [
+        [
+          6,
+          2.0466155376077504,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.6359714761725623,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          2.707779716022976,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        2
+      ],
+      "key": "P0.L2",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.3226836833218543,
+      "ratio_2nd_to_1st": 1.2025313604878516,
+      "top_3_distances": [
+        [
+          6,
+          2.3226836833218543,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.7930999696879635,
+          "phase_5_fifth_water"
+        ],
+        [
+          2,
+          2.900744042953856,
+          "phase_3_third_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        3
+      ],
+      "key": "P0.L3",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 3.101266921275669,
+      "ratio_2nd_to_1st": 1.0166159005608548,
+      "top_3_distances": [
+        [
+          2,
+          3.101266921275669,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          3.152797264052254,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.244613845112793,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        4
+      ],
+      "key": "P0.L4",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.107535522198002,
+      "ratio_2nd_to_1st": 1.160195395618239,
+      "top_3_distances": [
+        [
+          6,
+          3.107535522198002,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.605348404574242,
+          "phase_5_fifth_water"
+        ],
+        [
+          2,
+          3.6749694104344317,
+          "phase_3_third_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        5
+      ],
+      "key": "P0.L5",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.0587781494155553,
+      "ratio_2nd_to_1st": 1.1119669621233963,
+      "top_3_distances": [
+        [
+          6,
+          3.0587781494155553,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.4012602466150392,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.4171568680631768,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        6
+      ],
+      "key": "P0.L6",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.5041091347663884,
+      "ratio_2nd_to_1st": 1.0114395836946417,
+      "top_3_distances": [
+        [
+          6,
+          3.5041091347663884,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.5441946844887067,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.7464696862783846,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        7
+      ],
+      "key": "P0.L7",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 2.533228686421299,
+      "ratio_2nd_to_1st": 1.0744315596492688,
+      "top_3_distances": [
+        [
+          2,
+          2.533228686421299,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.721780848499905,
+          "phase_5_fifth_water"
+        ],
+        [
+          6,
+          2.745695552409518,
+          "phase_7_rectification"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        8
+      ],
+      "key": "P0.L8",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.8647061019666067,
+      "ratio_2nd_to_1st": 1.0498259043115308,
+      "top_3_distances": [
+        [
+          6,
+          2.8647061019666067,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.0074426740838534,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.0580716546464632,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        9
+      ],
+      "key": "P0.L9",
+      "best_phase": "phase_8_admin_healthy",
+      "best_distance": 4.531892045283425,
+      "ratio_2nd_to_1st": 1.035619297903136,
+      "top_3_distances": [
+        [
+          7,
+          4.531892045283425,
+          "phase_8_admin_healthy"
+        ],
+        [
+          2,
+          4.693314858109228,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          4.848521661677939,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        10
+      ],
+      "key": "P0.L10",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.6187416396283947,
+      "ratio_2nd_to_1st": 1.003506914774457,
+      "top_3_distances": [
+        [
+          6,
+          2.6187416396283947,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          2.6279253433748937,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.6892330107603684,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        11
+      ],
+      "key": "P0.L11",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.0122451027994064,
+      "ratio_2nd_to_1st": 1.00276260958442,
+      "top_3_distances": [
+        [
+          6,
+          3.0122451027994064,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.020566759991022,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.253779461679754,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        12
+      ],
+      "key": "P0.L12",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.123406629790105,
+      "ratio_2nd_to_1st": 1.0607741721989175,
+      "top_3_distances": [
+        [
+          6,
+          3.123406629790105,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.313229082156209,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.3546640147190385,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        13
+      ],
+      "key": "P0.L13",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.7138478542564246,
+      "ratio_2nd_to_1st": 1.023670153074352,
+      "top_3_distances": [
+        [
+          6,
+          2.7138478542564246,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          2.7780850483871755,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.945910975022079,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        14
+      ],
+      "key": "P0.L14",
+      "best_phase": "phase_8_admin_healthy",
+      "best_distance": 3.766584768998409,
+      "ratio_2nd_to_1st": 1.015171599585692,
+      "top_3_distances": [
+        [
+          7,
+          3.766584768998409,
+          "phase_8_admin_healthy"
+        ],
+        [
+          2,
+          3.8237298849192194,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.997234173313431,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        15
+      ],
+      "key": "P0.L15",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 1.867383224864906,
+      "ratio_2nd_to_1st": 1.0525944112559207,
+      "top_3_distances": [
+        [
+          6,
+          1.867383224864906,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          1.9655971461658583,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.0085631998975115,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        16
+      ],
+      "key": "P0.L16",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.017038307988193,
+      "ratio_2nd_to_1st": 1.0380249084145157,
+      "top_3_distances": [
+        [
+          6,
+          2.017038307988193,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          2.093736004918014,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.124571651797604,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        17
+      ],
+      "key": "P0.L17",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 1.8195481212783182,
+      "ratio_2nd_to_1st": 1.0625866145221907,
+      "top_3_distances": [
+        [
+          6,
+          1.8195481212783182,
+          "phase_7_rectification"
+        ],
+        [
+          7,
+          1.9334274781493406,
+          "phase_8_admin_healthy"
+        ],
+        [
+          4,
+          2.0322128348188593,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        18
+      ],
+      "key": "P0.L18",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 1.9611691997176972,
+      "ratio_2nd_to_1st": 1.1659799227809082,
+      "top_3_distances": [
+        [
+          6,
+          1.9611691997176972,
+          "phase_7_rectification"
+        ],
+        [
+          5,
+          2.286683912047136,
+          "phase_6_sixth_water"
+        ],
+        [
+          0,
+          2.3092118239559927,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        19
+      ],
+      "key": "P0.L19",
+      "best_phase": "phase_8_admin_healthy",
+      "best_distance": 3.6762097944619088,
+      "ratio_2nd_to_1st": 1.002061318161014,
+      "top_3_distances": [
+        [
+          7,
+          3.6762097944619088,
+          "phase_8_admin_healthy"
+        ],
+        [
+          2,
+          3.683787632474931,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          3.7237821667349116,
+          "phase_7_rectification"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        20
+      ],
+      "key": "P0.L20",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.872189237956921,
+      "ratio_2nd_to_1st": 1.1501180619869662,
+      "top_3_distances": [
+        [
+          6,
+          2.872189237956921,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.303356720018835,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          3.3929669808824925,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        21
+      ],
+      "key": "P0.L21",
+      "best_phase": "phase_5_fifth_water",
+      "best_distance": 1.7819089316608416,
+      "ratio_2nd_to_1st": 1.0053067208562734,
+      "top_3_distances": [
+        [
+          4,
+          1.7819089316608416,
+          "phase_5_fifth_water"
+        ],
+        [
+          2,
+          1.791365024952466,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          1.7923125082306275,
+          "phase_7_rectification"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        22
+      ],
+      "key": "P0.L22",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 1.4968019710993994,
+      "ratio_2nd_to_1st": 1.2472003675620218,
+      "top_3_distances": [
+        [
+          6,
+          1.4968019710993994,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          1.8668119685227296,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          1.9110554414738075,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        23
+      ],
+      "key": "P0.L23",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.556143786123106,
+      "ratio_2nd_to_1st": 1.0783272687362833,
+      "top_3_distances": [
+        [
+          6,
+          3.556143786123106,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.8346868161236345,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.9239565863032517,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        24
+      ],
+      "key": "P0.L24",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 2.3349668099113092,
+      "ratio_2nd_to_1st": 1.0434727089192357,
+      "top_3_distances": [
+        [
+          2,
+          2.3349668099113092,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          2.43647414237466,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.54117144227037,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        25
+      ],
+      "key": "P0.L25",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.2885835715587217,
+      "ratio_2nd_to_1st": 1.0672764357755198,
+      "top_3_distances": [
+        [
+          6,
+          3.2885835715587217,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.5098277530031217,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.6242430799205123,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        26
+      ],
+      "key": "P0.L26",
+      "best_phase": "phase_1_first_water_x4",
+      "best_distance": 0.9190456048623177,
+      "ratio_2nd_to_1st": 1.011704225220312,
+      "top_3_distances": [
+        [
+          0,
+          0.9190456048623177,
+          "phase_1_first_water_x4"
+        ],
+        [
+          5,
+          0.9298023216093639,
+          "phase_6_sixth_water"
+        ],
+        [
+          8,
+          0.9697793994497802,
+          "phase_9_admin_sick"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        27
+      ],
+      "key": "P0.L27",
+      "best_phase": "phase_8_admin_healthy",
+      "best_distance": 0.9619256907157812,
+      "ratio_2nd_to_1st": 1.416971226561674,
+      "top_3_distances": [
+        [
+          7,
+          0.9619256907157812,
+          "phase_8_admin_healthy"
+        ],
+        [
+          8,
+          1.363021025834726,
+          "phase_9_admin_sick"
+        ],
+        [
+          0,
+          1.574897460899543,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        28
+      ],
+      "key": "P0.L28",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.585322084705577,
+      "ratio_2nd_to_1st": 1.2154774536151054,
+      "top_3_distances": [
+        [
+          6,
+          2.585322084705577,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.1424007042928306,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          3.2198309669805933,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        29
+      ],
+      "key": "P0.L29",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.112045978500222,
+      "ratio_2nd_to_1st": 1.1608754268592536,
+      "top_3_distances": [
+        [
+          6,
+          2.112045978500222,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          2.451822276837815,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.481585103583798,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        30
+      ],
+      "key": "P0.L30",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 2.092980672959163,
+      "ratio_2nd_to_1st": 1.0683804938452441,
+      "top_3_distances": [
+        [
+          2,
+          2.092980672959163,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          2.236099724984662,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.2795441428912904,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        31
+      ],
+      "key": "P0.L31",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 3.3142715991495013,
+      "ratio_2nd_to_1st": 1.03505891439218,
+      "top_3_distances": [
+        [
+          2,
+          3.3142715991495013,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          3.4304663634165173,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.517264268774735,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        32
+      ],
+      "key": "P0.L32",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.0434314649721386,
+      "ratio_2nd_to_1st": 1.0015685880475662,
+      "top_3_distances": [
+        [
+          6,
+          2.0434314649721386,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          2.0466367671441144,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.0664123056157795,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        33
+      ],
+      "key": "P0.L33",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.2994262606276887,
+      "ratio_2nd_to_1st": 1.1612466460268243,
+      "top_3_distances": [
+        [
+          6,
+          2.2994262606276887,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.670201032939906,
+          "phase_5_fifth_water"
+        ],
+        [
+          2,
+          2.7052073374308216,
+          "phase_3_third_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        34
+      ],
+      "key": "P0.L34",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 1.7716846989764428,
+      "ratio_2nd_to_1st": 1.1294104474714615,
+      "top_3_distances": [
+        [
+          2,
+          1.7716846989764428,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.0009592086493257,
+          "phase_5_fifth_water"
+        ],
+        [
+          6,
+          2.047967069236769,
+          "phase_7_rectification"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        35
+      ],
+      "key": "P0.L35",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 1.9553088305883066,
+      "ratio_2nd_to_1st": 1.122124671187941,
+      "top_3_distances": [
+        [
+          2,
+          1.9553088305883066,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.1941002785947807,
+          "phase_5_fifth_water"
+        ],
+        [
+          6,
+          2.2236971717817693,
+          "phase_7_rectification"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        36
+      ],
+      "key": "P0.L36",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.8341835191175213,
+      "ratio_2nd_to_1st": 1.1236895315569841,
+      "top_3_distances": [
+        [
+          6,
+          2.8341835191175213,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.1847423509436923,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.2615089362941747,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        37
+      ],
+      "key": "P0.L37",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 3.223016783020884,
+      "ratio_2nd_to_1st": 1.024014519430369,
+      "top_3_distances": [
+        [
+          2,
+          3.223016783020884,
+          "phase_3_third_water"
+        ],
+        [
+          6,
+          3.3004159821811445,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.3452411818237415,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        38
+      ],
+      "key": "P0.L38",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 4.816109254476566,
+      "ratio_2nd_to_1st": 1.0514410013114528,
+      "top_3_distances": [
+        [
+          6,
+          4.816109254476566,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          5.0638547369521945,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          5.204913074703694,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        39
+      ],
+      "key": "P0.L39",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 3.45502696182324,
+      "ratio_2nd_to_1st": 1.0985881253143537,
+      "top_3_distances": [
+        [
+          6,
+          3.45502696182324,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          3.79565159289994,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          3.8649409941849284,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        40
+      ],
+      "key": "P0.L40",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 1.7326000167289877,
+      "ratio_2nd_to_1st": 1.3375465011336547,
+      "top_3_distances": [
+        [
+          6,
+          1.7326000167289877,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.317433090239969,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          2.424467985360355,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        41
+      ],
+      "key": "P0.L41",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 4.878888276530166,
+      "ratio_2nd_to_1st": 1.0950149291472286,
+      "top_3_distances": [
+        [
+          6,
+          4.878888276530166,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          5.342455500441924,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          5.377494348502642,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        42
+      ],
+      "key": "P0.L42",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.7519303824908388,
+      "ratio_2nd_to_1st": 1.1726467971821777,
+      "top_3_distances": [
+        [
+          6,
+          2.7519303824908388,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          3.2270423490962075,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          3.252856046261004,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        43
+      ],
+      "key": "P0.L43",
+      "best_phase": "phase_3_third_water",
+      "best_distance": 2.3695841480252553,
+      "ratio_2nd_to_1st": 1.1470961630232588,
+      "top_3_distances": [
+        [
+          2,
+          2.3695841480252553,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.718140884160508,
+          "phase_5_fifth_water"
+        ],
+        [
+          3,
+          2.781669054661922,
+          "phase_4_fourth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        44
+      ],
+      "key": "P0.L44",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 1.0148047934489206,
+      "ratio_2nd_to_1st": 1.2537832144093795,
+      "top_3_distances": [
+        [
+          6,
+          1.0148047934489206,
+          "phase_7_rectification"
+        ],
+        [
+          0,
+          1.272345215928434,
+          "phase_1_first_water_x4"
+        ],
+        [
+          4,
+          1.282233326043734,
+          "phase_5_fifth_water"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        45
+      ],
+      "key": "P0.L45",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.0362065551942696,
+      "ratio_2nd_to_1st": 1.1346650612926787,
+      "top_3_distances": [
+        [
+          6,
+          2.0362065551942696,
+          "phase_7_rectification"
+        ],
+        [
+          4,
+          2.3104124357540603,
+          "phase_5_fifth_water"
+        ],
+        [
+          0,
+          2.4076378593796908,
+          "phase_1_first_water_x4"
+        ]
+      ]
+    },
+    {
+      "line": [
+        0,
+        46
+      ],
+      "key": "P0.L46",
+      "best_phase": "phase_7_rectification",
+      "best_distance": 2.5157706114630556,
+      "ratio_2nd_to_1st": 1.0861520026527978,
+      "top_3_distances": [
+        [
+          6,
+          2.5157706114630556,
+          "phase_7_rectification"
+        ],
+        [
+          2,
+          2.7325092878556516,
+          "phase_3_third_water"
+        ],
+        [
+          4,
+          2.7693944074154357,
+          "phase_5_fifth_water"
+        ]
+      ]
+    }
+  ],
+  "phase_counts": {
+    "phase_7_rectification": 31,
+    "phase_3_third_water": 9,
+    "phase_8_admin_healthy": 4,
+    "phase_5_fifth_water": 1,
+    "phase_1_first_water_x4": 1,
+    "phase_2_second_water_capon": 0,
+    "phase_4_fourth_water": 0,
+    "phase_6_sixth_water": 0,
+    "phase_9_admin_sick": 0
+  },
+  "phase_mean_line": {
+    "phase_1_first_water_x4": 26.0,
+    "phase_2_second_water_capon": null,
+    "phase_3_third_water": 27.11111111111111,
+    "phase_4_fourth_water": null,
+    "phase_5_fifth_water": 21.0,
+    "phase_6_sixth_water": null,
+    "phase_7_rectification": 23.258064516129032,
+    "phase_8_admin_healthy": 17.25,
+    "phase_9_admin_sick": null
+  },
+  "spearman_narrative_vs_position": -0.7999999999999998
+}

@@ -4,6 +4,53 @@
 
 ---
 
+## Version 6.69 (2026-05-17) - PHASE 698: Known-Plaintext Attack on f75r↔III.19 — Strong-Form Falsified, Operational-Class Match Reinforced
+
+### Summary
+
+Started as a known-plaintext cipher attack on f75r ↔ SISMEL III.19.0 (aqua vitae reflux distillation), pursuing the strong-form Path A hypothesis (token-level Latin-text correspondence). Four discriminating tests all returned null or contrary, and the session initially concluded "C1971 cold reads are weak sauce." Both expert agents pushed back convergently: the four tests targeted a stronger claim than C1971 actually makes, but the original cold-read "8/8" framing was also partly inflated by tautological predictions. Three calibration tests requested by experts resolved the gaps.
+
+**Lead finding (C2035):** Mantel null on folio-aggregate token similarity vs Latin chapter content similarity (best ρ = +0.12, p = 0.14 across 6 variants). This is the load-bearing scope-restriction on C1971: the 8D matcher's operational-class identification is real but does NOT propagate to token-level lexical correspondence.
+
+**Result:** Three new constraints registered (C2034 Tier 2, C2035 Tier 2 bounding, C2036 Tier 1 falsification) plus C1971 phrasing sharpening to distinguish SPECIFIC vs TAUTOLOGICAL predictions. Path A as a known-plaintext attack is dead; C1971 cold-read framework holds at its actual claim level (operational-class signature with discriminating structural features).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `phases/PHASE_698_KNOWN_PLAINTEXT_ATTACK/INDEX.md` | New phase index with full session arc, four-test sequence, expert pushback, three calibration tests |
+| `context/CLAIMS/INDEX.md` | Added C2034 (Catalan cardinality baseline, Tier 2), C2035 (Mantel null bounding constraint, Tier 2), C2036 (closed-lexicon NL falsified, Tier 1). C1971 sharpened with SPECIFIC/TAUTOLOGICAL distinction. Constraint count 2028 → 2031, version 6.68 → 6.69 |
+| `CLAUDE.md` | Version 6.68 → 6.69, constraint count 2028 → 2031, phases 694 → 695 |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `~/.claude/projects/.../memory/feedback_specific_vs_tautological_predictions.md` | New methodology memory documenting the SPECIFIC vs TAUTOLOGICAL decomposition for pre-registered prediction protocols |
+
+### Main findings
+
+**C2034 — Catalan cardinality baseline (Tier 2).** Systematic regex sweep across 189 SISMEL sub-recipes for Catalan cardinality phrases. Only 2 of 189 contain ANY cardinality phrase in Catalan: III.12.0 (×3 only) and III.19.0 (×4 AND ×9). **III.19.0 is the ONLY Catalan sub-recipe with both ×4 and ×9 jointly** (1/189 = 0.5%). Combined with C1889 (f75r corpus-singular 4-qokedy run, 1/82), joint conjunction probability ≈ 1/16,500. Bounds look-elsewhere effect to essentially zero in Catalan.
+
+**C2035 — Mantel null on folio-aggregate token similarity (Tier 2, bounding).** Across 14 catalogued folios in C1971, Mantel correlation between Voynich token-set Jaccard and Latin chapter-content Jaccard is null at all 6 variants (best ρ=+0.12, p=0.14). Operational-class signature matching does NOT propagate to folio-aggregate lexical overlap. Critical scope-restriction: C1971 means structural/operational match, not text-level decoding.
+
+**C2036 — Closed-lexicon NL hypothesis FALSIFIED (Tier 1).** Crazy-expert speculative hypothesis: MIDDLEs might be arbitrary lexical units (Chinese-character-style ~80-150 closed lexicon). Refuted by MIDDLE inventory size: 1,302 unique types in 21,610 tokens — 10× larger than hypothesized range. Distribution is more concentrated than NL (top-10 49% vs Catalan 25%) and Zipf steeper (−1.51 vs −0.91). Adds to NL falsification series (C130, C1376, C1976, C2015, C2022). Productive-tail observation (hapax rate 63% matching Catalan 64%) retained as Tier 2 subsidiary — motivates follow-on hapax concentration test.
+
+**C1971 sharpening.** Decompose pre-registered prediction protocol into SPECIFIC (5 of 8 — thermal regime, material additions, primary cardinality, secondary cardinality, special structure) vs TAUTOLOGICAL (3 of 8 — heat intensity, procedural complexity, monitoring). Specific predictions discriminate correct match (5/5) from near-miss recipes (0-2/5). Tautological predictions are floors. The 8/8 cold-read framing is correct but should be read as "5/5 specific + 2-3/3 floors."
+
+### Methodology lessons
+
+Two interpretive overshoots reversed in one session, both caught by expert pushback:
+
+1. **Path A premise overshoot.** Strong-form known-plaintext attack premise was stronger than C1971's actual claim. Four discriminating tests falsified the stronger premise; C1971's actual claim survives.
+
+2. **"Weak sauce" reactive overshoot.** Initial dismissive framing was stronger than the data supported. Reversed after reading the actual cold-read protocol (pre-registered predictions + negative controls) and acknowledging the methodological rigor.
+
+Discipline: actually read what existing constraints claim before testing or before dismissing. Both overshoots avoided by mid-session expert consultation that flagged the gaps before registration. Logged as new methodology memory `feedback_specific_vs_tautological_predictions.md`. Reinforces `feedback_calibrate_thresholds_against_controls.md` and `feedback_framework_as_null.md`.
+
+### Deferred (next phases)
+
+- **PHASE_699 candidate:** Hapax MIDDLE concentration test. Discriminating test between "operational productive tail" and "lexical content tail" via per-folio hapax concentration vs frequency-matched non-hapax. C914's 3.7× label enrichment is the precedent. If hapaxes 3×+ folio-concentrated, lexical-content-tail interpretation wins.
+- **PHASE_700 candidate:** Computus tables alternative-class adversarial test. Test Voynich MIDDLE distribution vs paschal/calendrical computation corpora. Cleanest external alternative-class falsification candidate identified.
+
+---
+
 ## Version 6.68 (2026-05-17) - PHASE 697: V/C-Partition Projection Flexibility
 
 ### Summary

@@ -1,0 +1,986 @@
+{
+  "method": "f75r per-line 8D thermal profile vs SISMEL III.19 phase operational profile",
+  "voynich_line_profiles": {
+    "P0.L1": {
+      "n_tokens": 8,
+      "n_middle_atoms": 12,
+      "k_ratio": 0.08333333333333333,
+      "h_ratio": 0.0,
+      "e_ratio": 0.4166666666666667,
+      "terminal_rate": 0.3333333333333333,
+      "thermo_ke_rate": 0.125,
+      "qok_density": 0.125,
+      "qo_density": 0.125,
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 5,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        1
+      ]
+    },
+    "P0.L2": {
+      "n_tokens": 8,
+      "n_middle_atoms": 18,
+      "k_ratio": 0.1111111111111111,
+      "h_ratio": 0.05555555555555555,
+      "e_ratio": 0.3888888888888889,
+      "terminal_rate": 0.26666666666666666,
+      "thermo_ke_rate": 0.125,
+      "qok_density": 0.0,
+      "qo_density": 0.125,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 7,
+      "qok_count": 0,
+      "line_id_tuple": [
+        0,
+        2
+      ]
+    },
+    "P0.L3": {
+      "n_tokens": 9,
+      "n_middle_atoms": 13,
+      "k_ratio": 0.23076923076923078,
+      "h_ratio": 0.07692307692307693,
+      "e_ratio": 0.3076923076923077,
+      "terminal_rate": 0.34615384615384615,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.1111111111111111,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 4,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        3
+      ]
+    },
+    "P0.L4": {
+      "n_tokens": 10,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.13333333333333333,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.4666666666666667,
+      "terminal_rate": 0.3076923076923077,
+      "thermo_ke_rate": 0.2,
+      "qok_density": 0.1,
+      "qo_density": 0.0,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 7,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        4
+      ]
+    },
+    "P0.L5": {
+      "n_tokens": 11,
+      "n_middle_atoms": 16,
+      "k_ratio": 0.1875,
+      "h_ratio": 0.0625,
+      "e_ratio": 0.4375,
+      "terminal_rate": 0.32142857142857145,
+      "thermo_ke_rate": 0.09090909090909091,
+      "qok_density": 0.18181818181818182,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 7,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        5
+      ]
+    },
+    "P0.L6": {
+      "n_tokens": 9,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.26666666666666666,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.3333333333333333,
+      "terminal_rate": 0.32,
+      "thermo_ke_rate": 0.2222222222222222,
+      "qok_density": 0.3333333333333333,
+      "qo_density": 0.0,
+      "k_count": 4,
+      "h_count": 1,
+      "e_count": 5,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        6
+      ]
+    },
+    "P0.L7": {
+      "n_tokens": 9,
+      "n_middle_atoms": 14,
+      "k_ratio": 0.21428571428571427,
+      "h_ratio": 0.07142857142857142,
+      "e_ratio": 0.21428571428571427,
+      "terminal_rate": 0.32,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.3333333333333333,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 3,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        7
+      ]
+    },
+    "P0.L8": {
+      "n_tokens": 8,
+      "n_middle_atoms": 19,
+      "k_ratio": 0.15789473684210525,
+      "h_ratio": 0.10526315789473684,
+      "e_ratio": 0.2631578947368421,
+      "terminal_rate": 0.25,
+      "thermo_ke_rate": 0.125,
+      "qok_density": 0.125,
+      "qo_density": 0.125,
+      "k_count": 3,
+      "h_count": 2,
+      "e_count": 5,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        8
+      ]
+    },
+    "P0.L9": {
+      "n_tokens": 9,
+      "n_middle_atoms": 21,
+      "k_ratio": 0.23809523809523808,
+      "h_ratio": 0.19047619047619047,
+      "e_ratio": 0.14285714285714285,
+      "terminal_rate": 0.21875,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.4444444444444444,
+      "qo_density": 0.0,
+      "k_count": 5,
+      "h_count": 4,
+      "e_count": 3,
+      "qok_count": 4,
+      "line_id_tuple": [
+        0,
+        9
+      ]
+    },
+    "P0.L10": {
+      "n_tokens": 10,
+      "n_middle_atoms": 12,
+      "k_ratio": 0.16666666666666666,
+      "h_ratio": 0.08333333333333333,
+      "e_ratio": 0.25,
+      "terminal_rate": 0.38461538461538464,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.1,
+      "qo_density": 0.1,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 3,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        10
+      ]
+    },
+    "P0.L11": {
+      "n_tokens": 10,
+      "n_middle_atoms": 19,
+      "k_ratio": 0.2631578947368421,
+      "h_ratio": 0.0,
+      "e_ratio": 0.3157894736842105,
+      "terminal_rate": 0.26666666666666666,
+      "thermo_ke_rate": 0.2,
+      "qok_density": 0.4,
+      "qo_density": 0.0,
+      "k_count": 5,
+      "h_count": 0,
+      "e_count": 6,
+      "qok_count": 4,
+      "line_id_tuple": [
+        0,
+        11
+      ]
+    },
+    "P0.L12": {
+      "n_tokens": 12,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.2,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.4,
+      "terminal_rate": 0.35714285714285715,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.16666666666666666,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 6,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        12
+      ]
+    },
+    "P0.L13": {
+      "n_tokens": 8,
+      "n_middle_atoms": 22,
+      "k_ratio": 0.22727272727272727,
+      "h_ratio": 0.045454545454545456,
+      "e_ratio": 0.3181818181818182,
+      "terminal_rate": 0.25806451612903225,
+      "thermo_ke_rate": 0.125,
+      "qok_density": 0.625,
+      "qo_density": 0.0,
+      "k_count": 5,
+      "h_count": 1,
+      "e_count": 7,
+      "qok_count": 5,
+      "line_id_tuple": [
+        0,
+        13
+      ]
+    },
+    "P0.L14": {
+      "n_tokens": 11,
+      "n_middle_atoms": 19,
+      "k_ratio": 0.21052631578947367,
+      "h_ratio": 0.15789473684210525,
+      "e_ratio": 0.10526315789473684,
+      "terminal_rate": 0.29411764705882354,
+      "thermo_ke_rate": 0.09090909090909091,
+      "qok_density": 0.2727272727272727,
+      "qo_density": 0.0,
+      "k_count": 4,
+      "h_count": 3,
+      "e_count": 2,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        14
+      ]
+    },
+    "P0.L15": {
+      "n_tokens": 11,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.13333333333333333,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.2,
+      "terminal_rate": 0.3103448275862069,
+      "thermo_ke_rate": 0.09090909090909091,
+      "qok_density": 0.18181818181818182,
+      "qo_density": 0.09090909090909091,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 3,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        15
+      ]
+    },
+    "P0.L16": {
+      "n_tokens": 9,
+      "n_middle_atoms": 20,
+      "k_ratio": 0.15,
+      "h_ratio": 0.05,
+      "e_ratio": 0.25,
+      "terminal_rate": 0.25806451612903225,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.2222222222222222,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 5,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        16
+      ]
+    },
+    "P0.L17": {
+      "n_tokens": 9,
+      "n_middle_atoms": 16,
+      "k_ratio": 0.0625,
+      "h_ratio": 0.0625,
+      "e_ratio": 0.25,
+      "terminal_rate": 0.24,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.1111111111111111,
+      "qo_density": 0.0,
+      "k_count": 1,
+      "h_count": 1,
+      "e_count": 4,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        17
+      ]
+    },
+    "P0.L18": {
+      "n_tokens": 9,
+      "n_middle_atoms": 8,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.375,
+      "terminal_rate": 0.23529411764705882,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.0,
+      "qo_density": 0.2222222222222222,
+      "k_count": 0,
+      "h_count": 0,
+      "e_count": 3,
+      "qok_count": 0,
+      "line_id_tuple": [
+        0,
+        18
+      ]
+    },
+    "P0.L19": {
+      "n_tokens": 8,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.2,
+      "h_ratio": 0.13333333333333333,
+      "e_ratio": 0.26666666666666666,
+      "terminal_rate": 0.2916666666666667,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.375,
+      "qo_density": 0.125,
+      "k_count": 3,
+      "h_count": 2,
+      "e_count": 4,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        19
+      ]
+    },
+    "P0.L20": {
+      "n_tokens": 9,
+      "n_middle_atoms": 8,
+      "k_ratio": 0.125,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "terminal_rate": 0.3684210526315789,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.1111111111111111,
+      "qo_density": 0.1111111111111111,
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 4,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        20
+      ]
+    },
+    "P0.L21": {
+      "n_tokens": 8,
+      "n_middle_atoms": 17,
+      "k_ratio": 0.11764705882352941,
+      "h_ratio": 0.058823529411764705,
+      "e_ratio": 0.17647058823529413,
+      "terminal_rate": 0.2962962962962963,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.0,
+      "qo_density": 0.0,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 3,
+      "qok_count": 0,
+      "line_id_tuple": [
+        0,
+        21
+      ]
+    },
+    "P0.L22": {
+      "n_tokens": 9,
+      "n_middle_atoms": 13,
+      "k_ratio": 0.07692307692307693,
+      "h_ratio": 0.0,
+      "e_ratio": 0.3076923076923077,
+      "terminal_rate": 0.3181818181818182,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.1111111111111111,
+      "qo_density": 0.0,
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 4,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        22
+      ]
+    },
+    "P0.L23": {
+      "n_tokens": 8,
+      "n_middle_atoms": 12,
+      "k_ratio": 0.25,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "terminal_rate": 0.35,
+      "thermo_ke_rate": 0.125,
+      "qok_density": 0.375,
+      "qo_density": 0.125,
+      "k_count": 3,
+      "h_count": 0,
+      "e_count": 6,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        23
+      ]
+    },
+    "P0.L24": {
+      "n_tokens": 7,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.2,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.2,
+      "terminal_rate": 0.28,
+      "thermo_ke_rate": 0.14285714285714285,
+      "qok_density": 0.14285714285714285,
+      "qo_density": 0.14285714285714285,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 3,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        24
+      ]
+    },
+    "P0.L25": {
+      "n_tokens": 8,
+      "n_middle_atoms": 14,
+      "k_ratio": 0.21428571428571427,
+      "h_ratio": 0.07142857142857142,
+      "e_ratio": 0.35714285714285715,
+      "terminal_rate": 0.2692307692307692,
+      "thermo_ke_rate": 0.25,
+      "qok_density": 0.25,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 5,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        25
+      ]
+    },
+    "P0.L26": {
+      "n_tokens": 8,
+      "n_middle_atoms": 6,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.16666666666666666,
+      "terminal_rate": 0.4117647058823529,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.0,
+      "qo_density": 0.125,
+      "k_count": 0,
+      "h_count": 0,
+      "e_count": 1,
+      "qok_count": 0,
+      "line_id_tuple": [
+        0,
+        26
+      ]
+    },
+    "P0.L27": {
+      "n_tokens": 11,
+      "n_middle_atoms": 16,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0625,
+      "e_ratio": 0.125,
+      "terminal_rate": 0.3333333333333333,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.0,
+      "qo_density": 0.09090909090909091,
+      "k_count": 0,
+      "h_count": 1,
+      "e_count": 2,
+      "qok_count": 0,
+      "line_id_tuple": [
+        0,
+        27
+      ]
+    },
+    "P0.L28": {
+      "n_tokens": 13,
+      "n_middle_atoms": 22,
+      "k_ratio": 0.09090909090909091,
+      "h_ratio": 0.045454545454545456,
+      "e_ratio": 0.45454545454545453,
+      "terminal_rate": 0.2702702702702703,
+      "thermo_ke_rate": 0.15384615384615385,
+      "qok_density": 0.15384615384615385,
+      "qo_density": 0.07692307692307693,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 10,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        28
+      ]
+    },
+    "P0.L29": {
+      "n_tokens": 12,
+      "n_middle_atoms": 20,
+      "k_ratio": 0.15,
+      "h_ratio": 0.05,
+      "e_ratio": 0.3,
+      "terminal_rate": 0.3055555555555556,
+      "thermo_ke_rate": 0.16666666666666666,
+      "qok_density": 0.08333333333333333,
+      "qo_density": 0.16666666666666666,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 6,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        29
+      ]
+    },
+    "P0.L30": {
+      "n_tokens": 12,
+      "n_middle_atoms": 24,
+      "k_ratio": 0.20833333333333334,
+      "h_ratio": 0.0,
+      "e_ratio": 0.25,
+      "terminal_rate": 0.3157894736842105,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.25,
+      "qo_density": 0.08333333333333333,
+      "k_count": 5,
+      "h_count": 0,
+      "e_count": 6,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        30
+      ]
+    },
+    "P0.L31": {
+      "n_tokens": 9,
+      "n_middle_atoms": 18,
+      "k_ratio": 0.2777777777777778,
+      "h_ratio": 0.05555555555555555,
+      "e_ratio": 0.3333333333333333,
+      "terminal_rate": 0.2857142857142857,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.4444444444444444,
+      "qo_density": 0.0,
+      "k_count": 5,
+      "h_count": 1,
+      "e_count": 6,
+      "qok_count": 4,
+      "line_id_tuple": [
+        0,
+        31
+      ]
+    },
+    "P0.L32": {
+      "n_tokens": 10,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.13333333333333333,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.2,
+      "terminal_rate": 0.2857142857142857,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.2,
+      "qo_density": 0.0,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 3,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        32
+      ]
+    },
+    "P0.L33": {
+      "n_tokens": 8,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.13333333333333333,
+      "h_ratio": 0.06666666666666667,
+      "e_ratio": 0.3333333333333333,
+      "terminal_rate": 0.2692307692307692,
+      "thermo_ke_rate": 0.125,
+      "qok_density": 0.25,
+      "qo_density": 0.125,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 5,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        33
+      ]
+    },
+    "P0.L34": {
+      "n_tokens": 9,
+      "n_middle_atoms": 10,
+      "k_ratio": 0.2,
+      "h_ratio": 0.0,
+      "e_ratio": 0.2,
+      "terminal_rate": 0.3333333333333333,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.0,
+      "qo_density": 0.0,
+      "k_count": 2,
+      "h_count": 0,
+      "e_count": 2,
+      "qok_count": 0,
+      "line_id_tuple": [
+        0,
+        34
+      ]
+    },
+    "P0.L35": {
+      "n_tokens": 9,
+      "n_middle_atoms": 14,
+      "k_ratio": 0.21428571428571427,
+      "h_ratio": 0.0,
+      "e_ratio": 0.21428571428571427,
+      "terminal_rate": 0.2916666666666667,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.3333333333333333,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 0,
+      "e_count": 3,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        35
+      ]
+    },
+    "P0.L36": {
+      "n_tokens": 9,
+      "n_middle_atoms": 10,
+      "k_ratio": 0.2,
+      "h_ratio": 0.0,
+      "e_ratio": 0.4,
+      "terminal_rate": 0.3,
+      "thermo_ke_rate": 0.2222222222222222,
+      "qok_density": 0.2222222222222222,
+      "qo_density": 0.0,
+      "k_count": 2,
+      "h_count": 0,
+      "e_count": 4,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        36
+      ]
+    },
+    "P0.L37": {
+      "n_tokens": 7,
+      "n_middle_atoms": 19,
+      "k_ratio": 0.21052631578947367,
+      "h_ratio": 0.10526315789473684,
+      "e_ratio": 0.2631578947368421,
+      "terminal_rate": 0.25,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.5714285714285714,
+      "qo_density": 0.0,
+      "k_count": 4,
+      "h_count": 2,
+      "e_count": 5,
+      "qok_count": 4,
+      "line_id_tuple": [
+        0,
+        37
+      ]
+    },
+    "P0.L38": {
+      "n_tokens": 6,
+      "n_middle_atoms": 19,
+      "k_ratio": 0.2631578947368421,
+      "h_ratio": 0.0,
+      "e_ratio": 0.42105263157894735,
+      "terminal_rate": 0.23076923076923078,
+      "thermo_ke_rate": 0.5,
+      "qok_density": 0.8333333333333334,
+      "qo_density": 0.0,
+      "k_count": 5,
+      "h_count": 0,
+      "e_count": 8,
+      "qok_count": 5,
+      "line_id_tuple": [
+        0,
+        38
+      ]
+    },
+    "P0.L39": {
+      "n_tokens": 6,
+      "n_middle_atoms": 16,
+      "k_ratio": 0.1875,
+      "h_ratio": 0.0625,
+      "e_ratio": 0.375,
+      "terminal_rate": 0.2608695652173913,
+      "thermo_ke_rate": 0.3333333333333333,
+      "qok_density": 0.3333333333333333,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 1,
+      "e_count": 6,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        39
+      ]
+    },
+    "P0.L40": {
+      "n_tokens": 7,
+      "n_middle_atoms": 11,
+      "k_ratio": 0.09090909090909091,
+      "h_ratio": 0.0,
+      "e_ratio": 0.36363636363636365,
+      "terminal_rate": 0.2777777777777778,
+      "thermo_ke_rate": 0.14285714285714285,
+      "qok_density": 0.14285714285714285,
+      "qo_density": 0.0,
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 4,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        40
+      ]
+    },
+    "P0.L41": {
+      "n_tokens": 6,
+      "n_middle_atoms": 15,
+      "k_ratio": 0.2,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5333333333333333,
+      "terminal_rate": 0.2727272727272727,
+      "thermo_ke_rate": 0.5,
+      "qok_density": 0.3333333333333333,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 0,
+      "e_count": 8,
+      "qok_count": 2,
+      "line_id_tuple": [
+        0,
+        41
+      ]
+    },
+    "P0.L42": {
+      "n_tokens": 6,
+      "n_middle_atoms": 12,
+      "k_ratio": 0.08333333333333333,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "terminal_rate": 0.2222222222222222,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.16666666666666666,
+      "qo_density": 0.3333333333333333,
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 6,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        42
+      ]
+    },
+    "P0.L43": {
+      "n_tokens": 7,
+      "n_middle_atoms": 11,
+      "k_ratio": 0.2727272727272727,
+      "h_ratio": 0.0,
+      "e_ratio": 0.18181818181818182,
+      "terminal_rate": 0.35,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.14285714285714285,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 0,
+      "e_count": 2,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        43
+      ]
+    },
+    "P0.L44": {
+      "n_tokens": 11,
+      "n_middle_atoms": 18,
+      "k_ratio": 0.05555555555555555,
+      "h_ratio": 0.0,
+      "e_ratio": 0.2222222222222222,
+      "terminal_rate": 0.34375,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.09090909090909091,
+      "qo_density": 0.0,
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 4,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        44
+      ]
+    },
+    "P0.L45": {
+      "n_tokens": 10,
+      "n_middle_atoms": 19,
+      "k_ratio": 0.10526315789473684,
+      "h_ratio": 0.05263157894736842,
+      "e_ratio": 0.3157894736842105,
+      "terminal_rate": 0.2903225806451613,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.1,
+      "qo_density": 0.1,
+      "k_count": 2,
+      "h_count": 1,
+      "e_count": 6,
+      "qok_count": 1,
+      "line_id_tuple": [
+        0,
+        45
+      ]
+    },
+    "P0.L46": {
+      "n_tokens": 9,
+      "n_middle_atoms": 16,
+      "k_ratio": 0.1875,
+      "h_ratio": 0.0,
+      "e_ratio": 0.375,
+      "terminal_rate": 0.34615384615384615,
+      "thermo_ke_rate": 0.0,
+      "qok_density": 0.3333333333333333,
+      "qo_density": 0.0,
+      "k_count": 3,
+      "h_count": 0,
+      "e_count": 6,
+      "qok_count": 3,
+      "line_id_tuple": [
+        0,
+        46
+      ]
+    }
+  },
+  "latin_phase_profiles": [
+    {
+      "heat_rate": 0.02631578947368421,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.06578947368421052,
+      "heat_transition_rate": 0.05263157894736842,
+      "n_words": 76,
+      "phase_id": "phase_1_first_water_x4",
+      "marker": "(chapter intro through \u00d74 anchor)",
+      "desc": "first water \u2014 fermentation + \u00d74 distillation (contains \u00d74 anchor)"
+    },
+    {
+      "heat_rate": 0.0,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.03225806451612903,
+      "heat_transition_rate": 0.03225806451612903,
+      "n_words": 31,
+      "phase_id": "phase_2_second_water_capon",
+      "marker": "Confeccio secunde aque",
+      "desc": "capon flesh distillation"
+    },
+    {
+      "heat_rate": 0.10344827586206896,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.034482758620689655,
+      "heat_transition_rate": 0.06896551724137931,
+      "n_words": 29,
+      "phase_id": "phase_3_third_water",
+      "marker": "Confeccio tercie aque",
+      "desc": "capon flesh on ashes"
+    },
+    {
+      "heat_rate": 0.0625,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.020833333333333332,
+      "heat_transition_rate": 0.020833333333333332,
+      "n_words": 48,
+      "phase_id": "phase_4_fourth_water",
+      "marker": "Confeccio aque quarte",
+      "desc": "lunaria sealed + \u00d73 days"
+    },
+    {
+      "heat_rate": 0.0625,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.0625,
+      "heat_transition_rate": 0.0625,
+      "n_words": 16,
+      "phase_id": "phase_5_fifth_water",
+      "marker": "Confeccio aque quinte",
+      "desc": "capon substance on ashes"
+    },
+    {
+      "heat_rate": 0.0,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.07142857142857142,
+      "heat_transition_rate": 0.07142857142857142,
+      "n_words": 14,
+      "phase_id": "phase_6_sixth_water",
+      "marker": "Confeccio aque sexte",
+      "desc": "bones with alembic on ashes"
+    },
+    {
+      "heat_rate": 0.047619047619047616,
+      "monitoring_rate": 0.0,
+      "correction_rate": 0.14285714285714285,
+      "heat_transition_rate": 0.09523809523809523,
+      "n_words": 21,
+      "phase_id": "phase_7_rectification",
+      "marker": "De rectificacione aquarum",
+      "desc": "rectify three waters"
+    },
+    {
+      "heat_rate": 0.0,
+      "monitoring_rate": 0.04,
+      "correction_rate": 0.016,
+      "heat_transition_rate": 0.024,
+      "n_words": 125,
+      "phase_id": "phase_8_admin_healthy",
+      "marker": "De modo administrandi sanis",
+      "desc": "administer to healthy"
+    },
+    {
+      "heat_rate": 0.004672897196261682,
+      "monitoring_rate": 0.009345794392523364,
+      "correction_rate": 0.037383177570093455,
+      "heat_transition_rate": 0.014018691588785047,
+      "n_words": 214,
+      "phase_id": "phase_9_admin_sick",
+      "marker": "Et cum velis dare infirmantibus",
+      "desc": "administer to sick"
+    }
+  ],
+  "anchors": {
+    "voynich_x4": {
+      "line": 13,
+      "type": "4-qokedy"
+    },
+    "voynich_x9": {
+      "lines": [
+        37,
+        38
+      ],
+      "type": "9-qok-class-2line-window"
+    }
+  },
+  "n_voynich_lines": 46,
+  "n_latin_phases": 9
+}
