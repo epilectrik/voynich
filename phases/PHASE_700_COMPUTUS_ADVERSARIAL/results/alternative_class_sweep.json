@@ -1,0 +1,72 @@
+{
+  "2": {
+    "class_name": "Mensural",
+    "synthetic_specificity": 0.6,
+    "mesue_specificity": 0.00020584163230780682,
+    "voynich_sb_specificity": 0.005166381612619703,
+    "voynich_ms_specificity": 0.005625399381259402,
+    "sb_share_of_synthetic": 0.008610636021032838,
+    "ms_share_of_synthetic": 0.009375665635432337,
+    "verdict": "EXCLUDED (Mensural)"
+  },
+  "7": {
+    "class_name": "Weekly",
+    "synthetic_specificity": 1.0,
+    "mesue_specificity": 0.0004068516591753009,
+    "voynich_sb_specificity": 0.000115647989970033,
+    "voynich_ms_specificity": 0.0018051411460250216,
+    "sb_share_of_synthetic": 0.000115647989970033,
+    "ms_share_of_synthetic": 0.0018051411460250216,
+    "verdict": "EXCLUDED (Weekly)"
+  },
+  "12": {
+    "class_name": "Zodiac",
+    "synthetic_specificity": 1.0,
+    "mesue_specificity": 0.0002375808778436097,
+    "voynich_sb_specificity": -0.00151305569176622,
+    "voynich_ms_specificity": -0.0017526967146021116,
+    "sb_share_of_synthetic": -0.00151305569176622,
+    "ms_share_of_synthetic": -0.0017526967146021116,
+    "verdict": "EXCLUDED (Zodiac)"
+  },
+  "15": {
+    "class_name": "Indiction",
+    "synthetic_specificity": 1.0,
+    "mesue_specificity": -0.000548439988495404,
+    "voynich_sb_specificity": 0.0003326119041982198,
+    "voynich_ms_specificity": 0.0036089214573023706,
+    "sb_share_of_synthetic": 0.0003326119041982198,
+    "ms_share_of_synthetic": 0.0036089214573023706,
+    "verdict": "EXCLUDED (Indiction)"
+  },
+  "19": {
+    "class_name": "Computus Metonic",
+    "synthetic_specificity": 1.0,
+    "mesue_specificity": 0.0005523569391591397,
+    "voynich_sb_specificity": 0.0010570659647175448,
+    "voynich_ms_specificity": 0.002714077576052437,
+    "sb_share_of_synthetic": 0.0010570659647175448,
+    "ms_share_of_synthetic": 0.002714077576052437,
+    "verdict": "EXCLUDED (Computus Metonic)"
+  },
+  "28": {
+    "class_name": "Solar dominical",
+    "synthetic_specificity": 1.0,
+    "mesue_specificity": 0.0003043002027371521,
+    "voynich_sb_specificity": 0.0020938842101816124,
+    "voynich_ms_specificity": -0.0009625746919348158,
+    "sb_share_of_synthetic": 0.0020938842101816124,
+    "ms_share_of_synthetic": -0.0009625746919348158,
+    "verdict": "EXCLUDED (Solar dominical)"
+  },
+  "30": {
+    "class_name": "Lunaria",
+    "synthetic_specificity": 1.0,
+    "mesue_specificity": -0.00025109318513866913,
+    "voynich_sb_specificity": 0.001279577227548588,
+    "voynich_ms_specificity": 0.0015720829226784014,
+    "sb_share_of_synthetic": 0.001279577227548588,
+    "ms_share_of_synthetic": 0.0015720829226784014,
+    "verdict": "EXCLUDED (Lunaria)"
+  }
+}

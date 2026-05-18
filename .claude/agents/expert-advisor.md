@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2034 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2035 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2039.
+the highest ID present is C2040.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2034 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2035 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2034 validated constraints are present as canonical one-line claims with tier
+2035 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-18 08:37
-**Version:** FROZEN STATE (2034 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-18 09:24
+**Version:** FROZEN STATE (2035 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (16 feedback rules)
+6. Session Methodology Notes (17 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -2278,6 +2278,7 @@ C2036	**Closed-Lexicon NL Hypothesis FALSIFIED — MIDDLE Inventory Size Refutes
 C2037	**AZC-Diagram-Token Placement Contamination Correction.** Pre-registered H3 test (hapax > n_2_3 paired sign test on top-decile folios) verdict depends on placement filter choice. P-only filter gives 6/8 FAIL. P+L (paragraph + label tokens) gives identical 6/8 FAIL — labels alone do NOT explain placement sensitivity. All-placement filter (P + L + R + S + C + X + Y + N + T) gives 7/8 PASS. The verdict flip is driven specifically by AZC diagram tokens (R rings, S stars, C circles, etc.), NOT by labels. Diagnostic: hapax cohort grows from 820 (P-only) to 866 (all-placement), and the added 46 hapaxes are MIDDLEs that appear exactly once on a diagram position (and nowhere else in B paragraphs/labels). These AZC diagram singletons have categorically different distributional properties per AZC architecture (C300-series), and concentrate on diagram-heavy folios which artificially inflates per-folio enrichment ratios there. For MIDDLE inventory or per-folio frequency analyses on paragraph-text content, the defensible standard placement filter is P+L (equivalent to P-only for this purpose); all-placement contaminates with AZC diagram tokens. PHASE_699 v2 H3 PASS verdict (7/8) is AZC-token-contamination artifact, not a real paragraph-text signal.	2	methodology, placement_filter, AZC_contamination, MIDDLE_inventory, hapax_cohort_definition, C300, C1135, AZC_distinct
 C2038	**Low-Frequency Hapax-Band Corpus Census.** Distributional measurement: Currier B has 866 corpus-wide hapax MIDDLEs (all-placement filter, H-track non-uncertain). The C1135-catalogued unmatched-PP MIDDLE set ("dark pipeline," 300 MIDDLEs, mean 5.7 tokens, section-concentrated Herf=0.716) has a heavily-skewed frequency distribution: median frequency=3, 60% of catalogued MIDDLEs at n≤3, 28% at n=1 (hapax frequency band). 70 corpus-wide hapax MIDDLEs (sample of 866) overlap with C1135's catalog under exact MIDDLE-string match. 96% (67/70) of these overlap MIDDLEs occur on P-placement (paragraph text); 0/70 occur on R (ring) placement; <5% on C (circle), X, or T placements. **Distributional census only.** The 70-MIDDLE overlap is consistent with C1135's own frequency profile (the catalog already documents a long low-frequency tail extending to hapax band) and does NOT constitute independent association evidence beyond what C1135's frequency profile implies. The within-folio shuffle null on the rate-correlation form of this measurement (see C2039) demonstrates that the per-folio relationship is composition shadow, not hapax-specific.	2	distributional_census, hapax_corpus_wide, low_freq_band, MIDDLE_inventory, no_association_claim, C1135, C1137, C1140
 C2039	**Hapax×Dark Rate vs Hapax Enrichment Correlation Is Composition Shadow.** Per-folio analysis: hapax×dark-pipeline rate (count of hapax-MIDDLE occurrences on folio normalized by folio token count, restricted to MIDDLEs in C1135 catalog) vs per-folio hapax enrichment (folio hapax token rate / corpus hapax token rate) gives raw Pearson r=0.557, TTR-controlled partial r=0.395. Within-folio shuffle null (200 permutations preserving per-folio token counts and global MIDDLE frequency distribution): observed partial r vs null mean 0.286 (SD 0.119) gives **z=0.91, p=0.18**. The signal does NOT survive within-folio shuffle null. Folio-composition shadow, NOT hapax-specific association beyond TTR + composition. Notable secondary: raw r=0.56 gives z=2.30 (nominally significant), but TTR control absorbs half the signal and within-folio shuffle absorbs the rest (z_raw=2.30 → z_partial_TTR=NA → z_partial_TTR_plus_within_folio_null=0.91). **Third documented within-folio-null falsification in +0.4-aggregate-rho pattern**, following k-e-depth thermal regimes and triple-i ↔ iter-terminal (both 2026-05-11). Reinforces `feedback_within_folio_shuffle_null_first.md`: aggregate rho in +0.15 to +0.65 range with no within-folio null is the documented composition-shadow signature; PHASE_699 confirms this for the third time. Specific lexical-content-tail interpretations (PHASE_698 crazy-expert proposal of hapaxes as material/parameter identifiers) are NOT supported by per-folio rate analysis at corpus scale.	2	within_folio_shuffle_null, composition_shadow, lexical_content_tail_falsification, third_documented_case, methodology_validation, C2038, C1135, feedback_within_folio_shuffle_null_first
+C2040	**Six Medieval Periodic-Notation Alternative Classes EXCLUDED via Peak-Specificity Test.** External adversarial corpus test. Synthetic corpora generated for canonical medieval periodicities: Weekly (P=7), Zodiac (P=12), Indiction (P=15), Computus Metonic (P=19), Solar dominical (P=28), Lunaria (P=30). Each shows peak-specificity ≈ +1.0 at its target lag by construction. Peak-specificity metric: agreement_rate(P) − mean(agreement_rate at lags P±1..±4). Discriminates SHARP cyclic peak (synthetic) from UNIFORM topical elevation (NL Mesue ≈ 0 across all periods). Voynich Section B and matched-S tested on each period: peak-specificity ranges from -0.18% to +0.36% of synthetic baselines across all 6 classes, statistically indistinguishable from NL Mesue. **All 6 classes EXCLUDED** (Voynich peak-specificity < 10% of synthetic threshold). Multiple-comparisons: 0/6 false positives observed. **Scope limit:** peak-specificity metric appropriate for periods ≥ 7 where ±4 neighborhood window doesn't catch period multiples; period-2 case has secondary-peak-in-neighborhood artifact (Voynich Section B period-2 specificity reads 0.86% of synthetic due to lag-4 secondary peak inclusion). Voynich's known period-2 grammar remains confirmed via C2032's lag-ratio methodology, NOT via peak-specificity. Combined with mensural falsification (C2032 cross-language test, 2026-05-16), brings cumulative alternative-class falsification series to 7 medieval periodic notational systems excluded. **Bounded scope:** measurement-level claim about these 6 specific periodicity classes; does NOT claim "Voynich isn't notation" or "Voynich is unique" — see methodology lesson below.	2	external_adversarial, alternative_class_exclusion, peak_specificity, multi_class_sweep, computus_falsified, mensural_followup, C2031, C2032, feedback_calibrate_thresholds_against_controls, feedback_peak_specificity_for_periods_geq_7
 
 ---
 
@@ -5622,6 +5623,45 @@ This is sharper than "run controls earlier." It says: the strongest discoveries 
 - **Three identical failures in one session is a calibration signal.** When the trap pattern repeats, the right response is to stop generating new findings and re-examine the methodology, not to push the next candidate through.
 
 The C1197 mechanical count correction (71 P-placement hh / 85 H-track, not 9 — falsification clause tripped) remains valid as a bookkeeping fix. The operational hh-as-monitoring story does NOT register without the source-text pre-registration and single-h discriminator.
+
+---
+
+## peak-specificity-for-periods-geq-7
+
+*"When testing periodic-structure hypotheses at periods ≥ 7, peak-specificity (target-lag rate minus neighborhood mean) discriminates better than raw z-score against shuffle null. For periods < 7, neighborhood window catches multiples; use C2032 lag2/lag1 methodology instead."*
+
+When testing whether a corpus exhibits a cyclic period-P signature against alternative-class hypotheses (computus, lunaria, indiction, etc.), the right discriminator is **peak-specificity**, not raw lag-P z-score against shuffle null.
+
+**Why:** PHASE_700 (2026-05-18). The pre-registered metric (lag-19 z-score vs within-paragraph shuffle null) had a Floor 2 fail: NL Mesue Latin showed period-19 z=5.6 — well above the z>3 threshold, indicating the metric wasn't computus-specific. Long-form prose accumulates topical autocorrelation at many lags, so a non-zero z-score at lag-P doesn't establish period-P cycle; it just establishes generic structured-text autocorrelation.
+
+The peak-specificity metric resolves this:
+
+```
+peak_specificity(P) = agreement_rate(P) − mean(agreement_rate at lags P±1..±4)
+```
+
+True cyclic period-P signal: SHARP peak at lag-P with near-zero rates at neighboring lags. Synthetic computus shows specificity ≈ +1.0 (perfect peak by construction).
+
+Generic topical autocorrelation in NL prose: UNIFORM elevation across many lags (no peak). NL Mesue shows specificity ≈ 0.0006 across periods 7, 12, 15, 19, 28, 30.
+
+Voynich Section B + matched-S: peak-specificity 0.01%-0.36% of synthetic baselines across all 6 medieval alternative periods tested. Statistically indistinguishable from NL Mesue → all 6 alternative classes excluded.
+
+**How to apply:**
+
+1. For periodic-structure hypotheses at period P ≥ 7, use peak-specificity as the primary discriminator.
+2. Pre-register threshold: target corpus ≥ 10% of synthetic baseline specificity → POSSIBLE class match. Below that → EXCLUDED.
+3. Validate with synthetic positive control (peak-specificity at target period must be ≈ +1.0 by construction).
+4. Validate with NL negative control (NL specificity should be ≈ 0, confirming metric isn't picking up topical autocorrelation).
+
+**Scope limit (period < 7):**
+
+Peak-specificity neighborhood (target lag ± 4) catches **secondary peaks** of short periods. For period-2, lags 2, 4, 6, 8 are all peaks. The lag-2 "neighborhood" includes lag-4 which is itself a peak, so the specificity underestimates the period-2 signal.
+
+PHASE_700 example: Voynich Section B period-2 specificity = +0.0052 (0.86% of synthetic), looks like failure but is metric artifact. C2032 confirms Voynich Section B period-2 grammar via lag2/lag1 ratio methodology at z=6.7.
+
+**Use C2032 lag2/lag1 ratio methodology for periods < 7.** Different metric, different mathematical structure. Don't apply peak-specificity to short periods.
+
+**Related:** [[feedback-calibrate-thresholds-against-controls]] (metric refinement after pre-registered threshold issue is the correct response, not verdict flip), [[feedback-within-folio-shuffle-null-first]] (peak-specificity replaces raw z-score; shuffle null still required for the underlying rate computation).
 
 ---
 

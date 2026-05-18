@@ -1,0 +1,44 @@
+[
+  {
+    "corpus": "Synthetic Metonic",
+    "lag19": 1.0,
+    "mean_neighbors": 0.0,
+    "specificity": 1.0,
+    "verdict": "SHARP PEAK (period-19 specific)"
+  },
+  {
+    "corpus": "Bedan Epacts",
+    "lag19": 1.0,
+    "mean_neighbors": 0.0,
+    "specificity": 1.0,
+    "verdict": "SHARP PEAK (period-19 specific)"
+  },
+  {
+    "corpus": "Paschal Moons",
+    "lag19": 1.0,
+    "mean_neighbors": 0.0,
+    "specificity": 1.0,
+    "verdict": "SHARP PEAK (period-19 specific)"
+  },
+  {
+    "corpus": "Mesue Latin (NL)",
+    "lag19": 0.007237192201635141,
+    "mean_neighbors": 0.006684835262476001,
+    "specificity": 0.0005523569391591397,
+    "verdict": "No peak (uniform elevation)"
+  },
+  {
+    "corpus": "Voynich Section B",
+    "lag19": 0.05580110497237569,
+    "mean_neighbors": 0.054744039007658146,
+    "specificity": 0.0010570659647175448,
+    "verdict": "No peak (uniform elevation)"
+  },
+  {
+    "corpus": "Voynich matched-S",
+    "lag19": 0.05538154897494305,
+    "mean_neighbors": 0.052667471398890615,
+    "specificity": 0.002714077576052437,
+    "verdict": "No peak (uniform elevation)"
+  }
+]

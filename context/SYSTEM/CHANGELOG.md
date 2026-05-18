@@ -4,6 +4,66 @@
 
 ---
 
+## Version 6.71 (2026-05-18) - PHASE 700: Computus Adversarial Test + Multi-Class Alternative-Notation Sweep
+
+### Summary
+
+External adversarial corpus test deferred from PHASE_698/699. Initial period-19 (Metonic) test had Floor 2 fail on the pre-registered lag-N z-score metric (Mesue NL Latin showed period-19 z=5.6, indicating metric wasn't computus-specific). Per `feedback_calibrate_thresholds_against_controls`, recalibrated to peak-specificity metric. User-requested expansion to 6-class sweep produced clean exclusion of all medieval periodic notation alternative classes tested.
+
+**Lead finding (C2040):** Six medieval periodic-notation alternative classes (Weekly P=7, Zodiac P=12, Indiction P=15, Computus Metonic P=19, Solar dominical P=28, Lunaria P=30) excluded via peak-specificity test. Combined with mensural falsification (C2032), brings cumulative alternative-class falsification series to 7 classes. Voynich's sequential grammar does NOT match any standard medieval periodic notational system tested.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `phases/PHASE_700_COMPUTUS_ADVERSARIAL/INDEX.md` | New phase index with full test arc, peak-specificity refinement, multi-class sweep, strategic context |
+| `context/CLAIMS/INDEX.md` | Added C2040. Count 2034 → 2035, version 6.70 → 6.71 |
+| `CLAUDE.md` | Version 6.70 → 6.71, constraint count 2034 → 2035, phases 696 → 697 |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `~/.claude/projects/.../memory/feedback_peak_specificity_for_periods_geq_7.md` | NEW methodology memory documenting peak-specificity discriminator + scope limit (periods ≥ 7 only) |
+
+### Main finding
+
+**C2040 — Six Medieval Periodic-Notation Alternative Classes EXCLUDED (Tier 2 negative measurement).**
+
+Synthetic corpora generated for canonical medieval periodicities: Weekly (P=7), Zodiac (P=12), Indiction (P=15), Computus Metonic (P=19), Solar dominical (P=28), Lunaria (P=30). Each shows peak-specificity ≈ +1.0 at its target lag by construction.
+
+Peak-specificity = agreement_rate(P) − mean(agreement_rate at lags P±1..±4). Discriminates SHARP cyclic peak (synthetic) from UNIFORM topical elevation (NL Mesue ≈ 0).
+
+Voynich Section B + matched-S: peak-specificity 0.01%-0.36% of synthetic across all 6 classes, statistically indistinguishable from NL. All 6 excluded at < 10% of synthetic threshold. Multiple-comparisons: 0/6 false positives (vs 0.3 expected at p<0.05 nominal).
+
+Scope limit: peak-specificity appropriate for periods ≥ 7; period-2 case has secondary-peak-in-neighborhood artifact. Voynich's known period-2 grammar (C2032) confirmed via lag-ratio methodology, NOT via peak-specificity.
+
+### Cumulative alternative-class falsification series
+
+Seven medieval periodic notational alternative classes excluded:
+- Mensural (P=2) — FALSIFIED via C2032 cross-language test (2026-05-16)
+- Computus Metonic (P=19), Solar dominical (P=28), Lunaria (P=30), Indiction (P=15), Zodiac (P=12), Weekly (P=7) — FALSIFIED via PHASE_700 peak-specificity
+
+### Methodology lessons
+
+**Peak-specificity refinement after pre-registered metric Floor 2 fail.** Original metric (lag-N z-score vs shuffle null) showed Mesue NL period-19 at z=5.6, demonstrating the metric wasn't computus-specific. Per `feedback_calibrate_thresholds_against_controls`, this is the same failure mode PHASE_697 documented. Refined to peak-specificity discriminator, which cleanly separates true cyclic peaks (synthetic) from generic topical elevation (NL prose).
+
+**New methodology memory: `feedback_peak_specificity_for_periods_geq_7.md`.** Documents the metric, scope limit (periods ≥ 7), and the PHASE_700 use case.
+
+**User-requested bundling worked despite crazy-expert "don't bundle" guidance.** 0/6 false positives observed under multiple-comparisons. Operational risk didn't materialize because the metric is genuinely per-class discriminating via the period-specific anchor.
+
+**Crazy-expert strategic warning (registered in C2040 highlight):** The multi-class falsification series IS approaching **negative-space framework-echo**. All 7 tests use the SAME C2032 anchor as the discriminating signature — not independent re-validations. "Engineered substrate" is accumulating as a vocabulary item (C2015+C2022+C2032+C2036+C2039+C2040). The alternative-class universe is **substantively depleted** for the lag-N autocorrelation methodology. PHASE_700 should be the last phase using this methodology for alternative-class adversarial testing.
+
+### Strategic context for next phases
+
+Per crazy-expert sign-off, remaining alternative classes need different evidence/methodology:
+- **Lullian wheels, magic squares, sortes-style structures:** need combinatorial methodology (adjacency, permutation, position-conditional entropy), not autocorrelation
+- **Astronomical tables (Mercury 88, Venus 224, Mars 687 day periods):** too long for Voynich paragraph scale
+- **Memory-palace mnemonics:** no testable corpus
+
+Three concrete next-phase directions identified:
+1. **Combinatorial methodology shift** — build Lullian/magic-square testing infrastructure (breaks negative-space framework-echo)
+2. **Physical reconstruction** — substrate signatures predict specific apparatus; build, measure, compare
+3. **Stop sign** — accept procedural ceiling reached; substrate-distinctness as terminal Tier 2
+
+---
+
 ## Version 6.70 (2026-05-18) - PHASE 699: Hapax MIDDLE Concentration — Methodology Correction + Composition Shadow Falsification
 
 ### Summary
