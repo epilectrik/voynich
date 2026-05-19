@@ -465,6 +465,6 @@ Open candidate phases identified during PHASE_697-700 work:
 1. **Hapax MIDDLE concentration vs. lexical-content tail discrimination** (PHASE_699 produced negative result; line of investigation closed)
 2. **Computus / alternative-class periodic notation tests** (PHASE_700 produced 6-class exclusion; methodology exhausted)
 3. **Lullian wheels combinatorial structure test** — RAN AS PHASE_701 (2026-05-18). FALSIFIED. Topology is 12-edge spoke-and-ring, not Lullian 36-edge all-to-all. Documented in `phases/PHASE_701_LULLIAN_WHEELS/INDEX.md` as INDEX entry (not constraint-registered per expert consultation — self-generated alternative, already implied by C1128/C1130/C1989/rosettes_workshop_diagram.md).
-4. **Codicology audit** — current state of Voynich watermark/ink/paper analysis scholarship.
+4. **Codicology audit** — current state of Voynich vellum/ink scholarship (NOTE: Voynich is on vellum not paper, so watermark analysis does NOT apply. Vellum-applicable techniques are animal DNA, hair follicle patterns, parchment quality assessment).
 5. **Rupescissa Glossator identification** — the unidentified Padua 1463 figure who is Brunschwig's primary quintessence source.
 6. **German encoding hypothesis audit** — verify how well-grounded the k=kochen, e=erkalten claim is in the project's actual atom-system analysis vs. interpretive overlay.

@@ -244,9 +244,18 @@ Trajectory-encoded vs instruction-encoded interpretation of C2031 e-depth asymme
 - **Vatican Archives** — Inquisitorial records, papal-court Pseudo-Lull tradition documentation
 - **Bibliothèque Nationale de France** — partial Visconti-Sforza library after 1499 looting
 
-### D. Watermark / codicological analysis
+### D. Codicological analysis (vellum-applicable techniques)
 
-Voynich paper has watermarks not yet matched conclusively to Italian paper-mill catalogs. Briquet/Piccard catalogs of Italian watermarks could pin specific regional production within decades.
+**Note:** The Voynich is on **vellum, not paper**. Watermark analysis (which is the standard regional-identification technique for medieval paper) does NOT apply. C14 dating was done on the vellum itself. Earlier drafts of this synthesis incorrectly flagged watermark analysis as applicable — the correct vellum-applicable codicological techniques are:
+
+- **Animal species identification** via DNA / collagen analysis of the parchment (has been done on some medieval manuscripts; identifies sheep vs goat vs calf, sometimes regional flock characteristics)
+- **Hair follicle pattern analysis** — standard medieval codicology, can sometimes identify regional production styles
+- **Skin thickness and preparation quality assessment** — distinguishes court-grade vellum from working-grade
+- **Hair-side vs flesh-side bifolio analysis** — quire structure and folio ordering
+
+Whether any of these have been done on the Voynich to a conclusive regional identification is not clear from accessible online scholarship. McCrone Research Institute conducted pigment/ink analysis but I am not aware of conclusive parchment-DNA or follicle-pattern regional identification work being published.
+
+The codicological direction is still potentially high-EV but the specific techniques are different from what I previously listed.
 
 ### E. Acceptance and synthesis
 
@@ -296,7 +305,7 @@ Key project-discipline lessons documented in `~/.claude/projects/.../memory/`:
 
 1. External corpus acquisition (Antidotarium / Mesue) for Section S gap
 2. Italian state archive research for Visconti / Este / Sienese hospital records
-3. Watermark analysis for regional paper-mill identification
+3. Vellum codicological analysis (animal DNA, hair patterns, parchment quality) for regional identification — NOT watermark analysis (Voynich is vellum, not paper)
 4. Physical apparatus reconstruction grounded in substrate signatures
 5. Synthesis consolidation and external publication if appropriate
 
