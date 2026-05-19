@@ -1,0 +1,619 @@
+{
+  "method": "PHASE_704 Antidotarium Nicolai d<1.0 absolute-distance test for f104-105",
+  "n_antidotarium_recipes": 124,
+  "n_voynich_folios": 82,
+  "d_thresholds": {
+    "primary": 1.0,
+    "relaxed": 1.5
+  },
+  "global_distance_distribution": {
+    "min": 1.0583129088092942,
+    "median": 3.7252538142322758,
+    "max": 10.690215145376722,
+    "n_below_d1": 0,
+    "n_below_d15": 49,
+    "total_pairs": 10168
+  },
+  "target_results": [
+    {
+      "folio": "f104r",
+      "label": "TARGET",
+      "section": "S",
+      "regime": "REGIME_3",
+      "top5_recipes": [
+        [
+          "TRionfilon",
+          2.3319732254054855
+        ],
+        [
+          "SYrupus",
+          2.3686926784465223
+        ],
+        [
+          "YEralogodion",
+          2.414860970490376
+        ],
+        [
+          "YEra",
+          2.452249245167576
+        ],
+        [
+          "ELectuarium",
+          2.482632704412552
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.3319732254054855
+    },
+    {
+      "folio": "f104v",
+      "label": "TARGET",
+      "section": "S",
+      "regime": "REGIME_3",
+      "top5_recipes": [
+        [
+          "ELectuarium",
+          2.5987492555020903
+        ],
+        [
+          "STomaticon",
+          2.620380013301116
+        ],
+        [
+          "STomaticum",
+          2.697693106522987
+        ],
+        [
+          "UNguentum",
+          2.7143893187197423
+        ],
+        [
+          "ROdozacara",
+          2.7158713625677002
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.5987492555020903
+    },
+    {
+      "folio": "f105r",
+      "label": "TARGET",
+      "section": "S",
+      "regime": "REGIME_4",
+      "top5_recipes": [
+        [
+          "STomaticum",
+          3.0531267437323977
+        ],
+        [
+          "DIairis",
+          3.2073333552883745
+        ],
+        [
+          "OXizaccare",
+          3.2895856607614884
+        ],
+        [
+          "STomaticon",
+          3.3443923307134975
+        ],
+        [
+          "KAtarticum",
+          3.4060610286527204
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 3.0531267437323977
+    },
+    {
+      "folio": "f105v",
+      "label": "TARGET",
+      "section": "S",
+      "regime": "REGIME_3",
+      "top5_recipes": [
+        [
+          "TRionfilon",
+          2.431531391628888
+        ],
+        [
+          "SYrupus",
+          2.529163369485903
+        ],
+        [
+          "UNguentum",
+          2.5741007429373135
+        ],
+        [
+          "YEralogodion",
+          2.6107428754488278
+        ],
+        [
+          "STomaticon",
+          2.6245877391288297
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.431531391628888
+    }
+  ],
+  "section_b_control_results": [
+    {
+      "folio": "f75r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "PIlule",
+          2.896966662022646
+        ],
+        [
+          "PIlule",
+          2.896966662022646
+        ],
+        [
+          "PIlule",
+          2.896966662022646
+        ],
+        [
+          "PIlule",
+          2.896966662022646
+        ],
+        [
+          "PIlule",
+          2.896966662022646
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.896966662022646
+    },
+    {
+      "folio": "f76r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "DIatrionpipereon",
+          1.9934497104654691
+        ],
+        [
+          "EMplastrum",
+          2.104133527340205
+        ],
+        [
+          "DIapapaver",
+          2.167009640187867
+        ],
+        [
+          "DIasene",
+          2.171418608886445
+        ],
+        [
+          "COnfectio",
+          2.1745891051860897
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 1.9934497104654691
+    },
+    {
+      "folio": "f77r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "STomaticum",
+          3.3207466804318275
+        ],
+        [
+          "TYriaca",
+          3.3649730343987696
+        ],
+        [
+          "DIagalanga",
+          3.400686286689522
+        ],
+        [
+          "PIlule",
+          3.462993101330965
+        ],
+        [
+          "PIlule",
+          3.462993101330965
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 3.3207466804318275
+    },
+    {
+      "folio": "f78r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "PIlule",
+          2.6104717780967746
+        ],
+        [
+          "PIlule",
+          2.6104717780967746
+        ],
+        [
+          "PIlule",
+          2.6104717780967746
+        ],
+        [
+          "PIlule",
+          2.6104717780967746
+        ],
+        [
+          "PIlule",
+          2.6104717780967746
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.6104717780967746
+    },
+    {
+      "folio": "f79r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "TRionfilon",
+          2.1788490702826655
+        ],
+        [
+          "YEralogodion",
+          2.1962165810913294
+        ],
+        [
+          "PIlule",
+          2.20922716852771
+        ],
+        [
+          "YEra",
+          2.210017104107634
+        ],
+        [
+          "ELectuarium",
+          2.2376821968935445
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.1788490702826655
+    },
+    {
+      "folio": "f80r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "PIlule",
+          3.019127978296319
+        ],
+        [
+          "PIlule",
+          3.019127978296319
+        ],
+        [
+          "PIlule",
+          3.019127978296319
+        ],
+        [
+          "PIlule",
+          3.019127978296319
+        ],
+        [
+          "PIlule",
+          3.019127978296319
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 3.019127978296319
+    },
+    {
+      "folio": "f81r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "STomaticum",
+          2.640292592956505
+        ],
+        [
+          "DIagalanga",
+          2.845256102447056
+        ],
+        [
+          "DIaysopum",
+          2.8917011193753015
+        ],
+        [
+          "OXizaccare",
+          2.9414212304012097
+        ],
+        [
+          "UNguentum",
+          2.941702271205381
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.640292592956505
+    },
+    {
+      "folio": "f82r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "PIlule",
+          2.4836187692994685
+        ],
+        [
+          "PIlule",
+          2.4836187692994685
+        ],
+        [
+          "PIlule",
+          2.4836187692994685
+        ],
+        [
+          "PIlule",
+          2.4836187692994685
+        ],
+        [
+          "PIlule",
+          2.4836187692994685
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.4836187692994685
+    },
+    {
+      "folio": "f83r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "CAtolicon",
+          1.1867354041358005
+        ],
+        [
+          "DIapapaver",
+          1.2089030795445592
+        ],
+        [
+          "DIasene",
+          1.215200101684234
+        ],
+        [
+          "TRocisci",
+          1.2160446257002748
+        ],
+        [
+          "TRocissci",
+          1.2343864812059666
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 15,
+      "min_distance": 1.1867354041358005
+    },
+    {
+      "folio": "f84r",
+      "label": "B_ALCHEMY_CTRL",
+      "section": "B",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "SYrupus",
+          2.564802565911495
+        ],
+        [
+          "PIlule",
+          2.57079164790053
+        ],
+        [
+          "PIlule",
+          2.57079164790053
+        ],
+        [
+          "PIlule",
+          2.57079164790053
+        ],
+        [
+          "PIlule",
+          2.57079164790053
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.564802565911495
+    }
+  ],
+  "matched_s_control_results": [
+    {
+      "folio": "f103r",
+      "label": "MATCHED_S_CTRL",
+      "section": "S",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "STomaticum",
+          2.8873321637211946
+        ],
+        [
+          "DIagalanga",
+          2.9625100610092714
+        ],
+        [
+          "PIlule",
+          3.0121347261238274
+        ],
+        [
+          "PIlule",
+          3.0121347261238274
+        ],
+        [
+          "PIlule",
+          3.0121347261238274
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 2.8873321637211946
+    },
+    {
+      "folio": "f106r",
+      "label": "MATCHED_S_CTRL",
+      "section": "S",
+      "regime": "REGIME_3",
+      "top5_recipes": [
+        [
+          "COnfectio",
+          1.4914097478089088
+        ],
+        [
+          "PIlule",
+          1.5488542141566684
+        ],
+        [
+          "DIapapaver",
+          1.582585249224117
+        ],
+        [
+          "DIatrionpipereon",
+          1.615051888376651
+        ],
+        [
+          "EMplastrum",
+          1.6474483853420225
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 1,
+      "min_distance": 1.4914097478089088
+    },
+    {
+      "folio": "f108r",
+      "label": "MATCHED_S_CTRL",
+      "section": "S",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "STomaticum",
+          1.7635182452540297
+        ],
+        [
+          "DIagalanga",
+          1.9209843881080548
+        ],
+        [
+          "SPongia",
+          1.9903869779652428
+        ],
+        [
+          "ESdra",
+          2.0136803618826464
+        ],
+        [
+          "UNguentum",
+          2.0212161063461296
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 1.7635182452540297
+    },
+    {
+      "folio": "f112r",
+      "label": "MATCHED_S_CTRL",
+      "section": "S",
+      "regime": "REGIME_1",
+      "top5_recipes": [
+        [
+          "STomaticum",
+          1.825620909846384
+        ],
+        [
+          "STomaticon",
+          1.9078424743176259
+        ],
+        [
+          "MIcleta",
+          1.9656243926526595
+        ],
+        [
+          "DIairis",
+          2.0346808467350597
+        ],
+        [
+          "OXizaccare",
+          2.074074980662762
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 1.825620909846384
+    },
+    {
+      "folio": "f114r",
+      "label": "MATCHED_S_CTRL",
+      "section": "S",
+      "regime": "REGIME_3",
+      "top5_recipes": [
+        [
+          "MIcleta",
+          3.3470160849563517
+        ],
+        [
+          "STomaticon",
+          3.393957842905312
+        ],
+        [
+          "UNguentum",
+          3.489249665011108
+        ],
+        [
+          "SIrupus",
+          3.584127118421731
+        ],
+        [
+          "OPopira",
+          3.590854613031297
+        ]
+      ],
+      "n_recipes_below_d1": 0,
+      "n_recipes_below_d15": 0,
+      "min_distance": 3.3470160849563517
+    }
+  ],
+  "f57v_control": [],
+  "summary_rates": {
+    "target_d1_per_folio": 0.0,
+    "section_b_d1_per_folio": 0.0,
+    "matched_s_d1_per_folio": 0.0
+  },
+  "verdict": "FAIL: zero f104-105 folios have any Antidotarium recipe at d<1.0. Antidotarium does not identify the Section S 4-folio gap source."
+}
