@@ -1,0 +1,428 @@
+{
+  "method": "C131 audit: re-measure role_consistency with proper null calibration",
+  "original_methodology": "phases/X_adversarial_audit/phase_x5_discriminator.py:test_symbolic_reuse",
+  "original_value": 0.238,
+  "original_threshold_for_DSL": 0.8,
+  "observed_avg_role_consistency": 0.12248569257858061,
+  "n_tokens_analyzed": 50,
+  "per_token_results": [
+    {
+      "token": "daiin",
+      "b_n": 315,
+      "prev_frac": 0.273015873015873,
+      "next_frac": 0.07301587301587302,
+      "role_consistency": 0.173015873015873
+    },
+    {
+      "token": "chol",
+      "b_n": 99,
+      "prev_frac": 0.06060606060606061,
+      "next_frac": 0.04040404040404041,
+      "role_consistency": 0.05050505050505051
+    },
+    {
+      "token": "chor",
+      "b_n": 32,
+      "prev_frac": 0.0625,
+      "next_frac": 0.09375,
+      "role_consistency": 0.078125
+    },
+    {
+      "token": "s",
+      "b_n": 56,
+      "prev_frac": 0.14285714285714285,
+      "next_frac": 0.32142857142857145,
+      "role_consistency": 0.23214285714285715
+    },
+    {
+      "token": "dy",
+      "b_n": 110,
+      "prev_frac": 0.03636363636363636,
+      "next_frac": 0.36363636363636365,
+      "role_consistency": 0.2
+    },
+    {
+      "token": "shol",
+      "b_n": 59,
+      "prev_frac": 0.1016949152542373,
+      "next_frac": 0.05084745762711865,
+      "role_consistency": 0.07627118644067797
+    },
+    {
+      "token": "sho",
+      "b_n": 15,
+      "prev_frac": 0.13333333333333333,
+      "next_frac": 0.06666666666666667,
+      "role_consistency": 0.1
+    },
+    {
+      "token": "chy",
+      "b_n": 36,
+      "prev_frac": 0.05555555555555555,
+      "next_frac": 0.16666666666666666,
+      "role_consistency": 0.1111111111111111
+    },
+    {
+      "token": "ol",
+      "b_n": 421,
+      "prev_frac": 0.047505938242280284,
+      "next_frac": 0.09501187648456057,
+      "role_consistency": 0.07125890736342043
+    },
+    {
+      "token": "cthy",
+      "b_n": 6,
+      "prev_frac": 0.16666666666666666,
+      "next_frac": 0.16666666666666666,
+      "role_consistency": 0.16666666666666666
+    },
+    {
+      "token": "or",
+      "b_n": 250,
+      "prev_frac": 0.044,
+      "next_frac": 0.168,
+      "role_consistency": 0.10600000000000001
+    },
+    {
+      "token": "dar",
+      "b_n": 188,
+      "prev_frac": 0.11170212765957446,
+      "next_frac": 0.0797872340425532,
+      "role_consistency": 0.09574468085106383
+    },
+    {
+      "token": "dain",
+      "b_n": 114,
+      "prev_frac": 0.2982456140350877,
+      "next_frac": 0.07894736842105263,
+      "role_consistency": 0.18859649122807015
+    },
+    {
+      "token": "dal",
+      "b_n": 133,
+      "prev_frac": 0.045112781954887216,
+      "next_frac": 0.15789473684210525,
+      "role_consistency": 0.10150375939849623
+    },
+    {
+      "token": "chey",
+      "b_n": 250,
+      "prev_frac": 0.044,
+      "next_frac": 0.064,
+      "role_consistency": 0.054
+    },
+    {
+      "token": "aiin",
+      "b_n": 351,
+      "prev_frac": 0.11965811965811966,
+      "next_frac": 0.039886039886039885,
+      "role_consistency": 0.07977207977207977
+    },
+    {
+      "token": "cheol",
+      "b_n": 90,
+      "prev_frac": 0.06666666666666667,
+      "next_frac": 0.03333333333333333,
+      "role_consistency": 0.05
+    },
+    {
+      "token": "shor",
+      "b_n": 26,
+      "prev_frac": 0.15384615384615385,
+      "next_frac": 0.07692307692307693,
+      "role_consistency": 0.11538461538461539
+    },
+    {
+      "token": "shy",
+      "b_n": 34,
+      "prev_frac": 0.058823529411764705,
+      "next_frac": 0.058823529411764705,
+      "role_consistency": 0.058823529411764705
+    },
+    {
+      "token": "y",
+      "b_n": 66,
+      "prev_frac": 0.36363636363636365,
+      "next_frac": 0.15151515151515152,
+      "role_consistency": 0.25757575757575757
+    },
+    {
+      "token": "dol",
+      "b_n": 51,
+      "prev_frac": 0.13725490196078433,
+      "next_frac": 0.0784313725490196,
+      "role_consistency": 0.10784313725490197
+    },
+    {
+      "token": "shey",
+      "b_n": 204,
+      "prev_frac": 0.0392156862745098,
+      "next_frac": 0.08823529411764706,
+      "role_consistency": 0.06372549019607843
+    },
+    {
+      "token": "cheor",
+      "b_n": 32,
+      "prev_frac": 0.0625,
+      "next_frac": 0.0625,
+      "role_consistency": 0.0625
+    },
+    {
+      "token": "cthol",
+      "b_n": 4,
+      "prev_frac": 0.25,
+      "next_frac": 0.25,
+      "role_consistency": 0.25
+    },
+    {
+      "token": "qotchy",
+      "b_n": 12,
+      "prev_frac": 0.16666666666666666,
+      "next_frac": 0.08333333333333333,
+      "role_consistency": 0.125
+    },
+    {
+      "token": "dor",
+      "b_n": 22,
+      "prev_frac": 0.3181818181818182,
+      "next_frac": 0.045454545454545456,
+      "role_consistency": 0.18181818181818182
+    },
+    {
+      "token": "okol",
+      "b_n": 22,
+      "prev_frac": 0.09090909090909091,
+      "next_frac": 0.09090909090909091,
+      "role_consistency": 0.09090909090909091
+    },
+    {
+      "token": "cho",
+      "b_n": 12,
+      "prev_frac": 0.08333333333333333,
+      "next_frac": 0.08333333333333333,
+      "role_consistency": 0.08333333333333333
+    },
+    {
+      "token": "dam",
+      "b_n": 42,
+      "prev_frac": 0.07142857142857142,
+      "next_frac": 0.6666666666666666,
+      "role_consistency": 0.369047619047619
+    },
+    {
+      "token": "oky",
+      "b_n": 49,
+      "prev_frac": 0.04081632653061224,
+      "next_frac": 0.24489795918367346,
+      "role_consistency": 0.14285714285714285
+    },
+    {
+      "token": "qokol",
+      "b_n": 57,
+      "prev_frac": 0.05263157894736842,
+      "next_frac": 0.12280701754385964,
+      "role_consistency": 0.08771929824561403
+    },
+    {
+      "token": "chody",
+      "b_n": 47,
+      "prev_frac": 0.0425531914893617,
+      "next_frac": 0.0425531914893617,
+      "role_consistency": 0.0425531914893617
+    },
+    {
+      "token": "cthor",
+      "b_n": 3,
+      "prev_frac": 0.3333333333333333,
+      "next_frac": 0.3333333333333333,
+      "role_consistency": 0.3333333333333333
+    },
+    {
+      "token": "oty",
+      "b_n": 62,
+      "prev_frac": 0.04838709677419355,
+      "next_frac": 0.1935483870967742,
+      "role_consistency": 0.12096774193548387
+    },
+    {
+      "token": "ar",
+      "b_n": 248,
+      "prev_frac": 0.036290322580645164,
+      "next_frac": 0.09274193548387097,
+      "role_consistency": 0.06451612903225806
+    },
+    {
+      "token": "dair",
+      "b_n": 49,
+      "prev_frac": 0.3673469387755102,
+      "next_frac": 0.10204081632653061,
+      "role_consistency": 0.23469387755102042
+    },
+    {
+      "token": "otol",
+      "b_n": 33,
+      "prev_frac": 0.06060606060606061,
+      "next_frac": 0.15151515151515152,
+      "role_consistency": 0.10606060606060606
+    },
+    {
+      "token": "saiin",
+      "b_n": 99,
+      "prev_frac": 0.48484848484848486,
+      "next_frac": 0.06060606060606061,
+      "role_consistency": 0.2727272727272727
+    },
+    {
+      "token": "sheey",
+      "b_n": 101,
+      "prev_frac": 0.0891089108910891,
+      "next_frac": 0.06930693069306931,
+      "role_consistency": 0.07920792079207921
+    },
+    {
+      "token": "qokeey",
+      "b_n": 264,
+      "prev_frac": 0.09848484848484848,
+      "next_frac": 0.045454545454545456,
+      "role_consistency": 0.07196969696969696
+    },
+    {
+      "token": "qokchy",
+      "b_n": 29,
+      "prev_frac": 0.034482758620689655,
+      "next_frac": 0.06896551724137931,
+      "role_consistency": 0.05172413793103448
+    },
+    {
+      "token": "cthey",
+      "b_n": 9,
+      "prev_frac": 0.2222222222222222,
+      "next_frac": 0.1111111111111111,
+      "role_consistency": 0.16666666666666666
+    },
+    {
+      "token": "r",
+      "b_n": 40,
+      "prev_frac": 0.1,
+      "next_frac": 0.175,
+      "role_consistency": 0.1375
+    },
+    {
+      "token": "okeol",
+      "b_n": 18,
+      "prev_frac": 0.05555555555555555,
+      "next_frac": 0.1111111111111111,
+      "role_consistency": 0.08333333333333333
+    },
+    {
+      "token": "sheol",
+      "b_n": 69,
+      "prev_frac": 0.057971014492753624,
+      "next_frac": 0.028985507246376812,
+      "role_consistency": 0.043478260869565216
+    },
+    {
+      "token": "qoky",
+      "b_n": 111,
+      "prev_frac": 0.08108108108108109,
+      "next_frac": 0.14414414414414414,
+      "role_consistency": 0.11261261261261261
+    },
+    {
+      "token": "chaiin",
+      "b_n": 10,
+      "prev_frac": 0.1,
+      "next_frac": 0.1,
+      "role_consistency": 0.1
+    },
+    {
+      "token": "okaiin",
+      "b_n": 168,
+      "prev_frac": 0.047619047619047616,
+      "next_frac": 0.05357142857142857,
+      "role_consistency": 0.050595238095238096
+    },
+    {
+      "token": "cheey",
+      "b_n": 128,
+      "prev_frac": 0.078125,
+      "next_frac": 0.0390625,
+      "role_consistency": 0.05859375
+    },
+    {
+      "token": "qokeol",
+      "b_n": 16,
+      "prev_frac": 0.0625,
+      "next_frac": 0.0625,
+      "role_consistency": 0.0625
+    }
+  ],
+  "within_line_null": {
+    "n_permutations": 50,
+    "null_mean": 0.11969750019875618,
+    "null_std": 0.004053921127631137,
+    "z_score": 0.6877766715342287,
+    "effect_size_pp": 0.27881923798244307,
+    "null_distribution": [
+      0.12416531179213469,
+      0.11695528999381047,
+      0.11855896486041605,
+      0.12829012596902215,
+      0.12320102682309876,
+      0.12138162675028946,
+      0.11591840893522674,
+      0.11686826094347876,
+      0.12294658091939642,
+      0.12449763318062625,
+      0.12315533158090936,
+      0.11720047109097528,
+      0.12467704437942921,
+      0.11682854484061915,
+      0.11971539727283499,
+      0.12284063646085158,
+      0.11350262556505548,
+      0.11361946314640363,
+      0.11650661184647902,
+      0.1212300212783708,
+      0.11929531195325234,
+      0.11263353626682536,
+      0.12218157819089581,
+      0.12354097867480977,
+      0.11568134968257389,
+      0.1175186148182601,
+      0.11724338757762841,
+      0.11300018366406409,
+      0.12427736220311848,
+      0.12009029140895025,
+      0.12137143673621936,
+      0.11722707752763689,
+      0.12484766726960177,
+      0.1251573410920126,
+      0.12796692699207554,
+      0.11556269121473074,
+      0.11668637778478891,
+      0.12199978209577726,
+      0.12097127174468784,
+      0.11479589510027367,
+      0.11725947593868818,
+      0.11866085149314215,
+      0.11919678238403286,
+      0.12306723668290159,
+      0.12099263348214963,
+      0.11257269405696894,
+      0.12535925728166408,
+      0.11671409053036069,
+      0.11463036276230767,
+      0.12231318569798097
+    ]
+  },
+  "random_null": {
+    "n_permutations": 50,
+    "null_mean": 0.10454568186719074,
+    "null_std": 0.002080053422373305,
+    "z_score": 8.62478363220144,
+    "effect_size_pp": 1.7940010711389869
+  },
+  "verdict": "23.8% at within-line noise floor. Below null + 2*std. The 'low role consistency' framing is uninformative under this null \u2014 random within-line shuffles produce comparable values.",
+  "interpretation": "C131 was registered as falsification of DSL/language hypothesis. The original threshold (>80% = DSL signal) is theoretical, not calibrated against natural-language baselines. The 23.8% observation is below the threshold but the null distribution shows what 'low role consistency' actually means for a structured non-language corpus."
+}

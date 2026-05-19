@@ -60,10 +60,11 @@ Final classification: The Currier B text is an operational control notation, not
 
 ---
 
-## C131 - Role Consistency LOW
-**Tier:** 0 | **Status:** FROZEN
-Token role consistency is 23.8%, inconsistent with linguistic encoding where words have stable roles.
-**Source:** Phase X.5
+## ~~C131~~ - [RETRACTED 2026-05-19]
+**Tier:** 1 (RETRACTED) | **Status:** FALSIFIED via discriminating control
+Originally claimed: "Token role consistency is 23.8%, inconsistent with linguistic encoding."
+**Audit:** Value does not reproduce on H-only-filtered current data (re-run = 12.2%, pre-v2.42 transcriber filter bug). Observed value sits at within-line shuffle null mean (z=+0.69, effect size +0.3pp). Threshold ">80% = DSL signal" was theoretical, never calibrated. Note: C131 was inconsistently listed here as Tier 0 but was Tier 2 in INDEX.md; the inconsistency is itself an audit finding. Language-hypothesis falsification is independently supported by C130 (reference rate 0.19% vs 5% threshold), C132 (pre-registered closure), C173, substrate quintet (C2015/C2022/C2032), and kernel architecture (C089/C503.c/C521).
+**See:** [INDEX.md C131 entry](INDEX.md), `phases/C131_AUDIT/`, memory `feedback_made_up_threshold_audit.md`.
 
 ---
 

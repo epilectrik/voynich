@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1850 constraints | 2026-05-19
+CONSTRAINT_REFERENCE v2.6 | 1848 constraints | 2026-05-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -26,8 +26,6 @@ C124	100% grammar coverage	0	B	-> C124_grammar_coverage.md
 C126	0 contradictions across 8 families	2	B	in: grammar_system
 C129	Family differences = coverage artifacts	2	B	in: grammar_system
 C130	DSL hypothesis rejected (0.19% reference rate)	1	B	-> CORE/falsifications
-C131	Role consistency LOW (23.8%)	2	B	in: grammar_system
-C132	Language encoding CLOSED	1	B	-> CORE/falsifications
 C137	Swap invariance confirmed (p=1.0)	1	B	-> CORE/falsifications
 C138	Illustrations do not constrain execution	1	B	-> CORE/falsifications
 C139	Grammar recovered from text-only	2	B	in: grammar_system

@@ -4,6 +4,66 @@
 
 ---
 
+## Version 6.73 (2026-05-19) - C131 RETRACTION + early-investigation audit pattern established
+
+### Summary
+
+C131 retracted following audit per `phases/C131_AUDIT/`. Both experts converged on retraction (not demotion) given three independent failure axes: invented threshold + non-reproducing value + null at observed. C131 was Tier 2 (and inconsistently listed as Tier 0 in tier0_core.md — an audit finding in itself). Net constraint change: −1 (2036 → 2035). Retraction count: 6 → 7.
+
+### Audit findings
+
+C131 originally said: "Role consistency LOW (23.8%, threshold >80%)" from Phase X.5 `phase_x5_discriminator.py:test_symbolic_reuse`. Re-implemented exactly and re-ran on current pipeline:
+
+| Axis | Finding |
+|------|---------|
+| **Value reproduction** | Original 23.8% → current 12.2%. 2× discrepancy attributable to pre-v2.42 transcriber filter bug (~3.2× token inflation when non-H tracks were inadvertently included). |
+| **Within-line shuffle null** | Null mean = 12.0%, observed = 12.2%, z = +0.69, effect size +0.3pp. At noise floor. |
+| **Random shuffle null** | Null mean = 10.5%, z = +8.6σ, effect +1.8pp. Re-discovers existing C109 forbidden-transition structure, not a role-specific property. |
+| **Threshold provenance** | ">80% = DSL signal" was theoretical, never NL-calibrated. Phase X.5 source code literally has `# Adjusted threshold` set to 0.5 post-hoc. |
+
+Failure pattern matches C2027 retraction (registration-overclaim caught by discriminating control).
+
+### Why retraction not demotion
+
+Both experts converged: a measurement at within-line noise floor is not a Tier 3 candidate. Demotion preserves epistemic clutter that misleads future readers; retraction with narrative is cleaner.
+
+### Collateral damage assessment
+
+**Zero load-bearing downstream usage.** Language-hypothesis falsification is independently supported by:
+- **C130** — reference rate 0.19% vs 5% threshold (26× separation, much stronger than C131's 12% vs 80%)
+- **C132** — pre-registered closure
+- **C173** — linguistic hypothesis exhausted
+- **C2015/C2022/C2032** — engineered substrate quintet (3 orthogonal axes)
+- **C089/C503.c/C521** — kernel architecture inconsistent with linguistic structure
+
+C131 was always the weakest evidential leg.
+
+### Methodology memory added
+
+`feedback_made_up_threshold_audit.md`: three-part diagnostic for early-investigation Tier 2 audit — (a) threshold provenance, (b) value reproducibility under current pipeline, (c) effect above within-line shuffle null. All three negative → retract.
+
+### Audit policy implication
+
+Pre-2026-02 Tier 2 constraints citing absolute thresholds or specific numerical values are audit-eligible. The v2.42 transcriber filter bug fix (2026-01-16) is the diagnostic dividing line — values computed before that fix may have ~2-3× scale errors. Expected retraction rate from systematic audit: 5-15% (crazy-expert estimate). Scope as routine maintenance interleaved with substantive work, not as multi-week phase.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `context/CLAIMS/INDEX.md` | C131 row replaced with full retraction narrative. Count 2036 → 2035, version 6.72 → 6.73, retraction count 6 → 7 |
+| `context/CLAIMS/tier0_core.md` | C131 entry marked retracted; tier inconsistency (was listed as Tier 0 here, Tier 2 in INDEX) noted |
+| `CLAUDE.md` | Version 6.72 → 6.73, constraint count 2036 → 2035, retraction count 6 → 7 |
+| `phases/C131_AUDIT/` | Audit script + results JSON |
+| `~/.claude/projects/.../memory/feedback_made_up_threshold_audit.md` | NEW methodology memory |
+| `~/.claude/projects/.../memory/MEMORY.md` | Index entry for the new memory |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+
+### Audit precedent
+
+This is the first audit-driven retraction (vs C2027 which was caught at registration time within 24 hours). Demonstrates that the framework-as-null discipline can be applied retroactively to early-investigation constraints. Suggests deliberate batch audit of pre-2026-02 Tier 2 constraints is worth pursuing as routine maintenance.
+
+---
+
 ## Version 6.72 (2026-05-19) - PHASE 701-705: Lullian + Scribe + Closure bigram + Antidotarium + Terminal-atom
 
 ### Session arc

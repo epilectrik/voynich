@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2036 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2035 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C2041.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2036 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2035 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2036 validated constraints are present as canonical one-line claims with tier
+2035 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 15:44
-**Version:** FROZEN STATE (2036 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-19 18:29
+**Version:** FROZEN STATE (2035 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (19 feedback rules)
+6. Session Methodology Notes (20 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -456,8 +456,6 @@ C124	100% grammar coverage	0	B
 C126	0 contradictions across 8 families	2	B
 C129	Family differences = coverage artifacts	2	B
 C130	DSL hypothesis rejected (0.19% reference rate)	1	B
-C131	Role consistency LOW (23.8%)	2	B
-C132	Language encoding CLOSED	1	B
 C137	Swap invariance confirmed	1	B
 C138	Illustrations do not constrain execution	1	B
 C139	Grammar recovered from text-only	2	B
@@ -5473,6 +5471,43 @@ The more mature and consistent the framework, the easier it is to tell coherent 
 - `feedback_within_folio_shuffle_null_first.md` — what to run as control #1
 - `feedback_measurement_vs_mechanism.md` — measurement is not the same as mechanism inference
 - `feedback_atom_gloss_word_salad.md` — atom-decompositions read as word salad and shouldn't be primary evidence
+
+---
+
+## feedback-made-up-threshold-audit
+
+*"Three-part diagnostic for early-investigation Tier 2 constraint audit — (1) threshold provenance (cited or invented), (2) value reproducibility under current pipeline, (3) effect above within-line shuffle null. C131 failed all three; retracted (2026-05-19)"*
+
+When auditing an early-investigation Tier 2 constraint (especially pre-2026-02 / pre-v2.42 era), apply this three-part diagnostic:
+
+**(a) Threshold provenance:** Is the binary-classification threshold cited from a source (NL corpus baseline, validated reference value, peer-reviewed prior work) or invented for this test? Smoking gun for invented: source code contains threshold-adjustment comments like `# Adjusted threshold` set to a different value than the framing claims. C131's Phase X.5 source contains `# DSL signal if role consistency > 0.8` followed by `# Adjusted threshold` set to 0.5 — even before producing the verdict, the threshold was being adjusted post-hoc.
+
+**(b) Value reproducibility:** Does the numerical value reproduce when re-run with current pipeline (H-only filter, post-v2.42 transcript handling, current constraint set)? A 2× discrepancy is the diagnostic signature of the pre-v2.42 transcriber filter bug (3.2× token inflation when non-H tracks were inadvertently included). C131's original 23.8% does not reproduce — current re-run gives 12.2%, half the original value.
+
+**(c) Effect above within-line shuffle null:** Does the observed value exceed within-line shuffle null with z > 2? Within-line shuffle is the load-bearing first control per `feedback_within_folio_shuffle_null_first.md`. C131's 12.2% sits at null mean 12.0% with z = +0.69 — at noise floor.
+
+If ALL THREE answers are negative (invented threshold + non-reproducing value + null at observed), the constraint is **retraction-eligible**, not demotion-eligible. Demotion preserves a measurement that has no informational content beyond the null; retraction with audit narrative is cleaner.
+
+**Why retract not demote:** A Tier 3 constraint should be a real measurement at thin evidence or interpretation-tier candidate. A measurement at noise floor under proper null is not a Tier 3 finding — it's a methodologically-invalidated claim. Demotion misleads future readers into treating the metric as informative; retraction with narrative preserves the audit precedent.
+
+**Implications for audit policy:**
+- Pre-2026-02 Tier 2 constraints whose values are load-bearing (specific numbers crossing specific thresholds) are audit-eligible
+- Constraints whose claims are "X correlates with Y" or "X is structurally distinct" are less vulnerable to the transcriber bug
+- Expected retraction rate from systematic audit: 5-15% (crazy-expert estimate based on C131 being the first)
+- Scope as routine maintenance, not multi-week phase — batch 3-5 retractions per commit
+- Triage candidates: constraints citing absolute counts or rates from pre-v2.42 phases
+
+**Connection to existing methodology lessons:**
+- Distinct from `feedback_calibrate_thresholds_against_controls.md` (pre-registration calibration discipline) — that's about NEW threshold design; this is about OLD threshold audit
+- Distinct from `feedback_framework_as_null.md` (mechanism interpretation overclaim at mature stage) — that's late-stage; this is early-stage
+- Complements `feedback_within_folio_shuffle_null_first.md` (the load-bearing null discipline that catches this pattern)
+- Complements `feedback_n_matching_for_within_scribe_comparisons.md` (N-matching as analogous late-stage discriminating control)
+
+**The C131 case study:**
+- Original (Phase X.5, ~Dec 2025): "Role consistency LOW (23.8%, threshold >80%)" — Tier 2 falsifier of DSL/language hypothesis
+- Audit (2026-05-19): all three diagnostic axes failed
+- Retraction outcome: Tier 1 with full audit narrative. Zero downstream collateral — language falsification independently supported by C130 (0.19% reference rate, 26× threshold separation, much stronger), C132, C173, substrate quintet, kernel architecture. C131 was always the weakest evidential leg in the language-falsification chain.
+- Pattern parallel: C2027 retraction (heat-cycle adjacency framing falsified within 24h by family-stratified shuffle null) — same registration-overclaim-caught-by-discriminating-control structure.
 
 ---
 

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2036 validated constraints | **Version:** 6.72 | **Date:** 2026-05-19 (C2041 sharpened post-PHASE_705)
+**Total:** 2035 validated constraints | **Version:** 6.73 | **Date:** 2026-05-19 (C131 retracted post-audit)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -96,7 +96,7 @@ Every new constraint MUST specify system scope:
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
 | 130 | DSL hypothesis rejected (0.19% reference rate) | 1 | B | → [CORE/falsifications](../CORE/falsifications.md) |
-| 131 | Role consistency LOW (23.8%) | 2 | B | ⊂ grammar_system |
+| ~~131~~ | **[RETRACTED 2026-05-19]** Originally claimed: "Role consistency LOW (23.8%, threshold >80%)" as falsification of DSL/language hypothesis from Phase X.5. **Audit findings (C131_AUDIT, 2026-05-19):** (1) The 23.8% value DOES NOT REPRODUCE on H-only-filtered current data — re-run yields 12.2%, a 2× discrepancy attributable to the pre-v2.42 transcriber filter bug (3.2× token inflation). (2) Observed 12.2% sits at within-line shuffle null mean (12.0%, std 0.0041, z=+0.69, effect size +0.3pp). The metric is at noise floor and does not discriminate Voynich from within-line-shuffled Voynich. (3) The ">80% = DSL signal" threshold was theoretical, never calibrated against any natural language corpus. The Phase X.5 source code literally contains `# DSL signal if role consistency > 0.8` followed by `# Adjusted threshold` set to 0.5 — even the original code adjusted the threshold post-hoc before producing the verdict. (4) Failure pattern matches C2027 retraction (registration-overclaim caught by discriminating control). The fully-random shuffle null does show +8.6σ (12.2% vs 10.5%) but that re-discovers C109 forbidden transitions and bigram structure already established elsewhere — it is not a token-role property. **Language-hypothesis falsification is independently and robustly supported by C130 (reference rate 0.19% vs 5% threshold = 26× separation, much stronger), C132 (pre-registered closure), C173 (linguistic hypothesis exhausted), C2015/C2022/C2032 (engineered substrate quintet), C089/C503.c/C521 (kernel architecture). C131 was the weakest evidential leg and is structurally unnecessary.** Methodology lesson saved: `feedback_made_up_threshold_audit.md` — diagnostic for "theoretical threshold + non-reproducing value + null at observed" failure pattern. | 1 | RETRACTED, FALSIFIED, role_consistency_metric_at_noise_floor, threshold_not_NL_calibrated, transcriber_filter_bug_pre_v2_42, framework_as_null_caught, audit_2026_05_19, C130, C132, C173 | retracted_date=2026-05-19. original_tier=2. retraction_cause=value_does_not_reproduce_AND_at_within_line_null_floor_AND_threshold_was_theoretical. discriminating_control=within_line_shuffle_null_z_0.69. metric_observed_current=0.1225. metric_observed_original=0.238. null_within_line=0.1197. null_random=0.1045. threshold_original=0.80. threshold_adjusted_in_code=0.50. mirror_pattern=C2027_retraction. language_falsification_independent_support=C130_C132_C173_C2015_C2022_C2032_C089_C503c_C521. |
 | 132 | Language encoding CLOSED | 1 | B | → [CORE/falsifications](../CORE/falsifications.md) |
 
 ---
