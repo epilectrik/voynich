@@ -1,0 +1,103 @@
+{
+  "method": "PHASE_705 follow-up: y-class line-position verification",
+  "question": "Is y-class zero-adjacency C539 redux (line-final lock) or genuine non-participation?",
+  "stats_by_class": {
+    "r": {
+      "class_members": [
+        "ar",
+        "dar",
+        "or"
+      ],
+      "n_total_tokens": 1055,
+      "n_line_final": 80,
+      "n_penultimate": 117,
+      "n_line_initial": 62,
+      "n_in_single_token_lines": 0,
+      "pct_final": 0.07582938388625593,
+      "pct_penult": 0.11090047393364928,
+      "pct_initial": 0.058767772511848344,
+      "per_middle": {
+        "or": {
+          "total": 424,
+          "final": 31,
+          "penult": 37,
+          "initial": 36
+        },
+        "ar": {
+          "total": 629,
+          "final": 49,
+          "penult": 80,
+          "initial": 26
+        },
+        "dar": {
+          "total": 2,
+          "final": 0,
+          "penult": 0,
+          "initial": 0
+        }
+      }
+    },
+    "l": {
+      "class_members": [
+        "al",
+        "dal",
+        "ol"
+      ],
+      "n_total_tokens": 1216,
+      "n_line_final": 128,
+      "n_penultimate": 130,
+      "n_line_initial": 59,
+      "n_in_single_token_lines": 0,
+      "pct_final": 0.10526315789473684,
+      "pct_penult": 0.1069078947368421,
+      "pct_initial": 0.04851973684210526,
+      "per_middle": {
+        "ol": {
+          "total": 714,
+          "final": 60,
+          "penult": 71,
+          "initial": 53
+        },
+        "al": {
+          "total": 495,
+          "final": 67,
+          "penult": 58,
+          "initial": 4
+        },
+        "dal": {
+          "total": 7,
+          "final": 1,
+          "penult": 1,
+          "initial": 2
+        }
+      }
+    },
+    "y": {
+      "class_members": [
+        "ary",
+        "aly",
+        "dary",
+        "daly",
+        "ory",
+        "oly"
+      ],
+      "n_total_tokens": 1,
+      "n_line_final": 1,
+      "n_penultimate": 0,
+      "n_line_initial": 0,
+      "n_in_single_token_lines": 0,
+      "pct_final": 1.0,
+      "pct_penult": 0.0,
+      "pct_initial": 0.0,
+      "per_middle": {
+        "ary": {
+          "total": 1,
+          "final": 1,
+          "penult": 0,
+          "initial": 0
+        }
+      }
+    }
+  },
+  "verdict": "C539 REDUX: y-class is line-final-locked (100.0% at line-final). Zero adjacency with r/l class is C539-expression, not a new finding. Do not register y-class non-participation as separate finding."
+}

@@ -4,7 +4,42 @@
 
 ---
 
-## Version 6.72 (2026-05-19) - PHASE 701-703: Lullian wheels (INDEX-only) + Scribe substrate (INDEX-only) + Closure bigram grammar
+## Version 6.72 (2026-05-19) - PHASE 701-705: Lullian + Scribe + Closure bigram + Antidotarium + Terminal-atom
+
+### Session arc
+
+Five-phase session: PHASE_701 (Lullian wheels, INDEX-only), PHASE_702 (Scribe×substrate, INDEX-only + 2 methodology memories), PHASE_703 (Closure bigram grammar, Tier 3 C2041), PHASE_704 (Antidotarium f104-105, INDEX-only — Section S pharmacy doubly excluded), PHASE_705 (C2041 terminal-atom generalization, INDEX-only with C2041 sharpening).
+
+**Net constraint change:** +1 (C2041 from PHASE_703). PHASE_705 sharpened C2041 in place rather than registering C2042 — crazy-expert flagged the aggregate r→l asymmetry as inheriting ~37% of signal from C2041's ar→al pair (aggregate-minus-original significance fails, p≈0.06 not 0.05).
+
+### Phase summaries (this session)
+
+**PHASE_701 (Lullian wheels — INDEX-only):** Tested 9-rosette foldout as Ramon Llull's Ars Magna combinatorial wheel structure. FALSIFIED: topology 12 edges (spoke-and-ring) vs Lullian 36 (all-to-all); vocabulary distinctness mean Jaccard 0.697 < 0.7 threshold. No constraint per crazy-expert recommendation (Llull-specific falsification implied by C1128/C1130/C1989 + rosettes_workshop_diagram.md Tier 4).
+
+**PHASE_702 (Scribe×substrate — INDEX-only):** Davis 2020 scribe attribution acquired (228 folios) and integrated. Test design defeated by structural scribe×section confound at within-Currier-B partition (Q13=Scribe 2 only, Q18=Scribe 3 only). Within-Scribe-2 content pivot showed z=-2.05 raw but collapsed to median z=+1.73 under N-matched downsampling. Two methodology memories saved.
+
+**PHASE_703 (Closure bigram grammar — Tier 3 C2041):** Refined C2030 with directional asymmetry test. `ar → al` (39) vs `al → ar` (14), asymmetry +0.47, p_BH=0.005, N=53. Three near-miss pairs (ar→ol, al→ol, or→ol) at +0.23 toward `ol` as later-position, FDR-fail. Forbidden-bigram test inconclusive (data sparseness).
+
+**PHASE_704 (Antidotarium f104-105 — INDEX-only):** Hypothesis-driven d<1.0 test for Section S 4-folio gap (f104r/v, f105r/v) vs Antidotarium Nicolai. CLEAN NEGATIVE: zero pairs at d<1.0 anywhere in 10,168; f104-105 min d 2.33-3.05; residual signal goes to f83r balneology. Combined with prior Mesue Grabadin falsification, BOTH major medieval pharmacy traditions now excluded as Section S gap sources.
+
+**PHASE_705 (C2041 generalization — INDEX-only):** Tested whether ar→al asymmetry generalizes to r-terminal → l-terminal class grammar. Aggregate Test A passed (r→l=94, l→r=51, asymmetry +0.297, p_BH=0.0018, N=145) but per-pair direction failed strict 6/9 criterion (5/9 r→l with 4 empty pairs). Expert consultation concluded aggregate inherits C2041 signal; or→al near-symmetry (+0.05) is the diagnostic showing pattern is ar-lexeme-specific not class-grammar. y-class members of C2030 inventory (ary/aly/etc) are morphology-extraction artifact (parsed as MIDDLE=ar/ol + SUFFIX=y; only 1 y-class MIDDLE token in entire Currier B P-placement). C2041 sharpened in place; no C2042 registered.
+
+### Methodology memories added (3)
+
+| File | Content |
+|------|---------|
+| `feedback_n_matching_for_within_scribe_comparisons.md` | N-matched downsample mandatory for autocorrelation subset comparisons; 5th framework-as-null catch |
+| `project_scribe_section_confound_structural.md` | Davis scribe×section confound prevents internal substrate disentanglement |
+| `project_section_s_pharmacy_doubly_excluded.md` | Mesue + Antidotarium both falsified for f104-105 gap |
+| `feedback_aggregate_minus_original_independence_test.md` | Aggregate-minus-original independence test for class-generalization claims |
+
+### Procedural ceiling status
+
+Internal-methodology procedural ceiling now firmly confirmed across PHASE_701-705. Methodology remains productive for measurement-refinement (PHASE_703 produced C2041; PHASE_705 sharpened it) and source-exclusion (PHASE_704 doubly-confirmed pharmacy exclusion for f104-105 gap) but saturated for mechanism-promotion. Five-phase session generated 1 new Tier 3 constraint + 1 sharpening + 4 methodology lessons.
+
+---
+
+## Version 6.72 (2026-05-19, original entry) - PHASE 701-703: Lullian wheels (INDEX-only) + Scribe substrate (INDEX-only) + Closure bigram grammar
 
 ### Summary
 

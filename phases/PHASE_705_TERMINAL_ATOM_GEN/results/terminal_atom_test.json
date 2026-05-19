@@ -1,0 +1,230 @@
+{
+  "method": "PHASE_705 terminal-atom generalization of C2041",
+  "hypothesis": "r-terminal LATE MIDDLEs systematically precede l-terminal LATE MIDDLEs",
+  "late_inventory": [
+    "ar",
+    "ary",
+    "aly",
+    "al",
+    "dar",
+    "dal",
+    "dary",
+    "daly",
+    "or",
+    "ory",
+    "oly",
+    "ol"
+  ],
+  "class_partition": {
+    "r-class": [
+      "ar",
+      "dar",
+      "or"
+    ],
+    "l-class": [
+      "al",
+      "dal",
+      "ol"
+    ],
+    "y-class": [
+      "ary",
+      "aly",
+      "dary",
+      "daly",
+      "ory",
+      "oly"
+    ]
+  },
+  "pre_registered_thresholds": {
+    "ASYMMETRY_EFFECT_FLOOR": 0.2,
+    "FDR_THRESHOLD": 0.05,
+    "N_FLOOR_AGGREGATE": 30,
+    "PER_PAIR_CONSISTENCY_THRESHOLD": 6
+  },
+  "n_lines": 2299,
+  "total_bigrams": 320,
+  "test_A": {
+    "n_r_to_l": 94,
+    "n_l_to_r": 51,
+    "total": 145,
+    "aggregate_asymmetry": 0.296551724137931,
+    "p_raw": 0.00044643117718957286,
+    "p_BH": 0.0017857247087582915,
+    "pass": true,
+    "contributing_r_to_l": [
+      [
+        "ar",
+        "al",
+        39
+      ],
+      [
+        "ar",
+        "dal",
+        1
+      ],
+      [
+        "ar",
+        "ol",
+        27
+      ],
+      [
+        "or",
+        "al",
+        11
+      ],
+      [
+        "or",
+        "ol",
+        16
+      ]
+    ],
+    "contributing_l_to_r": [
+      [
+        "al",
+        "ar",
+        14
+      ],
+      [
+        "al",
+        "or",
+        10
+      ],
+      [
+        "ol",
+        "ar",
+        17
+      ],
+      [
+        "ol",
+        "or",
+        10
+      ]
+    ]
+  },
+  "test_B": {
+    "r_y": {
+      "n_r_to_y": 0,
+      "n_y_to_r": 0,
+      "asymmetry": 0,
+      "p_raw": 1.0,
+      "p_BH": 1.0
+    },
+    "l_y": {
+      "n_l_to_y": 0,
+      "n_y_to_l": 0,
+      "asymmetry": 0,
+      "p_raw": 1.0,
+      "p_BH": 1.0
+    }
+  },
+  "test_C": {
+    "per_pair_results": [
+      {
+        "pair": [
+          "ar",
+          "al"
+        ],
+        "n_rl": 39,
+        "n_lr": 14,
+        "total": 53,
+        "direction": "r->l",
+        "asym": 0.4716981132075472
+      },
+      {
+        "pair": [
+          "ar",
+          "dal"
+        ],
+        "n_rl": 1,
+        "n_lr": 0,
+        "total": 1,
+        "direction": "r->l",
+        "asym": 1.0
+      },
+      {
+        "pair": [
+          "ar",
+          "ol"
+        ],
+        "n_rl": 27,
+        "n_lr": 17,
+        "total": 44,
+        "direction": "r->l",
+        "asym": 0.22727272727272727
+      },
+      {
+        "pair": [
+          "dar",
+          "al"
+        ],
+        "n_rl": 0,
+        "n_lr": 0,
+        "total": 0,
+        "direction": "none",
+        "asym": 0
+      },
+      {
+        "pair": [
+          "dar",
+          "dal"
+        ],
+        "n_rl": 0,
+        "n_lr": 0,
+        "total": 0,
+        "direction": "none",
+        "asym": 0
+      },
+      {
+        "pair": [
+          "dar",
+          "ol"
+        ],
+        "n_rl": 0,
+        "n_lr": 0,
+        "total": 0,
+        "direction": "none",
+        "asym": 0
+      },
+      {
+        "pair": [
+          "or",
+          "al"
+        ],
+        "n_rl": 11,
+        "n_lr": 10,
+        "total": 21,
+        "direction": "r->l",
+        "asym": 0.047619047619047616
+      },
+      {
+        "pair": [
+          "or",
+          "dal"
+        ],
+        "n_rl": 0,
+        "n_lr": 0,
+        "total": 0,
+        "direction": "none",
+        "asym": 0
+      },
+      {
+        "pair": [
+          "or",
+          "ol"
+        ],
+        "n_rl": 16,
+        "n_lr": 10,
+        "total": 26,
+        "direction": "r->l",
+        "asym": 0.23076923076923078
+      }
+    ],
+    "n_r_to_l_direction": 5,
+    "n_l_to_r_direction": 0,
+    "n_total_pairs": 9,
+    "binomial_p_consistency": 0.0625,
+    "p_BH": 0.125,
+    "pass": false
+  },
+  "verdict": "TIER 3: aggregate r->l asymmetry passes (+0.297, p_BH=0.0018) but per-pair direction is mixed (5/9 r->l). Aggregate effect driven by specific pairs (likely ar->al dominant), not class-level grammar."
+}
