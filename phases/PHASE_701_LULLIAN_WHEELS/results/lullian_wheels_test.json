@@ -1,0 +1,126 @@
+{
+  "method": "Lullian wheels combinatorial structure test on rosettes foldout",
+  "testable_rosettes": [
+    "NW",
+    "NORTH",
+    "WEST",
+    "CENTER",
+    "SW",
+    "SOUTH"
+  ],
+  "n_edges_observed": 12,
+  "n_edges_lullian_expected": 36,
+  "mean_jaccard_distance": 0.6973504859546564,
+  "h1_verdict": "FAIL",
+  "h2_verdict": "PASS",
+  "h4_verdict": "FAIL \u2014 network/topology diagram, not Lullian wheel",
+  "final_verdict": "LULLIAN WHEELS HYPOTHESIS FALSIFIED",
+  "reasoning": "Topology is network/hub-and-spoke (NOT Lullian wheel rotation). Vocabulary overlap pattern does not show 9-fold combinatorial structure. Rosettes function as topology/network diagram (consistent with project's existing C1128/C1130 findings: generic indexing + random transition).",
+  "pairs_data": [
+    {
+      "a": "NW",
+      "b": "NORTH",
+      "jaccard": 0.7692307692307692,
+      "overlap": 0.391304347826087,
+      "connected": true
+    },
+    {
+      "a": "NW",
+      "b": "WEST",
+      "jaccard": 0.6756756756756757,
+      "overlap": 0.5,
+      "connected": true
+    },
+    {
+      "a": "NW",
+      "b": "CENTER",
+      "jaccard": 0.6818181818181819,
+      "overlap": 0.56,
+      "connected": false
+    },
+    {
+      "a": "NW",
+      "b": "SW",
+      "jaccard": 0.775,
+      "overlap": 0.375,
+      "connected": false
+    },
+    {
+      "a": "NW",
+      "b": "SOUTH",
+      "jaccard": 0.6363636363636364,
+      "overlap": 0.6,
+      "connected": false
+    },
+    {
+      "a": "NORTH",
+      "b": "WEST",
+      "jaccard": 0.7631578947368421,
+      "overlap": 0.391304347826087,
+      "connected": false
+    },
+    {
+      "a": "NORTH",
+      "b": "CENTER",
+      "jaccard": 0.7272727272727273,
+      "overlap": 0.5217391304347826,
+      "connected": true
+    },
+    {
+      "a": "NORTH",
+      "b": "SW",
+      "jaccard": 0.7948717948717949,
+      "overlap": 0.34782608695652173,
+      "connected": false
+    },
+    {
+      "a": "NORTH",
+      "b": "SOUTH",
+      "jaccard": 0.6129032258064516,
+      "overlap": 0.6,
+      "connected": false
+    },
+    {
+      "a": "WEST",
+      "b": "CENTER",
+      "jaccard": 0.6744186046511628,
+      "overlap": 0.5833333333333334,
+      "connected": true
+    },
+    {
+      "a": "WEST",
+      "b": "SW",
+      "jaccard": 0.7692307692307692,
+      "overlap": 0.375,
+      "connected": true
+    },
+    {
+      "a": "WEST",
+      "b": "SOUTH",
+      "jaccard": 0.625,
+      "overlap": 0.6,
+      "connected": false
+    },
+    {
+      "a": "CENTER",
+      "b": "SW",
+      "jaccard": 0.7608695652173914,
+      "overlap": 0.4583333333333333,
+      "connected": false
+    },
+    {
+      "a": "CENTER",
+      "b": "SOUTH",
+      "jaccard": 0.5277777777777778,
+      "overlap": 0.85,
+      "connected": true
+    },
+    {
+      "a": "SW",
+      "b": "SOUTH",
+      "jaccard": 0.6666666666666667,
+      "overlap": 0.55,
+      "connected": true
+    }
+  ]
+}

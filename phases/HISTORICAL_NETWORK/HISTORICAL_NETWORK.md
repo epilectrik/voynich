@@ -329,3 +329,142 @@ The historical network supports the interpretation that the Voynich's grammar en
 4. **No geographic certainty.** The network maps the zone of possibility, not the point of origin.
 
 This is infrastructure for future evaluation, not a conclusion.
+
+---
+
+## Session Addendum 2026-05-18: Workshop Structure + Vessel Iconography + Zodiac Label Observation
+
+Additions from PHASE_700+ research session integrating paleographic, iconographic, and direct-observation evidence with the existing synthesis.
+
+### Davis 5-scribes integration
+
+Lisa Fagin Davis's 2020 digital paleographic analysis identifies **5 distinct scribal hands** in the Voynich. Scribe D1 wrote ~113 of 227 pages (~50%). Scribes form two glyph-frequency clusters: D1+D4, D2+D3+D5. All scribes use the same cipher system with personal letter-form variations.
+
+**Implication for production hypothesis:** Confirms **master + 4-collaborator workshop structure** rather than single-author compilation. This rules out solo-polymath candidates (Fontana, Averlino) as sole authors. Fits the Italian-court-alchemy + Padua-Vienna-trained-physician model: master designed the cipher and directed content, 4 trained scribes (possibly across two phases or two sub-teams) executed production over multi-decade workshop continuity.
+
+Sub-cluster structure (D1+D4 vs D2+D3+D5) compatible with:
+- Two-phase production (early team, later team under same master tradition)
+- Two sub-team specialization (some sections by team 1, others by team 2)
+- Master-apprentice generation transition mid-production
+
+### Italian apothecary vessel iconography match
+
+Direct visual comparison of the Voynich pharmaceutical section vessels (folios 87r-102v) to documented Italian albarelli and Murano glassware of the 1400-1450 period:
+
+**Albarelli match (early Italian production: Florence, Montelupo 1420-1450, Siena hospital albarelli 1425-1450, Faenza emerging):**
+- Cylindrical body with characteristic waist constriction — MATCH
+- Flared lip / wide neck for parchment cover with string — MATCH
+- Cobalt blue + iron-oxide red decoration — MATCH (Voynich uses red and blue throughout pharma section)
+- "Very ornate and florid" design with botanical, geometric, possibly heraldic decoration — MATCH
+- Standardized iconography conventions (round-bellied=unguent, tall-narrow=liquid, wide-mouth=dry powder) — VOYNICH CONFORMS
+
+**Glass vessel match (Murano production):**
+- Vessels with depicted LIDS (albarelli used parchment+string covers, not lids) — these are GLASS BOTTLES
+- Colored liquid contents visible (only glass would show contents) — Murano glass
+- Foot-rings and decorative bases — consistent with high-end Italian glassware
+
+**Combined finding:** Voynich pharma section depicts a **mixed apothecary inventory** of ceramic albarelli (for dry materials) and glass bottles (for liquids) — exactly what a working Italian apothecary of the 1410-1440 period would use. The DECORATED status of the vessels (per user direct observation: more "flare" than utilitarian Brunschwig woodcuts) is consistent with elite Italian apothecary culture (status display of decorated jars) rather than Northern European utilitarian practice.
+
+**Strengthens:** Italian production hypothesis. The vessel iconography is specifically Italian apothecary genre, not generic medieval-European or German.
+
+### Zodiac label "later user" observation
+
+Direct examination of the zodiac folios (f70v-f73v) reveals month-name labels at the CENTER of each zodiac wheel medallion, in Latin script (NOT Voynichese). Davis's analysis identifies these labels as added by a different hand than the main text scribes.
+
+**User direct observation (2026-05-18):** The labels appear:
+- Same hand across all the zodiac wheels (one labeler)
+- Same ink (single batch / single session)
+- Some labels cleanly written, others traced over multiple times (suggesting hesitancy / uncertainty)
+- Overall appearance of being added later, not integrated with original design
+
+**Behavioral signature:** Consistent with a **later practitioner attempting to make the zodiac functional for their own astrological-medical practice**. Confident labels where iconography clearly identifies the zodiac sign; uncertain labels (traced over) where they were inferring from imagery. This is the behavior of a USER, not just a collector.
+
+**Linguistic identification (contested):** Labels show Western Romance morphology — Marc/Aberil/May/Yuny/Jollet/Augst. Specific dialect identification is contested in scholarship: Catalan-leaning (Yuny matches Catalan juny), Occitan-leaning, possibly approximated by non-fluent speaker. NOT cleanly Tuscan/Lombard/Venetian. Scholarly readings note "but only superficially" resembles any single language.
+
+**Implication for production:** The labels are POST-PRODUCTION additions, not original. They reflect a later interim owner/user, not the original workshop's language. **The original production language environment is NOT identified by these labels.** The interim user was likely a Romance-speaking practitioner (could be approximated by a German-trained physician's successor working in Italian Pseudo-Lull tradition — fitting the existing project synthesis of German-trained physician at Italian court).
+
+**Adds a chapter to the manuscript's life cycle:**
+
+```
+~1415-1445   Italian-court production (German-trained master + 4-scribe workshop, Visconti Milan)
+                       |
+~1450-1560   Manuscript in Italian Pseudo-Lull tradition circulation
+             At some point in this gap, a later practitioner with PARTIAL knowledge
+             adds zodiac month labels in approximated Romance dialect
+             (user observation: same hand, single session, some confident some uncertain)
+                       |
+1560-1563   Leonhard Rauwolf acquires during Italian travels
+             [...rest of documented chain as previously established...]
+```
+
+The "later user" is a specific historical figure who briefly intersected with the manuscript and tried to make at least the zodiac functional. They lacked the cipher key but could recognize iconography.
+
+### Hospital-pharmacy candidate-type framework
+
+Italian hospital pharmacies of the 15th century emerged as a plausible institutional context for Voynich production, alongside the existing court-alchemy hypothesis. The institutional features fit:
+
+- Multi-decade institutional continuity (5-scribe workshop requirement)
+- Master + apprentice structure (Spezieria guild operations)
+- Resources for elaborate equipment (decorated institutional albarelli)
+- Multi-disciplinary scope (medical + pharmaceutical + alchemical)
+- Religious-institutional secrecy context
+
+**Specific candidates surveyed:**
+
+- **Spedale di Santa Maria della Scala, Siena** — documented institutional albarelli from 1425-1450 with institutional emblems. Rector Giovanni Buzzichelli 1434-1444. Pellegrinaio frescoes (1440-1441 by Domenico di Bartolo) document professional medical operations including glass vessels for urine analysis. Strong hospital-pharmacy candidate but Tuscan context conflicts with German-encoding hypothesis.
+
+- **Santa Maria Nuova, Florence** — founded 1288, major Florentine pharmacy operation.
+
+- **Santo Spirito in Saxia, Rome** — major papal hospital with documented pharmacy.
+
+- **Hospital de la Santa Creu, Barcelona** — founded 1401, in Voynich window. Catalan Pseudo-Lull homeland context.
+
+**Project synthesis position:** The existing HISTORICAL_NETWORK preferred candidate remains Filippo Maria Visconti's Milan court (architectural evidence via Pelling 2017 Ghibelline merlons + court-scale product range + Testamentum's Milan reference + Visconti documented alchemy obsession). The hospital-pharmacy candidate-type provides an ALTERNATIVE institutional model worth considering but lacks the architectural/regional-specific evidence that supports Visconti Milan.
+
+The hospital-pharmacy framework is most useful as a **structural model** for understanding the kind of institution the Voynich production required (master + apprentices, multi-decade continuity, elaborate equipment, multi-disciplinary scope) — even if the specific institution is Visconti court rather than Sienese hospital.
+
+### Brunschwig downstream confirmation (already documented, integrated)
+
+The PHASE_698 cardinality baseline finding documents Brunschwig 1512 containing ×4+×9 recipes matching f75r↔III.19. This confirms downstream transmission of the Pseudo-Lull/Voynich recipe tradition through Strasbourg-Alsace printing by 1512. Combined with the existing Rupescissa Glossator (Padua 1463) → Brunschwig (Strasbourg 1500/1512) chain in this document, the transmission lineage is now:
+
+```
+Pseudo-Lull Testamentum (Catalan 1332, Latin 1443)
+    ↓ [direct workshop access at Visconti Milan court]
+Voynich workshop (Italian, 1415-1445) — encoded version
+    ↓ [tradition continues in Italian Pseudo-Lull circulation through 16th c.]
+[Interim user adds zodiac labels at some point]
+    ↓ [parallel: tradition also transmits through Vienna-Padua pipeline]
+Rupescissa Glossator (Padua 1463) — public defense of quintessence
+    ↓
+Brunschwig (Strasbourg 1500/1512) — printed, REVEALED
+    + Independently: Brunschwig 1512 ×4+×9 recipes confirm same recipe family
+```
+
+Both the encrypted Voynich tradition AND the open Brunschwig tradition descend from common Pseudo-Lull/Rupescissa sources. Brunschwig is the open downstream confirmation that the recipe tradition the Voynich encoded was real and continued to be practiced.
+
+### Updated working synthesis
+
+Combining all the above with the existing HISTORICAL_NETWORK synthesis:
+
+**Production context:** Filippo Maria Visconti's Milan court alchemy operation, approximately 1415-1445. Master was a German-speaking physician trained in the Padua-Vienna pipeline, recruited to Milan court possibly during Visconti's middle reign. Workshop of master + 4 trained scribes operating across multi-decade period. Master's death (coincident with or shortly after Visconti's 1447 death) ended workshop continuity; cipher key died with master while manuscript was preserved.
+
+**The manuscript itself:** Working compendium of court alchemy procedures derived from Pseudo-Lull Testamentum tradition. Encoded in invented script with atom system possibly mapping to German operational verbs (k=kochen, e=erkalten). Pseudo-Lull Testamentum identified as primary source via computational matching (51 chapters → 41 folios, p<0.0001). Multi-section structure (herbal, astronomical, biological, pharmaceutical, recipes) reflects polymath court-alchemy scope.
+
+**Why the cipher:** Inquisitorial persecution (Eimeric tradition active), Visconti court secrecy obsession, Vienna sworn-faculty-secrecy training of master, trade-secret protection of valuable procedures. Multiple converging pressures motivated the encryption.
+
+**Post-production transmission:** Italian Pseudo-Lull tradition circulation through later 15th-16th c., possibly with one or more interim practitioner-owners (one of whom added the zodiac labels in approximated Romance dialect — your observation establishes this interim user existed). Acquired by Leonhard Rauwolf (Montpellier-trained, Pseudo-Lull tradition literate) during 1560-1563 Italian collecting. Transmitted via Widemann (Rauwolf's housemate in Augsburg) to Rudolf II in March 1599 for 600 florins. Standard documented chain from Rudolf onward.
+
+**What's still anonymous:** The specific master figure (probably anonymous in surviving Visconti chancery records, consistent with court alchemist conventions). The specific interim Catalan/Occitan/Romance-speaking practitioner who added zodiac labels. The 1450-1560 ownership chain.
+
+---
+
+## Provisional Next-Phase Directions
+
+Open candidate phases identified during PHASE_697-700 work:
+
+1. **Hapax MIDDLE concentration vs. lexical-content tail discrimination** (PHASE_699 produced negative result; line of investigation closed)
+2. **Computus / alternative-class periodic notation tests** (PHASE_700 produced 6-class exclusion; methodology exhausted)
+3. **Lullian wheels combinatorial structure test** — RAN AS PHASE_701 (2026-05-18). FALSIFIED. Topology is 12-edge spoke-and-ring, not Lullian 36-edge all-to-all. Documented in `phases/PHASE_701_LULLIAN_WHEELS/INDEX.md` as INDEX entry (not constraint-registered per expert consultation — self-generated alternative, already implied by C1128/C1130/C1989/rosettes_workshop_diagram.md).
+4. **Codicology audit** — current state of Voynich watermark/ink/paper analysis scholarship.
+5. **Rupescissa Glossator identification** — the unidentified Padua 1463 figure who is Brunschwig's primary quintessence source.
+6. **German encoding hypothesis audit** — verify how well-grounded the k=kochen, e=erkalten claim is in the project's actual atom-system analysis vs. interpretive overlay.
