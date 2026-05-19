@@ -4,6 +4,80 @@
 
 ---
 
+## Version 6.74 (2026-05-19) - C475 DEMOTED Tier 2→3 (sparsity-driven headline) + denominator-choice methodology lesson
+
+### Summary
+
+C475 demoted from Tier 2 to Tier 3 with reframe following audit per `phases/C475_AUDIT/`. Both experts converged on demote-with-reframe (not retract): C475 has surviving content via C729's strong-form attested-denominator claim, unlike C131 which had nothing to preserve.
+
+### Audit findings
+
+C475 originally said: "95.7% of MIDDLE pairs are statistically illegal" via frequency-matched null at exp>0.5 threshold.
+
+| Axis | Finding |
+|------|---------|
+| **Value reproduction** | 95.7% → 85.0% at exp>0.5 threshold (minor discrepancy from corpus filtering changes; same order of magnitude) |
+| **Max expected count among 'illegal' pairs** | **2.51** — under Poisson, observed=0 given expected=2.5 happens 8.2% of the time by chance |
+| **Pairs illegal at exp ≥ 2** | 7 of 309,740 |
+| **Pairs illegal at exp ≥ 5 (meaningful threshold)** | **0** |
+| **Pairs illegal at exp ≥ 10** | **0** |
+
+The 95.7% "incompatibility" is dominantly **sparsity-driven**. With 808 MIDDLEs at AZC corpus size, expected co-occurrence counts are naturally below 1 for most pairs by sheer combinatorics. The framework treats every unobserved pair with expected>0.5 under null as forbidden, but at this corpus size that's not exclusion — it's "haven't been seen yet."
+
+### Why demote, not retract
+
+Unlike C131, **C475 has a strong-form survivor: C729** ("0 violations across 19,576 attested pair occurrences"). C729 uses the **observed-pair denominator** which is methodologically clean. The substantive structural claim — that MIDDLE compatibility among observed pairs is structured with universal-connector MIDDLEs (a, o, e, ee, eo) bridging regimes — is real. Only the 95.7% headline is wrong.
+
+Reframe: "MIDDLE pair compatibility among observed pairs shows structured topology with universal-connector MIDDLEs. The number of unobserved pairs is dominated by combinatorial sparsity, not structural prohibition. C729's attested-denominator framing is the methodologically clean strong-form."
+
+### Downstream impact
+
+| Constraint | Status |
+|-----------|--------|
+| **C729** ✅ STRONG-FORM SURVIVOR — uses correct (attested) denominator |
+| **C728, C742, C812, C1039, C1061** ✅ Independent of 95.7% framing |
+| **C741** ⚠️ already self-acknowledges sparsity ("95.4% too rare to test") |
+| **C1053** ⚠️ Uses C475 graph for compound atom mediation. Per expert review: COMPATIBLE-side test is observed-pair-grounded, so 46.2% vs 3.9% prediction comparison is robust. NO RE-AUDIT NEEDED. |
+| **C1068** ⚠️⚠️ **FLAGGED AUDIT_PENDING** — cross-layer NMI (0.185) uses C475 graph wholesale. If NMI is sparsity-weighted, cross-layer coupling signal may be sparsity-shared. Spot-check needed. |
+
+### Methodology memory added
+
+`feedback_denominator_choice_sparse_cooccurrence.md`: In sparse co-occurrence graphs, denominator choice (N_possible vs N_attested) changes claims by orders of magnitude. Diagnostic: max expected among "forbidden" pairs < 5 = sparsity-dominated. Use attested-denominator (C729-style) for strong-form claims.
+
+### Audit-sweep targets identified
+
+Per crazy-expert: likely class of constraints from 2026-01-08 through 2026-01-15 work burst share the same denominator pattern. High-suspicion targets to audit-sweep:
+- **C153** (prefix/suffix axis MI)
+- **C268** (897 observed combinations vs theoretical max)
+- **C476** (coverage optimality)
+- **C481** (survivor-set uniqueness)
+- **C517** (compression density)
+- **C518** (compatibility enrichment)
+- **C982** (~101D discrimination space)
+- **C983** (compatibility transitivity)
+- **C996** (forbidden topology)
+
+Audit signature: any constraint citing a percentage of "possible" or "potential" pairs/triples on sparse data.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `context/CLAIMS/currier_a.md` | C475 entry replaced with full demotion narrative; Tier 2 → Tier 3, reframed |
+| `context/CLAIMS/INDEX.md` | Version 6.73 → 6.74, header updated |
+| `CLAUDE.md` | Version 6.73 → 6.74, demoted count 1 → 2 |
+| `phases/C475_AUDIT/` | Audit scripts + results JSON (initial + full distribution) |
+| `~/.claude/projects/.../memory/feedback_denominator_choice_sparse_cooccurrence.md` | NEW methodology memory |
+| `~/.claude/projects/.../memory/MEMORY.md` | Index entry for the new memory |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `.claude/agents/crazy-expert.md` | C475 row updated with demotion narrative |
+
+### Audit precedent
+
+This is the **second audit-driven action** (after C131 retraction). Establishes that audit-driven actions are not one-offs — there is a systematic pattern of methodologically-weak constraints from the early-investigation period (2026-01-08 through 2026-01-15 burst especially) that warrant batch audit. Expected to produce 5-15% retraction rate + 15-25% demotion rate when applied to the targeted suspicion list.
+
+---
+
 ## Version 6.73 (2026-05-19) - C131 RETRACTION + early-investigation audit pattern established
 
 ### Summary

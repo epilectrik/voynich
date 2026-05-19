@@ -339,7 +339,7 @@ C470	MIDDLE Restriction Inheritance	2	AZC	in: azc_system
 C471	PREFIX Encodes AZC Family Affinity	2	AZC	in: azc_system
 C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC	in: azc_system
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC	in: azc_system
-C475	MIDDLE ATOMIC INCOMPATIBILITY	2	A	in: currier_a
+C475	MIDDLE ATOMIC INCOMPATIBILITY [DEMOTED Tier 2 → Tier 3, REFRAMED 2026-05-19]	2	A	in: currier_a
 C476	COVERAGE OPTIMALITY	2	A	in: currier_a
 C477	**HT Tail Correlation** (r=0.504, p=0.0045, R²=0.28)	2	HT/A	-> C477_ht_tail_correlation.md
 C478	TEMPORAL COVERAGE SCHEDULING	2	A	in: currier_a

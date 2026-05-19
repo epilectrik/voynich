@@ -1,0 +1,62 @@
+{
+  "method": "C475 full distribution audit",
+  "n_permutations": 200,
+  "n_middles": 808,
+  "total_possible_pairs": 326028,
+  "n_legal": 16288,
+  "n_illegal_obs_0": 309740,
+  "expected_value_distribution_illegal": {
+    "max": 2.510752688172043,
+    "p99": 1.082191780821918,
+    "p90": 1,
+    "median": 1,
+    "mean": 0.896698750747721
+  },
+  "threshold_distribution": {
+    "0.0": {
+      "n_illegal": 309740,
+      "pct_of_total": 95.00411007643515
+    },
+    "0.1": {
+      "n_illegal": 277039,
+      "pct_of_total": 84.97398996405217
+    },
+    "0.5": {
+      "n_illegal": 277039,
+      "pct_of_total": 84.97398996405217
+    },
+    "1.0": {
+      "n_illegal": 277039,
+      "pct_of_total": 84.97398996405217
+    },
+    "2.0": {
+      "n_illegal": 7,
+      "pct_of_total": 0.002147054854184303
+    },
+    "3.0": {
+      "n_illegal": 0,
+      "pct_of_total": 0.0
+    },
+    "5.0": {
+      "n_illegal": 0,
+      "pct_of_total": 0.0
+    },
+    "10.0": {
+      "n_illegal": 0,
+      "pct_of_total": 0.0
+    },
+    "20.0": {
+      "n_illegal": 0,
+      "pct_of_total": 0.0
+    },
+    "50.0": {
+      "n_illegal": 0,
+      "pct_of_total": 0.0
+    },
+    "100.0": {
+      "n_illegal": 0,
+      "pct_of_total": 0.0
+    }
+  },
+  "verdict": "C475 SPARSITY-DRIVEN (CONFIRMED): at exp\u22655 threshold, only 0.0% pairs are robustly illegal. The 95.7% headline is dominated by low-expectation pairs (haven't-seen-yet, not forbidden). Crazy-expert prediction was right in direction, undershot magnitude."
+}

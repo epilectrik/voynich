@@ -1,0 +1,41 @@
+{
+  "method": "C475 audit: distribution of expected counts among illegal pairs",
+  "original_methodology_source": "phases/MIDDLE_INCOMPATIBILITY/middle_incompatibility.py",
+  "original_threshold": 0.5,
+  "audit_thresholds": [
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0,
+    100.0
+  ],
+  "summary": {
+    "total_middles": 808,
+    "total_possible_pairs": 326028,
+    "legal_pairs": 16288,
+    "illegal_pairs": 309713,
+    "trivially_absent": 27,
+    "sparsity": 0.95
+  },
+  "config": {
+    "context": "line (C233, C235, C473)",
+    "scope": "AZC folios only",
+    "null_model": "frequency-matched shuffle (1000 permutations)",
+    "threshold": 0.5
+  },
+  "n_illegal_in_json": 100,
+  "expected_distribution": {
+    "0.5": 100,
+    "1.0": 100,
+    "2.0": 9,
+    "5.0": 0,
+    "10.0": 0,
+    "20.0": 0,
+    "50.0": 0,
+    "100.0": 0
+  },
+  "verdict": "INSUFFICIENT data in JSON for verdict; full re-run needed"
+}

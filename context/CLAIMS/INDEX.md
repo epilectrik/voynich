@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2035 validated constraints | **Version:** 6.73 | **Date:** 2026-05-19 (C131 retracted post-audit)
+**Total:** 2035 validated constraints | **Version:** 6.74 | **Date:** 2026-05-19 (C475 demoted Tier 2→3 post-audit)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 

@@ -852,7 +852,7 @@ C470	MIDDLE Restriction Inheritance	2	AZC
 C471	PREFIX Encodes AZC Family Affinity	2	AZC
 C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC
-C475	MIDDLE ATOMIC INCOMPATIBILITY	2	A
+C475	**DEMOTED Tier 2→3 2026-05-19** Originally "95.7% of MIDDLE pairs statistically illegal" via frequency-matched null exp>0.5. Audit (phases/C475_AUDIT/): max expected count among 309,740 "illegal" pairs is 2.51, mean 0.90; under Poisson, obs=0 given exp=2.5 happens 8.2% by chance. At exp≥5 (meaningful threshold), ZERO pairs robustly illegal. 95.7% is sparsity (808 MIDDLEs, only 16,288 of 326,028 possible pairs observed). REFRAMED: MIDDLE pair compatibility AMONG OBSERVED PAIRS shows structured topology with universal-connector MIDDLEs (a, o, e, ee, eo). Strong-form survivor: C729 (0 violations across 19,576 attested pair occurrences — uses correct attested denominator). Downstream: C1068 flagged AUDIT_PENDING (cross-layer NMI uses C475 graph wholesale). Methodology memory feedback_denominator_choice_sparse_cooccurrence.md. Audit-sweep targets: C153, C268, C476, C481, C517, C518, C982, C983, C996 likely share denominator-choice pattern.	3	A
 C476	COVERAGE OPTIMALITY	2	A
 C477	**HT Tail Correlation**	2	HT/A
 C478	TEMPORAL COVERAGE SCHEDULING	2	A

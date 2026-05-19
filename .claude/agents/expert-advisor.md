@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 18:29
+**Generated:** 2026-05-19 18:52
 **Version:** FROZEN STATE (2035 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (20 feedback rules)
+6. Session Methodology Notes (21 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -769,7 +769,7 @@ C470	MIDDLE Restriction Inheritance	2	AZC
 C471	PREFIX Encodes AZC Family Affinity	2	AZC
 C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC
-C475	MIDDLE ATOMIC INCOMPATIBILITY	2	A
+C475	MIDDLE ATOMIC INCOMPATIBILITY [DEMOTED Tier 2 → Tier 3, REFRAMED 2026-05-19]	2	A
 C476	COVERAGE OPTIMALITY	2	A
 C477	**HT Tail Correlation**	2	HT/A
 C478	TEMPORAL COVERAGE SCHEDULING	2	A
@@ -5304,6 +5304,58 @@ Together these establish the substrate-vs-mechanism distinction and the controls
 - `phases/PHASE_697_VC_PARTITION_DISCOVERY/INDEX.md` — the audit trail of three threshold-related narrowings
 - C2033 — the surviving narrow Tier 2 measurement after the threshold recalibration
 - `phases/PHASE_697_VC_PARTITION_DISCOVERY/results/vc_ceiling_and_bootstrap.json` — the moment the pre-registered threshold was discovered wrong
+
+---
+
+## feedback-denominator-choice-sparse-cooccurrence
+
+*"In sparse co-occurrence graphs, denominator choice (N_possible vs N_attested) changes claims by orders of magnitude. \"X% of pairs are forbidden\" on sparse data is dominantly sparsity-driven unless max-expected-count among \"forbidden\" pairs exceeds ~5. C475 audit established (2026-05-19)"*
+
+When a constraint reports "X% of pairs/triples/combinations are forbidden/illegal/incompatible," the denominator choice is the load-bearing methodological decision. Two denominators produce orders-of-magnitude different headlines on the same data:
+
+**N_possible denominator:** count of all combinatorially-possible pairs in vocabulary V (= V × (V-1) / 2 for unordered pairs). This is what C475 used.
+
+**N_attested denominator:** count of pairs that were actually observed at least once. This is what C729 used (and got 0/19,576 violations).
+
+On sparse graphs, these denominators differ by factors of 10-50×. The N_possible framing artificially inflates "forbidden" counts because most unobserved pairs have null expectations below 1 at corpus size — they're not forbidden, they just haven't been seen yet.
+
+**The C475 case study (2026-05-19 audit):**
+- C475 reported: "95.7% of MIDDLE pairs are statistically illegal" (Tier 2)
+- Methodology: pair "illegal" if observed=0 AND expected>0.5 under frequency-matched null
+- Audit re-run: 309,740 illegal pairs (85.0% — minor discrepancy from 95.7%)
+- **Max expected count among ANY of 309,740 "illegal" pairs: 2.51**
+- Mean expected: 0.90, median 1.00, 99th percentile 1.08
+- Pairs illegal at meaningful threshold (exp ≥ 5): **0**
+- Under Poisson, observed=0 given expected=2.5 happens 8.2% of the time by chance
+
+The "95.7%" was sparsity, not prohibition. C729's strong-form using attested denominator survived intact.
+
+**Diagnostic test for this failure pattern:**
+1. Identify the denominator the constraint cites ("X of N pairs/triples/combinations")
+2. Ask: is N the count of POSSIBLE or ATTESTED?
+3. If POSSIBLE and corpus is sparse: compute distribution of expected counts among the "forbidden" subset
+4. If max expected count < 5 (or 99th percentile < 5), the claim is sparsity-dominated
+5. Reframe to use attested denominator OR demote to descriptive statistic
+
+**How to apply:**
+- When auditing graph/co-occurrence-pattern constraints from sparse corpora (Voynich AZC, HT subsets, rare-MIDDLE strata): always check the denominator
+- When proposing a new constraint: if the claim is "X% of possible pairs are forbidden," compute max expected count BEFORE registering. If below 5, use attested denominator instead
+- Cleanly-framed alternative: "X violations across N attested pair occurrences" (C729-style). This is the methodologically defensible form
+- Trap signature: the all-possible-pairs framing makes claims look stronger than they are — be skeptical of "95%+" exclusion rates on sparse data
+- Frequency-matched null DOES NOT solve this — the null itself produces near-zero expectations for most pairs at sparse corpus size, so observed=0 vs null=0.5 isn't meaningful exclusion
+
+**Related methodology memories:**
+- [[feedback-made-up-threshold-audit]] (C131 audit — invented threshold + non-reproducing value + null at observed)
+- [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null discipline; sister test for adjacency claims)
+- [[feedback-aggregate-minus-original-independence-test]] (PHASE_705; analogous for class-generalization claims)
+- [[feedback-framework-as-null]] (mature-stage prior toward null)
+
+**Broader audit policy implication:**
+Constraints from the 2026-01-08 through 2026-01-15 work burst (the AZC-graph + cross-system-compatibility development period) likely contain other instances of this denominator pattern. High-suspicion targets per crazy-expert: C153, C268, C476, C481, C517, C518, C982, C983, C996. Audit signature: any constraint citing a percentage of "possible" or "potential" pairs/triples on sparse data.
+
+Expected outcome of audit-sweep: 5-15% retraction rate (per C131 + C475 precedent), 15-25% demotion rate (where strong-form survives in adjacent constraint like C729).
+
+This is a generalizable methodological pattern, not a one-off finding.
 
 ---
 

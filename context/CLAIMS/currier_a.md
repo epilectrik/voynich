@@ -356,19 +356,49 @@ In Currier A, the MIDDLE component constitutes the primary vocabulary layer, wit
 
 ## MIDDLE Compatibility (C475)
 
-### C475 - MIDDLE ATOMIC INCOMPATIBILITY
-**Tier:** 2 | **Status:** CLOSED | **Source:** MIDDLE_INCOMPATIBILITY probe (2026-01-12)
+### C475 - MIDDLE ATOMIC INCOMPATIBILITY [DEMOTED Tier 2 → Tier 3, REFRAMED 2026-05-19]
 
-MIDDLE-level compatibility is extremely sparse. Only 4.3% of MIDDLE pairs can legally co-occur on the same specification line; 95.7% are statistically illegal.
+**Tier:** 3 (was Tier 2) | **Status:** REFRAMED via audit | **Source:** MIDDLE_INCOMPATIBILITY probe (2026-01-12); audit `phases/C475_AUDIT/` (2026-05-19)
 
-**Evidence (line-level co-occurrence in AZC folios):**
-- 1,187 unique MIDDLEs observed
-- 703,891 total possible pairs
-- 30,394 legal pairs (4.3%)
-- 673,342 illegal pairs (95.7%)
-- 155 trivially absent (rare MIDDLEs)
-- Null model: frequency-matched shuffle (1000 permutations)
-- Robustness: 97.3% overlap with 2-line sensitivity check
+**REVISED CLAIM (Tier 3):** MIDDLE pair compatibility among **observed pairs** shows structured topology with universal-connector MIDDLEs (a, o, e, ee, eo) bridging regimes. The number of **unobserved** pairs is dominated by combinatorial sparsity, not structural prohibition.
+
+**ORIGINAL CLAIM (DEMOTED — sparsity artifact):** "95.7% of MIDDLE pairs are statistically illegal."
+
+**Audit findings (`phases/C475_AUDIT/`):**
+- Re-run reproduces 85.0% at original exp>0.5 threshold (minor discrepancy from 95.7%)
+- **Max expected count among any of 309,740 "illegal" pairs is 2.51**
+- Mean expected: 0.90, median 1.00, 99th percentile 1.08
+- Pairs illegal at exp ≥ 2: 7 of 309,740
+- Pairs illegal at exp ≥ 5 (statistically meaningful): **0**
+- Pairs illegal at exp ≥ 10: 0
+
+**Why the original framing fails:** Under Poisson, observed=0 given expected=2.5 happens 8.2% of the time by chance — that's not exclusion. The 95.7% "incompatibility" measures sparsity of the MIDDLE co-occurrence space at AZC corpus size (808 MIDDLEs, only 16,288 of 326,028 possible pairs observed), not structural prohibition. The framework treats every unobserved pair with expected>0.5 under null as forbidden, but at this corpus size most pairs have null expectations below 1 by sheer combinatorics.
+
+**What survives — observed-pair structure:**
+- 16,288 attested pairs form a meaningful compatibility lattice
+- Universal connector MIDDLEs (a, o, e, ee, eo) genuinely bridge otherwise-disconnected regimes
+- PREFIX clustering effect (H1: 17.39% within-PREFIX legal vs 5.44% cross-PREFIX, 3.2× enrichment) is real because it's a relative comparison between observed pair structures
+- C729's record-level scope claim (0 violations across 19,576 attested pair occurrences) is the **methodologically clean strong-form** — uses observed-pair denominator, not all-possible-pairs
+
+**Original evidence (preserved for traceability):**
+- 1,187 unique MIDDLEs observed (currier_a.md original count; current re-run with current pipeline gives 808 — corpus filtering has tightened)
+- 703,891 total possible pairs (1187 N); current: 326,028 (808 N)
+- 30,394 legal pairs (original); current: 16,288 legal pairs
+- 673,342 illegal pairs (95.7% — original framing); current: 309,740 (85.0% at exp>0.5)
+- Null model: frequency-matched shuffle (1000 permutations original; 200 confirmed in audit)
+
+**Methodology lesson:** [feedback_denominator_choice_sparse_cooccurrence.md](memory) — in sparse co-occurrence graphs, the denominator choice (N_possible vs N_attested) changes claims by orders of magnitude. Frequency-matched null with low expected counts (E<1 typical) inflates "forbidden pair" counts via combinatorics, not exclusion. Use attested-denominator (C729-style) for strong-form claims; reserve null-shuffle-denominator for descriptive statistics only.
+
+**Downstream impact assessment:**
+- **C729** ✅ STRONG-FORM SURVIVOR — uses correct (attested) denominator
+- **C728, C742, C812, C1039, C1061** ✅ Independent of 95.7% framing
+- **C741** ⚠️ already self-acknowledges sparsity ("95.4% too rare to test")
+- **C1053** ⚠️ Uses C475 graph for compound atom mediation test. Per expert review: COMPATIBLE-side test is observed-pair-grounded, so the 46.2% vs 3.9% prediction comparison is robust to demotion. NO RE-AUDIT NEEDED.
+- **C1068** ⚠️⚠️ **FLAGGED AUDIT_PENDING** — cross-layer NMI uses C475 graph wholesale. If NMI is sparsity-weighted, cross-layer coupling signal may be sparsity-shared. Spot-check needed before relying on the 0.185 figure.
+
+**Provenance:** Original probe (2026-01-12) by `phases/MIDDLE_INCOMPATIBILITY/middle_incompatibility.py`; audit (2026-05-19) by `phases/C475_AUDIT/scripts/_c475_full_distribution.py`.
+
+**Evidence (original framing for traceability only — not load-bearing):**
 
 **Graph structure:**
 - 30 connected components (fragmented discrimination regimes)
