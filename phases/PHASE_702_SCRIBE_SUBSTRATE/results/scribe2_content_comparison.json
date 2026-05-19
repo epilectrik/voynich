@@ -1,0 +1,170 @@
+{
+  "method": "Within-Scribe-2 content partition test (PHASE_702 follow-up)",
+  "question": "Does same scribe (paleographically identical hand) produce same r21 across different content?",
+  "reading_A": "Recipe-driven: content determines signature; scribe is passthrough",
+  "reading_B": "Scribe-driven: scribe has personal accent that persists across content",
+  "partitions_tested": [
+    "botanical_Q4-7",
+    "balneology_Q13",
+    "rose_obverse_Q14"
+  ],
+  "per_partition_results": {
+    "botanical_Q4-7": {
+      "label": "botanical_Q4-7",
+      "n_folios_in_partition": 20,
+      "n_folios_with_paragraphs": 20,
+      "n_paragraphs_total": 44,
+      "n_paragraphs_eligible": 44,
+      "n_tokens": 2296,
+      "folios_covered": [
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v",
+        "f33r",
+        "f33v",
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v",
+        "f40r",
+        "f40v",
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v",
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v"
+      ],
+      "lag1_excess": 0.014560390763765727,
+      "lag2_excess": 0.014567481884058264,
+      "lag3_excess": 0.015341959334565851,
+      "r21_regularized": 1.000487014422043,
+      "lag2_minus_lag1": 7.091120292537084e-06,
+      "bootstrap": {
+        "r21_mean": 1.1314448284066403,
+        "r21_se": 1.0346349279218767,
+        "r21_ci95": [
+          -0.23070910067028746,
+          3.7389319945230732
+        ],
+        "lag2_minus_lag1_mean": 0.0006253211978209322,
+        "lag2_minus_lag1_se": 0.009159627985042789,
+        "lag2_minus_lag1_ci95": [
+          -0.017766215763096622,
+          0.018367120378739443
+        ],
+        "n_boot": 200
+      }
+    },
+    "balneology_Q13": {
+      "label": "balneology_Q13",
+      "n_folios_in_partition": 20,
+      "n_folios_with_paragraphs": 19,
+      "n_paragraphs_total": 82,
+      "n_paragraphs_eligible": 79,
+      "n_tokens": 6166,
+      "folios_covered": [
+        "f75r",
+        "f75v",
+        "f76v",
+        "f77r",
+        "f77v",
+        "f78r",
+        "f78v",
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v",
+        "f81r",
+        "f81v",
+        "f82r",
+        "f82v",
+        "f83r",
+        "f83v",
+        "f84r",
+        "f84v"
+      ],
+      "lag1_excess": -0.017511910629209832,
+      "lag2_excess": 0.010629993342210426,
+      "lag3_excess": 0.0012506324843985586,
+      "r21_regularized": -0.6070150520571763,
+      "lag2_minus_lag1": 0.02814190397142026,
+      "bootstrap": {
+        "r21_mean": -0.618443550807484,
+        "r21_se": 0.5105872396855197,
+        "r21_ci95": [
+          -2.0544095383777417,
+          0.0573743263105735
+        ],
+        "lag2_minus_lag1_mean": 0.028693824956816525,
+        "lag2_minus_lag1_se": 0.010155341893883769,
+        "lag2_minus_lag1_ci95": [
+          0.010266998966017248,
+          0.04904024488207612
+        ],
+        "n_boot": 200
+      }
+    },
+    "rose_obverse_Q14": {
+      "label": "rose_obverse_Q14",
+      "n_folios_in_partition": 2,
+      "n_folios_with_paragraphs": 2,
+      "n_paragraphs_total": 13,
+      "n_paragraphs_eligible": 11,
+      "n_tokens": 396,
+      "folios_covered": [
+        "f85r1",
+        "f85r2"
+      ],
+      "lag1_excess": -0.014337662337662217,
+      "lag2_excess": 0.006724598930481703,
+      "lag3_excess": -0.008484848484848597,
+      "r21_regularized": -0.4690164109122242,
+      "lag2_minus_lag1": 0.02106226126814392,
+      "bootstrap": {
+        "r21_mean": 0.020566928882415406,
+        "r21_se": 2.047515950867763,
+        "r21_ci95": [
+          -4.9097859327217535,
+          4.237114093959739
+        ],
+        "lag2_minus_lag1_mean": 0.019639494617809856,
+        "lag2_minus_lag1_se": 0.024280999218170733,
+        "lag2_minus_lag1_ci95": [
+          -0.02638700918964086,
+          0.0663487505909757
+        ],
+        "n_boot": 200
+      }
+    }
+  },
+  "pairwise_z_tests": {
+    "botanical_Q4-7_vs_balneology_Q13": {
+      "diff_lag2_minus_lag1": -0.028068503758995594,
+      "pooled_SE": 0.013675882194800077,
+      "z": -2.0524090043469343
+    },
+    "botanical_Q4-7_vs_rose_obverse_Q14": {
+      "diff_lag2_minus_lag1": -0.019014173419988924,
+      "pooled_SE": 0.0259512178492106,
+      "z": -0.7326890603158075
+    },
+    "balneology_Q13_vs_rose_obverse_Q14": {
+      "diff_lag2_minus_lag1": 0.00905433033900667,
+      "pooled_SE": 0.026319154469976395,
+      "z": 0.3440205630213313
+    }
+  },
+  "verdict": "READING A SUPPORTED (content-driven): max |z| = 2.05 > 2.0. Same scribe produces different signatures on different content. Substrate signature is content-driven; scribe is transparent transmitter.",
+  "reference_values": {
+    "Voynich_Section_B_r21": -0.65,
+    "Voynich_matched_S_r21": 0.66,
+    "NL_Latin_r21_range": [
+      -0.22,
+      0.05
+    ]
+  }
+}

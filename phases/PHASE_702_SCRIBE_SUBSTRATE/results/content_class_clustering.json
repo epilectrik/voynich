@@ -1,0 +1,331 @@
+{
+  "method": "Content-class clustering across Davis scribes (PHASE_702 expanded)",
+  "test_design": "Reading C \u2014 substrate mode is content-determined, scribe-mediated",
+  "ratio_valid_threshold": 0.015,
+  "n_floor_for_clustering": 500,
+  "per_cell_results": {
+    "S1_herbal_pure_Q1-3": {
+      "label": "S1_herbal_pure_Q1-3",
+      "scribe": "1",
+      "currier": "A",
+      "n_paragraphs": 90,
+      "n_tokens": 3871,
+      "n_folios": 46,
+      "lag1": 0.0035929648241206126,
+      "lag2": 0.0018328366296397527,
+      "lag2_minus_lag1": -0.00176012819448086,
+      "bootstrap": {
+        "lag1_mean": 0.003827588883055395,
+        "lag1_se": 0.0033532004890974585,
+        "lag2_mean": 0.002034561577056685,
+        "lag2_se": 0.003077033663926464,
+        "diff_mean": -0.0017930273059987107,
+        "diff_se": 0.004718923745260726,
+        "n_boot": 200
+      },
+      "mode": "flat",
+      "expected_mode_pre_test": "flat?"
+    },
+    "S1_herbal_mixed_Q4-7": {
+      "label": "S1_herbal_mixed_Q4-7",
+      "scribe": "1",
+      "currier": "A",
+      "n_paragraphs": 75,
+      "n_tokens": 3245,
+      "n_folios": 40,
+      "lag1": 0.01142902208201922,
+      "lag2": 0.006499192245557427,
+      "lag2_minus_lag1": -0.004929829836461793,
+      "bootstrap": {
+        "lag1_mean": 0.01196157746661592,
+        "lag1_se": 0.006157724089855377,
+        "lag2_mean": 0.006320500161554006,
+        "lag2_se": 0.005249351728296961,
+        "diff_mean": -0.005641077305061917,
+        "diff_se": 0.007674587403949687,
+        "n_boot": 200
+      },
+      "mode": "flat",
+      "expected_mode_pre_test": "flat?"
+    },
+    "S1_Q15_pharma": {
+      "label": "S1_Q15_pharma",
+      "scribe": "1",
+      "currier": "A",
+      "n_paragraphs": 27,
+      "n_tokens": 1384,
+      "n_folios": 12,
+      "lag1": -0.004672070744288896,
+      "lag2": 0.012890977443608924,
+      "lag2_minus_lag1": 0.01756304818789782,
+      "bootstrap": {
+        "lag1_mean": -0.006854571835205234,
+        "lag1_se": 0.012370827389455299,
+        "lag2_mean": 0.013311015623844165,
+        "lag2_se": 0.013804669649973027,
+        "diff_mean": 0.020165587459049394,
+        "diff_se": 0.017295467896302985,
+        "n_boot": 200
+      },
+      "mode": "flat",
+      "expected_mode_pre_test": "unknown"
+    },
+    "S1_Q17_recipes": {
+      "label": "S1_Q17_recipes",
+      "scribe": "1",
+      "currier": "A",
+      "n_paragraphs": 28,
+      "n_tokens": 1347,
+      "n_folios": 10,
+      "lag1": 0.02533358605003788,
+      "lag2": 0.01039116963594119,
+      "lag2_minus_lag1": -0.014942416414096688,
+      "bootstrap": {
+        "lag1_mean": 0.025497523652064542,
+        "lag1_se": 0.011761016173023463,
+        "lag2_mean": 0.00967414018584388,
+        "lag2_se": 0.011674831434483867,
+        "diff_mean": -0.01582338346622065,
+        "diff_se": 0.015675788910880683,
+        "n_boot": 200
+      },
+      "mode": "sustain",
+      "expected_mode_pre_test": "unknown"
+    },
+    "S2_botanical_Q4-7": {
+      "label": "S2_botanical_Q4-7",
+      "scribe": "2",
+      "currier": "B",
+      "n_paragraphs": 44,
+      "n_tokens": 2296,
+      "n_folios": 20,
+      "lag1": 0.013303730017762005,
+      "lag2": 0.014782608695652321,
+      "lag2_minus_lag1": 0.0014788786778903162,
+      "bootstrap": {
+        "lag1_mean": 0.013765305374967073,
+        "lag1_se": 0.006645648773374402,
+        "lag2_mean": 0.014250079280765195,
+        "lag2_se": 0.007065851449893198,
+        "diff_mean": 0.0004847739057981196,
+        "diff_se": 0.008154683056407153,
+        "n_boot": 200
+      },
+      "mode": "flat",
+      "expected_mode_pre_test": "flat?"
+    },
+    "S2_balneology_Q13": {
+      "label": "S2_balneology_Q13",
+      "scribe": "2",
+      "currier": "B",
+      "n_paragraphs": 79,
+      "n_tokens": 6166,
+      "n_folios": 19,
+      "lag1": -0.017976835879743747,
+      "lag2": 0.010491844207723013,
+      "lag2_minus_lag1": 0.02846868008746676,
+      "bootstrap": {
+        "lag1_mean": -0.018517069107500034,
+        "lag1_se": 0.0059491463199148305,
+        "lag2_mean": 0.011068760083507531,
+        "lag2_se": 0.006586890327545307,
+        "diff_mean": 0.02958582919100758,
+        "diff_se": 0.009572717533893634,
+        "n_boot": 200
+      },
+      "mode": "period-2",
+      "expected_mode_pre_test": "period-2"
+    },
+    "S2_rose_obverse_Q14": {
+      "label": "S2_rose_obverse_Q14",
+      "scribe": "2",
+      "currier": "B",
+      "n_paragraphs": 11,
+      "n_tokens": 396,
+      "n_folios": 2,
+      "lag1": -0.014675324675324616,
+      "lag2": 0.00727272727272765,
+      "lag2_minus_lag1": 0.021948051948052265,
+      "bootstrap": {
+        "lag1_mean": -0.016568009568111892,
+        "lag1_se": 0.019253603526914298,
+        "lag2_mean": 0.007671453286005556,
+        "lag2_se": 0.017129447470642795,
+        "diff_mean": 0.024239462854117422,
+        "diff_se": 0.021944082152052874,
+        "n_boot": 200
+      },
+      "mode": "flat",
+      "expected_mode_pre_test": "unknown"
+    },
+    "S3_botanical_Q8_Q16": {
+      "label": "S3_botanical_Q8_Q16",
+      "scribe": "3",
+      "currier": "A",
+      "n_paragraphs": 10,
+      "n_tokens": 866,
+      "n_folios": 4,
+      "lag1": 0.0248364485981307,
+      "lag2": 0.01365839243498812,
+      "lag2_minus_lag1": -0.011178056163142578,
+      "bootstrap": {
+        "lag1_mean": 0.02365208038818794,
+        "lag1_se": 0.010523448056497754,
+        "lag2_mean": 0.012635133179920403,
+        "lag2_se": 0.010606166122392314,
+        "diff_mean": -0.011016947208267546,
+        "diff_se": 0.014459126306436369,
+        "n_boot": 200
+      },
+      "mode": "sustain",
+      "expected_mode_pre_test": "sustain?"
+    },
+    "S3_matched_S_Q18": {
+      "label": "S3_matched_S_Q18",
+      "scribe": "3",
+      "currier": "B",
+      "n_paragraphs": 186,
+      "n_tokens": 6969,
+      "n_folios": 17,
+      "lag1": 0.024155978180745767,
+      "lag2": 0.014580112172199752,
+      "lag2_minus_lag1": -0.009575866008546015,
+      "bootstrap": {
+        "lag1_mean": 0.024896071100849508,
+        "lag1_se": 0.005930778160575948,
+        "lag2_mean": 0.0144921371405697,
+        "lag2_se": 0.005839446672268834,
+        "diff_mean": -0.010403933960279802,
+        "diff_se": 0.008998366355773267,
+        "n_boot": 200
+      },
+      "mode": "sustain",
+      "expected_mode_pre_test": "sustain"
+    },
+    "S3_unmatched_S_Q18": {
+      "label": "S3_unmatched_S_Q18",
+      "scribe": "3",
+      "currier": "B",
+      "n_paragraphs": 60,
+      "n_tokens": 2527,
+      "n_folios": 6,
+      "lag1": 0.0026976084312931494,
+      "lag2": 0.007555047777316233,
+      "lag2_minus_lag1": 0.004857439346023083,
+      "bootstrap": {
+        "lag1_mean": 0.0038483363231879915,
+        "lag1_se": 0.008190527760080835,
+        "lag2_mean": 0.00645942478258053,
+        "lag2_se": 0.008214884933657934,
+        "diff_mean": 0.0026110884593925376,
+        "diff_se": 0.012145992780164944,
+        "n_boot": 200
+      },
+      "mode": "flat",
+      "expected_mode_pre_test": "unknown"
+    }
+  },
+  "mode_clustering": {
+    "flat": [
+      [
+        "S1_herbal_pure_Q1-3",
+        "1",
+        "A",
+        3871
+      ],
+      [
+        "S1_herbal_mixed_Q4-7",
+        "1",
+        "A",
+        3245
+      ],
+      [
+        "S1_Q15_pharma",
+        "1",
+        "A",
+        1384
+      ],
+      [
+        "S2_botanical_Q4-7",
+        "2",
+        "B",
+        2296
+      ],
+      [
+        "S3_unmatched_S_Q18",
+        "3",
+        "B",
+        2527
+      ]
+    ],
+    "sustain": [
+      [
+        "S1_Q17_recipes",
+        "1",
+        "A",
+        1347
+      ],
+      [
+        "S3_botanical_Q8_Q16",
+        "3",
+        "A",
+        866
+      ],
+      [
+        "S3_matched_S_Q18",
+        "3",
+        "B",
+        6969
+      ]
+    ],
+    "period-2": [
+      [
+        "S2_balneology_Q13",
+        "2",
+        "B",
+        6166
+      ]
+    ]
+  },
+  "n_matched_controls": {
+    "S2_botanical_Q4-7_vs_S2_balneology_Q13": {
+      "n_iter": 20,
+      "median_z": 1.7347510740102863,
+      "z_ci80": [
+        0.8936449175974872,
+        2.6848664017803694
+      ],
+      "median_diff": 0.030895637782920773,
+      "n_target": 2296
+    },
+    "S2_botanical_Q4-7_vs_S3_botanical_Q8_Q16": {
+      "n_iter": 20,
+      "median_z": 0.46884536070863597,
+      "z_ci80": [
+        0.04723919886988884,
+        1.4919247987490103
+      ],
+      "median_diff": 0.008951471757424318,
+      "n_target": 866
+    },
+    "S3_matched_S_Q18_vs_S3_unmatched_S_Q18": {
+      "n_iter": 20,
+      "median_z": -0.4208517504048942,
+      "z_ci80": [
+        -1.6234736737715207,
+        0.3500154582434325
+      ],
+      "median_diff": -0.008097465132529421,
+      "n_target": 2527
+    }
+  },
+  "verdict": "READING C WEAKENED: Scribe 2 content flip does not survive N-matching. Original z=-2.05 was N-driven artifact. INDEX-only, no constraint.",
+  "reference_values": {
+    "Voynich_Section_B_r21": -0.65,
+    "Voynich_matched_S_r21": 0.66,
+    "NL_Latin_r21_range": [
+      -0.22,
+      0.05
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "method": "Within-Scribe-3 content comparison (PHASE_702 confirmation)",
+  "partitions_tested": [
+    "botanical_Q8_Q16",
+    "matched_S_Q18",
+    "unmatched_S_Q18"
+  ],
+  "per_partition_results": {
+    "botanical_Q8_Q16": {
+      "label": "botanical_Q8_Q16",
+      "currier_filter": "A",
+      "n_folios_in_partition": 4,
+      "n_folios_with_paragraphs": 4,
+      "n_paragraphs_eligible": 10,
+      "n_tokens": 866,
+      "folios_covered": [
+        "f58r",
+        "f58v",
+        "f96r",
+        "f96v"
+      ],
+      "lag1_excess": 0.025601635514018915,
+      "lag2_excess": 0.013705673758865146,
+      "lag3_excess": -0.0008074162679428013,
+      "r21_regularized": 0.5353436795614174,
+      "lag2_minus_lag1": -0.01189596175515377,
+      "bootstrap": {
+        "r21_mean": 0.5534086381102115,
+        "r21_se": 0.9703320933343184,
+        "r21_ci95": [
+          -0.722282740256604,
+          3.030870681606031
+        ],
+        "lag2_minus_lag1_mean": -0.012297947902653128,
+        "lag2_minus_lag1_se": 0.014674837458549205,
+        "lag2_minus_lag1_ci95": [
+          -0.03838650071891261,
+          0.021641464906913696
+        ],
+        "n_boot": 200
+      }
+    },
+    "matched_S_Q18": {
+      "label": "matched_S_Q18",
+      "currier_filter": "B",
+      "n_folios_in_partition": 17,
+      "n_folios_with_paragraphs": 17,
+      "n_paragraphs_eligible": 186,
+      "n_tokens": 6969,
+      "folios_covered": [
+        "f103r",
+        "f103v",
+        "f106r",
+        "f106v",
+        "f107r",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f112r",
+        "f112v",
+        "f113r",
+        "f113v",
+        "f114r",
+        "f114v",
+        "f115r",
+        "f115v",
+        "f116r"
+      ],
+      "lag1_excess": 0.024332153914197335,
+      "lag2_excess": 0.014454297407912552,
+      "lag3_excess": 0.0013874590547495044,
+      "r21_regularized": 0.5940410149830079,
+      "lag2_minus_lag1": -0.009877856506284782,
+      "bootstrap": {
+        "r21_mean": 0.6386845047180095,
+        "r21_se": 0.31433314336479373,
+        "r21_ci95": [
+          0.18648789424730605,
+          1.4089769196625956
+        ],
+        "lag2_minus_lag1_mean": -0.010151195105947884,
+        "lag2_minus_lag1_se": 0.008629907027613478,
+        "lag2_minus_lag1_ci95": [
+          -0.025477108580440475,
+          0.006627401026586429
+        ],
+        "n_boot": 200
+      }
+    },
+    "unmatched_S_Q18": {
+      "label": "unmatched_S_Q18",
+      "currier_filter": "B",
+      "n_folios_in_partition": 6,
+      "n_folios_with_paragraphs": 6,
+      "n_paragraphs_eligible": 60,
+      "n_tokens": 2527,
+      "folios_covered": [
+        "f104r",
+        "f104v",
+        "f105r",
+        "f105v",
+        "f107v",
+        "f111v"
+      ],
+      "lag1_excess": 0.00214430482367237,
+      "lag2_excess": 0.007251765683423413,
+      "lag3_excess": 0.012328504473796216,
+      "r21_regularized": 1.4503531366846825,
+      "lag2_minus_lag1": 0.005107460859751042,
+      "bootstrap": {
+        "r21_mean": 0.2381946034422457,
+        "r21_se": 2.124472843013569,
+        "r21_ci95": [
+          -4.015976035946084,
+          4.228358684399178
+        ],
+        "lag2_minus_lag1_mean": 0.006979997295198342,
+        "lag2_minus_lag1_se": 0.012234624774709275,
+        "lag2_minus_lag1_ci95": [
+          -0.017362527202705272,
+          0.03235663412273347
+        ],
+        "n_boot": 200
+      }
+    }
+  },
+  "pairwise_z_tests": {
+    "botanical_Q8_Q16_vs_matched_S_Q18": {
+      "diff_lag2_minus_lag1": -0.0021467527967052435,
+      "pooled_SE": 0.017024281181303703,
+      "z": -0.12609946780383519
+    },
+    "botanical_Q8_Q16_vs_unmatched_S_Q18": {
+      "diff_lag2_minus_lag1": -0.01927794519785147,
+      "pooled_SE": 0.019105938810034143,
+      "z": -1.009002770789101
+    },
+    "matched_S_Q18_vs_unmatched_S_Q18": {
+      "diff_lag2_minus_lag1": -0.017131192401146227,
+      "pooled_SE": 0.014972018524006123,
+      "z": -1.144213946414646
+    }
+  },
+  "verdict": "AMBIGUOUS: max |z| = 1.14. Direction matches Scribe-2 finding but not decisively.",
+  "reference_values": {
+    "Voynich_Section_B_r21": -0.65,
+    "Voynich_matched_S_r21": 0.66
+  }
+}

@@ -1,0 +1,229 @@
+folio,scribe,confidence,notes
+f1r,1,high,Q1 Botanical entirely Scribe 1
+f1v,1,high,Q1
+f2r,1,high,Q1
+f2v,1,high,Q1
+f3r,1,high,Q1
+f3v,1,high,Q1
+f4r,1,high,Q1
+f4v,1,high,Q1
+f5r,1,high,Q1
+f5v,1,high,Q1
+f6r,1,high,Q1
+f6v,1,high,Q1
+f7r,1,high,Q1
+f7v,1,high,Q1
+f8r,1,high,Q1
+f8v,1,high,Q1
+f9r,1,high,Q2 (fol 12 lacking)
+f9v,1,high,Q2
+f10r,1,high,Q2
+f10v,1,high,Q2
+f11r,1,high,Q2
+f11v,1,high,Q2
+f13r,1,high,Q2
+f13v,1,high,Q2
+f14r,1,high,Q2
+f14v,1,high,Q2
+f15r,1,high,Q2
+f15v,1,high,Q2
+f16r,1,high,Q2
+f16v,1,high,Q2
+f17r,1,high,Q3
+f17v,1,high,Q3
+f18r,1,high,Q3
+f18v,1,high,Q3
+f19r,1,high,Q3
+f19v,1,high,Q3
+f20r,1,high,Q3
+f20v,1,high,Q3
+f21r,1,high,Q3
+f21v,1,high,Q3
+f22r,1,high,Q3
+f22v,1,high,Q3
+f23r,1,high,Q3
+f23v,1,high,Q3
+f24r,1,high,Q3
+f24v,1,high,Q3
+f25r,1,high,Q4 bifolium 25/32
+f25v,1,high,Q4
+f26r,2,high,Q4 bifolium 26/31
+f26v,2,high,Q4
+f27r,1,high,Q4 bifolium 27/30
+f27v,1,high,Q4
+f28r,1,high,Q4 bifolium 28/29
+f28v,1,high,Q4
+f29r,1,high,Q4
+f29v,1,high,Q4
+f30r,1,high,Q4
+f30v,1,high,Q4
+f31r,2,high,Q4
+f31v,2,high,Q4
+f32r,1,high,Q4
+f32v,1,high,Q4
+f33r,2,high,Q5 bifolium 33/40
+f33v,2,high,Q5
+f34r,2,high,Q5 bifolium 34/39
+f34v,2,high,Q5
+f35r,1,high,Q5 bifolium 35/38
+f35v,1,high,Q5
+f36r,1,high,Q5 bifolium 36/37
+f36v,1,high,Q5
+f37r,1,high,Q5
+f37v,1,high,Q5
+f38r,1,high,Q5
+f38v,1,high,Q5
+f39r,2,high,Q5
+f39v,2,high,Q5
+f40r,2,high,Q5
+f40v,2,high,Q5
+f41r,5,high,Q6 bifolium 41/48 -- Scribe 5 (previously unnoticed)
+f41v,5,high,Q6
+f42r,1,high,Q6 bifolium 42/47
+f42v,1,high,Q6
+f43r,2,high,Q6 bifolium 43/46
+f43v,2,high,Q6
+f44r,1,high,Q6 bifolium 44/45
+f44v,1,high,Q6
+f45r,1,high,Q6
+f45v,1,high,Q6
+f46r,2,high,Q6
+f46v,2,high,Q6
+f47r,1,high,Q6
+f47v,1,high,Q6
+f48r,5,high,Q6
+f48v,5,high,Q6
+f49r,1,high,Q7 bifolium 49/56
+f49v,1,high,Q7
+f50r,2,high,Q7 bifolium 50/55
+f50v,2,high,Q7
+f51r,1,high,Q7 bifolium 51/54
+f51v,1,high,Q7
+f52r,1,high,Q7 bifolium 52/53
+f52v,1,high,Q7
+f53r,1,high,Q7
+f53v,1,high,Q7
+f54r,1,high,Q7
+f54v,1,high,Q7
+f55r,2,high,Q7
+f55v,2,high,Q7
+f56r,1,high,Q7
+f56v,1,high,Q7
+f57r,5,high,Q8 - Scribe 5 wrote 57r/66r/66v
+f57v,1,medium,Q8 - Scribe 1 (per Davis); too little text reliable per her own caveat
+f58r,3,high,Q8 bifolium 58/65
+f58v,3,high,Q8
+f65r,3,high,Q8 bifolium 58/65
+f65v,3,high,Q8
+f66r,5,high,Q8
+f66v,5,high,Q8
+f67r1,4,high,Q9 Zodiac/Astronomy
+f67r2,4,high,Q9
+f67v1,4,high,Q9
+f67v2,4,high,Q9
+f68r1,4,high,Q9
+f68r2,4,high,Q9
+f68r3,4,high,Q9
+f68v1,4,high,Q9
+f68v2,4,high,Q9
+f68v3,4,high,Q9
+f69r,4,high,Q10
+f69v,4,high,Q10
+f70r1,4,high,Q10
+f70r2,4,high,Q10
+f70v1,4,high,Q10
+f70v2,4,high,Q10
+f71r,4,high,Q11
+f71v,4,high,Q11
+f72r1,4,high,Q11
+f72r2,4,high,Q11
+f72r3,4,high,Q11
+f72v1,4,high,Q11
+f72v2,4,high,Q11
+f72v3,4,high,Q11
+f73r,4,high,Q12 (fol 74 lacking)
+f73v,4,high,Q12
+f75r,2,high,Q13 Balneology
+f75v,2,high,Q13
+f76r,2,high,Q13
+f76v,2,high,Q13
+f77r,2,high,Q13
+f77v,2,high,Q13
+f78r,2,high,Q13
+f78v,2,high,Q13
+f79r,2,high,Q13
+f79v,2,high,Q13
+f80r,2,high,Q13
+f80v,2,high,Q13
+f81r,2,high,Q13
+f81v,2,high,Q13
+f82r,2,high,Q13
+f82v,2,high,Q13
+f83r,2,high,Q13
+f83v,2,high,Q13
+f84r,2,high,Q13
+f84v,2,high,Q13
+f85r1,2,high,Q14 Rose foldout - obverse 6 panels
+f85r2,2,high,Q14
+f86v3,4,medium,Q14 Rose foldout - 9-segment side (apparently but not definitely Scribe 4 per Davis)
+f86v4,4,medium,Q14
+f86v5,4,medium,Q14
+f86v6,4,medium,Q14
+f87r,1,high,Q15 Botanical-Pharma nested foldout
+f87v,1,high,Q15
+f88r,1,high,Q15
+f88v,1,high,Q15
+f89r1,1,high,Q15
+f89r2,1,high,Q15
+f89v1,1,high,Q15
+f89v2,1,high,Q15
+f90r1,1,high,Q15
+f90r2,1,high,Q15
+f90v1,1,high,Q15
+f90v2,1,high,Q15
+f93r,1,medium,Q16 - outermost bifolium Scribe 1 (per Davis; folio assignment to bifolium uncertain from OCR)
+f93v,1,medium,Q16
+f94r,3,medium,Q16 - inner bifolium Scribe 3 (uncertain folio assignment)
+f94v,3,medium,Q16
+f95r1,3,medium,Q16
+f95r2,3,medium,Q16
+f95v1,3,medium,Q16
+f95v2,3,medium,Q16
+f96r,3,medium,Q16
+f96v,3,medium,Q16
+f99r,1,high,Q17 Recipes nested foldouts
+f99v,1,high,Q17
+f100r,1,high,Q17
+f100v,1,high,Q17
+f101r1,1,high,Q17
+f101r2,1,high,Q17
+f101v1,1,high,Q17
+f101v2,1,high,Q17
+f102r1,1,high,Q17
+f102r2,1,high,Q17
+f102v1,1,high,Q17
+f102v2,1,high,Q17
+f103r,3,high,Q18 Starred paragraphs
+f103v,3,high,Q18
+f104r,3,high,Q18
+f104v,3,high,Q18
+f105r,3,high,Q18
+f105v,3,high,Q18
+f106r,3,high,Q18
+f106v,3,high,Q18
+f107r,3,high,Q18
+f107v,3,high,Q18
+f108r,3,high,Q18
+f108v,3,high,Q18
+f111r,3,high,Q18 (fols 109-110 lacking)
+f111v,3,high,Q18
+f112r,3,high,Q18
+f112v,3,high,Q18
+f113r,3,high,Q18
+f113v,3,high,Q18
+f114r,3,high,Q18
+f114v,3,high,Q18
+f115r,3,split,Q18 - first 12 lines Scribe 2 then Scribe 3 takes over
+f115v,3,high,Q18
+f116r,3,high,Q18
+f116v,3,high,Q18

@@ -1,0 +1,1412 @@
+ate) 
+
+
+Libraries _) ; : 
+Ph UNIVERSITY of PENNSYLVANIA Manuscript Studies 
+
+
+
+
+
+Volume 5 | Issue 1 Article 6 
+
+
+How Many Glyphs and How Many Scribes? Digital Paleography 
+and the Voynich Manuscript 
+
+
+Lisa Fagin Davis 
+Medieval Academy of America, lfd@themedievalacademy.org 
+
+
+Follow this and additional works at: https://repository.upenn.edu/mss_sims 
+
+
+Go Part of the Digital Humanities Commons, and the Medieval Studies Commons 
+
+
+Recommended Citation 
+
+Davis, Lisa Fagin () "How Many Glyphs and How Many Scribes? Digital Paleography and the Voynich 
+Manuscript," Manuscript Studies: Vol. 5: Iss. 1, Article 6. 
+
+Available at: https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+This paper is posted at ScholarlyCommons. https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+For more information, please contact repository@pobox.upenn.edu. 
+
+
+How Many Glyphs and How Many Scribes? Digital Paleography and the Voynich 
+Manuscript 
+
+
+Abstract 
+
+It can be safely claimed that there is no medieval script that has been seen, analyzed, and debated more 
+than that of the mysterious and as-yet-unread Voynich Manuscript (Beinecke MS 408). For centuries, 
+bibliophiles, linguists, codicologists, art historians, and amateur cryptologists have pored over the 
+manuscript, examining it from every angle, debating every wormhole, arguing over every stain and crease. 
+Some things we know: the invented script is comprised of carefully-written glyphs without precedent or 
+obvious model; forensic material evidence has determined that the parchment, ink, and pigments date 
+from the early 15th century; the provenance trail is nearly unbroken from the seventeenth century to today. 
+But we still don’t know how to read it, in spite of new theories flying across the internet on a near-weekly 
+basis. “Voynichologists” disagree as to some of the most important and basic questions about the 
+manuscript. How many letterforms are there? How many scribes can be identified? Are there ligatures, 
+majuscules, abbreviations, and other scribal conventions? These questions have never been satisfactorily 
+answered. Using digital paleographic methodologies including the Archetype (DigiPal) application and 
+other annotation tools, this project will revisit the paleographic analyses of the Voynich glyphs to propose 
+answers to some of these questions and discuss how these answers open avenues for further research. 
+
+
+Keywords 
+paleography, codicology, Voynich manuscript, cryptology, Beinecke Rare Book and Manuscript Library, 
+Manuscript Studies 
+
+
+This annotations is available in Manuscript Studies: htips://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+MANUSCRIPT STUDIES 
+
+
+A Journal of the Schoenberg Institute for Manuscript Studies 
+
+
+VOLUME 5, NUMBER 1 
+
+
+(Spring 2020) 
+
+
+Manuscript Studies (ISSN 2381-5329) is published semiannually 
+by the University of Pennsylvania Press 
+
+
+The Schoenberg Institute 
+for Manuscript Studies 
+
+
+UNIVERSITY Of PENNSYLVANIA LIBRARIES 
+
+
+
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+
+
+MANUSCRIPT STUDIES 
+
+
+VOLUME 5, NUMBER 1 
+(Spring 2020) 
+
+
+ISSN 2381-5329 
+
+
+Copyright © 2020 University of Pennsylvania Libraries 
+and University of Pennsylvania Press. All rights reserved. 
+
+
+Published by the University of Pennsylvania Press, 
+3905 Spruce Street, Philadelphia, PA 19104. 
+
+
+Printed in the U.S.A. on acid-free paper. 
+
+
+Manuscript Studies brings together scholarship from around the world and across disciplines 
+related to the study of premodern manuscript books and documents, with a special emphasis 
+on the role of digital technologies in advancing manuscript research. Articles for submission 
+should be prepared according to the Chicago Manual of Style, 16" edition, and follow the style 
+guidelines found at http://mss.pennpress.org. 
+
+
+None of the contents of this journal may be reproduced without prior written consent of the 
+University of Pennsylvania Press. Authorization to photocopy is granted by the University of 
+Pennsylvania Press for libraries or other users registered with Copyright Clearance Center 
+(CCC) Transaction Reporting Service, provided that all required fees are verified with CCC 
+and paid directly to CCC, 222 Rosewood Drive, Danvers, MA 01923. This consent does not 
+extend to other kinds of copying for general distribution, for advertising or promotional pur- 
+poses, for creating new collective works, for database retrieval, or for resale. 
+
+
+2020 SUBSCRIPTION INFORMATION: 
+
+Single issues: $30 
+
+Print and online subscriptions: Individuals: $40; Institutions: $94; Full-time Students: $30 
+International subscribers, please add $19 per year for shipping. 
+
+Online-only subscriptions: Individuals: $32; Institutions: $82 
+
+
+Please direct all subscription orders, inquiries, requests for single issues, address changes, and 
+other business communications to Penn Press Journals, 3905 Spruce Street, Philadelphia, PA 
+19104. Phone: 215-573-1295. Fax: 215-746-3636. Email: journals@pobox.upenn.edu. Prepay- 
+ment is required. Orders may be charged to MasterCard, Visa, and American Express credit 
+cards. Checks and money orders should be made payable to “University of Pennsylvania 
+Press” and sent to the address printed directly above. 
+
+
+One-year subscriptions are valid January 1 through December 31. Subscriptions received after 
+October 31 in any year become effective the following January 1. Subscribers joining midyear 
+receive immediately copies of all issues of Manuscript Studies already in print for that year. 
+
+
+Postmaster: send address changes to Penn Press Journals, 3905 Spruce Street, Philadelphia, 
+PA 19104. 
+
+
+Visit Manuscript Studies on the web at mss.pennpress.org. 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+MANUSCRIPT STUDIES 
+
+
+A Journal of the Schoenberg Institute for Manuscript Studies 
+
+
+VOLUME §5, NUMBER 1 
+
+
+Yemeni Manuscripts Online: Digitization in an Age 
+of War and Loss 
+
+
+Nancy UM 1 
+
+
+Opening the Text in the Floreffe Bible (London, BL Add. MS 
+17738): From Ways of Seeing to Ways of Touching 
+
+
+DOMINIC MARNER 45 
+
+
+Litterae florissae in English Manuscripts in the Late Twelfth/ 
+Early Thirteenth Century 
+
+
+SARA CHARLES 79 
+
+
+The Durham Latin Prose “Brut” to 1347 with a Continuation 
+to 1348: A Nationalistic Chronicle of England and Its 
+Manuscripts 
+
+
+TREVOR RUSSELL SMITH 120 
+
+
+A Brief Introduction to Seventeenth-Century Military 
+Manuscripts and Military Literacy 
+
+
+LUCIAN STAIANO-DANIELS 142 
+
+
+Annotations 
+
+
+How Many Glyphs and How Many Scribes? Digital 
+Paleography and the Voynich Manuscript 
+Lisa FaGIN Davis 164 
+
+
+In the Orbit of the Sphere: Sacrobosco’s De sphaera mundi in 
+
+
+UPenn MS Codex 1881 
+
+
+AYLIN MALCOLM 181 
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+
+
+iv | JouURNAL FOR MANUSCRIPT STUDIES 
+
+
+Reviews 
+
+
+Erik Kwakkel and Rodney Thompson, eds. The European 
+Book in the Twelfth Century. 
+
+
+JOANNA FRONSKA 203 
+
+
+Paul M. Love, Jr. Ibadi Muslims of North Africa: Manuscripts, 
+Mobilization, and the Making of a Written Tradition. 
+
+
+AMANDA PROPST 206 
+
+
+Jeffrey F. Hamburger, Robert Suckale, and Gude Suckale- 
+Redlefsen, eds. Painting the Page in the Age of Print: Central 
+European Manuscript Illumination of the Fifteenth Century. 
+
+
+GREGORY CLARK 210 
+
+
+Erik Kwakkel, ed. Vernacular Manuscript Culture, 1000-1500. 
+
+
+HaNnnaH Morcos 214 
+
+
+Gaudenz Freuler. The McCarthy Collection, Volume I: 
+Italian and Byzantine Miniatures. 
+
+
+BRYAN C. KEENE 218 
+
+
+List of Manuscripts Cited 223 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+How Many Glyphs and How Many Scribes? 
+Digital Paleography and the Voynich Manuscript 
+
+
+Lisa FAGIN Davis 
+Medieval Academy of America 
+
+
+HERE IS NO MEDIEVAL manuscript that has been seen, studied, 
+
+analyzed, and debated more than the mysterious and as-yet-unread 
+
+Voynich Manuscript (Yale University, Beinecke Rare Book and 
+Manuscript Library MS 408).! The manuscript is so infamous that medie- 
+valists and other scholars have been conditioned to roll their eyes when the 
+very name is mentioned. It is easy to forget that underneath the media 
+buzz and unsubstantiated theories lies an actual medieval object well wor- 
+thy of study, six hundred years old, with a lengthy and fascinating recorded 
+history.” 
+
+
+
+
+
+The preliminary results of this ongoing study were presented at the 2019 International Con- 
+gress on Medieval Studies (Kalamazoo, Michigan). 
+
+1 See https://beinecke.library-yale.edu/collections/highlights/voynich-manuscript (accessed 
+24 May 2019) for documentation, description, bibliography, and a full set of open-access, high- 
+resolution images. 
+
+2 Barbara Shailor, Catalogue of Medieval and Renaissance Manuscripts in the Beinecke Rare 
+Book and Manuscript Library, Yale University, Vol. 2: MSS 251-500 (Binghamton, NY: Medi- 
+eval & Renaissance Texts & Studies, 1987), 303-7 (available at https://pre1600ms.beinecke. 
+library.yale.edu/docs/pre1600.ms408.HTM, accessed 24 May 2019); Seymour De Ricci and 
+W. J. Wilson, Census of Medieval and Renaissance Manuscripts in the United States and Canada 
+(New York: Bibliographical Society of America, 1937), 2:1146-47; René Zandbergen, “Earli- 
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 165 
+
+
+The Voynich Manuscript is written using an otherwise unknown collec- 
+tion of symbols known as “Voynichese,” with linguistically identifiable 
+roots, prefixes, and suffixes, as well as repeating orthographic and gram- 
+matical patterns. Recent linguistic analyses suggest that Voynichese repre- 
+sents a natural—and as yet unidentified—human language; it is not 
+gibberish, and it is not an invented language like Elvish or Klingon.’ The 
+appeal of the Voynich is amplified by its illustrations, which include uniden- 
+tifiable but detailed and realistic plants, circular zodiacal and astronomical 
+diagrams, crowned nude women bathing in green or blue pools, and other 
+illustrations that defy description. 
+
+For centuries, bibliophiles, linguists, codicologists, art historians, and 
+cryptologists both professional and amateur have pored over the manuscript 
+and its images, examining it from every angle, debating every pen- and 
+brushstroke, arguing over every wormhole, stain, and crease. Some of the 
+greatest cryptological minds and mathematicians of the twentieth and 
+twenty-first centuries have devoted years, even decades, to the codex.‘ 
+Enormous computing power has been devoted to linguistic analysis, in 
+efforts to discern patterns that might point toward a particular encoded 
+language. The lack of decryption success has led some to believe it to be 
+gibberish, an elaborate hoax. Others believe that the mysterious glyphs 
+represent a phonemic transcription of an unwritten medieval language, as 
+opposed to an encoded written language. Dozens of solutions have been 
+proposed in the past century alone, most of them more aspirational than 
+they are substantive. The first formal published solution, in the 1920s, 
+argued that the Voynich was written by Roger Bacon.° Others have credited 
+it to Leonardo da Vinci, or claimed that the manuscript is European but 
+
+
+
+
+
+est Owners,” in The Voynich Manuscript, ed. Raymond Clemens (New Haven, CT: Yale Uni- 
+versity Press, 2016), 3-9. 
+
+3. Marcelo A. Montemurro and Damian H. Zanette, “Keywords and Co-Occurrence Pat- 
+terns in the Voynich Manuscript: An Information-Theoretic Analysis,” in PLoS ONE 8, 
+no. 6: e66344, https://doi.org/10.1371/journal.pone.0066344 (accessed 25 May 2019). 
+
+4 William Sherman, “Cryptographic Attempts,” in The Voynich Manuscript, ed. Clemens, 
+39-44. 
+
+5 William Romaine Newbold and Roland G. Kent, The Cipher of Roger Bacon (Philadel- 
+phia: University Press, 1928). 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+166 | JouRNAL FOR MANUSCRIPT STUDIES 
+
+
+the plants are Mesoamerican. Recent chemical analyses, however, concluded 
+that the oak gall ink and the mineral and botanical pigments are consistent 
+with medieval recipes, and carbon-14 analysis has dated the parchment to 
+between 1404 and 1438.° That rules out Roger Bacon (who was already 
+dead), da Vinci (who had not been born), and post-contact Mesoamerica. 
+
+“Voynichologists” disagree as to some of the most important and 
+basic questions about the manuscript. How many letterforms are there? 
+How many scribes can be identified? Are there ligatures, majuscules, abbre- 
+viations, and other scribal conventions? These questions have never been 
+satisfactorily answered. This paper will present the preliminary results of a 
+formal paleographic analysis of the Voynich Manuscript using traditional 
+methodologies as well as digital tools such as the Archetype (DigiPal) 
+application, VisColl, and the Mirador shared-canvas viewer. 
+
+Efforts to analyze the text of the Voynich involve analyses of letter fre- 
+quency and combinations, as well as the identification of roots, prefixes, 
+interfixes, and suffixes. Computers are unable to parse these unique glyphs, 
+so Voynichologists have developed various systems of Roman-letter and 
+-symbol substitutions for Voynich characters to facilitate computational 
+analytics. The most commonly used substitution scheme is the Extensible 
+Voynich Alphabet (EVA), a relatively small character set that combines 
+basic components to create some of the more complicated symbols.’ The 
+substitution scheme known as v101 is much more expansive, and there is 
+some debate in Voynichology circles about which of the half-dozen substi- 
+tution schemes is most useful. The results of any analysis depend on which 
+substitution is used, and the results of linguistic analyses can vary signifi- 
+cantly from one system to another. In other words, in Voynich studies, as in 
+everything else, methodology matters. 
+
+In the 1970s, Captain Prescott Currier discerned two different patterns 
+of letter frequency and glyph combinations on different sets of leaves. He 
+
+
+
+
+
+6 See letter from Joseph Barabe, Senior Research Microscopist and Director of Scientific 
+Imaging, McCrone Associates, Inc., to Kevin Rupp, Curator of Modern European Books 
+and Manuscripts, available at https://beinecke.library.yale.edu/sites/default/files/files/voynich 
+_analysis.pdf (accessed 24 May 2019). 
+
+7 See René Zandbergen, “Text Analysis—Transliteration of the Text,” at http://voynich.nu/ 
+transcr.html (accessed 24 May 2019) for details on the various substitution systems. 
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 167 
+
+
+
+
+
+= = Voynich Manuscript Der 
+
+
+
+
+
+FIGURE 1. BRBL MS 408, fols. 31v (Scribe 2) and 32r (Scribe 1). 
+
+
+called these Language A and Language B (it would be more conservative to 
+use “dialect” instead of “language,” and so that is the term used below).® 
+Currier also, quite correctly, discerned two primary hands at work in the 
+first—the botanical—section of the manuscript, Scribe 1 and Scribe 2, not- 
+ing a direct correlation between Dialect A and Scribe 1, and Dialect B and 
+Scribe 2. The distinction between Scribe 1 and Scribe 2 is quite obvious—in 
+figure 1, for example (consecutive pages 31v and 32r), Scribe 2 and Scribe 1 
+are easily distinguishable, with Scribe 2 on the left and Scribe 1 on the 
+right. He attempted to identify the hands elsewhere in the manuscript, but 
+his work beyond the botanical section is incomplete, halfhearted, and 
+somewhat unconvincing, and no trained paleographer or codicologist has 
+revisited the relationship between scripts, dialects, and structure in the 
+Voynich Manuscript since Currier publicized his observations in the 1970s. 
+Currier himself once said that he was not entirely certain about his conclu- 
+sions and that the problem required the attention of a trained paleographer.’ 
+The world’s acknowledged expert on the manuscript, René Zandbergen, 
+has also put out the call for an “expert paleographer” to address the question 
+
+
+
+
+
+8  Currier’s unpublished work is available at http://www.voynich.nu/extra/curr_main.html 
+(accessed 24 May 2019). 
+
+9 See “Questions and Discussion” at http://www.voynich.nu/extra/curr_main.html (accessed 
+24 May 2019). 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+168 | JOURNAL FOR MANUSCRIPT STUDIES 
+
+
+of scripts and scribes.'° This was the motivation for the present project, 
+undertaken by a trained medieval paleographer/codicologist. 
+
+The discipline of paleography involves three skill sets: (1) understanding 
+the history of particular styles of script in order to establish date and place 
+of origin (attribution); (2) learning how to read letterforms and expand 
+abbreviations in different scripts (literacy); and (3) studying graphic features 
+of letterforms as well as general script characteristics in order to classify and 
+distinguish different hands (description). As far as the Voynich is concerned, 
+numbers 1 and 2 cannot be accomplished. The development of this script 
+cannot be studied because this is the only known example. And no one is 
+capable of reading it, as of yet. What of number 3, description? Due to its 
+unique nature, the Voynich presents an interesting paleographical problem, 
+from a theoretical as well as a practical perspective. Can the methods and 
+methodologies of Latin paleography be applied to the unique glyph set of 
+the Voynich Manuscript? Using an application called Archetype, they can."! 
+
+Archetype is an online tool for digital paleography that combines image 
+annotation with a customizable data model and a powerful search engine. 
+One of the fundamental principles of the Archetype model is that each 
+annotated character must be attached to a predefined character tag, using 
+machine-readable letters and symbols that can then be made discoverable. 
+The Voynich glyphs are not machine-readable, so one of the substitution 
+schemes needs to be chosen to provide the discoverable tag set. 
+
+It is important to at least acknowledge the question underlying the dis- 
+tinction between EVA, v101, and other transcription systems: How many 
+distinct characters are there in Voynichese? It is not entirely obvious. The 
+most common characters establish a basic set of around thirty (see fig. 2 for 
+the thirty-four most common, established by counting occurrences in the 
+v101 transcription). These are glyphs with an occurrence frequency rang- 
+ing from 15 percent down to 0.1 percent. This is a similar frequency range 
+to that found in English, where [e] has a frequency of around 12 percent, 
+
+
+
+
+
+10 See http://voynich.nu/writing. html#handwr (accessed 24 May 2019). 
+11 See https://archetype.ink (accessed 24 May 2019). 
+12 Available at http://www.voynich.nu/data/voyn_101.txt (accessed 24 May 2019). 
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 169 
+
+
+
+
+
+Grapheme Frequency, V101 
+
+
+sg 
+If 
+
+
+16.0000% 
+14.0000% 
+12.0000% 
+
+
+ia — » oO 
+ce 
+
+
+~ w + . 
+
+
+& 3 a 
+§ ct 
+w ul 
+be : 
+on. = 
+
+
+© Fa cag 8 FQ fH+tweu sc 2 vg deo Pee 2qeum rs £ Pw 
+
+
+10,0000% 
+
+
+8.0000% 
+
+
+6.0000% 
+
+
+4.0000% 
+
+
+2.0000% 
+
+
+0.0000% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIGURE 2. Voynichese grapheme frequency (using v101 transcription). 
+
+
+and [z], 0.07 percent. This group tends to be included in any glyph set. But 
+the full glyph set includes another fifteen to twenty very rare symbols, such 
+as those circled in red in figure 3. How should these be counted? Are they 
+variants of more common glyphs? Are they numbers or abbreviations? And 
+what of the common “bench-gallows” glyphs, in which et is combined 
+with a “gallows” character such as If to create d? Are they distinct letter- 
+forms, bigraphs, ligatures, abbreviations? EVA considers them bigraphs, 
+like [qu] or [ch], while vl101 considers them to be separate and distinct 
+glyphs, giving v101 a larger glyph set than EVA. For linguistic computational 
+analyses, the choice of substitution scheme is extremely important and will 
+directly impact the outcome. Because EVA, the Extensible Voynich Alpha- 
+bet, is composed of elements of glyphs that must be combined to establish 
+the correct substitutions, combinations that may require multiple Roman 
+letters or symbols, it is not an appropriate choice for Archetype. V101, the 
+more expansive substitution scheme, is a better fit for the needs of the 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+170 | JouRNAL FOR MANUSCRIPT STUDIES 
+
+
+
+
+
+FIGURE 3. BRBL MS 408, fol. 57v detail. 
+
+
+Archetype data model and was adopted for the present project, Voynich- 
+Pal (fig. 4)."° 
+
+Archetype allows users to annotate images with discoverable facets, then 
+search for annotations on combinations of those facets, pulling the result- 
+ing annotations out of their images and into a lightbox where they can be 
+studied and manipulated. When applied to the Voynich Manuscript, this 
+methodology facilitates the identification of which hands wrote on which 
+leaves, which bifolia, which quires, and which sections, and allows for an 
+analysis of how, and if, different scribes collaborated. I initially annotated 
+several different characters, but, after spending some time looking closely at 
+different glyphs, I decided to focus initially on the single-loop gallows glyph 
+that, in v101, is arbitrarily called “h” (the substitutions rarely have a seman- 
+tic correspondence to the relevant glyph but are for convenience only). Once 
+the annotations were complete, I used the faceted search to study the anno- 
+tated [h] characters by comparing unknown hands with known samples 
+such as Scribe 1 and Scribe 2. I could then select annotations of particular 
+
+
+
+
+
+13. This particular Archetype project is not available online but is housed on the author’s 
+computer as a Docker image. 
+
+
+Published by ScholarlyCommons, 
+
+
+11 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 171 
+
+
+
+
+
+VoynichPal 
+
+
+ft = Search — My Collection (40 Eal) 
+
+
+Q 
+
+
+Manuscript Image: BRBL MS 408: 93V (ecit in admin 
+
+
+
+
+
+(=) Annotations (16)  Hands(1)  Texts(0) — OtherImages (43) | Document —_ image Copyright 
+9 
+Q Annotations XJ Y Unsaved [J fo = 2 y @0 
+a 
+es — 
+? if ‘ os is i 
+- a ledeecods) fees aehote i oe Baia 3 e ae Afenees OS) ceo geri) 
+‘ giteco¥s avileds 4cffceor Pe: i 2 alte fad B 502 Set 
+x fev? cro8s qocieo alfy aig eee alt @ e ee ae? ol 
+tu Ap itceos9 exo! &. > exo Bay 
+Pe cok cxok 49, » Bh 9 oa 
+fevel i. oy ail L008 creas Been§ 2 ee eer ei 
+iz jteome oe ae zy ‘erly ns, S| fg? a a 
+ced ctfewod ee foese ee dfeewe W \ “elo deie Ae 
+Pies eg 
+
+
+
+
+
+
+
+
+is exo pis cag oe] allceey cireeo a 
+fis o8treroSR Arete digg oe gk 99 Revco, 5 heox og is 2a Baw 
+E gered ced olfen OP ceecag . 7 Zz f v4 
+
+
+FIGURE 4. VoynichPal. 
+
+
+
+
+
+interest to form a “Collection” and then send them from the Collection to 
+the Lightbox. In the Lightbox, the annotations can be resized, labeled, 
+manipulated, rotated, and sorted, resulting in the collection shown in fig- 
+ure 5, where [h]s sharing particular paleographical features have been grouped 
+together. 
+
+
+
+
+
+No images selected 
+
+
+Opacity 
+
+
+Brightness 
+
+
+Rotate 
+
+
+Size 
+
+
+
+
+
+FIGURE 5. VoynichPal Lightbox. 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 12 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+172 | JOURNAL FOR MANUSCRIPT STUDIES 
+
+
+Loop: round or oval? Weiter ielateli 
+
+
+rd 
+
+
+Feet Crossbar: bowed fo) mm ae)ayde)a)t-| ita 
+©] WV70) axe) al-me) ma AWYem-jige) (oie 
+
+
+
+
+
+FIGURE 6. Paleographically significant features. 
+
+
+As in Latin or vernacular paleography, the ductus of each variant of 
+the character must be considered, determining and distinguishing features 
+that are unique to each hand. The pertinent questions about the [h]—for 
+example—might be as follows (fig. 6): 
+
+
+¢ Are there feet at the bottom of either vertical? 
+
+« Are the vertical strokes in fact vertical, or are they written at a slight 
+angle? 
+
++ Is the glyph formed by one or two strokes? 
+
++ Is the crossbar bowed, or is it horizontal? This is directly related to the 
+previous question, since a bowed bar tends to result from a smooth 
+directional change from the top of the first vertical, while a horizontal 
+crossbar is the result of lifting the quill after completing the vertical. 
+
+
++ Is the loop large or small, round or oval? 
+
+
+My preliminary results identify five hands—the two defined by Prescott 
+Currier as Scribe 1 and Scribe 2, and three more, designated Scribe 3, Scribe 
+4, and Scribe 5. Two glyphs—circled in figure 7—will serve to distinguish 
+between them. The [h] character in Scribe 1 is distinguished by a sharp 
+angle at the top of the first vertical as the quill changes direction, a bowed 
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 173 
+
+
+crossbar, a round loop, and a very slight foot at the base of the second verti- 
+cal. The word-end [m] and [n] glyphs conclude with a backward flourish 
+that stretches as far as the penultimate minim. Scribe 2 is more cramped 
+than Scribe 1, with a slightly slanted character. This scribe uses a horizon- 
+tal, straight crossbar, an oval loop, and an upwardly angled final tick. The 
+final backstroke of [m] and [n] is short, barely passing the final minim. The 
+[h] written by Scribe 3 is similar to that of Scribe 1, although slightly more 
+compact. The final stroke of [m] and [n] curves back on itself, nearly touch- 
+ing the top of the final minim. The [h] written by Scribe 4 has a perpen- 
+dicular crossbar, an oversize loop, and a prominent final foot. The final 
+stroke of [m] and [n] is tall, with only a slight curvature. For Scribe 5, the 
+[h] is tall and narrow, with a bowed cross-stroke that begins at the top of 
+the vertical, and a minuscule tick at the foot of the second vertical. The [m] 
+has a long, low finial that finishes above the penultimate minim. 
+
+In the Voynich Manuscript, scribal output relates directly to both the 
+codicological structure of the manuscript and its textual sections in several 
+different ways that demonstrate the nature of the collaboration between the 
+scribes and that may shed light on the linguistic origins of the manuscript. 
+The Voynich Manuscript is traditionally divided into six thematic sections: 
+
+
+Nec ao 8K eel \\ s6fe9) loco foe aa 
+= ven? Gow : NE 3} fa\ oe Oey i alta q 
+© Hogg roy ae oc \ . fo, . ) Fa f |? offa? &o 
+
+
+Hobe etacFey s A} i c& a ‘| 
+
+
+: a ea 
+
+
+Or a 08 \ 
+
+
+
+
+
+
+
+
+
+
+
+
+faked Lal 
+
+
+<3 
+
+
+
+
+
+
+
+
+
+Rvase & cre 
+airad ie. 3 | 4 
+
+
+peel: 4 296 
+
+
+o8q cree - Se 
+5 olliod 
+Sa me ») Sag oO” 
+} a ok Fe, Site pi ae 
+pee od aa exda Neo Se 
+
+
+FIGURE 7. Voynich scribes and distinctive glyphs. 
+
+
+
+
+
+
+
+
+
+
+2 we Le cece 
+
+
+S 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+174 | JOURNAL FOR MANUSCRIPT STUDIES 
+
+
+botanical, astronomical/astrological, balneological, the “Rose” foldout that 
+defies categorization, recipes, and a textual section in which each paragraph 
+is marked by a marginal star. The collation of the Voynich Manuscript and 
+the identification of the former positions of the fourteen known-to-be- 
+missing leaves are possible because of quiremarks that are slightly later than 
+the manuscript itself and skips in the seventeenth-century foliation, which 
+predates the losses. 
+
+The current structure of the Voynich Manuscript, composed of 116 out 
+of at least 130 leaves, is summarized in this collation formula: 1°, 2°! (lack- 
+ing fol. 12), 3-78, 8'°° (lacking fols. 59-64), 9-11? (foldouts), 127" (lacking 
+fol. 74), 13'°, 14' (nine-panel Rose foldout), 15‘ (nested foldouts), 16°“ (lack- 
+ing fols. 91-92, 97-98), 17* (nested foldouts), 18'*'? (lacking fols. 109-10). It 
+is quite possible that the structure has changed since the manuscript was 
+first written: the codex was rebound in its current limp vellum in the early- 
+modern period (probably in the sixteenth century). In addition, some of the 
+bifolia and single-leaf foldouts can be shown to have been reoriented either 
+before the current foliation was added or after the quiremarks were written. 
+For an example of the former, see the bifolium 78v/81r, where the water- 
+spouts at the left center of folio 78v spill across the gutter to meet corre- 
+sponding streams with coordinating ranks of women in pools on the 
+conjoint folio 81r, suggesting that this bifolium was originally both conjoint 
+and consecutive, serving as the innermost bifolium of the quire (it is cur- 
+rently the second bifolium from the center).'* For the latter, see Quire 9— 
+the foldout that currently comprises folios 67/68—which retains old binding 
+holes in a fold to the right of the quiremark (which is at the bottom of folio 
+67r), a sewing placement that would be consistent with the now-incongruous 
+location of the quiremark." 
+
+The botanical section takes up the first seven quires, each of which 
+comprises four nested bifolia. Currier’s analysis of this section is correct: 
+
+
+
+
+
+14 For fol. 78v, see https://brbl-media library.yale.edu/images/1006215_quarter.jpg; for 
+fol. 81r, see https://brbl-media.library.yale.edu/images/1006220_quarter.jpg (accessed 24 
+May 2019). 
+
+15 See https://brbl-media.library.yale.edu/images/1006194_quarter.jpg (accessed 24 May 
+2019). 
+
+
+Published by ScholarlyCommons, 
+
+
+15 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 175 
+
+
+Quires 1-3 are written entirely by Scribe 1, and Scribes 1 and 2 collaborate 
+on Quires 4-7, with Scribe 5 making a previously unnoticed appearance on 
+one bifolium of Quire 6 (Currier identified this bifolium as having been 
+written by Scribe 2, an attribution that has been universally accepted until 
+now). It was in fact Currier who first observed that, in the botanical section 
+of the manuscript, Scribes 1 and 2 appear not on separate leaves or quires, 
+but on separate bifolia that are mixed together in the quires. In Quire 4, 
+for example, the outermost bifolium (fols. 25/32) was entirely written by 
+Scribe 1, while the next bifolium (fols. 26/31) was written entirely by Scribe 
+2 (fig. 8). This mixing of bifolia continues through the end of Quire 7, folio 
+
+
+
+
+
+Quire 4, Bitotum 25, 32> 
+
+
+
+
+
+| Botanical 
+| Botanical 
+
+
+| Botanical 
+| Botanical 
+
+
+
+
+
+| Botanical 
+| Botanical 
+
+
+| Botanical 
+| Botanical 
+
+
+| Botanical 
+| Botanical 
+
+
+| Botanical 
+| Botanical 
+
+
+| Botanical 
+| Botanical 
+| Botanical 
+| Botanical 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FIGURE 8. Quire 4 visualization (using VisColl). 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+16 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+176 | JOURNAL FOR MANUSCRIPT STUDIES 
+
+
+56. This very unusual collaboration method bears emphasizing: the work of 
+Scribes 1 and 2 (and 5) in the botanical section varies by bifolia—not by 
+page, text, or quire. 
+
+Quire 8 was originally five bifolia, but only the two outermost are extant. 
+Here, we encounter a different method of collaboration: Scribe 1 wrote folio 
+57v, while Scribe 5 wrote the other three pages of this bifolium (fols. 57r, 
+66r, and 66v). Scribe 3 writes the entirety of the next bifolium (fols. 58 and 
+65). Folio 57v is somewhat problematic: there is too little text to reliably run 
+Currier’s dialect tests, and much of the text is composed of extremely rare 
+characters, making a paleographical analysis difficult (see fig. 3). The script 
+shares significant features with Scribe 1. 
+
+Scribe 4 writes the next four quires (9-12), the astronomical and zodia- 
+cal foldouts. Quire 13 (the balneological section) is entirely written by 
+Scribe 2. Quire 14 is the famed “Rose” foldout, with six panels on the 
+obverse written by Scribe 2 and the nine-segment Rose on the other side 
+apparently (but not definitely) written by Scribe 4. Quire 15 is composed of 
+two nested foldouts written by Scribe 1. Both foldouts are likely misbound: 
+the outer foldout is a series of botanical pages that would seem to have been 
+intended for the first section of the manuscript, while the inner foldout 
+presages the section of apparent recipes that appears later in the manuscript. 
+Quire 16 was originally a quaternion but is missing its original outer two 
+bifolia. Of the two botanical bifolia that are left, the outermost was written 
+entirely by Scribe 1 and the inner entirely by Scribe 3. Quire 17 (recipes) is 
+made up of two nested foldouts written by Scribe 1. The manuscript ends 
+with the supersized Quire 18, originally seven nested bifolia on which are 
+written several hundred starred paragraphs. The innermost bifolium is 
+missing. The entire Quire is written by Scribe 3 with the exception of folio 
+115r, where the first twelve lines were written by Scribe 2." 
+
+The associations of section, quire, and scribe are summarized in Table 1. 
+These conclusions, preliminary as they are, have important implications 
+for understanding the process of creating the Voynich Manuscript, the 
+
+
+
+
+
+16 See https://brbl-media. library .yale.edu/images/1006274_quarter.jpg (accessed 24 May 
+2019). 
+
+
+Published by ScholarlyCommons, 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 177 
+
+
+TABLE 1. 
+Structure 
+Section Quire Folios Scribe (for mixed quires) 
+Botanica ik 1-8 1 
+Botanica 2 9-16 1 (fol. 12 lacking) 
+Botanica 3 17-24 1 
+Botanica 4 25 1 
+Botanica 26 2 
+Botanica 27 1 
+Botanica 28 1 
+Botanica 29 1 ») 
+Botanica 30 1 
+Botanica 31 2 
+Botanica 32 1 
+Botanica 5 33 2 
+Botanica 34 2 
+Botanica 35 1 
+Botanica 36 1 
+Botanica 37 1 » 
+Botanica 38 1 
+Botanica 39 2 
+Botanica 40 2 
+Botanica 6 41 5 
+Botanica 42 1 
+Botanica 43 2 
+Botanica 44 1 
+Botanica 45 1 » 
+Botanica 46 2 
+Botanica 47 1 
+Botanica 48 5 
+Botanica 7 49 1 
+Botanica 50 2 
+Botanica 51 1 
+Botanica 52 1 
+Botanica 53 1 ») 
+Botanica 54 1 
+Botanica 55 2 
+Botanica 56 1 
+
+
+
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 18 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+178 | JOURNAL FOR MANUSCRIPT STUDIES 
+
+
+Section Quire 
+Botanical 8 
+
+
+Botanical 
+
+
+
+
+
+Botanical 
+Botanical 
+
+
+Zodiac/ 9 
+
+
+Astronomy 
+
+
+Zodiac/ 10 
+
+
+Astronomy 
+
+
+Zodiac/ 11 
+
+
+Astronomy 
+
+
+Zodiac/ 12 
+
+
+Astronomy 
+Balneology 13 
+Rose 14 
+
+
+Botanical/ 15 
+Recipes 
+
+
+[unknown] 16 
+[unknown] 
+
+Botanical 
+
+Botanical 
+
+Botanical 
+
+Botanical 
+
+[unknown] 
+
+[unknown] 
+
+Recipes 17 
+Starred 18 
+paragraphs 
+
+
+Published by ScholarlyCommons, 
+
+
+Folios 
+57 
+58 
+39 
+60 
+61 
+62 
+63 
+64 
+65 
+66 
+
+67-68 
+
+
+69-70 
+
+
+71-72 
+
+
+73 
+
+
+75-84 
+85-86 
+87-90 
+
+
+91 
+
+92 
+
+93 
+
+94 
+
+95 
+
+96 
+
+97 
+
+98 
+99-102 
+103-116 
+
+
+Structure 
+Scribe (for mixed quires) 
+5/1 
+3 
+lacking 
+lacking 
+lacking 
+
+
+U 
+
+
+lacking 
+lacking 
+lacking 
+
+3 
+
+5 
+
+4 
+
+
+4 (fol. 74 lacking) 
+
+
+2,4 
+
+
+lacking 
+lacking 
+
+
+lacking 
+lacking 
+1 
+
+
+3(20n115r) = (fols. 109-110 
+lacking) 
+
+
+19 
+
+
+Manuscript Studies, Vol. 5 [], Iss. 1, Art. 6 
+Davis, Glyphs and Scribes | 179 
+
+
+collaborative nature of the undertaking, and the establishment of new direc- 
+tions for linguistic research. 
+
+Scribal output in Quires 4—8 and in Quire 16 is defined by bifolia, not 
+by texts, quires, or leaves. In the botanical portion of the manuscript, 
+each page is a semantic unit, depicting and, presumably, describing a 
+single plant. The variation of scribal work by bifolia may suggest that the 
+order of leaves in this section was irrelevant. Alternatively, the bifolia may 
+have been reordered before the manuscript was foliated in the early- 
+modern period. Further investigations will include a careful analysis of 
+relevant bifolia for signs of reordering such as unmatched offsets of ink, 
+pigment, or stains. 
+
+There are two other places in the manuscript where scribes collaborate 
+in ways that are codicologically significant: on the Rose foldout, where 
+Scribe 2 writes on one side and Scribe 4 on the other, and on folio 115 recto, 
+where Scribe 2 writes the first twelve lines before Scribe 3 takes over. The 
+fact that all of these collaborative methods involve Scribe 2 may suggest 
+that she or he was in charge of the project in one way or another. 
+
+It was Currier who first determined that Scribe 1 writes in Dialect A and 
+that Scribe 2 writes in Dialect B. The other three scribes I have identified—3, 
+4, and 5—also use Dialect B, at least according to the tests developed by 
+Currier.'’ I have sent my preliminary results to a professor of linguistics 
+who is running several different linguistical analyses on the Voynich as part 
+of a long-term class project and her own research. I have suggested that the 
+work of the five scribes be analyzed separately to look for patterns that may 
+distinguish them further. The preliminary results of these analyses are 
+forthcoming. 
+
+It is my hope that these conclusions will be useful to all Voynichologists, 
+whether they are linguists, cryptologists, botanists, or medical historians. 
+There are still many fundamental things we do not know about the Voynich 
+Manuscript, but there are some things we do know: the date of origin, the 
+
+
+
+
+
+17 See “2. The Matter of “Language,” http://www.voynich.nu/extra/curr_main.html 
+(accessed 24 May 2019). 
+
+
+https://repository.upenn.edu/mss_sims/vol5/iss1/6 
+
+
+20 
+
+
+Davis: Digital Paleography and the Voynich Manuscript 
+
+
+180 | JouRNAL FOR MANUSCRIPT STUDIES 
+
+
+use of at least two dialects, the provenance, the codicological structure. To 
+these we can now add the number of scribes and an understanding of the 
+collaborative nature of its creation. Any potential “solution” or reading of 
+the Voynich Manuscript must take these facts into account, combining 
+them with an interpretation of the text and images to unravel the enigma 
+that is the Voynich. 
+
+
+Published by ScholarlyCommons, 
+
+
+21 
+
+
