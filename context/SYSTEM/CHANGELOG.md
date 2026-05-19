@@ -4,6 +4,55 @@
 
 ---
 
+## Version 6.72 (2026-05-19) - PHASE 701-703: Lullian wheels (INDEX-only) + Scribe substrate (INDEX-only) + Closure bigram grammar
+
+### Summary
+
+Three-phase session triplet capping the internal-methodology procedural ceiling. PHASE_701 and PHASE_702 closed as INDEX-only documentation per pre-registered criteria (Lullian wheels falsified topology + vocab; scribe-substrate test defeated by structural scribe×section confound). PHASE_703 produced one Tier 3 registration: `ar → al` directional asymmetry within LATE-class closure bigrams.
+
+**Lead finding (C2041):** Within-line LATE-LATE bigrams in Currier B P-placement show one FDR-significant directional asymmetry: `ar → al` (39) >> `al → ar` (14), 47% asymmetry, p_BH=0.005. Refines C2030 by adding directional sub-structure. Three near-miss pairs suggest `ol` is later-position in closure protocol but don't survive FDR at current N. Forbidden-bigram complementary test inconclusive (data sparseness, not negative).
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `phases/PHASE_701_LULLIAN_WHEELS/INDEX.md` | INDEX-only documentation, no constraint registration |
+| `phases/PHASE_702_SCRIBE_SUBSTRATE/` | INDEX-only documentation + Davis 2020 paper + scribe attribution CSV + 6 analysis scripts. No constraint. Two methodology lessons saved to memory. |
+| `phases/PHASE_703_CLOSURE_BIGRAM/` | New phase. Tier 3 registration C2041. Pre-registered design, single discriminating asymmetry test. |
+| `context/CLAIMS/INDEX.md` | Added C2041. Count 2035 → 2036, version 6.71 → 6.72 |
+| `CLAUDE.md` | Version 6.71 → 6.72, constraint count 2035 → 2036, phases 697 → 698 |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `~/.claude/projects/.../memory/feedback_n_matching_for_within_scribe_comparisons.md` | NEW methodology memory (5th framework-as-null catch in 2026-05) |
+| `~/.claude/projects/.../memory/project_scribe_section_confound_structural.md` | NEW project memory documenting Davis scribe-section confound |
+
+### C2041 — LATE-Class Closure Protocol Directional Asymmetry
+
+Test refines C2030 (within-line LATE clustering at +0.036) by examining bigram-level directional structure.
+
+LATE inventory (locked pre-test): {ar, ary, aly, al, dar, dal, dary, daly, or, ory, oly, ol} — 12 MIDDLE strings from C539/C562 closure/output-terminal class.
+
+Method: extract LATE-LATE adjacent bigrams within-line in Currier B P-placement. Test (1) directional asymmetry via binomial p (null = 0.5 under within-line shuffle) with BH-FDR + 30% effect-size floor. Test (2) forbidden bigrams via observed=0 + within-line shuffle null expected ≥ 5 + empirical p < 0.005.
+
+Pre-registered combined criteria: Tier 2 if both tests pass; Tier 3 if exactly one; no constraint if neither.
+
+Results:
+- Test 1: 6 pairs at N≥5. One passes FDR + effect-size: `ar → al` 39/14, asymmetry +0.472, p_BH = 0.005. Three near-misses at +0.23 (ar→ol, al→ol, or→ol) consistent toward `ol` as later position but FDR-fail.
+- Test 2: zero qualifying bigrams (mean expected per type ≈2 across 144 possible types; data sparseness, not negative).
+
+Verdict: Tier 3 per locked criteria.
+
+### Methodology lessons hardened
+
+1. **N-matching mandatory for autocorrelation subset comparisons** (PHASE_702): raw z=−2.05 collapsed to median z=+1.73 under N-matched downsampling. 2.7× imbalance drove the apparent finding. 5th framework-as-null catch in 2026-05.
+
+2. **Scribe×section confound is structural in Davis attribution** (PHASE_702): C2032 period-2 signature is essentially Q13-only/Scribe-2-only data. Substrate-vs-scribe disentanglement is internally impossible at adequate N.
+
+### Procedural ceiling status
+
+PHASE_701 + PHASE_702 confirm internal-methodology procedural ceiling for the substrate-disentanglement / alternative-class question classes. PHASE_703 demonstrates the ceiling is class-specific — bigram-grammar refinement of established measurements still produces clean Tier 3 findings. Internal methodology remains productive for measurement-refinement; saturated for mechanism-promotion.
+
+---
+
 ## Version 6.71 (2026-05-18) - PHASE 700: Computus Adversarial Test + Multi-Class Alternative-Notation Sweep
 
 ### Summary

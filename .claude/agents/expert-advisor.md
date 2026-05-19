@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2035 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2036 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2040.
+the highest ID present is C2041.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2035 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2036 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2035 validated constraints are present as canonical one-line claims with tier
+2036 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-18 09:24
-**Version:** FROZEN STATE (2035 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-19 13:33
+**Version:** FROZEN STATE (2036 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (17 feedback rules)
+6. Session Methodology Notes (18 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -119,6 +119,10 @@ tables are quarantined — do not use for structural answers.
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
 > **ANALYSIS CLOSED** — Cross-system vocabulary architecture fully characterized. PCA-v1 passed. AZC is a static lookup table (AZC_POSITION_VOCABULARY, 2026-01-31). Structural work is DONE.
+
+---
+
+> **⭐ FOR PROJECT-STATE OVERVIEW (CURRENT):** Read [PROJECT_SYNTHESIS.md](PROJECT_SYNTHESIS.md) first. The CLAUDE_INDEX.md below is a frozen 2026-03-29 snapshot. The canonical current synthesis (v6.71, 2035 constraints, full historical synthesis through PHASE_701) is in PROJECT_SYNTHESIS.md.
 
 ---
 
@@ -2279,6 +2283,7 @@ C2037	**AZC-Diagram-Token Placement Contamination Correction.** Pre-registered H
 C2038	**Low-Frequency Hapax-Band Corpus Census.** Distributional measurement: Currier B has 866 corpus-wide hapax MIDDLEs (all-placement filter, H-track non-uncertain). The C1135-catalogued unmatched-PP MIDDLE set ("dark pipeline," 300 MIDDLEs, mean 5.7 tokens, section-concentrated Herf=0.716) has a heavily-skewed frequency distribution: median frequency=3, 60% of catalogued MIDDLEs at n≤3, 28% at n=1 (hapax frequency band). 70 corpus-wide hapax MIDDLEs (sample of 866) overlap with C1135's catalog under exact MIDDLE-string match. 96% (67/70) of these overlap MIDDLEs occur on P-placement (paragraph text); 0/70 occur on R (ring) placement; <5% on C (circle), X, or T placements. **Distributional census only.** The 70-MIDDLE overlap is consistent with C1135's own frequency profile (the catalog already documents a long low-frequency tail extending to hapax band) and does NOT constitute independent association evidence beyond what C1135's frequency profile implies. The within-folio shuffle null on the rate-correlation form of this measurement (see C2039) demonstrates that the per-folio relationship is composition shadow, not hapax-specific.	2	distributional_census, hapax_corpus_wide, low_freq_band, MIDDLE_inventory, no_association_claim, C1135, C1137, C1140
 C2039	**Hapax×Dark Rate vs Hapax Enrichment Correlation Is Composition Shadow.** Per-folio analysis: hapax×dark-pipeline rate (count of hapax-MIDDLE occurrences on folio normalized by folio token count, restricted to MIDDLEs in C1135 catalog) vs per-folio hapax enrichment (folio hapax token rate / corpus hapax token rate) gives raw Pearson r=0.557, TTR-controlled partial r=0.395. Within-folio shuffle null (200 permutations preserving per-folio token counts and global MIDDLE frequency distribution): observed partial r vs null mean 0.286 (SD 0.119) gives **z=0.91, p=0.18**. The signal does NOT survive within-folio shuffle null. Folio-composition shadow, NOT hapax-specific association beyond TTR + composition. Notable secondary: raw r=0.56 gives z=2.30 (nominally significant), but TTR control absorbs half the signal and within-folio shuffle absorbs the rest (z_raw=2.30 → z_partial_TTR=NA → z_partial_TTR_plus_within_folio_null=0.91). **Third documented within-folio-null falsification in +0.4-aggregate-rho pattern**, following k-e-depth thermal regimes and triple-i ↔ iter-terminal (both 2026-05-11). Reinforces `feedback_within_folio_shuffle_null_first.md`: aggregate rho in +0.15 to +0.65 range with no within-folio null is the documented composition-shadow signature; PHASE_699 confirms this for the third time. Specific lexical-content-tail interpretations (PHASE_698 crazy-expert proposal of hapaxes as material/parameter identifiers) are NOT supported by per-folio rate analysis at corpus scale.	2	within_folio_shuffle_null, composition_shadow, lexical_content_tail_falsification, third_documented_case, methodology_validation, C2038, C1135, feedback_within_folio_shuffle_null_first
 C2040	**Six Medieval Periodic-Notation Alternative Classes EXCLUDED via Peak-Specificity Test.** External adversarial corpus test. Synthetic corpora generated for canonical medieval periodicities: Weekly (P=7), Zodiac (P=12), Indiction (P=15), Computus Metonic (P=19), Solar dominical (P=28), Lunaria (P=30). Each shows peak-specificity ≈ +1.0 at its target lag by construction. Peak-specificity metric: agreement_rate(P) − mean(agreement_rate at lags P±1..±4). Discriminates SHARP cyclic peak (synthetic) from UNIFORM topical elevation (NL Mesue ≈ 0 across all periods). Voynich Section B and matched-S tested on each period: peak-specificity ranges from -0.18% to +0.36% of synthetic baselines across all 6 classes, statistically indistinguishable from NL Mesue. **All 6 classes EXCLUDED** (Voynich peak-specificity < 10% of synthetic threshold). Multiple-comparisons: 0/6 false positives observed. **Scope limit:** peak-specificity metric appropriate for periods ≥ 7 where ±4 neighborhood window doesn't catch period multiples; period-2 case has secondary-peak-in-neighborhood artifact (Voynich Section B period-2 specificity reads 0.86% of synthetic due to lag-4 secondary peak inclusion). Voynich's known period-2 grammar remains confirmed via C2032's lag-ratio methodology, NOT via peak-specificity. Combined with mensural falsification (C2032 cross-language test, 2026-05-16), brings cumulative alternative-class falsification series to 7 medieval periodic notational systems excluded. **Bounded scope:** measurement-level claim about these 6 specific periodicity classes; does NOT claim "Voynich isn't notation" or "Voynich is unique" — see methodology lesson below.	2	external_adversarial, alternative_class_exclusion, peak_specificity, multi_class_sweep, computus_falsified, mensural_followup, C2031, C2032, feedback_calibrate_thresholds_against_controls, feedback_peak_specificity_for_periods_geq_7
+C2041	**LATE-Class Closure Protocol Directional Asymmetry (`ar → al`).** Within-line LATE-LATE bigrams in Currier B P-placement extracted via Morphology.extract MIDDLE field equal to one of {ar, ary, aly, al, dar, dal, dary, daly, or, ory, oly, ol} (closure/output-terminal MIDDLE inventory per C539/C562). 320 LATE-LATE bigrams across 17 unique types observed in 2,299 within-line sequences. Of 6 unordered pairs meeting N≥5 floor for FDR testing, ONE pair passes pre-registered combined criterion (Benjamini-Hochberg FDR p_BH < 0.05 AND |asymmetry| ≥ 0.30): **`ar → al` = 39 occurrences vs `al → ar` = 14 occurrences.** Three near-miss pairs show consistent +0.23 asymmetry toward `ol` as later position (ar→ol 27/17, al→ol 16/10, or→ol 16/10) but do not survive FDR at current N. Forbidden-bigram complementary test was INCONCLUSIVE (data sparseness: 320 bigrams across 144 possible 12×12 types yields mean expected per type ≈2, below pre-registered ≥5 floor; zero bigrams qualified for the test; not a negative result). Pre-registered combined criteria assign Tier 3 when exactly one of two tests passes. **Refines C2030 by adding directional sub-structure to within-line LATE adjacency clustering.** Operationally suggests closure protocols have ordered structure (`ar` precedes `al` ~2.8× more often than reverse) — interpretation candidate "ar = primary closure, al = final closure" deferred to SPECULATIVE pending external grounding. Methodology note: within-line shuffle null implicitly tests against positional artifacts (under shuffle, A→B and B→A directions are exchangeable); the +0.47 asymmetry is genuine directional bias, not positional-distribution artifact.	3	late_term, closure_protocol, directional_asymmetry, MIDDLE_class_bigrams, within_line_null, FDR_corrected, refinement_of_C2030, C2030, C539, C562, C886, C109
 
 ---
 
@@ -2286,7 +2291,7 @@ C2040	**Six Medieval Periodic-Notation Alternative Classes EXCLUDED via Peak-Spe
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-18
+# Generated: 2026-05-19
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -5559,6 +5564,31 @@ Three retraction/registration events in 24 hours. Procedure scaling demonstrated
 - C2031 registration body
 - `SPECULATIVE/encoding_modes.md` — Tier 3 interpretation candidate from today
 - `project_8d_features_redetect_regime_internal_frontier.md` — strategic context
+
+---
+
+## feedback-n-matching-for-within-scribe-comparisons
+
+*"N-matched downsample controls are mandatory for substrate-metric comparisons across data subsets; bootstrap-ratio noise + N asymmetry produces framework-fit false positives (PHASE_702, 2026-05-19)"*
+
+For substrate-metric comparisons (lag1, lag2, r21, e-depth autocorrelation) across data subsets where subset sizes differ, N-matched downsample controls are load-bearing — not optional.
+
+**Why:** PHASE_702 within-Scribe-2 content comparison produced z = −2.05 on lag2−lag1 between botanical Q4-7 (N=2,296) and balneology Q13 (N=6,166). The raw z marginally cleared 2.0 and was framed as content-driven substrate flip — exactly the registration-overshoot pattern. Expert-advisor insisted on N-matched downsample control. After downsampling balneology to 2,296 (botanical's N) repeatedly, median z dropped to +1.73 with 80% CI [+0.89, +2.68] crossing zero. **The original z=−2.05 was driven entirely by the 2.7× N imbalance**, not by genuine content difference.
+
+Same session's cross-scribe botanical test (Scribe 2 vs Scribe 3 botanical) showed N-matched median z = +0.47 (N-driven artifact). Matched-S vs unmatched-S within Q18 also collapsed under N-matching (median z = −0.42).
+
+**Three failures in a single test session, all caught by N-matching.** Without the control, PHASE_702 would have registered "substrate signature is content-driven" as Tier 2 mechanism — false.
+
+**How to apply:**
+- When comparing substrate metrics (or any autocorrelation-based measurement) across subsets of differing N, ALWAYS include N-matched downsample as a control before locking interpretation
+- Bootstrap-ratio metrics like r21 = lag2/lag1 are particularly fragile — they explode when lag1 samples near zero, inflating within-group variance
+- Default: downsample the larger subset to the smaller's N, repeat ≥20 times with different random samples, report median z and 80% CI
+- Decision rule: if N-matched 80% CI on z crosses zero, the raw finding is N-driven artifact regardless of how clean the raw z looks
+- A z just above 2.0 with N asymmetry > 1.5× is the diagnostic signature of this trap
+
+**Combined with `feedback_framework_as_null.md`:** N-matching is the discriminating test that distinguishes framework-echo from real signal when a finding fits the project's existing operational vocabulary too cleanly. This is the 5th documented case in 2026-05 of the framework-as-null discipline catching a registration overshoot.
+
+Related: [[feedback-framework-as-null]], [[feedback-calibrate-thresholds-against-controls]], [[feedback-within-folio-shuffle-null-first]].
 
 ---
 
