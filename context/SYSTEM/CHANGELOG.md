@@ -4,6 +4,61 @@
 
 ---
 
+## Version 6.83 (2026-05-20) - PHASE_715 multi-anchor refinement → C2047 heterogeneous depth + C2048 C1212 multi-step
+
+### Summary
+
+Apply PHASE_714 methodology to 5 directional anchors and cross-compare to determine whether substrate is uniformly single-step bigram-rule or has multi-step structure for some patterns. Result: **HETEROGENEOUS DEPTH** — 3 anchors single-step, 2 anchors multi-step. The "substrate is uniformly bigram-rule" reading from PHASE_714 was an over-generalization from one anchor (hazard recovery).
+
+### Cross-anchor results
+
+| Anchor | Baseline → Lag+1 | Lag+2 passes null | Pattern |
+|---|---|---|---|
+| A0 hazard → CHSH (C645) | 0.171 → 0.221 | N | SINGLE-STEP |
+| A1a h-TERM → MID[0]=p (C1212) | 0.009 → 0.022 | Y | MULTI-STEP (borderline mag) |
+| A1b r-TERM → MID[0]=a (C1212) | 0.133 → 0.320 | Y | MULTI-STEP (primary) |
+| A2 qo-k → ok-e (C1314) | 0.029 → 0.042 | N | SINGLE-STEP |
+| A3 ar → al (C2041) | 0.023 → 0.069 | N | SINGLE-STEP |
+
+All 5 pass within-folio shuffle null at p<0.001 at lag+1; effects are substrate-level not folio-composition.
+
+### Methodology fix
+
+A1a originally used predicate `head_atom == 'p'` but 'p' is MOD atom (in 'pficds'), not HEAD atom (HEAD = 'aeokt'). Target was always False (baseline 0.000). Fixed to `MIDDLE[0] == 'p'` first-character predicate regardless of role classification. After fix, A1a shows multi-step substrate-level dependency confirming A1b independently.
+
+### Expert consultation
+
+**Expert-advisor:** A1a borderline-stable (low absolute magnitudes); A1b primary evidence. Register both at Tier 2 measurement. Narrow C2045's framing scope (was "substrate-level single-step" but tested only hazard recovery). C2048 should cite C109 as layer-distinct. Document predicate semantics for audit clarity.
+
+**Crazy-expert:** Heterogeneous depth suggests TWO grammar tiers running simultaneously — reactive bigram for low-level operational rules (hazards, cycling, closure) + compositional 2-3-gram for instruction-packet TERM→HEAD chaining. Tokens are atomic units of encoding; 2-3-token windows are compositional units. Already-present framework support: C1019 (tensor rank-8 pairwise structure orthogonal to macro-automaton), C1379 (two-level parallel composition). Recommended PHASE_716: test whether multi-step C1212 chaining is mechanism behind C1727 line-ordering smoothness.
+
+### Constraints registered
+
+- **C2047 (Tier 2):** Substrate has heterogeneous directional depth (5-anchor cross-refinement). 3 single-step + 2 multi-step.
+- **C2048 (Tier 2):** C1212-type cross-token TERM→MIDDLE[0] chaining shows multi-step substrate dependency. A1b (r-TERM→a-MID) primary evidence; A1a (h-TERM→p-MID) independent replication with magnitude caveat. Within-folio shuffle null passes p<0.001.
+
+### Scope updates to prior constraints
+
+- **C2045 scope narrowed:** "Substrate-level single-step" framing applied only to hazard recovery anchor (C645). Cross-anchor refinement (C2047) shows different operational domains have different depths.
+- **C1212 sharpened:** z=20.3 sequential signal has multi-step depth, not just bigram-level (per C2048).
+- **PHASE_714 over-generalization corrected:** the "substrate is uniformly bigram-rule" implication from PHASE_714 is now retracted as over-generalization from one anchor.
+
+### Mechanism interpretations NOT promoted past Tier 4
+
+- "Two-tier grammar architecture" — Tier 3 framing only
+- "Cooling cascade after intervention" reading of r→a chain — Tier 4 SPECULATIVE
+- Specific operational interpretations of multi-step chaining — Tier 4 SPECULATIVE
+
+### Strategic implication
+
+The substrate has at least two distinct depth classes:
+1. **Reactive bigram-rule:** hazard recovery (C645+C2045), qo-k thermal cycling (C1314), closure protocol (C2041) — all single-step
+2. **Compositional 2-3-gram:** cross-token TERM→MIDDLE[0] chaining (C1212+C2048) — multi-step extending lag+2/+3
+
+This distinction is consistent with previously-registered architectural framework (C1019 tensor rank-8 pairwise structure orthogonal to macro-automaton, C1379 two-level parallel composition). The substrate has structural depth heterogeneity — not a flat bigram-rule system, but also not multi-step throughout.
+
+---
+
 ## Version 6.82 (2026-05-20) - PHASE_714 C645 sharpening → C2045 substrate single-step bigram + C2046 no pre-hazard QO buildup
 
 ### Summary

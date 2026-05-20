@@ -1,0 +1,470 @@
+{
+  "method": "PHASE_715 multi-anchor directional refinement",
+  "n_anchors": 5,
+  "n_perms": 500,
+  "n_null": 500,
+  "results_by_anchor": {
+    "A0_hazard_to_CHSH": {
+      "anchor": "A0_hazard_to_CHSH",
+      "description": "C645 baseline: hazard-class \u2192 CHSH lane",
+      "baseline_target_rate": 0.17093869068236925,
+      "n_events": 956,
+      "multi_lag": {
+        "1": {
+          "count": 185,
+          "total": 838,
+          "rate": 0.220763723150358
+        },
+        "2": {
+          "count": 111,
+          "total": 729,
+          "rate": 0.1522633744855967
+        },
+        "3": {
+          "count": 90,
+          "total": 615,
+          "rate": 0.14634146341463414
+        },
+        "4": {
+          "count": 87,
+          "total": 514,
+          "rate": 0.16926070038910507
+        }
+      },
+      "pre_event": {
+        "1": {
+          "count": 124,
+          "total": 876,
+          "rate": 0.1415525114155251
+        },
+        "2": {
+          "count": 137,
+          "total": 781,
+          "rate": 0.17541613316261204
+        },
+        "3": {
+          "count": 145,
+          "total": 711,
+          "rate": 0.2039381153305204
+        }
+      },
+      "per_lag_null": {
+        "1": {
+          "observed": 0.220763723150358,
+          "null_mean": 0.18456686132473266,
+          "null_p99": 0.21912350597609562,
+          "p_emp": 0.004,
+          "passes": true
+        },
+        "2": {
+          "observed": 0.1522633744855967,
+          "null_mean": 0.17552247710229224,
+          "null_p99": 0.21017772568818366,
+          "p_emp": 0.934,
+          "passes": false
+        },
+        "3": {
+          "observed": 0.14634146341463414,
+          "null_mean": 0.17189617200551766,
+          "null_p99": 0.2139740827784306,
+          "p_emp": 0.956,
+          "passes": false
+        },
+        "4": {
+          "observed": 0.16926070038910507,
+          "null_mean": 0.16220066652308604,
+          "null_p99": 0.20983939983328703,
+          "p_emp": 0.372,
+          "passes": false
+        }
+      },
+      "folio_consistency": {
+        "n_folios": 70,
+        "mean_rate": 0.23948379299362785,
+        "frac_above_baseline": 0.6285714285714286
+      },
+      "within_folio_shuffle_null": {
+        "observed_lag1": 0.220763723150358,
+        "mean": 0.1775223402917121,
+        "p99": 0.2033202237584581,
+        "p_empirical": 0.0,
+        "passes_p99": true
+      },
+      "pattern": "SINGLE-STEP SUBSTRATE-LEVEL",
+      "lag1_pass": true,
+      "lag2_pass": false,
+      "lag3_pass": false
+    },
+    "A1a_h_term_to_p_mid0": {
+      "anchor": "A1a_h_term_to_p_mid0",
+      "description": "C1212 cross-token: h-TERM \u2192 MIDDLE[0]=p (FIXED predicate)",
+      "baseline_target_rate": 0.008832698302736405,
+      "n_events": 1316,
+      "multi_lag": {
+        "1": {
+          "count": 26,
+          "total": 1203,
+          "rate": 0.021612635078969242
+        },
+        "2": {
+          "count": 19,
+          "total": 1059,
+          "rate": 0.01794145420207743
+        },
+        "3": {
+          "count": 16,
+          "total": 916,
+          "rate": 0.017467248908296942
+        },
+        "4": {
+          "count": 11,
+          "total": 788,
+          "rate": 0.013959390862944163
+        }
+      },
+      "pre_event": {
+        "1": {
+          "count": 17,
+          "total": 1222,
+          "rate": 0.013911620294599018
+        },
+        "2": {
+          "count": 18,
+          "total": 1085,
+          "rate": 0.016589861751152075
+        },
+        "3": {
+          "count": 8,
+          "total": 912,
+          "rate": 0.008771929824561403
+        }
+      },
+      "per_lag_null": {
+        "1": {
+          "observed": 0.021612635078969242,
+          "null_mean": 0.007808153566372729,
+          "null_p99": 0.014747639158098317,
+          "p_emp": 0.0,
+          "passes": true
+        },
+        "2": {
+          "observed": 0.01794145420207743,
+          "null_mean": 0.008908449670722785,
+          "null_p99": 0.016746813075855106,
+          "p_emp": 0.006,
+          "passes": true
+        },
+        "3": {
+          "observed": 0.017467248908296942,
+          "null_mean": 0.008950214915691456,
+          "null_p99": 0.018721334768883713,
+          "p_emp": 0.024,
+          "passes": false
+        },
+        "4": {
+          "observed": 0.013959390862944163,
+          "null_mean": 0.009669549928985274,
+          "null_p99": 0.020923161477909364,
+          "p_emp": 0.168,
+          "passes": false
+        }
+      },
+      "folio_consistency": {
+        "n_folios": 79,
+        "mean_rate": 0.018701704550056285,
+        "frac_above_baseline": 0.21518987341772153
+      },
+      "within_folio_shuffle_null": {
+        "observed_lag1": 0.021612635078969242,
+        "mean": 0.008541006321617216,
+        "p99": 0.015063140602622784,
+        "p_empirical": 0.0,
+        "passes_p99": true
+      },
+      "pattern": "MULTI-STEP SUBSTRATE-LEVEL",
+      "lag1_pass": true,
+      "lag2_pass": true,
+      "lag3_pass": false
+    },
+    "A1b_r_term_to_a_mid0": {
+      "anchor": "A1b_r_term_to_a_mid0",
+      "description": "C1212 cross-token: r-TERM \u2192 MIDDLE[0]=a",
+      "baseline_target_rate": 0.13331312781434015,
+      "n_events": 1958,
+      "multi_lag": {
+        "1": {
+          "count": 560,
+          "total": 1748,
+          "rate": 0.32036613272311215
+        },
+        "2": {
+          "count": 287,
+          "total": 1533,
+          "rate": 0.1872146118721461
+        },
+        "3": {
+          "count": 231,
+          "total": 1277,
+          "rate": 0.18089271730618636
+        },
+        "4": {
+          "count": 200,
+          "total": 1086,
+          "rate": 0.1841620626151013
+        }
+      },
+      "pre_event": {
+        "1": {
+          "count": 272,
+          "total": 1725,
+          "rate": 0.15768115942028985
+        },
+        "2": {
+          "count": 216,
+          "total": 1542,
+          "rate": 0.14007782101167315
+        },
+        "3": {
+          "count": 207,
+          "total": 1390,
+          "rate": 0.14892086330935253
+        }
+      },
+      "per_lag_null": {
+        "1": {
+          "observed": 0.32036613272311215,
+          "null_mean": 0.1277884095722998,
+          "null_p99": 0.1451626807512604,
+          "p_emp": 0.0,
+          "passes": true
+        },
+        "2": {
+          "observed": 0.1872146118721461,
+          "null_mean": 0.14291056340471892,
+          "null_p99": 0.16365289256198345,
+          "p_emp": 0.0,
+          "passes": true
+        },
+        "3": {
+          "observed": 0.18089271730618636,
+          "null_mean": 0.14851632505566914,
+          "null_p99": 0.17620674809327616,
+          "p_emp": 0.006,
+          "passes": true
+        },
+        "4": {
+          "observed": 0.1841620626151013,
+          "null_mean": 0.15515239127074226,
+          "null_p99": 0.19025939019001326,
+          "p_emp": 0.024,
+          "passes": false
+        }
+      },
+      "folio_consistency": {
+        "n_folios": 78,
+        "mean_rate": 0.2918362043295573,
+        "frac_above_baseline": 0.8205128205128205
+      },
+      "within_folio_shuffle_null": {
+        "observed_lag1": 0.32036613272311215,
+        "mean": 0.15786657687603975,
+        "p99": 0.1751575392606957,
+        "p_empirical": 0.0,
+        "passes_p99": true
+      },
+      "pattern": "MULTI-STEP SUBSTRATE-LEVEL",
+      "lag1_pass": true,
+      "lag2_pass": true,
+      "lag3_pass": true
+    },
+    "A2_qok_to_oke": {
+      "anchor": "A2_qok_to_oke",
+      "description": "C1314 cycling: qo-k \u2192 ok-e",
+      "baseline_target_rate": 0.029009352268791134,
+      "n_events": 2545,
+      "multi_lag": {
+        "1": {
+          "count": 101,
+          "total": 2407,
+          "rate": 0.04196094723722476
+        },
+        "2": {
+          "count": 74,
+          "total": 2156,
+          "rate": 0.03432282003710575
+        },
+        "3": {
+          "count": 53,
+          "total": 1866,
+          "rate": 0.02840300107181136
+        },
+        "4": {
+          "count": 35,
+          "total": 1568,
+          "rate": 0.022321428571428572
+        }
+      },
+      "pre_event": {
+        "1": {
+          "count": 110,
+          "total": 2347,
+          "rate": 0.046868342564976566
+        },
+        "2": {
+          "count": 66,
+          "total": 2104,
+          "rate": 0.03136882129277566
+        },
+        "3": {
+          "count": 45,
+          "total": 1745,
+          "rate": 0.025787965616045846
+        }
+      },
+      "per_lag_null": {
+        "1": {
+          "observed": 0.04196094723722476,
+          "null_mean": 0.029416588306919095,
+          "null_p99": 0.036836527876374786,
+          "p_emp": 0.0,
+          "passes": true
+        },
+        "2": {
+          "observed": 0.03432282003710575,
+          "null_mean": 0.030843088065501015,
+          "null_p99": 0.03936289722236353,
+          "p_emp": 0.186,
+          "passes": false
+        },
+        "3": {
+          "observed": 0.02840300107181136,
+          "null_mean": 0.030910422381162286,
+          "null_p99": 0.04262546933588184,
+          "p_emp": 0.666,
+          "passes": false
+        },
+        "4": {
+          "observed": 0.022321428571428572,
+          "null_mean": 0.030719125612047003,
+          "null_p99": 0.04514152951191827,
+          "p_emp": 0.934,
+          "passes": false
+        }
+      },
+      "folio_consistency": {
+        "n_folios": 78,
+        "mean_rate": 0.036762197090270066,
+        "frac_above_baseline": 0.3717948717948718
+      },
+      "within_folio_shuffle_null": {
+        "observed_lag1": 0.04196094723722476,
+        "mean": 0.03150657256841958,
+        "p99": 0.03996627512598923,
+        "p_empirical": 0.002,
+        "passes_p99": true
+      },
+      "pattern": "SINGLE-STEP SUBSTRATE-LEVEL",
+      "lag1_pass": true,
+      "lag2_pass": false,
+      "lag3_pass": false
+    },
+    "A3_ar_to_al": {
+      "anchor": "A3_ar_to_al",
+      "description": "C2041 closure: ar \u2192 al",
+      "baseline_target_rate": 0.023380671977831658,
+      "n_events": 685,
+      "multi_lag": {
+        "1": {
+          "count": 43,
+          "total": 627,
+          "rate": 0.0685805422647528
+        },
+        "2": {
+          "count": 20,
+          "total": 540,
+          "rate": 0.037037037037037035
+        },
+        "3": {
+          "count": 20,
+          "total": 426,
+          "rate": 0.046948356807511735
+        },
+        "4": {
+          "count": 16,
+          "total": 349,
+          "rate": 0.045845272206303724
+        }
+      },
+      "pre_event": {
+        "1": {
+          "count": 16,
+          "total": 655,
+          "rate": 0.024427480916030534
+        },
+        "2": {
+          "count": 14,
+          "total": 578,
+          "rate": 0.02422145328719723
+        },
+        "3": {
+          "count": 18,
+          "total": 520,
+          "rate": 0.03461538461538462
+        }
+      },
+      "per_lag_null": {
+        "1": {
+          "observed": 0.0685805422647528,
+          "null_mean": 0.024251107341726724,
+          "null_p99": 0.041074383350462484,
+          "p_emp": 0.0,
+          "passes": true
+        },
+        "2": {
+          "observed": 0.037037037037037035,
+          "null_mean": 0.02701038518747718,
+          "null_p99": 0.04674113429778516,
+          "p_emp": 0.122,
+          "passes": false
+        },
+        "3": {
+          "observed": 0.046948356807511735,
+          "null_mean": 0.02799357018488099,
+          "null_p99": 0.051456951408719885,
+          "p_emp": 0.024,
+          "passes": false
+        },
+        "4": {
+          "observed": 0.045845272206303724,
+          "null_mean": 0.029822493294513946,
+          "null_p99": 0.06190772385509227,
+          "p_emp": 0.094,
+          "passes": false
+        }
+      },
+      "folio_consistency": {
+        "n_folios": 61,
+        "mean_rate": 0.05131615535956962,
+        "frac_above_baseline": 0.3770491803278688
+      },
+      "within_folio_shuffle_null": {
+        "observed_lag1": 0.0685805422647528,
+        "mean": 0.029685416410987278,
+        "p99": 0.04568075470078132,
+        "p_empirical": 0.0,
+        "passes_p99": true
+      },
+      "pattern": "SINGLE-STEP SUBSTRATE-LEVEL",
+      "lag1_pass": true,
+      "lag2_pass": false,
+      "lag3_pass": false
+    }
+  },
+  "cross_anchor_pattern_counts": {
+    "SINGLE-STEP SUBSTRATE-LEVEL": 3,
+    "MULTI-STEP SUBSTRATE-LEVEL": 2,
+    "FOLIO-LOCAL": 0,
+    "NO REAL EFFECT": 0
+  },
+  "cross_anchor_verdict": "SUBSTRATE HAS HETEROGENEOUS DEPTH (some anchors single-step, some multi-step)"
+}
