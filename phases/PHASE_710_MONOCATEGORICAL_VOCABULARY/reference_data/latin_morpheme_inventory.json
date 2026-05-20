@@ -1,0 +1,202 @@
+{
+  "_source": "Allen comparative Latin grammar / Gildersleeve & Lodge \u2014 productive derivational and inflectional morphemes",
+  "_note": "Roots excluded (vast and trivially heterogeneous). This is the architectural morpheme inventory analogous to Voynich's atom layer.",
+  "items": {
+    "-atio": {
+      "category": "ENTITY",
+      "subcat": "action_noun_suffix",
+      "_note": "creates abstract action-noun: amare \u2192 amatio"
+    },
+    "-tio": {
+      "category": "ENTITY",
+      "subcat": "action_noun_suffix",
+      "_note": "variant of -atio"
+    },
+    "-tor": {
+      "category": "ENTITY",
+      "subcat": "agent_noun_suffix",
+      "_note": "creates agent noun: amare \u2192 amator"
+    },
+    "-trix": {
+      "category": "ENTITY",
+      "subcat": "agent_noun_suffix_fem"
+    },
+    "-ium": {
+      "category": "ENTITY",
+      "subcat": "place_result_noun",
+      "_note": "praedium, ingenium"
+    },
+    "-arium": {
+      "category": "ENTITY",
+      "subcat": "container_noun",
+      "_note": "armarium, granarium"
+    },
+    "-tas": {
+      "category": "ENTITY",
+      "subcat": "abstract_noun_suffix",
+      "_note": "veritas, libertas"
+    },
+    "-tudo": {
+      "category": "ENTITY",
+      "subcat": "state_noun_suffix",
+      "_note": "magnitudo"
+    },
+    "-mentum": {
+      "category": "ENTITY",
+      "subcat": "instrumental_noun",
+      "_note": "ornamentum"
+    },
+    "-ulus": {
+      "category": "ENTITY",
+      "subcat": "diminutive_noun"
+    },
+    "-cul": {
+      "category": "ENTITY",
+      "subcat": "diminutive_noun"
+    },
+    "-ilis": {
+      "category": "PROPERTY",
+      "subcat": "adjective_capability"
+    },
+    "-alis": {
+      "category": "PROPERTY",
+      "subcat": "adjective_relational"
+    },
+    "-aris": {
+      "category": "PROPERTY",
+      "subcat": "adjective_relational"
+    },
+    "-arius": {
+      "category": "PROPERTY",
+      "subcat": "adjective_relational"
+    },
+    "-osus": {
+      "category": "PROPERTY",
+      "subcat": "adjective_abundance"
+    },
+    "-bilis": {
+      "category": "PROPERTY",
+      "subcat": "adjective_possibility"
+    },
+    "-anus": {
+      "category": "PROPERTY",
+      "subcat": "adjective_relational"
+    },
+    "-inus": {
+      "category": "PROPERTY",
+      "subcat": "adjective_relational"
+    },
+    "-are": {
+      "category": "OPERATION",
+      "subcat": "infinitive_1st_conj"
+    },
+    "-ere": {
+      "category": "OPERATION",
+      "subcat": "infinitive_2nd_3rd_conj"
+    },
+    "-ire": {
+      "category": "OPERATION",
+      "subcat": "infinitive_4th_conj"
+    },
+    "-izare": {
+      "category": "OPERATION",
+      "subcat": "verb_greek_loan",
+      "_note": "baptizare, alchimizare"
+    },
+    "-ficare": {
+      "category": "OPERATION",
+      "subcat": "verb_causative",
+      "_note": "calefacere"
+    },
+    "-escere": {
+      "category": "OPERATION",
+      "subcat": "verb_inchoative",
+      "_note": "calescere"
+    },
+    "-itare": {
+      "category": "OPERATION",
+      "subcat": "verb_frequentative",
+      "_note": "agitare"
+    },
+    "-us": {
+      "category": "FUNCTION",
+      "subcat": "case_nom_sg_masc"
+    },
+    "-i": {
+      "category": "FUNCTION",
+      "subcat": "case_gen_sg / nom_pl"
+    },
+    "-o": {
+      "category": "FUNCTION",
+      "subcat": "case_dat_abl_sg"
+    },
+    "-um": {
+      "category": "FUNCTION",
+      "subcat": "case_acc_sg_neut"
+    },
+    "-orum": {
+      "category": "FUNCTION",
+      "subcat": "case_gen_pl"
+    },
+    "-is": {
+      "category": "FUNCTION",
+      "subcat": "case_dat_abl_pl / gen_sg"
+    },
+    "-a": {
+      "category": "FUNCTION",
+      "subcat": "case_nom_sg_fem"
+    },
+    "-ae": {
+      "category": "FUNCTION",
+      "subcat": "case_gen_dat_sg_fem"
+    },
+    "-am": {
+      "category": "FUNCTION",
+      "subcat": "case_acc_sg_fem"
+    },
+    "-as": {
+      "category": "FUNCTION",
+      "subcat": "case_acc_pl_fem"
+    },
+    "-em": {
+      "category": "FUNCTION",
+      "subcat": "case_acc_sg_3rd"
+    },
+    "-e": {
+      "category": "FUNCTION",
+      "subcat": "case_voc_sg / abl_sg"
+    },
+    "-t": {
+      "category": "FUNCTION",
+      "subcat": "verb_3sg_present"
+    },
+    "-nt": {
+      "category": "FUNCTION",
+      "subcat": "verb_3pl_present"
+    },
+    "-bat": {
+      "category": "FUNCTION",
+      "subcat": "verb_3sg_imperfect"
+    },
+    "-bit": {
+      "category": "FUNCTION",
+      "subcat": "verb_3sg_future"
+    },
+    "-erunt": {
+      "category": "FUNCTION",
+      "subcat": "verb_3pl_perfect"
+    },
+    "-tur": {
+      "category": "FUNCTION",
+      "subcat": "verb_passive_3sg"
+    },
+    "-mus": {
+      "category": "FUNCTION",
+      "subcat": "verb_1pl"
+    },
+    "-tis": {
+      "category": "FUNCTION",
+      "subcat": "verb_2pl"
+    }
+  }
+}

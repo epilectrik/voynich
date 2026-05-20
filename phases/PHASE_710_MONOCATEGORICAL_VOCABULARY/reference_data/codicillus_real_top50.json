@@ -1,0 +1,204 @@
+{
+  "items": {
+    "que": {
+      "category": "FUNCTION",
+      "count": 823
+    },
+    "quod": {
+      "category": "ENTITY",
+      "count": 313
+    },
+    "est": {
+      "category": "OPERATION",
+      "count": 301
+    },
+    "sit": {
+      "category": "OPERATION",
+      "count": 266
+    },
+    "cum": {
+      "category": "FUNCTION",
+      "count": 211
+    },
+    "uae": {
+      "category": "ENTITY",
+      "count": 203
+    },
+    "non": {
+      "category": "FUNCTION",
+      "count": 159
+    },
+    "hoc": {
+      "category": "ENTITY",
+      "count": 138
+    },
+    "uod": {
+      "category": "ENTITY",
+      "count": 129
+    },
+    "sua": {
+      "category": "ENTITY",
+      "count": 109
+    },
+    "sunt": {
+      "category": "OPERATION",
+      "count": 97
+    },
+    "ignis": {
+      "category": "ENTITY",
+      "count": 92
+    },
+    "sic": {
+      "category": "FUNCTION",
+      "count": 90
+    },
+    "scilicet": {
+      "category": "FUNCTION",
+      "count": 90
+    },
+    "per": {
+      "category": "FUNCTION",
+      "count": 87
+    },
+    "magis": {
+      "category": "FUNCTION",
+      "count": 85
+    },
+    "illa": {
+      "category": "ENTITY",
+      "count": 84
+    },
+    "fuit": {
+      "category": "OPERATION",
+      "count": 71
+    },
+    "ista": {
+      "category": "ENTITY",
+      "count": 69
+    },
+    "aut": {
+      "category": "FUNCTION",
+      "count": 66
+    },
+    "nec": {
+      "category": "FUNCTION",
+      "count": 65
+    },
+    "sulfur": {
+      "category": "ENTITY",
+      "count": 63
+    },
+    "sue": {
+      "category": "ENTITY",
+      "count": 62
+    },
+    "nisi": {
+      "category": "FUNCTION",
+      "count": 56
+    },
+    "sui": {
+      "category": "ENTITY",
+      "count": 54
+    },
+    "prima": {
+      "category": "PROPERTY",
+      "count": 53
+    },
+    "sed": {
+      "category": "FUNCTION",
+      "count": 52
+    },
+    "corporis": {
+      "category": "ENTITY",
+      "count": 52
+    },
+    "nam": {
+      "category": "FUNCTION",
+      "count": 51
+    },
+    "suo": {
+      "category": "ENTITY",
+      "count": 50
+    },
+    "illud": {
+      "category": "ENTITY",
+      "count": 50
+    },
+    "primo": {
+      "category": "PROPERTY",
+      "count": 48
+    },
+    "post": {
+      "category": "FUNCTION",
+      "count": 47
+    },
+    "corpus": {
+      "category": "ENTITY",
+      "count": 47
+    },
+    "qui": {
+      "category": "ENTITY",
+      "count": 45
+    },
+    "folio": {
+      "category": "ENTITY",
+      "count": 44
+    },
+    "aqua": {
+      "category": "ENTITY",
+      "count": 42
+    },
+    "terra": {
+      "category": "ENTITY",
+      "count": 41
+    },
+    "aque": {
+      "category": "ENTITY",
+      "count": 41
+    },
+    "opus": {
+      "category": "ENTITY",
+      "count": 40
+    },
+    "sine": {
+      "category": "FUNCTION",
+      "count": 40
+    },
+    "fiunt": {
+      "category": "OPERATION",
+      "count": 40
+    },
+    "forma": {
+      "category": "ENTITY",
+      "count": 39
+    },
+    "quae": {
+      "category": "ENTITY",
+      "count": 38
+    },
+    "alia": {
+      "category": "ENTITY",
+      "count": 37
+    },
+    "ideo": {
+      "category": "FUNCTION",
+      "count": 37
+    },
+    "illam": {
+      "category": "ENTITY",
+      "count": 36
+    },
+    "illius": {
+      "category": "UNCATEGORIZED",
+      "count": 35
+    },
+    "qua": {
+      "category": "ENTITY",
+      "count": 34
+    },
+    "erit": {
+      "category": "UNCATEGORIZED",
+      "count": 34
+    }
+  }
+}

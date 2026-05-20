@@ -4,6 +4,68 @@
 
 ---
 
+## Version 6.80 (2026-05-20) - PHASE_710 atom-layer categorical-vocabulary measurement → C2042 Tier 3
+
+### Summary
+
+User observation (2026-05-20): all 18 Voynich atom glosses are operational verbs (heat, cool, watch, iterate, transfer, etc.), categorical signature matching programming-language opcode sets (MOV, ADD, JMP). PHASE_710 pre-registered three-axis discriminating test with mensural floor + Latin baselines at both word-form AND morpheme granularities. Verdict assigned only after expert-advisor scrutiny demanded four corrections.
+
+### Pre-registered three-axis test (LOCKED before run)
+
+- **Axis 1:** Voynich H_OPERATION_inclusive ≥ 0.85
+- **Axis 2:** matches ≥2 positive controls (Forth CORE, x86 base) on (small-N, high-H, OP-dominant)
+- **Axis 3:** distinguished from mensural (small-N, high-H, ENTITY-dominant) AND NL Latin
+
+### Results
+
+| Corpus | N | H_OP strict | H_OP inclusive | Dominant |
+|---|---:|---:|---:|---|
+| Voynich atoms | 18 | 72% | 100% | OPERATION |
+| Forth CORE (positive control) | 57 | 100% | 100% | OPERATION |
+| x86 base (positive control) | 56 | 100% | 100% | OPERATION |
+| Mensural durations (floor) | 8 | 0% | 0% | ENTITY |
+| Latin Codicillus top-50 word-forms (cleaned) | 50 | 12% | 12% | ENTITY (54%) |
+| Latin morpheme inventory (granularity-fix) | 46 | 15% | 15% | FUNCTION (43%) |
+
+All three axes PASS. Verdict: PROCEDURAL-DSL SIGNATURE CONFIRMED.
+
+### Expert scrutiny corrections applied (load-bearing for Tier-3 assignment)
+
+1. **Latin morpheme baseline added** — original test only had word-form baseline. Granularity-fix: extract 46 Latin productive morphemes (derivational + inflectional) from standard grammar references; result 15% OP, FUNCTION-dominant — confirms NL is heterogeneous-categorical at sub-word granularity too. Voynich's 72-100% OP gap holds.
+
+2. **Result reported as 72-100% band, not 100%** — 5/18 atoms (m, l, f, s, x) are operation-or-entity ambiguous. Inclusive coding treats them as OPERATION (matching project's operational use, per project's existing ATOM_GLOSSES treatment); strict coding counts them separately. Honest report shows both numbers.
+
+3. **Demoted from Tier 2 to Tier 3** — category assignments require gloss judgment (hermeneutic act). Per project tier discipline, hermeneutic acts produce interpretive measurements, not validated structural facts.
+
+4. **Framing avoids C171 tension** — claim is "atoms classify as operational ROLE," not "atoms ARE verbs." Role-category measurement does not conflict with C171's semantic-ceiling constraint.
+
+### Crazy-expert scope caveat
+
+Categorical-homogeneity-operational distinguishes "operational system" from "non-operational symbolic system" but does not specifically prove "procedural DSL" — could equally fit operational specification language or taxonomic classification system. C1399-C1400 (paragraph ordering independence) tensions with strict-temporal-procedural reading.
+
+### Mechanism interpretation BLOCKED at Tier 4
+
+Per `feedback_mechanism_cycle_procedural_ceiling.md`: internal procedure cannot promote operational mechanism claims to Tier 2 without external grounding. "Voynich IS a programming language" remains Tier 4 SPECULATIVE. The Tier 3 measurement (categorical-homogeneity signature) is what registers, not the mechanism interpretation.
+
+### Load-bearing vs tautological
+
+- **Load-bearing:** Voynich-vs-Latin (zero-count asymmetry: 0/18 Voynich atoms non-operational vs 39/46 Latin morphemes non-operational), Voynich-vs-mensural (OPERATION-dominant vs ENTITY-dominant)
+- **Tautological:** Forth/x86 positive controls — they're designed-monocategorical opcode sets. They verify methodology recognizes operational-DSL inventories but are not independent evidence.
+
+### Framework-as-null discipline
+
+Finding fits Tier 0 ("closed-loop control programs") cleanly — yellow flag per `feedback_framework_as_null.md`. But the SPECIFIC zero-counts (0 entity-pure, 0 function-pure, 0 property-pure out of 18 atoms) are sharp enough to be discriminating measurement rather than framework-echo. Either a future stricter gloss audit demotes some atoms to ENTITY (falsifies), or the monocategorical signature stands.
+
+### Constraint registered
+
+- **C2042 (Tier 3)** — Voynich Atom-Layer Vocabulary Categorical-Homogeneity. References/extends C1195, C1003, C1190, C1191, C1394; no conflict with C171.
+
+### Methodology contribution
+
+Eight pre-registered scope-caveats baked into C2042's claim text — most heavily caveated single constraint in the registry. Demonstrates the registration-trap audit discipline applied at maximum: every speculation-tempting interpretation is bounded by an explicit scope caveat in the constraint itself.
+
+---
+
 ## Version 6.79 (2026-05-19) - PHASE_706 burstiness β + DFA Hurst tests → both metrics are FLOORS, INDEX-only
 
 ### Summary

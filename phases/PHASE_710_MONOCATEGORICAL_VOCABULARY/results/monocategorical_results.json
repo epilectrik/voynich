@@ -1,0 +1,180 @@
+{
+  "method": "PHASE_710 monocategorical-operational vocabulary discrimination",
+  "ambiguity_audit": {
+    "n_atoms": 18,
+    "n_operation_pure": 13,
+    "n_ambiguous_operation": 5,
+    "n_other": 0,
+    "ambiguous_atoms": [
+      [
+        "m",
+        "final",
+        "AMBIGUOUS_OP_PROP"
+      ],
+      [
+        "l",
+        "state",
+        "AMBIGUOUS_OP_ENT"
+      ],
+      [
+        "f",
+        "flag",
+        "AMBIGUOUS_OP_ENT"
+      ],
+      [
+        "s",
+        "sequence",
+        "AMBIGUOUS_OP_ENT"
+      ],
+      [
+        "x",
+        "diagram",
+        "AMBIGUOUS_OP_ENT"
+      ]
+    ],
+    "other_atoms": [],
+    "h_operation_strict": 0.7222222222222222,
+    "h_operation_inclusive": 1.0
+  },
+  "inventory_stats": {
+    "voynich_atoms": {
+      "N": 18,
+      "strict_categories": {
+        "OPERATION": 13,
+        "AMBIGUOUS_OP_PROP": 1,
+        "AMBIGUOUS_OP_ENT": 4
+      },
+      "inclusive_categories": {
+        "OPERATION": 18
+      },
+      "dominant_category_strict": "OPERATION",
+      "H_dominant_strict": 0.7222222222222222,
+      "dominant_category_inclusive": "OPERATION",
+      "H_dominant_inclusive": 1.0,
+      "H_target_category_strict": 0.7222222222222222,
+      "H_target_category_inclusive": 1.0,
+      "target_category": "OPERATION"
+    },
+    "forth_core_words": {
+      "N": 57,
+      "strict_categories": {
+        "OPERATION": 57
+      },
+      "inclusive_categories": {
+        "OPERATION": 57
+      },
+      "dominant_category_strict": "OPERATION",
+      "H_dominant_strict": 1.0,
+      "dominant_category_inclusive": "OPERATION",
+      "H_dominant_inclusive": 1.0,
+      "H_target_category_strict": 1.0,
+      "H_target_category_inclusive": 1.0,
+      "target_category": "OPERATION"
+    },
+    "x86_base_instructions": {
+      "N": 56,
+      "strict_categories": {
+        "OPERATION": 56
+      },
+      "inclusive_categories": {
+        "OPERATION": 56
+      },
+      "dominant_category_strict": "OPERATION",
+      "H_dominant_strict": 1.0,
+      "dominant_category_inclusive": "OPERATION",
+      "H_dominant_inclusive": 1.0,
+      "H_target_category_strict": 1.0,
+      "H_target_category_inclusive": 1.0,
+      "target_category": "OPERATION"
+    },
+    "mensural_durations": {
+      "N": 8,
+      "strict_categories": {
+        "ENTITY": 8
+      },
+      "inclusive_categories": {
+        "ENTITY": 8
+      },
+      "dominant_category_strict": "ENTITY",
+      "H_dominant_strict": 1.0,
+      "dominant_category_inclusive": "ENTITY",
+      "H_dominant_inclusive": 1.0,
+      "H_target_category_strict": 0.0,
+      "H_target_category_inclusive": 0.0,
+      "target_category": "OPERATION"
+    },
+    "latin_top50_codicillus": {
+      "N": 51,
+      "strict_categories": {
+        "FUNCTION": 15,
+        "OPERATION": 11,
+        "ENTITY": 18,
+        "PROPERTY": 7
+      },
+      "inclusive_categories": {
+        "FUNCTION": 15,
+        "OPERATION": 11,
+        "ENTITY": 18,
+        "PROPERTY": 7
+      },
+      "dominant_category_strict": "ENTITY",
+      "H_dominant_strict": 0.35294117647058826,
+      "dominant_category_inclusive": "ENTITY",
+      "H_dominant_inclusive": 0.35294117647058826,
+      "H_target_category_strict": 0.21568627450980393,
+      "H_target_category_inclusive": 0.21568627450980393,
+      "target_category": "OPERATION"
+    },
+    "latin_morpheme_inventory": {
+      "N": 46,
+      "strict_categories": {
+        "ENTITY": 11,
+        "PROPERTY": 8,
+        "OPERATION": 7,
+        "FUNCTION": 20
+      },
+      "inclusive_categories": {
+        "ENTITY": 11,
+        "PROPERTY": 8,
+        "OPERATION": 7,
+        "FUNCTION": 20
+      },
+      "dominant_category_strict": "FUNCTION",
+      "H_dominant_strict": 0.43478260869565216,
+      "dominant_category_inclusive": "FUNCTION",
+      "H_dominant_inclusive": 0.43478260869565216,
+      "H_target_category_strict": 0.15217391304347827,
+      "H_target_category_inclusive": 0.15217391304347827,
+      "target_category": "OPERATION"
+    }
+  },
+  "verdict_evaluation": {
+    "verdict": "PROCEDURAL-DSL SIGNATURE CONFIRMED",
+    "rationale": "All three axes pass: Voynich H_OP_inclusive=100.00%, matches 2/2 positive controls, distinguished from mensural (OP-H=0.00%) and NL (dominant-H=35.29%, dominant=ENTITY).",
+    "axis1_pass_inclusive": true,
+    "axis1_pass_strict": false,
+    "axis2_pass": true,
+    "axis3_pass": true,
+    "axis2_details": [
+      {
+        "corpus": "forth_core_words",
+        "N": 57,
+        "H_dominant_inclusive": 1.0,
+        "dominant": "OPERATION",
+        "matches": true
+      },
+      {
+        "corpus": "x86_base_instructions",
+        "N": 56,
+        "H_dominant_inclusive": 1.0,
+        "dominant": "OPERATION",
+        "matches": true
+      }
+    ],
+    "voynich_h_op_inclusive": 1.0,
+    "voynich_h_op_strict": 0.7222222222222222,
+    "mensural_op_h_inclusive": 0.0,
+    "nl_dominant_h": 0.35294117647058826,
+    "nl_op_h_inclusive": 0.21568627450980393
+  }
+}
