@@ -1,6 +1,8 @@
-# C755: A Folio Coverage Homogeneity
+# C755: A Folio Coverage Homogeneity [DEMOTED Tier 2 → Tier 3, 2026-05-19]
 
-**Status:** VALIDATED | **Tier:** 2 | **Phase:** AZC_REASSESSMENT | **Scope:** A
+**Status:** DEMOTED via batch-sweep audit | **Tier:** 3 (was Tier 2) | **Phase:** AZC_REASSESSMENT | **Scope:** A
+
+**Demotion narrative (2026-05-19):** The descriptive measurement survives (real A folios at 0th percentile vs 100 synthetic for discrimination, mean discrimination 1.064 vs synthetic mean 1.281). The **interpretation as "deliberate coverage optimization" is demoted to Tier 3** because it depends on C476 (Coverage Optimality) which was retracted via audit (`phases/C476_AUDIT/`). With C476's "coverage" framing falsified, the C755 interpretation flip ("real worse than random = deliberate optimization") loses its foundation. This is structurally the same pattern that broke C476 — finding "real worse than baseline" reframed as "deliberate" without independent grounding. See `feedback_broken_baseline_audit.md`. The descriptive observation remains as Tier 3 measurement-only pending interpretation re-grounding.
 
 ## Finding
 

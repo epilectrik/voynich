@@ -474,10 +474,23 @@ If the hub-enrichment measurement is to be preserved at all, it should be a FRES
 
 ## Temporal Trajectories (C478)
 
-### C478 - TEMPORAL COVERAGE SCHEDULING [AUDIT_PENDING 2026-05-19]
-**Tier:** 2 | **Status:** AUDIT_PENDING | **Source:** TEMPORAL_TRAJECTORIES probe (2026-01-12)
+### C478 - TEMPORAL COVERAGE SCHEDULING [REFRAMED 2026-05-19]
+**Tier:** 2 (descriptive measurements) + Tier 3 (interpretation) | **Status:** REFRAMED | **Source:** TEMPORAL_TRAJECTORIES probe (2026-01-12); audit `phases/BATCH_SWEEP_2026_01_12/` (2026-05-19)
 
-**AUDIT_PENDING (2026-05-19):** C476 was retracted via audit (`phases/C476_AUDIT/`). C478 cites "Reconciliation with C476" and inherits the coverage-control framing. Per both expert reviews: of C478's four claims, the first two ("back-loaded coverage" and "front-loaded novelty") depend on C476's "coverage is a meaningful target" premise — which the C476 audit showed is tautological at the corpus level. The latter two ("U-shaped tail pressure" and "PREFIX cycling") may survive independently as descriptive distributional facts. Audit needed: apply the three-axis diagnostic from `feedback_made_up_threshold_audit.md` to each of the four sub-claims separately. Expected outcome: U-shape + prefix cycling survive, back-load/front-load require reframing.
+**Reframe (post-C476 retraction):** The four descriptive measurements survive as Tier 2 facts about A's MIDDLE ordering. The "pedagogical pacing" / "deliberate scheduling" interpretation is demoted to Tier 3 because it depended on C476's "coverage is a meaningful target" premise — which C476 retraction showed is tautological.
+
+**Surviving Tier 2 measurements:**
+1. **Back-loaded coverage:** 90% MIDDLE coverage in real A reached 9.6% later than under random permutation
+2. **Front-loaded novelty:** Phase-distribution of novel-MIDDLE introduction: 21.2% / 9.4% / 11.3% across three folio-order phases
+3. **U-shaped tail pressure:** Rare-MIDDLE rate by phase: 7.9% / 4.2% / 7.1%
+4. **PREFIX cycling:** 7 prefixes cycle across manuscript with 164 regime changes; prefix entropy increases then stabilizes
+
+These are descriptive distributional facts about A's MIDDLE order. They don't depend on any "coverage optimality" interpretation.
+
+**Demoted Tier 3 interpretation (no longer load-bearing):**
+> "PEDAGOGICAL_PACING: Currier A is not just coverage-optimal, it is temporally scheduled to introduce, reinforce, and cycle through discrimination domains."
+
+This interpretation framed the four measurements as evidence of intentional scheduling toward "coverage optimization." With C476 retracted, the "coverage optimization" target is no longer a meaningful structural property to schedule toward. The measurements remain as facts; the interpretation as Tier 3 candidate pending external grounding.
 
 Currier A exhibits STRONG TEMPORAL SCHEDULING with pedagogical pacing: introduce vocabulary early, reinforce throughout, cycle between prefix domains.
 

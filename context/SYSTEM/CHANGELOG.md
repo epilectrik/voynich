@@ -4,6 +4,108 @@
 
 ---
 
+## Version 6.78 (2026-05-19) - 2026-01-12 cohort batch-sweep complete (C478 reframed, C755+C756 demoted, C479+C480 survive)
+
+### Summary
+
+Batch-sweep of 2026-01-12 probe family (5 candidates) per pre-registered 4-axis diagnostic. Outcome: **0 retractions, 2 demotions, 1 reframe, 2 survives.** 2026-01-12 cohort final hit rate: 6/8 actions (75%) — confirms the methodology cohort issue both experts predicted.
+
+### Pre-registered diagnostic (locked before reading constraints)
+
+For each candidate, score against 4 axes:
+1. Value reproducibility (C131 pattern)
+2. Direction correctness (C476 pattern)
+3. Denominator informativeness (C475 pattern)
+4. JSON-vs-writeup mismatch (C481 pattern)
+
+Plus: interpretive dependence on retracted/demoted constraints = +1 axis.
+
+Decision rules (locked):
+- 3+ axes fail → RETRACT
+- 2 axes fail → DEMOTE
+- 1 axis fails → REFRAME (in-place, no tier change)
+- 0 axes fail → SURVIVES
+
+### Verdicts
+
+| Constraint | Verdict | Axes failed | Action |
+|-----------|---------|------------:|--------|
+| **C478** Temporal Coverage Scheduling | REFRAME | 1 (interpretation depends on retracted C476) | Clear AUDIT_PENDING; descriptive measurements stay Tier 2, "scheduling" interpretation demoted to Tier 3 |
+| **C479** Survivor-Set Discrimination Scaling | SURVIVES | 0 | Update cross-refs to demoted C475 + retracted C481; constraint stands at Tier 2 |
+| **C480** Constrained Execution Variability | SURVIVES | 0 | No change — already properly hedged as Tier 3 PROVISIONAL |
+| **C755** A Folio Coverage Homogeneity | DEMOTE Tier 2→3 | 2 (interpretation depends on retracted C476 + same "worse-than-random reframed as deliberate" pattern) | Demote |
+| **C756** Coverage Optimization Confirmed | DEMOTE Tier 2→3 | 2 (interpretive dependence + likely broken random-PP baseline for 11× comparison) | Demote |
+
+### Why C478 was REFRAMED not demoted
+
+C478 has 4 sub-claims. The descriptive measurements (back-loaded coverage, front-loaded novelty, U-shaped tail, prefix cycling) are facts about A's MIDDLE ordering independent of any interpretation. They survive as Tier 2. The "pedagogical pacing / deliberate scheduling" INTERPRETATION depends on retracted C476's "coverage optimality" framing, which dies. So C478 becomes a split: Tier 2 measurements + Tier 3 demoted interpretation. Cleanest in-place reframe.
+
+### Why C479 SURVIVES despite C475/C481 cross-references
+
+C479's partial-correlation methodology (rho=0.395, p=2.4e-30, n=774) is independent of C475's specific "95.7% incompatibility" framing and C481's "0 collisions uniqueness" framing. C479 measures correlation between survivor-set SIZE and HT diversity — neither C475 demotion nor C481 retraction invalidates this. Cross-references updated to acknowledge those changes; constraint substance unaffected.
+
+### Why C480 SURVIVES
+
+C480 is already registered as **Tier 3 PROVISIONAL** with rho=0.306, p=0.078 explicitly cited as marginal. The constraint text honestly says "marginal", "do not promote without replication". This is the textbook example of properly-hedged registration that doesn't need audit action.
+
+### 2026-01-12 cohort final summary
+
+After this batch-sweep, the 2026-01-12 probe family final status:
+
+| Constraint | Final Status | Pattern that broke it |
+|-----------|--------------|----------------------|
+| C475 | DEMOTED | Sparsity denominator |
+| C476 | RETRACTED | Broken baseline + wrong direction |
+| C478 | REFRAMED | Interpretation depended on retracted C476 |
+| C479 | SURVIVES | — |
+| C480 | SURVIVES (already Tier 3 hedged) | — |
+| C481 | RETRACTED | Triple-pattern + post-hoc reframe |
+| C755 | DEMOTED | Interpretive dependence on retracted C476 |
+| C756 | DEMOTED | Interpretive dependence + broken-baseline pattern |
+
+**6/8 cohort actions (75%).** Confirms the systematic registration-discipline gap in this 2026-01-12 cohort:
+- Sparsity-denominator unawareness (C475)
+- Broken-baseline tolerance (C476, C755, C756)
+- Wrong-direction interpretation flip ("worse than random = deliberate optimization": C476, C755)
+- Post-hoc claim-substitution in writeups (C481)
+- Interpretive dependence chains (C478 → C476, C755 → C476, C756 → C476)
+
+The 2026-01-12 batch is now fully audited. The survivors (C479, C480) are independent of the broken framework.
+
+### Cumulative session retraction/demotion stats (final)
+
+- **7 audit-driven actions** (C131, C475, C1068, C1065-clean, C476, C481, batch-sweep)
+- **3 retractions + 5 demotions + 1 reframe + 1 clean-confirmation**
+- Constraint count: 2036 → 2033
+- Retraction count: 6 → 9
+- Demoted count: 1 → 5
+- **5 methodology memories** added (5 distinct failure-mode patterns)
+- **Audit-sweep tool** built + refined
+- **2026-01-12 cohort** fully audited
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `phases/BATCH_SWEEP_2026_01_12/INDEX.md` | NEW — full batch-sweep narrative with verdicts |
+| `context/CLAIMS/currier_a.md` | C478 reframed; AUDIT_PENDING cleared |
+| `context/CLAIMS/C755_*.md` | Demoted Tier 2→3 |
+| `context/CLAIMS/C756_*.md` | Demoted Tier 2→3 |
+| `context/CLAIMS/C479_*.md` | Cross-refs updated |
+| `context/CLAIMS/INDEX.md` | Version 6.77→6.78; C755+C756 rows updated |
+| `CLAUDE.md` | Version 6.77→6.78; demoted count 3→5 |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `.claude/agents/crazy-expert.md` | Rows updated for C478, C755, C756 |
+| Sync files | Regenerated |
+
+### Next direction
+
+The 2026-01-12 cohort cleanup is complete. The remaining audit-sweep candidates (199 score≥1 from refined triage) are heterogeneous across different methodology cohorts. Without another concentrated cohort signal like the 2026-01-12 batch, returning to one-at-a-time audits is appropriate.
+
+Session terminal point: 7 audit actions + 5 methodology memories + 5 failure-mode taxonomy + audit-sweep tool + 2026-01-12 cohort fully resolved.
+
+---
+
 ## Version 6.77 (2026-05-19) - C481 RETRACTED (triple-pattern + reframe) + 5th audit failure pattern + batch-sweep mode
 
 ### Summary

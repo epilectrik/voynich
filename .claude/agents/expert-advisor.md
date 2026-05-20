@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 21:25
+**Generated:** 2026-05-19 21:40
 **Version:** FROZEN STATE (2033 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -771,7 +771,7 @@ C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC
 C475	MIDDLE ATOMIC INCOMPATIBILITY [DEMOTED Tier 2 → Tier 3, REFRAMED 2026-05-19]	2	A
 C477	**HT Tail Correlation**	2	HT/A
-C478	TEMPORAL COVERAGE SCHEDULING [AUDIT_PENDING 2026-05-19]	2	A
+C478	TEMPORAL COVERAGE SCHEDULING [REFRAMED 2026-05-19]	2	A
 C479	**Survivor-Set Discrimination Scaling**	2	A+AZC+HT
 C480	Constrained Execution Variability	3	A→B
 C482	**Compound Input Specification**	2	A→B
@@ -1051,8 +1051,8 @@ C751	**Coverage Pool-Size Confound**	2	A<>B
 C752	**No Section-to-Section Routing**	2	A<>B
 C753	**No Content-Specific A-B Routing** (partial r=-0.038 after size control; no granularity achieves discrimination; reframe as constraint propagation)	2	A<>B
 C754	**Role-Aware Infrastructure Filtering**	2	A<>B
-C755	**A Folio Coverage Homogeneity** (real A folios at 0th percentile for discrimination vs random; deliberate coverage optimization)	2	A
-C756	**Coverage Optimization Confirmed** (11x higher pairwise similarity than random; first 10 folios cover 60% PP; hub MIDDLEs 100% PP)	2	A
+C755	**[DEMOTED Tier 2→3 2026-05-19]** Originally "A Folio Coverage Homogeneity" Tier 2. Measurement survives (real A folios at 0th percentile vs synthetic for discrimination, mean 1.064 vs 1.281). Interpretation as "deliberate coverage optimization" demoted because inherits from retracted C476. Same "real worse than random reframed as deliberate" pattern that broke C476. Batch-sweep `phases/BATCH_SWEEP_2026_01_12/`.	3	A
+C756	**[DEMOTED Tier 2→3 2026-05-19]** Originally "Coverage Optimization Confirmed" Tier 2. 11× pairwise similarity likely has broken-baseline issue (random PP vocab doesn't represent meaningful alternative). Hub-MIDDLE structural observation (25 MIDDLEs in >50% folios, 100% PP) survives as descriptive. "Coverage optimization confirmed" headline inherits from retracted C476. Batch-sweep `phases/BATCH_SWEEP_2026_01_12/`.	3	A
 C757	**AZC Zero Kernel/Link** (0 KERNEL, 0 LINK; ~50% OPERATIONAL, ~50% UN; AZC is outside execution layer)	2	AZC
 C758	**P-Text Currier A Identity** (PREFIX cosine 0.97 to A, 0.74 to diagram; 19.5% MIDDLE overlap with same-folio diagram)	2	AZC
 C759	**AZC Position-Vocabulary Correlation**	2	AZC

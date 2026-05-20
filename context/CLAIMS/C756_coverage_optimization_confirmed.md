@@ -1,6 +1,14 @@
-# C756: A Folio Coverage Optimization Confirmed
+# C756: A Folio Coverage Optimization Confirmed [DEMOTED Tier 2 → Tier 3, 2026-05-19]
 
-**Status:** VALIDATED | **Tier:** 2 | **Phase:** AZC_REASSESSMENT | **Scope:** A
+**Status:** DEMOTED via batch-sweep audit | **Tier:** 3 (was Tier 2) | **Phase:** AZC_REASSESSMENT | **Scope:** A
+
+**Demotion narrative (2026-05-19):** Two main claims with different fates after audit:
+
+1. **11× higher pairwise Jaccard similarity (real 0.246 vs random 0.022, z=1144)** — likely-broken baseline. The z=1144 is characteristic of comparing actual frequency-weighted distributions to uniform-random samples (similar pattern to C476's broken greedy baseline). The "random PP vocabulary" baseline doesn't represent any meaningful alternative hypothesis about coverage strategy.
+
+2. **Hub-MIDDLE structural observation (25 MIDDLEs in >50% folios, 100% PP, binomial p<0.0001)** — survives as descriptive structural fact about A's MIDDLE inventory.
+
+**Demoted to Tier 3** because: (a) interpretive framing "A folios are designed to maximize vocabulary availability rather than discriminate" inherits from retracted C476 (Coverage Optimality); (b) the 11× similarity comparison likely has the broken-baseline pattern. The hub-MIDDLE observation can stand as descriptive but the "coverage optimization confirmed" headline depends on retracted foundation.
 
 ## Finding
 

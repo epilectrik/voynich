@@ -37,9 +37,14 @@ Phase SSD Test 1 Results:
 | Constraint | Relationship |
 |------------|--------------|
 | C477 | **Extends**: HT correlates with tail pressure AND survivor-set size |
-| C475 | **Explains**: 95.7% MIDDLE incompatibility creates highly discriminating survivor sets |
+| ~~C475~~ | ~~Explains: 95.7% MIDDLE incompatibility~~ — **C475 DEMOTED 2026-05-19** (sparsity denominator); the 95.7% framing is sparsity-driven. C479's measurement (partial correlation rho=0.395, p=2.4e-30) is methodologically independent and stands at Tier 2. |
+| ~~C481~~ | ~~implicitly related to survivor-set uniqueness~~ — **C481 RETRACTED 2026-05-19** (value doesn't reproduce, direction wrong). C479's survivor-set SIZE measurement is distinct from C481's UNIQUENESS claim and is unaffected. |
 | C254 | **Compatible**: No grammar branching involved; discrimination layer only |
 | C404-C405 | **Preserves**: HT remains non-operational |
+
+## Audit notes (2026-05-19 batch-sweep)
+
+C479 reviewed in 2026-01-12 cohort batch-sweep (`phases/BATCH_SWEEP_2026_01_12/`). **Verdict: SURVIVES.** Methodology (partial correlation between survivor-set size and HT morphological diversity, controlling for line length) is independent of the framework issues that retracted C476 and C481. The numerical result (partial rho=0.395, p=2.4e-30, n=774) stands as Tier 2 measurement. Cross-references to C475 (now demoted) and implicit C481 dependency (now retracted) updated above; the constraint's substantive claim is unaffected by those retractions.
 
 ---
 

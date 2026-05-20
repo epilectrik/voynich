@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2033 validated constraints | **Version:** 6.77 | **Date:** 2026-05-19 (C481 retracted post-audit, triple-pattern failure)
+**Total:** 2033 validated constraints | **Version:** 6.78 | **Date:** 2026-05-19 (2026-01-12 cohort batch-sweep complete: C478 reframed, C755+C756 demoted, C479+C480 survive)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -993,8 +993,8 @@ Every new constraint MUST specify system scope:
 |---|------------|------|-------|--------|
 | **753** | **No Content-Specific A-B Routing** (partial r=-0.038 after size control; no granularity achieves discrimination; reframe as constraint propagation) | 2 | A<>B | -> [C753_no_content_routing.md](C753_no_content_routing.md) |
 | **754** | **Role-Aware Infrastructure Filtering** (CORE_CONTROL 95%+ survival regardless of pool size; AUXILIARY 20% under small pools; McNemar p<0.0001) | 2 | A<>B | -> [C754_role_aware_filtering.md](C754_role_aware_filtering.md) |
-| **755** | **A Folio Coverage Homogeneity** (real A folios at 0th percentile for discrimination vs random; deliberate coverage optimization) | 2 | A | -> [C755_a_folio_coverage_homogeneity.md](C755_a_folio_coverage_homogeneity.md) |
-| **756** | **Coverage Optimization Confirmed** (11x higher pairwise similarity than random; first 10 folios cover 60% PP; hub MIDDLEs 100% PP) | 2 | A | -> [C756_coverage_optimization_confirmed.md](C756_coverage_optimization_confirmed.md) |
+| 755 | **[DEMOTED Tier 2→3 2026-05-19]** Originally "A Folio Coverage Homogeneity" Tier 2. Measurement survives (real A folios at 0th percentile vs synthetic for discrimination, mean 1.064 vs 1.281). Interpretation as "deliberate coverage optimization" demoted because inherits from retracted C476. Same "real worse than random reframed as deliberate" pattern that broke C476. Batch-sweep `phases/BATCH_SWEEP_2026_01_12/`. | 3 | A | -> [C755_a_folio_coverage_homogeneity.md](C755_a_folio_coverage_homogeneity.md) |
+| 756 | **[DEMOTED Tier 2→3 2026-05-19]** Originally "Coverage Optimization Confirmed" Tier 2. 11× pairwise similarity (z=1144) likely has broken-baseline issue (random PP vocab doesn't represent meaningful alternative). Hub-MIDDLE structural observation (25 MIDDLEs in >50% folios, 100% PP) survives as descriptive. "Coverage optimization confirmed" headline inherits from retracted C476. Batch-sweep `phases/BATCH_SWEEP_2026_01_12/`. | 3 | A | -> [C756_coverage_optimization_confirmed.md](C756_coverage_optimization_confirmed.md) |
 
 ### AZC Folio Differentiation (C757-C765, C900) - Phase: AZC_FOLIO_DIFFERENTIATION, PTEXT_FOLIO_ANALYSIS
 
