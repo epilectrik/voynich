@@ -136,9 +136,27 @@ The matcher is NOT producing null behavior on Theophilus. It's producing real st
 4. **C1971 family triage required** — NOT blanket demotion. Per-constraint reasoning needed.
 5. **Triage criterion:** does the constraint claim CONTENT (e.g., "Ch19 = aqua vitae", specific PL→folio correspondence) or STRUCTURE (e.g., "d<1.0 alignment", "8D distance")? Content claims demote to Tier 3; structural claims survive at Tier 2.
 
-### What this means
+### Critical scope clarification
 
-**The 8D matcher detects medieval procedural Latin structural attraction generally, not alchemy-specific operational correspondence.** Voynich folios attract Codicillus chapters AND Theophilus chapters at similar rates and to the same Section B folios. The substrate's "operational shape" is real at the genre level (medieval craft procedure manual) but the domain interpretation (alchemy/distillation specifically) is NOT supported by the matcher.
+**What this DOES refute:** the 8D matcher's domain-discriminative power. The matcher's text features (heat_rate, monitoring_rate, etc.) cluster medieval-craft-procedural Latin generically. The C1971-family interpretive claim that "matcher demonstrates alchemy-specific operational correspondence with Pseudo-Lull" is refuted.
+
+**What this does NOT refute — the distillation/thermal-circulatory interpretation broadly.** That interpretation rests on multiple INDEPENDENT lines of evidence:
+
+- **PWRE-1 structural narrowing:** the controller architecture STRUCTURALLY EXCLUDES 12 process classes including irreversible transformations (rules out Theophilus-type metalwork). What survives: circulatory thermal conditioning, volatile extraction/separation, circulatory reflux operations. This is an architecture-compatibility test, completely independent of the 8D matcher.
+- **PHYS kernel dynamics:** k/h excitation → e stability, rapid recovery, LINK-heavy/sparse pattern. Within-text observations, independent.
+- **C1314 qo-k/ok-e thermal cycling:** within-line bigram pattern via permutation null. Independent.
+- **C645+C2045 hazard-recovery directional:** post-hazard cooling-bias substrate-level. Independent.
+- **C2042 atom-monocategorical operational signature:** categorical-vocabulary signature. Independent.
+- **Substrate quintet:** C2032 lag-ratio, C2015 compression, C2022 Markov plateau — all non-NL discriminators. Independent.
+
+**Resolution:** PWRE specifically predicts Theophilus-type metalwork is incompatible with Voynich's controller architecture. The 8D matcher matches Theophilus chapters to Voynich folios anyway. Together this implies the matcher's text features aren't physics-sensitive — they cluster by surface text properties regardless of underlying physical-process compatibility. **The matcher's genericity REVEALS this measurement limitation; it does NOT refute the independent physics narrowing.**
+
+### What this means precisely
+
+**The 8D matcher is a generic medieval-procedural-Latin attractor, not a domain-discriminative tool.** This means:
+- 8D-matcher-based content correspondence claims (e.g., "Voynich folio X = Pseudo-Lull chapter Y content") need scope refinement: structural alignment ≠ content correspondence
+- The distillation/thermal interpretation broadly rests on OTHER evidence (PWRE structural narrowing being the strongest), not the matcher
+- C1971's d<1.0 distance measurements survive as empirical facts; what gets refined is the content-correspondence interpretation
 
 ### Registered constraint
 
@@ -163,6 +181,12 @@ vs. constraints that claim:
 
 ### Pattern this confirms
 
-Four failed mechanism interpretations in this session (PHASE_711 parametric, PHASE_716 line-spanning, mode coherence, now alchemy-specificity) + cumulative audit pattern = **the "operational-specificity death zone" is real**. Mechanism interpretations at the "encodes X domain" level reliably die under discriminating tests. Structural measurements survive.
+Four failed mechanism interpretations in this session — but specifically at the **INTERNAL-MATCHER-LAYER**, not the underlying physics-narrowing layer:
+1. PHASE_711 parametric atom-slot semantics (internal matcher-style test)
+2. PHASE_716 line-spanning C1212 chaining (internal pattern test)
+3. PHASE_716 mode coherence (internal pattern test)
+4. PHASE_718 matcher-specificity (matcher test)
 
-The operational reading at GENRE level (medieval craft procedure) survives. The DOMAIN-specific reading (alchemy/distillation) does NOT. C171's semantic ceiling re-confirmed at the matcher level.
+**Pattern:** internal-only domain-claim interpretations using project framework vocabulary reliably die at proper discriminating tests. INDEPENDENT-evidence interpretations (PWRE structural narrowing, substrate quintet, atom categorical signature) survive — they weren't tested by this session's discriminators because they aren't matcher-based.
+
+The operational/distillation reading rests on the independent evidence layer, not the matcher layer. C171's semantic ceiling re-confirmed at the MATCHER level specifically (the matcher can't decode content), but the substrate's exceptional physics-architecture signature stands.

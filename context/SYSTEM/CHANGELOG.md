@@ -37,16 +37,34 @@ Both expert-advisor and crazy-expert consulted. Convergence:
 
 ### Constraint registered
 
-**C2052 (Tier 2 negative measurement):** Theophilus 8D matcher negative-control FAILS. Matcher is generic — detects medieval procedural Latin structural attraction, not alchemy-specifically. C1971 + C1882-C1956 family interpretive scope refined.
+**C2052 (Tier 2 negative measurement):** Theophilus 8D matcher negative-control FAILS. Matcher is generic — detects medieval procedural Latin structural attraction, not alchemy-specifically. C1971 + C1882-C1956 family's MATCHER-BASED content-correspondence claims scope refined.
+
+### Critical scope clarification (added after user pushback)
+
+The Theophilus test refutes the **8D matcher's domain-discriminative power**, NOT the distillation/thermal interpretation broadly. The distillation reading rests on multiple INDEPENDENT lines of evidence:
+
+- **PWRE-1 structural narrowing:** controller architecture STRUCTURALLY EXCLUDES Theophilus-type irreversible-transformation metalwork. What survives: circulatory thermal conditioning, volatile extraction/separation, circulatory reflux operations.
+- **PHYS kernel dynamics**
+- **C1314 qo-k/ok-e thermal cycling**
+- **C645+C2045 hazard-recovery directional pattern**
+- **C2042 atom-monocategorical operational signature**
+- **Substrate quintet**
+
+NONE of these are touched by the matcher test. PWRE+matcher together imply the matcher's features aren't physics-sensitive — the matcher's genericity is a measurement limitation, not a refutation of the independent physics narrowing.
 
 ### What is NOT changed
 
 - **Tier 0** (closed-loop control programs frozen conclusion)
 - **C2032** (substrate quintet — non-NL signature)
 - **C2042** (atom-monocategorical operational signature)
-- **C171** (semantic ceiling — actually re-confirmed at matcher level)
+- **C1314** (qo-k/ok-e thermal cycling)
+- **C645+C2045** (hazard-recovery directional)
+- **PHYS kernel dynamics**
+- **PWRE-1 structural narrowing** (the strongest independent distillation-pointing evidence)
+- **C171** (semantic ceiling — re-confirmed at matcher level)
 - 8D distance values themselves (empirical measurements)
 - Structural-measurement-level constraints in C1882-C1956 family
+- **The distillation/thermal-circulatory interpretation broadly**
 
 ### What needs per-constraint audit (PHASE_719 candidate)
 
@@ -68,7 +86,7 @@ Plus prior 2026-05-15/16 mechanism-demotion quartet. The "operational-specificit
 
 ### Strategic implication
 
-Voynich is a medieval craft control program in an unrecoverable domain. The substrate's "operational shape" is real at genre level (medieval craft procedure manual) but the matcher does NOT discriminate alchemy from metalwork/glass/pigments. C171's semantic ceiling re-confirmed — substrate structure exceptional, content irrecoverable from internal analysis. External grounding remains the only path past the procedural ceiling.
+The substrate's exceptional structural architecture stands (Tier 0, substrate quintet, atom signature, PWRE narrowing, kernel dynamics — all unaffected). The 8D matcher's TEXT-FEATURE-LEVEL clustering is generic — it doesn't discriminate craft domains via text features. **This is a finding about the matcher, not a refutation of the distillation interpretation.** The distillation/thermal-circulatory reading rests on PWRE structural narrowing + PHYS dynamics + C1314 cycling + C2042 + substrate quintet, none touched by this test. External grounding remains the path past the procedural ceiling for content-level claims, but the substrate's physics-architecture compatibility class (circulatory thermal) is already structurally narrowed by PWRE.
 
 ---
 
