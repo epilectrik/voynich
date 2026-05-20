@@ -1,0 +1,89 @@
+{
+  "method": "PHASE_716 mode-aware extension",
+  "n_paragraphs": 82,
+  "n_shuffles": 1000,
+  "test_1_pair_distances": {
+    "B-B": {
+      "n_pairs": 644,
+      "mean_squared_dist": 17.271909040448655,
+      "median_squared_dist": 4.2885850933578205,
+      "std_squared_dist": 111.77576540252065
+    },
+    "B-A": {
+      "n_pairs": 471,
+      "mean_squared_dist": 11.75758790394021,
+      "median_squared_dist": 5.184165484864786,
+      "std_squared_dist": 15.794656605688091
+    },
+    "A-B": {
+      "n_pairs": 464,
+      "mean_squared_dist": 10.686351950858388,
+      "median_squared_dist": 5.149583333333333,
+      "std_squared_dist": 16.029006769303834
+    },
+    "A-A": {
+      "n_pairs": 736,
+      "mean_squared_dist": 11.267767276958546,
+      "median_squared_dist": 1.565612244897959,
+      "std_squared_dist": 69.9450038970759
+    },
+    "B-U": {
+      "n_pairs": 3,
+      "mean_squared_dist": 25.029727891156465,
+      "median_squared_dist": 9.729183673469388,
+      "std_squared_dist": 28.332135935694975
+    },
+    "U-B": {
+      "n_pairs": 3,
+      "mean_squared_dist": 59.535549802761345,
+      "median_squared_dist": 16.97,
+      "std_squared_dist": 60.463021858744014
+    },
+    "A-U": {
+      "n_pairs": 8,
+      "mean_squared_dist": 60.030579276153915,
+      "median_squared_dist": 31.544722222222223,
+      "std_squared_dist": 53.18474735176235
+    },
+    "U-A": {
+      "n_pairs": 8,
+      "mean_squared_dist": 113.13641355394769,
+      "median_squared_dist": 51.00424701561065,
+      "std_squared_dist": 166.24289532766144
+    },
+    "U-U": {
+      "n_pairs": 1,
+      "mean_squared_dist": 0.0,
+      "median_squared_dist": 0.0,
+      "std_squared_dist": 0.0
+    }
+  },
+  "line_mode_counts": {
+    "B": 1156,
+    "A": 1252,
+    "U": 12
+  },
+  "test_2_residualization": {
+    "baseline": {
+      "observed": 31551.509121567116,
+      "null_mean": 37583.356523318835,
+      "null_std": 1592.3621962456841,
+      "z": -3.787987064735032,
+      "n_pairs": 2338
+    },
+    "mode_residualized": {
+      "observed": 30193.95098523611,
+      "null_mean": 36071.94560453513,
+      "null_std": 1551.6513884865192,
+      "z": -3.788218579839907,
+      "n_pairs": 2338
+    },
+    "collapse_pct": 0.006111824061648922,
+    "verdict": "MODE-COHERENCE NOT MAIN MECHANISM (<20% collapse)"
+  },
+  "test_3_transition_rate": {
+    "n_transition_pairs": 935,
+    "n_same_mode_pairs": 1380,
+    "transition_rate": 0.4038876889848812
+  }
+}

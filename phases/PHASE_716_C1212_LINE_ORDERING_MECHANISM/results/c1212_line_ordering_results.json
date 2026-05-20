@@ -1,0 +1,124 @@
+{
+  "method": "PHASE_716 C1212 as mechanism for C1727 line-ordering smoothness",
+  "n_paragraphs": 82,
+  "n_lines": 2420,
+  "n_shuffles": 1000,
+  "results_by_variant": {
+    "baseline": {
+      "label": "Baseline (full lines)",
+      "skip_first_n": 0,
+      "skip_last_n": 0,
+      "observed_score": 31551.509121567116,
+      "null_mean": 37583.356523318835,
+      "null_std": 1592.3621962456841,
+      "z_score": -3.787987064735032,
+      "p_empirical": 0.0,
+      "n_pairs": 2338
+    },
+    "skip_first_1": {
+      "label": "Skip first 1 tokens",
+      "skip_first_n": 1,
+      "skip_last_n": 0,
+      "observed_score": 30518.69852109238,
+      "null_mean": 36895.35680428614,
+      "null_std": 1611.619929403747,
+      "z_score": -3.956676240379415,
+      "p_empirical": 0.0,
+      "n_pairs": 2332
+    },
+    "skip_first_2": {
+      "label": "Skip first 2 tokens",
+      "skip_first_n": 2,
+      "skip_last_n": 0,
+      "observed_score": 29716.872277812538,
+      "null_mean": 36405.32541066748,
+      "null_std": 1585.3454121323507,
+      "z_score": -4.218924835981778,
+      "p_empirical": 0.0,
+      "n_pairs": 2324
+    },
+    "skip_first_3": {
+      "label": "Skip first 3 tokens",
+      "skip_first_n": 3,
+      "skip_last_n": 0,
+      "observed_score": 27672.070869059102,
+      "null_mean": 34590.413216224566,
+      "null_std": 1506.9868860632178,
+      "z_score": -4.590844426814237,
+      "p_empirical": 0.0,
+      "n_pairs": 2295
+    },
+    "skip_first_5": {
+      "label": "Skip first 5 tokens",
+      "skip_first_n": 5,
+      "skip_last_n": 0,
+      "observed_score": 17325.758925098664,
+      "null_mean": 22696.53723579313,
+      "null_std": 1429.1657434629071,
+      "z_score": -3.75798142046207,
+      "p_empirical": 0.0,
+      "n_pairs": 2112
+    },
+    "skip_last_1": {
+      "label": "Skip last 1 tokens",
+      "skip_first_n": 0,
+      "skip_last_n": 1,
+      "observed_score": 31427.767270335105,
+      "null_mean": 37524.471593083246,
+      "null_std": 1589.0620430773843,
+      "z_score": -3.8366685236161313,
+      "p_empirical": 0.0,
+      "n_pairs": 2338
+    },
+    "skip_last_2": {
+      "label": "Skip last 2 tokens",
+      "skip_first_n": 0,
+      "skip_last_n": 2,
+      "observed_score": 30940.105940340807,
+      "null_mean": 37181.890460658164,
+      "null_std": 1584.6860842134067,
+      "z_score": -3.938814496131328,
+      "p_empirical": 0.0,
+      "n_pairs": 2338
+    },
+    "skip_last_3": {
+      "label": "Skip last 3 tokens",
+      "skip_first_n": 0,
+      "skip_last_n": 3,
+      "observed_score": 29206.24969932195,
+      "null_mean": 35654.6824826742,
+      "null_std": 1567.0038373307743,
+      "z_score": -4.115135285396924,
+      "p_empirical": 0.0,
+      "n_pairs": 2338
+    },
+    "skip_last_5": {
+      "label": "Skip last 5 tokens",
+      "skip_first_n": 0,
+      "skip_last_n": 5,
+      "observed_score": 20097.57413251306,
+      "null_mean": 26222.12609916061,
+      "null_std": 1352.3711463214038,
+      "z_score": -4.528750841296043,
+      "p_empirical": 0.0,
+      "n_pairs": 2338
+    },
+    "skip_both_3": {
+      "label": "Skip first 3 + last 3 tokens",
+      "skip_first_n": 3,
+      "skip_last_n": 3,
+      "observed_score": 19042.477406970764,
+      "null_mean": 25193.476335612722,
+      "null_std": 1313.0962192924198,
+      "z_score": -4.684347451671523,
+      "p_empirical": 0.0,
+      "n_pairs": 2295
+    }
+  },
+  "baseline_z": -3.787987064735032,
+  "skip_first_3_z": -4.590844426814237,
+  "skip_last_3_z": -4.115135285396924,
+  "collapse_first_3_pct": 21.19482850280969,
+  "collapse_last_3_pct": 8.636466151311314,
+  "verdict": "PATHOLOGICAL \u2014 exclusion methodology has confound"
+}

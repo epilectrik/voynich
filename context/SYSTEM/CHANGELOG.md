@@ -4,6 +4,54 @@
 
 ---
 
+## Version 6.84 (2026-05-20) - PHASE_716 C1727 mechanism narrowing → C2049 + C2050 + C2051
+
+### Summary
+
+Multi-stage mechanism narrowing for C1727 line-ordering smoothness anchor. Three falsified mechanism hypotheses + one localized signal finding. Expert-advisor required blocking controls (within-folio shuffle null robustness + random-subset artifact control + reproduction scope) before registration; all satisfied.
+
+### Falsification cascade
+
+1. **C1212 cross-line chaining** (crazy-expert PHASE_715 follow-up) — FALSIFIED. Pre-registered: if C1212 IS mechanism, excluding first 3 tokens collapses z toward 0. Observed: z=-3.79 → -4.59 (+21.2% INTENSIFICATION, opposite direction). Symmetric on last-3 exclusion (+8.6%). Crazy-expert accepted falsification.
+
+2. **Mode A/B coherence** (user-suggested) — FALSIFIED. Within-mode pair distances larger than cross-mode (ratio cross/within = 0.80, opposite direction). Mode transition rate 40.4% — paragraphs not strongly mode-locked. Mode is downstream of HEAD/TERM per C1341.
+
+3. **HEAD+TERM JOINT coherence is localizable signal:** of 12 schemes tested, HEAD+TERM joint (13 dim) gives z=-7.76 vs baseline z=-3.81. Random 13-feature subsets give mean z=-3.88 — HEAD+TERM at rank 2% of random subsets (REAL specific signal, not dimensionality artifact). Individual HEAD-only (rank 14%) and TERM-only (rank 18%) are MARGINAL.
+
+### Blocking controls (expert-advisor required)
+
+| Control | Result |
+|---|---|
+| Baseline z robustness (3 seeds × 3000 shuffles) | mean z=-3.811, std 0.052 — stable |
+| Random-subset artifact control | HEAD+TERM rank 2% (specific); HEAD/TERM individual rank 14-18% (marginal) |
+| Reproduction scope | folio-segmented (z=-3.81) vs original C1727 paragraph-segmented (z=-6.05) — scope-restricted in registration |
+
+### Constraints registered
+
+- **C2049 (Tier 2):** Cross-line C1212 chaining NOT mechanism for C1727
+- **C2050 (Tier 2):** Mode A/B coherence NOT mechanism for C1727
+- **C2051 (Tier 2):** HEAD+TERM JOINT coherence is localizable signal (folio-segmented, with scope caveats)
+
+### Methodology errors documented
+
+Paragraph-mean and section-mean residualization tests were mathematically invalid (subtracting per-paragraph constant doesn't change consecutive differences — identity). Documented in C2049 and C2050 text for audit clarity. The C1727 within-paragraph shuffle null IS the correct paragraph-pool test (which we already use).
+
+### Crazy-expert accountability
+
+Three consecutive failed mechanism hypotheses (PHASE_711 parametric semantics, PHASE_716 line-spanning chaining, mode coherence reasoning) — entered "operational-specificity death zone." Direct quote registered: *"No Tier 3 mechanism interpretation in same session as measurement. Demote me to measurement-characterization role for the C1727 family until either external grounding or substrate-level synthesis breaks the cycle."*
+
+### Mechanism interpretations NOT promoted past Tier 4
+
+- "Recipe progression / topic shift / narrative structure" reading of HEAD+TERM gradient — Tier 4 SPECULATIVE
+- Multi-step thermal architecture (already retracted in PHASE_714+715)
+- Cross-line propagation of compositional structure — FALSIFIED
+
+### Strategic implication
+
+Three mechanism hypotheses falsified, one localizable measurement registered. The C1727 mechanism question remains partly open at the interpretive level (what causes HEAD+TERM gradient?) but is now substantially narrowed at the measurement level. Per `feedback_mechanism_cycle_procedural_ceiling.md`: further mechanism speculation needs external grounding.
+
+---
+
 ## Version 6.83 (2026-05-20) - PHASE_715 multi-anchor refinement → C2047 heterogeneous depth + C2048 C1212 multi-step
 
 ### Summary

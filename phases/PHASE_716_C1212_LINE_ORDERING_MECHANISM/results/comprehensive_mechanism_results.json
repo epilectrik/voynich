@@ -1,0 +1,117 @@
+{
+  "method": "PHASE_716 comprehensive mechanism search",
+  "n_paragraphs": 82,
+  "n_shuffles": 500,
+  "baseline_z": -3.716746691421472,
+  "results_by_scheme": {
+    "baseline": {
+      "observed": 31551.509121567116,
+      "null_mean": 37576.137722043335,
+      "null_std": 1620.9414040460465,
+      "z_score": -3.716746691421472,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 0.0
+    },
+    "paragraph_mean_residualized": {
+      "observed": 31551.509121567116,
+      "null_mean": 37576.137722043335,
+      "null_std": 1620.9414040460465,
+      "z_score": -3.716746691421472,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 0.0
+    },
+    "section_mean_residualized": {
+      "observed": 31551.509121567116,
+      "null_mean": 37576.137722043335,
+      "null_std": 1620.9414040460465,
+      "z_score": -3.716746691421472,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 0.0
+    },
+    "head_only": {
+      "observed": 430.8949942799268,
+      "null_mean": 460.7887204668561,
+      "null_std": 4.804128605348052,
+      "z_score": -6.222507481096784,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 67.41812121495376
+    },
+    "term_only": {
+      "observed": 328.11412728719387,
+      "null_mean": 353.73700157648045,
+      "null_std": 3.935973016887372,
+      "z_score": -6.509921226428922,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 75.15105997011592
+    },
+    "length_only": {
+      "observed": 29852.0,
+      "null_mean": 35772.602,
+      "null_std": 1619.0712496971837,
+      "z_score": -3.6567890394615645,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 1.6131756328268045
+    },
+    "mode_only": {
+      "observed": 940.5,
+      "null_mean": 989.01,
+      "null_std": 20.68625509849475,
+      "z_score": -2.3450353758583327,
+      "p_empirical": 0.012,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 36.90623627187592
+    },
+    "head_term_only": {
+      "observed": 759.0091215671206,
+      "null_mean": 814.5257220433366,
+      "null_std": 6.986866432879027,
+      "z_score": -7.94585112074909,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 113.78511317676573
+    },
+    "no_head": {
+      "observed": 31120.614127287194,
+      "null_mean": 37115.349001576484,
+      "null_std": 1620.9962582945664,
+      "z_score": -3.6981793410160546,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 0.49955920989375996
+    },
+    "no_term": {
+      "observed": 31223.39499427992,
+      "null_mean": 37222.40072046685,
+      "null_std": 1621.062177982227,
+      "z_score": -3.700663557306625,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 0.43272074881961603
+    },
+    "no_length": {
+      "observed": 1699.509121567121,
+      "null_mean": 1803.5357220433366,
+      "null_std": 21.887193367308743,
+      "z_score": -4.752852443456382,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 27.876684586181742
+    },
+    "no_mode": {
+      "observed": 30611.009121567113,
+      "null_mean": 36587.12772204333,
+      "null_std": 1618.8915255383297,
+      "z_score": -3.6914879756931107,
+      "p_empirical": 0.0,
+      "n_pairs": 2338,
+      "magnitude_collapse_vs_baseline_pct": 0.6795920686943897
+    }
+  },
+  "verdict": "UNKNOWN MECHANISM \u2014 none of paragraph/section homogeneity collapses signal substantially"
+}

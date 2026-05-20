@@ -1,0 +1,46 @@
+{
+  "method": "PHASE_716 blocking controls (expert-advisor required)",
+  "control_1_robustness": {
+    "z_values": [
+      -3.876708930434469,
+      -3.80848249578698,
+      -3.748979068641133
+    ],
+    "z_mean": -3.8113901649541937,
+    "z_std": 0.05218601538998509,
+    "stable": false
+  },
+  "control_2_random_subsets": {
+    "head_only_z": -6.129932513810276,
+    "random_6_subset_z_distribution": {
+      "mean": -4.547672207724106,
+      "std": 1.1653348418580123,
+      "min": -6.838549186416723,
+      "max": -3.1253378010950117
+    },
+    "head_rank_pct": 0.13725490196078433,
+    "term_only_z": -6.314426922699774,
+    "random_7_subset_z_distribution": {
+      "mean": -4.462740667364668,
+      "std": 1.2266654550952127,
+      "min": -7.5493008827813055,
+      "max": -3.043179064627262
+    },
+    "term_rank_pct": 0.17647058823529413,
+    "head_term_only_z": -7.762632298871845,
+    "random_13_subset_z_distribution": {
+      "mean": -3.8778519658219235,
+      "std": 0.2928040248409431,
+      "min": -4.753334866905123,
+      "max": -3.5772790408204536
+    },
+    "ht_rank_pct": 0.0196078431372549,
+    "artifact_verdict": "HEAD+TERM SIGNAL PARTIAL \u2014 somewhere between specific and generic"
+  },
+  "control_3_reproduction": {
+    "my_baseline_z": -3.8113901649541937,
+    "original_C1727_z": -6.05,
+    "magnitude_gap_ratio": 1.5873473294940694,
+    "resolution": "scope-restrict to folio-segmented measurement"
+  }
+}
