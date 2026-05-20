@@ -1,0 +1,49 @@
+{
+  "method": "PHASE_718 d<1.0 absolute-distance gating corrected methodology",
+  "theophilus": {
+    "label": "Theophilus",
+    "d_threshold": 1.0,
+    "n_chapters": 179,
+    "chapters_with_at_least_1_match": 1,
+    "total_match_pairs_d_lt_threshold": 1,
+    "mean_matches_per_chapter": 0.00558659217877095,
+    "min_distance_distribution": {
+      "min": 0.9995976528008188,
+      "max": 6.542499567247724,
+      "mean": 1.7559390921364886,
+      "median": 1.6315399754453572
+    },
+    "folio_match_counts_top10": {
+      "f83r": 1
+    },
+    "section_match_counts": {
+      "B": 1
+    },
+    "confirmed_pairs_sample": [
+      {
+        "chapter_idx": 71,
+        "chapter_summary": "Book III Chapter IV",
+        "folio": "f83r",
+        "section": "B",
+        "distance": 0.9995976528008188
+      }
+    ]
+  },
+  "codicillus_baseline": {
+    "label": "Codicillus",
+    "d_threshold": 1.0,
+    "n_chapters": 19,
+    "chapters_with_at_least_1_match": 0,
+    "total_match_pairs_d_lt_threshold": 0,
+    "mean_matches_per_chapter": 0.0,
+    "min_distance_distribution": {
+      "min": 1.1607444254671835,
+      "max": 6.687419990427814,
+      "mean": 2.0959520240360185,
+      "median": 1.6934822503598679
+    },
+    "folio_match_counts_top10": {},
+    "section_match_counts": {},
+    "confirmed_pairs_sample": []
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "method": "PHASE_718 Theophilus 8D matcher negative-control test",
+  "n_chapters": 179,
+  "n_v_folios": 82,
+  "n_dims": 8,
+  "mean_ratio": 1.1576420580026963,
+  "median_ratio": 1.1158212333340207,
+  "n_confident_matches": 63,
+  "top1_section_attraction": {
+    "H": 118,
+    "B": 54,
+    "C": 7
+  },
+  "top10_attracted_folios": [
+    [
+      "f34v",
+      118,
+      "H"
+    ],
+    [
+      "f83r",
+      54,
+      "B"
+    ],
+    [
+      "f106v",
+      6,
+      "C"
+    ],
+    [
+      "f106r",
+      1,
+      "C"
+    ]
+  ],
+  "confident_matches": [
+    {
+      "chapter_idx": 1,
+      "book": "Book I",
+      "chapter_roman": "II",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.4592345641070035,
+      "ratio": 1.1593365041571053
+    },
+    {
+      "chapter_idx": 4,
+      "book": "Book I",
+      "chapter_roman": "V",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.4422822354911398,
+      "ratio": 1.1847121047591431
+    },
+    {
+      "chapter_idx": 19,
+      "book": "Book I",
+      "chapter_roman": "XX",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.5164326427872201,
+      "ratio": 1.1547525611703926
+    },
+    {
+      "chapter_idx": 22,
+      "book": "Book I",
+      "chapter_roman": "XXIII",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.5505874932021086,
+      "ratio": 1.1548054154198641
+    },
+    {
+      "chapter_idx": 26,
+      "book": "Book I",
+      "chapter_roman": "XXVII",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.1336472244515279,
+      "ratio": 1.2970240755575835
+    },
+    {
+      "chapter_idx": 28,
+      "book": "Book I",
+      "chapter_roman": "XXIX",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.5655691190995,
+      "ratio": 1.1925785832449338
+    },
+    {
+      "chapter_idx": 37,
+      "book": "Book I",
+      "chapter_roman": "XL",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.5232863962937286,
+      "ratio": 1.392342800335169
+    },
+    {
+      "chapter_idx": 38,
+      "book": "Book II",
+      "chapter_roman": "I",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.0802754318407792,
+      "ratio": 1.4871680518556496
+    },
+    {
+      "chapter_idx": 40,
+      "book": "Book II",
+      "chapter_roman": "III",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.3765037781278764,
+      "ratio": 1.342989810137021
+    },
+    {
+      "chapter_idx": 43,
+      "book": "Book II",
+      "chapter_roman": "VI",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.2576777574802136,
+      "ratio": 1.2198373554700992
+    },
+    {
+      "chapter_idx": 51,
+      "book": "Book II",
+      "chapter_roman": "XIV",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.332806896929013,
+      "ratio": 1.1639816118977981
+    },
+    {
+      "chapter_idx": 54,
+      "book": "Book II",
+      "chapter_roman": "XVII",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.5753138803363074,
+      "ratio": 1.167455755799753
+    },
+    {
+      "chapter_idx": 55,
+      "book": "Book II",
+      "chapter_roman": "XVIII",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.5483037686750487,
+      "ratio": 1.2824726786449494
+    },
+    {
+      "chapter_idx": 56,
+      "book": "Book II",
+      "chapter_roman": "XIX",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.422851652585785,
+      "ratio": 1.1690585431010998
+    },
+    {
+      "chapter_idx": 57,
+      "book": "Book II",
+      "chapter_roman": "XX",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.5359755549643281,
+      "ratio": 1.1685171891565356
+    },
+    {
+      "chapter_idx": 58,
+      "book": "Book II",
+      "chapter_roman": "XXI",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.4586858951685706,
+      "ratio": 1.1573221042813624
+    },
+    {
+      "chapter_idx": 59,
+      "book": "Book II",
+      "chapter_roman": "XXII",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.5357071264132653,
+      "ratio": 1.3315433722392902
+    },
+    {
+      "chapter_idx": 61,
+      "book": "Book II",
+      "chapter_roman": "XXIV",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.724405858413819,
+      "ratio": 1.3023056293010118
+    },
+    {
+      "chapter_idx": 62,
+      "book": "Book II",
+      "chapter_roman": "XXV",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.3739820337703956,
+      "ratio": 1.1607337651436804
+    },
+    {
+      "chapter_idx": 63,
+      "book": "Book II",
+      "chapter_roman": "XXVI",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.513315932269665,
+      "ratio": 1.1993195039644797
+    },
+    {
+      "chapter_idx": 66,
+      "book": "Book II",
+      "chapter_roman": "XXIX",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.2260435893593307,
+      "ratio": 1.514362792633189
+    },
+    {
+      "chapter_idx": 70,
+      "book": "Book III",
+      "chapter_roman": "II",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.3443665140047827,
+      "ratio": 1.3975209996659388
+    },
+    {
+      "chapter_idx": 71,
+      "book": "Book III",
+      "chapter_roman": "IV",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 0.9995976528008188,
+      "ratio": 1.608754769034837
+    },
+    {
+      "chapter_idx": 72,
+      "book": "Book III",
+      "chapter_roman": "V",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.2730922210820816,
+      "ratio": 1.5132711240541403
+    },
+    {
+      "chapter_idx": 73,
+      "book": "Book III",
+      "chapter_roman": "VI",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.719205686730707,
+      "ratio": 1.2307392470900425
+    },
+    {
+      "chapter_idx": 74,
+      "book": "Book III",
+      "chapter_roman": "VII",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.5811465360891348,
+      "ratio": 1.3851067337667773
+    },
+    {
+      "chapter_idx": 75,
+      "book": "Book III",
+      "chapter_roman": "VIII",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.2260435893593307,
+      "ratio": 1.514362792633189
+    },
+    {
+      "chapter_idx": 76,
+      "book": "Book III",
+      "chapter_roman": "IX",
+      "folio": "f34v",
+      "section": "H",
+      "distance": 1.5544551845131238,
+      "ratio": 1.1519991068567035
+    },
+    {
+      "chapter_idx": 77,
+      "book": "Book III",
+      "chapter_roman": "X",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.4674777146614635,
+      "ratio": 1.4141235222299964
+    },
+    {
+      "chapter_idx": 78,
+      "book": "Book III",
+      "chapter_roman": "XI",
+      "folio": "f83r",
+      "section": "B",
+      "distance": 1.690763262082648,
+      "ratio": 1.1939117135458626
+    }
+  ],
+  "permutation_p_mean_ratio": 1.0,
+  "permutation_p_confident_count": 1.0,
+  "pre_registered_criteria": {
+    "c1_max_confident_matches": 12,
+    "c1_observed": 63,
+    "c1_pass": false,
+    "c2_max_mean_ratio": 1.1,
+    "c2_observed": 1.1576420580026963,
+    "c2_pass": false,
+    "c3_min_permutation_p": 0.1,
+    "c3_observed": 1.0,
+    "c3_pass": true,
+    "c4_sec_b_concentration": 30.16759776536313,
+    "c4_expected": 39.02439024390244,
+    "c4_pass": true,
+    "n_pass": 2
+  },
+  "verdict": "PARTIAL \u2014 matcher has alchemy-bias but isn't fully specific"
+}

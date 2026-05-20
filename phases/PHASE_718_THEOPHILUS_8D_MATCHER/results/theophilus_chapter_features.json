@@ -1,0 +1,5383 @@
+{
+  "metadata": {
+    "source": "theophilus_de_diversis_artibus",
+    "edition": "Hendrie 1847 Latin-English parallel",
+    "date": "2026-05-20",
+    "n_chapters_total_extracted": 179,
+    "n_chapters_featurized": 179,
+    "segmentation": "English CHAPTER markers in body ranges per README",
+    "keywords": "reused from codicillus _featurize_codicillus.py"
+  },
+  "chapters": [
+    {
+      "segment_idx": 0,
+      "book": "Book I",
+      "chapter_roman": "I",
+      "summary": "Book I Chapter I",
+      "family": "theophilus_workshop",
+      "n_lines": 17,
+      "n_words": 130,
+      "k_channel": {
+        "heat_rate": 0.0154,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5714
+      },
+      "t_channel": {
+        "termination_rate": 0.0154,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 1,
+      "book": "Book I",
+      "chapter_roman": "II",
+      "summary": "Book I Chapter II",
+      "family": "theophilus_workshop",
+      "n_lines": 58,
+      "n_words": 275,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0145,
+        "color_frac": 0.5556,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4444
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0036,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 2,
+      "book": "Book I",
+      "chapter_roman": "III",
+      "summary": "Book I Chapter III",
+      "family": "theophilus_workshop",
+      "n_lines": 15,
+      "n_words": 111,
+      "k_channel": {
+        "heat_rate": 0.009,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.009,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 3,
+      "book": "Book I",
+      "chapter_roman": "IV",
+      "summary": "Book I Chapter IV",
+      "family": "theophilus_workshop",
+      "n_lines": 14,
+      "n_words": 81,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 4,
+      "book": "Book I",
+      "chapter_roman": "V",
+      "summary": "Book I Chapter V",
+      "family": "theophilus_workshop",
+      "n_lines": 57,
+      "n_words": 288,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0139,
+        "color_frac": 0.4286,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4286
+      },
+      "t_channel": {
+        "termination_rate": 0.0035,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 5,
+      "book": "Book I",
+      "chapter_roman": "VI",
+      "summary": "Book I Chapter VI",
+      "family": "theophilus_workshop",
+      "n_lines": 11,
+      "n_words": 61,
+      "k_channel": {
+        "heat_rate": 0.0164,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 6,
+      "book": "Book I",
+      "chapter_roman": "VII",
+      "summary": "Book I Chapter VII",
+      "family": "theophilus_workshop",
+      "n_lines": 14,
+      "n_words": 100,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 7,
+      "book": "Book I",
+      "chapter_roman": "VIII",
+      "summary": "Book I Chapter VIII",
+      "family": "theophilus_workshop",
+      "n_lines": 60,
+      "n_words": 240,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0083,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 8,
+      "book": "Book I",
+      "chapter_roman": "IX",
+      "summary": "Book I Chapter IX",
+      "family": "theophilus_workshop",
+      "n_lines": 9,
+      "n_words": 34,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 9,
+      "book": "Book I",
+      "chapter_roman": "X",
+      "summary": "Book I Chapter X",
+      "family": "theophilus_workshop",
+      "n_lines": 11,
+      "n_words": 67,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 10,
+      "book": "Book I",
+      "chapter_roman": "XI",
+      "summary": "Book I Chapter XI",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 59,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.8
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 11,
+      "book": "Book I",
+      "chapter_roman": "XII",
+      "summary": "Book I Chapter XII",
+      "family": "theophilus_workshop",
+      "n_lines": 61,
+      "n_words": 359,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0111,
+        "color_frac": 0.6923,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6923
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.8182
+      },
+      "e_channel": {
+        "correction_rate": 0.0028,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 12,
+      "book": "Book I",
+      "chapter_roman": "XIII",
+      "summary": "Book I Chapter XIII",
+      "family": "theophilus_workshop",
+      "n_lines": 25,
+      "n_words": 218,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.8571,
+        "consistency_frac": 0.1429,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 13,
+      "book": "Book I",
+      "chapter_roman": "XIV",
+      "summary": "Book I Chapter XIV",
+      "family": "theophilus_workshop",
+      "n_lines": 217,
+      "n_words": 1568,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 2.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0045,
+        "color_frac": 0.8955,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.7612
+      },
+      "t_channel": {
+        "termination_rate": 0.0013,
+        "threshold_frac": 0.65
+      },
+      "e_channel": {
+        "correction_rate": 0.0019,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 14,
+      "book": "Book I",
+      "chapter_roman": "XV",
+      "summary": "Book I Chapter XV",
+      "family": "theophilus_workshop",
+      "n_lines": 26,
+      "n_words": 196,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.7273,
+        "consistency_frac": 0.2727,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75
+      },
+      "t_channel": {
+        "termination_rate": 0.0153,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 15,
+      "book": "Book I",
+      "chapter_roman": "XVI",
+      "summary": "Book I Chapter XVI",
+      "family": "theophilus_workshop",
+      "n_lines": 155,
+      "n_words": 1212,
+      "k_channel": {
+        "heat_rate": 0.0008,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 2.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0099,
+        "color_frac": 0.7846,
+        "consistency_frac": 0.0154,
+        "volatility_frac": 0.0154,
+        "chain_rate": 0.746
+      },
+      "t_channel": {
+        "termination_rate": 0.0099,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 16,
+      "book": "Book I",
+      "chapter_roman": "XVII",
+      "summary": "Book I Chapter XVII",
+      "family": "theophilus_workshop",
+      "n_lines": 77,
+      "n_words": 488,
+      "k_channel": {
+        "heat_rate": 0.0061,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.6667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.6667,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0205,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0041,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 17,
+      "book": "Book I",
+      "chapter_roman": "XVIII",
+      "summary": "Book I Chapter XVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 18,
+      "n_words": 147,
+      "k_channel": {
+        "heat_rate": 0.0136,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 1.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0272,
+        "threshold_frac": 0.8
+      },
+      "e_channel": {
+        "correction_rate": 0.0204,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 18,
+      "book": "Book I",
+      "chapter_roman": "XIX",
+      "summary": "Book I Chapter XIX",
+      "family": "theophilus_workshop",
+      "n_lines": 65,
+      "n_words": 425,
+      "k_channel": {
+        "heat_rate": 0.0047,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.75,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0188,
+        "threshold_frac": 0.9091
+      },
+      "e_channel": {
+        "correction_rate": 0.0024,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 19,
+      "book": "Book I",
+      "chapter_roman": "XX",
+      "summary": "Book I Chapter XX",
+      "family": "theophilus_workshop",
+      "n_lines": 21,
+      "n_words": 173,
+      "k_channel": {
+        "heat_rate": 0.0116,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0173,
+        "color_frac": 0.4286,
+        "consistency_frac": 0.1429,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0058,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 20,
+      "book": "Book I",
+      "chapter_roman": "XXI",
+      "summary": "Book I Chapter XXI",
+      "family": "theophilus_workshop",
+      "n_lines": 62,
+      "n_words": 340,
+      "k_channel": {
+        "heat_rate": 0.0088,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.6667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0059,
+        "color_frac": 0.2857,
+        "consistency_frac": 0.4286,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0118,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0059,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 21,
+      "book": "Book I",
+      "chapter_roman": "XXII",
+      "summary": "Book I Chapter XXII",
+      "family": "theophilus_workshop",
+      "n_lines": 26,
+      "n_words": 242,
+      "k_channel": {
+        "heat_rate": 0.0331,
+        "mean_heat_intensity": 1.62,
+        "heat_transition_rate": 0.125
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0083,
+        "color_frac": 0.0,
+        "consistency_frac": 0.6667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0165,
+        "threshold_frac": 0.8
+      },
+      "e_channel": {
+        "correction_rate": 0.0083,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 22,
+      "book": "Book I",
+      "chapter_roman": "XXIII",
+      "summary": "Book I Chapter XXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 62,
+      "n_words": 381,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0052,
+        "color_frac": 0.625,
+        "consistency_frac": 0.125,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4286
+      },
+      "t_channel": {
+        "termination_rate": 0.0105,
+        "threshold_frac": 0.8571
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 23,
+      "book": "Book I",
+      "chapter_roman": "XXIV",
+      "summary": "Book I Chapter XXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 85,
+      "n_words": 564,
+      "k_channel": {
+        "heat_rate": 0.0053,
+        "mean_heat_intensity": 2.33,
+        "heat_transition_rate": 0.6667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.4,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.016,
+        "threshold_frac": 0.8
+      },
+      "e_channel": {
+        "correction_rate": 0.0035,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 24,
+      "book": "Book I",
+      "chapter_roman": "XXV",
+      "summary": "Book I Chapter XXV",
+      "family": "theophilus_workshop",
+      "n_lines": 22,
+      "n_words": 189,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0053,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0053,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 25,
+      "book": "Book I",
+      "chapter_roman": "XXVI",
+      "summary": "Book I Chapter XXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 84,
+      "n_words": 590,
+      "k_channel": {
+        "heat_rate": 0.0068,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0119,
+        "color_frac": 0.3478,
+        "consistency_frac": 0.3043,
+        "volatility_frac": 0.0435,
+        "chain_rate": 0.5333
+      },
+      "t_channel": {
+        "termination_rate": 0.0186,
+        "threshold_frac": 0.875
+      },
+      "e_channel": {
+        "correction_rate": 0.0034,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 26,
+      "book": "Book I",
+      "chapter_roman": "XXVII",
+      "summary": "Book I Chapter XXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 73,
+      "n_words": 432,
+      "k_channel": {
+        "heat_rate": 0.0069,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0139,
+        "color_frac": 0.5333,
+        "consistency_frac": 0.0667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.7143
+      },
+      "t_channel": {
+        "termination_rate": 0.0208,
+        "threshold_frac": 0.8182
+      },
+      "e_channel": {
+        "correction_rate": 0.0046,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 27,
+      "book": "Book I",
+      "chapter_roman": "XXVIII",
+      "summary": "Book I Chapter XXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 75,
+      "k_channel": {
+        "heat_rate": 0.0133,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.04,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0133,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 28,
+      "book": "Book I",
+      "chapter_roman": "XXIX",
+      "summary": "Book I Chapter XXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 58,
+      "n_words": 389,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0077,
+        "color_frac": 0.2857,
+        "consistency_frac": 0.2857,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6
+      },
+      "t_channel": {
+        "termination_rate": 0.0308,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0026,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 29,
+      "book": "Book I",
+      "chapter_roman": "XXX",
+      "summary": "Book I Chapter XXX",
+      "family": "theophilus_workshop",
+      "n_lines": 109,
+      "n_words": 972,
+      "k_channel": {
+        "heat_rate": 0.0123,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.001,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0195,
+        "threshold_frac": 0.625
+      },
+      "e_channel": {
+        "correction_rate": 0.0031,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 30,
+      "book": "Book I",
+      "chapter_roman": "XXXI",
+      "summary": "Book I Chapter XXXI",
+      "family": "theophilus_workshop",
+      "n_lines": 74,
+      "n_words": 579,
+      "k_channel": {
+        "heat_rate": 0.0069,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0017,
+        "color_frac": 0.5,
+        "consistency_frac": 0.375,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2
+      },
+      "t_channel": {
+        "termination_rate": 0.0069,
+        "threshold_frac": 0.8889
+      },
+      "e_channel": {
+        "correction_rate": 0.0052,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 31,
+      "book": "Book I",
+      "chapter_roman": "XXXII",
+      "summary": "Book I Chapter XXXII",
+      "family": "theophilus_workshop",
+      "n_lines": 78,
+      "n_words": 436,
+      "k_channel": {
+        "heat_rate": 0.0161,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.1429
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0115,
+        "color_frac": 0.4615,
+        "consistency_frac": 0.1538,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6364
+      },
+      "t_channel": {
+        "termination_rate": 0.0092,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0046,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 32,
+      "book": "Book I",
+      "chapter_roman": "XXXIV",
+      "summary": "Book I Chapter XXXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 16,
+      "n_words": 114,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0088,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 33,
+      "book": "Book I",
+      "chapter_roman": "XXXV",
+      "summary": "Book I Chapter XXXV",
+      "family": "theophilus_workshop",
+      "n_lines": 76,
+      "n_words": 595,
+      "k_channel": {
+        "heat_rate": 0.0118,
+        "mean_heat_intensity": 2.14,
+        "heat_transition_rate": 0.2857
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0017,
+        "color_frac": 0.3636,
+        "consistency_frac": 0.5455,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2
+      },
+      "t_channel": {
+        "termination_rate": 0.0101,
+        "threshold_frac": 0.5294
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 34,
+      "book": "Book I",
+      "chapter_roman": "XXXVI",
+      "summary": "Book I Chapter XXXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 65,
+      "n_words": 381,
+      "k_channel": {
+        "heat_rate": 0.0184,
+        "mean_heat_intensity": 2.43,
+        "heat_transition_rate": 0.5714
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0079,
+        "color_frac": 0.625,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.625
+      },
+      "t_channel": {
+        "termination_rate": 0.0131,
+        "threshold_frac": 0.7778
+      },
+      "e_channel": {
+        "correction_rate": 0.0079,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 35,
+      "book": "Book I",
+      "chapter_roman": "XXXVII",
+      "summary": "Book I Chapter XXXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 27,
+      "n_words": 246,
+      "k_channel": {
+        "heat_rate": 0.0122,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.6,
+        "consistency_frac": 0.4,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0081,
+        "threshold_frac": 0.4
+      },
+      "e_channel": {
+        "correction_rate": 0.0081,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 36,
+      "book": "Book I",
+      "chapter_roman": "XXXVIII",
+      "summary": "Book I Chapter XXXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 76,
+      "n_words": 450,
+      "k_channel": {
+        "heat_rate": 0.0089,
+        "mean_heat_intensity": 1.75,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.625,
+        "consistency_frac": 0.375,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0178,
+        "threshold_frac": 0.7
+      },
+      "e_channel": {
+        "correction_rate": 0.0022,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 37,
+      "book": "Book I",
+      "chapter_roman": "XL",
+      "summary": "Book I Chapter XL",
+      "family": "theophilus_workshop",
+      "n_lines": 45,
+      "n_words": 333,
+      "k_channel": {
+        "heat_rate": 0.006,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.033,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 38,
+      "book": "Book II",
+      "chapter_roman": "I",
+      "summary": "Book II Chapter I",
+      "family": "theophilus_workshop",
+      "n_lines": 82,
+      "n_words": 548,
+      "k_channel": {
+        "heat_rate": 0.0146,
+        "mean_heat_intensity": 2.12,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0091,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0018,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 39,
+      "book": "Book II",
+      "chapter_roman": "II",
+      "summary": "Book II Chapter II",
+      "family": "theophilus_workshop",
+      "n_lines": 14,
+      "n_words": 65,
+      "k_channel": {
+        "heat_rate": 0.0462,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0154,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 40,
+      "book": "Book II",
+      "chapter_roman": "III",
+      "summary": "Book II Chapter III",
+      "family": "theophilus_workshop",
+      "n_lines": 49,
+      "n_words": 281,
+      "k_channel": {
+        "heat_rate": 0.0142,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0107,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 41,
+      "book": "Book II",
+      "chapter_roman": "IV",
+      "summary": "Book II Chapter IV",
+      "family": "theophilus_workshop",
+      "n_lines": 19,
+      "n_words": 153,
+      "k_channel": {
+        "heat_rate": 0.0719,
+        "mean_heat_intensity": 1.82,
+        "heat_transition_rate": 0.0909
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 1.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0196,
+        "threshold_frac": 0.4
+      },
+      "e_channel": {
+        "correction_rate": 0.0065,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 42,
+      "book": "Book II",
+      "chapter_roman": "V",
+      "summary": "Book II Chapter V",
+      "family": "theophilus_workshop",
+      "n_lines": 58,
+      "n_words": 387,
+      "k_channel": {
+        "heat_rate": 0.0258,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0155,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0026,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 43,
+      "book": "Book II",
+      "chapter_roman": "VI",
+      "summary": "Book II Chapter VI",
+      "family": "theophilus_workshop",
+      "n_lines": 81,
+      "n_words": 552,
+      "k_channel": {
+        "heat_rate": 0.0145,
+        "mean_heat_intensity": 2.38,
+        "heat_transition_rate": 0.375
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0109,
+        "color_frac": 0.4,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0199,
+        "threshold_frac": 0.7857
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 44,
+      "book": "Book II",
+      "chapter_roman": "VII",
+      "summary": "Book II Chapter VII",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 72,
+      "k_channel": {
+        "heat_rate": 0.0417,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0139,
+        "color_frac": 0.8333,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0278,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 45,
+      "book": "Book II",
+      "chapter_roman": "VIII",
+      "summary": "Book II Chapter VIII",
+      "family": "theophilus_workshop",
+      "n_lines": 13,
+      "n_words": 75,
+      "k_channel": {
+        "heat_rate": 0.04,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.04,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 46,
+      "book": "Book II",
+      "chapter_roman": "IX",
+      "summary": "Book II Chapter IX",
+      "family": "theophilus_workshop",
+      "n_lines": 66,
+      "n_words": 440,
+      "k_channel": {
+        "heat_rate": 0.0136,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0182,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 47,
+      "book": "Book II",
+      "chapter_roman": "X",
+      "summary": "Book II Chapter X",
+      "family": "theophilus_workshop",
+      "n_lines": 69,
+      "n_words": 472,
+      "k_channel": {
+        "heat_rate": 0.0212,
+        "mean_heat_intensity": 2.1,
+        "heat_transition_rate": 0.4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0042,
+        "color_frac": 0.5,
+        "consistency_frac": 0.1667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0169,
+        "threshold_frac": 0.6364
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 48,
+      "book": "Book II",
+      "chapter_roman": "XI",
+      "summary": "Book II Chapter XI",
+      "family": "theophilus_workshop",
+      "n_lines": 16,
+      "n_words": 123,
+      "k_channel": {
+        "heat_rate": 0.0081,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0163,
+        "threshold_frac": 0.3333
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 49,
+      "book": "Book II",
+      "chapter_roman": "XII",
+      "summary": "Book II Chapter XII",
+      "family": "theophilus_workshop",
+      "n_lines": 67,
+      "n_words": 372,
+      "k_channel": {
+        "heat_rate": 0.0081,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0027,
+        "color_frac": 0.8889,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.7778
+      },
+      "t_channel": {
+        "termination_rate": 0.0081,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 50,
+      "book": "Book II",
+      "chapter_roman": "XIII",
+      "summary": "Book II Chapter XIII",
+      "family": "theophilus_workshop",
+      "n_lines": 25,
+      "n_words": 197,
+      "k_channel": {
+        "heat_rate": 0.0406,
+        "mean_heat_intensity": 1.88,
+        "heat_transition_rate": 0.375
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0051,
+        "color_frac": 0.1667,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.1667,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0254,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0051,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 51,
+      "book": "Book II",
+      "chapter_roman": "XIV",
+      "summary": "Book II Chapter XIV",
+      "family": "theophilus_workshop",
+      "n_lines": 65,
+      "n_words": 373,
+      "k_channel": {
+        "heat_rate": 0.008,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0134,
+        "color_frac": 0.5294,
+        "consistency_frac": 0.1765,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6429
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.8889
+      },
+      "e_channel": {
+        "correction_rate": 0.0027,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 52,
+      "book": "Book II",
+      "chapter_roman": "XV",
+      "summary": "Book II Chapter XV",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 71,
+      "k_channel": {
+        "heat_rate": 0.0141,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 53,
+      "book": "Book II",
+      "chapter_roman": "XVI",
+      "summary": "Book II Chapter XVI",
+      "family": "theophilus_workshop",
+      "n_lines": 67,
+      "n_words": 419,
+      "k_channel": {
+        "heat_rate": 0.0072,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.6667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0072,
+        "color_frac": 0.375,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0095,
+        "threshold_frac": 0.5714
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 54,
+      "book": "Book II",
+      "chapter_roman": "XVII",
+      "summary": "Book II Chapter XVII",
+      "family": "theophilus_workshop",
+      "n_lines": 87,
+      "n_words": 609,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0099,
+        "color_frac": 0.3889,
+        "consistency_frac": 0.2778,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6154
+      },
+      "t_channel": {
+        "termination_rate": 0.0131,
+        "threshold_frac": 0.8462
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 1.0
+      }
+    },
+    {
+      "segment_idx": 55,
+      "book": "Book II",
+      "chapter_roman": "XVIII",
+      "summary": "Book II Chapter XVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 20,
+      "n_words": 148,
+      "k_channel": {
+        "heat_rate": 0.0135,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0068,
+        "color_frac": 0.0,
+        "consistency_frac": 0.8,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0135,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 56,
+      "book": "Book II",
+      "chapter_roman": "XIX",
+      "summary": "Book II Chapter XIX",
+      "family": "theophilus_workshop",
+      "n_lines": 62,
+      "n_words": 367,
+      "k_channel": {
+        "heat_rate": 0.0054,
+        "mean_heat_intensity": 3.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0191,
+        "color_frac": 0.45,
+        "consistency_frac": 0.2,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5625
+      },
+      "t_channel": {
+        "termination_rate": 0.0027,
+        "threshold_frac": 0.8889
+      },
+      "e_channel": {
+        "correction_rate": 0.0027,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 57,
+      "book": "Book II",
+      "chapter_roman": "XX",
+      "summary": "Book II Chapter XX",
+      "family": "theophilus_workshop",
+      "n_lines": 20,
+      "n_words": 155,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0129,
+        "color_frac": 0.25,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0065,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 58,
+      "book": "Book II",
+      "chapter_roman": "XXI",
+      "summary": "Book II Chapter XXI",
+      "family": "theophilus_workshop",
+      "n_lines": 82,
+      "n_words": 623,
+      "k_channel": {
+        "heat_rate": 0.0048,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0112,
+        "color_frac": 0.6154,
+        "consistency_frac": 0.1154,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5652
+      },
+      "t_channel": {
+        "termination_rate": 0.0048,
+        "threshold_frac": 0.8125
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 59,
+      "book": "Book II",
+      "chapter_roman": "XXII",
+      "summary": "Book II Chapter XXII",
+      "family": "theophilus_workshop",
+      "n_lines": 68,
+      "n_words": 461,
+      "k_channel": {
+        "heat_rate": 0.0108,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.4
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.75,
+        "volatility_frac": 0.25,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0217,
+        "threshold_frac": 0.25
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 60,
+      "book": "Book II",
+      "chapter_roman": "XXIII",
+      "summary": "Book II Chapter XXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 74,
+      "n_words": 539,
+      "k_channel": {
+        "heat_rate": 0.0278,
+        "mean_heat_intensity": 2.07,
+        "heat_transition_rate": 0.2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0037,
+        "color_frac": 0.4444,
+        "consistency_frac": 0.1111,
+        "volatility_frac": 0.2222,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0074,
+        "threshold_frac": 0.7143
+      },
+      "e_channel": {
+        "correction_rate": 0.0056,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 61,
+      "book": "Book II",
+      "chapter_roman": "XXIV",
+      "summary": "Book II Chapter XXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 73,
+      "n_words": 470,
+      "k_channel": {
+        "heat_rate": 0.0021,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.6667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0149,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 62,
+      "book": "Book II",
+      "chapter_roman": "XXV",
+      "summary": "Book II Chapter XXV",
+      "family": "theophilus_workshop",
+      "n_lines": 31,
+      "n_words": 310,
+      "k_channel": {
+        "heat_rate": 0.0355,
+        "mean_heat_intensity": 1.36,
+        "heat_transition_rate": 0.2727
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0097,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 63,
+      "book": "Book II",
+      "chapter_roman": "XXVI",
+      "summary": "Book II Chapter XXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 81,
+      "n_words": 628,
+      "k_channel": {
+        "heat_rate": 0.0064,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0175,
+        "color_frac": 0.2727,
+        "consistency_frac": 0.2273,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5882
+      },
+      "t_channel": {
+        "termination_rate": 0.0191,
+        "threshold_frac": 0.9091
+      },
+      "e_channel": {
+        "correction_rate": 0.0016,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 64,
+      "book": "Book II",
+      "chapter_roman": "XXVII",
+      "summary": "Book II Chapter XXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 76,
+      "n_words": 597,
+      "k_channel": {
+        "heat_rate": 0.005,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.6667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.005,
+        "color_frac": 0.2857,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2857
+      },
+      "t_channel": {
+        "termination_rate": 0.0168,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0017,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 65,
+      "book": "Book II",
+      "chapter_roman": "XXVIII",
+      "summary": "Book II Chapter XXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 64,
+      "n_words": 396,
+      "k_channel": {
+        "heat_rate": 0.0051,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0076,
+        "color_frac": 0.4444,
+        "consistency_frac": 0.2222,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2857
+      },
+      "t_channel": {
+        "termination_rate": 0.0076,
+        "threshold_frac": 0.8
+      },
+      "e_channel": {
+        "correction_rate": 0.0025,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 66,
+      "book": "Book II",
+      "chapter_roman": "XXIX",
+      "summary": "Book II Chapter XXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 15,
+      "n_words": 80,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 67,
+      "book": "Book II",
+      "chapter_roman": "XXX",
+      "summary": "Book II Chapter XXX",
+      "family": "theophilus_workshop",
+      "n_lines": 70,
+      "n_words": 510,
+      "k_channel": {
+        "heat_rate": 0.0412,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.1429
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0039,
+        "color_frac": 0.4444,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0137,
+        "threshold_frac": 0.7778
+      },
+      "e_channel": {
+        "correction_rate": 0.0059,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 68,
+      "book": "Book II",
+      "chapter_roman": "XXXI",
+      "summary": "Book II Chapter XXXI",
+      "family": "theophilus_workshop",
+      "n_lines": 49,
+      "n_words": 402,
+      "k_channel": {
+        "heat_rate": 0.0174,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.1429
+      },
+      "h_channel": {
+        "monitoring_rate": 0.005,
+        "color_frac": 0.25,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75
+      },
+      "t_channel": {
+        "termination_rate": 0.01,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 69,
+      "book": "Book III",
+      "chapter_roman": "I",
+      "summary": "Book III Chapter I",
+      "family": "theophilus_workshop",
+      "n_lines": 16,
+      "n_words": 117,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 70,
+      "book": "Book III",
+      "chapter_roman": "II",
+      "summary": "Book III Chapter II",
+      "family": "theophilus_workshop",
+      "n_lines": 93,
+      "n_words": 635,
+      "k_channel": {
+        "heat_rate": 0.0063,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0063,
+        "threshold_frac": 0.2857
+      },
+      "e_channel": {
+        "correction_rate": 0.0016,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 71,
+      "book": "Book III",
+      "chapter_roman": "IV",
+      "summary": "Book III Chapter IV",
+      "family": "theophilus_workshop",
+      "n_lines": 70,
+      "n_words": 482,
+      "k_channel": {
+        "heat_rate": 0.0104,
+        "mean_heat_intensity": 1.8,
+        "heat_transition_rate": 0.2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0041,
+        "threshold_frac": 0.1667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 72,
+      "book": "Book III",
+      "chapter_roman": "V",
+      "summary": "Book III Chapter V",
+      "family": "theophilus_workshop",
+      "n_lines": 62,
+      "n_words": 288,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0104,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 73,
+      "book": "Book III",
+      "chapter_roman": "VI",
+      "summary": "Book III Chapter VI",
+      "family": "theophilus_workshop",
+      "n_lines": 10,
+      "n_words": 40,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.075,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 74,
+      "book": "Book III",
+      "chapter_roman": "VII",
+      "summary": "Book III Chapter VII",
+      "family": "theophilus_workshop",
+      "n_lines": 21,
+      "n_words": 165,
+      "k_channel": {
+        "heat_rate": 0.0061,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0424,
+        "threshold_frac": 0.3333
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 75,
+      "book": "Book III",
+      "chapter_roman": "VIII",
+      "summary": "Book III Chapter VIII",
+      "family": "theophilus_workshop",
+      "n_lines": 50,
+      "n_words": 258,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 76,
+      "book": "Book III",
+      "chapter_roman": "IX",
+      "summary": "Book III Chapter IX",
+      "family": "theophilus_workshop",
+      "n_lines": 24,
+      "n_words": 203,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0049,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0099,
+        "threshold_frac": 0.3333
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 77,
+      "book": "Book III",
+      "chapter_roman": "X",
+      "summary": "Book III Chapter X",
+      "family": "theophilus_workshop",
+      "n_lines": 60,
+      "n_words": 300,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0033,
+        "color_frac": 0.0,
+        "consistency_frac": 0.8,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0167,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 78,
+      "book": "Book III",
+      "chapter_roman": "XI",
+      "summary": "Book III Chapter XI",
+      "family": "theophilus_workshop",
+      "n_lines": 20,
+      "n_words": 163,
+      "k_channel": {
+        "heat_rate": 0.0245,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.2,
+        "consistency_frac": 0.8,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0184,
+        "threshold_frac": 0.3333
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 79,
+      "book": "Book III",
+      "chapter_roman": "XII",
+      "summary": "Book III Chapter XII",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 54,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.037,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 80,
+      "book": "Book III",
+      "chapter_roman": "XIII",
+      "summary": "Book III Chapter XIII",
+      "family": "theophilus_workshop",
+      "n_lines": 66,
+      "n_words": 278,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0036,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.018,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 81,
+      "book": "Book III",
+      "chapter_roman": "XIV",
+      "summary": "Book III Chapter XIV",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 62,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0161,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 82,
+      "book": "Book III",
+      "chapter_roman": "XV",
+      "summary": "Book III Chapter XV",
+      "family": "theophilus_workshop",
+      "n_lines": 9,
+      "n_words": 24,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 83,
+      "book": "Book III",
+      "chapter_roman": "XVI",
+      "summary": "Book III Chapter XVI",
+      "family": "theophilus_workshop",
+      "n_lines": 65,
+      "n_words": 245,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 84,
+      "book": "Book III",
+      "chapter_roman": "XVII",
+      "summary": "Book III Chapter XVII",
+      "family": "theophilus_workshop",
+      "n_lines": 18,
+      "n_words": 121,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0165,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 85,
+      "book": "Book III",
+      "chapter_roman": "XVIII",
+      "summary": "Book III Chapter XVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 16,
+      "n_words": 100,
+      "k_channel": {
+        "heat_rate": 0.06,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.01,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 86,
+      "book": "Book III",
+      "chapter_roman": "XIX",
+      "summary": "Book III Chapter XIX",
+      "family": "theophilus_workshop",
+      "n_lines": 64,
+      "n_words": 332,
+      "k_channel": {
+        "heat_rate": 0.009,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.006,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 87,
+      "book": "Book III",
+      "chapter_roman": "XX",
+      "summary": "Book III Chapter XX",
+      "family": "theophilus_workshop",
+      "n_lines": 11,
+      "n_words": 46,
+      "k_channel": {
+        "heat_rate": 0.0217,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0652,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 88,
+      "book": "Book III",
+      "chapter_roman": "XXI",
+      "summary": "Book III Chapter XXI",
+      "family": "theophilus_workshop",
+      "n_lines": 63,
+      "n_words": 367,
+      "k_channel": {
+        "heat_rate": 0.0027,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.6667,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0109,
+        "threshold_frac": 0.3846
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 89,
+      "book": "Book III",
+      "chapter_roman": "XXII",
+      "summary": "Book III Chapter XXII",
+      "family": "theophilus_workshop",
+      "n_lines": 19,
+      "n_words": 155,
+      "k_channel": {
+        "heat_rate": 0.0194,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.6667,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0065,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 90,
+      "book": "Book III",
+      "chapter_roman": "XXIII",
+      "summary": "Book III Chapter XXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 80,
+      "n_words": 535,
+      "k_channel": {
+        "heat_rate": 0.0355,
+        "mean_heat_intensity": 1.89,
+        "heat_transition_rate": 0.1053
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0093,
+        "color_frac": 0.3,
+        "consistency_frac": 0.2,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0131,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0019,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 91,
+      "book": "Book III",
+      "chapter_roman": "XXIV",
+      "summary": "Book III Chapter XXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 15,
+      "n_words": 115,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0174,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 92,
+      "book": "Book III",
+      "chapter_roman": "XXV",
+      "summary": "Book III Chapter XXV",
+      "family": "theophilus_workshop",
+      "n_lines": 59,
+      "n_words": 375,
+      "k_channel": {
+        "heat_rate": 0.0053,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0027,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.016,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 93,
+      "book": "Book III",
+      "chapter_roman": "XXVI",
+      "summary": "Book III Chapter XXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 161,
+      "n_words": 1411,
+      "k_channel": {
+        "heat_rate": 0.0021,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0035,
+        "color_frac": 0.0,
+        "consistency_frac": 0.6667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2
+      },
+      "t_channel": {
+        "termination_rate": 0.0149,
+        "threshold_frac": 0.9091
+      },
+      "e_channel": {
+        "correction_rate": 0.0007,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 94,
+      "book": "Book III",
+      "chapter_roman": "XXVII",
+      "summary": "Book III Chapter XXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 84,
+      "n_words": 661,
+      "k_channel": {
+        "heat_rate": 0.0045,
+        "mean_heat_intensity": 1.33,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.003,
+        "color_frac": 0.25,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.25
+      },
+      "t_channel": {
+        "termination_rate": 0.0151,
+        "threshold_frac": 0.8333
+      },
+      "e_channel": {
+        "correction_rate": 0.0015,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 95,
+      "book": "Book III",
+      "chapter_roman": "XXVIII",
+      "summary": "Book III Chapter XXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 80,
+      "n_words": 544,
+      "k_channel": {
+        "heat_rate": 0.0147,
+        "mean_heat_intensity": 1.62,
+        "heat_transition_rate": 0.125
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.2857,
+        "consistency_frac": 0.5714,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0165,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 96,
+      "book": "Book III",
+      "chapter_roman": "XXIX",
+      "summary": "Book III Chapter XXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 22,
+      "n_words": 180,
+      "k_channel": {
+        "heat_rate": 0.0278,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0056,
+        "color_frac": 0.75,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0278,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0111,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 97,
+      "book": "Book III",
+      "chapter_roman": "XXX",
+      "summary": "Book III Chapter XXX",
+      "family": "theophilus_workshop",
+      "n_lines": 78,
+      "n_words": 618,
+      "k_channel": {
+        "heat_rate": 0.0097,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0032,
+        "color_frac": 0.1111,
+        "consistency_frac": 0.6667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0129,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0016,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 98,
+      "book": "Book III",
+      "chapter_roman": "XXXI",
+      "summary": "Book III Chapter XXXI",
+      "family": "theophilus_workshop",
+      "n_lines": 81,
+      "n_words": 593,
+      "k_channel": {
+        "heat_rate": 0.0169,
+        "mean_heat_intensity": 1.8,
+        "heat_transition_rate": 0.2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0017,
+        "color_frac": 0.2222,
+        "consistency_frac": 0.6667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0185,
+        "threshold_frac": 0.5385
+      },
+      "e_channel": {
+        "correction_rate": 0.0034,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 99,
+      "book": "Book III",
+      "chapter_roman": "XXXII",
+      "summary": "Book III Chapter XXXII",
+      "family": "theophilus_workshop",
+      "n_lines": 57,
+      "n_words": 397,
+      "k_channel": {
+        "heat_rate": 0.0101,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0025,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0176,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.005,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 100,
+      "book": "Book III",
+      "chapter_roman": "XXXIII",
+      "summary": "Book III Chapter XXXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 82,
+      "n_words": 640,
+      "k_channel": {
+        "heat_rate": 0.0187,
+        "mean_heat_intensity": 1.83,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0031,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.4444,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0078,
+        "threshold_frac": 0.3125
+      },
+      "e_channel": {
+        "correction_rate": 0.0031,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 101,
+      "book": "Book III",
+      "chapter_roman": "XXXIV",
+      "summary": "Book III Chapter XXXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 22,
+      "n_words": 190,
+      "k_channel": {
+        "heat_rate": 0.0421,
+        "mean_heat_intensity": 1.88,
+        "heat_transition_rate": 0.125
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0053,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 102,
+      "book": "Book III",
+      "chapter_roman": "XXXV",
+      "summary": "Book III Chapter XXXV",
+      "family": "theophilus_workshop",
+      "n_lines": 71,
+      "n_words": 522,
+      "k_channel": {
+        "heat_rate": 0.0057,
+        "mean_heat_intensity": 1.33,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.2857,
+        "consistency_frac": 0.7143,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0172,
+        "threshold_frac": 0.6364
+      },
+      "e_channel": {
+        "correction_rate": 0.0019,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 103,
+      "book": "Book III",
+      "chapter_roman": "XXXVI",
+      "summary": "Book III Chapter XXXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 90,
+      "n_words": 734,
+      "k_channel": {
+        "heat_rate": 0.0082,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0027,
+        "color_frac": 0.1,
+        "consistency_frac": 0.7,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0095,
+        "threshold_frac": 0.3636
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 104,
+      "book": "Book III",
+      "chapter_roman": "XXXVII",
+      "summary": "Book III Chapter XXXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 75,
+      "n_words": 516,
+      "k_channel": {
+        "heat_rate": 0.0058,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0019,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0194,
+        "threshold_frac": 0.8571
+      },
+      "e_channel": {
+        "correction_rate": 0.0039,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 105,
+      "book": "Book III",
+      "chapter_roman": "XXXVIII",
+      "summary": "Book III Chapter XXXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 88,
+      "n_words": 715,
+      "k_channel": {
+        "heat_rate": 0.0182,
+        "mean_heat_intensity": 1.69,
+        "heat_transition_rate": 0.0769
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0042,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0833,
+        "chain_rate": 0.2857
+      },
+      "t_channel": {
+        "termination_rate": 0.0294,
+        "threshold_frac": 0.6316
+      },
+      "e_channel": {
+        "correction_rate": 0.0028,
+        "recoverable_frac": 0.6667,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 106,
+      "book": "Book III",
+      "chapter_roman": "XXXIX",
+      "summary": "Book III Chapter XXXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 74,
+      "n_words": 456,
+      "k_channel": {
+        "heat_rate": 0.0044,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0066,
+        "color_frac": 0.5714,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5714
+      },
+      "t_channel": {
+        "termination_rate": 0.0373,
+        "threshold_frac": 0.9
+      },
+      "e_channel": {
+        "correction_rate": 0.0022,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 107,
+      "book": "Book III",
+      "chapter_roman": "XL",
+      "summary": "Book III Chapter XL",
+      "family": "theophilus_workshop",
+      "n_lines": 22,
+      "n_words": 179,
+      "k_channel": {
+        "heat_rate": 0.0503,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.1111
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0056,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0335,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0112,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 108,
+      "book": "Book III",
+      "chapter_roman": "XLI",
+      "summary": "Book III Chapter XLI",
+      "family": "theophilus_workshop",
+      "n_lines": 71,
+      "n_words": 448,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0045,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.4444,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0246,
+        "threshold_frac": 0.7
+      },
+      "e_channel": {
+        "correction_rate": 0.0067,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 109,
+      "book": "Book III",
+      "chapter_roman": "XLII",
+      "summary": "Book III Chapter XLII",
+      "family": "theophilus_workshop",
+      "n_lines": 81,
+      "n_words": 524,
+      "k_channel": {
+        "heat_rate": 0.0019,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0019,
+        "color_frac": 0.6,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.2,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0229,
+        "threshold_frac": 0.8
+      },
+      "e_channel": {
+        "correction_rate": 0.0019,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 110,
+      "book": "Book III",
+      "chapter_roman": "XLIII",
+      "summary": "Book III Chapter XLIII",
+      "family": "theophilus_workshop",
+      "n_lines": 16,
+      "n_words": 128,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.5,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.5,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0156,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 111,
+      "book": "Book III",
+      "chapter_roman": "XLIV",
+      "summary": "Book III Chapter XLIV",
+      "family": "theophilus_workshop",
+      "n_lines": 60,
+      "n_words": 389,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0129,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 112,
+      "book": "Book III",
+      "chapter_roman": "XLV",
+      "summary": "Book III Chapter XLV",
+      "family": "theophilus_workshop",
+      "n_lines": 82,
+      "n_words": 530,
+      "k_channel": {
+        "heat_rate": 0.0075,
+        "mean_heat_intensity": 1.25,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0057,
+        "color_frac": 0.3077,
+        "consistency_frac": 0.4615,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4286
+      },
+      "t_channel": {
+        "termination_rate": 0.0226,
+        "threshold_frac": 0.7857
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 113,
+      "book": "Book III",
+      "chapter_roman": "XLVI",
+      "summary": "Book III Chapter XLVI",
+      "family": "theophilus_workshop",
+      "n_lines": 12,
+      "n_words": 69,
+      "k_channel": {
+        "heat_rate": 0.029,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0145,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 114,
+      "book": "Book III",
+      "chapter_roman": "XLVII",
+      "summary": "Book III Chapter XLVII",
+      "family": "theophilus_workshop",
+      "n_lines": 62,
+      "n_words": 395,
+      "k_channel": {
+        "heat_rate": 0.0051,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0051,
+        "color_frac": 0.6667,
+        "consistency_frac": 0.1111,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.375
+      },
+      "t_channel": {
+        "termination_rate": 0.0076,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0025,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 115,
+      "book": "Book III",
+      "chapter_roman": "XLVIII",
+      "summary": "Book III Chapter XLVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 80,
+      "n_words": 570,
+      "k_channel": {
+        "heat_rate": 0.0088,
+        "mean_heat_intensity": 1.8,
+        "heat_transition_rate": 0.6
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.5714,
+        "consistency_frac": 0.2857,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0158,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0018,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 116,
+      "book": "Book III",
+      "chapter_roman": "XLIX",
+      "summary": "Book III Chapter XLIX",
+      "family": "theophilus_workshop",
+      "n_lines": 17,
+      "n_words": 124,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0161,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0081,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 117,
+      "book": "Book III",
+      "chapter_roman": "L",
+      "summary": "Book III Chapter L",
+      "family": "theophilus_workshop",
+      "n_lines": 73,
+      "n_words": 552,
+      "k_channel": {
+        "heat_rate": 0.0109,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.4286,
+        "consistency_frac": 0.5714,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0163,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 118,
+      "book": "Book III",
+      "chapter_roman": "LI",
+      "summary": "Book III Chapter LI",
+      "family": "theophilus_workshop",
+      "n_lines": 84,
+      "n_words": 656,
+      "k_channel": {
+        "heat_rate": 0.0168,
+        "mean_heat_intensity": 2.18,
+        "heat_transition_rate": 0.1818
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0015,
+        "color_frac": 0.1579,
+        "consistency_frac": 0.7895,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0152,
+        "threshold_frac": 0.7692
+      },
+      "e_channel": {
+        "correction_rate": 0.003,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 119,
+      "book": "Book III",
+      "chapter_roman": "LII",
+      "summary": "Book III Chapter LII",
+      "family": "theophilus_workshop",
+      "n_lines": 77,
+      "n_words": 562,
+      "k_channel": {
+        "heat_rate": 0.0053,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.1429,
+        "consistency_frac": 0.7857,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0125,
+        "threshold_frac": 0.8333
+      },
+      "e_channel": {
+        "correction_rate": 0.0036,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 120,
+      "book": "Book III",
+      "chapter_roman": "LIII",
+      "summary": "Book III Chapter LIII",
+      "family": "theophilus_workshop",
+      "n_lines": 168,
+      "n_words": 1407,
+      "k_channel": {
+        "heat_rate": 0.0163,
+        "mean_heat_intensity": 1.87,
+        "heat_transition_rate": 0.1304
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0036,
+        "color_frac": 0.0833,
+        "consistency_frac": 0.6667,
+        "volatility_frac": 0.0417,
+        "chain_rate": 0.4286
+      },
+      "t_channel": {
+        "termination_rate": 0.0149,
+        "threshold_frac": 0.9091
+      },
+      "e_channel": {
+        "correction_rate": 0.0021,
+        "recoverable_frac": 0.75,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 121,
+      "book": "Book III",
+      "chapter_roman": "LIV",
+      "summary": "Book III Chapter LIV",
+      "family": "theophilus_workshop",
+      "n_lines": 183,
+      "n_words": 1535,
+      "k_channel": {
+        "heat_rate": 0.0091,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.0714
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0026,
+        "color_frac": 0.4783,
+        "consistency_frac": 0.3478,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0254,
+        "threshold_frac": 0.7188
+      },
+      "e_channel": {
+        "correction_rate": 0.0026,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 122,
+      "book": "Book III",
+      "chapter_roman": "LV",
+      "summary": "Book III Chapter LV",
+      "family": "theophilus_workshop",
+      "n_lines": 77,
+      "n_words": 440,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0091,
+        "color_frac": 0.375,
+        "consistency_frac": 0.125,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4286
+      },
+      "t_channel": {
+        "termination_rate": 0.0205,
+        "threshold_frac": 0.7273
+      },
+      "e_channel": {
+        "correction_rate": 0.0023,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 123,
+      "book": "Book III",
+      "chapter_roman": "LVI",
+      "summary": "Book III Chapter LVI",
+      "family": "theophilus_workshop",
+      "n_lines": 19,
+      "n_words": 119,
+      "k_channel": {
+        "heat_rate": 0.0168,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0084,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 124,
+      "book": "Book III",
+      "chapter_roman": "LVII",
+      "summary": "Book III Chapter LVII",
+      "family": "theophilus_workshop",
+      "n_lines": 67,
+      "n_words": 439,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0137,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 125,
+      "book": "Book III",
+      "chapter_roman": "LVIII",
+      "summary": "Book III Chapter LVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 66,
+      "n_words": 463,
+      "k_channel": {
+        "heat_rate": 0.0065,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0022,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0216,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 126,
+      "book": "Book III",
+      "chapter_roman": "LIX",
+      "summary": "Book III Chapter LIX",
+      "family": "theophilus_workshop",
+      "n_lines": 85,
+      "n_words": 662,
+      "k_channel": {
+        "heat_rate": 0.0076,
+        "mean_heat_intensity": 1.6,
+        "heat_transition_rate": 0.2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.003,
+        "color_frac": 0.2,
+        "consistency_frac": 0.4,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0151,
+        "threshold_frac": 0.7778
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 127,
+      "book": "Book III",
+      "chapter_roman": "LX",
+      "summary": "Book III Chapter LX",
+      "family": "theophilus_workshop",
+      "n_lines": 108,
+      "n_words": 847,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.1429,
+        "consistency_frac": 0.8571,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0047,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 128,
+      "book": "Book III",
+      "chapter_roman": "LXI",
+      "summary": "Book III Chapter LXI",
+      "family": "theophilus_workshop",
+      "n_lines": 421,
+      "n_words": 3616,
+      "k_channel": {
+        "heat_rate": 0.0102,
+        "mean_heat_intensity": 1.7,
+        "heat_transition_rate": 0.1622
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0014,
+        "color_frac": 0.1389,
+        "consistency_frac": 0.7222,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.1
+      },
+      "t_channel": {
+        "termination_rate": 0.0108,
+        "threshold_frac": 0.5676
+      },
+      "e_channel": {
+        "correction_rate": 0.0019,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 129,
+      "book": "Book III",
+      "chapter_roman": "LXII",
+      "summary": "Book III Chapter LXII",
+      "family": "theophilus_workshop",
+      "n_lines": 89,
+      "n_words": 608,
+      "k_channel": {
+        "heat_rate": 0.0099,
+        "mean_heat_intensity": 1.83,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0033,
+        "color_frac": 0.25,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0148,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 130,
+      "book": "Book III",
+      "chapter_roman": "LXIII",
+      "summary": "Book III Chapter LXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 80,
+      "n_words": 554,
+      "k_channel": {
+        "heat_rate": 0.0181,
+        "mean_heat_intensity": 2.2,
+        "heat_transition_rate": 0.1
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.6667,
+        "consistency_frac": 0.2222,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5714
+      },
+      "t_channel": {
+        "termination_rate": 0.0181,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0036,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 131,
+      "book": "Book III",
+      "chapter_roman": "LXIV",
+      "summary": "Book III Chapter LXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 86,
+      "n_words": 583,
+      "k_channel": {
+        "heat_rate": 0.0103,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0051,
+        "color_frac": 0.375,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.1667
+      },
+      "t_channel": {
+        "termination_rate": 0.0069,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0034,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 132,
+      "book": "Book III",
+      "chapter_roman": "LXV",
+      "summary": "Book III Chapter LXV",
+      "family": "theophilus_workshop",
+      "n_lines": 72,
+      "n_words": 499,
+      "k_channel": {
+        "heat_rate": 0.022,
+        "mean_heat_intensity": 2.09,
+        "heat_transition_rate": 0.1818
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.008,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.002,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 133,
+      "book": "Book III",
+      "chapter_roman": "LXVI",
+      "summary": "Book III Chapter LXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 76,
+      "n_words": 581,
+      "k_channel": {
+        "heat_rate": 0.0086,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.75,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0189,
+        "threshold_frac": 0.5625
+      },
+      "e_channel": {
+        "correction_rate": 0.0052,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 134,
+      "book": "Book III",
+      "chapter_roman": "LXVII",
+      "summary": "Book III Chapter LXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 105,
+      "n_words": 606,
+      "k_channel": {
+        "heat_rate": 0.0281,
+        "mean_heat_intensity": 2.12,
+        "heat_transition_rate": 0.0588
+      },
+      "h_channel": {
+        "monitoring_rate": 0.005,
+        "color_frac": 0.375,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0116,
+        "threshold_frac": 0.5833
+      },
+      "e_channel": {
+        "correction_rate": 0.0017,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 135,
+      "book": "Book III",
+      "chapter_roman": "LXVIII",
+      "summary": "Book III Chapter LXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 77,
+      "n_words": 555,
+      "k_channel": {
+        "heat_rate": 0.0234,
+        "mean_heat_intensity": 2.08,
+        "heat_transition_rate": 0.2308
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.5714,
+        "consistency_frac": 0.2857,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0198,
+        "threshold_frac": 0.7273
+      },
+      "e_channel": {
+        "correction_rate": 0.0036,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 136,
+      "book": "Book III",
+      "chapter_roman": "LXIX",
+      "summary": "Book III Chapter LXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 23,
+      "n_words": 197,
+      "k_channel": {
+        "heat_rate": 0.0508,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0051,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0102,
+        "threshold_frac": 0.4
+      },
+      "e_channel": {
+        "correction_rate": 0.0051,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 137,
+      "book": "Book III",
+      "chapter_roman": "LXX",
+      "summary": "Book III Chapter LXX",
+      "family": "theophilus_workshop",
+      "n_lines": 72,
+      "n_words": 522,
+      "k_channel": {
+        "heat_rate": 0.0115,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0019,
+        "color_frac": 0.5,
+        "consistency_frac": 0.3,
+        "volatility_frac": 0.1,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0134,
+        "threshold_frac": 0.8889
+      },
+      "e_channel": {
+        "correction_rate": 0.0077,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 138,
+      "book": "Book III",
+      "chapter_roman": "LXXI",
+      "summary": "Book III Chapter LXXI",
+      "family": "theophilus_workshop",
+      "n_lines": 74,
+      "n_words": 516,
+      "k_channel": {
+        "heat_rate": 0.0097,
+        "mean_heat_intensity": 1.8,
+        "heat_transition_rate": 0.2
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0078,
+        "color_frac": 0.4,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4
+      },
+      "t_channel": {
+        "termination_rate": 0.0136,
+        "threshold_frac": 0.9231
+      },
+      "e_channel": {
+        "correction_rate": 0.0019,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 139,
+      "book": "Book III",
+      "chapter_roman": "LXXII",
+      "summary": "Book III Chapter LXXII",
+      "family": "theophilus_workshop",
+      "n_lines": 71,
+      "n_words": 447,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0089,
+        "color_frac": 0.3571,
+        "consistency_frac": 0.3571,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.4444
+      },
+      "t_channel": {
+        "termination_rate": 0.0112,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 140,
+      "book": "Book III",
+      "chapter_roman": "LXXIII",
+      "summary": "Book III Chapter LXXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 29,
+      "n_words": 255,
+      "k_channel": {
+        "heat_rate": 0.0078,
+        "mean_heat_intensity": 1.5,
+        "heat_transition_rate": 1.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0039,
+        "color_frac": 0.6,
+        "consistency_frac": 0.2,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.25
+      },
+      "t_channel": {
+        "termination_rate": 0.0157,
+        "threshold_frac": 0.8333
+      },
+      "e_channel": {
+        "correction_rate": 0.0039,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 141,
+      "book": "Book III",
+      "chapter_roman": "LXXIV",
+      "summary": "Book III Chapter LXXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 245,
+      "n_words": 2070,
+      "k_channel": {
+        "heat_rate": 0.0068,
+        "mean_heat_intensity": 2.14,
+        "heat_transition_rate": 0.1429
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0077,
+        "color_frac": 0.2381,
+        "consistency_frac": 0.381,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3846
+      },
+      "t_channel": {
+        "termination_rate": 0.0213,
+        "threshold_frac": 0.8056
+      },
+      "e_channel": {
+        "correction_rate": 0.0043,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.1818
+      }
+    },
+    {
+      "segment_idx": 142,
+      "book": "Book III",
+      "chapter_roman": "LXXV",
+      "summary": "Book III Chapter LXXV",
+      "family": "theophilus_workshop",
+      "n_lines": 149,
+      "n_words": 1163,
+      "k_channel": {
+        "heat_rate": 0.0017,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0034,
+        "color_frac": 0.3182,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2727
+      },
+      "t_channel": {
+        "termination_rate": 0.0077,
+        "threshold_frac": 0.6111
+      },
+      "e_channel": {
+        "correction_rate": 0.0009,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 143,
+      "book": "Book III",
+      "chapter_roman": "LXXVI",
+      "summary": "Book III Chapter LXXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 102,
+      "n_words": 857,
+      "k_channel": {
+        "heat_rate": 0.007,
+        "mean_heat_intensity": 1.83,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0012,
+        "color_frac": 0.2,
+        "consistency_frac": 0.7333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0152,
+        "threshold_frac": 0.6154
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 144,
+      "book": "Book III",
+      "chapter_roman": "LXXVII",
+      "summary": "Book III Chapter LXXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 64,
+      "n_words": 432,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0093,
+        "color_frac": 0.125,
+        "consistency_frac": 0.375,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2
+      },
+      "t_channel": {
+        "termination_rate": 0.0139,
+        "threshold_frac": 0.4444
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 145,
+      "book": "Book III",
+      "chapter_roman": "LXXVIII",
+      "summary": "Book III Chapter LXXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 101,
+      "n_words": 816,
+      "k_channel": {
+        "heat_rate": 0.0037,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0061,
+        "color_frac": 0.2308,
+        "consistency_frac": 0.3846,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.125
+      },
+      "t_channel": {
+        "termination_rate": 0.0098,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 146,
+      "book": "Book III",
+      "chapter_roman": "LXXIX",
+      "summary": "Book III Chapter LXXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 67,
+      "n_words": 328,
+      "k_channel": {
+        "heat_rate": 0.003,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.003,
+        "color_frac": 0.4,
+        "consistency_frac": 0.4,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0091,
+        "threshold_frac": 0.4286
+      },
+      "e_channel": {
+        "correction_rate": 0.0061,
+        "recoverable_frac": 0.3333,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 147,
+      "book": "Book III",
+      "chapter_roman": "LXXX",
+      "summary": "Book III Chapter LXXX",
+      "family": "theophilus_workshop",
+      "n_lines": 17,
+      "n_words": 139,
+      "k_channel": {
+        "heat_rate": 0.0288,
+        "mean_heat_intensity": 1.75,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.7143,
+        "consistency_frac": 0.2857,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6
+      },
+      "t_channel": {
+        "termination_rate": 0.0144,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0072,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 148,
+      "book": "Book III",
+      "chapter_roman": "LXXXI",
+      "summary": "Book III Chapter LXXXI",
+      "family": "theophilus_workshop",
+      "n_lines": 162,
+      "n_words": 1314,
+      "k_channel": {
+        "heat_rate": 0.0053,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.5714
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0015,
+        "color_frac": 0.1,
+        "consistency_frac": 0.8,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0084,
+        "threshold_frac": 0.4
+      },
+      "e_channel": {
+        "correction_rate": 0.0015,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 149,
+      "book": "Book III",
+      "chapter_roman": "LXXXII",
+      "summary": "Book III Chapter LXXXII",
+      "family": "theophilus_workshop",
+      "n_lines": 156,
+      "n_words": 1136,
+      "k_channel": {
+        "heat_rate": 0.0018,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0018,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.25,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0238,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0035,
+        "recoverable_frac": 0.5,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 150,
+      "book": "Book III",
+      "chapter_roman": "LXXXIII",
+      "summary": "Book III Chapter LXXXIII",
+      "family": "theophilus_workshop",
+      "n_lines": 163,
+      "n_words": 1338,
+      "k_channel": {
+        "heat_rate": 0.003,
+        "mean_heat_intensity": 2.25,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0015,
+        "color_frac": 0.0769,
+        "consistency_frac": 0.7692,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0157,
+        "threshold_frac": 0.3333
+      },
+      "e_channel": {
+        "correction_rate": 0.0007,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 151,
+      "book": "Book III",
+      "chapter_roman": "LXXXIV",
+      "summary": "Book III Chapter LXXXIV",
+      "family": "theophilus_workshop",
+      "n_lines": 95,
+      "n_words": 747,
+      "k_channel": {
+        "heat_rate": 0.0027,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.1538,
+        "consistency_frac": 0.8462,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0268,
+        "threshold_frac": 0.6154
+      },
+      "e_channel": {
+        "correction_rate": 0.0054,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 152,
+      "book": "Book III",
+      "chapter_roman": "LXXXV",
+      "summary": "Book III Chapter LXXXV",
+      "family": "theophilus_workshop",
+      "n_lines": 550,
+      "n_words": 4856,
+      "k_channel": {
+        "heat_rate": 0.0086,
+        "mean_heat_intensity": 1.86,
+        "heat_transition_rate": 0.119
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0014,
+        "color_frac": 0.1739,
+        "consistency_frac": 0.6304,
+        "volatility_frac": 0.0435,
+        "chain_rate": 0.1333
+      },
+      "t_channel": {
+        "termination_rate": 0.0136,
+        "threshold_frac": 0.5439
+      },
+      "e_channel": {
+        "correction_rate": 0.0016,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 153,
+      "book": "Book III",
+      "chapter_roman": "LXXXVI",
+      "summary": "Book III Chapter LXXXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 92,
+      "n_words": 695,
+      "k_channel": {
+        "heat_rate": 0.0014,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0058,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0043,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0014,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 154,
+      "book": "Book III",
+      "chapter_roman": "LXXXVI",
+      "summary": "Book III Chapter LXXXVI",
+      "family": "theophilus_workshop",
+      "n_lines": 14,
+      "n_words": 79,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0127,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0127,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 155,
+      "book": "Book III",
+      "chapter_roman": "LXXXVII",
+      "summary": "Book III Chapter LXXXVII",
+      "family": "theophilus_workshop",
+      "n_lines": 135,
+      "n_words": 1017,
+      "k_channel": {
+        "heat_rate": 0.0029,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0769,
+        "consistency_frac": 0.9231,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0177,
+        "threshold_frac": 0.8333
+      },
+      "e_channel": {
+        "correction_rate": 0.001,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 156,
+      "book": "Book III",
+      "chapter_roman": "LXXXVIII",
+      "summary": "Book III Chapter LXXXVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 19,
+      "n_words": 151,
+      "k_channel": {
+        "heat_rate": 0.0331,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0066,
+        "color_frac": 0.5,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0066,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 157,
+      "book": "Book III",
+      "chapter_roman": "LXXXIX",
+      "summary": "Book III Chapter LXXXIX",
+      "family": "theophilus_workshop",
+      "n_lines": 58,
+      "n_words": 386,
+      "k_channel": {
+        "heat_rate": 0.0026,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.6667,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0078,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 158,
+      "book": "Book III",
+      "chapter_roman": "XC",
+      "summary": "Book III Chapter XC",
+      "family": "theophilus_workshop",
+      "n_lines": 160,
+      "n_words": 1353,
+      "k_channel": {
+        "heat_rate": 0.0059,
+        "mean_heat_intensity": 1.88,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0022,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.5417,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3636
+      },
+      "t_channel": {
+        "termination_rate": 0.014,
+        "threshold_frac": 0.7917
+      },
+      "e_channel": {
+        "correction_rate": 0.0022,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 159,
+      "book": "Book III",
+      "chapter_roman": "XCI",
+      "summary": "Book III Chapter XCI",
+      "family": "theophilus_workshop",
+      "n_lines": 88,
+      "n_words": 685,
+      "k_channel": {
+        "heat_rate": 0.0131,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.4444
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0029,
+        "color_frac": 0.3846,
+        "consistency_frac": 0.4615,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.2857
+      },
+      "t_channel": {
+        "termination_rate": 0.0102,
+        "threshold_frac": 0.9167
+      },
+      "e_channel": {
+        "correction_rate": 0.0029,
+        "recoverable_frac": 0.3333,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 160,
+      "book": "Book III",
+      "chapter_roman": "XCII",
+      "summary": "Book III Chapter XCII",
+      "family": "theophilus_workshop",
+      "n_lines": 95,
+      "n_words": 729,
+      "k_channel": {
+        "heat_rate": 0.011,
+        "mean_heat_intensity": 1.62,
+        "heat_transition_rate": 0.25
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0041,
+        "color_frac": 0.0,
+        "consistency_frac": 0.625,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0082,
+        "threshold_frac": 0.4
+      },
+      "e_channel": {
+        "correction_rate": 0.0014,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 161,
+      "book": "Book III",
+      "chapter_roman": "XCIII",
+      "summary": "Book III Chapter XCIII",
+      "family": "theophilus_workshop",
+      "n_lines": 66,
+      "n_words": 469,
+      "k_channel": {
+        "heat_rate": 0.0085,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.8,
+        "consistency_frac": 0.2,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0235,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 162,
+      "book": "Book III",
+      "chapter_roman": "XCIV",
+      "summary": "Book III Chapter XCIV",
+      "family": "theophilus_workshop",
+      "n_lines": 171,
+      "n_words": 1448,
+      "k_channel": {
+        "heat_rate": 0.0055,
+        "mean_heat_intensity": 1.38,
+        "heat_transition_rate": 0.375
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0007,
+        "color_frac": 0.1,
+        "consistency_frac": 0.8,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0207,
+        "threshold_frac": 0.7778
+      },
+      "e_channel": {
+        "correction_rate": 0.0021,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 163,
+      "book": "Book III",
+      "chapter_roman": "XCV",
+      "summary": "Book III Chapter XCV",
+      "family": "theophilus_workshop",
+      "n_lines": 71,
+      "n_words": 337,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0089,
+        "color_frac": 0.4286,
+        "consistency_frac": 0.1429,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0089,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 164,
+      "book": "Book III",
+      "chapter_roman": "XCVI",
+      "summary": "Book III Chapter XCVI",
+      "family": "theophilus_workshop",
+      "n_lines": 16,
+      "n_words": 121,
+      "k_channel": {
+        "heat_rate": 0.0165,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0083,
+        "color_frac": 0.3333,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0248,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 165,
+      "book": "Book III",
+      "chapter_roman": "XCVII",
+      "summary": "Book III Chapter XCVII",
+      "family": "theophilus_workshop",
+      "n_lines": 68,
+      "n_words": 370,
+      "k_channel": {
+        "heat_rate": 0.0054,
+        "mean_heat_intensity": 2.5,
+        "heat_transition_rate": 0.5
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0189,
+        "color_frac": 0.4444,
+        "consistency_frac": 0.1667,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0189,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 166,
+      "book": "Book III",
+      "chapter_roman": "XCVIII",
+      "summary": "Book III Chapter XCVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 23,
+      "n_words": 184,
+      "k_channel": {
+        "heat_rate": 0.0054,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0163,
+        "color_frac": 0.0,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0109,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 167,
+      "book": "Book III",
+      "chapter_roman": "XCIX",
+      "summary": "Book III Chapter XCIX",
+      "family": "theophilus_workshop",
+      "n_lines": 65,
+      "n_words": 289,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0104,
+        "color_frac": 0.4167,
+        "consistency_frac": 0.3333,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.75
+      },
+      "t_channel": {
+        "termination_rate": 0.0138,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0069,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 168,
+      "book": "Book III",
+      "chapter_roman": "C",
+      "summary": "Book III Chapter C",
+      "family": "theophilus_workshop",
+      "n_lines": 10,
+      "n_words": 46,
+      "k_channel": {
+        "heat_rate": 0.0217,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 169,
+      "book": "Book III",
+      "chapter_roman": "CI",
+      "summary": "Book III Chapter CI",
+      "family": "theophilus_workshop",
+      "n_lines": 19,
+      "n_words": 148,
+      "k_channel": {
+        "heat_rate": 0.0068,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 2.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0135,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 170,
+      "book": "Book III",
+      "chapter_roman": "CII",
+      "summary": "Book III Chapter CII",
+      "family": "theophilus_workshop",
+      "n_lines": 65,
+      "n_words": 300,
+      "k_channel": {
+        "heat_rate": 0.01,
+        "mean_heat_intensity": 1.33,
+        "heat_transition_rate": 0.3333
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.0,
+        "consistency_frac": 1.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0033,
+        "threshold_frac": 0.5
+      },
+      "e_channel": {
+        "correction_rate": 0.0033,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 171,
+      "book": "Book III",
+      "chapter_roman": "CIII",
+      "summary": "Book III Chapter CIII",
+      "family": "theophilus_workshop",
+      "n_lines": 18,
+      "n_words": 120,
+      "k_channel": {
+        "heat_rate": 0.0417,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 0.5,
+        "consistency_frac": 0.5,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.5
+      },
+      "t_channel": {
+        "termination_rate": 0.0167,
+        "threshold_frac": 0.75
+      },
+      "e_channel": {
+        "correction_rate": 0.0083,
+        "recoverable_frac": 1.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 172,
+      "book": "Book III",
+      "chapter_roman": "CIV",
+      "summary": "Book III Chapter CIV",
+      "family": "theophilus_workshop",
+      "n_lines": 83,
+      "n_words": 476,
+      "k_channel": {
+        "heat_rate": 0.0252,
+        "mean_heat_intensity": 2.17,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0042,
+        "color_frac": 0.5789,
+        "consistency_frac": 0.3158,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3846
+      },
+      "t_channel": {
+        "termination_rate": 0.0105,
+        "threshold_frac": 0.9091
+      },
+      "e_channel": {
+        "correction_rate": 0.0021,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 173,
+      "book": "Book III",
+      "chapter_roman": "CVI",
+      "summary": "Book III Chapter CVI",
+      "family": "theophilus_workshop",
+      "n_lines": 78,
+      "n_words": 325,
+      "k_channel": {
+        "heat_rate": 0.0185,
+        "mean_heat_intensity": 1.67,
+        "heat_transition_rate": 0.1667
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0062,
+        "color_frac": 0.5,
+        "consistency_frac": 0.25,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.6667
+      },
+      "t_channel": {
+        "termination_rate": 0.0123,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0031,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 174,
+      "book": "Book III",
+      "chapter_roman": "CVII",
+      "summary": "Book III Chapter CVII",
+      "family": "theophilus_workshop",
+      "n_lines": 22,
+      "n_words": 148,
+      "k_channel": {
+        "heat_rate": 0.0068,
+        "mean_heat_intensity": 1.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0,
+        "color_frac": 1.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.3333
+      },
+      "t_channel": {
+        "termination_rate": 0.0135,
+        "threshold_frac": 0.6
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 175,
+      "book": "Book III",
+      "chapter_roman": "CVIII",
+      "summary": "Book III Chapter CVIII",
+      "family": "theophilus_workshop",
+      "n_lines": 57,
+      "n_words": 245,
+      "k_channel": {
+        "heat_rate": 0.0,
+        "mean_heat_intensity": 0.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0041,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0122,
+        "threshold_frac": 0.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 176,
+      "book": "Book III",
+      "chapter_roman": "CIX",
+      "summary": "Book III Chapter CIX",
+      "family": "theophilus_workshop",
+      "n_lines": 13,
+      "n_words": 63,
+      "k_channel": {
+        "heat_rate": 0.0159,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0159,
+        "color_frac": 0.0,
+        "consistency_frac": 0.0,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.0
+      },
+      "t_channel": {
+        "termination_rate": 0.0159,
+        "threshold_frac": 1.0
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 177,
+      "book": "Book III",
+      "chapter_roman": "CX",
+      "summary": "Book III Chapter CX",
+      "family": "theophilus_workshop",
+      "n_lines": 63,
+      "n_words": 374,
+      "k_channel": {
+        "heat_rate": 0.0053,
+        "mean_heat_intensity": 2.0,
+        "heat_transition_rate": 0.0
+      },
+      "h_channel": {
+        "monitoring_rate": 0.008,
+        "color_frac": 0.2,
+        "consistency_frac": 0.2,
+        "volatility_frac": 0.0,
+        "chain_rate": 0.25
+      },
+      "t_channel": {
+        "termination_rate": 0.0053,
+        "threshold_frac": 0.6667
+      },
+      "e_channel": {
+        "correction_rate": 0.0,
+        "recoverable_frac": 0.0,
+        "process_drift_frac": 0.0
+      }
+    },
+    {
+      "segment_idx": 178,
+      "book": "Book III",
+      "chapter_roman": "CXI",
+      "summary": "Book III Chapter CXI",
+      "family": "theophilus_workshop",
+      "n_lines": 686,
+      "n_words": 5099,
+      "k_channel": {
+        "heat_rate": 0.008,
+        "mean_heat_intensity": 1.66,
+        "heat_transition_rate": 0.2439
+      },
+      "h_channel": {
+        "monitoring_rate": 0.0104,
+        "color_frac": 0.6029,
+        "consistency_frac": 0.1176,
+        "volatility_frac": 0.0196,
+        "chain_rate": 0.6648
+      },
+      "t_channel": {
+        "termination_rate": 0.0112,
+        "threshold_frac": 0.7692
+      },
+      "e_channel": {
+        "correction_rate": 0.0018,
+        "recoverable_frac": 0.6,
+        "process_drift_frac": 0.0
+      }
+    }
+  ]
+}

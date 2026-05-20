@@ -4,6 +4,74 @@
 
 ---
 
+## Version 6.85 (2026-05-20) - PHASE_718 Theophilus 8D matcher negative-control FAIL → C2052
+
+### Summary
+
+**Headline finding of the session.** Pre-registered Theophilus 8D matcher negative-control test (locked 2026-05-14 per `sources/theophilus/README.md`) ran for the FIRST TIME today using the existing script `_theophilus_negative_control.py`. Result: **NEGATIVE CONTROL FAILED**. The 8D matcher that produced C1971 and the C1882-C1956 operational-correspondence family is generic — it detects medieval procedural Latin structural attraction, NOT alchemy-specifically.
+
+### Pre-registered criteria results
+
+| Criterion | Threshold | Observed | Verdict |
+|---|---|---:|---|
+| C1: ≤2/30 confident matches | PASS ≤7%, FAIL ≥17% | 4/30 (13.3%) | AMBIGUOUS |
+| C2: mean ratio ≤1.10 | failure if ≥1.20 | 0.878 | PASS |
+| C3: permutation p ≥0.10 | failure if p<0.10 | **0.0000** | **FAIL** |
+| C4: Section B concentration <40% | failure if ≥40% | **53.3%** | **FAIL** |
+
+Script's overall verdict: "FAIL — matcher is generic; demote C1882-C1956 to structural-similarity"
+
+### Key observation: same folios, different corpus
+
+Theophilus (metalwork/glass/pigments, NOT alchemy) chapters match the SAME Voynich folios as Codicillus chapters: f84r, f77v, f75r, f76v, f76r, f81v, f75v, f77r, f81r, f80v, f83r, f82r, f78r. 16/30 Theophilus chapters (53%) land on the original Pseudo-Lull match list. **The matcher attracts both medieval procedural Latin corpora to the same Voynich folios at similar rates.**
+
+### Expert consultation
+
+Both expert-advisor and crazy-expert consulted. Convergence:
+1. Accept the falsification — methodology clean, pre-registered, decisive.
+2. **Do NOT blanket-demote 75 constraints.** Per-constraint audit required.
+3. **Triage criterion:** content claims (specific PL chapter→folio correspondence, "Ch19=aqua vitae") → DEMOTE to Tier 3. Structural claims (8D distance, alignment topology, feature-space geometry) → SURVIVE at Tier 2.
+4. **Tier 0 unaffected** — "closed-loop control programs" framing is genre-structural, not domain-specific.
+5. C2032 substrate quintet, C2042 atom-monocategorical signature unaffected.
+6. Operational reading SURVIVES at genre level (medieval craft procedure manual); DIES at domain-specific level (alchemy/distillation).
+
+### Constraint registered
+
+**C2052 (Tier 2 negative measurement):** Theophilus 8D matcher negative-control FAILS. Matcher is generic — detects medieval procedural Latin structural attraction, not alchemy-specifically. C1971 + C1882-C1956 family interpretive scope refined.
+
+### What is NOT changed
+
+- **Tier 0** (closed-loop control programs frozen conclusion)
+- **C2032** (substrate quintet — non-NL signature)
+- **C2042** (atom-monocategorical operational signature)
+- **C171** (semantic ceiling — actually re-confirmed at matcher level)
+- 8D distance values themselves (empirical measurements)
+- Structural-measurement-level constraints in C1882-C1956 family
+
+### What needs per-constraint audit (PHASE_719 candidate)
+
+C1971 + C1882-C1956 family. Each constraint gets explicit reasoning:
+- Content claims → DEMOTE to Tier 3
+- Structural claims → SURVIVE at Tier 2
+
+Expert estimate: ~15-25 of ~75 constraints actually need demotion. Most are structural measurements that survive.
+
+### Pattern this confirms (cumulative this session)
+
+Four failed mechanism interpretations:
+1. PHASE_711: parametric atom-slot semantics rejected
+2. PHASE_716 main: line-spanning C1212 chaining rejected
+3. PHASE_716 mode-aware: mode coherence rejected
+4. PHASE_718: alchemy-specificity rejected
+
+Plus prior 2026-05-15/16 mechanism-demotion quartet. The "operational-specificity death zone" is now thoroughly documented. Mechanism interpretations at "encodes X domain" level reliably die under discriminating tests. Structural measurements survive.
+
+### Strategic implication
+
+Voynich is a medieval craft control program in an unrecoverable domain. The substrate's "operational shape" is real at genre level (medieval craft procedure manual) but the matcher does NOT discriminate alchemy from metalwork/glass/pigments. C171's semantic ceiling re-confirmed — substrate structure exceptional, content irrecoverable from internal analysis. External grounding remains the only path past the procedural ceiling.
+
+---
+
 ## Version 6.84 (2026-05-20) - PHASE_716 C1727 mechanism narrowing → C2049 + C2050 + C2051
 
 ### Summary

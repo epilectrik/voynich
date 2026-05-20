@@ -1,0 +1,193 @@
+{
+  "method": "PHASE_717 external corpus C2032 expansion",
+  "n_permutations": 200,
+  "chunk_size": 1000,
+  "results": {
+    "Theophilus": {
+      "label": "Theophilus",
+      "n_words": 102839,
+      "n_chunks": 103,
+      "chunk_size": 1000,
+      "vocab_size": 15182,
+      "entropy_bpc": 10.926372692376694,
+      "target_class": "the",
+      "target_count": 6585,
+      "target_freq": 0.06403212788922491,
+      "lag1_excess": -0.07121310291524718,
+      "lag2_excess": 0.0378807263899235,
+      "lag3_excess": 0.04568337742649671,
+      "r21": -0.5319347822128531,
+      "r31": -0.6415024139710054,
+      "chain_results": {
+        "1": {
+          "n_pairs": 6579,
+          "obs_rate": 0.0001519987840097279,
+          "null_rate": 0.07136510169925692,
+          "excess": -0.07121310291524718
+        },
+        "2": {
+          "n_pairs": 6571,
+          "obs_rate": 0.10957236341500533,
+          "null_rate": 0.07169163702508183,
+          "excess": 0.0378807263899235
+        },
+        "3": {
+          "n_pairs": 6566,
+          "obs_rate": 0.11681388973499848,
+          "null_rate": 0.07113051230850177,
+          "excess": 0.04568337742649671
+        }
+      }
+    },
+    "Rupescissa": {
+      "label": "Rupescissa",
+      "n_words": 38000,
+      "n_chunks": 38,
+      "chunk_size": 1000,
+      "vocab_size": 16582,
+      "entropy_bpc": 12.63519201071818,
+      "target_class": "cum",
+      "target_count": 452,
+      "target_freq": 0.01188754175104542,
+      "lag1_excess": -0.01461782688459128,
+      "lag2_excess": -0.01506471537430699,
+      "lag3_excess": -0.007648091447810067,
+      "r21": 1.0305714723018629,
+      "r31": 0.5232030388779577,
+      "chain_results": {
+        "1": {
+          "n_pairs": 452,
+          "obs_rate": 0.0,
+          "null_rate": 0.01461782688459128,
+          "excess": -0.01461782688459128
+        },
+        "2": {
+          "n_pairs": 450,
+          "obs_rate": 0.0,
+          "null_rate": 0.01506471537430699,
+          "excess": -0.01506471537430699
+        },
+        "3": {
+          "n_pairs": 450,
+          "obs_rate": 0.006666666666666667,
+          "null_rate": 0.014314758114476734,
+          "excess": -0.007648091447810067
+        }
+      }
+    },
+    "Pseudo-Lull Testamentum": {
+      "label": "Pseudo-Lull Testamentum",
+      "n_words": 103974,
+      "n_chunks": 104,
+      "chunk_size": 1000,
+      "vocab_size": 16768,
+      "entropy_bpc": 11.228792072836686,
+      "target_class": "per",
+      "target_count": 2586,
+      "target_freq": 0.02487160251601362,
+      "lag1_excess": -0.024879626849739236,
+      "lag2_excess": -0.013378647326416106,
+      "lag3_excess": 0.0010561909818773557,
+      "r21": 0.5377350475236862,
+      "r31": -0.04245204271978161,
+      "chain_results": {
+        "1": {
+          "n_pairs": 2583,
+          "obs_rate": 0.001548586914440573,
+          "null_rate": 0.02642821376417981,
+          "excess": -0.024879626849739236
+        },
+        "2": {
+          "n_pairs": 2580,
+          "obs_rate": 0.01317829457364341,
+          "null_rate": 0.026556941900059517,
+          "excess": -0.013378647326416106
+        },
+        "3": {
+          "n_pairs": 2577,
+          "obs_rate": 0.027551416375630577,
+          "null_rate": 0.02649522539375322,
+          "excess": 0.0010561909818773557
+        }
+      }
+    },
+    "Codicillus (ref)": {
+      "label": "Codicillus (ref)",
+      "n_words": 23053,
+      "n_chunks": 24,
+      "chunk_size": 1000,
+      "vocab_size": 9572,
+      "entropy_bpc": 11.59074778861278,
+      "target_class": "que",
+      "target_count": 823,
+      "target_freq": 0.03570034268858717,
+      "lag1_excess": -0.030087696248002345,
+      "lag2_excess": -0.012261017463862864,
+      "lag3_excess": 0.021594396690881645,
+      "r21": 0.4075093474355627,
+      "r31": -0.7177151920468285,
+      "chain_results": {
+        "1": {
+          "n_pairs": 822,
+          "obs_rate": 0.051094890510948905,
+          "null_rate": 0.08118258675895125,
+          "excess": -0.030087696248002345
+        },
+        "2": {
+          "n_pairs": 822,
+          "obs_rate": 0.0681265206812652,
+          "null_rate": 0.08038753814512807,
+          "excess": -0.012261017463862864
+        },
+        "3": {
+          "n_pairs": 822,
+          "obs_rate": 0.10218978102189781,
+          "null_rate": 0.08059538433101616,
+          "excess": 0.021594396690881645
+        }
+      }
+    },
+    "Mesue (ref)": {
+      "label": "Mesue (ref)",
+      "n_words": 265966,
+      "n_chunks": 266,
+      "chunk_size": 1000,
+      "vocab_size": 119358,
+      "entropy_bpc": 14.906142977014458,
+      "target_class": "cum",
+      "target_count": 2695,
+      "target_freq": 0.010132874126768084,
+      "lag1_excess": -0.013387337220189316,
+      "lag2_excess": -0.006736307850652999,
+      "lag3_excess": 0.004692120739778833,
+      "r21": 0.5031850426904939,
+      "r31": -0.35048947095339394,
+      "chain_results": {
+        "1": {
+          "n_pairs": 2692,
+          "obs_rate": 0.0003714710252600297,
+          "null_rate": 0.013758808245449346,
+          "excess": -0.013387337220189316
+        },
+        "2": {
+          "n_pairs": 2690,
+          "obs_rate": 0.007063197026022305,
+          "null_rate": 0.013799504876675304,
+          "excess": -0.006736307850652999
+        },
+        "3": {
+          "n_pairs": 2689,
+          "obs_rate": 0.01859427296392711,
+          "null_rate": 0.013902152224148277,
+          "excess": 0.004692120739778833
+        }
+      }
+    }
+  },
+  "reference_values": {
+    "voynich_section_b": -0.66,
+    "mensural": 0.18,
+    "codicillus_known": -0.22,
+    "mesue_known": -0.17
+  }
+}
