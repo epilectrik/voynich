@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2033 validated constraints | **Version:** 6.78 | **Date:** 2026-05-19 (2026-01-12 cohort batch-sweep complete: C478 reframed, C755+C756 demoted, C479+C480 survive)
+**Total:** 2033 validated constraints | **Version:** 6.79 | **Date:** 2026-05-19 (PHASE_706 burstiness/Hurst INDEX-only — 6th methodology pattern)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 

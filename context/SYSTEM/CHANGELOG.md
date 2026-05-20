@@ -4,6 +4,81 @@
 
 ---
 
+## Version 6.79 (2026-05-19) - PHASE_706 burstiness β + DFA Hurst tests → both metrics are FLOORS, INDEX-only
+
+### Summary
+
+After web research identified six new language-statistics tests not yet applied, the two highest-EV picks (burstiness β + DFA Hurst exponent) were pre-registered, run, and **closed as INDEX-only**. Both metrics turned out to be FLOORS for structured-symbolic systems, not DISCRIMINATORS for NL. 6th distinct audit failure-mode pattern saved as methodology memory.
+
+### Tests + results
+
+**Primary tests** (passed sanity floors):
+- **Burstiness β** (Altmann et al. 2009 PLOS ONE): Voynich B = 0.769; Codicillus 0.686, Mesue 0.772, Brunschwig 0.764; random null 1.003 — all within expectations.
+- **DFA Hurst H** (Long-Range Correlations literature): Voynich B = 0.652; Codicillus 0.704, Mesue 0.597, Brunschwig 0.696; random null 0.510.
+
+Voynich Currier B sat squarely in NL Latin range on both. Initial reading suggested NL-like signature.
+
+**Follow-up controls (LOAD-BEARING — flipped the verdict):**
+
+| Control | Result | Interpretation |
+|---------|--------|----------------|
+| Within-folio shuffle null | β: 0.769→0.807 (Δ=+0.038); H: 0.652→0.644 (Δ=+0.008) | ~95% of signal is folio-composition-driven; consistent with folio=program framework |
+| **Mensural notation floor test** | Mensural β = 0.653 (passes <0.85); H = 0.823 (passes >0.55) | **Mensural (confirmed non-NL via C2032) ALSO passes both NL thresholds — β/H are FLOORS not DISCRIMINATORS** |
+
+### Why no constraints registered
+
+The Voynich measurements are real (β=0.769, H=0.652) but **uninformative for the NL-vs-non-NL question** because mensural notation passes the same thresholds. Registering would either:
+- Over-claim "NL-like" (when metrics don't discriminate NL from structured-symbolic non-NL)
+- Or create epistemic clutter at Tier 3 (a constraint whose primary content is "this metric isn't useful")
+
+Per C131 audit precedent (`feedback_made_up_threshold_audit.md`): a noise-floor metric preserved as if informative misleads future readers. Better to document the methodology lesson and not register.
+
+### What this confirms about the existing framework
+
+**Substrate quintet's "non-NL" framing survives intact.** C2032 (lag2/lag1) is the **only** axis in the substrate quintet that actually discriminates NL from non-NL structured-symbolic systems:
+- Mensural fails C2032 (+0.18, in NL range ±0.17)
+- Voynich Section B fails NL at C2032 (-0.66, well outside NL range)
+
+C2015 (char-LM compression), C2022 (Markov plateau), and now β + H are ALL exclusion-gate floors, not discriminators. Only C2032 is load-bearing.
+
+This was previously noted in `engineered_substrate_triad.md` calibration note (2026-05-16); PHASE_706 generalizes the principle.
+
+### 6th methodology memory added
+
+`feedback_floor_vs_discriminator_metric_test.md`: Before treating any literature-borrowed metric as an NL discriminator, run it on a confirmed non-NL structured-symbolic system (mensural notation is the project's go-to). If non-NL passes, metric is floor only.
+
+**Failure-mode taxonomy now 6 patterns:**
+
+| # | Pattern | Diagnostic |
+|---|---------|-----------|
+| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold |
+| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph |
+| 3 | Wrong null test (C1068) | chi² against independence null with frequency-correlated factors |
+| 4 | Broken baseline (C476) | null/baseline algorithm artifact doesn't represent alternative |
+| 5 | Post-hoc claim-substitution (C481) | writeup labels VALIDATED while script JSON verification field reports False |
+| 6 | **Floor mistaken for discriminator (PHASE_706)** | **Literature metric passes for non-NL structured-symbolic systems; Voynich passing it is uninformative** |
+
+### Productive failure
+
+PHASE_706 set out to find new NL-detection axes and discovered the literature metrics are floors. That's a substantive methodology refinement — not a constraint-system change. The audit-sweep methodology now includes a discrimination-vs-floor check for all future imported tests.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `phases/PHASE_706_BURSTINESS_DFA/` | NEW phase: INDEX.md + scripts + results JSONs |
+| `~/.claude/projects/.../memory/feedback_floor_vs_discriminator_metric_test.md` | NEW methodology memory (6th pattern) |
+| `~/.claude/projects/.../memory/MEMORY.md` | Index entry |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `CLAUDE.md` | Version bump only |
+| `context/CLAIMS/INDEX.md` | Version bump only |
+
+### Note on what was NOT done
+
+No constraint registered. No tier change. The contribution is methodology, not constraint-registry change. PHASE_706 follows PHASE_701 + PHASE_702 + PHASE_704 + PHASE_705 + PHASE_701 cohort patterns: INDEX-only closure when the substantive output is a methodology lesson rather than a discriminating measurement.
+
+---
+
 ## Version 6.78 (2026-05-19) - 2026-01-12 cohort batch-sweep complete (C478 reframed, C755+C756 demoted, C479+C480 survive)
 
 ### Summary

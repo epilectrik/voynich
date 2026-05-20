@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 21:40
+**Generated:** 2026-05-19 22:17
 **Version:** FROZEN STATE (2033 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (24 feedback rules)
+6. Session Methodology Notes (25 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -5572,6 +5572,82 @@ If prediction failed: prediction is data (a clean negative discriminator), not
 - C1993 retraction narrative — Cycle 1 example
 - C2027 retraction narrative — Cycle 2 example (crazy-expert prediction misfire)
 - `phases/RECIPE_FOLIO_CORRESPONDENCE/results/c2027_two_discriminating_tests.json` — the test that falsified crazy-expert's prediction
+
+---
+
+## feedback-floor-vs-discriminator-metric-test
+
+*"Before treating any new literature-borrowed statistical metric as an NL-discriminator, test a known non-NL structured-symbolic system (e.g., mensural notation) for floor-passing. If the non-NL system passes the metric's NL threshold, the metric is a floor (structured-vs-random), not a discriminator (NL-vs-non-NL). PHASE_706 established (2026-05-19)"*
+
+When importing a statistical metric from the language-stats literature with the intent of testing whether Voynich is "natural-language-like," **always run the metric on a known non-NL structured-symbolic system first**. If that non-NL system passes the NL threshold, the metric is a **floor** (separating structured from random), not a **discriminator** (separating NL from non-NL structured systems).
+
+Voynich passing a floor metric tells you "Voynich is structured-symbolic with topical organization" — which we already know. It does NOT tell you "Voynich is NL-like."
+
+**The PHASE_706 case study (2026-05-19):**
+
+Two literature-borrowed metrics tested:
+
+| Metric | Reference | Threshold (NL-like) |
+|--------|-----------|---------------------|
+| Burstiness β (Weibull shape on inter-arrival times) | Altmann et al. 2009 PLOS ONE | β < 0.85 |
+| DFA Hurst H on token-length time series | A Story of the Stone PLOS ONE | H > 0.55 |
+
+Both metrics passed sanity floors (random null gives β≈1.0, H≈0.5; NL Latin Codicillus/Mesue/Brunschwig all pass NL thresholds).
+
+Voynich Currier B results:
+- β = 0.769 (inside NL Latin range 0.69-0.77, sanity floor passing)
+- H = 0.652 (inside NL Latin range 0.60-0.70, sanity floor passing)
+
+These looked like strong NL-like signals. But the **mensural notation control** (which is NOT NL — already falsified at C2032 cross-language test, 2026-05-16) showed:
+- Mensural β = 0.653 (passes NL threshold with room)
+- Mensural H = 0.823 (passes NL threshold with room above NL range)
+
+**Mensural notation — a confirmed non-NL system — passes both NL-thresholds.** Therefore β and H are floors for any structured-symbolic system with topical/sectional organization. Voynich passing them is "Voynich is structured-symbolic," NOT "Voynich is NL."
+
+**The discriminating test that ACTUALLY worked: C2032 (lag2/lag1).** Mensural at C2032 gives +0.18 (within NL Latin range). Voynich Section B gives -0.66 (extreme NL-divergence). C2032 cleanly separates Voynich from BOTH NL and mensural. That's a discriminator.
+
+**Diagnostic test:**
+1. Identify the candidate metric (e.g., burstiness β, Hurst H, MTLD, etc.)
+2. Identify a CONFIRMED non-NL structured-symbolic system (mensural notation is the project's go-to; any structured non-language with topical organization works)
+3. Run the metric on the non-NL system
+4. **If non-NL passes NL threshold**: the metric is a FLOOR. Voynich passing it adds no information about NL-vs-non-NL.
+5. **If non-NL fails NL threshold**: the metric is a DISCRIMINATOR. Voynich passing it is informative.
+
+**Existing project discriminators (confirmed):**
+- **C2032 lag2/lag1**: mensural +0.18 vs Voynich Section B -0.66 — clean discriminator
+- **C2015 char-LM compression**: per `engineered_substrate_triad.md` calibration lesson, this is a FLOOR (mensural passes 1.857 bpc, within NL range 1.0-3.0). Use as exclusion gate only.
+- **C2022 Markov plateau order**: per same lesson, this is a FLOOR (mensural plateau order = 2, within NL range 2-3). Use as exclusion gate only.
+
+So even within the project's "substrate quintet," only C2032 actually discriminates. The other axes are floors. This was already documented in `engineered_substrate_triad.md` (2026-05-16 calibration lesson) but PHASE_706 establishes the **general principle** that floor-vs-discriminator testing is required for ALL imported literature metrics.
+
+**How to apply:**
+- When proposing new NL-detection metrics from literature, always include mensural notation (or another confirmed non-NL structured benchmark) in the comparison BEFORE interpreting Voynich result
+- If the candidate metric is a floor, do NOT register Voynich-passing as "NL-like." Register as "structured-symbolic" at most
+- Pre-register the floor-vs-discriminator check as a sanity criterion: "metric must fail on mensural notation to be considered a discriminator"
+- If only floors are available, the test is uninformative for the NL-vs-non-NL question
+
+**Connection to existing methodology lessons:**
+- Refines `feedback_registration_calibration_lesson.md` (PHASE_698 mensural lesson) — that memory established that ONE specific axis (C2032) was the only discriminator. PHASE_706 generalizes the principle to ALL imported metrics.
+- Complements `feedback_calibrate_thresholds_against_controls.md` (PHASE_697) — calibrate against in-distribution controls. PHASE_706 adds: calibrate against the alternative-class baseline too.
+- Sister to `feedback_specific_vs_tautological_predictions.md` (PHASE_698) — distinguish floors from discriminators in pre-registered criteria.
+
+**Failure-mode taxonomy update — 6 patterns:**
+
+| # | Pattern | Diagnostic |
+|---|---------|-----------|
+| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold |
+| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph |
+| 3 | Wrong null test (C1068) | chi² against independence null with frequency-correlated factors |
+| 4 | Broken baseline (C476) | null/baseline algorithm artifact doesn't represent alternative |
+| 5 | Post-hoc claim-substitution (C481) | writeup labels VALIDATED while script JSON verification field reports False |
+| 6 | **Floor metric mistaken for discriminator (PHASE_706)** | **Literature metric passes for structured-symbolic non-NL systems; Voynich passing it is uninformative about NL-likeness** |
+
+**PHASE_706 takeaway:**
+- No new constraint registered (β/H are floors, not informative for the question asked)
+- Methodology lesson saved (this memory)
+- Voynich exhibits expected structured-symbolic content clustering at folio level (~95% of β/H signal preserved by within-folio shuffle, consistent with folio=program framework)
+- Substrate quintet's "non-NL" framing survives intact via C2032 which IS a discriminator (mensural fails it at +0.18 vs Voynich -0.66)
+- PHASE_706 closes as INDEX-only; the productive output is this generalizable methodology principle
 
 ---
 

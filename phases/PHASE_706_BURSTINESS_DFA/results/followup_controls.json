@@ -1,0 +1,24 @@
+{
+  "method": "PHASE_706 follow-up controls \u2014 within-folio shuffle + mensural floor test",
+  "voynich_b_original": {
+    "beta_median": 0.7690034531955589,
+    "hurst_H": 0.6517179238210401
+  },
+  "within_folio_shuffle_null": {
+    "n_reps": 20,
+    "beta_mean": 0.8065779652485364,
+    "beta_std": 0.0046967687302238445,
+    "hurst_mean": 0.643882123356293,
+    "hurst_std": 0.0031015269554247366,
+    "delta_beta_voynich_minus_null": -0.03757451205297757,
+    "delta_hurst_voynich_minus_null": 0.007835800464747078,
+    "interpretation": "SUB-FOLIO STRUCTURAL \u2014 \u03b2 and H survived within-folio shuffle. Signal is sub-folio sequential clustering, more NL-like at micro-level. Substrate quintet framing needs sharper re-examination."
+  },
+  "mensural_floor_test": {
+    "n_tokens": 27528,
+    "beta_median": 0.6530934592842395,
+    "hurst_H": 0.8231861186915943,
+    "interpretation": "FLOORS confirmed \u2014 mensural notation (non-NL structured symbolic) also gives \u03b2=0.653 <0.85 AND H=0.8232 >0.55. \u03b2/H are 'structured-vs-random' metrics, NOT NL discriminators. Voynich passing these is 'Voynich is structured,' not 'Voynich is NL.'"
+  },
+  "combined_verdict": "Within-folio shuffle did NOT fully collapse the signal. Original \u03b2/H may include sub-folio sequential structure that's more NL-like than the substrate quintet predicted. Registration framing needs sharper thought."
+}

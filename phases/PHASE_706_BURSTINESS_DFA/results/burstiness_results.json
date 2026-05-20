@@ -1,0 +1,624 @@
+{
+  "method": "PHASE_706 burstiness test",
+  "pre_registered_thresholds": {
+    "NL_LIKE_THRESHOLD": 0.85,
+    "POISSON_THRESHOLD": 0.95,
+    "TOP_K": 50,
+    "MIN_OCCURRENCES": 20
+  },
+  "results_by_corpus": {
+    "Voynich_Currier_B": {
+      "label": "Voynich Currier B",
+      "n_tokens": 21610,
+      "n_unique": 4640,
+      "n_top_tokens": 50,
+      "n_successful_fits": 50,
+      "beta_median": 0.7690034531955589,
+      "beta_mean": 0.7637141568533095,
+      "beta_iqr": [
+        0.7022650781530744,
+        0.8174901108332155
+      ],
+      "beta_range": [
+        0.5963266434092197,
+        0.9368020115074065
+      ],
+      "fraction_below_0_85": 0.88,
+      "fraction_above_0_95": 0.0,
+      "per_token_top10": [
+        {
+          "token": "chedy",
+          "freq": 455,
+          "beta": 0.9368020115074065,
+          "scale": 46.0481199371629,
+          "mean_interval": 47.52202643171806,
+          "n_intervals": 454
+        },
+        {
+          "token": "ol",
+          "freq": 396,
+          "beta": 0.8174901108332155,
+          "scale": 48.23097059232502,
+          "mean_interval": 54.42025316455696,
+          "n_intervals": 395
+        },
+        {
+          "token": "shedy",
+          "freq": 378,
+          "beta": 0.7977992771795079,
+          "scale": 49.210899642157685,
+          "mean_interval": 57.05039787798408,
+          "n_intervals": 377
+        },
+        {
+          "token": "aiin",
+          "freq": 341,
+          "beta": 0.8261780320747181,
+          "scale": 56.359709333365686,
+          "mean_interval": 63.35588235294118,
+          "n_intervals": 340
+        },
+        {
+          "token": "daiin",
+          "freq": 301,
+          "beta": 0.8881887305646696,
+          "scale": 67.43542634714031,
+          "mean_interval": 71.77666666666667,
+          "n_intervals": 300
+        },
+        {
+          "token": "qokeedy",
+          "freq": 297,
+          "beta": 0.6866592438996842,
+          "scale": 53.959893968600724,
+          "mean_interval": 72.64864864864865,
+          "n_intervals": 296
+        },
+        {
+          "token": "qokedy",
+          "freq": 263,
+          "beta": 0.6538522105246134,
+          "scale": 57.039858745706226,
+          "mean_interval": 82.08396946564885,
+          "n_intervals": 262
+        },
+        {
+          "token": "qokain",
+          "freq": 262,
+          "beta": 0.6976498183958945,
+          "scale": 58.33844616804858,
+          "mean_interval": 78.64367816091954,
+          "n_intervals": 261
+        },
+        {
+          "token": "qokeey",
+          "freq": 250,
+          "beta": 0.6877104725425056,
+          "scale": 63.972183815860646,
+          "mean_interval": 85.77911646586345,
+          "n_intervals": 249
+        },
+        {
+          "token": "qokaiin",
+          "freq": 234,
+          "beta": 0.7894555883776816,
+          "scale": 75.57683611431712,
+          "mean_interval": 88.68669527896996,
+          "n_intervals": 233
+        }
+      ],
+      "verdict": "NL-LIKE (\u03b2 median < 0.85, semantic clustering)"
+    },
+    "Voynich_Currier_A": {
+      "label": "Voynich Currier A",
+      "n_tokens": 11029,
+      "n_unique": 3222,
+      "n_top_tokens": 50,
+      "n_successful_fits": 50,
+      "beta_median": 0.7965241735103216,
+      "beta_mean": 0.8022384231164922,
+      "beta_iqr": [
+        0.7420149185677267,
+        0.8492592935666099
+      ],
+      "beta_range": [
+        0.49965961238703493,
+        1.1890490124175617
+      ],
+      "fraction_below_0_85": 0.76,
+      "fraction_above_0_95": 0.06,
+      "per_token_top10": [
+        {
+          "token": "daiin",
+          "freq": 508,
+          "beta": 0.9389587917289989,
+          "scale": 20.88789890673655,
+          "mean_interval": 21.57593688362919,
+          "n_intervals": 507
+        },
+        {
+          "token": "chol",
+          "freq": 278,
+          "beta": 0.8492592935666099,
+          "scale": 35.91410182157431,
+          "mean_interval": 39.194945848375454,
+          "n_intervals": 277
+        },
+        {
+          "token": "chor",
+          "freq": 181,
+          "beta": 0.8750614917925112,
+          "scale": 56.45531840765581,
+          "mean_interval": 60.65,
+          "n_intervals": 180
+        },
+        {
+          "token": "s",
+          "freq": 162,
+          "beta": 0.8967066054400802,
+          "scale": 63.27459240339955,
+          "mean_interval": 67.0248447204969,
+          "n_intervals": 161
+        },
+        {
+          "token": "dy",
+          "freq": 122,
+          "beta": 0.8172339401431836,
+          "scale": 78.5460369031475,
+          "mean_interval": 88.04132231404958,
+          "n_intervals": 121
+        },
+        {
+          "token": "shol",
+          "freq": 116,
+          "beta": 0.753727304696048,
+          "scale": 76.52300087577325,
+          "mean_interval": 91.21739130434783,
+          "n_intervals": 115
+        },
+        {
+          "token": "sho",
+          "freq": 106,
+          "beta": 0.771574460078075,
+          "scale": 87.13929085239587,
+          "mean_interval": 103.86666666666666,
+          "n_intervals": 105
+        },
+        {
+          "token": "chy",
+          "freq": 103,
+          "beta": 0.7908020289881159,
+          "scale": 89.78620796646123,
+          "mean_interval": 103.96078431372548,
+          "n_intervals": 102
+        },
+        {
+          "token": "ol",
+          "freq": 101,
+          "beta": 0.8165769800271404,
+          "scale": 96.42249001945355,
+          "mean_interval": 109.0,
+          "n_intervals": 100
+        },
+        {
+          "token": "cthy",
+          "freq": 101,
+          "beta": 0.7168863916662924,
+          "scale": 84.127097487033,
+          "mean_interval": 108.19,
+          "n_intervals": 100
+        }
+      ],
+      "verdict": "NL-LIKE (\u03b2 median < 0.85, semantic clustering)"
+    },
+    "Codicillus_Latin": {
+      "label": "Codicillus Latin",
+      "n_tokens": 30305,
+      "n_unique": 9775,
+      "n_top_tokens": 50,
+      "n_successful_fits": 50,
+      "beta_median": 0.6863941208105915,
+      "beta_mean": 0.7148687661440136,
+      "beta_iqr": [
+        0.554458351323933,
+        0.8025826167299195
+      ],
+      "beta_range": [
+        0.4362252803667921,
+        1.9698560429477714
+      ],
+      "fraction_below_0_85": 0.84,
+      "fraction_above_0_95": 0.08,
+      "per_token_top10": [
+        {
+          "token": "et",
+          "freq": 2253,
+          "beta": 1.0339875215369065,
+          "scale": 13.57140191554043,
+          "mean_interval": 13.348134991119005,
+          "n_intervals": 2252
+        },
+        {
+          "token": "que",
+          "freq": 823,
+          "beta": 0.6754922947130559,
+          "scale": 21.424179522237615,
+          "mean_interval": 32.76520681265207,
+          "n_intervals": 822
+        },
+        {
+          "token": "in",
+          "freq": 467,
+          "beta": 0.8944968237875184,
+          "scale": 60.30466286441148,
+          "mean_interval": 64.07725321888412,
+          "n_intervals": 466
+        },
+        {
+          "token": "de",
+          "freq": 451,
+          "beta": 0.8969553972972371,
+          "scale": 62.898457216458326,
+          "mean_interval": 66.72666666666667,
+          "n_intervals": 450
+        },
+        {
+          "token": "ad",
+          "freq": 388,
+          "beta": 0.8367666238290932,
+          "scale": 69.61157364708438,
+          "mean_interval": 77.39793281653746,
+          "n_intervals": 387
+        },
+        {
+          "token": "quod",
+          "freq": 313,
+          "beta": 0.5537765308692526,
+          "scale": 35.27095563769478,
+          "mean_interval": 91.32692307692308,
+          "n_intervals": 312
+        },
+        {
+          "token": "est",
+          "freq": 301,
+          "beta": 0.8354148840357256,
+          "scale": 90.03187328013058,
+          "mean_interval": 100.1,
+          "n_intervals": 300
+        },
+        {
+          "token": "sit",
+          "freq": 266,
+          "beta": 0.7928410674593053,
+          "scale": 95.53385502574605,
+          "mean_interval": 111.5433962264151,
+          "n_intervals": 265
+        },
+        {
+          "token": "cum",
+          "freq": 211,
+          "beta": 0.7274136681294068,
+          "scale": 108.36796930594626,
+          "mean_interval": 137.93809523809523,
+          "n_intervals": 210
+        },
+        {
+          "token": "ut",
+          "freq": 208,
+          "beta": 0.8583916037984691,
+          "scale": 132.33084434861638,
+          "mean_interval": 144.65700483091788,
+          "n_intervals": 207
+        }
+      ],
+      "verdict": "NL-LIKE (\u03b2 median < 0.85, semantic clustering)"
+    },
+    "Mesue_Latin": {
+      "label": "Mesue Grabadin Latin",
+      "n_tokens": 308851,
+      "n_unique": 120332,
+      "n_top_tokens": 50,
+      "n_successful_fits": 50,
+      "beta_median": 0.7723008640480966,
+      "beta_mean": 0.7353167443445392,
+      "beta_iqr": [
+        0.6593592572015721,
+        0.8407784645139218
+      ],
+      "beta_range": [
+        0.4237938552858017,
+        0.9317234386199051
+      ],
+      "fraction_below_0_85": 0.84,
+      "fraction_above_0_95": 0.0,
+      "per_token_top10": [
+        {
+          "token": "in",
+          "freq": 4914,
+          "beta": 0.9056929905159732,
+          "scale": 59.636002578625245,
+          "mean_interval": 62.838184408711584,
+          "n_intervals": 4913
+        },
+        {
+          "token": "cum",
+          "freq": 2695,
+          "beta": 0.782986761229571,
+          "scale": 97.46112115725094,
+          "mean_interval": 114.39866369710468,
+          "n_intervals": 2694
+        },
+        {
+          "token": "ad",
+          "freq": 2648,
+          "beta": 0.9069210502613922,
+          "scale": 111.03204832678384,
+          "mean_interval": 116.59765772572725,
+          "n_intervals": 2647
+        },
+        {
+          "token": "ex",
+          "freq": 1977,
+          "beta": 0.7818985974799351,
+          "scale": 134.08598872929554,
+          "mean_interval": 156.1255060728745,
+          "n_intervals": 1976
+        },
+        {
+          "token": "de",
+          "freq": 1889,
+          "beta": 0.7579091963368275,
+          "scale": 137.62459526546434,
+          "mean_interval": 163.0550847457627,
+          "n_intervals": 1888
+        },
+        {
+          "token": "non",
+          "freq": 1538,
+          "beta": 0.8495496257740198,
+          "scale": 183.3030644355246,
+          "mean_interval": 200.8640208197788,
+          "n_intervals": 1537
+        },
+        {
+          "token": "ana",
+          "freq": 1444,
+          "beta": 0.6035059637704399,
+          "scale": 127.78057013524713,
+          "mean_interval": 211.67567567567568,
+          "n_intervals": 1443
+        },
+        {
+          "token": "quod",
+          "freq": 1358,
+          "beta": 0.8428517131347499,
+          "scale": 206.94584737674887,
+          "mean_interval": 227.39351510685336,
+          "n_intervals": 1357
+        },
+        {
+          "token": "aut",
+          "freq": 1334,
+          "beta": 0.5727804944673553,
+          "scale": 137.45682527468162,
+          "mean_interval": 230.34283570892723,
+          "n_intervals": 1333
+        },
+        {
+          "token": "vt",
+          "freq": 1106,
+          "beta": 0.8493972405633122,
+          "scale": 254.99663830798954,
+          "mean_interval": 279.21719457013575,
+          "n_intervals": 1105
+        }
+      ],
+      "verdict": "NL-LIKE (\u03b2 median < 0.85, semantic clustering)"
+    },
+    "Brunschwig_1512": {
+      "label": "Brunschwig 1512",
+      "n_tokens": 413530,
+      "n_unique": 27938,
+      "n_top_tokens": 50,
+      "n_successful_fits": 50,
+      "beta_median": 0.7640033618993487,
+      "beta_mean": 0.7728525588522672,
+      "beta_iqr": [
+        0.6578402869407449,
+        0.8421391239507555
+      ],
+      "beta_range": [
+        0.49123263794544997,
+        1.7110415209312602
+      ],
+      "fraction_below_0_85": 0.76,
+      "fraction_above_0_95": 0.04,
+      "per_token_top10": [
+        {
+          "token": "vnd",
+          "freq": 18618,
+          "beta": 0.9484242194044655,
+          "scale": 21.52229302592533,
+          "mean_interval": 22.20765966589676,
+          "n_intervals": 18617
+        },
+        {
+          "token": "das",
+          "freq": 10494,
+          "beta": 0.9375102384785885,
+          "scale": 38.09197818791789,
+          "mean_interval": 39.383589059372916,
+          "n_intervals": 10493
+        },
+        {
+          "token": "die",
+          "freq": 8605,
+          "beta": 0.8979063690015487,
+          "scale": 45.34024451948001,
+          "mean_interval": 48.058461180846116,
+          "n_intervals": 8604
+        },
+        {
+          "token": "ist",
+          "freq": 8221,
+          "beta": 0.937350920469511,
+          "scale": 48.54036975739011,
+          "mean_interval": 50.25267639902676,
+          "n_intervals": 8220
+        },
+        {
+          "token": "der",
+          "freq": 7893,
+          "beta": 0.8711736204381384,
+          "scale": 48.45902172692455,
+          "mean_interval": 52.39229599594526,
+          "n_intervals": 7892
+        },
+        {
+          "token": "in",
+          "freq": 7891,
+          "beta": 0.9652758110970394,
+          "scale": 51.50201915448113,
+          "mean_interval": 52.39847908745247,
+          "n_intervals": 7890
+        },
+        {
+          "token": "ein",
+          "freq": 7590,
+          "beta": 0.8560122761646369,
+          "scale": 49.51782683350964,
+          "mean_interval": 54.434049281855316,
+          "n_intervals": 7589
+        },
+        {
+          "token": "so",
+          "freq": 5270,
+          "beta": 0.8632383908003025,
+          "scale": 71.7822131559367,
+          "mean_interval": 78.43499715316,
+          "n_intervals": 5269
+        },
+        {
+          "token": "von",
+          "freq": 5060,
+          "beta": 0.8502026215609154,
+          "scale": 74.40540790152431,
+          "mean_interval": 81.68966198853528,
+          "n_intervals": 5059
+        },
+        {
+          "token": "den",
+          "freq": 4747,
+          "beta": 0.8421391239507555,
+          "scale": 78.8295876208839,
+          "mean_interval": 87.04782975136958,
+          "n_intervals": 4746
+        }
+      ],
+      "verdict": "NL-LIKE (\u03b2 median < 0.85, semantic clustering)"
+    },
+    "Random_Null_Voynich_B_Shuffled": {
+      "label": "Random Null (Voynich B shuffled)",
+      "n_tokens": 21610,
+      "n_unique": 4640,
+      "n_top_tokens": 50,
+      "n_successful_fits": 50,
+      "beta_median": 1.0026103043818977,
+      "beta_mean": 1.016774544046124,
+      "beta_iqr": [
+        0.967510103234777,
+        1.0697885826893256
+      ],
+      "beta_range": [
+        0.8446699967217125,
+        1.2258614112468087
+      ],
+      "fraction_below_0_85": 0.02,
+      "fraction_above_0_95": 0.84,
+      "per_token_top10": [
+        {
+          "token": "chedy",
+          "freq": 455,
+          "beta": 1.0246393047451012,
+          "scale": 47.99688693483448,
+          "mean_interval": 47.508810572687224,
+          "n_intervals": 454
+        },
+        {
+          "token": "ol",
+          "freq": 396,
+          "beta": 1.0697885826893256,
+          "scale": 56.07460945445938,
+          "mean_interval": 54.607594936708864,
+          "n_intervals": 395
+        },
+        {
+          "token": "shedy",
+          "freq": 378,
+          "beta": 1.0067196475046636,
+          "scale": 57.324948482594834,
+          "mean_interval": 57.15915119363395,
+          "n_intervals": 377
+        },
+        {
+          "token": "aiin",
+          "freq": 341,
+          "beta": 1.0619679466117202,
+          "scale": 64.86280620401268,
+          "mean_interval": 63.294117647058826,
+          "n_intervals": 340
+        },
+        {
+          "token": "daiin",
+          "freq": 301,
+          "beta": 1.054548414051585,
+          "scale": 73.10788662420987,
+          "mean_interval": 71.58333333333333,
+          "n_intervals": 300
+        },
+        {
+          "token": "qokeedy",
+          "freq": 297,
+          "beta": 1.0423430778209657,
+          "scale": 74.25764309627458,
+          "mean_interval": 72.99662162162163,
+          "n_intervals": 296
+        },
+        {
+          "token": "qokedy",
+          "freq": 263,
+          "beta": 0.9568446939316404,
+          "scale": 80.61391458081641,
+          "mean_interval": 82.27862595419847,
+          "n_intervals": 262
+        },
+        {
+          "token": "qokain",
+          "freq": 262,
+          "beta": 1.0102838638192135,
+          "scale": 82.44546159450934,
+          "mean_interval": 82.07662835249042,
+          "n_intervals": 261
+        },
+        {
+          "token": "qokeey",
+          "freq": 250,
+          "beta": 0.9940632021357149,
+          "scale": 86.4731009798577,
+          "mean_interval": 86.6987951807229,
+          "n_intervals": 249
+        },
+        {
+          "token": "qokaiin",
+          "freq": 234,
+          "beta": 0.999249364162536,
+          "scale": 91.88818782940548,
+          "mean_interval": 91.91845493562232,
+          "n_intervals": 233
+        }
+      ],
+      "verdict": "POISSON-LIKE (\u03b2 median > 0.95, no clustering)"
+    }
+  },
+  "sanity_floor_pass": true
+}
