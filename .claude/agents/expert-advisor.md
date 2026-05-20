@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 18:52
+**Generated:** 2026-05-19 19:15
 **Version:** FROZEN STATE (2035 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (21 feedback rules)
+6. Session Methodology Notes (22 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -1363,7 +1363,7 @@ C1064	**PREFIX-SUFFIX Joint Role Encoding** (joint 88.5% vs PREFIX 82.6% vs SUFF
 C1065	**Atom Bigram Ordering Grammar**	2	B
 C1066	**Construction-Execution Independence Confirmed**	2	B
 C1067	**Terminal Character Positional Bias**	2	B
-C1068	**Cross-Layer Partial Coupling**	2	B
+C1068	**[DEMOTED Tier 2→3 2026-05-19]** Originally "Cross-Layer Partial Coupling" (Tier 2). **Audit:** C475_degree × C911_restriction NMI=0.185 is marginal under proper null — chi² p=3.4e-292 used independence null which assumes independent marginals, but both factors correlate with token frequency. Marginal-preserving permutation null gives **p=0.13** (not significant at 0.05). C475-wholesale-graph concern from C475 demotion was AUDIT_PENDING; spot-check cleared it (methodology uses per-MIDDLE attested-degree, not sparsity-driven edges). Companion C1063-layer independence findings preserved within demotion narrative — these survive at proper null and are clean independence statements but kept within C1068 rather than split. Methodology memory: feedback_chi2_vs_permutation_null_mismatch.md.	3	B
 C1069	**Weak Residual Community Structure** (3 communities after hub removal + frequency regression; Q_residual=0.125, Q_random=0.042, signal=0.082; weak but above-random; one community concentrates kernel-classified MIDDLEs)	2	B
 C1070	**Atom Ordering Grammar Independent of Kernel Directional Bias** (only 2/21 cross-class pairs; both mismatch C521; compound construction grammar has own rules not reducible to kernel physics)	2	B
 C1071	**Forbidden Transitions Operate Above Component-Level Rules** (only 4/17 C109 transitions blocked by C475/C911/C1063; 0 by C911 or C1063; 13/13 residual are C475-COMPATIBLE; confirms C627 token-specific directional mechanism)	2	B
@@ -5304,6 +5304,59 @@ Together these establish the substrate-vs-mechanism distinction and the controls
 - `phases/PHASE_697_VC_PARTITION_DISCOVERY/INDEX.md` — the audit trail of three threshold-related narrowings
 - C2033 — the surviving narrow Tier 2 measurement after the threshold recalibration
 - `phases/PHASE_697_VC_PARTITION_DISCOVERY/results/vc_ceiling_and_bootstrap.json` — the moment the pre-registered threshold was discovered wrong
+
+---
+
+## feedback-chi2-vs-permutation-null-mismatch
+
+*"Chi² test against independence null assumes independent marginals; when factors correlate with token frequency, chi² gives astronomically significant p-values while marginal-preserving permutation null gives correct (often marginal) p-values. C1068 audit established (2026-05-19) — perm_p=0.13 with chi² p=3.4e-292"*
+
+When testing cross-layer or cross-factor coupling/dependency, **chi² against the independence null is misleading if both factors correlate with token frequency**. Both factors will inherit the token-frequency distribution as a shared marginal, and chi² will reject independence trivially — even when the underlying coupling is absent or fully explained by frequency mediation.
+
+The methodologically appropriate test is the **marginal-preserving permutation null**: shuffle one factor's assignments across categories while preserving its marginal frequency distribution, then re-compute the coupling statistic (NMI, Cramér's V, or similar). The empirical p-value from this permutation null is the correct significance test.
+
+**The C1068 case study (2026-05-19 audit):**
+- C1068 claimed "Cross-Layer Partial Coupling" between C475_degree (MIDDLE attested-compatibility-degree) and C911_restriction (PREFIX×MIDDLE forbidden pairs)
+- Test statistics: chi² = 1367.0, p = 3.4 × 10⁻²⁹² (astronomically significant)
+- NMI = 0.185 (moderate)
+- Marginal-preserving permutation null mean NMI = 0.070
+- **Permutation null p = 0.13** (not significant at α=0.05)
+
+The chi² p-value of 3.4e-292 is rejecting the WRONG null. Both C475_degree and C911_restriction correlate with token frequency: common MIDDLEs have higher compatibility-degree AND appear in more testing pools for PREFIX restrictions. The chi² test sees a structured contingency table and rejects independence, but doesn't account for the shared frequency dependency.
+
+The 1000-permutation null (shuffling C911 restriction values across MIDDLEs while preserving their marginal distribution) gives the correct comparison: null mean NMI = 0.070, observed NMI = 0.185, **but the observation is reached or exceeded in 13% of permutations**. That's not significant exclusion.
+
+The original constraint text was self-aware ("partially frequency-mediated, perm_null_p=0.13") but the Tier 2 status was too generous given the proper null.
+
+**Diagnostic test for this failure pattern:**
+1. Identify constraints that cite chi² p-values for coupling/dependency claims
+2. Check whether both factors plausibly correlate with token frequency (or any shared marginal)
+3. Look for whether a marginal-preserving permutation null is cited
+4. If permutation null absent or perm_p > 0.05, the constraint is audit-eligible
+5. Pattern: pre-PHASE_700 constraints in cross-layer / co-occurrence / coupling space are highest-suspicion
+
+**How to apply:**
+- When proposing new cross-layer coupling constraints: always run marginal-preserving permutation null, don't rely on chi² alone
+- When auditing existing constraints: chi² p << 1e-10 with NMI ~0.1-0.2 is the warning signature — check if perm_p is reported and whether it crosses 0.05
+- Cleanly-framed alternative: report effect size (NMI / Cramér's V) and perm_p separately. Don't let chi² p-value carry interpretive weight
+- For tier classification: if perm_p > 0.05, claim is at best Tier 3 (suggestive measurement, no significance under proper null)
+
+**Related methodology memories:**
+- [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null discipline; sister test for adjacency claims — same family of "preserve marginal, shuffle assignment" nulls)
+- [[feedback-made-up-threshold-audit]] (C131 audit — three-axis early-investigation diagnostic)
+- [[feedback-denominator-choice-sparse-cooccurrence]] (C475 audit — N_possible vs N_attested denominator)
+- [[feedback-aggregate-minus-original-independence-test]] (PHASE_705 — analogous for class-generalization claims)
+- [[feedback-framework-as-null]] (mature-stage prior toward null)
+
+**Broader audit policy implication:**
+Per crazy-expert estimate, ~8-20 constraints in the C660-C1100 range share this signature (chi² p-value load-bearing while perm_p marginal). Add to the C475 audit-sweep target list. Grep heuristic: constraints with `chi²` or `chi2` in metrics, NMI/Cramér's V claims, registered pre-PHASE_700. Spot-check 5-10; if hit rate >40%, do the full sweep.
+
+**Failure-mode taxonomy now spans three distinct patterns** (three audits this session, three different patterns):
+1. C131 — invented threshold + non-reproducing value + null at observed (retract)
+2. C475 — wrong framing/denominator + sparsity-driven headline (demote, strong-form survives in adjacent constraint)
+3. C1068 — chi² p-value load-bearing while perm_p marginal (demote, methodology was sound, just wrong null reported as load-bearing)
+
+Each is a distinct audit-shape worth its own diagnostic.
 
 ---
 

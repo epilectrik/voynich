@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2035 validated constraints | **Version:** 6.74 | **Date:** 2026-05-19 (C475 demoted Tier 2→3 post-audit)
+**Total:** 2035 validated constraints | **Version:** 6.75 | **Date:** 2026-05-19 (C1068 demoted Tier 2→3 post-audit)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -2726,7 +2726,7 @@ Integration of three forbidden/incompatibility layers (C475, C911, C1063). Tests
 
 | # | Statement Summary | Tier | Scope | File |
 |---|-----------|------|-------|----------|
-| **1068** | **Cross-Layer Partial Coupling** (C475 x C911 NMI=0.185, frequency-mediated perm_p=0.13; C475 x C1063 NMI=0.005; C911 x C1063 NMI=0.002; MIDDLE-centric layers coupled, PREFIX-SUFFIX layer independent) | 2 | B | -> [C1068_cross_layer_partial_coupling.md](C1068_cross_layer_partial_coupling.md) |
+| 1068 | **[DEMOTED Tier 2→3 2026-05-19]** Originally "Cross-Layer Partial Coupling" (Tier 2). **Audit:** C475_degree × C911_restriction NMI=0.185 is marginal under proper null — chi² p=3.4e-292 used independence null which assumes independent marginals, but both factors correlate with token frequency. Marginal-preserving permutation null gives **p=0.13** (not significant at 0.05). C475-wholesale-graph concern from C475 demotion was AUDIT_PENDING; spot-check cleared it (methodology uses per-MIDDLE attested-degree, not sparsity-driven edges). Companion C1063-layer independence findings (NMI=0.005, NMI=0.002 perm_p=0.91) preserved within demotion narrative — these survive at proper null and are clean independence statements but kept within C1068 rather than split. Methodology memory: feedback_chi2_vs_permutation_null_mismatch.md. | 3 | B | -> [C1068_cross_layer_partial_coupling.md](C1068_cross_layer_partial_coupling.md) |
 | **1069** | **Weak Residual Community Structure** (3 communities after hub removal + frequency regression; Q_residual=0.125, Q_random=0.042, signal=0.082; weak but above-random; one community concentrates kernel-classified MIDDLEs) | 2 | B | -> [C1069_residual_community_structure.md](C1069_residual_community_structure.md) |
 | **1070** | **Atom Ordering Grammar Independent of Kernel Directional Bias** (only 2/21 cross-class pairs; both mismatch C521; compound construction grammar has own rules not reducible to kernel physics) | 2 | B | -> [C1070_atom_ordering_kernel_independence.md](C1070_atom_ordering_kernel_independence.md) |
 | **1071** | **Forbidden Transitions Operate Above Component-Level Rules** (only 4/17 C109 transitions blocked by C475/C911/C1063; 0 by C911 or C1063; 13/13 residual are C475-COMPATIBLE; confirms C627 token-specific directional mechanism) | 2 | B | -> [C1071_hazard_residual_above_components.md](C1071_hazard_residual_above_components.md) |

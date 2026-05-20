@@ -4,6 +4,95 @@
 
 ---
 
+## Version 6.75 (2026-05-19) - C1068 DEMOTED Tier 2→3 (chi² vs perm-null mismatch) + audit-pending flag cleared
+
+### Summary
+
+C1068 demoted from Tier 2 to Tier 3 following spot-check audit. Both experts converged on demote-no-split. C475-wholesale-graph concern (flagged AUDIT_PENDING in v6.74 commit) is **CLEARED**: C1068's methodology uses C475's attested-degree side, not the sparsity-driven edges.
+
+### Audit findings
+
+C1068 originally said: "Cross-Layer Partial Coupling C475×C911 NMI=0.185" (Tier 2).
+
+**C475-wholesale-graph concern audit (cleared):**
+C1068's methodology uses `c475_degree[mid] = compat_matrix[i].sum()` — per-MIDDLE OBSERVED co-occurrence count. This is the attested-pair side of C475 (equivalent to C729's framing), NOT the sparsity-driven "95.7% illegal pairs" framing. The wholesale-graph concern was a false alarm.
+
+**But C1068 has its own marginality:**
+| Metric | Value |
+|--------|------:|
+| Chi² | 1367.0, p = 3.4e-292 |
+| Cramér's V | 0.177 |
+| NMI | 0.185 |
+| Permutation null mean NMI | 0.070 |
+| **Permutation null p** | **0.13** (not significant at 0.05) |
+
+The chi² p-value is **against the wrong null** (assumes independent marginals; both factors correlate with token frequency). The marginal-preserving permutation null gives p=0.13, well above 0.05.
+
+The constraint text was self-aware ("partially frequency-mediated, perm_null_p=0.13") but the Tier 2 status was too generous. Modern discipline requires permutation null significance for cross-layer coupling claims.
+
+### Why demote, not retract or leave
+
+Pattern matches a **third distinct audit failure mode** (after C131's invented-threshold and C475's sparsity-denominator):
+
+> **C1068 pattern: methodology sound, but reports chi² as load-bearing when proper null (permutation, marginal-preserving) is marginal.**
+
+The constraint text is honest about the marginality but the tier classification implies more significance than the proper null supports. Demote, don't retract — the underlying observation (some cross-layer coupling exists) is real, just statistically marginal.
+
+### Companion findings preserved
+
+The same T1 test produced two clean independence findings preserved within the C1068 demotion narrative:
+- C475_degree × C1063: NMI=0.005 (near-zero, INDEPENDENT)
+- C911_restriction × C1063: NMI=0.002, perm_p=0.91 (INDEPENDENT)
+
+Per expert consultation (crazy-expert): no split — these support the demotion narrative as "comparison cases that demonstrate the coupling is real but marginal, not absent." Splitting into a new Tier 2 constraint was surgical overkill.
+
+### Methodology memory added
+
+`feedback_chi2_vs_permutation_null_mismatch.md`: Chi² test against independence null assumes independent marginals; when both factors correlate with token frequency, chi² rejects independence trivially while marginal-preserving permutation null gives correct (often marginal) p-value. C1068's NMI=0.185 + chi² p<1e-290 + perm_p=0.13 is the canonical case.
+
+### Audit failure-mode taxonomy (3 distinct patterns now established)
+
+Three audits this session, three distinct failure patterns:
+
+| # | Constraint | Pattern | Action |
+|---|------------|---------|--------|
+| 1 | C131 | Invented threshold + non-reproducing value + null at observed | RETRACT (Tier 1) |
+| 2 | C475 | Wrong denominator (N_possible vs N_attested) on sparse graph | DEMOTE (Tier 3), strong-form survives in C729 |
+| 3 | C1068 | Chi² p-value load-bearing while marginal-preserving permutation null is non-significant | DEMOTE (Tier 3), narrative preserved |
+
+**The taxonomy itself is high-EV** — each pattern is a separate diagnostic for future audit-sweep mechanization.
+
+### Audit-sweep target updates
+
+Crazy-expert estimate: ~8-20 constraints in C660-C1100 range share the chi²/perm-null mismatch pattern. **Add to existing audit-sweep target list** (which was C153, C268, C476, C481, C517, C518, C982, C983, C996 from C475 audit). Grep heuristic for new pattern: constraints with `chi²` or `chi2` in metrics, NMI/Cramér's V claims, registered pre-PHASE_700.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `context/CLAIMS/C1068_cross_layer_partial_coupling.md` | Replaced with demotion narrative; Tier 2 → Tier 3, reframed |
+| `context/CLAIMS/INDEX.md` | C1068 row updated; Version 6.74 → 6.75 |
+| `CLAUDE.md` | Version 6.74 → 6.75, demoted count 2 → 3 |
+| `~/.claude/projects/.../memory/feedback_chi2_vs_permutation_null_mismatch.md` | NEW methodology memory |
+| `~/.claude/projects/.../memory/MEMORY.md` | Index entry for the new memory |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `.claude/agents/crazy-expert.md` | C1068 row updated |
+
+### AUDIT_PENDING flag cleared
+
+C475 commit (v6.74, `68ee84c`) flagged C1068 as AUDIT_PENDING. **Flag now cleared** — spot-check confirmed C475-wholesale-graph concern was not realized, and the separate marginality issue is now documented via demotion.
+
+### Cumulative session retraction/demotion stats
+
+- **3 audit-driven actions** in one session (C131, C475, C1068)
+- **1 retraction + 2 demotions** (constraint count stays at 2035, retraction count 6→7, demoted count 1→3)
+- **3 methodology memories** added (made-up-threshold, denominator-choice, chi²-vs-perm-null)
+- **3 distinct failure-mode patterns** established as audit-diagnostics
+
+The taxonomy is now rich enough to support batch-mode audit-sweep (script the diagnostics, sweep mechanically). Per crazy-expert: this is high-EV until we start producing only repeats of the three known patterns with no new failure modes.
+
+---
+
 ## Version 6.74 (2026-05-19) - C475 DEMOTED Tier 2→3 (sparsity-driven headline) + denominator-choice methodology lesson
 
 ### Summary
