@@ -127,3 +127,43 @@ Per crazy-expert's cadence guidance:
 - **Conservative scoring:** the +1 for being on the targeted list is the only way many short-text constraints get flagged
 
 The script is **triage, not verdict**. Treat hits as "worth manual look," not "definitely needs action."
+
+---
+
+## Audit outcomes log (running list of triage hits → actual verdicts)
+
+### Round 1 audits (2026-05-19)
+
+| Constraint | Triage score | Manual audit verdict | Action |
+|-----------|------:|----------------------|--------|
+| C131 | n/a (selected from expert list) | Retract — invented threshold + non-reproducing value + null at observed (3-axis fail) | RETRACTED Tier 1 |
+| C475 | n/a (selected from expert list) | Demote — sparsity-denominator, max expected=2.51 among "illegal" pairs | DEMOTED Tier 2→3 |
+| C1068 | n/a (AUDIT_PENDING flag from C475 commit) | Demote — chi²-vs-perm-null mismatch (perm_p=0.13) | DEMOTED Tier 2→3 |
+| **C1065** | **2 (multi-signal: pair-counts + chi²-huge)** | **SURVIVES — methodology sound: permutation null preserves composition, observed >> null, V=0.376 effect, N≥5 filter on per-pair analysis. Text honestly distinguishes main claim (grammar exists, STRONG) from secondary claim (C521 kernel propagation, PARTIAL).** | **NONE (false positive)** |
+
+### Pattern hit-rate calibration (n=1)
+
+First multi-signal triage hit (C1065) was a **false positive**. Sample size n=1 is too small to update priors, but suggests Pattern 3 (chi²-huge) is the least-specific signal — it fires on any chi² with high statistic regardless of whether permutation null companion exists.
+
+**Refined expected hit-rate estimates (after C1065):**
+- Pattern 3 (chi²-vs-perm-null) standalone: **<40% hit rate** (downward revision from crazy-expert's original 5-15% retraction / 15-25% demotion). The 152-candidate pool likely includes many like C1065 with proper perm-null companions that the regex doesn't see.
+- Pattern 2 (sparsity-denominator): probably higher hit rate — C475 was a clean hit, the denominator-choice issue is structural
+- Pattern 1 (invented-threshold): C131 was a clean hit, but the pattern requires reading source code for true verification; hit rate uncertain
+- Multi-signal (score ≥ 2): n=1 false positive so far. Reserve judgment until more data.
+
+### Pattern enhancement candidates
+
+C1065 false positive suggests the chi²-vs-perm-null regex should be refined to **NOT flag** when the constraint description mentions "permutation" or "perm" companion. The current regex catches "perm_null_p" mentions but the false-positive path is: chi² + pair-counts trigger without checking if perm-null exists.
+
+**Suggested refinement (future iteration):** make Pattern 3 require *both* chi²-huge AND (no-perm-mention OR perm_p>0.05). The current behavior flags any chi²-huge, which is too broad.
+
+### Audit-outcome taxonomy (4 categories now)
+
+After 4 audits, four distinct verdict shapes:
+
+1. **RETRACT** (C131) — three-axis failure, nothing survives
+2. **DEMOTE-with-survivor** (C475) — wrong framing, strong-form survives in adjacent constraint
+3. **DEMOTE-with-narrative** (C1068) — methodology sound, but tier classification too generous for proper null
+4. **NO ACTION (false positive)** (C1065) — triage signature fires but methodology is actually sound
+
+Category 4 is informative for tool calibration even though no constraint changed.
