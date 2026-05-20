@@ -1,0 +1,29 @@
+{
+  "method": "PHASE_714 within-folio shuffle null for R5",
+  "n_permutations": 1000,
+  "observed_global_chsh_rate": 0.751984126984127,
+  "observed_frac_folios_above_baseline": 0.9491525423728814,
+  "observed_mean_across_folio_rate": 0.7751253454643285,
+  "n_folios_with_data": 59,
+  "null_global_chsh_rate": {
+    "mean": 0.5775317460317461,
+    "p95": 0.6150793650793651,
+    "p99": 0.6250198412698412,
+    "p_empirical": 0.0,
+    "passes_p99": true
+  },
+  "null_frac_folios_above_baseline": {
+    "mean": 0.7133050847457628,
+    "p95": 0.7966101694915254,
+    "p99": 0.847457627118644,
+    "p_empirical": 0.0,
+    "passes_p99": true
+  },
+  "null_mean_across_folio_rate": {
+    "mean": 0.5865133795347779,
+    "p95": 0.6284703514470464,
+    "p99": 0.644825722770638,
+    "p_empirical": 0.0,
+    "passes_p99": true
+  }
+}

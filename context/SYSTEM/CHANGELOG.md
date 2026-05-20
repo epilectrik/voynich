@@ -4,6 +4,68 @@
 
 ---
 
+## Version 6.82 (2026-05-20) - PHASE_714 C645 sharpening → C2045 substrate single-step bigram + C2046 no pre-hazard QO buildup
+
+### Summary
+
+User-directed refinement of C645 (post-hazard CHSH dominance) along 5 axes after PHASE_712/713 thermal-kinetics tests came back inconclusive due to resolution mismatch (instruction-text doesn't encode kinetic curves). C645 is the surviving directional anchor. PHASE_714 tested whether it generalizes to a multi-axis thermal recovery architecture.
+
+### 5-axis refinement results
+
+| Axis | Test | Result | Status |
+|---|---|---|---|
+| R1 | Per-hazard-class specificity | 73.4% vs 76.6% — spread 0.032 | FAIL |
+| R2 | Multi-lag trajectory | +0.199 → -0.031 → +0.007 → -0.032 | PASS (single-step decay) |
+| R3 | Triplet patterns | 50/50 split, asymmetry -0.084 | FAIL |
+| R4 | Pre-hazard QO buildup | 42-43% (BELOW baseline 44.7%) | FAIL |
+| R5 | Folio-level consistency | 94.9% folios above baseline | PASS strong |
+
+### Within-folio shuffle null (expert-advisor required before registration)
+
+All three substrate-level measures pass at p<0.001:
+- Global CHSH rate: observed 0.752 vs null p99 0.625
+- Fraction of folios above baseline: 94.9% vs null p99 84.8%
+- Mean across-folio CHSH rate: 0.775 vs null p99 0.645
+
+Effect is genuinely substrate-level, NOT composition shadow.
+
+### Expert consultation
+
+**Expert-advisor:** Recommended split registration, within-folio shuffle null required, measurement-only tier (not interpretive), audit C645 wording for scope creep. All applied.
+
+**Crazy-expert:** Reframed hazards as "stabilization failures" not "thermal overshoots" — accepted F-B-008/F-B-009 flagged for review, single-step picture replaces multi-step cycling, Tier 4 SPECULATIVE for mechanism interpretation.
+
+### Constraints registered
+
+- **C2045 (Tier 2):** PHASE_714 sharpening of C645. Substrate-level single-step bigram rule (lag +1 only); not class-specific; no continuation; folio-shuffle null passes p<0.001.
+- **C2046 (Tier 2 negative):** No pre-hazard QO/heating buildup. Falsifies "thermal overshoot from cumulative heating" mechanism for hazards. QO at lag -1/-2/-3 = 42-43% (below baseline 44.7%).
+
+### Mechanism interpretations NOT promoted past Tier 4
+
+- "Thermal damage-control protocol" — Tier 4 SPECULATIVE
+- "Stabilization-failure" (crazy-expert reframe) — Tier 4 SPECULATIVE
+- "Instruction-grammar bigram rule" — Tier 3 framing only
+
+Per `feedback_mechanism_cycle_procedural_ceiling.md`: measurements promoted, mechanism interpretations kept conservative.
+
+### Implications for broader thermal interpretation
+
+Thermal interpretation reduces from "multi-step kinetic architecture" to:
+- Structural process-class narrowing (PWRE) — surviving
+- Single-step damage-control bigram (C645 + C2045) — surviving
+- Categorical-operational vocabulary (C2042) — surviving
+- ~~Multi-step thermal protocol~~ — falsified by R3
+- ~~Class-specific recovery~~ — falsified by R1
+- ~~Pre-hazard heating buildup~~ — falsified by R4 (C2046)
+
+Mechanism inference now conservative; structural-measurement support remains substantial.
+
+### Fits to review
+
+F-B-008 (two-channel thermal grammar) and F-B-009 (overshoot-correct cycling) flagged for review per crazy-expert. The multi-step overshoot-cycling mechanism they posit is not supported by PHASE_714's negative results on R3 and R4. Single-step picture replaces multi-step cycling.
+
+---
+
 ## Version 6.81 (2026-05-20) - PHASE_711 parameter-slot decoding → C2043 Tier 2 measurement + C2044 Tier 2 negative
 
 ### Summary

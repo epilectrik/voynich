@@ -1,0 +1,265 @@
+{
+  "method": "PHASE_714 C645 post-hazard directional anchor refinement",
+  "n_lines": 2420,
+  "n_hazard_tokens": 956,
+  "n_en_tokens": 7140,
+  "base_chsh_rate": 0.5529411764705883,
+  "refinement_1_per_class": {
+    "30": {
+      "qo": 66,
+      "chsh": 216,
+      "total": 282,
+      "chsh_rate": 0.7659574468085106,
+      "qo_rate": 0.23404255319148937
+    },
+    "7": {
+      "qo": 59,
+      "chsh": 163,
+      "total": 222,
+      "chsh_rate": 0.7342342342342343,
+      "qo_rate": 0.26576576576576577
+    }
+  },
+  "refinement_2_multi_lag": {
+    "1": {
+      "qo": 125,
+      "chsh": 379,
+      "total": 504,
+      "chsh_rate": 0.751984126984127,
+      "qo_rate": 0.24801587301587302
+    },
+    "2": {
+      "qo": 144,
+      "chsh": 157,
+      "total": 301,
+      "chsh_rate": 0.521594684385382,
+      "qo_rate": 0.47840531561461797
+    },
+    "3": {
+      "qo": 73,
+      "chsh": 93,
+      "total": 166,
+      "chsh_rate": 0.5602409638554217,
+      "qo_rate": 0.4397590361445783
+    },
+    "4": {
+      "qo": 45,
+      "chsh": 49,
+      "total": 94,
+      "chsh_rate": 0.5212765957446809,
+      "qo_rate": 0.4787234042553192
+    }
+  },
+  "refinement_3_triplet": {
+    "hazard_chsh_then": {
+      "QO": 112,
+      "CHSH": 112,
+      "total": 224
+    },
+    "hazard_qo_then": {
+      "QO": 32,
+      "CHSH": 45,
+      "total": 77
+    },
+    "chsh_then_chsh_rate": 0.5,
+    "qo_then_chsh_rate": 0.5844155844155844
+  },
+  "refinement_4_pre_hazard": {
+    "1": {
+      "qo": 273,
+      "chsh": 372,
+      "total": 645,
+      "qo_rate": 0.4232558139534884,
+      "chsh_rate": 0.5767441860465117
+    },
+    "2": {
+      "qo": 179,
+      "chsh": 255,
+      "total": 434,
+      "qo_rate": 0.41244239631336405,
+      "chsh_rate": 0.5875576036866359
+    },
+    "3": {
+      "qo": 117,
+      "chsh": 155,
+      "total": 272,
+      "qo_rate": 0.43014705882352944,
+      "chsh_rate": 0.5698529411764706
+    }
+  },
+  "refinement_5_folio_consistency": {
+    "n_folios_with_data": 59,
+    "mean_chsh_rate": 0.7751253454643285,
+    "std_chsh_rate": 0.18176991877281756,
+    "fraction_above_baseline": 0.9491525423728814,
+    "per_folio_sample": [
+      {
+        "folio": "f26v",
+        "total": 4,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f31r",
+        "total": 3,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f31v",
+        "total": 4,
+        "chsh_rate": 0.75,
+        "qo_rate": 0.25
+      },
+      {
+        "folio": "f33v",
+        "total": 5,
+        "chsh_rate": 0.8,
+        "qo_rate": 0.2
+      },
+      {
+        "folio": "f34r",
+        "total": 7,
+        "chsh_rate": 0.7142857142857143,
+        "qo_rate": 0.2857142857142857
+      },
+      {
+        "folio": "f39r",
+        "total": 6,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f39v",
+        "total": 7,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f43r",
+        "total": 3,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f43v",
+        "total": 3,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f46v",
+        "total": 3,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f55r",
+        "total": 3,
+        "chsh_rate": 0.6666666666666666,
+        "qo_rate": 0.3333333333333333
+      },
+      {
+        "folio": "f66r",
+        "total": 12,
+        "chsh_rate": 0.75,
+        "qo_rate": 0.25
+      },
+      {
+        "folio": "f66v",
+        "total": 4,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f75r",
+        "total": 13,
+        "chsh_rate": 0.8461538461538461,
+        "qo_rate": 0.15384615384615385
+      },
+      {
+        "folio": "f75v",
+        "total": 10,
+        "chsh_rate": 0.6,
+        "qo_rate": 0.4
+      },
+      {
+        "folio": "f76r",
+        "total": 24,
+        "chsh_rate": 0.9166666666666666,
+        "qo_rate": 0.08333333333333333
+      },
+      {
+        "folio": "f76v",
+        "total": 3,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f77r",
+        "total": 3,
+        "chsh_rate": 1.0,
+        "qo_rate": 0.0
+      },
+      {
+        "folio": "f77v",
+        "total": 6,
+        "chsh_rate": 0.8333333333333334,
+        "qo_rate": 0.16666666666666666
+      },
+      {
+        "folio": "f78r",
+        "total": 5,
+        "chsh_rate": 0.6,
+        "qo_rate": 0.4
+      }
+    ]
+  },
+  "null_lag1": {
+    "observed": 0.751984126984127,
+    "null_mean": 0.5861996489029224,
+    "null_p95": 0.6331442072778706,
+    "null_p99": 0.6460522753306259,
+    "p_empirical": 0.0,
+    "passes_p99": true
+  },
+  "null_per_lag": {
+    "1": {
+      "observed": 0.751984126984127,
+      "null_mean": 0.5844751520795624,
+      "null_p99": 0.6530002103049423,
+      "p_emp": 0.0,
+      "passes": true
+    },
+    "2": {
+      "observed": 0.521594684385382,
+      "null_mean": 0.5896654680722939,
+      "null_p99": 0.6667914438502672,
+      "p_emp": 0.9666666666666667,
+      "passes": false
+    },
+    "3": {
+      "observed": 0.5602409638554217,
+      "null_mean": 0.583886729242203,
+      "null_p99": 0.6822777036048063,
+      "p_emp": 0.7333333333333333,
+      "passes": false
+    },
+    "4": {
+      "observed": 0.5212765957446809,
+      "null_mean": 0.5886068659161193,
+      "null_p99": 0.7241692789968652,
+      "p_emp": 0.8666666666666667,
+      "passes": false
+    }
+  },
+  "pass_count": 2,
+  "pass_details": [
+    "R1: class spread 0.032 \u2264 0.05 (no class-specificity)",
+    "R2: trajectory decays from +0.199 at lag+1 to +-0.032 at lag+4",
+    "R3: weak triplet asymmetry (-0.084)",
+    "R4: no pre-hazard QO buildup detected",
+    "R5: 94.92% of folios above baseline (consistent)"
+  ],
+  "verdict": "MODERATE THERMAL RECOVERY"
+}
