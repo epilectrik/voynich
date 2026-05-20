@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2035 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2034 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C2041.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2035 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2034 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2035 validated constraints are present as canonical one-line claims with tier
+2034 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 19:15
-**Version:** FROZEN STATE (2035 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-19 21:12
+**Version:** FROZEN STATE (2034 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (22 feedback rules)
+6. Session Methodology Notes (23 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -770,9 +770,8 @@ C471	PREFIX Encodes AZC Family Affinity	2	AZC
 C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC
 C475	MIDDLE ATOMIC INCOMPATIBILITY [DEMOTED Tier 2 → Tier 3, REFRAMED 2026-05-19]	2	A
-C476	COVERAGE OPTIMALITY	2	A
 C477	**HT Tail Correlation**	2	HT/A
-C478	TEMPORAL COVERAGE SCHEDULING	2	A
+C478	TEMPORAL COVERAGE SCHEDULING [AUDIT_PENDING 2026-05-19]	2	A
 C479	**Survivor-Set Discrimination Scaling**	2	A+AZC+HT
 C480	Constrained Execution Variability	3	A→B
 C481	**Survivor-Set Uniqueness** (0 collisions in 1575 lines)	2	A+AZC
@@ -5231,6 +5230,69 @@ Atom-by-atom token decomposition in cold reads produces word salad like "add mat
 **Why:** Tokens take on operational identity in practice beyond their atom composition. C1193 (core prefixes as frozen functional units), C171 (semantic ceiling), MODEL_CONTEXT.md ("tokens have roles, not meanings — semantics exist only in operator practice"). Token meanings are listed as IRRECOVERABLE. The atom glosses (C1195, Tier 3-4) describe positional role in the grammar, not what the operator was doing.
 
 **How to apply:** In cold reads and external-facing documents, lead with the quantitative structural evidence that doesn't require believing the gloss system: counting anchors (corpus-singular token runs), e-depth thermal arcs, dar distribution patterns, observation MIDDLE distribution, paragraph structure. Use atom glosses only as supporting context with heavy caveats, not as the primary argument. When glossing tokens for a reader, use whole-token operational descriptions ("one complete heat cycle", "material addition") rather than atom chains ("heat.cool.do.end", "into.iterate.bind").
+
+---
+
+## feedback-broken-baseline-audit
+
+*"When a constraint claims \"X optimized vs Y-alternative,\" audit Y's implementation. If Y is an algorithm artifact (alphabetical fallback, sampling-with-replacement on Zipfian, etc.) rather than a meaningful representative of the alternative hypothesis, the comparison is broken — independent of how clean the numbers look. C476 audit established (2026-05-19)"*
+
+The C131/C475/C1068 audit patterns address invented thresholds, wrong denominators, and wrong-null-tests respectively. C476's pattern is distinct: **the null/baseline implementation doesn't represent the alternative hypothesis the constraint claims to refute**.
+
+The constraint construct may be sound (compare real corpus to baseline-strategy). The numerical machinery may be sound (proper sampling, correct statistics). But the BASELINE itself is contaminated by implementation choices that have nothing to do with the hypothesis being tested.
+
+**The C476 case study (2026-05-19 audit):**
+- C476 claimed: "Currier A achieves greedy-optimal coverage while using 22.3% FEWER hub tokens than greedy would require" (Tier 2). Interpreted as "deliberate hub rationing."
+- Real A: 100% coverage, 31.6% hub usage
+- Greedy baseline: 100% coverage, 53.9% hub usage
+- Headline: 22.3pp "hub savings"
+
+Audit found the greedy algorithm picks new MIDDLEs first (gain=1) but **once all MIDDLEs are seen, every candidate has gain=0**. The algorithm then picks the FIRST candidate from a sorted list — which means alphabetical fallback. Hub MIDDLEs ('a', 'o', 'e', 'ee', 'eo' per C475) happen to be alphabetically early, so greedy spams hubs after coverage is achieved.
+
+The "22.3pp hub savings" was measuring `sort(alphabetically_early_strings)` not `coverage_optimization_strategy_vs_rationing`. The comparison was algorithm-implementation-artifact, not hypothesis-testing.
+
+**Diagnostic test for this failure pattern:**
+1. Identify constraints framed as "X is optimized/conserved/managed vs [BASELINE] alternative"
+2. Find the BASELINE algorithm's source code
+3. Ask: does this algorithm have **tie-breaking, fallback, or default behavior** that gets invoked frequently in practice?
+4. If yes, ask: does that behavior have anything to do with the alternative hypothesis?
+5. Specific red flags:
+   - Alphabetical or numerical sort as tie-breaker (fires whenever multiple candidates score equal)
+   - Sampling with replacement (over-samples high-frequency items)
+   - Greedy-then-fallback (the fallback dominates once the greedy goal is met)
+   - Random.choice from a sorted/non-shuffled list (favors early items)
+
+If the baseline's measured behavior is dominated by such artifacts, the comparison is broken regardless of how clean the numbers look.
+
+**How to apply:**
+- When proposing new "X vs Y-baseline" constraints: explicitly test the baseline's behavior under degenerate cases (all-equal scores, post-saturation, etc.). If the baseline's behavior in those cases is non-representative, the comparison won't generalize
+- When auditing existing constraints citing "optimized vs greedy/uniform/freq-matched baselines": read the baseline algorithm before trusting the comparison
+- The surviving substantive measurement may be **directionally opposite** to the original framing (as with C476: claim was "rationing," reality is "enrichment"). In that case retraction is cleaner than demotion — demotion under wrong-direction framing misleads future readers
+
+**Demote vs retract decision rule:**
+- If broken baseline + surviving measurement supports the claim's direction → demote with reframe
+- If broken baseline + surviving measurement contradicts the claim's direction → retract (don't demote)
+- C476 fell into the second category (3.2× hub ENRICHMENT vs uniform contradicts "hub rationing")
+
+**Related methodology memories:**
+- [[feedback-made-up-threshold-audit]] (C131 — invented threshold, three-axis failure)
+- [[feedback-denominator-choice-sparse-cooccurrence]] (C475 — wrong denominator in sparse co-occurrence)
+- [[feedback-chi2-vs-permutation-null-mismatch]] (C1068 — wrong-null-test in frequency-correlated data)
+- [[feedback-calibrate-thresholds-against-controls]] (PHASE_697 — calibrate against in-distribution controls before locking)
+
+**Failure-mode taxonomy (4 patterns now established):**
+1. **C131 pattern:** invented threshold + non-reproducing value + null at observed → RETRACT
+2. **C475 pattern:** wrong denominator (N_possible vs N_attested) on sparse data → DEMOTE if strong-form survives in adjacent constraint
+3. **C1068 pattern:** chi² against wrong null when factors share frequency marginals → DEMOTE with marginal-perm-null note
+4. **C476 pattern:** broken baseline that doesn't represent the alternative hypothesis being claimed → RETRACT if surviving measurement is wrong-direction, DEMOTE if right-direction-but-weaker
+
+Each is a distinct audit-shape worth its own diagnostic. The taxonomy is high-EV for mechanizing audit-sweep work.
+
+**Broader audit policy implication:**
+2026-01-12 probe family (MIDDLE_INCOMPATIBILITY, COVERAGE_OPTIMALITY, TEMPORAL_TRAJECTORIES) is producing 2/2 audit-hit rate (C475 demoted, C476 retracted). Elevated prior for related constraints in same batch — targeted audit-sweep of C478, C481, C755, C756 indicated. Crazy-expert estimated 30-40% retraction/demotion rate in this batch based on 2/2 prior.
+
+**Audit-sweep tool refinement candidate:**
+The audit-sweep regex patterns don't currently catch broken-baseline issues — they're invisible in constraint description text (the baseline name appears, but its implementation details don't). Detection requires reading the source code of the baseline algorithm. Manual audit will remain essential for this pattern.
 
 ---
 

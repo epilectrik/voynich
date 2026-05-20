@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1848 constraints | 2026-05-19
+CONSTRAINT_REFERENCE v2.6 | 1847 constraints | 2026-05-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -340,9 +340,8 @@ C471	PREFIX Encodes AZC Family Affinity	2	AZC	in: azc_system
 C472	MIDDLE Is Primary Carrier of AZC Folio Specificity	2	AZC	in: azc_system
 C473	Currier A Entry Defines a Constraint Bundle	2	AZC	in: azc_system
 C475	MIDDLE ATOMIC INCOMPATIBILITY [DEMOTED Tier 2 → Tier 3, REFRAMED 2026-05-19]	2	A	in: currier_a
-C476	COVERAGE OPTIMALITY	2	A	in: currier_a
 C477	**HT Tail Correlation** (r=0.504, p=0.0045, R²=0.28)	2	HT/A	-> C477_ht_tail_correlation.md
-C478	TEMPORAL COVERAGE SCHEDULING	2	A	in: currier_a
+C478	TEMPORAL COVERAGE SCHEDULING [AUDIT_PENDING 2026-05-19]	2	A	in: currier_a
 C479	**Survivor-Set Discrimination Scaling** (partial rho=0.395, p<10^-29)	2	A+AZC+HT	-> C479_survivor_discrimination_scaling.md
 C480	Constrained Execution Variability (rho=0.306, p=0.078, PROVISIONAL)	3	A→B	-> C480_constrained_variability.md
 C481	**Survivor-Set Uniqueness** (0 collisions in 1575 lines)	2	A+AZC	-> C481_survivor_set_uniqueness.md

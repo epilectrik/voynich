@@ -4,6 +4,97 @@
 
 ---
 
+## Version 6.76 (2026-05-19) - C476 RETRACTED (broken-baseline pattern) + 4th audit failure-mode pattern + 2026-01-12 batch elevated-prior
+
+### Summary
+
+C476 retracted following audit per `phases/C476_AUDIT/`. Both experts converged on retract-not-demote because the surviving measurement (3.2× hub enrichment vs uniform) is **directionally opposite** to the constraint's "hub rationing" claim. Demotion would preserve a constraint number under wrong-direction framing — retraction with narrative is cleaner.
+
+This is the **5th audit-driven action of the session** and reveals a **4th distinct audit failure pattern** (broken-baseline).
+
+### Audit findings
+
+C476 originally said: "Currier A achieves GREEDY-OPTIMAL coverage (100%) while using 22.3% FEWER hub tokens than greedy would require" (Tier 2). Interpreted as "deliberate hub rationing."
+
+**Three methodological issues identified:**
+
+1. **"100% coverage" is tautological.** The vocabulary being covered is defined as the set of MIDDLEs appearing in Real A. The denominator IS the data. Greedy also achieves 100% by the same logic.
+
+2. **The "greedy uses 53.9% hubs" comparison is an algorithm artifact.** The greedy implementation picks new MIDDLEs first (gain=1) but once all MIDDLEs are seen, every candidate has gain=0. The algorithm then picks the FIRST candidate from alphabetically-sorted `all_middles`. Hub MIDDLEs ('a', 'o', 'e', 'ee', 'eo') are alphabetically early, so greedy spams hubs post-saturation. The "22.3pp hub savings" measures `sort(alphabetically_early_strings)`, not `coverage_optimization_vs_rationing`.
+
+3. **Frequency-matched baseline (27% coverage, 56.1% hub usage) has structural issues.** Sampling with replacement from heavily Zipfian frequencies keeps re-drawing hubs.
+
+### What survives (informational, not preserved under C476)
+
+- Real A has 31.6% hub usage
+- Random compatibility-respecting null gives 9.8%
+- That's **3.2× hub enrichment vs uniform** — real measurement, opposite direction
+
+If the hub-enrichment measurement is preserved at all, it should be a FRESH constraint with correct directional framing.
+
+### Why retract (not demote)
+
+C475 had C729 as a clean structural survivor preserving the underlying claim at narrower scope. C476 has a measurement that **reverses** the claim's direction. Per `feedback_made_up_threshold_audit.md` precedent: retraction with narrative > demotion that preserves a wrong-direction metric.
+
+### 4th distinct audit failure pattern established
+
+Failure-mode taxonomy now spans 4 distinct patterns:
+
+| # | Pattern | Diagnostic | Action precedent |
+|---|---------|-----------|------------------|
+| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold | RETRACT |
+| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph | DEMOTE if strong-form survives |
+| 3 | Wrong null test (C1068) | chi² against independence null when factors share marginals | DEMOTE with marginal-perm-null note |
+| 4 | **Broken baseline (C476)** | **Null/baseline algorithm artifact doesn't represent the alternative hypothesis** | **RETRACT if surviving measurement is wrong-direction** |
+
+Pattern 4 diagnostic: when constraint frames "X optimized vs Y-alternative," audit Y's implementation. If Y has tie-breaking/fallback/default behavior dominating its output, the comparison is broken regardless of clean numbers.
+
+### Downstream impact
+
+**C478 ("Temporal Coverage Scheduling") FLAGGED AUDIT_PENDING.** Cites "Reconciliation with C476" and inherits coverage-control framing. Of its four claims:
+- "Back-loaded coverage" — depends on C476's tautological "coverage" framing
+- "Front-loaded novelty" — same dependency
+- "U-shaped tail pressure" — may survive independently as descriptive distributional fact
+- "PREFIX cycling" — same, likely survives
+
+Audit needed: apply three-axis diagnostic to each sub-claim separately. Expected outcome: U-shape + prefix cycling survive, back-load/front-load require reframing.
+
+### Methodology memory added
+
+`feedback_broken_baseline_audit.md`: When a constraint claims "X optimized vs Y-alternative," audit Y's implementation. If Y is an algorithm artifact (alphabetical fallback, sampling-with-replacement on Zipfian, greedy-then-fallback dominated by fallback, random.choice from sorted lists), the comparison is broken. Detection requires reading baseline algorithm source code — audit-sweep regex cannot catch this pattern. Manual audit remains essential.
+
+### 2026-01-12 probe batch — elevated audit prior
+
+The 2026-01-12 probe family (MIDDLE_INCOMPATIBILITY, COVERAGE_OPTIMALITY, TEMPORAL_TRAJECTORIES) is producing **2/2 audit-hit rate** (C475 demoted, C476 retracted). Per crazy-expert: elevated prior on related constraints in same batch — estimated 30-40% retraction/demotion rate based on 2/2 prior. Specific targets to triage next:
+- **C478** (Temporal Coverage Scheduling) — already flagged AUDIT_PENDING above
+- **C481** (Survivor-Set Uniqueness — already on targeted list)
+- **C755, C756** — coverage-family successors
+
+Scope as targeted maintenance, ~1 session for triage scan + ~3-4 sessions for deep audits of flagged constraints. This is high-EV: better to find these now than have them surface as conflicts during cold reads.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `context/CLAIMS/currier_a.md` | C476 entry replaced with retraction narrative; C478 flagged AUDIT_PENDING |
+| `context/CLAIMS/INDEX.md` | Header updated; constraint count 2035 → 2034 |
+| `CLAUDE.md` | Version 6.75 → 6.76; constraint count 2035 → 2034; retraction count 7 → 8 |
+| `~/.claude/projects/.../memory/feedback_broken_baseline_audit.md` | NEW methodology memory (4th pattern) |
+| `~/.claude/projects/.../memory/MEMORY.md` | Index entry |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `.claude/agents/crazy-expert.md` | C476 row updated with retraction narrative |
+
+### Cumulative session retraction/demotion stats
+
+- **5 audit-driven actions** (C131, C475, C1068, C1065-confirmed-clean, C476)
+- **2 retractions + 2 demotions + 1 clean-confirmation** (constraint count 2036 → 2034)
+- **4 methodology memories** added
+- **4 distinct failure-mode patterns** established as audit-diagnostics
+- **Audit-sweep tool** built + refined (Pattern 3 4-way classification)
+- **2026-01-12 batch** flagged for follow-up sweep (C478, C481, C755, C756)
+
+---
+
 ## Version 6.75 (2026-05-19) - C1068 DEMOTED Tier 2→3 (chi² vs perm-null mismatch) + audit-pending flag cleared
 
 ### Summary

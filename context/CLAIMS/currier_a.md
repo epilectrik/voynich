@@ -433,29 +433,51 @@ This is the atomic discrimination layer. Everything above it (A entries, AZC fol
 
 ## Coverage Optimality (C476)
 
-### C476 - COVERAGE OPTIMALITY
-**Tier:** 2 | **Status:** CLOSED | **Source:** COVERAGE_OPTIMALITY probe (2026-01-12)
+### ~~C476~~ - [RETRACTED 2026-05-19]
+**Tier:** 1 (RETRACTED) | **Status:** FALSIFIED via baseline-comparison audit | **Source:** COVERAGE_OPTIMALITY probe (2026-01-12); audit `phases/C476_AUDIT/` (2026-05-19)
 
-Currier A achieves GREEDY-OPTIMAL coverage (100%) while using 22.3% FEWER hub tokens than a greedy strategy would require.
+**ORIGINAL CLAIM (retracted):** "Currier A achieves GREEDY-OPTIMAL coverage (100%) while using 22.3% FEWER hub tokens than a greedy strategy would require." Interpreted as "deliberate hub rationing."
 
-**Evidence:**
-- Real A: 100% coverage, 31.6% hub usage
-- Greedy: 100% coverage, 53.9% hub usage
-- Hub savings: 22.3 percentage points
-- Random baseline: 72% coverage
-- Frequency-matched baseline: 27% coverage
+**Why retracted (not just demoted):** the surviving measurement is **directionally opposite** to the constraint's claim. The "hub rationing" framing said Currier A uses FEWER hubs than coverage-optimal would require. The audit-confirmed measurement shows A uses MORE hubs than uniform-random would (3.2× enrichment). Demotion would preserve a constraint number under wrong-direction framing — retraction with narrative is cleaner per `feedback_made_up_threshold_audit.md` precedent.
 
-**Interpretation:**
-> **Currier A is not meant to be generated. It is meant to be maintained.**
+**Audit findings (`phases/C476_AUDIT/`):** Three methodological issues:
 
-The four residuals (PREFIX coherence, tail forcing, repetition structure, hub rationing) are ONE control objective: COVERAGE CONTROL.
+1. **"100% coverage" is tautological.** The "vocabulary" being covered is *defined as* the set of MIDDLEs that appear in Real A. So "Real A covers 100% of MIDDLEs in Real A" is definitional. Greedy also achieves 100% by the same logic. The denominator IS the data.
+
+2. **The "greedy uses 53.9% hubs" comparison is an algorithm artifact.** Reading `generate_greedy_coverage()`:
+   - Picks new MIDDLEs first (gain=1)
+   - Once all MIDDLEs are seen, every candidate has gain=0
+   - Algorithm picks FIRST candidate from `all_middles` (sorted alphabetically)
+   - Hub MIDDLEs ('a', 'o', 'e', 'ee', 'eo' per C475) are alphabetically early
+   - So greedy spams hubs after coverage is achieved — alphabetical-fallback artifact, not coverage optimization
+
+   The 22.3pp "hub savings" compares Real A's Zipfian distribution (31.6%) to greedy's alphabetical-fallback artifact (53.9%). Not a meaningful comparison.
+
+3. **Frequency-matched baseline (27% coverage, 56.1% hub usage) has structural issues.** Sampling with replacement from heavily Zipfian frequencies keeps re-drawing hubs, achieving low coverage. The 56.1% hub usage is sampling-distribution artifact.
+
+**What actually survives audit (informational, not preserved under C476):**
+- Real A has 31.6% hub usage
+- Random compatibility-respecting null gives 9.8%
+- That's **3.2× hub enrichment vs uniform** — real measurement, opposite direction
+
+If the hub-enrichment measurement is to be preserved at all, it should be a FRESH constraint with correct directional framing, not C476's "rationing" framing.
+
+**Methodology lesson saved:** `feedback_broken_baseline_audit.md` — fourth distinct audit failure pattern: broken null/baseline that doesn't represent the alternative hypothesis. When a constraint frames itself as "X optimized vs Y-alternative," audit Y's implementation. If Y is an algorithm artifact (alphabetical fallback, sampling-with-replacement on Zipfian, etc.) rather than a meaningful representative of the alternative hypothesis, the comparison is broken regardless of how clean the numbers look.
+
+**Downstream impact:**
+- **C478 ("Temporal Coverage Scheduling") — FLAGGED AUDIT_PENDING.** Cites "Reconciliation with C476" and inherits the coverage-control framing. Of its four claims (back-loaded coverage, front-loaded novelty, U-shaped tail, prefix cycling), the first two depend on C476's "coverage is a meaningful target" premise. The latter two may survive as descriptive distributional facts. Audit needed before C478 can be relied upon.
+- Other downstream constraints citing C476: not all use the rationing framing; most just cite C476 as evidence of "A-side discrimination structure." Demotion → retraction shouldn't ripple destructively.
+
+**Audit-sweep target list extended (per crazy-expert):** 2026-01-12 probe family is producing high audit-hit rate (2/2: C475 demoted, C476 retracted). Specific targets in same era to triage: C481 (Survivor-Set Uniqueness), C755, C756, plus the broader pre-2026-02 era constraints citing absolute load-bearing values.
 
 ---
 
 ## Temporal Trajectories (C478)
 
-### C478 - TEMPORAL COVERAGE SCHEDULING
-**Tier:** 2 | **Status:** CLOSED | **Source:** TEMPORAL_TRAJECTORIES probe (2026-01-12)
+### C478 - TEMPORAL COVERAGE SCHEDULING [AUDIT_PENDING 2026-05-19]
+**Tier:** 2 | **Status:** AUDIT_PENDING | **Source:** TEMPORAL_TRAJECTORIES probe (2026-01-12)
+
+**AUDIT_PENDING (2026-05-19):** C476 was retracted via audit (`phases/C476_AUDIT/`). C478 cites "Reconciliation with C476" and inherits the coverage-control framing. Per both expert reviews: of C478's four claims, the first two ("back-loaded coverage" and "front-loaded novelty") depend on C476's "coverage is a meaningful target" premise — which the C476 audit showed is tautological at the corpus level. The latter two ("U-shaped tail pressure" and "PREFIX cycling") may survive independently as descriptive distributional facts. Audit needed: apply the three-axis diagnostic from `feedback_made_up_threshold_audit.md` to each of the four sub-claims separately. Expected outcome: U-shape + prefix cycling survive, back-load/front-load require reframing.
 
 Currier A exhibits STRONG TEMPORAL SCHEDULING with pedagogical pacing: introduce vocabulary early, reinforce throughout, cycle between prefix domains.
 
