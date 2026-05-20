@@ -858,7 +858,7 @@ C477	**HT Tail Correlation**	2	HT/A
 C478	TEMPORAL COVERAGE SCHEDULING	2	A
 C479	**Survivor-Set Discrimination Scaling**	2	A+AZC+HT
 C480	Constrained Execution Variability	3	A→B
-C481	**Survivor-Set Uniqueness** (0 collisions in 1575 lines)	2	A+AZC
+C481	**RETRACTED 2026-05-19** Originally "Survivor-Set Uniqueness (0 collisions in 1575 lines)" Tier 2. Smoking gun: project's own follow-up code `compute_survivor_sets.py` writes `c481_verified: False` to JSON (1579 records → 1203 unique sets = 376 collisions = 24%% rate). FINDINGS.md silently reframes as "C481 VALIDATED — 1,203 patterns confirms discrimination" — different/weaker claim under original constraint number. Triple-pattern failure within constraint: (1) value doesn't reproduce, (2) direction wrong (clustering vs uniqueness), (3) denominator non-informative (2^49 subsets). 5TH NEW PATTERN: post-hoc claim-substitution in FINDINGS.md writeup. Memory: feedback_post_hoc_claim_substitution.md. 2026-01-12 probe batch now 3/3 audit-action rate (C475 demoted, C476 retracted, C481 retracted); batch-sweep mode recommended for remaining cohort (C478 AUDIT_PENDING, C479, C480, C755, C756).	1	A+AZC
 C482	**Compound Input Specification**	2	A→B
 C483	**Ordinal Repetition Invariance** (magnitude has no downstream effect)	2	A
 C484	**A Channel Bifurcation**	2	A

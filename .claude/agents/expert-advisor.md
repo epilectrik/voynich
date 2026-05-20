@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2034 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2033 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C2041.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2034 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2033 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2034 validated constraints are present as canonical one-line claims with tier
+2033 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-19 21:12
-**Version:** FROZEN STATE (2034 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-19 21:25
+**Version:** FROZEN STATE (2033 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (23 feedback rules)
+6. Session Methodology Notes (24 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -774,7 +774,6 @@ C477	**HT Tail Correlation**	2	HT/A
 C478	TEMPORAL COVERAGE SCHEDULING [AUDIT_PENDING 2026-05-19]	2	A
 C479	**Survivor-Set Discrimination Scaling**	2	A+AZC+HT
 C480	Constrained Execution Variability	3	A→B
-C481	**Survivor-Set Uniqueness** (0 collisions in 1575 lines)	2	A+AZC
 C482	**Compound Input Specification**	2	A→B
 C483	**Ordinal Repetition Invariance** (magnitude has no downstream effect)	2	A
 C484	**A Channel Bifurcation**	2	A
@@ -5954,6 +5953,104 @@ The flip from FAIL to PASS was driven by 46 MIDDLEs that appeared exactly once o
 **Diagnostic:** if your hapax cohort grows substantially (e.g., +5%+) when going from P+L to all-placement, the added hapaxes are AZC diagram singletons. Check if they concentrate on top-enriched folios — if so, your enrichment metric is contaminated.
 
 **Related:** [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null is the next mandatory control after placement filter is correct), [[feedback-framework-as-null]] (placement-induced PASS verdicts that don't survive paragraph-text restriction are framework-echo candidates).
+
+---
+
+## feedback-post-hoc-claim-substitution
+
+*"When a follow-up test or writeup labels a constraint \"VALIDATED\" with evidence that supports a DIFFERENT claim than the constraint registered, this is post-hoc claim-substitution — the writeup reframes the question silently to rescue the constraint number. Smoking gun: script outputs explicit verification field as False while writeup says \"VALIDATED.\" C481 audit established (2026-05-19)"*
+
+When a follow-up phase tests a previously-registered constraint, the writeup may **silently substitute a weaker or different claim** for the original headline, then label the constraint "VALIDATED" or "supported." The constraint number persists in the registry, but readers checking it see what looks like confirmation of the original claim — when in fact the surviving observation is a different claim that the original framing wouldn't have predicted.
+
+This is the **5th distinct audit failure pattern** identified in the 2026-05-19 audit session, distinct from:
+1. Invented threshold (C131)
+2. Wrong denominator (C475)
+3. Wrong null test (C1068)
+4. Broken baseline (C476)
+5. **Post-hoc claim-substitution (C481, this memory)**
+
+**The C481 case study (2026-05-19 audit):**
+
+Original C481 claim: "AZC survivor sets are essentially unique per Currier A line (**0 collisions in 1,575 lines**), functioning as high-dimensional constraint fingerprints. **DETERMINISTIC**."
+
+Follow-up phase `CLASS_COSURVIVAL_TEST` ran the verification. The script writes to JSON:
+
+```json
+{
+  "a_record_count": 1579,
+  "unique_survivor_sets": 1203,
+  "c481_verified": false
+}
+```
+
+That's **376 collisions in 1579 records (24% collision rate)** — not 0 collisions.
+
+But the human-written FINDINGS.md in the same directory says:
+
+> **C481 VALIDATED** — 1,203 unique class patterns confirms discrimination
+
+This is **claim-substitution**. The original claim was "essentially unique" / "DETERMINISTIC" / "0 collisions." The FINDINGS.md substitutes "1,203 patterns = discrimination confirmed" — a different (weaker) claim labeled with the original constraint number.
+
+The smoking gun is the contradiction between the script's `c481_verified: False` output and the FINDINGS.md "VALIDATED" verdict. Same directory, same data, opposite conclusions.
+
+**Why this is dangerous:**
+
+- The constraint number persists ("C481 Tier 2") so downstream constraints can cite it
+- Readers checking "is C481 supported?" see "VALIDATED" in FINDINGS.md and assume the original claim holds
+- The actual data (`c481_verified: False`) is buried in JSON
+- Future audits may not check the JSON if the writeup says VALIDATED
+
+**Diagnostic test for this failure pattern:**
+
+1. For Tier 2 constraints with explicit follow-up phases (`*_TEST`, `*_VALIDATION`, etc.):
+2. Check whether the follow-up phase's script output contains an explicit verification field (e.g., `c481_verified`, `passes_check`, `verified`).
+3. If yes, check the value. If False, audit immediately.
+4. Read the FINDINGS.md / synthesis writeup in the same directory.
+5. If the writeup labels the constraint "VALIDATED" / "supported" / "confirmed" while the JSON says False, this is claim-substitution.
+6. Compare: does the writeup's supporting evidence prove the **original claim** or a **different claim that uses the same constraint number**?
+
+**Red flags in writeup language:**
+
+- "X confirms discrimination" when original claim was "X is deterministic"
+- "X provides evidence" when original claim was "X is uniquely identified"
+- "X is supported by the data" when the metric supporting it is different from the original metric
+- Any writeup conclusion that hedges the original headline ("essentially unique" → "patterns exist," "0 collisions" → "discrimination exists")
+
+**How to apply:**
+
+- When auditing a constraint, ALWAYS read the follow-up phase's JSON output before reading the FINDINGS.md or constraint text. The JSON output is generated by code; the writeup is written by humans and can drift from the data.
+- If the JSON has an explicit verification field showing False, the constraint is audit-eligible regardless of what the writeup says.
+- When writing constraint registrations: avoid "VALIDATED" labels in writeup if the test specifically failed verification. Use "RESULT" or "OUTCOME" to describe what the test found, even if it contradicts the original claim.
+- When updating FINDINGS.md or similar files in audit response: explicitly note what claim was originally tested and what claim is supported by the surviving data.
+
+**Audit policy implication:**
+
+This pattern likely exists in other constraints. The diagnostic is mechanical (compare JSON verification fields to writeup verdicts) and should be incorporated into the audit-sweep tool — but it requires reading the per-constraint follow-up phase artifacts, not just the constraint description.
+
+Add to audit-sweep target heuristics: constraints with named follow-up validation phases (Phase SSD, *_TEST, *_VALIDATION) where the follow-up JSON might contain explicit verification fields.
+
+**Related methodology memories:**
+- [[feedback-made-up-threshold-audit]] (C131 — invented threshold + non-reproducing value + null at observed; component pattern of C481)
+- [[feedback-denominator-choice-sparse-cooccurrence]] (C475 — N_possible vs N_attested; component pattern of C481)
+- [[feedback-broken-baseline-audit]] (C476 — broken null/baseline + directional inversion; component pattern of C481)
+- [[feedback-chi2-vs-permutation-null-mismatch]] (C1068 — wrong null test; related but distinct)
+- [[feedback-framework-as-null]] (mature-stage prior toward null)
+
+**Failure-mode taxonomy now 5 patterns:**
+
+| # | Pattern | Diagnostic | Action precedent |
+|---|---------|-----------|------------------|
+| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold | RETRACT |
+| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph | DEMOTE if strong-form survives |
+| 3 | Wrong null test (C1068) | chi² against independence null with frequency-correlated factors | DEMOTE with marginal-perm-null note |
+| 4 | Broken baseline (C476) | null/baseline algorithm artifact doesn't represent alternative hypothesis | RETRACT if surviving measurement is wrong-direction |
+| 5 | **Post-hoc claim-substitution (C481)** | **follow-up phase writeup labels VALIDATED while script JSON verification field shows False** | **RETRACT + update FINDINGS.md to reflect actual outcome** |
+
+The C481 case demonstrated all 5 patterns can coexist in a single constraint (C481 hits patterns 1, 2, 4 in the constraint itself + pattern 5 in the FINDINGS.md reframe).
+
+**2026-01-12 batch implication:**
+
+The C475/C476/C481 cohort all share the post-hoc-rescue tendency in some form. Batch-sweep the remaining 2026-01-12 constraints (C478 AUDIT_PENDING, C479, C480, C755, C756) checking for the same patterns. Expected hit rate: high (3/3 so far).
 
 ---
 

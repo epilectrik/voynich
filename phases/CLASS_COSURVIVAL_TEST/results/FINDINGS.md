@@ -1,4 +1,6 @@
-# CLASS_COSURVIVAL_TEST: Findings (STRICT INTERPRETATION)
+# CLASS_COSURVIVAL_TEST: Findings (STRICT INTERPRETATION) [CORRECTED 2026-05-19]
+
+> **2026-05-19 CORRECTION:** This document previously labeled C481 as "VALIDATED." That was post-hoc claim-substitution. The actual script output (`a_record_survivors.json`) reports `c481_verified: False` because 1579 records produced 1203 unique survivor sets (376 collisions = 24% collision rate), contradicting the original C481 claim of "0 collisions in 1,575 lines / essentially unique / DETERMINISTIC." C481 has been **RETRACTED** (see audit at `context/CLAIMS/C481_survivor_set_uniqueness.md` and memory `feedback_post_hoc_claim_substitution.md`). The substantive finding (1,203 distinct class-survivor patterns indicating clustering structure) is real but is a **different and weaker claim** than C481 registered.
 
 ## Executive Summary
 
@@ -157,12 +159,12 @@ Under the strict model:
 
 ---
 
-## Constraint Implications
+## Constraint Implications [CORRECTED 2026-05-19]
 
 | Constraint | Status | Explanation |
 |------------|--------|-------------|
-| **C481** | **VALIDATED** | 1,203 unique class patterns confirms discrimination |
-| **C502** | **VALIDATED** | Strict interpretation produces meaningful filtering |
+| ~~**C481**~~ | **RETRACTED 2026-05-19** | Script reports `c481_verified: False` (1203 unique sets from 1579 records = 376 collisions, NOT 0). Original "essentially unique" claim falsified. Previous "VALIDATED" label in this document was post-hoc claim-substitution — see `feedback_post_hoc_claim_substitution.md` |
+| **C502** | **VALIDATED** | Strict interpretation produces meaningful filtering (independent of C481) |
 | **C411** | **EXTENDS** | ~34% class-level filtering (not just MIDDLE-level) |
 
 ---

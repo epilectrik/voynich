@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2034 validated constraints | **Version:** 6.76 | **Date:** 2026-05-19 (C476 retracted post-audit, broken-baseline pattern)
+**Total:** 2033 validated constraints | **Version:** 6.77 | **Date:** 2026-05-19 (C481 retracted post-audit, triple-pattern failure)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -539,7 +539,7 @@ Every new constraint MUST specify system scope:
 |---|------------|------|-------|--------|
 | **479** | **Survivor-Set Discrimination Scaling** (partial rho=0.395, p<10^-29) | 2 | A+AZC+HT | -> [C479_survivor_discrimination_scaling.md](C479_survivor_discrimination_scaling.md) |
 | 480 | Constrained Execution Variability (rho=0.306, p=0.078, PROVISIONAL) | 3 | A→B | -> [C480_constrained_variability.md](C480_constrained_variability.md) |
-| **481** | **Survivor-Set Uniqueness** (0 collisions in 1575 lines) | 2 | A+AZC | -> [C481_survivor_set_uniqueness.md](C481_survivor_set_uniqueness.md) |
+| ~~481~~ | **[RETRACTED 2026-05-19]** Originally "Survivor-Set Uniqueness (0 collisions in 1575 lines)" Tier 2. Audit: project's own follow-up code reports `c481_verified: False` — 1579 records → 1203 unique survivor sets = 376 collisions = 24% rate. Triple failure: (a) value doesn't reproduce (376 ≠ 0), (b) direction wrong (clustering observed, uniqueness claimed), (c) denominator non-informative (2^49 possible subsets makes "0 collisions" expected even under random null). Additional finding: FINDINGS.md silently reframes the falsified claim as "VALIDATED" via claim-substitution — saved as `feedback_post_hoc_claim_substitution.md` methodology memory (5th pattern). 2026-01-12 probe batch now 3/3 audit-driven action rate; batch-sweep recommended. | 1 | A+AZC | -> [C481_survivor_set_uniqueness.md](C481_survivor_set_uniqueness.md) |
 
 ---
 

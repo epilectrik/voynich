@@ -4,6 +4,106 @@
 
 ---
 
+## Version 6.77 (2026-05-19) - C481 RETRACTED (triple-pattern + reframe) + 5th audit failure pattern + batch-sweep mode
+
+### Summary
+
+C481 retracted via audit (`phases/C481_AUDIT/`). Triple-pattern failure within the constraint + a new 5th failure pattern in the FINDINGS.md writeup layer. **2026-01-12 probe batch now 3/3 audit-driven action rate**; both experts recommend switching to batch-sweep mode for the remaining cohort.
+
+### The smoking gun
+
+The project's own follow-up code already verified C481 and recorded `c481_verified: False` in its JSON output:
+
+```json
+"a_record_count": 1579,
+"unique_survivor_sets": 1203,
+"c481_verified": false
+```
+
+1579 records → 1203 unique survivor sets = **376 collisions (24% rate)**, not 0.
+
+But `FINDINGS.md` in the same directory said "C481 VALIDATED — 1,203 unique class patterns confirms discrimination" — silently substituting a different (weaker) claim under the original constraint number.
+
+### Triple-pattern failure within C481
+
+1. **Value doesn't reproduce** (C131-shape): 376 collisions ≠ original "0 collisions"
+2. **Direction wrong** (C476-shape): clustering observed, uniqueness claimed
+3. **Denominator non-informative** (C475-shape): 2^49 subsets makes "0 collisions" expected even randomly
+
+### 5th distinct failure pattern: post-hoc claim-substitution
+
+New pattern identified in C481's FINDINGS.md:
+
+> **Pattern 5: writeup labels constraint "VALIDATED" while script JSON verification field reports False**
+
+The original constraint claim was specifically "0 collisions / essentially unique / DETERMINISTIC." The FINDINGS.md silently substitutes "1,203 patterns = discrimination confirmed" — a different and weaker claim. The constraint number persists, the writeup label says VALIDATED, but the actual data contradicts the original headline.
+
+Memory saved: `feedback_post_hoc_claim_substitution.md`
+
+Diagnostic: when auditing constraints with named follow-up validation phases, **read the JSON verification fields BEFORE the FINDINGS.md writeup**. If JSON says False while writeup says VALIDATED, it's claim-substitution.
+
+### Failure-mode taxonomy (5 distinct patterns now)
+
+| # | Pattern | Diagnostic | Action precedent |
+|---|---------|-----------|------------------|
+| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold | RETRACT |
+| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph | DEMOTE if strong-form survives |
+| 3 | Wrong null test (C1068) | chi² against independence null with frequency-correlated factors | DEMOTE |
+| 4 | Broken baseline (C476) | null/baseline algorithm artifact doesn't represent alternative | RETRACT if surviving is wrong-direction |
+| 5 | **Post-hoc claim-substitution (C481)** | **writeup says VALIDATED while script JSON verification field reports False** | **RETRACT + correct writeup** |
+
+C481 demonstrates patterns 1+2+4 can coexist in a single constraint + pattern 5 in its writeup.
+
+### 2026-01-12 batch — switch to batch-sweep mode
+
+The 2026-01-12 probe family now has **3/3 audit-driven action rate**:
+- C475 DEMOTED
+- C476 RETRACTED
+- C481 RETRACTED
+
+Both experts agree this is past the one-at-a-time threshold. Recommended next action: **mechanical batch-sweep of remaining 2026-01-12 candidates** with pre-registered diagnostic axes locked before running:
+- C478 (already AUDIT_PENDING — Temporal Coverage Scheduling)
+- C479 (Survivor-Set Dimensionality — same Phase SSD family)
+- C480 (same family)
+- C755, C756 (coverage-family successors)
+
+Pre-registered diagnostic for batch-sweep:
+- Does the headline value reproduce on current data?
+- Does the direction of surviving observation match the registered claim?
+- Is the denominator informative (max-expected > 5 for "X%" claims)?
+- Does the FINDINGS.md writeup contradict the script JSON verification field?
+
+Expected hit rate per crazy-expert: 4-5 of 5 remaining likely retract or demote.
+
+### FINDINGS.md correction
+
+`phases/CLASS_COSURVIVAL_TEST/results/FINDINGS.md` updated to acknowledge `c481_verified: False` actual outcome. Previous "VALIDATED" label replaced with "RETRACTED" entry citing the actual data and the audit memory.
+
+### Changes
+
+| File | Change |
+|------|--------|
+| `context/CLAIMS/C481_survivor_set_uniqueness.md` | Full retraction narrative; Tier 2 → Tier 1 (RETRACTED) |
+| `context/CLAIMS/INDEX.md` | C481 row updated; constraint count 2034 → 2033 |
+| `CLAUDE.md` | Version 6.76 → 6.77; constraint count 2034 → 2033; retraction count 8 → 9 |
+| `phases/C481_AUDIT/INDEX.md` | Audit narrative |
+| `phases/CLASS_COSURVIVAL_TEST/results/FINDINGS.md` | Corrected the "VALIDATED" claim-substitution |
+| `~/.claude/projects/.../memory/feedback_post_hoc_claim_substitution.md` | NEW methodology memory (5th pattern) |
+| `~/.claude/projects/.../memory/MEMORY.md` | Index entry |
+| `context/SYSTEM/CHANGELOG.md` | This entry |
+| `.claude/agents/crazy-expert.md` | C481 row updated |
+
+### Cumulative session retraction/demotion stats
+
+- **6 audit-driven actions** (C131, C475, C1068, C1065-confirmed-clean, C476, C481)
+- **3 retractions + 2 demotions + 1 clean-confirmation** (constraint count 2036 → 2033)
+- **5 methodology memories** added
+- **5 distinct failure-mode patterns** established
+- **Audit-sweep tool** built + refined
+- **2026-01-12 batch** now 3/3 audit-action rate; batch-sweep mode recommended
+
+---
+
 ## Version 6.76 (2026-05-19) - C476 RETRACTED (broken-baseline pattern) + 4th audit failure-mode pattern + 2026-01-12 batch elevated-prior
 
 ### Summary
