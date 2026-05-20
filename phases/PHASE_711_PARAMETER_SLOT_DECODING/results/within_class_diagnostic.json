@@ -1,0 +1,152 @@
+{
+  "method": "PHASE_711 follow-up diagnostics \u2014 within-class retention + feature importance",
+  "test_1_within_class_retention": {
+    "results_by_class": [
+      {
+        "class": 33,
+        "n_pairs": 1253,
+        "n_test_folds": 4,
+        "ce_marginal_baseline": 4.556210397746952,
+        "ce_edepth_only": 4.507311302094363,
+        "ce_full_slot": 4.5223615987685015,
+        "acc_baseline": 0.17036143389699585,
+        "acc_edepth": 0.2145717361309354,
+        "acc_full_slot": 0.21247987835823262,
+        "full_slot_gain_ce": 0.03384879897845039,
+        "edepth_gain_ce": 0.04889909565258854,
+        "edepth_retention_ratio": 1.4446331074765701
+      },
+      {
+        "class": 13,
+        "n_pairs": 794,
+        "n_test_folds": 5,
+        "ce_marginal_baseline": 4.795972824784802,
+        "ce_edepth_only": 4.755887257445752,
+        "ce_full_slot": 4.804906928564728,
+        "acc_baseline": 0.10459184681602522,
+        "acc_edepth": 0.15513314172351728,
+        "acc_full_slot": 0.16233852328335896,
+        "full_slot_gain_ce": -0.008934103779925984,
+        "edepth_gain_ce": 0.04008556733904989,
+        "edepth_retention_ratio": NaN
+      },
+      {
+        "class": 8,
+        "n_pairs": 662,
+        "n_test_folds": 5,
+        "ce_marginal_baseline": 4.343261045586963,
+        "ce_edepth_only": 4.58345340739609,
+        "ce_full_slot": 4.620263327669727,
+        "acc_baseline": 0.26652345584272796,
+        "acc_edepth": 0.26592643253658627,
+        "acc_full_slot": 0.26592643253658627,
+        "full_slot_gain_ce": -0.2770022820827647,
+        "edepth_gain_ce": -0.24019236180912706,
+        "edepth_retention_ratio": NaN
+      },
+      {
+        "class": 31,
+        "n_pairs": 551,
+        "n_test_folds": 5,
+        "ce_marginal_baseline": 4.798995318578909,
+        "ce_edepth_only": 5.152024730715902,
+        "ce_full_slot": 5.193821987463167,
+        "acc_baseline": 0.17036057923410552,
+        "acc_edepth": 0.1614320078055341,
+        "acc_full_slot": 0.19200204290428866,
+        "full_slot_gain_ce": -0.3948266688842583,
+        "edepth_gain_ce": -0.35302941213699324,
+        "edepth_retention_ratio": NaN
+      },
+      {
+        "class": 32,
+        "n_pairs": 528,
+        "n_test_folds": 5,
+        "ce_marginal_baseline": 4.671185767987886,
+        "ce_edepth_only": 4.940772498301191,
+        "ce_full_slot": 4.968019305736918,
+        "acc_baseline": 0.17878270523639617,
+        "acc_edepth": 0.18691122945591224,
+        "acc_full_slot": 0.18669170554838668,
+        "full_slot_gain_ce": -0.2968335377490323,
+        "edepth_gain_ce": -0.26958673031330527,
+        "edepth_retention_ratio": NaN
+      },
+      {
+        "class": 29,
+        "n_pairs": 499,
+        "n_test_folds": 5,
+        "ce_marginal_baseline": 4.987611183089533,
+        "ce_edepth_only": 4.906290431719776,
+        "ce_full_slot": 5.071829755319255,
+        "acc_baseline": 0.13242799270721833,
+        "acc_edepth": 0.1853084493069601,
+        "acc_full_slot": 0.16592506649468675,
+        "full_slot_gain_ce": -0.08421857222972218,
+        "edepth_gain_ce": 0.08132075136975736,
+        "edepth_retention_ratio": NaN
+      },
+      {
+        "class": 14,
+        "n_pairs": 450,
+        "n_test_folds": 3,
+        "ce_marginal_baseline": 5.048865866026727,
+        "ce_edepth_only": 5.438998668671519,
+        "ce_full_slot": 5.518393006201535,
+        "acc_baseline": 0.09341897678611676,
+        "acc_edepth": 0.0857561415370746,
+        "acc_full_slot": 0.0966869506423259,
+        "full_slot_gain_ce": -0.469527140174808,
+        "edepth_gain_ce": -0.3901328026447919,
+        "edepth_retention_ratio": NaN
+      },
+      {
+        "class": 9,
+        "n_pairs": 403,
+        "n_test_folds": 4,
+        "ce_marginal_baseline": 4.836277697725797,
+        "ce_edepth_only": 5.389506880486846,
+        "ce_full_slot": 5.299658592469163,
+        "acc_baseline": 0.11841769452368965,
+        "acc_edepth": 0.11841769452368965,
+        "acc_full_slot": 0.19371565069642557,
+        "full_slot_gain_ce": -0.4633808947433655,
+        "edepth_gain_ce": -0.5532291827610489,
+        "edepth_retention_ratio": NaN
+      }
+    ],
+    "mean_edepth_retention_ratio": 1.4446331074765701,
+    "median_edepth_retention_ratio": 1.4446331074765701,
+    "verdict": "PARAMETRIC RETENTION SURVIVES (>50%)",
+    "thresholds": {
+      "parametric_lower": 0.5,
+      "refinement_upper": 0.2
+    }
+  },
+  "test_2_feature_importance": {
+    "feature_norms_per_dim": {
+      "prefix_cat": 12.806929375538516,
+      "e_depth": 11.148012376800878,
+      "head_atom": 12.326717898739117,
+      "term_atom": 17.61870160585194,
+      "suffix_first": 15.276807497715014
+    },
+    "feature_norms_total": {
+      "prefix_cat": 128.06929375538516,
+      "e_depth": 44.59204950720351,
+      "head_atom": 73.9603073924347,
+      "term_atom": 158.56831445266744,
+      "has_suffix": 8.935140569954829,
+      "suffix_first": 137.49126747943512
+    },
+    "head_vs_prefix_ratio": 0.9625037772351105,
+    "verdict": "HEAD AND PREFIX COMPARABLE (indeterminate)",
+    "ranking": [
+      "TERM atom",
+      "suffix_first",
+      "prefix_cat",
+      "HEAD atom",
+      "e_depth"
+    ]
+  }
+}

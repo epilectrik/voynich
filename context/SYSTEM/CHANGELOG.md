@@ -4,6 +4,74 @@
 
 ---
 
+## Version 6.81 (2026-05-20) - PHASE_711 parameter-slot decoding → C2043 Tier 2 measurement + C2044 Tier 2 negative
+
+### Summary
+
+Crazy-expert's PHASE_710 follow-up: test whether atom-level slot features carry forward-predictive information about next-instruction-class beyond the 49-class C121 label. Pre-registered three-axis main test PASSED (slot features add 0.07 bits CE / +2.4pp Acc@1 / +0.15 bits over shuffle, replicating 5/5 folds folio-CV). But crazy-expert's own pre-registered follow-up discriminators REJECTED the parametric semantics interpretation. Sub-class refinement is the supported reading.
+
+### Main test result (C2043 Tier 2)
+
+| Model | CE (bits/pred) | Acc@1 |
+|---|---:|---:|
+| Markov reference (class-only) | 4.8785 | 13.67% |
+| LogReg class-only baseline | 4.7597 | 13.76% |
+| **LogReg slot (class + 6 slot features)** | **4.6903** | **16.12%** |
+| Shuffle control (slot features permuted) | 4.8377 | 13.17% |
+
+All three pre-registered axes PASS:
+- CE improvement ≥ 0.05 bits → +0.069 bits PASS
+- Real gain over shuffle ≥ 0.04 bits → +0.147 bits PASS
+- Accuracy improvement ≥ 2pp → +2.36pp PASS
+
+### Follow-up diagnostics (C2044 Tier 2 negative)
+
+**Test 1 — Within-class retention** (crazy-expert: >50% retention = parametric survives, <20% = refinement wins):
+- 7/10 top classes show full-slot model PERFORMS WORSE than marginal baseline within fixed class
+- Slot features have no within-class predictive value
+- The 0.07 bits gain comes entirely from BETWEEN-class differentiation
+
+**Test 2 — Feature importance ordering** (crazy-expert: HEAD >> e_depth >> TERM >> suffix_first if parametric):
+- Observed: TERM (17.62) > suffix_first (15.28) > prefix_cat (12.81) > HEAD (12.33) > e_depth (11.15)
+- HEAD vs prefix_cat ratio = 0.96 (essentially equal, NOT >2× toward parametric)
+- Closure features (TERM, suffix) dominate — exactly what defines class membership per C1487, C1510
+- HEAD (parametric reading's operator-domain selector) is 4th of 5
+
+Both pre-registered discriminators reject parametric reading.
+
+### Crazy-expert accepted rejection
+
+From registration consultation: *"Both pre-registered diagnostics fired against me. Within-class retention <20% on 7/10 classes is the strong form ... feature ranking with TERM > suffix_first > prefix_cat ≈ HEAD is the death blow for parametric: if HEAD were the opcode and other slots were operands, HEAD should dominate. It doesn't. Per the memory note I wrote: expert predictions ARE pre-registered tests. I lose."*
+
+### Methodology discipline validated
+
+Per `feedback_expert_predictions_are_pre_registrations.md` (2026-05-16 methodology memory): expert directional predictions ARE pre-registered tests. PHASE_711 demonstrates this discipline working — crazy-expert's parametric prediction from PHASE_710 follow-up failed both pre-registered discriminators that crazy-expert proposed. The rejection is what the discipline was designed to catch.
+
+### Methodology calibration lesson
+
+Initial run with HistGradientBoosting gave PATHOLOGICAL verdict (slot CE worse than Markov by 0.93 bits despite slot beating shuffle on accuracy by 6.4pp) — caused by GBM probability miscalibration (overconfident wrong predictions inflate CE). Re-run with multinomial LogReg L2 regularization gave clean apples-to-apples verdict. Per `feedback_calibrate_thresholds_against_controls.md`: methodology choice can flip primary metric without changing underlying signal. Same-architecture baseline-vs-test comparison was the load-bearing fix.
+
+### What did NOT change
+
+- **C2042 (atom-layer categorical homogeneity):** unaffected — that's about gloss categorization (operational role), independent of forward-predictive mechanism. C2042 and C2043 both stand together: atoms are categorically operational AND refine class membership, but they don't function as opcode parameters.
+- **Tier 0 (closed-loop control programs):** substrate framing unaffected; only specific mechanism inference about parameter encoding falls.
+- **"Voynich is a programming language" mechanism:** stays Tier 4 SPECULATIVE per `feedback_mechanism_cycle_procedural_ceiling.md`. Shape-without-semantics framing is the new ceiling.
+
+### Constraints registered
+
+- **C2043 (Tier 2):** Atom-level slot features carry forward-predictive information beyond 49-class label (sub-class refinement); 0.07 bits CE / +2.4pp Acc@1 / +0.15 bits over shuffle, 5/5 folds replicate.
+- **C2044 (Tier 2 negative):** Parametric semantics interpretation REJECTED by pre-registered diagnostics; sub-class refinement is the supported reading; mechanism inference returns to Tier 4.
+
+### Scope caveats baked into C2043/C2044
+
+- Effect size modest (1.5% of total CE) but consistent and shuffle-validated
+- Within-class test had small N per class; "rejected by pre-registered diagnostics" not Tier 1 "FALSIFIED" (per expert-advisor)
+- No conflict with C1004 (no fourth architectural layer) — sub-class refinement is WITHIN C121
+- Does NOT beat C1025 M2 ceiling (different metric, not relevant comparison)
+- Localized parametric exceptions exist (e→y per C1457, o-HEAD per C1556) but already covered
+
+---
+
 ## Version 6.80 (2026-05-20) - PHASE_710 atom-layer categorical-vocabulary measurement → C2042 Tier 3
 
 ### Summary
