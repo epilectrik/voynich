@@ -151,11 +151,38 @@ First multi-signal triage hit (C1065) was a **false positive**. Sample size n=1 
 - Pattern 1 (invented-threshold): C131 was a clean hit, but the pattern requires reading source code for true verification; hit rate uncertain
 - Multi-signal (score ≥ 2): n=1 false positive so far. Reserve judgment until more data.
 
-### Pattern enhancement candidates
+### Pattern enhancement candidates — APPLIED 2026-05-19
 
-C1065 false positive suggests the chi²-vs-perm-null regex should be refined to **NOT flag** when the constraint description mentions "permutation" or "perm" companion. The current regex catches "perm_null_p" mentions but the false-positive path is: chi² + pair-counts trigger without checking if perm-null exists.
+**Refinement implemented:** Pattern 3 now classifies the chi² situation into four sub-states:
+- `chi2_with_clean_perm_null` (perm p < 0.05 cited) — **NOT flagged** (C1065 case)
+- `chi2_with_marginal_perm_null` (perm p ≥ 0.05 cited) — flagged (C1068 pattern, demotion candidate)
+- `chi2_with_unclear_perm` (perm mentioned, no extractable p) — flagged for manual review
+- `chi2_without_perm_companion` (no perm mention at all) — flagged AUDIT-PENDING
 
-**Suggested refinement (future iteration):** make Pattern 3 require *both* chi²-huge AND (no-perm-mention OR perm_p>0.05). The current behavior flags any chi²-huge, which is too broad.
+**Implementation:** `PERM_P_REGEX` extracts numeric p-values associated with permutation null mentions, then `classify_perm_null()` returns the four-way classification. Pattern 3 only fires when chi² is cited AND perm-null status is non-clean.
+
+**Impact on triage pool (post-refinement, 2026-05-19):**
+
+| Metric | Before refinement | After refinement | Delta |
+|--------|------------------:|-----------------:|------:|
+| Score ≥ 1 candidates | 199 | 181 | −18 |
+| Pattern 3 flagged | 152 | 133 | −19 |
+| Score ≥ 2 (multi-signal) | 2 | 1 | −1 (C1065 correctly removed) |
+
+**Sub-breakdown of Pattern 3 hits (133 total):**
+
+| Sub-category | Count | Action implication |
+|--------------|------:|---------------------|
+| `chi2_without_perm_companion` | 128 | AUDIT-PENDING; needs perm-null companion or downgrade |
+| `chi2_with_marginal_perm_null` | 2 | Direct C1068 candidates; high-priority for demotion check |
+| `chi2_with_unclear_perm` | 1 | Manual review of perm-null status needed |
+| `nmi_cited` | 2 | Supplementary signal (cross-layer coupling) |
+
+**Highest-priority targets identified by refined Pattern 3:**
+- **C1226** "ke/ek Ratio Process-Context Conditioning" (chi²=77 with marginal perm)
+- **C1295** "Paragraph Termination is Memoryless" (chi²=1 + perm p=0.822) — likely **false positive at semantic level**: this is a null-finding registration where the marginal perm-p is APPROPRIATE evidence FOR the null claim, not a positive overclaim. The regex cannot distinguish "perm p>0.05 supporting null claim" from "perm p>0.05 undermining positive claim."
+
+Manual review remains essential. The refined tool reduces false-positive rate but cannot eliminate it without semantic understanding of each constraint's claim direction.
 
 ### Audit-outcome taxonomy (4 categories now)
 

@@ -25,6 +25,11 @@ Pattern definitions (from session methodology memories):
        failing proper null)
      - OR chi² without perm_null companion (audit-pending)
      Memory: feedback_chi2_vs_permutation_null_mismatch.md
+     REFINED (post-C1065 false-positive 2026-05-19): does NOT flag when
+     constraint cites perm_null_p < 0.05 (clean companion case).
+     Three sub-states: chi2_with_marginal_perm_null (C1068 case),
+     chi2_with_unclear_perm (ambiguous mention), chi2_without_perm_companion
+     (audit-pending). Clean perm-null companion = no flag.
 
 Usage:
   python scripts/audit_sweep.py
@@ -132,11 +137,51 @@ SPARSITY_PATTERNS = [
 ]
 
 # Pattern 3: chi² vs perm-null
+# CHI2_HUGE_REGEX is used alone — but only fires if no clean perm-null companion
+CHI2_HUGE_REGEX = re.compile(r'(?:chi[²2]|χ²|x²)\s*=\s*[0-9]+|p\s*=?\s*[0-9.]*e-[0-9]{2,}', re.I)
+
+# Perm-null detection: extract numeric value if present, classify as clean/marginal.
+# Matches forms: "perm_null_p=0.05", "permutation null p=0.0000", "perm p < 0.05",
+# "perm-null p=0.000", "permutation p=0.13"
+PERM_P_REGEX = re.compile(
+    r'perm(?:utation)?[\s_-]*(?:null[\s_-]*)?p\s*[<=]?\s*([0-9]+\.?[0-9]*|\.[0-9]+)', re.I)
+
+PERM_MENTIONED_REGEX = re.compile(r'\bperm(?:utation)?\b', re.I)
+# Just mentions "perm" anywhere — used to detect partial implementation
+
+
+def classify_perm_null(text):
+    """Returns 'clean' | 'marginal' | 'mentioned' | 'absent' based on perm-null citation.
+
+    'clean': perm p < 0.05 cited explicitly
+    'marginal': perm p >= 0.05 cited explicitly (C1068 pattern — the bad case)
+    'mentioned': "perm" appears but no p-value extractable
+    'absent': no mention of permutation null
+    """
+    # Find all numeric values associated with permutation-null p
+    matches = PERM_P_REGEX.findall(text)
+    if matches:
+        # Convert all extracted values to floats; take MIN (most-significant cited p)
+        values = []
+        for m in matches:
+            try:
+                v = float(m)
+                # Sanity: p-values should be in [0, 1] — filter junk like chi² values
+                if 0 <= v <= 1:
+                    values.append(v)
+            except ValueError:
+                continue
+        if values:
+            min_p = min(values)
+            if min_p < 0.05:
+                return 'clean'
+            else:
+                return 'marginal'
+    if PERM_MENTIONED_REGEX.search(text):
+        return 'mentioned'
+    return 'absent'
+
 CHI2_PATTERNS = [
-    ('chi2_huge', re.compile(r'(?:chi[²2]|χ²|x²)\s*=\s*[0-9]+|p\s*=?\s*[0-9.]*e-[0-9]{2,}', re.I),
-     'cites chi² with extreme p-value'),
-    ('perm_null_marginal', re.compile(r'perm[_\s]?(?:null[_\s])?p\s*=\s*0\.(?:1[3-9]|[2-9])', re.I),
-     'perm_null_p > 0.13 (registered despite marginal perm null)'),
     ('nmi_cited', re.compile(r'\bNMI\s*=\s*0\.[0-9]', re.I),
      'cites NMI (cross-layer coupling)'),
 ]
@@ -165,19 +210,45 @@ def score_constraint(c, full_text):
         if m:
             signals['pattern_2_sparsity'].append((name, m.group(0)))
 
-    # Pattern 3
+    # Pattern 3 — refined chi²-vs-perm-null detection (post-C1065 audit)
+    # Step A: detect chi² presence
+    chi2_match = CHI2_HUGE_REGEX.search(text_orig)
+    has_chi2 = bool(chi2_match)
+
+    # Step B: classify perm-null status (clean / marginal / mentioned / absent)
+    perm_status = classify_perm_null(text_orig)
+
+    # Step C: classify the chi² situation
+    if has_chi2:
+        if perm_status == 'clean':
+            # CLEAN: chi² with proper perm-null companion (perm p < 0.05).
+            # This is the C1065 case — DO NOT flag.
+            pass
+        elif perm_status == 'marginal':
+            # MARGINAL: chi² with perm-null companion but perm p >= 0.05.
+            # This is the C1068 case — FLAG with explanation.
+            signals['pattern_3_chi2'].append((
+                'chi2_with_marginal_perm_null',
+                f'chi² + perm_null p >= 0.05 (C1068 pattern): {chi2_match.group(0)}'
+            ))
+        elif perm_status == 'mentioned':
+            # AMBIGUOUS: "perm" is mentioned but no extractable p-value. Flag for review.
+            signals['pattern_3_chi2'].append((
+                'chi2_with_unclear_perm',
+                f'chi² + perm mentioned but no extractable p value: {chi2_match.group(0)}'
+            ))
+        else:
+            # MISSING: chi² cited but no permutation null companion at all.
+            signals['pattern_3_chi2'].append((
+                'chi2_without_perm_companion',
+                f'chi² cited but NO permutation null mentioned: {chi2_match.group(0)}'
+            ))
+
+    # Other Pattern-3 signals (NMI etc.) still fire as supplementary
     for name, regex, desc in CHI2_PATTERNS:
         m = regex.search(text_orig)
         if m:
             signals['pattern_3_chi2'].append((name, m.group(0)))
-
-    # Special: chi² cited but no perm null - audit pending
-    if signals['pattern_3_chi2']:
-        has_chi2 = any(n == 'chi2_huge' for n, _ in signals['pattern_3_chi2'])
-        has_perm = bool(re.search(r'perm', text_orig, re.I))
-        if has_chi2 and not has_perm:
-            signals['pattern_3_chi2'].append(('chi2_without_perm_companion',
-                                              'chi² cited but no permutation null mentioned'))
 
     # Already-acted constraints get a "skip" signal
     is_retracted_or_demoted = bool(re.search(r'RETRACTED|DEMOTED', text_orig, re.I))
@@ -324,6 +395,21 @@ def main():
     print(f"  Pattern 1 (invented-threshold) flagged: {n_p1}")
     print(f"  Pattern 2 (sparsity-denominator) flagged: {n_p2}")
     print(f"  Pattern 3 (chi²-vs-perm-null) flagged: {n_p3}")
+    # Sub-breakdown for Pattern 3 (post-C1065 refinement)
+    if n_p3 > 0:
+        p3_subcats = defaultdict(int)
+        for cand in candidates:
+            for name, _ in cand['signals']['pattern_3_chi2']:
+                p3_subcats[name] += 1
+        print(f"    Pattern 3 sub-categories:")
+        for subcat, n in sorted(p3_subcats.items(), key=lambda x: -x[1]):
+            label = {
+                'chi2_without_perm_companion': 'no perm-null companion (AUDIT-PENDING)',
+                'chi2_with_marginal_perm_null': 'perm p >= 0.05 (C1068 pattern — needs demotion)',
+                'chi2_with_unclear_perm': 'perm mentioned, no extractable p (manual review)',
+                'nmi_cited': 'NMI cited (cross-layer coupling)',
+            }.get(subcat, subcat)
+            print(f"      [{n}] {label}")
     print(f"  In targeted list: {n_targeted}")
     print(f"  Pre-v2.42 era (C# < 500): {n_pre_v242}")
     print(f"  Total candidates: {len(candidates)}")
