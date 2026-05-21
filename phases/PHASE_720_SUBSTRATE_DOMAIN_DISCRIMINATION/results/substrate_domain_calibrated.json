@@ -1,0 +1,101 @@
+{
+  "method": "PHASE_720 v2 calibrated (15-80 length filter)",
+  "n_permutations": 200,
+  "calibration_check_codicillus_expected_minus_0_22": -0.22865243964213658,
+  "results": {
+    "codicillus": {
+      "label": "Codicillus",
+      "n_paragraphs": 148,
+      "n_words": 5479,
+      "lag1_excess": -0.010125679984992707,
+      "lag2_excess": 0.0023152614316041356,
+      "lag3_excess": 0.0012929493545192248,
+      "r21": -0.22865243964213658,
+      "lag1_full": {
+        "lag": 1,
+        "n_pairs": 5331,
+        "obs_rate": 0.013130744700806603,
+        "null_rate": 0.02325642468579931,
+        "excess": -0.010125679984992707
+      },
+      "lag2_full": {
+        "lag": 2,
+        "n_pairs": 5183,
+        "obs_rate": 0.025467875747636502,
+        "null_rate": 0.02315261431603237,
+        "excess": 0.0023152614316041356
+      },
+      "lag3_full": {
+        "lag": 3,
+        "n_pairs": 5035,
+        "obs_rate": 0.024627606752730884,
+        "null_rate": 0.02333465739821166,
+        "excess": 0.0012929493545192248
+      }
+    },
+    "mesue": {
+      "label": "Mesue",
+      "error": "too few paragraphs: 1"
+    },
+    "rupescissa": {
+      "label": "Rupescissa",
+      "n_paragraphs": 279,
+      "n_words": 11293,
+      "lag1_excess": -0.0032363355729076162,
+      "lag2_excess": -0.0007307871448537971,
+      "lag3_excess": -0.00021327467482845657,
+      "r21": 0.22580697470665476,
+      "lag1_full": {
+        "lag": 1,
+        "n_pairs": 11014,
+        "obs_rate": 0.0034501543490103505,
+        "null_rate": 0.006686489921917967,
+        "excess": -0.0032363355729076162
+      },
+      "lag2_full": {
+        "lag": 2,
+        "n_pairs": 10735,
+        "obs_rate": 0.0059618071727992545,
+        "null_rate": 0.006692594317653052,
+        "excess": -0.0007307871448537971
+      },
+      "lag3_full": {
+        "lag": 3,
+        "n_pairs": 10456,
+        "obs_rate": 0.0065990818668706965,
+        "null_rate": 0.006812356541699153,
+        "excess": -0.00021327467482845657
+      }
+    },
+    "theophilus_body": {
+      "label": "Theophilus body",
+      "n_paragraphs": 144,
+      "n_words": 6364,
+      "lag1_excess": -0.02380627009645937,
+      "lag2_excess": -0.011778308097429116,
+      "lag3_excess": 0.006586311530684194,
+      "r21": 0.49475655151794934,
+      "lag1_full": {
+        "lag": 1,
+        "n_pairs": 6220,
+        "obs_rate": 0.00112540192926045,
+        "null_rate": 0.02493167202571982,
+        "excess": -0.02380627009645937
+      },
+      "lag2_full": {
+        "lag": 2,
+        "n_pairs": 6076,
+        "obs_rate": 0.013331138907175773,
+        "null_rate": 0.02510944700460489,
+        "excess": -0.011778308097429116
+      },
+      "lag3_full": {
+        "lag": 3,
+        "n_pairs": 5932,
+        "obs_rate": 0.03152393796358732,
+        "null_rate": 0.024937626432903127,
+        "excess": 0.006586311530684194
+      }
+    }
+  }
+}

@@ -4,6 +4,66 @@
 
 ---
 
+## Version 6.87 (2026-05-20) - PHASE_720 v2 calibrated → C2053 C2032 NL baseline expanded
+
+### Summary
+
+PHASE_720 v1 hit calibration gap (Codicillus reproduction r21=-0.007 vs canonical -0.22). PHASE_721 investigation traced the gap to length-filter parameter mismatch: canonical uses 15-80 word paragraphs, v1 used 20-50. PHASE_720 v2 with calibrated 15-80 filter reproduces Codicillus -0.229 (matches canonical) and enables clean cross-corpus measurement.
+
+### Calibrated results
+
+| Corpus | r21 | n_paras |
+|---|---:|---:|
+| Codicillus (canonical reference, expected -0.22) | -0.229 ✓ | 148 |
+| Mesue (documented) | -0.17 | — |
+| Rupescissa (distillation/quintessence) | +0.226 | 279 |
+| Theophilus body (metalwork) | +0.495 | 144 |
+| Voynich Section B (reference) | -0.66 | — |
+
+### Key finding
+
+**C2032's "NL Latin range -0.17 to -0.22" was N=2 generalization** (only Codicillus + Mesue, both compact-formulaic-recipe Latin). With Rupescissa and Theophilus added, real NL Latin r21 range spans **-0.23 to +0.50** — substantially wider than originally framed.
+
+Voynich -0.66 still strongest period-2 across all tested. Discrimination magnitude shrinks from ~3× (original framing) to ~2.88× (calibrated) when broader Latin range is considered. Direction preserved (Voynich more period-2 than any tested NL).
+
+### Expert convergence
+
+**Expert-advisor:** Register measurement-only. Do NOT include register-vs-domain interpretation — framework-as-null trap with N=4 + post-hoc fit. Recommended C2032 scope footnote.
+
+**Crazy-expert:** Accepts register-vs-domain framing with sharpening (r21 tracks grammatical density). Proposed intra-corpus stratification follow-up. Noted 3× gap (Voynich -0.66 vs Codicillus -0.229) is the engineered-substrate signature on top of recipe-register baseline.
+
+**Convergence:** measurement solid, interpretation cautious. Going with expert-advisor's discipline.
+
+### Constraint registered
+
+**C2053 (Tier 2 measurement):** C2032 NL Latin baseline range expanded from N=2 (-0.17 to -0.22) to N=4 (-0.23 to +0.50). Codicillus -0.229 reproduces canonical; Rupescissa +0.226 (opposite sign from Codicillus despite same domain class); Theophilus +0.495 (most positive). Voynich -0.66 discrimination preserved but narrower than original framing.
+
+### What this changes
+
+- **C2032 scope refined:** NL baseline characterization needs footnoting (broader than N=2 cluster implied)
+- **Discrimination magnitude:** ~2.88× to nearest NL, not ~3×
+- **C2032 core finding (Voynich non-NL):** PRESERVED, not retracted
+
+### What this does NOT change
+
+- **Tier 0** (closed-loop control programs)
+- **C2042** (atom-monocategorical operational signature)
+- **PWRE-1** (structural narrowing — architectural physics-compatibility)
+- **PHYS kernel dynamics**
+- **C1314** (qo-k/ok-e thermal cycling)
+- **C645+C2045** (hazard recovery directional)
+- The independent-evidence layer for distillation interpretation stands
+
+### Methodology lesson reinforced
+
+PHASE_720 v1 → v2 calibration journey reinforced `feedback_calibrate_thresholds_against_controls.md`: when reference control doesn't reproduce its known value, the methodology has drifted. Resolution: investigate parameter difference, fix calibration, re-run. PHASE_721 audit phase resolved it cleanly (length filter parameter mismatch identified).
+
+### Queued follow-up
+
+PHASE_722 candidate: intra-corpus stratification of Rupescissa (recipe-dense vs theory-dense segments). Would test register-tracking interpretation at intra-corpus resolution. Per crazy-expert: ~3-hour test on existing data.
+
+---
+
 ## Version 6.86 (2026-05-20) - PHASE_720 substrate-quintet domain test INDEX-only + methodology memory added
 
 ### Summary
