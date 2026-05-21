@@ -1,0 +1,86 @@
+{
+  "method": "PHASE_723 Phase 3 full Testamentum + Mesue",
+  "results": {
+    "full_testamentum": {
+      "label": "Pseudo-Lull Testamentum (FULL)",
+      "expected_class": "distillation",
+      "n_paragraphs": 336,
+      "total_words": 13655,
+      "total_distillation_hits": 155,
+      "total_metalwork_hits": 48,
+      "distillation_score_mean": 0.010950405677855091,
+      "distillation_score_median": 0.0,
+      "distillation_score_stdev": 0.021791850228354448,
+      "metalwork_score_mean": 0.0032514527066486343,
+      "metalwork_score_median": 0.0,
+      "discrimination_score_mean": 0.0076989529712064575,
+      "discrimination_score_median": 0.0,
+      "discrimination_score_stdev": 0.025230461124096028
+    },
+    "codicillus_reference": {
+      "label": "Codicillus (subset, reference)",
+      "expected_class": "distillation",
+      "n_paragraphs": 148,
+      "total_words": 5479,
+      "total_distillation_hits": 75,
+      "total_metalwork_hits": 2,
+      "distillation_score_mean": 0.015498143691682294,
+      "distillation_score_median": 0.0,
+      "distillation_score_stdev": 0.02710778646100414,
+      "metalwork_score_mean": 0.0002991108536308909,
+      "metalwork_score_median": 0.0,
+      "discrimination_score_mean": 0.015199032838051404,
+      "discrimination_score_median": 0.0,
+      "discrimination_score_stdev": 0.02733172720624864
+    },
+    "theophilus_reference": {
+      "label": "Theophilus body (reference)",
+      "expected_class": "metalwork",
+      "n_paragraphs": 144,
+      "total_words": 6364,
+      "total_distillation_hits": 5,
+      "total_metalwork_hits": 30,
+      "distillation_score_mean": 0.0005868089550500106,
+      "distillation_score_median": 0.0,
+      "distillation_score_stdev": 0.003204057439056702,
+      "metalwork_score_mean": 0.0057480037867257356,
+      "metalwork_score_median": 0.0,
+      "discrimination_score_mean": -0.005161194831675725,
+      "discrimination_score_median": 0.0,
+      "discrimination_score_stdev": 0.02001954083821737
+    },
+    "mesue_pharmacy": {
+      "label": "Mesue Grabadin",
+      "expected_class": "pharmacy",
+      "n_paragraphs": 3534,
+      "total_words": 124232,
+      "total_distillation_hits": 53,
+      "total_metalwork_hits": 94,
+      "distillation_score_mean": 0.00040415053708470406,
+      "distillation_score_median": 0.0,
+      "distillation_score_stdev": 0.003773170962172163,
+      "metalwork_score_mean": 0.000755250453647961,
+      "metalwork_score_median": 0.0,
+      "discrimination_score_mean": -0.00035109991656325683,
+      "discrimination_score_median": 0.0,
+      "discrimination_score_stdev": 0.006672467871872568
+    }
+  },
+  "phase3_criteria": {
+    "p3_c1_full_testamentum_pos": {
+      "observed": 0.0076989529712064575,
+      "pass": true
+    },
+    "p3_c2_close_to_codicillus": {
+      "observed": 0.007500079866844946,
+      "pass": true
+    },
+    "p3_c3_separates_from_theophilus": {
+      "u": 17681.5,
+      "p": 2.939547277591714e-06,
+      "pass": true
+    },
+    "n_pass": 3
+  },
+  "verdict": "PHASE 3 PASSES \u2014 features generalize from Codicillus subset to full Testamentum; matcher is corpus-portable"
+}

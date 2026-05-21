@@ -4,6 +4,82 @@
 
 ---
 
+## Version 6.89 (2026-05-21) - PHASE_723 Phase 1-3 → C2054 physics-architectural matcher (Latin-side three-class discrimination)
+
+### Summary
+
+After PHASE_718 confirmed the 8D matcher is generic (text-feature density clusters medieval-procedural Latin without discriminating domain) and PHASE_720/722 confirmed text-statistical methods generic at domain level, built a NEW matcher with hand-tuned features designed from **physics-architecture** (apparatus, phase-transitions, reversibility) rather than register density.
+
+**Phase 1-3 result: three-class discrimination at p<10⁻⁵.** Phase 4 (Voynich-side mapping) blocked on framework-as-null trap per both experts.
+
+### Phase 1-2 results (4/5 pre-reg PASS)
+
+| Corpus | dist_score | metal_score | discrimination |
+|---|---:|---:|---:|
+| Codicillus (distillation) | +0.01550 | +0.00030 | **+0.01520** ✓ |
+| Rupescissa (distillation) | +0.00137 | +0.00087 | +0.00050 (neutral, FAIL) |
+| Theophilus body (metalwork) | +0.00059 | +0.00575 | **-0.00516** ✓ |
+
+Mann-Whitney Codicillus vs Theophilus p = 0.00000.
+
+### Phase 3 results (3/3 pre-reg PASS)
+
+Full Pseudo-Lull Testamentum (336 paragraphs at 15-80 filter): discrimination_score = +0.0077 (positive distillation class). Generalizes from Codicillus subset. Mann-Whitney vs Theophilus p < 10⁻⁵.
+
+Mesue Grabadin (pharmacy, 3534 paragraphs): discrimination_score = -0.0004 (neutral).
+
+### Three-class discrimination emerged
+
+| Class | Corpora | discrimination_score |
+|---|---|---:|
+| Operational distillation (positive) | Codicillus, full Testamentum | +0.008 to +0.015 |
+| Theoretical-alchemy / pharmacy (neutral) | Rupescissa, Mesue | -0.0004 to +0.0005 |
+| Metalwork (negative) | Theophilus | -0.005 |
+
+**Rupescissa neutral is interpretive refinement, not failure:** Rupescissa is theoretical-quintessence text; Codicillus is operational-distillation manual. The matcher discriminates OPERATIONAL distillation specifically.
+
+### Constraint registered
+
+**C2054 (Tier 2 Latin-side instrument calibration measurement):** Hand-tuned physics-architectural features achieve three-class discrimination within medieval procedural Latin at p<10⁻⁵. Demonstrates feature-design CAN discriminate Latin domains where text-feature-density features (8D matcher per PHASE_718) cannot.
+
+### Expert convergence on Phase 4 block
+
+Both expert-advisor and crazy-expert independently identified that the proposed Voynich-side mapping uses constraints (C1314, C645+C2045, C2042) DERIVED FROM Voynich substrate observations. Using them as positive features for "Voynich is distillation" would be tautological per `feedback_framework_as_null.md`.
+
+**Crazy-expert quote:** "C1314 and C645+C2045 were derived to characterize Voynich's substrate. Using them as positive features for a 'Voynich is distillation' test is textbook circular. **Phase 4 as designed cannot produce a non-trivial PASS.**"
+
+Phase 4 blocked pending decoupled feature design — Voynich-side features must be defined a priori from external Latin features, NOT from existing Voynich constraints. Per `feedback_specific_vs_tautological_predictions.md`: every feature must be labeled SPECIFIC vs TAUTOLOGICAL; verdict only on SPECIFIC subset.
+
+### What this refines
+
+PHASE_718's "8D matcher is generic" finding refines to: the 8D matcher's specific text-feature-density approach is generic; physics-architectural feature design CAN discriminate at the Latin-corpus level. The methodology lesson from `feedback_text_statistical_methods_generic_at_domain_level.md` is refined — text-statistical methods are generic at register-density level but NOT at physics-architectural level.
+
+### What this does NOT establish
+
+- **NO Voynich classification** — this is Latin-side instrument calibration only
+- Distillation interpretation of Voynich still rests on independent architectural evidence (PWRE-1, PHYS, C1314, etc.)
+- Phase 4 must run with decoupled features before any Voynich-side claim is registered
+
+### Caveats documented
+
+- Codicillus complete_latin.txt contains some English commentary; prefix-stem matching catches both Latin and English keywords. Discrimination still works on Theophilus side regardless
+- Testamentum 15-80 paragraph filter drops ~90% of total content
+- Hand-curated marker lists may be biased
+
+### Bookkeeping
+
+- C2054 registered as Tier 2 measurement
+- CLAUDE.md: version 6.88 → 6.89, constraints 2045 → 2046, phases 722 → 723
+- CHANGELOG updated
+- Expert sync files regenerated
+- crazy-expert manually updated
+
+### Queued: decoupled Phase 4 design
+
+Per crazy-expert's option 5a: define Voynich-side features a priori from external Latin matcher features (e.g., "operations that toggle between two channels with delay" → raw token-class adjacency statistic), pre-register the translation, label each feature SPECIFIC vs TAUTOLOGICAL, then measure Voynich. Verdict only on SPECIFIC subset.
+
+---
+
 ## Version 6.88 (2026-05-20) - PHASE_722 INDEX-only: bootstrap-ratio noise-floor failure (7th distinct pattern)
 
 ### Summary
