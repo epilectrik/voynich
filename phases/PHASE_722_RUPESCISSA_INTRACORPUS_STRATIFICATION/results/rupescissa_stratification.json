@@ -1,0 +1,61 @@
+{
+  "method": "PHASE_722 Rupescissa intra-corpus register stratification",
+  "n_paragraphs_total": 279,
+  "quartile_size": 69,
+  "n_permutations": 200,
+  "recipe_dense": {
+    "label": "Recipe-dense (top quartile by score)",
+    "n_paragraphs": 69,
+    "n_words": 3079,
+    "lag1_excess": -0.0016162790697675027,
+    "lag2_excess": 0.0023274396463786955,
+    "r21": -1.4399986301335272
+  },
+  "middle": {
+    "label": "Middle 50% (mixed register)",
+    "n_paragraphs": 138,
+    "n_words": 4749,
+    "lag1_excess": -0.004679028410322961,
+    "lag2_excess": -0.002537446903643903,
+    "r21": 0.5423020937521429
+  },
+  "theory_dense": {
+    "label": "Theory-dense (bottom quartile)",
+    "n_paragraphs": 72,
+    "n_words": 3465,
+    "lag1_excess": -0.0029678750368406317,
+    "lag2_excess": -0.0013550135501355623,
+    "r21": 0.4565601763266974
+  },
+  "random_quartile_controls": [
+    {
+      "seed": 0,
+      "top_r21": 0.37579412091682596,
+      "bot_r21": -0.6580250463225696,
+      "difference": 1.0338191672393955
+    },
+    {
+      "seed": 1,
+      "top_r21": 0.45475273413880984,
+      "bot_r21": 0.33420702698921223,
+      "difference": 0.12054570714959761
+    },
+    {
+      "seed": 2,
+      "top_r21": 0.3185425809788144,
+      "bot_r21": 0.5809877248073229,
+      "difference": 0.2624451438285085
+    }
+  ],
+  "length_quartile_control": {
+    "longest_r21": -0.14310258660336517,
+    "shortest_r21": 0.549086048502058,
+    "difference": 0.6921886351054232
+  },
+  "verdict": "REGISTER-TRACKING CONFIRMED at intra-corpus resolution",
+  "reference": {
+    "rupescissa_overall_r21_phase_720": 0.226,
+    "codicillus_r21_canonical": -0.229,
+    "voynich_section_b_r21": -0.66
+  }
+}

@@ -4,6 +4,62 @@
 
 ---
 
+## Version 6.88 (2026-05-20) - PHASE_722 INDEX-only: bootstrap-ratio noise-floor failure (7th distinct pattern)
+
+### Summary
+
+PHASE_722 ran crazy-expert's proposed intra-corpus stratification of Rupescissa (recipe-dense vs theory-dense quartiles, ~70 paragraphs each, calibrated C2032 methodology). **Pre-registered criteria nominally PASSED** but controls flagged noise-floor concerns. Both experts converged: do NOT register, close INDEX-only, document as 7th distinct failure pattern.
+
+### Load-bearing failure: random control hit Voynich's magnitude
+
+Random quartile split (seed 0): bottom-quartile r21 = **-0.658** — Voynich's exact magnitude — purely by chance in a random subset of Rupescissa paragraphs. If random N=70 chunks can hit -0.658, the r21 metric has no discriminating power at this N.
+
+### Noise-floor diagnostic
+
+Recipe-dense lag1 = -0.00162 (6× smaller than Codicillus canonical -0.01013). At this magnitude, r21=lag2/lag1 amplifies tiny noise into apparent large signatures. The reported r21=-1.44 for recipe-dense is a ratio artifact, not a real period-2 signature.
+
+### Direction-only confirmation
+
+Crazy-expert's predicted DIRECTION (recipe-dense period-2 sign, theory-dense monotonic sign) did work. But magnitudes failed silently — recipe-dense lag1 was at noise floor, not in the "attenuated Codicillus" range the register-tracking interpretation would predict.
+
+### Expert convergence
+
+Both experts converge on: random seed 0's Voynich-magnitude result in a random subset is disqualifying; r21 metric at quartile-N is unreliable; close INDEX-only.
+
+**Crazy-expert's strongest framing:** "the framework now has enough operational vocabulary that ANY new stratification can be told as a clean operational story with surface-passing statistics. `feedback_mechanism_cycle_procedural_ceiling.md` pattern reaching saturation in a single session."
+
+### New methodology memory
+
+`feedback_bootstrap_ratio_at_noise_floor.md` documents this as 7th distinct failure pattern: r21 = lag2/lag1 explodes when lag1 is at noise floor (|lag1| < 0.005); always check denominator magnitude AND run random-subset control at target N before trusting ratio results.
+
+### Six interpretive findings this session passed nominal pre-reg but failed scrutiny
+
+1. PHASE_711 parametric atom-slot semantics
+2. PHASE_716 line-spanning C1212 chaining
+3. PHASE_716 mode coherence
+4. PHASE_718 alchemy-specificity (matcher genericity confirmed)
+5. PHASE_720 v1 calibration gap (length filter parameter drift)
+6. PHASE_722 noise-floor (random subset produces Voynich-magnitude by chance)
+
+### What does NOT change
+
+- Tier 0, C2053 (PHASE_720 v2 calibrated measurement)
+- C2042, C2032, PWRE-1 narrowing, PHYS dynamics, C1314, C645+C2045
+- Distillation interpretation broadly (rests on independent-evidence layer)
+
+### Strategic implication
+
+Both experts converge: stop intra-corpus r21 stratification at quartile-N. Viable paths forward: aggregate larger corpora (≥150 paragraphs/stratum), abandon r21 ratio for direct lag1 / peak-specificity, OR external grounding.
+
+### Bookkeeping
+
+- NO new constraint registered (C2054 number available)
+- Phase count 721 → 722
+- Constraint count unchanged at 2045
+- New memory note added; expert sync files regenerated
+
+---
+
 ## Version 6.87 (2026-05-20) - PHASE_720 v2 calibrated → C2053 C2032 NL baseline expanded
 
 ### Summary

@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-20 22:22
+**Generated:** 2026-05-20 22:44
 **Version:** FROZEN STATE (2045 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (26 feedback rules)
+6. Session Methodology Notes (27 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -5241,6 +5241,49 @@ Atom-by-atom token decomposition in cold reads produces word salad like "add mat
 **Why:** Tokens take on operational identity in practice beyond their atom composition. C1193 (core prefixes as frozen functional units), C171 (semantic ceiling), MODEL_CONTEXT.md ("tokens have roles, not meanings — semantics exist only in operator practice"). Token meanings are listed as IRRECOVERABLE. The atom glosses (C1195, Tier 3-4) describe positional role in the grammar, not what the operator was doing.
 
 **How to apply:** In cold reads and external-facing documents, lead with the quantitative structural evidence that doesn't require believing the gloss system: counting anchors (corpus-singular token runs), e-depth thermal arcs, dar distribution patterns, observation MIDDLE distribution, paragraph structure. Use atom glosses only as supporting context with heavy caveats, not as the primary argument. When glossing tokens for a reader, use whole-token operational descriptions ("one complete heat cycle", "material addition") rather than atom chains ("heat.cool.do.end", "into.iterate.bind").
+
+---
+
+## bootstrap-ratio-at-noise-floor
+
+*r21 = lag2/lag1 ratio explodes into apparent large signatures when lag1 is at noise floor. Random subsets at N=70 can produce Voynich-magnitude r21 by chance. The metric needs lag1 magnitude well above noise floor (|lag1| > ~0.005) to be interpretable.*
+
+**7th distinct failure pattern** in the project's failure-mode taxonomy, documented from PHASE_722 (2026-05-20).
+
+PHASE_722 ran Rupescissa intra-corpus register stratification (recipe-dense vs theory-dense quartiles, N=69 and 72 respectively). Pre-registered criteria nominally PASSED (recipe-dense r21=-1.44, theory-dense r21=+0.46, register_diff > 1.5× control_diff). But controls revealed the result was bootstrap-ratio noise amplification:
+
+- Recipe-dense lag1 = -0.00162 (6× smaller than Codicillus canonical -0.01013)
+- r21 = -1.44 is the ratio of two noise-floor values (lag2=+0.00233 / lag1=-0.00162)
+- Random quartile split control (seed 0) produced r21=-0.658 in a RANDOM subset — Voynich's exact magnitude — purely by chance
+
+**The diagnostic pattern:** when lag1 is at noise floor (|lag1| < ~0.005), the r21 ratio amplifies tiny numerator variations into apparent large signatures. Both directions (-1.44 and +0.66) are reachable via random selection at this N.
+
+**Why pre-reg criteria failed to catch it:** the binary thresholds (register_diff > 1.5× control_diff) were calibrated against expected effect sizes, not against the noise floor of the metric itself. The random_quartile control produced max diff=1.034, the register difference was 1.897. Nominal pass. But seed 0's bottom-quartile r21=-0.658 is the load-bearing signal: noise can produce Voynich-magnitude r21 in random subsets at N=70.
+
+**Comparison to canonical magnitudes:**
+- Codicillus canonical lag1 = -0.01013, r21 = -0.229 (stable, well above noise floor)
+- Voynich Section B canonical lag1 ≈ -0.03 to -0.04, r21 = -0.66 (well above noise floor)
+- Recipe-dense Rupescissa lag1 = -0.00162 (noise floor)
+
+The r21 metric requires lag1 magnitude **at least 5-10× above noise floor** for stable interpretation. At lag1 ≈ -0.002, r21 is meaningless as a signal-vs-noise indicator.
+
+**How to apply:**
+
+When evaluating any r21 (or similar bootstrap-ratio) result:
+1. Check lag1 (denominator) magnitude. If |lag1| < 0.005, r21 is in noise-amplified regime and the result is unreliable regardless of how strong it looks.
+2. Always run random-subset control at the same N and same metric. If random subsets produce comparable magnitudes (e.g., random subset r21 ≈ target effect), the metric has no discriminating power at this N.
+3. Pre-registered binary thresholds that don't account for the noise floor of the metric itself can produce nominal passes that fail proper scrutiny. The threshold should be calibrated against the random-subset distribution at the target N, not against theoretical expectations.
+
+**Resolution paths (per expert convergence):**
+
+When a metric hits this failure mode:
+- **(a)** Aggregate larger corpora to escape the noise floor (need ≥150 paragraphs per stratum for stable r21)
+- **(b)** Abandon the ratio metric; use the numerator (lag2) or denominator (lag1) directly, OR use peak-specificity methodology per `feedback_peak_specificity_for_periods_geq_7.md`
+- **(c)** External grounding (the r21 method is exhausted at this N for this corpus)
+
+**Generalizes:** this is a specific instance of `feedback_n_matching_for_within_scribe_comparisons.md` (bootstrap-ratio fragility when denominators are small) extended to noise-floor regime specifically.
+
+**Cumulative pattern recognition:** PHASE_722 is the 6th interpretive finding in a single session (2026-05-20) that passed nominal pre-reg but failed proper scrutiny. Per crazy-expert: "the framework now has enough operational vocabulary that ANY new stratification can be told as a clean operational story with surface-passing statistics." When in the operational-specificity death zone, NEW failure patterns emerge as the cycle saturates. This memory documents one such pattern; expect more as the cycle continues until methodology pivots or external grounding is achieved.
 
 ---
 
