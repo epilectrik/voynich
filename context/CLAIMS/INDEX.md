@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2044 validated constraints | **Version:** 6.85 | **Date:** 2026-05-20 (PHASE_718 Theophilus 8D matcher negative control FAILS — C2052 registers headline finding; matcher is generic medieval-procedural-Latin attractor not alchemy-specific; C1971 + C1882-C1956 family flagged for per-constraint audit)
+**Total:** 2044 validated constraints | **Version:** 6.86 | **Date:** 2026-05-20 (PHASE_720 substrate-quintet domain-discrimination test INDEX-only — calibration gap discovered, no constraint registered per expert convergence; methodology memory `feedback_text_statistical_methods_generic_at_domain_level.md` added documenting cumulative finding that text-statistical methods are generic at domain-within-Latin level)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 

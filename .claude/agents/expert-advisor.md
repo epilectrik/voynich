@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-20 17:22
+**Generated:** 2026-05-20 21:58
 **Version:** FROZEN STATE (2044 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (25 feedback rules)
+6. Session Methodology Notes (26 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -6414,6 +6414,38 @@ When running a pre-registered prediction protocol against a candidate match (e.g
 **Diagnostic:** if a pre-registered prediction would pass for a wrong-class control (e.g., "qo-prefix dominant" passes for any Currier B distillation folio), it's TAUTOLOGICAL.
 
 **Related:** [[feedback-registration-calibration-lesson]] (gate on floors, verdict on discriminators), [[feedback-calibrate-thresholds-against-controls]] (calibrate numerical thresholds vs in-distribution controls). [[feedback-framework-as-null]] (the cold-read 8/8 framing was framework-echo until the SPECIFIC vs TAUTOLOGICAL decomposition).
+
+---
+
+## text-statistical-methods-generic-at-domain-level
+
+*"Two consecutive cross-corpus text-statistical tests (8D matcher PHASE_718, substrate quintet stem-class PHASE_720) discriminate Voynich from Latin generally but NOT Latin subdomains. Distillation interpretation rests on architectural/dynamical evidence only."*
+
+Two consecutive negative findings (2026-05-20) establish that **text-statistical cross-corpus methods don't have resolution to discriminate Latin subdomains at the project's current methodology stage**.
+
+**PHASE_718:** 8D matcher (Codicillus pipeline) applied to Theophilus negative control. Matcher attracts Theophilus chapters to the same Voynich folios as Codicillus chapters at similar rates. Pre-registered failure criteria triggered. Matcher confirmed generic at text-feature level.
+
+**PHASE_720:** Substrate-quintet C2032 stem-class autocorrelation applied to Rupescissa (distillation) vs Theophilus (metalwork). Both show similar small-magnitude lag excesses (~0.003-0.03 absolute), neither approaches Voynich's -0.66. Calibration gap discovered: Codicillus reproduction r21=-0.007 vs known -0.22. Pre-registered prediction failed.
+
+**Why:** When stem-class lag1_excess is small (<0.05 absolute), r21 is bootstrap-fragile. Latin's word inventory and case morphology produce small same-class repetition rates across all domains. The substrate quintet's known Voynich -0.66 / Codicillus -0.22 / Mensural +0.18 differences are large at the Voynich-vs-NL level but compress within Latin to noise-floor magnitudes.
+
+**How to apply:**
+- Don't use text-statistical cross-corpus methods to claim domain-level discrimination within Latin
+- Calibrate against the project's known reference values BEFORE running new cross-corpus tests
+- If the reference value doesn't reproduce, the methodology has drifted (per `feedback_calibrate_thresholds_against_controls.md`)
+- For domain-level discrimination questions, the test paths that survive: PWRE-1 structural narrowing (architectural physics-compatibility), within-text dynamics (PHYS, C1314, C645+C2045, C2042), NOT text-statistical resemblance to known-domain corpora
+
+**The distillation interpretation specifically rests on:**
+- PWRE-1 structural narrowing (excludes Theophilus-type irreversible-transformation metalwork, leaves circulatory thermal class)
+- PHYS kernel dynamics (k/h excitation → e stability)
+- C1314 qo-k/ok-e thermal cycling
+- C645+C2045 hazard-recovery directional
+- C2042 atom-monocategorical operational signature
+- NOT on corpus-statistical resemblance to known distillation texts (matcher confirmed generic; substrate quintet generic within Latin)
+
+**Strategic implication:** the project's surviving distillation evidence is architectural/dynamical, not corpus-statistical. External grounding for content-level claims requires non-text-statistical methods (physical reconstruction, architectural-alignment sharpening, archaeological context).
+
+Per `feedback_mechanism_cycle_procedural_ceiling.md`: text-statistical methods exhausted at current resolution; further mechanism speculation needs external grounding.
 
 ---
 

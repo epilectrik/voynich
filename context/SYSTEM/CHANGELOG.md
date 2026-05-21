@@ -4,6 +4,61 @@
 
 ---
 
+## Version 6.86 (2026-05-20) - PHASE_720 substrate-quintet domain test INDEX-only + methodology memory added
+
+### Summary
+
+Tested whether substrate-quintet signatures (C2032 stem-class autocorrelation methodology — the surviving evidence layer after PHASE_718) discriminate distillation-domain Latin (Rupescissa) from metalwork-domain Latin (Theophilus). Pre-registered prediction FAILED. Calibration gap discovered (Codicillus reproduction gives r21=-0.007 vs known -0.22). Both experts converged: do NOT register negative under uncalibrated methodology per `feedback_calibrate_thresholds_against_controls.md`.
+
+### Cross-corpus results
+
+| Corpus | lag1_excess | lag2_excess | r21 |
+|---|---:|---:|---:|
+| Codicillus (in-domain, expected -0.22) | -0.0063 | +0.00004 | **-0.007** ⚠ |
+| Rupescissa (distillation, PWRE-compatible) | -0.0030 | -0.0022 | +0.726 |
+| Theophilus body (metalwork, PWRE-EXCLUDED) | -0.0296 | -0.0168 | +0.568 |
+| Voynich Section B (reference) | — | — | -0.66 |
+
+### Why no constraint registered
+
+Calibration gap: my Codicillus reproduction (r21=-0.007) doesn't match the project's known C2032 value (-0.22). Both experts independently concluded: registering a negative under uncalibrated methodology replicates the C131 invented-threshold pattern. PHASE_720 closes INDEX-only.
+
+### Cumulative methodology lesson registered
+
+Combined with PHASE_718:
+- PHASE_718: 8D matcher generic at text-feature level
+- PHASE_720: substrate quintet generic at domain-within-Latin level (with calibration caveat)
+
+**Both text-statistical cross-corpus methods are generic within Latin.** The distillation interpretation rests on NON-text-statistical evidence:
+- PWRE-1 structural narrowing (architectural physics-compatibility)
+- PHYS kernel dynamics (within-text)
+- C1314 thermal cycling (within-text bigram)
+- C645+C2045 hazard recovery (within-text directional)
+- C2042 atom-monocategorical signature (within-text categorical)
+
+Documented as feedback memory note `feedback_text_statistical_methods_generic_at_domain_level.md`.
+
+### Strategic implication
+
+Both experts independently arrived at: text-statistical cross-corpus methods exhausted at current resolution. Further mechanism speculation needs external grounding (physical reconstruction, architectural-alignment sharpening with Brunschwig F-BRU-007 / F-BRU-027 fits, or consolidation phase).
+
+Per `feedback_operational_story_first_trap.md`: "when the trap pattern repeats, the right response is to stop generating new findings and re-examine methodology." Two consecutive cross-corpus negatives (PHASE_718, PHASE_720) is the calibration signal.
+
+### Queued work
+
+- Calibration gap investigation (find what differs between PHASE_720 and original C2031 cross-validation pipeline)
+- PHASE_719: C1971+C1882-C1956 per-constraint audit (still queued from PHASE_718)
+- PWRE external grounding paths (physical reconstruction OR Brunschwig architectural-alignment sharpening)
+
+### Constraint actions
+
+- NO new constraint registered
+- C2053 number remains available for future
+- Phase count: 718 → 720 (PHASE_719 number reserved for C1971+C1882-C1956 audit)
+- Constraint count unchanged at 2044
+
+---
+
 ## Version 6.85 (2026-05-20) - PHASE_718 Theophilus 8D matcher negative-control FAIL → C2052
 
 ### Summary
