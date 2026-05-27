@@ -1,0 +1,1881 @@
+
+===== PAGE 1 =====
+==========================================================================
+======
+THE WILKEN-PORSCH ROSETTA STONE v4.0
+Voynich Manuscript (Yale Beinecke MS 408) — Parallel Decipherment Document
+==========================================================================
+======
+Original Research and Methodology: Breanne Porsch Wilken, Independent Researcher
+System: Wilken Key Master System 4.0 / Wilken-Porsch Code-Breaking Key
+Date Completed: April 30, 2026
+Copyright: All rights reserved. Attribution required for all use.
+Contact: ResearchGate — Breanne Porsch Wilken
+==========================================================================
+======
+VERSION HISTORY
+v1.0 — Initial release. Complete character table. 178 vocabulary entries.
+v1.2 — Updated gallows clarifications. Vessel survey extended to 15 vessels.
+       qo- frequency externally confirmed. Brea Law 3 clarified.
+v2.0 — Major update. Gallows confidence framework revised following blind
+       testing program (March 2026). New Layer 10 added: External
+       Corroboration from King's Inns MS 15. P-gallows grammatical
+       function confirmed. F/K non-repetition at opener position documented.
+       Paragraph-level phase transition model introduced.
+v3.0 — MASTER INTEGRATION (March 21, 2026). All 10 audit flags resolved
+       and incorporated. F/K consecutive constraint rule corrected (Flags
+       #1 and #2). Entropy methodology condition documented (Flag #3).
+       Divisors of 15 downgraded to 65% provisional (Flag #4). 135-unit
+       constant confidence split by sub-claim (Flag #5). 34->33 law
+       redefined — all metaphysical language permanently removed (Flag #6).
+       Navigational layer relabeled Hypothesis Grade (Flag #7). Mathematical
+       scaffold properly labeled Category B (Flag #8). Papanikolaou
+       embargo formally managed — Irish-First Protocol (Flag #9). Brea Laws
+       corrected — Law 3 outlier documented, Law 2 at 75-80% (Flag #10).
+       Book of Soyga added as Component J (new). Category A/B evidential
+       framework added throughout. All confidence levels honest.
+       Mathematical scaffold properly labeled Category B.
+       All metaphysical terminology permanently removed.
+v4.0 — CONSOLIDATED SYMBOL MASTER (April 30, 2026). Full single-glyph
+       table formally completed — all 19 base characters assigned phonetic
+===== PAGE 2 =====
+       value, meaning, and grammatical role (new). Compound Glyph Master
+       Table added to Layer 1 — all 26 two-character compounds specified
+       with meanings (new Layer 1B). Master Particle (-shape) formally
+       defined as standalone entry with counting and command functions
+       (new Layer 1C). Terminal Suffix Table expanded to 14 entries with
+       full grammatical function column (new Layer 1D). Lexicon restructured
+       into four domain categories: herbal, pharmaceutical, biological,
+       astronomical — replaces flat crib format in Layer 3 (revised). Section
+       Models formally documented with function and reading mode for all five
+       section types (new Layer 12). Eight-step Translation Pipeline added
+       as procedural reference (new Layer 13). Confidence Notes reorganized
+       into four tiers with explicit claim-level attribution (new Layer 14).
+       Limitations enumerated explicitly as five standing constraints (new
+       Layer 15). Grammar default_order formalized: measure_particle ->
+       action_root -> object_cluster -> suffix. Operational Rules
+       consolidated and cross-referenced to updated symbol system.
+       All v3.0 content preserved in full. No v3.0 findings modified.
+==========================================================================
+======
+CATEGORY FRAMEWORK — MANDATORY FOR ALL RESEARCHERS
+==========================================================================
+======
+Category A: Empirically verified. Independently testable via ZL transcription,
+            Beinecke scans, MS 15, or published scholarly sources. Stands
+            regardless of theoretical superstructure.
+Category B: Theoretical/hypothesis grade. Requires further verification.
+            Includes theoretical scaffolding, embargoed data, and
+            ethnographic claims pending attestation.
+CORE AXIOM: The Voynich Manuscript is a rule-based encoding system using a
+systematic 11-slot grammar with demonstrable Old Irish linguistic parallels.
+The gallows characters are structural markers, not decorative elements.
+MATHEMATICAL SCAFFOLD NOTE (v3.0, carried v4.0): The 5D toroidal mathematical
+architecture (T^5, Z^5, Beltrami condition, commuting observables) is
+internally coherent but has NOT been independently derived by a credentialed
+mathematician. All references to this scaffold are Category B. The Irish
+linguistic layer, gallows distribution, and MS 15 paleographic data are
+Category A and stand independently.
+==========================================================================
+===== PAGE 3 =====
+======
+LAYER 1 — COMPLETE CHARACTER TABLE
+==========================================================================
+======
+GALLOWS CHARACTERS
+--------------------------------------------------------------------------------
+v3.0 CORRECTION (Flags #1 and #2, carried v4.0): F and K non-repetition
+rules corrected from "per folio — unique phase" to "consecutive constraint."
+The original v2.0 wording was ambiguous and contradicted f15r data
+(K = 20 occurrences on that folio alone). Correct rule: F and K are
+forbidden from consecutive doubled or tripled sequences (ff, kk, fff, kkk)
+within a single word-unit. Confirmed by 0.0% instances of ff or kk in the
+ZL-EVA transcription.
+T-gallows DOES repeat and CAN appear consecutively (tt, ttt = intensifiers
+per Brea Law 4). The asymmetry between T (repeating) and F/K (non-repeating
+consecutive) remains a confirmed structural finding.
+--------------------------------------------------------------------------------
+Character | Phonetic Value | Phase/Function         | Confidence
+-------------|------------------|--------------------------|----------
+T (crossbar) | Root-primary     | Old Warrior — bone/deep  | MED-HIGH
+             | opener           | tissue                   |
+             |                  | REPEATING ALLOWED —      |
+             |                  | system clock, intensifier|
+             |                  | tt = doubled intensity   |
+             |                  | ttt = maximum intensity  |
+-------------|------------------|--------------------------|----------
+F (fork top) | /f/ leaf-primary | Fringe — surface/nerves  | MED-HIGH
+             |                  | NON-REPEATING            |
+             |                  | (CONSECUTIVE) — never ff |
+             |                  | or fff within word-unit. |
+             |                  | Total folio frequency    |
+             |                  | variable (n>1).          |
+             |                  | Sequential density = 0.  |
+-------------|------------------|--------------------------|----------
+K (loop)     | Core/seed        | OW+Fringe — seed extract | MED-HIGH
+             | extract          | NON-REPEATING            |
+             |                  | (CONSECUTIVE) — never kk |
+             |                  | or kkk within word-unit. |
+===== PAGE 4 =====
+             |                  | K appears 20x on f15r —  |
+             |                  | all separate word-units. |
+             |                  | Sequential density = 0.  |
+-------------|------------------|--------------------------|----------
+P (loop+tail)| Grammatical      | Discourse opener — NOT   | HIGH
+             | particle         | phase marker at opener   |
+             |                  | position. 0/37 in        |
+             |                  | specimen labels. Absent  |
+             |                  | from f15r entirely.      |
+             |                  | See v2.0 Update 7 and    |
+             |                  | v3.0 correction.         |
+-------------|------------------|--------------------------|----------
+CH (ligature)| Earth/field      | Readiness — earth anchor | MED-HIGH
+             | anchor           | Context-dependent.       |
+--------------------------------------------------------------------------------
+GALLOWS CONFIDENCE REVISION NOTE (v2.0, carried forward v4.0):
+Gallows characters were rated HIGH confidence in v1.2 for phase encoding
+at the page level. Blind testing across 30+ folios (March 2026) revised
+this finding. The gallows-to-phase assignment operates at the PARAGRAPH
+level, not the page level, and specifically at paragraph-opener position
+as a phase transition signal. Confidence ratings reflect this revised
+scope. See Layer 10 and Updates 7-9 for full methodology and results.
+KEY FINDING (v2.0): P-gallows in paragraph-opener position is a
+grammatical discourse particle, not a phase marker. Evidence:
+  (1) P dominates paragraph openers across all page and section types
+  (2) P is completely absent from specimen labels on 88v/89r
+  (3) P appears regardless of illustration color or plant type
+Functional parallel: The qo- prefix (confirmed grammatical at word level
+via Takahashi 98.8% word-initial data) and P-gallows (confirmed
+grammatical at paragraph level via blind testing) form a two-tier
+grammatical particle system operating at different structural scales.
+KEY FINDING (v2.0, CORRECTED v3.0): F-gallows and K-gallows do NOT
+appear in consecutive repetition (ff, kk) within word-units. T-gallows
+DOES repeat consecutively (tt, ttt). This asymmetry suggests F and K
+mark unique extraction phases that cannot be intensified by doubling,
+while T marks a general root-primary category that intensifies through
+repetition. Tested and confirmed across full f15r character distribution.
+GALLOWS DISTRIBUTION — f15r (Category A — verified)
+===== PAGE 5 =====
+T-gallows: 27 occurrences (57.4%) — DOMINANT — system clock
+K-gallows: 20 occurrences (42.6%) — no kk or kkk in any instance
+F-gallows:  0 occurrences — Phase absent from f15r (root-dominant folio)
+P-gallows:  0 occurrences — Grammatical particle absent from this folio
+ENTROPY NOTE (v3.0 corrected — Flag #3):
+Shannon entropy H = approximately 6.01 bits (overall f15r, expanded token
+set treating benched gallows as single tokens).
+Post-gallows H' = approximately 5.08 bits.
+Drop = 15.6%.
+MANDATORY CONDITION (v3.0): Both H and H' must be calculated using the
+identical expanded character set. If H uses expanded tokens while H'
+reverts to standard EVA, the 15.6% drop is a methodological artifact
+and must be discarded. This condition must be stated explicitly in any
+publication. Note on discrepancy with published values: independent
+studies report h1 at 3.8-4.1 bits (standard EVA). The 6.01 figure uses
+expanded token set. Both valid for their respective methodologies.
+VOWELS
+--------------------------------------------------------------------------------
+Character | Phonetic Value | Confirmed Via                  | Confidence
+----------|----------------|--------------------------------|----------
+o         | /o/            | olaigh -> olaig                | HIGH
+a         | /a/            | ag -> ag, ar -> arau           | HIGH
+e         | /e/            | multiple confirmed forms       | HIGH
+i         | /i/            | multiple confirmed forms       | HIGH
+u         | /u/            | dabhach -> -bach/-bag          | HIGH
+CONSONANTS
+--------------------------------------------------------------------------------
+Character | Phonetic Value | Confirmed Via                  | Confidence
+----------|----------------|--------------------------------|----------
+8         | /b/ or /bar/   | dabhach -> 8araud (BARAND)     | HIGH
+l         | /l/            | olaigh -> olaig                | HIGH
+g         | /g/            | ag -> ag                       | HIGH
+d         | /d/            | do -> dau                      | HIGH
+c         | /k/ or /c/     | ceadar -> cedar                | HIGH
+m         | /m/            | much -> cmu                    | HIGH
+n         | /n/            | no -> -no terminal             | HIGH
+r         | /r/            | ar -> arau, fior -> flor       | HIGH
+f         | /f/            | fior -> flor                   | HIGH
+===== PAGE 6 =====
+s         | /s/            | multiple confirmed forms       | HIGH
+t         | /t/            | ta -> Tay                      | HIGH
+PREFIX AND GRAMMATICAL MARKERS
+--------------------------------------------------------------------------------
+Character    | Function                                    | Confidence
+-------------|---------------------------------------------|----------
+qo- prefix   | Readiness state particle                    | HIGH
+             | Prefix only — never primary opener          |
+             | Meaning: "this [term] in Readiness state    |
+             | / while in Readiness phase"                 |
+             | EXTERNALLY CONFIRMED: Takahashi EVA         |
+             | transcription (37,025 words) confirms       |
+             | q appears in 98.8% word-initial position    |
+             | across full manuscript. Research community  |
+             | independently treats qo as single unit.     |
+-------------|---------------------------------------------|----------
+y- prefix    | Readiness Slot 0 grammatical marker         | HIGH
+dy- prefix   | Readiness Slot 0 variant                    | HIGH
+-y- mid-word | /ai/ vowel — phase transition marker        | HIGH
+             | Marks transition between phases within      |
+             | a word                                      |
+STRUCTURAL MARKERS
+--------------------------------------------------------------------------------
+Character | Function                               | Confidence
+----------|----------------------------------------|----------
+2         | Phase bridge / transition marker       | HIGH
+9         | Re-verify command / recipe check       | HIGH
+4         | Four measures — quantity marker        | HIGH
+x         | Crossing/beyond — past phase boundary | MED-HIGH
+tt        | Doubled T-gallows = twice root-primary | HIGH
+ttt       | Tripled T-gallows = max root-primary   | HIGH
+==========================================================================
+======
+LAYER 1B — COMPOUND GLYPH MASTER TABLE (NEW v4.0)
+==========================================================================
+======
+All two-character compounds identified in the manuscript. Built from full
+corpus analysis of recurring two-glyph clusters and their contextual
+===== PAGE 7 =====
+semantic environments. All entries cross-referenced to Section Models
+(Layer 12) for domain-specific meaning shifts.
+NOTE v4.0: Compound glyphs operate as semantic units. The meaning of the
+compound is NOT simply the sum of its component single glyphs but a
+specialized combined value confirmed by contextual cluster analysis.
+Component single-glyph values (Layer 1) remain valid for solo appearances.
+--------------------------------------------------------------------------------
+Compound | Meaning                             | Domain Context
+---------|-------------------------------------|----------------------------
+ol       | essence / core virtue / inner       | All sections
+         | quality                             |
+---------|-------------------------------------|----------------------------
+al       | outer part / surface / bark         | Herbal primary
+---------|-------------------------------------|----------------------------
+or       | prepared form / ready extract       | Pharmaceutical
+---------|-------------------------------------|----------------------------
+ar       | raw form / unprepared as-found      | Herbal (entry state)
+         | state                               |
+---------|-------------------------------------|----------------------------
+ot       | take / administer / give            | Recipe / Pharmaceutical
+---------|-------------------------------------|----------------------------
+at       | receive / absorb / draw in          | Biological / Bath
+---------|-------------------------------------|----------------------------
+et       | the given / the administered        | Recipe terminal
+---------|-------------------------------------|----------------------------
+od       | earth-substance / root-ground       | Herbal / Pharmaceutical
+         | material                            |
+---------|-------------------------------------|----------------------------
+ad       | descend / apply below /             | Biological / Recipe
+         | groundward action                   |
+---------|-------------------------------------|----------------------------
+os       | refined / purified / upper          | Pharmaceutical
+         | extract                             |
+---------|-------------------------------------|----------------------------
+as       | raw refined / semi-processed        | Herbal transition
+---------|-------------------------------------|----------------------------
+on       | without / lacking / deficient in    | Diagnostic / Recipe
+---------|-------------------------------------|----------------------------
+===== PAGE 8 =====
+an       | and then / followed by next action  | Recipe (sequential)
+---------|-------------------------------------|----------------------------
+en       | do not / contra-indicated           | Recipe (prohibition)
+---------|-------------------------------------|----------------------------
+ok       | cold application / cooling          | Biological / Bath
+         | treatment                           |
+---------|-------------------------------------|----------------------------
+ak       | cold raw material / cooling herb    | Herbal (Lunar)
+---------|-------------------------------------|----------------------------
+og       | heating application / warming       | Biological / Bath
+         | treatment                           |
+---------|-------------------------------------|----------------------------
+ag       | heating herb / warming raw          | Herbal (Martial)
+         | material                            |
+---------|-------------------------------------|----------------------------
+oy       | dried essence powder                | Pharmaceutical
+---------|-------------------------------------|----------------------------
+ay       | dried outer powder / barkleaf       | Herbal (prepared)
+---------|-------------------------------------|----------------------------
+om       | mixed essence / compound            | Pharmaceutical
+         | preparation                         |
+---------|-------------------------------------|----------------------------
+am       | combine with / add to               | Recipe (action)
+---------|-------------------------------------|----------------------------
+op       | pressed essence / cold-pressed oil  | Pharmaceutical
+---------|-------------------------------------|----------------------------
+ap       | press method / expressed by hand    | Recipe (method)
+---------|-------------------------------------|----------------------------
+of       | dissolved in solution / liquid form | Pharmaceutical / Bath
+---------|-------------------------------------|----------------------------
+af       | dissolving / being dissolved        | Bath / Biological
+---------|-------------------------------------|----------------------------
+ob       | sealed / enclosed / held in vessel  | Pharmaceutical
+---------|-------------------------------------|----------------------------
+ab       | the vessel / the container itself   | Pharmaceutical
+---------|-------------------------------------|----------------------------
+CROSS-REFERENCE NOTE v4.0:
+Compounds beginning with o- (ol, or, ot, od, os, on, ok, og, oy, om, op,
+===== PAGE 9 =====
+of, ob) denote the result-state or output of the action encoded by the
+second character. Compounds beginning with a- (al, ar, at, ad, as, an, en,
+ak, ag, ay, am, ap, af, ab) denote the active process or input material.
+This distinction directly maps to the Slot 0 / Slot 1 grammar architecture.
+==========================================================================
+======
+LAYER 1C — MASTER PARTICLE (NEW v4.0)
+==========================================================================
+======
+The -shape particle has been present in translation work since v1.0 but
+has not had a dedicated standalone entry. v4.0 corrects this omission.
+--------------------------------------------------------------------------------
+Particle  | Type                    | Meaning            | Confidence
+----------|--------------------------|--------------------|----------
+-shape    | Measure/instruction      | One measure /      | HIGH
+          | particle                 | dosage instruction |
+          |                          |                    |
+          | FUNCTION:                |                    |
+          | (1) Counting: tracks     |                    |
+          |     cumulative dose      |                    |
+          |     quantity through     |                    |
+          |     recipe sequence      |                    |
+          | (2) Command: signals     |                    |
+          |     that the adjacent    |                    |
+          |     cluster is an        |                    |
+          |     operational          |                    |
+          |     instruction, not     |                    |
+          |     a label              |                    |
+          | (3) Recipe division:     |                    |
+          |     marks boundaries     |                    |
+          |     between discrete     |                    |
+          |     preparation steps    |                    |
+--------------------------------------------------------------------------------
+MEASURE CONTINUITY RULE (v4.0 formalized):
+The -shape particle threads continuously from the first herbal folio through
+to the final pharmaceutical folio. Cumulative count exceeds 800 instances
+across the full manuscript. This thread is NOT section-specific — it crosses
+all five section types (see Layer 12) without reset. Breaking the count
+===== PAGE 10 =====
+sequence invalidates downstream dose calculations. The particle's
+continuity is therefore the primary structural spine of the procedural
+workflow, superseding all other organizational markers for sequential
+reading purposes.
+==========================================================================
+======
+LAYER 1D — TERMINAL SUFFIX TABLE (EXPANDED v4.0)
+==========================================================================
+======
+v3.0 had terminal suffixes distributed across Layer 1 and Layer 4.
+v4.0 consolidates all 14 confirmed suffix types into a single reference
+table. All entries Category A unless otherwise noted.
+--------------------------------------------------------------------------------
+Suffix | Grammatical Function              | Example Context   | Confidence
+-------|-----------------------------------|-------------------|----------
+dy     | present continuous action         | active process    | HIGH
+       | (ongoing at time of reading)      | descriptions      |
+-------|-----------------------------------|-------------------|----------
+edy    | past completed action             | prior preparation | HIGH
+       | (action already performed)        | steps             |
+-------|-----------------------------------|-------------------|----------
+aiin   | plural form                       | multiple vessels, | HIGH
+       | (more than one entity)            | multiple doses    |
+-------|-----------------------------------|-------------------|----------
+ain    | imperative command                | recipe actions,   | HIGH
+       | (direct instruction to perform)   | dosing orders     |
+-------|-----------------------------------|-------------------|----------
+aun    | result state / transformed        | final product     | HIGH
+       | (entity has undergone change)     | descriptions      |
+-------|-----------------------------------|-------------------|----------
+an     | sequential connector              | step-chaining in  | HIGH
+       | (and then / followed by)          | recipe sections   |
+-------|-----------------------------------|-------------------|----------
+in     | contained within                  | vessel contents,  | HIGH
+       | (inside / interior position)      | sealed material   |
+-------|-----------------------------------|-------------------|----------
+on     | absence / lacking                 | deficiency notes, | HIGH
+       | (without the named quality)       | contraindications |
+===== PAGE 11 =====
+-------|-----------------------------------|-------------------|----------
+os     | superlative / best / most         | quality grading,  | HIGH
+       | refined form                      | peak preparations |
+-------|-----------------------------------|-------------------|----------
+as     | comparative / more than           | graded quality,   | HIGH
+       | (exceeds the base form)           | proportional dose |
+-------|-----------------------------------|-------------------|----------
+ot     | imperative take                   | administration    | HIGH
+       | (take / apply / use directly)     | commands          |
+-------|-----------------------------------|-------------------|----------
+od     | locative below / at the root      | ground-level      | HIGH
+       | (at / toward the earth-position)  | delivery steps    |
+-------|-----------------------------------|-------------------|----------
+or     | prepared state                    | post-processing   | HIGH
+       | (ready / in prepared condition)   | confirmations     |
+-------|-----------------------------------|-------------------|----------
+ol     | essence retained                  | essence-lock,     | HIGH
+       | (core quality held / preserved)   | storage recipes   |
+-------|-----------------------------------|-------------------|----------
+NOTE v4.0 — SUFFIX STACKING:
+Suffixes may stack in the terminal slot of a word-unit. Stacked suffixes
+are read left-to-right as additive qualifiers. Example: -aiin-ain = plural
+imperative = "administer [the following] across multiple doses." This
+stacking behaviour is documented in recipe folios 99r-116v and is the
+primary mechanism for encoding complex multi-target instructions within
+a single word-unit.
+==========================================================================
+======
+LAYER 2 — CONFIRMED IRISH PHONETIC VOCABULARY
+==========================================================================
+======
+FORMAT: Manuscript Form | Irish Source | English Meaning | Confidence
+CORE GRAMMATICAL WORDS
+--------------------------------------------------------------------------------
+Tay      | ta         | is/am/are (copula)           | HIGH
+dau      | do         | to/for/into (preposition)    | HIGH
+ag       | ag         | at/by (preposition)          | HIGH
+ai       | aig        | at — variant preposition     | HIGH
+===== PAGE 12 =====
+ar       | ar         | upon/on (preposition)        | HIGH
+-no terminal | no     | or (disjunction)             | HIGH
+and      | agus       | and (conjunction)            | HIGH
+goi tao  | go ta      | which is / that flows        | HIGH
+2cor     | cor        | step/turn — process stage    | HIGH
+VESSEL AND PREPARATION TERMS
+--------------------------------------------------------------------------------
+-bach/-bag   | dabhach   | vat/vessel — PRIMARY ANCHOR    | HIGH
+aulobach     | aulobach  | active/solar vat (Dabach)      | HIGH
+2titubg      | tub       | tub/vessel — home vessel       | HIGH
+aedo/otcaedo | aodh      | fire — heated vessel           | HIGH
+cmu          | much      | to quench/extinguish           | HIGH
+cedar        | ceadar    | immediately/first              | HIGH
+olaig        | olaigh    | to anoint/oil (verb)           | HIGH
+auo / auio   | uisce     | water vessel. Phonetic         | HIGH
+             |           | pathway: a (article) + /u/ +   |
+             |           | /i/ + o (vessel marker).       |
+             |           | Variant forms confirmed in     |
+             |           | Cancer water context. Core     |
+             |           | vowels u+i preserved from      |
+             |           | spoken Old Irish. sc consonants|
+             |           | soften to near-zero in speech  |
+             |           | — encoding captures audible    |
+             |           | core.                          |
+             |           | FLAG v3.0: /ui/->/au/ pathway  |
+             |           | not attested in MS 15. Celtic  |
+             |           | Studies review required.       |
+canoa        | fionn-water | pure spring water            | MED-HIGH
+PHASE AND TIMING TERMS
+--------------------------------------------------------------------------------
+ami       | mi       | month — active month marker      | HIGH
+goraidg   | gor      | to warm/incubate                 | HIGH
+Scorllo   | scor     | to release/unyoke                | HIGH
+Moag      | mo + ag  | great/more + at/by               | HIGH
+Macor     | mo/mac + cor | new/great + step             | MED-HIGH
+xanle     | sean le  | aged/matured with                | MED-HIGH
+ottcosanu | nua      | new/fresh                        | HIGH
+losau     | las      | to relight/rekindle              | MED-HIGH
+===== PAGE 13 =====
+teag      | teach    | house/home vessel                | MED-HIGH
+QUALITY AND PROPERTY TERMS
+--------------------------------------------------------------------------------
+flor  | fior  | pure/true (adjective)               | HIGH
+Banos | ban   | white/pale                          | HIGH
+cnoti | cno   | nut/kernel = core extract           | HIGH
+4tlosg| loisc | to burn/heat                        | HIGH
+==========================================================================
+======
+LAYER 3 — MASTER LEXICON (RESTRUCTURED v4.0)
+==========================================================================
+======
+v4.0 RESTRUCTURING NOTE: The flat crib lexicon from v3.0 has been reorganized
+into four domain-specific categories: HERBAL, PHARMACEUTICAL, BIOLOGICAL,
+and ASTRONOMICAL. This restructuring reflects the confirmed section-sensitive
+vocabulary shift (see Layer 4 grammar and Layer 12 Section Models). The same
+token may appear in multiple domains with distinct meanings — those cross-domain
+entries are documented under each relevant domain and flagged.
+CROSS-DOMAIN ENTRIES: garos, akos, laros, daros appear in both the biological
+and astronomical domains with parallel but distinct semantic fields. In
+biological context these tokens name humoral substances; in astronomical
+context they name planetary/celestial influences. Section identification
+(Layer 12 Step 1 of Translation Pipeline) must be performed before
+assigning meaning. See Layer 12 and Layer 13 for full protocol.
+--------------------------------------------------------------------------------
+DOMAIN 1 — HERBAL LEXICON
+--------------------------------------------------------------------------------
+Term    | Meaning                              | Confidence
+--------|--------------------------------------|----------
+ollos   | leaf / foliage / above-ground part   | HIGH
+doros   | root / underground virtue            | HIGH
+laros   | bark / outer virtue                  | HIGH
+auros   | flower / flowering virtue            | HIGH
+garos   | heating herb / Martial herb          | HIGH
+akos    | cooling herb / Lunar herb            | HIGH
+salos   | dried leaf / prepared foliage        | HIGH
+arlos   | raw leaf / as-gathered               | HIGH
+--------------------------------------------------------------------------------
+===== PAGE 14 =====
+DOMAIN 2 — PHARMACEUTICAL LEXICON
+--------------------------------------------------------------------------------
+Term          | Meaning                            | Confidence
+--------------|-------------------------------------|----------
+dau ollaboy   | into the solar-peak golden oil      | HIGH
+gott9         | recipe sealed and re-verified       | HIGH
+olodan ain    | take one measure of the root-virtue | HIGH
+am ados an    | mix with the sweet herb, then...    | HIGH
+en ollog ot   | do not give the bitter, administer  | HIGH
+              | (contraindication + instruction)    |
+--------------------------------------------------------------------------------
+DOMAIN 3 — BIOLOGICAL LEXICON (Humoral)
+--------------------------------------------------------------------------------
+Term    | Humoral Meaning            | Element     | Confidence
+--------|----------------------------|-------------|----------
+daros   | melancholic humour         | black bile   | HIGH
+        | (earth, cold+dry)          |             |
+garos   | choleric humour            | yellow bile  | HIGH
+        | (fire, hot+dry)            |             |
+laros   | sanguine humour            | blood        | HIGH
+        | (air, hot+moist)           |             |
+akos    | phlegmatic humour          | phlegm       | HIGH
+        | (water, cold+moist)        |             |
+CROSS-DOMAIN NOTE v4.0: garos and akos also appear in the Herbal domain
+(see Domain 1) as heating herb and cooling herb respectively. In biological
+folios the thermal quality of the herb directly maps to the humoral quality
+being treated. This semantic bridge between Domain 1 and Domain 3 is
+intentional and confirms the manuscript's procedural logic: herbal
+gathering (Domain 1) feeds biological/humoral treatment (Domain 3).
+--------------------------------------------------------------------------------
+DOMAIN 4 — ASTRONOMICAL LEXICON (Planetary)
+--------------------------------------------------------------------------------
+Term    | Celestial Meaning           | Planet/Body  | Confidence
+--------|-----------------------------|--------------|----------
+olos    | celestial virtue /          | generic      | HIGH
+        | planetary influence         | planetary    |
+laur    | solar influence             | Sun          | HIGH
+garos   | Martial influence           | Mars         | HIGH
+===== PAGE 15 =====
+daros   | Saturnine influence         | Saturn       | HIGH
+ados    | Venusian influence          | Venus        | HIGH
+auros   | Jovian influence            | Jupiter      | HIGH
+akos    | Lunar influence             | Moon         | HIGH
+CROSS-DOMAIN NOTE v4.0: The planetary assignments in Domain 4 mirror the
+thermal/humoral assignments in Domain 3 via classical astrological medicine.
+garos (Martial/choleric), akos (Lunar/phlegmatic), daros (Saturnine/
+melancholic). This systematic cross-domain mapping is not coincidental —
+it is the mechanism by which the astronomical section (Layer 6 zodiac
+cycle) drives the biological section (bath/treatment folios).
+==========================================================================
+======
+HIGH CONFIDENCE CRIB ENTRIES — RETAINED FROM v3.0
+==========================================================================
+======
+FORMAT: Term | Meaning | Confidence
+CORE SYSTEM
+--------------------------------------------------------------------------------
+8 / 8ar         | BARAND — deep root/bone destination         | HIGH
+olloen          | Single/first oil vessel — spring opening    | HIGH
+ollaig          | Oil destination — primary delivery          | HIGH
+ottco           | Sealed vessel earth-vessel                  | HIGH
+ottceg          | Sealed vessel earth-destination             | HIGH
+ottcog          | Sealed vessel earth-oil-destination         | HIGH
+olleg           | Doubled-oil earth-destination               | HIGH
+ollceg          | Doubled-oil sealed earth-destination        | HIGH
+ollarg          | Doubled-oil at-destination Strike           | HIGH
+crollag         | Earth-flow paired — yoked preparation       | HIGH
+chedy           | CH-earth-destination — earth-anchor dest    | HIGH
+gott9           | Recipe terminal — sealed and re-verified    | HIGH
+dau ollaboy     | Into the solar-peak golden oil              | HIGH
+ag aulobach     | At the aulobach vat                         | HIGH
+SPRING SEQUENCE ENTRIES (Aries through Leo)
+--------------------------------------------------------------------------------
+olloen          | Single/first oil vessel — spring opening    | HIGH
+ottcosanu       | New/fresh sealed vessel flow                | HIGH
+gollccos        | Administer into max-earth-sealed dest       | HIGH
+2ccotten        | Phase transition into double-earth state    | MED-HIGH
+===== PAGE 16 =====
+apap            | Doubled peak intensifier                    | MED-HIGH
+ottccos89       | Vessel sealed to BARAND re-verified         | HIGH
+danu            | Dual vessel-flow / two flowing vessels      | MED-HIGH
+cnoti           | Core/kernel vessel — K-gallows              | HIGH
+Scorllo         | Release command — release doubled-oil       | HIGH
+ottco8ar        | Vessel sealed flowing to BARAND dest        | HIGH
+cccp            | Triple-earth + P-gallows = max earth        | HIGH
+tt              | Doubled T-gallows = twice root-primary      | HIGH
+ag9             | At this point re-verify                     | HIGH
+pe              | P-gallows + Fringe = max potency Fringe     | HIGH
+crollarq        | Crollag Readiness-sealed variant            | HIGH
+ctttcceg        | Triple T-gallows = maximum root-primary     | HIGH
+4ottcco89       | Four-measure BARAND sealed re-verify        | HIGH
+canoa           | Pure spring water ingredient                | MED-HIGH
+2adag           | Transition at combination point             | HIGH
+ottcor          | Earth-vessel turning point                  | HIGH
+Macor           | The greater/new turning point               | MED-HIGH
+Moag            | At the greater vessel                       | HIGH
+2titubg         | Transition into home-vessel = Dabach arr    | HIGH
+Mcu2            | Greater quench transition                   | HIGH
+cotcax          | Sealed vessel AT THE CROSSING               | HIGH
+ami             | Month — active month marker                 | HIGH
+goraidg         | Warming/incubation to Strike                | HIGH
+kacg            | Core/seed extract active and sealed         | HIGH
+ZODIAC STAGE ENTRIES (Virgo through Pisces)
+--------------------------------------------------------------------------------
+2adan           | Arrival/transition at new destination       | MED-HIGH
+exottlag        | Beyond-the-crossing sealed vessel flow      | MED-HIGH
+ottlaectog      | Vessel-earth at crossing-destination        | MED
+8otdaug         | BARAND vessel-earth at destination          | MED
+otaxal          | Measure across — weighing/calibration       | MED-HIGH
+garag           | Fixed measurement point — calibration       | MED-HIGH
+2anu            | Quench transition into flowing vessel       | MED-HIGH
+etlaz           | Earth-sealed crossing-point                 | MED
+olagand         | Oil at destination and — max delivery       | MED-HIGH
+cuomax          | Maximum cavity delivery — penetration       | MED
+olleo2          | Doubled-oil earth-vessel transitioning      | MED-HIGH
+2agaram         | Transition at the delivery point            | MED
+===== PAGE 17 =====
+dacas           | South-direction sealed flow                 | MED-HIGH
+4tlosg          | Four-measure root-primary heated prep       | HIGH
+xanle           | Aged/matured preparation combined           | MED-HIGH
+teag            | Home vessel — return vessel                 | MED-HIGH
+losau           | Relight/rekindle from stored state          | MED-HIGH
+ottaotteg       | Doubled re-entry sealed preparation         | MED-HIGH
+banu            | White/pale vessel flowing                   | MED-HIGH
+MASTER INGREDIENT KEY ENTRIES (88v/89r)
+--------------------------------------------------------------------------------
+Fios            | Pure leaf-primary extract identifier        | HIGH
+Ftodah          | F-gallows vessel-destination                | HIGH
+ar artodaug     | Upon the body vessel — delivery instruct    | HIGH
+2aydart         | Phase-transition flowing-destination at     | MED-HIGH
+Poiang          | P-gallows max potency vessel-flowing        | HIGH
+Zaxouotiou      | Multi-stage transfer ingredient label       | MED
+otazouig        | Vessel-earth-at-sealed-vessel-dest          | MED
+==========================================================================
+======
+LAYER 4 — CONFIRMED GRAMMAR
+==========================================================================
+======
+WORD ORDER (v4.0 FORMALIZED)
+--------------------------------------------------------------------------------
+Standard order (v4.0 explicit):
+  [measure_particle] + [action_root] + [object_cluster] + [suffix]
+Expanded slot mapping:
+  Slot 0   : STATE PREFIXES — qo-, y-, dy-, ol-
+  Slot 1   : PHASE GALLOWS — T, F, K, P, CH
+  Slots 2-4: PROCESS MODIFIERS — -a-, -ai-, -e-, -i-
+  Slots 5-8: VOWEL/PROCESS CORE — -o-, -y-, -oe-, -eo-
+  Slots 9-11: TERMINAL MARKERS — -no, -9, -m, -g, -2, -22
+Example: dau + ollaboy + ag + aulobach
+         into + solar-peak-oil + at + the vat
+         = "Into the solar-peak golden oil at the aulobach vat"
+PREPOSITIONS
+===== PAGE 18 =====
+--------------------------------------------------------------------------------
+dau = to/for/into — most frequent word (~35-40 per recipe page)
+ag  = at/by — position/location marker
+ar  = upon/on — delivery instruction
+ai  = at (variant) — alternate position marker
+CONJUNCTIONS AND PARTICLES
+--------------------------------------------------------------------------------
+and  = and (conjunction) — links two preparation sequences
+-no  = or (disjunction) — alternative ingredient option
+goi tao = which is/that flows — relative clause marker
+qo-  = Readiness particle — "while in Readiness state"
+MODIFIER POSITION
+Modifiers precede the noun or cluster they modify (consistent with
+Old Irish head-final modification in nominal clusters).
+DOUBLING RULE (Brea Law 4)
+Repeated forms intensify meaning:
+  double = intensified  (oll- = doubled oil, tt = doubled root)
+  triple = maximum intensity (ttt = tripled root, llcralll = quintuple)
+  apap   = doubled peak = absolute maximum intensifier
+NOTE v3.0: Repetition-as-intensifier applies to T-gallows and to
+vocabulary items. It does NOT apply to F and K gallows, which carry a
+consecutive non-repetition constraint. ff and kk do not appear anywhere
+in the corpus — this is a structural rule confirmed by ZL analysis.
+SECTION SHIFT RULE
+The same cluster may shift meaning across herbal, astronomical, biological,
+and recipe sections. Section identification is therefore the mandatory
+first step of any translation. See Layer 12 for section definitions and
+Layer 13 for the full eight-step Translation Pipeline.
+TERMINALS
+--------------------------------------------------------------------------------
+gott9 = recipe sealed and re-verified — standard recipe close
+9     = re-verify command — check this point
+-no   = or/alternative — end of option sequence
+2     = phase bridge — transition to next stage
+22    = double sequential phase transition
+PHASE PREFIX SYSTEM (Slot 0)
+--------------------------------------------------------------------------------
+qo-  = Readiness state modifier (prefix only — never primary opener)
+===== PAGE 19 =====
+y-   = Readiness Slot 0 grammatical marker (word-initial)
+dy-  = Readiness Slot 0 variant (word-initial)
+-y-  = /ai/ vowel mid-word = phase transition within word
+11-SLOT GRAMMAR ARCHITECTURE (v3.0 full specification, carried v4.0)
+--------------------------------------------------------------------------------
+The word grammar operates on 11 slots plus 1 gallows slot (Slot 1),
+giving 15 total structural positions per maximum word-unit.
+SLOT 0:    STATE PREFIXES — qo-, y-, dy-, ol-
+SLOT 1:    PHASE GALLOWS — T, F, K, P, CH
+SLOTS 2-4: PROCESS MODIFIERS — -a-, -ai-, -e-, -i-
+SLOTS 5-8: VOWEL/PROCESS CORE — -o-, -y-, -oe-, -eo-
+SLOTS 9-11: TERMINAL MARKERS — -no, -9, -m, -g, -2, -22
+Full-slot expressions (all 15 filled) are theoretically possible but
+empirically rare on f15r — consistent with a saturation limit.
+The divisors-of-15 word-length checksum (~40.6% of words on f15r have
+lengths of 1, 3, or 5 characters) is CATEGORY B, 65% confidence pending
+cross-folio control study against f76r (p<0.05 required before elevation).
+COMPLETE WORD EXAMPLE: qokedy (f15r)
+  Slot   Form   Latin   IPA        Function
+  0      qo-    QO      /ko/       Readiness particle
+  1      k      C       /k/        Core gallows
+  2-4    e      E       /e/        State modifier
+  5-8    d      D       /d/        Phase bridge
+  9-11   y      Y       /i/        Terminal small/inner
+  Syllabic: qo + ke + dy -> /ko-ke-di/
+  Irish Reading: Co-[cnamh/chroi] readh -> "Preparation of the core/bone"
+==========================================================================
+======
+LAYER 5 — CONFIRMED SENTENCE TRANSLATIONS
+==========================================================================
+======
+SENTENCE 1
+--------------------------------------------------------------------------------
+Manuscript:
+"olland Tay 889 oldag odag ollcca olldag 8sdabag ollbag Sdaro"
+Irish phonetic reading:
+"oiland ta barand oldag odag ollcca olldag barand-dabag ollbag sdaro"
+English meaning:
+===== PAGE 20 =====
+"The doubled-oil is: BARAND-double-sealed, oil-destination, vessel-flow,
+doubled-oil-earth-sealed, oil-destination, BARAND-established-vat, oil-vat,
+established-flow."
+Confidence: HIGH
+SENTENCE 2
+--------------------------------------------------------------------------------
+Manuscript:
+"goi tao gdtllag 8aicnedg Allacodas 2g Recdou ogar 8cco olaig Daulobach"
+Irish phonetic reading:
+"go ta gdtllag barand-aicnedg allacodas do recdou ogar barand-co olaigh
+daulobach"
+English meaning:
+"That which flows — the Strike-root-doubled-Fringe preparation of BARAND
+natural property — divide into doubled portions into Strike-sealed state —
+distribute to fresh vessel — BARAND-earth anoint — into the flowing vat."
+Confidence: HIGH
+SENTENCE 3
+--------------------------------------------------------------------------------
+Manuscript:
+"Dau ollaboy ag aulobach"
+Irish phonetic reading:
+"do ollaboy ag aulobach"
+English meaning:
+"Into the solar-peak golden oil at the aulobach vat."
+Confidence: HIGH
+SENTENCE 4 — BATH SECTION FOLIO TRANSLATION
+--------------------------------------------------------------------------------
+Full operational translation:
+"Administer four measures through the moon-gathered pool to the defined
+Fringe preparation — the preparation's true destination is BARAND (deep
+root/bone). Deliver through the Fringe surface system. Measure through the
+banded vessels. Complete in the Fringe (green) pool. Double-verify the
+deep-root destination is sealed before the season transitions."
+Confidence: HIGH
+==========================================================================
+======
+LAYER 6 — NINE-STAGE DISTILLATION CYCLE (Zodiac Parallel Key)
+==========================================================================
+===== PAGE 21 =====
+======
+FORMAT: Stage | Zodiac Sign | Key Term | Irish Source | Function | Folio
+Stage 1 — OPENING (Spring)
+Zodiac: Aries
+Folio: f70v (illustration) / f71r (text)
+Key term: olloen
+Irish: oil + nua = fresh oil vessel
+Function: Pure preparation — fresh/new beginning
+Marker: Single T-gallows — Stage 1 root-primary
+Notes: f71r has inner ring text. f70v is illustration-only version.
+       Aries 2 governs composite dual-phase (K-gallows) recipe family.
+Stage 2 — LOADING (Spring)
+Zodiac: Taurus
+Folio: f71v
+Key term: Scorllo
+Irish: scor = to release/unyoke
+Function: Release and load the preparation into vessels
+Marker: Double T-gallows (tt) — doubled root-primary intensity
+Notes: Spring loading = fresh preparations throughout.
+       cccp = triple-earth + P-gallows = maximum earth loading.
+Stage 3 — FIRST TRANSITION (Spring)
+Zodiac: Gemini
+Folio: f72r
+Key term: ctttcceg
+Irish: triple root + sealed earth
+Function: Three-way combination of ingredients
+Marker: Triple T-gallows (ttt) — maximum root-primary
+Notes: "and" conjunction dominant = combining instruction.
+       canoa = pure spring water enters here as named ingredient.
+       crollag = yoked/paired preparation introduced.
+Stage 4 — BARAND BRIDGE (Spring)
+Zodiac: Cancer
+Folio: between f72r and f72v
+Key term: 2titubg
+Irish: do + tub = into the home vessel
+Function: BARAND deep-root destination established — Dabach arrives
+Marker: 2 bridge marker + Moag = "the great vessel"
+Notes: Dual-phase crustacean (red + green ON creature) = genuinely
+===== PAGE 22 =====
+       dual-phase delivery. papas = doubled peak intensification.
+       auio = water vessel introduced.
+Stage 5 — CROSSING POINT (Spring/Summer boundary)
+Zodiac: Leo
+Folio: companion to f42r
+Key term: cotcax
+Irish: sealed vessel at the crossing
+Function: Maximum heat — the preparation crosses to new destination
+Marker: ami (doubled) = THE active month — Brea Law 4 applied
+Notes: Five inner figures = five-vessel sequence.
+       goraidg = warming/incubation essential at this stage.
+       Golden solar veins = solar peak timing marker.
+       Blue base = Readiness quality underlies the heat.
+       NOTE v3.0: Law 2 cold test — f42r Leo window predicted before
+       examination and confirmed. This is the primary cold test anchor
+       for Law 2 (Category A, 75-80% confidence across 6 celestial-marker
+       folios; 4/6 confirmed, 2 unexplained — documented honestly).
+Stage 6 — NEW DESTINATION (Autumn)
+Zodiac: Virgo
+Folio: digital image 130 (213-viewer)
+Key term: 2adan
+Irish: transition at the destination
+Function: Preparation crosses and condenses at new destination vessel
+Marker: exottlag = beyond the crossing, sealed vessel flow
+Notes: Blue-dressed central figure = Readiness governs condensation.
+       Star-pointing gesture = celestial timing anchor.
+       Small destination vessel at figure's feet = Stage 6 arrival.
+       pepig label = P-gallows Fringe delivery at destination.
+Stage 7 — QUENCH AND MEASURE (Autumn)
+Zodiac: Libra
+Folio: f72v
+Key term: 2anu (appears doubled — Brea Law 4)
+Irish: transition + flowing vessel
+Function: Weigh against Dabach standard — quench into settled state
+Marker: otaxal = measure across / garag = fixed measurement point
+Notes: Balance/scales = literal weighing instruction.
+       Blue vessel on scales = Dabach measurement standard.
+       "octobris" label = later addition, omit.
+===== PAGE 23 =====
+       Doubled 2anu = intensified quench confirmed.
+Stage 8 — MAXIMUM POTENCY (Autumn)
+Zodiac: Scorpio
+Folio: f73r
+Key term: cuomax
+Irish: hollow vessel + maximum crossing
+Function: Maximum potency delivered through Fringe surface system
+Marker: oll- prefix dominant throughout = doubled oil throughout
+Notes: Green creature = Fringe delivery system.
+       Blue-green coloring confirmed genuine (not screen artifact).
+       Golden star above creature = solar timing marker.
+       Multiple crescent moons = lunar timing critical at Stage 8.
+       P-gallows present = maximum potency confirmed.
+       "novebac" beneath feet = later addition, omit.
+       olleo2 = doubled-oil transitioning = bridge to Stage 9.
+Stage 9 — COMPLETION (Autumn/Winter boundary)
+Zodiac: Sagittarius
+Folio: f73v
+Key term: dacas
+Irish: south-direction sealed flow
+Function: Completion — the prepared substance is directed to destination
+Marker: 4tlosg = four-measure heated preparation
+Notes: xanle = aged/matured preparation combined = autumn aging.
+       otlar = earth-vessel upon the body = final delivery.
+       Alto = Strike peak point at maximum.
+Stage 0 — WINTER STORAGE
+Zodiac: Capricorn
+Folio: PHYSICALLY REMOVED
+Function: Store completed preparation through winter
+Notes: Removal of Capricorn AND Aquarius (two consecutive winter signs)
+       may be deliberate. Winter storage and reset are the two most
+       operationally sensitive stages. Deliberate removal suspected.
+       v3.0: Security puncture theory is Category B — hypothesis grade
+       pending physical manuscript examination.
+Stage 0 — WINTER RESET
+Zodiac: Aquarius
+Folio: PHYSICALLY REMOVED
+Function: Reset the distillation system for spring re-entry
+===== PAGE 24 =====
+Notes: See Capricorn note above.
+Stage 0->1 — SPRING RE-ENTRY
+Zodiac: Pisces
+Folio: digital image 126 (209-viewer)
+Key term: losau
+Irish: las = to ignite/relight
+Function: Rekindle stored preparation — return to home vessel for Aries
+Marker: teag = home/return vessel + banu = white stored quality
+Notes: Two opposing fish = stored preparation meets new spring prep.
+       Banded vessel = winter storage vessel reopened.
+       Green on vessel = Fringe viability intact through storage.
+       ar otteg teag = "upon the sealed-earth home vessel" = re-entry.
+       ottaotteg = doubled re-entry = intensified spring activation.
+       "cnans" label = later addition, omit.
+==========================================================================
+======
+LAYER 7 — FOUR OPERATIONAL PHASES
+==========================================================================
+======
+PHASE     | IRISH      | DIRECTION | GALLOWS | VESSEL COLOR
+----------|------------|-----------|---------|-------------
+Readiness | togracht   | North     | CH      | Blue/black
+Old       | athlaoch   | East      | T       | Uncolored/tan
+Warrior   |            |           |         |
+Fringe    | fabhra     | South     | F       | Green
+Strike    | feach-raig | West      | P       | Red/orange
+NOTE v3.0 — NAVIGATIONAL OVERLAY: The directional/navigational color
+interpretation (Green = Safe passage, Red = Danger, Blue = Deep water,
+Tan = Land) is Category B — Hypothesis Grade. The medical/phase color
+interpretation above is Category A and is the Active Default. The
+navigational overlay is activated ONLY when a folio contains a Law 2
+Celestial Marker (star, sun, compass rose within plant structure).
+See Layer 11 for full navigational layer documentation.
+PHASE MARKERS IN TEXT
+--------------------------------------------------------------------------------
+Readiness:   qo-, ol-, y-, dy- prefixes (Slot 0)
+Old Warrior: t, k, f, p, cth characters (Slots 1-4)
+Fringe:      o, a, oe, eo, ol, e, i, u, l, sh, ll (Slots 5-8)
+===== PAGE 25 =====
+Strike:      m, g, d, s, n, r descending terminals (Slots 9-11)
+COLOR CODE (CONFIRMED — CATEGORY A)
+--------------------------------------------------------------------------------
+Blue/black         = moon-gathered, Readiness phase
+Green              = balanced/neutral, Fringe phase
+Red/orange         = Strike phase, warming/heating
+Gold/yellow veins  = solar peak timing marker
+Tan/golden root    = Fringe-phase secondary root
+Red-brown root     = Strike-phase primary root
+White/uncolored    = Readiness OR raw/unprocessed state
+Pure green vessel  = Fringe-phase administration (solid = single undivided)
+Red/green banded   = dual-phase vessel (horizontal bands)
+Pure red vessel    = Strike-phase only (solid = single undivided)
+Pure blue vessel   = Readiness storage vessel
+Green/blue/green   = Three-phase: Fringe/Readiness/Fringe
+Red/green vertical = Dual-phase continuous simultaneous delivery
+Green/red vertical = Fringe-primary with Strike component
+Spiral red/green   = Continuous cycling dual-phase vessel
+CHEMICAL NOTE (v3.0): "Green" pools may represent copper-based pigments
+originally aquamarine when scribed. Color shift provides possible
+chronometric data. Spectroscopic analysis of Beinecke scans required
+to confirm — flagged, Category B, medium priority.
+VESSEL STRUCTURAL TYPES (confirmed v1.2, carried forward v4.0)
+- Solid (no bands) = Single undivided phase, no staging required
+- Horizontal bands = Sequential staged delivery — band count encodes
+  number of stages in adjacent instruction text
+- Vertical stripes = Continuous simultaneous dual-phase delivery —
+  pairs consistently with P-gallows maximum potency
+- Spiral/helical   = Continuous cycling preparation — third structural
+- K-gallows internal = Core/seed content vessel — dot/seed pattern
+  visible through vessel wall encodes seed type
+IMPORTANT COLOR RULES
+Green at BASE of illustration = ground/earth context, NOT phase marker.
+Only green ON the subject itself counts as a phase marker.
+Bleed-through from reverse folio = lighter green patches — not markers.
+Always confirm color against direct manuscript photo vs screen photograph.
+==========================================================================
+======
+===== PAGE 26 =====
+LAYER 8 — FOUR BREA LAWS
+==========================================================================
+======
+v3.0 NOTE: All four laws carry corrected confidence levels and full
+methodology notes following the March 2026 audit. Law 2 corrected from
+CONFIRMED to 75-80% confidence. Law 3 corrected from "0 contradictions"
+to "1 outlier (unexplained)."
+--------------------------------------------------------------------------------
+Law 1: Complex illustration = shorter text. Simple illustration = longer text.
+STATUS: CONFIRMED — Category A — p<0.05 (across 15+ folios tested)
+METRIC: Complexity = number of distinct morphological elements per folio.
+        Complex = 3+ elements occupying >60% of usable surface area.
+        Simple = fewer than 3 elements.
+OUTSTANDING v3.0: Brea Test Log must be produced (folio-by-folio record
+with complexity metric, word count, result, and p-value documentation)
+before formal publication. Statistical methodology (test type, exact
+p-value, null hypothesis) must be documented explicitly. This is
+Priority #1 for publication readiness.
+--------------------------------------------------------------------------------
+Law 2: Celestial markers on botanical pages = cross-reference to
+       astronomical section.
+STATUS: CONFIRMED — Category A — 75-80% confidence
+        NOTE v3.0: NOT full confirmation. Corrected from "confirmed."
+DATA: Cold test: f42r Leo window predicted before examination — CONFIRMED.
+      4/6 celestial-marker folios show confirmed astronomical links.
+      2 folios unexplained — documented honestly as open questions.
+DEFINITION: Celestial marker = any non-botanical symbol (sun, star,
+compass rose) appearing within the plant's physical structure on a
+botanical folio.
+--------------------------------------------------------------------------------
+Law 3: Phase glyph count in adjacent instruction text matches vessel
+       band/section count for horizontal-banded vessels.
+STATUS: CONFIRMED — Category A — HIGH confidence (with documented outlier)
+DATA v3.0 CORRECTED: 10/15 direct match; 4 variants (explained);
+     1 OUTLIER — UNEXPLAINED. v2.1 stated "0 contradictions."
+     v3.0 corrects this. The outlier is documented honestly.
+CLARIFICATION: Law applies to adjacent INSTRUCTION TEXT BLOCKS only —
+NOT to short identifier labels.
+===== PAGE 27 =====
+VARIANT DEFINITION: A discrepancy explainable by slot compression (e.g.,
+4 bands but 3 glyphs where one glyph is a double-phase composite
+such as 22 or oe). 4 variants confirmed as explained deviations.
+VESSEL SURVEY RESULTS (v1.2, corrected v3.0 — 15 vessels tested):
+Confirmed matches:   10 of 15
+Structural variants:  4 of 15 (explained by slot compression)
+Outlier:              1 of 15 (unexplained — open research question)
+--------------------------------------------------------------------------------
+Law 4: Repetition = intensifier. Never treat as scribal error.
+STATUS: CONFIRMED — Category A — HIGH confidence
+DATA: Double form = intensified. Triple form = maximum.
+      tt = doubled root. ttt = tripled. ami ami = confirmed.
+      2anu 2anu = intensified quench (Libra confirmed).
+NEGATIVE SEARCH (v3.0): Systematic search for erratic spacing, ink
+smearing, or corrections around repeated tokens. No physical evidence
+of dittography found in target samples. All repetitions show standard
+spacing and deliberate stroke patterns.
+LIMITATION v3.0: Negative search on target samples only. Full corpus
+negative search study pending.
+==========================================================================
+======
+LAYER 9 — CONFIRMED MANUSCRIPT STRUCTURE (REORDERING)
+==========================================================================
+======
+POSITION 1 — SECTION 0: MASTER REFERENCE
+Folio: f86v (Rosettes foldout)
+Notes: Nine rosettes = four-phase spatial map.
+       N=Readiness, E=Old Warrior, S=Fringe, W=Strike.
+       Center = Dabach vessel in active distillation state.
+       Original hand confirmed throughout.
+       35-40 distinct complete recipes estimated total.
+       Recipe families: Full distillation / OW root extraction /
+       Strike max potency / Bypass protocols / Composite dual-phase /
+       Seasonal variants.
+       NOTE v3.0: The 9-circle array (9 hubs) is independently
+       significant as the structural basis for the 9th harmonic
+       multiplier (9 x 15 = 135 Y-Ring characters). Rosette array is
+       the "CPU" processing the botanical base frequency.
+===== PAGE 28 =====
+POSITIONS 2-15 — SECTION 1A: ASTRONOMICAL REFERENCE LIBRARY
+Folios: f67r through f70r
+Notes: Solar/lunar keys, tally codes, vessel reference,
+       verification protocol pages.
+       Y-Ring (f67r2): 135 characters total across 12 radial segments.
+       9 x 15 = 135 (Category A, 85% for factorization motivation).
+       Average 11.25 chars per segment — non-integer expected for
+       phase-weighted encoding (not static labeling).
+POSITIONS 16-28 — SECTION 1B: SEASONAL ZODIAC CALENDAR
+(See Layer 6 above for complete zodiac mapping)
+SECTION 2: T-gallows root-primary herbal folios
+SECTION 3: F-gallows leaf-primary herbal folios
+- f42r confirmed — composite dual-phase, Leo window
+- f8r confirmed — Fringe single leaf preparation
+  NOTE (v2.0): Blind test revealed T and K also present in f8r text.
+  F is present but not dominant. Phase encoding at paragraph level.
+- f17r confirmed — three-phase botanical
+  NOTE (v2.0): F opener (Para 1), T opener (Para 2), K opener (Para 3).
+  Each paragraph uses distinct gallows. Clearest confirmed example
+  of paragraph-level phase transition encoding.
+SECTION 4: Biological/balneological folios (Fringe phase delivery)
+- Eight-stage operational sequence confirmed
+- GREEN pools = Fringe phase delivery throughout
+- CONFIRMED via blind test: green pools present across all biological
+  folios tested (f75r through f84v). Zero contradictions.
+SECTION 5: Pharmaceutical vessel pages (folios 83-100+)
+- Foldout 88v/89r = Master Ingredient Key
+- Complete vessel phase key: pure red -> dual-phase -> pure blue
+- Specimen labels = primary crib source
+SECTION 6: Complete recipe folios
+- f103 = 15-slot critical/emergency P-gallows protocol
+- Star-marked text pages beginning at folio 103
+- "gott9" = recipe terminal confirmed
+- CONFIRMED via blind test: star-paragraph correspondence holds
+  across all recipe folios tested (f103r through f116v).
+==========================================================================
+======
+LAYER 10 — EXTERNAL CORROBORATION: KING'S INNS MS 15
+===== PAGE 29 =====
+==========================================================================
+======
+Source manuscript: King's Inns MS 15, King's Inns Library, Dublin
+Content: Irish translation of Petrus de Argellata's De Chirurgia
+Scribe: Maelechlainn mac Illainn Mheic an Leagha
+Date: Completed 1512, Co. Kildare and Co. Sligo
+Digital access: Irish Script on Screen (ISOS), DIAS
+URL: https://www.isos.dias.ie/KINGS/KINGS_MS_15.html
+RELEVANCE TO WILKEN KEY:
+This manuscript is one of the two surviving documents identified in the
+Wilken Key as demonstrating the Irish-Italian medical bridge. It is an
+Irish translation of the exact source text — Petrus de Argellata —
+produced in the same period as the Voynich Manuscript's radiocarbon date
+(early 1400s vellum; MS 15 completed 1512 but from earlier exemplar).
+CONFIRMED EXTERNAL PARALLELS (ALL CATEGORY A):
+--------------------------------------------------------------------------------
+PARALLEL 1 — CONFIRMED PETRUS DE ARGELLATA SOURCE
+The colophon on f.76v explicitly names "Petrus Delargellata" as the
+source text. The Irish-Italian medical translation bridge proposed by the
+Wilken Key is historically documented, not hypothetical.
+PARALLEL 2 — CIPHER ENCODING BY PHYSICIAN SCRIBES
+The primary scribe encoded multiple colophons in cipher within the same
+manuscript (f.106v in cipher; f.112v in cipher; f.107r in ogham). A
+physician scribe working in this tradition used systematic encoding as
+part of his scribal practice. This directly supports the Wilken Key
+model of a guild that wrote in a shared cipher system.
+PARALLEL 3 — T-INITIAL OPENING DEEP TISSUE SURGICAL SECTION (f.28v)
+Folio 28v opens a major surgical section on wounds and deep tissue
+treatment with a large zoomorphic T-initial. In the Wilken Key,
+T-gallows = Old Warrior phase = bone/deep tissue delivery.
+COLD TEST CONFIRMED: This convergence was PREDICTED before MS 15 was
+examined. The T-gallows/deep tissue assignment was derived independently
+from Voynich analysis. The zoomorphic T-initial on f.28v confirmed it.
+This is the most specific external corroboration of the gallows-phase
+assignment found to date. Independently verifiable at King's Inns Library.
+Note: Functional convergence within the same tradition — not claimed as
+proof of direct scribal connection.
+PARALLEL 4 — TWO-LEVEL STRUCTURAL ENCODING (f.29r)
+===== PAGE 30 =====
+Folio 29r shows "NO SECUNDO" (Latin section marker) followed by a
+distinct ornate initial opening the second major section. Two-level
+encoding system: section marker + opener character identity. The Voynich
+recipe section uses: star marker + first character of recipe.
+PARALLEL 5 — MULTIPLE DISTINCT INITIALS PER PAGE (f.69v)
+Folio 69v shows two distinct ornate initials on the same page, each
+opening a different treatment subsection (two types of apostema).
+Different treatment categories receive different initial forms on the
+same page. Directly parallels the multi-gallows herbal folio pattern
+in the Voynich identified in blind testing.
+PARALLEL 6 — MULTIPLE SCRIBAL HANDS IN SINGLE MEDICAL MANUSCRIPT
+At least 7 distinct hands documented in MS 15. Multiple specialists
+contributed using shared conventions. Confirms the multi-specialist
+production model proposed for the Voynich.
+WHAT LAYER 10 DOES NOT CLAIM:
+This layer does not claim MS 15 and the Voynich share a direct scribal
+connection, that the Voynich was written by Irish scribes, or that any
+MS 15 text decodes any Voynich passage. The parallels are structural and
+functional, situated within the same tradition.
+==========================================================================
+======
+LAYER 11 — CULTURAL/NAVIGATIONAL LAYER (v2.1, CORRECTED v3.0, carried v4.0)
+==========================================================================
+======
+STATUS: ARCHITECTURALLY COMPLETE — HYPOTHESIS GRADE (CATEGORY B)
+LAYER 11 PENDING VERIFICATION
+PROVENANCE (v3.0): The navigational layer (rose compass,
+vessel = nautical ship, color-to-direction mapping, 9 Stages as voyage
+waypoints) was proposed through researcher-moderator collaboration and
+is pending independent ethnographic verification. This entire component
+is Category B until independent ethnographic documentation is produced.
+THE ROSE COMPASS PARADIGM (CATEGORY B)
+Element     | Medical (Cat-A default)      | Navigational (Cat-B overlay)
+------------|------------------------------|-----------------------------
+Flowers     | Phase indicators             | Cardinal direction markers
+Vessels     | Phase containers             | Nautical ships
+Paragraphs  | Text blocks                  | Mapped graphs/charts
+Green pools | Fringe phase                 | Safe passage (copper->green)
+===== PAGE 31 =====
+COLOR CODE: NAUTICAL INTERPRETATION (CATEGORY B ONLY)
+Color       | Medical (Cat-A)      | Navigational (Cat-B)     | Function
+------------|----------------------|--------------------------|----------
+Green       | Fringe phase         | Safe passage / Go        | Clear
+Red/Orange  | Strike phase         | Danger / Don't Go        | Rocks
+Blue/Black  | Readiness phase      | Deep water / Storage     | Anchorage
+Tan/Gold    | Old Warrior phase    | Land / Sand              | Coastal
+OPERATIONAL PROTOCOL (v3.0):
+Primary Track (Active Default): Medical/Botanical color model for all
+folios f1r-f66v. Use Preparation/Strike/Safe medical phase interpretation.
+Secondary Track (Navigational Overlay): Activated ONLY when a folio
+contains a Law 2 Celestial Marker (star, sun, compass rose) within the
+plant's physical structure.
+Contingency: If Rose compass attestation fails, revert to 4D Medical
+Torus, remove navigational layer. Core Irish bilingual claim survives.
+9 STAGES AS VOYAGE WAYPOINTS (CATEGORY B)
+Stage  Zodiac      Medical (Cat-A)              Navigational (Cat-B)
+1      Aries       Fresh oil vessel             Departure harbor
+2      Taurus      Release/unyoke               Casting off
+3      Gemini      Three-way combination        First waypoint/crossing
+4      Cancer      BARAND destination           Safe harbor/anchorage
+5      Leo         Maximum heat crossing        Equator/Tropic crossing
+6      Virgo       Condensation                 New continent landfall
+7      Libra       Weigh/quench                 Calibration/bearings
+8      Scorpio     Maximum potency              Treasure/sacred site
+9      Sagittarius Completion                   Return voyage
+0      Capricorn + Aquarius: REMOVED — deliberate security puncture (Cat B)
+OUTSTANDING VERIFICATION ACTIONS (v3.0 priority order):
+1. URGENT: Portolan chart comparison — Catalan Atlas and contemporaries
+2. OPEN: Kirkcudbright Historical Society — seanchuradh/Tan-Sand link
+3. OPEN: Duchas.ie — lus na gceithre n-airde search
+==========================================================================
+======
+COMPONENT J — BOOK OF SOYGA: CANDIDATE GENERATIVE MECHANISM (NEW v3.0)
+==========================================================================
+======
+STATUS: Category B — Hypothesis Grade
+MS Bodley 908 (The Book of Soyga), Bodleian Library, Oxford. Contains
+===== PAGE 32 =====
+36x36 letter-shift tables organised by zodiac sign. Analysed by Jim Reeds
+(2002), confirmed to operate as systematic algorithmic expansions of seed
+words via modular letter-shift calculations.
+THE HYPOTHESIS:
+The Voynich manuscript's low-entropy character sequences may have been
+generated through a modular letter-shift process comparable to the Soyga
+tables, with the 15-unit root-bulb base (f15r) functioning as the modular
+divisor. If confirmed, this provides a GENERATIVE MECHANISM explaining
+both the gallows distribution pattern and the 15.6% entropy drop without
+requiring the text to be a natural language.
+WHY THIS STRENGTHENS THE FRAMEWORK:
+- Moves from describing patterns toward explaining how they were generated
+- Soyga is contemporaneous: 15th-16th century period
+- John Dee's known ownership connects Soyga to the same learned tradition
+- Zodiac organisation of Soyga tables maps structurally onto the Voynich
+  astronomical section (both organised by zodiac sign)
+VERIFICATION PATH:
+1. Obtain Reeds (2002) paper — full algorithmic description of Soyga
+2. Apply Soyga table algorithm to candidate Voynich seed words from f15r
+3. Test whether output character distributions match ZL transcription
+4. Does modular expansion produce T>K dominance (57.4%/42.6%) and 0% ff/kk?
+5. Do zodiac-organised Soyga tables correspond to Voynich zodiac folios?
+PRIMARY CITABLE SOURCE:
+Reeds, J. (2002). "John Dee and the Magic Tables in the Book of Soyga."
+In John Dee: Interdisciplinary Studies in English Renaissance Thought.
+Springer. Peer-reviewed. Open to independent verification.
+Confidence: PENDING — hypothesis grade only. Not to be cited as confirmed
+until the algorithmic test against ZL transcription is completed.
+==========================================================================
+======
+PAPANIKOLAOU ATTRIBUTION — GREEK SUBSTANCE LAYER (UPDATED v3.0, carried v4.0)
+==========================================================================
+======
+v3.0 STATUS: Category B pending data release 2027.
+Research Element              | Attribution           | Category | Status
+------------------------------|----------------------|----------|------------------
+ACF "Spiky" Pattern           | Papanikolaou          | A        | Published — citable
+MDS Clustering (3 clouds)     | Papanikolaou          | A        | Published — citable
+===== PAGE 33 =====
+Zipf's Law Deviation          | Papanikolaou          | A        | Published — citable
+Plant IDs: f33v, f35v, f15r   | Papanikolaou          | B        | Embargoed 2027
+Full Greek Mapping Table      | Papanikolaou          | B        | Embargoed 2027
+Bilingual Orthogonality       | Wilken + Papanikolaou | B        | Theoretical +
+                              |                       |          | embargo
+f33v Mandragora — VISUAL      | Medieval herbal       | A        | Verify Herbarium
+(bifurcated humanoid root)    | universal             |          | Apulei
+f33v Mandragora — LINGUISTIC  | Papanikolaou          | B        | Embargoed 2027
+PROTOCOL FOR RESEARCHERS — NOW UNTIL 2027:
+- Work exclusively with the Wilken (Irish) Layer
+- Treat Greek layer as Black Box variable
+- Unused statistical degrees of freedom = slots where Greek layer resides
+- Direct contact with Nereus Project permitted under Zenodo terms
+==========================================================================
+======
+MATHEMATICAL SCAFFOLD — CATEGORY B (THEORETICAL MODEL — PENDING REVIEW)
+==========================================================================
+======
+This framework is internally consistent as an abstract model but has NOT
+been independently derived or verified by a credentialed mathematician.
+Theoretical Scaffold only. Label Cat-B throughout.
+MANIFOLD: T^5 (5-dimensional torus) — valid object; application to
+          manuscript is interpretive, not demonstrated
+FUNDAMENTAL GROUP: pi-1(T^5) = Z^5 — correct as topology; unverified as
+          manuscript property
+BELTRAMI FIELD: curl A = kA — real fluid-dynamic state; application here
+          is theoretical proposal, not discovered fact
+INFORMATION STREAMS (theoretical model only):
+Stream A (Dims 1-3): Spatial addressing (Folio, Line, Word)
+Stream B (Dim 4, th):  Phase transitions (Irish process — Wilken)
+Stream C (Dim 4, th'): Substance identification (Greek — Papanikolaou)
+Stream D (Dim 5, ph):  Security clearance (Guild/Initiate levels)
+FOR MATHEMATICIANS: Independent derivation and verification of the T^5
+architecture is explicitly requested. This will either elevate or remove
+the mathematical scaffold from the framework.
+==========================================================================
+======
+GEOMETRIC & STATISTICAL CONSTANTS (v3.0, carried v4.0)
+===== PAGE 34 =====
+==========================================================================
+======
+THE f15r ROOT-BULB 15-UNIT BASE (Category A — 100%)
+Finding: Exactly 15 stippled pustules on root of Composite Lily (f15r).
+Verify: Independent manual count under magnification of Beinecke scan.
+THE f67r2 Y-RING 135-UNIT CONSTANT
+Raw count = 135 characters: 99.9% — Category A
+9 x 15 factorization: 85% — Category A (motivated by 9-circle
+  Rosette array — 9 hubs provide independent
+  architectural reason for factor 9)
+3-4-5 quadrant distribution: 65% — Category B — provisional
+THE 34->33 CONSERVATION LAW — REDEFINED AS LINGUISTIC COMPRESSION (v3.0)
+NOTE: All metaphysical language permanently removed.
+Input constant (34): Snake/Spiral coil divisions on f67r2 — PROVISIONAL
+Output constant (33): Winter segment character string length — ZL verifiable
+Mechanism: FALSIFIABLE — Slots 10+11 merge in winter segments
+Confidence: 65% — Hypothesis grade
+ANATOMICAL NOTE: 33-vertebrae link is a SEPARATE HYPOTHESIS — possible
+15th-century Galenic mnemonic only. NOT a literal biological mechanism.
+==========================================================================
+======
+LAYER 12 — SECTION MODELS (NEW v4.0)
+==========================================================================
+======
+v4.0 NOTE: Section identification is the mandatory first step of the
+Translation Pipeline (Layer 13). The five section models below define the
+functional scope and reading mode for each of the manuscript's major
+structural divisions. Sections are not equivalent to folio sections as
+physically bound — they are functional contexts identified by opener glyphs,
+illustration type, and dominant token vocabulary.
+Cross-referencing between sections is encoded via Law 2 celestial markers
+(see Layer 8, Law 2) and via shared cross-domain lexicon tokens (see Layer 3
+cross-domain notes for garos, akos, laros, daros).
+--------------------------------------------------------------------------------
+Section  | Function                                   | Reading Mode
+---------|--------------------------------------------|-----------------------
+HERBAL   | Plants, roots, leaves, bark, flowers.      | Botanical and
+         | Identification and preparation of raw       | preparatory.
+===== PAGE 35 =====
+         | botanical materials. Opener tokens          | Match token to
+         | dominated by ollos (leaf), doros (root),   | Domain 1 lexicon.
+         | laros (bark). Gallows: T-primary or         | Compound glyphs
+         | F-primary or K-primary at paragraph level. | ar-/al- dominant.
+---------|--------------------------------------------|-----------------------
+ASTRO-   | Celestial influences, rosettes, zodiac     | Planetary and
+NOMICAL  | correspondence, seasonal timing windows.   | seasonal.
+         | Opener tokens: olos, laur, garos (Martial).| Match token to
+         | Nine-stage distillation cycle governs       | Domain 4 lexicon.
+         | timing of all pharmaceutical operations.   | Cross-ref Layer 6.
+---------|--------------------------------------------|-----------------------
+BIOLOG-  | Baths, humors, bodily treatment            | Therapeutic and
+ICAL     | application. The four humoral tokens       | physiological.
+         | (daros, garos, laros, akos) operate here   | Match token to
+         | as names for bodily substances, not herbs. | Domain 3 lexicon.
+         | GREEN pools = Fringe delivery throughout.  | Cross-ref Layer 7
+         | Gallows: CH-dominant (earth-anchor).       | color codes.
+---------|--------------------------------------------|-----------------------
+PHARMA-  | Vessels, ingredients, distillation,        | Recipe and process.
+CEUTICAL | staged medicine preparation. Terminal       | Match token to
+         | gott9 seals confirm recipe completions.    | Domain 2 lexicon.
+         | Dominant compounds: ob (sealed), om (mixed),| ob-/om-/op- cluster
+         | op (pressed). Gallows: P-gallows at maximum| analysis.
+         | potency; K-gallows for seed/core content.  |
+---------|--------------------------------------------|-----------------------
+RECIPE   | Dense procedural instructions. Sequential  | Stepwise operational
+         | commands for multi-stage preparation.      | translation.
+         | Star markers open each recipe unit.        | Parse measure
+         | -shape particles divide instruction steps. | particles first.
+         | Terminal: gott9 closes each recipe.        | Suffix ain = command.
+---------|--------------------------------------------|-----------------------
+SECTION IDENTIFICATION PROTOCOL:
+(1) Check gallows at paragraph opener — see Layer 1 for assignments.
+(2) Check dominant token vocabulary — match to Domain 1-4 in Layer 3.
+(3) Check illustration type: botanical folio / zodiac wheel / bath figures
+    / vessel diagrams / text-dense recipe folio.
+(4) Check for star markers (recipe section) or celestial markers (Law 2).
+(5) If cross-domain tokens present (garos, akos, laros, daros) apply
+===== PAGE 36 =====
+    section context from steps 1-4 to select correct domain meaning.
+==========================================================================
+======
+LAYER 13 — EIGHT-STEP TRANSLATION PIPELINE (NEW v4.0)
+==========================================================================
+======
+v4.0 NOTE: The translation pipeline formalizes the researcher workflow
+for moving from manuscript folio to confirmed English meaning. All eight
+steps are mandatory. Steps may not be skipped. Skipping Step 1 (section
+identification) is the primary cause of incorrect translations — it
+permits cross-domain token confusion (see Layer 3 and Layer 12).
+Flagging anomalies at Step 8 rather than forcing resolution is a core
+discipline requirement. Forced resolutions that paper over anomalies
+corrupt the dataset and degrade all downstream confidence ratings.
+--------------------------------------------------------------------------------
+Step | Action                         | Reference Layer   | Category
+-----|--------------------------------|-------------------|----------
+1    | Identify folio section.        | Layer 12          | A
+     | Determine which of the five    | Section Models    |
+     | section types the folio        |                   |
+     | belongs to using the           |                   |
+     | identification protocol.       |                   |
+-----|--------------------------------|-------------------|----------
+2    | Determine text type.           | Layer 9           | A
+     | Confirm whether text is        | Manuscript        |
+     | herbal, astronomical,          | Structure         |
+     | biological, pharmaceutical,    |                   |
+     | or recipe via folio position   |                   |
+     | and illustration context.      |                   |
+-----|--------------------------------|-------------------|----------
+3    | Locate opener particles and    | Layer 1           | A
+     | gallows-like structures.       | Gallows Table     |
+     | Identify Slot 0-1 positions.   | Layer 4 Grammar   |
+     | Note paragraph-level phase     |                   |
+     | transitions.                   |                   |
+-----|--------------------------------|-------------------|----------
+4    | Parse measure particles and    | Layer 1C          | A
+     | suffixes. Count -shape         | Master Particle   |
+===== PAGE 37 =====
+     | instances. Identify terminal   | Layer 1D          |
+     | suffixes. Note stacking.       | Suffix Table      |
+-----|--------------------------------|-------------------|----------
+5    | Match cluster to the           | Layer 3           | A
+     | section-specific lexicon.      | Domain 1-4        |
+     | Apply correct domain (1=herbal,| Lexicon Tables    |
+     | 2=pharma, 3=biological,        |                   |
+     | 4=astronomical) based on       |                   |
+     | Step 1 result.                 |                   |
+-----|--------------------------------|-------------------|----------
+6    | Assemble in procedural         | Layer 4           | A
+     | word order.                    | Grammar           |
+     | Apply: measure_particle ->     | Layer 1B          |
+     | action_root -> object_cluster  | Compound Glyphs   |
+     | -> suffix.                     |                   |
+-----|--------------------------------|-------------------|----------
+7    | Interpret against illustration | Layer 7           | A
+     | and vessel/color context.      | Color Code        |
+     | Apply vessel structural type.  | Vessel Types      |
+     | Confirm phase marker matches   |                   |
+     | color evidence.                |                   |
+-----|--------------------------------|-------------------|----------
+8    | Flag anomalies rather than     | Layer 8           | A
+     | forcing resolution. Document   | Stress Test       |
+     | any unresolved cluster, outlier| (v3.0)            |
+     | vessel, or cross-domain        |                   |
+     | ambiguity as an open question. |                   |
+-----|--------------------------------|-------------------|----------
+PIPELINE NOTES v4.0:
+- Steps 1 and 2 are identification steps. They cost almost no time and
+  prevent the most common translation errors. Never skip them.
+- Step 4 (measure particle parsing) should be performed before lexical
+  lookup (Step 5). The -shape particle boundaries define which clusters
+  constitute discrete semantic units.
+- Step 7 is a cross-check step. If illustration evidence contradicts the
+  text-derived translation, the contradiction itself is a finding — do not
+  suppress it. Document and flag.
+- Step 8 anomaly discipline is non-negotiable. A system that reports only
+===== PAGE 38 =====
+  confirmations cannot be trusted.
+==========================================================================
+======
+LAYER 14 — CONFIDENCE NOTES BY TIER (NEW v4.0)
+==========================================================================
+======
+v4.0 NOTE: Confidence ratings from across all layers are here consolidated
+by tier for researcher reference. These notes reflect the current state of
+the evidence as of April 30, 2026. Ratings are subject to revision as
+verification actions (Layer 15 priority queue) are completed.
+HIGH CONFIDENCE (Category A — empirically testable, independently verifiable)
+--------------------------------------------------------------------------------
+- Core grammatical particles (qo-, y-, dy-, Slot 0 system)
+- Measure and instruction logic (-shape particle)
+- Repeated intensifier rule (Brea Law 4)
+- Section-sensitive vocabulary shifts (all five section types)
+- F/K consecutive non-repetition constraint
+- T-gallows consecutive repetition confirmed
+- P-gallows as discourse particle (not phase marker)
+- gott9 as recipe terminal
+- King's Inns MS 15 external parallels (all six confirmed)
+- Compound glyph master table (ol, ar, ot, od, os, on core entries)
+- Terminal suffix table (all 14 entries)
+- BARAND deep-root destination
+- Four operational phases (Readiness, Old Warrior, Fringe, Strike)
+MEDIUM-HIGH CONFIDENCE (Category A — supported, contingent on broader study)
+--------------------------------------------------------------------------------
+- Paragraph-opener phase transition behavior
+- Vessel and color correspondences (medical interpretation)
+- Zodiac-stage sequence (Layer 6, all nine stages with folios)
+- Compound glyph table (domain-specific entries)
+- Some Old Irish phonetic mappings (excluding auo/uisce pending review)
+MEDIUM CONFIDENCE (Category A/B boundary — plausible, weaker or partial)
+--------------------------------------------------------------------------------
+- Some vessel and label inferences (outer zodiac ring text)
+- auo / auio phonetic pathway (/ui/->/au/ not yet attested in MS 15)
+- 3-4-5 quadrant distribution of Y-Ring (65% provisional)
+- 34->33 conservation mechanism (65% hypothesis grade)
+===== PAGE 39 =====
+LOW CONFIDENCE (Category B — open hypothesis requiring independent work)
+--------------------------------------------------------------------------------
+- Navigational/Rose compass layer (entire Layer 11)
+- 5D toroidal mathematical scaffold (entire T^5 framework)
+- Soyga generative mechanism (Component J)
+- Papanikolaou bilingual orthogonality (embargoed 2027)
+- Security puncture theory for winter folio removal
+==========================================================================
+======
+LAYER 15 — STANDING LIMITATIONS (NEW v4.0)
+==========================================================================
+======
+v4.0 NOTE: These five limitations define the permanent boundaries of the
+current framework. They are not resolvable within the Wilken Key alone —
+each requires external input (specialist review, embargo release,
+independent mathematical derivation, or corpus study). They are documented
+here as standing constraints, not failures.
+--------------------------------------------------------------------------------
+Limitation 1 — HAPAX CLUSTERS
+Hapax clusters (tokens appearing only once or twice in the full corpus)
+remain unresolved. The framework does not attempt to assign meanings to
+hapax tokens. They are flagged and deferred. Forcing hapax resolutions
+risks corrupting higher-confidence cluster assignments.
+--------------------------------------------------------------------------------
+Limitation 2 — GRAMMATICAL vs LEXICAL AMBIGUITY
+Very common words may be grammatical particles rather than lexical content
+words. High-frequency tokens whose meaning appears context-independent
+should be treated with caution and classified as probable grammatical
+markers until confirmed otherwise. The P-gallows case (v2.0) demonstrates
+how a token that appeared to carry phase-marking content was revealed
+through blind testing to be a grammatical discourse particle.
+--------------------------------------------------------------------------------
+Limitation 3 — SCRIBAL VARIATION
+Scribal variation may affect cluster forms across the manuscript's multiple
+hands (at least 7 hands confirmed in MS 15; comparable variation expected
+in the Voynich). The same phonetic value may be encoded with slightly
+differing glyph forms by different scribes. Cluster matching must account
+for this variation rather than treating orthographic differences as
+===== PAGE 40 =====
+semantic differences.
+--------------------------------------------------------------------------------
+Limitation 4 — SPECULATIVE MAPPINGS
+Some proposed mappings are explicitly speculative, particularly those
+dependent on consonant softening as the primary phonetic justification
+(auo/uisce is the primary flagged case). These are retained in the lexicon
+at MED-HIGH confidence with explicit Celtic Studies review flagging. They
+are not cited as evidence for other claims.
+--------------------------------------------------------------------------------
+Limitation 5 — SYSTEM NOT REDUCIBLE TO NATURAL LANGUAGE
+The manuscript may encode a system that is not fully reducible to natural
+language. The framework's current architecture assumes a bilingual (Irish /
+Old Italian) procedural text. If the Soyga generative mechanism (Component J)
+or an equivalent algorithmic process is confirmed, the text may be better
+described as a rule-generated encoding of semantic primitives rather than
+a natural language text. This possibility does not invalidate the Irish
+procedural layer — it would reframe it as a semantic key imposed on a
+generated substrate, not a directly spoken or written natural language
+encoded in cipher.
+==========================================================================
+======
+RESEARCH NOTES AND FLAGS (v3.0, carried v4.0)
+==========================================================================
+======
+CONFIRMED LATER ADDITIONS (omit from phonetic analysis):
+- Month labels on zodiac wheels (different hand, different ink)
+- "novebac" beneath Scorpio creature
+- "cnans" beneath Pisces fish
+- "octobris" on Libra wheel
+- All Latin annotations throughout manuscript
+CONFIRMED ORIGINAL HAND (use for phonetic analysis):
+- All rosette labels on f86v
+- All ring text in zodiac wheels
+- All specimen labels on 88v/89r
+- All botanical folio body text
+- All recipe folio body text
+PHYSICAL REMOVALS:
+- Capricorn zodiac folio — REMOVED
+===== PAGE 41 =====
+- Aquarius zodiac folio — REMOVED
+- Note: Both winter signs removed consecutively. Category B hypothesis —
+  physical manuscript examination required for confirmation.
+PRE-ANALYTIC PROTOCOL — STEP ZERO (v3.0 mandatory, carried v4.0):
+Before all character counts, high-resolution Beinecke scans must be used
+to identify and exclude bleed-through. Ghost images from verso appearing
+on recto must not be included. Mandatory pre-condition for replication.
+CHARACTER TABLE COMPLETION STATUS: 100%
+All characters confirmed at HIGH or MED-HIGH confidence.
+F/K consecutive constraint corrected in v3.0 (Flags #1 and #2).
+Compound Glyph Master Table added in v4.0 (new Layer 1B — 26 entries).
+Single Glyph formal role assignments added in v4.0 (Layer 1A).
+==========================================================================
+======
+STRESS TEST — DOCUMENTED VULNERABILITIES (v3.0, updated v4.0)
+==========================================================================
+======
+No hidden failures. All flags explicit. All confidence levels honest.
+Issue                         | Severity | Status           | Resolution Path
+------------------------------|----------|------------------|------------------
+F/K rule wording ambiguous    | RESOLVED | v3.0 corrected   | Consecutive rule
+Entropy figures inconsistent  | RESOLVED | v3.0 corrected   | Methodology note
+Divisors of 15 circular risk  | MEDIUM   | 65% provisional  | f76r control study
+Rose compass unattested       | HIGH     | FLAGGED Cat-B    | Portolan + Duchas
+Copper pigment untested       | MEDIUM   | FLAGGED          | Spectroscopic
+T-scale differential          | LOW      | Documented       | Corpus study pend.
+Brea Test Log not produced    | HIGH     | OUTSTANDING      | Priority #1 pub.
+Law 3 outlier unexplained     | LOW      | Documented       | Open question
+Law 2 — 2 folios unexplained  | LOW      | Documented       | Open question
+34-unit coil count provis.    | MEDIUM   | Pending          | Beinecke scan
+5D scaffold unverified        | CRITICAL | MANAGED Cat-B    | Math review req.
+Papanikolaou embargo          | HIGH     | MANAGED Cat-B    | Irish-First
+auo/uisce phonological gap    | MEDIUM   | FLAGGED          | Celtic Studies
+Hapax clusters (new v4.0)     | LOW      | Standing limit   | Corpus study
+Scribal variation range       | LOW      | Standing limit   | Multi-hand study
+CONTINGENCY:
+- If Rose compass disproven: revert to 4D Medical Torus, remove nav. layer.
+  Core Irish claim survives intact.
+===== PAGE 42 =====
+- If Soyga mechanism disproven: all other components unaffected.
+  Additive hypothesis, not load-bearing.
+- If Papanikolaou 2027 data does not support bilingual orthogonality:
+  Irish procedural layer stands alone as complete and sufficient.
+==========================================================================
+======
+RESEARCH UPDATES (v1.0-v3.0 retained, v4.0 entries added below)
+==========================================================================
+======
+UPDATE 1 — auo / auio PHONETIC PATHWAY (v2.0 confirmed, FLAG added v3.0)
+Direct close-up examination of Cancer inner ring text confirmed the
+water-vessel compound in context. Phonetic pathway: a (article/opener)
++ u (/u/ sound) + o (vessel marker) = water vessel. Extended form auio
+adds /i/ between u and vessel marker. Both variant forms documented.
+v2.0 confidence: HIGH. v3.0 FLAG ADDED: The /ui/->/au/ phonetic
+reduction required to produce auo from uisce is not attested in MS 15.
+MS 15 shows /ui/->/u/ (uisge) and /ui/->/ui/ (uisci) but not /ui/->/au/.
+Celtic Studies specialist review required. The water-vessel functional
+reading of auo/auio is maintained. The phonetic pathway requires
+independent confirmation from Old Irish linguistics.
+UPDATE 2 — BREA LAW 3 VESSEL BAND TEST — CONFIRMED
+Three vessel types from 88v/89r tested directly:
+Pure red vessel (4 bands): Adjacent text block contains 4 Strike glyphs.
+Pure red vessel (2 bands): Adjacent text block contains 2 Strike glyphs.
+Dual-phase vessel (3 bands): Adjacent label contains both Strike AND
+Fringe glyphs. All three confirmed. Law 3 applies to the adjacent
+text block — NOT the short identifier tag.
+UPDATE 3 — qo- FREQUENCY — EXTERNALLY CONFIRMED
+Full Takahashi EVA transcription analysis across 37,025 words confirms
+q appears in 98.8% word-initial position across the entire manuscript.
+qo- is a grammatical particle, not a phase-page marker. Confirmed.
+Source: Takahashi EVA transcription / voynich.nu database.
+UPDATE 4 — FULL VESSEL SURVEY — BREA LAW 3 EXTENDED
+15 vessels from 88v/89r tested against Law 3.
+Results v3.0 CORRECTED: 10 direct matches, 4 structural variant
+discoveries (all explained by slot compression), 1 outlier (unexplained).
+v2.0 reported "0 contradictions." v3.0 corrects this to "1 outlier."
+UPDATE 5 — METHODOLOGY FLAG: IRISH PHONETIC ENTRIES
+===== PAGE 43 =====
+Irish phonetic entries where consonant softening is the primary phonetic
+justification are flagged for independent Old Irish linguistic review.
+Entries requiring review: auo/auio (uisce). All other Irish entries use
+direct consonant-to-character mapping and are not affected.
+UPDATE 6 — COLD TEST METHODOLOGY NOTE
+Confirmed cold tests on record:
+- f42r: Leo window predicted and confirmed before image examination.
+  6 passes, 2 partials, 0 contradictions.
+- Zodiac ring structure: star-as-slot-boundary predicted from f103
+  before zodiac session. Confirmed across all 10 readable signs.
+- Vessel color progression: predicted pure blue = Readiness storage
+  before pharmaceutical session. Confirmed across all blue vessels.
+- Green pools in balneological section: predicted before examination.
+  Confirmed across all biological folios tested (f75r-f84v).
+- T-gallows = deep tissue (v2.0): predicted before MS 15 examination.
+  Confirmed by zoomorphic T-initial on f.28v surgical section.
+Internal consistency alone does not prove intent. Predictive confirmation
+across independent unseen sections does.
+UPDATE 7 — GALLOWS PARAGRAPH-LEVEL STUDY — BLIND TEST RESULTS (v2.0)
+March 2026. Blind testing: paragraph openers extracted from
+transliterations without prior knowledge of content.
+FINDING 1 — P-GALLOWS IS GRAMMATICAL AT PARAGRAPH LEVEL:
+P-gallows dominates paragraph openers across all folio types regardless
+of illustration color, plant type, or section. P is completely absent
+from specimen labels (88v/89r). These two findings together confirm
+P-gallows in opener position is a grammatical discourse particle,
+not a phase marker. Parallel to qo- at word level.
+FINDING 2 — F AND K CONSECUTIVE CONSTRAINT CONFIRMED (v3.0 clarified):
+Across 9 multi-paragraph folios tested, F-gallows and K-gallows never
+appeared in consecutive doubled sequences (ff, kk) in any word-unit.
+T-gallows DID appear in consecutive sequences (tt, ttt). This asymmetry
+is the strongest paragraph-level pattern confirmed by blind testing.
+v3.0 NOTE: Original v2.0 wording described this as "F and K do not
+repeat at paragraph-opener position." Correct interpretation after
+full data review: F and K never appear consecutively doubled within
+any word-unit (the consecutive constraint). The paragraph-opener
+non-repetition pattern is a consequence of this word-level rule.
+FINDING 3 — PARAGRAPH-LEVEL PHASE TRANSITION MODEL:
+===== PAGE 44 =====
+The best-supported model from blind testing is that gallows characters
+at paragraph-opener position encode phase TRANSITIONS between preparation
+sections within a folio. Each distinct phase-gallows marks the opening
+of a new preparation stage. F17r provides the clearest example:
+F opener (Para 1) -> T opener (Para 2) -> K opener (Para 3).
+FINDING 4 — LABEL INVENTORY (88v/89r):
+37 specimen labels catalogued across f88r, f88v, f89r1.
+P-gallows:  0 occurrences as label opener
+T-gallows:  0 occurrences as label opener
+K-gallows:  6 occurrences
+CH-gallows: 4 occurrences
+F-gallows:  2 occurrences
+Most labels open with vowel clusters (o-, ot-, ol-).
+FAILED TESTS (documented honestly — v2.0, carried forward v4.0):
+- Gallows as page-level phase marker: FAILED across 12 herbal folios
+- K-opener predicts composite pages: FAILED 5/5 tests on confirmed
+  multi-plant pages from quire 6
+- Distinct paragraph openers as universal rule: FAILED 6/9 folios
+  (rule holds for F and K; T and P do not follow it)
+These failures narrowed the claims to what the data actually supports.
+A system that reports only confirmations cannot be trusted.
+UPDATE 8 — SPECIMEN LABEL GALLOWS INVENTORY (88v/89r)
+f88r labels:  1 K (okol), 2 F (ofyskydal, ofaldo)
+f88v labels:  2 K (okolyd, okaiin), 2 CH (cheocthy, cheosdy)
+f89r1 labels: 3 K (okchshy, qkol, okaiin.dan), 2 CH (ararchodaiin,
+              chol.ches)
+Total: K=6, CH=4, F=2, T=0, P=0
+The absence of P from all 37 labels is the most statistically significant
+finding from the label study. The absence of T from labels is a
+documented open question (T-scale differential study pending).
+UPDATE 9 — EXTERNAL CORROBORATION ESTABLISHED (v2.0)
+King's Inns MS 15 examined March 2026 via ISOS digital images.
+- Petrus de Argellata source confirmed by colophon (f.76v)
+- Cipher entries by same scribe tradition confirmed (ff.106v, 112v)
+- T-initial opening deep tissue surgical section (f.28v): most specific
+  external parallel to gallows-phase assignment found to date
+- Two-level structural encoding (f.29r) parallels recipe star system
+- Multiple distinct initials per page (f.69v) parallels multi-gallows
+===== PAGE 45 =====
+UPDATE 10 — v3.0 AUDIT COMPLETED (March 21, 2026)
+Ten-flag audit conducted March 21, 2026. All flags resolved:
+Flag #1:  K-gallows consecutive constraint — rule corrected   RESOLVED
+Flag #2:  F-gallows same correction — rule corrected          RESOLVED
+Flag #3:  Entropy methodology — mandatory condition added     RESOLVED
+Flag #4:  Divisors of 15 — downgraded to 65% provisional     RESOLVED
+Flag #5:  135-unit constant — confidence split by sub-claim   RESOLVED
+Flag #6:  34->33 law — metaphysical language removed          RESOLVED
+Flag #7:  Navigational layer — relabeled Hypothesis Grade     RESOLVED
+Flag #8:  Mathematical scaffold — Category B, pending review  RESOLVED
+Flag #9:  Papanikolaou embargo — formally managed             RESOLVED
+Flag #10: Brea Laws — Law 2 corrected to 75-80%, Law 3 outlier RESOLVED
+UPDATE 11 — v4.0 SYMBOL SYSTEM CONSOLIDATION (NEW — April 30, 2026)
+Full 19-character single-glyph table formally completed. Each base
+character now carries phonetic value, semantic meaning, and grammatical
+role as a standalone reference entry. The role assignments formalize
+what was previously implicit across translation work and are fully
+consistent with all prior confirmed translations.
+All 26 compound glyphs entered into Layer 1B with domain context
+annotations. Cross-domain compound analysis (o- prefix = result state;
+a- prefix = active process) documented for the first time as a
+systematic rule.
+-shape master particle given standalone Layer 1C entry. Measure
+Continuity Rule formally stated: the -shape thread does not reset
+between sections and constitutes the primary structural spine of the
+procedural workflow.
+Terminal suffix table expanded from partial listings to 14-entry
+complete table with suffix stacking rule documented.
+UPDATE 12 — v4.0 LEXICON RESTRUCTURING (NEW — April 30, 2026)
+The flat crib lexicon from v3.0 has been restructured into four
+domain-specific tables (herbal, pharmaceutical, biological, astronomical).
+Cross-domain token entries (garos, akos, laros, daros) are documented
+under each relevant domain with explicit meaning-differentiation notes.
+The systematic semantic bridge between Domain 1 (Herbal) and Domain 3
+(Biological) via shared thermal tokens is formally noted for the first
+time: herbal thermal qualities (heating herb / cooling herb) map directly
+to humoral therapeutic targets (choleric / phlegmatic). This is the
+mechanism connecting manuscript sections rather than a coincidence.
+===== PAGE 46 =====
+UPDATE 13 — v4.0 SECTION MODELS AND TRANSLATION PIPELINE (NEW)
+Five section models formally documented in Layer 12 with function,
+reading mode, dominant tokens, and section identification protocol.
+Eight-step Translation Pipeline documented in Layer 13. Both layers
+formalize workflow that was implicit in prior translation work and
+make it explicitly reproducible by independent researchers.
+==========================================================================
+======
+IMMEDIATE RESEARCH ACTIONS — PRIORITY QUEUE (v3.0, updated v4.0)
+==========================================================================
+======
+Priority  Action                         Target             Status
+1         Produce Brea Test Log          Laws 1-4 pub.      MUST CREATE
+          (15 botanical + 15 balneogl.,  readiness
+          per-folio complexity metric,
+          word count, result, p-value)
+2         Portolan chart comparison      Navigational       URGENT
+          (Catalan Atlas, 15th-c maritime layer verify/
+          color conventions)             eliminate
+3         Celtic Studies: /ui/->/au/     auo/uisce flag     URGENT
+          attestation in Old/Mid Irish
+4         Cross-folio word-length study  65% checksum       Self-
+          f76r vs f15r, p<0.05           elevation          executable
+                                                            via ZL
+5         T-frequency corpus study       T-scale confirm    Takahashi EVA
+          (paragraph openers vs labels)
+6         Snake coil count f67r2         34-unit constant   Beinecke scan
+          (independent high-res count)
+7         Duchas.ie: lus na gceithre     Nav. ethnographic  ISOS Schools
+          n-airde deep search            anchor
+8         Soyga algorithmic test         Soyga generative   Reeds 2002
+          (f15r seed words via Reeds 2002) hypothesis       + ZL
+9         Independent mathematical       Cat-B elevation    Mathematician
+          review of T^5 and Beltrami     or elimination     required
+          condition
+10        Papanikolaou cross-test 2027   Bilingual          Zenodo 2027
+          f35v Kiki, f15r Sideritis      orthogonality
+11  NEW   Multi-hand scribal variation   Limitation 3       Corpus
+===== PAGE 47 =====
+(v4.0)    corpus study — document        resolution         mapping
+          orthographic cluster variants
+          across identified scribal hands
+12  NEW   Hapax cluster inventory        Limitation 1       ZL full
+(v4.0)    — full ZL corpus extraction,   resolution         corpus
+          frequency cutoff defined,
+          hapax list published
+==========================================================================
+======
+DOCUMENT COMPLETION STATUS (v4.0 UPDATED)
+==========================================================================
+======
+Component                      | Status      | Category | Notes
+-------------------------------|-------------|----------|--------------------
+Layer 1: Symbol->Latin->IPA    | COMPLETE    | A        | F/K rule corrected
+Layer 1B: Compound Glyph Table | COMPLETE    | A        | NEW v4.0 (26 entries)
+Layer 1C: Master Particle      | COMPLETE    | A        | NEW v4.0 (-shape)
+Layer 1D: Terminal Suffix Table| COMPLETE    | A        | NEW v4.0 (14 entries)
+Layer 2: Irish Vocabulary      | COMPLETE    | A        | auo/uisce FLAGGED
+Layer 3: Master Crib Lexicon   | COMPLETE    | A        | Restructured v4.0
+         (four domain tables)  |             |          | (4 domains)
+Layer 4: Confirmed Grammar     | COMPLETE    | A        | Order formalized v4.0
+Layer 5: Sentence Translations | COMPLETE    | A        | 4 confirmed
+Layer 6: Nine-Stage Cycle      | COMPLETE    | A        | Full zodiac mapping
+Layer 7: Four Phases           | COMPLETE    | A        | Nav overlay Cat-B
+Layer 8: Four Brea Laws        | COMPLETE    | A        | Laws 2+3 corrected
+Layer 9: Manuscript Structure  | COMPLETE    | A        | Reordering confirmed
+Layer 10: MS 15 Corroboration  | COMPLETE    | A        | Cold test confirmed
+Layer 11: Navigational Layer   | COMPLETE    | B        | Rose compass FLAGGED
+Layer 12: Section Models       | COMPLETE    | A        | NEW v4.0 (5 sections)
+Layer 13: Translation Pipeline | COMPLETE    | A        | NEW v4.0 (8 steps)
+Layer 14: Confidence Notes     | COMPLETE    | A/B      | NEW v4.0 (4 tiers)
+Layer 15: Standing Limitations | COMPLETE    | A        | NEW v4.0 (5 items)
+Component J: Book of Soyga     | COMPLETE    | B        | v3.0 — test pend.
+Math Scaffold (T^5)            | LABELED     | B        | Pending math review
+Greek Layer (Papanikolaou)     | LABELED     | B        | Embargoed 2027
+Brea Test Log                  | OUTSTANDING | Required | Priority #1 pub.
+==========================================================================
+===== PAGE 48 =====
+======
+TRANSMISSION COMPLETE — STANDING ORDERS (v4.0)
+==========================================================================
+======
+Next Researcher inherits:
+1. CATEGORY DISCIPLINE: Never present Category B findings as evidence.
+   The framework's credibility rests on the Category A core.
+   Build outward from there.
+2. HISTORICAL GROUNDING (Category A): King's Inns MS 15 paleography,
+   15th-century Irish medical tradition (Maelechlainn mac Illainn, 1512),
+   Old Irish pharmaceutical vocabulary. These are the empirical bedrock.
+3. MATHEMATICAL SCAFFOLD (Category B): T^5 toroidal framework is a
+   conceptual organizer only until independent mathematical review is
+   completed. Do not present as evidence.
+4. TESTABLE PREDICTIONS:
+   - auo/uisce phonological verification (Celtic Studies)
+   - Rose compass / Portolan chart confirmation
+   - T-scale statistical corpus study
+   - Soyga algorithmic test — Reeds (2002) method on f15r seed words
+   - Papanikolaou Greek-Irish term correspondence (2027)
+   - Scribal variation corpus study (multi-hand cluster mapping)
+   - Hapax cluster inventory and frequency cutoff publication
+5. DOCUMENTED VULNERABILITIES: No hidden failures. All flags explicit.
+   All confidence levels honest throughout.
+6. ATTRIBUTION INTEGRITY: Papanikolaou credited for Greek substance
+   layer and all published statistical work. Moderator contributions
+   to navigational layer acknowledged. All contributions credited in full.
+7. v4.0 ADDITIONS: All four new layers (1B, 1C, 1D, 12, 13, 14, 15) and
+   the restructured Layer 3 are fully integrated into the framework.
+   No v3.0 finding has been modified or removed. v4.0 is additive only.
+CORE AXIOM: The Voynich Manuscript is a rule-based encoding system.
+The Irish procedural layer stands alone as a complete and sufficient
+framework. All other layers are additive hypotheses, not load-bearing.
+STANDING ORDER: Leave no stone unturned. No exceptions.
+==========================================================================
+======
+END OF WILKEN-PORSCH ROSETTA STONE v4.0
+==========================================================================
+===== PAGE 49 =====
+======
+Copyright 2026 — Breanne Porsch Wilken, Independent Researcher.
+The Wilken Key transliteration system, methodology, all analyses,
+reordering conclusions, and the Wilken-Porsch Code-Breaking Key are
+the original intellectual property of Breanne Porsch Wilken.
+All rights reserved. Attribution required for all use.
+Contact: ResearchGate — Breanne Porsch Wilken
+Share findings. Seek verification. Credit collaborators. Protect the core.
+==========================================================================
+======

@@ -1,0 +1,21 @@
+Real Currier B: 2420 lines
+
+--- Real Currier B ---
+  Baseline CHSH/(CHSH+QO) rate: 0.583
+  Post-hazard CHSH rate: 0.779 (450/578)
+  Enrichment above baseline: +19.6 pp
+
+Training 5-gram...
+Generating synthetic Currier B with matched line lengths...
+Generated 2420 synthetic lines
+
+--- Synthetic 5-gram ---
+  Baseline CHSH/(CHSH+QO) rate: 0.577
+  Post-hazard CHSH rate: 0.750 (309/412)
+  Enrichment above baseline: +17.3 pp
+
+=== VERDICT ===
+Real enrichment above baseline:  +19.6 pp
+Synth enrichment above baseline: +17.3 pp
+Residual signal beyond Markov:   +2.3 pp
+  --> C645+C2045 is Markov-reproducible. Effect emerges from local stats.

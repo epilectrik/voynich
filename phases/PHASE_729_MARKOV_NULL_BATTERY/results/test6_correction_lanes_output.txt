@@ -1,0 +1,24 @@
+Training 5-gram on 2420 Currier B lines...
+Generated 2420 synthetic lines
+
+Lane                       Real obs  Real null   Real %     Syn obs   Syn null    Syn %     Residual
+----------------------------------------------------------------------------------------------------------------------------------
+qo-k -> ok                      201      148.8   +35.1%          94       89.1    +5.5%       +29.6pp   ok-anything (broad vessel correction)
+qo-k -> ok-e                    103       72.9   +41.3%          51       43.2   +18.1%       +23.3pp   ok-e (narrow C1314)
+qo-k -> ch                      483      354.4   +36.3%         244      217.5   +12.2%       +24.1pp   active monitor after heat
+qo-k -> sh                      284      271.3    +4.7%         135      153.9   -12.3%       +17.0pp   passive monitor after heat
+qo-k -> ot                      159      128.8   +23.4%          87       91.0    -4.4%       +27.8pp   transfer after heat
+qo -> ch                        728      551.1   +32.1%         359      335.3    +7.1%       +25.0pp   broad: any qo -> ch
+qo -> sh                        416      420.0    -1.0%         211      232.3    -9.2%        +8.2pp   broad: any qo -> sh
+
+=== INTERPRETATION ===
+Real % - Syn % = "residual signal beyond Markov." Positive = real structure 5-gram can't produce.
+Magnitudes >10pp are meaningful; <5pp is in noise floor.
+
+  qo-k -> ok             real +35.1%, syn  +5.5%, residual +29.6pp -- STRONG residual signal
+  qo-k -> ot             real +23.4%, syn  -4.4%, residual +27.8pp -- STRONG residual signal
+  qo -> ch               real +32.1%, syn  +7.1%, residual +25.0pp -- STRONG residual signal
+  qo-k -> ch             real +36.3%, syn +12.2%, residual +24.1pp -- STRONG residual signal
+  qo-k -> ok-e           real +41.3%, syn +18.1%, residual +23.3pp -- STRONG residual signal
+  qo-k -> sh             real  +4.7%, syn -12.3%, residual +17.0pp -- STRONG residual signal
+  qo -> sh               real  -1.0%, syn  -9.2%, residual  +8.2pp -- Moderate residual

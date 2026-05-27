@@ -4,6 +4,71 @@
 
 ---
 
+## Version 6.90 (2026-05-26) — PHASE_729 5-gram Markov null battery: C2055 + C2056 registered; C1727 demoted, C645+C2045 mechanism retracted, C1314 superseded
+
+### Summary
+
+After noticing that the existing PHASE_691 markov_showdown.py result shows a character 3-gram beats the 4.8M-parameter transformer LM on bpc (1.95 vs 2.79, ratio 0.70 — the "shallow structure" interpretation in the original phase under-stated this; the n-gram **decisively wins**), this phase ran a systematic 5-gram Markov null battery against the project's strongest architectural evidence. The 5-gram null is a sharper control than within-folio shuffle for surface-pattern claims.
+
+### Surface-statistics finding (foundational)
+
+A character 5-gram trained on Currier B reproduces every surface statistic measured today within sampling noise: TTR 0.231 vs real 0.212; hapax-types 64.5% vs 67.2%; hapax-tokens 14.9% vs 14.2%; Zipf slope -0.913 vs -0.930; top-100 coverage 42.6% vs 47.5%; **cell-fill at 4-7 char window 70.4% vs 71.0%**; distinct 2-char starts 141 vs 148.
+
+This collapses surface-statistic arguments for "designed slot grammar" to floor-level (any Markov chain produces them) and inverts the historical "Voynich is too statistically weird to be NL" framing to "Voynich is too statistically *regular* to be NL — it lacks long-range structure NL requires."
+
+### Battery results
+
+| Evidence | Verdict | Residual |
+|----------|---------|----------|
+| C2032 lag2/lag1 sequential structure | **SURVIVES** | real -4.21 vs synth +0.22 |
+| Correction-lane family (5 transitions) | **SURVIVES strongly** | +17-30 pp across 5 lanes |
+| f77r reverse-blind | **SURVIVES** | p_emp = 0.000 |
+| f39r reverse-blind | **SURVIVES** (non-distillation) | p_emp = 0.002 |
+| C2042 atom monocategorical | **STANDS** (not Markov-testable) | adversarial-robust |
+| C1314 narrow form (ok-e only) | PARTIAL | +23 pp residual |
+| C1727 line-ordering smoothness | **MARKOV-TRIVIAL** | residual ~0 |
+| C645+C2045 hazard recovery | **MARKOV-TRIVIAL** | +2.3 pp |
+| f103v / f115r reverse-blind | **TAUTOLOGICAL** | p=0.227, 0.225 |
+| f43v reverse-blind | MARGINAL | p=0.011 |
+| Folio operational profiles | **MARKOV-TRIVIAL** | 100% in cloud, half variance |
+
+### Constraints registered
+
+- **C2055 (Tier 2):** Voynich Currier B is character-Markov at 5-gram order. Fourth axis of engineered-substrate stack. The 3-gram beats the 4.8M-param transformer at bpc.
+- **C2056 (Tier 2):** Post-heat polymorphic correction-lane family. Five lanes (qo-k → ok / ot / ch / sh / ok-e) all show 17-30 pp residual beyond 5-gram null. Architectural unit subsuming C1314 narrow form. **Strongest single architectural result of the session.**
+
+### Constraint dispositions
+
+- **C1727 — DEMOTED Tier 2 → Tier 3.** Line-ordering smoothness is a surface-statistic property, not evidence of intentional folio-level ordering. Cascades to C2049/C2050/C2051 (mechanism-narrowing inheritance).
+- **C645+C2045 — SCOPE SHARPENED.** Directional measurement preserved (hazards predict CHSH at lag+1). "Thermal damage control" / "perturbation-recovery topology" mechanism interpretation retracts to Tier 4 SPECULATIVE. Despite passing within-folio shuffle at p<0.001, fails 5-gram null. Confirms within-folio shuffle and 5-gram nulls test different questions.
+- **C1314 — MARKED SUPERSEDED** by C2056 (broader correction-lane family). Historical predecessor preserved.
+- **C2052 — REFINED** by 100%-Mahalanobis-cloud finding (synthetic folios fall fully in real distribution). No new constraint.
+- **Catalog entries annotated**: f77r, f39r (validated against null); f103v, f115r (FAILED null); f43v (marginal).
+
+### Methodology memory registered
+
+`feedback_5gram_markov_null_for_surface_patterns.md` — 5-gram Markov null is the appropriate first null for any sequence/positional/transition claim. Within-folio shuffle remains valid as complementary second null for composition shadow.
+
+### Failure-mode taxonomy update
+
+**Pattern 8 added:** "structural finding reproducible by appropriate-order local-statistics null." Demonstrated by C1727 and C645+C2045 dispositions this phase. Taxonomy now spans 8 distinct patterns.
+
+### Expert convergence
+
+Both expert-advisor and crazy-expert converged tightly on registration dispositions. Crazy-expert flagged ~120 suspect constraints (C547-C562, C597, C601, C816 + similar) in C600-C800 range — positional/sequential constraints validated only against shuffle null. Expected 40-60% demotion rate under 5-gram null. Not run this phase; queued as routine audit batches.
+
+### Strength estimates after PHASE_729
+
+- **Operational DSL / control notation generally:** 9/10 (correction-lane family + C2032 + C2042 form load-bearing trio)
+- **Pseudo-Lull procedural notation:** 6/10 (f77r + f39r robust; bulk catalog suspect pending audit)
+- **Distillation specifically:** 4-5/10 (correction-lane family supports thermal control; f39r non-distillation match broadens framing)
+
+### Key shift
+
+The architectural backbone (C2032, C2042, correction-lane family C2056, f77r + f39r reverse-blind matches) is the load-bearing case. The corpus-statistical scaffolding around it (C1727, C645+C2045 mechanism, much of the matcher catalog) is more vulnerable than the project's mainline framing suggested. Project is overbuilt; consolidation pass would help.
+
+---
+
 ## Version 6.89 (2026-05-21) - PHASE_723 Phase 1-3 → C2054 physics-architectural matcher (Latin-side three-class discrimination)
 
 ### Summary

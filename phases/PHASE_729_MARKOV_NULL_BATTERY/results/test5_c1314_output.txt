@@ -1,0 +1,26 @@
+Real Currier B: 2420 lines
+
+--- Real Currier B baseline ---
+  Observed: qo-k->ok-e = 103, ok-e->qo-k = 113, da->sa (neg ctrl) = 6
+  Total within-line bigrams: 20676
+  Computing within-line shuffle null (200 perms)...
+  Null mean: qo-k->ok-e = 72.7, ok-e->qo-k = 73.0, da->sa = 13.5
+  Enrichment: qo-k->ok-e +41.6%, ok-e->qo-k +54.7%, da->sa -55.4%
+
+Training 5-gram on Currier B...
+Generating synthetic Currier B with matched line lengths...
+Generated 2420 synthetic lines
+
+--- Synthetic 5-gram ---
+  Observed: qo-k->ok-e = 51, ok-e->qo-k = 66, da->sa (neg ctrl) = 2
+  Total within-line bigrams: 12501
+  Computing within-line shuffle null on synthetic...
+  Null mean: qo-k->ok-e = 43.8, ok-e->qo-k = 44.1, da->sa = 8.6
+  Enrichment: qo-k->ok-e +16.5%, ok-e->qo-k +49.8%, da->sa -76.6%
+
+=== VERDICT ===
+Real qo-k->ok-e enrichment: +41.6%
+Synth qo-k->ok-e enrichment: +16.5%
+Real ok-e->qo-k enrichment: +54.7%
+Synth ok-e->qo-k enrichment: +49.8%
+  --> PARTIAL reproduction. Real 42%/55% vs synth 16%/50%

@@ -1,0 +1,100 @@
+Real folio lengths: {'f77r': 325, 'f39r': 154, 'f103v': 449, 'f115r': 444, 'f43v': 153}
+
+Running 1000 samples per target + negative control...
+
+--- f77r (k_pass = 7/7) ---
+  Real: 6/7 (3/3 SPECIFIC)
+  Synthetic 5-gram null:
+    Fraction reaching 7+ predictions: 0.000
+    Fraction reaching 3+ SPECIFIC predictions: 0.000
+    Mean predictions hit: 2.39, max: 5
+      "dar=0": 7.10% of synthetic samples pass [SPECIFIC]
+      "dal>=2": 53.10% of synthetic samples pass
+      "daiin>=4": 65.30% of synthetic samples pass [SPECIFIC]
+      "sh>8%": 89.60% of synthetic samples pass
+      "gentle>15%": 23.80% of synthetic samples pass
+      "qo>25%": 0.00% of synthetic samples pass [SPECIFIC]
+      "length 100-200": 0.00% of synthetic samples pass
+
+--- f39r (k_pass = 6/7) ---
+  Real: 7/7 (5/5 SPECIFIC)
+  Synthetic 5-gram null:
+    Fraction reaching 6+ predictions: 0.002
+    Fraction reaching 5+ SPECIFIC predictions: 0.000
+    Mean predictions hit: 2.38, max: 6
+      "qo<12%": 2.80% of synthetic samples pass [SPECIFIC]
+      "da>=6%": 17.00% of synthetic samples pass [SPECIFIC]
+      "dar>=3": 12.30% of synthetic samples pass [SPECIFIC]
+      "sh>10%": 50.10% of synthetic samples pass
+      "gentle<10%": 9.70% of synthetic samples pass [SPECIFIC]
+      "ch>15%": 46.50% of synthetic samples pass [SPECIFIC]
+      "length 120-200": 100.00% of synthetic samples pass
+
+--- f103v (k_pass = 6/6) ---
+  Real: 6/6 (3/3 SPECIFIC)
+  Synthetic 5-gram null:
+    Fraction reaching 6+ predictions: 0.227
+    Fraction reaching 3+ SPECIFIC predictions: 0.453
+    Mean predictions hit: 4.84, max: 6
+      "dar>=2": 89.70% of synthetic samples pass [SPECIFIC]
+      "gentle 12-22%": 87.20% of synthetic samples pass [SPECIFIC]
+      "sh>10%": 53.80% of synthetic samples pass
+      "length 350-550": 100.00% of synthetic samples pass
+      "daiin>=6": 59.40% of synthetic samples pass [SPECIFIC]
+      "dal>=1": 93.80% of synthetic samples pass
+
+--- f115r (k_pass = 4/4) ---
+  Real: 4/4 (2/2 SPECIFIC)
+  Synthetic 5-gram null:
+    Fraction reaching 4+ predictions: 0.225
+    Fraction reaching 2+ SPECIFIC predictions: 0.225
+    Mean predictions hit: 2.98, max: 4
+      "ch>15%": 47.60% of synthetic samples pass [SPECIFIC]
+      "dar>=4": 50.70% of synthetic samples pass [SPECIFIC]
+      "gentle<22%": 100.00% of synthetic samples pass
+      "length 350-550": 100.00% of synthetic samples pass
+
+--- f43v (k_pass = 4/4) ---
+  Real: 4/4 (2/2 SPECIFIC)
+  Synthetic 5-gram null:
+    Fraction reaching 4+ predictions: 0.011
+    Fraction reaching 2+ SPECIFIC predictions: 0.015
+    Mean predictions hit: 2.21, max: 4
+      "dar>=2": 36.00% of synthetic samples pass [SPECIFIC]
+      "ch>20%": 4.20% of synthetic samples pass [SPECIFIC]
+      "ok+ot>10%": 81.00% of synthetic samples pass
+      "length 120-200": 100.00% of synthetic samples pass
+
+
+=== NEGATIVE CONTROL ===
+Applying ALL prediction templates to unmatched folios: ['f103r', 'f104r', 'f104v']
+
+f103r (522 tokens):
+  Hits f77r template: 3/7
+  Hits f39r template: 1/7
+  Hits f103v template: 5/6
+  Hits f115r template: 2/4
+  Hits f43v template: 2/4
+
+f104r (438 tokens):
+  Hits f77r template: 1/7
+  Hits f39r template: 1/7
+  Hits f103v template: 3/6
+  Hits f115r template: 3/4
+  Hits f43v template: 1/4
+
+f104v (458 tokens):
+  Hits f77r template: 2/7
+  Hits f39r template: 1/7
+  Hits f103v template: 3/6
+  Hits f115r template: 3/4
+  Hits f43v template: 1/4
+
+=== SUMMARY ===
+Folio    Real     k_pass   p(syn>=k)    p(syn>=spec) 
+------------------------------------------------------------
+f77r     6/7      7        0.000        0.000        
+f39r     7/7      6        0.002        0.000        
+f103v    6/6      6        0.227        0.453        
+f115r    4/4      4        0.225        0.225        
+f43v     4/4      4        0.011        0.015        

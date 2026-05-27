@@ -1,0 +1,17 @@
+Loaded 82 folios (paragraphs) with >=3 lines
+
+--- Baseline: real Currier B ---
+  obs=31551.51  null=37590.24±1577.52  z=-3.828  n_pairs=2338
+
+Training 5-gram on Currier B lines...
+Training data: 2420 lines
+Generating synthetic Currier B with matched paragraph structure...
+Generated 82 synthetic folios
+
+--- Synthetic 5-gram ---
+  obs=31811.74  null=37770.10±1604.29  z=-3.714  n_pairs=2338
+
+=== VERDICT ===
+Real Currier B z = -3.828  (negative = smoother than shuffle null = C1727 signal)
+Synthetic 5-gram z = -3.714
+  → 5-gram REPRODUCES C1727 smoothness. Effect is Markov artifact.

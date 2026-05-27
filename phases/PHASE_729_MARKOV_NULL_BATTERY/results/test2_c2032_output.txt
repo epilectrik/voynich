@@ -1,0 +1,21 @@
+Real Currier B: 23096 tokens
+
+Training 5-gram...
+Sampling synthetic stream...
+Synthetic: 23096 tokens
+
+=== C2032 r21 comparison ===
+Real Currier B               target=chedy      lag1=-0.0030  lag2=+0.0125  lag3=-0.0099  r21=-4.214
+Synthetic 5-gram             target=chedy      lag1=-0.0136  lag2=-0.0030  lag3=+0.0067  r21=+0.221
+
+=== VERDICT ===
+Real Currier B r21 = -4.214  (published Section B: -0.66; matched-S: +0.66)
+Synthetic 5-gram r21 = +0.221
+NL baselines (published): Codicillus +0.05, Mesue -0.17
+Traceback (most recent call last):
+  File "C:\git\voynich\phases\PHASE_729_MARKOV_NULL_BATTERY\scripts\_test2_c2032_null.py", line 143, in <module>
+    print('  \u2192 5-gram PARTIALLY reproduces. r21 magnitude {:.2f} vs real {:.2f}'.format(
+  File "C:\Users\epilectrik\.pyenv\pyenv-win\versions\3.11.4\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 2: character maps to <undefined>
