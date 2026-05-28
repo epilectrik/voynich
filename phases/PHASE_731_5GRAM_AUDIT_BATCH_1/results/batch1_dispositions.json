@@ -1,0 +1,209 @@
+{
+  "C2056_CONTROL": {
+    "sub_measurements": {
+      "M1_qok_to_ok_prefix_bigram": {
+        "real_held_out": 0.08146300914380715,
+        "synth_mean": 0.0691133752976402,
+        "synth_std": 0.005489218978551723,
+        "residual": 0.012349633846166955,
+        "z_diff": 2.2497979939261388,
+        "p_emp_above": 0.03,
+        "p_emp_below": 0.97,
+        "original_effect_magnitude": 0.296,
+        "near_zero_claim": false,
+        "verdict": "SURVIVES_Tier2_above_markov_p0.0300_mechanism_weak_ratio0.04",
+        "real_full": {
+          "total": 2406,
+          "match": 196,
+          "rate": 0.08146300914380715
+        },
+        "n_synth": 200
+      }
+    },
+    "claim_type": "mechanism",
+    "claim_note": "POSITIVE CONTROL \u2014 must SURVIVE for methodology to be calibrated",
+    "aggregate_verdict": "SURVIVES_Tier2_above_markov_p0.0300_mechanism_weak_ratio0.04"
+  },
+  "C549": {
+    "sub_measurements": {
+      "M1_qo_to_chsh_prefix_bigram": {
+        "real_held_out": 0.29192708333333334,
+        "synth_mean": 0.25012993908494024,
+        "synth_std": 0.007212788681500594,
+        "residual": 0.04179714424839309,
+        "z_diff": 5.7948660489104125,
+        "p_emp_above": 0.0,
+        "p_emp_below": 1.0,
+        "original_effect_magnitude": 0.057,
+        "near_zero_claim": false,
+        "verdict": "SURVIVES_STRONG_p0.0000",
+        "real_full": {
+          "total": 3840,
+          "match": 1121,
+          "rate": 0.29192708333333334
+        },
+        "n_synth": 200
+      }
+    },
+    "claim_type": "mechanism",
+    "claim_note": "qo/ch-sh coordination signature; effect = 56.3% - 50.6% expected = 5.7pp",
+    "aggregate_verdict": "SURVIVES_STRONG_p0.0000"
+  },
+  "C557": {
+    "sub_measurements": {
+      "M1_daiin_line_initial": {
+        "real_held_out": 0.27070063694267515,
+        "synth_mean": 0.23637958007339052,
+        "synth_std": 0.022629690068589184,
+        "residual": 0.03432105686928463,
+        "z_diff": 1.5166383969581396,
+        "p_emp_above": 0.085,
+        "p_emp_below": 0.915,
+        "original_effect_magnitude": 0.247,
+        "near_zero_claim": false,
+        "verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.0850_residual0.0343",
+        "real_full": {
+          "total": 314,
+          "initial": 85,
+          "rate": 0.27070063694267515
+        },
+        "n_synth": 200
+      }
+    },
+    "claim_type": "surface_fact",
+    "claim_note": "daiin line-initial rate; effect = 27.7% - ~3% line-fraction = 24.7pp",
+    "aggregate_verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.0850_residual0.0343"
+  },
+  "C561": {
+    "sub_measurements": {
+      "M1_or_to_aiin_bigram": {
+        "real_held_out": 0.17427385892116182,
+        "synth_mean": 0.13606791051573977,
+        "synth_std": 0.02171921704282811,
+        "residual": 0.03820594840542205,
+        "z_diff": 1.7590849766860268,
+        "p_emp_above": 0.06,
+        "p_emp_below": 0.94,
+        "original_effect_magnitude": 0.575,
+        "near_zero_claim": false,
+        "verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.0600_residual0.0382",
+        "real_full": {
+          "total": 241,
+          "match": 42,
+          "rate": 0.17427385892116182
+        },
+        "n_synth": 200
+      },
+      "M2_aiin_to_aiin_zero_prohibition": {
+        "real_held_out": 0.0,
+        "synth_mean": 0.0034716185649854817,
+        "synth_std": 0.003340018497413664,
+        "residual": -0.0034716185649854817,
+        "z_diff": -1.0394009996273141,
+        "p_emp_above": 1.0,
+        "p_emp_below": 0.0,
+        "original_effect_magnitude": 0.05,
+        "near_zero_claim": true,
+        "verdict": "DEMOTE_Tier2_to_Tier3_zero_reproducible_by_markov_p0.0000",
+        "real_full": {
+          "total": 337,
+          "match": 0,
+          "rate": 0.0
+        },
+        "n_synth": 500
+      }
+    },
+    "claim_type": "surface_fact",
+    "claim_note": "or->aiin bigram; effect = 87.5% - ~30% baseline = 57.5pp",
+    "aggregate_verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.0600_residual0.0382"
+  },
+  "C562": {
+    "sub_measurements": {
+      "M1_ary_line_final": {
+        "real_held_out": 1.0,
+        "synth_mean": 0.11860037827691818,
+        "synth_std": 0.0859763820972855,
+        "residual": 0.8813996217230818,
+        "z_diff": 10.251648187821454,
+        "p_emp_above": 0.0,
+        "p_emp_below": 1.0,
+        "original_effect_magnitude": 0.9,
+        "near_zero_claim": false,
+        "verdict": "SURVIVES_STRONG_p0.0000",
+        "real_full": {
+          "total": 16,
+          "final": 16,
+          "rate": 1.0
+        },
+        "n_synth": 500
+      }
+    },
+    "claim_type": "surface_fact",
+    "claim_note": "ary 100% line-final; effect = 100% - ~10% random = 90pp",
+    "aggregate_verdict": "SURVIVES_STRONG_p0.0000"
+  },
+  "C816": {
+    "sub_measurements": {
+      "M1_daiin_mean_position": {
+        "real_held_out": 0.41284058497322507,
+        "synth_mean": 0.4326615578859756,
+        "synth_std": 0.01953988443543537,
+        "residual": -0.019820972912750534,
+        "z_diff": -1.0143853705094292,
+        "p_emp_above": 0.86,
+        "p_emp_below": 0.14,
+        "original_effect_magnitude": 0.087,
+        "near_zero_claim": false,
+        "verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.1400_residual0.0198",
+        "real_full": {
+          "n": 314,
+          "mean_pos": 0.41284058497322507,
+          "std_pos": 0.3469113653206903,
+          "rate": 0.41284058497322507
+        },
+        "n_synth": 200
+      },
+      "M2_ol_mean_position": {
+        "real_held_out": 0.5112619215047245,
+        "synth_mean": 0.5273604761837034,
+        "synth_std": 0.013375789233355391,
+        "residual": -0.016098554678978916,
+        "z_diff": -1.2035592366268546,
+        "p_emp_above": 0.875,
+        "p_emp_below": 0.125,
+        "original_effect_magnitude": 0.011,
+        "near_zero_claim": false,
+        "verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.1250_residual0.0161",
+        "real_full": {
+          "n": 421,
+          "mean_pos": 0.5112619215047245,
+          "std_pos": 0.3080248153807658,
+          "rate": 0.5112619215047245
+        },
+        "n_synth": 200
+      },
+      "M3_position_differential": {
+        "real_held_out": 0.09842133653149943,
+        "synth_mean": 0.09469891829772777,
+        "synth_std": 0.023941597612526823,
+        "residual": 0.00372241823377166,
+        "z_diff": 0.1554791077026539,
+        "p_emp_above": 0.43,
+        "p_emp_below": 0.5700000000000001,
+        "original_effect_magnitude": 0.098,
+        "near_zero_claim": false,
+        "verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.4300_residual0.0037",
+        "real_full": {
+          "a_mean_pos": 0.41284058497322507,
+          "b_mean_pos": 0.5112619215047245,
+          "differential": 0.09842133653149943,
+          "rate": 0.09842133653149943
+        },
+        "n_synth": 200
+      }
+    },
+    "claim_type": "mechanism",
+    "claim_note": "daiin mean pos 0.413; effect vs midline 0.5 = 0.087",
+    "aggregate_verdict": "DEMOTE_Tier2_to_Tier3_markov_trivial_p0.1400_residual0.0198"
+  }
+}

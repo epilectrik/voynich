@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-28 09:28
+**Generated:** 2026-05-28 11:38
 **Version:** FROZEN STATE (2051 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (28 feedback rules)
+6. Session Methodology Notes (29 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -866,10 +866,8 @@ C553	**BIO-REGIME Energy Independence**	2	B
 C554	**Hazard Class Clustering**	2	B
 C555	**PHARMA Thermal Operator Substitution** (Class 33 0.20x depleted, Class 34 1.90x enriched in PHARMA; ~10x divergence; section-specific not REGIME-driven; ENERGY operators not interchangeable)	2	B
 C556	**ENERGY Medial Concentration**	2	B
-C557	**daiin Line-Initial ENERGY Trigger** (27.7% line-initial rate, 2.2x CC average; 47.1% ENERGY followers; Class 10 singleton; RECIPE 36.3% initial; unique control signal)	2	B
 C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; daiin initial-biased 27.7%, ol final-biased 9.5%; complementary control primitives)	2	B
 C560	**Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived)	2	B
-C561	**Class 9 or->aiin Directional Bigram** (87.5% of chains are or->aiin; zero aiin->aiin; directional grammatical unit; HERBAL 21.7% chain rate; refines C559 "self-chaining")	2	B
 C562	**FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern)	2	B
 C563	**AX Internal Positional Stratification**	2	B
 C564	**AX Morphological-Positional Correspondence** (AX_INIT: 17.5% articulator; AX_MED: ok/ot 88.8%; AX_FINAL: prefix-light 60.9%, zero articulators; prefix family predicts position)	2	B
@@ -1112,7 +1110,6 @@ C812	**HT Novel MIDDLE Combinations** (11.19% novel pairs; NOT C475 violation; H
 C813	**Canonical Phase Ordering** (LINK 0.476 -> KERNEL 0.482 -> FL 0.576; monitoring early, escape late)	2	B
 C814	**Kernel-Escape Inverse**	2	B
 C815	**Phase Position Significance**	2	B
-C816	**CC Positional Ordering** (daiin 0.413 -> LINK 0.476 -> KERNEL -> ol 0.511 -> FL 0.576; daiin initiates loop)	2	B
 C817	**CC Lane Routing** (C600 confirmed: daiin->CHSH 90.8%, ol_derived->QO 57.4%; rapid decay by +2)	2	B
 C818	**CC Kernel Bridge** (Class 17 = CC-KERNEL interface; 88% kernel chars; resolves C782 paradox)	2	B
 C819	**CC Boundary Asymmetry** (daiin initial 27.1%; ol/ol_derived medial 85%; unlike LINK 1.23x)	2	B
@@ -5258,6 +5255,24 @@ Crazy-expert's suspect-zone heuristic (from PHASE_729 expert consultation):
 
 Constraints matching all four criteria are high-suspicion. Estimated ~120 in the C600-C800 range. Expected 40-60% demotion rate under 5-gram null.
 
+## Refinement (PHASE_731 batch 1, 2026-05-28): bimodal expert prior on high-percentage claims
+
+PHASE_731 batch 1 produced a clean expert prediction miss on C562 (ary 100% line-final). Both experts (especially crazy-expert) predicted DEMOTE on "100% won't reproduce on re-measurement." The 100% DID reproduce (16/16 ary tokens line-final in Currier B), and the 5-gram synth produced only 11.86% — SURVIVES STRONG at z=10.25, residual +88pp. The miss revealed a needed refinement to the expert prior:
+
+**Distinguish two sub-types of high-percentage claims:**
+
+- **Frequency claims** (>95% but <100%, e.g., "97% line-final," "98% of class X"): typically drift slightly under re-measurement (counting denominator shifts) AND are often Markov-reproducible at modest residual. **HIGH audit suspicion** — these match the C600-C800 suspect-zone heuristic above.
+
+- **Categorical exclusions** (exactly 100% or 0% with structural rationale, e.g., LATE-class membership predicting categorical line-final lock): typically robust under re-measurement (the structural rationale enforces the exact value) AND often survive 5-gram null at large residuals because character-Markov can't reproduce 100% positional locks or 0% exact prohibitions backed by morphological class structure. **LOWER audit suspicion** when the structural backing is present.
+
+The C562 case fits the C539 LATE-class membership pattern — ary's grammar requires line-terminal position. The 5-gram learned ary tends to appear line-final but didn't enforce 100%. The categorical structure is real and above-Markov.
+
+**Decision rule for batch 2+:** when a candidate constraint cites a 100% or 0% rate, ask whether there's a structural rationale (terminal class, role-class binding, atom-grammar constraint, codified hazard topology). If yes → likely-survivor family, lower suspicion. If no (just a count that happens to be 100%) → still suspect, audit as before.
+
+**Likely-survivor categorical-exclusion family:** C539 (LATE-class), C1486 (m-terminal line-final), C1487 (six-terminal taxonomy), C109 (17 forbidden transitions — but split needed: some Markov-trivial, some genuinely above-Markov per crazy-expert), k-HEAD 0% hazard claims (C1446, C1476), e→y zero hazard (C1457-C1462).
+
+**Likely-demoter positional-gradient family** (validated by PHASE_731 batch 1): C600-C700 ordinal/sequential claims, "X enriched at position Y" without categorical structure, paragraph-position HT claims (C842, C843, C870), CC positional ordering cascade from C816 (C817, C818, C874, C600, C558, C819).
+
 ## Related memories
 
 - [[feedback-within-folio-shuffle-null-first]] — load-bearing for composition-shadow questions
@@ -5589,6 +5604,58 @@ Constraints from the 2026-01-08 through 2026-01-15 work burst (the AZC-graph + c
 Expected outcome of audit-sweep: 5-15% retraction rate (per C131 + C475 precedent), 15-25% demotion rate (where strong-form survives in adjacent constraint like C729).
 
 This is a generalizable methodological pattern, not a one-off finding.
+
+---
+
+## feedback-expert-audit-prevented-post-hoc-registration
+
+*PHASE_730 within-A action-form — expert pre-registration audit caught six design flaws before running a post-hoc o-selectivity test that would have framework-echo-registered; B-side mirror + terminal-atom-matched null then independently killed the mechanism story*
+
+PHASE_730 (2026-05-28) produced the cleanest demonstration so far of the expert-audit-before-running discipline working as designed. Worth preserving as a procedural reference.
+
+**Sequence:**
+
+1. Within-A action-form test (load-bearing on Finding 1 per crazy-expert's earlier recommendation): H1 PASS at 38.9% (A grammatically CAN host dy — falsifies architectural-tautology framing of original 95% state-form claim). H2 FAIL at p=0.51 (positional deployment not the axis). Pre-registered verdict AMBIGUOUS.
+
+2. Post-hoc inspection of per-MIDDLE data revealed an apparent o-content split. User and I generated clean operational gloss: "A=setup, B=execute via arrangement-selective dy-completion."
+
+3. **Critical step: requested expert audit on proposed pre-registered confirmation test BEFORE running it.** Expert-advisor and crazy-expert independently flagged six convergent design flaws:
+   - Post-hoc fig leaf (yesterday's threshold filtered population; today's threshold partitions same population; partition chosen after seeing answer)
+   - Cherry-picked descriptive split (kal, kche, ksh, lch, lsh violated "permissive=o-only" at descriptive level — I'd missed these)
+   - Frequency confound + structural-domain confound (frequency-matched permutation null catches only count problem)
+   - B-side mirror missing (load-bearing — if B also o-preferring, asymmetry framing dies)
+   - HEAD vs ANY predicate ambiguity (predicate-fits-observation problem)
+   - C1557 cross-check unaddressed (o-HEAD y-terminal depletion in B = opposite direction)
+   - Framework-echo (claim restates C1395+C1502+C1556+C1559 with dy as readout, no new mechanism)
+
+4. **Ran crazy-expert's recommended test (B-side mirror + terminal-atom-matched null) instead of locked confirmation test.**
+   - B-side mirror: B symmetric across o vs non-o (Mann-Whitney one-sided p=0.62) → A asymmetry IS A-specific (good — kills the substrate-level alternative)
+   - A o vs non-o raw: p=0.013 looks significant
+   - **Terminal-atom-matched permutation null: stratified diff -0.016, p=0.71 → o-content effect COLLAPSES**
+   - Diagnostic decomposition: o-HEAD MIDDLEs ALSO dy-suppressed in A (mean 0.026); o-non-HEAD MIDDLEs dy-permitted (0.420); no-o MIDDLEs suppressed (0.040)
+   - Real driver: terminal-atom phonotactics, not o-atom content
+
+**The expert audit prevented Tier 2 registration of what would have been the 5th framework-echo trap of 2026-05.**
+
+**Procedural lesson:**
+
+Before locking pre-registration on a post-hoc-observed pattern, REQUEST EXPERT AUDIT of the proposed test design — not just the constraint text. The audit should specifically check:
+
+1. Was the test design generated by inspection of the data it will be run on? If yes → post-hoc fig leaf. Mitigation: held-out scope, OR honest demotion to descriptive Tier 3.
+2. What is the simplest null that the proposed test does NOT control for? Run that null FIRST. Frequency-matched is rarely enough — try terminal-atom-matched, HEAD-position-matched, section-matched.
+3. Where is the mirror test? If asymmetry is the claim, the SYMMETRY case must be tested. If A vs B, the B-internal control. If section A vs section B, the within-section confound check.
+4. Does the predicate match the framework? "Contains X anywhere" vs "X at HEAD" vs "X at TERM" — these are different claims and pick different mechanisms.
+5. Does the proposed Tier 2 claim text use existing operational vocabulary cleanly with no new mechanism? If yes → framework-echo flag.
+
+**Generalizable rule:** when the operational story (the words you'd use to explain it to a non-specialist) slots cleanly into existing framework vocabulary at this project stage (~2050 constraints), increase pre-registration discipline by one level. Expert audit on the design BEFORE running, not just on the registration text AFTER running.
+
+**Two distinct expert roles validated as complementary:**
+- Expert-advisor caught: post-hoc threshold-as-fig-leaf, frequency confound, predicate ambiguity, C1557 conflict, scoping
+- Crazy-expert caught: B-side mirror missing (load-bearing), terminal-atom confound (not frequency), kal-typo data integrity, the "30% A-corpus proportion vs passive-registry framing" puzzle
+
+Either alone would have missed something the other caught. Using both in parallel for design audit is the high-EV pattern.
+
+Related: [[feedback-framework-as-null]] (the underlying discipline), [[feedback-five-mechanism-traps-may-2026]] (cumulative trap pattern this is #5 of — see PHASE_730 INDEX for full list), [[feedback-expert-predictions-are-pre-registrations]] (when experts make directional predictions, they're pre-registrations not facts; this case extends that to "when experts audit a design, they're pre-screening for confound discovery, not validating").
 
 ---
 

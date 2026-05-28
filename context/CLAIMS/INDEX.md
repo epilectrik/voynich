@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2051 validated constraints | **Version:** 6.91 | **Date:** 2026-05-28 (PHASE_730 Currier A characterization — C2057 (linker structural-only), C2058 (o-HEAD ≠ plant-spatial-complexity falsification, partial ρ=-0.057), C2059 (Section P thermal-recovery inside A); state/action o-selectivity mechanism story killed by terminal-atom-matched permutation null + B-side mirror — 5th framework-as-null trap caught in 2026-05)
+**Total:** 2051 validated constraints (3 demoted Tier 2→3 in PHASE_731) | **Version:** 6.92 | **Date:** 2026-05-28 (PHASE_731 5-gram null audit batch 1 — 3 demotions: C557 daiin-trigger, C561 or→aiin, C816 CC positional ordering; 2 strong survivors: C549 qo→ch/sh interleaving, C562 ary 100% line-final; positive control C2056 passed after 2-cycle methodology calibration; 60% demotion rate in lexical/positional subset, below 67-83% expert prediction; new methodology refinement for categorical-exclusion vs frequency-claim expert prior)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -704,11 +704,11 @@ Every new constraint MUST specify system scope:
 | **554** | **Hazard Class Clustering** (dispersion index 1.29, p<0.001; 93% lines have hazard classes, mean 3.1/line; gateway-terminal 1.06x confirms C548; hazard management is zone-concentrated not point-distributed) | 2 | B | -> [C554_hazard_clustering.md](C554_hazard_clustering.md) |
 | **555** | **PHARMA Thermal Operator Substitution** (Class 33 0.20x depleted, Class 34 1.90x enriched in PHARMA; ~10x divergence; section-specific not REGIME-driven; ENERGY operators not interchangeable) | 2 | B | -> [C555_pharma_thermal_substitution.md](C555_pharma_thermal_substitution.md) |
 | **556** | **ENERGY Medial Concentration** (ENERGY 0.45x initial, 0.50x final - medial-concentrated; FLOW/FREQ 1.65x final; UNCLASS 1.55x initial; lines have positional template; p=3e-89) | 2 | B | -> [C556_energy_medial_concentration.md](C556_energy_medial_concentration.md) |
-| **557** | **daiin Line-Initial ENERGY Trigger** (27.7% line-initial rate, 2.2x CC average; 47.1% ENERGY followers; Class 10 singleton; RECIPE 36.3% initial; unique control signal) | 2 | B | -> [C557_daiin_line_opener.md](C557_daiin_line_opener.md) |
+| ~~557~~ | ~~daiin Line-Initial ENERGY Trigger~~ **DEMOTED Tier 2→3 (PHASE_731)** — measurement (27.7%) preserved; "unique control signal" mechanism Markov-trivial at p_emp=0.085 | ~~2~~ 3 | B | -> [C557_daiin_line_opener.md](C557_daiin_line_opener.md) |
 | **558** | **Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; daiin initial-biased 27.7%, ol final-biased 9.5%; complementary control primitives) | 2 | B | -> [C558_singleton_class_structure.md](C558_singleton_class_structure.md) |
 | ~~559~~ | ~~FREQUENT Role Structure~~ **SUPERSEDED by C583, C587** (used wrong FQ membership {9,20,21,23}; correct is {9,13,14,23} per ICC) | ~~2~~ | B | -> [C559_frequent_role_structure.md](C559_frequent_role_structure.md) |
 | **560** | **Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived) | 2 | B | -> [C560_class17_ol_derivation.md](C560_class17_ol_derivation.md) |
-| **561** | **Class 9 or->aiin Directional Bigram** (87.5% of chains are or->aiin; zero aiin->aiin; directional grammatical unit; HERBAL 21.7% chain rate; refines C559 "self-chaining") | 2 | B | -> [C561_class9_or_aiin_bigram.md](C561_class9_or_aiin_bigram.md) |
+| ~~561~~ | ~~Class 9 or->aiin Directional Bigram~~ **DEMOTED Tier 2→3 (PHASE_731)** — M1 or→aiin Markov-trivial at p_emp=0.064 (N=1000); M2 aiin→aiin prohibition reproducible by 5-gram synth (both ~0%); "directional grammatical unit" mechanism retracts; strengthens C627 token-specific-lookup framing | ~~2~~ 3 | B | -> [C561_class9_or_aiin_bigram.md](C561_class9_or_aiin_bigram.md) |
 | **562** | **FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern) | 2 | B | -> [C562_flow_role_structure.md](C562_flow_role_structure.md) |
 | **563** | **AX Internal Positional Stratification** (19 AX classes split into INIT/5, MED/8, FINAL/6; H=208.8 p=4.6e-46; 71.8% INIT-before-FINAL; Cohen's d=0.69; positional gradient not clusters) | 2 | B | -> [C563_ax_positional_stratification.md](C563_ax_positional_stratification.md) |
 | **564** | **AX Morphological-Positional Correspondence** (AX_INIT: 17.5% articulator; AX_MED: ok/ot 88.8%; AX_FINAL: prefix-light 60.9%, zero articulators; prefix family predicts position) | 2 | B | -> [C564_ax_morphological_positional_correspondence.md](C564_ax_morphological_positional_correspondence.md) |
@@ -1122,7 +1122,7 @@ Every new constraint MUST specify system scope:
 
 | # | Constraint | Tier | Scope | Link |
 |---|------------|------|-------|------|
-| **816** | **CC Positional Ordering** (daiin 0.413 -> LINK 0.476 -> KERNEL -> ol 0.511 -> FL 0.576; daiin initiates loop) | 2 | B | -> [C816_cc_positional_ordering.md](C816_cc_positional_ordering.md) |
+| ~~816~~ | ~~CC Positional Ordering~~ **DEMOTED Tier 2→3 (PHASE_731)** — all 3 sub-measurements Markov-trivial (M1 p=0.86, M2 p=0.88, M3 differential p=0.43); positional means preserved as descriptive corpus facts; "daiin initiates loop" mechanism retracts; cascade-flagged C817, C818, C874, C600, C558, C819 as PENDING_REAUDIT | ~~2~~ 3 | B | -> [C816_cc_positional_ordering.md](C816_cc_positional_ordering.md) |
 | **817** | **CC Lane Routing** (C600 confirmed: daiin->CHSH 90.8%, ol_derived->QO 57.4%; rapid decay by +2) | 2 | B | -> [C817_cc_lane_routing.md](C817_cc_lane_routing.md) |
 | **818** | **CC Kernel Bridge** (Class 17 = CC-KERNEL interface; 88% kernel chars; resolves C782 paradox) | 2 | B | -> [C818_cc_kernel_bridge.md](C818_cc_kernel_bridge.md) |
 | **819** | **CC Boundary Asymmetry** (daiin initial 27.1%; ol/ol_derived medial 85%; unlike LINK 1.23x) | 2 | B | -> [C819_cc_boundary_asymmetry.md](C819_cc_boundary_asymmetry.md) |
@@ -7986,6 +7986,55 @@ Session-day phase pivoting from Currier B (recipes/execution) to Currier A. Four
 - **Section P thermal-recovery inside Currier A** is the most architecturally interesting positive finding — A is not uniformly arrangement-dominant, it has a B-like thermal subsection. Whether this is "A's execution context" (operational) or "A entries that happen to use thermal vocabulary" (substrate) remains underdetermined.
 - **All four expert-audit-flagged failure modes** for the o-selectivity claim materialized in actual data: post-hoc fig leaf, terminal-atom confound (not just frequency), B-mirror missing, framework-echo. Audit value validated.
 - **3 registrations + 1 framework-as-null catch + 1 corrected execution error** (PPC vs PIAA system mismatch — caught and corrected before registration). Output rate consistent with `feedback_mechanism_cycle_procedural_ceiling.md` expected yield (2-3 Tier 2 measurements + 1-2 Tier 3 interpretations + framework-echo catches).
+
+## Phase 731 — 5-gram Null Audit Batch 1 (2026-05-28)
+
+First calibration probe of the ~120-constraint suspect zone flagged in PHASE_729. Audited 5 lexical/positional/bigram constraints with C2056 as positive control. Two methodology calibration cycles before producing usable verdicts (PHASE_729 enrichment-over-shuffle metric didn't translate to raw-rate scale; switched to p_emp-primary verdicts). See `phases/PHASE_731_5GRAM_AUDIT_BATCH_1/INDEX.md`.
+
+### Dispositions
+
+| Constraint | Verdict | Action |
+|---|---|---|
+| **C2056** (positive control) | SURVIVES Tier 2 (p=0.030) | Gate passed; no change |
+| **C549** (qo→ch/sh interleaving) | SURVIVES STRONG (p=0.000, z=5.79) | **STRENGTHENED.** Above-Markov bigram selection confirmed; reinforces C1313, C1314, C2056 correction-lane family |
+| **C557** (daiin line-initial 27.7%) | DEMOTE Tier 2→3 (p=0.085) | Measurement preserved (27.7% line-initial rate); "unique control signal" mechanism Markov-trivial |
+| **C561 M1+M2** (or→aiin 87.5%; aiin→aiin 0%) | DEMOTE Tier 2→3 (M1 p=0.064 N=1000; M2 both ~0%) | Measurements preserved; "directional grammatical unit" mechanism retracts; aiin→aiin prohibition is character-statistically reproducible, not above-Markov; strengthens C627 token-specific-lookup framing |
+| **C562** (ary 100% line-final) | SURVIVES STRONG (p=0.000, z=10.25, residual +88pp) | **STRENGTHENED.** Categorical positional grammar; real 16/16 ary line-final vs synth 11.86%; reinforces C485, C1486, C1487, C539 |
+| **C816** (CC positional ordering) | DEMOTE Tier 2→3 (M1 p=0.86, M2 p=0.88, M3 differential p=0.43) | Positional means preserved as descriptive; "daiin initiates loop" mechanism Markov-reproducible |
+
+### Cascade flags (PENDING_REAUDIT — not retracted)
+
+| Source disposition | Downstream PENDING_REAUDIT |
+|---|---|
+| C557 DEMOTE | C544 (ENERGY interleaving), C558 (CC singletons), C874 (CC token functions, Tier 3 inheritor) |
+| C561 DEMOTE | C544 (references or→aiin); C627 strengthened (correct framing) |
+| C816 DEMOTE | C817, C818, C874, C600, C558, C819 (CC family) |
+| Section 0.F INTERPRETATION_SUMMARY.md | "Setup phase" positional anchor weakens; mechanism reframe needed |
+| Section 0.J INTERPRETATION_SUMMARY.md | FQ-CC interaction story references C816; revise |
+| Tier 0 | **UNCHANGED** (closed-loop control programs grounded in C074, C079, C084, C109, C627, C121, C124, C976-C978, C1025, C1394; none directly load-bear on C816 mechanism) |
+
+### Methodology calibration
+
+Two-cycle calibration documented in phase INDEX:
+1. **First run (held-out + residual-threshold):** positive control DEMOTED at residual 3.13pp / fractional ratio 0.04. Aborted.
+2. **Second run (same-corpus + residual-threshold):** control DEMOTED at residual 1.23pp. Diagnosed metric mismatch — PHASE_729 used `(real − shuffle) / shuffle × 100` (enrichment over shuffle null); our framework used `(real_rate − synth_rate)` (raw rate diff). Effect-magnitude thresholds copied from PHASE_729 documented values were on the wrong scale.
+3. **Third run (same-corpus + p_emp-primary):** positive control SURVIVED at p=0.030. Batch produced clean dispositions.
+
+**Methodology refinement for future batches:** use the SAME measurement metric as the original constraint's source phase (for direct magnitude comparability), OR use p_emp as metric-agnostic verdict criterion. PHASE_731 used the latter; both are defensible.
+
+### Highlights
+
+- **C562 expert prediction miss**: both experts (especially crazy-expert) predicted DEMOTE on "100% won't reproduce on re-measurement." It DID reproduce (16/16 ary tokens line-final), and synth produced only 12% — clean SURVIVES STRONG at z=10.25. **Refinement to expert prior:** distinguish *frequency claims* (>95% but <100%, often Markov-reproducible) from *categorical exclusions* (exactly 100% or 0% with structural backing — often robust under 5-gram null). The C562 pattern (LATE-class membership predicting categorical terminal lock) is parallel to C539, C1486, C1487 — likely-survivor family.
+- **C549 and C562 survival types differ.** C549 = probabilistic above-Markov bigram selection (+4pp residual, modest but real); C562 = categorical above-Markov positional lock (+88pp residual, extreme). Two distinct survival signatures.
+- **Cascade direction is structural-grammar-up, not framework-down.** Positional and lexical claims demote; categorical exclusions, prefix selection rules, and correction lanes survive or strengthen. Project's *architectural* claims (HEAD+MOD*+TERM, terminal classes, correction lanes) are robust to audit; *descriptive positional* claims are not.
+- **60% demotion rate is below 67-83% expert prediction band.** Likely because batch included two categorical-exclusion-type claims (C549, C562) that turned out to be genuine above-Markov structure. Crazy-expert revised composite estimate: ~50-55% across full suspect zone (not extrapolated yet).
+- **New methodology memory entry:** bimodal expert prior refinement appended to `feedback_5gram_markov_null_for_surface_patterns.md` (categorical exclusions vs frequency claims).
+
+### Outstanding
+
+- Batch 2: forbidden-pair audit (C109/C627 individually) — highest-stakes outstanding test
+- Batch 3: C816 cascade family (C819, C874, C600, C558, C817, C818)
+- Section 0.F + Section 0.J of INTERPRETATION_SUMMARY.md need mechanism reframe (deferred to a synthesis update phase)
 
 ---
 

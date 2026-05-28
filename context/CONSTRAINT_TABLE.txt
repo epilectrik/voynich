@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1864 constraints | 2026-05-28
+CONSTRAINT_REFERENCE v2.6 | 1861 constraints | 2026-05-28
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -436,10 +436,8 @@ C553	**BIO-REGIME Energy Independence** (BIO 70% REGIME_1; effects additive: bas
 C554	**Hazard Class Clustering** (dispersion index 1.29, p<0.001; 93% lines have hazard classes, mean 3.1/line; gateway-terminal 1.06x confirms C548; hazard management is zone-concentrated not point-distributed)	2	B	-> C554_hazard_clustering.md
 C555	**PHARMA Thermal Operator Substitution** (Class 33 0.20x depleted, Class 34 1.90x enriched in PHARMA; ~10x divergence; section-specific not REGIME-driven; ENERGY operators not interchangeable)	2	B	-> C555_pharma_thermal_substitution.md
 C556	**ENERGY Medial Concentration** (ENERGY 0.45x initial, 0.50x final - medial-concentrated; FLOW/FREQ 1.65x final; UNCLASS 1.55x initial; lines have positional template; p=3e-89)	2	B	-> C556_energy_medial_concentration.md
-C557	**daiin Line-Initial ENERGY Trigger** (27.7% line-initial rate, 2.2x CC average; 47.1% ENERGY followers; Class 10 singleton; RECIPE 36.3% initial; unique control signal)	2	B	-> C557_daiin_line_opener.md
 C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; daiin initial-biased 27.7%, ol final-biased 9.5%; complementary control primitives)	2	B	-> C558_singleton_class_structure.md
 C560	**Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived)	2	B	-> C560_class17_ol_derivation.md
-C561	**Class 9 or->aiin Directional Bigram** (87.5% of chains are or->aiin; zero aiin->aiin; directional grammatical unit; HERBAL 21.7% chain rate; refines C559 "self-chaining")	2	B	-> C561_class9_or_aiin_bigram.md
 C562	**FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern)	2	B	-> C562_flow_role_structure.md
 C563	**AX Internal Positional Stratification** (19 AX classes split into INIT/5, MED/8, FINAL/6; H=208.8 p=4.6e-46; 71.8% INIT-before-FINAL; Cohen's d=0.69; positional gradient not clusters)	2	B	-> C563_ax_positional_stratification.md
 C564	**AX Morphological-Positional Correspondence** (AX_INIT: 17.5% articulator; AX_MED: ok/ot 88.8%; AX_FINAL: prefix-light 60.9%, zero articulators; prefix family predicts position)	2	B	-> C564_ax_morphological_positional_correspondence.md
@@ -682,7 +680,6 @@ C812	**HT Novel MIDDLE Combinations** (11.19% novel pairs; NOT C475 violation; H
 C813	**Canonical Phase Ordering** (LINK 0.476 -> KERNEL 0.482 -> FL 0.576; monitoring early, escape late)	2	B	-> C813_canonical_phase_ordering.md
 C814	**Kernel-Escape Inverse** (KERNEL vs FL rho=-0.528; high kernel = low escape; strongest predictor)	2	B	-> C814_kernel_escape_inverse.md
 C815	**Phase Position Significance** (F=70.28, p<10^-73 but eta^2=0.015; phases flexible, not rigid)	2	B	-> C815_phase_position_significance.md
-C816	**CC Positional Ordering** (daiin 0.413 -> LINK 0.476 -> KERNEL -> ol 0.511 -> FL 0.576; daiin initiates loop)	2	B	-> C816_cc_positional_ordering.md
 C817	**CC Lane Routing** (C600 confirmed: daiin->CHSH 90.8%, ol_derived->QO 57.4%; rapid decay by +2)	2	B	-> C817_cc_lane_routing.md
 C818	**CC Kernel Bridge** (Class 17 = CC-KERNEL interface; 88% kernel chars; resolves C782 paradox)	2	B	-> C818_cc_kernel_bridge.md
 C819	**CC Boundary Asymmetry** (daiin initial 27.1%; ol/ol_derived medial 85%; unlike LINK 1.23x)	2	B	-> C819_cc_boundary_asymmetry.md

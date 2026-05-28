@@ -4,6 +4,62 @@
 
 ---
 
+## Version 6.92 (2026-05-28) — PHASE_731 5-gram null audit batch 1: 3 demotions, 2 strong survivors, positive control passed
+
+### Summary
+
+First calibration probe of the ~120-constraint suspect zone flagged in PHASE_729. Audited 5 lexical/positional/bigram constraints from C500-C800 range with C2056 as positive control. Three methodology calibration cycles produced clean dispositions.
+
+### Dispositions
+
+| C# | Verdict | Mechanism status |
+|----|---------|-----------------|
+| C549 (qo→ch/sh interleaving) | SURVIVES STRONG (p=0.000) | Above-Markov bigram selection confirmed; strengthens C1313, C1314, C2056 |
+| C557 (daiin line-initial 27.7%) | DEMOTE Tier 2→3 | Measurement preserved; "unique control signal" retracts |
+| C561 M1+M2 (or→aiin; aiin→aiin=0%) | DEMOTE Tier 2→3 | Measurements preserved; "directional grammatical unit" retracts; strengthens C627 token-specific-lookup framing |
+| C562 (ary 100% line-final) | SURVIVES STRONG (z=+10.25, residual +88pp) | Categorical positional grammar; reinforces C485, C1486, C1487, C539 |
+| C816 (CC positional ordering) | DEMOTE Tier 2→3 (all 3 sub-measurements) | Positional means preserved as descriptive; "daiin initiates loop" mechanism retracts |
+| C2056 (positive control) | SURVIVES Tier 2 (p=0.030) | Gate passed; methodology calibrated |
+
+Net: 3/5 demoted (60%), 2/5 survived (excluding control). Below 67-83% expert prediction band.
+
+### Methodology calibration cycles
+
+1. **First run (held-out + residual-threshold):** positive control DEMOTED at residual 3.13pp. Aborted.
+2. **Second run (same-corpus + residual-threshold):** control DEMOTED at residual 1.23pp. Diagnosed metric mismatch — PHASE_729 used enrichment-over-shuffle-null `(real - shuffle) / shuffle × 100`; our framework used raw rate `(real_rate - synth_rate)`. Effect-magnitude thresholds copied from PHASE_729 documented values were on the wrong scale.
+3. **Third run (same-corpus + p_emp-primary):** control SURVIVED at p=0.030. Batch produced clean dispositions.
+
+### Cascade flags (PENDING_REAUDIT — flagged, not retracted)
+
+- From C557 demote: C544, C558, C874
+- From C561 demote: C544; C627 strengthened
+- From C816 demote: C817, C818, C874, C600, C558, C819 (CC family); Section 0.F + 0.J of INTERPRETATION_SUMMARY.md need mechanism reframe
+- **Tier 0 UNCHANGED.** Frozen "closed-loop control programs" conclusion grounded in C074, C079, C084, C109, C627, C121, C124, C976-C978, C1025, C1394 — independent of C816 mechanism.
+
+### Expert prediction performance
+
+- C549, C557, C561 M1, C816 — predictions matched outcomes
+- C561 M2 — near-zero rail predicted SURVIVES STRONG; actual DEMOTE (synth also produced ~0%)
+- C562 — predicted DEMOTE on "100% won't reproduce"; actual SURVIVES STRONG (16/16 ary line-final reproduced; synth only 12%)
+
+### Methodology refinement registered
+
+New paragraph appended to `feedback_5gram_markov_null_for_surface_patterns.md`:
+
+> **Refinement (PHASE_731 batch 1, 2026-05-28):** Distinguish two sub-types of high-percentage claims. **Frequency claims** (>95% but <100%) typically drift and are Markov-reproducible — high audit suspicion. **Categorical exclusions** (exactly 100% or 0% with structural backing, e.g., LATE-class membership) often reflect hard grammatical structure and survive 5-gram null at large residuals — LOWER audit suspicion. Expert prior should be bimodal, not uniformly suspicious of high percentages. C562 missed prediction documents the failure mode.
+
+### Composite estimate (revised)
+
+Crazy-expert revised estimate: ~50-55% demotion across full suspect zone (not extrapolated from batch 1 alone). Need batches 2-N covering role-class, section-conditioned, and forbidden-pair constraints.
+
+### Outstanding
+
+- Batch 2: C109/C627 forbidden pairs individually (highest-stakes outstanding test per crazy-expert)
+- Batch 3: C816 cascade family (C817, C818, C874, C600, C558, C819)
+- Synthesis: INTERPRETATION_SUMMARY.md Section 0.F + 0.J reframes after C816 demote
+
+---
+
 ## Version 6.91 (2026-05-28) — PHASE_730 Currier A characterization: C2057-C2059 registered; major framework-as-null catch on state/action o-selectivity
 
 ### Summary
