@@ -4,6 +4,44 @@
 
 ---
 
+## Version 6.91 (2026-05-28) — PHASE_730 Currier A characterization: C2057-C2059 registered; major framework-as-null catch on state/action o-selectivity
+
+### Summary
+
+Session-day phase pivoting from Currier B (recipes/execution) to Currier A. Four discriminating tests run on linker topology, plant-morphology correlation, section HEAD-domain profiles, and within-A action-form (state/action) split. Three findings registered; one major framework-as-null trap caught before registration after expert audit flagged six design flaws on a proposed post-hoc test.
+
+### Registered constraints
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2057 | 2 | A RI linker topology is structural-only (0/5 atom-specificity tests pass; refines C835) |
+| C2058 | 2 | Falsification: A o-HEAD rate does NOT track plant-spatial-complexity (partial ρ=-0.057 controlling for tokens) |
+| C2059 | 3 | Section P recovers thermal e-HEAD profile (28%) inside Currier A — sections diverge at HEAD level (refines C1266) |
+
+### Framework-as-null catch (NOT registered)
+
+Original within-A "Finding 1" (95% A state-form vs 21% B action-form, p=0.000 against within-folio shuffle null) plus per-MIDDLE example (`ke` 0% dy in A, 67% dy in B) generated a clean operational story: "A=setup, B=execute via arrangement-selective dy-completion on o-containing MIDDLEs."
+
+Crazy-expert flagged framework-echo. Within-A action-form test (pre-registered): **H1 PASS at 38.9%** (A IS grammatically capable of dy — falsifies architectural-tautology) + **H2 FAIL at p=0.51** = AMBIGUOUS.
+
+Post-hoc inspection revealed o-content split. Expert audit flagged six design flaws on the proposed confirmation test. **B-side mirror + terminal-atom-matched permutation null:**
+
+- B symmetric across o vs non-o MIDDLEs (Mann-Whitney p=0.62) — confirms asymmetry IS A-specific
+- A o vs non-o raw: p=0.013 looks significant
+- **Terminal-atom-matched permutation null: stratified diff -0.016, p=0.71 — effect collapses**
+- o-HEAD MIDDLEs ALSO dy-suppressed in A (mean 0.026)
+- Real driver: terminal-atom phonotactics — `o`/`l`-ending MIDDLEs dy-permitted (mean 0.39-0.56); `e`/`h`-ending suppressed (0-0.09)
+
+**5th framework-as-null trap caught in 2026-05** (after k-e-depth thermal regimes, triple-i iteration, hh intense-monitoring, f66r-glossary). Residual observation ("A gates dy by terminal-atom; B does not") is real but post-hoc; tabled for fresh pre-registration on held-out scope.
+
+### Other notes
+
+- All four expert-audit-flagged failure modes for the o-selectivity claim materialized in actual data — audit value validated
+- PPC plant-morphology classification originally consulted for F4 was Currier B not A; error caught and corrected via PIAA (29 actual Currier A herbal folios) before locking
+- Output rate consistent with `feedback_mechanism_cycle_procedural_ceiling.md` expected yield (3 measurements + 1 framework-echo catch + 1 corrected execution error)
+
+---
+
 ## Version 6.90 (2026-05-26) — PHASE_729 5-gram Markov null battery: C2055 + C2056 registered; C1727 demoted, C645+C2045 mechanism retracted, C1314 superseded
 
 ### Summary
