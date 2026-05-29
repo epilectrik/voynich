@@ -4,6 +4,32 @@
 
 ---
 
+## Version 6.95 (2026-05-28) — PHASE_734 M2-vs-5-gram decomposition: C1025 rescoped, M1 is the fidelity frontier
+
+### Summary
+
+Resolved the C1025 scope-flag opened in PHASE_733. Added a character-5-gram as a 6th model to the validated C1025 generative-sufficiency battery (M0-M4 reproduced published numbers — faithful reuse). The 5-gram passes 9.3/15. Decomposition shows C1025's "M2 80% sufficiency" is mostly marginal-floor + one genuine structural component + an idealization test.
+
+### New constraint
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2063 | 2 | The C1025 battery's B3 forbidden-suppression test (`violations == 0`) is an idealization-conformance test, not a fidelity test. Real corpus has 13 violations; M2 produces 0 (over-suppresses → passes); 5-gram produces 12.8 ≈ real (fails). M2 passes B3 by being LESS faithful than the 5-gram. 4th C1025-battery test-spec correction (cf. C1030/C1033/C1034), inverse polarity. M1 (pure class-Markov) is the corpus-fidelity frontier; forbidden suppression is a thin idealizing overlay, not load-bearing for the macro-automaton topology. |
+
+### Dispositions
+
+- **C1025** — RESCOPE (Tier 2 stays). "M2 80% sufficiency" = 10/15 marginal-floor (M0 i.i.d. passes too) + B1 macro-eigenstructure (single clean above-char-Markov earn = C2061) + B3 idealization-credit (C2063, not earned) + B4/C2/B5 (documented test-spec/asymmetry issues C1030/C1033/C1034). M1 is the corpus-fidelity frontier.
+- **C978** — ANNOTATE: 6-state spectral gap (0.894) robust to 5-gram null (5-gram fails at gap 0.947-0.956; hallucination only 1.6%, survives drop-unmapped/vocab-constrained but borderline at 45% pass). Lead with C2061 (raw-49 λ2, merge-free, p=0.000); 6-state B1 corroborates but is borderline + projection-dependent. Cross-ref C2061.
+- **C121/C124, Tier 0** — UNTOUCHED.
+
+### Key findings
+
+- M2's advertised edge over M1 was concentrated in B3 (idealization) — and B5, which M2 actually fails. M1 (pure 49-class Markov) is the real corpus-fidelity frontier; the macro-automaton topology lives in the class-Markov matrix itself and doesn't need forbidden suppression. This STRENGTHENS the macro-automaton story (hazard avoidance is a thin overlay, consistent with C622/C997/C1023).
+- A character-5-gram is NOT strictly stronger than M0 (i.i.d. tokens): it fails A2/A4 (hapax, type count) via novel-token hallucination. "5-gram floor" ≠ "i.i.d.-token floor."
+- Blocking control: the 5-gram's B1 failure is not a hallucination artifact (only 1.6% novel tokens; survives drop-unmapped/vocab-constrained) but is borderline — consistent with PHASE_733's ~60% λ2 reproduction.
+
+---
+
 ## Version 6.94 (2026-05-28) — PHASE_733 class-layer 5-gram null: C2023 demoted, macro-automaton (C976-C978) vindicated
 
 ### Summary

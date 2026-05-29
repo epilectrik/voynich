@@ -1,0 +1,8 @@
+{
+  "real_gap": 0.8938110932033912,
+  "hallucination_rate": 0.015958639591379088,
+  "asis_gap": 0.9556008346107701,
+  "drop_unmapped_gap": 0.9539454433635035,
+  "vocab_constrained_gap": 0.947414723024188,
+  "verdict": "B1_GENUINE_FAILURE"
+}

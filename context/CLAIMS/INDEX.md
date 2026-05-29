@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2054 validated constraints (5 demoted Tier 2→3) | **Version:** 6.94 | **Date:** 2026-05-28 (PHASE_733 class-layer 5-gram null — C2023 scalar-class-MI half DEMOTED Tier 2→3 (5-gram-reproducible, p=0.21), but macro-state eigenstructure SURVIVES → C2061 vindicates C976-C978 (λ2 above-Markov, p=0.000); C2062 three-axis decomposition; cascade STOPS at C2023, Tier 0 + 49-class partition untouched. PRIOR: PHASE_732 hazard-class provenance correction — C2060 registers the C109 5-class hazard taxonomy was IMPOSED by keyword-matching not discovered by clustering; C109 revised to existence-only; C216 demoted; 5-class distillation labels → Tier 3-4, ENERGY_OVERSHOOT gloss-contradicted; PHASE_ORDERING survives as only real cluster; Tier 0 untouched; new failure pattern #9 phantom-clustering; public docs cleaned. Prior: PHASE_731 batch 1 — C557/C561/C816 demoted, C549/C562 survived)
+**Total:** 2055 validated constraints (5 demoted Tier 2→3) | **Version:** 6.95 | **Date:** 2026-05-28 (PHASE_734 M2-vs-5-gram decomposition — C2063 registers that the C1025 battery's B3 forbidden-suppression test is an idealization-conformance test not a fidelity test (M2 over-suppresses to 0 vs real's 13; 5-gram more faithful at 12.8); C1025 rescoped (M1 is the corpus-fidelity frontier; M2's edge is forbidden-idealization); C978 annotated (6-state gap robust to 5-gram null, lead with C2061). PRIOR: PHASE_733 class-layer 5-gram null — C2023 scalar-MI half DEMOTED Tier 2→3, macro-eigenstructure SURVIVES → C2061; C2062 three-axis decomposition. PHASE_732 hazard-class provenance correction — C2060 registers the C109 5-class hazard taxonomy was IMPOSED by keyword-matching not discovered by clustering; C109 revised to existence-only; C216 demoted; 5-class distillation labels → Tier 3-4, ENERGY_OVERSHOOT gloss-contradicted; PHASE_ORDERING survives as only real cluster; Tier 0 untouched; new failure pattern #9 phantom-clustering; public docs cleaned. Prior: PHASE_731 batch 1 — C557/C561/C816 demoted, C549/C562 survived)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -8098,6 +8098,30 @@ First 5-gram-null test of the class-layer sequential structure (C2023, which gro
 - **Metrics computed through a constraint-laden algorithm are confounded** (partition-ARI through run_merge: hardcoded role/depletion constraints make even random nulls score 0.67). Floor-control with shuffle+random through the same pipeline; prefer a metric that bypasses the algorithm (raw-matrix λ2).
 - **Scalar aggregate ≠ eigenstructure**: a 5-gram can reproduce scalar one-step MI while failing macro-state eigenstructure. Test λ2 directly for macro-organization claims.
 - Chained controls converged: naive FP → C2023 fails → ARI confound → λ2 survival → symmetry confirm. Memory: `feedback_chained_controls_scalar_vs_eigenstructure.md`.
+
+## Phase 734 — M2-vs-5-gram Decomposition: C1025 rescoped, M1 is the fidelity frontier (2026-05-28)
+
+Resolves the C1025 scope-flag from PHASE_733. Added a character-5-gram as a 6th model to the validated C1025 generative-sufficiency battery (M0-M4 reproduced published numbers; faithful reuse). 5-gram passes 9.3/15. See `phases/PHASE_734_M2_VS_5GRAM/INDEX.md`.
+
+### New constraint
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2063 | **C1025 battery's B3 forbidden-suppression test is an idealization-conformance test, not a fidelity test.** B3 scores `forbidden violations == 0`. The REAL Currier B corpus has 13 forbidden violations (the ~0.7% leakage; C1360 ~0.05% realized rate, C789 permeability). M2 produces 0 by hard bidirectional suppression → passes B3. A character-5-gram produces 12.8 ≈ real's 13 → fails B3. **So M2 passes B3 by being LESS faithful to the real corpus than the 5-gram is** — B3 rewards over-idealization. This is the 4th C1025-battery test-spec correction (cf. C1030/C1033/C1034), of INVERSE polarity: those were too strict on the model, B3 is too lenient on the over-idealized model. Consequence for C1025: M2's advertised +0.1-test edge over M1 was concentrated in B3 (idealization) and B5 (which M2 actually fails); **M1 (pure 49-class Markov, no forbidden suppression) is the corpus-fidelity frontier**, and the macro-automaton topology lives in the class-Markov matrix itself — forbidden suppression is a thin idealizing overlay (consistent with C622 0.12% buffer rate, C997 sparse-critical-buffer, C1023 PREFIX-routing sole load-bearing macro component), not load-bearing for the topology. Consistent with C2060 (forbidden pairs real-but-Markov-reproducible-as-rare-events). **References:** C1025, C1030, C1033, C1034, C1360, C789, C2060, C622, C997, C1023. | 2 | B3_idealization_not_fidelity, M2_over_suppresses, 5gram_more_faithful_than_M2, M1_is_corpus_fidelity_frontier, forbidden_thin_overlay, fourth_C1025_battery_test_spec_correction_inverse_polarity, B | b3_test=violations_eq_0. real_violations=13. m2_violations=0. fivegram_violations=12.8. m1_is_fidelity_frontier=yes. |
+
+### Dispositions
+
+| Constraint | Action |
+|---|---|
+| C1025 | RESCOPE (Tier 2 stays). "M2 80% sufficiency" = 10/15 marginal-floor (M0 i.i.d. passes too) + B1 macro-eigenstructure (single clean above-char-Markov earn = C2061) + B3 idealization-credit (C2063, not earned) + B4/C2/B5 (documented test-spec/asymmetry issues C1030/C1033/C1034). M1 is the corpus-fidelity frontier; M2's edge is forbidden-idealization. |
+| C2063 | NEW Tier 2 (above) |
+| C978 | ANNOTATE: 6-state spectral gap (0.894) robust to 5-gram null — 5-gram fails it (gap 0.947-0.956 vs 0.894; hallucination only 1.6%, survives drop-unmapped/vocab-constrained but borderline at 45% pass). **Lead with C2061 (raw-49 λ2, merge-free, per-synth p=0.000); 6-state B1 corroborates but is borderline + projection-dependent (runs through C976 merge), NOT elevated above C2061.** Cross-ref C2061. |
+| C121/C124, Tier 0 | UNTOUCHED |
+
+### Methodology
+
+- A character-5-gram is NOT strictly stronger than M0 (i.i.d. token sampling): it fails A2/A4 (hapax, type count) via novel-token hallucination where M0 passes by construction. "5-gram floor" ≠ "i.i.d.-token floor." For class-layer tests a character generator leaks token-hallucination into the class projection; class-layer or vocabulary-constrained generation is cleaner (PHASE_733 worked at the class layer for this reason).
+- Metrics through the C976 6-state merge are projection-dependent; the merge-free raw-49 λ2 (C2061) is the load-bearing macro-structure metric.
 
 ---
 

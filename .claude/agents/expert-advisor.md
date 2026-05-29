@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2054 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2055 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2062.
+the highest ID present is C2063.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2054 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2055 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2054 validated constraints are present as canonical one-line claims with tier
+2055 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-28 21:58
-**Version:** FROZEN STATE (2054 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-28 23:05
+**Version:** FROZEN STATE (2055 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2298,6 +2298,7 @@ C2059	**Currier A Section P recovers a thermal HEAD-domain profile (B-like) insi
 C2060	**The C109 5-class hazard taxonomy was imposed by keyword-matching, not discovered by clustering.** Source `phase18_failure_typology.py` hardcodes 5 distillation-failure-mode classes + keyword lists (lines 61-87); the 17 forbidden transitions are sorted by substring keyword match (lines 392-411). No clustering produced 5 — the only clustering in the phase 15-20 chain produced 1 cluster (phase15a internal_clusters=1); phase 16 had a different 12-mode scheme. C109's stated evidence "Cluster analysis reveals 5 natural groupings" is FALSE about its method. Empirical clustering of the 17 transitions by atom territory (src/tgt HEAD+TERM): silhouette-optimal k=8 (0.479); k=3 (0.400) ≥ k=5 (0.372) — **5 is not data-preferred**; natural-vs-imposed ARI=0.42 (weak match). Only **PHASE_ORDERING is a tight gloss-coherent cluster** (=C1529 sealed/y-terminal → iteration/a-HEAD); CONTAINMENT_TIMING barely cohesive (0.218 vs random 0.224); RATE_MISMATCH + ENERGY_OVERSHOOT are singletons. **Gloss-coherence check:** ENERGY_OVERSHOOT ("scorching/heat") is CONTRADICTED — its sole member `he→t` contains no k-HEAD heat atom (`he`=watch.cool per C1394; consistent with C1448 k-HEAD hazard immunity); RATE_MISMATCH ("flow") and COMPOSITION_JUMP ("purification") have no supporting atoms; PHASE_ORDERING supports only a generic sequencing reading, not "vapor lock." The real atom-territory structure is independently and more rigorously held by C1528-C1533. **Caveat:** imposed-partition cohesion z=−4.10 vs 2000 random partitions is near-circular (keyword lists encode atom-family intuitions) and is NOT evidence for the 5-class count. **Disposition:** C109 revised to existence-only; 5-class taxonomy → Tier 3-4 interpretive labeling; ENERGY_OVERSHOOT/RATE_MISMATCH labels not gloss-supported; C216 demoted (71/29 split over imposed partition). Tier 0 untouched (frozen conclusion never depended on the taxonomy).	2	imposed_taxonomy, false_method_claim, hazard_classes, k5_not_data_preferred, PHASE_ORDERING_only_real_cluster, ENERGY_OVERSHOOT_gloss_contradicted, atom_structure_held_by_C1528, provenance_audit, PHASE_732
 C2061	**Macro-state eigenstructure of the Currier B class-transition operator survives the 5-gram null (vindicates C976-C978).** The second eigenvalue λ2 of the raw 49×49 class transition matrix (the clean measure of macro-state slow-mixing structure; bypasses the C976 merge's hardcoded role/depletion constraints) is genuinely above-Markov: real λ2=0.2063, 5-gram-synth λ2=0.1194±0.017 sitting at the within-line-shuffle floor 0.1176±0.009 (5-gram only 2% of the way from floor to real). Per-synth-own-shuffle symmetry control: real λ2 excess +0.0873 vs 5-gram synth excess +0.0517±0.014, **z=+2.51, p=0.000** — real significantly exceeds synth under the SAME metric where scalar-MI was reproduced. The 5-gram reproduces ~60% of the λ2 excess (partly morphology-derivable) but the remaining ~40% is above-Markov. The macro-automaton (C976-C978/C1010) faced the sharpest null it has ever been tested against and passed at the eigenstructure level. **SCOPE: validates above-Markov macro-structure in the raw 49-class transition operator — NOT a re-derivation of C978's 6-state 0.894 spectral gap (a different operator on the merged 6×6 matrix, not re-measured here).** Partition-ARI through the C976 merge was confounded (role/depletion constraints force ARI 0.67-0.80 even for structureless nulls: random 0.669, shuffle 0.804, real 0.937, 5-gram 0.762) and is uninformative; λ2 of the raw matrix is the uncontaminated metric. **References:** C976, C977, C978, C1010, C2023, C2055, C2056, C549, C562.	2	macro_eigenstructure_survives_5gram, lambda2_above_markov, vindicates_C976_C978, scoped_to_raw49_operator_not_C978_gap, partition_ARI_confounded_by_merge_constraints, per_synth_own_shuffle_symmetry, B
 C2062	**Three-axis decomposition of Currier B class-sequential structure.** The class-layer sequential signal splits into three components with distinct 5-gram-null verdicts: (a) **local control bigrams** (specific token transitions, e.g. qo→ch/sh) — REAL above-Markov; (b) **macro-state eigenstructure** (λ2 of the 49-class operator) — REAL above-Markov; (c) **aggregate scalar first-order class-MI** (C2023) — the floor-dominated MIDDLE layer, morphology-reproducible. The genuine above-Markov grammar lives in the local bigrams and the macro-eigenstructure; the aggregate scalar one-step MI is reproducible from local character statistics because it is dominated by the high-mass local bigrams and conflates them with the morphology-derivable bulk. This explains why a character 5-gram (which reproduces all surface statistics, C2055) reproduces the scalar class-MI but not the macro-eigenstructure: scalar MI is a high-mass-dominated lumped functional, λ2 is a global community-structure functional. **References:** C2023 (demoted middle layer), C2061 (eigenstructure), C549/C562 (local bigrams), C2055 (5-gram surface reproduction), C2056.	2	three_axis_decomposition, local_bigrams_real, macro_eigenstructure_real, scalar_MI_morphology_shadow, scalar_vs_eigenstructure_distinction, B
+C2063	**C1025 battery's B3 forbidden-suppression test is an idealization-conformance test, not a fidelity test.** B3 scores `forbidden violations == 0`. The REAL Currier B corpus has 13 forbidden violations (the ~0.7% leakage; C1360 ~0.05% realized rate, C789 permeability). M2 produces 0 by hard bidirectional suppression → passes B3. A character-5-gram produces 12.8 ≈ real's 13 → fails B3. **So M2 passes B3 by being LESS faithful to the real corpus than the 5-gram is** — B3 rewards over-idealization. This is the 4th C1025-battery test-spec correction (cf. C1030/C1033/C1034), of INVERSE polarity: those were too strict on the model, B3 is too lenient on the over-idealized model. Consequence for C1025: M2's advertised +0.1-test edge over M1 was concentrated in B3 (idealization) and B5 (which M2 actually fails); **M1 (pure 49-class Markov, no forbidden suppression) is the corpus-fidelity frontier**, and the macro-automaton topology lives in the class-Markov matrix itself — forbidden suppression is a thin idealizing overlay (consistent with C622 0.12% buffer rate, C997 sparse-critical-buffer, C1023 PREFIX-routing sole load-bearing macro component), not load-bearing for the topology. Consistent with C2060 (forbidden pairs real-but-Markov-reproducible-as-rare-events). **References:** C1025, C1030, C1033, C1034, C1360, C789, C2060, C622, C997, C1023.	2	B3_idealization_not_fidelity, M2_over_suppresses, 5gram_more_faithful_than_M2, M1_is_corpus_fidelity_frontier, forbidden_thin_overlay, fourth_C1025_battery_test_spec_correction_inverse_polarity, B
 
 ---
 
