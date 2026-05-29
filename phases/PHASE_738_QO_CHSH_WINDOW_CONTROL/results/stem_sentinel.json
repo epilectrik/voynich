@@ -1,0 +1,11 @@
+{
+  "real_excess": 0.03788111857871021,
+  "real_val": 0.280944156591825,
+  "synth_mean": 0.02117558334016634,
+  "synth_sd": 0.006581445150105324,
+  "z": 2.5382776666119486,
+  "p": 0.0,
+  "verdict": "SURVIVE (supra-token)",
+  "n_distinct_qo_tokens": 522,
+  "n_synth": 200
+}

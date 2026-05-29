@@ -1,0 +1,116 @@
+{
+  "base_rate": 0.2535306635712904,
+  "high_threshold": 0.3802959953569356,
+  "min_n": 30,
+  "short_maxlen": 3,
+  "witnesses": [
+    "sol",
+    "qol",
+    "sor",
+    "dol",
+    "y",
+    "ol"
+  ],
+  "references": [
+    "daiin"
+  ],
+  "alpha_bonferroni": 0.008333333333333333,
+  "metrics": {
+    "sol": {
+      "len": 3,
+      "N": 47,
+      "role": "WITNESS",
+      "real_rate": 0.5531914893617021,
+      "real_excess": 0.2879091363937324,
+      "synth_excess_mean": 0.25594172977704965,
+      "synth_excess_sd": 0.05803410619149306,
+      "z": 0.5508382693308144,
+      "p_emp": 0.295,
+      "survives_uncorrected": false,
+      "survives_bonferroni": false
+    },
+    "qol": {
+      "len": 3,
+      "N": 136,
+      "role": "WITNESS",
+      "real_rate": 0.5073529411764706,
+      "real_excess": 0.22669395426810085,
+      "synth_excess_mean": 0.22110512126187593,
+      "synth_excess_sd": 0.04178757384367946,
+      "z": 0.13374389781832854,
+      "p_emp": 0.445,
+      "survives_uncorrected": false,
+      "survives_bonferroni": false
+    },
+    "sor": {
+      "len": 3,
+      "N": 32,
+      "role": "WITNESS",
+      "real_rate": 0.46875,
+      "real_excess": 0.18799522813904535,
+      "synth_excess_mean": 0.18583889946650806,
+      "synth_excess_sd": 0.06733077580454545,
+      "z": 0.03202589969848107,
+      "p_emp": 0.53,
+      "survives_uncorrected": false,
+      "survives_bonferroni": false
+    },
+    "dol": {
+      "len": 3,
+      "N": 50,
+      "role": "WITNESS",
+      "real_rate": 0.4,
+      "real_excess": 0.19665758079388876,
+      "synth_excess_mean": 0.12599664958771342,
+      "synth_excess_sd": 0.06872959856730235,
+      "z": 1.028100449866323,
+      "p_emp": 0.16,
+      "survives_uncorrected": false,
+      "survives_bonferroni": false
+    },
+    "y": {
+      "len": 1,
+      "N": 56,
+      "role": "WITNESS",
+      "real_rate": 0.39285714285714285,
+      "real_excess": 0.14994039226019268,
+      "synth_excess_mean": 0.1790720110883,
+      "synth_excess_sd": 0.05662079821891966,
+      "z": -0.5145038527269136,
+      "p_emp": 0.71,
+      "survives_uncorrected": false,
+      "survives_bonferroni": false
+    },
+    "ol": {
+      "len": 2,
+      "N": 381,
+      "role": "WITNESS",
+      "real_rate": 0.3884514435695538,
+      "real_excess": 0.1508008109466863,
+      "synth_excess_mean": 0.1484124063831436,
+      "synth_excess_sd": 0.021315942266904562,
+      "z": 0.1120478059865534,
+      "p_emp": 0.39,
+      "survives_uncorrected": false,
+      "survives_bonferroni": false
+    },
+    "daiin": {
+      "len": 5,
+      "N": 290,
+      "role": "ref",
+      "real_rate": 0.4793103448275862,
+      "real_excess": 0.21448698589712473,
+      "synth_excess_mean": 0.12987059649534632,
+      "synth_excess_sd": 0.023162087343872168,
+      "z": 3.6532281458719553,
+      "p_emp": 0.0,
+      "survives_uncorrected": true,
+      "survives_bonferroni": false
+    }
+  },
+  "witness_survivors_bonferroni": [],
+  "witness_survivors_uncorrected": [],
+  "verdict_bonferroni": "CHAR-SIGNATURE ARTIFACT",
+  "verdict_uncorrected": "CHAR-SIGNATURE ARTIFACT",
+  "n_synth": 200
+}

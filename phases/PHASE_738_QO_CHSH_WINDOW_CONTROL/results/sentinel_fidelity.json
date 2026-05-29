@@ -1,0 +1,15 @@
+{
+  "short": {
+    "n": 20422,
+    "fidelity_correct_unique": 0.9955929879541671,
+    "frac_sentinel_in_qo_family": 0.9977475271765743
+  },
+  "long": {
+    "n": 176381,
+    "fidelity_correct_unique": 0.28144187866039994,
+    "frac_sentinel_in_qo_family": 0.3361870042691673
+  },
+  "fidelity_gap_short_minus_long": 0.7141511092937671,
+  "conclusion": "REVERSAL VINDICATED: long-qo sentinel fidelity LOW + length-dependent -> Test D biased toward SURVIVE -> SURVIVE uninformative. C549 rests on Test C.",
+  "n_synth": 50
+}

@@ -1,0 +1,85 @@
+{
+  "qok->ok": {
+    "N": 2406,
+    "real": 0.08146300914380715,
+    "shuffle_mean": 0.06271391892719151,
+    "shuffle_sd": 0.004385980346086821,
+    "z": 4.274777526840404,
+    "p": 0.002,
+    "above_composition": true,
+    "verdict": "CONFIRMED (above composition)"
+  },
+  "qok->ot": {
+    "N": 2406,
+    "real": 0.06483790523690773,
+    "shuffle_mean": 0.055038879927305044,
+    "shuffle_sd": 0.004169445869784523,
+    "z": 2.350198471364038,
+    "p": 0.008,
+    "above_composition": true,
+    "verdict": "CONFIRMED (above composition)"
+  },
+  "qok->ch": {
+    "N": 2406,
+    "real": 0.1970074812967581,
+    "shuffle_mean": 0.1456817142267411,
+    "shuffle_sd": 0.006319863823265608,
+    "z": 8.121340665770216,
+    "p": 0.0,
+    "above_composition": true,
+    "verdict": "CONFIRMED (above composition)"
+  },
+  "qok->oke (ok-e)": {
+    "N": 2406,
+    "real": 0.04031587697423109,
+    "shuffle_mean": 0.027910220312995844,
+    "shuffle_sd": 0.0029168452305145375,
+    "z": 4.253107614848274,
+    "p": 0.002,
+    "above_composition": true,
+    "verdict": "CONFIRMED (above composition)"
+  },
+  "qok->sh": {
+    "N": 2406,
+    "real": 0.11180382377389858,
+    "shuffle_mean": 0.10145933663378427,
+    "shuffle_sd": 0.005245274603082545,
+    "z": 1.9721535902114746,
+    "p": 0.018,
+    "above_composition": false,
+    "verdict": "DEMOTE (not above composition)"
+  },
+  "broad qo->ch": {
+    "N": 3840,
+    "real": 0.18854166666666666,
+    "shuffle_mean": 0.14580170654570124,
+    "shuffle_sd": 0.0047499245022366455,
+    "z": 8.9980293583277,
+    "p": 0.0,
+    "above_composition": true,
+    "verdict": "ref"
+  },
+  "broad qo->ch/sh": {
+    "N": 3840,
+    "real": 0.29192708333333334,
+    "shuffle_mean": 0.2452711094293543,
+    "shuffle_sd": 0.005882395587454819,
+    "z": 7.931458061657843,
+    "p": 0.0,
+    "above_composition": true,
+    "verdict": "ref"
+  },
+  "_summary": {
+    "confirmed": [
+      "qok->ok",
+      "qok->ot",
+      "qok->ch",
+      "qok->oke (ok-e)"
+    ],
+    "demoted": [
+      "qok->sh"
+    ],
+    "alpha": 0.01,
+    "n_shuffle": 500
+  }
+}

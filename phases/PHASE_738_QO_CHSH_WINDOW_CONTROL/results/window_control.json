@@ -1,0 +1,61 @@
+{
+  "testC": {
+    "short": {
+      "real": 0.39617486338797814,
+      "shuffle_mean": 0.2651437729205766,
+      "shuffle_sd": 0.0210299565925864,
+      "z": 6.230687633163892,
+      "p": 0.0,
+      "real_above_composition": true
+    },
+    "long": {
+      "real": 0.280944156591825,
+      "shuffle_mean": 0.24321747331062704,
+      "shuffle_sd": 0.006387827234271965,
+      "z": 5.906027495356601,
+      "p": 0.0,
+      "real_above_composition": true
+    },
+    "allqo": {
+      "real": 0.29192708333333334,
+      "shuffle_mean": 0.2453226674075367,
+      "shuffle_sd": 0.005920997517631478,
+      "z": 7.871041287725345,
+      "p": 0.0,
+      "real_above_composition": true
+    }
+  },
+  "B_short": {
+    "real_excess": 0.13828468232667562,
+    "real_val": 0.39617486338797814,
+    "synth_mean": 0.09840295051098043,
+    "synth_sd": 0.022372809340065088,
+    "z": 1.7825982964184672,
+    "p": 0.02,
+    "verdict": "SURVIVE"
+  },
+  "B_long": {
+    "real_excess": 0.035838338769696804,
+    "real_val": 0.280944156591825,
+    "synth_mean": 0.015752807782172383,
+    "synth_sd": 0.006161881852563719,
+    "z": 3.259642341108441,
+    "p": 0.0,
+    "verdict": "SURVIVE"
+  },
+  "A_long_sentinel": {
+    "real_excess": 0.037341490364994095,
+    "real_val": 0.280944156591825,
+    "synth_mean": 0.02023886037314698,
+    "synth_sd": 0.007146651468173931,
+    "z": 2.3930969724786477,
+    "p": 0.0,
+    "verdict": "SURVIVE"
+  },
+  "combined": {
+    "B_length_dependent": false,
+    "A_collapse": false,
+    "C_real": true,
+    "verdict": "ABOVE-MARKOV CONFIRMED: long-qo survives even with qo-family in-window (genuine supra-local structure)"
+  }
+}

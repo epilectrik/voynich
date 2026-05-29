@@ -4,6 +4,38 @@
 
 ---
 
+## Version 6.98 (2026-05-29) — PHASE_737+738 daiin/qo→CHSH window-control: char-5-gram is window-blind for long-token prefix-routing
+
+### Summary
+
+Resolved the PHASE_735 C2064 flag (daiin→ch/sh survives the 5-gram but mechanism ambiguous: token-length artifact vs routing). PHASE_737 ran C2064's pre-registered short-source discriminating test; PHASE_738 attempted a window-controlled sentinel-injection fix and re-grounded C549/C2056 on the correct token-level null. The experts twice corrected an over-claim (a false "above-Markov" rescue), and a direct sentinel-fidelity audit settled it.
+
+### Core finding
+
+The char-5-gram has a **length-confounded window-blindness**: it conditions only on a fixed-width char window at the token boundary, so when a long source token's routing-relevant prefix (qo, daiin) falls outside that window, the null can't regenerate the token at corpus rate and transitions out of it survive as a *source-ungeneratability artifact*, not routing. PHASE_737: daiin→ch/sh survives (z=4.05) but **0/6 short high-CHSH sources survive** the same null (verdict flips with length; ol-ref demotes). PHASE_738 Test E: the suffix-sentinel fix is ungeneratable (correct-sentinel emission **28.1% long-qo vs 99.6% short**) → biased toward SURVIVE → uninformative.
+
+### New constraint
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2066 | 2 | Char-5-gram length-confounded window-blindness: long-token prefix-routing survival is a source-ungeneratability artifact, not routing. **Non-rehabilitation clause:** C557/C561/C816/C600/C817/C819 stay demoted (short/generatable tokens — 5-gram valid), C2064/daiin stays ambiguous. **Narrows (not contradicts) C2055.** Correct null for token-adjacency = within-line token-shuffle. Diagnostic: a verdict that flips with source-token length is windowing. |
+
+### Dispositions
+
+- **C549** — RE-GROUNDED (not demoted): vindicated as above-COMPOSITION token-order structure (within-line token-shuffle, z 5.9–7.9, length-invariant); above-char-Markov status INDETERMINATE (window-blind, C2066). Stands on composition grounds.
+- **C2056** — REVISED 5-lane → reduced: qok→ok + qok→oke confirmed above composition; qok→ot marginal; qok→ch subsumed by C549 (nested); qok→sh DEMOTED (fails composition control, under its own <5pp clause; passive-monitor lane — consistent with C929). "Polymorphic architectural unit" framing downgraded; re-grounded "above 5-gram" → "above composition."
+- **C2064** — ANNOTATE: pre-registered short-source test discharged; daiin survival window-blindness-eligible, not routing; C600/C817 not rehabilitated.
+- **C2062** — ANNOTATE: axis (a) split — C562 genuinely above-char-Markov; C549 above-Markov indeterminate (holds on composition).
+- **C2055, Tier 0** — UNTOUCHED.
+
+### Key findings
+
+- New failure pattern (9th/10th) — "null cannot observe the claimed antecedent": char-Markov is the wrong instrument for token-adjacency claims; verdict-flips-with-length = windowing. Memory `feedback_window_blindness_wrong_instrument.md`.
+- Composition-control pass ≠ above-Markov: don't upgrade the label without a token-aware + surface-statistic-aware instrument.
+- Reversal discipline: the in-script "ABOVE-MARKOV CONFIRMED" verdict was a false rescue (significance-via-N at the noise floor off a broken instrument); the expert-mandated direct sentinel-fidelity audit caught it. Don't ship a reversal on a circular diagnostic — measure the mechanism.
+
+---
+
 ## Version 6.97 (2026-05-29) — PHASE_736 AXM attractor: self-transition is composition; macro-slow-mode is distributed
 
 ### Summary
