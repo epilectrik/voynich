@@ -1,0 +1,25 @@
+{
+  "gate_zero_qochsh": {
+    "real_excess": 0.04523337361104651,
+    "synth_mean": 0.02431451025797577,
+    "synth_sd": 0.005844333296345652,
+    "z": 3.5793412682591015,
+    "p_emp": 0.0
+  },
+  "gate_ok": true,
+  "primary_axm_self": {
+    "real_excess": 0.010415503362275813,
+    "synth_mean": 0.012065681790885699,
+    "synth_sd": 0.004254785828021521,
+    "z": -0.38784053893899995,
+    "p_emp": 0.655
+  },
+  "real_axm_self_rate": 0.7055024889008475,
+  "real_axm_shuffle": 0.6950869855385717,
+  "lam2_full": 0.23585395059798442,
+  "lam2_axm_block": 0.2223537204281406,
+  "lam2_non_axm": 0.2047135664639977,
+  "lam2_axm_block_5gram_mean": 0.1311119442732501,
+  "verdict": "AXM_COMPOSITION_ARTIFACT",
+  "n_synth": 200
+}

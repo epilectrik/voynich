@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2056 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2057 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2064.
+the highest ID present is C2065.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2056 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2057 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2056 validated constraints are present as canonical one-line claims with tier
+2057 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-28 23:52
-**Version:** FROZEN STATE (2056 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-29 11:54
+**Version:** FROZEN STATE (2057 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1265,7 +1265,7 @@ C974	**Suffix-Role Binding Structural Not Random**	2	B
 C975	**Fingerprint Joint Uniqueness UNCOMMON**	2	B
 C976	**Transition Topology Compresses to 6 States** (49 classes → 6 states, 8.2x compression; preserves role integrity + depletion asymmetry; holdout-invariant 100/100 trials, ARI=0.939; generative fidelity 4/5 metrics)	2	B
 C977	**EN/AX Transitionally Indistinguishable at Topology Level** (38 EN/AX classes merge freely; split into S3-minor 6 classes and S4-major 32 classes by depletion constraint; AXm→AXM flow 24.4x stronger than reverse)	2	B
-C978	**Hub-and-Spoke Topology with Sub-2-Token Mixing** (S4/AXM universal attractor >56% from all states; spectral gap 0.894; mixing time 1.1 tokens; hazard/safe asymmetry 6.5x from operational mass)	2	B
+C978	**Hub-and-Spoke Topology with Sub-2-Token Mixing** (S4/AXM universal attractor >56% from all states; spectral gap 0.894; mixing time 1.1 tokens; hazard/safe asymmetry 6.5x from operational mass) **[PHASE_736 scope-correction: the AXM self-transition RATE (0.698) is composition/mass-artifact — a 68%-mass block self-transitions ~68% by construction; "attractor cohesion / designed dwell" interpretation corrected to "mass-dominant macro-state." Spectral-gap MEASUREMENT stands. The above-Markov slow mode (C2061 λ2) is DISTRIBUTED, not in the self-loop — see C2065. Corroborates C1403. NOT a demotion.]**	2	B
 C979	**REGIME Modulates Transition Weights Not Topology**	2	B
 C980	**Free Variation Envelope: 48 Eigenvalues, 6 Necessary States** (effective rank 48 at >0.01 threshold; constraint compression to 6 states; gap = parametric control space; S4 has 81 MIDDLEs, Gini=0.545, within-state JSD=0.365)	2	B
 C981	**MIDDLE Discrimination Space Is a Structural Fingerprint** (972 MIDDLEs; 4/5 metrics anomalous under Configuration Model z=+17 to +137; CV < 0.055 at 20% removal; λ₁ degrades linearly; FINGERPRINT_CONFIRMED)	2	A
@@ -2297,6 +2297,7 @@ C2061	**Macro-state eigenstructure of the Currier B class-transition operator su
 C2062	**Three-axis decomposition of Currier B class-sequential structure.** The class-layer sequential signal splits into three components with distinct 5-gram-null verdicts: (a) **local control bigrams** (specific token transitions, e.g. qo→ch/sh) — REAL above-Markov; (b) **macro-state eigenstructure** (λ2 of the 49-class operator) — REAL above-Markov; (c) **aggregate scalar first-order class-MI** (C2023) — the floor-dominated MIDDLE layer, morphology-reproducible. The genuine above-Markov grammar lives in the local bigrams and the macro-eigenstructure; the aggregate scalar one-step MI is reproducible from local character statistics because it is dominated by the high-mass local bigrams and conflates them with the morphology-derivable bulk. This explains why a character 5-gram (which reproduces all surface statistics, C2055) reproduces the scalar class-MI but not the macro-eigenstructure: scalar MI is a high-mass-dominated lumped functional, λ2 is a global community-structure functional. **References:** C2023 (demoted middle layer), C2061 (eigenstructure), C549/C562 (local bigrams), C2055 (5-gram surface reproduction), C2056.	2	three_axis_decomposition, local_bigrams_real, macro_eigenstructure_real, scalar_MI_morphology_shadow, scalar_vs_eigenstructure_distinction, B
 C2063	**C1025 battery's B3 forbidden-suppression test is an idealization-conformance test, not a fidelity test.** B3 scores `forbidden violations == 0`. The REAL Currier B corpus has 13 forbidden violations (the ~0.7% leakage; C1360 ~0.05% realized rate, C789 permeability). M2 produces 0 by hard bidirectional suppression → passes B3. A character-5-gram produces 12.8 ≈ real's 13 → fails B3. **So M2 passes B3 by being LESS faithful to the real corpus than the 5-gram is** — B3 rewards over-idealization. This is the 4th C1025-battery test-spec correction (cf. C1030/C1033/C1034), of INVERSE polarity: those were too strict on the model, B3 is too lenient on the over-idealized model. Consequence for C1025: M2's advertised +0.1-test edge over M1 was concentrated in B3 (idealization) and B5 (which M2 actually fails); **M1 (pure 49-class Markov, no forbidden suppression) is the corpus-fidelity frontier**, and the macro-automaton topology lives in the class-Markov matrix itself — forbidden suppression is a thin idealizing overlay (consistent with C622 0.12% buffer rate, C997 sparse-critical-buffer, C1023 PREFIX-routing sole load-bearing macro component), not load-bearing for the topology. Consistent with C2060 (forbidden pairs real-but-Markov-reproducible-as-rare-events). **References:** C1025, C1030, C1033, C1034, C1360, C789, C2060, C622, C997, C1023.	2	B3_idealization_not_fidelity, M2_over_suppresses, 5gram_more_faithful_than_M2, M1_is_corpus_fidelity_frontier, forbidden_thin_overlay, fourth_C1025_battery_test_spec_correction_inverse_polarity, B
 C2064	**daiin→ch/sh-prefix bigram is above the 5-gram floor — measurement-only, mechanism ambiguous.** Under per-synth-own-shuffle 5-gram null, the unconditional daiin→(ch/sh-prefix) transition tendency has real excess +0.2272 vs synth +0.1297. This is a genuine above-Markov bigram, grouped with C549 and the C2056 correction-lane family. **TWO load-bearing caveats keep it measurement-only:** (1) DENOMINATOR — this is the UNCONDITIONAL prefix-transition rate (47.9%), NOT C817's lane-conditional 90.8% (of next-tokens in QO∪CHSH, share that is CHSH); the lane-conditional magnitude is UNTESTED. (2) MECHANISM AMBIGUOUS — daiin→CHSH survives but the parallel ol→CHSH demotes despite similar real rates; this daiin-survives/ol-demotes asymmetry is exactly what a token-length/char-signature artifact predicts (daiin is a long fixed token the 5-gram routes past poorly, like qo; ol is short and char-reproducible). So the survival may be "char-5-gram cannot route past long tokens," NOT "CC lane-routing is designed structure." **Does NOT validate C600/C817's routing-mechanism claim** (both demoted). Discriminating test (pre-registered, future work): test ≥2 SHORT char-reproducible CHSH-source tokens — if they survive, general lane-attraction is real; if not, char-signature artifact. Extends C2062 (local control bigrams real, positional gradients floor). **References:** C549, C2056, C2062, C600, C817, C816.	2	daiin_chsh_bigram_above_5gram, measurement_only, mechanism_ambiguous_tokenlength_vs_routing, unconditional_not_lane_conditional, does_not_validate_C600_C817, discriminating_test_short_source_future, extends_C2062, B
+C2065	**The Currier B macro-eigenstructure slow mode (C2061's above-Markov λ2) is DISTRIBUTED across the class space, NOT localized in the AXM attractor self-loop.** Submatrix-λ2 localization: full-49 λ2=0.236, AXM-block-only 0.222, non-AXM lanes 0.205 — comparable across attractor and lanes, not attractor-concentrated. 2nd-eigenvector loading (falsification test): AXM-block loading 0.642 ≈ class-fraction 0.65 (proportional, not concentrated); participation ratio 28.8/49; top-5 share 0.299; top loaders mix AXM (22,21,2,8,41) and lane (7,23,9) classes — spread, not block-boundary-aligned. The "distributed" claim SURVIVED its falsification (a concentrated within-AXM gradient would have collapsed it and predicted high spectral ARI). **Mechanistically grounds C1010's non-spectral 6-state partition (spectral-clustering ARI=0.059):** the role/depletion-defined partition cannot be spectrally recovered because the above-Markov slow mode genuinely does not align with the blocks. Companion to the PHASE_736 non-finding that the AXM self-transition RATE is composition (the C2062 scalar-vs-eigenstructure split, recurring at the block level). **References:** C2061 (above-Markov λ2, localized here), C1010 (non-spectral partition, grounded), C1019 (tensor-orthogonality), C978 (scope-corrected), C2062 (scalar-vs-eigenstructure), C976.	2	macro_slow_mode_distributed, not_in_attractor_self_loop, participation_ratio_28.8, loading_class_proportional, not_block_aligned, grounds_C1010_nonspectral_partition, falsification_survived, B
 
 ---
 
@@ -5541,6 +5542,16 @@ Three-axis decomposition (registered C2062): class-sequential structure = (a) lo
 ## Outcome
 
 C2023 scalar-MI half demoted Tier 2→3 (joins C1727/C645 as shuffle-survivor failing 5-gram). C976-C978 macro-automaton VINDICATED at the eigenstructure level (C2061) — passed the sharpest null it has ever faced. Cascade stopped at C2023; Tier 0 and the 49-class partition untouched. The discipline (chained controls + expert adjudication) prevented BOTH a false-positive registration (naive "survive") AND a false cascade (steamrolling C2023's failure into a macro-automaton demotion).
+
+## PHASE_736 extension: self-transition/dwell scalar is a mass artifact; eigenstructure may be DISTRIBUTED
+
+The scalar-vs-eigenstructure split recurred at the macro-state-block level (PHASE_736, the AXM attractor). Two reusable lessons:
+
+1. **A macro-state's self-transition / dwell RATE is a mass artifact — never infer "designed cohesion" from it.** AXM (68% of token mass) has 0.698 self-transition. Under per-synth-own-shuffle 5-gram null: real excess over composition +0.0104, synth +0.0121, z=−0.39, p=0.655 — fully Markov-reproducible. A block holding fraction f of the mass self-transitions at ~f by construction; a character model reproduces it because it knows the mass. This is a NON-FINDING, not a demotion (it was never above-Markov). Diagnostic: before claiming an attractor/dwell is "designed," check whether self-rate ≈ mass-fraction — if so, it's composition.
+
+2. **The above-Markov eigenstructure (λ2) may be DISTRIBUTED, not localized in the high-mass block.** Test where the slow mode lives: (a) submatrix-λ2 (real-data, no null) — compare block-only vs rest; (b) 2nd-eigenvector LOADING falsification — if loading concentrates on a few classes within one block, the mode is localized (and would predict high spectral clustering ARI); if it's class-proportional and spread across blocks, it's distributed. PHASE_736: AXM-block λ2 0.222 ≈ lanes 0.205; loading 0.642 ≈ class-fraction 0.65, participation ratio 28.8/49, top loaders mixed AXM+lane → distributed. This mechanistically explained C1010's non-spectral partition (ARI=0.059): the role/depletion partition can't be spectrally recovered because the slow mode doesn't align with the blocks. Registered C2065.
+
+The eigenvector-loading test is the cheap falsification for any "distributed vs localized eigenstructure" claim — it can collapse the claim (concentrated gradient) and survived here.
 
 ## Related memories
 

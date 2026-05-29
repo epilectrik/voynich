@@ -4,6 +4,40 @@
 
 ---
 
+## Version 6.97 (2026-05-29) — PHASE_736 AXM attractor: self-transition is composition; macro-slow-mode is distributed
+
+### Summary
+
+The "elephant" the 5-gram audit thread kept circling: is the AXM attractor's 0.698 self-transition (C976; 32 classes, 67.7% of mass) above-composition, or a frequency artifact? Both experts killed the original ablation design as foregone + mechanically rigged and pivoted to a per-synth-own-shuffle test on the scalar self-transition rate + submatrix-λ2 localization + 2nd-eigenvector loading falsification + gate-zero.
+
+### PRIMARY = NON-FINDING (not a demotion)
+
+The AXM self-transition rate (0.7055) is composition: per-synth-own-shuffle 5-gram excess +0.0121 ≥ real +0.0104, z=−0.39, p_emp=0.655. A 68%-mass block self-transitions ~68% by construction, and the 5-gram reproduces it. C978's text already attributes the attractor to "operational mass," so this corrects only the "designed cohesion / dwell" gloss — it is NOT a demotion of C976/C978 and was never registered as above-Markov. Gate-zero (qo→ch/sh, z=+3.58, p=0.000) validated the pipeline.
+
+### New constraint
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2065 | 2 | The macro-eigenstructure slow mode (C2061's above-Markov λ2) is DISTRIBUTED across ~29 classes (participation ratio 28.8/49; 2nd-eigenvector loading class-proportional, AXM-block 0.642 ≈ class-fraction 0.65, not block-aligned; top loaders mix AXM and lane classes), NOT localized in the AXM attractor self-loop. Submatrix-λ2: full 0.236, AXM-block 0.222, lanes 0.205. Survived eigenvector-loading falsification (concentrated within-AXM gradient would have collapsed it). Mechanistically grounds C1010's non-spectral 6-state partition (ARI=0.059): the role/depletion partition can't be spectrally recovered because the slow mode doesn't align with the blocks. |
+
+### Dispositions
+
+- **C978** — ANNOTATE (scope-correction, NOT demotion): self-transition rate = composition/mass; spectral-gap measurement stands; "designed dwell" → "mass-dominant macro-state."
+- **C976, C2061, C1010, C1019, Tier 0** — UNTOUCHED. Corroborates C1403 (MONOSTATE = thematic dominance, not sequential convergence).
+
+### Key findings
+
+- The C2062 scalar-vs-eigenstructure split recurs at the block level: the self-transition SCALAR is composition-floor; the above-Markov signal is in the EIGENSTRUCTURE (C2061), and it is DISTRIBUTED, not in the attractor.
+- This resolves a standing puzzle: C1010's non-spectral partition (ARI=0.059) is explained by the distributed (non-block-aligned) slow mode.
+- A successful pivot: the test KILLED a candidate finding (the elephant turned out to be made of mass) and surfaced a real one (distributed eigenstructure). The non-finding is bookkept as an annotation, not a constraint or demotion.
+
+### Methodology
+
+- Self-transition / dwell scalar is a mass artifact; never infer designed cohesion from a high self-transition rate. Above-Markov signal is in the eigenstructure, possibly distributed. Appended to `feedback_chained_controls_scalar_vs_eigenstructure.md`.
+- Naive AXM-block-λ2-vs-5gram (0.222 vs 0.131) excluded from claims (per-synth-own-shuffle-violating, PHASE_733 precedent). "Distributed" rests on real-data localization + falsification-passed eigenvector loading only.
+
+---
+
 ## Version 6.96 (2026-05-28) — PHASE_735 C816 cascade audit: positional framework floor, 3 demotions, one ambiguous bigram survivor
 
 ### Summary
