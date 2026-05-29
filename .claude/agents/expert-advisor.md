@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2055 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2056 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2063.
+the highest ID present is C2064.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2055 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2056 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2055 validated constraints are present as canonical one-line claims with tier
+2056 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-28 23:05
-**Version:** FROZEN STATE (2055 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-28 23:52
+**Version:** FROZEN STATE (2056 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -866,7 +866,7 @@ C553	**BIO-REGIME Energy Independence**	2	B
 C554	**Hazard Class Clustering**	2	B
 C555	**PHARMA Thermal Operator Substitution** (Class 33 0.20x depleted, Class 34 1.90x enriched in PHARMA; ~10x divergence; section-specific not REGIME-driven; ENERGY operators not interchangeable)	2	B
 C556	**ENERGY Medial Concentration**	2	B
-C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; daiin initial-biased 27.7%, ol final-biased 9.5%; complementary control primitives)	2	B
+C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC classes are singletons; ~~daiin initial-biased 27.7%, ol final-biased 9.5%~~; complementary control primitives). **[PHASE_735: positional sub-claims DEMOTED Tier 3 — daiin-initial fails 5-gram null under Bonferroni, ol-final was already at-shuffle. Singleton class-structure claim (Class 10/11/12) untested by 5-gram null (wrong instrument), STANDS Tier 2.]**	2	B
 C560	**Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived)	2	B
 C562	**FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern)	2	B
 C563	**AX Internal Positional Stratification**	2	B
@@ -906,7 +906,6 @@ C596	**FQ-FL Position-Driven Symbiosis**	2	B
 C597	**FQ Class 23 Boundary Dominance** (29.8% final rate, 39% of FQ finals despite 12.5% token share; 12.2% initial; mean run length 1.19, 84% singletons; boundary specialist)	2	B
 C598	**Cross-Boundary Sub-Group Structure** (8/10 pairs significant; FQ_CONN->EN_CHSH 1.41x, FQ_CONN->EN_QO 0.16x; sub-group routing visible across role boundaries)	2	B
 C599	**AX Scaffolding Routing**	2	B
-C600	**CC Trigger Sub-Group Selectivity**	2	B
 C601	**Hazard Sub-Group Concentration** (19 events from 3 source sub-groups: FL_HAZ/EN_CHSH/FQ_CONN; EN_CHSH absorbs 58%; QO never participates)	2	B
 C602	**REGIME-Conditioned Sub-Role Grammar** (4/5 pairs REGIME-dependent; AX->FQ REGIME-independent; core routing invariant, magnitudes shift by REGIME)	2	B
 C603	**CC Folio-Level Subfamily Prediction**	2	B
@@ -1110,9 +1109,7 @@ C812	**HT Novel MIDDLE Combinations** (11.19% novel pairs; NOT C475 violation; H
 C813	**Canonical Phase Ordering** (LINK 0.476 -> KERNEL 0.482 -> FL 0.576; monitoring early, escape late)	2	B
 C814	**Kernel-Escape Inverse**	2	B
 C815	**Phase Position Significance**	2	B
-C817	**CC Lane Routing** (C600 confirmed: daiin->CHSH 90.8%, ol_derived->QO 57.4%; rapid decay by +2)	2	B
-C818	**CC Kernel Bridge** (Class 17 = CC-KERNEL interface; 88% kernel chars; resolves C782 paradox)	2	B
-C819	**CC Boundary Asymmetry** (daiin initial 27.1%; ol/ol_derived medial 85%; unlike LINK 1.23x)	2	B
+C818	**CC Kernel Bridge** (Class 17 = CC-KERNEL interface; 88% kernel chars; resolves C782 paradox) **[PHASE_735: composition claim, not sequential — correctly excluded from 5-gram audit; UNTOUCHED Tier 2]**	2	B
 C820	**CC Hazard Immunity** (0/700 forbidden; EN absorbs 99.8% hazard; CC is safe control layer)	2	B
 C821	**Line Syntax REGIME Invariance** (All 5 roles invariant; eta^2=0.13%; confirms C124 universality)	2	B
 C822	**CC Position REGIME Invariance**	2	B
@@ -2299,6 +2296,7 @@ C2060	**The C109 5-class hazard taxonomy was imposed by keyword-matching, not di
 C2061	**Macro-state eigenstructure of the Currier B class-transition operator survives the 5-gram null (vindicates C976-C978).** The second eigenvalue λ2 of the raw 49×49 class transition matrix (the clean measure of macro-state slow-mixing structure; bypasses the C976 merge's hardcoded role/depletion constraints) is genuinely above-Markov: real λ2=0.2063, 5-gram-synth λ2=0.1194±0.017 sitting at the within-line-shuffle floor 0.1176±0.009 (5-gram only 2% of the way from floor to real). Per-synth-own-shuffle symmetry control: real λ2 excess +0.0873 vs 5-gram synth excess +0.0517±0.014, **z=+2.51, p=0.000** — real significantly exceeds synth under the SAME metric where scalar-MI was reproduced. The 5-gram reproduces ~60% of the λ2 excess (partly morphology-derivable) but the remaining ~40% is above-Markov. The macro-automaton (C976-C978/C1010) faced the sharpest null it has ever been tested against and passed at the eigenstructure level. **SCOPE: validates above-Markov macro-structure in the raw 49-class transition operator — NOT a re-derivation of C978's 6-state 0.894 spectral gap (a different operator on the merged 6×6 matrix, not re-measured here).** Partition-ARI through the C976 merge was confounded (role/depletion constraints force ARI 0.67-0.80 even for structureless nulls: random 0.669, shuffle 0.804, real 0.937, 5-gram 0.762) and is uninformative; λ2 of the raw matrix is the uncontaminated metric. **References:** C976, C977, C978, C1010, C2023, C2055, C2056, C549, C562.	2	macro_eigenstructure_survives_5gram, lambda2_above_markov, vindicates_C976_C978, scoped_to_raw49_operator_not_C978_gap, partition_ARI_confounded_by_merge_constraints, per_synth_own_shuffle_symmetry, B
 C2062	**Three-axis decomposition of Currier B class-sequential structure.** The class-layer sequential signal splits into three components with distinct 5-gram-null verdicts: (a) **local control bigrams** (specific token transitions, e.g. qo→ch/sh) — REAL above-Markov; (b) **macro-state eigenstructure** (λ2 of the 49-class operator) — REAL above-Markov; (c) **aggregate scalar first-order class-MI** (C2023) — the floor-dominated MIDDLE layer, morphology-reproducible. The genuine above-Markov grammar lives in the local bigrams and the macro-eigenstructure; the aggregate scalar one-step MI is reproducible from local character statistics because it is dominated by the high-mass local bigrams and conflates them with the morphology-derivable bulk. This explains why a character 5-gram (which reproduces all surface statistics, C2055) reproduces the scalar class-MI but not the macro-eigenstructure: scalar MI is a high-mass-dominated lumped functional, λ2 is a global community-structure functional. **References:** C2023 (demoted middle layer), C2061 (eigenstructure), C549/C562 (local bigrams), C2055 (5-gram surface reproduction), C2056.	2	three_axis_decomposition, local_bigrams_real, macro_eigenstructure_real, scalar_MI_morphology_shadow, scalar_vs_eigenstructure_distinction, B
 C2063	**C1025 battery's B3 forbidden-suppression test is an idealization-conformance test, not a fidelity test.** B3 scores `forbidden violations == 0`. The REAL Currier B corpus has 13 forbidden violations (the ~0.7% leakage; C1360 ~0.05% realized rate, C789 permeability). M2 produces 0 by hard bidirectional suppression → passes B3. A character-5-gram produces 12.8 ≈ real's 13 → fails B3. **So M2 passes B3 by being LESS faithful to the real corpus than the 5-gram is** — B3 rewards over-idealization. This is the 4th C1025-battery test-spec correction (cf. C1030/C1033/C1034), of INVERSE polarity: those were too strict on the model, B3 is too lenient on the over-idealized model. Consequence for C1025: M2's advertised +0.1-test edge over M1 was concentrated in B3 (idealization) and B5 (which M2 actually fails); **M1 (pure 49-class Markov, no forbidden suppression) is the corpus-fidelity frontier**, and the macro-automaton topology lives in the class-Markov matrix itself — forbidden suppression is a thin idealizing overlay (consistent with C622 0.12% buffer rate, C997 sparse-critical-buffer, C1023 PREFIX-routing sole load-bearing macro component), not load-bearing for the topology. Consistent with C2060 (forbidden pairs real-but-Markov-reproducible-as-rare-events). **References:** C1025, C1030, C1033, C1034, C1360, C789, C2060, C622, C997, C1023.	2	B3_idealization_not_fidelity, M2_over_suppresses, 5gram_more_faithful_than_M2, M1_is_corpus_fidelity_frontier, forbidden_thin_overlay, fourth_C1025_battery_test_spec_correction_inverse_polarity, B
+C2064	**daiin→ch/sh-prefix bigram is above the 5-gram floor — measurement-only, mechanism ambiguous.** Under per-synth-own-shuffle 5-gram null, the unconditional daiin→(ch/sh-prefix) transition tendency has real excess +0.2272 vs synth +0.1297. This is a genuine above-Markov bigram, grouped with C549 and the C2056 correction-lane family. **TWO load-bearing caveats keep it measurement-only:** (1) DENOMINATOR — this is the UNCONDITIONAL prefix-transition rate (47.9%), NOT C817's lane-conditional 90.8% (of next-tokens in QO∪CHSH, share that is CHSH); the lane-conditional magnitude is UNTESTED. (2) MECHANISM AMBIGUOUS — daiin→CHSH survives but the parallel ol→CHSH demotes despite similar real rates; this daiin-survives/ol-demotes asymmetry is exactly what a token-length/char-signature artifact predicts (daiin is a long fixed token the 5-gram routes past poorly, like qo; ol is short and char-reproducible). So the survival may be "char-5-gram cannot route past long tokens," NOT "CC lane-routing is designed structure." **Does NOT validate C600/C817's routing-mechanism claim** (both demoted). Discriminating test (pre-registered, future work): test ≥2 SHORT char-reproducible CHSH-source tokens — if they survive, general lane-attraction is real; if not, char-signature artifact. Extends C2062 (local control bigrams real, positional gradients floor). **References:** C549, C2056, C2062, C600, C817, C816.	2	daiin_chsh_bigram_above_5gram, measurement_only, mechanism_ambiguous_tokenlength_vs_routing, unconditional_not_lane_conditional, does_not_validate_C600_C817, discriminating_test_short_source_future, extends_C2062, B
 
 ---
 

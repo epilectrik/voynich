@@ -4,6 +4,40 @@
 
 ---
 
+## Version 6.96 (2026-05-28) — PHASE_735 C816 cascade audit: positional framework floor, 3 demotions, one ambiguous bigram survivor
+
+### Summary
+
+5-gram null on the CC-family constraints flagged when C816 ("daiin initiates loop") demoted in PHASE_731. Per-synth-own-shuffle metric, 200 synth corpora, Bonferroni α=0.006 (8 metrics). The C816 positional-ordering framework is confirmed 5-gram floor; the experts' "mostly demote" prediction held, with one honestly-flagged ambiguous bigram survivor.
+
+### New constraint
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2064 | 2 | daiin→ch/sh-prefix bigram above 5-gram floor (z=4.05) — MEASUREMENT-ONLY, mechanism ambiguous. Two caveats: (1) unconditional rate (47.9%) ≠ C817's lane-conditional 90.8% (untested); (2) daiin-survives/ol-demotes asymmetry suggests a token-length/char-signature artifact (long fixed tokens routed past poorly, like qo→ch/sh C549) rather than designed routing. Does NOT validate C600/C817. Discriminating test (short CHSH-source tokens) pre-registered as future work. Extends C2062. |
+
+### Dispositions
+
+- **C600, C817, C819** — DEMOTE Tier 2→3. ol/ol_derived routing Markov-trivial; daiin bigram measurement-only (C2064); positional claims fail Bonferroni.
+- **C558** — positional sub-claims (daiin-initial, ol-final) DEMOTE Tier 2→3; singleton class-structure claim (Class 10/11/12) untested by 5-gram null (wrong instrument), STANDS Tier 2.
+- **C816, C874** (already Tier 3) — CONFIRMED floor.
+- **C818** — UNTOUCHED Tier 2 (composition claim, correctly excluded from a sequential-structure audit).
+- **C121 (49-class system), Tier 0** — UNTOUCHED.
+
+### Key findings
+
+- The C816 positional-ordering content (mean-positions, line-initial/final) is uniformly 5-gram-reproducible. C816-as-stated ("daiin initiates loop, ol continues") is floor.
+- One bigram (daiin→ch/sh) survives, but its mechanism is unresolved: it may be a token-length char-signature artifact (the same confound that makes qo→ch/sh survive, C549/C2056) rather than CC lane-routing. Registered measurement-only.
+- Reinforces C2062 three-axis decomposition: specific control-transition bigrams real above-Markov, positional gradients floor — with the added discipline note that a surviving bigram's mechanism (routing-design vs token-length) needs a short-source discriminating control before any routing claim.
+
+### Methodology
+
+- Multiple-comparison correction (Bonferroni) flips daiin-initial from uncorrected-survive (p=0.040) to demote.
+- Token-length confound: long fixed source tokens survive transition-bigram 5-gram tests partly because the char-5-gram routes past them poorly — independent of designed routing.
+- Denominator discipline: unconditional ≠ lane-conditional; test the claim's actual denominator.
+
+---
+
 ## Version 6.95 (2026-05-28) — PHASE_734 M2-vs-5-gram decomposition: C1025 rescoped, M1 is the fidelity frontier
 
 ### Summary

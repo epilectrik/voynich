@@ -1,0 +1,98 @@
+{
+  "metrics": {
+    "C558_C819_daiin_initial": {
+      "kind": "positional",
+      "real_excess": 0.16772823779193202,
+      "real_val": 0.27070063694267515,
+      "synth_excess_mean": 0.12960445193520695,
+      "synth_excess_sd": 0.022512741925040016,
+      "z": 1.6934314791003544,
+      "p_emp": 0.04,
+      "verdict": "SURVIVES"
+    },
+    "C558_ol_final": {
+      "kind": "positional",
+      "real_excess": -0.007600950118764868,
+      "real_val": 0.09501187648456057,
+      "synth_excess_mean": 0.004223632127398826,
+      "synth_excess_sd": 0.016975582583314417,
+      "z": -0.6965641496031054,
+      "p_emp": 0.735,
+      "verdict": "DEMOTE"
+    },
+    "C819_ol_medial": {
+      "kind": "positional",
+      "real_excess": 0.07023977433004236,
+      "real_val": 0.8504936530324401,
+      "synth_excess_mean": 0.032362278320813544,
+      "synth_excess_sd": 0.014730490303346291,
+      "z": 2.5713669558320316,
+      "p_emp": 0.0,
+      "verdict": "SURVIVES"
+    },
+    "C874_daiin_meanpos": {
+      "kind": "positional",
+      "real_excess": -0.09104389219887477,
+      "real_val": 0.41284058497322507,
+      "synth_excess_mean": -0.0662315184695566,
+      "synth_excess_sd": 0.018462143114084832,
+      "z": -1.3439595596238616,
+      "p_emp": 0.9,
+      "verdict": "DEMOTE"
+    },
+    "C874_ol_meanpos": {
+      "kind": "positional",
+      "real_excess": 0.011150275042891566,
+      "real_val": 0.5112619215047245,
+      "synth_excess_mean": 0.02592817496784484,
+      "synth_excess_sd": 0.016072549846536055,
+      "z": -0.9194496247363139,
+      "p_emp": 0.815,
+      "verdict": "DEMOTE"
+    },
+    "C600_C817_daiin_to_chsh": {
+      "kind": "transition",
+      "real_excess": 0.2271574447481372,
+      "real_val": 0.4793103448275862,
+      "synth_excess_mean": 0.12974537231018277,
+      "synth_excess_sd": 0.024040872174960516,
+      "z": 4.05193587524719,
+      "p_emp": 0.0,
+      "verdict": "SURVIVES"
+    },
+    "C817_ol_to_chsh": {
+      "kind": "transition",
+      "real_excess": 0.16090301064697166,
+      "real_val": 0.3884514435695538,
+      "synth_excess_mean": 0.14876143439739983,
+      "synth_excess_sd": 0.020143512602570617,
+      "z": 0.6027536750478352,
+      "p_emp": 0.25,
+      "verdict": "DEMOTE"
+    },
+    "C600_C817_olderived_to_qo": {
+      "kind": "transition",
+      "real_excess": 0.07874675469696168,
+      "real_val": 0.2681992337164751,
+      "synth_excess_mean": 0.07930133022361235,
+      "synth_excess_sd": 0.0242359466460813,
+      "z": -0.022882354658935435,
+      "p_emp": 0.53,
+      "verdict": "DEMOTE"
+    }
+  },
+  "survives": [
+    "C558_C819_daiin_initial",
+    "C819_ol_medial",
+    "C600_C817_daiin_to_chsh"
+  ],
+  "demote": [
+    "C558_ol_final",
+    "C874_daiin_meanpos",
+    "C874_ol_meanpos",
+    "C817_ol_to_chsh",
+    "C600_C817_olderived_to_qo"
+  ],
+  "C818": "excluded_composition_claim",
+  "n_synth": 200
+}
