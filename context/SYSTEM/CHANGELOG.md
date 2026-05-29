@@ -4,6 +4,50 @@
 
 ---
 
+## Version 6.93 (2026-05-28) — PHASE_732 forbidden-pair audit + hazard-class provenance correction
+
+### Summary
+
+A routine 5-gram audit of C109's 17 forbidden transitions became a provenance investigation when the user asked whether the 5 hazard classes were derived from the forbidden transitions. The answer — triple-confirmed by source-code read + forensic file trace, then tested empirically — is that **the 5 hazard classes were imposed by a hardcoded keyword dictionary, not discovered by clustering.** C109's stated evidence "Cluster analysis reveals 5 natural groupings" is false about its method.
+
+### New constraint
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2060 | 2 | The C109 5-class hazard taxonomy was imposed by keyword-matching (phase18_failure_typology.py lines 61-87, 392-411), not discovered by clustering. No clustering produced 5 (only clustering in the chain produced 1). Empirical atom-territory clustering: silhouette-optimal k=8, k=3≥k=5, ARI=0.42 — 5 not data-preferred. Only PHASE_ORDERING (n=7) is a tight gloss-coherent cluster (=C1529). ENERGY_OVERSHOOT gloss-contradicted (he→t has no heat atom, C1448). Atom-territory structure independently held by C1528-C1533. |
+
+### Dispositions
+
+| Constraint | Action |
+|----|--------|
+| C109 | Revised to existence-only (17 forbidden directional transitions, ~0% realized); 5-class taxonomy struck; detail-file header corrected (was wrongly "Tier 0 FROZEN"; canonical INDEX = Tier 2) |
+| C110 | KEEP Tier 2 — true count of the one vindicated cluster (PHASE_ORDERING) |
+| C111, C112 | KEEP Tier 2 — taxonomy-independent (= C783/C627; kernel-distance) |
+| C216 | DEMOTE Tier 2→3 — 71/29 split computed over imposed partition, leans on weakest class |
+| C1528-C1533 | UNTOUCHED — the rigorous atom-grounded layer that survives |
+| Tier 0 frozen conclusion | UNTOUCHED — never depended on the taxonomy |
+
+### Forbidden-pair audit (the original batch 2)
+
+Confirmatory of C2023. 17 pairs at MIDDLE/token layer: 7 WEAK above-Markov (CONFOUNDED by 5-gram under-production ~33% median), 6 MARKOV_TRIVIAL, 4 PHANTOM. The audit tested the layer C2023 already characterized as co-occurrence-only (z=−0.39); the load-bearing sequential structure is at the 49-class projection (z=+3.91, never 5-gram tested). Within-class anomaly test independently re-derived C629/C630 (class 23 heterogeneity is token-specific, not miscategorization).
+
+### Documentation cleanup
+
+- GUIDE.md: struck false "clustering is Tier 0 (proven from data)" claim; reframed as imposed-taxonomy + real atom structure (C1528-C1533); ENERGY_OVERSHOOT footnoted as gloss-contradicted; "forbidden transitions correspond to physical failure modes" → "consistent with (Tier 3)"
+- WHAT_WE_CLAIM.md: dropped "organized into 5 hazard classes"; "map onto physical failure modes" → "consistent with (Tier 3)"
+- currierB.bcsc.yaml: added PROVENANCE_CORRECTION to failure_classes block; thermodynamic_grounding marked Tier 3-4; head_territory_orthogonality marked as the surviving rigorous layer
+- Three-level safety architecture PRESERVED (taxonomy-independent: C1440-C1448, C1463-C1471)
+
+### Methodology
+
+New failure pattern #9: **"discovered-method claim for an imposed-method result" (phantom-clustering).** A claim file states "cluster analysis reveals N groupings" but no clustering ran; the real provenance is a hardcoded pre-analysis dictionary. Diagnostic: grep claim files for "cluster analysis reveals" / "natural groupings" / "k=N clusters"; verify a clustering script actually ran and selected N. Elevated suspicion for early-phase (15-20) taxonomy claims with round counts + physical-domain labels. Caught only because an expert read the derivation source rather than trusting the constraint text. Memory: `feedback_phantom_clustering_provenance_audit.md`.
+
+### Note
+
+This is the second early-phase audit-driven correction (after C131's invented-threshold retraction). Both are pre-v2.42-era interpretive overreach surfacing under the mature audit discipline. The hazard-class taxonomy was mis-presented as data-discovered Tier 0/2 structure when it was imposed labeling — but the underlying forbidden-transition existence and atom-territory structure are real and survive.
+
+---
+
 ## Version 6.92 (2026-05-28) — PHASE_731 5-gram null audit batch 1: 3 demotions, 2 strong survivors, positive control passed
 
 ### Summary

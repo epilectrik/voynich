@@ -16,7 +16,7 @@ These claims are grounded in statistical evidence from the transcript. They do n
 
 - **The grammar is governed by a single shared set of rules across all 83 folios.** There is no folio that uses a different grammar. The instruction classes, disfavored transitions, and macro-state dynamics apply universally. (C124, C531)
 
-- **17 state transitions are structurally disfavored, organized into 5 hazard classes.** These transitions occur at ~65% compliance — strongly suppressed but not absolute. The disfavored transitions partition into classes with near-orthogonal atom territories. (C109, C789, C1528-C1533)
+- **17 state transitions are structurally forbidden.** They occur at ~0% realized rate (~65% class-level compliance — strongly suppressed). The forbidden transitions exhibit real atom-territory structure: they fall into groupings with near-orthogonal atom HEAD territories (7/10 pairwise Jaccard = 0). The largest group (PHASE_ORDERING, 7 of 17) is a genuine sealed-state→iteration sequencing failure. *Note: the specific 5-class distillation taxonomy was an early keyword-based labeling, not a data-derived clustering (the count 5 is not data-preferred); it is Tier 3-4 interpretation.* (C109 existence, C789, C1528-C1533, C2060) 
 
 - **The manuscript has a three-level safety architecture.** Level 1: vocabulary exclusion (certain constructions cannot be built). Level 2: hazard source typing (headed tokens have 0% hazard source rate). Level 3: transition suppression (the 17 disfavored transitions, ~65% compliance). These are independent, redundant safety layers. (C1446, C1546, C1553-C1555)
 
@@ -52,7 +52,7 @@ These claims combine structural evidence (Tier 2) with interpretive identificati
 
 ### Structural domain alignment (Tier 3: consistent with evidence, not proven by it)
 
-- **The grammar's structural properties align with thermal process control.** 28 tests across 4 test suites comparing VMS structure to Brunschwig's *Liber de arte distillandi* (1500). Forbidden transitions map onto physical failure modes. Recovery architecture matches Brunschwig's bounded retry rule. Fire degrees correlate with stability proxy. (F-BRU-001 through F-BRU-034)
+- **The grammar's structural properties align with thermal process control.** 28 tests across 4 test suites comparing VMS structure to Brunschwig's *Liber de arte distillandi* (1500). Forbidden transitions are *consistent with* physical failure modes (the per-class failure-mode labels are interpretive, not proven; the ENERGY_OVERSHOOT label is not supported by the atom glosses of its member transition — C2060). Recovery architecture matches Brunschwig's bounded retry rule. Fire degrees correlate with stability proxy. (F-BRU-001 through F-BRU-034)
 
 - **The manuscript is best modeled as a multi-register technical control notation.** The four-register architecture functions as a coordinated document stack for expert practitioners. (C1499, Phase 551)
 

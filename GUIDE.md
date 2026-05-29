@@ -37,7 +37,7 @@ But structural analysis reveals patterns: the notation uses a small set of symbo
 
 No one "translated" anything — but they proved, from internal structure alone, that the notation encodes music. The structure *is* the semantics.
 
-**This is exactly what we are doing with the Voynich Manuscript.** We proved that its internal structure — 49 instruction classes, 17 disfavored transitions, kernel-centric convergence, bounded recovery, and dimensionality matching modern distillation manuals — fits the domain of thermodynamic process control and no other domain tested. The disfavored transitions correspond to physical failure modes. The convergence behavior matches distillation physics. The recovery architecture matches Brunschwig's historical practice.
+**This is exactly what we are doing with the Voynich Manuscript.** We proved that its internal structure — 49 instruction classes, 17 forbidden transitions, kernel-centric convergence, bounded recovery, and dimensionality matching modern distillation manuals — fits the domain of thermodynamic process control and no other domain tested. The forbidden transitions are *consistent with* physical failure modes under the distillation interpretation (a Tier 3 inference, not a proven mapping — see Hazard Topology below). The convergence behavior matches distillation physics. The recovery architecture matches Brunschwig's historical practice.
 
 ---
 
@@ -129,17 +129,13 @@ At the grammar's center sit three irreducible operators: **k** (energy input, ap
 
 ### Hazard Topology
 
-The grammar disfavors 17 transitions (~65% compliance, C789) organized into 5 structural clusters (C109). The clustering is Tier 0 (proven from the data). The physical failure mode labels below are Tier 3 interpretations based on the distillation domain identification:
+The grammar forbids 17 specific directional token-transitions (~0% realized rate; ~65% class-level compliance, C789). These never occur adjacently in either direction (C2023). They are **not** uniformly distributed in atom space: the largest group corresponds to a genuine sealed-state → iteration sequencing failure (PHASE_ORDERING, 7 of 17, atom-grounded in C1529), and a second group maps to the l/r semi-transparent terminal class (C1530). The remaining transitions are weakly grouped or isolated. The atom-territory structure is Tier 2 (C1528-C1533: 7/10 pairwise atom-HEAD Jaccard = 0).
 
-| Class | Interpretive Label (Tier 3) |
-|-------|----------------|
-| PHASE_ORDERING (41%) | Material in the wrong phase location |
-| COMPOSITION_JUMP (24%) | Impure fractions passing through |
-| CONTAINMENT_TIMING (24%) | Overflow or pressure events (zero corpus impact — theoretical only) |
-| RATE_MISMATCH (6%) | Flow imbalance destabilizing the system |
-| ENERGY_OVERSHOOT (6%) | Thermal damage to material |
+> **Provenance correction (PHASE_732, C2060):** An early keyword-based scheme sorted all 17 transitions into five named distillation failure-modes. That 5-way partition was **imposed by keyword-matching, not discovered by clustering** — atom-territory clustering does not prefer 5 (silhouette-optimal k=8; k=3 ≥ k=5), and one label (ENERGY_OVERSHOOT, "thermal damage") is contradicted by the project's own hazard-frame map: its sole member `he→t` contains no heat atom (k-HEAD has complete hazard immunity, C1448). So **the 5-class partition and its physical failure-mode labels are Tier 3-4 interpretation, not proven structure.** The atom-grounded groupings (C1528-C1533) supersede the named labels.
 
-All 17 disfavored transitions are mediated through 23 "hub" MIDDLEs. At the atom level, the k-HEAD atom has complete hazard immunity (0.0% across 3,100 tokens). The system is safe during specification (Mode A: zero violations) and only vulnerable during execution (Mode B: 100% of violations).
+The legacy 5-label scheme (retained for historical reference, Tier 3-4): PHASE_ORDERING (material wrong-phase — the one gloss-coherent grouping), COMPOSITION_JUMP (impure fractions), CONTAINMENT_TIMING (overflow — zero corpus impact, theoretical only), RATE_MISMATCH (flow imbalance — not gloss-supported), ENERGY_OVERSHOOT (thermal damage — *contradicted by atom glosses, see above*).
+
+All 17 forbidden transitions are mediated through 23 "hub" MIDDLEs. At the atom level, the k-HEAD atom has complete hazard immunity (0.0% across 3,100 tokens). The system is safe during specification (Mode A: zero violations) and only vulnerable during execution (Mode B: 100% of violations).
 
 ### Program Structure
 

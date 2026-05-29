@@ -1122,15 +1122,29 @@ hazards:
     provenance: "C109, C789"
 
   failure_classes:
+    PROVENANCE_CORRECTION: |
+      PHASE_732 (2026-05-28, C2060): the 5-class taxonomy was IMPOSED by hardcoded
+      keyword-matching (phase18_failure_typology.py), NOT discovered by clustering.
+      The count 5 is NOT data-preferred (atom-territory silhouette-optimal k=8; k=3 >= k=5;
+      natural-vs-imposed ARI=0.42). The 5-class partition and its physical-failure-mode
+      labels are TIER 3-4 INTERPRETATION, not a structural guarantee. ENERGY_OVERSHOOT
+      is gloss-CONTRADICTED (sole member he->t has no k-HEAD heat atom; cf k-HEAD immunity).
+      Only PHASE_ORDERING (n=7) is a genuine gloss-coherent cluster (=C1529). The REAL
+      structural layer is head_territory_orthogonality below (C1528-C1533), which is
+      independently atom-derived and survives. The forbidden-transition EXISTENCE (count 17,
+      directional, ~0% realized) is the Tier 2 structural fact; the 5-way classification is not.
     thermodynamic_grounding: |
-      All 5 failure classes validated as physically coherent distillation failure modes:
-      15/15 glossed forbidden transitions map to recognizable failures;
-      8/8 asymmetric pairs have coherent physical explanations (reverse = safe).
-      Provenance: F-BRU-023 (THERMODYNAMIC_COHERENCE, Phase 334)
+      [TIER 3-4 INTERPRETATION, not structural guarantee — see PROVENANCE_CORRECTION]
+      Legacy claim: "5 failure classes validated as physically coherent distillation failure modes;
+      15/15 glossed forbidden transitions map to recognizable failures; 8/8 asymmetric pairs
+      coherent." Provenance: F-BRU-023 (THERMODYNAMIC_COHERENCE, Phase 334, F4 tier).
+      PHASE_732 gloss-check found the per-class physical labels mostly unsupported by atom glosses;
+      ENERGY_OVERSHOOT contradicted. Retain as historical interpretation only.
     head_territory_orthogonality: |
-      Hazard classes map to near-orthogonal HEAD atom territories (7/10 pairwise Jaccard=0).
-      Each class has a distinct atom-mechanical signature.
-      Provenance: C1528 (Phase 543)
+      [THE SURVIVING RIGOROUS LAYER — Tier 2, independently atom-derived]
+      Forbidden transitions map to near-orthogonal HEAD atom territories (7/10 pairwise Jaccard=0).
+      Each grouping has a distinct atom-mechanical signature. This is the real structure that
+      the imposed 5-class taxonomy approximated. Provenance: C1528-C1533 (Phase 543), C2060 (corroboration).
     line_position_gradient: |
       Classes partition early-to-late: COMPOSITION_JUMP=0.402, ENERGY_OVERSHOOT=0.473,
       CONTAINMENT_TIMING=0.510, RATE_MISMATCH=0.551, PHASE_ORDERING=0.581.

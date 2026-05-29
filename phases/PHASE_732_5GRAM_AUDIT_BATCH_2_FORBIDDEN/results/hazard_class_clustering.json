@@ -1,0 +1,22 @@
+{
+  "optimal_k": 8,
+  "silhouette_by_k": {
+    "2": 0.3594967729667475,
+    "3": 0.3998450913061919,
+    "4": 0.36237373737373735,
+    "5": 0.3721776589423649,
+    "6": 0.3900345281400645,
+    "7": 0.4681489262371615,
+    "8": 0.47875816993464054
+  },
+  "k5_silhouette": 0.3721776589423649,
+  "ari_imposed_vs_natural_k5": 0.4160141449861076,
+  "imposed_cohesion": 0.17016317016317017,
+  "null_cohesion_mean": 0.22346037296037297,
+  "null_cohesion_std": 0.013010280171724235,
+  "cohesion_z": -4.096545354421786,
+  "cohesion_p_emp": 0.0015,
+  "verdict_cohesion_real": true,
+  "verdict_k5_optimal": false,
+  "verdict_match_imposed": false
+}

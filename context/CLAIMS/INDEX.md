@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 2051 validated constraints (3 demoted Tier 2→3 in PHASE_731) | **Version:** 6.92 | **Date:** 2026-05-28 (PHASE_731 5-gram null audit batch 1 — 3 demotions: C557 daiin-trigger, C561 or→aiin, C816 CC positional ordering; 2 strong survivors: C549 qo→ch/sh interleaving, C562 ary 100% line-final; positive control C2056 passed after 2-cycle methodology calibration; 60% demotion rate in lexical/positional subset, below 67-83% expert prediction; new methodology refinement for categorical-exclusion vs frequency-claim expert prior)
+**Total:** 2052 validated constraints (4 demoted Tier 2→3) | **Version:** 6.93 | **Date:** 2026-05-28 (PHASE_732 forbidden-pair audit + hazard-class provenance correction — C2060 registers that the C109 5-class hazard taxonomy was IMPOSED by keyword-matching not discovered by clustering; C109 revised to existence-only; C216 demoted; 5-class distillation labels → Tier 3-4, ENERGY_OVERSHOOT gloss-contradicted; PHASE_ORDERING survives as only real cluster; Tier 0 untouched; new failure pattern #9 phantom-clustering; public docs cleaned. Prior: PHASE_731 batch 1 — C557/C561/C816 demoted, C549/C562 survived)
 
 > **Retraction notice (v6.37):** 4 permanently retracted (C1959, C1960, C1964, C1970). 2 retested and re-registered with corrected methodology (C1966, C1967). See Phase 667.
 
@@ -84,10 +84,10 @@ Every new constraint MUST specify system scope:
 
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
-| 109 | 5 failure classes (PHASE_ORDERING dominant 41%) | 2 | B | → [C109_hazard_classes.md](C109_hazard_classes.md) |
-| 110 | PHASE_ORDERING 7/17 = 41% | 2 | B | ⊂ grammar_system |
-| 111 | 65% asymmetric | 2 | B | ⊂ grammar_system |
-| 112 | 59% distant from kernel | 2 | B | ⊂ grammar_system |
+| 109 | **17 forbidden directional transitions exist** (~0% realized rate; ~65% class-level compliance per C789); fixed across all 83 folios. **[REVISED PHASE_732: 5-class taxonomy struck — was imposed by keyword-matching not clustering; see C2060]** | 2 | B | → [C109_hazard_classes.md](C109_hazard_classes.md) |
+| 110 | PHASE_ORDERING 7/17 = 41% — count of the one gloss-coherent grouping (=C1529 sealed→iteration); see C2060 | 2 | B | ⊂ grammar_system |
+| 111 | 65% asymmetric (taxonomy-independent; corroborated by C783 all-17-directional, C627 0/17 reciprocal) | 2 | B | ⊂ grammar_system |
+| 112 | 59% distant from kernel (taxonomy-independent) | 2 | B | ⊂ grammar_system |
 
 ---
 
@@ -165,7 +165,7 @@ Every new constraint MUST specify system scope:
 | 199 | Both mineral AND botanical survive | 3 | B | ⊂ operations |
 | 209 | Attentional pacing wins (6/8) | 2 | HT | ⊂ human_track |
 | 215 | BOTANICAL_FAVORED (8/8 tests, ratio 2.37) | 3 | B | ⊂ operations |
-| 216 | Hybrid hazard model (71% batch, 29% apparatus) | 2 | B | ⊂ operations |
+| ~~216~~ | ~~Hybrid hazard model (71% batch, 29% apparatus)~~ **DEMOTED Tier 2→3 (PHASE_732)** — 71/29 split computed over the imposed 5-class taxonomy; apparatus bucket leans on weakest class (CONTAINMENT_TIMING, theoretical-only); see C2060 | ~~2~~ 3 | B | ⊂ operations |
 | 217 | 0 true HT near hazards | 2 | HT | ⊂ human_track |
 | 221 | Deliberate skill practice (4/5) - NOT random mark-making | 2 | HT | ⊂ operations |
 
@@ -8032,9 +8032,44 @@ Two-cycle calibration documented in phase INDEX:
 
 ### Outstanding
 
-- Batch 2: forbidden-pair audit (C109/C627 individually) — highest-stakes outstanding test
+- Batch 2: forbidden-pair audit (C109/C627 individually) — **COMPLETE, see PHASE_732 below**
 - Batch 3: C816 cascade family (C819, C874, C600, C558, C817, C818)
 - Section 0.F + Section 0.J of INTERPRETATION_SUMMARY.md need mechanism reframe (deferred to a synthesis update phase)
+
+## Phase 732 — Forbidden-Pair Audit + Hazard-Class Provenance Correction (2026-05-28)
+
+Audited C109's 17 forbidden transitions under 5-gram null at the MIDDLE/token layer. Result confirmed C2023's prior finding (MIDDLE layer is co-occurrence-only) — the audit tested the less-load-bearing layer. But a user-prompted follow-up uncovered a far more significant finding: **the 5 hazard classes were never derived by clustering — they were imposed by a hardcoded keyword dictionary.** Triple-confirmed (source-code read + forensic file trace), then tested empirically (clustering + gloss-coherence). See `phases/PHASE_732_5GRAM_AUDIT_BATCH_2_FORBIDDEN/INDEX.md`.
+
+### New constraint
+
+| C# | Claim | Tier | Key metrics |
+|----|-------|------|-------------|
+| 2060 | **The C109 5-class hazard taxonomy was imposed by keyword-matching, not discovered by clustering.** Source `phase18_failure_typology.py` hardcodes 5 distillation-failure-mode classes + keyword lists (lines 61-87); the 17 forbidden transitions are sorted by substring keyword match (lines 392-411). No clustering produced 5 — the only clustering in the phase 15-20 chain produced 1 cluster (phase15a internal_clusters=1); phase 16 had a different 12-mode scheme. C109's stated evidence "Cluster analysis reveals 5 natural groupings" is FALSE about its method. Empirical clustering of the 17 transitions by atom territory (src/tgt HEAD+TERM): silhouette-optimal k=8 (0.479); k=3 (0.400) ≥ k=5 (0.372) — **5 is not data-preferred**; natural-vs-imposed ARI=0.42 (weak match). Only **PHASE_ORDERING (n=7, within-dist 0.154) is a tight gloss-coherent cluster** (=C1529 sealed/y-terminal → iteration/a-HEAD); CONTAINMENT_TIMING barely cohesive (0.218 vs random 0.224); RATE_MISMATCH + ENERGY_OVERSHOOT are singletons. **Gloss-coherence check:** ENERGY_OVERSHOOT ("scorching/heat") is CONTRADICTED — its sole member `he→t` contains no k-HEAD heat atom (`he`=watch.cool per C1394; consistent with C1448 k-HEAD hazard immunity); RATE_MISMATCH ("flow") and COMPOSITION_JUMP ("purification") have no supporting atoms; PHASE_ORDERING supports only a generic sequencing reading, not "vapor lock." The real atom-territory structure is independently and more rigorously held by C1528-C1533. **Caveat:** imposed-partition cohesion z=−4.10 vs 2000 random partitions is near-circular (keyword lists encode atom-family intuitions) and is NOT evidence for the 5-class count. **Disposition:** C109 revised to existence-only; 5-class taxonomy → Tier 3-4 interpretive labeling; ENERGY_OVERSHOOT/RATE_MISMATCH labels not gloss-supported; C216 demoted (71/29 split over imposed partition). Tier 0 untouched (frozen conclusion never depended on the taxonomy). | 2 | imposed_taxonomy, false_method_claim, hazard_classes, k5_not_data_preferred, PHASE_ORDERING_only_real_cluster, ENERGY_OVERSHOOT_gloss_contradicted, atom_structure_held_by_C1528, provenance_audit, PHASE_732 | hardcoded_dict_lines=61_87. keyword_assignment_lines=392_411. clustering_in_chain=1_cluster_not_5. silhouette_optimal_k=8. k5_silhouette=0.372. k3_silhouette=0.400. ari_natural_vs_imposed=0.42. phase_ordering_within_dist=0.154. containment_within_dist=0.218. random_cohesion=0.224. cohesion_z=-4.10_NEAR_CIRCULAR. energy_overshoot_heat_atoms=0. n_testable_clusters=3_of_5. n_singletons=2. |
+
+### Forbidden-pair audit (MIDDLE/token layer) — confirmatory of C2023
+
+17 pairs, all 0% real. 5-gram null at MIDDLE/token layer: 7 WEAK above-Markov (CONFOUNDED — negative control showed 5-gram under-produces all bigrams ~33% median, range 0.32-8.86×, so WEAK verdicts underdetermined), 6 MARKOV_TRIVIAL, 4 PHANTOM (`he`/`ee` have 0 corpus occurrences). The categorical claim (forbidden=0% vs frequency-matched controls 0.3-6%) is robust (C627 token-specific avoidance). **Layer caveat:** per C2023, MIDDLE layer is co-occurrence-only (z=−0.39); the load-bearing sequential structure is at the 49-class projection (z=+3.91, shuffle-null only, never 5-gram tested). The within-class anomaly test independently re-derived C629/C630 (class 23 contains both `s`→aiin at 40% and `dy`→aiin at 0% — token-specific, not miscategorization).
+
+### Dispositions
+
+| Constraint | Action |
+|---|---|
+| C109 | Revised to existence-only (17 forbidden directional transitions); 5-class taxonomy struck; detail-file header corrected (was wrongly "Tier 0 FROZEN", canonical INDEX = Tier 2) |
+| C110 | KEEP Tier 2 — true count of the one vindicated grouping (PHASE_ORDERING) |
+| C111, C112 | KEEP Tier 2 — taxonomy-independent (= C783/C627, kernel-distance) |
+| C216 | DEMOTE Tier 2→3 — 71/29 split over imposed partition |
+| C1528-C1533 | UNTOUCHED — atom-territory structure independently held; these are the surviving rigorous version |
+| Tier 0 frozen conclusion | UNTOUCHED |
+
+### Documentation cleanup
+
+- GUIDE.md: struck the false "clustering is Tier 0 (proven from data)" claim; reframed as imposed-taxonomy + real atom structure; ENERGY_OVERSHOOT footnoted as gloss-contradicted
+- WHAT_WE_CLAIM.md: dropped "organized into 5 hazard classes"; "map onto physical failure modes" → "consistent with (Tier 3)"
+- Three-level safety architecture preserved (taxonomy-independent: C1440-C1448, C1463-C1471)
+
+### Methodology
+
+New failure pattern (#9): **"discovered-method claim for an imposed-method result"** (phantom-clustering). Diagnostic: grep claim files for "cluster analysis reveals" / "natural groupings" / "k=N clusters"; verify a clustering script actually ran and selected N. Elevated suspicion for early-phase (15-20) taxonomy claims with round counts + physical-domain labels. Memory: `feedback_phantom_clustering_provenance_audit.md`. Caught only because crazy-expert read the derivation source rather than trusting the constraint text — "read the data directly, scripts only verify."
 
 ---
 

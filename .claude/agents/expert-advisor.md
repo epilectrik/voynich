@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2051 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2052 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2059.
+the highest ID present is C2060.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2051 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2052 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2051 validated constraints are present as canonical one-line claims with tier
+2052 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-28 11:38
-**Version:** FROZEN STATE (2051 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-28 19:51
+**Version:** FROZEN STATE (2052 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (29 feedback rules)
+6. Session Methodology Notes (31 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -444,10 +444,10 @@ C103	k = ENERGY_MODULATOR	2	B
 C104	h = PHASE_MANAGER	2	B
 C105	e = STABILITY_ANCHOR (54.7% recovery paths)	2	B
 C107	All kernel nodes BOUNDARY_ADJACENT to forbidden	2	B
-C109	5 failure classes (PHASE_ORDERING dominant 41%)	2	B
-C110	PHASE_ORDERING 7/17 = 41%	2	B
-C111	65% asymmetric	2	B
-C112	59% distant from kernel	2	B
+C109	**17 forbidden directional transitions exist** (~0% realized rate; ~65% class-level compliance per C789); fixed across all 83 folios. **[REVISED PHASE_732: 5-class taxonomy struck — was imposed by keyword-matching not clustering; see C2060]**	2	B
+C110	PHASE_ORDERING 7/17 = 41% — count of the one gloss-coherent grouping (=C1529 sealed→iteration); see C2060	2	B
+C111	65% asymmetric (taxonomy-independent; corroborated by C783 all-17-directional, C627 0/17 reciprocal)	2	B
+C112	59% distant from kernel (taxonomy-independent)	2	B
 C115	0 non-executable tokens	0	B
 C119	0 translation-eligible zones	0	B
 C120	PURE_OPERATIONAL verdict	0	B
@@ -525,7 +525,7 @@ C212	93% plants peak May-August	2	B
 C213	Opportunity-loss model supported (64.7% premature hazards)	2	B
 C214	EXT-4 duration criterion INVALIDATED	2	B
 C215	BOTANICAL_FAVORED (8/8 tests, ratio 2.37)	3	B
-C216	Hybrid hazard model (71% batch, 29% apparatus)	2	B
+C216	Hybrid Hazard Model	2	B
 C217	0 true HT near hazards	2	HT
 C221	Deliberate skill practice (4/5) - NOT random mark-making	2	HT
 C222	No intentional layout function	2	B
@@ -2295,6 +2295,7 @@ C2056	**Post-Heat Polymorphic Correction-Lane Family (Architectural Unit Subsumi
 C2057	**Currier A RI linker topology is structural-only — no atom-level semantic content.** Extending C835 (4 linkers / 12 edges with non-random topology vs degree-preserving null), an atom-specificity battery on the linker MIDDLEs returns 0/5 PASS: linker-bearing tokens do not concentrate any specific atom signature relative to controls. Linker topology H1+H5 PASS (non-random connection pattern survives); linker content H2/H3/H4 all FAIL. Linkers mark structural connections without carrying semantic content. Consistent with C171 (semantic ceiling) and C233 (LINE_ATOMIC) — content-empty linkers don't violate non-sequentiality. **References:** C835 (predecessor), C171, C233.	2	linker_topology_real, linker_content_empty, A_RI, atom_specificity_zero_of_five, refines_C835
 C2058	**Currier A o-HEAD ("arrange") rate does NOT track plant-illustration morphological complexity.** Pre-registered, locked before running: if o-HEAD vocabulary encodes botanical spatial structure, herbal folios with more-complex plant illustrations should have higher o-HEAD rate. N=29 Currier A herbal folios with PIAA blind "Key Features" morphological scoring. Raw Spearman ρ(complexity, o-rate) = +0.031, p=0.87. Token-count confound: ρ(tokens, o-rate)=+0.41, p=0.027. **Partial correlation controlling for token count: ρ=-0.057, p=0.77.** Falsifies "o-HEAD arrangement vocabulary describes plant visual structure" via this specific proxy. **Scope of falsification:** spatial-complexity-via-morphological-tag-count proxy. Does NOT falsify botanical-category-coded, use-coded, or any non-spatial interpretation. Extends manuscript-wide pattern (C138/C140) — Voynich text does not describe its illustrations; the arrangement vocabulary is operational, not depictive. **References:** C138, C140, C1388, C1502, C1559.	2	falsification, A_o_HEAD_not_botanical_proxy, scope_limited_to_spatial_complexity, partial_correlation_controlled, extends_C138_C140
 C2059	**Currier A Section P recovers a thermal HEAD-domain profile (B-like) inside A.** Section-stratified HEAD distribution across Currier A: Section H (herbal) o=26.2%, e=10.9%, k=4.6%, a=5.8% — arrangement-dominant; Section P (pharma) o=21.1%, **e=28.0%**, k=8.1%, a=6.4% — thermal-recovery (e-dominant, like Currier B's 40.4% e-HEAD); Section T (text) o=20.6%, e=13.4%, k=8.8%, a=21.7% — yield+arrange co-dominant. The Section P thermal-recovery is not articulated by C1266 (which used atom-cluster framing); this finding sharpens C1266 at HEAD-domain resolution. **Interpretive scope:** structural measurement only. Operational reading ("P is A's pharma-execution sub-context") is framework-echo-suspect and held to Tier 4 SPECULATIVE pending independent discriminating evidence. **References:** C1266 (predecessor), C1559 (cross-system HEAD gradient), C1502 (AZC arrangement domain).	3	section_HEAD_domain_split_within_A, section_P_thermal_recovery, refines_C1266_at_HEAD_resolution, operational_interpretation_held_to_Tier_4
+C2060	**The C109 5-class hazard taxonomy was imposed by keyword-matching, not discovered by clustering.** Source `phase18_failure_typology.py` hardcodes 5 distillation-failure-mode classes + keyword lists (lines 61-87); the 17 forbidden transitions are sorted by substring keyword match (lines 392-411). No clustering produced 5 — the only clustering in the phase 15-20 chain produced 1 cluster (phase15a internal_clusters=1); phase 16 had a different 12-mode scheme. C109's stated evidence "Cluster analysis reveals 5 natural groupings" is FALSE about its method. Empirical clustering of the 17 transitions by atom territory (src/tgt HEAD+TERM): silhouette-optimal k=8 (0.479); k=3 (0.400) ≥ k=5 (0.372) — **5 is not data-preferred**; natural-vs-imposed ARI=0.42 (weak match). Only **PHASE_ORDERING is a tight gloss-coherent cluster** (=C1529 sealed/y-terminal → iteration/a-HEAD); CONTAINMENT_TIMING barely cohesive (0.218 vs random 0.224); RATE_MISMATCH + ENERGY_OVERSHOOT are singletons. **Gloss-coherence check:** ENERGY_OVERSHOOT ("scorching/heat") is CONTRADICTED — its sole member `he→t` contains no k-HEAD heat atom (`he`=watch.cool per C1394; consistent with C1448 k-HEAD hazard immunity); RATE_MISMATCH ("flow") and COMPOSITION_JUMP ("purification") have no supporting atoms; PHASE_ORDERING supports only a generic sequencing reading, not "vapor lock." The real atom-territory structure is independently and more rigorously held by C1528-C1533. **Caveat:** imposed-partition cohesion z=−4.10 vs 2000 random partitions is near-circular (keyword lists encode atom-family intuitions) and is NOT evidence for the 5-class count. **Disposition:** C109 revised to existence-only; 5-class taxonomy → Tier 3-4 interpretive labeling; ENERGY_OVERSHOOT/RATE_MISMATCH labels not gloss-supported; C216 demoted (71/29 split over imposed partition). Tier 0 untouched (frozen conclusion never depended on the taxonomy).	2	imposed_taxonomy, false_method_claim, hazard_classes, k5_not_data_preferred, PHASE_ORDERING_only_real_cluster, ENERGY_OVERSHOOT_gloss_contradicted, atom_structure_held_by_C1528, provenance_audit, PHASE_732
 
 ---
 
@@ -5902,6 +5903,67 @@ The more mature and consistent the framework, the easier it is to tell coherent 
 
 ---
 
+## feedback-long-running-scripts-need-flush-and-interim-writes
+
+*"Any script with expected runtime >5 min must use flush=True on per-iteration prints AND write interim JSON results, not just final. Otherwise zero visibility during 1-3 hour runs."*
+
+PHASE_732 batch 2 audit (2026-05-28) ran for ~3 hours with **zero output visibility** — Python's stdout is block-buffered when redirected, and the script only wrote its JSON output at termination. User had to ask "how's it doing" multiple times across hours with only "CPU time climbing" as a signal.
+
+## The fix is trivial
+
+For any script with expected runtime >5 min:
+
+1. **Use `print(..., flush=True)` on per-iteration prints.**
+   ```python
+   print(f'{i:>3} {pair_name:>20} {result:.4f}', flush=True)
+   ```
+
+2. **Write interim JSON after each iteration**, not just at the end:
+   ```python
+   for pair in pairs:
+       result = audit_pair(pair)
+       dispositions[pair.name] = result
+       out_path.write_text(json.dumps(dispositions, indent=2))  # after EACH pair
+   ```
+   Costs ~1 ms per write (small JSON). Benefit: full crash-resilience + ability to read partial results.
+
+3. **Optionally, log to a sidecar progress file** with timestamps:
+   ```python
+   with open('progress.log', 'a') as f:
+       f.write(f'{time.time():.0f}: completed {pair.name} -> {result}\n')
+   ```
+
+## When this matters
+
+- Any audit batch with N synthetic corpora >= 1000
+- Any reverse-blind / matching test running across multiple folios
+- Any 5-gram null with stratified N
+- Any script you'd launch with `run_in_background: true`
+
+## When it doesn't matter
+
+- Scripts under 1-2 min total runtime (Python's atexit handlers flush)
+- Pure data-load scripts (no iterative output to track)
+
+## Cost-benefit
+
+Adding `flush=True` and interim JSON writes is essentially free in development time and runtime cost. Skipping them costs hours of monitoring uncertainty when running a 1-3 hour batch.
+
+## What this changes for future audits
+
+All batch-runner scripts in `phases/PHASE_***_AUDIT_BATCH_*/scripts/` should:
+- Use flush=True on per-iteration prints
+- Write interim JSON after each constraint/pair (not just final)
+- Optionally include a sidecar `progress.log` with timestamps
+
+Apply retroactively if creating new batches; do NOT modify scripts mid-run (would invalidate locked pre-registration).
+
+## Related memories
+
+- [[feedback-mechanism-cycle-procedural-ceiling]] (audit batches are part of the procedural cycle; runtime hygiene is part of the discipline)
+
+---
+
 ## feedback-made-up-threshold-audit
 
 *"Three-part diagnostic for early-investigation Tier 2 constraint audit — (1) threshold provenance (cited or invented), (2) value reproducibility under current pipeline, (3) effect above within-line shuffle null. C131 failed all three; retracted (2026-05-19)"*
@@ -6185,6 +6247,63 @@ PHASE_700 example: Voynich Section B period-2 specificity = +0.0052 (0.86% of sy
 **Use C2032 lag2/lag1 ratio methodology for periods < 7.** Different metric, different mathematical structure. Don't apply peak-specificity to short periods.
 
 **Related:** [[feedback-calibrate-thresholds-against-controls]] (metric refinement after pre-registered threshold issue is the correct response, not verdict flip), [[feedback-within-folio-shuffle-null-first]] (peak-specificity replaces raw z-score; shuffle null still required for the underlying rate computation).
+
+---
+
+## feedback-phantom-clustering-provenance-audit
+
+*"Failure pattern #9 — a claim states 'cluster analysis reveals N groupings' but no clustering ran; the real provenance is a hardcoded pre-analysis dictionary. Verify the method actually ran before trusting taxonomy claims, especially early-phase ones with round counts + domain labels."*
+
+# Failure pattern #9: discovered-method claim for an imposed-method result (phantom-clustering)
+
+## The pattern
+
+PHASE_732 (2026-05-28): C109's "5 hazard classes" were registered with evidence line *"Cluster analysis reveals 5 natural groupings."* Source-code investigation (crazy-expert read the derivation script; general-purpose agent traced the whole chain; I verified directly) found:
+
+- `phase18_failure_typology.py` lines 61-87 **hardcode** a dictionary of 5 distillation-failure-mode names + keyword lists, written before any data analysis.
+- Lines 392-411 sort the 17 forbidden transitions into the 5 classes by **keyword substring-matching** (`if kw in src or kw in tgt: score += 2`).
+- **No clustering anywhere.** The only clustering in the phase 15-20 chain produced 1 cluster (phase15a internal_clusters=1), not 5. Phase 16 had a different 12-mode scheme.
+
+The claim described a method (cluster analysis) that was never run. The real method was keyword-assignment to an a-priori taxonomy.
+
+## Why it's distinct from the existing 8 patterns
+
+Not invented-threshold (C131), not wrong-denominator (C475), not wrong-null (C1068), not broken-baseline (C476), not post-hoc-claim-substitution (C481), not Markov-reproducible (C1727). This is **the registered claim asserting a derivation method that the source code shows was never executed.** The taxonomy may even capture real structure (see below) — but the *provenance statement* is false.
+
+## Diagnostic
+
+When auditing a taxonomy / clustering / partition claim:
+1. **Grep the claim file and its phase scripts** for "cluster analysis", "natural groupings", "k=N clusters", "emerged", "silhouette", "kmeans", "linkage".
+2. **Verify a clustering algorithm actually ran AND selected N.** If the N appears only as `len(SOME_HARDCODED_DICT)` or a keyword-list count, the partition was imposed, not discovered.
+3. **Elevated suspicion:** early-phase work (the project's phases 15-20 era), round small counts (4/5/6), and physical-domain labels (distillation failure modes, etc.). Same era as the C131 invented-threshold retraction.
+
+## Separate the two questions (this is the key methodological lesson)
+
+"Was the partition **discovered or imposed**?" and "Does the partition **capture real structure**?" are DIFFERENT questions. Don't let the first answer the second.
+
+- Provenance can be IMPOSED (false "cluster analysis" claim) while the grouping still captures real structure (if the imposer had good domain intuitions encoded in the keywords).
+- PHASE_732: the 5-class partition WAS imposed, AND empirical clustering showed it is atom-cohesive above random (z=−4.10) — but that cohesion is **near-circular** (the keyword lists are atom-ish proxies, so clustering on atom features trivially finds the imposed grouping cohesive). The load-bearing numbers were k_optimal=8, k=3≥k=5, ARI=0.42 → **the specific count is not data-preferred**, and a gloss-coherence check found one label (ENERGY_OVERSHOOT) internally contradicted by the project's own atom decomposition (`he→t` has no heat atom).
+
+So the honest disposition was a SPLIT: existence-of-17-transitions survives (real), atom-territory structure survives (independently held by C1528-C1533), the specific 5-class taxonomy + physical labels demote to Tier 3-4, and the false "cluster analysis reveals" line is struck.
+
+## How to test whether an imposed partition is real (the fair test)
+
+1. Featurize the items by the features the partition claims to track (here: atom HEAD/TERM territory), INDEPENDENTLY of the imposition criterion.
+2. Cluster; report silhouette-optimal k and whether the claimed N is preferred.
+3. ARI between natural clustering and the imposed partition (>0.5 = substantial).
+4. Per-class cohesion vs random partitions of the same size profile — BUT beware circularity if the imposition criterion correlates with the features (then high cohesion is near-tautological; weight the k-selection and ARI instead).
+5. Gloss/semantic-coherence: does each class's label match what the items' atoms/glosses say? Internal contradiction (low-tier label vs high-tier instrument like the C1394 atomizer / C1448 hazard-frame map) is a legitimate, strong signal — stronger than two co-equal interpretations disagreeing.
+
+## The meta-lesson
+
+This was caught ONLY because an expert read the derivation source code rather than trusting the constraint text. Reinforces [[feedback_read_first_scripts_verify]] at the audit level: **when a constraint claims a method, read the script that produced it before accepting the claim.** Constraint text and source code can diverge; the source is authoritative for provenance.
+
+## Related memories
+
+- [[feedback_made_up_threshold_audit]] — pattern #1 (C131), same early-phase era, same audit-driven-correction shape
+- [[feedback_post_hoc_claim_substitution]] — pattern #5 (C481), JSON vs writeup divergence; this is the method-vs-claim analog
+- [[feedback_framework_as_null]] — the distillation-failure-mode labels are framework-echo; the gloss-contradiction is the tell
+- [[feedback_read_first_scripts_verify]] — read the source, don't trust the writeup
 
 ---
 
@@ -6893,7 +7012,7 @@ Both findings looked great descriptively. Both survived simple controls (permuta
 - middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1507, C1510, C1511, C1512, C1513, C1514, C1515, C1523, C1524, C1525, C1526, C1527, C1556, C1557, C1558, C1559, C1560, C1561, C1562, C1563, C1564
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
-- hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554
+- hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554, C2060
 - program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1435, C1436, C1437, C1438, C1439, C1451, C1463, C1464, C1465, C1466, C1467, C1468, C1469, C1470, C1471, C1566
 - convergence: C079, C084, C323, C325, C1169, C1401, C1402, C1403, C1404, C1405, C1406, C1407, C1411, C1418, C1422, C1431, C1432, C1433
 - link_operator: C340, C365, C366, C609, C804, C805, C806, C807, C808, C809, C810, C1170, C1171, C1172, C1173, C1174

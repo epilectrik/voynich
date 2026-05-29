@@ -1,0 +1,284 @@
+[
+  {
+    "pair": 1,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "shey",
+    "tgt": "aiin",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 2,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "shey",
+    "tgt": "al",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 3,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "shey",
+    "tgt": "c",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 4,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "dy",
+    "tgt": "aiin",
+    "src_classes": [],
+    "src_to_tgt_count": 10,
+    "src_to_tgt_total": 562,
+    "src_to_tgt_rate": 0.017793594306049824,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 5,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "dy",
+    "tgt": "chey",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 562,
+    "src_to_tgt_rate": 0.0,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 6,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "chey",
+    "tgt": "chedy",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 7,
+    "hazard_class": "PHASE_ORDERING",
+    "src": "chey",
+    "tgt": "shedy",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 8,
+    "hazard_class": "COMPOSITION_JUMP",
+    "src": "chedy",
+    "tgt": "ee",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 9,
+    "hazard_class": "COMPOSITION_JUMP",
+    "src": "c",
+    "tgt": "ee",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 4,
+    "src_to_tgt_rate": 0.0,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 10,
+    "hazard_class": "COMPOSITION_JUMP",
+    "src": "shedy",
+    "tgt": "aiin",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 11,
+    "hazard_class": "COMPOSITION_JUMP",
+    "src": "shedy",
+    "tgt": "o",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 12,
+    "hazard_class": "CONTAINMENT_TIMING",
+    "src": "chol",
+    "tgt": "r",
+    "src_classes": [],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 0,
+    "src_to_tgt_rate": null,
+    "classmate_info": null,
+    "verdict": "SRC_NO_CLASS"
+  },
+  {
+    "pair": 13,
+    "hazard_class": "CONTAINMENT_TIMING",
+    "src": "l",
+    "tgt": "chol",
+    "src_classes": [
+      5,
+      16,
+      20,
+      22,
+      23,
+      24,
+      30,
+      32,
+      40,
+      41
+    ],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 716,
+    "src_to_tgt_rate": 0.0,
+    "classmate_info": {
+      "src_classes": [
+        5,
+        16,
+        20,
+        22,
+        23,
+        24,
+        30,
+        32,
+        40,
+        41
+      ],
+      "n_classmate_middles": 24,
+      "classmate_total_transitions": 8665,
+      "classmate_to_tgt_count": 0,
+      "classmate_to_tgt_rate": 0.0,
+      "n_classmates_that_hit_tgt": 0,
+      "n_classmates_observed": 21
+    },
+    "verdict": "CLASS_WIDE_AVOID"
+  },
+  {
+    "pair": 14,
+    "hazard_class": "CONTAINMENT_TIMING",
+    "src": "or",
+    "tgt": "dal",
+    "src_classes": [
+      43
+    ],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 415,
+    "src_to_tgt_rate": 0.0,
+    "classmate_info": {
+      "src_classes": [
+        43
+      ],
+      "n_classmate_middles": 11,
+      "classmate_total_transitions": 4068,
+      "classmate_to_tgt_count": 0,
+      "classmate_to_tgt_rate": 0.0,
+      "n_classmates_that_hit_tgt": 0,
+      "n_classmates_observed": 11
+    },
+    "verdict": "CLASS_WIDE_AVOID"
+  },
+  {
+    "pair": 15,
+    "hazard_class": "CONTAINMENT_TIMING",
+    "src": "he",
+    "tgt": "or",
+    "src_classes": [
+      1
+    ],
+    "src_to_tgt_count": 1,
+    "src_to_tgt_total": 22,
+    "src_to_tgt_rate": 0.045454545454545456,
+    "classmate_info": {
+      "src_classes": [
+        1
+      ],
+      "n_classmate_middles": 7,
+      "classmate_total_transitions": 2113,
+      "classmate_to_tgt_count": 32,
+      "classmate_to_tgt_rate": 0.015144344533838144,
+      "n_classmates_that_hit_tgt": 4,
+      "n_classmates_observed": 6
+    },
+    "verdict": "SRC_ANOMALOUS"
+  },
+  {
+    "pair": 16,
+    "hazard_class": "RATE_MISMATCH",
+    "src": "ar",
+    "tgt": "dal",
+    "src_classes": [
+      3
+    ],
+    "src_to_tgt_count": 1,
+    "src_to_tgt_total": 626,
+    "src_to_tgt_rate": 0.001597444089456869,
+    "classmate_info": {
+      "src_classes": [
+        3
+      ],
+      "n_classmate_middles": 6,
+      "classmate_total_transitions": 5286,
+      "classmate_to_tgt_count": 1,
+      "classmate_to_tgt_rate": 0.00018917896329928113,
+      "n_classmates_that_hit_tgt": 1,
+      "n_classmates_observed": 5
+    },
+    "verdict": "WEAK_MIXED"
+  },
+  {
+    "pair": 17,
+    "hazard_class": "ENERGY_OVERSHOOT",
+    "src": "he",
+    "tgt": "t",
+    "src_classes": [
+      1
+    ],
+    "src_to_tgt_count": 0,
+    "src_to_tgt_total": 22,
+    "src_to_tgt_rate": 0.0,
+    "classmate_info": {
+      "src_classes": [
+        1
+      ],
+      "n_classmate_middles": 7,
+      "classmate_total_transitions": 2113,
+      "classmate_to_tgt_count": 48,
+      "classmate_to_tgt_rate": 0.022716516800757217,
+      "n_classmates_that_hit_tgt": 2,
+      "n_classmates_observed": 6
+    },
+    "verdict": "SRC_ANOMALOUS"
+  }
+]
