@@ -181,9 +181,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 6.93 |
-| Constraints | 2052 validated (9 retracted, 2 retested, 10 demoted) |
-| Phases | 732 completed |
+| Version | 6.94 |
+| Constraints | 2054 validated (9 retracted, 2 retested, 11 demoted) |
+| Phases | 733 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 passed) |
 | Characterization | ACTIVE |
@@ -203,6 +203,8 @@ Use these to verify your filtering is correct:
 **External (talking to user):** Be clear and direct. Don't over-qualify casual explanations with structural caveats.
 
 The user can ask for precision when needed. Default to clarity over pedantry in conversation.
+
+**NEVER invoke time, duration, or fatigue.** Do not say "we've been at this a while," "this is a good/natural stopping point," "it's late," "long session," "fresh next session," or any variant. You have no concept of elapsed time or how long anything took — these framings are always invented and they're annoying. The user decides when to stop and will say so explicitly. Present next-step options on their merits (EV, risk, what resolves an open question), never on imagined effort or time spent.
 
 ---
 

@@ -1,0 +1,9 @@
+{
+  "real_baseline": 0.937,
+  "fivegram_ari": 0.762,
+  "shuffle_floor_mean": 0.8042018744916776,
+  "shuffle_floor_sd": 0.07353488846838543,
+  "random_floor_mean": 0.6690954987669079,
+  "random_floor_sd": 0.11878376069569328,
+  "verdict": "UNINFORMATIVE_ROLE_CONSTRAINT_DOMINATED"
+}

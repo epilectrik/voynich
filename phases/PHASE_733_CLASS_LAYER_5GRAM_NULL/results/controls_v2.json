@@ -1,0 +1,25 @@
+{
+  "bridge": {
+    "real_excess": 0.04847790453074513,
+    "synth_mean": 0.04213534375051605,
+    "synth_sd": 0.009790443444934533,
+    "synth_95pct": 0.05789930073818575,
+    "z": 0.6478318184362375,
+    "p_emp": 0.21,
+    "real_above_95": false
+  },
+  "break_bigram": {
+    "real_excess": 0.14921941045516193,
+    "synth_mean": 0.1372189999947524,
+    "synth_sd": 0.01572859419001706,
+    "synth_95pct": 0.16499791787214782,
+    "z": 0.7629677716541378,
+    "p_emp": 0.19,
+    "real_above_95": false
+  },
+  "synth_unmapped_mean": 0.38968442096244443,
+  "real_unmapped": 0.374910752534628,
+  "clean_survival": false,
+  "n_synth": 100,
+  "n_shuffle_per": 12
+}

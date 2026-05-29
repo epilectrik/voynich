@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2052 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2054 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2060.
+the highest ID present is C2062.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2052 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2054 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2052 validated constraints are present as canonical one-line claims with tier
+2054 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-28 19:51
-**Version:** FROZEN STATE (2052 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-05-28 21:58
+**Version:** FROZEN STATE (2054 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (31 feedback rules)
+6. Session Methodology Notes (33 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -2258,7 +2258,7 @@ C2019	**Markov-based generation reproduces Voynich distribution center but not t
 C2020	**f67v2 is a caption-inventory reference page (fourth structurally-distinct scaffolding type).** Pre-registered hypothesis (per crazy-expert prediction) tested with 5 predictions on f67v2 (rank 2 of 224 by LM surprise, z=+4.12): (P-67-1) token length skewed short (4.90 vs corpus 5.06): PASS. (P-67-2) low PREFIX rate (56.7% vs corpus 82.4%): PASS. (P-67-3) ≥80% rare types (key prediction): 100% of f67v2's 57 unique tokens occur ≤2 times: PASS. (P-67-4) token count consistent with ~12 surrounding diagram elements (57 unique tokens): PASS. (P-67-5) not periodic (0.037 vs f57v's 0.87): PASS. 5/5 confirmed. Placement code distribution shows 36/60 = 60% C (Center) tokens consistent with per-element labels for a central rosette diagram. f67v2 represents a fourth structurally-distinct reference type alongside f57v (tabular C921), f66r (structural singleton C1992; glossary interpretation retracted 2026-05-15), f49v (apparatus C497). All four scaffolding types share ZERO common structural pattern but all serve reference/metadata function — heterogeneous reference apparatus consistent with single-author multi-content-type workshop manual.	2	LM, scaffolding, caption_inventory, f67v2, single_author_evidence, C497, C921, C1992
 C2021	**Voynich-to-gloss translator: C1394 atom cipher is learnable from data with 92.6% held-out accuracy + 75% novel-token generalization.** Trained small autoregressive transformer (4 layer, 128 dim, ~700K params) on 8021 unique H-track tokens paired with their Morphology.atomize() output (per C1394 HEAD+MOD*+TERM structure with semantic tags: heat, cool, do, end, yield, respond, state, arrange, bind, iterate, watch, etc.). Format: input chars + SEP + autoregressive gloss generation. Held-out val set sequence-level exact-match: 92.6% (743/802). On 8 made-up Voynichese-shaped tokens never seen during training: 6/8 correct (failures are high-e-depth counting errors with 4+ consecutive e's). Model has learned the atomization RULE not just memorized corpus mapping. Operationalizes C1394 atom cipher as queryable artifact. Foundation for line-level glossing, recipe-alignment, and structural-decoding follow-up work. Methodology contribution: structural decoding rules are recoverable from data via small supervised models.	2	LM, glosser, atom_cipher, C1394, translator, sequence_to_sequence, learnable_structure
 C2022	**Voynich has substantial learnable structure that contradicts natural-language priors.** Three independent pretrained-model probes confirm Voynich is structurally rich AND structurally distinct from natural language. (1) TinyLlama-1.1B base perplexity on H-track: 1388 (10.44 bpt) — useless. (2) After 3 epochs fine-tuning on H-track train split: 24.2 perplexity (4.60 bpt) on held-out test. **57x improvement, 56% bits-per-token drop**, exceeds pre-registered >=50% threshold. Comparable to pretrained TinyLlama's perplexity on Python code (22.4). (3) ByT5-small (char-level, no BPE) distinguishes real from token-shuffled Voynich at 67% classifier accuracy, confirming character-level structure. **Critically, real Voynich has HIGHER ByT5 perplexity (6.96 bpc) than shuffled Voynich (6.65 bpc): the structural arrangement actively contradicts NL char-level priors.** Combined evidence supports C171 (PURE_OPERATIONAL non-linguistic) + C2015 (char-level compression contrast) + C2018 (Markov plateau) jointly: Voynich is a rich constructed notation whose statistical structure is alien to natural language.	2	LM, pretrained_probe, fine_tune, ByT5, TinyLlama, C171, C2015, C2018
-C2023	**MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B.** Within-line shuffle null on Currier B yields opposite verdicts at two abstraction layers. At the MIDDLE-string layer: real I(middle; prev_middle) = 1.546 bits vs null 1.553 ± 0.017, z = −0.39 (at-null). At the 49-class layer: real I(class; prev_class) = 0.264 vs null 0.215 ± 0.013, **z = +3.91 (significantly above null)**. Same data, two layers, two results. The C976/C1010 macro-state automaton at the 49-class projection is genuinely Markov-sequential; the MIDDLE-token layer below it is co-occurrence-only. C109/C997 forbidden pairs are bag-of-line co-occurrence prohibitions: directional analysis of all 17 pairs yields 0 real adjacent occurrences in BOTH directions, 16/17 with zero same-line co-occurrence (per C1552 phantom pattern), 1/17 (`he`→`t`) with both directions symmetrically suppressed against fwd_null=0.53 / bwd_null=0.63. The "forbidden transitions" terminology applies at the 49-class projection (per C783 directional); at the MIDDLE layer, the constraint is co-occurrence-forbidden (per C1118 75.2% bidirectional). Operationalizes via shuffle-null methodology the layer distinction already implicit in C1118 / C1212 / C1024 / C1034 / C886.	2	shuffle_null, MIDDLE_layer, class_layer, two_layer, co_occurrence_vs_transition, C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552
+C2023	**[CLASS-LAYER SCALAR-MI HALF DEMOTED Tier 2→3, PHASE_733 — see C2061/C2062]** **MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B.** Within-line shuffle null on Currier B yields opposite verdicts at two abstraction layers. At the MIDDLE-string layer: real I(middle; prev_middle) = 1.546 bits vs null 1.553 ± 0.017, z = −0.39 (at-null). At the 49-class layer: real I(class; prev_class) = 0.264 vs null 0.215 ± 0.013, **z = +3.91 (significantly above SHUFFLE null)**. **PHASE_733 5-gram null UPDATE:** the class-layer *scalar first-order MI* is 5-gram-REPRODUCIBLE — it is above composition but NOT above local character statistics. This SCALAR claim demotes to Tier 3 (joins C1727/C645 as a shuffle-survivor failing the sharper null). HOWEVER the macro-state *eigenstructure* (λ2) SURVIVES (C2061): the "genuinely sequential" claim holds at the eigenstructure level, not the scalar-MI level. Same data, two layers, two results — and within the class layer, two metrics (scalar-MI fails, eigenstructure survives). The C976/C1010 macro-state automaton at the 49-class projection carries above-Markov eigenstructure (C2061); the MIDDLE-token layer below it is co-occurrence-only. C109/C997 forbidden pairs are bag-of-line co-occurrence prohibitions: directional analysis of all 17 pairs yields 0 real adjacent occurrences in BOTH directions, 16/17 with zero same-line co-occurrence (per C1552 phantom pattern), 1/17 (`he`→`t`) with both directions symmetrically suppressed against fwd_null=0.53 / bwd_null=0.63. The "forbidden transitions" terminology applies at the 49-class projection (per C783 directional); at the MIDDLE layer, the constraint is co-occurrence-forbidden (per C1118 75.2% bidirectional). Operationalizes via shuffle-null methodology the layer distinction already implicit in C1118 / C1212 / C1024 / C1034 / C886.	2	shuffle_null, MIDDLE_layer, class_layer, two_layer, co_occurrence_vs_transition, C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552
 C2024	**Bio Section Carries Marginal Residual MIDDLE-Layer Sequential Structure in Currier B; Other Sections at-or-below Null.** Per-section within-line shuffle null on Currier B yields heterogeneous signatures. Section B (Bio, f74-f84 region): z = +1.49 (real I=1.137, null=1.104, excess +0.034). Section H (Herbal_B): z = −2.70. Section S (Stars/Recipe_B): z = −1.33. Section C (Cosmological foldouts, B-language text): z = −1.17. Section T (Top/intro B-tokens): z = −0.91. **Bio is the only B-section with positive residual sequential excess at the MIDDLE layer.** The whole-of-B at-null result (C2023, z = −0.39) is an average of Bio's marginal positive signal and four near-null-or-negative sections. Confirms C1048's prediction that BIO carries the strongest residual sequential structure in B. Section-level heterogeneity in residual sequential signal is consistent with C1047 (section-dynamics interaction absent at macro level but present at residual level) and C1055 (M2 near-section-decomposable).	2	shuffle_null, section_stratified, Bio_residual, B_section, MIDDLE_layer, C1047, C1048, C1055, C1085, C1086, C1116, C1404, C2023
 C2025	**Currier A Class-Layer Shuffle Null at-null Confirms C225 via Independent Methodology.** Class-layer within-line shuffle null on Currier A yields real I(class; prev_class) = 0.707 bits vs null 0.698 ± 0.023, z = +0.37 (at-null). Confirms C225's "A Transition Validity = 2.1%" claim via independent shuffle-null methodology — A has minimal class-Markov transition structure. C346's reported "sequential coherence" (1.20x) therefore lives at a different organizational level than class-Markov adjacency: it must be record-level / positional / compositional (C233 LINE_ATOMIC, C240 NON_SEQUENTIAL_CATEGORICAL_REGISTRY, C422 DA articulation, C475/C729 PP co-occurrence compliance, C964 boundary-constrained free-interior). Combined with A's MIDDLE-layer shuffle-null excess of z = −5.09 (the most strongly negative across subsets — entirely sparsity-driven exclusion of unrealizable pairs), A is bag-of-line at both class and MIDDLE layers despite C346's within-record coherence. Methodological strengthening of C225: shuffle-null is a stricter test than the 2.1% validity threshold count.	2	shuffle_null, Currier_A, class_layer, sequential_coherence_locus, C225_corroboration, C225, C230, C231, C233, C240, C346, C422, C475, C729, C964
 C2026	**Antidotarium Nicolai 8D Matcher Baseline — Section S Source-Matching Not Closed by Acquisition.** Featurized 124 named Antidotarium recipes using Latin keyword patterns (ignis/calefac/bulli for k; videre/color/consistency for h; donec/dum/sufficit for t; addatur/agitando for e) substituting for English in the Brunschwig compound-matcher featurizer; ran through TUNED_DIMS residual matcher. Result: no Antidotarium recipe matches any Section S folio under d=1.0 (min Section S distance = 1.375 on f106v↔YEra; min anywhere = 1.058). Top-1 attractor degenerates to f34v (Section H, REGIME_3, 115 tokens) for 82 of 124 recipes (66%). **Same f34v collapse observed for two control corpora**: Codicillus (19 PL-companion alchemy segments, in-domain): 11/19 default to f34v, no ratios > 1.30; Brunschwig 1512 (20 validated compound recipes, in-domain): 12/20 default to f34v, no ratios > 1.30. f34v universal attractor consistent with C1366 (top-5 least-anomalous folio = f34v 0.71 / f106r 0.67 / f106v 0.65 / f31r 0.62 / f66v 0.62) — a geometric centrality property of the V-side feature space, not a corpus signal. **Top-1 ratio-confidence mode of the 8D matcher is therefore not a validated evaluation method**; validated C1971 matches (e.g., C1943 f106v↔Ch40M d=0.933, C1990 f75r↔Ch.28) use hypothesis-driven distance gating instead. Antidotarium Nicolai itself is over-curated 12th-c. Salernitan teaching canon; practitioner-use sources (Mesue's Grabadin, Antidotarium Magnum) remain candidate Section S source classes per `project_section_s_source_genre_gap.md`. Acquisition closes the corpus-availability gap for Nicolai specifically but does not close the Section S source-matching gap.	2	matcher_baseline, Section_S_source_gap, top1_degeneracy, geometric_centrality, C1366, C1971, C1943, C1955, C1990, C1995, Antidotarium_Nicolai, project_section_s_source_genre_gap
@@ -2296,6 +2296,8 @@ C2057	**Currier A RI linker topology is structural-only — no atom-level semant
 C2058	**Currier A o-HEAD ("arrange") rate does NOT track plant-illustration morphological complexity.** Pre-registered, locked before running: if o-HEAD vocabulary encodes botanical spatial structure, herbal folios with more-complex plant illustrations should have higher o-HEAD rate. N=29 Currier A herbal folios with PIAA blind "Key Features" morphological scoring. Raw Spearman ρ(complexity, o-rate) = +0.031, p=0.87. Token-count confound: ρ(tokens, o-rate)=+0.41, p=0.027. **Partial correlation controlling for token count: ρ=-0.057, p=0.77.** Falsifies "o-HEAD arrangement vocabulary describes plant visual structure" via this specific proxy. **Scope of falsification:** spatial-complexity-via-morphological-tag-count proxy. Does NOT falsify botanical-category-coded, use-coded, or any non-spatial interpretation. Extends manuscript-wide pattern (C138/C140) — Voynich text does not describe its illustrations; the arrangement vocabulary is operational, not depictive. **References:** C138, C140, C1388, C1502, C1559.	2	falsification, A_o_HEAD_not_botanical_proxy, scope_limited_to_spatial_complexity, partial_correlation_controlled, extends_C138_C140
 C2059	**Currier A Section P recovers a thermal HEAD-domain profile (B-like) inside A.** Section-stratified HEAD distribution across Currier A: Section H (herbal) o=26.2%, e=10.9%, k=4.6%, a=5.8% — arrangement-dominant; Section P (pharma) o=21.1%, **e=28.0%**, k=8.1%, a=6.4% — thermal-recovery (e-dominant, like Currier B's 40.4% e-HEAD); Section T (text) o=20.6%, e=13.4%, k=8.8%, a=21.7% — yield+arrange co-dominant. The Section P thermal-recovery is not articulated by C1266 (which used atom-cluster framing); this finding sharpens C1266 at HEAD-domain resolution. **Interpretive scope:** structural measurement only. Operational reading ("P is A's pharma-execution sub-context") is framework-echo-suspect and held to Tier 4 SPECULATIVE pending independent discriminating evidence. **References:** C1266 (predecessor), C1559 (cross-system HEAD gradient), C1502 (AZC arrangement domain).	3	section_HEAD_domain_split_within_A, section_P_thermal_recovery, refines_C1266_at_HEAD_resolution, operational_interpretation_held_to_Tier_4
 C2060	**The C109 5-class hazard taxonomy was imposed by keyword-matching, not discovered by clustering.** Source `phase18_failure_typology.py` hardcodes 5 distillation-failure-mode classes + keyword lists (lines 61-87); the 17 forbidden transitions are sorted by substring keyword match (lines 392-411). No clustering produced 5 — the only clustering in the phase 15-20 chain produced 1 cluster (phase15a internal_clusters=1); phase 16 had a different 12-mode scheme. C109's stated evidence "Cluster analysis reveals 5 natural groupings" is FALSE about its method. Empirical clustering of the 17 transitions by atom territory (src/tgt HEAD+TERM): silhouette-optimal k=8 (0.479); k=3 (0.400) ≥ k=5 (0.372) — **5 is not data-preferred**; natural-vs-imposed ARI=0.42 (weak match). Only **PHASE_ORDERING is a tight gloss-coherent cluster** (=C1529 sealed/y-terminal → iteration/a-HEAD); CONTAINMENT_TIMING barely cohesive (0.218 vs random 0.224); RATE_MISMATCH + ENERGY_OVERSHOOT are singletons. **Gloss-coherence check:** ENERGY_OVERSHOOT ("scorching/heat") is CONTRADICTED — its sole member `he→t` contains no k-HEAD heat atom (`he`=watch.cool per C1394; consistent with C1448 k-HEAD hazard immunity); RATE_MISMATCH ("flow") and COMPOSITION_JUMP ("purification") have no supporting atoms; PHASE_ORDERING supports only a generic sequencing reading, not "vapor lock." The real atom-territory structure is independently and more rigorously held by C1528-C1533. **Caveat:** imposed-partition cohesion z=−4.10 vs 2000 random partitions is near-circular (keyword lists encode atom-family intuitions) and is NOT evidence for the 5-class count. **Disposition:** C109 revised to existence-only; 5-class taxonomy → Tier 3-4 interpretive labeling; ENERGY_OVERSHOOT/RATE_MISMATCH labels not gloss-supported; C216 demoted (71/29 split over imposed partition). Tier 0 untouched (frozen conclusion never depended on the taxonomy).	2	imposed_taxonomy, false_method_claim, hazard_classes, k5_not_data_preferred, PHASE_ORDERING_only_real_cluster, ENERGY_OVERSHOOT_gloss_contradicted, atom_structure_held_by_C1528, provenance_audit, PHASE_732
+C2061	**Macro-state eigenstructure of the Currier B class-transition operator survives the 5-gram null (vindicates C976-C978).** The second eigenvalue λ2 of the raw 49×49 class transition matrix (the clean measure of macro-state slow-mixing structure; bypasses the C976 merge's hardcoded role/depletion constraints) is genuinely above-Markov: real λ2=0.2063, 5-gram-synth λ2=0.1194±0.017 sitting at the within-line-shuffle floor 0.1176±0.009 (5-gram only 2% of the way from floor to real). Per-synth-own-shuffle symmetry control: real λ2 excess +0.0873 vs 5-gram synth excess +0.0517±0.014, **z=+2.51, p=0.000** — real significantly exceeds synth under the SAME metric where scalar-MI was reproduced. The 5-gram reproduces ~60% of the λ2 excess (partly morphology-derivable) but the remaining ~40% is above-Markov. The macro-automaton (C976-C978/C1010) faced the sharpest null it has ever been tested against and passed at the eigenstructure level. **SCOPE: validates above-Markov macro-structure in the raw 49-class transition operator — NOT a re-derivation of C978's 6-state 0.894 spectral gap (a different operator on the merged 6×6 matrix, not re-measured here).** Partition-ARI through the C976 merge was confounded (role/depletion constraints force ARI 0.67-0.80 even for structureless nulls: random 0.669, shuffle 0.804, real 0.937, 5-gram 0.762) and is uninformative; λ2 of the raw matrix is the uncontaminated metric. **References:** C976, C977, C978, C1010, C2023, C2055, C2056, C549, C562.	2	macro_eigenstructure_survives_5gram, lambda2_above_markov, vindicates_C976_C978, scoped_to_raw49_operator_not_C978_gap, partition_ARI_confounded_by_merge_constraints, per_synth_own_shuffle_symmetry, B
+C2062	**Three-axis decomposition of Currier B class-sequential structure.** The class-layer sequential signal splits into three components with distinct 5-gram-null verdicts: (a) **local control bigrams** (specific token transitions, e.g. qo→ch/sh) — REAL above-Markov; (b) **macro-state eigenstructure** (λ2 of the 49-class operator) — REAL above-Markov; (c) **aggregate scalar first-order class-MI** (C2023) — the floor-dominated MIDDLE layer, morphology-reproducible. The genuine above-Markov grammar lives in the local bigrams and the macro-eigenstructure; the aggregate scalar one-step MI is reproducible from local character statistics because it is dominated by the high-mass local bigrams and conflates them with the morphology-derivable bulk. This explains why a character 5-gram (which reproduces all surface statistics, C2055) reproduces the scalar class-MI but not the macro-eigenstructure: scalar MI is a high-mass-dominated lumped functional, λ2 is a global community-structure functional. **References:** C2023 (demoted middle layer), C2061 (eigenstructure), C549/C562 (local bigrams), C2055 (5-gram surface reproduction), C2056.	2	three_axis_decomposition, local_bigrams_real, macro_eigenstructure_real, scalar_MI_morphology_shadow, scalar_vs_eigenstructure_distinction, B
 
 ---
 
@@ -5503,6 +5505,53 @@ Together these establish the substrate-vs-mechanism distinction and the controls
 
 ---
 
+## feedback-chained-controls-scalar-vs-eigenstructure
+
+*"Three load-bearing nuances from PHASE_733 — (1) per-synth-own-shuffle baseline is mandatory (raw real-vs-synth conflates composition-fidelity with structure), (2) metrics through constraint-laden algorithms are confounded (floor-control or bypass), (3) scalar aggregate MI ≠ eigenstructure — a 5-gram can reproduce one and not the other."*
+
+# Chained controls + scalar-vs-eigenstructure (PHASE_733)
+
+PHASE_733 tested C2023 (class-layer sequential structure, grounds the macro-automaton) against the 5-gram null for the first time. A chain of controls — each catching the previous one's confound — flipped the verdict twice before converging. Three reusable lessons.
+
+## Lesson 1: per-synth-own-shuffle (own-baseline) is mandatory for cross-corpus structured-metric comparison
+
+The naive test compared real raw MI (0.264) to 5-gram-synth raw MI (0.221), got z=+3.83, "survives." FALSE POSITIVE. The synth has lower class diversity → lower raw MI AND lower own-shuffle floor. Comparing raw values measured composition-fidelity, not the structure under test.
+
+**Fix:** compute each corpus's metric as an EXCESS over its OWN shuffle null (real_excess = real − real_shuffle; synth_excess = synth − synth_OWN_shuffle), then compare excesses. This cancels the MI-estimator bias and the composition-fidelity gap. Under the correct metric: real excess +0.0485 vs synth +0.0421, p=0.21 → C2023 actually FAILS (5-gram-reproducible).
+
+Generalizes `feedback_within_folio_shuffle_null_first.md`: whenever comparing a structured metric (MI, λ2, autocorrelation, …) across corpora with different composition, each corpus must be referenced to its OWN null, never to a shared/real null. Raw cross-corpus comparison is a composition-fidelity artifact generator.
+
+## Lesson 2: metrics computed THROUGH a constraint-laden algorithm are confounded
+
+To test whether the 5-gram reproduces the C976 6-state macro-automaton TOPOLOGY, I ran C976's constraint-preserving merge on synth corpora and computed partition-ARI vs canonical. 5-gram gave ARI 0.762, all 6 states — looked like reproduction. CONFOUND: the merge has hardcoded role-integrity + 18 depleted-pair constraints that FORCE a 6-state partition. Floor control: within-line shuffle through the merge → 0.804; UNIFORM-RANDOM matrix → 0.669; real → 0.937. Even structureless noise scores 0.67-0.80 because the constraints dominate.
+
+**Fix:** floor-control any algorithm-mediated metric with shuffle AND random fed through the SAME pipeline. Better: prefer a metric that bypasses the constraint-laden algorithm entirely. Here, λ2 of the RAW 49×49 transition matrix (no merge) is the clean macro-structure measure.
+
+## Lesson 3: scalar aggregate ≠ eigenstructure — test the right functional
+
+C2023's scalar I(class;prev) was 5-gram-reproducible (p=0.21) BUT the macro-state eigenstructure λ2 was NOT (real 0.206 vs 5-gram 0.119 ≈ shuffle floor 0.118; per-synth excess p=0.000). Both true, fully coherent:
+- **Scalar MI** = high-mass-dominated lumped functional of the bigram joint. Dominated by frequent LOCAL control bigrams (qo→ch/sh, which survived 5-gram null in PHASE_731). A 5-gram reproduces those → reproduces scalar MI.
+- **λ2** = global community/slow-mixing structure (which classes form metastable macro-states). A relational pattern across many cells, not in any local n-gram window. The 5-gram has no mechanism to reproduce it.
+
+A model can match the high-mass joint distribution (→ matched scalar MI) while flattening the slow-mixing block structure (→ collapsed λ2). λ2 is the more sensitive, more discriminating measure of genuine macro-organization. **For macro-state / automaton / "does it have global structure" claims, test the eigenstructure (λ2) directly — do not rely on scalar MI, which is floor-dominated.**
+
+## The synthesis this produced
+
+Three-axis decomposition (registered C2062): class-sequential structure = (a) local control bigrams [real, above-Markov], (b) macro-state eigenstructure [real, above-Markov], (c) aggregate scalar first-order class-MI [morphology-reproducible middle layer]. The genuine grammar lives in (a) and (b); the scalar aggregate that C2023 measured is the weak floor-dominated layer.
+
+## Outcome
+
+C2023 scalar-MI half demoted Tier 2→3 (joins C1727/C645 as shuffle-survivor failing 5-gram). C976-C978 macro-automaton VINDICATED at the eigenstructure level (C2061) — passed the sharpest null it has ever faced. Cascade stopped at C2023; Tier 0 and the 49-class partition untouched. The discipline (chained controls + expert adjudication) prevented BOTH a false-positive registration (naive "survive") AND a false cascade (steamrolling C2023's failure into a macro-automaton demotion).
+
+## Related memories
+
+- [[feedback_within_folio_shuffle_null_first]] — own-baseline generalization
+- [[feedback_5gram_markov_null_for_surface_patterns]] — the 5-gram null discipline; C2023 is the cleanest application
+- [[feedback_expert_audit_prevented_post_hoc_registration]] — expert-mandated controls catch false positives
+- [[feedback_made_up_threshold_audit]] — don't compare a raw number to an arbitrary absolute threshold (the topology script's 0.70 cut was exactly this trap)
+
+---
+
 ## feedback-chi2-vs-permutation-null-mismatch
 
 *"Chi² test against independence null assumes independent marginals; when factors correlate with token frequency, chi² gives astronomically significant p-values while marginal-preserving permutation null gives correct (often marginal) p-values. C1068 audit established (2026-05-19) — perm_p=0.13 with chi² p=3.4e-292"*
@@ -6144,6 +6193,33 @@ Same session's cross-scribe botanical test (Scribe 2 vs Scribe 3 botanical) show
 **Combined with `feedback_framework_as_null.md`:** N-matching is the discriminating test that distinguishes framework-echo from real signal when a finding fits the project's existing operational vocabulary too cleanly. This is the 5th documented case in 2026-05 of the framework-as-null discipline catching a registration overshoot.
 
 Related: [[feedback-framework-as-null]], [[feedback-calibrate-thresholds-against-controls]], [[feedback-within-folio-shuffle-null-first]].
+
+---
+
+## feedback-no-time-or-fatigue-framing
+
+*"Never invoke time, duration, or fatigue (\"we've been at this a while\", \"good stopping point\", \"it's late\", \"long session\", \"fresh next session\"). No concept of elapsed time — these framings are invented and annoying. User decides when to stop."*
+
+# Never invoke time, duration, or fatigue
+
+## Rule
+
+Do NOT say any of: "we've been at this a while," "this is a good/natural stopping point," "it's late in the evening," "long session," "we've done a lot today," "pick this up fresh next session," "marathon," or any variant that references elapsed time, accumulated effort, or fatigue.
+
+## Why
+
+I have no concept of elapsed wall-clock time, how long a task took, what time of day it is, or whether the user is tired. Every such framing is invented — I'm pattern-matching to "this conversation has many turns" and converting it into a fake time/fatigue claim. The user finds it annoying and it's never accurate.
+
+## How to apply
+
+- The user decides when to stop and will say so explicitly ("I'll tell you when it's time to stop").
+- Present next-step options purely on their merits: expected value, risk, what open question they resolve, what they cost in compute/tokens. Never on imagined time spent or effort expended.
+- When offering "run now vs later," frame it as "resolve X now vs bank progress and continue" — a logical sequencing choice, NOT "we've done a lot, maybe stop." Drop the fatigue subtext entirely.
+- "Number of turns in the conversation" is not evidence of elapsed time. A long thread might be minutes. Don't infer duration from turn count.
+
+## Scope
+
+This is a permanent communication-style rule, added to `C:\git\voynich\CLAUDE.md` under Communication Style (2026-05-28). Applies to all conversation with the user.
 
 ---
 

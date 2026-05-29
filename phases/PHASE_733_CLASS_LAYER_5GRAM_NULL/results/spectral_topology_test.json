@@ -1,0 +1,12 @@
+{
+  "real_lambda2": 0.20629794521755665,
+  "real_lambda3": 0.13414551306735353,
+  "fivegram_lambda2_mean": 0.11940087137047252,
+  "fivegram_lambda2_sd": 0.016555860897380606,
+  "fivegram_lambda3_mean": 0.0764584000422717,
+  "shuffle_lambda2_mean": 0.11757336905921953,
+  "shuffle_lambda2_sd": 0.009082061769119937,
+  "shuffle_lambda3_mean": 0.07458501023010451,
+  "fraction_floor_to_real": 0.020597475810891958,
+  "verdict": "ABOVE_MARKOV_SURVIVES"
+}

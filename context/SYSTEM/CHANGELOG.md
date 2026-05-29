@@ -4,6 +4,47 @@
 
 ---
 
+## Version 6.94 (2026-05-28) — PHASE_733 class-layer 5-gram null: C2023 demoted, macro-automaton (C976-C978) vindicated
+
+### Summary
+
+First 5-gram-null test of the class-layer sequential structure (C2023 — the constraint grounding the macro-automaton at the load-bearing layer; previously shuffle-null only). A chain of controls, each catching the previous one's confound, converged on a coherent audit-proof split: C2023's **first-order scalar class-MI fails** (morphology-reproducible) while the **macro-state eigenstructure (C976-C978) SURVIVES**. The cascade STOPS at C2023; Tier 0 and the 49-class partition untouched.
+
+### The chain
+
+1. **Naive 5-gram test** (real I 0.264 vs synth 0.221, z=+3.83) — FALSE POSITIVE (composition-fidelity artifact: synth has lower class diversity → lower raw MI and lower own-shuffle floor).
+2. **Per-synth-own-shuffle control** (rigorous): real excess +0.0485 vs synth +0.0421, p=0.21 → C2023 scalar-MI is 5-gram-reproducible. FAILS.
+3. **Partition-ARI topology test** through C976's merge — CONFOUNDED (role/depletion constraints force ARI 0.67-0.80 for structureless nulls: random 0.669, shuffle 0.804, real 0.937, 5-gram 0.762). Uninformative.
+4. **Spectral λ2 test** (clean, bypasses merge constraints): real λ2=0.206, 5-gram 0.119 at shuffle floor 0.118 (2% of the way to real) → macro-eigenstructure above-Markov. SURVIVES.
+5. **λ2 excess symmetry control**: real excess +0.087 vs synth +0.052, z=+2.51, p=0.000 — significant under the same metric where scalar-MI was reproduced.
+
+### New constraints
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2061 | 2 | Macro-state eigenstructure (raw-49 λ2) survives 5-gram null (real λ2=0.206 vs 5-gram 0.119≈shuffle floor; per-synth excess p=0.000). Vindicates C976-C978. Scoped to raw-49 operator, NOT C978's 6-state 0.894 gap. |
+| C2062 | 2 | Three-axis decomposition: local control bigrams (PHASE_731 survivors) + macro-state eigenstructure (λ2) are real above-Markov; aggregate scalar first-order class-MI (C2023) is the floor-dominated morphology-reproducible middle layer. |
+
+### Dispositions
+
+- **C2023** — class-layer scalar-MI half DEMOTED Tier 2→3 (5-gram-reproducible, p=0.21; joins C1727/C645). MIDDLE-layer + forbidden-pair findings unaffected. Shuffle finding preserved.
+- **C976-C978, C1010** — SURVIVE / strengthened via C2061. Sharpest null faced, passed at eigenstructure level.
+- **C1025 (M2)** — scope-flag (scalar/marginal metrics partly 5-gram-floor; topological metrics real). No demotion.
+- **C121/C124 (49-class partition), Tier 0** — UNTOUCHED.
+
+### The reconciliation
+
+Scalar MI reproduced but λ2 not is coherent, not a bug: scalar I(class;prev) is a high-mass-dominated lumped functional (dominated by local control bigrams the 5-gram reproduces); λ2 is a global community-structure functional (the 5-gram has no mechanism to reproduce which classes form slow-mixing macro-states). λ2 is the more sensitive, more discriminating measure of macro-organization. Confirms expert-advisor's pre-registered prediction.
+
+### Methodology
+
+- Per-synth-own-shuffle (own-baseline) is mandatory for cross-corpus structured-metric comparison; raw real-vs-synth conflates composition-fidelity with structure.
+- Metrics computed through constraint-laden algorithms (partition-ARI through run_merge) are confounded; floor-control with shuffle+random, or use a metric that bypasses the algorithm (raw-matrix λ2).
+- Scalar aggregate ≠ eigenstructure.
+- Memory: `feedback_chained_controls_scalar_vs_eigenstructure.md`.
+
+---
+
 ## Version 6.93 (2026-05-28) — PHASE_732 forbidden-pair audit + hazard-class provenance correction
 
 ### Summary
