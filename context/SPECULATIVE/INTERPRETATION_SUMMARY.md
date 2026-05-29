@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.73
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.74 (post-5-gram-audit consolidation, PHASE_729–736)
 
 ---
 
@@ -17,6 +17,39 @@ This document consolidates all Tier 3-4 interpretations into a single reference.
 > The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
 
 This structural finding is FROZEN. The interpretations below attempt to explain what this structure might have been FOR.
+
+---
+
+## Post-5-Gram-Audit Status (PHASE 729–736, 2026-05)
+
+> **Read this before the interpretive sections below.** The 5-gram character-Markov audit (the sharpest null this project has applied) re-tested the surface, positional, aggregate, and sequential claims that several sections rely on. **The frozen conclusion (Tier 0) is untouched — it never rested on the demoted constraints.** But the Tier 3-4 interpretive model that *this document* describes lost real scope at two layers, and gained a sharper account of where the genuine signal lives. Lead with the loss; the relocation follows.
+
+**Two real losses of interpretive scope:**
+
+1. **Line-phase syntax is half-demoted.** The four-phase SETUP→WORK→CHECK→CLOSE cycle (Section 0.F) is no longer a four-phase Tier 2 finding. Its SETUP endpoint (daiin trigger, C557) and CHECK endpoint (or→aiin bigram, C561) are 5-gram floor — Markov-reproducible, demoted to Tier 3 (PHASE_731). Only the WORK interleaving (C549) and CLOSE termination (C562) survive. "The line is a thermal control cycle with four named phases" is downgraded to "the line carries two above-Markov local-bigram features (qo↔ch-sh work, ary closure) against a Markov-reproducible positional gradient."
+
+2. **The attractor is mass, not design.** The AXM macro-state's 0.698 self-transition (C976/C978) was read as a designed dwell / stable orbit underlying the closed-loop picture. PHASE_736 shows it is a **composition artifact**: a block holding 68% of token mass self-transitions at ~68% by construction (per-synth-own-shuffle p=0.655 — never above-Markov). The slow mode that *is* real is **distributed** across ~29 classes (C2065), not concentrated in the attractor. (C1403 already reframed convergence as thematic dominance; this sharpens it at the macro-dwell level.)
+
+**The relocation — where the genuine above-character-Markov signal lives.** Sorting the survivors by scale (this is C2062's three-axis decomposition restated in interpretive terms, not a newly discovered architecture):
+
+- **Local control bigrams** — specific adjacent-token preferences that survive the 5-gram null: qo→ch/sh interleaving (C549, PHASE_731), ary line-final termination (C562, z=10.25), the correction lanes (C2056, residuals +17–30pp). Real, local, sharply above-Markov. *(C2056's statistical survival is firm; its "post-heat correction window" gloss remains Tier 3 interpretation.)*
+- **Distributed macro-state eigenstructure** — the slow-mixing second eigenvalue λ2 of the **raw 49-class** transition matrix (C2061, per-synth-own-shuffle p=0.000), distributed across ~29 classes (C2065). This is the genuine global organization the 6-state automaton projects from; the raw-49 operator carries above-Markov eigenstructure. **The 6×6 spectral gap itself (C978) was NOT re-measured here and is borderline under the 5-gram null — C978 survives only as scope-corrected (eigenstructure yes, designed-dwell no).**
+
+Between these two earning layers sits a **Markov-reproducible middle**: positional gradients, aggregate scalar first-order class-MI (C2023-scalar, demoted Tier 3 PHASE_733), and idealized forbidden-transition compliance. A character model reproduces these from local statistics — corpus-descriptive, not above-Markov mechanism. The signal sits at the smallest (bigram) and largest (whole-operator eigenstructure) scales, with the mid-scale being floor — the "barbell" shape C2062 formalized. Relatedly, the M1-fidelity-frontier rescope (C1025): pure 49-class Markov (M1) is the corpus-fidelity frontier, and forbidden-transition suppression is a thin idealizing overlay (M2's edge was idealization-credit, not topology) — which supports locating topology in the class-Markov matrix itself.
+
+**Sections to read with this correction:**
+
+| Section | Status |
+|---------|--------|
+| 0.F Line-Level Execution Syntax | **PARTIALLY SUPERSEDED** — SETUP (C557) & CHECK (C561) endpoints are 5-gram floor; WORK (C549) & CLOSE (C562) survive. |
+| 0.J FQ Internal Architecture | **AFFECTED** — FQ-CC interaction references C816 (demoted PHASE_731/735). |
+| 0.K Sub-Role Interaction Grammar | **AFFECTED** — CC trigger selectivity (C600) demoted PHASE_735. The daiin→ch/sh bigram survives 5-gram (C2064) but **measurement-only, mechanism-ambiguous** — it does NOT validate the CHSH/QO routing mechanism. |
+| Section II historical-alignment ("or→aiin checkpoint") | **AFFECTED** — same C561 dependency. |
+| Hazard taxonomy (throughout) | **CORRECTED** — the "5 hazard classes" grouping was keyword-imposed, not clustered (C2060, PHASE_732). The 17 forbidden directional transitions stand (C109, revised); the 5-class partition and C216's 71/29 batch/apparatus split (demoted) do not. |
+
+**Demotion ledger (PHASE 729–736):** C557, C561, C600, C816, C817, C819 → Tier 3 (line-execution / CC-routing, 5-gram floor); C2023-scalar → Tier 3 (aggregate MI is floor); C109 5-class taxonomy struck; C216 demoted (hazard taxonomy imposed).
+
+**Survival / vindication ledger:** C549, C562, C2056 (local control bigrams); C2061 (raw-49 λ2, sharpest null passed); C2065 (eigenstructure distributed); C976/C977 + C2061 clean; C978 as scope-corrected (eigenstructure vindicated, designed-dwell retracted); Tier 0 and the 49-class partition **untouched**.
 
 ---
 
@@ -38,7 +71,7 @@ This project does not attempt to translate the Voynich Manuscript. The structura
 
 A researcher who discovers musical scores without knowing the notation cannot translate notes into words, because notes are not words. But structural analysis reveals patterns that match the harmonic series: forbidden combinations correspond to dissonant intervals, positional rules match musical form. The researcher proves the documents encode music without ever hearing a note.
 
-Similarly, the Voynich Manuscript's 49 instruction classes, 17 forbidden transitions (in 5 hazard classes), kernel-centric convergence behavior, and bounded recovery architecture are structural constraints that map onto the physics of controlled distillation. The forbidden transitions correspond to physical failure modes. The convergence behavior matches thermodynamic equilibrium-seeking. The recovery architecture matches historical practice (Brunschwig's bounded reinfusion). The Galenic organizational framework (6/6 directional coherence at organizational level, but 0/4 at grammar level; Phase 376-384) provides the intellectual genealogy — as training background, not design principle (F-RUP-001).
+Similarly, the Voynich Manuscript's 49 instruction classes, 17 forbidden transitions (the 5-class grouping is a post-hoc keyword taxonomy, not a clustering result — see C2060), kernel-centric convergence behavior, and bounded recovery architecture are structural constraints that map onto the physics of controlled distillation. The forbidden transitions correspond to physical failure modes. The convergence behavior matches thermodynamic equilibrium-seeking. The recovery architecture matches historical practice (Brunschwig's bounded reinfusion). The Galenic organizational framework (6/6 directional coherence at organizational level, but 0/4 at grammar level; Phase 376-384) provides the intellectual genealogy — as training background, not design principle (F-RUP-001).
 
 This framing applies to ALL interpretations below: each section explores what specific aspects of the structure might correspond to in the physical domain, given that the structural fit has already been established.
 
@@ -50,7 +83,7 @@ This framing applies to ALL interpretations below: each section explores what sp
 
 **Finite-grammar layer** (uniform across the corpus, expected to obey consistent rules):
 - Token morphology (HEAD+MOD*+TERM atom architecture, C1394)
-- Forbidden transitions (5 hazard classes, C789)
+- Forbidden transitions (17 directional; the 5-class grouping was keyword-imposed, not clustered — C2060)
 - Macro-state automaton (6 states)
 - Sister-pair structure (ch/sh, ok/ot)
 - Closed instruction-class system (49 classes, 100% coverage)
@@ -1608,6 +1641,8 @@ This is consistent with C980's 66.3% free variation envelope. The manuscript pro
 
 ## 0.F. LINE-LEVEL EXECUTION SYNTAX (CLASS_SEMANTIC_VALIDATION Phase)
 
+> **PARTIALLY SUPERSEDED (PHASE_731, 2026-05).** The four-phase cycle below does not survive the 5-gram character-Markov null intact. Its **SETUP** endpoint (daiin trigger, C557) and **CHECK** endpoint (or→aiin bigram, C561) are Markov-reproducible floor — demoted to Tier 3. Only the **WORK** interleaving (qo↔ch-sh, C549) and **CLOSE** termination (ary line-final, C562) survive as above-Markov. The positional-grammar table (C556) is a Markov-reproducible gradient. Read the cycle as a real local-bigram spine (WORK + CLOSE) wrapped in a positional shadow, not as a validated four-phase template. See the Post-5-Gram-Audit Status banner near the top of this document.
+
 ### Tier 2-3: Execution Cycle Discovery
 
 > **Each line follows a positional template: SETUP (initial) → THERMAL WORK (medial) → CHECKPOINT/CLOSURE (final). The 5 role categories (CC, EN, FL, FQ, AX) have distinct positional preferences, transition grammars, and REGIME/section profiles that collectively define line-level execution syntax.**
@@ -1719,10 +1754,10 @@ The line-level execution syntax maps directly to a distillation control cycle:
 
 | Line Phase | Structural Evidence | Distillation Interpretation |
 |------------|--------------------|-----------------------------|
-| **SETUP** (initial) | daiin 27.7% initial, 47.1% ENERGY followers (C557) | "Begin heating sequence" - operator initiates fire |
-| **WORK** (medial) | ENERGY chains, qo↔ch-sh interleaving at 56.3% (C549, C550) | Sustained thermal processing: heat (ch-sh) → vent/monitor (qo) → heat again |
-| **CHECK** (medial-final) | or→aiin bigram, 87.5% directional (C561) | Sensory checkpoint - "taste and scent" verification |
-| **CLOSE** (final) | FLOW hierarchy, ary 100% final (C562) | Completion: provisional (ar) to absolute (ary) |
+| **SETUP** (initial) | daiin 27.7% initial, 47.1% ENERGY followers (C557) **[endpoint DEMOTED Tier 3 — 5-gram floor, PHASE_731; see banner]** | "Begin heating sequence" - operator initiates fire |
+| **WORK** (medial) | ENERGY chains, qo↔ch-sh interleaving at 56.3% (C549, C550) **[SURVIVES 5-gram null]** | Sustained thermal processing: heat (ch-sh) → vent/monitor (qo) → heat again |
+| **CHECK** (medial-final) | or→aiin bigram, 87.5% directional (C561) **[endpoint DEMOTED Tier 3 — 5-gram floor, PHASE_731; see banner]** | Sensory checkpoint - "taste and scent" verification |
+| **CLOSE** (final) | FLOW hierarchy, ary 100% final (C562) **[SURVIVES 5-gram null]** | Completion: provisional (ar) to absolute (ary) |
 
 **REGIME as operational mode:**
 
@@ -2083,6 +2118,8 @@ The suffix boundary confirms the apparatus-centric model: content tokens (EN) ca
 
 ## 0.J. FQ INTERNAL ARCHITECTURE (FQ_ANATOMY Phase)
 
+> **AFFECTED (PHASE_731/735, 2026-05).** This section's FQ-CC interaction story references C816 (CC positional ordering), demoted to Tier 3 along with C600/C817/C819 (CC-routing claims are 5-gram floor). The FQ internal anatomy (C593–C596) is not itself audited here, but any reading that has CC sub-groups *positionally driving* FQ inherits the demoted mechanism. See the Post-5-Gram-Audit Status banner.
+
 ### Tier 2: FQ 3-Group Structure
 
 > **FQ's 4 classes form 3 functional groups: CONNECTOR {9}, PREFIXED_PAIR {13, 14}, CLOSER {23}. Classes 13 and 14 have completely non-overlapping MIDDLE vocabularies (Jaccard=0.000). Internal transitions follow a directed grammar (chi2=111, p<0.0001). Class 23 is a boundary specialist with 29.8% final rate. FQ-FL symbiosis is position-driven, not hazard-mediated.**
@@ -2139,6 +2176,8 @@ The 13-14 complete bifurcation suggests two distinct iteration pathways sharing 
 ---
 
 ## 0.K. SUB-ROLE INTERACTION GRAMMAR (SUB_ROLE_INTERACTION Phase)
+
+> **AFFECTED (PHASE_735, 2026-05).** The centerpiece below — CC trigger selectivity (C600: "daiin opens the CHSH pathway, ol-derived opens QO") — is **demoted to Tier 3**: the ol/ol-derived routing is 5-gram-reproducible (Markov-trivial). The daiin→ch/sh bigram *does* survive the 5-gram null (C2064), but **measurement-only and mechanism-ambiguous** (token-length artifact vs. routing; unconditional ≠ lane-conditional) — it does NOT validate the CHSH/QO lane-bifurcation mechanism. Read the "two parallel processing lanes" picture as unsupported at the mechanism level. C598/C599/C601 cross-boundary structure is not separately audited here. See the Post-5-Gram-Audit Status banner.
 
 ### Tier 2: Cross-Boundary Sub-Group Routing
 
@@ -3635,7 +3674,7 @@ Lines follow SETUP→WORK→CHECK→CLOSE thermal processing cycle. See Section 
 | Local continuity | Codex organization | STRONG |
 | Line-level SETUP→WORK→CHECK→CLOSE | Fire-degree cycle | STRONG |
 | ENERGY medial concentration | "Work phase" in process middle | STRONG |
-| or→aiin checkpoint | Sensory verification points | STRONG |
+| or→aiin checkpoint | Sensory verification points | ~~STRONG~~ **AFFECTED (C561 → Tier 3, 5-gram floor, PHASE_731; see banner)** |
 
 10/15 patterns show STRONG alignment.
 
