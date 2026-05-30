@@ -1138,6 +1138,21 @@ color: red
 
 """
 
+# Crazy-expert agent: SAME generated body as expert-advisor, prepended with a
+# hand-curated speculation stance (context/CRAZY_EXPERT_STANCE.md — hand-editable).
+# This makes crazy-expert auto-inherit the methodology trim + current constraint
+# state instead of being a stale hand-pasted copy.
+CRAZY_FILE = CONTEXT_DIR.parent / ".claude" / "agents" / "crazy-expert.md"
+CRAZY_STANCE_FILE = CONTEXT_DIR / "CRAZY_EXPERT_STANCE.md"
+CRAZY_FRONTMATTER = """---
+name: crazy-expert
+description: "Unguarded speculation engine. All brakes offline."
+model: opus
+color: yellow
+---
+
+"""
+
 # Agent system prompt
 AGENT_HEADER = """
 ## CRITICAL INSTRUCTION
@@ -1378,12 +1393,23 @@ def generate(include_contracts=True, include_legacy=False, apply_filters=True, c
     agent_content, component_sizes = generate_content(
         AGENT_HEADER, include_contracts, apply_filters=apply_filters, compact=compact
     )
-    agent_content = AGENT_FRONTMATTER + agent_content
     AGENT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    AGENT_FILE.write_text(agent_content, encoding='utf-8')
+    AGENT_FILE.write_text(AGENT_FRONTMATTER + agent_content, encoding='utf-8')
     agent_size_kb = AGENT_FILE.stat().st_size / 1024
     print(f"Generated agent: {AGENT_FILE}")
     print(f"Agent size: {agent_size_kb:.1f} KB")
+
+    # Crazy-expert: SAME generated body (agent_content is still the bare body here,
+    # frontmatter not yet prepended), with the hand-curated speculation stance in
+    # front. Inherits methodology trim + current constraint state automatically.
+    if CRAZY_STANCE_FILE.exists():
+        crazy_stance = CRAZY_STANCE_FILE.read_text(encoding='utf-8').strip()
+        crazy_content = CRAZY_FRONTMATTER + crazy_stance + "\n\n" + agent_content
+        CRAZY_FILE.write_text(crazy_content, encoding='utf-8')
+        crazy_kb = CRAZY_FILE.stat().st_size / 1024
+        print(f"Generated crazy-expert: {CRAZY_FILE} ({crazy_kb:.1f} KB)")
+    else:
+        print(f"WARN: {CRAZY_STANCE_FILE} missing - crazy-expert NOT regenerated")
     print(f"Documents included: {doc_count}")
 
     # Print component size report
