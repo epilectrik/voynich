@@ -1322,11 +1322,22 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
             " and discipline rules that govern how new findings should be validated.",
             " **Apply these as priors when assessing new proposals.**\n\n",
         ]
+        # COMPACT embedding (2026-05-30): the description carries the rule gist
+        # and the body lead carries the core mechanism/why; the long tail (extended
+        # examples, evidence dumps, [[related]] links) is dropped to keep the agent
+        # within budget. Full notes remain on disk at memory/<filename>.
+        MAX_BODY = 900
         for filename, name, description, body in methodology_notes:
             memory_section.append(f"\n## {name}\n\n")
             if description:
                 memory_section.append(f"*{description}*\n\n")
-            memory_section.append(f"{body}\n\n---\n")
+            compact = body.strip()
+            if len(compact) > MAX_BODY:
+                cut = compact.rfind("\n", 0, MAX_BODY)
+                if cut < MAX_BODY // 2:
+                    cut = MAX_BODY
+                compact = compact[:cut].rstrip() + f"\n\n[…trimmed — full note: memory/{filename}]"
+            memory_section.append(f"{compact}\n\n---\n")
         full_memory_text = "".join(memory_section)
         component_sizes['Session Methodology Notes'] = len(full_memory_text)
         sections.append(full_memory_text)

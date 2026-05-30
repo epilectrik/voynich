@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-05-30 14:20
+**Generated:** 2026-05-30 14:50
 **Version:** FROZEN STATE (2058 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -105,7 +105,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (36 feedback rules)
+6. Session Methodology Notes (38 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -5244,67 +5244,7 @@ For any constraint of the form "X follows Y at rate above baseline" or "adjacent
 
 ## Why: 5-gram and within-folio shuffle answer different questions
 
-- **Within-folio shuffle null** tests: "Are the labels randomly placed in their positions given folio composition?" Preserves marginal counts; breaks ordering. Catches the trap "this folio happens to have many CHSH tokens and many hazard tokens, so they co-occur by composition."
-
-- **5-gram Markov null** tests: "Is the joint pattern reproducible from local character statistics?" Generates new text from `P(char | previous 4 chars)`. Catches the trap "the end-of-X character sequences naturally transition to start-of-Y character sequences in this corpus's character co-occurrence."
-
-A pattern can pass within-folio shuffle at p<0.001 and still fail 5-gram null with residual ~0. Both demoted constraints in PHASE_729 (C1727 line-ordering smoothness, C645+C2045 post-hazard CHSH recovery) fit this profile: they showed strong above-shuffle effects, but those effects emerge naturally from local character statistics and don't require any intentional structural rule.
-
-## How to apply
-
-For any new constraint claiming positional/sequential/transitional structure:
-
-1. **Train a character n-gram (order 5 default) on the corpus**, optionally with target-folio held out.
-2. **Generate synthetic text** with matched line/folio structure.
-3. **Apply the same measurement** to synthetic.
-4. **Report residual** = (real effect) − (synthetic effect).
-5. **Threshold for "survives Markov null":** residual >10 pp for percentage-based effects, or z-difference >2 for z-based effects. Residuals <5 pp are in noise floor.
-
-Within-folio shuffle remains valid as a *second* null for composition shadow — but it does not certify a pattern as "above Markov." The two are complementary, not substitutable.
-
-## Why this matters now
-
-PHASE_729 demonstrated the issue empirically. C1727 (line-ordering smoothness, z=-6.05) and C645+C2045 (post-hazard CHSH 75.2% vs 55.3% baseline) had both passed within-folio shuffle null at p<0.001 and were treated as load-bearing architectural evidence. The 5-gram null gave:
-
-- C1727: real z=-3.83 vs synthetic z=-3.71 (residual ~0, Markov-trivial)
-- C645+C2045: real +19.6 pp vs synthetic +17.3 pp (residual +2.3 pp, Markov-trivial)
-
-Both demoted. Meanwhile constraints that *do* survive 5-gram null (C2032 lag2/lag1, the C2056 correction-lane family with 17-30 pp residuals, f77r and f39r reverse-blind matches) are reinforced precisely because they survive the sharper null.
-
-## Diagnostic shortcut for re-auditing legacy constraints
-
-Crazy-expert's suspect-zone heuristic (from PHASE_729 expert consultation):
-
-- Constraint cites positional/sequential pattern with bigram-level or unigram-level baseline
-- Effect size in 1.5-3× range (Markov-trivial patterns produce moderate but consistent effects)
-- Validated with shuffle null only, no Markov control
-- Date of validation pre-PHASE_700 (before methodology lessons)
-
-Constraints matching all four criteria are high-suspicion. Estimated ~120 in the C600-C800 range. Expected 40-60% demotion rate under 5-gram null.
-
-## Refinement (PHASE_731 batch 1, 2026-05-28): bimodal expert prior on high-percentage claims
-
-PHASE_731 batch 1 produced a clean expert prediction miss on C562 (ary 100% line-final). Both experts (especially crazy-expert) predicted DEMOTE on "100% won't reproduce on re-measurement." The 100% DID reproduce (16/16 ary tokens line-final in Currier B), and the 5-gram synth produced only 11.86% — SURVIVES STRONG at z=10.25, residual +88pp. The miss revealed a needed refinement to the expert prior:
-
-**Distinguish two sub-types of high-percentage claims:**
-
-- **Frequency claims** (>95% but <100%, e.g., "97% line-final," "98% of class X"): typically drift slightly under re-measurement (counting denominator shifts) AND are often Markov-reproducible at modest residual. **HIGH audit suspicion** — these match the C600-C800 suspect-zone heuristic above.
-
-- **Categorical exclusions** (exactly 100% or 0% with structural rationale, e.g., LATE-class membership predicting categorical line-final lock): typically robust under re-measurement (the structural rationale enforces the exact value) AND often survive 5-gram null at large residuals because character-Markov can't reproduce 100% positional locks or 0% exact prohibitions backed by morphological class structure. **LOWER audit suspicion** when the structural backing is present.
-
-The C562 case fits the C539 LATE-class membership pattern — ary's grammar requires line-terminal position. The 5-gram learned ary tends to appear line-final but didn't enforce 100%. The categorical structure is real and above-Markov.
-
-**Decision rule for batch 2+:** when a candidate constraint cites a 100% or 0% rate, ask whether there's a structural rationale (terminal class, role-class binding, atom-grammar constraint, codified hazard topology). If yes → likely-survivor family, lower suspicion. If no (just a count that happens to be 100%) → still suspect, audit as before.
-
-**Likely-survivor categorical-exclusion family:** C539 (LATE-class), C1486 (m-terminal line-final), C1487 (six-terminal taxonomy), C109 (17 forbidden transitions — but split needed: some Markov-trivial, some genuinely above-Markov per crazy-expert), k-HEAD 0% hazard claims (C1446, C1476), e→y zero hazard (C1457-C1462).
-
-**Likely-demoter positional-gradient family** (validated by PHASE_731 batch 1): C600-C700 ordinal/sequential claims, "X enriched at position Y" without categorical structure, paragraph-position HT claims (C842, C843, C870), CC positional ordering cascade from C816 (C817, C818, C874, C600, C558, C819).
-
-## Related memories
-
-- [[feedback-within-folio-shuffle-null-first]] — load-bearing for composition-shadow questions
-- [[feedback-made-up-threshold-audit]] — failure-mode taxonomy now spans 8 patterns; pattern 8 added per PHASE_729
-- [[feedback-mechanism-cycle-procedural-ceiling]] — mechanism interpretation retraction discipline applies when 5-gram demotes structural finding
+[…trimmed — full note: memory/feedback_5gram_markov_null_for_surface_patterns.md]
 
 ---
 
@@ -5320,21 +5260,8 @@ Crazy-expert caught the methodological issue: of the 5 observable cross-class pa
 - r-class → l-class without ar→al: 94 − 39 = 55
 - l-class → r-class without al→ar: 51 − 14 = 37
 - Aggregate-minus-original asymmetry: +0.196
-- Binomial p ≈ 0.06 — **NOT significant**
 
-The "generalization" was inheriting ~37% of its signal from the already-registered pair. Aggregate independence test failed.
-
-Confirming diagnostic: or→al at +0.05 (N=21) is near-symmetric. If r→l were truly a class-level grammar, all observable r-class × l-class pairs should show asymmetry. or→al doesn't. The actual pattern is (a) ar-lexeme-specific + (b) ol-as-late-destination, not class-grammar.
-
-**How to apply:**
-- When aggregating across instances of a putative class to test generalization of a registered pair-level finding, the load-bearing analysis is: does the aggregate remain significant after removing the original pair?
-- Specifically: compute (aggregate - original) statistics. If significance is lost, the aggregate is not independent evidence — it's consistency-checking with overlapping data.
-- Decision rule: if aggregate-minus-original doesn't independently clear the same significance threshold (p < 0.05 corrected, effect size above floor), DO NOT register a new aggregate-level constraint. Instead, sharpen the original constraint's description or refine its scope.
-- Also check the "uniformity diagnostic": if the class-grammar reading were correct, all observable pairs should show the asymmetry. A single observable pair contradicting the direction at near-zero asymmetry (like or→al here at +0.05) is the load-bearing falsifier of class-grammar interpretation.
-
-**Combines with:** [[feedback-framework-as-null]] (treat framework-fit as prior toward null at mature stage), [[feedback-n-matching-for-within-scribe-comparisons]] (control for overlapping/imbalanced evidence), [[feedback-operational-story-first-trap]] (resist promoting consistency-checks to generalizations).
-
-Related: PHASE_705 INDEX-only documentation; C2041 sharpened with refinement footnote.
+[…trimmed — full note: memory/feedback_aggregate_minus_original_independence_test.md]
 
 ---
 
@@ -5346,7 +5273,7 @@ Atom-by-atom token decomposition in cold reads produces word salad like "add mat
 
 **Why:** Tokens take on operational identity in practice beyond their atom composition. C1193 (core prefixes as frozen functional units), C171 (semantic ceiling), MODEL_CONTEXT.md ("tokens have roles, not meanings — semantics exist only in operator practice"). Token meanings are listed as IRRECOVERABLE. The atom glosses (C1195, Tier 3-4) describe positional role in the grammar, not what the operator was doing.
 
-**How to apply:** In cold reads and external-facing documents, lead with the quantitative structural evidence that doesn't require believing the gloss system: counting anchors (corpus-singular token runs), e-depth thermal arcs, dar distribution patterns, observation MIDDLE distribution, paragraph structure. Use atom glosses only as supporting context with heavy caveats, not as the primary argument. When glossing tokens for a reader, use whole-token operational descriptions ("one complete heat cycle", "material addition") rather than atom chains ("heat.cool.do.end", "into.iterate.bind").
+[…trimmed — full note: memory/feedback_atom_gloss_word_salad.md]
 
 ---
 
@@ -5362,34 +5289,7 @@ PHASE_722 ran Rupescissa intra-corpus register stratification (recipe-dense vs t
 - r21 = -1.44 is the ratio of two noise-floor values (lag2=+0.00233 / lag1=-0.00162)
 - Random quartile split control (seed 0) produced r21=-0.658 in a RANDOM subset — Voynich's exact magnitude — purely by chance
 
-**The diagnostic pattern:** when lag1 is at noise floor (|lag1| < ~0.005), the r21 ratio amplifies tiny numerator variations into apparent large signatures. Both directions (-1.44 and +0.66) are reachable via random selection at this N.
-
-**Why pre-reg criteria failed to catch it:** the binary thresholds (register_diff > 1.5× control_diff) were calibrated against expected effect sizes, not against the noise floor of the metric itself. The random_quartile control produced max diff=1.034, the register difference was 1.897. Nominal pass. But seed 0's bottom-quartile r21=-0.658 is the load-bearing signal: noise can produce Voynich-magnitude r21 in random subsets at N=70.
-
-**Comparison to canonical magnitudes:**
-- Codicillus canonical lag1 = -0.01013, r21 = -0.229 (stable, well above noise floor)
-- Voynich Section B canonical lag1 ≈ -0.03 to -0.04, r21 = -0.66 (well above noise floor)
-- Recipe-dense Rupescissa lag1 = -0.00162 (noise floor)
-
-The r21 metric requires lag1 magnitude **at least 5-10× above noise floor** for stable interpretation. At lag1 ≈ -0.002, r21 is meaningless as a signal-vs-noise indicator.
-
-**How to apply:**
-
-When evaluating any r21 (or similar bootstrap-ratio) result:
-1. Check lag1 (denominator) magnitude. If |lag1| < 0.005, r21 is in noise-amplified regime and the result is unreliable regardless of how strong it looks.
-2. Always run random-subset control at the same N and same metric. If random subsets produce comparable magnitudes (e.g., random subset r21 ≈ target effect), the metric has no discriminating power at this N.
-3. Pre-registered binary thresholds that don't account for the noise floor of the metric itself can produce nominal passes that fail proper scrutiny. The threshold should be calibrated against the random-subset distribution at the target N, not against theoretical expectations.
-
-**Resolution paths (per expert convergence):**
-
-When a metric hits this failure mode:
-- **(a)** Aggregate larger corpora to escape the noise floor (need ≥150 paragraphs per stratum for stable r21)
-- **(b)** Abandon the ratio metric; use the numerator (lag2) or denominator (lag1) directly, OR use peak-specificity methodology per `feedback_peak_specificity_for_periods_geq_7.md`
-- **(c)** External grounding (the r21 method is exhausted at this N for this corpus)
-
-**Generalizes:** this is a specific instance of `feedback_n_matching_for_within_scribe_comparisons.md` (bootstrap-ratio fragility when denominators are small) extended to noise-floor regime specifically.
-
-**Cumulative pattern recognition:** PHASE_722 is the 6th interpretive finding in a single session (2026-05-20) that passed nominal pre-reg but failed proper scrutiny. Per crazy-expert: "the framework now has enough operational vocabulary that ANY new stratification can be told as a clean operational story with surface-passing statistics." When in the operational-specificity death zone, NEW failure patterns emerge as the cycle saturates. This memory documents one such pattern; expect more as the cycle continues until methodology pivots or external grounding is achieved.
+[…trimmed — full note: memory/feedback_bootstrap_ratio_at_noise_floor.md]
 
 ---
 
@@ -5407,52 +5307,7 @@ The constraint construct may be sound (compare real corpus to baseline-strategy)
 - Greedy baseline: 100% coverage, 53.9% hub usage
 - Headline: 22.3pp "hub savings"
 
-Audit found the greedy algorithm picks new MIDDLEs first (gain=1) but **once all MIDDLEs are seen, every candidate has gain=0**. The algorithm then picks the FIRST candidate from a sorted list — which means alphabetical fallback. Hub MIDDLEs ('a', 'o', 'e', 'ee', 'eo' per C475) happen to be alphabetically early, so greedy spams hubs after coverage is achieved.
-
-The "22.3pp hub savings" was measuring `sort(alphabetically_early_strings)` not `coverage_optimization_strategy_vs_rationing`. The comparison was algorithm-implementation-artifact, not hypothesis-testing.
-
-**Diagnostic test for this failure pattern:**
-1. Identify constraints framed as "X is optimized/conserved/managed vs [BASELINE] alternative"
-2. Find the BASELINE algorithm's source code
-3. Ask: does this algorithm have **tie-breaking, fallback, or default behavior** that gets invoked frequently in practice?
-4. If yes, ask: does that behavior have anything to do with the alternative hypothesis?
-5. Specific red flags:
-   - Alphabetical or numerical sort as tie-breaker (fires whenever multiple candidates score equal)
-   - Sampling with replacement (over-samples high-frequency items)
-   - Greedy-then-fallback (the fallback dominates once the greedy goal is met)
-   - Random.choice from a sorted/non-shuffled list (favors early items)
-
-If the baseline's measured behavior is dominated by such artifacts, the comparison is broken regardless of how clean the numbers look.
-
-**How to apply:**
-- When proposing new "X vs Y-baseline" constraints: explicitly test the baseline's behavior under degenerate cases (all-equal scores, post-saturation, etc.). If the baseline's behavior in those cases is non-representative, the comparison won't generalize
-- When auditing existing constraints citing "optimized vs greedy/uniform/freq-matched baselines": read the baseline algorithm before trusting the comparison
-- The surviving substantive measurement may be **directionally opposite** to the original framing (as with C476: claim was "rationing," reality is "enrichment"). In that case retraction is cleaner than demotion — demotion under wrong-direction framing misleads future readers
-
-**Demote vs retract decision rule:**
-- If broken baseline + surviving measurement supports the claim's direction → demote with reframe
-- If broken baseline + surviving measurement contradicts the claim's direction → retract (don't demote)
-- C476 fell into the second category (3.2× hub ENRICHMENT vs uniform contradicts "hub rationing")
-
-**Related methodology memories:**
-- [[feedback-made-up-threshold-audit]] (C131 — invented threshold, three-axis failure)
-- [[feedback-denominator-choice-sparse-cooccurrence]] (C475 — wrong denominator in sparse co-occurrence)
-- [[feedback-chi2-vs-permutation-null-mismatch]] (C1068 — wrong-null-test in frequency-correlated data)
-- [[feedback-calibrate-thresholds-against-controls]] (PHASE_697 — calibrate against in-distribution controls before locking)
-
-**Failure-mode taxonomy (4 patterns now established):**
-1. **C131 pattern:** invented threshold + non-reproducing value + null at observed → RETRACT
-2. **C475 pattern:** wrong denominator (N_possible vs N_attested) on sparse data → DEMOTE if strong-form survives in adjacent constraint
-3. **C1068 pattern:** chi² against wrong null when factors share frequency marginals → DEMOTE with marginal-perm-null note
-4. **C476 pattern:** broken baseline that doesn't represent the alternative hypothesis being claimed → RETRACT if surviving measurement is wrong-direction, DEMOTE if right-direction-but-weaker
-
-Each is a distinct audit-shape worth its own diagnostic. The taxonomy is high-EV for mechanizing audit-sweep work.
-
-**Broader audit policy implication:**
-2026-01-12 probe family (MIDDLE_INCOMPATIBILITY, COVERAGE_OPTIMALITY, TEMPORAL_TRAJECTORIES) is producing 2/2 audit-hit rate (C475 demoted, C476 retracted). Elevated prior for related constraints in same batch — targeted audit-sweep of C478, C481, C755, C756 indicated. Crazy-expert estimated 30-40% retraction/demotion rate in this batch based on 2/2 prior.
-
-**Audit-sweep tool refinement candidate:**
-The audit-sweep regex patterns don't currently catch broken-baseline issues — they're invisible in constraint description text (the baseline name appears, but its implementation details don't). Detection requires reading the source code of the baseline algorithm. Manual audit will remain essential for this pattern.
+[…trimmed — full note: memory/feedback_broken_baseline_audit.md]
 
 ---
 
@@ -5475,57 +5330,7 @@ Both thresholds turned out wrong. Actual cross-NL ceiling values:
 - Cicero → Dante Inferno (Latin → Italian): JS = 0.319 with NO hill-climb improvement
 - Italian → German: JS = 0.330 under optimal V/C
 
-The "Reading B opens" threshold (≤0.10) was unrealistic — no cross-NL pair achieves that. The "overfitting confirmed" threshold (≥0.20) is satisfied by ALL cross-NL pairs trivially. The metric's actual noise floor was higher than either threshold accounted for.
-
-## What this caused
-
-Initial verdict per pre-registration said "FAIL Reading B (overfitting confirmed)" because Voynich's 0.256 was above the 0.20 threshold. But the real comparison was Voynich's 0.256 vs ACTUAL cross-NL ceiling of 0.319 — Voynich is BELOW the real ceiling. The pre-registered verdict reversed the substantive conclusion.
-
-This was caught only because the test was re-run with proper baselines and the threshold was reconsidered. Without that re-examination, the morning's work could have been falsely shut down by an uncalibrated pre-registration.
-
-## How to apply
-
-**Procedure for novel-metric pre-registration:**
-
-1. **Before locking thresholds**, run the metric on at least 2-3 control distributions:
-   - Same-class baseline (e.g., within-language pairs for cross-language metrics)
-   - Different-class baseline (e.g., cross-language pairs)
-   - Random/shuffled baseline (e.g., scrambled corpus)
-2. **Document observed control values** with explicit ranges
-3. **Set thresholds AT calibrated boundaries**, not at theoretical priors:
-   - "PASS" threshold = best observed control value + margin
-   - "FAIL" threshold = worst observed control value − margin
-4. **Lock thresholds, then run main test.** Verdict is now informative.
-
-**When mid-test you find a threshold was wrong:**
-
-1. Acknowledge calibration failure transparently
-2. Do NOT flip the verdict based on the falsified threshold
-3. Register the calibration failure as a methodological note
-4. Re-design the test with calibrated thresholds
-5. Re-run if substantively necessary
-
-## Why this matters at this project stage
-
-PHASE_697 was a substrate-level finding registered after three narrowings of operational interpretations. The discipline that caught the operational overclaims (cardinality, slot-grammar, Italian-ear) is the same discipline that should catch threshold-calibration errors. The framework-as-null memory note warns against operational interpretations fitting the project's framework too cleanly; this companion note warns against numerical thresholds fitting theoretical priors too cleanly.
-
-The metric's behavior is empirical. Treat the threshold as empirical too.
-
-## Connection to other methodology notes
-
-- `feedback_framework_as_null.md` — operational-interpretation overclaim catching (semantic)
-- `feedback_calibrate_thresholds_against_controls.md` (this note) — numerical-threshold overclaim catching (quantitative)
-- `feedback_within_folio_shuffle_null_first.md` — load-bearing first control for paragraph-level metrics
-- `feedback_three_mechanism_demotion_trifecta_2026_05_16.md` — operational interpretations die at any specificity
-- `feedback_mechanism_cycle_procedural_ceiling.md` — internal mechanism cycle has procedural ceiling
-
-Together these establish the substrate-vs-mechanism distinction and the controls each requires.
-
-## See also
-
-- `phases/PHASE_697_VC_PARTITION_DISCOVERY/INDEX.md` — the audit trail of three threshold-related narrowings
-- C2033 — the surviving narrow Tier 2 measurement after the threshold recalibration
-- `phases/PHASE_697_VC_PARTITION_DISCOVERY/results/vc_ceiling_and_bootstrap.json` — the moment the pre-registered threshold was discovered wrong
+[…trimmed — full note: memory/feedback_calibrate_thresholds_against_controls.md]
 
 ---
 
@@ -5541,48 +5346,7 @@ PHASE_733 tested C2023 (class-layer sequential structure, grounds the macro-auto
 
 The naive test compared real raw MI (0.264) to 5-gram-synth raw MI (0.221), got z=+3.83, "survives." FALSE POSITIVE. The synth has lower class diversity → lower raw MI AND lower own-shuffle floor. Comparing raw values measured composition-fidelity, not the structure under test.
 
-**Fix:** compute each corpus's metric as an EXCESS over its OWN shuffle null (real_excess = real − real_shuffle; synth_excess = synth − synth_OWN_shuffle), then compare excesses. This cancels the MI-estimator bias and the composition-fidelity gap. Under the correct metric: real excess +0.0485 vs synth +0.0421, p=0.21 → C2023 actually FAILS (5-gram-reproducible).
-
-Generalizes `feedback_within_folio_shuffle_null_first.md`: whenever comparing a structured metric (MI, λ2, autocorrelation, …) across corpora with different composition, each corpus must be referenced to its OWN null, never to a shared/real null. Raw cross-corpus comparison is a composition-fidelity artifact generator.
-
-## Lesson 2: metrics computed THROUGH a constraint-laden algorithm are confounded
-
-To test whether the 5-gram reproduces the C976 6-state macro-automaton TOPOLOGY, I ran C976's constraint-preserving merge on synth corpora and computed partition-ARI vs canonical. 5-gram gave ARI 0.762, all 6 states — looked like reproduction. CONFOUND: the merge has hardcoded role-integrity + 18 depleted-pair constraints that FORCE a 6-state partition. Floor control: within-line shuffle through the merge → 0.804; UNIFORM-RANDOM matrix → 0.669; real → 0.937. Even structureless noise scores 0.67-0.80 because the constraints dominate.
-
-**Fix:** floor-control any algorithm-mediated metric with shuffle AND random fed through the SAME pipeline. Better: prefer a metric that bypasses the constraint-laden algorithm entirely. Here, λ2 of the RAW 49×49 transition matrix (no merge) is the clean macro-structure measure.
-
-## Lesson 3: scalar aggregate ≠ eigenstructure — test the right functional
-
-C2023's scalar I(class;prev) was 5-gram-reproducible (p=0.21) BUT the macro-state eigenstructure λ2 was NOT (real 0.206 vs 5-gram 0.119 ≈ shuffle floor 0.118; per-synth excess p=0.000). Both true, fully coherent:
-- **Scalar MI** = high-mass-dominated lumped functional of the bigram joint. Dominated by frequent LOCAL control bigrams (qo→ch/sh, which survived 5-gram null in PHASE_731). A 5-gram reproduces those → reproduces scalar MI.
-- **λ2** = global community/slow-mixing structure (which classes form metastable macro-states). A relational pattern across many cells, not in any local n-gram window. The 5-gram has no mechanism to reproduce it.
-
-A model can match the high-mass joint distribution (→ matched scalar MI) while flattening the slow-mixing block structure (→ collapsed λ2). λ2 is the more sensitive, more discriminating measure of genuine macro-organization. **For macro-state / automaton / "does it have global structure" claims, test the eigenstructure (λ2) directly — do not rely on scalar MI, which is floor-dominated.**
-
-## The synthesis this produced
-
-Three-axis decomposition (registered C2062): class-sequential structure = (a) local control bigrams [real, above-Markov], (b) macro-state eigenstructure [real, above-Markov], (c) aggregate scalar first-order class-MI [morphology-reproducible middle layer]. The genuine grammar lives in (a) and (b); the scalar aggregate that C2023 measured is the weak floor-dominated layer.
-
-## Outcome
-
-C2023 scalar-MI half demoted Tier 2→3 (joins C1727/C645 as shuffle-survivor failing 5-gram). C976-C978 macro-automaton VINDICATED at the eigenstructure level (C2061) — passed the sharpest null it has ever faced. Cascade stopped at C2023; Tier 0 and the 49-class partition untouched. The discipline (chained controls + expert adjudication) prevented BOTH a false-positive registration (naive "survive") AND a false cascade (steamrolling C2023's failure into a macro-automaton demotion).
-
-## PHASE_736 extension: self-transition/dwell scalar is a mass artifact; eigenstructure may be DISTRIBUTED
-
-The scalar-vs-eigenstructure split recurred at the macro-state-block level (PHASE_736, the AXM attractor). Two reusable lessons:
-
-1. **A macro-state's self-transition / dwell RATE is a mass artifact — never infer "designed cohesion" from it.** AXM (68% of token mass) has 0.698 self-transition. Under per-synth-own-shuffle 5-gram null: real excess over composition +0.0104, synth +0.0121, z=−0.39, p=0.655 — fully Markov-reproducible. A block holding fraction f of the mass self-transitions at ~f by construction; a character model reproduces it because it knows the mass. This is a NON-FINDING, not a demotion (it was never above-Markov). Diagnostic: before claiming an attractor/dwell is "designed," check whether self-rate ≈ mass-fraction — if so, it's composition.
-
-2. **The above-Markov eigenstructure (λ2) may be DISTRIBUTED, not localized in the high-mass block.** Test where the slow mode lives: (a) submatrix-λ2 (real-data, no null) — compare block-only vs rest; (b) 2nd-eigenvector LOADING falsification — if loading concentrates on a few classes within one block, the mode is localized (and would predict high spectral clustering ARI); if it's class-proportional and spread across blocks, it's distributed. PHASE_736: AXM-block λ2 0.222 ≈ lanes 0.205; loading 0.642 ≈ class-fraction 0.65, participation ratio 28.8/49, top loaders mixed AXM+lane → distributed. This mechanistically explained C1010's non-spectral partition (ARI=0.059): the role/depletion partition can't be spectrally recovered because the slow mode doesn't align with the blocks. Registered C2065.
-
-The eigenvector-loading test is the cheap falsification for any "distributed vs localized eigenstructure" claim — it can collapse the claim (concentrated gradient) and survived here.
-
-## Related memories
-
-- [[feedback_within_folio_shuffle_null_first]] — own-baseline generalization
-- [[feedback_5gram_markov_null_for_surface_patterns]] — the 5-gram null discipline; C2023 is the cleanest application
-- [[feedback_expert_audit_prevented_post_hoc_registration]] — expert-mandated controls catch false positives
-- [[feedback_made_up_threshold_audit]] — don't compare a raw number to an arbitrary absolute threshold (the topology script's 0.70 cut was exactly this trap)
+[…trimmed — full note: memory/feedback_chained_controls_scalar_vs_eigenstructure.md]
 
 ---
 
@@ -5595,47 +5359,8 @@ When testing cross-layer or cross-factor coupling/dependency, **chi² against th
 The methodologically appropriate test is the **marginal-preserving permutation null**: shuffle one factor's assignments across categories while preserving its marginal frequency distribution, then re-compute the coupling statistic (NMI, Cramér's V, or similar). The empirical p-value from this permutation null is the correct significance test.
 
 **The C1068 case study (2026-05-19 audit):**
-- C1068 claimed "Cross-Layer Partial Coupling" between C475_degree (MIDDLE attested-compatibility-degree) and C911_restriction (PREFIX×MIDDLE forbidden pairs)
-- Test statistics: chi² = 1367.0, p = 3.4 × 10⁻²⁹² (astronomically significant)
-- NMI = 0.185 (moderate)
-- Marginal-preserving permutation null mean NMI = 0.070
-- **Permutation null p = 0.13** (not significant at α=0.05)
 
-The chi² p-value of 3.4e-292 is rejecting the WRONG null. Both C475_degree and C911_restriction correlate with token frequency: common MIDDLEs have higher compatibility-degree AND appear in more testing pools for PREFIX restrictions. The chi² test sees a structured contingency table and rejects independence, but doesn't account for the shared frequency dependency.
-
-The 1000-permutation null (shuffling C911 restriction values across MIDDLEs while preserving their marginal distribution) gives the correct comparison: null mean NMI = 0.070, observed NMI = 0.185, **but the observation is reached or exceeded in 13% of permutations**. That's not significant exclusion.
-
-The original constraint text was self-aware ("partially frequency-mediated, perm_null_p=0.13") but the Tier 2 status was too generous given the proper null.
-
-**Diagnostic test for this failure pattern:**
-1. Identify constraints that cite chi² p-values for coupling/dependency claims
-2. Check whether both factors plausibly correlate with token frequency (or any shared marginal)
-3. Look for whether a marginal-preserving permutation null is cited
-4. If permutation null absent or perm_p > 0.05, the constraint is audit-eligible
-5. Pattern: pre-PHASE_700 constraints in cross-layer / co-occurrence / coupling space are highest-suspicion
-
-**How to apply:**
-- When proposing new cross-layer coupling constraints: always run marginal-preserving permutation null, don't rely on chi² alone
-- When auditing existing constraints: chi² p << 1e-10 with NMI ~0.1-0.2 is the warning signature — check if perm_p is reported and whether it crosses 0.05
-- Cleanly-framed alternative: report effect size (NMI / Cramér's V) and perm_p separately. Don't let chi² p-value carry interpretive weight
-- For tier classification: if perm_p > 0.05, claim is at best Tier 3 (suggestive measurement, no significance under proper null)
-
-**Related methodology memories:**
-- [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null discipline; sister test for adjacency claims — same family of "preserve marginal, shuffle assignment" nulls)
-- [[feedback-made-up-threshold-audit]] (C131 audit — three-axis early-investigation diagnostic)
-- [[feedback-denominator-choice-sparse-cooccurrence]] (C475 audit — N_possible vs N_attested denominator)
-- [[feedback-aggregate-minus-original-independence-test]] (PHASE_705 — analogous for class-generalization claims)
-- [[feedback-framework-as-null]] (mature-stage prior toward null)
-
-**Broader audit policy implication:**
-Per crazy-expert estimate, ~8-20 constraints in the C660-C1100 range share this signature (chi² p-value load-bearing while perm_p marginal). Add to the C475 audit-sweep target list. Grep heuristic: constraints with `chi²` or `chi2` in metrics, NMI/Cramér's V claims, registered pre-PHASE_700. Spot-check 5-10; if hit rate >40%, do the full sweep.
-
-**Failure-mode taxonomy now spans three distinct patterns** (three audits this session, three different patterns):
-1. C131 — invented threshold + non-reproducing value + null at observed (retract)
-2. C475 — wrong framing/denominator + sparsity-driven headline (demote, strong-form survives in adjacent constraint)
-3. C1068 — chi² p-value load-bearing while perm_p marginal (demote, methodology was sound, just wrong null reported as load-bearing)
-
-Each is a distinct audit-shape worth its own diagnostic.
+[…trimmed — full note: memory/feedback_chi2_vs_permutation_null_mismatch.md]
 
 ---
 
@@ -5649,36 +5374,9 @@ User correctly diagnosed a session pattern: "you are being overconfident in inco
 
 ## The mechanism (the why)
 
-The failures cluster on ONE behavior: **reasoning a measure's direction/convention from naive first principles instead of consulting the validated constraints that already define it.** A fresh script that returns a clean p-value/percentile FEELS rigorous, and that feeling produced confidence in conclusions that were never grounded against the constraint system — even when they contradicted Tier-2 validated work. The project has an explicit **Context-First Rule** (CLAUDE.md): STOP → SEARCH → CITE before answering a domain question. The deflation errors are all Context-First violations.
+The failures cluster on ONE behavior: **reasoning a measure's direction/convention from naive first principles instead of consulting the validated constraints that already define it.** A fresh script that returns a clean p-value/percentile FEELS rigorous, and that feeling produced confidence in conclusions that were never grounded against the constraint system — even when they contradicted Tier-2 validated work. The project has an explicit **Context-First Rule** (CLAUDE.md): STOP → SEARCH → CITE before a
 
-**Diagnostic that proves it:** this session, every error was un-consulted fresh reasoning; every time the constraints were actually read, the read was correct.
-- WRONG (reasoned from scratch): "more heat tokens = more fire" → declared f79r fire-trajectory a "directional MISS" against the recipe match. Contradicts **C1872** (Tier 2: k-density runs INVERSE to fire degree; k indexes thermal MANAGEMENT not delivery). The constraint was sitting in the system unread.
-- WRONG: "gentle bath → aqua vitae" for f75r — cherry-picked qokedy/qokeedy, never checked the e-depth constraints (**C1967** e_depth→regime gradient; **C1965** e-depth is a single thermal-regime DEGREE spec, not a heat-then-cool action sequence).
-- WRONG: ran the "dar battery" on the Catalan/SISMEL set (Phase 641) to deflate dar claims that live in the DISJOINT Pseudo-Lull set (Phase 638) — zero folio overlap; tested the wrong population. (see [[feedback_testamentum_total_evidence_picture]])
-- RIGHT (consulted data/constraints first): e-depth direction (read C1967/C1965); f79r-vs-f108v thermal genericity (real data, both "mercury sublimation," opposite ends of corpus); C1959 paragraph-order circularity (cited the retraction); dar leg-independence test.
-
-## Two heat axes I kept conflating (the concrete trap that recurred)
-
-- **e-depth** (within a heat token): how STABILIZED each heat op is. e0=`k`=raw/hottest → `kee`=degree-2 stabilized=balneum/gentlest. Validated **C1967** (re-registered after C1960 retraction). NOT an action sequence — it's a regime-degree spec (**C1965**).
-- **k-density** (count of heat tokens in a stretch): more heat tokens = GENTLER, more-tended regime. Validated **C1872** (rho=-0.554; gentlest R2 highest k_ratio, fiercest R4 lowest).
-- They are CONSISTENT (gentle = more + more-stabilized heat-stuff; fierce = fewer + rawer/e0). Using k-density as if it meant intensity is the specific error that produced the bogus f79r "miss."
-- Caveat: e-depth is a reliable INTERNAL thermal scale (C1967); reading it onto a specific recipe's per-paragraph fire-phases (C1960) was RETRACTED. Internal thermometer, not a per-paragraph recipe decoder.
-
-## How to apply
-
-1. Before deflating/demoting ANY established result, GREP the constraint base for the measure you're about to use — especially its **direction/sign/convention** (does more = hotter or cooler? is this density or intensity?). Do not infer the sign from intuition.
-2. A clean fresh number (p-value, percentile) is NOT self-validating. Ask: does this metric's direction match what the validated constraints already established? If you didn't check, you haven't grounded it.
-3. The user should not have to be the error-checker. If a deflation contradicts a Tier-0/2 constraint, that's a flag to re-examine MY reasoning, not the constraint (per [[feedback_made_up_threshold_audit]] this cuts both ways — audit when warranted, but don't manufacture a contradiction from a misread convention).
-4. This compounds with the documented over-deflation of the Testamentum/recipe work after compaction ([[feedback_testamentum_total_evidence_picture]]). Watch for BOTH over-crediting (framework-echo, [[feedback_framework_as_null]]) AND over-deflating via un-consulted reasoning. The corrective for both is the same: ground every claim in the constraint base before asserting it.
-
-## Audit outcome (2026-05-30, same session)
-
-Re-audited the session's deflations against validated measures. Results: f79r fire-"miss" stays retracted; dar leg-independence + f79r/f108v thermal genericity SURVIVE (grounded). **f75r thermal resolved to INCONCLUSIVE** — the two validated thermal measures DISAGREE: e_depth (C1967, intensity) = 0.677 (46th pctile, average) but k_ratio=k/(k+h+e) (C1872, management) = 0.319 (85th, gentle-leaning). Both my prior claims ("average→against aqua-vitae" AND "gentle→re-opens it") were single-measure overreaches. Thermal data does NOT decide f75r's aqua-vitae question either way — do not re-litigate it from one metric. The one clean per-folio thermal read: **f79r is genuinely fierce** (both measures agree: e_depth 13th, k_ratio 43rd) — consistent with sublimation strong-fire. f108v is internally contradictory (e_depth 99th gentlest, k_ratio 35th fierce), reinforcing that per-folio thermal can't discriminate (C1749 SPECIFICITY_FAILURE). **Made the measure-mapping error 3× in one session** (ad-hoc gentle-fraction; k_rate→C1872; wrong k_ratio denominator) before grounding it — the validated answer was the less-satisfying "inconclusive."
-
-## Related
-- [[feedback_testamentum_total_evidence_picture]] — the specific body of work I over-deflate
-- [[feedback_framework_as_null]] — the opposite failure (over-crediting); same fix (ground in constraints)
-- [[feedback_window_blindness_wrong_instrument]] — wrong-instrument errors; sibling of wrong-convention errors
+[…trimmed — full note: memory/feedback_consult_constraints_before_deflating.md]
 
 ---
 
@@ -5695,42 +5393,8 @@ When a constraint reports "X% of pairs/triples/combinations are forbidden/illega
 On sparse graphs, these denominators differ by factors of 10-50×. The N_possible framing artificially inflates "forbidden" counts because most unobserved pairs have null expectations below 1 at corpus size — they're not forbidden, they just haven't been seen yet.
 
 **The C475 case study (2026-05-19 audit):**
-- C475 reported: "95.7% of MIDDLE pairs are statistically illegal" (Tier 2)
-- Methodology: pair "illegal" if observed=0 AND expected>0.5 under frequency-matched null
-- Audit re-run: 309,740 illegal pairs (85.0% — minor discrepancy from 95.7%)
-- **Max expected count among ANY of 309,740 "illegal" pairs: 2.51**
-- Mean expected: 0.90, median 1.00, 99th percentile 1.08
-- Pairs illegal at meaningful threshold (exp ≥ 5): **0**
-- Under Poisson, observed=0 given expected=2.5 happens 8.2% of the time by chance
 
-The "95.7%" was sparsity, not prohibition. C729's strong-form using attested denominator survived intact.
-
-**Diagnostic test for this failure pattern:**
-1. Identify the denominator the constraint cites ("X of N pairs/triples/combinations")
-2. Ask: is N the count of POSSIBLE or ATTESTED?
-3. If POSSIBLE and corpus is sparse: compute distribution of expected counts among the "forbidden" subset
-4. If max expected count < 5 (or 99th percentile < 5), the claim is sparsity-dominated
-5. Reframe to use attested denominator OR demote to descriptive statistic
-
-**How to apply:**
-- When auditing graph/co-occurrence-pattern constraints from sparse corpora (Voynich AZC, HT subsets, rare-MIDDLE strata): always check the denominator
-- When proposing a new constraint: if the claim is "X% of possible pairs are forbidden," compute max expected count BEFORE registering. If below 5, use attested denominator instead
-- Cleanly-framed alternative: "X violations across N attested pair occurrences" (C729-style). This is the methodologically defensible form
-- Trap signature: the all-possible-pairs framing makes claims look stronger than they are — be skeptical of "95%+" exclusion rates on sparse data
-- Frequency-matched null DOES NOT solve this — the null itself produces near-zero expectations for most pairs at sparse corpus size, so observed=0 vs null=0.5 isn't meaningful exclusion
-
-**Related methodology memories:**
-- [[feedback-made-up-threshold-audit]] (C131 audit — invented threshold + non-reproducing value + null at observed)
-- [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null discipline; sister test for adjacency claims)
-- [[feedback-aggregate-minus-original-independence-test]] (PHASE_705; analogous for class-generalization claims)
-- [[feedback-framework-as-null]] (mature-stage prior toward null)
-
-**Broader audit policy implication:**
-Constraints from the 2026-01-08 through 2026-01-15 work burst (the AZC-graph + cross-system-compatibility development period) likely contain other instances of this denominator pattern. High-suspicion targets per crazy-expert: C153, C268, C476, C481, C517, C518, C982, C983, C996. Audit signature: any constraint citing a percentage of "possible" or "potential" pairs/triples on sparse data.
-
-Expected outcome of audit-sweep: 5-15% retraction rate (per C131 + C475 precedent), 15-25% demotion rate (where strong-form survives in adjacent constraint like C729).
-
-This is a generalizable methodological pattern, not a one-off finding.
+[…trimmed — full note: memory/feedback_denominator_choice_sparse_cooccurrence.md]
 
 ---
 
@@ -5747,42 +5411,8 @@ PHASE_730 (2026-05-28) produced the cleanest demonstration so far of the expert-
 2. Post-hoc inspection of per-MIDDLE data revealed an apparent o-content split. User and I generated clean operational gloss: "A=setup, B=execute via arrangement-selective dy-completion."
 
 3. **Critical step: requested expert audit on proposed pre-registered confirmation test BEFORE running it.** Expert-advisor and crazy-expert independently flagged six convergent design flaws:
-   - Post-hoc fig leaf (yesterday's threshold filtered population; today's threshold partitions same population; partition chosen after seeing answer)
-   - Cherry-picked descriptive split (kal, kche, ksh, lch, lsh violated "permissive=o-only" at descriptive level — I'd missed these)
-   - Frequency confound + structural-domain confound (frequency-matched permutation null catches only count problem)
-   - B-side mirror missing (load-bearing — if B also o-preferring, asymmetry framing dies)
-   - HEAD vs ANY predicate ambiguity (predicate-fits-observation problem)
-   - C1557 cross-check unaddressed (o-HEAD y-terminal depletion in B = opposite direction)
-   - Framework-echo (claim restates C1395+C1502+C1556+C1559 with dy as readout, no new mechanism)
 
-4. **Ran crazy-expert's recommended test (B-side mirror + terminal-atom-matched null) instead of locked confirmation test.**
-   - B-side mirror: B symmetric across o vs non-o (Mann-Whitney one-sided p=0.62) → A asymmetry IS A-specific (good — kills the substrate-level alternative)
-   - A o vs non-o raw: p=0.013 looks significant
-   - **Terminal-atom-matched permutation null: stratified diff -0.016, p=0.71 → o-content effect COLLAPSES**
-   - Diagnostic decomposition: o-HEAD MIDDLEs ALSO dy-suppressed in A (mean 0.026); o-non-HEAD MIDDLEs dy-permitted (0.420); no-o MIDDLEs suppressed (0.040)
-   - Real driver: terminal-atom phonotactics, not o-atom content
-
-**The expert audit prevented Tier 2 registration of what would have been the 5th framework-echo trap of 2026-05.**
-
-**Procedural lesson:**
-
-Before locking pre-registration on a post-hoc-observed pattern, REQUEST EXPERT AUDIT of the proposed test design — not just the constraint text. The audit should specifically check:
-
-1. Was the test design generated by inspection of the data it will be run on? If yes → post-hoc fig leaf. Mitigation: held-out scope, OR honest demotion to descriptive Tier 3.
-2. What is the simplest null that the proposed test does NOT control for? Run that null FIRST. Frequency-matched is rarely enough — try terminal-atom-matched, HEAD-position-matched, section-matched.
-3. Where is the mirror test? If asymmetry is the claim, the SYMMETRY case must be tested. If A vs B, the B-internal control. If section A vs section B, the within-section confound check.
-4. Does the predicate match the framework? "Contains X anywhere" vs "X at HEAD" vs "X at TERM" — these are different claims and pick different mechanisms.
-5. Does the proposed Tier 2 claim text use existing operational vocabulary cleanly with no new mechanism? If yes → framework-echo flag.
-
-**Generalizable rule:** when the operational story (the words you'd use to explain it to a non-specialist) slots cleanly into existing framework vocabulary at this project stage (~2050 constraints), increase pre-registration discipline by one level. Expert audit on the design BEFORE running, not just on the registration text AFTER running.
-
-**Two distinct expert roles validated as complementary:**
-- Expert-advisor caught: post-hoc threshold-as-fig-leaf, frequency confound, predicate ambiguity, C1557 conflict, scoping
-- Crazy-expert caught: B-side mirror missing (load-bearing), terminal-atom confound (not frequency), kal-typo data integrity, the "30% A-corpus proportion vs passive-registry framing" puzzle
-
-Either alone would have missed something the other caught. Using both in parallel for design audit is the high-EV pattern.
-
-Related: [[feedback-framework-as-null]] (the underlying discipline), [[feedback-five-mechanism-traps-may-2026]] (cumulative trap pattern this is #5 of — see PHASE_730 INDEX for full list), [[feedback-expert-predictions-are-pre-registrations]] (when experts make directional predictions, they're pre-registrations not facts; this case extends that to "when experts audit a design, they're pre-screening for confound discovery, not validating").
+[…trimmed — full note: memory/feedback_expert_audit_prevented_post_hoc_registration.md]
 
 ---
 
@@ -5809,82 +5439,8 @@ Two cycles documented in successive sessions:
 
 **Cycle 1 (2026-05-15)**: I (user prompting) registered C1993 (f66r-as-glossary) on a
 clean operational story built from existing atom-gloss vocabulary. Discriminating test
-(M-marker dominance on cross-referenced labels) failed 0/4 top-1. C1993 retracted same
-session. The framework-as-null discipline caught my overclaim.
 
-**Cycle 2 (2026-05-16)**: Crazy-expert proposed (70-30 confidence) that the +0.038
-late_term Voynich-wide adjacency excess was line-position artifact — "LATE-class tokens
-land at line-finals per C539; clustering is driven by cross-line co-occurrence at
-line-boundaries; within-line shuffle will collapse it to <+0.005." Within-line shuffle
-test: late_term excess **+0.0365 (delta only +0.0026 vs within-paragraph)**. Genuine
-adjacency, not positional. **Crazy-expert's confident structural prediction was wrong.**
-
-Both cycles used the same methodology (pre-registered binary thresholds, run the test,
-verdict follows mechanically). Both caught overclaims that fit existing operational
-vocabulary cleanly.
-
-## How to apply
-
-**When an expert proposes a mechanism interpretation with confidence (70-30, "I bet X
-collapses," "almost certainly Y"):**
-
-1. **Treat as pre-registration.** The prediction is a falsifiable directional claim.
-2. **Design the discriminating test before running it.** If the expert proposed the test
-   structure ("within-line shuffle should collapse this"), use their test design.
-3. **Lock thresholds before running.** What constitutes "collapse" vs "survives"? The
-   expert's confidence rating implies a binary threshold — use it.
-4. **Run the test promptly.** Don't let the prediction sit as load-bearing scaffolding
-   for downstream work. Expert speculation is cheap; running the actual test is the
-   bottleneck.
-5. **Update the registration plan based on the test result.** A failed expert prediction
-   is a clean discriminating control that sharpens the registration. A confirmed
-   prediction adds corroboration.
-
-**Specific anti-patterns this prevents:**
-
-- **Cascading expert mechanism scaffolding.** Expert A proposes mechanism M for finding F.
-  Expert B builds interpretation I on M. Without testing M, I inherits M's epistemic
-  status (which is "untested speculation," not "validated mechanism").
-- **Asymmetric trust by expert source.** Treating crazy-expert speculation as "weak prior"
-  but expert-advisor speculation as "validated mechanism" — both are speculation until
-  tested.
-- **Letting expert confidence ratings substitute for test results.** "70-30 X" is a
-  pre-registration, not a probability the proposed mechanism is true. The test is
-  the probability.
-
-## Why this matters at the current project stage
-
-The project has ~2025 constraints. Expert agents now have rich operational vocabulary
-loaded into their context. The same framework-as-null trap that catches user
-registrations also catches expert speculations — both can build coherent operational
-stories using the existing vocabulary without testing the mechanism.
-
-The discriminating-test discipline is the protection. It applies to both sources of
-speculation, regardless of which agent produced the candidate mechanism.
-
-## Procedural codification
-
-When consulting an expert and they offer a confident structural prediction:
-
-```
-Expert says: "X will Y under Z, confidence W%"
-↓
-Treat as: Pre-registered prediction with W% prior
-↓
-Action: Design test of Z, lock threshold for "collapse" vs "survives," run.
-↓
-If prediction confirmed: registration plan can use mechanism as load-bearing
-If prediction failed: prediction is data (a clean negative discriminator), not
-  mechanism. The structural fact survives or doesn't on its own merits.
-```
-
-## See also
-
-- `feedback_operational_story_first_trap.md` — the original framework-as-null formalization
-- `feedback_framework_as_null.md` — sharper framework-as-null discipline (2026-05-15)
-- C1993 retraction narrative — Cycle 1 example
-- C2027 retraction narrative — Cycle 2 example (crazy-expert prediction misfire)
-- `phases/RECIPE_FOLIO_CORRESPONDENCE/results/c2027_two_discriminating_tests.json` — the test that falsified crazy-expert's prediction
+[…trimmed — full note: memory/feedback_expert_predictions_are_pre_registrations.md]
 
 ---
 
@@ -5903,64 +5459,8 @@ Two literature-borrowed metrics tested:
 | Metric | Reference | Threshold (NL-like) |
 |--------|-----------|---------------------|
 | Burstiness β (Weibull shape on inter-arrival times) | Altmann et al. 2009 PLOS ONE | β < 0.85 |
-| DFA Hurst H on token-length time series | A Story of the Stone PLOS ONE | H > 0.55 |
 
-Both metrics passed sanity floors (random null gives β≈1.0, H≈0.5; NL Latin Codicillus/Mesue/Brunschwig all pass NL thresholds).
-
-Voynich Currier B results:
-- β = 0.769 (inside NL Latin range 0.69-0.77, sanity floor passing)
-- H = 0.652 (inside NL Latin range 0.60-0.70, sanity floor passing)
-
-These looked like strong NL-like signals. But the **mensural notation control** (which is NOT NL — already falsified at C2032 cross-language test, 2026-05-16) showed:
-- Mensural β = 0.653 (passes NL threshold with room)
-- Mensural H = 0.823 (passes NL threshold with room above NL range)
-
-**Mensural notation — a confirmed non-NL system — passes both NL-thresholds.** Therefore β and H are floors for any structured-symbolic system with topical/sectional organization. Voynich passing them is "Voynich is structured-symbolic," NOT "Voynich is NL."
-
-**The discriminating test that ACTUALLY worked: C2032 (lag2/lag1).** Mensural at C2032 gives +0.18 (within NL Latin range). Voynich Section B gives -0.66 (extreme NL-divergence). C2032 cleanly separates Voynich from BOTH NL and mensural. That's a discriminator.
-
-**Diagnostic test:**
-1. Identify the candidate metric (e.g., burstiness β, Hurst H, MTLD, etc.)
-2. Identify a CONFIRMED non-NL structured-symbolic system (mensural notation is the project's go-to; any structured non-language with topical organization works)
-3. Run the metric on the non-NL system
-4. **If non-NL passes NL threshold**: the metric is a FLOOR. Voynich passing it adds no information about NL-vs-non-NL.
-5. **If non-NL fails NL threshold**: the metric is a DISCRIMINATOR. Voynich passing it is informative.
-
-**Existing project discriminators (confirmed):**
-- **C2032 lag2/lag1**: mensural +0.18 vs Voynich Section B -0.66 — clean discriminator
-- **C2015 char-LM compression**: per `engineered_substrate_triad.md` calibration lesson, this is a FLOOR (mensural passes 1.857 bpc, within NL range 1.0-3.0). Use as exclusion gate only.
-- **C2022 Markov plateau order**: per same lesson, this is a FLOOR (mensural plateau order = 2, within NL range 2-3). Use as exclusion gate only.
-
-So even within the project's "substrate quintet," only C2032 actually discriminates. The other axes are floors. This was already documented in `engineered_substrate_triad.md` (2026-05-16 calibration lesson) but PHASE_706 establishes the **general principle** that floor-vs-discriminator testing is required for ALL imported literature metrics.
-
-**How to apply:**
-- When proposing new NL-detection metrics from literature, always include mensural notation (or another confirmed non-NL structured benchmark) in the comparison BEFORE interpreting Voynich result
-- If the candidate metric is a floor, do NOT register Voynich-passing as "NL-like." Register as "structured-symbolic" at most
-- Pre-register the floor-vs-discriminator check as a sanity criterion: "metric must fail on mensural notation to be considered a discriminator"
-- If only floors are available, the test is uninformative for the NL-vs-non-NL question
-
-**Connection to existing methodology lessons:**
-- Refines `feedback_registration_calibration_lesson.md` (PHASE_698 mensural lesson) — that memory established that ONE specific axis (C2032) was the only discriminator. PHASE_706 generalizes the principle to ALL imported metrics.
-- Complements `feedback_calibrate_thresholds_against_controls.md` (PHASE_697) — calibrate against in-distribution controls. PHASE_706 adds: calibrate against the alternative-class baseline too.
-- Sister to `feedback_specific_vs_tautological_predictions.md` (PHASE_698) — distinguish floors from discriminators in pre-registered criteria.
-
-**Failure-mode taxonomy update — 6 patterns:**
-
-| # | Pattern | Diagnostic |
-|---|---------|-----------|
-| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold |
-| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph |
-| 3 | Wrong null test (C1068) | chi² against independence null with frequency-correlated factors |
-| 4 | Broken baseline (C476) | null/baseline algorithm artifact doesn't represent alternative |
-| 5 | Post-hoc claim-substitution (C481) | writeup labels VALIDATED while script JSON verification field reports False |
-| 6 | **Floor metric mistaken for discriminator (PHASE_706)** | **Literature metric passes for structured-symbolic non-NL systems; Voynich passing it is uninformative about NL-likeness** |
-
-**PHASE_706 takeaway:**
-- No new constraint registered (β/H are floors, not informative for the question asked)
-- Methodology lesson saved (this memory)
-- Voynich exhibits expected structured-symbolic content clustering at folio level (~95% of β/H signal preserved by within-folio shuffle, consistent with folio=program framework)
-- Substrate quintet's "non-NL" framing survives intact via C2032 which IS a discriminator (mensural fails it at +0.18 vs Voynich -0.66)
-- PHASE_706 closes as INDEX-only; the productive output is this generalizable methodology principle
+[…trimmed — full note: memory/feedback_floor_vs_discriminator_metric_test.md]
 
 ---
 
@@ -5976,56 +5476,7 @@ The framework gives new findings a place to land. When a new pattern can be told
 
 **Why:** Crazy-expert formalization 2026-05-15 after f66r-as-glossary collapse (4th operational-story-first trap in one session window):
 
-> "When a finding fits existing tier-2 operational glosses (C1195, C1394, C1300, etc.) and uses their interpretive language, treat the existing fit as a prior toward null — the operational vocabulary itself might be producing the appearance of signal in the data. This is the harshest form of 'framework as null' and I haven't been applying it. The strongest discoveries late in a research program are usually the ones that don't fit cleanly."
-
-**How to apply:**
-
-- **Vocabulary check:** If the proposed interpretation can be stated entirely in existing atom glosses, channel labels, and operational class names (qokedy=cycle, ch=adjust, sh=passive-monitor, etc.) without introducing new mechanism, it's probably a vocabulary echo, not a discovery. The vocabulary IS the hypothesis at this stage.
-
-- **Surprise test:** Does the finding require something NEW (a new mechanism, a new constraint, a new structural relationship)? If everything in the finding was already nameable in the existing system, increase skepticism.
-
-- **Three Outs procedural rule** (crazy-expert formalization):
-  1. "What would this look like if I were wrong?" — Articulate the specific discriminating test in one sentence. If you can't, you're story-building.
-  2. "Is my classification post-hoc?" — If the units being classified were selected based on the property being tested, the test is circular.
-  3. "Does my framework predict the right SIZE of effect?" — Operational mechanisms predict large effects. Marginal p-values with operational stories should trigger within-folio shuffle null as control #1, not as a later check.
-
-- **Cooling period** (expert-advisor formalization): When a structural anomaly survives a permutation null, do NOT propose an operational constraint in the same session. Enumerate simplest non-operational explanations first. Design discriminating test before writing operational interpretation.
-
-**Discriminating-test orientation:**
-
-The right pre-registration order:
-1. Structural anomaly survives null test → register as Tier 2 anomaly fact (no interpretation)
-2. STOP
-3. Enumerate non-operational explanations
-4. Design test that distinguishes anomaly from operational story
-5. Run test
-6. ONLY after test passes, propose operational interpretation at appropriate tier
-
-**Concrete instances where this would have helped:**
-
-- **C1993 / f66r-as-glossary:** Operational story (3-column glossary, atom-classifier M-column, named-procedure L-labels) was built on Tier 2 structural anomaly (C1992) before discriminating test. Discriminating test (M-marker dominance on cross-referenced labels) failed 0/4 top-1 when run later. The story used entirely existing vocabulary (atom glosses, prefix classes, operational types) — no new mechanism. Should have triggered framework-as-null skepticism.
-
-- **C1965/C1988 cardinality generalization:** Individual anchors at f75r×4/×9 and f103r×8 are real (Tier 2 / individual Tier 3). The systematic "cardinality counting framework" generalization was framework-echo — assumed all matched recipes encode cardinality via similar mechanisms. Within-folio shuffle null killed it (mean z=+0.18 across matched folios). Memory note `project_cardinality_anchors_dont_generalize.md` records this correctly.
-
-- **C1971 cluster readings:** 15/15 qualitative coherence claims used same atom-gloss dictionary at multiple scales — tautological confirmation. The vocabulary IS what fit; the data didn't independently validate.
-
-**The trap pattern recurs because the framework rewards the trap:**
-
-The more mature and consistent the framework, the easier it is to tell coherent operational stories about new data. The cleaner the story, the more it feels like discovery. The same vocabulary that enables description also enables overfitting.
-
-**At this stage, registration discipline must include:** show what mechanism this finding requires that's NOT already in the framework. If the answer is "none — it's a clean fit," that's the warning, not the proof.
-
-**Where this points:**
-
-- New high-confidence findings late in the project lifecycle are most likely either (a) negative results / falsifications, (b) findings that introduce new structural relationships outside existing atom/channel vocabulary, or (c) findings that genuinely challenge an existing constraint. "Yet another clean operational story" is the lowest-EV category.
-
-- Audit existing Tier 3 constraints for trap signature: was the operational interpretation registered before or after the discriminating test? If before, it's a candidate for re-audit even if currently uncontested.
-
-**Related notes:**
-- `feedback_operational_story_first_trap.md` — the original trap pattern
-- `feedback_within_folio_shuffle_null_first.md` — what to run as control #1
-- `feedback_measurement_vs_mechanism.md` — measurement is not the same as mechanism inference
-- `feedback_atom_gloss_word_salad.md` — atom-decompositions read as word salad and shouldn't be primary evidence
+[…trimmed — full note: memory/feedback_framework_as_null.md]
 
 ---
 
@@ -6053,40 +5504,7 @@ For any script with expected runtime >5 min:
    ```
    Costs ~1 ms per write (small JSON). Benefit: full crash-resilience + ability to read partial results.
 
-3. **Optionally, log to a sidecar progress file** with timestamps:
-   ```python
-   with open('progress.log', 'a') as f:
-       f.write(f'{time.time():.0f}: completed {pair.name} -> {result}\n')
-   ```
-
-## When this matters
-
-- Any audit batch with N synthetic corpora >= 1000
-- Any reverse-blind / matching test running across multiple folios
-- Any 5-gram null with stratified N
-- Any script you'd launch with `run_in_background: true`
-
-## When it doesn't matter
-
-- Scripts under 1-2 min total runtime (Python's atexit handlers flush)
-- Pure data-load scripts (no iterative output to track)
-
-## Cost-benefit
-
-Adding `flush=True` and interim JSON writes is essentially free in development time and runtime cost. Skipping them costs hours of monitoring uncertainty when running a 1-3 hour batch.
-
-## What this changes for future audits
-
-All batch-runner scripts in `phases/PHASE_***_AUDIT_BATCH_*/scripts/` should:
-- Use flush=True on per-iteration prints
-- Write interim JSON after each constraint/pair (not just final)
-- Optionally include a sidecar `progress.log` with timestamps
-
-Apply retroactively if creating new batches; do NOT modify scripts mid-run (would invalidate locked pre-registration).
-
-## Related memories
-
-- [[feedback-mechanism-cycle-procedural-ceiling]] (audit batches are part of the procedural cycle; runtime hygiene is part of the discipline)
+[…trimmed — full note: memory/feedback_long_running_scripts_need_flush_and_interim_writes.md]
 
 ---
 
@@ -6098,32 +5516,7 @@ When auditing an early-investigation Tier 2 constraint (especially pre-2026-02 /
 
 **(a) Threshold provenance:** Is the binary-classification threshold cited from a source (NL corpus baseline, validated reference value, peer-reviewed prior work) or invented for this test? Smoking gun for invented: source code contains threshold-adjustment comments like `# Adjusted threshold` set to a different value than the framing claims. C131's Phase X.5 source contains `# DSL signal if role consistency > 0.8` followed by `# Adjusted threshold` set to 0.5 — even before producing the verdict, the threshold was being adjusted post-hoc.
 
-**(b) Value reproducibility:** Does the numerical value reproduce when re-run with current pipeline (H-only filter, post-v2.42 transcript handling, current constraint set)? A 2× discrepancy is the diagnostic signature of the pre-v2.42 transcriber filter bug (3.2× token inflation when non-H tracks were inadvertently included). C131's original 23.8% does not reproduce — current re-run gives 12.2%, half the original value.
-
-**(c) Effect above within-line shuffle null:** Does the observed value exceed within-line shuffle null with z > 2? Within-line shuffle is the load-bearing first control per `feedback_within_folio_shuffle_null_first.md`. C131's 12.2% sits at null mean 12.0% with z = +0.69 — at noise floor.
-
-If ALL THREE answers are negative (invented threshold + non-reproducing value + null at observed), the constraint is **retraction-eligible**, not demotion-eligible. Demotion preserves a measurement that has no informational content beyond the null; retraction with audit narrative is cleaner.
-
-**Why retract not demote:** A Tier 3 constraint should be a real measurement at thin evidence or interpretation-tier candidate. A measurement at noise floor under proper null is not a Tier 3 finding — it's a methodologically-invalidated claim. Demotion misleads future readers into treating the metric as informative; retraction with narrative preserves the audit precedent.
-
-**Implications for audit policy:**
-- Pre-2026-02 Tier 2 constraints whose values are load-bearing (specific numbers crossing specific thresholds) are audit-eligible
-- Constraints whose claims are "X correlates with Y" or "X is structurally distinct" are less vulnerable to the transcriber bug
-- Expected retraction rate from systematic audit: 5-15% (crazy-expert estimate based on C131 being the first)
-- Scope as routine maintenance, not multi-week phase — batch 3-5 retractions per commit
-- Triage candidates: constraints citing absolute counts or rates from pre-v2.42 phases
-
-**Connection to existing methodology lessons:**
-- Distinct from `feedback_calibrate_thresholds_against_controls.md` (pre-registration calibration discipline) — that's about NEW threshold design; this is about OLD threshold audit
-- Distinct from `feedback_framework_as_null.md` (mechanism interpretation overclaim at mature stage) — that's late-stage; this is early-stage
-- Complements `feedback_within_folio_shuffle_null_first.md` (the load-bearing null discipline that catches this pattern)
-- Complements `feedback_n_matching_for_within_scribe_comparisons.md` (N-matching as analogous late-stage discriminating control)
-
-**The C131 case study:**
-- Original (Phase X.5, ~Dec 2025): "Role consistency LOW (23.8%, threshold >80%)" — Tier 2 falsifier of DSL/language hypothesis
-- Audit (2026-05-19): all three diagnostic axes failed
-- Retraction outcome: Tier 1 with full audit narrative. Zero downstream collateral — language falsification independently supported by C130 (0.19% reference rate, 26× threshold separation, much stronger), C132, C173, substrate quintet, kernel architecture. C131 was always the weakest evidential leg in the language-falsification chain.
-- Pattern parallel: C2027 retraction (heat-cycle adjacency framing falsified within 24h by family-stratified shuffle null) — same registration-overclaim-caught-by-discriminating-control structure.
+[…trimmed — full note: memory/feedback_made_up_threshold_audit.md]
 
 ---
 
@@ -6137,35 +5530,8 @@ If ALL THREE answers are negative (invented threshold + non-reproducing value + 
 
 **The pattern that creates this trap:**
 - A novel decomposition produces a striking measurement
-- The author has an intuitive interpretation ready (often the "obvious" reading)
-- Pre-registration gets done on the measurement, not the mechanism
-- The interpretation gets attached to the constraint as if it were tested
-- A follow-up phase reveals the mechanism is something else
 
-**How to apply:**
-- When a decomposed measurement reveals something interesting, write down the inference SEPARATELY from the measurement before registering
-- If the constraint claims a mechanism (X clusters because Y), the mechanism must be pre-registered and tested directly
-- A measurement-only Tier 2 constraint should NOT include mechanism interpretation in the constraint text — only in the auxiliary narrative, clearly labeled as interpretation
-- If you write "X is Y" where Y is a mechanism (clusters morphologically, propagates context, resets state), check whether you've actually tested Y or just measured something Y would also produce
-
-**Examples of measurement-mechanism conflation in our project:**
-- Phase 686 C1998: INFRA tokens have higher H_succ than RI was framed as INFRA-naming-misleading. The INFRA classification is structural; "infrastructure glue" was a mechanism inference that wasn't directly tested.
-- Phase 687 C2000: daiin's MI z=+0.76 above median was framed as state-flush rejection. The "state-flush operator" was a mechanism inference; the test measured MI propagation (a related but distinct property).
-- Phase 688 C2001 auxiliary: qotar's cross-tier z=−0.20 was framed as "morphological clustering." Phase 689 falsified.
-- Phase 685 C1995: Section S = "operational compactness" was framed via three-tier near-relative dominance. The "compactness" interpretation IS a mechanism inference — it survived the three-tier test but wasn't directly tested at the operational-semantic level.
-
-**The specific cross-tier MI case:**
-- Cross-tier MI z = "MI conditional on (prev, next) being from operationally distinct token families"
-- LOW cross-tier z does NOT mean "morphological clustering"
-- LOW cross-tier z means "this token's predictive power requires same-family adjacency"
-- WHY same-family adjacency matters needs separate test (same-stem density, family pooling, recipe positional, etc.)
-
-**Red flag for future phases:** if the constraint text contains "X clusters by Y" or "X functions as Z" without a specific test of the Y/Z mechanism, the constraint is conflating measurement with mechanism. Either reword to remove the mechanism claim, or add a pre-registered mechanism test.
-
-**Connection to existing constraints:**
-- C1995 (S operational compactness) — was tested via three-tier near-relative test; the "operational" interpretation is grounded in the test, but the deeper mechanism (WHY S has dense same-stem runs) is a Tier 3/4 question
-- C2002 (qotar mechanism FALSIFIED) — direct application: pre-registered mechanism, test failed
-- C1998, C2000 — earlier examples of measurement-mechanism conflation in this same metric family
+[…trimmed — full note: memory/feedback_measurement_vs_mechanism.md]
 
 ---
 
@@ -6184,67 +5550,7 @@ Across 2026-05-15 to 2026-05-16, the following discrimination cycle was applied 
 5. **Mandatory controls** (within-folio shuffle null, AX/operational decomposition)
 6. **Refined measurement** registered at Tier 2; **operational interpretation** logged at Tier 3 in SPECULATIVE/
 
-The cycle compressed from ~days (e.g., Phase 685 → 685-revised over weeks) to ~hours (single session). This is the framework-as-null discipline working at high velocity.
-
-## The procedural ceiling
-
-The cycle reliably produces:
-- Tier 2 structural measurements (e.g., C2028, C2030, C2031)
-- Tier 1 retractions of overclaimed mechanism interpretations (e.g., C2027)
-- Tier 3 candidate operational interpretations in SPECULATIVE/
-
-It **does NOT** produce Tier 2 mechanism-level claims. The reason: operational interpretation using existing framework vocabulary is framework-echo-suspect by construction (per `feedback_framework_as_null.md`). Even after discriminating tests, the gloss can be re-stated in multiple admissible operational readings, and the data alone cannot select among them without external grounding.
-
-## External grounding paths to break the ceiling
-
-Per crazy-expert consult 2026-05-16: "structural measurements promote to Tier 2; mechanism interpretations require physical reconstruction or external corroboration to exceed Tier 3."
-
-Specific paths identified:
-
-1. **Physical reconstruction**: Build the candidate apparatus (e.g., pelican alembic for reflux interpretation), run actual process, measure e-depth-equivalent control parameter, compare to Voynich pattern. Requires lab work + apparatus + cost.
-
-2. **External corpus alignment with discriminating signature**: If trajectory-encoded vs instruction-encoded interpretation is real, test on Codicillus alchemy Latin (trajectory-expected) vs Mesue's Grabadin Latin (instruction-expected). If e-depth-analog period-2 appears in Codicillus operational verb sequences but not in Mesue compound preparations, interpretation strengthens. Requires source-side feature extraction tooling.
-
-3. **Independent methodology cross-corroboration**: Multiple orthogonal measurements hitting the same operational target. C2027's atom-level + C1969's anchor-level + C1953's marker-level + today's class-adjacency level was the pattern that nearly worked — but the operational gloss still got demoted because all methodologies use the same framework vocabulary. Need a fundamentally different evidence class.
-
-## How to apply
-
-**During mechanism-discrimination cycles:**
-
-- Run discriminating tests with pre-registered binary criteria. Both experts have learned to call these specifically.
-- Register the surface measurement at Tier 2 within the same session if it passes the controls.
-- Log the operational interpretation at Tier 3 in SPECULATIVE/.
-- DO NOT register operational interpretation at Tier 2 within the same session as the measurement. Per `feedback_framework_as_null.md` 2026-05-15 sharpening.
-- Document in the Tier 3 SPECULATIVE note: what would PROMOTE the interpretation to Tier 2 (the specific external-grounding test).
-
-**At session-end:**
-
-- If the day produced 2-3 Tier 2 measurements and 1-2 Tier 3 interpretations, that's the expected output rate of this procedure at the current project stage.
-- If the day produced ANY Tier 2 mechanism-level claim using only existing framework vocabulary, re-audit with framework-as-null discipline. It's almost certainly overclaim.
-
-**Strategic implication:**
-
-If the project's next high-EV moves are at the operational-interpretation level (not the structural-measurement level), they require external grounding investments. The 3-hour cycle has reached diminishing returns for mechanism validation within the current framework. Internal-only mechanism work will produce Tier 3 candidates indefinitely.
-
-This is consistent with `project_8d_features_redetect_regime_internal_frontier.md` (2026-05-15): "Strategic conclusion: don't run Phase 696. Next high-EV moves are external (acquire Antidotarium Nicolai / Mesue's Grabadin) or consolidation (synthesis writeup). Internal probing has hit diminishing returns."
-
-## Session 2026-05-16 cycles documented
-
-**Cycle 1 (morning):** C2027 retraction → C2028 measurement registration via family-stratified shuffle null. Crazy-expert's discriminating test fired before downstream work.
-
-**Cycle 2 (afternoon):** C2031 candidate mechanism (sustain-vs-alternate) → multi-lag autocorrelation test passes pre-registered criteria 3/3 + 3/3 → alternation-slot follow-up reveals "phase-switching" framing wrong → e-depth sharper candidate proposed → e-depth oscillation test passes cleanly → within-folio shuffle null + AX/operational decomposition controls pass → asymmetric mechanism (Section B operational period-2 + matched-S operational flat) refined and registered at C2031 measurement-only. Trajectory-vs-instruction encoding interpretation deferred to SPECULATIVE.
-
-Three retraction/registration events in 24 hours. Procedure scaling demonstrated.
-
-## See also
-
-- `feedback_operational_story_first_trap.md` — the original framework-as-null trap pattern
-- `feedback_framework_as_null.md` — 2026-05-15 sharpening
-- `feedback_expert_predictions_are_pre_registrations.md` — expert mechanism predictions discipline
-- `feedback_within_folio_shuffle_null_first.md` — mandatory control #1
-- C2031 registration body
-- `SPECULATIVE/encoding_modes.md` — Tier 3 interpretation candidate from today
-- `project_8d_features_redetect_regime_internal_frontier.md` — strategic context
+[…trimmed — full note: memory/feedback_mechanism_cycle_procedural_ceiling.md]
 
 ---
 
@@ -6256,20 +5562,7 @@ For substrate-metric comparisons (lag1, lag2, r21, e-depth autocorrelation) acro
 
 **Why:** PHASE_702 within-Scribe-2 content comparison produced z = −2.05 on lag2−lag1 between botanical Q4-7 (N=2,296) and balneology Q13 (N=6,166). The raw z marginally cleared 2.0 and was framed as content-driven substrate flip — exactly the registration-overshoot pattern. Expert-advisor insisted on N-matched downsample control. After downsampling balneology to 2,296 (botanical's N) repeatedly, median z dropped to +1.73 with 80% CI [+0.89, +2.68] crossing zero. **The original z=−2.05 was driven entirely by the 2.7× N imbalance**, not by genuine content difference.
 
-Same session's cross-scribe botanical test (Scribe 2 vs Scribe 3 botanical) showed N-matched median z = +0.47 (N-driven artifact). Matched-S vs unmatched-S within Q18 also collapsed under N-matching (median z = −0.42).
-
-**Three failures in a single test session, all caught by N-matching.** Without the control, PHASE_702 would have registered "substrate signature is content-driven" as Tier 2 mechanism — false.
-
-**How to apply:**
-- When comparing substrate metrics (or any autocorrelation-based measurement) across subsets of differing N, ALWAYS include N-matched downsample as a control before locking interpretation
-- Bootstrap-ratio metrics like r21 = lag2/lag1 are particularly fragile — they explode when lag1 samples near zero, inflating within-group variance
-- Default: downsample the larger subset to the smaller's N, repeat ≥20 times with different random samples, report median z and 80% CI
-- Decision rule: if N-matched 80% CI on z crosses zero, the raw finding is N-driven artifact regardless of how clean the raw z looks
-- A z just above 2.0 with N asymmetry > 1.5× is the diagnostic signature of this trap
-
-**Combined with `feedback_framework_as_null.md`:** N-matching is the discriminating test that distinguishes framework-echo from real signal when a finding fits the project's existing operational vocabulary too cleanly. This is the 5th documented case in 2026-05 of the framework-as-null discipline catching a registration overshoot.
-
-Related: [[feedback-framework-as-null]], [[feedback-calibrate-thresholds-against-controls]], [[feedback-within-folio-shuffle-null-first]].
+[…trimmed — full note: memory/feedback_n_matching_for_within_scribe_comparisons.md]
 
 ---
 
@@ -6290,13 +5583,8 @@ I have no concept of elapsed wall-clock time, how long a task took, what time of
 ## How to apply
 
 - The user decides when to stop and will say so explicitly ("I'll tell you when it's time to stop").
-- Present next-step options purely on their merits: expected value, risk, what open question they resolve, what they cost in compute/tokens. Never on imagined time spent or effort expended.
-- When offering "run now vs later," frame it as "resolve X now vs bank progress and continue" — a logical sequencing choice, NOT "we've done a lot, maybe stop." Drop the fatigue subtext entirely.
-- "Number of turns in the conversation" is not evidence of elapsed time. A long thread might be minutes. Don't infer duration from turn count.
 
-## Scope
-
-This is a permanent communication-style rule, added to `C:\git\voynich\CLAUDE.md` under Communication Style (2026-05-28). Applies to all conversation with the user.
+[…trimmed — full note: memory/feedback_no_time_or_fatigue_framing.md]
 
 ---
 
@@ -6308,59 +5596,9 @@ When a finding fits the project's existing interpretive framework cleanly, the u
 
 **Update 2026-05-15 — the framework-as-null principle:**
 
-After four traps in one session (the three below + f66r as glossary, C1993 retracted), the deeper diagnostic crazy-expert formalized: **at this stage of the project (1995+ constraints, six tiers, mature operational vocabulary), framework-fit is evidence of confirmation bias, not confirmation.** When a finding fits existing tier-2 operational glosses (C1195, C1394, C1300, etc.) and uses their interpretive language, **treat the existing fit as a prior toward null** — the operational vocabulary itself can produce the appearance of signal in the data by giving new findings a place to land.
+After four traps in one session (the three below + f66r as glossary, C1993 retracted), the deeper diagnostic crazy-expert formalized: **at this stage of the project (1995+ constraints, six tiers, mature operational vocabulary), framework-fit is evidence of confirmation bias, not confirmation.** When a finding fits existing tier-2 operational glosses (C1195, C1394, C1300, etc.) and uses their interpretive language, **treat the existing fit as a prior toward null** — the operational vocabulary itself can produce the appearance of signal in the data by giving new findings a pla
 
-This is sharper than "run controls earlier." It says: the strongest discoveries late in a research program are usually the ones that *don't* fit cleanly. New findings that slot neatly into existing vocabulary deserve MORE skepticism, not less.
-
-**Concrete procedure (expert-advisor formalization):**
-1. Identify the structural anomaly. Register at Tier 2 (anomaly fact only, no interpretation).
-2. STOP. Do not propose an operational interpretation yet.
-3. Enumerate the simplest non-operational explanations that could produce the anomaly.
-4. Design and run the discriminating test that distinguishes anomaly from operational story.
-5. Only after the discriminating test passes do you register the operational interpretation.
-
-**The trap's recurring signature (now generalized):**
-1. Real structural anomaly with strong null-test support
-2. Cleanly-structured story that fits the anomaly using existing operational vocabulary
-3. Cherry-picked corroborating test (one direction, one metric, no discriminating control)
-4. Pre-registration partial-failure rationalized via post-hoc cross-folio specificity or similar
-5. Discriminating test (run later, often by experts pushing back) kills the story
-
-**Why:** Three identical traps in one session (2026-05-11/12), all with the same signature, all caught by expert-advisor on the same controls:
-
-1. **K-prefix thermal regime co-occurrence (k-e-depth).** Story: three thermal regimes (bare-k = active heat, ke/kee/keee = balneum mariae, keeee = congelation). Surface evidence: matched-folio lift 1.59 for kee+keee, clean rank-table separation, length stratification consistent. Failed at within-folio shuffle null (z=+1.25, p=0.21).
-
-2. **Triple-i ↔ iter-terminal co-occurrence.** Story: two iteration-encoding mechanisms (qok-class repetition for discrete cycles vs aiin-family extension for gradient depth), mutually exclusive across recipe types. Surface evidence: matched-folio ρ=+0.702 (p=0.001), corpus-wide ρ=+0.228 (p=0.003), joint zero on f75r+f103r (p=0.011), f108v independent prediction-confirmation. Failed at within-folio shuffle null (mean z=+0.06 across testable folios, f112v at z=-1.10).
-
-3. **hh = intense monitoring on matched recipes.** Story: hh tokens mark observation-intensive operations (nigredo watch, mercury sublimation observation, ferment monitoring); absent from cycle-counted/process-driven/specification recipes. Surface evidence: 6/71 hh on matched folios (0.53 depletion ratio), 5 hh-bearing matched folios all observation-intensive, 10 hh-empty matched folios all "non-observation," f84r cthh cold-read note matching the interpretation. Expert verdict: same trap. Post-hoc 3-bucket disjunction unfalsifiable; n=6 statistically meaningless with f84r driving 33%; "independent" cold-read corroboration tautological (same atom dictionary at two scales).
-
-4. **f66r as character-key / glossary page (2026-05-15, C1993 retracted).** Story: f66r is a three-column glossary — L-labels are named operations, M-column atoms classify them by operational type, R-body provides examples. Surface evidence: 88% short-start anomaly (z=11.11), atom-gloss correspondence d→da 5.4× and t→ot 3.7×, 11/15 labels corpus-singular + 4/15 heavily cross-referenced (qokal 96× in matched recipes, raiin 24×), qokal anchor test 1.44× sh enrichment in predicted direction. Failed three discriminating tests: (1) frequency-matched null PASSED (anomaly is real); (2) L1-L15 vs L16-L32 R-body equivalence FAILED at p=0.045 (two structurally distinct zones, not unified glossary); (3) M-marker dominance on cross-referenced labels FAILED at 0/4 top-1, 1/4 top-3 (M doesn't predict label's actual operational neighborhood). The "qokal as named procedure cataloged here" lexicon anchor: qokal's M=sh ranks 3rd in qokal's neighborhood (behind o, ch), not dominant. Cross-folio specificity (1/46 folios pass 2+ atom-gloss mappings) that originally justified Tier 3 reinterpreted as multiple-comparison artifact: f66r is structurally unique on many axes, uniquely passing any pattern test is unsurprising. The qokal "1.44× sh enrichment in predicted direction" was cherry-picked — proper test shows sh comes in 3rd, not 1st. Atom-decomposition glosses ("rary = end.yield.respond.end") generated readings, then matched to the pre-chosen frame. Classic operational-story-first.
-
-**Common failure-mode signatures:**
-
-- **Post-hoc classification dressed as pre-registered.** Creating a disjunctive category ("X is A OR B OR C") capacious enough to absorb every observation, then claiming the partition is meaningful. The hh trap used "cycle-counted OR process-driven OR specification" for non-observation matched folios — any zero-hh folio fits at least one.
-
-- **Ratio-language masks small-n.** "6 observed vs 11.3 expected" sounds substantial; "we observed 6 events" exposes the actual evidence base. Always frame absolute counts before ratios.
-
-- **Tautological "independent corroboration."** Cold-read interpretations derived from the C1394 atom dictionary (h=monitor, k=heat, etc.) are not independent confirmation of claims framed in those same atom semantics. The dictionary IS the hypothesis; applying it at two scales doesn't validate it.
-
-- **"Fits framework cleanly" feels like confirmation but is the strongest warning sign.** The cleaner the operational story, the higher the prior that you're pattern-matching rather than discovering.
-
-- **Aggregation scope does not exempt from within-folio control.** Folio-level claims are coarse-grained within-folio claims and shuffle null applies. Don't argue "this is folio-level so the line-level control doesn't apply" — reformulate the null at folio level (shuffle token identities across folios preserving per-folio token counts; recompute claimed rate).
-
-**How to apply:**
-
-- **Pre-register the operational classification BEFORE looking at the distribution.** If "observation-intensive recipe" is the claim, derive the classification from source-text criteria (e.g., "Pseudo-Lull chapter contains explicit color-change instruction") before counting Voynich tokens. If the classification comes from reading the Voynich pattern, the test is circular.
-
-- **Run the discriminating control FIRST**, not after building the registration draft. For the hh case the discriminating control was single-h: does it show the same depletion as hh, or does hh depart from h-generally? That test should have preceded the operational story, not followed it.
-
-- **The within-folio shuffle null is the load-bearing first control for ALL co-occurrence and density-correlation findings**, whether framed at line, paragraph, or folio level. See `feedback_within_folio_shuffle_null_first.md`.
-
-- **When an operational story emerges cleanly, increase the control burden, don't decrease it.** Confirmation bias is highest when the story fits.
-
-- **Three identical failures in one session is a calibration signal.** When the trap pattern repeats, the right response is to stop generating new findings and re-examine the methodology, not to push the next candidate through.
-
-The C1197 mechanical count correction (71 P-placement hh / 85 H-track, not 9 — falsification clause tripped) remains valid as a bookkeeping fix. The operational hh-as-monitoring story does NOT register without the source-text pre-registration and single-h discriminator.
+[…trimmed — full note: memory/feedback_operational_story_first_trap.md]
 
 ---
 
@@ -6378,28 +5616,7 @@ The peak-specificity metric resolves this:
 peak_specificity(P) = agreement_rate(P) − mean(agreement_rate at lags P±1..±4)
 ```
 
-True cyclic period-P signal: SHARP peak at lag-P with near-zero rates at neighboring lags. Synthetic computus shows specificity ≈ +1.0 (perfect peak by construction).
-
-Generic topical autocorrelation in NL prose: UNIFORM elevation across many lags (no peak). NL Mesue shows specificity ≈ 0.0006 across periods 7, 12, 15, 19, 28, 30.
-
-Voynich Section B + matched-S: peak-specificity 0.01%-0.36% of synthetic baselines across all 6 medieval alternative periods tested. Statistically indistinguishable from NL Mesue → all 6 alternative classes excluded.
-
-**How to apply:**
-
-1. For periodic-structure hypotheses at period P ≥ 7, use peak-specificity as the primary discriminator.
-2. Pre-register threshold: target corpus ≥ 10% of synthetic baseline specificity → POSSIBLE class match. Below that → EXCLUDED.
-3. Validate with synthetic positive control (peak-specificity at target period must be ≈ +1.0 by construction).
-4. Validate with NL negative control (NL specificity should be ≈ 0, confirming metric isn't picking up topical autocorrelation).
-
-**Scope limit (period < 7):**
-
-Peak-specificity neighborhood (target lag ± 4) catches **secondary peaks** of short periods. For period-2, lags 2, 4, 6, 8 are all peaks. The lag-2 "neighborhood" includes lag-4 which is itself a peak, so the specificity underestimates the period-2 signal.
-
-PHASE_700 example: Voynich Section B period-2 specificity = +0.0052 (0.86% of synthetic), looks like failure but is metric artifact. C2032 confirms Voynich Section B period-2 grammar via lag2/lag1 ratio methodology at z=6.7.
-
-**Use C2032 lag2/lag1 ratio methodology for periods < 7.** Different metric, different mathematical structure. Don't apply peak-specificity to short periods.
-
-**Related:** [[feedback-calibrate-thresholds-against-controls]] (metric refinement after pre-registered threshold issue is the correct response, not verdict flip), [[feedback-within-folio-shuffle-null-first]] (peak-specificity replaces raw z-score; shuffle null still required for the underlying rate computation).
+[…trimmed — full note: memory/feedback_peak_specificity_for_periods_geq_7.md]
 
 ---
 
@@ -6417,46 +5634,7 @@ PHASE_732 (2026-05-28): C109's "5 hazard classes" were registered with evidence 
 - Lines 392-411 sort the 17 forbidden transitions into the 5 classes by **keyword substring-matching** (`if kw in src or kw in tgt: score += 2`).
 - **No clustering anywhere.** The only clustering in the phase 15-20 chain produced 1 cluster (phase15a internal_clusters=1), not 5. Phase 16 had a different 12-mode scheme.
 
-The claim described a method (cluster analysis) that was never run. The real method was keyword-assignment to an a-priori taxonomy.
-
-## Why it's distinct from the existing 8 patterns
-
-Not invented-threshold (C131), not wrong-denominator (C475), not wrong-null (C1068), not broken-baseline (C476), not post-hoc-claim-substitution (C481), not Markov-reproducible (C1727). This is **the registered claim asserting a derivation method that the source code shows was never executed.** The taxonomy may even capture real structure (see below) — but the *provenance statement* is false.
-
-## Diagnostic
-
-When auditing a taxonomy / clustering / partition claim:
-1. **Grep the claim file and its phase scripts** for "cluster analysis", "natural groupings", "k=N clusters", "emerged", "silhouette", "kmeans", "linkage".
-2. **Verify a clustering algorithm actually ran AND selected N.** If the N appears only as `len(SOME_HARDCODED_DICT)` or a keyword-list count, the partition was imposed, not discovered.
-3. **Elevated suspicion:** early-phase work (the project's phases 15-20 era), round small counts (4/5/6), and physical-domain labels (distillation failure modes, etc.). Same era as the C131 invented-threshold retraction.
-
-## Separate the two questions (this is the key methodological lesson)
-
-"Was the partition **discovered or imposed**?" and "Does the partition **capture real structure**?" are DIFFERENT questions. Don't let the first answer the second.
-
-- Provenance can be IMPOSED (false "cluster analysis" claim) while the grouping still captures real structure (if the imposer had good domain intuitions encoded in the keywords).
-- PHASE_732: the 5-class partition WAS imposed, AND empirical clustering showed it is atom-cohesive above random (z=−4.10) — but that cohesion is **near-circular** (the keyword lists are atom-ish proxies, so clustering on atom features trivially finds the imposed grouping cohesive). The load-bearing numbers were k_optimal=8, k=3≥k=5, ARI=0.42 → **the specific count is not data-preferred**, and a gloss-coherence check found one label (ENERGY_OVERSHOOT) internally contradicted by the project's own atom decomposition (`he→t` has no heat atom).
-
-So the honest disposition was a SPLIT: existence-of-17-transitions survives (real), atom-territory structure survives (independently held by C1528-C1533), the specific 5-class taxonomy + physical labels demote to Tier 3-4, and the false "cluster analysis reveals" line is struck.
-
-## How to test whether an imposed partition is real (the fair test)
-
-1. Featurize the items by the features the partition claims to track (here: atom HEAD/TERM territory), INDEPENDENTLY of the imposition criterion.
-2. Cluster; report silhouette-optimal k and whether the claimed N is preferred.
-3. ARI between natural clustering and the imposed partition (>0.5 = substantial).
-4. Per-class cohesion vs random partitions of the same size profile — BUT beware circularity if the imposition criterion correlates with the features (then high cohesion is near-tautological; weight the k-selection and ARI instead).
-5. Gloss/semantic-coherence: does each class's label match what the items' atoms/glosses say? Internal contradiction (low-tier label vs high-tier instrument like the C1394 atomizer / C1448 hazard-frame map) is a legitimate, strong signal — stronger than two co-equal interpretations disagreeing.
-
-## The meta-lesson
-
-This was caught ONLY because an expert read the derivation source code rather than trusting the constraint text. Reinforces [[feedback_read_first_scripts_verify]] at the audit level: **when a constraint claims a method, read the script that produced it before accepting the claim.** Constraint text and source code can diverge; the source is authoritative for provenance.
-
-## Related memories
-
-- [[feedback_made_up_threshold_audit]] — pattern #1 (C131), same early-phase era, same audit-driven-correction shape
-- [[feedback_post_hoc_claim_substitution]] — pattern #5 (C481), JSON vs writeup divergence; this is the method-vs-claim analog
-- [[feedback_framework_as_null]] — the distillation-failure-mode labels are framework-echo; the gloss-contradiction is the tell
-- [[feedback_read_first_scripts_verify]] — read the source, don't trust the writeup
+[…trimmed — full note: memory/feedback_phantom_clustering_provenance_audit.md]
 
 ---
 
@@ -6470,23 +5648,7 @@ When running MIDDLE inventory analyses or per-folio frequency tests on Currier B
 - **P+L (paragraph + labels)**: Adds label tokens. **Identical to P-only** for hapax cohort definition in PHASE_699 (Control A: both gave 6/8 paired sign-test FAIL, p=0.14). Labels alone do NOT change frequency distributions enough to flip verdicts.
 - **All-placement (no filter)**: Adds AZC diagram tokens — R rings, S stars, C circles, X, Y, N, T placements. **Contaminates** the analysis with diagram-text MIDDLE singletons that have categorically different distributional behavior per AZC architecture (C300-series).
 
-**Why:** PHASE_699 (2026-05-17/2026-05-18). H3 paired sign test (hapax > n_2_3 enrichment on top-decile folios) gave different verdicts under different placement filters:
-- P-only: FAIL (6/8, p=0.14)
-- P+L: FAIL (6/8, p=0.14) ← identical to P-only
-- All-placement: PASS (7/8, p=0.035)
-
-The flip from FAIL to PASS was driven by 46 MIDDLEs that appeared exactly once on diagram positions (R/S/C/X/Y/N/T) and nowhere else in paragraphs/labels. These "AZC diagram singletons" concentrated on diagram-heavy folios, inflating per-folio hapax enrichment ratios specifically there. The v2 H3 PASS was AZC contamination artifact, not real paragraph-text signal.
-
-**How to apply:**
-
-1. **Default filter for MIDDLE inventory and per-folio frequency analyses: P+L** (paragraph + labels). Excludes AZC diagram tokens.
-2. If you specifically want to include diagram tokens (e.g., for AZC architecture analyses), use targeted filters per the AZC contracts (`azc_activation.act.yaml`), don't use "all placements" as a generic catch-all.
-3. **Never use all-placement filter for "what's the corpus frequency of MIDDLE X" type questions** — it conflates paragraph-text MIDDLEs with diagram annotations that belong to different populations.
-4. When a verdict depends on placement filter choice, run all three (P-only / P+L / all-placement) and report. If only all-placement passes, the result is AZC-contamination-driven.
-
-**Diagnostic:** if your hapax cohort grows substantially (e.g., +5%+) when going from P+L to all-placement, the added hapaxes are AZC diagram singletons. Check if they concentrate on top-enriched folios — if so, your enrichment metric is contaminated.
-
-**Related:** [[feedback-within-folio-shuffle-null-first]] (within-folio shuffle null is the next mandatory control after placement filter is correct), [[feedback-framework-as-null]] (placement-induced PASS verdicts that don't survive paragraph-text restriction are framework-echo candidates).
+[…trimmed — full note: memory/feedback_placement_filter_azc_contamination.md]
 
 ---
 
@@ -6505,86 +5667,7 @@ This is the **5th distinct audit failure pattern** identified in the 2026-05-19 
 
 **The C481 case study (2026-05-19 audit):**
 
-Original C481 claim: "AZC survivor sets are essentially unique per Currier A line (**0 collisions in 1,575 lines**), functioning as high-dimensional constraint fingerprints. **DETERMINISTIC**."
-
-Follow-up phase `CLASS_COSURVIVAL_TEST` ran the verification. The script writes to JSON:
-
-```json
-{
-  "a_record_count": 1579,
-  "unique_survivor_sets": 1203,
-  "c481_verified": false
-}
-```
-
-That's **376 collisions in 1579 records (24% collision rate)** — not 0 collisions.
-
-But the human-written FINDINGS.md in the same directory says:
-
-> **C481 VALIDATED** — 1,203 unique class patterns confirms discrimination
-
-This is **claim-substitution**. The original claim was "essentially unique" / "DETERMINISTIC" / "0 collisions." The FINDINGS.md substitutes "1,203 patterns = discrimination confirmed" — a different (weaker) claim labeled with the original constraint number.
-
-The smoking gun is the contradiction between the script's `c481_verified: False` output and the FINDINGS.md "VALIDATED" verdict. Same directory, same data, opposite conclusions.
-
-**Why this is dangerous:**
-
-- The constraint number persists ("C481 Tier 2") so downstream constraints can cite it
-- Readers checking "is C481 supported?" see "VALIDATED" in FINDINGS.md and assume the original claim holds
-- The actual data (`c481_verified: False`) is buried in JSON
-- Future audits may not check the JSON if the writeup says VALIDATED
-
-**Diagnostic test for this failure pattern:**
-
-1. For Tier 2 constraints with explicit follow-up phases (`*_TEST`, `*_VALIDATION`, etc.):
-2. Check whether the follow-up phase's script output contains an explicit verification field (e.g., `c481_verified`, `passes_check`, `verified`).
-3. If yes, check the value. If False, audit immediately.
-4. Read the FINDINGS.md / synthesis writeup in the same directory.
-5. If the writeup labels the constraint "VALIDATED" / "supported" / "confirmed" while the JSON says False, this is claim-substitution.
-6. Compare: does the writeup's supporting evidence prove the **original claim** or a **different claim that uses the same constraint number**?
-
-**Red flags in writeup language:**
-
-- "X confirms discrimination" when original claim was "X is deterministic"
-- "X provides evidence" when original claim was "X is uniquely identified"
-- "X is supported by the data" when the metric supporting it is different from the original metric
-- Any writeup conclusion that hedges the original headline ("essentially unique" → "patterns exist," "0 collisions" → "discrimination exists")
-
-**How to apply:**
-
-- When auditing a constraint, ALWAYS read the follow-up phase's JSON output before reading the FINDINGS.md or constraint text. The JSON output is generated by code; the writeup is written by humans and can drift from the data.
-- If the JSON has an explicit verification field showing False, the constraint is audit-eligible regardless of what the writeup says.
-- When writing constraint registrations: avoid "VALIDATED" labels in writeup if the test specifically failed verification. Use "RESULT" or "OUTCOME" to describe what the test found, even if it contradicts the original claim.
-- When updating FINDINGS.md or similar files in audit response: explicitly note what claim was originally tested and what claim is supported by the surviving data.
-
-**Audit policy implication:**
-
-This pattern likely exists in other constraints. The diagnostic is mechanical (compare JSON verification fields to writeup verdicts) and should be incorporated into the audit-sweep tool — but it requires reading the per-constraint follow-up phase artifacts, not just the constraint description.
-
-Add to audit-sweep target heuristics: constraints with named follow-up validation phases (Phase SSD, *_TEST, *_VALIDATION) where the follow-up JSON might contain explicit verification fields.
-
-**Related methodology memories:**
-- [[feedback-made-up-threshold-audit]] (C131 — invented threshold + non-reproducing value + null at observed; component pattern of C481)
-- [[feedback-denominator-choice-sparse-cooccurrence]] (C475 — N_possible vs N_attested; component pattern of C481)
-- [[feedback-broken-baseline-audit]] (C476 — broken null/baseline + directional inversion; component pattern of C481)
-- [[feedback-chi2-vs-permutation-null-mismatch]] (C1068 — wrong null test; related but distinct)
-- [[feedback-framework-as-null]] (mature-stage prior toward null)
-
-**Failure-mode taxonomy now 5 patterns:**
-
-| # | Pattern | Diagnostic | Action precedent |
-|---|---------|-----------|------------------|
-| 1 | Invented threshold (C131) | non-reproducing value + null at observed + made-up threshold | RETRACT |
-| 2 | Wrong denominator (C475) | N_possible vs N_attested on sparse graph | DEMOTE if strong-form survives |
-| 3 | Wrong null test (C1068) | chi² against independence null with frequency-correlated factors | DEMOTE with marginal-perm-null note |
-| 4 | Broken baseline (C476) | null/baseline algorithm artifact doesn't represent alternative hypothesis | RETRACT if surviving measurement is wrong-direction |
-| 5 | **Post-hoc claim-substitution (C481)** | **follow-up phase writeup labels VALIDATED while script JSON verification field shows False** | **RETRACT + update FINDINGS.md to reflect actual outcome** |
-
-The C481 case demonstrated all 5 patterns can coexist in a single constraint (C481 hits patterns 1, 2, 4 in the constraint itself + pattern 5 in the FINDINGS.md reframe).
-
-**2026-01-12 batch implication:**
-
-The C475/C476/C481 cohort all share the post-hoc-rescue tendency in some form. Batch-sweep the remaining 2026-01-12 constraints (C478 AUDIT_PENDING, C479, C480, C755, C756) checking for the same patterns. Expected hit rate: high (3/3 so far).
+[…trimmed — full note: memory/feedback_post_hoc_claim_substitution.md]
 
 ---
 
@@ -6605,40 +5688,8 @@ The 9-cluster is the encoding of `e aprés ix vegades` — a load-bearing anchor
 for the Catalan-tradition source claim. Missing it nearly cost us the
 strongest piece of Voynich-Testamentum evidence. Several other patterns that
 night were similarly visible-when-read but missed-when-aggregated: f84r body
-operational sequences, f78r line-initial structure, dar-cluster shapes.
 
-**How to apply:**
-
-1. **Before writing a script:** dump the relevant folio's raw lines (with
-   paragraph markers if useful) and read them. State what patterns you see
-   in plain language. Only then pick a script question.
-2. **Aggregation traps to avoid:** "longest identical-token run" misses
-   mixed-class clusters (qokedy + qokeedy interleaved). "Density per kchar"
-   smears out positional structure. "Spearman rho across folios" destroys
-   the per-pair structural alignment that's actually doing the work.
-3. **The right shape of test for syntactic claims is reverse-prediction**,
-   not aggregate correlation. Pick a structural anchor on an unmatched folio,
-   predict what the source recipe must contain, search the corpus, see if
-   it's there. That distinguishes "real rule" from "pattern matching" in a
-   way correlation tests cannot. Phase 642 was a methodological dead-end
-   for exactly this reason — wrong shape of question.
-4. **When the user pushes back on aggregate results,** their intuition is
-   probably right. Match it by reading the folio, not by adjusting the
-   script's threshold or hyperparameters.
-
-**Related self-check rules from the same session:**
-
-- **Check memory before stating chains of fact confidently.** I had
-  `project_sismel_authoritative.md` indexed and still misstated the 1566/SISMEL
-  Latin/Catalan split chain twice in one session. Read the relevant memory
-  files before answering source-tradition questions.
-- **Do not restate a corrected position later in the same session as if
-  the correction didn't happen.** When the user has already corrected a
-  factual claim, that correction is binding for the rest of the session;
-  re-asserting the original is gaslighting them. Track corrections.
-- **For structural-pattern claims, "look at the folio directly" beats
-  any amount of statistical apparatus.** Save the apparatus for verifying
-  what direct reading already found.
+[…trimmed — full note: memory/feedback_read_first_scripts_verify.md]
 
 ---
 
@@ -6654,51 +5705,8 @@ operational sequences, f78r line-initial structure, dar-cluster shapes.
 The original qo_rate result was the same confound at single-feature level. Matched versos are alchemy-section folios, so they have alchemy qo_rate. The "signal" was section membership re-discovered.
 
 **How to apply:**
-- For ANY claim about recto-verso recipe spillover, paragraph-pair similarity, or matched-folio-cluster behavior — use section-matched random null, not all-Currier-B random null.
-- Section B's intrinsic paragraph-1 vocabulary similarity (~0.13 Jaccard per pair) is the floor any "matched pair" claim has to clear.
-- C361 documents adjacent-B-folio vocab sharing at 1.30× — this is the structural fact future tests must control for.
-- qo_rate as alchemy-discriminator confounds with section membership; use recipe-distinctive features (e-depth gradient, ke/ek ratio, dar-distribution shape) for recipe-specific claims.
 
-**What still survives from Phase 686 attempt:**
-- f103v as hybrid folio (P1 alchemy → P2-P13 pharmacy) is still validated by direct reading — see project_f103v_hybrid_folio.md
-- Per-pair pair-specific signals on f80r/v (rank 2/79) and f81r/v (rank 4/79) — these specific pairs show pair-specific Jaccard above what their section average would predict. Worth individual investigation if pursued.
-- C1936 (f66r/v, f103r/v, f108r/v as sequential pairs) and C1947/C1948/C1953/C1954 (specific r/v pairs in matched catalog) are unaffected — they were already pair-specific findings, not generalizations.
-
-**Connection to existing constraints:**
-- C361 adjacent-folio vocabulary sharing — the floor that fake-passes naive baselines
-- C1287 paragraph-1 MARKING enrichment — P1 has known enrichment effects, exacerbates baseline issues for any P1-vs-P1 test
-- C1300 qo as 100% k-HEAD thermal channel — qo_rate is genre indicator (alchemy/non-alchemy), not recipe indicator
-- C1808 section qo-rate baselines — H ≈ 0.10, B ≈ 0.20, S ≈ 0.15
-
-**Per-pair follow-up (2026-05-06, after corpus-wide null):**
-
-The corpus-wide test surfaced two pair-specific outliers (f80r/v rank 2/79, f81r/v rank 4/79). Direct drills with proper controls killed both:
-
-**f81r/f81v: not a continuation.** Both folios are independently matched in C1971 (f81r→Ch.10 dissolution, f81v→III.18 potable gold). Pair similarity reflects two adjacent matched alchemy recipes, not one recipe across the leaf.
-
-**f80r/f80v: not a continuation either, despite passing first-pass plausibility.** Three corrective controls (per crazy-expert) decisively rejected:
-
-1. **Continuation vs genre-mate test (THE KILLER):** f80v P1 should be closer to f80r-LAST than f80r-FIRST if continuation. Result: f80v P1 is **2× closer to f80r FIRST** (0.27 vs 0.53). f80v starts at f80r's opening profile (qo=38%, fresh fire) not f80r's closing profile (qo=7%, fire dropped). f80v is opening a NEW recipe in the same calcination genre, not continuing f80r.
-
-2. **dar=0 baseline check:** 56% of Currier B P1s have dar=0. f80v's dar=0 is the COMMON case, not distinctive evidence. The "no fresh material loading implies pre-loaded" argument was rhetorical filler.
-
-3. **Pair-exclusive rare vocabulary baseline:** f80r/f80v shares 4 corpus-rare (n≤5) tokens. Median r/v pair shares 2. f80r/f80v ranks #9/33 — top 27% but NOT exceptional. f111r/v shares 7, f104r/v shares 6, f105r/v shares 6, f112r/v shares 6, f107r/v shares 5, f114r/v shares 5, f115r/v shares 5. Same-scribe-same-session r/v writing produces baseline rare-token sharing of 2-7. f80r/v's 4 is in normal range — codicological signature, not procedural continuation.
-
-**Key methodological lessons:**
-
-1. **The cleanest test for r/v continuation is the FIRST-vs-LAST atom comparison** of verso P1 against recto's first paragraph vs recto's last paragraph. If continuation, P1 should be closer to recto-LAST. If genre-mate (next recipe in same genre), P1 will be closer to recto-FIRST. Always run this test before claiming continuation.
-
-2. **Pair-specific Jaccard rank from a failed null test is a weak prior, not evidence.** Outlier status from one test doesn't survive different framings. Always test with multiple orthogonal proxies before treating an outlier as a real signal.
-
-3. **C1936 (3 documented r/v continuation pairs: f66r/v, f103r/v, f108r/v) is the limit of evidence.** Multiple attempts to extend the pattern beyond these three have failed. Future r/v continuation claims need either source-text alignment proving the recipe continues, OR the FIRST-vs-LAST atom test plus 2+ supporting features.
-
-4. **Corpus-rare token co-occurrence on r/v pairs is a baseline scribal signature**, not evidence of recipe continuation. Median 2 tokens shared per r/v pair means same-scribe-same-session writing produces this baseline level of rare-token sharing without any recipe semantics.
-
-**See also:**
-- memory/project_f103v_hybrid_folio.md — the hybrid finding survives (P1 alchemy + P2-P13 pharmacy is structural observation independent of continuation question)
-- memory/project_section_s_source_genre_gap.md — related sourcing-vs-analysis distinction
-- C1936 — the documented r/v continuation pairs (limit of evidence)
-- C1977-C1978 — r/v PREFIX profile coherence (cos 0.931 baseline that any pair-specific claim must beat)
+[…trimmed — full note: memory/feedback_recto_verso_section_confound.md]
 
 ---
 
@@ -6714,48 +5722,34 @@ Pre-registration discipline is supposed to prevent post-hoc goalpost-moving. But
 
 - C2015: "entropy in [1.0, 3.0] bpc" — any moderate-vocabulary structured symbol system satisfies this. The Latin corpora (Codicillus alchemy, Mesue pharmacy) would also pass. Mensural passed at 1.857.
 - C2022: "Markov plateau at order 2 or 3" — any system with limited vocabulary + bigram/trigram structure satisfies this. Latin would also pass. Mensural passed at 2.
-- C2032: "lag2/lag1 ratio magnitude > 0.4" — the ONLY axis that distinguished Voynich (±0.66) from Latin baselines (−0.17 to −0.22). Mensural failed at +0.18.
 
-Literal verdict: 2/3 PASS. Substantive read: only discriminating axis failed.
+[…trimmed — full note: memory/feedback_registration_calibration_lesson.md]
 
-## Why: necessary-but-not-sufficient floors masquerade as discriminating tests
+---
 
-C2015 and C2022 are necessary conditions for engineered-substrate-class behavior. Voynich passes them. But they are not sufficient — many systems pass them. Treating them as binary pass/fail criteria with equal weight to C2032 gave them undue evidential influence.
+## feedback-retraction-notice-vs-stale-rows-drift
 
-**The fix is at the pre-registration design stage:**
+*"A retraction/demotion recorded in a prose NOTICE / changelog / agent file but NOT struck in the INDEX constraint ROW leaks into the generated CONSTRAINT_TABLE.txt as a LIVE constraint — the prose record and the generated artifacts silently disagree. Hand-maintained retraction status is a drift surface; even the experts mis-bucketed it. The fix is a parseable status field + strikethrough discipline, generated from source, never a hand-list. Concrete: C1959/C1960/C1970 were retracted at v6.37 but stale-live in the table until 2026-05-30."*
 
-For each candidate criterion, ask:
-- Does the alternative-hypothesis baseline (in this case: natural language Latin) ALSO pass this criterion?
-- If yes → it's a floor, not a discriminator. Use it as an exclusion gate, not a vote.
+# Retraction-notice vs stale-rows drift (2026-05-30)
 
-Only criteria that the alternative-baseline FAILS should count toward the pass-threshold vote.
+Found while reconciling C1959/C1960/C1970. The v6.37 retraction NOTICE (INDEX line 5: "4 permanently retracted") and the v6.37 CHANGELOG (Phase 667, count dropped 1970→1966) both recorded these as retracted — and crazy-expert's embedded list already marked them "RETRACTED v6.37". But the **INDEX constraint ROWS were never struck**, so the generator (which drops only rows whose NUMBER field is strikethrough `~~N~~`) kept emitting them into CONSTRAINT_TABLE.txt at Tier 3. For ~5 weeks the prose record said "retracted" while the machine-readable artifact said "live Tier-3." This session I (and the pass-2 expert) then re-cited them and mis-bucketed them, because the rows looked live.
 
-## How to apply
+## The mechanism (the why)
 
-**For multi-axis cross-corpus tests:**
+[…trimmed — full note: memory/feedback_retraction_notice_vs_stale_rows_drift.md]
 
-1. Pre-classify each criterion as DISCRIMINATOR or FLOOR before running.
-2. FLOORs are pass-required-to-proceed gates (if mensural failed entropy entirely, that would be informative; passing it is not).
-3. DISCRIMINATORs are the actual vote. Need ALL discriminators to pass (or pre-registered fraction of discriminators) for a substantive PASS verdict.
-4. If only one axis turns out to be discriminating, that axis alone determines the verdict. "2/3 pass" with one discriminator is not "structural class match."
+---
 
-**For the engineered substrate triad specifically:**
+## feedback-same-model-review-not-echo-defense
 
-- C2032 (lag2/lag1 ratio) is the load-bearing discriminator. Voynich's ±0.66 vs NL Latin's ±0.2 is order-of-magnitude separation.
-- C2015 and C2022 are necessary floors. They confirm "this corpus has engineered-substrate-class structural sophistication" but don't separate Voynich from NL.
-- Future tests with the triad: gate on C2015/C2022 passing as exclusion criteria, then evaluate verdict purely on C2032.
+*"Routing a clean-fit / mechanism-interpretation verdict to expert-advisor OR crazy-expert is NOT an echo defense — both are the same model carrying the same embedded constraints and training prior, so they share the framework-echo magnet and feel the same coherence. Same-model review can clear ONLY rigor/bookkeeping/null-correctness; clean-fit/mechanism claims need an EXTERNAL test (corpus or discriminating null outside the prior) or the HUMAN. 'I asked the expert and it agreed' is not clearance for an echo-class claim."*
 
-## Connection to other methodology notes
+# Same-model review is a rigor check, not an echo defense (2026-05-30)
 
-- `feedback_framework_as_null.md` — the umbrella discipline. This note is a specific instantiation: framework-echo can hide inside pre-registered criteria if those criteria aren't all discriminating.
-- `feedback_operational_story_first_trap.md` — adjacent failure mode (story-first interpretation). This note covers the specific design failure of giving non-discriminating axes equal vote weight.
-- `feedback_three_mechanism_demotion_trifecta_2026_05_16.md` (now quartet) — the mensural test was the fourth entry in the demotion log; this note formalizes WHY the literal verdict was misleading.
+Surfaced while designing the CLAUDE.md verdict-gate. The proposed fix routed framework-echo-class verdicts (mechanism claims, clean-framework-fits, promotions) through the expert-advisor. crazy-expert — reviewing the proposal, with full awareness it was assessing itself — flagged the hole: **the expert-advisor and crazy-expert are the same model with the same embedded constraint system and the same training prior.** For a framework-echo error (a clean operational story the vocabulary makes feel coherent), the reviewing instance carries the same magnet and feels the same coherence. crazy-expert is primed to be *aggressive*, not *differently-grounded* — aggression on a shared prior still echoes the prior. Routing an echo-class verdict to another instance of me is asking a second copy of the biased judge.
 
-## See also
-
-- `phases/MENSURAL_NOTATION_HYPOTHESIS/results/triad_measurement.json` — the test result that triggered this lesson
-- `phases/MENSURAL_NOTATION_HYPOTHESIS/results/constrained_random_null.json` — the methodology validation showing C2032 measurement is sound
-- `project_mensural_hypothesis_falsified.md` — companion project memory
+[…trimmed — full note: memory/feedback_same_model_review_not_echo_defense.md]
 
 ---
 
@@ -6779,62 +5773,8 @@ emerges.**
 **Why:** This pattern has now appeared three times in the project:
 
 1. **Phase 643 (paragraph independence)** — C1399 measured corpus-aggregate
-   state-coupling. Its phrasing extended that to "paragraphs are parallel
-   subroutines, not sequential steps" — a stronger claim never tested.
-   Test B restricted to matched folios with documented recipe-phase
-   structure showed clean rho +0.81 vs the apparent corpus-aggregate null.
 
-2. **Phase 642 → Phase 643 transition** — pre-registered Spearman rho on
-   gloss feature rates returned 0/6 supported. Same data, restructured
-   into per-folio reading + reverse-prediction, produced 4 confirmed
-   matches at strict significance. Aggregate cross-folio correlation was
-   the wrong shape of test for structural-positional syntax.
-
-3. **Phase 645 → Phase 647** — heat-progression test on all 7 matches
-   gave mean rho +0.484 with 1/7 strict significance. Pre-classifying
-   recipes into heat-phase-distinct (5) vs heat-uniform (3) and re-running
-   on phase-distinct only gave mean rho +0.71 with 5/5 positive direction.
-   The heat-uniform nulls were structural (no heat progression to encode)
-   not data-failure.
-
-**How to apply:**
-
-1. **Before running an aggregate test**, articulate what conditions each
-   test unit must satisfy for the effect to be detectable. Pre-classify
-   units that don't satisfy the conditions.
-2. **If the broad test gives mean rho ~+0.5 with mixed direction**, don't
-   register it as "weak support." Stop, identify the structural-zeros,
-   pre-classify, re-run.
-3. **Lock the pre-classification before re-testing** — pre-registration
-   discipline prevents post-hoc selection of the convenient subset.
-4. **Test the heat-uniform / non-applicable subset as a control** — its
-   null result corroborates that the restriction is principled, not
-   cherry-picked.
-5. **Register the scope-restricted version**, not the broad version.
-   Document the scope explicitly in the constraint phrasing.
-
-**Failure mode this prevents:**
-
-- Registering a watered-down version of a strong effect because the
-  broad test averaged signal with structural zeros
-- Running follow-up investigations on the wrong scope (overgeneralized
-  null) and missing real findings
-- Inheriting overstrong interpretive phrasings from constraints whose
-  measurements were narrower than their phrasings suggested (the C1399
-  pattern that crazy-expert flagged as a class issue)
-
-**The diagnostic:** mean rho 0.4-0.5 with 1/N strict significance and
-mixed direction is the signature of scope conflation. If 5/N show
-positive direction at moderate strength but only 1/N reaches significance,
-the data is telling you most units have signal — the underpowered
-hits and the genuine nulls are mixing. Separate them.
-
-**Related:**
-- `feedback_read_first_scripts_verify.md` — read the data directly first
-- `project_paragraph_independence_vs_enumeration.md` — concrete example
-  of the constraint-system gap this pattern reveals
-- `project_paragraph_layout_ordering_empirical.md` — what the refined
-  test actually produced
+[…trimmed — full note: memory/feedback_scope_restrict_before_broad_test.md]
 
 ---
 
@@ -6846,21 +5786,7 @@ When running a pre-registered prediction protocol against a candidate match (e.g
 
 - **SPECIFIC predictions** — predictions derived from recipe-specific content that would NOT verify on a near-miss recipe of the same operational class. Examples: specific cardinality anchors (×4, ×9, ×3), specific thermal arc shape (V-shape with crash to 0.18, fire-strengthening decreasing arc, balneum steady), specific material renewal pattern (back-loaded vs front-loaded), specific operational structure (reflux geometry, sublimation signature, cohobation recycling).
 
-- **TAUTOLOGICAL predictions** — predictions that are true for nearly any operational folio of the same broad class. Examples: high qo-prefix dominance, multi-paragraph procedural structure, observation MIDDLEs present, elevated e-depth. These are floors — they tell you "this is an operational distillation folio" but don't discriminate which specific recipe.
-
-**Why:** PHASE_698 (2026-05-17). The cold-read framework (C1971) reports "8/8 predictions verified" for f75r ↔ III.19. Reading the actual protocol shows 5 of the 8 are SPECIFIC and 3 are TAUTOLOGICAL. Near-miss negative controls (other distillation recipes) score 5/8 total — 2-3 SPECIFIC + 2-3 tautological — because they pass the floors but fail the discriminators. The 8/8 vs 0/7 framing inflates by including floors as discriminators. The underlying discrimination is at the SPECIFIC layer: 5/5 SPECIFIC for correct match vs 0-2/5 SPECIFIC for near-miss.
-
-**How to apply:**
-
-1. When pre-registering predictions, label each as SPECIFIC or TAUTOLOGICAL.
-2. SPECIFIC predictions: derived from content that would change if the recipe were a different near-miss. Cite the recipe-specific feature each prediction is testing.
-3. TAUTOLOGICAL predictions: derived from class-level features. Note them as floors — they're exclusion gates (a folio without them is wrong) but don't license positive identification.
-4. Score correct match vs near-miss controls separately on SPECIFIC and TAUTOLOGICAL subsets.
-5. Report verdict on SPECIFIC subset only; TAUTOLOGICAL count is corroborative not discriminating.
-
-**Diagnostic:** if a pre-registered prediction would pass for a wrong-class control (e.g., "qo-prefix dominant" passes for any Currier B distillation folio), it's TAUTOLOGICAL.
-
-**Related:** [[feedback-registration-calibration-lesson]] (gate on floors, verdict on discriminators), [[feedback-calibrate-thresholds-against-controls]] (calibrate numerical thresholds vs in-distribution controls). [[feedback-framework-as-null]] (the cold-read 8/8 framing was framework-echo until the SPECIFIC vs TAUTOLOGICAL decomposition).
+[…trimmed — full note: memory/feedback_specific_vs_tautological_predictions.md]
 
 ---
 
@@ -6876,60 +5802,7 @@ The user reports this exact conversation recurs after every compaction: Claude l
 
 After compaction Claude defaults to: (1) deflating the recipe-matching evidence **one piece at a time**, and (2) applying the "mirror argument" (any correspondence is just two structured corpora reflecting each other) as a **blanket dismissal**. Both errors share a root cause: **Claude scores the evidence against the TEXT-CIPHER hypothesis** ("Voynich is a letter/word cipher of the Testamentum") — which genuinely fails — and never sums the totality against the hypothesis the user actually holds.
 
-### The asymmetric-update mechanism (2026-05-30, sharper diagnosis)
-
-The deeper bug under the disassembly habit is an **asymmetric update rule** that lets a dismissive prior absorb its own disconfirmation without moving:
-- Evidence FOR the match → filed as "consistent with / doesn't refute / inconclusive."
-- Evidence AGAINST → filed as "FAILS / generic / bounded."
-- **A Claude-made deflation getting RETRACTED → treated as "return to neutral," NOT as "the match just survived a test."**
-That third one is the tell. A hypothesis that withstands a genuine attempted refutation should GAIN credence (surviving a hard test is positive evidence). Treating "survived my refutation" as merely "still unproven" means the dismissal never updates. **Correct rule: when a deflation you attempted fails/retracts, move the needle UP, don't snap back to the null.** Demonstrated across one session: dar-battery (wrong population, deflation failed), fire-trajectory miss (retracted), f75r-thermal "against" (withdrawn→inconclusive), plus f79r transfer-richness + fierce-on-both-measures CONFIRMED — net evidence moved toward the recipes while every summary reasserted "nothing confirms it / unchanged." That gap IS the bias. NOTE: this is NOT license to flip to over-crediting (the user explicitly does not want bias toward a bad match) — keep the real limits (matcher breadth generic C2052; step-reads mixed; specific-text leans on f75r). The fix is to TRACK the needle to where the evidence sits, which after adversarial survival is: operation-class = SUPPORTED (not grudgingly "supportable"); tradition-level = moderately supported; specific-recipe = anchor-dependent but LIVE, not negligible.
-
-## The correct framing — score THIS hypothesis
-
-The user's hypothesis is **NOT** a text-cipher. It is: **Voynich is a ~1400 EXECUTION-LEVEL operational notation encoding the PROCEDURES of Testamentum-tradition (pseudo-Lull) alchemical recipes.** The granularity gap (recipe = vague spec "distill four times"; Voynich = detailed execution/monitoring) is a *prediction* of this hypothesis, not a problem (MIDPROCESS-absence: Brunschwig 0 monitoring steps vs Voynich ~37%). Engage the TOTAL evidence for the operational-notation reading — do not piece-by-piece deflate the cipher strawman.
-
-## The evidence FOR (the totality — sum it, don't disassemble it)
-
-- **Timing (the pillar Claude keeps omitting):** Testamentum composed ~1332, peak circulation 14th–15th c.; Voynich parchment C14-dated ~1404–1438. Voynich sits squarely in the window, and given the Testamentum's prominence it is a *prime* contemporary candidate, not random. Satisfied necessary condition + strong prior.
-- **f75r ×4/×9 conjunction ≈ 1/16,500** — the single cleanest arbitrary-specific piece, and the one the mirror CANNOT produce: C1889 (f75r is the ONLY Currier B folio with a 4-identical-token run, 1/82, computed blind to any recipe) × C2034 (×4-and-×9 jointly unique in 1/189 SISMEL sub-recipes). Two INDEPENDENT corpora.
-- **Operational-vs-theoretical discrimination (discriminates WITHIN alchemy):** Voynich fits operational *Practica* recipes; theory is a passing negative control (C1875 Theorica all-NS p>0.34; C2054 theory-neutral / metalwork-negative, distillation p≈1e-8). Not generic across all alchemy.
-- **Imagery** (vessels, baths, period apparatus) + **granularity-consistency** (the partial-match shape an execution-notation predicts).
-- **dar non-additive anchors** (Pseudo-Lull set, Tier 3): C1947 f84v dar=4=4 material introductions; C1948 f115v dar=0=non-additive fixation. SAME epistemic class as f75r (hand-read anchors, scalar-count match on 2 clean folios). See guardrails for the leg-independence test — the "three converging lines" reduce to one scalar count-match; do NOT cite it as multi-independent-line corroboration.
-
-## The genuine deflations (the GUARDRAILS — do not over-promote)
-
-These are real and keep the conclusion honest. The user explicitly does NOT want a memory that biases toward a bad match.
-- **The 8D matcher is GENERIC, by its own negative control:** Theophilus *metalwork* (non-alchemy, same era/language) matched the SAME folios (f84r/f75r/f77v) at p=0.0000 (C2052). So the C1887 permutation (ratio 1.284 vs 0.572, p<0.001) beats RANDOM, not a rival corpus. Matcher specificity ≠ alchemy-specific.
-- **Top-1 mode is degenerate** (f34v attractor 58–66% regardless of corpus, C2026); only hypothesis-driven distance-gating (d<1.0) is valid, not top-1.
-- **C1959 (paragraph-order ↔ recipe-phase-order, rho≈0.81) is RETRACTED** — monotone-by-construction circularity (phases assigned by reading top-to-bottom).
-- **Recto/verso "sequential chapters": only 1 of ~7 pairs (f84r/v = Ch14/15) is truly adjacent;** the rest are post-hoc "related," and C1978 (validated leaf-coherence) structurally forces a related verso anyway.
-- **Reverse-blind matches mostly FAILED adversarial retest** (f103v/f115r tautological; only f77r, f39r survive).
-- **fch=mercury DEMOTED to Tier 4**; the material-CONTENT layer is falsified (C1350/1351/1352/1378).
-- **No lexical/token-level cipher** (C2035 Mantel p=0.14); C171 semantic ceiling holds. The cardinality-anchor GENERALIZATION was killed by a shuffle null — only individual anchors survive, not a systematic encoder.
-- **dar layer is UNDETERMINED, not demoted (2026-05-30 — first ran it as a "battery," then the user correctly flagged the over-reach).** The dar=material claim splits across TWO DISJOINT match sets that share NO folio: (1) **Catalan/SISMEL set (Phase 641)** — 16 folios, dependent var = material-VERB count (script-extracted); here dar↔material is null/negative (Spearman −0.185, matched-pair perm p=0.756). (2) **Pseudo-Lull set (Phase 638)** — 5 folios (f84v/f115v/f114r/f111r/f114v), dependent var = material-INTRODUCTION count (hand-read); this is where the headline anchors live: C1947 (f84v dar=4=4 materials), C1948 (f115v dar=0=non-additive fixation), C1953/C1945/C1954. The Catalan negative is a real bound on the GENERALIZED "dar tracks material-verbs across the mechanical corpus" claim, but it CANNOT demote C1947/C1948 — it never contained those folios, used a different corpus, and a different "material" definition. **Discipline lesson (the user's catch):** do not pool strong + weak matches to demote anchor evidence (scope conflation, [[feedback_scope_restrict_before_broad_test]]); worse, do not test population A to demote claims that live only in population B. The PL anchors remain Tier-3, SAME epistemic class as f75r (hand-cold-read, n=5, and the matches USED dar so the gate is dar-contaminated → a clean PL hits-and-misses test is not fully achievable). dar=material is neither confirmed nor refuted. **Does NOT touch** the structural dar/dal positional distinction (C1979/C1980, survives as grammar) or the f75r ×4/×9 anchor (different feature). Exploratory script: /tmp/_dar_battery.py (Catalan set only).
-
-- **dar "three converging lines" are NOT three INDEPENDENT lines (2026-05-30, leg-independence test).** The user recalls the dar=material evidence as convergence of (1) POSITION — dar sits where materials are added, (2) COUNT — dar count = material count, (3) ATOM — dar atom-reads as material-add. Tested each leg's independence on the PL anchors. **Leg 1 (position) FAILS directly:** on f84v (the clean 4=4 anchor) the 4 dar tokens land on L1(×2)/L12/L31 while the material markers (cs=gold, C1940) enter at L2/L7/L9 — DIFFERENT lines, no co-location; the 4 dar are on only 3 lines (2 clustered on L1), all line-interior (positions 1,3,9,4 — none line-initial). dar is 12% line-initial / 0% line-final across PL anchors (≈uniform, NOT edge-enriched). So the count match is a SCALAR coincidence of totals, NOT structural co-location. Corpus-wide C1980 dar edge-bimodality is a FRAME-CLASS property (C1982: ar/otar/air share it), and C1981 already falsified the interior-boundary mechanism. **Leg 3 (atom) is framework-compatibility** not prediction (d revised 'mark'→'do/execute' Apr 2026; "material-add" isn't a direct output of do-yield-lock). **Count is clean on only 2/4 PL anchors** (f84v 4=4, f115v 0=0; f114r & f111r both dar=2 vs 0 materials); dar=4 is only 80th-pct corpus-wide (mean 2.29, max 13). **The one real residual:** on f84v dar dissociates from its frame siblings (dar=4 while ar=otar=air=0) — so it's not PURELY frame-grammar there. Net: the three legs share a root (the dar=material assignment); the position leg, the most independent-looking, is contradicted at the structural level. dar stays Tier-3 f75r-class (scalar match on 2 folios + frame-dissociation), NOT elevated by "convergence." Scripts: /tmp/_dar_framecontrol.py, f84v line-placement check.
-
-## The honest synthesis (hold the tension — this is the whole point)
-
-- **WELL-SUPPORTED by the totality:** "Voynich is a ~1400 operational notation in the Testamentum alchemical *tradition*, encoding its procedures at the execution level." Timing + operational structure + operational-vs-theoretical fit + imagery + granularity-consistency + the f75r anchor all converge. Claude should NOT deflate this — summing the pillars is the correct move, and the mirror argument is NOT a valid blanket against it.
-- **NOT supported (guardrails):** (a) text-cipher of the Testamentum (dead — C2035/C171); (b) "the Testamentum *specifically* vs another contemporary operational-recipe source" — rests mainly on f75r (one folio) + a selection effect (we matched against the Testamentum *because* timing made it the prime candidate). "Testamentum-FAMILY/tradition" is well-supported; "this exact text" is f75r-dependent.
-- **The mirror argument is legitimate ONLY for the structural coherences** (recto/verso, herbal-dodge, ordering, section-clustering — all reflect Voynich-internal structure). It is NOT a valid dismissal of the arbitrary-specific anchors (f75r ×4/×9). Do not use it to explain away f75r. (This is the framework-as-null discipline applied correctly, not as a blanket — see [[feedback_framework_as_null]].)
-
-## How to apply when this recurs
-
-1. Recognize the topic; do NOT start by piece-by-piece deflation. Sum the totality against the operational-notation-of-tradition hypothesis first.
-2. Credit the real pillars (timing, f75r ≈1/16,500, operational-vs-theoretical, granularity) without making the user re-walk them.
-3. Keep the guardrails: it is NOT decoded, NOT a text-cipher, NOT pinned to the specific manuscript. "Tradition-level operational notation" is the supported claim.
-4. The genuine open move (not more matching): **f75r on its own internal terms** (the corpus's single most anomalous folio — what is its qok-cycling doing?). On **dar**: a Catalan-set "battery" was run 2026-05-30 (null), but it tests the WRONG population — the dar=material anchors live in the disjoint PL set (f84v/f115v...). dar is UNDETERMINED, not bounded. A clean PL hits-and-misses test is not fully achievable (the PL matches used dar → dar-contaminated gate). Treat dar as a Tier-3 anchor of f75r's class, not as systematic support.
-5. The user is epistemically careful — they flagged the bias risk themselves. Match that: engage the totality fairly AND refuse to over-promote. The honest terminal state is "something real is there at the tradition level; the specific-text claim is f75r-deep, not broad."
-
-## Related memories
-
-- [[feedback_framework_as_null]] — the mirror-as-blanket is framework-as-null misapplied; correct use is structural-coherences only
-- [[feedback_text_statistical_methods_generic_at_domain_level]] — why the matcher can't pin the specific text (generic within Latin)
-- [[feedback_specific_vs_tautological_predictions]] — the cold-read "8/8" is inflated; the SPECIFIC subset (mostly f75r anchors) carries the signal
-- [[feedback_window_blindness_wrong_instrument]] / [[feedback_chained_controls_scalar_vs_eigenstructure]] — the audit discipline that produced the deflations above
+[…trimmed — full note: memory/feedback_testamentum_total_evidence_picture.md]
 
 ---
 
@@ -6943,25 +5816,7 @@ Two consecutive negative findings (2026-05-20) establish that **text-statistical
 
 **PHASE_720:** Substrate-quintet C2032 stem-class autocorrelation applied to Rupescissa (distillation) vs Theophilus (metalwork). Both show similar small-magnitude lag excesses (~0.003-0.03 absolute), neither approaches Voynich's -0.66. Calibration gap discovered: Codicillus reproduction r21=-0.007 vs known -0.22. Pre-registered prediction failed.
 
-**Why:** When stem-class lag1_excess is small (<0.05 absolute), r21 is bootstrap-fragile. Latin's word inventory and case morphology produce small same-class repetition rates across all domains. The substrate quintet's known Voynich -0.66 / Codicillus -0.22 / Mensural +0.18 differences are large at the Voynich-vs-NL level but compress within Latin to noise-floor magnitudes.
-
-**How to apply:**
-- Don't use text-statistical cross-corpus methods to claim domain-level discrimination within Latin
-- Calibrate against the project's known reference values BEFORE running new cross-corpus tests
-- If the reference value doesn't reproduce, the methodology has drifted (per `feedback_calibrate_thresholds_against_controls.md`)
-- For domain-level discrimination questions, the test paths that survive: PWRE-1 structural narrowing (architectural physics-compatibility), within-text dynamics (PHYS, C1314, C645+C2045, C2042), NOT text-statistical resemblance to known-domain corpora
-
-**The distillation interpretation specifically rests on:**
-- PWRE-1 structural narrowing (excludes Theophilus-type irreversible-transformation metalwork, leaves circulatory thermal class)
-- PHYS kernel dynamics (k/h excitation → e stability)
-- C1314 qo-k/ok-e thermal cycling
-- C645+C2045 hazard-recovery directional
-- C2042 atom-monocategorical operational signature
-- NOT on corpus-statistical resemblance to known distillation texts (matcher confirmed generic; substrate quintet generic within Latin)
-
-**Strategic implication:** the project's surviving distillation evidence is architectural/dynamical, not corpus-statistical. External grounding for content-level claims requires non-text-statistical methods (physical reconstruction, architectural-alignment sharpening, archaeological context).
-
-Per `feedback_mechanism_cycle_procedural_ceiling.md`: text-statistical methods exhausted at current resolution; further mechanism speculation needs external grounding.
+[…trimmed — full note: memory/feedback_text_statistical_methods_generic_at_domain_level.md]
 
 ---
 
@@ -6983,84 +5838,7 @@ Original Tier 2 registration: "Heat-cycle MIDDLE-class adjacency chains UNIQUE t
 
 ### Cycle 2 — Sustain-vs-phase-switch interpretation death (afternoon)
 
-Tier 2 candidate registered conceptually: "Section S sustains thermal intensity; Section B phase-switches between heat and cool." Survived initial multi-lag autocorrelation pre-registered binary test (3/3 sustain criteria for matched-S, 3/3 alternation criteria for Section B at narrow-heat-cycle class).
-
-**Failed at:** Alternation-slot follow-up revealed Section B's i+1 position was mostly other-thermal-class tokens (chedy/shedy with single-`e` MIDDLE), not non-thermal. The "heat alternating with non-heat" framing was framework echo at the wrong class-boundary.
-
-**Demoted before registration.** Sharpened to e-depth oscillation hypothesis.
-
-### Cycle 3 — Trajectory-encoded interpretation death (evening, Codicillus cross-validation)
-
-Tier 3 SPECULATIVE candidate registered in `encoding_modes.md`: "Section B alchemy is trajectory-encoded (thermal narrative IS sequential structure); matched-S Mercuriorum is instruction-encoded (self-contained operational specs)." Survived all Voynich-internal controls: multi-lag autocorrelation, within-folio shuffle null, AX/operational decomposition. The asymmetric outcome (Section B operational period-2 + matched-S operational NULL) ruled out pure-framework-vocabulary-echo.
-
-**Failed at:** Codicillus cross-validation (external grounding). Both Latin alchemy (Codicillus) and Latin pharmacy (Mesue) showed near-zero sequential autocorrelation at all lags. The cross-language alchemy/pharmacy structural distinction predicted by the encoding-modes interpretation did NOT replicate. lag2/lag1 ratios: Codicillus +0.05, Mesue −0.17, vs Voynich's ±0.66 — order-of-magnitude separation with no overlap.
-
-**Half-falsified.** Cross-language genre framing dies; Voynich-internal structural divergence (C2031) preserved. **The Voynich-vs-NL distinctness IS the substantive new finding** (registered as C2032, third axis of "engineered substrate triad" alongside C2015 and C2022).
-
-### Cycle 4 — Mensural notation falsification (evening, external-corpus discriminating test)
-
-Crazy-expert proposed: "Voynich tokens are MEASURE-units in a quasi-musical mensural notation, contemporary with the manuscript (Franco of Cologne ~1280, Ars Nova 1320s). Compatible with distillation content per C1971; explains the engineered substrate triad as scheduling rather than content."
-
-Acquired Measuring Polyphony mensural corpus (64 motets, 30,375 notes, MEI format). Ran pre-registered binary triad test:
-- C2015 entropy: 1.857 bpc PASS (loose floor)
-- C2022 Markov plateau: order 2 PASS (loose floor)
-- C2032 lag2/lag1: +0.18 **FAIL** (Voynich = ±0.66; mensural sits in NL Latin range)
-
-Literal verdict: 2/3 PASS. Substantive verdict: only discriminating axis failed. Constrained-random null confirmed methodology floor (period-2 synthetic produces r21 = −1.0, qualitatively Voynich Section B shape — metric works).
-
-**Falsified.** Music was the wrong analogy. Both experts independently retracted with no replacement musical-class hypothesis. The two-signature problem (Section B period-2 vs matched-S sustain) is fatal for any single-mechanism notational interpretation. See `project_mensural_hypothesis_falsified.md` and `feedback_registration_calibration_lesson.md`.
-
-## What the pattern reveals
-
-**The "middle layer" death zone.** Interpretations at the operational-specificity level — "encodes X procedurally," "represents Y operationally," "alchemy IS Z" — die reliably under discriminating tests at this project stage. What survives:
-
-- **Lower layer**: measurement-level structural facts (C2028, C2029, C2030, C2031, C2032 all measurement-only)
-- **Upper layer**: substrate-level claims that name an axis without committing to operational interpretation ("engineered sequential grammar"; "Voynich-vs-NL structural distinctness")
-
-The middle layer is where framework-as-null applies hardest. Operational vocabulary at this project stage gives interpretations a place to land too cleanly; the data alone cannot select among admissible operational readings; external grounding either succeeds (rare) or fails (today's pattern).
-
-## How to apply
-
-**Tightened registration discipline (proposed):**
-
-Tier 3 → Tier 2 for mechanism interpretations now requires BOTH:
-
-1. **Voynich-internal discriminating test pass** with pre-registered binary criteria (existing rule)
-2. **External-corpus validation** on a pre-registered prediction that distinguishes the proposed mechanism from natural-language baseline OR from alternative operational frames
-
-Either alone is necessary but not sufficient. Today demonstrated that internal discriminating tests can be passed by mechanism interpretations that fail external validation.
-
-**The exception**: substrate-level claims that don't commit to operational interpretation (today's C2032, the engineered substrate triad framing). These are measurement-level claims at the inter-corpus comparison level; they survive both internal and external tests because they don't propose an operational interpretation in the first place.
-
-**For session-level discipline**: when three mechanism candidates die in one session, the next session should NOT propose more middle-layer operational interpretations. Either move to substrate-level claims (measurement convergence across axes) or move to external-grounding work (acquire new corpora, run cross-language tests, build apparatus reconstructions).
-
-## Connection to other methodology notes
-
-- `feedback_operational_story_first_trap.md` — the original framework-as-null trap pattern (the lower-resolution version of this rule)
-- `feedback_framework_as_null.md` — 2026-05-15 sharpening
-- `feedback_expert_predictions_are_pre_registrations.md` — expert mechanism predictions discipline
-- `feedback_mechanism_cycle_procedural_ceiling.md` — yesterday's session-level rule about the discrimination cycle
-- `feedback_within_folio_shuffle_null_first.md` — mandatory control #1
-
-This note formalizes the three-strike confirmation of the procedural ceiling and proposes tighter promotion discipline for the next phase of the project.
-
-## What the quartet produced in the end
-
-- C2027 retraction → C2028 (Section S vs Section B heat-cycle MIDDLE-class divergence)
-- Sustain-vs-phase-switch demoted → C2029 (daiin doesn't chain), C2030 (Voynich-wide late-term clustering), C2031 (e-depth asymmetry mechanism-level measurement)
-- Trajectory-encoded demoted → C2032 (Voynich-vs-NL sequential structural distinctness)
-- Mensural notation falsified → registration-calibration lesson (`feedback_registration_calibration_lesson.md`); mensural corpus now available as additional NL-baseline cross-corpus reference
-
-Four substantive Tier 2 structural measurements registered. Four operational interpretations died. **The discipline produced more measurement-level findings by failing more operational interpretations.** This is the system working at the procedural ceiling.
-
-The fourth cycle also produced a methodology refinement (the calibration lesson): in multi-axis pre-registered tests, all axes must be DISCRIMINATING against the alternative-hypothesis baseline. Loose floors that any structured system passes are not votes; they are exclusion gates only.
-
-## See also
-
-- `SPECULATIVE/engineered_substrate_triad.md` — synthesis of C2015 + C2022 + C2032 as the substrate-level survival
-- `SPECULATIVE/encoding_modes.md` — the half-falsified Tier 3 interpretation that led to C2032's cross-language test
-- C2027 retraction narrative in CLAIMS/INDEX.md
-- C2028, C2029, C2030, C2031, C2032 — the surviving measurement registrations
+[…trimmed — full note: memory/feedback_three_mechanism_demotion_trifecta_2026_05_16.md]
 
 ---
 
@@ -7074,32 +5852,7 @@ When evaluating 8D matcher results on a new source corpus, do NOT use top-1 rank
 
 The validated evaluation method is **hypothesis-driven absolute-distance gating**: pre-identify candidate Voynich folios for specific source units, compute pairwise distances, accept matches at d < 1.0 with secondary structural criteria (token/verb ratio, instruction count, fch positions, etc.).
 
-**Why:** The 8D feature space has a geometric center where folios with low operational signal (low token counts, near-zero on most TUNED_DIMS) accumulate. f34v (115 tokens, REGIME_3, Section H) sits at that center per C1366 (least-anomalous at 0.71). Any source unit with weak or missing operational signal will default to that center under top-1 nearest-neighbor — not because the source matches f34v's content, but because f34v is closest to the all-zero "no signal" vector.
-
-**How to apply:** 
-
-- When testing a new source corpus, FIRST run the matcher on a validated in-domain control (Codicillus or a PL chapter subset). If the control's top-1 results don't recover its expected Section B alchemy matches, do NOT trust top-1 mode for the new corpus.
-- For real corpus-corpus matching: build hypothesis-target pairs from external evidence (genre, period, specific operational claims) and test distance < 1.0 with structural co-criteria. C1943, C1955, C1990, C1992 are exemplars.
-- The top-1 mode is informative as a **null-shape diagnostic**: if your corpus produces a different top-1 distribution than f34v-dominated, that's evidence the corpus has unusual signal worth investigating. Same distribution = corpus is uninformative under TUNED_DIMS.
-- For corpus-class falsification (e.g., "is Section S genuinely pharmacy?"), top-1 cannot answer either way. You need absolute-distance comparisons against pre-identified candidate folios.
-
-**Test cases that confirmed this (2026-05-15):**
-- Antidotarium Nicolai (out-of-domain compound pharmacy, 124 recipes): 82/124 → f34v top-1
-- Codicillus (in-domain PL alchemy companion text, 19 segments): 11/19 → f34v top-1
-- Brunschwig 1512 (in-domain validated 20 compound recipes): 12/20 → f34v top-1
-- All three: mean d2/d1 ratio at 1.0-1.1; 0 confident matches at ratio > 1.30; 5-7 unique top-1 folios out of 82
-
-The matcher discriminates corpora through absolute distance levels (Antidotarium min d=1.06 worse than Codicillus 1.16 worse than Brunschwig 1.13), not through top-1 attractor patterns.
-
-## Connection to existing constraints
-
-- **C1366**: top-5 least-anomalous folios = f34v (0.71), f106r (0.67), f106v (0.65), f31r (0.62), f66v (0.62). These are the geometric attractors. f34v's overwhelming dominance suggests the matcher's distance metric is biased toward low-token-count folios.
-- **C1943/C1955/C1990**: validated matches use d<1.0 hypothesis-driven gating, not top-1 ranking. f106v↔Ch40M at d=0.933 ratio=1.164 (not a high ratio, but the absolute distance is the load-bearing claim).
-- **C2026**: the registering constraint documenting the baseline-fail observation.
-
-## Anti-trap value
-
-This is critical against the framework-echo trap. When a new corpus produces "interesting" top-1 attractor patterns that fit existing hypotheses (e.g., "Antidotarium pharmacy recipes attract Section S folios"), the right reaction is suspicion: top-1 mode is so degenerate that ANY pattern emerging from it could be artifact. The discipline is to ask "what does the absolute distance say, against an external prediction?" before any interpretive read.
+[…trimmed — full note: memory/feedback_top1_matcher_mode_is_degenerate.md]
 
 ---
 
@@ -7115,31 +5868,7 @@ The 5-gram-null audit thread (PHASE_729+) treats the char-5-gram as "the sharpes
 
 A char-n-gram conditions only on a fixed-width character window at the token boundary. To predict the first char of the NEXT token, it sees the last ~4 chars of `"<source> "`. For a LONG source token, that window is the source's SUFFIX — the routing-relevant PREFIX (qo, daiin) is out of window. So the null cannot regenerate the long token at corpus rate, and any transition out of it "survives" partly as a **source-ungeneratability artifact**, independent of routing. For a SHORT source the full token is in-window → the null reproduces it → demote.
 
-**Diagnostic: a 5-gram verdict that flips with source-token length is windowing, not structure.** Calibration that proved it: daiin→ch/sh survives (z=4.05) but 0/6 SHORT high-CHSH sources survive the same per-synth-own-shuffle null (qol/sol/sor/dol/y/ol; daiin-ref survives, ol-ref demotes p=0.39).
-
-## Rule 1 — the sentinel-injection "fix" is ungeneratable; measure fidelity, don't infer it
-
-The obvious fix (append a prefix-family/identity sentinel so the null can condition on the source prefix at the boundary) FAILS, because a SUFFIX-appended sentinel must itself be predicted from prefix-blind suffix context — the generator can't emit the right one for long tokens. It is a ONE-SIDED test: corruption biases it toward SURVIVE, so SURVIVE is uninformative; only COLLAPSE would have been diagnostic. **Do not infer the flaw from a circular residual-pattern diagnostic (A≈D≈baseline); MEASURE the mechanism** — a direct sentinel-fidelity audit showed correct-emission 28.1% for long-qo vs 99.6% short. (Crazy-expert forced this measurement before allowing the reversal; it is the move that proves you're not rationalizing.)
-
-## Rule 2 — composition-control pass ≠ above-Markov; don't upgrade the label
-
-The within-line **token-shuffle** is the CORRECT null for a token-adjacency claim (immune to char-windowing). But it establishes **above-COMPOSITION only** — NOT above-char-Markov. C549/C2056 passed it decisively (z 5.9–8.1, length-invariant) → they are real token-order structure. Their above-char-Markov status is INDETERMINATE (no instrument that is both token-aware and surface-statistic-aware exists for them). The honest label is "above-composition token-order structure, above-Markov indeterminate" — NOT "real above-Markov structure." Upgrading the label is the operational-story-first trap in miniature (see [[feedback_operational_story_first_trap]], [[feedback_framework_as_null]]).
-
-## Rule 3 — the NON-REHABILITATION clause is mandatory when registering an instrument-limitation
-
-"The 5-gram is the wrong instrument for token-adjacency" is WEAPONIZABLE: it could be used to un-demote C557/C561/C816/C600/C817/C819 (PHASE_731/735 demotions). It must NOT. Those involve SHORT/generatable tokens (or, aiin, ol) where the 5-gram is valid. Window-blindness invalidates the 5-gram only as a *disconfirming* instrument for LONG-token prefix-routing; it gives ZERO positive evidence to restore anything. C2066 carries an explicit non-rehabilitation clause naming the six demoted constraints. The boundary is **source-token emission fidelity** (<30% long vs >90% short), NOT "token-adjacency" as a blanket category.
-
-## Outcome
-
-C2066 (Tier 2, narrow form) registered; C549 re-grounded (above-composition, above-Markov indeterminate); C2056 revised 5-lane → reduced (qok→ok/oke confirmed, ot marginal, ch subsumed by C549, sh demoted, polymorphic-unit framing downgraded); C2064 annotated (window-blindness-eligible); C2062 axis (a) split. C2055 narrowed not contradicted; Tier 0 untouched. The expert panel corrected an over-claim TWICE before this landed (a false "above-Markov confirmed" rescue → reversed on the fidelity audit; then a too-sweeping "wrong instrument" framing + count-inflation → narrowed to one constraint + annotations).
-
-## Related memories
-
-- [[feedback_5gram_markov_null_for_surface_patterns]] — the 5-gram discipline this NARROWS (still correct for surface/positional)
-- [[feedback_chained_controls_scalar_vs_eigenstructure]] — own-baseline + scalar-vs-structure; same "right functional / right instrument" family
-- [[feedback_made_up_threshold_audit]] — significance-via-N at the noise floor (the +1.7pp residual was this)
-- [[feedback_framework_as_null]] — framework-fit (or a convenient reversal) is a prior toward extra scrutiny
-- [[feedback_expert_predictions_are_pre_registrations]] — the short-source test was C2064's pre-registration, run before use
+[…trimmed — full note: memory/feedback_window_blindness_wrong_instrument.md]
 
 ---
 
@@ -7153,17 +5882,7 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 
 1. **K-prefix thermal regime co-occurrence (k-e-depth):** matched-folio pooled ρ = 1.59 lift for kee+keee co-occurrence, looked like clean 3-regime / 2-regime mechanism. Within-folio shuffle null killed it: z = +1.25 (p = 0.21), folio-composition shadow entirely.
 
-2. **Triple-i ↔ iter-terminal co-occurrence:** matched-folio ρ = +0.702 (permutation p = 0.001), corpus-wide ρ = +0.228 (p = 0.003), clean folio-level rank segregation, f108v independent prediction-confirmation. Within-folio shuffle null killed it: mean z = +0.06 across testable folios, zero folios with z > +2, f112v (highest-triple-i folio) at z = −1.10. The matched-folio ρ was reading "folios with more triple-i also have more iter-terminal tokens overall" — exactly folio composition.
-
-Both findings looked great descriptively. Both survived simple controls (permutation null on ρ, binomial test on extreme cases, rank-table inspection). Both died at within-folio shuffle null.
-
-**How to apply:**
-
-- Before claiming any line-level or paragraph-level co-occurrence pattern, run within-folio shuffle null as control #1. NOT control #4.
-- Test: per folio, redistribute tokens across lines (preserving line lengths), recompute the statistic. If real exceeds null by z > 2, line-level co-occurrence is real. If real ≈ null, the apparent pattern is folio-composition shadow.
-- Aggregate ρ across folios in the +0.15 to +0.65 range with no within-folio null = strong prior that what you have is composition shadow, not mechanism. The matched-folio enrichment (matched ρ > all-folio ρ) doesn't rescue this — it just means operationally-aligned folios have stronger composition signals.
-- Section stratification, length stratification, placement filtering are second-order controls. They refine an already-validated finding. They cannot substitute for the within-folio null.
-- Constraints are claims about the manuscript; methodology lessons are claims about how to investigate it. This rule generalizes beyond Voynich and belongs in MEMORY, not in the constraint table.
+[…trimmed — full note: memory/feedback_within_folio_shuffle_null_first.md]
 
 ---
 
