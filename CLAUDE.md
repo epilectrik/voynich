@@ -322,8 +322,8 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 
 **Workflow:**
 1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py --compact`)
-2. `generate_expert_context.py` produces BOTH `EXPERT_CONTEXT.md` AND the expert-advisor agent
-3. **ALWAYS use `--compact` flag** — without it the agent is ~600KB (exceeds context budget). Compact mode produces ~350KB with full constraint coverage.
+2. `generate_expert_context.py` produces `EXPERT_CONTEXT.md` AND BOTH agents — `expert-advisor.md` and `crazy-expert.md` (the latter prepends `context/CRAZY_EXPERT_STANCE.md` to the same shared body)
+3. **Use the `--compact` flag** — it strips file-path/navigation cruft useless to an embedded agent. Both agents are ~650–700 KB (~165–175K tokens), which is fine for one-shot expert consultations in a 1M-token window — **agent size is NOT a budget constraint.** (The old "~350 KB budget / exceeds context" note was stale and drove unnecessary trimming; do not chase a smaller size target.)
 3. Update MODEL_CONTEXT.md if structural understanding changed
 4. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
 5. Verify counts match (constraints, fits)
