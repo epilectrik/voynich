@@ -1,36 +1,35 @@
-# PHASE 739 — f75r ×9-window density-matched null — PRE-REGISTRATION
+# PHASE 739 — Anchor Voynich-leg gate: C1889 4-run corpus-max density null — PRE-REGISTRATION v2
 
-**Status:** PRE-REGISTERED (locked before running). Script NOT yet run.
+**Status:** PRE-REGISTERED v2 (REVISED after expert reconciliation; locked before run). Script NOT yet run.
 **Date locked:** 2026-05-30
-**Type:** Null-driven AUDIT of a Tier-2 constraint (C1969). Self-correcting → exempt from the echo-gate; per verdict-gate discipline the kill condition is locked here, before the script runs (this can demote a load-bearing anchor — no running-first-rationalizing-after).
-**Proposed by:** lean-expert (the foundation/gate check; expert-advisor + crazy-expert proposed build-on-top phases that depend on this surviving — see INDEX).
+**Type:** Null-driven AUDIT of a Tier-2 constraint (C1889). Self-correcting → exempt from echo-gate; kill condition locked before the run.
+
+## Why v2 (what the expert reconciliation changed)
+v1 targeted **C1969** (the ≥9-qok-window) and claimed demoting it would void the 1/16,500. All three experts converged that this was **wrong on two counts**: (a) v1's within-folio self-shuffle tests *concentration* (→ C1965 idiom), not C1969's matched-pair specificity; (b) **the ≈1/16,500 = C1889 (4-identical-token run, 1/82) × C2034 (Catalan ×4+×9, 1/189)** — C1969 is a SEPARATE leg that does NOT enter the product. Therefore the anchor's only Voynich-internal, resamplable term is **C1889**, and the correct first gate tests C1889, not C1969.
 
 ## Question
-Is f75r's corpus-singular **≥9-qok-class-tokens-in-2-consecutive-lines** window (C1969 — the structural basis for the f75r↔III.19 `×9 vegades` anchor and the C1889 × C2034 ≈ 1/16,500 joint) a **genuine concentration/cardinality signal**, or a **Section-B qok-density + line-structure sampling extreme**?
+Is f75r's 4-identical-consecutive-token run (C1889 — `qokedy ×4`, L13; the only Currier B folio of 82 reaching a ≥4 run) a genuine corpus-rare structural fact, or a **selection / order-statistic artifact** inflated by look-elsewhere across 82 folios? This is the Voynich leg of the 1/16,500 anchor.
 
-## Why this is the gate
-The 1/16,500 (project's strongest matcher-independent Testamentum anchor) treats f75r reaching ≥9 as a 1/82 corpus-rare event, assumed **independent** of the Catalan-side 1/189 (C2034). That Voynich-side independence term was never density-controlled. If ≥9 is reachable by f75r's own qok-density + line structure alone, the rarity is composition, not signal, and the joint independence claim voids.
+## Why the off-books result is necessary but NOT sufficient
+The off-books within-folio token-shuffle (this session: p=0.0049 identical-run / p=0.0003 qokedy-run) tests f75r against *its own* shuffle. It is **selected-on** — f75r was chosen as the corpus max-run folio — so it certifies "the 4-run is not a within-folio composition artifact of f75r" but does NOT pay the 82-folio look-elsewhere cost, i.e., does not establish the "1/82" corpus-rarity claim. The selection-safe **corpus-max** version (this phase) is required and registered.
 
-Also resolves a registered tension: **C2028** (heat-cycle qokee* MIDDLE-class adjacency clustering is a Section-S signature, near-zero in Section B) vs **C1969** (f75r is Section B yet carries the corpus-singular ≥9 window). The density null discriminates: survival = f75r is concentrated **beyond** its density (a Section-B folio behaving like Section S — a new finding); failure = just density.
+## Statistic
+Per Currier B folio (H-track, P-placement, exclude labels/uncertain — SAME filter as the off-books run): longest run of identical consecutive tokens (reading order, line-concatenated). **Corpus statistic = max over all 82 folios.** Observed: f75r = 4 (only folio at 4); 7/82 reach 3; corpus-max = 4.
 
-## Exact statistic (matches C1969 as registered — test the registered statistic, not a paraphrase)
-Per Currier B folio (H-track, P-placement, exclude labels/uncertain): max count of **qok-class tokens** in **any 2-consecutive-line window**. Observed (C1969): 3/82 folios reach ≥9 (f75r L37–L38, f86v3 L1–L2, f108r L48–L49); corpus ceiling = 9.
-**LOCK before running:** the exact `qok-class` token definition must be taken from C1969/C1965's original derivation script (do NOT re-define it here) — otherwise we test a different statistic.
-
-## Null (density-matched, within-folio)
-For each folio: shuffle the qok-class / non-qok-class **labels across token positions**, preserving (a) folio token count, (b) qok-class count (→ exact per-folio qok-rate), (c) line lengths / boundaries. N = 10,000 shuffles per folio. Recompute the max ≥9-in-2-consecutive-line window per shuffle. This null preserves length + density + line structure and breaks ONLY adjacency/concentration — so survival isolates concentration beyond composition. (Within-folio label-shuffle is the correct null for an adjacency/concentration claim; the char-5-gram is the wrong instrument per C2066 and is not used.)
+## Null (corpus-max, type-frequency-preserving, selection-safe)
+For each of N=10,000 iterations: within EACH folio, shuffle the token ORDER (a permutation — preserves the exact token-TYPE frequency multiset per folio, so reachability is automatic: a folio can only produce a 4-run if it has a type occurring ≥4×). Recompute each folio's longest identical run; take **corpus-max** that iteration. (Order-shuffle preserves type frequency exactly; a flat-count shuffle would understate the base rate and falsely inflate f75r — per lean/crazy-expert.)
+`p_corpus` = fraction of iterations with corpus-max ≥ 4.
 
 ## Pre-registered thresholds (LOCKED)
+- **KILL: p_corpus > 0.05** → a ≥4 run is reachable corpus-wide by chance → C1889's "1/82" is a selection / order-statistic artifact → **C1889 weakens** (demote/annotate) and the anchor's Voynich leg (the 1/82 in the 1/16,500) deflates.
+- **HARDEN: p_corpus < 0.05** → a ≥4 run is corpus-rare beyond density → **C1889 hardens** with a registered selection-safe `p_corpus`; the 1/82 term is conservative-to-correct.
+- Report also: per-folio observed longest run; under-null expected #folios reaching ≥4 and ≥3 (context); whether any folio other than f75r reaches ≥4 under the null.
 
-**PRONG 1 — f75r self-reproduction (PRIMARY kill condition):**
-`p_self` = fraction of f75r's 10,000 density-matched shuffles that produce a ≥9-in-2-line window.
-- **KILL: p_self > 0.05** → the window is a density + line-structure artifact → **C1969 DEMOTES to Tier 3**; the Voynich-side independence term in the 1/16,500 is VOID; C2028 subsumes f75r (just a qok-dense Section-B folio).
-- **HARDEN: p_self < 0.05** → ≥9 is NOT explained by f75r's density → real concentration → **C1969 hardens** with a registered density-control term (report p_self); f75r registers as a Section-B folio carrying Section-S-like concentration (new supporting constraint).
+## Scope — what this gate does and does NOT touch
+- Tests ONLY **C1889** (the Voynich leg). A KILL deflates the 1/82 term of the 1/16,500; a HARDEN secures it.
+- **C2034** (Catalan 1/189, external corpus census) — untouched by any Voynich null.
+- **C1969** (≥9-window matched-pair) and **C1965** (cycle idiom) are SEPARATE legs tested by SEPARATE designs (see INDEX). A C1969/C1965 result NEVER deflates the anchor and is never to be reported as such.
+- **Independence caveat (lean-expert):** the 1/16,500 multiplies C1889 × C2034 *assuming independence* (Voynich run-structure vs Catalan cardinality-phrasing). Plausible but asserted, not tested here. Out of scope for this gate; flagged as a known limitation of the product.
 
-**PRONG 2 — corpus look-elsewhere (context, not a kill):**
-`E_folios` = expected number of folios reaching ≥9 under the density null. Compare to observed 3.
-- `E_folios ≥ 3` → the 3/82 rarity is density-explained → weakens the independence term even if f75r passes prong 1.
-- `E_folios < 3` → the observed concentration set is real. Report `E_folios`; it calibrates the 1/82 look-elsewhere term in the 1/16,500.
-
-## Scope — what this does NOT touch
-Tests ONLY the C1969 window-rarity / Voynich-side-independence layer. Does NOT touch **C2034** (Catalan 1/189, external — untouched), **C1889** (the 4-identical-token run — a DIFFERENT statistic), Tier 0, or the operation-class reading. A C1969 demotion voids the *joint 1/16,500 independence claim*, not C2034 or C1889 individually.
+## Discipline
+Null-driven demotion-capable → self-correcting, echo-gate-exempt; kill condition locked here before running. Token-order shuffle (composition control) is the correct null for a token-run/adjacency claim; the char-5-gram is the wrong instrument (C2066 window-blindness) and is not used. Complementary to the off-books within-folio test (which killed the composition-artifact alternative); this adds the selection-safe look-elsewhere correction.

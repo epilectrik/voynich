@@ -1,18 +1,28 @@
-# PHASE 739 — f75r ×9-window density-matched null
+# PHASE 739 — Anchor Voynich-leg gate: C1889 4-run corpus-max density null
 
-**Status:** PRE-REGISTERED (locked; script NOT yet run). See `PREREG.md`.
-**Question:** Is f75r's ≥9-qok-in-2-lines window (C1969) genuine concentration, or a Section-B qok-density artifact? Gate test for the C1889 × C2034 ≈ 1/16,500 anchor's Voynich-side independence term. Resolves the C2028↔C1969 tension.
+**Status:** PRE-REGISTERED v2 (locked; script NOT yet run). See `PREREG.md`.
+**Question:** Is f75r's 4-identical-token run (C1889, 1/82) a corpus-rare fact or a selection/order-statistic artifact? This is the Voynich leg of the C1889 × C2034 ≈ 1/16,500 anchor. Gate via a selection-safe corpus-max, type-frequency-preserving null.
+
+## Why this re-targets from C1969 (v1) to C1889 (v2)
+Expert reconciliation (all three converged): the four candidate designs test FOUR DIFFERENT CLAIMS — not competing versions of one test. The "divergence" was apparent (division of labor), not real.
+
+| design | tests | claim |
+|---|---|---|
+| **D** corpus-max density null on the 4-run *(THIS PHASE)* | **C1889** | the Voynich leg of the 1/16,500 |
+| **A** matched-pair under density null + **B** Section-B between-folio | **C1969** | the ≥9-window matched-pair (two complementary estimators) |
+| **C** within-folio / corpus-max window | **C1965** | the cycle idiom + descriptive ceiling |
+| (external) | **C2034** | Catalan 1/189 — not stress-testable by any Voynich null |
+
+The 1/16,500 = C1889 × C2034. The only resamplable Voynich term is **C1889** → D is the correct FIRST gate. A/B/C test SEPARATE legs that do not enter the product.
 
 ## Outcome → bookkeeping (decisive either way)
-- **SURVIVE** (p_self < 0.05): annotate C1969 with the density-control term (p_self); register a supporting constraint — f75r is a Section-B folio carrying Section-S-like qok concentration (resolves C2028↔C1969).
-- **DEMOTE** (p_self > 0.05): strike C1969, tag `STATUS:DEMOTED:3`, void the 1/16,500 Voynich-side independence term; propagate (table, agents, changelog, count) per the retraction-propagation discipline.
+- **HARDEN** (p_corpus < 0.05): annotate C1889 with the selection-safe `p_corpus`; the 1/82 anchor term is secured.
+- **KILL** (p_corpus > 0.05): C1889's "1/82" is a selection artifact → demote/annotate C1889, tag `STATUS:DEMOTED:3`; the 1/16,500 Voynich leg deflates; propagate (table, agents, changelog, count) per the retraction-propagation discipline.
 
-## Conditional follow-on phases (recorded per all three experts' suggestions; run ONLY if THIS gate SURVIVES)
-The three expert proposals form a root + two branches. This phase is the **root**. If it demotes C1969, both branches lose their foundation and are moot/rescoped.
+## Gate order (root → branches; run only as the anchor survives / as the question warrants)
+1. **THIS (D → C1889):** the anchor's Voynich leg. First.
+2. **A (= matched-pair under density null) → C1969:** second; rehabilitates or demotes the ≥9-window leg ON ITS OWN MERITS — does NOT touch the 1/16,500 either way.
+3. **C → C1965 / ceiling; B → concentration-vs-Section-B:** hardening tests for the idiom, not on the anchor's critical path.
 
-1. **CARDINALITY_ANCHOR_CENSUS** *(crazy-expert)* — generalize the rare-count-cluster ↔ explicit-cardinality-N mechanism corpus-wide with a chapter↔folio permutation null (extends C1988, currently 2/2 at p≈0.006). Promotes a matcher-independent, content-label-free Testamentum structural bridge to a corpus-level constraint, or closes the thread past its single anchor. **Dependency:** SISMEL Catalan cardinality enumeration present in repo. Echo-class promotion → needs the discriminating null (built in) + differential check.
-
-2. **F75R_THERMAL_ARC** *(expert-advisor)* — does f75r's per-line e-depth trajectory (C1967/C1225, measured thermal intensity, NOT a content gloss) track III.19's explicitly-specified fire sequence, vs a matched-folio + random-folio null? Adds a quantitative external-grounding evidence layer to the anchor. **Dependency:** III.19 Catalan fire-sequence source actually present in repo (SISMEL is currently untracked — verify first). Echo-class → needs the matched-folio null (built in) + differential check.
-
-## Divergence note (why the root runs alone, first)
-lean-expert proposed auditing the anchor's foundation; expert-advisor + crazy-expert proposed building on it. Correct sequence = audit THEN build. The root gates the branches; bundling them would run build-on-top work blind to whether the foundation holds, and would let separate kill conditions cross-contaminate. See the session discussion.
+## Scope note (anchor vs whole case)
+"Stress the anchor (1/16,500)" → run D (this phase). "Stress the whole f75r↔III.19 case" → run all four, scored as INDEPENDENT legs (C1889 anchor, C1969 matched-pair, C1965 idiom, plus C1925 dar / C1971 cold-read) — and NEVER report a C1969/C1965 demotion as anchor deflation. Independence of C1889 × C2034 in the product is asserted, not tested (lean-expert caveat).
