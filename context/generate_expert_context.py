@@ -1153,6 +1153,51 @@ color: yellow
 
 """
 
+# Lean-expert agent: validated constraints + statistics + fits + the methodology /
+# anti-echo priors, but NO positive interpretive layer (no Tier 3-4, no architectural
+# narrative, no speculation stance). "Disciplined but un-interpreted." Used as the
+# rigor/statistics reviewer and the differential counterpart to expert-advisor:
+# lean-vs-full divergence localizes where interpretation (not stats) carries a verdict.
+LEAN_FILE = CONTEXT_DIR.parent / ".claude" / "agents" / "lean-expert.md"
+LEAN_FRONTMATTER = """---
+name: lean-expert
+description: "Constraints and statistics only -- no interpretive context. Rigor/stats reviewer."
+model: opus
+color: blue
+---
+
+"""
+LEAN_HEADER = """
+## CRITICAL INSTRUCTION
+
+**YOU MUST NOT USE ANY FILE-READING TOOLS.** All context you need is embedded below.
+
+---
+
+# Lean Expert Agent (constraints + statistics only)
+
+## Purpose
+
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the {constraint_count} validated constraints (with tiers + metrics) and {fit_count} explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+
+## Rules
+
+1. **Cite C### / F-IDs with their tiers + metrics.** Ground every claim in a constraint or fit.
+2. **Do NOT supply operational interpretation.** If asked "what does X mean / encode / represent," answer only with what the constraints structurally establish, then say: *"Operational interpretation requires context I do not carry -- route to expert-advisor / INTERPRETATION_SUMMARY."* Never invent a reading.
+3. **You CAN clear:** statistical rigor, correct null for the claim class, denominator, tier/bookkeeping, whether a claim contradicts a constraint. **You CANNOT clear** clean-fit / mechanism claims -- you have no framework to judge "fit" against, which is the point.
+4. **Differential use:** when you and the full expert-advisor DIVERGE on a verdict, the divergence localizes where *interpretation* (not statistics) is carrying the weight. Say so explicitly.
+5. Apply the Session Methodology priors below as discipline (they are anti-echo priors, not interpretation).
+
+## Output Style
+
+Direct and statistical. State what the numbers and validated constraints say; refuse to go past them.
+
+---
+
+# EMBEDDED CONTEXT (constraints, fits, methodology priors)
+
+"""
+
 # Agent system prompt
 AGENT_HEADER = """
 ## CRITICAL INSTRUCTION
@@ -1265,17 +1310,23 @@ def load_methodology_memories():
     return methodology_notes
 
 
-def generate_content(header, include_contracts=True, apply_filters=True, compact=False):
+def generate_content(header, include_contracts=True, apply_filters=True, compact=False, lean=False):
     """Generate expert context content with given header."""
     constraint_count, fit_count, highest_id = get_counts()
     sections = []
     component_sizes = {}
 
+    # LEAN mode: validated constraints + stats + discipline priors only. Drops the
+    # POSITIVE interpretive layer (Project Overview, Architectural Framework,
+    # Tier 3-4 Interpretations, contracts, cognitive stance) but KEEPS the methodology
+    # notes (negative-knowledge / anti-echo priors) — "disciplined but un-interpreted".
+    docs = [d for d in CORE_DOCS if d[1] in ("All Constraints", "All Explanatory Fits")] if lean else CORE_DOCS
+
     # Header with instructions (fill in dynamic counts)
     sections.append(header.format(constraint_count=constraint_count, fit_count=fit_count, highest_id=highest_id))
 
-    # Add cognitive stance for compact mode
-    if compact:
+    # Add cognitive stance for compact mode (NOT for lean — the stance is interpretive)
+    if compact and not lean:
         sections.append(COMPACT_STANCE.format(
             constraint_count=constraint_count, fit_count=fit_count
         ))
@@ -1296,7 +1347,7 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
 
     # TOC
     toc_num = 1
-    for _, title in CORE_DOCS:
+    for _, title in docs:
         sections[-1] += f"{toc_num}. {title}\n"
         toc_num += 1
     if methodology_notes:
@@ -1314,7 +1365,7 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
     sections[-1] += "\n---\n"
 
     # Core documents
-    for filename, title in CORE_DOCS:
+    for filename, title in docs:
         filepath = CONTEXT_DIR / filename
         if filepath.exists():
             content = filepath.read_text(encoding='utf-8')
@@ -1346,13 +1397,13 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
             memory_section.append(f"\n## {name}\n\n")
             if description:
                 memory_section.append(f"*{description}*\n\n")
-            compact = body.strip()
-            if len(compact) > MAX_BODY:
-                cut = compact.rfind("\n", 0, MAX_BODY)
+            compact_body = body.strip()
+            if len(compact_body) > MAX_BODY:
+                cut = compact_body.rfind("\n", 0, MAX_BODY)
                 if cut < MAX_BODY // 2:
                     cut = MAX_BODY
-                compact = compact[:cut].rstrip() + f"\n\n[…trimmed — full note: memory/{filename}]"
-            memory_section.append(f"{compact}\n\n---\n")
+                compact_body = compact_body[:cut].rstrip() + f"\n\n[…trimmed — full note: memory/{filename}]"
+            memory_section.append(f"{compact_body}\n\n---\n")
         full_memory_text = "".join(memory_section)
         component_sizes['Session Methodology Notes'] = len(full_memory_text)
         sections.append(full_memory_text)
@@ -1410,6 +1461,17 @@ def generate(include_contracts=True, include_legacy=False, apply_filters=True, c
         print(f"Generated crazy-expert: {CRAZY_FILE} ({crazy_kb:.1f} KB)")
     else:
         print(f"WARN: {CRAZY_STANCE_FILE} missing - crazy-expert NOT regenerated")
+
+    # Lean-expert: validated constraints + stats + fits + methodology priors ONLY
+    # (no Tier 3-4, no architectural narrative, no contracts, no cognitive stance).
+    # Separate generate_content call with lean=True and contracts off.
+    lean_content, _ = generate_content(
+        LEAN_HEADER, include_contracts=False, apply_filters=apply_filters,
+        compact=compact, lean=True
+    )
+    LEAN_FILE.write_text(LEAN_FRONTMATTER + lean_content, encoding='utf-8')
+    lean_kb = LEAN_FILE.stat().st_size / 1024
+    print(f"Generated lean-expert: {LEAN_FILE} ({lean_kb:.1f} KB)")
     print(f"Documents included: {doc_count}")
 
     # Print component size report

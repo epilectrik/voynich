@@ -248,6 +248,8 @@ Fires on: promote / demote / "doesn't hold" / "confirms" / "strengthens/weakens"
 
 **Echo-class verdicts cannot be self-cleared.** A mechanism/operational claim (*any* structural-feature↔external-referent relation, regardless of verb — "tracks / consistent-with / signature-of" count exactly as much as "encodes"), a Tier-3→2 promotion, or a new-mechanism-token claim requires an **adversarial external test** (corpus/null *outside* the prior, kill-condition pre-registered before running) **or explicit human sign-off**. Same-model review (expert-advisor *or* crazy-expert) clears ONLY rigor / correct-null / denominator / tier / bookkeeping — **never** clean-fit (it shares the prior). Null-driven demotions and retractions are exempt (self-correcting).
 
+**Differential check (where interpretation is load-bearing):** run an echo-class verdict past BOTH `expert-advisor` (full interpretive context) and `lean-expert` (constraints + statistics + discipline priors only, NO interpretive layer). Where they **diverge**, interpretation — not the statistics — is carrying the verdict; that divergence is itself the flag. Agreement means it rests on the numbers. (This still doesn't *clear* clean-fit — both are same-model — but it localizes the risk.)
+
 **Anti-dismissal (symmetric):** contradicting a Tier-2 claim requires NEW evidence OR a named methodological flaw — bare disagreement is not a verdict. Surviving a refutation moves the needle UP; a failed framework-fit moves it DOWN. Never snap to a prior in either direction.
 
 ### Always-Loaded Negative Knowledge (anti-echo priors — apply when assessing ANY finding)
@@ -322,7 +324,7 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 
 **Workflow:**
 1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py --compact`)
-2. `generate_expert_context.py` produces `EXPERT_CONTEXT.md` AND BOTH agents — `expert-advisor.md` and `crazy-expert.md` (the latter prepends `context/CRAZY_EXPERT_STANCE.md` to the same shared body)
+2. `generate_expert_context.py` produces `EXPERT_CONTEXT.md` AND all THREE agents — `expert-advisor.md` (full context), `crazy-expert.md` (prepends `context/CRAZY_EXPERT_STANCE.md` to the same body), and `lean-expert.md` (constraints + statistics + methodology priors only, NO interpretive layer — the rigor/differential reviewer)
 3. **Use the `--compact` flag** — it strips file-path/navigation cruft useless to an embedded agent. Both agents are ~650–700 KB (~165–175K tokens), which is fine for one-shot expert consultations in a 1M-token window — **agent size is NOT a budget constraint.** (The old "~350 KB budget / exceeds context" note was stale and drove unnecessary trimming; do not chase a smaller size target.)
 3. Update MODEL_CONTEXT.md if structural understanding changed
 4. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
