@@ -60,6 +60,14 @@ def parse_index_constraints(index_path):
         if tier not in ('0', '1', '2', '3', '4'):
             continue
 
+        # Skip retracted/superseded rows via parseable status tag.
+        # Belt-and-suspenders: strikethrough (~~N~~) already drops struck rows at
+        # the number-field regex; this also drops a status-tagged retraction whose
+        # row wasn't struck — preventing the notice-vs-stale-row drift (the
+        # C1959/C1960/C1970 failure: retraction recorded in prose but row left live).
+        if re.search(r'STATUS:\s*(RETRACTED|SUPERSEDED)', desc, re.IGNORECASE):
+            continue
+
         # Clean up location - remove markdown links and Unicode
         location = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', location)
         location = location.replace('→', '->').replace('⊂', 'in:')

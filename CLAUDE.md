@@ -212,7 +212,7 @@ The user can ask for precision when needed. Default to clarity over pedantry in 
 
 > **"I don't know" is NEVER an acceptable answer about this project.**
 
-The context system contains 1,741 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
+The context system contains 2,000+ validated constraints (see `CONSTRAINT_TABLE.txt` for the authoritative generated count). Before answering ANY question about Voynich structure, relationships, or behavior:
 
 1. **STOP** - Do not answer from memory or intuition
 2. **SEARCH** - Grep/read `context/` for relevant constraints
@@ -237,6 +237,26 @@ When deep in app development, domain questions appear mid-task. The failure mode
 - Assuming current context window has all needed knowledge
 
 **FIX:** Treat `context/` as always-available memory. Consult it for ANY domain question, regardless of current task focus.
+
+### Verdict Gate (run before any verdict on EXISTING findings — NOT on hypothesis generation)
+
+Fires on: promote / demote / "doesn't hold" / "confirms" / "strengthens/weakens" / "X means Y" about an existing finding. Exploration/hypothesis-generation is exempt and stays cheap.
+
+1. **CITE** the governing constraint(s) + tier + exactly what you'd contradict or extend.
+2. **SOURCE:** NEW evidence, or in-context reconstruction? A fresh computation does NOT supersede a documented finding unless it tests the *same claim, same layer, valid null*. Converse: a Tier-2 constraint does NOT bar a NEW claim at a *different* layer — confirm same-claim before deferring (precedent: C2061 macro-eigenstructure over C2023 scalar-MI demotion).
+3. **LAYER + NULL:** name the layer (atom/PREFIX/MIDDLE/paragraph/folio) and the null, justified for the claim class — token-shuffle for adjacency, **not** char-5-gram (C2066 window-blindness); within-folio for composition; section-perm for confound; N-match for imbalance.
+
+**Echo-class verdicts cannot be self-cleared.** A mechanism/operational claim (*any* structural-feature↔external-referent relation, regardless of verb — "tracks / consistent-with / signature-of" count exactly as much as "encodes"), a Tier-3→2 promotion, or a new-mechanism-token claim requires an **adversarial external test** (corpus/null *outside* the prior, kill-condition pre-registered before running) **or explicit human sign-off**. Same-model review (expert-advisor *or* crazy-expert) clears ONLY rigor / correct-null / denominator / tier / bookkeeping — **never** clean-fit (it shares the prior). Null-driven demotions and retractions are exempt (self-correcting).
+
+**Anti-dismissal (symmetric):** contradicting a Tier-2 claim requires NEW evidence OR a named methodological flaw — bare disagreement is not a verdict. Surviving a refutation moves the needle UP; a failed framework-fit moves it DOWN. Never snap to a prior in either direction.
+
+### Always-Loaded Negative Knowledge (anti-echo priors — apply when assessing ANY finding)
+
+- **Bounds:** matcher genericity (**C2052** — match breadth is not evidence; Theophilus metalwork hit the same folios); semantic ceiling (**C171** — atom/token operational *referents* are not recoverable from the text); the operational-specificity death zone ("encodes X" interpretations reliably die; structural *measurements* survive).
+- **Framework-as-null:** a clean framework-fit is a prior toward NULL. A finding statable entirely in existing operational vocabulary gets MORE scrutiny, not less.
+- **Meta-failure:** same-model review (incl. crazy-expert) is a rigor/bookkeeping check, NOT an echo defense — clean-fit needs external grounding or the human. The real catches come from external corpora + the human, never a second constraint-carrying agent.
+- **Failure taxonomy** (priors when re-citing or auditing old constraints): invented-threshold · sparsity-denominator · wrong-null (chi² vs permutation) · broken-baseline · post-hoc-claim-substitution · floor-vs-discriminator · bootstrap-ratio-at-noise-floor · window-blindness · asymmetric-update · ungrounded-from-scratch · stale-retraction-row.
+- **Retraction status is GENERATED, never hand-listed** (hand-lists drift — see the C1959/C1960/C1970 stale-row case). The generator drops struck (`~~N~~`) and `STATUS:RETRACTED|SUPERSEDED`-tagged rows from `CONSTRAINT_TABLE.txt`; **trust the generated table over any prose "retracted" note.**
 
 ---
 
