@@ -122,10 +122,26 @@ Resolved: C436-cross-folio is a set-overlap statistic (mathematically order-inva
 | SPECULATIVE R-series-grammar leg | discarded (INTERPRETATION_SUMMARY §H6+H7 chain leg 1) |
 | `AZC_NOTATION_PROVENANCE.md` §10 | nested-ring layout fact added (codicology, not a constraint) |
 
+## C433 + C432 checks (RUN 2026-06-01)
+
+Script: `scripts/c433_c432_checks.py`; result: `results/c433_c432_checks.json`.
+
+- **C433** (Zodiac Block Grammar, ≥98% self-transition) → **RETRACTED (Tier 1).** Every placement code sits
+  AT its block-serialization floor (1 − n_blocks/n_tokens): C 0.986/floor 0.985, R1 0.973/0.973, S2 0.918/0.918
+  (exact), … overall 0.970 vs 1−128/3299=0.961. Same artifact as C434 — each code recorded as ~1 contiguous
+  block per folio (~26 tok/block). "Stricter than Currier B" invalid (block-order vs reading-order). N also
+  all-transcriber inflated (R1 1022/1023 → H-only 470/483). Validated 2058→2057; retracted 10→11.
+- **C432** (Ordered Subscript Exclusivity) → **CORRECTED, kept Tier 2.** NOT a serialization artifact
+  (order-independent presence/absence). But "exclusively Zodiac / binary diagnostic" is **falsified**: f57v
+  (cosmological multi-ring) carries R1=51/R2=69/R3=31. Subscripts are **near-exclusive** to Zodiac (1298/1330)
+  and track **multi-ring diagram geometry**, not zodiac-family membership. Sharpened, not retracted (factual
+  counterexample, not a floor effect).
+
 ## Follow-up audit queue (do NOT rely on until tested)
-- **C433** (Zodiac Block Grammar, 98% self-transition) — suspected same block-serialization floor as C434.
-- **C432** (Ordered Subscript Exclusivity) — same AZC-DEEP pass, leans on subscript serial order.
-- **C435 "S at line edges"** spatial claim — possible label-serialization artifact (lean caveat).
+- **C435 "S at line edges"** spatial claim — possible label-serialization artifact (lean caveat). STILL OPEN.
 - **C496** — reconstruct the original o-prefix/nymph-S computation, then audit (no script exists).
 - **W-census** — C759 excluded W (center) entirely; W may be a distinct register.
 - **Inv 2 (angular reading order):** gate first — needs ≥12 items/folio × ≥10–15 folios for Stouffer power; likely under-powered. Defer.
+
+## Serialization-artifact class — closed-out tally
+C759 ✓survives · C457 ✓survives · C904 ✓survives(fragile) · **C434 RETRACTED** · **C433 RETRACTED** · C436 SPLIT(self-transition retracted, cross-folio kept) · C435 partial(ordered-stages struck) · **C432 CORRECTED** (not artifact). The three *sequence/transition/rigidity* claims on placement order (C433/C434/C436-self-transition) all fell to the block-serialization floor; every *order-independent* claim (C759/C457/C904 within-folio associations, C436 cross-folio overlap, C432 presence/absence) survived or was merely sharpened. Clean separation.

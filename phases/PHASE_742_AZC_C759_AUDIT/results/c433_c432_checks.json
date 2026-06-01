@@ -1,0 +1,149 @@
+{
+  "C433": {
+    "overall_self_transition": 0.9697,
+    "total_blocks": 128,
+    "total_tokens": 3299,
+    "block_floor": 0.9612,
+    "mean_tokens_per_block": 25.8,
+    "verdict": "ARTIFACT (self-transition at block-serialization floor, same as C434) -> RETRACT grammar framing",
+    "per_code": {
+      "R1": {
+        "self_trans": 470,
+        "total": 483,
+        "blocks": 13,
+        "tokens": 483
+      },
+      "R2": {
+        "self_trans": 400,
+        "total": 413,
+        "blocks": 13,
+        "tokens": 413
+      },
+      "R3": {
+        "self_trans": 196,
+        "total": 199,
+        "blocks": 12,
+        "tokens": 208
+      },
+      "R4": {
+        "self_trans": 41,
+        "total": 42,
+        "blocks": 2,
+        "tokens": 43
+      },
+      "X": {
+        "self_trans": 70,
+        "total": 75,
+        "blocks": 7,
+        "tokens": 77
+      },
+      "Y": {
+        "self_trans": 106,
+        "total": 108,
+        "blocks": 5,
+        "tokens": 111
+      },
+      "L": {
+        "self_trans": 62,
+        "total": 65,
+        "blocks": 6,
+        "tokens": 68
+      },
+      "P": {
+        "self_trans": 389,
+        "total": 395,
+        "blocks": 9,
+        "tokens": 398
+      },
+      "R": {
+        "self_trans": 230,
+        "total": 235,
+        "blocks": 5,
+        "tokens": 235
+      },
+      "S": {
+        "self_trans": 132,
+        "total": 136,
+        "blocks": 7,
+        "tokens": 139
+      },
+      "C": {
+        "self_trans": 578,
+        "total": 586,
+        "blocks": 9,
+        "tokens": 587
+      },
+      "C1": {
+        "self_trans": 37,
+        "total": 38,
+        "blocks": 1,
+        "tokens": 38
+      },
+      "O": {
+        "self_trans": 48,
+        "total": 49,
+        "blocks": 1,
+        "tokens": 49
+      },
+      "I": {
+        "self_trans": 34,
+        "total": 37,
+        "blocks": 3,
+        "tokens": 37
+      },
+      "S2": {
+        "self_trans": 134,
+        "total": 146,
+        "blocks": 12,
+        "tokens": 146
+      },
+      "S1": {
+        "self_trans": 187,
+        "total": 198,
+        "blocks": 12,
+        "tokens": 199
+      }
+    }
+  },
+  "C432": {
+    "section_subscript_share": {
+      "C": [
+        184,
+        1075
+      ],
+      "H": [
+        0,
+        48
+      ],
+      "A": [
+        48,
+        846
+      ],
+      "Z": [
+        1329,
+        1330
+      ]
+    },
+    "folios_with_subscripts": {
+      "C": [
+        1,
+        7
+      ],
+      "H": [
+        0,
+        2
+      ],
+      "A": [
+        1,
+        8
+      ],
+      "Z": [
+        12,
+        12
+      ]
+    },
+    "nonZodiac_subscripted_tokens": 232,
+    "order_independent": true,
+    "verdict": "PARTIAL: 232 non-Z subscripted tokens"
+  }
+}

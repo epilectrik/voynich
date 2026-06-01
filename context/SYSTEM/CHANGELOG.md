@@ -4,6 +4,31 @@
 
 ---
 
+## Version 7.02 (2026-06-01) — PHASE_742 C433 RETRACTION + C432 CORRECTION: closing the serialization-artifact class
+
+### Summary
+Ran the two queued checks from the C434 retraction. **C433 RETRACTED** (same artifact); **C432 CORRECTED** (not an artifact, but falsified-as-stated). This closes the AZC placement serialization-artifact sweep with a clean separation.
+
+### C433 — RETRACTED (Tier 1)
+"Zodiac Block Grammar: placement codes in contiguous blocks, ≥98% self-transition, stricter than Currier B, locks for dozens of tokens." This is the **block-serialization floor**, same artifact as C434/C436-self-transition. PHASE_742 H-only re-run: **every placement code sits AT its floor** (1 − n_blocks/n_tokens): C 0.986/0.985, R1 0.973/0.973, R2 0.969/0.969, **S2 0.918/0.918 (exact)**, … overall 0.970 vs 1−128/3299=0.961. Each code is recorded as ~1 contiguous block per folio (~26 tok/block) → self-transition is forced. "Stricter than Currier B" is invalid (B = reading-order token sequence; AZC = transcriber block-order). Cited runs (R1 1022/1023) were also pre-H-filter ALL-TRANSCRIBER inflation (H-only 470/483). Contiguous-block fact preserved as codicology in `DATA/AZC_NOTATION_PROVENANCE.md` §10. Validated 2058→2057; retracted 10→11.
+
+### C432 — CORRECTED (kept Tier 2)
+"Ordered subscripts (R1-R3,S1-S2) occur EXCLUSIVELY in Zodiac, entirely absent from flat AZC — binary diagnostic." This is **order-independent** (presence/absence) → NOT a serialization artifact. But the **exclusivity is falsified**: **f57v** (cosmological concentric multi-ring page) carries R1=51, R2=69, R3=31. Subscripts are **near-exclusive** to Zodiac (1298/1330 subscripted tokens) and track **multi-ring diagram geometry** (universal in Zodiac 12/12; present on the one non-zodiac multi-ring folio). Corrected, not retracted — a factual counterexample, not a floor effect.
+
+### Serialization-artifact class — closed-out
+| Survived / sharpened (order-INDEPENDENT) | Retracted (sequence/transition/rigidity = block floor) |
+|---|---|
+| C759 (within-folio position↔vocab), C457 (HT S>R), C904 (-ry S-zone, fragile), C436 cross-folio similarity, C432 (presence/absence) | **C434** (forward ordering), **C433** (block grammar), C436 self-transition half |
+Clean separation: every claim about placement **order** fell; every claim independent of order survived. The discriminator was always "does the statistic depend on the transcriber's row order?"
+
+### Still open
+C435 "S at line edges" spatial claim (possible label-serialization artifact), C496 (reconstruct), W-census.
+
+### Changes
+`azc_system.md` (C432 corrected, C433 retracted), `INDEX.md` (rows + total → 2057/v7.02), `currier_AZC.md` (C433 section + summary table + tier-boundary), `phases/PHASE_742_AZC_C759_AUDIT/` (script + result + INDEX), `CLAUDE.md` (v7.02; 2057 validated / 11 retracted).
+
+---
+
 ## Version 7.01 (2026-06-01) — PHASE_742 C434 RETRACTION: "R-Series Strict Forward Ordering" is a transcription-serialization artifact (+ C436 split, C435/C1520 reworded)
 
 ### Summary

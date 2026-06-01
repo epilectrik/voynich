@@ -264,19 +264,31 @@ Feature profile:
 **Source:** AZC-DEEP Phase 3
 
 ### C432 - Ordered Subscript Exclusivity
-**Tier:** 2 | **Status:** CLOSED
-Ordered placement subscripts (R1-R3, S1-S2) occur exclusively in the Zodiac AZC family and are entirely absent from the placement-flat AZC family. This is a **binary diagnostic feature**.
+**Tier:** 2 | **Status:** CLOSED — CORRECTED (PHASE_742, 2026-06-01): near-exclusive, not exclusive
+~~Ordered placement subscripts (R1-R3, S1-S2) occur exclusively in the Zodiac AZC family and are entirely absent from the placement-flat AZC family. Binary diagnostic feature.~~
+
+**CORRECTED:** R1-R3/S1-S2 subscripts are **near-exclusive** to Zodiac (1298/1330 zodiac tokens
+subscripted), but **not exclusive**: **f57v** (cosmological, a genuine concentric multi-ring diagram)
+carries R1=51, R2=69, R3=31. Subscripts track **multi-ring diagram geometry**, which is universal in
+Zodiac (12/12 folios) and present on the one non-zodiac multi-ring folio (f57v). So "binary diagnostic /
+entirely absent from flat family" is false; it is a strong-but-imperfect marker of multi-ring layout.
+(Order-INDEPENDENT presence/absence claim — NOT a serialization artifact, unlike C433/C434; this is a
+factual counterexample, not a floor effect.) Verified `phases/PHASE_742_AZC_C759_AUDIT/scripts/c433_c432_checks.py`.
 **Source:** AZC-DEEP Phase 3
 
-### C433 - Zodiac Block Grammar
-**Tier:** 2 | **Status:** CLOSED
-Zodiac placement codes occur in extended contiguous blocks (mean 40-80 tokens, max 156), never as isolated singletons. Self-transition rate exceeds 98% for all major codes:
-- R1→R1: 99.9% (1022/1023)
-- R2→R2: 99.9% (823/824)
-- S1→S1: 100% (602/602)
-- S2→S2: 100% (472/472)
+### ~~C433~~ - Zodiac Block Grammar — **STATUS:RETRACTED (Tier 1, PHASE_742, 2026-06-01)**
+~~Zodiac placement codes occur in contiguous blocks; self-transition >98% (R1→R1 99.9%, S1→S1 100%, ...); "stricter than Currier B grammar; once a placement starts it locks for dozens of tokens."~~
 
-This is **stricter than Currier B grammar**. Once a placement starts, it locks for dozens of tokens.
+**RETRACTED — same transcription-serialization artifact as C434/C436.** Each placement code is RECORDED
+as ~1 contiguous block per folio, so self-transition is **forced** to the block floor 1 − n_blocks/n_tokens.
+PHASE_742 re-run (H-only): EVERY code sits AT its own floor — C 0.986 (floor 0.985), R1 0.973 (0.973),
+R2 0.969 (0.969), **S2 0.918 (0.918, exact)**, ... overall 0.970 vs floor 1−128/3299=0.961. The "98%
+self-transition / locks / stricter than Currier B" framing measures the transcriber's block layout, NOT a
+manuscript grammar — and the "stricter than B" comparison is invalid (B self-transition is on reading-order
+token sequence; this is on transcriber block-order). The cited "1022/1023" etc. were also the pre-H-filter
+ALL-TRANSCRIBER inflation (H-only R1 = 470/483). Surviving descriptive fact (placements are contiguous
+blocks, ~26 tok/block) is codicology, in `context/DATA/AZC_NOTATION_PROVENANCE.md` §10 — not a constraint.
+**Source of original:** AZC-DEEP Phase 4b.
 **Source:** AZC-DEEP Phase 4a
 
 ### ~~C434~~ - R-Series Strict Forward Ordering — **STATUS:RETRACTED (Tier 1, PHASE_742, 2026-06-01)**

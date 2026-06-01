@@ -27,10 +27,10 @@ AZC comprises **two architecturally distinct folio families** with no transition
 | **Zodiac (Family 0)** | 13 (all 12 Z + f57v) | Uniform scaffold | 0.945 |
 | **A/C (Family 1)** | 17 (8 A + 6 C + 2 H + 1 S) | Folio-specific scaffolds | 0.340 |
 
-**Both families are equally rigid** (≥98% self-transition, zero singletons). The difference is:
+**Both families' cross-folio scaffolds differ** (Zodiac 0.945 uniform vs A/C 0.340 varied — the surviving, order-independent half of C436). The ~~"≥98% self-transition rigidity"~~ is a transcription-serialization artifact (C433/C434/C436-self-transition RETRACTED PHASE_742 — placements are recorded as contiguous blocks). The real contrast is:
 
-- **Zodiac:** The same rigid scaffold reused 12 times
-- **A/C:** A different rigid scaffold each time
+- **Zodiac:** the same cross-folio vocabulary scaffold reused 12 times (0.945)
+- **A/C:** a different scaffold each time (0.340)
 
 This is not "rigid vs permissive." This is **"rigid-and-uniform" vs "rigid-and-specific."**
 
@@ -95,19 +95,17 @@ When analyzing AZC folios, explicitly state which classification you're using:
 
 ## The Zodiac Control Scaffold (C431-C435)
 
-The Zodiac pages implement an **extremely strict placement grammar** — stricter than Currier B:
+### ~~Block-Based Structure (C433)~~ — RETRACTED (PHASE_742, 2026-06-01)
 
-### Block-Based Structure (C433)
+> **C433 RETRACTED — transcription-serialization artifact (same as C434).** Self-transition >98% is the
+> block-recording floor (1 − n_blocks/n_tokens): each placement is recorded as ~1 contiguous block per
+> folio. PHASE_742 H-only re-run: every code sits AT its floor (overall 0.970 vs floor 0.961; S2 0.918 =
+> floor exactly). The "stricter than Currier B" claim is invalid — B is measured on reading-order token
+> sequence, this on transcriber block-order. Cited runs (R1 99.9% etc.) were also all-transcriber inflated.
+> Placements-are-contiguous-blocks is codicology (`DATA/AZC_NOTATION_PROVENANCE.md` §10), not a grammar.
+> The table below (struck) is the original inflated figures, retained for traceability.
 
-Placement codes occur in massive contiguous blocks, never isolated:
-
-| Code | Mean Run | Max Run | Self-Transition |
-|------|----------|---------|-----------------|
-| R1 | 79.6 | 156 | 99.9% |
-| R2 | 64.3 | 106 | 99.9% |
-| S1 | 51.2 | 73 | 100% |
-| S2 | 40.3 | 141 | 100% |
-| R3 | 40.9 | 132 | 98.8% |
+~~The Zodiac pages implement an extremely strict placement grammar — stricter than Currier B. Placement codes occur in massive contiguous blocks (R1 mean 79.6/max 156/99.9%; R2 64.3/106/99.9%; S1 51.2/73/100%; S2 40.3/141/100%; R3 40.9/132/98.8%).~~
 
 Once a placement starts, it **locks for dozens of tokens**.
 
@@ -269,11 +267,11 @@ AZC uses the shared core while adding diagram-specific terms.
 |---|------------|
 | C430 | AZC Bifurcation: two architecturally distinct families |
 | C431 | Zodiac Family Coherence (refines C319) |
-| C432 | Ordered Subscript Exclusivity (Zodiac-only) |
-| C433 | Zodiac Block Grammar (98%+ self-transition) |
-| C434 | R-Series Strict Forward Ordering |
-| C435 | S/R Positional Division (boundary/interior) |
-| C436 | Dual Rigidity: uniform vs varied scaffolds |
+| C432 | Ordered Subscript Exclusivity (CORRECTED: near-exclusive — f57v exception; tracks multi-ring geometry) |
+| ~~C433~~ | ~~Zodiac Block Grammar~~ RETRACTED (serialization artifact; self-transition = block floor) |
+| ~~C434~~ | ~~R-Series Strict Forward Ordering~~ RETRACTED (serialization artifact) |
+| C435 | S/R Positional Division (boundary; "ordered stages" struck, spatial flagged) |
+| C436 | Cross-folio scaffold: uniform(Z) vs varied(A/C) — self-transition "rigidity" half RETRACTED |
 
 ---
 
@@ -281,9 +279,9 @@ AZC uses the shared core while adding diagram-specific terms.
 
 **Inside Tier 2 (structural):**
 - Two folio families exist with distinct coordination strategies
-- Placement grammar is extremely rigid in both families
-- Zodiac implements uniform scaffold, A/C implements varied scaffolds
-- Ordered subscripts are Zodiac-exclusive
+- ~~Placement grammar is extremely rigid in both families~~ (RETRACTED — the "≥98% rigidity" was a transcription-serialization artifact, C433/C434)
+- Zodiac implements uniform cross-folio scaffold (0.945), A/C implements varied scaffolds (0.340) — order-independent, survives
+- Ordered subscripts are ~~Zodiac-exclusive~~ **near-exclusive to Zodiac** (f57v multi-ring cosmological exception; tracks multi-ring geometry)
 
 **Outside (Tier 3+):**
 - Mapping placements to physical diagram geometry

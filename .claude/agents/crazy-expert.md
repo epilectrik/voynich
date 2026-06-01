@@ -106,7 +106,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2058 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2057 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C2067.
 
@@ -152,7 +152,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2058 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2057 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -172,15 +172,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2058 validated constraints are present as canonical one-line claims with tier
+2057 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-01 14:02
-**Version:** FROZEN STATE (2058 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-01 14:32
+**Version:** FROZEN STATE (2057 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -191,7 +191,7 @@ tables are quarantined — do not use for structural answers.
 3. All Constraints
 4. All Explanatory Fits
 5. Tier 3-4 Interpretations
-6. Session Methodology Notes (40 feedback rules)
+6. Session Methodology Notes (41 feedback rules)
 7. Structural Contract Signatures (6 contracts)
 
 ---
@@ -821,8 +821,7 @@ C423	PREFIX-BOUND VOCABULARY DOMAINS (80% exclusive MIDDLEs)	2	A
 C424	Adjacency coherence is clustered, not uniform	2	A
 C430	**AZC Bifurcation: two folio families**	2	AZC
 C431	**Zodiac Family Coherence (refines C319)**	2	AZC
-C432	**Ordered Subscript Exclusivity** — **[PHASE_742: FLAGGED for serialization-artifact audit (same AZC-DEEP pass as C434; leans on subscript serial order — UNTESTED, do not rely on)]**	2	AZC
-C433	**Zodiac Block Grammar (98%+ self-transition)** — **[PHASE_742: FLAGGED — 98% self-transition is suspected block-serialization floor, same artifact as retracted C434; audit pending]**	2	AZC
+C432	**Ordered Subscript Exclusivity** — **[PHASE_742 CORRECTED: NOT exclusive — f57v (cosmological multi-ring) carries R1-R3. Subscripts track multi-ring geometry (near-exclusive to Zodiac 1298/1330, not binary-diagnostic). Order-independent → NOT the serialization artifact; factual counterexample. Kept Tier 2, sharpened.]**	2	AZC
 C435	**S/R Positional Division (boundary/interior)** — **[PHASE_742: "ordered stages" sub-claim STRUCK (leaned on retracted C434); S-edge/R-interior spatial split RETAINED but FLAGGED for label-serialization audit]**	2	AZC
 C436	**Dual Rigidity: uniform vs varied scaffolds** — **[PHASE_742 SPLIT: ≥98% self-transition half RETRACTED (= block-serialization floor 97.5%, same artifact as C434); cross-folio uniform(0.945)-vs-varied(0.340) half RETAINED Tier 2 (order-independent set-overlap, corroborated C319/C431/C1519)]**	2	AZC
 C437	AZC Folios Maximally Orthogonal	2	AZC
@@ -5968,6 +5967,18 @@ When evaluating 8D matcher results on a new source corpus, do NOT use top-1 rank
 The validated evaluation method is **hypothesis-driven absolute-distance gating**: pre-identify candidate Voynich folios for specific source units, compute pairwise distances, accept matches at d < 1.0 with secondary structural criteria (token/verb ratio, instruction count, fch positions, etc.).
 
 […trimmed — full note: memory/feedback_top1_matcher_mode_is_degenerate.md]
+
+---
+
+## feedback_transcription_serialization_artifact
+
+*"New failure pattern — order/transition/rigidity statistics that measure the transcriber's recording order, not a manuscript property"*
+
+**Transcription-serialization artifact** — a constraint computes an ORDER / TRANSITION / SEQUENCE / "rigidity" statistic on data whose row order was imposed by the *transcriber*, not the manuscript. The "finding" then measures the serialization convention, not the text.
+
+**Why:** the parsed transcript's row order is a transcription choice. When tokens are recorded in sorted/blocked order (e.g. AZC concentric rings recorded depth-by-depth as contiguous blocks, all R1, then all R2, then all R3), any sequence statistic is *forced*: a sorted list has 0 backward transitions and ~100% self-transition **by construction**. Comparing that to a shuffle-null ("expected 349 backward") just tests "is the file sorted?" — trivially yes. It is the C171 / framework-as-null lesson at the DATA layer: the artifact is upstream of the test, so even a "correct" permutation null is vacuous.
+
+[…trimmed — full note: memory/feedback_transcription_serialization_artifact.md]
 
 ---
 
