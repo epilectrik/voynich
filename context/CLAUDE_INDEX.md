@@ -202,6 +202,7 @@ requires explicit authorization from the user.
 | **Load transcript data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) |
 | **Token annotation data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) → Annotation Data Files |
 | **Rosettes foldout data** | [DATA/ROSETTES_DATA_ARCHITECTURE.md](DATA/ROSETTES_DATA_ARCHITECTURE.md) |
+| **AZC notation (placement codes, ring order, IVTFF mapping)** | [DATA/AZC_NOTATION_PROVENANCE.md](DATA/AZC_NOTATION_PROVENANCE.md) — read before any AZC `placement`-driven analysis |
 | Understand the core finding | [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md) |
 | Know what's been ruled out | [CORE/falsifications.md](CORE/falsifications.md) |
 | **Validate A structure (API)** | [STRUCTURAL_CONTRACTS/currierA.casc.yaml](STRUCTURAL_CONTRACTS/currierA.casc.yaml) |

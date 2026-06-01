@@ -320,7 +320,13 @@ verification against manuscript images is required before physical
 position claims can be made.
 
 See `data/folio_annotations/azc/` for per-folio layout maps (note:
-some annotations predate this verification and may have S/C swapped).
+some annotations predate this verification and may have S/C swapped —
+`f69r.md` was reconciled to this table 2026-06-01).
+
+**Notation provenance:** how the IVTFF source maps to the parsed `placement`
+codes (and where that mapping loses information or invites the S/C swap) is
+documented in `context/DATA/AZC_NOTATION_PROVENANCE.md`. Read it before any
+analysis driven off AZC `placement` codes.
 
 ---
 
