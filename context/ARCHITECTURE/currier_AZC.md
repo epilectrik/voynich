@@ -122,14 +122,15 @@ Once a placement starts, it **locks for dozens of tokens**.
 
 ~~R-subscript transitions are strictly forward: **R1 → R2 → R3 only**. Backward 0/349 FORBIDDEN; Skip 0/139 FORBIDDEN; Forward 2/2 legal. "No exceptions; one-way progression through interior stages."~~
 
-### Two-Layer Grammar (C435)
+### ~~Two-Layer Grammar (C435)~~ — RETRACTED (PHASE_742, 2026-06-01)
 
-| Layer | Codes | Position | Function |
-|-------|-------|----------|----------|
-| **Boundary (S-series)** | S0, S1, S2 | 95%+ at line edges | Marks entry/exit |
-| **Interior (R-series)** | R1, R2, R3, R4 | 89-95% interior | Fills interior (~~"in order"~~ struck — C434 retracted; "interior" position flagged for serialization audit) |
+> **C435 RETRACTED — locus-length tautology.** "S 95%+ at line edges / R interior" is not a spatial grammar:
+> line-edge rate = 1/(locus length) by identity (S0 100%/len1, S1 80%/0.80, R1 2.8%/0.028). S codes are
+> short label loci (`@Lz`), R codes long ring loci (`@Cc`). The real S-labels-vs-R-ring-text distinction is
+> the locus subtype (`DATA/AZC_NOTATION_PROVENANCE.md` §3), not a boundary/interior positional grammar.
+> Same artifact family as C433/C434.
 
-S marks boundaries. R fills interiors. They never mix roles.
+~~S-series 95%+ at line edges (marks entry/exit); R-series 89-95% interior (fills interior); they never mix roles.~~
 
 ### Template Reuse (C431)
 
@@ -270,7 +271,7 @@ AZC uses the shared core while adding diagram-specific terms.
 | C432 | Ordered Subscript Exclusivity (CORRECTED: near-exclusive — f57v exception; tracks multi-ring geometry) |
 | ~~C433~~ | ~~Zodiac Block Grammar~~ RETRACTED (serialization artifact; self-transition = block floor) |
 | ~~C434~~ | ~~R-Series Strict Forward Ordering~~ RETRACTED (serialization artifact) |
-| C435 | S/R Positional Division (boundary; "ordered stages" struck, spatial flagged) |
+| ~~C435~~ | ~~S/R Positional Division~~ RETRACTED (locus-length tautology: edge-rate = 1/locus-length) |
 | C436 | Cross-folio scaffold: uniform(Z) vs varied(A/C) — self-transition "rigidity" half RETRACTED |
 
 ---

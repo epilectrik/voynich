@@ -307,19 +307,23 @@ A grammatical one-way progression cannot reverse direction between folios → th
 property. Layout fact (rings are nested strata read ring-by-ring) preserved as codicology in
 `context/DATA/AZC_NOTATION_PROVENANCE.md`, NOT as a constraint. **Source of original:** AZC-DEEP Phase 4a.
 
-### C435 - S/R Positional Division
-**Tier:** 2 | **Status:** CLOSED — sub-claim struck + spatial half flagged (PHASE_742, 2026-06-01)
-Zodiac placement grammar has a two-layer structure:
-- **S-series (boundary layer):** 95%+ at line edges (S0=100% initial, S1=79% initial, S2=84% initial)
-- **R-series (interior layer):** 89-95% line-interior positions
+### ~~C435~~ - S/R Positional Division — **STATUS:RETRACTED (Tier 1, PHASE_742, 2026-06-01)**
+~~S-series 95%+ at line edges (S0=100% initial, S1=79%, S2=84%); R-series 89-95% line-interior; "S marks entry/exit, R fills the interior in ordered stages, they never mix roles."~~
 
-S marks entry/exit. R fills the interior. ~~in ordered stages~~ They never mix roles.
-
-> **[PHASE_742]** "in ordered stages" **STRUCK** — it leaned on C434 (RETRACTED: R-subscript order is a
-> transcription artifact, not a progression). The S-edge / R-interior **spatial** split is retained for now
-> but **FLAGGED for a provenance audit**: "S at line edges" may itself be a label-serialization artifact
-> (labels recorded line-initially), the same failure mode as C434. Test before treating as load-bearing.
-**Source:** AZC-DEEP Phase 4a
+**RETRACTED — locus-chunking tautology (both sub-claims fall).** Two strikes:
+1. "in ordered stages" leaned on C434 (RETRACTED) — already struck in the C434 cascade.
+2. The **spatial "S=boundary / R=interior"** claim is a **locus-length identity**, not a manuscript edge
+   preference. `line_initial`/`line_final` are position indices within a single-placement locus, so the
+   fraction of a code's tokens "at a line edge" **equals 1/(mean locus length)** with zero degrees of
+   freedom. PHASE_742 (`scripts/c435_spatial_check.py`) confirms it AT THE DIGIT for every code:
+   S0 100%/len 1.0, S1 80.4%/(1/1.24)=0.804, S2 80.8%/0.808, R1 2.8%/0.028, R2 3.5%/0.035, R3 6.2%/0.062.
+   "S at edges" just means **S codes are short label loci (`@Lz`, ~1 token)**; "R interior" means **R codes
+   are long ring loci (`@Cc`, ~30-74 tokens)**. The real content (S = discrete labels vs R = continuous
+   ring text) is the locus-subtype distinction already in `DATA/AZC_NOTATION_PROVENANCE.md` §3 — codicology,
+   not a positional grammar. Same artifact FAMILY as C433/C434 (a statistic forced by the transcriber's
+   chunking). C457's HT-rate finding is independent and STANDS, but its "HT marks boundaries" reading loses
+   the C435 support and should be reframed as "HT concentrates in label loci vs ring-text loci."
+**Source of original:** AZC-DEEP Phase 4a
 
 ### C436 - AZC Dual Rigidity Pattern — **SPLIT (PHASE_742, 2026-06-01): self-transition half RETRACTED; cross-folio half RETAINED Tier 2**
 ~~Both AZC families exhibit extreme intra-folio placement rigidity (>=98% self-transition, zero singleton placements)~~ — **self-transition half RETRACTED:** ≥98% self-transition is the block-serialization **floor** (PHASE_742 measured 97.5% = 1 − 24/951, zero excess above what depth-block layout forces — same artifact as C434/C433). It is NOT a rigidity/coordination measurement.

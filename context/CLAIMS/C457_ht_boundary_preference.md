@@ -14,6 +14,10 @@
 > (unlike C759's flatly-wrong "C=center", which was struck) — but S's physical identity is
 > **not independently verified off f69r** (the only verified folio, and it is cosmological),
 > and "boundary/interior" remains the interpretive layer. See `DATA/AZC_NOTATION_PROVENANCE.md`.
+> **Update:** C435 (the "S=boundary" grammar this finding's *name* leaned on) was RETRACTED PHASE_742 as a
+> locus-length artifact. C457's HT-RATE statistic is independent and STANDS (survived the within-folio null),
+> but reframe the reading: **HT concentrates in the short label loci (S) vs the long ring-text loci (R)** —
+> "HT marks boundaries" is no longer supported by a spatial grammar. Consider retitling away from "boundary."
 > Script: `phases/PHASE_742_AZC_C759_AUDIT/scripts/sweep_c457_c904_within_folio.py`.
 
 ---

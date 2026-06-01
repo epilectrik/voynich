@@ -4,6 +4,28 @@
 
 ---
 
+## Version 7.03 (2026-06-01) — PHASE_742 C435 RETRACTION: closes the AZC serialization-artifact class (4 retractions)
+
+### C435 — RETRACTED (Tier 1)
+"S/R Positional Division: S-series 95%+ at line edges (marks entry/exit), R-series 89-95% interior (fills interior in ordered stages)." Both sub-claims fall:
+1. "in ordered stages" — already struck in the C434 cascade (leaned on retracted C434).
+2. "S=boundary / R=interior" spatial claim is a **locus-length identity**. `line_initial`/`line_final` are position indices within a single-placement locus, so a code's line-edge rate = **1/(mean locus length)** with zero degrees of freedom. PHASE_742 (`scripts/c435_spatial_check.py`) confirms at the digit: S0 100%/len1.0, S1 80.4%/(1/1.24=0.804), S2 80.8%/0.808, R1 2.8%/0.028, R2 3.5%/0.035, R3 6.2%/0.062. "S at edges" = S codes are short label loci (`@Lz`, ~1 token); "R interior" = R codes are long ring loci (`@Cc`, ~30-74 tokens). The labels-vs-ring-text distinction is the locus subtype (`AZC_NOTATION_PROVENANCE.md` §3), not a positional grammar.
+- Resolves the C434-cascade differential divergence in **lean's** direction (expert-advisor had tentatively retained C435-spatial citing C457/C320; the direct test shows it is a chunking tautology, not structure-independent).
+- **C457's HT-rate finding is independent and STANDS** (survived the within-folio null); its "HT marks boundaries" reading loses the C435 support and is reframed as "HT concentrates in short label loci (S) vs long ring-text loci (R)." Annotated.
+- Validated 2057→2056; retracted 11→12.
+
+### Serialization-artifact class — CLOSED (4 retractions)
+| Survived / sharpened (order/chunk-INDEPENDENT) | RETRACTED (forced by transcriber's locus chunking) |
+|---|---|
+| C759, C457, C904, C436 cross-folio similarity, C432 | **C434** (forward order), **C433** (block grammar), **C435** (S/R edge tautology), C436 self-transition half |
+
+The class had **two mechanisms**, both "a statistic forced by how the transcriber chunked tokens into loci": (a) depth-sorted blocks → forced forward-order + ~98% self-transition (C434/C433/C436-self-trans); (b) single-placement loci → line-edge rate = 1/locus-length (C435). Every claim depending on the chunking fell; every claim independent of it survived. Discriminator: does the statistic depend on locus order or locus length?
+
+### Changes
+`azc_system.md` (C435 retracted), `INDEX.md` (C435 row + total → 2056/v7.03), `currier_AZC.md` (Two-Layer Grammar section + summary row), `C457_ht_boundary_preference.md` (reframe note), `DATA/AZC_NOTATION_PROVENANCE.md` (checklist item 7), `phases/PHASE_742_AZC_C759_AUDIT/` (script + result + INDEX), `CLAUDE.md` (v7.03; 2056 / 12 retracted).
+
+---
+
 ## Version 7.02 (2026-06-01) — PHASE_742 C433 RETRACTION + C432 CORRECTION: closing the serialization-artifact class
 
 ### Summary

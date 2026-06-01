@@ -1,0 +1,75 @@
+{
+  "per_code": {
+    "R1": {
+      "tok": 432,
+      "lines": 12,
+      "mean_len": 36.0,
+      "init_rate": 0.028,
+      "final_rate": 0.028,
+      "inv_mean_len": 0.028
+    },
+    "R2": {
+      "tok": 344,
+      "lines": 12,
+      "mean_len": 28.67,
+      "init_rate": 0.035,
+      "final_rate": 0.035,
+      "inv_mean_len": 0.035
+    },
+    "S1": {
+      "tok": 199,
+      "lines": 160,
+      "mean_len": 1.24,
+      "init_rate": 0.804,
+      "final_rate": 0.804,
+      "inv_mean_len": 0.804
+    },
+    "R3": {
+      "tok": 177,
+      "lines": 11,
+      "mean_len": 16.09,
+      "init_rate": 0.062,
+      "final_rate": 0.062,
+      "inv_mean_len": 0.062
+    },
+    "S2": {
+      "tok": 146,
+      "lines": 118,
+      "mean_len": 1.24,
+      "init_rate": 0.808,
+      "final_rate": 0.808,
+      "inv_mean_len": 0.808
+    },
+    "S0": {
+      "tok": 13,
+      "lines": 13,
+      "mean_len": 1.0,
+      "init_rate": 1.0,
+      "final_rate": 1.0,
+      "inv_mean_len": 1.0
+    },
+    "R4": {
+      "tok": 10,
+      "lines": 1,
+      "mean_len": 10.0,
+      "init_rate": 0.1,
+      "final_rate": 0.1,
+      "inv_mean_len": 0.1
+    }
+  },
+  "families": {
+    "S": {
+      "tok": 366,
+      "loci": 174,
+      "mean_len": 2.1,
+      "init_rate": 0.814
+    },
+    "R": {
+      "tok": 963,
+      "loci": 13,
+      "mean_len": 74.08,
+      "init_rate": 0.037
+    }
+  },
+  "verdict": "ARTIFACT: line-initial/final rate == 1/mean_locus_length identity; S=short label loci, R=long ring loci. Boundary/interior grammar unsupported (locus-chunking tautology)."
+}

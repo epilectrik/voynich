@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1861 constraints | 2026-06-01
+CONSTRAINT_REFERENCE v2.6 | 1860 constraints | 2026-06-01
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -306,7 +306,6 @@ C424	Adjacency coherence is clustered, not uniform (~3-entry runs, autocorr r=0.
 C430	**AZC Bifurcation: two folio families**	2	AZC	in: azc_system
 C431	**Zodiac Family Coherence (refines C319)**	2	AZC	in: azc_system
 C432	**Ordered Subscript Exclusivity** — **[PHASE_742 CORRECTED: NOT exclusive — f57v (cosmological multi-ring) carries R1-R3. Subscripts track multi-ring geometry (near-exclusive to Zodiac 1298/1330, not binary-diagnostic). Order-independent → NOT the serialization artifact; factual counterexample. Kept Tier 2, sharpened.]**	2	AZC	in: azc_system
-C435	**S/R Positional Division (boundary/interior)** — **[PHASE_742: "ordered stages" sub-claim STRUCK (leaned on retracted C434); S-edge/R-interior spatial split RETAINED but FLAGGED for label-serialization audit]**	2	AZC	in: azc_system
 C436	**Dual Rigidity: uniform vs varied scaffolds** — **[PHASE_742 SPLIT: ≥98% self-transition half RETRACTED (= block-serialization floor 97.5%, same artifact as C434); cross-folio uniform(0.945)-vs-varied(0.340) half RETAINED Tier 2 (order-independent set-overlap, corroborated C319/C431/C1519)]**	2	AZC	in: azc_system
 C437	AZC Folios Maximally Orthogonal	2	AZC	in: azc_system
 C438	AZC Practically Complete Basis	2	AZC	in: azc_system

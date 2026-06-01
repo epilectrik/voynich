@@ -137,11 +137,30 @@ Script: `scripts/c433_c432_checks.py`; result: `results/c433_c432_checks.json`.
   and track **multi-ring diagram geometry**, not zodiac-family membership. Sharpened, not retracted (factual
   counterexample, not a floor effect).
 
-## Follow-up audit queue (do NOT rely on until tested)
-- **C435 "S at line edges"** spatial claim — possible label-serialization artifact (lean caveat). STILL OPEN.
+## C435 spatial check (RUN 2026-06-01) → RETRACTED
+
+Script: `scripts/c435_spatial_check.py`; result: `results/c435_spatial_check.json`. **C435 RETRACTED (Tier 1).**
+The "S 95%+ at line edges / R interior" spatial claim is a **locus-length identity**: `line_initial`/`line_final`
+are position indices within a single-placement locus, so a code's line-edge rate = 1/(mean locus length) with
+zero degrees of freedom. Confirmed at the digit for every code (S0 100%/len1.0, S1 80.4%/0.804, S2 80.8%/0.808,
+R1 2.8%/0.028, R2 3.5%/0.035, R3 6.2%/0.062). S = short label loci (`@Lz`), R = long ring loci (`@Cc`). With
+"ordered stages" already struck (C434 cascade), both sub-claims fall → full retraction. Resolves the C434-cascade
+differential divergence in lean's direction (expert-advisor had tentatively retained C435-spatial; the test shows
+it is not structure-independent). C457's HT-rate finding is independent and STANDS (reframe its "boundary" reading).
+Validated 2057→2056; retracted 11→12.
+
+## Follow-up audit queue (remaining — NOT serialization-class)
 - **C496** — reconstruct the original o-prefix/nymph-S computation, then audit (no script exists).
 - **W-census** — C759 excluded W (center) entirely; W may be a distinct register.
 - **Inv 2 (angular reading order):** gate first — needs ≥12 items/folio × ≥10–15 folios for Stouffer power; likely under-powered. Defer.
 
-## Serialization-artifact class — closed-out tally
-C759 ✓survives · C457 ✓survives · C904 ✓survives(fragile) · **C434 RETRACTED** · **C433 RETRACTED** · C436 SPLIT(self-transition retracted, cross-folio kept) · C435 partial(ordered-stages struck) · **C432 CORRECTED** (not artifact). The three *sequence/transition/rigidity* claims on placement order (C433/C434/C436-self-transition) all fell to the block-serialization floor; every *order-independent* claim (C759/C457/C904 within-folio associations, C436 cross-folio overlap, C432 presence/absence) survived or was merely sharpened. Clean separation.
+## Serialization-artifact class — CLOSED
+| Survived / sharpened (order-INDEPENDENT) | Retracted (sequence / position forced by transcriber chunking) |
+|---|---|
+| C759 ✓ · C457 ✓ · C904 ✓(fragile) · C436 cross-folio ✓ · C432 (corrected, near-exclusive) | **C434** (forward order) · **C433** (block grammar) · **C435** (S/R edge tautology) · C436 self-transition half |
+The artifact had **two mechanisms**, both = "a statistic forced by how the transcriber chunked tokens into loci":
+(a) depth-sorted blocks → forced forward-order + ~98% self-transition (C434/C433/C436-self-trans);
+(b) single-placement loci → line-edge rate = 1/locus-length (C435). Every claim that depended on the chunking
+fell; every claim independent of it (within-folio associations, cross-folio overlap, presence/absence) survived.
+**4 retractions total** (C434, C433, C435, + C436-half). Discriminator: does the statistic depend on the
+transcriber's locus chunking (order or length)?
