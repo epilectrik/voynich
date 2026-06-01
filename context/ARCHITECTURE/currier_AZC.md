@@ -111,24 +111,25 @@ Placement codes occur in massive contiguous blocks, never isolated:
 
 Once a placement starts, it **locks for dozens of tokens**.
 
-### Strict Forward Ordering (C434)
+### ~~Strict Forward Ordering (C434)~~ — RETRACTED (PHASE_742, 2026-06-01)
 
-R-subscript transitions are strictly forward: **R1 → R2 → R3 only**.
+> **C434 RETRACTED — transcription-serialization artifact.** R1/R2/R3 are concentric `@Cc` circle-text
+> rings recorded by depth as **contiguous blocks**, not radial "interior stages." "Strict forward / 0
+> backward FORBIDDEN" is forced by the depth-sort (orient ascending → 0 by construction; actual backward
+> = 3, because f70v1/f70v2 are numbered/recorded DESCENDING — the direction flips between folios, which a
+> real grammar cannot do). The shuffle-null "expected 349" only tests "is the file sorted by ring depth."
+> 927/951 transitions are same-ring = the block-count floor. There is no manuscript one-way progression.
+> See `context/DATA/AZC_NOTATION_PROVENANCE.md` §C434 and `phases/PHASE_742_AZC_C759_AUDIT/`. The table
+> below is retained struck-through for traceability only.
 
-| Transition Type | Observed | Expected | Status |
-|----------------|----------|----------|--------|
-| Backward (R2→R1, R3→R2) | 0 | 349 | **FORBIDDEN** |
-| Skip (R1→R3) | 0 | 139 | **FORBIDDEN** |
-| Forward (R1→R2, R2→R3) | 2 | 2 | Rare but legal |
-
-No exceptions. The R-series implements a one-way progression through interior stages.
+~~R-subscript transitions are strictly forward: **R1 → R2 → R3 only**. Backward 0/349 FORBIDDEN; Skip 0/139 FORBIDDEN; Forward 2/2 legal. "No exceptions; one-way progression through interior stages."~~
 
 ### Two-Layer Grammar (C435)
 
 | Layer | Codes | Position | Function |
 |-------|-------|----------|----------|
 | **Boundary (S-series)** | S0, S1, S2 | 95%+ at line edges | Marks entry/exit |
-| **Interior (R-series)** | R1, R2, R3, R4 | 89-95% interior | Fills stages in order |
+| **Interior (R-series)** | R1, R2, R3, R4 | 89-95% interior | Fills interior (~~"in order"~~ struck — C434 retracted; "interior" position flagged for serialization audit) |
 
 S marks boundaries. R fills interiors. They never mix roles.
 

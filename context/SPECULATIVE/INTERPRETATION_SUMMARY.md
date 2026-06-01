@@ -5239,10 +5239,10 @@ This explains HT oscillation differences, why entropy metrics failed, and why "s
 
 These findings connect into a mechanistic pipeline:
 
-1. **R-series positional grammar** (C434) -> progressively restricts legal MIDDLE vocabulary
+1. ~~**R-series positional grammar** (C434) -> progressively restricts legal MIDDLE vocabulary~~ **[RETRACTED PHASE_742: C434 is a transcription-serialization artifact, not a positional grammar; no "progressive restriction" exists. This leg of the causal chain is withdrawn.]**
 2. **S-zone survival** -> selectively feeds into **B terminal states**
 
-This closes the architectural loop: **AZC legality -> vocabulary survival -> executable program completion**
+~~This closes the architectural loop: **AZC legality -> vocabulary survival -> executable program completion**~~ — **the loop does NOT close via an R-series progression** (leg 1 retracted); any AZC→B legality-survival claim must rest on the S-zone leg (C904, itself fragile) independently of R-ordering.
 
 **3. Pelican Reversibility Model Falsified (H8)**
 

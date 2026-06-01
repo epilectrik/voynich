@@ -93,8 +93,39 @@ The associations themselves are robust. This *strengthens* the AZC-position-gram
 - **C904** — CONFIRMED-but-fragile, annotated: H-only N=20, survives but small.
 - No demotions, no new constraints.
 
-## Follow-ons still open (not run)
+## C434 order-provenance check (RUN 2026-06-01) → RETRACTED + cascade
+
+Script: `scripts/c434_order_provenance.py`; result: `results/c434_order_provenance.json`. Expert-validated
+(expert-advisor + lean-expert differential; both → RETRACT).
+
+**Finding:** the parsed R1/R2/R3 are concentric `@Cc` circle-text rings recorded by depth as **contiguous
+blocks**. All 12 zodiac folios serialize monotonically — **10 ascending (R1→R2→R3), 2 descending**
+(f70v1/f70v2: R3→R2→R1, the per-folio numbering flip, `currier_AZC.md:312`). 927/951 transitions are
+same-ring; ring-changes occur only at the 24 block boundaries. "0 backward FORBIDDEN" is forced by the
+depth-sort (orient ascending → 0 by construction; actual = 3 once descending folios count). The shuffle-null
+"expected 349" only tests "is the file sorted by ring depth?". 97.5% self-transition = the block-count floor
+(1 − 24/951), zero excess. **A grammar cannot reverse direction between folios → C434 was never a manuscript
+property.**
+
+**Differential check:** both experts agree on the RETRACTIONS (numbers); they diverged on the RETENTIONS —
+expert-advisor confidently kept C436-cross-folio + C435-spatial; lean said verify order-independence first.
+Resolved: C436-cross-folio is a set-overlap statistic (mathematically order-invariant) → retained; C435's
+"S-at-line-edges" is *not* obviously order-independent → flagged, not retained.
+
+### Dispositions (registered, v7.01)
+| Constraint | Action |
+|---|---|
+| **C434** | **RETRACTED → Tier 1** (struck in INDEX, azc_system.md, currier_AZC.md) |
+| **C436** | **SPLIT** — ≥98% self-transition half retracted (block floor); cross-folio 0.945-vs-0.340 half RETAINED Tier 2 (order-independent, corroborated C319/C431/C1519) |
+| **C435** | "ordered stages" sub-claim STRUCK; S-edge/R-interior spatial split retained but FLAGGED for audit |
+| **C1520** | reworded — its no-HEAD-gradient now *corroborates* the artifact; parent ref flipped |
+| SPECULATIVE R-series-grammar leg | discarded (INTERPRETATION_SUMMARY §H6+H7 chain leg 1) |
+| `AZC_NOTATION_PROVENANCE.md` §10 | nested-ring layout fact added (codicology, not a constraint) |
+
+## Follow-up audit queue (do NOT rely on until tested)
+- **C433** (Zodiac Block Grammar, 98% self-transition) — suspected same block-serialization floor as C434.
+- **C432** (Ordered Subscript Exclusivity) — same AZC-DEEP pass, leans on subscript serial order.
+- **C435 "S at line edges"** spatial claim — possible label-serialization artifact (lean caveat).
 - **C496** — reconstruct the original o-prefix/nymph-S computation, then audit (no script exists).
-- **C434** — order-provenance check: was "strict forward ordering" computed on clock geometry or `line_number`? (Discovery C bites only if file-order.)
 - **W-census** — C759 excluded W (center) entirely; W may be a distinct register.
-- **Inv 2 (angular reading order):** gate first — needs ≥12 items/folio × ≥10–15 folios for Stouffer power (lean); likely under-powered. Defer.
+- **Inv 2 (angular reading order):** gate first — needs ≥12 items/folio × ≥10–15 folios for Stouffer power; likely under-powered. Defer.

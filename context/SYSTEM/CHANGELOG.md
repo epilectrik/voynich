@@ -4,6 +4,45 @@
 
 ---
 
+## Version 7.01 (2026-06-01) — PHASE_742 C434 RETRACTION: "R-Series Strict Forward Ordering" is a transcription-serialization artifact (+ C436 split, C435/C1520 reworded)
+
+### Summary
+Order-provenance check on C434, the last exposed-class AZC constraint flagged by the experts. Verdict: **C434 is a transcription artifact, RETRACTED (Tier 1).** Both experts (advisor + lean differential) → RETRACT; null-driven/self-clearing.
+
+### Core finding
+The parsed `placement` R1/R2/R3 on zodiac folios are **concentric `@Cc` circle-text rings recorded by depth as contiguous blocks** (not radial "interior stages"). The provenance check (12 zodiac folios, H-track):
+- All folios serialize R-subscripts as **monotonic blocks** — **10 ascending (R1→R2→R3), 2 descending** (f70v1/f70v2: R3→R2→R1, the documented per-folio numbering flip, `currier_AZC.md:312`).
+- 927/951 consecutive-token transitions are same-ring; the 24 ring-changes occur ONLY at block boundaries.
+- "0 backward FORBIDDEN" is **forced by the depth-sort** (orient all folios ascending → 0 by construction; actual backward = **3** once the descending folios count as stated). The shuffle-null "expected 349" only tests "is the file sorted by ring depth?" (trivially yes). 97.5% self-transition = the block-count floor (1 − 24/951), zero excess.
+- A grammatical one-way progression cannot reverse direction between folios → C434 was never a manuscript property. The data is structurally incapable of supporting (or refuting) a reading-order claim — the only ordering present is the one the transcriber imposed.
+
+### Differential check
+Both experts agreed on the RETRACTIONS (mechanism-driven). They diverged on the RETENTIONS: expert-advisor confidently kept C436-cross-folio + C435-spatial; lean-expert said register nothing as surviving until order-independence is confirmed. Resolved: C436's cross-folio similarity is a **set-overlap statistic (mathematically order-invariant)** → retained; C435's "S-at-line-edges" is not obviously order-independent → flagged, not retained.
+
+### Dispositions
+- **C434** — **RETRACTED → Tier 1.** Struck in INDEX.md, azc_system.md, currier_AZC.md. Validated total 2059→2058; retracted 9→10.
+- **C436** — **SPLIT.** ≥98% self-transition half RETRACTED (= block-serialization floor, same artifact). Cross-folio uniform(0.945)-vs-varied(0.340)-scaffold half RETAINED at Tier 2 (order-independent; corroborated C319/C431/C437/C760/C1519).
+- **C435** — "R fills the interior *in ordered stages*" STRUCK (leaned on C434). S-edge/R-interior spatial split retained but FLAGGED for a label-serialization audit.
+- **C1520** — reworded: its "no HEAD gradient along R-subscripts" now *corroborates* the artifact (a real progression would show a gradient); parent ref flipped from "extends C434" to "consequence of retraction." Measurement stands.
+- **SPECULATIVE** — the "R-series positional grammar → progressively restricts MIDDLE vocabulary" leg of the H6+H7 causal chain discarded.
+- **`DATA/AZC_NOTATION_PROVENANCE.md` §10** — nested-ring layout fact added as codicology (NOT a constraint) + checklist item 6 (do not compute order/transition/rigidity stats on placement sequences).
+
+### Follow-up audit queue (flagged, not retracted — each needs its own test)
+**C433** (Zodiac Block Grammar 98% self-transition — suspected same floor), **C432** (Ordered Subscript Exclusivity — same AZC-DEEP pass), **C435 "S at line edges"** (possible label-serialization artifact), C496 (no script — reconstruct), W-census.
+
+### Changes
+| File | Change |
+|------|--------|
+| `context/CLAIMS/azc_system.md` | C434 retracted; C435 sub-claim struck; C436 split |
+| `context/CLAIMS/INDEX.md` | C434 row struck; C432/C433/C435/C436/C1520 annotated; total → 2058 / v7.01 |
+| `context/ARCHITECTURE/currier_AZC.md` | C434 section struck; C435 table reworded |
+| `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | R-series-grammar causal leg withdrawn |
+| `context/DATA/AZC_NOTATION_PROVENANCE.md` | §10 codicology + checklist item |
+| `phases/PHASE_742_AZC_C759_AUDIT/` | C434 script + result + INDEX dispositions |
+| `CLAUDE.md` | v7.01; 2058 validated / 10 retracted |
+
+---
+
 ## Version 7.00 (2026-06-01) — PHASE_742 AZC C759 audit: survives within-folio null, scope-narrowed to the radial scaffold, geometry glosses struck
 
 ### Summary

@@ -153,6 +153,24 @@ written. This is a *reading* discrepancy (not a position swap) and is left open.
 
 ---
 
+## 10. Nested concentric rings serialize as depth-ordered blocks — VERIFIED FACT (codicology, NOT a grammar)
+
+On zodiac folios the concentric `@Cc` circle-text rings are parsed to placements **R1/R2/R3 by depth**
+(R1 = one ring, R2 = next, …) and recorded as **contiguous blocks** — the whole of one ring, then the
+whole of the next. The depth *direction* of the numbering is per-folio: **10/12 zodiac folios ascend
+(R1=outer→R3=inner), but f70v1/f70v2 descend** (R3=outermost — matches `currier_AZC.md:312`). This is a
+**transcription/codicological fact** (rings are discrete nested strata recorded ring-by-ring), NOT a
+manuscript grammar.
+
+> **Consequence (PHASE_742):** because the rings are serialized as depth-sorted blocks, any statistic on
+> R-subscript *order* is forced — consecutive-token "transitions" are ~97.5% same-ring (the block-count
+> floor) and "forward-only" by construction. This **retracted C434** ("R-Series Strict Forward Ordering")
+> and the **self-transition half of C436** ("≥98% rigidity"), and put **C432/C433** + C435's "S-at-line-edges"
+> spatial claim on the audit queue. Do **not** compute order/transition/rigidity statistics on R/S/C
+> placement sequences and treat them as manuscript properties — they measure the block serialization.
+> (Order-INDEPENDENT statistics — e.g. cross-folio vocabulary overlap, C436's surviving 0.945/0.340 half —
+> are unaffected.)
+
 ## Practical checklist for AZC work
 
 1. Read the per-folio IVTFF block + `#` notes **first**; treat the TSV `placement` column as a hint, not ground truth.
@@ -160,3 +178,4 @@ written. This is a *reading* discrepancy (not a position swap) and is left open.
 3. Do **not** order tokens by `line_number`; use the per-folio start + `<!HH:MM>` (§5).
 4. Do **not** assume a fixed ring-position or subscript mapping across folios (§4, §6); f69r is the only verified anchor.
 5. If a claim needs continuous-vs-segmented, radius-vs-ring, or red-ink distinctions, it cannot be made from the TSV alone (§3, §7).
+6. Do **not** compute order / transition / self-transition / "rigidity" statistics on R/S/C placement *sequences* and read them as manuscript grammar — placements serialize as depth-sorted blocks, so those statistics are forced (§10; this retracted C434 and C436's self-transition half). Order-independent statistics (vocabulary overlap, etc.) are fine.

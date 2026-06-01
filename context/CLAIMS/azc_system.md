@@ -279,31 +279,44 @@ Zodiac placement codes occur in extended contiguous blocks (mean 40-80 tokens, m
 This is **stricter than Currier B grammar**. Once a placement starts, it locks for dozens of tokens.
 **Source:** AZC-DEEP Phase 4a
 
-### C434 - R-Series Strict Forward Ordering
-**Tier:** 2 | **Status:** CLOSED
-R-subscript transitions are strictly forward: R1→R2→R3 only.
-- Backward transitions (R2→R1, R3→R2): **FORBIDDEN** (0 observed, 349 expected)
-- Skip transitions (R1→R3): **FORBIDDEN** (0 observed, 139 expected)
+### ~~C434~~ - R-Series Strict Forward Ordering — **STATUS:RETRACTED (Tier 1, PHASE_742, 2026-06-01)**
+~~R-subscript transitions are strictly forward: R1→R2→R3 only; backward/skip FORBIDDEN (0 obs / 349 / 139 exp); one-way progression through interior stages.~~
 
-No exceptions. The R-series implements a one-way progression through interior stages.
-**Source:** AZC-DEEP Phase 4a
+**RETRACTED — transcription-serialization artifact.** The parsed `placement` R1/R2/R3 are concentric
+**circle-text rings recorded by depth as contiguous blocks** (IVTFF `@Cc` loci; R-series are NESTED RINGS,
+not radial "interior stages"). The provenance check (`phases/PHASE_742_AZC_C759_AUDIT/scripts/c434_order_provenance.py`)
+found: all 12 zodiac folios serialize R-subscripts as **monotonic blocks** — 10 ascending (R1→R2→R3) but
+**2 descending** (f70v1/f70v2: R3→R2→R1, the documented per-folio numbering flip, `currier_AZC.md:312`).
+927/951 transitions are same-ring; the 24 ring-changes occur ONLY at block boundaries. Observed "0 backward"
+is **forced by the depth-sort** (orient all folios ascending → 0 by construction), and is in fact **3** once
+the descending folios are counted as stated. The shuffle-null "expected 349" merely tests "is the file sorted
+by ring depth?" (trivially yes). The 97.5% self-transition = the block-count floor (1 − 24/951), zero excess.
+A grammatical one-way progression cannot reverse direction between folios → the claim was never a manuscript
+property. Layout fact (rings are nested strata read ring-by-ring) preserved as codicology in
+`context/DATA/AZC_NOTATION_PROVENANCE.md`, NOT as a constraint. **Source of original:** AZC-DEEP Phase 4a.
 
 ### C435 - S/R Positional Division
-**Tier:** 2 | **Status:** CLOSED
-Zodiac placement grammar has a strict two-layer structure:
+**Tier:** 2 | **Status:** CLOSED — sub-claim struck + spatial half flagged (PHASE_742, 2026-06-01)
+Zodiac placement grammar has a two-layer structure:
 - **S-series (boundary layer):** 95%+ at line edges (S0=100% initial, S1=79% initial, S2=84% initial)
 - **R-series (interior layer):** 89-95% line-interior positions
 
-S marks entry/exit. R fills the interior in ordered stages. They never mix roles.
+S marks entry/exit. R fills the interior. ~~in ordered stages~~ They never mix roles.
+
+> **[PHASE_742]** "in ordered stages" **STRUCK** — it leaned on C434 (RETRACTED: R-subscript order is a
+> transcription artifact, not a progression). The S-edge / R-interior **spatial** split is retained for now
+> but **FLAGGED for a provenance audit**: "S at line edges" may itself be a label-serialization artifact
+> (labels recorded line-initially), the same failure mode as C434. Test before treating as load-bearing.
 **Source:** AZC-DEEP Phase 4a
 
-### C436 - AZC Dual Rigidity Pattern
-**Tier:** 2 | **Status:** CLOSED
-Both AZC families exhibit extreme intra-folio placement rigidity (>=98% self-transition, zero singleton placements), but differ sharply in cross-folio consistency:
-- **Zodiac family:** Instantiates a single uniform placement scaffold (0.945 similarity)
-- **A/C family:** Instantiates folio-specific rigid scaffolds (0.340 similarity)
+### C436 - AZC Dual Rigidity Pattern — **SPLIT (PHASE_742, 2026-06-01): self-transition half RETRACTED; cross-folio half RETAINED Tier 2**
+~~Both AZC families exhibit extreme intra-folio placement rigidity (>=98% self-transition, zero singleton placements)~~ — **self-transition half RETRACTED:** ≥98% self-transition is the block-serialization **floor** (PHASE_742 measured 97.5% = 1 − 24/951, zero excess above what depth-block layout forces — same artifact as C434/C433). It is NOT a rigidity/coordination measurement.
 
-The contrast is **uniform-versus-varied rigidity**, not rigid-versus-permissive structure. AZC is not "one mode with variation" - it implements two distinct coordination strategies.
+**RETAINED (Tier 2) — the cross-folio half**, which is a **set-overlap statistic, order-independent** (immune to the serialization artifact) and triple-corroborated (C319/C431/C437/C760/C1519):
+- **Zodiac family:** single uniform placement/vocabulary scaffold (0.945 cross-folio similarity)
+- **A/C family:** folio-specific scaffolds (0.340 similarity)
+
+The surviving contrast is **uniform-versus-varied cross-folio scaffolding** — two coordination strategies — NOT an intra-folio "rigidity" (that was the layout floor).
 **Source:** AZC-DEEP Phase 4b
 
 ---

@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2059 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2058 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-01 13:15
-**Version:** FROZEN STATE (2059 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-01 14:02
+**Version:** FROZEN STATE (2058 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -350,11 +350,10 @@ C423	PREFIX-BOUND VOCABULARY DOMAINS (80% exclusive MIDDLEs)	2	A
 C424	Adjacency coherence is clustered, not uniform	2	A
 C430	**AZC Bifurcation: two folio families**	2	AZC
 C431	**Zodiac Family Coherence (refines C319)**	2	AZC
-C432	**Ordered Subscript Exclusivity**	2	AZC
-C433	**Zodiac Block Grammar (98%+ self-transition)**	2	AZC
-C434	**R-Series Strict Forward Ordering**	2	AZC
-C435	**S/R Positional Division (boundary/interior)**	2	AZC
-C436	**Dual Rigidity: uniform vs varied scaffolds**	2	AZC
+C432	**Ordered Subscript Exclusivity** — **[PHASE_742: FLAGGED for serialization-artifact audit (same AZC-DEEP pass as C434; leans on subscript serial order — UNTESTED, do not rely on)]**	2	AZC
+C433	**Zodiac Block Grammar (98%+ self-transition)** — **[PHASE_742: FLAGGED — 98% self-transition is suspected block-serialization floor, same artifact as retracted C434; audit pending]**	2	AZC
+C435	**S/R Positional Division (boundary/interior)** — **[PHASE_742: "ordered stages" sub-claim STRUCK (leaned on retracted C434); S-edge/R-interior spatial split RETAINED but FLAGGED for label-serialization audit]**	2	AZC
+C436	**Dual Rigidity: uniform vs varied scaffolds** — **[PHASE_742 SPLIT: ≥98% self-transition half RETRACTED (= block-serialization floor 97.5%, same artifact as C434); cross-folio uniform(0.945)-vs-varied(0.340) half RETAINED Tier 2 (order-independent set-overlap, corroborated C319/C431/C1519)]**	2	AZC
 C437	AZC Folios Maximally Orthogonal	2	AZC
 C438	AZC Practically Complete Basis	2	AZC
 C439	Folio-Specific HT Profiles	2	AZC
@@ -1402,7 +1401,7 @@ C1516	AZC HEAD domain differentiation across zones	2	AZC, zone, HEAD, atom, diff
 C1517	o-HEAD enrichment is zone-graded not uniform	2	AZC, zone, o-HEAD, graded, arrangement, C1502, C1381, C1388
 C1518	HEAD differentiation dominates TERMINAL across zones	2	AZC, zone, HEAD, TERMINAL, JSD, domain-selection, C1487, C1501
 C1519	Zodiac HEAD uniformity vs A/C internal diversity	2	AZC, family, zodiac, AC, HEAD, diversity, C436, C1270
-C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, C434
+C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, ~~C434~~
 C1521	AZC zone pipeline composition varies	2	AZC, zone, pipeline, bridge, dark, exclusive, o-HEAD, C1139, C1272, C1500, C1505
 C1522	AZC zones partition B-proximate vs A-proximate by HEAD JSD	2	AZC, zone, HEAD, JSD, B, A, proximity, partition, C301, C1507, C1517
 C1523	Currier A headless rate 1.43x higher than B/AZC	2	GLOBAL, cross-system, headless, A, B, AZC, HEAD, rate, enrichment, C1488, C1507, C1519

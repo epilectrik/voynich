@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1863 constraints | 2026-06-01
+CONSTRAINT_REFERENCE v2.6 | 1862 constraints | 2026-06-01
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -305,11 +305,10 @@ C423	PREFIX-BOUND VOCABULARY DOMAINS (80% exclusive MIDDLEs)	2	A	in: currier_a
 C424	Adjacency coherence is clustered, not uniform (~3-entry runs, autocorr r=0.80)	2	A	-> C424_clustered_adjacency.md
 C430	**AZC Bifurcation: two folio families**	2	AZC	in: azc_system
 C431	**Zodiac Family Coherence (refines C319)**	2	AZC	in: azc_system
-C432	**Ordered Subscript Exclusivity**	2	AZC	in: azc_system
-C433	**Zodiac Block Grammar (98%+ self-transition)**	2	AZC	in: azc_system
-C434	**R-Series Strict Forward Ordering**	2	AZC	in: azc_system
-C435	**S/R Positional Division (boundary/interior)**	2	AZC	in: azc_system
-C436	**Dual Rigidity: uniform vs varied scaffolds**	2	AZC	in: azc_system
+C432	**Ordered Subscript Exclusivity** — **[PHASE_742: FLAGGED for serialization-artifact audit (same AZC-DEEP pass as C434; leans on subscript serial order — UNTESTED, do not rely on)]**	2	AZC	in: azc_system
+C433	**Zodiac Block Grammar (98%+ self-transition)** — **[PHASE_742: FLAGGED — 98% self-transition is suspected block-serialization floor, same artifact as retracted C434; audit pending]**	2	AZC	in: azc_system
+C435	**S/R Positional Division (boundary/interior)** — **[PHASE_742: "ordered stages" sub-claim STRUCK (leaned on retracted C434); S-edge/R-interior spatial split RETAINED but FLAGGED for label-serialization audit]**	2	AZC	in: azc_system
+C436	**Dual Rigidity: uniform vs varied scaffolds** — **[PHASE_742 SPLIT: ≥98% self-transition half RETRACTED (= block-serialization floor 97.5%, same artifact as C434); cross-folio uniform(0.945)-vs-varied(0.340) half RETAINED Tier 2 (order-independent set-overlap, corroborated C319/C431/C1519)]**	2	AZC	in: azc_system
 C437	AZC Folios Maximally Orthogonal	2	AZC	in: azc_system
 C438	AZC Practically Complete Basis	2	AZC	in: azc_system
 C439	Folio-Specific HT Profiles	2	AZC	in: azc_system
@@ -1357,7 +1356,7 @@ C1516	AZC HEAD domain differentiation across zones	2	AZC, zone, HEAD, atom, diff
 C1517	o-HEAD enrichment is zone-graded not uniform	2	AZC, zone, o-HEAD, graded, arrangement, C1502, C1381, C1388	R=17.7% (1.51x B), P=19.1% (1.63x), C=26.2% (2.23x), S=29.3% (2.49x), L=30.9% (2.63x). Overall 1.90x B at HEAD-slot level.
 C1518	HEAD differentiation dominates TERMINAL across zones	2	AZC, zone, HEAD, TERMINAL, JSD, domain-selection, C1487, C1501	Mean pairwise HEAD JSD=0.0254, TERMINAL JSD=0.0049. HEAD 5.2x more discriminating. Zones select WHAT domain, not HOW to close.
 C1519	Zodiac HEAD uniformity vs A/C internal diversity	2	AZC, family, zodiac, AC, HEAD, diversity, C436, C1270	Between-family HEAD JSD=0.0158. Internal: Zodiac=0.0617, A/C=0.1265 (2.0x ratio). Extends C436 to atom level.
-C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, C434	All Spearman p=0.600 (N=4). R1-R3 stable (JSD 0.001-0.009). R4 anomalous (N=39, 51.3% headless) but underpowered.
+C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, ~~C434~~	All Spearman p=0.600 (N=4). R1-R3 stable (JSD 0.001-0.009). R4 anomalous (N=39, 51.3% headless) but underpowered. **[PHASE_742: parent C434 RETRACTED. The absence of a HEAD gradient along R-subscripts now CORROBORATES the serialization-artifact verdict — if R-order were a real interior-stage progression you'd expect some gradient; there is none. Reference flips from "extends C434" to "consequence of C434 retraction." Measurement stands.]**
 C1521	AZC zone pipeline composition varies	2	AZC, zone, pipeline, bridge, dark, exclusive, o-HEAD, C1139, C1272, C1500, C1505	S-zone most dark/exclusive (16.8%/21.4%). P-zone most bridge (80.4%). Dark MIDDLEs 1.84x o-HEAD vs bridge across all zones.
 C1522	AZC zones partition B-proximate vs A-proximate by HEAD JSD	2	AZC, zone, HEAD, JSD, B, A, proximity, partition, C301, C1507, C1517	R/P closer to B (JSD 0.029-0.042). C/S/L closer to A (JSD 0.036-0.084). B-proximate = lower o-HEAD + more bridge.
 C1523	Currier A headless rate 1.43x higher than B/AZC	2	GLOBAL, cross-system, headless, A, B, AZC, HEAD, rate, enrichment, C1488, C1507, C1519	A=39.0%, B=27.2%, AZC=27.9%. A vs B chi2=487.73, p=4.44e-108. B vs AZC p=0.428 (NS). A pseudo-HEAD: i-dominant (21.3%). B: l/d-dominant (20.4%/18.2%).
