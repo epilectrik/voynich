@@ -1,0 +1,21 @@
+{
+  "observed_both_folios": [
+    "f75r"
+  ],
+  "observed_run4": [
+    "f75r"
+  ],
+  "observed_win9": [
+    "f108r",
+    "f75r",
+    "f86v3"
+  ],
+  "f75r_window": 9,
+  "p_joint": 0.0108,
+  "p_x4_alone": 0.1011,
+  "p_x9_alone": 0.9555,
+  "N": 10000,
+  "seed": 0,
+  "predicate": "qok=startswith(qok); win=max qok over 2-consecutive-line windows; reproduces C1969 3 folios + ceiling 9",
+  "null": "within-folio token-order shuffle (type-freq-preserving), re-segment to line lengths, corpus-max over 82"
+}

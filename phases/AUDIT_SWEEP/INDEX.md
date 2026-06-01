@@ -102,9 +102,9 @@ Per crazy-expert's cadence guidance:
 
 1. **C1065** (score 2) — multi-signal, recent enough that audit infrastructure should be readily reusable
 2. **C1711** (score 2) — second multi-signal
-3. **C476** (Coverage Optimality) — targeted list, sister probe to C475 from same 2026-01-12 session, high a-priori suspicion
-4. **C153, C268, C481, C517, C518, C982, C983, C996** — rest of targeted list
-5. **Spot-check 5-10 of the 152 chi²-only constraints** to estimate hit rate; if >40% need demotion, do the full sweep; if <20%, opportunistic
+3. ~~**C476** (Coverage Optimality)~~ — RETRACTED (broken-baseline audit, separate)
+4. ~~**C153, C268, C481, C517, C518, C982, C983, C996**~~ — **CLEARED / actioned (see Round 2 log, 2026-05-31).** Pattern-2 targeted list is exhausted of un-actioned Tier-2 targets. Do NOT re-flag.
+5. **Spot-check 5-10 of the ~128 chi²-without-perm-companion (Pattern-3) constraints** to estimate hit rate; if >40% need demotion, do the full sweep; if <20%, opportunistic. **This is now the only open audit bulk.**
 
 ---
 
@@ -194,3 +194,25 @@ After 4 audits, four distinct verdict shapes:
 4. **NO ACTION (false positive)** (C1065) — triage signature fires but methodology is actually sound
 
 Category 4 is informative for tool calibration even though no constraint changed.
+
+### Round 2 audits (2026-05-31) — sparsity-denominator targeted-list clearance
+
+Audited crazy-expert's remaining Pattern-2 targeted list against the **signature** ("constraint citing a percentage of possible/potential pairs/triples on sparse data"), verified from source (CONSTRAINT_TABLE + per-constraint `.md`). **None matches the signature** — the targeted list was a membership guess broader than the diagnostic.
+
+| Constraint | Actual claim | Matches sparsity signature? | Verdict |
+|-----------|--------------|:---:|--------|
+| C982 | Discrimination-space dimensionality ~101 (median of 7 methods, 28–256 spread) | No — dimensionality estimate, no pair denominator | NO ACTION — sound; "~101" already hedged as STRUCTURED_HIGH_DIMENSIONAL |
+| C983 | Compatibility transitivity: clustering 0.873 vs **Configuration Model** 0.253 (z=+136.9) | No — degree-preserving null; 3.5× effect | NO ACTION — robust (CM controls the hub/frequency confound by construction) |
+| C996 | Forbidden topology: 13/17 forbidden transitions involve HUB (denominator = **17 attested**) | No — attested denominator, descriptive | NO ACTION — descriptive fact sound; chi² p-values (3928/596) frequency-confounded (cosmetic; claim doesn't rest on them) |
+| C153 | Prefix/suffix axes partially independent (MI=0.075) | No — MI/independence claim | NO ACTION (wrong pattern; if anything a Pattern-3 candidate, separate) |
+| C268 | 897 observed combinations | No — attested count, not a forbidden-% | NO ACTION (wrong pattern) |
+
+C476 retracted (broken-baseline, separate); C481 audited (claim-substitution, separate); C517/C518 already Tier 3.
+
+**Conclusion: the sparsity-denominator (Pattern 2) targeted list is EXHAUSTED of un-actioned Tier-2 targets.** No remaining flagged constraint makes a genuine "X% of possible pairs forbidden on N_possible" claim. Pattern-2 baseline-flagged count (9) = exactly this list; with it cleared, Pattern 2 has no open targeted candidates. The ~128 chi²-without-perm-companion (Pattern-3) pool is now the only open audit bulk.
+
+**Tool/calibration lesson:** crazy-expert's `--targeted-only` list is *membership-based*, not signature-based — it flagged 5 constraints (C153/C268/C982/C983/C996) that don't match the Pattern-2 regex signature at all. Treat list membership as the *weakest* triage signal (it was added precisely because short-text constraints don't trip the regex); always confirm against the per-constraint source before auditing. (Consider dropping the 5 cleared constraints from the script's hardcoded `TARGETED` list so `--targeted-only` stops re-surfacing them — optional.)
+
+### Audit-outcome category count (after Round 2)
+
+Round 2 added 5 Category-4 (NO ACTION) outcomes, all "signature-does-not-match" rather than "methodology-sound-but-flagged" (C1065's flavor). Net audit tally: 1 retract (C131), 2 demote (C475, C1068), 6 no-action (C1065 + 5 Round-2). The taxonomy of *failure* patterns is unchanged; what Round 2 adds is a **no-action sub-reason**: *triage list-membership over-included constraints that never matched the signature.*

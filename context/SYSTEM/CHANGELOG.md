@@ -4,6 +4,39 @@
 
 ---
 
+## Version 6.99 (2026-06-01) — PHASE_740 Currier B macro-eigenstructure: dimensionality + no-cyclic-mode (+ the characterization echo-wall)
+
+### Summary
+
+Extensive off-books characterization of the C2061 above-Markov eigenstructure, with registration adjudicated by a 3-expert differential. One constraint registered (C2067, a structural measurement); every attempt to characterize *what* the modes are either failed or re-derived existing framework and is held echo (NOT registered). The user correctly flagged the spec-not-trace result as already known from another angle — which surfaced the echo wall as the session's real meta-lesson.
+
+### Core finding
+
+The raw-49 class-transition operator's above-Markov slow eigenstructure is **≥2-dimensional** (λ2 z=+2.5 reproduces C2061; λ3 z=+4.4 is sharper; **λ4 marginal/excluded**), with **NO genuine cyclic eigenmode** (rotation = 5-gram artifact, p=0.45; recurrence-peak vs Markov-1 z=+0.82, p=0.19 → flat excess = persistence/clumping, not a loop). It is a POOLED-corpus property (per-section subspaces degenerate). What the modes *mean* is not recoverable: carrier attribution refuted (frequency-confound + wrong-vector control), and the λ2≈complexity/C1430, λ3≈h/C089, spec-not-trace≈C1399 readings are echo.
+
+### New constraint
+
+| C# | Tier | Claim |
+|----|------|-------|
+| C2067 | 2 | Currier B above-Markov class-operator eigenstructure is ≥2-dimensional (λ2+λ3 survive 5-gram; λ4 marginal/excluded) with no genuine cyclic mode (extends C2061). Scope: dimensionality MEASUREMENT only — modes DISTRIBUTED (C2065), pooled-only, meaning held ECHO (C171). |
+
+### Dispositions
+
+- **C2061** — EXTENDED + scope-noted (≥2-dimensional, not λ2-alone; pooled-only, doesn't decompose to sections).
+- **C2065** — CORROBORATED (carrier attribution refuted, consistent with distribution).
+- **C1225** — PROTECTED (λ2's e-correlation is length-collinearity, not an e-depth eigen-signal).
+- **C610/C740** — cross-ref note (HT = over-threshold tail of the same complexity axis).
+- **C1430/C089/C1399/C1400/C1429, Tier 0** — UNTOUCHED; the layer-meaning readings re-derive these (echo, not re-registered).
+- **C1889/C2034** — ANNOTATED (PHASE_741): f75r anchor's Voynich leg corrected to the JOINT ×4-AND-×9 (p_joint=0.0108 ≈ 1/82, registration-grade corpus-max); ×4-run alone (p≈0.10) was the registry-compressed leg; 1/16,500 = joint × Catalan(1/189) holds. Positive correction (hardens), not falsification.
+
+### Methodology (→ memory: `feedback_eigenstructure_characterization_lessons.md`)
+
+- Recurrence-vs-any-homogeneous-null detects clumping/persistence flatly, NOT periodicity — a loop needs a PEAK (mis-specified the kill twice).
+- Frequency-control must be computed on the SAME vector as the claim (wrong-vector trap = new failure pattern).
+- The echo wall: at maturity, eigenstructure interpretation re-derives the framework (distributed modes project onto known axes — extends framework-as-null). Register the measurement, hold the meaning.
+
+---
+
 ## Version 6.98 (2026-05-29) — PHASE_737+738 daiin/qo→CHSH window-control: char-5-gram is window-blind for long-token prefix-routing
 
 ### Summary

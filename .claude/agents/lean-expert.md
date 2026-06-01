@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2058 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2059 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-05-30 16:06
-**Version:** FROZEN STATE (2058 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-01 09:36
+**Version:** FROZEN STATE (2059 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -43,7 +43,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 1. All Constraints
 2. All Explanatory Fits
-3. Session Methodology Notes (38 feedback rules)
+3. Session Methodology Notes (40 feedback rules)
 
 ---
 
@@ -1737,7 +1737,7 @@ C1885	Cross-family replication with frozen 8D features (no re-tuning): sublimati
 C1886	Wrong-regime negative control: distillation->R4 collapses to 1/16 confident, mean ratio 0.863 (below 1.0 = worse than random). Distillation->R3 degrades to 4/16, ratio 1.017. Feature set is regime-discriminating, not noise-accepting	2	A↔B, cross-family, PL, REGIME, negative-control
 C1887	Within-family permutation test: real optimized assignment beats 1000 random chapter-to-folio shuffles. Mean ratio 1.284 vs null 0.572, confident 9 vs null 0.32. Random-draw specificity: only 1/100 random 16-chapter draws reach 9 confident. Both chapter identity and assignment specificity confirmed	2	A↔B, cross-family, PL, REGIME, permutation
 C1888	8D vs 4D feature comparison: adding 4 discovered dimensions (consistency_frac, suffix_transparency, header_enrichment, thermo_ke) to 4 known channel mappings raises confident from 4 to 9, mean ratio from 1.123 to 1.284. Only 4/15 assignments agree between 4D and 8D. TRAINING-SET result; cross-family validation is C1885	2	A↔B, cross-family, PL, features
-C1889	f75r is the only Currier B folio (of 82) with a 4+ consecutive identical token run (qokedy x4, line 13). Only 7 folios have runs of 3+; 75/82 have max run ≤2. Pure corpus fact independent of matching features	2	B, token, repetition, corpus
+C1889	f75r is the only Currier B folio (of 82) with a 4+ consecutive identical token run (qokedy x4, line 13). Only 7 folios have runs of 3+; 75/82 have max run ≤2. Pure corpus fact independent of matching features. **[PHASE_741 JOINT-ANCHOR CORRECTION (2026-06-01):** the ×4-run *raw uniqueness* (only folio of 82) stands, but its selection-safe corpus-RARITY is p≈0.10 (within-folio type-frequency-preserving corpus-max null, PHASE_739 design-D) — NOT 1/82. The 1/82≈0.0122 used by the 1/16,500 anchor is the **JOINT ×4-AND-×9 corpus-rarity** (f75r is the unique folio with BOTH a ≥4 run AND a ≥9-qok-window; p_joint=0.0108, PHASE_741), NOT the ×4-run alone. The Voynich leg of the anchor is the JOINT conjunction, not ×4-uniqueness; the registry row's "1/82" was a registry-compression that flattened the joint to the ×4-leg. Anchor SOUND on the joint. Cross-ref C2034, C1969.]**	2	B, token, repetition, corpus, joint_anchor_corrected_PHASE741
 C1890	ot-PREFIX fraction significantly higher on R3 folios (mean 0.306) than R1 folios (mean 0.196). Mann-Whitney U=171, p=0.005. Confirms C1478 prediction (k/t terminal mirrors): k-HEAD-dominant regime (R1) shows qo-PREFIX dominance, t-HEAD-involved regime (R3) shows ot-PREFIX elevation	2	B, PREFIX, REGIME, C1478, C1300
 C1891	f76r P1 has the strongest monotonic monitoring gradient in Currier B. Not part of 8D matching features (which use folio-level HEAD ratios, not within-paragraph positional gradients). Small comparison set	2	B, PREFIX, monitoring, gradient
 C1892	f76r P1 monitoring gradient loads more on ch (rho_ch=0.341) than sh (rho_sh=0.221). Consistent with Ch18's active testing procedure (C929: ch=active test). Difference not formally tested for significance at this sample size	2	B, PREFIX, monitoring, C929
@@ -1911,6 +1911,7 @@ C2063	**C1025 battery's B3 forbidden-suppression test is an idealization-conform
 C2064	**daiin→ch/sh-prefix bigram is above the 5-gram floor — measurement-only, mechanism ambiguous.** Under per-synth-own-shuffle 5-gram null, the unconditional daiin→(ch/sh-prefix) transition tendency has real excess +0.2272 vs synth +0.1297. This is a genuine above-Markov bigram, grouped with C549 and the C2056 correction-lane family. **TWO load-bearing caveats keep it measurement-only:** (1) DENOMINATOR — this is the UNCONDITIONAL prefix-transition rate (47.9%), NOT C817's lane-conditional 90.8% (of next-tokens in QO∪CHSH, share that is CHSH); the lane-conditional magnitude is UNTESTED. (2) MECHANISM AMBIGUOUS — daiin→CHSH survives but the parallel ol→CHSH demotes despite similar real rates; this daiin-survives/ol-demotes asymmetry is exactly what a token-length/char-signature artifact predicts (daiin is a long fixed token the 5-gram routes past poorly, like qo; ol is short and char-reproducible). So the survival may be "char-5-gram cannot route past long tokens," NOT "CC lane-routing is designed structure." **Does NOT validate C600/C817's routing-mechanism claim** (both demoted). Discriminating test (pre-registered, future work): test ≥2 SHORT char-reproducible CHSH-source tokens — if they survive, general lane-attraction is real; if not, char-signature artifact. Extends C2062 (local control bigrams real, positional gradients floor). **[RESOLVED PHASE_737/738: the pre-registered discriminating test was RUN — 0/6 short high-CHSH sources survive. The daiin→ch/sh survival is WINDOW-BLINDNESS-ELIGIBLE (length-confounded source-ungeneratability artifact, C2066), NOT routing evidence. Mechanism stays ambiguous; C600/C817 NOT rehabilitated. C2064 remains a measurement; the artifact reading is now the favored one.]** **References:** C549, C2056, C2062, C2066, C600, C817, C816.	2	daiin_chsh_bigram_above_5gram, measurement_only, mechanism_ambiguous_tokenlength_vs_routing, unconditional_not_lane_conditional, does_not_validate_C600_C817, discriminating_test_short_source_future, extends_C2062, B
 C2065	**The Currier B macro-eigenstructure slow mode (C2061's above-Markov λ2) is DISTRIBUTED across the class space, NOT localized in the AXM attractor self-loop.** Submatrix-λ2 localization: full-49 λ2=0.236, AXM-block-only 0.222, non-AXM lanes 0.205 — comparable across attractor and lanes, not attractor-concentrated. 2nd-eigenvector loading (falsification test): AXM-block loading 0.642 ≈ class-fraction 0.65 (proportional, not concentrated); participation ratio 28.8/49; top-5 share 0.299; top loaders mix AXM (22,21,2,8,41) and lane (7,23,9) classes — spread, not block-boundary-aligned. The "distributed" claim SURVIVED its falsification (a concentrated within-AXM gradient would have collapsed it and predicted high spectral ARI). **Mechanistically grounds C1010's non-spectral 6-state partition (spectral-clustering ARI=0.059):** the role/depletion-defined partition cannot be spectrally recovered because the above-Markov slow mode genuinely does not align with the blocks. Companion to the PHASE_736 non-finding that the AXM self-transition RATE is composition (the C2062 scalar-vs-eigenstructure split, recurring at the block level). **References:** C2061 (above-Markov λ2, localized here), C1010 (non-spectral partition, grounded), C1019 (tensor-orthogonality), C978 (scope-corrected), C2062 (scalar-vs-eigenstructure), C976.	2	macro_slow_mode_distributed, not_in_attractor_self_loop, participation_ratio_28.8, loading_class_proportional, not_block_aligned, grounds_C1010_nonspectral_partition, falsification_survived, B
 C2066	**The char-5-gram null has a length-confounded WINDOW-BLINDNESS: transition-survival from a long, low-emission-fidelity source token is a source-ungeneratability artifact, not routing evidence — and does NOT rehabilitate any demoted routing claim.** A char-n-gram conditions only on a fixed-width character window at the token boundary; when a source token is long enough that its routing-relevant prefix (qo, daiin) falls outside that window, the null cannot regenerate the token at corpus rate, so transitions out of it survive partly as an artifact of source-token length, independent of any designed routing. **Calibration (PHASE_737):** daiin→ch/sh survives the per-synth-own-shuffle 5-gram null but 0/6 SHORT high-CHSH source tokens survive the same null. The verdict flips with source-token length — the signature of windowing, not structure. **Sentinel-injection fix FAILS (PHASE_738):** appending a prefix-family/identity sentinel so the null can condition on the source prefix does not work, because a suffix-appended sentinel must be predicted from prefix-blind suffix context — fidelity audit shows the generator emits the correct sentinel only 28.1% of the time for long-qo tokens vs 99.6% for short, biasing the test toward SURVIVE. The char-Markov instrument is therefore exhausted for long-token prefix-routing under all three regimes (low-order = window-blind; suffix-sentinel = ungeneratable; high-order = overfits). **NON-REHABILITATION CLAUSE (load-bearing):** window-blindness invalidates the 5-gram only as a *disconfirming* instrument for long-token prefix-routing; it supplies ZERO positive evidence. The PHASE_731/735 demotions **C557, C561, C816, C600, C817, C819 STAND** (those involve short/generatable tokens — or, aiin, ol — where the 5-gram is valid), and C2064/daiin survival stays window-blindness-eligible / mechanism-ambiguous (C600/C817 not rehabilitated). **NARROWS C2055** (does not contradict it): the char-5-gram remains the correct null for surface/positional/transition-rate claims (its native domain); it is window-blind only for token-adjacency claims whose routing feature lies outside the boundary window. **The correct null for token-adjacency claims is the within-line token-shuffle (composition) control** (which re-grounded C549 and the C2056 lanes). Diagnostic: a 5-gram verdict that flips with source-token length is windowing — calibrate source-token emission fidelity before interpreting survival. PHASE_737 discharged C2064's pre-registered short-source discriminating test. **References:** C2055, C2064, C2056, C2062, C549, C600, C817, C557, C561, C816.	2	window_blindness, length_confounded_sensitivity, source_token_fidelity_gradient, non_rehabilitation_clause, narrows_C2055, correct_null_is_token_shuffle, discharges_C2064_pretest, sentinel_injection_ungeneratable, B, methodology
+C2067	**Currier B class-transition operator's above-Markov slow eigenstructure is ≥2-dimensional, with no genuine cyclic mode (extends C2061).** Under the SAME raw-49-operator / per-synth-own-shuffle 5-gram null as C2061 (which tested λ2 only): BOTH λ2 (+0.206, excess z=+2.5, reproduces C2061's 0.206 exactly) AND λ3 (−0.134, excess z=+4.4 — sharper than λ2) survive above-Markov; **λ4 (+0.088) is MARGINAL and NOT claimed**. The slow spectrum contains **NO genuine cyclic/rotational eigenmode**: complex pairs (~12-step) are 5-gram artifacts, and the recurrence curve has no periodic peak. **SCOPE — measurement of eigenstructure DIMENSIONALITY only:** (a) the modes are DISTRIBUTED (C2065, participation ratio 28.8) and NOT carried by a recoverable class/token vocabulary — per-layer carrier attribution was REFUTED (frequency-confounded ablation; frequency control run on the wrong vector; contradicts C2065); (b) WHAT the modes represent is NOT registered — λ2 loads on general token LENGTH (the e-correlation is length-collinearity, NOT e-specific; do not read as an e-depth/thermal eigen-signal, protects C1225), λ3 loads cleanly on h-content (+0.49); these re-derive C1430/C089 and are held echo (C171, framework-as-null); (c) the eigenstructure is a POOLED-corpus property and does NOT decompose to sections at current N (per-section subspaces degenerate/non-reproducible). The no-cyclic-mode result + paragraph/line independence (C1399/C1400/C1429) is consistent with a forward *specification* rather than a temporal *trace*, but that reading re-derives the independence results and is NOT registered as a new claim. **References:** C2061, C2062, C2065, C976, C977, C978, C1010, C1225, C610, C740, C1430, C089, C1399.	2	eigenstructure_geq2_dimensional, lambda3_above_markov_z4.4, lambda4_marginal_not_claimed, no_cyclic_eigenmode, rotation_is_5gram_artifact, recurrence_no_periodic_peak, distributed_C2065, carrier_attribution_refuted_freq_confound, pooled_not_per_section, meaning_is_echo_not_registered, extends_C2061, B
 
 ---
 
@@ -1918,7 +1919,7 @@ C2066	**The char-5-gram null has a length-confounded WINDOW-BLINDNESS: transitio
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-05-29
+# Generated: 2026-06-01
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -2169,6 +2170,21 @@ On sparse graphs, these denominators differ by factors of 10-50×. The N_possibl
 **The C475 case study (2026-05-19 audit):**
 
 […trimmed — full note: memory/feedback_denominator_choice_sparse_cooccurrence.md]
+
+---
+
+## feedback-eigenstructure-characterization-lessons
+
+*"Three reusable methodology lessons from the PHASE_740 eigenstructure-characterization session. (1) Recurrence-vs-any-homogeneous-null detects CLUMPING/PERSISTENCE flatly, NOT periodicity — a loop requires a non-monotone PEAK, not flat excess (I mis-specified this kill TWICE before catching it). (2) Ablation/feature-attribution frequency-control must be computed on the SAME vector as the claim (wrong-vector trap — new failure pattern). (3) At project maturity, eigenmode/structure characterization re-derives the framework (the echo wall): distributed modes (C2065) project onto axes the framework already has, so the meaning is echo even when the measurement is new."*
+
+# Eigenstructure-characterization methodology lessons (PHASE_740, 2026-06-01)
+
+Registered with C2067 (eigenstructure ≥2-dimensional, no cyclic mode). The *measurement* was new; the *characterization* of what the modes mean was echo or failed. Three durable lessons:
+
+## 1. Recurrence-vs-homogeneous-null = clumping/persistence, NOT periodicity. A loop needs a PEAK.
+Testing "is there a loop/return" via recurrence P(state_t == state_{t−k}) against a homogeneous null (5-gram OR global Markov-1) fires on ANY long-memory/compositionally-clumped sequence — real folios sit FLATLY above both nulls at all lags (z=+5 to +13) because of λ2 persistence + folio-internal heterogeneity, which the homogeneous nulls lack. **That flat excess is persistence, not a loop.** A genuine periodic loop is a non-monotone PEAK at a period (+ harmonics) above the smooth decay. I mis-specified the kill as "any lag z>3"
+
+[…trimmed — full note: memory/feedback_eigenstructure_characterization_lessons.md]
 
 ---
 
@@ -2498,6 +2514,20 @@ Pre-registration discipline is supposed to prevent post-hoc goalpost-moving. But
 - C2022: "Markov plateau at order 2 or 3" — any system with limited vocabulary + bigram/trigram structure satisfies this. Latin would also pass. Mensural passed at 2.
 
 […trimmed — full note: memory/feedback_registration_calibration_lesson.md]
+
+---
+
+## feedback-registry-compresses-findings-test-the-claim-not-the-leg
+
+*"The constraint registry is a LOSSY COMPRESSION of the original finding — a row can keep the right NUMBER but mis-attribute the MECHANISM, or flatten a CONJUNCTION (A AND B) into one leg. Reasoning/testing from the row tests the compression, not the claim; same-model experts (all grounded in the same registry) faithfully reproduce the compression — only the human / original reasoning can recover what the row dropped. When the human's in-context account conflicts with the row, the human is authoritative on what the claim WAS. And: test the conjunction, never a single leg."*
+
+# The registry compresses findings — test the actual claim, not the compressed leg (2026-05-30)
+
+The most costly failure of the session, and the user was rightly frustrated: I designed a test and rendered a verdict from the constraint REGISTRY's encoding of a finding, when the row was a lossy compression of what the finding actually claimed. FOUR passes (me + expert-advisor + crazy-expert + lean-expert across multiple consultation rounds) reproduced the same error, because all are grounded in the same registry. The HUMAN caught it from the original reasoning still in context — despite hours of prior discussion of that very finding and a freshly-built CLAUDE.md verdict gate that did not prevent it.
+
+## The concrete instance (f75r ×4/×9 anchor)
+
+[…trimmed — full note: memory/feedback_registry_compression_test_the_claim.md]
 
 ---
 
