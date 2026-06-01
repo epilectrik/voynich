@@ -4,6 +4,21 @@
 
 ---
 
+## Version 7.05 (2026-06-01) — "Is AZC a calendar?" — exclusion re-grounded (artifact reasons retracted), cyclic-frame not-adjudicated, count-test rejected
+
+### Trigger
+The `currier_AZC.md` "What AZC Rules Out" section excluded calendars/astrology — but every stated reason (99.9% self-transition, "no backward motion", "40–150 token lock-ins") was a transcription-serialization artifact RETRACTED in PHASE_742 (C433/C434/C436-self-transition). So the documented basis for the exclusion collapsed. Expert differential consult (advisor + lean) on (a) the doc fix and (b) a proposed label-count calendar test.
+
+### Decisions (both experts converged)
+- **Doc fix — "What AZC Rules Out" re-grounded.** Removing the artifact argument **withdraws exclusion evidence; it does not supply inclusion evidence** (symmetric-update). Calendar/astrology remain excluded on independent grounds: **C120/C171** (semantic ceiling — no readable referents) and **C321** (the 12 zodiac diagrams have *isolated* vocabulary, Jaccard 0.076 — anti-calendar lexically; a real calendar shares a cross-sign lexicon). The **cyclic/seasonal organizing frame** is reclassified **NOT ADJUDICATED** (neither supported nor excluded): C436/C319/C321 are consistent with a 12-fold frame but equally with "12 structural clones"; seasonal signal weak/partial (C1681 V=0.157 on 7-folio subset; **C1685 full season-map NOT inferable**). Corrected an earlier overreach toward "calendar-adjacent."
+- **C322 "Season-Gated Workflow" — seasonal framing flagged → Tier 3.** Measurement (placement-coverage non-uniform across 12 folios) stands Tier 2; the "seasonally constrained" interpretation rests on per-folio-unstable placement codes (PHASE_742/743 provenance; C2004/C2005) + an un-inferred season ordering (C1685). Not cited for/against calendar.
+- **Calendar label-count test — REJECTED, not run.** Uninformative in both directions: (i) look-elsewhere numerology (~12–15 calendar numbers × tolerance ≈ guaranteed hit); (ii) no discriminating null — zodiac signs are all ~30 days, so "≈30, low variance" fits both calendar AND the clone-template null (C436/C319/C321); (iii) nymph/center counts are systematically under-transcribed on exactly the zodiac folios (C2004/C2005, ±3–5 error swallows 28/29/30/31); (iv) N=12, a negative is indistinguishable from underpowered. No salvageable discriminating prediction exists in the surviving data → the data cannot currently distinguish calendar from structural-clone.
+
+### Net position
+AZC is **not a readable calendar** (C171 + C321), the prior hard exclusion's *reasons* were artifact-based and are withdrawn, and the **cyclic/seasonal-frame question is formally not-adjudicated**. No new constraint; C322 interpretation flagged. Doc: `currier_AZC.md` "What AZC Rules Out" rewritten; `azc_system.md` C322 annotated.
+
+---
+
 ## Version 7.04 (2026-06-01) — PHASE_743 AZC forward probes (DOCUMENTED, no new constraint): ring sequence-vs-set + label novelty
 
 ### Summary

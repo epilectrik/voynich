@@ -214,15 +214,22 @@ AZC does not execute. It does not route. It **classifies vocabulary by position*
 
 ## What AZC Rules Out
 
-The extreme structural regularity definitively excludes:
+> **[PHASE_742/743 CORRECTION — 2026-06-01]** The original exclusions here rested ENTIRELY on
+> "extreme structural regularity" (99.9% self-transition, no backward motion, 40–150 token lock-ins,
+> prohibition of swaps) — **all of which were transcription-serialization artifacts, RETRACTED**
+> (C433/C434/C436-self-transition, PHASE_742). That argument is withdrawn. **Removing it withdraws
+> the exclusion *evidence*; it does NOT supply inclusion evidence** (symmetric-update). The exclusions
+> below are re-grounded on independent, non-artifact constraints; one (cyclic-frame) is reclassified
+> as not-adjudicated.
 
-- ❌ Calendars (semantic systems don't tolerate 99.9% self-transition)
-- ❌ Astrology (no backward motion allowed)
-- ❌ Month-by-month recipes (40-150 token lock-ins)
-- ❌ Semantic labels attached to figures (zero flexibility)
-- ❌ Educational diagrams (absolute prohibition of swaps)
+**Excluded on independent (non-rigidity) grounds:**
+- ❌ **Calendars / astrology as semantic-translation targets** — semantic ceiling (**C120/C171**): token-level meaning is not recoverable; "this label = March/Aries" is dead regardless of rigidity.
+- ❌ **Lexical calendar** (shared month/sign lexicon across the diagrams) — **C321**: the 12 zodiac diagrams have *isolated* vocabulary (mean consecutive Jaccard 0.076). A real calendar shares a cross-sign lexicon; vocabulary-isolation is **anti-calendar**. This is the strongest surviving exclusion.
 
-Control scaffolds tolerate these patterns. Semantic systems do not.
+**NOT adjudicated (the rigidity argument that used to "exclude" these is retracted; no positive evidence either way):**
+- ❓ **Cyclic / seasonal organizing *frame* for the scaffold.** C436-retained (one scaffold reused 12×), C319/C431 (template reuse), C321 (isolated vocab) are *consistent with* a 12-fold cyclic frame but equally with "12 structural clones" — they do **not** discriminate. The seasonal signal is weak and partial (C1681: V=0.157 on a corrected 7-folio subset only; **C1685: full 12-folio season-map could NOT be inferred**, perm_p=0.112). Status: **neither supported nor excluded.** A bare label-count-vs-30 test cannot resolve this (look-elsewhere + the clone-null makes the same ≈30 prediction + nymph counts are under-transcribed on these folios per C2004/C2005).
+
+What AZC positively IS remains: a static positional vocabulary-classification / LABELING scaffold (C305, C441) — not a readable calendar.
 
 ---
 

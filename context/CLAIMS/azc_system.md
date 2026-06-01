@@ -152,8 +152,15 @@ Mean consecutive Jaccard = 0.076. Each zodiac diagram has independent vocabulary
 **Source:** AZC-AXIS
 
 ### C322 - Season-Gated Workflow
-**Tier:** 2 | **Status:** CLOSED
-Only 5/25 placements have full zodiac coverage. AZC encodes workflow states whose availability is seasonally constrained.
+**Tier:** 2 (measurement) | **Status:** seasonal framing FLAGGED → Tier 3 (PHASE_743, 2026-06-01)
+Only 5/25 placements have full zodiac coverage. ~~AZC encodes workflow states whose availability is seasonally constrained.~~
+
+> **[PHASE_743]** The **measurement** stands at Tier 2: placement-class coverage is **non-uniform** across the
+> 12 zodiac folios (5/25 full-coverage). The **"seasonally constrained" interpretation is flagged → Tier 3**:
+> (a) it rests on placement codes, which are **per-folio-unstable** (placement ≠ stable locus — PHASE_742/743
+> provenance; cf. C2004/C2005 AZC transcript-coverage gaps); (b) it presupposes a zodiac→season ordering that
+> was **never inferred** — **C1685** (full 12-folio season-map NOT inferable, perm_p=0.112); only a weak signal
+> on a corrected 7-folio subset (C1681, V=0.157). Do NOT cite C322 as evidence for/against a calendar or seasonal cycle.
 **Source:** AZC-AXIS
 
 ---
