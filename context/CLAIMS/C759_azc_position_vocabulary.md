@@ -1,10 +1,28 @@
 # C759: AZC Position-Vocabulary Correlation
 
-**Status:** VALIDATED | **Tier:** 2 | **Phase:** AZC_FOLIO_DIFFERENTIATION | **Scope:** AZC
+**Status:** VALIDATED (statistical core) — SHARPENED + glosses STRUCK | **Tier:** 2 | **Phase:** AZC_FOLIO_DIFFERENTIATION | **Scope:** AZC
+
+> **[PHASE_742 AUDIT — 2026-06-01]** Re-tested under a **within-folio** position-label
+> permutation null (the original chi² had NO within-folio control; position×folio confounded,
+> C760). **Statistical core SURVIVES:** V_obs=0.152 (full) / 0.181 (prefixed-only) vs within-folio
+> null 95th=0.123/0.135, **one-sided p=0.0001, B=10000** → position carries vocabulary information
+> beyond folio composition; NOT folio-shadow. **BUT scope is narrower than stated:** per-folio (each
+> vs its own null) only **8/17** folios show the effect — **7 Zodiac + f68r3 (radial Sun); cosmological
+> folios f69r/f67v2 are NULL (0/2).** The effect tracks the **regular radial-medallion scaffold**
+> (cf C433/C434), NOT AZC universally. Pooled V (0.152) is *below* the per-folio Vs (0.26–0.36):
+> folios carry different position→vocab directions, so there is **no single universal profile.**
+> **GLOSSES STRUCK (Tier 3→4):** the physical labels "S=spoke/nymph, C=center, R=ring" CONTRADICT the
+> verified f69r geometry (R=radii, **C=outer ring, S=inner ring, W=center** — see
+> `context/DATA/AZC_NOTATION_PROVENANCE.md`); placement letters are per-folio parse artifacts, not
+> stable physical roles. The pooled **"S=ok+ot=monitoring / C=ch=control"** functional reading
+> (Implication #1 below) is a dilution artifact built on those scrambled glosses — **withdrawn.**
+> Phase: `phases/PHASE_742_AZC_C759_AUDIT/`. *The PREFIX-profile table below is the original pooled
+> tabulation; read it as a diluted cross-folio average, and ignore the spoke/center/ring physical glosses.*
 
 ## Finding
 
-Position within AZC diagrams (R, S, C placements) significantly determines vocabulary selection.
+Position within AZC diagrams (R, S, C placements) significantly determines vocabulary selection
+**within the regular radial scaffold (Zodiac + radial diagrams); not in cosmological folios.**
 
 ### Evidence
 

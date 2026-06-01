@@ -4,6 +4,36 @@
 
 ---
 
+## Version 7.00 (2026-06-01) — PHASE_742 AZC C759 audit: survives within-folio null, scope-narrowed to the radial scaffold, geometry glosses struck
+
+### Summary
+Audit of C759 ("AZC position R/S/C determines vocabulary"; chi²=112.6, p<0.001, V=0.208, pooled, no within-folio control), triggered by this session's AZC notation-provenance work (`context/DATA/AZC_NOTATION_PROVENANCE.md`). Expert-reconciled design (expert-advisor + lean-expert differential check before running).
+
+### Core finding
+- **Statistical core SURVIVES** a within-folio position-label permutation null (preserves folio vocab + per-folio position counts, destroys only the position↔prefix link): V_obs=0.152 (full binning) / 0.181 (prefixed-only) vs within-folio null 95th=0.123/0.135, **one-sided p=0.0001, B=10000**. Position carries vocabulary information beyond folio composition — **NOT** folio-composition shadow.
+- **Differential check resolved:** expert-advisor predicted folio-shadow demotion (citing C760 folio-private vocab); lean-expert (numbers only) said ~50/50 leaning survival. Survival won → the demotion prior was interpretation-carried. We pre-registered and did not pre-commit.
+- **Scope narrowed:** per-folio (each vs its own null) only **8/17** multi-position folios show the effect — **7 Zodiac + f68r3 (radial Sun); cosmological f69r/f67v2 NULL (0/2)**. Pooled V (0.152) is *below* per-folio Vs (0.26–0.36): folios carry different position→vocab directions → **no single universal profile**. The effect tracks the regular radial-medallion scaffold (cf. C433/C434), not AZC universally.
+
+### Dispositions
+- **C759** — statistical core KEPT (Tier 2, annotated + sharpened to radial-scaffold-specific). Physical glosses "S=spoke/nymph, C=center, R=ring" **STRUCK (Tier 3→4)** — they contradict the verified f69r geometry (R=radii, **C=outer ring, S=inner ring, W=center**); placement letters are per-folio parse artifacts. The pooled "S=ok+ot=monitoring / C=ch=control" functional reading **withdrawn** (dilution artifact on scrambled glosses).
+- No new constraint; total unchanged at 2059.
+
+### Provenance (prior, same session)
+- New DATA doc `context/DATA/AZC_NOTATION_PROVENANCE.md` + f69r S/C-swap resolution (commit a150819): the TSV `placement` letter ≠ the IVTFF locus letter (parse remaps `@Cc`→S, `@L0`→C/W by role); f69r ring order resolved against the IVTFF primary source (C=outer, S=inner).
+
+### Changes
+| File | Change |
+|------|--------|
+| `context/CLAIMS/C759_azc_position_vocabulary.md` | Audit banner; status → SHARPENED + glosses STRUCK |
+| `context/CLAIMS/INDEX.md` | C759 row annotated; total line → v7.00 |
+| `phases/PHASE_742_AZC_C759_AUDIT/` | INDEX + script + result JSON |
+| `CLAUDE.md` | Version 7.00; phases 742 |
+
+### Follow-ons opened (not yet run)
+Exposed-class sweep with the same within-folio machinery: **C496** (S=nymph-adjacent o-bias), **C457** (S=boundary), **C904** (S-zone -ry), **C312** — each pins a physical gloss to a cross-folio placement letter. Plus a **C434** order-provenance check (clock geometry vs `line_number`) and a **W-census** (C759 excluded W).
+
+---
+
 ## Version 6.99 (2026-06-01) — PHASE_740 Currier B macro-eigenstructure: dimensionality + no-cyclic-mode (+ the characterization echo-wall)
 
 ### Summary

@@ -1,0 +1,105 @@
+{
+  "constraint": "C759",
+  "phase": "PHASE_742_AZC_C759_AUDIT",
+  "N_tokens": 2456,
+  "position_counts": {
+    "R": 1326,
+    "S": 501,
+    "C": 629
+  },
+  "null": "within-folio position-label permutation (no replacement), prefix fixed; one-sided V_obs>95th",
+  "B": 10000,
+  "seed": 0,
+  "C759_reported_V": 0.208,
+  "full_binning": {
+    "V_obs": 0.1519,
+    "null_mean": 0.1101,
+    "p95": 0.1226,
+    "p975": 0.1252,
+    "p_one_sided": 0.0001,
+    "verdict": "SURVIVE"
+  },
+  "prefixed_only_binning": {
+    "V_obs": 0.1809,
+    "null_mean": 0.1223,
+    "p95": 0.1349,
+    "p975": 0.1376,
+    "p_one_sided": 0.0001,
+    "verdict": "SURVIVE"
+  },
+  "n_folios_total": 26,
+  "n_folios_multi_position": 17,
+  "per_folio_vs_own_null": {
+    "f67r1": {
+      "V": 0.161,
+      "p": 0.407
+    },
+    "f67v2": {
+      "V": 0.266,
+      "p": 0.703
+    },
+    "f68r3": {
+      "V": 0.297,
+      "p": 0.009
+    },
+    "f68v2": {
+      "V": 0.337,
+      "p": 0.419
+    },
+    "f69r": {
+      "V": 0.23,
+      "p": 0.387
+    },
+    "f70v2": {
+      "V": 0.305,
+      "p": 0.014
+    },
+    "f70v1": {
+      "V": 0.321,
+      "p": 0.005
+    },
+    "f71r": {
+      "V": 0.261,
+      "p": 0.053
+    },
+    "f71v": {
+      "V": 0.082,
+      "p": 0.974
+    },
+    "f72r1": {
+      "V": 0.169,
+      "p": 0.427
+    },
+    "f72r2": {
+      "V": 0.316,
+      "p": 0.001
+    },
+    "f72r3": {
+      "V": 0.337,
+      "p": 0.0
+    },
+    "f72v3": {
+      "V": 0.203,
+      "p": 0.171
+    },
+    "f72v2": {
+      "V": 0.29,
+      "p": 0.008
+    },
+    "f72v1": {
+      "V": 0.328,
+      "p": 0.001
+    },
+    "f73r": {
+      "V": 0.362,
+      "p": 0.0
+    },
+    "f73v": {
+      "V": 0.196,
+      "p": 0.279
+    }
+  },
+  "per_folio_n_tested": 17,
+  "per_folio_n_sig_p05": 8,
+  "headline_verdict": "SURVIVE"
+}

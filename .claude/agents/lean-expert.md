@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-01 09:36
+**Generated:** 2026-06-01 13:08
 **Version:** FROZEN STATE (2059 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -667,7 +667,7 @@ C755	**[DEMOTED Tier 2→3 2026-05-19]** Originally "A Folio Coverage Homogeneit
 C756	**[DEMOTED Tier 2→3 2026-05-19]** Originally "Coverage Optimization Confirmed" Tier 2. 11× pairwise similarity likely has broken-baseline issue (random PP vocab doesn't represent meaningful alternative). Hub-MIDDLE structural observation (25 MIDDLEs in >50% folios, 100% PP) survives as descriptive. "Coverage optimization confirmed" headline inherits from retracted C476. Batch-sweep `phases/BATCH_SWEEP_2026_01_12/`.	3	A
 C757	**AZC Zero Kernel/Link** (0 KERNEL, 0 LINK; ~50% OPERATIONAL, ~50% UN; AZC is outside execution layer)	2	AZC
 C758	**P-Text Currier A Identity** (PREFIX cosine 0.97 to A, 0.74 to diagram; 19.5% MIDDLE overlap with same-folio diagram)	2	AZC
-C759	**AZC Position-Vocabulary Correlation**	2	AZC
+C759	**AZC Position-Vocabulary Correlation** (position affects PREFIX) — **[PHASE_742 AUDIT: survives within-folio null, V_obs=0.152/0.181 vs 95th=0.123/0.135, p=0.0001 B=10000; NOT folio-shadow. SHARPENED: effect is radial-scaffold-specific — 8/17 folios (7 Zodiac + radial Sun f68r3), cosmological f69r/f67v2 NULL; no universal profile (pooled V < per-folio V). GLOSSES STRUCK Tier3→4: "S=spoke/nymph,C=center,R=ring" contradict verified f69r geometry (C=outer,S=inner,W=center); "S=monitoring/C=control" reading withdrawn. See DATA/AZC_NOTATION_PROVENANCE.md]**	2	AZC
 C760	**AZC Folio Vocabulary Specialization** (70% MIDDLEs exclusive to 1 folio; 13 universal MIDDLEs; no family pattern)	2	AZC
 C761	**AZC Family B-Coverage Redundancy**	2	AZC
 C762	**Cross-System Single-Char Primitive Overlap** (f49v/f76r/f57v share 4 chars d,k,o,r - all C085 primitives; spans PREFIX/MIDDLE/SUFFIX positions)	2	GLOBAL
