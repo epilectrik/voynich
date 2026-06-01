@@ -1,6 +1,20 @@
 # C457: HT Boundary Preference in Zodiac AZC
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** HT / AZC
+**Tier:** 2 | **Status:** CONFIRMED (corrected N + within-folio null) | **Scope:** HT / AZC
+
+> **[PHASE_742 SWEEP AUDIT — 2026-06-01]** Two corrections, verdict UPHELD.
+> **(1) Transcriber-filter bug:** the reported N=2,952 (R=1,840, S=1,112) is an
+> **ALL-TRANSCRIBER** count (pre-v2.42 H-filter bug; C457 dated 2026-01-10). Correct
+> H-only: **R+S=1,329 (R=963, S=366)**. **(2) No within-folio control** in the original
+> pooled chi². Re-tested both: at correct H-only N the effect **reproduces** (R HT≈29.1%,
+> S HT≈41.7% — matches the original rates) AND **survives a within-folio position-label
+> null**: V_obs=0.121 vs within-folio null 95th=0.055, **one-sided p=0.0001, B=10000**;
+> **8/12 zodiac folios** independently show S HT-rate > R. **NOT folio-shadow → CONFIRMED.**
+> **Geometry note:** C457's R=radial / S=sector gloss is defensible for *zodiac medallions*
+> (unlike C759's flatly-wrong "C=center", which was struck) — but S's physical identity is
+> **not independently verified off f69r** (the only verified folio, and it is cosmological),
+> and "boundary/interior" remains the interpretive layer. See `DATA/AZC_NOTATION_PROVENANCE.md`.
+> Script: `phases/PHASE_742_AZC_C759_AUDIT/scripts/sweep_c457_c904_within_folio.py`.
 
 ---
 

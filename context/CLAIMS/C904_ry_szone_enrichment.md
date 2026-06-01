@@ -1,5 +1,13 @@
 # C904: -ry Suffix S-Zone Enrichment
 
+> **[PHASE_742 SWEEP AUDIT — 2026-06-01]** CONFIRMED but FRAGILE. H-only re-run: **20** -ry
+> AZC tokens (orig 39 — likely pre-H-filter inflated, cf. C457), **12/20 (60%)** in S-zone vs
+> 15.3% baseline. Survives a within-folio position-label null (obs -ry-in-S frac=0.60 vs null
+> 95th=0.40, **p=0.0008, B=10000**) → not folio-shadow. **But N=20 is small** — treat as
+> suggestive, not robust. The "S=output-capture/commitment" reading leans on C435's S-zone gloss
+> (see `DATA/AZC_NOTATION_PROVENANCE.md`: S physical identity unverified off f69r).
+> Script: `phases/PHASE_742_AZC_C759_AUDIT/scripts/sweep_c457_c904_within_folio.py`.
+
 ## Statement
 
 In AZC diagrams, tokens with -ry suffix show 3.18x enrichment in S-zones (48.7% vs 15.3% baseline).

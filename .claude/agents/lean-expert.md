@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-01 13:08
+**Generated:** 2026-06-01 13:15
 **Version:** FROZEN STATE (2059 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -370,7 +370,7 @@ C453	HT Adjacency Clustering (1.69x enrichment, stronger than C424)	2	HT/GLOBAL
 C454	**AZC-B Adjacency Coupling FALSIFIED**	1	AZC/B
 C455	**AZC Simple Cycle Topology FALSIFIED** (cycle_rank=5, CV=0.817)	1	AZC
 C456	**AZC Interleaved Spiral Topology** (R-S-R-S alternation)	2	AZC
-C457	**HT Boundary Preference in Zodiac AZC** (S=39.7% > R=29.5%, V=0.105)	2	HT/AZC
+C457	**HT Boundary Preference in Zodiac AZC** (S>R HT-rate) — **[PHASE_742 AUDIT: orig N=2952 was ALL-TRANSCRIBER (H-filter bug); correct H-only N=1329, rates stable (R 29.1%, S 41.7%); SURVIVES within-folio null V=0.121 vs 95th=0.055 p=0.0001, 8/12 folios S>R → CONFIRMED at corrected N. R=radial/S=sector gloss kept (zodiac-defensible, S unverified off f69r)]**	2	HT/AZC
 C458	**Execution Design Clamp vs Recovery Freedom** (CV 0.04-0.11 vs 0.72-0.82)	2	B
 C459	**HT Anticipatory Compensation**	2	HT/B
 C460	AZC Entry Orientation Effect	2	HT/AZC
@@ -807,7 +807,7 @@ C900	**AZC P-Text Annotation Pages** (f65v/f66v are 100% P-text, linguistically 
 C901	**Extended e Stability Gradient** (e→ee→eee→eeee forms stability depth continuum; quadruple-e in 11 folios concentrated late Currier A; odeeeey = maximum observed)	2	A
 C902	**Late Currier A Register** (f100-f102 show distinct characteristics: p/f-domain concentration, extended vowels, short lines, MONSTERS; suggests appendix/addendum content)	2	A
 C903	**Prefix Rarity Gradient** (Common ch/sh/qo vs rare ct vs very-rare qk (9 folios) vs extremely-rare qy (3 folios); rarity correlates with specialization)	2	A
-C904	**-ry Suffix S-Zone Enrichment (3.18x; cross-validates C839 OUTPUT marker)**	2	AZC
+C904	**-ry Suffix S-Zone Enrichment (3.18x; cross-validates C839 OUTPUT marker)** — **[PHASE_742 AUDIT: H-only N=20 (orig 39 likely inflated), 12/20 in S; SURVIVES within-folio null p=0.0008 → CONFIRMED but FRAGILE (small N)]**	2	AZC
 C905	**FL_TERMINAL Early-Line Concentration**	2	B
 C906	**Vowel Primitive Suffix Saturation** (Vowel MIDDLEs a/e/o + END-class suffix = closed compound that suppresses further suffixation; e→98.3% suffix, edy→0.4% suffix; explains 38% of unmapped tokens)	2	GLOBAL
 C907	**-hy Consonant Cluster Infrastructure** (Tokens with -hy suffix form formulaic class: ch/sh prefix + consonant cluster MIDDLE + hy; 910 tokens (3.9%); connector hypothesis FALSIFIED - 0.99x boundary enrichment)	4	B

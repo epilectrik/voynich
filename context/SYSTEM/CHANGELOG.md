@@ -29,8 +29,12 @@ Audit of C759 ("AZC position R/S/C determines vocabulary"; chi²=112.6, p<0.001,
 | `phases/PHASE_742_AZC_C759_AUDIT/` | INDEX + script + result JSON |
 | `CLAUDE.md` | Version 7.00; phases 742 |
 
-### Follow-ons opened (not yet run)
-Exposed-class sweep with the same within-folio machinery: **C496** (S=nymph-adjacent o-bias), **C457** (S=boundary), **C904** (S-zone -ry), **C312** — each pins a physical gloss to a cross-folio placement letter. Plus a **C434** order-provenance check (clock geometry vs `line_number`) and a **W-census** (C759 excluded W).
+### Exposed-class sweep (run same session)
+Same within-folio machinery applied to the constraints that pin a physical gloss to a cross-folio placement letter. **C312 does not exist (expert mis-cite, dropped).**
+- **C457** (HT S>R, zodiac) — **CONFIRMED at corrected N.** Found a transcriber-filter bug (orig N=2952 was ALL-TRANSCRIBER; correct H-only N=1329); effect reproduces (R 29.1%/S 41.7% HT) AND survives a within-folio null the original lacked (V=0.121 vs 95th=0.055, p=0.0001; 8/12 folios S>R). Geometry gloss R=radial/S=sector kept (zodiac-defensible; S unverified off f69r).
+- **C904** (-ry S-zone) — **CONFIRMED but FRAGILE.** H-only N=20 (orig 39, likely same inflation); 12/20 in S; survives within-folio null (p=0.0008); small N.
+- **Meta-result: the folio-shadow hypothesis is REJECTED for the statistical cores** — C759, C457, C904 all survive. AZC within-folio position structure is real and pervasive, not a pooling artifact (strengthens C433/C434/C456). What's actually wrong in this class is case-specific scrambled GLOSSES (C759 yes, C457 mostly no) + pre-2026-02 transcriber-filter inflation (cosmetic; rates stable).
+- **Still open:** C496 (no reproducible script — needs reconstruction), C434 (clock-vs-`line_number` order-provenance check), W-census.
 
 ---
 

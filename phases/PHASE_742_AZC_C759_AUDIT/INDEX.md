@@ -67,9 +67,34 @@ position→prefix directions, so pooling dilutes. There is no single universal p
 **Gate:** survival is a null-driven measurement (self-clearing); the scope-narrowing is descriptive (reading
 which folios); the gloss-strike is primary-source-grounded. No echo-class verdict — no external-test requirement.
 
-## Follow-ons opened (not yet run)
-- Exposed-class sweep (same within-folio machinery): **C496** (S=nymph-adjacent o-bias), **C457** (S=boundary),
-  **C904** (S-zone -ry), **C312** — all attach a physical gloss to a cross-folio placement letter.
-- **C434** "strict forward ordering" — was "forward" defined by clock geometry or by `line_number`? (provenance check)
+## Exposed-class sweep (RUN 2026-06-01)
+
+Tested the constraints the experts flagged as attaching a physical gloss to a cross-folio placement
+letter, same within-folio machinery. Script: `scripts/sweep_c457_c904_within_folio.py`; result:
+`results/sweep_c457_c904.json`. **C312 does not exist** (expert mis-cite, verified — dropped).
+
+| Constraint | Claim | Within-folio null verdict | Note |
+|---|---|---|---|
+| **C457** (HT S>R) | HT prefers S over R, zodiac | **SURVIVES** V_obs=0.121 vs 95th=0.055, p=0.0001; 8/12 folios S>R | **Filter bug found:** orig N=2952 was ALL-TRANSCRIBER; correct H-only N=1329. Effect reproduces + survives. CONFIRMED at corrected N. |
+| **C904** (-ry S-zone) | -ry enriched in S, 3.18× | **SURVIVES** obs 0.60 vs 95th 0.40, p=0.0008 | N=20 (orig 39, likely same inflation). FRAGILE — suggestive not robust. |
+| **C496** (o-prefix 75% nymph-S) | — | **NOT RUN** | No reproducible script/data in repo (title-only, ⊂ azc_system). Needs reconstruction before audit. |
+| **C434** (R strict forward order) | — | **NOT RUN** | Provenance check (clock geometry vs `line_number`), not a null test. Code-archaeology follow-up. |
+
+**Meta-result — the folio-shadow hypothesis is REJECTED for the statistical cores.** C759, C457, C904
+all SURVIVE the within-folio null: AZC within-folio position structure is **real and pervasive**, not a
+pooling artifact. What is actually wrong in this class is narrower and case-specific:
+1. **Scrambled geometry GLOSSES** — case-by-case, not uniform. C759's "C=center" was flatly wrong (struck);
+   C457's "R=radial/S=sector" is defensible for zodiac (kept, with S unverified-off-f69r caveat).
+2. **Pre-2026-02 transcriber-filter inflation** (C457 all-transcriber N; C904 likely) — cosmetic, rates/effects stable.
+The associations themselves are robust. This *strengthens* the AZC-position-grammar picture (cf. C433/C434/C456).
+
+## Dispositions (sweep)
+- **C457** — CONFIRMED, annotated: corrected H-only N + added within-folio null (p=0.0001). Gloss kept (zodiac-defensible).
+- **C904** — CONFIRMED-but-fragile, annotated: H-only N=20, survives but small.
+- No demotions, no new constraints.
+
+## Follow-ons still open (not run)
+- **C496** — reconstruct the original o-prefix/nymph-S computation, then audit (no script exists).
+- **C434** — order-provenance check: was "strict forward ordering" computed on clock geometry or `line_number`? (Discovery C bites only if file-order.)
 - **W-census** — C759 excluded W (center) entirely; W may be a distinct register.
 - **Inv 2 (angular reading order):** gate first — needs ≥12 items/folio × ≥10–15 folios for Stouffer power (lean); likely under-powered. Defer.

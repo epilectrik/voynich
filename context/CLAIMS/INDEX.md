@@ -231,7 +231,7 @@ Every new constraint MUST specify system scope:
 | **435** | **S/R Positional Division (boundary/interior)** | 2 | AZC | ⊂ azc_system |
 | **436** | **Dual Rigidity: uniform vs varied scaffolds** | 2 | AZC | ⊂ azc_system |
 | **496** | **Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)** | 2 | AZC | ⊂ azc_system |
-| **904** | **-ry Suffix S-Zone Enrichment (3.18x; cross-validates C839 OUTPUT marker)** | 2 | AZC | → [C904_ry_szone_enrichment.md](C904_ry_szone_enrichment.md) |
+| **904** | **-ry Suffix S-Zone Enrichment (3.18x; cross-validates C839 OUTPUT marker)** — **[PHASE_742 AUDIT: H-only N=20 (orig 39 likely inflated), 12/20 in S; SURVIVES within-folio null p=0.0008 → CONFIRMED but FRAGILE (small N)]** | 2 | AZC | → [C904_ry_szone_enrichment.md](C904_ry_szone_enrichment.md) |
 
 ---
 
@@ -526,7 +526,7 @@ Every new constraint MUST specify system scope:
 | 451 | HT System Stratification (A > AZC > B density) | 2 | HT/GLOBAL | -> [C451_ht_system_stratification.md](C451_ht_system_stratification.md) |
 | 452 | HT Unified Prefix Vocabulary (Jaccard >= 0.947) | 2 | HT/GLOBAL | -> [C452_ht_unified_vocabulary.md](C452_ht_unified_vocabulary.md) |
 | 453 | HT Adjacency Clustering (1.69x enrichment, stronger than C424) | 2 | HT/GLOBAL | -> [C453_ht_adjacency_clustering.md](C453_ht_adjacency_clustering.md) |
-| **457** | **HT Boundary Preference in Zodiac AZC** (S=39.7% > R=29.5%, V=0.105) | 2 | HT/AZC | -> [C457_ht_boundary_preference.md](C457_ht_boundary_preference.md) |
+| **457** | **HT Boundary Preference in Zodiac AZC** (S>R HT-rate) — **[PHASE_742 AUDIT: orig N=2952 was ALL-TRANSCRIBER (H-filter bug); correct H-only N=1329, rates stable (R 29.1%, S 41.7%); SURVIVES within-folio null V=0.121 vs 95th=0.055 p=0.0001, 8/12 folios S>R → CONFIRMED at corrected N. R=radial/S=sector gloss kept (zodiac-defensible, S unverified off f69r)]** | 2 | HT/AZC | -> [C457_ht_boundary_preference.md](C457_ht_boundary_preference.md) |
 | **477** | **HT Tail Correlation** (r=0.504, p=0.0045, R²=0.28) | 2 | HT/A | -> [C477_ht_tail_correlation.md](C477_ht_tail_correlation.md) |
 
 ---
