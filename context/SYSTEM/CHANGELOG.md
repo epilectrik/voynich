@@ -4,6 +4,27 @@
 
 ---
 
+## Version 7.04 (2026-06-01) — PHASE_743 AZC forward probes (DOCUMENTED, no new constraint): ring sequence-vs-set + label novelty
+
+### Summary
+Forward investigation off the PHASE_742 cleaned foundation, using the one validated token order (within-ring angular). Two probes; **no new constraint** — both resolved into the existing characterization (C305/C441/C326/C525/C760). Refinement notes added to C305 and C525.
+
+### Findings
+- **Ring sequence-vs-set: INCONCLUSIVE.** No detectable MIDDLE-identity sequence (underpowered — base rate 0.034); pooled PREFIX lag-1 p=0.0435 one-sided **fails multiple-comparison correction**; drift none. No clean verdict; the first-pass "rings are SETS" was overstated off the lowest-power feature.
+- **Label vs ring-text novelty: small residual, documented not registered.** `neither`-inventory (novel) MIDDLEs: labels 15.2% vs ring-text 8.1% (raw gap +0.071, within-folio p=0.0002). **Frequency-matched control (decisive gate): +0.071 → +0.025 (CI [+0.008,+0.041], 11/12 folios) — ~65% of the gap was a frequency confound.** The small surviving residual is **C525-adjacent** (label vocabulary stratification). Documented as a C305/C525 refinement; not separately registered (user decision).
+
+### Refinements registered (notes, not new constraints)
+- **C305:** its "37% line-initial/final" evidence leg STRUCK (locus-length artifact, C435 class); LABELING conclusion stands on section-exclusivity + 65.9%-hapax (order-independent). Labeling re-grounded with a valid within-ring-shuffle test.
+- **C525:** noted the small frequency-matched label>ring novelty residual is consistent/adjacent.
+
+### Methodology
+Three expert-consult rounds, each catching an unearned verdict (floor-vs-discriminator → wrong-cell → frequency-confound). The four AZC forward angles this session (labeling, ring-set, indexing, novelty) **all resolved into the existing framework — AZC is a mature subsystem.** Expert-advisor (interpretive) repeatedly leaned register (framework-fit); lean-expert (rigor) repeatedly showed the verdict wasn't earned. The differential divergence localized the echo each time.
+
+### Changes
+`azc_system.md` (C305 refinement), `INDEX.md` (C525 note), `phases/PHASE_743_AZC_RING_SEQUENCE/` (4 scripts + results + INDEX), `CLAUDE.md` (v7.04; 743 phases). No constraint count change.
+
+---
+
 ## Version 7.03 (2026-06-01) — PHASE_742 C435 RETRACTION: closes the AZC serialization-artifact class (4 retractions)
 
 ### C435 — RETRACTED (Tier 1)

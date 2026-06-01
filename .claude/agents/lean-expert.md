@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-01 14:54
+**Generated:** 2026-06-01 15:50
 **Version:** FROZEN STATE (2056 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -446,7 +446,7 @@ C521	**Kernel Primitive Directional Asymmetry** (one-way valve: e→h=0.00, h→
 C522	**Construction-Execution Layer Independence**	2	B
 C523	**Pharma Label Vocabulary Bifurcation**	2	A
 C524	**Jar Label Morphological Compression** (7.1 vs 6.0 char mean; 5-8 PP atoms per MIDDLE; superstring packing)	2	A
-C525	**Label Morphological Stratification** (o-prefix 50% vs 20% text; qo-prefix ~0% vs 14%; 61% label-only vocabulary; within-group MIDDLE sharing)	3	A
+C525	**Label Morphological Stratification** (o-prefix 50% vs 20% text; qo-prefix ~0% vs 14%; 61% label-only vocabulary; within-group MIDDLE sharing) — **[PHASE_743: a small frequency-matched novel-MIDDLE preference of labels over ring-text (+0.025, 11/12 folios) is consistent with / adjacent to this stratification; documented not separately registered]**	3	A
 C526	**RI Lexical Layer Hypothesis** (609 unique RI as referential lexicon; 87% localized to 1-2 folios; PREFIX/SUFFIX global grammar vs RI extensions as substance anchors)	3	A
 C527	**Suffix-Material Class Correlation**	3	A
 C528	**RI PREFIX Lexical Bifurcation** (334 PREFIX-REQUIRED, 321 PREFIX-FORBIDDEN, 12 optional; 98.2% disjoint; PREFIX attachment lexically determined; section-independent; refines C509.a aggregate rate)	2	A

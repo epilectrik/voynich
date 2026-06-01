@@ -38,10 +38,18 @@ Median 8 tokens/line (vs A=22, B=31). TTR 0.285 (vs A=0.137, B=0.096).
 **Source:** AZC
 
 ### C305 - LABELING Signature
-**Tier:** 2 | **Status:** CLOSED
-AZC-unique vocabulary: 98% section-exclusive, 37% line-initial, 37% line-final, 65.9% hapax. Function = LABELING.
+**Tier:** 2 | **Status:** CLOSED (one evidence leg flagged + refined, PHASE_742/743)
+AZC-unique vocabulary: 98% section-exclusive, ~~37% line-initial, 37% line-final~~, 65.9% hapax. Function = LABELING.
 **P-text note:** Labeling signature includes P-text vocabulary contributions.
 **Source:** AZC-PROBE
+
+> **[PHASE_742/743 refinement]** (a) The "37% line-initial/final" evidence leg is a **locus-length artifact**
+> (line-edge rate = 1/locus-length; same class that retracted C435) — STRUCK; the LABELING conclusion stands on
+> the section-exclusivity + 65.9%-hapax legs (order-independent). (b) PHASE_743 re-grounded the labeling claim
+> with a valid within-ring-shuffle test and decomposed novelty by component: within zodiac folios, label loci (S)
+> retain a **small** residual novel-MIDDLE preference over ring-text (R) at matched frequency (+0.025, CI
+> [+0.008,+0.041], 11/12 folios) — but ~65% of the raw 0.071 gap was a frequency confound, and the residual is
+> **C525-adjacent** (label vocabulary stratification). Documented (PHASE_743), not separately registered.
 
 ---
 

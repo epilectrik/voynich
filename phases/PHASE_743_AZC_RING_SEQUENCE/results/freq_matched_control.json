@@ -1,0 +1,41 @@
+{
+  "raw_gap": 0.071,
+  "stratified": {
+    "1": {
+      "S_n": 71,
+      "S_nov": 0.704,
+      "R_n": 119,
+      "R_nov": 0.597,
+      "gap": 0.108
+    },
+    "2-3": {
+      "S_n": 35,
+      "S_nov": 0.143,
+      "R_n": 51,
+      "R_nov": 0.098,
+      "gap": 0.045
+    },
+    "4-9": {
+      "S_n": 50,
+      "S_nov": 0.0,
+      "R_n": 99,
+      "R_nov": 0.0,
+      "gap": 0.0
+    },
+    "10+": {
+      "S_n": 206,
+      "S_nov": 0.0,
+      "R_n": 667,
+      "R_nov": 0.0,
+      "gap": 0.0
+    }
+  },
+  "freq_matched_gap_median": 0.025,
+  "freq_matched_CI": [
+    0.008,
+    0.041
+  ],
+  "CI_crosses_0": false,
+  "per_folio_S_gt_R": "11/12",
+  "verdict": "SURVIVES_freq_match"
+}

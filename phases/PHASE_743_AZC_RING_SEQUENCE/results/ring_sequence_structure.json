@@ -1,0 +1,34 @@
+{
+  "n_rings": 57,
+  "features": {
+    "prefix": {
+      "feature": "prefix",
+      "n_rings": 57,
+      "mean_obs": 0.1843,
+      "mean_null": 0.1763,
+      "stouffer_z": 1.566,
+      "n_rings_sig": 5
+    },
+    "middle": {
+      "feature": "middle",
+      "n_rings": 57,
+      "mean_obs": 0.0343,
+      "mean_null": 0.0338,
+      "stouffer_z": 0.323,
+      "n_rings_sig": 2
+    },
+    "tclass": {
+      "feature": "tclass",
+      "n_rings": 57,
+      "mean_obs": 0.623,
+      "mean_null": 0.611,
+      "stouffer_z": 1.839,
+      "n_rings_sig": 5
+    }
+  },
+  "drift": {
+    "n_rings": 42,
+    "stouffer_z": -0.911
+  },
+  "verdict": "SET: no within-ring order structure (rings are unordered label-bags)"
+}

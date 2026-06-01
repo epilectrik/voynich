@@ -1,0 +1,23 @@
+{
+  "F1_pooled_prefix": {
+    "obs_rate": 0.2016,
+    "null_mean": 0.1879,
+    "p_one_sided": 0.0435,
+    "n_pairs": 1657,
+    "sig_rings_folios": [
+      "f57v",
+      "f68r3",
+      "f70v2",
+      "f71r",
+      "f72v3"
+    ],
+    "sig_on_C759_active": "2/5"
+  },
+  "F2_neither": {
+    "S_novel": 0.1519,
+    "R_novel": 0.0812,
+    "gap": 0.0707,
+    "p_two_sided": 0.0002,
+    "verdict": "LABELS_MORE_NOVEL"
+  }
+}

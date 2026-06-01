@@ -1,0 +1,33 @@
+{
+  "phase": "PHASE_743",
+  "measure": "MIDDLE in A/B inventory; labels(S) vs ring-text(R), zodiac, within-folio",
+  "A_inv": 999,
+  "B_inv": 1371,
+  "S": {
+    "n": 362,
+    "dist": {
+      "A_only": 0.017,
+      "B_only": 0.064,
+      "both": 0.768,
+      "neither": 0.152
+    },
+    "A_share": 0.785
+  },
+  "R": {
+    "n": 936,
+    "dist": {
+      "A_only": 0.014,
+      "B_only": 0.036,
+      "both": 0.869,
+      "neither": 0.081
+    },
+    "A_share": 0.883
+  },
+  "within_folio": {
+    "V_obs": 0.01,
+    "null_p95": 0.0529,
+    "p_one_sided": 0.7971,
+    "verdict": "NO_DIFFERENCE",
+    "per_folio_S_gt_R": "4/12"
+  }
+}
