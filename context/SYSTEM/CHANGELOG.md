@@ -4,6 +4,32 @@
 
 ---
 
+## Version 7.06 (2026-06-01) — PHASE_744 ZODIAC SEASON-MAP AUDIT: seasonal-cluster retracted (circular label-fitting + iconography contradiction), iconographic map locked
+
+### Trigger
+Pushing the "seasonal operation" idea, the user asked how folios were assigned to seasons — and whether the assignment was in the transcriber notes. It was. Reading the primary-source iconography exposed that the project's seasonal analysis (a) didn't use it, (b) was built circularly, and (c) contradicts it.
+
+### The flaw (two independent failures)
+1. **Circular ("label-fit-to-signal"):** C1684 *selected* the goat-folio season assignment that maximized the signal (chose aries perm_p=0.033 over capricorn 0.220) and reported the optimized value as a diagnostic. C1681 used a "confident-only 7-folio" subset chosen the same way. The un-fitted full-enumeration estimate is **null (C1685, perm_p=0.112)**; multiplicity correction (~3–9 map hypotheses, C1686) pushes C1681's 0.018 to ≈0.05–0.30.
+2. **Iconography contradiction:** the transcriber notes (`ZL_official.txt`) name the signs explicitly — Pisces→Sagittarius, **winterless** (no Capricorn/Aquarius), with month inscriptions ("Mars"/f70v2, "Abril"/f70v1, **"May"**/f71v). C1688 assigned f71v/f72r1 — **Taurus**, "May" written on f71v — to **Winter (Capricorn/Aquarius)**. The 4-season grid the cluster used is structurally impossible (0 winter folios).
+
+### Dispositions (both experts, advisor+lean, converged → RETRACT; gate-exempt: external primary source + documented selection bias)
+- **RETRACTED:** C1681 (SEASONAL_SIGNAL_CONFIRMED — not confirmed; un-fitted null), C1683 (coherence trend — never sig), C1684 (the circular step), C1687 (selection artifact), C1688 (iconography contradiction). [5 retractions]
+- **ANNOTATED:** C1686 — phantom Capricorn/Aquarius framing struck; "≈3 effective groupings" survives as the multiplicity bound.
+- **SURVIVE (nulls):** C1685 (now the headline: seasonal signal null when not cherry-picked, perm_p=0.112), C1682 (thermal-gradient-absent; reinforced by C1681 retraction).
+- **SPLIT:** C1908 / C1913 — the i/d token-PARTITION survives (map-independent, redundant with C1197/C1204/C1205); the SEASONAL enrichment claim STRUCK (pooled a phantom Winter).
+- **UNTOUCHED (map-independent):** C321, C1394, C1519, C1916, C432/C436/C457/C759/C904. C322 stays demoted.
+- **NEW C2068 (Tier 2, primary-source):** the Voynich zodiac is winterless — 12 folios, Pisces→Sagittarius, 10 signs (Aries/Taurus doubled), month inscriptions; no Capricorn/Aquarius.
+
+### Artifacts
+- **`context/DATA/ZODIAC_ICONOGRAPHIC_MAP.md`** — locked ground-truth folio→sign→season map (supersedes any text-inferred map).
+- **New failure pattern "label-fit-to-signal"** → `feedback_label_fit_to_signal.md` (memory). A latent categorical assignment chosen to maximize the statistic, reported as pre-registered; diagnostic = the row names two candidate p-values and reports the better one.
+
+### Counts
+Validated 2056→2052 (−5 retracted, +1 C2068); retracted 12→17. Version 7.06; phases →744.
+
+---
+
 ## Version 7.05 (2026-06-01) — "Is AZC a calendar?" — exclusion re-grounded (artifact reasons retracted), cyclic-frame not-adjudicated, count-test rejected
 
 ### Trigger
