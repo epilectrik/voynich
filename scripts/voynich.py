@@ -1485,6 +1485,13 @@ class CategoryClassifier:
     }
 
     # Human gloss → category (C1250, from middle_dictionary.json 'gloss' field)
+    # WARNING (C2069, PHASE_745): this is a HARDCODED keyword→category dictionary, NOT a
+    # data-discovered partition — the count "8" was never k-tested (same imposed-map class as the
+    # retracted C109 hazard taxonomy, C2060). Category labels are scaffolding, not ground truth:
+    # trust atom-level restatements (C1300 qo/k, C1388 o-STAGING) and the atom-INDEPENDENT axes
+    # (C1250 T4 position / T6 apparatus / T7 within-line MI), NOT category-as-unit claims. The
+    # kernel/atom-conditioned category tests are calibration-circular (C1284). MARKING was ~34%
+    # inflated by a stale d=mark gloss (now corrected to OPERATION below per C1934).
     GLOSS_TO_CATEGORY = {
         'heat': 'THERMAL', 'fire': 'THERMAL', 'cool': 'THERMAL',
         'sustain': 'THERMAL', 'pulse': 'THERMAL', 'steady': 'THERMAL',
@@ -1527,7 +1534,7 @@ class CategoryClassifier:
         'y': 'TRANSITION',                       # end → TRANSITION
         'i': 'STAGING', 'n': 'TRANSITION',       # iterate → STAGING, halt → TRANSITION
         'a': 'TRANSITION', 'm': 'TRANSITION',    # yield → TRANSITION, final → TRANSITION
-        'd': 'MARKING', 't': 'FLOW',             # mark → MARKING, transfer → FLOW
+        'd': 'OPERATION', 't': 'FLOW',           # d: do/execute (C1934 re-gloss; WAS mark→MARKING, stale) → OPERATION; transfer → FLOW
         'c': 'MARKING', 'p': 'MARKING',          # adjust → MARKING, pause → MARKING
         'f': 'MARKING', 's': 'STAGING',           # flag → MARKING, sequence → STAGING
         'g': 'TRANSITION',                        # complete → TRANSITION

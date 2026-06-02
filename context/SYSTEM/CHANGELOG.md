@@ -4,6 +4,31 @@
 
 ---
 
+## Version 7.07 (2026-06-01) — PHASE_745 8-CATEGORY TAXONOMY AUDIT: imposed not discovered (provenance correction), MARKING gloss-contradicted, C1274 demoted
+
+### Trigger
+Generalizing the "inferred-map" failure class (C109 hazard taxonomy, AZC placement, zodiac seasons), the next suspect was the 8 operational atom categories. Both experts converged; **lean read the source code** and confirmed.
+
+### Finding (same class as C109/C2060, lower severity)
+- **IMPOSED, not discovered:** `scripts/voynich.py:1488` `GLOSS_TO_CATEGORY` is a hardcoded English-keyword→category dictionary (heat→THERMAL, watch→MONITORING…); `ATOM_TO_CATEGORY` is derived from it. The C1250 validation ran **no clustering / k-sweep** — "8" was never tested against a data-preferred k. The headline behavioral silhouette is **circular** (features = k/e/h, the *defining* atoms) and the real silhouette is **negative (−0.070)**.
+- **MARKING gloss-contradicted (the ENERGY_OVERSHOOT analog), quantified:** its biggest atom `d` was re-glossed mark→do/execute (C1934), but `ATOM_TO_CATEGORY['d']` was left **stale** at MARKING. Re-vote with the corrected gloss moves **143/425 (34%)** of MARKING MIDDLEs out — **115 → OPERATION** (OPERATION 108→261) — and flips the largest category (MARKING→THERMAL). The boundaries are gloss-fragile, not data-anchored.
+- **Lower severity than C109/zodiac:** C1250 was honestly reported (5/7, naive null rejected), and **three of its passes are atom-INDEPENDENT and survive** — T4 line-position (30×), T6 apparatus-gloss (rho=0.758), T7 within-line MI (z=37.9). The categories carry real behavioral signal on those axes; only the partition's *count/boundaries/labels* are imposed.
+
+### Dispositions (gate-exempt: source-confirmed provenance + named circularity)
+- **NEW C2069** — provenance correction (the taxonomy is keyword-imposed; "8" untested; circular silhouette; MARKING stale-d; atom-independent axes survive; kernel-conditioned tests = calibration).
+- **C1274 DEMOTED 2→3** — THERMAL→B-escape (+0.78) is **k-autocorrelation** (THERMAL≡k/e; qo-escape IS the k-channel, C1300/C1538), not an A→B mechanism. Calibration status (cf. C1284).
+- **C1250 ANNOTATED** — atom-independent passes (T4/T6/T7) load-bearing; silhouette/kernel passes circular.
+- **C1254 ANNOTATED** — enforce its own stratification (only LOCKED+SOLID ~12% validated; ~65% WEAK/o-l-r noise).
+- **C1273 FLAGGED** — "MARKING 27.2%" unreliable (stale-d inflation); recompute with corrected d.
+- **C1284** — already self-flagged "calibration"; no change (the model for how the rest should read).
+- **Code fixed:** `ATOM_TO_CATEGORY['d']` mark→OPERATION (per C1934) + a header warning that the map is imposed scaffolding.
+- **General caveat:** the ~50-constraint category-conditioned cluster — trust atom-level (C1300 qo/k, C1388 o-STAGING, C1305) and atom-independent (position/apparatus/MI) restatements, NOT category-as-unit claims.
+
+### Counts
+Validated 2052→2053 (+C2069); C1274 demoted (demoted 14→15). Version 7.07; phases →745. (No retractions — provenance correction + demotion + annotations, the C2060 pattern.)
+
+---
+
 ## Version 7.06 (2026-06-01) — PHASE_744 ZODIAC SEASON-MAP AUDIT: seasonal-cluster retracted (circular label-fitting + iconography contradiction), iconographic map locked
 
 ### Trigger
