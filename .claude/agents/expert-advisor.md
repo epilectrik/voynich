@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2053 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2054 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2069.
+the highest ID present is C2070.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2053 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2054 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2053 validated constraints are present as canonical one-line claims with tier
+2054 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-01 23:49
-**Version:** FROZEN STATE (2053 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-01 23:59
+**Version:** FROZEN STATE (2054 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -851,13 +851,13 @@ C541	**Hazard Class Enumeration** (only 6/49 classes participate in 17 forbidden
 C542	**Gateway/Terminal Hazard Class Asymmetry** (Class 30 = pure gateway, Class 31 = pure terminal; 100% asymmetry)	2	HAZARD_TOPOLOGY
 C543	**Role Positional Grammar** (FLOW final-biased 0.68, CORE initial-biased 0.45; Class 40 = 69% line-final)	2	POSITIONAL_GRAMMAR
 C544	**ENERGY_OPERATOR Interleaving** (qo/ch-sh families alternate with 2.5x enrichment; Class 33 self-repeat 14.6%)	2	CO-OCCURRENCE
-C545	**REGIME Instruction Class Profiles** (REGIME_3 = 1.83x CORE_CONTROL; REGIME_1 = 52% qo-family; each REGIME has signature classes)	2	REGIME_INTERPRETATION
+C545	**REGIME Instruction Class Profiles** (REGIME_3 = 1.83x CORE_CONTROL; REGIME_1 = 52% qo-family) — **[PHASE_746 (C2070): "REGIME_1=52% qo-family" is on-PC-axis CIRCULAR (qo defines PC1, C1715) → calibration not discovery (cf C1284); per-class "signature classes" over-discretize a soft k=4 gradient (C1712). Reword as gradient-region, not crisp per-class identity.]**	2	REGIME_INTERPRETATION
 C546	**Class 40 Safe Flow Operator** (daly/aly/ary: 4.22 avg distance from hazards, 0% hazard rate, 69% line-final; safe flow alternative)	2	HAZARD_TOPOLOGY
 C547	qo-Chain REGIME_1 Enrichment (1.53x enrichment, 51.4% of chains in REGIME_1; depleted in REGIME_2/3; thermal processing context)	3	B
 C548	**Manuscript-Level Gateway/Terminal Envelope**	2	B
 C549	**qo/ch-sh Interleaving Significance** **[RE-GROUNDED PHASE_738: vindicated as ABOVE-COMPOSITION token-order structure via within-line token-shuffle; above-char-Markov status INDETERMINATE — char-5-gram is window-blind for this token-adjacency claim (C2066), so the PHASE_731 z=5.79 entry is neither necessary nor sufficient. C549 stands on token-shuffle/composition grounds.]**	2	B
 C550	**Role Transition Grammar** (roles self-chain: FREQ 2.38x, FLOW 2.11x, ENERGY 1.35x; FLOW-FREQ bidirectional affinity 1.54-1.73x; ENERGY avoids other roles 0.71-0.80x; phrasal role structure)	2	B
-C551	**Grammar Universality and REGIME Specialization** (67% classes universal; CC most universal 0.836; ENERGY REGIME_1 enriched 1.26-1.48x; FLOW REGIME_1 depleted 0.40-0.63x; thermal/flow anticorrelation)	2	B
+C551	**Grammar Universality and REGIME Specialization** (67% classes universal; CC most universal 0.836; ENERGY REGIME_1 enriched 1.26-1.48x; FLOW REGIME_1 depleted) — **[PHASE_746 (C2070): "67% universality" stands (map-robust). The REGIME-specialization sub-claim is flagged calibration/confound: ENERGY≈k is an on-PC-axis REGIME-defining feature (circular, cf C1284), and REGIME_1≈Bio section (C1712) — so "ENERGY enriched in R1" is largely "Bio is thermal-intensive" relabeled. Needs within-Herbal continuous-PC1 re-test before use.]**	2	B
 C552	**Section-Specific Role Profiles**	2	B
 C553	**BIO-REGIME Energy Independence**	2	B
 C554	**Hazard Class Clustering**	2	B
@@ -1195,7 +1195,7 @@ C906	**Vowel Primitive Suffix Saturation** (Vowel MIDDLEs a/e/o + END-class suff
 C907	**-hy Consonant Cluster Infrastructure** (Tokens with -hy suffix form formulaic class: ch/sh prefix + consonant cluster MIDDLE + hy; 910 tokens (3.9%); connector hypothesis FALSIFIED - 0.99x boundary enrichment)	4	B
 C908	**MIDDLE-Kernel Correlation** (55% of MIDDLEs significantly correlate with kernel profile; k-MIDDLEs→HIGH_K, e-MIDDLEs→HIGH_E, ch/sh→HIGH_H)	2	B
 C909	**Section-Specific MIDDLE Vocabularies** (96% of MIDDLEs section-specific; B=k-energy, H=k+h mixed, S=e-stability, T=h-monitoring, C=infrastructure)	2	B
-C910	**REGIME-MIDDLE Clustering** (67% REGIME-specific; REGIME_4 precision shows extreme enrichment: m=7.24x, ek=3.79x, y=2.57x)	2	B
+C910	**REGIME-MIDDLE Clustering** (67% REGIME-specific; REGIME_4 enrichment m=7.24x, ek=3.79x, y=2.57x) — **[PHASE_746 (C2070): per-class claim on a soft k=4 gradient (over-discretization, C1712); the sharp R4 enrichments (7.24x) may survive as a gradient-region effect (cf C1247), but "67% REGIME-specific" inflates over a partition with ~24% boundary-crossing folios. ek is on-PC-axis (e). Flag pending within-Herbal continuous-PC1 re-test.]**	2	B
 C911	**PREFIX-MIDDLE Compatibility Constraints** (PREFIX selects MIDDLE family; qo→k-family 4.6x, da→infra 12.8x, ch/sh→e-family 2-3x; 102 forbidden combinations)	2	B
 C912	**Precision Vocabulary - dam Token** (m MIDDLE 7.24x in REGIME_4; appears as `dam` 55% of cases; da- anchor prefix + no suffix; precision anchoring marker)	2	B
 C913	**RI Derivational Morphology** (90.9% of RI MIDDLEs contain PP as substring; extensions 71.6% single-char; 53% suffix, 47% prefix; position preferences: 'd' 89% suffix, 'h' 79% prefix, 'q' 100% prefix)	2	A
@@ -1371,7 +1371,7 @@ C1083	**HT Density Is Paragraph-Ordinal Neutral**	2	B
 C1084	**Section-Specific AXM Attractor Ordering** > S(0.687) > C(0.635) > H(0.587); decomposes C1017 baseline; survives REGIME control)	2	B
 C1085	**Bio Section Kernel-Balance Distinctiveness**	2	B
 C1086	**Bio Section Apparatus-Hazard Depletion**	2	B
-C1087	**Bio-REGIME_1 Multidimensional Divergence**	2	B
+C1087	**Bio-REGIME_1 Multidimensional Divergence** (6/8 dims sig within R1; LINK 0.63% vs 2.81%; AXM self 0.754 vs 0.677) — **[PHASE_746 (C2070): this IS the section-confound made explicit — REGIME_1≈Bio (C1712), and the constraint itself notes it "explains C1048 LOO R2=0.754" (REGIME-predictiveness concentrated in the Bio cell). Read as a SECTION (Bio) effect, not an independent REGIME effect. LINK/AXM dims are off-PC-axis so the divergence is real, but it is a Bio-section divergence aliased as REGIME_1.]**	2	B
 C1099	**Bridge Density Section Gradient**	2	GLOBAL
 C1102	**Bridge Density REGIME Dependence**	2	GLOBAL
 C1103	**REGIME-Bridge Density Is Section Confound**	2	GLOBAL
@@ -2290,6 +2290,7 @@ C2066	**The char-5-gram null has a length-confounded WINDOW-BLINDNESS: transitio
 C2067	**Currier B class-transition operator's above-Markov slow eigenstructure is ≥2-dimensional, with no genuine cyclic mode (extends C2061).** Under the SAME raw-49-operator / per-synth-own-shuffle 5-gram null as C2061 (which tested λ2 only): BOTH λ2 (+0.206, excess z=+2.5, reproduces C2061's 0.206 exactly) AND λ3 (−0.134, excess z=+4.4 — sharper than λ2) survive above-Markov; **λ4 (+0.088) is MARGINAL and NOT claimed**. The slow spectrum contains **NO genuine cyclic/rotational eigenmode**: complex pairs (~12-step) are 5-gram artifacts, and the recurrence curve has no periodic peak. **SCOPE — measurement of eigenstructure DIMENSIONALITY only:** (a) the modes are DISTRIBUTED (C2065, participation ratio 28.8) and NOT carried by a recoverable class/token vocabulary — per-layer carrier attribution was REFUTED (frequency-confounded ablation; frequency control run on the wrong vector; contradicts C2065); (b) WHAT the modes represent is NOT registered — λ2 loads on general token LENGTH (the e-correlation is length-collinearity, NOT e-specific; do not read as an e-depth/thermal eigen-signal, protects C1225), λ3 loads cleanly on h-content (+0.49); these re-derive C1430/C089 and are held echo (C171, framework-as-null); (c) the eigenstructure is a POOLED-corpus property and does NOT decompose to sections at current N (per-section subspaces degenerate/non-reproducible). The no-cyclic-mode result + paragraph/line independence (C1399/C1400/C1429) is consistent with a forward *specification* rather than a temporal *trace*, but that reading re-derives the independence results and is NOT registered as a new claim. **References:** C2061, C2062, C2065, C976, C977, C978, C1010, C1225, C610, C740, C1430, C089, C1399.	2	eigenstructure_geq2_dimensional, lambda3_above_markov_z4.4, lambda4_marginal_not_claimed, no_cyclic_eigenmode, rotation_is_5gram_artifact, recurrence_no_periodic_peak, distributed_C2065, carrier_attribution_refuted_freq_confound, pooled_not_per_section, meaning_is_echo_not_registered, extends_C2061, B
 C2068	**The Voynich zodiac is WINTERLESS (primary-source structural fact).** The 12 zodiac folios span **Pisces → Sagittarius** — f70v2=Pisces, f70v1/f71r=Aries (dark/light), f71v/f72r1=Taurus (light/dark), f72r2=Gemini, f72r3=Cancer, f72v3=Leo, f72v2=Virgo, f72v1=Libra, f73r=Scorpius, f73v=Sagittarius — 10 distinct signs (Aries & Taurus each doubled), ~30 nymphs each, with Roman-alphabet month inscriptions on the pages ("Mars"/March f70v2, "Abril"/April f70v1, "May" f71v). **Capricorn and Aquarius (mid-winter, ≈Dec 22–Feb 18) are ABSENT.** Whether lost (missing folios) or never encoded (spring-equinox year-start) is unresolved. Sign IDs are explicit in the transcriber notes (`data/transcriptions/reference/ZL_official.txt`); map locked in `context/DATA/ZODIAC_ICONOGRAPHIC_MAP.md`. **A balanced 4-season analysis is structurally impossible (0 winter folios, spring-heavy).** This is the standing refutation of phantom-winter season maps and the ground truth that retracted C1681/C1683/C1684/C1687/C1688 (PHASE_744). **References:** C2068 supersedes the inferred map of C1681-C1688; C432 (subscripts track multi-ring geometry), C321.	2	zodiac_winterless, pisces_to_sagittarius, 10_signs_aries_taurus_doubled, month_inscriptions_primary_source, no_capricorn_aquarius, four_season_grid_impossible, ground_truth_locked, retracts_C1681_cluster, AZC
 C2069	**The 8-category atom taxonomy (THERMAL/TRANSITION/CONTAINMENT/MARKING/FLOW/OPERATION/MONITORING/STAGING) is keyword-IMPOSED, not data-discovered (provenance correction; same class as C109/C2060).** Source-confirmed: `scripts/voynich.py:1488` is a hardcoded English-keyword→category dictionary (heat→THERMAL, watch→MONITORING…); the C1250 validation ran NO clustering/k-sweep — **"8" was never tested against a data-preferred k**, and the headline behavioral silhouette is CIRCULAR (features = k/e/h, the *defining* atoms) with real silhouette **negative (−0.070)**. **MARKING is gloss-contradicted (the ENERGY_OVERSHOOT analog):** its biggest atom `d` was re-glossed mark→do/execute (C1934) but `ATOM_TO_CATEGORY['d']` was left stale at MARKING; correcting it (PHASE_745) moves **143/425 (34%) of MARKING MIDDLEs out, 115→OPERATION** (OPERATION 108→261), and flips the largest category (MARKING→THERMAL). The boundaries are gloss-fragile, not data-anchored. **What survives:** the atom-INDEPENDENT axes are the real signal — C1250 T4 line-position (30.5×), T6 apparatus-gloss, T7 within-line MI — these don't use the defining atoms; and atom-level restatements (C1300 qo/k, C1388 o-STAGING, C1305 MIDDLE-determines-category). **What's circular/calibration:** kernel/atom-conditioned category tests (C1284 self-flags this; C1274 demoted — see below). Code fixed (d→OPERATION) + flagged. **Disposition:** category labels are imposed scaffolding; trust atom-level + atom-independent claims, not category-as-unit claims. **References:** C2060 (sibling hazard-taxonomy audit), C1250/C1254/C1284/C1274, C1934 (d re-gloss), C1388.	2	category_taxonomy_imposed_not_discovered, hardcoded_keyword_dict, k8_never_tested, silhouette_circular_negative, MARKING_gloss_contradicted_stale_d, d_regloss_C1934_not_propagated, atom_independent_axes_survive, kernel_conditioned_is_calibration, same_class_as_C2060, B
+C2070	**REGIME-conditioning discipline (extends C1712; lower-severity than the imposed-map audits).** REGIME is data-derived (K-means, C179) and bootstrap-stable (ARI=0.76, C1714) — NOT imposed — but it is a SOFT gradient (C1712: k=2 not above null, k=4 excess only +0.047) with two downstream hazards the conditioned cluster (~50 constraints) under-controls: **(1) SECTION-CONFOUND** — the dominant (k=2) REGIME split IS Bio-vs-non-Bio section (C1712), and REGIME adds ~0 PREFIX variance WITHIN section (C1808/C1809: Herbal 1/14, Stars 3/14); so REGIME effects carried by REGIME_1 (≈Bio) need within-section re-test. **(2) ON-PC-AXIS CIRCULARITY** (NEW, not previously flagged) — REGIME is defined by 22 features incl. PC1=qo/k/headless, PC2=suffix/MIDDLE-length/e (C1715); any REGIME-conditioned test ON those features (qo/k/e/headless/suffix/MIDDLE-length) is CALIBRATION not discovery, exactly the C1284/C1291 kernel-category circularity. **Synthesis:** REGIME / Bio-vs-non-Bio section / PREFIX-composition are three views of ONE entangled soft axis (C1712+C1404+C1715+C1812) — "REGIME effect" vs "section effect" vs "PREFIX-composition effect" is often a labeling choice. **Discipline:** a REGIME claim counts as a genuine REGIME effect only if it (a) survives WITHIN-SECTION (esp. within-Herbal) and (b) is OFF the PC-defining axes; report as continuous gradient, not 4 crisp classes (over-discretization). **Survivors (immune):** within-section-replicated effects C1871/C1872/C1806/C1873/C1890/C1713; REGIME-invariant nulls C821/C822/C979/C602/C688 (conservative). **Already self-flagged:** C1103/C1111/C1292/C1055/C1116. **Dispositions (sub-claim annotations, NO full demotions — gate: no demotion without the within-Herbal test):** C551/C545/C910/C1087 ANNOTATED — their REGIME-specialization *sub-claims* flagged calibration (on-PC-axis: qo/ENERGY/MIDDLE-length) and/or section-confound (R1≈Bio) and/or over-discretized (per-class on a soft partition); their map-robust headlines (e.g. C551 "67% grammar universality") stand. C604 consistent with the entangled-axis (a decomposition, no over-claim). Section-confound suspects flagged pending within-Herbal continuous-PC1 re-test (the required adversarial step; C1808 predetermines the PREFIX ones). **References:** C1712, C179, C1404, C1715, C1808, C1284, C1871, C1872, C1713.	2	regime_soft_gradient_extends_C1712, section_confound_k2_is_section, on_pc_axis_circularity_NEW, entangled_axis_regime_section_prefix, within_section_survival_required, over_discretization_use_gradient, data_derived_not_imposed_lower_severity, B
 
 ---
 

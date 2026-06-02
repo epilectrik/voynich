@@ -4,6 +4,33 @@
 
 ---
 
+## Version 7.08 (2026-06-01) — PHASE_746 REGIME CONDITIONING AUDIT: discipline corollary (C2070), no retractions
+
+### Trigger
+Last big conditioning variable in the inferred/soft-map sweep. **Lower severity** than the prior four: REGIME is data-derived (K-means, C179) and bootstrap-stable (ARI=0.76, C1714) — NOT imposed — and C1712 already documents the softness. Both experts agreed: right-size to a corollary + targeted annotations, no sweep, no retractions.
+
+### Finding (extends C1712)
+The ~50-constraint REGIME-conditioned cluster under-controls two hazards:
+1. **Section-confound:** the dominant (k=2) REGIME split IS Bio-vs-non-Bio section (C1712), and REGIME adds ~0 PREFIX variance within-section (C1808/C1809: Herbal 1/14, Stars 3/14). REGIME effects carried by REGIME_1 (≈Bio) are section-suspect.
+2. **On-PC-axis circularity (NEW, not previously flagged):** REGIME is defined by 22 features incl. PC1=qo/k/headless, PC2=suffix/MIDDLE-length/e (C1715); any REGIME-conditioned test ON those features is calibration not discovery — the exact C1284/C1291 kernel-category circularity, never applied to REGIME.
+3. **Over-discretization:** treating the soft k=4 gradient (excess +0.047, ~24% boundary-crossing) as 4 crisp classes.
+
+**Synthesis:** REGIME / Bio-vs-non-Bio section / PREFIX-composition are three views of one entangled soft axis (C1712+C1404+C1715+C1812).
+
+### Dispositions
+- **NEW C2070** — REGIME-conditioning discipline (extends C1712): a REGIME claim is genuine only if it survives WITHIN-SECTION and is OFF the PC-defining axes; report as gradient, not crisp classes.
+- **Annotated (sub-claims flagged, NO full demotions — gate: within-Herbal test required before demoting):** C551 (ENERGY-by-R1 = on-axis k + section), C545 (qo-by-R1 circular + per-class over-discretized), C910 (per-class over-discretized; sharp R4 may survive), C1087 (Bio=R1 section-aliased, named in the constraint). C604 noted consistent with the entangled axis.
+- **Survivors (immune):** within-section-replicated C1871/C1872/C1806/C1873/C1890/C1713; REGIME-invariant nulls C821/C822/C979/C602/C688 (conservative under both confounds). Already-self-flagged: C1103/C1111/C1292/C1055/C1116.
+- **Pending:** within-Herbal continuous-PC1 re-test to convert the flags to verdicts (the experts' decisive test; the required adversarial step). Not run this phase (EV is in the corollary, per both experts).
+
+### Counts
+Validated 2053→2054 (+C2070); no retractions, no demotions (annotations only). Version 7.08; phases →746.
+
+### The inferred/soft-map sweep — closed
+Five instances cleaned this session: C109 hazard taxonomy (imposed, C2060), AZC placement geometry (serialization artifacts, C2068-adjacent), zodiac seasons (circular + iconography-contradicting, C1681-cluster retracted), 8-category taxonomy (imposed, C2069), and REGIME (soft + section-confound + on-axis-circular, C2070). Pattern: the project accumulated an interpretive layer built on imposed/inferred/circular label-maps; Tier-0 and atom-level facts untouched, casualties concentrated in the AZC/category/season/REGIME conditioning layer.
+
+---
+
 ## Version 7.07 (2026-06-01) — PHASE_745 8-CATEGORY TAXONOMY AUDIT: imposed not discovered (provenance correction), MARKING gloss-contradicted, C1274 demoted
 
 ### Trigger
