@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2054 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2057 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2070.
+the highest ID present is C2073.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2054 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2057 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2054 validated constraints are present as canonical one-line claims with tier
+2057 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-01 23:59
-**Version:** FROZEN STATE (2054 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 11:11
+**Version:** FROZEN STATE (2057 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2291,6 +2291,9 @@ C2067	**Currier B class-transition operator's above-Markov slow eigenstructure i
 C2068	**The Voynich zodiac is WINTERLESS (primary-source structural fact).** The 12 zodiac folios span **Pisces → Sagittarius** — f70v2=Pisces, f70v1/f71r=Aries (dark/light), f71v/f72r1=Taurus (light/dark), f72r2=Gemini, f72r3=Cancer, f72v3=Leo, f72v2=Virgo, f72v1=Libra, f73r=Scorpius, f73v=Sagittarius — 10 distinct signs (Aries & Taurus each doubled), ~30 nymphs each, with Roman-alphabet month inscriptions on the pages ("Mars"/March f70v2, "Abril"/April f70v1, "May" f71v). **Capricorn and Aquarius (mid-winter, ≈Dec 22–Feb 18) are ABSENT.** Whether lost (missing folios) or never encoded (spring-equinox year-start) is unresolved. Sign IDs are explicit in the transcriber notes (`data/transcriptions/reference/ZL_official.txt`); map locked in `context/DATA/ZODIAC_ICONOGRAPHIC_MAP.md`. **A balanced 4-season analysis is structurally impossible (0 winter folios, spring-heavy).** This is the standing refutation of phantom-winter season maps and the ground truth that retracted C1681/C1683/C1684/C1687/C1688 (PHASE_744). **References:** C2068 supersedes the inferred map of C1681-C1688; C432 (subscripts track multi-ring geometry), C321.	2	zodiac_winterless, pisces_to_sagittarius, 10_signs_aries_taurus_doubled, month_inscriptions_primary_source, no_capricorn_aquarius, four_season_grid_impossible, ground_truth_locked, retracts_C1681_cluster, AZC
 C2069	**The 8-category atom taxonomy (THERMAL/TRANSITION/CONTAINMENT/MARKING/FLOW/OPERATION/MONITORING/STAGING) is keyword-IMPOSED, not data-discovered (provenance correction; same class as C109/C2060).** Source-confirmed: `scripts/voynich.py:1488` is a hardcoded English-keyword→category dictionary (heat→THERMAL, watch→MONITORING…); the C1250 validation ran NO clustering/k-sweep — **"8" was never tested against a data-preferred k**, and the headline behavioral silhouette is CIRCULAR (features = k/e/h, the *defining* atoms) with real silhouette **negative (−0.070)**. **MARKING is gloss-contradicted (the ENERGY_OVERSHOOT analog):** its biggest atom `d` was re-glossed mark→do/execute (C1934) but `ATOM_TO_CATEGORY['d']` was left stale at MARKING; correcting it (PHASE_745) moves **143/425 (34%) of MARKING MIDDLEs out, 115→OPERATION** (OPERATION 108→261), and flips the largest category (MARKING→THERMAL). The boundaries are gloss-fragile, not data-anchored. **What survives:** the atom-INDEPENDENT axes are the real signal — C1250 T4 line-position (30.5×), T6 apparatus-gloss, T7 within-line MI — these don't use the defining atoms; and atom-level restatements (C1300 qo/k, C1388 o-STAGING, C1305 MIDDLE-determines-category). **What's circular/calibration:** kernel/atom-conditioned category tests (C1284 self-flags this; C1274 demoted — see below). Code fixed (d→OPERATION) + flagged. **Disposition:** category labels are imposed scaffolding; trust atom-level + atom-independent claims, not category-as-unit claims. **References:** C2060 (sibling hazard-taxonomy audit), C1250/C1254/C1284/C1274, C1934 (d re-gloss), C1388.	2	category_taxonomy_imposed_not_discovered, hardcoded_keyword_dict, k8_never_tested, silhouette_circular_negative, MARKING_gloss_contradicted_stale_d, d_regloss_C1934_not_propagated, atom_independent_axes_survive, kernel_conditioned_is_calibration, same_class_as_C2060, B
 C2070	**REGIME-conditioning discipline (extends C1712; lower-severity than the imposed-map audits).** REGIME is data-derived (K-means, C179) and bootstrap-stable (ARI=0.76, C1714) — NOT imposed — but it is a SOFT gradient (C1712: k=2 not above null, k=4 excess only +0.047) with two downstream hazards the conditioned cluster (~50 constraints) under-controls: **(1) SECTION-CONFOUND** — the dominant (k=2) REGIME split IS Bio-vs-non-Bio section (C1712), and REGIME adds ~0 PREFIX variance WITHIN section (C1808/C1809: Herbal 1/14, Stars 3/14); so REGIME effects carried by REGIME_1 (≈Bio) need within-section re-test. **(2) ON-PC-AXIS CIRCULARITY** (NEW, not previously flagged) — REGIME is defined by 22 features incl. PC1=qo/k/headless, PC2=suffix/MIDDLE-length/e (C1715); any REGIME-conditioned test ON those features (qo/k/e/headless/suffix/MIDDLE-length) is CALIBRATION not discovery, exactly the C1284/C1291 kernel-category circularity. **Synthesis:** REGIME / Bio-vs-non-Bio section / PREFIX-composition are three views of ONE entangled soft axis (C1712+C1404+C1715+C1812) — "REGIME effect" vs "section effect" vs "PREFIX-composition effect" is often a labeling choice. **Discipline:** a REGIME claim counts as a genuine REGIME effect only if it (a) survives WITHIN-SECTION (esp. within-Herbal) and (b) is OFF the PC-defining axes; report as continuous gradient, not 4 crisp classes (over-discretization). **Survivors (immune):** within-section-replicated effects C1871/C1872/C1806/C1873/C1890/C1713; REGIME-invariant nulls C821/C822/C979/C602/C688 (conservative). **Already self-flagged:** C1103/C1111/C1292/C1055/C1116. **Dispositions (sub-claim annotations, NO full demotions — gate: no demotion without the within-Herbal test):** C551/C545/C910/C1087 ANNOTATED — their REGIME-specialization *sub-claims* flagged calibration (on-PC-axis: qo/ENERGY/MIDDLE-length) and/or section-confound (R1≈Bio) and/or over-discretized (per-class on a soft partition); their map-robust headlines (e.g. C551 "67% grammar universality") stand. C604 consistent with the entangled-axis (a decomposition, no over-claim). Section-confound suspects flagged pending within-Herbal continuous-PC1 re-test (the required adversarial step; C1808 predetermines the PREFIX ones). **References:** C1712, C179, C1404, C1715, C1808, C1284, C1871, C1872, C1713.	2	regime_soft_gradient_extends_C1712, section_confound_k2_is_section, on_pc_axis_circularity_NEW, entangled_axis_regime_section_prefix, within_section_survival_required, over_discretization_use_gradient, data_derived_not_imposed_lower_severity, B
+C2071	**Zodiac within-ring label↔band positional NON-binding (bounded null; extends C1128 to zodiac angular geometry).** Within a zodiac ring, nymph-label HEADs show NO detectable binding to the band token at their clock-angle, under a uniform-360°-sweep band-angle model (both chiralities): HEAD-match obs 0.267(CW)/0.273(CCW) vs exhaustive per-ring circular-rotation null 0.256, p=0.35/0.24; label angular autocorrelation FLAT (near≤45° 0.346 vs far 0.334). **Bounded null:** detection floor ≈5pp — weak binding NOT excluded; uniform-sweep is an assumed geometry, not verified. The "nymph clock-positions are non-encoding display slots" reading is held, NOT registered. Parallels C1128 (Rosettes "no spatial gradient"). Method: IVTFF clock positions `<!HH:MM>` from `ZL_official.txt`. **References:** C1128, C321, C759, C2068.	2	zodiac_positional_null, within_ring_rotation_null, no_label_band_clock_binding, both_chiralities, bounded_null_5pp_floor, uniform_sweep_assumed, parallels_C1128, AZC
+C2072	**Zodiac ring-band is e-enriched relative to BOTH Currier A and B — in prevalence, not depth (kernel-free).** The band's e-content exceeds both A and B on matched denominators: e-HEAD/all=0.386 (B 0.284, A 0.147), e-bearing/all=0.502 (B 0.442, A 0.241), e-HEAD/headed=0.513 (B 0.404, A 0.264) — band>B>A on ALL three. The enrichment is in e-HEAD PREVALENCE, not depth: band e-depth profile (depth1/2/3+ = 0.67/0.29/0.04) matches Currier-B (0.68/0.29/0.02), NOT A (0.72/0.25/0.03). With kernel-HEAD≈0.01 (cf C757 AZC zero-kernel), the band is e-enriched AND kernel-free. **Scope:** population-level distributional fact about the zodiac band (a population C105/C1225/C1457 never measured — those are B-internal); the "e-stabilization substrate / labels-vary-over-it" reading is held, NOT registered (echo-class). One coordinate of the zodiac HEAD-profile (see the C1819/C757 corroboration note, PHASE_747). N_band=937. **Caveat:** C2004/C2005 under-transcription applies to labels, not the band (ring text). **References:** C757, C1819, C1502, C105, C1225, C1457, C2004/C2005.	2	zodiac_band_e_enriched_vs_A_and_B, prevalence_not_depth, e_depth_matches_B, kernel_free_band, matched_denominators, substrate_reading_held, AZC
+C2073	**Zodiac↔Currier-B coupling is NON-SPECIFIC (B→diagram diffuseness null; extends C1128/C321/C760).** In the B→zodiac direction, B-program vocabulary does NOT concentrate toward any specific zodiac diagram: all 82/82 B folios share vocabulary with all 12 diagrams; 90% of shared MIDDLEs are generic operators; top-diagram concentration of diagram-specific MIDDLEs (0.251) does NOT exceed a count-preserving max-concentration permutation null. **No program↔diagram (or program↔season) binding** — the zodiac is a generically-accessed shared vocabulary pool, NOT a per-program/per-season routing table. **NOT registered:** the zodiac→B hub-convergence leg is the C1133 vocabulary-size artifact on a random null (frequency-matched null required; against the Rosettes benchmark 0.322 the diagrams are LESS coupled, not more). **References:** C1128 (Rosettes generic indexing), C321, C760, C1133 (artifact the dropped leg falls into).	2	zodiac_B_coupling_nonspecific, B_to_diagram_diffuse, all_82_folios_touch_all_12, 90pct_generic_glue, top_concentration_near_null_p0.116, no_program_season_binding, hub_leg_dropped_C1133, extends_C1128, AZC
 
 ---
 
@@ -2298,7 +2301,7 @@ C2070	**REGIME-conditioning discipline (extends C1712; lower-severity than the i
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-06-01
+# Generated: 2026-06-03
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

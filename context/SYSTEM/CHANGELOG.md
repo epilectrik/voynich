@@ -4,6 +4,28 @@
 
 ---
 
+## Version 7.09 (2026-06-03) — PHASE_747 ZODIAC ARRANGEMENT-METALAYER MEASUREMENTS (C2071–C2073)
+
+### Trigger
+Forward investigation after the season-map retraction (C2068, PHASE_744): "what IS the zodiac section doing?" Pursued via the crazy-expert attack plan (shared-operator audit → 4-anchor atom-HEAD genre test → within-ring positional binding → diffuse-coupling test), then validated through the expert differential check before registration.
+
+### Findings (3 measurements registered, 1 rejected, interpretation held)
+The AZC zodiac section is a **kernel-free, position-independent arrangement/reference layer in the Rosettes/AZC family** (not a calendar, not a procedure, not herbal text, not a spatial code).
+
+- **C2071** (NEW Tier 2, bounded null): within-ring label↔band positional NON-binding — rotation null both chiralities (obs 0.267/0.273 vs null 0.256, p=0.35/0.24), angular autocorrelation flat (0.346 vs 0.334). Detection floor ~5pp; uniform-sweep assumed. Parallels C1128. Nymph clock-positions carry no detectable HEAD-encoding.
+- **C2072** (NEW Tier 2, measurement): zodiac band e-enriched vs BOTH A and B on matched denominators (e-HEAD/all 0.386 > B 0.284 > A 0.147; e-bearing 0.502; e-HEAD/headed 0.513), in **prevalence not depth** (e-depth matches B, not A), kernel-HEAD≈0.01. A kernel-free e-substrate under the varying label layer.
+- **C2073** (NEW Tier 2, diffuseness null): zodiac↔B coupling NON-SPECIFIC (B→diagram) — 82/82 B folios touch all 12 diagrams, 90% generic glue, top-diagram concentration 0.251 ≈ count-preserving permutation null 0.231 (p=0.116). **No program↔diagram/season binding.** Hub-convergence leg DROPPED (C1133 vocab-size artifact, wrong null; against Rosettes 0.322 benchmark the diagrams are *less* coupled).
+
+### Rejected / held
+- **REJECTED** (folded as C1819/C757 corroboration note, not numbered): the atom-HEAD-profile "Rosettes-metalayer membership" — redundant with C1819 + the kernel-absence tautology (the neighborhood is *defined* by k≈0). Measured distances stand as corroboration; "metalayer" label is not a new constraint.
+- **HELD** (→ `SPECULATIVE/zodiac_arrangement_metalayer.md`, needs human sign-off): "zodiac = generic arrangement/configuration index, Rosettes-family, position-independent." Echo-class (restates C1126/C1502/C1814). The **"seasonal" descriptor is DROPPED** — contradicted by C2068 (winterless) + PHASE_744 retraction + C2073 (no program↔season binding).
+- **UNCHANGED:** band/label HEAD-divergence stays INDEX-only (5/12 block-null, sign-test n.s., prior).
+
+### Process
+Both experts (expert-advisor full-context + lean-expert rigor) ran a differential validation of 4 proposed constraints: converged on 3 register / 1 reject / interpretation→human. Required computations run before registration: count-preserving max-concentration permutation (C2073), matched-denominator e check (C2072). Image-channel side-checks: clothed/naked decoupled from text; autumn nymphs confirmed nude from high-res scans (`sources/voynich_scans/`). Tier 0 untouched.
+
+---
+
 ## Version 7.08 (2026-06-01) — PHASE_746 REGIME CONDITIONING AUDIT: discipline corollary (C2070), no retractions
 
 ### Trigger
