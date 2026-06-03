@@ -4,6 +4,21 @@
 
 ---
 
+## Version 7.13 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 4, KEYSTONE): C982 demoted; A-side compatibility framework reduced
+
+### Finding
+- **C982 DEMOTED 2→3 (invented-threshold / wrong-aggregation).** The keystone "~101-dimensional structured discrimination space" is inflated on its **own evidence table**: "~101" is the **median of 7 estimates spanning 9×** (`[28, 86, 96, 101, 128, 256, 256]`) — scatter, not the "clear convergence" claimed. Only one method tests against a **null** — Marchenko-Pastur = **28** (eigenvalues above the random-matrix noise floor). The rest (PCA k_95=101 = invented 95% variance threshold; CV-AUC plateau/elbow; NMF elbow) have no null and are inflated by frequency-driven slow eigenvalue decay (the same family flaw). The "NOT low-dimensional (3-5D models fail)" support cites **C973 — now demoted**. Honest null-grounded dimensionality ≈ **28 above noise** (~3.6× inflation). Survives: ~28 modes above the M-P floor (structured, not 3-5D); the "~101 / clear-convergence / STRUCTURED_HIGH_DIMENSIONAL" headline does not.
+
+### Framework-level result (the keystone question, answered)
+The audit has now swept the entire **A-side compatibility / discrimination-space family** — **9 constraints** (C475, C476, C642, C755, C756, C983, C973, C982, C1118), all demoted or annotated for the **same root cause: co-occurrence-graph wrong nulls** (sparsity-denominator · configuration-model-on-affiliation-network · frequency-blind latent baselines · invented variance thresholds). This was a substantial body of A-side structural theory, and it was systematically over-claimed. **It reduces to a real but modest core:** ~28 above-noise modes (Marchenko-Pastur) + **C729** attested avoidance (0/19,576 violations on attested pairs — the correct denominator). The rich characterizations (~101-D, strong transitivity, 95.7% incompatibility, high-D necessity, coverage optimization) were artifacts of the pre-frequency-preserving-null era.
+
+**NO Tier-0 / frozen-conclusion pillar is touched.** The frozen model (Currier B = closed-loop kernel-centric control programs) rests on the B-side grammar (kernel, 17 *directional* class-level hazard transitions C109/C783, closed-loop/recovery), which is independent of and unaffected by the A-side compatibility geometry.
+
+### Disposition
+Validated 2054→2053; demoted 18→19. PHASE_748 running total: **4 demotes (C1118, C983, C973, C982) + 1 annotation (C642)** — the co-occurrence/compatibility vein is now substantially cleared. Tier 0 untouched.
+
+---
+
 ## Version 7.12 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 3, broken-baseline): C973 demoted
 
 ### Finding
