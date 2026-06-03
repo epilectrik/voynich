@@ -106,7 +106,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2053 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2052 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C2073.
 
@@ -152,7 +152,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2053 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2052 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -172,15 +172,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2053 validated constraints are present as canonical one-line claims with tier
+2052 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-03 17:15
-**Version:** FROZEN STATE (2053 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 17:26
+**Version:** FROZEN STATE (2052 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1351,7 +1351,7 @@ C977	**EN/AX Transitionally Indistinguishable at Topology Level** (38 EN/AX clas
 C978	**Hub-and-Spoke Topology with Sub-2-Token Mixing** (S4/AXM universal attractor >56% from all states; spectral gap 0.894; mixing time 1.1 tokens; hazard/safe asymmetry 6.5x from operational mass) **[PHASE_736 scope-correction: the AXM self-transition RATE (0.698) is composition/mass-artifact — a 68%-mass block self-transitions ~68% by construction; "attractor cohesion / designed dwell" interpretation corrected to "mass-dominant macro-state." Spectral-gap MEASUREMENT stands. The above-Markov slow mode (C2061 λ2) is DISTRIBUTED, not in the self-loop — see C2065. Corroborates C1403. NOT a demotion.]**	2	B
 C979	**REGIME Modulates Transition Weights Not Topology**	2	B
 C980	**Free Variation Envelope: 48 Eigenvalues, 6 Necessary States** (effective rank 48 at >0.01 threshold; constraint compression to 6 states; gap = parametric control space; S4 has 81 MIDDLEs, Gini=0.545, within-state JSD=0.365)	2	B
-C981	**MIDDLE Discrimination Space Is a Structural Fingerprint** (972 MIDDLEs; 4/5 metrics anomalous under Configuration Model z=+17 to +137; CV < 0.055 at 20% removal; λ₁ degrades linearly; FINGERPRINT_CONFIRMED)	2	A
+C981	**MIDDLE Discrimination Space Is a Structural Fingerprint** (972 MIDDLEs; 4/5 metrics anomalous under Configuration Model z=+17 to +137; CV < 0.055 at 20% removal; λ₁ degrades linearly; FINGERPRINT_CONFIRMED) — **[PHASE_748 DEMOTED 2→3 (WRONG-NULL — ROOT KEYSTONE of the compatibility family): the graph is the Currier-A line CO-OCCURRENCE/affiliation network (records = cliques). The "4/5 metrics anomalous under Configuration Model" is the SAME wrong-null artifact as C983 (one of these very metrics, already demoted), now confirmed across ALL of them: the clique-preserving BIPARTITE null REPRODUCES every metric — λ₁ obs 78.9 vs bipartite 81.0 (CM 15.5); n_eig>12 obs 13 vs bipartite 13 (CM 1.6); clustering 0.897≈0.888 (CM 0.253). The configuration model is the wrong null for an affiliation graph (it destroys the record-cliques → everything looks "anomalous"). The constraint's OWN table already conceded "spectral gap NOT anomalous — hub structure is degree-driven" and "only 1 eigenvalue exceeds M-P 99th pct." "Genuine structural fingerprint that cannot be explained by degree heterogeneity" is FALSE — it is fully explained by the affiliation (co-occurrence) structure. CASCADE: this is the foundation C982/C983/C973 built on; the A-side compatibility/discrimination-space family (now C475/C476/C642/C755/C756/C981/C982/C983/C973/C1118 — 10 constraints) reduces to a real but MODEST core: ~1-28 above-noise modes (M-P) + C729 attested avoidance (0/19,576). Dependents C987 (null, survives), C1011 (set-overlap, survives), C989/C1014 flagged for individual audit. Self-clearing (named flaw).]**	3	A
 C982	**Discrimination Space Dimensionality ~101** — **[PHASE_748 DEMOTED 2→3 (invented-threshold / wrong-aggregation; keystone of the eroded compatibility family): the "~101" is the MEDIAN of 7 estimates spanning 9× (28→256: [28,86,96,101,128,256,256]) — that is SCATTER, not the "clear convergence" the constraint claims. Only ONE of the 7 tests against a NULL: Marchenko-Pastur = 28 (eigenvalues above the random-matrix noise floor). The others have NO null and are inflated by frequency-driven slow eigenvalue decay — the SAME family flaw as C475/C642/C983/C973. The "NOT low-dimensional (3-5D models fail)" support cites C973 — now DEMOTED (frequency-blind broken baseline). HONEST null-grounded dimensionality ≈ **28 above noise**, not ~101 (~3.6× inflation). SURVIVES: ~28 modes above the M-P floor — the space is genuinely structured and NOT 3-5D, but the "~101 STRUCTURED_HIGH_DIMENSIONAL clear-convergence" headline does not. The A-side compatibility/discrimination-space framework reduces to: ~28 above-noise modes + C729 attested avoidance (the real core); the rich ~101-D/transitive/95.7%-incompat characterizations were co-occurrence-null artifacts.]**	3	A
 C983	**Compatibility Is Strongly Transitive** (clustering 0.873 vs CM 0.253, z=+136.9; single most anomalous property; implies AND-style constraint intersection in structured feature space) — **[PHASE_748 DEMOTED 2→3 (WRONG-NULL): the compatibility graph is a CO-OCCURRENCE / affiliation network (edge = two MIDDLEs share a record), so every record is a clique and triangles are baked in by construction. The configuration-model null DESTROYS the record-cliques → 0.253 → spurious z=+136.9. The CORRECT clique-preserving BIPARTITE null (preserve record sizes + MIDDLE degrees, reshuffle, reproject) reproduces the clustering: 0.897 ≈ observed 0.888 — i.e. the high clustering is FULLY explained by the affiliation-projection structure, z≈0 against the right null. "Strong transitivity / AND-style constraint intersection / structured feature space" is the projection artifact, NOT a property of compatibility; the "single most anomalous property" is actually the most artifact-prone. Self-clearing (named flaw).]**	3	A
 C984	**Independent Binary Features Insufficient** (AND-model matches density/λ₁/eigencount/rank but clustering ceiling 0.49 vs target 0.87 at all K∈[20,200]; features must be correlated/hierarchical/block-structured)	2	A

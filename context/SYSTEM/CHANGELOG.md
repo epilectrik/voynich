@@ -4,6 +4,23 @@
 
 ---
 
+## Version 7.14 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 4 CASCADE): C981 demoted (root keystone)
+
+### Finding
+- **C981 DEMOTED 2→3 (WRONG-NULL — the root keystone).** The cascade check on C982's demotion reached the foundation. C981 "the MIDDLE discrimination space is an anomalous structural fingerprint — 4/5 metrics anomalous under the Configuration Model (z=+17 to +137)" is the **same wrong null as C983** (which is literally one of its 5 metrics), now confirmed across all of them by direct computation: the **clique-preserving bipartite null reproduces every metric**, while only the configuration model (which destroys the record-cliques) makes them look anomalous —
+  - λ₁: observed 78.9, **bipartite null 81.0**, config-model 15.5
+  - n_eig>12: observed 13, **bipartite null 13**, config-model 1.6
+  - clustering: 0.897 ≈ observed 0.888, config-model 0.253
+  The graph is the Currier-A line co-occurrence/affiliation network (records = cliques); the configuration model is the wrong null for it. The constraint's own table already conceded "spectral gap NOT anomalous — hub structure is degree-driven" and "only 1 eigenvalue exceeds the M-P 99th pct." "Genuine fingerprint that cannot be explained by degree heterogeneity" is false — it's fully explained by the affiliation structure. Self-clearing.
+
+### Cascade verdict
+The keystone demotion **does** cascade — upward to the root. The A-side **compatibility / discrimination-space family is now 10 constraints** (C475, C476, C642, C755, C756, C981, C982, C983, C973, C1118), all the same co-occurrence-graph wrong-null artifact. It reduces to a real but modest core: **~1–28 above-noise modes** (Marchenko-Pastur, the one principled count) **+ C729 attested avoidance** (0/19,576 on attested pairs). Dependents split rather than blanket-cascade: **C987** (manifold-continuous, a null — survives), **C1011** (8.7% bridge, a set-overlap — survives), **C989/C1014** flagged for individual audit (enrichment/manifold-dependent). **No Tier-0 / frozen-conclusion pillar touched** — the B-side control-program grammar is independent.
+
+### Disposition
+Validated 2053→2052; demoted 19→20. PHASE_748 running total: **5 demotes (C1118, C983, C973, C982, C981) + 1 annotation (C642)**. The co-occurrence/compatibility framework is now fully traced to its root and correctly sized. Tier 0 untouched.
+
+---
+
 ## Version 7.13 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 4, KEYSTONE): C982 demoted; A-side compatibility framework reduced
 
 ### Finding
