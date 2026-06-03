@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2055 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2054 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-03 13:00
-**Version:** FROZEN STATE (2055 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 16:54
+**Version:** FROZEN STATE (2054 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -872,7 +872,7 @@ C969	**2nd-Order Alternation Bias Non-Load-Bearing** (CMI=0.012 bits; post-SWITC
 C970	**CC-Hazard Gate Priority**	2	B
 C971	**Transition Asymmetry Structurally Rare**	2	B
 C972	**Cross-Line Independence Stronger Than Random Markov**	2	B
-C973	**Compositional Sparsity Exceeds Low-Dimensional Models**	2	B
+C973	**Compositional Sparsity Exceeds Low-Dimensional Models** — **[PHASE_748 DEMOTED 2→3 (BROKEN-BASELINE + sparsity): broken on its OWN evidence table. (1) The frequency-PRESERVING nulls reproduce the incompatibility — NULL-G token-shuffle 0.453 vs observed 0.460; NULL-H class-reassign 0.460. So the incompatibility is frequency-driven SPARSITY (C475 class), not high-dimensional constraints. Only the frequency-BLIND latent models (NULL-I, which generate dense graphs and don't model abundance) "fail" to reproduce it — a broken baseline (can't represent frequency sparsity). (2) The "hub savings 0.298 (31.6% vs 53.9% greedy)" leg directly inherits C476's RETRACTED greedy baseline (alphabetical-fallback-spams-hubs artifact). No residual: observed is reproduced by both frequency-preserving nulls. Self-clearing (named flaws).]**	3	B
 C974	**Suffix-Role Binding Structural Not Random**	2	B
 C975	**Fingerprint Joint Uniqueness UNCOMMON**	2	B
 C976	**Transition Topology Compresses to 6 States** (49 classes → 6 states, 8.2x compression; preserves role integrity + depletion asymmetry; holdout-invariant 100/100 trials, ARI=0.939; generative fidelity 4/5 metrics)	2	B

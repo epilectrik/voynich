@@ -4,6 +4,19 @@
 
 ---
 
+## Version 7.12 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 3, broken-baseline): C973 demoted
+
+### Finding
+- **C973 DEMOTED 2→3 (BROKEN-BASELINE + sparsity).** "Compositional sparsity exceeds low-dimensional models — incompatibility 0.460 vs latent 3-5D models 0.001" is broken on the constraint's **own evidence table**:
+  1. The **frequency-preserving nulls reproduce the incompatibility** — NULL-G (token shuffle) 0.453 vs observed 0.460 (**p=0.093, NS**); NULL-H (class reassign) 0.460 (**p=1.000**). So the incompatibility is frequency-driven **sparsity** (C475 class), not high-dimensional constraints. Only the frequency-**blind** latent models (NULL-I), which generate dense graphs and don't model abundance, "fail" to reproduce it — a **broken baseline** that can't represent frequency sparsity. The "observed >> latent" gap is the latent model's frequency-blindness, not dimensional necessity.
+  2. The "**hub savings 0.298 (31.6% vs 53.9% greedy)**" leg directly inherits **C476's retracted greedy baseline** (alphabetical-fallback spams hubs post-saturation).
+  No residual — observed is reproduced by both frequency-preserving nulls. Self-clearing (named flaws). Found via the "hub savings" C476 tell; C755/C756 (coverage family) were already demoted in the C476 batch.
+
+### Disposition
+Validated 2055→2054; demoted 17→18. PHASE_748 running total: **3 demotes (C1118, C983, C973) + 1 annotation (C642)** across 3 batches (sparsity-denominator, wrong-null, broken-baseline) — consistent with the documented 5–15% rate. Tier 0 untouched.
+
+---
+
 ## Version 7.11 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 2, wrong-null): C983 demoted
 
 ### Finding
