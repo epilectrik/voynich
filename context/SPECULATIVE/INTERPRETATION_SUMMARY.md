@@ -20,6 +20,20 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 ---
 
+## Zodiac / AZC: Arrangement Metalayer (HUMAN-SIGNED-OFF, PHASE_747, 2026-06-03)
+
+> **Human-cleared Tier-3 interpretation** (echo-class gate cleared by human sign-off). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
+
+**Interpretation:** the AZC **zodiac section is a generic arrangement/configuration index** — a kernel-free reference layer in the **Rosettes/AZC family**, **position-independent**, that the Currier-B programs draw on generically (not a calendar, not a procedure, not herbal text, not a spatial code). The continuous ring-band is a kernel-free e-substrate; the nymph labels are the varying configuration entries over it; the nymph positions are display slots, not an encoding axis.
+
+**Resting measurements:** C2071 (within-ring positional non-binding), C2072 (band e-enrichment vs A and B, prevalence not depth, kernel-free), C2073 (B↔diagram coupling non-specific, no program↔season binding). Corroboration: C1819/C757 (atom-HEAD profile ~5× closer to Rosettes than A/B; kernel-HEAD≈0.01).
+
+**"SEASONAL" IS DROPPED** (at sign-off). The section is physically filed by month (C2068 ground truth), but seasonality is **not** part of the functional reading: the text seasonal-signal was retracted (PHASE_744), the zodiac is winterless (C2068), and there is no program↔season binding (C2073). Do **not** describe the functional layer as "seasonal."
+
+**Wall (C171):** the *referents* of the configuration-units (materials / apparatus / states) remain unrecoverable; "configuration index" is a class-gloss, not a recovered referent. Promotion to a mechanism-tier *fact* would still require external grounding.
+
+---
+
 ## Post-5-Gram-Audit Status (PHASE 729–736, 2026-05)
 
 > **Read this before the interpretive sections below.** The 5-gram character-Markov audit (the sharpest null this project has applied) re-tested the surface, positional, aggregate, and sequential claims that several sections rely on. **The frozen conclusion (Tier 0) is untouched — it never rested on the demoted constraints.** But the Tier 3-4 interpretive model that *this document* describes lost real scope at two layers, and gained a sharper account of where the genuine signal lives. Lead with the loss; the relocation follows.

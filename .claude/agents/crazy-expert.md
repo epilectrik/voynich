@@ -179,7 +179,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-03 11:11
+**Generated:** 2026-06-03 11:18
 **Version:** FROZEN STATE (2057 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -2497,8 +2497,17 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 ---
 
 
-## Post-5-Gram-Audit Status (PHASE 729–736, 2026-05)
+## Zodiac / AZC: Arrangement Metalayer (HUMAN-SIGNED-OFF, PHASE_747, 2026-06-03)
 
+> **Human-cleared Tier-3 interpretation** (echo-class gate cleared by human sign-off). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
+
+
+
+
+---
+
+
+## Post-5-Gram-Audit Status (PHASE 729–736, 2026-05)
 > **Read this before the interpretive sections below.** The 5-gram character-Markov audit (the sharpest null this project has applied) re-tested the surface, positional, aggregate, and sequential claims that several sections rely on. **The frozen conclusion (Tier 0) is untouched — it never rested on the demoted constraints.** But the Tier 3-4 interpretive model that *this document* describes lost real scope at two layers, and gained a sharper account of where the genuine signal lives. Lead with the loss; the relocation follows.
 **Two real losses of interpretive scope:**
 

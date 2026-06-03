@@ -1,7 +1,7 @@
-# Zodiac as Arrangement Metalayer (HELD interpretation — needs human sign-off)
+# Zodiac as Arrangement Metalayer (HUMAN-SIGNED-OFF interpretation)
 
-**Status:** Tier 3 interpretation. **NOT a numbered constraint.** Echo-class (restates the Rosettes-metalayer frame C1126–C1128 + arrangement vocab C1502/C1814) — cannot be same-model-cleared.
-**Date:** 2026-06-03 (PHASE_747).
+**Status:** Tier 3 interpretation — **HUMAN-SIGNED-OFF 2026-06-03.** The echo-class gate is cleared by explicit human sign-off (per the verdict gate: echo-class claims require external test OR human sign-off). It remains an **operational interpretation, NOT a numbered Tier-2 constraint** — the measurements (C2071–C2073) carry the structure; this carries the reading. **"Seasonal" dropped at sign-off** (see below).
+**Date:** 2026-06-03 (PHASE_747). **Sign-off:** human, 2026-06-03.
 **Measurements it rests on (registered):** C2071, C2072, C2073, + the C1819/C757 corroboration note.
 
 ---
@@ -36,8 +36,8 @@ So "seasonal arrangement index" is **not** asserted. The seasonal organization i
 
 The one testable visual attribute (clothed/naked = light/dark) is **decoupled** from the text (light/dark folio-pairs are ~10× more similar in HEAD-profile than random zodiac pairs; vocabulary at baseline overlap). Autumn nymphs confirmed **nude** from the high-res scans (`sources/voynich_scans/images/canvas_132_73r`, `canvas_133_73v`) — clothing does not track season (the only clothed central figure is the Sagittarius archer, an iconographic sign-personification). Per-nymph attribute coding is unavailable (no data). Consistent with C138/C140/C1824 (illustrations epiphenomenal).
 
-## Human sign-off needed on:
+## Human sign-off (GRANTED 2026-06-03)
 
-1. Whether "zodiac = arrangement/configuration index" should be promoted past Tier 3 (requires external grounding, not same-model review).
-2. Whether "seasonal" survives as any descriptor given C2068.
-3. The "configuration / stabilization substrate / display slots" operational glosses.
+1. **"zodiac = generic arrangement/configuration index, Rosettes-family, position-independent" — ENDORSED at Tier 3.** Stands as the cleared operational reading. NOT promoted to a numbered Tier-2 constraint (it's an interpretation, not a measurement); promotion to a *mechanism-tier fact* would still need external grounding, but as a Tier-3 interpretation it is human-cleared and may be cited as such.
+2. **"Seasonal" — DROPPED.** Not retained as a descriptor. The section is physically filed by month (C2068 ground truth), but "seasonal" is not part of the functional interpretation: the text seasonal-signal was retracted (PHASE_744), the zodiac is winterless (C2068), and there is no program↔season binding (C2073). The interpretation is stated **without** "seasonal."
+3. **Operational glosses ("configuration index / stabilization substrate / display slots") — ENDORSED as Tier-3 framing**, with the standing C171 caveat that the *referents* of the configuration-units remain unrecoverable.
