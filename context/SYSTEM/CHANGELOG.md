@@ -4,6 +4,23 @@
 
 ---
 
+## Version 7.10 (2026-06-03) — PHASE_748 SPARSITY-DENOMINATOR AUDIT (batch 1): C1118 demoted, C642 annotated
+
+### Trigger
+Resumed the pre-2026 constraint audit sweep (the experts' redirect from the foreordained-or-echo image-grounding proposal). First batch = the **sparsity-denominator class** (C475 precedent): "X% of *possible* pairs forbidden/incompatible" on a combinatorial denominator inflates by measuring *sparsity*, not *prohibition*.
+
+### Method note (lesson)
+The memory's *guessed* candidate list (C153/C268/C517/C518/C982/C983/C996) was largely wrong on inspection — C153 is MI, C517 compression, C982 dimensionality. The real hits came from **grepping the actual signature**, not trusting the guess. Audit batches must scan the signature, not the prior guess.
+
+### Findings
+- **C1118 DEMOTED 2→3.** "1655 MIDDLE-level forbidden pairs, 75.2% bidirectional" is 88%+ sparsity. C475-style diagnostic: among ~30k zero-observed active-MIDDLE adjacency pairs, **mean expected count = 0.085; only 4 robustly forbidden (exp≥5, obs=0)**. The "75.2% bidirectional" is the tautology the constraint's *own Mathematical Note* concedes — a non-co-occurring pair is forbidden in both directions by construction; rare pairs are symmetrically rare. Measures MIDDLE-adjacency sparsity, not a designed symmetric-prohibition mode. **Unaffected:** C1034 generative model-improvement (empirical, stands alone); C109/C783 (the 17 class-level DIRECTIONAL forbidden transitions, validated separately incl. near-miss C624).
+- **C642 ANNOTATED** (stays Tier 2). The "92% incompatibility / 8% density" leg measures sparsity (self-documented: 61.1% single-occurrence pairs, mean recurrence 4.07; 404 PP MIDDLEs, most of 81,406 "possible" pairs never expected to co-occur). Attested structure is C729's domain (0/19,576 violations). Surviving legs keep it Tier 2: material consistency below chance (p=0.0006, active mixing), role coverage below expected (p=0.022).
+
+### Disposition
+Both are self-clearing (named-flaw/sparsity demotions, verdict-gate exempt). Validated count 2057→2056; demoted 15→16. **Next batches queued:** C983 transitivity z=136.9 (wrong-null for sparse-graph clustering — different sub-pattern); chi²-vs-permutation suspects in C660–C1100 (C1068 class). Tier 0 untouched.
+
+---
+
 ## Version 7.09 (2026-06-03) — PHASE_747 ZODIAC ARRANGEMENT-METALAYER MEASUREMENTS (C2071–C2073)
 
 ### Trigger

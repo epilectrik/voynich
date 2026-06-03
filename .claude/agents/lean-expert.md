@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2057 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2056 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-03 11:18
-**Version:** FROZEN STATE (2057 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 12:45
+**Version:** FROZEN STATE (2056 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -559,7 +559,7 @@ C638	**Quire Sister Consistency**=0.362 FAIR; but CONFOUNDED with section Cramer
 C639	**Sister Pair Variance Decomposition** (47.1% explained adj_R2=32.3%; 52.9% UNEXPLAINED free choice; shared variance 36.4% dominates; unique: quire 3.8%, lane balance 2.7%, MIDDLE 2.6%, REGIME 1.2%, section 0.4%; clean residuals no autocorrelation)	2	B
 C640	**PP Role Projection Architecture**	2	CROSS_SYSTEM
 C641	**PP Population Execution Profiles**	2	CROSS_SYSTEM
-C642	**A Record Role & Material Architecture**	2	CROSS_SYSTEM
+C642	**A Record Role & Material Architecture** — **[PHASE_748 ANNOTATED (sparsity-denominator, C475 class): the "92% incompatibility / 8% density" leg measures SPARSITY, not prohibition — the lattice's own evidence shows 61.1% single-occurrence pairs, mean recurrence 4.07; most of the 81,406 "possible" PP-pairs were never expected to co-occur (404 PP MIDDLEs, mostly rare). Attested-pair structure is C729's domain (0/19,576 violations). SURVIVING legs (constraint stays Tier 2 on these): material consistency below chance and record-level role coverage below expected; role heterogeneity and material-role (V=0.122) are nulls.]**	2	CROSS_SYSTEM
 C643	**Lane Hysteresis Oscillation**	2	B
 C644	**QO Transition Stability**	2	B
 C645	**CHSH Post-Hazard Dominance** **[PHASE_729 5-gram null: the post-hazard CHSH bias is MARKOV-TRIVIAL — real +19.6pp, synth +17.3pp, residual +2.3pp (passed within-folio shuffle but fails the sharper 5-gram null). The lag+1 directional measurement is PRESERVED as a Tier 2 descriptive bigram fact; the "thermal damage control / hazard recovery" MECHANISM interpretation is RETRACTED to Tier 4 SPECULATIVE. See C2045 (single-step scope), C2055 (5-gram discipline), feedback_5gram_markov_null_for_surface_patterns.]**	2	B
@@ -999,7 +999,7 @@ C1111	**Stars Paradox is REGIME Composition Artifact**	2	B
 C1112	**P-Text Bridge Enrichment** (45.5% bridge MIDDLEs, 55/121 unique, 100th percentile of A bootstrap; exceeds Rosettes 21.5% by 2.1x; evidence independent of Rosettes transcript)	2	A/AZC
 C1116	**Within-REGIME Section Parameterization**	2	B
 C1117	**LTR Reading Direction Confirmed**	2	B
-C1118	**Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level forbidden pairs 1244/1655 are bidirectional adjacency prohibitions; 24.8% direction-specific; explains C1034 symmetric forbidden model improvement; broader MIDDLE co-occurrence landscape is predominantly symmetric while 17 class-level transitions C783 are directional)	2	B
+C1118	**Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level forbidden pairs 1244/1655 are bidirectional adjacency prohibitions; 24.8% direction-specific; explains C1034 symmetric forbidden model improvement; broader MIDDLE co-occurrence landscape is predominantly symmetric while 17 class-level transitions C783 are directional) — **[PHASE_748 DEMOTED 2→3 (sparsity-denominator, C475 class): the "forbidden landscape" is 88%+ SPARSITY — among ~30k zero-observed active-MIDDLE adjacency pairs, mean expected count = 0.085, only 4 are robustly forbidden (exp≥5, obs=0). The "75.2% bidirectional" is the tautology the constraint's OWN Mathematical Note concedes — a non-co-occurring pair is "forbidden in both directions" by construction, and rare pairs are symmetrically rare. Measures MIDDLE-adjacency sparsity, NOT a designed symmetric-prohibition mode. UNAFFECTED: C1034's generative model-improvement (empirical, stands alone) and C109/C783 (the 17 class-level DIRECTIONAL transitions, validated separately incl. near-miss C624).]**	3	B
 C1119	**MIDDLE Forward Bias as Reading Direction Evidence**	2	B
 C1120	**Lifecycle Domain Progression Falsified**	2	B
 C1121	**Folio-Level Domain Determination** (paragraph domain character Bio/Stars determined at folio level ICC=0.393, F(45,95)=2.98; within REGIME_1 section predicts Bio-score Bio=0.131 vs Stars=-0.027 diff=0.158; within-paragraph domain stable perm p=0.19; consistent with C1087 Bio divergence)	2	B
