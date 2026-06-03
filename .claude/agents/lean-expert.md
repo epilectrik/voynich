@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2056 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2055 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-03 12:45
-**Version:** FROZEN STATE (2056 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 13:00
+**Version:** FROZEN STATE (2055 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -882,7 +882,7 @@ C979	**REGIME Modulates Transition Weights Not Topology**	2	B
 C980	**Free Variation Envelope: 48 Eigenvalues, 6 Necessary States** (effective rank 48 at >0.01 threshold; constraint compression to 6 states; gap = parametric control space; S4 has 81 MIDDLEs, Gini=0.545, within-state JSD=0.365)	2	B
 C981	**MIDDLE Discrimination Space Is a Structural Fingerprint** (972 MIDDLEs; 4/5 metrics anomalous under Configuration Model z=+17 to +137; CV < 0.055 at 20% removal; λ₁ degrades linearly; FINGERPRINT_CONFIRMED)	2	A
 C982	**Discrimination Space Dimensionality ~101**	2	A
-C983	**Compatibility Is Strongly Transitive** (clustering 0.873 vs CM 0.253, z=+136.9; single most anomalous property; implies AND-style constraint intersection in structured feature space)	2	A
+C983	**Compatibility Is Strongly Transitive** (clustering 0.873 vs CM 0.253, z=+136.9; single most anomalous property; implies AND-style constraint intersection in structured feature space) — **[PHASE_748 DEMOTED 2→3 (WRONG-NULL): the compatibility graph is a CO-OCCURRENCE / affiliation network (edge = two MIDDLEs share a record), so every record is a clique and triangles are baked in by construction. The configuration-model null DESTROYS the record-cliques → 0.253 → spurious z=+136.9. The CORRECT clique-preserving BIPARTITE null (preserve record sizes + MIDDLE degrees, reshuffle, reproject) reproduces the clustering: 0.897 ≈ observed 0.888 — i.e. the high clustering is FULLY explained by the affiliation-projection structure, z≈0 against the right null. "Strong transitivity / AND-style constraint intersection / structured feature space" is the projection artifact, NOT a property of compatibility; the "single most anomalous property" is actually the most artifact-prone. Self-clearing (named flaw).]**	3	A
 C984	**Independent Binary Features Insufficient** (AND-model matches density/λ₁/eigencount/rank but clustering ceiling 0.49 vs target 0.87 at all K∈[20,200]; features must be correlated/hierarchical/block-structured)	2	A
 C985	**Character-Level Features Insufficient for Discrimination**	2	A
 C986	**Hub Eigenmode Is Frequency Gradient** (λ₁=82.0, 4.3× next eigenvalue; hub-frequency Spearman ρ=-0.792, p≈0; hub loading monotonic with frequency band; hub axis = coverage axis C476/C755)	2	A

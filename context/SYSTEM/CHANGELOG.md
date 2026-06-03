@@ -4,6 +4,19 @@
 
 ---
 
+## Version 7.11 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 2, wrong-null): C983 demoted
+
+### Finding
+- **C983 DEMOTED 2→3 (WRONG-NULL).** "Compatibility is strongly transitive — clustering 0.873 vs configuration-model 0.253, z=+136.9, the single most anomalous property" is a wrong-null artifact. The compatibility graph is a **co-occurrence / affiliation network** (edge = two MIDDLEs share a record), so every record forms a clique and triangles are construction-forced. The configuration-model null destroys the record-cliques (→0.253) → spurious z. The **correct clique-preserving bipartite null** (preserve record sizes + MIDDLE degrees, reshuffle, reproject) reproduces the clustering: **0.897 ≈ observed 0.888** → z≈0 against the right null. The "strong transitivity / AND-style constraint intersection / structured feature space" interpretation is the affiliation-projection artifact; the "single most anomalous property" is the most artifact-prone. Self-clearing (named flaw).
+
+### Chi²-class triage (C1068 pattern, C660–C1100)
+Triaged but **not swept blindly.** The class is heterogeneous: **most** chi² constraints are legitimate categorical-difference tests (HT-lane segregation, section-role profiles, suffix-role binding) where chi² is the right tool. The genuine C1068 pattern (cross-layer coupling of two derived, frequency-correlated measures; huge chi² + tiny effect; marginal permutation p) is **narrow** — candidates C660 (PREFIX×MIDDLE), C1061 (atom co-occurrence), C1063 (PREFIX×SUFFIX V=0.138) flagged for **careful per-constraint reading**, several of which are direct morphotactic contingencies where chi² is appropriate. **Lesson: do not blanket-demote chi²; the C1068 pattern is specific.**
+
+### Disposition
+Validated 2056→2055; demoted 16→17. Batch 2 yield: 1 demote (C983). Next: focused per-constraint reading of the narrow chi² suspects (C660/C1061/C1063), and the broken-baseline / invented-threshold classes. Tier 0 untouched.
+
+---
+
 ## Version 7.10 (2026-06-03) — PHASE_748 SPARSITY-DENOMINATOR AUDIT (batch 1): C1118 demoted, C642 annotated
 
 ### Trigger
