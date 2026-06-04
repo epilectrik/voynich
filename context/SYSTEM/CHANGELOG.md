@@ -4,6 +4,28 @@
 
 ---
 
+## Version 7.16 (2026-06-03) — PHASE_749 ARRANGEMENT-METALAYER MAP (C2074, C2075)
+
+### Trigger
+Forward structural work after closing the compatibility-family audit: extend the zodiac characterization (C2071–C2073) to all AZC sections + Rosettes + pharma — "is the index/arrangement layer ONE unified structure or SEVERAL?" Discipline guards baked in from PHASE_748 (frequency/composition-matched null mandatory; bipartite null for spectral; measurement-only).
+
+### Findings (two narrowed measurements — the grand framing deflated under the differential check)
+- **C2074** (NEW Tier 2): pharma P-text is **kernel-bearing** (HEAD-atom k=0.087, Wilson [.078,.097]) and sits at the execution/registry end of a **cross-system kernel-HEAD gradient** — AZC+Rosettes index sections kernel-depleted (0.010–0.043) < Currier-A 0.057 < pharma 0.087 < Currier-B 0.134. Pharma is kernel-bearing relative to the index but **intermediate** (gradient, NOT a clean partition — cf C1559). Extends C758 (P-text A-identity) to the kernel-HEAD axis; corroborates C757/C2072 at section resolution.
+- **C2075** (NEW Tier 2): the **full index layer (cosmological-AZC + Rosettes, not just zodiac) shows NO B-targeting above a composition-matched null** (AZC-eligible pool, B=1000) — per-section z: ZODIAC −1.4, COSMO-AZC −0.2, ROS-RING +0.8 (NS), ROS-LABEL −3.8 (self-folio). Apparent hub-convergence (all "point at" f113r) is the **C1133 vocab-size artifact** (f113r = null attractor in 285/300 draws; random sets share MORE with it than the real sections). Extends C2073 to the entire index layer.
+
+### Process — the differential check worked
+Both experts converged and **deflated the grand "unified index partition" framing**: expert-advisor predicted lean-expert would flag the C430/C1519 internal-heterogeneity tension via a "partition vs gradient" lens — and it did. That predicted divergence materializing confirms the "ONE unified index" verdict was **interpretation-carried, not statistics** → human. The mandatory frequency/composition-matched null (the PHASE_748 lesson) caught the would-be "unified B-hub" as the same C1133 artifact the compatibility family fell to — the audit's discipline feeding forward and preventing a repeat. Required fixes run before registration: Wilson CIs (test 1), composition-matched null + per-section z (test 3), ROS-LABEL reported as self-reference.
+
+### Held / dropped
+- **HELD (→human, like C2071-C2073):** "the index is ONE self-contained, kernel-depleted, lexically-isolated reference layer, internally heterogeneous (C430/C1519), not a B-routing table." Echo-class (assigns function, C171 wall + framework-unification over C430/C1519).
+- **DROPPED from registration:** zodiac/Rosettes kernel-freeness (re-derives C757/C1126/C1127), the internal o/e/HL sub-texture (re-derives C1519/C1814/C1502/C2072), the word "partition," the zodiac no-targeting leg (duplicates C2073).
+- Data gap: pharma jar-labels not located by L-placement on f88-102 (loose end).
+
+### Disposition
+Validated 2050→2052; phases 748→749. Tier 0 untouched.
+
+---
+
 ## Version 7.15 (2026-06-03) — PHASE_748: A-side compatibility family CLOSED (C989, C1014 demoted)
 
 ### Finding — the two flagged dependents resolved

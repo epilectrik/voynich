@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 2050 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 2052 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2073.
+the highest ID present is C2075.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (2050 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (2052 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-2050 validated constraints are present as canonical one-line claims with tier
+2052 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-03 20:13
-**Version:** FROZEN STATE (2050 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 20:28
+**Version:** FROZEN STATE (2052 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -2294,6 +2294,8 @@ C2070	**REGIME-conditioning discipline (extends C1712; lower-severity than the i
 C2071	**Zodiac within-ring label↔band positional NON-binding (bounded null; extends C1128 to zodiac angular geometry).** Within a zodiac ring, nymph-label HEADs show NO detectable binding to the band token at their clock-angle, under a uniform-360°-sweep band-angle model (both chiralities): HEAD-match obs 0.267(CW)/0.273(CCW) vs exhaustive per-ring circular-rotation null 0.256, p=0.35/0.24; label angular autocorrelation FLAT (near≤45° 0.346 vs far 0.334). **Bounded null:** detection floor ≈5pp — weak binding NOT excluded; uniform-sweep is an assumed geometry, not verified. The "nymph clock-positions are non-encoding display slots" reading is held, NOT registered. Parallels C1128 (Rosettes "no spatial gradient"). Method: IVTFF clock positions `<!HH:MM>` from `ZL_official.txt`. **References:** C1128, C321, C759, C2068.	2	zodiac_positional_null, within_ring_rotation_null, no_label_band_clock_binding, both_chiralities, bounded_null_5pp_floor, uniform_sweep_assumed, parallels_C1128, AZC
 C2072	**Zodiac ring-band is e-enriched relative to BOTH Currier A and B — in prevalence, not depth (kernel-free).** The band's e-content exceeds both A and B on matched denominators: e-HEAD/all=0.386 (B 0.284, A 0.147), e-bearing/all=0.502 (B 0.442, A 0.241), e-HEAD/headed=0.513 (B 0.404, A 0.264) — band>B>A on ALL three. The enrichment is in e-HEAD PREVALENCE, not depth: band e-depth profile (depth1/2/3+ = 0.67/0.29/0.04) matches Currier-B (0.68/0.29/0.02), NOT A (0.72/0.25/0.03). With kernel-HEAD≈0.01 (cf C757 AZC zero-kernel), the band is e-enriched AND kernel-free. **Scope:** population-level distributional fact about the zodiac band (a population C105/C1225/C1457 never measured — those are B-internal); the "e-stabilization substrate / labels-vary-over-it" reading is held, NOT registered (echo-class). One coordinate of the zodiac HEAD-profile (see the C1819/C757 corroboration note, PHASE_747). N_band=937. **Caveat:** C2004/C2005 under-transcription applies to labels, not the band (ring text). **References:** C757, C1819, C1502, C105, C1225, C1457, C2004/C2005.	2	zodiac_band_e_enriched_vs_A_and_B, prevalence_not_depth, e_depth_matches_B, kernel_free_band, matched_denominators, substrate_reading_held, AZC
 C2073	**Zodiac↔Currier-B coupling is NON-SPECIFIC (B→diagram diffuseness null; extends C1128/C321/C760).** In the B→zodiac direction, B-program vocabulary does NOT concentrate toward any specific zodiac diagram: all 82/82 B folios share vocabulary with all 12 diagrams; 90% of shared MIDDLEs are generic operators; top-diagram concentration of diagram-specific MIDDLEs (0.251) does NOT exceed a count-preserving max-concentration permutation null. **No program↔diagram (or program↔season) binding** — the zodiac is a generically-accessed shared vocabulary pool, NOT a per-program/per-season routing table. **NOT registered:** the zodiac→B hub-convergence leg is the C1133 vocabulary-size artifact on a random null (frequency-matched null required; against the Rosettes benchmark 0.322 the diagrams are LESS coupled, not more). **References:** C1128 (Rosettes generic indexing), C321, C760, C1133 (artifact the dropped leg falls into).	2	zodiac_B_coupling_nonspecific, B_to_diagram_diffuse, all_82_folios_touch_all_12, 90pct_generic_glue, top_concentration_near_null_p0.116, no_program_season_binding, hub_leg_dropped_C1133, extends_C1128, AZC
+C2074	**Pharma P-text is kernel-bearing — at the execution/registry end of a cross-system kernel-HEAD GRADIENT, NOT a kernel-free index layer (PHASE_749).** Per-section HEAD-atom kernel fraction (Wilson 95% CI): the AZC+Rosettes index sections are kernel-depleted — ZODIAC 0.010 [.006,.017], COSMO-AZC (f67-69) 0.020 [.013,.029], ROS-LABEL 0.014 [.004,.051], ROS-RING 0.043 [.026,.070] — vs Currier-A 0.057 [.053,.062] < **PHARMA-text (f88-102 P-placement) 0.087 [.078,.097]** < Currier-B 0.134 [.129,.138]. Pharma's CI excludes the index sections' (kernel-bearing, NOT index) but is INTERMEDIATE between A and B — so this is a **GRADIENT (index < A < pharma < B), NOT a clean partition** (cf C1559 cross-system HEAD gradients). Pharma P-text JSD 0.019 to Currier-A. **Extends C758** (P-text PREFIX-cosine A-identity) to the kernel-HEAD axis; corroborates C757 (AZC outside execution layer) and C2072 at section resolution. Section membership is a-priori codicological (not gap-maximized). Caveat: C2004/C2005 label under-transcription affects the label sub-sections. **References:** C757, C758, C1559, C2072, C430.	2	pharma_ptext_kernel_bearing, kernel_head_gradient_not_partition, index_kernel_depleted, pharma_intermediate_A_to_B, extends_C758_to_kernel_axis, wilson_ci, AZC
+C2075	**The full index layer (cosmological-AZC + Rosettes, not just zodiac) shows NO B-folio targeting above a composition-matched null (extends C2073).** Frequency+composition-matched null (size-matched random MIDDLE draws from the AZC-eligible pool, B=1000); per-section percentile/z of the real top-hub shared-MIDDLE count: ZODIAC real 73 vs null mean 77.3 (11th pctile, z=−1.4), COSMO-AZC 73 vs 73.7 (47th, z=−0.2), ROS-RING 45 vs 43.0 (84th, z=+0.8, NS), ROS-LABEL 28 vs 37.4 (z=−3.8; top is its OWN foldout folio f85r1, self-reference not B-targeting). NO section targets any B-folio significantly above the composition-matched null. The apparent hub-convergence (all sections "point at" the big folio f113r) is the **C1133 vocab-size artifact** — f113r is the null attractor in 285/300 random draws, and a random size-matched set shares MORE with it than the real sections do. **Extends C2073** (zodiac→B non-specific) to the ENTIRE index layer; the index is lexically self-contained (C321/C760), not a routing table into B. **References:** C2073 (zodiac precedent extended), C1133 (artifact confirmed), C321, C760, C1128.	2	full_index_no_B_targeting, composition_matched_null, extends_C2073_to_whole_index, f113r_is_vocab_size_attractor_C1133, roslabel_self_reference, index_self_contained, AZC
 
 ---
 
