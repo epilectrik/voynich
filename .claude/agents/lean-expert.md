@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2052 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2050 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-03 17:26
-**Version:** FROZEN STATE (2052 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-03 20:13
+**Version:** FROZEN STATE (2050 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -888,7 +888,7 @@ C985	**Character-Level Features Insufficient for Discrimination**	2	A
 C986	**Hub Eigenmode Is Frequency Gradient** (λ₁=82.0, 4.3× next eigenvalue; hub-frequency Spearman ρ=-0.792, p≈0; hub loading monotonic with frequency band; hub axis = coverage axis C476/C755)	2	A
 C987	**Discrimination Manifold Is Continuous** (residual space: best k=5, silhouette 0.245 MIXED_BANDS, 865/972 in one cluster; gap statistic -0.014; negative silhouette at k≥12; continuous curved manifold, not blocks)	2	A
 C988	**AZC Folio Cohesion Is Hub-Driven** (full embedding: 27/27 coherent z=+13.26; residual: 0/27 coherent z=-2.68; folios sample frequency-coherent slices with diverse residual positions; zone C→R→S traces hub gradient)	2	AZC
-C989	**B Execution Inhabits A's Discrimination Geometry** (80.2% token-weighted A-compatible at 37× enrichment; residual cosine: compat +0.076, incompat -0.051; violations concentrate in rare MIDDLEs; section S isolated; geometric realization of C468)	2	A↔B
+C989	**B Execution Inhabits A's Discrimination Geometry** (80.2% token-weighted A-compatible at 37× enrichment; residual cosine: compat +0.076, incompat -0.051; violations concentrate in rare MIDDLEs; section S isolated; geometric realization of C468) — **[PHASE_748 DEMOTED 2→3 (frequency-confounded enrichment + demoted embedding; compatibility-family cascade): the "37× / 18.1× enrichment" compares B's compatibility rate (80.2%/39.4%) to A's 2.2% baseline — but 2.2% is A's sparsity-dominated affiliation density, so the enrichment is FREQUENCY-CONFOUNDED (B's frequent MIDDLEs are A-compatible because frequent things co-occur in A); no frequency-matched null is run. The residual-cosine separation (+0.076/-0.051) lives in the now-demoted discrimination-space embedding (C981/C982). A "B respects A's ATTESTED avoidances" core MIGHT survive (cf C729) but requires a frequency-matched null to claim "B actively selects." Self-clearing.]**	3	A↔B
 C990	**B Operates at Elevated Constraint Tension**	2	A↔B
 C991	**Radial Depth Dominates Line-Level Energy**	2	A↔B
 C992	**e-Kernel Is the Compatibility Kernel**	2	A↔B
@@ -913,7 +913,7 @@ C1010	**6-State Macro-Automaton is Minimal Invariant-Preserving Partition**	2	B
 C1011	**Discrimination Manifold and Macro-Automaton are Geometrically Independent** (only 85/972 MIDDLEs (8.7%) bridge A manifold → B grammar; macro-state silhouette = -0.126 z=-0.96 p=0.843 — no geometric footprint; forbidden transitions not at geometric boundaries ratio=0.991 p=1.0; HUB MIDDLEs peripheral not central norm 2.31 vs 0.76 p≈0; HUB sub-roles not geometrically distinct p=0.577; 3/6 pre-registered predictions passed; manifold = A-level compatibility, automaton = B-level transition topology — complementary not redundant)	2	A→B
 C1012	**PREFIX is Macro-State Selector via Positive Channeling, Not Negative Prohibition**	2	B
 C1013	A->B Vocabulary Bridge is a Topological Generality Filter	2	A->B
-C1014	Discrimination Manifold Encodes Viability Structure via Bridge Backbone	2	A->B
+C1014	Discrimination Manifold Encodes Viability Structure via Bridge Backbone — **[PHASE_748 DEMOTED 2→3 (construction tautology + demoted dependency; compatibility-family cascade): two problems. (1) It explicitly "Strengthens C982 (~101D discrimination manifold)" and reads "the ~101D discrimination manifold (C982) encodes viability" — C982 is now DEMOTED (the ~101D is invented-threshold-inflated, honest ≈28). (2) The headline r=0.914 is a CONSTRUCTION TAUTOLOGY: a record centroid is the AVERAGE of its MIDDLE embedding vectors, so two records sharing MIDDLEs necessarily have overlapping centroid components (high cosine) BY CONSTRUCTION. The hub-removal/size-control checks don't touch the tautology (shared MIDDLEs → shared centroid regardless). "Viability landscape" rests on a circular correlation. Self-clearing.]**	3	A->B
 C1015	**PREFIX-Conditioned Macro-State Mutability with FL-Specific Routing Asymmetry**	2	B
 C1016	**Folio-Level Macro-Automaton Decomposition with Dynamical Archetypes**	2	B
 C1017	**Macro-State Dynamics Decompose into PREFIX Routing, Hazard Density, and Bridge Geometry**	2	B

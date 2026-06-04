@@ -4,6 +4,24 @@
 
 ---
 
+## Version 7.15 (2026-06-03) — PHASE_748: A-side compatibility family CLOSED (C989, C1014 demoted)
+
+### Finding — the two flagged dependents resolved
+- **C989 DEMOTED 2→3** ("B Execution Inhabits A's Discrimination Geometry, 80.2% A-compatible at 37× enrichment"). The "37× / 18.1× enrichment" compares B's compatibility rate to A's **2.2% baseline** — but 2.2% is A's sparsity-dominated affiliation density, so the enrichment is **frequency-confounded** (B's frequent MIDDLEs are A-compatible because frequent things co-occur in A); no frequency-matched null is run. The residual-cosine separation lives in the now-demoted discrimination-space embedding. A "B respects A's *attested* avoidances" core might survive (cf C729) but needs a frequency-matched null.
+- **C1014 DEMOTED 2→3** ("Discrimination Manifold Encodes Viability, r=0.914 — strongest pairwise correlation in the entire constraint system"). Two problems: (1) it explicitly builds on the demoted **~101D manifold (C982)**; (2) the **r=0.914 is a construction tautology** — a record centroid is the *average of its MIDDLE embedding vectors*, so records sharing MIDDLEs (high Jaccard) necessarily have similar centroids (high cosine) **by construction**. The hub-removal/size controls don't touch it. The "viability landscape" rests on a circular correlation.
+
+### Family closed — final tally
+The A-side **compatibility / discrimination-space family is now fully traced and closed: 12 constraints** —
+`C475, C476, C642, C755, C756, C981, C982, C983, C973, C989, C1014, C1118` —
+all the same class of error (co-occurrence-graph wrong nulls · sparsity-denominators · frequency-confounded enrichments · invented variance thresholds · construction tautologies). **The A-side "discrimination space / strong-compatibility" theory reduces to a real but modest core:** ~1–28 above-noise modes (Marchenko-Pastur) **+ C729** attested avoidance (0/19,576 on attested pairs). **Survivors in the family:** C987 (manifold-continuous, a null), C1011 (8.7% bridge, a set-overlap) — both independent of the spectral anomaly.
+
+**No Tier-0 / frozen-conclusion pillar is touched** — the B-side control-program grammar (kernel, 17 directional hazard transitions, closed-loop/recovery) is independent.
+
+### Disposition
+Validated 2052→2050; demoted 20→22. **PHASE_748 final: 7 demotes (C1118, C983, C973, C982, C981, C989, C1014) + 1 annotation (C642).** The co-occurrence/compatibility vein is exhausted; remaining audit veins (invented-threshold, narrow chi²) are disjoint. Tier 0 untouched.
+
+---
+
 ## Version 7.14 (2026-06-03) — PHASE_748 CONSTRAINT AUDIT (batch 4 CASCADE): C981 demoted (root keystone)
 
 ### Finding
