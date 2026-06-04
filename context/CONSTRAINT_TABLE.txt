@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1862 constraints | 2026-06-03
+CONSTRAINT_REFERENCE v2.6 | 1862 constraints | 2026-06-04
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
