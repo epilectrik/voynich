@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-03 23:32
+**Generated:** 2026-06-04 09:37
 **Version:** FROZEN STATE (2051 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -278,9 +278,23 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # MODEL_CONTEXT.md
 
-**Version:** 3.16 | **Date:** 2026-02-14 | **Status:** FROZEN
+**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** FROZEN (core) + POST-AUDIT CORRECTIONS (A-side/AZC layer)
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
+
+---
+
+## POST-AUDIT MODEL CORRECTIONS (v3.17, 2026-06 — READ FIRST)
+
+> The body below was frozen 2026-02. The June-2026 work (the zodiac/index characterization C2071–C2075 + the PHASE_748 constraint audit) corrected three things. **Where the body conflicts with this block, this block supersedes.** The frozen Tier-0 spine is untouched (see #3).
+
+**1. AZC is a kernel-free, position-INDEPENDENT index/reference layer — NOT "positional encoding."**
+AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained, lexically-isolated **arrangement/reference layer**. The within-diagram **positions do NOT encode** (C2071 — the nymph clock-positions are non-encoding display slots; the placement-*class* structure survives via C759, but the within-diagram positions don't). The layer does **NOT route to B** (C2075 — no specific B-target above a composition-matched null; it shares only generic operators, and apparent "hub" convergence is the C1133 vocab-size artifact). **Pharma sits OUTSIDE this index layer** — it is kernel-*bearing*, execution-register (C2074). Human-signed-off Tier-3 reading: the index is ONE self-contained reference *type-class*, internally heterogeneous (C430/C1519), not a B-routing table. → **Supersedes the "positional encoding / compatibility grouping" framing in §IV, §VIII.**
+
+**2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
+PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
+
+**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, the 17 *directional* hazard transitions C109/C783, closed-loop/recovery) is independent of the A-side compatibility geometry and entirely unaffected. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
 
 ---
 

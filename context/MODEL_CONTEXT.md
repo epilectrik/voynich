@@ -1,8 +1,22 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.16 | **Date:** 2026-02-14 | **Status:** FROZEN
+**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** FROZEN (core) + POST-AUDIT CORRECTIONS (A-side/AZC layer)
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
+
+---
+
+## POST-AUDIT MODEL CORRECTIONS (v3.17, 2026-06 — READ FIRST)
+
+> The body below was frozen 2026-02. The June-2026 work (the zodiac/index characterization C2071–C2075 + the PHASE_748 constraint audit) corrected three things. **Where the body conflicts with this block, this block supersedes.** The frozen Tier-0 spine is untouched (see #3).
+
+**1. AZC is a kernel-free, position-INDEPENDENT index/reference layer — NOT "positional encoding."**
+AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained, lexically-isolated **arrangement/reference layer**. The within-diagram **positions do NOT encode** (C2071 — the nymph clock-positions are non-encoding display slots; the placement-*class* structure survives via C759, but the within-diagram positions don't). The layer does **NOT route to B** (C2075 — no specific B-target above a composition-matched null; it shares only generic operators, and apparent "hub" convergence is the C1133 vocab-size artifact). **Pharma sits OUTSIDE this index layer** — it is kernel-*bearing*, execution-register (C2074). Human-signed-off Tier-3 reading: the index is ONE self-contained reference *type-class*, internally heterogeneous (C430/C1519), not a B-routing table. → **Supersedes the "positional encoding / compatibility grouping" framing in §IV, §VIII.**
+
+**2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
+PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
+
+**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, the 17 *directional* hazard transitions C109/C783, closed-loop/recovery) is independent of the A-side compatibility geometry and entirely unaffected. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
 
 ---
 
@@ -15,7 +29,7 @@ The Voynich Manuscript is a **designed, non-semantic, multi-layer control artifa
 It is:
 - A family of closed-loop control programs (Currier B)
 - A complexity-frontier registry (Currier A)
-- A placement-coded hybrid workflow system (AZC)
+- A kernel-free, self-contained index/reference layer (AZC + Rosettes) — *position-independent, not B-routing* (v3.17; was "placement-coded workflow system")
 - An operationally redundant specification + vigilance layer (HT)
 
 It is definitively NOT:
@@ -112,7 +126,7 @@ The Voynich Manuscript contains four coexisting systems sharing a morphological 
 |--------|------|----------|-----------|----------|
 | Currier B | Sequential | Closed-loop control programs | Yes | 49-class |
 | Currier A | Non-sequential | Complexity-frontier registry | No | None |
-| AZC | Placement-coded | Positional encoding | Hybrid | Positional |
+| AZC + Rosettes | Index/reference | Kernel-free arrangement layer; position-INDEPENDENT (within-diagram positions non-encoding, C2071); not B-routing (C2075) | No | Placement-*class* only (C759) |
 | Human Track | Distributed | Operationally redundant compound specifications + vigilance | No | Statistical |
 
 ### Critical Distinctions
@@ -131,7 +145,7 @@ The manuscript distributes responsibility between system and human across four l
 |-------|------|-----------------|
 | **Currier B** | Constrains you | Execution grammar, safety envelope |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
-| **AZC** | Encodes position | Phase-indexed positional encoding, compatibility grouping |
+| **AZC + Rosettes** | Indexes / references | Kernel-free arrangement layer; position-INDEPENDENT, self-contained, not B-routing (v3.17 — was "phase-indexed positional encoding, compatibility grouping") |
 | **HT** | Prepares you | Anticipatory vigilance signal |
 
 The right mental model is not "What does this page tell me to do?" but:
@@ -196,6 +210,8 @@ MIDDLEs are the primary vocabulary layer:
 **Tier 2 Interpretation:**
 > Currier A enumerates the *potential discrimination space*;
 > Currier B traverses only a *submanifold* of that space under specific execution contracts.
+
+> **[v3.17 SCOPE NOTE:** the "discrimination space" is real but **modest, not rich** — the PHASE_748 audit demoted the inflated characterizations (95.7% incompatibility, ~101-D structure, strong transitivity, "structural fingerprint"; all co-occurrence-graph wrong-null artifacts). It reduces to **~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance.** The A-enumerates / B-traverses *framing* survives; the *richness* of the space does not. See top block #2.]**
 
 **Three-Way MIDDLE Stratification:**
 
@@ -362,7 +378,7 @@ The grammar is permissive but structured. PP atoms are the universal morphologic
 
 **This explains:**
 - C498.d (length predicts uniqueness): Short forms seed long forms derivationally
-- C475 (95.7% incompatibility): Positional grammar restricts legal combinations
+- ~~C475 (95.7% incompatibility): Positional grammar restricts legal combinations~~ **[v3.17 CORRECTED: the "95.7%" is a sparsity-denominator artifact (most pairs never co-occur by rarity, not prohibition) — C475 DEMOTED 2→3, PHASE_748. The real avoidance structure is C729 (0 violations on *attested* pairs) + ~28 above-noise modes. See top block #2.]**
 - C506.b (intra-class heterogeneity): PP composition determines behavioral variants
 - C502 (~80% filtering): Extracts PP primitives from RI elaborations
 
@@ -760,9 +776,11 @@ Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
 
 ---
 
-## VIII. AZC - POSITIONAL ENCODING & COMPATIBILITY GROUPING
+## VIII. AZC — INDEX / REFERENCE LAYER (v3.17; was "Positional Encoding & Compatibility Grouping")
 
-AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. It operates as a **static positional encoding** where each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character.
+> **v3.17 CORRECTION (see the post-audit block at top):** the "positional encoding" and "compatibility grouping" framing of this section is **superseded**. The within-diagram *positions* do NOT encode (C2071 — nymph clock-positions are non-encoding display slots); AZC is a **kernel-free, self-contained index/reference layer** (AZC zodiac+cosmological + Rosettes) that does **not route to B** (C2075). What survives below: the placement-*class* structure (C759), the vocabulary-isolation facts (C760/C321), and the A↔AZC↔B interface *plumbing*. What's corrected: any "positions encode operational character" or "rich compatibility grouping" reading (the latter is the demoted A-side family — read the modest core: ~28 above-noise modes + C729).
+
+AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. ~~It operates as a static positional encoding where each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character.~~ **[v3.17:** it operates as a kernel-free index/reference layer; each diagram is a self-contained set of arrangement vocabulary, and the within-diagram positions are non-encoding display slots (C2071), not an operational-character encoding.**]**
 
 **P-text note (2026-01-19):** Of 3,299 AZC tokens, 398 (12.1%) are P-placement paragraph text that is linguistically Currier A. For legality analysis, diagram-only count = **2,901 tokens**. See AZC_INTERFACE_VALIDATION phase.
 
@@ -1119,7 +1137,7 @@ The A/AZC/B shared vocabulary architecture is now **structurally characterized**
 | **Strict (CORRECT)** | Legal = A-record MIDDLEs only | ~96 survivors (20%) | VALIDATED |
 
 **Why strict is correct:**
-- Matches C481's ~128-dimensional discrimination space
+- ~~Matches C481's ~128-dimensional discrimination space~~ **[v3.17: the "~128-D / ~101-D discrimination space" dimensionality is inflated (variance-threshold methods with no null; only Marchenko-Pastur ~28 is null-grounded — C982 demoted, PHASE_748). The strict-vs-union *survivor-set* logic still holds (it rests on C729 attested record-level avoidance, which survives); just don't read the space as ~128-D-rich.]**
 - Union model produces trivial filtering (universal connectors match all folios)
 - Expert-validated against frozen architecture (2026-01-22)
 
