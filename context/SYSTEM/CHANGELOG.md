@@ -4,6 +4,27 @@
 
 ---
 
+## Version 7.17 (2026-06-03) — PHASE_748 INHERITANCE-LAYER CHECK (the audit decider): C470 demoted; audits done
+
+### Trigger
+The PHASE_748 compatibility-family cascade traced *up* to its root (C981) but didn't check *down* — the AZC compatibility-inheritance constraints (C468/C469/C470, C518–C520, C326) that consume the demoted family's outputs. lean flagged this ring as the most-likely next inflated family, and set the decider gate: if the first inheritance sweep returns *low* correction, the inflation was localized (not base-wide) → audits done.
+
+### Finding
+- **C470 DEMOTED 2→3 (FREQUENCY-CONFOUND).** "MIDDLEs restricted to 1–2 AZC folios stay restricted in B (12.7× — confirms constraint transfer across the pipeline)" is a frequency carryover, not a causal pipeline. **B-folio-spread is 0.996 Spearman-correlated with B-frequency** (B-restriction ≡ B-rarity); AZC-restriction also tracks frequency (0.595). After controlling for frequency, AZC-restriction → B-restriction **collapses to partial rho=0.062** (raw 0.597). The effect is ~entirely "rare MIDDLEs are rare everywhere." Same frequency-confound class as the demoted C989. (A weak, inconsistent within-stratum residual exists, |rho| mostly <0.25 — doesn't support the Tier-2 headline.)
+
+### What did NOT fall — the decider
+The inheritance layer is **not** another compatibility-style inflated family:
+- **C469** (resolution via vocab-availability: length↔folio-spread, 73.5% folio-unique) — sound at the measurement level (C760-class); "categorical not parametric" is a Tier-3 reading.
+- **C468** (escape-rate inheritance, 28×) — a *different* flaw class (potential escape-rate autocorrelation, not the frequency/co-occurrence family); not audited here.
+- C518/C519/C520 already Tier 3; C326 already self-flags weak (silhouette 0.018).
+
+**DECIDER VERDICT:** one frequency-confounded leaf (C470), not 5–10 — lean's pre-registered "low correction → update down hard" outcome. **The pre-discipline inflation was largely LOCALIZED to the A-side compatibility family** (PHASE_748, now closed), not base-wide. **Audits are essentially done.** Both experts (this session's strategic consult): the forward-discovery phase is exhausted (text-internal generic PHASE_718/720, referents walled C171, death-zone a documented regularity, external channels foreclosed); shift center of gravity from discovery to **consolidation** — the integrated post-audit four-layer model write-up + the methodology/failure-taxonomy doc (the project's most durable, echo-immune asset).
+
+### Disposition
+Validated 2052→2051; demoted 22→23. PHASE_748 grand total: 8 demotes (C1118, C983, C973, C982, C981, C989, C1014, C470) + 1 annotation (C642). Tier 0 untouched. **Next: consolidation, not audit.**
+
+---
+
 ## Version 7.16 (2026-06-03) — PHASE_749 ARRANGEMENT-METALAYER MAP (C2074, C2075)
 
 ### Trigger

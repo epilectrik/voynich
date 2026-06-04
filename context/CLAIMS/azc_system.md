@@ -458,8 +458,10 @@ Operational conditions (temperature, pressure, material state) are represented c
 **Source:** F-AZC-015, F-AZC-016, azc_middle_resolution analysis
 
 ### C470 - MIDDLE Restriction Inheritance
-**Tier:** 2 | **Status:** CLOSED
-MIDDLEs restricted to 1-2 AZC folios remain restricted when manifested in Currier B. Mean B folio spread: restricted MIDDLEs = 4.0 folios; universal MIDDLEs = 50.6 folios. This 12.7x difference confirms constraint transfer is preserved across the pipeline.
+**Tier:** 3 | **Status:** DEMOTED 2→3 (PHASE_748 inheritance check, 2026-06-03 — FREQUENCY-CONFOUND)
+~~MIDDLEs restricted to 1-2 AZC folios remain restricted when manifested in Currier B. Mean B folio spread: restricted MIDDLEs = 4.0 folios; universal MIDDLEs = 50.6 folios. This 12.7x difference confirms constraint transfer is preserved across the pipeline.~~
+
+**[DEMOTED:** the "restriction inheritance / 12.7× confirms constraint transfer" is a frequency carryover, not a causal pipeline. B-folio-spread is **0.996 Spearman-correlated with B-frequency** (B-restriction ≡ B-rarity); AZC-restriction also tracks frequency (rho=0.595). Controlling for frequency, AZC-restriction → B-restriction **collapses to partial Spearman rho=0.062** (raw 0.597) — the effect is ~entirely "rare MIDDLEs are rare everywhere," not preserved-constraint-transfer. A weak inconsistent within-frequency-stratum residual exists (3/4 strata, mostly |rho|<0.25) but does not support the Tier-2 "confirms transfer" headline. Same frequency-confound class as the demoted C989. **Decider note:** this was the ONE inflated constraint in the inheritance trio — C469 (resolution-via-vocab-availability) is sound at the measurement level, C468 (escape-rate inheritance) is a different flaw class (not checked). The pre-discipline inflation was LARGELY LOCALIZED to the A-side compatibility family (PHASE_748), not base-wide → audits essentially done. **References:** C989 (same frequency-confound), C760 (folio-uniqueness, survives), C468/C469.**]**
 **Source:** F-AZC-016
 
 ---
