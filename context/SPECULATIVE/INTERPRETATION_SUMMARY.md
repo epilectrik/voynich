@@ -32,6 +32,8 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 **Wall (C171):** the *referents* of the configuration-units (materials / apparatus / states) remain unrecoverable; "configuration index" is a class-gloss, not a recovered referent. Promotion to a mechanism-tier *fact* would still require external grounding.
 
+**GENERALIZATION (PHASE_749, HUMAN-SIGNED-OFF 2026-06-03, with caveats):** the zodiac is not special — it's one instance of a single index-type register. The arrangement/reference layer is **ONE self-contained, kernel-depleted, lexically-isolated layer by TYPE — AZC (zodiac + cosmological f67–69) + Rosettes — that does NOT route into B** (no specific B-target above a composition-matched null, **C2075**; pharma is kernel-bearing and sits OUTSIDE it on a gradient, **C2074**). **Caveats (load-bearing):** (1) "ONE" = one kernel-depleted *type-class*, NOT internal homogeneity — the layer is internally heterogeneous (C430 two AZC families, C1519 zodiac-vs-A/C diversity); (2) "index/reference layer" is a function-gloss, referent walled (C171); (3) pharma-exclusion is a gradient, not a clean partition (C2074). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
+
 ---
 
 ## Post-5-Gram-Audit Status (PHASE 729–736, 2026-05)

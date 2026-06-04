@@ -41,3 +41,20 @@ The one testable visual attribute (clothed/naked = light/dark) is **decoupled** 
 1. **"zodiac = generic arrangement/configuration index, Rosettes-family, position-independent" — ENDORSED at Tier 3.** Stands as the cleared operational reading. NOT promoted to a numbered Tier-2 constraint (it's an interpretation, not a measurement); promotion to a *mechanism-tier fact* would still need external grounding, but as a Tier-3 interpretation it is human-cleared and may be cited as such.
 2. **"Seasonal" — DROPPED.** Not retained as a descriptor. The section is physically filed by month (C2068 ground truth), but "seasonal" is not part of the functional interpretation: the text seasonal-signal was retracted (PHASE_744), the zodiac is winterless (C2068), and there is no program↔season binding (C2073). The interpretation is stated **without** "seasonal."
 3. **Operational glosses ("configuration index / stabilization substrate / display slots") — ENDORSED as Tier-3 framing**, with the standing C171 caveat that the *referents* of the configuration-units remain unrecoverable.
+
+---
+
+## Generalization to the FULL index layer (PHASE_749 — HUMAN-SIGNED-OFF 2026-06-03, with caveats)
+
+**Status:** Tier 3 interpretation, human-cleared 2026-06-03 with explicit caveats. Resting measurements: **C2074** (pharma kernel-bearing, kernel-HEAD gradient), **C2075** (full index no-B-targeting), + C2071–C2073 (zodiac).
+
+**Interpretation (signed off):**
+> The manuscript's arrangement/reference layer is **ONE self-contained, kernel-depleted, lexically-isolated reference layer by *type*** — spanning **AZC (zodiac + cosmological f67–69) + the Rosettes** — that does **not** route into the B programs (no specific B-target above a composition-matched null, C2075).
+
+**Caveats baked into the sign-off (load-bearing — do not drop):**
+1. **"ONE" is scoped to a kernel-free TYPE-CLASS, NOT internal homogeneity.** The layer is *internally heterogeneous*: C430 (AZC is two folio families, Zodiac vs A/C), C1519 (Zodiac HEAD-uniform vs A/C internally diverse), and the o/e/HL sub-texture (Rosettes o-heavy, zodiac e-heavy, cosmological HL/A-registry-leaning). "One layer" means *one kernel-depleted register*, not one uniform structure.
+2. **"Index / reference layer" is an operational FUNCTION-gloss.** The measurements support kernel-depletion + lexical isolation + no-B-routing; they do **not** independently establish that it *functions as* an index. The referent (what it would index) is walled by C171. The function-reading is human-cleared as a *framing*, not a recovered fact.
+3. **Pharma is excluded on a GRADIENT, not a clean partition** (C2074): pharma P-text is kernel-bearing (k=0.087, intermediate A→B) — "not an index layer" is a *relative* statement, not a binary cut.
+4. **Promotion past Tier 3** (to a mechanism-tier fact) would still require external grounding — human sign-off clears the *interpretation*, not the referent.
+
+**Why this generalizes the zodiac finding:** the zodiac (above) was shown to be a kernel-free, position-independent, generically-B-coupled arrangement layer. PHASE_749 confirmed the *same profile* holds for the cosmological AZC and the Rosettes (kernel-depleted, no specific B-target), and that pharma sits *outside* it (kernel-bearing). So the zodiac wasn't special — it's one instance of a single index-type register spanning AZC + Rosettes.

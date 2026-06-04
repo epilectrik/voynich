@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-03 20:28
+**Generated:** 2026-06-03 21:21
 **Version:** FROZEN STATE (2052 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -2416,6 +2416,7 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 ## Zodiac / AZC: Arrangement Metalayer (HUMAN-SIGNED-OFF, PHASE_747, 2026-06-03)
 
 > **Human-cleared Tier-3 interpretation** (echo-class gate cleared by human sign-off). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
+
 
 
 
