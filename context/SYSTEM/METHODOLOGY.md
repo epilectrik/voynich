@@ -168,6 +168,8 @@ Fire degree (1=gentle, 2=standard, 3=moderate) reflects thermal tolerance, not h
 
 ## Common Analytical Errors
 
+> **This section covers practical codebase errors only.** For the full **epistemic rigor / failure-taxonomy / null-discipline** reference — the ~15 documented failure patterns (sparsity-denominator, affiliation-network wrong-null, frequency-confound, label-fit-to-signal, phantom-clustering, …), the which-null-for-which-claim table, the verdict gate, and the differential expert check — see **[RIGOR_AND_FAILURE_TAXONOMY.md](RIGOR_AND_FAILURE_TAXONOMY.md)** (the project's transferable epistemic asset).
+
 ### 1. Sample Size Issues
 
 - Currier A has ~37,000 tokens, B has ~75,000
