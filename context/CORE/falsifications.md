@@ -33,9 +33,13 @@ These hypotheses have been **explicitly tested and rejected**. Each has document
 **Meaning:** Swapping illustrations doesn't affect text analysis. Visual similarity does not predict constraint similarity at any level. Illustrations are epiphenomenal to grammar.
 
 ### Step-by-Step Recipe Format
-**Status:** FALSIFIED
+**Status:** FALSIFIED (SCOPE-RESTRICTED 2026-06-05)
 **Evidence:** Phase FSS showed families are emergent, not designed
-**Meaning:** The text is not organized as discrete recipes with beginnings and endings.
+**Meaning:** The text is not organized as a discrete recipe-BOOK (rigid step-1/step-2 blocks with
+beginnings and endings). **This is a FORMAT claim only.** It does NOT eliminate recipe-derived
+*content* or procedural correspondence — the project runs a live recipe-matching program
+(f75r↔III.19, the SISMEL corpus). Do not cite this to foreclose recipe-content work. See
+`SYSTEM/NEGATIVE_AUDIT.md` Disposition 1.
 
 ---
 
@@ -195,7 +199,16 @@ The following purpose classes were eliminated by structural incompatibility:
 **Hypothesis:** Discretizing continuous thermal plant simulation data into categorical states (using physically-motivated binning strategies) bridges the gap between analog dynamics and Voynich grammar topology.
 **Test:** 5 physical strategies + 1 random null across 100 LHS-randomized parameterizations. Direction-of-movement scoring against continuous baseline (C998). BIC-emergent K. Legality imposition layer.
 **Result:** Best physical strategy (lane_temp) moves 3/9 metrics toward Voynich — identical to random binning (3/9). Zero forbidden transitions from any strategy. Hub mass degrades under all strategies.
-**Status:** Do not attempt to derive Voynich topology from physical simulation + discretization. The encoding layer is designed, not emergent.
+**Status:** Do not attempt to derive Voynich topology from physical simulation + discretization (FORWARD direction). The encoding layer is designed, not emergent.
+
+> **SCOPE-RESTRICTION (2026-06-05, see `SYSTEM/NEGATIVE_AUDIT.md` Disposition 3).** These nulls
+> tested the FORWARD direction (does analog physics GENERATE the topology — no). They do **not**
+> test, and must **not** be cited to foreclose, the INVERSE direction: does the *fixed designed
+> topology* map isomorphically to a physical process state-machine? "Designed, not emergent" is
+> *compatible with* the inverse — a control instruction-set designed for a process should be
+> isomorphic to it. The architectural-isomorphism / physical-reconstruction path is **re-opened**
+> (scoped to architectural/physical matching; text-statistical corpus matching stays exhausted at
+> the Latin-subdomain level, C2052).
 
 ### Physical Discretization Outperforms Random Binning (FALSIFIED)
 **Hypothesis:** Physically-motivated state definitions (lane × temperature, operational regime, Q-action × phase) produce better Voynich fidelity than random label assignment.
@@ -207,9 +220,18 @@ The following purpose classes were eliminated by structural incompatibility:
 
 ## Rule
 
-**Do not retry falsified approaches.**
+**Do not retry falsified approaches *at the same layer, same direction, with the same null*.**
 
-If you believe a falsification was incorrect, first review the phase documentation. The evidence is documented. If you still disagree, you are likely misunderstanding the scope or methodology.
+> **NEGATIVE-AUDIT REVISION (2026-06-05, see `SYSTEM/NEGATIVE_AUDIT.md`).** The old self-sealing
+> clause ("if you still disagree you are likely misunderstanding the scope") is retired — it
+> institutionalized the asymmetry whereby positives are audited and negatives never are. A
+> falsification may foreclose a NEW hypothesis ONLY if it meets the same bar as a registered
+> positive: **powered** (states the effect it could have detected), **correct null**,
+> **reproducible**, and **scope-locked to the exact hypothesis / layer / direction tested.** A
+> falsification of FORMAT does not eliminate a DOMAIN; a FORWARD-generation null does not foreclose
+> the INVERSE direction; an underpowered null is absence-of-evidence, not evidence-of-absence. If a
+> new hypothesis differs in layer, direction, or carries an external test the prior death never
+> reached, the falsification does **not** apply — propose it.
 
 ---
 

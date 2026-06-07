@@ -6,6 +6,10 @@
 
 FL stage (C777) does not propagate across line boundaries. Each line independently samples its FL stages from the folio's available pool. Within-line FL coherence (68.2% SAME, C786) collapses to 27.9% at cross-line transitions, and backward transitions jump from 4.5% to 44.3%. Endpoint stage correlation is zero (rho = 0.003, p = 0.963).
 
+## Scope note (2026-06)
+
+**CROSS-VOICE; predates Mode A/B (C1258).** The cross-line FL-*stage* null persists even within the Mode-B voice (C1260: FL stage rho=0.026, p=0.56) — so "FL resets at each line boundary" is unchanged. But the broader "each line is a complete, independent FL assessment" framing understates within-voice FL *continuity*, which registers within Mode B (C1258, p=0.001). A nested-null retest localizes that continuity to **paragraph-level (C1967), flat across lags within paragraphs (lag-1 ≈ lag-2)** — not line-to-line FL carryover. See `context/SYSTEM/NEGATIVE_AUDIT.md` Disposition 5.
+
 ## Evidence
 
 **Test: Adjacent line pairs within paragraphs (N=1,446 broad, N=230 narrow)**

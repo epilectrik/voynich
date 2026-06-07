@@ -6,6 +6,10 @@
 
 **24 of 27 line features** show significant lag-1 prediction beyond position. Knowing the previous line's feature value improves prediction of the next line's value, even after accounting for positional trends. Verdict: **SEQUENTIALLY_COUPLED** — but the coupling is **folio-mediated** (shared context), not **line-to-line state propagation** (sequential memory).
 
+## Scope note (2026-06)
+
+The "stateful per-folio" verdict is more precisely **stateful per-PARAGRAPH** (C1834 paragraph boundaries are complete sequential resets; C1967 thermal-by-paragraph). A within-voice retest confirms the continuity hidden by cross-voice pooling (C1258 Mode-B track) is **paragraph-level, not line-to-line** (within-paragraph lag-1 ≈ lag-2, flat). The core verdict — folio/paragraph-mediated coupling, no line-to-line state propagation — stands. See `context/SYSTEM/NEGATIVE_AUDIT.md` Disposition 5.
+
 ## Method
 
 For each feature: regression models comparing position-only (feature_N+1 ~ norm_pos_N+1) vs combined (feature_N+1 ~ feature_N + norm_pos_N+1). Delta-R2 with F-test for the lag-1 addition. Applied to 2,322 strictly consecutive line pairs. Verdict thresholds: >=10 features = SEQUENTIALLY_COUPLED; <=2 = INDEPENDENT; 3-9 = PARTIAL.

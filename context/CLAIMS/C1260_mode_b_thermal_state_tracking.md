@@ -9,6 +9,10 @@
 
 Within Mode B sequential tracks, energy balance state variables propagate between consecutive B lines: e_frac (rho=0.376, p=0.000), ke_ratio (rho=0.228, p=0.000), qo_frac (rho=0.186, p=0.000), k_frac (rho=0.139, p=0.000). FL stage does NOT propagate (rho=0.026, p=0.56). Lag-1 autocorrelation survives permutation for ke_ratio (p=0.002). No ordinal progression in energy variables -- the B-track maintains steady-state thermal context while independently assessing material state each cycle. Only line length shows monotonic decline (rho=-0.243, p=0.000).
 
+## Scope note (2026-06)
+
+The "energy balance propagates / continuous B-track" language here is **paragraph-level homogeneity, not strictly line-to-line carryover.** A nested-null retest of within-Mode-B thermal (e_depth) and loop continuity survives folio-shadow and length-residual controls (z~4) but is **flat across lags within the paragraph** (lag-1 ≈ lag-2 ≈ lag-3; lag1−lag2 = +0.024, 95% CI [−0.058, +0.106]) — the signature of a shared paragraph constant (C1967 thermal-by-paragraph), not decaying line-to-line memory. "Track" denotes paragraph-scoped state, not inter-line propagation. See `context/SYSTEM/NEGATIVE_AUDIT.md` Disposition 5.
+
 ## Architecture
 
 - **Energy state propagates.** Each B line inherits thermal context from its predecessor. The e/k balance (stability vs energy) carries forward.

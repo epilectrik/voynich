@@ -6,24 +6,38 @@
 
 ## Claim
 
-Of all purpose classes tested, only continuous closed-loop process control is structurally compatible with the Currier B grammar. All other hypotheses have been eliminated.
+Of all purpose classes tested, continuous closed-loop process control is the **best-supported**
+class structurally compatible with the Currier B grammar.
+
+> **NEGATIVE-AUDIT DOWNGRADE (2026-06-05, see `SYSTEM/NEGATIVE_AUDIT.md` Disposition 1).**
+> The original "ONLY ... survives / all others eliminated" was over-claimed. Of the 12 eliminations
+> below, **only 2 cite a discriminating contrast test** (cipher → MI-decrease; metallurgy → the
+> calcination negative control). **5 are pure absence-assertions** ("no X found, therefore X
+> impossible," never tested against a model predicting X's required rate): medical, astronomical,
+> ritual, educational, dyeing. The "ONLY" is therefore restated as **"best-supported among tested
+> alternatives,"** and the 5 absence-assertions are downgraded to **weak priors / re-testable** —
+> they may NOT be cited to foreclose a new hypothesis carrying an external test.
+> **The frozen Tier-0 structural conclusion (it IS a closed-loop control grammar) is untouched** —
+> only the *exclusivity overlay* weakens.
 
 ## Eliminated Purpose Classes
 
 | Purpose Class | Reason for Elimination |
 |---------------|------------------------|
-| Cipher/hoax | Phase G: transforms DECREASE MI |
-| Encoded language | Phase X.5: 0.19% reference rate |
-| Recipe/pharmacology | No batch boundaries |
-| Herbarium/taxonomy | No identifier tokens |
-| Medical procedure | No patient-response branching |
-| Astronomical calculation | No computational primitives |
-| Ritual/symbolic | No conditional structure |
-| Educational text | No definitions or examples |
-| Discrete batch operations | No end markers |
-| Fermentation | No time-dependent markers |
-| Glassmaking/metallurgy | Wrong hazard topology |
-| Dyeing/mordanting | Wrong phase structure |
+| Purpose Class | Reason for Elimination | Audit class (2026-06-05) |
+|---|---|---|
+| Cipher/hoax | Phase G: transforms DECREASE MI | **SOLID** (discriminating test) |
+| Glassmaking/metallurgy | Wrong hazard topology (calcination negative control PS-4/BS-4) | **SOLID** (discriminating test) |
+| Fermentation | ~~No time-dependent markers~~ → fingerprint falsified, **re-cite C1900** | REAL but mis-cited |
+| Encoded language | ~~0.19% reference rate (Phase X.5)~~ **statistic retired — X.5 is the C131-tainted phase**; conclusion holds on cipher→MI-decrease + C2055 | TAINTED citation; conclusion survives |
+| Recipe/pharmacology | "No batch boundaries" — only a *format* tested (FSS); contradicted by live recipe-matching | OVER-GENERALIZED |
+| Discrete batch operations | "No end markers" — contradicted by C1237/C1295 (-am termination) | OVER-GENERALIZED |
+| Herbarium/taxonomy | No identifier tokens (unstated threshold) | SUSPECT |
+| Medical procedure | No patient-response branching | **ABSENCE-ASSERTION (weak prior)** |
+| Astronomical calculation | No computational primitives | **ABSENCE-ASSERTION (weak prior)** |
+| Ritual/symbolic | No conditional structure | **ABSENCE-ASSERTION (weak prior)** |
+| Educational text | No definitions or examples | **ABSENCE-ASSERTION (weak prior)** |
+| Dyeing/mordanting | Wrong phase structure (no cited contrast test) | **ABSENCE-ASSERTION (weak prior)** |
 
 ## What Remains
 

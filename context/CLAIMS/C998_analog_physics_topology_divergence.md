@@ -80,6 +80,14 @@ These are the features most likely to be **convention-imposed** (designed into t
 
 4. **Constrains interpretation:** Any physical interpretation must explain the discrete encoding layer. The 49 instruction classes, 17 forbidden transitions, and hub-spoke topology are properties of a *designed instruction set*, not emergent from analog dynamics.
 
+> **DIRECTION SCOPE (negative-audit 2026-06-05, `SYSTEM/NEGATIVE_AUDIT.md` Disposition 3).** This
+> result is for the **FORWARD** direction only: analog physics does not *generate* the topology.
+> It does **NOT** test, and must **NOT** be cited to foreclose, the **INVERSE** direction — whether
+> the *fixed designed topology* maps isomorphically to a physical process state-machine. "Designed,
+> not emergent" is *compatible with* the inverse: an instruction set designed to control a process
+> is expected to be isomorphic to that process. The architectural-isomorphism / physical-
+> reconstruction path is not closed by C998/C999.
+
 ## Related Constraints
 
 - **C978** (Hub-Spoke Topology): Simulation fails to reproduce 6-state topology (median K=10)

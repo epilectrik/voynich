@@ -6,6 +6,10 @@
 
 Adjacent lines within Currier B folios do **not** share elevated MIDDLE vocabulary. Mean Jaccard similarity of MIDDLE sets between consecutive lines = 0.1395, vs permuted baseline = 0.1257 (+0.0138 difference). Zero of 79 folios achieve p<0.05 on individual permutation tests (1000 shuffles).
 
+## Scope note (2026-06)
+
+**CROSS-VOICE measurement, predates the Mode A/B discovery (C1258, Phase 450).** This Jaccard null pools both suffix-mode voices. The "MIDDLEs selected independently per line" conclusion holds at the cross-voice / line-to-line level, but **understates within-voice continuity**: within the continuous Mode-B track vocabulary does couple — however a nested-null retest localizes that continuity to **paragraph-level homogeneity (C1967), not line-to-line propagation** (within-paragraph lag-1 ≈ lag-2, flat; C1834 paragraph-as-reset). Per-line independence is correct *for line-to-line coupling at every resolution*; it is cross-voice *pooling* that hides paragraph-scoped within-voice structure. See `context/SYSTEM/NEGATIVE_AUDIT.md` Disposition 5.
+
 ## Method
 
 For each folio (>=8 lines), compute Jaccard similarity of MIDDLE sets between every pair of adjacent lines. Permutation baseline: shuffle line order within folio 1000 times, recompute. Per-folio p-value = fraction of permuted means >= observed.
