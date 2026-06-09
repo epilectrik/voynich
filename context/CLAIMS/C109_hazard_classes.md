@@ -2,6 +2,11 @@
 
 **Tier:** 2 | **Status:** ACTIVE | **Phase:** Phase 18 (revised PHASE_732, 2026-05-28)
 
+> **SCOPE (2026-06-08, SELF_CITATION_HEAD_TO_HEAD):** the CLASS-level reading is dead -- C783
+> demoted (powered class pairs at forbidden-direction O/E = 1.13, no suppression). "The 17"
+> survive ONLY as the TOKEN-bigram layer (C957, directionality verified: 0 obs vs 37.5 exp,
+> reverses at-null). Read this constraint as existence-of-token-level-prohibitions.
+
 ---
 
 ## Claim

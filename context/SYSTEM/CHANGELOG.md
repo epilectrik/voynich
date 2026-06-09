@@ -4,6 +4,43 @@
 
 ---
 
+## Version 7.19 (2026-06-08) — SELF_CITATION_HEAD_TO_HEAD: the mainstream rival excluded (C2077); C458/C783 demoted
+
+### Trigger
+Fresh-eyes review (post model upgrade) found the strongest academic rival — Timm & Schinner's
+self-citation/copy-modify generation — had never been tested head-to-head, despite the corpus
+containing its predicted signatures (C501 edit-distance-1 singleton cloud, C346/C361 vocabulary
+locality, C2055 char-Markov surface). Three-expert pre-registration (advisor / lean adjudication /
+crazy steelman) locked kill conditions BEFORE any code; pre-flight audits gated the kills.
+
+### Changes
+
+| Item | Action |
+|---|---|
+| **C2077** | NEW Tier 2 — self-citation/copy-modify EXCLUDED as a complete account of B (adversarial-external, pre-registered, human-signed-off). Fit stage: uniform-kernel generator over-generates types 1.8×, Zipf flat — B's novelty is morphology-channeled. K2: generator's production signature (adjacent-line copy-explainability −0.108) absent from B (−0.019 ≈ no-copy controls). K4: generator forces e-depth lag1 0.20 vs B 0.035 — M2-Markov reproduces B exactly, so the failure is copy-mechanism-specific. |
+| **C783** | DEMOTED 2→3 — class-level "17 directional forbidden transitions" show NO suppression (powered pairs forbidden-direction O/E=1.13 strict-adjacency; 23→9 is 2× enriched; remainder phantom sparsity). Registry compression of token-level facts. |
+| **C957** | STRENGTHENED — the surviving directional prohibition layer: 9 forward token bigrams 0 obs vs ~37.5 joint exp (P≈5e-17), ALL reverses at-or-above expectation. |
+| **C109** | SCOPE-NOTED — read as existence-of-token-level-prohibitions; class-level reading dead. Also resolves C789's "65% compliance" anomaly. |
+| **C458** | DEMOTED 2→3 — clamp/free CV asymmetry is a frequency shadow (raw gap 0.720 → corrected 0.089; C475 class; densities-vs-counts mixing). Regime-separation half stands. |
+
+### Key methodology notes
+- The locked battery was half-corrected by its own Phase-0 audits: the original K1 (class-level
+  C783) and K5 (C458) died as discriminators BEFORE the generator ran — kills were re-staked at
+  the correct layer (token bigrams) pre-construction. Registry-compression discipline applied to
+  the project's own kill list.
+- K4's sign-prediction was mis-calibrated (C2032's −0.66 is a different instrument); the
+  pre-registered ensemble criterion carried the verdict. Recorded per registration-calibration
+  discipline.
+- M2-Markov control was load-bearing twice: proving K4 is not a floor (M2 matches B exactly where
+  the copy generator fails) and anchoring the no-copy value of K2.
+
+### Files
+`phases/SELF_CITATION_HEAD_TO_HEAD/` (PRE_REGISTRATION.md with locked design + Phase 0/1 results,
+5 scripts, 4 results JSONs), `context/CLAIMS/C2077_self_citation_excluded.md`, banners in
+C458/C783/C957/C109 files.
+
+---
+
 ## Version 7.17 (2026-06-03) — PHASE_748 INHERITANCE-LAYER CHECK (the audit decider): C470 demoted; audits done
 
 ### Trigger

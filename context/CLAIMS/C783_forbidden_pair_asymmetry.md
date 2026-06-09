@@ -1,6 +1,19 @@
 # C783: Forbidden Pair Asymmetry
 
 **Tier:** 2 (Validated)
+
+> **DEMOTED 2->3 (SELF_CITATION_HEAD_TO_HEAD P4a, 2026-06-08) -- REGISTRY COMPRESSION.**
+> The class-level projection of the 17 forbidden transitions shows NO suppression: among the 9
+> adequately-powered class pairs (within-line shuffle exp >= 5), the forbidden direction occurs
+> at aggregate O/E = 1.13 (strict word-adjacency; chain-adjacency 1.05), reciprocal 1.03, and
+> one "forbidden" pair (23->9) is ~2x ENRICHED (28 obs vs 11.8 exp). The 8 remaining pairs are
+> zero-vs-zero phantom sparsity (C1118/C2023 pattern). "All 17 class pairs are directional" was
+> a lossy class-level compression of TOKEN-level facts. **The directional prohibition is real
+> ONE LAYER DOWN (C957):** 9 forward token bigrams at 0 observed vs ~37.5 joint expectation
+> (P ~ 5e-17) while every reverse flows at-or-above expectation. This also resolves C789's
+> puzzling "65% compliance": there was never a class-level prohibition to comply with.
+> Audits: `phases/SELF_CITATION_HEAD_TO_HEAD/scripts/p0_preflight_audits.py`,
+> `p0b_strict_adjacency_verification.py`.
 **Phase:** CONTROL_TOPOLOGY_ANALYSIS
 **Scope:** B-GRAMMAR
 

@@ -2,6 +2,16 @@
 
 **Tier:** 2 | **Status:** CLOSED | **Scope:** Currier B
 
+> **DEMOTED 2->3 (SELF_CITATION_HEAD_TO_HEAD P4b, 2026-06-08) -- FREQUENCY SHADOW (C475 class).**
+> The headline clamp/free CV asymmetry does not survive frequency matching: raw density-CV gap
+> 0.720 collapses to a corrected gap of 0.089 when each token set is compared against random
+> sets matched on its own per-type corpus frequencies (hazard set at the 82nd percentile of its
+> frequency-matched null; recovery at the 36th -- NEITHER anomalous). "Hazard clamped / recovery
+> free" = "common words are folio-uniform, rare words are folio-variable" (Zipf). Compounding:
+> the clamped dimensions were densities/ratios while the free dimensions were raw counts.
+> The REGIME-separation findings below are untested by this audit and stand. Audit:
+> `phases/SELF_CITATION_HEAD_TO_HEAD/scripts/p0_preflight_audits.py`.
+
 ---
 
 ## Statement

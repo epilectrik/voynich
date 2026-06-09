@@ -1,0 +1,261 @@
+{
+ "p4a": {
+  "pairs": [
+   {
+    "pair": [
+     12,
+     23
+    ],
+    "obs_fwd": 0,
+    "obs_bwd": 0,
+    "exp_fwd": 0.0,
+    "exp_bwd": 0.0,
+    "max_exp": 0.0,
+    "live": false
+   },
+   {
+    "pair": [
+     12,
+     9
+    ],
+    "obs_fwd": 0,
+    "obs_bwd": 0,
+    "exp_fwd": 0.0,
+    "exp_bwd": 0.0,
+    "max_exp": 0.0,
+    "live": false
+   },
+   {
+    "pair": [
+     17,
+     23
+    ],
+    "obs_fwd": 8,
+    "obs_bwd": 1,
+    "exp_fwd": 4.91,
+    "exp_bwd": 4.91,
+    "max_exp": 4.91,
+    "live": false
+   },
+   {
+    "pair": [
+     17,
+     9
+    ],
+    "obs_fwd": 6,
+    "obs_bwd": 10,
+    "exp_fwd": 10.1,
+    "exp_bwd": 10.1,
+    "max_exp": 10.1,
+    "live": true
+   },
+   {
+    "pair": [
+     10,
+     23
+    ],
+    "obs_fwd": 7,
+    "obs_bwd": 4,
+    "exp_fwd": 7.59,
+    "exp_bwd": 7.59,
+    "max_exp": 7.59,
+    "live": true
+   },
+   {
+    "pair": [
+     10,
+     9
+    ],
+    "obs_fwd": 8,
+    "obs_bwd": 3,
+    "exp_fwd": 9.88,
+    "exp_bwd": 9.88,
+    "max_exp": 9.88,
+    "live": true
+   },
+   {
+    "pair": [
+     11,
+     23
+    ],
+    "obs_fwd": 11,
+    "obs_bwd": 14,
+    "exp_fwd": 8.52,
+    "exp_bwd": 8.52,
+    "max_exp": 8.52,
+    "live": true
+   },
+   {
+    "pair": [
+     11,
+     9
+    ],
+    "obs_fwd": 20,
+    "obs_bwd": 17,
+    "exp_fwd": 17.72,
+    "exp_bwd": 17.72,
+    "max_exp": 17.72,
+    "live": true
+   },
+   {
+    "pair": [
+     10,
+     12
+    ],
+    "obs_fwd": 0,
+    "obs_bwd": 0,
+    "exp_fwd": 0.0,
+    "exp_bwd": 0.0,
+    "max_exp": 0.0,
+    "live": false
+   },
+   {
+    "pair": [
+     10,
+     17
+    ],
+    "obs_fwd": 8,
+    "obs_bwd": 3,
+    "exp_fwd": 4.28,
+    "exp_bwd": 4.28,
+    "max_exp": 4.28,
+    "live": false
+   },
+   {
+    "pair": [
+     11,
+     12
+    ],
+    "obs_fwd": 0,
+    "obs_bwd": 0,
+    "exp_fwd": 0.0,
+    "exp_bwd": 0.0,
+    "max_exp": 0.0,
+    "live": false
+   },
+   {
+    "pair": [
+     11,
+     17
+    ],
+    "obs_fwd": 7,
+    "obs_bwd": 9,
+    "exp_fwd": 9.02,
+    "exp_bwd": 9.02,
+    "max_exp": 9.02,
+    "live": true
+   },
+   {
+    "pair": [
+     32,
+     12
+    ],
+    "obs_fwd": 0,
+    "obs_bwd": 0,
+    "exp_fwd": 0.0,
+    "exp_bwd": 0.0,
+    "max_exp": 0.0,
+    "live": false
+   },
+   {
+    "pair": [
+     32,
+     17
+    ],
+    "obs_fwd": 12,
+    "obs_bwd": 15,
+    "exp_fwd": 11.97,
+    "exp_bwd": 11.97,
+    "max_exp": 11.97,
+    "live": true
+   },
+   {
+    "pair": [
+     31,
+     12
+    ],
+    "obs_fwd": 0,
+    "obs_bwd": 0,
+    "exp_fwd": 0.0,
+    "exp_bwd": 0.0,
+    "max_exp": 0.0,
+    "live": false
+   },
+   {
+    "pair": [
+     31,
+     17
+    ],
+    "obs_fwd": 7,
+    "obs_bwd": 8,
+    "exp_fwd": 11.96,
+    "exp_bwd": 11.96,
+    "max_exp": 11.96,
+    "live": true
+   },
+   {
+    "pair": [
+     23,
+     9
+    ],
+    "obs_fwd": 29,
+    "obs_bwd": 18,
+    "exp_fwd": 15.63,
+    "exp_bwd": 15.63,
+    "max_exp": 15.63,
+    "live": true
+   }
+  ],
+  "n_live": 9,
+  "k1_verdict": "LIVE",
+  "salvage": {
+   "n_live_pairs": 9,
+   "forbidden_OE": 1.045,
+   "reciprocal_OE": 0.957,
+   "forbidden_obs": 107,
+   "forbidden_exp": 102.4,
+   "reciprocal_obs": 98,
+   "reciprocal_exp": 102.4
+  }
+ },
+ "p4b": {
+  "sets": {
+   "hazard(C783-participants)": {
+    "n_types": 40,
+    "n_tokens": 3646,
+    "cv_density": 0.337,
+    "cv_rawcount": 0.576,
+    "matched_null_cv_mean": 0.296,
+    "matched_null_cv_sd": 0.045,
+    "percentile_vs_null": 0.82
+   },
+   "hazard(9-involved alt)": {
+    "n_types": 52,
+    "n_tokens": 6074,
+    "cv_density": 0.227,
+    "cv_rawcount": 0.621,
+    "matched_null_cv_mean": 0.263,
+    "matched_null_cv_sd": 0.036,
+    "percentile_vs_null": 0.16
+   },
+   "recovery(FL_SAFE 38/40)": {
+    "n_types": 12,
+    "n_tokens": 122,
+    "cv_density": 1.057,
+    "cv_rawcount": 0.969,
+    "matched_null_cv_mean": 1.105,
+    "matched_null_cv_sd": 0.114,
+    "percentile_vs_null": 0.358
+   }
+  },
+  "raw_gap": 0.72,
+  "residual_hazard": 0.041,
+  "residual_recovery": -0.048,
+  "frequency_corrected_gap": 0.089,
+  "k5_verdict": "DEAD (frequency shadow)"
+ },
+ "corpus": {
+  "n_tokens": 23096,
+  "n_classified": 16054
+ }
+}

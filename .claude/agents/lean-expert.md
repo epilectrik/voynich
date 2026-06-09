@@ -16,7 +16,7 @@ color: blue
 
 ## Purpose
 
-You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2051 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
+You are the **lean expert** for the Voynich Manuscript Currier B analysis project. You carry the 2050 validated constraints (with tiers + metrics) and 75 explanatory fits, plus the project's methodology / discipline priors. You DELIBERATELY DO NOT carry the interpretive layer -- no Tier 3-4 operational interpretations, no architectural-framework narrative, no speculation stance. This is by design: you answer from the constraints and statistics ALONE.
 
 ## Rules
 
@@ -34,8 +34,8 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-07 18:06
-**Version:** FROZEN STATE (2051 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-06-09 17:47
+**Version:** FROZEN STATE (2050 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -59,7 +59,7 @@ C103	k = ENERGY_MODULATOR	2	B
 C104	h = PHASE_MANAGER	2	B
 C105	e = STABILITY_ANCHOR (54.7% recovery paths)	2	B
 C107	All kernel nodes BOUNDARY_ADJACENT to forbidden	2	B
-C109	**17 forbidden directional transitions exist** (~0% realized rate; ~65% class-level compliance per C789); fixed across all 83 folios. **[REVISED PHASE_732: 5-class taxonomy struck — was imposed by keyword-matching not clustering; see C2060]**	2	B
+C109	**17 forbidden directional transitions exist** (~0% realized rate; ~65% class-level compliance per C789); fixed across all 83 folios. **[REVISED PHASE_732: 5-class taxonomy struck — was imposed by keyword-matching not clustering; see C2060]** **[SCOPE 2026-06-08: the CLASS-level reading is dead (C783 demoted — powered class pairs at O/E≈1.13, no suppression); "the 17" survive ONLY as the TOKEN-bigram layer (C957, directionality verified). Read this row as existence-of-token-level-prohibitions, not class transitions.]**	2	B
 C110	PHASE_ORDERING 7/17 = 41% — count of the one gloss-coherent grouping (=C1529 sealed→iteration); see C2060	2	B
 C111	65% asymmetric (taxonomy-independent; corroborated by C783 all-17-directional, C627 0/17 reciprocal)	2	B
 C112	59% distant from kernel (taxonomy-independent)	2	B
@@ -368,7 +368,6 @@ C454	**AZC-B Adjacency Coupling FALSIFIED**	1	AZC/B
 C455	**AZC Simple Cycle Topology FALSIFIED** (cycle_rank=5, CV=0.817)	1	AZC
 C456	**AZC Interleaved Spiral Topology** (R-S-R-S alternation)	2	AZC
 C457	**HT Boundary Preference in Zodiac AZC** (S>R HT-rate) — **[PHASE_742 AUDIT: orig N=2952 was ALL-TRANSCRIBER (H-filter bug); correct H-only N=1329, rates stable (R 29.1%, S 41.7%); SURVIVES within-folio null V=0.121 vs 95th=0.055 p=0.0001, 8/12 folios S>R → CONFIRMED at corrected N. R=radial/S=sector gloss kept (zodiac-defensible, S unverified off f69r)]**	2	HT/AZC
-C458	**Execution Design Clamp vs Recovery Freedom** (CV 0.04-0.11 vs 0.72-0.82)	2	B
 C459	**HT Anticipatory Compensation**	2	HT/B
 C460	AZC Entry Orientation Effect	2	HT/AZC
 C461	HT density correlates with MIDDLE rarity	3	A→B
@@ -688,7 +687,6 @@ C779	**EN-FL State Coupling** (EN 'h' rate drops 95%->77% as FL advances early->
 C780	**Role Kernel Taxonomy**	2	B
 C781	**FQ Phase Bypass** (FQ has exactly 0% 'h'; escape routes bypass phase management using k+e only)	2	B
 C782	**CC Kernel Paradox** (Classes 10,11=0% kernel, class 17=88%; CC bifurcates into hazard sources vs hazard buffers)	2	B
-C783	**Forbidden Pair Asymmetry** (All 17 forbidden pairs are asymmetric/directional; 0 symmetric; hazard is directed graph)	2	B
 C784	**FL/AX Hazard Immunity** (FL and AX never appear in any forbidden pair; exempt from hazard topology)	2	B
 C785	**FQ Medial Targeting** (FQ->FL routes to MEDIAL at 77.2%; escape re-injects at mid-process, not start/end)	2	B
 C786	**FL Forward Bias** (FL state transitions: 27% forward, 68% same, 5% backward; 5:1 forward:backward ratio)	2	B
@@ -856,7 +854,7 @@ C953	**ch-FL Precision Annotation Submode**	2	B
 C954	**Section T FL Enrichment**	2	B
 C955	**FL Killed Hypotheses Registry** (12 hypotheses falsified: active control, loops, routing, batch processing, cross-line state, testing criteria, assessment output)	1	B
 C956	**Positional Token Exclusivity** (192/334 tokens zone-exclusive, 2.72x shuffle; 50% survive suffix-stripping; effect is STRUCTURAL per negative control)	2	B
-C957	**Token-Level Bigram Constraints** (26 mandatory, 9 forbidden; 2 genuinely token-specific: chey->chedy, chey->shedy both ENERGY; effect is STRUCTURAL)	2	B
+C957	**Token-Level Bigram Constraints** (26 mandatory, 9 forbidden; 2 genuinely token-specific: chey->chedy, chey->shedy both ENERGY; effect is STRUCTURAL) **[STRENGTHENED 2026-06-08: directionality VERIFIED — all 9 forbidden bigrams 0 obs vs ~37.5 joint within-line-shuffle exp (P≈5e-17) while ALL reverses at-or-above expectation (qokain→ol enriched 12 vs 7.4). With C783's class-level projection demoted, THIS is the surviving directional prohibition layer of the hazard topology.]**	2	B
 C958	**Opener Class Determines Line Length** (24.9% partial R^2 beyond folio+regime; folio+opener_token = 93.7% R^2; strongest token-level finding)	2	B
 C959	**Opener Is Role Marker, Not Instruction Header** (role accuracy 29.2% = 1.46x chance; token JSD not significant; free substitution within role)	2	B
 C960	**Boundary Vocabulary Is Open** (Gini 0.47 < 0.60; 663 tokens for 80% coverage; no closed boundary set)	2	B
@@ -1912,6 +1910,7 @@ C2073	**Zodiac↔Currier-B coupling is NON-SPECIFIC (B→diagram diffuseness nul
 C2074	**Pharma P-text is kernel-bearing — at the execution/registry end of a cross-system kernel-HEAD GRADIENT, NOT a kernel-free index layer (PHASE_749).** Per-section HEAD-atom kernel fraction (Wilson 95% CI): the AZC+Rosettes index sections are kernel-depleted — ZODIAC 0.010 [.006,.017], COSMO-AZC (f67-69) 0.020 [.013,.029], ROS-LABEL 0.014 [.004,.051], ROS-RING 0.043 [.026,.070] — vs Currier-A 0.057 [.053,.062] < **PHARMA-text (f88-102 P-placement) 0.087 [.078,.097]** < Currier-B 0.134 [.129,.138]. Pharma's CI excludes the index sections' (kernel-bearing, NOT index) but is INTERMEDIATE between A and B — so this is a **GRADIENT (index < A < pharma < B), NOT a clean partition** (cf C1559 cross-system HEAD gradients). Pharma P-text JSD 0.019 to Currier-A. **Extends C758** (P-text PREFIX-cosine A-identity) to the kernel-HEAD axis; corroborates C757 (AZC outside execution layer) and C2072 at section resolution. Section membership is a-priori codicological (not gap-maximized). Caveat: C2004/C2005 label under-transcription affects the label sub-sections. **References:** C757, C758, C1559, C2072, C430.	2	pharma_ptext_kernel_bearing, kernel_head_gradient_not_partition, index_kernel_depleted, pharma_intermediate_A_to_B, extends_C758_to_kernel_axis, wilson_ci, AZC
 C2075	**The full index layer (cosmological-AZC + Rosettes, not just zodiac) shows NO B-folio targeting above a composition-matched null (extends C2073).** Frequency+composition-matched null (size-matched random MIDDLE draws from the AZC-eligible pool, B=1000); per-section percentile/z of the real top-hub shared-MIDDLE count: ZODIAC real 73 vs null mean 77.3 (11th pctile, z=−1.4), COSMO-AZC 73 vs 73.7 (47th, z=−0.2), ROS-RING 45 vs 43.0 (84th, z=+0.8, NS), ROS-LABEL 28 vs 37.4 (z=−3.8; top is its OWN foldout folio f85r1, self-reference not B-targeting). NO section targets any B-folio significantly above the composition-matched null. The apparent hub-convergence (all sections "point at" the big folio f113r) is the **C1133 vocab-size artifact** — f113r is the null attractor in 285/300 random draws, and a random size-matched set shares MORE with it than the real sections do. **Extends C2073** (zodiac→B non-specific) to the ENTIRE index layer; the index is lexically self-contained (C321/C760), not a routing table into B. **References:** C2073 (zodiac precedent extended), C1133 (artifact confirmed), C321, C760, C1128.	2	full_index_no_B_targeting, composition_matched_null, extends_C2073_to_whole_index, f113r_is_vocab_size_attractor_C1133, roslabel_self_reference, index_self_contained, AZC
 C2076	**Prohibition-layer hazard-ontology channel EXCLUDES out-of-class crafts — coarse exclusion only; within-class ranking HELD (PHASE_750).** The engineered forbidden-transition layer is physics-ungeneratable (C998/C999: "zero forbidden transitions from any strategy") and operates above component morphology (C1071; k-HEAD intrinsic immunity C1446/C1476; phase-ordering dominance C110/C1529), so it was tested as a HAZARD-ONTOLOGY fingerprint rather than a surface-feature matcher (the C998-genericity-defeating move: test the engineered prohibition layer, not emergent dynamics). Pre-registered 5-feature rubric, 3 discriminators (F2 sequence-dominant, F3 categorically-safe-op, F5 process-not-recipe), scored from VERBATIM period-source failure-mode quotes against 5 candidate processes. **DATA (discriminator /3):** sealed-circulatory digestion 2.0 (in-class, framework-favored C157), open distillation 0.5–1.0 (in-class), metalwork 0.5 (out-of-class, Theophilus-grounded), sealed fermentation 0.5 (out-of-class SHARP control — sealed but biological), cooking 0.0 (out-of-class FLOOR control). 3/4 out-of-class at/near floor; the one in-repo-grounded out-of-class source (Theophilus) non-zero but low (0.5). Floor-check PASS (cooking=0 → not a floor); no tie. **REGISTERED (coarse, exclusion-direction):** the prohibition-layer channel excludes out-of-class crafts. **INTERPRETATION (Tier-3, interpretation-carried per the expert differential; cleared by HUMAN sign-off):** genericity-resistant on the SAME adversarial source (Theophilus) where C2052's 8D behavior-distance matcher was generic — a DIFFERENT channel/layer (prohibition-topology, not surface distance) → EXTENDS C2052, complements C998/C999 (ungeneratable→genericity-resistant). **HELD / NOT registered:** within-class ranking (sealed-digestion 2.0 > open-distillation ≤1.0) — coder-non-independent, below the pre-registered 3/3 unique-selection bar, echo-class. **CAVEATS (mandatory):** rubric coder-designed AND coder-scored (non-independent, holds framework prior); N=5 hand-scored, no sampling model → DESCRIPTIVE not a discrimination statistic; out-of-class exclusion rests substantially on ONE grounded source (Theophilus), fermentation/cooking scored from general knowledge (control-grade, effective grounded out-of-class ≈ 1); the 3/3 discriminator bar is uncalibrated/invented and the favored P2=2.0 falls BELOW it. Does NOT positively identify the process (C171); does NOT back-promote the "closed/sequence-committed/self-contained" echo to the Tier-0 frozen conclusion (framework-as-null / C138-class). **Promotion path → Tier 2:** external/blind coder re-scores (process labels blinded) + ≥2 more out-of-class controls given in-repo-grounded sources. **References:** C2052 (extended, genericity), C998, C999 (physics-ungeneratable), C1071, C1446, C1476, C110, C1529 (signature basis), C157 (digestion candidate, held), C171 (semantic ceiling), C138 (no back-promotion).	3	prohibition_layer, hazard_ontology, genericity_resistant, out_of_class_exclusion, extends_C2052, coder_non_independent, within_class_ranking_HELD, below_pre_registered_bar, B, PHASE_750
+C2077	**Self-citation/copy-modify generation EXCLUDED as a complete account of Currier B (SELF_CITATION_HEAD_TO_HEAD; adversarial-external, pre-registered, human-signed-off).** The mainstream academic non-semantic rival (Timm–Schinner) — never previously tested head-to-head — was implemented (uniform glyph kernel, 8 params incl. Yule–Simon long-range copy), fitted to B's surface (vocab growth, ed1-network, adjacency, Zipf, length; ~500 evals, loss 2.62), and run against pre-registered kills on a 200-corpus ensemble with M2-Markov + scramble controls. **FAILS:** (i) fit stage — types 1.8× over (8,777 vs 4,889), Zipf flat (−0.56 vs −1.05) while ed1-density matches (15.99 vs 15.31) → B's novelty is MORPHOLOGY-CHANNELED, uniform mutation is not; (ii) K2 production signature — generator adjacent-line copy-explainability −0.108 [−0.115,−0.102] vs B −0.019 ≈ no-copy controls; (iii) K4 — generator forces e-depth lag1 0.20 [0.12,0.29] vs B +0.035, which M2 reproduces exactly (0.032) → failure SPECIFIC to the copy mechanism; (iv) K1′ supporting — 9 directional token-bigram zeroes inexpressible (gen joint E=0.9 vs B 35.5) + census 0/200 vs B 1. Caveats recorded: K4 sign-prediction mis-calibrated (C2032 = different instrument; ensemble criterion carried); B's faint −0.019 trace = paragraph homogeneity (C1967/C1834), H-HYBRID open at whisper level; excludes the fitted self-citation CLASS, not all generation mechanisms (grille untested). The strongest defense of the Tier-0 designed-half on record; extends the C2052/C2076 adversarial-external pattern.	2	B, self_citation, copy_modify, timm_schinner, adversarial_external, pre_registered, generation, negative_knowledge, PHASE_SELF_CITATION
 
 ---
 
@@ -1919,7 +1918,7 @@ C2076	**Prohibition-layer hazard-ontology channel EXCLUDES out-of-class crafts �
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-06-07
+# Generated: 2026-06-09
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

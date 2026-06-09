@@ -2,6 +2,15 @@
 
 **Tier:** 2 | **Scope:** B | **Phase:** LINE_CONTROL_BLOCK_GRAMMAR
 
+> **STRENGTHENED (2026-06-08, SELF_CITATION_HEAD_TO_HEAD P4a verification):** directionality
+> independently confirmed at strict word-adjacency -- all 9 forbidden bigrams at 0 observed vs
+> ~37.5 joint within-line-shuffle expectation (P ~ 5e-17), while ALL reverse directions are
+> at-or-above expectation (e.g. qokain->ol 12 obs vs 7.4 exp). With C783's class-level
+> projection demoted, **this token-bigram layer is the surviving directional prohibition
+> structure of the hazard topology.** Note the within-line analytic expectations here (2.0-7.3
+> per pair) are smaller than this file's corpus-wide expectations; the joint zero is what
+> carries the significance.
+
 ## Statement
 
 26 mandatory bigrams (obs/exp > 5.0) and 9 forbidden bigrams (obs = 0, exp >= 5.0) exist at the token level, beyond the known or->aiin (C561). Two forbidden bigrams are genuinely token-specific (same ENERGY class), not explained by role separation.
