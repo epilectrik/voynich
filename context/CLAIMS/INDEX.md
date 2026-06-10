@@ -612,7 +612,7 @@ Every new constraint MUST specify system scope:
 
 | # | Constraint | Tier | Scope | Status |
 |---|------------|------|-------|--------|
-| **497** | **f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits) | 2 | A | ⊂ currier_a |
+| **497** | **f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits) **[FLAG 2026-06-08: margin column is likely a LATER ANNOTATOR's analysis, not authorial teaching — labels don't exemplify lines (0-1/20), ink/pen groups with the foliator's digits, six starred labels = one repeated curl, frame revised between passes; structural facts stand, 'teaches its own reading' should not be load-bearing; see F49V_ANNOTATOR_ANALYSIS]** | 2 | A | ⊂ currier_a |
 
 ---
 

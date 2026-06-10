@@ -10,6 +10,12 @@ Informal observations and exploratory results awaiting formal testing. These are
 
 ## OPEN EXTERNAL PRE-REGISTRATION — score when the paper publishes
 
+### PT-EXT-2: f49v annotator follow-ups (from F49V_ANNOTATOR_ANALYSIS, 2026-06-08)
+- **Paint-layering:** does any f49v margin stroke cross the green pigment? (ink-over-paint = post-illustration; checkable on Beinecke IIIF image 1006171)
+- **Digit paleography:** date the open-top `4` form; compare formally with the foliation digits (Reeds: same hand)
+- **Zero-containment test:** is "lines avoid their own label char" (~6/20 at zero) beyond char-frequency chance?
+- **Decisive:** request multispectral / ink-composition data for the f49v margin column (McCrone 2009 precedent: foliation ink differs from text ink)
+
 ### PT-EXT-1: Layfield & Davis Paper 2 predictions (LOCKED 2026-06-08)
 - **What:** 10 predictions + 2 method-level calls about the forthcoming Layfield & Davis LSA-codicology paper (announced as "currently under review" in DHQ 20.1, article 000857), locked BEFORE publication. Core bet: the A-signal/B-null pattern — herbal-A unshuffling works (local runs, not global sequence), Quire 13/Quire 20 yield NO robust text-internal reordering (receptary has no gradients), no narrative arc.
 - **Where:** `phases/PREREG_LAYFIELD_DAVIS_PAPER2/PRE_REGISTRATION.md` (includes locked scoring protocol + pre-committed anomaly handling if P3/P4/P7 are refuted).

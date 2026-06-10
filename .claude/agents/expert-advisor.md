@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-09 17:47
+**Generated:** 2026-06-09 20:35
 **Version:** FROZEN STATE (2050 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -799,7 +799,7 @@ C493	**Brunschwig Grammar Embedding** (balneum marie procedure fits with 0 forbi
 C494	**REGIME_4 Precision Axis** (encodes precision-constrained execution, not intensity)	2	B
 C495	**SUFFIX–REGIME Compatibility Breadth** (-r universal, -ar/-or restricted; V=0.159)	2	A→B
 C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC
-C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits)	2	A
+C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits) **[FLAG 2026-06-08: margin column is likely a LATER ANNOTATOR's analysis, not authorial teaching — labels don't exemplify lines (0-1/20), ink/pen groups with the foliator's digits, six starred labels = one repeated curl, frame revised between passes; structural facts stand, 'teaches its own reading' should not be load-bearing; see F49V_ANNOTATOR_ANALYSIS]**	2	A
 C498	**Registry-Internal Vocabulary Track** (61.8% A-exclusive MIDDLEs: ct-prefix 5.1×, suffix-less 3×, folio-localized; don't propagate to B)	2	A
 C498.a	**A∩B Shared Vocabulary Bifurcation** (154 AZC-Mediated + 114 B-Native Overlap; pipeline scope narrowed)	2	A
 C498.b	**RI Singleton Population** (~977 singletons, mean 4.82 chars; functional interpretation WEAKENED - see C498.d)	2	A

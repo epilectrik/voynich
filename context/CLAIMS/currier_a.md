@@ -1255,6 +1255,18 @@ This **reverses** the initial hypothesis (that naked = atomic foundation). The r
 ### C497 - f49v Instructional Apparatus Folio
 **Tier:** 2 | **Status:** CLOSED
 
+> **INTERPRETATION FLAG (2026-06-08, F49V_ANNOTATOR_ANALYSIS):** the "instructional apparatus /
+> demonstrates morphology for training" reading assumed the margin column is AUTHORIAL. New
+> evidence points to a LATER ANNOTATION layer instead: (a) the labels do not exemplify their
+> lines (1/20 line-initial, 0/20 line-final; several lines contain ZERO instances of their own
+> label); (b) full-res ink analysis groups the character labels WITH the Western digits 1-5
+> (finer pen ~half stroke width, redder/darker ink) and against the main text; (c) Reeds' prior:
+> the digits match the FOLIATOR's hand; (d) the six starred labels resolve to one repeated
+> r/s-family curl, and the column is a numbered 5-slot frame REVISED between passes (drafting
+> behavior). The structural observations below stand; the "manuscript teaches its own reading"
+> interpretation should not be load-bearing. Likely reading: an early reader's analysis attempt
+> (genre of the f1r marginal alphabet key). See phases/F49V_ANNOTATOR_ANALYSIS/FINDINGS.md.
+
 Folio f49v constitutes a distinct instructional/reference apparatus written in Currier A form but *not functioning as registry content*. It is characterized by:
 - 26 single-character L-placement labels (≈65% of manuscript total), **alternating one-to-one with full Currier A lines**
 - Rare marginal ordinal numbers (1–5) used meta-structurally
