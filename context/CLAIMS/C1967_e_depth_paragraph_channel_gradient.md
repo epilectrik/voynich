@@ -136,6 +136,45 @@ If both pass, the reframing could be promoted.
 
 ---
 
+## Supplement: within-token e-depth↔k-HEAD coupling is energy-channel-localized (off-books, 2026-06-10)
+
+C1967 is a *paragraph-level* gradient (qo paragraphs run hotter on average). A fresh-eyes
+kernel pass found the *within-token* mechanism that underlies it, and — importantly — that it is
+**channel-localized**, which C1967 did not state.
+
+**Observation.** Token-level, k-HEAD presence is flat (~28%) at e-depth 0–1 then steps to ~52% at
+e-depth ≥2 (the balneum-mariae level). Decomposing this pooled step (+0.163) against a
+**within-prefix shuffle null** (permute e-depth among tokens sharing a prefix):
+
+- **~56% is prefix-composition shadow** (null mean +0.091): deep-e tokens are disproportionately
+  qo-family, which is itself k-rich. Real and large — most of the pooled step is *not* a
+  within-channel coupling.
+- **~44% survives within-prefix** (residual +0.072, z=+10.7 vs within-prefix null, p<0.0001): a
+  genuine "deeper-e recruits k-HEAD beyond template" coupling remains after the control.
+
+**The surviving coupling is energy-channel-specific** (per-prefix k% at depth<2 → ≥2):
+
+| prefix | k% <2 → ≥2 | step | channel |
+|---|---|---|---|
+| qo | 61→76% | **+15pp** | heat application |
+| ol | 33→71% | +38pp | (vessel-side; outlier, possibly low-N — not built on) |
+| (headless) | 4→12% | +8pp | — |
+| ch | 19→18% | **−2pp** | active test (NO step) |
+| sh | 15→14% | **−1pp** | passive monitor (NO step) |
+| ok/ot/lk/yk/lch | ~flat | ~0 | k-poor (no room for a step) |
+
+**Refinement to C1967:** the e_depth↔heat coupling is **present in the qo energy channel and
+absent in the ch/sh monitoring channels** — the within-token counterpart of C1967's paragraph
+gradient, and consistent with the C929/C1300 channel architecture (qo drives heat; sh/ch observe).
+
+**What this does NOT add (discipline):** within qo, the surviving coupling is substantially the
+already-known `qok`+`ee` = balneum-mariae template (F-B-007/C1967 viewed from the e-depth side) —
+it is **not** a new mechanism, and the depth-2 "step" is not a hard threshold (e-depth is an
+e-specific memoryless accumulator that thins to depth 4, not a capped register; cf. C1197 atom
+extensibility). The genuinely new descriptive content is only the **channel localization** (qo yes,
+sh/ch no), not a functional-threshold claim. Untested: whether the qo-channel coupling exceeds the
+`qok`-template base rate after a token-template (not just prefix) control — that is the open thread.
+
 ## Falsification
 
 Would be falsified if:

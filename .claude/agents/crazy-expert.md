@@ -179,7 +179,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-06-09 20:44
+**Generated:** 2026-06-10 11:19
 **Version:** FROZEN STATE (2050 validated constraints, 75 fits) [COMPACT]
 
 ---
