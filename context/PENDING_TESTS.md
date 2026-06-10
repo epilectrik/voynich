@@ -11,7 +11,7 @@ Informal observations and exploratory results awaiting formal testing. These are
 ## OPEN EXTERNAL PRE-REGISTRATION — score when the paper publishes
 
 ### PT-EXT-2: f49v annotator follow-ups (from F49V_ANNOTATOR_ANALYSIS, 2026-06-08)
-- **Paint-layering:** does any f49v margin stroke cross the green pigment? (ink-over-paint = post-illustration; checkable on Beinecke IIIF image 1006171)
+- ~~Paint-layering~~ **RUN 2026-06-08: INCONCLUSIVE — no genuine margin-ink/pigment contact exists (1 stroke-grade px of 3,263); column floats clear of the wash. First-pass 'decisive layering' result retracted (threshold artifact).**
 - **Digit paleography:** date the open-top `4` form; compare formally with the foliation digits (Reeds: same hand)
 - **Zero-containment test:** is "lines avoid their own label char" (~6/20 at zero) beyond char-frequency chance?
 - **Decisive:** request multispectral / ink-composition data for the f49v margin column (McCrone 2009 precedent: foliation ink differs from text ink)

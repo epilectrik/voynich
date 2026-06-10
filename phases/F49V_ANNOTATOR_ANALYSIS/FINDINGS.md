@@ -116,8 +116,14 @@ morphological classes correctly separated, terminal family correctly identified,
 
 ## Follow-ups (cheap → decisive)
 
-1. **Paint-layering:** check whether any margin stroke crosses the green plant pigment
-   (ink-over-paint = post-illustration). Checkable on the IIIF scan.
+1. **Paint-layering: RUN 2026-06-08 — INCONCLUSIVE BY GEOMETRY.** At full resolution, the
+   margin column has NO genuine contact with the green pigment: 1 stroke-grade ink pixel of
+   3,263 falls within the (dilated) green zone; the column floats in clean parchment. A first
+   pass with a loose ink threshold produced an apparent "labels-over-paint vs text-under-paint"
+   controlled result — RETRACTED within minutes: the in-wash "ink" was wash mottling (darkness
+   116 vs true strokes' ~47) and the "text-under-paint" population was largely dark paint
+   itself. Lesson logged: stroke-grade thresholds + visual verification before any layering
+   claim. The test cannot decide layering on this folio; M3/M4/Reeds remain the evidence base.
 2. **Digit paleography:** the form of the `4` (open-top in our crops) is datable; compare with
    the foliation digits formally.
 3. **Zero-containment statistics:** is "lines avoid their own label character" (6-ish of 20 at
