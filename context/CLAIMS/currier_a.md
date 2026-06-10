@@ -1265,7 +1265,12 @@ This **reverses** the initial hypothesis (that naked = atomic foundation). The r
 > r/s-family curl, and the column is a numbered 5-slot frame REVISED between passes (drafting
 > behavior). The structural observations below stand; the "manuscript teaches its own reading"
 > interpretation should not be load-bearing. Likely reading: an early reader's analysis attempt
-> (genre of the f1r marginal alphabet key). See phases/F49V_ANNOTATOR_ANALYSIS/FINDINGS.md.
+> (genre of the f1r marginal alphabet key). FURTHER (M6): with the margin excluded, the TEXT is
+> ordinary Currier A — trigram surprise z=-0.43 (NOT phonotactically extreme), exclusive-type
+> RATE normal (+0.83; the "33 exclusive types" is the vocabulary-size artifact). The surviving
+> exceptional fact is LAYOUT: 26 lines / 142 tokens (z=+2.9/+2.8) — the longest list-form page
+> in the herbal, which is also why the annotator chose it. See
+> phases/F49V_ANNOTATOR_ANALYSIS/FINDINGS.md.
 
 Folio f49v constitutes a distinct instructional/reference apparatus written in Currier A form but *not functioning as registry content*. It is characterized by:
 - 26 single-character L-placement labels (≈65% of manuscript total), **alternating one-to-one with full Currier A lines**

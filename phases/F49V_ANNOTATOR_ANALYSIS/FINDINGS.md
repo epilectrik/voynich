@@ -77,6 +77,38 @@ measure. Caveats: single JPEG, one lighting pass, margins fade differently than 
   the manuscript, with `-ky`/`-sy` its siblings — `d y s k y` reads naturally as the endings
   inventory (d-y, s-y, k-y).
 
+### M6. The folio WITH the noise removed: an ordinary page with an extraordinary layout
+
+Re-profiled text-only (labels excluded) against 94 herbal-A peers:
+
+| metric | f49v | z vs peers |
+|---|---|---|
+| char-trigram surprise | 1.628 | **−0.43 (average!)** |
+| folio-exclusive type rate | 0.330 | +0.83 (unremarkable) |
+| token length | 5.32 | +1.43 |
+| single-char in-text tokens | 4.2% | +0.3 (normal) |
+| **lines** | **26** | **+2.92 — most in the herbal** |
+| **tokens** | **142** | **+2.82** |
+
+**The C497-era characterization dissolves:** the text is NOT phonotactically extreme (surprise
+below average), the "33 exclusive types" is the vocabulary-size artifact (more tokens → more
+exclusives mechanically; rate is normal), and "demonstrates morphology limits" was the teaching
+lens interpreting ordinary vocabulary through the annotator's column. **What is real and
+exceptional is the LAYOUT: f49v is the longest list in the herbal** — 26 short line-atomic
+records, the registry at its most tabular.
+
+This also resolves the annotator-selection question: of ~95 herbal pages, he annotated the one
+that *looks most like a table/index* — 26 neat rows with the widest usable margin. A
+cipher-minded reader attacks the most structured-looking page. His eye and our z-scores
+identified the same anomaly, five centuries apart: this page is a list. The page's form
+explains his presence; his presence explains nothing about the page.
+
+**Additional constraint-base consequences:** C497's "phonotactically extreme" and
+"33 exclusive types" legs should be read as artifacts (lens + vocabulary-size); the surviving
+structural fact is the list-form layout. f49v's membership in the four-scaffold-outlier family
+(C2014/C2020) should be re-verified label-free — its LM-outlier status may have been carried
+by the margin column.
+
 ## Scholarly prior
 
 Jim Reeds (transcription commentary, via voynich.nu transliteration file): the digits "seem to
