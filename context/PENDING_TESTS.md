@@ -8,6 +8,15 @@ Informal observations and exploratory results awaiting formal testing. These are
 
 ---
 
+## OPEN EXTERNAL PRE-REGISTRATION — score when the paper publishes
+
+### PT-EXT-1: Layfield & Davis Paper 2 predictions (LOCKED 2026-06-08)
+- **What:** 10 predictions + 2 method-level calls about the forthcoming Layfield & Davis LSA-codicology paper (announced as "currently under review" in DHQ 20.1, article 000857), locked BEFORE publication. Core bet: the A-signal/B-null pattern — herbal-A unshuffling works (local runs, not global sequence), Quire 13/Quire 20 yield NO robust text-internal reordering (receptary has no gradients), no narrative arc.
+- **Where:** `phases/PREREG_LAYFIELD_DAVIS_PAPER2/PRE_REGISTRATION.md` (includes locked scoring protocol + pre-committed anomaly handling if P3/P4/P7 are refuted).
+- **Action when their paper appears:** score every item against quoted passages; high score = toolchain-independent external validation of C346/C424/C1839-family; refutations = real anomalies requiring reconciliation, pre-committed.
+
+---
+
 ## Awaiting SISMEL Catalan Text
 
 ### PT-001: Paragraph-level atom profiles track recipe stages
