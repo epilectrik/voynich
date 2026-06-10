@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-06-10 11:19
+**Generated:** 2026-06-10 11:32
 **Version:** FROZEN STATE (2050 validated constraints, 75 fits) [COMPACT]
 
 ---

@@ -143,16 +143,20 @@ kernel pass found the *within-token* mechanism that underlies it, and — import
 **channel-localized**, which C1967 did not state.
 
 **Observation.** Token-level, k-HEAD presence is flat (~28%) at e-depth 0–1 then steps to ~52% at
-e-depth ≥2 (the balneum-mariae level). Decomposing this pooled step (+0.163) against a
-**within-prefix shuffle null** (permute e-depth among tokens sharing a prefix):
+e-depth ≥2 (the balneum-mariae level), pooled step +0.163.
 
-- **~56% is prefix-composition shadow** (null mean +0.091): deep-e tokens are disproportionately
-  qo-family, which is itself k-rich. Real and large — most of the pooled step is *not* a
-  within-channel coupling.
-- **~44% survives within-prefix** (residual +0.072, z=+10.7 vs within-prefix null, p<0.0001): a
-  genuine "deeper-e recruits k-HEAD beyond template" coupling remains after the control.
+**This is NOT a functional "recruitment" coupling (corrected 2026-06-10).** k and e occupy
+independent morphological slots, so the association is purely *between-template* co-occurrence:
+k-bearing templates (qok-family) carry more e's than non-k templates. A token-template control
+(collapse e-runs → shuffle e-depth within e-collapsed template) is degenerate — k is template-
+invariant, so the statistic cannot move (null = obs ±0.000). The earlier within-PREFIX control
+(~44% "surviving" at z=+10.7) was the coarser qok-vs-qot sub-gradient *within* qo-prefix — i.e.,
+**C1967's channel gradient at token level, not a new mechanism.** There is no "deeper-e recruits
+heat" effect to find; the framing "coupling" is withdrawn in favour of "k-bearing templates carry
+more e," which is C1967 itself.
 
-**The surviving coupling is energy-channel-specific** (per-prefix k% at depth<2 → ≥2):
+**What survives is purely descriptive: e-stacking is energy-channel-localized** (per-prefix
+k% at depth<2 → ≥2 — read as "which prefixes' high-e tokens are k-bearing," not as recruitment):
 
 | prefix | k% <2 → ≥2 | step | channel |
 |---|---|---|---|
@@ -167,13 +171,24 @@ e-depth ≥2 (the balneum-mariae level). Decomposing this pooled step (+0.163) a
 absent in the ch/sh monitoring channels** — the within-token counterpart of C1967's paragraph
 gradient, and consistent with the C929/C1300 channel architecture (qo drives heat; sh/ch observe).
 
-**What this does NOT add (discipline):** within qo, the surviving coupling is substantially the
-already-known `qok`+`ee` = balneum-mariae template (F-B-007/C1967 viewed from the e-depth side) —
-it is **not** a new mechanism, and the depth-2 "step" is not a hard threshold (e-depth is an
-e-specific memoryless accumulator that thins to depth 4, not a capped register; cf. C1197 atom
-extensibility). The genuinely new descriptive content is only the **channel localization** (qo yes,
-sh/ch no), not a functional-threshold claim. Untested: whether the qo-channel coupling exceeds the
-`qok`-template base rate after a token-template (not just prefix) control — that is the open thread.
+**What this does NOT add (discipline).** The only durable content is the **channel localization**
+(e-stacking sits on the qo energy channel, absent in sh/ch monitoring) — a token-level echo of
+C1967's paragraph gradient, mediated entirely by the `qok`+`ee` balneum-mariae template
+(F-B-007/C1967 from the e-depth side). It is **not** a new mechanism, **not** a functional
+recruitment (k/e are independent slots — see correction above), and the depth-2 "step" is not a
+hard threshold (e-depth is an e-specific *memoryless* accumulator thinning to depth 4, not a
+capped register; cf. C1197).
+
+**Dual-tally hypothesis TESTED and NOT supported (2026-06-10).** Probed whether i — the *other*
+extensible atom (C1197) — is a structural-side counter mirroring e's energy-side role. Across
+prefixes, mean e-depth and mean i-depth anti-correlate strongly (**r=−0.87**): e concentrates on
+fire-side/kernel prefixes (sh/ch/qo/lk), i on the da/sa/aiin family (where e≈0.02). But the
+distributions differ in kind — e *decays from 0* (memoryless modulator), i *peaks at 2*
+(r2/r1=1.28, the `ii` of aiin is the morpheme norm). So i is the fixed minim-spelling of structural
+aiin-family morphemes, **not** a graded tally. The anti-localization is the known
+operational-vs-structural token split (graded-e operational tokens vs morpheme-fixed-i structural
+tokens) — a sharper statement of *why* e and i are C1197's two extensible atoms (extensible for
+opposite reasons), but **no second counting system.**
 
 ## Falsification
 
