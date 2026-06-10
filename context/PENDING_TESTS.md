@@ -23,6 +23,47 @@ Informal observations and exploratory results awaiting formal testing. These are
 
 ---
 
+## Count-Anchor Interpretation Caveats
+
+### PT-CA-1: f75r ×4∧×9 — the counts are NOT a "concentration ladder" (correction, 2026-06-09)
+Off-books close-read of the actual SISMEL Catalan III.19 text + Brunschwig 1512, prompted by
+"are the ×4/×9 just degrees of concentration?" Three corrections to how the anchor's *semantics*
+were being framed in conversation (the *statistical* match — f75r has a corpus-rare 4-cluster L13
+∧ 9-cluster L37–38, p≈0.6%, Phase 636 five-level — is **unaffected**; only the interpretation of
+*what the counts mean* is corrected):
+
+1. **"Concentration ladder" framing WITHDRAWN.** A conversational gloss (2026-06-09) assimilated
+   the Testamentum's ×4/×9 to Brunschwig's clean redistillation-grade ladder (×4 = common aqua
+   vitae → ×8–9 = quintessence). This was imported from Brunschwig without reading III.19, and is
+   wrong for the Testamentum. *Never committed to any file* — logged here as withdrawn.
+2. **III.19's ×4 is a RENEWAL count, not a concentration grade — and partly a scribal variant.**
+   The Catalan reads *"novellant la bresca a cascuna segona distillació per quatre vegades... e
+   aprés ix vegades"* = "renewing the [bresca/feedstock] **at each second distillation, four
+   times**... and after **nine times**." So ×4 = material-refeed cadence (every 2nd pass, 4×);
+   ×9 = total distillation passes — **two different axes**, not two rungs of one scale. A second
+   occurrence reads *"per quatre vegades **aliter** .ix. vegades"* (*aliter* = "otherwise") —
+   i.e., the manuscript tradition itself records ×4 and ×9 as **variant readings of one count**.
+   Both facts are caveats on treating ×4∧×9 as one stable single-recipe feature.
+3. **f75r's ×4 closed-cycle is a LOCALIZED cluster (L13), not distributed/periodic.** Tested the
+   discriminating prediction: the "renew every 2nd pass" reading predicts a spread/periodic ×4;
+   a discrete-stage reading predicts a clustered ×4. f75r's ×4 (closed-cycle qok…dy) sits tight
+   on L13; ×9 on L37–38. Structural fact, weakly more consistent with discrete-stage than
+   distributed-renewal — **but NOT a source-discriminator** (a localized "renew 4×" *instruction*
+   would also cluster) and **explicitly NOT a Brunschwig reattribution.** Per **C2052**
+   (matcher-genericity) same-tradition sources are not discriminable; Brunschwig's ×4/×9 are in
+   *separate* recipes while III.19 has the conjunction in *one* chapter, so the conjunction still
+   favors III.19. Defensible reading remains: **the Voynich encodes the aqua-vitae/quintessence
+   tradition's count-constants, attested in both Brunschwig 1512 and the Testamentum — tradition,
+   not a specific book.**
+
+Provenance: SISMEL `sources/sismel_testamentum/ocr/sismel_testamentum_286_R.txt:15`,
+`_35_L.txt:17`; Brunschwig `sources/brunchwig-zip/brunschwig_1512_corrected.txt` (×4 @4528/15214,
+×8–9 quintessence @5358, balneo Marie @5179/26488). Method note: this thread also surfaced 5
+same-shape source-completeness slips in one session (truncated greps / one-of-two-books / wrong
+surface) — read the full source line before assimilating to a tidy frame.
+
+---
+
 ## Awaiting SISMEL Catalan Text
 
 ### PT-001: Paragraph-level atom profiles track recipe stages
