@@ -4,6 +4,33 @@
 
 ---
 
+## Version 7.20 (2026-06-15) — C2078: A/B construction difference localized to multi-char suffix
+
+**Summary:** Tail of the Phase-691 LM exploration. A char-level construction model (conditional
+entropy H(next char | prev 2 chars)) on the 395 shared MIDDLEs, root-frequency-matched, shows the
+A/B within-token construction difference is NOT uniform "B tighter" — it reverses by region and
+localizes to multi-character suffix construction: PREFIX −0.049 / CORE −0.025 (B looser), SUFFIX
+length-1 null (+0.019), SUFFIX length-2 **+0.295** (B much tighter). A and B build the same roots
+and same single-char closures identically; B grammaticalizes multi-char closures while A attaches
+them freely. **C2078 Tier 2.**
+
+**Differential-check validation (the method working):** routed past expert-advisor (novelty:
+PARTIALLY NEW — extends C522, sharpens C2009, distinguish from C1514) AND lean-expert (rigor:
+quantity is new, but caught an un-controlled suffix-LENGTH confound). The experts DIVERGED on the
+aggregate closure number — advisor ready to register, lean flagged length. Running lean's demanded
+controls ($-exclusion: effect GREW, refuting the terminal-artifact theory; length-stratification:
+survives at fixed length-2, null at length-1) RESOLVED the divergence and sharpened the finding.
+Control history: naive +0.165 → +0.041 after frequency-match (¾ was frequency-shadow) → localized
+to multi-char suffix. C171-safe measurement; the "B=executable / A=registry" reading held
+Tier-3/4 (framework-as-null), out of the constraint. Validated total 2050 → 2051.
+
+| Change | Detail |
+|---|---|
+| +C2078 (Tier 2) | A/B construction-determinism difference localized to multi-char suffix; prefix/core reversed (B looser) |
+| Validated total | 2050 → 2051 |
+
+---
+
 ## Version 7.19 (2026-06-08) — SELF_CITATION_HEAD_TO_HEAD: the mainstream rival excluded (C2077); C458/C783 demoted
 
 ### Trigger
