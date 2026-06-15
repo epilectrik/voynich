@@ -1,10 +1,33 @@
 # C2078: A/B Within-Token Construction-Determinism Difference is Localized to Multi-Character Suffix Construction
 
-**Tier:** 2
+> **RETRACTED 2026-06-15 (same day as registration). STATUS:RETRACTED.**
+> The entire effect is a **marginal-frequency shadow**, not conditional-arrangement determinism.
+> Two decisive controls — flagged by lean-expert in the original review but run AFTER registration —
+> killed it:
+> - **`-dy` census (suffix leg):** removing the `-dy/-edy/-eedy` family collapses the len-2 closure
+>   gap from +0.297 to **−0.010 [−0.032,+0.009]** (exact null). B's low suffix entropy is the ~63%
+>   `-dy` marginal concentration (already owned by C283 `-edy` 191× enriched, C919, C1514), NOT
+>   distributed arrangement determinism.
+> - **Prefix/core marginal decomposition (the reversal):** ΔH_cond(prefix) −0.050 decomposes into
+>   ΔH_marg −0.237 (B's flatter prefix marginal = more prefix *variety*, known) + arrangement-info
+>   ΔI −0.187 in the OPPOSITE direction (B prefix arrangement is if anything *tighter*). So "B looser
+>   in prefix" is a marginal artifact, not arrangement. Same for core.
+> **No conditional-arrangement A/B construction difference survives marginal control.** Every leg
+> reduces to known marginal-frequency facts (B `-dy`-heavy suffix; B prefix-variety). Panel: lean
+> RETRACT; advisor SPLIT collapsed to RETRACT once the reversal failed its own control.
+> **Failure modes:** marginal-frequency-shadow + sufficient-vs-necessary-control (5 necessary
+> controls passed, none targeted the mechanism) + premature-registration (registered before
+> discharging the marginal-shuffle control lean flagged in review). Kept as negative knowledge: the
+> construction-entropy lens, marginal-controlled, shows A and B build shared roots IDENTICALLY in
+> arrangement; the apparent gaps are marginal concentration (C283/C1514). Not counted as validated.
+> *Open, NOT claimed:* the ΔI arrangement-info (B prefix more context-determined) needs its own
+> marginal controls before any registration.
+
+**Tier:** ~~2~~ RETRACTED → negative knowledge
 **Scope:** A, B, construction, suffix, closure, within-token
-**Date:** 2026-06-15
-**Class:** structural measurement (C171-safe; not a mechanism/referent claim)
-**Validation:** expert-advisor (novelty) + lean-expert (rigor) differential check — see below.
+**Date:** 2026-06-15 (registered AND retracted same day)
+**Class:** ~~structural measurement~~ marginal-frequency-shadow (the construction-entropy gap was the marginal, not arrangement)
+**Validation:** expert-advisor + lean-expert + crazy-expert(hurter) — the differential check + the lean-flagged controls retracted it; see below.
 
 ---
 

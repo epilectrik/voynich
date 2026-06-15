@@ -4,6 +4,37 @@
 
 ---
 
+## Version 7.21 (2026-06-15) — C2078 RETRACTED same-day (marginal-frequency shadow)
+
+**Summary:** C2078, registered hours earlier, is RETRACTED. Two controls — both flagged by
+lean-expert in the original review but run AFTER registration — showed the entire effect is a
+**marginal-frequency shadow**, not conditional-arrangement determinism:
+- **`-dy` census:** removing the `-dy/-edy/-eedy` family collapses the len-2 closure gap +0.297 →
+  **−0.010** (exact null). B's low suffix entropy is the ~63% `-dy` marginal concentration, already
+  owned by C283 (`-edy` 191× enriched), C919, C1514.
+- **Prefix/core marginal decomposition:** the "B looser" reversal decomposes to ΔH_marg −0.237
+  (B's flatter prefix marginal = more prefix VARIETY, known) + arrangement-info ΔI −0.187 in the
+  OPPOSITE direction (B arrangement if anything tighter). Marginal artifact, not arrangement.
+
+No conditional-arrangement A/B construction difference survives marginal control. Panel: lean
+RETRACT; advisor SPLIT collapsed to RETRACT once the reversal failed its own control; crazy-expert
+proposed the `-dy` census (the hurter) that started the unwind. **Failure modes: marginal-frequency-
+shadow + sufficient-vs-necessary-control (5 necessary controls passed, none targeted the mechanism)
++ premature-registration (registered before discharging the marginal-shuffle control lean flagged
+in review).** Lesson logged: when the rigor reviewer names a specific DISCRIMINATING control, it is
+a gate — run before registration. Kept as negative knowledge (A and B build shared roots IDENTICALLY
+in arrangement; the apparent gaps are marginal concentration, C283/C1514). The ΔI arrangement-info
+(B prefix more context-determined) is flagged OPEN, NOT claimed, pending its own marginal controls.
+Validated total 2051 → 2050; retracted 17 → 18.
+
+| Change | Detail |
+|---|---|
+| C2078 | RETRACTED same-day — marginal-frequency shadow, reduces to known C283/C1514 |
+| Validated total | 2051 → 2050 |
+| Retracted | 17 → 18 |
+
+---
+
 ## Version 7.20 (2026-06-15) — C2078: A/B construction difference localized to multi-char suffix
 
 **Summary:** Tail of the Phase-691 LM exploration. A char-level construction model (conditional
