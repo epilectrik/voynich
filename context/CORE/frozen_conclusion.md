@@ -23,7 +23,7 @@ This conclusion rests on the internal structure of the text and was frozen by hu
 | Folios enumerated | 83 | Each folio is a complete program |
 | Instructions cataloged | 75,248 | Total executable content |
 | Translation-eligible zones | 0 | Pure operational, no referents |
-| Forbidden transitions | 9 token-level directional zero bigrams (C957) | Class-level "17 in 5 hazard classes" demoted (C783) and the 5-class taxonomy found imposed (C2060); the real corpus has 13 class-level violations (C2063). C957 awaits a within-line, position-preserving screen-level null |
+| Forbidden transitions | none beyond known effects | Class-level "17 in 5 hazard classes" demoted (C783); the 5-class taxonomy imposed (C2060); 13 class-level violations in the real corpus (C2063); the token-level zeros (C957) reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, PHASE_756) |
 | LINK density | 13.2% | ol-morphology tokens, role-stratified (C609, C1174) |
 
 ---
@@ -40,7 +40,7 @@ Three operators (k, h, e) form the control core:
 - **e** = STABILITY_ANCHOR (maintain stable state, 54.7% of recovery paths)
 
 ### Narrow Viability Regime
-The system operates within tight bounds. [Corrected 2026-09-27: the evidence is a small set of token-level directional zero bigrams (C957), not 17 absolutely forbidden class transitions (C783 demoted; C2063 counts 13 violations).]
+The system operates within tight bounds. [Corrected 2026-09-27/28: there is no surviving evidence of forbidden transitions beyond known effects — the class level is demoted (C783; C2063 counts 13 violations) and the token-level zeros reduce to line composition, positional zones and boundary glyph coupling (C2081). The tight bounds that remain are the measured properties: boundary coupling, positional vocabulary, prefix alternation.]
 
 ### Single Shared Grammar
 All 83 Currier B programs use the same 49 instruction classes. There are no dialects, variants, or exceptions. The grammar is universal within B.
@@ -67,7 +67,7 @@ The frozen conclusion rests on these structural facts:
 
 1. **Grammar closure** (Phase 20): 479 token types reduce to 49 classes with 0 loss
 2. **Coverage** (Phase 21): the 49 classes cover the grammar's own vocabulary; that vocabulary is 69.5% of Currier B tokens (C124, C566) [corrected 2026-09-27; was "every Currier B token parses"]
-3. **Forbidden topology** (Phase 18): [corrected 2026-09-27] token-level directional zeros (C957) survive; the class-level "17 transitions, 0 violations" does not (C783 demoted; C2063: 13 violations in the real corpus)
+3. **Forbidden topology** (Phase 18): [corrected 2026-09-28] does not survive — class level demoted (C783; C2063: 13 violations); token-level zeros reduce to known positional and boundary effects (C2081)
 4. **Kernel dominance** (Phase 15): k, h, e form a control core that no surrogate reproduced
 5. **Convergence** (Phase 13-14): 57.8% of programs terminate in STATE-C [2026-09-27: reframed as occupancy / thematic dominance, not sequential convergence — C1401–C1403; PHASE_736 found AXM self-transition is composition]
 6. **Folio = program** (Phase 22): Each folio is complete and self-contained

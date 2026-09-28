@@ -1281,7 +1281,7 @@ program_structure:
     token_level_constraints:
       positional_exclusivity: "192/334 common tokens are zone-exclusive (2.72x shuffle); STRUCTURAL per negative control (C956)"
       mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
-      forbidden_bigrams: "9 forbidden token bigrams (obs=0, exp>=5); 2 genuinely token-specific: chey->chedy, chey->shedy (C957)"
+      forbidden_bigrams: "SUPERSEDED (C2081): C957's 9 zero bigrams reduce to line composition, positional zones and boundary glyph coupling under a joint null"
       structural_origin: "Most token-level effects are STRUCTURAL (role/position driven), not lexical — confirmed by negative control (C956, C964)"
     fl_state_tracking:
       statement: "FL MIDDLEs track state progression WITHIN each line (C777)"

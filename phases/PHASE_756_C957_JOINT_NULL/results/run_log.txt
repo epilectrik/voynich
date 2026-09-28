@@ -1,0 +1,253 @@
+other-track pair counts: F=18762, C=7945, V=5839, T=4787, G=3084, U=2238
+
+=== EVA: {'unit': 'EVA', 'lines': 2299, 'tokens': 21610, 'blockers': 22, 'common_tokens': 315, 'vocab': 4640, 'first_units': 19, 'last_units': 19, 'sections': ['B', 'C', 'H', 'S', 'T'], 'edges_per_section': {'B': 5478, 'C': 1101, 'H': 3038, 'S': 9381, 'T': 294}, 'tv_groups': ['B', 'C+T', 'H', 'S'], 'coupling_K': {'B': 0.2559711780175233, 'C+T': 0.22329260929330302, 'H': 0.180035872150045, 'S': 0.22534174653112746}, 'tolerance': {'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}, 'movable_medial_tokens': 17017, 'proposals_per_sweep': 16989, 'fraction_changed_denominator': 16989, 'frozen_lines': 38, 'real_common_bigrams': 9216}
+  pilot EVA beta=0.5: fc=0.845 L1 real/N1=2571/2563 tv_real=[0.0663, 0.0904, 0.0627, 0.0635] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=False
+  pilot EVA beta=1.0: fc=0.838 L1 real/N1=759/755 tv_real=[0.0142, 0.0407, 0.0257, 0.0173] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=False
+  pilot EVA beta=2.0: fc=0.836 L1 real/N1=102/106 tv_real=[0.002, 0.0062, 0.0044, 0.0019] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=True
+  pilot EVA beta=4.0: fc=0.562 L1 real/N1=1/4 tv_real=[0.0, 0.0, 0.0001, 0.0] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=True
+  pilot EVA beta=8.0: fc=0.528 L1 real/N1=0/8 tv_real=[0.0, 0.0, 0.0, 0.0] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=True
+  EVA: main run beta=8.0 scale=1
+  EVA pass1 chain 1: 32.7s
+  EVA pass1 chain 2: 30.8s
+  EVA pass1 chain 3: 28.3s
+  EVA pass1 chain 4: 33.6s
+  EVA pass1 chain 1: 60.3s
+  EVA pass1 chain 2: 59.9s
+  EVA pass1 chain 3: 62.7s
+  EVA pass1 chain 4: 59.3s
+  EVA pass1 chain 1: 128.3s
+  EVA pass1 chain 2: 118.7s
+  EVA pass1 chain 3: 117.6s
+  EVA pass1 chain 4: 113.9s
+  EVA pass2 chain 5: 28.3s
+  EVA pass2 chain 6: 29.3s
+  EVA pass2 chain 7: 29.0s
+  EVA pass2 chain 8: 28.1s
+C:\git\voynich\phases\PHASE_756_C957_JOINT_NULL\scripts\c957_joint_null_n5.py:386: RuntimeWarning: divide by zero encountered in scalar divide
+  return float(np.sqrt((between / within + n - 1) / n))
+  EVA diagnostics (beta=8.0, scale=1): rhat_Z3=1.492, rhat_L1=inf, rhat_fc=1.736, ess_Z3=7.476, ess_L1=4.032, ess_fc=6.113, fraction_changed_mean=0.6803, fraction_changed_all_positions_mean=0.5348, L1_mean=0.5, candidate_jaccard_pass1=0.6294, passed=False
+     tv_mean={'B': 0.0, 'C+T': 0.0, 'H': 0.0, 'S': 2.6649610915681976e-05} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}
+  EVA: main run beta=8.0 scale=2
+  EVA pass1 chain 1: 60.8s
+  EVA pass1 chain 2: 77.6s
+  EVA pass1 chain 3: 73.8s
+  EVA pass1 chain 4: 92.9s
+  EVA pass1 chain 1: 214.8s
+  EVA pass1 chain 2: 173.9s
+  EVA pass1 chain 3: 255.0s
+  EVA pass1 chain 4: 224.4s
+  EVA pass1 chain 1: 485.4s
+  EVA pass1 chain 2: 502.8s
+  EVA pass1 chain 3: 633.2s
+  EVA pass1 chain 4: 495.6s
+  EVA pass2 chain 5: 161.0s
+  EVA pass2 chain 6: 158.5s
+  EVA pass2 chain 7: 146.8s
+  EVA pass2 chain 8: 134.0s
+  EVA diagnostics (beta=8.0, scale=2): rhat_Z3=1.259, rhat_L1=1, rhat_fc=1.829, ess_Z3=11.3, ess_L1=8000, ess_fc=5.78, fraction_changed_mean=0.6809, fraction_changed_all_positions_mean=0.5353, L1_mean=0, candidate_jaccard_pass1=0.5983, passed=False
+     tv_mean={'B': 0.0, 'C+T': 0.0, 'H': 0.0, 'S': 0.0} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}
+  EVA: main run beta=4.0 scale=1
+  EVA pass1 chain 1: 58.7s
+  EVA pass1 chain 2: 59.3s
+  EVA pass1 chain 3: 57.3s
+  EVA pass1 chain 4: 54.2s
+  EVA pass1 chain 1: 103.5s
+  EVA pass1 chain 2: 105.3s
+  EVA pass1 chain 3: 104.9s
+  EVA pass1 chain 4: 110.1s
+  EVA pass1 chain 1: 206.0s
+  EVA pass1 chain 2: 224.7s
+  EVA pass1 chain 3: 222.4s
+  EVA pass1 chain 4: 202.9s
+  EVA pass2 chain 5: 55.7s
+  EVA pass2 chain 6: 54.3s
+  EVA pass2 chain 7: 51.8s
+  EVA pass2 chain 8: 51.7s
+  EVA diagnostics (beta=4.0, scale=1): rhat_Z3=1.081, rhat_L1=1.102, rhat_fc=2.278, ess_Z3=31.87, ess_L1=26.65, ess_fc=5.019, fraction_changed_mean=0.7444, fraction_changed_all_positions_mean=0.5852, L1_mean=1.827, candidate_jaccard_pass1=0.7344, passed=False
+     tv_mean={'B': 2.555677254472438e-06, 'C+T': 0.00015125448028673936, 'H': 0.00015503620803160298, 'S': 2.3211811107557782e-05} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}
+  EVA: main run beta=4.0 scale=2
+  EVA pass1 chain 1: 103.7s
+  EVA pass1 chain 2: 97.0s
+  EVA pass1 chain 3: 93.2s
+  EVA pass1 chain 4: 91.5s
+  EVA pass1 chain 1: 206.8s
+  EVA pass1 chain 2: 206.7s
+  EVA pass1 chain 3: 204.6s
+  EVA pass1 chain 4: 213.6s
+  EVA pass1 chain 1: 453.5s
+  EVA pass1 chain 2: 429.6s
+  EVA pass1 chain 3: 462.3s
+  EVA pass1 chain 4: 440.6s
+  EVA pass2 chain 5: 105.0s
+  EVA pass2 chain 6: 100.8s
+  EVA pass2 chain 7: 99.7s
+  EVA pass2 chain 8: 105.1s
+  EVA diagnostics (beta=4.0, scale=2): rhat_Z3=1.073, rhat_L1=1.051, rhat_fc=2.144, ess_Z3=33.88, ess_L1=68.82, ess_fc=5.154, fraction_changed_mean=0.7716, fraction_changed_all_positions_mean=0.6066, L1_mean=2.014, candidate_jaccard_pass1=0.7721, passed=False
+     tv_mean={'B': 2.2133990507484506e-06, 'C+T': 0.00011451612903226096, 'H': 0.00018420836076367482, 'S': 2.938119603453842e-05} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}
+  EVA: main run beta=2.0 scale=1
+  EVA pass1 chain 1: 46.1s
+  EVA pass1 chain 2: 45.4s
+  EVA pass1 chain 3: 46.4s
+  EVA pass1 chain 4: 48.3s
+  EVA pass2 chain 5: 51.3s
+  EVA pass2 chain 6: 48.0s
+  EVA pass2 chain 7: 47.9s
+  EVA pass2 chain 8: 47.9s
+  EVA diagnostics (beta=2.0, scale=1): rhat_Z3=1.001, rhat_L1=1.001, rhat_fc=1.003, ess_Z3=3312, ess_L1=1800, ess_fc=541.5, fraction_changed_mean=0.8343, fraction_changed_all_positions_mean=0.6559, L1_mean=103.2, candidate_jaccard_pass1=0.9611, passed=False
+     tv_mean={'B': 0.0019384811975173611, 'C+T': 0.006076881720430087, 'H': 0.004948897300855825, 'S': 0.0018495629463809963} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}
+  EVA: main run beta=2.0 scale=2
+  EVA pass1 chain 1: 94.2s
+  EVA pass1 chain 2: 95.7s
+  EVA pass1 chain 3: 94.4s
+  EVA pass1 chain 4: 94.6s
+  EVA pass2 chain 5: 95.2s
+  EVA pass2 chain 6: 99.7s
+  EVA pass2 chain 7: 100.5s
+  EVA pass2 chain 8: 103.6s
+  EVA diagnostics (beta=2.0, scale=2): rhat_Z3=1, rhat_L1=1.001, rhat_fc=1.001, ess_Z3=6570, ess_L1=3279, ess_fc=1115, fraction_changed_mean=0.8345, fraction_changed_all_positions_mean=0.6561, L1_mean=102.7, candidate_jaccard_pass1=0.9802, passed=True
+     tv_mean={'B': 0.001950734757210636, 'C+T': 0.006015412186380103, 'H': 0.00491478768926918, 'S': 0.0018339595991898536} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.0180035872150045, 'S': 0.02}
+  EVA Z3_clean: cand=247 Z_real=2 null 1.98±1.39 q99=6.0 p=0.5962 | extrap mean 2.01 p'=0.5962 | loo[chey->chedy] p=0.8599
+  EVA Z3_raw: cand=250 Z_real=5 null 2.02±1.41 q99=6.0 p=0.0545 | extrap mean 2.07 p'=0.0545 | loo[aiin->aiin] p=0.1430
+  EVA Z5_clean: cand=93 Z_real=0 null 0.05±0.23 q99=1.0 p=1.0000 | extrap mean 0.08 p'=1.0000 | loo[None] p=1.0000
+  EVA Z5_raw: cand=94 Z_real=1 null 0.05±0.23 q99=1.0 p=0.0521 | extrap mean 0.08 p'=0.0521 | loo[aiin->aiin] p=1.0000
+
+=== GLYPH: {'unit': 'GLYPH', 'lines': 2299, 'tokens': 21610, 'blockers': 22, 'common_tokens': 315, 'vocab': 4640, 'first_units': 28, 'last_units': 32, 'sections': ['B', 'C', 'H', 'S', 'T'], 'edges_per_section': {'B': 5478, 'C': 1101, 'H': 3038, 'S': 9381, 'T': 294}, 'tv_groups': ['B', 'C+T', 'H', 'S'], 'coupling_K': {'B': 0.26857661320045356, 'C+T': 0.2398324790277617, 'H': 0.19825322088741204, 'S': 0.23334564084578732}, 'tolerance': {'B': 0.02, 'C+T': 0.02, 'H': 0.019825322088741205, 'S': 0.02}, 'movable_medial_tokens': 17017, 'proposals_per_sweep': 16989, 'fraction_changed_denominator': 16989, 'frozen_lines': 38, 'real_common_bigrams': 9216}
+  pilot GLYPH beta=0.5: fc=0.845 L1 real/N1=2963/2971 tv_real=[0.0767, 0.108, 0.077, 0.0709] tol=[0.02, 0.02, 0.0198, 0.02] -> admissible=False
+  pilot GLYPH beta=1.0: fc=0.837 L1 real/N1=1007/1010 tv_real=[0.0201, 0.0528, 0.034, 0.0225] tol=[0.02, 0.02, 0.0198, 0.02] -> admissible=False
+  pilot GLYPH beta=2.0: fc=0.830 L1 real/N1=163/159 tv_real=[0.003, 0.0097, 0.0075, 0.0031] tol=[0.02, 0.02, 0.0198, 0.02] -> admissible=True
+  pilot GLYPH beta=4.0: fc=0.491 L1 real/N1=2/10 tv_real=[0.0, 0.0001, 0.0003, 0.0] tol=[0.02, 0.02, 0.0198, 0.02] -> admissible=False
+  pilot GLYPH beta=8.0: fc=0.480 L1 real/N1=0/16 tv_real=[0.0, 0.0, 0.0, 0.0] tol=[0.02, 0.02, 0.0198, 0.02] -> admissible=False
+  GLYPH: main run beta=2.0 scale=1
+  GLYPH pass1 chain 1: 49.4s
+  GLYPH pass1 chain 2: 49.5s
+  GLYPH pass1 chain 3: 49.1s
+  GLYPH pass1 chain 4: 49.1s
+  GLYPH pass2 chain 5: 49.7s
+  GLYPH pass2 chain 6: 49.5s
+  GLYPH pass2 chain 7: 53.2s
+  GLYPH pass2 chain 8: 48.8s
+  GLYPH diagnostics (beta=2.0, scale=1): rhat_Z3=0.9995, rhat_L1=1.003, rhat_fc=1.008, ess_Z3=3533, ess_L1=1195, ess_fc=633, fraction_changed_mean=0.8315, fraction_changed_all_positions_mean=0.6537, L1_mean=160, candidate_jaccard_pass1=0.9769, passed=False
+     tv_mean={'B': 0.0029744432274552875, 'C+T': 0.009035125448028687, 'H': 0.007229838709677355, 'S': 0.0030880769640763365} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.019825322088741205, 'S': 0.02}
+  GLYPH: main run beta=2.0 scale=2
+  GLYPH pass1 chain 1: 94.4s
+  GLYPH pass1 chain 2: 102.1s
+  GLYPH pass1 chain 3: 83.0s
+  GLYPH pass1 chain 4: 55.5s
+  GLYPH pass2 chain 5: 55.9s
+  GLYPH pass2 chain 6: 57.6s
+  GLYPH pass2 chain 7: 56.7s
+  GLYPH pass2 chain 8: 55.9s
+  GLYPH diagnostics (beta=2.0, scale=2): rhat_Z3=0.9998, rhat_L1=1, rhat_fc=1.003, ess_Z3=6903, ess_L1=3025, ess_fc=939.7, fraction_changed_mean=0.8315, fraction_changed_all_positions_mean=0.6537, L1_mean=161.2, candidate_jaccard_pass1=0.9729, passed=False
+     tv_mean={'B': 0.003006183826213938, 'C+T': 0.009213351254480404, 'H': 0.007244075049374429, 'S': 0.0030978706960878176} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.019825322088741205, 'S': 0.02}
+
+VERDICT (locked rules): REDUCES
+
+=== EVA_C957DATA: {'unit': 'EVA_C957DATA', 'lines': 2420, 'tokens': 23096, 'blockers': 0, 'common_tokens': 334, 'vocab': 4889, 'first_units': 19, 'last_units': 19, 'sections': ['B', 'C', 'H', 'S', 'T'], 'edges_per_section': {'B': 6086, 'C': 1353, 'H': 3056, 'S': 9588, 'T': 593}, 'tv_groups': ['B', 'C+T', 'H', 'S'], 'coupling_K': {'B': 0.250372873250957, 'C+T': 0.20859427565860983, 'H': 0.1795577235410214, 'S': 0.22565625767433878}, 'tolerance': {'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}, 'movable_medial_tokens': 18262, 'proposals_per_sweep': 18233, 'fraction_changed_denominator': 18233, 'frozen_lines': 43, 'real_common_bigrams': 10061}
+  pilot EVA_C957DATA beta=0.5: fc=0.848 L1 real/N1=2727/2711 tv_real=[0.0628, 0.0848, 0.0621, 0.0637] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=False
+  pilot EVA_C957DATA beta=1.0: fc=0.842 L1 real/N1=822/819 tv_real=[0.0146, 0.0371, 0.0254, 0.0173] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=False
+  pilot EVA_C957DATA beta=2.0: fc=0.838 L1 real/N1=108/105 tv_real=[0.0019, 0.0068, 0.0043, 0.0017] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=True
+  pilot EVA_C957DATA beta=4.0: fc=0.539 L1 real/N1=0/4 tv_real=[0.0, 0.0, 0.0, 0.0] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=True
+  pilot EVA_C957DATA beta=8.0: fc=0.537 L1 real/N1=0/4 tv_real=[0.0, 0.0, 0.0, 0.0] tol=[0.02, 0.02, 0.018, 0.02] -> admissible=True
+  EVA_C957DATA: main run beta=8.0 scale=1
+  EVA_C957DATA pass1 chain 1: 29.8s
+  EVA_C957DATA pass1 chain 2: 28.7s
+  EVA_C957DATA pass1 chain 3: 28.7s
+  EVA_C957DATA pass1 chain 4: 30.3s
+  EVA_C957DATA pass1 chain 1: 61.6s
+  EVA_C957DATA pass1 chain 2: 58.8s
+  EVA_C957DATA pass1 chain 3: 58.9s
+  EVA_C957DATA pass1 chain 4: 58.0s
+  EVA_C957DATA pass1 chain 1: 115.9s
+  EVA_C957DATA pass1 chain 2: 115.7s
+  EVA_C957DATA pass1 chain 3: 125.5s
+  EVA_C957DATA pass1 chain 4: 123.3s
+  EVA_C957DATA pass2 chain 5: 30.8s
+  EVA_C957DATA pass2 chain 6: 31.5s
+  EVA_C957DATA pass2 chain 7: 31.3s
+  EVA_C957DATA pass2 chain 8: 32.7s
+  EVA_C957DATA diagnostics (beta=8.0, scale=1): rhat_Z3=1.531, rhat_L1=inf, rhat_fc=1.857, ess_Z3=7.17, ess_L1=4.032, ess_fc=5.743, fraction_changed_mean=0.6872, fraction_changed_all_positions_mean=0.5425, L1_mean=1, candidate_jaccard_pass1=0.6233, passed=False
+     tv_mean={'B': 0.0, 'C+T': 0.0, 'H': 0.00016361256544502906, 'S': 0.0} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}
+  EVA_C957DATA: main run beta=8.0 scale=2
+  EVA_C957DATA pass1 chain 1: 62.7s
+  EVA_C957DATA pass1 chain 2: 59.1s
+  EVA_C957DATA pass1 chain 3: 62.4s
+  EVA_C957DATA pass1 chain 4: 60.6s
+  EVA_C957DATA pass1 chain 1: 125.2s
+  EVA_C957DATA pass1 chain 2: 121.9s
+  EVA_C957DATA pass1 chain 3: 120.1s
+  EVA_C957DATA pass1 chain 4: 120.1s
+  EVA_C957DATA pass1 chain 1: 253.4s
+  EVA_C957DATA pass1 chain 2: 252.2s
+  EVA_C957DATA pass1 chain 3: 235.5s
+  EVA_C957DATA pass1 chain 4: 237.3s
+  EVA_C957DATA pass2 chain 5: 60.7s
+  EVA_C957DATA pass2 chain 6: 60.6s
+  EVA_C957DATA pass2 chain 7: 59.9s
+  EVA_C957DATA pass2 chain 8: 61.6s
+  EVA_C957DATA diagnostics (beta=8.0, scale=2): rhat_Z3=1.212, rhat_L1=1, rhat_fc=1.821, ess_Z3=13.25, ess_L1=8000, ess_fc=5.812, fraction_changed_mean=0.6895, fraction_changed_all_positions_mean=0.5443, L1_mean=0, candidate_jaccard_pass1=0.6064, passed=False
+     tv_mean={'B': 0.0, 'C+T': 0.0, 'H': 0.0, 'S': 0.0} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}
+  EVA_C957DATA: main run beta=4.0 scale=1
+  EVA_C957DATA pass1 chain 1: 29.4s
+  EVA_C957DATA pass1 chain 2: 29.7s
+  EVA_C957DATA pass1 chain 3: 29.8s
+  EVA_C957DATA pass1 chain 4: 30.0s
+  EVA_C957DATA pass1 chain 1: 60.1s
+  EVA_C957DATA pass1 chain 2: 59.4s
+  EVA_C957DATA pass1 chain 3: 58.0s
+  EVA_C957DATA pass1 chain 4: 59.8s
+  EVA_C957DATA pass1 chain 1: 119.2s
+  EVA_C957DATA pass1 chain 2: 116.0s
+  EVA_C957DATA pass1 chain 3: 116.4s
+  EVA_C957DATA pass1 chain 4: 119.4s
+  EVA_C957DATA pass2 chain 5: 30.3s
+  EVA_C957DATA pass2 chain 6: 30.8s
+  EVA_C957DATA pass2 chain 7: 30.6s
+  EVA_C957DATA pass2 chain 8: 30.7s
+  EVA_C957DATA diagnostics (beta=4.0, scale=1): rhat_Z3=1.125, rhat_L1=1.01, rhat_fc=2.178, ess_Z3=20.97, ess_L1=339.8, ess_fc=5.134, fraction_changed_mean=0.6992, fraction_changed_all_positions_mean=0.552, L1_mean=0.0345, candidate_jaccard_pass1=0.6359, passed=False
+     tv_mean={'B': 1.6020374630299106e-06, 'C+T': 2.569373072970196e-06, 'H': 3.272251308900515e-07, 'S': 1.5644555694618088e-07} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}
+  EVA_C957DATA: main run beta=4.0 scale=2
+  EVA_C957DATA pass1 chain 1: 59.8s
+  EVA_C957DATA pass1 chain 2: 58.8s
+  EVA_C957DATA pass1 chain 3: 57.8s
+  EVA_C957DATA pass1 chain 4: 57.9s
+  EVA_C957DATA pass1 chain 1: 118.7s
+  EVA_C957DATA pass1 chain 2: 119.1s
+  EVA_C957DATA pass1 chain 3: 118.3s
+  EVA_C957DATA pass1 chain 4: 119.1s
+  EVA_C957DATA pass1 chain 1: 237.7s
+  EVA_C957DATA pass1 chain 2: 240.9s
+  EVA_C957DATA pass1 chain 3: 239.0s
+  EVA_C957DATA pass1 chain 4: 238.2s
+  EVA_C957DATA pass2 chain 5: 60.6s
+  EVA_C957DATA pass2 chain 6: 61.0s
+  EVA_C957DATA pass2 chain 7: 59.7s
+  EVA_C957DATA pass2 chain 8: 59.3s
+  EVA_C957DATA diagnostics (beta=4.0, scale=2): rhat_Z3=1.137, rhat_L1=3.784, rhat_fc=2.197, ess_Z3=18.81, ess_L1=4.325, ess_fc=5.084, fraction_changed_mean=0.7049, fraction_changed_all_positions_mean=0.5565, L1_mean=1.05, candidate_jaccard_pass1=0.7017, passed=False
+     tv_mean={'B': 4.1077883667433536e-07, 'C+T': 1.1562178828365879e-06, 'H': 0.0001695435209424052, 'S': 2.0859407592824284e-07} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}
+  EVA_C957DATA: main run beta=2.0 scale=1
+  EVA_C957DATA pass1 chain 1: 29.0s
+  EVA_C957DATA pass1 chain 2: 28.8s
+  EVA_C957DATA pass1 chain 3: 29.0s
+  EVA_C957DATA pass1 chain 4: 28.9s
+  EVA_C957DATA pass2 chain 5: 29.7s
+  EVA_C957DATA pass2 chain 6: 29.8s
+  EVA_C957DATA pass2 chain 7: 29.7s
+  EVA_C957DATA pass2 chain 8: 29.9s
+  EVA_C957DATA diagnostics (beta=2.0, scale=1): rhat_Z3=1.001, rhat_L1=1.003, rhat_fc=1.005, ess_Z3=3470, ess_L1=969.1, ess_fc=586.8, fraction_changed_mean=0.838, fraction_changed_all_positions_mean=0.6616, L1_mean=105.9, candidate_jaccard_pass1=0.9532, passed=False
+     tv_mean={'B': 0.0018317449884982058, 'C+T': 0.006357399794450263, 'H': 0.0043835896596858765, 'S': 0.0016263819357530144} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}
+  EVA_C957DATA: main run beta=2.0 scale=2
+  EVA_C957DATA pass1 chain 1: 57.6s
+  EVA_C957DATA pass1 chain 2: 58.1s
+  EVA_C957DATA pass1 chain 3: 57.8s
+  EVA_C957DATA pass1 chain 4: 58.0s
+  EVA_C957DATA pass2 chain 5: 59.7s
+  EVA_C957DATA pass2 chain 6: 59.7s
+  EVA_C957DATA pass2 chain 7: 59.6s
+  EVA_C957DATA pass2 chain 8: 59.6s
+  EVA_C957DATA diagnostics (beta=2.0, scale=2): rhat_Z3=1, rhat_L1=1.002, rhat_fc=1.002, ess_Z3=7052, ess_L1=1928, ess_fc=1023, fraction_changed_mean=0.8379, fraction_changed_all_positions_mean=0.6615, L1_mean=107, candidate_jaccard_pass1=0.9534, passed=True
+     tv_mean={'B': 0.001871693230364756, 'C+T': 0.006601104830421298, 'H': 0.004332583442408408, 'S': 0.0016264080100124878} tol={'B': 0.02, 'C+T': 0.02, 'H': 0.017955772354102142, 'S': 0.02}
+  EVA_C957DATA Z3_clean: cand=269 Z_real=3 null 2.25±1.49 q99=6.0 p=0.3925 | extrap mean 2.38 p'=0.3925 | loo[chey->chedy] p=0.6559
+  EVA_C957DATA Z3_raw: cand=273 Z_real=7 null 2.30±1.51 q99=6.0 p=0.0087 | extrap mean 2.41 p'=0.0087 | loo[aiin->aiin] p=0.0295
+  EVA_C957DATA Z5_clean: cand=106 Z_real=0 null 0.07±0.25 q99=1.0 p=1.0000 | extrap mean 0.09 p'=1.0000 | loo[None] p=1.0000
+  EVA_C957DATA Z5_raw: cand=107 Z_real=1 null 0.07±0.26 q99=1.0 p=0.0664 | extrap mean 0.09 p'=0.0664 | loo[aiin->aiin] p=1.0000
+written C:\git\voynich\phases\PHASE_756_C957_JOINT_NULL\results\c957_joint_null_n5.json  (18744.5s)

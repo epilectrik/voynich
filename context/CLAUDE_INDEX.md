@@ -22,7 +22,7 @@ Not natural language written one token per word; the cipher classes tested so fa
 | Grammar coverage | 100% of the grammar's own 480 types = 69.5% of B tokens (C124, C566; HT/UN defined by exclusion) |
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
-| Forbidden transitions | token level: 9 directional zero bigrams (C957, re-screen pending); class-level "17 in 5 classes" demoted (C783, C2060) |
+| Forbidden transitions | none beyond known effects: token-level zeros reduce under a joint null (C2081, supersedes C957); class-level "17 in 5 classes" demoted (C783, C2060) |
 | Operational categories | 8, keyword-imposed rather than discovered (C2069) |
 | Macro-automaton states | 6 (8.17x class compression; AXM attractor self=0.697; C1025) |
 | Generative sufficiency | 87% of measurable structure (M2 frontier; C1025/C1030/C1033/C1034) |

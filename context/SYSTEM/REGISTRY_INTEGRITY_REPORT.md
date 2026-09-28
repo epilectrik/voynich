@@ -2,9 +2,9 @@
 
 **Generated:** 2026-09-28 by `scripts/registry_integrity_check.py` (regenerate after every registry change).
 
-**Generated table:** LIVE (Tier 0/2) 1708, TIER1 35, DEMOTED (Tier 3/4) 113; registered numbers in INDEX.md: 1887; dead (registered, not in table): 31.
+**Generated table:** LIVE (Tier 0/2) 1708, TIER1 35, DEMOTED (Tier 3/4) 113; registered numbers in INDEX.md: 1888; dead (registered, not in table): 32.
 
-**Citations of non-live constraints in living docs:** 588 (451 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
+**Citations of non-live constraints in living docs:** 602 (457 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
 
 
 ## Unannotated citations by file
@@ -12,10 +12,10 @@
 | File | DEMOTED | DEAD | UNKNOWN |
 |---|---|---|---|
 | context/SPECULATIVE/INTERPRETATION_SUMMARY.md | 89 | 15 | 3 |
-| context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml | 63 | 3 | 0 |
+| context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml | 63 | 6 | 0 |
 | context/MODEL_FITS/FIT_TABLE.txt | 20 | 5 | 25 |
 | context/STRUCTURAL_CONTRACTS/currierA.casc.yaml | 26 | 2 | 0 |
-| context/MODEL_CONTEXT.md | 22 | 1 | 0 |
+| context/MODEL_CONTEXT.md | 22 | 3 | 0 |
 | context/SPECULATIVE/ecr_apparatus_roles.md | 5 | 0 | 17 |
 | context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml | 9 | 10 | 0 |
 | context/SPECULATIVE/ecr_synthesis.md | 0 | 0 | 19 |
@@ -41,6 +41,7 @@
 | context/SPECULATIVE/ecr_material_classes.md | 0 | 0 | 2 |
 | CLAUDE.md | 0 | 1 | 0 |
 | context/CLAUDE_INDEX.md | 1 | 0 | 0 |
+| context/generate_expert_context.py | 0 | 1 | 0 |
 | context/SPECULATIVE/brunschwig_comparison.md | 1 | 0 | 0 |
 | context/SPECULATIVE/gloss_qualifier_key.md | 1 | 0 | 0 |
 | context/SPECULATIVE/process_isomorphism.md | 0 | 1 | 0 |
@@ -69,6 +70,7 @@
 | C836 | DEMOTED | 7 |
 | C1014 | DEMOTED | 7 |
 | C559 | DEAD | 6 |
+| C957 | DEAD | 6 |
 | C837 | DEMOTED | 6 |
 | C863 | DEMOTED | 6 |
 | C1995 | DEMOTED | 6 |
@@ -90,7 +92,6 @@
 | C433 | DEAD | 3 |
 | C86 | UNKNOWN | 3 |
 | C87 | UNKNOWN | 3 |
-| C91 | UNKNOWN | 3 |
 
 ## Closure-banner lines (unannotated)
 
@@ -119,6 +120,8 @@
 - `context/MODEL_CONTEXT.md:556` C600 [DEMOTED] — **CORE CONTROL (CC):** 3 active classes form a **positional dichotomy** (C590). Class 10 (daiin) is initial-biased (0.413, 27.1% line-initial); Class 11 (ol) is medial (0.511); Cla
 - `context/MODEL_CONTEXT.md:558` C600 [DEMOTED] — **Cross-Boundary Routing (C598-C602):** Sub-group identity is visible across role boundaries. 8/10 cross-role pairs show non-random sub-group routing (5 survive Bonferroni, C598). 
 - `context/MODEL_CONTEXT.md:560` C600 [DEMOTED] — **Reference:** See constraint files C573-C602; `phases/EN_ANATOMY/`, `phases/SMALL_ROLE_ANATOMY/`, `phases/FQ_ANATOMY/`, `phases/SUB_ROLE_INTERACTION/` for evidence.
+- `context/MODEL_CONTEXT.md:576` C957 [DEAD] — ### Line Grammar Synthesis (C956-C964)
+- `context/MODEL_CONTEXT.md:581` C957 [DEAD] — - **26 mandatory bigrams** (obs/exp > 5x) including or→aiin (C957)
 - `context/MODEL_CONTEXT.md:679` C458 [DEMOTED] — **This is the design freedom space** (C458): each folio's dynamics are independently parameterized within the grammar's constraints. Hazard exposure is clamped (CV = 0.04-0.11); re
 - `context/MODEL_CONTEXT.md:1023` C936 [DEMOTED] — > **REVISION (2026-02-12):** ok reclassified from "verb" (seal/close/cap) to **domain selector** (VESSEL/apparatus) per C936. PREFIX dual encoding (content + line position) per C10
 - `context/MODEL_CONTEXT.md:1055` C936 [DEMOTED] — | **ok-** | e-family + infrastructure (VESSEL) | C911, C936 | CENTRAL (0.54) |
@@ -131,6 +134,7 @@
 - `context/CRAZY_EXPERT_STANCE.md:84` C1584 [DEMOTED] — - **Use C1581-C1587 (virtual apparatus coupling)** — Phase 563: The hierarchical supervisory trace COUPLED to a virtual thermal apparatus model (3 profiles A1/A2/A3, 7 plant state 
 - `context/CRAZY_EXPERT_STANCE.md:84` C1587 [DEMOTED] — - **Use C1581-C1587 (virtual apparatus coupling)** — Phase 563: The hierarchical supervisory trace COUPLED to a virtual thermal apparatus model (3 profiles A1/A2/A3, 7 plant state 
 - `context/CRAZY_EXPERT_STANCE.md:89` C1626 [UNKNOWN] — - **Use C1625-C1629 (folio-specific apparatus pilot)** — Phase 570a: PARTIAL_FOLIO_PARAM_PILOT. Folio-specific F1-F5 parameters (scalar multipliers [0.7,1.4] from structural proxie
+- `context/generate_expert_context.py:1079` C957 [DEAD] — - Hazard layer = token-level directional zero bigrams (C957), pending a within-line,
 - `context/MODEL_FITS/FIT_TABLE.txt:17` C600 [DEMOTED] — F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600	in: fits_currier_b
 - `context/MODEL_FITS/FIT_TABLE.txt:29` C433 [DEAD] — F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
 - `context/MODEL_FITS/FIT_TABLE.txt:29` C434 [DEAD] — F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
@@ -269,10 +273,12 @@
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1046` C863 [DEMOTED] — provenance: "C863-C869"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1046` C869 [DEMOTED] — provenance: "C863-C869"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1283` C561 [DEMOTED] — mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1283` C957 [DEAD] — mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1326` C557 [DEMOTED] — daiin_trigger: "daiin marks WORK→CHECK transition (C557)"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1327` C561 [DEMOTED] — or_aiin_bigram: "or→aiin is strongest role-transition bigram (C561)"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1341` C557 [DEMOTED] — provenance: "C556, C557, C561, C562, C956-C964"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1341` C561 [DEMOTED] — provenance: "C556, C557, C561, C562, C956-C964"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1341` C957 [DEAD] — provenance: "C556, C557, C561, C562, C956-C964"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1403` C557 [DEMOTED] — provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1403` C561 [DEMOTED] — provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1762` C365 [DEAD] — provenance: "C805 (refutes C365)"
@@ -295,6 +301,7 @@
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3296` C547 [DEMOTED] — - "C547"   # ICC-based role validation
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3306` C557 [DEMOTED] — - "C557"   # daiin trigger
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3307` C561 [DEMOTED] — - "C561"   # or→aiin bigram
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3310` C957 [DEAD] — - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden)
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3393` C600 [DEMOTED] — - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO)
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3419` C475 [DEMOTED] — - "C741"   # HT C475 minimal participation
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3420` C475 [DEMOTED] — - "C742"   # HT C475 compliance (0.44% violation)

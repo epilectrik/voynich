@@ -16,7 +16,7 @@ AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained,
 **2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
 PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
 
-**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, closed-loop/recovery) is independent of the A-side compatibility geometry. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and the surviving hazard layer is C957's token-level zeros, pending a within-line, position-preserving screen-level null. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
+**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, closed-loop/recovery) is independent of the A-side compatibility geometry. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and C957's token-level zeros reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, 2026-09-28) — no hazard layer survives beyond known effects. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
 
 ---
 
@@ -579,7 +579,7 @@ Lines are **boundary-constrained free-interior** control blocks:
 
 - **Boundary tokens** are zone-exclusive (192/334 common tokens at 2.72x shuffle, C956)
 - **26 mandatory bigrams** (obs/exp > 5x) including or→aiin (C957)
-- **9 forbidden bigrams** (obs=0, exp≥5), 2 genuinely token-specific: chey→chedy, chey→shedy (C957)
+- ~~9 forbidden bigrams (C957)~~ — superseded: the zeros reduce to line composition, zones and boundary coupling (C2081)
 - **Opener determines line length** (24.9% partial R² beyond folio+regime, C958)
 - **Opener is role marker, not instruction header** — specific token adds no predictive power beyond role (C959)
 - **WORK zone is unordered** — tokens within WORK show no systematic sequence (Kendall tau ≈ 0, C961)
