@@ -69,8 +69,10 @@ the pre-registered gate. (PHASE_752, PHASE_759)
   the kernel test (C089) was uninformative — single EVA letters, a pass criterion independent of the data, a null that
   reproduces its own statistic — and the four closed-loop legs are gone (C171: LINK monitoring C609/C1174, kernel
   intervention, hazard avoidance C783/C2081, convergence C1401–C1403). What remains as measurement is a family
-  preference: qo tokens are k-rich, ok tokens e-rich, and qo alternates with ch/sh (C1313, C549, C2056). Glyph-level
-  re-test: PHASE_763.
+  preference: qo tokens are k-rich, ok tokens e-rich, and qo alternates with ch/sh (C1313, C549, C2056). The
+  pre-registered glyph-level re-test (PHASE_763) returned MIXED: k carries no routing beyond matched controls, and
+  the signal that passed is word-ending routing — a word's last two glyphs predict the next word's class beyond
+  last-glyph → first-glyph coupling (C2082) — not a kernel.
 - **Content — the Pseudo-Lullian *Testamentum* tradition:** open.
   - Against the chapter-level matching: a metalwork treatise (Theophilus) matches the same folios (C2052); no source —
     *Testamentum*, Theophilus or Codicillus — matches the Voynich pages better than its own chapters with the features

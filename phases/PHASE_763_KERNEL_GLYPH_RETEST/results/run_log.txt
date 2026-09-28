@@ -1,0 +1,97 @@
+[      0s] PHASE_763 kernel re-test FULL
+[      2s] B readable tokens 21610
+[      2s] == Arm W: H S1 null (R = 1000)
+[     13s]    nodes 20 | G ['o', 'y', 'a', 'd', 'l', 'q', 'r', 't', 'iin', 'in', 's', 'p', 'm', 'ckh', 'ir', 'cth', 'f', 'k', 'e', 'B'] | eligible tokens 14861
+[     13s]    controls {'k': ['t', 'a', 'd', 'o', 'p'], 'e': ['a', 'd', 't', 'o', 'l'], 'B': ['o', 'q', 't', 'l', 'p']} flags {'k': False, 'e': False, 'B': False}
+[     13s]    RWB identity check: max relative error 5.00e-15
+[     13s] == Arm W: power certification (plants on null bases)
+[     13s]    pi 0.02: mean E -0.17
+[     13s]    pi 0.05: mean E -0.19
+[     13s]    pi 0.1: mean E -0.26
+[     13s]    pi 0.2: mean E -0.15
+[     13s]    pi 0.35: mean E -0.02
+[     13s]    pi 0.5: mean E 0.57
+[     13s]    pi 0.75: mean E 1.94
+[     13s]    pi 1.0: mean E 4.40
+[     14s]    certification {'calibration_mean_E': {0.02: -0.1727890095724176, 0.05: -0.1913543196658402, 0.1: -0.2602549032194336, 0.2: -0.14960965551818253, 0.35: -0.023315959846834544, 0.5: 0.5735201989608534, 0.75: 1.9443481353328085, 1.0: 4.401976685960898}, 'pi_star': 1.0, 'detection': 0.0, 'certified': False, 'mean_E_at_pi_star': 4.413527541087059}
+[     15s]    H S1 test {'K': 18.315254140668696, 'p': 0.0875, 'E': 7.422489035685045, 'n_triads': 79, 'triad_median': 10.892765104983651} | boot {'n': 200, 'skipped': 0, 'q025': -30.313718350388324, 'q05': -24.770033648990545, 'q95': 50.43127012176894, 'q975': 58.221800561178604, 'mean': 12.478731490470278}
+[     18s]    S2 test {'K': 20.62984210013654, 'p': 0.4098360655737705, 'E': 5.630420689803831, 'n_triads': 60, 'triad_median': 14.999421410332708}
+[     20s]    ZL test {'K': 18.98833763468617, 'p': 0.14285714285714285, 'E': 7.947046604799979, 'n_triads': 76, 'triad_median': 11.041291029886192}
+[     21s]    type-weighted test {'K': 4.060124650327487, 'p': 0.4375, 'E': 1.114819307356417, 'n_triads': 79, 'triad_median': 2.94530534297107}
+[     21s] == Arm W floor (a): Currier A
+[     45s]    A test {'K': 7.466971190259938, 'p': 0.22972972972972974, 'E': 3.485087487685528, 'n_triads': 73, 'triad_median': 3.9818837025744096} | B downsample E range 3.711686387002816 7.631283630954156 | inside: False
+[     45s] == Arm W floor (b): Latin
+[     51s]    mesue: span 18024 tokens, best triad ('i', 'u', 'q') E 28.48 boot {'n': 200, 'skipped': 0, 'q025': -40.422998945236266, 'q05': -30.83652759342519, 'q95': 75.93426960396609, 'q975': 89.1138436020566, 'mean': 26.631077099415208}
+[     56s]    rupescissa: span 16446 tokens, best triad ('u', 'p', 'q') E 35.31 boot {'n': 200, 'skipped': 0, 'q025': -46.965385497605396, 'q05': -27.944499057682002, 'q95': 112.83966061729618, 'q975': 133.1128926998084, 'mean': 35.91081314807584}
+[     61s]    sismel: span 17469 tokens, best triad ('u', 'p', 'q') E 29.49 boot {'n': 200, 'skipped': 0, 'q025': -67.1794390138396, 'q05': -53.657468566931215, 'q95': 103.7276588746353, 'q975': 115.87564376233539, 'mean': 29.853385284333417}
+[     61s]    Latin distinctive: False
+[     61s] Arm S pairs 19024 | eligibility {'S1': {'k': 5215, 'e': 8848, 'B': 2947}, 'S2': {'k': 5215, 'e': 8848, 'B': 3048}} | controls S1 {'k': ['a', 'd', 'o', 't', 'ckh'], 'e': ['a', 'd', 'o', 't', 'l'], 'B': ['p', 't', 'o', 's', 'cth']} | S2 {'k': ['a', 'd', 'o', 't', 'l'], 'e': ['a', 'd', 'o', 't', 'l'], 'B': ['p', 't', 'o', 's', 'l']}
+[     61s] == Arm S [H]: pilot (seed 76390)
+[     85s]    tau (sweeps) max 15.1 -> thin T = 16
+[     85s] == Arm S [H]: main chains [76300, 76301, 76302, 76303], 300 samples each at thin 16
+[    236s]    ESS short -> extending each chain to 600 samples
+[    421s]    gates passed=True rhat_ok=True ess_ok=True tv_ok=True fc=0.832 (min ESS 1509, max R-hat 1.0023)
+[    421s] == Arm S: power certification (plants on N5 draws)
+[    421s]    T_g {'k': [11, 23, 30, 32, 34], 'e': [8, 13, 14, 23, 31], 'B': [8, 13, 24, 32, 34]} | classes >= 1%: 20
+[    431s]    pi 0.02: mean E -0.31
+[    441s]    pi 0.05: mean E -0.52
+[    449s]    pi 0.1: mean E -0.66
+[    458s]    pi 0.2: mean E -0.18
+[    468s]    pi 0.35: mean E 1.77
+[    479s]    pi 0.5: mean E 3.63
+[    535s]    certification {'T_g': {'k': [11, 23, 30, 32, 34], 'e': [8, 13, 14, 23, 31], 'B': [8, 13, 24, 32, 34]}, 'calibration_mean_E': {0.02: -0.30591459518442987, 0.05: -0.5170344704328879, 0.1: -0.6586833702824155, 0.2: -0.18082030159694815, 0.35: 1.7657573437946834, 0.5: 3.6305385889676316}, 'pi_star': 0.5, 'n_bases': 100, 'detection': 0.54, 'certified': False, 'mean_E_at_pi_star': 3.5887064347698656}
+[    538s]    H S1 primary test {'K': 6.504866191889765, 'p': 0.011111111111111112, 'E': 4.385472840491664, 'n_triads': 89, 'triad_median': 2.119393351398101} | boot {'n': 200, 'q025': 2.4395705076185945, 'q05': 2.9409390919607183, 'q95': 7.000205868471511, 'q975': 7.517027862910235, 'mean': 4.804430056322295}
+[    538s]    H S1 R1 test {'K': 8.372225685703699, 'p': 0.011111111111111112, 'E': 6.7439692524025325, 'n_triads': 89, 'triad_median': 1.628256433301166}
+[    538s]    H S1 R2 test {'K': 2.241830986045672, 'p': 0.05555555555555555, 'E': 0.8450227151664265, 'n_triads': 89, 'triad_median': 1.3968082708792455}
+[    538s]    H S1 U test {'K': 12.685283566321141, 'p': 0.011111111111111112, 'E': 8.60030596958988, 'n_triads': 89, 'triad_median': 4.084977596731262}
+[    538s]    H S2 primary test {'K': 6.37572579957376, 'p': 0.012987012987012988, 'E': 3.8778484428189874, 'n_triads': 76, 'triad_median': 2.4978773567547727}
+[    539s] == Arm S [ZL]: pilot (seed 76391)
+[    593s]    tau (sweeps) max 10.9 -> thin T = 11
+[    593s] == Arm S [ZL]: main chains [76310, 76311, 76312, 76313], 300 samples each at thin 11
+[    845s]    ESS short -> extending each chain to 600 samples
+[    938s]    gates passed=True rhat_ok=True ess_ok=True tv_ok=True fc=0.816 (min ESS 1402, max R-hat 1.0060)
+[    938s]    ZL primary test {'K': 6.614700041951548, 'p': 0.011111111111111112, 'E': 4.739517953604065, 'n_triads': 89, 'triad_median': 1.875182088347483}
+[    938s] == Generator floors
+[   1001s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 0: W E 17.74 | S E -0.47 (gates False)
+[   1060s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 1: W E 17.90 | S E 0.16 (gates False)
+[   1118s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 2: W E 12.80 | S E -0.00 (gates False)
+[   1179s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 3: W E 13.90 | S E 0.05 (gates False)
+[   1238s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 4: W E 17.66 | S E 0.88 (gates False)
+[   1295s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 5: W E 17.26 | S E -0.32 (gates False)
+[   1352s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 6: W E 18.96 | S E -0.03 (gates False)
+[   1409s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 7: W E 16.71 | S E 0.58 (gates False)
+[   1467s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 8: W E 13.66 | S E 1.20 (gates False)
+[   1530s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 9: W E 16.49 | S E 0.47 (gates False)
+[   1589s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 10: W E 14.19 | S E -0.03 (gates False)
+[   1654s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 11: W E 16.18 | S E 0.44 (gates False)
+[   1715s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 12: W E 14.73 | S E 0.63 (gates False)
+[   1773s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 13: W E 15.86 | S E -0.48 (gates False)
+[   1832s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 14: W E 13.64 | S E 0.32 (gates False)
+[   1891s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 15: W E 15.56 | S E -0.20 (gates False)
+[   1951s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 16: W E 14.13 | S E 0.39 (gates False)
+[   2009s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 17: W E 17.55 | S E 0.54 (gates False)
+[   2069s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 18: W E 16.51 | S E -0.18 (gates False)
+[   2127s]    NAIBBE_GV1_PREC_STREAM_SR0_V0 member 19: W E 16.27 | S E -0.28 (gates False)
+[   2192s]    TIMM member 0: W E 16.18 | S E -0.27 (gates False)
+[   2253s]    TIMM member 1: W E 18.87 | S E 1.09 (gates False)
+[   2314s]    TIMM member 2: W E 5.14 | S E 0.03 (gates False)
+[   2378s]    TIMM member 3: W E 17.08 | S E 0.37 (gates False)
+[   2439s]    TIMM member 4: W E 12.61 | S E 1.31 (gates False)
+[   2507s]    TIMM member 5: W E 14.21 | S E 0.57 (gates False)
+[   2612s]    TIMM member 6: W E 22.75 | S E -1.19 (gates False)
+[   2732s]    TIMM member 7: W E 13.29 | S E 0.92 (gates False)
+[   2853s]    TIMM member 8: W E 17.79 | S E 0.91 (gates False)
+[   2963s]    TIMM member 9: W E 14.45 | S E 0.48 (gates False)
+[   3031s]    TIMM member 10: W E 16.39 | S E 1.16 (gates False)
+[   3096s]    TIMM member 11: W E 15.97 | S E 0.16 (gates False)
+[   3162s]    TIMM member 12: W E 16.20 | S E 0.92 (gates False)
+[   3229s]    TIMM member 13: W E 21.85 | S E 0.47 (gates False)
+[   3293s]    TIMM member 14: W E 20.52 | S E 0.38 (gates False)
+[   3362s]    TIMM member 15: W E 18.18 | S E 0.22 (gates False)
+[   3429s]    TIMM member 16: W E 18.17 | S E 0.20 (gates False)
+[   3510s]    TIMM member 17: W E 11.32 | S E -0.32 (gates False)
+[   3585s]    TIMM member 18: W E 17.77 | S E 0.58 (gates False)
+[   3655s]    TIMM member 19: W E 19.84 | S E 0.15 (gates False)
+[   3655s]    generator summary {'NAIBBE_GV1_PREC_STREAM_SR0_V0': {'W_q025': 13.203525415929697, 'W_q975': 18.45928655696197, 'S_q025': -0.4731687029334433, 'S_q975': 1.0493259737097773, 'B_W_inside': False, 'B_S_inside': False}, 'TIMM': {'W_q025': 8.076161388194757, 'W_q975': 22.32320475325767, 'S_q025': -0.7768785850575518, 'S_q975': 1.2423653161530528, 'B_W_inside': False, 'B_S_inside': False}}
+[   3655s] VERDICT (locked rules): MIXED
+[   3655s] {"arm_W_status": "INCONCLUSIVE", "arm_S_status": "PASS", "holm": {"S": true, "W": false}, "arm_W_pass": false, "arm_S_pass": true, "W_robustness_signs": {"S2": "True", "ZL": "True"}, "W_ZL_p_ok": false, "S_robustness_signs": {"R1": "True", "R2": "True", "ZL": "True", "S2": "True"}, "S_ZL_p_ok": true, "floors_reproducing": ["Latin (not distinguishable from the best-case letter triad of an alphabetic script)"], "certified": {"W": false, "S": false}, "equivalence_q95": {"W": 50.43127012176894, "S": 7.000205868471511}, "E": {"W": 7.422489035685045, "S": 4.385472840491664}, "p": {"W": 0.0875, "S": 0.011111111111111112}, "VERDICT": "MIXED"}

@@ -24,7 +24,7 @@ not because a discriminating test refuted it:
 - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
   surrogate test — is uninformative. Its pass criterion does not depend on the data (the real corpus fails it too: k ranks
   7th), its first-order Markov null reproduces the bigram counts its "centrality" is computed from (centrality ≈
-  frequency), and it counts EVA letters, where "h" is half the bench glyph (PHASE_754). A glyph-level re-test is PHASE_763.
+  frequency), and it counts EVA letters, where "h" is half the bench glyph (PHASE_754). The glyph-level re-test (PHASE_763, C2082) came back MIXED. k shows no routing beyond matched control glyphs. The cross-token pass is carried by e and bench (and equally by the non-kernel d), and it disappears once the word's two-glyph ending is known: it is word-ending routing, not a kernel. Within-token centrality was inconclusive. C089 is superseded by C2082.
 - **"Closed-loop"** (C171): all four remaining legs are withdrawn — monitoring (the 38% LINK figure does not reproduce;
   LINK is a morphological artifact, C609, C1174), intervention by kernel operators (above), hazard avoidance (C783, C2060,
   C2063, C2081) and convergence (no sequential convergence at any scale; MONOSTATE is the most common mode; the completion
@@ -32,7 +32,8 @@ not because a discriminating test refuted it:
   (C2067), no sequential convergence (C1402), complete paragraph resets (C1834, C1785).
 - **What remains of the kernel idea as measurement:** qo-prefixed tokens are rich in the gallows k and ok-prefixed tokens in
   e, and qo tokens alternate with ch/sh tokens beyond line composition (C1313, C549, C2056) — a family preference, not a
-  control core.
+  control core. PHASE_763 adds that a token's two-glyph ending predicts the next token's class beyond the
+  last-glyph → first-glyph coupling (C2082).
 
 ### History
 - Until 2026-09-27: "…encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within

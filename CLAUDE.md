@@ -181,11 +181,11 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 7.24 |
-| Constraints | 1875 live in the generated table (T0 17, T1 35, T2 1683, T3 136, T4 4); numbering through C2081 |
-| Phases | 762 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending) |
+| Version | 7.25 |
+| Constraints | 1875 live in the generated table (T0 17, T1 35, T2 1684, T3 135, T4 4); numbering through C2082 |
+| Phases | 763 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending) |
 | Folios | 83 (Currier B) |
-| Core model | Tier 0 restated 2026-09-28 to its measured core (grammar, line organisation, folio units, generators excluded); the control-program reading is Tier 3. External tests: Timm (C2077) and Naibbe (C2080) excluded; hazard/forbidden-transition layer withdrawn (C2081); Testamentum chapter matching not evidence (PHASE_762) — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
+| Core model | Tier 0 restated 2026-09-28 to its measured core (grammar, line organisation, folio units, generators excluded); the control-program reading is Tier 3; the glyph-level kernel re-test is MIXED (C2082: word-ending routing, not a kernel). External tests: Timm (C2077) and Naibbe (C2080) excluded; hazard/forbidden-transition layer withdrawn (C2081); Testamentum chapter matching not evidence (PHASE_762) — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
 | Characterization | ACTIVE |
 
 ---
@@ -194,7 +194,7 @@ Use these to verify your filtering is correct:
 
 > Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
 
-**Working interpretation (Tier 3 — support withdrawn, not falsified):** the grammar is read as a family of closed-loop, kernel-centric control programs. This was the Tier-0 sentence until 2026-09-28 (the "narrow viability regime" clause was struck earlier that day, C783/C2060/C2063/C2081). It was restated by human sign-off after the pillar re-check: the kernel test behind "kernel-centric" was uninformative (EVA letters; pass criterion independent of the data; C089), and all four "closed-loop" legs — LINK monitoring, kernel intervention, hazard avoidance, convergence — were withdrawn (C171, C1401–C1403). A glyph-level kernel re-test is PHASE_763. External tests so far: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded. Full record: `context/CORE/frozen_conclusion.md`. Forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
+**Working interpretation (Tier 3 — support withdrawn, not falsified):** the grammar is read as a family of closed-loop, kernel-centric control programs. This was the Tier-0 sentence until 2026-09-28 (the "narrow viability regime" clause was struck earlier that day, C783/C2060/C2063/C2081). It was restated by human sign-off after the pillar re-check: the kernel test behind "kernel-centric" was uninformative (EVA letters; pass criterion independent of the data; C089), and all four "closed-loop" legs — LINK monitoring, kernel intervention, hazard avoidance, convergence — were withdrawn (C171, C1401–C1403). The glyph-level kernel re-test (PHASE_763, C2082) returned MIXED: k shows no routing beyond its controls, and the cross-token pass is word-ending routing (e, bench and the non-kernel d), not a kernel; C089 is superseded. External tests so far: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded. Full record: `context/CORE/frozen_conclusion.md`. Forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
 
 ---
 

@@ -2,9 +2,9 @@
 
 **Generated:** 2026-09-28 by `scripts/registry_integrity_check.py` (regenerate after every registry change).
 
-**Generated table:** LIVE (Tier 0/2) 1678, TIER1 35, DEMOTED (Tier 3/4) 143; registered numbers in INDEX.md: 1888; dead (registered, not in table): 32.
+**Generated table:** LIVE (Tier 0/2) 1679, TIER1 35, DEMOTED (Tier 3/4) 142; registered numbers in INDEX.md: 1889; dead (registered, not in table): 33.
 
-**Citations of non-live constraints in living docs:** 817 (661 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
+**Citations of non-live constraints in living docs:** 836 (661 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
 
 
 ## Unannotated citations by file
@@ -12,13 +12,13 @@
 | File | DEMOTED | DEAD | UNKNOWN |
 |---|---|---|---|
 | context/SPECULATIVE/INTERPRETATION_SUMMARY.md | 109 | 15 | 3 |
-| context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml | 96 | 6 | 0 |
-| context/MODEL_FITS/FIT_TABLE.txt | 26 | 5 | 25 |
-| context/SPECULATIVE/ecr_apparatus_roles.md | 25 | 0 | 17 |
-| context/SPECULATIVE/ecr_synthesis.md | 10 | 0 | 19 |
+| context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml | 93 | 9 | 0 |
+| context/MODEL_FITS/FIT_TABLE.txt | 25 | 6 | 25 |
+| context/SPECULATIVE/ecr_apparatus_roles.md | 24 | 1 | 17 |
+| context/SPECULATIVE/ecr_synthesis.md | 9 | 1 | 19 |
 | context/STRUCTURAL_CONTRACTS/currierA.casc.yaml | 26 | 2 | 0 |
 | context/MODEL_CONTEXT.md | 23 | 3 | 0 |
-| context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md | 25 | 0 | 0 |
+| context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md | 24 | 1 | 0 |
 | context/SPECULATIVE/rupescissa_comparative.md | 14 | 7 | 0 |
 | context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml | 9 | 10 | 0 |
 | context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml | 19 | 0 | 0 |
@@ -26,7 +26,7 @@
 | context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml | 14 | 0 | 0 |
 | context/SPECULATIVE/encoding_modes.md | 13 | 0 | 0 |
 | context/PROJECT_SYNTHESIS.md | 11 | 0 | 0 |
-| context/CORE/frozen_conclusion.md | 10 | 1 | 0 |
+| context/CORE/frozen_conclusion.md | 9 | 2 | 0 |
 | context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml | 10 | 1 | 0 |
 | context/CRAZY_EXPERT_STANCE.md | 6 | 0 | 1 |
 | context/SPECULATIVE/apparatus_centric_semantics.md | 4 | 0 | 2 |
@@ -78,7 +78,7 @@
 | C85 | DEMOTED | 9 |
 | C547 | DEMOTED | 8 |
 | C558 | DEMOTED | 8 |
-| C89 | DEMOTED | 8 |
+| C89 | DEAD | 8 |
 | C527 | DEMOTED | 8 |
 | C461 | DEMOTED | 8 |
 | C434 | DEAD | 7 |
@@ -177,7 +177,7 @@
 - `context/MODEL_FITS/FIT_TABLE.txt:46` C86 [UNKNOWN] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
 - `context/MODEL_FITS/FIT_TABLE.txt:46` C87 [UNKNOWN] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
 - `context/MODEL_FITS/FIT_TABLE.txt:46` C88 [UNKNOWN] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
-- `context/MODEL_FITS/FIT_TABLE.txt:46` C89 [DEMOTED] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
+- `context/MODEL_FITS/FIT_TABLE.txt:46` C89 [DEAD] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
 - `context/MODEL_FITS/FIT_TABLE.txt:46` C91 [UNKNOWN] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
 - `context/MODEL_FITS/FIT_TABLE.txt:46` C92 [UNKNOWN] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
 - `context/MODEL_FITS/FIT_TABLE.txt:46` C93 [UNKNOWN] — F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
@@ -215,17 +215,17 @@
 - `context/MODEL_FITS/FIT_TABLE.txt:82` C458 [DEMOTED] — F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes), C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility), C494 (REGIME_4 P
 - `context/MODEL_FITS/FIT_TABLE.txt:82` C475 [DEMOTED] — F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes), C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility), C494 (REGIME_4 P
 - `context/CORE/falsifications.md:147` C171 [DEMOTED] — **Conclusion:** PP does not select tactics. It only widens the arena (capacity). This null result protects the semantic ceiling (C171, C469) — if PP encoded material-specific execu
-- `context/CORE/frozen_conclusion.md:24` C89 [DEMOTED] — - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
+- `context/CORE/frozen_conclusion.md:24` C89 [DEAD] — - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
 - `context/CORE/frozen_conclusion.md:24` C85 [DEMOTED] — - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
 - `context/CORE/frozen_conclusion.md:24` C103 [DEMOTED] — - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
 - `context/CORE/frozen_conclusion.md:24` C104 [DEMOTED] — - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
 - `context/CORE/frozen_conclusion.md:24` C105 [DEMOTED] — - **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
 - `context/CORE/frozen_conclusion.md:29` C783 [DEMOTED] — LINK is a morphological artifact, C609, C1174), intervention by kernel operators (above), hazard avoidance (C783, C2060,
 - `context/CORE/frozen_conclusion.md:34` C2056 [DEMOTED] — e, and qo tokens alternate with ch/sh tokens beyond line composition (C1313, C549, C2056) — a family preference, not a
-- `context/CORE/frozen_conclusion.md:55` C783 [DEMOTED] — | Forbidden transitions | none beyond known effects | C783, C2060, C2063, C2081 |
-- `context/CORE/frozen_conclusion.md:87` C171 [DEMOTED] — - **NOT a translation** — no token has a demonstrated equivalent in any language (C171 semantic ceiling framing retained
-- `context/CORE/frozen_conclusion.md:89` C132 [DEAD] — - **NOT natural language written one token per word** (C132, C2015, C2022; the old "0.19% reference rate" is tainted and not
-- `context/CORE/frozen_conclusion.md:102` C171 [DEMOTED] — "Continuous closed-loop process control" was the best-supported purpose class among those tested (C171). Only 2 of its 12
+- `context/CORE/frozen_conclusion.md:56` C783 [DEMOTED] — | Forbidden transitions | none beyond known effects | C783, C2060, C2063, C2081 |
+- `context/CORE/frozen_conclusion.md:88` C171 [DEMOTED] — - **NOT a translation** — no token has a demonstrated equivalent in any language (C171 semantic ceiling framing retained
+- `context/CORE/frozen_conclusion.md:90` C132 [DEAD] — - **NOT natural language written one token per word** (C132, C2015, C2022; the old "0.19% reference rate" is tainted and not
+- `context/CORE/frozen_conclusion.md:103` C171 [DEMOTED] — "Continuous closed-loop process control" was the best-supported purpose class among those tested (C171). Only 2 of its 12
 - `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml:17` C1274 [DEMOTED] — audit_note: "v1.5: o-HEAD cross-system gradient A>AZC>B added (C1559, Phase 548). v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level
 - `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml:59` C433 [DEAD] — provenance: "C430-C436, C441-C443"
 - `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml:59` C434 [DEAD] — provenance: "C430-C436, C441-C443"
@@ -245,36 +245,36 @@
 - `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml:456` C434 [DEAD] — - "C434"  # R-series strict forward ordering
 - `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml:457` C435 [DEAD] — - "C435"  # S/R positional division
 - `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml:470` C1274 [DEMOTED] — - "C1274"  # Category predicts B escape (THERMAL rho=+0.780)
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:16` C1274 [DEMOTED] — audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:59` C470 [DEMOTED] — provenance: "C470"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:75` C1274 [DEMOTED] — provenance: "C1274"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:85` C470 [DEMOTED] — provenance: "C470"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:106` C470 [DEMOTED] — provenance: "C443, C468, C470"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:128` C470 [DEMOTED] — provenance: "C470"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:143` C1274 [DEMOTED] — provenance: "C1274"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:196` C105 [DEMOTED] — provenance: "C105"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:202` C458 [DEMOTED] — provenance: "C458"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:299` C1274 [DEMOTED] — provenance: "C1274"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:317` C470 [DEMOTED] — provenance: "C470"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:324` C105 [DEMOTED] — provenance: "C397, C398, C105"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:329` C458 [DEMOTED] — provenance: "C458"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:338` C1274 [DEMOTED] — provenance: "C1274"
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:345` C470 [DEMOTED] — - "C470"  # MIDDLE restriction inheritance
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:348` C105 [DEMOTED] — - "C105"  # e = STABILITY_ANCHOR
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:352` C458 [DEMOTED] — - "C458"  # Execution design clamp
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:365` C470 [DEMOTED] — - "C470"  # Restriction preservation
-- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:369` C1274 [DEMOTED] — - "C1274"  # Category composition predicts B escape rate
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:644` C171 [DEMOTED] — Maps to suffix control-flow semantics (C171):
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:874` C171 [DEMOTED] — apparatus_agnostic: "Voynich grammar is material-agnostic (C171)"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:964` C475 [DEMOTED] — evidence: "C475, C476"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:964` C476 [DEAD] — evidence: "C475, C476"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:969` C873 [DEMOTED] — evidence: "C873, C876"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:969` C876 [DEMOTED] — evidence: "C873, C876"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:974` C875 [DEMOTED] — evidence: "C875, F-BRU-007"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:994` C171 [DEMOTED] — voynich: "C171: No material encoding in execution grammar"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:996` C171 [DEMOTED] — evidence: "C171, C384"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:1064` C527 [DEMOTED] — - "C527: Suffix fire-degree correlation"
-- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:1066` C171 [DEMOTED] — - "C171: No material encoding in execution grammar"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:17` C1274 [DEMOTED] — audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:60` C470 [DEMOTED] — provenance: "C470"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:76` C1274 [DEMOTED] — provenance: "C1274"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:86` C470 [DEMOTED] — provenance: "C470"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:107` C470 [DEMOTED] — provenance: "C443, C468, C470"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:129` C470 [DEMOTED] — provenance: "C470"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:144` C1274 [DEMOTED] — provenance: "C1274"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:197` C105 [DEMOTED] — provenance: "C105"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:203` C458 [DEMOTED] — provenance: "C458"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:300` C1274 [DEMOTED] — provenance: "C1274"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:318` C470 [DEMOTED] — provenance: "C470"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:325` C105 [DEMOTED] — provenance: "C397, C398, C105"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:330` C458 [DEMOTED] — provenance: "C458"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:339` C1274 [DEMOTED] — provenance: "C1274"
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:346` C470 [DEMOTED] — - "C470"  # MIDDLE restriction inheritance
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:349` C105 [DEMOTED] — - "C105"  # e = STABILITY_ANCHOR
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:353` C458 [DEMOTED] — - "C458"  # Execution design clamp
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:366` C470 [DEMOTED] — - "C470"  # Restriction preservation
+- `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml:370` C1274 [DEMOTED] — - "C1274"  # Category composition predicts B escape rate
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:645` C171 [DEMOTED] — Maps to suffix control-flow semantics (C171):
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:875` C171 [DEMOTED] — apparatus_agnostic: "Voynich grammar is material-agnostic (C171)"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:965` C475 [DEMOTED] — evidence: "C475, C476"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:965` C476 [DEAD] — evidence: "C475, C476"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:970` C873 [DEMOTED] — evidence: "C873, C876"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:970` C876 [DEMOTED] — evidence: "C873, C876"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:975` C875 [DEMOTED] — evidence: "C875, F-BRU-007"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:995` C171 [DEMOTED] — voynich: "C171: No material encoding in execution grammar"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:997` C171 [DEMOTED] — evidence: "C171, C384"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:1065` C527 [DEMOTED] — - "C527: Suffix fire-degree correlation"
+- `context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml:1067` C171 [DEMOTED] — - "C171: No material encoding in execution grammar"
 - `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml:111` C475 [DEMOTED] — incompatibility_rate: "95.7% of pairs are illegal"  # C475
 - `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml:236` C836 [DEMOTED] — # RI functional population structure (C831-C839)
 - `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml:236` C837 [DEMOTED] — # RI functional population structure (C831-C839)
@@ -304,139 +304,139 @@
 - `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml:1004` C475 [DEMOTED] — - "C1705"  # C475 operational divergence confirmed (d=0.816)
 - `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml:1027` C476 [DEAD] — - "C476"  # Maintained not produced
 - `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:4` C2023 [DEMOTED] — #   DEMOTED to Tier 3: C458, C475, C547, C557, C558, C561, C600, C783, C816, C817, C819, C863, C869, C872, C873, C874, C875, C876, C879, C880, C896, C936, C1014, C1118, C2023
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:35` C120 [DEMOTED] — referential_content: false  # No substance/material identification from tokens (C120, C171)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:35` C171 [DEMOTED] — referential_content: false  # No substance/material identification from tokens (C120, C171)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:36` C120 [DEMOTED] — token_translation: false  # No natural-language translation recoverable (C120)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:71` C115 [DEMOTED] — provenance: "C115, C124"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:75` C79 [DEMOTED] — provenance: "C074, C079, C084, C1403"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:75` C84 [DEMOTED] — provenance: "C074, C079, C084, C1403"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:78` C783 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:78` C1118 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:78` C2023 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:78` C2023 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C783 [DEMOTED] — provenance: "C109, C783, C789, C1118, C2023"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C1118 [DEMOTED] — provenance: "C109, C783, C789, C1118, C2023"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C2023 [DEMOTED] — provenance: "C109, C783, C789, C1118, C2023"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:83` C89 [DEMOTED] — provenance: "C089, C521, C522"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:95` C458 [DEMOTED] — provenance: "C458"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:103` C171 [DEMOTED] — provenance: "C171"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:131` C1014 [DEMOTED] — provenance: "C1016, C1017, C1018, C1020, C1013, C1014"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:209` C84 [DEMOTED] — provenance: "C074, C084, C323, C1403"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:310` C85 [DEMOTED] — provenance: "C085"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:434` C936 [DEMOTED] — domain_selector: "VESSEL/APPARATUS — MIDDLE provides action on vessel (C936 revised)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:469` C936 [DEMOTED] — provenance: "C911, C661, C662, C936, C1015, C1219, C1221, C1396"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:943` C557 [DEMOTED] — provenance: "C121, C557, C558, C560, C581, C788-C791"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:943` C558 [DEMOTED] — provenance: "C121, C557, C558, C560, C581, C788-C791"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:991` C547 [DEMOTED] — provenance: "C547-C550, C573, C581-C583, C591"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1045` C869 [DEMOTED] — provenance: "C869"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1046` C863 [DEMOTED] — provenance: "C863-C869"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1046` C869 [DEMOTED] — provenance: "C863-C869"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1057` C103 [DEMOTED] — provenance: "C103"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1063` C104 [DEMOTED] — provenance: "C104"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1070` C105 [DEMOTED] — provenance: "C105"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1084` C89 [DEMOTED] — provenance: "C089, C332, C333, C521"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1283` C561 [DEMOTED] — mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1283` C957 [DEAD] — mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1326` C557 [DEMOTED] — daiin_trigger: "daiin marks WORK→CHECK transition (C557)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1327` C561 [DEMOTED] — or_aiin_bigram: "or→aiin is strongest role-transition bigram (C561)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1341` C557 [DEMOTED] — provenance: "C556, C557, C561, C562, C956-C964"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1341` C561 [DEMOTED] — provenance: "C556, C557, C561, C562, C956-C964"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1341` C957 [DEAD] — provenance: "C556, C557, C561, C562, C956-C964"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1403` C557 [DEMOTED] — provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1403` C561 [DEMOTED] — provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1683` C79 [DEMOTED] — provenance: "C079, C084, C1403"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1683` C84 [DEMOTED] — provenance: "C079, C084, C1403"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1762` C365 [DEAD] — provenance: "C805 (refutes C365)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1860` C105 [DEMOTED] — provenance: "C105, C1457, C1458, C1459, C1462"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2113` C458 [DEMOTED] — mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have we
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2114` C458 [DEMOTED] — provenance: "C458, C1016, C1017, C1018"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2170` C816 [DEMOTED] — provenance: "C813, C816"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2181` C873 [DEMOTED] — relationship_to_C873: |
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2182` C873 [DEMOTED] — C873 measures mean position of ALL occurrences (e 0.404 < h 0.410 < k 0.443).
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2593` C475 [DEMOTED] — statement: "HT tokens obey C475 MIDDLE incompatibility when co-occurring with classified tokens"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2676` C872 [DEMOTED] — provenance: "C872, C935"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2907` C936 [DEMOTED] — reading: "VESSEL: deep cool (C936 — ok selects vessel, eey = deep cool action)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2910` C936 [DEMOTED] — reading: "VESSEL: check (C936 — ok selects vessel, aiin = check action)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2913` C936 [DEMOTED] — reading: "VESSEL: seal permanently (C936 — ok selects vessel, am = finalize)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2940` C120 [DEMOTED] — reason: "Semantic ceiling (C120, C171): no natural-language translation or material identification recoverable from internal analysis. Behavioral glosses (Tier 3) describe operatio
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2940` C171 [DEMOTED] — reason: "Semantic ceiling (C120, C171): no natural-language translation or material identification recoverable from internal analysis. Behavioral glosses (Tier 3) describe operatio
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2957` C120 [DEMOTED] — reason: "Irrecoverable by design (C120, C171)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2957` C171 [DEMOTED] — reason: "Irrecoverable by design (C120, C171)"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2981` C105 [DEMOTED] — provenance: "C105, C333, C339"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3012` C458 [DEMOTED] — provenance: "C458"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3025` C547 [DEMOTED] — provenance: "C547, C551, C556, C557"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3025` C557 [DEMOTED] — provenance: "C547, C551, C556, C557"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3086` C936 [DEMOTED] — provenance: "C267, C382, C588, C661, C911, C935, C936, C1218, C1219, C1220, C1221"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3109` C79 [DEMOTED] — - "C079"   # Only STATE-C Essential
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3110` C84 [DEMOTED] — - "C084"   # System Targets MONOSTATE
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3112` C115 [DEMOTED] — - "C115"   # 0 Non-Executable Tokens
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3115` C171 [DEMOTED] — - "C171"   # Closed-Loop Control Only
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3118` C85 [DEMOTED] — - "C085"   # 10 primitives
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3119` C89 [DEMOTED] — - "C089"   # Core within core
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3120` C103 [DEMOTED] — - "C103"   # k = ENERGY_MODULATOR
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3121` C104 [DEMOTED] — - "C104"   # h = PHASE_MANAGER
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3122` C105 [DEMOTED] — - "C105"   # e = STABILITY_ANCHOR
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3167` C936 [DEMOTED] — - "C936"   # ok = vessel domain selector (revised from three-operation composite)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3242` C458 [DEMOTED] — - "C458"   # Execution design clamp
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3296` C547 [DEMOTED] — - "C547"   # ICC-based role validation
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3306` C557 [DEMOTED] — - "C557"   # daiin trigger
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3307` C561 [DEMOTED] — - "C561"   # or→aiin bigram
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3310` C957 [DEAD] — - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3393` C600 [DEMOTED] — - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3419` C475 [DEMOTED] — - "C741"   # HT C475 minimal participation
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3420` C475 [DEMOTED] — - "C742"   # HT C475 compliance (0.44% violation)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3453` C783 [DEMOTED] — - "C783"   # Forbidden pair asymmetry (direction matters)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3467` C365 [DEAD] — - "C805"   # LINK boundary enrichment (refutes C365 spatially uniform)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3489` C816 [DEMOTED] — - "C816"   # CC positional ordering (daiin->LINK->KERNEL->ol->FL)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3490` C817 [DEMOTED] — - "C817"   # CC lane routing confirmed (daiin->CHSH 90.8%, rapid decay)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3492` C819 [DEMOTED] — - "C819"   # CC boundary asymmetry (daiin initial, ol/ol_derived medial)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3521` C863 [DEMOTED] — - "C863"   # Paragraph-ordinal EN subfamily gradient
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3527` C869 [DEMOTED] — - "C869"   # Gallows functional model
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3532` C872 [DEMOTED] — - "C872"   # HT discrimination vocabulary interpretation
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3535` C873 [DEMOTED] — - "C873"   # Kernel positional ordering (e < h < k) — mean position
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3536` C874 [DEMOTED] — - "C874"   # CC token functions (daiin=init, ol=continue)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3537` C875 [DEMOTED] — - "C875"   # Escape trigger grammar (80.4% from hazard FL stages)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3538` C876 [DEMOTED] — - "C876"   # LINK checkpoint function
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3541` C879 [DEMOTED] — - "C879"   # Process domain verdict (batch processing)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3542` C880 [DEMOTED] — - "C880"   # Integrated control model
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3550` C873 [DEMOTED] — - "C1238"  # Kernel initiation order (e->k->h, refines C873)
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3560` C896 [DEMOTED] — - "C896"   # Process mode discrimination via kernel profile
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3897` C120 [DEMOTED] — provenance: "C120"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3905` C171 [DEMOTED] — provenance: "C171"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3911` C559 [DEAD] — - interpretation: "C559 FQ membership {9,20,21,23} is correct"
-- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3925` C936 [DEMOTED] — provenance: "C936 (revised)"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:161` C461 [DEMOTED] — provenance: "C477, C461"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:196` C475 [DEMOTED] — - id: "C475_COMPLIANCE"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:240` C488 [DEMOTED] — strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:246` C488 [DEMOTED] — provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138, C1146, C1147, C1148"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:289` C85 [DEMOTED] — vocabulary: "80.1% PP morphology (C085 primitives) (C801)"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:372` C461 [DEMOTED] — driver: "tail_pressure explains 68% of R-sq=0.279 (C461)"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:385` C488 [DEMOTED] — strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:387` C461 [DEMOTED] — provenance: "C461, C477, C488, C489, C1080"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:387` C488 [DEMOTED] — provenance: "C461, C477, C488, C489, C1080"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:387` C489 [DEMOTED] — provenance: "C461, C477, C488, C489, C1080"
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:454` C461 [DEMOTED] — - {id: "C461", topic: "Tail pressure driver (68% of R-sq)"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:457` C488 [DEMOTED] — - {id: "C488", topic: "Strategy prediction (CAUTIOUS/OPPORTUNISTIC)"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:458` C489 [DEMOTED] — - {id: "C489", topic: "Two-axis model coherence"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:463` C475 [DEMOTED] — - {id: "C741", topic: "C475 minimal participation"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:464` C475 [DEMOTED] — - {id: "C742", topic: "C475 compliance (0.69% violation)"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:499` C872 [DEMOTED] — - {id: "C872", topic: "HT discrimination vocabulary"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:527` C120 [DEMOTED] — - {id: "C120", topic: "PURE_OPERATIONAL verdict excludes HT"}
-- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:545` C171 [DEMOTED] — - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:50` C863 [DEMOTED] — - gallows_dynamics_detail: "-> BCSC (P-T transition C867, EN subfamily gradient C863)"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:189` C475 [DEMOTED] — Paragraphs draw from fewer C475 compatibility clusters than random.
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:267` C884 [DEMOTED] — animal_candidates: "6 paragraphs pass kernel validation (C884, CASC, Tier 3)"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:268` C884 [DEMOTED] — provenance: "C847-C850, C881, C884, C915, C1039-C1041 (all CASC-owned)"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:298` C863 [DEMOTED] — provenance: "C840-C844, C851-C853, C863-C869, C893, C932-C935, C944, C1052, C1054"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:298` C869 [DEMOTED] — provenance: "C840-C844, C851-C853, C863-C869, C893, C932-C935, C944, C1052, C1054"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:432` C863 [DEMOTED] — refutation: "C855, C862: Independent mini-programs; ordinal 3 does not execute 'after' ordinal 2. C863 shows statistical gradient by ordinal but this is distributional, not orderin
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:448` C120 [DEMOTED] — refutation: "C120 (PURE_OPERATIONAL), C846 (pool-based), C171 (closed-loop control, not batch recipes)"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:448` C171 [DEMOTED] — refutation: "C120 (PURE_OPERATIONAL), C846 (pool-based), C171 (closed-loop control, not batch recipes)"
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:519` C863 [DEMOTED] — - {id: "C863", topic: "Paragraph-ordinal EN subfamily gradient (qo-early, ch-late)"}
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:521` C869 [DEMOTED] — - {id: "C869", topic: "Gallows function as paragraph/section delimiters"}
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:538` C120 [DEMOTED] — - {id: "C120", topic: "PURE_OPERATIONAL verdict (semantic ceiling)"}
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:539` C171 [DEMOTED] — - {id: "C171", topic: "Closed-loop control only"}
-- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:550` C884 [DEMOTED] — - {id: "C884", topic: "PRECISION-animal correspondence (6 candidates, Tier 3)"}
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:36` C120 [DEMOTED] — referential_content: false  # No substance/material identification from tokens (C120, C171)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:36` C171 [DEMOTED] — referential_content: false  # No substance/material identification from tokens (C120, C171)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:37` C120 [DEMOTED] — token_translation: false  # No natural-language translation recoverable (C120)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:72` C115 [DEMOTED] — provenance: "C115, C124"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:76` C79 [DEMOTED] — provenance: "C074, C079, C084, C1403"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:76` C84 [DEMOTED] — provenance: "C074, C079, C084, C1403"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C783 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C1118 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C2023 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:79` C2023 [DEMOTED] — statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C11
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:80` C783 [DEMOTED] — provenance: "C109, C783, C789, C1118, C2023"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:80` C1118 [DEMOTED] — provenance: "C109, C783, C789, C1118, C2023"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:80` C2023 [DEMOTED] — provenance: "C109, C783, C789, C1118, C2023"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:84` C89 [DEAD] — provenance: "C089, C521, C522"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:96` C458 [DEMOTED] — provenance: "C458"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:104` C171 [DEMOTED] — provenance: "C171"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:132` C1014 [DEMOTED] — provenance: "C1016, C1017, C1018, C1020, C1013, C1014"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:210` C84 [DEMOTED] — provenance: "C074, C084, C323, C1403"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:311` C85 [DEMOTED] — provenance: "C085"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:435` C936 [DEMOTED] — domain_selector: "VESSEL/APPARATUS — MIDDLE provides action on vessel (C936 revised)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:470` C936 [DEMOTED] — provenance: "C911, C661, C662, C936, C1015, C1219, C1221, C1396"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:944` C557 [DEMOTED] — provenance: "C121, C557, C558, C560, C581, C788-C791"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:944` C558 [DEMOTED] — provenance: "C121, C557, C558, C560, C581, C788-C791"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:992` C547 [DEMOTED] — provenance: "C547-C550, C573, C581-C583, C591"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1046` C869 [DEMOTED] — provenance: "C869"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1047` C863 [DEMOTED] — provenance: "C863-C869"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1047` C869 [DEMOTED] — provenance: "C863-C869"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1058` C103 [DEMOTED] — provenance: "C103"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1064` C104 [DEMOTED] — provenance: "C104"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1071` C105 [DEMOTED] — provenance: "C105"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1085` C89 [DEAD] — provenance: "C089, C332, C333, C521"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1284` C561 [DEMOTED] — mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1284` C957 [DEAD] — mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1327` C557 [DEMOTED] — daiin_trigger: "daiin marks WORK→CHECK transition (C557)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1328` C561 [DEMOTED] — or_aiin_bigram: "or→aiin is strongest role-transition bigram (C561)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1342` C557 [DEMOTED] — provenance: "C556, C557, C561, C562, C956-C964"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1342` C561 [DEMOTED] — provenance: "C556, C557, C561, C562, C956-C964"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1342` C957 [DEAD] — provenance: "C556, C557, C561, C562, C956-C964"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1404` C557 [DEMOTED] — provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1404` C561 [DEMOTED] — provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1684` C79 [DEMOTED] — provenance: "C079, C084, C1403"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1684` C84 [DEMOTED] — provenance: "C079, C084, C1403"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1763` C365 [DEAD] — provenance: "C805 (refutes C365)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:1861` C105 [DEMOTED] — provenance: "C105, C1457, C1458, C1459, C1462"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2114` C458 [DEMOTED] — mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have we
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2115` C458 [DEMOTED] — provenance: "C458, C1016, C1017, C1018"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2171` C816 [DEMOTED] — provenance: "C813, C816"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2182` C873 [DEMOTED] — relationship_to_C873: |
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2183` C873 [DEMOTED] — C873 measures mean position of ALL occurrences (e 0.404 < h 0.410 < k 0.443).
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2594` C475 [DEMOTED] — statement: "HT tokens obey C475 MIDDLE incompatibility when co-occurring with classified tokens"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2677` C872 [DEMOTED] — provenance: "C872, C935"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2908` C936 [DEMOTED] — reading: "VESSEL: deep cool (C936 — ok selects vessel, eey = deep cool action)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2911` C936 [DEMOTED] — reading: "VESSEL: check (C936 — ok selects vessel, aiin = check action)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2914` C936 [DEMOTED] — reading: "VESSEL: seal permanently (C936 — ok selects vessel, am = finalize)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2941` C120 [DEMOTED] — reason: "Semantic ceiling (C120, C171): no natural-language translation or material identification recoverable from internal analysis. Behavioral glosses (Tier 3) describe operatio
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2941` C171 [DEMOTED] — reason: "Semantic ceiling (C120, C171): no natural-language translation or material identification recoverable from internal analysis. Behavioral glosses (Tier 3) describe operatio
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2958` C120 [DEMOTED] — reason: "Irrecoverable by design (C120, C171)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2958` C171 [DEMOTED] — reason: "Irrecoverable by design (C120, C171)"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:2982` C105 [DEMOTED] — provenance: "C105, C333, C339"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3013` C458 [DEMOTED] — provenance: "C458"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3026` C547 [DEMOTED] — provenance: "C547, C551, C556, C557"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3026` C557 [DEMOTED] — provenance: "C547, C551, C556, C557"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3087` C936 [DEMOTED] — provenance: "C267, C382, C588, C661, C911, C935, C936, C1218, C1219, C1220, C1221"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3110` C79 [DEMOTED] — - "C079"   # Only STATE-C Essential
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3111` C84 [DEMOTED] — - "C084"   # System Targets MONOSTATE
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3113` C115 [DEMOTED] — - "C115"   # 0 Non-Executable Tokens
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3116` C171 [DEMOTED] — - "C171"   # Closed-Loop Control Only
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3119` C85 [DEMOTED] — - "C085"   # 10 primitives
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3120` C89 [DEAD] — - "C089"   # Core within core
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3121` C103 [DEMOTED] — - "C103"   # k = ENERGY_MODULATOR
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3122` C104 [DEMOTED] — - "C104"   # h = PHASE_MANAGER
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3123` C105 [DEMOTED] — - "C105"   # e = STABILITY_ANCHOR
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3168` C936 [DEMOTED] — - "C936"   # ok = vessel domain selector (revised from three-operation composite)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3243` C458 [DEMOTED] — - "C458"   # Execution design clamp
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3297` C547 [DEMOTED] — - "C547"   # ICC-based role validation
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3307` C557 [DEMOTED] — - "C557"   # daiin trigger
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3308` C561 [DEMOTED] — - "C561"   # or→aiin bigram
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3311` C957 [DEAD] — - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3394` C600 [DEMOTED] — - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3420` C475 [DEMOTED] — - "C741"   # HT C475 minimal participation
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3421` C475 [DEMOTED] — - "C742"   # HT C475 compliance (0.44% violation)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3454` C783 [DEMOTED] — - "C783"   # Forbidden pair asymmetry (direction matters)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3468` C365 [DEAD] — - "C805"   # LINK boundary enrichment (refutes C365 spatially uniform)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3490` C816 [DEMOTED] — - "C816"   # CC positional ordering (daiin->LINK->KERNEL->ol->FL)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3491` C817 [DEMOTED] — - "C817"   # CC lane routing confirmed (daiin->CHSH 90.8%, rapid decay)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3493` C819 [DEMOTED] — - "C819"   # CC boundary asymmetry (daiin initial, ol/ol_derived medial)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3522` C863 [DEMOTED] — - "C863"   # Paragraph-ordinal EN subfamily gradient
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3528` C869 [DEMOTED] — - "C869"   # Gallows functional model
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3533` C872 [DEMOTED] — - "C872"   # HT discrimination vocabulary interpretation
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3536` C873 [DEMOTED] — - "C873"   # Kernel positional ordering (e < h < k) — mean position
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3537` C874 [DEMOTED] — - "C874"   # CC token functions (daiin=init, ol=continue)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3538` C875 [DEMOTED] — - "C875"   # Escape trigger grammar (80.4% from hazard FL stages)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3539` C876 [DEMOTED] — - "C876"   # LINK checkpoint function
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3542` C879 [DEMOTED] — - "C879"   # Process domain verdict (batch processing)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3543` C880 [DEMOTED] — - "C880"   # Integrated control model
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3551` C873 [DEMOTED] — - "C1238"  # Kernel initiation order (e->k->h, refines C873)
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3561` C896 [DEMOTED] — - "C896"   # Process mode discrimination via kernel profile
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3898` C120 [DEMOTED] — provenance: "C120"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3906` C171 [DEMOTED] — provenance: "C171"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3912` C559 [DEAD] — - interpretation: "C559 FQ membership {9,20,21,23} is correct"
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml:3926` C936 [DEMOTED] — provenance: "C936 (revised)"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:162` C461 [DEMOTED] — provenance: "C477, C461"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:197` C475 [DEMOTED] — - id: "C475_COMPLIANCE"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:241` C488 [DEMOTED] — strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:247` C488 [DEMOTED] — provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138, C1146, C1147, C1148"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:290` C85 [DEMOTED] — vocabulary: "80.1% PP morphology (C085 primitives) (C801)"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:373` C461 [DEMOTED] — driver: "tail_pressure explains 68% of R-sq=0.279 (C461)"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:386` C488 [DEMOTED] — strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:388` C461 [DEMOTED] — provenance: "C461, C477, C488, C489, C1080"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:388` C488 [DEMOTED] — provenance: "C461, C477, C488, C489, C1080"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:388` C489 [DEMOTED] — provenance: "C461, C477, C488, C489, C1080"
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:455` C461 [DEMOTED] — - {id: "C461", topic: "Tail pressure driver (68% of R-sq)"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:458` C488 [DEMOTED] — - {id: "C488", topic: "Strategy prediction (CAUTIOUS/OPPORTUNISTIC)"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:459` C489 [DEMOTED] — - {id: "C489", topic: "Two-axis model coherence"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:464` C475 [DEMOTED] — - {id: "C741", topic: "C475 minimal participation"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:465` C475 [DEMOTED] — - {id: "C742", topic: "C475 compliance (0.69% violation)"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:500` C872 [DEMOTED] — - {id: "C872", topic: "HT discrimination vocabulary"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:528` C120 [DEMOTED] — - {id: "C120", topic: "PURE_OPERATIONAL verdict excludes HT"}
+- `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml:546` C171 [DEMOTED] — - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:51` C863 [DEMOTED] — - gallows_dynamics_detail: "-> BCSC (P-T transition C867, EN subfamily gradient C863)"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:190` C475 [DEMOTED] — Paragraphs draw from fewer C475 compatibility clusters than random.
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:268` C884 [DEMOTED] — animal_candidates: "6 paragraphs pass kernel validation (C884, CASC, Tier 3)"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:269` C884 [DEMOTED] — provenance: "C847-C850, C881, C884, C915, C1039-C1041 (all CASC-owned)"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:299` C863 [DEMOTED] — provenance: "C840-C844, C851-C853, C863-C869, C893, C932-C935, C944, C1052, C1054"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:299` C869 [DEMOTED] — provenance: "C840-C844, C851-C853, C863-C869, C893, C932-C935, C944, C1052, C1054"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:433` C863 [DEMOTED] — refutation: "C855, C862: Independent mini-programs; ordinal 3 does not execute 'after' ordinal 2. C863 shows statistical gradient by ordinal but this is distributional, not orderin
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:449` C120 [DEMOTED] — refutation: "C120 (PURE_OPERATIONAL), C846 (pool-based), C171 (closed-loop control, not batch recipes)"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:449` C171 [DEMOTED] — refutation: "C120 (PURE_OPERATIONAL), C846 (pool-based), C171 (closed-loop control, not batch recipes)"
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:520` C863 [DEMOTED] — - {id: "C863", topic: "Paragraph-ordinal EN subfamily gradient (qo-early, ch-late)"}
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:522` C869 [DEMOTED] — - {id: "C869", topic: "Gallows function as paragraph/section delimiters"}
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:539` C120 [DEMOTED] — - {id: "C120", topic: "PURE_OPERATIONAL verdict (semantic ceiling)"}
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:540` C171 [DEMOTED] — - {id: "C171", topic: "Closed-loop control only"}
+- `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml:551` C884 [DEMOTED] — - {id: "C884", topic: "PRECISION-animal correspondence (6 candidates, Tier 3)"}
 - `context/SPECULATIVE/a_behavioral_classification.md:68` C476 [DEAD] — - Persists despite hub rationing (C476)
 - `context/SPECULATIVE/a_behavioral_classification.md:207` C476 [DEAD] — | C476 (hub rationing) | Gradient persists despite rationing |
 - `context/SPECULATIVE/a_behavioral_classification.md:267` C171 [DEMOTED] — C171 ("zero material encoding") remains unchanged and is NOT reinterpreted.
@@ -461,7 +461,7 @@
 - `context/SPECULATIVE/ecr_apparatus_roles.md:17` C86 [UNKNOWN] — ### From Kernel Structure (C085-C108)
 - `context/SPECULATIVE/ecr_apparatus_roles.md:17` C87 [UNKNOWN] — ### From Kernel Structure (C085-C108)
 - `context/SPECULATIVE/ecr_apparatus_roles.md:17` C88 [UNKNOWN] — ### From Kernel Structure (C085-C108)
-- `context/SPECULATIVE/ecr_apparatus_roles.md:17` C89 [DEMOTED] — ### From Kernel Structure (C085-C108)
+- `context/SPECULATIVE/ecr_apparatus_roles.md:17` C89 [DEAD] — ### From Kernel Structure (C085-C108)
 - `context/SPECULATIVE/ecr_apparatus_roles.md:17` C91 [UNKNOWN] — ### From Kernel Structure (C085-C108)
 - `context/SPECULATIVE/ecr_apparatus_roles.md:17` C92 [UNKNOWN] — ### From Kernel Structure (C085-C108)
 - `context/SPECULATIVE/ecr_apparatus_roles.md:17` C93 [UNKNOWN] — ### From Kernel Structure (C085-C108)
@@ -511,7 +511,7 @@
 - `context/SPECULATIVE/ecr_synthesis.md:162` C86 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C87 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C88 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
-- `context/SPECULATIVE/ecr_synthesis.md:162` C89 [DEMOTED] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
+- `context/SPECULATIVE/ecr_synthesis.md:162` C89 [DEAD] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C91 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C92 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C93 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
@@ -566,7 +566,7 @@
 - `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:33` C458 [DEMOTED] — | **Envelope** | Overall regime | Strategic stance | C179-C185, C458 |
 - `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:41` C103 [DEMOTED] — ### 2.1 k - ENERGY_MODULATOR (C103)
 - `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:52` C103 [DEMOTED] — **Constraint basis:** C103 defines k as ENERGY_MODULATOR. C089 establishes kernel set {k, h, e}.
-- `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:52` C89 [DEMOTED] — **Constraint basis:** C103 defines k as ENERGY_MODULATOR. C089 establishes kernel set {k, h, e}.
+- `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:52` C89 [DEAD] — **Constraint basis:** C103 defines k as ENERGY_MODULATOR. C089 establishes kernel set {k, h, e}.
 - `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:54` C104 [DEMOTED] — ### 2.2 h - PHASE_MANAGER (C104)
 - `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:65` C104 [DEMOTED] — **Constraint basis:** C104 defines h as PHASE_MANAGER. C107 establishes kernel operators are hazard-adjacent.
 - `context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md:67` C105 [DEMOTED] — ### 2.3 e - STABILITY_ANCHOR (C105)

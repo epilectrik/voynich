@@ -4,6 +4,44 @@
 
 ---
 
+## Version 7.25 (2026-09-28) — PHASE_763: glyph-level kernel re-test (MIXED; C2082 supersedes C089)
+
+### Summary
+The pre-registered, twice lean-audited re-test of "kernel-centric" at glyph level (kernel {k, e, bench}; 5
+frequency- and position-matched controls per kernel glyph; triad test) returned **MIXED** under the locked rules.
+"Kernel-centric" is not restored.
+
+| Arm | Statistic / null | Result |
+|---|---|---|
+| S — cross-token routing beyond the prefix channel | I(g ∈ t; class(t+1) \| first glyph of t) vs PHASE_756 N5 (glyph edges, β = 2) | **PASS** (p 0.011, E 4.4 z; ZL, S2, R1 agree; R2 weaker; Naibbe and Timm E ≈ 0) |
+| W — within-token centrality | centred random-walk closeness vs run-block permutation | **INCONCLUSIVE** (p 0.088; uncertified; below generator and Latin floors) |
+
+**Per glyph (descriptive):**
+- the Arm S pass is carried by e (z 10.1) and bench (7.6);
+- k (1.8) sits at its controls' median;
+- the non-kernel glyph d (8.9) is as strong.
+
+**Post-hoc decomposition (not verdict-bearing):** adding the token's last two glyph units to the conditioning
+removes the signal. What passed is a token's ending predicting the next token's class beyond the last-glyph →
+first-glyph coupling.
+
+### Registry
+| Constraint | Action |
+|---|---|
+| C2082 | NEW Tier 2: word-ending → next-class routing above N5 (the Arm S measurement, with per-glyph facts); Arm W inconclusive |
+| C089 | STATUS:SUPERSEDED by C2082 |
+| C103, C104, C105 | Annotated (stay Tier 3) |
+
+Counts: 1,875 live (T0 17, T1 35, T2 1,684, T3 135, T4 4); numbering through C2082; 763 phases.
+
+### Other
+- The numba cache of the importlib-loaded N5 module broke a second process. PHASE_763 now uses its own cache directory
+  and registers the module by name; the stale N5 cache files were cleared.
+- Side observation: PHASE_760 ran its N_EDGE null at β = 4, which PHASE_756 showed does not mix. A re-run at β = 2 is
+  queued.
+
+---
+
 ## Version 7.24 (2026-09-28) — Tier-0 restatement (human sign-off)
 
 ### Summary

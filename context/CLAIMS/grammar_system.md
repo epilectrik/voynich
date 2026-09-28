@@ -15,7 +15,7 @@ Primitives: s, e, t, d, l, o, h, c, k, r
 **Compression Reality Note (2026-01-23):** These primitives also serve as compression hinges in superstring morphology (C517). Test 15-16 confirmed they are REAL OPERATORS with distinct functional roles, not compression artifacts. Evidence: directional asymmetry (e→h=0.00, h→e=7.00x) cannot arise from compression mechanics.
 
 ### C089 - Core Within Core
-**Tier:** 3 | **Status:** CLOSED
+**Tier:** 3 | **Status:** SUPERSEDED 2026-09-28 by C2082 (PHASE_763; formerly CLOSED)
 Three kernel operators: k, h, e form the irreducible control core.
 **Source:** Phase 15
 

@@ -53,7 +53,10 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
   sentence. On re-check its supports did not hold: the only test behind "kernel-centric" was uninformative (it ranked
   single EVA letters, where "h" is half of one glyph, and its pass criterion did not depend on the data), and all four
   "closed-loop" legs — LINK monitoring, kernel intervention, hazard avoidance, convergence — were withdrawn (C089, C171,
-  C783, C2081, C1401–C1403). It is kept as an interpretation (not falsified); a glyph-level re-test is PHASE_763.
+  C783, C2081, C1401–C1403). It is kept as an interpretation (not falsified). A fair glyph-level re-test
+  (PHASE_763, pre-registered) came back mixed: the glyph k shows nothing special, and the one signal that passed —
+  glyphs inside a word predicting the class of the next word — turned out to come from the word's ending (its last
+  two glyphs), not from a kernel (C2082).
 - **Content: the Pseudo-Lullian *Testamentum* tradition.** Open. The chapter-level recipe matching did not survive
   controls: a metalwork treatise matches the same folios (C2052), no source matches better than its own shuffled
   features, the section mapping and recto/verso adjacency do not reproduce, and the headline permutation test was
@@ -80,7 +83,7 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 |---|---|
 | [WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md) | Current claims and limits with constraint citations |
 | [STRATEGIC_REVIEW_2026-09-27.md](context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md) | The review, its tests and the forward plan |
-| `phases/PHASE_753…762/INDEX.md` | The review's pre-registered tests, each with its pre-registration and results |
+| `phases/PHASE_753…763/INDEX.md` | The review's pre-registered tests, each with its pre-registration and results |
 | [context/CLAIMS/INDEX.md](context/CLAIMS/INDEX.md) and [CONSTRAINT_TABLE.txt](context/CONSTRAINT_TABLE.txt) | The full registry; the generated table is authoritative for live rows and tiers |
 | [GUIDE.md](GUIDE.md), [RECIPE_MATCHING.md](RECIPE_MATCHING.md), [METHODS_AND_TOOLS.md](METHODS_AND_TOOLS.md) | Pre-review documents (May 2026), kept for traceability |
 
@@ -88,8 +91,8 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 | | |
 |---|---|
-| Live constraints | 1,875 (Tier 0: 17, Tier 1: 35, Tier 2: 1,683, Tier 3: 136, Tier 4: 4) |
-| Research phases | 762 |
+| Live constraints | 1,875 (Tier 0: 17, Tier 1: 35, Tier 2: 1,684, Tier 3: 135, Tier 4: 4) |
+| Research phases | 763 |
 | Method | Pre-registration for load-bearing tests; negative controls; external rival generators; test designs audited before lock by a separate statistics-only reviewer (same model, restricted context — a rigor check, not independent confirmation) |
 
 ## Data
