@@ -3,6 +3,7 @@
 # listed below is SUSPENDED until the contract is regenerated from live constraint status.
 #   DEMOTED to Tier 3: C458, C475, C547, C557, C558, C561, C600, C783, C816, C817, C819, C863, C869, C872, C873, C874, C875, C876, C879, C880, C896, C936, C1014, C1118, C2023
 #   DEAD (retracted / superseded): C365, C559
+#   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C079, C084, C085, C089, C103, C104, C105, C115, C120, C171
 # Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 

@@ -3,6 +3,7 @@
 # listed below is SUSPENDED until the contract is regenerated from live constraint status.
 #   DEMOTED to Tier 3: C475, C527, C873, C875, C876
 #   DEAD (retracted / superseded): C476
+#   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C171
 # Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 # BRSC: Brunschwig Structural Contract

@@ -12,9 +12,11 @@
 
 ## Project Identity (Tier 0)
 
-The Voynich Manuscript's Currier B text (61.9% of tokens, 83 folios) encodes a family of **closed-loop, kernel-centric control programs**, governed by a single shared grammar (Tier 0; the "narrow viability regime" clause was struck 2026-09-28 — its support was withdrawn).
+**Tier 0 (restated 2026-09-28):** Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
 
-Not natural language written one token per word; the cipher classes tested so far are excluded, including the Naibbe verbose homophonic cipher as published (PHASE_757, C2080); other sub-lexical designs remain untested. Working reading: a control-system reference manual.
+**Working interpretation (Tier 3):** The grammar is read as a family of closed-loop, kernel-centric control programs. The kernel and closed-loop supports were withdrawn on re-check; see [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md).
+
+Not natural language written one token per word; the cipher classes tested so far are excluded, including the Naibbe verbose homophonic cipher as published (PHASE_757, C2080); other sub-lexical designs remain untested. Working reading (Tier 3): a control-system reference manual.
 
 | Metric | Value |
 |--------|-------|

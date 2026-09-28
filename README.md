@@ -15,6 +15,12 @@ is audited and corrected in the open.
 
 ## What the text reliably shows
 
+**The project's Tier-0 conclusion** (restated 2026-09-28 by human sign-off) is itself a measurement:
+
+> Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
+
+Until 2026-09-28 the Tier-0 sentence was the control-program reading; that is now a working interpretation (see Open hypotheses). The table lists the measurements behind it and others.
+
 These are measurements, reproduced under controls and, where noted, on a second transcription.
 
 | Property | Measurement | Basis |
@@ -43,12 +49,11 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 ## Open hypotheses
 
-- **Working interpretation (the project's Tier-0 conclusion, frozen by human sign-off):** *Currier B encodes a family of
-  closed-loop, kernel-centric control programs, governed by a single shared grammar.* It rests on the grammar and
-  kernel structure. On 2026-09-28 the clause "designed to maintain a system within a narrow viability regime" was
-  struck: its support from "forbidden transitions" was withdrawn — the class-level hazard topology was demoted and the
-  token-level zeros reduce to line composition, positions and boundary coupling (C783, C2060, C2063, C2081). The
-  remaining sentence stands pending a re-check of its kernel and closed-loop pillars.
+- **Working interpretation (Tier 3): closed-loop, kernel-centric control programs.** Until 2026-09-28 this was the Tier-0
+  sentence. On re-check its supports did not hold: the only test behind "kernel-centric" was uninformative (it ranked
+  single EVA letters, where "h" is half of one glyph, and its pass criterion did not depend on the data), and all four
+  "closed-loop" legs — LINK monitoring, kernel intervention, hazard avoidance, convergence — were withdrawn (C089, C171,
+  C783, C2081, C1401–C1403). It is kept as an interpretation (not falsified); a glyph-level re-test is PHASE_763.
 - **Content: the Pseudo-Lullian *Testamentum* tradition.** Open. The chapter-level recipe matching did not survive
   controls: a metalwork treatise matches the same folios (C2052), no source matches better than its own shuffled
   features, the section mapping and recto/verso adjacency do not reproduce, and the headline permutation test was
@@ -83,7 +88,7 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 | | |
 |---|---|
-| Live constraints | 1,875 (Tier 0: 25, Tier 1: 35, Tier 2: 1,685, Tier 3: 126, Tier 4: 4) |
+| Live constraints | 1,875 (Tier 0: 17, Tier 1: 35, Tier 2: 1,683, Tier 3: 136, Tier 4: 4) |
 | Research phases | 762 |
 | Method | Pre-registration for load-bearing tests; negative controls; external rival generators; test designs audited before lock by a separate statistics-only reviewer (same model, restricted context — a rigor check, not independent confirmation) |
 

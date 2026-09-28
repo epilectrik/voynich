@@ -4,6 +4,50 @@
 
 ---
 
+## Version 7.24 (2026-09-28) — Tier-0 restatement (human sign-off)
+
+### Summary
+The pillar re-check found both remaining supports of the Tier-0 sentence flawed or withdrawn. Tier 0 is restated to
+what is measured; the control-program reading moves to Tier 3 ("support withdrawn, not falsified"). Both expert
+reviews (expert-advisor and lean-expert) agreed on the diagnosis; the restatement itself was human sign-off.
+
+**New Tier 0:** Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens,
+organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the
+grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the
+Naibbe cipher as published.
+
+**Working interpretation (Tier 3):** the grammar is read as a family of closed-loop, kernel-centric control programs.
+
+### Why
+- **Kernel-centric (C089):** the only documented evidence (X_adversarial_audit Attack 1) is uninformative. Its pass
+  criterion does not depend on the data (the real corpus fails it: k ranks 7th), its first-order Markov null
+  reproduces the bigram counts the centrality is computed from (centrality ≈ frequency), and it ranks EVA letters,
+  where "h" is half of the bench glyph (PHASE_754).
+- **Closed-loop (C171):** all four remaining legs withdrawn: LINK monitoring (38% not reproducible, 13.2%, C609; a
+  morphological artifact, C1174), kernel intervention (C089), hazard avoidance (C783, C2060, C2063, C2081),
+  convergence (C1401–C1403). Only 2 of its 12 eliminations were discriminating tests (NEGATIVE_AUDIT).
+
+### Tier changes
+| Constraint | Change | Reason |
+|---|---|---|
+| C089 | 0 → 3 | kernel test uninformative (above); glyph-level re-test PHASE_763 |
+| C085 | 0 → 3 | EVA letter inventory; c and h are halves of the bench glyph |
+| C103, C104, C105 | 2 → 3 | role glosses resting on C089 and the withdrawn recovery layer |
+| C171 | 0 → 3 | four legs withdrawn |
+| C079, C084 | 0 → 3 | interpretive; rest on the convergence reading replaced by C1403 |
+| C115 | 0 → 3 | coverage by construction; "executable" interpretive |
+| C120 | 0 → 3 | positive verdict "operational control notation" is interpretive |
+| C074 | 0 → 2 | kept as a measurement (57.8% of folios end in their dominant macro-state) |
+| C119 | 0 → 2 | kept as negative knowledge only |
+| C121, C124 | annotated | stay Tier 0 as the measured core (C124 as corrected: 69.5% of Currier B tokens) |
+
+### Files
+CORE/frozen_conclusion.md (rewritten), CLAUDE.md, CLAUDE_INDEX.md, PROJECT_SYNTHESIS.md, INTERPRETATION_SUMMARY.md,
+README.md, WHAT_WE_CLAIM.md, CLAIMS/INDEX.md, tier0_core.md, grammar_system.md, C074_dominant_convergence.md.
+Counts: 1,875 live (T0 17, T1 35, T2 1,683, T3 136, T4 4); numbering through C2081.
+
+---
+
 ## Version 7.23 (2026-09-28) — Review tests PHASE_756–762, Testamentum triage, public docs rewritten
 
 ### Summary

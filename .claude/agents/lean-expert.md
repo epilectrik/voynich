@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-09-28 11:31
+**Generated:** 2026-09-28 13:40
 **Version:** Tier 0 frozen pending external adversarial tests; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -49,25 +49,25 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # All Constraints
 
-C074	Dominant convergence to stable states (57.8% STATE-C terminal)	0	B
-C079	Only STATE-C essential	0	B
-C084	System targets MONOSTATE (42.2% end in transitional)	0	B
-C085	10 single-character primitives (s,e,t,d,l,o,h,c,k,r)	0	B
-C089	Core within core: k, h, e	0	B
+C074	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 2. kept as a measurement only: 57.8% of folios end in the macro-state that dominates them; "convergence to stable states" is replaced by thematic dominance — no sequential convergence at any scale (C1401–C1403)]** Dominant convergence to stable states (57.8% STATE-C terminal)	2	B
+C079	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. interpretive ("essential"); rests on the convergence reading replaced by C1403]** Only STATE-C essential	3	B
+C084	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. "targets MONOSTATE" is interpretive; MONOSTATE = the most common mode, not a target (C1403)]** System targets MONOSTATE (42.2% end in transitional)	3	B
+C085	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. an EVA letter inventory, not a primitive inventory: c and h are the two halves of the bench glyph (ch/sh) and never stand alone (PHASE_754, C1440)]** 10 single-character primitives (s,e,t,d,l,o,h,c,k,r)	3	B
+C089	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. support withdrawn — the only documented evidence (X_adversarial_audit Attack 1) is uninformative: its pass criterion does not depend on the data (the real corpus fails it too: k ranks 7th), its first-order Markov null reproduces the bigram counts the "centrality" is computed from (centrality ≈ frequency), and its nodes are EVA letters ("h" is half the bench glyph, PHASE_754). Not falsified; a glyph-level re-test is PHASE_763]** Core within core: k, h, e	3	B
 C090	500+ 4-cycles, 56 3-cycles (topological)	2	B
-C103	k = ENERGY_MODULATOR	2	B
-C104	h = PHASE_MANAGER	2	B
-C105	e = STABILITY_ANCHOR (54.7% recovery paths)	2	B
+C103	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. role gloss; its basis (the kernel claim C089) is withdrawn]** k = ENERGY_MODULATOR	3	B
+C104	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. role gloss; "h" is half the bench glyph (PHASE_754) and the kernel claim C089 is withdrawn]** h = PHASE_MANAGER	3	B
+C105	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. role gloss; the "54.7% of recovery paths" figure rests on the withdrawn hazard/recovery layer (C783, C2081)]** e = STABILITY_ANCHOR (54.7% recovery paths)	3	B
 C107	All kernel nodes BOUNDARY_ADJACENT to forbidden	2	B
 C109	**[Scope 2026-09-27: forbidden-transition claims are zero patterns whose status is that of the C957 screen (PHASE_753) — individual forbidden pairs are not robust under an edge-glyph null, the class level is demoted (C783) and the 5-class taxonomy is imposed (C2060); the joint null (PHASE_756, 2026-09-28) REDUCES the screen-level zero excess to line composition, zones and boundary coupling (C2081)]** **17 forbidden directional transitions exist** (~0% realized rate; ~65% class-level compliance per C789); fixed across all 83 folios. **[REVISED PHASE_732: 5-class taxonomy struck — was imposed by keyword-matching not clustering; see C2060]** **[SCOPE 2026-06-08: the CLASS-level reading is dead (C783 demoted — powered class pairs at O/E≈1.13, no suppression); "the 17" survive ONLY as the TOKEN-bigram layer (C957, directionality verified). Read this row as existence-of-token-level-prohibitions, not class transitions.]**	2	B
 C110	PHASE_ORDERING 7/17 = 41% — count of the one gloss-coherent grouping (=C1529 sealed→iteration); see C2060	2	B
 C111	65% asymmetric (taxonomy-independent; corroborated by C783 all-17-directional, C627 0/17 reciprocal)	2	B
 C112	59% distant from kernel (taxonomy-independent)	2	B
-C115	0 non-executable tokens	0	B
-C119	**[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** 0 translation-eligible zones	0	B
-C120	**[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** PURE_OPERATIONAL verdict	0	B
-C121	49 instruction equivalence classes (9.8x compression)	0	B
-C124	100% grammar coverage	0	B
+C115	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. coverage by construction: the grammar has no unclassifiable type in its own vocabulary, but 30.5% of Currier B tokens (HT/UN) lie outside it (C124 as corrected, C566); "executable" is interpretive]** 0 non-executable tokens	3	B
+C119	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 2. negative knowledge only: no region reads as natural language written token-by-word or as a cipher of the tested classes (C132, C1976, C2017, C2077, C2080); "PURE_OPERATIONAL" is interpretive (C120)]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** 0 translation-eligible zones	2	B
+C120	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. the positive verdict "operational control notation" is a working interpretation (support withdrawn: C089, C171); the negative parts are carried by C119 and the rival exclusions]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** PURE_OPERATIONAL verdict	3	B
+C121	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 (measurement): part of the restated conclusion]** 49 instruction equivalence classes (9.8x compression)	0	B
+C124	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 (measurement), as corrected: 100% of the grammar's own 480-type vocabulary = 69.5% of Currier B tokens; the rest (HT/UN) is defined by exclusion (C566, C740)]** 100% grammar coverage	0	B
 C126	0 contradictions across 8 families	2	B
 C129	Family differences = coverage artifacts	2	B
 C130	DSL hypothesis rejected (0.19% reference rate)	1	B
@@ -96,7 +96,7 @@ C167	Uncategorized: 80.7% section-exclusive	2	HT
 C168	Uncategorized: single unified layer	2	HT
 C169	Uncategorized: hazard avoidance 4.84 vs 2.5	2	HT
 C170	Uncategorized: morphologically distinct	2	HT
-C171	**[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** Only continuous closed-loop process control survives	2	B
+C171	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. all four remaining legs are withdrawn — monitoring (38% LINK not reproducible, true 13.2%, C609; LINK is a morphological artifact, C1174), intervention by kernel operators (C089 withdrawn), hazard avoidance (C783, C2060, C2063, C2081), convergence (C1401–C1403); only 2 of its 12 eliminations were discriminating tests (NEGATIVE_AUDIT). Closed-loop control is a working interpretation]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** Only continuous closed-loop process control survives	3	B
 C173	Linguistic hypothesis EXHAUSTED	2	B
 C174	Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)	2	B
 C175	3 process classes survive (reflux, extraction, conditioning)	2	B

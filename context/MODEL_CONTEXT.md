@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** Tier 0 frozen pending external adversarial tests + POST-AUDIT CORRECTIONS (A-side/AZC layer; 2026-09-27 registry reconciliation — see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md)
+**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** Tier 0 restated 2026-09-28 (measurement core; control-program reading Tier 3) + POST-AUDIT CORRECTIONS (A-side/AZC layer; 2026-09-27 registry reconciliation — see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md)
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -16,7 +16,7 @@ AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained,
 **2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
 PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
 
-**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, closed-loop/recovery) is independent of the A-side compatibility geometry. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and C957's token-level zeros reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, 2026-09-28) — no hazard layer survives beyond known effects. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
+**3. The Tier-0 conclusion was RESTATED on 2026-09-28 (human sign-off).** It is now a measurement: a single compact token grammar (49 classes, 69.5% of B tokens), organised by line (positional zones, boundary glyph coupling), in folio units with their own vocabulary, not reproduced by copy-and-modify generation or the Naibbe cipher as published. The control-program reading (kernel, closed-loop/recovery) is a Tier-3 working interpretation: the kernel test was uninformative (C089) and all four closed-loop legs were withdrawn (C171). See CORE/frozen_conclusion.md. The A-side compatibility geometry below is independent of either statement. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and C957's token-level zeros reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, 2026-09-28) — no hazard layer survives beyond known effects. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
 
 ---
 
@@ -413,7 +413,7 @@ Currier B (61.9% of tokens, 83 folios) encodes executable control programs. This
 
 ### Closed-Loop Process Control
 
-Programs are read as closed-loop control (the "narrow viability regime" wording was struck from Tier 0 on 2026-09-28 — its forbidden-transition support was withdrawn, C2081). They are NOT:
+Programs are read as closed-loop control — a Tier-3 working interpretation since the 2026-09-28 restatement (its kernel, monitoring, hazard and convergence supports were withdrawn: C089, C171, C2081, C1401–C1403). They are NOT:
 - Batch recipes (do X, then Y, then Z)
 - Decision trees (if X then Y)
 - State machines (discrete transitions)

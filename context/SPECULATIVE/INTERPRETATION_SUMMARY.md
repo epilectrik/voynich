@@ -14,7 +14,9 @@ This document consolidates all Tier 3-4 interpretations into a single reference.
 
 ## Frozen Conclusion (Tier 0 - Context Only)
 
-> The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
+> Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
+
+**Working interpretation (Tier 3, this document's starting point):** The grammar is read as a family of closed-loop, kernel-centric control programs. (Until 2026-09-28 this was the Tier-0 sentence; its kernel and closed-loop supports were withdrawn on re-check.)
 
 This structural finding is FROZEN. The interpretations below attempt to explain what this structure might have been FOR.
 

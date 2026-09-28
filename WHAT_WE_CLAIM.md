@@ -7,6 +7,16 @@ which re-tested the central claims against external controls. The generated
 
 ---
 
+## Tier 0 (restated 2026-09-28, human sign-off)
+
+The project's frozen conclusion is a measurement:
+
+> Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published. (C121, C124, C956, C1212, C1563, C531, C1790, C2077, C2080)
+
+Until 2026-09-28 the frozen conclusion was the control-program reading; it is now a working interpretation (section 3).
+
+---
+
 ## 1. Measurements (Tier 2: reproduced under controls)
 
 These are statements about the text. They do not depend on any interpretation of what it means.
@@ -55,11 +65,12 @@ the pre-registered gate. (PHASE_752, PHASE_759)
 
 ## 3. Open hypotheses
 
-- **The project's working interpretation (Tier 0, frozen by human sign-off):** Currier B encodes a family of closed-loop,
-  kernel-centric control programs governed by a single shared grammar. The grammar and kernel structure stand; the
-  clause "designed to maintain a system within a narrow viability regime" was struck on 2026-09-28 because its support
-  from forbidden transitions and hazard classes was withdrawn (section 2). The rest stands pending a re-check of its
-  kernel and closed-loop pillars.
+- **Working interpretation (Tier 3): closed-loop, kernel-centric control programs.** Support withdrawn, not falsified:
+  the kernel test (C089) was uninformative — single EVA letters, a pass criterion independent of the data, a null that
+  reproduces its own statistic — and the four closed-loop legs are gone (C171: LINK monitoring C609/C1174, kernel
+  intervention, hazard avoidance C783/C2081, convergence C1401–C1403). What remains as measurement is a family
+  preference: qo tokens are k-rich, ok tokens e-rich, and qo alternates with ch/sh (C1313, C549, C2056). Glyph-level
+  re-test: PHASE_763.
 - **Content — the Pseudo-Lullian *Testamentum* tradition:** open.
   - Against the chapter-level matching: a metalwork treatise (Theophilus) matches the same folios (C2052); no source —
     *Testamentum*, Theophilus or Codicillus — matches the Voynich pages better than its own chapters with the features
@@ -81,6 +92,7 @@ the pre-registered gate. (PHASE_752, PHASE_759)
 - **No operational meanings.** Atom and token glosses (k = heat, `dar` = material introduction, …) are role hypotheses,
   not recovered meanings.
 - **No "hazard" or "safety" layer.** Withdrawn (section 2).
+- **No established function.** "Control programs" is a working interpretation (section 3).
 - **No closure.** The analysis is not complete; the referents of the notation are not recovered.
 
 ## 5. What would change our mind

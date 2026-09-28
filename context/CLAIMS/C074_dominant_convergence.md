@@ -1,6 +1,6 @@
 # C074: Dominant Convergence to Stable States
 
-**Tier:** 0 | **Status:** FROZEN | **Phase:** Phase 13-14, SEL-F
+**Tier:** 2 (restated 2026-09-28 from Tier 0) | **Status:** MEASUREMENT ONLY — "convergence to stable states" replaced by thematic dominance (C1401–C1403) | **Phase:** Phase 13-14, SEL-F
 
 ---
 

@@ -1,53 +1,59 @@
 # Frozen Conclusion (Tier 0)
 
-**Status:** FROZEN | **Tier:** 0 | **Scope:** Currier B only
+**Status:** FROZEN (restated 2026-09-28 by human sign-off) | **Tier:** 0 | **Scope:** Currier B only
 
 ---
 
-## The Core Finding
+## The Core Finding (Tier 0, measurement)
 
-> **The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs, governed by a single shared grammar.**
+> **Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line
+> with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while
+> carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher
+> as published.**
 
-**Amended 2026-09-28 (human-delegated sign-off):** the clause "designed to maintain a system within a narrow viability regime" was struck. Its support — forbidden transitions, hazard classes and convergence — has been withdrawn (C783 demoted; C2060 taxonomy imposed; C2063 counts 13 class-level violations; C2081 reduces the token-level zeros to line composition, positional zones and boundary coupling; convergence is occupancy, C1401–C1403). The remaining sentence stands pending a re-check of its kernel and closed-loop pillars. External tests so far: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded.
+Basis: C121, C124 (grammar and its coverage, as corrected); C956, C357 (positional zones and line regularity); C1212, C1563 with
+PHASE_761 (boundary coupling, robust to spacing uncertainty and replicated on the ZL transcription); C531, C1790 (folio
+units: shared grammar, unique vocabulary); C2077, C2080 (generators excluded).
 
-This conclusion rests on the internal structure of the text and was frozen by human sign-off.
+## Working interpretation (Tier 3 — support withdrawn, not falsified)
 
-> **Status note (2026-09-27 registry reconciliation).** The sentence above is unchanged. Several of the *supporting facts* listed below had drifted from the registry and are corrected in place (each correction cites the constraint that supersedes it). The conclusion has faced one external generator of Voynich-like text (Timm & Schinner, C2077); rival-generator tests (Naibbe verbose homophonic cipher, Rugg grille) and a transliteration/glyph-unit invariance audit are pending — see [../SYSTEM/STRATEGIC_REVIEW_2026-09-27.md](../SYSTEM/STRATEGIC_REVIEW_2026-09-27.md). Speculation cannot overturn it; an adversarial external test can.
+> *The grammar is read as a family of closed-loop, kernel-centric control programs.*
+
+This was the Tier-0 sentence until 2026-09-28. It was restated because its supports were found flawed or withdrawn,
+not because a discriminating test refuted it:
+- **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
+  surrogate test — is uninformative. Its pass criterion does not depend on the data (the real corpus fails it too: k ranks
+  7th), its first-order Markov null reproduces the bigram counts its "centrality" is computed from (centrality ≈
+  frequency), and it counts EVA letters, where "h" is half the bench glyph (PHASE_754). A glyph-level re-test is PHASE_763.
+- **"Closed-loop"** (C171): all four remaining legs are withdrawn — monitoring (the 38% LINK figure does not reproduce;
+  LINK is a morphological artifact, C609, C1174), intervention by kernel operators (above), hazard avoidance (C783, C2060,
+  C2063, C2081) and convergence (no sequential convergence at any scale; MONOSTATE is the most common mode; the completion
+  gradient is a section confound — C1401–C1403). Three live results cut against a cycling reading: no cyclic eigenmode
+  (C2067), no sequential convergence (C1402), complete paragraph resets (C1834, C1785).
+- **What remains of the kernel idea as measurement:** qo-prefixed tokens are rich in the gallows k and ok-prefixed tokens in
+  e, and qo tokens alternate with ch/sh tokens beyond line composition (C1313, C549, C2056) — a family preference, not a
+  control core.
+
+### History
+- Until 2026-09-27: "…encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within
+  a narrow viability regime, governed by a single shared grammar."
+- 2026-09-28 (morning): "designed to maintain a system within a narrow viability regime" struck (forbidden transitions and
+  hazard classes withdrawn).
+- 2026-09-28: restated as above after the pillar re-check (expert-advisor and lean-expert reviews agreed; human sign-off).
 
 ---
 
 ## Key Metrics
 
-| Metric | Value | Significance |
-|--------|-------|--------------|
+| Metric | Value | Note |
+|--------|-------|------|
 | Instruction classes | 49 | 9.8x compression from 479 token types |
 | Grammar coverage | 69.5% of B tokens | 100% of the grammar's own 479/480-type vocabulary; the remaining tokens (HT/UN) are defined by exclusion (C124, C566, C740) |
-| Folios enumerated | 83 | Each folio is a complete program |
-| Instructions cataloged | 75,248 | Total executable content |
-| Translation-eligible zones | 0 | Pure operational, no referents |
-| Forbidden transitions | none beyond known effects | Class-level "17 in 5 hazard classes" demoted (C783); the 5-class taxonomy imposed (C2060); 13 class-level violations in the real corpus (C2063); the token-level zeros (C957) reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, PHASE_756) |
-| LINK density | 13.2% | ol-morphology tokens, role-stratified (C609, C1174) |
-
----
-
-## What "Closed-Loop Control Program" Means
-
-### Closed-Loop
-The system monitors its own state and adjusts based on feedback. Programs don't run blind—they respond to conditions.
-
-### Kernel-Centric
-Three operators (k, h, e) form the control core:
-- **k** = ENERGY_MODULATOR (adjust energy input)
-- **h** = PHASE_MANAGER (manage phase transitions)
-- **e** = STABILITY_ANCHOR (maintain stable state, 54.7% of recovery paths)
-
-### ~~Narrow Viability Regime~~ (struck from the Tier-0 sentence 2026-09-28)
-The system operates within tight bounds. [Corrected 2026-09-27/28: there is no surviving evidence of forbidden transitions beyond known effects — the class level is demoted (C783; C2063 counts 13 violations) and the token-level zeros reduce to line composition, positional zones and boundary glyph coupling (C2081). The tight bounds that remain are the measured properties: boundary coupling, positional vocabulary, prefix alternation.]
-
-### Single Shared Grammar
-All 83 Currier B programs use the same 49 instruction classes. There are no dialects, variants, or exceptions. The grammar is universal within B.
-
-> **Note:** This grammar is B-specific. Currier A uses a different formal system (non-sequential categorical registry). What IS shared across A, B, and AZC is the morphological **type system** (prefix/suffix structure, compositional rules)—not the grammar itself. See [../ARCHITECTURE/cross_system.md](../ARCHITECTURE/cross_system.md).
+| Folios | 83 | Each folio uses the shared grammar with its own vocabulary |
+| Boundary glyph coupling | 0.228 bits (H), 0.243 (ZL); 0.215 at definite spaces | C1212, C1563; PHASE_761 |
+| Positional zone dependence | 0.172 bits beyond shuffle | C956; PHASE_757 |
+| Forbidden transitions | none beyond known effects | C783, C2060, C2063, C2081 |
+| LINK density | 13.2% | `ol` morphology; a morphological artifact, not a functional layer (C609, C1174) |
 
 ---
 
@@ -63,43 +69,39 @@ See [model_boundary.md](model_boundary.md) for complete scope.
 
 ---
 
-## How This Was Proven
+## What It Rests On
 
-The frozen conclusion rests on these structural facts:
-
-1. **Grammar closure** (Phase 20): 479 token types reduce to 49 classes with 0 loss
-2. **Coverage** (Phase 21): the 49 classes cover the grammar's own vocabulary; that vocabulary is 69.5% of Currier B tokens (C124, C566) [corrected 2026-09-27; was "every Currier B token parses"]
-3. **Forbidden topology** (Phase 18): [corrected 2026-09-28] does not survive — class level demoted (C783; C2063: 13 violations); token-level zeros reduce to known positional and boundary effects (C2081)
-4. **Kernel dominance** (Phase 15): k, h, e form a control core that no surrogate reproduced
-5. **Convergence** (Phase 13-14): 57.8% of programs terminate in STATE-C [2026-09-27: reframed as occupancy / thematic dominance, not sequential convergence — C1401–C1403; PHASE_736 found AXM self-transition is composition]
-6. **Folio = program** (Phase 22): Each folio is complete and self-contained
-
-These are structural facts, not interpretations. Any analyst examining the token sequences will find the same patterns.
+1. **Grammar closure** (Phase 20): 479 token types reduce to 49 classes with 0 loss (C121).
+2. **Coverage** (Phase 21): the 49 classes cover the grammar's own vocabulary; that vocabulary is 69.5% of Currier B
+   tokens (C124, C566).
+3. **Line organisation:** positional zones (C956) and boundary glyph coupling (C1212/C1563; PHASE_761).
+4. **Folio units:** every folio uses the same classes with its own vocabulary (C531, C1790).
+5. **External generators excluded:** copy-and-modify (C2077); the Naibbe cipher as published (C2080).
+Withdrawn from this list on 2026-09-28: forbidden topology (C783, C2081), kernel dominance (C089, flawed test),
+convergence as dynamics (C1401–C1403 — the 57.8% STATE-C figure stays as a measurement, C074 at Tier 2).
 
 ---
 
 ## What This Is NOT
 
-- **NOT a translation** - tokens don't mean words
-- **NOT a recipe book** - no ingredient lists, no quantities
-- **NOT natural language written one token per word** (C2032 and related; the old "0.19% reference rate" figure is marked tainted in NEGATIVE_AUDIT and is not relied on)
-- **NOT a cipher of the classes tested** (transform tests; atom-level polyalphabetic C1976; token≈word codes). The Naibbe verbose homophonic cipher as published was tested and EXCLUDED (PHASE_757, C2080, 2026-09-28: all 64 variants; B has edge-glyph coupling, chance-level repetition and line-zone dependence that Naibbe lacks, and less order information than any Naibbe variant carries). Other sub-lexical designs (modified Naibbe, syllable or word-level codebooks) remain untested. This is an excluded rival, not evidence for the control-program reading
-- **NOT illustration-dependent** - swap invariance p=1.0
+- **NOT a translation** — no token has a demonstrated equivalent in any language (C171 semantic ceiling framing retained
+  as a statement about recoverability).
+- **NOT natural language written one token per word** (C132, C2015, C2022; the old "0.19% reference rate" is tainted and not
+  relied on).
+- **NOT a cipher of the classes tested** (token ≈ word codes; atom-level polyalphabetic C1976; three published decipherments
+  C2017; the Naibbe verbose homophonic cipher as published, C2080). Other sub-lexical designs remain untested. Excluding a
+  rival is not evidence for the working interpretation.
+- **NOT illustration-dependent at the grammar level** — swap invariance p = 1.0 (C138/C140, grammar scope).
 
-See [falsifications.md](falsifications.md) for complete rejection list.
+See [falsifications.md](falsifications.md) for the rejection list.
 
 ---
 
-## Purpose Class
+## Purpose Class (Tier 3)
 
-The only surviving purpose class is [2026-09-27: NEGATIVE_AUDIT found only 2 of the 12 eliminations below were real discriminating tests (C171 narrowed); read "surviving" as "best-supported", not "sole survivor"]:
-
-> **Continuous closed-loop process control**
-
-All other purpose classes were eliminated by structural incompatibility:
-- Cipher/hoax, Encoded language, Recipe/pharmacology
-- Herbarium/taxonomy, Medical procedure, Astronomical calculation
-- Ritual/symbolic practice, Educational text, Discrete batch operations
+"Continuous closed-loop process control" was the best-supported purpose class among those tested (C171). Only 2 of its 12
+eliminations were discriminating tests (NEGATIVE_AUDIT), and its four structural legs are now withdrawn (above). It
+remains a working interpretation, not a finding.
 
 ---
 
