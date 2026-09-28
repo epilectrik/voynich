@@ -1,0 +1,14 @@
+Aberdeen: 199 text pages; quires ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'K', 'L', 'M', 'N', 'O', 'P']
+PRIMARY k75: T_sheet +0.0048 p_up 0.3431 p_low 0.6570 | T_strat +0.0031 p_up 0.4416 p_low 0.5585 | T_face +0.2496 p 0.0001 | MDE80 sheet 0.258 strat 0.483 (resid-SD units) | slope -0.01308
+  robust 50: T_sheet p_up 0.2929 p_low 0.7072; T_strat p_up 0.4627 p_low 0.5374; T_face p 0.0001
+  robust 100: T_sheet p_up 0.3035 p_low 0.6966; T_strat p_up 0.3801 p_low 0.6200; T_face p 0.0001
+  robust None: T_sheet p_up 0.5960 p_low 0.4041; T_strat p_up 0.6319 p_low 0.3682; T_face p 0.0001
+SECONDARY: T_sheet p_up 0.3770 p_low 0.6231; T_strat p_up 0.8712 p_low 0.1289; T_face p 0.0001
+plant: {'k75': {'T_sheet_shift_resid_sd': np.float64(1.6573557306380453), 'T_strat_shift_resid_sd': np.float64(2.0655006305101593), 'planted_p_up_T_sheet': 0.0004997501249375312, 'planted_p_up_T_strat': 0.0004997501249375312}, 'raw': {'T_sheet_shift_resid_sd': np.float64(1.6397882089328373), 'T_strat_shift_resid_sd': np.float64(2.040314232375083), 'planted_p_up_T_sheet': 0.0004997501249375312, 'planted_p_up_T_strat': 0.0004997501249375312}}
+length-matched to pureA_Q1-Q3 (median 80 words): {'p_up_T_sheet': 0.2662233776622338, 'p_up_T_strat': 0.23377662233776622, 'p_low_T_sheet': 0.7338766123387661, 'p_low_T_strat': 0.7663233676632337, 'MDE80_T_sheet': 0.24682220001583804, 'MDE80_T_strat': 0.40625171420273654}
+length-matched to Q13 (median 326 words): {'p_up_T_sheet': 0.33166683331666835, 'p_up_T_strat': 0.4527047295270473, 'p_low_T_sheet': 0.6684331566843316, 'p_low_T_strat': 0.5473952604739526, 'MDE80_T_sheet': 0.2589772327587907, 'MDE80_T_strat': 0.48324586591746865}
+length-matched to Q20 (median 449 words): {'p_up_T_sheet': 0.3449155084491551, 'p_up_T_strat': 0.44735526447355267, 'p_low_T_sheet': 0.6551844815518448, 'p_low_T_strat': 0.5527447255274472, 'MDE80_T_sheet': 0.25961015683487765, 'MDE80_T_strat': 0.48593593136615976}
+VOYNICH pureA_Q1-Q3: T_sheet +0.579 SD p_up 0.0007; T_strat +0.872 SD p_up 0.0039; T_face p 0.1438
+VOYNICH Q13: T_sheet +0.714 SD p_up 0.0134; T_strat +0.989 SD p_up 0.0403; T_face p 0.4870
+VOYNICH Q20: T_sheet +0.638 SD p_up 0.0170; T_strat +0.630 SD p_up 0.2618; T_face p 0.6466
+VERDICT (locked rules): SPECIFIC  (892.4s)

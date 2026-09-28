@@ -7,6 +7,7 @@
 > - Best-of-N: use `p_best_ge_observed` (0.56 / 0.45 / 0.60) as primary. The current binding ranks 24/120 (Q13) and 41/120 (Q20 without 103|116) under the paper's own objective: not anomalously poor.
 > - **Registration gate (locked):** register a bifolium-level constraint only if the re-pairing p<0.01 in ≥2 of 3 strata (herbal pure-A, Q13, Q20), on both transcription tracks (H + ZL3b), after length residualization.
 > - **v2 plan (STRATEGIC_REVIEW_2026-09-27 §3 #7):** (1) pipeline negative control on the Aberdeen Bestiary (known collation, continuous text), prediction locked; (2) second track; (3) side-of-flat-sheet contrast (outer face Ar–Bv vs opposite-side pairs), sign-flip permutation within sheet, pooled across quires, central sheets and sheet 78|81 excluded.
+> - **v2 step 1 DONE (PHASE_759, 2026-09-27): negative control SPECIFIC.** On the Aberdeen Bestiary the pipeline finds no sheet effect (residualized T_sheet p = 0.34, T_strat p = 0.44) but strong facing-page continuity (p = 0.0001), and detects a planted effect far smaller than the Voynich ones (MDE80 0.26 residual SD). With the residual model locked there (log page distance + contiguity + length + quire FE), the Voynich H-track results are: herbal pure-A p = 0.0007 (T_strat 0.004); Q13 p = 0.013; Q20 p = 0.017. Only one stratum meets p < 0.01, so the registration gate is not met on H even before step 2 (ZL3b).
 > - The v1 verdicts on the paper stand: herbal conjoint>facing is A/B interleaving; the Q13/Q20 reorderings are best-of-N chance.
 
 
