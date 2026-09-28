@@ -1,5 +1,7 @@
 # Pending Tests and Informal Findings
 
+> **CURRENT QUEUE (2026-09-27):** the ranked forward plan is `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` §3. This file has not been fully maintained since 2026-04; many entries below are done or superseded (see the repo inventory in that review). Treat it as history plus open leads, not as the queue.
+
 Informal observations and exploratory results awaiting formal testing. These are NOT constraints — they are hypotheses generated from casual analysis that need rigorous validation before entering the constraint system.
 
 **When to promote:** A finding moves from here to a proper phase when (1) we have the data to test it rigorously (e.g., SISMEL Catalan text arrives), or (2) we design a proper statistical test with controls.
@@ -16,7 +18,8 @@ Informal observations and exploratory results awaiting formal testing. These are
 - **Zero-containment test:** is "lines avoid their own label char" (~6/20 at zero) beyond char-frequency chance?
 - **Decisive:** request multispectral / ink-composition data for the f49v margin column (McCrone 2009 precedent: foliation ink differs from text ink)
 
-### PT-EXT-1: Layfield & Davis Paper 2 predictions (LOCKED 2026-06-08)
+### PT-EXT-1: Layfield & Davis Paper 2 predictions (LOCKED 2026-06-08) — PAPER PUBLISHED 2026-07-10, PARTIALLY SCORED
+- **Status (2026-09-27):** published as "Singulion Structure and the Voynich Manuscript", *Digital Medievalist* 19 (DOI 10.4000/16k0a). Preliminary plain-reading scores: P1 REFUTED, P2 PARTIAL, P3 REFUTED (but their Q13 gain is a best-of-N artifact, p=0.42), P4 PARTIAL (Q20 gain best-of-N, p=0.55), P5 NOT-ADDRESSED, P6 PARTIAL, P7 CONFIRMED, P8 REFUTED, P9 CONFIRMED, P10 NOT-ADDRESSED, M1 NOT-ADDRESSED, M2 REFUTED on the manuscript itself (same-sheet vocabulary sharing exists in B). Tests: `phases/PHASE_752_SINGULION_DISCRIMINATING_TESTS/`. Full quoted scoring still owed.
 - **What:** 10 predictions + 2 method-level calls about the forthcoming Layfield & Davis LSA-codicology paper (announced as "currently under review" in DHQ 20.1, article 000857), locked BEFORE publication. Core bet: the A-signal/B-null pattern — herbal-A unshuffling works (local runs, not global sequence), Quire 13/Quire 20 yield NO robust text-internal reordering (receptary has no gradients), no narrative arc.
 - **Where:** `phases/PREREG_LAYFIELD_DAVIS_PAPER2/PRE_REGISTRATION.md` (includes locked scoring protocol + pre-committed anomaly handling if P3/P4/P7 are refuted).
 - **Action when their paper appears:** score every item against quoted passages; high score = toolchain-independent external validation of C346/C424/C1839-family; refutations = real anomalies requiring reconciliation, pre-committed.
@@ -36,7 +39,7 @@ were being framed in conversation (the *statistical* match — f75r has a corpus
    the Testamentum's ×4/×9 to Brunschwig's clean redistillation-grade ladder (×4 = common aqua
    vitae → ×8–9 = quintessence). This was imported from Brunschwig without reading III.19, and is
    wrong for the Testamentum. *Never committed to any file* — logged here as withdrawn.
-2. **III.19's ×4 is a RENEWAL count, not a concentration grade — and partly a scribal variant.**
+2. **[CORRECTED 2026-09-27 — the page scan shows only ONE count phrase in III.19: "per quatre vegades **aliter** ix vegades" = "four times, otherwise nine times". The "e aprés ix vegades" text quoted below is an OCR splice, so the "two different axes" reading in this item is void; ×4 and ×9 are variant counts of one repeated step.]** III.19's ×4 is a RENEWAL count, not a concentration grade — and partly a scribal variant.
    The Catalan reads *"novellant la bresca a cascuna segona distillació per quatre vegades... e
    aprés ix vegades"* = "renewing the [bresca/feedstock] **at each second distillation, four
    times**... and after **nine times**." So ×4 = material-refeed cadence (every 2nd pass, 4×);

@@ -181,11 +181,11 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 7.21 |
-| Constraints | 2050 validated (18 retracted, 2 retested, 26 demoted) |
-| Phases | 751 completed |
+| Version | 7.22 |
+| Constraints | 1873 live in the generated table (T0 25, T1 35, T2 1703, T3 106, T4 4); numbering through C2078 |
+| Phases | 752 (PHASE_752 v1 complete; v2 pending) |
 | Folios | 83 (Currier B) |
-| Core model | CLOSED (PCA-v1 passed) |
+| Core model | Internally consistent (PCA-v1); external adversarial tests open — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
 | Characterization | ACTIVE |
 
 ---
@@ -193,6 +193,8 @@ Use these to verify your filtering is correct:
 ## Frozen Conclusion (Tier 0)
 
 > The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
+
+**Status (2026-09-27):** frozen by human sign-off, but its distinctive signatures have faced only one external generator (Timm & Schinner, C2077). Rival-generator tests (Naibbe verbose cipher, Rugg grille) and a transliteration/glyph-unit invariance audit are the current forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
 
 ---
 
@@ -317,13 +319,13 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 |------|---------|-----------|
 | `context/CONSTRAINT_TABLE.txt` | All constraints (Tier 0-2) | `python context/generate_constraint_table.py` |
 | `context/MODEL_FITS/FIT_TABLE.txt` | All fits (F0-F4) | `python context/MODEL_FITS/generate_fit_table.py` |
-| `context/EXPERT_CONTEXT.md` | Combined expert context | `python context/generate_expert_context.py --compact` |
+| `context/EXPERT_CONTEXT.md` | Combined expert context (legacy, unfiltered; written only with `--legacy`) | `python context/generate_expert_context.py --compact --legacy` |
 | `.claude/agents/expert-advisor.md` | Expert-advisor agent (embedded constraints) | `python context/generate_expert_context.py --compact` (same script) |
 | `context/MODEL_CONTEXT.md` | Architectural guide | Manual edit |
 | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Tier 3-4 interpretations | Manual edit |
 
 **Workflow:**
-1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py --compact`)
+1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py --compact`), then `python scripts/registry_integrity_check.py` and read its summary (drift between the registry and the documents/agents that consume it)
 2. `generate_expert_context.py` produces `EXPERT_CONTEXT.md` AND all THREE agents — `expert-advisor.md` (full context), `crazy-expert.md` (prepends `context/CRAZY_EXPERT_STANCE.md` to the same body), and `lean-expert.md` (constraints + statistics + methodology priors only, NO interpretive layer — the rigor/differential reviewer)
 3. **Use the `--compact` flag** — it strips file-path/navigation cruft useless to an embedded agent. Both agents are ~650–700 KB (~165–175K tokens), which is fine for one-shot expert consultations in a 1M-token window — **agent size is NOT a budget constraint.** (The old "~350 KB budget / exceeds context" note was stale and drove unnecessary trimming; do not chase a smaller size target.)
 3. Update MODEL_CONTEXT.md if structural understanding changed
@@ -364,6 +366,7 @@ Run all three generators:
 python context/generate_constraint_table.py
 python context/MODEL_FITS/generate_fit_table.py
 python context/generate_expert_context.py --compact
+python scripts/registry_integrity_check.py   # drift report -> context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 ```
 
 ### 6. Crazy-Expert (now AUTO-generated)

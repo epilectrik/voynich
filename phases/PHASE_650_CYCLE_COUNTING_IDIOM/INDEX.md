@@ -1,5 +1,7 @@
 # Phase 650: Cycle-Counting Idiom
 
+> **Source correction (2026-09-27, scan-verified — `sources/sismel_testamentum/OCR_CORRECTIONS.md`):** III.19 reads *"per quatre vegades **aliter** ix vegades"* = "four times, **otherwise** nine times". The quotation *"… aliter broicé e triblé; e aprés ix vegades"* used below is an OCR splice from the capon passage three lines lower. ×4 and ×9 are **alternative counts for one repeated step**, not two sequential phases; any reading below that treats them as "×4 first, then ×9" is void. The count facts (C1889, C2034) are unaffected. See `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` §2.
+
 **Status:** COMPLETE
 **Date:** 2026-04-26
 **Constraints registered:** C1965 (Tier 3, scope-restricted to f75r)

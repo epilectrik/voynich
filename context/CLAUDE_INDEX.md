@@ -2,9 +2,7 @@
 
 **Version:** 6.03 | **Status:** FROZEN | **Constraints:** 1907 | **Date:** 2026-03-29
 
-> **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
->
-> **ANALYSIS CLOSED** — Cross-system vocabulary architecture fully characterized. PCA-v1 passed. AZC is a static lookup table (AZC_POSITION_VOCABULARY, 2026-01-31). Structural work is DONE.
+> **STATUS (2026-09-27):** Structure mapped; referents unrecovered; Tier 0's semantic character under adversarial test. The earlier "ANALYSIS CLOSED / Structural work is DONE" banner is WITHDRAWN: 34 of the 43 most-cited constraints were never re-audited under a modern null, several atom-level constraints are EVA-orthography artifacts, and no meaningful-cipher generator has been tested. Forward plan: [SYSTEM/STRATEGIC_REVIEW_2026-09-27.md](SYSTEM/STRATEGIC_REVIEW_2026-09-27.md). PCA-v1 certified internal contract consistency only.
 
 ---
 
@@ -16,16 +14,16 @@
 
 The Voynich Manuscript's Currier B text (61.9% of tokens, 83 folios) encodes a family of **closed-loop, kernel-centric control programs** designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
 
-This is not language. This is not cipher. This is a control system reference manual.
+Not natural language written one token per word; the cipher classes tested so far are excluded, but sub-lexical (verbose/homophonic) ciphers are untested. Working reading: a control-system reference manual.
 
 | Metric | Value |
 |--------|-------|
 | Instruction classes (B) | 49 (9.8x compression from 479 B token types) |
-| Grammar coverage | 100% |
+| Grammar coverage | 100% of the grammar's own 480 types = 69.5% of B tokens (C124, C566; HT/UN defined by exclusion) |
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
-| Forbidden transitions | 17 (in 5 hazard classes) |
-| Operational categories | 8 (span all 4 systems; C1250) |
+| Forbidden transitions | token level: 9 directional zero bigrams (C957, re-screen pending); class-level "17 in 5 classes" demoted (C783, C2060) |
+| Operational categories | 8, keyword-imposed rather than discovered (C2069) |
 | Macro-automaton states | 6 (8.17x class compression; AXM attractor self=0.697; C1025) |
 | Generative sufficiency | 87% of measurable structure (M2 frontier; C1025/C1030/C1033/C1034) |
 
@@ -389,4 +387,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v4.63 | Project v4.63 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-25*
+*Context System v4.63 footer (historical, 2026-02-25; the "FROZEN STATE / ANALYSIS CLOSED" status is withdrawn — see the STATUS banner at the top) | PCA-v1 certified internal contract consistency only*

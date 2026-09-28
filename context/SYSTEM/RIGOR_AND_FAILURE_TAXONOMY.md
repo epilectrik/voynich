@@ -1,6 +1,6 @@
 # Rigor & Failure Taxonomy — How to Analyze an Undeciphered Corpus Without Fooling Yourself
 
-**Version:** 1.0 | **Date:** 2026-06-04 | **Status:** Consolidation (the project's transferable epistemic asset)
+**Version:** 1.1 | **Date:** 2026-09-27 (v1.0 2026-06-04) | **Status:** Consolidation (the project's transferable epistemic asset)
 
 This document consolidates the discipline the project developed across ~750 phases and ~2050 constraints. It is the most **transferable** thing the project produced — immune to every ceiling on the analysis itself (it is *method*, not *finding*). Complements `METHODOLOGY.md` (the operational codebase how-to: scripts, data loading); this doc is the **epistemic** layer: how findings are established, how they fail, and how the failures were caught.
 
@@ -10,7 +10,7 @@ This document consolidates the discipline the project developed across ~750 phas
 
 ## I. Core stance
 
-1. **Tiers.** 0 = frozen structural fact; 1 = falsified (negative knowledge, preserved); 2 = validated measurement; 3 = conditional interpretation; 4 = exploratory. **Only 0–2 constrain the model.** Tier 0 rests on the B-side control-program grammar and has never moved.
+1. **Tiers.** 0 = frozen structural fact; 1 = falsified (negative knowledge, preserved); 2 = validated measurement; 3 = conditional interpretation; 4 = exploratory. **Only 0–2 constrain the model.** Tier 0 rests on the B-side control-program grammar and has never moved — but it has also never been exposed to a meaningful-cipher or grille generator (only Timm & Schinner, C2077). "Never moved" is not "tested".
 
 2. **Measurement survives; mechanism/referent dies.** Structural *measurements* (distances, distributions, nulls) survive. *Operational interpretations* ("encodes X," "represents Y," "tracks Z") reliably die — this is the **operational-specificity death zone**, now a documented regularity (a four-cycle demotion quartet, 2026-05). The referent wall (**C171**) is permanent: token/atom referents are not recoverable from the text.
 
@@ -43,6 +43,21 @@ Each pattern: what it is · diagnostic · precedent · remedy. These are the pri
 | 15 | **Asymmetric-update** | Removing artifact evidence treated as *supplying* inclusion evidence; snapping to a prior in one direction. | the "is AZC a calendar" overreach (removing the seasonal artifact ≠ evidence FOR a calendar) | Symmetric update: surviving a refutation moves UP, a failed framework-fit moves DOWN, neither snaps. |
 
 ---
+
+## II-b. Patterns added in v1.1 (2026-09-27 strategic review)
+
+| Pattern | What it is | Diagnostic | Precedent | Remedy |
+|---|---|---|---|---|
+| **Transliteration-unit artifact** | A statistic about EVA letters that are really sub-strokes of one scribal glyph (ch, sh, ckh, cth, cph, cfh; in, iin, ain, aiin, ir, air) | The claim concerns a letter that only ever occurs inside a glyph group | C1440 (h "transparent"), C1209 (n terminal), C1207 ({c,h}, {a,i,n,r}), C1484, C521 (e→h = 0) | Re-tokenize into glyph units; within-token character n-gram null (valid inside a token) |
+| **Wrong unit of comparison** | Comparing Voynich tokens with natural-language *words* when the rival encoding makes tokens letters or letter pairs | The NL baseline is word-level but the hypothesis under test is sub-lexical | C2032/C2053 lag2/lag1 vs Latin words | Add letter/syllable-unit baselines and enciphered-NL baselines |
+| **Untested rival class (strawman rival)** | A hypothesis class declared excluded after only its weakest members were tested | "Cipher: CLOSED" resting on token≈word and atom-level polyalphabetic tests | C119/C120/C173; MODEL_CONTEXT §III | Run the strongest published member with its own generator (Naibbe, Rugg grille) |
+| **Screen-level selection (post-selection p)** | Multiplying per-cell probabilities for cells chosen *because* they were extreme in a screen | The cells were found by scanning many candidates | C957's P≈5e-17 over 9 zeros from 10,061 screened bigrams | Simulate the whole screen under the null; report the count of extreme cells |
+| **Fit-on-real-data-only** | A partition or classifier fitted to real data concentrates structure there; null corpora projected through it lack the fit | The same fitted partition is applied to real and null corpora | λ2/λ3 via the 49 classes (C2061/C2067) | Own-pipeline refit on every null corpus; sheet-blocked cross-fitting |
+| **Noise-parity asymmetry** | Real B carries transcription noise, synthetic text does not; noise breaks copies and duplicates and fattens tails | Real vs synthetic comparison on repeat, copy or rare-type statistics | C2077 K2; C2019; C1790 | Pass generator output through an error channel matched to the H track |
+| **Physical-layout / binding-order shadow** | Length or sequence statistics driven by page layout (text wrapped round figures) or by the current binding order, which is not authorial | Claim depends on line length or on "adjacent" pages | C1727/C1728 family; C361, C1839, C1977 (order family) | Layout covariates; re-pairing null that holds quire and slots fixed |
+| **Source-quote drift (OCR splice)** | A garbled OCR quotation of a source propagates through the registry and gets interpreted | A load-bearing quote was never checked against the page image | III.19 "… e aprés ix vegades" (really "aliter ix vegades"); C1965, PHASE_650, PHASE_751 | Verify load-bearing source quotes against the scan; keep an OCR-corrections log per source |
+| **Silent parser default** | A generator falls back to a default value when a pattern fails, so errors look like data | Output values are suspiciously uniform (all Tier 2) | `generate_constraint_table.py`: an rf-string turned `{2,3}` into "(2, 3)", so every currier_a tier defaulted to 2 (fixed 2026-09-27); demoted rows silently dropped | Fail loudly; diff the generated table on every change; run `scripts/registry_integrity_check.py` |
+| **Scope overreach** | "Hypothesis CLOSED / definitively rejected / exhausted" where only a subset was tested | Closure wording without a list of the classes tested | "Language/Cipher hypothesis CLOSED"; "ANALYSIS CLOSED"; v7.17 "external channels foreclosed" | Scope every exclusion to the classes actually tested; state MDE for nulls |
 
 ## III. The null discipline — which null for which claim class
 
@@ -88,9 +103,9 @@ Before any verdict on an EXISTING finding (promote / demote / "confirms" / "X me
 - **Text-statistical exhaustion:** these methods discriminate Voynich-vs-Latin but NOT among Latin subdomains (PHASE_718/720). Cross-corpus matching is generic at the domain-within-Latin resolution.
 - **Image decoupling:** illustrations are epiphenomenal — they don't predict the grammar (C138/C140/C1824); the one tested image attribute (clothed/naked) is decoupled from the text. The image is a *domain* channel (plants, apparatus are real referents) but not a text-decoding channel.
 - **The mechanism-cycle procedural ceiling:** the surface→candidate→discriminating-test→sharpen cycle promotes *structural measurements* to Tier 2 but CANNOT promote *operational interpretations* to mechanism-tier facts from inside the procedure.
-- **The ONLY documented path past Tier 3** is external grounding: physical reconstruction, external-corpus alignment with a *discriminating* signature, or a fundamentally different evidence class. All obvious such routes are currently foreclosed (image decoupled, corpus-matching generic, apparatus-grounding foreordained-or-echo).
+- **The ONLY documented path past Tier 3** is external grounding: physical reconstruction, external-corpus alignment with a *discriminating* signature, or a fundamentally different evidence class. [2026-09-27: "foreclosed" withdrawn — rival generators, glyph-unit invariance, codicology, blind image coding and practitioner decoys are untried evidence classes, not closed ones.] All obvious such routes were then judged foreclosed (image decoupled, corpus-matching generic, apparatus-grounding foreordained-or-echo).
 
-**Implication:** at maturity, the highest-EV work is **integrity (audit) + integration (consolidation)**, not discovery. Manufacturing new constraints to feel productive is the trap; the next 20 "discoveries" are likelier echo than the next 20 audit retractions are wrong.
+**Implication (revised 2026-09-27):** at maturity, integrity (audit) comes first, and discovery must come through NEW evidence channels (external generators, second transliterations, codicology, images, external raters) rather than more text-internal statistics. Manufacturing new constraints to feel productive is the trap; the next 20 "discoveries" are likelier echo than the next 20 audit retractions are wrong.
 
 ---
 

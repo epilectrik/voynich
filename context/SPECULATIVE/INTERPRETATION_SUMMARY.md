@@ -4504,7 +4504,7 @@ Universal Boundaries apply. Additionally:
 - Jars do NOT select processing regimes
 - This is Tier 3 interface characterization, NOT Tier 2 structure
 
-**Status:** CLOSED with explanatory saturation
+**Status:** CLOSED with explanatory saturation [2026-09-27: scoped to this Brunschwig back-propagation exercise, not a program-level closure; Brunschwig is genre context, not a match source (C2052; PHASE_718/720)]
 
 **Files:** phases/JAR_WORKING_SET_INTERFACE/README.md, phases/JAR_WORKING_SET_INTERFACE/results.json
 

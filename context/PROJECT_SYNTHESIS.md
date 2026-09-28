@@ -50,7 +50,7 @@ Eight medieval alternative-class structural hypotheses have been tested and fals
 | Indiction / Zodiac / Weekly (P=15/12/7) | Peak-specificity vs synthetic medieval periods | C2040 |
 | Lullian wheels combinatorial | Rosette topology + vocabulary overlap pairs | PHASE_701 (INDEX-only) |
 
-**The internal alternative-class methodology is now saturated.** Per expert consultation (PHASE_700, PHASE_701): the lag-N autocorrelation + peak-specificity + combinatorial approaches have exhausted what internal-data testing can produce against alternative-class hypotheses. Future alternative-class work needs fundamentally different methodology or external grounding.
+**[2026-09-27 correction: "saturated" applies only to the lag-N / peak-specificity / combinatorial toolkit. Generator-based rival tests (Naibbe, Rugg grille) and glyph-unit invariance were never run — see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md.]** The internal alternative-class methodology is now saturated. Per expert consultation (PHASE_700, PHASE_701): the lag-N autocorrelation + peak-specificity + combinatorial approaches have exhausted what internal-data testing can produce against alternative-class hypotheses. Future alternative-class work needs fundamentally different methodology or external grounding.
 
 ---
 
@@ -94,7 +94,7 @@ Dark pipeline is the closest the framework comes to a "lexical content" layer, o
 
 ### Grammar architecture
 
-- **Hazard topology** (C783, C1118, C2023): 17 forbidden class-class transitions; bidirectional at MIDDLE layer
+- **Hazard topology** — [2026-09-27: C783 demoted, C1118 demoted, C2023 demoted; the class-level "17 forbidden transitions" is not supported; surviving layer is C957 token-level zeros, pending re-screen]
 - **Period-2 structure in Section B** (C2032): lag2/lag1 = −0.66, sign-reversal pattern
 - **Sustained autocorrelation in matched-S** (C2031): lag2/lag1 = +0.66, persistent positive
 - **Multi-paragraph procedural folios** (C1399, C1400, C845): paragraphs are self-contained operational units with cardinality reflecting recipe complexity
@@ -259,7 +259,7 @@ The codicological direction is still potentially high-EV but the specific techni
 
 ### E. Acceptance and synthesis
 
-Multi-session expert consultation (PHASE_697-701) has flagged that internal probing is at procedural ceiling. **The project's current state is a defensible terminal Tier 2 substrate-distinctness synthesis.** Further internal work risks framework-echo accumulation without genuine new findings. A synthesis-writeup mode (rather than new-test mode) is itself high-EV at this stage.
+Multi-session expert consultation (PHASE_697-701) has flagged that internal probing is at procedural ceiling. **[2026-09-27: "terminal" withdrawn — referents are unrecovered and untested evidence classes remain; see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md.]** The project's current state is a defensible Tier 2 substrate-distinctness synthesis. Further internal work risks framework-echo accumulation without genuine new findings. A synthesis-writeup mode (rather than new-test mode) is itself high-EV at this stage.
 
 ---
 
@@ -309,7 +309,7 @@ Key project-discipline lessons documented in `~/.claude/projects/.../memory/`:
 4. Physical apparatus reconstruction grounded in substrate signatures
 5. Synthesis consolidation and external publication if appropriate
 
-**Stop discipline:** The project has accumulated enough for consolidation. Further alternative-class internal testing has been flagged as saturated. The right next move is harvesting (this document), not new internal tests.
+**Stop discipline (superseded 2026-09-27 — consolidation is done; the forward plan is in SYSTEM/STRATEGIC_REVIEW_2026-09-27.md):** The project has accumulated enough for consolidation. Further alternative-class internal testing has been flagged as saturated. The right next move is harvesting (this document), not new internal tests.
 
 ---
 

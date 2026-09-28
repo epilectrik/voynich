@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** FROZEN (core) + POST-AUDIT CORRECTIONS (A-side/AZC layer)
+**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** Tier 0 frozen pending external adversarial tests + POST-AUDIT CORRECTIONS (A-side/AZC layer; 2026-09-27 registry reconciliation — see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md)
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -16,7 +16,7 @@ AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained,
 **2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
 PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
 
-**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, the 17 *directional* hazard transitions C109/C783, closed-loop/recovery) is independent of the A-side compatibility geometry and entirely unaffected. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
+**3. The frozen Tier-0 conclusion is UNTOUCHED.** The B-side control-program grammar (kernel, closed-loop/recovery) is independent of the A-side compatibility geometry. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and the surviving hazard layer is C957's token-level zeros, pending a within-line, position-preserving screen-level null. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
 
 ---
 
@@ -85,16 +85,16 @@ Discarded hypotheses are **negative knowledge** - as valuable as positive findin
 
 ### Closed Components
 
-The following are **structurally closed** and cannot be reopened without extraordinary evidence:
+The following components are **stable**; reopening any of them requires new evidence, not speculation (row status scoped 2026-09-27 — several rows are OPEN or EVA-dependent):
 
 | Component | Status | Implication |
 |-----------|--------|-------------|
-| Currier B grammar | CLOSED | 49-class system is final |
-| Currier A grammar | CLOSED (NONE) | A has no sequential grammar |
-| Morphological axes | CLOSED | PREFIX/MIDDLE/SUFFIX decomposition is fixed |
-| System boundaries | CLOSED | A/B/AZC/HT separation is designed |
-| Language hypothesis | CLOSED | Definitively rejected |
-| Cipher hypothesis | CLOSED | Definitively rejected |
+| Currier B grammar | STABLE | 49-class system (provenance audit of "49" and an own-partition refit null pending) |
+| Currier A grammar | STABLE (NONE) | A has no sequential grammar |
+| Morphological axes | STABLE, EVA-DEPENDENT | PREFIX/MIDDLE/SUFFIX is a parse of EVA letter strings; glyph-unit invariance audit pending |
+| System boundaries | STABLE | A/B/AZC/HT separation; A/B partly confounded with scribe/quire |
+| Language hypothesis | CLOSED (scoped) | Rejected for natural language written one token per word |
+| Cipher hypothesis | OPEN (scoped) | Classes tested are excluded (token≈word, atom-level polyalphabetic C1976); sub-lexical verbose/homophonic ciphers (Naibbe) UNTESTED |
 
 ### Permitted Future Work
 

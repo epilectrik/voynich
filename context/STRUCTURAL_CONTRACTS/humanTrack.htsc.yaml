@@ -1,3 +1,9 @@
+# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
+# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
+# listed below is SUSPENDED until the contract is regenerated from live constraint status.
+#   DEMOTED to Tier 3: C461, C475, C488, C489, C872
+#   DEAD (retracted / superseded): C172
+# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 
 meta:

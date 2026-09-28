@@ -169,4 +169,4 @@ This was not an oversight. It was the correct sequence.
 
 ---
 
-*Phase CLOSED. Explanatory saturation reached. No further label investigation recommended.*
+*Phase CLOSED for this line of inquiry. [2026-09-27: "no further label investigation" is superseded — label grounding with blind, text-masked image coding is on the forward plan; see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md §3.]*
