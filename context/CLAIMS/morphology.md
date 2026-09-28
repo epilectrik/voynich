@@ -86,7 +86,7 @@ Chi2=2369 (p=0). lk is 81% Section S. yk is 36% Section H.
 Line-final: -am (7.7x), -om (8.7x), -oly (4.6x). -am/-om are 80-90% line-final.
 **Source:** BSF
 
-### C376 - Suffix Kernel Dichotomy
+### C376 - **[Scope 2026-09-28 (v7.26): 'kernel' = the token contains the EVA letter k, h or e; -edy/-ey contain e, so their high rates are largely spelling; the kernel reading is superseded (C089 → C2082).]** Suffix Kernel Dichotomy
 **Tier:** 2 | **Status:** CLOSED
 KERNEL-HEAVY: -edy (91%), -ey (95%), -dy (83%). KERNEL-LIGHT: -in (6%), -l (12%).
 **Source:** BSF
@@ -220,13 +220,13 @@ After hazard source tokens (which are CHSH-lane tokens), qo-prefixed tokens appe
 **Source:** HAV
 **Cross-ref:** C601 (QO 0/19 hazard), C643 (QO-CHSH alternation), C645 (CHSH 75% post-hazard)
 
-### C398 - Post-Source Role Distribution (REVISED)
+### C398 - **[Scope 2026-09-28 (v7.26): role frequencies after forbidden-pair source tokens (a baseline CHSH follow-on, as revised); 'hazard recovery' is withdrawn (C645 mechanism retracted; C2081).]** Post-Source Role Distribution (REVISED)
 **Tier:** 2 | **Status:** CLOSED | **Revised:** 2026-01-31
 After hazard source tokens, ENERGY_OPERATOR appears 40-67%, CORE_CONTROL 22-32%. This reflects baseline role frequencies after CHSH tokens. Actual hazard recovery is handled by CHSH (75.2% post-hazard per C645).
 **Source:** HAV
 **Cross-ref:** C645 (CHSH post-hazard dominance)
 
-### C399 - Safe Precedence Pattern
+### C399 - **[Scope 2026-09-28 (v7.26): role frequencies before forbidden-pair target tokens; 'safely precede' is the withdrawn hazard reading (C2081).]** Safe Precedence Pattern
 **Tier:** 2 | **Status:** CLOSED
 ENERGY_OPERATOR and CORE_CONTROL safely precede hazard targets (33-67%).
 **Source:** HAV
@@ -297,13 +297,14 @@ The qo- prefix is enriched near kernel nodes (1.31x) and virtually never line-in
 Original claim: LINK spatially uniform within folios and lines (p=0.005 clustering, z=0.14 runs, p=0.80 line-position). **C805 shows significant positional bias:** mean pos 0.476 vs 0.504, first-token 17.2% vs middle 12.4% (chi2=44.1, p<0.0001). LINK shares HT boundary enrichment pattern.
 **Source:** v1.8-import
 
-### C366 - LINK marks GRAMMAR STATE TRANSITIONS **REVISED by C804**
-**Tier:** 2 | **Status:** REVISED | **Revised by:** C804
+### C366 - **[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. its enrichment ratios were not confirmed (C804) and LINK is a morphological artifact of 'ol', not a monitoring/intervention boundary (C1174, C609); the state-transition reading has no measurement left.]** LINK marks GRAMMAR STATE TRANSITIONS **REVISED by C804**
+**Tier:** 3 | **Status:** REVISED | **Revised by:** C804 | **Demoted:** 2026-09-28 (registry cascade v7.26)
 Original enrichment ratios (1.50x AUXILIARY predecessor, 1.30x FLOW_OPERATOR, 2.70x HIGH_IMPACT successor) **NOT CONFIRMED** with current 5-role ICC taxonomy (C804: pred chi2=5.1 NS, succ chi2=48.2 weak). Qualitative claim (LINK = monitoring/intervention boundary) may still hold but quantitative transition grammar requires revision.
 **Source:** v1.8-import
 
 ### C383 - GLOBAL MORPHOLOGICAL TYPE SYSTEM: Prefixes encode functional type (INTERVENTION vs MONITORING) globally across A, B, and AZC; ch/sh/ok=100% kernel contact in ALL systems, da/sa<5% in ALL systems; LINK affinity patterns identical (da/al attracted, qo/ok avoiding); type system is grammar-independent (A has no sequential grammar but same types); B instantiates types in sequential programs, A instantiates types in non-sequential registry; explains vocabulary sharing without semantic transfer (A-ARCH, Tier 2)
-**Tier:** 2 | **Status:** CLOSED
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
+**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'prefixes encode functional type (INTERVENTION vs MONITORING)' is the withdrawn LINK/kernel reading (C1174, C089 → C2082); '100% kernel contact' for ch/sh/ok is a spelling identity (kernel contact = the token contains k, h or e, and each of these prefixes contains h or k); the cross-system affinities remain as measurements in C372/C373.]**
 GLOBAL MORPHOLOGICAL TYPE SYSTEM: Prefixes encode functional type (INTERVENTION vs MONITORING) globally across A, B, and AZC; ch/sh/ok=100% kernel contact in ALL systems, da/sa<5% in ALL systems; LINK affinity patterns identical (da/al attracted, qo/ok avoiding); type system is grammar-independent (A has no sequential grammar but same types); B instantiates types in sequential programs, A instantiates types in non-sequential registry; explains vocabulary sharing without semantic transfer (A-ARCH, Tier 2)
 **Source:** v1.8-import
 

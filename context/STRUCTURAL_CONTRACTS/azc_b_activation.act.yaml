@@ -1,9 +1,17 @@
-# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
-# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
-# listed below is SUSPENDED until the contract is regenerated from live constraint status.
-#   DEMOTED to Tier 3: C458, C470, C1274
-#   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C105
-# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
+# REGISTRY STATUS NOTE (aligned to STATUS_BRIEF v7.25 on 2026-09-28; first note 2026-09-27)
+# This contract predates the 2026-05/06 audits and the 2026-09 strategic review. On 2026-09-28 it was
+# aligned to context/SYSTEM/STATUS_BRIEF.md (v7.25): every passage resting on a non-live constraint is
+# marked in place and the text kept as history; the HEADLINE was restated to what is live because one of
+# its three legs (restriction inheritance, C470) is demoted — see meta.headline_status. No claim was added or upgraded.
+#   WITHDRAWN = rests on a retracted constraint, or on a construct listed in STATUS_BRIEF §3.
+#   SUSPENDED = rests on a constraint demoted to Tier 3 (historical until re-derived from live evidence).
+#   DEMOTED to Tier 3, construct withdrawn in STATUS_BRIEF §3: C105 (stability anchor / recovery paths),
+#     C458 (demoted: execution clamp vs recovery freedom is a frequency shadow)
+#   DEMOTED to Tier 3: C470 (restriction inheritance = frequency carryover), C1274 (category-escape link is circular)
+#   Retracted 2026-05-19 and held at Tier 1: C481
+#   Live (Tier 2) but built on a withdrawn construct: C1280 (hazard-class membership) — flagged to maintainer
+# Authoritative status: context/CONSTRAINT_TABLE.txt; reasons: context/CLAIMS/INDEX.md and
+# context/CLAIMS/azc_system.md; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 
 meta:
@@ -14,7 +22,9 @@ meta:
   status: "ACTIVE"
   layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526). THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52). v1.4: THERMAL escape mechanism solved (C1277). v1.3: Category-escape correlation (C1274). v1.2: Pipeline framing removed."
+  audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526). THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52). v1.4: THERMAL escape mechanism solved (C1277). v1.3: Category-escape correlation (C1274; since demoted to Tier 3 as circular, PHASE_745). v1.2: Pipeline framing removed."
+  registry_alignment: "2026-09-28 — aligned to context/SYSTEM/STATUS_BRIEF.md v7.25. Some cited constraints are now Tier 3 or retracted; each such passage is marked WITHDRAWN or SUSPENDED in place (see header note)."
+  headline_status: "Restated 2026-09-28 (STATUS_BRIEF v7.25 alignment). The contract previously headlined three effects of AZC on B: a legality correlation, an intervention-permission envelope, and vocabulary restriction inheritance. The third rests on C470, demoted to Tier 3 (frequency carryover: rare MIDDLEs are rare everywhere), so it is no longer part of the headline. Live headline: vocabulary classified at high-escape AZC positions shows high escape rates in B, both determined by vocabulary properties (C468), with position-indexed escape rates in AZC (C443) and resolution by vocabulary availability rather than parameters (C469)."
   governance: |
     AZC-B-ACT is NOT authoritative. Constraints are authoritative.
     AZC-B-ACT describes HOW vocabulary classified in AZC co-varies with B behavior.
@@ -22,7 +32,8 @@ meta:
 
 # ============================================================
 scope:
-  function: "How AZC legality states constrain Currier B execution"
+  function: "How vocabulary classified in AZC co-varies with Currier B escape behavior (C468, C469)"
+  function_previous: "How AZC legality states constrain Currier B execution"  # restated 2026-09-28: the old headline included restriction inheritance (C470, demoted to Tier 3); see meta.headline_status
   direction: "AZC -> B (vocabulary-mediated correlation, not reverse)"
   b_grammar_authority: false  # Does not modify B grammar
   a_visibility: false  # B does not see A entries
@@ -35,7 +46,7 @@ ownership:
   azc_b_act_describes:
     - legality_correlation
     - intervention_permission_envelope
-    - vocabulary_restriction_inheritance
+    - vocabulary_restriction_inheritance  # SUSPENDED: rests on C470, demoted to Tier 3 (frequency carryover); historical
 
 # What B receives (effects, not signals)
 b_reception:
@@ -43,6 +54,7 @@ b_reception:
     - description: "Grammar paths silently constrained by legality"
     - description: "Intervention permission envelope"
     - description: "Vocabulary restriction inheritance"
+      status: "SUSPENDED v7.25 — rests on C470, demoted to Tier 3 (frequency carryover); historical"
   does_not_receive:
     - "Currier A entry identity"
     - "AZC internal structure"
@@ -56,8 +68,9 @@ guarantees:
     provenance: "C468"
 
   - id: "RESTRICTION_PRESERVATION"
+    status: "SUSPENDED v7.25 — rests only on C470, demoted to Tier 3 (PHASE_748: frequency carryover — after frequency control the AZC-to-B restriction link falls to partial rho 0.062); historical, see C470 in context/CLAIMS/azc_system.md"
     statement: "MIDDLE restrictions transfer intact to B"
-    provenance: "C470"
+    provenance: "C470"  # demoted to Tier 3
 
   - id: "GRAMMAR_INDEPENDENCE"
     statement: "B grammar is unchanged by AZC legality"
@@ -72,8 +85,9 @@ guarantees:
     provenance: "C469"
 
   - id: "CATEGORY_ESCAPE_CORRELATION"
+    status: "SUSPENDED v7.25 — rests only on C1274, demoted to Tier 3 (PHASE_745/C2069: circular — THERMAL is defined by k/e atoms and qo-escape is the k channel, so the correlation measures k-atom density twice); historical"
     statement: "Operational category composition of AZC-shared vocabulary predicts B escape rate: THERMAL (rho=+0.780) high escape, TRANSITION (rho=-0.598) low escape, across 82 B folios"
-    provenance: "C1274"
+    provenance: "C1274"  # demoted to Tier 3 (circular)
 
 # ============================================================
 invariants:
@@ -82,8 +96,9 @@ invariants:
     provenance: "C468"
 
   restriction_correlation:
+    status: "SUSPENDED v7.25 — rests only on C470, demoted to Tier 3 (the raw correlation is frequency carryover: rare MIDDLEs are rare everywhere); historical"
     statement: "Vocabulary restrictions correlate across AZC and B contexts"
-    provenance: "C470"
+    provenance: "C470"  # demoted to Tier 3
 
   grammar_stability:
     statement: "B grammar rules apply universally regardless of AZC source"
@@ -103,8 +118,8 @@ inputs:
     type: "legality_effect"
     components:
       - escape_permission: "Position-indexed intervention permission envelope"
-      - folio_restriction: "MIDDLE-level compatibility constraints"
-    provenance: "C443, C468, C470"
+      - folio_restriction: "MIDDLE-level compatibility constraints"  # SUSPENDED: restriction transfer rests on C470 (demoted to Tier 3)
+    provenance: "C443, C468, C470"  # C470 demoted to Tier 3; C443, C468 live
 
   not_exported:
     - "AZC position labels (C, P, R, S)"
@@ -123,10 +138,11 @@ correlation:
     provenance: "C468"
 
   vocabulary_restriction_transfer:
+    status: "SUSPENDED v7.25 — rests only on C470, demoted to Tier 3 (frequency carryover, not transfer); historical"
     direction: "Restricted MIDDLEs remain restricted in B"
     categorical: true
     parametric: false
-    provenance: "C470"
+    provenance: "C470"  # demoted to Tier 3
 
   categorical_resolution:
     effect: "Fine distinctions encoded in which tokens are legal"
@@ -134,6 +150,7 @@ correlation:
     provenance: "C469, C1134"
 
   category_escape_mechanism:
+    status: "SUSPENDED v7.25 — rests only on C1274, demoted to Tier 3 (circular: category labels are defined by atoms that also define qo-escape); historical"
     statement: "Category composition of AZC-shared vocabulary predicts B escape dynamics"
     thermal_effect: "THERMAL rho=+0.780 (p<0.001) -- high THERMAL = high escape"
     transition_effect: "TRANSITION rho=-0.598 (p<0.001) -- high TRANSITION = low escape"
@@ -141,10 +158,10 @@ correlation:
     marking_effect: "MARKING rho=-0.349 (p=0.001) -- anti-escape"
     n_folios: 82
     bonferroni_survivors: "4/8 categories"
-    provenance: "C1274"
+    provenance: "C1274"  # demoted to Tier 3 (circular)
 
   thermal_escape_mediation:
-    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL MIDDLEs -> qo-PREFIX (44.1%) -> QO lane (zero hazard) -> escape"
+    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL MIDDLEs -> qo-PREFIX (44.1%) -> QO lane (zero hazard) -> escape"  # 'zero hazard' refers to the hazard-class layer, withdrawn (STATUS_BRIEF §3); the mediation measurement (C1277) is live
     thermal_qo_rate: "44.1% (vs 9.5% baseline)"
     partial_after_qo_control: "rho=-0.081 (p=0.468) -- mediation complete"
     provenance: "C1277"
@@ -158,6 +175,7 @@ correlation:
     provenance: "C1285, C1281"
 
   hazard_category_concentration:
+    status_note: "Construct withdrawn — historical. 'Hazard' here is membership in the forbidden-transition hazard classes, which STATUS_BRIEF §3 withdraws (class level demoted C783; taxonomy imposed C2060; token zeros reduce C2081). C1280 itself is still Tier 2 in the generated table; the mismatch is flagged to the maintainer, and this entry is not presented as structure."
     statement: "Hazard concentrates in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is hazard-immune (2.6%)."
     cramers_v: "0.560"
     provenance: "C1280"
@@ -181,7 +199,7 @@ correlation:
       Channels are anti-correlated at folio level (r=-0.865, C1146): folios
       invest more in grammar execution OR identification, not both equally.
     identification_channel_modulation: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline (JS=0.483 vs 0.124); primary vehicle for section-level vocabulary modulation (C1148)"
-    provenance: "C481, C502, C1137, C1140, C1146, C1148"
+    provenance: "C481, C502, C1137, C1140, C1146, C1148"  # C481 retracted 2026-05-19 (survivor sets are not unique); the rest are live
 
 # ============================================================
 b_reception_architecture:
@@ -194,13 +212,15 @@ b_reception_architecture:
     provenance: "C397, C398"
 
   stability_anchor:
-    provenance: "C105"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. C105 ('e = stability anchor') demoted to Tier 3 by the Tier-0 restatement: a role gloss whose 54.7% recovery-path figure rests on the withdrawn hazard/recovery layer; at glyph level the e signal is word-ending routing (C2082)."
+    provenance: "C105"  # demoted to Tier 3
 
   design_constraints:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. C458 demoted to Tier 3: the clamp/free CV asymmetry is a frequency shadow (raw gap 0.720 falls to 0.089 under frequency-matched nulls)."
     hazard_exposure: "CLAMPED"
     intervention_operations: "FREE"
     principle: "Constrain dangerous interactions; let intervention vary"
-    provenance: "C458"
+    provenance: "C458"  # demoted to Tier 3 (frequency shadow)
 
 # ============================================================
 b_isolation:
@@ -248,16 +268,16 @@ deferred:
     reason: "B internal structure"
 
   - topic: "Hazard topology details"
-    reason: "B internal structure"
+    reason: "B internal structure"  # hazard topology withdrawn per STATUS_BRIEF §3 (C783, C2060, C2063, C2081)
 
   - topic: "LINK operator semantics"
-    reason: "B internal structure"
+    reason: "B internal structure"  # LINK-as-monitoring withdrawn per STATUS_BRIEF §3 (13.2% true density; C609, C1174)
 
   - topic: "Folio program taxonomy"
     reason: "B internal structure"
 
   - topic: "STATE-C / STATE-X semantics"
-    reason: "B internal structure"
+    reason: "B internal structure"  # convergence to STATE-C withdrawn per STATUS_BRIEF §3; occupancy only (C074)
 
   - topic: "Procedure identity"
     reason: "B internal structure / Tier-3"
@@ -293,11 +313,12 @@ disallowed:
 
   - interpretation: "AZC expands B vocabulary beyond A specification"
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B."
-    provenance: "C481, C502"
+    provenance: "C481, C502"  # C481 retracted 2026-05-19; C502 live
 
   - interpretation: "Category composition is orthogonal to B escape dynamics"
+    status: "SUSPENDED v7.25 — this disallowal rests only on C1274, demoted to Tier 3 (circular: the correlation measures k-atom density twice, not a category mechanism); historical"
     reason: "THERMAL (rho=+0.780) and TRANSITION (rho=-0.598) strongly predict escape rate. Category is the mechanism connecting AZC classification to B behavior."
-    provenance: "C1274"
+    provenance: "C1274"  # demoted to Tier 3 (circular)
 
 # ============================================================
 
@@ -312,50 +333,53 @@ annotations:
     provenance: "C468"
 
   restriction_statistics:
+    status: "SUSPENDED v7.25 — rests only on C470, demoted to Tier 3 (B-folio spread is 0.996 correlated with B frequency; the 12.7x is frequency carryover); historical"
     restricted_middle_spread: "4.0 folios mean"
     universal_middle_spread: "50.6 folios mean"
     ratio: "12.7x"
-    provenance: "C470"
+    provenance: "C470"  # demoted to Tier 3
 
   recovery_statistics:
     qo_escape_rate: "25-47%"
-    e_recovery_path_rate: "54.7%"
+    e_recovery_path_rate: "54.7%"  # WITHDRAWN: C105 (demoted to Tier 3); the figure rests on the withdrawn hazard/recovery layer (STATUS_BRIEF §3)
     energy_operator_escape: "40-67%"
     core_control_escape: "22-32%"
-    provenance: "C397, C398, C105"
+    provenance: "C397, C398, C105"  # C105 demoted to Tier 3; C397, C398 live
 
   design_clamp_statistics:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (C458 demoted to Tier 3: frequency shadow)"
     hazard_cv: "0.04-0.11"
     recovery_cv: "0.72-0.82"
-    provenance: "C458"
+    provenance: "C458"  # demoted to Tier 3
 
   category_escape_statistics:
+    status: "SUSPENDED v7.25 — rests only on C1274, demoted to Tier 3 (circular); historical"
     thermal_rho: "+0.780 (p<0.001)"
     transition_rho: "-0.598 (p<0.001)"
     containment_rho: "-0.399 (p<0.001)"
     marking_rho: "-0.349 (p=0.001)"
     n_b_folios: 82
     mean_escape_rate: "15.6%"
-    provenance: "C1274"
+    provenance: "C1274"  # demoted to Tier 3 (circular)
 
 # ============================================================
 provenance:
   vocabulary_correlation:
     - "C468"  # Legality inheritance
     - "C469"  # Categorical resolution
-    - "C470"  # MIDDLE restriction inheritance
+    - "C470"  # MIDDLE restriction inheritance — demoted to Tier 3 (frequency carryover)
 
   b_reception:
-    - "C105"  # e = STABILITY_ANCHOR
+    - "C105"  # e = STABILITY_ANCHOR — demoted to Tier 3; construct withdrawn (STATUS_BRIEF §3)
     - "C397"  # qo-prefix escape route
     - "C398"  # Escape role stratification
     - "C399"  # Safe precedence pattern
-    - "C458"  # Execution design clamp
+    - "C458"  # Execution design clamp — demoted to Tier 3 (frequency shadow); construct withdrawn (STATUS_BRIEF §3)
 
   boundary_preservation:
     - "C384"  # No entry-level A-B coupling
     - "C121"  # 49 instruction classes
-    - "C124"  # 100% grammar coverage
+    - "C124"  # grammar coverage: 100% of the grammar's own 480 types = 69.5% of B tokens (C124 as corrected; STATUS_BRIEF §2)
 
   vanishing_semantics:
     - "C444"  # Position independence (vanishing = illegality)
@@ -363,13 +387,13 @@ provenance:
   invariants:
     - "C443"  # Escape gradient source
     - "C468"  # Causal transfer
-    - "C470"  # Restriction preservation
+    - "C470"  # Restriction preservation — demoted to Tier 3 (frequency carryover)
     - "C469"  # Non-parametric
 
   category_escape:
-    - "C1274"  # Category composition predicts B escape rate
+    - "C1274"  # Category composition predicts B escape rate — demoted to Tier 3 (circular, PHASE_745)
     - "C1277"  # THERMAL escape fully PREFIX-mediated (partial=-0.081)
-    - "C1280"  # Hazard concentrates FLOW/CONTAINMENT (V=0.560)
+    - "C1280"  # Hazard concentrates FLOW/CONTAINMENT (V=0.560) — Tier 2, but the hazard-class construct is withdrawn (STATUS_BRIEF §3); flagged
     - "C1281"  # TRANSITION anti-escape PREFIX-independent (partial=-0.586)
     - "C1285"  # TRANSITION anti-escape via role redirection to AUX/FQ
     - "C1286"  # Category transition grammar structured (chi2=526)

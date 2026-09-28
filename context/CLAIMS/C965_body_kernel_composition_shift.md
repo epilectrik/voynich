@@ -1,6 +1,6 @@
 # C965: Body Kernel Composition Shift
 
-**Tier:** 2 | **Scope:** B | **Phase:** PARAGRAPH_STATE_COLLAPSE
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row) | **Scope:** B | **Phase:** PARAGRAPH_STATE_COLLAPSE
 
 ## Statement
 

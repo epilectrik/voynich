@@ -123,7 +123,7 @@ If CFR-B is correct, then Currier A serves a specific cognitive function:
 
 > **Externalize distinctions that the executable grammar (B) intentionally collapses.**
 
-Currier B clamps risk globally and allows variation locally. It deliberately refuses to track certain distinctions because they don't affect hazard.
+Currier B clamps risk globally and allows variation locally. It deliberately refuses to track certain distinctions because they don't affect hazard. [v7.25: the clamp/recovery-freedom reading is withdrawn (C458 demoted: frequency shadow) and the hazard layer is withdrawn (C2081) — STATUS_BRIEF §3]
 
 Currier A records those same distinctions - but in vocabulary that remains **recognizable across prefix domains**, so an experienced operator can:
 1. Look at a B program step
@@ -168,7 +168,7 @@ Currier A and Currier B now form a recognizable design philosophy:
 
 | System | What It Does | Vocabulary Strategy |
 |--------|--------------|---------------------|
-| **B** | Clamps risk, allows recovery | Domain-specific precision (49 classes) |
+| **B** | Clamps risk, allows recovery [withdrawn reading, see note above] | Domain-specific precision (49 classes) |
 | **A** | Externalizes collapsed distinctions | Cross-domain validity (universal MIDDLEs) |
 
 Together:

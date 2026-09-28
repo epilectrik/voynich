@@ -1,5 +1,7 @@
 # Curriculum Realignment Discovery
 
+**Status (v7.25, 2026-09-28):** The optimisation targets and the external comparisons rest on withdrawn supports — the C325 completion gradient is a section confound (C1401), C458 is demoted (frequency shadow), the hazard gradient uses the withdrawn hazard layer (C2060, C2081), REGIME as 4 crisp classes and REGIME = Brunschwig fire degree are retired (C1712, C2070), the Puff–Voynich alignment is retired as evidence (strategic review §5) and C476 is retracted. The "upgraded claim" and "now defensible" statements are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-14 | **Status:** Tier 3 SPECULATIVE | **Version:** 1.0
 
 ---
@@ -18,9 +20,9 @@
 
 We optimized folio order to maximize **internal frozen constraints only**:
 - C161 (risk gradient)
-- C325 (completion gradient)
-- C458 (design clamp)
-- Regime structure (C179-C185)
+- C325 (completion gradient) [section confound, C1401] [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
+- C458 (design clamp) [demoted to Tier 3: frequency shadow]
+- Regime structure (C179-C185) [4 crisp classes retired, C1712]
 
 We did NOT tune the order to fit Puff. We did NOT tune the order to fit Brunschwig.
 
@@ -53,7 +55,7 @@ Instead, we see:
 
 ### Overfitting does not fix external sources you didn't optimize for.
 
-We optimized for internal constraints (C161, C325). We tested against external sources (Puff, Brunschwig). The convergence is emergent, not engineered.
+We optimized for internal constraints (C161, C325). We tested against external sources (Puff, Brunschwig). The convergence is emergent, not engineered. [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
 
 **This is what latent order recovery looks like.**
 
@@ -128,11 +130,11 @@ This remains **Tier 3 SPECULATIVE** because:
 | Constraint | Status |
 |------------|--------|
 | C384 | No A-B entry coupling introduced |
-| C171 | Zero material encoding unchanged |
-| C476 | Hub rationing unchanged |
+| C171 | Zero material encoding unchanged (C171 since demoted to Tier 3) |
+| C476 | Hub rationing unchanged (C476 since retracted: broken baseline) |
 | C478 | Temporal scheduling unchanged |
-| C179-C185 | Regime definitions unchanged |
-| C490 | AGGRESSIVE prohibition unchanged |
+| C179-C185 | Regime definitions unchanged [v7.26 status: C181, C182, C183, C184, C185 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)] |
+| C490 | AGGRESSIVE prohibition unchanged [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 
 ---
 
@@ -140,7 +142,7 @@ This remains **Tier 3 SPECULATIVE** because:
 
 > **We now have three independent bodies of evidence — internal control gradients, Puff's material pedagogy, and Brunschwig's fire-degree escalation — all of which converge on the same latent ordering of Voynich Currier B when the manuscript's current order is relaxed.**
 
-That sentence is doing substantial work — and it is accurate.
+That sentence is doing substantial work — and it is accurate. [v7.25: historical — two of the three bodies of evidence (Puff alignment, fire-degree escalation) are retired; see banner]
 
 ---
 
@@ -201,7 +203,7 @@ The structural facts remain frozen. The interpretation of their relationship to 
 > **Not a shared manuscript.**
 > **But a shared curriculum whose control logic survived misbinding.**
 
-That statement is now defensible.
+That statement is now defensible. [v7.25: historical — its supports are withdrawn; see banner]
 
 ---
 

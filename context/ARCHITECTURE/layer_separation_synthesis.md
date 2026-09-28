@@ -2,6 +2,20 @@
 
 **Status:** SYNTHESIS | **Date:** 2026-01-10
 
+> **Status note (v7.25, 2026-09-28).** This is a Tier-3 interpretive synthesis written before the September 2026
+> review. `SYSTEM/STATUS_BRIEF.md` and the generated `CONSTRAINT_TABLE.txt` win on conflict. Its premise — that
+> Currier B consists of adaptive control programs keeping a system in a narrow viability regime — was the old Tier-0
+> sentence and is no longer Tier 0. Tier 0 was restated on 2026-09-28 (human sign-off):
+>
+> > Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line
+> > with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while
+> > carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher
+> > as published.
+>
+> The control reading is a Tier-3 working interpretation whose supports (kernel, closed loop, hazard avoidance,
+> convergence, recovery) are withdrawn (STATUS_BRIEF §3). The AZC–B decoupling evidence cited here (C454, C455,
+> Tier 1) still stands; the AZC rigidity and R/S interior/boundary readings do not (PHASE_742).
+
 ---
 
 ## The Core Finding
@@ -20,6 +34,11 @@ This separation is **not accidental**. It is **architecturally necessary**.
 ---
 
 ## Why Execution Must Be Context-Free
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The problem statement below rests on the
+old Tier-0 reading (viability regime, hazard boundaries, recovery, convergence), all withdrawn. The measured facts that
+remain relevant: B's grammar covers its own vocabulary (C124 as corrected: 69.5% of B tokens), and AZC proximity does
+not change B metrics (C454, Tier 1).
 
 ### The Problem
 
@@ -40,7 +59,7 @@ If execution depended on external context (apparatus stage, diagram position, et
 ### The Solution
 
 B is **self-contained**:
-- 479 token types form complete grammar (C124)
+- 479 token types form complete grammar (C124) [as corrected: 100% of the grammar's own vocabulary = 69.5% of B tokens]
 - All state information is local to the stream
 - Programs adapt via continuous gradients, not discrete switches
 - Context is **implicit** in the current state, not encoded externally
@@ -74,7 +93,7 @@ If orientation were coupled to execution:
 ### The Solution
 
 AZC provides **parallel spatial scaffolding**:
-- Rigid, repeatable diagram positions
+- Rigid, repeatable diagram positions ["rigid" is historical — the self-transition rigidity was retracted (C433, C436 half, PHASE_742); repeatable cross-folio scaffolds survive (C436, C431)]
 - Legality gating (C313) without prediction
 - Visual/spatial reference frame
 - Completely decoupled from B dynamics
@@ -133,7 +152,7 @@ These are NOT computational - they are **cognitive aids**.
 
 ### What AZC Provides
 
-The interleaved R-S spiral topology (C456) supports exactly this:
+The interleaved R-S spiral topology (C456) supports exactly this: [v7.26 status: C456 demoted to Tier 3 (transcription-order statistic, like retracted C433-C435)]
 
 ```
 R1 -> S1 -> R2 -> S2 -> R3 -> ...
@@ -142,6 +161,8 @@ R1 -> S1 -> R2 -> S2 -> R3 -> ...
 This alternates between:
 - **R (Radial):** Interior/stable states - "where you are"
 - **S (Sector):** Boundary/transition states - "what's changing"
+
+*[Status: C456 is Tier 2 in the registry. The R = interior / S = boundary reading is the S/R positional division C435, retracted (PHASE_742: a locus-length tautology — S codes are short label loci, R codes long ring loci). R1/R2/R3 numbering direction also varies by folio (currier_AZC.md, "Physical Ring Order"). The cognitive reading below is Tier 3.]*
 
 This is how humans naturally think about cyclic systems:
 - Stable phases (R) punctuated by transitions (S)
@@ -158,7 +179,7 @@ Each layer addresses a distinct problem:
 
 | Problem | Solution | Layer |
 |---------|----------|-------|
-| "How do I keep this stable?" | Adaptive control | B |
+| "How do I keep this stable?" | Adaptive control (Tier 3; supports withdrawn) | B |
 | "What cases need special handling?" | External registry | A |
 | "Where am I in this process?" | Spatial scaffold | AZC |
 | "How do I stay alert during waiting?" | Attention practice | HT |
@@ -188,7 +209,7 @@ This is **mature engineering**, not primitive record-keeping.
 ## What We Now Know About AZC
 
 ### AZC Is:
-- A rigid, spatially anchored orientation system
+- A rigid, spatially anchored orientation system ["rigid" historical — retracted with C433/C434, PHASE_742; "orientation" is Tier 3]
 - Designed for human cognition, not machine execution
 - Interleaved spiral topology (R-S alternation)
 - Legality-gating without prediction
@@ -197,7 +218,7 @@ This is **mature engineering**, not primitive record-keeping.
 - An apparatus diagram (C455 falsified)
 - A parameter selector for B (C454 falsified)
 - A lookup table for execution (no coupling)
-- A process description (too rigid)
+- A process description (too rigid) [this reason rested on the retracted rigidity claims; not re-adjudicated]
 
 ### The Correct Interpretation
 
@@ -215,7 +236,7 @@ The architecture separates these because:
 - Registry must be external (special case handling)
 - Attention must be anchored but independent (human endurance)
 
-This separation is **empirically confirmed** by the falsification of AZC-B coupling (C454) and supported by AZC's internal topology (C456).
+This separation is **empirically confirmed** by the falsification of AZC-B coupling (C454) and supported by AZC's internal topology (C456). [v7.26 status: C456 demoted to Tier 3 (transcription-order statistic, like retracted C433-C435)]
 
 ---
 

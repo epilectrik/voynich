@@ -14,69 +14,69 @@ F-A-007	Forbidden-Zone Attraction	F1	A	NULL	C281	in: fits_currier_a
 F-A-008	Repetition as Relational Stabilizer	F1	A	INVALIDATED	(none - artifact)	in: fits_currier_a
 F-A-009	Comparability Window	F2	A	SUCCESS	C424	in: fits_currier_a
 F-B-001	LINK Operator as Sustained Monitoring Interval	F2	B	SUPERSEDED	C366, C609, C190 | **Superseded by:** C1174	in: fits_currier_b
-F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600	in: fits_currier_b
+F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600 [status v7.25: C600 demoted to Tier 3 (5-gram-reproducible routing); C601's "hazard exclusion" rests on the withdrawn hazard layer (C783 demoted, C2060, C2081)]	in: fits_currier_b
 F-B-003	Pre-Operational Configuration via A→AZC→B Pipeline	F2	B	SUCCESS	C473, C506, C468	in: fits_currier_b
 F-B-004	Lane Hysteresis Control Model	F2	B	SUCCESS	C643, C549, C577, C608	in: fits_currier_b
 F-B-005	PP-Lane MIDDLE Discrimination	F2	B	SUCCESS	C646, C576, C642	in: fits_currier_b
-F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521	in: fits_currier_b
+F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521 [status v7.25: C645's post-hazard mechanism retracted to Tier 4 (Markov-trivial); C601 rests on the withdrawn hazard layer (C2081); C521's e→h zero is a spelling identity (PHASE_754)]	in: fits_currier_b
 F-B-007	Extensible Atom Scaling: Intensity and Duration Dimensions	F3	B	CONSISTENT	C1197, C1204, C1205, C1242, C1244	in: fits_currier_b
 F-B-008	Two-Channel Thermal Architecture	F3	B	SUCCESS	C647, C601, C1207	in: fits_currier_b
 F-B-009	Overshoot-Correct Cycling	F3	B	SUCCESS	C643, C647	in: fits_currier_b
-F-B-010	REGIME Token Profile Discrimination	F3	B	SUCCESS	C643, REGIME system	in: fits_currier_b
-F-B-012	E-Compound Cooling Taxonomy	F4	B	SUCCESS	C1197, REGIME system	in: fits_currier_b
+F-B-010	REGIME Token Profile Discrimination	F3	B	SUCCESS	C643, REGIME system [status v7.25: REGIME as 4 crisp classes and REGIME = fire degree retired (C1712, C2070)]	in: fits_currier_b
+F-B-012	E-Compound Cooling Taxonomy	F4	B	SUCCESS	C1197, REGIME system [status v7.25: REGIME = fire degree retired (C1712, C2070)]	in: fits_currier_b
 F-AZC-001	Placement Prediction Model	F4	AZC	NEGATIVE	C466-C467	in: fits_azc
-F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467	in: fits_azc
-F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
+F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467 [status v7.25: the R1<R2<R3 ordering is the serialization artifact retracted with C434 (PHASE_742)]	in: fits_azc
+F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467 [status v7.25: C433–C435 retracted (Tier 1, PHASE_742: transcriber locus-chunking artifact); C436's self-transition half retracted]	in: fits_azc
 F-AZC-003	Family Membership Classifier	F4	AZC	PARTIAL	C466	in: fits_azc
-F-AZC-004	Option-Space Compression	F2	AZC	SUCCESS	C463-C465	in: fits_azc
+F-AZC-004	Option-Space Compression	F2	AZC	SUCCESS	C463-C465 [status, registry correction: C463–C465 were never registered — candidates in phases/AZC_constraint_hunting; this fit has no registered support]	in: fits_azc
 F-AZC-006	Boundary Airlock Profile	F4	AZC	INCONCLUSIVE	(pending data)	in: fits_azc
-F-AZC-007	Position-Conditioned Escape Suppression	F2	AZC	SUCCESS	C463-C465	in: fits_azc
+F-AZC-007	Position-Conditioned Escape Suppression	F2	AZC	SUCCESS	C463-C465 [status: C463–C465 were never registered; the Zodiac R-position and S-boundary readings rest on retracted C434/C435 (PHASE_742)]	in: fits_azc
 F-AZC-008	Boundary Asymmetry (Semantic Hypothesis Test)	F3	AZC	PARTIAL	(exploratory)	in: fits_azc
 F-AZC-009	Local vs Global Reference Partition (FINAL SEMANTIC TEST)	F4	AZC	DISCARDED	(none - frame rejected)	in: fits_azc
 F-AZC-010	Cross-System Alignment by Family (CALENDRIC STRESS TEST)	F4	AZC	FALSIFIED	(strengthens null hypothesis)	in: fits_azc
 F-AZC-011	Folio Threading Analysis	F2	AZC	SUCCESS	C318, C321, C430, C436	in: fits_azc
 F-AZC-012	Orientation Basis Coverage	F2	AZC	SUCCESS	C301, C318, C326, C343	in: fits_azc
-F-AZC-013	Orientation Posture Differentiation	F2	AZC	SUCCESS	C436, C457, C458, C460	in: fits_azc
+F-AZC-013	Orientation Posture Differentiation	F2	AZC	SUCCESS	C436, C457, C458, C460 [status v7.25: C458 demoted to Tier 3 (frequency shadow); C436's self-transition half retracted (PHASE_742)]	in: fits_azc
 F-AZC-015	Windowed AZC Activation Trace	F2	AZC	SUCCESS	C440, C441-C444	in: fits_azc
-F-AZC-016	AZC->B Constraint Fit Validation	F2	AZC	SUCCESS	C468, C469, C470	in: fits_azc
+F-AZC-016	AZC->B Constraint Fit Validation	F2	AZC	SUCCESS	C468, C469, C470 [status v7.25: C470 demoted to Tier 3 — frequency carryover (partial rho 0.062 once B frequency is controlled); C470's source is this fit's Test 1]	in: fits_azc
 F-AZC-017	Zodiac Internal Stratification Test (NEGATIVE)	F4	AZC	FALSIFIED	C431, C436	in: fits_azc
 F-AZC-018	A/C Internal Stratification Test (NEGATIVE)	F4	AZC	FALSIFIED	C430, C436	in: fits_azc
-F-AZC-019	A/C Incompatibility Density Test (POSITIVE)	F2	AZC	SUCCESS	C430, C475	in: fits_azc
-F-ECR-001	Material-Class Identification	F3	GLOBAL	SUCCESS	C109-C114, C232	in: fits_global
-F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
+F-AZC-019	A/C Incompatibility Density Test (POSITIVE)	F2	AZC	SUCCESS	C430, C475 [status v7.25: C475 demoted to Tier 3 — its "illegal pairs" measured sparsity, not prohibition]	in: fits_azc
+F-ECR-001	Material-Class Identification	F3	GLOBAL	SUCCESS	C109-C114, C232 [status v7.25: C109's 5 hazard classes were imposed by keyword-matching (C2060), class level demoted (C783), zeros reduce (C2081); C113, C114 never registered]	in: fits_global
+F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216 [status v7.25: kernel superseded (C089 → C2082; C085, C103–C105 demoted to Tier 3); closed-loop C171 and hazard model C216 demoted to Tier 3; most of C086–C108 never registered]	in: fits_global
 F-ECR-003	Decision-State Semantics	F3	GLOBAL	SUCCESS	C384, C404-C405, C459-C460	in: fits_global
-F-BRU-001	Brunschwig Product Type Prediction (Blind)	F2	A	SUCCESS	C475, C476	in: fits_brunschwig
-F-BRU-002	Degree-REGIME Boundary Asymmetry	F3	B	SUCCESS	C179-C185, C458	in: fits_brunschwig
-F-BRU-003	Property-Based Generator Rejection	F2	A	NEGATIVE	C475, C476	in: fits_brunschwig
-F-BRU-004	A-Register Cluster Stability	F2	A	SUCCESS	C481	in: fits_brunschwig
-F-BRU-005	MIDDLE Hierarchical Structure	F2	A	SUCCESS	C383, C475	in: fits_brunschwig
+F-BRU-001	Brunschwig Product Type Prediction (Blind)	F2	A	SUCCESS	C475, C476 [status v7.25: C475 demoted to Tier 3 (sparsity denominator); C476 retracted (broken baseline, dead)]	in: fits_brunschwig
+F-BRU-002	Degree-REGIME Boundary Asymmetry	F3	B	SUCCESS	C179-C185, C458 [status v7.25: REGIME = fire degree retired (C1712, C2070); C458 demoted to Tier 3 (frequency shadow)]	in: fits_brunschwig
+F-BRU-003	Property-Based Generator Rejection	F2	A	NEGATIVE	C475, C476 [status v7.25: C475 demoted to Tier 3 (sparsity denominator); C476 retracted (broken baseline, dead)]	in: fits_brunschwig
+F-BRU-004	A-Register Cluster Stability	F2	A	SUCCESS	C481 [status: C481 retracted 2026-05-19 (Tier 1 — value does not reproduce, direction wrong); this fit's only support is retracted]	in: fits_brunschwig
+F-BRU-005	MIDDLE Hierarchical Structure	F2	A	SUCCESS	C383, C475 [status v7.25: C475 demoted to Tier 3 (sparsity denominator)]	in: fits_brunschwig
 F-BRU-006	Closure × Product Affordance Correlation	F3	A	SUCCESS	C233, C422 (closure/DA structure)	in: fits_brunschwig
-F-BRU-007	SLI-Constraint Substitution Model	F2	B	SUCCESS	C458, C477	in: fits_brunschwig
+F-BRU-007	SLI-Constraint Substitution Model	F2	B	SUCCESS	C458, C477 [status v7.25: C458 demoted to Tier 3 (frequency shadow); SLI is built from hazard and LINK densities, both withdrawn constructs (C2081, C1174)]	in: fits_brunschwig
 F-BRU-008	Zone Affinity Differentiation	F2	B	SUCCESS	C443 (Positional Escape Gradient)	in: fits_brunschwig
-F-BRU-009	Zone-Modality Addressing (Two-Stage Model)	F3	B	CONFIRMED	C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp)	in: fits_brunschwig
+F-BRU-009	Zone-Modality Addressing (Two-Stage Model)	F3	B	CONFIRMED	C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp) [status v7.25: C458 demoted to Tier 3 (frequency shadow); REGIME as crisp classes retired (C1712, C2070)]	in: fits_brunschwig
 F-BRU-010	Folio Position Procedural Phase Mapping	F3	B	PARTIAL	C676 (Morphological Parameterization Trajectory), C668 (Lane Balance Trajectory)	in: fits_brunschwig
 F-BRU-011	Three-Tier MIDDLE Operational Structure	F2	B	CONFIRMED	C423 (MIDDLE Census), F-BRU-005 (MIDDLE Hierarchy)	in: fits_brunschwig
 F-BRU-012	Preparation MIDDLE Operation Mapping	F3	B	SUPPORTED	F-BRU-011 (Three-Tier Structure)	in: fits_brunschwig
 F-BRU-013	Extended Operation MIDDLE Differentiation (ke vs kch)	F3	B	SUPPORTED	F-BRU-011 (Three-Tier Structure), F-BRU-012 (Preparation Mapping)	in: fits_brunschwig
 F-BRU-014	Vowel Primitive Suffix Saturation	F2	GLOBAL	CONFIRMED	C906 (Vowel Primitive Suffix Saturation), C267 (Compositional Morphology), C510-C513 (Sub-Component Grammar)	in: fits_brunschwig
-F-BRU-015	Procedural Dimension Independence	F2	B	CONFIRMED	F-BRU-011 (Three-Tier Structure), BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS	in: fits_brunschwig
-F-BRU-016	REGIME Procedural Differentiation	F2	B	CONFIRMED	C494 (REGIME_4 Precision Axis), F-BRU-015 (Procedural Independence)	in: fits_brunschwig
-F-BRU-017	REGIME_4 Sustained Equilibration Mechanism	F3	B	SUPPORTED	C494 (REGIME_4 Precision Axis), F-BRU-013 (ke vs kch)	in: fits_brunschwig
-F-BRU-018	Root Illustration Processing Correlation (Tier 4 External Anchor)	F4	A	CONFIRMED	C883 (Handling Distribution Alignment), F-BRU-012 (Preparation Mapping)	in: fits_brunschwig
-F-BRU-019	Delicate Plant Material as Unmarked Default	F3	A	SUPPORTED	F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence)	in: fits_brunschwig
-F-BRU-020	Output Category Vocabulary Signatures	F4	B	CONFIRMED	F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis)	in: fits_brunschwig
+F-BRU-015	Procedural Dimension Independence	F2	B	CONFIRMED	F-BRU-011 (Three-Tier Structure), BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS [status v7.25: phase label only; the closed-loop reading is Tier 3 (C171, all four legs withdrawn)]	in: fits_brunschwig
+F-BRU-016	REGIME Procedural Differentiation	F2	B	CONFIRMED	C494 (REGIME_4 Precision Axis), F-BRU-015 (Procedural Independence) [status v7.25: REGIME as 4 crisp classes retired (C1712, C2070)]	in: fits_brunschwig
+F-BRU-017	REGIME_4 Sustained Equilibration Mechanism	F3	B	SUPPORTED	C494 (REGIME_4 Precision Axis), F-BRU-013 (ke vs kch) [status v7.25: REGIME_4 = fire degree 4 rests on REGIME = fire degree, retired (C1712, C2070)]	in: fits_brunschwig
+F-BRU-018	Root Illustration Processing Correlation (Tier 4 External Anchor)	F4	A	CONFIRMED	C883 (Handling Distribution Alignment), F-BRU-012 (Preparation Mapping) [status: C883 is Tier 3 (registered as speculative, not demoted)]	in: fits_brunschwig
+F-BRU-019	Delicate Plant Material as Unmarked Default	F3	A	SUPPORTED	F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence) [status: C884 is Tier 3 (registered as speculative, not demoted)]	in: fits_brunschwig
+F-BRU-020	Output Category Vocabulary Signatures	F4	B	CONFIRMED	F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis) [status v7.25: REGIME as crisp classes and REGIME = fire degree / product type retired (C1712, C2070)]	in: fits_brunschwig
 F-BRU-021	Controlled Variable Identification (Temperature / Thermal State)	F3	B	SUCCESS	C976 (6-State Topology), C978 (Hub-and-Spoke), C979 (REGIME Modulates Weights), C980 (Free Variation Envelope)	in: fits_brunschwig
-F-BRU-022	Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)	F3	B	NEGATIVE	C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing)	in: fits_brunschwig
-F-BRU-023	Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)	F4	B	THERMODYNAMIC_COHERENCE	C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers)	in: fits_brunschwig
+F-BRU-022	Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)	F3	B	NEGATIVE	C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing) [status: C883 is Tier 3 (registered as speculative, not demoted)]	in: fits_brunschwig
+F-BRU-023	Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)	F4	B	THERMODYNAMIC_COHERENCE	C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers) [status v7.25: C783 demoted to Tier 3; C109's 5 classes imposed by keyword-matching (C2060); zero bigrams reduce (C2081) — hazard layer withdrawn]	in: fits_brunschwig
 F-BRU-024	PP MIDDLE Extension Validation (NEGATIVE)	F4	B	EXTENSION_UNSUPPORTED	C498 (RI/PP Bifurcation), C267 (Compositional Morphology), C995-C1000 (Affordance Bins)	in: fits_brunschwig
 F-BRU-025	Gloss Structural Validation (Adversarial + Distributional)	F4	B	GLOSS_NOT_CONSTRAINED	(negative — forbidden transitions too few for category-level adversarial test; distributional context weakly aligns)	in: fits_brunschwig
-F-BRU-026	Gloss Adversarial Validation (PREFIX-Domain + Mantel)	F4	B	DOMAIN_VALIDATED_MANTEL_CIRCULAR	C911 (PREFIX-MIDDLE Selectivity), C601 (QO Hazard Exclusion), C997 (Safety Buffers), C995 (Affordance Bins)	in: fits_brunschwig
-F-BRU-027	Variance Architecture Alignment (Process-Constrained / Output-Free)	F3	B	VARIANCE_ARCHITECTURE_ALIGNED	C458 (design asymmetry: hazard clamped, recovery free), C980 (66.3% free variation envelope)	in: fits_brunschwig
-F-BRU-028	Output Parameter REGIME Gradient Mapping (GRADIENT INVERTED)	F3	B	GRADIENT_INVERTED	C458 (design asymmetry), C980 (free variation envelope), C1035 (irreducible residual), C494 (REGIME_4 precision axis)	in: fits_brunschwig
-F-BRU-029	Semantic Boundary Probe (Three-Path)	F4	B	PARTIAL_EXTENSION	C997 (safety buffer architecture), F-BRU-023 (thermodynamic coherence), C494 (REGIME_4 precision axis)	in: fits_brunschwig
+F-BRU-026	Gloss Adversarial Validation (PREFIX-Domain + Mantel)	F4	B	DOMAIN_VALIDATED_MANTEL_CIRCULAR	C911 (PREFIX-MIDDLE Selectivity), C601 (QO Hazard Exclusion), C997 (Safety Buffers) [status v7.25: C601/C997 hazard readings rest on the withdrawn hazard layer (C783 demoted, C2060, C2081)], C995 (Affordance Bins)	in: fits_brunschwig
+F-BRU-027	Variance Architecture Alignment (Process-Constrained / Output-Free)	F3	B	VARIANCE_ARCHITECTURE_ALIGNED	C458 (design asymmetry: hazard clamped, recovery free) [status v7.25: C458 demoted to Tier 3 — frequency shadow], C980 (66.3% free variation envelope)	in: fits_brunschwig
+F-BRU-028	Output Parameter REGIME Gradient Mapping (GRADIENT INVERTED)	F3	B	GRADIENT_INVERTED	C458 (design asymmetry) [status v7.25: demoted to Tier 3 — frequency shadow], C980 (free variation envelope), C1035 (irreducible residual), C494 (REGIME_4 precision axis)	in: fits_brunschwig
+F-BRU-029	Semantic Boundary Probe (Three-Path)	F4	B	PARTIAL_EXTENSION	C997 (safety buffer architecture), F-BRU-023 (thermodynamic coherence), C494 (REGIME_4 precision axis) [status v7.25: C997 and F-BRU-023 rest on the withdrawn hazard layer (C783 demoted, C2060, C2081)]	in: fits_brunschwig
 F-BRU-030	MIDPROCESS Absence Characterization	F3	B	MIDPROCESS_STRUCTURALLY_ABSENT	C1056 (MIDPROCESS structural absence), F-BRU-029 (Path C closure)	in: fits_brunschwig
 F-BRU-031	Modern Distillation Dimensional Comparison	F3	B	MODERN_CLOSER_TO_VOYNICH	F-BRU-030 (MIDPROCESS absence characterization), C1056 (MIDPROCESS structural absence)	in: fits_brunschwig
-F-BRU-032	KE-Family Parametric Differentiation	F2	B	PARAMETRIC_DIFFERENTIATION	C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning)	in: fits_brunschwig
+F-BRU-032	KE-Family Parametric Differentiation	F2	B	PARAMETRIC_DIFFERENTIATION	C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning) [status v7.25: C1225 rescoped — segmentation artifact of the pre-C1957 parser; "e-depth is a parametric axis" struck (PHASE_758)]	in: fits_brunschwig
 F-BRU-033	Iterative Extraction Cycling Within Paragraphs	F3	B	ITERATIVE_CYCLING_SUPPORTED	C1227 (FL cross-line reset clustering), C1228 (PREFIX channel switching), C1229 (alternating suffix modes)	in: fits_brunschwig
 F-BRU-034	Extraction Cycling Mode Differentiation	F3	B	CYCLING_MODES_FUNCTIONALLY_GROUNDED	C1230 (Mode MIDDLE differentiation), C1231 (Universal suffix modes), C1232 (Tail product signatures)	in: fits_brunschwig
-F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes), C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility), C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry), C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)	in: fits_rupescissa
+F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes) [5 classes imposed by keyword-matching, C2060; zero bigrams reduce, C2081], C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility) [demoted to Tier 3 — sparsity denominator], C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry) [demoted to Tier 3 — frequency shadow], C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)	in: fits_rupescissa

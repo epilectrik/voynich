@@ -96,7 +96,7 @@ Some MIDDLEs virtually require ch-form; others permit sh-form.
 
 ## Cross-Reference with Material Classes
 
-From CCM-1, ch-/sh- operate on M-A class (mobile, distinct) materials.
+From CCM-1, ch-/sh- operate on M-A class (mobile, distinct) materials. [v7.25: M-A…M-D were inferred from the withdrawn hazard classes (C2060); the PREFIX → material-class reading was revised 2026-01-11]
 
 The sister distinction adds a sub-dimension:
 
@@ -148,7 +148,7 @@ If Section H materials are more actively used in operations, and those operation
 - H = precision-critical materials → ch-preferred
 - Other sections = more tolerance → sh-acceptable
 
-This aligns with the hazard topology: PHASE_ORDERING (41%) and COMPOSITION_JUMP (24%) are the dominant hazards. Precision matters most for mobile, distinct materials in active operations.
+This aligns with the hazard topology: PHASE_ORDERING (41%) and COMPOSITION_JUMP (24%) are the dominant hazards. [v7.25: hazard classes withdrawn — imposed taxonomy, C2060; zeros reduce to composition, C2081] Precision matters most for mobile, distinct materials in active operations.
 
 ---
 

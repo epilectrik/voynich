@@ -1,8 +1,12 @@
 # ECR-1: Material-Class Identification
 
+**Status (v7.25, 2026-09-28):** The primary evidence here — the 5 hazard classes and their percentages — is withdrawn: the taxonomy was imposed by keyword matching, not discovered (C2060), the class level is demoted (C783) and the forbidden-transition zeros reduce to composition (C2081). The hazard-derived class count and the "High Confidence" findings 1–3 are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** ACTIVE | **Date:** 2026-01-10
 
 > **Entity-level identification (specific plants, machines, substances) is probably irrecoverable by design and is not the goal of this analysis.**
+>
+> [v7.25: "irrecoverable by design" is retired closure language (strategic review §5); scoped to internal structural analysis, the identification question stays open.]
 
 ---
 
@@ -14,7 +18,7 @@ Infer the minimal set of **material behavior classes** required to satisfy all f
 
 ## Evidence Summary
 
-### From Hazard Topology (C109-C114)
+### From Hazard Topology (C109-C114) [hazard-class layer withdrawn — C109 scoped, C2060; C113–C114 not in the current registry]
 
 | Hazard Class | % | Material Class Implication |
 |--------------|---|---------------------------|
@@ -121,7 +125,7 @@ The 2-dimensional classification structure (ch/sh × ok/ot) suggests 4 fundament
 
 ## Findings
 
-### Established (High Confidence)
+### Established (High Confidence) [confidence label retired v7.25: items 1–3 rest on the withdrawn hazard classes]
 
 1. **At least 3-4 material behavior classes exist**
 2. **Classes differ along two primary dimensions:**
@@ -145,7 +149,7 @@ The 2-dimensional classification structure (ch/sh × ok/ot) suggests 4 fundament
 
 | Constraint | How Satisfied |
 |------------|---------------|
-| C109 (5 hazard classes) | Material classes map to hazard exposure |
+| C109 (5 hazard classes; taxonomy struck, C2060; C109 scoped) | Material classes map to hazard exposure |
 | C232 (section-conditioned) | Classes instantiated differently per section |
 | C235 (8 markers) | 2 equivalence pairs = 2 dimensions |
 | F-A-007 (universal preference) | Cross-domain classes dominate |

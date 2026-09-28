@@ -1,5 +1,7 @@
 # Puff-Voynich Shared Curriculum Hypothesis Test
 
+**Status (v7.25, 2026-09-28):** The Puff–Voynich "83:83" shared-curriculum reading is retired as evidence (strategic review §5). The Voynich side of Test 4's capability split also rests on withdrawn constructs — hazard doctrine (5 classes imposed, C2060; zeros reduce to composition, C2081), recovery rules (frequency shadow, C458), k/h/e fire control (C089 superseded by C2082) — and Test 2 uses REGIME as 4 crisp classes (retired, C1712). The PASS verdicts and "STRONG evidence" are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-13 | **Status:** PARTIAL (3/5 tests complete) | **Tier:** 3
 
 ---
@@ -109,12 +111,12 @@ Both show **FRONT-LOADED SIMPLE** pedagogical pattern: start with simpler materi
 
 | Capability | Puff | Voynich | Complementary? |
 |------------|------|---------|----------------|
-| Material naming | ✅ | ❌ (C171) | Yes |
+| Material naming | ✅ | ❌ (C171, demoted to Tier 3) | Yes |
 | Therapeutic indications | ✅ | ❌ | Yes |
 | Distillation methods | ❌ (except Ch.83) | ✅ (49 classes) | Yes |
-| Hazard doctrine | ❌ | ✅ (17 transitions, 5 classes) | Yes |
-| Recovery rules | ❌ | ✅ (89% reversible) | Yes |
-| Fire degree control | ❌ | ✅ (k/h/e kernel) | Yes |
+| Hazard doctrine | ❌ | ✅ (17 transitions, 5 classes) [withdrawn: C2060, C2081] | Yes |
+| Recovery rules | ❌ | ✅ (89% reversible) [withdrawn: recovery architecture, C458] | Yes |
+| Fire degree control | ❌ | ✅ (k/h/e kernel) [withdrawn: kernel superseded, C2082] | Yes |
 | Sensory tests | Unclear | ❌ (HT non-operational) | Partial |
 | Equipment specs | ❌ | Partial | Partial |
 
@@ -166,7 +168,7 @@ Both show **FRONT-LOADED SIMPLE** pedagogical pattern: start with simpler materi
 
 ## What This Establishes
 
-### Confirmed (All Tests PASS)
+### Confirmed (All Tests PASS) [v7.25: "confirmed" retired — the Puff–Voynich reading is retired as evidence; see banner]
 1. **83 is not canonical** - Only Puff and Voynich have this unit count among 11+ surveyed texts
 2. **Clean complementary split** - Puff has WHAT/WHY (materials, indications), Voynich has HOW (methods, hazards, recovery)
 3. **Unique pattern** - Control texts (Macer, Circa Instans, Physica) do not show same complementarity

@@ -4,7 +4,8 @@
 Detects drift between the constraint registry and the documents that consume it:
 
 1. Status of every constraint number, from the GENERATED table (authoritative) plus INDEX.md:
-   LIVE (Tier 0-2), DEMOTED (Tier 3/4 or marked DEMOTED), TIER1 (falsified / invalidated),
+   LIVE (Tier 0-2), DEMOTED (Tier 3/4 reached by demotion), SPECULATIVE (Tier 3/4 from the start; not
+   flagged), TIER1 (falsified / invalidated),
    DEAD (registered in INDEX.md but dropped from the table: struck without a live tier, or
    STATUS:RETRACTED|SUPERSEDED), UNKNOWN (cited but never registered).
 2. Citations of DEMOTED / DEAD / UNKNOWN constraints in living documents that the expert agents
@@ -47,8 +48,19 @@ TARGET_GLOBS = [
     'context/CORE/*.md',
     'context/STRUCTURAL_CONTRACTS/*.yaml',
     'context/SPECULATIVE/*.md',
+    # added 2026-09-28 (v7.26): entry-level and reference docs that were not scanned before
+    'README.md',
+    'WHAT_WE_CLAIM.md',
+    'context/SYSTEM/STATUS_BRIEF.md',
+    'context/SYSTEM/RESEARCH_AGENDA.md',
+    'context/ARCHITECTURE/*.md',
+    'context/OPERATIONS/*.md',
+    'context/METRICS/*.md',
+    'context/MAPS/*.md',
+    'context/TERMINOLOGY/*.md',
 ]
-ANNOTATION = re.compile(r'retract|demot|supersed|withdrawn|struck|~~|DEAD|invalidat|refuted|correction|scoped|historical|never frame', re.IGNORECASE)
+ANNOTATION = re.compile(r'retract|demot|supersed|withdrawn|struck|~~|DEAD|invalidat|refuted|correction|scoped|historical|'
+                        r'never frame|retired|re-tiered|Tier[ -]?3', re.IGNORECASE)
 CITE = re.compile(r'(?<![A-Za-z0-9])C(\d{2,4})(?:\s*[–-]\s*C?(\d{2,4}))?(?![0-9])')
 CLOSURE = re.compile(
     r'ANALYSIS CLOSED|Structural work is DONE|structurally closed system|Characterization program COMPLETE|'
@@ -58,7 +70,26 @@ CLOSURE = re.compile(
 ANNOT_WINDOW = 160  # characters either side of a citation searched for an annotation
 
 
+DEMOTION_MARK = re.compile(r'\bDEMOTED\b|Tier\s*[0-2]\s*→\s*[34]|~~[0-2]~~|Registry cascade', re.IGNORECASE)
+
+
+def demoted_in_index():
+    """Numbers whose INDEX tier cell records a demotion ('~~2~~ 3'). A borderline '2/3' cell is not a demotion."""
+    out = set()
+    row = re.compile(r'^\|[ \t]*(?:~~)?[ \t]*\*{0,2}(\d{2,4})(?:\.[a-z])?\*{0,2}[ \t]*(?:~~)?[ \t]*\|(.*?)\|([^|\n]*)\|',
+                     re.MULTILINE)
+    for m in row.finditer(INDEX.read_text(encoding='utf-8')):
+        cell = m.group(3)
+        if '~~' in cell:
+            out.add(int(m.group(1)))
+    return out
+
+
 def load_table():
+    """LIVE (Tier 0/2), TIER1, DEMOTED (Tier 3/4 reached by demotion), SPECULATIVE (Tier 3/4 from the start;
+    not flagged — a citation of a speculative row is not drift). Fixed 2026-09-28 (v7.26): a Tier 0-2 row that
+    merely mentions 'DEMOTED' in its text (e.g. a demoted sub-leg) is LIVE, not DEMOTED."""
+    demoted = demoted_in_index()
     status = {}
     for line in TABLE.read_text(encoding='utf-8').splitlines():
         parts = line.split('\t')
@@ -70,8 +101,8 @@ def load_table():
         except ValueError:
             continue
         tier, desc = parts[2].strip(), parts[1]
-        if tier in ('3', '4') or re.search(r'\bDEMOTED\b', desc):
-            status.setdefault(n, 'DEMOTED')
+        if tier in ('3', '4'):
+            status.setdefault(n, 'DEMOTED' if (n in demoted or DEMOTION_MARK.search(desc)) else 'SPECULATIVE')
         elif tier == '1':
             status.setdefault(n, 'TIER1')
         else:
@@ -134,7 +165,9 @@ def scan(table_status, registered):
                     if n < 70:                # below the registry's numbering
                         continue
                     st = classify(n, table_status, registered)
-                    if st in ('LIVE', 'TIER1'):
+                    if st in ('LIVE', 'TIER1', 'SPECULATIVE'):
+                        continue
+                    if st == 'UNKNOWN' and a < n < b:   # unregistered interior of a cited range (e.g. C109-C114)
                         continue
                     start = offsets[i - 1] + max(0, m.start() - ANNOT_WINDOW)
                     end = offsets[i - 1] + min(len(ln), m.end() + ANNOT_WINDOW)
@@ -164,7 +197,8 @@ def main():
     out.append(f"# Registry Integrity Report\n\n**Generated:** {date.today().isoformat()} by "
                f"`scripts/registry_integrity_check.py` (regenerate after every registry change).\n")
     out.append(f"**Generated table:** LIVE (Tier 0/2) {counts['LIVE']}, TIER1 {counts['TIER1']}, "
-               f"DEMOTED (Tier 3/4) {counts['DEMOTED']}; registered numbers in INDEX.md: {len(registered)}; "
+               f"DEMOTED (Tier 3/4) {counts['DEMOTED']}, SPECULATIVE (Tier 3/4 from the start, not flagged) "
+               f"{counts['SPECULATIVE']}; registered numbers in INDEX.md: {len(registered)}; "
                f"dead (registered, not in table): {len(registered - set(table_status))}.\n")
     out.append(f"**Citations of non-live constraints in living docs:** {len(findings)} "
                f"({len(unannotated)} without a nearby annotation).  "

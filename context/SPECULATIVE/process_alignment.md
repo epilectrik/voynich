@@ -1,5 +1,7 @@
 # Process Alignment (Tier 3)
 
+**Status (v7.25, 2026-09-28):** The apparatus match rests on withdrawn supports — closed-loop control (C171, Tier 3, all four legs withdrawn), the "uniquely compatible (100%)" reflux framing (C157, Tier 3; retired, strategic review §5), the 17 forbidden transitions (zeros reduce to composition, C2081) and the recovery/reversibility reading (C458 demoted). The STRONG alignments and "SYSTEMATIC_MATCH" are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Status:** SPECULATIVE | **Tier:** 3
 
 ---
@@ -37,7 +39,7 @@ Three process classes survive structural compatibility:
 2. **Volatile Aromatic Extraction**
 3. **Circulatory Thermal Conditioning**
 
-Common signature: CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL
+Common signature: CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL [v7.25: closed-loop control is a Tier 3 working interpretation with its supports withdrawn, C171]
 
 ---
 
@@ -50,8 +52,8 @@ See [brunschwig_comparison.md](brunschwig_comparison.md) for full 6-axis compari
 | Voynich Feature | Historical Match | Alignment |
 |-----------------|------------------|-----------|
 | 49 instruction classes | Brunschwig's 4 degrees × 10 methods = 40 | STRONG |
-| 17 forbidden transitions | "Fourth degree coerces—reject it" | STRONG |
-| 89% reversibility | "may happen no more than twice" | STRONG |
+| 17 forbidden transitions [withdrawn, C2081] | "Fourth degree coerces—reject it" | STRONG |
+| 89% reversibility [recovery layer withdrawn, C458] | "may happen no more than twice" | STRONG |
 | Material-apparatus separation | Three-part disjoint structure | STRONG |
 | Sensory hierarchy | Finger test, smell test, thumbnail test | STRONG |
 | Expert audience | Brunschwig targets novices (INFORMATIVE MISMATCH) | DIFFERENTIATED |

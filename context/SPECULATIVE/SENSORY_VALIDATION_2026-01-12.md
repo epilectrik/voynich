@@ -1,5 +1,7 @@
 # Expert Validation: Sensory Affordance Analysis
 
+**Status (v7.25, 2026-09-28):** The validated framework (sensory_affordance_mapping.md) maps senses onto withdrawn structures — the 5 hazard classes (imposed, C2060; class level demoted, C783; C109 scoped, C2081) — and the eliminative argument uses "95.7% atomic incompatibility" (C475, demoted: the percentage measured sparsity, not prohibition). The HIGH confidence and "maximum recoverable inference" / "as far as internal analysis can go" statements are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-12 | **Status:** VALIDATED | **Tier:** 3 (HIGH confidence)
 
 ---
@@ -18,7 +20,7 @@ In fact, several Tier-2 constraints **demand** exactly this outcome.
 |------------|-------------|--------|
 | C404, C405 | HT is non-operational | COMPLIANT - HT scales vigilance, not modality choice |
 | C287-C290, C469 | Categorical resolution, no scalars | COMPLIANT - categorical sensing, not measurement |
-| C109, C110 | Hazard topology | COMPLIANT - sensory-detectable failures |
+| C109, C110 | Hazard topology | COMPLIANT - sensory-detectable failures [hazard classes since withdrawn: C2060; C109 scoped, C2081] |
 | C477 | HT-tail coupling | COMPLIANT - r=0.504 locks in olfactory inference |
 
 ---
@@ -31,7 +33,7 @@ In fact, several Tier-2 constraints **demand** exactly this outcome.
 
 Given:
 - ~1,187 MIDDLE discriminators
-- 95.7% atomic incompatibility
+- 95.7% atomic incompatibility [C475 demoted: sparsity denominator, not prohibition]
 - No magnitudes
 - No instruments
 - No semantic labels
@@ -81,7 +83,7 @@ We can now say:
 - *"This kind of threshold is sensory-olfactory, not visual."*
 - Without ever saying *what* is smelled.
 
-**That is exactly the maximum recoverable inference under our rules.**
+**That is exactly the maximum recoverable inference under our rules.** [v7.25: retired closure language; the threshold table above uses the withdrawn hazard classes — see status banner]
 
 ---
 
@@ -125,7 +127,7 @@ It meshes with:
 
 > **We are no longer merely interpreting the manuscript - we are reconstructing the human sensory contract it was written for.**
 
-That is about as far as internal analysis can go - and we got there cleanly.
+That is about as far as internal analysis can go - and we got there cleanly. [v7.25: retired closure language; see status banner]
 
 ---
 

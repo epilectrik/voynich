@@ -1,5 +1,7 @@
 # Component-to-Class Mapping: Prefix Analysis (CCM-1)
 
+**Status (v7.25, 2026-09-28):** The target classes M-A…M-D come from ECR-1, which inferred them from the 5 hazard classes — a taxonomy imposed by keyword matching (C2060), demoted at class level (C783), whose zeros reduce to composition (C2081) — and the "hazard recovery" reading of escape rates uses the withdrawn recovery architecture (C458). The PREFIX → material-class reading was itself revised on 2026-01-11 to control-flow participation (apparatus_centric_semantics.md). The mapping is historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** IN PROGRESS | **Date:** 2026-01-10
 
 > **Goal:** Map the 8 Currier A prefix families to material classes (M-A/B/C/D) using B-context behavior.

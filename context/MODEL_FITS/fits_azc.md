@@ -5,6 +5,8 @@
 
 **Version:** 4.3 | **Last Updated:** 2026-01-11 | **Fit Count:** 15 | **Status:** CLOSED
 
+> **Status note (v7.25, 2026-09-28):** "CLOSED" and the closure statements below are retired language (strategic review §5). Several fits rest on constraints that were later retracted, demoted or never registered: C433–C435 and the self-transition half of C436 (retracted, PHASE_742: transcriber locus-chunking artifact), C463–C465 (candidates from `phases/AZC_constraint_hunting/` that were never registered), C458, C470 and C475 (demoted to Tier 3). See the per-fit status notes and `SYSTEM/STATUS_BRIEF.md` §3.
+
 ---
 
 ## Placement Coding Fits
@@ -53,7 +55,9 @@ Does not test whether placement has POSITIONAL meaning (see F-AZC-002).
 
 ### F-AZC-002 - Zodiac Positional Grammar
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C467
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C467 [status v7.25: the R1<R2<R3 ordering is the serialization artifact retracted with C434 (PHASE_742)]
+
+> **STATUS (v7.25, 2026-09-28) — rests on a retracted construct.** PHASE_742 found that R1/R2/R3 are concentric rings recorded by the transcriber as depth-sorted contiguous blocks (10 of 12 zodiac folios ascending, 2 descending), so forward ordering and "placement predicts line position" are forced by the serialization; C434 (R-series forward ordering) was retracted to Tier 1 and C435 (S/R division) with it. The "positional grammar" conclusion below does not stand. C467 (the two families use mutually exclusive placement codes) is order-independent and stands. Kept for traceability.
 
 #### Question
 Is R1→R2→R3 ordering a true grammar or just labeling?
@@ -102,7 +106,9 @@ Does not explain WHY positions are ordered this way. Does not establish whether 
 
 ### F-AZC-005 - A/C Positional Grammar Test (DECISIVE)
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C430-C436, C467
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C430-C436, C467 [status v7.25: C433–C435 retracted (Tier 1, PHASE_742: transcriber locus-chunking artifact); C436's self-transition half retracted]
+
+> **STATUS (v7.25, 2026-09-28) — rests on retracted constructs.** The "one unified positional grammar" conclusion compares A/C's C<P<R<S against the Zodiac R1<R2<R3<R4 ordering, which PHASE_742 retracted as a serialization artifact (C434; also C433 block grammar, C435 S/R division, and C436's ≥98% self-transition half). PHASE_742's discriminator is whether a statistic depends on how the transcriber chunked tokens into loci; the A/C mean-position statistic is of that kind and has not been re-tested against it. P is Currier A paragraph text on AZC folios, not a diagram position. "DECISIVE" should not be relied on. C430, C431, C432 (corrected), C436's cross-folio half and C467 stand.
 
 #### Question
 Does A/C also show positional grammar like Zodiac?
@@ -192,7 +198,9 @@ Confirmatory only. Does not identify the "tuning parameters" that differentiate 
 
 ### F-AZC-004 - Option-Space Compression
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C463-C465
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C463-C465 [status, registry correction: C463–C465 were never registered — candidates in phases/AZC_constraint_hunting; this fit has no registered support]
+
+> **Status note (v7.25, 2026-09-28):** C463–C465 were proposed as constraint candidates in `phases/AZC_constraint_hunting/PHASE_SUMMARY.md` (pending expert review) and never entered the registry; the registry has no rows C463–C465. The measurements below are unregistered observations. "Escape" means qo/ct prefix frequency; the escape/recovery reading of qo is withdrawn with the hazard layer (C2081).
 
 #### Question
 By how much does AZC reduce the operator's available option space compared to Currier A?
@@ -298,7 +306,9 @@ Cannot distinguish between "no airlock effect" and "insufficient transitions to 
 
 ### F-AZC-007 - Position-Conditioned Escape Suppression
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C463-C465
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C463-C465 [status: C463–C465 were never registered; the Zodiac R-position and S-boundary readings rest on retracted C434/C435 (PHASE_742)]
+
+> **Status note (v7.25, 2026-09-28):** C463–C465 are unregistered candidates (see F-AZC-004). The Zodiac R1-early / later-positions reading uses the R-series ordering and the S/R division retracted with C434 and C435 (PHASE_742). In A/C, P is Currier A paragraph text on AZC folios, not a diagram position, so "boundary (C, S) vs interior (P, R)" mixes text and diagram placements. The per-placement escape-prefix rates are observations; the "transition stabilizer" reading does not stand on registered support.
 
 #### Question
 Is escape suppression uniform or position-conditioned?
@@ -653,7 +663,9 @@ Does not identify which A-types are missing and why.
 
 ### F-AZC-013 - Orientation Posture Differentiation
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C436, C457, C458, C460
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C436, C457, C458, C460 [status v7.25: C458 demoted to Tier 3 (frequency shadow); C436's self-transition half retracted (PHASE_742)]
+
+> **Status note (v7.25, 2026-09-28):** C458 (execution clamp vs recovery freedom) is demoted to Tier 3 as a frequency shadow; C436 is split (cross-folio half stands, ≥98% self-transition half retracted); the interpretation below also cites C430–C436 (C433–C435 retracted) and C463–C465 (never registered). The per-folio prefix-rate variance is a descriptive measurement; "orientation postures" and "ways of not making a mistake" are interpretation that leans on the withdrawn escape/hazard reading.
 
 #### Question
 Do different AZC folios correspond to different HT decay profiles?
@@ -700,8 +712,8 @@ Key findings:
 4. **17 clusters** - high posture differentiation
 
 This ties together:
-- AZC grammar (C430-C436)
-- Escape suppression (C463-C465)
+- AZC grammar (C430-C436) [C433–C435 retracted, PHASE_742]
+- Escape suppression (C463-C465) [never registered]
 - HT behavior (C457, C460)
 - Zodiac vs non-Zodiac distinction
 
@@ -801,7 +813,9 @@ Does not distinguish between:
 
 ### F-AZC-016 - AZC->B Constraint Fit Validation
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C468, C469, C470
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C468, C469, C470 [status v7.25: C470 demoted to Tier 3 — frequency carryover (partial rho 0.062 once B frequency is controlled); C470's source is this fit's Test 1]
+
+> **STATUS (v7.25, 2026-09-28) — the decisive leg is demoted.** Test 1 (MIDDLE restriction → B folio spread, "12.7×") is the finding registered as C470, demoted 2→3 in the PHASE_748 inheritance check: B folio spread is 0.996 Spearman-correlated with B frequency, and AZC restriction → B restriction collapses from raw rho 0.597 to partial rho 0.062 once frequency is controlled. Test 3 uses qo/ct "escape" rates, whose recovery reading is withdrawn with the hazard layer (C2081). "Pipeline causality validated" and "causally connected control system" therefore do not follow from this fit; the control-system reading is Tier 3 (C120, C171). C468 and C469 are live. Kept for traceability.
 
 #### Question
 Do AZC constraints actually apply in Currier B, or is vocabulary overlap coincidental?
@@ -1010,7 +1024,9 @@ Product-associated MIDDLEs are uniformly distributed across all 17 A/C folios. T
 
 ### F-AZC-019 - A/C Incompatibility Density Test (POSITIVE)
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C430, C475
+**Tier:** F2 | **Result:** SUCCESS | **Supports:** C430, C475 [status v7.25: C475 demoted to Tier 3 — its "illegal pairs" measured sparsity, not prohibition]
+
+> **STATUS (v7.25, 2026-09-28) — rests on a demoted constraint.** The density metric counts MIDDLE pairs as "illegal" from C475's co-occurrence matrix (the global baseline 0.9568 is C475's original 95.7%). C475 was demoted to Tier 3 in the 2026-05-19 audit: the unobserved-pair count is dominated by combinatorial sparsity (the largest expected count among the "illegal" pairs is 2.51), so the metric inherits C475's sparsity-denominator problem. The A/C vs Zodiac difference has not been re-tested with a sparsity-aware denominator; "exclusion burden" should not be relied on. C430 stands.
 
 #### Question
 Are A/C AZC folios activating more densely incompatible subsets of the MIDDLE space than Zodiac folios?
@@ -1062,6 +1078,8 @@ A/C folios activate significantly more densely incompatible MIDDLE subsets than 
 
 ## Summary
 
+> **Status note (v7.25, 2026-09-28):** F-AZC-002 and F-AZC-005 rest on the R-series ordering retracted with C434 (PHASE_742); F-AZC-004 and F-AZC-007 on C463–C465, which were never registered; F-AZC-016's decisive leg is demoted C470; F-AZC-019 rests on demoted C475. The rows and implications below are kept as written for traceability.
+
 | Fit | Tier | Result | Key Finding |
 |-----|------|--------|-------------|
 | F-AZC-001 | F4 | NEGATIVE | Morphology does not predict placement |
@@ -1110,6 +1128,8 @@ This resolves the "why so many AZC folios?" question:
 ---
 
 ## Component Closure Statement
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** Closure language is retired (strategic review §5), and the structural closure rests on the R1<R2<R3 ordering retracted with C434 (PHASE_742). The semantic tests (F-AZC-008 to F-AZC-010) remain valid negative results.
 
 **AZC is FULLY CLOSED: STRUCTURALLY, SEMANTICALLY, AND FUNCTIONALLY.**
 
@@ -1175,6 +1195,8 @@ These questions are **parked, not pursued**. AZC's structure and function are un
 ---
 
 ## Operational Synthesis (Tier 3)
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** The C→R1→R2→R3→S workflow progression and the "S = locked boundary" reading rest on the R-series ordering and S/R division retracted as transcription artifacts (C434, C435; PHASE_742); the "intervention legality" reading of escape rates rests on the withdrawn hazard/recovery layer (C2081).
 
 The structural findings (Tier 2) support a coherent operational interpretation of how AZC functions within the complete system.
 

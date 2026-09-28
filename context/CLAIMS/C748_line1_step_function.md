@@ -1,6 +1,6 @@
 # C748: Line-1 Step Function
 
-**Tier:** 0 — FROZEN FACT
+**Tier:** 2 (was 0; re-tiered 2026-09-28 — Tier 0 holds only the restated conclusion, C121/C124) — FROZEN FACT
 **Phase:** B_LINE_POSITION_HT
 **Scope:** Currier B, all folios
 

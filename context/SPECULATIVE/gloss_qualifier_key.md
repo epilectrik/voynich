@@ -1,5 +1,7 @@
 # Structural Gloss Qualifier Key
 
+**Status (v7.25, 2026-09-28):** Several gloss words borrow from withdrawn readings — the k/h/e kernel roles (C103–C105 Tier 3; C089 superseded by C2082), hazard watching (hazard layer withdrawn, C2060, C2081), LINK monitoring (C1174) and REGIME as crisp classes (C910 flagged under C2070). "heat / cool / watch / fire / hazard" here are mnemonics for measured profiles, not operational evidence; C561 is demoted. See SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 (INTERPRETIVE) | **Status:** ACTIVE | **Date:** 2026-02-09
 
 > **Qualifiers indicate structural differentiation only. They are mnemonic labels, not claims about physical action.**
@@ -51,7 +53,7 @@ The B decoder uses colon-qualified glosses (`category:qualifier`) to ensure ever
 
 | Label | Structural basis |
 |-------|-----------------|
-| `[gate]` | Full quality gate (suffix `aiin`, C561 directional bigram) |
+| `[gate]` | Full quality gate (suffix `aiin`, C561 directional bigram; C561 demoted to Tier 3: Markov-trivial) |
 | `[check]` | Light inline check (suffix `ain`) |
 | `[loop]` | Iterative continuation (suffix `iin`, LOOP flow_type) |
 | `[final]` | Finalize flow (suffix `am`, LINE_FINAL role) |

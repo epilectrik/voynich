@@ -1,5 +1,7 @@
 # Rupescissa Comparative Analysis
 
+**Status (v7.25, 2026-09-28):** Several Voynich-side supports used here are withdrawn or demoted — the 17 forbidden transitions and 5 hazard classes (taxonomy imposed by keyword matching, not discovered, C2060; class level demoted, C783; token zeros reduce to composition, C2081), C476 coverage optimality (retracted: broken baseline), the C475/C982 compatibility family (demoted: sparsity and scatter), the C458 clamp/free asymmetry (demoted: frequency shadow), LINK as monitoring (C609, C1174), C120 PURE_OPERATIONAL (Tier 3) and REGIME as 4 crisp classes (retired, C1712). The hazard axes (Analysis 1, Phase 376 Tests 1–2, Axes 5–6, Phase 378) and the "convergent validation" claim are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-02-15 | **Phase:** 375 | **Tier:** 3/4
 
 ---
@@ -20,7 +22,7 @@ Phase 374 curated Rupescissa into structured JSON. Brunschwig was curated in Pha
 |------|------|-----------|----------------|
 | Rupescissa | ~1351 | `data/rupescissa_curated_v1.json`, `data/rupescissa_materials_v1.json` | 12 actions, 4-quality x 4-degree, 131 materials |
 | Brunschwig | 1500 | `data/brunschwig_curated_v3.json` | 36+ actions across 7 phases, fire degree 1-4, 245 recipes |
-| Voynich | 15th c. | Structural contracts (BCSC, CASC) | 49 classes (C121), 5 roles (C591), 17 forbidden transitions (C109), 4 regimes (C179) |
+| Voynich | 15th c. | Structural contracts (BCSC, CASC) | 49 classes (C121), 5 roles (C591), 17 forbidden transitions (C109; scoped, zeros reduce to composition, C2081), 4 regimes (C179; 4 crisp classes retired, C1712) |
 
 ---
 
@@ -32,7 +34,7 @@ Phase 374 curated Rupescissa into structured JSON. Brunschwig was curated in Pha
 
 **Brunschwig (4-level fire degree):** Collapsed to 1 axis (fire/heat intensity only). D1=62 (25.3%), D2=147 (60.0%), D3=36 (14.7%), D4=0 (0.0% -- CATEGORICAL_PROHIBITION per BRSC).
 
-**Voynich (4 regimes, C179):** NOT a continuation of prohibition. C494: REGIME_4 = precision-constrained execution. C490: 20.5% of programs forbid AGGRESSIVE strategy.
+**Voynich (4 regimes, C179):** NOT a continuation of prohibition. C494: REGIME_4 = precision-constrained execution. C490: 20.5% of programs forbid AGGRESSIVE strategy. [v7.26 status: C490, C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 ### Dimensional Collapse
 
@@ -59,7 +61,7 @@ This is the key finding: Rupescissa's degree-4 prohibition was **transformed**, 
 |------|--------|-------------------|
 | Rupescissa | AVOID | Dangerous but documented -- materials listed with warnings. Ch. XXI: "USE WITH EXTREME CAUTION. These can burn the stomach." |
 | Brunschwig | RESTRICT | Almost never -- 0/245 recipes at D4. BRSC: "nature rejects all coercion." |
-| Voynich | ENGINEER | Precision-constrained execution (C494). Hazard-aware but not forbidden. |
+| Voynich | ENGINEER | Precision-constrained execution (C494). Hazard-aware but not forbidden. [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)] |
 
 This is a progression from avoidance to controlled access: PROHIBIT -> RESTRICT -> ENGINEER.
 
@@ -69,7 +71,7 @@ This is a progression from avoidance to controlled access: PROHIBIT -> RESTRICT 
 
 ### Constraints Referenced
 
-C179, C494, C490, C109, F-BRU-002
+C179, C494, C490, C109, F-BRU-002 [v7.26 status: C490, C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 ---
 
@@ -146,7 +148,7 @@ Already mapped in F-BRU-011 (Three-Tier MIDDLE), F-BRU-012 (Preparation Mapping)
 
 ### Constraints Referenced
 
-C121, C591, C171, C935, F-BRU-011, F-BRU-012
+C121, C591, C171 (demoted to Tier 3), C935, F-BRU-011, F-BRU-012
 
 ---
 
@@ -155,9 +157,9 @@ C121, C591, C171, C935, F-BRU-011, F-BRU-012
 ### Critical Framing
 
 This analysis does NOT claim Voynich structural features "implement" concealment strategies. That would contradict:
-- C120 (PURE_OPERATIONAL -- not language, cipher, or code)
+- C120 (PURE_OPERATIONAL -- not language, cipher, or code) [C120 demoted to Tier 3 2026-09-28; the negative part is carried by C119]
 - C119 (0 translation-eligible zones)
-- C130/C132 (language/DSL encoding CLOSED)
+- C130/C132 (language/DSL encoding CLOSED) [scoped: excludes natural language written one token per word; C130's rate is tainted, STATUS_BRIEF §4]
 - C207 (0/18 micro-cipher tests passed)
 
 Instead: **Rupescissa documents the concealment culture of the tradition. The Voynich's non-semantic design is CONSISTENT WITH an artifact produced within this culture, but its structural properties have independent structural explanations.**
@@ -194,17 +196,17 @@ Pattern: Concealment language concentrates in THEORY (doctrinal justification) a
 
 | Rupescissa Principle | Voynich Property | Consistent? | Independent Explanation |
 |---------------------|-----------------|-------------|------------------------|
-| Knowledge for practitioners only | Expert-reference archetype | Yes | C196/C197: 100% EXPERT_REFERENCE is a grammar property |
-| Operational, not theoretical | PURE_OPERATIONAL | Yes | C120: Tier 0 structural fact, not concealment |
+| Knowledge for practitioners only | Expert-reference archetype | Yes | C196/C197: 100% EXPERT_REFERENCE is a grammar property [v7.26 status: C196, C197 demoted to Tier 3 (invented archetype)] |
+| Operational, not theoretical | PURE_OPERATIONAL | Yes | C120: Tier 0 structural fact, not concealment [C120 demoted to Tier 3 2026-09-28] |
 | Multiple names / obfuscation | Non-semantic notation | Yes | C119: zero translation-eligible zones follows from operational design |
 | "Fictively and under parables" | Non-readable by outsiders | Yes | C130/C132 close language/DSL encoding; C207: 0/18 cipher tests |
-| Degree-4 danger awareness | Hazard topology | Yes | C109: physical failure modes (F-BRU-023: THERMODYNAMIC_COHERENCE) |
+| Degree-4 danger awareness | Hazard topology | Yes | C109: physical failure modes (F-BRU-023: THERMODYNAMIC_COHERENCE) [hazard topology withdrawn; C109 scoped, C2081] |
 
 **5/5 consistent, but ALL have independent structural explanations.**
 
-### C476 Tension
+### C476 Tension [C476 retracted 2026-05-19: broken baseline]
 
-C476 (COVERAGE_OPTIMALITY) states the Voynich system optimizes for complete discrimination coverage -- maximizing the ability to distinguish between instruction classes. This is the OPPOSITE of concealment (which would minimize discriminability).
+C476 (COVERAGE_OPTIMALITY, since retracted) states the Voynich system optimizes for complete discrimination coverage -- maximizing the ability to distinguish between instruction classes. This is the OPPOSITE of concealment (which would minimize discriminability).
 
 **Resolution:** The system is optimized for INTERNAL discrimination (operators can distinguish all 49 classes) while being EXTERNALLY opaque (outsiders cannot read it). This is consistent with a guild-knowledge artifact: clear to insiders, opaque to outsiders. Rupescissa explicitly describes this model: "FOR THE SAINTS ALONE" -- knowledge should be accessible to the worthy, not obscured from everyone.
 
@@ -223,18 +225,18 @@ Brunschwig represents the "unsealing" -- making public what was previously restr
 
 ### Contraindications (Documented Per Expert Requirement)
 
-- C120 (PURE_OPERATIONAL) is a grammar property, not concealment
+- C120 (PURE_OPERATIONAL) is a grammar property, not concealment [C120 demoted to Tier 3]
 - C119 (no translation zones) follows from non-semantic design
 - C121 (49 classes) is distributional compression, not obfuscation
-- C109 (hazard topology) encodes physical failure modes, not forbidden knowledge
+- C109 (hazard topology) encodes physical failure modes, not forbidden knowledge [hazard topology withdrawn; C109 scoped, C2081]
 
 ### Falsification Result
 
-**PASS with tension.** 5/5 consistent, but C476 creates genuine tension. The system optimizes for internal discrimination -- consistent with guild-knowledge (clear to insiders) but inconsistent with pure concealment (opaque to everyone). Documented, not resolved.
+**PASS with tension.** 5/5 consistent, but C476 creates genuine tension. [C476 since retracted (broken baseline); the tension no longer has a basis] The system optimizes for internal discrimination -- consistent with guild-knowledge (clear to insiders) but inconsistent with pure concealment (opaque to everyone). Documented, not resolved.
 
 ### Constraints Referenced
 
-C120, C119, C121, C130, C132, C207, C109, C196, C197, C476, F-BRU-023
+C120, C119, C121, C130, C132, C207, C109, C196, C197, C476, F-BRU-023 [C120 demoted to Tier 3; C476 retracted; C109 scoped]
 
 ---
 
@@ -253,7 +255,9 @@ The lineage is cultural-intellectual, not direct textual. No direct transmission
 
 ### Convergent Validation Significance
 
-The Voynich constraint system (923 constraints) was built entirely bottom-up from distributional statistics over token co-occurrence patterns. No constraint references medieval classification theory. The 5 hazard classes (C109) were discovered from zero-count bigrams. The lane split (C574) was discovered from EN subfamily analysis. Sister anticorrelation (C412) was discovered from folio-level correlation. The within-PREFIX frequency-complexity gradient was not even noticed until the Rupescissa question was asked.
+**[v7.25: historical — the hazard leg of this argument is withdrawn (see the correction below), so the "convergent validation" reading does not stand as stated; see STATUS_BRIEF §3]**
+
+The Voynich constraint system (923 constraints) was built entirely bottom-up from distributional statistics over token co-occurrence patterns. No constraint references medieval classification theory. The 5 hazard classes (C109) were discovered from zero-count bigrams. [correction: the 5-class taxonomy was imposed by keyword matching, not discovered by clustering (C2060)] The lane split (C574) was discovered from EN subfamily analysis. Sister anticorrelation (C412) was discovered from folio-level correlation. The within-PREFIX frequency-complexity gradient was not even noticed until the Rupescissa question was asked.
 
 Rupescissa's Galenic framework (1351) is completely independent of this computational derivation. The fact that it predicts multi-axis hazard (correct), exactly 2 orthogonal oppositions (correct, r=-0.064), ordered within-quality intensity (correct in 4/6 channels), and partial block-diagonal factorization (58.1%) constitutes convergent validation from an independent source. Individual test results may be "expected" from within the constraint system, but the overall fit between a 670-year-old classification framework and a computationally-derived structural analysis is non-trivial.
 
@@ -276,7 +280,7 @@ Does Rupescissa's Galenic 4-quality x 4-degree organizational framework make str
 
 ### Key Findings
 
-**Test 1** is the strongest result: 4/5 hazard classes are non-thermal (PHASE_ORDERING, COMPOSITION_JUMP, CONTAINMENT_TIMING, RATE_MISMATCH). Brunschwig collapsed to fire-only; the Voynich retains multi-axis hazard structure closer to Rupescissa's multi-quality model. Caveat: F-BRU-023 glosses are Tier 4.
+**Test 1** is the strongest result [v7.25: withdrawn — the 5 hazard classes it counts were imposed by keyword matching (C2060)]: 4/5 hazard classes are non-thermal (PHASE_ORDERING, COMPOSITION_JUMP, CONTAINMENT_TIMING, RATE_MISMATCH). Brunschwig collapsed to fire-only; the Voynich retains multi-axis hazard structure closer to Rupescissa's multi-quality model. Caveat: F-BRU-023 glosses are Tier 4.
 
 **Test 3** reveals near-perfect orthogonality between the lane axis and sister axis (partial r=-0.064 controlling for QO density). This matches Rupescissa's requirement of 2 independent oppositional pairs (hot/cold, dry/humid). The raw correlation (rho=0.210) disappears when the shared QO component is controlled for.
 
@@ -334,11 +338,11 @@ The Brunschwig intermediate (1500) is included where it illuminates the trajecto
 | Axis | Galenic System | Voynich System | Enhancement | Key Constraint |
 |------|---------------|----------------|-------------|----------------|
 | 1. Classification | 4 named qualities | 9 affordance bins | 2.25x categories; named → distributional | C995 |
-| 2. Degree granularity | 4 discrete degrees | 14-63 MIDDLEs/channel | 3.5-15.75x resolution; ordered spectra | C911, C982 |
-| 3. Compound mechanism | Additive properties | Compatibility-graph mediation | 12x predictive differential | C475, C1053 |
+| 2. Degree granularity | 4 discrete degrees | 14-63 MIDDLEs/channel | 3.5-15.75x resolution; ordered spectra | C911, C982 (C982 demoted to Tier 3) |
+| 3. Compound mechanism | Additive properties | Compatibility-graph mediation | 12x predictive differential | C475 (demoted to Tier 3: sparsity), C1053 |
 | 4. Operation encoding | 12 named operations | 49 distributional classes | 4.1x count; semantic → distributional | C121 |
-| 5. Hazard management | Binary prohibition | Precision engineering | PROHIBIT → ENGINEER | C494, C997 |
-| 6. Hazard architecture | Narrative warnings | Topological forbidden graph | 1 axis → 5 dimensions; scalar → directed | C109 |
+| 5. Hazard management | Binary prohibition | Precision engineering | PROHIBIT → ENGINEER | C494, C997 (C997 scoped, C2081) |
+| 6. Hazard architecture | Narrative warnings | Topological forbidden graph | 1 axis → 5 dimensions; scalar → directed | C109 (withdrawn as a hazard graph: C2060, C2081) |
 
 ### Axis 1: Classification Resolution (4 → 9)
 
@@ -369,9 +373,9 @@ Rarer MIDDLEs are systematically longer or suffix-heavier — a frequency-comple
 
 **Galenic:** Compound properties combine by addition. Pepper = hot-3 + dry-2. Any quality can combine with any other at any degree. The rules are: add the properties; warn if any reaches degree 4.
 
-**Voynich:** Compound MIDDLEs (C935) contain atoms that predict body vocabulary at 71.6% hit rate. But this prediction is mediated by the C475 compatibility graph (C1053): atoms that are mutually C475-compatible predict body MIDDLEs at **46.2%**, while incompatible atoms predict at only **3.9%** — a 12x differential (Wilcoxon p=0.002).
+**Voynich:** Compound MIDDLEs (C935) contain atoms that predict body vocabulary at 71.6% hit rate. But this prediction is mediated by the C475 compatibility graph (C1053) [C475 demoted to Tier 3: its incompatibility percentage measured sparsity, not prohibition]: atoms that are mutually C475-compatible predict body MIDDLEs at **46.2%**, while incompatible atoms predict at only **3.9%** — a 12x differential (Wilcoxon p=0.002).
 
-**Enhancement:** The combination rules are not "anything goes" — they are structurally constrained by a compatibility graph. A compound MIDDLE's atoms must be compatible (per C475) to contribute to paragraph body content. This is the difference between "list your ingredients" (Galenic) and "specify ingredients that can legally co-occur in this structural context" (Voynich). The graph mediates combination.
+**Enhancement:** The combination rules are not "anything goes" — they are structurally constrained by a compatibility graph. A compound MIDDLE's atoms must be compatible (per C475, demoted to Tier 3) to contribute to paragraph body content. This is the difference between "list your ingredients" (Galenic) and "specify ingredients that can legally co-occur in this structural context" (Voynich). The graph mediates combination.
 
 ### Axis 4: Operation Encoding (12 Named → 49 Distributional)
 
@@ -383,7 +387,7 @@ Rarer MIDDLEs are systematically longer or suffix-heavier — a frequency-comple
 
 **Enhancement:** This is the deepest qualitative shift. Rupescissa and Brunschwig name their operations in human language. The Voynich encodes its operations in a distributional grammar. The 49 classes are not "49 named operations" but "49 positions in a co-occurrence network." The growth from 12 → 36 (Rupescissa → Brunschwig) is quantitative (more names). The growth from 36 → 49 (Brunschwig → Voynich) is qualitative (names → distributional structure).
 
-Phase 375 showed the trajectory: Rupescissa covers 64.3% of core distillation actions vs 14.3% non-core. The Voynich achieves 100% coverage of its operational grammar (C124) — every token participates.
+Phase 375 showed the trajectory: Rupescissa covers 64.3% of core distillation actions vs 14.3% non-core. The Voynich achieves 100% coverage of its operational grammar (C124) — every token participates. [C124 as corrected: 100% of the grammar's own 480-type vocabulary = 69.5% of B tokens; HT/UN are outside it]
 
 ### Axis 5: Hazard Management (Prohibition → Engineering)
 
@@ -391,15 +395,17 @@ Phase 375 showed the trajectory: Rupescissa covers 64.3% of core distillation ac
 
 **Brunschwig:** Categorical prohibition. 0/245 recipes at D4. "Nature rejects all coercion." The management strategy is: eliminate the dangerous category entirely.
 
-**Voynich:** Precision-constrained execution (C494, Tier 3). REGIME_4 appears in 25/83 folios — too frequent to be prohibition. It encodes tight control: lowest qo_density (gentle processing), highest LINK ratio (25% monitoring overhead), forbidden HIGH_IMPACT (no aggressive intervention). Safety buffers (C997): 22 tokens at 0.12% buffer rate, concentrated at HUB↔STABILITY interface, using lane-crossing as a structural safety mechanism.
+**Voynich:** Precision-constrained execution (C494, Tier 3). REGIME_4 appears in 25/83 folios — too frequent to be prohibition. It encodes tight control: lowest qo_density (gentle processing), highest LINK ratio (25% monitoring overhead) [LINK-as-monitoring withdrawn: morphological artifact of "ol", C1174], forbidden HIGH_IMPACT (no aggressive intervention). Safety buffers (C997, scoped): 22 tokens at 0.12% buffer rate, concentrated at HUB↔STABILITY interface, using lane-crossing as a structural safety mechanism.
 
-**Enhancement:** The progression PROHIBIT → RESTRICT → ENGINEER (Phase 375) is the key finding. The Galenic system says "this is dangerous." Brunschwig says "don't do this." The Voynich says "do this with precision constraints and structural safety buffers." The hazard is not avoided — it is managed through grammar-level enforcement (C458: hazard clamped CV 0.04-0.11, recovery free CV 0.72-0.82).
+**Enhancement:** The progression PROHIBIT → RESTRICT → ENGINEER (Phase 375) is the key finding. The Galenic system says "this is dangerous." Brunschwig says "don't do this." The Voynich says "do this with precision constraints and structural safety buffers." The hazard is not avoided — it is managed through grammar-level enforcement (C458: hazard clamped CV 0.04-0.11, recovery free CV 0.72-0.82) [C458 demoted to Tier 3: the asymmetry is a frequency shadow].
 
 ### Axis 6: Hazard Architecture (Narrative → Topological)
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (the 5 classes were imposed, C2060; the class level is demoted, C783; the zeros reduce to composition, C2081)
+
 **Galenic:** Warnings are per-material, scalar (degree of danger), and narrative ("USE WITH EXTREME CAUTION"). The architecture is a list of materials with danger ratings.
 
-**Voynich:** 17 forbidden transitions across 5 failure classes (C109, Tier 0):
+**Voynich:** 17 forbidden transitions across 5 failure classes (C109, Tier 0) [C109 now Tier 2 and scoped; 5-class taxonomy struck, C2060]:
 - PHASE_ORDERING (7, 41%) — material sequencing errors
 - COMPOSITION_JUMP (4, 24%) — purity crossover
 - CONTAINMENT_TIMING (4, 24%) — overflow/pressure
@@ -428,13 +434,13 @@ This pattern is consistent with a designer who understood the Galenic organizati
 
 1. **No historical transmission.** The Galenic framework is the intellectual context, not a source text. No direct textual lineage is claimed.
 
-2. **No semantic recovery.** The enhancements are STRUCTURAL. Saying "the Voynich enhanced 4 qualities to 9 bins" does not reveal what the 9 bins encode substantively. C120 (PURE_OPERATIONAL) and C119 (0 translation-eligible zones) remain Tier 0.
+2. **No semantic recovery.** The enhancements are STRUCTURAL. Saying "the Voynich enhanced 4 qualities to 9 bins" does not reveal what the 9 bins encode substantively. C120 (PURE_OPERATIONAL) and C119 (0 translation-eligible zones) remain Tier 0. [v7.25: C120 demoted to Tier 3, C119 to Tier 2 (negative knowledge only)]
 
 3. **No decipherment implications.** Understanding the enhancement pattern does not decode the manuscript. The distributional grammar is abstract — C121's 49 classes are not "49 named operations" waiting to be translated.
 
 4. **No claim of unique fit.** Other organizational frameworks might also show structural parallels. The Galenic framework is tested because Rupescissa sits in the same tradition as Brunschwig, which already shows alignment (Phases 355-371). The fit is tested, not asserted.
 
-5. **Tier 4 throughout.** Every enhancement mapping requires accepting the Galenic interpretive frame. The Voynich-side constraints (C109, C121, C475, C995, C997, C982, C1053) are Tier 0-2. The MAPPING to Galenic categories is Tier 4.
+5. **Tier 4 throughout.** Every enhancement mapping requires accepting the Galenic interpretive frame. The Voynich-side constraints (C109, C121, C475, C995, C997, C982, C1053) are Tier 0-2. [v7.25: C475 and C982 since demoted to Tier 3; C109 and C997 scoped (C2081)] The MAPPING to Galenic categories is Tier 4.
 
 ---
 
@@ -458,7 +464,7 @@ Tests whether the Galenic framework makes specific, falsifiable *physics* predic
 
 ### What the FAILs Reveal
 
-**T1: Hazard is topological, not scalar.** In Galenic medicine, danger scales with intensity — degree 4 is rare and extreme. In the Voynich, danger is *hub-mediated* (C1000): ALL 23 HUB MIDDLEs are in the most-frequent quartile. Hazard isn't about rarity; it's about connectivity. The forbidden transitions go through the network's most-trafficked nodes, not its rarest. This is the clearest break from Galenic degree logic.
+**T1: Hazard is topological, not scalar.** [v7.25: the hazard reading is withdrawn; the forbidden pairs are zero patterns that reduce to composition, C2081] In Galenic medicine, danger scales with intensity — degree 4 is rare and extreme. In the Voynich, danger is *hub-mediated* (C1000): ALL 23 HUB MIDDLEs are in the most-frequent quartile. Hazard isn't about rarity; it's about connectivity. The forbidden transitions go through the network's most-trafficked nodes, not its rarest. This is the clearest break from Galenic degree logic.
 
 **T2: Quality assignment is dominated by STABILITY.** 13/23 HUB MIDDLEs are CHSH-dominant (assigned STABILITY quality). With such skew, 9/17 forbidden pairs have at least one unclassifiable MIDDLE (c, he, edy are non-HUB), and of the 8 valid pairs, the cross-quality rate (87.5%) doesn't exceed the permutation null (p=0.177). The Voynich doesn't distribute MIDDLEs evenly across 4 quality axes — the CHSH lane dominates HUB. This is consistent with C1000's finding that PREFIX creates lane separation (Cramér's V=0.689), but the lane separation doesn't map to 4 equal Galenic qualities.
 
@@ -472,7 +478,7 @@ The 3 FAILs together map the **boundary of the Galenic analogy**:
 
 2. **Recipe-level prediction fails** (Phase 378: 0/3 tests). The Voynich's *specific physics* (which MIDDLEs are dangerous, which transitions are forbidden, how folios recover) do NOT follow Galenic rules.
 
-3. **The break point is topology vs. scalar.** The Galenic system is fundamentally scalar (4 qualities × 4 degrees = 16 cells). The Voynich system is fundamentally topological (23 hub nodes, 17 forbidden transitions, 5 failure classes, compatibility graphs). The organizational *frame* transferred; the operational *mechanism* did not.
+3. **The break point is topology vs. scalar.** The Galenic system is fundamentally scalar (4 qualities × 4 degrees = 16 cells). The Voynich system is fundamentally topological (23 hub nodes, 17 forbidden transitions, 5 failure classes, compatibility graphs). [v7.25: forbidden transitions, failure classes and the C475 graph are withdrawn or demoted — STATUS_BRIEF §3] The organizational *frame* transferred; the operational *mechanism* did not.
 
 ### Files
 

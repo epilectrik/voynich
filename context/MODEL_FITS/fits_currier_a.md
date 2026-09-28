@@ -194,6 +194,8 @@ Apparent correlation was entirely driven by token frequency. High-frequency toke
 #### Limitations
 This is a strong negative result. A does NOT encode failure memory or hazard proximity.
 
+[Status v7.25: the "B hazard zones" tested here no longer stand as a prohibition layer — the 17 forbidden transitions reduce to line composition, zones and boundary coupling (C2081, supersedes C957; class level demoted, C783). The null result is unaffected.]
+
 ---
 
 ### F-A-008 - Repetition as Relational Stabilizer

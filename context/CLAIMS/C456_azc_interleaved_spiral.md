@@ -1,6 +1,6 @@
 # C456: AZC Interleaved Spiral Topology
 
-**Tier:** 2 | **Status:** CLOSED | **Scope:** AZC
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row) | **Status:** CLOSED | **Scope:** AZC
 
 ---
 

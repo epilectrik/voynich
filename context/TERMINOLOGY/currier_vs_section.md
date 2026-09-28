@@ -8,11 +8,13 @@
 
 **Definition:** Text classification based on statistical/linguistic properties.
 
-| Language | % Tokens | Folios | Characteristics |
+| Language | % Tokens (H-track) | Folios | Characteristics |
 |----------|----------|--------|-----------------|
-| Currier A | 30.5% | 114 | Non-sequential registry |
-| Currier B | 61.9% | 83 | Sequential grammar |
-| AZC | 7.7% | 30 | Hybrid (unclassified by Currier) |
+| Currier A | 30.1% (11,415) | 114 | Non-sequential registry |
+| Currier B | 61.2% (23,243) | 83 | Sequential grammar |
+| AZC | 8.7% (3,299) | 30 | Hybrid (unclassified by Currier) |
+
+*(Percentages recomputed on the canonical H-track total of 37,957 — CLAUDE.md, DATA/TRANSCRIPT_ARCHITECTURE.md. The earlier 30.5% / 61.9% / 7.7% did not match these counts.)*
 
 **Key point:** A and B are FOLIO-DISJOINT (0 shared folios).
 

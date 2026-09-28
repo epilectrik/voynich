@@ -33,7 +33,7 @@ Examples:
 | Currier B | 31 |
 | AZC | 8 |
 
-**Lines are formal control blocks** (C357):
+**Lines are formal control blocks** (C357): [Status v7.25: the measurement is line regularity (C357, Tier 2), which with positional zones (C956) and boundary glyph coupling (C1212, C1563) is the basis of the Tier-0 statement's "organised by line"; "control block" is the Tier-3 working reading — closed-loop control is demoted (C171)]
 - 3.3x more regular than random chunking
 - Specific boundary tokens mark entry/exit
 - Grammar is line-invariant (transitions respected across breaks)
@@ -56,9 +56,9 @@ Examples:
 
 | Finding | Constraint |
 |---------|------------|
-| LINK suppressed at boundaries | C359 (0.60x) |
-| Hazards depleted at line-initial | C400 (5-7x) |
-| Zero hazards at folio-initial | C400 (0/82) |
+| LINK suppressed at boundaries | C359 (0.60x) [LINK = "ol" morphology, C1174] [v7.26 status: C359 demoted to Tier 3 (conflicts with C805 (weaker method))] |
+| Hazards depleted at line-initial | C400 (5-7x) [measured on the 17-pair set; hazard reading withdrawn, C2081] |
+| Zero hazards at folio-initial | C400 (0/82) [same caveat, C2081] |
 
 ---
 

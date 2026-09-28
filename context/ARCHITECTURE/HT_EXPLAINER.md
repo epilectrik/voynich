@@ -3,6 +3,12 @@
 **Purpose:** Prevent semantic projection onto HT. This document defines the structural boundaries of what HT evidence supports.
 
 > **Structural Contract:** [../STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml](../STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml) (AUTHORITATIVE — 17 guarantees, 10 invariants, 68 owned constraints)
+>
+> **Status note (v7.25, 2026-09-28):** `SYSTEM/STATUS_BRIEF.md` and the generated `CONSTRAINT_TABLE.txt` win on
+> conflict. Statements that HT "avoids hazards" are measured against the 17 forbidden transitions, a layer now
+> withdrawn (C2081; C783, C2060; STATUS_BRIEF §3). The "execution / adaptive control" description of Currier B is the
+> Tier-3 working interpretation; Tier 0 is the measured grammar (STATUS_BRIEF §1). "Status: CLOSED" at the end is
+> retired closure language.
 
 ---
 
@@ -42,10 +48,10 @@
 
 ### 5. Non-Operational
 
-- Removing all 40,000 HT tokens would not affect grammar coverage
+- Removing all 40,000 HT tokens would not affect grammar coverage (legacy count; in Currier B, HT = UN = 7,042 occurrences, C740)
 - Does not predict execution outcomes
 - Does not alter grammar flow
-- Completely avoids hazard positions
+- Completely avoids hazard positions [measured against the withdrawn hazard layer — C2081]
 
 ### 6. Phase-Synchronized
 
@@ -74,11 +80,11 @@ HT tokens do not carry semantic content. They are:
 - 33% "error rate" is implausible
 - Too structured (section-specific patterns)
 - Too systematic (morphological regularities)
-- Complete hazard avoidance (errors wouldn't avoid hazards)
+- Complete hazard avoidance (errors wouldn't avoid hazards) [historical — hazard layer withdrawn]
 
 ### NOT a Separate Document
 
-- Perfectly synchronized with B's grammar and hazards
+- Perfectly synchronized with B's grammar and hazards [the "hazards" half rests on the withdrawn hazard layer]
 - Why would a separate document correlate with execution phases?
 - Integrated at production level
 
@@ -94,7 +100,7 @@ HT tokens do not carry semantic content. They are:
 - No referential tokens
 - No counting behavior
 - No sensory checkpoint patterns
-- Avoids rather than clusters at hazards
+- Avoids rather than clusters at hazards [historical — hazard layer withdrawn]
 
 ---
 
@@ -106,8 +112,8 @@ The evidence supports a **dual-purpose attention mechanism**:
 2. **Skill practice** in the written form
 
 This explains:
-- Why HT correlates with waiting-heavy programs (more time to write)
-- Why HT avoids hazards (attention demanded elsewhere)
+- Why HT correlates with waiting-heavy programs (more time to write) ["waiting" was read from LINK, now a morphological artifact — C1174]
+- Why HT avoids hazards (attention demanded elsewhere) [historical — hazard layer withdrawn]
 - Why HT shows rare grapheme engagement (practicing difficult forms)
 - Why HT has session continuity (same scribe in one session)
 - Why HT is morphologically distinct (avoid confusion with operational text)
@@ -128,7 +134,7 @@ If you try to read HT as language:
 
 ## The Architectural Role
 
-In the 4-layer model:
+In the 4-layer model (layer functions are Tier-3 working interpretation; B's "adaptive control" supports are withdrawn, STATUS_BRIEF §3):
 
 | Layer | System | Function | Organization |
 |-------|--------|----------|--------------|
@@ -153,7 +159,7 @@ The HT interpretation would be challenged if:
 
 1. HT tokens showed referential patterns (pointing to things)
 2. HT predicted execution outcomes (causal role)
-3. HT clustered AT hazards rather than avoiding them
+3. HT clustered AT hazards rather than avoiding them [this criterion depends on the withdrawn hazard layer]
 4. HT showed consistent cross-section vocabulary (not section-exclusive)
 5. HT showed translation-eligible structure (message patterns)
 
@@ -171,7 +177,7 @@ None of these have been observed.
 | Is HT noise? | No - too structured, too systematic |
 | What is HT for? | Human orientation during production |
 
-**Status:** CLOSED. HT is architecturally complete.
+**Status:** CLOSED. HT is architecturally complete. [historical closure banner — retired language, Strategic review §5]
 
 ---
 

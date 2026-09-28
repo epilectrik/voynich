@@ -19,8 +19,10 @@ These fits test whether the Voynich's structural architecture aligns with the Ga
 **Tier:** F4 (Speculative External Alignment)
 **Scope:** B
 **Result:** DIRECTIONAL_COHERENCE
-**Supports:** C109 (Hazard Classes), C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility), C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry), C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)
+**Supports:** C109 (Hazard Classes) [5 classes imposed by keyword-matching, C2060; zero bigrams reduce, C2081], C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility) [demoted to Tier 3 — sparsity denominator], C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry) [demoted to Tier 3 — frequency shadow], C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)
 **Phase:** RUPESCISSA_REVERSE_TEST (Phase 376) + Synthesis (Phase 377)
+
+> **STATUS (v7.25, 2026-09-28) — the "strong" axes rest largely on withdrawn constructs.** Axis 6 (topological forbidden graph, C109: 17/5/65%) rests on the hazard layer, which is withdrawn: the 5 classes were imposed (C2060), the class level is demoted (C783), and the token-level zeros reduce to line composition, zones and boundary coupling (C2081). Axis 5 (hazard managed by precision engineering) cites C458 (demoted to Tier 3, frequency shadow) and C997 (a scoped zero-pattern count, no longer a safety layer). Axis 3 cites C475 (demoted to Tier 3, sparsity denominator; C1053 is built on C475's compatibility graph). C121 (Tier 0) and C911 stand. The directional-coherence verdict (6/6) was not re-scored after these changes. Kept for traceability; see `SYSTEM/STATUS_BRIEF.md` §3.
 
 ### Hypothesis
 
@@ -66,10 +68,10 @@ If fewer than 4/6 axes showed the same directional pattern (abstraction + resolu
 
 | Constraint | Role in Fit |
 |------------|-------------|
-| C109 | Axis 6: 17 forbidden transitions, 5 classes, 65% asymmetric |
+| C109 | Axis 6: 17 forbidden transitions, 5 classes, 65% asymmetric [5-class taxonomy struck (C2060); zeros reduce (C2081)] |
 | C121 | Axis 4: 49 distributional classes (Tier 0) |
-| C458 | Axis 5: Design asymmetry (hazard clamped, recovery free) |
-| C475 | Axis 3: MIDDLE atomic incompatibility graph |
+| C458 | Axis 5: Design asymmetry (hazard clamped, recovery free) [demoted to Tier 3 — frequency shadow] |
+| C475 | Axis 3: MIDDLE atomic incompatibility graph [demoted to Tier 3 — sparsity denominator] |
 | C494 | Axis 5: REGIME_4 = precision-constrained execution (Tier 3) |
 | C911 | Axis 2: PREFIX-MIDDLE compatibility (102 forbidden combos) |
 | C935 | Axis 3: Compound specification |
@@ -105,6 +107,8 @@ Phase 384 tested whether the Galenic framework leaves measurable fingerprints in
 - **T3 (Section-AXM ordering):** New constraint C1084. Section explains 35.5% of AXM variance: B(0.754) > S(0.687) > C(0.635) > H(0.587). Decomposes C1017 baseline. Not uniquely Galenic — any domain-spanning system would show section effects.
 - **T4:** C521's one-way valve operates within compound MIDDLEs (construction layer, C522), not between consecutive tokens (execution layer). Galenic elemental grammar: **FALSIFIED** at execution level.
 - **T5:** Paragraph length scales perfectly linearly with PP count. Galenic concoction kinetics (diminishing returns): **FALSIFIED**. Consistent with C963 (body homogeneity).
+
+[Status v7.25: T1 and T2 are scored against hazard classes and hazard adjacency (withdrawn layer, C2060, C2081); T4's "k/h/e potency gradient" tests the kernel reading, since superseded (C089 → C2082).]
 
 **Revised assessment:** The Galenic framework is the author's TRAINING BACKGROUND, not the system's DESIGN PRINCIPLE. Organizational-level alignment (6/6 directional coherence, Phase 376-377) is confirmed. Grammar-level Galenic predictions: **0/4** where they make specific structural claims. The author transcended their intellectual framework when designing the control grammar.
 

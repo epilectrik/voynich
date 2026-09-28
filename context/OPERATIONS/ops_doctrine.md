@@ -2,11 +2,13 @@
 
 **Status:** CLOSED | **Tier:** 2
 
+> **[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** This doctrine reads Currier B as a closed-loop control program operated by a human (waiting, escalation, restart, throughput, irreversible failure). That reading is now the Tier-3 working interpretation: closed-loop control is demoted (C171, Tier 3; all four legs withdrawn), LINK is a 13.2% morphological artifact of "ol" rather than a waiting/monitoring operator (C609, C1174), the hazard/failure layer is withdrawn (C783, C2060, C2081), and REGIME is a soft gradient rather than 4 crisp classes (C1712, C2070). The OPS rows C178–C198 remain Tier 2 in the generated table as folio-level metrics; read their operational vocabulary as the historical interpretation. Text kept for traceability.
+
 ---
 
 ## The 5 Core Principles
 
-1. **Waiting is Default** (38% LINK)
+1. **Waiting is Default** (38% LINK) [withdrawn: the 38% figure is not reproducible — true LINK density is 13.2% (C609) — and LINK is a morphological artifact, not waiting (C1174)]
 2. **Escalation is Irreversible**
 3. **Restart Requires Low-CEI**
 4. **Text Holds Position, Not Escape Route**
@@ -28,7 +30,7 @@
 
 ## OPS-2: Regime Discovery
 
-4 stable regimes identified (K-Means, Silhouette=0.23):
+4 stable regimes identified (K-Means, Silhouette=0.23): [scoped by C1712/C2070 — silhouette selects k=2 (the Bio vs non-Bio section split); the k=4 excess over null is only +0.047; REGIME is a soft gradient, not 4 crisp classes, and REGIME effects need a within-section re-test]
 
 | Regime | Characteristics |
 |--------|-----------------|
@@ -65,8 +67,8 @@ REGIME_3 is transient throughput state, not sustainable.
 ## OPS-5: Control Engagement Intensity
 
 CEI manifold formalized:
-- LINK-CEI correlation: r = -0.7057 (strong negative)
-- More waiting = less active engagement
+- LINK-CEI correlation: r = -0.7057 (strong negative) — statistic stands (C190); the reading below is withdrawn (C1174)
+- More waiting = less active engagement [historical interpretation: LINK is not waiting]
 - 4 CEI bands correspond to 4 regimes
 
 ---
@@ -96,6 +98,8 @@ CEI manifold formalized:
 ---
 
 ## Why Conservatism Dominates (77%)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The failure types below are the 5-class hazard taxonomy, which was imposed by keyword matching (C2060); the class-level forbidden transitions are demoted (C783) and the token-level zeros reduce to composition, zones and boundary coupling (C2081). No prohibition or failure layer remains (C2081).
 
 **Failures are irreversible:**
 

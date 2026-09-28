@@ -22,7 +22,8 @@ Three kernel operators: k, h, e form the irreducible control core.
 **Compression Reality Note (2026-01-23):** Core primitives k, h, e exhibit one-way valve topology (C521). This directional asymmetry confirms functional operator status independent of their role as compression hinges.
 
 ### C090 - Cycle Topology
-**Tier:** 2 | **Status:** CLOSED
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
+**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the 500+ 4-cycles and 56 3-cycles are a floor for a diameter-1 graph, so the counts do not discriminate structure (strategic review §5; floor, not a finding).]**
 500+ 4-cycles, 56 3-cycles in grammar graph. Note: Phase CYCLE found NO distinct semantics (100% token overlap).
 **Source:** Phase 15, CYCLE
 
@@ -42,7 +43,8 @@ Kernel 'e' anchors system to stable state. 54.7% of recovery paths pass through 
 **Source:** Phase 17
 
 ### C107 - Kernel Boundary-Adjacent
-**Tier:** 2 | **Status:** CLOSED | **Scope:** B
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26) | **Scope:** B
+**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the claim relates two withdrawn constructs, 'kernel nodes' (C089 superseded by C2082) and class-level forbidden transitions (C783 demoted: no class-level suppression; token zeros reduce, C2081); the grouped entry already records it as correlational only (C522).]**
 All kernel nodes are BOUNDARY_ADJACENT to forbidden transitions. Classes containing kernel characters tend to be hazard-involved.
 **Source:** Phase 17
 

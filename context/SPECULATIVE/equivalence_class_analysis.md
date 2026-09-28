@@ -1,5 +1,7 @@
 # Equivalence Class Collapse Analysis
 
+**Status (v7.25, 2026-09-28):** Both premises are retired — the Puff–Voynich "83:83 isomorphism" (retired as evidence, strategic review §5) and REGIME as 4 crisp classes (REGIME is gradient-like, C1712, C2070); coverage optimality (C476) is retracted and C458 is demoted. The PASS verdict and "expert hypothesis confirmed" are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-14
 **Phase:** 4
 **Status:** Tier 4 SPECULATIVE
@@ -32,9 +34,9 @@ This analysis is **epistemically clean**:
 
 **Constraints NOT violated:**
 - C384 (no entry-level correspondence)
-- C171 (no material encoding)
-- C476/C478 (coverage + scheduling)
-- C179-C185 (regime structure)
+- C171 (no material encoding) [demoted to Tier 3 2026-09-28]
+- C476/C478 (coverage + scheduling) [C476 retracted: broken baseline]
+- C179-C185 (regime structure) [4 crisp classes retired: C1712, C2070]
 
 **What was corrected:** A mistaken Tier-4 assumption that Puff chapters and Voynich folios should be compared at the same abstraction level. That assumption was never structurally warranted.
 
@@ -60,7 +62,7 @@ These are isomorphic at the **mastery horizon** level, not at the entity level.
 - Both are driven by:
   - Finite expert memory
   - Finite workshop curriculum
-  - Coverage optimality (C476)
+  - Coverage optimality (C476, retracted: broken baseline)
   - Scheduling constraints (C478)
 
 They converge because **human mastery space is bounded**, not because anyone copied.
@@ -178,7 +180,7 @@ This is the signature of: **A canonical template + controlled variants.**
 
 This matches perfectly with:
 - C121 (49 instruction equivalence classes)
-- C458 (design clamp vs recovery freedom)
+- C458 (design clamp vs recovery freedom; demoted to Tier 3: frequency shadow)
 - C403 (5 program archetypes as continua, not categories)
 
 ### The Core Finding
@@ -203,7 +205,7 @@ Everything observed follows from that:
 
 ## Implications
 
-### Confirmed (Tier 4)
+### Confirmed (Tier 4) [v7.25: "confirmed" retired — the 83:83 and REGIME premises are withdrawn; see banner]
 
 1. **Mastery horizon isomorphism** - The 83:83 is real but measures different things
 2. **Template reuse** - REGIME_2/3 are operational templates, not material-specific
@@ -212,7 +214,7 @@ Everything observed follows from that:
 
 ### NOT Established
 
-- Semantic encoding (C171 unchanged)
+- Semantic encoding (C171 unchanged at writing; demoted to Tier 3 2026-09-28)
 - Direct material correspondence
 - Token-level meaning
 - Entry-level A<->B coupling
@@ -252,4 +254,4 @@ Everything observed follows from that:
 
 ---
 
-*Analysis complete. Expert hypothesis confirmed. Model remains frozen.*
+*Analysis complete. Expert hypothesis confirmed. Model remains frozen.* [v7.25: historical — see status banner]

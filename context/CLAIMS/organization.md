@@ -61,8 +61,8 @@ Plant illustrations don't predict program type.
 H/S ~50% STATE-C; B/C 70-100% STATE-C.
 **Source:** SEL-F
 
-### C325 - Completion Gradient
-**Tier:** 2 | **Status:** CLOSED
+### C325 - **[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. C1401: the folio-position rise collapses to zero within every section (section confound); 'completion' is the withdrawn convergence reading (C1402, C1403).]** Completion Gradient
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
 STATE-C increases with position (rho=+0.24). Later folios = higher completion.
 **Source:** SEL-F
 
@@ -179,8 +179,8 @@ Max variance asymmetry 0.0027. No truncation signal.
 daiin, saiin, sain line-initial (3-11x). am, oly, dy line-final (4-31x).
 **Source:** LINE
 
-### C359 - LINK Suppressed at Boundaries
-**Tier:** 2 | **Status:** CLOSED
+### C359 - **[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. conflict with C805: both measure LINK at line boundaries with opposite signs; C359 (LINE phase) has no surviving script, an undocumented LINK set (9.3% mid-line rate, not the canonical 'ol' 13.2%, C609) and its own phase found LINK uniform by thirds (LINE-3), while C805 uses the canonical definition with a surviving script (first 17.2%, middle 12.4%).]** LINK Suppressed at Boundaries
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
 0.60x vs mid-line. Lines ≠ pause points.
 **Source:** LINE
 
@@ -253,7 +253,7 @@ Aggressive programs buffered (88% vs 49% null)
 7 domains ruled incompatible
 **Source:** v1.8-import
 
-### C173 - Linguistic hypothesis EXHAUSTED
+### C173 - **[Scope 2026-09-28 (v7.26): 'EXHAUSTED' is retired closure language (strategic review §5). Tested and excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as published (C2080). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille (STATUS_BRIEF §4).]** Linguistic hypothesis EXHAUSTED
 **Tier:** 2 | **Status:** CLOSED
 Linguistic hypothesis EXHAUSTED
 **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]**

@@ -1,10 +1,25 @@
-# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
-# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
-# listed below is SUSPENDED until the contract is regenerated from live constraint status.
+# REGISTRY STATUS NOTE (2026-09-27; aligned to context/SYSTEM/STATUS_BRIEF.md v7.25 on 2026-09-28;
+# drift check: scripts/registry_integrity_check.py)
+#
+# TIER 3 INTERPRETIVE MAPPING. This whole contract is a Tier-3 interpretive mapping, not a source of
+# Tier-2 facts about the Voynich manuscript. Its Brunschwig sections describe an external 16th-century
+# text; every Voynich-side entry (voynich_mapping_hypothesis, voynich_parallel, voynich_mapping) is Tier 3
+# at most, and any "confidence" rating in it is historical. Several mappings rest on constructs that
+# the 2026-09 review withdrew (STATUS_BRIEF §3); on 2026-09-28 those were given a status line
+# (WITHDRAWN / SUSPENDED / MIXED) and kept for traceability:
+#   REGIME = Brunschwig fire degree; REGIME as 4 crisp classes: retired (C1712, C2070, C1872)
+#   closed-loop control: Tier 3, all four legs withdrawn (C171)
+#   kernel k/h/e: C089 superseded by C2082 (at glyph level k shows nothing)
+#   LINK as a monitoring operator: withdrawn (C609 true density 13.2%; C1174 morphological artifact of "ol")
+#   forbidden transitions / 5 hazard classes / safety architecture: withdrawn (C783, C2060, C2063, C2081;
+#     C109 and C997 scoped)
+#   recovery architecture: frequency shadow (C458, C105 demoted)
+# Constraint status of citations:
 #   DEMOTED to Tier 3: C475, C527, C873, C875, C876
 #   DEAD (retracted / superseded): C476
 #   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C171
-# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
+# Authority order: context/CONSTRAINT_TABLE.txt > context/CLAIMS/INDEX.md > STATUS_BRIEF.md > this file.
+# Drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 # BRSC: Brunschwig Structural Contract
 # Version: 1.0
@@ -30,12 +45,19 @@ meta:
   version: "2.2"
   date: "2026-02-13"
   status: "DRAFT"
+  tier: 3
+  registry_status: "Tier-3 interpretive mapping as a whole; aligned to STATUS_BRIEF v7.25 on 2026-09-28. Nothing in this file is a Tier-2 fact about the Voynich manuscript."
   layer_type: "external reference contract"
   derived_from: "Hieronymus Brunschwig, Liber de arte distillandi (1500)"
   governance: |
     BRSC documents an EXTERNAL historical text.
     It enables systematic comparison with Voynich structures.
     Mappings to Voynich are hypotheses, not proven correspondences.
+    Registry alignment (2026-09-28, STATUS_BRIEF v7.25): the Voynich-side
+    mappings are Tier 3 at most. Mappings that rest on withdrawn constructs
+    (REGIME = fire degree, closed-loop control, kernel, LINK monitoring,
+    hazard classes, recovery architecture) carry a WITHDRAWN or SUSPENDED
+    status line and are kept only as history.
 
 # ============================================================
 # DOCUMENT STRUCTURE
@@ -62,6 +84,7 @@ document_structure:
     Part 1 contains GENERAL PROTOCOLS that apply to all recipes.
     Part 2 contains INDIVIDUAL RECIPES that specify parameters.
     This separation mirrors Voynich's grammar/entry distinction.
+    [Tier-3 interpretive parallel, not a measurement.]
 
 # ============================================================
 # FIRE DEGREE PROTOCOL
@@ -111,6 +134,7 @@ fire_degree:
     degree_4: 9    # 3.7% (precision/animal - special handling)
 
   voynich_mapping_hypothesis:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. REGIME = fire degree and REGIME as 4 crisp classes are retired (C1712, C2070, C1872); 'high LINK' rests on the withdrawn LINK monitoring reading (C609, C1174)."
     degree_1: "REGIME_2 (gentle handling, high LINK)"
     degree_2: "REGIME_1 (standard processing)"
     degree_3: "REGIME_3 (intense extraction)"
@@ -641,8 +665,9 @@ action_taxonomy:
     translation: "The more often this happens, the nobler the water becomes"
     max_iterations: 9
     standard_iterations: 3
+    voynich_mapping_status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. The 'control-flow architecture' it invokes is the closed-loop reading (C171), demoted to Tier 3 with all four legs withdrawn; the suffix glosses below are Tier-3 labels."
     voynich_mapping_hypothesis: |
-      Maps to suffix control-flow semantics (C171):
+      Maps to suffix control-flow semantics (C171, demoted to Tier 3; closed-loop reading withdrawn):
       -aiin/-ain = CHECKPOINT (end of cycle, test quality)
       -iin = ITERATE (continue loop)
       -hy = VERIFY (quality check)
@@ -717,6 +742,7 @@ sensory_monitoring:
       action_on_fail: "Discard water"
 
   voynich_mapping_hypothesis:
+    status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. LINK monitoring is withdrawn (C609, C1174); the k/h/e kernel reading is superseded (C089 -> C2082)."
     finger_test: "LINK monitoring phase"
     drip_timing: "k/h kernel operations"
     overnight_cooling: "e kernel (equilibration)"
@@ -744,6 +770,7 @@ recovery:
     quote: "No procedures exist for salvaging completely failed batches"
 
   voynich_mapping_hypothesis:
+    status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. The recovery architecture is a frequency shadow (C458, C105 demoted to Tier 3); the e kernel reading is superseded (C089 -> C2082); hazard classes are withdrawn (C2060, C2081)."
     retry_limit: "FQ escape handler (limited retries)"
     cooling_path: "e kernel dominance in recovery"
     total_failure: "Hazard class IRRECOVERABLE"
@@ -788,6 +815,7 @@ quality_rejection:
   note: "All tests are CATEGORICAL (pass/fail), not quantitative"
 
   voynich_mapping_hypothesis:
+    status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. The 5-class hazard taxonomy was imposed by keyword matching (C2060), the class level shows no suppression (C783), and common-token zero bigrams reduce to composition, zones and boundary coupling (C2081)."
     categorical_tests: "Hazard classes (forbidden transitions)"
     pass_fail_logic: "Binary state transitions in grammar"
 
@@ -817,6 +845,7 @@ storage:
       duration: "Shortest - use quickly"
 
   voynich_mapping_hypothesis:
+    status: "SUSPENDED v7.24/7.25 — Tier-3 speculation; the evidence this contract cites for the PREFIX material-behavior classes (voynich_mapping below) is C475 (demoted to Tier 3) and C476 (dead). See STATUS_BRIEF §3."
     material_type: "PREFIX material-behavior class"
     duration_encoding: "Possibly in SUFFIX or MIDDLE"
 
@@ -872,7 +901,8 @@ apparatus:
     crucibles: "White clay (goldsmith quality)"
 
   voynich_mapping_hypothesis:
-    apparatus_agnostic: "Voynich grammar is material-agnostic (C171)"
+    status: "SUSPENDED v7.24/7.25 — rests on C171, demoted to Tier 3 by the Tier-0 restatement (2026-09-28). See STATUS_BRIEF §3."
+    apparatus_agnostic: "Voynich grammar is material-agnostic (C171, demoted to Tier 3)"
     method_selection: "Possibly encoded in fire_degree + material_class"
 
 # ============================================================
@@ -918,8 +948,10 @@ material_classification:
       handling: "Standard"
 
   voynich_mapping_hypothesis:
+    status: "SUSPENDED v7.24/7.25 — Tier-3 speculation. The evidence this contract cites for the PREFIX material classes is C475 (demoted to Tier 3) and C476 (dead); REGIME as 4 crisp classes is retired (C1712, C2070), so REGIME_4 routing is historical. See STATUS_BRIEF §3."
     material_class: "PREFIX (M-A/B/C/D)"
-    animal_routing: "C536: Animal -> REGIME_4 at 2.14x"
+    animal_routing: "C536: Animal -> REGIME_4 at 2.14x"  # [v7.26 status: C536 demoted to Tier 3 (REGIME/control-strategy reading)]
+    animal_routing_note: "The current C536 row (Tier 2) reads animal 2.03x and herb 2.09x to REGIME_4 ('precision requirement, not material identity'); the 2.14x figure above is historical"
 
 # ============================================================
 # PARAMETRIC STRUCTURE SUMMARY
@@ -944,6 +976,7 @@ parametric_structure:
     - cooling_requirement: "Universal (overnight)"
 
   voynich_parallel:
+    status: "WITHDRAWN v7.24/7.25 (grammar_determines) — historical; see STATUS_BRIEF §3. REGIME as fire degree / 4 crisp classes is retired (C1712, C2070), the kernel reading is superseded (C089 -> C2082), and hazard avoidance is withdrawn (C783, C2060, C2081)."
     entry_specifies: "PREFIX, MIDDLE, SUFFIX"
     grammar_determines: "REGIME, kernel operations, hazard avoidance"
 
@@ -952,49 +985,58 @@ parametric_structure:
 # ============================================================
 voynich_mapping:
   status: "HYPOTHESIS - requires validation"
+  registry_status: "Tier 3 at most (aligned to STATUS_BRIEF v7.25, 2026-09-28). No parallel below is a Tier-2 fact; the 'confidence' ratings are historical and several rest on withdrawn constructs (per-item status lines)."
 
   structural_parallels:
     - brunschwig: "Fire degree (1-4)"
+      status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. REGIME = fire degree and REGIME as 4 crisp classes are retired (C1712, C2070, C1872)."
       voynich: "REGIME (1-4)"
       confidence: "MEDIUM"
       evidence: "F-BRU-001, F-BRU-002"
 
     - brunschwig: "Material classification"
+      status: "SUSPENDED v7.24/7.25 — its cited evidence is demoted (C475, Tier 3: sparsity, not prohibition) or dead (C476, broken baseline). See STATUS_BRIEF §3."
       voynich: "PREFIX material-behavior class (M-A/B/C/D)"
       confidence: "MEDIUM"
-      evidence: "C475, C476"
+      evidence: "C475, C476"  # C475 demoted to Tier 3; C476 dead (retracted)
 
     - brunschwig: "Sensory monitoring protocol"
+      status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. LINK monitoring is withdrawn (C609, C1174) and the kernel reading is superseded (C089 -> C2082); both cited rows are demoted to Tier 3."
       voynich: "LINK monitoring phase + kernel operations"
       confidence: "LOW-MEDIUM"
-      evidence: "C873, C876"
+      evidence: "C873, C876"  # both demoted to Tier 3
 
     - brunschwig: "Recovery (2 retry limit)"
+      status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. The recovery architecture is a frequency shadow (C458 demoted); C875 ('80.4% from hazard FL stages') is demoted to Tier 3 and rests on the withdrawn hazard layer."
       voynich: "FQ escape handler"
       confidence: "MEDIUM"
-      evidence: "C875, F-BRU-007"
+      evidence: "C875, F-BRU-007"  # C875 demoted to Tier 3
 
     - brunschwig: "Quality rejection (5 tests)"
+      status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. The 5 hazard classes were imposed by keyword matching (C2060), the class level shows no suppression (C783), and the token-level zeros reduce to composition, zones and boundary coupling (C2081). The HIGH rating and the Phase 334 validation are historical; F-BRU-023 is an F4 fit."
       voynich: "17 forbidden transitions (5 hazard classes)"
       confidence: "HIGH"
       evidence: "C109, F-BRU-023"
       validation: "15/15 glossed forbidden transitions map to recognizable distillation failures; 8/8 asymmetric pairs have coherent physical explanations; all 5 failure classes thermodynamically grounded (Phase 334)"
 
     - brunschwig: "Safety intervention between critical steps"
+      status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. 'Safety architecture' rests on the withdrawn hazard layer (C997 scoped; C2081), and the REGIME_1 enrichment uses REGIME classes now retired as crisp classes (C1712, C2070). The HIGH rating is historical."
       voynich: "22 safety buffer tokens (physically coherent lane switches and work insertions)"
       confidence: "HIGH"
       evidence: "C997, F-BRU-023"
       validation: "22/22 buffers validated as physically coherent interventions; REGIME_1 enriched 1.86x (chi²=11.79, p=0.008)"
 
     - brunschwig: "Fourth degree FORBIDDEN"
+      status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. It depends on REGIME_4 = fourth fire degree; REGIME = fire degree is retired (C1712, C2070, C1872). C490 (categorical strategy exclusion) remains a Tier-2 row; the fire-degree link is the retired part."
       voynich: "HIGH_IMPACT forbidden in REGIME_4"
       confidence: "MEDIUM"
-      evidence: "C490"
+      evidence: "C490"  # [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)]
 
     - brunschwig: "Material-apparatus separation"
-      voynich: "C171: No material encoding in execution grammar"
+      status: "SUSPENDED v7.24/7.25 — rests on C171, demoted to Tier 3 by the Tier-0 restatement (2026-09-28). The HIGH rating is historical. See STATUS_BRIEF §3."
+      voynich: "C171: No material encoding in execution grammar"  # C171 demoted to Tier 3
       confidence: "HIGH"
-      evidence: "C171, C384"
+      evidence: "C171, C384"  # C171 demoted to Tier 3; C384 (Tier 2) concerns A-B lookup
 
   key_difference:
     brunschwig: "Teaching text for novices"
@@ -1034,6 +1076,7 @@ provenance:
         rectifying, and storage. These apply to ALL recipes by reference.
     - version: "2.2"
       date: "2026-02-13"
+      status: "Historical: the MEDIUM->HIGH upgrade below rested on the 5-class hazard taxonomy and the safety-buffer reading, both since withdrawn (C2060, C2081; STATUS_BRIEF §3)"
       scope: "Thermodynamic coherence validation (F-BRU-023)"
       key_finding: |
         Quality rejection mapping upgraded MEDIUM→HIGH confidence after Phase 334
@@ -1061,10 +1104,10 @@ provenance:
         balneum marie explicitly does NOT require luting (line 1348).
 
   related_constraints:
-    - "C493: Brunschwig grammar embedding (0 violations)"
-    - "C527: Suffix fire-degree correlation"
-    - "C536: Animal material REGIME routing"
-    - "C171: No material encoding in execution grammar"
+    - "C493: Brunschwig grammar embedding (0 violations) [Tier 2 row; 'violations' refers to the forbidden-transition layer, withdrawn as a prohibition layer (C2081)]"
+    - "C527: Suffix fire-degree correlation [demoted to Tier 3; fire-degree reading conditional on Brunschwig]"
+    - "C536: Animal material REGIME routing [Tier 2 row; REGIME as 4 crisp classes retired (C1712, C2070)]"
+    - "C171: No material encoding in execution grammar [demoted to Tier 3 by the Tier-0 restatement]"
 
   related_fits:
     - "F-BRU-001 through F-BRU-015"

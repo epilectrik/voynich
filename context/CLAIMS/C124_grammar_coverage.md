@@ -6,13 +6,15 @@
 
 ## Claim
 
+**[Corrected (Tier-0 restatement 2026-09-28): the 100% is coverage of the grammar's own 480-type vocabulary, which is 69.5% of Currier B tokens; the remaining 30.5% (HT/UN) is defined by exclusion (C566, C740). The original wording below is historical.]**
+
 The 49-class grammar achieves 100% coverage of all Currier B tokens. Every token in the B corpus maps to exactly one instruction class.
 
 ## Evidence
 
 - 0 unclassified tokens in Currier B
 - 0 tokens requiring special handling
-- All 75,248 instructions in 83 folios are grammar-compliant
+- All 75,248 instructions in 83 folios are grammar-compliant [historical: 75,248 is an all-transcriber count; the H track has 23,243 Currier B tokens]
 - Cross-validation stable (leave-one-folio-out shows max 0.25% entropy change)
 
 ## Significance

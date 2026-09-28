@@ -1,9 +1,16 @@
-# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
-# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
-# listed below is SUSPENDED until the contract is regenerated from live constraint status.
-#   DEMOTED to Tier 3: C470, C475, C1274
-#   DEAD (retracted / superseded): C433, C434, C435
-# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
+# REGISTRY STATUS NOTE (aligned to STATUS_BRIEF v7.25 on 2026-09-28; first note 2026-09-27)
+# This contract predates the 2026-05/06 audits and the 2026-09 strategic review. On 2026-09-28 it was
+# aligned to context/SYSTEM/STATUS_BRIEF.md (v7.25): every passage resting on a non-live constraint is
+# marked in place; the text is kept as history. No claim was added or upgraded.
+#   WITHDRAWN = rests on a retracted/dead constraint, or on a construct listed in STATUS_BRIEF §3.
+#   SUSPENDED = rests on a constraint demoted to Tier 3 (historical until re-derived from live evidence).
+#   DEAD (retracted in PHASE_742 as transcription/serialization artifacts): C433, C434, C435
+#     (C436's self-transition half was retracted too; its cross-folio half stays Tier 2)
+#   Retracted 2026-05-19 and held at Tier 1: C481 (survivor sets are not unique)
+#   DEMOTED to Tier 3: C470 (frequency carryover), C475 (percentage measured sparsity), C1274 (circular)
+#   Corrected in place, still Tier 2: C432 (ordered subscripts near-exclusive to Zodiac, not exclusive)
+# Authoritative status: context/CONSTRAINT_TABLE.txt; reasons: context/CLAIMS/INDEX.md and
+# context/CLAIMS/azc_system.md; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 
 meta:
@@ -14,7 +21,8 @@ meta:
   status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.5: o-HEAD cross-system gradient A>AZC>B added (C1559, Phase 548). v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level (V=0.115) despite raw atom uniformity (C1271). o-HEAD zone-graded. B/A proximity partition. v1.3: Category organization added (C1269-C1276, Phase 453). v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
+  audit_note: "v1.5: o-HEAD cross-system gradient A>AZC>B added (C1559, Phase 548). v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level (V=0.115) despite raw atom uniformity (C1271). o-HEAD zone-graded. B/A proximity partition. v1.3: Category organization added (C1269-C1276, Phase 453; C1274 since demoted to Tier 3 as circular, PHASE_745). v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
+  registry_alignment: "2026-09-28 — aligned to context/SYSTEM/STATUS_BRIEF.md v7.25. Some cited constraints are now Tier 3, Tier 1 or dead; each such passage is marked WITHDRAWN or SUSPENDED in place (see header note)."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
     AZC-ACT describes HOW vocabulary is positionally classified in AZC.
@@ -56,7 +64,7 @@ guarantees:
 
   - id: "FAMILY_AGNOSTIC_MECHANISM"
     statement: "AZC legality mechanism is family-agnostic"
-    provenance: "C430-C436, C441-C443"
+    provenance: "C430-C436, C441-C443"  # C433, C434, C435 in this range retracted (PHASE_742, serialization/transcription artifacts) and no longer count as support; C436's self-transition half also retracted
 
   - id: "ZONE_CATEGORY_SPECIALIZATION"
     statement: "AZC zones (R, C, S, P) have statistically distinct operational category profiles (V=0.084, p=0.000180)"
@@ -98,7 +106,7 @@ invariants:
 
   scaffold_independence:
     statement: "Legality zones are independent of scaffold presentation"
-    provenance: "C430-C436"
+    provenance: "C430-C436"  # C433, C434, C435 in this range retracted (PHASE_742) and no longer count as support; C436's self-transition half also retracted
 
   zone_atom_uniformity:
     statement: "AZC zones share the same raw atom-level (character) proportions (C1271) but differentiate at HEAD slot level (V=0.115, C1516). Uniformity is in character inventory; differentiation is in how atoms are deployed across functional slots."
@@ -114,7 +122,7 @@ invariants:
 
 # ============================================================
 category_organization:
-  provenance: "C1269-C1276"
+  provenance: "C1269-C1276"  # C1274 in this range demoted to Tier 3 (circular: THERMAL is defined by k/e atoms; PHASE_745/C2069); no subsection below rests on it
 
   zone_category_profiles:
     statement: "Zones specialize by operational category (chi2=52.18, V=0.084, p=0.000180)"
@@ -203,25 +211,28 @@ positional_zones:
 
 
     R_series:
+      status: "PARTLY WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. The ordering clauses (ordering, backward/skip FORBIDDEN, 'ordered interior stages') rest on C434, retracted in PHASE_742 as a transcription artifact: R1/R2/R3 are concentric rings recorded as depth-sorted blocks, so '0 backward' was forced by the sort (actual 3). 'Interior' rests on C435, also retracted. The per-subscript escape rates (C443) are live in the table."
       members: ["R1", "R2", "R3"]
-      ordering: "strictly forward (R1->R2->R3 only)"
-      backward_transitions: "FORBIDDEN"
-      skip_transitions: "FORBIDDEN"
-      function: "Ordered interior stages, progressive escape restriction"
-      escape_gradient: "decreasing (high to zero)"
+      ordering: "strictly forward (R1->R2->R3 only)"  # WITHDRAWN: C434 retracted (PHASE_742)
+      backward_transitions: "FORBIDDEN"  # WITHDRAWN: C434 retracted — '0 backward' was forced by the depth sort
+      skip_transitions: "FORBIDDEN"  # WITHDRAWN: C434 retracted (PHASE_742)
+      function: "Ordered interior stages, progressive escape restriction"  # WITHDRAWN: 'ordered stages' (C434) and 'interior' (C435) both retracted
+      escape_gradient: "decreasing (high to zero)"  # C443 (live): escape rate by subscript, see annotations.escape_rates
       restricted_to_ordered_subscript_family: true
-      observed_in: "Zodiac family (C432)"
-      provenance: "C432, C434, C443"
+      observed_in: "Zodiac family (C432)"  # C432 corrected in PHASE_742: near-exclusive to Zodiac (1298/1330); f57v, a multi-ring cosmological folio, also carries R1-R3
+      provenance: "C432, C434, C443"  # C434 retracted (PHASE_742); C432 corrected; C443 live
 
     S_series:
+      status: "PARTLY WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. 'Boundary markers' rests on C435, retracted in PHASE_742: S = boundary / R = interior is a locus-length tautology (S loci are short label loci, R loci long ring text). Zero escape at S (C443) and S2 < S1 (C320) are live in the table."  # [v7.26 status: C320 demoted to Tier 3 (transcription-order statistic, like retracted C433-C435)]
       members: ["S0", "S1", "S2"]
-      function: "Boundary markers, no intervention permitted"
+      function: "Boundary markers, no intervention permitted"  # 'Boundary markers' WITHDRAWN (C435 retracted); zero escape is C443 (live)
       escape_permission: "zero"
-      ordering: "S2 appears earlier than S1"
+      ordering: "S2 appears earlier than S1"  # C320 (live Tier 2); an order statistic not re-checked in the PHASE_742 serialization audit that retracted C433/C434 — flagged to maintainer
       restricted_to_ordered_subscript_family: true
-      observed_in: "Zodiac family (C432)"
-      provenance: "C320, C432, C435, C443"
+      observed_in: "Zodiac family (C432)"  # C432 corrected in PHASE_742: near-exclusive, not exclusive
+      provenance: "C320, C432, C435, C443"  # C435 retracted (PHASE_742); C432 corrected
 
+  zone_semantics_status: "PARTLY WITHDRAWN v7.24/7.25 — historical. The S = boundary / R = interior division below is C435, retracted in PHASE_742 (locus-length tautology); see context/SYSTEM/STATUS_BRIEF.md §3. The escape rates by position (C443) are live."
   zone_semantics: |
     Diagram positions only: C, R-series, S-series.
     Interior diagram positions (R-series, C) have moderate escape permission.
@@ -234,7 +245,7 @@ transformations:
 
   compatibility_grouping:
     observation: "Specialized vocabulary appears at distinct positions; combinations that don't occur reflect fixed positional encoding"
-    provenance: "C442, C475"
+    provenance: "C442, C475"  # C475 demoted to Tier 3: unobserved pairs are dominated by sparsity, not prohibition — the 'don't occur' clause is not evidence of prohibition (STATUS_BRIEF §3)
 
   escape_permission_changes:
     effect: "Same A-type has different intervention permission by position"
@@ -261,7 +272,7 @@ transformations:
         legal_tokens: "38 (0.8%)"
         additional_reduction: "85% beyond MIDDLE"
     legacy_claim: "Original ~80%/~96 of 480 was MIDDLE-only against token types"
-    provenance: "C481, C502, C502.a"
+    provenance: "C481, C502, C502.a"  # C481 retracted 2026-05-19 (survivor sets are not unique); the cascade figures are C502/C502.a (live)
 
   content_invariants:
     - "No movement of tokens"
@@ -281,8 +292,9 @@ persistence:
     provenance: "C444"
 
   restriction_inheritance:
+    status: "SUSPENDED v7.25 — rests only on C470, demoted to Tier 3 (PHASE_748: frequency carryover — after frequency control the AZC-to-B restriction link falls to partial rho 0.062; rare MIDDLEs are rare everywhere); historical, see C470 in context/CLAIMS/azc_system.md"
     statement: "MIDDLE restrictions transfer to B"
-    provenance: "C470"
+    provenance: "C470"  # demoted to Tier 3
 
 # ============================================================
 morphological_binding:
@@ -363,7 +375,7 @@ disallowed:
 
   - interpretation: "AZC expands vocabulary beyond A specification"
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B execution."
-    provenance: "C481, C502"
+    provenance: "C481, C502"  # C481 retracted 2026-05-19; C502 live
 
   - interpretation: "AZC diagram lines are thematically organized"
     reason: "No within-line category coherence (C1275, p=0.568). Category structure is zone-grain, not line-grain."
@@ -382,6 +394,8 @@ annotations:
     C: "17.1% (A/C family dominant)"
 
   interior_rates:
+    # v7.25: the R/S interior and line-edge rates track locus length (line-edge rate = 1/locus length),
+    # per the C435 retraction (PHASE_742) — historical, not evidence of an S/R functional division.
     C: "77.6%"
     R_series: "89-95%"
     S_series: "95%+ at line edges"
@@ -398,11 +412,12 @@ annotations:
     provenance: "C443"
 
   compatibility_statistics:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. C475 demoted to Tier 3: the 95.7% measured sparsity of the MIDDLE co-occurrence space, not prohibition (re-run gives 85.0%; the largest expected count among 'illegal' pairs is 2.51)."
     illegal_pair_rate: "95.7%"
     legal_pair_rate: "4.3%"
     illegal_pairs_count: 673342
     legal_pairs_count: 30394
-    provenance: "C475"
+    provenance: "C475"  # demoted to Tier 3 (sparsity, not prohibition)
 
   morphological_affinity:
     ac_enriched_prefixes: ["qo- (91%)", "ol- (81%)"]
@@ -420,8 +435,8 @@ annotations:
   persistence_statistics:
     a_vocab_placement_ratio: "2.2x more than AZC-only"
     high_multiplicity_coverage: "43% broader"
-    restriction_inheritance_ratio: "12.7x difference preserved"
-    provenance: "C343, C470"
+    restriction_inheritance_ratio: "12.7x difference preserved"  # SUSPENDED: C470 demoted to Tier 3 — the ratio is a frequency carryover, not preserved transfer
+    provenance: "C343, C470"  # C470 demoted to Tier 3; C343 live
 
 # ============================================================
 provenance:
@@ -438,7 +453,7 @@ provenance:
   vocabulary_correlation:
     - "C468"  # Legality inheritance
     - "C469"  # Categorical resolution principle
-    - "C470"  # MIDDLE restriction inheritance
+    - "C470"  # MIDDLE restriction inheritance — demoted to Tier 3 (frequency carryover)
 
   morphological_binding:
     - "C471"  # PREFIX encodes AZC family affinity
@@ -446,15 +461,15 @@ provenance:
     - "C473"  # A entry defines constraint bundle
 
   middle_incompatibility:
-    - "C475"  # MIDDLE atomic incompatibility
+    - "C475"  # MIDDLE atomic incompatibility — demoted to Tier 3 (sparsity, not prohibition)
 
   persistence:
     - "C343"  # A-AZC persistence independence
 
   ordered_subscript_family:
-    - "C432"  # Ordered subscript exclusivity
-    - "C434"  # R-series strict forward ordering
-    - "C435"  # S/R positional division
+    - "C432"  # Ordered subscript exclusivity — corrected in PHASE_742: near-exclusive, not exclusive (f57v)
+    - "C434"  # R-series strict forward ordering — retracted (PHASE_742, transcription artifact); historical
+    - "C435"  # S/R positional division — retracted (PHASE_742, locus-length tautology); historical
 
   invariants:
     - "C384"  # No entry-level A-B coupling
@@ -467,7 +482,7 @@ provenance:
     - "C1271"  # Zone raw atom-level uniformity (null at AXIS level)
     - "C1272"  # Bridge/dark zone sorting (V=0.117)
     - "C1273"  # AZC-exclusive MARKING/THERMAL vocabulary
-    - "C1274"  # Category predicts B escape (THERMAL rho=+0.780)
+    - "C1274"  # Category predicts B escape (THERMAL rho=+0.780) — demoted to Tier 3 (circular, PHASE_745)
     - "C1275"  # No within-zone spatial coherence (null)
     - "C1276"  # AZC sections converge on Pharma atom profile
 

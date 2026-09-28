@@ -1,5 +1,7 @@
 # SPECULATIVE - Tier 3-4 Content
 
+**Status (v7.25, 2026-09-28):** Most files here predate the September 2026 review and many rest on constructs since withdrawn (kernel, closed-loop control, LINK monitoring, hazard topology, recovery architecture, REGIME = fire degree, Testamentum matching); those files carry status banners. Where a file conflicts with the generated registry or SYSTEM/STATUS_BRIEF.md, those win — see SYSTEM/STATUS_BRIEF.md §3.
+
 **WARNING: THIS DIRECTORY CONTAINS NON-STRUCTURAL CLAIMS**
 
 ---
@@ -64,7 +66,7 @@ Content in this directory is:
 
 | Phase | Tier | Content |
 |-------|------|---------|
-| `phases/FM_PHY_1_failure_mode_alignment/` | 3 | Hazard distribution is natural for reflux |
+| `phases/FM_PHY_1_failure_mode_alignment/` | 3 | Hazard distribution is natural for reflux [hazard classes withdrawn: C2060, C2081] |
 | `phases/SSD_PHY_1a/` | 3 | Dimensionality is physics-forced (D ≥ 50) |
 | `phases/OJLM_1_operator_judgment/` | 3 | 13 judgment types operator must supply |
 
@@ -91,7 +93,7 @@ Summary in [INTERPRETATION_SUMMARY.md](INTERPRETATION_SUMMARY.md) Section I.O.
 
 **Inside Tier 2 (structural):**
 - Grammar structure
-- Hazard topology
+- Hazard topology [withdrawn v7.24/7.25: class level demoted (C783), taxonomy imposed (C2060), zeros reduce to composition (C2081)]
 - Morphological composition
 - Operational metrics
 

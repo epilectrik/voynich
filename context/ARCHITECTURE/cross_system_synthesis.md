@@ -4,6 +4,10 @@
 **Status:** COMPLETE
 **Tier:** 2
 
+> **Status note (v7.25, 2026-09-28).** Written before the September 2026 review; `SYSTEM/STATUS_BRIEF.md` and the
+> generated `CONSTRAINT_TABLE.txt` win on conflict. Kernel contact, LINK affinity, convergence to STATE-C and
+> "phase-encoded" position rest on constructs now withdrawn (STATUS_BRIEF §3) and are annotated where they occur.
+
 ---
 
 ## Executive Summary
@@ -14,7 +18,7 @@ Analysis of Currier A record structure (DA articulation, block repetition, posit
 
 ## What Transfers Across Systems
 
-### Global Type System (C383)
+### Global Type System (C383) [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 The PREFIX/MIDDLE/SUFFIX morphology and type dichotomy work **identically** in A, B, and AZC:
 
@@ -23,6 +27,8 @@ The PREFIX/MIDDLE/SUFFIX morphology and type dichotomy work **identically** in A
 | INTERVENTION | ch, sh, ok | 100% kernel contact | 100% kernel contact | 100% kernel contact |
 | MONITORING | da, sa | <5% kernel contact | <5% kernel contact | <5% kernel contact |
 | Morphology | Prefix+Middle+Suffix | Yes | Yes | Yes |
+
+*[C383 remains Tier 2 as registered. "Kernel contact" counts EVA letters k/h/e (kernel reading superseded, C089 → C2082; h is half the bench glyph, C1440), and the INTERVENTION/MONITORING labels rest on the withdrawn LINK-monitoring reading (C609, C1174). Treat the labels as historical.]*
 
 **This is the ONLY structural element that transfers perfectly across all three systems.**
 
@@ -47,6 +53,8 @@ The PREFIX/MIDDLE/SUFFIX morphology and type dichotomy work **identically** in A
 | Position | FREE (except initial) | DEPENDENT (phase-encoded) | CODED (99 forbidden pairs) |
 | Grammar | None (silhouette=0.049) | 49-class sequential | Hybrid |
 
+*[Status notes: B "convergence" is withdrawn — C074 is kept as occupancy only (57.8% of folios end in their dominant macro-state; no sequential convergence, C1401–C1403). B position dependence is measured as positional zones (C956) and boundary glyph coupling (C1212, C1563); "phase-encoded" is the C382 reading, whose labels rest on withdrawn constructs. The AZC "99 forbidden pairs" (C309, Tier 2) are placement-code transitions — the same kind of measurement as C433/C434, which were retracted in PHASE_742 as transcription-serialization artifacts; C309 has not been re-audited.]*
+
 ### Closure Mechanisms
 
 Both A and B have closure strategies, but they differ:
@@ -57,6 +65,8 @@ Both A and B have closure strategies, but they differ:
 | Currier B | **Execution closure** | 57.8% folios terminate in STATE-C |
 
 These are **functionally equivalent** at the conceptual level (both represent "completion") but structurally distinct.
+
+*[Historical: "execution closure" rests on convergence to STATE-C, which is withdrawn; C074 is occupancy only (C1401–C1403). See STATUS_BRIEF §3.]*
 
 ---
 
@@ -136,11 +146,13 @@ These are **tendencies** (2-7% effect), not rules. All prefixes appear at all po
 
 ### Currier B (Phase-Encoded)
 
-B expresses positional preferences through **morphological phase encoding** (C382):
+B expresses positional preferences through **morphological phase encoding** (C382; Tier 2, labels rest on withdrawn kernel/LINK readings):
 - KERNEL-HEAVY prefixes (ch, sh, ok): 100% kernel contact, LINK-avoiding
 - KERNEL-LIGHT prefixes (da, sa): <5% kernel contact, LINK-attracted
 
 **Same signal, different expression:** Both A and B show prefix-position associations, but A uses block structure while B uses kernel topology.
+
+*[Status: the kernel/LINK readings above are withdrawn (C089 superseded by C2082; C609, C1174). B's measured position structure is positional zones (C956), boundary glyph coupling (C1212, C1563) and word-ending routing (C2082).]*
 
 ---
 
@@ -152,7 +164,7 @@ B expresses positional preferences through **morphological phase encoding** (C38
            Registry                 Programs                     Diagrams
 
 Structure: Entry → DA → Entry      Line → Line → Line          Placement → Placement
-           [blocks repeat]          [converges to STATE-C]       [spatially coded]
+           [blocks repeat]          [converges to STATE-C]*      [spatially coded]
 
 Position:  FREE (block-relative)   DEPENDENT (phase-encoded)   CODED (placement-locked)
 
@@ -160,8 +172,10 @@ Grammar:   None                     49-class sequential          Hybrid (99 forb
 
 DA Role:   Entry/segment boundary   Line boundary               Central diagram position
 
-Type:      UNIFIED (C383)          UNIFIED (C383)              UNIFIED (C383)
+Type:      UNIFIED (C383)          UNIFIED (C383)              UNIFIED (C383) [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 ```
+
+\* Withdrawn: convergence to STATE-C (C074 occupancy only; C1401–C1403). "[blocks repeat]" for A is also historical — block repetition was invalidated (C250, 0% with H-only data).
 
 ---
 
@@ -170,11 +184,11 @@ Type:      UNIFIED (C383)          UNIFIED (C383)              UNIFIED (C383)
 | # | Constraint | System |
 |---|------------|--------|
 | C267 | Compositional morphology | A |
-| C383 | Global type system | All |
+| C383 | Global type system | All [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)] |
 | C384 | No entry-level coupling | A↔B |
 | C422 | DA articulation | A |
-| C357-360 | Line structure | B |
-| C313-320 | Placement coding | AZC |
+| C357-360 | Line structure | B [v7.26 status: C359 demoted to Tier 3 (conflicts with C805 (weaker method))] |
+| C313-320 | Placement coding | AZC [v7.26 status: C320 demoted to Tier 3 (transcription-order statistic, like retracted C433-C435)] |
 
 ---
 
@@ -184,7 +198,7 @@ Type:      UNIFIED (C383)          UNIFIED (C383)              UNIFIED (C383)
 |----------|--------|
 | Does A structure transfer to B? | **No** - only type system transfers |
 | Is daiin a universal articulator? | **Yes** - but adapts to context (boundary vs spatial) |
-| Are A repetition and B convergence equivalent? | **Conceptually** (both = closure), **not structurally** |
+| Are A repetition and B convergence equivalent? | **Conceptually** (both = closure), **not structurally** [historical: A block repetition invalidated (C250); B convergence withdrawn (C074 occupancy only)] |
 | Does AZC follow A or B? | **Neither** - unique placement-coded hybrid |
 
 ---

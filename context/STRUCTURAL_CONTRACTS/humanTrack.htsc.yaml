@@ -1,10 +1,16 @@
-# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
-# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
-# listed below is SUSPENDED until the contract is regenerated from live constraint status.
+# REGISTRY STATUS NOTE (2026-09-27; aligned to context/SYSTEM/STATUS_BRIEF.md v7.25 on 2026-09-28;
+# drift check: scripts/registry_integrity_check.py)
+# This contract predates the 2026-05/06 audits and the 2026-09 review. On 2026-09-28 every item resting on a
+# withdrawn or demoted construct was given a status line (WITHDRAWN / SUSPENDED / MIXED) and kept for
+# traceability; items without one present live Tier 0-2 measurements.
 #   DEMOTED to Tier 3: C461, C475, C488, C489, C872
 #   DEAD (retracted / superseded): C172
 #   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C085, C120, C171
-# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
+#   Withdrawn constructs this contract used (STATUS_BRIEF §3): the forbidden-transition / hazard layer
+#   (C109 scoped; C783, C2060, C2081) and LINK as a monitoring operator (C609, C1174). Rows that measure HT
+#   against those constructs (C166, C169, C217, C1078; C342, C802, C806) are still Tier 2 in the table.
+# Authority order: context/CONSTRAINT_TABLE.txt > context/CLAIMS/INDEX.md > STATUS_BRIEF.md > this file.
+# Drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 
 meta:
@@ -13,6 +19,7 @@ meta:
   version: "1.1"
   date: "2026-02-15"
   status: "ACTIVE"
+  registry_alignment: "Aligned to STATUS_BRIEF v7.25 on 2026-09-28; items resting on withdrawn/demoted constructs carry a status line"
   layer_type: "cross-system layer contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 two-axis model clearly marked"
   governance: |
@@ -104,12 +111,13 @@ guarantees:
     provenance: "C416"
 
   - id: "HAZARD_AVOIDANCE"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. The forbidden-transition layer it measures against no longer stands as a prohibition layer (C109 scoped; C783, C2060, C2081). The counts in C166/C169/C1078 remain Tier-2 rows but do not describe avoidance of a hazard layer."
     statement: |
       0/35 HT tokens at forbidden transition seams; average distance 4.84 (vs 2.5 expected).
       Mechanism: vocabulary-level exclusion (C1078). Only 5/7042 HT tokens participate in
       forbidden vocabulary at all. Avoidance is lexical, not positional — HT words simply
       do not appear in C109 forbidden pairs. Boundary position does not modulate distance.
-    provenance: "C166, C169, C1078"
+    provenance: "C166, C169, C1078 [WITHDRAWN as a guarantee: hazard layer, C2081]"
 
   - id: "LINE1_ENRICHMENT"
     tier: 0
@@ -158,8 +166,9 @@ guarantees:
     provenance: "C459"
 
   - id: "TAIL_CORRELATION"
+    status: "MIXED — r=0.504 stands (C477, Tier 2); the 'tail_pressure explains 68%' clause rests on C461, demoted to Tier 3 (SUSPENDED)"
     statement: "HT density tracks MIDDLE rarity (r=0.504, p=0.0045); tail_pressure explains 68% of R-sq=0.279"
-    provenance: "C477, C461"
+    provenance: "C477, C461 [C461 demoted to Tier 3]"
 
 # ============================================================
 invariants:
@@ -194,9 +203,10 @@ invariants:
       but lane-INDIFFERENT in transitions (same-lane rate 37.7% = expected 37.9%, lift=0.994x)
     provenance: "C743, C744"
 
-  - id: "C475_COMPLIANCE"
+  - id: "C475_COMPLIANCE"  # SUSPENDED: C475 demoted to Tier 3
+    status: "SUSPENDED v7.24/7.25 — see STATUS_BRIEF §3. MIDDLE incompatibility (C475) is demoted to Tier 3: the percentage measured sparsity, not prohibition. C742 itself records compliance 'by structural sparsity' (0.69% vs 0.63% classified baseline)."
     statement: "HT obeys MIDDLE incompatibility when adjacent to classified tokens (violation rate 0.69%)"
-    provenance: "C742"
+    provenance: "C742 [rests on C475, demoted to Tier 3]"
 
   - id: "FOLIO_COMPENSATORY"
     statement: "HT density anti-correlated with folio grammar coverage (r=-0.376)"
@@ -207,8 +217,9 @@ invariants:
     provenance: "C803"
 
   - id: "LINK_POSITIVE_ASSOCIATION"
+    status: "MIXED — the count stands as an 'ol'-morphology measurement (C806, Tier 2: HT contains 'ol' at 16.6% vs 11.7%); LINK as a monitoring operator is withdrawn (C609: true density 13.2%; C1174: morphological artifact of 'ol'). See STATUS_BRIEF §3."
     statement: "HT shows positive LINK association: OR=1.50 (p<0.001), 38.3% of LINK tokens are HT"
-    provenance: "C806"
+    provenance: "C806 [LINK operator reading withdrawn: C609, C1174]"
 
 # ============================================================
 cross_system_manifestation:
@@ -230,6 +241,7 @@ cross_system_manifestation:
     anchoring: "Temporal/attentional context"
     density: 0.149
     program_stratification: "EXTREME 15.9% > HIGH 10.4% > MODERATE 8.5% > LOW 5.7% (C341)"
+    link_status: "LINK entries below are measurements on 'ol'-bearing tokens; the LINK monitoring reading is withdrawn (C609, C1174; STATUS_BRIEF §3)"
     link_decoupling: "rho=0.010 (C342), but OR=1.50 positive association (C806)"
     link_proximity: "Body HT 2.53 vs 3.08 distance to LINK (C802)"
     escape_correlation: "rho=0.377, body-driven not line-1-driven (C796, C800)"
@@ -238,13 +250,13 @@ cross_system_manifestation:
     phase_synchrony: "EARLY (op-, pc-, do-), LATE (ta-); V=0.136 (p<0.0001) (C348)"
     grammar_trigger: "Preceding ch- -> 1.94x LATE enrichment (C413)"
     novel_combinations: "11.19% novel MIDDLE pairs; 90.7% HT-exclusive MIDDLEs (C812)"
-    strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
+    strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488, demoted to Tier 3 — SUSPENDED)"
     morphology_b: "-edy complex forms favored (C347, C348)"
     dark_pipeline_substrate: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens (1,696 tokens, 0 grammar) — identification vocabulary channel distinct from grammar channel (C1137, C1138)"
     dark_pipeline_line_position: "Dark-pipeline HT tokens are interior-enriched (73.2% MIDDLE vs general HT 67.7%, chi-sq p<0.0001) — fills line interior rather than anchoring boundaries (C1147)"
     dark_pipeline_modulation: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline (JS=0.483 vs 0.124); primary vehicle for section-level HT vocabulary modulation (C1148)"
     dark_bridge_tradeoff: "Dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); folios allocate between identification and grammar channels (C1146)"
-    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138, C1146, C1147, C1148"
+    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138, C1146, C1147, C1148"  # C488 demoted to Tier 3
 
   azc:
     anchoring: "Diagram geometry"
@@ -287,9 +299,9 @@ paragraph_header:
   prefix_markers: "pch- 16.9% + po- 16.6% = 33.5% of paragraph initiators (C843)"
 
   body_ht:
-    vocabulary: "80.1% PP morphology (C085 primitives) (C801)"
+    vocabulary: "80.1% PP morphology (C085 primitives) (C801) [C085 demoted to Tier 3: an EVA letter inventory, not primitives]"
     boundary_enrichment: "first=45.8%, last=42.9%, middle=25.7% (C803)"
-    link_proximity: "2.53 vs 3.08 distance to LINK (C802)"
+    link_proximity: "2.53 vs 3.08 distance to LINK (C802) [LINK = 'ol'-bearing tokens; monitoring reading withdrawn, C1174]"
     jaccard_with_line1: "0.122 (very low overlap — different HT populations) (C801)"
 
   provenance: "C801, C802, C803, C840, C842, C843, C851"
@@ -338,6 +350,7 @@ morphology:
 operational_status:
 
   tier0_facts:
+    tier_note: "Key name is historical: in the generated table C404 and C405 are Tier 2 and C415 is Tier 1 (falsification tier); none of the three is Tier 0"
     terminal_independence: "p=0.92 (C404)"
     causal_decoupling: "V=0.10 (C405)"
     non_predictive: "MAE worsens by 0.003-0.005 (C415)"
@@ -365,12 +378,13 @@ operational_status:
 # [TIER 3] Two-Axis Model
 two_axis_model:
   tier: 3
-  status: "WORKING — plausible but not promotable without external evidence"
+  status: "SUSPENDED v7.24/7.25 — historical Tier-3 model; see STATUS_BRIEF §3. Its supports C461, C488 and C489 are demoted to Tier 3, and C1080 (Tier 2) rejects its compound-rate prediction. Only C477 (r=0.504) remains a Tier-2 measurement."
+  prior_status: "WORKING — plausible but not promotable without external evidence"
 
   density_axis:
     description: "Tracks upcoming discrimination complexity"
     evidence: "r=0.504 with tail MIDDLEs (C477)"
-    driver: "tail_pressure explains 68% of R-sq=0.279 (C461)"
+    driver: "tail_pressure explains 68% of R-sq=0.279 (C461, demoted to Tier 3)"
 
   morphology_axis:
     description: "Tracks spare cognitive capacity"
@@ -383,9 +397,9 @@ two_axis_model:
       wins: compound rate tracks specification density, not cognitive simplicity.
       The morphology axis may still apply to other complexity measures but NOT compound rate.
 
-  strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
+  strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488, demoted to Tier 3)"
 
-  provenance: "C461, C477, C488, C489, C1080"
+  provenance: "C461, C477, C488, C489, C1080"  # C461, C488, C489 demoted to Tier 3
 
 # ============================================================
 disallowed_interpretations:
@@ -406,6 +420,7 @@ disallowed_interpretations:
     refutation: "C414 (chi2=934, p<10^-145 grammar association)"
 
   - claim: "HT marks specific hazard zones"
+    status: "WITHDRAWN v7.24/7.25 — historical; see STATUS_BRIEF §3. Both the claim and its refutation presuppose the forbidden-transition / hazard layer, which no longer stands (C783, C2060, C2081)."
     refutation: "C166 (0/35 at forbidden seams), C217 (0 true HT near hazards)"
 
   - claim: "HT is production-driven / codicologically organized"
@@ -423,14 +438,14 @@ provenance:
   # HT-OWNED constraints (HTSC is authoritative source)
   owned:
     structural_properties:
-      - {id: "C166", topic: "Zero forbidden seam presence"}
+      - {id: "C166", topic: "Zero forbidden seam presence", status: "Tier 2 row; hazard layer withdrawn (C2081), historical"}
       - {id: "C167", topic: "80.7% section-exclusive"}
       - {id: "C168", topic: "Single unified layer"}
-      - {id: "C169", topic: "Hazard avoidance (4.84 distance)"}
+      - {id: "C169", topic: "Hazard avoidance (4.84 distance)", status: "Tier 2 row; hazard layer withdrawn (C2081), historical"}
       - {id: "C170", topic: "Morphologically distinct"}
     program_stratification:
       - {id: "C341", topic: "HT-program stratification (EXTREME/HIGH/MODERATE/LOW)"}
-      - {id: "C342", topic: "HT-LINK decoupling (rho=0.010)"}
+      - {id: "C342", topic: "HT-LINK decoupling (rho=0.010)", status: "LINK monitoring reading withdrawn (C609, C1174)"}
       - {id: "C344", topic: "HT-A inverse coupling (rho=-0.367)"}
     morphology_and_synchrony:
       - {id: "C347", topic: "Disjoint prefix vocabulary, 71.3% decomposition"}
@@ -452,17 +467,17 @@ provenance:
       - {id: "C451", topic: "System stratification (A > AZC > B)"}
       - {id: "C452", topic: "Unified vocabulary (Jaccard >= 0.947)"}
       - {id: "C453", topic: "Adjacency clustering (1.69x)"}
-      - {id: "C461", topic: "Tail pressure driver (68% of R-sq)"}
+      - {id: "C461", topic: "Tail pressure driver (68% of R-sq)", status: "demoted to Tier 3"}
       - {id: "C477", topic: "Tail correlation (r=0.504)"}
     strategy:
-      - {id: "C488", topic: "Strategy prediction (CAUTIOUS/OPPORTUNISTIC)"}
-      - {id: "C489", topic: "Two-axis model coherence"}
+      - {id: "C488", topic: "Strategy prediction (CAUTIOUS/OPPORTUNISTIC)", status: "demoted to Tier 3"}
+      - {id: "C489", topic: "Two-axis model coherence", status: "demoted to Tier 3"}
     pp_ht_interaction:
       - {id: "C507", topic: "PP-HT partial responsibility substitution"}
     un_population:
       - {id: "C740", topic: "HT = UN population identity"}
-      - {id: "C741", topic: "C475 minimal participation"}
-      - {id: "C742", topic: "C475 compliance (0.69% violation)"}
+      - {id: "C741", topic: "C475 minimal participation", status: "Tier 2 row; C475 demoted to Tier 3 (sparsity, not prohibition)"}
+      - {id: "C742", topic: "C475 compliance (0.69% violation)", status: "Tier 2 row; C475 demoted to Tier 3 (sparsity, not prohibition)"}
       - {id: "C743", topic: "Lane segregation (chi2=278.71)"}
       - {id: "C744", topic: "Lane indifference (lift=0.994x)"}
       - {id: "C745", topic: "Coverage metric sensitivity"}
@@ -484,9 +499,9 @@ provenance:
       - {id: "C799", topic: "Line-1 PP independence from body PP"}
       - {id: "C800", topic: "Body HT drives escape correlation"}
       - {id: "C801", topic: "Body HT primitive vocabulary (80.1% PP)"}
-      - {id: "C802", topic: "Body HT LINK proximity (2.53 vs 3.08)"}
+      - {id: "C802", topic: "Body HT LINK proximity (2.53 vs 3.08)", status: "LINK monitoring reading withdrawn (C609, C1174)"}
       - {id: "C803", topic: "Body boundary enrichment (first/last/middle)"}
-      - {id: "C806", topic: "LINK-HT positive association (OR=1.50)"}
+      - {id: "C806", topic: "LINK-HT positive association (OR=1.50)", status: "LINK monitoring reading withdrawn (C609, C1174)"}
       - {id: "C812", topic: "Novel MIDDLE combinations (11.19%)"}
     paragraph_header:
       - {id: "C840", topic: "Paragraph header HT enrichment (44.9%)"}
@@ -497,7 +512,7 @@ provenance:
     folio_specificity:
       - {id: "C870", topic: "Line-1 folio specificity (85.9% singletons)"}
       - {id: "C871", topic: "HT role cooccurrence pattern"}
-      - {id: "C872", topic: "HT discrimination vocabulary"}
+      - {id: "C872", topic: "HT discrimination vocabulary", status: "demoted to Tier 3 (interpretation)"}
     ri_ht:
       - {id: "C924", topic: "HT-RI shared derivation (97.9% PP atoms)"}
       - {id: "C926", topic: "HT-RI anti-correlation (0.48x)"}
@@ -515,18 +530,18 @@ provenance:
       - {id: "C1147", topic: "Dark pipeline interior-enriched (73.2% MIDDLE)"}
       - {id: "C1148", topic: "Dark pipeline hyper-modulated (3.9x JS baseline)"}
     interaction_architecture:
-      - {id: "C1078", topic: "Hazard avoidance vocabulary-level, not positional"}
+      - {id: "C1078", topic: "Hazard avoidance vocabulary-level, not positional", status: "Tier 2 row; hazard layer withdrawn (C2081), historical"}
       - {id: "C1079", topic: "Line-1 exclusivity = folio-specificity tautology"}
       - {id: "C1080", topic: "Tail-compound specification correlation (rho=0.367)"}
-      - {id: "C1081", topic: "LINK-HT prefix phase independent"}
+      - {id: "C1081", topic: "LINK-HT prefix phase independent", status: "LINK monitoring reading withdrawn (C609, C1174)"}
       - {id: "C1082", topic: "HT oscillation is section-driven"}
       - {id: "C1083", topic: "HT paragraph-ordinal neutral"}
 
   # HT-REFERENCED constraints (primary home is another contract)
   referenced:
     from_bcsc:
-      - {id: "C120", topic: "PURE_OPERATIONAL verdict excludes HT"}
-      - {id: "C217", topic: "0 true HT near hazards (hazard topology)"}
+      - {id: "C120", topic: "PURE_OPERATIONAL verdict excludes HT", status: "demoted to Tier 3 by the Tier-0 restatement (2026-09-28)"}
+      - {id: "C217", topic: "0 true HT near hazards (hazard topology)", status: "Tier 2 row; hazard layer withdrawn (C2081), historical"}
       - {id: "C611", topic: "99.2% role prediction by PREFIX"}
     from_azc_act:
       - {id: "C439", topic: "Folio-specific HT profiles in AZC"}
@@ -542,8 +557,8 @@ provenance:
       - {id: "C350", topic: "HT+B hybrids"}
       - {id: "C351", topic: "HT classification"}
       - {id: "C354", topic: "HT orientation intact"}
-      - {id: "C172", topic: "SUPERSEDED by C342"}
-      - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
+      - {id: "C172", topic: "SUPERSEDED by C342", status: "dead (absent from the generated table)"}
+      - {id: "C171", topic: "Closed-loop only verdict (B grammar)", status: "demoted to Tier 3 by the Tier-0 restatement; all four closed-loop legs withdrawn"}
       - {id: "C841", topic: "Paragraph gallows-initial markers (paragraph structure)"}
 
   total_owned: 84

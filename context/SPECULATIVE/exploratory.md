@@ -62,6 +62,8 @@ Interpretation: Grammar provides different "slack" for operator error. May serve
 
 ## Author Intent (via Failures)
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (the five percentages are the imposed hazard taxonomy, C2060)
+
 "The book encodes my fears, so that you do not have to learn them through loss."
 
 What the author feared most:
@@ -85,7 +87,7 @@ What the author feared most:
 - What institution supported it?
 - Why was this level of documentation created?
 
-### Interpretive (may never be answerable)
+### Interpretive (may never be answerable) [v7.25: retired closure language (strategic review §5) — these questions stay open]
 - What specific products were made?
 - What specific apparatus was used?
 - What language(s) did the operators speak?

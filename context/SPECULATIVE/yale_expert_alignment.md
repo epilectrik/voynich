@@ -57,7 +57,7 @@
 
 **Yale:** "It has absolutely no context... there isn't even any illustrative context to help you get a handle on what this might be."
 
-**Our model:** C196-C197 establish expert-only reference mode.
+**Our model:** C196-C197 establish expert-only reference mode. [v7.26 status: C196, C197 demoted to Tier 3 (invented archetype)]
 
 **Status:** ALIGNED - Directly confirms expert-only constraint.
 
@@ -67,7 +67,7 @@
 
 **Yale:** "The trap that people fall into is they think oh well that looks like [X] therefore the manuscript must be from [Y]... those similarities could just be coincidences."
 
-**Our model:** C88 (FALSIFIED) - Illustrations are epiphenomenal to grammar.
+**Our model:** C88 (FALSIFIED) - Illustrations are epiphenomenal to grammar. [historical number: C088 is not in the current registry; the claim is carried by C140 and C138]
 
 **Status:** ALIGNED - Expert warns against illustration-based interpretation.
 
@@ -90,7 +90,7 @@
 - Pharmaceutical (vessels, ingredients)
 - Balneological (bathing/waterworks)
 
-**Our model:** C384 (No A-B entry coupling), C171 (zero material encoding).
+**Our model:** C384 (No A-B entry coupling), C171 (zero material encoding; demoted to Tier 3 2026-09-28).
 
 **Status:** ALIGNED - Same structural division.
 

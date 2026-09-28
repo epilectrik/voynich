@@ -4,6 +4,8 @@
 
 > **Purpose:** Adversarial probes to test whether ECR-1 material class structure resists collapse.
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** These probes reason over the C109 hazard taxonomy (PHASE_ORDERING, COMPOSITION_JUMP), which was imposed by keyword-matching, not discovered (C2060); the class level is demoted (C783) and the token-level zeros reduce to line composition, zones and boundary coupling (C2081). The range C109–C114 is cited below as "sister-pair equivalence", but C109–C112 are the forbidden-transition rows and C113–C114 were never registered; the sister-pair rows are C408–C410. The "Tier: 2" label in the header predates the fit-tier system — F-ECR-001 is an F3 fit, and no fit constrains the model. Text kept for traceability.
+
 ---
 
 ## Methodology

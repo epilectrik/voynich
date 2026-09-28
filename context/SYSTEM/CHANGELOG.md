@@ -4,6 +4,61 @@
 
 ---
 
+## Version 7.26 (2026-09-28) — Context-system alignment (registry fixes, cascade, living docs)
+
+### Summary
+The context system was aligned to the live registry, so that sessions and expert agents stop reading withdrawn
+constructs as structure. Human mandate: "modify the repo as you see fit … get the context system in shape".
+
+### Registry
+| Change | Detail |
+|---|---|
+| Generator bug fixed | `generate_constraint_table.py` row regexes could match across line breaks, so a struck row swallowed the row after it. 14 rows were silently missing: C132 (Tier 1, language encoding), 12 Currier A rows (C695–C720), and C1977/C1978 (four-cell rows, now given a scope cell) |
+| Stray Tier 0 | C670–C681, C747, C748, C750 carried a leftover Tier-0 label. Re-tiered to Tier 2: Tier 0 now holds only the restated conclusion (C121, C124) |
+| Dependency cascade | 31 rows Tier 2 → 3: OPS hazard/recovery composites, LINK-as-monitoring, kernel-contact spelling identity, transcription-order statistics, REGIME/control readings, rows contradicted by later tests (C325/C1401, C932/C933/C965/C1259, C1025/C2063). C359 vs C805 resolved for C805. 67 rows scope-tagged at Tier 2: measurements of a defined set (the 17 zero pairs, 'ol' tokens, k/h/e glyph counts), not of a hazard or monitoring layer |
+| Integrity checker | Now scans README, WHAT_WE_CLAIM, ARCHITECTURE, OPERATIONS, METRICS, MAPS, TERMINOLOGY and the new SYSTEM docs. Tier-3 rows that were speculative from the start are no longer counted as demoted; Tier 0–2 rows that mention "DEMOTED" are live; range interiors are not flagged |
+
+Counts: 1,889 live (T0 2, T1 38, T2 1,679, T3 166, T4 4). Unannotated citations of non-live constraints in living
+documents: 661 → 9 (the 9 are in two user-owned files left untouched).
+
+### Living documents
+- **New:** `SYSTEM/STATUS_BRIEF.md` (what stands, what is withdrawn, how to annotate); `SYSTEM/RESEARCH_AGENDA.md` (open
+  questions ranked by what they resolve; the top item is the human-gibberish control).
+- **Working interpretation reworded:** "procedural notation — a family of programs for a process", with no
+  distinguishing measurement. Applied in CLAUDE.md, frozen_conclusion, README, WHAT_WE_CLAIM, CLAUDE_INDEX and
+  INTERPRETATION_SUMMARY.
+- **CLAUDE.md:**
+  - the BCSC and paragraph priority rules no longer point to kernel, hazard, convergence, LINK or recovery as live
+    structure;
+  - contracts carry a pre-review caution;
+  - the atom glosses in the library example are marked as role hypotheses;
+  - the C171 "semantic ceiling" prior is reworded: nothing has been recovered from internal structure alone, and
+    recovery needs an external channel.
+- **Structural contracts (all 7):** sections resting on withdrawn constructs carry `status: WITHDRAWN` / `SUSPENDED`.
+  BCSC has a `current_summary`; the AZC-B-ACT headline is restated without C470; Brunschwig is labelled a Tier-3
+  mapping. All still load as YAML.
+- **Other docs:**
+  - MODEL_CONTEXT v4.0 opens with a current-state section;
+  - INTERPRETATION_SUMMARY has a status block, 32 section banners and closure language annotated;
+  - 34 other SPECULATIVE files carry status banners;
+  - the ARCHITECTURE and CORE docs and the OPERATIONS, METRICS, MAPS and TERMINOLOGY folders are aligned;
+  - 45 fits are annotated; the crazy-expert stance is updated.
+- **Expert agents:** the generator embeds STATUS_BRIEF first in all three agents (the lean expert included) and the
+  research agenda in the full ones. Contract signatures now carry each item's WITHDRAWN/SUSPENDED status.
+- **Library:** the `ATOM_GLOSSES` comment in `scripts/voynich.py` states that the glosses are role hypotheses.
+
+### Open decisions (listed in RESEARCH_AGENDA debts)
+- C1005: Tier 4, possibly a Tier-1 falsification.
+- C179: scope-tagged; demotion defensible.
+- C311, C456: possibly retract.
+- C193–C195.
+- C894's stale numbers.
+- Two LINK definitions (C861, C609).
+- Partly-built-in OPS correlations.
+- The 479 vs 480 type count.
+
+---
+
 ## Version 7.25 (2026-09-28) — PHASE_763: glyph-level kernel re-test (MIXED; C2082 supersedes C089)
 
 ### Summary

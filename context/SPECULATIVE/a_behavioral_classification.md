@@ -1,8 +1,10 @@
 # Currier A Behavioral Classification
 
+**Status (v7.25, 2026-09-28):** Parts of this file rest on withdrawn supports — the "Scientific Confidence Tightening" evidence (B3 k-adjacent forbidden transitions and B5 e-recovery: kernel claim superseded by C2082, hazard layer withdrawn by C2060/C2081, recovery layer a frequency shadow per C458), the Brunschwig-degree alignment (REGIME = fire degree retired, C1712, C2070), the "CONFIRMED" Puff–Voynich curriculum premise (retired as evidence, strategic review §5) and C476 hub rationing (retracted). The HIGH confidence band and the distillation selection are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** SUPPORTED | **Date:** 2026-01-12
 
-> Entity-level identification (specific plants, substances) is probably irrecoverable by design. This analysis identifies OPERATIONAL ROLES, not specific referents.
+> Entity-level identification (specific plants, substances) is probably irrecoverable by design. This analysis identifies OPERATIONAL ROLES, not specific referents. [v7.25: scoped to internal structural analysis; the identification question stays open]
 
 ---
 
@@ -24,7 +26,7 @@ The PREFIX → Operational Domain mapping rests on **Tier-2, grammar-anchored ev
 |----------|------------|---------------|
 | B-enrichment ratios | C282, C286 | ct is 7x A-enriched; qo/ol are B-enriched |
 | Grammar role assignments | Canonical grammar | ch/qo = ENERGY_OPERATOR; da/ol = CORE_CONTROL |
-| Kernel adjacency | C397-398 | qo is escape-heavy, kernel-adjacent |
+| Kernel adjacency | C397-398 | qo is escape-heavy, kernel-adjacent [kernel reading superseded, C2082] |
 | Terminal absence | C282 | ct is 0% of B terminals |
 
 The inference chain is **short**:
@@ -65,7 +67,7 @@ This is **not speculative chemistry**. It is a re-use of validated structure.
 
 **What this means:** Operations requiring fine discrimination occupy far more vocabulary space than operations involving stable, well-known referents. This gradient:
 - Survives section conditioning
-- Persists despite hub rationing (C476)
+- Persists despite hub rationing (C476, retracted: broken baseline)
 - Mirrors HT tail pressure effects (C477)
 
 *Tier-3 interpretation:* This is consistent with fractionation processes where many similar items must be distinguished, versus stable infrastructure requiring minimal differentiation.
@@ -162,9 +164,9 @@ The distillation/thermal-chemical hypothesis was subjected to rigorous direction
 |------|--------|---------|
 | B1: Discrimination hierarchy | PASS | ENERGY >> FREQUENT >> REGISTRY (564 > 164 > 65) |
 | B2: Normalized dominance | INFORMATIVE | FREQUENT has higher turnover; ENERGY reuses MIDDLEs |
-| B3: Failure boundaries | PASS | 100% k-adjacent forbidden transitions |
+| B3: Failure boundaries | PASS | 100% k-adjacent forbidden transitions [withdrawn: hazard layer, C2081; kernel, C2082] |
 | B4: Regime ordering | PASS | Monotonic CEI: 0.367 < 0.510 < 0.584 < 0.717 |
-| B5: Recovery dominance | PASS | e-recovery 1.64x enriched vs baseline |
+| B5: Recovery dominance | PASS | e-recovery 1.64x enriched vs baseline [withdrawn: recovery architecture, C458 demoted] |
 | B6: AZC compression | PASS (partial) | Section-level diversity confirmed |
 
 ### Negative Controls (NC1-NC4): 4/4 STRONG EXCLUSION
@@ -178,7 +180,7 @@ The distillation/thermal-chemical hypothesis was subjected to rigorous direction
 
 ### Classification
 
-**Confidence Band:** HIGH (80-85%)
+**Confidence Band:** HIGH (80-85%) [historical — key evidence items 1–2 are withdrawn; see banner]
 **Interpretation:** Distillation selected by convergence AND exclusion
 
 **Key evidence:**
@@ -204,7 +206,7 @@ The distillation/thermal-chemical hypothesis was subjected to rigorous direction
 | C282 (enrichment patterns) | ct 7x A-enriched; ol 5x B-enriched |
 | C408/C409 (sister equivalence) | Sister pairs as mode selectors |
 | C466/C467 (PREFIX = control-flow) | Direct structural grounding |
-| C476 (hub rationing) | Gradient persists despite rationing |
+| C476 (hub rationing; retracted: broken baseline) | Gradient persists despite rationing |
 | C477 (HT correlation) | Discrimination aligns with vigilance |
 
 ---
@@ -258,13 +260,13 @@ The distillation/thermal-chemical hypothesis was subjected to rigorous direction
 
 ### Context
 
-Following the CONFIRMED Puff-Voynich curriculum hypothesis (5/5 tests pass), we tested whether Currier A's morphological discrimination aligns with historically documented procedure classes.
+Following the CONFIRMED Puff-Voynich curriculum hypothesis (5/5 tests pass) [v7.25: Puff–Voynich alignment retired as evidence, strategic review §5], we tested whether Currier A's morphological discrimination aligns with historically documented procedure classes.
 
 ### Hypothesis (Model-Safe)
 
 > Currier A discriminates operational affordance profiles that align with historically documented procedure classes.
 
-C171 ("zero material encoding") remains unchanged and is NOT reinterpreted.
+C171 ("zero material encoding") remains unchanged and is NOT reinterpreted. [v7.25: C171 since demoted to Tier 3]
 
 ### Test Battery Results: 5/5 PASS - STRONG
 
@@ -289,7 +291,7 @@ C171 ("zero material encoding") remains unchanged and is NOT reinterpreted.
 | First (balneum) | Broad compatibility | Universal MIDDLEs enriched in AZC |
 | Second (warm) | Standard commitment | ch/sh balanced |
 | Third (seething) | Narrow compatibility | Exclusive MIDDLEs, qo enriched |
-| Fourth (forbidden) | Categorical prohibition | 17 forbidden transitions |
+| Fourth (forbidden) | Categorical prohibition | 17 forbidden transitions [withdrawn: zeros reduce to composition, C2081] |
 | Anomalous | Non-thermal | ct depleted, f85v2 profile |
 
 ### Plain Language Summary
@@ -311,7 +313,7 @@ The worries are the same. The names are absent.
 ### Execution Rules Followed
 
 1. No claim that A "encodes" materials - affordance profiles only
-2. No reinterpretation of C171 - remains unchanged
+2. No reinterpretation of C171 - remains unchanged (C171 since demoted to Tier 3, 2026-09-28)
 3. All tests framed in operational affordances, not entities
 4. Puff/Brunschwig used only for external interpretive alignment
 5. Negative controls via statistical tests

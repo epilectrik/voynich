@@ -1,5 +1,24 @@
 # Speculative Interpretation Summary
 
+## Status (v7.25, 2026-09-28)
+
+> **Read this first.** This document holds Tier 3–4 readings only; nothing in it is structure. Authority order: `CONSTRAINT_TABLE.txt` (generated) > `CLAIMS/INDEX.md` rows > `SYSTEM/STATUS_BRIEF.md` > this file.
+
+- **Tier 0 (restated 2026-09-28, human sign-off):** the measured core only: one compact token grammar (49 classes, 69.5% of B tokens), organised by line (positional zones, boundary glyph coupling), applied in folio units; not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
+- **Working interpretation (Tier 3):** procedural notation (a family of programs for a process). No current measurement distinguishes it from other constrained notations. The "closed-loop, kernel-centric control program" wording used throughout this file is the pre-v7.24 form.
+- **Supports withdrawn (where they appear below, read them as historical, not as structure):**
+  - kernel k/h/e as the core of the grammar: C089 superseded by C2082 (at glyph level k carries no routing; the cross-token signal is word-ending routing); C085, C103–C105 at Tier 3;
+  - closed-loop control: C171 at Tier 3, all four legs withdrawn; C120 at Tier 3;
+  - LINK as a monitoring operator: C609 (true density 13.2%), C1174 (morphological artifact of `ol`);
+  - the hazard layer (17 forbidden transitions, 5 hazard classes, "safety architecture"): C783 demoted, C2060 taxonomy imposed, C2081 zero bigrams reduce to known effects (C957 superseded);
+  - convergence to STATE-C / MONOSTATE: occupancy only (C074), C1401–C1403;
+  - design clamp / recovery freedom (C458, frequency shadow); MIDDLE incompatibility percentages (C475, sparsity); hub savings (C476, retracted);
+  - Testamentum chapter ↔ folio matching: no correspondence signal (C2052, PHASE_762; 20 rows moved to Tier 3).
+- **Also withdrawn as evidence (strategic review §5 "retire" list):** C157 "uniquely compatible (100%)", the Puff–Voynich "83:83 isomorphism" and "19/20 full procedural alignment" (§X), REGIME = fire degree, the Tier-4 etymology tables, the 8-category taxonomy as a unit of analysis (keyword-imposed, C2069), and closure language (closed/saturation banners, "FULLY ANSWERED", "May Never Be Answerable").
+- **Marking in this file:** sections resting on these items carry a one-line banner, and stale citations carry a short bracketed note; the text is kept for traceability. Unbannered readings remain open Tier 3–4 hypotheses. Full list and rules: `SYSTEM/STATUS_BRIEF.md` §3 and §5.
+
+---
+
 **Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.74 (post-5-gram-audit consolidation, PHASE_729–736)
 
 ---
@@ -16,7 +35,7 @@ This document consolidates all Tier 3-4 interpretations into a single reference.
 
 > Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
 
-**Working interpretation (Tier 3, this document's starting point):** The grammar is read as a family of closed-loop, kernel-centric control programs. (Until 2026-09-28 this was the Tier-0 sentence; its kernel and closed-loop supports were withdrawn on re-check. The glyph-level kernel re-test, PHASE_763/C2082, returned MIXED: no kernel measurement; the cross-token signal is word-ending routing.)
+**Working interpretation (Tier 3, this document's starting point):** The grammar is read as a family of closed-loop, kernel-centric control programs. (Until 2026-09-28 this was the Tier-0 sentence; its kernel and closed-loop supports were withdrawn on re-check. The glyph-level kernel re-test, PHASE_763/C2082, returned MIXED: no kernel measurement; the cross-token signal is word-ending routing.) **[v7.25 wording (STATUS_BRIEF §1): procedural notation, a family of programs for a process; no current measurement distinguishes it from other constrained notations.]**
 
 This structural finding is FROZEN. The interpretations below attempt to explain what this structure might have been FOR.
 
@@ -32,9 +51,9 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 **"SEASONAL" IS DROPPED** (at sign-off). The section is physically filed by month (C2068 ground truth), but seasonality is **not** part of the functional reading: the text seasonal-signal was retracted (PHASE_744), the zodiac is winterless (C2068), and there is no program↔season binding (C2073). Do **not** describe the functional layer as "seasonal."
 
-**Wall (C171):** the *referents* of the configuration-units (materials / apparatus / states) remain unrecoverable; "configuration index" is a class-gloss, not a recovered referent. Promotion to a mechanism-tier *fact* would still require external grounding.
+**Wall (C171 [demoted to Tier 3 2026-09-28: closed-loop legs withdrawn; cited here only for the referent wall]):** the *referents* of the configuration-units (materials / apparatus / states) remain unrecoverable; "configuration index" is a class-gloss, not a recovered referent. Promotion to a mechanism-tier *fact* would still require external grounding.
 
-**GENERALIZATION (PHASE_749, HUMAN-SIGNED-OFF 2026-06-03, with caveats):** the zodiac is not special — it's one instance of a single index-type register. The arrangement/reference layer is **ONE self-contained, kernel-depleted, lexically-isolated layer by TYPE — AZC (zodiac + cosmological f67–69) + Rosettes — that does NOT route into B** (no specific B-target above a composition-matched null, **C2075**; pharma is kernel-bearing and sits OUTSIDE it on a gradient, **C2074**). **Caveats (load-bearing):** (1) "ONE" = one kernel-depleted *type-class*, NOT internal homogeneity — the layer is internally heterogeneous (C430 two AZC families, C1519 zodiac-vs-A/C diversity); (2) "index/reference layer" is a function-gloss, referent walled (C171); (3) pharma-exclusion is a gradient, not a clean partition (C2074). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
+**GENERALIZATION (PHASE_749, HUMAN-SIGNED-OFF 2026-06-03, with caveats):** the zodiac is not special — it's one instance of a single index-type register. The arrangement/reference layer is **ONE self-contained, kernel-depleted, lexically-isolated layer by TYPE — AZC (zodiac + cosmological f67–69) + Rosettes — that does NOT route into B** (no specific B-target above a composition-matched null, **C2075**; pharma is kernel-bearing and sits OUTSIDE it on a gradient, **C2074**). **Caveats (load-bearing):** (1) "ONE" = one kernel-depleted *type-class*, NOT internal homogeneity — the layer is internally heterogeneous (C430 two AZC families, C1519 zodiac-vs-A/C diversity); (2) "index/reference layer" is a function-gloss, referent walled (C171, demoted to Tier 3 2026-09-28; cited only for the referent wall); (3) pharma-exclusion is a gradient, not a clean partition (C2074). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
 
 ---
 
@@ -52,10 +71,10 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 - **Local control structure** — adjacent-token / terminal preferences. **Split by instrument (PHASE_737/738):**
   - **Genuinely above-char-Markov:** ary line-final termination (C562, z=10.25) — a suffix/terminal categorical-exclusion claim, *immune* to the window-blindness artifact (it is not prefix-routing).
-  - **Real token-order structure, above-char-Markov status INDETERMINATE (wrong instrument):** qo→ch/sh interleaving (C549) and the correction lanes (C2056). PHASE_738 resolved the PHASE_737 worry: qo→ch/sh is **decisively above composition** (within-line token-shuffle null, the *correct* token-level instrument, z 5.9–7.9, p=0.000, length-invariant) — it is real token-order structure, NOT a window-blindness artifact and NOT composition shadow. BUT its "above-char-Markov" status cannot be cleanly established: the char-5-gram is **the wrong instrument** for a token-adjacency/prefix-routing claim — low order is blind to a long source token's prefix at the boundary (PHASE_737), suffix-sentinel controls are ungeneratable (PHASE_738 Test E: 28% fidelity for long tokens), and high order overfits. The standard-5-gram "survival" was windowing-inflated; the residual that survives is at the noise floor. **C549/C2056 are vindicated as real token-order structure on the token-shuffle null, NOT on the char-5-gram.** C2056 re-tested lane-by-lane under the token-shuffle null is **revised from a 5-lane to a 4-lane family**: qok→ok/ot/ch/ok-e confirmed above composition (z=2.4–8.1), but qok→sh (passive monitor) demotes (z=1.97, fails Bonferroni; +1.0pp, under its own <5pp falsification clause). The architectural unit (post-heat correction window) stands; the passive-monitor lane drops out. daiin→CHSH (C2064, CC-class) stays separate and ambiguous.
+  - **Real token-order structure, above-char-Markov status INDETERMINATE (wrong instrument):** qo→ch/sh interleaving (C549) and the correction lanes (C2056 [registry correction: only qok→ok and qok→oke are confirmed; qok→ot marginal, qok→ch subsumed by C549]). PHASE_738 resolved the PHASE_737 worry: qo→ch/sh is **decisively above composition** (within-line token-shuffle null, the *correct* token-level instrument, z 5.9–7.9, p=0.000, length-invariant) — it is real token-order structure, NOT a window-blindness artifact and NOT composition shadow. BUT its "above-char-Markov" status cannot be cleanly established: the char-5-gram is **the wrong instrument** for a token-adjacency/prefix-routing claim — low order is blind to a long source token's prefix at the boundary (PHASE_737), suffix-sentinel controls are ungeneratable (PHASE_738 Test E: 28% fidelity for long tokens), and high order overfits. The standard-5-gram "survival" was windowing-inflated; the residual that survives is at the noise floor. **C549/C2056 are vindicated as real token-order structure on the token-shuffle null, NOT on the char-5-gram** (C2056 per registry correction: two lanes confirmed, qok→ok and qok→oke; the "4-lane" count below is stale). C2056 re-tested lane-by-lane under the token-shuffle null is **revised from a 5-lane to a 4-lane family**: qok→ok/ot/ch/ok-e confirmed above composition (z=2.4–8.1), but qok→sh (passive monitor) demotes (z=1.97, fails Bonferroni; +1.0pp, under its own <5pp falsification clause). The architectural unit (post-heat correction window) stands; the passive-monitor lane drops out. daiin→CHSH (C2064, CC-class) stays separate and ambiguous.
 - **Distributed macro-state eigenstructure** — the slow-mixing second eigenvalue λ2 of the **raw 49-class** transition matrix (C2061, per-synth-own-shuffle p=0.000), distributed across ~29 classes (C2065). This is the genuine global organization the 6-state automaton projects from; the raw-49 operator carries above-Markov eigenstructure. **The 6×6 spectral gap itself (C978) was NOT re-measured here and is borderline under the 5-gram null — C978 survives only as scope-corrected (eigenstructure yes, designed-dwell no).**
 
-Between these two earning layers sits a **Markov-reproducible middle**: positional gradients, aggregate scalar first-order class-MI (C2023-scalar, demoted Tier 3 PHASE_733), and idealized forbidden-transition compliance. A character model reproduces these from local statistics — corpus-descriptive, not above-Markov mechanism. The signal sits at the smallest (bigram) and largest (whole-operator eigenstructure) scales, with the mid-scale being floor — the "barbell" shape C2062 formalized. Relatedly, the M1-fidelity-frontier rescope (C1025): pure 49-class Markov (M1) is the corpus-fidelity frontier, and forbidden-transition suppression is a thin idealizing overlay (M2's edge was idealization-credit, not topology) — which supports locating topology in the class-Markov matrix itself.
+Between these two earning layers sits a **Markov-reproducible middle**: positional gradients, aggregate scalar first-order class-MI (C2023-scalar, demoted Tier 3 PHASE_733), and idealized forbidden-transition compliance. A character model reproduces these from local statistics — corpus-descriptive, not above-Markov mechanism. The signal sits at the smallest (bigram) and largest (whole-operator eigenstructure) scales, with the mid-scale being floor — the "barbell" shape C2062 formalized. Relatedly, the M1-fidelity-frontier rescope (C1025 [demoted to Tier 3, v7.26]): pure 49-class Markov (M1) is the corpus-fidelity frontier, and forbidden-transition suppression is a thin idealizing overlay (M2's edge was idealization-credit, not topology) — which supports locating topology in the class-Markov matrix itself. [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
 **Sections to read with this correction:**
 
@@ -65,7 +84,7 @@ Between these two earning layers sits a **Markov-reproducible middle**: position
 | 0.J FQ Internal Architecture | **AFFECTED** — FQ-CC interaction references C816 (demoted PHASE_731/735). |
 | 0.K Sub-Role Interaction Grammar | **AFFECTED** — CC trigger selectivity (C600) demoted PHASE_735. The daiin→ch/sh bigram survives 5-gram (C2064) but **measurement-only, mechanism-ambiguous** — it does NOT validate the CHSH/QO routing mechanism. |
 | Section II historical-alignment ("or→aiin checkpoint") | **AFFECTED** — same C561 dependency. |
-| Hazard taxonomy (throughout) | **CORRECTED** — the "5 hazard classes" grouping was keyword-imposed, not clustered (C2060, PHASE_732). The 17 forbidden directional transitions stand (C109, revised); the 5-class partition and C216's 71/29 batch/apparatus split (demoted) do not. |
+| Hazard taxonomy (throughout) | **CORRECTED** — the "5 hazard classes" grouping was keyword-imposed, not clustered (C2060, PHASE_732). The 17 forbidden directional transitions stand (C109, revised); the 5-class partition and C216's 71/29 batch/apparatus split (demoted) do not. **[v7.25: the 17 no longer stand either; C109 scoped, C957 superseded by C2081 (zero bigrams reduce to composition, zones and boundary coupling); no hazard layer remains]** |
 
 **Demotion ledger (PHASE 729–736):** C557, C561, C600, C816, C817, C819 → Tier 3 (line-execution / CC-routing, 5-gram floor); C2023-scalar → Tier 3 (aggregate MI is floor); C109 5-class taxonomy struck; C216 demoted (hazard taxonomy imposed).
 
@@ -77,7 +96,7 @@ Between these two earning layers sits a **Markov-reproducible middle**: position
 
 All interpretations in this document respect these constraints. Individual sections may add section-specific caveats but these five apply universally:
 
-1. **Semantic ceiling** (C171, C120): No token-level meaning or translation is recoverable from internal analysis alone.
+1. **Semantic ceiling** (C171, C120 [both demoted to Tier 3 2026-09-28; cited only for the referent wall, which is kept as a working bound]): No token-level meaning or translation is recoverable from internal analysis alone.
 2. **No entry-level A-B coupling** (C384): No mapping from individual A entries to individual B tokens exists.
 3. **No substance identification**: Specific plants, materials, or substances cannot be identified from the text.
 4. **No Brunschwig equivalence**: Voynich is not a cipher for Brunschwig; no folio-to-passage mapping exists.
@@ -86,6 +105,8 @@ All interpretations in this document respect these constraints. Individual secti
 ---
 
 ## Epistemological Frame: Structure-Fitting, Not Translation
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The forbidden-transition, kernel, convergence and recovery supports this frame cites are withdrawn, so "the structural fit has already been established" no longer holds.
 
 This project does not attempt to translate the Voynich Manuscript. The structural layer (Tier 0-2) proves that the manuscript has a rigorous internal grammar — 49 instruction classes, forbidden transitions, convergence behavior. The interpretive layer (Tier 3) shows that this structure is consistent with thermodynamic process control — the way sheet music is consistent with the physics of sound.
 
@@ -103,28 +124,28 @@ This framing applies to ALL interpretations below: each section explores what sp
 
 **Finite-grammar layer** (uniform across the corpus, expected to obey consistent rules):
 - Token morphology (HEAD+MOD*+TERM atom architecture, C1394)
-- Forbidden transitions (17 directional; the 5-class grouping was keyword-imposed, not clustered — C2060)
+- Forbidden transitions (17 directional; the 5-class grouping was keyword-imposed, not clustered — C2060) **[withdrawn v7.25: the zero bigrams reduce to known effects, C2081]**
 - Macro-state automaton (6 states)
 - Sister-pair structure (ch/sh, ok/ot)
-- Closed instruction-class system (49 classes, 100% coverage)
+- Closed instruction-class system (49 classes, 100% coverage) **[as restated at Tier 0: 69.5% of B tokens; 100% only of the grammar's own 480 types]**
 - Block-level paragraph specialization (C1961)
 - Within-line interleaving (C1964)
 
 These features look like a designed grammatical system — the kind of thing a finite specification could capture.
 
 **Special-case operational notation** (used when general rules don't suffice; operator improvisation):
-- Cycle-counting idiom on f75r (C1965) — used for operationally-non-derivable iteration counts; does not generalize because most recipes don't need it
+- Cycle-counting idiom on f75r (C1965 [source correction 2026-09-27: III.19 reads "four times, otherwise nine times"; the two-phase ×4-then-×9 premise is void]) — used for operationally-non-derivable iteration counts; does not generalize because most recipes don't need it
 - Possibly some HT compound-spec patterns specific to certain recipe types
 - Possibly plant-specific markers in herbal sections
 - Possibly numerological encoding tricks in pseudo-Lullian quintessence work
 
-**Refuted at folio-substring resolution (Phase 654):** the broader claim that all 9 named dark-pipeline atoms map to substrate categories under uniform folio-presence-by-substring methodology was tested under pre-registration and returned null. C1939 (fch=mercury) and C1940 (cs=gold) survive on their original methodology (more specific than substring-presence). The unified atom-substrate typology framework — that all dark-pipeline atoms encode substrate categories — is **not supported at this resolution and methodology**. A stricter morphological-extraction test could give different results; would require separate pre-registration.
+**Refuted at folio-substring resolution (Phase 654):** the broader claim that all 9 named dark-pipeline atoms map to substrate categories under uniform folio-presence-by-substring methodology was tested under pre-registration and returned null. C1939 (fch=mercury) [since demoted to Tier 4 by the 2026-05-15 strict audit] and C1940 (cs=gold) survive on their original methodology (more specific than substring-presence). The unified atom-substrate typology framework — that all dark-pipeline atoms encode substrate categories — is **not supported at this resolution and methodology**. A stricter morphological-extraction test could give different results; would require separate pre-registration.
 
 Real workshop notation systems in the medieval period weren't formal grammars. They accumulated special-case conventions where general rules didn't cover the case — the way medieval manuscripts have systematic abbreviation conventions AND ad-hoc scribal abbreviations. The Voynich is unlikely to be an exception.
 
 **What this means for interpretation:**
 
-A constraint that fails to generalize is not necessarily "wrong scope-restriction." It may be capturing genuine special-case notation that operates only when the operational situation calls for it. C1965 (cycle-counting idiom) is the cleanest example: it works on f75r because the recipe's ×9 count is operationally non-derivable; it doesn't work on f82v's ×4 not because we can't detect it but plausibly because the idiom isn't there at all.
+A constraint that fails to generalize is not necessarily "wrong scope-restriction." It may be capturing genuine special-case notation that operates only when the operational situation calls for it. C1965 (cycle-counting idiom) is the cleanest example [historical: C1965's premise was voided by the 2026-09-27 source correction, and C1969 says the ×9 window is not a count]: it works on f75r because the recipe's ×9 count is operationally non-derivable; it doesn't work on f82v's ×4 not because we can't detect it but plausibly because the idiom isn't there at all.
 
 Researchers approaching this corpus should expect:
 - Most structural features (Tier 0-2) ARE part of a coherent finite system
@@ -142,6 +163,8 @@ This is consistent with the project's broader frame: we are decoding **operation
 > **The manuscript encodes the operational worldview of a controlled apparatus, not the descriptive worldview of a human observer.**
 
 All recoverable semantics are those available to the apparatus and its control logic: states, transitions, risks, recoveries. All referential meaning (materials, plants, devices) is supplied externally by trained human operators.
+
+**[Status v7.25: open Tier-3 hypothesis. Its k/e/h "kernel" families and its risk/recovery vocabulary rest on withdrawn supports (C089 superseded by C2082; hazard layer and C458 withdrawn); see SYSTEM/STATUS_BRIEF.md §3.]**
 
 ### Token Decomposition (Complete)
 
@@ -330,7 +353,7 @@ This suggests folios differ not just in content but in **control architecture**:
 
 ### Grammar Infrastructure Allocation by Section (Tier 3)
 
-REGIME classifications reflect **grammar infrastructure allocation**, orthogonal to C494's execution precision axis:
+REGIME classifications reflect **grammar infrastructure allocation**, orthogonal to C494's execution precision axis: [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 | REGIME | L-compound | Kernel | LATE | Profile |
 |--------|------------|--------|------|---------|
@@ -364,7 +387,7 @@ Section B (traditionally "bathing figures") concentrates in REGIME_1, suggesting
 | S | 7.1% | 15.2% | 0.47 |
 | C | 6.1% | 12.9% | 0.48 (highest) |
 
-**Orthogonality with C494:** This classification (grammar composition) is independent of C494's precision axis (execution requirements). A folio can be both high-precision (C494 REGIME_4) AND control-infrastructure-heavy (this analysis REGIME_1).
+**Orthogonality with C494 [demoted to Tier 3, v7.26]:** This classification (grammar composition) is independent of C494's precision axis (execution requirements). A folio can be both high-precision (C494 REGIME_4) AND control-infrastructure-heavy (this analysis REGIME_1). [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 **Source:** REGIME_SEMANTIC_INTERPRETATION phase (2026-01-25)
 
@@ -445,9 +468,11 @@ The `-hy` gloss "confirm" replaces the earlier "hazard flag" (BCSC revision). C9
 
 **Example:** `chckhy` = ch:hard.confirm = "actively test hardness, confirm phase state." The operator tests the material's consistency, then verifies they're collecting the correct fraction.
 
-**Provenance:** C907 (morphological characterization, Tier 2), C919 (d-extension END-class, Tier 2), C1003 (pairwise compositionality, Tier 2). The compositional reading and distillation alignment are Tier 3.
+**Provenance:** C907 (morphological characterization, Tier 2 [registry correction: C907 is Tier 4]), C919 (d-extension END-class, Tier 2), C1003 (pairwise compositionality, Tier 2). The compositional reading and distillation alignment are Tier 3.
 
 ### Kernel-German Abbreviation Hypothesis (Tier 4)
+
+**[Retired as evidence (strategic review §5)]** Tier-4 etymology tables (Kochen/Erkalten/Coquo); the K/E/H "kernel" they build on is withdrawn (C089 superseded by C2082; C085 is an EVA letter inventory).
 
 The Voynich consonant inventory may encode first-letter abbreviations of German and Latin distillation vocabulary. The strongest evidence is the three kernel consonants mapping to the three fundamental distillation operations.
 
@@ -802,7 +827,7 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 | Variable Type | System | What It Does | Evidence |
 |---------------|--------|--------------|----------|
 | **Routing** | AZC | Position-indexed legality | C443, C468 |
-| **Differentiation** | RI | Identity exclusion (95.7% incompatibility) | C475, C481 |
+| **Differentiation** | RI | Identity exclusion (95.7% incompatibility) | C475 [demoted to Tier 3: the % measures sparsity], C481 [retracted] |
 | **Capacity** | PP | Class survival breadth (count) | C504, C506 |
 | **Configuration** | PP | Intra-class token selection (composition) | C506.a |
 
@@ -882,10 +907,10 @@ PP profile variation allows:
 
 ### Why Class-Level Null Effects Are Correct
 
-The class-level null results (C506) protect the semantic ceiling (C171, C469):
+The class-level null results (C506) protect the semantic ceiling (C171 [demoted to Tier 3; referent wall only], C469):
 
 - If PP composition caused different *classes* to survive → PP would encode material-specific instruction sets
-- Material-specific instruction sets → violates PURE_OPERATIONAL constraint
+- Material-specific instruction sets → violates PURE_OPERATIONAL constraint [C120, demoted to Tier 3 2026-09-28: a working interpretation, not a constraint]
 - Therefore: class-level null effects are architecturally necessary
 
 But token-level variation (C506.a, C506.b) is permitted:
@@ -893,7 +918,7 @@ But token-level variation (C506.a, C506.b) is permitted:
 - Structural adaptation without changing the instruction vocabulary
 - This is parameterization, not semantic encoding
 
-### What This Closes
+### What This Closes — [historical: retired language, strategic review §5]
 
 - PP composition → class survival: **FALSIFIED** (C506)
 - PP composition → token configuration: **CONFIRMED** (C506.a)
@@ -940,7 +965,7 @@ This shifts from "what PP is" to "what the artifact does to the human."
 | C505 | A-side profile differences |
 | C506 | Non-propagation to B |
 | C507 | PP-HT partial substitution |
-| C171 | Semantic ceiling protection |
+| C171 | Semantic ceiling protection [demoted to Tier 3 2026-09-28; referent wall only] |
 | C469 | Categorical resolution |
 
 **Source:** PP_B_EXECUTION_TEST (2026-01-23), PP_HT_INTERACTION_TEST (2026-01-23)
@@ -949,6 +974,8 @@ This shifts from "what PP is" to "what the artifact does to the human."
 
 ## 0.C. THREE-LAYER CONSTRAINT ARCHITECTURE (MIDDLE_SUBCOMPONENT_GRAMMAR Phase)
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Each layer rests on a withdrawn item: substrate C085 (EVA letter inventory), compatibility C475 (sparsity), execution C109 (hazard layer reduces, C2081), and C521's e→h = 0.00 (spelling identity, PHASE_754). C522's layer-independence measurement stands.
+
 ### Tier 2-3: Architectural Discovery
 
 > **The manuscript's symbol system operates through three independent constraint layers sharing a single substrate - construction, compatibility, and execution - which together achieve complex morphology, extreme vocabulary sparsity, AND execution safety simultaneously.**
@@ -956,9 +983,9 @@ This shifts from "what PP is" to "what the artifact does to the human."
 ### The Problem This Solves
 
 Prior analysis identified multiple constraint regimes:
-- C085: 10 kernel primitives (s, e, t, d, l, o, h, c, k, r)
-- C109: 17 forbidden transitions between token classes
-- C475: 95.7% of MIDDLE pairs are incompatible
+- C085: 10 kernel primitives (s, e, t, d, l, o, h, c, k, r) [demoted to Tier 3: an EVA letter inventory]
+- C109: 17 forbidden transitions between token classes [scoped; the zeros reduce to known effects, C2081]
+- C475: 95.7% of MIDDLE pairs are incompatible [demoted to Tier 3: the % measures sparsity]
 - C517: Superstring compression with hinge letters
 
 The question: Are these the same constraint seen at different scales, or independent systems?
@@ -988,7 +1015,7 @@ SYMBOL SUBSTRATE (10 primitives: s,e,t,d,l,o,h,c,k,r)
          |     - One-way valve: e→h blocked (0.00), h→e favored (7.00x)
          |     - Result: Legal token forms
          |
-         ├── COMPATIBILITY LAYER (C475)
+         ├── COMPATIBILITY LAYER (C475, demoted)
          |     - MIDDLE atomic incompatibility
          |     - 95.7% of pairs forbidden
          |     - Result: Legal co-occurrence
@@ -1020,7 +1047,7 @@ These are independent - changing identifier rules doesn't change type checking.
 
 ### Kernel Primitive Reality
 
-Test 15-16 confirmed kernel primitives (k, h, e) are **real operators**, not compression artifacts:
+Test 15-16 confirmed kernel primitives (k, h, e) are **real operators**, not compression artifacts: **[withdrawn v7.25: e→h = 0.00 is a spelling identity (h occurs only inside ch/sh), PHASE_754; C089 superseded by C2082]**
 
 **Directional Asymmetry (C521):**
 | Transition | Ratio | Interpretation |
@@ -1057,9 +1084,9 @@ This explains why RI is:
 
 | Constraint | Role |
 |------------|------|
-| C085 | 10 kernel primitives (shared substrate) |
-| C109 | Execution hazards (execution layer) |
-| C475 | MIDDLE incompatibility (compatibility layer) |
+| C085 | 10 kernel primitives (shared substrate) [demoted to Tier 3] |
+| C109 | Execution hazards (execution layer) [scoped; reduces, C2081] |
+| C475 | MIDDLE incompatibility (compatibility layer) [demoted to Tier 3] |
 | C517 | Superstring compression (hinge letters) |
 | C521 | Directional asymmetry (construction layer) |
 | C522 | Layer independence (falsified isomorphism) |
@@ -1128,7 +1155,7 @@ If i = "cycle/iterate" and n = "bind/connect":
 | kee | heat + cool + cool | "deep" | Deep processing |
 | eek | cool + cool + heat | "lock" | Locked/fixed state |
 
-Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar).
+Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar). [C521 scoped by PHASE_754: its e→h = 0.00 is a spelling identity; the glyph-level facts are retained]
 
 ### Tier 4: The "o = vessel" Hypothesis
 
@@ -1153,7 +1180,7 @@ C1190 licenses using compound decomposition as a **gloss correction tool** with 
 - **Medium confidence:** Compounds with moderate-confidence atoms and reasonable fit (al, ar, ol, or)
 - **Low confidence:** Compounds with weak atoms or poor prediction residuals
 
-This methodology respects the semantic ceiling (C171, C120) — glosses describe operational function, not material identification.
+This methodology respects the semantic ceiling (C171, C120 [both demoted to Tier 3 2026-09-28; referent wall only]) — glosses describe operational function, not material identification.
 
 ### Cross-References
 
@@ -1183,7 +1210,7 @@ This extends C526 with a detailed characterization of the two-layer model.
 
 ### The Problem This Addresses
 
-C120 (PURE_OPERATIONAL) establishes that Voynich tokens have no semantic content. But RI MIDDLEs exhibit vocabulary-like behavior:
+C120 (PURE_OPERATIONAL) establishes that Voynich tokens have no semantic content [historical: C120 demoted to Tier 3 2026-09-28; "operational notation" is now a working interpretation]. But RI MIDDLEs exhibit vocabulary-like behavior:
 - 609 unique identifiers (regenerated 2026-01-24 with atomic-suffix parser)
 - Localized to specific folios (87% on only 1 folio)
 - Non-compositional (don't decompose systematically)
@@ -1197,7 +1224,7 @@ The resolution distinguishes two functional layers:
 
 | Layer | Components | Function | Semantic Status |
 |-------|------------|----------|-----------------|
-| **Grammar** | PREFIX, SUFFIX, PP atoms | Control-flow, procedural | No content (C120 applies) |
+| **Grammar** | PREFIX, SUFFIX, PP atoms | Control-flow, procedural | No content (C120 applies [C120 demoted to Tier 3]) |
 | **Lexicon** | RI extensions | Referential anchoring | Points to substances (THAT, not WHAT) |
 
 **Grammar** is combinatorial and global:
@@ -1286,7 +1313,7 @@ This creates two parallel substance vocabularies on each folio, both following t
 
 ### Semantic Ceiling Refinement
 
-This refines C120 (PURE_OPERATIONAL):
+This refines C120 (PURE_OPERATIONAL) [C120 demoted to Tier 3 2026-09-28; a working interpretation]:
 
 | What | Status |
 |------|--------|
@@ -1324,9 +1351,9 @@ Universal Boundaries apply. Additionally:
 
 | Constraint | Role |
 |------------|------|
-| C120 | PURE_OPERATIONAL (applies to grammar, refined for lexicon) |
+| C120 | PURE_OPERATIONAL (applies to grammar, refined for lexicon) [demoted to Tier 3] |
 | C498 | RI vocabulary track (83% localized) |
-| C475 | MIDDLE incompatibility (compatibility layer) |
+| C475 | MIDDLE incompatibility (compatibility layer) [demoted to Tier 3: sparsity] |
 | C509 | PP/RI dimensional separability |
 | C517 | Superstring compression |
 | C526 | RI Lexical Layer Hypothesis |
@@ -1526,6 +1553,8 @@ The ~10.5 unique MIDDLEs per folio encode:
 
 ### Integration with Brunschwig Model
 
+**[Retired as evidence (strategic review §5)]** REGIME = Brunschwig fire degree is retired (C1712, C2070, C1872); Brunschwig is genre context, not a match source (C2052).
+
 This strengthens the Brunschwig alignment:
 
 | Brunschwig | Voynich | Mapping |
@@ -1597,7 +1626,7 @@ The text encodes procedures and constraints. The decision of WHEN to use them is
 | C533 | Grammatical slot consistency |
 | C534 | Section-specific profiles (partial) |
 | C502 | A-record viability filtering |
-| C470 | MIDDLE restriction inheritance |
+| C470 | MIDDLE restriction inheritance [demoted to Tier 3: frequency confound, PHASE_748] |
 | C121 | 49-class grammar universality |
 
 **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
@@ -1610,7 +1639,7 @@ The text encodes procedures and constraints. The decision of WHEN to use them is
 
 > **A minimal generative model (49-class Markov chain + symmetric forbidden suppression) reproduces 87% of measurable structure across 15 statistical tests, achieving 100% pass rate after three test corrections. The remaining ~57% of folio-level dynamical variance is genuine program-specific free variation that cannot be predicted from any aggregate structural property.**
 
-### Generative Sufficiency (C1025, C1030, C1033, C1034)
+### Generative Sufficiency (C1025, C1030, C1033, C1034) [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
 The M2 model: sample instruction class from first-order transition probabilities, suppress forbidden transitions bidirectionally.
 
@@ -1645,7 +1674,9 @@ The C1017 model is moderately overfit (LOO CV R-squared = 0.433 vs training 0.56
 
 Six additional folio-level predictors tested (paragraph count, HT density, gatekeeper fraction, QO fraction, vocabulary size, line count) all produce zero incremental variance beyond the baseline (C1035). Random forest finds no non-linear signal.
 
-### Design Freedom Interpretation (C458, C980)
+### Design Freedom Interpretation (C458 [demoted], C980)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C458 demoted to Tier 3: the clamp/free CV asymmetry is a frequency shadow. The ~57% residual (C1035) and C980 are unaffected as measurements.
 
 The ~57% residual is the **grammar's free design space**:
 - Hazard exposure is clamped (CV = 0.04-0.11) — globally constrained
@@ -1660,6 +1691,8 @@ This is consistent with C980's 66.3% free variation envelope. The manuscript pro
 ---
 
 ## 0.F. LINE-LEVEL EXECUTION SYNTAX (CLASS_SEMANTIC_VALIDATION Phase)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The "line as control cycle" reading lost its closed-loop support (C171 at Tier 3) and its fire-degree mapping (retired). WORK (C549), CLOSE (C562) and the positional zones (C956) remain measurements.
 
 > **PARTIALLY SUPERSEDED (PHASE_731, 2026-05).** The four-phase cycle below does not survive the 5-gram character-Markov null intact. Its **SETUP** endpoint (daiin trigger, C557) and **CHECK** endpoint (or→aiin bigram, C561) are Markov-reproducible floor — demoted to Tier 3. Only the **WORK** interleaving (qo↔ch-sh, C549) and **CLOSE** termination (ary line-final, C562) survive as above-Markov. The positional-grammar table (C556) is a Markov-reproducible gradient. Read the cycle as a real local-bigram spine (WORK + CLOSE) wrapped in a positional shadow, not as a validated four-phase template. See the Post-5-Gram-Audit Status banner near the top of this document.
 
@@ -1687,7 +1720,7 @@ INITIAL zone              MEDIAL zone              FINAL zone
       (openers)              (medial-concentrated)       (closers)
 ```
 
-### Key Structural Findings (C547-C562)
+### Key Structural Findings (C547-C562) [range includes demoted C557/C561, C558's demoted positional sub-claims and superseded C559]
 
 **Positional Grammar (C556):**
 
@@ -1722,7 +1755,7 @@ ENERGY operators preferentially chain with themselves (transition preference asy
 
 ### Role-Specific Structure
 
-**CORE_CONTROL Hierarchy (C557, C558, C560):**
+**CORE_CONTROL Hierarchy (C557, C558, C560) [C557 and C558's positional sub-claims demoted to Tier 3, PHASE_731/735]:**
 
 ```
 CORE_CONTROL
@@ -1737,7 +1770,7 @@ CORE_CONTROL
 
 **daiin** functions as an ENERGY trigger - "begin thermal sequence." **ol** functions as closure - "processing complete." Class 17 represents elaborated control operators derived from the atomic ol.
 
-**or→aiin Directional Bigram (C561):**
+**or→aiin Directional Bigram (C561) [demoted to Tier 3, PHASE_731: Markov-trivial]:**
 
 | Expected (random) | Observed |
 |-------------------|----------|
@@ -1779,7 +1812,7 @@ The line-level execution syntax maps directly to a distillation control cycle:
 | **CHECK** (medial-final) | or→aiin bigram, 87.5% directional (C561) **[endpoint DEMOTED Tier 3 — 5-gram floor, PHASE_731; see banner]** | Sensory checkpoint - "taste and scent" verification |
 | **CLOSE** (final) | FLOW hierarchy, ary 100% final (C562) **[SURVIVES 5-gram null]** | Completion: provisional (ar) to absolute (ary) |
 
-**REGIME as operational mode:**
+**REGIME as operational mode:** [the "Brunschwig degree" labels are retired as evidence (strategic review §5: REGIME = fire degree)]
 
 | REGIME | EN/FL Ratio | Interpretation |
 |--------|-------------|----------------|
@@ -1797,6 +1830,8 @@ The line-level execution syntax maps directly to a distillation control cycle:
 | PHARMA (FLOW-dominated) | Moderate | Controlled condensation/collection |
 
 ### Integration with Brunschwig
+
+**[Retired as evidence (strategic review §5)]** Fire-degree mapping; its SETUP and CHECK anchors (daiin C557, or→aiin C561) are also demoted to Tier 3.
 
 **Brunschwig's fire-degree cycle now maps to line structure:**
 
@@ -1843,11 +1878,11 @@ The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cyc
 | C554 | Hazard class clustering |
 | C555 | PHARMA thermal operator substitution |
 | C556 | ENERGY medial concentration |
-| C557 | daiin line-initial ENERGY trigger |
-| C558 | Singleton class structure |
+| C557 | daiin line-initial ENERGY trigger [demoted to Tier 3, PHASE_731] |
+| C558 | Singleton class structure [positional sub-claims demoted, PHASE_735] |
 | C559 | FREQUENT role structure **(SUPERSEDED by C583, C587 — used wrong FQ membership)** |
 | C560 | Class 17 ol-derived operators |
-| C561 | or→aiin directional bigram |
+| C561 | or→aiin directional bigram [demoted to Tier 3, PHASE_731] |
 | C562 | FLOW role structure |
 
 **Source:** CLASS_SEMANTIC_VALIDATION (2026-01-25)
@@ -1916,6 +1951,8 @@ This means the line-level execution cycle from Section 0.F is richer than we tho
 The manuscript records not just what was done to the lavender, but the opening and closing of the workspace *around* the lavender. Every step is framed. Every frame is built from the step's own material. This is why AX is 28.4% of the text — it takes real structural work to bracket every operation with its own scaffold, and that scaffold is proportional to the operations it frames.
 
 ### What This Means for the Workshop
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The "safety margin" / "manual designed to be safe" framing rests on the hazard layer, which is withdrawn (C2081). The scaffold measurements (C567–C572) stand.
 
 Picture Brunschwig's distillery. The master has a bench, a furnace, a cucurbit, an alembic, collection vessels. Before each operation, he stages: lays out the rose petals, checks the alembic's seal, positions the receiver. This staging uses the same materials that will be processed — you can't stage lavender without handling lavender — but the *posture* is different. Staging is inventory. Processing is chemistry. Same hands, same materials, different intent.
 
@@ -2065,7 +2102,7 @@ FL divides into two genuine subgroups:
 
 Mann-Whitney: position p=9.4e-20, final rate p=7.3e-33. FL initiates forbidden transitions far more than it receives them. EN is the mirror: mostly a target.
 
-**Tier 3 interpretation:** In distillation, the danger comes from flow decisions — opening a valve at the wrong time, transitioning between phases incorrectly. The material itself (EN) doesn't create hazards; it suffers the consequences. FL → EN hazard directionality is exactly what you'd see in a system where flow control errors damage the batch.
+**Tier 3 interpretation [historical: the hazard source/target roles are defined on the 17-pair hazard layer, withdrawn v7.25 (C2081)]:** In distillation, the danger comes from flow decisions — opening a valve at the wrong time, transitioning between phases incorrectly. The material itself (EN) doesn't create hazards; it suffers the consequences. FL → EN hazard directionality is exactly what you'd see in a system where flow control errors damage the batch.
 
 ### FQ Four-Way Differentiation (C587)
 
@@ -2199,6 +2236,8 @@ The 13-14 complete bifurcation suggests two distinct iteration pathways sharing 
 
 > **AFFECTED (PHASE_735, 2026-05).** The centerpiece below — CC trigger selectivity (C600: "daiin opens the CHSH pathway, ol-derived opens QO") — is **demoted to Tier 3**: the ol/ol-derived routing is 5-gram-reproducible (Markov-trivial). The daiin→ch/sh bigram *does* survive the 5-gram null (C2064), but **measurement-only and mechanism-ambiguous** (token-length artifact vs. routing; unconditional ≠ lane-conditional) — it does NOT validate the CHSH/QO lane-bifurcation mechanism. Read the "two parallel processing lanes" picture as unsupported at the mechanism level. C598/C599/C601 cross-boundary structure is not separately audited here. See the Post-5-Gram-Audit Status banner.
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The "hazard loop" / "safe lane" reading also rests on the 17-pair hazard layer (C601's hazard events), which reduces to known effects (C2081).
+
 ### Tier 2: Cross-Boundary Sub-Group Routing
 
 > **Internal sub-groups of each role interact non-randomly across role boundaries. 8/10 cross-role pairs show significant sub-group routing (5 survive Bonferroni). CC sub-groups are differentiated triggers: daiin/ol activate EN_CHSH while ol-derived activates EN_QO. All 19 hazard events originate from exactly 3 sub-groups (FL_HAZ, EN_CHSH, FQ_CONN). REGIME modulates routing magnitude but not direction.**
@@ -2209,13 +2248,13 @@ This phase connects the role-level transition grammar (C550) with the internal a
 
 13 sub-groups across 5 roles (EN: QO/CHSH/MINOR; FQ: CONN/PAIR/CLOSER; FL: HAZ/SAFE; AX: INIT/MED/FINAL; CC: DAIIN/OL/OL_D) produce 10 testable cross-role pairs. 8/10 are significant raw, 5/10 survive Bonferroni. Strongest: CC->EN (chi2=104, p=2.5e-20), FQ->EN (chi2=35, p=3.5e-8).
 
-### CC Trigger Selectivity (C600)
+### CC Trigger Selectivity (C600) [demoted to Tier 3, PHASE_735]
 
 The sharpest finding. CC sub-groups are **differentiated triggers** (chi2=129.2, p=9.6e-21):
 - **daiin** (Class 10) and **ol** (Class 11): trigger EN_CHSH at 1.60-1.74x, suppress EN_QO to 0.18x
 - **ol-derived** (Class 17): triggers EN_QO at 1.39x, suppresses EN_CHSH to 0.77x
 
-This refines C557 ("daiin opens lines") to "daiin specifically opens the CHSH pathway." The QO pathway has a completely different upstream activator.
+This refines C557 ("daiin opens lines") to "daiin specifically opens the CHSH pathway." [historical: C557 and C600 both demoted to Tier 3] The QO pathway has a completely different upstream activator.
 
 ### AX Scaffolding Routing (C599)
 
@@ -2251,13 +2290,13 @@ CC_OL_D      --triggers-->  EN_QO    --feeds-->  FQ_PAIR
 
 In the apparatus-centric model: daiin opens a hazardous processing sequence (high-temperature distillation, reactive materials), while ol-derived compounds open a safe processing sequence (routine operations, stable materials). The two lanes share grammar but access different vocabularies and carry different risk profiles.
 
-### Evidence Summary (C598-C602)
+### Evidence Summary (C598-C602) [C600 demoted to Tier 3]
 
 | Constraint | Finding | Key Number |
 |------------|---------|------------|
 | C598 | Cross-boundary sub-group structure | 8/10 significant, 5/10 Bonferroni |
 | C599 | AX scaffolding routing | chi2=48.3, p=3.9e-4 |
-| C600 | CC trigger sub-group selectivity | chi2=129.2, p=9.6e-21 |
+| C600 | CC trigger sub-group selectivity [demoted to Tier 3] | chi2=129.2, p=9.6e-21 |
 | C601 | Hazard sub-group concentration | 3 sources, QO never participates |
 | C602 | REGIME-conditioned sub-role grammar | 4/5 REGIME-dependent, AX->FQ exception |
 
@@ -2270,6 +2309,8 @@ In the apparatus-centric model: daiin opens a hazardous processing sequence (hig
 ### Tier 3: Core Finding
 
 > **The two EN execution lanes (QO/CHSH) encode complementary control functions — energy application and stabilization — that alternate with inertia-driven dynamics within a phase-gated legality framework. Thresholds are categorical (legality transitions), not numeric (accumulation values).**
+
+**[Status v7.25: lane alternation (C643) and the lane measurements stand; the "hazard role / post-hazard recovery" and "phase-gated legality" readings rest on withdrawn items (hazard layer, C2081; C458; C521's e→h identity). See SYSTEM/STATUS_BRIEF.md §3.]**
 
 ### Two-Lane Functional Assignment
 
@@ -2312,14 +2353,16 @@ CC tokens between EN pairs **suppress** switching (42.6% switch rate with CC vs 
 
 ### Categorical Legality Thresholds (Phase-Gated)
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Three of the four thresholds are withdrawn: e→h = 0.00 is a spelling identity (PHASE_754), the LINK/ol band is a morphological artifact (C1174), and the C458 clamp is a frequency shadow. C490 stands as a measurement.
+
 While token-level switching is memoryless-with-inertia, the system encodes **macro-level categorical thresholds** as legality transitions:
 
 | Threshold | Mechanism | Evidence |
 |-----------|-----------|----------|
-| **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability |
+| **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 | **Upper bound** | Stabilization is absorbing (e->h = 0.00) | C521: kernel one-way valve; once stable, can't destabilize |
 | **Observation band** | ol-density anticorrelates with CEI (r = -0.7057) | C609, C1174: ol-morphology density, not unified function |
-| **Intervention clamp** | Hazard exposure CV = 0.04-0.11 (tightly constrained) | C458: risky dimensions locked, recovery free |
+| **Intervention clamp** | Hazard exposure CV = 0.04-0.11 (tightly constrained) | C458: risky dimensions locked, recovery free [demoted to Tier 3: frequency shadow] |
 
 **Key distinction:** Thresholds are not "push until temperature X." They are "at this phase, intervention Y is structurally impossible." Legality transitions, not parametric bounds (C469, C287-290).
 
@@ -2362,7 +2405,7 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 ### Open Questions
 
 1. Does the inertia pattern (decreasing hazard function) have a physical correlate? Thermal momentum (vessel retains heat) would produce exactly this signature.
-2. Can the phase-gated legality transitions (C490, C521, C458) be mapped to specific Brunschwig procedural stages?
+2. Can the phase-gated legality transitions (C490, C521, C458) be mapped to specific Brunschwig procedural stages? [historical: C458 demoted and C521's e→h leg is a spelling identity]
 3. Do the 3 non-EN discriminators (g, kcho, ko) reveal a PP-level material distinction that the EN system doesn't capture?
 4. Does the deterministic MIDDLE partition (C649) extend to non-exclusive MIDDLEs? The 34 shared MIDDLEs may show softer probabilistic enrichment.
 5. Is the section-driven oscillation (C650) related to material volatility, or does it reflect structural properties of the text (line length, token density)?
@@ -2415,13 +2458,13 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 2. **QO lane fraction declines late** (C668: rho=-0.058, p=0.006, Q1=46.3% -> Q4=41.3%) -- energy-to-stabilization shift
 3. **Hazard proximity tightens late** (C669: rho=-0.104, p<0.001, Q1=2.75 -> Q4=2.45 tokens) -- narrowing risk envelope
 
-**Interpretation:** The controller maintains constant hazard exposure (C667), monitoring intensity (C665), and kernel contact (C666) throughout program execution. The mild late-program signals are consistent with convergence behavior: the control loop narrows its operating range as it approaches terminal state, accumulating scaffolding and shifting from energy-emphasis to stabilization-emphasis. This is thermostat steady-state approach, not phased execution.
+**Interpretation [historical: the convergence and hazard readings are withdrawn v7.24/7.25 (C1401–C1403; C2081); the trajectory measurements C664–C669 stand]:** The controller maintains constant hazard exposure (C667), monitoring intensity (C665), and kernel contact (C666) throughout program execution. The mild late-program signals are consistent with convergence behavior: the control loop narrows its operating range as it approaches terminal state, accumulating scaffolding and shifting from energy-emphasis to stabilization-emphasis. This is thermostat steady-state approach, not phased execution.
 
-**REGIME_4 is uniquely flat** across all dimensions (lane balance +1.4pp, hazard proximity slope -0.051), consistent with its precision-constrained identity (C494). **REGIME_2 shows the strongest temporal evolution** (lane balance -9.9pp, proximity slope -0.602), consistent with its aggressive energy-to-stabilization transition.
+**REGIME_4 is uniquely flat** across all dimensions (lane balance +1.4pp, hazard proximity slope -0.051), consistent with its precision-constrained identity (C494 [demoted to Tier 3, v7.26]). **REGIME_2 shows the strongest temporal evolution** (lane balance -9.9pp, proximity slope -0.602), consistent with its aggressive energy-to-stabilization transition. [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
-**Zero forbidden transition events** across the entire H-track B corpus. The 17 token-level forbidden pairs (C109) never occur literally. Hazard topology operates at the class level, not the specific token-pair level.
+**Zero forbidden transition events** across the entire H-track B corpus. The 17 token-level forbidden pairs (C109) never occur literally. Hazard topology operates at the class level, not the specific token-pair level. [withdrawn: the class level is demoted (C783) and the token zeros reduce to known effects (C2081)]
 
-**This phase closes the meso-temporal gap.** Combined with within-line structure (C556-C562) and between-folio structure (C325, C458, C548), temporal behavior is now characterized at all three scales. The dominant finding: stationarity, with mild convergence drift.
+**This phase closes the meso-temporal gap.** — [historical: retired language, strategic review §5] Combined with within-line structure (C556-C562) and between-folio structure (C325, C458, C548) [C557/C561 and C458 demoted; C559 superseded; C325's gradient is a section confound, C1401], temporal behavior is now characterized at all three scales. The dominant finding: stationarity, with mild convergence drift.
 
 **Source:** B_FOLIO_TEMPORAL_PROFILE (2026-01-27)
 
@@ -2445,7 +2488,7 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 
 **The critical test (C681):** 24/27 features show significant lag-1 prediction beyond position — verdict SEQUENTIALLY_COUPLED. But reconciliation with C670/C673/C674 reveals this coupling is **folio-mediated** (shared operating context), not line-to-line state transfer. The "memory" is the folio's configuration, not information passed between lines.
 
-**Tier 4 synthesis:** Each folio configures a parameter context (REGIME + folio-specific conditions). Each line independently assesses the system within that context. Early lines use broad vocabulary and complex morphology; late lines are shorter, simpler, more bare-suffix. The controller converges toward a minimal-parameter operating mode across the folio, but each individual assessment is stateless — informed by folio context, not by what the previous line found.
+**Tier 4 synthesis [the "controller converges" wording is historical; convergence withdrawn, C1402]:** Each folio configures a parameter context (REGIME + folio-specific conditions). Each line independently assesses the system within that context. Early lines use broad vocabulary and complex morphology; late lines are shorter, simpler, more bare-suffix. The controller converges toward a minimal-parameter operating mode across the folio, but each individual assessment is stateless — informed by folio context, not by what the previous line found.
 
 **Source:** B_LINE_SEQUENTIAL_STRUCTURE (2026-01-27)
 
@@ -2572,6 +2615,8 @@ Universal Boundaries apply. Additionally:
 
 ### Integration with Control-Loop Model
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The control-loop interpretation lost all four closed-loop legs (C171 at Tier 3), and the SETUP→WORK→CHECK→CLOSE cycle is half-demoted (C557, C561).
+
 The findings are robustly consistent with the control-loop interpretation:
 
 | Structural Finding | Control-Loop Interpretation |
@@ -2628,7 +2673,7 @@ This is NOT "doodling" or "scribbling" - the evidence shows deliberate skill acq
 | Run structure | CV=0.35 (fixed-block range) | Deliberate practice blocks |
 | Boundary-pushing forms | 24.5% | Exploring morphological limits |
 | Family rotation | Change rate 0.71 | Systematic curriculum |
-| Hazard avoidance | 0/35 at forbidden seams | Stop writing when attention demanded |
+| Hazard avoidance | 0/35 at forbidden seams | Stop writing when attention demanded [historical: the forbidden-seam layer is withdrawn, C2081] |
 | Phase synchronization | V=0.136 | Writing tracks procedural phase |
 | Anticipatory correlation | r=0.236 (HT before B) | HT precedes stress, not follows |
 
@@ -2697,12 +2742,14 @@ The manuscript distributes responsibility between system and human across four l
 
 | Layer | Role | What It Handles |
 |-------|------|-----------------|
-| **Currier B** | Constrains you | Execution grammar, safety envelope |
+| **Currier B** | Constrains you | Execution grammar, safety envelope [the "safety envelope" rests on the withdrawn hazard layer] |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
 | **AZC** | Encodes position | Phase-indexed positional encoding, compatibility grouping |
 | **HT** | Prepares you | Anticipatory vigilance signal |
 
-### Design Freedom vs Constraint (C458)
+### Design Freedom vs Constraint (C458 [demoted])
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C458 demoted to Tier 3: the clamp/free CV asymmetry is a frequency shadow.
 
 B programs exhibit **asymmetric design freedom**:
 
@@ -2719,7 +2766,7 @@ The right mental model is not "What does this page tell me to do?" but:
 
 > **"How much of the problem is the system handling for me here, and how much vigilance am I responsible for?"**
 
-This suggests the manuscript is a **manual of responsibility allocation** rather than a manual of actions. The grammar guarantees safety by construction; the system guarantees risk will not exceed bounds; HT signals when human attention is required.
+This suggests the manuscript is a **manual of responsibility allocation** rather than a manual of actions. The grammar guarantees safety by construction; the system guarantees risk will not exceed bounds; HT signals when human attention is required. [historical: "safety by construction" and "risk bounds" rest on the withdrawn hazard layer and C458; STATUS_BRIEF §3]
 
 ---
 
@@ -2748,9 +2795,11 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 | Currier B | HOW to respond | State-triggered interventions |
 | AZC | WHEN to decide | Decision grammar |
 
-**Note (C171 clarification, v4.37):** "HOW to respond" means state-triggered interventions, NOT sequential steps. B tokens are control actions selected based on assessed system state, following a MONITOR→ASSESS→SELECT→EXECUTE→RETURN cycle. See MODEL_CONTEXT.md Section VI.
+**Note (C171 clarification, v4.37 [historical: C171 demoted to Tier 3 2026-09-28, closed-loop legs withdrawn]):** "HOW to respond" means state-triggered interventions, NOT sequential steps. B tokens are control actions selected based on assessed system state, following a MONITOR→ASSESS→SELECT→EXECUTE→RETURN cycle. See MODEL_CONTEXT.md Section VI.
 
 ### Phase-to-Workflow Mapping
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The R1→R2→R3 "progression" and the S/R division are transcription artifacts (C434, C435 retracted, PHASE_742); per-ring escape rates are not a workflow order.
 
 AZC **diagram** positional grammar maps to operational workflow:
 
@@ -2879,7 +2928,9 @@ This strengthens the interpretation that PREFIX encodes more than material class
 
 ---
 
-## I.D. MIDDLE Atomic Incompatibility Layer (C475)
+## I.D. MIDDLE Atomic Incompatibility Layer (C475 [demoted])
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C475 demoted to Tier 3: "95.7% of pairs incompatible" measures co-occurrence sparsity, not prohibition. This affects the I.D core finding and the graph-based readings in I.E–I.F; I.G and I.J carry their own banners, and I.H, I.K, I.L are separate measurements.
 
 ### Tier 2: Core Finding
 
@@ -2955,7 +3006,7 @@ This explains several long-standing puzzles at once:
 
 1. ~~**Latent Discrimination Axes**~~ — **DONE: K=128 for 97% AUC** (see I.E below)
 2. ~~**Probabilistic A Bundle Generator**~~ — **DONE: 9/14 metrics FAIL** (see I.F below)
-3. ~~**Coverage Optimality**~~ — **DONE: 100% coverage, 22.3% hub savings** (see I.G below)
+3. ~~**Coverage Optimality**~~ — **DONE: 100% coverage, 22.3% hub savings** (see I.G below) [C476 retracted: broken baseline]
 4. ~~**HT Variance Decomposition**~~ — **DONE: R²=0.28, TAIL PRESSURE dominant** (see I.H below)
 5. ~~**Temporal Coverage Trajectories**~~ — **DONE: STRONG SCHEDULING with pedagogical pacing** (see I.I below)
 
@@ -3048,6 +3099,8 @@ These are not noise — they are **discoverable constraints** waiting to be form
 
 ### I.G. Coverage Optimality CONFIRMED
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C476 is retracted: the "hub savings" came from a broken baseline (alphabetical fallback in the greedy comparator).
+
 **Question:** Does Currier A optimize coverage of the discrimination space under cognitive constraints?
 
 **Answer:** YES. Real A achieves GREEDY-OPTIMAL coverage with 22.3% hub savings.
@@ -3085,7 +3138,7 @@ The four residuals from the bundle generator (PREFIX coherence, tail forcing, re
 
 The correct question is not "how are A entries generated?" but "how is discrimination coverage enforced over time?"
 
-**New Constraint: C476 - COVERAGE OPTIMALITY** (Tier 2, CLOSED)
+**New Constraint: C476 - COVERAGE OPTIMALITY** (Tier 2, CLOSED) [C476 retracted: broken baseline]
 
 ### I.H. HT Variance Decomposition
 
@@ -3170,7 +3223,7 @@ This is not accidental. It is structured temporal management of discrimination c
 
 | Constraint | What it Shows |
 |------------|---------------|
-| C476 | WHAT Currier A optimizes (coverage with hub rationing) |
+| C476 | WHAT Currier A optimizes (coverage with hub rationing) [retracted: broken baseline] |
 | **C478** | **HOW it achieves that (temporal scheduling)** |
 
 **Integration:** Adds C478 temporal scheduling to the architecture. See Nine-Layer Model in Section I.N for the complete table.
@@ -3178,6 +3231,8 @@ This is not accidental. It is structured temporal management of discrimination c
 **New Constraint: C478 - TEMPORAL COVERAGE SCHEDULING** (Tier 2, CLOSED)
 
 ### I.J. Process-Behavior Isomorphism (v4.12 / ECR-4)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Built on the hazard layer (17 transitions, 41% PHASE_ORDERING class; C2060, C2081), the recovery architecture and the k/h/e kernel roles (C089 superseded by C2082).
 
 **Question:** Does the Voynich control architecture behave like something built for real physical chemistry?
 
@@ -3343,7 +3398,7 @@ Universal Boundaries apply. Additionally: MIDDLEs do not *force* positions (C313
 | C313 | Position constrains legality, not content |
 | C384 | No entry-level A-B coupling |
 | C441-C444 | AZC legality projection |
-| C475 | MIDDLE atomic incompatibility |
+| C475 | MIDDLE atomic incompatibility [demoted to Tier 3: sparsity] |
 
 **Why This Is Tier 3 (Not Tier 2):**
 
@@ -3412,7 +3467,7 @@ Universal Boundaries apply. No refutation of either abstraction (both remain val
 |---------|-------|--------------|
 | MIDDLE zone survival | MIDDLE_ZONE_SURVIVAL | Source of zone clusters |
 | Material behavior classes | PROCESS_ISOMORPHISM | Source of M-A...M-D |
-| C382, C383 | Global type system | Why axes coexist cleanly |
+| C382, C383 | Global type system | Why axes coexist cleanly [v7.26 status: C382, C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)] |
 
 See `phases/ZONE_MATERIAL_COHERENCE/PHASE_SUMMARY.md` for full details.
 
@@ -3465,10 +3520,10 @@ See `phases/ZONE_MATERIAL_COHERENCE/PHASE_SUMMARY.md` for full details.
 
 | Layer | Role | Mechanism |
 |-------|------|-----------|
-| Currier B | Execution safety | Frozen Tier 0 |
+| Currier B | Execution safety [historical: hazard layer withdrawn; Tier 0 restated 2026-09-28] | Frozen Tier 0 |
 | - | - | **e-operator load-bearing** |
 | - | - | **h->k suppression necessary** |
-| Currier A | Coverage control | C476: hub rationing |
+| Currier A | Coverage control | C476: hub rationing [retracted: broken baseline] |
 | - | - | C478: temporal scheduling |
 | - | - | Zone survival profiles |
 | - | - | **Memory-optimized ordering** |
@@ -3505,6 +3560,8 @@ See `phases/SEMANTIC_CEILING_EXTENSION/PHASE_SUMMARY.md` for full details.
 ---
 
 ## I.O. Physical World Reverse Engineering Phases
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** FM-PHY-1 and APP-1 rest on the imposed 5-class hazard profile (41/24/24/6/6; C2060), SSD-PHY-1a and MAT-PHY-1 on the C475 incompatibility percentage (demoted: sparsity); the "controls a circulatory thermal plant" synthesis falls with them.
 
 ### Overview
 
@@ -3578,7 +3635,7 @@ Six investigation phases tested the physical grounding of the control architectu
 **Key Findings:**
 1. All 13 types are structurally non-codifiable (cannot be written down)
 2. Aligns with C469 (Categorical Resolution - no parametric encoding)
-3. Aligns with C490 (AGGRESSIVE prohibition - some interventions forbidden)
+3. Aligns with C490 (AGGRESSIVE prohibition - some interventions forbidden) [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)]
 4. Aligns with C477 (HT tail correlation - signals when judgment load spikes)
 
 **Design Principle:**
@@ -3600,7 +3657,7 @@ Six investigation phases tested the physical grounding of the control architectu
 | 4. State Complexity | Does apparatus generate ~128 states? | MATCH |
 
 **Key Finding:**
-- Fourth degree fire prohibition matches C490 EXACTLY: "It would coerce the thing, which the art of true distillation rejects, because nature too rejects, forbids, and repels all coercion."
+- Fourth degree fire prohibition matches C490 [demoted to Tier 3, v7.26] EXACTLY: "It would coerce the thing, which the art of true distillation rejects, because nature too rejects, forbids, and repels all coercion." [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)]
 - The pelican is the ONLY surveyed apparatus class that passes all four axes.
 - Behavioral isomorphism ≠ identification (we know the SHAPE matches, not WHICH specific apparatus).
 
@@ -3658,6 +3715,8 @@ Together:
 
 ## II. Process Domain Interpretation
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Also retired as evidence (strategic review §5): C157 "uniquely compatible (100%)". The "closed-loop" signature, 17 forbidden transitions, kernel control points and fire-degree cycle below are withdrawn supports.
+
 ### Tier 3: Apparatus Identification
 
 **Best match:** Circulatory reflux systems (pelican alembic or similar)
@@ -3679,7 +3738,7 @@ Common signature: **CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL**
 
 ### Line-Level Execution Cycle
 
-Lines follow SETUP→WORK→CHECK→CLOSE thermal processing cycle. See Section 0.F for full details (C547-C562).
+Lines follow SETUP→WORK→CHECK→CLOSE thermal processing cycle. See Section 0.F for full details (C547-C562). [historical: SETUP (C557) and CHECK (C561) demoted to Tier 3; C559 superseded; see the 0.F banner]
 
 ### Historical Pattern Alignment
 
@@ -3755,6 +3814,8 @@ Multi-product workshop likely. Programs represent **substrate x intensity combin
 
 ### What the Author Feared (via failure analysis)
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** These percentages are the 5 hazard classes, a keyword-imposed taxonomy (C2060) over a hazard layer that reduces to known effects (C2081).
+
 | Fear | Percentage |
 |------|------------|
 | Phase disorder (material in wrong state) | 41% |
@@ -3803,7 +3864,7 @@ The Voynich was written during the peak era of guild pharmaceutical secrecy:
 - **1424:** Bruges spice dealer/apothecary sells distilling glasses to John of Bavaria — distillation equipment is commodity trade goods
 - **1500:** Brunschwig publishes *Liber de arte distillandi*, the first printed distillation manual, breaking guild secrecy
 
-**The economic logic:** Plant properties and common remedies were widely known, even by laypeople. The competitive advantage was in the *manufacturing process* — how to distill, extract, compound, and formulate products of consistently superior quality. The control grammar (49 classes, 17 forbidden transitions, 6 macro states) represents an extraordinary engineering investment that is only justified if protecting high-value proprietary processes.
+**The economic logic:** Plant properties and common remedies were widely known, even by laypeople. The competitive advantage was in the *manufacturing process* — how to distill, extract, compound, and formulate products of consistently superior quality. The control grammar (49 classes, 17 forbidden transitions [withdrawn v7.25, C2081], 6 macro states) represents an extraordinary engineering investment that is only justified if protecting high-value proprietary processes.
 
 **Structural evidence from Phases 385-386:**
 
@@ -3825,12 +3886,12 @@ Phase 386 found that 4/6 dimensional differences between sections are explained 
 - Why Brunschwig aligns — he published (in 1500) what practitioners like the Voynich author had been keeping secret for decades
 
 **What this does NOT claim:**
-- Specific products or materials (C171 semantic ceiling)
+- Specific products or materials (C171 semantic ceiling [C171 demoted to Tier 3; referent wall only])
 - Identity of the guild or workshop
 - That sections map 1:1 to craft domains (Phase 386: most variation is REGIME-mediated)
 - That the "treatment" interpretation for Cosmo is confirmed (N=5, simpler alternatives exist)
 
-**Falsification:** If the manuscript's dating were revised outside the 1350-1500 pharmaceutical secrecy window, or if the structural architecture proved incompatible with process control (already falsified by 383 phases of evidence), the interpretation would fail.
+**Falsification:** If the manuscript's dating were revised outside the 1350-1500 pharmaceutical secrecy window, or if the structural architecture proved incompatible with process control (already falsified by 383 phases of evidence), the interpretation would fail. [historical: the process-control support was withdrawn v7.24; the control-program reading is Tier 3 with no distinguishing measurement]
 
 ---
 
@@ -3850,6 +3911,8 @@ Phase 386 found that 4/6 dimensional differences between sections are explained 
 ## VII. Program Characteristics
 
 ### Forgiveness Gradient
+
+[historical: "hazard density" here counts tokens of the 17-pair hazard classes, a layer withdrawn v7.25 (C2081); see SYSTEM/STATUS_BRIEF.md §3]
 
 Programs vary along a **forgiving <-> brittle** axis:
 
@@ -3894,19 +3957,19 @@ Only Tier 0-2 structural findings are binding.
 
 ## IX. Open Questions
 
-### Fully Answered
+### Fully Answered — [historical: retired language, strategic review §5]
 
 | Question | Status | Finding |
 |----------|--------|---------|
-| Why are some programs forgiving and others brittle? | PARTIALLY ANSWERED | Recovery varies freely (CV=0.82), hazard is clamped (CV=0.11) - C458 |
+| Why are some programs forgiving and others brittle? | PARTIALLY ANSWERED | Recovery varies freely (CV=0.82), hazard is clamped (CV=0.11) - C458 [demoted to Tier 3: frequency shadow] |
 | What does HT signal? | ANSWERED | Anticipatory vigilance, content-driven - C459 |
 | What role does AZC play in the manuscript? | **FULLY ANSWERED** | Positional encoding, compatibility grouping, position reflects vocabulary character - C437-C444 |
 | Why are there so many AZC folios? | **FULLY ANSWERED** | Enumerates all compatibility classes; each folio = distinct legal combination space - C437, C442 |
 | How does AZC relate to A and B? | **FULLY ANSWERED** | AZC encodes vocabulary position; each PREFIX+MIDDLE has one fixed position reflecting operational character - F-AZC-011/012/013 |
-| How do roles flow within a line? | **FULLY ANSWERED** | SETUP→WORK→CHECK→CLOSE positional template (p=3e-89) - C547-C562 |
+| How do roles flow within a line? | **FULLY ANSWERED** | SETUP→WORK→CHECK→CLOSE positional template (p=3e-89) - C547-C562 [half-demoted: C557/C561 Tier 3, C559 superseded] |
 | What is the relationship between ENERGY and FLOW? | **FULLY ANSWERED** | Anticorrelated by REGIME and section; heating vs cooling modes - C551, C562 |
-| What does daiin do? | **FULLY ANSWERED** | Line-initial ENERGY trigger (27.7% initial, 47.1% EN followers) - C557 |
-| What is Class 9 "self-chaining"? | **FULLY ANSWERED** | Directional or→aiin bigram (87.5%), zero aiin→aiin - C561 |
+| What does daiin do? | **FULLY ANSWERED** | Line-initial ENERGY trigger (27.7% initial, 47.1% EN followers) - C557 [demoted to Tier 3, PHASE_731] |
+| What is Class 9 "self-chaining"? | **FULLY ANSWERED** | Directional or→aiin bigram (87.5%), zero aiin→aiin - C561 [demoted to Tier 3, PHASE_731] |
 
 ### Still Open (structural)
 
@@ -3920,7 +3983,7 @@ Only Tier 0-2 structural findings are binding.
 - What institution supported it?
 - Why was this level of documentation created?
 
-### May Never Be Answerable (interpretive)
+### May Never Be Answerable (interpretive) — [historical: retired language, strategic review §5]
 
 - What specific products were made?
 - What specific apparatus was used?
@@ -3929,6 +3992,8 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## X. External Alignment: Puff-Voynich-Brunschwig (2026-01-14)
+
+**[Retired as evidence (strategic review §5)]** The Puff–Voynich "83:83 isomorphism", the "19/20 full procedural alignment" and REGIME = fire degree; X.3–X.5 and X.12 also rest on the withdrawn hazard layer and C458 (STATUS_BRIEF §3). Applies to X through X.17; later subsections are marked individually.
 
 ### Core Finding: SHARED CURRICULUM TRAJECTORY (v4.22 - UPGRADED)
 
@@ -3963,7 +4028,7 @@ This is stronger than "shared world" - it is **shared curriculum trajectory**: t
 | Regime-Degree Discrimination | 5/6 tests | **STRONG** |
 | Suppression Alignment | 5/5 tests | **PASS** |
 | Recovery Corridor | 4/4 tests | **PASS** |
-| Clamping Magnitude (C458) | 5/5 tests | **PASS** |
+| Clamping Magnitude (C458 [demoted to Tier 3: frequency shadow]) | 5/5 tests | **PASS** |
 | **Total** | **19/20** | **FULL PROCEDURAL ALIGNMENT** |
 
 ### X.1 Puff-Voynich: Mastery Horizon Isomorphism
@@ -4030,7 +4095,7 @@ Voynich regimes discriminate between Brunschwig's fire degrees:
 
 | Brunschwig Warning | Voynich Implementation |
 |-------------------|------------------------|
-| Fourth degree **categorically prohibited** | C490: AGGRESSIVE **structurally impossible** |
+| Fourth degree **categorically prohibited** | C490: AGGRESSIVE **structurally impossible** [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 | Thermal shock (glass shatters) | CONTAINMENT_TIMING = 24% of hazards |
 | Boiling prohibition + fraction mixing | PHASE_ORDERING + COMPOSITION = 65% |
 | Rate imbalance (recoverable) | RATE_MISMATCH = 6% (monitored, not forbidden) |
@@ -4049,9 +4114,9 @@ Key insight: **Prevention by design produces minimal actual failures.** Brunschw
 
 Both systems: **return to stability, not energy re-application.**
 
-### X.5 Clamping Magnitude - C458 Alignment (5/5 PASS)
+### X.5 Clamping Magnitude - C458 Alignment (5/5 PASS) [C458 demoted to Tier 3: frequency shadow]
 
-Brunschwig's "twice only" rule produces the same variance signature as C458:
+Brunschwig's "twice only" rule produces the same variance signature as C458 [historical]:
 
 | Dimension | Brunschwig Rule | Voynich CV | Status |
 |-----------|-----------------|------------|--------|
@@ -4106,9 +4171,9 @@ This analysis is **epistemically clean**:
 - No semantic decoding occurred
 - All movement within abstraction choice at Tier 4
 
-**Constraints NOT violated:** C384, C171, C476, C478, C179-C185, C490
+**Constraints NOT violated:** C384, C171, C476, C478, C179-C185, C490 [since then: C171 demoted to Tier 3, C476 retracted]
 
-**C171 ("zero material encoding") remains UNCHANGED.** A encodes the same kinds of operational worries that historical experts talked about - without ever naming the things they worried about.
+**C171 ("zero material encoding") remains UNCHANGED.** [historical: C171 demoted to Tier 3 2026-09-28] A encodes the same kinds of operational worries that historical experts talked about - without ever naming the things they worried about.
 
 ### X.10 Files
 
@@ -4128,7 +4193,7 @@ This analysis is **epistemically clean**:
 
 **The proposed folio order simultaneously resolves multiple independent inversions.**
 
-We optimized folio order using ONLY internal frozen constraints (C161, C325, C458, C179-C185). We did NOT tune for Puff or Brunschwig. Then we tested external alignment:
+We optimized folio order using ONLY internal frozen constraints (C161, C325, C458, C179-C185) [historical: C458 demoted to Tier 3; C325's gradient is a section confound, C1401]. We did NOT tune for Puff or Brunschwig. Then we tested external alignment:
 
 | External Test | Current Order | Proposed Order | Change |
 |--------------|---------------|----------------|--------|
@@ -4337,14 +4402,14 @@ The Test 4 "monotonic relationship" is over 4 REGIME bins only. This is an ordin
 
 **Three-Level Relationship Hierarchy:**
 
-1. **Voynich <-> Brunschwig** - Direct, structural, grammar-level (C493, C494)
+1. **Voynich <-> Brunschwig** - Direct, structural, grammar-level (C493, C494) [v7.26 status: C493, C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 2. **Voynich <-> Puff** - Strong external alignment via complexity ordering
 3. **Puff <-> Brunschwig** - Historical lineage
 
 **What This Does NOT Mean:**
 - 83:83 is internally necessary (still unexplained coincidence with plausible mechanism)
 - Puff defines Voynich structure (external validation, not internal dependency)
-- Material -> folio mapping exists (no semantic encoding, C171 preserved)
+- Material -> folio mapping exists (no semantic encoding, C171 preserved [C171 since demoted to Tier 3])
 
 **Backward Compatibility Clarification:**
 
@@ -4356,12 +4421,14 @@ Advanced grammar is a STRICTER CONTRACT, not a superset.
 
 **Files:** phases/PUFF_COMPLEXITY_CORRELATION/puff_regime_complexity_test.py
 
-### X.17 Brunschwig Backprop Validation (2026-01-15) - EXPLANATORY SATURATION
+### X.17 Brunschwig Backprop Validation (2026-01-15) - EXPLANATORY SATURATION — [historical: retired language, strategic review §5]
 
 **Phase:** BRUNSCHWIG_BACKPROP_VALIDATION
 **Status:** Model predictions confirmed without changes. No new constraints.
 
 #### The Definitive Interpretation (Now Well-Defended)
+
+[historical: the "incompatibility manifold" rests on C475 (demoted to Tier 3: sparsity); "definitive" is retired language]
 
 > **Currier A registers enumerate stable regions of a high-dimensional incompatibility manifold that arise when materials, handling constraints, process phase, and recoverability jointly constrain what must not be confused.**
 
@@ -4409,7 +4476,7 @@ Within WATER_GENTLE (6 A folios), 2 distinct sub-classes exist:
 
 Only 6 MIDDLEs shared between sub-classes. Clusters are stable under tail/hub perturbation (100% survival).
 
-#### Explanatory Saturation
+#### Explanatory Saturation — [historical: retired language, strategic review §5]
 
 > **The model is saturated, not brittle.**
 
@@ -4419,7 +4486,7 @@ All tests landed exactly where predicted without forcing upstream changes:
 - 4/6 perturbation tests stable (F-BRU-004)
 - Property model rejected (F-BRU-003)
 
-This is the best possible outcome: discovery phase complete, consolidation phase begins.
+This is the best possible outcome: discovery phase complete, consolidation phase begins. [historical: retired language, strategic review §5: the 2026-09-27 review superseded the "consolidate" framing]
 
 #### Governance Outcome
 
@@ -4545,7 +4612,7 @@ This explains:
 
 **Constraints:** C523 (Pharma Label Vocabulary Bifurcation), C524 (Jar Label Morphological Compression)
 
-**Status:** CLOSED - Confirms apparatus interpretation with morphological evidence
+**Status:** CLOSED - Confirms apparatus interpretation with morphological evidence — [historical: retired language, strategic review §5; the reading remains a Tier 3 hypothesis]
 
 ### X.19.b Morphological Function Model: PP/RI Pipeline Architecture (2026-01-23)
 
@@ -4560,7 +4627,7 @@ An A-record functions as a specification:
 
 #### Component Functions
 
-**PREFIX = Control-Flow Participation (Tier 2, per C466-C467, C383)**
+**PREFIX = Control-Flow Participation (Tier 2, per C466-C467, C383)** [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 - Encodes intervention/monitoring/core mode
 - Universal across all token types (PP and RI)
@@ -4608,7 +4675,7 @@ The earlier "decision archetype (D1-D12)" mapping is provisional. See ccm_suffix
 
 #### Architectural Interpretation (Tier 4)
 
-The system may function as a working pharmaceutical/alchemical manual (consistent with C196-C197 "EXPERT_REFERENCE archetype"):
+The system may function as a working pharmaceutical/alchemical manual (consistent with C196-C197 "EXPERT_REFERENCE archetype" [retired as evidence, strategic review §5: invented archetype]):
 
 ```
 Layer 1: CURRIER A (Registry)
@@ -4621,7 +4688,7 @@ Layer 2: AZC (Legality Filter)
 - Requires discrete PP units for independent validation
 
 Layer 3: CURRIER B (Execution)
-- Closed-loop control responding to PP tokens
+- Closed-loop control responding to PP tokens [closed-loop support withdrawn v7.24, C171]
 - RI structurally excluded (already used for selection)
 
 Layer 4: JAR LABELS (Physical Interface - Tier 4)
@@ -4649,7 +4716,7 @@ If this is a working manual, the practitioner's workflow might be:
 1. **Consult PP vocabulary** → Find materials with required compatibility
 2. **Check RI discrimination** → Select specific material matching constraints
 3. **Verify via AZC** → Confirm positional legality for combination
-4. **Execute via B** → Run the closed-loop control program
+4. **Execute via B** → Run the closed-loop control program [closed-loop support withdrawn v7.24]
 5. **Physical coordination** → Use jar labels to identify apparatus configuration
 
 The jar labels are the "last mile" - where abstract constraints meet physical vessels.
@@ -4665,7 +4732,7 @@ The jar labels are the "last mile" - where abstract constraints meet physical ve
 | C506.b | PP behavioral heterogeneity within classes |
 | C523 | Pharma label vocabulary bifurcation |
 | C524 | Jar label morphological compression |
-| C383 | Global PREFIX type system |
+| C383 | Global PREFIX type system [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)] |
 | C466-C467 | PREFIX as control-flow participation |
 | C495 | SUFFIX regime breadth correlation |
 
@@ -4679,6 +4746,8 @@ The jar labels are the "last mile" - where abstract constraints meet physical ve
 **Status:** OPEN - Tier 4 synthesis for further investigation
 
 ### X.20 A->AZC->B Pipeline Closure: Reachability Suppression (2026-01-17)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The "hazard class taxonomy" and "hazard envelope" rest on the 17-pair hazard layer (class level demoted, C783; reduces, C2081); "real closure" is retired language (strategic review §5). The AZC vocabulary-restriction rows (C468, C472) remain live in the registry.
 
 **Phase:** AZC_REACHABILITY_SUPPRESSION
 **Status:** COMPLETE - Real closure achieved
@@ -4782,7 +4851,7 @@ This completes the structural understanding of how the three layers co-produce s
 - C454/C455: No adjacency or cycle coupling
 - C440: Uniform B sourcing across AZC folios
 - C121/C124: 49-class grammar is universal
-- C468, C469, C470, C472: AZC constraint architecture
+- C468, C469, C470, C472: AZC constraint architecture [C470 demoted to Tier 3: frequency confound]
 
 #### What This Does NOT Claim
 
@@ -4791,6 +4860,8 @@ Universal Boundaries apply. This is mechanism characterization within establishe
 **Files:** phases/AZC_REACHABILITY_SUPPRESSION/
 
 ### X.21 Constraint Substitution Interpretation (2026-01-19)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** SLI = hazard_density / (escape_density + link_density) is built from the withdrawn hazard layer and legacy LINK density (C609, C1174); its C458 support is a frequency shadow.
 
 **Phase:** SENSORY_LOAD_ENCODING + BRUNSCHWIG_REVERSE_ACTIVATION
 **Status:** COMPLETE - Explanatory model validated
@@ -4845,7 +4916,7 @@ Sensory load encodes through vocabulary selection, not direct signaling.
 
 | Finding | Explanation |
 |---------|-------------|
-| C458 (Design Clamp) | High-hazard contexts have tight constraints |
+| C458 (Design Clamp) [demoted to Tier 3: frequency shadow] | High-hazard contexts have tight constraints |
 | C477 (HT Correlation) | HT tracks residual decision complexity |
 | Inverse SLI-HT | Constraint geometry enforces safety |
 
@@ -4860,6 +4931,8 @@ Universal Boundaries apply. Additionally:
 **Files:** phases/SENSORY_LOAD_ENCODING/, results/sensory_load_index.json
 
 ### X.22 Zone Affinity Analysis (2026-01-19)
+
+[historical inputs: the SLI clusters inherit the withdrawn hazard and LINK inputs (see X.21), and the R-zone "progressive restriction" reading rests on the retracted R-series ordering (C434); zone–modality results stay Tier 3 hypotheses]
 
 **Phase:** BRUNSCHWIG_REVERSE_ACTIVATION
 **Status:** COMPLETE - 197/197 recipes processed
@@ -5121,6 +5194,8 @@ The semantic ceiling is confirmed at **aggregate characterization**:
 
 ### X.25 Trajectory Semantics: Judgment-Gating System (2026-01-19)
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Its stated foundation, the C→P→R→S order via R-series ordering (C434), is retracted as a transcription artifact (PHASE_742), and P is not a diagram position.
+
 **Phase:** TRAJECTORY_SEMANTICS
 **Status:** COMPLETE - Semantic boundary resolution achieved
 
@@ -5200,7 +5275,7 @@ This is not a failure to "go further." This IS going further - into procedural s
 #### Constraints Respected
 
 - **C384:** Labels trajectories and phases, not tokens
-- **C434:** Uses R-series ordering as foundation
+- **C434:** Uses R-series ordering as foundation [C434 retracted, PHASE_742: transcription artifact]
 - **C443:** Extends escape gradients with temporal dimension
 - **C469:** Judgment availability is categorical
 
@@ -5232,7 +5307,7 @@ This phase rescues trajectory analysis from a wrong question (apparatus physics)
 | Hypothesis | Result | Key Finding |
 |------------|--------|-------------|
 | H2: Monotonicity | **PASS** | Zodiac rho=-0.755 (steady decline), A/C rho=-0.247 (oscillatory) |
-| H6: R-series restriction | **PASS** | Perfect vocabulary narrowing: R1(316)->R2(217)->R3(128) unique MIDDLEs |
+| H6: R-series restriction | **PASS** | Perfect vocabulary narrowing: R1(316)->R2(217)->R3(128) unique MIDDLEs [ordering leg retracted, see below] |
 | H7: S->B-terminal flow | **PASS** | S-zone vocabulary 3.5x enriched in B-terminal (OR=3.51, p<0.0001) |
 | H8: Pelican reversibility | **FAIL** | Zone escape does NOT correlate with operational reversibility |
 
@@ -5302,7 +5377,7 @@ This phase disentangles them cleanly:
 
 - **C384:** Aggregate distributions only, no token-to-referent mapping
 - **C430:** Explicit Zodiac/A/C family separation
-- **C434:** Uses R-series forward ordering
+- **C434:** Uses R-series forward ordering [C434 retracted, PHASE_742: transcription artifact]
 - **C436:** Scaffold uniformity difference confirmed
 
 **Tier:** 3 (Structural Characterization - scaffold->trajectory signature)
@@ -5370,7 +5445,7 @@ The falsification produces something cleaner:
 
 Voynich and Brunschwig converge on:
 - The same process domain
-- The same hazard ontology
+- The same hazard ontology [historical: hazard layer withdrawn v7.25, C2081]
 - The same curriculum ordering
 - The same notion of completeness vs intensity
 
@@ -5384,7 +5459,7 @@ This formulation:
 - Respects every Tier 0-2 constraint
 - Incorporates the falsification
 - Preserves the genuine AZC/sensory insight
-- Closes the Brunschwig line of inquiry cleanly
+- Closes the Brunschwig line of inquiry cleanly — [historical: retired language, strategic review §5]
 
 #### New Constraints
 
@@ -5396,6 +5471,8 @@ This formulation:
 **Files:** phases/BC_EXPLANATION_ENFORCEMENT/, results/bc_*.json
 
 ### X.28 Recipe Triangulation Methodology: Multi-Dimensional PP Convergence (2026-01-21)
+
+**[Retired as evidence (strategic review §5)]** The pipeline's first mapping, fire_degree = N → REGIME_N, is retired (REGIME = fire degree; C1712, C2070); the eoschso = chicken reading stays a Tier 3 hypothesis only.
 
 **Phase:** ANIMAL_PRECISION_CORRELATION
 
@@ -5571,7 +5648,7 @@ Now demonstrated across BOTH material classes: REGIME_4 is universal precision i
 
 #### Tier Compliance
 
-- **C536 (Tier 2):** Material-class REGIME invariance (structural fact)
+- **C536 (Tier 2):** Material-class REGIME invariance (structural fact) [v7.26 status: C536 demoted to Tier 3 (REGIME/control-strategy reading)]
 - **C537 (Tier 2):** Token-level differentiation (structural fact)
 - **C538 (Tier 3):** PP material-class distribution (conditional on Brunschwig)
 - **This section (Tier 4):** Interpretation as execution parameterization
@@ -5895,7 +5972,7 @@ Procedural tier features add 2-3 independent dimensions beyond aggregate rate fe
 
 #### REGIME_4 Clarification (F-BRU-017)
 
-REGIME_4 shows HIGHER ke_kch ratio (more ke/sustained), clarifying "precision" in C494:
+REGIME_4 shows HIGHER ke_kch ratio (more ke/sustained), clarifying "precision" in C494: [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 - Precision = tight tolerance, not intensity
 - Achieved via sustained equilibration cycles (ke = k + e)
 - NOT via burst precision (kch = k + ch)
@@ -6035,7 +6112,7 @@ The Rosettes foldout has been revalidated using corrected ZL (Zandbergen) transc
 
 **Metalayer confirmed (C1126):** The Rosettes foldout is an organizational metalayer sitting above the standard A/B/AZC systems and cross-referencing the body text. This is the core finding — it is not a standard B program page, not a standard AZC positional page, but a meta-structural index.
 
-**AZC-like grammar (C1127):** All entity types (ring text, labels, paths, spiral, clock) show consistent AZC-type morphology: grammar coverage ~42% (B: ~100%, AZC: ~50%), kernel density 29-41%, PP ~50%/RI ~2%. Not a hybrid — the old hybrid classification (C1088) was a data artifact.
+**AZC-like grammar (C1127):** All entity types (ring text, labels, paths, spiral, clock) show consistent AZC-type morphology: grammar coverage ~42% (B: ~100%, AZC: ~50%), kernel density 29-41%, PP ~50%/RI ~2%. Not a hybrid — the old hybrid classification (C1088, one of the 21 Rosettes constraints deleted and superseded in Phase 402) was a data artifact.
 
 **Bridge enrichment (C1124):** 3.05x enrichment over B corpus (21.5% vs 7.0%). Universal across all sub-region types — ring 4.56x, labels 4.74-5.17x, clock 7.11x. The foldout preferentially samples cross-system vocabulary.
 
@@ -6111,7 +6188,7 @@ Phase 408 closes the PP pipeline architecture and discovers the construction hie
 
 ### Interpretation (Tier 3-4)
 
-The three A-B pipeline channels (C1139) are not independent -- they are connected through a **construction hierarchy**. Bridge MIDDLEs serve a dual role: they ARE the dynamical backbone of B's 49-class grammar (C1013, C1014), and they are also the **morphological substrate** from which identification vocabulary is assembled. The dark pipeline does not have its own atomic vocabulary -- it reuses bridge atoms in novel combinations, using a modified grammar with additional atoms. This is the B-side analog of C913's finding that 90.9% of RI MIDDLEs contain PP substrings on the A side.
+The three A-B pipeline channels (C1139) are not independent -- they are connected through a **construction hierarchy**. Bridge MIDDLEs serve a dual role: they ARE the dynamical backbone of B's 49-class grammar (C1013, C1014 [C1014 demoted to Tier 3, PHASE_748]), and they are also the **morphological substrate** from which identification vocabulary is assembled. The dark pipeline does not have its own atomic vocabulary -- it reuses bridge atoms in novel combinations, using a modified grammar with additional atoms. This is the B-side analog of C913's finding that 90.9% of RI MIDDLEs contain PP substrings on the A side.
 
 The overlapping but non-identical atom pools (Jaccard 0.481) and modified ordering rules (50% agreement) suggest the dark pipeline represents a **specialized construction channel**: it shares the fundamental morphological building blocks with grammar compounds but applies different assembly rules to produce identification vocabulary rather than operational instructions. The 25 dark-exclusive atoms provide additional specificity not needed in the grammar channel.
 
@@ -6130,7 +6207,7 @@ This would explain the full structural signature:
 - **Grammar-standard prefixes (C1138, GS/EXT ratio 3.39):** Even identification tokens need a domain selector. Materials are identified within operational contexts.
 - **Phantoms (15 B-absent):** Morphologically valid name-slots that no actual material instantiates. The system can generate more names than it needs.
 
-The analogy is chemical nomenclature: methyl-ethyl-ketone names a substance by concatenating its structural components. A distiller trained in this system would not read a substance name in natural language -- they would read a compound MIDDLE and recognize the material by its operational profile. The semantic ceiling (C171) holds: we cannot recover WHICH material a compound names, but we can see that the naming system is built from the same atoms that drive the operational grammar.
+The analogy is chemical nomenclature: methyl-ethyl-ketone names a substance by concatenating its structural components. A distiller trained in this system would not read a substance name in natural language -- they would read a compound MIDDLE and recognize the material by its operational profile. The semantic ceiling (C171 [demoted to Tier 3; referent wall only]) holds: we cannot recover WHICH material a compound names, but we can see that the naming system is built from the same atoms that drive the operational grammar.
 
 ### Phase 409 Extension: Dual-Channel Budget and Section-Specific Catalogs
 
@@ -6166,7 +6243,7 @@ Heat            → Cool/measure...end           → Heat again
 - Top QO→CHSH handoff: k→e at 20.7% (heat, then cool/measure)
 - Top CHSH→QO handoff: y→k at 19.5% (measurement done, heat again)
 - Lines open with CHSH 54.2% (measure first), close with QO 59.8% (heat last)
-- Kernel routing is massive (z=49.12), with CHSH→QO 2.2x stronger than QO→CHSH — the monitoring result constrains next energy operation more strongly than energy constrains monitoring. This is a feedback architecture.
+- Kernel routing is massive (z=49.12), with CHSH→QO 2.2x stronger than QO→CHSH — the monitoring result constrains next energy operation more strongly than energy constrains monitoring. This is a feedback architecture. [v7.25: C2082, superseding C089, finds k carries no cross-token routing beyond matched controls at glyph level; the passing signal is word-ending routing (e, bench, d)]
 
 ### sh Monitor-Pivot vs ch Checkpoint-Gate (C1243)
 
@@ -6201,7 +6278,7 @@ The two extensible atoms encode independent control parameters:
 | **Intensity** | e | e, ee, eee | k=full heat, ke=modulated, kee=gentle |
 | **Duration** | i | i, ii, iii | i=single pass, ii=sustained cycling |
 
-Empirical support: bare k is 92.6% of QO heat MIDDLEs in REGIME_2 (highest intensity), while ke mixing reaches 18.6% in REGIME_1 (modulated regime). The "check" gloss for -aiin/-ain (C561) applies to the or→aiin bigram context; in suffix semantics, aiin = a(yield) + ii(iterate) + n(halt) = "sustained cycling until halt."
+Empirical support: bare k is 92.6% of QO heat MIDDLEs in REGIME_2 (highest intensity), while ke mixing reaches 18.6% in REGIME_1 (modulated regime). The "check" gloss for -aiin/-ain (C561 [demoted to Tier 3, PHASE_731]) applies to the or→aiin bigram context; in suffix semantics, aiin = a(yield) + ii(iterate) + n(halt) = "sustained cycling until halt."
 
 ### Cycle Is Strictly Line-Scoped
 
@@ -6227,7 +6304,7 @@ REGIME encodes apparatus type via vocabulary signatures. Five apparatus profiles
 
 - **DISTILLATION vs PRECISION anti-correlate** at rho=-0.666 (p<0.0001) — the strongest inter-profile axis. Folios specialize: either distillation vocabulary or precision vocabulary, not both.
 
-- **R1/R3 are single-apparatus REGIMEs** (97%/95% distillation-dominant). **R2/R4 mix apparatus types** within the same fire degree — consistent with Brunschwig's description of applying the same temperature via different apparatus. R2 splits 60% sealed vessel / 40% distillation; R4 splits three ways.
+- **R1/R3 are single-apparatus REGIMEs** (97%/95% distillation-dominant). **R2/R4 mix apparatus types** within the same fire degree [REGIME = fire degree retired as evidence, strategic review §5] — consistent with Brunschwig's description of applying the same temperature via different apparatus. R2 splits 60% sealed vessel / 40% distillation; R4 splits three ways.
 
 - **R3 vs R1 vocabulary differentiation**: R3-enriched = aii 41x, eo "cool-open" 7.6x, od "collect" 6.9x. R1-enriched = ke "sustained heat" 3.2x, ck "direct heat" 2.7x, lk "L-compound energy" 4.3x. R3 programs include unsealing, collecting, and cooling-with-opening. R1 emphasizes sustained energy management without interruption.
 
@@ -6240,7 +6317,9 @@ REGIME encodes apparatus type via vocabulary signatures. Five apparatus profiles
 ## XVI. 8-Category Operational System (Phases 452-456)
 
 **Phases:** A_CATEGORY_SCATTERSHOT (452) | AZC_CATEGORY_SCATTERSHOT (453) | CATEGORY_B_EXECUTION (454) | CATEGORY_MECHANISM_DECOMPOSITION (455) | CATEGORY_REGIME_INTEGRATION (456)
-**Constraints:** C1261-C1294 | **Date:** 2026-02-24
+**Constraints:** C1261-C1294 [C1274 demoted to Tier 3: circular, C2069] | **Date:** 2026-02-24
+
+**[Retired as evidence (strategic review §5)]** Category-as-unit analysis: the 8 categories are keyword-imposed, "8" was never k-tested, and MARKING is gloss-contradicted (C2069); MARKING-dependent results are retired until recomputed. The hazard statements below also rest on the withdrawn hazard layer (C2081). Sections XVIII–XX, XXII and XXV inherit this.
 
 ### Core Finding
 
@@ -6265,7 +6344,7 @@ REGIME encodes apparatus type via vocabulary signatures. Five apparatus profiles
 
 **AZC (Phase 453):** AZC zones (R, C, S, P) specialize by category (C1269, V=0.084). Bridge MIDDLEs are sorted by category within AZC zones (C1272, p=0.0003) while dark MIDDLEs are not (p=0.198) — AZC mediates the bridge sorting. AZC-exclusive vocabulary has a distinctive category profile: MARKING/THERMAL-enriched, TRANSITION-depleted (C1273, V=0.382). All AZC sections converge on A Pharma atom profiles (C1276).
 
-**The headline cross-system finding (C1274):** THERMAL category fraction predicts high B escape rate (rho=+0.780), TRANSITION fraction predicts low escape (rho=-0.598). Category composition in AZC/A directly predicts B dynamics.
+**The headline cross-system finding (C1274 [demoted to Tier 3, PHASE_745: circular — THERMAL is defined by the k/e atoms that drive qo-escape]):** THERMAL category fraction predicts high B escape rate (rho=+0.780), TRANSITION fraction predicts low escape (rho=-0.598). Category composition in AZC/A directly predicts B dynamics.
 
 ### B Execution Grammar (Phase 454)
 
@@ -6279,7 +6358,7 @@ Phase 454 proved categories organize B's internal execution with 7/7 PASS:
 
 **Mode differentiation (C1279):** Mode A lines (terminal-suffix dominant) are THERMAL-enriched (28.9%), injecting escape-capable vocabulary. Mode B lines (bare-suffix dominant) are TRANSITION-enriched (17.4%), maintaining escape restriction. The suffix mode system and category system, derived independently, converge on the same operational axis.
 
-**Hazard concentration (C1280):** Hazard MIDDLEs concentrate in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is essentially hazard-immune (2.6%). V=0.560 — the strongest category effect measured. In process terms: transferring material and maintaining seals are dangerous; heating is safe (consistent with distillation physics where the fire is controlled but the transfer/seal failure modes are catastrophic).
+**Hazard concentration (C1280) [historical: "hazard MIDDLEs" are defined by the withdrawn 17-pair layer, C2081]:** Hazard MIDDLEs concentrate in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is essentially hazard-immune (2.6%). V=0.560 — the strongest category effect measured. In process terms: transferring material and maintaining seals are dangerous; heating is safe (consistent with distillation physics where the fire is controlled but the transfer/seal failure modes are catastrophic).
 
 ### Category Mechanism Decomposition (Phase 455)
 
@@ -6305,7 +6384,7 @@ Phase 455 decomposed three open mechanisms with 6/8 PASS:
 
 The system follows process control logic: you heat (and keep heating), then transfer (and keep transferring), then close. You don't jump from heating to closing or from flow to heating. The pathways are also directional: FLOW->TRANSITION (779) vs TRANSITION->FLOW (525).
 
-**Forbidden transitions are cross-category (T3 FAIL):** 15/17 forbidden transitions cross category boundaries (only 2 within-category, both MARKING->MARKING). MARKING is the dominant target/source in forbidden pairs (10/17 involve MARKING). Forbidden transitions operate below category level — they enforce specific MIDDLE-level constraints, not category boundaries.
+**Forbidden transitions are cross-category (T3 FAIL) [historical: the 17 are withdrawn, C2081]:** 15/17 forbidden transitions cross category boundaries (only 2 within-category, both MARKING->MARKING). MARKING is the dominant target/source in forbidden pairs (10/17 involve MARKING). Forbidden transitions operate below category level — they enforce specific MIDDLE-level constraints, not category boundaries.
 
 **Paragraph architecture (C1287-C1290):**
 
@@ -6339,7 +6418,7 @@ In distillation context, the 8-category transition grammar describes a process c
 
 ### REGIME-Category Relationship (Phase 456)
 
-Phase 456 tested whether categories integrate with the 4-REGIME classification (C179/C494, GMM k=4 on 15 folio features). The association is strong (chi2=526, V=0.106) but **kernel-mediated**: after residualizing on k/h/e atom composition, the signal drops to non-significant (Fisher p=0.061). THERMAL's kernel R2=0.779 means ~78% of its folio-level variance is explained by k/e atom prevalence alone.
+Phase 456 tested whether categories integrate with the 4-REGIME classification (C179/C494 [demoted to Tier 3, v7.26], GMM k=4 on 15 folio features). The association is strong (chi2=526, V=0.106) but **kernel-mediated**: after residualizing on k/h/e atom composition, the signal drops to non-significant (Fisher p=0.061). THERMAL's kernel R2=0.779 means ~78% of its folio-level variance is explained by k/e atom prevalence alone. [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 **Key findings:**
 - **REGIME_1** (thermal-control-intensive, 32 folios) = THERMAL-dominant (29.7%)
@@ -6389,6 +6468,8 @@ The T8 finding (tail type category divergence) adds nuance: while the timing is 
 **Phase:** PREFIX_CATEGORY_ANATOMY (458)
 **Constraints:** C1297-C1302 | **Date:** 2026-02-24
 
+**[Retired as evidence (strategic review §5)]** Category-as-unit results; the categories are keyword-imposed (C2069). See the XVI banner.
+
 ### Core Finding
 
 Individual PREFIXes predict operational categories with structured selectivity (V=0.311, chi2=15,598). This is not tautological with base-group membership: PREFIX adds 0.058 bits (2.1%) of category information beyond base group (C1301). The association is concentrated in specific pairs, particularly t-base (ct vs ot, V=0.891) and o-base (qo vs others, V=0.217).
@@ -6432,6 +6513,8 @@ The channel symmetry (EN and AX each having a sister pair + pure third) suggests
 
 **Phase:** SISTER_CATEGORY_MECHANISM (459)
 **Constraints:** C1303-C1307 | **Date:** 2026-02-24
+
+**[Retired as evidence (strategic review §5)]** Category-as-unit results; the categories are keyword-imposed (C2069). See the XVI banner.
 
 ### Core Finding
 
@@ -6477,6 +6560,8 @@ No three-way interaction exists between sister identity, category, and position 
 **Phase:** CROSS_MODE_CATEGORY_COUPLING (460)
 **Constraints:** C1308-C1312 | **Date:** 2026-02-25
 
+**[Retired as evidence (strategic review §5)]** Category-as-unit results; the categories are keyword-imposed (C2069). See the XVI banner.
+
 ### Core Finding
 
 Mode A and Mode B parallel tracks are coordinated by shared paragraph context and positional synchronization, not by sequential dependency. The two tracks read from the same "key signature" (paragraph category profile) and are synchronized by position within the line, but play their parts independently — like two instruments reading from the same measure of sheet music.
@@ -6512,8 +6597,8 @@ The Phase 460 findings collectively establish a named structural principle: Mode
 ## XXI. Distillation Terminology Mapping (Phase 461)
 
 **Phase:** DISTILLATION_TERMINOLOGY_MAPPING (461)
-**Constraints:** C1313-C1316 | **Fits:** F-B-008 through F-B-012 | **Date:** 2026-02-25
-**Tier:** 3-4 (intentionally interpretive, extending GLOSSING.md)
+**Constraints:** C1313-C1316 [C1314 superseded by C2056, itself narrowed to qok→ok/oke] | **Fits:** F-B-008 through F-B-012 | **Date:** 2026-02-25
+**Tier:** 3-4 (intentionally interpretive, extending GLOSSING.md) [the REGIME-to-fire-degree table below is retired as evidence]
 
 ### Purpose
 
@@ -6531,7 +6616,7 @@ qo and ok access completely non-overlapping thermal atom pools:
 
 In distillation terms: qo manages the fire/furnace (adding energy), ok manages the vessel/still (cooling/stabilization). Two physically independent thermal channels. Brunschwig confirms: fire managed via air holes (lines 2038-2055) vs vessel tested by finger (lines 1880-1893).
 
-### Overshoot-Correct Cycling (C1314, F-B-009)
+### Overshoot-Correct Cycling (C1314, F-B-009) [C1314 superseded by C2056, which confirms only qok→ok and qok→oke above composition]
 
 Within lines, qo-k tokens transition to ok-e tokens 43% above chance (103 observed vs 72 null, p=0.0). The reverse (ok-e to qo-k) is 55% above chance (112 vs 72, p=0.0). This is consistent with heat overshoot followed by vessel correction — the standard problem in distillation where heat always overshoots and must be corrected.
 
@@ -6589,7 +6674,7 @@ Different e-compound MIDDLEs distribute non-randomly across REGIMEs (chi-sq p<0.
 
 | PREFIX | Domain | Physical Referent | Evidence |
 |--------|--------|-------------------|----------|
-| qo | Heat source | Fire/furnace management | C1313, C1314 |
+| qo | Heat source | Fire/furnace management | C1313, C1314 [superseded by C2056] |
 | ok | Vessel temperature | Thermal verification (coarse) | C1313, C1316 |
 | ot | Vessel operations | Operational verification (fine) | C1316 |
 | ch | Active testing | Discrete physical tests | C929, T7 |
@@ -6599,6 +6684,8 @@ Different e-compound MIDDLEs distribute non-randomly across REGIMEs (chi-sq p<0.
 | sa | Scaffold | Supporting infrastructure | T1 neg ctrl |
 
 ### REGIME-to-Fire-Degree Mapping (Tier 3)
+
+**[Retired as evidence (strategic review §5)]** REGIME = Brunschwig fire degree (C1712, C2070; the gloss absorbed a sign flip in C1872).
 
 | REGIME | Proposed Method | Characteristic | Evidence |
 |--------|----------------|----------------|----------|
@@ -6624,9 +6711,11 @@ Different e-compound MIDDLEs distribute non-randomly across REGIMEs (chi-sq p<0.
 
 ### What This Means
 
-The Voynich B text's structural patterns — PREFIX selection, atom composition, within-line sequencing, REGIME variation — map systematically onto the physics of controlled distillation. This is not translation; it is structural alignment at the level of operational roles. The manuscript's control programs are consistent with managing heat input, monitoring vessel state, verifying output, and cycling through these operations with precision appropriate to the fire degree. Token coverage: 99.5% of B tokens receive a mapping.
+The Voynich B text's structural patterns — PREFIX selection, atom composition, within-line sequencing, REGIME variation — map systematically onto the physics of controlled distillation. This is not translation; it is structural alignment at the level of operational roles. The manuscript's control programs are consistent with managing heat input, monitoring vessel state, verifying output, and cycling through these operations with precision appropriate to the fire degree. Token coverage: 99.5% of B tokens receive a mapping. [historical: the control-program reading is Tier 3 with its supports withdrawn, and REGIME = fire degree is retired; STATUS_BRIEF §3]
 
 ## XXII. Parallel Operator Hypothesis (Session Analysis, 2026-02-25)
+
+**[Retired as evidence (strategic review §5)]** The shared/divergent profile contrast is category-as-unit and leans on MARKING and MONITORING (C2069); see the XVI banner.
 
 ### Context
 
@@ -6760,7 +6849,7 @@ Phases 462-465 establish a three-level organizational hierarchy for Currier B:
 | **Paragraph** | Operator task | Specific instruction sequence | Emphasis from block | Gallows-initiated, self-contained |
 
 In distillation terms:
-- The **folio** specifies what kind of fire and apparatus setup you're running (water bath, direct fire, etc.)
+- The **folio** specifies what kind of fire and apparatus setup you're running (water bath, direct fire, etc.) [REGIME = fire degree is retired as evidence, strategic review §5]
 - Each **block** is a processing stage within that setup — first you prepare, then you heat, then you monitor, then you collect. Adjacent blocks do complementary jobs.
 - Each **paragraph** within a block is one operator's task assignment for that stage — the sealer, the temperature watcher, the material handler.
 
@@ -6833,6 +6922,8 @@ The "multiplexed" model (one fire, multiple vessels) is partially supported by R
 **Phase:** A_PARAGRAPH_CATEGORY_ARCHITECTURE (468)
 **Constraints:** C1334-C1337 | **Date:** 2026-02-26
 
+**[Retired as evidence (strategic review §5)]** Category-as-unit results, including the MARKING front-loading claim (MARKING is gloss-contradicted, C2069). See the XVI banner.
+
 ### Context
 
 Phase 452's scattershot confirmed the 8-category system works in A (C1261: record coherence d=9.7, C1263: paragraph specialization d=12.5). Phase 468 goes deeper: not just "paragraphs specialize" but HOW they specialize, what types exist, and whether there's internal or folio-level organization.
@@ -6892,7 +6983,7 @@ The MARKING front-loading means each catalog entry begins with annotations: what
 ### Caveats
 
 - Category assignments depend on the Phase 446 gloss→category mapping — systematic bias in the mapping would affect all findings
-- The C171 semantic ceiling means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
+- The C171 semantic ceiling [C171 demoted to Tier 3; referent wall only] means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
 - Section T has only 11 paragraphs; FLOW dominance (64%) is based on small n
 
 ---
@@ -6993,7 +7084,7 @@ Eight medieval genres were evaluated against the VMS structural profile across 7
 ### The Genre Gap
 
 Three VMS features have NO precedent in any surveyed genre:
-1. **Structural safety architecture** (C109) -- no medieval document encodes safety through forbidden state transitions
+1. **Structural safety architecture** (C109) -- no medieval document encodes safety through forbidden state transitions [withdrawn v7.25: C109 scoped; the zeros reduce to known effects, C2081; no safety architecture remains]
 2. **Multi-register architecture** (C1499) -- no medieval document uses four coordinated functional registers
 3. **Formal operational grammar** (C121, C124) -- no medieval document reduces operations to a finite instruction class set with universal coverage
 
@@ -7001,7 +7092,7 @@ The fundamental gap is between **DESCRIPTION** (all existing genres use natural 
 
 ### Proposed Classification
 
-> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture.
+> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture. [historical: "structural safety enforcement" and "control programs" rest on supports withdrawn v7.24/7.25; STATUS_BRIEF §3]
 
 ### Why the Genre Is Rare
 
@@ -7018,13 +7109,15 @@ The proposed genre's rarity follows from structural properties:
 | Language/cipher falsification | C130, C132, C207 |
 | Four-register architecture | C1499 |
 | Instruction grammar | C121, C124 |
-| Safety architecture | C109, C783, C997 |
+| Safety architecture | C109, C783, C997 [withdrawn: C783 demoted, C109/C997 scoped, zeros reduce per C2081] |
 | Brunschwig alignment | F-BRU-001 through F-BRU-034 |
-| Expert audience | C197 |
+| Expert audience | C197 [v7.26 status: C197 demoted to Tier 3 (invented archetype)] |
 | Paragraph non-sequentiality | C1399, C1400 |
 | Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |
 
 ## XXVIII. Recipe-to-Folio Correspondence (Phase 628)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** PHASE_762: the 8D chapter matching carries no correspondence signal (no source beats its own shuffled features); match breadth is not evidence (C2052); 20 matcher rows moved to Tier 3. The f75r run (C1889) is a corpus fact only, and III.19 reads "four times, otherwise nine times" (source correction 2026-09-27).
 
 ### Core Finding
 
@@ -7063,7 +7156,7 @@ Eight (PL_feature, V_feature, sign) tuples locked from distillation->R1 training
 - Folio signature: ot-PREFIX dominant (70 vs qo's 58), elevated monitoring (0.22)
 - ot-PREFIX dominance consistent with t-HEAD (transfer) involvement in sublimation
 
-### Permutation Test (THE Decisive Test)
+### Permutation Test (THE Decisive Test) [historical: PHASE_762 found this permutation test uninformative (C1887, now Tier 3: optimized vs unoptimized assignments; random-Gaussian sets also pass)]
 
 Real optimized assignment vs 1000 random assignments:
 - Mean ratio: 1.284 (real) vs 0.572 (null), p < 0.001
@@ -7107,7 +7200,7 @@ f75r is the ONLY Currier B folio (out of 82) with a 4+ consecutive identical tok
 | Permutation significance | C1888 (Phase 628) |
 | PREFIX inversion | C1478, C1891 (Phase 628) |
 | Token repetition uniqueness | C1890 (Phase 628) |
-| e-depth parametricity | C1225, C1394 |
-| Section-level paragraph count | C1090, C1091, C1893 |
+| e-depth parametricity | C1225 [e-run class claim rescoped: segmentation artifact, PHASE_758], C1394 |
+| Section-level paragraph count | C1090, C1091 [both among the 21 Rosettes constraints deleted and superseded in Phase 402; stale citation], C1893 |
 | Literal enumeration | C287 |
 | Full analysis | `phases/RECIPE_FOLIO_CORRESPONDENCE/` |

@@ -1,5 +1,7 @@
 # Proposed Original Folio Order
 
+**Status (v7.25, 2026-09-28):** One of the two optimisation targets is a section confound (C325 completion gradient, C1401), the hazard averages use the withdrawn hazard layer (C2060, C2081), the regime phases treat REGIME as 4 crisp classes (retired, C1712), and the external validations use retired evidence (Puff–Voynich alignment, strategic review §5; REGIME = fire degree, C2070). The misbinding "confirmation" and the curriculum reading are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-14 | **Status:** Tier 3 SPECULATIVE | **Version:** 1.1
 
 ---
@@ -19,7 +21,7 @@
 | Metric | Current | Expected | Status |
 |--------|---------|----------|--------|
 | Risk gradient (C161) | rho = 0.08 | rho = 0.39 | DISRUPTED |
-| Completion gradient (C325) | rho = -0.23 | rho = +0.24 | **REVERSED** |
+| Completion gradient (C325) [section confound, C1401] | rho = -0.23 | rho = +0.24 | **REVERSED** [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))] |
 | CEI gradient | rho = -0.23 | positive | **REVERSED** |
 
 The current binding shows **negative correlations** where our constraints document positive gradients. This is strong evidence of misbinding.
@@ -108,7 +110,7 @@ Lisa Fagin Davis (2024) independently concluded the manuscript was misbound base
 - LSA similarity scores
 - Bifolium conjoint analysis
 
-Our structural gradient analysis **confirms** misbinding through a completely different methodology:
+Our structural gradient analysis **confirms** misbinding through a completely different methodology [v7.25: historical — the hazard and completion gradients are withdrawn/confounded; see banner]:
 - Hazard density progression
 - Execution tension gradient
 - CEI completion gradient
@@ -118,6 +120,8 @@ Both approaches converge on the same conclusion: **the current order is wrong**.
 ---
 
 ## External Validation (v1.1 - NEW)
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (Puff–Voynich alignment retired as evidence; REGIME = fire degree retired, C2070; hazard gradient uses the withdrawn hazard layer, C2081)
 
 The proposed order was validated against external historical sources that were NOT used in optimization.
 
@@ -149,7 +153,7 @@ The proposed order reveals the Brunschwig degree escalation that was invisible i
 
 ### Significance
 
-- We optimized for internal constraints ONLY (C161, C325)
+- We optimized for internal constraints ONLY (C161, C325) [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
 - We tested against external sources (Puff, Brunschwig)
 - ALL external comparisons improved simultaneously
 - Random reordering would not produce this pattern
@@ -205,7 +209,7 @@ See: `results/proposed_folio_order.txt`
 
 1. **Objective:** Maximize combined gradient score (risk + tension + CEI)
 2. **Method:** Simulated annealing (50,000 iterations)
-3. **Constraints:** Based on C161 (risk gradient) and C325 (completion gradient)
+3. **Constraints:** Based on C161 (risk gradient) and C325 (completion gradient) [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
 
 ### Limitations
 
@@ -250,7 +254,7 @@ If this reordering is correct:
 | Constraint | Statement | Relevance |
 |------------|-----------|-----------|
 | C161 | Folio Ordering = Risk Gradient (rho=0.39) | Violated in current order |
-| C325 | Completion Gradient (rho=+0.24) | Reversed in current order |
+| C325 | Completion Gradient (rho=+0.24) | Reversed in current order [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))] |
 | C155 | Piecewise-Sequential Geometry | Supports ordered structure |
 | C368 | Regime Clustering in Quires | Regimes should cluster |
 

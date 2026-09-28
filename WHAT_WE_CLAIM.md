@@ -61,14 +61,16 @@ the pre-registered gate. (PHASE_752, PHASE_759)
 - **Tokens produced by walking a table of coordinates:** no signature (C2079).
 - **"Forbidden transitions":** the token-level zero bigrams reduce to line composition, positional zones and boundary
   coupling under a joint null (C2081, superseding C957); the class-level "17 transitions in 5 hazard classes" was demoted
-  (C783) and its taxonomy found imposed (C2060).
+  (C783, demoted to Tier 3) and its taxonomy found imposed (C2060).
 
 ## 3. Open hypotheses
 
-- **Working interpretation (Tier 3): closed-loop, kernel-centric control programs.** Support withdrawn, not falsified:
-  the kernel test (C089) was uninformative — single EVA letters, a pass criterion independent of the data, a null that
-  reproduces its own statistic — and the four closed-loop legs are gone (C171: LINK monitoring C609/C1174, kernel
-  intervention, hazard avoidance C783/C2081, convergence C1401–C1403). What remains as measurement is a family
+- **Working interpretation (Tier 3): procedural notation — a family of programs for a process.** No current measurement
+  distinguishes it from other constrained notations. Its former specific form, "closed-loop, kernel-centric control
+  programs", lost its support (withdrawn, not falsified):
+  the kernel test (C089, since superseded by C2082) was uninformative — single EVA letters, a pass criterion independent of the data, a null that
+  reproduces its own statistic — and the four closed-loop legs are withdrawn (C171: LINK monitoring C609/C1174, kernel
+  intervention, hazard avoidance C783 (demoted)/C2081, convergence C1401–C1403). What remains as measurement is a family
   preference: qo tokens are k-rich, ok tokens e-rich, and qo alternates with ch/sh (C1313, C549, C2056). The
   pre-registered glyph-level re-test (PHASE_763) returned MIXED: k carries no routing beyond matched controls, and
   the signal that passed is word-ending routing — a word's last two glyphs predict the next word's class beyond
@@ -89,7 +91,8 @@ the pre-registered gate. (PHASE_752, PHASE_759)
 
 ## 4. What we do not claim
 
-- **No translation.** No token has a demonstrated equivalent in any language. (C171)
+- **No translation.** No token has a demonstrated equivalent in any language; nothing has been recovered from internal
+  structure alone (C171, demoted to Tier 3 with its closed-loop reading).
 - **No specific source text.** The *Testamentum* correspondence is an open hypothesis (section 3), not a finding.
 - **No operational meanings.** Atom and token glosses (k = heat, `dar` = material introduction, …) are role hypotheses,
   not recovered meanings.

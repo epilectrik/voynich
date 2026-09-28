@@ -172,7 +172,7 @@ After P-text exclusion (2,901 tokens):
 | Code | Tokens | % | Notes |
 |------|--------|---|-------|
 | C | 587 | 20.2% | Generic circle |
-| R1 | 483 | 16.7% | Outermost ring (Zodiac) |
+| R1 | 483 | 16.7% | Outermost ring (Zodiac) — not on every folio: f70v2 numbers R3 as outermost (see currier_AZC.md, "Physical Ring Order") |
 | R2 | 413 | 14.2% | Second ring |
 | R | 235 | 8.1% | Generic ring (A/C family) |
 | R3 | 208 | 7.2% | Third ring |

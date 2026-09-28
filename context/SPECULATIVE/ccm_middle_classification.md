@@ -1,5 +1,7 @@
 # Component-to-Class Mapping: MIDDLE Analysis (CCM-4)
 
+**Status (v7.25, 2026-09-28):** The material classes M-A…M-D used here come from ECR-1, which inferred them from the withdrawn hazard classes (taxonomy imposed, C2060; class level demoted, C783; zeros reduce to composition, C2081), and the PREFIX → material-class step was revised on 2026-01-11 (apparatus_centric_semantics.md). The MIDDLE counts cited (C276, C293, C423) are separate registry rows; the material-class labels and "complete class-level decomposition" are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** COMPLETE | **Date:** 2026-01-10
 
 > **Goal:** Classify the MIDDLE component based on prefix material class and understand its discriminative function.

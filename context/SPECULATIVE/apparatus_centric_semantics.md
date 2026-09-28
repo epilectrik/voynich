@@ -1,12 +1,14 @@
 # Apparatus-Centric Semantics: The CCM Terminal Layer
 
+**Status (v7.25, 2026-09-28):** The apparatus/control framing rests on withdrawn supports — closed-loop control (C171, Tier 3, all four legs withdrawn), the kernel (C089 superseded by C2082, so "kernel-enriched qo-" no longer refers to a kernel), the hazard topology (C109 scoped; 5 classes imposed, C2060; C216 demoted) and LINK monitoring (C1174). The completeness and ceiling statements ("complete role-level semantics", "nothing structural left to extract", "terminal internal semantic layer") are retired closure language — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** REVISED | **Date:** 2026-01-11
 
 ---
 
 ## Executive Summary
 
-The Component-to-Class Mapping (CCM) phase has achieved complete role-level semantic decomposition of Currier A/B tokens. Every token decomposes into four functional components: control-flow participation (PREFIX), operational mode (SISTER), variant discriminator (MIDDLE), and decision archetype (SUFFIX).
+The Component-to-Class Mapping (CCM) phase has achieved complete role-level semantic decomposition of Currier A/B tokens. [v7.25: "complete" is retired closure language; see banner] Every token decomposes into four functional components: control-flow participation (PREFIX), operational mode (SISTER), variant discriminator (MIDDLE), and decision archetype (SUFFIX).
 
 > **REVISION NOTE (2026-01-11):** PREFIX interpretation revised from "material-behavior class" to "control-flow participation archetype" based on F-A-014b results showing qo- is kernel-enriched (1.31x) rather than kernel-avoiding. PREFIX governs how tokens participate in control at points of maximal constraint, not what materials they reference. See C466-C467.
 
@@ -42,7 +44,7 @@ This explains why:
 | Constraint | What It Shows |
 |------------|---------------|
 | C384 | No A↔B entry coupling — grammar ignores case identity |
-| C171 | Closed-loop only — no external anchors |
+| C171 | Closed-loop only — no external anchors (C171 demoted to Tier 3) |
 | C119 | Zero translation-eligible zones |
 | C253 | All blocks unique — no cross-entry reference |
 
@@ -249,7 +251,7 @@ From the apparatus's perspective, suffixes encode **what kind of decision** is r
 - A-enriched suffixes mark discrimination decisions (classification)
 - Balanced suffixes mark cross-layer decisions
 
-The extreme -edy enrichment (191x B) reflects the time-criticality of energy decisions — apparatus-focused hazards require immediate response (no LINK nearby per C216).
+The extreme -edy enrichment (191x B) reflects the time-criticality of energy decisions — apparatus-focused hazards require immediate response (no LINK nearby per C216, demoted to Tier 3: imposed hazard taxonomy).
 
 ---
 
@@ -258,12 +260,14 @@ The extreme -edy enrichment (191x B) reflects the time-criticality of energy dec
 ### The Semantic Ceiling
 
 > At internal structural level, the manuscript yields complete role-level semantics (material behavior, operational mode, decision archetypes). Entity-level semantics (specific plants, devices, actions) are probably irrecoverable by design and lie outside the encoded system.
+>
+> [v7.25: retired closure language (strategic review §5) — a ceiling of this method, scoped to internal analysis; referents remain an open question.]
 
 ### Why Entity-Level Is Blocked
 
 | Constraint | What It Blocks |
 |------------|----------------|
-| C171 | Closed-loop only — no external reference points |
+| C171 | Closed-loop only — no external reference points (C171 demoted to Tier 3) |
 | C384 | No A↔B entry coupling — no addressable lookup |
 | C119 | Zero translation-eligible zones |
 | C253 | All blocks unique — no cross-entry identifiers |
@@ -281,7 +285,7 @@ Every token fully decomposes:
 | MIDDLE | Variant discriminator | 1,184 variants (compatibility carrier) |
 | SUFFIX | Decision archetype | 7 suffixes → 12 archetypes (phase-indexed) |
 
-There is nothing structural left to extract. Further semantic progress requires external evidence.
+There is nothing structural left to extract. Further semantic progress requires external evidence. [v7.25: retired closure language — later phases found new structure (e.g. C2082); see banner]
 
 ---
 
@@ -318,7 +322,7 @@ At world-level, the External Frame Trials converged on botanical/distillation do
 The apparatus-centric model is consistent with:
 - **Circulatory reflux distillation** (pelican alembic hypothesis)
 - **Aromatic extraction** (botanical processing)
-- **Phase-separation control** (hazard topology match)
+- **Phase-separation control** (hazard topology match) [hazard topology withdrawn: C2060, C2081]
 
 These remain Tier-3 hypotheses. They are explicitly discardable if contradicted.
 
@@ -354,7 +358,7 @@ The text scaffolds expert judgment; it does not replace it.
 | Specific procedures | No external anchor in text |
 | Variant identities | Beyond structural analysis |
 
-This is the terminal internal semantic layer.
+This is the terminal internal semantic layer. [v7.25: retired closure language — see banner]
 
 ---
 
@@ -382,8 +386,8 @@ The text and the operator are complementary. Neither is complete without the oth
 
 | Constraint | Role in This Document |
 |------------|----------------------|
-| C109-C114 | Hazard topology |
-| C171 | Closed-loop → no external anchors |
+| C109-C114 | Hazard topology (class layer withdrawn — C109 scoped, C2060; C113–C114 not in the current registry) |
+| C171 | Closed-loop → no external anchors (C171 demoted to Tier 3) |
 | C232 | Section conditioning → same classes, different vocabulary |
 | C282-C283 | Enrichment ratios → prefix/suffix mapping |
 | C384 | No A↔B coupling → apparatus ignores identity |

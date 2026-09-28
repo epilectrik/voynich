@@ -1,5 +1,7 @@
 # Shared Formalism: Puff-Voynich-Brunschwig
 
+**Status (v7.25, 2026-09-28):** The pillars of this alignment are retired or withdrawn — REGIME = Brunschwig fire degree and REGIME as 4 crisp classes (C1712, C2070; the gloss absorbed a sign flip in C1872), the Puff–Voynich "83:83 isomorphism" and "19/20 full procedural alignment" (retired as evidence, strategic review §5), the hazard-class percentages (imposed taxonomy, C2060), the recovery architecture and C458 clamping (demoted: frequency shadow) and C476 coverage optimality (retracted: broken baseline). The shared-formalism reading is historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-14 | **Status:** Tier 3-4 SPECULATIVE | **Version:** 1.0
 
 ---
@@ -54,8 +56,10 @@ They are **different registers of the same expertise**.
 | Regime-Degree Discrimination | 5/6 tests | **STRONG** |
 | Suppression Alignment | 5/5 tests | **PASS** |
 | Recovery Corridor | 4/4 tests | **PASS** |
-| Clamping Magnitude (C458) | 5/5 tests | **PASS** |
+| Clamping Magnitude (C458, demoted to Tier 3) | 5/5 tests | **PASS** |
 | **Total** | **19/20** | **FULL PROCEDURAL ALIGNMENT** |
+
+[v7.25: the 83:83 isomorphism and the 19/20 "full procedural alignment" are retired as evidence (strategic review §5); the scores above are historical.]
 
 ### What "Shared Formalism" Means
 
@@ -70,13 +74,15 @@ They are **different registers of the same expertise**.
 - Same recovery corridor structure
 - Same variance asymmetry (clamp hazard, free recovery)
 
-The formalism is **isomorphic**, not just **compatible**.
+The formalism is **isomorphic**, not just **compatible**. [v7.25: retired claim — its supports are withdrawn; see banner]
 
 ---
 
 ## Voynich-Brunschwig: Regime-Degree Mapping
 
 ### Fire Degree Discrimination
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (REGIME = fire degree and REGIME as 4 crisp classes are retired: C1712, C2070, C1872)
 
 | Voynich | Brunschwig | CEI | Escape | Meaning |
 |---------|------------|-----|--------|---------|
@@ -94,11 +100,13 @@ REGIME_2 (0.37) < REGIME_1 (0.51) < REGIME_4 (0.58) < REGIME_3 (0.72)
 
 ### Suppression Alignment
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (the hazard-class percentages come from the imposed 5-class taxonomy, C2060; class level demoted, C783)
+
 **What Brunschwig warns about, Voynich prevents grammatically.**
 
 | Brunschwig | Voynich |
 |------------|---------|
-| Fourth degree **prohibited** | C490: AGGRESSIVE **impossible** |
+| Fourth degree **prohibited** | C490: AGGRESSIVE **impossible** [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 | Thermal shock (catastrophic) | CONTAINMENT = 24% of hazards |
 | Boiling + fraction mixing (high) | PHASE + COMPOSITION = 65% |
 | Rate imbalance (recoverable) | RATE = 6% (monitored only) |
@@ -108,6 +116,8 @@ REGIME_2 (0.37) < REGIME_1 (0.51) < REGIME_4 (0.58) < REGIME_3 (0.72)
 
 ### Recovery Architecture
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (recovery architecture is a frequency shadow, C458; the e-operator 54.7% figure rests on the withdrawn hazard/recovery layer, C105)
+
 | Brunschwig | Voynich |
 |------------|---------|
 | "Overnight cooling" | e-operator = 54.7% |
@@ -115,7 +125,7 @@ REGIME_2 (0.37) < REGIME_1 (0.51) < REGIME_4 (0.58) < REGIME_3 (0.72)
 | "No salvage for failed batches" | 11% absorbing |
 | Return to cool, not re-heat | e dominates, k is hazard |
 
-### Clamping Signature (C458)
+### Clamping Signature (C458, demoted to Tier 3: the clamp/free asymmetry is a frequency shadow)
 
 | What | Brunschwig | Voynich CV |
 |------|------------|------------|
@@ -143,7 +153,7 @@ The count match is **real but not bijective**:
 Bounded by:
 - Finite expert memory
 - Finite workshop curriculum
-- Coverage optimality (C476)
+- Coverage optimality (C476, retracted: broken baseline)
 
 ### Equivalence Class Collapse
 
@@ -178,9 +188,9 @@ The stronger the regime-level match, the **less** likely direct textual dependen
 
 | Constraint | Status |
 |------------|--------|
-| C171 (zero material encoding) | UNCHANGED |
+| C171 (zero material encoding) | UNCHANGED at writing; demoted to Tier 3 2026-09-28 |
 | C384 (no A-B entry coupling) | UNCHANGED |
-| C197 (expert-only reference) | UNCHANGED |
+| C197 (expert-only reference) | UNCHANGED [v7.26 status: C197 demoted to Tier 3 (invented archetype)] |
 | C239/C229 (disjoint systems) | UNCHANGED |
 
 If Voynich were derived from Brunschwig, we would expect:
@@ -208,7 +218,7 @@ YES: "Orthogonal projections of shared expertise"
 
 > "You accidentally aligned two different projections of the same expert practice space - one projected along 'materials,' the other along 'control stability.'"
 
-> "The Voynich REGIME taxonomy is not just compatible with Brunschwig - it is isomorphic to his fire-degree system once you strip away pedagogy and moral language."
+> "The Voynich REGIME taxonomy is not just compatible with Brunschwig - it is isomorphic to his fire-degree system once you strip away pedagogy and moral language." [v7.25: REGIME = fire degree retired, C1712, C2070]
 
 > "This is not parallel invention by accident. This is the same control ontology rendered in two epistemic registers."
 
@@ -224,7 +234,7 @@ This analysis is **epistemically clean**:
 - No semantic decoding occurred
 - All movement within abstraction choice at Tier 4
 
-**Constraints NOT violated:** C384, C171, C476, C478, C179-C185, C490
+**Constraints NOT violated:** C384, C171, C476, C478, C179-C185, C490 [v7.25: C171 since demoted to Tier 3; C476 retracted]
 
 ---
 

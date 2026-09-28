@@ -2,6 +2,8 @@
 
 **Status:** CLOSED | **Tier:** 0-2
 
+> **[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The hazard layer this file describes is withdrawn. The class-level "17 forbidden transitions" is demoted (C783: powered class pairs at O/E≈1.13, 13 class-level violations in the real corpus, C2063); the 5-class failure taxonomy was imposed by keyword matching (C2060; C216 demoted to Tier 3); and the token-level zeros (C957, superseded) reduce to line composition, positional zones and boundary glyph coupling (C2081) — no prohibition layer remains. C109 is kept only as a scoped row. Rows below that remain Tier 2 in the generated table (e.g. C110–C112, C166, C169, C217, C400, C601, C645) are measurements taken on the 17-pair set; read them as properties of that pair set, not of a prohibition or safety layer. None of this file is Tier 0. Text kept for traceability.
+
 ---
 
 ## Scope Note (KERNEL_STATE_SEMANTICS, 2026-01)
@@ -15,14 +17,16 @@ The 17 "forbidden transitions" operate at **CLASS level** (instruction classes 9
 
 See KERNEL_STATE_SEMANTICS phase for full evidence.
 
+*[Superseded note: the CLASS-level reading of the 17 was later demoted (C783), and the "kernel" framing of k/h/e is withdrawn (C089 superseded by C2082). C521's "e→h = 0.00" is an EVA spelling identity, while its glyph-level e/bench asymmetry is real (PHASE_754 glyph-unit gate).]*
+
 ---
 
 ## Forbidden Transitions
 
 | Metric | Value | Tier | Constraint |
 |--------|-------|------|------------|
-| Total forbidden | 17 | 0 | C109 |
-| Failure classes | 5 | 0 | C109 |
+| Total forbidden | 17 | 2 (scoped; was 0) | C109 — class level demoted (C783), zeros reduce (C2081) |
+| Failure classes | 5 | struck (was 0) | C109 — taxonomy imposed, C2060 |
 | Asymmetric | 65% | 2 | C111 |
 | Distant from kernel | 59% | 2 | C112 |
 
@@ -42,7 +46,7 @@ Note: CONTAINMENT_TIMING has 0 corpus impact (theoretical-only).
 
 ---
 
-## Hybrid Hazard Model (C216)
+## Hybrid Hazard Model (C216 — demoted to Tier 3; computed over the imposed 5-class taxonomy, C2060)
 
 | Type | % | LINK Nearby | Severity |
 |------|---|-------------|----------|
@@ -72,7 +76,7 @@ Apparatus hazards require faster response (no waiting allowed).
 
 | Metric | Value | Constraint |
 |--------|-------|------------|
-| CHSH post-hazard rate | 75.2% | C645 |
+| CHSH post-hazard rate | 75.2% (PHASE_729: Markov-trivial under the 5-gram null, residual +2.3pp) | C645 |
 | QO post-hazard rate | 24.8% (depleted 0.55x) | C645 |
 | QO hazard participation | 0/19 events | C601 |
 
@@ -88,6 +92,8 @@ Apparatus hazards require faster response (no waiting allowed).
 ---
 
 ## Suppressed Transitions
+
+*[Historical: "beyond forbidden" and "KERNEL-HEAVY" refer to the withdrawn prohibition and kernel layers (C2081; C089 superseded by C2082).]*
 
 | Metric | Value | Constraint |
 |--------|-------|------------|

@@ -1,9 +1,11 @@
 # Human Communication Model
 
+**Status (v7.25, 2026-09-28):** The mappings graded STRONG here rest on withdrawn supports — the k/h/e operator glosses (C103–C105, Tier 3; kernel claim C089 superseded by C2082), LINK as an observation point (38% not reproducible, true density 13.2%, C609; LINK is a morphological artifact of "ol", C1174), the hazard envelope (C458 demoted as a frequency shadow; forbidden transitions reduce to composition, C2081) and closed-loop control (C171, C120 at Tier 3). The grounding grades are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 4 (Exploratory)
 **Status:** SPECULATIVE - subject to falsification
 **Created:** 2026-01-22
-**Depends on:** C103-C105, C121, C366, C382, C397, C458, C466-C467
+**Depends on:** C103-C105, C121, C366, C382, C397, C458, C466-C467 [C103–C105 and C458 since demoted to Tier 3]
 
 ---
 
@@ -12,6 +14,8 @@
 > **"Currier B never encodes preparation steps. It encodes control envelopes. Externally, we can observe that these envelopes are compatible with materials which, in practice, require preparation before entering the loop."**
 >
 > *— Validated 2026-01-22, see `phases/INTEGRATED_PROCESS_TEST/FRAMING_CORRECTION.md`*
+>
+> [v7.25: the "control envelope / loop" framing presupposes closed-loop control, now a Tier 3 working interpretation with its supports withdrawn (C171); "validated" is historical.]
 
 ### What This Document Describes
 
@@ -27,18 +31,20 @@ B communicates at four levels, from most specific to most general:
 
 | Level | What B Encodes | Human Interprets As | Grounding |
 |-------|---------------|---------------------|-----------|
-| **Kernel** | Control primitives | Direct action verbs | C103-C105 |
-| **Role** | Instruction classes | Action type families | C121, C382 |
+| **Kernel** | Control primitives | Direct action verbs | C103-C105 (demoted to Tier 3) |
+| **Role** | Instruction classes | Action type families | C121, C382 [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)] |
 | **Mode** | Participation style | Intensity/caution | C466-C467, C408 |
-| **Envelope** | Overall regime | Strategic stance | C179-C185, C458 |
+| **Envelope** | Overall regime | Strategic stance | C179-C185, C458 (C458 demoted to Tier 3) |
 
 ---
 
 ## 2. Kernel Operators (Direct Control)
 
-The kernel operators are B's most direct control primitives. Human mapping is well-grounded.
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (kernel reading superseded by C2082: at glyph level k carries no routing beyond its controls)
 
-### 2.1 k - ENERGY_MODULATOR (C103)
+The kernel operators are B's most direct control primitives. Human mapping is well-grounded. [v7.25: no longer grounded — see banner above]
+
+### 2.1 k - ENERGY_MODULATOR (C103, demoted to Tier 3)
 
 **Structural function:** Energy level modulation
 **Human interpretation:** "Adjust heat/energy input"
@@ -49,9 +55,9 @@ The kernel operators are B's most direct control primitives. Human mapping is we
 | k density high | Active energy management phase |
 | k near hazard | Energy-sensitive transition |
 
-**Constraint basis:** C103 defines k as ENERGY_MODULATOR. C089 establishes kernel set {k, h, e}.
+**Constraint basis:** C103 defines k as ENERGY_MODULATOR. C089 establishes kernel set {k, h, e}. [C103 demoted to Tier 3; C089 superseded by C2082]
 
-### 2.2 h - PHASE_MANAGER (C104)
+### 2.2 h - PHASE_MANAGER (C104, demoted to Tier 3)
 
 **Structural function:** Phase transition management
 **Human interpretation:** "Watch for phase change / critical transition"
@@ -62,9 +68,9 @@ The kernel operators are B's most direct control primitives. Human mapping is we
 | h clusters | Multiple transition points |
 | h → LINK | "Check status after phase change" |
 
-**Constraint basis:** C104 defines h as PHASE_MANAGER. C107 establishes kernel operators are hazard-adjacent.
+**Constraint basis:** C104 defines h as PHASE_MANAGER. C107 establishes kernel operators are hazard-adjacent. [C104 demoted to Tier 3; "h" is half the bench glyph]
 
-### 2.3 e - STABILITY_ANCHOR (C105)
+### 2.3 e - STABILITY_ANCHOR (C105, demoted to Tier 3)
 
 **Structural function:** Recovery and stability reference
 **Human interpretation:** "This is your safe state / fallback position"
@@ -75,7 +81,7 @@ The kernel operators are B's most direct control primitives. Human mapping is we
 | e density high | Rich recovery options |
 | e after hazard | "Return here if trouble" |
 
-**Constraint basis:** C105 defines e as STABILITY_ANCHOR. C105 shows 54.7% of recovery paths pass through e.
+**Constraint basis:** C105 defines e as STABILITY_ANCHOR. C105 shows 54.7% of recovery paths pass through e. [C105 demoted to Tier 3; the 54.7% figure rests on the withdrawn hazard/recovery layer]
 
 ---
 
@@ -102,7 +108,7 @@ The 49 instruction classes (C121) compress into 7 role categories. Human mapping
 
 **Constraint basis:** C396 (AUXILIARY Invariance at 8.5-9.0%), C396.a (execution-critical infrastructure)
 
-**Important:** AUXILIARY refers to support operations WITHIN the control loop, not material preparation BEFORE entering the loop (per C171).
+**Important:** AUXILIARY refers to support operations WITHIN the control loop, not material preparation BEFORE entering the loop (per C171, demoted to Tier 3).
 
 ### 3.3 FLOW_OPERATOR (7 classes)
 
@@ -114,7 +120,7 @@ The 49 instruction classes (C121) compress into 7 role categories. Human mapping
 | High FLOW | Active transfer/movement phase |
 | FLOW density | Attention to flow dynamics |
 
-**Constraint basis:** C121, C366 (FLOW_OPERATOR precedes LINK at 1.30x)
+**Constraint basis:** C121, C366 (FLOW_OPERATOR precedes LINK at 1.30x) [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
 **Brunschwig correlation:** FLOW maps to da-prefix at r=0.9757, p=0.0243
 
@@ -139,6 +145,8 @@ The 49 instruction classes (C121) compress into 7 role categories. Human mapping
 
 ### 3.6 LINK (1 class, special status)
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (LINK as a monitoring operator: true density 13.2%, C609; morphological artifact of "ol", C1174)
+
 **Structural function:** Monitoring/intervention boundary marker
 **Human interpretation:** "Check status now / observation point"
 
@@ -148,7 +156,7 @@ The 49 instruction classes (C121) compress into 7 role categories. Human mapping
 | LINK after h | "Verify phase transition completed" |
 | LINK before HIGH_IMPACT | "Confirm before major action" |
 
-**Constraint basis:** C366 (LINK marks grammar state transitions, p<10^-18)
+**Constraint basis:** C366 (LINK marks grammar state transitions, p<10^-18) [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
 **Statistical profile:** LINK is followed by HIGH_IMPACT at 2.70x and ENERGY_OPERATOR at 1.15x.
 
@@ -204,9 +212,11 @@ REGIME provides folio-level context that modifies all instruction interpretation
 | REGIME_3 | Active | "Active management needed" |
 | REGIME_4 | Aggressive | "Rapid small adjustments" |
 
-**Constraint basis:** C179-C185 (REGIME definitions), C395 (Dual Control Strategy)
+**Constraint basis:** C179-C185 (REGIME definitions), C395 (Dual Control Strategy) [v7.26 status: C181, C182, C183, C184, C185 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)]
 
-### 5.2 Hazard Envelope (C458)
+### 5.2 Hazard Envelope (C458, demoted to Tier 3)
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (the clamp/free asymmetry is a frequency shadow, C458; forbidden transitions reduce to composition, C2081)
 
 **Grammar clamps danger, frees recovery.**
 
@@ -216,7 +226,7 @@ REGIME provides folio-level context that modifies all instruction interpretation
 | High escape density | "Multiple safe options" |
 | REGIME + hazard context | "This envelope defines your freedom" |
 
-**Constraint basis:** C458, C109 (17 forbidden transitions)
+**Constraint basis:** C458, C109 (17 forbidden transitions) [C458 demoted to Tier 3; C109 scoped to zero patterns, C2081]
 
 ---
 
@@ -226,12 +236,12 @@ Per validated constraints, B **cannot** encode:
 
 | Cannot Encode | Constraint | Why |
 |--------------|------------|-----|
-| Preparation steps | C171 | Batch processing forbidden |
-| Material identity | C120 | Pure operational, no materials |
+| Preparation steps | C171 (demoted to Tier 3) | Batch processing forbidden |
+| Material identity | C120 (demoted to Tier 3; negative part carried by C119) | Pure operational, no materials |
 | Ingredient lists | C384 | No entry-level coupling |
 | Sequential workflow | C391 | Time-reversal symmetric |
 | Quantities/amounts | C469 | Categorical, not parametric |
-| Timing/duration | C171 | Continuous control, not timed steps |
+| Timing/duration | C171 (demoted to Tier 3) | Continuous control, not timed steps |
 
 **Human implication:** A human operator must bring external knowledge of:
 - What material they are processing
@@ -293,7 +303,7 @@ Procedural Actions (including inferred prep)
 | **System** | Static registry | Executable grammar |
 | **Basis** | C498 (Registry vocabulary) | C121 (49 instruction classes) |
 | **Granularity** | MIDDLE-level discrimination | Role-level categories |
-| **Recoverability** | Partial (P(class) vectors) | Role-level only (C382) |
+| **Recoverability** | Partial (P(class) vectors) | Role-level only (C382) [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)] |
 
 **Parallel systems, orthogonal dimensions:**
 - RI tells the human WHAT material class
@@ -308,7 +318,7 @@ Together: "This is [material class from A]. Process it [this way from B]."
 This Tier 4 model would be INVALIDATED if:
 
 ### 9.1 Grammar Violation
-A proposed interpretation implies a forbidden transition (C109, 17 transitions). If "do X then Y" requires X→Y and that transition is forbidden, the interpretation is wrong.
+A proposed interpretation implies a forbidden transition (C109, 17 transitions) [v7.25: C109 scoped — no prohibition layer remains, the zeros reduce to composition, C2081]. If "do X then Y" requires X→Y and that transition is forbidden, the interpretation is wrong.
 
 ### 9.2 Time-Reversal Asymmetry
 Per C391, valid interpretations should work in both directions. Interpretations that only make sense forward violate time-reversal symmetry.
@@ -329,18 +339,20 @@ Per C408-C409, ch/sh and ok/ot are equivalent slots. Any interpretation assignin
 
 ## 10. Grounding Summary
 
+[v7.25: the grades below are historical. The k/h/e and LINK rows have lost their support (C2082, C609, C1174); do not cite them as STRONG.]
+
 | Mapping | Constraint Basis | Grounding Strength |
 |---------|-----------------|-------------------|
-| k = "Adjust energy" | C103 | **STRONG** |
-| h = "Watch phase transition" | C104 | **STRONG** |
-| e = "Safe fallback" | C105 | **STRONG** |
-| LINK = "Check status" | C366 | **STRONG** |
+| k = "Adjust energy" | C103 (demoted to Tier 3) | **STRONG** (historical) |
+| h = "Watch phase transition" | C104 (demoted to Tier 3) | **STRONG** (historical) |
+| e = "Safe fallback" | C105 (demoted to Tier 3) | **STRONG** (historical) |
+| LINK = "Check status" | C366 (monitoring reading withdrawn, C1174) | **STRONG** (historical) |
 | qo = "Escape available" | C397 | **STRONG** |
 | AUXILIARY = "Support action" | C396 | **MODERATE** |
 | HIGH_IMPACT = "Major intervention" | C394 | **MODERATE** |
 | FLOW_OPERATOR = "Flow management" | C121, correlation | **MODERATE** |
 | Sister pairs = "Same action, different mode" | C408-C409 | **STRONG** |
-| REGIME = "Strategic stance" | C179-C185, C395 | **MODERATE** |
+| REGIME = "Strategic stance" | C179-C185, C395 | **MODERATE** [v7.26 status: C181, C182, C183, C184, C185 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)] |
 
 ---
 

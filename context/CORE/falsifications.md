@@ -8,24 +8,45 @@
 
 These hypotheses have been **explicitly tested and rejected**. Each has documented falsifying evidence. Do not retry these approaches.
 
+> **Status note (v7.25, 2026-09-28).** `SYSTEM/STATUS_BRIEF.md` §4 and the generated `CONSTRAINT_TABLE.txt` outrank
+> this page. Each exclusion holds only at the layer, direction and null it was tested with (see **Rule** below and
+> `SYSTEM/NEGATIVE_AUDIT.md`). Items that relied on withdrawn constructs (kernel, hazard topology, LINK, convergence,
+> closed-loop control) are annotated where they occur.
+
+---
+
+## Rivals Excluded — current scope (pointers to STATUS_BRIEF §4; no new claims)
+
+| Rival | Scope of the exclusion | Registry |
+|---|---|---|
+| Natural language | Written one token per word. C130's "0.19% reference rate" is tainted and not relied on | C132, C2015, C2022 |
+| Word codes / ciphers | Token ≈ word codes, atom-level polyalphabetic ciphers, three published decipherments | C1976, C2017 |
+| Naibbe cipher | Greshko's verbose homophonic substitution cipher **as published** (all 64 declared variants excluded); other verbose/homophonic designs untested | C2080 |
+| Timm & Schinner | Self-citation / copy-and-modify generation, as a complete account of Currier B | C2077 |
+| Table walk | Token = coordinate into a lookup table, read by moving to neighbouring cells (adjacent-token scope) | C2079 |
+| **Untested** | Syllable- or word-level codebooks; modified verbose ciphers; the Rugg grille | — |
+
+Excluding a rival is not evidence for the working interpretation (STATUS_BRIEF §1, §4).
+
 ---
 
 ## Major Falsifications
 
 ### Language Encoding
-**Status:** FALSIFIED
-**Evidence:** Phase X.5 found 0.19% reference rate
+**Status:** FALSIFIED (scoped: natural language written one token per word)
+**Evidence:** ~~Phase X.5 found 0.19% reference rate~~ — tainted statistic, not relied on (X.5 is the C131-retracted phase; NEGATIVE_AUDIT Disposition 1). Current basis: C132, C2015, C2022.
 **Meaning:** Tokens do not behave like words. No referential structure exists.
 
 ### Cipher Encoding
-**Status:** FALSIFIED
-**Evidence:** Phase G showed cipher transforms DECREASE mutual information
-**Meaning:** If this were cipher, decryption would increase structure. The opposite happens.
+**Status:** FALSIFIED (scoped to the cipher classes tested — see "Rivals Excluded" above)
+**Evidence:** Phase G showed cipher transforms DECREASE mutual information; token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments excluded (C1976, C2017); Naibbe as published excluded (C2080)
+**Meaning:** If this were cipher, decryption would increase structure. The opposite happens. [Scope: syllable- or word-level codebooks and modified verbose ciphers are untested — STATUS_BRIEF §4.]
 
 ### Glyph-Level Semantics
 **Status:** FALSIFIED
 **Evidence:** Phase 19 found 0 identifier tokens
 **Meaning:** Individual glyphs don't carry meaning. Tokens are the minimal unit.
+[Scope: this concerns meaning, not structure — glyph-level structure is measured (boundary glyph coupling C1212/C1563; word-ending routing C2082). Where the same "no identifier tokens" evidence is used against herbarium/taxonomy, NEGATIVE_AUDIT Disposition 1 rates it SUSPECT (unstated threshold).]
 
 ### Illustration-Dependent Logic
 **Status:** FALSIFIED
@@ -49,7 +70,7 @@ beginnings and endings). **This is a FORMAT claim only.** It does NOT eliminate 
 |-------|----------|-------|
 | Fire degree predicts PP signature | Material class conflation, p>0.05 | PP_MULTICLASS_TEST |
 | Bayesian posteriors valid for PP prediction | 0.9x enrichment in Bayesian-only records | PP_DILUTION_TEST |
-| Text encodes language | 0.19% reference rate | X.5 |
+| Text encodes language | 0.19% reference rate (tainted, not relied on — C130/C131; see C132, C2015, C2022) | X.5 |
 | Tokens have translatable meanings | 0 identifier tokens | 19 |
 | Illustrations are instructional | Swap invariance p=1.0 | ILL |
 | Illustrations organize constraints | 8/8 tests failed | ILL-TOP-1 |
@@ -57,13 +78,13 @@ beginnings and endings). **This is a FORMAT claim only.** It does NOT eliminate 
 | Sections = apparatus configs | F-ratio 0.37 | PCS |
 | Programs correlate with plant morphology | All p>>0.05 | PPC |
 | 49-class grammar generalizes to full manuscript | 13.6% Currier A coverage | CAud |
-| Hazard topology is universal | 5 violations in Currier A | CAud |
-| "100% convergence to STATE-C" | Only 57.8% terminate in STATE-C | SEL-F |
+| Hazard topology is universal | 5 violations in Currier A (historical — the hazard topology itself is now withdrawn, C2081) | CAud |
+| "100% convergence to STATE-C" | Only 57.8% terminate in STATE-C (C074 is now occupancy only; no sequential convergence, C1401–C1403) | SEL-F |
 | Procedural chaining (folios form macro-sequences) | Tests 1-6 falsified | SEL-F |
 | STATE-C marks material-family boundaries | TEST 11 p=1.0 | SEL-F |
 | Sharp material-family clustering | Silhouette=0.018 (highly overlapping) | SEL-F |
-| Hazard "100% bidirectional" | 65% asymmetric | SEL-D |
-| Hazard "KERNEL_ADJACENT clustering" | 59% distant from kernel | SEL-D |
+| Hazard "100% bidirectional" | 65% asymmetric (historical — hazard layer withdrawn) | SEL-D |
+| Hazard "KERNEL_ADJACENT clustering" | 59% distant from kernel (historical — hazard layer and kernel withdrawn) | SEL-D |
 | Human-track "7 coordinate functions" | Overfitting | SEL-E |
 | HT 99.6% LINK-proximal | ρ=0.010, p=0.93 (decoupled) | HTD |
 | Repetition encodes ratios/proportions | No cross-entry comparison, no reference frame | EXT-9B |
@@ -75,9 +96,11 @@ beginnings and endings). **This is a FORMAT claim only.** It does NOT eliminate 
 
 Eight attack vectors were tested against the model:
 
+*[Status: the "Kernel Collapse" result is withdrawn as evidence — per the C089 row, its pass criterion does not depend on the data (the real corpus fails it too) and its nodes are EVA letters; C089 is superseded by C2082. The other rows are historical results against the pre-v7.24 model.]*
+
 | Attack | Result |
 |--------|--------|
-| Kernel Collapse | SURVIVES |
+| Kernel Collapse | ~~SURVIVES~~ uninformative (C089 → C2082) |
 | Cycle Illusion | WEAKENED (documented) |
 | Grammar Minimality | WEAKENED (documented) |
 | Random Baseline | SURVIVES |
@@ -91,6 +114,13 @@ Eight attack vectors were tested against the model:
 ---
 
 ## Purpose Classes Eliminated
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** This list is C171, now Tier 3: all four legs
+of the surviving "closed-loop" class (LINK monitoring, kernel intervention, hazard avoidance, convergence) are
+withdrawn. Per NEGATIVE_AUDIT Disposition 1, only 2 of the 12 eliminations cite a discriminating test (cipher →
+MI decrease; glassmaking/metallurgy → calcination negative control, which was framed as "wrong hazard topology" — a
+layer now withdrawn); "encoded language" is a tainted citation; recipe/pharmacology and discrete batch are
+over-generalized; five are absence-assertions (weak priors). Current rival exclusions are in "Rivals Excluded" above.
 
 The following purpose classes were eliminated by structural incompatibility:
 
@@ -107,7 +137,7 @@ The following purpose classes were eliminated by structural incompatibility:
 - Glassmaking/metallurgy
 - Dyeing/mordanting
 
-**Only surviving purpose class:** Continuous closed-loop process control
+**Only surviving purpose class:** Continuous closed-loop process control [historical — C171 demoted to Tier 3 (2026-09-28); the working interpretation is now "procedural notation", which no current measurement distinguishes from other constrained notations]
 
 ---
 
@@ -144,12 +174,14 @@ The following purpose classes were eliminated by structural incompatibility:
 **Hypothesis:** Different PP profiles cause different operational strategies or grammar biases in B.
 **Test:** Class composition analysis across PP profile groups.
 **Result:** Cosine similarity = 0.995 between animal and baseline class profiles.
-**Conclusion:** PP does not select tactics. It only widens the arena (capacity). This null result protects the semantic ceiling (C171, C469) — if PP encoded material-specific execution, it would violate the pure operational constraint.
+**Conclusion:** PP does not select tactics. It only widens the arena (capacity). This null result protects the semantic ceiling (C171, C469) — if PP encoded material-specific execution, it would violate the pure operational constraint. [C171 demoted to Tier 3 on 2026-09-28; "pure operational" (C120) is also Tier 3 — the negative part is carried by C119.]
 **Status:** PP composition → B tactics pathway is closed.
 
 ---
 
 ## Lane Oscillation Falsifications (2026-02-10)
+
+*[Status: the "hazard gate" and "post-hazard" conditions below are defined on the forbidden-transition layer, now withdrawn (C2081; STATUS_BRIEF §3). The falsifications themselves (no hidden accumulator, no drift, no 2nd-order gain) are statements about model fit and are not affected by that framing; C645 remains Tier 2 as registered.]*
 
 ### Hidden Lane Accumulator (FALSIFIED)
 **Hypothesis:** EN lane oscillation requires a hidden accumulator or multi-line state memory beyond first-order Markov.
@@ -183,7 +215,7 @@ The following purpose classes were eliminated by structural incompatibility:
 **Hypothesis:** A minimal reflux distillation simulation, governed only by thermodynamics and proportional control, necessarily produces Voynich-like macro-state grammar topology.
 **Test:** 100 LHS-randomized parameterizations × 10 runs. P-controller with 3-step delay. GMM+BIC state extraction. Scored against 10 quantitative Voynich targets. Two null models (batch still, open heating) for discrimination.
 **Result:** Median 3/10 hits (STRUCTURAL_DIVERGENCE). Spectral gap 1% hit rate. Forbidden pairs 4%. Post-overshoot cooling 2%. Null models score equally or higher (batch=3, open=4).
-**Status:** Do not assume continuous thermal dynamics produce Voynich-like discrete structure. The grammar's topology (6-state hub-spoke, spectral gap 0.894, 17 forbidden pairs) requires a discrete encoding layer.
+**Status:** Do not assume continuous thermal dynamics produce Voynich-like discrete structure. The grammar's topology (6-state hub-spoke, spectral gap 0.894, 17 forbidden pairs) requires a discrete encoding layer. [The "17 forbidden pairs" target is withdrawn — zero bigrams reduce to composition, zones and boundary coupling (C2081).]
 
 ### Reflux-Specific Dynamics Improve Voynich Fidelity Over Generic Control (FALSIFIED)
 **Hypothesis:** Reflux-specific physics (vaporization + condensation cycling) produces better Voynich fidelity than simpler thermal models.
@@ -198,7 +230,7 @@ The following purpose classes were eliminated by structural incompatibility:
 ### Categorical Discretization Bridges Voynich Topology Gap (FALSIFIED)
 **Hypothesis:** Discretizing continuous thermal plant simulation data into categorical states (using physically-motivated binning strategies) bridges the gap between analog dynamics and Voynich grammar topology.
 **Test:** 5 physical strategies + 1 random null across 100 LHS-randomized parameterizations. Direction-of-movement scoring against continuous baseline (C998). BIC-emergent K. Legality imposition layer.
-**Result:** Best physical strategy (lane_temp) moves 3/9 metrics toward Voynich — identical to random binning (3/9). Zero forbidden transitions from any strategy. Hub mass degrades under all strategies.
+**Result:** Best physical strategy (lane_temp) moves 3/9 metrics toward Voynich — identical to random binning (3/9). Zero forbidden transitions from any strategy [the forbidden-transition target is withdrawn — C2081]. Hub mass degrades under all strategies.
 **Status:** Do not attempt to derive Voynich topology from physical simulation + discretization (FORWARD direction). The encoding layer is designed, not emergent.
 
 > **SCOPE-RESTRICTION (2026-06-05, see `SYSTEM/NEGATIVE_AUDIT.md` Disposition 3).** These nulls

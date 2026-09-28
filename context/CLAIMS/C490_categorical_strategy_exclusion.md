@@ -1,6 +1,6 @@
 # C490: Categorical Strategy Exclusion
 
-**Tier:** 2
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row)
 **Scope:** B
 **Status:** CLOSED
 **Source:** STRUCTURAL_TOPOLOGY_TESTS

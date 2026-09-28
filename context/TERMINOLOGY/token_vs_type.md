@@ -17,8 +17,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Tokens (Currier B) | 75,248 |
-| Types (Currier B vocabulary) | 479 |
+| Tokens (Currier B, H-track) | 23,243 (the older "75,248" appears to be a pre-H-filter count) |
+| Types (Currier B grammar vocabulary) | 479 (the corrected C124 row counts 480; this is the grammar's own vocabulary, covering 69.5% of B tokens — HT/UN lie outside, C566) |
 | Instruction classes | 49 |
 
 ---

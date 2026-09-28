@@ -8,6 +8,12 @@
 
 **Status:** CLOSED | **Tier:** 2 (structure), 3-4 (interpretation)
 
+> **Status note (v7.25, 2026-09-28):** `SYSTEM/STATUS_BRIEF.md` and the generated `CONSTRAINT_TABLE.txt` win on
+> conflict. Every "hazard" statement here is measured against the 17 forbidden transitions, a layer now withdrawn
+> (C2081; C783 demoted; C2060; STATUS_BRIEF §3). "Waiting" profiles and LINK rest on LINK, now a morphological artifact of
+> "ol" (C1174; true density 13.2%, C609). Sections resting on these are annotated. The later compound-specification
+> reading (C935) is summarised in [HT_EXPLAINER.md](HT_EXPLAINER.md).
+
 ---
 
 ## Definition
@@ -16,8 +22,8 @@ The **Human Track (HT)** consists of tokens NOT in the 479-type canonical Currie
 
 | Metric | Value |
 |--------|-------|
-| Occurrences | ~40,000 (33.4% of corpus) |
-| Unique types | ~11,000 |
+| Occurrences | ~40,000 (33.4% of corpus) — legacy figure from before the H-track filter; in Currier B, HT = UN = 7,042 occurrences, 4,421 types (C740, C566) |
+| Unique types | ~11,000 (legacy figure) |
 | Section-exclusive | 80.7% |
 | Line-initial enrichment | 2.16x |
 
@@ -26,6 +32,11 @@ The **Human Track (HT)** consists of tokens NOT in the 479-type canonical Currie
 ## Structural Properties (Tier 2)
 
 ### Hazard Avoidance
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** "Hazard positions" are the 17 forbidden
+transitions, withdrawn as a prohibition layer (C2081, superseding C957; C783 demoted; C2060 taxonomy imposed). C166,
+C169 and C217 remain Tier 2 in the registry as measurements relative to those positions; the reading that writing
+"stops when attention is demanded" rests on the withdrawn layer.
 
 | Metric | Value | Constraint |
 |--------|-------|------------|
@@ -52,7 +63,7 @@ HT tokens form a **third compositional notation system** with disjoint prefix vo
 |-----------|-----------|------------|---------|
 | Prefixes | yk-, op-, yt-, sa-, so-, ka-, dc-, pc- | ch-, qo-, sh-, da-, ok-, ot-, ct-, ol- | **ZERO** |
 | Suffixes | -dy, -in, -ey, -ar, -hy | -aiin, -dy, -ey, -or | Partial |
-| Coverage | 71.3% decomposable | 100% grammar | — |
+| Coverage | 71.3% decomposable | 100% grammar (of its own vocabulary = 69.5% of B tokens, C124 as corrected) | — |
 
 This is NOT scribal noise—it is a **formally distinct layer**.
 
@@ -68,13 +79,13 @@ HT is **confirmed NON-OPERATIONAL** by three independent tests (C404-406):
 | Causal decoupling | HT doesn't alter grammar flow (V=0.10) | C405 |
 | Generative structure | Zipf distribution (0.89), 67.5% hapax | C406 |
 
-**Removing all 40,000 HT tokens would not affect grammar coverage or hazard topology.**
+**Removing all 40,000 HT tokens would not affect grammar coverage or hazard topology.** [hazard topology withdrawn — C2081; the token count is a legacy figure]
 
 ---
 
 ## Program Stratification (Tier 2)
 
-HT density varies by program type (C341):
+HT density varies by program type (C341) [in the old model "waiting" meant LINK ("when to wait — LINK tokens", CORE/model_boundary.md); LINK is now read as a morphological artifact, not a waiting operator (C1174), so "waiting" is a gloss — the density gradient is the measurement]:
 
 | Waiting Profile | HT Density |
 |-----------------|------------|
@@ -142,7 +153,7 @@ HT serves **two complementary functions**:
 This is NOT "doodling" or "scribbling" - the evidence shows highly structured, intentional practice.
 
 HT achieved 4/8 tests for **attentional pacing** function (C209 - UNDERDETERMINED):
-- NOT sensory checkpoints (avoid hazards, don't cluster near them)
+- NOT sensory checkpoints (avoid hazards, don't cluster near them) [hazard layer withdrawn — C2081]
 - NOT quantitative markers (no counting behavior)
 - NOT scribal errors (too systematic, section-specific)
 - Serve human-facing navigation at SECTION level
@@ -168,7 +179,7 @@ Operators maintained attention AND trained their craft through **deliberate skil
 - 71.3% compositional (trained practice follows rules)
 - Disjoint prefixes (avoid confusion with operational text)
 - 80.7% section-exclusive (different scribes/sessions)
-- Complete hazard avoidance (stop writing when attention demanded)
+- Complete hazard avoidance (stop writing when attention demanded) [historical — rests on the withdrawn hazard layer]
 - Rare grapheme engagement (practicing difficult forms, not avoiding them)
 
 Historical parallel: Medieval apprentice work-study combination - productive waiting.
@@ -196,6 +207,8 @@ Historical parallel: Medieval apprentice work-study combination - productive wai
 - **NOT scribal errors** (33% error rate implausible, too structured)
 - **NOT interleaved document** (why would it correlate with B's grammar/hazards?)
 
+*[The "hazards" in these reasons refer to the withdrawn forbidden-transition layer (C2081; STATUS_BRIEF §3); the non-operational tests C404–C406 do not depend on it.]*
+
 ---
 
 ## What HT IS
@@ -220,9 +233,11 @@ HT shows **significant preference for boundary positions** within Zodiac AZC (C4
 
 **Difference:** 10.3% (p < 0.0001, Cramer's V = 0.105)
 
-This connects C456 (AZC interleaved spiral) with HT behavior:
+*[C457 survives the PHASE_742 audit at corrected H-only N (R 29.1%, S 41.7%; within-folio null p=0.0001), with the R = radial / S = sector gloss kept. The "interior/boundary" reading is the S/R division C435, retracted in PHASE_742 as a locus-length tautology; "monitoring" and "attention" are Tier-3 glosses.]*
+
+This connects C456 (AZC interleaved spiral) with HT behavior: [v7.26 status: C456 demoted to Tier 3 (transcription-order statistic, like retracted C433-C435)]
 - R-S alternation isn't just structural
-- HT tracks the interior/boundary rhythm
+- HT tracks the interior/boundary rhythm [interior/boundary reading retracted with C435]
 - Supports "attention at phase boundaries" interpretation
 
 **Key insight:**
@@ -234,9 +249,9 @@ This connects C456 (AZC interleaved spiral) with HT behavior:
 
 | # | Constraint |
 |---|------------|
-| 166 | 0/35 forbidden seam presence |
+| 166 | 0/35 forbidden seam presence (relative to the withdrawn forbidden-transition layer) |
 | 167 | 80.7% section-exclusive |
-| 169 | Hazard avoidance 4.84 vs 2.5 |
+| 169 | Hazard avoidance 4.84 vs 2.5 (relative to the withdrawn hazard layer) |
 | 341 | HT-program stratification |
 | 342 | HT-LINK decoupling (ρ=0.01) |
 | 347 | Disjoint prefix vocabulary |

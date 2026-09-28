@@ -1,22 +1,41 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** Tier 0 restated 2026-09-28 (measurement core; control-program reading Tier 3) + POST-AUDIT CORRECTIONS (A-side/AZC layer; 2026-09-27 registry reconciliation — see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md)
+**Version:** 4.0 | **Date:** 2026-09-28 | **Status:** aligned to SYSTEM/STATUS_BRIEF.md v7.25. Body frozen 2026-02 (last body revision v3.17, 2026-06-04); sections resting on withdrawn constructs carry a banner and are kept as history.
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
 ---
 
-## POST-AUDIT MODEL CORRECTIONS (v3.17, 2026-06 — READ FIRST)
+## CURRENT STATE (v7.25, 2026-09-28) — READ FIRST
 
-> The body below was frozen 2026-02. The June-2026 work (the zodiac/index characterization C2071–C2075 + the PHASE_748 constraint audit) corrected three things. **Where the body conflicts with this block, this block supersedes.** The frozen Tier-0 spine is untouched (see #3).
+> The body below was frozen 2026-02 and still describes Currier B in control-program language. **Where the body conflicts with this section, this section and `SYSTEM/STATUS_BRIEF.md` win.** Authority order: `CONSTRAINT_TABLE.txt` (a constraint missing from it is dead; Tier 3 means demoted or speculative) → `CLAIMS/INDEX.md` rows (the reason for each status) → STATUS_BRIEF → this document. Full record: `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
+
+**Tier 0 (restated 2026-09-28, human sign-off; `CORE/frozen_conclusion.md`):** Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
+
+**Working interpretation (Tier 3):** the grammar is read as procedural notation (a family of programs for a process). No current measurement distinguishes this reading from other constrained notations. The body's "closed-loop, kernel-centric control" vocabulary belongs to this Tier-3 layer; its supports are withdrawn, not falsified.
+
+**Withdrawn or demoted — do not present as structure (STATUS_BRIEF §3):**
+- Kernel k/h/e as the core of the grammar: C089 superseded by C2082 (k shows nothing at glyph level; the e/bench signal is word-ending routing); C085, C103–C105 demoted to Tier 3.
+- Closed-loop control and an operational purpose class: C171 and C120 demoted to Tier 3 (all four closed-loop legs withdrawn).
+- LINK as a monitoring operator: true density 13.2%, a morphological artifact of "ol" (C609, C1174).
+- The 17 forbidden transitions, 5 hazard classes, hazard topology and "safety architecture": class level demoted (C783), taxonomy imposed (C2060), 13 class-level violations in the real corpus (C2063), token-level zeros reduce to line composition, zones and boundary coupling (C2081; C957 superseded). C109 is scoped; C216 is demoted.
+- Convergence to STATE-C / MONOSTATE as a target, and the completion gradient: occupancy only (C074, Tier 2 measurement); C079 and C084 demoted; no sequential convergence, and the gradient is a section confound (C1401–C1403).
+- Recovery architecture; execution clamp vs recovery freedom: a frequency shadow (C458 and C105 demoted).
+- MIDDLE incompatibility "X% of pairs forbidden" (C475 demoted: sparsity denominator); hub savings (C476 retracted: broken baseline).
+- Testamentum chapter ↔ folio matching, recto/verso chapter pairs, section = book part: no correspondence signal (C2052, PHASE_762; the C1882–C1975 triage moved 20 rows to Tier 3).
+- Also retired: closure language ("ANALYSIS CLOSED" and similar "CLOSED" / "characterization complete" banners, "definitively irrecoverable"); REGIME as 4 crisp classes or as fire degree (C1712, C2070, C1872); R-series ordering and the S/R division (C434, C435 retracted).
+
+**What stands (Tier 2 unless noted; STATUS_BRIEF §2):** the 49-class grammar closed over its own 480-type vocabulary, 69.5% of B tokens (C121, C124 Tier 0; HT/UN defined by exclusion, C566, C740); positional zones (C956); line regularity (C357); boundary glyph coupling (C1212, C1563; robust to spacing uncertainty and replicated on ZL, PHASE_761); word-ending routing to the next token's class (C2082); family preference: qo rich in k, ok in e, qo/ch-sh alternation, qok→ok/oke (C1313, C549, C2056 as revised in PHASE_738 — its wider lane claims downgraded, qok→sh demoted); folio units with unique vocabulary and no duplicate lines or paragraphs (C531, C1790); occupancy, 57.8% of folios end in their dominant macro-state (C074, measurement only); class-transition eigenstructure λ2/λ3 (C2061, C2067; established against a window-blind null, C2066, so re-check under N5 before relying on it); the bifolium pipeline negative control (PHASE_759).
+
+**Rivals excluded (scoped, STATUS_BRIEF §4):** natural language written one token per word (C132, C2015, C2022; C130's "0.19% reference rate" is tainted and not relied on); token ≈ word codes and atom-level polyalphabetic ciphers (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk (C2079). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation.
+
+**A-side / AZC corrections (v3.17, June 2026 — still current).** From the zodiac/index characterization (C2071–C2075) and the PHASE_748 constraint audit:
 
 **1. AZC is a kernel-free, position-INDEPENDENT index/reference layer — NOT "positional encoding."**
 AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained, lexically-isolated **arrangement/reference layer**. The within-diagram **positions do NOT encode** (C2071 — the nymph clock-positions are non-encoding display slots; the placement-*class* structure survives via C759, but the within-diagram positions don't). The layer does **NOT route to B** (C2075 — no specific B-target above a composition-matched null; it shares only generic operators, and apparent "hub" convergence is the C1133 vocab-size artifact). **Pharma sits OUTSIDE this index layer** — it is kernel-*bearing*, execution-register (C2074). Human-signed-off Tier-3 reading: the index is ONE self-contained reference *type-class*, internally heterogeneous (C430/C1519), not a B-routing table. → **Supersedes the "positional encoding / compatibility grouping" framing in §IV, §VIII.**
 
 **2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
-PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
-
-**3. The Tier-0 conclusion was RESTATED on 2026-09-28 (human sign-off).** It is now a measurement: a single compact token grammar (49 classes, 69.5% of B tokens), organised by line (positional zones, boundary glyph coupling), in folio units with their own vocabulary, not reproduced by copy-and-modify generation or the Naibbe cipher as published. The control-program reading (kernel, closed-loop/recovery) is a Tier-3 working interpretation: the kernel test was uninformative (C089) and all four closed-loop legs were withdrawn (C171). The pre-registered glyph-level re-test (PHASE_763, C2082) returned MIXED: k carries no routing beyond matched controls, and the cross-token pass is word-ending routing, not a kernel. See CORE/frozen_conclusion.md. The A-side compatibility geometry below is independent of either statement. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and C957's token-level zeros reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, 2026-09-28) — no hazard layer survives beyond known effects. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
+PHASE_748 demoted or annotated a 12-constraint family — C475, C476 (now retracted), C642 (leg annotated; row stays Tier 2), C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream, demoted) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475, demoted), ~101-D structured space (C982, demoted), strong transitivity (C983, demoted), "structural fingerprint" (C981, demoted) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" (demoted) or the discrimination space as rich high-dimensional structure, read the modest core instead.** The A-side geometry is independent of the Tier-0 restatement.
 
 ---
 
@@ -24,10 +43,12 @@ PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C98
 
 ### Core Identity Statement
 
+> **[Status v7.24/7.25: this statement is the Tier-3 working interpretation, not structure (see Current State above; SYSTEM/STATUS_BRIEF.md §1, §4). "Control artifact" and "closed-loop control programs" rest on C171/C120, demoted to Tier 3. The "definitively NOT" list is scoped to the rival classes actually tested; sub-lexical codebooks, modified verbose ciphers and the Rugg grille are untested.]**
+
 The Voynich Manuscript is a **designed, non-semantic, multi-layer control artifact**.
 
 It is:
-- A family of closed-loop control programs (Currier B)
+- A family of closed-loop control programs (Currier B) *(Tier-3 working interpretation; closed-loop supports withdrawn)*
 - A complexity-frontier registry (Currier A)
 - A kernel-free, self-contained index/reference layer (AZC + Rosettes) — *position-independent, not B-routing* (v3.17; was "placement-coded workflow system")
 - An operationally redundant specification + vigilance layer (HT)
@@ -50,7 +71,7 @@ Meaning exists only in **external human practice** - the operator's trained judg
 
 **Externally plausible:** Process domain (distillation, perfumery), institutional context (guild workshop), historical period.
 
-**Irrecoverable:** Specific substances, recipes, token meanings, apparatus schematics, names, dates.
+**Irrecoverable:** Specific substances, recipes, token meanings, apparatus schematics, names, dates. *(v7.25: read as "not recovered by internal analysis so far"; "irrecoverable" as a closure verdict is retired language, STATUS_BRIEF §3.)*
 
 ---
 
@@ -60,7 +81,7 @@ Meaning exists only in **external human practice** - the operator's trained judg
 
 | Tier | Status | Meaning | Revisability |
 |------|--------|---------|--------------|
-| 0 | FROZEN | Established structural fact | Cannot be revised |
+| 0 | FROZEN | Established structural fact | Cannot be revised (except by human sign-off, as in the 2026-09-28 restatement) |
 | 1 | FALSIFIED | Hypothesis rejected with evidence | Preserved as negative knowledge |
 | 2 | ESTABLISHED | Validated finding | Can be refined with new evidence |
 | 3 | SPECULATIVE | Conditional interpretation | Non-binding, clearly labeled |
@@ -112,7 +133,7 @@ The following components are **stable**; reopening any of them requires new evid
 - Token-level or context-free A-B lookup claims (C384)
 - Entry-B claims not mediated by AZC and constraint collapse
 - Dictionary construction or semantic decoding
-- Reintroduction of language/cipher hypotheses
+- Reintroduction of language/cipher hypotheses *(scoped 2026-09: applies to the excluded classes only; untested cipher classes remain open, per the table above and STATUS_BRIEF §4)*
 
 **Note:** Record-level correspondence via multi-axis constraint composition IS permitted (C384.a). See canonical rule below.
 
@@ -124,7 +145,7 @@ The Voynich Manuscript contains four coexisting systems sharing a morphological 
 
 | System | Mode | Function | Executes? | Grammar? |
 |--------|------|----------|-----------|----------|
-| Currier B | Sequential | Closed-loop control programs | Yes | 49-class |
+| Currier B | Sequential | Closed-loop control programs *(Tier-3 reading; see Current State)* | Yes | 49-class |
 | Currier A | Non-sequential | Complexity-frontier registry | No | None |
 | AZC + Rosettes | Index/reference | Kernel-free arrangement layer; position-INDEPENDENT (within-diagram positions non-encoding, C2071); not B-routing (C2075) | No | Placement-*class* only (C759) |
 | Human Track | Distributed | Operationally redundant compound specifications + vigilance | No | Statistical |
@@ -133,7 +154,7 @@ The Voynich Manuscript contains four coexisting systems sharing a morphological 
 
 **Same alphabet ≠ same grammar.** All systems use the same character set and morphological components, but grammatical rules differ completely between A and B.
 
-**Shared type system ≠ shared semantics.** The global morphological type system (C383) provides structural consistency without implying that tokens "mean" the same thing across systems.
+**Shared type system ≠ shared semantics.** The global morphological type system (C383) provides structural consistency without implying that tokens "mean" the same thing across systems. [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 **Vocabulary sharing ≠ lookup.** A and B share ~1,500 token types because they describe the same operational domain, not because A entries "refer to" B programs.
 
@@ -143,7 +164,7 @@ The manuscript distributes responsibility between system and human across four l
 
 | Layer | Role | What It Handles |
 |-------|------|-----------------|
-| **Currier B** | Constrains you | Execution grammar, safety envelope |
+| **Currier B** | Constrains you | Execution grammar, safety envelope *("safety envelope" rests on the withdrawn hazard layer, STATUS_BRIEF §3)* |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
 | **AZC + Rosettes** | Indexes / references | Kernel-free arrangement layer; position-INDEPENDENT, self-contained, not B-routing (v3.17 — was "phase-indexed positional encoding, compatibility grouping") |
 | **HT** | Prepares you | Anticipatory vigilance signal |
@@ -152,7 +173,9 @@ The right mental model is not "What does this page tell me to do?" but:
 
 > **"How much of the problem is the system handling for me here, and how much vigilance am I responsible for?"**
 
-### Design Freedom vs Constraint (C458)
+### Design Freedom vs Constraint (C458, demoted to Tier 3)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The clamp/free CV asymmetry is a frequency shadow (C458 demoted 2026-06-08); the hazard dimension rests on the withdrawn forbidden-transition layer.
 
 B programs exhibit **asymmetric design freedom**:
 
@@ -169,13 +192,13 @@ B programs exhibit **asymmetric design freedom**:
 
 ## V. GLOBAL MORPHOLOGICAL TYPE SYSTEM
 
-Constraint C383 establishes a global type system spanning all Voynich systems. Understanding it correctly prevents catastrophic misreadings.
+Constraint C383 establishes a global type system spanning all Voynich systems. Understanding it correctly prevents catastrophic misreadings. [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 ### Prefix Function
 
 Prefixes encode **functional type**, not semantic category:
 - 8 marker families (ch, sh, ok, ot, da, qo, ol, ct)
-- Kernel-heavy vs kernel-light distinction is GLOBAL
+- Kernel-heavy vs kernel-light distinction is GLOBAL *(the "kernel" label is withdrawn: C089 superseded by C2082; the measured part is the qo-k / ok-e family preference, C1313)*
 - Sister pairs (ch/sh, ok/ot) are **equivalent slots**, not different concepts
 
 **PREFIX as Dual Encoder (C661, C911, C1001):**
@@ -248,9 +271,9 @@ MIDDLEs are the primary vocabulary layer:
 **Affordance Bins (C995):**
 - 972 MIDDLEs classify into 9 functional bins by 17-dimensional behavioral signature
 - Chromatic number 3 for PREFIX-lane interaction
-- HUB_UNIVERSAL (23 MIDDLEs, 59% of tokens) monopolizes all 17/17 forbidden transitions (C1000)
+- HUB_UNIVERSAL (23 MIDDLEs, 59% of tokens) monopolizes all 17/17 forbidden transitions (C1000) *(forbidden-transition leg scoped 2026-09-27 in the C1000 row: the 17-pair list is withdrawn, C2081)*
 
-**Frequency Distribution (Tier 3):**
+**Frequency Distribution (Tier 3):** *(the "hazard" contexts below refer to the withdrawn hazard layer, STATUS_BRIEF §3)*
 - Core (top 30): 67.6% of usage, mode-flexible, section-stable
 - Tail (~1,150): 32.4% of usage, mode-specific, hazard-concentrated
 - Rare MIDDLEs cluster in high-hazard contexts (rho=-0.339, p=0.0001)
@@ -333,7 +356,7 @@ Tokens within the same class but with different MIDDLEs are **positionally compa
 
 | Variable | System | What It Does |
 |----------|--------|--------------|
-| **Routing** | AZC | Position-indexed legality |
+| **Routing** | AZC | Position-indexed legality *(superseded v3.17: positions non-encoding, C2071; AZC does not route to B, C2075)* |
 | **Differentiation** | RI | Identity exclusion |
 | **Capacity** | PP | Class survival breadth (count) |
 | **Configuration** | PP | Intra-class token selection (composition) |
@@ -411,7 +434,11 @@ DA-family tokens are **infrastructural**:
 
 Currier B (61.9% of tokens, 83 folios) encodes executable control programs. This section explains the structural synthesis, not individual constraints.
 
+> **[Status v7.24/7.25:** "executable control programs" is the Tier-3 working interpretation (Current State above). Subsections that rest on withdrawn constructs (closed-loop control, state-triggered interventions, LINK, hazard topology, convergence, design freedom) carry a banner. The measurements in the role, AUXILIARY, anatomy, macro-automaton, line-grammar, paragraph-gradient, PREFIX-position and cross-line subsections remain as registered, except where marked.**]**
+
 ### Closed-Loop Process Control
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]**
 
 Programs are read as closed-loop control — a Tier-3 working interpretation since the 2026-09-28 restatement (its kernel, monitoring, hazard and convergence supports were withdrawn: C089, C171, C2081, C1401–C1403). They are NOT:
 - Batch recipes (do X, then Y, then Z)
@@ -423,7 +450,9 @@ They ARE:
 - Gradient-following trajectories
 - Convergence-seeking procedures
 
-### Tokens as State-Triggered Interventions (C171 Clarification)
+### Tokens as State-Triggered Interventions (C171 Clarification; C171 demoted to Tier 3)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The monitor/assess/intervene loop is the withdrawn closed-loop reading. The measurements cited inside (e.g. C506.b intra-class heterogeneity) stand on their own rows.
 
 B tokens are **interventions selected by a control loop**, not recipe steps:
 
@@ -448,6 +477,8 @@ The grammar constrains **which interventions are legal** for a given state, not 
 
 ### LINK Operators
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** LINK's true density is 13.2% and it is a morphological artifact of "ol", not a monitoring layer (C609, C1174).
+
 LINK tokens mark **attention points**, not interventions:
 - Operator observes but does not act
 - System continues autonomously
@@ -455,12 +486,16 @@ LINK tokens mark **attention points**, not interventions:
 
 ### Hazard Topology
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Class level demoted (C783), 5-class taxonomy imposed (C2060), 13 class-level violations in the real corpus (C2063), token-level zeros reduce to known effects (C2081).
+
 17 forbidden transitions define hazard space:
 - 5 failure classes (PHASE_ORDERING dominant at 41%)
 - Hazards are grammatically forbidden, not semantically labeled
 - Programs avoid hazards through grammar, not warnings
 
 ### Convergence vs Termination
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Only the 57.8% figure stands, as occupancy (C074, measurement only); there is no sequential convergence and MONOSTATE is the most common mode, not a target (C1401–C1403).
 
 57.8% of programs terminate in STATE-C (stable convergent):
 - Convergence is structural (grammar reaches absorbing state)
@@ -474,6 +509,8 @@ Grammar is symmetric under time reversal (C391):
 - Consistent with continuous process (not narrative)
 - Supports circulatory/reflux interpretation
 
+*(Scoped reading: the C391 row measures conditional-entropy symmetry, "constraint symmetry, not transition symmetry" (see C886). The process and reflux bullets are interpretive: the reflux reading is C157, Tier 3 speculative, and its "uniquely compatible" framing is withdrawn as evidence (strategic review §5).)*
+
 ### Operator Role
 
 The manuscript provides **structure**; the operator supplies **meaning**:
@@ -481,9 +518,9 @@ The manuscript provides **structure**; the operator supplies **meaning**:
 - No explanations, only instructions
 - Designed for practitioners, not novices
 
-**Constraint Substitution (F-BRU-007):** When operations are dangerous (high sensory load), grammar restricts options - reducing the need for active vigilance. When operations are forgiving, grammar permits many options - requiring more discrimination and higher HT density. HT functions as residual vigilance after grammar has constrained the decision space.
+**Constraint Substitution (F-BRU-007; the fit rests on C458, demoted to Tier 3):** When operations are dangerous (high sensory load), grammar restricts options - reducing the need for active vigilance. When operations are forgiving, grammar permits many options - requiring more discrimination and higher HT density. HT functions as residual vigilance after grammar has constrained the decision space.
 
-### 5-Role Functional System (ICC-Validated, C547-C550)
+### 5-Role Functional System (ICC-Validated, C547-C550; C547 in this range is demoted to Tier 3)
 
 **Status:** Tier 2 validated. ICC (Intra-Class Correlation) analysis independently confirmed role boundaries, converging on the same taxonomy as the original grammar analysis.
 
@@ -497,7 +534,9 @@ Currier B's 49 classes organize into 5 functional roles:
 | **FQ** | Frequent | 4 classes (12.5% of B) | Common instructions, section S elevation |
 | **AX** | Auxiliary | 19 classes (16.6% of B) | PREFIX-switched scaffold layer |
 
-### Line Execution Syntax (C556-C562)
+### Line Execution Syntax (C556-C562; C557, C561 demoted, C558 partly demoted, C559 superseded)
+
+*(Range status: C557 and C561 demoted to Tier 3 (PHASE_731, Markov-trivial mechanisms); C558's positional sub-claims demoted (PHASE_735), its singleton-class claim stands; C559 superseded by C583/C587; C556, C560, C562 stand. The SETUP→WORK→CHECK→CLOSE labels are interpretive; the positional measurements stand on their own rows, e.g. C556.)*
 
 Lines are formal control blocks with **internal positional grammar**:
 
@@ -506,8 +545,8 @@ SETUP → WORK → CHECK → CLOSE
 ```
 
 - ENERGY roles concentrate medially; FLOW roles concentrate at line-final
-- `daiin` marks the WORK→CHECK transition (C557)
-- `or→aiin` is the strongest role-transition bigram (C561)
+- `daiin` marks the WORK→CHECK transition (C557, demoted to Tier 3: the 27.7% measurement stands, the control-signal mechanism is Markov-trivial)
+- `or→aiin` is the strongest role-transition bigram (C561, demoted to Tier 3: or→aiin is Markov-trivial, PHASE_731)
 - ENERGY and FLOW are anticorrelated across sections (r = -0.89, C551)
 
 **Section Profiles (C552-C555):**
@@ -541,7 +580,9 @@ AX is not a separate vocabulary — it is a **scaffold MODE** of the shared cros
 
 **Reference:** See BCSC v1.3 for full structural contract; `phases/CLASS_SEMANTIC_VALIDATION/`, `phases/AUXILIARY_STRATIFICATION/`, `phases/AX_FUNCTIONAL_ANATOMY/`, `phases/AX_CLASS_BEHAVIOR/` for evidence.
 
-### Role Internal Anatomy (C573-C602)
+### Role Internal Anatomy (C573-C602; C600 demoted to Tier 3, hazard legs withdrawn)
+
+*(Range status: C600 demoted (PHASE_735). The "hazard"/"forbidden" legs of C586 and C601 refer to the withdrawn forbidden-transition list (C601's row is scoped, C2081); positions, final rates and vocabulary splits stand.)*
 
 **Status:** Tier 2 validated. Five anatomy phases completed 2026-01-26 (EN_ANATOMY, SMALL_ROLE_ANATOMY, FQ_ANATOMY, AX_REVERIFICATION, SUB_ROLE_INTERACTION).
 
@@ -553,11 +594,11 @@ Each role's internal class structure has been characterized. Key findings:
 
 **FLOW (FL):** 4 classes split into **hazard/safe** subgroups (C586). Hazard {7, 30} sits at mean position 0.55 with 12.3% final rate; Safe {38, 40} at position 0.81 with 55.7% final rate (p=9.4e-20). FL initiates forbidden transitions at 4.5x the rate it receives them.
 
-**CORE CONTROL (CC):** 3 active classes form a **positional dichotomy** (C590). Class 10 (daiin) is initial-biased (0.413, 27.1% line-initial); Class 11 (ol) is medial (0.511); Class 17 (ol-derived) adds compound operators. Critically, daiin/ol trigger EN_CHSH specifically (1.6-1.7x) while ol-derived triggers EN_QO (1.39x) — CC sub-groups are **differentiated triggers** (C600).
+**CORE CONTROL (CC):** 3 active classes form a **positional dichotomy** (C590). Class 10 (daiin) is initial-biased (0.413, 27.1% line-initial); Class 11 (ol) is medial (0.511); Class 17 (ol-derived) adds compound operators. Critically, daiin/ol trigger EN_CHSH specifically (1.6-1.7x) while ol-derived triggers EN_QO (1.39x) — CC sub-groups are **differentiated triggers** (C600). *[C600 demoted to Tier 3 (PHASE_735): the ol→CHSH and ol-derived→QO routing is 5-gram-reproducible; daiin→ch/sh is measured separately in C2064, mechanism ambiguous.]*
 
-**Cross-Boundary Routing (C598-C602):** Sub-group identity is visible across role boundaries. 8/10 cross-role pairs show non-random sub-group routing (5 survive Bonferroni, C598). AX scaffolding routes differentially: AX_INIT feeds QO, AX_FINAL feeds FQ_CONN (C599). All 19 hazard events originate from exactly 3 sub-groups: FL_HAZ, EN_CHSH, FQ_CONN. QO never participates in hazards (C601). REGIME modulates routing magnitude but not direction for 4/5 pairs; AX->FQ is the REGIME-independent exception (C602).
+**Cross-Boundary Routing (C598-C602; C600 demoted, hazard events refer to the withdrawn list):** Sub-group identity is visible across role boundaries. 8/10 cross-role pairs show non-random sub-group routing (5 survive Bonferroni, C598). AX scaffolding routes differentially: AX_INIT feeds QO, AX_FINAL feeds FQ_CONN (C599). All 19 hazard events originate from exactly 3 sub-groups: FL_HAZ, EN_CHSH, FQ_CONN. QO never participates in hazards (C601). REGIME modulates routing magnitude but not direction for 4/5 pairs; AX->FQ is the REGIME-independent exception (C602).
 
-**Reference:** See constraint files C573-C602; `phases/EN_ANATOMY/`, `phases/SMALL_ROLE_ANATOMY/`, `phases/FQ_ANATOMY/`, `phases/SUB_ROLE_INTERACTION/` for evidence.
+**Reference:** See constraint files C573-C602 (C600 demoted); `phases/EN_ANATOMY/`, `phases/SMALL_ROLE_ANATOMY/`, `phases/FQ_ANATOMY/`, `phases/SUB_ROLE_INTERACTION/` for evidence.
 
 ### Macro-Automaton Compression (C976-C980)
 
@@ -573,22 +614,24 @@ The 49 instruction classes compress to **6 macro-states** (8.17x compression) wi
 
 Key findings: EN/AX merge confirms AX behavioral collapse (C572). FL splits into hazard/safe confirms C586. The 6-state automaton maps to physically necessary operational modes.
 
-### Line Grammar Synthesis (C956-C964)
+*(v7.25: the eigenstructure behind this compression is carried by C2061/C2067, pending a re-check under the N5 null (C2066; STATUS_BRIEF §2). "Hazard"/"safe" are labels from the withdrawn hazard layer, and "physically necessary operational modes" is interpretive.)*
+
+### Line Grammar Synthesis (C956-C964; C957 superseded by C2081)
 
 Lines are **boundary-constrained free-interior** control blocks:
 
 - **Boundary tokens** are zone-exclusive (192/334 common tokens at 2.72x shuffle, C956)
-- **26 mandatory bigrams** (obs/exp > 5x) including or→aiin (C957)
+- **26 mandatory bigrams** (obs/exp > 5x) including or→aiin (C957) *[C957 superseded by C2081; or→aiin is Markov-trivial (C561, demoted)]*
 - ~~9 forbidden bigrams (C957)~~ — superseded: the zeros reduce to line composition, zones and boundary coupling (C2081)
 - **Opener determines line length** (24.9% partial R² beyond folio+regime, C958)
 - **Opener is role marker, not instruction header** — specific token adds no predictive power beyond role (C959)
 - **WORK zone is unordered** — tokens within WORK show no systematic sequence (Kendall tau ≈ 0, C961)
-- **Phase interleaving** — KERNEL/LINK/FL show tendencies, not rigid blocks (alternation rate 0.566, C962)
+- **Phase interleaving** — KERNEL/LINK/FL show tendencies, not rigid blocks (alternation rate 0.566, C962) *(the KERNEL and LINK group labels are withdrawn constructs, STATUS_BRIEF §3)*
 - **Body homogeneity** — paragraph body lines differ only in length (rho=-0.229), not composition (C963)
 
 Most token-level constraints are STRUCTURAL (role/position driven), not lexical — confirmed by negative control (C964).
 
-### Paragraph Execution Gradient (C932-C935)
+### Paragraph Execution Gradient (C932-C935) [v7.26 status: C932, C933 demoted to Tier 3 (not replicated (C1259))]
 
 Paragraph body lines follow a **specification → execution gradient**:
 
@@ -603,6 +646,8 @@ Paragraph body lines follow a **specification → execution gradient**:
 **Compound specification model (C935):** Line-1 compound MIDDLEs (45.8% vs 31.5% body) predict body simple MIDDLEs at 71.6% hit rate (vs 59.2% random, 1.21x lift). Header compounds are compressed specifications that body lines unpack.
 
 ### Affordance Bin System (C995-C997, C1000)
+
+*(Hazard legs withdrawn, STATUS_BRIEF §3: the C996, C997 and C1000 rows are scoped 2026-09-27 — their forbidden-transition, hazard-source/target and safety-buffer claims rest on the 17-pair list, which reduces to known effects (C2081). The bin partition (C995) is not a hazard claim.)*
 
 972 MIDDLEs classify into **9 functional bins** by affordance signature (17-dimensional behavioral profiles):
 
@@ -641,11 +686,13 @@ Lines carry **mutual information about neighbors** despite formal independence:
 - Cross-line MI = 0.521 bits
 - Folio fingerprint AUC = 0.994 (a single line identifies its folio)
 
-Forbidden transition compliance is **~65%** (soft depletion, not absolute prohibition — C789).
+Forbidden transition compliance is **~65%** (soft depletion, not absolute prohibition — C789). *(C789 scoped 2026-09-27: the forbidden-pair list itself is withdrawn, C2081.)*
 
-### Generative Sufficiency (C1025, C1030, C1033, C1034)
+### Generative Sufficiency (C1025, C1030, C1033, C1034) [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
 A minimal generative model (M2: 49-class first-order Markov chain + forbidden transition suppression) reproduces **87% of measurable structure** across 15 statistical tests:
+
+*(Scoped v7.25: the forbidden-suppression component uses the withdrawn 17-pair list (C2081), and C2063 shows the B3 suppression test rewards over-idealization — the real corpus has 13 class-level violations.)*
 
 | Component | What it does | Coverage |
 |-----------|-------------|----------|
@@ -676,13 +723,15 @@ The 40% residual is **irreducible** (C1035): six additional folio-level predicto
 
 The C1017 baseline is moderately overfit (LOO CV R-squared = 0.433 vs training 0.564, gap 0.132). The true explained fraction is approximately 43%, making the genuine residual ~57% — consistent with C980's 66.3% free variation envelope.
 
-**This is the design freedom space** (C458): each folio's dynamics are independently parameterized within the grammar's constraints. Hazard exposure is clamped (CV = 0.04-0.11); recovery strategy is locally free. The variation is real, structured, and by design.
+**This is the design freedom space** (C458, demoted to Tier 3; see note below): each folio's dynamics are independently parameterized within the grammar's constraints. Hazard exposure is clamped (CV = 0.04-0.11); recovery strategy is locally free. The variation is real, structured, and by design.
+
+*[Interpretive clause withdrawn: C458 is demoted to Tier 3 (the clamp/free asymmetry is a frequency shadow) and the hazard/recovery framing is withdrawn (STATUS_BRIEF §3). The residual measurement (C1035) stands; "by design" is interpretive.]*
 
 ---
 
 ## VII. CURRIER A - FINAL INTERPRETATION
 
-**Status: CHARACTERIZATION COMPLETE (2026-01-16)**
+**Status: CHARACTERIZATION COMPLETE (2026-01-16)** *(historical status label; closure language is retired, STATUS_BRIEF §3. The A-side compatibility family was later reduced — see Current State, A-side corrections #2.)*
 
 Currier A (30.5% of tokens, 114 folios) is a **human-facing complexity-frontier registry** - a structured collection of material discriminators organized for expert navigation without semantic content.
 
@@ -778,7 +827,7 @@ Initial A-B hazard correlation (rho=0.228, p=0.038) was tested:
 
 ## VIII. AZC — INDEX / REFERENCE LAYER (v3.17; was "Positional Encoding & Compatibility Grouping")
 
-> **v3.17 CORRECTION (see the post-audit block at top):** the "positional encoding" and "compatibility grouping" framing of this section is **superseded**. The within-diagram *positions* do NOT encode (C2071 — nymph clock-positions are non-encoding display slots); AZC is a **kernel-free, self-contained index/reference layer** (AZC zodiac+cosmological + Rosettes) that does **not route to B** (C2075). What survives below: the placement-*class* structure (C759), the vocabulary-isolation facts (C760/C321), and the A↔AZC↔B interface *plumbing*. What's corrected: any "positions encode operational character" or "rich compatibility grouping" reading (the latter is the demoted A-side family — read the modest core: ~28 above-noise modes + C729).
+> **v3.17 CORRECTION (see Current State at top, A-side / AZC corrections #1):** the "positional encoding" and "compatibility grouping" framing of this section is **superseded**. The within-diagram *positions* do NOT encode (C2071 — nymph clock-positions are non-encoding display slots); AZC is a **kernel-free, self-contained index/reference layer** (AZC zodiac+cosmological + Rosettes) that does **not route to B** (C2075). What survives below: the placement-*class* structure (C759), the vocabulary-isolation facts (C760/C321), and the A↔AZC↔B interface *plumbing*. What's corrected: any "positions encode operational character" or "rich compatibility grouping" reading (the latter is the demoted A-side family — read the modest core: ~28 above-noise modes + C729).
 
 AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B. ~~It operates as a static positional encoding where each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character.~~ **[v3.17:** it operates as a kernel-free index/reference layer; each diagram is a self-contained set of arrangement vocabulary, and the within-diagram positions are non-encoding display slots (C2071), not an operational-character encoding.**]**
 
@@ -792,7 +841,7 @@ AZC (3,299 tokens, 8.7% of corpus, 30 folios) is neither Currier A nor Currier B
 | Currier B | HOW to proceed | Procedural sequence |
 | AZC | WHEN to decide | Decision grammar |
 
-AZC is the **interface layer** that converts static knowledge (A) into actionable decision points within procedures (B).
+AZC is the **interface layer** that converts static knowledge (A) into actionable decision points within procedures (B). *(Superseded v3.17: AZC is a self-contained index/reference layer that does not route to B, C2075; "decision grammar" is historical.)*
 
 ### Structural Properties (C437-C444)
 
@@ -807,6 +856,8 @@ AZC is the **interface layer** that converts static knowledge (A) into actionabl
 
 ### Positional Grammar
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The R-series ordering and S/R division are transcription artifacts (C434, C435 retracted), and within-diagram positions are non-encoding (C2071).
+
 **Diagram** positions constrain legality (C→R→S progression):
 
 | Diagram Position | Workflow Phase | Escape Rate | Meaning |
@@ -818,6 +869,8 @@ AZC is the **interface layer** that converts static knowledge (A) into actionabl
 *Note: P (Paragraph) is NOT a diagram position - it is Currier A text appearing on AZC folios.*
 
 ### Compatibility Grouping Mechanism
+
+**[Superseded v3.17 — historical; see Current State, A-side / AZC corrections #1–#2]** Positions are non-encoding display slots (C2071); the rich compatibility reading is the demoted A-side family.
 
 AZC folios group vocabulary by **compatibility signature**:
 - Specialized A-types appear in only 1-3 folios
@@ -841,9 +894,11 @@ AZC is not selected explicitly. Constraints activate automatically based on voca
 | Zodiac | 26 | 2.4% | Routine, predictable, low intervention |
 | Non-Zodiac | 10 | 7.6% | Variable, demanding, more intervention |
 
-The distinction encodes **context risk profiles**, not different domains.
+The distinction encodes **context risk profiles**, not different domains. *(Interpretive; read with the v3.17 index-layer correction, C2071/C2075.)*
 
 ### Reachability Suppression Mechanism (v2.56)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Built on the 17 forbidden transitions and the hazard-class taxonomy (C783 demoted, C2060, C2081); its AZC→B framing is also subject to the v3.17 correction (C2075: AZC is not B-routing).
 
 AZC constrains B grammar through a **two-tier constraint system**:
 
@@ -873,7 +928,7 @@ This completes the vocabulary-mediated correlation model with no semantics, bran
 
 ### Interpretive Bounds
 
-AZC's structure is fully characterized (CLOSED). Semantic content of individual orientation postures remains opaque by design.
+AZC's structure is fully characterized (CLOSED). *(Historical closure label, retired (STATUS_BRIEF §3); the layer was re-characterized in v3.17, C2071–C2075.)* Semantic content of individual orientation postures remains opaque by design.
 
 ---
 
@@ -894,7 +949,7 @@ These findings constrain the model:
 - HT is **operationally redundant** — compound MIDDLEs decompose to core atoms with 71.6% body prediction hit rate (C935). HT contains operational content but it is redundant with body simple MIDDLEs (1.21x lift vs 59.2% random).
 - HT has **causal decoupling** from program execution (V=0.10, C405)
 - HT exhibits **generative structure** (Zipf=0.89)
-- HT **avoids hazards entirely** (0/35 forbidden seam presence)
+- HT **avoids hazards entirely** (0/35 forbidden seam presence) *(rests on the withdrawn forbidden-transition list, STATUS_BRIEF §3)*
 - HT **synchronizes statistically** with preceding grammar phase
 - HT removal **does not affect execution** outcomes (because of redundancy, not emptiness)
 - HT **anticipates B stress** at quire level (r=0.343, p=0.0015) - C459
@@ -966,7 +1021,7 @@ Single-character tokens have three distinct functions depending on context:
 |---------|----------|-----------------|-------------|
 | **Currier A (normal)** | Rare, ignorable | Non-structural artifacts | No |
 | **Currier A f49v** | Instructional labels | Meta-structural (teaching) | No |
-| **Currier B f76r** | Control-posture sentinels | Grammar-critical markers | Yes (C121, C366, C382) |
+| **Currier B f76r** | Control-posture sentinels | Grammar-critical markers | Yes (C121, C366, C382) [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174)); C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)] |
 
 **f49v** is unique: 26 single-character L-placement labels (65% of manuscript total) alternating 1:1 with Currier A example lines, plus marginal ordinal numbers (1-5). It demonstrates Currier A morphology for training or reference. Its labels are **meta-structural** - they teach how to read the system but do not participate in A-registry semantics or propagate into AZC/B.
 
@@ -986,6 +1041,8 @@ The correct model:
 > Currier A provides discrimination (where fine distinctions matter).
 
 ### A-AZC Relationship (v3.0)
+
+**[Superseded v3.17 — historical; see Current State, A-side / AZC corrections #1]** Within-diagram positions are non-encoding (C2071) and AZC does not route to B (C2075); "position reflects operational character" is withdrawn. The vocabulary facts in C441–C444 stand on their own rows.
 
 AZC encodes vocabulary position - each PREFIX+MIDDLE appears at exactly one position:
 
@@ -1020,7 +1077,8 @@ The systems share a **type space** but not **semantics**:
 The Component-to-Class Mapping (CCM) phase achieved complete role-level semantic decomposition of tokens. This is the maximum recoverable internal meaning.
 
 > **REVISION (2026-01-11):** PREFIX interpretation updated from "material-behavior class" to "control-flow participation" based on F-A-014b. See C466-C467.
-> **REVISION (2026-02-12):** ok reclassified from "verb" (seal/close/cap) to **domain selector** (VESSEL/apparatus) per C936. PREFIX dual encoding (content + line position) per C1001.
+> **REVISION (2026-02-12):** ok reclassified from "verb" (seal/close/cap) to **domain selector** (VESSEL/apparatus) per C936 (C936 now demoted to Tier 3; INDEX tier cell reads "2/3"). PREFIX dual encoding (content + line position) per C1001.
+> **[Status v7.24/7.25:** this whole section is Tier 3. Its k/e/h "heating / cooling / monitoring" glosses lean on the withdrawn kernel reading (C089 superseded by C2082; C103–C105 demoted to Tier 3). The structural legs cited (C911, C1001) stand on their own rows.**]**
 
 ### Token Decomposition
 
@@ -1052,7 +1110,7 @@ PREFIX and MIDDLE are NOT independent. Each PREFIX class selects which MIDDLE fa
 | **ch-/sh-** | e-family (stability) | 2.0-3.1x | INITIAL→CENTRAL (sh=0.40, ch=0.52) |
 | **da-/sa-** | infrastructure (iin, in, r, l) | 5.9-12.8x | INITIAL (da=0.52, sa=0.36) |
 | **ot-/ol-** | h-family (monitoring) | 3.3-6.8x | FINAL (ot=0.59, ol=0.56) |
-| **ok-** | e-family + infrastructure (VESSEL) | C911, C936 | CENTRAL (0.54) |
+| **ok-** | e-family + infrastructure (VESSEL) | C911, C936 (demoted, Tier 3) | CENTRAL (0.54) |
 
 ### MIDDLE Semantic Families (C908-C910 - Tier 2)
 
@@ -1074,7 +1132,7 @@ From the apparatus's perspective:
 - SUFFIX encodes **when decisions are allowed** (phase)
 - SISTER encodes **how tightly to execute** (mode)
 
-The ok PREFIX (C936) demonstrates the domain selector principle most clearly: ok+aiin = "check vessel," ok+ar = "close vessel," ok+e = "cool vessel," ok+ai = "open vessel." The MIDDLE carries the action; the PREFIX selects the target. This generalizes: ch/sh target the PROCESS, qo targets HEAT, ok targets the VESSEL, da/sa target SETUP.
+The ok PREFIX (C936, demoted to Tier 3) demonstrates the domain selector principle most clearly: ok+aiin = "check vessel," ok+ar = "close vessel," ok+e = "cool vessel," ok+ai = "open vessel." The MIDDLE carries the action; the PREFIX selects the target. This generalizes: ch/sh target the PROCESS, qo targets HEAT, ok targets the VESSEL, da/sa target SETUP.
 
 ### Semantic Ceiling
 
@@ -1090,7 +1148,7 @@ The ok PREFIX (C936) demonstrates the domain selector principle most clearly: ok
 - Specific procedures or recipes
 - Token-to-real-world mappings
 
-This boundary is structural, not analytical. The system was designed to operate without external referents.
+This boundary is structural, not analytical. The system was designed to operate without external referents. *(Interpretive; read "irrecoverable" as "not recovered so far" — closure language is retired, STATUS_BRIEF §3.)*
 
 See [SPECULATIVE/apparatus_centric_semantics.md](SPECULATIVE/apparatus_centric_semantics.md) for full analysis.
 
@@ -1121,8 +1179,8 @@ This resolves the apparent complexity paradox: the system seems over-specified f
 
 The A/AZC/B shared vocabulary architecture is now **structurally characterized**:
 - F-AZC-015: AZC is ambient (70% active per window), not dynamic
-- F-AZC-016: Vocabulary classified at high-escape AZC positions produces 28x higher escape in B (vocabulary-mediated correlation)
-- C468-C470: Statistical correlations locked as Tier 2
+- F-AZC-016: Vocabulary classified at high-escape AZC positions produces 28x higher escape in B (vocabulary-mediated correlation) *(the fit lists C470 among its supports; C470 is demoted)*
+- C468-C470: Statistical correlations locked as Tier 2 *(C470 since demoted to Tier 3 in the PHASE_748 compatibility cascade; C468, C469 stand)*
 - AZC_POSITION_VOCABULARY (2026-01-31): AZC is a static lookup table; position has NO independent effect beyond vocabulary composition
 
 **Do NOT reopen:** entry-level A-B mapping, dynamic AZC hypothesis, parametric encoding, semantic token meaning.
@@ -1143,7 +1201,7 @@ The A/AZC/B shared vocabulary architecture is now **structurally characterized**
 
 **What AZC actually does:**
 - Provides escape gradients by position (C443)
-- Enforces compatibility at specification level (C442, C475)
+- Enforces compatibility at specification level (C442, C475) *(C475 demoted to Tier 3: its percentage measured sparsity, not prohibition)*
 - Does NOT expand vocabulary beyond what A specifies
 
 **Quantitative effect (C502):**
@@ -1157,6 +1215,8 @@ The A/AZC/B shared vocabulary architecture is now **structurally characterized**
 ## XI. REJECTED / FALSIFIED THEORIES
 
 The following hypotheses have been tested and rejected. They are preserved as negative knowledge.
+
+*(Scoped v7.25, STATUS_BRIEF §4: "natural language" is excluded as natural language written one token per word (C132, C2015, C2022); the 0.19% reference-rate figure (C130) is tainted and not relied on. "Cipher" is excluded only for the classes tested — token ≈ word codes, atom-level polyalphabetic (C1976, C2017), the Naibbe cipher as published (C2080); syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille are untested.)*
 
 | Hypothesis | Status | Key Evidence |
 |------------|--------|--------------|
@@ -1187,9 +1247,9 @@ The following interpretations are **plausible but do not constrain the model**:
 
 ### Process Domain
 
-- **Reflux distillation** (circulatory alembic) - uniquely compatible with grammar (100%)
+- **Reflux distillation** (circulatory alembic) - uniquely compatible with grammar (100%) *(C157, Tier 3 speculative; the "uniquely compatible (100%)" framing is withdrawn as evidence, strategic review §5)*
 - **Perfumery/botanical extraction** - favored by 8/8 diagnostic tests
-- **Hybrid hazard model** - 71% batch, 29% apparatus failure modes
+- **Hybrid hazard model** - 71% batch, 29% apparatus failure modes *(C216 demoted to Tier 3: the split was computed over the imposed 5-class taxonomy, C2060)*
 
 ### Institutional Context
 
@@ -1206,6 +1266,8 @@ The following interpretations are **plausible but do not constrain the model**:
 **These do not constrain the model.** They provide interpretive context only.
 
 ### XII.A. Physical World Reverse Engineering (Tier 3)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Its pillars are withdrawn or demoted: the 41/24/24/6/6 hazard profile uses the imposed 5-class taxonomy (C2060, C783 demoted); the ~128-D space and ~95% incompatibility are the demoted A-side family (C982, C475; see Current State, A-side corrections #2); the circulatory-reflux reading is C157, Tier 3.
 
 Six investigation phases tested the physical grounding of the control architecture:
 
@@ -1287,6 +1349,8 @@ Common errors:
 
 ## XIV. WHAT CANNOT BE RECOVERED
 
+*(Retired closure language, STATUS_BRIEF §3 / strategic review §5: read "definitively irrecoverable" below as "not recovered from the manuscript alone so far". Referents unrecovered means the question is open, not closed.)*
+
 The following are **definitively irrecoverable** from the manuscript alone:
 
 - Specific substances (plants, minerals, compounds)
@@ -1318,6 +1382,8 @@ The cross-system vocabulary architecture is formally characterized via six struc
 | PSC | `paragraph.psc.yaml` | LOCKED v1.0 | Paragraph unit (cross-system) |
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
+
+*(v7.25: the contracts still cite demoted or superseded constraints — e.g. BCSC's hazard topology cites C783, C1118; CASC cites C475, C476 (strategic review §6). Check every citation against CONSTRAINT_TABLE.txt. The "LOCKED", "fully characterized" and "PCA-v1 CERTIFIED" labels below are historical: PCA-v1 was an internal contract-composition audit, not an external test (review §1), and "Core model CLOSED (PCA-v1 passed)" is retired language (review §5).)*
 
 **Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. Phases 406-408 (2026-02-20) decomposed the A-B vocabulary pipeline into four populations: 85 bridge MIDDLEs (dynamical backbone), 4 non-bridge matched, 300 dark-pipeline MIDDLEs (identification substrate, built from bridge atoms at 96.5% coverage), and 15 phantoms. All remaining work concerns interpretation, tooling, or external corroboration.
 
@@ -1375,7 +1441,7 @@ Many constraints are documented in grouped files:
 > **This document encodes how to understand it.**
 > **Neither replaces the other.**
 
-Together, these two files provide complete model reconstruction capability. All other documentation is convenience, not necessity.
+Together, these two files provide complete model reconstruction capability. All other documentation is convenience, not necessity. *(v7.25: read both with `SYSTEM/STATUS_BRIEF.md`, which outranks this document; where this body conflicts with the generated table or the brief, they win.)*
 
 ### Document Relationship
 

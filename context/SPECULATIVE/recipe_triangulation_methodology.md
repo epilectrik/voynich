@@ -1,5 +1,7 @@
 # Recipe Triangulation Methodology
 
+**Status (v7.25, 2026-09-28):** Already invalidated (2026-01-29, below). In addition, its fire_degree → REGIME_N bridge is retired (REGIME = fire degree, C1712, C2070) and "LINK → monitoring operations" is withdrawn (true LINK density 13.2%, C609; morphological artifact of "ol", C1174) — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier**: 3 (Interpretive - requires Brunschwig alignment)
 **Status**: INVALIDATED - Methodology was based on incorrect record unit
 **Phase**: ANIMAL_PRECISION_CORRELATION, MATERIAL_MAPPING_V2

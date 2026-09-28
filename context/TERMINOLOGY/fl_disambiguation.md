@@ -2,6 +2,8 @@
 
 **Status:** Reference | **Created:** 2026-01-31
 
+> **Status note (v7.25; see SYSTEM/STATUS_BRIEF.md §3):** the "hazard" / "safe" labels on FLOW_OPERATOR classes refer to participation in the 17 forbidden pairs, whose prohibition reading is withdrawn (class level demoted C783, taxonomy imposed C2060, zeros reduce C2081). The "kernel" label for k/h/e is historical (C089 superseded by C2082). "Material state" and "control cycle" are interpretive labels; the measurements are positional and distributional.
+
 ---
 
 ## The Problem
@@ -53,9 +55,9 @@ This document clarifies the distinction.
 **Token Share:** 4.7% of B (1,078 tokens)
 
 **Key Properties:**
-- Primitive substrate layer (no kernel chars k/h/e)
-- Hazard-source role (initiates 4.5x more hazard than receives)
-- Split into hazard pair {7, 30} and safe pair {38, 40}
+- Primitive substrate layer (no kernel chars k/h/e) [contains none of the letters k/h/e; the "kernel" framing is superseded, C089 → C2082]
+- Hazard-source role (initiates 4.5x more hazard than receives) [measured on the 17-pair set; hazard reading withdrawn, C2081]
+- Split into hazard pair {7, 30} and safe pair {38, 40} [labels historical; the positional split itself is measured (C586)]
 - Specific tokens: dar, dal, daly, ary, dain, etc.
 
 **Provenance:** C121, C562, C582, C586
@@ -87,7 +89,7 @@ This document clarifies the distinction.
 | Within-line positional gradient | **FL** |
 | MIDDLE taxonomy (C777) | **FL** |
 | 49-class behavioral role | **FLOW_OPERATOR** or **FO** |
-| Hazard-source/safe split | **FLOW_OPERATOR** or **FO** |
+| Hazard-source/safe split (historical labels; hazard layer withdrawn, C2081) | **FLOW_OPERATOR** or **FO** |
 | Classes 7, 30, 38, 40 | **FLOW_OPERATOR** or **FO** |
 
 ---

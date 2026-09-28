@@ -1,5 +1,7 @@
 # Process-Behavior Isomorphism (ECR-4)
 
+**Status (v7.25, 2026-09-28):** The tests scored here rest on withdrawn supports — the k/h/e kernel (C103–C105 Tier 3; C089 superseded by C2082: at glyph level k carries no routing), the 17 forbidden transitions and 5 hazard classes (taxonomy imposed, C2060; class level demoted, C783; zeros reduce to composition, C2081), the 54.7% e-recovery figure (withdrawn recovery layer), REGIME as 4 crisp classes (retired, C1712) and C476 (retracted). The "100% alignment", DISTILLATION_WINS and "maximally tested" verdicts are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 (Speculative)
 **Status:** SUPPORTED (100% alignment)
 **Source:** ECR-4 probe (2026-01-12)
@@ -23,6 +25,8 @@ The Voynich control architecture exhibits **behavioral isomorphism** with therma
 
 ### 1. Hazard-Kernel Alignment
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (kernel superseded by C2082; forbidden transitions reduce to composition, C2081)
+
 All 17 forbidden transitions are **k-adjacent** (energy control boundary).
 
 | Kernel | Hazard Clustering | Interpretation |
@@ -34,6 +38,8 @@ All 17 forbidden transitions are **k-adjacent** (energy control boundary).
 **Process meaning:** In distillation, energy changes (heat) drive phase changes. Hazards cluster where energy is controlled because that's where phase failures originate.
 
 ### 2. Recovery Path Dominance
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (recovery architecture is a frequency shadow, C458; the 54.7% figure rests on the withdrawn hazard/recovery layer, C105)
 
 54.7% of recovery paths pass through **e** (equilibration/cooling).
 
@@ -76,6 +82,8 @@ The 4 operational regimes show distinct and ordered CEI (Control Engagement Inte
 *Tier-3 commentary: In reflux distillation, k = heat source, h = cucurbit/helm, e = condenser.*
 
 ### Hazard → Failure Mode
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (the 5 hazard classes were imposed by keyword matching, C2060)
 
 | Hazard Class | % | Process-Behavior Mapping |
 |--------------|---|--------------------------|
@@ -163,11 +171,11 @@ The 4 operational regimes show distinct and ordered CEI (Control Engagement Inte
 
 | Finding | Constraint | Connection |
 |---------|-----------|------------|
-| Coverage optimality | C476 | Methodical training = systematic process learning |
+| Coverage optimality | C476 (retracted: broken baseline) | Methodical training = systematic process learning |
 | HT as vigilance | C477 | Attention peaks at discrimination complexity |
 | Temporal scheduling | C478 | Pedagogical pacing = expert training structure |
-| Hazard topology | C109 | Matches distillation failure modes |
-| Kernel grammar | C103-C105 | k/h/e triangle maps to thermal control |
+| Hazard topology | C109 (scoped; hazard classes withdrawn, C2060) | Matches distillation failure modes |
+| Kernel grammar | C103-C105 (demoted to Tier 3; C089 superseded by C2082) | k/h/e triangle maps to thermal control |
 
 ---
 
@@ -177,7 +185,7 @@ The Voynich control architecture exhibits **strong behavioral isomorphism** with
 
 > The abstract control structure discovered through grammar analysis is **consistent with** and **discriminates toward** thermal-chemical process control over alternatives.
 
-This remains Tier 3 because we do not claim entity-level identification. However, the structural alignment is now **maximally tested** within our constraints.
+This remains Tier 3 because we do not claim entity-level identification. However, the structural alignment is now **maximally tested** within our constraints. [v7.25: retired closure language; the tested supports are withdrawn — see banner]
 
 ---
 

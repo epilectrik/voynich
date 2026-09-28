@@ -38,7 +38,9 @@ These fits demonstrate the explanatory power of the frozen constraint system by 
 **Tier:** F2 (External Alignment)
 **Scope:** A
 **Result:** SUCCESS (upgraded 2026-01-19)
-**Supports:** C475, C476
+**Supports:** C475, C476 [status v7.25: C475 demoted to Tier 3 (sparsity denominator); C476 retracted (broken baseline, dead)]
+
+> **STATUS (v7.25, 2026-09-28) — rests on demoted and dead constraints.** C475 (MIDDLE incompatibility) is Tier 3: its "illegal pair" percentage measured sparsity, not prohibition. C476 (coverage optimality / hub savings) is retracted — its baseline was broken. The 2026-01-19 upgrade also counts "86.8% grammar compliance" against "Voynich hazard rules"; the hazard layer is withdrawn (C783 demoted, C2060, C2081), and "all 4 REGIMEs populated" treats REGIME as crisp classes (retired, C1712, C2070). The blind prefix-profile predictions (6/8 after the H-only audit) remain an observation. See `SYSTEM/STATUS_BRIEF.md` §3.
 
 ### Method
 Pre-registered predictions for 3 Brunschwig recipes, locked before execution:
@@ -80,7 +82,9 @@ Upgraded from PARTIAL to SUCCESS based on comprehensive 197-recipe analysis.
 **Tier:** F3 (Structural Characterization)
 **Scope:** B
 **Result:** SUCCESS
-**Supports:** C179-C185, C458
+**Supports:** C179-C185, C458 [status v7.25: REGIME = fire degree retired (C1712, C2070); C458 demoted to Tier 3 (frequency shadow)]
+
+> **STATUS (v7.25, 2026-09-28) — rests on a retired construct.** This fit maps Brunschwig fire degrees onto REGIMEs; "REGIME = Brunschwig fire degree" and "REGIME as 4 crisp classes" are retired (STATUS_BRIEF §3; C1712: REGIME is a soft gradient whose main split is Bio vs non-Bio section; C2070). C458 is demoted to Tier 3 (the clamp/free CV asymmetry is a frequency shadow). Kept for traceability.
 
 ### Method
 Tested whether Brunschwig degree profiles can fit REGIME constraints:
@@ -105,7 +109,9 @@ All 3 questions CONFIRMED. Violations are asymmetric (not nested structure).
 **Tier:** F2 (Negative Knowledge)
 **Scope:** A
 **Result:** NEGATIVE
-**Supports:** C475, C476
+**Supports:** C475, C476 [status v7.25: C475 demoted to Tier 3 (sparsity denominator); C476 retracted (broken baseline, dead)]
+
+> **Status note (v7.25):** the linked constraints are no longer live — C475 is Tier 3 and C476 is retracted. The generator-rejection metrics (uniqueness, hub/tail ratio, clusters) are this fit's own measurements; the "hub/tail" framing descends from the retracted hub-savings claim (C476).
 
 ### Method
 Synthetic property-based registry with:
@@ -141,7 +147,9 @@ Property model FAILS to reproduce Voynich structure:
 **Tier:** F2 (Robustness Characterization)
 **Scope:** A
 **Result:** SUCCESS
-**Supports:** C481
+**Supports:** C481 [status: C481 retracted 2026-05-19 (Tier 1 — value does not reproduce, direction wrong); this fit's only support is retracted]
+
+> **STATUS (v7.25, 2026-09-28) — sole support retracted.** C481 (survivor-set uniqueness, "0 collisions") was retracted on 2026-05-19: the project's own follow-up code reports 376 collisions (24%), the observed direction is clustering rather than uniqueness, and "0 collisions" was expected under a random null. This fit has no remaining registered support. Its perturbation results are unaffected as observations, but its tier and SUCCESS result were not re-reviewed after the retraction (flagged to the maintainer, not changed here).
 
 ### Method
 Perturbation tests on WATER_GENTLE clusters:
@@ -169,7 +177,9 @@ Clusters robust to artifact-indicating perturbations:
 **Tier:** F2 (Characterization)
 **Scope:** A
 **Result:** SUCCESS (confirmed with clean data 2026-01-16)
-**Supports:** C383, C475
+**Supports:** C383, C475 [status v7.25: C475 demoted to Tier 3 (sparsity denominator)]
+
+> **Status note (v7.25):** C475 is Tier 3 and C476 (named in the Status section below) is retracted. The three-layer type-sharing hierarchy is this fit's own measurement and does not depend on C475's percentage. C383 stands.
 
 ### Method
 Cross-type MIDDLE analysis measuring sharing patterns.
@@ -283,8 +293,10 @@ This is consistent with:
 **Tier:** F2 (Structural Characterization)
 **Scope:** B
 **Result:** SUCCESS
-**Supports:** C458, C477
+**Supports:** C458, C477 [status v7.25: C458 demoted to Tier 3 (frequency shadow); SLI is built from hazard and LINK densities, both withdrawn constructs (C2081, C1174)]
 **Added:** 2026-01-19 (SENSORY_LOAD_ENCODING + BRUNSCHWIG_REVERSE_ACTIVATION)
+
+> **STATUS (v7.25, 2026-09-28) — rests on withdrawn constructs.** SLI = hazard_density / (escape_density + link_density). The hazard layer is withdrawn (C783 demoted, C2060, C2081) and LINK is a morphological artifact of "ol" (C1174; true density 13.2%, C609), so SLI is a ratio of withdrawn quantities. C458, which this fit claims to "strengthen", is demoted to Tier 3: its clamp/free CV asymmetry collapses under frequency-matched nulls. The SLI–HT correlation (r = −0.453) is an observation about a constructed metric; the constraint-substitution reading does not stand on registered support. C477 stands.
 
 ### Method
 Computed Sensory Load Index (SLI) for 83 B folios:
@@ -339,6 +351,8 @@ When operations are forgiving (low SLI):
 **Supports:** C443 (Positional Escape Gradient)
 **Added:** 2026-01-19 (BRUNSCHWIG_REVERSE_ACTIVATION)
 
+> **Status note (v7.25):** the zone meanings used to compute recipe affinities (R = sequential progression, S = boundary) come from the R-series ordering and S/R division retracted as transcription artifacts (C434, C435; PHASE_742), and SLI is built from withdrawn hazard/LINK densities (see F-BRU-007). REGIME is treated as crisp classes (retired, C1712, C2070). The affinities are computed from recipes, not measured in the manuscript (as the Status section says).
+
 ### Method
 Computed zone affinity (C/P/R/S) for 197 Brunschwig recipes based on:
 - Intervention rate → P-affinity
@@ -385,9 +399,11 @@ Tested whether SLI clusters differentiate on zone affinity using ANOVA.
 **Tier:** F3 (External Alignment)
 **Scope:** B
 **Result:** CONFIRMED (with REGIME heterogeneity)
-**Supports:** C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp)
+**Supports:** C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp) [status v7.25: C458 demoted to Tier 3 (frequency shadow); REGIME as crisp classes retired (C1712, C2070)]
 **Added:** 2026-01-19 (BRUNSCHWIG_REVERSE_ACTIVATION)
 **Updated:** 2026-01-19 (ZONE_MODALITY_VALIDATION - two-stage model)
+
+> **Status note (v7.25, 2026-09-28):** C458 is demoted to Tier 3. The REGIME stratification treats REGIME as 4 crisp classes with fire-degree labels (GENTLE, PRECISION…), which is retired (C1712, C2070). The "S-zone = locked / monitoring completed" reinterpretation rests on the S/R division retracted with C435 (PHASE_742), and zone affinities are computed from recipes (see F-BRU-008). The modality effect sizes are observations on recipe-derived affinities.
 
 ### Method
 Rigorous validation of zone-modality associations with:
@@ -490,6 +506,8 @@ B->A Reverse Prediction Test attempted to predict modality class from zone profi
 None of these fits justify new Tier 0-2 constraints. This is the **best possible outcome**: the frozen architecture predicted these results without requiring changes.
 
 > The model is saturated, not brittle.
+
+[Status v7.25: "saturated" is retired closure language (strategic review §5). Several of these fits rest on constraints since demoted or retracted (C458, C475, C476, C481) and on REGIME = fire degree (retired); see the per-fit status notes.]
 
 ---
 
@@ -696,6 +714,8 @@ MIDDLEs in Currier B form three functional tiers based on folio coverage and pos
 | ck | ch- | 62% + hy (99%) | Precision monitoring |
 
 Core MIDDLEs are grammatically constrained to specific PREFIX+SUFFIX combinations, forming formulaic units like `qokeedy`, `daiin`, `chckhy`.
+
+[Status v7.25: the "Kernel operation" role label reflects the kernel reading, which is superseded (C089 → C2082: at glyph level k shows no routing beyond its controls). The prefix-locking percentages are measurements.]
 
 ### Finding: Three-Tier Positional Structure in QO-*-EDY Tokens
 
@@ -1120,8 +1140,10 @@ Analysis scripts (scratchpad):
 **Tier:** F2 (Structural Characterization)
 **Scope:** B
 **Result:** CONFIRMED
-**Supports:** F-BRU-011 (Three-Tier Structure), BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS
+**Supports:** F-BRU-011 (Three-Tier Structure), BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS [status v7.25: phase label only; the closed-loop reading is Tier 3 (C171, all four legs withdrawn)]
 **Added:** 2026-02-05 (REVERSE_BRUNSCHWIG_V3)
+
+> **Status note (v7.25):** "BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS" names a phase, not a constraint. Closed-loop control is a Tier 3 working interpretation (C171). The "kernel rates" among the original features rest on the superseded kernel reading (C089 → C2082); the PCA dimension counts are measurements.
 
 ### Hypothesis
 
@@ -1180,8 +1202,10 @@ The three-tier procedural structure captures variance not explained by aggregate
 **Tier:** F2 (Structural Characterization)
 **Scope:** B
 **Result:** CONFIRMED
-**Supports:** C494 (REGIME_4 Precision Axis), F-BRU-015 (Procedural Independence)
+**Supports:** C494 (REGIME_4 Precision Axis), F-BRU-015 (Procedural Independence) [status v7.25: REGIME as 4 crisp classes retired (C1712, C2070)]
 **Added:** 2026-02-05 (REVERSE_BRUNSCHWIG_V3)
+
+> **Status note (v7.25, 2026-09-28):** the Kruskal-Wallis tests treat REGIME as 4 crisp classes; REGIME is a soft gradient whose main split is Bio vs non-Bio section (C1712), and C2070 counts a REGIME effect only if it survives within section and is off the REGIME-defining axes (qo/k/e/headless/suffix/MIDDLE-length). Features such as qo_chsh_early_ratio and ke/kch lie on those axes, so these differences are calibration rather than discovery until re-tested. C494 is live.
 
 ### Hypothesis
 
@@ -1238,8 +1262,10 @@ REGIMEs encode different procedural balances:
 **Tier:** F3 (Semantic Interpretation)
 **Scope:** B
 **Result:** SUPPORTED
-**Supports:** C494 (REGIME_4 Precision Axis), F-BRU-013 (ke vs kch)
+**Supports:** C494 (REGIME_4 Precision Axis), F-BRU-013 (ke vs kch) [status v7.25: REGIME_4 = fire degree 4 rests on REGIME = fire degree, retired (C1712, C2070)]
 **Added:** 2026-02-05 (REVERSE_BRUNSCHWIG_V3)
+
+> **Status note (v7.25):** the "fire degree 4" alignment rests on REGIME = Brunschwig fire degree, which is retired (STATUS_BRIEF §3). ke = "heat + equilibration" uses the kernel glosses (C103–C105, Tier 3; kernel superseded, C089 → C2082). The REGIME_4 ke/kch ratio difference is on a REGIME-defining axis (C2070).
 
 ### Hypothesis
 
@@ -1278,8 +1304,10 @@ The "precision" in REGIME_4 is about **not overshooting** - gentle sustained hea
 **Tier:** F4 (External Semantic Anchoring)
 **Scope:** A
 **Result:** CONFIRMED
-**Supports:** C883 (Handling Distribution Alignment), F-BRU-012 (Preparation Mapping)
+**Supports:** C883 (Handling Distribution Alignment), F-BRU-012 (Preparation Mapping) [status: C883 is Tier 3 (registered as speculative, not demoted)]
 **Added:** 2026-02-05 (REVERSE_BRUNSCHWIG_V3)
+
+> **Status note (v7.25):** C883 is a Tier 3 row; F-BRU-012's POUND/CHOP verbs were replaced by atom glosses (C1396), so "tch = POUND, pch = CHOP" in the method below is superseded wording. The root-overlap correlation is this fit's own measurement.
 
 ### Hypothesis
 
@@ -1357,8 +1385,10 @@ This provides **external semantic anchoring** without violating the semantic cei
 **Tier:** F3 (Semantic Interpretation)
 **Scope:** A
 **Result:** SUPPORTED
-**Supports:** F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence)
+**Supports:** F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence) [status: C884 is Tier 3 (registered as speculative, not demoted)]
 **Added:** 2026-02-05 (REVERSE_BRUNSCHWIG_V3)
+
+> **Status note (v7.25):** C884 is a Tier 3 row. "Animals → REGIME_4" treats REGIME as crisp classes with fire-degree meaning, which is retired (C1712, C2070).
 
 ### Hypothesis
 
@@ -1422,8 +1452,10 @@ From this point forward, treat as single category:
 **Tier:** F4 (External Semantic Anchoring)
 **Scope:** B
 **Result:** CONFIRMED
-**Supports:** F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis)
+**Supports:** F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis) [status v7.25: REGIME as crisp classes and REGIME = fire degree / product type retired (C1712, C2070)]
 **Added:** 2026-02-05 (REVERSE_BRUNSCHWIG_V3)
+
+> **Status note (v7.25, 2026-09-28):** the method collapses REGIMEs into product classes (REGIME_1/2 → WATER, REGIME_3 → OIL, REGIME_4 → PRECISION), which rests on REGIME as crisp classes with fire-degree meaning — retired (STATUS_BRIEF §3; C1712, C2070). The suffix and MIDDLE enrichments between folio groups are observations; the "oil/water output" reading does not stand on registered support.
 
 ### Hypothesis
 
@@ -1518,6 +1550,8 @@ Line-final position: "completion" of oil procedure differs from water
 **Supports:** C976 (6-State Topology), C978 (Hub-and-Spoke), C979 (REGIME Modulates Weights), C980 (Free Variation Envelope)
 **Added:** 2026-02-11 (CONTROLLED_VARIABLE_ANALYSIS)
 
+> **Status note (v7.25, 2026-09-28):** the supports are live, but the scoring leans on retired readings: "Higher REGIME = hotter fire" and "the grammar tracks fire degree" rest on REGIME = fire degree (retired, C1712, C2070); the "dominant steady-state (68%)" is the AXM self-transition rate, which C978's PHASE_736 scope correction attributes to composition/mass (a 68%-mass block self-transitions ~68% by construction). The candidate scores were assigned against criteria written in the project's own vocabulary; the fit is framework-dependent, as its Status says.
+
 ### Hypothesis
 
 The controlled variable tracked by the 6-state automaton grammar is **temperature / thermal state** — the fire degree and heating/cooling condition of the apparatus. Five distillation-context candidates were tested against the structural signature.
@@ -1595,8 +1629,10 @@ All 14 structural signature properties consistent with thermal state tracking
 **Tier:** F3 (Brunschwig Cross-System Triangulation)
 **Scope:** B
 **Result:** NEGATIVE
-**Supports:** C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing)
+**Supports:** C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing) [status: C883 is Tier 3 (registered as speculative, not demoted)]
 **Added:** 2026-02-12 (RECIPE_TRIANGULATION_V2)
+
+> **Status note (v7.25):** C883 is a Tier 3 row, and the T4 "fire-degree concordance" presupposes REGIME = fire degree (retired, C1712, C2070). The negative verdict is unaffected.
 
 ### Hypothesis
 
@@ -1679,8 +1715,10 @@ This is a clean negative that strengthens the model boundary. The A→B connecti
 **Tier:** F4 (Tier 4 Speculative External Anchor)
 **Scope:** B
 **Result:** THERMODYNAMIC_COHERENCE
-**Supports:** C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers)
+**Supports:** C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers) [status v7.25: C783 demoted to Tier 3; C109's 5 classes imposed by keyword-matching (C2060); zero bigrams reduce (C2081) — hazard layer withdrawn]
 **Added:** 2026-02-12 (FORBIDDEN_TRANSITION_THERMODYNAMICS)
+
+> **[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** Every support is part of the withdrawn hazard layer. C783 (all 17 pairs directional) is demoted to Tier 3: the class-level projection shows no suppression. The 5 failure classes were not found by "topological clustering": C2060 shows they were imposed by hardcoded distillation-failure keyword lists, so the non-circularity argument below fails — T4's "perfect concordance" matches glosses against classes that were themselves defined by distillation vocabulary. The token-level zeros reduce to line composition, zones and boundary coupling (C2081, supersedes C957), and C2063 counts 13 violations in the real corpus. The Status line's "Tier: F2 … structural inputs (Tier 0)" conflicts with the header tier (F4) and with the inputs' current tiers. Kept for traceability.
 
 ### Hypothesis
 
@@ -1820,6 +1858,8 @@ Five independent derivation paths: PP/RI classification from A/B presence, behav
 **Supports:** (negative — forbidden transitions too few for category-level adversarial test; distributional context weakly aligns)
 **Added:** 2026-02-12 (GLOSS_STRUCTURAL_VALIDATION)
 
+> **Status note (v7.25):** the forbidden pairs used here belong to the withdrawn hazard layer (C783 demoted, C2060, C2081), and the 8 gloss categories are keyword-imposed (C2069). The negative verdict is unaffected.
+
 ### Hypothesis
 
 The 90 core MIDDLE glosses are structurally constrained: (A) randomly permuting gloss assignments should produce less coherent forbidden transition interpretations, and (B) MIDDLEs sharing a gloss category should cluster together in bigram context space.
@@ -1871,8 +1911,10 @@ Forbidden pair entities resolved to extracted MIDDLEs via Morphology (e.g. "shey
 **Tier:** F4 (Adversarial Validation)
 **Scope:** B
 **Result:** DOMAIN_VALIDATED_MANTEL_CIRCULAR
-**Supports:** C911 (PREFIX-MIDDLE Selectivity), C601 (QO Hazard Exclusion), C997 (Safety Buffers), C995 (Affordance Bins)
+**Supports:** C911 (PREFIX-MIDDLE Selectivity), C601 (QO Hazard Exclusion), C997 (Safety Buffers) [status v7.25: C601/C997 hazard readings rest on the withdrawn hazard layer (C783 demoted, C2060, C2081)], C995 (Affordance Bins)
 **Added:** 2026-02-13 (GLOSS_ADVERSARIAL_VALIDATION)
+
+> **Status note (v7.25, 2026-09-28):** three of T1's five scores (S3 forbidden-pair source fraction, S4 buffer prefix fraction, S5 zero-hazard) come from the hazard layer, which is withdrawn (C783 demoted, C2060, C2081); C601 and C997 remain scoped Tier 2 zero-pattern counts. The k/e prefix enrichments (S1, S2; cf. C1313) stand. The gloss categories are keyword-imposed (C2069). "Domain validation is definitive" and "final glossing phase" should not be relied on.
 
 ### Hypothesis
 
@@ -1975,8 +2017,10 @@ Five independent derivation paths:
 **Tier:** F3 (Compelling)
 **Scope:** B
 **Result:** VARIANCE_ARCHITECTURE_ALIGNED
-**Supports:** C458 (design asymmetry: hazard clamped, recovery free), C980 (66.3% free variation envelope)
+**Supports:** C458 (design asymmetry: hazard clamped, recovery free) [status v7.25: C458 demoted to Tier 3 — frequency shadow], C980 (66.3% free variation envelope)
 **Phase:** BRUNSCHWIG_VARIANCE_ARCHITECTURE (Phase 361)
+
+> **STATUS (v7.25, 2026-09-28) — the Voynich side is demoted.** The Brunschwig side of this comparison is measured, but its Voynich counterpart is C458's clamped/free asymmetry, demoted to Tier 3: the raw CV gap (0.720) collapses to 0.089 under frequency-matched nulls, and the clamped dimensions were densities while the free ones were raw counts. P4 and the CV comparison (0.664/0.723 vs "recovery CV 0.72–0.82") compare against that demoted asymmetry. "hazard_profile" and "regime" as recipe parameters rest on withdrawn constructs (hazard layer; REGIME = fire degree). C980 stands.
 
 ### Hypothesis
 
@@ -2037,8 +2081,10 @@ Compute **normalized entropy** H/H_max (range 0-1) for each recipe parameter acr
 **Tier:** F3 (Compelling)
 **Scope:** B
 **Result:** GRADIENT_INVERTED
-**Supports:** C458 (design asymmetry), C980 (free variation envelope), C1035 (irreducible residual), C494 (REGIME_4 precision axis)
+**Supports:** C458 (design asymmetry) [status v7.25: demoted to Tier 3 — frequency shadow], C980 (free variation envelope), C1035 (irreducible residual), C494 (REGIME_4 precision axis)
 **Phase:** BRUNSCHWIG_OUTPUT_MAPPING (Phase 362)
+
+> **Status note (v7.25, 2026-09-28):** C458 is demoted to Tier 3, so the "shared variance architecture" that this fit builds on (F-BRU-027) lacks its Voynich leg. The cross-REGIME gradients use the 4 REGIMEs as crisp classes and pair Brunschwig fire-degree classes with Voynich REGIMEs, which is retired (C1712, C2070). NULL-1 uses hazard_density (withdrawn layer). The Status and Key Findings sections below repeat F-BRU-027's verdict rather than this fit's (GRADIENT_INVERTED).
 
 ### Hypothesis
 
@@ -2124,8 +2170,10 @@ GRADIENT_INVERTED — Output parameters follow opposite REGIME gradients in the 
 **Tier:** F4 (Exploratory)
 **Scope:** B
 **Result:** PARTIAL_EXTENSION
-**Supports:** C997 (safety buffer architecture), F-BRU-023 (thermodynamic coherence), C494 (REGIME_4 precision axis)
+**Supports:** C997 (safety buffer architecture), F-BRU-023 (thermodynamic coherence), C494 (REGIME_4 precision axis) [status v7.25: C997 and F-BRU-023 rest on the withdrawn hazard layer (C783 demoted, C2060, C2081)]
 **Phase:** BRUNSCHWIG_SEMANTIC_BOUNDARY (Phase 363)
+
+> **Status note (v7.25, 2026-09-28):** Path A ("the keeper finding") is buffer × hazard-class specificity; the hazard classes were imposed by keyword-matching (C2060), the class level is demoted (C783), the zero bigrams reduce (C2081), and F-BRU-023 is withdrawn — so Path A does not stand on registered support. Path B pairs Brunschwig degrees with REGIMEs (REGIME = fire degree retired, C1712, C2070). Path C's MIDPROCESS finding carries on in F-BRU-030/031 (C1056, live).
 
 ### Hypothesis
 
@@ -2281,8 +2329,10 @@ MODERN_CLOSER_TO_VOYNICH — Modern distillation is 2.3× closer to Voynich in e
 **Tier:** F2 (Structural Grammar Test)
 **Scope:** B
 **Result:** PARAMETRIC_DIFFERENTIATION
-**Supports:** C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning)
+**Supports:** C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning) [status v7.25: C1225 rescoped — segmentation artifact of the pre-C1957 parser; "e-depth is a parametric axis" struck (PHASE_758)]
 **Phase:** KE_THERMAL_CYCLING_VALIDATION (Phase 437)
+
+> **STATUS (v7.25, 2026-09-28) — H1 rests on a parser artifact.** C1225 was rescoped under PHASE_758's locked rules: its single-e / multi-e table reproduces only under the pre-C1957 parser, which moved extra e's into the suffix "-edy" (68% of its "single-e" tokens have an e-run ≥ 2 after k); under the current parser the table does not reproduce. "E-depth is a parametric axis" is struck. What stays (Tier 2, glyph level) is a generic script-wide fact: longer e-runs are followed more often by y and less often by d. C1226 (ke/ek ratio by REGIME and section) stands as a measurement, but REGIME contrasts on k/e features are calibration (C2070), and the fire-degree alignment below rests on REGIME = fire degree (retired, C1712, C2070).
 
 ### Hypothesis
 

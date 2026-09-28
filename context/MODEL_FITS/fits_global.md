@@ -10,7 +10,9 @@
 
 ### F-ECR-001 - Material-Class Identification
 
-**Tier:** F3 | **Result:** SUCCESS | **Supports:** C109-C114, C232
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C109-C114, C232 [status v7.25: C109's 5 hazard classes were imposed by keyword-matching (C2060), class level demoted (C783), zeros reduce (C2081); C113, C114 never registered]
+
+> **[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** The hazard evidence this fit uses (PHASE_ORDERING 41% + COMPOSITION_JUMP 24% = 65%) is the 5-class hazard taxonomy, which was imposed by keyword-matching, not discovered (C2060); the class level is demoted (C783) and the token-level zeros reduce to line composition, zones and boundary coupling (C2081, supersedes C957). The cited range C109–C114 contains two numbers that were never registered (C113, C114); C110–C112 are live but scoped. The 2x2 material-class structure therefore has no standing hazard axis. C232 stands. Kept for traceability.
 
 #### Question
 Can behavioral material classes be inferred from frozen constraints without naming specific substances?
@@ -53,7 +55,9 @@ See [ecr_stress_tests.md](ecr_stress_tests.md) for detailed stress test results.
 
 ### F-ECR-002 - Apparatus-Role Identification
 
-**Tier:** F3 | **Result:** SUCCESS | **Supports:** C085-C108, C171, C216
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C085-C108, C171, C216 [status v7.25: kernel superseded (C089 → C2082; C085, C103–C105 demoted to Tier 3); closed-loop C171 and hazard model C216 demoted to Tier 3; most of C086–C108 never registered]
+
+> **[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** Every input to this fit is withdrawn or demoted. Kernel: C089 is superseded by C2082 (at glyph level k shows no routing beyond its controls; the e/bench signal is word-ending routing, not a kernel role), and C085 and C103–C105 are Tier 3 (C085 is an EVA letter inventory: c and h are halves of the bench glyph). Closed loop: C171 is Tier 3, all four legs withdrawn (LINK monitoring, kernel intervention, hazard avoidance, convergence). Hybrid hazard model: C216 is Tier 3 (computed over the imposed 5-class taxonomy, C2060). LINK: the 38% figure is not reproducible (13.2%, C609) and LINK is a morphological artifact of "ol" (C1174). Of the cited range C085–C108, only C085, C089 (superseded), C090, C103–C105, C107 were ever registered; C086–C088, C091–C102, C106 and C108 are unregistered range interior. No registered support remains for the apparatus roles. Kept for traceability.
 
 #### Question
 Can functional apparatus roles be inferred from kernel structure and operational constraints without naming specific devices?
@@ -98,6 +102,8 @@ Does NOT establish:
 ### F-ECR-003 - Decision-State Semantics
 
 **Tier:** F3 | **Result:** SUCCESS | **Supports:** C384, C404-C405, C459-C460
+
+> **Status note (v7.25, 2026-09-28):** the cited supports are live, but the archetype sources are largely withdrawn: D1–D5 come from C109's 5 hazard classes (imposed by keyword-matching, C2060; class level demoted, C783; zeros reduce, C2081); D6 uses LINK at 38% (not reproducible — true density 13.2%, C609; LINK is a morphological artifact, C1174); D7 uses the e "recovery" operator (kernel superseded, C089 → C2082; C105 Tier 3); D12 treats REGIME as crisp classes (soft gradient, C1712, C2070). D8–D11 rest on live constraints (C182, C384, C404–C405, C459–C460). See `SYSTEM/STATUS_BRIEF.md` §3.
 
 #### Question
 Can decision archetypes be identified that explain why each system layer (A/B/AZC/HT) exists?

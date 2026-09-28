@@ -1,8 +1,10 @@
 # Component-to-Class Mapping: Synthesis
 
+**Status (v7.25, 2026-09-28):** The PREFIX → material-class leg uses ECR-1's classes M-A…M-D, inferred from the withdrawn hazard classes (taxonomy imposed, C2060; class level demoted, C783; zeros reduce to composition, C2081), and was revised on 2026-01-11 to control-flow participation (apparatus_centric_semantics.md); the SUFFIX archetypes are provisional (ccm_suffix_mapping.md). "Complete" and "as far as internal analysis permits" are retired closure language — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** COMPLETE | **Date:** 2026-01-10
 
-> **Achievement:** Complete class-level semantic decomposition of Currier A/B tokens.
+> **Achievement:** Complete class-level semantic decomposition of Currier A/B tokens. [v7.25: historical — see status banner]
 
 ---
 
@@ -162,7 +164,7 @@ We cannot say what specific substance, device, or procedure any token refers to.
 | "Sister pairs are equivalent" | "Sister choice encodes operational mode" |
 | "MIDDLEs are primary discriminators" | "MIDDLEs encode class-specific variants" |
 
-We've pushed the semantic ceiling as far as internal analysis permits.
+We've pushed the semantic ceiling as far as internal analysis permits. [v7.25: retired closure language — see status banner]
 
 ---
 

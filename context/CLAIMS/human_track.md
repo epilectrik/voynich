@@ -49,7 +49,7 @@ Original "99.6% LINK-proximal" claim superseded by C342.
 HT density varies by waiting profile: EXTREME 15.9% > HIGH 10.4% > MODERATE 8.5% > LOW 5.7%. Kruskal-Wallis p < 0.0001.
 **Source:** HTD
 
-### C342 - HT-LINK Decoupling
+### C342 - **[Scope 2026-09-28 (v7.26): HT density vs the density of 'ol' tokens (LINK is a morphological label, C609, C1174); the null correlation stands; the 'waiting profile' readings are withdrawn.]** HT-LINK Decoupling
 **Tier:** 2 | **Status:** CLOSED
 HT density independent of LINK density at folio level (ρ=0.010, p=0.93). "More LINK = more random mark-making" is FALSIFIED.
 **Source:** HTD

@@ -1,9 +1,18 @@
-# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
-# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
-# listed below is SUSPENDED until the contract is regenerated from live constraint status.
-#   DEMOTED to Tier 3: C475, C836, C837, C883, C884, C1014
-#   DEAD (retracted / superseded): C476
-# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
+# REGISTRY STATUS NOTE (aligned to STATUS_BRIEF v7.25 on 2026-09-28; first note 2026-09-27)
+# This contract predates the 2026-05/06 audits and the 2026-09 strategic review. On 2026-09-28 it was
+# aligned to context/SYSTEM/STATUS_BRIEF.md (v7.25): every passage resting on a non-live constraint is
+# marked in place; the text is kept as history. No claim was added or upgraded.
+#   WITHDRAWN = rests on a retracted/dead constraint, or on a construct listed in STATUS_BRIEF §3.
+#   SUSPENDED = rests on a constraint demoted to Tier 3 (historical until re-derived from live evidence).
+#   DEMOTED to Tier 3: C475 (the percentage measured sparsity, not prohibition — STATUS_BRIEF §3),
+#     C836, C837 (demoted in the generated table, which lists Tier 3; INDEX tier cell reads 2/3),
+#     C1014 (demoted by PHASE_748: construction tautology)
+#   Tier 3 since registration (speculative, cited only in a provenance list): C883, C884 — historical
+#   DEAD (retracted): C476 (broken baseline). Retracted 2026-05-19 and held at Tier 1: C481.
+#   Tier 1, invalidated with C250 (transcriber artifact): C251, C252, C253, C255 — history only.
+# The `guarantees:` block cites only live (Tier 0/2) constraints and is unchanged.
+# Authoritative status: context/CONSTRAINT_TABLE.txt; reasons: context/CLAIMS/INDEX.md and
+# context/CLAIMS/currier_a.md; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
 
 meta:
@@ -13,6 +22,7 @@ meta:
   date: "2026-03-14"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
+  registry_alignment: "2026-09-28 — aligned to context/SYSTEM/STATUS_BRIEF.md v7.25. Some cited constraints are now Tier 3, Tier 1 or dead; each such passage is marked WITHDRAWN or SUSPENDED in place (see header note)."
   governance: |
     CASC is NOT authoritative. Constraints are authoritative.
     CASC is a convenience layer for tooling and AI comprehension.
@@ -108,7 +118,7 @@ morphology:
     function: "Variant discriminator / compatibility carrier"
     essentiality: "Primary discriminator (402 unique distinctions)"
     entropy: "6.70 bits (65.6% of maximum)"
-    incompatibility_rate: "95.7% of pairs are illegal"  # C475
+    incompatibility_rate: "WITHDRAWN v7.24/7.25 as a prohibition rate — historical value '95.7% of pairs are illegal' (C475, demoted to Tier 3: the percentage measured sparsity, not prohibition; see STATUS_BRIEF §3)"
 
     # MIDDLE internal encoding structure (C1393, C1394, C1395)
     internal_encoding:
@@ -233,7 +243,7 @@ morphology:
             articulator_x_record_scope: { expected: 8.9, observed: 9, ratio: "1.01x" }
           provenance: "C513-NOTE-B"
 
-        # RI functional population structure (C831-C839)
+        # RI functional population structure (C831-C839) — C836, C837 in this range are Tier 3 in the generated table (demoted; split cell 2/3)
         ri_functional_structure:
 
           three_tier_population:  # C831
@@ -253,7 +263,7 @@ morphology:
             ri_line1_rate: "3.84x baseline"
             provenance: "C833"
 
-          linker_mechanism:  # C835-C838
+          linker_mechanism:  # C835-C838 — C836/C837 demoted (table Tier 3); only ct_prefix_signature rests on them
             linkers: ["cthody", "ctho", "ctheody", "qokoiiin"]
             link_count: 12
             direction_bias: "66.7% forward"
@@ -262,9 +272,9 @@ morphology:
             hub_structure:
               f93v: "5 incoming links (major collector)"
               f32r: "4 incoming links"
-            ct_prefix_signature: "3/4 linkers have ct- prefix"  # C836
+            ct_prefix_signature: "3/4 linkers have ct- prefix"  # C836 — SUSPENDED: listed Tier 3 in the generated table (INDEX tier cell 2/3: observation 2, "may mark linkable outputs" 3); treated as demoted until the registry resolves the cell
             qo_exception: "qokoiiin is only non-ct linker"  # C838
-            provenance: "C835, C836, C837, C838"
+            provenance: "C835, C836, C837, C838"  # C836/C837 demoted (table Tier 3)
 
           input_output_asymmetry:  # C839
             input_markers: 12
@@ -288,9 +298,9 @@ morphology:
             interpretation: "Extensions are operationally coupled, not arbitrary identity markers"
             provenance: "C1262"
 
-          provenance: "C831, C832, C833, C835, C836, C837, C838, C839, C1262"
+          provenance: "C831, C832, C833, C835, C836, C837, C838, C839, C1262"  # C836/C837 demoted (table Tier 3)
 
-      provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528, C831-C839"
+      provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528, C831-C839"  # C836/C837 in range demoted (table Tier 3)
       revision_date: "2026-01-29"
 
     # Operational category organization (C1261, C1265)
@@ -385,7 +395,7 @@ morphology:
 
       provenance: "C267.a, C510, C511, C512, C512.a, C513"
 
-    provenance: "C293, C423, C475, C498, C510-C513"
+    provenance: "C293, C423, C475, C498, C510-C513"  # C475 demoted to Tier 3 (sparsity, not prohibition); only incompatibility_rate rested on it
 
   suffix:
     count: 25
@@ -537,7 +547,7 @@ paragraph_structure:
     combinatorial_grammar:
 
       cluster_selectivity:  # C1039
-        statement: "Paragraphs draw from fewer C475 compatibility clusters than random"
+        statement: "Paragraphs draw from fewer C475 compatibility clusters than random"  # C475 demoted to Tier 3 (sparsity); the C475 audit lists C1039 as independent of the 95.7% framing, and C1039 stays Tier 2
         observed_entropy: 1.502
         null_entropy: 1.780
         z_score: -2.830
@@ -560,8 +570,8 @@ paragraph_structure:
         null_density: 0.7071
         z_score: -3.567
         direction: "NEGATIVE (diversification)"
-        interpretation: "Paragraphs maximize coverage by grouping complementary entries"
-        extends: "C476 coverage optimality"
+        interpretation: "Paragraphs maximize coverage by grouping complementary entries"  # 'maximize coverage' leans on the C476 coverage-optimality framing (retracted); the C1041 measurement is diversification (z=-3.567)
+        extends: "C476 coverage optimality"  # WITHDRAWN link: C476 retracted 2026-05-19 (broken baseline, STATUS_BRIEF §3); C1041 itself stays Tier 2
         provenance: "C1041"
 
       category_specialization:  # C1263
@@ -634,9 +644,9 @@ participation:
     conditional_correspondence_permitted:
       - "multi-axis constraint composition"
       - "AZC legality routing"
-      - "survivor-set collapse (C481)"
+      - "survivor-set collapse (C481) [WITHDRAWN: C481 retracted 2026-05-19 — survivor sets are not unique (376 collisions in 1579 records); historical]"
       - "bridge MIDDLE topological selection (C1013)"
-      - "geometric viability alignment via bridge backbone (C1014)"
+      - "geometric viability alignment via bridge backbone (C1014) [SUSPENDED: C1014 demoted to Tier 3 — r=0.914 is a construction tautology; historical]"
       - "bridge conduit mediation — bridge MIDDLEs carry 3.8x more archetype-predictive information than non-bridges in B folio dynamical behavior (C1016)"
       - "dark pipeline identification channel — 300 PP MIDDLEs produce exclusively HT/UN tokens in B, built from bridge atoms (C1137, C1141)"
       - "multi-dimensional PP convergence at RECORD level"
@@ -678,7 +688,7 @@ participation:
 
       provenance: "C824, C825, C826"
 
-      viability_landscape:  # C1013, C1014
+      viability_landscape:  # C1013, C1014 — the 'viability' framing comes from C1014 (demoted to Tier 3); only geometric_alignment rests on it
         bridge_mechanism:
           bridge_count: 85  # out of 972 MIDDLEs
           selection_principle: "Topological generality (frequency AUC=0.978)"
@@ -687,12 +697,13 @@ participation:
           atom_substrate_role: "Bridge atoms are building blocks for dark-pipeline compounds (86% of atom types, 96.5% compound coverage) — MIDDLE-level disjointness coexists with atom-level derivation (C1141)"
           provenance: "C1013, C1139, C1141"
         geometric_alignment:
+          status: "SUSPENDED v7.25 — rests only on C1014, demoted to Tier 3 (PHASE_748: r=0.914 is a construction tautology — a record centroid averages its MIDDLE vectors, so shared MIDDLEs force centroid similarity; it also leaned on demoted C982); historical"
           manifold_viability_r: 0.914  # Mantel p=0.001
           hub_removed_stronger: true  # ratio=1.031
           size_independent: true  # retention=100.1%
           class_propagation_r: 0.622
           bridge_signal_share: "91% (r=0.905 vs non-bridge r=0.194)"
-          provenance: "C1014"
+          provenance: "C1014"  # demoted to Tier 3 (construction tautology)
         bridge_density_dynamics:
           mean_folio_bridge_density: 0.727  # 72.7% of manifold MIDDLEs per folio are bridges
           bridge_archetype_ari: 0.141  # bridge-only manifold features predict B dynamical archetypes
@@ -740,12 +751,12 @@ participation:
           provenance: "C1702"
 
         c475_operational_divergence:
-          statement: "C475-incompatible record pairs produce significantly more divergent B-side signatures"
+          statement: "C475-incompatible record pairs produce significantly more divergent B-side signatures"  # C475 demoted to Tier 3 (sparsity); C1705 stays Tier 2 but its partition uses the C475 graph and it is not in the C475 audit's downstream list — flagged to maintainer
           cohen_d: 0.816
           compatible_distance: 0.450
           incompatible_distance: 0.618
           interpretation: "Records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical"
-          provenance: "C1705"
+          provenance: "C1705"  # [v7.26 status: C1705 demoted to Tier 3 (built on the demoted C475 graph)]
 
         pp_content_predicts_b:
           statement: "PP MIDDLE content predicts B-side operational similarity at token level, overturning C753's class-level null"
@@ -764,7 +775,7 @@ participation:
           section_independence: "Within-section rho=0.381, between-section rho=0.390 — intrinsic to PP content"
           provenance: "C1709, C1711"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146, C1695, C1696, C1701, C1702, C1705, C1706, C1709, C1711"
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014 [demoted to Tier 3], C1016, C1135, C1136, C1139, C1140, C1141, C1146, C1695, C1696, C1701, C1702, C1705, C1706, C1709, C1711"
 
 # ============================================================
 positional:
@@ -847,8 +858,8 @@ disallowed:
     status: "UNSUBSTANTIATED"
 
   - interpretation: "A is generative or producible"
-    reason: "A is maintained, not produced"
-    status: "FALSIFIED"
+    reason: "A is maintained, not produced"  # WITHDRAWN reason: it came from C476 (retracted 2026-05-19, broken baseline)
+    status: "SUSPENDED (was FALSIFIED) — the stated reason rested on C476, retracted 2026-05-19 (broken baseline); historical. The narrower 'no generative grammar' reading is covered by the live NON_SEQUENTIAL guarantee (C225, C230, C231, C240)."
 
   - interpretation: "B mode A/B distinction organizes A records"
     reason: "Mode affinity shows no within-record clustering (p=0.204, d=0.85)"
@@ -905,7 +916,7 @@ provenance:
     - "C423"  # Vocabulary domains
     - "C466"  # PREFIX function
     - "C467"  # PREFIX function
-    - "C475"  # MIDDLE incompatibility
+    - "C475"  # MIDDLE incompatibility — demoted to Tier 3 (the percentage measured sparsity, not prohibition)
     - "C495"  # SUFFIX-REGIME association
     - "C498"  # Registry-internal vocabulary track
     - "C498.b"  # RI singletons
@@ -917,8 +928,8 @@ provenance:
     - "C832"  # INITIAL/FINAL positional separation
     - "C833"  # RI line-1 concentration
     - "C835"  # RI linker mechanism
-    - "C836"  # ct-prefix linker signature
-    - "C837"  # ct-ho linker signature
+    - "C836"  # ct-prefix linker signature — table Tier 3 (split cell 2/3), treated as demoted
+    - "C837"  # ct-ho linker signature — table Tier 3 (split cell 2/3), treated as demoted
     - "C838"  # qo linker exception
     - "C839"  # Input-output morphological asymmetry
     - "C887"  # WITHOUT-RI backward reference (1.23x asymmetry)
@@ -943,10 +954,10 @@ provenance:
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
-    - "C251"  # Intra-record only
-    - "C252"  # Bounded 2-6x
-    - "C253"  # Blocks unique
-    - "C255"  # Section exclusive
+    - "C251"  # Intra-record only — Tier 1, invalidated with C250 (transcriber artifact); historical
+    - "C252"  # Bounded 2-6x — Tier 1, invalidated with C250; historical
+    - "C253"  # Blocks unique — Tier 1, invalidated with C250; historical
+    - "C255"  # Section exclusive — Tier 1, invalidated with C250; historical
     - "C422"  # DA articulation
     - "C482"  # Batch semantics
     - "C483"  # Ordinal repetition
@@ -966,8 +977,8 @@ provenance:
     - "C854"  # A-B paragraph structural parallel
     - "C881"  # A record paragraph structure (RI first-line 3.84x)
     - "C882"  # PRECISION kernel signature
-    - "C883"  # Handling-type distribution alignment
-    - "C884"  # PRECISION-animal correspondence
+    - "C883"  # Handling-type distribution alignment — Tier 3 since registration (speculative Brunschwig match), not a Tier-2 support; historical
+    - "C884"  # PRECISION-animal correspondence — Tier 3 since registration (speculative), not a Tier-2 support; historical
     - "C1039"  # Paragraph cluster selectivity
     - "C1040"  # Folio-level paragraph compatibility coherence
     - "C1041"  # Paragraph complementary diversification
@@ -986,7 +997,7 @@ provenance:
     - "C885"  # A-B vocabulary correspondence (81% coverage)
     - "C899"  # A-B within-line positional correspondence
     - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
-    - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
+    - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated) — demoted to Tier 3 (construction tautology)
     - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
     - "C1018"  # Bridge PC1 partial redundancy with hub frequency; archetype discriminator anatomy
     - "C1020"  # 100% bridge degeneracy at B corpus level (all B MIDDLEs are bridges)
@@ -1001,7 +1012,7 @@ provenance:
     - "C1696"  # Frequency baseline 0.639 (73% of manifold clustering)
     - "C1701"  # Manifold residual = content (line-level specificity)
     - "C1702"  # Folio B-side coherence weak (ratio 1.086)
-    - "C1705"  # C475 operational divergence confirmed (d=0.816)
+    - "C1705"  # C475 operational divergence confirmed (d=0.816) — C475 itself demoted to Tier 3 (sparsity)
     - "C1706"  # PP content predicts B-side at token level (partial rho=0.502)
     - "C1709"  # PP MIDDLE distance predicts manifold position (Mantel r=0.4226)
     - "C1711"  # PP-manifold correlation section-independent (within rho=0.381)
@@ -1024,7 +1035,7 @@ provenance:
     - "C289"  # No ratio encoding
     - "C290"  # No ratio encoding
     - "C384"  # No A-B coupling
-    - "C476"  # Maintained not produced
+    - "C476"  # Maintained not produced — retracted 2026-05-19 (broken baseline); historical
     - "C483"  # Ordinal only
     - "C484"  # No header interpretation
     - "C1267"  # Mode A/B distinction B-execution only

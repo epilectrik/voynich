@@ -1,5 +1,7 @@
 # Brunschwig Grammar-Level Embedding
 
+**Status (v7.25, 2026-09-28):** The compliance test checks against a withdrawn layer — the 17 forbidden transitions and 5 hazard classes (taxonomy imposed, C2060; class level demoted, C783; zeros reduce to composition, C2081) — using k/h/e kernel roles (C103–C105 Tier 3; C089 superseded by C2082) and LINK as monitoring (true density 13.2%, C609; morphological artifact, C1174). The degree ↔ REGIME mapping rests on REGIME = fire degree and 4 crisp REGIME classes (retired, C1712, C2070). "FULL COMPLIANCE" and "HYPOTHESIS CONFIRMED" are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-14 | **Status:** COMPLETED | **Tier:** 3
 
 ---
@@ -152,7 +154,7 @@ Created precision variants of standard procedures with:
 
 This never sat right because REGIME_4 is too frequent (25/83 folios) to be "forbidden."
 
-### New Interpretation (CONFIRMED)
+### New Interpretation (CONFIRMED) [v7.25: historical — the REGIME class premise is retired, C1712, C2070]
 **REGIME_4 = precision-constrained execution regime**
 
 | Property | REGIME_4 Value | Meaning |
@@ -180,7 +182,7 @@ This never sat right because REGIME_4 is too frequent (25/83 folios) to be "forb
 
 ## What This Establishes
 
-### Confirmed
+### Confirmed [v7.25: historical — see status banner]
 1. **Grammar compatibility** - Brunschwig procedures fit Voynich grammar without constraint violations
 2. **Degree-REGIME mapping** - First->R2, Second->R1, Third/Fourth->R3
 3. **REGIME_4 is precision** - Not intensity, but control tightness

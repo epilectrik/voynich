@@ -2,15 +2,19 @@
 
 **Status:** CLOSED | **Tier:** 2
 
+> **Status note (v7.25; see SYSTEM/STATUS_BRIEF.md §3):** CEI and its bands (C187–C192) remain Tier 2 in the generated table as folio metrics. Their reading as "operator intervention" belongs to the closed-loop control interpretation, now demoted (C171, Tier 3). LINK is a 13.2% morphological artifact of "ol" (C609, C1174), not a waiting/monitoring operator, and REGIME is a soft gradient rather than 4 crisp classes (C1712, C2070).
+
 ---
 
 ## Definition
 
-CEI measures active intervention density in a program. Higher CEI = more frequent operator action.
+CEI measures active intervention density in a program. Higher CEI = more frequent operator action. [Historical interpretation; the measured quantity is the folio-level CEI metric (C187).]
 
 ---
 
 ## The 4 Regimes
+
+*[REGIME as 4 crisp classes is retired (C1712, C2070): a soft gradient whose dominant split is Bio vs non-Bio section.]*
 
 | Regime | CEI Level | Characteristics |
 |--------|-----------|-----------------|
@@ -47,6 +51,8 @@ LINK tokens (ol-morphology, C1174: morphological artifact) anticorrelate with CE
 
 ## Intervention Cycles
 
+*[Historical framing: "intervention cycle" and "ol-BOUNDARY" rest on the LINK monitoring reading, withdrawn (C1174). The adjacency enrichments themselves are distributional observations.]*
+
 Grammar separates two phases:
 
 | Phase | Tokens | LINK Proximity |
@@ -58,14 +64,14 @@ Line structure: ENTRY → EARLY-CYCLE → ol-BOUNDARY → LATE-CYCLE → EXIT
 
 ---
 
-## LINK Distribution (C365-C366)
+## LINK Distribution (C365-C366) — C365 refuted by C805 (dead); C366 revised by C804
 
 | Property | Finding |
 |----------|---------|
-| Spatial uniformity | YES (no positional clustering) |
+| Spatial uniformity | ~~YES (no positional clustering)~~ refuted: LINK has a positional bias (C805) |
 | Run length | Random (z=0.14) |
-| Line-position | Uniform (p=0.80) |
-| Function | Grammar state transition marker |
+| Line-position | ~~Uniform (p=0.80)~~ refuted by C805 (first 17.2%, last 15.3%, middle 12.4%) |
+| Function | ~~Grammar state transition marker~~ C366 revised by C804 (predecessor claims not confirmed) |
 
 ol-tokens mark a positional boundary within lines (C805, C813). The functional interpretation as "monitoring/intervention" boundary is superseded by C1174 (morphological artifact).
 

@@ -3,6 +3,11 @@
 **Status:** CHARACTERIZATION COMPLETE | **Tier:** 2 | **Scope:** 30.5% of tokens, 114 folios
 
 > **For full characterization:** See [currier_A_summary.md](currier_A_summary.md) for complete human-factors model and cognitive interface analysis.
+>
+> **Status note (v7.25, 2026-09-28):** `SYSTEM/STATUS_BRIEF.md` and the generated `CONSTRAINT_TABLE.txt` win on
+> conflict. The "kernel dichotomy" and LINK figures below rest on constructs withdrawn in the September 2026 review
+> (kernel: C089 superseded by C2082; LINK: C609, C1174) and are annotated where they occur. "Characterization
+> complete" is retired closure language (Strategic review §5), not a status.
 
 ---
 
@@ -29,9 +34,9 @@ Currier A is **DISJOINT** from B in grammar but **UNIFIED** in type system. It f
 | POSITION_FREE | Zero JS divergence between positions | C234 |
 | CATEGORICAL TAGGING | 8+ mutually exclusive marker prefixes | C235 |
 | FLAT (not hierarchical) | Zero vocabulary overlap between markers | C236 |
-| DATABASE_LIKE | TTR=0.137, 70.7% bigram reuse | C237 |
+| DATABASE_LIKE | TTR=0.137, 70.7% bigram reuse (all-transcriber figure; H-only 9.1%, see metrics above) | C237 |
 | DESIGNED SEPARATION | 25/112,733 cross-transitions (0.0%) | C239 |
-| SHARED TYPE SYSTEM | Same kernel dichotomy as B | C383 |
+| SHARED TYPE SYSTEM | Same kernel dichotomy as B (C383 Tier 2; "kernel" reading superseded, C089 → C2082 — kernel contact counts EVA letters k/h/e) | C383 |
 
 ---
 
@@ -82,7 +87,7 @@ marker_token = [ARTICULATOR] + PREFIX + [MIDDLE] + SUFFIX
 
 This explains:
 - Low TTR (0.137) — component reuse
-- High bigram reuse (70.7%) — predictable combinations
+- High bigram reuse (70.7%) — predictable combinations [70.7% is the inflated all-transcriber figure; H-only 9.1%]
 - Learnability — small codebook, compositional rules
 
 ---
@@ -130,6 +135,8 @@ Two tokens serve as structural infrastructure across both A and B:
 - `daiin` = "portable articulator" (adapts to ANY context)
 - `ol` = "execution anchor" (functional only in sequential grammar)
 
+*[Role labels ("execution boundary", "execution anchor") are control-reading glosses (Tier 3). "ol" is the LINK marker, now read as a morphological component rather than a functional layer (C1174).]*
+
 ---
 
 ## Folio Organization (Tier 2)
@@ -164,9 +171,9 @@ Sections have **distinct configurations** (C295):
 | Aspect | Currier A | Currier B |
 |--------|-----------|-----------|
 | Structure | Non-sequential | Sequential |
-| Function | Registry/catalog | Executable programs |
+| Function | Registry/catalog | Executable programs (Tier-3 reading; measured: one grammar in folio units) |
 | Grammar | No sequential grammar | 49-class grammar |
-| LINK density | 3.0% | 6.6% (38% overall) |
+| LINK density | 3.0% | 6.6% (38% overall) — legacy figures, not reproducible; true B density 13.2% (C609) |
 | TTR | 0.137 | 0.096 |
 | Folio sharing | 114 folios | 83 folios |
 | **Overlap** | **0 shared folios** | **0 shared folios** |
@@ -193,7 +200,7 @@ The 8 PREFIX families map to **operational domains** based on B-grammar evidence
 
 | Domain | Prefixes | % of Classified | Structural Basis |
 |--------|----------|-----------------|------------------|
-| ENERGY_OPERATOR | ch, sh, qo | 59.4% | Dominates energy/escape roles in B |
+| ENERGY_OPERATOR | ch, sh, qo | 59.4% | Dominates energy/escape roles in B ("escape" belongs to the withdrawn hazard/recovery framing, STATUS_BRIEF §3) |
 | CORE_CONTROL | da, ol | 19.1% | Structural anchors |
 | FREQUENT_OPERATOR | ok, ot | 15.1% | FREQUENT role in canonical grammar |
 | REGISTRY_REFERENCE | ct | 6.4% | 0% B terminals; 7x A-enriched |

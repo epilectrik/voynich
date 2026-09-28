@@ -30,14 +30,14 @@ Independent manual iconographic annotation (ZL, 2026-02-20) identifies:
 - **C1124** (3.05x bridge MIDDLE enrichment): rosettes use the operational backbone vocabulary
 - **C1126-C1127** (AZC-like metalayer): diagram-with-labels syntactic mode
 - **C1128** (generic indexing across all 82 B folios): workshop serves all recipes; not a recipe-specific lookup
-- **C1130** (forbidden-bigram compliant, random transition structure): topology diagram, not directed flowchart
+- **C1130** (forbidden-bigram compliant, random transition structure): topology diagram, not directed flowchart [v7.25: the forbidden set is no longer a prohibition layer — zeros reduce to composition, C2081]
 - **C1989** (Phase 680, Tier 3): path tokens have 9.4x da-prefix enrichment (material markers); node tokens have 4.3x ok-prefix enrichment (apparatus markers); survives same-folio baseline
 - **CENTER vs outer-8 structural difference** (Phase 680 probe): CENTER has 40% BARE vs 33% outer; less ok/ch (apparatus markers); more BARE/sh (passive/integrative). Consistent with CENTER as central apparatus.
 
 ### Falsified (cannot support PFD interpretation as recipe-class-map)
 
 - **C1990** (Phase 682, Tier 1 falsification): recipes-as-transitions REJECTED. 8/9 recipes' starts collapse to EAST. Recipes are not single edges.
-- **C1991** (Phase 683, Tier 1 falsification): C1970 underlying balneum text-signature claim NOT supported with corrected methodology
+- **C1991** (Phase 683, Tier 1 falsification): C1970 underlying balneum text-signature claim NOT supported with corrected methodology (C1970 retracted v6.37, permanent)
 - **Phase 680 F3** (whitelist sensitivity, killer): recipe-class spatial pattern reproduces in 45% of random non-matched folio pools. Generic-indexing (C1128) holds.
 
 ## The Synthesis

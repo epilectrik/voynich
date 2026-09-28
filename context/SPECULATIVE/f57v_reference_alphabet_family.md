@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-10 (off-books synthesis) | **Tier:** structural refinement (T2-adjacent) + interpretive synthesis (T3–T4, flagged)
 **Synthesizes:** C762, C763, C764, C920, C921 (f57v) · C497, C1992, C1993-retracted (f66r) · F49V_ANNOTATOR_ANALYSIS (f49v)
-**Discipline note:** the *referent* of any of these devices is not recoverable (C171); this note records STRUCTURE and a navigable synthesis, not a decoded meaning.
+**Discipline note:** the *referent* of any of these devices is not recoverable (C171); this note records STRUCTURE and a navigable synthesis, not a decoded meaning. [v7.25: C171 demoted to Tier 3; read "not recoverable" as scoped — not recovered by internal analysis, the question stays open]
 
 ---
 
@@ -22,7 +22,7 @@ within-quadrant position, the f/p bit gives the hemisphere — **f57v R2 is an a
 (48 stations = 12 scale × 4 quadrants), a drawn **reference dial / protractor** of calendrical/
 cosmological *form* (12×4 + half-marker; central figure-group where a volvelle rotor would mount).
 *Form only* — the zodiac/seasonal **referent** reading is NOT asserted (it was burned this session;
-see `feedback_label_fit_to_signal`). Structure = dial; what it indexes = unrecoverable (C171).
+see `feedback_label_fit_to_signal`). Structure = dial; what it indexes = unrecoverable (C171) [C171 demoted to Tier 3; scoped: unrecovered by internal analysis].
 
 ## The synthesis: one authorial single-char reference notation, used three ways
 
@@ -40,7 +40,7 @@ Inventory overlap is high: f57v ring ∩ f66r marks = `c d f l o p r t x y` (10 
 adds **f66r** to the family and supplies the functional reading (addressing vs register vs imitation).
 
 **Critical exclusion — f76r is NOT in this family.** f76r's single-char lines are **operational**
-(control-posture sentinels that *propagate into B grammar*, C121/C366/C382/C403; per C497's explicit
+(control-posture sentinels that *propagate into B grammar*, C121/C366/C382/C403; per C497's explicit [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174)); C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 contrast), not reference marks. So the single-char phenomenon splits into two functional classes:
 - **REFERENCE / non-operational:** f57v, f66r, f49v (this family) — addressing, indexing, imitation.
 - **OPERATIONAL:** f76r — grammar-gating sentinels. Do not merge.
@@ -53,10 +53,10 @@ marks (f66r) written in a house reference-script. The f49v annotator (plausibly 
 recognized this script as the "key-looking" part of the book and tried to decode it — correctly
 sensing it was the reference notation, unable to read the dial. The poignant unity of the three
 pages: author writes the addressing system; an early owner tries to crack it; we identify it as a
-protractor — and all three of us stop at C171 (the dial's referent is unrecoverable).
+protractor — and all three of us stop at C171 (the dial's referent is unrecoverable) [C171 demoted to Tier 3; scoped to internal analysis].
 
 ## What this does NOT claim
-- No decoded meaning for the ring, the marks, or what they address (C171).
+- No decoded meaning for the ring, the marks, or what they address (C171, demoted to Tier 3).
 - No calendar/zodiac referent (form is calendrical-shaped; referent unasserted; seasonal reading burned).
 - No new constraint number — this is a synthesis + a C764/C921 structural refinement, off-books.
 - f76r stays operational, excluded from the family.

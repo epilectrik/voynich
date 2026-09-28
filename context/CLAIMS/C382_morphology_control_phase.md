@@ -1,6 +1,6 @@
 # C382: Morphology Encodes Control Phase
 
-**Tier:** 2 | **Status:** CLOSED | **Phase:** MSTAB
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row) | **Status:** CLOSED | **Phase:** MSTAB
 
 ---
 

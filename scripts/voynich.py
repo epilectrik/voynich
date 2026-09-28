@@ -94,7 +94,9 @@ SUFFIXES = sorted(set(SUFFIXES), key=len, reverse=True)
 # The 18 atoms that compose MIDDLEs, with positional role sets.
 # Used by Morphology.atomize() for flat atom-sequence glossing.
 
-# Atom glosses — validated per C1195 confidence tiers.
+# Atom glosses — confidence tiers per C1195 (internal consistency across glossed compounds).
+# These are Tier-3 ROLE HYPOTHESES used as labels, not recovered referents (strategic review 2026-09-27 §6;
+# the kernel reading is withdrawn, C089 -> C2082). Do not cite a gloss as what a token means.
 # LOCKED (8): k, e, h, y, i, n, a, m — strong compound evidence
 # SOLID (6): d, t, l, o, c, p — good evidence, label may refine
 # PLAUSIBLE (5): f, s, g, x, r — thin evidence, nothing contradicts

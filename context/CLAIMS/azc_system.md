@@ -72,8 +72,8 @@ Cramer's V = 0.18 (PREFIX), 0.17 (SUFFIX). Weak but present.
 R1>R2>R3 and S>S1>S2 in component length (monotonic decrease). Ordinal position encoding.
 **Source:** AZC-AXIS
 
-### C309 - Grammar-Like Placement Transitions
-**Tier:** 2 | **Status:** CLOSED
+### C309 - **[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. placement-code bigrams counted along transcriber row order, the statistic class of retracted C433/C434 (transcription serialization): self-transition enrichment is the block-serialization floor and the zero bigrams depend on block order; not re-tested separately.]** Grammar-Like Placement Transitions
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
 99 forbidden bigrams, self-transitions enriched 5-26x.
 **P-text note:** Transition grammar includes P-placement in bigram counts.
 **Source:** AZC-AXIS
@@ -84,8 +84,8 @@ P, S-series allow higher repetition (2.7-3.0); R-series lower (2.1-2.4).
 **P-text note:** P-placement repetition rates (2.7-3.0) now characterize Currier A material.
 **Source:** AZC-AXIS
 
-### C311 - Positional Grammar
-**Tier:** 2 | **Status:** CLOSED
+### C311 - **[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. restates the S = boundary / R = interior split that C435 retracted as a locus-length tautology (line-edge rate = 1/locus length; PHASE_742).]** Positional Grammar
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
 S1, S2, X = boundary specialists (85-90% line-edge). R1, R2, R3 = interior specialists (3-9% boundary).
 **P-text note:** Positional statistics exclude P (paragraph text is not positionally stratified like R/S).
 **Source:** AZC-AXIS
@@ -137,8 +137,8 @@ V=0.507 for folio × placement. Different diagrams have different layouts.
 f71r-f73v share identical placement profile. Reusable templates.
 **Source:** AZC-AXIS
 
-### C320 - S2 < S1 Ordering
-**Tier:** 2 | **Status:** CLOSED
+### C320 - **[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. an order statistic on transcriber row order, the class of retracted C434 (ring blocks recorded depth-sorted; PHASE_742); S2-before-S1 reflects the serialization until re-tested on the physical layout.]** S2 < S1 Ordering
+**Tier:** 3 | **Status:** DEMOTED 2026-09-28 (registry cascade v7.26)
 S2 appears earlier than S1 (p<0.0001). S-series marks ordered positions.
 **Source:** AZC-AXIS
 
@@ -425,7 +425,7 @@ AZC folios group vocabulary by compatibility signature: specialized vocabulary f
 
 ## Phase-Indexed Escape (C443-C444)
 
-### C443 - Positional Escape Gradient
+### C443 - **[Scope 2026-09-28 (v7.26): qo rates of A-type tokens by AZC placement code; the rates stand; 'intervention permitted/forbidden' is the withdrawn escape reading (C458, C171), and 'S = boundary, R = interior' was retracted as a locus-length artifact (C435).]** Positional Escape Gradient
 **Tier:** 2 | **Status:** CLOSED
 Escape rates vary systematically by AZC **diagram** positions for A-types:
 - Position C: ~1.4% escape

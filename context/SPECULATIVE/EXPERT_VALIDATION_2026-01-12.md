@@ -1,5 +1,7 @@
 # Expert Validation: Scientific Confidence Tightening
 
+**Status (v7.25, 2026-09-28):** The directional tests this validation leans on include withdrawn supports — k-adjacent hazard concentration and "k→h forbidden" (kernel superseded, C089 → C2082; forbidden transitions reduce to composition, C2081), e-recovery dominance (recovery architecture a frequency shadow, C458) and the CEI regime ordering over 4 crisp REGIME classes (retired, C1712). The HIGH confidence, the "CLOSED" status and the "control system" conclusion are historical; closed-loop control is Tier 3 (C171). Same-model review does not clear clean-fit — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-12 | **Status:** VALIDATED | **Tier:** 3 (HIGH confidence)
 
 ---
@@ -10,7 +12,7 @@
 
 | Layer | Status | Confidence |
 |-------|--------|------------|
-| Structural role (Tier 2) | CLOSED | Extremely strong |
+| Structural role (Tier 2) | CLOSED [retired closure language, strategic review §5] | Extremely strong |
 | Behavioral interpretation (Tier 3) | HIGH | ~80-85% |
 
 > **Currier A is now not just "compatible with" distillation-class chemistry - it is *selectively aligned* with it under multiple independent tests, while competing domains are actively excluded.**

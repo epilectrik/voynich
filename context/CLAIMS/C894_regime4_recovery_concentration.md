@@ -1,6 +1,6 @@
 # C894: REGIME Recovery Specialization Concentration
 
-**Tier:** 2
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row)
 **Scope:** B
 **Phase:** BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS (extended, reverified 2026-02-11)
 

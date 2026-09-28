@@ -60,7 +60,7 @@
 
 **Davis:** "How can you read a book whose pages are out of order?"
 
-**Our model:** While individual folios are self-contained programs, we discovered the manuscript has a **curriculum structure** (C161, C325) that was disrupted by misbinding. See [proposed_folio_reordering.md](proposed_folio_reordering.md).
+**Our model:** While individual folios are self-contained programs, we discovered the manuscript has a **curriculum structure** (C161, C325) that was disrupted by misbinding. [v7.25: the C325 completion gradient is a section confound (C1401); the curriculum reading rests on retired supports — see curriculum_realignment.md banner] See [proposed_folio_reordering.md](proposed_folio_reordering.md).
 
 **Key finding:** Structural gradient optimization shows:
 - Current order has REVERSED gradients (rho = -0.23)
@@ -236,7 +236,7 @@ Lisa Fagin Davis's materiality research provides **strong independent support** 
 2. **LSA independence** = Pages don't form narrative → Confirms operational independence
 3. **Misbinding confirmed** = Both Davis (LSA) and our analysis (structural gradients) converge on misbinding
 4. **Scribe-section mapping** = Operational specialization → Aligns with regime assignments
-5. **Curriculum structure recovered** = We can now propose original order based on C161/C325 gradients
+5. **Curriculum structure recovered** = We can now propose original order based on C161/C325 gradients [v7.25: historical — C325 is a section confound, C1401]
 
 **No contradictions.** We went beyond integration to propose a structural reordering.
 
@@ -245,6 +245,8 @@ Lisa Fagin Davis's materiality research provides **strong independent support** 
 ---
 
 ## Post-Realignment Update (v1.1)
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (Puff–Voynich alignment retired as evidence, strategic review §5; the Brunschwig hazard gradient uses the withdrawn hazard layer, C2060, C2081; REGIME = fire degree retired, C2070)
 
 The proposed folio reordering was subsequently validated against Puff and Brunschwig:
 

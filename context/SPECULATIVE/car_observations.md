@@ -67,7 +67,7 @@ The correlation reflects shared high-frequency vocabulary:
 - DA-family closure reduces cognitive load before starting new discrimination bundle
 - The -y/-n/-m endings are "cognitively safe landing points"
 - Function: signal that current entry has emitted all its discriminating vocabulary
-- Consistent with C233 (LINE_ATOMIC), C422 (DA articulation), C475 (DA-boundary suppression)
+- Consistent with C233 (LINE_ATOMIC), C422 (DA articulation), C475 (DA-boundary suppression; C475 demoted to Tier 3 2026-05-19)
 
 **Required validation:** Cross-section replication (mechanism validated)
 
@@ -156,7 +156,7 @@ This is NOT a delimiter system. It's a **closure state architecture**:
 - Cements C233 (LINE_ATOMIC) - now we understand the mechanism
 - Cements C236, C240 (line independence) - closure enables independence
 - Cements C422 (DA articulation) - DA-family has dual role (internal punctuation AND entry closure)
-- Cements C475 (DA-boundary suppression) - same mechanism, different context
+- Cements C475 (DA-boundary suppression) - same mechanism, different context [C475 since demoted to Tier 3: its incompatibility percentage measured sparsity]
 
 **Does NOT:**
 - Reopen LINE = RECORD (confirmed, now explained)
@@ -272,7 +272,7 @@ If observations survive frequency-controlled validation:
 | C236/C240 | **CEMENTED** by CAR-O6 (line independence via closure) |
 | C422 | **CEMENTED** by CAR-O6 (DA dual role: internal punctuation + closure) |
 | C424 | CAR-O4 extends (clustered adjacency) |
-| C475 | **CEMENTED** by CAR-O6 (DA-boundary suppression via closure) |
+| C475 | **CEMENTED** by CAR-O6 (DA-boundary suppression via closure) [historical: C475 demoted to Tier 3 2026-05-19] |
 
 ---
 

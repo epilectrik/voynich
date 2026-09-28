@@ -4,6 +4,11 @@
 
 This is the authoritative one-page summary of Currier A structural findings.
 
+> **Status note (v7.25, 2026-09-28):** written before the September 2026 review. The generated `CONSTRAINT_TABLE.txt`
+> and `SYSTEM/STATUS_BRIEF.md` outrank this page. The constraints listed below as "FROZEN" are Tier 2 in the registry.
+> The operational-domain classification is Tier 3 (see `SPECULATIVE/a_behavioral_classification.md`), and its B-side
+> vocabulary ("escape", "recovery") comes from the withdrawn hazard/recovery framing (STATUS_BRIEF §3).
+
 ---
 
 ## The Bottom Line
@@ -14,21 +19,21 @@ Currier A is a **non-sequential categorical registry** that supports discriminat
 
 ---
 
-## Frozen Facts (Tier 0-2)
+## Structural Facts (Tier 2; formerly headed "Frozen Facts (Tier 0-2)")
 
 | Finding | Constraint | Confidence |
 |---------|------------|------------|
-| A is DISJOINT from B grammar | C229 | FROZEN |
-| A = non-sequential categorical registry | C240 | FROZEN |
-| 8 PREFIX marker families | C240 | FROZEN |
-| Tokens are compositional (PREFIX+MIDDLE+SUFFIX) | C267 | FROZEN |
-| Sister pairs are equivalence classes | C408 | FROZEN |
+| A is DISJOINT from B grammar | C229 | Tier 2 (this page formerly said FROZEN) |
+| A = non-sequential categorical registry | C240 | Tier 2 (this page formerly said FROZEN) |
+| 8 PREFIX marker families | C240 (marker count is C235) | Tier 2 (this page formerly said FROZEN) |
+| Tokens are compositional (PREFIX+MIDDLE+SUFFIX) | C267 | Tier 2 (this page formerly said FROZEN) |
+| Sister pairs are equivalence classes | C408 | Tier 2 (this page formerly said FROZEN) |
 | PREFIX encodes control-flow participation | C466/C467 | Tier 2 |
 | No entry-level A↔B coupling | C384 | Tier 2 |
 
 ---
 
-## Operational Domain Classification
+## Operational Domain Classification (Tier 3)
 
 Each PREFIX family maps to an operational domain based on B-grammar evidence:
 
@@ -97,7 +102,7 @@ The B grammar handles execution decisions but intentionally ignores some distinc
 
 | Layer | What It Handles |
 |-------|-----------------|
-| B (Grammar) | Execution decisions: phase, energy, flow, recovery |
+| B (Grammar) | Execution decisions: phase, energy, flow, recovery [Tier-3 reading; recovery architecture withdrawn — C458 frequency shadow] |
 | A (Registry) | Discrimination decisions: "Is this case like that case?" |
 | HT | Attention decisions: "Where should I be vigilant?" |
 | AZC | Orientation decisions: "Where am I in the process?" |
@@ -140,9 +145,9 @@ The B grammar handles execution decisions but intentionally ignores some distinc
 
 ## Navigation
 
-- [CURRIER_B.md](CURRIER_B.md) - Grammar system
-- [AZC_SYSTEM.md](AZC_SYSTEM.md) - Hybrid markers
-- [CROSS_SYSTEM.md](CROSS_SYSTEM.md) - A/B/AZC coordination
+- [currier_B.md](currier_B.md) - Grammar system
+- [currier_AZC.md](currier_AZC.md) - Hybrid markers
+- [cross_system.md](cross_system.md) - A/B/AZC coordination
 
 ---
 

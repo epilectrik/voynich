@@ -75,7 +75,9 @@ The six "MATCH" properties above were real at the aggregate level but dissolve w
 
 ### F-B-002 - QO Lane as Safe Energy Pathway
 
-**Tier:** F3 | **Result:** SUCCESS | **Supports:** C601, C574, C600
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C601, C574, C600 [status v7.25: C600 demoted to Tier 3 (5-gram-reproducible routing); C601's "hazard exclusion" rests on the withdrawn hazard layer (C783 demoted, C2060, C2081)]
+
+> **STATUS (v7.25, 2026-09-28) — rests on a withdrawn construct.** The "safe energy pathway" reading explains QO's absence from the 17 forbidden pairs. That hazard layer no longer stands: the class level is demoted (C783), the 5-class taxonomy was imposed by keyword-matching (C2060), and the token-level zeros reduce to line composition, zones and boundary coupling (C2081, which supersedes C957). C601's count of QO's non-participation remains a scoped Tier 2 zero-pattern, not a safety property. C600 is demoted to Tier 3 (its ol→CHSH / ol_derived→QO routing is 5-gram-reproducible). C574 stands. Text below kept for traceability; see `SYSTEM/STATUS_BRIEF.md` §3.
 
 #### Question
 
@@ -210,7 +212,7 @@ Section variation: BIO = 0.606, STARS = 0.551, COSMO = 0.506, RECIPE = 0.491, HE
 
 #### Interpretation
 
-The two-lane architecture accounts for a bang-bang control strategy: rapid alternation between complementary operational modes (energy application and stabilization) to keep a system within a viability regime. The oscillation rate varies by content type, suggesting the "operational band width" differs across production contexts. This is the natural control strategy when no reliable measurement instrument exists and the operator relies on sensory feedback.
+The two-lane architecture accounts for a bang-bang control strategy: rapid alternation between complementary operational modes (energy application and stabilization) to keep a system within a viability regime. [Status v7.25: the "narrow viability regime" clause was struck from Tier 0 and the closed-loop control reading is Tier 3 (C171, all four legs withdrawn); the alternation measurements (C643, C549) stand.] The oscillation rate varies by content type, suggesting the "operational band width" differs across production contexts. This is the natural control strategy when no reliable measurement instrument exists and the operator relies on sensory feedback.
 
 #### Limitations
 
@@ -241,7 +243,7 @@ Can Currier A PP MIDDLE vocabulary predict QO vs CHSH lane preference in Currier
 #### Result Details
 
 1. **Robust discrimination** -- 20 significant at FDR < 0.05 vs null mean 0.64 (z = 24.26). The A-side vocabulary genuinely predicts B-side lane routing. MATCH.
-2. **Systematic character pattern** -- QO-enriched = k/t, CHSH-enriched = o. This is not random; it follows the kernel-character vocabulary structure. MATCH.
+2. **Systematic character pattern** -- QO-enriched = k/t, CHSH-enriched = o. This is not random; it follows the kernel-character vocabulary structure. MATCH. [Status v7.25: "kernel" as the grammar's core is superseded (C089 → C2082); the k/t vs o character pattern stands as a measurement.]
 3. **Role alignment** -- QO = ENERGY_OPERATOR role dominance; CHSH = AUXILIARY role dominance. The A-side material classification aligns with B-side functional role. MATCH.
 4. **AZC mediation** -- 12/15 QO-enriched and 5/5 CHSH-enriched are AZC-Mediated, confirming the A->AZC->B pipeline transmits lane-relevant information. MATCH.
 
@@ -264,7 +266,9 @@ PP MIDDLE vocabulary in Currier A encodes sufficient information to predict QO v
 
 ### F-B-006 - Energy/Stabilization Lane Assignment
 
-**Tier:** F3 | **Result:** PARTIAL | **Supports:** C647, C645, C601, C521
+**Tier:** F3 | **Result:** PARTIAL | **Supports:** C647, C645, C601, C521 [status v7.25: C645's post-hazard mechanism retracted to Tier 4 (Markov-trivial); C601 rests on the withdrawn hazard layer (C2081); C521's e→h zero is a spelling identity (PHASE_754)]
+
+> **STATUS (v7.25, 2026-09-28) — partly rests on withdrawn constructs.** Two of the five legs are hazard legs ("post-hazard dominance", "hazard proximity"). C645's post-hazard CHSH bias is Markov-trivial under the 5-gram null; its "hazard recovery" mechanism was retracted to Tier 4 (the lag+1 bigram fact stays Tier 2). The hazard layer itself is withdrawn (C783 demoted, C2060, C2081). C521's "e→h = 0.00" is an EVA spelling identity (h occurs only inside ch/sh/benched gallows); its glyph-level e/bench order asymmetry stands. "Kernel directionality" as a property of a k/h/e core is superseded (C089 → C2082). The lane k/e content (C647, C1313) and the alternation (C643) stand. See `SYSTEM/STATUS_BRIEF.md` §3.
 
 #### Question
 
@@ -318,6 +322,8 @@ The interpretation is Tier 3: it is consistent with all Tier 0-2 constraints and
 
 **Tier:** F3 | **Result:** CONSISTENT | **Supports:** C1197, C1204, C1205, C1242, C1244
 **Phase:** EN_LANE_CROSS_PREDICTION (Phase 443)
+
+> **Status note (v7.25):** the REGIME table below conditions on k/e counts, which are among the features that define REGIME, so it is calibration rather than discovery, and REGIME is a soft gradient rather than 4 crisp classes (C1712, C2070). C1207's {c,h} and {i,n} clusters are EVA spelling (bench glyph, minim group; PHASE_754). The e/i extension counts themselves stand.
 
 #### Hypothesis
 
@@ -378,6 +384,8 @@ These fits map Voynich B structural features to distillation physics. All are Ti
 
 **Tier:** F3 | **Result:** SUCCESS | **Supports:** C647, C601, C1207
 
+> **Status note (v7.25):** the structural fact is C1313 (qo k-rich, ok e-rich; Tier 2, stands). C601 is cited for the hazard layer, which is withdrawn (C783 demoted, C2060, C2081); C1207's {c,h} cluster is bench-glyph spelling (PHASE_754). The heat-source / vessel reading remains Tier 3-4.
+
 #### Hypothesis
 
 qo and ok manage two physically distinct thermal channels: qo = heat source (k-enriched), ok = vessel temperature (e-enriched).
@@ -433,7 +441,9 @@ The grammar encodes overshoot-correct cycling at the within-line level. The oper
 
 ### F-B-010 - REGIME Token Profile Discrimination
 
-**Tier:** F3 | **Result:** SUCCESS | **Supports:** C643, REGIME system
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C643, REGIME system [status v7.25: REGIME as 4 crisp classes and REGIME = fire degree retired (C1712, C2070)]
+
+> **STATUS (v7.25, 2026-09-28):** the REGIME ↔ Brunschwig fire-degree alignment below is retired (STATUS_BRIEF §3; C1712, C2070; C1872's gloss absorbed a sign flip). REGIME is a soft gradient whose main split is Bio vs non-Bio section, and REGIME-conditioned tests on k/e/h features are calibration, not discovery, because those features define REGIME (C2070). The MONITORING/THERMAL/CONTAINMENT rates use the keyword-imposed category map (C2069). Kept for traceability.
 
 #### Hypothesis
 
@@ -474,6 +484,8 @@ The REGIMEs correspond to distinct operational modes. Alignment with Brunschwig 
 
 **Tier:** F3 | **Result:** SUCCESS (via dy-MIDDLE) | **Supports:** REGIME system
 
+> **STATUS (v7.25, 2026-09-28):** the balneum (R1) / direct-fire (R3) reading rests on REGIME = fire degree, which is retired (C1712, C2070; STATUS_BRIEF §3). The dy-rate difference between REGIME_1 and REGIME_3 is a measurement; REGIME_1 largely coincides with Section B (C2070), so it needs a within-section re-test. (This entry is not picked up by `generate_fit_table.py` because its Result field is not a single word.)
+
 #### Hypothesis
 
 Sealing/luting operations discriminate between REGIMEs.
@@ -501,7 +513,9 @@ The dy-MIDDLE discriminates REGIMEs with a large effect size (d = -0.75). The di
 
 ### F-B-012 - E-Compound Cooling Taxonomy
 
-**Tier:** F4 | **Result:** SUCCESS | **Supports:** C1197, REGIME system
+**Tier:** F4 | **Result:** SUCCESS | **Supports:** C1197, REGIME system [status v7.25: REGIME = fire degree retired (C1712, C2070)]
+
+> **STATUS (v7.25, 2026-09-28):** the balneum / direct-fire cooling reading rests on REGIME = fire degree, which is retired (STATUS_BRIEF §3). REGIME is defined partly by e-features (C1715), so an e-compound × REGIME contingency is on the REGIME-defining axis and counts as calibration, not discovery (C2070). Kept for traceability.
 
 #### Hypothesis
 

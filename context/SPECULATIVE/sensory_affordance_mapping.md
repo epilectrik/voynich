@@ -1,5 +1,7 @@
 # Sensory Affordance Mapping
 
+**Status (v7.25, 2026-09-28):** The two structures this framework maps onto senses are withdrawn — the 5 hazard classes (imposed by keyword matching, C2060; class level demoted, C783; C109 scoped, C2081) and the k/h/e kernel roles (C103–C105 Tier 3; C089 superseded by C2082); LINK's 38% is not reproducible (true 13.2%, C609). The mappings are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3-4 | **Status:** THEORETICAL FRAMEWORK | **Date:** 2026-01-12
 
 ---
@@ -30,7 +32,9 @@ This IS asking: "What observations drive what decisions?"
 
 ## 1. Hazard Classes -> Primary Sensory Affordances
 
-The 5 hazard failure classes (C109, Tier 0 FROZEN) map to physical observables that require specific sensory capacities to detect.
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]**
+
+The 5 hazard failure classes (C109, Tier 0 FROZEN) [now: 5-class taxonomy struck (C2060), C109 Tier 2 and scoped] map to physical observables that require specific sensory capacities to detect.
 
 | Hazard Class | % | Physical Observable | Primary Affordance | Secondary |
 |--------------|---|---------------------|-------------------|-----------|
@@ -54,7 +58,9 @@ The 5 hazard failure classes (C109, Tier 0 FROZEN) map to physical observables t
 
 ## 2. Kernel Roles -> Control Intervention Affordances
 
-The 3 kernel operators (C103-105, Tier 0 FROZEN) correspond to physical control intervention points.
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]**
+
+The 3 kernel operators (C103-105, Tier 0 FROZEN) [now: C103–C105 demoted to Tier 3; kernel claim C089 superseded by C2082] correspond to physical control intervention points.
 
 | Kernel | Role | Physical Control | Presupposed Affordance |
 |--------|------|------------------|------------------------|
@@ -83,7 +89,7 @@ The 12 decision archetypes (ECR-3) each presuppose specific observational capaci
 | **D3** | Is containment secure? | CONTAINMENT_TIMING | ACOUSTIC + TACTILE |
 | **D4** | Are inputs/outputs balanced? | RATE_MISMATCH | VISUAL + ACOUSTIC |
 | **D5** | Is energy appropriate? | ENERGY_OVERSHOOT | THERMAL + VISUAL |
-| **D6** | Intervene or wait? | LINK (38%) | MULTI-MODAL |
+| **D6** | Intervene or wait? | LINK (38%) [withdrawn: true density 13.2%, C609] | MULTI-MODAL |
 | **D7** | How do I return to stability? | e-recovery | MULTI-MODAL |
 | **D8** | Can I restart from here? | CEI dynamics | THERMAL |
 | **D9** | Is this case like that case? | A registry | OLFACTORY (identity) |
@@ -148,7 +154,7 @@ If HT marks contexts requiring careful sensory discrimination, then:
 
 **Possible exception: Timing**
 
-- LINK (38% of grammar) implies waiting periods
+- LINK (38% of grammar) implies waiting periods [38% withdrawn: true density 13.2% (C609); LINK is a morphological artifact of "ol" (C1174)]
 - If LINK durations exceed ~30 sec attention span, hourglass may be presupposed
 - This would be HYBRID: instruments for timing, human for discrimination
 

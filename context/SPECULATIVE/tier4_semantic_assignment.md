@@ -1,8 +1,10 @@
 # Tier 4: Hypothetical Semantic Assignment via B→A Back-Labeling
 
+**Status (v7.25, 2026-09-28):** The chain this document starts from is retired — REGIME = Brunschwig fire degree and REGIME as 4 crisp classes (C1712, C2070; the gloss absorbed a sign flip in C1872) and the Puff–Voynich alignment (retired as evidence, strategic review §5); the hazard-topology and kernel profile terms are withdrawn, and C171 is now Tier 3. The "validated" links in the chain below are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 4 (PURE SPECULATION) | **Status:** EXPLORATORY | **Date:** 2026-01-14
 
-> **WARNING:** Everything in this document is hypothetical. The model is FROZEN. C171 (zero material encoding) is UNCHANGED. These labels are interpretive speculation, not structural claims.
+> **WARNING:** Everything in this document is hypothetical. The model is FROZEN. C171 (zero material encoding) is UNCHANGED. These labels are interpretive speculation, not structural claims. [v7.25: C171 since demoted to Tier 3]
 
 ---
 
@@ -11,8 +13,8 @@
 We work backwards from known B structure to hypothetically label A entries:
 
 ```
-B folio (known regime, Tier 0)
-  → Brunschwig degree (validated alignment, Tier 2)
+B folio (known regime, Tier 0)            [historical: regimes are Tier 2 (C179); as 4 crisp classes, retired (C1712)]
+  → Brunschwig degree (validated alignment, Tier 2)   [retired: REGIME = fire degree, C2070]
     → Historical material classes (Puff/Brunschwig)
       → A operational domains (validated, Tier 2)
         → [TIER 4] Hypothetical semantic labels
@@ -44,7 +46,7 @@ From PVC-2 validation (13/15 metrics match):
 | REGIME_3 | Third (seething) | Almost boiling, narrow compatibility |
 | REGIME_4 | **Precision** | Tight tolerance, narrow operating window |
 
-**NOTE (2026-01-15):** REGIME_4 interpretation CORRECTED per C494. REGIME_4 is NOT "forbidden/dangerous" - it is "precision-constrained execution" (lowest escape rate 0.107, tightest error tolerance). See X.6 in INTERPRETATION_SUMMARY.md.
+**NOTE (2026-01-15):** REGIME_4 interpretation CORRECTED per C494 [demoted to Tier 3, v7.26]. REGIME_4 is NOT "forbidden/dangerous" - it is "precision-constrained execution" (lowest escape rate 0.107, tightest error tolerance). See X.6 in INTERPRETATION_SUMMARY.md. [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 **f113r executes first-degree (balneum) procedures.**
 
@@ -180,7 +182,7 @@ If f113r (REGIME_1) executes first-degree procedures, and first-degree materials
 
 - Specific token-to-material mappings (e.g., "daiin = rose")
 - Entity-level identification (which plant is which)
-- That C171 is changed in any way
+- That C171 is changed in any way (C171 since demoted to Tier 3, 2026-09-28)
 - That A "encodes" materials (only operational affordances)
 
 ---
@@ -216,7 +218,7 @@ If f113r (REGIME_1) executes first-degree procedures, and first-degree materials
 | REGIME_3 | 16 | 0.717 | 0.169 | Advanced, complex | Roots + resins (5 ch.) |
 | REGIME_4 | 25 | 0.584 | 0.107 | **Precision, tight tolerance** | Heat-sensitive materials (5 ch.) |
 
-### REGIME_4 Precision Interpretation (CORRECTED per C494)
+### REGIME_4 Precision Interpretation (CORRECTED per C494) [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 **NOTE (2026-01-15):** The original interpretation below ("forbidden degree") has been RETIRED. See C494 and X.6 in INTERPRETATION_SUMMARY.md for the corrected interpretation.
 
@@ -225,7 +227,7 @@ Brunschwig on the fourth degree:
 
 **Structural finding:** REGIME_4 has the LOWEST escape density (0.107 vs 0.174 for others).
 
-**[CORRECTED INTERPRETATION (C494)]:** Fewer escape routes = tighter procedural requirements. REGIME_4 encodes **precision-constrained execution** - narrow operating windows, tight tolerance, least forgiving. Brunschwig prohibits fourth-degree as a moral stance; Voynich provides the engineering alternative for when precision is required (e.g., heat-sensitive volatiles, exact timing separations).
+**[CORRECTED INTERPRETATION (C494 [demoted to Tier 3, v7.26])]:** Fewer escape routes = tighter procedural requirements. REGIME_4 encodes **precision-constrained execution** - narrow operating windows, tight tolerance, least forgiving. Brunschwig prohibits fourth-degree as a moral stance; Voynich provides the engineering alternative for when precision is required (e.g., heat-sensitive volatiles, exact timing separations). [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 ### f85v2 Anomaly
 
@@ -397,7 +399,7 @@ Brunschwig on the fourth degree:
 ### What This Does NOT Prove
 
 - Specific token-to-material mappings remain impossible
-- C171 (zero material encoding) is UNCHANGED
+- C171 (zero material encoding) is UNCHANGED (since demoted to Tier 3, 2026-09-28)
 - Entity-level identification is NOT claimed
 
 ---
@@ -537,7 +539,7 @@ The Puff/Brunschwig comparison demonstrates:
 **This does NOT mean:**
 - Voynich "is" a herbal
 - Specific tokens can be decoded as specific materials
-- C171 changes in any way
+- C171 changes in any way (C171 since demoted to Tier 3, 2026-09-28)
 
 ---
 
@@ -583,7 +585,7 @@ Test whether individual Puff chapters can be matched 1:1 to individual Voynich B
 | 3rd (roots) | 13 | REGIME_3 | 16 | 0.81 |
 | 4th (precision) | 5 | REGIME_4 | **25** | **0.20** |
 
-**Critical finding:** Distribution mismatch. Puff has 4x more herbs than Voynich has REGIME_2 folios. Voynich has 5x more REGIME_4 folios than Puff has precision-requiring chapters. NOTE: Per C494, REGIME_4 = precision-constrained execution, not "dangerous."
+**Critical finding:** Distribution mismatch. Puff has 4x more herbs than Voynich has REGIME_2 folios. Voynich has 5x more REGIME_4 folios than Puff has precision-requiring chapters. NOTE: Per C494, REGIME_4 = precision-constrained execution, not "dangerous." [v7.26 status: C494 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 ### Test Results
 
@@ -656,4 +658,4 @@ The Puff-Voynich comparison shows **structural alignment at the category level**
 
 ---
 
-*Tier 4 speculation complete 2026-01-14. Phases 1-3 (T1-T10 + entity matching). Model FROZEN. C171 UNCHANGED.*
+*Tier 4 speculation complete 2026-01-14. Phases 1-3 (T1-T10 + entity matching). Model FROZEN. C171 UNCHANGED.* [v7.25: historical — C171 demoted to Tier 3; see status banner]

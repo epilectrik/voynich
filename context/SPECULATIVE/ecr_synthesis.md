@@ -1,8 +1,12 @@
 # ECR Synthesis: Entity-Class Reconstruction
 
+**Status (v7.25, 2026-09-28):** The apparatus-role and hazard strands of this synthesis rest on withdrawn supports — the k/h/e operator roles (C103–C105, Tier 3; kernel claim C089 superseded by C2082), closed-loop control (C171, Tier 3) and the 5 hazard classes (taxonomy imposed, C2060; class level demoted, C783; token zeros reduce to composition, C2081). The "COMPLETE" status and the CONSISTENT cross-validation verdicts are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** COMPLETE | **Date:** 2026-01-10
 
 > **Entity-level identification (specific plants, machines, substances) is probably irrecoverable by design and is not the goal of this analysis.**
+>
+> [v7.25: "irrecoverable by design" is retired closure language (strategic review §5); scoped to internal structural analysis, the identification question stays open.]
 
 ---
 
@@ -35,12 +39,12 @@ These findings are class-level only. No entity-level identification (specific su
 
 | Domain | Role | Controller | Evidence |
 |--------|------|------------|----------|
-| **Energy** | Energy Source | k | C103 |
-| **Phase** | Phase Container | h | C104 |
+| **Energy** | Energy Source | k | C103 (demoted to Tier 3) |
+| **Phase** | Phase Container | h | C104 (demoted to Tier 3) |
 | **Phase** | Separator | - | PHASE_ORDERING hazard |
-| **Flow** | Circulation Path | - | C171 |
+| **Flow** | Circulation Path | - | C171 (demoted to Tier 3) |
 | **Flow** | Collector | - | COMPOSITION_JUMP hazard |
-| **Control** | Stability Anchor | e | C105 |
+| **Control** | Stability Anchor | e | C105 (demoted to Tier 3) |
 | **Control** | Containment | - | CONTAINMENT_TIMING hazard |
 
 **Key finding:** Apparatus roles are functional, not named. The system assumes apparatus exists but does not encode its configuration.
@@ -69,7 +73,7 @@ These findings are class-level only. No entity-level identification (specific su
 | M-C (stable, distinct) | Collector | COMP only |
 | M-D (stable, homogeneous) | Stability Anchor | Baseline |
 
-**Verdict:** CONSISTENT - Material classes interact with apparatus roles through hazard topology.
+**Verdict:** CONSISTENT - Material classes interact with apparatus roles through hazard topology. [historical verdict: the hazard topology it relies on is withdrawn — C2060, C783, C2081]
 
 ### Apparatus Roles ↔ Decision Archetypes
 
@@ -129,7 +133,7 @@ KERNEL OPERATORS (k, h, e)              SYSTEM LAYERS (B, A, HT, AZC)
 |-----------|---------|-------------|
 | **Materials** | Behavioral classes (3-4) | Specific substances |
 | **Apparatus** | Functional roles (4-7) | Specific devices |
-| **Hazards** | Failure classes (5) | Specific failure causes |
+| **Hazards** | Failure classes (5) [withdrawn: imposed taxonomy, C2060] | Specific failure causes |
 | **Decisions** | Archetype categories (12) | Specific decision content |
 | **Grammar** | Legal transitions (49 classes) | Semantic meaning |
 | **Registry** | Case comparability | Case identity |
@@ -158,9 +162,9 @@ Each layer handles what others cannot:
 
 | Constraint Range | ECR Component | How Satisfied |
 |-----------------|---------------|---------------|
-| C109-C114 (hazards) | ECR-1, ECR-2 | Material classes + apparatus roles map to hazards |
-| C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
-| C171 (circulatory) | ECR-2 | Circulation Path role required |
+| C109-C114 (hazards; class layer withdrawn — C109 scoped, C2060; C113–C114 not in the current registry) | ECR-1, ECR-2 | Material classes + apparatus roles map to hazards |
+| C085-C108 (kernel; C089 superseded by C2082, C085 and C103–C105 demoted to Tier 3) | ECR-2 | Apparatus roles map to kernel operators |
+| C171 (circulatory; demoted to Tier 3) | ECR-2 | Circulation Path role required |
 | C232, C235 (sections) | ECR-1 | Material classes are section-invariant |
 | C384 (no A↔B coupling) | ECR-3 | A handles what B ignores |
 | C404-405 (HT non-op) | ECR-3 | HT handles attention only |
@@ -179,7 +183,7 @@ Each layer handles what others cannot:
 | No constraint violations | ✓ All consistent |
 | No entity-level labeling | ✓ Class-level only |
 | Cross-validation passes | ✓ All 3 cross-checks |
-| Results strengthen Tier-2 | ✓ Explains layer architecture |
+| Results strengthen Tier-2 | ✓ Explains layer architecture [historical: kernel and hazard supports since withdrawn] |
 
 ---
 
@@ -223,7 +227,7 @@ The Entity-Class Reconstruction phase has successfully identified:
 3. **Decision archetypes** distributed across system layers
 4. **Architectural coherence** explaining why each layer exists
 
-All findings are class-level only. Entity-level identification remains irrecoverable by design.
+All findings are class-level only. Entity-level identification remains irrecoverable by design. [v7.25: retired closure language — scoped to internal structural analysis; the question stays open]
 
 ---
 

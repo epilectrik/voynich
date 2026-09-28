@@ -1,5 +1,7 @@
 # Systematic Brunschwig Comparison
 
+**Status (v7.25, 2026-09-28):** The Voynich side of Axes 1–3 and of the extended tests is withdrawn — the 17 forbidden transitions and 5 hazard classes (taxonomy imposed, C2060; class level demoted, C783; zeros reduce to composition, C2081), the k/h/e kernel (C103–C105 Tier 3; C089 superseded by C2082), the recovery architecture and C458 clamping (frequency shadow) and REGIME = Brunschwig fire degree (retired, C1712, C2070). The MATCH scores, the 19/20 total and the "shared formalism" conclusion are historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-13 | **Status:** COMPLETED | **Tier:** 3
 
 ---
@@ -22,6 +24,8 @@ Systematic comparison of Hieronymus Brunschwig's *Liber de arte distillandi* (15
 ---
 
 ## Axis 1: Hazard Topology
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]**
 
 ### Voynich Finding
 17 forbidden transitions in 5 hazard classes:
@@ -75,8 +79,8 @@ This matches the 41/24/24/6/6 distribution qualitatively. Phase dominates, energ
 
 ### Voynich Finding
 - 49 instruction classes
-- 17 forbidden transitions
-- k/h/e kernel control (heat/hold/equilibrate)
+- 17 forbidden transitions [withdrawn as a prohibition layer, C2081]
+- k/h/e kernel control (heat/hold/equilibrate) [kernel superseded, C089 → C2082]
 
 ### Brunschwig Evidence
 
@@ -93,7 +97,7 @@ Within each technique, 4 degrees of heat:
 
 This is a CATEGORICAL prohibition, not a graded preference.
 
-**Kernel Parallel:**
+**Kernel Parallel:** [withdrawn: the kernel reading is superseded by C2082; see banner]
 The k/h/e kernel (heat/hold/equilibrate) maps to:
 - k = Fire intensity control (degrees 1-3)
 - h = Hold at temperature ("finger test" maintenance)
@@ -111,6 +115,8 @@ PARTIAL because: 40 ≠ 49, and mapping isn't one-to-one proven.
 ---
 
 ## Axis 3: Recovery Architecture
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]**
 
 ### Voynich Finding
 - 89% reversibility
@@ -148,7 +154,7 @@ The structural match is exact for the recovery architecture.
 ## Axis 4: Material-Apparatus Separation
 
 ### Voynich Finding
-- 0 material encoding in execution grammar (C171)
+- 0 material encoding in execution grammar (C171, demoted to Tier 3)
 - C384: No A-B entry coupling
 - Universal vocabulary across sections
 
@@ -184,7 +190,7 @@ This is the SAME architectural decision as Voynich: apparatus logic is material-
 ## Axis 5: Pedagogical Structure
 
 ### Voynich Finding
-- Expert-only (C196-C197)
+- Expert-only (C196-C197) [v7.26 status: C196, C197 demoted to Tier 3 (invented archetype)]
 - No definitions provided
 - Assumes trained operator
 
@@ -284,7 +290,7 @@ This exceeds the prediction of 3-4 MATCH.
 
 | Axis | Brunschwig Quote | Voynich Parallel |
 |------|------------------|------------------|
-| Hazard | "Fourth degree...coerces...nature rejects all coercion" | C490: Categorical strategy exclusion |
+| Hazard | "Fourth degree...coerces...nature rejects all coercion" | C490: Categorical strategy exclusion [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 | Recovery | "may happen no more than twice" | 89% reversibility with limited retry |
 | Sensory | "taste and scent have diminished" | Olfaction primary inference |
 | Sensory | "finger test" | Categorical thermal sensing |
@@ -296,6 +302,7 @@ This exceeds the prediction of 3-4 MATCH.
 ## What This Establishes
 
 ### Confirmed Parallels
+[v7.25: items 1–2 are withdrawn with the hazard and recovery layers; item 5's fire-degree reading is retired — see banner]
 1. **Hazard topology aligns** - Phase dominance, categorical prohibition of extreme energy
 2. **Recovery architecture aligns** - Limited retry, cooling dominance
 3. **Material-apparatus separation aligns** - Both use disjoint organizational structures
@@ -319,6 +326,8 @@ This mismatch is POSITIVE EVIDENCE:
 ---
 
 ## Extended Testing (2026-01-14)
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (REGIME = fire degree retired, C1712, C2070; hazard classes imposed, C2060; recovery/clamp a frequency shadow, C458)
 
 ### Regime-Degree Discrimination Test (5/6 PASS)
 
@@ -344,7 +353,7 @@ Test: Do Brunschwig's verbal warnings map to Voynich's grammatical prohibitions?
 
 | Brunschwig Warning | Voynich Implementation | Match |
 |-------------------|------------------------|-------|
-| Fourth degree categorically prohibited | C490: AGGRESSIVE structurally impossible | YES |
+| Fourth degree categorically prohibited | C490: AGGRESSIVE structurally impossible | YES [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 | Thermal shock (glass shatters) | CONTAINMENT_TIMING = 24% of hazards | YES |
 | Boiling prohibition + fraction mixing | PHASE_ORDERING + COMPOSITION = 65% | YES |
 | Rate imbalance (recoverable) | RATE_MISMATCH = 6% (monitored only) | YES |
@@ -369,7 +378,7 @@ Test: Do Brunschwig's recovery narratives match Voynich's e-dominated recovery?
 
 ### Clamping Magnitude Test (5/5 PASS)
 
-Test: Does Brunschwig's "twice only" rule produce the same variance signature as C458?
+Test: Does Brunschwig's "twice only" rule produce the same variance signature as C458 (demoted to Tier 3: frequency shadow)?
 
 | Dimension | Brunschwig Rule | Voynich CV | Status |
 |-----------|-----------------|------------|--------|

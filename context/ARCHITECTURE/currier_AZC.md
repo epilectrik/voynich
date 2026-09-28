@@ -4,6 +4,11 @@
 
 **See also:** [azc_transcript_encoding.md](azc_transcript_encoding.md) — Physical diagram encoding in transcript
 
+> **Status note (v7.25, 2026-09-28).** `SYSTEM/STATUS_BRIEF.md` and the generated `CONSTRAINT_TABLE.txt` win on
+> conflict. The retracted claims are placement rigidity, R-series ordering and S/R boundary/interior (C433, C434, C435,
+> the self-transition half of C436), all transcription artifacts (PHASE_742). "Control architecture" framing
+> for the manuscript is the Tier-3 working interpretation (C120, C171 demoted to Tier 3).
+
 ---
 
 ## The Core Insight
@@ -93,7 +98,7 @@ When analyzing AZC folios, explicitly state which classification you're using:
 
 ---
 
-## The Zodiac Control Scaffold (C431-C435)
+## The Zodiac Control Scaffold (C431-C435; C433–C435 retracted)
 
 ### ~~Block-Based Structure (C433)~~ — RETRACTED (PHASE_742, 2026-06-01)
 
@@ -107,7 +112,7 @@ When analyzing AZC folios, explicitly state which classification you're using:
 
 ~~The Zodiac pages implement an extremely strict placement grammar — stricter than Currier B. Placement codes occur in massive contiguous blocks (R1 mean 79.6/max 156/99.9%; R2 64.3/106/99.9%; S1 51.2/73/100%; S2 40.3/141/100%; R3 40.9/132/98.8%).~~
 
-Once a placement starts, it **locks for dozens of tokens**.
+~~Once a placement starts, it **locks for dozens of tokens**.~~ (retracted with C433 — contiguous blocks are how placements are recorded, not a lock-in)
 
 ### ~~Strict Forward Ordering (C434)~~ — RETRACTED (PHASE_742, 2026-06-01)
 
@@ -117,7 +122,7 @@ Once a placement starts, it **locks for dozens of tokens**.
 > = 3, because f70v1/f70v2 are numbered/recorded DESCENDING — the direction flips between folios, which a
 > real grammar cannot do). The shuffle-null "expected 349" only tests "is the file sorted by ring depth."
 > 927/951 transitions are same-ring = the block-count floor. There is no manuscript one-way progression.
-> See `context/DATA/AZC_NOTATION_PROVENANCE.md` §C434 and `phases/PHASE_742_AZC_C759_AUDIT/`. The table
+> See `context/DATA/AZC_NOTATION_PROVENANCE.md` §C434 (retracted) and `phases/PHASE_742_AZC_C759_AUDIT/`. The table
 > below is retained struck-through for traceability only.
 
 ~~R-subscript transitions are strictly forward: **R1 → R2 → R3 only**. Backward 0/349 FORBIDDEN; Skip 0/139 FORBIDDEN; Forward 2/2 legal. "No exceptions; one-way progression through interior stages."~~
@@ -128,7 +133,7 @@ Once a placement starts, it **locks for dozens of tokens**.
 > line-edge rate = 1/(locus length) by identity (S0 100%/len1, S1 80%/0.80, R1 2.8%/0.028). S codes are
 > short label loci (`@Lz`), R codes long ring loci (`@Cc`). The real S-labels-vs-R-ring-text distinction is
 > the locus subtype (`DATA/AZC_NOTATION_PROVENANCE.md` §3), not a boundary/interior positional grammar.
-> Same artifact family as C433/C434.
+> Same artifact family as C433/C434 (both retracted).
 
 ~~S-series 95%+ at line edges (marks entry/exit); R-series 89-95% interior (fills interior); they never mix roles.~~
 
@@ -146,14 +151,18 @@ The twelve Zodiac pages are **structural clones** — the same control structure
 
 The A/C family is **also rigid**, but each folio has its own scaffold:
 
+> **[Partly withdrawn — historical; see PHASE_742.]** The self-transition, singleton and run-length rows below are
+> the retracted half of C436 (block-serialization floor, same artifact as C433/C434). Only the cross-folio consistency
+> row (uniform 0.945 vs varied 0.340) survives as Tier 2. "Rigid" and "rigidity" in this section are historical.
+
 | Metric | A/C Family | Zodiac Family |
 |--------|------------|---------------|
-| Self-transition rate | 98.0% | 98-100% |
-| Singleton rate | 0% | 0% |
-| Mean run length | 111.6 | 40-80 |
+| Self-transition rate | ~~98.0%~~ | ~~98-100%~~ |
+| Singleton rate | ~~0%~~ | ~~0%~~ |
+| Mean run length | ~~111.6~~ | ~~40-80~~ |
 | Cross-folio consistency | **0.340** | **0.945** |
 
-A/C runs are actually **longer** than Zodiac runs. The rigidity is comparable.
+~~A/C runs are actually **longer** than Zodiac runs. The rigidity is comparable.~~ (retracted — run lengths are recording blocks)
 
 The difference: A/C folios don't share their scaffolds. Each diagram has custom placement constraints.
 
@@ -164,6 +173,8 @@ The difference: A/C folios don't share their scaffolds. Each diagram has custom 
 | C | 32.3% | Interior (77.6%) |
 | R | 11.2% | Mixed (55.2%) |
 | S | 8.0% | Boundary (74.9%) |
+
+*[The Interior/Boundary role column comes from line-edge position rates, which follow from locus length by identity (edge rate = 1/locus length) — the reasoning under which C435 was retracted (PHASE_742). Treat these role labels as historical.]*
 
 *Note: P (Paragraph) is NOT a diagram position - it is paragraph text appearing on AZC folios. P text is reclassified as Currier A material. See `azc_transcript_encoding.md`.*
 
@@ -190,6 +201,8 @@ AZC positions reflect distinct vocabulary profiles — different operational cha
 - R-series: Processing vocabulary (balanced profile, moderate kernel contact)
 - C position: Core vocabulary (balanced)
 
+*[The position–vocabulary association survives a within-folio null (C759, PHASE_742). The "stabilization/processing" glosses and "kernel contact" are control-reading vocabulary (Tier 3; kernel reading superseded, C089 → C2082).]*
+
 This explains why:
 - AZC has 219 forbidden token-placement pairs (C313) — vocabulary profiles are position-specific
 - Placement constrains LEGALITY not PREDICTION (only 14% prediction gain)
@@ -199,7 +212,7 @@ This explains why:
 
 ## The Four-Layer Stack
 
-AZC completes the Voynich control architecture:
+AZC completes the Voynich control architecture (the "control architecture" and layer functions below are Tier-3 working interpretation; C120, C171 demoted to Tier 3):
 
 | Layer | System | Function |
 |-------|--------|----------|
@@ -223,11 +236,11 @@ AZC does not execute. It does not route. It **classifies vocabulary by position*
 > as not-adjudicated.
 
 **Excluded on independent (non-rigidity) grounds:**
-- ❌ **Calendars / astrology as semantic-translation targets** — semantic ceiling (**C120/C171**): token-level meaning is not recoverable; "this label = March/Aries" is dead regardless of rigidity.
+- ❌ **Calendars / astrology as semantic-translation targets** — semantic ceiling (**C120/C171**): token-level meaning is not recoverable; "this label = March/Aries" is dead regardless of rigidity. [C120 and C171 were demoted to Tier 3 on 2026-09-28; per C120's row, the negative part is now carried by C119 (Tier 2: no translation-eligible zones) and the rival exclusions.]
 - ❌ **Lexical calendar** (shared month/sign lexicon across the diagrams) — **C321**: the 12 zodiac diagrams have *isolated* vocabulary (mean consecutive Jaccard 0.076). A real calendar shares a cross-sign lexicon; vocabulary-isolation is **anti-calendar**. This is the strongest surviving exclusion.
 
 **NOT adjudicated (the rigidity argument that used to "exclude" these is retracted; no positive evidence either way):**
-- ❓ **Cyclic / seasonal organizing *frame* for the scaffold.** C436-retained (one scaffold reused 12×), C319/C431 (template reuse), C321 (isolated vocab) are *consistent with* a 12-fold cyclic frame but equally with "12 structural clones" — they do **not** discriminate. The seasonal signal is weak and partial (C1681: V=0.157 on a corrected 7-folio subset only; **C1685: full 12-folio season-map could NOT be inferred**, perm_p=0.112). Status: **neither supported nor excluded.** A bare label-count-vs-30 test cannot resolve this (look-elsewhere + the clone-null makes the same ≈30 prediction + nymph counts are under-transcribed on these folios per C2004/C2005).
+- ❓ **Cyclic / seasonal organizing *frame* for the scaffold.** C436-retained (one scaffold reused 12×), C319/C431 (template reuse), C321 (isolated vocab) are *consistent with* a 12-fold cyclic frame but equally with "12 structural clones" — they do **not** discriminate. The seasonal signal is weak and partial (C1681, retracted PHASE_744 as selection-optimized: V=0.157 on a corrected 7-folio subset only; **C1685: full 12-folio season-map could NOT be inferred**, perm_p=0.112). Status: **neither supported nor excluded.** A bare label-count-vs-30 test cannot resolve this (look-elsewhere + the clone-null makes the same ≈30 prediction + nymph counts are under-transcribed on these folios per C2004/C2005).
 
 What AZC positively IS remains: a static positional vocabulary-classification / LABELING scaffold (C305, C441) — not a readable calendar.
 
@@ -241,7 +254,7 @@ What AZC positively IS remains: a static positional vocabulary-classification / 
 | Folios | 30 | 114 | 83 |
 | TTR | 0.285 | 0.137 | 0.096 |
 | Tokens/line (median) | 8 | 22 | 31 |
-| LINK density | 7.6% | 3.0% | 6.6% |
+| LINK density | 7.6% | 3.0% | 6.6% (legacy, not reproducible; true B density 13.2%, C609) |
 
 ### Vocabulary Overlap
 
@@ -258,7 +271,7 @@ AZC uses the shared core while adding diagram-specific terms.
 
 ## Key Constraints
 
-### Core Architecture (C300-C322)
+### Core Architecture (C300-C322) [v7.26 status: C309, C311, C320 demoted to Tier 3 (transcription-order statistic, like retracted C433-C435)]
 
 | # | Constraint |
 |---|------------|
@@ -269,7 +282,7 @@ AZC uses the shared core while adding diagram-specific terms.
 | C317 | Hybrid architecture (topological + positional) |
 | C322 | SEASON-GATED WORKFLOW interpretation |
 
-### Folio Family Architecture (C430-C436)
+### Folio Family Architecture (C430-C436; C433–C435 retracted)
 
 | # | Constraint |
 |---|------------|
@@ -343,7 +356,7 @@ AZC is not decorative annotation. It is **bulk positional structure** that class
 
 The Zodiac pages are not "about" twelve things. They are the **same positional scaffold reused twelve times**.
 
-The A/C pages are not "loose." They are **equally rigid but diagram-specific**.
+The A/C pages are not "loose." They are **equally rigid but diagram-specific**. [The "rigid" wording is historical — the self-transition rigidity was retracted (C433, C436 half, PHASE_742); what survives is uniform (Zodiac) vs diagram-specific (A/C) cross-folio scaffolds.]
 
 Together, they form a positional encoding layer. Each PREFIX+MIDDLE combination appears at exactly one position, reflecting its operational character. AZC position and B behavior co-vary because both are determined by the same underlying vocabulary properties.
 

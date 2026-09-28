@@ -4,6 +4,11 @@
 **Last Updated:** 2026-01-16
 **Tier:** Consolidated from Tier 2-3 findings
 
+> **Status note (v7.25, 2026-09-28):** `SYSTEM/STATUS_BRIEF.md` and the generated `CONSTRAINT_TABLE.txt` win on
+> conflict. "Characterization complete" and the "Closed (Stop Here)" list are retired closure language (Strategic
+> review §5), not a status. Citations of C475 (demoted to Tier 3: sparsity, not prohibition) and C476 (dead) are
+> annotated below.
+
 ---
 
 ## Executive Summary
@@ -58,7 +63,7 @@ Morphological signatures:
 | Constraint | Description |
 |------------|-------------|
 | C422 | DA marks internal sub-record boundaries (75.1% separation) |
-| C475 | DA-boundary suppression at entry boundaries |
+| C475 | DA-boundary suppression at entry boundaries [mis-cited: C475 is MIDDLE atomic incompatibility, demoted to Tier 3 (sparsity denominator); the DA-suppression observation is recorded under C346.b in CLAIMS/currier_a.md] |
 
 DA has **dual role**:
 1. Internal punctuation (within-entry segmentation)
@@ -97,7 +102,7 @@ Adjacency maximizes **SIMILARITY**, not contrast:
 ### 3.4 Singleton Isolation
 Singleton entries (not clustered) show distinct properties:
 - Lower hub overlap (0.731 vs 0.850)
-- Higher incompatibility density (0.986 vs 0.979)
+- Higher incompatibility density (0.986 vs 0.979) [an all-possible-pairs incompatibility measure of the C475 kind — demoted: it measures sparsity, not prohibition]
 - These are **deliberate isolation points**, not noise
 
 ---
@@ -192,7 +197,7 @@ Treat as **content regimes**, not temporal phases (rebinding uncertainty).
 
 ### 6.4 Not Temporally Structured
 - No systematic novelty trend in current order
-- C476/C478 (coverage/scheduling) interpretation requires latent order recovery
+- C476/C478 (coverage/scheduling) interpretation requires latent order recovery [C476 retracted 2026-05-19 — broken baseline, dead; C478 reframed and flagged audit-pending]
 - Any "early/late" claims are LATENT_ORDER_DEPENDENT
 
 ---
@@ -256,7 +261,7 @@ Currier A entries can operate in **two postures** while following identical rule
 | C389 | Adjacency structure exists |
 | C422 | DA articulation |
 | C424 | Clustered adjacency |
-| C475 | DA-boundary suppression |
+| ~~C475~~ | ~~DA-boundary suppression~~ mis-cited — C475 is MIDDLE incompatibility, demoted to Tier 3 |
 
 ### Tier 3 (Characterized)
 | Finding | Source |
@@ -277,7 +282,7 @@ Currier A entries can operate in **two postures** while following identical rule
 2. Latent order reconstruction (curriculum recovery)
 3. Further A-AZC breadth formalization
 
-### 9.2 Closed (Stop Here)
+### 9.2 Closed (Stop Here) [retired closure language — Strategic review §5]
 - Boundary tokens as adaptive signals
 - Closure-HT hypotheses
 - Closure-adjacency delimiter theories
@@ -302,3 +307,4 @@ Currier A entries can operate in **two postures** while following identical rule
 
 *Currier A characterization is COMPLETE.*
 *Further work should focus on presentation, not discovery.*
+*[Historical closure banner — retired language (Strategic review §5); see SYSTEM/STATUS_BRIEF.md.]*

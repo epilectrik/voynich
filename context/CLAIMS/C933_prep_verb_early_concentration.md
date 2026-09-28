@@ -1,6 +1,6 @@
 # C933: Prep Verb Early Concentration
 
-**Tier:** 2
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row)
 **Scope:** B
 **Phase:** PARAGRAPH_EXECUTION_SEQUENCE
 

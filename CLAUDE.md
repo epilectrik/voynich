@@ -27,6 +27,10 @@ git push origin master && git push github master:main
 
 **Primary Entry Point:** [context/CLAUDE_INDEX.md](context/CLAUDE_INDEX.md)
 
+**Current status in one page:** [context/SYSTEM/STATUS_BRIEF.md](context/SYSTEM/STATUS_BRIEF.md) — what stands, what is withdrawn and why, how to annotate stale citations. Read it before relying on any document written before the September 2026 review; where they conflict, the brief and the generated `CONSTRAINT_TABLE.txt` win.
+
+**Open questions and next tests:** [context/SYSTEM/RESEARCH_AGENDA.md](context/SYSTEM/RESEARCH_AGENDA.md)
+
 ---
 
 ## SCRIPT CONSTRUCTION GUIDELINES
@@ -74,15 +78,17 @@ print(m.has_articulator)  # False (property, not method)
 m2 = morph.extract('ychody')
 print(m2.articulator, m2.prefix, m2.middle)  # 'y', 'ch', 'od'
 
-# Atom-level decomposition for glossing (C1394 HEAD+MOD*+TERM model)
+# Atom-level decomposition (C1394 HEAD+MOD*+TERM model)
 # Bypasses MIDDLE/SUFFIX boundary — reads post-prefix chars as flat atom sequence.
-# Use this for glossing/decoding. Use extract() for structural constraint analysis.
+# Use extract() for structural constraint analysis.
+# NOTE: the gloss words ('heat', 'cool', ...) are Tier-3 role hypotheses, not readings of the text
+# (strategic review 2026-09-27 §6; kernel reading withdrawn, C089 -> C2082). Treat them as labels.
 a = morph.atomize('qokeedy')
 print(a.prefix)    # 'qo'
 print(a.atoms)     # [('k','HEAD','heat'), ('e','MOD','cool'), ('e','MOD','cool'),
-                    #  ('d','MOD','mark'), ('y','TERM','end')]
-print(a.e_depth)   # 2 (gentle/stabilized heat — balneum mariae signature)
-print(a.gloss)     # 'qo:heat.cool.cool.mark.end'
+                    #  ('d','MOD','do'), ('y','TERM','end')]
+print(a.e_depth)   # 2 (number of e modifiers; any thermal reading is a Tier-3 gloss)
+print(a.gloss)     # 'qo:heat.cool.cool.do.end'
 print(a.is_headless)        # False
 print(a.terminal_opacity)   # 'OPAQUE'
 
@@ -181,8 +187,8 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 7.25 |
-| Constraints | 1875 live in the generated table (T0 17, T1 35, T2 1684, T3 135, T4 4); numbering through C2082 |
+| Version | 7.26 |
+| Constraints | 1889 live in the generated table (T0 2, T1 38, T2 1679, T3 166, T4 4); numbering through C2082 |
 | Phases | 763 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending) |
 | Folios | 83 (Currier B) |
 | Core model | Tier 0 restated 2026-09-28 to its measured core (grammar, line organisation, folio units, generators excluded); the control-program reading is Tier 3; the glyph-level kernel re-test is MIXED (C2082: word-ending routing, not a kernel). External tests: Timm (C2077) and Naibbe (C2080) excluded; hazard/forbidden-transition layer withdrawn (C2081); Testamentum chapter matching not evidence (PHASE_762) — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
@@ -194,7 +200,7 @@ Use these to verify your filtering is correct:
 
 > Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
 
-**Working interpretation (Tier 3 — support withdrawn, not falsified):** the grammar is read as a family of closed-loop, kernel-centric control programs. This was the Tier-0 sentence until 2026-09-28 (the "narrow viability regime" clause was struck earlier that day, C783/C2060/C2063/C2081). It was restated by human sign-off after the pillar re-check: the kernel test behind "kernel-centric" was uninformative (EVA letters; pass criterion independent of the data; C089), and all four "closed-loop" legs — LINK monitoring, kernel intervention, hazard avoidance, convergence — were withdrawn (C171, C1401–C1403). The glyph-level kernel re-test (PHASE_763, C2082) returned MIXED: k shows no routing beyond its controls, and the cross-token pass is word-ending routing (e, bench and the non-kernel d), not a kernel; C089 is superseded. External tests so far: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded. Full record: `context/CORE/frozen_conclusion.md`. Forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
+**Working interpretation (Tier 3):** the grammar is read as procedural notation — a family of programs for a process. No current measurement distinguishes this reading from other constrained notations. Until 2026-09-28 the Tier-0 sentence read "a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime"; each of those supports was withdrawn on re-check (hazard layer C783/C2060/C2081; closed-loop legs C171, C1401–C1403; kernel C089 → C2082, where the glyph-level re-test found word-ending routing, not a kernel). External tests: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded. Current status: `context/SYSTEM/STATUS_BRIEF.md`; full record: `context/CORE/frozen_conclusion.md`; open questions and next tests: `context/SYSTEM/RESEARCH_AGENDA.md`.
 
 ---
 
@@ -256,7 +262,7 @@ Fires on: promote / demote / "doesn't hold" / "confirms" / "strengthens/weakens"
 
 ### Always-Loaded Negative Knowledge (anti-echo priors — apply when assessing ANY finding)
 
-- **Bounds:** matcher genericity (**C2052** — match breadth is not evidence; Theophilus metalwork hit the same folios); semantic ceiling (**C171** — atom/token operational *referents* are not recoverable from the text); the operational-specificity death zone ("encodes X" interpretations reliably die; structural *measurements* survive).
+- **Bounds:** matcher genericity (**C2052** — match breadth is not evidence; Theophilus metalwork hit the same folios); referent ceiling (**C171**, demoted to Tier 3 with its closed-loop legs — no token referent has been recovered from internal structure alone; recovery needs an external channel: images, sources, prospective anchors); the operational-specificity death zone ("encodes X" interpretations reliably die; structural *measurements* survive).
 - **Framework-as-null:** a clean framework-fit is a prior toward NULL. A finding statable entirely in existing operational vocabulary gets MORE scrutiny, not less.
 - **Meta-failure:** same-model review (incl. crazy-expert) is a rigor/bookkeeping check, NOT an echo defense — clean-fit needs external grounding or the human. The real catches come from external corpora + the human, never a second constraint-carrying agent.
 - **Failure taxonomy** (priors when re-citing or auditing old constraints): invented-threshold · sparsity-denominator · wrong-null (chi² vs permutation) · broken-baseline · post-hoc-claim-substitution · floor-vs-discriminator · bootstrap-ratio-at-noise-floor · window-blindness · asymmetric-update · ungrounded-from-scratch · stale-retraction-row.
@@ -268,13 +274,13 @@ Fires on: promote / demote / "doesn't hold" / "confirms" / "strengthens/weakens"
 
 ```
 context/
-├── CLAUDE_INDEX.md      ← START HERE
+├── CLAUDE_INDEX.md      ← START HERE (then SYSTEM/STATUS_BRIEF.md)
 ├── DATA/                ← TRANSCRIPT ARCHITECTURE (read before writing scripts!)
 ├── SYSTEM/              ← Methodology, tiers, stop conditions
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
 ├── STRUCTURAL_CONTRACTS/ ← API layer (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC)
-├── CLAIMS/              ← 1,220 constraints (INDEX + files)
+├── CLAIMS/              ← registry (INDEX.md + files); CONSTRAINT_TABLE.txt is the generated live list
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
 ├── METRICS/             ← Quantitative facts
@@ -296,7 +302,7 @@ context/
 
 ## Change History
 
-The authoritative changelog is `context/SYSTEM/CHANGELOG.md` (covers v1.0 through v3.10+).
+The authoritative changelog is `context/SYSTEM/CHANGELOG.md` (covers v1.0 through the current version).
 
 ## Legacy Documentation
 
@@ -441,14 +447,16 @@ When working on apps, visualizations, or any tangent project in this repository:
 
 ## Structural Contracts (API Layer)
 
-For quick structural validation without reading dozens of constraints, use **Structural Contracts**:
+For quick structural validation without reading dozens of constraints, use **Structural Contracts**.
+
+> **Contracts predate the September 2026 review.** They were aligned to `context/SYSTEM/STATUS_BRIEF.md` on 2026-09-28: sections resting on withdrawn constructs carry a `status: WITHDRAWN` / `SUSPENDED` marker and are historical. A contract guarantee is only as good as the live status of the constraints it cites — check `CONSTRAINT_TABLE.txt` before relying on one.
 
 | System | Contract File | Use When |
 |--------|---------------|----------|
 | Currier A | `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml` | Any A structure question |
 | A->AZC | `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml` | How AZC affects A entries |
 | AZC->B | `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml` | How AZC legality propagates to B |
-| Currier B | `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` | B internal grammar, kernel, hazards |
+| Currier B | `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` | B internal grammar (classes, zones, coupling); kernel/hazard sections are historical |
 | Human Track | `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml` | HT layer: cross-system, 17 guarantees, 10 invariants |
 | Paragraph | `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml` | Paragraph unit: cross-system, 15 guarantees, 10 invariants |
 
@@ -544,8 +552,8 @@ For questions about paragraph structure:
 - Independence model (parallel programs, self-containment)
 - Header-body architecture (enrichment, compound specification)
 - A-B correspondence (pool relationship, structural parallel)
-- Folio-paragraph organization (distribution, convergence, section effects)
-- Stability properties (LINK/hazard neutrality, body homogeneity)
+- Folio-paragraph organization (distribution, section effects; "convergence" is occupancy only, C1401–C1403)
+- Body homogeneity (the LINK/hazard items are historical: C609/C1174, C2081)
 
 **Check `paragraph.psc.yaml` FIRST.** This is the paragraph from the paragraph's own perspective.
 
@@ -563,14 +571,16 @@ Need A profiling details? → Use CASC (paragraph_structure section)
 ### BCSC Priority Rule
 
 For questions about Currier B internal grammar:
-- 49 instruction classes and role taxonomy
-- Kernel structure (k, h, e operators)
-- Hazard topology (17 forbidden transitions, 5 classes)
-- Program structure (folio = program, line = control block)
-- Convergence behavior (STATE-C, MONOSTATE)
-- LINK operator (monitoring/intervention boundary)
-- Recovery architecture (escape routes, stability anchor)
-- Design freedom (hazard clamped, recovery free)
+- 49 instruction classes and role taxonomy (roles are labels; C591)
+- Positional zones and line structure (C956, C357)
+- Boundary glyph coupling and word-ending routing (C1212, C1563, C2082)
+- Zero bigrams (reduce to composition + zones + coupling, C2081)
+- Family structure (qo/ok, qo vs ch/sh alternation: C1313, C549, C2056)
+- Folio units (shared grammar, own vocabulary: C531, C1790)
+
+Historical sections (withdrawn — read only for provenance): kernel k/h/e operators (C089 → C2082), hazard topology
+and the 17 forbidden transitions (C783 demoted, C2060, C2081), convergence targets (C1401–C1403), LINK monitoring
+(C609, C1174), recovery architecture / design freedom (C458, demoted).
 
 **Check `currierB.bcsc.yaml` FIRST.** This is the pure internal grammar, independent of A and AZC.
 

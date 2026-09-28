@@ -1,5 +1,7 @@
 # S vs B Operational Structure (Tier 4 Synthesis — REVISED)
 
+**Status (v7.25, 2026-09-28):** The source-corpus anchors are withdrawn or demoted — the Testamentum matches cited for Section B are Tier 3 (C1925–C1927 moved there by the PHASE_762 triage — no chapter ↔ folio correspondence signal, match breadth is not evidence, C2052; C1928 is itself Tier 3), and the Section S pharmacy-list reading was demoted 2026-05-15 (C1995 is Tier 3). See SYSTEM/STATUS_BRIEF.md §3.
+
 **Status:** Tier 4 substantive interpretation (Tier 2-3 anchors), revised after three-tier control test
 **Date:** 2026-05-04 (revised)
 **Phase:** 685
@@ -48,7 +50,7 @@ f80r (z=-2.77 in original killer test) is the most extreme case — a Section B 
 
 This revised reading aligns naturally with what we'd expect:
 
-- **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928). Multi-step alchemical procedures with explicit thermal-regime cycling.
+- **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928) [v7.25: not validated — C1925–C1927 demoted to Tier 3 in the PHASE_762 Testamentum triage; C1928 is Tier 3; C1924 is an unrelated row]. Multi-step alchemical procedures with explicit thermal-regime cycling.
 - **Section S** would match medieval pharmacy-index literature: *Antidotarium Nicolai*, *Mesue's Grabadin*, simple-collections, herbal-preparation lists. Many short entries, each a variant of base operations, rather than long multi-step procedures.
 
 Crucially, **neither section requires the Voynich to do something no source corpus does.** Both readings are realizable in known medieval programming styles.
@@ -81,6 +83,6 @@ What we GAIN:
 
 3. **The aggregate finding can hide multiple sub-findings.** C1994's z=+1.51 vs -0.36 was a real difference, but it decomposed into two distinct phenomena (S compactness + B alternation), neither matching the original interpretation.
 
-4. **Demoting an interpretation is not retracting the structural fact.** C1994 remains Tier 2. C1995 was revised, not retracted. The data didn't lie; the reading did.
+4. **Demoting an interpretation is not retracting the structural fact.** C1994 remains Tier 2. C1995 was revised, not retracted. [C1995 is now Tier 3; its pharmacy reading was demoted 2026-05-15] The data didn't lie; the reading did.
 
 5. **Crazy-expert's three-tier test design was the cleanest possible discriminator.** Tier C (cross-PREFIX) avoided circularity by definition — pairs that share neither stem nor PREFIX are operationally distinct, so any signal there can't be explained by stem-locality.

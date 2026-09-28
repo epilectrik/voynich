@@ -1,8 +1,10 @@
 # MIDDLE Frequency Distribution Analysis
 
+**Status (v7.25, 2026-09-28):** The "high-hazard context" readings (Test 3, Bayesian Test 4, the prefix hazard classes) use the withdrawn hazard layer (5-class taxonomy imposed, C2060; class level demoted, C783; forbidden transitions reduce to composition, C2081), the STATE-C and recovery terms rest on withdrawn constructs (C1401–C1403, C458), and the "COMPLETE + SATURATED" / "CLOSED" status is retired closure language (strategic review §5). The frequency counts are left as recorded — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** COMPLETE + SATURATED | **Date:** 2026-01-11
 
-> **Saturation Note:** This analysis, together with the Perturbation Space Phase, represents the maximum achievable internal resolution for MIDDLE identification. The question "can we identify MIDDLEs by sharing patterns?" is CLOSED: behavioral independence/dependence can be determined, but entity semantics cannot. See [C461](../CLAIMS/C461_ht_middle_rarity.md), [C462](../CLAIMS/C462_universal_mode_balance.md).
+> **Saturation Note:** This analysis, together with the Perturbation Space Phase, represents the maximum achievable internal resolution for MIDDLE identification. The question "can we identify MIDDLEs by sharing patterns?" is CLOSED: behavioral independence/dependence can be determined, but entity semantics cannot. See [C461](../CLAIMS/C461_ht_middle_rarity.md), [C462](../CLAIMS/C462_universal_mode_balance.md). [v7.25: saturation/CLOSED language is historical (retired, strategic review §5); C461 and C462 are Tier 3 observations]
 
 > **Goal:** Test whether MIDDLE frequency distribution encodes physically interpretable structure from the apparatus perspective.
 
@@ -75,7 +77,7 @@ No significant correlation between MIDDLE frequency and sister preference deviat
 | Spearman rho | -0.339 |
 | p-value | 0.0001 |
 
-**Strong finding:** Rare MIDDLEs appear disproportionately in high-hazard contexts (ch/sh/qo prefixes).
+**Strong finding:** Rare MIDDLEs appear disproportionately in high-hazard contexts (ch/sh/qo prefixes). [v7.25: "high-hazard" labels for prefixes rest on the withdrawn hazard layer; the correlation is with prefix family]
 
 **Apparatus interpretation:** Edge-case recognition is concentrated where it matters most — in dangerous situations that require precise discrimination. Common situations can be handled with flexible recognition; dangerous edge cases require specific identification.
 

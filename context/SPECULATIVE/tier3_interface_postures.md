@@ -1,12 +1,14 @@
 # Currier A Interface Postures: Registry vs Visual Anchoring
 
-**Status:** CLOSED | **Tier:** 3 (Interface Characterization) | **Phase:** A_LABEL_INTERFACE_ROLE
+**Status:** CLOSED [v7.25: closure status retired — label grounding is back on the forward plan (strategic review §3, §5)] | **Tier:** 3 (Interface Characterization) | **Phase:** A_LABEL_INTERFACE_ROLE
 
 ---
 
 ## Final Assessment
 
 > **The A_LABEL_INTERFACE_ROLE phase closes the last unresolved human-interface ambiguity in the Voynich Manuscript, confirming that illustration labels are a contextual posture of Currier A's discrimination registry—structurally inert, semantically silent, and optimally designed to hand responsibility back to expert human judgment.**
+>
+> [v7.25: "closes the last unresolved … ambiguity" is retired closure language; the label measurements stand as measurements, the question is open.]
 
 ---
 
@@ -107,6 +109,8 @@ The manuscript instead guarantees:
 
 > Whatever the operator chooses to recognize, **incompatible or unsafe combinations will be structurally impossible.**
 
+[v7.25: this guarantee rests on MIDDLE incompatibility (C475, demoted: the percentage measured sparsity) and the hazard layer (withdrawn, C2081); it is not current structure.]
+
 ---
 
 ## Constraint Alignment
@@ -115,9 +119,9 @@ This investigation is fully consistent with:
 
 | Constraint | Relationship |
 |------------|--------------|
-| C171 | Semantic ceiling: labels do not introduce semantics |
+| C171 | Semantic ceiling: labels do not introduce semantics (C171 demoted to Tier 3) |
 | C384 | No entry-level A↔B coupling: labels don't affect execution |
-| C475-C476 | Incompatibility + coverage: labels use same discrimination space |
+| C475-C476 | Incompatibility + coverage: labels use same discrimination space (C475 demoted to Tier 3; C476 retracted) |
 | C478 | Temporal scheduling: labels participate in coverage trajectory |
 | C343, C441-C444 | A↔AZC interaction: labels project normally to AZC |
 | C477 | HT model: labels don't shift vigilance posture |
@@ -144,9 +148,9 @@ This investigation is fully consistent with:
 ## Provenance
 
 - **Prior Work:** PHARMA_LABEL_DECODING (label discovery), TRANSCRIPT_ARCHITECTURE_AUDIT (placement column)
-- **Constraints Touched:** C171, C240, C343, C384, C441-C444, C475-C478
+- **Constraints Touched:** C171, C240, C343, C384, C441-C444, C475-C478 [C171 and C475 demoted to Tier 3; C476 retracted]
 - **Expert Validation:** 2026-01-16
-- **Status:** CLOSED with explanatory saturation
+- **Status:** CLOSED with explanatory saturation [retired closure language (strategic review §5); historical status]
 
 ---
 

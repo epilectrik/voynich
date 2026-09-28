@@ -1,6 +1,6 @@
 # C1025: Generative Sufficiency — Class Markov + Forbidden Suppression Is Sufficient at M2 (80%)
 
-**Tier:** 2 (Structural Inference)
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row) (Structural Inference)
 **Scope:** B
 **Phase:** GENERATIVE_SUFFICIENCY (Phase 348)
 **Depends on:** C121 (49 instruction classes), C109 (forbidden transitions), C978 (spectral gap), C1010 (6-state macro-automaton), C267 (compositional morphology), C1023 (PREFIX routing), C1024 (MIDDLE directionality)

@@ -6,6 +6,8 @@
 
 This synthesis is consolidation, not new claims. Every claim cites underlying constraints or phases.
 
+> **Status note (2026-09-28, v7.25):** this document is the historical synthesis of 2026-05-18. It predates the September 2026 review, which withdrew several constructs it relies on (kernel, hazard topology, convergence, the Testamentum chapter↔folio correspondence and the cold-read catalog). For what currently stands, read [SYSTEM/STATUS_BRIEF.md](SYSTEM/STATUS_BRIEF.md) first; it and the generated `CONSTRAINT_TABLE.txt` win wherever this document conflicts with them. Sections resting on withdrawn constructs are bannered below; the text is kept for traceability. Current counts: 763 phases; 1,889 live constraints (T0 17, T1 38, T2 1,695, T3 135, T4 4).
+
 ---
 
 ## 1. Frozen Conclusion (Tier 0)
@@ -14,7 +16,7 @@ This synthesis is consolidation, not new claims. Every claim cites underlying co
 
 *Restated 2026-09-28. The former sentence ("…a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.") is now the Tier-3 working interpretation; see CORE/frozen_conclusion.md.*
 
-This is the load-bearing framework conclusion that survives all internal-data testing through PHASE_701. The substrate is operational notation, not natural language; the content is control-flow specifications, not narrative or descriptive text.
+*(Historical, 2026-05: "This is the load-bearing framework conclusion that survives all internal-data testing through PHASE_701. The substrate is operational notation, not natural language; the content is control-flow specifications, not narrative or descriptive text.")* **Current status:** the substrate is not natural language written one token per word (C132, C2015, C2022). Reading the content as procedural notation (a family of programs for a process) is the Tier-3 working interpretation; no current measurement distinguishes it from other constrained notations, and the control-program supports (kernel, closed loop, hazard avoidance, convergence) are withdrawn (C089 superseded by C2082; C171 demoted to Tier 3; STATUS_BRIEF §1, §3).
 
 ---
 
@@ -26,13 +28,13 @@ Voynich Currier B is structurally distinct from natural language at five indepen
 |------|-----------|---------|
 | **Information density** | C2015 | ~2× more compressible than NL Latin at char level |
 | **Surface statistics** | C2022 | Anti-NL character distribution + Markov plateau at higher-order |
-| **Sequential grammar** | C2032 | Stem-class lag2/lag1 = ±0.66 (Section B period-2, matched-S sustained); absent from NL Latin (Codicillus +0.05, Mesue −0.17) |
-| **Lexical inventory** | C2036 | Closed-lexicon hypothesis falsified — MIDDLE inventory 1,302 vs. 80-150 hypothesized for Chinese-character-style closed lexicon |
+| **Sequential grammar** | C2032 | Stem-class lag2/lag1 = ±0.66 (Section B period-2, matched-S sustained); absent from NL Latin (Codicillus +0.05, Mesue −0.17) **[rescoped PHASE_755: length-confounded — a Section B alternation not shown to be a section property independent of paragraph length; r21 is a noise-floor ratio (report D); NL comparison units are Latin words, not letters]** |
+| **Lexical inventory** | C2036 | Closed-lexicon hypothesis falsified — MIDDLE inventory 1,302 vs. 80-150 hypothesized for Chinese-character-style closed lexicon (a Tier-1 exclusion of one alternative, not a positive substrate measurement) |
 | **Folio-aggregate similarity** | C2035 | Mantel null on token-set vs Latin-content similarity (ρ=+0.12, p=0.14) — operational-class match does NOT propagate to lexical overlap |
 
 These are **independent** measurements. Together they establish Voynich as structurally distinct from natural language at multiple decomposition levels.
 
-**Related substrate-distinctness measurements:** C2031 (Section B vs matched-S e-depth asymmetry), C2033 (V/C-partition projection flexibility — Voynich 2.4× max NL Latin hill-climb improvement), C2039 (within-folio shuffle null falsification of hapax-dark correlation).
+**Related substrate-distinctness measurements:** C2031 (Section B vs matched-S e-depth asymmetry — rescoped PHASE_755 as length-confounded), C2033 (V/C-partition projection flexibility — Voynich 2.4× max NL Latin hill-climb improvement), C2039 (within-folio shuffle null falsification of hapax-dark correlation).
 
 ---
 
@@ -42,7 +44,7 @@ Eight medieval alternative-class structural hypotheses have been tested and fals
 
 | Class | Test method | Falsification source |
 |-------|------------|---------------------|
-| Natural language Latin | Multiple corpora at multiple decomposition levels | C2015 + C2022 + C2032 |
+| Natural language Latin | Multiple corpora at multiple decomposition levels | C2015 + C2022 + C2032 (the C2032 leg is rescoped as length-confounded, PHASE_755; the current exclusion rests on C132, C2015, C2022) |
 | Polyalphabetic cipher | Atom bigram stability across PREFIX contexts | C1976 |
 | Closed-lexicon NL | MIDDLE inventory size vs hypothesized 80-150 | C2036 |
 | Mensural notation (period-2 music) | Cross-language autocorrelation comparison | C2032 |
@@ -58,11 +60,15 @@ Eight medieval alternative-class structural hypotheses have been tested and fals
 
 ## 4. Operational Framework (What Voynich IS)
 
+**[Status v7.25: the "operational" reading throughout this section is the Tier-3 working interpretation (STATUS_BRIEF §1). Items resting on withdrawn constructs are marked below; the cold-read and cardinality-anchor subsections are withdrawn.]**
+
 ### Atom system (C1394, C1195)
 
 Three-position compositional structure: PREFIX + MIDDLE + SUFFIX with stable operational semantics.
 
 **Locked atom glosses** (high confidence — verified by cross-folio statistical consistency):
+
+*[Status v7.25: these glosses are interpretive vocabulary. C1195 stays Tier 2 as a gloss-consistency measurement, but the k/h/e role glosses are demoted to Tier 3 (C103–C105; the kernel claim C089 is superseded by C2082), "h" is half the bench glyph ch/sh (PHASE_754), and operational referents are not recovered (C171, demoted to Tier 3).]*
 
 | Atom | Role | Gloss |
 |------|------|-------|
@@ -81,7 +87,7 @@ Three-position compositional structure: PREFIX + MIDDLE + SUFFIX with stable ope
 | c | MOD | adjust |
 | r | TERM | respond |
 
-Atoms have stable semantics across all prefix contexts (C1976 — polyalphabetic cipher rejected).
+Atoms have stable semantics across all prefix contexts (C1976 — polyalphabetic cipher rejected). [Scoped: C1976 measured the stability of atom bigram contexts across prefix classes, which rejects polyalphabetic substitution; it does not establish what the atoms mean.]
 
 ### Dark Pipeline (C1135-C1149+)
 
@@ -96,13 +102,15 @@ Dark pipeline is the closest the framework comes to a "lexical content" layer, o
 
 ### Grammar architecture
 
-- **Hazard topology** — [2026-09-27: C783 demoted, C1118 demoted, C2023 demoted; the class-level "17 forbidden transitions" is not supported; surviving layer is C957 token-level zeros, pending re-screen]
-- **Period-2 structure in Section B** (C2032): lag2/lag1 = −0.66, sign-reversal pattern
-- **Sustained autocorrelation in matched-S** (C2031): lag2/lag1 = +0.66, persistent positive
-- **Multi-paragraph procedural folios** (C1399, C1400, C845): paragraphs are self-contained operational units with cardinality reflecting recipe complexity
+- **Hazard topology** — **[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** 2026-09-27: C783 demoted, C1118 demoted, C2023 demoted; the class-level "17 forbidden transitions" is not supported. 2026-09-28: the token-level zeros (C957) are superseded by C2081 — they reduce to line composition, positional zones and boundary glyph coupling. No prohibition layer remains.
+- **Period-2 structure in Section B** (C2032): lag2/lag1 = −0.66, sign-reversal pattern [rescoped PHASE_755: length-confounded; r21 is a noise-floor ratio — report D = lag2−lag1 excess]
+- **Sustained autocorrelation in matched-S** (C2031): lag2/lag1 = +0.66, persistent positive [rescoped PHASE_755: the Section B vs S divergence holds in no equal-length stratum]
+- **Multi-paragraph procedural folios** (C1399, C1400, C845): paragraphs are self-contained units (C845) with cardinality reflecting recipe complexity [the recipe-complexity reading is C1974, demoted to Tier 3 in the PHASE_762 triage]
 - **Section-level structural divergence** (C2028): Section S vs Section B show different heat-cycle MIDDLE adjacency signatures
 
-### Cold-read framework (C1971-C1976)
+### Cold-read framework (C1971-C1976) — withdrawn; C1971–C1975 demoted to Tier 3
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C1971–C1975 were demoted to Tier 3 in the PHASE_762 triage (C2052 criterion, human-approved): the cold reads were self-scored without blind decoys, and the folio↔recipe pairings came from a generic matcher (C2052 — the same matcher hits the same folios with an unrelated metalwork text). C1976 (polyalphabetic cipher rejected, Tier 1) is unaffected.
 
 Fifteen Currier B folios cold-read against Pseudo-Lull Testamentum recipes. 12 coherent, 3 plausible, 0 incoherent.
 
@@ -110,7 +118,9 @@ Fifteen Currier B folios cold-read against Pseudo-Lull Testamentum recipes. 12 c
 
 **The matching is operational-class signature, NOT textual decoding.** Per C2035 (Mantel null): operational-class match does not propagate to token-aggregate lexical overlap. The catalog establishes operational-class peers between Voynich folios and Pseudo-Lull recipes, not text-level cipher correspondence.
 
-**The cardinality anchor convergence** (C1965, C1969, C1989, C2034): f75r contains the corpus-singular 4-qokedy run (C1889), and III.19.0 is the unique Catalan recipe with both ×4 AND ×9 cardinality markers (1/189 SISMEL Catalan sub-recipes — C2034). Joint conjunction probability ≈ 1/16,500. This is the strongest single piece of pair-specific evidence in the registry.
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C1965, C1969 and C1989 are demoted to Tier 3. The scan-verified source reads III.19 as "four times, otherwise nine times" (alternative counts for one step, not a ×4 + ×9 conjunction), and the f75r ↔ III.19 pairing came from the generic matcher (C2052). What stands: C1889 (f75r's qokedy ×4 run is corpus-singular) and C2034 (III.19 is the only SISMEL Catalan sub-recipe with both counts) as separate corpus facts, not as a correspondence. The "≈1/16,500" conjunction figure and the "strongest single piece of pair-specific evidence" framing do not stand as correspondence evidence (demoted C1969 also carries ×3 search multiplicity).
+
+**The cardinality anchor convergence** (historical; C1965, C1969, C1989 demoted; C2034): f75r contains the corpus-singular 4-qokedy run (C1889), and III.19.0 is the unique Catalan recipe with both ×4 AND ×9 cardinality markers (1/189 SISMEL Catalan sub-recipes — C2034). Joint conjunction probability ≈ 1/16,500. This is the strongest single piece of pair-specific evidence in the registry.
 
 ---
 
@@ -124,8 +134,8 @@ Evidence:
 - C14 dating 1404-1438 (vellum)
 - Northern Italian production indicators (codicology, script style)
 - **Pelling 2017 architectural identification:** Ghibelline swallowtail merlons in rosette foldout → Milan-specific architectural marker
-- **Independent textual identification:** Pseudo-Lull Testamentum identified as primary source via computational matching (51 chapters → 41 folios, p<0.0001 — phases 628-639)
-- **Testamentum's own Milan reference:** Ch40M dated "at Milan in the year 1333"
+- **Independent textual identification:** Pseudo-Lull Testamentum identified as primary source via computational matching (51 chapters → 41 folios, p<0.0001 — phases 628-639) **[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3: Testamentum chapter↔folio matching shows no correspondence signal (PHASE_762); the matcher is generic (C2052); 20 correspondence rows moved to Tier 3. This leg no longer supports the hypothesis.]**
+- **Testamentum's own Milan reference:** Ch40M dated "at Milan in the year 1333" [bears on the manuscript only through the Testamentum identification above, which is withdrawn]
 - Visconti documented alchemy obsession (Filippo Maria reclusive, secretive ruler)
 - Court-scale product range matches (mercury preparations, gold dissolution, quintessence, aqua vitae, pearl-making — implies well-funded, sustained operation)
 - **5-scribe workshop structure** (Davis 2020): master + 4 collaborators, multi-decade institutional continuity required — fits Visconti court alchemy operation
@@ -204,7 +214,7 @@ Documented `feedback_three_mechanism_demotion_trifecta_2026_05_16` (now extended
 
 **Promotion discipline:** Tier 3 → Tier 2 for mechanism claims now requires BOTH Voynich-internal discriminating test pass AND external-corpus validation, not just one. Most operational interpretations don't survive both gates.
 
-**Measurement-level structural facts survive.** Substrate-distinctness measurements (C2015, C2022, C2032, C2036, C2039) at the substrate level remain Tier 2 because they don't claim operational mechanism — they claim measurable structural distinctness from named alternatives.
+**Measurement-level structural facts survive.** Substrate-distinctness measurements (C2015, C2022, C2032, C2036, C2039; C2032 since rescoped as length-confounded, PHASE_755; C2036 is a Tier-1 exclusion) at the substrate level remain Tier 2 because they don't claim operational mechanism — they claim measurable structural distinctness from named alternatives.
 
 ---
 
@@ -219,13 +229,15 @@ Per `feedback_framework_as_null` and accumulated discipline:
 5. **No proof that the Voynich was in the Visconti library.** Pavia library catalog (1426 *consignatio librorum*, 988 titles) summary is dominated by literary works, not alchemy. The Voynich is NOT specifically attested in surviving Visconti library records.
 6. **No identification of the interim Romance-speaking practitioner** who added zodiac labels.
 7. **No specific named producer for ANY Italian apothecary-court-alchemy operation** that matches the Voynich. The right kind of figure existed; the SPECIFIC figure who made Voynich is unrecovered.
-8. **No external-corpus alignment that produces positive decode.** Pseudo-Lull operational-class match (C1971) is operational, not text-level.
+8. **No external-corpus alignment that produces positive decode.** Pseudo-Lull operational-class match (C1971) is operational, not text-level. [Since demoted: C1971 is Tier 3 after the PHASE_762 triage; the match itself is no longer evidence (C2052).]
 
 These are honest limits, not failures. The project has done substantial work but remains within the procedural ceiling that internal data + accessible online scholarship can support.
 
 ---
 
 ## 8. Open Frontiers — What Would Actually Move Things
+
+*[Historical (2026-05). The current forward plan is SYSTEM/STRATEGIC_REVIEW_2026-09-27.md, which adds generator-based rival tests and glyph-unit checks that this list omits.]*
 
 Per expert consultation across PHASE_697-701, three concrete directions could plausibly advance:
 
@@ -235,7 +247,7 @@ Per expert consultation across PHASE_697-701, three concrete directions could pl
 
 ### B. Physical reconstruction
 
-Trajectory-encoded vs instruction-encoded interpretation of C2031 e-depth asymmetry requires physical apparatus reconstruction to exceed Tier 3 (per `feedback_mechanism_cycle_procedural_ceiling`). Build the alchemical apparatus the substrate signatures predict (multi-vessel reflux distillation per rosettes_workshop_diagram.md). Measure operationally. Compare to Voynich operational measurements.
+Trajectory-encoded vs instruction-encoded interpretation of C2031 e-depth asymmetry (rescoped PHASE_755 as length-confounded) requires physical apparatus reconstruction to exceed Tier 3 (per `feedback_mechanism_cycle_procedural_ceiling`). Build the alchemical apparatus the substrate signatures predict (multi-vessel reflux distillation per rosettes_workshop_diagram.md). Measure operationally. Compare to Voynich operational measurements.
 
 ### C. Archival research at Italian state archives
 
@@ -287,9 +299,9 @@ Key project-discipline lessons documented in `~/.claude/projects/.../memory/`:
 
 **The Voynich Manuscript project has established:**
 
-- A robust substrate-distinctness framework (5 independent measurement axes confirming Voynich is structurally distinct from natural language)
-- An operational-class identification with Pseudo-Lull Testamentum recipe family (cold reads + computational matching)
-- A historical synthesis pointing to Visconti Milan court production by a German-trained physician (architectural + textual + paleographic + linguistic indicators converging)
+- A robust substrate-distinctness framework (5 independent measurement axes confirming Voynich is structurally distinct from natural language) [scoped v7.25: C2032 rescoped as length-confounded (PHASE_755); the current NL exclusion rests on C132, C2015, C2022]
+- An operational-class identification with Pseudo-Lull Testamentum recipe family (cold reads + computational matching) **[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3: no correspondence signal (PHASE_762); cold reads C1971–C1975 demoted to Tier 3; matcher generic (C2052)]**
+- A historical synthesis pointing to Visconti Milan court production by a German-trained physician (architectural + textual + paleographic + linguistic indicators converging) [its "textual" leg — the Testamentum identification — is withdrawn (PHASE_762)]
 - A documented mechanism-demotion pattern showing operational-specificity reliably fails internal+external discrimination
 - A documented transmission story from production to Rudolf II via Rauwolf-Widemann (Augsburg) pathway
 - A clean documented procedural ceiling for what internal data can establish without external grounding
@@ -320,15 +332,16 @@ Key project-discipline lessons documented in `~/.claude/projects/.../memory/`:
 | File | Purpose |
 |------|---------|
 | `CLAUDE.md` | Project overview, script conventions, structural contracts |
+| `context/SYSTEM/STATUS_BRIEF.md` | **Current status in one page (read first)** |
 | `context/CLAUDE_INDEX.md` | Context navigation entry point |
-| `context/CLAIMS/INDEX.md` | All 2035 validated constraints (Tier 0-2) |
+| `context/CLAIMS/INDEX.md` | All registered constraints with status reasons; live rows and tiers are in the generated `context/CONSTRAINT_TABLE.txt` (1,889 live at v7.25) |
 | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Tier 3-4 interpretations |
 | `context/MODEL_CONTEXT.md` | Architectural framework |
 | `context/STRUCTURAL_CONTRACTS/` | API-layer contracts (CASC, BCSC, etc.) |
 | `phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md` | Production-context historical synthesis |
-| `phases/RECIPE_FOLIO_CORRESPONDENCE/` | C1971 cold-read catalog and supporting work |
+| `phases/RECIPE_FOLIO_CORRESPONDENCE/` | C1971 cold-read catalog and supporting work (historical; C1971 demoted to Tier 3, PHASE_762) |
 | `phases/PHASE_697-700/` | Engineered substrate measurement series |
-| **This document** | Canonical project synthesis (start here for project state overview) |
+| **This document** | Historical project synthesis (2026-05-18); for current state start at `context/SYSTEM/STATUS_BRIEF.md` |
 
 ---
 
@@ -336,8 +349,10 @@ Key project-discipline lessons documented in `~/.claude/projects/.../memory/`:
 
 For external citation of this synthesis (research notes, expert consultation, etc.):
 
-> Voynich Manuscript Project synthesis as of 2026-05-18, v6.71, 2035 validated constraints. Substrate-distinctness established at 5 measurement axes (C2015, C2022, C2032, C2036, C2035). Operational-class match to Pseudo-Lull Testamentum recipe family (C1971, 15 folios). Production context: Visconti Milan court alchemy operation ~1415-1445, German-trained physician master + 4-scribe workshop (Davis 2020 paleography). Transmission via Rauwolf (Italian collecting 1560-63) → Widemann (Augsburg 1599) → Rudolf II. Eight alternative-class hypotheses falsified (NL, polyalphabetic, closed-lexicon, mensural, computus Metonic, solar dominical, lunaria, Lullian wheels). No decode established. Operational-specificity mechanism claims reliably fail external grounding (mechanism-demotion quartet+ documented).
+*[Historical citation block (v6.71). Since superseded in part: the Testamentum operational-class match (C1971) is demoted to Tier 3 and the chapter↔folio correspondence withdrawn (PHASE_762, C2052); C2032 is rescoped as length-confounded (PHASE_755); the Tier-0 statement was restated on 2026-09-28. For current status cite SYSTEM/STATUS_BRIEF.md.]*
+
+> Voynich Manuscript Project synthesis as of 2026-05-18, v6.71, 2035 validated constraints. Substrate-distinctness established at 5 measurement axes (C2015, C2022, C2032, C2036, C2035). Operational-class match to Pseudo-Lull Testamentum recipe family (C1971, 15 folios) [since demoted to Tier 3]. Production context: Visconti Milan court alchemy operation ~1415-1445, German-trained physician master + 4-scribe workshop (Davis 2020 paleography). Transmission via Rauwolf (Italian collecting 1560-63) → Widemann (Augsburg 1599) → Rudolf II. Eight alternative-class hypotheses falsified (NL, polyalphabetic, closed-lexicon, mensural, computus Metonic, solar dominical, lunaria, Lullian wheels). No decode established. Operational-specificity mechanism claims reliably fail external grounding (mechanism-demotion quartet+ documented).
 
 ---
 
-*This synthesis is the project's current stable summary. New findings update specific constraint entries; this document updates only on major framework shifts.*
+*This synthesis was the project's stable summary as of 2026-05-18. New findings update specific constraint entries; this document updates only on major framework shifts. The September 2026 review was such a shift: current status is in SYSTEM/STATUS_BRIEF.md.*

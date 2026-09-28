@@ -1,18 +1,53 @@
-# REGISTRY STATUS NOTE (2026-09-27; regenerate with scripts/registry_integrity_check.py)
-# This contract predates the 2026-05/06 audits. Any guarantee whose provenance cites a constraint
-# listed below is SUSPENDED until the contract is regenerated from live constraint status.
-#   DEMOTED to Tier 3: C458, C475, C547, C557, C558, C561, C600, C783, C816, C817, C819, C863, C869, C872, C873, C874, C875, C876, C879, C880, C896, C936, C1014, C1118, C2023
-#   DEAD (retracted / superseded): C365, C559
-#   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C079, C084, C085, C089, C103, C104, C105, C115, C120, C171
-# Authoritative status: context/CONSTRAINT_TABLE.txt; drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
+# REGISTRY STATUS NOTE (aligned to context/SYSTEM/STATUS_BRIEF.md v7.25 on 2026-09-28;
+# drift check: scripts/registry_integrity_check.py)
+# This contract predates the 2026-05/06 audits and the September 2026 review. On 2026-09-28 it was aligned
+# to STATUS_BRIEF v7.25. Authority order: context/CONSTRAINT_TABLE.txt > context/CLAIMS/INDEX.md >
+# STATUS_BRIEF > this file. Withdrawn constructs are kept for traceability, not deleted; each carries
+#   status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
+# (or an inline status note) and must NOT be read as current structure. What the contract now asserts
+# as measured is in `current_summary` below.
+# Withdrawn sections / entries (bannered in place):
+#   guarantees: TOTAL_COVERAGE (as worded), CONVERGENT_ARCHITECTURE, HAZARD_TOPOLOGY_FIXED,
+#     KERNEL_CENTRALITY, LINK_PHASE_MARKER, DESIGN_ASYMMETRY, CLOSED_LOOP_ONLY
+#   invariants: hazard_asymmetry, kernel_boundary_adjacency (convergence_dominance kept as occupancy only)
+#   grammar.primitives; kernel (k/h/e roles); hazards (hazard topology, 17 forbidden transitions,
+#     5 hazard classes); convergence.target (STATE-C / MONOSTATE as a target); role_taxonomy LINK role;
+#     role_taxonomy hazard_direction; zone_hazard_routing; paragraph_hazard_routing;
+#     morphological_phase_encoding (monitoring/intervention reading); recovery; safety_buffer_architecture;
+#     design_freedom (clamp vs freedom); control_loop (closed-loop framing); apparatus_response_architecture
+#     (virtual-apparatus model diagnostics); annotations kernel/hazard/link/design statistics;
+#     disallowed "decision tree or state machine" (basis C171, demoted to Tier 3)
+# Status of cited constraints in the generated table (2026-09-28):
+#   DEMOTED to Tier 3: C458, C475, C547, C557, C561, C600, C783, C816, C817, C819, C863, C869, C872, C873,
+#     C874, C875, C876, C879, C880, C896, C936, C1014, C1118 (all demoted to Tier 3)
+#   Partly demoted: C558 (positional sub-claims demoted, PHASE_735); C2023 (class-layer scalar-MI half demoted)
+#   DEAD (retracted / superseded): C089 (superseded by C2082), C365, C559, C957 (superseded by C2081)
+#   DEMOTED to Tier 3 by the Tier-0 restatement (2026-09-28): C079, C084, C085, C103, C104, C105, C115, C120, C171
+#   Tier 0 -> 2, measurement only: C074 (57.8% of folios end in their dominant macro-state)
+#   Scoped Tier 2 (forbidden-transition rows; zero excess reduces, C2081): C109, C789, C996, C997, C1000, C1528-C1533, C1546, C1547, C1551
+# Drift report: context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md
 # ============================================================
+
+current_summary:
+  aligned_to: "context/SYSTEM/STATUS_BRIEF.md v7.25 (2026-09-28), sections 1-2"
+  asserts_as_measured:
+    - "Grammar: 49 classes closed over the grammar's own 480-type vocabulary = 69.5% of Currier B tokens; HT/UN defined by exclusion (C121, C124 as corrected, C566, C740)"
+    - "Line organisation: positional zones (C956) and line regularity (C357)"
+    - "Boundary glyph coupling: a token's last glyph predicts the next token's first glyph (C1212, C1563); robust to spacing uncertainty, replicated on ZL (PHASE_761)"
+    - "Word-ending routing: a token's two-glyph ending predicts the next token's class beyond that coupling, above composition, zones and edge counts (C2082)"
+    - "Common-token zero bigrams reduce to line composition, zones and boundary coupling; no prohibition layer remains (C2081)"
+    - "Family preference: qo rich in k, ok in e (C1313); qo alternates with ch/sh above composition (C549); qok->ok/oke above composition (C2056; its qok->sh leg is demoted)"
+    - "Folio units: shared grammar with folio-unique vocabulary (C531); no duplicate lines or paragraphs (C1790). Occupancy: 57.8% of folios end in their dominant macro-state (C074, measurement only)"
+    - "Not reproduced by copy-and-modify generation (C2077) or by the Naibbe cipher as published (C2080)"
+  not_asserted: "Kernel k/h/e as the grammar's core, hazard topology / forbidden transitions, LINK as monitoring, convergence targets, recovery architecture and closed-loop control are withdrawn (STATUS_BRIEF §3). 'Program', 'control' and operational glosses below are the Tier-3 working interpretation."
 
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.35"
-  date: "2026-03-14"
+  version: "3.36"
+  date: "2026-09-28"
   status: "ACTIVE"
+  alignment: "v3.36 (2026-09-28): aligned to STATUS_BRIEF v7.25 — withdrawn constructs bannered in place, stale citations annotated; no claims added or upgraded (see header note)"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
   governance: |
@@ -26,25 +61,25 @@ meta:
 # ============================================================
 scope:
   system: "Currier B"
-  coverage: "61.9% of tokens, 83 folios"
-  function: "What a valid Currier B program is, internally"
+  coverage: "61.9% of tokens, 83 folios"  # legacy figure; current registry: 100% of the grammar's own 480-type vocabulary = 69.5% of B tokens (C124 as corrected; STATUS_BRIEF §2)
+  function: "What a valid Currier B program is, internally"  # 'program' is the Tier-3 working interpretation (STATUS_BRIEF §1)
   a_agnostic: true  # Does not reference Currier A
   azc_agnostic: true  # Does not reference AZC mechanics
   semantic_status:
     structural_correlations: true  # MIDDLEs have measurable behavioral profiles (Tier 2)
     behavioral_glosses: "Tier 3 (conditional on Brunschwig alignment)"
-    referential_content: false  # No substance/material identification from tokens (C120, C171)
-    token_translation: false  # No natural-language translation recoverable (C120)
+    referential_content: false  # No substance/material identification from tokens (C120, C171) [both demoted to Tier 3 by the Tier-0 restatement; the negative part is carried by C119 and the rival exclusions]
+    token_translation: false  # No natural-language translation recoverable (C120) [C120 demoted to Tier 3; the negative part is carried by C119 and the rival exclusions, scoped to the rivals tested (STATUS_BRIEF §4)]
 
 # Explicit ownership declaration
 ownership:
   bcsc_describes:
     - grammar_structure
-    - kernel_roles
-    - hazard_topology
-    - convergence_behavior
+    - kernel_roles  # WITHDRAWN v7.24/7.25 — historical (C089 superseded by C2082; C103-C105 Tier 3); see STATUS_BRIEF §3
+    - hazard_topology  # WITHDRAWN v7.24/7.25 — historical (C783, C2060, C2063, C2081); see STATUS_BRIEF §3
+    - convergence_behavior  # convergence as target WITHDRAWN; occupancy measurement only (C074); see STATUS_BRIEF §3
     - program_structure
-    - recovery_architecture
+    - recovery_architecture  # WITHDRAWN v7.24/7.25 — historical (C458, C105 frequency shadow); see STATUS_BRIEF §3
     - vocabulary_architecture
     - execution_syntax
     - morphological_architecture  # Added v3.0: TOKEN decomposition, PREFIX/MIDDLE/SUFFIX roles
@@ -68,52 +103,62 @@ guarantees:
     provenance: "C1004"
 
   - id: "TOTAL_COVERAGE"
+    status: "WITHDRAWN as worded v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Current: 100% of the grammar's own 480-type vocabulary = 69.5% of B tokens; HT/UN (30.5%) defined by exclusion (C124 as corrected, C566, C740)"
     statement: "Every Currier B token parses; zero non-executable"
-    provenance: "C115, C124"
+    provenance: "C115, C124"  # C115 demoted to Tier 3 (coverage by construction; 'executable' is interpretive)
 
   - id: "CONVERGENT_ARCHITECTURE"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Only the occupancy measurement stands: 57.8% of folios end in their dominant macro-state (C074)"
     statement: "Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403)"
-    provenance: "C074, C079, C084, C1403"
+    provenance: "C074, C079, C084, C1403"  # C079, C084 demoted to Tier 3; C074 Tier 2 as a measurement only
 
   - id: "HAZARD_TOPOLOGY_FIXED"
-    statement: "17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C1118, C2023). At the 49-class projection, hazard structure is transitional (C2023 within-line shuffle null z=+3.91 in B); at the MIDDLE-token layer, it is co-occurrence-forbidden (z=-0.39 at-null in B; 16/17 pairs zero same-line co-occurrence, 1/17 symmetrically suppressed). ~65% compliance figure refers to class-level transition compliance."
-    provenance: "C109, C783, C789, C1118, C2023"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Class level demoted (C783), 5-class taxonomy imposed (C2060), 13 class-level violations in the real corpus (C2063), token zeros reduce to composition, zones and boundary coupling (C2081; C957 superseded)"
+    statement: "17 forbidden class-level transitions are directional (C783, demoted to Tier 3); the underlying MIDDLE-level forbidden pairs are predominantly bidirectional co-occurrence prohibitions (C1118, demoted: sparsity denominator; C2023, class-layer half demoted). At the 49-class projection, hazard structure is transitional (C2023 within-line shuffle null z=+3.91 in B — this class-layer scalar-MI half is demoted); at the MIDDLE-token layer, it is co-occurrence-forbidden (z=-0.39 at-null in B; 16/17 pairs zero same-line co-occurrence, 1/17 symmetrically suppressed). ~65% compliance figure refers to class-level transition compliance."
+    provenance: "C109, C783, C789, C1118, C2023"  # C783, C1118 demoted to Tier 3; C2023 class-layer half demoted; C109, C789 scoped (zero patterns reduce, C2081)
 
   - id: "KERNEL_CENTRALITY"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. At glyph level k shows nothing beyond matched controls; the e/bench signal is word-ending routing (C2082)"
     statement: "k, h, e form irreducible morphological core governing within-token construction"
-    provenance: "C089, C521, C522"
+    provenance: "C089, C521, C522"  # C089 superseded by C2082 (dead); C521's e->h zero is a spelling identity (PHASE_754 gate)
 
   - id: "LINE_FORMALITY"
     statement: "Lines are formal control blocks, not scribal wrapping"
-    provenance: "C357-C360"
+    note: "Measured: lines are 3.3x more regular than random (C357) and grammar is line-invariant (C360). 'Control block' is the Tier-3 working interpretation (C171 demoted to Tier 3)."
+    provenance: "C357-C360"  # [v7.26 status: C359 demoted to Tier 3 (conflicts with C805 (weaker method))]
 
   - id: "LINK_PHASE_MARKER"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. LINK is the 'ol' substring at 13.2% density, a morphological artifact (C609, C1174); C366's quantitative claims not reproduced (C804)"
     statement: "LINK marks boundary between monitoring and intervention"
-    provenance: "C366"
+    provenance: "C366"  # [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
   - id: "DESIGN_ASYMMETRY"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (clamp/free CV asymmetry is a frequency shadow)"
     statement: "Hazard exposure clamped; recovery architecture free"
-    provenance: "C458"
+    provenance: "C458"  # C458 demoted to Tier 3 (frequency shadow)
 
   - id: "CONDITIONAL_ENTROPY_SYMMETRIC"
     statement: "Grammar constraints are bidirectional (H(X|past)=H(X|future)), but execution is directional (transition probabilities uncorrelated). Resolution: PREFIX is the symmetric router (MI asymmetry 0.018 bits), MIDDLE is the directional executor (MI asymmetry 0.070 bits, 4x PREFIX). FL tokens show highest role-specific directionality (JSD 0.311)."
     provenance: "C391, C886, C1024"
 
   - id: "CLOSED_LOOP_ONLY"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. All four legs (monitoring, kernel intervention, hazard avoidance, convergence) withdrawn; closed-loop control is a Tier-3 working interpretation"
     statement: "Execution is closed-loop control, not batch, decision tree, or state machine"
-    provenance: "C171"
+    provenance: "C171"  # C171 demoted to Tier 3 (Tier-0 restatement 2026-09-28)
 
   - id: "PROCESS_CONTROL_DIMENSIONALITY"
     statement: "Voynich B is a parameterized process control manual: PCA dimensionality (5 PCs/80%) matches modern distillation with differentiated MIDPROCESS sub-types, not Brunschwig recipes (3 PCs/80%). ITERATION axis inflated 7.0x vs plant profiles, FREE deflated 6.3x — grammar transforms distillation parameter space for control-program representation."
+    note: "The PCA dimensionality comparisons are the measurement (C1222-C1224). 'Process control manual' / 'control-program representation' is the Tier-3 working interpretation, which no current measurement distinguishes from other constrained notations (STATUS_BRIEF §1)."
     provenance: "C1222, C1223, C1224"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
-    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold at both corpus and folio level (ARI=0.163, with bridge backbone mediating weak geometry→dynamics coupling); dynamically characterized (full transition matrix, stationary distribution matches empirical within 1.2%); macro-automaton is a LOSSY PROJECTION of the 49-class chain — adds zero generative power (M3 ties M2; C1025); paragraph-level structure operates below its resolution floor (C1022)"
-    provenance: "C976, C977, C978, C1006, C1010, C1011, C1015, C1016, C1022, C1025"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold at both corpus and folio level (ARI=0.163, with bridge backbone mediating weak geometry→dynamics coupling); dynamically characterized (full transition matrix, stationary distribution matches empirical within 1.2%); macro-automaton is a LOSSY PROJECTION of the 49-class chain — adds zero generative power (M3 ties M2; C1025); paragraph-level structure operates below its resolution floor (C1022)"  # [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
+    provenance: "C976, C977, C978, C1006, C1010, C1011, C1015, C1016, C1022, C1025"  # [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
   - id: "GENERATIVE_SUFFICIENCY_AND_NECESSITY"
-    statement: "The 49-class first-order Markov transition matrix + 17 forbidden MIDDLE pair suppression is both SUFFICIENT (reproduces 80% of measurable structure; M2 frontier, C1025) and NECESSARY (class shuffle within macro-states breaks 5/10 topology-sensitive metrics, spectral gap z=8.85; forbidden injection breaks 4/10; C1026). The 6-state macro-automaton adds zero generative power (M3 ties M2). Compositional generation (PREFIX×MIDDLE×SUFFIX product) OVER-generates (4.2% hallucination; real vocabulary is a curated subset). Token identity within class is PARTIAL — MIDDLE-level forbidden constraints leak through class boundaries (z=3.51)."
-    provenance: "C1025, C1026"
+    statement: "The 49-class first-order Markov transition matrix + 17 forbidden MIDDLE pair suppression is both SUFFICIENT (reproduces 80% of measurable structure; M2 frontier, C1025 [demoted to Tier 3, v7.26]) and NECESSARY (class shuffle within macro-states breaks 5/10 topology-sensitive metrics, spectral gap z=8.85; forbidden injection breaks 4/10; C1026). The 6-state macro-automaton adds zero generative power (M3 ties M2). Compositional generation (PREFIX×MIDDLE×SUFFIX product) OVER-generates (4.2% hallucination; real vocabulary is a curated subset). Token identity within class is PARTIAL — MIDDLE-level forbidden constraints leak through class boundaries (z=3.51)."  # [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
+    note: "Forbidden-suppression component scoped: the B3 forbidden test rewards over-idealization (M2 has 0 violations, the real corpus 13; C2063), and the token-level zeros reduce to line composition, zones and boundary coupling (C2081). The 49-class Markov part is unaffected."
+    provenance: "C1025, C1026"  # [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
   - id: "MACRO_STATE_DYNAMICS"
     statement: "6-state macro-automaton has full 6×6 transition matrix: AXM is a massive attractor (self=0.697, gravitational pull=0.642), FL_SAFE is a fleeting terminal (self=0.023, return time=117.7 steps, NOT absorbing), CC is a pure initiator (self=0.041); system is ergodic (spectral gap=0.896, mixing time=1.1 steps, stationary matches empirical within 1.2%). Folio-level decomposition reveals 6 dynamical archetypes (silhouette=0.185) that are orthogonal to the 4 REGIMEs (ARI=0.065); REGIME+section explain only 33.7% of transition variance, with 66.3% program-specific. Folio-level AXM self-transition decomposes as: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear residual (40.1%)"
@@ -129,14 +174,16 @@ guarantees:
 
   - id: "BRIDGE_CONDUIT_MECHANISM"
     statement: "Bridge MIDDLE backbone (85 MIDDLEs spanning A→B) mediates geometry→dynamics coupling at folio level: bridge-only manifold features predict dynamical archetypes with ARI=0.141 vs non-bridge ARI=0.037 (3.8x); non-bridge MIDDLEs carry essentially zero archetype-predictive information. All 85 unique B corpus MIDDLEs are bridges (100% degeneracy; C1020) — bridge/non-bridge distinguishes A→B crossover vocabulary, not a B-internal partition. The bridge effect is geometric, not densimetric. Bridge centroid PC1 in the 100D discrimination manifold adds ΔR²=0.063 (F=9.58, p=0.003) beyond all morphological features (PREFIX, hazard density), confirming that bridge geometry is a load-bearing dynamics predictor. PC1 is partially redundant with hub frequency gradient (rho=0.568; C1018), but the non-redundant component still significantly differentiates archetypes (F=3.56, p=0.006); PC1 represents a HUB_UNIVERSAL↔STABILITY_CRITICAL gradient"
-    provenance: "C1016, C1017, C1018, C1020, C1013, C1014"
+    provenance: "C1016, C1017, C1018, C1020, C1013, C1014"  # C1014 demoted to Tier 3 (construction tautology, PHASE_748)
 
   - id: "FOLIO_DYNAMICAL_ARCHETYPES"
     statement: "72 folios with sufficient transitions (N≥50) cluster into 6 dynamical archetypes organized along an AXM attractor strength axis: 'strong attractor' (AXM self=0.82, n=10) to 'active interchange' (AXM self=0.47, n=7). Archetypes are nearly orthogonal to REGIMEs (ARI=0.065) and weakly aligned with sections (ARI=0.185). Forgiveness = AXM attractor strength (rho=0.678, 6 Bonferroni-significant features). Archetype-specific dynamics show suggestive non-linearity: PREFIX slope is positive in archetype 5 (β=+0.024, but n=7, bootstrap CI spans zero — not established; C1018) and hazard slope is positive in archetype 6 (β=+0.009, permutation p=0.014 but bootstrap CI spans zero — directionally supported, not robust; C1018); mean within-archetype R²=0.230 vs global R²=0.534. Archetypes are discriminated by 8 features across 5 families; strongest: k_frac (F=15.81), SAFETY_BUFFER fraction (F=11.37), HAZARD_TARGET fraction (F=5.73). Archetype 6's hazard tolerance is explained by 1.7x SAFETY_BUFFER enrichment (p=0.003; C1018)"
+    note: "HAZARD_TARGET / SAFETY_BUFFER / hazard-tolerance terms are defined from the forbidden-transition set, which is withdrawn as structure (scoped C1000; C2081; STATUS_BRIEF §3). The AXM-attractor archetype measurements are unaffected."
     provenance: "C1016, C1017, C1018"
 
   - id: "AFFORDANCE_BIN_SYSTEM"
     statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
+    note: "The 17/17 forbidden-transition clause is scoped (C996, C997, C1000 carry the 2026-09-27 scope tag): the forbidden set is withdrawn as structure (C2081; STATUS_BRIEF §3)."
     provenance: "C995, C996, C997, C1000"
 
   - id: "PREFIX_DUAL_ENCODING"
@@ -169,7 +216,7 @@ guarantees:
 
   - id: "MORPHOLOGICAL_COMPOSITIONALITY"
     statement: "Every token decomposes into [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX] with predictable combination rules"
-    provenance: "C267, C382, C383"
+    provenance: "C267, C382, C383"  # [v7.26 status: C382, C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
   - id: "PREFIX_INTERNAL_GRAMMAR"
     statement: "PREFIX uses 15 characters (identical inventory across A/B/AZC, Jaccard=1.000) in a three-tier positional grammar: 7 MODIFIER {c,d,f,p,q,s,y} at POS-0, 2 BASE {e,h} at POS-1+, 6 DUAL {a,k,l,o,r,t} at both (chi2=14,327.8, V=0.547). Base character predicts MIDDLE HEAD atom domain (V=0.478, 89% of C1475 HEAD specificity): o→THERMAL(k), h→STABILITY(e), a→HEADLESS(94-96%), k/t→STABILITY+CONTAINMENT. q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers). i-atom categorically absent from PREFIX (iteration is MIDDLE-internal). Sister pairs are SAME_BASE (ch/sh, da/sa) or SAME_MOD (ok/ot), all HEAD JSD<0.01. Prep PREFIXes are h-base variants, not distinct operations (shuffle p=0.998)."
@@ -185,7 +232,7 @@ guarantees:
 
   - id: "PARAGRAPH_EXECUTION_GRADIENT"
     statement: "Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), late lines have universal vocabulary (generic execution loop)"
-    provenance: "C932, C933, C934"
+    provenance: "C932, C933, C934"  # [v7.26 status: C932, C933 demoted to Tier 3 (not replicated (C1259))]
 
   - id: "PARAGRAPH_SUFFIX_CYCLING"
     statement: "100% of paragraphs with 8+ body lines contain two suffix modes (k=2, silhouette 0.459). Mode A (THERMAL/MONITORING atoms: {d,e,ee,h,y}), Mode B (STAGING/FLOW atoms: {a,i,ii,l,m,n,o,r,s}). 80% of qualifying paragraphs classified as interleaved (containing non-trivial mixture of both modes). NOTE: consecutive-line switch rate is 39.4% (BELOW random 49.9%) — lines mildly persist in mode (C1423). Token mode is ~80% MIDDLE-determined (C1422), with TERMINAL atom as primary gatekeeper (V=0.503). No token-level sequential dependency (CMI=1.64%). TERMINAL switching does NOT drive mode switching (C1424). Universal centroids across all 55 qualifying paragraphs (global silhouette 0.428, F=4.56)."
@@ -197,6 +244,7 @@ guarantees:
 
   - id: "MIDDLE_INSTRUCTION_ENCODING"
     statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). TERMINAL atoms define exit conditions in three functional tiers (C1483-C1487): LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=6 categories, bare=6 categories). TERMINAL x CATEGORY V=0.463 (2nd after HEAD). TERMINAL gates modifier selection: n takes only i, y takes only d, h takes {c,p,f,s} (C1484). HEAD-TERMINAL affinity creates compositional frames: e->y (72.7%), a->n/m (59-60%), k/t avoid n/m (C1485). Opacity and category specificity are orthogonal design axes. Headless compounds (20.5%, 3312 tokens, 469 types; C1488) form a coherent functional domain, NOT grab-bag infrastructure: initial atom acts as PSEUDO-HEAD (V=0.511; C1489) with d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%, r=FLOW 61%, c=OPERATION 32%. Headless terminal profile shifts: h 2.98x, n 2.45x enriched, LOCKED tier 6.2x depleted (structural hazard avoidance; C1490). PREFIX near-exclusive: da 2284x enriched, sa/ta headless-only, ok/ot near-absent (C1491). Suffix bifurcation: d/i bare (binary ops) vs c/p/f suffixed (parametric ops; C1492). 35.7% contain displaced HEAD atoms (C1493). Same modifier ordering grammar applies (61.9% vs 70.1%). Suffix is an independent compositional domain using same atom inventory (entropy 1.475 bits). TERMINAL gates suffix attachment via three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
+    note: "Hazard clauses (k-HEAD immunity, a-HEAD hazard carrier, headless 'structural hazard avoidance'; C1476, C1477, C1490) count membership in the forbidden-transition set, which is withdrawn as structure (C2081; STATUS_BRIEF §3). Category names (THERMAL, FLOW, ...) come from a keyword-imposed taxonomy (C2069)."
     provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1510, C1511, C1512, C1513, C1514, C1515"
 
 # ============================================================
@@ -206,10 +254,12 @@ invariants:
     provenance: "C124"
 
   convergence_dominance:
+    status: "MEASUREMENT ONLY — occupancy: 57.8% of folios end in their dominant macro-state (C074). 'Convergence' framing WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
     statement: "Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C1403)"
-    provenance: "C074, C084, C323, C1403"
+    provenance: "C074, C084, C323, C1403"  # C084 demoted to Tier 3; C074 Tier 2 as a measurement only
 
   hazard_asymmetry:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (forbidden-transition layer: C783 demoted, C2081 zeros reduce)"
     statement: "Most forbidden transitions are directional"
     provenance: "C111"
 
@@ -222,8 +272,9 @@ invariants:
     provenance: "C391, C886, C1024"
 
   kernel_boundary_adjacency:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (rests on the kernel construct, C089 superseded by C2082, and on the withdrawn hazard layer)"
     statement: "Classes containing kernel characters tend to be hazard-involved"
-    provenance: "C107, C522"
+    provenance: "C107, C522"  # [v7.26 status: C107 demoted to Tier 3 (kernel/forbidden-pair framing withdrawn)]
 
   class_member_differentiation:
     statement: "Grammar is universal at class level, differentiation at token level"
@@ -259,7 +310,7 @@ invariants:
 
   morphological_compositionality:
     statement: "TOKEN = [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX] is universal"
-    provenance: "C267, C382"
+    provenance: "C267, C382"  # [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
   prefix_middle_selectivity:
     statement: "PREFIX constrains which MIDDLE families are allowed (102 forbidden pairs)"
@@ -290,8 +341,9 @@ invariants:
     provenance: "C1006"
 
   generative_specification_bracketed:
-    statement: "The grammar's minimal executable specification is bracketed: 49-class Markov + 17 forbidden pairs is both sufficient (C1025) and necessary (C1026); everything else (macro-automaton, PREFIX routing, tensor curvature, archetype dynamics) is secondary structure"
-    provenance: "C1025, C1026"
+    statement: "The grammar's minimal executable specification is bracketed: 49-class Markov + 17 forbidden pairs is both sufficient (C1025 [demoted to Tier 3, v7.26]) and necessary (C1026); everything else (macro-automaton, PREFIX routing, tensor curvature, archetype dynamics) is secondary structure"  # [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
+    note: "The '17 forbidden pairs' component is scoped: C2063 (B3 rewards over-idealization) and C2081 (zeros reduce to composition, zones and boundary coupling); see STATUS_BRIEF §3."
+    provenance: "C1025, C1026"  # [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
 # ============================================================
 grammar:
@@ -300,15 +352,16 @@ grammar:
     token_types: 479
     instruction_classes: 49
     compression_ratio: "9.8x"
-    coverage: "100%"
+    coverage: "100%"  # of the grammar's own vocabulary (480 types per C124 as corrected) = 69.5% of B tokens; HT/UN defined by exclusion (C566, C740)
     exceptions: 0
     optimality: "49-class is optimal: token-level (479 states) overfits by 38%; suffix-augmented (98 states) gains only 5.6%; 6-state macro underfits but useful as coarse view (perplexity 2.75 vs 28.76 vs 39.73)"
     provenance: "C121, C124, C1004"
 
   primitives:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. An EVA letter inventory, not a primitive inventory: c and h are the two halves of the bench glyph (ch/sh) and never stand alone (PHASE_754, C1440)"
     count: 10
     characters: ["s", "e", "t", "d", "l", "o", "h", "c", "k", "r"]
-    provenance: "C085"
+    provenance: "C085"  # C085 demoted to Tier 3 (Tier-0 restatement 2026-09-28)
 
   properties:
     universal: true
@@ -324,7 +377,7 @@ morphology:
 
   token_structure:
     formula: "[ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX]"
-    provenance: "C267, C382, C383"
+    provenance: "C267, C382, C383"  # [v7.26 status: C382, C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
     components:
       ARTICULATOR:
         required: false
@@ -400,7 +453,7 @@ morphology:
           FL: 2 types, 94% bare (suffix-depleted)
           FQ: 1 type, 93% bare (suffix-depleted)
           CC: 0 types, 100% bare (suffix-free)
-        provenance: "C267, C382, C588, C1004"
+        provenance: "C267, C382, C588, C1004"  # [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
   prefix_channel_architecture:
     # Tier 2 structural fact: PREFIX selects MIDDLE family and transforms behavior
@@ -432,7 +485,7 @@ morphology:
         selects: "e-family + infrastructure (e, aiin, ar)"
         enrichment: "2.6-3.3x"
         forbidden: "k-family"
-        domain_selector: "VESSEL/APPARATUS — MIDDLE provides action on vessel (C936 revised)"
+        domain_selector: "VESSEL/APPARATUS — MIDDLE provides action on vessel (C936 revised; demoted to Tier 3 in the generated table)"
         positional_behavior: "Late in line (mean 0.538 vs 0.484 non-ok)"
         sister_pair: "ot (C408) — ok=proactive vessel management, ot=corrective adjustment"
         note: "ok is NOT a verb. Same-MIDDLE pairing with other prefixes (378 pairs) confirms PREFIX selects target domain, MIDDLE provides action. Semantic label 'VESSEL' is Tier 3."
@@ -467,7 +520,7 @@ morphology:
         te: "transfer-cool (t=transfer + e=cool)"
       challenges: "F-BRU-012 specific action verbs (CHOP, POUND, STRIP, GATHER) replaced by atom-grounded glosses"
       provenance: "C1221, C1396"
-    provenance: "C911, C661, C662, C936, C1015, C1219, C1221, C1396"
+    provenance: "C911, C661, C662, C936, C1015, C1219, C1221, C1396"  # C936 demoted to Tier 3
 
   prefix_positional_zones:
     # Tier 2 structural fact: PREFIX encodes line position (dual encoding with content)
@@ -505,6 +558,7 @@ morphology:
     provenance: "C1001"
 
   morphological_phase_encoding:
+    status: "WITHDRAWN v7.24/7.25 (interpretation) — historical; see context/SYSTEM/STATUS_BRIEF.md §3. The MONITORING/INTERVENTION phase reading rests on LINK-as-monitoring (C609, C1174: 'ol' substring, morphological artifact) and on kernel contact (C089 superseded by C2082). The prefix/suffix co-distribution below is the C382 record, not a control-phase structure."
     statement: "Morphological composition (PREFIX + SUFFIX) encodes control phase"
     phases:
       MONITORING:
@@ -518,7 +572,7 @@ morphology:
         link_proximity: "Distant"
         kernel_contact: "100%"
     line_template: "ENTRY → EARLY-CYCLE → ol-BOUNDARY → LATE-CYCLE → EXIT"
-    provenance: "C382"
+    provenance: "C382"  # [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
   fl_state_index:
     statement: "FL MIDDLEs function as state indices marking progression through a process within each line"
@@ -569,6 +623,8 @@ morphology:
 # ============================================================
 # Added v3.16: MIDDLE instruction encoding architecture (C1393, C1394)
 middle_instruction_encoding:
+
+  scope_note_v7_25: "Hazard / forbidden / immunity figures in this section count membership in the forbidden-transition set; its zero excess reduces to line composition, zones and boundary coupling (C2081), so no prohibition layer remains (STATUS_BRIEF §2-3). Read them as measurements of that set, not of a safety structure. Category names are from a keyword-imposed taxonomy (C2069); operational glosses are Tier 3."
 
   statement: |
     Compound MIDDLEs encode instructions as HEAD + MOD* + TERM — fixed endpoints
@@ -941,7 +997,7 @@ role_taxonomy:
       function: "Execution boundaries"
       classes: "{10, 11, 12, 17}"
       token_share: "4.4% of B (~1023 tokens)"
-      provenance: "C121, C557, C558, C560, C581, C788-C791"
+      provenance: "C121, C557, C558, C560, C581, C788-C791"  # C557 demoted to Tier 3; C558 positional sub-claims demoted (PHASE_735)
 
     ENERGY_OPERATOR:
       function: "Energy modulation"
@@ -979,8 +1035,9 @@ role_taxonomy:
       provenance: "C121, C562, C582, C770-C777"
 
     LINK:
+      status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. LINK is the 'ol' substring (13.2% of B tokens, C609), a morphological artifact recruited differently by each role (C1174), not a monitoring role"
       function: "Monitoring/observation phase marker"
-      provenance: "C366"
+      provenance: "C366"  # [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
   functional_classification:
     roles_mapped:
@@ -989,7 +1046,7 @@ role_taxonomy:
       FL: "Flow Operators (flow control, 4 classes, 4.7% of B)"
       FQ: "Frequent Operators (common instructions, 4 classes, 12.5% of B)"
       AX: "Auxiliary (scaffold, 19 classes, 16.6% of B)"
-    provenance: "C547-C550, C573, C581-C583, C591"
+    provenance: "C547-C550, C573, C581-C583, C591"  # C547 demoted to Tier 3
     internal_structure:
       CC: "GENUINE_STRUCTURE (2 active + 1 ghost, 75% KW significant)"
       EN: "DISTRIBUTIONAL_CONVERGENCE (C574: grammatically equivalent, lexically partitioned)"
@@ -1011,6 +1068,7 @@ role_taxonomy:
       SUFFIX_FREE: "CC (0 types, 100% bare)"
     hazard_direction:
       # C586: Roles have distinct hazard directionality
+      status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Counts are taken over the forbidden-transition set (class level demoted, C783; zeros reduce, C2081)"
       FL: "SOURCE-biased (initiates 4.5x more than receives)"
       EN: "TARGET-biased (absorbs 11/19 corpus forbidden transitions)"
       FQ: "MIXED (both source and target)"
@@ -1031,7 +1089,7 @@ role_taxonomy:
     morphological_patterns:
       statement: "Gallows have distinct morphological contexts"
       t_context: "most common, broadest distribution"
-      k_context: "kernel operator, restricted"
+      k_context: "kernel operator, restricted"  # 'kernel operator' label historical (kernel construct withdrawn, C2082)
       p_context: "paragraph marker, positional"
       f_context: "rare, specialized"
       provenance: "C866"
@@ -1043,11 +1101,13 @@ role_taxonomy:
       provenance: "C868"
     functional_model:
       statement: "Gallows function as paragraph/section delimiters"
-      provenance: "C869"
-    provenance: "C863-C869"
+      provenance: "C869"  # C869 demoted to Tier 3 (gallows functional model is interpretation)
+    provenance: "C863-C869"  # C863, C869 demoted to Tier 3; C864-C868 Tier 2
 
 # ============================================================
 kernel:
+  status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
+  status_detail: "The kernel k/h/e as the grammar's core and the k/h/e role glosses are withdrawn: C089 superseded by C2082 (at glyph level k shows no cross-token routing beyond matched controls; the e/bench signal is word-ending routing, not a kernel role); C085, C103-C105 demoted to Tier 3. Kept as measurements only: C521's glyph-order asymmetry (e->h zero is a spelling identity; at glyph level e->bench is 0.22x a within-token shuffle), C1226 (ke/ek ratio by REGIME and section). C1225's e-depth table is rescoped (parser segmentation artifact, PHASE_758)."
   scope: "CONSTRUCTION level - how tokens are built, not how they execute"
 
   operators:
@@ -1055,20 +1115,20 @@ kernel:
       role: "ENERGY_MODULATOR"
       function: "Morphological contribution to energy-related tokens"
       position_in_token: "Early (mean 0.356)"
-      provenance: "C103"
+      provenance: "C103"  # C103 demoted to Tier 3 (role gloss without a measurement; C2082)
 
     h:
       role: "PHASE_MANAGER"
       function: "Morphological contribution to phase-related tokens"
       position_in_token: "Middle (mean 0.402)"
-      provenance: "C104"
+      provenance: "C104"  # C104 demoted to Tier 3 (role gloss without a measurement; C2082)
 
     e:
       role: "STABILITY_ANCHOR"
       function: "Morphological contribution to stability-related tokens"
       position_in_token: "Late (mean 0.565)"
-      recovery_path_rate: "54.7%"
-      provenance: "C105"
+      recovery_path_rate: "54.7%"  # rests on the withdrawn hazard/recovery layer (C783, C2081)
+      provenance: "C105"  # C105 demoted to Tier 3 (role gloss; recovery-path figure withdrawn)
 
   construction_grammar:
     k_to_e: "4.02x (elevated)"
@@ -1076,13 +1136,14 @@ kernel:
     e_to_h: "0.004x (blocked)"
     h_to_k: "0.24x (suppressed)"
     provenance: "C521, KERNEL_STATE_SEMANTICS T9"
+    note: "EVA-letter transition ratios. h occurs only inside ch/sh/benched gallows, so 'e_to_h 0.004x' is a spelling identity. At glyph level the asymmetry holds as e->bench 0.22x and bench->e 3.5x a within-token shuffle (PHASE_754 gate on C521; STATUS_BRIEF §3 transliteration identities)."
 
   properties:
-    irreducible: true
-    morphological_core: true
+    irreducible: true  # historical — C089 superseded by C2082
+    morphological_core: true  # historical — C089 superseded by C2082
     h_to_k_suppressed: true  # Within-token only
     e_trigram_dominance: "97.2%"
-    provenance: "C089, C332, C333, C521"
+    provenance: "C089, C332, C333, C521"  # C089 superseded by C2082 (dead)
 
   relationships:
     e_class_dominance:
@@ -1101,6 +1162,7 @@ kernel:
       significance: "chi-squared p<0.0001"
       scope: "MIDDLE-internal — does NOT vary by REGIME (p=0.620) or section (p=0.067)"
       interpretation: "E-depth functions as graded parameter that changes output specification. Single-e and multi-e are different instruction types within the same family."
+      status: "RESCOPED (PHASE_758) — historical: the table is a parser segmentation artifact (68% of 'single-e' tokens have an e-run >= 2; the pre-C1957 parser moved the extra e into '-edy'); 'parametric axis' and 'different instruction types' struck. Kept at glyph level: after k the next glyph depends on e-run length, no stronger than the generic e-run transition (C1225 row)."
       provenance: "C1225"
 
     ke_ek_ordering:
@@ -1117,11 +1179,13 @@ kernel:
         STARS: {ek_pct: "19.7%"}
         chi2: 138.50
       predecessor_context: "ke follows E-DOM predecessors 54.9% vs ek 22.5% (Fisher OR=4.20, p<0.0001)"
-      interpretation: "ke = energy-first (aggressive, after stability-rich context); ek = stability-check-first (cautious, after energy-rich context)"
+      interpretation: "ke = energy-first (aggressive, after stability-rich context); ek = stability-check-first (cautious, after energy-rich context)"  # Tier-3 gloss (k/e role glosses withdrawn); the ratios are the measurement
       provenance: "C1226"
 
 # ============================================================
 hazards:
+  status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
+  status_detail: "17 forbidden transitions, 5 hazard classes, hazard topology and 'safety architecture' do not stand as structure: the class level is demoted (C783: powered class pairs show no suppression), the 5-class taxonomy was imposed by keyword matching (C2060), the real corpus has 13 class-level violations (C2063), and the common-token zero bigrams reduce to line composition, zones and boundary glyph coupling (C2081; C957 superseded). C109, C789, C1528-C1533, C1546, C1547 and C1551 carry the 2026-09-27 scope tag (Tier 2 only as zero-pattern measurements). Atom-level 'hazard' percentages below count membership in that set; no prohibition layer remains (STATUS_BRIEF §2)."
 
   forbidden_transitions:
     count: 17
@@ -1148,6 +1212,9 @@ hazards:
       PHASE_732 gloss-check found the per-class physical labels mostly unsupported by atom glosses;
       ENERGY_OVERSHOOT contradicted. Retain as historical interpretation only.
     head_territory_orthogonality: |
+      [v7.25 note: C1528-C1533 now carry the 2026-09-27 forbidden-transition scope tag; the
+      forbidden set itself reduces to composition, zones and boundary coupling (C2081). Not a
+      surviving hazard layer — a description of which atoms the zero pairs involve.]
       [THE SURVIVING RIGOROUS LAYER — Tier 2, independently atom-derived]
       Forbidden transitions map to near-orthogonal HEAD atom territories (7/10 pairwise Jaccard=0).
       Each grouping has a distinct atom-mechanical signature. This is the real structure that
@@ -1242,7 +1309,7 @@ hazards:
       provenance: "C1551"
 
     phantom_defense_in_depth:
-      statement: "Phantom MIDDLEs are atom-legal but construction-dead — all 5 pass atom slot legality, PREFIX compatibility (22-27 each), and suffix compatibility. Prohibition at BIGRAM level, not atom level. Defense-in-depth safety architecture"
+      statement: "Phantom MIDDLEs are atom-legal but construction-dead — all 5 pass atom slot legality, PREFIX compatibility (22-27 each), and suffix compatibility. Prohibition at BIGRAM level, not atom level. Defense-in-depth safety architecture"  # 'safety architecture' withdrawn (STATUS_BRIEF §3); bigram zeros reduce (C2081)
       provenance: "C1554"
 
     provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554"
@@ -1267,21 +1334,21 @@ program_structure:
     provenance: "C178, C531, C535"
 
   line:
-    function: "Boundary-constrained control block with free interior and FL state tracking"
+    function: "Boundary-constrained control block with free interior and FL state tracking"  # 'control block' is the Tier-3 working interpretation; measured: C357 regularity, C956 zones, C964 boundary-constrained interior
     regularity: "3.3x more regular than random"
     architecture: "BOUNDARY_CONSTRAINED_FREE_INTERIOR"  # C964
     boundary_markers:
       initial: ["daiin", "saiin", "sain"]
       final: ["am", "oly", "dy"]
       vocabulary_openness: "Boundary vocabulary is OPEN — 663 tokens cover 80% of openers; Gini 0.47 (C960)"
-    link_suppressed_at_boundary: true
+    link_suppressed_at_boundary: true  # C359 [demoted to Tier 3, v7.26] (0.60x); conflicts with C805 (LINK boundary-enriched, 17.2% first / 15.3% last vs 12.4% middle) — both Tier 2, unresolved in the registry; LINK-as-monitoring is withdrawn [v7.26 status: C359 demoted to Tier 3 (conflicts with C805 (weaker method))]
     grammar_line_invariant: true
     opener_properties:
       role_marker: "Opener is a ROLE marker, not an instruction header — specific token adds no predictive power beyond role (C959)"
       length_determination: "Opener class determines line length — 24.9% partial R-squared beyond folio+regime; folio+opener_token = 93.7% (C958)"
     token_level_constraints:
       positional_exclusivity: "192/334 common tokens are zone-exclusive (2.72x shuffle); STRUCTURAL per negative control (C956)"
-      mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
+      mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561, demoted to Tier 3: Markov-trivial) + 25 new (C957, superseded by C2081)"
       forbidden_bigrams: "SUPERSEDED (C2081): C957's 9 zero bigrams reduce to line composition, positional zones and boundary glyph coupling under a joint null"
       structural_origin: "Most token-level effects are STRUCTURAL (role/position driven), not lexical — confirmed by negative control (C956, C964)"
     fl_state_tracking:
@@ -1324,14 +1391,15 @@ program_structure:
           dominant_roles: ["FL", "AX_FINAL", "CC"]
           function: "Flow resolution and boundary"
       triggers:
-        daiin_trigger: "daiin marks WORK→CHECK transition (C557)"
-        or_aiin_bigram: "or→aiin is strongest role-transition bigram (C561)"
+        daiin_trigger: "daiin marks WORK→CHECK transition (C557, demoted to Tier 3: 27.7% measurement kept, trigger mechanism Markov-trivial)"
+        or_aiin_bigram: "or→aiin is strongest role-transition bigram (C561, demoted to Tier 3: Markov-trivial)"
       role_concentration:
         ENERGY: "medial (peaks at positions 3-6)"
         FLOW: "final (hierarchy FL > CC at line end, C562)"
         AX: "distributed across INIT/MED/FINAL sub-positions"
       phase_interleaving:
         statement: "KERNEL/LINK/FL phases show weak clustering but NOT sequential blocking (C962)"
+        note: "KERNEL and LINK 'phases' are historical labels (kernel superseded by C2082; LINK is the 'ol' substring, C1174); the figures are letter/substring position measurements, not control phases (STATUS_BRIEF §3)"
         alternation_rate: "0.566 (shuffle 0.596, p<0.001)"
         sequential_compliance: "32.7% (shuffle 21.7%)"
         pair_ordering:
@@ -1339,7 +1407,7 @@ program_structure:
           KERNEL_to_FL: "0.623 (moderately ordered)"
           LINK_to_FL: "0.659 (moderately ordered)"
         interpretation: "Phases are positional tendencies, not rigid blocks — consistent with C815 (eta-squared=0.015)"
-      provenance: "C556, C557, C561, C562, C956-C964"
+      provenance: "C556, C557, C561, C562, C956-C964"  # C557, C561 demoted to Tier 3; C957 superseded by C2081 (dead)
     category_gradient:
       statement: "Category-level resolution reveals three-zone architecture: SPECIFICATION→THERMAL_WORK→CLOSURE"
       zones:
@@ -1380,6 +1448,7 @@ program_structure:
         provenance: "C1566"
 
       zone_hazard_routing:
+        status: "WITHDRAWN as hazard structure v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. The frame 'hazard classes' (ZERO/LOW/HIGH/IMMUNE) are defined from the forbidden-transition set, which reduces to composition, zones and boundary coupling (C2081). The zone x frame contingency is a positional measurement of those frames only."
         statement: "Three-zone model interacts with frame hazard classification: monotonic hazard gradient across line (C1463-C1466)"
         routing_pattern:
           SPECIFICATION: "ZERO enriched 1.236x, HIGH depleted 0.836x — safe operations open lines"
@@ -1401,7 +1470,7 @@ program_structure:
         no_compensatory_recovery: "e->y DEPLETED 0.82x after above-median HIGH lines (Fisher p=0.0001); folio composition effect"
         mode_b_no_hazard_memory: "B->B MI=0.016 = A->A MI=0.017; Mode B forbidden carrier status (C1451) creates no cross-line coupling"
       provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439, C1463-C1466, C1470, C1471"
-    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
+    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"  # C557, C561 demoted to Tier 3
 
   paragraph:
     # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
@@ -1441,16 +1510,16 @@ program_structure:
       provenance: "C963, C677, C1229, C1230, C1231, C1410, C1422, C1423, C1424"
 
     execution_gradient:
-      # REVISED Phase 451 (C1259): The spec->exec vocabulary gradient (C932) did NOT
-      # replicate. Prep verb concentration (C933) is an ARTIFACT of Mode A vocabulary.
-      # Kernel composition shift (C965) is directionally real but sub-Bonferroni.
+      # REVISED Phase 451 (C1259): The spec->exec vocabulary gradient (C932) did NOT [v7.26 status: C932 demoted to Tier 3 (not replicated (C1259))]
+      # replicate. Prep verb concentration (C933) is an ARTIFACT of Mode A vocabulary. [v7.26 status: C933 demoted to Tier 3 (not replicated (C1259))]
+      # Kernel composition shift (C965) is directionally real but sub-Bonferroni. [v7.26 status: C965 demoted to Tier 3 (not replicated (C1259))]
       # The body is NOT a specification->execution ramp. It is a steady-state cycling
       # architecture with two coupled parallel tracks.
       statement: "Body lines form a steady-state cycling architecture with parallel Mode A/B tracks"
       retracted_claims:
         c932_vocabulary_gradient: "NOT REPLICATED — original script included header in Q0; body-only shows RARE r=-0.054 (was -0.97), UNIVERSAL r=-0.893 (was +0.92). C1259 T2."
         c933_prep_verb_concentration: "ARTIFACT — 77% of prep verbs are Mode A tokens; within Mode B no positional bias (p=0.639). C1259 T3."
-        c934_parallel_startup: "WEAKENED — both pillars (C933, C965) undermined. C1259."
+        c934_parallel_startup: "WEAKENED — both pillars (C933, C965) undermined. C1259."  # [v7.26 status: C933, C965 demoted to Tier 3 (not replicated (C1259))]
         c965_kernel_composition: "WEAKENED — PREFIX-based retest: h rho=+0.058 (p=0.037), same direction but sub-Bonferroni (was +0.10, p=0.0004). Fragile, not an artifact."
       surviving_body_signals:
         line_shortening: "rho=-0.243 (p=0.000) — lines get shorter through body (C677, C1260 S4)"
@@ -1524,7 +1593,7 @@ program_structure:
 
     paragraph_zones:
       # REVISED Phase 451: Two zones, not three. The body-internal
-      # SPECIFICATION/EXECUTION split (C932) did not replicate.
+      # SPECIFICATION/EXECUTION split (C932) did not replicate. [v7.26 status: C932 demoted to Tier 3 (not replicated (C1259))]
       statement: "Each paragraph has two functional zones: HEADER and BODY"
       zones:
         - zone: "HEADER"
@@ -1554,7 +1623,7 @@ program_structure:
       provenance: "C843"
     self_containment:
       provenance: "C845"
-    provenance: "C840-C845, C932-C935"
+    provenance: "C840-C845, C932-C935"  # [v7.26 status: C932, C933 demoted to Tier 3 (not replicated (C1259))]
 
     operational_gradient:
       statement: "Paragraphs form a continuous operational variation space (silhouette 0.113), not discrete types"
@@ -1622,6 +1691,7 @@ program_structure:
       provenance: "C1400, C1399, C1398, C1260, C1288, C1121"
 
     paragraph_hazard_routing:
+      status: "WITHDRAWN as hazard structure v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Frame 'hazard classes' come from the forbidden-transition set (reduces, C2081); 'safety levels' are not a current construct."
       statement: "Paragraph zones interact with frame hazard classification at comparable magnitude to line-level (V=0.071 vs 0.085) but with DIFFERENT topology — infrastructure-first, not safe-first (C1467-C1469)"
       zone_enrichments:
         HEADER: "LOW 1.130x enriched, ZERO 0.784x depleted, IMMUNE 0.793x depleted — infrastructure specification, not safety"
@@ -1671,17 +1741,20 @@ program_structure:
       provenance: "C860"
     link_hazard_neutrality:
       statement: "LINK and hazard density are NEUTRAL across paragraph ordinals"
+      note: "LINK (= 'ol' substring, C1174) and hazard (forbidden-set membership, C2081) are withdrawn as functional constructs (STATUS_BRIEF §3); the neutrality is a density measurement only"
       provenance: "C861"
     provenance: "C855-C862"
 
 # ============================================================
 convergence:
+  status: "MIXED — convergence to STATE-C / MONOSTATE as a target and the completion gradient are WITHDRAWN v7.24/7.25 (historical; see context/SYSTEM/STATUS_BRIEF.md §3). What stands: occupancy only — 57.8% of folios end in their dominant macro-state (C074, measurement only; C323); no sequential convergence at any scale (C1402); gradient is a section confound (C1401); section/PREFIX AXM measurements (C1404-C1407, C1431-C1433)."
 
   target:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
     state: "STATE-C (= AXM macro-state)"
     type: "MONOSTATE — thematic dominance, not sequential convergence (C1403)"
     mechanism: "AXM is the dominant operational mode at section-determined rates (59-75%), not a terminal state that programs converge toward"
-    provenance: "C079, C084, C1403"
+    provenance: "C079, C084, C1403"  # C079, C084 demoted to Tier 3 (Tier-0 restatement)
 
   terminal_distribution:
     state_c: "57.8%"
@@ -1694,7 +1767,7 @@ convergence:
     direction: "SECTION CONFOUND — raw rho=+0.226 collapses to zero within every section (C1401)"
     mechanism: "Section B (74.5% AXM) occupies later manuscript positions (section-position rho=+0.391)"
     within_section: "B: -0.012, H: +0.084, S: -0.008 (all p>0.6)"
-    provenance: "C325 (QUALIFIED by C1401)"
+    provenance: "C325 (QUALIFIED by C1401)"  # [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
 
   sequential_convergence:
     across_paragraphs: "rho=-0.019, p=0.78 (16 increasing/15 decreasing/14 flat)"
@@ -1743,9 +1816,10 @@ convergence:
 
 # ============================================================
 link_operator:
+  status: "LINK as a monitoring operator is WITHDRAWN v7.24/7.25 (historical; see context/SYSTEM/STATUS_BRIEF.md §3). This section keeps only measurements of the 'ol' substring (13.2% density, C609; morphological artifact, C1174). 'Operator', 'escalation' and 'kernel' framings below are historical."
 
   function: "Morphological artifact — `ol` substring recruited differently by each role, not a unified functional layer"
-  provenance: "C1174 (revises C366)"
+  provenance: "C1174 (revises C366)"  # [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
   definition:
     marker: "'ol' substring in token"
@@ -1760,12 +1834,12 @@ link_operator:
     middle_token_rate: "12.4%"
     last_token_rate: "15.3%"
     mean_position: 0.476  # Earlier than baseline 0.504
-    provenance: "C805 (refutes C365)"
+    provenance: "C805 (refutes C365)"  # C365 dead (refuted by C805)
 
   grammar_transitions:
     predecessor_bias: "NOT SIGNIFICANT (p=0.41)"
     successor_bias: "WEAK (p<0.001, enrichments ~1.1x)"
-    provenance: "C804 (revises C366)"
+    provenance: "C804 (revises C366)"  # [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
   fl_relationship:
     # LINK and FL are inversely related (C807, C810)
@@ -1797,7 +1871,7 @@ link_operator:
     provenance: "C808"
 
   complementarity:
-    with_escalation: true
+    with_escalation: true  # historical — LINK-as-monitoring vs escalation framing withdrawn (STATUS_BRIEF §3)
     provenance: "C340"
 
   functional_architecture:
@@ -1843,6 +1917,8 @@ link_operator:
 
 # ============================================================
 recovery:
+  status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
+  status_detail: "Recovery architecture rests on the withdrawn hazard layer (C783, C2081) and on e as STABILITY_ANCHOR (C105, Tier 3); the clamp-vs-recovery-freedom asymmetry is a frequency shadow (C458, Tier 3). Lane alternation (C643) and the e->y vocabulary counts (C1457) remain as measurements, not as recovery functions."
 
   post_hazard_handling:
     primary_lane: "CHSH"  # e-rich (68.7%), 75.2% post-hazard
@@ -1858,13 +1934,14 @@ recovery:
     operator: "e"
     function: "Anchors system to stable state via e→y ambient substrate (15% of corpus, 0.06% hazard); NOT reactive recovery but omnipresent safe infrastructure"
     ey_mechanism: "e→y rate = mechanical basis of forgiveness gradient (rho=+0.569 with AXM self-transition); post-e→y AXM +9.4pp one-way ratchet; context-independent deployment (p=0.310)"
-    provenance: "C105, C1457, C1458, C1459, C1462"
+    provenance: "C105, C1457, C1458, C1459, C1462"  # C105 demoted to Tier 3 (role gloss; recovery layer withdrawn)
 
   safe_precedence:
     provenance: "C399"
 
 # ============================================================
 safety_buffer_architecture:
+  status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. 'Safety buffers' are defined against the forbidden-transition set (C997, C1000 scoped), whose zero excess reduces to composition, zones and boundary coupling (C2081; C957 superseded). The 'physical coherence' label is an F-BRU-023 interpretation."
 
   statement: "22 safety buffer tokens prevent forbidden transitions by intervening between hazard pairs"
   physical_coherence: "22/22 buffers validated as physically coherent interventions (lane switches, work insertions); buffer REGIME distribution non-uniform: REGIME_1 enriched 1.86x (chi²=11.79, p=0.008)"
@@ -1924,6 +2001,7 @@ axm_internal_architecture:
     provenance: "C1007, C1008, C1023"
 
   exit_curvature:
+    note: "HAZARD_TARGET is a sub-role defined from the forbidden-transition set (C1000 scoped; the set reduces, C2081); a compositional measurement, not a hazard mechanism"
     statement: "HAZARD_TARGET MIDDLE density increases from ~10% at t-3 to ~16% at exit token (rho=-0.055, p=0.0001)"
     mechanism: "Compositional (which sub-role appears), NOT spectral-geometric (radial depth p=0.098)"
     subrole_enrichment: "Exit boundaries enriched in HAZARD_TARGET (22.7% vs 17.5%, chi2=13.89, p=0.003)"
@@ -1980,6 +2058,7 @@ macro_state_transition_matrix:
 
 # ============================================================
 apparatus_response_architecture:
+  status: "WITHDRAWN as manuscript structure v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. The virtual-apparatus family (C1581-C1680, which includes C1636-C1670 below) consists of model diagnostics, not text facts: plant/apparatus responses are keyed to imposed categories, so the results describe the simulator (strategic review §5). C1709-C1711 relate A vocabulary to positions on the same simulated manifold."
 
   statement: |
     B-side operational behavior varies systematically across folios in a way that
@@ -2097,6 +2176,7 @@ three_compression_architecture:
 
 # ============================================================
 design_freedom:
+  status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Execution clamp vs recovery freedom is a frequency shadow: the raw CV gap collapses under frequency-matched nulls (C458 demoted to Tier 3). The nested sister_pair_mechanism block (C1179-C1189) is a separate set of measurements, not part of this construct."
 
   clamped:
     - dimension: "hazard_exposure"
@@ -2111,11 +2191,12 @@ design_freedom:
       freedom: "YES"
 
   principle: "Risk is globally constrained; recovery strategy is locally variable"
-  mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814). AXM basin depth decomposes into: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear archetype residual (40.1%). Archetype-specific slopes differ suggestively (sign changes observed but not statistically robust at current sample sizes; C1018), consistent with non-linear program-specific tuning"
-  provenance: "C458, C1016, C1017, C1018"
+  mechanism: "[historical — C458 demoted to Tier 3, frequency shadow] Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's (demoted) aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814). AXM basin depth decomposes into: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear archetype residual (40.1%). Archetype-specific slopes differ suggestively (sign changes observed but not statistically robust at current sample sizes; C1018), consistent with non-linear program-specific tuning"
+  provenance: "C458, C1016, C1017, C1018"  # C458 demoted to Tier 3 (frequency shadow)
 
   sister_pair_mechanism:
     # Phase 420: SISTER_PAIR_MECHANISM (C1179-C1187)
+    note: "Measurements (C1179-C1189) stand independently of the withdrawn clamp/freedom construct above; the hazard_density term is computed against the forbidden-transition set (withdrawn as structure, C2081)."
     statement: "Sister-pair choice (ch/sh) is a BOUNDARY_CONTROL_KNOB, not free variation"
     c639_unexplained: "52.9% -> ~40% after position mediation"
     position_mediation:
@@ -2149,6 +2230,8 @@ design_freedom:
 
 # ============================================================
 control_loop:
+  status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3"
+  status_detail: "The closed-loop / control-loop framing is withdrawn (C171 Tier 3: all four legs withdrawn); its zones rest on the kernel (C089 superseded by C2082), LINK-as-monitoring (C609, C1174) and escape/recovery (hazard layer, C2081). Position measurements that stand as Tier 2 measurements, without the loop reading: line_final_routing (C1235), paragraph_termination (C1237), iteration_specification (C1234), first-occurrence letter order (C1238), phase_flexibility (C815). Their 'check', 'loop', 'cool/process/monitor' glosses are Tier 3."
 
   three_zones:
     kernel:
@@ -2168,7 +2251,7 @@ control_loop:
     sequence: "daiin -> LINK -> KERNEL -> ol -> FL"
     positions: "0.413 -> 0.476 -> 0.482 -> 0.511 -> 0.576"
     significance: "daiin vs LINK p<0.001, KERNEL vs FL p<0.0001"
-    provenance: "C813, C816"
+    provenance: "C813, C816"  # C816 demoted to Tier 3 (Markov-trivial; 'daiin initiates loop' retracted)
     cc_integration:
       daiin_position: 0.413  # Earliest - initiates control loop
       ol_position: 0.511  # Medial - bridges to FL
@@ -2179,12 +2262,12 @@ control_loop:
     e_before_k: "64.6% of lines with both (1205/1864, +14.6pp above chance)"
     e_before_h: "71.6% of lines with both (753/1052)"
     h_before_k: "28.3% — REVERSED, h typically appears AFTER k"
-    relationship_to_C873: |
-      C873 measures mean position of ALL occurrences (e 0.404 < h 0.410 < k 0.443).
+    relationship_to_C873: |  # C873 demoted to Tier 3
+      C873 (demoted to Tier 3) measures mean position of ALL occurrences (e 0.404 < h 0.410 < k 0.443).
       This measures FIRST occurrence. Both are valid. h has early mean because when
       it appears it clusters early-to-mid, but k's first occurrence is earlier because
       k is more frequent (31% vs 10% of kernel mass).
-    interpretation: "Initiation sequence: establish stability reference (e), apply energy (k), monitor result (h)"
+    interpretation: "Initiation sequence: establish stability reference (e), apply energy (k), monitor result (h)"  # Tier-3 gloss; k/h/e roles withdrawn (C2082)
     provenance: "C1238"
 
   line_final_routing:
@@ -2301,6 +2384,7 @@ section_profiles:
 process_characterization:
   # Tier 2: Structural characterization of what the B system encodes
   # These are dimensional/statistical findings, not semantic interpretations
+  status: "MIXED — the PCA dimensionality comparisons (C1222-C1224) are the measurement; 'parameterized process control manual', 'HOW to control the process' and 'control-program representation' are the Tier-3 working interpretation, which no current measurement distinguishes from other constrained notations (STATUS_BRIEF §1)."
 
   document_type:
     statement: "Voynich B is a parameterized process control manual, not a recipe collection"
@@ -2424,7 +2508,7 @@ vocabulary_architecture:
       e_ratio_range: "1.76-2.21x across all sections (tracks k-kernel)"
       h_ratio_captured: "BIO 1.29x, HERBAL 1.04x, COSMO 0.74x (section-determined)"
       h_ratio_uncaptured: "STARS_RECIPE 2.18x (program-specific)"
-      implication: "Execution kernel (k/e) is always program-level; monitoring kernel (h) is domain-dependent"
+      implication: "Execution kernel (k/e) is always program-level; monitoring kernel (h) is domain-dependent"  # 'execution'/'monitoring' kernel labels historical (k/h/e roles withdrawn, C2082); the letter-fraction ratios are the measurement
       provenance: "C1154"
     paragraph_kernel_dynamics_residual_closure:
       statement: "Within-folio paragraph kernel diversity does not mediate the C1035 AXM residual"
@@ -2545,7 +2629,7 @@ vocabulary_architecture:
       rf_cv_r2: -0.141  # permutation p=0.375
       spatial_lag1_ac: 0.102  # permutation p=0.378
       regime_kw_p: 0.998  # perfect homogeneity
-      c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space"
+      c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space (C458 itself demoted to Tier 3)"
       c1035_final_trajectory: "~57% → ~49% → ~32% → ~27% CLOSED"
       interpretation: "73% structurally determined (dual boundary model), 27% folio-level residual. At paragraph level: 70.6% PREFIX + 25.2% noise + 4.2% genuine freedom (C1432)"
       paragraph_noise_decomposition: "C1432 shows 85.5% of paragraph residual is binomial sampling noise. True design freedom ~4.2%"
@@ -2591,7 +2675,7 @@ ht_un_integration:
     provenance: "C740"
 
   c475_compliance:
-    statement: "HT tokens obey C475 MIDDLE incompatibility when co-occurring with classified tokens"
+    statement: "HT tokens obey C475 MIDDLE incompatibility when co-occurring with classified tokens"  # C475 demoted to Tier 3 (sparsity denominator: '% of pairs forbidden' measures sparsity, not prohibition)
     violation_rate: "0.44%"
     provenance: "C742"
 
@@ -2674,7 +2758,7 @@ ht_un_integration:
     semantic_ceiling_compliant: true
     vocabulary_size: "4,421 types"
     line1_concentration: "50.2% of Line-1 are HT"
-    provenance: "C872, C935"
+    provenance: "C872, C935"  # C872 demoted to Tier 3 (interpretation)
 
   dark_pipeline_integration:
     statement: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens in B"
@@ -2722,7 +2806,7 @@ ht_un_integration:
     combinatorics:
       # Phase 419: DARK_PIPELINE_COMBINATORICS (C1175-C1178)
       pair_space_occupancy: "7.9% (71/903 possible atom pairs)"
-      c475_gate: "100% recall, 13.4% precision — necessary but loose"
+      c475_gate: "100% recall, 13.4% precision — necessary but loose"  # C475 demoted to Tier 3 (sparsity denominator)
       curation_parallel: "Parallels C1028 (0.9% PREFIX×MIDDLE×SUFFIX occupancy)"
       phantom_middles: "15 B-absent ch/sh-initial MIDDLEs — morphologically isolated, dead naming pattern (C1178)"
       provenance: "C1175, C1176, C1177, C1178"
@@ -2801,6 +2885,7 @@ robustness:
 operational_layer:
   tier: 3
   status: "WORKING — glosses derived from behavioral correlations + Brunschwig alignment"
+  status_v7_25: "Tier-3 working interpretation only (STATUS_BRIEF §1). The k/h/e role glosses ('heat', 'cool', 'monitor') have no supporting measurement (C103-C105 demoted to Tier 3; C2082); the 8-category partition is keyword-imposed, not data-discovered (C2069); program_reading's SPEC/LOOP body zones rest on C932, which did not replicate (C1259). Treat this layer as annotation, not structure."
   caveat: |
     Everything in this section is conditional on the Brunschwig structural
     alignment (fits F-BRU-001 through F-BRU-016). If that alignment is
@@ -2850,7 +2935,7 @@ operational_layer:
       ey: {gloss: "set", freq: 618, pct: "2.7%"}
       s: {gloss: "break", freq: 429, pct: "1.9%"}
       or: {gloss: "portion", freq: 418, pct: "1.8%"}
-    provenance: "C382, C588, MIDDLE_SEMANTIC_MAPPING"
+    provenance: "C382, C588, MIDDLE_SEMANTIC_MAPPING"  # [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
   gloss_categories:
     # Phase 446: GLOSS_SCALE_VALIDATION (C1250, C1251)
@@ -2858,7 +2943,7 @@ operational_layer:
       75 core MIDDLEs organize into 8 operational categories validated at
       corpus scale. These are NOT semantic labels — they are distributional
       clusters confirmed by behavioral, positional, and compositional tests.
-    tier: 2  # Category STRUCTURE is Tier 2; individual glosses remain Tier 3
+    tier: 2  # Category STRUCTURE is Tier 2; individual glosses remain Tier 3 [v7.25: partition keyword-imposed, '8' never k-tested (C2069); C1250 keeps Tier 2 for its atom-independent signal only]
     categories:
       THERMAL: {count: 12, key_middles: "k, e, ke, ek, kee, eey", role: "Temperature management (heat/cool cycles)"}
       CONTAINMENT: {count: 6, key_middles: "ar, am, or", role: "Vessel operations (seal/unseal/portion)"}
@@ -2884,6 +2969,7 @@ operational_layer:
         are not arbitrary labels but structurally real operational primitives.
       atom_count: 18
       compound_prediction: "Plurality vote over atoms predicts behavioral category"
+      note_v7_25: "The last sentence of the statement overstates: categories are assigned from atom keywords (C2069), so atom-plurality prediction of category is partly circular, and operational referents are not recoverable (semantic ceiling). The glosses remain Tier 3."
     provenance: "C1250, C1251, C1252, C1253"
 
   token_reading_pattern:
@@ -2905,15 +2991,16 @@ operational_layer:
         reading: "infrastructure: iterate (control loop marker)"
       - token: "okeey"
         parse: "ok:eey"
-        reading: "VESSEL: deep cool (C936 — ok selects vessel, eey = deep cool action)"
+        reading: "VESSEL: deep cool (C936 [demoted to Tier 3] — ok selects vessel, eey = deep cool action)"
       - token: "okaiin"
         parse: "ok:aiin"
-        reading: "VESSEL: check (C936 — ok selects vessel, aiin = check action)"
+        reading: "VESSEL: check (C936 [demoted to Tier 3] — ok selects vessel, aiin = check action)"
       - token: "okam"
         parse: "ok:am"
-        reading: "VESSEL: seal permanently (C936 — ok selects vessel, am = finalize)"
+        reading: "VESSEL: seal permanently (C936 [demoted to Tier 3] — ok selects vessel, am = finalize)"
 
   program_reading:
+    status: "Historical reading: the SPEC and LOOP body zones rest on C932's body gradient, which did not replicate (C1259; see program_structure.paragraph.execution_gradient.retracted_claims). Current paragraph model: header + steady-state body with Mode A/B tracks."
     description: |
       A B paragraph reads as a mini-program:
       Line 1 (HEADER):  Compound specification + folio identification
@@ -2938,7 +3025,7 @@ negative_guarantees:
     reason: "HT is operationally redundant (C935), not a separate layer; compound specification model replaces attention/practice interpretations"
 
   - guarantee: "No referential token meanings (substance identification, material names)"
-    reason: "Semantic ceiling (C120, C171): no natural-language translation or material identification recoverable from internal analysis. Behavioral glosses (Tier 3) describe operational PROFILES, not referential MEANINGS."
+    reason: "Semantic ceiling (C120, C171 — both demoted to Tier 3 by the Tier-0 restatement; the negative part is carried by C119 and the rival exclusions): no natural-language translation or material identification recoverable from internal analysis. Behavioral glosses (Tier 3) describe operational PROFILES, not referential MEANINGS."
 
   - guarantee: "No family structure"
     reason: "Families are emergent, not grammar partitions (C126, C144)"
@@ -2955,7 +3042,7 @@ deferred:
     reason: "Belongs to AZC-B-ACT"
 
   - topic: "Process domain identification (WHAT substance)"
-    reason: "Irrecoverable by design (C120, C171)"
+    reason: "Irrecoverable by design (C120, C171)"  # historical wording — C120/C171 demoted to Tier 3; current status: no referent recovered by internal analysis (C119, scoped to the rivals tested), not 'irrecoverable by design'
 
   - topic: "Historical context"
     reason: "Non-binding interpretive layer"
@@ -2968,7 +3055,7 @@ annotations:
   status: "NON-NORMATIVE"
 
   coverage_statistics:
-    token_coverage: "61.9%"
+    token_coverage: "61.9%"  # legacy figure; current registry: 69.5% of B tokens = 100% of the grammar's own 480-type vocabulary (C124 as corrected; STATUS_BRIEF §2)
     folio_count: 83
     token_types: 479
     instruction_classes: 49
@@ -2976,12 +3063,14 @@ annotations:
     provenance: "C121"
 
   kernel_statistics:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (kernel roles withdrawn; recovery-path rate rests on the withdrawn hazard/recovery layer)"
     e_class_corpus_share: "36%"
     e_recovery_path_rate: "54.7%"
     e_trigram_rate: "97.2%"
-    provenance: "C105, C333, C339"
+    provenance: "C105, C333, C339"  # C105 demoted to Tier 3
 
   hazard_statistics:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (class level demoted C783; 5 classes imposed C2060; zeros reduce C2081)"
     forbidden_count: 17
     asymmetric_rate: "65%"
     distant_from_kernel: "59%"
@@ -2993,14 +3082,16 @@ annotations:
     provenance: "C109, C110, C111, C112, C1528, C1529, C1530, C1531, C1532, C1533"
 
   convergence_statistics:
+    note: "Occupancy measurements only (C074 measurement, C323); convergence as a target is withdrawn (STATUS_BRIEF §3)"
     state_c_terminal: "57.8%"
     transitional_terminal: "38.6%"
     completion_gradient_rho: "+0.24 (SECTION CONFOUND — C1401)"
     sequential_convergence: "NONE at any scale (C1402)"
     monostate_reframe: "Thematic dominance, not sequential convergence (C1403)"
-    provenance: "C323, C325, C1401, C1402, C1403"
+    provenance: "C323, C325, C1401, C1402, C1403"  # [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
 
   link_statistics:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. The 38% LINK density is not reproducible; true 'ol' density is 13.2% (C609); LINK is a morphological artifact (C1174)"
     density: "38%"
     section_b: "19.6%"
     section_h: "9.1%"
@@ -3008,9 +3099,10 @@ annotations:
     provenance: "C334"
 
   design_statistics:
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3 (clamp/free CV asymmetry is a frequency shadow)"
     hazard_cv: "0.04-0.11"
     recovery_cv: "0.72-0.82"
-    provenance: "C458"
+    provenance: "C458"  # C458 demoted to Tier 3 (frequency shadow)
 
   robustness_statistics:
     noise_entropy_increase: "3.3%"
@@ -3023,7 +3115,7 @@ annotations:
     line_positions: 4  # SETUP, WORK, CHECK, CLOSE
     energy_flow_correlation: "-0.89"
     daiin_trigger_frequency: "highest initial bigram"
-    provenance: "C547, C551, C556, C557"
+    provenance: "C547, C551, C556, C557"  # C547, C557 demoted to Tier 3
 
   role_anatomy_statistics:
     en_classes: 18
@@ -3084,9 +3176,10 @@ annotations:
     prefix_between_base_cosine: 0.515
     prefix_base_ratio: 1.84
     prep_prefix_shuffle_p: 0.998
-    provenance: "C267, C382, C588, C661, C911, C935, C936, C1218, C1219, C1220, C1221"
+    provenance: "C267, C382, C588, C661, C911, C935, C936, C1218, C1219, C1220, C1221"  # C936 demoted to Tier 3
 
   paragraph_execution_statistics:
+    note: "rare/universal/tokens-per-line gradients, prep-verb concentration and heat-first rate come from C932-C934: C932 not replicated, C933 an artifact of Mode A vocabulary, C934 weakened (C1259). Historical figures; the suffix-mode and FL figures (C1227-C1232) stand."
     rare_middle_gradient: "r=-0.97"
     universal_middle_gradient: "r=+0.92"
     tokens_per_line_gradient: "r=-0.97"
@@ -3101,29 +3194,29 @@ annotations:
     prefix_channel_switch_rate: "73.2%"
     tail_product_clusters: 3
     tail_product_section_chi2: 31.73
-    provenance: "C932, C933, C934, C935, C1227, C1228, C1229, C1230, C1231, C1232"
+    provenance: "C932, C933, C934, C935, C1227, C1228, C1229, C1230, C1231, C1232"  # [v7.26 status: C932, C933 demoted to Tier 3 (not replicated (C1259))]
 
 # ============================================================
 provenance:
-  tier_0_frozen:
-    - "C074"   # Dominant Convergence
-    - "C079"   # Only STATE-C Essential
-    - "C084"   # System Targets MONOSTATE
-    - "C109"   # 5 Hazard Failure Classes
-    - "C115"   # 0 Non-Executable Tokens
+  tier_0_frozen:  # historical list — after the 2026-09-28 Tier-0 restatement only C121 and C124 here remain Tier 0
+    - "C074"   # Dominant Convergence [Tier 0 -> 2: occupancy measurement only; convergence framing withdrawn]
+    - "C079"   # Only STATE-C Essential [demoted to Tier 3, Tier-0 restatement]
+    - "C084"   # System Targets MONOSTATE [demoted to Tier 3, Tier-0 restatement]
+    - "C109"   # 5 Hazard Failure Classes [Tier 2, scoped: 5-class taxonomy imposed (C2060); zeros reduce (C2081)]
+    - "C115"   # 0 Non-Executable Tokens [demoted to Tier 3, Tier-0 restatement]
     - "C121"   # 49 Instruction Classes
-    - "C124"   # 100% Grammar Coverage
-    - "C171"   # Closed-Loop Control Only
+    - "C124"   # 100% Grammar Coverage [Tier 0 as corrected: 100% of the grammar's 480 types = 69.5% of B tokens]
+    - "C171"   # Closed-Loop Control Only [demoted to Tier 3: all four legs withdrawn]
 
-  kernel:
-    - "C085"   # 10 primitives
-    - "C089"   # Core within core
-    - "C103"   # k = ENERGY_MODULATOR
-    - "C104"   # h = PHASE_MANAGER
-    - "C105"   # e = STABILITY_ANCHOR
-    - "C107"   # Kernel BOUNDARY_ADJACENT
+  kernel:  # WITHDRAWN construct (STATUS_BRIEF §3) — list kept for traceability
+    - "C085"   # 10 primitives [demoted to Tier 3: EVA letter inventory]
+    - "C089"   # Core within core [superseded by C2082 — dead]
+    - "C103"   # k = ENERGY_MODULATOR [demoted to Tier 3]
+    - "C104"   # h = PHASE_MANAGER [demoted to Tier 3]
+    - "C105"   # e = STABILITY_ANCHOR [demoted to Tier 3]
+    - "C107"   # Kernel BOUNDARY_ADJACENT [Tier 2 row; rests on the withdrawn hazard layer]
 
-  hazard:
+  hazard:  # WITHDRAWN construct (hazard topology, STATUS_BRIEF §3) — list kept for traceability; forbidden-set rows are scoped (C2060, C2081)
     - "C110"   # PHASE_ORDERING dominant
     - "C111"   # 65% asymmetric
     - "C112"   # 59% distant from kernel
@@ -3152,20 +3245,20 @@ provenance:
   program_line:
     - "C357"   # Lines deliberately chunked
     - "C358"   # Boundary tokens
-    - "C359"   # LINK suppressed at boundaries
+    - "C359"   # LINK suppressed at boundaries [v7.26 status: C359 demoted to Tier 3 (conflicts with C805 (weaker method))]
     - "C360"   # Grammar LINE-INVARIANT
     - "C1566"  # Q3-Q4 step discontinuity (HEAD JSD=0.0185, 26x Q2-Q3; two-step line architecture)
 
   morphology:
     - "C267"   # Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)
-    - "C382"   # Morphology encodes control phase (MONITORING vs INTERVENTION)
-    - "C383"   # Global morphological type system
+    - "C382"   # Morphology encodes control phase (MONITORING vs INTERVENTION) [v7.26 status: C382 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
+    - "C383"   # Global morphological type system [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
     - "C506.b" # Intra-class behavioral heterogeneity (73% JSD>0.4)
     - "C588"   # Suffix role selectivity (chi2=5063.2)
     - "C661"   # PREFIX x MIDDLE behavioral interaction (JSD=0.425)
     - "C662"   # PREFIX role reclassification (75% class reduction)
     - "C911"   # PREFIX-MIDDLE compatibility constraints (102 forbidden)
-    - "C936"   # ok = vessel domain selector (revised from three-operation composite)
+    - "C936"   # ok = vessel domain selector (revised from three-operation composite) [demoted to Tier 3]
     - "C1001"  # PREFIX dual encoding (content + position)
     - "C1003"  # Pairwise compositionality (no three-way synergy)
     - "C1004"  # SUFFIX is not a sequential state carrier
@@ -3205,18 +3298,18 @@ provenance:
     - "C1538"  # q-modifier thermal activation on o-base (64% k-HEAD, 3.5x gap)
     - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture (all HEAD JSD<0.01)
 
-  link:
+  link:  # LINK-as-monitoring WITHDRAWN (C609, C1174; STATUS_BRIEF §3) — list kept for traceability
     - "C334"   # LINK section conditioning
     - "C339"   # E-class dominance
     - "C340"   # LINK-escalation complementarity
     - "C365"   # LINK spatially uniform - REFUTED by C805 (boundary enrichment)
-    - "C366"   # LINK marks grammar state transitions - REVISED by C804 (quantitative claims not reproducible)
+    - "C366"   # LINK marks grammar state transitions - REVISED by C804 (quantitative claims not reproducible) [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
 
-  convergence:
+  convergence:  # occupancy / section measurements; convergence-as-target withdrawn (STATUS_BRIEF §3)
     - "C323"   # Terminal distribution
     - "C324"   # Section-dependent terminals
-    - "C325"   # Completion gradient (QUALIFIED by C1401: section confound)
-    - "C1401"  # C325 completion gradient is section confound
+    - "C325"   # Completion gradient (QUALIFIED by C1401: section confound) [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
+    - "C1401"  # C325 completion gradient is section confound [v7.26 status: C325 demoted to Tier 3 (section confound (C1401))]
     - "C1402"  # No sequential convergence to AXM at any scale
     - "C1403"  # MONOSTATE is thematic dominance not sequential convergence
     - "C1404"  # Section structural differentiation is REGIME-dominated
@@ -3227,7 +3320,7 @@ provenance:
     - "C1432"  # Paragraph AXM residual = 85% noise + 4.2% genuine freedom
     - "C1433"  # PREFIX-AXM mediation chain complete (sole load-bearing predictor)
 
-  recovery:
+  recovery:  # WITHDRAWN construct (recovery architecture, STATUS_BRIEF §3) — list kept for traceability
     - "C397"   # qo-prefix post-source frequency (REVISED: lane transition, not escape)
     - "C398"   # Post-source role distribution (REVISED: baseline after CHSH)
     - "C399"   # Safe precedence pattern
@@ -3239,8 +3332,8 @@ provenance:
     - "C1459"  # e→y context-independent deployment (ambient, not reactive)
     - "C1462"  # e→y rate predicts folio forgiveness (rho=+0.569 with AXM self)
 
-  design:
-    - "C458"   # Execution design clamp
+  design:  # WITHDRAWN construct (clamp vs freedom, STATUS_BRIEF §3)
+    - "C458"   # Execution design clamp [demoted to Tier 3: frequency shadow]
 
   robustness:
     - "C328"   # Noise robustness
@@ -3294,7 +3387,7 @@ provenance:
     - "C1169"  # AXM residual CLOSED — ~27% genuine design freedom (exhaustive 5-test battery)
 
   execution_syntax:
-    - "C547"   # ICC-based role validation
+    - "C547"   # ICC-based role validation [demoted to Tier 3]
     - "C548"   # EN role pattern
     - "C549"   # FL role pattern
     - "C550"   # FQ role pattern
@@ -3304,11 +3397,11 @@ provenance:
     - "C554"   # Section C profile
     - "C555"   # Section S profile
     - "C556"   # 5-position line syntax
-    - "C557"   # daiin trigger
-    - "C561"   # or→aiin bigram
+    - "C557"   # daiin trigger [demoted to Tier 3, PHASE_731]
+    - "C561"   # or→aiin bigram [demoted to Tier 3, PHASE_731]
     - "C562"   # FLOW final hierarchy
     - "C956"   # Positional token exclusivity (structural, role-driven)
-    - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden)
+    - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden) [superseded by C2081 — dead; zeros reduce]
     - "C958"   # Opener class determines line length
     - "C959"   # Opener is role marker, not instruction header
     - "C960"   # Boundary vocabulary is open
@@ -3391,7 +3484,7 @@ provenance:
   sub_role_interaction:
     - "C598"   # Cross-boundary sub-group structure (8/10 significant)
     - "C599"   # AX scaffolding routing (AX_FINAL->FQ_CONN)
-    - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO)
+    - "C600"   # CC trigger selectivity (daiin->CHSH, ol-derived->QO) [demoted to Tier 3, PHASE_735]
     - "C601"   # Hazard sub-group concentration (FL_HAZ/EN_CHSH/FQ_CONN)
     - "C602"   # REGIME-conditioned sub-role grammar (4/5 REGIME-dependent)
 
@@ -3417,8 +3510,8 @@ provenance:
 
   ht_un_reconciliation:
     - "C740"   # HT/UN population identity (identical by definition)
-    - "C741"   # HT C475 minimal participation
-    - "C742"   # HT C475 compliance (0.44% violation)
+    - "C741"   # HT C475 minimal participation [C475 demoted to Tier 3: sparsity denominator]
+    - "C742"   # HT C475 compliance (0.44% violation) [C475 demoted to Tier 3: sparsity denominator]
     - "C743"   # HT lane segregation (CHSH-dominant)
     - "C744"   # HT lane indifference (no lane-tracking)
     - "C745"   # HT coverage metric sensitivity
@@ -3449,9 +3542,9 @@ provenance:
     - "C776"   # Post-FL kernel enrichment
     - "C777"   # FL state index
 
-  control_topology:
+  control_topology:  # forbidden-pair rows scoped; hazard topology withdrawn (STATUS_BRIEF §3)
     - "C782"   # CC kernel paradox (highest contact, lowest compound)
-    - "C783"   # Forbidden pair asymmetry (direction matters)
+    - "C783"   # Forbidden pair asymmetry (direction matters) [demoted to Tier 3: no class-level suppression]
     - "C784"   # FL/AX hazard immunity (0% exposure)
     - "C785"   # FQ medial targeting
     - "C786"   # FL forward bias (83.3% forward-facing)
@@ -3464,8 +3557,8 @@ provenance:
     - "C791"   # CC-EN dominant flow (78.3% CC->EN)
 
   link_operator_architecture:
-    - "C804"   # LINK transition grammar revision (C366 quantitative claims not reproducible)
-    - "C805"   # LINK boundary enrichment (refutes C365 spatially uniform)
+    - "C804"   # LINK transition grammar revision (C366 quantitative claims not reproducible) [v7.26 status: C366 demoted to Tier 3 (not confirmed (C804); LINK is morphological (C1174))]
+    - "C805"   # LINK boundary enrichment (refutes C365 spatially uniform; C365 dead)
     - "C806"   # LINK-HT overlap (OR=1.50)
     - "C807"   # LINK-FL inverse relationship (distance 3.91 vs 3.38)
     - "C808"   # 'ol' is PP MIDDLE (92.4% LINK tokens are PP)
@@ -3486,11 +3579,11 @@ provenance:
     - "C814"   # Kernel-escape inverse (rho=-0.528)
     - "C815"   # Phase position significance (1.5% variance, flexible timing)
 
-  cc_control_loop_integration:
-    - "C816"   # CC positional ordering (daiin->LINK->KERNEL->ol->FL)
-    - "C817"   # CC lane routing confirmed (daiin->CHSH 90.8%, rapid decay)
+  cc_control_loop_integration:  # control-loop framing withdrawn (STATUS_BRIEF §3)
+    - "C816"   # CC positional ordering (daiin->LINK->KERNEL->ol->FL) [demoted to Tier 3, PHASE_731]
+    - "C817"   # CC lane routing confirmed (daiin->CHSH 90.8%, rapid decay) [demoted to Tier 3, PHASE_735]
     - "C818"   # CC kernel bridge (Class 17 = CC-KERNEL interface, 88% kernel)
-    - "C819"   # CC boundary asymmetry (daiin initial, ol/ol_derived medial)
+    - "C819"   # CC boundary asymmetry (daiin initial, ol/ol_derived medial) [demoted to Tier 3, PHASE_735]
     - "C820"   # CC hazard immunity (0/700 forbidden, EN absorbs 99.8%)
 
   regime_line_syntax_interaction:
@@ -3519,28 +3612,28 @@ provenance:
     - "C1253"  # Paragraph-level apparatus correlation (rho=0.409, attenuated from token-level 0.758)
 
   gallows_paragraph_dynamics:
-    - "C863"   # Paragraph-ordinal EN subfamily gradient
+    - "C863"   # Paragraph-ordinal EN subfamily gradient [demoted to Tier 3]
     - "C864"   # Gallows paragraph marker (8.6% initial vs 2.7% body)
     - "C865"   # Gallows folio position distribution
     - "C866"   # Gallows morphological patterns
     - "C867"   # P-T transition dynamics
     - "C868"   # Gallows-QO/CHSH independence
-    - "C869"   # Gallows functional model
+    - "C869"   # Gallows functional model [demoted to Tier 3]
 
   ht_discrimination_vocabulary:
     - "C870"   # Line-1 HT folio specificity (85.9% singleton)
     - "C871"   # HT role cooccurrence pattern (CHSH bias)
-    - "C872"   # HT discrimination vocabulary interpretation
+    - "C872"   # HT discrimination vocabulary interpretation [demoted to Tier 3]
 
-  control_flow_semantics:
-    - "C873"   # Kernel positional ordering (e < h < k) — mean position
-    - "C874"   # CC token functions (daiin=init, ol=continue)
-    - "C875"   # Escape trigger grammar (80.4% from hazard FL stages)
-    - "C876"   # LINK checkpoint function
+  control_flow_semantics:  # control-flow / control-model framing withdrawn (STATUS_BRIEF §3)
+    - "C873"   # Kernel positional ordering (e < h < k) — mean position [demoted to Tier 3]
+    - "C874"   # CC token functions (daiin=init, ol=continue) [demoted to Tier 3]
+    - "C875"   # Escape trigger grammar (80.4% from hazard FL stages) [demoted to Tier 3]
+    - "C876"   # LINK checkpoint function [demoted to Tier 3]
     - "C877"   # Role transition grammar (EN->EN 38.5%, CC->EN 37.7%)
     - "C878"   # Section program variation
-    - "C879"   # Process domain verdict (batch processing)
-    - "C880"   # Integrated control model
+    - "C879"   # Process domain verdict (batch processing) [demoted to Tier 3]
+    - "C880"   # Integrated control model [demoted to Tier 3]
 
   control_loop_architecture:  # Phase 441
     - "C1233"  # Cross-line independence (near-random, entropy 97.8%)
@@ -3548,17 +3641,17 @@ provenance:
     - "C1235"  # Line-final routing (m 29.77x, k/e depleted)
     - "C1236"  # Suffix scope markers (terminal=Mode A, checkpoint=mode-independent)
     - "C1237"  # Paragraph termination by -am (5.19x, steady-state)
-    - "C1238"  # Kernel initiation order (e->k->h, refines C873)
+    - "C1238"  # Kernel initiation order (e->k->h, refines C873 [C873 demoted to Tier 3])
 
-  closed_loop_orthogonality:
+  closed_loop_orthogonality:  # historical group name — closed-loop control withdrawn (C171 Tier 3; STATUS_BRIEF §3)
     - "C886"   # Transition probability directionality (symmetric constraints, directional execution)
     - "C890"   # Recovery rate-pathway independence
     - "C891"   # ENERGY-FREQUENT inverse correlation
     - "C892"   # Post-FQ h-dominance (recovery via phase-check)
     - "C893"   # Paragraph kernel signature predicts operation type
-    - "C894"   # REGIME_4 recovery concentration
+    - "C894"   # REGIME_4 recovery concentration [v7.26 status: C894 demoted to Tier 3 (REGIME/control-strategy reading)]
     - "C895"   # Kernel-recovery correlation asymmetry
-    - "C896"   # Process mode discrimination via kernel profile
+    - "C896"   # Process mode discrimination via kernel profile [demoted to Tier 3]
 
   apparatus_markers:
     - "C897"   # Prefixed FL MIDDLEs as line-final state markers
@@ -3584,7 +3677,7 @@ provenance:
     - "C1022"  # Paragraph macro-dynamics: operates below macro-automaton resolution
     - "C1023"  # Structural necessity ablation: PREFIX routing sole load-bearing macro component (78-81%)
     - "C1024"  # Structural directionality: MIDDLE directional executor, PREFIX symmetric router
-    - "C1025"  # Generative sufficiency: M2 (49-class Markov + forbidden) at 80%
+    - "C1025"  # Generative sufficiency: M2 (49-class Markov + forbidden) at 80% [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
     - "C1026"  # Grammar component necessity: class ordering + forbidden avoidance load-bearing
     - "C1029"  # Section-parameterized grammar weights (section modulates transition weights at REGIME scale)
     - "C1030"  # M2 gap decomposition: B4 misspecified, corrected 13/15; B5+C2 independent mechanisms
@@ -3594,7 +3687,7 @@ provenance:
     - "C1034"  # Symmetric forbidden fixes B5: bidirectional suppression, M5-SF 80% B5+B1+B3, projected 15/15
     - "C1035"  # AXM residual irreducible: 40% variance is free design space, no folio-level predictor helps
 
-  affordance_system:
+  affordance_system:  # forbidden-transition / safety-buffer rows (C996, C997, C1000) are scoped; the forbidden set reduces (C2081)
     - "C995"   # 9-bin affordance system
     - "C996"   # Forbidden transition bin concentration (17/17 HUB per C1000)
     - "C997"   # Safety buffer mechanism (22 buffers, QO-enriched)
@@ -3604,7 +3697,7 @@ provenance:
     - "C1009"  # AXM exit hazard-target compositional curvature
     - "C1018"  # HUB sub-role archetype differentiation (k_frac F=15.81, SAFETY_BUFFER 1.7x)
 
-  apparatus_response:
+  apparatus_response:  # virtual-apparatus family: model diagnostics, not text facts (STATUS_BRIEF §3) — historical as manuscript structure
     - "C1636"  # Productive disruption efficiency generalizes (76-folio, 88% Tier C pass)
     - "C1638"  # DYE/DVA/YGA success family (process quality, not endpoint state)
     - "C1639"  # A2 forgivingness = close recovery channels (159.5% excess, rho=0.963)
@@ -3645,13 +3738,13 @@ provenance:
     - "C975"   # Folio fingerprint AUC = 0.994
 
   paragraph_execution:
-    - "C932"   # Body vocabulary gradient (RARE r=-0.97, UNIVERSAL r=+0.92)
-    - "C933"   # Prep verb early concentration (2-3x in Q0 vs Q4)
-    - "C934"   # Parallel startup pattern (65% heat-first)
+    - "C932"   # Body vocabulary gradient (RARE r=-0.97, UNIVERSAL r=+0.92) [not replicated body-only, C1259] [v7.26 status: C932 demoted to Tier 3 (not replicated (C1259))]
+    - "C933"   # Prep verb early concentration (2-3x in Q0 vs Q4) [artifact of Mode A vocabulary, C1259] [v7.26 status: C933 demoted to Tier 3 (not replicated (C1259))]
+    - "C934"   # Parallel startup pattern (65% heat-first) [weakened, C1259]
     - "C935"   # Compound specification dual purpose (71.6% atom-body hit rate)
 
   kernel_internal_structure:
-    - "C1225"  # E-depth suffix parametricity (single-e 64% -edy vs multi-e 12% -edy)
+    - "C1225"  # E-depth suffix parametricity (single-e 64% -edy vs multi-e 12% -edy) [rescoped PHASE_758: parser segmentation artifact; 'parametric axis' struck]
     - "C1226"  # ke/ek ratio process-context conditioning (REGIME: 18.6-64.0% ek; section: 19.7-79.1% ek)
 
   paragraph_cycling:
@@ -3707,6 +3800,7 @@ provenance:
 category_execution:
   provenance: "C1277-C1294"
   audit_note: "v3.15: Phase 456 category-REGIME integration (C1291-C1294): kernel-mediated, validates C1169 closure"
+  scope_note_v7_25: "Categories come from a keyword-imposed taxonomy (C2069; MARKING-dependent results pending recomputation). 'Escape' and 'hazard' terms (escape_mechanism, anti_escape_mechanism, hazard_categories) are computed against the FL escape set and the forbidden-transition set; the hazard layer is withdrawn as structure (C2081; STATUS_BRIEF §3). Read these as measurements of those sets."
 
   escape_mechanism:
     statement: "THERMAL escape is fully PREFIX-mediated: THERMAL->qo(44.1%)->QO lane->escape"
@@ -3895,21 +3989,23 @@ disallowed:
 
   - interpretation: "Grammar encodes semantic content"
     reason: "PURE_OPERATIONAL verdict"
-    provenance: "C120"
+    note: "C120 demoted to Tier 3: the positive 'operational' verdict is the working interpretation; what stands is negative knowledge (no reading as token-by-word natural language or as the tested ciphers; C119 and the rival exclusions, STATUS_BRIEF §4)"
+    provenance: "C120"  # C120 demoted to Tier 3 (Tier-0 restatement)
 
   - interpretation: "Grammar is directional (narrative)"
     reason: "Time-reversal symmetric"
     provenance: "C391"
 
   - interpretation: "Grammar is a decision tree or state machine"
+    status: "WITHDRAWN v7.24/7.25 — historical; see context/SYSTEM/STATUS_BRIEF.md §3. Its basis (closed-loop control, C171) is demoted to Tier 3 with all four legs withdrawn; this exclusion currently has no standing test behind it"
     reason: "Closed-loop control only"
-    provenance: "C171"
+    provenance: "C171"  # C171 demoted to Tier 3
 
   - interpretation: "AX classes represent distinct behavioral modes"
     reason: "Classes collapse to ≤2 effective groups; position is sole differentiator"
     provenance: "C572"
 
-  - interpretation: "C559 FQ membership {9,20,21,23} is correct"
+  - interpretation: "C559 FQ membership {9,20,21,23} is correct"  # C559 superseded by C583, C587 (dead)
     reason: "Classes 20,21 are AX per C563; correct FQ is {9,13,14,23} per ICC"
     provenance: "C583, C592"
 
@@ -3923,7 +4019,7 @@ disallowed:
 
   - interpretation: "ok encodes a verb (seal/lock/close/cover) with MIDDLE as modifier"
     reason: "ok is a domain selector (VESSEL), not a verb. MIDDLE provides the action. Verb-based glosses produce word salad at line level. 15 hypotheses tested; only domain-selector produces coherent procedures. 378 same-MIDDLE pairs confirm PREFIX differentiates target domain."
-    provenance: "C936 (revised)"
+    provenance: "C936 (revised)"  # C936 demoted to Tier 3 in the generated table
 
   - interpretation: "FL_SAFE is an absorbing or long-duration collection state"
     reason: "FL_SAFE has self-transition of only 0.023, exits to AXM at 0.698, and has expected return time of 117.7 steps — a rare fleeting terminal excursion, not an absorbing state"

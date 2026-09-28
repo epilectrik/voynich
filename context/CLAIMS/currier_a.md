@@ -3242,7 +3242,8 @@ The 83-folio count is not arbitrary but **structurally determined** by vocabular
 
 ### C536 - Material-Class REGIME Invariance
 
-**Tier:** 2 | **Status:** REVISED | **Scope:** A->B
+**Tier:** 3 | **Status:** REVISED | **Scope:** A->B | **Demoted:** 2026-09-28 (registry cascade v7.26)
+**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the headline is the REGIME_4 'precision requirement' gloss (C494, Tier 3; REGIME glosses retired, C1712, C2070); the animal/herb record classes are gloss-based, and the row predates the 2026-02-11 REGIME reassignment that found the older mappings disagreeing (kappa 0.175, C894 detail).]**
 **Phase:** MATERIAL_REGIME_MAPPING (2026-01-25)
 
 Both animal AND herb material classes preferentially route to REGIME_4 (precision control):

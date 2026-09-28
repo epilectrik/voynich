@@ -2,6 +2,11 @@
 
 **Status:** CLOSED | **Tier:** 2 | **Scope:** All three text systems
 
+> **Status note (v7.25, 2026-09-28).** Written before the September 2026 review; `SYSTEM/STATUS_BRIEF.md` and the
+> generated `CONSTRAINT_TABLE.txt` win on conflict. "Executable programs" / "execution" for Currier B is the Tier-3
+> working interpretation; the Tier-0 claim is the measured grammar (STATUS_BRIEF §1). References below to the kernel,
+> LINK monitoring and hazard topology are annotated as withdrawn (STATUS_BRIEF §3).
+
 ---
 
 ## The Three Systems
@@ -18,7 +23,7 @@ The Voynich Manuscript contains three distinct text systems:
 
 ## Relationships
 
-### Folio Disjunction (Tier 0)
+### Folio Disjunction (Tier 2 — C272 and C239 are Tier 2 in the registry)
 
 A and B are **completely folio-disjoint**:
 
@@ -41,7 +46,9 @@ A and B have **completely different formal systems**:
 | Line structure | Atomic (3 tokens median) | Blocked (31 tokens median) |
 | Position dependence | NONE (JS=0) | HIGH (positional grammar) |
 | Forbidden transitions | 5 violations | 0 violations |
-| Grammar coverage | 13.6% (49-class grammar fails) | 100% |
+| Grammar coverage | 13.6% (49-class grammar fails) | 100% of its own vocabulary = 69.5% of B tokens (C124 as corrected) |
+
+*[The forbidden-transition row is historical: the hazard/forbidden-transition layer is withdrawn — zero bigrams reduce to composition, zones and boundary coupling (C2081; C783 demoted).]*
 
 ### Vocabulary Integration (Tier 2)
 
@@ -59,7 +66,7 @@ This is **global type system sharing**, not entry-level cross-reference.
 
 ## Global Type System (Tier 2)
 
-The same morphological type system spans all three systems (C383):
+The same morphological type system spans all three systems (C383): [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 ### Type Dichotomy
 
@@ -67,6 +74,8 @@ The same morphological type system spans all three systems (C383):
 |------|----------|----------------|---------------|
 | INTERVENTION | ch, sh, ok | 100% | Avoiding |
 | MONITORING | da, sa | <5% | Attracted |
+
+*[Status: C383 remains Tier 2 as registered. The INTERVENTION/MONITORING labels rest on withdrawn readings — LINK as monitoring (C609, C1174: LINK is a morphological artifact of "ol") and the k/h/e kernel (C089 superseded by C2082). "Kernel contact" counts EVA letters, and h is half the bench glyph (C1440). Treat the labels as historical.]*
 
 This dichotomy holds **identically** in:
 - Currier B (sequential programs)
@@ -90,7 +99,7 @@ This dichotomy holds **identically** in:
 | Token vocabulary | 69.8% overlap |
 | Morphological components | Same prefixes, suffixes, middles |
 | Type dichotomy | ch/sh/ok vs da/sa in both |
-| LINK affinity patterns | da/al attracted, qo/ok avoiding |
+| LINK affinity patterns | da/al attracted, qo/ok avoiding (LINK = tokens containing "ol", a morphological artifact, C1174) |
 
 ### What is NOT Shared
 
@@ -99,7 +108,7 @@ This dichotomy holds **identically** in:
 | Entry-level coupling | J=0.998 across all B folios (no targeting) |
 | Folio-level cross-reference | 0 shared folios |
 | Sequential grammar | A has none |
-| Forbidden transitions | Different violations |
+| Forbidden transitions | Different violations (historical — the forbidden-transition layer is withdrawn, C2081) |
 
 ### Vocabulary Overlap Pattern (C336)
 
@@ -154,11 +163,11 @@ Despite vocabulary sharing, there is **no entry-level cross-reference** (C384):
 
 ## Type Coherence vs Semantic Reference
 
-Currier A and Currier B share a global morphological type system (C383). This produces structural coherence between registry entries and execution grammar without implying semantic reference or entry-level correspondence.
+Currier A and Currier B share a global morphological type system (C383 [demoted to Tier 3, v7.26]). This produces structural coherence between registry entries and execution grammar without implying semantic reference or entry-level correspondence. [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 **The systems feel aligned because they use the same types - not because they reference each other.**
 
-This distinction resolves a common confusion: observing that A's material/variant encoding aligns with B's hazard topology does not indicate semantic coupling. It indicates that both systems instantiate the same type system - one as registry, one as executable grammar. The alignment is structural, not referential.
+This distinction resolves a common confusion: observing that A's material/variant encoding aligns with B's hazard topology does not indicate semantic coupling [the hazard topology itself is now withdrawn — STATUS_BRIEF §3; C2081]. It indicates that both systems instantiate the same type system - one as registry, one as executable grammar. The alignment is structural, not referential.
 
 ### Construction-Time vs Runtime (Tier 3)
 

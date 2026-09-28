@@ -535,7 +535,8 @@ _QUARANTINE_WARNING = (
     '> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative '
     'external-language mappings. Do NOT use these for structural answers. Use only when '
     'the user explicitly asks about etymology or external-language alignment. '
-    'Structural role is determined by grammar position (C121), not word meaning (C171, C120).'
+    'Structural role is determined by grammar position (C121), not word meaning (C119; '
+    'C171 and C120 were demoted to Tier 3 in the v7.24 Tier-0 restatement).'
 )
 
 
@@ -887,6 +888,9 @@ def _generate_contract_signature(filepath, title):
             m = re.match(r'\s+statement:\s*"([^"]*)"', line)
             if m and current:
                 current['statement'] = m.group(1)[:120]  # Truncate long statements
+            m = re.match(r'\s+status:\s*"?([^"\n]*)"?', line)
+            if m and current and re.search(r'WITHDRAWN|SUSPENDED', m.group(1), re.IGNORECASE):
+                current['status'] = m.group(1).split('—')[0].split(';')[0].strip()[:40]
             m = re.match(r'\s+provenance:\s*"([^"]*)"', line)
             if m and current:
                 current['provenance'] = m.group(1)
@@ -917,6 +921,9 @@ def _generate_contract_signature(filepath, title):
             m = re.match(r'\s+statement:\s*"([^"]*)"', line)
             if m and inv_name:
                 inv_data['statement'] = m.group(1)[:100]
+            m = re.match(r'\s+status:\s*"?([^"\n]*)"?', line)
+            if m and inv_name and re.search(r'WITHDRAWN|SUSPENDED', m.group(1), re.IGNORECASE):
+                inv_data['status'] = m.group(1).split('—')[0].split(';')[0].strip()[:40]
             m = re.match(r'\s+provenance:\s*"([^"]*)"', line)
             if m and inv_name:
                 inv_data['provenance'] = m.group(1)
@@ -1007,7 +1014,8 @@ def _generate_contract_signature(filepath, title):
         out.append(f"### Guarantees ({len(guarantees)})")
         for g in guarantees:
             prov = g.get('provenance', '')
-            out.append(f"- {g['id']}: {g.get('statement', '')} [{prov}]")
+            st = f"[{g['status']}] " if g.get('status') else ''
+            out.append(f"- {g['id']}: {st}{g.get('statement', '')} [{prov}]")
         out.append("")
 
     # Invariants
@@ -1015,7 +1023,8 @@ def _generate_contract_signature(filepath, title):
         out.append(f"### Invariants ({len(invariants)})")
         for inv in invariants:
             prov = inv.get('provenance', '')
-            out.append(f"- {inv['name']}: {inv.get('statement', '')} [{prov}]")
+            st = f"[{inv['status']}] " if inv.get('status') else ''
+            out.append(f"- {inv['name']}: {st}{inv.get('statement', '')} [{prov}]")
         out.append("")
 
     # Sections -> Constraints
@@ -1069,16 +1078,28 @@ def _generate_all_contract_signatures():
 COMPACT_STANCE = """
 ## Cognitive Operating Stance
 
-This is a MAPPED BUT OPEN system: structure is mapped, referents are unrecovered, and the
-semantic character of Tier 0 ("operational notation, not encoded prose") is under adversarial
-test. Current forward plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
+This is a MAPPED BUT OPEN system: structure is mapped, referents are unrecovered. Tier 0 was
+restated 2026-09-28 (v7.24, human sign-off) to its measured core: Currier B is written in a single,
+compact token grammar (49 classes covering 69.5% of its tokens), organised by line with positional
+zones and word-boundary glyph coupling, applied in folio units that share the grammar while carrying
+their own vocabulary, and not reproduced by copy-and-modify generation or by the Naibbe cipher as
+published. The control-program / "operational notation" reading is Tier 3 (support withdrawn, not
+falsified). Authority order and the withdrawn list: context/SYSTEM/STATUS_BRIEF.md. Current forward
+plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
 - Tier 0-2 binding constraints ({constraint_count} registered; demoted rows appear at Tier 3, dead rows are dropped)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
-- Referents not recoverable from text-internal statistics alone (C171, C120) — scoped to the
-  encodings actually tested; sub-lexical / verbose-homophonic cipher classes (e.g. Naibbe) are UNTESTED
-- Hazard layer = token-level directional zero bigrams (C957), pending a within-line,
-  position-preserving screen-level null. Class-level "17 forbidden transitions" (C783) is DEMOTED and
-  C109's 5-class taxonomy is struck (C2060). Never quote C957's P≈5e-17 (post-selection product)
+- Referents not recoverable from text-internal statistics alone — scoped to the encodings actually
+  tested (negative knowledge C119, C2077, C2080; C171 and C120 were demoted to Tier 3 in v7.24). The
+  Naibbe cipher as published is EXCLUDED (C2080); modified verbose ciphers, syllable- or word-level
+  codebooks and the Rugg grille are UNTESTED
+- No hazard layer survives: C957 is superseded by C2081 — its token-level zero bigrams reduce to
+  line composition, zones and boundary coupling under the joint null. Class-level "17 forbidden
+  transitions" (C783) is DEMOTED and C109's 5-class taxonomy is struck (C2060). Never quote C957's
+  P≈5e-17 (post-selection product)
+- Withdrawn supports of the control-program reading (do not present as structure): kernel k/h/e as
+  the core (C089 superseded by C2082: word-ending routing, not a kernel); closed-loop control (C171,
+  Tier 3); LINK as monitoring (true density 13.2%, C609; morphological artifact, C1174); convergence
+  to STATE-C / MONOSTATE (occupancy only, C074; C1401-C1403); REGIME = fire degree (C1712, C2070)
 - EVA-unit caution: several atom-level claims are transliteration-unit artifacts (ch/sh, benched
   gallows and in/iin/aiin are single glyphs written as letter strings: C1440, C1209, C1207, C1484,
   C521's e→h zero). Prefer glyph-unit or token/class-level evidence
@@ -1119,7 +1140,9 @@ MEMORY_DIR = Path.home() / ".claude" / "projects" / "C--git-voynich" / "memory"
 
 # Core documents (always included)
 CORE_DOCS = [
+    ("SYSTEM/STATUS_BRIEF.md", "Current Status Brief (read first; overrides older documents)"),
     ("CLAUDE_INDEX.md", "Project Overview & Navigation"),
+    ("SYSTEM/RESEARCH_AGENDA.md", "Research Agenda (open questions and next tests)"),
     ("SYSTEM/STRATEGIC_REVIEW_2026-09-27.md", "Current Forward Plan (Strategic Review 2026-09-27)"),
     ("MODEL_CONTEXT.md", "Architectural Framework"),
     ("CONSTRAINT_TABLE.txt", "All Constraints"),
@@ -1244,7 +1267,7 @@ Always cite constraint numbers (C###) or fit IDs (F-XXX-###) when making claims.
 
 Examples:
 - "This conflicts with C384 (no entry-level A-B coupling)"
-- "Supported by C121 (49 instruction classes with 100% coverage)"
+- "Supported by C121 (49 instruction classes covering 69.5% of B tokens)"
 - "Consistent with Tier 3 interpretation in INTERPRETATION_SUMMARY.md"
 
 ## Tier Discipline
@@ -1329,7 +1352,8 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
     # POSITIVE interpretive layer (Project Overview, Architectural Framework,
     # Tier 3-4 Interpretations, contracts, cognitive stance) but KEEPS the methodology
     # notes (negative-knowledge / anti-echo priors) — "disciplined but un-interpreted".
-    docs = [d for d in CORE_DOCS if d[1] in ("All Constraints", "All Explanatory Fits")] if lean else CORE_DOCS
+    docs = [d for d in CORE_DOCS if d[1] in ("Current Status Brief (read first; overrides older documents)",
+                                             "All Constraints", "All Explanatory Fits")] if lean else CORE_DOCS
 
     # Header with instructions (fill in dynamic counts)
     sections.append(header.format(constraint_count=constraint_count, fit_count=fit_count, highest_id=highest_id))
@@ -1343,7 +1367,7 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
     # Metadata (counts parsed dynamically from INDEX.md and FIT_TABLE.txt)
     mode_label = "COMPACT" if compact else "FULL"
     sections.append(f"""**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}
-**Version:** Tier 0 frozen pending external adversarial tests; structure mapped, referents unrecovered ({constraint_count} registered constraints, {fit_count} fits) [{mode_label}]
+**Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered ({constraint_count} registered constraints, {fit_count} fits) [{mode_label}]
 
 ---
 

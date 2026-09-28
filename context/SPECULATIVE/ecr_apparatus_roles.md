@@ -1,8 +1,12 @@
 # ECR-2: Apparatus-Role Identification
 
+**Status (v7.25, 2026-09-28):** Every support this role inference uses is withdrawn or demoted — the k/h/e operator roles (C103–C105, Tier 3; kernel claim C089 superseded by C2082), closed-loop control (C171, Tier 3, all four legs withdrawn), the hazard classes and hybrid hazard model (C216 demoted; the 5-class taxonomy was imposed, C2060; class level demoted, C783), the 54.7% recovery figure (withdrawn recovery layer) and REGIME as 4 crisp classes (retired, C1712, C2070). The roles below are historical Tier 3 inference with no standing support — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** ACTIVE | **Date:** 2026-01-10
 
 > **Entity-level identification (specific plants, machines, substances) is probably irrecoverable by design and is not the goal of this analysis.**
+>
+> [v7.25: "irrecoverable by design" is retired closure language (strategic review §5); scoped to internal structural analysis, the identification question stays open.]
 
 ---
 
@@ -14,23 +18,23 @@ Infer the **functional roles and constraints** of apparatus implied by frozen co
 
 ## Evidence Summary
 
-### From Kernel Structure (C085-C108)
+### From Kernel Structure (C085-C108) [kernel reading withdrawn: C089 superseded by C2082; C085, C103–C105 demoted to Tier 3]
 
 | Kernel Operator | Role | Evidence |
 |-----------------|------|----------|
-| **k** | ENERGY_MODULATOR | Controls energy input to system (C103) |
-| **h** | PHASE_MANAGER | Manages phase transitions and material state (C104) |
-| **e** | STABILITY_ANCHOR | Anchors system to stable state; 54.7% of recovery paths (C105) |
+| **k** | ENERGY_MODULATOR | Controls energy input to system (C103, demoted to Tier 3) |
+| **h** | PHASE_MANAGER | Manages phase transitions and material state (C104, demoted to Tier 3) |
+| **e** | STABILITY_ANCHOR | Anchors system to stable state; 54.7% of recovery paths (C105, demoted to Tier 3; recovery figure withdrawn) |
 
-All kernel nodes are BOUNDARY_ADJACENT to forbidden transitions (C107). Kernel controls hazard proximity.
+All kernel nodes are BOUNDARY_ADJACENT to forbidden transitions (C107). Kernel controls hazard proximity. [v7.26 status: C107 demoted to Tier 3 (kernel/forbidden-pair framing withdrawn)]
 
-### From Circulatory Requirement (C171)
+### From Circulatory Requirement (C171) [C171 demoted to Tier 3: all four closed-loop legs withdrawn]
 
 - Only closed-loop process control survives
 - Material must cycle through apparatus
 - Continuous, not batch operation
 
-### From Regime Structure (C179-C185)
+### From Regime Structure (C179-C185) [v7.26 status: C181, C182, C183, C184, C185 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)]
 
 | Regime | Characteristic | Apparatus Implication |
 |--------|---------------|----------------------|
@@ -39,7 +43,7 @@ All kernel nodes are BOUNDARY_ADJACENT to forbidden transitions (C107). Kernel c
 | REGIME_3 | High throughput (transient) | Peak apparatus utilization |
 | REGIME_4 | Elevated engagement | Active apparatus control |
 
-### From Hybrid Hazard Model (C216)
+### From Hybrid Hazard Model (C216) [C216 demoted to Tier 3: split computed over the imposed 5-class taxonomy, C2060]
 
 | Hazard Focus | % | LINK Nearby | Implication |
 |--------------|---|-------------|-------------|
@@ -52,7 +56,7 @@ Apparatus hazards require faster response than batch hazards.
 
 | Principle | Apparatus Implication |
 |-----------|----------------------|
-| Waiting is default (38%) | Apparatus supports idle state |
+| Waiting is default (38%) [38% LINK figure withdrawn: not reproducible, true density 13.2%, C609] | Apparatus supports idle state |
 | Escalation irreversible | Apparatus state changes are permanent |
 | Restart requires low-CEI | Restart = cold/empty apparatus state |
 | 3 restart-capable folios | Only specific configurations allow restart |
@@ -65,12 +69,12 @@ Apparatus hazards require faster response than batch hazards.
 
 | Role | Evidence | Function |
 |------|----------|----------|
-| **Energy Source Role** | k = ENERGY_MODULATOR (C103) | Controls energy input to system |
-| **Phase Container Role** | h = PHASE_MANAGER (C104) | Manages phase transitions |
-| **Circulation Path Role** | C171 (closed-loop required) | Material cycles through apparatus |
-| **Stability Anchor Role** | e = STABILITY_ANCHOR (C105) | Recovery position; 54.7% of paths |
+| **Energy Source Role** | k = ENERGY_MODULATOR (C103, demoted to Tier 3) | Controls energy input to system |
+| **Phase Container Role** | h = PHASE_MANAGER (C104, demoted to Tier 3) | Manages phase transitions |
+| **Circulation Path Role** | C171 (closed-loop required; demoted to Tier 3) | Material cycles through apparatus |
+| **Stability Anchor Role** | e = STABILITY_ANCHOR (C105, demoted to Tier 3) | Recovery position; 54.7% of paths |
 
-### Implied Roles (Consistent with Hazards)
+### Implied Roles (Consistent with Hazards) [hazard classes withdrawn: taxonomy imposed by keyword matching (C2060), class level demoted (C783)]
 
 | Role | Evidence | Function |
 |------|----------|----------|
@@ -101,7 +105,7 @@ APPARATUS ROLES
 │       - PHASE_ORDERING hazard location
 │
 ├── FLOW DOMAIN
-│   ├── Circulation Path (C171 required)
+│   ├── Circulation Path (C171 required; C171 demoted to Tier 3)
 │   │   - Material cycles through
 │   │   - Closed-loop structure
 │   │
@@ -124,12 +128,12 @@ APPARATUS ROLES
 
 | Constraint | Evidence |
 |------------|----------|
-| Circulatory operation required | C171 |
-| 4 operating regimes exist | C179 |
-| High-throughput is unsustainable | C185 (REGIME_3 transient) |
-| Restart requires specific state | C182 (low-CEI) |
-| 29% of hazards are apparatus-focused | C216 |
-| Apparatus hazards need immediate response | C216 (zero LINK nearby) |
+| Circulatory operation required | C171 (demoted to Tier 3; closed-loop legs withdrawn) |
+| 4 operating regimes exist | C179 (4 crisp classes retired: REGIME is gradient-like, C1712, C2070) |
+| High-throughput is unsustainable | C185 (REGIME_3 transient) [v7.26 status: C185 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)] |
+| Restart requires specific state | C182 (low-CEI) [v7.26 status: C182 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)] |
+| 29% of hazards are apparatus-focused | C216 (demoted to Tier 3) |
+| Apparatus hazards need immediate response | C216 (zero LINK nearby; demoted to Tier 3) |
 
 ### What the System Assumes (Not Encoded)
 
@@ -155,6 +159,8 @@ APPARATUS ROLES
 
 ## Role-to-Hazard Mapping
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (hazard class names come from the imposed taxonomy, C2060)
+
 | Role | Primary Hazard | Secondary Hazard |
 |------|---------------|-----------------|
 | Phase Container | PHASE_ORDERING | ENERGY_OVERSHOOT |
@@ -167,12 +173,12 @@ APPARATUS ROLES
 
 ## Findings
 
-### Established (High Confidence)
+### Established (High Confidence) [confidence label retired v7.25: the supports are withdrawn — see status banner]
 
 1. **At least 4 functional apparatus roles exist:**
    - Energy Source (k-controlled)
    - Phase Container (h-controlled)
-   - Circulation Path (C171 required)
+   - Circulation Path (C171 required; C171 demoted to Tier 3)
    - Stability Anchor (e-controlled)
 
 2. **Additional roles implied by hazard structure:**
@@ -180,13 +186,13 @@ APPARATUS ROLES
    - Collector (COMPOSITION_JUMP hazard)
    - Containment (CONTAINMENT_TIMING hazard)
 
-3. **Apparatus supports exactly 4 operating regimes** (C179)
+3. **Apparatus supports exactly 4 operating regimes** (C179) [4 crisp classes retired: C1712, C2070]
 
-4. **29% of hazards are apparatus-focused** requiring immediate response (C216)
+4. **29% of hazards are apparatus-focused** requiring immediate response (C216, demoted to Tier 3)
 
 5. **System assumes apparatus exists** but does not encode configuration
 
-6. **Restart requires cold/low-CEI state** (C182)
+6. **Restart requires cold/low-CEI state** (C182) [v7.26 status: C182 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)]
 
 ### Uncertain (Lower Confidence)
 
@@ -201,10 +207,10 @@ APPARATUS ROLES
 
 | Constraint | How Satisfied |
 |------------|---------------|
-| C103-C105 (kernel operators) | Mapped to apparatus roles |
-| C171 (circulatory required) | Circulation Path role |
-| C179 (4 regimes) | Roles support 4 configurations |
-| C216 (hybrid hazard) | Apparatus vs batch hazard distinction |
+| C103-C105 (kernel operators; demoted to Tier 3, C089 superseded by C2082) | Mapped to apparatus roles |
+| C171 (circulatory required; demoted to Tier 3) | Circulation Path role |
+| C179 (4 regimes; 4 crisp classes retired, C1712) | Roles support 4 configurations |
+| C216 (hybrid hazard; demoted to Tier 3) | Apparatus vs batch hazard distinction |
 | OPS-4 (restart mechanics) | Stability Anchor at low-CEI |
 
 ---

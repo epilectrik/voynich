@@ -1,8 +1,12 @@
 # ECR-3: Decision-State Semantics
 
+**Status (v7.25, 2026-09-28):** Archetypes D1–D8 are derived from withdrawn constructs — the 5 hazard classes (taxonomy imposed, C2060; class level demoted, C783; zeros reduce to composition, C2081), the hybrid hazard / LINK-nearby split (C216 demoted), LINK's 38% (not reproducible, true 13.2%, C609), the k/h/e kernel (C103–C105 Tier 3; C089 superseded by C2082) and e-recovery (withdrawn recovery layer); D12 uses REGIME as 4 crisp classes (retired, C1712). The "High Confidence" archetype catalog is historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 | **Status:** ACTIVE | **Date:** 2026-01-10
 
 > **Entity-level identification (specific plants, machines, substances) is probably irrecoverable by design and is not the goal of this analysis.**
+>
+> [v7.25: "irrecoverable by design" is retired closure language (strategic review §5); scoped to internal structural analysis, the identification question stays open.]
 
 ---
 
@@ -20,7 +24,7 @@ A decision archetype is a **situation type** where the operator must make a judg
 
 ## Hazard-Derived Decision Archetypes
 
-### From 5 Failure Classes (C109)
+### From 5 Failure Classes (C109) [5-class taxonomy struck: imposed by keyword matching, C2060; C109 scoped]
 
 | Failure Class | % | Decision Archetype |
 |---------------|---|-------------------|
@@ -34,12 +38,12 @@ A decision archetype is a **situation type** where the operator must make a judg
 
 | Principle | Decision Archetype |
 |-----------|-------------------|
-| Waiting is default (38%) | "Should I intervene or wait?" |
+| Waiting is default (38%) [38% LINK figure withdrawn: true density 13.2%, C609] | "Should I intervene or wait?" |
 | Escalation irreversible | "Can I afford this escalation?" |
 | Restart requires low-CEI | "Can I restart from here?" |
 | Throughput transient | "Can I sustain this intensity?" |
 
-### From Kernel Structure
+### From Kernel Structure [kernel reading superseded: C089 → C2082; C103–C105 demoted to Tier 3]
 
 | Operator | Decision Archetype |
 |----------|-------------------|
@@ -60,7 +64,7 @@ A decision archetype is a **situation type** where the operator must make a judg
 | **D5** | Energy Level | ENERGY_OVERSHOOT | B | "Is energy appropriate?" |
 | **D6** | Wait vs Act | LINK (38%) | B | "Should I intervene or wait?" |
 | **D7** | Recovery Path | e-operator | B | "How do I return to stability?" |
-| **D8** | Restart Viability | C182 | B | "Can I restart from this state?" |
+| **D8** | Restart Viability | C182 | B | "Can I restart from this state?" [v7.26 status: C182 demoted to Tier 3 (OPS model built on withdrawn hazard/recovery composites)] |
 | **D9** | Case Comparison | A registry | A | "Is this case like that previous case?" |
 | **D10** | Attention Focus | HT (C459) | HT | "Where should I be vigilant?" |
 | **D11** | Context Orientation | AZC (C460) | AZC | "Where am I in the process?" |
@@ -139,6 +143,8 @@ A decision archetype is a **situation type** where the operator must make a judg
 
 ## Decision Situations by Hazard Severity
 
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (hazard classes imposed, C2060; LINK-nearby split from C216, demoted)
+
 ### HIGH HAZARD (Immediate Decision Required)
 
 | Archetype | Hazard | LINK Nearby | Constraint |
@@ -189,7 +195,7 @@ This is the **allowed semantic ceiling** - we can identify decision TYPES withou
 
 ## Findings
 
-### Established (High Confidence)
+### Established (High Confidence) [confidence label retired v7.25: item 1 rests on the withdrawn hazard topology]
 
 1. **12 decision archetypes identified** from hazard topology and layer structure
 2. **Each layer handles specific archetype classes:**
@@ -225,7 +231,7 @@ This is the **allowed semantic ceiling** - we can identify decision TYPES withou
 
 | Constraint | How Satisfied |
 |------------|---------------|
-| C109 (5 hazard classes) | Mapped to decision archetypes D1-D5 |
+| C109 (5 hazard classes; taxonomy struck, C2060; C109 scoped) | Mapped to decision archetypes D1-D5 |
 | C384 (no A↔B coupling) | A handles what B ignores |
 | C404-405 (HT non-operational) | HT handles attention, not execution |
 | C459 (HT anticipatory) | HT precedes stress |

@@ -2,6 +2,8 @@
 
 **Status:** CLOSED | **Tier:** 2
 
+> **Status note (v7.25):** "program", "waiting", "restart", "aggressive/conservative" and "risk" below are the OPS-era control reading, now the Tier-3 working interpretation (closed-loop control demoted, C171; see SYSTEM/STATUS_BRIEF.md §3). The folio metrics themselves (C178–C198, C403) remain Tier 2 in the generated table. Current orientation: SYSTEM/STATUS_BRIEF.md.
+
 ---
 
 ## 83 Folios Enumerated
@@ -9,9 +11,9 @@
 | Metric | Value |
 |--------|-------|
 | Total folios | 83 |
-| Total instructions | 75,248 |
-| Grammar coverage | 100% |
-| Translation-eligible | 0 |
+| Total instructions | 75,248 (legacy count, apparently pre-H-filter; H-track Currier B = 23,243 tokens) |
+| Grammar coverage | 100% of the grammar's own 480 types = 69.5% of B tokens (C124 as corrected; HT/UN by exclusion, C566) |
+| Translation-eligible | 0 (C119) |
 
 ---
 
@@ -27,6 +29,8 @@
 ---
 
 ## Waiting Profiles
+
+*[Historical labels: these profiles were computed in the OPS phases, when LINK was read as waiting. The 38% LINK figure of that era is not reproducible (true density 13.2%, C609) and LINK is a morphological artifact of "ol" (C1174); the "waiting" reading is withdrawn.]*
 
 | Profile | Count | % |
 |---------|-------|---|
@@ -69,6 +73,8 @@ Programs form a continuum (silhouette 0.14-0.19):
 
 ## Section Distribution
 
+*[STATE-C rate = terminal-state occupancy only (C074, Tier 2 measurement); "convergence to STATE-C" is withdrawn — no sequential convergence (C1401–C1403), and C079/C084 are demoted to Tier 3.]*
+
 | Section | Folios | STATE-C Rate |
 |---------|--------|--------------|
 | H | ~40 | ~50% |
@@ -86,7 +92,7 @@ Programs form a continuum (silhouette 0.14-0.19):
 | CEI smoothing | d=1.89 |
 | Aggressive buffering | 88% vs 49% null |
 
-Manuscript ordering is designed, not random.
+Manuscript ordering is designed, not random. [C161/C162 remain Tier 2 as ordering measurements; "risk" and "designed" are the OPS-era control reading (C171 demoted to Tier 3).]
 
 ---
 

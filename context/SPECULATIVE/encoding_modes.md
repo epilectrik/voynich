@@ -1,12 +1,14 @@
 # Encoding Modes: Trajectory-Encoded (Section B) vs Instruction-Encoded (matched-S Mercuriorum)
 
+**Status (v7.25, 2026-09-28):** Beyond the 2026-05-16 half-falsification, the remaining supports are demoted or rescoped — the Section B vs matched-S contrast (C2031) is length-confounded (PHASE_755: significant pooled, in no equal-length stratum); the Mercuriorum attribution and cold reads (C1927, C1936, C1971) were demoted to Tier 3 in the PHASE_762 Testamentum triage; C1995 is Tier 3; and C1225's "e-depth is a parametric axis" was struck as a parser artifact (PHASE_758). See SYSTEM/STATUS_BRIEF.md §3.
+
 **Tier:** 3 (HALF-FALSIFIED 2026-05-16)
 
 **Date:** 2026-05-16
 
 **Status:** HALF-FALSIFIED via Codicillus cross-validation same session. The cross-language alchemy/pharmacy framing FAILS external grounding — Codicillus alchemy Latin shows neither period-2 nor monotonic decay (both lag2/lag1 ratios fall in [−0.17, +0.05] vs Voynich's [−0.66, +0.66]). The trajectory-encoded interpretation as a cross-language genre property is FALSIFIED.
 
-**What survives:** The Voynich-internal observation (C2031) that Section B and matched-S have asymmetric sequential e-depth structure is real and Voynich-specific. What dies is the operational interpretation "Section B alchemy is trajectory-encoded as a generic genre property." The structural asymmetry is Voynich-engineered, not a natural-language alchemy/pharmacy distinction.
+**What survives:** The Voynich-internal observation (C2031) that Section B and matched-S have asymmetric sequential e-depth structure is real and Voynich-specific. [v7.25: rescoped — the asymmetry holds pooled but in no equal-length stratum (C2031, PHASE_755)] What dies is the operational interpretation "Section B alchemy is trajectory-encoded as a generic genre property." The structural asymmetry is Voynich-engineered, not a natural-language alchemy/pharmacy distinction.
 
 **See instead:** `engineered_substrate_triad.md` for the corrected framing — Voynich's section-divergent sequential structure (C2031/C2032) is part of a three-axis Voynich-vs-NL structural distinctness pattern alongside C2015 (compression) and C2022 (anti-NL char distribution), framed as engineered structural substrate rather than operational rhetoric.
 
@@ -14,7 +16,7 @@
 
 ## The framing
 
-Per C2031, Section B and matched-Section-S folios exhibit divergent sequential e-depth structure:
+Per C2031, Section B and matched-Section-S folios exhibit divergent sequential e-depth structure [C2031 rescoped 2026-09-27: the divergence is length-confounded, PHASE_755]:
 
 - **Section B operational tokens** show period-2 e-depth modulation (lag-1 = −0.026, lag-2 = +0.011, sign-reversal across positions)
 - **matched-S operational tokens** show NULL sequential e-depth structure (lag-1 ≈ 0, no consecutive e-depth relationship at all)
@@ -26,18 +28,18 @@ The asymmetric outcome (one has structure, the other has anti-structure) at the 
 
 **Section B alchemy is *trajectory-encoded*.** Recipes encode operational sequences where the THERMAL NARRATIVE itself is the sequential structure. Token i has e-depth 2 (e.g., `qokeedy` = qok + ee + dy, mid-thermal intensity), token i+1 has e-depth 0 or 1 (lower-intensity operational token), token i+2 returns to e-depth 2 — the alternation IS the recipe. Period-2 oscillation in e-depth describes the procedural rhythm at the token-sequence level.
 
-This matches Section B's matched recipes per C1971: stir-and-check rhythms, alternating apparatus phases, multi-step distillation with thermal modulation between phases. The thermal modulation is encoded directly in the sequence of operational tokens.
+This matches Section B's matched recipes per C1971 (demoted to Tier 3: self-scored cold reads): stir-and-check rhythms, alternating apparatus phases, multi-step distillation with thermal modulation between phases. The thermal modulation is encoded directly in the sequence of operational tokens.
 
 **matched-S Mercuriorum is *instruction-encoded*.** Recipes encode SELF-CONTAINED instruction units where each operational token carries its full thermal specification internally. Each `qokeey`, `qokeedy`, `qokchedy` is a complete operational specification — the next operational token doesn't continue the thermal arc, it starts a fresh instruction.
 
-This matches Mercuriorum chapter structure per C1971/C1927: each chapter step is a discrete operational specification, not a continuous thermal trajectory. matched-S folios show high e-depth clustering at the NEAR-RELATIVE level (per C1995 Tier A z=+5.43) — repetition of operationally-related tokens — without continuous sequential e-depth structure across consecutive tokens (per C2031 operational-token NULL).
+This matches Mercuriorum chapter structure per C1971/C1927 (both demoted to Tier 3, PHASE_762 triage): each chapter step is a discrete operational specification, not a continuous thermal trajectory. matched-S folios show high e-depth clustering at the NEAR-RELATIVE level (per C1995 Tier A z=+5.43; C1995 demoted to Tier 3) — repetition of operationally-related tokens — without continuous sequential e-depth structure across consecutive tokens (per C2031 operational-token NULL).
 
 ## Why this is candidate Tier 3, not Tier 2
 
 The interpretation uses only existing vocabulary:
-- e-depth as control parameter: C1394, C1225, C1197
-- Section B vs Section S operational divergence: C1995 (revised), C2028
-- Mercuriorum chapter structure: C1971, C1927, C1936
+- e-depth as control parameter: C1394, C1225, C1197 [C1225 rescoped: "e-depth is a parametric axis" struck, PHASE_758]
+- Section B vs Section S operational divergence: C1995 (revised; demoted to Tier 3), C2028
+- Mercuriorum chapter structure: C1971, C1927, C1936 [all demoted to Tier 3 in the PHASE_762 Testamentum triage]
 - Scaffold vs operational distinction: C572, C567
 
 Per `feedback_framework_as_null.md`: when a finding can be stated entirely in existing operational vocabulary without new mechanism, **increase skepticism**. The C2031 measurement passes the discriminating tests cleanly, but the "trajectory-encoded vs instruction-encoded" framing is one of several admissible operational readings:
@@ -54,11 +56,11 @@ To promote to Tier 2 mechanism, would need: discriminating test that distinguish
 
 ## Connection to existing structural framework
 
-This interpretation, if validated, would refine C1995 substantially:
+This interpretation, if validated, would refine C1995 (demoted to Tier 3) substantially:
 
-- C1995 (revised 2026-05-04): "S = operational-compactness via near-relative dominance; B = operational-alternation via cross-PREFIX anti-correlation." Three-tier decomposition test rejected continuous-state thermal tracking.
-- C2031 (2026-05-16): Section B operational period-2 modulation; matched-S operational null. Operational-token-level asymmetry.
-- Encoding-modes interpretation (this note): C1995's "operational-compactness" in S maps to instruction-encoding (self-contained operational specs); C1995's "operational-alternation" in B maps to trajectory-encoding (thermal narrative in token sequence). Two different organizational regimes at two different decomposition levels.
+- C1995 (revised 2026-05-04; demoted to Tier 3): "S = operational-compactness via near-relative dominance; B = operational-alternation via cross-PREFIX anti-correlation." Three-tier decomposition test rejected continuous-state thermal tracking.
+- C2031 (2026-05-16): Section B operational period-2 modulation; matched-S operational null. Operational-token-level asymmetry. [rescoped 2026-09-27: length-confounded, PHASE_755]
+- Encoding-modes interpretation (this note): C1995's "operational-compactness" in S maps to instruction-encoding (self-contained operational specs); C1995's (Tier 3, demoted) "operational-alternation" in B maps to trajectory-encoding (thermal narrative in token sequence). Two different organizational regimes at two different decomposition levels.
 
 ## Falsification candidates
 
@@ -80,9 +82,9 @@ This Tier 3 interpretation emerged in the same session as C2031's measurement re
 - C2027 (retracted predecessor — narrow-heat-cycle surface measurement)
 - C1995 (revised, 2026-05-04 + 2026-05-15 demotion — three-tier decomposition)
 - C1394 (e MOD = thermal microstate)
-- C1225 (e-depth suffix parametricity)
+- C1225 (e-depth suffix parametricity) [rescoped 2026-09-27: parser artifact, parametric-axis reading struck]
 - C1197 (extensibility-as-intensity)
-- C1971 (matched-folio catalog — Mercuriorum attribution basis)
+- C1971 (matched-folio catalog — Mercuriorum attribution basis) [demoted to Tier 3, PHASE_762 triage]
 - C572 (AX vs operational class distinction — the decomposition layer)
 - `feedback_framework_as_null.md`
 - `feedback_expert_predictions_are_pre_registrations.md`

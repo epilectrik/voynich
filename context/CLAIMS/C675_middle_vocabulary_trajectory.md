@@ -1,6 +1,6 @@
 # C675: MIDDLE Vocabulary Trajectory
 
-**Status:** VALIDATED | **Tier:** 0 | **Phase:** B_LINE_SEQUENTIAL_STRUCTURE | **Scope:** B
+**Status:** VALIDATED | **Tier:** 2 (was 0; re-tiered 2026-09-28 — Tier 0 holds only the restated conclusion, C121/C124) | **Phase:** B_LINE_SEQUENTIAL_STRUCTURE | **Scope:** B
 
 ## Finding
 

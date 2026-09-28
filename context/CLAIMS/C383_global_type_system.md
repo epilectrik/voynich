@@ -1,6 +1,6 @@
 # C383: GLOBAL MORPHOLOGICAL TYPE SYSTEM
 
-**Tier:** 2 | **Status:** CLOSED | **Phase:** A-ARCH
+**Tier:** 3 (was 2; registry cascade 2026-09-28, v7.26 — see INDEX.md row) | **Status:** CLOSED | **Phase:** A-ARCH
 
 ---
 

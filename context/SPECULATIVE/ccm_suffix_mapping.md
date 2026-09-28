@@ -12,7 +12,7 @@
 
 1. **C283 Error Corrected:** -ol is 0.35x B/A (A-enriched), NOT "balanced" as originally claimed
 2. **D1-D12 Mapping Incomplete:** Several archetype assignments have LOW confidence
-3. **Two-Axis Model:** C527 establishes suffix also correlates with material class (animal vs herb) within Currier A - a dimension not captured by A/B enrichment alone
+3. **Two-Axis Model:** C527 establishes suffix also correlates with material class (animal vs herb) within Currier A - a dimension not captured by A/B enrichment alone [C527 is registered at Tier 3; its fire-degree gloss is withdrawn with REGIME = fire degree, C2070]
 
 The suffix-to-archetype mapping below should be treated as **exploratory, not established**.
 
@@ -24,7 +24,7 @@ The suffix-to-archetype mapping below should be treated as **exploratory, not es
 |--------|------------------|
 | C277 | Suffixes are UNIVERSAL (appear across all prefixes) |
 | C283 | Suffix enrichment ratios (A vs B) - **CORRECTED: -ol is A-enriched** |
-| C527 | Suffix-material class correlation (animal vs herb, fire degree) - **NEW** |
+| C527 | Suffix-material class correlation (animal vs herb, fire degree) - **NEW** [Tier 3; fire-degree gloss withdrawn, C2070] |
 | ECR-3 | 12 decision archetypes by layer |
 | canonical_grammar.json | Token → role with suffix patterns |
 
@@ -116,6 +116,8 @@ From ECR-3:
 ---
 
 ## Hazard Alignment Check
+
+**[Withdrawn v7.24/7.25 — historical; see STATUS_BRIEF §3]** (hazard classes imposed, C2060; C216's 29% apparatus split demoted; LINK monitoring withdrawn, C1174)
 
 Cross-reference with hazard classes:
 

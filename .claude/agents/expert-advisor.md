@@ -41,7 +41,7 @@ Always cite constraint numbers (C###) or fit IDs (F-XXX-###) when making claims.
 
 Examples:
 - "This conflicts with C384 (no entry-level A-B coupling)"
-- "Supported by C121 (49 instruction classes with 100% coverage)"
+- "Supported by C121 (49 instruction classes covering 69.5% of B tokens)"
 - "Consistent with Tier 3 interpretation in INTERPRETATION_SUMMARY.md"
 
 ## Tier Discipline
@@ -65,16 +65,28 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 ## Cognitive Operating Stance
 
-This is a MAPPED BUT OPEN system: structure is mapped, referents are unrecovered, and the
-semantic character of Tier 0 ("operational notation, not encoded prose") is under adversarial
-test. Current forward plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
+This is a MAPPED BUT OPEN system: structure is mapped, referents are unrecovered. Tier 0 was
+restated 2026-09-28 (v7.24, human sign-off) to its measured core: Currier B is written in a single,
+compact token grammar (49 classes covering 69.5% of its tokens), organised by line with positional
+zones and word-boundary glyph coupling, applied in folio units that share the grammar while carrying
+their own vocabulary, and not reproduced by copy-and-modify generation or by the Naibbe cipher as
+published. The control-program / "operational notation" reading is Tier 3 (support withdrawn, not
+falsified). Authority order and the withdrawn list: context/SYSTEM/STATUS_BRIEF.md. Current forward
+plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
 - Tier 0-2 binding constraints (0 registered; demoted rows appear at Tier 3, dead rows are dropped)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
-- Referents not recoverable from text-internal statistics alone (C171, C120) — scoped to the
-  encodings actually tested; sub-lexical / verbose-homophonic cipher classes (e.g. Naibbe) are UNTESTED
-- Hazard layer = token-level directional zero bigrams (C957), pending a within-line,
-  position-preserving screen-level null. Class-level "17 forbidden transitions" (C783) is DEMOTED and
-  C109's 5-class taxonomy is struck (C2060). Never quote C957's P≈5e-17 (post-selection product)
+- Referents not recoverable from text-internal statistics alone — scoped to the encodings actually
+  tested (negative knowledge C119, C2077, C2080; C171 and C120 were demoted to Tier 3 in v7.24). The
+  Naibbe cipher as published is EXCLUDED (C2080); modified verbose ciphers, syllable- or word-level
+  codebooks and the Rugg grille are UNTESTED
+- No hazard layer survives: C957 is superseded by C2081 — its token-level zero bigrams reduce to
+  line composition, zones and boundary coupling under the joint null. Class-level "17 forbidden
+  transitions" (C783) is DEMOTED and C109's 5-class taxonomy is struck (C2060). Never quote C957's
+  P≈5e-17 (post-selection product)
+- Withdrawn supports of the control-program reading (do not present as structure): kernel k/h/e as
+  the core (C089 superseded by C2082: word-ending routing, not a kernel); closed-loop control (C171,
+  Tier 3); LINK as monitoring (true density 13.2%, C609; morphological artifact, C1174); convergence
+  to STATE-C / MONOSTATE (occupancy only, C074; C1401-C1403); REGIME = fire degree (C1712, C2070)
 - EVA-unit caution: several atom-level claims are transliteration-unit artifacts (ch/sh, benched
   gallows and in/iin/aiin are single glyphs written as letter strings: C1440, C1209, C1207, C1484,
   C521's e→h zero). Prefer glyph-unit or token/class-level evidence
@@ -101,21 +113,126 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-28 15:37
-**Version:** Tier 0 frozen pending external adversarial tests; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
+**Generated:** 2026-09-28 16:26
+**Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
 
 ## Table of Contents
 
-1. Project Overview & Navigation
-2. Current Forward Plan (Strategic Review 2026-09-27)
-3. Architectural Framework
-4. All Constraints
-5. All Explanatory Fits
-6. Tier 3-4 Interpretations
-7. Session Methodology Notes (47 feedback rules)
-8. Structural Contract Signatures (6 contracts)
+1. Current Status Brief (read first; overrides older documents)
+2. Project Overview & Navigation
+3. Research Agenda (open questions and next tests)
+4. Current Forward Plan (Strategic Review 2026-09-27)
+5. Architectural Framework
+6. All Constraints
+7. All Explanatory Fits
+8. Tier 3-4 Interpretations
+9. Session Methodology Notes (49 feedback rules)
+10. Structural Contract Signatures (6 contracts)
+
+---
+
+# Current Status Brief (read first; overrides older documents)
+
+# Status Brief — what currently stands (v7.26, 2026-09-28)
+
+This page is the short, authoritative orientation to the current state of the model. Living documents written before
+the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
+brief and the generated registry win.
+
+**Authority order:**
+1. `context/CONSTRAINT_TABLE.txt` (generated): a constraint missing from it is dead; Tier 3 in it means demoted or
+   speculative.
+2. `context/CLAIMS/INDEX.md` rows: they give the reason for each status.
+3. This brief.
+4. Everything else.
+
+Full record of the review: `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`. Changelog: `SYSTEM/CHANGELOG.md`.
+
+---
+
+## 1. Tier 0 (restated 2026-09-28, human sign-off)
+> Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line
+> with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while
+> carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher
+> as published.
+
+Basis: C121, C124 (as corrected); C956, C357; C1212, C1563 (with PHASE_761); C531, C1790; C2077, C2080.
+Only C121 and C124 carry Tier 0 in the registry; the other basis rows are Tier-2 measurements. Fifteen rows that
+still carried a leftover Tier-0 label (C670–C681, C747, C748, C750) were re-tiered to Tier 2 on 2026-09-28.
+
+**Working interpretation (Tier 3):** the grammar is read as procedural notation (a family of programs for a
+process). No current measurement distinguishes this reading from other constrained notations. The supports it used
+to have (a kernel of core operators, closed-loop control, hazard avoidance, convergence) are withdrawn (section 3).
+
+## 2. Measurements that stand (Tier 2 unless noted)
+- **Grammar:** 49 classes, closed over the grammar's own 480-type vocabulary (the class map holds 480 types; some older
+  rows say 479) (69.5% of B tokens; HT/UN defined by
+  exclusion: C121, C124, C566, C740).
+- **Line organisation:**
+  - positional zones (C956);
+  - line regularity (C357);
+  - boundary glyph coupling, i.e. the last glyph of a token predicts the first glyph of the next (C1212, C1563). This
+    is robust to spacing uncertainty and replicated on ZL (PHASE_761).
+- **Word-ending routing (C2082):** a token's two-glyph ending predicts the next token's class beyond that coupling,
+  above composition, zones and edge counts. Neither Naibbe nor Timm reproduces it.
+- **Common-token zero bigrams reduce** to line composition, zones and boundary coupling (C2081). No prohibition layer
+  remains.
+- **Family preference:**
+  - qo tokens are rich in the gallows k, and ok tokens in e (C1313);
+  - qo tokens alternate with ch/sh tokens above composition (C549);
+  - qok→ok/oke above composition (C2056).
+- **Folio units:** shared grammar with folio-unique vocabulary (C531); no duplicate lines or paragraphs (C1790).
+- **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
+- **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
+  a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it
+  is relied on.
+- **Physical layout:** the Aberdeen negative control shows the bifolium pipeline is SPECIFIC (PHASE_759). The
+  Voynich bifolium contrast is reported but not registered.
+
+## 3. Withdrawn or demoted — do not present as structure
+| Construct | Status | Where |
+|---|---|---|
+| Kernel k/h/e as the "core" of the grammar | Superseded. At glyph level k shows nothing; e/bench signal = word-ending routing | C089 → C2082; C085, C103–C105 Tier 3 |
+| "Closed-loop" control; operational purpose class | Tier 3, all four legs withdrawn | C171, C120 |
+| LINK as a monitoring operator (38%) | 13.2% true density; morphological artifact of "ol" | C609, C1174 |
+| 17 forbidden transitions, 5 hazard classes, hazard topology, "safety architecture" | Class level demoted; taxonomy imposed; 13 class-level violations; token zeros reduce | C783, C2060, C2063, C2081 (C957 superseded), C109 scoped, C216 |
+| Convergence to STATE-C / MONOSTATE as a target; completion gradient | Withdrawn: occupancy only; no sequential convergence; section confound | C074 (T2 measurement), C079 and C084 (demoted), C1401–C1403 |
+| Recovery architecture, execution clamp vs recovery freedom | Demoted: frequency shadow | C458, C105 |
+| MIDDLE incompatibility "X% of pairs forbidden" | Demoted: sparsity denominator | C475 (and dependants) |
+| Hub savings | Broken baseline (dead) | C476 |
+| Testamentum chapter ↔ folio matching, recto/verso chapter pairs, section = book part | No correspondence signal; 20 rows Tier 3 | C2052, PHASE_762, C1882–C1975 triage |
+| "Nobody has tested…" / closure banners ("ANALYSIS CLOSED", "explanatory saturation", "definitively irrecoverable") | Retired language | Strategic review §5 |
+| EVA-letter statistics inside ch/sh, benched gallows, minim groups | Transliteration identities | C1440, C1209, C1207, C1484, C521 (partly orthographic) |
+| e-run class claim C1225 | Parser artifact | PHASE_758 |
+| R-series ordering, S/R division | Transcription artifact (retracted) | C434, C435 |
+| REGIME as 4 crisp classes; REGIME = fire degree | Retired (the fire-degree gloss absorbed a sign flip; C1872 records the sign convention and stays live) | C1712, C2070 |
+| C2031/C2032 section alternation contrast | Length-confounded | PHASE_755 |
+| Mensural-notation hypothesis | Falsified | project memory; C2032 axis |
+| Virtual-apparatus family as manuscript knowledge | Model diagnostics, not text facts | C1581–C1680 (review §5) |
+| Rows resting on the constructs above (registry cascade, v7.26) | 31 demoted to Tier 3; 67 scope-tagged at Tier 2 (they measure a defined set, e.g. the 17 zero pairs or 'ol' tokens, not a hazard or monitoring layer) | See CHANGELOG v7.26 |
+
+## 4. Rivals excluded (negative knowledge, scoped)
+- Natural language written one token per word (C132, C2015, C2022). C130's "0.19% reference rate" is tainted and not
+  relied on.
+- Token ≈ word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017).
+- The Naibbe verbose homophonic cipher as published (C2080).
+- Timm & Schinner copy-and-modify (C2077).
+- A table walk over a coordinate lookup (C2079).
+- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not
+  evidence for the working interpretation.
+
+## 5. How to annotate a stale citation (for anyone editing living docs)
+- **The claim is still presented as structure:** rewrite the passage to state the current status in plain words and
+  cite the governing row. Example: "(C475, demoted to Tier 3: the percentage measured sparsity, not prohibition)".
+- **The citation is incidental:** add a short bracketed status note next to it. Example: "[C089 superseded by
+  C2082]".
+- **A whole section rests on a withdrawn construct:** put a one-line banner at its head, "**[Withdrawn v7.24/7.25 —
+  historical; see STATUS_BRIEF §3]**", and leave the text for traceability. Do not delete history.
+- **Never** upgrade a claim, add a new claim, or edit the registry (INDEX.md, CONSTRAINT_TABLE.txt) from a living doc.
+  Registry anomalies go to the maintainer.
+
 
 ---
 
@@ -123,13 +240,15 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 6.03 | **Status:** FROZEN | **Constraints:** 1907 | **Date:** 2026-03-29
+**Version:** 7.26 | **Status:** characterization ACTIVE | **Constraints:** 1,889 live in the generated table (T0 2, T1 38, T2 1,679, T3 166, T4 4) | **Phases:** 763 | **Date:** 2026-09-28
 
-> **STATUS (2026-09-27):** Structure mapped; referents unrecovered; Tier 0's semantic character under adversarial test. The earlier "ANALYSIS CLOSED / Structural work is DONE" banner is WITHDRAWN: 34 of the 43 most-cited constraints were never re-audited under a modern null, several atom-level constraints are EVA-orthography artifacts, and no meaningful-cipher generator has been tested. Forward plan: [SYSTEM/STRATEGIC_REVIEW_2026-09-27.md](SYSTEM/STRATEGIC_REVIEW_2026-09-27.md). PCA-v1 certified internal contract consistency only.
+*(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
+
+> **STATUS (2026-09-27):** Structure mapped; referents unrecovered; Tier 0's semantic character under adversarial test. The earlier "ANALYSIS CLOSED / Structural work is DONE" banner is WITHDRAWN: 34 of the 43 most-cited constraints were never re-audited under a modern null, several atom-level constraints are EVA-orthography artifacts, and no meaningful-cipher generator has been tested. Forward plan: [SYSTEM/STRATEGIC_REVIEW_2026-09-27.md](SYSTEM/STRATEGIC_REVIEW_2026-09-27.md). PCA-v1 certified internal contract consistency only. *(Update 2026-09-28: Tier 0 restated to its measured core (v7.24); the kernel claim C089 superseded by C2082 (PHASE_763, v7.25).)*
 
 ---
 
-> **⭐ FOR PROJECT-STATE OVERVIEW (CURRENT):** Read [PROJECT_SYNTHESIS.md](PROJECT_SYNTHESIS.md) first. The CLAUDE_INDEX.md below is a frozen 2026-03-29 snapshot. The canonical current synthesis (v6.71, 2035 constraints, full historical synthesis through PHASE_701) is in PROJECT_SYNTHESIS.md.
+> **Project-state overview:** the current one-page status is [SYSTEM/STATUS_BRIEF.md](SYSTEM/STATUS_BRIEF.md) (v7.25). [PROJECT_SYNTHESIS.md](PROJECT_SYNTHESIS.md) is the historical synthesis of 2026-05-18 (v6.71, through PHASE_701); it predates the September 2026 review, and its sections resting on withdrawn constructs are bannered in place. This index was last fully rewritten on 2026-03-29 and has been aligned with the registry on 2026-09-28; where any passage below conflicts with STATUS_BRIEF or `CONSTRAINT_TABLE.txt`, those win.
 
 ---
 
@@ -137,20 +256,22 @@ tables are quarantined — do not use for structural answers.
 
 **Tier 0 (restated 2026-09-28):** Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
 
-**Working interpretation (Tier 3):** The grammar is read as a family of closed-loop, kernel-centric control programs. The kernel and closed-loop supports were withdrawn on re-check; see [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md).
+**Current status in one page:** [SYSTEM/STATUS_BRIEF.md](SYSTEM/STATUS_BRIEF.md) — read this before any other document; documents written before the September 2026 review may present withdrawn claims as structure.
 
-Not natural language written one token per word; the cipher classes tested so far are excluded, including the Naibbe verbose homophonic cipher as published (PHASE_757, C2080); other sub-lexical designs remain untested. Working reading (Tier 3): a control-system reference manual.
+**Working interpretation (Tier 3):** the grammar is read as procedural notation (a family of programs for a process); no current measurement distinguishes this from other constrained notations. The former reading ("closed-loop, kernel-centric control programs") lost its supports on re-check — kernel C089 superseded by C2082; closed-loop legs withdrawn (C171, Tier 3); see [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md).
+
+Not natural language written one token per word (C132, C2015, C2022); the cipher classes tested so far are excluded — token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner copy-and-modify (C2077), and the Naibbe verbose homophonic cipher as published (PHASE_757, C2080). Syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille remain untested (STATUS_BRIEF §4). The older Tier-3 phrase "a control-system reference manual" rests on the withdrawn control legs (C171, C120 demoted to Tier 3).
 
 | Metric | Value |
 |--------|-------|
-| Instruction classes (B) | 49 (9.8x compression from 479 B token types) |
+| Instruction classes (B) | 49 (9.8x compression from 479 B token types; C121) |
 | Grammar coverage | 100% of the grammar's own 480 types = 69.5% of B tokens (C124, C566; HT/UN defined by exclusion) |
-| Folios enumerated | 83 (75,248 instructions) |
-| Translation-eligible zones | 0 |
+| Folios enumerated | 83 (23,243 H-track Currier B tokens; the older "75,248 instructions" figure is a legacy count that appears to be pre-H-filter — see DATA/TRANSCRIPT_ARCHITECTURE.md) |
+| Translation-eligible zones | 0 (C119, now Tier 2 negative knowledge) |
 | Forbidden transitions | none beyond known effects: token-level zeros reduce under a joint null (C2081, supersedes C957); class-level "17 in 5 classes" demoted (C783, C2060) |
 | Operational categories | 8, keyword-imposed rather than discovered (C2069) |
-| Macro-automaton states | 6 (8.17x class compression; AXM attractor self=0.697; C1025) |
-| Generative sufficiency | 87% of measurable structure (M2 frontier; C1025/C1030/C1033/C1034) |
+| Macro-automaton states | 6 (8.17x class compression; C976, C1010). AXM self=0.697 is a mass-dominant state, not an attractor: the self-rate is composition (C978 scope-corrected) and there is no sequential convergence to AXM (C1402) |
+| Generative sufficiency | 87% of measurable structure (M2 frontier; C1025/C1030/C1033/C1034). The "forbidden suppression" component is an idealization test (C2063); the prohibition layer it suppresses is withdrawn (C2081) |
 
 ---
 
@@ -170,15 +291,15 @@ Voynich tokens function differently than words in natural language. The manuscri
 
 ### Currier B: Execution Grammar
 
-In B, tokens are **instruction operators**, not semantic words:
+In B, tokens behave as members of grammar classes, not as semantic words. ("Instruction", "operator" and "execution" below are the Tier-3 working vocabulary; the measured fact is the class grammar, C121.)
 
-1. **479 token types collapse to 49 instruction classes.** The functional behavior is determined by instruction class, not the specific token. (C121)
+1. **479 token types collapse to 49 instruction classes.** The distributional behavior is determined by class, not the specific token. (C121)
 
-2. **Token morphology: [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX].** PREFIX encodes operational channel AND line position via a base-modifier positional grammar (C929, C1218-C1219). MIDDLE encodes core action. SUFFIX encodes role-dependent markers.
+2. **Token morphology: [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX].** PREFIX carries line position via a base-modifier positional grammar (C1218-C1219); readings of PREFIX as "operational channel" (C929), MIDDLE as "core action" and SUFFIX as "role marker" are interpretive glosses (operational referents are not recovered; C171, demoted to Tier 3).
 
-3. **8 operational categories** (THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, STAGING, MARKING, TRANSITION) organize all four systems (C1250). Categories predict escape dynamics (C1274) and are structured in sequence (C1286).
+3. **8 operational categories** (THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, STAGING, MARKING, TRANSITION) — the taxonomy is keyword-imposed, not discovered (C2069); C1250 is kept at Tier 2 for its atom-independent signal only. "Categories predict escape dynamics" (C1274) is demoted to Tier 3 (circular). Category sequence structure: C1286.
 
-4. **6-state macro-automaton** compresses 49 classes into folio-level dynamics. AXM is the dominant attractor (self=0.697). 6 folio archetypes orthogonal to REGIMEs (C1025).
+4. **6-state macro-automaton** compresses 49 classes (C976, C1010). AXM is the mass-dominant state (self=0.697 is composition, C978 scope note); there is no sequential convergence to it (C1402, C1403). 6 folio archetypes (C1025); REGIME is a soft gradient, not 4 crisp classes (C1712, C2070). [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
 5. **Paragraph body cycling:** Two universal suffix modes alternate within paragraphs — Mode A (specification/energy) and Mode B (continuation/equilibration). Cross-mode coupling is positional and paragraph-scoped, not sequential (C1229-C1231, C1308-C1312).
 
@@ -194,49 +315,56 @@ In A, tokens are **categorical entries**, not instructions:
 
 ### Key Principle
 
-**A token lacking special highlighting is NOT unknown.** Every token has structural classification (instruction class, morphological decomposition, system legality). "Neutral" means "non-contrastive"—it does not carry *additional* discriminative signal beyond its base class.
+**A token lacking special highlighting is NOT unknown.** Every token has structural classification (instruction class, morphological decomposition, system legality). [Correction per C124 as corrected and C566: in Currier B, the HT/UN tokens (30.5% of B) lie outside the 49-class grammar and are classified by exclusion, not by instruction class.] "Neutral" means "non-contrastive"—it does not carry *additional* discriminative signal beyond its base class.
 
 ---
 
 ## What This Project Does NOT Allow
 
-These approaches have been **structurally falsified** (Tier 1):
+These approaches have been tested and rejected (tiers vary — check each number in `CONSTRAINT_TABLE.txt`; the current scoped list of excluded rivals is [SYSTEM/STATUS_BRIEF.md](SYSTEM/STATUS_BRIEF.md) §4):
 
-- **Language encoding** - 0.19% reference rate (Phase X.5)
-- **Cipher encoding** - transforms decrease mutual information (Phase G)
+- **Language encoding** - natural language written one token per word is excluded (C132, C2015, C2022). The older "0.19% reference rate" figure (C130, Phase X.5) is tainted and not relied on.
+- **Cipher encoding** - only the classes actually tested are excluded: token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner (C2077), the Naibbe cipher as published (C2080). The older blanket line "transforms decrease mutual information (Phase G)" is scoped: syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille are untested.
 - **Glyph-level semantics** - 0 identifier tokens found (Phase 19)
 - **Illustration-dependent logic** - swap invariance p=1.0 (Phase ILL)
 - **Step-by-step recipe format** - families are emergent (Phase FSS)
-- **Material/ingredient encoding** - pure operational, no referents
-- **Translation attempts** - 0 translation-eligible zones exist
+- **Material/ingredient encoding** - listed here on the PURE_OPERATIONAL verdict (C120), now demoted to Tier 3; what stands is only that no referents have been recovered (C171, also Tier 3). Not a current falsification.
+- **Translation attempts** - 0 translation-eligible zones exist (C119, Tier 2 negative knowledge)
 
 
 ---
 
-## What the Manuscript DOES Encode
+## What the Manuscript DOES Encode (measured structure)
 
-**Proven (Tier 0):**
-- Executable grammar (49 classes, 100% coverage)
-- Kernel control (3 operators: k, h, e)
-- Hazard topology (17 forbidden transitions, 5 failure classes)
-- Convergence to stable states (57.8% terminal STATE-C)
-- LINK population (13.2% of tokens = ol-morphology, role-stratified; C609 density, C1174 morphological artifact)
-- Folio = complete program, Line = formal control block
+**Tier 0 (restated 2026-09-28, measured core):**
+- A 49-class token grammar covering 100% of its own 480-type vocabulary = 69.5% of Currier B tokens; HT/UN defined by exclusion (C121, C124 as corrected, C566)
+- Line organisation: positional zones (C956), line regularity (C357), word-boundary glyph coupling (C1212, C1563)
+- Folio units that share the grammar and carry their own vocabulary (C531); no duplicate lines or paragraphs (C1790)
+- Not reproduced by copy-and-modify generation (C2077) or by the Naibbe cipher as published (C2080)
+
+**Formerly listed here as Tier 0 — withdrawn or demoted (v7.24/7.25; STATUS_BRIEF §3):**
+- "Executable grammar, 100% coverage" — coverage is of the grammar's own vocabulary only (C124 as corrected); "executable" is interpretive (C115 demoted to Tier 3)
+- "Kernel control (3 operators: k, h, e)" — C089 superseded by C2082: at glyph level k shows nothing beyond its controls, and the e/bench signal is word-ending routing; C085, C103–C105 Tier 3
+- "Hazard topology (17 forbidden transitions, 5 failure classes)" — class level demoted (C783), 5-class taxonomy imposed (C2060), token-level zeros reduce to composition, zones and boundary coupling (C2081; C957 superseded)
+- "Convergence to stable states (57.8% terminal STATE-C)" — kept only as an occupancy measurement (C074, Tier 2); no sequential convergence (C1401–C1403); C079, C084 demoted to Tier 3
+- LINK population — 13.2% of tokens, a morphological artifact of "ol" (C609, C1174), not a monitoring operator
+- "Folio = complete program, Line = formal control block" — the measured parts are the folio units and line organisation above; "program" / "control block" is the Tier-3 working reading
 
 **Established (Tier 2):**
-- 6-state macro-automaton with AXM attractor (C1025)
-- 8 operational categories spanning all 4 systems (C1250)
+- Word-ending routing: a token's two-glyph ending predicts the next token's class beyond boundary coupling (C2082)
+- 6-state macro-automaton (C976, C1010); AXM is mass-dominant, not an attractor — no sequential convergence to it (C978 scope note, C1402)
+- 8 operational categories spanning all 4 systems (C1250) — taxonomy keyword-imposed (C2069); only the atom-independent signal is kept
 - PREFIX base-modifier positional grammar (C929, C1218-C1219)
 - Sister pairs achieve category divergence through vocabulary selection (C1303-C1307)
 - Paragraph body: suffix mode cycling within execution gradient envelope (C1229-C1232)
 - Cross-mode parallel tracks: positional alignment, B→A thermal feedback, no sequential coupling (C1308-C1312)
-- 5 apparatus profiles from marker MIDDLEs; REGIME encodes apparatus type (C1247-C1249)
-- Generative sufficiency: 49-class Markov + forbidden suppression reproduces 87% of structure (C1025/C1030)
+- 5 apparatus profiles from marker MIDDLEs (C1247-C1249) — "REGIME encodes apparatus type" is interpretive; REGIME is a soft gradient, and REGIME effects need a within-section re-test (C1712, C2070)
+- Generative sufficiency: 49-class Markov + forbidden suppression reproduces 87% of structure (C1025/C1030) — the forbidden-suppression test is an idealization test (C2063) and the prohibition layer is withdrawn (C2081)
 
-**Not encoded (operator provides externally):**
+**Not encoded (operator provides externally)** — this boundary list presupposes the Tier-3 control reading:
 - Sensory completion judgment (when to stop)
 - Material selection (what to process)
-- Hazard recognition (physical signs of failure)
+- Hazard recognition (physical signs of failure) [the in-text hazard layer is withdrawn, C2081]
 
 
 ---
@@ -245,11 +373,11 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1896 |
-| Completed phases | 629 |
+| Live constraints (generated table, v7.26) | 1,889 (T0 2, T1 38, T2 1,679, T3 166, T4 4) |
+| Completed phases | 763 |
 | Folios enumerated | 83 |
-| Instructions cataloged | 75,248 |
-| Token types in grammar | 479 |
+| Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
+| Token types in grammar | 479 (the corrected C124 row counts 480) |
 | Instruction classes | 49 |
 | Scripts in archive | 98 |
 | Structural contracts | 6 |
@@ -262,12 +390,14 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 > **Important distinction:** The "single shared grammar" in the frozen conclusion applies to **Currier B only**. Currier A uses a different formal system (non-sequential). What IS shared across all systems is the morphological TYPE system (prefix/suffix structure, compositional rules).
 
-| Layer | System | Tokens | Function |
+| Layer | System | Tokens (H-track) | Function (Tier-3 working reading) |
 |-------|--------|--------|----------|
-| **Execution** | Currier B | 23,243 (61.9%) | Controls what you do over time |
-| **Distinction** | Currier A | 11,415 (30.5%) | Catalogs where distinctions matter |
+| **Execution** | Currier B | 23,243 (61.2%) | Controls what you do over time |
+| **Distinction** | Currier A | 11,415 (30.1%) | Catalogs where distinctions matter |
 | **Context** | AZC | 3,299 (8.7%) | Static positional lookup table classifying vocabulary |
 | **Orientation** | HT | 7,042* | Compound specifications redundant with body lines; keeps operator oriented |
+
+(Percentages recomputed on the canonical H-track total of 37,957; the earlier 61.9% / 30.5% did not match these counts.)
 
 *HT tokens are a morphological subset of Currier B — already counted in B total. They use the same morphology but do not participate in the 49-class grammar. (C935)
 
@@ -275,10 +405,112 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 - A and B are **GRAMMAR-DISJOINT** (different formal systems)
 - A and B are **VOCABULARY-INTEGRATED** (69.8% shared types)
 - AZC bridges both with 60.5% shared vocabulary
-- 8 operational categories are the first organizing principle spanning all 4 systems (C1250)
+- 8 operational categories are the first organizing principle spanning all 4 systems (C1250) [scoped: the taxonomy is keyword-imposed, C2069]
 
 
 ---
+
+
+---
+
+# Research Agenda (open questions and next tests)
+
+# Research Agenda — open questions and the tests that would move them (v7.26, 2026-09-28)
+
+**Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
+**Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
+out-of-sample evidence: second transcriptions, images, external corpora, generator panels and prospective anchors.
+Rank tests by what they would **resolve**, and pre-register each one (lean-expert design audit before lock).
+
+---
+
+## The question
+What produced Currier B's grammar: a language written in an unfamiliar way, a cipher, a notation for procedures, or
+text made to look meaningful? And, if it carries content, what content?
+
+**Where things stand:**
+- The grammar is real and specific. It survives copy-and-modify generation (C2077) and the Naibbe cipher (C2080), and
+  it has measured line-level and word-boundary structure: C956, C1212/C1563, C2081, C2082.
+- Nothing measured yet tells meaningful text apart from constrained meaningless text.
+- Nothing ties the text to an external source.
+- The working interpretation (procedural notation) is unconstrained by current measurements.
+
+---
+
+## Tier A — decides whether the grammar is evidence of meaning at all
+
+1. **Human-gibberish control.**
+   - What: run the full discriminator panel on text people produced deliberately without meaning. The Gaskell & Bowern
+     corpus (github.com/danielgaskell/voynich) is the natural source.
+   - Panel: PHASE_757 D2–D6; C2082 word-ending routing; the C2081 zero-cell structure; line zones.
+   - Resolves: if human gibberish reproduces B's profile, the grammar is evidence of a *writing process*, not of content.
+     If it doesn't, we have the first measured contrast between B and meaningless text.
+   - Kill conditions and discriminator thresholds must be set on controls before looking at B again (calibration rule).
+2. **The untested rival generators.**
+   - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose
+     cipher, each through the PHASE_757 harness with noise parity.
+   - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
+     Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
+3. **Unit and transliteration invariance of the Tier-0 measurements.**
+   - What: re-measure C121/C124 coverage, C956, C1212/C1563 and C2082 on ZL (done in part: PHASE_761, PHASE_763) and on
+     at least one more transliteration (GC or CD). Also measure them on glyph units, with uncertain spaces treated both
+     ways (Rozanova & Temerev: uncertain spaces are mostly word-internal).
+   - Resolves: whether the core measurements are properties of the manuscript or of the EVA/H transcription.
+
+## Tier B — structure that would constrain what kind of content it is
+
+4. **Long-range sequence structure under the right null.**
+   - What: re-run the λ2/λ3 class-transition eigenstructure (C2061, C2067) on N5 samples, which preserve composition,
+     zones and boundary coupling.
+   - Resolves: whether anything program-like (structure beyond the next token) exists, or whether the sequence is
+     boundary coupling plus endings.
+5. **Word-ending routing, characterised.**
+   - What: which endings route to which next classes; whether this is one mechanism with C1212/C1563 (a two-glyph
+     boundary context) or a separate one; whether it holds within scribes or quires.
+   - Resolves: whether this is the grammar's main sequential rule. It is the positive lead from PHASE_763.
+6. **Currier A ↔ B relation after the audits.**
+   - What: restate the A-side characterisation (June corrections) against the live registry.
+   - Resolves: whether A and B are two notations, two registers of one, or one system with two scribal conventions.
+
+## Tier C — content (only with prospective, blind designs)
+
+7. **Prospective anchors.**
+   - What: pre-register specific predictions from a candidate source (e.g. the *Testamentum* tradition) about folios
+     not yet examined, with a genre baseline (other alchemical and pharmacy texts) and blind scoring.
+   - Resolves: whether any content correspondence exists. The chapter matching carries no signal (PHASE_762, C2052).
+8. **Pictures and text, powered.**
+   - What: label-to-image grounding with blind image coding, with labels re-transcribed from IIIF first (C2004/C2005
+     gaps). The earlier nulls had n ≈ 30 and little power (VIS, ILL-TOP-1).
+   - Resolves: whether the text refers to what is drawn.
+9. **Physical structure.**
+   - What: PHASE_752 v2 steps 2–3 (bifolium and quire effects on the second transcription), for Malta (video due
+     2026-11-09). The Aberdeen negative control is SPECIFIC (PHASE_759).
+   - Resolves: whether page layout carries structure, and whether binding order can be used at all.
+
+## Methodological debts (re-checks owed before relying on these rows)
+- **PHASE_760:** its N_EDGE arm ran at β = 4, which does not mix (PHASE_756). Re-run at β = 2.
+- **C2045 and the other sequence claims** validated only against a character 5-gram: re-test under token shuffle or
+  N5 (C2066 window-blindness).
+- **The 41 rows with parser-reliability notes** (PHASE_758): re-measure the ones still cited.
+- **C2031/C2032:** an N-matched, length-stratified re-run with lag2 − lag1 (PHASE_755).
+- **Measurement/gloss split** (strategic review §6): C1195, C1196, C1934, C1388–C1392, C1925, C1926, C1958 (the last three already demoted to Tier 3, PHASE_762) and the
+  mapping clauses of C929/C931 mix a measurement with a gloss. Split each into a Tier-2 measurement row and a Tier-3
+  gloss row; `ATOM_GLOSSES` in `scripts/voynich.py` are labels meanwhile.
+- **Registry decisions left open by the v7.26 cascade:** C1005 (Tier 4, possibly a Tier-1 falsification); C179
+  (4-regime clustering: scope-tagged, demotion defensible); C311/C456 (possibly retract like C434/C435); C193–C195;
+  the C894 row's numbers are stale (its detail file moved the signal to REGIME_2); two LINK definitions coexist
+  (C861 class 29 vs C609 'ol'); OPS correlations partly built in (C190, C180, C188).
+- **Residual unannotated citations of non-live constraints:** see `SYSTEM/REGISTRY_INTEGRITY_REPORT.md`, and regenerate
+  after every registry change.
+- **Working rules not yet in place:** a test ledger (script hash, null, kill, outcome for every confirmatory test) and
+  sheet-blocked cross-fitting for anything fitted (strategic review §7).
+
+## What would change the working interpretation
+- **Toward "meaningless but systematic":** Tier A #1 or #2 reproduces B's discriminator profile.
+- **Toward "notation for procedures":** long-range, program-like structure beyond endings survives N5 (#4), *and* a
+  prospective content anchor lands (#7).
+- **Toward "language or cipher of language":** a rival from #2 that encodes real text reproduces B's profile, or the
+  unit re-analysis (#3) finds word-like units with natural-language statistics.
 
 
 ---
@@ -494,23 +726,42 @@ Malta video deadline 2026-11-09: (1) PHASE_752 v2 with the Aberdeen negative con
 
 # MODEL_CONTEXT.md
 
-**Version:** 3.17 | **Date:** 2026-06-04 | **Status:** Tier 0 restated 2026-09-28 (measurement core; control-program reading Tier 3) + POST-AUDIT CORRECTIONS (A-side/AZC layer; 2026-09-27 registry reconciliation — see SYSTEM/STRATEGIC_REVIEW_2026-09-27.md)
+**Version:** 4.0 | **Date:** 2026-09-28 | **Status:** aligned to SYSTEM/STATUS_BRIEF.md v7.25. Body frozen 2026-02 (last body revision v3.17, 2026-06-04); sections resting on withdrawn constructs carry a banner and are kept as history.
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
 ---
 
-## POST-AUDIT MODEL CORRECTIONS (v3.17, 2026-06 — READ FIRST)
+## CURRENT STATE (v7.25, 2026-09-28) — READ FIRST
 
-> The body below was frozen 2026-02. The June-2026 work (the zodiac/index characterization C2071–C2075 + the PHASE_748 constraint audit) corrected three things. **Where the body conflicts with this block, this block supersedes.** The frozen Tier-0 spine is untouched (see #3).
+> The body below was frozen 2026-02 and still describes Currier B in control-program language. **Where the body conflicts with this section, this section and `SYSTEM/STATUS_BRIEF.md` win.** Authority order: `CONSTRAINT_TABLE.txt` (a constraint missing from it is dead; Tier 3 means demoted or speculative) → `CLAIMS/INDEX.md` rows (the reason for each status) → STATUS_BRIEF → this document. Full record: `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
+
+**Tier 0 (restated 2026-09-28, human sign-off; `CORE/frozen_conclusion.md`):** Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
+
+**Working interpretation (Tier 3):** the grammar is read as procedural notation (a family of programs for a process). No current measurement distinguishes this reading from other constrained notations. The body's "closed-loop, kernel-centric control" vocabulary belongs to this Tier-3 layer; its supports are withdrawn, not falsified.
+
+**Withdrawn or demoted — do not present as structure (STATUS_BRIEF §3):**
+- Kernel k/h/e as the core of the grammar: C089 superseded by C2082 (k shows nothing at glyph level; the e/bench signal is word-ending routing); C085, C103–C105 demoted to Tier 3.
+- Closed-loop control and an operational purpose class: C171 and C120 demoted to Tier 3 (all four closed-loop legs withdrawn).
+- LINK as a monitoring operator: true density 13.2%, a morphological artifact of "ol" (C609, C1174).
+- The 17 forbidden transitions, 5 hazard classes, hazard topology and "safety architecture": class level demoted (C783), taxonomy imposed (C2060), 13 class-level violations in the real corpus (C2063), token-level zeros reduce to line composition, zones and boundary coupling (C2081; C957 superseded). C109 is scoped; C216 is demoted.
+- Convergence to STATE-C / MONOSTATE as a target, and the completion gradient: occupancy only (C074, Tier 2 measurement); C079 and C084 demoted; no sequential convergence, and the gradient is a section confound (C1401–C1403).
+- Recovery architecture; execution clamp vs recovery freedom: a frequency shadow (C458 and C105 demoted).
+- MIDDLE incompatibility "X% of pairs forbidden" (C475 demoted: sparsity denominator); hub savings (C476 retracted: broken baseline).
+- Testamentum chapter ↔ folio matching, recto/verso chapter pairs, section = book part: no correspondence signal (C2052, PHASE_762; the C1882–C1975 triage moved 20 rows to Tier 3).
+- Also retired: closure language ("ANALYSIS CLOSED" and similar "CLOSED" / "characterization complete" banners, "definitively irrecoverable"); REGIME as 4 crisp classes or as fire degree (C1712, C2070, C1872); R-series ordering and the S/R division (C434, C435 retracted).
+
+**What stands (Tier 2 unless noted; STATUS_BRIEF §2):** the 49-class grammar closed over its own 480-type vocabulary, 69.5% of B tokens (C121, C124 Tier 0; HT/UN defined by exclusion, C566, C740); positional zones (C956); line regularity (C357); boundary glyph coupling (C1212, C1563; robust to spacing uncertainty and replicated on ZL, PHASE_761); word-ending routing to the next token's class (C2082); family preference: qo rich in k, ok in e, qo/ch-sh alternation, qok→ok/oke (C1313, C549, C2056 as revised in PHASE_738 — its wider lane claims downgraded, qok→sh demoted); folio units with unique vocabulary and no duplicate lines or paragraphs (C531, C1790); occupancy, 57.8% of folios end in their dominant macro-state (C074, measurement only); class-transition eigenstructure λ2/λ3 (C2061, C2067; established against a window-blind null, C2066, so re-check under N5 before relying on it); the bifolium pipeline negative control (PHASE_759).
+
+**Rivals excluded (scoped, STATUS_BRIEF §4):** natural language written one token per word (C132, C2015, C2022; C130's "0.19% reference rate" is tainted and not relied on); token ≈ word codes and atom-level polyalphabetic ciphers (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk (C2079). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation.
+
+**A-side / AZC corrections (v3.17, June 2026 — still current).** From the zodiac/index characterization (C2071–C2075) and the PHASE_748 constraint audit:
 
 **1. AZC is a kernel-free, position-INDEPENDENT index/reference layer — NOT "positional encoding."**
 AZC (zodiac + cosmological) + the Rosettes form ONE kernel-free, self-contained, lexically-isolated **arrangement/reference layer**. The within-diagram **positions do NOT encode** (C2071 — the nymph clock-positions are non-encoding display slots; the placement-*class* structure survives via C759, but the within-diagram positions don't). The layer does **NOT route to B** (C2075 — no specific B-target above a composition-matched null; it shares only generic operators, and apparent "hub" convergence is the C1133 vocab-size artifact). **Pharma sits OUTSIDE this index layer** — it is kernel-*bearing*, execution-register (C2074). Human-signed-off Tier-3 reading: the index is ONE self-contained reference *type-class*, internally heterogeneous (C430/C1519), not a B-routing table. → **Supersedes the "positional encoding / compatibility grouping" framing in §IV, §VIII.**
 
 **2. The A-side "compatibility / discrimination-space" theory was systematically over-claimed and is REDUCED.**
-PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475), ~101-D structured space (C982), strong transitivity (C983), "structural fingerprint" (C981) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" or the discrimination space as rich high-dimensional structure, read the modest core instead.**
-
-**3. The Tier-0 conclusion was RESTATED on 2026-09-28 (human sign-off).** It is now a measurement: a single compact token grammar (49 classes, 69.5% of B tokens), organised by line (positional zones, boundary glyph coupling), in folio units with their own vocabulary, not reproduced by copy-and-modify generation or the Naibbe cipher as published. The control-program reading (kernel, closed-loop/recovery) is a Tier-3 working interpretation: the kernel test was uninformative (C089) and all four closed-loop legs were withdrawn (C171). The pre-registered glyph-level re-test (PHASE_763, C2082) returned MIXED: k carries no routing beyond matched controls, and the cross-token pass is word-ending routing, not a kernel. See CORE/frozen_conclusion.md. The A-side compatibility geometry below is independent of either statement. **Correction 2026-09-27:** the "17 directional hazard transitions" support is itself reduced — C783 (class level) was demoted 2026-06-08, C109's 5-class taxonomy is struck (C2060), and C957's token-level zeros reduce to line composition, positional zones and boundary glyph coupling under a joint null (C2081, 2026-09-28) — no hazard layer survives beyond known effects. The corrections are to the **A-side / AZC characterization layer**, not the model spine. The four-system architecture stands; the *index layer (AZC+Rosettes)* and the *A-side discrimination structure* are the parts restated above.
+PHASE_748 demoted or annotated a 12-constraint family — C475, C476 (now retracted), C642 (leg annotated; row stays Tier 2), C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream, demoted) — all the SAME error class: co-occurrence-graph **wrong null** (configuration-model on an affiliation network; the correct clique-preserving *bipartite* null reproduces the "anomalous" metrics), **sparsity-denominator**, and **frequency-confound**. The rich claims — 95.7% incompatibility (C475, demoted), ~101-D structured space (C982, demoted), strong transitivity (C983, demoted), "structural fingerprint" (C981, demoted) — were inflation. **The A-side discrimination structure reduces to a real but MODEST core: ~1–28 above-noise modes (Marchenko-Pastur) + C729 attested avoidance (0/19,576 on *attested* pairs).** → **Wherever §V/§VIII cite C475's "95.7%" (demoted) or the discrimination space as rich high-dimensional structure, read the modest core instead.** The A-side geometry is independent of the Tier-0 restatement.
 
 ---
 
@@ -518,11 +769,13 @@ PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C98
 
 **Same alphabet ≠ same grammar.** All systems use the same character set and morphological components, but grammatical rules differ completely between A and B.
 
-**Shared type system ≠ shared semantics.** The global morphological type system (C383) provides structural consistency without implying that tokens "mean" the same thing across systems.
+**Shared type system ≠ shared semantics.** The global morphological type system (C383) provides structural consistency without implying that tokens "mean" the same thing across systems. [v7.26 status: C383 demoted to Tier 3 (kernel contact is a spelling identity; monitoring reading withdrawn)]
 
 **Vocabulary sharing ≠ lookup.** A and B share ~1,500 token types because they describe the same operational domain, not because A entries "refer to" B programs.
 
-### Design Freedom vs Constraint (C458)
+### Design Freedom vs Constraint (C458, demoted to Tier 3)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The clamp/free CV asymmetry is a frequency shadow (C458 demoted 2026-06-08); the hazard dimension rests on the withdrawn forbidden-transition layer.
 
 B programs exhibit **asymmetric design freedom**:
 
@@ -585,6 +838,8 @@ Common errors:
 
 ## XIV. WHAT CANNOT BE RECOVERED
 
+*(Retired closure language, STATUS_BRIEF §3 / strategic review §5: read "definitively irrecoverable" below as "not recovered from the manuscript alone so far". Referents unrecovered means the question is open, not closed.)*
+
 The following are **definitively irrecoverable** from the manuscript alone:
 
 - Specific substances (plants, minerals, compounds)
@@ -617,6 +872,8 @@ The cross-system vocabulary architecture is formally characterized via six struc
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
 
+*(v7.25: the contracts still cite demoted or superseded constraints — e.g. BCSC's hazard topology cites C783, C1118; CASC cites C475, C476 (strategic review §6). Check every citation against CONSTRAINT_TABLE.txt. The "LOCKED", "fully characterized" and "PCA-v1 CERTIFIED" labels below are historical: PCA-v1 was an internal contract-composition audit, not an external test (review §1), and "Core model CLOSED (PCA-v1 passed)" is retired language (review §5).)*
+
 **Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. Phases 406-408 (2026-02-20) decomposed the A-B vocabulary pipeline into four populations: 85 bridge MIDDLEs (dynamical backbone), 4 non-bridge matched, 300 dark-pipeline MIDDLEs (identification substrate, built from bridge atoms at 96.5% coverage), and 15 phantoms. All remaining work concerns interpretation, tooling, or external corroboration.
 
 **PCA-v1 CERTIFIED:** Cross-system audit passed all 6 tests (legality consistency, no back-propagation, parametric silence, semantic vacuum, A/B isolation, HT non-interference). The contracts compose cleanly without hidden coupling.
@@ -637,7 +894,7 @@ Each contract is derived from Tier 0-2 constraints and introduces no new claims.
 > **This document encodes how to understand it.**
 > **Neither replaces the other.**
 
-Together, these two files provide complete model reconstruction capability. All other documentation is convenience, not necessity.
+Together, these two files provide complete model reconstruction capability. All other documentation is convenience, not necessity. *(v7.25: read both with `SYSTEM/STATUS_BRIEF.md`, which outranks this document; where this body conflicts with the generated table or the brief, they win.)*
 
 ### Document Relationship
 
@@ -668,15 +925,15 @@ C074	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 2. kept as a 
 C079	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. interpretive ("essential"); rests on the convergence reading replaced by C1403]** Only STATE-C essential	3	B
 C084	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. "targets MONOSTATE" is interpretive; MONOSTATE = the most common mode, not a target (C1403)]** System targets MONOSTATE (42.2% end in transitional)	3	B
 C085	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. an EVA letter inventory, not a primitive inventory: c and h are the two halves of the bench glyph (ch/sh) and never stand alone (PHASE_754, C1440)]** 10 single-character primitives (s,e,t,d,l,o,h,c,k,r)	3	B
-C090	500+ 4-cycles, 56 3-cycles (topological)	2	B
+C090	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the 500+ 4-cycles and 56 3-cycles are a floor for a diameter-1 graph, so the counts do not discriminate structure (strategic review §5; floor, not a finding).]** 500+ 4-cycles, 56 3-cycles (topological)	3	B
 C103	**[PHASE_763 (2026-09-28): at glyph level k shows no cross-token routing beyond its matched controls (z 1.8), and the e/bench signal is word-ending routing, not a kernel role (C2082). The gloss stays Tier 3 without a measurement.]** **[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. role gloss; its basis (the kernel claim C089) is withdrawn]** k = ENERGY_MODULATOR	3	B
 C104	**[PHASE_763 (2026-09-28): at glyph level k shows no cross-token routing beyond its matched controls (z 1.8), and the e/bench signal is word-ending routing, not a kernel role (C2082). The gloss stays Tier 3 without a measurement.]** **[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. role gloss; "h" is half the bench glyph (PHASE_754) and the kernel claim C089 is withdrawn]** h = PHASE_MANAGER	3	B
 C105	**[PHASE_763 (2026-09-28): at glyph level k shows no cross-token routing beyond its matched controls (z 1.8), and the e/bench signal is word-ending routing, not a kernel role (C2082). The gloss stays Tier 3 without a measurement.]** **[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. role gloss; the "54.7% of recovery paths" figure rests on the withdrawn hazard/recovery layer (C783, C2081)]** e = STABILITY_ANCHOR (54.7% recovery paths)	3	B
-C107	All kernel nodes BOUNDARY_ADJACENT to forbidden	2	B
+C107	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the claim relates two withdrawn constructs, 'kernel nodes' (C089 superseded by C2082) and class-level forbidden transitions (C783 demoted: no class-level suppression; token zeros reduce, C2081); the grouped entry already records it as correlational only (C522).]** All kernel nodes BOUNDARY_ADJACENT to forbidden	3	B
 C109	**[Scope 2026-09-27: forbidden-transition claims are zero patterns whose status is that of the C957 screen (PHASE_753) — individual forbidden pairs are not robust under an edge-glyph null, the class level is demoted (C783) and the 5-class taxonomy is imposed (C2060); the joint null (PHASE_756, 2026-09-28) REDUCES the screen-level zero excess to line composition, zones and boundary coupling (C2081)]** **17 forbidden directional transitions exist** (~0% realized rate; ~65% class-level compliance per C789); fixed across all 83 folios. **[REVISED PHASE_732: 5-class taxonomy struck — was imposed by keyword-matching not clustering; see C2060]** **[SCOPE 2026-06-08: the CLASS-level reading is dead (C783 demoted — powered class pairs at O/E≈1.13, no suppression); "the 17" survive ONLY as the TOKEN-bigram layer (C957, directionality verified). Read this row as existence-of-token-level-prohibitions, not class transitions.]**	2	B
-C110	PHASE_ORDERING 7/17 = 41% — count of the one gloss-coherent grouping (=C1529 sealed→iteration); see C2060	2	B
-C111	65% asymmetric (taxonomy-independent; corroborated by C783 all-17-directional, C627 0/17 reciprocal)	2	B
-C112	59% distant from kernel (taxonomy-independent)	2	B
+C110	**[Scope 2026-09-28 (v7.26): a count over the defined set of 17 zero pairs; the 'primary failure mode' reading is withdrawn: the classes are imposed (C2060) and the zeros reduce to composition, zones and boundary coupling (C2081).]** PHASE_ORDERING 7/17 = 41% — count of the one gloss-coherent grouping (=C1529 sealed→iteration); see C2060	2	B
+C111	**[Scope 2026-09-28 (v7.26): a count over the 17 zero pairs (for 65% the reverse bigram is attested); not a directed prohibition: C783, cited here, is demoted, and the zeros reduce to composition, zones and boundary coupling (C2081), which is itself directional.]** 65% asymmetric (taxonomy-independent; corroborated by C783 all-17-directional, C627 0/17 reciprocal)	2	B
+C112	**[Scope 2026-09-28 (v7.26): a count over the 17 zero pairs relative to kernel-letter classes; both readings are withdrawn (hazard layer C783, C2081; kernel C089 → C2082).]** 59% distant from kernel (taxonomy-independent)	2	B
 C115	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. coverage by construction: the grammar has no unclassifiable type in its own vocabulary, but 30.5% of Currier B tokens (HT/UN) lie outside it (C124 as corrected, C566); "executable" is interpretive]** 0 non-executable tokens	3	B
 C119	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 2. negative knowledge only: no region reads as natural language written token-by-word or as a cipher of the tested classes (C132, C1976, C2017, C2077, C2080); "PURE_OPERATIONAL" is interpretive (C120)]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** 0 translation-eligible zones	2	B
 C120	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. the positive verdict "operational control notation" is a working interpretation (support withdrawn: C089, C171); the negative parts are carried by C119 and the rival exclusions]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** PURE_OPERATIONAL verdict	3	B
@@ -686,6 +943,7 @@ C126	0 contradictions across 8 families	2	B
 C129	Family differences = coverage artifacts	2	B
 C130	DSL hypothesis rejected (0.19% reference rate)	1	B
 C131	**[RETRACTED 2026-05-19]** Originally claimed: "Role consistency LOW (23.8%, threshold >80%)" as falsification of DSL/language hypothesis from Phase X.5. **Audit findings (C131_AUDIT, 2026-05-19):** (1) The 23.8% value DOES NOT REPRODUCE on H-only-filtered current data — re-run yields 12.2%, a 2× discrepancy attributable to the pre-v2.42 transcriber filter bug (3.2× token inflation). (2) Observed 12.2% sits at within-line shuffle null mean (12.0%, std 0.0041, z=+0.69, effect size +0.3pp). The metric is at noise floor and does not discriminate Voynich from within-line-shuffled Voynich. (3) The ">80% = DSL signal" threshold was theoretical, never calibrated against any natural language corpus. The Phase X.5 source code literally contains `# DSL signal if role consistency > 0.8` followed by `# Adjusted threshold` set to 0.5 — even the original code adjusted the threshold post-hoc before producing the verdict. (4) Failure pattern matches C2027 retraction (registration-overclaim caught by discriminating control). The fully-random shuffle null does show +8.6σ (12.2% vs 10.5%) but that re-discovers C109 forbidden transitions and bigram structure already established elsewhere — it is not a token-role property. **Language-hypothesis falsification is independently and robustly supported by C130 (reference rate 0.19% vs 5% threshold = 26× separation, much stronger), C132 (pre-registered closure), C173 (linguistic hypothesis exhausted), C2015/C2022/C2032 (engineered substrate quintet), C089/C503.c/C521 (kernel architecture). C131 was the weakest evidential leg and is structurally unnecessary.** Methodology lesson saved: `feedback_made_up_threshold_audit.md` — diagnostic for "theoretical threshold + non-reproducing value + null at observed" failure pattern.	1	RETRACTED, FALSIFIED, role_consistency_metric_at_noise_floor, threshold_not_NL_calibrated, transcriber_filter_bug_pre_v2_42, framework_as_null_caught, audit_2026_05_19, C130, C132, C173
+C132	Language encoding CLOSED	1	B
 C137	Swap invariance confirmed	1	B
 C138	Illustrations do not constrain execution	1	B
 C139	Grammar recovered from text-only	2	B
@@ -705,38 +963,38 @@ C162	Aggressive programs buffered (88% vs 49% null)	2	B
 C163	7 domains ruled incompatible	2	B
 C164	86.7% Perfumery-Aligned Plants	2	B
 C165	No Program-Morphology Correlation	2	B
-C166	Uncategorized: zero forbidden seam presence (0/35)	2	HT
+C166	**[Scope 2026-09-28 (v7.26): a count of HT tokens at the positions of the 17 zero pairs; the hazard reading is withdrawn (C2081) and HT lies outside the grammar vocabulary by definition (C740).]** Uncategorized: zero forbidden seam presence (0/35)	2	HT
 C167	Uncategorized: 80.7% section-exclusive	2	HT
 C168	Uncategorized: single unified layer	2	HT
-C169	Uncategorized: hazard avoidance 4.84 vs 2.5	2	HT
+C169	**[Scope 2026-09-28 (v7.26): distance of HT tokens from forbidden-pair tokens; the 'avoidance' reading is withdrawn: C1078 shows it is vocabulary-level (HT is defined by exclusion from the grammar vocabulary, C740), and no prohibition layer remains (C2081).]** Uncategorized: hazard avoidance 4.84 vs 2.5	2	HT
 C170	Uncategorized: morphologically distinct	2	HT
 C171	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. all four remaining legs are withdrawn — monitoring (38% LINK not reproducible, true 13.2%, C609; LINK is a morphological artifact, C1174), intervention by kernel operators (C089 withdrawn), hazard avoidance (C783, C2060, C2063, C2081), convergence (C1401–C1403); only 2 of its 12 eliminations were discriminating tests (NEGATIVE_AUDIT). Closed-loop control is a working interpretation]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** Only continuous closed-loop process control survives	3	B
-C173	Linguistic hypothesis EXHAUSTED	2	B
+C173	**[Scope 2026-09-28 (v7.26): 'EXHAUSTED' is retired closure language (strategic review §5). Tested and excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as published (C2080). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille (STATUS_BRIEF §4).]** Linguistic hypothesis EXHAUSTED	2	B
 C174	Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)	2	B
 C175	3 process classes survive (reflux, extraction, conditioning)	2	B
 C176	5 product families survive	2	B
 C177	Both extraction/conditioning survive; extraction favored	2	B
-C178	83 folios yield 33 operational metrics	2	B
-C179	4 stable regimes (K-Means k=4, Silhouette=0.23)	2	B
-C180	All 6 aggressive folios in REGIME_3	2	B
-C181	3/4 regimes Pareto-efficient; REGIME_3 dominated	2	B
-C182	Restart-capable = higher stability	2	B
-C183	No regime dominates all axes	2	B
-C184	9 pressure-induced transitions; 3 prohibited	2	B
-C185	REGIME_3 = Transient Throughput	2	B
-C186	No pressure-free cycles	2	B
-C187	CEI manifold formalized	2	B
-C188	CEI bands: R2 < R1 < R4 < R3	2	B
-C189	CEI bidirectional; down-CEI easier (1.44x)	2	B
-C190	LINK-CEI r=-0.7057	2	B
-C191	CEI Smoothing	2	B
-C192	Restart at Low-CEI	2	B
+C178	**[Scope 2026-09-28 (v7.26): 33 folio metrics computed in OPS-1; many are built on withdrawn constructs (LINK run length, hazard density, kernel contact, convergence to STATE-C); the metrics are definable, their operational labels are the Tier-3 control reading (C171).]** 83 folios yield 33 operational metrics	2	B
+C179	**[Scope 2026-09-28 (v7.26): the k = 4 K-means partition is kept as the strongest non-trivial partition (C1712: k = 4 excess over null +0.047) and is moderately stable (C1714, ARI 0.76), but its modes are soft points on a gradient whose dominant split is Bio vs non-Bio section, not 4 stable or distinct regimes; operational and fire-degree readings are retired (C2070).]** 4 stable regimes (K-Means k=4, Silhouette=0.23)	2	B
+C180	**[Scope 2026-09-28 (v7.26): 'aggressive' is an OPS-1 label whose score (aggressiveness, stability_role) is itself an OPS-2 clustering feature, so co-location in REGIME_3 is partly by construction (on-axis, C2070); the count stands, the operational reading is Tier 3 (C171).]** All 6 aggressive folios in REGIME_3	2	B
+C181	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. Pareto efficiency is computed over OPS-3 composite axes ('risk' = hazard exposure, 'stability' = recoverability) that rest on withdrawn constructs (C783, C2060, C2081; recovery C458), over REGIME taken as 4 crisp classes (C1712, C2070); an operational-optimality reading, not a measurement.]** 3/4 regimes Pareto-efficient; REGIME_3 dominated	3	B
+C182	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'stability' is the OPS recoverability composite and 'restart-capable' the reset reading (3 folios); the claim is recovery architecture, withdrawn (C458; control reading C171 Tier 3).]** Restart-capable = higher stability	3	B
+C183	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. same OPS-3 risk/time/stability trade-off as C181 (axes built on hazard exposure and recoverability; C783, C2081, C458); REGIME is a soft gradient, not 4 crisp classes (C1712).]** No regime dominates all axes	3	B
+C184	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. transitions of the OPS-4 operator decision model, whose 'pressures' are composites of convergence speed, hazard density, kernel contact and recovery capacity, all withdrawn (C1401–C1403, C2081, C2082, C458); a modelled construct, not a measurement.]** 9 pressure-induced transitions; 3 prohibited	3	B
+C185	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'transient throughput' is an operational reading of a REGIME cluster from the OPS-3/OPS-4 pressure model (closed-loop reading C171 Tier 3; REGIME is a soft gradient, not 4 crisp classes, C1712, C2070).]** REGIME_3 = Transient Throughput	3	B
+C186	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. a property of the OPS-4 pressure model (see C184), built on withdrawn convergence, hazard, kernel and recovery composites (C1401–C1403, C2081, C2082, C458).]** No pressure-free cycles	3	B
+C187	**[Scope 2026-09-28 (v7.26): CEI is a hand-weighted composite of the OPS-4 time, risk and stability pressures (inputs include LINK run length, hazard density, kernel contact and recovery counts); it is definable as a folio metric, but 'control engagement/intervention' is the Tier-3 control reading (C171; LINK C1174; hazard C2081).]** CEI manifold formalized	2	B
+C188	**[Scope 2026-09-28 (v7.26): CEI means per REGIME cluster; CEI and the OPS-2 clusters share input metrics, so the ordering is partly by construction (on-axis, C2070); REGIME is a soft gradient, not 4 crisp classes (C1712).]** CEI bands: R2 < R1 < R4 < R3	2	B
+C189	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the 1.44 ratio compares modelled up/down transition weights of the OPS-5 CEI switching graph ('asymmetric cost structure'), an operator-model quantity of the closed-loop reading (C171, Tier 3).]** CEI bidirectional; down-CEI easier (1.44x)	3	B
+C190	**[Scope 2026-09-28 (v7.26): a folio-level correlation of LINK ('ol') density with the CEI composite, whose time-pressure input includes mean LINK run length, so the correlation is partly by construction; 'more waiting = less engagement' is withdrawn (LINK is not waiting, C1174; C609).]** LINK-CEI r=-0.7057	2	B
+C191	**[Scope 2026-09-28 (v7.26): an order statistic on the present binding order of a composite metric (CEI, see C187); binding order is not assumed authorial (strategic review §6, order family).]** CEI Smoothing	2	B
+C192	**[Scope 2026-09-28 (v7.26): CEI position of the 3 folios labelled restart-capable; 'restart' is the reset reading of the Tier-3 control interpretation (C171, C458).]** Restart at Low-CEI	2	B
 C193	Navigation WORSE than random (d=-7.33)	2	B
 C194	PARTIAL codex organization (2/5)	2	B
 C195	Human-track compensation NOT detected	2	B
-C196	100% match EXPERT_REFERENCE archetype	2	B
-C197	Designed for experts, not novices	2	B
-C198	OPS CLOSED	2	B
+C196	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the EXPERT_REFERENCE archetype was invented for the test, so a 100% match carries no evidence (strategic review §5).]** 100% match EXPERT_REFERENCE archetype	3	B
+C197	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. rests on the invented archetype of C196 (strategic review §5); 'designed for experts' is an interpretation.]** Designed for experts, not novices	3	B
+C198	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the five OPS principles are the closed-loop control doctrine (C171, Tier 3): 'waiting is default' rests on the unreproducible 38% LINK figure (C609) and LINK as waiting (C1174), 'escalation' and 'escape' on the withdrawn hazard/recovery layer (C2081, C458); 'CLOSED' is retired closure language (strategic review §5).]** OPS CLOSED	3	B
 C199	Both mineral AND botanical survive	3	B
 C200	6 Product Survivors	2	B
 C201	Guild-Restricted Ecosystem	2	B
@@ -755,7 +1013,7 @@ C213	Opportunity-loss model supported (64.7% premature hazards)	2	B
 C214	EXT-4 duration criterion INVALIDATED	2	B
 C215	BOTANICAL_FAVORED (8/8 tests, ratio 2.37)	3	B
 C216	Hybrid hazard model (71% batch, 29% apparatus) **DEMOTED Tier 2→3 (PHASE_732)** — 71/29 split computed over the imposed 5-class taxonomy; apparatus bucket leans on weakest class (CONTAINMENT_TIMING, theoretical-only); see C2060	3	B
-C217	0 true HT near hazards	2	HT
+C217	**[Scope 2026-09-28 (v7.26): a count of HT tokens near forbidden-pair positions; 'hazard' here is the defined set of 17 zero pairs, not a hazard function (C2081), and the zero is vocabulary-level (C1078, C740).]** 0 true HT near hazards	2	HT
 C221	Deliberate skill practice (4/5) - NOT random mark-making	2	HT
 C222	No intentional layout function	2	B
 C223	Procedural fluency MIXED	2	B
@@ -801,7 +1059,7 @@ C262	Low Mutation Across Repetitions	1	A
 C263	Section-specific ceilings: H max=5x, P max=5x, T max=6x (CAS-DEEP-V)	2	A
 C264	Inverse-complexity is BETWEEN-MARKER effect (Simpson's paradox); within-marker rho<0 for all 8 markers (CAS-DEEP-V)	2	A
 C265	1,123 unique marker tokens across 8 classes; 85 core tokens (freq>=10); `daiin` dominates DA (51.7%), `ol` dominates OL (32.3%) (CAS-CAT)	2	A
-C266	Block vs Non-Block Entry Types	1	A
+C266	~~Block vs non-block entry types~~	1	A
 C267	Tokens are COMPOSITIONAL (PREFIX+MIDDLE+SUFFIX)	2	A→B
 C267.a	**MIDDLE Sub-Component Structure** (218 sub-components reconstruct 97.8% of MIDDLEs; morphology extends to sub-MIDDLE level)	2	GLOBAL
 C268	897 observed combinations	2	A→B
@@ -845,9 +1103,9 @@ C305	LABELING Signature	2	AZC
 C306	Placement-coding axis established	2	AZC
 C307	Placement × Morphology Dependency	2	AZC
 C308	Ordered Subscripts	2	AZC
-C309	Grammar-Like Placement Transitions	2	AZC
+C309	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. placement-code bigrams counted along transcriber row order, the statistic class of retracted C433/C434 (transcription serialization): self-transition enrichment is the block-serialization floor and the zero bigrams depend on block order; not re-tested separately.]** Grammar-Like Placement Transitions	3	AZC
 C310	Placement Constrains Repetition	2	AZC
-C311	Positional Grammar	2	AZC
+C311	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. restates the S = boundary / R = interior split that C435 retracted as a locus-length tautology (line-edge rate = 1/locus length; PHASE_742).]** Positional Grammar	3	AZC
 C312	Section × Placement Strong	2	AZC
 C313	Position constrains LEGALITY not PREDICTION	2	AZC
 C314	Global Illegality + Local Exceptions	2	AZC
@@ -856,12 +1114,12 @@ C316	Phase-Locked Binding	2	AZC
 C317	Hybrid architecture (topological + positional)	2	AZC
 C318	Folio-Specific Profiles	2	AZC
 C319	Zodiac Template Reuse	2	AZC
-C320	S2 < S1 Ordering	2	AZC
+C320	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. an order statistic on transcriber row order, the class of retracted C434 (ring blocks recorded depth-sorted; PHASE_742); S2-before-S1 reflects the serialization until re-tested on the physical layout.]** S2 < S1 Ordering	3	AZC
 C321	Zodiac Vocabulary Isolated	2	AZC
 C322	SEASON-GATED WORKFLOW interpretation	2	AZC
 C323	57.8% STATE-C terminal	2	B
 C324	Section-Dependent Terminals	2	B
-C325	Completion Gradient	2	B
+C325	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. C1401: the folio-position rise collapses to zero within every section (section confound); 'completion' is the withdrawn convergence reading (C1402, C1403).]** Completion Gradient	3	B
 C326	A-reference sharing within clusters: 1.31x enrichment; material conditioning is real but SOFT and OVERLAPPING (silhouette=0.018); NOT a clean taxonomy (SEL-F, Tier 2)	2	AZC
 C327	Cluster 3 (f75-f84) is locally anomalous: only contiguous cluster, 70% STATE-C, highest A-ref coherence (0.294); LOCAL observation, not organizational law (SEL-F, Tier 2)	2	AZC
 C328	10% corruption = 3.3% entropy increase	2	B
@@ -878,7 +1136,7 @@ C338	Marker Independence	2	B
 C339	E-Class Dominance	2	B
 C340	LINK-Escalation Complementarity	2	B
 C341	HT-Program Stratification	2	HT
-C342	HT-LINK Decoupling	2	HT
+C342	**[Scope 2026-09-28 (v7.26): HT density vs the density of 'ol' tokens (LINK is a morphological label, C609, C1174); the null correlation stands; the 'waiting profile' readings are withdrawn.]** HT-LINK Decoupling	2	HT
 C343	A-AZC persistence independence: A-vocabulary tokens appear in 2.2x more AZC placements than AZC-only tokens (p < 0.0001); high-multiplicity A-tokens have 43% broader coverage (p = 0.001); A-registry assets persist independently of AZC legality windows; supports managed stewardship model (AAZ, Tier 2)	2	B
 C344	HT-A Inverse Coupling	2	HT
 C345	A folios lack thematic coherence	2	A
@@ -895,30 +1153,30 @@ C355	75.9% Known Prefixes at Folio Start	2	B
 C356	Section Symmetry Preserved	2	B
 C357	Lines 3.3x more regular than random	2	B
 C358	Specific boundary tokens identified	2	B
-C359	LINK Suppressed at Boundaries	2	B
-C360	Grammar is LINE-INVARIANT	2	B
+C359	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. conflict with C805: both measure LINK at line boundaries with opposite signs; C359 (LINE phase) has no surviving script, an undocumented LINK set (9.3% mid-line rate, not the canonical 'ol' 13.2%, C609) and its own phase found LINK uniform by thirds (LINE-3), while C805 uses the canonical definition with a surviving script (first 17.2%, middle 12.4%).]** LINK Suppressed at Boundaries	3	B
+C360	**[Scope 2026-09-28 (v7.26): a count of the 17 zero pairs across line breaks (0 in 2,338); these zeros are not a prohibition layer (C2081), so 'grammar line-invariant' is a count, not an enforcement result.]** Grammar is LINE-INVARIANT	2	B
 C361	Adjacent B folios share 1.30x more vocabulary	2	GLOBAL
 C362	Regime Vocabulary Fingerprints	2	GLOBAL
 C363	Vocabulary Independent of Profiles	2	GLOBAL
 C364	Hub-Peripheral Structure	2	GLOBAL
-C366	LINK marks GRAMMAR STATE TRANSITIONS **REVISED by C804**	2	GLOBAL
+C366	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. its enrichment ratios were not confirmed (C804) and LINK is a morphological artifact of 'ol', not a monitoring/intervention boundary (C1174, C609); the state-transition reading has no measurement left.]** LINK marks GRAMMAR STATE TRANSITIONS **REVISED by C804**	3	GLOBAL
 C367	Sections are QUIRE-ALIGNED (4.3x)	2	B
 C368	Regime Clustering in Quires	2	B
 C369	Quire Vocabulary Continuity	2	B
 C370	Quire Boundaries = Discontinuities	2	B
 C371	Prefixes have POSITIONAL GRAMMAR	2	GLOBAL
-C372	Kernel dichotomy (100% vs <5%)	2	GLOBAL
+C372	**[Scope 2026-09-28 (v7.26): 'kernel contact' = the token contains the EVA letter k, h or e; the 100% side is a spelling identity (every listed prefix, ch, sh, ok, lk, lch, yk, ke, contains h or k), while the da/sa rates (<5%) are real glyph counts; the kernel reading is superseded (C089 → C2082).]** Kernel dichotomy (100% vs <5%)	2	GLOBAL
 C373	LINK affinity patterns	2	GLOBAL
 C374	Section Preferences	2	GLOBAL
 C375	Suffixes have POSITIONAL GRAMMAR	2	GLOBAL
-C376	Suffix Kernel Dichotomy	2	GLOBAL
+C376	**[Scope 2026-09-28 (v7.26): 'kernel' = the token contains the EVA letter k, h or e; -edy/-ey contain e, so their high rates are largely spelling; the kernel reading is superseded (C089 → C2082).]** Suffix Kernel Dichotomy	2	GLOBAL
 C377	KERNEL-LIGHT Suffixes LINK-Attracted	2	GLOBAL
 C378	Prefix-Suffix Constrained	2	GLOBAL
 C379	Vocabulary Varies by Context	2	GLOBAL
 C380	Function is INVARIANT	2	GLOBAL
 C381	Instruction Concentration	2	GLOBAL
-C382	MORPHOLOGY ENCODES CONTROL PHASE	2	GLOBAL
-C383	GLOBAL MORPHOLOGICAL TYPE SYSTEM	2	GLOBAL
+C382	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the claim is the MONITORING/INTERVENTION control-phase reading: LINK as monitoring is withdrawn (C1174, C609) and 'kernel contact' means the token contains the EVA letter k, h or e, which is 100% for ch/sh prefixes by spelling (kernel claim superseded, C089 → C2082); the underlying affinities remain as measurements in C372/C373/C376.]** MORPHOLOGY ENCODES CONTROL PHASE	3	GLOBAL
+C383	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'prefixes encode functional type (INTERVENTION vs MONITORING)' is the withdrawn LINK/kernel reading (C1174, C089 → C2082); '100% kernel contact' for ch/sh/ok is a spelling identity (kernel contact = the token contains k, h or e, and each of these prefixes contains h or k); the cross-system affinities remain as measurements in C372/C373.]** GLOBAL MORPHOLOGICAL TYPE SYSTEM	3	GLOBAL
 C384	NO TOKEN-LEVEL OR CONTEXT-FREE A-B LOOKUP	2	A↔B
 C384.a	CONDITIONAL RECORD-LEVEL CORRESPONDENCE PERMITTED	2	A↔B
 C385	STRUCTURAL GRADIENT in Currier A	2	A
@@ -933,10 +1191,10 @@ C393	FLAT TOPOLOGY (diameter=1)	2	GLOBAL
 C394	INTENSITY-ROLE DIFFERENTIATION	2	GLOBAL
 C395	DUAL CONTROL STRATEGY	2	GLOBAL
 C396	AUXILIARY Invariance	2	GLOBAL
-C397	qo-prefix = escape route (25-47%)	2	GLOBAL
-C398	Post-Source Role Distribution (REVISED)	2	GLOBAL
-C399	Safe Precedence Pattern	2	GLOBAL
-C400	BOUNDARY HAZARD DEPLETION (5-7x)	2	GLOBAL
+C397	**[Scope 2026-09-28 (v7.26): the frequency of qo tokens after forbidden-pair source tokens; the 'escape route' headline is withdrawn: revised 2026-01-31 to the CHSH→QO lane pattern (C643, morphology.md), and the hazard layer reduces (C2081).]** qo-prefix = escape route (25-47%)	2	GLOBAL
+C398	**[Scope 2026-09-28 (v7.26): role frequencies after forbidden-pair source tokens (a baseline CHSH follow-on, as revised); 'hazard recovery' is withdrawn (C645 mechanism retracted; C2081).]** Post-Source Role Distribution (REVISED)	2	GLOBAL
+C399	**[Scope 2026-09-28 (v7.26): role frequencies before forbidden-pair target tokens; 'safely precede' is the withdrawn hazard reading (C2081).]** Safe Precedence Pattern	2	GLOBAL
+C400	**[Scope 2026-09-28 (v7.26): forbidden-pair tokens are depleted at line and folio starts, a positional count consistent with C2081, where the zeros reduce to line composition and zones; 'hazard' is the defined 17-pair set, not a hazard function.]** BOUNDARY HAZARD DEPLETION (5-7x)	2	GLOBAL
 C401	Self-Transition Dominance	2	GLOBAL
 C402	HIGH_IMPACT Clustering	2	GLOBAL
 C403	5 PROGRAM ARCHETYPES (continuum)	2	B
@@ -971,7 +1229,7 @@ C439	Folio-Specific HT Profiles	2	AZC
 C440	Uniform B-to-AZC Sourcing	2	AZC
 C441	Vocabulary-Activated Constraints	2	AZC
 C442	AZC Compatibility Grouping	2	AZC
-C443	Positional Escape Gradient	2	AZC
+C443	**[Scope 2026-09-28 (v7.26): qo rates of A-type tokens by AZC placement code; the rates stand; 'intervention permitted/forbidden' is the withdrawn escape reading (C458, C171), and 'S = boundary, R = interior' was retracted as a locus-length artifact (C435).]** Positional Escape Gradient	2	AZC
 C444	A-Type Position Distribution	2	AZC
 C450	HT Quire Clustering	2	HT/GLOBAL
 C451	HT System Stratification (A > AZC > B density)	2	HT/GLOBAL
@@ -979,7 +1237,7 @@ C452	HT Unified Prefix Vocabulary	2	HT/GLOBAL
 C453	HT Adjacency Clustering (1.69x enrichment, stronger than C424)	2	HT/GLOBAL
 C454	**AZC-B Adjacency Coupling FALSIFIED**	1	AZC/B
 C455	**AZC Simple Cycle Topology FALSIFIED** (cycle_rank=5, CV=0.817)	1	AZC
-C456	**AZC Interleaved Spiral Topology** (R-S-R-S alternation)	2	AZC
+C456	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the R1→S1→R2→S2 'spiral' is counted along transcriber row order (about one transition per zodiac page), the statistic class of retracted C433–C435: the transcription records placement blocks in sequence, so the alternation measures the serialization (PHASE_742).]** **AZC Interleaved Spiral Topology** (R-S-R-S alternation)	3	AZC
 C457	**HT Boundary Preference in Zodiac AZC** (S>R HT-rate) — **[PHASE_742 AUDIT: orig N=2952 was ALL-TRANSCRIBER (H-filter bug); correct H-only N=1329, rates stable (R 29.1%, S 41.7%); SURVIVES within-folio null V=0.121 vs 95th=0.055 p=0.0001, 8/12 folios S>R → CONFIRMED at corrected N. R=radial/S=sector gloss kept (zodiac-defensible, S unverified off f69r)]**	2	HT/AZC
 C458	Execution Design Clamp vs Recovery Freedom (CV 0.04-0.11 vs 0.72-0.82) **DEMOTED 2→3 (SELF_CITATION_HEAD_TO_HEAD P4b, 2026-06-08)** — the clamp/free CV asymmetry is a FREQUENCY SHADOW (C475 class): raw gap 0.720 collapses to 0.089 under frequency-matched nulls; hazard set at 82nd pctile of its own freq-matched null, recovery at 36th — neither anomalous; clamped dims were densities, free dims raw counts (measurement-type confound). Regime-separation half untested, stands.	3	B
 C459	**HT Anticipatory Compensation**	2	HT/B
@@ -1008,11 +1266,11 @@ C486	Bidirectional Constraint Coherence (B behavior constrains A zone inference)
 C487	A-Registry Memory Optimization (z=-97 vs random, 0th percentile)	3	A
 C488	HT Predicts Strategy Viability	3	HT
 C489	HT Zone Diversity Correlation	3	HT
-C490	**Categorical Strategy Exclusion** (20.5% of programs forbid AGGRESSIVE, not gradient but prohibition)	2	B
+C490	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'strategy exclusion as a legality property' is the closed-loop control reading (C171, Tier 3) over a LINK-density threshold (LINK as waiting withdrawn, C1174), and the 'perfect separation' follows from defining the groups by that threshold (link_density > 0.404).]** **Categorical Strategy Exclusion** (20.5% of programs forbid AGGRESSIVE, not gradient but prohibition)	3	B
 C491	Judgment-Critical Program Axis (OPPORTUNISTIC orthogonal to caution/aggression)	3	B
 C492	**PREFIX Phase-Exclusive Legality** (ct PREFIX is 0% C/S-zones, 26% P-zone, invariant)	2	A→AZC
-C493	**Brunschwig Grammar Embedding** (balneum marie procedure fits with 0 forbidden violations)	2	B
-C494	**REGIME_4 Precision Axis** (encodes precision-constrained execution, not intensity)	2	B
+C493	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the embedding is scored against the 5 imposed hazard classes (C2060) and the k/h/LINK role glosses (C103–C105 Tier 3, C1174); with no prohibition layer left (C2081) '0 violations' carries no evidence; its detail file already reads Tier 3.]** **Brunschwig Grammar Embedding** (balneum marie procedure fits with 0 forbidden violations)	3	B
+C494	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'REGIME_4 = precision-constrained execution' is a REGIME function gloss of the retired kind (soft gradient, C1712; C2070); its detail file already reads Tier 3.]** **REGIME_4 Precision Axis** (encodes precision-constrained execution, not intensity)	3	B
 C495	**SUFFIX–REGIME Compatibility Breadth** (-r universal, -ar/-or restricted; V=0.159)	2	A→B
 C496	**Nymph-Adjacent S-Position Prefix Bias (o-prefix 75%)**	2	AZC
 C497	**f49v Instructional Apparatus Folio** (26 L-labels alternating 1:1 with example lines, demonstrates morphology limits) **[FLAG 2026-06-08: margin column is likely a LATER ANNOTATOR's analysis, not authorial teaching — labels don't exemplify lines (0-1/20), ink/pen groups with the foliator's digits, six starred labels = one repeated curl, frame revised between passes; structural facts stand, 'teaches its own reading' should not be load-bearing; see F49V_ANNOTATOR_ANALYSIS]**	2	A
@@ -1071,7 +1329,7 @@ C532	**Unique MIDDLE B-Exclusivity** (88% of unique B MIDDLEs are B-exclusive, n
 C533	**Unique MIDDLE Grammatical Slot Consistency** (75% of unique MIDDLE tokens share PREFIX/SUFFIX patterns with classified tokens; adjacent folios' unique MIDDLEs fill similar slots 1.30x vs non-adjacent)	2	A
 C534	Section-Specific Prefixless MIDDLE Profiles	3	A
 C535	**B Folio Vocabulary Minimality**	2	A
-C536	**Material-Class REGIME Invariance**	2	A->B
+C536	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. the headline is the REGIME_4 'precision requirement' gloss (C494, Tier 3; REGIME glosses retired, C1712, C2070); the animal/herb record classes are gloss-based, and the row predates the 2026-02-11 REGIME reassignment that found the older mappings disagreeing (kappa 0.175, C894 detail).]** **Material-Class REGIME Invariance**	3	A->B
 C537	**Token-Level Material Differentiation**	2	A->B
 C538	PP Material-Class Distribution (ANIMAL 15.6%, HERB 28.0%, MIXED 16.6%, NEUTRAL 39.9%; classification conditional on Brunschwig suffix alignment)	3	A
 C539	**LATE Prefix Morphological Class** (al/ar/or: V+L pattern, 3.78x line-final enrichment, 68-70% suffix-depleted, short MIDDLE preference)	2	B
@@ -1120,7 +1378,7 @@ C582	**FL Definitive Census** (FL={7,30,38,40}; 1078 tokens, 4.7% of B; 4 classe
 C583	**FQ Definitive Census** (FQ={9,13,14,23}; 2890 tokens, 12.5% of B; supersedes C559's {9,20,21,23}; Classes 20,21 are AX per C563)	2	B
 C584	**Near-Universal Pipeline Purity** (CC/EN/FL/FQ all 100% PP; AX 98.2% per C567; pipeline vocabulary dominates all roles; operational roles pure, scaffold near-pure)	2	B
 C585	**Cross-Role MIDDLE Sharing**	2	B
-C586	**FL Hazard-Safe Split**	2	B
+C586	**[Scope 2026-09-28 (v7.26): FL classes {7,30} vs {38,40} are split by membership in the class-level forbidden set; the positional differences stand as measurements; the hazard/safe and 'gateway' readings are withdrawn (C783, C2081).]** **FL Hazard-Safe Split**	2	B
 C587	**FQ Internal Differentiation**	2	B
 C588	**Suffix Role Selectivity**	2	B
 C589	**Small Role Genuine Structure**	2	B
@@ -1179,7 +1437,7 @@ C641	**PP Population Execution Profiles**	2	CROSS_SYSTEM
 C642	**A Record Role & Material Architecture** — **[PHASE_748 ANNOTATED (sparsity-denominator, C475 class): the "92% incompatibility / 8% density" leg measures SPARSITY, not prohibition — the lattice's own evidence shows 61.1% single-occurrence pairs, mean recurrence 4.07; most of the 81,406 "possible" PP-pairs were never expected to co-occur (404 PP MIDDLEs, mostly rare). Attested-pair structure is C729's domain (0/19,576 violations). SURVIVING legs (constraint stays Tier 2 on these): material consistency below chance and record-level role coverage below expected; role heterogeneity and material-role (V=0.122) are nulls.]**	2	CROSS_SYSTEM
 C643	**Lane Hysteresis Oscillation**	2	B
 C644	**QO Transition Stability**	2	B
-C645	**CHSH Post-Hazard Dominance** **[PHASE_729 5-gram null: the post-hazard CHSH bias is MARKOV-TRIVIAL — real +19.6pp, synth +17.3pp, residual +2.3pp (passed within-folio shuffle but fails the sharper 5-gram null). The lag+1 directional measurement is PRESERVED as a Tier 2 descriptive bigram fact; the "thermal damage control / hazard recovery" MECHANISM interpretation is RETRACTED to Tier 4 SPECULATIVE. See C2045 (single-step scope), C2055 (5-gram discipline), feedback_5gram_markov_null_for_surface_patterns.]**	2	B
+C645	**[Scope 2026-09-28 (v7.26): 'post-hazard' = after forbidden-pair source tokens; the lag+1 count stands as a descriptive bigram fact (Markov-trivial under the 5-gram null, see below), and no hazard layer remains (C2081).]** **CHSH Post-Hazard Dominance** **[PHASE_729 5-gram null: the post-hazard CHSH bias is MARKOV-TRIVIAL — real +19.6pp, synth +17.3pp, residual +2.3pp (passed within-folio shuffle but fails the sharper 5-gram null). The lag+1 directional measurement is PRESERVED as a Tier 2 descriptive bigram fact; the "thermal damage control / hazard recovery" MECHANISM interpretation is RETRACTED to Tier 4 SPECULATIVE. See C2045 (single-step scope), C2055 (5-gram discipline), feedback_5gram_markov_null_for_surface_patterns.]**	2	B
 C646	**PP-Lane MIDDLE Discrimination**	2	A/B
 C647	**Morphological Lane Signature**	2	B
 C648	**LINK-Lane Independence**	2	B
@@ -1204,18 +1462,18 @@ C666	**Kernel Contact Trajectory**	2	B
 C667	**Escape/Hazard Density Trajectory**	2	B
 C668	**Lane Balance Trajectory**	2	B
 C669	**Hazard Proximity Trajectory**	2	B
-C670	**Adjacent-Line Vocabulary Coupling**; 'per-line independent' holds for line-to-line only)	0	B
-C671	**MIDDLE Novelty Shape** (front-loaded; 87.3% FL 0% BL; first-half frac=0.685 vs perm=0.653; vocabulary introduced early, reused late)	0	B
-C672	**Cross-Line Boundary Grammar**	0	B
-C673	**CC Trigger Sequential Independence**; no within-voice coupling shown but not excluded, needs C1231 centroids (C1258))	0	B
-C674	**EN Lane Balance Autocorrelation**	0	B
-C675	**MIDDLE Vocabulary Trajectory** (minimal drift; JSD Q1-Q4=0.081 ratio=1.078; 4/135 MIDDLEs positionally biased after Bonferroni; token identity position-invariant)	0	B
-C676	**Morphological Parameterization Trajectory**	0	B
-C677	**Line Complexity Trajectory**	0	B
-C678	**Line Profile Classification** (continuous; best KMeans sil=0.100 no discrete types; PC1=morphological complexity 12.1%; PC2=monitoring intensity 9.3%; 10 PCs for 68.3%)	0	B
-C679	**Line Type Sequencing**	0	B
-C680	**Positional Feature Prediction** (11/27 features position-correlated; 9/27 add beyond REGIME; line_length dR2=0.040 strongest; 16/27 position-independent)	0	B
-C681	**Sequential Coupling Verdict** (24/27 features lag-1 sig; SEQUENTIALLY_COUPLED but folio-mediated not sequential; top: line_length dR2=0.098 EN dR2=0.091 LINK dR2=0.063; lines = contextually-coupled independently-assessed; SCOPE: 'stateful per-folio' is more precisely per-PARAGRAPH (C1834 reset, C1967 thermal-by-para); within-Mode-B continuity is paragraph-level not line-to-line (C1258; lag1=lag2 flat, 2026-06))	0	B
+C670	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Adjacent-Line Vocabulary Coupling**; 'per-line independent' holds for line-to-line only)	2	B
+C671	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **MIDDLE Novelty Shape** (front-loaded; 87.3% FL 0% BL; first-half frac=0.685 vs perm=0.653; vocabulary introduced early, reused late)	2	B
+C672	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Cross-Line Boundary Grammar**	2	B
+C673	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **CC Trigger Sequential Independence**; no within-voice coupling shown but not excluded, needs C1231 centroids (C1258))	2	B
+C674	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **EN Lane Balance Autocorrelation**	2	B
+C675	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **MIDDLE Vocabulary Trajectory** (minimal drift; JSD Q1-Q4=0.081 ratio=1.078; 4/135 MIDDLEs positionally biased after Bonferroni; token identity position-invariant)	2	B
+C676	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Morphological Parameterization Trajectory**	2	B
+C677	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Line Complexity Trajectory**	2	B
+C678	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Line Profile Classification** (continuous; best KMeans sil=0.100 no discrete types; PC1=morphological complexity 12.1%; PC2=monitoring intensity 9.3%; 10 PCs for 68.3%)	2	B
+C679	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Line Type Sequencing**	2	B
+C680	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Positional Feature Prediction** (11/27 features position-correlated; 9/27 add beyond REGIME; line_length dR2=0.040 strongest; 16/27 position-independent)	2	B
+C681	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Sequential Coupling Verdict** (24/27 features lag-1 sig; SEQUENTIALLY_COUPLED but folio-mediated not sequential; top: line_length dR2=0.098 EN dR2=0.091 LINK dR2=0.063; lines = contextually-coupled independently-assessed; SCOPE: 'stateful per-folio' is more precisely per-PARAGRAPH (C1834 reset, C1967 thermal-by-para); within-Mode-B continuity is paragraph-level not line-to-line (C1258; lag1=lag2 flat, 2026-06))	2	B
 C682	**Survivor Distribution Profile**	2	A-B
 C683	**Role Composition Under Filtering**	2	A-B
 C684	**Hazard Pruning Under Filtering** (83.9% full elimination of all 17 forbidden transitions; mean 0.21 active; max 5; filtering = natural hazard suppression)	2	A-B
@@ -1229,20 +1487,32 @@ C691	**Program Coherence Under Filtering** (0-20% operational completeness; work
 C692	**Filtering Failure Mode Distribution** (94.7% MIDDLE miss, 3.6% PREFIX, 1.7% SUFFIX; consistent across all roles 91-97% MIDDLE; MIDDLE = gatekeeper)	2	A-B
 C693	**Usability Gradient** (266x dynamic range; best=0.107 Max-classes; 78% pairings unusable >50% empty; single A record does NOT produce usable B program)	2	A-B
 C694	**RI Placement Non-Random**	2	A
+C695	**PP-Run Length Distribution** (KS p ~ 10^-44; PP-pure runs non-geometric; 365 bundles, sizes 1-12, mean 2.71)	2	A
 C696	**RI Line-Final Preference**	2	A
+C697	**PREFIX Clustering Within Lines** (observed entropy < shuffled, p < 10^-4; PREFIXes cluster within A lines)	2	A
 C698	**Bundle-C424 Size Match** (INFORMATIONAL; bundles and C424 adjacency clusters are distinct constructs; KS p < 0.001)	2	A
+C699	**Within-Bundle PP Coherence**	1	A
 C700	**Bundle PP Exceeds Random**	2	A
+C701	**Bundle PP Diversity**	1	A
 C702	**Boundary Vocabulary Discontinuity**	1	A
+C703	**PP Folio-Level Homogeneity**	2	A
 C704	**Folio PP Pool Size** (mean 35.3 MIDDLEs per folio, 7.0x record-level; range 20-88; folio = complete PP specification)	2	A
+C705	**Folio-Level Class Survival** (mean 39.8/49 classes = 81.2%; 3.6x improvement over record-level 11.08/49; min 30/49)	2	A-B
 C706	**B Line Viability Under Folio Filtering** (13.7% empty lines vs 78% record-level; 76.3% pairings have <=20% empty)	2	A-B
+C707	**Folio Usability Dynamic Range** (14.3x range vs 266x record-level; best=0.343 vs 0.107; worst nonzero=0.024)	2	A-B
 C708	**Inter-Folio PP Discrimination**	2	A-B
 C709	**Section Invariance** (all sections H/P/T 100% viable; P=0.182, T=0.293 higher than H=0.085; no dead zones)	2	A-B
 C710	**RI-PP Positional Complementarity** (d=0.12, RI slightly later in lines; effect too small for structural complementarity)	2	A
+C711	**RI Vocabulary Density**	2	A
 C712	**RI Singleton-Repeater Behavioral Equivalence**	2	A
+C713	**Adjacent Line RI Similarity**	2	A
 C714	**Line-Final RI Morphological Profile** (143 unique types in 156 final positions; no morphological difference from non-final RI)	2	A
+C715	**RI-PP Independence**	2	A
 C716	**Cross-Folio RI Reuse Independence**	2	A
 C717	**PP Homogeneity Across Line Types** (PP-pure and RI-bearing lines draw from same PP pool; RI-exclusive PP is sampling artifact, null=9.4 vs obs=8.9, 106% explained; PP-pure alone recovers 90.1% of B class survival)	2	A
+C718	**RI Pipeline Invisibility** (3.9 "RI-gated" B classes per folio are random; zero classes gated in >25% of folios; RI structurally invisible to A-to-B execution pipeline)	2	A-B
 C719	**RI-PP Functional Independence** (0/6 binding tests pass; shared RI does not predict PP similarity J=0.074 vs 0.065, PP consistency ratio 1.05, adjacent PP ratio 0.99; RI and PP are orthogonal discrimination axes)	2	A
+C720	**RI Gallows Independence** (shared RI does not predict gallows domain; cosine 0.244 vs 0.244, ratio 0.998; within-record gallows enrichment C530 is folio-level not RI-mediated)	2	A
 C721	**RI Section Sharing Trivial** (76.6% within-section vs 71.5% expected from section sizes; enrichment 1.07x trivially explained by 95/114 folios being Herbal)	2	A
 C722	**Within-Line Accessibility Arch**	2	A-B
 C723	**Role Accessibility Hierarchy**	2	A-B
@@ -1269,10 +1539,10 @@ C743	**HT Lane Segregation**	2	B/HT
 C744	**HT Lane Indifference** (same-lane rate 37.7% = expected 37.9%, lift=0.994x; z=-1.66 ns; HT is lane-neutral in placement)	2	B/HT
 C745	**HT Coverage Metric Sensitivity**	2	A<>B/HT
 C746	**HT Folio Compensatory Distribution**	2	B/HT
-C747	**Line-1 HT Enrichment**	0	B/HT
-C748	**Line-1 Step Function** (pos 1=50.2%, pos 2=31.7%, pos 3-10=27-33%; enrichment confined to single opening line)	0	B/HT
+C747	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Line-1 HT Enrichment**	2	B/HT
+C748	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Line-1 Step Function** (pos 1=50.2%, pos 2=31.7%, pos 3-10=27-33%; enrichment confined to single opening line)	2	B/HT
 C749	**First-Line HT Morphological Distinction**	2	B/HT
-C750	**Opening-Only HT Asymmetry**	0	B/HT
+C750	**[Tier-0 alignment 2026-09-28 (v7.26): Tier 0 → 2. Tier 0 now holds only the restated conclusion (C121, C124; human sign-off 2026-09-28); this row is a measurement and stays established at Tier 2.]** **Opening-Only HT Asymmetry**	2	B/HT
 C751	**Coverage Pool-Size Confound**	2	A<>B
 C752	**No Section-to-Section Routing**	2	A<>B
 C753	**No Content-Specific A-B Routing** (partial r=-0.038 after size control; no granularity achieves discrimination; reframe as constraint propagation)	2	A<>B
@@ -1324,18 +1594,18 @@ C798	**HT Dual Control Architecture** (AZC and FL are orthogonal predictors of H
 C799	**Line-1 AZC Independence** (Line-1 PP fraction and A-context prediction accuracy do NOT vary by AZC tertile; header is fixed structure)	2	B/HT
 C800	**Body HT Escape Driver**	2	B/HT
 C801	**Body HT Primitive Vocabulary**	2	B/HT
-C802	**Body HT LINK Proximity**	2	B/HT
+C802	**[Scope 2026-09-28 (v7.26): HT distance to 'ol'-containing tokens; the measurement stands; LINK as a monitoring operator is withdrawn (true density 13.2%, C609; morphological artifact, C1174).]** **Body HT LINK Proximity**	2	B/HT
 C803	**Body HT Boundary Enrichment** (HT rate: first=45.8%, last=42.9%, middle=25.7%; marks control block boundaries)	2	B/HT
 C804	**LINK Transition Grammar Revision**	2	B
-C805	**LINK Positional Bias (C365 Refutation)** (Mean pos 0.476 vs 0.504; first=17.2%, last=15.3%, middle=12.4%; shares HT boundary pattern)	2	B
-C806	**LINK-HT Positive Association**	2	B/HT
+C805	**[Scope 2026-09-28 (v7.26): positional bias of 'ol'-containing tokens (canonical LINK, C609); the measurement stands and prevails in the conflict with C359 (demoted 2026-09-28: weaker method); the 'monitoring checkpoint' interpretation is withdrawn (C1174).]** **LINK Positional Bias (C365 Refutation)** (Mean pos 0.476 vs 0.504; first=17.2%, last=15.3%, middle=12.4%; shares HT boundary pattern)	2	B
+C806	**[Scope 2026-09-28 (v7.26): overlap between 'ol'-containing tokens and HT; a morphological count (C1174), not an association between a monitoring operator and HT.]** **LINK-HT Positive Association**	2	B/HT
 C807	**LINK-FL Inverse Relationship**	2	B
 C808	**LINK 'ol' is PP MIDDLE** ('ol' appears 759x as MIDDLE, in A vocabulary; LINK PP rate 92.4%)	2	B
 C809	**LINK-Kernel Separation**	2	B
 C810	**LINK-FL Non-Adjacency** (Direct LINK->FL rare: 0.70x expected; confirms complementary phases)	2	B
 C811	**FL Chaining** (FL->FL enriched 2.11x; extended escape sequences; FL->KERNEL neutral 0.86x)	2	B
 C812	**HT Novel MIDDLE Combinations** (11.19% novel pairs; NOT C475 violation; HT in distinct combinatorial space)	2	B/HT
-C813	**Canonical Phase Ordering** (LINK 0.476 -> KERNEL 0.482 -> FL 0.576; monitoring early, escape late)	2	B
+C813	**[Scope 2026-09-28 (v7.26): mean line positions of 'ol' tokens, kernel-letter tokens and FL classes; the measurement stands; 'monitoring early, escape late' is withdrawn (LINK C1174; kernel C089 → C2082; escape/recovery C458).]** **Canonical Phase Ordering** (LINK 0.476 -> KERNEL 0.482 -> FL 0.576; monitoring early, escape late)	2	B
 C814	**Kernel-Escape Inverse**	2	B
 C815	**Phase Position Significance**	2	B
 C816	CC Positional Ordering **DEMOTED Tier 2→3 (PHASE_731)** — all 3 sub-measurements Markov-trivial; positional means preserved as descriptive corpus facts; "daiin initiates loop" mechanism retracts; cascade-flagged C817, C818, C874, C600, C558, C819 as PENDING_REAUDIT	3	B
@@ -1383,7 +1653,7 @@ C857	First paragraph ordinariness (predicts 11.8%)	2	B
 C858	Paragraph count reflects complexity (rho 0.836)	2	B
 C859	Vocabulary convergence (14%→39% overlap)	2	B
 C860	Section paragraph organization (HERBAL 2.2 vs RECIPE 10.2)	2	B
-C861	LINK/hazard paragraph neutrality (CV < 0.21)	2	B
+C861	**[Scope 2026-09-28 (v7.26): rates of class 29 and FL classes 7/30 across paragraph ordinals; the flat profile stands; 'monitoring' and 'hazard navigation' are withdrawn (C1174, C2081).]** LINK/hazard paragraph neutrality (CV < 0.21)	2	B
 C862	Role template verdict: hybrid model	2	B
 C863	Paragraph-ordinal EN subfamily gradient (qo-early, ch-late)	3	B
 C864	Gallows paragraph marker (81.5% gallows-initial)	2	B
@@ -1415,8 +1685,8 @@ C889	ct-ho Reserved PP Vocabulary (MIDDLEs h/hy/ho 98-100% ct-prefixed; extends 
 C890	Recovery Rate-Pathway Independence (FQ rate and post-FQ kernel vary independently; extends C458)	2	B
 C891	ENERGY-FREQUENT Inverse Correlation	2	B
 C892	Post-FQ h-Dominance (h 24-36% post-FQ vs e 3-8%; recovery enters via phase-check)	2	B
-C893	Paragraph Kernel Signature Predicts Operation Type	2	B
-C894	REGIME_4 Recovery Specialization Concentration	2	B
+C893	**[Scope 2026-09-28 (v7.26): paragraphs are typed by shares of the EVA letters k and h (h is half the bench glyph, PHASE_754); the FQ/EN rate differences stand as measurements (partly compositional: FQ members' own k content, C781); 'operation type', 'recovery/escape' and the Brunschwig mapping are withdrawn (C103–C105 Tier 3, C089 → C2082, C458).]** Paragraph Kernel Signature Predicts Operation Type	2	B
+C894	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. 'recovery specialization' is the withdrawn recovery reading (C458, C105), and a K/(K+H) contrast across REGIMEs is on-axis calibration because REGIME is defined on features that include PC1 = qo/k/headless (C2070); note the row still names REGIME_4, while the detail file moved the signal to REGIME_2 (2026-02-11).]** REGIME_4 Recovery Specialization Concentration	3	B
 C895	Kernel-Recovery Correlation Asymmetry (k-FQ: r=+0.27; h-FQ: r=-0.29; e-FQ: n.s.; phase monitoring substitutes for recovery)	2	B
 C896	Process Mode Discrimination via Kernel Profile (HIGH_K_LOW_H=2.5x FQ; discriminates distillation from boiling/decoction)	3	B
 C897	Prefixed FL MIDDLEs as Line-Final State Markers (tokens contain FL TERMINAL MIDDLEs am/y/dy/ly per C777; 72.7% line-final; operation→state mapping extends FL state index)	2	B
@@ -1454,8 +1724,8 @@ C928	**Jar Label AX_FINAL Concentration**	2	A, B, Labels
 C929	**ch/sh Sensory Modality Discrimination** (ch=active test pos 0.515, sh=passive monitor pos 0.396, delta +0.120; ch+checkpoint suffix 1.87x; sh followed by heat 18.3% vs ch 10.6%; ch followed by input 1.98x, iterate 2.01x; maps to Brunschwig continuous monitoring vs discrete sampling)	2	B
 C930	**lk Section-S Concentration and Fire-Method Specificity**	2	B
 C931	**Prefix Positional Phase Mapping** (pch 15.9x, tch 18.4x line-initial; ol 0.33x, lch 0.32x, ot 0.29x line-final; pch 25.5x par-initial; qo/ch 0.03-0.13x par-initial; temporal ordering PREP->PRE-TREAT->SEAL->EXECUTE->POST->STORE matches Brunschwig 7-phase workflow)	2	B
-C932	**Body Vocabulary Gradient** (RARE r=-0.97 early-to-late; UNIVERSAL r=+0.92; tokens/line 10.3->8.7 r=-0.97; terminal suffix r=-0.89; bare suffix r=+0.90; extends C842 flat-body finding to show vocabulary rarity gradient within body)	2	B
-C933	**Prep Verb Early Concentration** (te avg=0.394 Q0:Q4=2.7x; pch avg=0.429 Q0:Q4=2.8x; tch avg=0.424 Q0:Q4=1.9x; lch avg=0.445 Q0:Q4=1.3x; all four Brunschwig prep verbs front-load in paragraph body)	2	B
+C932	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. not replicated (C1259 T2): the original script included header lines in Q0; body-only RARE r = −0.054 (claimed −0.97).]** **Body Vocabulary Gradient** (RARE r=-0.97 early-to-late; UNIVERSAL r=+0.92; tokens/line 10.3->8.7 r=-0.97; terminal suffix r=-0.89; bare suffix r=+0.90; extends C842 flat-body finding to show vocabulary rarity gradient within body)	3	B
+C933	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. artifact (C1259 T3): 77% of prep-verb tokens are Mode A; within Mode B there is no positional bias (p = 0.639).]** **Prep Verb Early Concentration** (te avg=0.394 Q0:Q4=2.7x; pch avg=0.429 Q0:Q4=2.8x; tch avg=0.424 Q0:Q4=1.9x; lch avg=0.445 Q0:Q4=1.3x; all four Brunschwig prep verbs front-load in paragraph body)	3	B
 C934	**Parallel Startup Pattern** (heat first 65%, prep first 27%, same line 8%; first heat avg pos=0.079, first prep avg pos=0.212; BOTH lines Q0=9.9% Q4=3.4% r=-0.94; consistent with "light coals first, prep materials while stabilizing")	2	B
 C935	**Compound Specification Dual Purpose** (line-1 compound atoms predict body simple MIDDLEs: 71.6% hit vs 59.2% random, 1.21x lift; HT compound rate 45.8% vs grammar 31.5%; 100% decomposable to core atoms; REVISES C404 "non-operational" to "operationally redundant"; weakens Tier 3 attention/practice interpretation)	2	B
 C936	[tier cell 2/3] **ok = Vessel Domain Selector** (REVISED from "three-operation composite": ok selects vessel/apparatus as action target, MIDDLE provides action; 378 same-MIDDLE pairs confirm domain differentiation; late position mean 0.538; 15 hypotheses tested, vessel-target only coherent reading; C911 explained: vessel ops = e-family + infra, no direct heating; sister pair ok/ot = proactive/corrective apparatus management)	3	B
@@ -1466,7 +1736,7 @@ C940	**FL State Marking via Rare MIDDLEs FALSIFIED**	1	B
 C941	**Section Is the Primary Vocabulary Organizer**	2	B
 C942	**Context-Dependent MIDDLE Successor Profiles** (45.8% significant by section after Bonferroni; section KL 2.0x > position KL; 100% MIDDLEs have section KL > position KL)	2	B
 C943	**Whole-Token Variant Coordination Carries Section Signal**	2	B
-C944	**Paragraph Kernel Sequence Stereotypy**	2	B
+C944	**[Scope 2026-09-28 (v7.26): paragraph types come from k/e glyph shares of the MIDDLE (k-class: contains k; e-class: starts with e); the lower-than-null transition entropy (p = 0.004; chi-square permutation p = 0.233) stands as a measurement; the profiles are glyph counts, not operator roles (C089 → C2082).]** **Paragraph Kernel Sequence Stereotypy**	2	B
 C945	**No Folio-Persistent Rare MIDDLEs as Material Markers FALSIFIED** (0 rare MIDDLEs at >80% persistence; 81.8% confined to single paragraph; mean edit distance 1.33)	1	B
 C946	**A Folios Show No Material-Domain Routing FALSIFIED** (cosine similarity 0.997; ARI=-0.007; RI extension V=0.071; A is generic pool)	1	A
 C947	**No Specification Vocabulary Gradient FALSIFIED**	1	B
@@ -1486,7 +1756,7 @@ C961	**WORK Zone Is Unordered** (EN tau ~ 0, AX tau ~ 0; no systematic within-zo
 C962	**Phase Interleaving Pattern**	2	B
 C963	**Paragraph Body Homogeneity**	2	B
 C964	**Boundary-Constrained Free-Interior Grammar** (SYNTHESIS: grammar strength 0.500; boundaries constrained by role, interior free; system is role-complete)	2	B
-C965	**Body Kernel Composition Shift** (h-kernel fraction rises +0.10, e-kernel drops -0.086 through body; survives length control; composition shift not diversity collapse)	2	B
+C965	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. not replicated (C1259 T4): aggregate h rho = −0.019 (claimed +0.10); it is also a k/h/e glyph-share measure (kernel reading superseded, C089 → C2082).]** **Body Kernel Composition Shift** (h-kernel fraction rises +0.10, e-kernel drops -0.086 through body; survives length control; composition shift not diversity collapse)	3	B
 C966	**EN Lane Oscillation First-Order Sufficiency** (markov_haz BIC=9166.3, 12 params; composite deviation 0.975 on 8 valid metrics; 2nd-order correction worsens fidelity; no hidden accumulator, no cross-line memory)	2	B
 C967	**Hazard Gate Duration Exactly One Token**	2	B
 C968	**Folio Drift Emergent Not Intrinsic**	2	B
@@ -1546,23 +1816,23 @@ C1021	**CP Factor Characterization — Tensor Factors Are Frequency-Dominated, R
 C1022	**Paragraph Macro-Dynamics — 6-State Automaton Does Not Differentiate Paragraph Structure**	2	B
 C1023	**Structural Necessity Ablation — PREFIX Routing Is Sole Load-Bearing Macro Component** (PREFIX→state content routing: 78-81% of non-random structure destroyed by shuffle+reassignment; FL merge: -0.34% spectral gap; gatekeeper JSD=0.0014, z=-0.70 vs null; within-state routing: 0% structure loss; REGIME pooling: 1.1% gap difference; hierarchy: PREFIX routing >> FL ≈ gatekeepers ≈ REGIME; 3/6 pre-registered predictions correct on verdict, overall hierarchy confirmed)	2	B
 C1024	**Structural Directionality — MIDDLE Carries Execution Asymmetry, PREFIX Is Symmetric Router** (MIDDLE asymmetry 0.070 bits, PREFIX 0.018 bits, ratio 0.25x; FL role highest per-class JSD 0.311; class-level bigram JSD=0.089 confirming C886; null control retains 64% of JSD from sparsity; resolves C391/C886 tension: PREFIX symmetric routing + MIDDLE directional execution = symmetric constraints with directional probabilities; 1/5 predictions correct)	2	B
-C1025	**Generative Sufficiency — Class Markov + Forbidden Suppression Is Sufficient at M2 (80%)** (M0 i.i.d. passes 11/15=73% revealing most tests are marginal; M2 49-class Markov + forbidden suppression = sufficiency frontier at 12/15=80%; M4 compositional generation WORST at 9.4/15=63% from 4.2% hallucination rate; macro-automaton M3 ties M2, adds nothing; B4/C2 universally failed = test specification issues; 2/5 predictions correct)	2	B
+C1025	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. reduced by C2063: B3 rewards over-idealization (real corpus 13 violations, M2 0), so M1 (class Markov without forbidden suppression) is the corpus-fidelity frontier, and no prohibition layer remains (C2081); the battery scores stand as recorded.]** **Generative Sufficiency — Class Markov + Forbidden Suppression Is Sufficient at M2 (80%)** (M0 i.i.d. passes 11/15=73% revealing most tests are marginal; M2 49-class Markov + forbidden suppression = sufficiency frontier at 12/15=80%; M4 compositional generation WORST at 9.4/15=63% from 4.2% hallucination rate; macro-automaton M3 ties M2, adds nothing; B4/C2 universally failed = test specification issues; 2/5 predictions correct)	3	B
 C1026	**Grammar Component Necessity — Class Ordering and Forbidden Avoidance Are Load-Bearing; Token Identity Is Partial**	2	B
-C1027	**Hazard Violation Archaeology — Forbidden Pair Violations Are Spatially Uniform but Structurally Conditioned**	2	B
+C1027	**[Scope 2026-09-28 (v7.26): violation counts for the class-level forbidden pairs; a 26.5% violation rate is itself consistent with no class-level suppression (C783 demoted), so 'violation' names membership in a defined pair set, not a breach (C2081).]** **Hazard Violation Archaeology — Forbidden Pair Violations Are Spatially Uniform but Structurally Conditioned**	2	B
 C1028	**Vocabulary Curation Rule — Pairwise Co-occurrence Is Necessary and Dominant** (productive product space 48,640; 419 existing = 0.9% occupancy; pairwise co-occurrence gate: 100% recall, 58.4% precision; depth-3 tree 99.4% CV using only pm_cooc + ms_cooc; no three-way compilation rule detectable; 718 pairwise-compatible → 419 exist; consistent with C1003 no three-way synergy)	2	B
 C1029	**Section-Parameterized Grammar Weights**	2	B
 C1030	**M2 Gap Decomposition — B4 Misspecified, Two Independent Mechanisms** (B4 trivially passes: M2 self-rates identical to real; corrected 13/15=86.7%; B5 asymmetry 3.85x overestimate needs PREFIX routing C1024; C2 CC 100% suffix-free needs role morphology; independent: C2 constant across sections, B5 varies)	2	B
 C1031	**FL Cross-Line Independence** though stage still does NOT propagate (C1260); apparent continuity is paragraph-level not line-to-line FL carryover)	2	B
 C1032	**B5 Asymmetry Mechanism — Forbidden Suppression + PREFIX Routing** (M2 B5=0.178 vs real 0.090; 16/17 forbidden pairs one-directional; alpha=0.15 blending fixes B5=0.111 but regresses B1 spectral gap 0.894->0.770 and B3 5 violations; C1024 PREFIX fraction 20.5% consistent with 15% blending; M2 stays 13/15=86.7%; true fix needs PREFIX-factored generation)	2	B
 C1033	**C2 Test Misspecification — CC Definition Mismatch** (test uses CC={10,11,12,17} but C588 used {10,11,12}; class 17 has 59% suffixed; real C2=0.834 fails 99% threshold; M2=0.824 matches real; corrected 14/15=93.3%; C590 class 17 suffix=NONE wrong; only B5 remains)	2	B
-C1034	**Symmetric Forbidden Suppression Fixes B5** (M5-SF: bidirectional forbidden, B5=0.132 80% pass, B1=0.873 100% pass, B3=0; M2.5 blending fails under C1025 mapping; PREFIX-factored distributionally equivalent to M2; projected 15/15=100% with B4+C2 corrections)	2	B
+C1034	**[Scope 2026-09-28 (v7.26): a model diagnostic: a generator with symmetric suppression of the class-level forbidden mapping passes B5; it is not evidence of a prohibition layer in the text (class level demoted, C783; B3 = 0 rewards over-idealization, real corpus 13, C2063; token zeros reduce, C2081).]** **Symmetric Forbidden Suppression Fixes B5** (M5-SF: bidirectional forbidden, B5=0.132 80% pass, B1=0.873 100% pass, B3=0; M2.5 blending fails under C1025 mapping; PREFIX-factored distributionally equivalent to M2; projected 15/15=100% with B4+C2 corrections)	2	B
 C1035	**AXM Residual Irreducible** (0/7 PASS; all 6 predictors dR2 < 0.013; RF CV R2 = -0.149; LOO gap 0.132; residual = free design space per C458/C980)	2	B
 C1036	**AXM Exit Pathway Allocation Frequency-Neutral**	2	B
 C1037	**AXM Class Composition Redundant**	2	B
 C1038	**AXM Run Entropy Convergence + Micro-Sequential Stratum Empty** (0/6 PASS after size control; entropy slope=-0.248 bits/pos; JSD/CMI size-confounded; four-phase elimination complete; residual = design freedom)	2	B
 C1039	**A Paragraph Cluster Selectivity**	2	A
 C1040	**A Folio-Level Paragraph Compatibility Coherence** (within-folio 0.880 vs between-folio 0.811, p~0; survives section matching 0.810, p~0)	2	A
-C1041	**A Paragraph Complementary Diversification** (cross-line compatibility 0.700 vs null 0.707, z=-3.567; paragraphs diversify, not select for compatibility; extends C476 coverage optimality)	2	A
+C1041	**[Scope 2026-09-28 (v7.26): a measurement on the C475 co-occurrence graph (C475 Tier 3: 'legal' = observed pair; affiliation structure, C981): cross-line compatibility within A paragraphs is slightly below a within-folio line shuffle (0.700 vs 0.707, z = −3.57); the 'extends C476 coverage optimality' reading is dead (C476 retracted).]** **A Paragraph Complementary Diversification** (cross-line compatibility 0.700 vs null 0.707, z=-3.567; paragraphs diversify, not select for compatibility; extends C476 coverage optimality)	2	A
 C1042	**Section-Conditional Positional Exclusivity Reduction** (C956 zone-exclusive tokens retain only 30-55% exclusivity within sections; global exclusivity partially a section composition effect; qualifies C956)	2	B
 C1043	**Role Self-Loop Section Dependence**	2	B
 C1044	**Section-Dependent Phase Interleaving Rate**	2	B
@@ -1599,10 +1869,10 @@ C1074	**Terminal-State Association Is Frequency-Mediated**	2	B
 C1075	**Compatibility Asymmetry Is Frequency-Dominated** (freq_sum +1.654 std coef dominates; INITIAL_match +0.089 below 0.10 threshold; INITIAL_x_FINAL +0.016 NS confirms C1003; shared_hinge +0.096; 271K pairs after singleton exclusion)	2	B
 C1076	**Terminal Character Predicts Affordance Bin Beyond Frequency**	2	B
 C1077	**Terminal Compatibility Groups Form Genuine Cliques**	2	B
-C1078	**HT Hazard Avoidance Is Vocabulary-Level**	2	B
+C1078	**[Scope 2026-09-28 (v7.26): a vocabulary count (5/7,042 HT tokens in the forbidden-pair vocabulary); HT is outside the grammar by definition (C740), so 'avoidance' is a vocabulary identity, not a function (C2081).]** **HT Hazard Avoidance Is Vocabulary-Level**	2	B
 C1079	**Line-1 Exclusivity Is Folio-Specificity Tautology** (line-1 100% vs body 78.3% exclusive, p~0; singleton control: both 100%; C870 folio-specificity fully explains difference)	2	B
 C1080	**Tail Pressure Predicts HT Compound Rate**	2	B
-C1081	**LINK Adjacency Does Not Modulate HT Prefix Phase**	2	B
+C1081	**[Scope 2026-09-28 (v7.26): a null result on 'ol'-adjacent vs other HT tokens; LINK is a morphological label (C1174), not a phase operator.]** **LINK Adjacency Does Not Modulate HT Prefix Phase**	2	B
 C1082	**HT Oscillation Is Section-Driven** (raw ACF significant at lags 1,2,4,6,20; section-residualized: only lag 7 survives; no lag 8-12 signal; resolves open question)	2	B
 C1083	**HT Density Is Paragraph-Ordinal Neutral**	2	B
 C1084	**Section-Specific AXM Attractor Ordering** > S(0.687) > C(0.635) > H(0.587); decomposes C1017 baseline; survives REGIME control)	2	B
@@ -1781,7 +2051,7 @@ C1276	**AZC Sections Converge on A Pharma Atom Profile**	2	AZC, A, section, atom
 C1277	**THERMAL Escape is PREFIX-Mediated**	2	B, A->B, THERMAL, escape, PREFIX, qo, mediation
 C1278	**Category Predicts Instruction Class Beyond PREFIX**	2	B, category, instruction-class, entropy, PREFIX
 C1279	**Mode A/B Lines Differ by Category**	2	B, mode, category, THERMAL, TRANSITION
-C1280	**Hazard Concentrates in FLOW/CONTAINMENT**	2	B, hazard, FLOW, CONTAINMENT, THERMAL, category
+C1280	**[Scope 2026-09-28 (v7.26): category profile of forbidden-pair MIDDLEs, a measurement over a defined MIDDLE set and imposed category labels (category-as-unit caution, C2069); 'hazard concentrates' carries no hazard function (C2081).]** **Hazard Concentrates in FLOW/CONTAINMENT**	2	B, hazard, FLOW, CONTAINMENT, THERMAL, category
 C1281	**TRANSITION Anti-Escape is PREFIX-Independent**	2	B, TRANSITION, escape, PREFIX-independent, anti-escape
 C1282	**Category Predicts B Section Membership**	2	B, section, category, differentiation
 C1283	**Category Differentiates Entry vs Exit Zones**	2	B, boundary, entry, exit, THERMAL, TRANSITION
@@ -1860,7 +2130,7 @@ C1356	**Dark MIDDLE Identity Beyond PREFIX**	2	B, dark, PREFIX, MIDDLE, informat
 C1357	**Dark Proximity Weakly Boosts Terminal Suffix**	2	B, dark, suffix, terminal, proximity
 C1358	**Class Positional Specialization**	2	B, line, position, 49-class
 C1359	**Transition Gradient Resolution**	2	B, line, transition, gradient, position
-C1360	**Forbidden Transition Violations Dispersed and Rare** (11 violations in 20,676 transitions 0.053% rate; KS=0.232 p>=0.05 vs uniform; 10/11 are dy→aiin; hazard avoidance uniform across line positions; forbidden pairs nearly absolute at MIDDLE level)	2	B, line, forbidden, position
+C1360	**[Scope 2026-09-28 (v7.26): counts of the 17 zero pairs (11 violations); 'nearly absolute' is not a prohibition: the zeros reduce to composition, zones and boundary coupling (C2081).]** **Forbidden Transition Violations Dispersed and Rare** (11 violations in 20,676 transitions 0.053% rate; KS=0.232 p>=0.05 vs uniform; 10/11 are dy→aiin; hazard avoidance uniform across line positions; forbidden pairs nearly absolute at MIDDLE level)	2	B, line, forbidden, position
 C1361	**No Positional Motifs** (1/1556 class bigrams significant after Bonferroni; class-class transitions not locked to positions; grammar same everywhere; positional gradient arises from shifting class FREQUENCIES not position-specific rules; confirms C964 free interior at 49-class)	2	B, line, bigrams, position, motifs
 C1362	**Position-Conditioned Generative Improvement** (M2p quintile-conditioned wins 5/5 metrics vs stationary M2; class KL 2.4x better, transition JSD 1.7x, positional entropy 1.6x, AXM self 1.8x, specialist accuracy 2.5x; position is M2's primary blind spot; grammar unchanged but class frequencies shift across line)	2	B, line, generative, M2p, position
 C1363	**Gradient Steepness Universal**	2	B, line, folio, gradient
@@ -1946,43 +2216,43 @@ C1442	TERMINAL-suffix category information complementarity	2	B, MIDDLE, atom, te
 C1443	17 forbidden TERMINAL x suffix-head pairs	2	B, MIDDLE, atom, terminal, suffix, forbidden, co-occurrence, exclusion
 C1444	self-atom cross-layer repulsion	2	B, MIDDLE, atom, terminal, suffix, self-repulsion, cross-layer
 C1445	m-terminal and suffix anticorrelation at paragraph level	2	B, MIDDLE, atom, m-terminal, suffix, paragraph, anticorrelation, section
-C1446	k-HEAD complete hazard immunity	2	B, MIDDLE, atom, k-initial, hazard, HEAD, immunity
-C1447	terminal atom hazard partition	2	B, MIDDLE, atom, terminal, hazard, partition, FLOW
-C1448	HEAD x TERM frame hazard map with k-neutralization	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, k-neutralization
-C1449	PREFIX channel hazard with sister parity	2	B, PREFIX, hazard, sister pair, ch, sh, ok, ot, channel
-C1450	opacity tier hazard gradient	2	B, MIDDLE, atom, terminal, hazard, opacity, gradient, suffix
-C1451	Mode B exclusive forbidden violation concentration	2	B, suffix, mode, hazard, forbidden, violation, Mode-B
-C1452	Non-monotonic i-extension hazard gradient	2	B, MIDDLE, atom, i-modifier, extension, hazard, non-monotonic
-C1453	i-modifier frame selection, not inherent hazard	2	B, MIDDLE, atom, i-modifier, hazard, frame-selection
+C1446	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** k-HEAD complete hazard immunity	2	B, MIDDLE, atom, k-initial, hazard, HEAD, immunity
+C1447	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** terminal atom hazard partition	2	B, MIDDLE, atom, terminal, hazard, partition, FLOW
+C1448	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** HEAD x TERM frame hazard map with k-neutralization	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, k-neutralization
+C1449	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** PREFIX channel hazard with sister parity	2	B, PREFIX, hazard, sister pair, ch, sh, ok, ot, channel
+C1450	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** opacity tier hazard gradient	2	B, MIDDLE, atom, terminal, hazard, opacity, gradient, suffix
+C1451	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Mode B exclusive forbidden violation concentration	2	B, suffix, mode, hazard, forbidden, violation, Mode-B
+C1452	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Non-monotonic i-extension hazard gradient	2	B, MIDDLE, atom, i-modifier, extension, hazard, non-monotonic
+C1453	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** i-modifier frame selection, not inherent hazard	2	B, MIDDLE, atom, i-modifier, hazard, frame-selection
 C1454	i-modifier anti-thermal category profile	2	B, MIDDLE, atom, i-modifier, category, anti-thermal
-C1455	Quenching modifier partial i-override	2	B, MIDDLE, atom, i-modifier, quenching, co-occurrence
+C1455	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Quenching modifier partial i-override	2	B, MIDDLE, atom, i-modifier, quenching, co-occurrence
 C1456	i-modifier suffix depletion	2	B, MIDDLE, atom, i-modifier, suffix, mode, n-terminal
 C1457	e→y narrow vocabulary dominance	2	B, MIDDLE, atom, e-HEAD, y-terminal, vocabulary, dominance
-C1458	e→y categorical safety with OPERATION enrichment	2	B, MIDDLE, atom, e-HEAD, y-terminal, hazard, safety, category, OPERATION
-C1459	e→y context-independent deployment (not recovery-specific)	2	B, MIDDLE, atom, e-HEAD, y-terminal, context, recovery, ambient
+C1458	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** e→y categorical safety with OPERATION enrichment	2	B, MIDDLE, atom, e-HEAD, y-terminal, hazard, safety, category, OPERATION
+C1459	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** e→y context-independent deployment (not recovery-specific)	2	B, MIDDLE, atom, e-HEAD, y-terminal, context, recovery, ambient
 C1460	e→y early-line concentration with final avoidance	2	B, MIDDLE, atom, e-HEAD, y-terminal, position, line, paragraph
 C1461	e→y CHSH-channel with sh enrichment and qo/BARE exclusion	2	B, PREFIX, MIDDLE, atom, e-HEAD, y-terminal, channel, sh, qo
-C1462	e→y rate predicts folio forgiveness via AXM attractor	2	B, MIDDLE, atom, e-HEAD, y-terminal, AXM, forgiveness, folio, hazard
-C1463	Zone-hazard routing at line level	2	B, line, position, zone, hazard, frame, routing
-C1464	k-IMMUNE THERMAL_WORK onset concentration	2	B, MIDDLE, atom, k-HEAD, IMMUNE, line, position, zone
-C1465	HIGH frame positional heterogeneity	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, position, heterogeneity
-C1466	Zone-hazard pattern line-length invariance	2	B, line, position, zone, hazard, frame, length, invariance
-C1467	Paragraph zone x hazard interaction (non-fractal)	2	B, paragraph, zone, hazard, frame, routing
-C1468	Header infrastructure-first composition	2	B, paragraph, header, hazard, LOW, ZERO, composition
-C1469	Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, hazard, independence, nested
-C1470	Cross-line hazard correlation is folio-mediated	2	B, line, hazard, cross-line, folio, independence
-C1471	No compensatory safe opening after hazardous closure	2	B, line, hazard, cross-line, e->y, recovery, compensatory
+C1462	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** e→y rate predicts folio forgiveness via AXM attractor	2	B, MIDDLE, atom, e-HEAD, y-terminal, AXM, forgiveness, folio, hazard
+C1463	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Zone-hazard routing at line level	2	B, line, position, zone, hazard, frame, routing
+C1464	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** k-IMMUNE THERMAL_WORK onset concentration	2	B, MIDDLE, atom, k-HEAD, IMMUNE, line, position, zone
+C1465	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** HIGH frame positional heterogeneity	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, position, heterogeneity
+C1466	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Zone-hazard pattern line-length invariance	2	B, line, position, zone, hazard, frame, length, invariance
+C1467	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Paragraph zone x hazard interaction (non-fractal)	2	B, paragraph, zone, hazard, frame, routing
+C1468	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Header infrastructure-first composition	2	B, paragraph, header, hazard, LOW, ZERO, composition
+C1469	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, hazard, independence, nested
+C1470	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Cross-line hazard correlation is folio-mediated	2	B, line, hazard, cross-line, folio, independence
+C1471	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** No compensatory safe opening after hazardous closure	2	B, line, hazard, cross-line, e->y, recovery, compensatory
 C1472	Modifier co-occurrence avoidance dominates ordering	2	B, grammar, composition
 C1473	Modifier avoidance is frame incompatibility	2	B, MIDDLE, atom, modifier, co-occurrence, avoidance, frame, HEAD, TERMINAL
 C1474	s-modifier universal connector	2	B, MIDDLE, atom, modifier, s, co-occurrence, universality
 C1475	HEAD atom domain taxonomy	2	B, MIDDLE, atom, HEAD, category, domain, taxonomy
-C1476	k-HEAD immunity is intrinsic not compositional	2	B, MIDDLE, atom, HEAD, k, hazard, immunity, intrinsic, modifier
-C1477	a-HEAD is the primary hazard carrier	2	B, MIDDLE, atom, HEAD, a, hazard, forbidden, modifier, quench-resistant
+C1476	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** k-HEAD immunity is intrinsic not compositional	2	B, MIDDLE, atom, HEAD, k, hazard, immunity, intrinsic, modifier
+C1477	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** a-HEAD is the primary hazard carrier	2	B, MIDDLE, atom, HEAD, a, hazard, forbidden, modifier, quench-resistant
 C1478	k/t terminal mirror with category opposition	2	B, MIDDLE, atom, HEAD, k, t, terminal, category, mirror, PREFIX
 C1479	HEAD-modifier selectivity partition	2	B, MIDDLE, atom, HEAD, modifier, selectivity, partition, co-occurrence
-C1480	i-modifier Simpson's paradox full resolution	2	B, MIDDLE, atom, i-modifier, Simpson, hazard, HEAD, selection, resolution
+C1480	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** i-modifier Simpson's paradox full resolution	2	B, MIDDLE, atom, i-modifier, Simpson, hazard, HEAD, selection, resolution
 C1481	i-modifier terminal transformation within a-HEAD	2	B, MIDDLE, atom, i-modifier, a-HEAD, terminal, transformation, TRANSITION
-C1482	Double-ii safety via TRANSITION-locked n-terminal	2	B, MIDDLE, atom, i-modifier, double-ii, safety, n-terminal, TRANSITION, gradient
+C1482	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to the MIDDLE set of the 17 forbidden pairs (definition of PHASE 523, HAZARD_ATOM_DECOMPOSITION; frame tiers HIGH/LOW/ZERO/IMMUNE derive from it), a defined vocabulary subset, so the rates stand as measurements; the readings 'immunity', 'safety', 'forgiveness', 'hazard reduction', 'routing' and 'safety architecture' are withdrawn: the zeros reduce to line composition, zones and boundary coupling (C2081), the class level is demoted (C783) and the classes are imposed (C2060).]** Double-ii safety via TRANSITION-locked n-terminal	2	B, MIDDLE, atom, i-modifier, double-ii, safety, n-terminal, TRANSITION, gradient
 C1483	TERMINAL category specificity gradient	2	B, MIDDLE, atom, terminal, category, specificity, gradient, V=0.463
 C1484	**[PHASE_754 glyph-unit gate (2026-09-27): both exclusivity rules are EVA spelling rules — n preceded by i 98.7%, h preceded by c/s/gallows 99.3% — not atom grammar]** TERMINAL modifier exclusivity partition	2	B, MIDDLE, atom, terminal, modifier, exclusivity, partition, C1472, C1479
 C1485	TERMINAL HEAD affinity partition	2	B, MIDDLE, atom, terminal, HEAD, affinity, partition, frame
@@ -2054,7 +2324,7 @@ C1550	**[Scope 2026-09-27: forbidden-transition claims are zero patterns whose s
 C1551	**[Scope 2026-09-27: forbidden-transition claims are zero patterns whose status is that of the C957 screen (PHASE_753) — individual forbidden pairs are not robust under an edge-glyph null, the class level is demoted (C783) and the 5-class taxonomy is imposed (C2060); the joint null (PHASE_756, 2026-09-28) REDUCES the screen-level zero excess to line composition, zones and boundary coupling (C2081)]** PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal	2	B, MIDDLE, hazard, PHASE_ORDERING, CONTAINMENT_TIMING, headless, y-terminal, l-terminal, dy, l, C1529, C1530, C1547
 C1552	**[Scope 2026-09-27: forbidden-transition claims are zero patterns whose status is that of the C957 screen (PHASE_753) — individual forbidden pairs are not robust under an edge-glyph null, the class level is demoted (C783) and the 5-class taxonomy is imposed (C2060); the joint null (PHASE_756, 2026-09-28) REDUCES the screen-level zero excess to line composition, zones and boundary coupling (C2081)]** 5/9 hazard source MIDDLEs are phantom types absent from corpus	2	B, MIDDLE, hazard, phantom, forbidden, corpus, chey, shey, chedy, shedy, chol, C1531, C1178
 C1553	ch/sh-initial compound MIDDLE categorical absence	2	B, MIDDLE, atom, ch, sh, compound, positional-partition, PREFIX, C1178, C1394, C1534, C1552
-C1554	Phantom MIDDLEs are atom-legal but construction-dead (defense-in-depth)	2	B, MIDDLE, phantom, atom, slot, construction, defense-in-depth, hazard, C1552, C1553, C1178, C1209, C1546
+C1554	**[Scope 2026-09-28 (v7.26): the atom-level legality of the 5 phantom MIDDLEs stands; the 'defense-in-depth' / forbidden-topology reading is withdrawn (C2081).]** Phantom MIDDLEs are atom-legal but construction-dead (defense-in-depth)	2	B, MIDDLE, phantom, atom, slot, construction, defense-in-depth, hazard, C1552, C1553, C1178, C1209, C1546
 C1555	c-initial compound second-atom selectivity (c+h adjacency absent)	2	B, MIDDLE, atom, c-initial, h-atom, second-atom, selectivity, C1389, C1553, C1472
 C1556	o-HEAD terminal-to-category deterministic mapping	2	B, MIDDLE, atom, HEAD, o-HEAD, terminal, category, deterministic, STAGING, FLOW, OPERATION, C1388, C1475, C1483, C1485, C1487
 C1557	o-HEAD y-terminal near-complete depletion (0.007x)	2	B, MIDDLE, atom, HEAD, o-HEAD, y-terminal, depletion, safety, PHASE_ORDERING, hazard, C1388, C1475, C1546, C1551
@@ -2167,7 +2437,7 @@ C1701	Manifold residual is content: MANIFOLD_RESIDUAL_CONTENT. Best deployment m
 C1702	Folio B-side coherence weak: FOLIO_BSIDE_COHERENCE_WEAK. Within-folio B-side signature similarity is statistically significant but practically weak: within/between ratio=1.086 (only 8.6% more similar). PP Jaccard within=0.110 vs between=0.085. 11/16 signature features show significant section-level ANOVA	2	A, A↔B, folio, B-side, signature, coherence, weak
 C1703	Section prediction partial: SECTION_PREDICTION_PARTIAL. Folio-level LOO-CV accuracy 43.9% (2.19x chance, passes 2x threshold). Record-level 34.8% (1.74x, fails). Top features: HEAD_headless (0.109), HEAD_o (0.103), STAGING (0.096), HEAD_e (0.093). Section signal exists in B-side signatures but is noisy at individual record level	2	A, A↔B, section, prediction, B-side, RF, LOO-CV
 C1704	RI extension directional predictions fail: EXTENSION_PREDICTIONS_FAIL. 1/5 RI extension directional predictions pass Bonferroni. Only e-extension → HEAD_e enrichment confirmed. k→HEAD_k correct direction with medium effect (d=0.515) but p=0.060. h→MONITORING (d=0.023), d→TRANSITION (d=0.127), t→FLOW (d=0.184) all non-significant. RI extensions do not reliably predict B-side operational enrichment	2	A, A↔B, RI, extension, B-side, directional, negative
-C1705	C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible record pairs (sharing no compatible MIDDLEs) produce significantly more divergent B-side signatures than compatible pairs. The discrimination manifold's compatibility geometry maps to B-side operational meaning — records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical	2	A, A↔B, C475, discrimination, manifold, B-side, divergence, operational
+C1705	**[Registry cascade 2026-09-28 (v7.26): Tier 2 → 3. built on the C475 incompatibility graph, demoted to Tier 3 (unobserved pairs = sparsity; affiliation structure, C981); records that share no compatible MIDDLEs are expected to differ in a signature computed from those MIDDLEs, no overlap-controlled null was run, and the signature includes hazard exposure and imposed categories (C2060, C2069).]** C475 operational divergence confirmed: C475_OPERATIONAL_DIVERGENCE_CONFIRMED. C475-incompatible record pairs (sharing no compatible MIDDLEs) produce significantly more divergent B-side signatures than compatible pairs. The discrimination manifold's compatibility geometry maps to B-side operational meaning — records with non-overlapping PP MIDDLE sets specify genuinely different B programs. Structure is pair-level, not categorical	3	A, A↔B, C475, discrimination, manifold, B-side, divergence, operational
 C1706	PP content predicts B-side similarity: PP_CONTENT_PREDICTS_BSIDE. Partial Spearman rho=0.502 (controlling pool size, hub fraction, section) between folio PP Jaccard and B-side cosine similarity. Overturns C753's class-level null (r=-0.038). PP MIDDLE content genuinely predicts B-side operational similarity at token level. Signal is HIGHER after controlling for confounds, meaning size/hub confounds suppress, not inflate. Within-section rho=0.467, between-section rho=0.476	2	A, A↔B, PP, folio, B-side, content, correlation
 C1707	Restricted PP MIDDLEs carry discriminative power: RESTRICTED_PP_DISCRIMINATIVE. PP MIDDLEs appearing on ≤2 A folios produce between-folio B-side distances of 0.520 vs 0.005 for multi-folio PPs (≥10 folios). Cohen's d=3.667, p=7.3e-58. Partly mechanical: hub MIDDLEs produce near-identical signatures everywhere. Restricted PPs are rare (mean 2.3 per folio). N_restricted vs folio distinctiveness correlation weak	2	A, A↔B, PP, folio, restricted, discriminative
 C1708	Folio category diversity matches coverage-optimized null: FOLIO_CATEGORY_NOT_SPECIALIZED. Category entropy z=0.116 vs coverage-matched null (hub-weighted random draws). 73/114 folios have |z|<1. Real entropy 2.830 ≈ null 2.816. Folios span all 8 operational categories equally, indistinguishable from coverage-optimized random draws. Recipe specialization prediction fails	2	A, folio, category, entropy, specialization, coverage, negative
@@ -2435,7 +2705,8 @@ C1973	**[PHASE_762 triage 2026-09-28 (C2052 criterion, human-approved): → Tier
 C1974	**[PHASE_762 triage 2026-09-28 (C2052 criterion, human-approved): → Tier 3. content claim — "tracks recipe step complexity" on matched folios]** Paragraph count tracks recipe step complexity across 15 matched folios. Range 2 (two-phase potable gold, f81v) to 18 (highly iterative coagulation, f107r). Simple single-operation recipes → 2-4 paragraphs; multi-step distillation/sublimation → 8-12; highly iterative → 14-18. Extends C1399/C1400 paragraph model.	3	B, paragraph, recipe-correspondence, C1399, C1400
 C1975	**[PHASE_762 triage 2026-09-28 (C2052 criterion, human-approved): → Tier 3. content claim — "tracks recipe material-addition pattern" on matched folios]** dar distribution tracks recipe material-addition pattern across 15 matched folios. Five patterns: front-loaded (preparation then processing, f103r 81% in P1-P5), back-loaded (material renewal during reiteration, f75r P9 46%), zero-after-midpoint (cohobation recycling, f112r P6-P14 zero dar), extreme-density (specification/dissolution, f77v P2 17.2%, f81v P1 16.5%), uniform-low (existing material, f107r 2.0%).	3	B, PREFIX, dar, recipe-correspondence, paragraph
 C1976	Polyalphabetic cipher hypothesis REJECTED. Soft atoms (d,o,c,p,s,f,r) tested for meaning shift across prefix classes via bigram cosine similarity. Core atoms stable: d=0.994, o=0.924, r=0.939. Lower c=0.640, p=0.660, f=0.609 explained by positional artifact (PSEUDO_HEAD under ch vs MOD under qo), not semantic shift. One cipher system; atoms have stable meaning across all prefix channels.	1	B, atom, cipher, falsification, C1394
-C1977	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Recto/verso thermal pairing: same-leaf folios have correlated e-depth	2	n=35 pairs, mean diff=0.124 vs 0.213 random
+C1977	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Recto/verso thermal pairing: same-leaf folios have correlated e-depth	2	B, recto_verso, e_depth, leaf
+C1978	Recto/verso operational profile pairing: same-leaf folios share PREFIX distributions. Survives all 4 controls: section-stratified permutation, adjacent-folio comparison (+0.038 advantage), without-qo channel, broader 83-folio baseline	2	B, recto_verso, PREFIX, leaf
 C1979	PREFIX-conditional terminal-atom positional gradient (da family). Same-prefix tokens sort to systematically different line positions by terminal atom: -ir/-iin/-in early, -l late, -m strict line-final. Within-line and folio-level permutation tests both p<0.01 for 5 of 6 tokens. Length and dam-adjacency confounds excluded. Cross-references C1486 (universal -m line-final).	2	B, PREFIX, terminal, atom, da, position, gradient, C1486, C1394, C1925
 C1980	dar bimodal line-position distribution (observation). Despite mean=0.507, dar distribution is bimodal — concentrating at line edges (deciles 13.3,6.4,11.7,8.0,6.9,8.5,8.0,11.7,12.2,13.3), avoiding middle. Bimodality coefficient 0.581 (threshold 0.555). Mechanism (clause-edge marker, mixed populations, deployment artifact) not adjudicated.	3	B, PREFIX, dar, distribution, bimodal, observation, C1925, C1979
 C1981	Clause-structure hypothesis for dar bimodality REJECTED. Pre-registered test: J1 length-conditional peak tracking shows peaks are position-absolute (decile 0 + line-end), NOT scaling with line length to mark interior boundaries. J2 conditional MI(dar_pos; nearest_headless_offset \| length_bin) = 0.0000 bits, p=1.0000. dar bimodality = line-edge concentration only, not interior clause-boundary marking. C1980 observation stable but mechanism falsified.	1	B, dar, bimodality, falsification, clause-structure, C1980, C964
@@ -2480,7 +2751,7 @@ C2019	**Markov-based generation reproduces Voynich distribution center but not t
 C2020	**f67v2 is a caption-inventory reference page (fourth structurally-distinct scaffolding type).** Pre-registered hypothesis (per crazy-expert prediction) tested with 5 predictions on f67v2 (rank 2 of 224 by LM surprise, z=+4.12): (P-67-1) token length skewed short (4.90 vs corpus 5.06): PASS. (P-67-2) low PREFIX rate (56.7% vs corpus 82.4%): PASS. (P-67-3) ≥80% rare types (key prediction): 100% of f67v2's 57 unique tokens occur ≤2 times: PASS. (P-67-4) token count consistent with ~12 surrounding diagram elements (57 unique tokens): PASS. (P-67-5) not periodic (0.037 vs f57v's 0.87): PASS. 5/5 confirmed. Placement code distribution shows 36/60 = 60% C (Center) tokens consistent with per-element labels for a central rosette diagram. f67v2 represents a fourth structurally-distinct reference type alongside f57v (tabular C921), f66r (structural singleton C1992; glossary interpretation retracted 2026-05-15), f49v (apparatus C497). All four scaffolding types share ZERO common structural pattern but all serve reference/metadata function — heterogeneous reference apparatus consistent with single-author multi-content-type workshop manual.	2	LM, scaffolding, caption_inventory, f67v2, single_author_evidence, C497, C921, C1992
 C2021	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** **Voynich-to-gloss translator: C1394 atom cipher is learnable from data with 92.6% held-out accuracy + 75% novel-token generalization.** Trained small autoregressive transformer (4 layer, 128 dim, ~700K params) on 8021 unique H-track tokens paired with their Morphology.atomize() output (per C1394 HEAD+MOD*+TERM structure with semantic tags: heat, cool, do, end, yield, respond, state, arrange, bind, iterate, watch, etc.). Format: input chars + SEP + autoregressive gloss generation. Held-out val set sequence-level exact-match: 92.6% (743/802). On 8 made-up Voynichese-shaped tokens never seen during training: 6/8 correct (failures are high-e-depth counting errors with 4+ consecutive e's). Model has learned the atomization RULE not just memorized corpus mapping. Operationalizes C1394 atom cipher as queryable artifact. Foundation for line-level glossing, recipe-alignment, and structural-decoding follow-up work. Methodology contribution: structural decoding rules are recoverable from data via small supervised models.	2	LM, glosser, atom_cipher, C1394, translator, sequence_to_sequence, learnable_structure
 C2022	**Voynich has substantial learnable structure that contradicts natural-language priors.** Three independent pretrained-model probes confirm Voynich is structurally rich AND structurally distinct from natural language. (1) TinyLlama-1.1B base perplexity on H-track: 1388 (10.44 bpt) — useless. (2) After 3 epochs fine-tuning on H-track train split: 24.2 perplexity (4.60 bpt) on held-out test. **57x improvement, 56% bits-per-token drop**, exceeds pre-registered >=50% threshold. Comparable to pretrained TinyLlama's perplexity on Python code (22.4). (3) ByT5-small (char-level, no BPE) distinguishes real from token-shuffled Voynich at 67% classifier accuracy, confirming character-level structure. **Critically, real Voynich has HIGHER ByT5 perplexity (6.96 bpc) than shuffled Voynich (6.65 bpc): the structural arrangement actively contradicts NL char-level priors.** Combined evidence supports C171 (PURE_OPERATIONAL non-linguistic) + C2015 (char-level compression contrast) + C2018 (Markov plateau) jointly: Voynich is a rich constructed notation whose statistical structure is alien to natural language.	2	LM, pretrained_probe, fine_tune, ByT5, TinyLlama, C171, C2015, C2018
-C2023	**[CLASS-LAYER SCALAR-MI HALF DEMOTED Tier 2→3, PHASE_733 — see C2061/C2062]** **MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B.** Within-line shuffle null on Currier B yields opposite verdicts at two abstraction layers. At the MIDDLE-string layer: real I(middle; prev_middle) = 1.546 bits vs null 1.553 ± 0.017, z = −0.39 (at-null). At the 49-class layer: real I(class; prev_class) = 0.264 vs null 0.215 ± 0.013, **z = +3.91 (significantly above SHUFFLE null)**. **PHASE_733 5-gram null UPDATE:** the class-layer *scalar first-order MI* is 5-gram-REPRODUCIBLE — it is above composition but NOT above local character statistics. This SCALAR claim demotes to Tier 3 (joins C1727/C645 as a shuffle-survivor failing the sharper null). HOWEVER the macro-state *eigenstructure* (λ2) SURVIVES (C2061): the "genuinely sequential" claim holds at the eigenstructure level, not the scalar-MI level. Same data, two layers, two results — and within the class layer, two metrics (scalar-MI fails, eigenstructure survives). The C976/C1010 macro-state automaton at the 49-class projection carries above-Markov eigenstructure (C2061); the MIDDLE-token layer below it is co-occurrence-only. C109/C997 forbidden pairs are bag-of-line co-occurrence prohibitions: directional analysis of all 17 pairs yields 0 real adjacent occurrences in BOTH directions, 16/17 with zero same-line co-occurrence (per C1552 phantom pattern), 1/17 (`he`→`t`) with both directions symmetrically suppressed against fwd_null=0.53 / bwd_null=0.63. The "forbidden transitions" terminology applies at the 49-class projection (per C783 directional); at the MIDDLE layer, the constraint is co-occurrence-forbidden (per C1118 75.2% bidirectional). Operationalizes via shuffle-null methodology the layer distinction already implicit in C1118 / C1212 / C1024 / C1034 / C886.	2	shuffle_null, MIDDLE_layer, class_layer, two_layer, co_occurrence_vs_transition, C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552
+C2023	**[Scope 2026-09-28 (v7.26): the row stays Tier 2 for its two within-line-shuffle measurements: MIDDLE layer at null (z = −0.39) and class-layer scalar MI above the shuffle null (z = +3.91). The reading 'class layer genuinely sequential' from the scalar MI is Tier 3 (5-gram-reproducible, PHASE_733); the surviving sequential claim is C2061's eigenstructure (pending an N5 re-check, C2066). The forbidden-pair paragraph is superseded: no prohibition layer remains (C2081) and the class-level reading is demoted (C783).]** **[PHASE_733: the class-layer scalar-MI READING moved to Tier 3 — see C2061/C2062; the row's Tier 2 covers its measurements only]** **MIDDLE-Layer Sequential Null vs Class-Layer Sequential Structure in Currier B.** Within-line shuffle null on Currier B yields opposite verdicts at two abstraction layers. At the MIDDLE-string layer: real I(middle; prev_middle) = 1.546 bits vs null 1.553 ± 0.017, z = −0.39 (at-null). At the 49-class layer: real I(class; prev_class) = 0.264 vs null 0.215 ± 0.013, **z = +3.91 (significantly above SHUFFLE null)**. **PHASE_733 5-gram null UPDATE:** the class-layer *scalar first-order MI* is 5-gram-REPRODUCIBLE — it is above composition but NOT above local character statistics. This SCALAR claim demotes to Tier 3 (joins C1727/C645 as a shuffle-survivor failing the sharper null). HOWEVER the macro-state *eigenstructure* (λ2) SURVIVES (C2061): the "genuinely sequential" claim holds at the eigenstructure level, not the scalar-MI level. Same data, two layers, two results — and within the class layer, two metrics (scalar-MI fails, eigenstructure survives). The C976/C1010 macro-state automaton at the 49-class projection carries above-Markov eigenstructure (C2061); the MIDDLE-token layer below it is co-occurrence-only. C109/C997 forbidden pairs are bag-of-line co-occurrence prohibitions: directional analysis of all 17 pairs yields 0 real adjacent occurrences in BOTH directions, 16/17 with zero same-line co-occurrence (per C1552 phantom pattern), 1/17 (`he`→`t`) with both directions symmetrically suppressed against fwd_null=0.53 / bwd_null=0.63. The "forbidden transitions" terminology applies at the 49-class projection (per C783 directional); at the MIDDLE layer, the constraint is co-occurrence-forbidden (per C1118 75.2% bidirectional). Operationalizes via shuffle-null methodology the layer distinction already implicit in C1118 / C1212 / C1024 / C1034 / C886.	2	shuffle_null, MIDDLE_layer, class_layer, two_layer, co_occurrence_vs_transition, C109, C627, C783, C886, C391, C976, C996, C1010, C1011, C1019, C1024, C1025, C1031, C1032, C1034, C1071, C1118, C1212, C1552
 C2024	**Bio Section Carries Marginal Residual MIDDLE-Layer Sequential Structure in Currier B; Other Sections at-or-below Null.** Per-section within-line shuffle null on Currier B yields heterogeneous signatures. Section B (Bio, f74-f84 region): z = +1.49 (real I=1.137, null=1.104, excess +0.034). Section H (Herbal_B): z = −2.70. Section S (Stars/Recipe_B): z = −1.33. Section C (Cosmological foldouts, B-language text): z = −1.17. Section T (Top/intro B-tokens): z = −0.91. **Bio is the only B-section with positive residual sequential excess at the MIDDLE layer.** The whole-of-B at-null result (C2023, z = −0.39) is an average of Bio's marginal positive signal and four near-null-or-negative sections. Confirms C1048's prediction that BIO carries the strongest residual sequential structure in B. Section-level heterogeneity in residual sequential signal is consistent with C1047 (section-dynamics interaction absent at macro level but present at residual level) and C1055 (M2 near-section-decomposable).	2	shuffle_null, section_stratified, Bio_residual, B_section, MIDDLE_layer, C1047, C1048, C1055, C1085, C1086, C1116, C1404, C2023
 C2025	**Currier A Class-Layer Shuffle Null at-null Confirms C225 via Independent Methodology.** Class-layer within-line shuffle null on Currier A yields real I(class; prev_class) = 0.707 bits vs null 0.698 ± 0.023, z = +0.37 (at-null). Confirms C225's "A Transition Validity = 2.1%" claim via independent shuffle-null methodology — A has minimal class-Markov transition structure. C346's reported "sequential coherence" (1.20x) therefore lives at a different organizational level than class-Markov adjacency: it must be record-level / positional / compositional (C233 LINE_ATOMIC, C240 NON_SEQUENTIAL_CATEGORICAL_REGISTRY, C422 DA articulation, C475/C729 PP co-occurrence compliance, C964 boundary-constrained free-interior). Combined with A's MIDDLE-layer shuffle-null excess of z = −5.09 (the most strongly negative across subsets — entirely sparsity-driven exclusion of unrealizable pairs), A is bag-of-line at both class and MIDDLE layers despite C346's within-record coherence. Methodological strengthening of C225: shuffle-null is a stricter test than the 2.1% validity threshold count.	2	shuffle_null, Currier_A, class_layer, sequential_coherence_locus, C225_corroboration, C225, C230, C231, C233, C240, C346, C422, C475, C729, C964
 C2026	**Antidotarium Nicolai 8D Matcher Baseline — Section S Source-Matching Not Closed by Acquisition.** Featurized 124 named Antidotarium recipes using Latin keyword patterns (ignis/calefac/bulli for k; videre/color/consistency for h; donec/dum/sufficit for t; addatur/agitando for e) substituting for English in the Brunschwig compound-matcher featurizer; ran through TUNED_DIMS residual matcher. Result: no Antidotarium recipe matches any Section S folio under d=1.0 (min Section S distance = 1.375 on f106v↔YEra; min anywhere = 1.058). Top-1 attractor degenerates to f34v (Section H, REGIME_3, 115 tokens) for 82 of 124 recipes (66%). **Same f34v collapse observed for two control corpora**: Codicillus (19 PL-companion alchemy segments, in-domain): 11/19 default to f34v, no ratios > 1.30; Brunschwig 1512 (20 validated compound recipes, in-domain): 12/20 default to f34v, no ratios > 1.30. f34v universal attractor consistent with C1366 (top-5 least-anomalous folio = f34v 0.71 / f106r 0.67 / f106v 0.65 / f31r 0.62 / f66v 0.62) — a geometric centrality property of the V-side feature space, not a corpus signal. **Top-1 ratio-confidence mode of the 8D matcher is therefore not a validated evaluation method**; validated C1971 matches (e.g., C1943 f106v↔Ch40M d=0.933, C1990 f75r↔Ch.28) use hypothesis-driven distance gating instead. Antidotarium Nicolai itself is over-curated 12th-c. Salernitan teaching canon; practitioner-use sources (Mesue's Grabadin, Antidotarium Magnum) remain candidate Section S source classes per `project_section_s_source_genre_gap.md`. Acquisition closes the corpus-availability gap for Nicolai specifically but does not close the Section S source-matching gap.	2	matcher_baseline, Section_S_source_gap, top1_degeneracy, geometric_centrality, C1366, C1971, C1943, C1955, C1990, C1995, Antidotarium_Nicolai, project_section_s_source_genre_gap
@@ -2560,72 +2831,72 @@ F-A-007	Forbidden-Zone Attraction	F1	A	NULL	C281	in: fits_currier_a
 F-A-008	Repetition as Relational Stabilizer	F1	A	INVALIDATED	(none - artifact)	in: fits_currier_a
 F-A-009	Comparability Window	F2	A	SUCCESS	C424	in: fits_currier_a
 F-B-001	LINK Operator as Sustained Monitoring Interval	F2	B	SUPERSEDED	C366, C609, C190 | **Superseded by:** C1174	in: fits_currier_b
-F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600	in: fits_currier_b
+F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600 [status v7.25: C600 demoted to Tier 3 (5-gram-reproducible routing); C601's "hazard exclusion" rests on the withdrawn hazard layer (C783 demoted, C2060, C2081)]	in: fits_currier_b
 F-B-003	Pre-Operational Configuration via A→AZC→B Pipeline	F2	B	SUCCESS	C473, C506, C468	in: fits_currier_b
 F-B-004	Lane Hysteresis Control Model	F2	B	SUCCESS	C643, C549, C577, C608	in: fits_currier_b
 F-B-005	PP-Lane MIDDLE Discrimination	F2	B	SUCCESS	C646, C576, C642	in: fits_currier_b
-F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521	in: fits_currier_b
+F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521 [status v7.25: C645's post-hazard mechanism retracted to Tier 4 (Markov-trivial); C601 rests on the withdrawn hazard layer (C2081); C521's e→h zero is a spelling identity (PHASE_754)]	in: fits_currier_b
 F-B-007	Extensible Atom Scaling: Intensity and Duration Dimensions	F3	B	CONSISTENT	C1197, C1204, C1205, C1242, C1244	in: fits_currier_b
 F-B-008	Two-Channel Thermal Architecture	F3	B	SUCCESS	C647, C601, C1207	in: fits_currier_b
 F-B-009	Overshoot-Correct Cycling	F3	B	SUCCESS	C643, C647	in: fits_currier_b
-F-B-010	REGIME Token Profile Discrimination	F3	B	SUCCESS	C643, REGIME system	in: fits_currier_b
-F-B-012	E-Compound Cooling Taxonomy	F4	B	SUCCESS	C1197, REGIME system	in: fits_currier_b
+F-B-010	REGIME Token Profile Discrimination	F3	B	SUCCESS	C643, REGIME system [status v7.25: REGIME as 4 crisp classes and REGIME = fire degree retired (C1712, C2070)]	in: fits_currier_b
+F-B-012	E-Compound Cooling Taxonomy	F4	B	SUCCESS	C1197, REGIME system [status v7.25: REGIME = fire degree retired (C1712, C2070)]	in: fits_currier_b
 F-AZC-001	Placement Prediction Model	F4	AZC	NEGATIVE	C466-C467	in: fits_azc
-F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467	in: fits_azc
-F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
+F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467 [status v7.25: the R1<R2<R3 ordering is the serialization artifact retracted with C434 (PHASE_742)]	in: fits_azc
+F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467 [status v7.25: C433–C435 retracted (Tier 1, PHASE_742: transcriber locus-chunking artifact); C436's self-transition half retracted]	in: fits_azc
 F-AZC-003	Family Membership Classifier	F4	AZC	PARTIAL	C466	in: fits_azc
-F-AZC-004	Option-Space Compression	F2	AZC	SUCCESS	C463-C465	in: fits_azc
+F-AZC-004	Option-Space Compression	F2	AZC	SUCCESS	C463-C465 [status, registry correction: C463–C465 were never registered — candidates in phases/AZC_constraint_hunting; this fit has no registered support]	in: fits_azc
 F-AZC-006	Boundary Airlock Profile	F4	AZC	INCONCLUSIVE	(pending data)	in: fits_azc
-F-AZC-007	Position-Conditioned Escape Suppression	F2	AZC	SUCCESS	C463-C465	in: fits_azc
+F-AZC-007	Position-Conditioned Escape Suppression	F2	AZC	SUCCESS	C463-C465 [status: C463–C465 were never registered; the Zodiac R-position and S-boundary readings rest on retracted C434/C435 (PHASE_742)]	in: fits_azc
 F-AZC-008	Boundary Asymmetry (Semantic Hypothesis Test)	F3	AZC	PARTIAL	(exploratory)	in: fits_azc
 F-AZC-009	Local vs Global Reference Partition (FINAL SEMANTIC TEST)	F4	AZC	DISCARDED	(none - frame rejected)	in: fits_azc
 F-AZC-010	Cross-System Alignment by Family (CALENDRIC STRESS TEST)	F4	AZC	FALSIFIED	(strengthens null hypothesis)	in: fits_azc
 F-AZC-011	Folio Threading Analysis	F2	AZC	SUCCESS	C318, C321, C430, C436	in: fits_azc
 F-AZC-012	Orientation Basis Coverage	F2	AZC	SUCCESS	C301, C318, C326, C343	in: fits_azc
-F-AZC-013	Orientation Posture Differentiation	F2	AZC	SUCCESS	C436, C457, C458, C460	in: fits_azc
+F-AZC-013	Orientation Posture Differentiation	F2	AZC	SUCCESS	C436, C457, C458, C460 [status v7.25: C458 demoted to Tier 3 (frequency shadow); C436's self-transition half retracted (PHASE_742)]	in: fits_azc
 F-AZC-015	Windowed AZC Activation Trace	F2	AZC	SUCCESS	C440, C441-C444	in: fits_azc
-F-AZC-016	AZC->B Constraint Fit Validation	F2	AZC	SUCCESS	C468, C469, C470	in: fits_azc
+F-AZC-016	AZC->B Constraint Fit Validation	F2	AZC	SUCCESS	C468, C469, C470 [status v7.25: C470 demoted to Tier 3 — frequency carryover (partial rho 0.062 once B frequency is controlled); C470's source is this fit's Test 1]	in: fits_azc
 F-AZC-017	Zodiac Internal Stratification Test (NEGATIVE)	F4	AZC	FALSIFIED	C431, C436	in: fits_azc
 F-AZC-018	A/C Internal Stratification Test (NEGATIVE)	F4	AZC	FALSIFIED	C430, C436	in: fits_azc
-F-AZC-019	A/C Incompatibility Density Test (POSITIVE)	F2	AZC	SUCCESS	C430, C475	in: fits_azc
-F-ECR-001	Material-Class Identification	F3	GLOBAL	SUCCESS	C109-C114, C232	in: fits_global
-F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216	in: fits_global
+F-AZC-019	A/C Incompatibility Density Test (POSITIVE)	F2	AZC	SUCCESS	C430, C475 [status v7.25: C475 demoted to Tier 3 — its "illegal pairs" measured sparsity, not prohibition]	in: fits_azc
+F-ECR-001	Material-Class Identification	F3	GLOBAL	SUCCESS	C109-C114, C232 [status v7.25: C109's 5 hazard classes were imposed by keyword-matching (C2060), class level demoted (C783), zeros reduce (C2081); C113, C114 never registered]	in: fits_global
+F-ECR-002	Apparatus-Role Identification	F3	GLOBAL	SUCCESS	C085-C108, C171, C216 [status v7.25: kernel superseded (C089 → C2082; C085, C103–C105 demoted to Tier 3); closed-loop C171 and hazard model C216 demoted to Tier 3; most of C086–C108 never registered]	in: fits_global
 F-ECR-003	Decision-State Semantics	F3	GLOBAL	SUCCESS	C384, C404-C405, C459-C460	in: fits_global
-F-BRU-001	Brunschwig Product Type Prediction (Blind)	F2	A	SUCCESS	C475, C476	in: fits_brunschwig
-F-BRU-002	Degree-REGIME Boundary Asymmetry	F3	B	SUCCESS	C179-C185, C458	in: fits_brunschwig
-F-BRU-003	Property-Based Generator Rejection	F2	A	NEGATIVE	C475, C476	in: fits_brunschwig
-F-BRU-004	A-Register Cluster Stability	F2	A	SUCCESS	C481	in: fits_brunschwig
-F-BRU-005	MIDDLE Hierarchical Structure	F2	A	SUCCESS	C383, C475	in: fits_brunschwig
+F-BRU-001	Brunschwig Product Type Prediction (Blind)	F2	A	SUCCESS	C475, C476 [status v7.25: C475 demoted to Tier 3 (sparsity denominator); C476 retracted (broken baseline, dead)]	in: fits_brunschwig
+F-BRU-002	Degree-REGIME Boundary Asymmetry	F3	B	SUCCESS	C179-C185, C458 [status v7.25: REGIME = fire degree retired (C1712, C2070); C458 demoted to Tier 3 (frequency shadow)]	in: fits_brunschwig
+F-BRU-003	Property-Based Generator Rejection	F2	A	NEGATIVE	C475, C476 [status v7.25: C475 demoted to Tier 3 (sparsity denominator); C476 retracted (broken baseline, dead)]	in: fits_brunschwig
+F-BRU-004	A-Register Cluster Stability	F2	A	SUCCESS	C481 [status: C481 retracted 2026-05-19 (Tier 1 — value does not reproduce, direction wrong); this fit's only support is retracted]	in: fits_brunschwig
+F-BRU-005	MIDDLE Hierarchical Structure	F2	A	SUCCESS	C383, C475 [status v7.25: C475 demoted to Tier 3 (sparsity denominator)]	in: fits_brunschwig
 F-BRU-006	Closure × Product Affordance Correlation	F3	A	SUCCESS	C233, C422 (closure/DA structure)	in: fits_brunschwig
-F-BRU-007	SLI-Constraint Substitution Model	F2	B	SUCCESS	C458, C477	in: fits_brunschwig
+F-BRU-007	SLI-Constraint Substitution Model	F2	B	SUCCESS	C458, C477 [status v7.25: C458 demoted to Tier 3 (frequency shadow); SLI is built from hazard and LINK densities, both withdrawn constructs (C2081, C1174)]	in: fits_brunschwig
 F-BRU-008	Zone Affinity Differentiation	F2	B	SUCCESS	C443 (Positional Escape Gradient)	in: fits_brunschwig
-F-BRU-009	Zone-Modality Addressing (Two-Stage Model)	F3	B	CONFIRMED	C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp)	in: fits_brunschwig
+F-BRU-009	Zone-Modality Addressing (Two-Stage Model)	F3	B	CONFIRMED	C477 (HT), C443 (Escape Gradient), C458 (Execution Design Clamp) [status v7.25: C458 demoted to Tier 3 (frequency shadow); REGIME as crisp classes retired (C1712, C2070)]	in: fits_brunschwig
 F-BRU-010	Folio Position Procedural Phase Mapping	F3	B	PARTIAL	C676 (Morphological Parameterization Trajectory), C668 (Lane Balance Trajectory)	in: fits_brunschwig
 F-BRU-011	Three-Tier MIDDLE Operational Structure	F2	B	CONFIRMED	C423 (MIDDLE Census), F-BRU-005 (MIDDLE Hierarchy)	in: fits_brunschwig
 F-BRU-012	Preparation MIDDLE Operation Mapping	F3	B	SUPPORTED	F-BRU-011 (Three-Tier Structure)	in: fits_brunschwig
 F-BRU-013	Extended Operation MIDDLE Differentiation (ke vs kch)	F3	B	SUPPORTED	F-BRU-011 (Three-Tier Structure), F-BRU-012 (Preparation Mapping)	in: fits_brunschwig
 F-BRU-014	Vowel Primitive Suffix Saturation	F2	GLOBAL	CONFIRMED	C906 (Vowel Primitive Suffix Saturation), C267 (Compositional Morphology), C510-C513 (Sub-Component Grammar)	in: fits_brunschwig
-F-BRU-015	Procedural Dimension Independence	F2	B	CONFIRMED	F-BRU-011 (Three-Tier Structure), BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS	in: fits_brunschwig
-F-BRU-016	REGIME Procedural Differentiation	F2	B	CONFIRMED	C494 (REGIME_4 Precision Axis), F-BRU-015 (Procedural Independence)	in: fits_brunschwig
-F-BRU-017	REGIME_4 Sustained Equilibration Mechanism	F3	B	SUPPORTED	C494 (REGIME_4 Precision Axis), F-BRU-013 (ke vs kch)	in: fits_brunschwig
-F-BRU-018	Root Illustration Processing Correlation (Tier 4 External Anchor)	F4	A	CONFIRMED	C883 (Handling Distribution Alignment), F-BRU-012 (Preparation Mapping)	in: fits_brunschwig
-F-BRU-019	Delicate Plant Material as Unmarked Default	F3	A	SUPPORTED	F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence)	in: fits_brunschwig
-F-BRU-020	Output Category Vocabulary Signatures	F4	B	CONFIRMED	F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis)	in: fits_brunschwig
+F-BRU-015	Procedural Dimension Independence	F2	B	CONFIRMED	F-BRU-011 (Three-Tier Structure), BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS [status v7.25: phase label only; the closed-loop reading is Tier 3 (C171, all four legs withdrawn)]	in: fits_brunschwig
+F-BRU-016	REGIME Procedural Differentiation	F2	B	CONFIRMED	C494 (REGIME_4 Precision Axis), F-BRU-015 (Procedural Independence) [status v7.25: REGIME as 4 crisp classes retired (C1712, C2070)]	in: fits_brunschwig
+F-BRU-017	REGIME_4 Sustained Equilibration Mechanism	F3	B	SUPPORTED	C494 (REGIME_4 Precision Axis), F-BRU-013 (ke vs kch) [status v7.25: REGIME_4 = fire degree 4 rests on REGIME = fire degree, retired (C1712, C2070)]	in: fits_brunschwig
+F-BRU-018	Root Illustration Processing Correlation (Tier 4 External Anchor)	F4	A	CONFIRMED	C883 (Handling Distribution Alignment), F-BRU-012 (Preparation Mapping) [status: C883 is Tier 3 (registered as speculative, not demoted)]	in: fits_brunschwig
+F-BRU-019	Delicate Plant Material as Unmarked Default	F3	A	SUPPORTED	F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence) [status: C884 is Tier 3 (registered as speculative, not demoted)]	in: fits_brunschwig
+F-BRU-020	Output Category Vocabulary Signatures	F4	B	CONFIRMED	F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis) [status v7.25: REGIME as crisp classes and REGIME = fire degree / product type retired (C1712, C2070)]	in: fits_brunschwig
 F-BRU-021	Controlled Variable Identification (Temperature / Thermal State)	F3	B	SUCCESS	C976 (6-State Topology), C978 (Hub-and-Spoke), C979 (REGIME Modulates Weights), C980 (Free Variation Envelope)	in: fits_brunschwig
-F-BRU-022	Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)	F3	B	NEGATIVE	C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing)	in: fits_brunschwig
-F-BRU-023	Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)	F4	B	THERMODYNAMIC_COHERENCE	C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers)	in: fits_brunschwig
+F-BRU-022	Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)	F3	B	NEGATIVE	C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing) [status: C883 is Tier 3 (registered as speculative, not demoted)]	in: fits_brunschwig
+F-BRU-023	Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)	F4	B	THERMODYNAMIC_COHERENCE	C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers) [status v7.25: C783 demoted to Tier 3; C109's 5 classes imposed by keyword-matching (C2060); zero bigrams reduce (C2081) — hazard layer withdrawn]	in: fits_brunschwig
 F-BRU-024	PP MIDDLE Extension Validation (NEGATIVE)	F4	B	EXTENSION_UNSUPPORTED	C498 (RI/PP Bifurcation), C267 (Compositional Morphology), C995-C1000 (Affordance Bins)	in: fits_brunschwig
 F-BRU-025	Gloss Structural Validation (Adversarial + Distributional)	F4	B	GLOSS_NOT_CONSTRAINED	(negative — forbidden transitions too few for category-level adversarial test; distributional context weakly aligns)	in: fits_brunschwig
-F-BRU-026	Gloss Adversarial Validation (PREFIX-Domain + Mantel)	F4	B	DOMAIN_VALIDATED_MANTEL_CIRCULAR	C911 (PREFIX-MIDDLE Selectivity), C601 (QO Hazard Exclusion), C997 (Safety Buffers), C995 (Affordance Bins)	in: fits_brunschwig
-F-BRU-027	Variance Architecture Alignment (Process-Constrained / Output-Free)	F3	B	VARIANCE_ARCHITECTURE_ALIGNED	C458 (design asymmetry: hazard clamped, recovery free), C980 (66.3% free variation envelope)	in: fits_brunschwig
-F-BRU-028	Output Parameter REGIME Gradient Mapping (GRADIENT INVERTED)	F3	B	GRADIENT_INVERTED	C458 (design asymmetry), C980 (free variation envelope), C1035 (irreducible residual), C494 (REGIME_4 precision axis)	in: fits_brunschwig
-F-BRU-029	Semantic Boundary Probe (Three-Path)	F4	B	PARTIAL_EXTENSION	C997 (safety buffer architecture), F-BRU-023 (thermodynamic coherence), C494 (REGIME_4 precision axis)	in: fits_brunschwig
+F-BRU-026	Gloss Adversarial Validation (PREFIX-Domain + Mantel)	F4	B	DOMAIN_VALIDATED_MANTEL_CIRCULAR	C911 (PREFIX-MIDDLE Selectivity), C601 (QO Hazard Exclusion), C997 (Safety Buffers) [status v7.25: C601/C997 hazard readings rest on the withdrawn hazard layer (C783 demoted, C2060, C2081)], C995 (Affordance Bins)	in: fits_brunschwig
+F-BRU-027	Variance Architecture Alignment (Process-Constrained / Output-Free)	F3	B	VARIANCE_ARCHITECTURE_ALIGNED	C458 (design asymmetry: hazard clamped, recovery free) [status v7.25: C458 demoted to Tier 3 — frequency shadow], C980 (66.3% free variation envelope)	in: fits_brunschwig
+F-BRU-028	Output Parameter REGIME Gradient Mapping (GRADIENT INVERTED)	F3	B	GRADIENT_INVERTED	C458 (design asymmetry) [status v7.25: demoted to Tier 3 — frequency shadow], C980 (free variation envelope), C1035 (irreducible residual), C494 (REGIME_4 precision axis)	in: fits_brunschwig
+F-BRU-029	Semantic Boundary Probe (Three-Path)	F4	B	PARTIAL_EXTENSION	C997 (safety buffer architecture), F-BRU-023 (thermodynamic coherence), C494 (REGIME_4 precision axis) [status v7.25: C997 and F-BRU-023 rest on the withdrawn hazard layer (C783 demoted, C2060, C2081)]	in: fits_brunschwig
 F-BRU-030	MIDPROCESS Absence Characterization	F3	B	MIDPROCESS_STRUCTURALLY_ABSENT	C1056 (MIDPROCESS structural absence), F-BRU-029 (Path C closure)	in: fits_brunschwig
 F-BRU-031	Modern Distillation Dimensional Comparison	F3	B	MODERN_CLOSER_TO_VOYNICH	F-BRU-030 (MIDPROCESS absence characterization), C1056 (MIDPROCESS structural absence)	in: fits_brunschwig
-F-BRU-032	KE-Family Parametric Differentiation	F2	B	PARAMETRIC_DIFFERENTIATION	C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning)	in: fits_brunschwig
+F-BRU-032	KE-Family Parametric Differentiation	F2	B	PARAMETRIC_DIFFERENTIATION	C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning) [status v7.25: C1225 rescoped — segmentation artifact of the pre-C1957 parser; "e-depth is a parametric axis" struck (PHASE_758)]	in: fits_brunschwig
 F-BRU-033	Iterative Extraction Cycling Within Paragraphs	F3	B	ITERATIVE_CYCLING_SUPPORTED	C1227 (FL cross-line reset clustering), C1228 (PREFIX channel switching), C1229 (alternating suffix modes)	in: fits_brunschwig
 F-BRU-034	Extraction Cycling Mode Differentiation	F3	B	CYCLING_MODES_FUNCTIONALLY_GROUNDED	C1230 (Mode MIDDLE differentiation), C1231 (Universal suffix modes), C1232 (Tail product signatures)	in: fits_brunschwig
-F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes), C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility), C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry), C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)	in: fits_rupescissa
+F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes) [5 classes imposed by keyword-matching, C2060; zero bigrams reduce, C2081], C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility) [demoted to Tier 3 — sparsity denominator], C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry) [demoted to Tier 3 — frequency shadow], C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)	in: fits_rupescissa
 
 ---
 
@@ -2633,7 +2904,21 @@ F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.74 (post-5-gram-audit consolidation, PHASE_729–736)
+
+## Status (v7.25, 2026-09-28)
+
+> **Read this first.** This document holds Tier 3–4 readings only; nothing in it is structure. Authority order: `CONSTRAINT_TABLE.txt` (generated) > `CLAIMS/INDEX.md` rows > `SYSTEM/STATUS_BRIEF.md` > this file.
+  - kernel k/h/e as the core of the grammar: C089 superseded by C2082 (at glyph level k carries no routing; the cross-token signal is word-ending routing); C085, C103–C105 at Tier 3;
+  - closed-loop control: C171 at Tier 3, all four legs withdrawn; C120 at Tier 3;
+  - LINK as a monitoring operator: C609 (true density 13.2%), C1174 (morphological artifact of `ol`);
+  - the hazard layer (17 forbidden transitions, 5 hazard classes, "safety architecture"): C783 demoted, C2060 taxonomy imposed, C2081 zero bigrams reduce to known effects (C957 superseded);
+  - convergence to STATE-C / MONOSTATE: occupancy only (C074), C1401–C1403;
+  - design clamp / recovery freedom (C458, frequency shadow); MIDDLE incompatibility percentages (C475, sparsity); hub savings (C476, retracted);
+  - Testamentum chapter ↔ folio matching: no correspondence signal (C2052, PHASE_762; 20 rows moved to Tier 3).
+- **Also withdrawn as evidence (strategic review §5 "retire" list):** C157 "uniquely compatible (100%)", the Puff–Voynich "83:83 isomorphism" and "19/20 full procedural alignment" (§X), REGIME = fire degree, the Tier-4 etymology tables, the 8-category taxonomy as a unit of analysis (keyword-imposed, C2069), and closure language (closed/saturation banners, "FULLY ANSWERED", "May Never Be Answerable").
+
+---
+
 
 ---
 
@@ -2651,7 +2936,7 @@ This document consolidates all Tier 3-4 interpretations into a single reference.
 
 > Currier B is written in a single, compact token grammar: 49 classes covering 69.5% of its tokens, organised by line with positional zones and word-boundary glyph coupling, and applied in folio units that share the grammar while carrying their own vocabulary. This structure is not reproduced by copy-and-modify generation or by the Naibbe cipher as published.
 
-**Working interpretation (Tier 3, this document's starting point):** The grammar is read as a family of closed-loop, kernel-centric control programs. (Until 2026-09-28 this was the Tier-0 sentence; its kernel and closed-loop supports were withdrawn on re-check. The glyph-level kernel re-test, PHASE_763/C2082, returned MIXED: no kernel measurement; the cross-token signal is word-ending routing.)
+**Working interpretation (Tier 3, this document's starting point):** The grammar is read as a family of closed-loop, kernel-centric control programs. (Until 2026-09-28 this was the Tier-0 sentence; its kernel and closed-loop supports were withdrawn on re-check. The glyph-level kernel re-test, PHASE_763/C2082, returned MIXED: no kernel measurement; the cross-token signal is word-ending routing.) **[v7.25 wording (STATUS_BRIEF §1): procedural notation, a family of programs for a process; no current measurement distinguishes it from other constrained notations.]**
 
 This structural finding is FROZEN. The interpretations below attempt to explain what this structure might have been FOR.
 
@@ -2659,7 +2944,6 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 
 ## Zodiac / AZC: Arrangement Metalayer (HUMAN-SIGNED-OFF, PHASE_747, 2026-06-03)
-
 > **Human-cleared Tier-3 interpretation** (echo-class gate cleared by human sign-off). Full record: `SPECULATIVE/zodiac_arrangement_metalayer.md`.
 
 
@@ -2676,7 +2960,7 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 
   - **Genuinely above-char-Markov:** ary line-final termination (C562, z=10.25) — a suffix/terminal categorical-exclusion claim, *immune* to the window-blindness artifact (it is not prefix-routing).
-  - **Real token-order structure, above-char-Markov status INDETERMINATE (wrong instrument):** qo→ch/sh interleaving (C549) and the correction lanes (C2056). PHASE_738 resolved the PHASE_737 worry: qo→ch/sh is **decisively above composition** (within-line token-shuffle null, the *correct* token-level instrument, z 5.9–7.9, p=0.000, length-invariant) — it is real token-order structure, NOT a window-blindness artifact and NOT composition shadow. BUT its "above-char-Markov" status cannot be cleanly established: the char-5-gram is **the wrong instrument** for a token-adjacency/prefix-routing claim — low order is blind to a long source token's prefix at the boundary (PHASE_737), suffix-sentinel controls are ungeneratable (PHASE_738 Test E: 28% fidelity for long tokens), and high order overfits. The standard-5-gram "survival" was windowing-inflated; the residual that survives is at the noise floor. **C549/C2056 are vindicated as real token-order structure on the token-shuffle null, NOT on the char-5-gram.** C2056 re-tested lane-by-lane under the token-shuffle null is **revised from a 5-lane to a 4-lane family**: qok→ok/ot/ch/ok-e confirmed above composition (z=2.4–8.1), but qok→sh (passive monitor) demotes (z=1.97, fails Bonferroni; +1.0pp, under its own <5pp falsification clause). The architectural unit (post-heat correction window) stands; the passive-monitor lane drops out. daiin→CHSH (C2064, CC-class) stays separate and ambiguous.
+  - **Real token-order structure, above-char-Markov status INDETERMINATE (wrong instrument):** qo→ch/sh interleaving (C549) and the correction lanes (C2056 [registry correction: only qok→ok and qok→oke are confirmed; qok→ot marginal, qok→ch subsumed by C549]). PHASE_738 resolved the PHASE_737 worry: qo→ch/sh is **decisively above composition** (within-line token-shuffle null, the *correct* token-level instrument, z 5.9–7.9, p=0.000, length-invariant) — it is real token-order structure, NOT a window-blindness artifact and NOT composition shadow. BUT its "above-char-Markov" status cannot be cleanly established: the char-5-gram is **the wrong instrument** for a token-adjacency/prefix-routing claim — low order is blind to a long source token's prefix at the boundary (PHASE_737), suffix-sentinel controls are ungeneratable (PHASE_738 Test E: 28% fidelity for long tokens), and high order overfits. The standard-5-gram "survival" was windowing-inflated; the residual that survives is at the noise floor. **C549/C2056 are vindicated as real token-order structure on the token-shuffle null, NOT on the char-5-gram** (C2056 per registry correction: two lanes confirmed, qok→ok and qok→oke; the "4-lane" count below is stale). C2056 re-tested lane-by-lane under the token-shuffle null is **revised from a 5-lane to a 4-lane family**: qok→ok/ot/ch/ok-e confirmed above composition (z=2.4–8.1), but qok→sh (passive monitor) demotes (z=1.97, fails Bonferroni; +1.0pp, under its own <5pp falsification clause). The architectural unit (post-heat correction window) stands; the passive-monitor lane drops out. daiin→CHSH (C2064, CC-class) stays separate and ambiguous.
 - **Distributed macro-state eigenstructure** — the slow-mixing second eigenvalue λ2 of the **raw 49-class** transition matrix (C2061, per-synth-own-shuffle p=0.000), distributed across ~29 classes (C2065). This is the genuine global organization the 6-state automaton projects from; the raw-49 operator carries above-Markov eigenstructure. **The 6×6 spectral gap itself (C978) was NOT re-measured here and is borderline under the 5-gram null — C978 survives only as scope-corrected (eigenstructure yes, designed-dwell no).**
 
 
@@ -2694,7 +2978,7 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 All interpretations in this document respect these constraints. Individual sections may add section-specific caveats but these five apply universally:
 
-1. **Semantic ceiling** (C171, C120): No token-level meaning or translation is recoverable from internal analysis alone.
+1. **Semantic ceiling** (C171, C120 [both demoted to Tier 3 2026-09-28; cited only for the referent wall, which is kept as a working bound]): No token-level meaning or translation is recoverable from internal analysis alone.
 2. **No entry-level A-B coupling** (C384): No mapping from individual A entries to individual B tokens exists.
 3. **No substance identification**: Specific plants, materials, or substances cannot be identified from the text.
 4. **No Brunschwig equivalence**: Voynich is not a cipher for Brunschwig; no folio-to-passage mapping exists.
@@ -2708,18 +2992,19 @@ All interpretations in this document respect these constraints. Individual secti
 
 
 
+
 ---
 
 
 ## Architectural Layering: Finite-Grammar vs. Special-Case Notation
 
 - Token morphology (HEAD+MOD*+TERM atom architecture, C1394)
-- Forbidden transitions (17 directional; the 5-class grouping was keyword-imposed, not clustered — C2060)
+- Forbidden transitions (17 directional; the 5-class grouping was keyword-imposed, not clustered — C2060) **[withdrawn v7.25: the zero bigrams reduce to known effects, C2081]**
 - Block-level paragraph specialization (C1961)
 - Within-line interleaving (C1964)
 
 
-- Cycle-counting idiom on f75r (C1965) — used for operationally-non-derivable iteration counts; does not generalize because most recipes don't need it
+- Cycle-counting idiom on f75r (C1965 [source correction 2026-09-27: III.19 reads "four times, otherwise nine times"; the two-phase ×4-then-×9 premise is void]) — used for operationally-non-derivable iteration counts; does not generalize because most recipes don't need it
 
 
 
@@ -2736,6 +3021,8 @@ All interpretations in this document respect these constraints. Individual secti
 > **The manuscript encodes the operational worldview of a controlled apparatus, not the descriptive worldview of a human observer.**
 
 All recoverable semantics are those available to the apparatus and its control logic: states, transitions, risks, recoveries. All referential meaning (materials, plants, devices) is supplied externally by trained human operators.
+
+**[Status v7.25: open Tier-3 hypothesis. Its k/e/h "kernel" families and its risk/recovery vocabulary rest on withdrawn supports (C089 superseded by C2082; hazard layer and C458 withdrawn); see SYSTEM/STATUS_BRIEF.md §3.]**
 
 ### Token Decomposition (Complete)
 
@@ -2887,7 +3174,8 @@ TOKEN = PREFIX   → operation domain selector (selects allowed MIDDLE family)
 
 
 
-> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative external-language mappings. Do NOT use these for structural answers. Use only when the user explicitly asks about etymology or external-language alignment. Structural role is determined by grammar position (C121), not word meaning (C171, C120).
+
+> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative external-language mappings. Do NOT use these for structural answers. Use only when the user explicitly asks about etymology or external-language alignment. Structural role is determined by grammar position (C121), not word meaning (C119; C171 and C120 were demoted to Tier 3 in the v7.24 Tier-0 restatement).
 
 | Kernel | Function | Abbreviation | Meaning | Confidence |
 |--------|----------|-------------|---------|------------|
@@ -2896,7 +3184,7 @@ TOKEN = PREFIX   → operation domain selector (selects allowed MIDDLE family)
 
 
 
-> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative external-language mappings. Do NOT use these for structural answers. Use only when the user explicitly asks about etymology or external-language alignment. Structural role is determined by grammar position (C121), not word meaning (C171, C120).
+> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative external-language mappings. Do NOT use these for structural answers. Use only when the user explicitly asks about etymology or external-language alignment. Structural role is determined by grammar position (C121), not word meaning (C119; C171 and C120 were demoted to Tier 3 in the v7.24 Tier-0 restatement).
 
 | Element | Position | Abbreviation | Meaning | Confidence |
 |---------|----------|-------------|---------|------------|
@@ -2905,7 +3193,7 @@ TOKEN = PREFIX   → operation domain selector (selects allowed MIDDLE family)
 
 
 
-> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative external-language mappings. Do NOT use these for structural answers. Use only when the user explicitly asks about etymology or external-language alignment. Structural role is determined by grammar position (C121), not word meaning (C171, C120).
+> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative external-language mappings. Do NOT use these for structural answers. Use only when the user explicitly asks about etymology or external-language alignment. Structural role is determined by grammar position (C121), not word meaning (C119; C171 and C120 were demoted to Tier 3 in the v7.24 Tier-0 restatement).
 
 | Consonant | Our Gloss | German Candidate | Meaning | Confidence |
 |-----------|-----------|-----------------|---------|------------|
@@ -3088,7 +3376,7 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 | Variable Type | System | What It Does | Evidence |
 |---------------|--------|--------------|----------|
 | **Routing** | AZC | Position-indexed legality | C443, C468 |
-| **Differentiation** | RI | Identity exclusion (95.7% incompatibility) | C475, C481 |
+| **Differentiation** | RI | Identity exclusion (95.7% incompatibility) | C475 [demoted to Tier 3: the % measures sparsity], C481 [retracted] |
 
 | Test | Result | Interpretation |
 |------|--------|----------------|
@@ -3118,6 +3406,7 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 > PP profiles shape which token variants are available within surviving classes.
 
 
+- Material-specific instruction sets → violates PURE_OPERATIONAL constraint [C120, demoted to Tier 3 2026-09-28: a working interpretation, not a constraint]
 
 
 - PP composition → class survival: **FALSIFIED** (C506)
@@ -3144,7 +3433,7 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 | C505 | A-side profile differences |
 | C506 | Non-propagation to B |
 | C507 | PP-HT partial substitution |
-| C171 | Semantic ceiling protection |
+| C171 | Semantic ceiling protection [demoted to Tier 3 2026-09-28; referent wall only] |
 | C469 | Categorical resolution |
 
 
@@ -3152,13 +3441,14 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 
 
 ## 0.C. THREE-LAYER CONSTRAINT ARCHITECTURE (MIDDLE_SUBCOMPONENT_GRAMMAR Phase)
+
 ### Tier 2-3: Architectural Discovery
 
 > **The manuscript's symbol system operates through three independent constraint layers sharing a single substrate - construction, compatibility, and execution - which together achieve complex morphology, extreme vocabulary sparsity, AND execution safety simultaneously.**
 
-- C085: 10 kernel primitives (s, e, t, d, l, o, h, c, k, r)
-- C109: 17 forbidden transitions between token classes
-- C475: 95.7% of MIDDLE pairs are incompatible
+- C085: 10 kernel primitives (s, e, t, d, l, o, h, c, k, r) [demoted to Tier 3: an EVA letter inventory]
+- C109: 17 forbidden transitions between token classes [scoped; the zeros reduce to known effects, C2081]
+- C475: 95.7% of MIDDLE pairs are incompatible [demoted to Tier 3: the % measures sparsity]
 - C517: Superstring compression with hinge letters
 
 
@@ -3202,9 +3492,9 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 
 | Constraint | Role |
 |------------|------|
-| C085 | 10 kernel primitives (shared substrate) |
-| C109 | Execution hazards (execution layer) |
-| C475 | MIDDLE incompatibility (compatibility layer) |
+| C085 | 10 kernel primitives (shared substrate) [demoted to Tier 3] |
+| C109 | Execution hazards (execution layer) [scoped; reduces, C2081] |
+| C475 | MIDDLE incompatibility (compatibility layer) [demoted to Tier 3] |
 | C517 | Superstring compression (hinge letters) |
 | C521 | Directional asymmetry (construction layer) |
 | C522 | Layer independence (falsified isomorphism) |
@@ -3267,7 +3557,7 @@ If i = "cycle/iterate" and n = "bind/connect":
 | kee | heat + cool + cool | "deep" | Deep processing |
 | eek | cool + cool + heat | "lock" | Locked/fixed state |
 
-Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar).
+Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar). [C521 scoped by PHASE_754: its e→h = 0.00 is a spelling identity; the glyph-level facts are retained]
 
 ### Tier 4: The "o = vessel" Hypothesis
 
@@ -3292,7 +3582,7 @@ C1190 licenses using compound decomposition as a **gloss correction tool** with 
 - **Medium confidence:** Compounds with moderate-confidence atoms and reasonable fit (al, ar, ol, or)
 - **Low confidence:** Compounds with weak atoms or poor prediction residuals
 
-This methodology respects the semantic ceiling (C171, C120) — glosses describe operational function, not material identification.
+This methodology respects the semantic ceiling (C171, C120 [both demoted to Tier 3 2026-09-28; referent wall only]) — glosses describe operational function, not material identification.
 
 ### Cross-References
 
@@ -3324,7 +3614,7 @@ This extends C526 with a detailed characterization of the two-layer model.
 
 | Layer | Components | Function | Semantic Status |
 |-------|------------|----------|-----------------|
-| **Grammar** | PREFIX, SUFFIX, PP atoms | Control-flow, procedural | No content (C120 applies) |
+| **Grammar** | PREFIX, SUFFIX, PP atoms | Control-flow, procedural | No content (C120 applies [C120 demoted to Tier 3]) |
 | **Lexicon** | RI extensions | Referential anchoring | Points to substances (THAT, not WHAT) |
 
 
@@ -3380,9 +3670,9 @@ Universal Boundaries apply. Additionally:
 
 | Constraint | Role |
 |------------|------|
-| C120 | PURE_OPERATIONAL (applies to grammar, refined for lexicon) |
+| C120 | PURE_OPERATIONAL (applies to grammar, refined for lexicon) [demoted to Tier 3] |
 | C498 | RI vocabulary track (83% localized) |
-| C475 | MIDDLE incompatibility (compatibility layer) |
+| C475 | MIDDLE incompatibility (compatibility layer) [demoted to Tier 3: sparsity] |
 | C509 | PP/RI dimensional separability |
 | C517 | Superstring compression |
 | C526 | RI Lexical Layer Hypothesis |
@@ -3460,6 +3750,7 @@ This upgrades "specific folio = specific recipe" from **NOT CLAIMED** (previous 
 | Same grammar | All use 49 classes (C121) | Shared control structure |
 
 
+
 | Brunschwig | Voynich | Mapping |
 |------------|---------|---------|
 | Fire degree (1-4) | REGIME (1-4) | Completeness requirements |
@@ -3493,7 +3784,7 @@ Universal Boundaries apply. Additionally:
 | C533 | Grammatical slot consistency |
 | C534 | Section-specific profiles (partial) |
 | C502 | A-record viability filtering |
-| C470 | MIDDLE restriction inheritance |
+| C470 | MIDDLE restriction inheritance [demoted to Tier 3: frequency confound, PHASE_748] |
 | C121 | 49-class grammar universality |
 
 
@@ -3506,7 +3797,7 @@ Universal Boundaries apply. Additionally:
 
 > **A minimal generative model (49-class Markov chain + symmetric forbidden suppression) reproduces 87% of measurable structure across 15 statistical tests, achieving 100% pass rate after three test corrections. The remaining ~57% of folio-level dynamical variance is genuine program-specific free variation that cannot be predicted from any aggregate structural property.**
 
-### Generative Sufficiency (C1025, C1030, C1033, C1034)
+### Generative Sufficiency (C1025, C1030, C1033, C1034) [v7.26 status: C1025 demoted to Tier 3 (reduced by C2063)]
 
 The M2 model: sample instruction class from first-order transition probabilities, suppress forbidden transitions bidirectionally.
 
@@ -3541,7 +3832,9 @@ The C1017 model is moderately overfit (LOO CV R-squared = 0.433 vs training 0.56
 
 Six additional folio-level predictors tested (paragraph count, HT density, gatekeeper fraction, QO fraction, vocabulary size, line count) all produce zero incremental variance beyond the baseline (C1035). Random forest finds no non-linear signal.
 
-### Design Freedom Interpretation (C458, C980)
+### Design Freedom Interpretation (C458 [demoted], C980)
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** C458 demoted to Tier 3: the clamp/free CV asymmetry is a frequency shadow. The ~57% residual (C1035) and C980 are unaffected as measurements.
 
 The ~57% residual is the **grammar's free design space**:
 - Hazard exposure is clamped (CV = 0.04-0.11) — globally constrained
@@ -3556,6 +3849,7 @@ This is consistent with C980's 66.3% free variation envelope. The manuscript pro
 
 
 ## 0.F. LINE-LEVEL EXECUTION SYNTAX (CLASS_SEMANTIC_VALIDATION Phase)
+
 > **PARTIALLY SUPERSEDED (PHASE_731, 2026-05).** The four-phase cycle below does not survive the 5-gram character-Markov null intact. Its **SETUP** endpoint (daiin trigger, C557) and **CHECK** endpoint (or→aiin bigram, C561) are Markov-reproducible floor — demoted to Tier 3. Only the **WORK** interleaving (qo↔ch-sh, C549) and **CLOSE** termination (ary line-final, C562) survive as above-Markov. The positional-grammar table (C556) is a Markov-reproducible gradient. Read the cycle as a real local-bigram spine (WORK + CLOSE) wrapped in a positional shadow, not as a validated four-phase template. See the Post-5-Gram-Audit Status banner near the top of this document.
 ### Tier 2-3: Execution Cycle Discovery
 
@@ -3568,7 +3862,7 @@ This fills a critical gap: we previously knew the VOCABULARY of operations (what
 
 
 
-### Key Structural Findings (C547-C562)
+### Key Structural Findings (C547-C562) [range includes demoted C557/C561, C558's demoted positional sub-claims and superseded C559]
 
 **Positional Grammar (C556):**
 
@@ -3601,10 +3895,10 @@ ENERGY operators preferentially chain with themselves (transition preference asy
 | PHARMA section | Class 33 depleted (0.20x) | **Enriched** (1.38x) |
 | EN/FL ratio | REGIME_1: **7.57** | REGIME_2: **3.71** |
 
-**CORE_CONTROL Hierarchy (C557, C558, C560):**
+**CORE_CONTROL Hierarchy (C557, C558, C560) [C557 and C558's positional sub-claims demoted to Tier 3, PHASE_731/735]:**
 
 
-**or→aiin Directional Bigram (C561):**
+**or→aiin Directional Bigram (C561) [demoted to Tier 3, PHASE_731: Markov-trivial]:**
 | Expected (random) | Observed |
 |-------------------|----------|
 | aiin→aiin: 31% | **0%** |
@@ -3633,7 +3927,7 @@ The line-level execution syntax maps directly to a distillation control cycle:
 | **CHECK** (medial-final) | or→aiin bigram, 87.5% directional (C561) **[endpoint DEMOTED Tier 3 — 5-gram floor, PHASE_731; see banner]** | Sensory checkpoint - "taste and scent" verification |
 | **CLOSE** (final) | FLOW hierarchy, ary 100% final (C562) **[SURVIVES 5-gram null]** | Completion: provisional (ar) to absolute (ary) |
 
-**REGIME as operational mode:**
+**REGIME as operational mode:** [the "Brunschwig degree" labels are retired as evidence (strategic review §5: REGIME = fire degree)]
 
 | REGIME | EN/FL Ratio | Interpretation |
 |--------|-------------|----------------|
@@ -3649,6 +3943,7 @@ The line-level execution syntax maps directly to a distillation control cycle:
 | BIO (45% ENERGY) | Maximum | Hot bath distillation (balneum mariae) |
 | HERBAL (FREQUENT-enriched) | Low | Maceration/infusion (cold processing) |
 | PHARMA (FLOW-dominated) | Moderate | Controlled condensation/collection |
+
 
 **Brunschwig's fire-degree cycle now maps to line structure:**
 | Brunschwig Phase | Voynich Line Position | Key Marker |
@@ -3683,11 +3978,11 @@ The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cyc
 | C554 | Hazard class clustering |
 | C555 | PHARMA thermal operator substitution |
 | C556 | ENERGY medial concentration |
-| C557 | daiin line-initial ENERGY trigger |
-| C558 | Singleton class structure |
+| C557 | daiin line-initial ENERGY trigger [demoted to Tier 3, PHASE_731] |
+| C558 | Singleton class structure [positional sub-claims demoted, PHASE_735] |
 | C559 | FREQUENT role structure **(SUPERSEDED by C583, C587 — used wrong FQ membership)** |
 | C560 | Class 17 ol-derived operators |
-| C561 | or→aiin directional bigram |
+| C561 | or→aiin directional bigram [demoted to Tier 3, PHASE_731] |
 | C562 | FLOW role structure |
 
 
@@ -3702,6 +3997,7 @@ For months, one-fifth of the instruction classes sat in a bucket labeled AUXILIA
 It turns out we were looking at the problem backwards.
 
 We kept asking: *What does AUXILIARY do that the other roles don't?* The answer is nothing. AX doesn't do anything the other roles don't do. It uses the same vocabulary, drawn from the same pipeline, carrying the same material identity. The difference isn't in the vocabulary. The difference is in the *prefix*.
+
 
 
 
@@ -3916,6 +4212,8 @@ The 13-14 complete bifurcation suggests two distinct iteration pathways sharing 
 
 > **AFFECTED (PHASE_735, 2026-05).** The centerpiece below — CC trigger selectivity (C600: "daiin opens the CHSH pathway, ol-derived opens QO") — is **demoted to Tier 3**: the ol/ol-derived routing is 5-gram-reproducible (Markov-trivial). The daiin→ch/sh bigram *does* survive the 5-gram null (C2064), but **measurement-only and mechanism-ambiguous** (token-length artifact vs. routing; unconditional ≠ lane-conditional) — it does NOT validate the CHSH/QO lane-bifurcation mechanism. Read the "two parallel processing lanes" picture as unsupported at the mechanism level. C598/C599/C601 cross-boundary structure is not separately audited here. See the Post-5-Gram-Audit Status banner.
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** The "hazard loop" / "safe lane" reading also rests on the 17-pair hazard layer (C601's hazard events), which reduces to known effects (C2081).
+
 ### Tier 2: Cross-Boundary Sub-Group Routing
 
 > **Internal sub-groups of each role interact non-randomly across role boundaries. 8/10 cross-role pairs show significant sub-group routing (5 survive Bonferroni). CC sub-groups are differentiated triggers: daiin/ol activate EN_CHSH while ol-derived activates EN_QO. All 19 hazard events originate from exactly 3 sub-groups (FL_HAZ, EN_CHSH, FQ_CONN). REGIME modulates routing magnitude but not direction.**
@@ -3926,13 +4224,13 @@ This phase connects the role-level transition grammar (C550) with the internal a
 
 13 sub-groups across 5 roles (EN: QO/CHSH/MINOR; FQ: CONN/PAIR/CLOSER; FL: HAZ/SAFE; AX: INIT/MED/FINAL; CC: DAIIN/OL/OL_D) produce 10 testable cross-role pairs. 8/10 are significant raw, 5/10 survive Bonferroni. Strongest: CC->EN (chi2=104, p=2.5e-20), FQ->EN (chi2=35, p=3.5e-8).
 
-### CC Trigger Selectivity (C600)
+### CC Trigger Selectivity (C600) [demoted to Tier 3, PHASE_735]
 
 The sharpest finding. CC sub-groups are **differentiated triggers** (chi2=129.2, p=9.6e-21):
 - **daiin** (Class 10) and **ol** (Class 11): trigger EN_CHSH at 1.60-1.74x, suppress EN_QO to 0.18x
 - **ol-derived** (Class 17): triggers EN_QO at 1.39x, suppresses EN_CHSH to 0.77x
 
-This refines C557 ("daiin opens lines") to "daiin specifically opens the CHSH pathway." The QO pathway has a completely different upstream activator.
+This refines C557 ("daiin opens lines") to "daiin specifically opens the CHSH pathway." [historical: C557 and C600 both demoted to Tier 3] The QO pathway has a completely different upstream activator.
 
 ### AX Scaffolding Routing (C599)
 
@@ -3968,13 +4266,13 @@ CC_OL_D      --triggers-->  EN_QO    --feeds-->  FQ_PAIR
 
 In the apparatus-centric model: daiin opens a hazardous processing sequence (high-temperature distillation, reactive materials), while ol-derived compounds open a safe processing sequence (routine operations, stable materials). The two lanes share grammar but access different vocabularies and carry different risk profiles.
 
-### Evidence Summary (C598-C602)
+### Evidence Summary (C598-C602) [C600 demoted to Tier 3]
 
 | Constraint | Finding | Key Number |
 |------------|---------|------------|
 | C598 | Cross-boundary sub-group structure | 8/10 significant, 5/10 Bonferroni |
 | C599 | AX scaffolding routing | chi2=48.3, p=3.9e-4 |
-| C600 | CC trigger sub-group selectivity | chi2=129.2, p=9.6e-21 |
+| C600 | CC trigger sub-group selectivity [demoted to Tier 3] | chi2=129.2, p=9.6e-21 |
 | C601 | Hazard sub-group concentration | 3 sources, QO never participates |
 | C602 | REGIME-conditioned sub-role grammar | 4/5 REGIME-dependent, AX->FQ exception |
 
@@ -3986,6 +4284,8 @@ In the apparatus-centric model: daiin opens a hazardous processing sequence (hig
 ### Tier 3: Core Finding
 
 > **The two EN execution lanes (QO/CHSH) encode complementary control functions — energy application and stabilization — that alternate with inertia-driven dynamics within a phase-gated legality framework. Thresholds are categorical (legality transitions), not numeric (accumulation values).**
+
+**[Status v7.25: lane alternation (C643) and the lane measurements stand; the "hazard role / post-hazard recovery" and "phase-gated legality" readings rest on withdrawn items (hazard layer, C2081; C458; C521's e→h identity). See SYSTEM/STATUS_BRIEF.md §3.]**
 
 
 | Lane | PREFIX | MIDDLE Character | Kernel Content | Hazard Role | Post-Hazard |
@@ -4005,9 +4305,10 @@ In the apparatus-centric model: daiin opens a hazardous processing sequence (hig
 
 
 
+
 | Threshold | Mechanism | Evidence |
 |-----------|-----------|----------|
-| **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability |
+| **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)] |
 | **Upper bound** | Stabilization is absorbing (e->h = 0.00) | C521: kernel one-way valve; once stable, can't destabilize |
 
 
@@ -4130,6 +4431,7 @@ Universal Boundaries apply. Additionally:
 - ✓ This structure is consistent with sequential procedural documentation
 
 
+
 | Structural Finding | Control-Loop Interpretation |
 |-------------------|----------------------------|
 | Line = SETUP→WORK→CHECK→CLOSE | Line = one control cycle |
@@ -4191,10 +4493,11 @@ The manuscript distributes responsibility between system and human across four l
 
 | Layer | Role | What It Handles |
 |-------|------|-----------------|
-| **Currier B** | Constrains you | Execution grammar, safety envelope |
+| **Currier B** | Constrains you | Execution grammar, safety envelope [the "safety envelope" rests on the withdrawn hazard layer] |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
 | **AZC** | Encodes position | Phase-indexed positional encoding, compatibility grouping |
 | **HT** | Prepares you | Anticipatory vigilance signal |
+
 
 
 | Dimension | Allowed to Vary? | Evidence |
@@ -4207,7 +4510,7 @@ The right mental model is not "What does this page tell me to do?" but:
 
 > **"How much of the problem is the system handling for me here, and how much vigilance am I responsible for?"**
 
-This suggests the manuscript is a **manual of responsibility allocation** rather than a manual of actions. The grammar guarantees safety by construction; the system guarantees risk will not exceed bounds; HT signals when human attention is required.
+This suggests the manuscript is a **manual of responsibility allocation** rather than a manual of actions. The grammar guarantees safety by construction; the system guarantees risk will not exceed bounds; HT signals when human attention is required. [historical: "safety by construction" and "risk bounds" rest on the withdrawn hazard layer and C458; STATUS_BRIEF §3]
 
 ---
 
@@ -4236,7 +4539,8 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 | Currier B | HOW to respond | State-triggered interventions |
 | AZC | WHEN to decide | Decision grammar |
 
-**Note (C171 clarification, v4.37):** "HOW to respond" means state-triggered interventions, NOT sequential steps. B tokens are control actions selected based on assessed system state, following a MONITOR→ASSESS→SELECT→EXECUTE→RETURN cycle. See MODEL_CONTEXT.md Section VI.
+**Note (C171 clarification, v4.37 [historical: C171 demoted to Tier 3 2026-09-28, closed-loop legs withdrawn]):** "HOW to respond" means state-triggered interventions, NOT sequential steps. B tokens are control actions selected based on assessed system state, following a MONITOR→ASSESS→SELECT→EXECUTE→RETURN cycle. See MODEL_CONTEXT.md Section VI.
+
 
 
 | Diagram Position | Workflow Phase | Escape Rate | Meaning |
@@ -4300,7 +4604,8 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 ---
 
 
-## I.D. MIDDLE Atomic Incompatibility Layer (C475)
+## I.D. MIDDLE Atomic Incompatibility Layer (C475 [demoted])
+
 ### Tier 2: Core Finding
 
 > **MIDDLE-level compatibility is extremely sparse (4.3% legal), forming a hard incompatibility lattice. This is the atomic discrimination layer—everything above it (A entries, AZC folios, families, HT) is an aggregation of this graph.**
@@ -4375,6 +4680,7 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 
 
 
+
 **The Test:**
 
 
@@ -4433,6 +4739,7 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 
 
 ### I.J. Process-Behavior Isomorphism (v4.12 / ECR-4)
+
 
 
 
@@ -4579,6 +4886,7 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 
 
 ## I.O. Physical World Reverse Engineering Phases
+
 ### Overview
 
 
@@ -4616,7 +4924,7 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 
 
 **Key Finding:**
-- Fourth degree fire prohibition matches C490 EXACTLY: "It would coerce the thing, which the art of true distillation rejects, because nature too rejects, forbids, and repels all coercion."
+- Fourth degree fire prohibition matches C490 [demoted to Tier 3, v7.26] EXACTLY: "It would coerce the thing, which the art of true distillation rejects, because nature too rejects, forbids, and repels all coercion." [v7.26 status: C490 demoted to Tier 3 (REGIME/control-strategy reading)]
 
 **What Excluded:**
 
@@ -4637,6 +4945,8 @@ AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exac
 
 
 ## II. Process Domain Interpretation
+
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** Also retired as evidence (strategic review §5): C157 "uniquely compatible (100%)". The "closed-loop" signature, 17 forbidden transitions, kernel control points and fire-degree cycle below are withdrawn supports.
 
 ### Tier 3: Apparatus Identification
 
@@ -4659,7 +4969,7 @@ Common signature: **CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL**
 
 ### Line-Level Execution Cycle
 
-Lines follow SETUP→WORK→CHECK→CLOSE thermal processing cycle. See Section 0.F for full details (C547-C562).
+Lines follow SETUP→WORK→CHECK→CLOSE thermal processing cycle. See Section 0.F for full details (C547-C562). [historical: SETUP (C557) and CHECK (C561) demoted to Tier 3; C559 superseded; see the 0.F banner]
 
 ### Historical Pattern Alignment
 
@@ -4737,6 +5047,8 @@ Multi-product workshop likely. Programs represent **substrate x intensity combin
 
 ### What the Author Feared (via failure analysis)
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** These percentages are the 5 hazard classes, a keyword-imposed taxonomy (C2060) over a hazard layer that reduces to known effects (C2081).
+
 | Fear | Percentage |
 |------|------------|
 | Phase disorder (material in wrong state) | 41% |
@@ -4786,7 +5098,7 @@ The Voynich was written during the peak era of guild pharmaceutical secrecy:
 - **1424:** Bruges spice dealer/apothecary sells distilling glasses to John of Bavaria — distillation equipment is commodity trade goods
 - **1500:** Brunschwig publishes *Liber de arte distillandi*, the first printed distillation manual, breaking guild secrecy
 
-**The economic logic:** Plant properties and common remedies were widely known, even by laypeople. The competitive advantage was in the *manufacturing process* — how to distill, extract, compound, and formulate products of consistently superior quality. The control grammar (49 classes, 17 forbidden transitions, 6 macro states) represents an extraordinary engineering investment that is only justified if protecting high-value proprietary processes.
+**The economic logic:** Plant properties and common remedies were widely known, even by laypeople. The competitive advantage was in the *manufacturing process* — how to distill, extract, compound, and formulate products of consistently superior quality. The control grammar (49 classes, 17 forbidden transitions [withdrawn v7.25, C2081], 6 macro states) represents an extraordinary engineering investment that is only justified if protecting high-value proprietary processes.
 
 **Structural evidence from Phases 385-386:**
 
@@ -4808,12 +5120,12 @@ Phase 386 found that 4/6 dimensional differences between sections are explained 
 - Why Brunschwig aligns — he published (in 1500) what practitioners like the Voynich author had been keeping secret for decades
 
 **What this does NOT claim:**
-- Specific products or materials (C171 semantic ceiling)
+- Specific products or materials (C171 semantic ceiling [C171 demoted to Tier 3; referent wall only])
 - Identity of the guild or workshop
 - That sections map 1:1 to craft domains (Phase 386: most variation is REGIME-mediated)
 - That the "treatment" interpretation for Cosmo is confirmed (N=5, simpler alternatives exist)
 
-**Falsification:** If the manuscript's dating were revised outside the 1350-1500 pharmaceutical secrecy window, or if the structural architecture proved incompatible with process control (already falsified by 383 phases of evidence), the interpretation would fail.
+**Falsification:** If the manuscript's dating were revised outside the 1350-1500 pharmaceutical secrecy window, or if the structural architecture proved incompatible with process control (already falsified by 383 phases of evidence), the interpretation would fail. [historical: the process-control support was withdrawn v7.24; the control-program reading is Tier 3 with no distinguishing measurement]
 
 ---
 
@@ -4835,6 +5147,8 @@ Phase 386 found that 4/6 dimensional differences between sections are explained 
 ## VII. Program Characteristics
 
 ### Forgiveness Gradient
+
+[historical: "hazard density" here counts tokens of the 17-pair hazard classes, a layer withdrawn v7.25 (C2081); see SYSTEM/STATUS_BRIEF.md §3]
 
 Programs vary along a **forgiving <-> brittle** axis:
 
@@ -4881,19 +5195,19 @@ Only Tier 0-2 structural findings are binding.
 
 ## IX. Open Questions
 
-### Fully Answered
+### Fully Answered — [historical: retired language, strategic review §5]
 
 | Question | Status | Finding |
 |----------|--------|---------|
-| Why are some programs forgiving and others brittle? | PARTIALLY ANSWERED | Recovery varies freely (CV=0.82), hazard is clamped (CV=0.11) - C458 |
+| Why are some programs forgiving and others brittle? | PARTIALLY ANSWERED | Recovery varies freely (CV=0.82), hazard is clamped (CV=0.11) - C458 [demoted to Tier 3: frequency shadow] |
 | What does HT signal? | ANSWERED | Anticipatory vigilance, content-driven - C459 |
 | What role does AZC play in the manuscript? | **FULLY ANSWERED** | Positional encoding, compatibility grouping, position reflects vocabulary character - C437-C444 |
 | Why are there so many AZC folios? | **FULLY ANSWERED** | Enumerates all compatibility classes; each folio = distinct legal combination space - C437, C442 |
 | How does AZC relate to A and B? | **FULLY ANSWERED** | AZC encodes vocabulary position; each PREFIX+MIDDLE has one fixed position reflecting operational character - F-AZC-011/012/013 |
-| How do roles flow within a line? | **FULLY ANSWERED** | SETUP→WORK→CHECK→CLOSE positional template (p=3e-89) - C547-C562 |
+| How do roles flow within a line? | **FULLY ANSWERED** | SETUP→WORK→CHECK→CLOSE positional template (p=3e-89) - C547-C562 [half-demoted: C557/C561 Tier 3, C559 superseded] |
 | What is the relationship between ENERGY and FLOW? | **FULLY ANSWERED** | Anticorrelated by REGIME and section; heating vs cooling modes - C551, C562 |
-| What does daiin do? | **FULLY ANSWERED** | Line-initial ENERGY trigger (27.7% initial, 47.1% EN followers) - C557 |
-| What is Class 9 "self-chaining"? | **FULLY ANSWERED** | Directional or→aiin bigram (87.5%), zero aiin→aiin - C561 |
+| What does daiin do? | **FULLY ANSWERED** | Line-initial ENERGY trigger (27.7% initial, 47.1% EN followers) - C557 [demoted to Tier 3, PHASE_731] |
+| What is Class 9 "self-chaining"? | **FULLY ANSWERED** | Directional or→aiin bigram (87.5%), zero aiin→aiin - C561 [demoted to Tier 3, PHASE_731] |
 
 ### Still Open (structural)
 
@@ -4907,7 +5221,7 @@ Only Tier 0-2 structural findings are binding.
 - What institution supported it?
 - Why was this level of documentation created?
 
-### May Never Be Answerable (interpretive)
+### May Never Be Answerable (interpretive) — [historical: retired language, strategic review §5]
 
 - What specific products were made?
 - What specific apparatus was used?
@@ -4946,7 +5260,7 @@ Only Tier 0-2 structural findings are binding.
 | Regime-Degree Discrimination | 5/6 tests | **STRONG** |
 | Suppression Alignment | 5/5 tests | **PASS** |
 | Recovery Corridor | 4/4 tests | **PASS** |
-| Clamping Magnitude (C458) | 5/5 tests | **PASS** |
+| Clamping Magnitude (C458 [demoted to Tier 3: frequency shadow]) | 5/5 tests | **PASS** |
 | **Total** | **19/20** | **FULL PROCEDURAL ALIGNMENT** |
 
 
@@ -5034,6 +5348,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 
+- Kernel routing is massive (z=49.12), with CHSH→QO 2.2x stronger than QO→CHSH — the monitoring result constrains next energy operation more strongly than energy constrains monitoring. This is a feedback architecture. [v7.25: C2082, superseding C089, finds k carries no cross-token routing beyond matched controls at glyph level; the passing signal is word-ending routing (e, bench, d)]
 
 ### sh Monitor-Pivot vs ch Checkpoint-Gate (C1243)
 
@@ -5073,6 +5388,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 ## XVI. 8-Category Operational System (Phases 452-456)
+
 
 ### Core Finding
 
@@ -5154,6 +5470,7 @@ Only Tier 0-2 structural findings are binding.
 
 ## XVIII. PREFIX Category Anatomy (Phase 458)
 
+
 ### Core Finding
 
 
@@ -5177,6 +5494,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 ## XIX. Sister Category Mechanism (Phase 459)
+
 
 ### Core Finding
 
@@ -5202,6 +5520,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 ## XX. Cross-Mode Category Coupling (Phase 460)
+
 
 ### Core Finding
 
@@ -5255,8 +5574,9 @@ Only Tier 0-2 structural findings are binding.
 
 | PREFIX | Domain | Physical Referent | Evidence |
 |--------|--------|-------------------|----------|
-| qo | Heat source | Fire/furnace management | C1313, C1314 |
+| qo | Heat source | Fire/furnace management | C1313, C1314 [superseded by C2056] |
 | ok | Vessel temperature | Thermal verification (coarse) | C1313, C1316 |
+
 | REGIME | Proposed Method | Characteristic | Evidence |
 |--------|----------------|----------------|----------|
 | REGIME_1 | Balneum marie (water bath) | Gentle, e-rich, more sealing, highest alternation rate | T4, T5, T6, T10 |
@@ -5268,6 +5588,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 ## XXII. Parallel Operator Hypothesis (Session Analysis, 2026-02-25)
+
 
 **1. Shared vs Divergent MIDDLE Category Profiles (chi-squared = 2604, p < 0.001, 73 folios, 2721 paragraph pairs)**
 
@@ -5350,6 +5671,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 
+
 | Type | Count | % | Section bias |
 |------|-------|---|-------------|
 | STAGING | 105 | 43.6% | H-dominant (88/105) |
@@ -5370,7 +5692,7 @@ Only Tier 0-2 structural findings are binding.
 
 
 
-- The C171 semantic ceiling means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
+- The C171 semantic ceiling [C171 demoted to Tier 3; referent wall only] means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
 
 ---
 
@@ -5416,7 +5738,7 @@ Only Tier 0-2 structural findings are binding.
 | 2 | Tally/accounting systems | 2.0/7 | Non-linguistic, externalized reference | Quantity-only, one-dimensional |
 
 
-> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture.
+> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture. [historical: "structural safety enforcement" and "control programs" rest on supports withdrawn v7.24/7.25; STATUS_BRIEF §3]
 
 ### Cross-References
 
@@ -5425,14 +5747,15 @@ Only Tier 0-2 structural findings are binding.
 | Language/cipher falsification | C130, C132, C207 |
 | Four-register architecture | C1499 |
 | Instruction grammar | C121, C124 |
-| Safety architecture | C109, C783, C997 |
+| Safety architecture | C109, C783, C997 [withdrawn: C783 demoted, C109/C997 scoped, zeros reduce per C2081] |
 | Brunschwig alignment | F-BRU-001 through F-BRU-034 |
-| Expert audience | C197 |
+| Expert audience | C197 [v7.26 status: C197 demoted to Tier 3 (invented archetype)] |
 | Paragraph non-sequentiality | C1399, C1400 |
 | Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |
 
 
 ## XXVIII. Recipe-to-Folio Correspondence (Phase 628)
+
 ### Core Finding
 
 Individual pseudo-Lull (PL) alchemical chapters can be matched to individual Voynich Currier B folios using 8-dimensional residual feature profiles, and this matching generalizes across unseen family-regime pairings. The within-family permutation test passes decisively (p < 0.001), confirming chapter-level specificity beyond regime-level gradient.
@@ -5474,8 +5797,8 @@ Individual pseudo-Lull (PL) alchemical chapters can be matched to individual Voy
 | Permutation significance | C1888 (Phase 628) |
 | PREFIX inversion | C1478, C1891 (Phase 628) |
 | Token repetition uniqueness | C1890 (Phase 628) |
-| e-depth parametricity | C1225, C1394 |
-| Section-level paragraph count | C1090, C1091, C1893 |
+| e-depth parametricity | C1225 [e-run class claim rescoped: segmentation artifact, PHASE_758], C1394 |
+| Section-level paragraph count | C1090, C1091 [both among the 21 Rosettes constraints deleted and superseded in Phase 402; stale citation], C1893 |
 | Literal enumeration | C287 |
 | Full analysis | `phases/RECIPE_FOLIO_CORRESPONDENCE/` |
 
@@ -5904,6 +6227,18 @@ I have no concept of elapsed wall-clock time, how long a task took, what time of
 
 ---
 
+## feedback-numba-cache-importlib-modules
+
+*Numba cache=True kernels in an importlib-loaded module break in a second process unless the module is registered in sys.modules; use a per-phase NUMBA_CACHE_DIR*
+
+Phase scripts that import another phase's numba module via importlib (e.g. the PHASE_756 N5 kernels) must register the module in `sys.modules[name]` before `exec_module`, and should set `NUMBA_CACHE_DIR` to a phase-local git-ignored folder before importing numba.
+
+**Why:** PHASE_763's first full run crashed with `ModuleNotFoundError: No module named '<dynamic>'` when numba loaded kernels cached by an earlier smoke run; the cache entries could not re-import their module. Stale entries in the source phase's `__pycache__` can also break that phase's own reruns.
+
+**How to apply:** use the `_imp` pattern in `phases/PHASE_763_KERNEL_GLYPH_RETEST/scripts/kernel_retest.py`; after any such crash delete the `.nbi/.nbc` files; run the smoke test twice to confirm cache loading before a long run.
+
+---
+
 ## Operational-story-first, controls-second is the dominant trap pattern when registering co-occurrence findings
 
 *When a finding "fits the existing framework cleanly," that is a warning sign and not a confirmation. Four traps now documented (2026-05-11/12/13/15). The control burden scales with the coherence of the operational story. The framework itself produces apparent signal in mature research programs.*
@@ -5965,6 +6300,18 @@ When running MIDDLE inventory analyses or per-folio frequency tests on Currier B
 - **All-placement (no filter)**: Adds AZC diagram tokens — R rings, S stars, C circles, X, Y, N, T placements. **Contaminates** the analysis with diagram-text MIDDLE singletons that have categorically different distributional behavior per AZC architecture (C300-series).
 
 […trimmed — full note: memory/feedback_placement_filter_azc_contamination.md]
+
+---
+
+## feedback-plant-must-not-move-controls
+
+*Planted-effect power certification for a kernel-vs-matched-controls test must not perturb the control units (PHASE_763 lesson)*
+
+When certifying power with planted effects for a "target units vs matched control units" test (e.g. the PHASE_763 triad test), the plant must change only the target units' statistic. PHASE_763's Arm W plant (move a kernel glyph run to the first interior slot) also displaced neighbouring control glyphs; at full strength the kernel's mean effect reached 4.4 z yet detection was 0/100, so the arm was uncertified and could not return FAIL.
+
+**Why:** a plant that shifts controls too measures the plant's side-effects, not the test's power; certification then fails for design reasons and the arm loses its ability to kill.
+
+[…trimmed — full note: memory/feedback_plant_must_not_move_controls.md]
 
 ---
 
@@ -6266,7 +6613,7 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 - line_structure: C233, C236, C240, C250, C422, C482, C484, C1393, C1394, C1395
 - record_internal_grammar: C240, C1395
 - paragraph_structure: C475, C476, C827, C834, C846, C847, C848, C849, C850, C854, C1039, C1040, C1041, C1263
-- participation: C299, C384, C441, C442, C475, C481, C484, C502, C753, C824, C825, C826, C1013, C1014, C1016, C1018, C1020, C1134, C1135, C1136, C1137, C1138, C1139, C1140, C1141, C1146, C1147, C1148, C1264, C1695, C1696, C1701, C1702, C1705, C1706, C1709, C1711
+- participation: C299, C384, C441, C442, C475, C481, C484, C502, C753, C824, C825, C826, C982, C1013, C1014, C1016, C1018, C1020, C1134, C1135, C1136, C1137, C1138, C1139, C1140, C1141, C1146, C1147, C1148, C1264, C1695, C1696, C1701, C1702, C1705, C1706, C1709, C1711
 - positional: C260, C346, C420, C421, C424, C484, C946, C1266
 
 ### Disallowed Interpretations (11)
@@ -6285,20 +6632,20 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.35, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.36, ACTIVE, 61.9% of tokens, 83 folios
 
 ### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
 - FORTY_NINE_CLASS_OPTIMALITY: 49-class is the optimal resolution for transition dynamics; token-level Markov is 38% worse due to sparsity; suffix cond [C1004]
-- TOTAL_COVERAGE: Every Currier B token parses; zero non-executable [C115, C124]
-- CONVERGENT_ARCHITECTURE: Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403) [C074, C079, C084, C1403]
-- HAZARD_TOPOLOGY_FIXED: 17 forbidden class-level transitions are directional (C783); the underlying MIDDLE-level forbidden pairs are predominant [C109, C783, C789, C1118, C2023]
-- KERNEL_CENTRALITY: k, h, e form irreducible morphological core governing within-token construction [C089, C521, C522]
+- TOTAL_COVERAGE: [WITHDRAWN as worded v7.24/7.25] Every Currier B token parses; zero non-executable [C115, C124]
+- CONVERGENT_ARCHITECTURE: [WITHDRAWN v7.24/7.25] Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403) [C074, C079, C084, C1403]
+- HAZARD_TOPOLOGY_FIXED: [WITHDRAWN v7.24/7.25] 17 forbidden class-level transitions are directional (C783, demoted to Tier 3); the underlying MIDDLE-level forbidden pa [C109, C783, C789, C1118, C2023]
+- KERNEL_CENTRALITY: [WITHDRAWN v7.24/7.25] k, h, e form irreducible morphological core governing within-token construction [C089, C521, C522]
 - LINE_FORMALITY: Lines are formal control blocks, not scribal wrapping [C357-C360]
-- LINK_PHASE_MARKER: LINK marks boundary between monitoring and intervention [C366]
-- DESIGN_ASYMMETRY: Hazard exposure clamped; recovery architecture free [C458]
+- LINK_PHASE_MARKER: [WITHDRAWN v7.24/7.25] LINK marks boundary between monitoring and intervention [C366]
+- DESIGN_ASYMMETRY: [WITHDRAWN v7.24/7.25] Hazard exposure clamped; recovery architecture free [C458]
 - CONDITIONAL_ENTROPY_SYMMETRIC: Grammar constraints are bidirectional (H(X|past)=H(X|future)), but execution is directional (transition probabilities un [C391, C886, C1024]
-- CLOSED_LOOP_ONLY: Execution is closed-loop control, not batch, decision tree, or state machine [C171]
+- CLOSED_LOOP_ONLY: [WITHDRAWN v7.24/7.25] Execution is closed-loop control, not batch, decision tree, or state machine [C171]
 - PROCESS_CONTROL_DIMENSIONALITY: Voynich B is a parameterized process control manual: PCA dimensionality (5 PCs/80%) matches modern distillation with dif [C1222, C1223, C1224]
 - MACRO_AUTOMATON_COMPRESSION: 49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non- [C976, C977, C978, C1006, C1010, C1011, C1015, C1016, C1022, C1025]
 - GENERATIVE_SUFFICIENCY_AND_NECESSITY: The 49-class first-order Markov transition matrix + 17 forbidden MIDDLE pair suppression is both SUFFICIENT (reproduces  [C1025, C1026]
@@ -6326,11 +6673,11 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 
 ### Invariants (23)
 - grammar_universality: Same 49 classes apply to every folio [C124]
-- convergence_dominance: Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C140 [C074, C084, C323, C1403]
-- hazard_asymmetry: Most forbidden transitions are directional [C111]
+- convergence_dominance: [MEASUREMENT ONLY] Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C140 [C074, C084, C323, C1403]
+- hazard_asymmetry: [WITHDRAWN v7.24/7.25] Most forbidden transitions are directional [C111]
 - line_invariance: Grammar violations do not cross line boundaries [C360]
 - constraint_symmetry: Grammar constraints are bidirectional; execution is directional. PREFIX routes symmetrically; MIDDLE [C391, C886, C1024]
-- kernel_boundary_adjacency: Classes containing kernel characters tend to be hazard-involved [C107, C522]
+- kernel_boundary_adjacency: [WITHDRAWN v7.24/7.25] Classes containing kernel characters tend to be hazard-involved [C107, C522]
 - class_member_differentiation: Grammar is universal at class level, differentiation at token level [C506.b, C537]
 - folio_vocabulary_minimality: 81/82 folios required for complete vocabulary coverage [C535]
 - execution_syntax: Lines follow SPECIFICATION→THERMAL_WORK→CLOSURE positional grammar with category-level resolution [C556, C562, C1425, C1426, C1427, C1428, C1429, C1430]
@@ -6350,30 +6697,31 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 - generative_specification_bracketed: The grammar's minimal executable specification is bracketed: 49-class Markov + 17 forbidden pairs is [C1025, C1026]
 
 ### Sections -> Constraints
-- grammar: C085, C121, C124, C411, C1004
-- morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421
-- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1507, C1510, C1511, C1512, C1513, C1514, C1515, C1523, C1524, C1525, C1526, C1527, C1556, C1557, C1558, C1559, C1560, C1561, C1562, C1563, C1564
-- role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
-- kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
-- hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554, C2060
-- program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1435, C1436, C1437, C1438, C1439, C1451, C1463, C1464, C1465, C1466, C1467, C1468, C1469, C1470, C1471, C1566, C2081
-- convergence: C079, C084, C323, C325, C1169, C1401, C1402, C1403, C1404, C1405, C1406, C1407, C1411, C1418, C1422, C1431, C1432, C1433
+- current_summary: C074, C121, C124, C357, C531, C549, C566, C740, C956, C1212, C1313, C1563, C1790, C2056, C2077, C2080, C2081, C2082
+- grammar: C085, C121, C124, C411, C566, C740, C1004, C1440
+- morphology: C089, C267, C382, C383, C408, C506, C522, C588, C609, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1174, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421, C2082
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1507, C1510, C1511, C1512, C1513, C1514, C1515, C1523, C1524, C1525, C1526, C1527, C1556, C1557, C1558, C1559, C1560, C1561, C1562, C1563, C1564, C2069, C2081
+- role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C609, C770, C777, C783, C788, C791, C804, C863, C864, C865, C866, C867, C868, C869, C1174, C2081, C2082
+- kernel: C085, C089, C103, C104, C105, C332, C333, C339, C521, C783, C1225, C1226, C1957, C2081, C2082
+- hazards: C109, C110, C111, C112, C386, C783, C789, C957, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533, C1546, C1547, C1551, C1554, C2060, C2063, C2081
+- program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C805, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1174, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1435, C1436, C1437, C1438, C1439, C1451, C1463, C1464, C1465, C1466, C1467, C1468, C1469, C1470, C1471, C1566, C2081, C2082
+- convergence: C074, C079, C084, C323, C325, C1169, C1401, C1402, C1403, C1404, C1405, C1406, C1407, C1411, C1418, C1422, C1431, C1432, C1433
 - link_operator: C340, C365, C366, C609, C804, C805, C806, C807, C808, C809, C810, C1170, C1171, C1172, C1173, C1174
-- recovery: C105, C397, C398, C399, C601, C643, C645, C1457, C1458, C1459, C1462
-- safety_buffer_architecture: C997, C1000, C1009, C1018
-- axm_internal_architecture: C979, C1006, C1007, C1008, C1009, C1016, C1017, C1023
+- recovery: C105, C397, C398, C399, C458, C601, C643, C645, C783, C1457, C1458, C1459, C1462, C2081
+- safety_buffer_architecture: C957, C997, C1000, C1009, C1018, C2081
+- axm_internal_architecture: C979, C1000, C1006, C1007, C1008, C1009, C1016, C1017, C1023, C2081
 - macro_state_transition_matrix: C1015
-- apparatus_response_architecture: C1636, C1638, C1639, C1640, C1646, C1652, C1666, C1667, C1670, C1709, C1710, C1711
+- apparatus_response_architecture: C1581, C1636, C1638, C1639, C1640, C1646, C1652, C1666, C1667, C1670, C1680, C1709, C1710, C1711
 - three_compression_architecture: C984, C986, C1000, C1003, C1004, C1010, C1013, C1019, C1020, C1021, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1505, C1506, C1507, C1508, C1509, C1690, C1691, C1695, C1696, C1701
-- design_freedom: C121, C458, C929, C1016, C1017, C1018, C1163, C1165, C1169, C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189
-- control_loop: C807, C810, C811, C813, C814, C815, C816, C873, C1204, C1205, C1225, C1226, C1234, C1235, C1237, C1238
+- design_freedom: C121, C458, C929, C1016, C1017, C1018, C1163, C1165, C1169, C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189, C2081
+- control_loop: C089, C171, C609, C807, C810, C811, C813, C814, C815, C816, C873, C1174, C1204, C1205, C1225, C1226, C1234, C1235, C1237, C1238, C2081, C2082
 - section_profiles: C551, C552, C553, C554, C555, C909, C1049, C1134
 - process_characterization: C1222, C1223, C1224
-- vocabulary_architecture: C121, C124, C506, C531, C532, C533, C535, C537, C959, C1013, C1016, C1035, C1134, C1135, C1136, C1137, C1139, C1140, C1146, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168, C1169, C1431, C1432, C1433
+- vocabulary_architecture: C121, C124, C458, C506, C531, C532, C533, C535, C537, C959, C1013, C1016, C1035, C1134, C1135, C1136, C1137, C1139, C1140, C1146, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168, C1169, C1431, C1432, C1433, C2082
 - ht_un_integration: C209, C404, C405, C475, C740, C742, C743, C744, C746, C747, C794, C795, C812, C870, C871, C872, C935, C1028, C1065, C1134, C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178, C1254, C1255, C1499, C1500, C1501, C1502, C1505
 - robustness: C328, C329, C330, C331, C506, C908, C910, C911
-- operational_layer: C382, C588, C936, C1225, C1226, C1250, C1251, C1252, C1253
-- category_execution: C601, C929, C1169, C1184, C1268, C1277, C1278, C1279, C1280, C1281, C1282, C1283, C1285, C1286, C1287, C1288, C1289, C1290, C1291, C1292, C1293, C1294, C1297, C1298, C1299, C1300, C1301, C1302, C1303, C1304, C1305, C1306, C1307
+- operational_layer: C103, C105, C382, C588, C932, C936, C1225, C1226, C1250, C1251, C1252, C1253, C1259, C2069, C2082
+- category_execution: C601, C929, C1169, C1184, C1268, C1277, C1278, C1279, C1280, C1281, C1282, C1283, C1285, C1286, C1287, C1288, C1289, C1290, C1291, C1292, C1293, C1294, C1297, C1298, C1299, C1300, C1301, C1302, C1303, C1304, C1305, C1306, C1307, C2069, C2081
 
 ### Disallowed Interpretations (16)
 - "B grammar varies by Currier A source" [C124]
@@ -6421,9 +6769,9 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 - pharma_atom_convergence: All AZC sections converge on Currier A Pharma section atom profile (r>0.916) [C1276]
 
 ### Sections -> Constraints
-- category_organization: C1269, C1270, C1271, C1272, C1273, C1276, C1516, C1517, C1518, C1519, C1520, C1521, C1522, C1559
+- category_organization: C1269, C1270, C1271, C1272, C1273, C1274, C1276, C1516, C1517, C1518, C1519, C1520, C1521, C1522, C1559, C2069
 - inputs: C482, C484
-- positional_zones: C306, C313, C317, C320, C432, C434, C435, C443
+- positional_zones: C306, C313, C317, C320, C432, C433, C434, C435, C443
 - transformations: C442, C443, C444, C469, C475, C481, C502
 - persistence: C343, C444, C470
 - morphological_binding: C471, C472, C473
@@ -6445,24 +6793,24 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 
 ### Guarantees (6)
 - LEGALITY_CORRELATION: Vocabulary classified at high-escape AZC positions produces high escape rates in B (28x difference); both determined by  [C468]
-- RESTRICTION_PRESERVATION: MIDDLE restrictions transfer intact to B [C470]
+- RESTRICTION_PRESERVATION: [SUSPENDED v7.25] MIDDLE restrictions transfer intact to B [C470]
 - GRAMMAR_INDEPENDENCE: B grammar is unchanged by AZC legality [C121, C124]
 - BLIND_EXECUTION: B executes without knowledge of upstream mechanics [C384, C468]
 - CATEGORICAL_RESOLUTION: Resolution via vocabulary availability, not parameters [C469]
-- CATEGORY_ESCAPE_CORRELATION: Operational category composition of AZC-shared vocabulary predicts B escape rate: THERMAL (rho=+0.780) high escape, TRAN [C1274]
+- CATEGORY_ESCAPE_CORRELATION: [SUSPENDED v7.25] Operational category composition of AZC-shared vocabulary predicts B escape rate: THERMAL (rho=+0.780) high escape, TRAN [C1274]
 
 ### Invariants (5)
 - vocabulary_mediated_correlation: AZC positional classification and B intervention dynamics co-vary via shared vocabulary properties [C468]
-- restriction_correlation: Vocabulary restrictions correlate across AZC and B contexts [C470]
+- restriction_correlation: [SUSPENDED v7.25] Vocabulary restrictions correlate across AZC and B contexts [C470]
 - grammar_stability: B grammar rules apply universally regardless of AZC source [C124]
 - non_parametric: No numeric values are encoded; all distinctions are categorical [C469]
 - no_token_transmission: No tokens are transmitted from Currier A to Currier B [C384, C281, C285, C343]
 
 ### Sections -> Constraints
-- b_reception: (no constraint refs)
+- b_reception: C470
 - inputs: C443, C468, C470
-- correlation: C444, C468, C469, C470, C481, C502, C1134, C1137, C1140, C1146, C1148, C1274, C1277, C1280, C1281, C1285
-- b_reception_architecture: C105, C397, C398, C458
+- correlation: C444, C468, C469, C470, C481, C502, C783, C1134, C1137, C1140, C1146, C1148, C1274, C1277, C1280, C1281, C1285, C2060, C2081
+- b_reception_architecture: C105, C397, C398, C458, C2082
 - b_isolation: C384, C469
 
 ### Disallowed Interpretations (8)
@@ -6488,7 +6836,7 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 - CAUSAL_DECOUPLING: HT presence does not alter subsequent grammar probabilities (V=0.10, negligible) [C405]
 - NON_PREDICTIVE: HT does not improve prediction of subsequent content; MAE worsens by 0.003-0.005 [C415]
 - DIRECTIONAL_DOWNSTREAM: Coupling is unidirectional: System->HT (V=0.324), HT->System (V=0.202), ratio 1.6x [C416]
-- HAZARD_AVOIDANCE:  [C166, C169, C1078]
+- HAZARD_AVOIDANCE: [WITHDRAWN v7.24/7.25]  [C166, C169, C1078 [WITHDRAWN as a guarantee: hazard layer, C2081]]
 - LINE1_ENRICHMENT: Line-1 has 50.2% HT vs 29.8% on lines 2+ (+20.3 pp) [C747]
 - LINE1_STEP_FUNCTION: Enrichment is confined to position 1 only: pos1=50.2%, pos2=31.7%, pos3+=27-33% [C748]
 - OPENING_ONLY: No closing enrichment: last line 30.8% = interior 29.8% [C750]
@@ -6497,15 +6845,15 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 - COMPOUND_SPECIFICATION:  [C935, C1137, C1141]
 - QUIRE_ORGANIZED: HT shows codicological clustering at the quire level [C450]
 - ANTICIPATORY_COMPENSATION: HT anticipates B stress at quire level (r=0.343, p=0.0015) [C459]
-- TAIL_CORRELATION: HT density tracks MIDDLE rarity (r=0.504, p=0.0045); tail_pressure explains 68% of R-sq=0.279 [C477, C461]
+- TAIL_CORRELATION: [MIXED] HT density tracks MIDDLE rarity (r=0.504, p=0.0045); tail_pressure explains 68% of R-sq=0.279 [C477, C461 [C461 demoted to Tier 3]]
 
 ### Sections -> Constraints
-- cross_system_manifestation: C341, C342, C344, C347, C348, C413, C419, C457, C459, C460, C488, C507, C747, C748, C749, C750, C794, C795, C796, C797, C798, C799, C800, C802, C806, C812, C844, C870, C924, C926, C927, C1137, C1138, C1146, C1147, C1148
-- paragraph_header: C085, C801, C802, C803, C840, C842, C843, C851
+- cross_system_manifestation: C341, C342, C344, C347, C348, C413, C419, C457, C459, C460, C488, C507, C609, C747, C748, C749, C750, C794, C795, C796, C797, C798, C799, C800, C802, C806, C812, C844, C870, C924, C926, C927, C1137, C1138, C1146, C1147, C1148, C1174
+- paragraph_header: C085, C801, C802, C803, C840, C842, C843, C851, C1174
 - morphology: C347, C417, C418, C766, C935, C1138, C1141, C1142
 - operational_status: C209, C221, C404, C405, C415, C792, C935, C1137, C1141
 - two_axis_model: C461, C477, C488, C489, C935, C1080
-- disallowed_interpretations: C166, C217, C221, C406, C414, C415, C416, C418, C452, C459, C611, C740, C935
+- disallowed_interpretations: C166, C217, C221, C406, C414, C415, C416, C418, C452, C459, C611, C740, C783, C935, C2060, C2081
 - summary: (no constraint refs)
 
 ---
@@ -6526,18 +6874,18 @@ For any co-occurrence or density-correlation claim, **within-folio shuffle null 
 - POOL_RELATIONSHIP:  [C846]
 - STRUCTURAL_PARALLEL:  [C854, C850, C853]
 - SECTION_PARAMETERIZED:  [C860, C852]
-- LINK_HAZARD_HT_NEUTRAL:  [C861, C1083]
+- LINK_HAZARD_HT_NEUTRAL: [MIXED]  [C861, C1083 [LINK/hazard reading of C861 withdrawn; C1083 stands]]
 - MACRO_DYNAMICS_NEUTRAL:  [C1022]
 - TERMINATION_MEMORYLESS:  [C1295, C1296, C1237, C1239]
-- CLUSTER_SELECTIVE:  [C1039, C1052]
+- CLUSTER_SELECTIVE: [MIXED]  [C1039, C1052 [clusters from the C475 graph; C475 demoted to Tier 3]]
 
 ### Sections -> Constraints
-- cross_system_manifestation: C812, C840, C841, C842, C843, C844, C847, C848, C849, C850, C851, C852, C853, C863, C869, C881, C884, C893, C915, C932, C933, C934, C935, C944, C1039, C1040, C1041, C1052, C1054, C1258, C1259, C1260
+- cross_system_manifestation: C089, C104, C475, C812, C840, C841, C842, C843, C844, C847, C848, C849, C850, C851, C852, C853, C863, C869, C881, C884, C893, C915, C932, C933, C934, C935, C944, C1039, C1040, C1041, C1052, C1054, C1258, C1259, C1260, C2082
 - a_b_correspondence: C846, C854, C885
-- folio_paragraph_organization: C855, C856, C857, C858, C859, C860, C861, C862
-- stability_properties: C963, C1022, C1027, C1054
-- disallowed_interpretations: C120, C171, C846, C855, C857, C858, C861, C862, C863, C963, C1027, C1295
-- summary: C1239, C1296
+- folio_paragraph_organization: C609, C783, C855, C856, C857, C858, C859, C860, C861, C862, C1174, C1401, C1403, C2060, C2081
+- stability_properties: C783, C963, C1022, C1027, C1054, C2060, C2081
+- disallowed_interpretations: C120, C171, C609, C783, C846, C855, C857, C858, C861, C862, C863, C963, C1027, C1174, C1295, C2060, C2081
+- summary: C089, C475, C1239, C1296, C2081, C2082
 
 
 ---

@@ -10,6 +10,8 @@
 
 ---
 
+> **Status note (v7.25, 2026-09-28):** the counts and tables on this page are a January 2026 snapshot. The generated `FIT_TABLE.txt` is the complete list (75 parsed fits, including the AZC, Brunschwig and Rupescissa registries not listed here). Many fits rest on constraints since demoted, retracted or never registered, or on withdrawn constructs (kernel, closed loop, LINK, hazard layer, convergence, REGIME = fire degree, R-series ordering); each affected fit carries a status note in its registry file and in its SUPPORTS field. See `SYSTEM/STATUS_BRIEF.md` §3.
+
 ## Quick Reference
 
 | Metric | Value |
@@ -71,11 +73,11 @@ See [FIT_METHODOLOGY.md](../SYSTEM/FIT_METHODOLOGY.md) for the complete standard
 |----|-----|------|--------|----------|
 | F-A-001 | Compositional Token Generator | F2 | PARTIAL | C267-C282 |
 | F-A-002 | Sister-Pair Classifier | F1 | NULL | C407-C410 |
-| F-A-003 | Repetition Distribution | F2 | PARTIAL | C250-C258 |
+| F-A-003 | Repetition Distribution | F2 | PARTIAL | C250-C258 [now F1 INVALIDATED in fits_currier_a.md — transcriber artifact] |
 | F-A-004 | Entry Clustering HMM | F2 | SUCCESS | C424 |
 | F-A-005 | Scarcity-Weighted Registry Effort | F1 | NULL | C293 |
 | F-A-007 | Forbidden-Zone Attraction | F1 | NULL | C281 |
-| F-A-008 | Repetition as Relational Stabilizer | F1 | NULL | C287-C290 |
+| F-A-008 | Repetition as Relational Stabilizer | F1 | NULL | C287-C290 [now INVALIDATED in fits_currier_a.md — transcriber artifact] |
 | F-A-009 | Comparability Window | F2 | SUCCESS | C424 |
 
 ### Currier B (F-B-###)
@@ -83,11 +85,11 @@ See [FIT_METHODOLOGY.md](../SYSTEM/FIT_METHODOLOGY.md) for the complete standard
 | ID | Fit | Tier | Result | Supports |
 |----|-----|------|--------|----------|
 | F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | SUPERSEDED | C366, C609, C190 (superseded by C1174) |
-| F-B-002 | QO Lane as Safe Energy Pathway | F3 | SUCCESS | C601, C574, C600 |
+| F-B-002 | QO Lane as Safe Energy Pathway | F3 | SUCCESS | C601, C574, C600 [C600 demoted to Tier 3; hazard layer withdrawn, C2081] |
 | F-B-003 | Pre-Operational Configuration via A->AZC->B Pipeline | F2 | SUCCESS | C473, C506, C468 |
 | F-B-004 | Lane Hysteresis Control Model | F2 | SUCCESS | C643, C549, C577, C608 |
 | F-B-005 | PP-Lane MIDDLE Discrimination | F2 | SUCCESS | C646, C576, C642 |
-| F-B-006 | Energy/Stabilization Lane Assignment | F3 | PARTIAL | C647, C645, C601, C521 |
+| F-B-006 | Energy/Stabilization Lane Assignment | F3 | PARTIAL | C647, C645, C601, C521 [hazard legs withdrawn, C2081; C645 mechanism retracted to Tier 4] |
 
 ### AZC (F-AZC-###)
 
@@ -101,9 +103,9 @@ See [FIT_METHODOLOGY.md](../SYSTEM/FIT_METHODOLOGY.md) for the complete standard
 
 | ID | Fit | Tier | Result | Supports |
 |----|-----|------|--------|----------|
-| F-ECR-001 | Material-Class Identification | F3 | SUCCESS | C109-C114, C232 |
-| F-ECR-002 | Apparatus-Role Identification | F3 | SUCCESS | C085-C108, C171, C216 |
-| F-ECR-003 | Decision-State Semantics | F3 | SUCCESS | C384, C404-C405, C459-C460 |
+| F-ECR-001 | Material-Class Identification | F3 | SUCCESS | C109-C114, C232 [hazard taxonomy imposed, C2060; withdrawn] |
+| F-ECR-002 | Apparatus-Role Identification | F3 | SUCCESS | C085-C108, C171, C216 [kernel superseded C089 → C2082; C085, C171, C216 demoted to Tier 3; withdrawn] |
+| F-ECR-003 | Decision-State Semantics | F3 | SUCCESS | C384, C404-C405, C459-C460 [archetypes D1–D7, D12 rest on withdrawn constructs] |
 
 See also: [ecr_stress_tests.md](ecr_stress_tests.md) for validation of F-ECR-001.
 

@@ -1,5 +1,7 @@
 # Expert Report: Puff-Voynich Entity Matching Investigation
 
+**Status (v7.25, 2026-09-28):** The bridge this investigation uses is retired — REGIME = Brunschwig fire degree and REGIME as 4 crisp classes (C1712, C2070; the gloss absorbed a sign flip in C1872) — and the Puff–Voynich "83:83" / mastery-horizon reading is retired as evidence (strategic review §5). The "RESOLVED / confirmed" status of the equivalence-class collapse is historical — see SYSTEM/STATUS_BRIEF.md §3.
+
 **Date:** 2026-01-14
 **Status:** Tier 4 SPECULATIVE (model frozen, no constraints modified)
 **Request:** Expert input on distribution mismatch anomaly
@@ -292,7 +294,7 @@ These bases are related but not identical. The mismatch is exactly where you'd e
 
 5. **Voynich organization**: Yes - by operational stability classes under continuous control. Material identity is externalized.
 
-### Equivalence Class Collapse (CONFIRMED)
+### Equivalence Class Collapse (CONFIRMED) [v7.25: historical — see status banner]
 
 Hierarchical clustering of REGIME_2/3 folios reveals:
 
@@ -320,7 +322,7 @@ Hierarchical clustering of REGIME_2/3 folios reveals:
 
 ### Status
 
-**RESOLVED** - Expert hypothesis confirmed via equivalence class collapse.
+**RESOLVED** - Expert hypothesis confirmed via equivalence class collapse. [v7.25: historical — premises retired; see status banner]
 
 ---
 

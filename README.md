@@ -49,14 +49,15 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 ## Open hypotheses
 
-- **Working interpretation (Tier 3): closed-loop, kernel-centric control programs.** Until 2026-09-28 this was the Tier-0
-  sentence. On re-check its supports did not hold: the only test behind "kernel-centric" was uninformative (it ranked
-  single EVA letters, where "h" is half of one glyph, and its pass criterion did not depend on the data), and all four
-  "closed-loop" legs — LINK monitoring, kernel intervention, hazard avoidance, convergence — were withdrawn (C089, C171,
-  C783, C2081, C1401–C1403). It is kept as an interpretation (not falsified). A fair glyph-level re-test
-  (PHASE_763, pre-registered) came back mixed: the glyph k shows nothing special, and the one signal that passed —
-  glyphs inside a word predicting the class of the next word — turned out to come from the word's ending (its last
-  two glyphs), not from a kernel (C2082).
+- **Working interpretation (Tier 3): procedural notation — a family of programs for a process.** No current
+  measurement distinguishes this from other constrained notations. Until 2026-09-28 the Tier-0 sentence was the
+  more specific "closed-loop, kernel-centric control programs". On re-check its supports did not hold: the only
+  test behind "kernel-centric" was uninformative (it ranked single EVA letters, where "h" is half of one glyph, and
+  its pass criterion did not depend on the data), and all four "closed-loop" legs — LINK monitoring, kernel
+  intervention, hazard avoidance, convergence — were withdrawn (C171, C783, C2081, C1401–C1403). A fair glyph-level
+  re-test (PHASE_763, pre-registered) came back mixed: the glyph k shows nothing special, and the one signal that
+  passed — glyphs inside a word predicting the class of the next word — comes from the word's ending (its last two
+  glyphs), not from a kernel (C2082).
 - **Content: the Pseudo-Lullian *Testamentum* tradition.** Open. The chapter-level recipe matching did not survive
   controls: a metalwork treatise matches the same folios (C2052), no source matches better than its own shuffled
   features, the section mapping and recto/verso adjacency do not reproduce, and the headline permutation test was
@@ -70,10 +71,11 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 - "51 *Testamentum* chapters matched to 41 folios (96%), p < 0.0001": the matcher is generic and carries no
   chapter-level signal; the p-value test cannot distinguish noise (C1882–C1975 triage, PHASE_762).
-- "17 forbidden transitions in 5 hazard classes" and the "three-level safety architecture" (C783, C2060, C2063, C2081).
+- "17 forbidden transitions in 5 hazard classes" and the "three-level safety architecture" (withdrawn: C783 demoted,
+  C2060, C2063, C2081).
 - "100% coverage" (it is 100% of the grammar's own vocabulary, 69.5% of tokens).
 - Atom glosses as locked meanings (k = heat, e = cool, …): they are role hypotheses; the e-depth "parameter" was a parser
-  artifact (C171, PHASE_758).
+  artifact (C171 demoted; PHASE_758).
 - The "0.19% reference rate" and "glossolalia ruled out by 100% coverage".
 - "Core model closed" and other closure language.
 
@@ -91,7 +93,7 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 | | |
 |---|---|
-| Live constraints | 1,875 (Tier 0: 17, Tier 1: 35, Tier 2: 1,684, Tier 3: 135, Tier 4: 4) |
+| Live constraints | 1,889 (Tier 0: 2, Tier 1: 38, Tier 2: 1,679, Tier 3: 166, Tier 4: 4) |
 | Research phases | 763 |
 | Method | Pre-registration for load-bearing tests; negative controls; external rival generators; test designs audited before lock by a separate statistics-only reviewer (same model, restricted context — a rigor check, not independent confirmation) |
 

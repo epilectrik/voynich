@@ -15,18 +15,22 @@ Basis: C121, C124 (grammar and its coverage, as corrected); C956, C357 (position
 PHASE_761 (boundary coupling, robust to spacing uncertainty and replicated on the ZL transcription); C531, C1790 (folio
 units: shared grammar, unique vocabulary); C2077, C2080 (generators excluded).
 
-## Working interpretation (Tier 3 — support withdrawn, not falsified)
+## Working interpretation (Tier 3)
 
-> *The grammar is read as a family of closed-loop, kernel-centric control programs.*
+> *The grammar is read as procedural notation — a family of programs for a process.*
 
-This was the Tier-0 sentence until 2026-09-28. It was restated because its supports were found flawed or withdrawn,
-not because a discriminating test refuted it:
-- **"Kernel-centric"** (C089 k, h, e; C085 primitives; C103–C105 roles): the only documented evidence — an adversarial-audit
+No current measurement distinguishes this reading from other constrained notations; excluding rival generators
+(C2077, C2080) is not evidence for it. Until 2026-09-28 the Tier-0 sentence was "a family of closed-loop,
+kernel-centric control programs designed to maintain a system within a narrow viability regime". Its specific supports
+were found flawed or withdrawn, not refuted by a discriminating test, and are no longer part of the working reading
+(reworded 2026-09-28, human-delegated):
+- **"Kernel-centric"** (withdrawn: C089 k, h, e superseded by C2082; C085 primitives and C103–C105 roles demoted to
+  Tier 3): the only documented evidence — an adversarial-audit
   surrogate test — is uninformative. Its pass criterion does not depend on the data (the real corpus fails it too: k ranks
   7th), its first-order Markov null reproduces the bigram counts its "centrality" is computed from (centrality ≈
   frequency), and it counts EVA letters, where "h" is half the bench glyph (PHASE_754). The glyph-level re-test (PHASE_763, C2082) came back MIXED. k shows no routing beyond matched control glyphs. The cross-token pass is carried by e and bench (and equally by the non-kernel d), and it disappears once the word's two-glyph ending is known: it is word-ending routing, not a kernel. Within-token centrality was inconclusive. C089 is superseded by C2082.
 - **"Closed-loop"** (C171): all four remaining legs are withdrawn — monitoring (the 38% LINK figure does not reproduce;
-  LINK is a morphological artifact, C609, C1174), intervention by kernel operators (above), hazard avoidance (C783, C2060,
+  LINK is a morphological artifact, C609, C1174), intervention by kernel operators (above), hazard avoidance (C783 demoted, C2060,
   C2063, C2081) and convergence (no sequential convergence at any scale; MONOSTATE is the most common mode; the completion
   gradient is a section confound — C1401–C1403). Three live results cut against a cycling reading: no cyclic eigenmode
   (C2067), no sequential convergence (C1402), complete paragraph resets (C1834, C1785).
@@ -53,7 +57,7 @@ not because a discriminating test refuted it:
 | Folios | 83 | Each folio uses the shared grammar with its own vocabulary |
 | Boundary glyph coupling | 0.228 bits (H), 0.243 (ZL); 0.215 at definite spaces | C1212, C1563; PHASE_761 |
 | Positional zone dependence | 0.172 bits beyond shuffle | C956; PHASE_757 |
-| Forbidden transitions | none beyond known effects | C783, C2060, C2063, C2081 |
+| Forbidden transitions | none beyond known effects (layer withdrawn) | C783 (demoted), C2060, C2063, C2081 |
 | LINK density | 13.2% | `ol` morphology; a morphological artifact, not a functional layer (C609, C1174) |
 
 ---
@@ -85,8 +89,8 @@ convergence as dynamics (C1401–C1403 — the 57.8% STATE-C figure stays as a m
 
 ## What This Is NOT
 
-- **NOT a translation** — no token has a demonstrated equivalent in any language (C171 semantic ceiling framing retained
-  as a statement about recoverability).
+- **NOT a translation** — no token has a demonstrated equivalent in any language. (C171, demoted to Tier 3: nothing has
+  been recovered from internal structure alone; recovery needs an external channel — see `SYSTEM/RESEARCH_AGENDA.md`.)
 - **NOT natural language written one token per word** (C132, C2015, C2022; the old "0.19% reference rate" is tainted and not
   relied on).
 - **NOT a cipher of the classes tested** (token ≈ word codes; atom-level polyalphabetic C1976; three published decipherments
@@ -100,9 +104,9 @@ See [falsifications.md](falsifications.md) for the rejection list.
 
 ## Purpose Class (Tier 3)
 
-"Continuous closed-loop process control" was the best-supported purpose class among those tested (C171). Only 2 of its 12
-eliminations were discriminating tests (NEGATIVE_AUDIT), and its four structural legs are now withdrawn (above). It
-remains a working interpretation, not a finding.
+"Continuous closed-loop process control" was once the best-supported purpose class among those tested (C171, demoted
+to Tier 3). Only 2 of its 12 eliminations were discriminating tests (NEGATIVE_AUDIT), and its four structural legs are
+withdrawn (above). The purpose of the text is an open question; see `SYSTEM/RESEARCH_AGENDA.md`.
 
 ---
 

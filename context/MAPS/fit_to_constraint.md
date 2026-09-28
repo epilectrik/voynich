@@ -4,6 +4,8 @@
 
 **Warning:** Fits explain patterns. They do NOT create or modify constraints.
 
+> **Status note (v7.25):** several fits below "support" constraints that have since been demoted, superseded or scoped — above all those resting on the kernel (C089 superseded by C2082; C085, C103–C105 Tier 3), the hazard layer (C783, C2060, C2081; C216 Tier 3) and closed-loop control (C171 Tier 3). A fit's SUCCESS label is historical where its supporting constraints are withdrawn; those rows are annotated. Fit tiers/results are aligned with the generated `MODEL_FITS/FIT_TABLE.txt` (75 fits). Withdrawn constructs: SYSTEM/STATUS_BRIEF.md §3.
+
 ---
 
 ## How to Use
@@ -19,23 +21,23 @@ Look up a constraint number to see which fits explain its mechanism.
 |--------|------|------|----------|--------|
 | F-A-001 | Compositional Token Generator | F2 | C267-C282 | PARTIAL |
 | F-A-002 | Sister-Pair Classifier | F1 | C407-C410 | NULL |
-| F-A-003 | Repetition Distribution | F2 | C250-C258 | PARTIAL |
+| F-A-003 | Repetition Distribution | F1 (was F2) | (none - artifact; was C250-C258) | INVALIDATED (per FIT_TABLE; was PARTIAL) |
 | F-A-004 | Entry Clustering HMM | F2 | C424 | SUCCESS |
 | F-A-005 | Scarcity-Weighted Registry Effort | F1 | C293 (partial) | NULL |
 | F-A-007 | Forbidden-Zone Attraction | F1 | C281 (unexpectedly) | NULL (opposite) |
-| F-A-008 | Repetition as Relational Stabilizer | F1 | C287-C290 (weakly) | NULL |
+| F-A-008 | Repetition as Relational Stabilizer | F1 | (none - artifact; was C287-C290 weakly) | INVALIDATED (per FIT_TABLE; was NULL) |
 | F-A-009 | Comparability Window | F2 | C424 (refines) | SUCCESS |
-| F-ECR-001 | Material-Class Identification | F3 | C109-C114, C232 | SUCCESS |
-| F-ECR-002 | Apparatus-Role Identification | F3 | C085-C108, C171, C216 | SUCCESS |
+| F-ECR-001 | Material-Class Identification | F3 | C109-C114, C232 | SUCCESS (historical: rests on the hazard topology, withdrawn — C109 scoped, C2060, C2081) |
+| F-ECR-002 | Apparatus-Role Identification | F3 | C085-C108, C171, C216 | SUCCESS (historical: kernel C089 superseded by C2082; C085, C103–C105, C171, C216 demoted to Tier 3) |
 | F-ECR-003 | Decision-State Semantics | F3 | C384, C404-C405, C459-C460 | SUCCESS |
 | F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | C366, C609, C190 | SUPERSEDED (C1174) |
-| F-B-002 | QO Lane as Safe Energy Pathway | F3 | C601, C574, C600 | SUCCESS |
+| F-B-002 | QO Lane as Safe Energy Pathway | F3 | C601, C574, C600 | SUCCESS (historical: C600 demoted to Tier 3; C601 scoped — hazard layer withdrawn, C2081) |
 | F-B-003 | Pre-Operational Configuration via A→AZC→B Pipeline | F2 | C473, C506, C468 | SUCCESS |
 | F-B-004 | Lane Hysteresis Control Model | F2 | C643, C549, C577, C608 | SUCCESS |
 | F-B-005 | PP-Lane MIDDLE Discrimination | F2 | C646, C576, C642 | SUCCESS |
-| F-B-006 | Energy/Stabilization Lane Assignment | F3 | C647, C645, C601, C521 | PARTIAL |
+| F-B-006 | Energy/Stabilization Lane Assignment | F3 | C647, C645, C601, C521 | PARTIAL (C645 Markov-trivial under the 5-gram null; C601 scoped — hazard layer withdrawn, C2081) |
 | F-AZC-015 | Windowed AZC Activation Trace | F2 | C440, C441-C444 | SUCCESS |
-| F-AZC-016 | AZC->B Constraint Fit Validation | F2 | C468, C469, C470 | SUCCESS |
+| F-AZC-016 | AZC->B Constraint Fit Validation | F2 | C468, C469, C470 | SUCCESS (C470 demoted to Tier 3: frequency confound) |
 
 ---
 
@@ -51,7 +53,7 @@ Look up a constraint number to see which fits explain its mechanism.
 
 | Constraint | Fit ID | What Fit Explains |
 |------------|--------|-------------------|
-| C250-C258 | F-A-003 | Shifted Poisson approximately fits repetition counts |
+| C250-C258 | F-A-003 | Shifted Poisson approximately fits repetition counts [F-A-003 is INVALIDATED in FIT_TABLE (artifact; cf. CAS-MULT, transcriber artifact)] |
 
 ### Sister-Pair Architecture (C407-C411)
 
@@ -90,27 +92,27 @@ Look up a constraint number to see which fits explain its mechanism.
 
 | Constraint | Fit ID | What Fit Explains |
 |------------|--------|-------------------|
-| C287-C290 | F-A-008 | NULL: repetition is uniform across universality classes |
+| C287-C290 | F-A-008 | NULL: repetition is uniform across universality classes [F-A-008 is INVALIDATED in FIT_TABLE (artifact)] |
 
 **Interpretation:** F-A-008 tested whether universal vocabulary receives more repetition (salience reinforcement). It does not. Relationality is enforced through selection (F-A-007), not reinforcement. Repetition serves literal enumeration uniformly.
 
 ---
 
-### Currier B Operational Controls (C190, C366, C468, C473, C506, C574, C600, C601, C609)
+### Currier B Operational Controls (C190, C366, C468, C473, C506, C574, C600, C601, C609) — C600 demoted, C601 scoped, F-B-001 superseded
 
 | Constraint | Fit ID | What Fit Explains |
 |------------|--------|-------------------|
 | C366 | F-B-001 | ~~LINK phase boundary maps to monitoring-to-intervention transition~~ SUPERSEDED by C1174 |
 | C609 | F-B-001 | ~~13.2% LINK density maps to sustained monitoring duty cycle~~ SUPERSEDED by C1174 |
 | C190 | F-B-001 | LINK-CEI anticorrelation (r=-0.7057) — statistic valid, interpretation SUPERSEDED by C1174 |
-| C601 | F-B-002 | QO's 0/19 hazard exclusion maps to non-fire/safe thermal pathway |
+| C601 | F-B-002 | QO's 0/19 hazard exclusion maps to non-fire/safe thermal pathway [C601 scoped: hazard layer withdrawn, C2081] |
 | C574 | F-B-002 | QO-CHSH grammatical identity maps to same operations at different risk levels |
-| C600 | F-B-002 | CC sub-group trigger selectivity maps to distinct entry points for different methods |
+| C600 | F-B-002 | CC sub-group trigger selectivity maps to distinct entry points for different methods [C600 demoted to Tier 3: 5-gram-reproducible, PHASE_735] |
 | C473 | F-B-003 | A-record as constraint bundle maps to pre-operational configuration (fuel, vessel, method) |
 | C506 | F-B-003 | PP→survival correlation (r=0.715) maps to better configuration → more operational options |
 | C468 | F-B-003 | B blind execution maps to operator executing within pre-set apparatus constraints |
 
-**Interpretation:** F-B-002 and F-B-003 demonstrate alignment between Brunschwig's verified distillation control practices and Currier B's structural architecture. F-B-001 was SUPERSEDED by C1174 (LINK is morphological artifact, not functional layer). All mappings verified against original German text (sources/brunschwig_1500_text.txt, Part 1, lines 1-2800).
+**Interpretation:** F-B-002 and F-B-003 demonstrate alignment between Brunschwig's verified distillation control practices and Currier B's structural architecture. [Historical: F-B-002's supports are partly withdrawn (C600 demoted; hazard layer, C2081); the control-practice alignment is a Tier-3 interpretation.] F-B-001 was SUPERSEDED by C1174 (LINK is morphological artifact, not functional layer). All mappings verified against original German text (sources/brunschwig_1500_text.txt, Part 1, lines 1-2800).
 
 ---
 
@@ -126,42 +128,44 @@ Look up a constraint number to see which fits explain its mechanism.
 | C576 | F-B-005 | Vocabulary bifurcation has k/t vs o character-content basis |
 | C642 | F-B-005 | A-record architecture transmits lane-relevant information |
 | C647 | F-B-006 | QO k=70.7%, CHSH e=68.7% accounts for energy/stabilization assignment |
-| C645 | F-B-006 | CHSH 75.2% post-hazard accounts for stabilization function |
-| C601 | F-B-006 | QO zero hazard accounts for safe (non-hazardous) energy application |
-| C521 | F-B-006 | Kernel directionality (e absorbing) consistent with CHSH stabilization role |
+| C645 | F-B-006 | CHSH 75.2% post-hazard accounts for stabilization function [C645 Markov-trivial under the 5-gram null (PHASE_729); hazard layer withdrawn, C2081] |
+| C601 | F-B-006 | QO zero hazard accounts for safe (non-hazardous) energy application [C601 scoped: hazard layer withdrawn, C2081] |
+| C521 | F-B-006 | Kernel directionality (e absorbing) consistent with CHSH stabilization role [C521 scoped by PHASE_754: "e→h = 0" is an EVA spelling identity; "absorbing" is interpretation; kernel framing superseded, C089 → C2082] |
 
-**Interpretation:** F-B-004 through F-B-006 establish that the two execution lanes (QO/CHSH) exhibit hysteresis-like oscillation, are predicted by A-side PP MIDDLE vocabulary, and carry distinct kernel-character morphological signatures (QO=k-energy, CHSH=e-stability). The "Change/Hold" interpretation (QO=hold, CHSH=change) is falsified in its literal form; the reversed mapping (QO=energy addition, CHSH=stabilization) is consistent with all Tier 0-2 constraints. F-B-002 annotation confirms "safe energy pathway" = controlled energy application.
+**Interpretation:** F-B-004 through F-B-006 establish that the two execution lanes (QO/CHSH) exhibit hysteresis-like oscillation, are predicted by A-side PP MIDDLE vocabulary, and carry distinct kernel-character morphological signatures (QO=k-energy, CHSH=e-stability). The "Change/Hold" interpretation (QO=hold, CHSH=change) is falsified in its literal form; the reversed mapping (QO=energy addition, CHSH=stabilization) is consistent with all Tier 0-2 constraints. F-B-002 annotation confirms "safe energy pathway" = controlled energy application. [Status v7.25: the k/e letter-content difference between the qo and ok/ch/sh families stands as a measurement (C1313, C647); "energy" / "stabilization" / "safe" are Tier-3 readings, and the kernel and hazard supports are withdrawn (C089 superseded by C2082; C2081).]
 
 ---
 
 ### Entity-Class Reconstruction - ECR (Global)
 
+**[Withdrawn v7.24/7.25 — historical; see SYSTEM/STATUS_BRIEF.md §3]** F-ECR-001 and F-ECR-002 rest on the hazard topology and the kernel operators, both withdrawn (C783, C2060, C2081; C089 superseded by C2082), and on C171 and C216, both demoted to Tier 3. F-ECR-003's supports are not affected by the review.
+
 | Constraint | Fit ID | What Fit Explains |
 |------------|--------|-------------------|
-| C109-C114 | F-ECR-001 | 4 material classes inferred from hazard topology |
+| C109-C114 | F-ECR-001 | 4 material classes inferred from hazard topology [hazard topology withdrawn; C109 scoped] |
 | C232 | F-ECR-001 | Section conditioning explained by class instantiation |
-| C085-C108 | F-ECR-002 | Kernel operators map to apparatus roles |
-| C171 | F-ECR-002 | Circulatory requirement implies circulation path role |
-| C216 | F-ECR-002 | Hybrid hazard model explains 71/29 batch/apparatus split |
+| C085-C108 | F-ECR-002 | Kernel operators map to apparatus roles [kernel withdrawn: C089 superseded by C2082; C085, C103–C105 demoted] |
+| C171 | F-ECR-002 | Circulatory requirement implies circulation path role [C171 demoted to Tier 3] |
+| C216 | F-ECR-002 | Hybrid hazard model explains 71/29 batch/apparatus split [C216 demoted to Tier 3] |
 | C384 | F-ECR-003 | A↔B decoupling explained by layer decision archetypes |
 | C404-C405 | F-ECR-003 | HT non-operational explained by attention archetype |
 | C459-C460 | F-ECR-003 | AZC orientation role explained by context archetype |
 
-**Interpretation:** ECR fits demonstrate that frozen constraints can be explained by a coherent apparatus-centric model. Material classes, apparatus roles, and decision archetypes are mutually consistent and satisfy all referenced constraints.
+**Interpretation (historical — the "frozen constraints" it refers to are largely withdrawn, see banner above):** ECR fits demonstrate that frozen constraints can be explained by a coherent apparatus-centric model. Material classes, apparatus roles, and decision archetypes are mutually consistent and satisfy all referenced constraints.
 
 ---
 
-### AZC Pipeline Resolution (C440-C444, C468-C470)
+### AZC Pipeline Resolution (C440-C444, C468-C470; C470 demoted)
 
 | Constraint | Fit ID | What Fit Explains |
 |------------|--------|-------------------|
 | C440-C444 | F-AZC-011, F-AZC-012 | Uniform B-to-AZC sourcing, vocabulary-activated constraints |
-| C466-C467 | F-A-014b | PREFIX encodes control-flow participation, qo- is kernel-adjacent |
+| C466-C467 | F-A-014b | PREFIX encodes control-flow participation, qo- is kernel-adjacent [the "kernel" label is historical: C089 superseded by C2082] |
 | C468 | F-AZC-016 | 28x escape rate transfer from AZC to B |
 | C469 | F-AZC-015, F-AZC-016 | Categorical resolution via vocabulary legality |
-| C470 | F-AZC-016 | 12.7x MIDDLE restriction inheritance |
+| C470 | F-AZC-016 | 12.7x MIDDLE restriction inheritance [C470 demoted to Tier 3: frequency carryover (B-restriction ≡ B-rarity), not a causal pipeline] |
 
-**Interpretation:** F-AZC-015 established AZC is an ambient legality field (70% of folios active per window). F-AZC-016 validated causal constraint transfer: escape rates and MIDDLE restrictions propagate from AZC to B. The pipeline A -> AZC -> B is structurally and behaviorally validated.
+**Interpretation:** F-AZC-015 established AZC is an ambient legality field (70% of folios active per window). F-AZC-016 validated causal constraint transfer: escape rates and MIDDLE restrictions propagate from AZC to B. The pipeline A -> AZC -> B is structurally and behaviorally validated. [Scoped v7.25: the MIDDLE-restriction leg (C470) is demoted to Tier 3 as a frequency confound, so "causal constraint transfer" is not established for that leg.]
 
 ---
 
@@ -174,7 +178,7 @@ Failed fits provide negative knowledge by exclusion.
 | F-A-002 | Contextual ch/sh prediction | Sister choice is external to text features |
 | F-A-005 | Universal scarcity-effort compensation | Effect is section-specific (H only), not registry-wide |
 | F-A-007 | Boundary/frontier attraction | Registry prefers INTERIOR (universal), not boundary (exclusive) |
-| F-A-008 | Repetition as salience reinforcement | Repetition is uniform; relationality enforced through selection only |
+| F-A-008 | Repetition as salience reinforcement | Repetition is uniform; relationality enforced through selection only [FIT_TABLE now lists F-A-008 as INVALIDATED (artifact), not NULL] |
 
 ---
 

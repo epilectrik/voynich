@@ -35,8 +35,11 @@ FILE_SCOPE_MAP = {
 }
 
 
+# Row patterns are confined to ONE line ([ \t] not \s, [^|\n] not [^|]). With \s a match could run across a
+# line break, so a struck row could swallow the row after it (fixed 2026-09-28: C132 was silently dropped).
 STRUCK_ROW = re.compile(
-    r'^\|\s*~~\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*~~\s*\|\s*(.+?)\s*\|\s*([^|]*?)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|',
+    r'^\|[ \t]*~~[ \t]*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}[ \t]*~~[ \t]*\|[ \t]*(.+?)[ \t]*\|[ \t]*([^|\n]*?)[ \t]*\|'
+    r'[ \t]*([^|\n]+?)[ \t]*\|[ \t]*(.+?)[ \t]*\|',
     re.MULTILINE)
 DEAD_STATUS = re.compile(r'STATUS:\s*(RETRACTED|SUPERSEDED)', re.IGNORECASE)
 
@@ -101,10 +104,10 @@ def parse_index_constraints(index_path):
     # Also handle sub-numbered constraints like 384.a
     # The number field must be ONLY digits (optionally .a/.b suffix) — reject ranges like 251-262
     # Tier cell forms: '2' | '~~2~~ 3' (demoted, alive at 3) | '~~2~~' (dead) | '2/3' (borderline -> 3)
-    pattern = (r'\|\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*\|\s*(.+?)\s*\|\s*'
-               r'(\d+|~~\s*\d\s*~~\s*\d?|\d\s*/\s*\d)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|')
+    pattern = (r'^\|[ \t]*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}[ \t]*\|[ \t]*(.+?)[ \t]*\|[ \t]*'
+               r'(\d+|~~[ \t]*\d[ \t]*~~[ \t]*\d?|\d[ \t]*/[ \t]*\d)[ \t]*\|[ \t]*([^|\n]+?)[ \t]*\|[ \t]*(.+?)[ \t]*\|')
 
-    for match in re.finditer(pattern, content):
+    for match in re.finditer(pattern, content, re.MULTILINE):
         num_str = match.group(1).strip()
         desc = match.group(2).strip()
         raw_tier = match.group(3).strip()
