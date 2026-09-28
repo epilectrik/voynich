@@ -1,0 +1,95 @@
+{
+ "explicit_pages": 150,
+ "by_threshold": {
+  "-2": {
+   "n": 2831,
+   "accuracy": 0.9428,
+   "true_join": 1213,
+   "false_join": 147,
+   "true_split": 1456,
+   "missed_join": 15,
+   "word_count_bias": 132
+  },
+  "-1": {
+   "n": 2831,
+   "accuracy": 0.9558,
+   "true_join": 1205,
+   "false_join": 102,
+   "true_split": 1501,
+   "missed_join": 23,
+   "word_count_bias": 79
+  },
+  "0": {
+   "n": 2831,
+   "accuracy": 0.959,
+   "true_join": 1194,
+   "false_join": 82,
+   "true_split": 1521,
+   "missed_join": 34,
+   "word_count_bias": 48
+  },
+  "1": {
+   "n": 2831,
+   "accuracy": 0.9615,
+   "true_join": 1179,
+   "false_join": 60,
+   "true_split": 1543,
+   "missed_join": 49,
+   "word_count_bias": 11
+  },
+  "1.5": {
+   "n": 2831,
+   "accuracy": 0.9633,
+   "true_join": 1176,
+   "false_join": 52,
+   "true_split": 1551,
+   "missed_join": 52,
+   "word_count_bias": 0
+  },
+  "2": {
+   "n": 2831,
+   "accuracy": 0.959,
+   "true_join": 1162,
+   "false_join": 50,
+   "true_split": 1553,
+   "missed_join": 66,
+   "word_count_bias": -16
+  },
+  "3": {
+   "n": 2831,
+   "accuracy": 0.9534,
+   "true_join": 1140,
+   "false_join": 44,
+   "true_split": 1559,
+   "missed_join": 88,
+   "word_count_bias": -44
+  },
+  "5": {
+   "n": 2831,
+   "accuracy": 0.9325,
+   "true_join": 1070,
+   "false_join": 33,
+   "true_split": 1570,
+   "missed_join": 158,
+   "word_count_bias": -125
+  },
+  "8": {
+   "n": 2831,
+   "accuracy": 0.8693,
+   "true_join": 880,
+   "false_join": 22,
+   "true_split": 1581,
+   "missed_join": 348,
+   "word_count_bias": -326
+  },
+  "10": {
+   "n": 2831,
+   "accuracy": 0.8071,
+   "true_join": 697,
+   "false_join": 15,
+   "true_split": 1588,
+   "missed_join": 531,
+   "word_count_bias": -516
+  }
+ }
+}

@@ -95,6 +95,21 @@ Medieval Latin technical manual on **painting (Book I), glassmaking (Book II), a
 
 **Status:** Acquired 2026-05-14. Not yet tested. See `theophilus/README.md` for chapter line ranges and binding test criteria.
 
+### `aberdeen_bestiary/` — Aberdeen Bestiary (Aberdeen, University Library, MS 24; England c. 1200)
+
+Per-page Latin corpus and collation, used as the **codicological negative control** for the bifolium pipeline
+(PHASE_759 = PHASE_752 v2 step 1): a normal codex with continuous text and a known quire structure.
+
+| File | Contents |
+|------|----------|
+| `collation.json` | 15 quires; folio membership, slot positions, conjugate pairs, verbatim evidence; 14 determined, H undetermined |
+| `README.md` | Source, terms, extraction method, known problems (f45r lacks a transcription; quires G–I line-break model) |
+| `*.py` | Cached crawler, Latin extraction, line-break model and validation, collation builder |
+| `aberdeen_pages.json`, `html/` | Full transcription text and raw HTML — **local only (git-ignored)**: the site states no licence for the transcription |
+
+**Status:** Acquired 2026-09-27 (University of Aberdeen digital edition, abdn.ac.uk/bestiary). 199 text pages,
+43,800 words.
+
 ---
 
 ## Pharmacy Corpora (Section S candidates)

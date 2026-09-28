@@ -1,0 +1,999 @@
+{
+ "manuscript": "Aberdeen, University Library, MS 24 (Aberdeen Bestiary)",
+ "foliation": "digital edition https://www.abdn.ac.uk/bestiary/ms24 (f1r-f103v, 206 pages); integers below are its folio numbers",
+ "leaf_id_note": "'56a'/'56b' and '93a'/'93b' are the two physical leaves foliated as f56 and f93 (a = leaf bearing the recto page, b = leaf bearing the verso page); their inner sides are blank and pasted together.",
+ "james_formula_as_quoted_by_site": "A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4)",
+ "reading_of_formula": "Parenthetical numbers are wanting leaf positions. 'E8-L8 (1)' is read as quires E, F, G, H, I, K, L of eight, with L wanting its first leaf: the site's own leaf marks put a first-folio mark on the first surviving leaf of E, F, G, I and M, while f73r carries L's second-folio mark with 'folio 1 missing'. With that reading, and with the pasted f93 pair counted as two leaves, the formula accounts exactly for f1-f103 (A-D 24 leaves = f1-f24; E-K 48 = f25-f72; L 7 = f73-f79; M 8 = f80-f87; N 8 leaves = f88-f94; O 6 = f95-f100; P 3 = f101-f103). James's leaves total 104; the foliation is 103 because f93 is two leaves foliated once. The pasted f56 pair (also two leaves per the site and Clark) is not accounted for by 'H8'; H is therefore left undetermined.",
+ "james_leaf_counts": {
+  "A": 6,
+  "B": 6,
+  "C": 6,
+  "D": 6,
+  "E": 8,
+  "F": 8,
+  "G": 8,
+  "H": 8,
+  "I": 8,
+  "K": 8,
+  "L": 7,
+  "M": 8,
+  "N": 8,
+  "O": 6,
+  "P": 3
+ },
+ "physical_leaf_count_estimate": "105 text-block leaves (103 foliated + the second leaf of each pasted pair), plus 1 flyleaf per Clark ('1+103 folios')",
+ "sources": [
+  "University of Aberdeen, The Aberdeen Bestiary digital edition: codicology.php ('Gatherings, quire marks, folio marks'; quotes M. R. James's analysis), per-folio Commentary sections, and the 'Folio Marks' table image; accessed 2026-09-27.",
+  "M. R. James, A Catalogue of the Medieval Manuscripts in the University Library, Aberdeen (Cambridge, 1932), MS 24 - NOT consulted directly (paywalled on Cambridge Core); known here only via the site's quotation.",
+  "W. B. Clark, A Medieval Book of Beasts: The Second-Family Bestiary (Woodbridge, 2006), Cat. no. 1 - read via Internet Archive full-text-search snippets (item medievalbookofbe0000clar); gives no collation formula."
+ ],
+ "clark_codicology": "Clark 2006, Cat. no. 1: \"Codicology: 302 x 210 (185 x 110/115), 1+103 folios; ... Rebound by Brit. Mus. 1931-32.\"",
+ "quires": [
+  {
+   "quire": "A",
+   "folios": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "physical_leaves": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "positions": {
+    "1": 1,
+    "2": null,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5,
+    "7": 6,
+    "8": null
+   },
+   "structure": "8 wants 2, 8",
+   "conjugate_pairs": [
+    [
+     2,
+     5
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "singletons_conjugate_lost": [
+    1,
+    6
+   ],
+   "status": "determined",
+   "quire_mark": null,
+   "leaf_marks": null,
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "codicology.php: \"Some are missing with the result that the sequence runs -,B,C,D,E,F,G,H,I,K,-(folio missing),M,N.\"",
+    "f7r commentary: \"The start of quire B is indicated by the letter 'b' in the centre of the lower margin.\"",
+    "f1v commentary: \"Two illustrations of the Creation sequence are missing, showing the the plants and trees and the creation of the moon and stars.\"",
+    "Clark 2006, Cat. no. 1: \"Missing Text: Creation days 3, 4\"",
+    "f3v commentary: \"This page and f.4r were deliberately left blank and probably intended to be glued together.\"",
+    "Clark 2006, Cat. no. 1 (via IA full-text snippets): \"Assembly marks in a variety of forms in lead point, most in outer margins, lower corners, ff. 21, 26-28, 33-36, 41-44, 57, 58, 60, 73, 75, 80-83 (forms shown on the Website). Quire signatures in capital letters are later additions; 2 leaves blank (ff. 3v-4, 6-6v), 2 leaves glued together (ff. 56v-57, 93v-94).\""
+   ],
+   "caveats": [
+    "No quire mark ('-' in the site's sequence) and no leaf marks recorded; positions follow James.",
+    "Consistency check: the centre of the quire (leaf 4v / leaf 5r) falls at f3v/f4r, the two facing blank pages; leaf 2 (lost) falls between f1v (day 2) and f2r (day 5), where days 3-4 are missing."
+   ]
+  },
+  {
+   "quire": "B",
+   "folios": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "physical_leaves": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "positions": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": null,
+    "5": null,
+    "6": 10,
+    "7": 11,
+    "8": 12
+   },
+   "structure": "8 wants 4, 5",
+   "conjugate_pairs": [
+    [
+     7,
+     12
+    ],
+    [
+     8,
+     11
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "b (f7r)",
+   "leaf_marks": {
+    "8": "* (second folio)"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f7r commentary: \"The start of quire B is indicated by the letter 'b' in the centre of the lower margin.\"",
+    "f8r commentary: \"There is a '*' on the top right corner to indicate the second folio of quire B.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f9v commentary: \"Based on the parallel text in the Ashmole Bestiary, pages for the antelope, unicorn, lynx, griffon and the illustration of the elephant are missing between f.9v and f.10r .\"",
+    "Clark 2006, Cat. no. 1: \"Missing leaves with illustrations (34 leaves by comparison to Ashmole Bestiary): Creation scenes for days 2, 5, 6; antelope - elephant (betw. ff. 9v and 10); crocodile - parandrus (betw. ff. 15v and 16); dog (betw. ff. 18v and 19); bullock - horse (betw. ff. 21v and 22); great fish and fish 'carpet' (betw. ff. 72 and 73).\""
+   ],
+   "caveats": []
+  },
+  {
+   "quire": "C",
+   "folios": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+   ],
+   "physical_leaves": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+   ],
+   "positions": {
+    "1": 13,
+    "2": 14,
+    "3": 15,
+    "4": null,
+    "5": 16,
+    "6": 17,
+    "7": 18,
+    "8": null
+   },
+   "structure": "8 wants 4, 8",
+   "conjugate_pairs": [
+    [
+     14,
+     18
+    ],
+    [
+     15,
+     17
+    ]
+   ],
+   "singletons_conjugate_lost": [
+    13,
+    16
+   ],
+   "status": "determined",
+   "quire_mark": "c (f13r)",
+   "leaf_marks": null,
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f13r commentary: \"In the centre of the lower margin is a very faint 'c', indicating the start of the next quire.\"",
+    "f19r commentary: \"Initial indicator 's' in red in right margin, and a quire mark (d) at the bottom.\"",
+    "f15v commentary: \"Based on the contents of the Ashmole Bestiary, there are pages missing for leocrota, crocodile, manticore, and start of parander.\"",
+    "f18v commentary: \"After this page a leaf is missing which probably showed the dog detecting a murderer, the story told on f.19r .\"",
+    "Clark 2006, Cat. no. 1: \"Missing leaves with illustrations (34 leaves by comparison to Ashmole Bestiary): Creation scenes for days 2, 5, 6; antelope - elephant (betw. ff. 9v and 10); crocodile - parandrus (betw. ff. 15v and 16); dog (betw. ff. 18v and 19); bullock - horse (betw. ff. 21v and 22); great fish and fish 'carpet' (betw. ff. 72 and 73).\""
+   ],
+   "caveats": [
+    "No leaf marks recorded for C; positions follow James, corroborated by the two text losses (f15v/f16r = leaf 4; after f18v = leaf 8)."
+   ]
+  },
+  {
+   "quire": "D",
+   "folios": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "physical_leaves": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "positions": {
+    "1": 19,
+    "2": 20,
+    "3": 21,
+    "4": null,
+    "5": null,
+    "6": 22,
+    "7": 23,
+    "8": 24
+   },
+   "structure": "8 wants 4, 5",
+   "conjugate_pairs": [
+    [
+     19,
+     24
+    ],
+    [
+     20,
+     23
+    ],
+    [
+     21,
+     22
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "d (f19r)",
+   "leaf_marks": {
+    "21": "three nested chevrons (third folio)"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f19r commentary: \"Initial indicator 's' in red in right margin, and a quire mark (d) at the bottom.\"",
+    "f21r commentary: \"Folio mark of three nested chevrons in top right corner.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f21v commentary: \"After f.21v two leaves are missing which should have contained ox, camel, dromedary, ass, wild ass, part of horse.\"",
+    "f22r commentary: \"After two missing leaves the text resumes with some heroic horses and their loyalty to their masters.\""
+   ],
+   "caveats": []
+  },
+  {
+   "quire": "E",
+   "folios": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "physical_leaves": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "positions": {
+    "1": 25,
+    "2": 26,
+    "3": 27,
+    "4": 28,
+    "5": 29,
+    "6": 30,
+    "7": 31,
+    "8": 32
+   },
+   "structure": "8",
+   "conjugate_pairs": [
+    [
+     25,
+     32
+    ],
+    [
+     26,
+     31
+    ],
+    [
+     27,
+     30
+    ],
+    [
+     28,
+     29
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "e (f25r)",
+   "leaf_marks": {
+    "25": "1 match stick",
+    "26": "2",
+    "27": "3",
+    "28": "4 (site calls it 'quire mark' here)"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f25r commentary: \"Gathering mark (e) at the bottom, and a 'match stick' folio mark, bottom right.\"",
+    "f26r commentary: \"Initial type 2, and folio mark of two 'match sticks', bottom right.\"",
+    "f27r commentary: \"Initials type 2, and folio mark of three 'match sticks' bottom right.\"",
+    "f28r commentary: \"Initial type 2, quire mark of four 'matchsticks', colour indication in top right margin (a);Editorial addition in right margin, four lines from bottom: 'id est terrenorum'.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f33r commentary: \"Gathering mark at centre bottom (f).\"",
+    "codicology.php: \"Although there were eight folios only the first four needed marking because they were folded with the last four.\""
+   ],
+   "caveats": [
+    "Clark lists assembly marks at ff. 26-28 only (not 25); the site records the first mark on f25r."
+   ]
+  },
+  {
+   "quire": "F",
+   "folios": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "physical_leaves": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "positions": {
+    "1": 33,
+    "2": 34,
+    "3": 35,
+    "4": 36,
+    "5": 37,
+    "6": 38,
+    "7": 39,
+    "8": 40
+   },
+   "structure": "8",
+   "conjugate_pairs": [
+    [
+     33,
+     40
+    ],
+    [
+     34,
+     39
+    ],
+    [
+     35,
+     38
+    ],
+    [
+     36,
+     37
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "f (f33r)",
+   "leaf_marks": {
+    "33": "1 horizontal match stick",
+    "34": "2",
+    "35": "3",
+    "36": "4"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f33r commentary: \"Gathering mark at centre bottom (f).\"",
+    "f34r commentary: \"One initial type 2, margins visible, Folio mark of two horizontal 'match sticks' in top right corner.\"",
+    "f35r commentary: \"Folio mark of three horizontal 'match sticks' in top right corner.\"",
+    "f36r commentary: \"Folio mark of four horizontal 'matchsticks' on top right corner.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f41r commentary: \"Two quire marks, a 'g' in pencil and another in ink at bottom centre.\"",
+    "codicology.php: \"Although there were eight folios only the first four needed marking because they were folded with the last four.\""
+   ],
+   "caveats": []
+  },
+  {
+   "quire": "G",
+   "folios": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "physical_leaves": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+   ],
+   "positions": {
+    "1": 41,
+    "2": 42,
+    "3": 43,
+    "4": 44,
+    "5": 45,
+    "6": 46,
+    "7": 47,
+    "8": 48
+   },
+   "structure": "8",
+   "conjugate_pairs": [
+    [
+     41,
+     48
+    ],
+    [
+     42,
+     47
+    ],
+    [
+     43,
+     46
+    ],
+    [
+     44,
+     45
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "g (f41r)",
+   "leaf_marks": {
+    "41": "1 chevron",
+    "42": "2",
+    "43": "3",
+    "44": "4"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f41r commentary: \"Two quire marks, a 'g' in pencil and another in ink at bottom centre.\"",
+    "f41r commentary: \"Chevron folio mark at top right corner.\"",
+    "f42r commentary: \"Folio mark of two chevrons in top right corner.\"",
+    "f43r commentary: \"Folio mark of three superimposed chevrons in top right corner.\"",
+    "f44r commentary: \"Folio mark of four superimposed chevrons in top right corner.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f49r commentary: \"There is a quire mark ('h') at the bottom centre of the page.\"",
+    "codicology.php: \"On f.48r (quire G) where there are double pricks for the margins, the wrong holes have been joined and the faulty diagonal line has been redrawn correctly.\"",
+    "codicology.php: \"Although there were eight folios only the first four needed marking because they were folded with the last four.\""
+   ],
+   "caveats": [
+    "The site's folio-mark table labels G 'f.42-f.48v'; this is taken as a typo because the quire mark and the first-folio chevron are both on f41r and F ends at f40v."
+   ]
+  },
+  {
+   "quire": "H",
+   "folios": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+   ],
+   "physical_leaves": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    "56a",
+    "56b"
+   ],
+   "positions": null,
+   "structure": "8 per James; 9 physical leaves (f56 = two leaves pasted together)",
+   "conjugate_pairs": null,
+   "singletons_conjugate_lost": null,
+   "status": "undetermined",
+   "quire_mark": "h (f49r)",
+   "leaf_marks": null,
+   "conjugacy_basis": null,
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f49r commentary: \"There is a quire mark ('h') at the bottom centre of the page.\"",
+    "f57r commentary: \"Quire indicator 'I' at the bottom of the page.\"",
+    "codicology.php: \"In quire H (f.49r-f.56v) many spaces for the rubrics have been left empty.\"",
+    "f56r commentary: \"Thus f. 56r and 56v are actually two sheets stuck back to back.\"",
+    "codicology.php: \"f.56r has a hole in it, which is concealed by being glued to the next page, f.56v.\"",
+    "codicology.php: \"The two pages after the phoenix are blank and glued together, thus preventing the pricks on f.56r from damaging the new f.56v.\"",
+    "Clark 2006, Cat. no. 1 (via IA full-text snippets): \"Assembly marks in a variety of forms in lead point, most in outer margins, lower corners, ff. 21, 26-28, 33-36, 41-44, 57, 58, 60, 73, 75, 80-83 (forms shown on the Website). Quire signatures in capital letters are later additions; 2 leaves blank (ff. 3v-4, 6-6v), 2 leaves glued together (ff. 56v-57, 93v-94).\""
+   ],
+   "caveats": [
+    "Membership is determined (f49r-f56v, between quire marks h and I), but conjugacy is NOT: James's 'E8-L8' gives H eight leaves, whereas the site and Clark describe f56 as two leaves pasted back to back, i.e. nine physical leaves. Which leaf is additional (a singleton or pasted-on backing) is not stated by any source consulted, and no leaf marks are recorded for H.",
+    "Clark's page references for the pasted pairs ('56v-57', '93v-94') do not match the site's foliation, in which f56v and f57r both carry text (f57r also carries the quire mark 'I')."
+   ]
+  },
+  {
+   "quire": "I",
+   "folios": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+   ],
+   "physical_leaves": [
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+   ],
+   "positions": {
+    "1": 57,
+    "2": 58,
+    "3": 59,
+    "4": 60,
+    "5": 61,
+    "6": 62,
+    "7": 63,
+    "8": 64
+   },
+   "structure": "8",
+   "conjugate_pairs": [
+    [
+     57,
+     64
+    ],
+    [
+     58,
+     63
+    ],
+    [
+     59,
+     62
+    ],
+    [
+     60,
+     61
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "I (f57r)",
+   "leaf_marks": {
+    "57": "C",
+    "58": "CC",
+    "59": "(CCC expected, missing)",
+    "60": "CCCC"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f57r commentary: \"Quire indicator 'I' at the bottom of the page.\"",
+    "f57r commentary: \"Folio mark 'C' at bottom left.\"",
+    "f58r commentary: \"Folio mark CC' in bottom left margin.\"",
+    "f59r commentary: \"The folio mark (which should be 'CCC') is missing.\"",
+    "f60r commentary: \"Folio mark 'CCCC', bottom left.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f65r commentary: \"Quire mark 'K' at bottom centre.\"",
+    "codicology.php: \"Although there were eight folios only the first four needed marking because they were folded with the last four.\""
+   ],
+   "caveats": [
+    "f61v commentary: \"The upper edge of the illuminated frame abuts the spliced parchment repair with such precision that it appears the repair took place after the writing was complete on the recto, but before the painting began on the verso.\""
+   ]
+  },
+  {
+   "quire": "K",
+   "folios": [
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+   ],
+   "physical_leaves": [
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+   ],
+   "positions": {
+    "1": 65,
+    "2": 66,
+    "3": 67,
+    "4": 68,
+    "5": 69,
+    "6": 70,
+    "7": 71,
+    "8": 72
+   },
+   "structure": "8",
+   "conjugate_pairs": [
+    [
+     65,
+     72
+    ],
+    [
+     66,
+     71
+    ],
+    [
+     67,
+     70
+    ],
+    [
+     68,
+     69
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "K (f65r)",
+   "leaf_marks": null,
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f65r commentary: \"Quire mark 'K' at bottom centre.\"",
+    "f73r commentary: \"This represents folio 2 of quire 'L', but folio 1 is missing.\"",
+    "f72v commentary: \"A page is missing after f.72v which should contain the end of fish and the start of whale.\""
+   ],
+   "caveats": [
+    "No leaf marks recorded for K. Extent follows from the K mark on f65r and L's second leaf being f73; eight leaves with none wanting is consistent only with reading James's 'E8-L8 (1)' as 'L wants 1' (see L). Conjugacy rests on James's formula alone (no independent corroboration)."
+   ]
+  },
+  {
+   "quire": "L",
+   "folios": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+   ],
+   "physical_leaves": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+   ],
+   "positions": {
+    "1": null,
+    "2": 73,
+    "3": 74,
+    "4": 75,
+    "5": 76,
+    "6": 77,
+    "7": 78,
+    "8": 79
+   },
+   "structure": "8 wants 1",
+   "conjugate_pairs": [
+    [
+     73,
+     78
+    ],
+    [
+     74,
+     77
+    ],
+    [
+     75,
+     76
+    ]
+   ],
+   "singletons_conjugate_lost": [
+    79
+   ],
+   "status": "determined",
+   "quire_mark": null,
+   "leaf_marks": {
+    "73": "ll (second folio)",
+    "75": "llll (fourth folio)"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f73r commentary: \"Folio mark 'll' in top right corner.\"",
+    "f73r commentary: \"This represents folio 2 of quire 'L', but folio 1 is missing.\"",
+    "f75r commentary: \"In the top right corner is a folio mark 'llll'.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f72v commentary: \"A page is missing after f.72v which should contain the end of fish and the start of whale.\"",
+    "f80r commentary: \"Quire mark bottom of page centre 'M', and folio mark '+' bottom left.\"",
+    "codicology.php: \"Some are missing with the result that the sequence runs -,B,C,D,E,F,G,H,I,K,-(folio missing),M,N.\"",
+    "Clark 2006, Cat. no. 1: \"Missing leaves with illustrations (34 leaves by comparison to Ashmole Bestiary): Creation scenes for days 2, 5, 6; antelope - elephant (betw. ff. 9v and 10); crocodile - parandrus (betw. ff. 15v and 16); dog (betw. ff. 18v and 19); bullock - horse (betw. ff. 21v and 22); great fish and fish 'carpet' (betw. ff. 72 and 73).\""
+   ],
+   "caveats": [
+    "The L quire mark would have been on the lost first leaf; the site's sequence shows '-(folio missing)' between K and M."
+   ]
+  },
+  {
+   "quire": "M",
+   "folios": [
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "physical_leaves": [
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "positions": {
+    "1": 80,
+    "2": 81,
+    "3": 82,
+    "4": 83,
+    "5": 84,
+    "6": 85,
+    "7": 86,
+    "8": 87
+   },
+   "structure": "8",
+   "conjugate_pairs": [
+    [
+     80,
+     87
+    ],
+    [
+     81,
+     86
+    ],
+    [
+     82,
+     85
+    ],
+    [
+     83,
+     84
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "M (f80r; also f82r)",
+   "leaf_marks": {
+    "80": "+",
+    "81": "*",
+    "82": "*",
+    "83": "* in circle"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f80r commentary: \"Quire mark bottom of page centre 'M', and folio mark '+' bottom left.\"",
+    "f81r commentary: \"Folio mark * bottom left.\"",
+    "f82r commentary: \"Quire mark 'M' in top right corner.\"",
+    "f83r commentary: \"Folio mark, * in circle, bottom left.\"",
+    "codicology.php image 'Folio Marks' (images/folio-marks.jpg, saved as ref/folio-marks.jpg): table of leaf marks for the first to fourth folio of quires B (f.7-f.12v), D (f.19-f.24v), E (f.25-f.32v), F (f33-f40v), G (f.42-f.48v) [sic], I (f.57-f.64v), L (f.73-f.79v), M (f.80-f.87v); L has marks only for its second and fourth folio",
+    "f88r commentary: \"At the bottom centre is a quire mark 'N'.\"",
+    "codicology.php: \"Although there were eight folios only the first four needed marking because they were folded with the last four.\""
+   ],
+   "caveats": []
+  },
+  {
+   "quire": "N",
+   "folios": [
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94
+   ],
+   "physical_leaves": [
+    88,
+    89,
+    90,
+    91,
+    92,
+    "93a",
+    "93b",
+    94
+   ],
+   "positions": {
+    "1": 88,
+    "2": 89,
+    "3": 90,
+    "4": 91,
+    "5": 92,
+    "6": "93a",
+    "7": "93b",
+    "8": 94
+   },
+   "structure": "8 (f93 = two leaves pasted together, foliated once)",
+   "conjugate_pairs": [
+    [
+     88,
+     94
+    ],
+    [
+     89,
+     "93b"
+    ],
+    [
+     90,
+     "93a"
+    ],
+    [
+     91,
+     92
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "N (f88r)",
+   "leaf_marks": null,
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f88r commentary: \"At the bottom centre is a quire mark 'N'.\"",
+    "f93r commentary: \"This page is glued to f.93v , probably to strengthen the backing for the double illustration overleaf.\"",
+    "f93v commentary: \"f.93v is glued to f.93r .\"",
+    "codicology.php: \"f.93r is glued to f.93v, probably because of the gilded double illumination on f.93v.\"",
+    "f94v commentary: \"This folio marks the end of the high quality twelfth-century parchment.\"",
+    "f95r commentary: \"Bottom right quire mark \"0\".\"",
+    "Clark 2006, Cat. no. 1 (via IA full-text snippets): \"Assembly marks in a variety of forms in lead point, most in outer margins, lower corners, ff. 21, 26-28, 33-36, 41-44, 57, 58, 60, 73, 75, 80-83 (forms shown on the Website). Quire signatures in capital letters are later additions; 2 leaves blank (ff. 3v-4, 6-6v), 2 leaves glued together (ff. 56v-57, 93v-94).\""
+   ],
+   "caveats": [
+    "Only 7 foliation numbers (f88-f94) but James gives N8: this closes only if the pasted f93 pair counts as two leaves (positions 6 = f93r-leaf, 7 = f93v-leaf, whose inner blank sides face each other and are pasted). No leaf marks recorded for N; conjugacy rests on James's formula plus that reconciliation."
+   ]
+  },
+  {
+   "quire": "O",
+   "folios": [
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+   ],
+   "physical_leaves": [
+    95,
+    96,
+    97,
+    98,
+    99,
+    100
+   ],
+   "positions": {
+    "1": 95,
+    "2": 96,
+    "3": 97,
+    "4": 98,
+    "5": 99,
+    "6": 100
+   },
+   "structure": "6",
+   "conjugate_pairs": [
+    [
+     95,
+     100
+    ],
+    [
+     96,
+     99
+    ],
+    [
+     97,
+     98
+    ]
+   ],
+   "singletons_conjugate_lost": [],
+   "status": "determined",
+   "quire_mark": "O (f95r, written '0')",
+   "leaf_marks": {
+    "96": "II II",
+    "97": "III"
+   },
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f95r commentary: \"Bottom right quire mark \"0\".\"",
+    "f96r commentary: \"Folio marks \"II II\" at the bottom of the page.\"",
+    "f97r commentary: \"Folio mark \"III\".\"",
+    "f95r commentary: \"From f.95r - f.100v the margins change to include a narrow double margin on the opening edge.\"",
+    "f101r commentary: \"Quire 'P' begins here.\"",
+    "codicology.php: \"In the Bestiary there are fifteen quires, thirteen of which are made with the usual eight folios.\""
+   ],
+   "caveats": []
+  },
+  {
+   "quire": "P",
+   "folios": [
+    101,
+    102,
+    103
+   ],
+   "physical_leaves": [
+    101,
+    102,
+    103
+   ],
+   "positions": {
+    "1": 101,
+    "2": 102,
+    "3": 103,
+    "4": null
+   },
+   "structure": "4 wants 4",
+   "conjugate_pairs": [
+    [
+     102,
+     103
+    ]
+   ],
+   "singletons_conjugate_lost": [
+    101
+   ],
+   "status": "determined",
+   "quire_mark": null,
+   "leaf_marks": null,
+   "conjugacy_basis": "regular quire of nested bifolia: in a quire of 2n leaves, leaf k is conjugate with leaf 2n+1-k (James's formula names the wanting positions on that model; the site states that the first four leaves 'were folded with the last four')",
+   "evidence": [
+    "codicology.php: \"The quire system was examined by MR James when the book was being rebound and he was able to produce the following analysis of the gatherings: A8 (wants folio 2, 8); B8 (4,5); C8 (4,8); D8 (4,5); E8-L8 (1); M8; N8; O6; P4 (4).\"",
+    "f101r commentary: \"Quire 'P' begins here.\"",
+    "codicology.php: \"In the Bestiary there are fifteen quires, thirteen of which are made with the usual eight folios.\""
+   ],
+   "caveats": [
+    "The loss of P's fourth leaf is stated only by James; the text on f103v ends with a complete sentence, so no text break corroborates it."
+   ]
+  }
+ ]
+}

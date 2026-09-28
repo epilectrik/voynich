@@ -124,3 +124,11 @@ sources/voynich_scans/foldouts/
 
 # Third-party code and data clones (pinned; not redistributed)
 external/
+
+# Aberdeen Bestiary transcription text (no licence stated; keep local until the owner decides)
+sources/aberdeen_bestiary/html/
+sources/aberdeen_bestiary/aberdeen_pages.json
+sources/aberdeen_bestiary/linebreak_decisions.json
+sources/aberdeen_bestiary/spot_check.txt
+sources/aberdeen_bestiary/ref/
+sources/aberdeen_bestiary/__pycache__/
