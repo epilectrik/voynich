@@ -1,0 +1,5767 @@
+#!/usr/bin/env python3
+"""
+Voynich Manuscript Analysis Library
+
+Canonical interface for working with the transcript.
+Use this in all analysis scripts to ensure consistent methodology.
+
+Usage:
+    from scripts.voynich import Transcript, Morphology
+
+    # Load transcript
+    tx = Transcript()
+    for token in tx.currier_a():
+        print(token.word, token.folio)
+
+    # Morphological analysis
+    morph = Morphology()
+    prefix, middle, suffix = morph.extract(token.word)
+"""
+
+import csv
+import json
+from datetime import datetime
+from pathlib import Path
+from dataclasses import dataclass, field
+from typing import Optional, Iterator, List, Set, Tuple, Dict
+from collections import Counter, defaultdict
+
+# ============================================================
+# PATHS
+# ============================================================
+PROJECT_ROOT = Path(__file__).parent.parent
+DATA_PATH = PROJECT_ROOT / 'data' / 'transcriptions' / 'interlinear_full_words.txt'
+
+# ============================================================
+# CANONICAL MORPHOLOGY (from constraints)
+# ============================================================
+
+# C235: 8 core prefix markers (no gallows letters - p, t, k, f)
+# Note: Gallows-initial sequences (cph, cfh, ckh, etc.) are PREFIX-FORBIDDEN
+# MIDDLEs per C528, not missing prefixes. They correctly parse as prefixless.
+CORE_PREFIXES = ['ch', 'sh', 'qo', 'da', 'ok', 'ot', 'ol', 'ct']
+
+# Extended prefixes (compound forms)
+EXTENDED_PREFIXES = [
+    'pch', 'tch', 'kch', 'dch', 'fch', 'rch', 'sch', 'lch',
+    'lk', 'yk', 'lsh',
+    'ke', 'te', 'se', 'de', 'pe',
+    'ko', 'to', 'so', 'do', 'po',
+    'ka', 'ta', 'sa',
+    'al', 'ar', 'or',
+]
+
+# C291: Articulators (optional, before prefix)
+ARTICULATORS = ['y', 'k', 'l', 'p', 'd', 'f', 'r', 's', 't']
+
+# All prefixes combined
+ALL_PREFIXES = sorted(set(CORE_PREFIXES + EXTENDED_PREFIXES), key=len, reverse=True)
+
+# Atomic suffix list (revised per expert analysis 2026-01-24)
+# Previous compound suffixes (chol, shol, daiin, etc.) were over-specified
+# and caused 52.9% empty-MIDDLE rate, violating C293/C267.a/C475/C511.
+# Now using only atomic forms - consonant-initial compounds moved to MIDDLE.
+SUFFIXES = [
+    # -iin family (vowel-initial, atomic)
+    'aiin', 'oiin', 'eiin', 'iin',
+    'ain', 'oin', 'ein',
+    # -Vy patterns (vowel + y)
+    'eey', 'edy', 'ey',
+    # -Vl/-Vr patterns (vowel + liquid)
+    'eeol', 'eol', 'ool',
+    'ol', 'or', 'ar', 'al', 'er', 'el',
+    # -Vn patterns (vowel + nasal)
+    'in', 'an', 'on', 'en',
+    # -Vm patterns (vowel + m)
+    'am', 'om', 'em', 'im',
+    # Two-char -Cy (consonant + y, where C is NOT ch/sh/k/t)
+    'dy', 'hy', 'ly', 'ry',
+    # Single char (true atomics)
+    'y', 'l', 'r', 'm', 'n', 's', 'g',
+]
+SUFFIXES = sorted(set(SUFFIXES), key=len, reverse=True)
+
+
+# ============================================================
+# ATOM SYSTEM (C1195, C1394, C1209)
+# ============================================================
+# The 18 atoms that compose MIDDLEs, with positional role sets.
+# Used by Morphology.atomize() for flat atom-sequence glossing.
+
+# Atom glosses — validated per C1195 confidence tiers.
+# LOCKED (8): k, e, h, y, i, n, a, m — strong compound evidence
+# SOLID (6): d, t, l, o, c, p — good evidence, label may refine
+# PLAUSIBLE (5): f, s, g, x, r — thin evidence, nothing contradicts
+ATOM_GLOSSES = {
+    'k': 'heat',      'e': 'cool',      'h': 'watch',     'y': 'end',        # LOCKED
+    'i': 'iterate',   'n': 'bind',      'a': 'yield',     'm': 'final',      # LOCKED (a reconciled to C1195 'yield'; directional — a+r=outward, a+n=inward)
+    'd': 'do',        't': 'transfer',  'l': 'state',     'o': 'arrange',    # SOLID (d revised from 'mark' to 'do/execute' by 7-axis battery 2026-04-01)
+    'c': 'adjust',    'p': 'pause',                                           # SOLID
+    'f': 'flag',      's': 'sequence',  'r': 'respond',                      # PLAUSIBLE
+    'g': '?',         'x': 'diagram',  'q': '?',                             # PLAUSIBLE/UNTIERED
+}
+
+ATOM_CONFIDENCE = {
+    'k': 'LOCKED', 'e': 'LOCKED', 'h': 'LOCKED', 'y': 'LOCKED',
+    'i': 'LOCKED', 'n': 'LOCKED', 'a': 'LOCKED', 'm': 'LOCKED',
+    'd': 'SOLID',  't': 'SOLID',  'l': 'SOLID',  'o': 'SOLID',
+    'c': 'SOLID',  'p': 'SOLID',
+    'f': 'PLAUSIBLE', 's': 'PLAUSIBLE', 'r': 'PLAUSIBLE',
+    'g': 'PLAUSIBLE', 'x': 'PLAUSIBLE',
+}
+
+# Positional role sets (C1209, C1394, C1475, C1489)
+HEAD_ATOMS = frozenset('aeokt')       # Domain selectors (position-initial)
+MOD_ATOMS  = frozenset('pficds')      # Modifiers (interior positions)
+TERM_ATOMS = frozenset('ynmhlrkt')    # Closure atoms (position-final); k,t are FREE/dual
+
+# Terminal opacity (C1440, C1487)
+# OPAQUE: instruction complete, no continuation atoms
+# TRANSPARENT: instruction incomplete, continuation expected
+# SEMI_TRANSPARENT: optional continuation
+OPAQUE_TERMS         = frozenset('ynm')
+TRANSPARENT_TERMS    = frozenset('h')
+SEMI_TRANSPARENT_TERMS = frozenset('lr')
+
+
+# ============================================================
+# TOKEN DATA CLASS
+# ============================================================
+#
+# AZC PLACEMENT CODES — Physical Ring Order
+# ------------------------------------------
+# Placement codes (C, P, R, S, W) are transcriber-assigned based on
+# physical position type on the manuscript page:
+#   C = "circle" text (continuous ring)
+#   P = "paragraph" text (horizontal lines)
+#   R = "ring" text (continuous ring; R1-R4 subscripts on zodiac folios)
+#   S = "star/sector" text (nymph-divided ring; S0-S3 subscripts)
+#   W = center characters (single glyphs at diagram center)
+#
+# PHYSICAL RING ORDER (confirmed on f69r, A/C family):
+#   C = OUTER ring (43 tokens, 16 groups of 2-3)
+#   R = radial spokes (22 spokes between S and C)
+#   S = INNER ring (11 tokens, continuous)
+#   W = CENTER characters (6 single glyphs)
+#   P = paragraph text ABOVE the diagram
+#
+# CAUTION — Zodiac folio R-subscript numbering is INCONSISTENT:
+#   f70v2: R3=outermost, R1=innermost (higher number = outer)
+#   f72r1, f71r, f73r etc: R1=outermost, R3=innermost (lower number = outer)
+#   Transcribers numbered rings from wherever they started reading.
+#   DO NOT assume R1 is always the same physical ring across folios.
+#
+# The constraint system (C317, C435, C443 etc.) defines C/R/S by
+# functional properties (escape rates, rotation tolerance), not
+# physical position. Physical mapping requires per-folio verification.
+# See: data/folio_annotations/azc/ for per-folio layout maps.
+# ============================================================
+@dataclass
+class Token:
+    """A single token from the transcript."""
+    word: str
+    folio: str
+    line: str
+    language: str
+    transcriber: str
+    placement: str
+    section: str
+    line_initial: bool
+    line_final: bool
+    par_initial: bool
+    par_final: bool
+
+    @property
+    def is_label(self) -> bool:
+        """Check if token is a label (illustration annotation)."""
+        return self.placement.startswith('L') if self.placement else False
+
+    @property
+    def is_uncertain(self) -> bool:
+        """Check if token contains uncertain reading."""
+        return '*' in self.word
+
+
+# ============================================================
+# TRANSCRIPT INTERFACE
+# ============================================================
+class Transcript:
+    """Interface for reading the Voynich transcript."""
+
+    def __init__(self, path: Path = DATA_PATH):
+        self.path = path
+        self._tokens: Optional[List[Token]] = None
+
+    def _load(self) -> List[Token]:
+        """Load all tokens from transcript."""
+        if self._tokens is not None:
+            return self._tokens
+
+        tokens = []
+        with open(self.path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+            for row in reader:
+                tokens.append(Token(
+                    word=row.get('word', '').strip(),
+                    folio=row.get('folio', '').strip(),
+                    line=row.get('line_number', '').strip(),
+                    language=row.get('language', '').strip(),
+                    transcriber=row.get('transcriber', '').strip().strip('"'),
+                    placement=row.get('placement', '').strip(),
+                    section=row.get('section', '').strip(),
+                    line_initial=row.get('line_initial', '').strip() == '1',
+                    line_final=row.get('line_final', '').strip() == '1',
+                    par_initial=row.get('par_initial', '').strip() == '1',
+                    par_final=row.get('par_final', '').strip() == '1',
+                ))
+        self._tokens = tokens
+        return tokens
+
+    def all(self, h_only: bool = True) -> Iterator[Token]:
+        """
+        Iterate all tokens.
+
+        Args:
+            h_only: If True (default), filter to H transcriber only.
+                    This is MANDATORY for most analyses per CLAUDE.md.
+        """
+        for token in self._load():
+            if h_only and token.transcriber != 'H':
+                continue
+            yield token
+
+    def currier_a(self, h_only: bool = True, exclude_labels: bool = True,
+                  exclude_uncertain: bool = True) -> Iterator[Token]:
+        """
+        Iterate Currier A tokens.
+
+        Args:
+            h_only: Filter to H transcriber (default True)
+            exclude_labels: Exclude label tokens (default True)
+            exclude_uncertain: Exclude tokens with * (default True)
+        """
+        for token in self.all(h_only=h_only):
+            if token.language != 'A':
+                continue
+            if exclude_labels and token.is_label:
+                continue
+            if exclude_uncertain and token.is_uncertain:
+                continue
+            if not token.word:
+                continue
+            yield token
+
+    def currier_b(self, h_only: bool = True, exclude_labels: bool = True,
+                  exclude_uncertain: bool = True) -> Iterator[Token]:
+        """Iterate Currier B tokens."""
+        for token in self.all(h_only=h_only):
+            if token.language != 'B':
+                continue
+            if exclude_labels and token.is_label:
+                continue
+            if exclude_uncertain and token.is_uncertain:
+                continue
+            if not token.word:
+                continue
+            yield token
+
+    def azc(self, h_only: bool = True) -> Iterator[Token]:
+        """Iterate AZC tokens (language=NA)."""
+        for token in self.all(h_only=h_only):
+            if token.language != 'NA':
+                continue
+            if not token.word:
+                continue
+            yield token
+
+
+# ============================================================
+# MORPHOLOGY INTERFACE
+# ============================================================
+@dataclass
+class MorphAnalysis:
+    """Result of morphological analysis."""
+    articulator: Optional[str]
+    prefix: Optional[str]
+    middle: Optional[str]
+    suffix: Optional[str]
+    prefix2: Optional[str] = None  # Secondary prefix (ch/sh after primary)
+
+    @property
+    def has_prefix(self) -> bool:
+        return self.prefix is not None
+
+    @property
+    def has_prefix2(self) -> bool:
+        return self.prefix2 is not None
+
+    @property
+    def has_articulator(self) -> bool:
+        return self.articulator is not None
+
+    @property
+    def is_empty_middle(self) -> bool:
+        return self.middle == '_EMPTY_'
+
+
+@dataclass
+class AtomAnalysis:
+    """
+    Result of atom-level decomposition (C1394 HEAD+MOD*+TERM model).
+
+    Unlike MorphAnalysis which preserves the MIDDLE/SUFFIX boundary for
+    structural constraint work, AtomAnalysis bypasses that boundary and
+    decomposes the entire post-prefix remainder into a flat atom sequence
+    with positional roles. Use for glossing and decoding.
+
+    Roles:
+        HEAD        — first atom if in {a,e,o,k,t}; domain selector (C1475)
+        PSEUDO_HEAD — first atom when NOT HEAD-eligible; headless compound (C1489)
+        SOLE        — single atom after prefix; complete instruction in one atom
+        MOD         — interior atoms; modifiers/parametrization
+        TERM        — last atom if in {y,n,m,h,l,r,k,t}; closure/exit state
+    """
+    articulator: Optional[str]
+    prefix: Optional[str]
+    atoms: List[Tuple[str, str, str]]  # [(char, role, gloss), ...]
+    is_headless: bool
+    e_depth: int       # count of consecutive e's (C1197, C1225)
+    i_depth: int       # count of consecutive i's (C1197)
+    terminal_opacity: str  # 'OPAQUE', 'TRANSPARENT', 'SEMI_TRANSPARENT', 'NONE'
+
+    @property
+    def head(self) -> Optional[str]:
+        """Return the HEAD atom char, or None if headless."""
+        for char, role, _ in self.atoms:
+            if role == 'HEAD':
+                return char
+        return None
+
+    @property
+    def term(self) -> Optional[str]:
+        """Return the TERM atom char, or None."""
+        for char, role, _ in self.atoms:
+            if role == 'TERM':
+                return char
+        return None
+
+    @property
+    def mods(self) -> List[str]:
+        """Return list of MOD atom chars."""
+        return [char for char, role, _ in self.atoms if role == 'MOD']
+
+    @property
+    def gloss(self) -> str:
+        """Compact gloss: prefix:atom.atom.atom"""
+        prefix_str = f"{self.prefix}:" if self.prefix else ""
+        art_str = f"[{self.articulator}]" if self.articulator else ""
+        atom_str = '.'.join(g for _, _, g in self.atoms)
+        return f"{art_str}{prefix_str}{atom_str}"
+
+
+class Morphology:
+    """
+    Morphological analysis following canonical methodology.
+
+    Structure: [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX]
+
+    The articulator is optional and comes BEFORE the prefix (C291).
+    """
+
+    def __init__(self,
+                 prefixes: List[str] = None,
+                 suffixes: List[str] = None,
+                 articulators: List[str] = None,
+                 require_prefix: bool = False):
+        """
+        Initialize morphology analyzer.
+
+        Args:
+            prefixes: Custom prefix list (default: ALL_PREFIXES)
+            suffixes: Custom suffix list (default: SUFFIXES)
+            articulators: Custom articulator list (default: ARTICULATORS)
+            require_prefix: If True, tokens without prefix return None middle
+        """
+        self.prefixes = sorted(prefixes or ALL_PREFIXES, key=len, reverse=True)
+        self.suffixes = sorted(suffixes or SUFFIXES, key=len, reverse=True)
+        self.articulators = articulators or ARTICULATORS
+        self.require_prefix = require_prefix
+
+    def _find_prefix(self, token: str) -> Tuple[Optional[str], str]:
+        """Find prefix in token, return (prefix, remainder)."""
+        for p in self.prefixes:
+            if token.startswith(p) and len(token) > len(p):
+                return p, token[len(p):]
+        return None, token
+
+    def _find_suffix(self, token: str) -> Tuple[str, Optional[str]]:
+        """Find suffix in token, return (remainder, suffix)."""
+        for s in self.suffixes:
+            # Use >= to allow suffix matching when it equals remainder
+            # This gives middle='_EMPTY_' for pure suffix tokens
+            if token.endswith(s) and len(token) >= len(s):
+                remainder = token[:-len(s)] if len(token) > len(s) else ''
+                return remainder, s
+        return token, None
+
+    def extract(self, token: str) -> MorphAnalysis:
+        """
+        Extract morphological components from token.
+
+        Returns MorphAnalysis with articulator, prefix, middle, suffix.
+
+        Per C293/C267.a, MIDDLE is the primary discriminator and should not
+        be empty when avoidable. If prefix+suffix would consume everything,
+        we try alternative parses that preserve a non-empty MIDDLE.
+        """
+        if not token:
+            return MorphAnalysis(None, None, None, None)
+
+        articulator = None
+        prefix = None
+
+        # Step 1: Try to find prefix directly
+        prefix, remainder = self._find_prefix(token)
+
+        # Step 2: If no prefix, check for articulator + prefix
+        if prefix is None:
+            for art in self.articulators:
+                if token.startswith(art) and len(token) > len(art):
+                    after_art = token[len(art):]
+                    maybe_prefix, maybe_remainder = self._find_prefix(after_art)
+                    if maybe_prefix is not None:
+                        articulator = art
+                        prefix = maybe_prefix
+                        remainder = maybe_remainder
+                        break
+
+        # If require_prefix and still no prefix, return None middle
+        if self.require_prefix and prefix is None:
+            return MorphAnalysis(None, None, None, None)
+
+        # If no prefix found, remainder is the whole token
+        if prefix is None:
+            remainder = token
+
+        # Step 2.5: Check for secondary prefix (ch/sh embedded after primary)
+        # Only ch and sh qualify — other strings after primary prefix are MIDDLEs
+        SECONDARY_PREFIXES = ['sh', 'ch']
+        prefix2 = None
+        if prefix is not None:
+            for sp in SECONDARY_PREFIXES:
+                if remainder.startswith(sp) and len(remainder) > len(sp):
+                    prefix2 = sp
+                    remainder = remainder[len(sp):]
+                    break
+
+        # Step 3: Extract suffix from remainder
+        middle, suffix = self._find_suffix(remainder)
+
+        # Step 4: Avoid empty MIDDLE when possible (per C293/C267.a)
+        # If prefix+suffix consumed everything, try alternative parses
+        if middle == '':
+            # Option A: Drop suffix, treat remainder as pure MIDDLE
+            alt_a = MorphAnalysis(articulator, prefix, remainder, None, prefix2)
+
+            # Option B: Drop prefix, treat token as MIDDLE+suffix
+            if prefix is not None:
+                no_prefix_mid, no_prefix_suf = self._find_suffix(token)
+                if no_prefix_mid:
+                    alt_b = MorphAnalysis(articulator, None, no_prefix_mid, no_prefix_suf)
+                else:
+                    alt_b = MorphAnalysis(articulator, None, token, None)
+            else:
+                alt_b = None
+
+            # Option C: Drop both, treat token as pure MIDDLE
+            alt_c = MorphAnalysis(articulator, None, token, None)
+
+            # Prefer: non-empty MIDDLE with most structure preserved
+            # Priority: prefix+MIDDLE > MIDDLE+suffix > pure MIDDLE
+            if prefix is not None and remainder:
+                return alt_a  # Keep prefix, MIDDLE=remainder, no suffix
+            elif alt_b and alt_b.middle and alt_b.middle != token:
+                return alt_b  # No prefix, but have MIDDLE+suffix
+            else:
+                return alt_c  # Pure MIDDLE, no affixes
+
+        return MorphAnalysis(articulator, prefix, middle, suffix, prefix2)
+
+    def extract_tuple(self, token: str) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+        """Extract and return (prefix, middle, suffix) tuple for compatibility."""
+        result = self.extract(token)
+        return result.prefix, result.middle, result.suffix
+
+    def atomize(self, token: str) -> AtomAnalysis:
+        """
+        Decompose token into PREFIX + flat atom sequence (C1394 model).
+
+        Unlike extract() which preserves the MIDDLE|SUFFIX boundary,
+        atomize() treats everything after the prefix as a single atom
+        stream with HEAD+MOD*+TERM positional roles. Use for glossing
+        and decoding; use extract() for structural constraint analysis.
+
+        The MIDDLE/SUFFIX split is a parsing convention that can draw
+        the boundary incorrectly (e.g., -edy suffix absorbing MIDDLE's
+        terminal 'e', hiding e-depth). Atomize bypasses this entirely:
+        the atoms self-organize by their positional preferences (C1209).
+
+        Algorithm:
+          1. Strip ARTICULATOR + PREFIX (reuse extract() logic)
+          2. Read remainder chars as flat atom sequence
+          3. Assign roles: HEAD/PSEUDO_HEAD, MOD, TERM, SOLE
+          4. Detect e-depth, i-depth extensions (C1197, C1225)
+          5. Classify terminal opacity (C1440)
+
+        Returns:
+            AtomAnalysis with articulator, prefix, atoms list,
+            headless flag, extension depths, and terminal opacity.
+        """
+        if not token:
+            return AtomAnalysis(None, None, [], False, 0, 0, 'NONE')
+
+        articulator = None
+        prefix = None
+
+        # Step 1: Strip prefix (same logic as extract)
+        prefix, remainder = self._find_prefix(token)
+
+        # Step 1b: If no prefix, check for articulator + prefix
+        if prefix is None:
+            for art in self.articulators:
+                if token.startswith(art) and len(token) > len(art):
+                    after_art = token[len(art):]
+                    maybe_prefix, maybe_remainder = self._find_prefix(after_art)
+                    if maybe_prefix is not None:
+                        articulator = art
+                        prefix = maybe_prefix
+                        remainder = maybe_remainder
+                        break
+
+        if prefix is None:
+            remainder = token
+
+        # Step 1c: Check for secondary prefix (ch/sh embedded after primary)
+        # Absorb into prefix string for display, but the secondary prefix
+        # chars are part of the operational channel, not the atom sequence.
+        SECONDARY_PREFIXES = ['sh', 'ch']
+        if prefix is not None:
+            for sp in SECONDARY_PREFIXES:
+                if remainder.startswith(sp) and len(remainder) > len(sp):
+                    prefix = prefix  # keep primary; secondary handled by extract()
+                    # Don't strip secondary here — it's part of the atom sequence
+                    # in the unified model. The user can check extract() for prefix2.
+                    break
+
+        if not remainder:
+            return AtomAnalysis(articulator, prefix, [], False, 0, 0, 'NONE')
+
+        # Step 2: Read each character as an atom
+        chars = list(remainder)
+        n = len(chars)
+
+        # Step 3: Assign positional roles
+        atoms = []
+        is_headless = False
+
+        if n == 1:
+            # Single atom: SOLE role (complete instruction in one atom)
+            c = chars[0]
+            g = ATOM_GLOSSES.get(c, '?')
+            atoms.append((c, 'SOLE', g))
+            is_headless = c not in HEAD_ATOMS
+        else:
+            # Multi-atom: HEAD/PSEUDO_HEAD + MOD* + TERM
+            for idx, c in enumerate(chars):
+                g = ATOM_GLOSSES.get(c, '?')
+
+                if idx == 0:
+                    # First atom: HEAD if eligible, else PSEUDO_HEAD
+                    if c in HEAD_ATOMS:
+                        atoms.append((c, 'HEAD', g))
+                    else:
+                        atoms.append((c, 'PSEUDO_HEAD', g))
+                        is_headless = True
+                elif idx == n - 1:
+                    # Last atom: TERM if eligible, else MOD
+                    if c in TERM_ATOMS:
+                        atoms.append((c, 'TERM', g))
+                    else:
+                        atoms.append((c, 'MOD', g))
+                else:
+                    # Interior: MOD
+                    atoms.append((c, 'MOD', g))
+
+        # Step 4: e-depth and i-depth (consecutive runs only, C1197)
+        e_depth = 0
+        i_depth = 0
+        # e-depth: max consecutive run of 'e'
+        run = 0
+        for c, _, _ in atoms:
+            if c == 'e':
+                run += 1
+                e_depth = max(e_depth, run)
+            else:
+                run = 0
+        # i-depth: max consecutive run of 'i'
+        run = 0
+        for c, _, _ in atoms:
+            if c == 'i':
+                run += 1
+                i_depth = max(i_depth, run)
+            else:
+                run = 0
+
+        # Step 5: Terminal opacity
+        last_char = chars[-1] if chars else None
+        if last_char in OPAQUE_TERMS:
+            opacity = 'OPAQUE'
+        elif last_char in TRANSPARENT_TERMS:
+            opacity = 'TRANSPARENT'
+        elif last_char in SEMI_TRANSPARENT_TERMS:
+            opacity = 'SEMI_TRANSPARENT'
+        else:
+            opacity = 'NONE'
+
+        return AtomAnalysis(
+            articulator=articulator,
+            prefix=prefix,
+            atoms=atoms,
+            is_headless=is_headless,
+            e_depth=e_depth,
+            i_depth=i_depth,
+            terminal_opacity=opacity,
+        )
+
+
+# ============================================================
+# CONVENIENCE FUNCTIONS
+# ============================================================
+def load_middle_classes() -> Tuple[Set[str], Set[str]]:
+    """
+    Load RI and PP middle classifications.
+
+    Returns:
+        (ri_middles, pp_middles) - Sets of A-exclusive and A-shared middles
+    """
+    import json
+    path = PROJECT_ROOT / 'phases' / 'A_INTERNAL_STRATIFICATION' / 'results' / 'middle_classes.json'
+    with open(path) as f:
+        data = json.load(f)
+    return set(data['a_exclusive_middles']), set(data['a_shared_middles'])
+
+
+# ============================================================
+# TOKEN CLASSIFICATION
+# ============================================================
+class TokenClass:
+    """Token classification constants."""
+    RI = 'RI'              # Registry-Internal (A-exclusive MIDDLE)
+    PP = 'PP'              # Pipeline-Participant (A+B shared MIDDLE)
+    INFRA = 'INFRA'        # Infrastructure (DA-family per C407)
+    UNKNOWN = 'UNKNOWN'    # MIDDLE not in classification data
+
+
+@dataclass
+class TokenAnalysis:
+    """Complete analysis of a single token."""
+    word: str
+    morph: MorphAnalysis
+    token_class: str
+
+    @property
+    def middle(self) -> Optional[str]:
+        return self.morph.middle
+
+    @property
+    def prefix(self) -> Optional[str]:
+        return self.morph.prefix
+
+    @property
+    def suffix(self) -> Optional[str]:
+        return self.morph.suffix
+
+    @property
+    def articulator(self) -> Optional[str]:
+        return self.morph.articulator
+
+    @property
+    def is_ri(self) -> bool:
+        return self.token_class == TokenClass.RI
+
+    @property
+    def is_pp(self) -> bool:
+        return self.token_class == TokenClass.PP
+
+    @property
+    def is_infra(self) -> bool:
+        return self.token_class == TokenClass.INFRA
+
+
+@dataclass
+class RecordAnalysis:
+    """Analysis of a complete record (line)."""
+    folio: str
+    line: str
+    tokens: List[TokenAnalysis]
+
+    @property
+    def ri_count(self) -> int:
+        return sum(1 for t in self.tokens if t.is_ri)
+
+    @property
+    def pp_count(self) -> int:
+        return sum(1 for t in self.tokens if t.is_pp)
+
+    @property
+    def infra_count(self) -> int:
+        return sum(1 for t in self.tokens if t.is_infra)
+
+    @property
+    def ri_tokens(self) -> List[TokenAnalysis]:
+        return [t for t in self.tokens if t.is_ri]
+
+    @property
+    def pp_tokens(self) -> List[TokenAnalysis]:
+        return [t for t in self.tokens if t.is_pp]
+
+    @property
+    def composition(self) -> str:
+        """Classify record composition per C498."""
+        has_ri = self.ri_count > 0
+        has_pp = self.pp_count > 0
+        if has_ri and has_pp:
+            return 'MIXED'
+        elif has_ri:
+            return 'PURE_RI'
+        elif has_pp:
+            return 'PURE_PP'
+        else:
+            return 'UNKNOWN'
+
+
+class RecordAnalyzer:
+    """
+    Analyze Currier A records with full morphological and class breakdown.
+
+    Usage:
+        analyzer = RecordAnalyzer()
+        record = analyzer.analyze_record('f1r', '1')
+        for token in record.tokens:
+            print(f"{token.word}: {token.token_class} (MID={token.middle})")
+    """
+
+    # Infrastructure prefixes per C407 (DA-family)
+    INFRA_PREFIXES = {'da', 'do', 'sa', 'so'}
+
+    def __init__(self):
+        self.transcript = Transcript()
+        self.morphology = Morphology()
+        self.ri_middles, self.pp_middles = load_middle_classes()
+        self._records_cache: Optional[dict] = None
+
+    def _build_records_cache(self):
+        """Build cache of records indexed by (folio, line)."""
+        if self._records_cache is not None:
+            return
+
+        self._records_cache = {}
+        for token in self.transcript.currier_a(exclude_uncertain=False):
+            key = (token.folio, token.line)
+            if key not in self._records_cache:
+                self._records_cache[key] = []
+            self._records_cache[key].append(token)
+
+    def classify_token(self, word: str, morph: MorphAnalysis) -> str:
+        """Classify a token based on its MIDDLE."""
+        middle = morph.middle
+        prefix = morph.prefix
+
+        # Infrastructure check: DA-family prefixes with simple structure
+        if prefix in self.INFRA_PREFIXES:
+            # Pure DA-family tokens are infrastructure per C407
+            if middle and len(middle) <= 3:
+                return TokenClass.INFRA
+
+        # Check MIDDLE classification
+        if middle in self.ri_middles:
+            return TokenClass.RI
+        elif middle in self.pp_middles:
+            return TokenClass.PP
+        else:
+            return TokenClass.UNKNOWN
+
+    def analyze_token(self, word: str) -> TokenAnalysis:
+        """Analyze a single token."""
+        morph = self.morphology.extract(word)
+        token_class = self.classify_token(word, morph)
+        return TokenAnalysis(word, morph, token_class)
+
+    def analyze_record(self, folio: str, line: str) -> Optional[RecordAnalysis]:
+        """Analyze a complete record (line)."""
+        self._build_records_cache()
+
+        key = (folio, line)
+        if key not in self._records_cache:
+            return None
+
+        tokens = []
+        for t in self._records_cache[key]:
+            if t.word and not t.is_uncertain:
+                analysis = self.analyze_token(t.word)
+                tokens.append(analysis)
+
+        return RecordAnalysis(folio, line, tokens)
+
+    def analyze_folio(self, folio: str) -> List[RecordAnalysis]:
+        """Analyze all records in a folio."""
+        self._build_records_cache()
+
+        records = []
+        for (f, line) in sorted(self._records_cache.keys()):
+            if f == folio:
+                record = self.analyze_record(f, line)
+                if record:
+                    records.append(record)
+        return records
+
+    def get_folios(self) -> List[str]:
+        """Get list of all Currier A folios."""
+        self._build_records_cache()
+        return sorted(set(f for f, _ in self._records_cache.keys()))
+
+    def iter_records(self) -> Iterator[RecordAnalysis]:
+        """Iterate all Currier A records."""
+        self._build_records_cache()
+        for key in sorted(self._records_cache.keys()):
+            record = self.analyze_record(key[0], key[1])
+            if record:
+                yield record
+
+
+# ============================================================
+# MIDDLE ANALYZER (Compound Detection & Folio-Spread Analysis)
+# ============================================================
+@dataclass
+class MiddleStats:
+    """Statistics for a single MIDDLE."""
+    middle: str
+    token_count: int
+    folio_count: int
+    folios: Set[str]
+
+    @property
+    def is_folio_unique(self) -> bool:
+        """True if MIDDLE appears in exactly one folio."""
+        return self.folio_count == 1
+
+    @property
+    def is_core(self) -> bool:
+        """True if MIDDLE appears in 20+ folios (highly shared)."""
+        return self.folio_count >= 20
+
+    @property
+    def is_common(self) -> bool:
+        """True if MIDDLE appears in 5+ folios."""
+        return self.folio_count >= 5
+
+
+class MiddleAnalyzer:
+    """
+    Analyzer for MIDDLE compound structure and folio distribution.
+
+    Provides methods to:
+    - Track MIDDLE inventory and folio spread
+    - Detect compound MIDDLEs (containing core MIDDLEs as substrings)
+    - Classify MIDDLEs by uniqueness (folio-unique, common, core)
+    - Analyze compositional structure
+
+    Usage:
+        analyzer = MiddleAnalyzer()
+        analyzer.build_inventory()  # Scans all B tokens
+
+        # Check if a MIDDLE is compound
+        if analyzer.is_compound('opcheodai'):
+            atoms = analyzer.get_contained_atoms('opcheodai')
+            print(f"Contains: {atoms}")
+
+        # Get folio-unique MIDDLEs
+        unique = analyzer.get_folio_unique_middles()
+
+        # Get statistics for a specific MIDDLE
+        stats = analyzer.get_stats('od')
+        print(f"'od' appears in {stats.folio_count} folios")
+
+    The compound detection is based on findings from the COMPOUND_MIDDLE_ARCHITECTURE
+    phase, which established that folio-unique MIDDLEs are built by combining
+    core operational MIDDLEs (84.8% contain core MIDDLEs, +29.9pp above chance).
+    """
+
+    def __init__(self, min_atom_length: int = 2, core_threshold: int = 20,
+                 common_threshold: int = 5):
+        """
+        Initialize MiddleAnalyzer.
+
+        Args:
+            min_atom_length: Minimum length for substring matching (default: 2)
+            core_threshold: Folio count for "core" classification (default: 20)
+            common_threshold: Folio count for "common" classification (default: 5)
+        """
+        self.min_atom_length = min_atom_length
+        self.core_threshold = core_threshold
+        self.common_threshold = common_threshold
+
+        self._transcript = Transcript()
+        self._morphology = Morphology()
+        self._inventory: Optional[Dict[str, MiddleStats]] = None
+        self._core_middles: Optional[Set[str]] = None
+        self._common_middles: Optional[Set[str]] = None
+        self._folio_unique_middles: Optional[Set[str]] = None
+
+    def build_inventory(self, system: str = 'B') -> None:
+        """
+        Build MIDDLE inventory from transcript.
+
+        Args:
+            system: Which system to analyze ('A', 'B', 'all'). Default 'B'.
+        """
+        from collections import defaultdict
+
+        middle_to_folios: Dict[str, Set[str]] = defaultdict(set)
+        middle_counts: Counter = Counter()
+
+        # Select token iterator based on system
+        if system == 'A':
+            tokens = self._transcript.currier_a()
+        elif system == 'B':
+            tokens = self._transcript.currier_b()
+        elif system == 'all':
+            tokens = self._transcript.all()
+        else:
+            raise ValueError(f"Unknown system: {system}. Use 'A', 'B', or 'all'.")
+
+        for token in tokens:
+            if not token.word or '*' in token.word:
+                continue
+            m = self._morphology.extract(token.word)
+            if m.middle:
+                middle_to_folios[m.middle].add(token.folio)
+                middle_counts[m.middle] += 1
+
+        # Build inventory
+        self._inventory = {}
+        for middle, folios in middle_to_folios.items():
+            self._inventory[middle] = MiddleStats(
+                middle=middle,
+                token_count=middle_counts[middle],
+                folio_count=len(folios),
+                folios=folios
+            )
+
+        # Build classification sets
+        self._core_middles = {
+            mid for mid, stats in self._inventory.items()
+            if stats.folio_count >= self.core_threshold
+        }
+        self._common_middles = {
+            mid for mid, stats in self._inventory.items()
+            if stats.folio_count >= self.common_threshold
+        }
+        self._folio_unique_middles = {
+            mid for mid, stats in self._inventory.items()
+            if stats.folio_count == 1
+        }
+
+    def _ensure_inventory(self) -> None:
+        """Ensure inventory is built, build if not."""
+        if self._inventory is None:
+            self.build_inventory()
+
+    def get_stats(self, middle: str) -> Optional[MiddleStats]:
+        """
+        Get statistics for a specific MIDDLE.
+
+        Args:
+            middle: The MIDDLE string to look up
+
+        Returns:
+            MiddleStats object or None if MIDDLE not in inventory
+        """
+        self._ensure_inventory()
+        return self._inventory.get(middle)
+
+    def is_compound(self, middle: str, use_core: bool = True) -> bool:
+        """
+        Check if a MIDDLE contains other MIDDLEs as substrings.
+
+        Args:
+            middle: The MIDDLE to check
+            use_core: If True, check against core MIDDLEs only (default).
+                      If False, check against common MIDDLEs.
+
+        Returns:
+            True if MIDDLE contains at least one atom from the reference set
+        """
+        self._ensure_inventory()
+        reference_set = self._core_middles if use_core else self._common_middles
+
+        for atom in reference_set:
+            if (len(atom) >= self.min_atom_length and
+                atom in middle and
+                atom != middle):
+                return True
+        return False
+
+    def get_contained_atoms(self, middle: str, use_core: bool = True) -> List[str]:
+        """
+        Get list of atomic MIDDLEs contained in a compound MIDDLE.
+
+        Args:
+            middle: The MIDDLE to analyze
+            use_core: If True, use core MIDDLEs. If False, use common MIDDLEs.
+
+        Returns:
+            List of MIDDLEs from reference set that appear as substrings
+        """
+        self._ensure_inventory()
+        reference_set = self._core_middles if use_core else self._common_middles
+
+        found = []
+        for atom in reference_set:
+            if (len(atom) >= self.min_atom_length and
+                atom in middle and
+                atom != middle):
+                found.append(atom)
+        return sorted(found, key=len, reverse=True)
+
+    def get_maximal_atoms(self, middle: str, use_core: bool = True) -> List[str]:
+        """Get non-redundant atoms (remove substrings of longer atoms).
+
+        Returns only maximal atoms — those not contained within any other
+        returned atom. E.g., for MIDDLE 'odeey': returns ['eey', 'od']
+        instead of ['eey', 'ee', 'ey', 'od'].
+        """
+        atoms = self.get_contained_atoms(middle, use_core)
+        if len(atoms) <= 1:
+            return atoms
+        # atoms is sorted longest-first; keep only those not substrings of longer ones
+        maximal = []
+        for atom in atoms:
+            if not any(atom in longer for longer in maximal):
+                maximal.append(atom)
+        return maximal
+
+    def get_compound_rate(self, middles: List[str], use_core: bool = True) -> float:
+        """
+        Calculate compound rate for a list of MIDDLEs.
+
+        Args:
+            middles: List of MIDDLEs to analyze
+            use_core: Reference set to use
+
+        Returns:
+            Fraction (0.0-1.0) of MIDDLEs that are compound
+        """
+        if not middles:
+            return 0.0
+        compound_count = sum(1 for m in middles if self.is_compound(m, use_core))
+        return compound_count / len(middles)
+
+    def get_core_middles(self) -> Set[str]:
+        """Get set of core MIDDLEs (appear in 20+ folios)."""
+        self._ensure_inventory()
+        return self._core_middles.copy()
+
+    def get_common_middles(self) -> Set[str]:
+        """Get set of common MIDDLEs (appear in 5+ folios)."""
+        self._ensure_inventory()
+        return self._common_middles.copy()
+
+    def get_folio_unique_middles(self) -> Set[str]:
+        """Get set of folio-unique MIDDLEs (appear in exactly 1 folio)."""
+        self._ensure_inventory()
+        return self._folio_unique_middles.copy()
+
+    def classify_middle(self, middle: str) -> str:
+        """
+        Classify a MIDDLE by its folio spread.
+
+        Args:
+            middle: The MIDDLE to classify
+
+        Returns:
+            'CORE' (20+ folios), 'COMMON' (5-19 folios),
+            'RARE' (2-4 folios), 'FOLIO_UNIQUE' (1 folio),
+            or 'UNKNOWN' if not in inventory
+        """
+        self._ensure_inventory()
+        stats = self._inventory.get(middle)
+        if stats is None:
+            return 'UNKNOWN'
+        if stats.folio_count >= self.core_threshold:
+            return 'CORE'
+        elif stats.folio_count >= self.common_threshold:
+            return 'COMMON'
+        elif stats.folio_count >= 2:
+            return 'RARE'
+        else:
+            return 'FOLIO_UNIQUE'
+
+    def analyze_token(self, word: str) -> dict:
+        """
+        Analyze a token's MIDDLE for compound structure.
+
+        Args:
+            word: The token to analyze
+
+        Returns:
+            Dict with middle, classification, is_compound, contained_atoms
+        """
+        self._ensure_inventory()
+        m = self._morphology.extract(word)
+        if not m.middle:
+            return {
+                'word': word,
+                'middle': None,
+                'classification': None,
+                'is_compound': False,
+                'contained_atoms': []
+            }
+
+        return {
+            'word': word,
+            'middle': m.middle,
+            'classification': self.classify_middle(m.middle),
+            'is_compound': self.is_compound(m.middle),
+            'contained_atoms': self.get_contained_atoms(m.middle)
+        }
+
+    def summary(self) -> dict:
+        """
+        Get summary statistics of the MIDDLE inventory.
+
+        Returns:
+            Dict with counts and rates
+        """
+        self._ensure_inventory()
+        total = len(self._inventory)
+        return {
+            'total_middles': total,
+            'core_count': len(self._core_middles),
+            'core_pct': 100 * len(self._core_middles) / total if total else 0,
+            'common_count': len(self._common_middles),
+            'common_pct': 100 * len(self._common_middles) / total if total else 0,
+            'folio_unique_count': len(self._folio_unique_middles),
+            'folio_unique_pct': 100 * len(self._folio_unique_middles) / total if total else 0,
+        }
+
+
+# ============================================================
+# PP SEMANTIC ANALYZER
+# ============================================================
+# Based on FL_SEMANTIC_INTERPRETATION phase findings (2026-01-29)
+# Assigns semantic roles to PP MIDDLEs based on character composition
+
+@dataclass
+class PPSemanticAnalysis:
+    """Semantic analysis of a PP MIDDLE."""
+    middle: str
+    semantic_class: str      # STATE_INDEX, OPERATOR, MODIFIER, UNKNOWN
+    subclass: Optional[str]  # For STATE_INDEX: stage; For OPERATOR: kernel type
+    kernel_chars: List[str]  # Which kernel chars present (k, h, e)
+    is_fl_vocabulary: bool   # True if this MIDDLE is in FL class vocabulary
+    confidence: str          # HIGH, MEDIUM, LOW
+
+
+class PPSemantics:
+    """
+    Semantic analyzer for PP (Pipeline-Participating) MIDDLEs.
+
+    Based on FL_SEMANTIC_INTERPRETATION phase findings:
+    - FL MIDDLEs use only 9 chars: a, d, i, l, m, n, o, r, y
+    - FL MIDDLEs index material state in transformation process
+    - Kernel chars (k, h, e) indicate operators, not state indices
+
+    Classification:
+    - STATE_INDEX: Kernel-free, FL-like vocabulary -> marks material states
+    - OPERATOR: Contains kernel chars (k, h, e) -> marks transformations
+    - MODIFIER: Contains helper chars (c, s, t, p, f, q, g) but no kernel
+
+    Usage:
+        sem = PPSemantics()
+        result = sem.analyze('od')
+        print(f"{result.middle}: {result.semantic_class} ({result.subclass})")
+
+        # Batch analysis
+        for mid, analysis in sem.analyze_vocabulary(pp_middles):
+            print(f"{mid}: {analysis.semantic_class}")
+    """
+
+    # FL primitive character set (C770, C772)
+    FL_CHARS = set('adilmnory')
+
+    # Kernel characters (operators)
+    KERNEL_CHARS = set('khe')
+
+    # Helper/modifier characters
+    HELPER_CHARS = set('cstpfqg')
+
+    # FL MIDDLEs and their stages (from FL_SEMANTIC_INTERPRETATION phase)
+    FL_STAGE_MAP = {
+        'ii': 'INITIAL', 'i': 'INITIAL',
+        'in': 'EARLY',
+        'r': 'MEDIAL', 'ar': 'MEDIAL',
+        'al': 'LATE', 'l': 'LATE', 'ol': 'LATE',
+        'o': 'FINAL', 'ly': 'FINAL', 'am': 'FINAL',
+        'n': 'TERMINAL', 'im': 'TERMINAL', 'm': 'TERMINAL',
+        'dy': 'TERMINAL', 'ry': 'TERMINAL', 'y': 'TERMINAL'
+    }
+
+    # Extended stage inference for non-FL MIDDLEs based on character patterns
+    CHAR_STAGE_HINTS = {
+        'i': 'INITIAL',   # i-initial suggests input
+        'y': 'TERMINAL',  # y-final suggests output
+    }
+
+    def __init__(self):
+        self._fl_middles = set(self.FL_STAGE_MAP.keys())
+
+    def _get_kernel_chars(self, middle: str) -> List[str]:
+        """Extract kernel characters from MIDDLE."""
+        return [c for c in 'khe' if c in middle]
+
+    def _get_char_classes(self, middle: str) -> dict:
+        """Classify characters in MIDDLE."""
+        chars = set(middle)
+        return {
+            'has_kernel': bool(chars & self.KERNEL_CHARS),
+            'has_helper': bool(chars & self.HELPER_CHARS),
+            'fl_only': chars <= self.FL_CHARS,
+            'kernel_chars': list(chars & self.KERNEL_CHARS),
+            'helper_chars': list(chars & self.HELPER_CHARS),
+        }
+
+    def _infer_stage(self, middle: str) -> Optional[str]:
+        """Infer process stage for FL-like MIDDLE."""
+        # Direct FL lookup
+        if middle in self.FL_STAGE_MAP:
+            return self.FL_STAGE_MAP[middle]
+
+        # Heuristic inference based on character patterns
+        if middle.startswith('i') and 'y' not in middle:
+            return 'INITIAL'
+        elif middle.endswith('y'):
+            return 'TERMINAL'
+        elif middle.startswith('a') or middle.startswith('o'):
+            return 'MEDIAL'
+
+        return None
+
+    def analyze(self, middle: str) -> PPSemanticAnalysis:
+        """
+        Analyze semantic role of a PP MIDDLE.
+
+        Args:
+            middle: The MIDDLE string to analyze
+
+        Returns:
+            PPSemanticAnalysis with classification and details
+        """
+        if not middle:
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='UNKNOWN',
+                subclass=None,
+                kernel_chars=[],
+                is_fl_vocabulary=False,
+                confidence='LOW'
+            )
+
+        char_info = self._get_char_classes(middle)
+        is_fl = middle in self._fl_middles
+
+        # Classification logic
+        if char_info['has_kernel']:
+            # OPERATOR: Contains kernel characters
+            kernel_list = char_info['kernel_chars']
+            # Subclass based on dominant kernel
+            if 'k' in kernel_list:
+                subclass = 'ENERGY'
+            elif 'h' in kernel_list:
+                subclass = 'PHASE'
+            elif 'e' in kernel_list:
+                subclass = 'STABILITY'
+            else:
+                subclass = 'MIXED'
+
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='OPERATOR',
+                subclass=subclass,
+                kernel_chars=kernel_list,
+                is_fl_vocabulary=False,
+                confidence='HIGH'
+            )
+
+        elif char_info['fl_only']:
+            # STATE_INDEX: Uses only FL characters
+            stage = self._infer_stage(middle)
+            confidence = 'HIGH' if is_fl else 'MEDIUM'
+
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='STATE_INDEX',
+                subclass=stage,
+                kernel_chars=[],
+                is_fl_vocabulary=is_fl,
+                confidence=confidence
+            )
+
+        elif char_info['has_helper']:
+            # MODIFIER: Has helper chars but no kernel
+            helper_type = None
+            if 'c' in middle or 's' in middle or 't' in middle:
+                helper_type = 'CONTROL_MODIFIER'
+            elif any(c in middle for c in 'pfqg'):
+                helper_type = 'DOMAIN_MARKER'
+
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='MODIFIER',
+                subclass=helper_type,
+                kernel_chars=[],
+                is_fl_vocabulary=False,
+                confidence='MEDIUM'
+            )
+
+        else:
+            # Shouldn't reach here, but handle gracefully
+            return PPSemanticAnalysis(
+                middle=middle,
+                semantic_class='UNKNOWN',
+                subclass=None,
+                kernel_chars=[],
+                is_fl_vocabulary=False,
+                confidence='LOW'
+            )
+
+    def analyze_vocabulary(self, middles: List[str]) -> List[Tuple[str, PPSemanticAnalysis]]:
+        """
+        Analyze a list of PP MIDDLEs.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            List of (middle, PPSemanticAnalysis) tuples
+        """
+        return [(m, self.analyze(m)) for m in middles]
+
+    def get_class_distribution(self, middles: List[str]) -> dict:
+        """
+        Get distribution of semantic classes in a vocabulary.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            Dict with counts per semantic class
+        """
+        results = self.analyze_vocabulary(middles)
+        distribution = Counter(r.semantic_class for _, r in results)
+        return dict(distribution)
+
+    def filter_by_class(self, middles: List[str],
+                        semantic_class: str) -> List[str]:
+        """
+        Filter MIDDLEs by semantic class.
+
+        Args:
+            middles: List of MIDDLE strings
+            semantic_class: 'STATE_INDEX', 'OPERATOR', 'MODIFIER', or 'UNKNOWN'
+
+        Returns:
+            List of MIDDLEs matching the class
+        """
+        return [m for m, a in self.analyze_vocabulary(middles)
+                if a.semantic_class == semantic_class]
+
+    def get_operators_by_kernel(self, middles: List[str]) -> dict:
+        """
+        Group OPERATOR MIDDLEs by kernel type.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            Dict mapping kernel type to list of MIDDLEs
+        """
+        operators = {}
+        for m, a in self.analyze_vocabulary(middles):
+            if a.semantic_class == 'OPERATOR':
+                key = a.subclass or 'UNKNOWN'
+                if key not in operators:
+                    operators[key] = []
+                operators[key].append(m)
+        return operators
+
+    def get_state_indices_by_stage(self, middles: List[str]) -> dict:
+        """
+        Group STATE_INDEX MIDDLEs by process stage.
+
+        Args:
+            middles: List of MIDDLE strings
+
+        Returns:
+            Dict mapping stage to list of MIDDLEs
+        """
+        states = {}
+        for m, a in self.analyze_vocabulary(middles):
+            if a.semantic_class == 'STATE_INDEX':
+                key = a.subclass or 'UNKNOWN'
+                if key not in states:
+                    states[key] = []
+                states[key].append(m)
+        return states
+
+    def summary(self, middles: List[str]) -> dict:
+        """
+        Get comprehensive summary of PP vocabulary semantics.
+
+        Args:
+            middles: List of PP MIDDLEs
+
+        Returns:
+            Dict with distribution, breakdowns, and statistics
+        """
+        results = self.analyze_vocabulary(middles)
+
+        class_dist = Counter(r.semantic_class for _, r in results)
+        fl_count = sum(1 for _, r in results if r.is_fl_vocabulary)
+        high_conf = sum(1 for _, r in results if r.confidence == 'HIGH')
+
+        return {
+            'total': len(middles),
+            'class_distribution': dict(class_dist),
+            'fl_vocabulary_count': fl_count,
+            'high_confidence_count': high_conf,
+            'operators_by_kernel': self.get_operators_by_kernel(middles),
+            'states_by_stage': self.get_state_indices_by_stage(middles),
+        }
+
+
+# ============================================================
+# B FOLIO DECODER
+# ============================================================
+# Consolidates structural knowledge for decoding Currier B folios.
+# Based on constraints: C371-378, C510-522, C766-769, C884, C906-907,
+#                      C1250-C1251, C1305, F-BRU-011, F-BRU-018-020
+
+
+class CategoryClassifier:
+    """8-category operational classification (C1250, Tier 2).
+
+    Categories are MIDDLE properties derived from atom gloss plurality vote.
+    Tokens inherit category from their MIDDLE (C1305: 0/33 MIDDLEs shift
+    category between ch/sh — MIDDLE determines category intrinsically).
+
+    Provenance: Phase 446 (GLOSS_SCALE_VALIDATION), validated Phases 452-460.
+    """
+
+    CATEGORIES = ('THERMAL', 'FLOW', 'CONTAINMENT', 'STAGING',
+                  'OPERATION', 'TRANSITION', 'MARKING', 'MONITORING')
+
+    # Abbreviated codes for display (prevent semantic drift per C171)
+    ABBREV = {
+        'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+        'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+        'MARKING': 'MK', 'MONITORING': 'MN',
+    }
+
+    # Human gloss → category (C1250, from middle_dictionary.json 'gloss' field)
+    GLOSS_TO_CATEGORY = {
+        'heat': 'THERMAL', 'fire': 'THERMAL', 'cool': 'THERMAL',
+        'sustain': 'THERMAL', 'pulse': 'THERMAL', 'steady': 'THERMAL',
+        'extended': 'THERMAL', 'deep': 'THERMAL', 'long': 'THERMAL',
+        'overnight': 'THERMAL',
+        'seal': 'CONTAINMENT', 'hold': 'CONTAINMENT', 'lock': 'CONTAINMENT',
+        'bind': 'CONTAINMENT', 'bond': 'CONTAINMENT', 'rigid': 'CONTAINMENT',
+        'firm': 'CONTAINMENT', 'dense': 'CONTAINMENT',
+        'transfer': 'FLOW', 'gather': 'FLOW', 'discharge': 'FLOW',
+        'release': 'FLOW', 'vent': 'FLOW', 'route': 'FLOW',
+        'portion': 'FLOW', 'input': 'FLOW', 'intake': 'FLOW',
+        'watch': 'MONITORING', 'check': 'MONITORING', 'verify': 'MONITORING',
+        'confirm': 'MONITORING', 'scan': 'MONITORING', 'measure': 'MONITORING',
+        'control': 'MONITORING', 'regulate': 'MONITORING',
+        'work': 'OPERATION', 'operate': 'OPERATION', 'batch': 'OPERATION',
+        'pound': 'OPERATION', 'strip': 'OPERATION', 'exact': 'OPERATION',
+        'precise': 'OPERATION', 'hard': 'OPERATION', 'wide': 'OPERATION',
+        'start': 'TRANSITION', 'open': 'TRANSITION', 'close': 'TRANSITION',
+        'end': 'TRANSITION', 'finish': 'TRANSITION', 'complete': 'TRANSITION',
+        'finalize': 'TRANSITION', 'yield': 'TRANSITION', 'final': 'TRANSITION',
+        'stand': 'TRANSITION', 'settle': 'TRANSITION', 'set': 'TRANSITION',
+        'halt': 'TRANSITION',
+        'frame': 'STAGING', 'step': 'STAGING', 'iterate': 'STAGING',
+        'sequence': 'STAGING', 'continue': 'STAGING', 'repeat': 'STAGING',
+        'cycle': 'STAGING', 'loop': 'STAGING', 'path': 'STAGING',
+        'mark': 'MARKING', 'flag': 'MARKING', 'note': 'MARKING',
+        'pause': 'MARKING', 'diagram': 'MARKING', 'hazard': 'MARKING',
+        'danger': 'MARKING', 'link': 'MARKING', 'adjust': 'MARKING',
+    }
+
+    # Atom character → gloss — references module-level ATOM_GLOSSES (C1195)
+    # Updated: o='arrange' (C1388), l='state' (C1385), r='respond' (C1387),
+    # a='into' (C1477), n='bind' (C1195 LOCKED), g='?' (untiered)
+    ATOM_GLOSSES = ATOM_GLOSSES  # Module-level canonical source
+
+    # Atom character → category (derived from ATOM_GLOSSES → GLOSS_TO_CATEGORY)
+    ATOM_TO_CATEGORY = {
+        'k': 'THERMAL', 'e': 'THERMAL',        # heat, cool → THERMAL
+        'h': 'MONITORING',                       # watch → MONITORING
+        'y': 'TRANSITION',                       # end → TRANSITION
+        'i': 'STAGING', 'n': 'TRANSITION',       # iterate → STAGING, halt → TRANSITION
+        'a': 'TRANSITION', 'm': 'TRANSITION',    # yield → TRANSITION, final → TRANSITION
+        'd': 'MARKING', 't': 'FLOW',             # mark → MARKING, transfer → FLOW
+        'c': 'MARKING', 'p': 'MARKING',          # adjust → MARKING, pause → MARKING
+        'f': 'MARKING', 's': 'STAGING',           # flag → MARKING, sequence → STAGING
+        'g': 'TRANSITION',                        # complete → TRANSITION
+        'o': 'OPERATION', 'l': 'STAGING',         # work → OPERATION, frame → STAGING
+        'r': 'FLOW',                              # input → FLOW
+    }
+
+    # C1195 confidence tiers for atom characters
+    _ATOM_CONFIDENCE = {
+        'k': 'LOCKED', 'e': 'LOCKED', 'h': 'LOCKED', 'y': 'LOCKED',
+        'i': 'LOCKED', 'n': 'LOCKED', 'a': 'LOCKED', 'm': 'LOCKED',
+        'd': 'SOLID', 't': 'SOLID', 'l': 'SOLID', 'o': 'SOLID',
+        'c': 'SOLID', 'p': 'SOLID',
+        'f': 'PLAUSIBLE', 's': 'PLAUSIBLE', 'g': 'PLAUSIBLE',
+        'x': 'PLAUSIBLE', 'r': 'PLAUSIBLE',
+    }
+
+    _CONFIDENCE_RANK = {'LOCKED': 3, 'SOLID': 2, 'PLAUSIBLE': 1, 'WEAK': 0}
+
+    def __init__(self):
+        """Build MIDDLE → category cache from middle_dictionary.json."""
+        dict_path = PROJECT_ROOT / 'data' / 'middle_dictionary.json'
+        with open(dict_path, 'r', encoding='utf-8') as f:
+            mid_dict = json.load(f)['middles']
+
+        self._mid_to_category = {}
+        self._mid_to_confidence = {}
+
+        # Pass 1: Human-glossed MIDDLEs (priority)
+        for mid, minfo in mid_dict.items():
+            gloss = minfo.get('gloss')
+            if gloss and gloss in self.GLOSS_TO_CATEGORY:
+                self._mid_to_category[mid] = self.GLOSS_TO_CATEGORY[gloss]
+                self._mid_to_confidence[mid] = 'HIGH'  # Human-glossed = high confidence
+
+        # Pass 2: Auto-assigned via atom plurality vote (fallback)
+        for mid, minfo in mid_dict.items():
+            if mid in self._mid_to_category:
+                continue
+            atoms_str = minfo.get('autogloss_atoms', '')
+            if atoms_str:
+                cat = self._auto_assign(atoms_str)
+                if cat:
+                    self._mid_to_category[mid] = cat
+                    self._mid_to_confidence[mid] = self._compute_confidence(atoms_str)
+
+    def _auto_assign(self, atoms_str: str) -> Optional[str]:
+        """Assign category via plurality vote over atom characters (C1251)."""
+        votes = Counter()
+        for atom in atoms_str:
+            cat = self.ATOM_TO_CATEGORY.get(atom)
+            if cat:
+                votes[cat] += 1
+        if not votes:
+            return None
+        max_count = max(votes.values())
+        winners = [c for c, v in votes.items() if v == max_count]
+        return sorted(winners)[0]  # Alphabetical tie-break
+
+    def _compute_confidence(self, atoms_str: str) -> str:
+        """Compute confidence from C1195 atom tier composition."""
+        if not atoms_str:
+            return 'LOW'
+        ranks = [self._CONFIDENCE_RANK.get(
+            self._ATOM_CONFIDENCE.get(c, 'WEAK'), 0) for c in atoms_str]
+        avg = sum(ranks) / len(ranks)
+        if avg >= 2.0:
+            return 'HIGH'
+        elif avg >= 1.0:
+            return 'MEDIUM'
+        return 'LOW'
+
+    def classify(self, middle: str) -> Optional[str]:
+        """Get operational category for a MIDDLE. Returns None if unclassifiable."""
+        return self._mid_to_category.get(middle)
+
+    def confidence(self, middle: str) -> Optional[str]:
+        """Get category confidence for a MIDDLE (HIGH/MEDIUM/LOW)."""
+        return self._mid_to_confidence.get(middle)
+
+    def abbrev(self, category: str) -> str:
+        """Get abbreviated code for a category."""
+        return self.ABBREV.get(category, category[:2].upper())
+
+    @property
+    def coverage(self) -> int:
+        """Number of MIDDLEs with category assignments."""
+        return len(self._mid_to_category)
+
+
+def decompose_middle_hmt(middle: str):
+    """Decompose MIDDLE into HEAD + MOD* + TERM (C1393-C1394).
+
+    HEAD = first char if in {a,e,o,k,t}, else None (headless).
+    TERM = last char if in {y,l,r,h,m,n}, else 'bare'.
+    MODS = everything between HEAD and TERM positions.
+    frame_str = first_char->term for hazard lookup (C1448).
+
+    Returns: (head, mods, term, frame_str)
+    """
+    if not middle:
+        return (None, '', 'bare', None)
+
+    HEADS = {'a', 'e', 'o', 'k', 't'}
+    TERMINALS = {'y', 'l', 'r', 'h', 'm', 'n'}
+
+    # HEAD: first char if in HEAD set
+    head = middle[0] if middle[0] in HEADS else None
+    head_end = 1 if head else 0
+
+    # TERM: last char if in TERMINAL set (and not same position as HEAD)
+    if len(middle) > head_end and middle[-1] in TERMINALS:
+        term = middle[-1]
+        term_start = len(middle) - 1
+    else:
+        term = 'bare'
+        term_start = len(middle)
+
+    # MODS: everything between HEAD and TERM
+    mods = middle[head_end:term_start]
+
+    # Frame string: first_char -> terminal (for hazard lookup per C1448)
+    frame_str = f"{middle[0]}->{term}"
+
+    return (head, mods, term, frame_str)
+
+
+@dataclass
+class BTokenAnalysis:
+    """
+    Complete analysis of a single Currier B token.
+
+    Combines morphological decomposition with functional role classification
+    and semantic markers from the constraint system.
+    """
+    word: str
+    morph: MorphAnalysis
+
+    # Role classification (Tier 0-2, from C371-378)
+    prefix_role: Optional[str]   # EN_KERNEL, EN_QO, AX_SCAFFOLD, etc.
+    suffix_role: Optional[str]   # KERN_HEAVY, LINK_ATTR, LINE_FINAL, etc.
+
+    # MIDDLE analysis (F-BRU-011)
+    middle_tier: Optional[str]   # PREP, THERMO, EXTENDED
+    middle_meaning: Optional[str]  # Brunschwig-grounded description
+
+    # FL state classification (C777, FL_SEMANTIC_INTERPRETATION)
+    fl_stage: Optional[str]      # INITIAL, EARLY, MEDIAL, LATE, TERMINAL
+    fl_meaning: Optional[str]    # State index description
+    is_fl_role: bool             # True if FL-role token (pure FL vocab, no kernel/helper)
+
+    # HT (Human Track) classification (C740, C747, C872)
+    is_ht: bool                  # True if HT/UN token (compound identification/specification, C935)
+
+    # Kernel content
+    kernels: List[str]           # ['k'], ['h', 'e'], etc.
+
+    # Material/output markers (C884, F-BRU-018-020)
+    material_markers: List[str]  # ['ANIMAL'], ['ROOT'], []
+    output_markers: List[str]    # ['OIL'], ['WATER'], []
+
+    # Positional info
+    is_line_initial: bool
+    is_line_final: bool
+
+    # Execution roles (C556 phases, C539 suffix roles)
+    prefix_phase: Optional[str]      # SETUP, PREP, WORK, CLOSE (C556)
+    suffix_terminal: Optional[str]   # TERMINAL, CHECKPOINT, CONNECTOR
+
+    # MIDDLE semantic profile (MIDDLE_SEMANTIC_MAPPING phase)
+    middle_kernel: Optional[str]     # K, H, E - kernel correlation
+    middle_regime: Optional[str]     # PRECISION, HIGH_ENERGY, SETTLING
+    middle_section: Optional[str]    # HERBAL, BIO, STARS
+
+    # Control grammar viewer layers (C976, C1000, C995, C1001)
+    macro_state: Optional[str] = None              # FL_HAZ, FQ, CC, AXm, AXM, FL_SAFE
+    hub_sub_role: Optional[str] = None             # HAZARD_SOURCE, HAZARD_TARGET, SAFETY_BUFFER, PURE_CONNECTOR
+    middle_affordance_bin: Optional[str] = None    # 10 affordance bin labels (C995)
+    middle_affordance_family: Optional[str] = None # THERMAL, PHASE, FLOW, RECOVERY
+    prefix_zone: Optional[str] = None              # INITIAL_BIASED, CENTRAL, FINAL_BIASED, UNIFORM
+
+    # Terminal character analysis (C1067, C1072, C1076-C1077)
+    terminal_char: Optional[str] = None            # Last character of MIDDLE (raw)
+    terminal_group: Optional[str] = None           # CLIQUE_N, CLIQUE_Y, CLIQUE_L, ELEVATED_M, ELEVATED_R
+
+    # Compound depth (C1062, C766)
+    compound_depth: int = 0                        # 0=simple, 2-5=compound atom count
+    compound_atoms: List[str] = field(default_factory=list)  # Maximal atom decomposition (C935, C766)
+
+    # Dark pipeline classification (C1137, C1140)
+    is_dark_pipeline: bool = False                 # True if MIDDLE is in 300 dark-pipeline set
+
+    # Suffix sequential grammar (C1058)
+    suffix_continuation: bool = False              # True when suffix matches previous token's suffix in line
+
+    # PREFIX base-modifier decomposition (C1218-C1219)
+    prefix_base: Optional[str] = None              # h, e, k, o, a (last char of prefix)
+    prefix_modifier: Optional[str] = None          # q, d, f, p, y (first char of 2+ char prefix)
+
+    # 8-category operational classification (C1250, C1305, Tier 2)
+    # Category is a MIDDLE property — tokens inherit from their MIDDLE.
+    operational_category: Optional[str] = None     # THERMAL, FLOW, CONTAINMENT, STAGING, OPERATION, TRANSITION, MARKING, MONITORING
+    category_confidence: Optional[str] = None      # HIGH, MEDIUM, LOW (from C1195 atom tiers)
+
+    # HEAD+MOD*+TERM positional decomposition (C1393-C1394, C1448)
+    middle_head: Optional[str] = None              # First char if in {a,e,o,k,t}, else None
+    middle_mods: str = ''                          # Modifier chars between HEAD and TERM
+    middle_term: str = 'bare'                      # Last char if in {y,l,r,h,m,n}, else 'bare'
+    head_term_frame: Optional[str] = None          # "e->y", "k->bare", "a->n", etc.
+
+    # Terminal opacity (C1440: three-tier suffix suppression gradient)
+    terminal_opacity: Optional[str] = None         # OPAQUE, SEMI_TRANSPARENT, TRANSPARENT
+
+    # Frame hazard (C1448: HEAD x TERM hazard map)
+    frame_hazard: Optional[str] = None             # HIGH, LOW, ZERO, IMMUNE
+
+    # Safe pathway (C1457-C1462: e->y stability anchor; C1482: a+ii)
+    is_safe_pathway: bool = False                  # True for e->y frame or a-HEAD+double-ii
+
+    # Source immunity (C1546: all headed tokens 0% source; C1450: quenching mods)
+    source_immune: bool = False                    # True if headed or quench-modified
+
+    # Hazard class type (C1528, C1547: terminal->failure class)
+    hazard_class_type: Optional[str] = None        # PO/CT/CJ/RM/EO (only on EXPOSED tokens)
+
+    # HEAD domain (C1475)
+    head_domain: Optional[str] = None              # THERMAL/FLOW/YIELD/STAB/ARRNG
+    is_headless: bool = False                      # True if no HEAD atom
+    pseudo_head_domain: Optional[str] = None       # Headless pseudo-HEAD domain (C1489)
+    pseudo_head_atom: Optional[str] = None          # Raw first atom of headless MIDDLE
+
+    # Terminal functional tier (C1487)
+    terminal_tier: Optional[str] = None            # LOCKED/CHAN/DIFF
+
+    # Modifier hazard role (C1450, C1452-C1456)
+    has_quenching_mod: bool = False                # True if mods contain {c,d,f,p,s}
+    has_i_mod: bool = False                        # True if mods contain 'i'
+    i_count: int = 0                               # Number of 'i' chars in mods
+
+    # Descriptive label maps (human-readable register)
+    MACRO_LABELS = {
+        'FL_HAZ': 'hazard flow', 'FL_SAFE': 'safe flow',
+        'FQ': 'frequency', 'CC': 'control change',
+        'AXm': 'minor scaffold', 'AXM': 'major scaffold',
+    }
+    HUB_LABELS = {
+        'HAZARD_SOURCE': 'hazard source', 'HAZARD_TARGET': 'hazard target',
+        'SAFETY_BUFFER': 'safety buffer', 'PURE_CONNECTOR': 'connector',
+    }
+    ZONE_LABELS = {
+        'INITIAL_BIASED': 'initial', 'CENTRAL': 'central',
+        'FINAL_BIASED': 'final', 'UNIFORM': None,  # suppress
+    }
+    AFFORDANCE_LABELS = {
+        'FLOW_TERMINAL': 'flow terminal', 'ROUTINE_SPECIALIZED': 'routine',
+        'PRECISION_SPECIALIZED': 'precision', 'COMPOUND_TERMINAL': 'compound terminal',
+        'SETTLING_SPECIALIZED': 'settling', 'HUB_UNIVERSAL': None,  # suppress (redundant with hub)
+        'ENERGY_SPECIALIZED': 'energy', 'STABILITY_CRITICAL': 'stability critical',
+        'PHASE_SENSITIVE': 'phase sensitive', 'BULK_OPERATIONAL': 'bulk',
+    }
+
+    def structural(self) -> str:
+        """
+        Tier 0-2 technical representation.
+
+        Returns structural role codes for precise analysis.
+        """
+        parts = []
+        if self.prefix_role:
+            parts.append(self.prefix_role)
+        if self.middle_tier:
+            parts.append(self.middle_tier)
+        if self.fl_stage:
+            parts.append(f"FL:{self.fl_stage}")
+        if self.suffix_role:
+            parts.append(self.suffix_role)
+        if self.kernels:
+            parts.append(f"kern:{','.join(self.kernels)}")
+        # Control grammar viewer layers (technical register)
+        if self.macro_state:
+            parts.append(f"M:{self.macro_state}")
+        if self.hub_sub_role:
+            parts.append(f"HUB:{self.hub_sub_role}")
+        if self.middle_affordance_bin:
+            parts.append(f"AFF:{self.middle_affordance_bin}")
+        if self.prefix_zone:
+            parts.append(f"Z:{self.prefix_zone}")
+        # Terminal character group (C1067, C1072, C1076-C1077)
+        # Informational only — frequency-mediated per C1073-C1075
+        if self.terminal_group:
+            parts.append(f"TC:{self.terminal_char}")
+        # Dark pipeline marker (C1137, C1140)
+        if self.is_dark_pipeline:
+            parts.append('DP')
+        # HEAD+MOD*+TERM frame (C1393, C1448)
+        if self.head_term_frame:
+            parts.append(f"FRM:{self.head_term_frame}")
+        if self.frame_hazard:
+            parts.append(f"HAZ:{self.frame_hazard}")
+        if self.terminal_opacity:
+            parts.append(f"OPC:{self.terminal_opacity}")
+        if self.is_safe_pathway:
+            parts.append('SAFE')
+        return ' + '.join(parts) if parts else '(unclassified)'
+
+    def structural_gloss(self) -> str:
+        """
+        Morpheme-level notation — strips English MIDDLE/suffix labels.
+
+        Shows: PREFIX_VERB MIDDLE_RAW[kernel] (SUFFIX_RAW)
+        Compare against interpretive() to detect narrative weight
+        added by English label choices (the 'procedural mirage' test).
+        """
+        # HT tokens: already sandboxed, no narrative risk
+        ht_bundle = self._ht_spec_bundle()
+        if ht_bundle:
+            return ht_bundle
+
+        # Dark pipeline: identification vocabulary (C1137), not grammar
+        if self.is_dark_pipeline:
+            middle = self.morph.middle if self.morph else self.word
+            suffix = self.morph.suffix if self.morph else None
+            spec = f"[ident:{middle}]"
+            if suffix:
+                spec += f" [-{suffix}]"
+            return spec
+
+        middle = self.morph.middle if self.morph else None
+        prefix = self.morph.prefix if self.morph else None
+        prefix2 = self.morph.prefix2 if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        # Kernel signature (same as interpretive)
+        mid_sig = ''
+        _ek = self.middle_kernel
+        if not _ek and self.kernels:
+            _ek = self.kernels[0]
+        if _ek:
+            mid_sig = f'[{_ek.lower()}]'
+
+        parts = []
+
+        # PREFIX verb (same qo-suppression as interpretive)
+        prep_action = None
+        if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
+            prep_action = self._prefix_actions.get(prefix)
+        prep2_action = None
+        if prefix2 and hasattr(self, '_prefix_actions'):
+            prep2_action = self._prefix_actions.get(prefix2)
+
+        if prep_action and prep2_action:
+            parts.append(prep_action)
+        elif prep_action:
+            parts.append(prep_action)
+        elif prep2_action:
+            parts.append(prep2_action)
+
+        # MIDDLE: raw morpheme + kernel (no English label)
+        if middle:
+            parts.append(f'{middle}{mid_sig}')
+
+        # FL marker
+        if self.is_fl_role:
+            parts.append('(FL)')
+
+        # SUFFIX: raw morpheme in parens (no English label)
+        if suffix:
+            parts.append(f'({suffix})')
+
+        return ' '.join(parts) if parts else self.word
+
+    @staticmethod
+    def _lint_gloss(gloss: str) -> str:
+        """Enforce gloss format discipline.
+
+        Rules (expert round 3.5):
+        - No comma-separated verbs (suffix structural commas OK)
+        - No hyphenated compound verbs (HT hold-light/hold-heavy/hold-deep OK)
+        - Max 2 core words before suffix brackets
+        """
+        import re
+        # Strip suffix brackets and FL markers for core word count
+        core = re.sub(r'[.,;]\s*\[.*?\]', '', gloss)
+        core = re.sub(r'\[.*?\]', '', core)
+        core = re.sub(r'\(FL\)', '', core)
+        core = core.strip()
+        # Check for verb-commas in core (not suffix punctuation)
+        if ',' in core:
+            # Keep first word only from comma-separated core
+            first = core.split(',')[0].strip()
+            gloss = gloss.replace(core, first, 1)
+        return gloss
+
+    def interpretive(self) -> str:
+        """
+        Auto-composed interpretive gloss.
+
+        Priority:
+        1. Whole-token gloss from TokenDictionary (manual, if set)
+        2. Auto-composed: PREFIX_ACTION + MIDDLE_GLOSS + SUFFIX_GLOSS
+        3. Structural fallback: [LANE] middle:kernel [-suffix PROPS]
+
+        Auto-composition activates when MIDDLE has a learned or tier-based
+        gloss. Otherwise falls back to structural format.
+        """
+        # 0. HT SPECIFICATION BUNDLE (C404/C405: non-executable, C935: atom decomposition)
+        ht_bundle = self._ht_spec_bundle()
+        if ht_bundle:
+            return ht_bundle
+
+        # 0b. DARK PIPELINE IDENTIFICATION (C1137: 0% grammar, identification vocabulary)
+        if self.is_dark_pipeline:
+            middle = self.morph.middle if self.morph else self.word
+            suffix = self.morph.suffix if self.morph else None
+            # Expand MIDDLE chars with ATOM_GLOSSES for readability
+            mid_expanded = '.'.join(
+                CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in middle
+            )
+            spec = f"[ident: {mid_expanded}]"
+            if suffix:
+                # Use learned suffix gloss if available, else char-expand
+                sfx_label = None
+                if hasattr(self, '_suffix_gloss'):
+                    sfx_label = self._suffix_gloss.get(suffix)
+                if not sfx_label:
+                    sfx_label = '.'.join(
+                        CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in suffix
+                    )
+                spec += f" (-{sfx_label})"
+            return spec
+
+        # MIDDLE signature for gloss discrimination (C506.b, C908)
+        # Kernel is mandatory (primary discriminator), regime conditional.
+        # Computed early so it applies to ALL gloss paths (manual + auto-compose).
+        mid_sig = ''
+        _effective_kernel = self.middle_kernel
+        if not _effective_kernel and self.kernels:
+            _effective_kernel = self.kernels[0]
+        if _effective_kernel:
+            mid_sig = f"[{_effective_kernel.lower()}]"
+            # Regime is conditional: only append when needed to break collisions
+            _regime_needed = (self.middle_regime
+                              and hasattr(self, '_needs_regime')
+                              and self.word in self._needs_regime)
+            if _regime_needed:
+                mid_sig += f":{self.middle_regime.lower()}"
+
+        # 1. WHOLE-TOKEN LOOKUP (manual gloss takes priority)
+        if hasattr(self, '_token_dict') and self._token_dict:
+            gloss = self._token_dict.get_gloss(self.word)
+            if gloss:
+                # Expand *middle references to middle dictionary glosses
+                if '*' in gloss and hasattr(self, '_middle_dict') and self._middle_dict:
+                    import re
+                    def replace_middle_ref(match):
+                        mid_name = match.group(1)
+                        mid_gloss = self._middle_dict.get_gloss(mid_name)
+                        return mid_gloss if mid_gloss else f"[{mid_name}]"
+                    gloss = re.sub(r'\*(\w+)', replace_middle_ref, gloss)
+                # Inject MIDDLE signature for behavioral discrimination
+                if mid_sig:
+                    import re as _re
+                    # Insert before suffix tags like " [thorough]" or trailing punct
+                    m = _re.search(r'(\s+\[.+)$', gloss)
+                    if m:
+                        # Gloss has suffix tags: insert signature before them
+                        pre = gloss[:m.start()].rstrip('.,;:! ')
+                        trail_punct = gloss[len(gloss[:m.start()].rstrip('.,;:! ')):m.start()]
+                        gloss = pre + mid_sig + trail_punct + m.group(1)
+                    else:
+                        # Simple gloss: insert before trailing punctuation
+                        stripped = gloss.rstrip('.,;:! ')
+                        trailing = gloss[len(stripped):]
+                        gloss = stripped + mid_sig + trailing
+                return gloss
+
+        middle = self.morph.middle if self.morph else None
+        prefix = self.morph.prefix if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        # 2. AUTO-COMPOSED GLOSS (when MIDDLE meaning is known)
+        mid_meaning = None
+        if middle:
+            # MiddleDictionary lookup DISABLED — stale glosses inconsistent with
+            # atom expansion (C1195). Dictionary kept intact for IR mode T3 and
+            # future audit. Atom expansion via _compose_compound_gloss() is now
+            # the default path for all interpretive() output.
+            #
+            # middle_tiers (F-BRU tier-based) ALSO BYPASSED here — tier labels
+            # like "major scaffold", "flow terminal" are structural classifications,
+            # not operational glosses. They block atom expansion from firing.
+            # Tier info remains available via middle_tier attribute for structural
+            # modes (--structural-mode, --profile).
+
+            # Compound MIDDLE decomposition: atom_gloss (+extension_gloss)
+            # Compound MIDDLEs = PP atom + parameter extensions (C872, C522)
+            if not mid_meaning:
+                mid_meaning = self._compose_compound_gloss(middle)
+
+            # Character-level atom expansion (C1195) — default for core MIDDLEs
+            # and any MIDDLE not handled by compound decomposition
+            if not mid_meaning:
+                mid_meaning = '-'.join(
+                    CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in middle
+                )
+
+        if mid_meaning:
+            # Compose: [PREFIX_ACTION] MIDDLE_MEANING[signature] [SUFFIX_GLOSS]
+            composed = []
+
+            # Prefix: use prep action if available, otherwise lane tag
+            # For qo: suppress prefix verb in compose path. qo is the default
+            # execution pathway (EN_QO, 17.6% of B tokens). The MIDDLE meaning
+            # already carries the full operation - "heat-check" not "execute
+            # heat-check". Other prefixes keep their verbs for contrast:
+            # "test heat" (ch), "monitor heat" (sh), "store heat" (ol).
+            prep_action = None
+            if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
+                prep_action = self._prefix_actions.get(prefix)
+
+            # Secondary prefix action (ch/sh after primary prefix)
+            prep2_action = None
+            prefix2 = self.morph.prefix2 if self.morph else None
+            if prefix2 and hasattr(self, '_prefix_actions'):
+                prep2_action = self._prefix_actions.get(prefix2)
+
+            if prep_action and prep2_action:
+                composed.append(prep_action)  # primary prefix verb only
+            elif prep_action:
+                composed.append(prep_action)
+            elif prep2_action:
+                # qo suppressed but ch/sh still shows
+                composed.append(prep2_action)
+            elif prefix and prefix != 'qo':
+                lane = self._get_prefix_lane(prefix)
+                composed.append(f"[{lane}]")
+
+            # MIDDLE label + kernel signature (dedup if same as prefix verb)
+            effective_verb = prep_action or prep2_action
+            if not effective_verb or mid_meaning != effective_verb:
+                composed.append(mid_meaning + mid_sig)
+            elif mid_sig and composed:
+                # Prefix verb = MIDDLE label: attach kernel sig to prefix
+                composed[-1] = composed[-1] + mid_sig
+
+
+            # FL-role marking
+            if self.is_fl_role:
+                composed.append('(FL)')
+
+            # Suffix: use interpretive gloss if available
+            if suffix and hasattr(self, '_suffix_gloss'):
+                suf_gloss = self._suffix_gloss.get(suffix)
+                if suf_gloss:
+                    composed.append(suf_gloss)
+                else:
+                    composed.append(f"[-{suffix}]")
+            return self._lint_gloss(' '.join(composed))
+
+        # 3. STRUCTURAL FALLBACK (no MIDDLE meaning available)
+        # Control grammar viewer: dot-separated descriptive phrases (C976/C1000/C995)
+        # Format: macro_descriptor · refinement · position (three chunks max)
+        descriptive_parts = []
+
+        # Chunk 1: macro state (always show if available)
+        if self.macro_state:
+            label = self.MACRO_LABELS.get(self.macro_state)
+            if label:
+                descriptive_parts.append(label)
+
+        # Chunk 2: refinement (hub sub-role > affordance bin, with suppression)
+        if self.hub_sub_role:
+            hub_label = self.HUB_LABELS.get(self.hub_sub_role)
+            if hub_label:
+                descriptive_parts.append(hub_label)
+        elif self.middle_affordance_bin:
+            aff_label = self.AFFORDANCE_LABELS.get(self.middle_affordance_bin)
+            # Suppress HUB_UNIVERSAL (None) and BULK_OPERATIONAL for AXM (it's the default)
+            if aff_label and not (self.middle_affordance_bin == 'BULK_OPERATIONAL'
+                                  and self.macro_state == 'AXM'):
+                descriptive_parts.append(aff_label)
+
+        # If we have descriptive parts, use the new format
+        if descriptive_parts:
+            return ' \u00b7 '.join(descriptive_parts)
+
+        # Legacy fallback: bare structural format (for tokens with no classification)
+        parts = []
+
+        if prefix:
+            # Use prep action verb when available, lane tag otherwise
+            prep_action = None
+            if hasattr(self, '_prefix_actions'):
+                prep_action = self._prefix_actions.get(prefix)
+
+            # Secondary prefix action (ch/sh after primary prefix)
+            prep2_action = None
+            prefix2 = self.morph.prefix2 if self.morph else None
+            if prefix2 and hasattr(self, '_prefix_actions'):
+                prep2_action = self._prefix_actions.get(prefix2)
+
+            if prep_action and prep2_action:
+                parts.append(prep_action)  # primary prefix verb only
+            elif prep_action:
+                parts.append(prep_action)
+            elif prep2_action:
+                parts.append(prep2_action)
+            else:
+                lane = self._get_prefix_lane(prefix)
+                parts.append(f"[{lane}]")
+
+        if middle:
+            kernel_hint = ''
+            if self.kernels:
+                kernel_hint = ':' + ''.join(sorted(self.kernels))
+            parts.append(f"{middle}{kernel_hint}")
+
+        if self.is_fl_role:
+            parts.append('(FL)')
+
+        # Suffix structural properties (C375-378)
+        suffix_props = {
+            'dy': 'K+', 'edy': 'K+', 'ey': 'K+ IN', 'eey': 'K+',
+            'hy': 'IN', 'ly': 'K+', 'ry': 'OUT', 'y': '',
+            'r': 'L+ IN', 'l': 'L+', 'in': 'L+',
+            'ar': 'L+ IN', 'or': 'L+ IN', 'al': 'L+ IN', 'ol': 'L+',
+            'am': 'LF', 'om': 'LF', 'im': 'LF', 'oly': 'LF',
+            'aiin': 'L+', 'ain': 'L+', 'iin': 'L+', 'oiin': 'L+',
+            's': '', 'an': '',
+        }
+        if suffix:
+            props = suffix_props.get(suffix, '')
+            if props:
+                parts.append(f"[-{suffix} {props}]")
+            else:
+                parts.append(f"[-{suffix}]")
+
+        return self._lint_gloss(' '.join(parts)) if parts else self.word
+
+    def flow_gloss(self) -> dict:
+        """Three-layer flow rendering: FL_STAGE + OPERATION + CONTROL_FLOW.
+
+        Returns dict with keys:
+            fl_stage: INITIAL/EARLY/MEDIAL/LATE/TERMINAL (only for FL-role tokens)
+            fl_meaning: Tier 4 semantic description (only for FL-role tokens)
+            operation: prefix_verb + middle_gloss (no suffix punctuation)
+            flow: suffix control-flow label (CHECKPOINT, ITERATE, etc.)
+            flow_type: GATE/LOOP/CHECK/HOLD/TERMINAL/CRITERION/SEQUENCE/MOVE
+        """
+        result = {
+            'fl_stage': self.fl_stage if self.is_fl_role else None,
+            'fl_meaning': self.fl_meaning if self.is_fl_role else None,
+            'operation': '',
+            'flow': '',
+            'flow_type': '',
+            'macro_state': self.macro_state,
+        }
+
+        # HT SPECIFICATION BUNDLE (C404/C405: non-executable, C935: atom decomposition)
+        ht_bundle = self._ht_spec_bundle()
+        if ht_bundle:
+            result['operation'] = ht_bundle
+            return result
+
+        # OPERATION layer: check token dictionary first (C936 composites)
+        middle = self.morph.middle if self.morph else None
+        prefix = self.morph.prefix if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        if hasattr(self, '_token_dict') and self._token_dict:
+            token_gloss = self._token_dict.get_gloss(self.word)
+            if token_gloss:
+                # Expand *middle references
+                if '*' in token_gloss and hasattr(self, '_middle_dict') and self._middle_dict:
+                    import re
+                    def replace_middle_ref(match):
+                        mid_name = match.group(1)
+                        mid_gloss = self._middle_dict.get_gloss(mid_name)
+                        return mid_gloss if mid_gloss else f"[{mid_name}]"
+                    token_gloss = re.sub(r'\*(\w+)', replace_middle_ref, token_gloss)
+                # Strip trailing punctuation for flow format
+                op = token_gloss.rstrip('.,;')
+                # Append compressed kernel signature for flow discrimination
+                if self.middle_kernel:
+                    flow_sig = self.middle_kernel.lower()
+                    _regime_needed = (self.middle_regime
+                                      and hasattr(self, '_needs_regime')
+                                      and self.word in self._needs_regime)
+                    if _regime_needed:
+                        flow_sig += f":{self.middle_regime[:4].lower()}"
+                    op += f" <{flow_sig}>"
+                result['operation'] = op
+                # Suffix flow still applies unless gloss already includes it
+                if suffix and hasattr(self, '_suffix_flow'):
+                    flow_entry = self._suffix_flow.get(suffix, {})
+                    result['flow'] = flow_entry.get('value', '')
+                    result['flow_type'] = flow_entry.get('flow_type', '')
+                return result
+
+        mid_meaning = None
+        # MiddleDictionary and middle_tiers BYPASSED — see interpretive()
+        # for full rationale. Atom expansion is the default path.
+        # Compound MIDDLE decomposition (same as interpretive())
+        if not mid_meaning and middle:
+            mid_meaning = self._compose_compound_gloss(middle)
+        # Character-level atom expansion (C1195) fallback
+        if not mid_meaning and middle:
+            mid_meaning = '-'.join(
+                CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in middle
+            )
+
+        # For qo: suppress prefix verb (same as interpretive())
+        prep_action = None
+        if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
+            prep_action = self._prefix_actions.get(prefix)
+
+        effective_mid = mid_meaning
+
+        if prep_action and effective_mid:
+            result['operation'] = f"{prep_action} {effective_mid}"
+        elif prep_action:
+            result['operation'] = prep_action
+        elif prefix and effective_mid:
+            lane = self._get_prefix_lane(prefix)
+            result['operation'] = f"[{lane}] {effective_mid}"
+        elif effective_mid:
+            result['operation'] = effective_mid
+        else:
+            result['operation'] = self.word
+
+        # Append compressed kernel signature for flow discrimination
+        if self.middle_kernel:
+            flow_sig = self.middle_kernel.lower()
+            _regime_needed = (self.middle_regime
+                              and hasattr(self, '_needs_regime')
+                              and self.word in self._needs_regime)
+            if _regime_needed:
+                flow_sig += f":{self.middle_regime[:4].lower()}"
+            result['operation'] += f" <{flow_sig}>"
+
+        # FLOW layer: suffix control-flow semantics
+        if suffix and hasattr(self, '_suffix_flow'):
+            flow_entry = self._suffix_flow.get(suffix, {})
+            result['flow'] = flow_entry.get('value', '')
+            result['flow_type'] = flow_entry.get('flow_type', '')
+
+        return result
+
+    def _decompose_compound(self, middle: str):
+        """Decompose compound MIDDLE into (atom, pre_ext, suf_ext).
+
+        Finds the longest core PP atom contained in the MIDDLE.
+        Returns (atom, pre_ext, suf_ext) tuple or None.
+        """
+        if not hasattr(self, '_mid_analyzer') or not self._mid_analyzer:
+            return None
+        core = self._mid_analyzer._core_middles
+        if not core or middle in core:
+            return None  # Already a core atom, no decomposition needed
+
+        best = None
+        for atom in sorted(core, key=len, reverse=True):
+            idx = middle.find(atom)
+            if idx >= 0:
+                pre = middle[:idx]
+                post = middle[idx + len(atom):]
+                ext_len = len(pre) + len(post)
+                if ext_len <= 3 and (best is None or ext_len < best[3]):
+                    best = (atom, pre, post, ext_len)
+
+        if best:
+            return (best[0], best[1], best[2])
+        return None
+
+    def _segment_multi_atom(self, middle: str):
+        """Segment a MIDDLE into multiple atoms + extension characters using DP.
+
+        Fallback for long MIDDLEs where single-atom decomposition fails
+        (extension length > 3). Uses dynamic programming to find the
+        optimal segmentation that maximizes atom coverage.
+
+        Returns list of (segment, type, gloss) tuples where type is
+        'ATOM' or 'EXT', or None if segmentation fails.
+        """
+        if not hasattr(self, '_mid_analyzer') or not self._mid_analyzer:
+            return None
+        if not hasattr(self, '_middle_dict') or not self._middle_dict:
+            return None
+
+        core = self._mid_analyzer._core_middles
+        if not core or middle in core:
+            return None
+
+        # Build atom->gloss lookup (only atoms with glosses)
+        atom_glosses = {}
+        for name in core:
+            g = self._middle_dict.get_gloss(name)
+            if g:
+                atom_glosses[name] = g
+
+        if not atom_glosses:
+            return None
+
+        n = len(middle)
+        INF = float('inf')
+        # dp[i] = (min_cost, backtrack_info) for middle[:i]
+        dp = [(INF, None)] * (n + 1)
+        dp[0] = (0, None)
+
+        for i in range(n):
+            if dp[i][0] == INF:
+                continue
+
+            # Option 1: match a known atom starting at position i
+            for atom_name, atom_gloss in atom_glosses.items():
+                alen = len(atom_name)
+                if i + alen <= n and middle[i:i + alen] == atom_name:
+                    new_cost = dp[i][0]  # atoms are free (cost 0)
+                    if new_cost < dp[i + alen][0]:
+                        dp[i + alen] = (new_cost, ('ATOM', i, atom_name, atom_gloss))
+
+            # Option 2: single char as extension
+            ch = middle[i]
+            ch_gloss = self._middle_dict.get_gloss(ch)
+            ext_cost = 1 if ch_gloss else 10
+            new_cost = dp[i][0] + ext_cost
+            if new_cost < dp[i + 1][0]:
+                dp[i + 1] = (new_cost, ('EXT', i, ch, ch_gloss or f'?{ch}'))
+
+        if dp[n][0] == INF:
+            return None
+
+        # Backtrack
+        segments = []
+        pos = n
+        while pos > 0:
+            _, info = dp[pos]
+            if info is None:
+                break
+            seg_type, start, value, gloss = info
+            segments.append((value, seg_type, gloss))
+            pos = start if seg_type == 'EXT' else start
+
+        segments.reverse()
+
+        # Only return if at least one atom was found
+        if any(t == 'ATOM' for _, t, _ in segments):
+            return segments
+        return None
+
+    def _compose_compound_gloss(self, middle: str):
+        """Try to compose a gloss for a compound MIDDLE from atom + extension meanings.
+
+        Uses PP atom gloss as the base operation, with extension character
+        glosses as parameters. Compound MIDDLEs specify WHICH variant of an
+        operation, not a different operation (C872, C522).
+
+        For short compounds (ext <= 3), uses single-atom decomposition.
+        For longer compounds, falls back to multi-atom DP segmentation.
+        """
+        decomp = self._decompose_compound(middle)
+        if decomp:
+            atom, pre_ext, suf_ext = decomp
+
+            # Get atom gloss
+            atom_gloss = None
+            if hasattr(self, '_middle_dict') and self._middle_dict:
+                atom_gloss = self._middle_dict.get_gloss(atom)
+            if not atom_gloss:
+                return None
+
+            # Include extension character glosses as parameters (C872, C522)
+            ext_parts = []
+            for c in pre_ext:
+                ext_parts.append(CategoryClassifier.ATOM_GLOSSES.get(c, c))
+            for c in suf_ext:
+                ext_parts.append(CategoryClassifier.ATOM_GLOSSES.get(c, c))
+            if ext_parts:
+                return f"{atom_gloss}({'-'.join(ext_parts)})"
+            return atom_gloss
+
+        # Fallback: multi-atom segmentation for long compounds
+        segments = self._segment_multi_atom(middle)
+        if not segments:
+            return None
+
+        # Compose from all segments: atoms get glosses, extensions get char glosses
+        parts = []
+        for seg, stype, gloss in segments:
+            if stype == 'ATOM' and gloss:
+                parts.append(gloss)
+            elif stype == 'EXT':
+                parts.append(CategoryClassifier.ATOM_GLOSSES.get(seg, seg))
+        return '-'.join(parts) if parts else None
+
+    def _ht_spec_bundle(self) -> Optional[str]:
+        """Render HT token as posture gloss.
+
+        HT tokens are NOT executable (C404/C405). Instead of pretending
+        they carry semantic content, render as operator posture:
+          - density (line-level HT proportion) -> vigilance: attend/hold
+          - form (atom count) -> specification density: light/heavy/deep
+            C1080 supports the specification model (C935) over the two-axis
+            model: compound rate correlates POSITIVELY with tail pressure
+            (rho=0.367), meaning harder contexts need MORE specification.
+            "heavy" = more operational content compressed into header.
+            C1062: depth 4-5 tokens are identification vocabulary (C870).
+
+        HT Rendering Rule (FROZEN) — governs primary display:
+          1. Never rendered as actions
+          2. Posture grammar: [mode-load] (attend/hold, light/heavy/deep)
+          3. No verbs, no arrows, no sequencing
+          4. Suffix shown as raw morphology (form marker), never operational gloss
+        Detail-4 metadata shows internal structure per C935 (compound specification).
+        Metadata tier is distinct from rendering tier — does not violate the freeze.
+
+        Returns formatted posture string, or None if not an HT token.
+        """
+        if not self.is_ht:
+            return None
+
+        middle = self.morph.middle if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        # Posture grammar:
+        # density -> vigilance mode: high=attend, low=hold
+        # compound_depth -> specification density (C1080, C1062):
+        #   depth 0-1: light (simple/operational)
+        #   depth 2-3: heavy (operational specification, C935)
+        #   depth 4-5: deep (identification vocabulary, C870/C862)
+        density = getattr(self, '_ht_line_density', 'low')
+        mode = 'attend' if density == 'high' else 'hold'
+        depth = self.compound_depth
+        if depth >= 4:
+            load = 'deep'
+        elif depth >= 2:
+            load = 'heavy'
+        else:
+            load = 'light'
+
+        # Dark pipeline annotation (C1137, C1140)
+        dp_tag = ':DP' if self.is_dark_pipeline else ''
+
+        # Compact mode (default): hide atom details
+        # Debug mode: show atoms for discrimination
+        debug_ht = getattr(self, '_debug_ht', False)
+        if debug_ht:
+            if self.compound_atoms:
+                atom_str = ' + '.join(self.compound_atoms)
+                spec = f"[{mode}-{load}{dp_tag} {{{atom_str}}}]"
+            elif middle:
+                spec = f"[{mode}-{load}{dp_tag} {{{middle}}}]"
+            else:
+                spec = f"[{mode}-{load}{dp_tag}]"
+        else:
+            spec = f"[{mode}-{load}{dp_tag}]"
+
+        # Suffix as raw form marker (never operational gloss — C404/C405)
+        if suffix:
+            spec += f" [-{suffix}]"
+
+        return spec
+
+    @staticmethod
+    def _get_prefix_lane(prefix: str) -> str:
+        """Map prefix to execution lane for display."""
+        lanes = {
+            'qo': 'QO', 'ok': 'QO', 'ot': 'QO', 'o': 'QO',
+            'ko': 'QO', 'to': 'QO', 'po': 'QO',
+            'ch': 'CHSH', 'sh': 'CHSH', 'lsh': 'CHSH',
+            'pch': 'PREP', 'tch': 'PREP', 'lch': 'PREP', 'dch': 'PREP',
+            'fch': 'PREP', 'kch': 'PREP', 'rch': 'PREP', 'sch': 'PREP',
+            'da': 'SETUP', 'sa': 'SETUP', 'so': 'SETUP',
+            'al': 'CLOSE', 'ar': 'CLOSE', 'or': 'CLOSE', 'ol': 'CLOSE',
+            'lk': 'LINK', 'lo': 'LINK',
+            'yk': 'INIT', 'ka': 'MAINT', 'ta': 'XFER',
+            'ct': 'CTRL', 'ck': 'CTRL',
+            'ke': 'KE', 'te': 'TE',
+        }
+        return lanes.get(prefix, prefix.upper())
+
+
+@dataclass
+class BBaseline:
+    """B-wide population means and standard deviations for deviation reporting.
+
+    Loaded from data/b_baseline.json. Used by program_card() to show
+    per-folio deviations from B-wide averages.
+    """
+    metrics: Dict[str, Tuple[float, float]]  # metric_name -> (mean, std)
+
+    def z_score(self, metric: str, value: float) -> Optional[float]:
+        """Standard score (value - mean) / std, or None if unknown."""
+        if metric not in self.metrics:
+            return None
+        mean, std = self.metrics[metric]
+        if std == 0:
+            return 0.0
+        return (value - mean) / std
+
+    def deviation_pp(self, metric: str, value: float) -> Optional[float]:
+        """Deviation in percentage points: (value - mean) * 100."""
+        if metric not in self.metrics:
+            return None
+        mean, _ = self.metrics[metric]
+        return (value - mean) * 100
+
+    def format_deviation(self, metric: str, value: float) -> str:
+        """Format deviation with pp and z-score.
+
+        Thresholds (by z-score):
+          |z| <= 0.5  -> '~avg'
+          0.5 < |z| <= 1.5 -> '+Npp z=X.X' / '-Npp z=X.X'
+          |z| > 1.5 -> '+Npp* z=X.X' / '-Npp* z=X.X' (truly anomalous)
+
+        For metrics with baseline mean < 5%, uses multiplier format:
+          'N.Nx z=X.X' / 'N.Nx* z=X.X'
+        """
+        z = self.z_score(metric, value)
+        if z is None:
+            return '?'
+        if abs(z) <= 0.5:
+            return '~avg'
+        mean, _ = self.metrics[metric]
+        star = '*' if abs(z) > 1.5 else ''
+        # Sub-5% baseline: use multiplier format (e.g., "4.4x*")
+        if mean > 0 and mean < 0.05:
+            if value == 0:
+                return f'absent{star} z={abs(z):.1f}'
+            mult = value / mean
+            return f'{mult:.1f}x{star} z={abs(z):.1f}'
+        pp = self.deviation_pp(metric, value)
+        sign = '+' if pp >= 0 else ''
+        return f'{sign}{pp:.0f}pp{star} z={abs(z):.1f}'
+
+    def is_notable(self, metric: str, value: float, threshold: float = 1.0) -> bool:
+        """True if |z| > threshold (default 1.0 std)."""
+        z = self.z_score(metric, value)
+        return z is not None and abs(z) > threshold
+
+
+@dataclass
+class BFolioAnalysis:
+    """
+    Complete analysis of a Currier B folio.
+
+    Aggregates token-level analysis into folio-level interpretation
+    including kernel balance, material category, and output type.
+    """
+    folio: str
+    token_count: int
+    tokens: List[BTokenAnalysis]
+
+    # Aggregate distributions
+    prefix_role_dist: Dict[str, int]
+    suffix_role_dist: Dict[str, int]
+    middle_tier_dist: Dict[str, int]
+    kernel_dist: Dict[str, int]
+
+    # Interpretations
+    kernel_balance: str          # 'ESCAPE_DOMINANT', 'ENERGY_DOMINANT', etc.
+    material_category: str       # 'ANIMAL', 'ROOT', 'DELICATE_PLANT'
+    output_category: str         # 'WATER', 'OIL', 'PRECISION'
+
+    # Classification rates
+    prefix_classified_pct: float
+    suffix_classified_pct: float
+    middle_classified_pct: float
+
+    # Bridge/dark-pipeline balance (C1146)
+    bridge_rate: float = 0.0         # Bridge MIDDLE tokens / total tokens
+    dark_pipeline_rate: float = 0.0  # Dark-pipeline MIDDLE tokens / total tokens
+    folio_balance: str = ''          # BRIDGE_DOMINANT / DARK_DOMINANT / BALANCED
+
+    # External data (pre-computed JSON files, None if unavailable)
+    regime: Optional[str] = None                # REGIME_1..4 (C494)
+    regime_probability: Optional[float] = None  # GMM posterior
+    section: Optional[str] = None               # S/H/B/P/C/T (external, illustration-based)
+    axm_self: Optional[float] = None            # AXM self-transition, forgiveness (C1016)
+    hazard_density: Optional[float] = None      # Hazard density (C622)
+    prefix_entropy: Optional[float] = None      # PREFIX routing entropy (C1017)
+    archetype: Optional[int] = None             # Dynamical archetype 1-6 (C1016)
+    vocab_size: Optional[int] = None            # AXM classified MIDDLE types per folio
+    vocab_residual: Optional[float] = None      # AXM vocab anomaly (observed - size-predicted)
+
+    # Computed from token analysis in analyze_folio()
+    unique_middles: int = 0          # Distinct MIDDLEs in this folio (C531)
+    compound_rate: float = 0.0       # Fraction of tokens with compound MIDDLE (C872)
+    ol_rate: float = 0.0             # ol-substring token fraction (morphological, C609/C1174)
+    qo_fraction: float = 0.0        # QO-lane prefix fraction (C605)
+    sister_ratio: float = 0.5       # ch/(ch+sh) among prefixes (C412)
+    dominant_role: Optional[str] = None   # Top 5-role category: CC/EN/FL/FQ/AX (C552)
+    paragraph_count: Optional[int] = None # Number of paragraphs (C858)
+
+    # 8-category operational profile (C1250, C1278, C1291)
+    category_profile: Dict[str, int] = field(default_factory=dict)  # Aggregated across all tokens
+    category_regime_character: Optional[str] = None  # From C1291 (REGIME_1=THERMAL-dominant, etc.)
+
+    # Deviation reporting
+    baseline: Optional['BBaseline'] = None           # B-wide baseline (set by BFolioDecoder)
+    role_proportions: Optional[Dict[str, float]] = None  # {'EN': 0.80, 'AX': 0.19, ...}
+
+    # Section name lookup (external scholarly convention)
+    _SECTION_NAMES = {
+        'S': 'Stars/Recipes', 'H': 'Herbal', 'B': 'Bathing/Biology',
+        'P': 'Pharmaceutical', 'C': 'Cosmological', 'T': 'Text',
+        'Z': 'Zodiac', 'A': 'Astronomical',
+    }
+    # Internal structural label (constraint system)
+    _SECTION_LABELS = {
+        'S': 'STARS', 'H': 'HERBAL', 'B': 'BIO', 'P': 'PHARMA',
+        'C': 'COSMO', 'T': 'TEXT',
+    }
+    # Archetype labels (C1016, C1018)
+    _ARCHETYPE_LABELS = {
+        1: 'STRONG_ATTRACTOR', 2: 'MODERATE_ATTRACTOR',
+        3: 'BALANCED_EXCHANGE', 4: 'WEAK_ATTRACTOR',
+        5: 'ACTIVE_INTERCHANGE', 6: 'HAZARD_TOLERANT',
+    }
+
+    def program_card(self, interp: bool = False) -> str:
+        """Render folio program card with deviation-from-baseline reporting.
+
+        Tier 2 by default (structural metrics + deviations from B-wide means).
+        interp=True adds Tier 3-4 (DISTINCTIVE/CONSISTENT deviation character).
+        Falls back to categorical labels when baseline is unavailable.
+        """
+        W = 70
+        b = self.baseline  # May be None
+        lines = []
+        lines.append('=' * W)
+        tier_label = 'Tier 2' if not interp else 'Tier 2 + Tier 3-4'
+        lines.append(f'PROGRAM CARD: {self.folio:50s}[{tier_label}]')
+        lines.append('=' * W)
+
+        # Section: external + text-derived
+        sec_name = self._SECTION_NAMES.get(self.section, '?') if self.section else '?'
+        sec_label = self._SECTION_LABELS.get(self.section, '?') if self.section else '?'
+        lines.append(f'  Section: {self.section or "?"} - '
+                     f'"{sec_name}" | {sec_label}')
+
+        # Kernel: raw % + deviation from B-wide mean
+        k_total = sum(self.kernel_dist.values()) or 1
+        k_pct = self.kernel_dist.get('k', 0) / k_total
+        h_pct = self.kernel_dist.get('h', 0) / k_total
+        e_pct = self.kernel_dist.get('e', 0) / k_total
+        if b:
+            k_dev = b.format_deviation('k_ratio', k_pct)
+            h_dev = b.format_deviation('h_ratio', h_pct)
+            e_dev = b.format_deviation('e_ratio', e_pct)
+            lines.append(f'  Kernel: k={100*k_pct:.1f}% [{k_dev}]  '
+                         f'h={100*h_pct:.1f}% [{h_dev}]  '
+                         f'e={100*e_pct:.1f}% [{e_dev}]')
+        else:
+            lines.append(f'  Kernel: k={100*k_pct:.1f}%  h={100*h_pct:.1f}%  '
+                         f'e={100*e_pct:.1f}%  [{self.kernel_balance}]')
+
+        # Role profile: deviation signature for non-zero roles
+        if b and self.role_proportions:
+            role_parts = []
+            for role in ['EN', 'AX', 'CC']:
+                val = self.role_proportions.get(role, 0.0)
+                metric_key = f'role_{role}_pct'
+                dev = b.format_deviation(metric_key, val)
+                role_parts.append(f'{role} {dev}')
+            lines.append(f'  Roles: {" | ".join(role_parts)}')
+        else:
+            role_str = f'{self.dominant_role}-dominant' if self.dominant_role else '?'
+            lines.append(f'  Roles: {role_str} (C552)')
+
+        # REGIME (categorical is appropriate - discrete cluster assignment)
+        regime_str = self.regime or '?'
+        if self.regime_probability is not None:
+            regime_str += f' ({self.regime_probability:.0%})'
+        lines.append(f'  REGIME: {regime_str} (C494)')
+
+        # Archetype
+        arch_label = self._ARCHETYPE_LABELS.get(self.archetype, '?') if self.archetype else '?'
+        arch_str = f'{self.archetype} - {arch_label}' if self.archetype else '?'
+        lines.append(f'  Archetype: {arch_str} (C1016)')
+
+        # Structural profile with deviations
+        lines.append(f'\n  STRUCTURAL PROFILE')
+        lines.append(f'  {"-" * 40}')
+        if b:
+            qo_dev = b.format_deviation('qo_fraction', self.qo_fraction)
+            lines.append(f'  QO-lane:      {self.qo_fraction:.1%} [{qo_dev}]')
+            sis_dev = b.format_deviation('sister_ratio', self.sister_ratio)
+            lines.append(f'  Sister ch:    {self.sister_ratio:.1%} [{sis_dev}]')
+            ol_dev = b.format_deviation('ol_rate', self.ol_rate)
+            lines.append(f'  ol-morph:     {self.ol_rate:.1%} [{ol_dev}] (C1174)')
+            if self.axm_self is not None:
+                axm_dev = b.format_deviation('axm_self', self.axm_self)
+                lines.append(f'  Forgiveness:  {self.axm_self:.2f} [{axm_dev}] (C1016)')
+            else:
+                lines.append(f'  Forgiveness:  -- (C1016)')
+            if self.hazard_density is not None:
+                haz_dev = b.format_deviation('hazard_density', self.hazard_density)
+                lines.append(f'  Haz density:  {self.hazard_density:.1%} [{haz_dev}] (C622)')
+            else:
+                lines.append(f'  Haz density:  -- (C622)')
+        else:
+            chsh_frac = 1.0 - self.qo_fraction
+            lines.append(f'  Lanes:        QO={self.qo_fraction:.1%}  CHSH={chsh_frac:.1%}')
+            lines.append(f'  Sister:       ch={self.sister_ratio:.1%}')
+            lines.append(f'  ol-morph:     {self.ol_rate:.1%} (C1174)')
+            if self.axm_self is not None:
+                if self.axm_self >= 0.75:
+                    forg = 'HIGH'
+                elif self.axm_self >= 0.55:
+                    forg = 'MODERATE'
+                else:
+                    forg = 'LOW'
+                lines.append(f'  Forgiveness:  {self.axm_self:.2f} [{forg}] (C1016)')
+            else:
+                lines.append(f'  Forgiveness:  -- (C1016)')
+            if self.hazard_density is not None:
+                lines.append(f'  Haz density:  {self.hazard_density:.1%} (C622)')
+            else:
+                lines.append(f'  Haz density:  -- (C622)')
+
+        # Vocabulary with deviations
+        lines.append(f'\n  VOCABULARY')
+        lines.append(f'  {"-" * 40}')
+        if b:
+            br_dev = b.format_deviation('bridge_rate', self.bridge_rate)
+            dk_dev = b.format_deviation('dark_pipeline_rate', self.dark_pipeline_rate)
+            lines.append(f'  Bridge: {self.bridge_rate:.1%} [{br_dev}] | '
+                         f'Dark: {self.dark_pipeline_rate:.1%} [{dk_dev}]')
+        else:
+            lines.append(f'  Bridge: {self.bridge_rate:.1%} | Dark-pipe: '
+                         f'{self.dark_pipeline_rate:.1%} [{self.folio_balance}]')
+        cp_str = f'{self.compound_rate:.1%}'
+        if b:
+            cp_dev = b.format_deviation('compound_rate', self.compound_rate)
+            cp_str += f' [{cp_dev}]'
+        lines.append(f'  Unique MIDDLEs: {self.unique_middles} | '
+                     f'Compound: {cp_str}')
+        if self.vocab_size is not None:
+            res_str = ''
+            if self.vocab_residual is not None:
+                sign = '+' if self.vocab_residual >= 0 else ''
+                res_str = f' | AXM residual: {sign}{self.vocab_residual:.1f}'
+            lines.append(f'  AXM vocab: {self.vocab_size}{res_str}')
+        else:
+            lines.append(f'  AXM vocab: --')
+
+        # Tier 3-4 blocks (only with --interp)
+        if interp:
+            # Material/output: only show when anomalous
+            mat_anomalous = self.material_category not in ('ANIMAL', '')
+            out_anomalous = self.output_category not in ('WATER', '')
+            if mat_anomalous or out_anomalous:
+                lines.append(f'\n  MATERIAL & OUTPUT (anomalous) '
+                             f'[Tier 3-4, conditional on Brunschwig]')
+                lines.append(f'  {"-" * 40}')
+                if mat_anomalous:
+                    lines.append(f'  Material: {self.material_category} '
+                                 f'(non-default, C499)')
+                if out_anomalous:
+                    lines.append(f'  Output: {self.output_category} '
+                                 f'(non-default, F-BRU-020)')
+
+            # Deviation character report
+            lines.append(f'\n  DEVIATION CHARACTER [Tier 3 interpretation]')
+            lines.append(f'  {"-" * 40}')
+            for char_line in self._compose_character().split('\n'):
+                lines.append(f'  {char_line}')
+
+        lines.append('=' * W)
+        return '\n'.join(lines)
+
+    def _compose_character(self) -> str:
+        """Compose deviation-based Tier 3 operational character.
+
+        Groups metrics into DISTINCTIVE (|z| > 1.0) and CONSISTENT (|z| <= 1.0).
+        Each DISTINCTIVE item shows folio value vs B-wide average.
+        Returns multi-line string for embedding in program card.
+        """
+        b = self.baseline
+        if not b:
+            return self._compose_character_legacy()
+
+        # Metrics to check: (metric_key, folio_value, display_label)
+        k_total = sum(self.kernel_dist.values()) or 1
+        checks = [
+            ('k_ratio', self.kernel_dist.get('k', 0) / k_total, 'k'),
+            ('h_ratio', self.kernel_dist.get('h', 0) / k_total, 'h'),
+            ('e_ratio', self.kernel_dist.get('e', 0) / k_total, 'e'),
+            ('qo_fraction', self.qo_fraction, 'QO-lane'),
+            ('sister_ratio', self.sister_ratio, 'ch-sister'),
+            ('ol_rate', self.ol_rate, 'ol-morph'),
+            ('compound_rate', self.compound_rate, 'compound'),
+            ('bridge_rate', self.bridge_rate, 'bridge'),
+            ('dark_pipeline_rate', self.dark_pipeline_rate, 'dark-pipe'),
+        ]
+        if self.axm_self is not None:
+            checks.append(('axm_self', self.axm_self, 'forgiveness'))
+        if self.hazard_density is not None:
+            checks.append(('hazard_density', self.hazard_density, 'haz-density'))
+        # Role proportions (only roles with non-zero baseline std)
+        if self.role_proportions:
+            for role in ['EN', 'AX', 'CC']:
+                val = self.role_proportions.get(role, 0.0)
+                metric_key = f'role_{role}_pct'
+                if metric_key in b.metrics and b.metrics[metric_key][1] > 0:
+                    checks.append((metric_key, val, f'{role}-role'))
+
+        distinctive = []
+        consistent = []
+        all_z = []
+        for metric, value, label in checks:
+            z = b.z_score(metric, value)
+            if z is None:
+                continue
+            all_z.append(abs(z))
+            mean, _ = b.metrics[metric]
+            if abs(z) > 1.0:
+                direction = 'High' if z > 0 else 'Low'
+                distinctive.append((abs(z), f'{direction} {label} '
+                                    f'({100*value:.1f}% vs B-avg {100*mean:.1f}%)'))
+            else:
+                consistent.append(label)
+
+        # Sort distinctive by |z| descending (most anomalous first)
+        distinctive.sort(key=lambda x: x[0], reverse=True)
+
+        parts = []
+        if distinctive:
+            items = '; '.join(d[1] for d in distinctive)
+            parts.append(f'DISTINCTIVE: {items}')
+        else:
+            # Report centroid proximity as the distinctive property
+            mean_z = sum(all_z) / len(all_z) if all_z else 0
+            parts.append(f'DISTINCTIVE: None - near population centroid '
+                         f'(mean |z|={mean_z:.2f} across {len(all_z)} metrics)')
+        # Compact CONSISTENT: count of measured metrics within 1 std
+        n_measured = len(distinctive) + len(consistent)
+        if consistent:
+            parts.append(f'CONSISTENT: {len(consistent)}/{n_measured} measured metrics within 1 std of B-average')
+        return '\n'.join(parts)
+
+    def _compose_character_legacy(self) -> str:
+        """Legacy Tier 3 gloss (used when baseline unavailable)."""
+        regime_desc = {
+            'REGIME_1': 'thermal-control-intensive',
+            'REGIME_2': 'output-intensive',
+            'REGIME_3': 'transient-throughput',
+            'REGIME_4': 'precision-constrained',
+        }
+        section_desc = {
+            'B': 'balneological processing',
+            'H': 'mixed extraction/cycling',
+            'S': 'recipe execution',
+            'C': 'observation-intensive processing',
+        }
+        parts = []
+        if self.regime and self.regime in regime_desc:
+            parts.append(regime_desc[self.regime])
+        if self.section and self.section in section_desc:
+            parts.append(section_desc[self.section])
+        if not parts:
+            return 'Uncharacterized program.'
+        return ' '.join(parts).capitalize() + '.'
+
+
+@dataclass
+class BLineAnalysis:
+    """
+    Line-level analysis of a Currier B control block.
+
+    Lines are boundary-constrained control blocks with free interior (C964).
+    Boundaries (SETUP/CLOSE) are positionally constrained; the WORK zone
+    interior is an unordered bag of operations (C961).
+    """
+    line_id: str
+    tokens: List[BTokenAnalysis]
+    token_count: int
+
+    # Line structure (C357-358)
+    has_init_marker: bool        # daiin, saiin at start
+    has_final_marker: bool       # am, oly, dy at end
+    init_token: Optional[str]    # The actual init token
+    final_token: Optional[str]   # The actual final token
+
+    # FL progression through line
+    fl_stages: List[str]         # Sequence of FL stages
+    fl_progression: str          # 'FORWARD', 'STATIC', 'MIXED'
+
+    # Kernel inventory (C961: WORK zone is unordered, no within-line kernel ordering)
+    kernel_sequence: List[str]   # Kernels encountered (order not meaningful per C961)
+
+    # Role sequence
+    role_sequence: List[str]     # Sequence of prefix roles
+
+    # Line-level interpretation
+    line_type: str               # 'INIT', 'PROCESS', 'TERMINAL', 'ESCAPE', 'HEADER'
+    opener_role: Optional[str] = None     # C959: Role of opening token (determines line character)
+    is_header: bool = False      # C747/C935: Line-1 HEADER (50% HT, operationally redundant)
+    paragraph_zone: Optional[str] = None  # HEADER, BODY, TAIL (C747/C963/C1237, set by paragraph analysis)
+
+    # Suffix mode classification (C1229-C1231)
+    suffix_mode: Optional[str] = None    # 'A' (spec/energy), 'B' (continuation/bare), None if insufficient
+
+    # 8-category operational profile (C1250, C1278)
+    category_profile: Dict[str, int] = field(default_factory=dict)  # {'THERMAL': 5, 'FLOW': 3, ...}
+    dominant_category: Optional[str] = None  # Category with highest count
+    category_mode_character: Optional[str] = None  # 'SPECIFICATION' if TH+MN>40%, 'CONTINUATION' if FL+TR+ST>40% (C1279/C1309)
+
+    # Control loop annotations (C1234, C1235, C1237)
+    loop_markers: Dict[str, str] = field(default_factory=dict)  # {'setup': 'daiin', 'check': 'okaiin'}
+    line_final_type: Optional[str] = None  # FINALIZE/LOOP_CHECK/TERMINAL/CLOSE/ROUTE/OPEN
+
+    def structural(self) -> str:
+        """Tier 0-2 technical line summary."""
+        parts = []
+        if self.has_init_marker:
+            parts.append(f"INIT:{self.init_token}")
+        if self.fl_stages:
+            parts.append(f"FL:{self.fl_progression}")
+        if self.kernel_sequence:
+            parts.append(f"kern:[{','.join(self.kernel_sequence)}]")
+        if self.has_final_marker:
+            parts.append(f"FINAL:{self.final_token}")
+        return ' | '.join(parts) if parts else '(no structure)'
+
+    def interpretive(self) -> str:
+        """Tier 3-4 human-readable line summary."""
+        # C747/C935: Line-1 is HEADER (50% HT, operationally redundant)
+        if self.is_header:
+            return f"[HEADER] Identification/specification line - {self.token_count} tokens (HT compounds per C935)"
+
+        parts = []
+
+        # Line structure follows SETUP->WORK->CLOSE pattern (C556)
+        setup_roles = {'CC_INIT', 'PREP_TIER', 'AX_SCAFFOLD'}
+        work_roles = {'EN_KERNEL', 'EN_QO'}
+        close_roles = {'AX_LATE', 'FL_FINAL'}
+
+        has_setup = any(r in setup_roles for r in self.role_sequence[:2] if r)
+        has_work = any(r in work_roles for r in self.role_sequence)
+        has_close = any(r in close_roles for r in self.role_sequence[-2:] if r)
+
+        # Opening
+        if self.has_init_marker:
+            if self.init_token and 'daiin' in self.init_token:
+                parts.append("Begin procedure")
+            else:
+                parts.append("Start step")
+        elif has_setup and 'PREP_TIER' in self.role_sequence[:2]:
+            parts.append("Prepare material")
+
+        # Main action based on line type
+        type_gloss = {
+            'INIT': 'setting up',
+            'PROCESS': 'processing material',
+            'TERMINAL': 'finishing step',
+            'ESCAPE': 'handling exception',
+            'MONITOR': 'checking progress',
+        }
+        if self.line_type in type_gloss:
+            parts.append(type_gloss[self.line_type])
+
+        # FL progression
+        if self.fl_progression == 'FORWARD':
+            parts.append('(progressing)')
+        elif self.fl_progression == 'STATIC':
+            parts.append('(steady state)')
+
+        # Closing
+        if self.has_final_marker:
+            parts.append("-> done")
+
+        return ' - '.join(parts) if parts else f"Line with {self.token_count} operations"
+
+    def flow_render(self) -> str:
+        """Render line as operations with control-flow labels and inline FL markers.
+
+        Uses ' -> ' for boundary tokens (SETUP/CLOSE) to show sequential structure,
+        ' | ' for WORK zone tokens to reflect unordered interior (C961, C964),
+        and ' = ' for suffix continuation (C1058: batch repetition).
+        """
+        if not self.tokens:
+            return ''
+
+        parts = []
+        for tok in self.tokens:
+            fg = tok.flow_gloss()
+            s = fg['operation']
+            if fg['fl_stage']:
+                s += f" (FL:{fg['fl_stage']})"
+            if fg['flow']:
+                s += f" [{fg['flow']}]"
+            parts.append((s, tok.prefix_phase, tok.suffix_continuation))
+
+        # Join with zone-aware separators
+        if len(parts) <= 1:
+            return parts[0][0] if parts else ''
+
+        result = parts[0][0]
+        for i in range(1, len(parts)):
+            prev_phase = parts[i-1][1]
+            curr_phase = parts[i][1]
+            is_continuation = parts[i][2]
+            # Suffix continuation: batch repetition signal (C1058)
+            if is_continuation and prev_phase == 'WORK' and curr_phase == 'WORK':
+                result += ' = ' + parts[i][0]
+            # Boundary-to-boundary or boundary-to-work: sequential arrow
+            # Work-to-work: unordered pipe (C961)
+            elif prev_phase == 'WORK' and curr_phase == 'WORK':
+                result += ' | ' + parts[i][0]
+            else:
+                result += ' -> ' + parts[i][0]
+        return result
+
+
+@dataclass
+class BParagraphAnalysis:
+    """
+    Paragraph-level analysis of a Currier B operational unit.
+
+    CRITICAL: Paragraphs are PARALLEL_PROGRAMS (C855), NOT sequential stages.
+    Each paragraph is an independent mini-program. Do NOT assume sequential
+    progression between paragraphs.
+
+    Paragraph boundaries detected by gallows-initial lines (C827):
+    k, t, p, f at line start indicate new operational unit.
+    """
+    paragraph_id: str               # P1, P2, P3...
+    lines: List[BLineAnalysis]
+    line_count: int
+    token_count: int
+
+    # Paragraph structure
+    boundary_token: Optional[str]   # The gallows token that started this paragraph
+    is_gallows_initial: bool        # Did paragraph start with gallows?
+
+    # Aggregate from lines
+    kernel_dist: Dict[str, int]
+    role_dist: Dict[str, int]
+    fl_distribution: Dict[str, int]  # INITIAL/EARLY/MEDIAL/LATE/TERMINAL counts
+
+    # Line type composition
+    init_lines: int                 # Lines with init markers
+    process_lines: int              # Normal processing lines
+    escape_lines: int               # Lines with backward FL
+    terminal_lines: int             # Lines with terminal markers
+
+    # Paragraph characterization
+    kernel_balance: str             # ESCAPE_DOMINANT, ENERGY_DOMINANT, etc.
+    dominant_role: Optional[str]    # Most common prefix role
+    fl_trend: str                   # EARLY_HEAVY, LATE_HEAVY, DISTRIBUTED
+
+    # Paragraph zones (C747/C963/C1237: header/body/tail)
+    zone_distribution: Dict[str, int] = None  # {'HEADER': 1, 'BODY': 3, 'TAIL': 1}
+
+    # 8-category operational profile (C1250, C1278, C1287, C1308)
+    category_profile: Dict[str, int] = field(default_factory=dict)  # Aggregated across all lines
+    header_marking_rate: float = 0.0   # MARKING fraction in header line (C1287: 2.44x enrichment)
+    category_key: List[str] = field(default_factory=list)  # Top 2-3 categories defining operational domain (C1308)
+
+    # Cycling model (C1229-C1232)
+    suffix_mode_sequence: List[str] = field(default_factory=list)  # ['A','B','A','B',...] per body line
+    mode_interleave_rate: float = 0.0     # Fraction of consecutive mode transitions that alternate
+    tail_product_signature: Optional[str] = None  # MIXED_OUTPUT, VESSEL_HEAVY, PROCESS_HEAVY
+
+    # Paragraph termination (C1237, C1240)
+    termination_token: Optional[str] = None   # Word of final token if suffix is -am
+    termination_type: Optional[str] = None    # 'AM_SHUTDOWN' or None
+
+    def structural(self) -> str:
+        """Tier 0-2 technical paragraph summary."""
+        parts = [f"{self.paragraph_id}"]
+        if self.boundary_token:
+            parts.append(f"({self.boundary_token})")
+        parts.append(f": {self.line_count}L/{self.token_count}T")
+
+        if self.kernel_dist:
+            k_str = ','.join(f"{k}:{v}" for k, v in sorted(self.kernel_dist.items()))
+            parts.append(f"kern=[{k_str}]")
+
+        parts.append(f"type=[{self.kernel_balance}]")
+        if self.dominant_role:
+            parts.append(f"role={self.dominant_role}")
+
+        if self.zone_distribution:
+            zone_str = '/'.join(f"{z[0]}:{c}" for z, c in sorted(self.zone_distribution.items()))
+            parts.append(f"zones=[{zone_str}]")
+
+        # Category key (C1308)
+        if self.category_key:
+            _abbrev = {'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+                       'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+                       'MARKING': 'MK', 'MONITORING': 'MN'}
+            key_str = '|'.join(_abbrev.get(c, c[:2]) for c in self.category_key)
+            parts.append(f"key=[{key_str}]")
+
+        # Cycling model (C1229-C1232)
+        if self.suffix_mode_sequence:
+            mode_str = ''.join(self.suffix_mode_sequence)
+            parts.append(f"mode=[{mode_str}] interleave={self.mode_interleave_rate:.0%}")
+        if self.tail_product_signature:
+            parts.append(f"tail={self.tail_product_signature}")
+
+        return ' | '.join(parts)
+
+    def interpretive(self) -> str:
+        """Tier 3-4 human-readable paragraph summary."""
+        parts = []
+
+        # Kernel balance interpretation
+        balance_gloss = {
+            'ESCAPE_DOMINANT': "Waiting/settling phase",
+            'ENERGY_DOMINANT': "Active heating phase",
+            'HAZARD_HEAVY': "Careful monitoring phase",
+            'BALANCED': "Mixed operations",
+            'NO_KERNELS': "Control/setup phase",
+        }
+        parts.append(balance_gloss.get(self.kernel_balance, self.kernel_balance))
+
+        # Line composition hint
+        if self.escape_lines > self.line_count * 0.3:
+            parts.append("with exception handling")
+        if self.init_lines > 0:
+            parts.append("with initialization")
+        if self.terminal_lines > 0:
+            parts.append("to completion")
+
+        # FL trend
+        fl_gloss = {
+            'EARLY_HEAVY': "(early-stage focus)",
+            'LATE_HEAVY': "(late-stage focus)",
+            'TERMINAL_HEAVY': "(finishing)",
+        }
+        if self.fl_trend in fl_gloss:
+            parts.append(fl_gloss[self.fl_trend])
+
+        # Cycling model (C1229-C1232)
+        if self.mode_interleave_rate > 0.5:
+            parts.append("(alternating spec/equil cycles)")
+        tail_gloss = {
+            'MIXED_OUTPUT': "(mixed output)",
+            'VESSEL_HEAVY': "(vessel-heavy output)",
+            'PROCESS_HEAVY': "(process-heavy output)",
+        }
+        if self.tail_product_signature in tail_gloss:
+            parts.append(tail_gloss[self.tail_product_signature])
+
+        return ' - '.join(parts) if parts else f"Paragraph with {self.line_count} steps"
+
+
+class BFolioDecoder:
+    """
+    Decoder for Currier B folios using consolidated structural knowledge.
+
+    Uses constraints: C371-378, C510-522, C766-769, C884, C906-907,
+                     C1218-C1221, C1225-C1226, C1229-C1232,
+                     F-BRU-011, F-BRU-018-020
+
+    Two output modes:
+    - Structural (Tier 0-2): Technical constraint-based terminology
+    - Interpretive (Tier 3-4): Brunschwig-grounded human-readable
+
+    Example:
+        decoder = BFolioDecoder()
+        analysis = decoder.analyze_folio('f107r')
+        print(analysis.kernel_balance)      # 'ESCAPE_DOMINANT'
+        print(analysis.material_category)   # 'ANIMAL'
+        print(decoder.decode_summary('f107r'))
+    """
+
+    # Maps are loaded from data/decoder_maps.json at init.
+    # See that file for constraint citations per entry.
+    DECODER_MAPS_PATH = PROJECT_ROOT / 'data' / 'decoder_maps.json'
+
+    # Terminal character clique membership (C1072, C1077)
+    # 3 genuine cliques + 2 elevated non-cliques from Phase 382
+    # Informational only — terminal-role/state are frequency-mediated (C1073-C1075)
+    TERMINAL_CLIQUES = {
+        'n': 'CLIQUE_N',    # 4.07x vs null, p=0.000 — HAZARD_TARGET/CONNECTOR hubs
+        'y': 'CLIQUE_Y',    # 3.40x vs null, p=0.001 — HAZARD_SOURCE/CONNECTOR hubs
+        'l': 'CLIQUE_L',    # 2.52x vs null, p=0.014 — mixed hub roles
+        'm': 'ELEVATED_M',  # 3.24x vs null, p=0.085 — 50% FLOW_TERMINAL (not a clique)
+        'r': 'ELEVATED_R',  # 2.58x vs null, p=0.052 — (not a clique)
+    }
+
+    @classmethod
+    def _load_maps(cls) -> dict:
+        """Load decoder maps from external JSON file."""
+        with open(cls.DECODER_MAPS_PATH, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data['maps']
+
+    @staticmethod
+    def _extract_simple(map_data: dict) -> dict:
+        """Extract {key: value} from map entries."""
+        return {k: v['value'] for k, v in map_data['entries'].items()}
+
+    @staticmethod
+    def _extract_tuple(map_data: dict) -> dict:
+        """Extract {key: (category, gloss)} from map entries."""
+        return {k: (v['category'], v['gloss']) for k, v in map_data['entries'].items()}
+
+    def __init__(self):
+        self.tx = Transcript()
+        self.morph = Morphology()
+        self.token_dict = TokenDictionary()
+        self.middle_dict = MiddleDictionary()
+        self.category_classifier = CategoryClassifier()
+
+        # MiddleAnalyzer for compound MIDDLE decomposition (C872, C522)
+        self.mid_analyzer = MiddleAnalyzer()
+        self.mid_analyzer.build_inventory('B')
+
+        # Load maps from external JSON
+        maps = self._load_maps()
+
+        # Simple string-value maps
+        self.PREFIX_PHASE = self._extract_simple(maps['prefix_phase'])
+        self.PREFIX_ROLES = self._extract_simple(maps['prefix_roles'])
+        self.SUFFIX_GLOSS = self._extract_simple(maps['suffix_gloss'])
+        self.SUFFIX_TERMINAL = self._extract_simple(maps['suffix_terminal'])
+        self.SUFFIX_ROLES = self._extract_simple(maps['suffix_roles'])
+        self.PREFIX_ACTIONS = self._extract_simple(maps['prefix_actions'])
+        self.BRUNSCHWIG_GLOSS = self._extract_simple(maps['brunschwig_gloss'])
+        self.MIDDLE_KERNEL_PROFILE = self._extract_simple(maps['middle_kernel_profile'])
+        self.MIDDLE_REGIME = self._extract_simple(maps['middle_regime'])
+        self.MIDDLE_SECTION = self._extract_simple(maps['middle_section'])
+
+        # Dict-value maps (suffix_flow: {key: {value, flow_type}})
+        self.SUFFIX_FLOW = {k: v for k, v in maps['suffix_flow']['entries'].items()}
+
+        # Tuple-value maps (category, gloss)
+        self.MIDDLE_TIERS = self._extract_tuple(maps['middle_tiers'])
+        self.FL_STAGE_MAP = self._extract_tuple(maps['fl_stage_map'])
+        self.CC_TOKENS = self._extract_tuple(maps['cc_tokens'])
+
+        # Simple list
+        self.KERNEL_CHARS = maps['kernel_chars']['value']
+
+        # Control grammar viewer layers (C976, C1000, C995, C1001)
+        self.MACRO_STATE = self._extract_simple(maps['macro_state'])  # class_id str → state label
+        self.HUB_SUB_ROLE = self._extract_simple(maps['hub_sub_role'])  # middle → sub-role
+        self.PREFIX_ZONE = self._extract_simple(maps['prefix_zone'])  # prefix → zone
+
+        # PREFIX base-modifier decomposition (C1218-C1219)
+        _pbm = maps.get('prefix_base_modifier', {})
+        self._base_chars = set(_pbm.get('base_characters', {}).keys())
+        self._modifier_chars = set(_pbm.get('modifier_characters', {}).keys())
+
+        # Suffix mode centroids (C1231)
+        _smc = maps.get('suffix_mode_centroids', {})
+        self._mode_a_centroid = _smc.get('mode_a', [0.430, 0.019, 0.086, 0.466])
+        self._mode_b_centroid = _smc.get('mode_b', [0.155, 0.031, 0.072, 0.741])
+
+        # Tail product centroids (C1232)
+        _tpc = maps.get('tail_product_centroids', {})
+        self._tail_centroids = _tpc.get('centroids', {})
+
+        # Token → 49-class mapping (for macro_state chain)
+        _ctm_path = PROJECT_ROOT / 'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json'
+        with open(_ctm_path, 'r', encoding='utf-8') as f:
+            _ctm = json.load(f)
+        self._token_to_class = {t: int(c) for t, c in _ctm['token_to_class'].items()}
+
+        # Affordance table (972 MIDDLEs → bin + family)
+        _aff_path = PROJECT_ROOT / 'data' / 'middle_affordance_table.json'
+        with open(_aff_path, 'r', encoding='utf-8') as f:
+            _aff_data = json.load(f)
+        self._middle_to_affordance_bin = {}
+        self._middle_to_affordance_family = {}
+        for mid, entry in _aff_data.get('middles', {}).items():
+            if 'affordance_label' in entry:
+                self._middle_to_affordance_bin[mid] = entry['affordance_label']
+            if 'primary_family' in entry:
+                self._middle_to_affordance_family[mid] = entry['primary_family']
+
+        # Dark pipeline MIDDLE set (C1137, C1140)
+        _dp_path = PROJECT_ROOT / 'data' / 'dark_pipeline_middles.json'
+        with open(_dp_path, 'r', encoding='utf-8') as f:
+            _dp_data = json.load(f)
+        self._dark_pipeline_set = set(_dp_data['middles'])
+
+        # Terminal opacity (C1440: three-tier suffix suppression gradient)
+        self.TERMINAL_OPACITY = self._extract_simple(maps['terminal_opacity'])
+
+        # Frame hazard (C1448: HEAD x TERM hazard map)
+        self.FRAME_HAZARD = self._extract_simple(maps['frame_hazard'])
+
+        # Bridge MIDDLE set (C1013, 85 MIDDLEs)
+        _bridge_path = PROJECT_ROOT / 'phases' / 'BRIDGE_MIDDLE_SELECTION_MECHANISM' / 'results' / 'bridge_selection.json'
+        with open(_bridge_path, 'r', encoding='utf-8') as f:
+            _bridge_data = json.load(f)
+        self._bridge_set = set(_bridge_data['t5_structural_profile']['bridge_middles'])
+
+        # External folio-level data for program cards (loaded once, keyed by folio)
+        # REGIME assignments (C494, C1016)
+        _regime_path = PROJECT_ROOT / 'data' / 'regime_folio_mapping.json'
+        self._regime_data = {}
+        if _regime_path.exists():
+            with open(_regime_path, 'r', encoding='utf-8') as f:
+                _rdata = json.load(f)
+            self._regime_data = _rdata.get('regime_assignments', {})
+
+        # AXM decomposition metrics (C1016, C1017, C552, C622)
+        _axm_path = PROJECT_ROOT / 'phases' / 'AXM_RESIDUAL_DECOMPOSITION' / 'results' / 'axm_residual_decomposition.json'
+        self._axm_data = {}
+        if _axm_path.exists():
+            with open(_axm_path, 'r', encoding='utf-8') as f:
+                _adata = json.load(f)
+            self._axm_data = _adata.get('folio_data', {})
+
+        # Operational profiles (C394-C396)
+        _ops_path = PROJECT_ROOT / 'results' / 'folio_operational_profiles.json'
+        self._ops_data = {}
+        if _ops_path.exists():
+            with open(_ops_path, 'r', encoding='utf-8') as f:
+                _odata = json.load(f)
+            for profile in _odata.get('profiles', []):
+                self._ops_data[profile['folio']] = profile
+
+        # B-wide baseline for deviation reporting
+        _bl_path = PROJECT_ROOT / 'data' / 'b_baseline.json'
+        self._baseline = None
+        if _bl_path.exists():
+            with open(_bl_path, 'r', encoding='utf-8') as f:
+                _bl_data = json.load(f)
+            self._baseline = BBaseline(
+                metrics={k: (v['mean'], v['std'])
+                         for k, v in _bl_data.get('metrics', {}).items()}
+            )
+
+        # Pre-sort substring-matching maps (longest first) for _get_*() methods
+        self._middle_tiers_sorted = sorted(
+            self.MIDDLE_TIERS.items(), key=lambda x: len(x[0]), reverse=True)
+        self._middle_kernel_sorted = sorted(
+            [(k, v) for k, v in self.MIDDLE_KERNEL_PROFILE.items() if v],
+            key=lambda x: len(x[0]), reverse=True)
+        self._middle_regime_sorted = sorted(
+            self.MIDDLE_REGIME.items(), key=lambda x: len(x[0]), reverse=True)
+        self._middle_section_sorted = sorted(
+            self.MIDDLE_SECTION.items(), key=lambda x: len(x[0]), reverse=True)
+
+        # Caches for expensive lookups
+        self._cache_middle_tier = {}
+        self._cache_middle_kernel = {}
+        self._cache_middle_regime = {}
+        self._cache_middle_section = {}
+
+        # Pre-compute which tokens need regime for collision breaking.
+        # Default: kernel-only gloss. Regime appended only when two tokens
+        # with different regime would otherwise render the same gloss.
+        # Initialize empty first (analyze_token refs this during build).
+        self._needs_regime = set()
+        self._needs_regime = self._build_regime_need_set()
+
+    def _build_regime_need_set(self) -> set:
+        """Pre-compute set of words that need regime suffix for disambiguation.
+
+        Strategy:
+        1. For each unique B token, compute its gloss with kernel only (no regime)
+        2. Group tokens by that kernel-only gloss string
+        3. For collision groups (2+ tokens → same gloss): check if members
+           have different middle_regime values
+        4. If regime would split the group, mark those words as needing regime
+
+        Returns:
+            Set of word strings that should display regime in their gloss.
+        """
+        needs_regime = set()
+        # Collect unique words with kernel-only glosses
+        # Use a lightweight approach: analyze each word, compute gloss parts
+        seen = set()
+        word_data = []  # (word, kernel_only_gloss, middle_regime)
+
+        for token in self.tx.currier_b():
+            w = token.word
+            if '*' in w or not w.strip() or w in seen:
+                continue
+            seen.add(w)
+            analysis = self.analyze_token(w)
+            # Skip HT tokens (they use posture grammar, not kernel/regime)
+            if analysis.is_ht:
+                continue
+            regime = analysis.middle_regime
+            if not analysis.middle_kernel:
+                continue  # No kernel = no regime question
+
+            # Compute kernel-only gloss (suppress regime temporarily)
+            saved_regime = analysis.middle_regime
+            analysis.middle_regime = None
+            gloss = analysis.interpretive()
+            analysis.middle_regime = saved_regime
+
+            word_data.append((w, gloss, regime))
+
+        # Group by kernel-only gloss
+        from collections import defaultdict
+        gloss_groups = defaultdict(list)
+        for w, gloss, regime in word_data:
+            gloss_groups[gloss].append((w, regime))
+
+        # Find collision groups where regime would help
+        for gloss, members in gloss_groups.items():
+            if len(members) < 2:
+                continue
+            regimes = set(r for _, r in members if r)
+            if len(regimes) > 1:
+                # Different regimes in this collision group — mark all for regime
+                for w, _ in members:
+                    needs_regime.add(w)
+
+        return needs_regime
+
+    def _get_prefix_role(self, prefix: Optional[str]) -> Optional[str]:
+        """Get functional role for a prefix (C371-374)."""
+        if prefix and prefix in self.PREFIX_ROLES:
+            return self.PREFIX_ROLES[prefix]
+        return None
+
+    def _get_suffix_role(self, suffix: Optional[str]) -> Optional[str]:
+        """Get functional role for a suffix (C375-378)."""
+        if suffix and suffix in self.SUFFIX_ROLES:
+            return self.SUFFIX_ROLES[suffix]
+        return None
+
+    def _get_middle_tier(self, middle: Optional[str]) -> Tuple[Optional[str], Optional[str]]:
+        """Get tier and meaning for a MIDDLE (F-BRU-011)."""
+        if not middle:
+            return None, None
+        if middle in self._cache_middle_tier:
+            return self._cache_middle_tier[middle]
+
+        # Direct match
+        if middle in self.MIDDLE_TIERS:
+            result = self.MIDDLE_TIERS[middle]
+        else:
+            # Check for contained patterns (pre-sorted longest first)
+            result = (None, None)
+            for mid, (tier, meaning) in self._middle_tiers_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = (tier, f"contains {mid}")
+                    break
+
+        self._cache_middle_tier[middle] = result
+        return result
+
+    def _get_kernels(self, middle: Optional[str]) -> List[str]:
+        """Extract kernel characters from MIDDLE."""
+        if not middle:
+            return []
+        return [k for k in self.KERNEL_CHARS if k in middle]
+
+    def _get_material_markers(self, m: MorphAnalysis) -> List[str]:
+        """Detect material category markers (C884, F-BRU-018)."""
+        markers = []
+
+        # Animal markers from suffix (C884)
+        if m.suffix in ['ey', 'ol', 'eey', 'or']:
+            markers.append('ANIMAL')
+
+        # Root markers from MIDDLE (F-BRU-018)
+        if m.middle and ('tch' in m.middle or 'pch' in m.middle):
+            markers.append('ROOT')
+
+        return markers
+
+    def _get_output_markers(self, m: MorphAnalysis) -> List[str]:
+        """Detect output category markers (F-BRU-020)."""
+        markers = []
+
+        # OIL markers from MIDDLE
+        if m.middle and any(oil in m.middle for oil in ['kc', 'okch']):
+            markers.append('OIL')
+
+        # WATER markers from suffix
+        if m.suffix in ['ly', 'al']:
+            markers.append('WATER')
+
+        return markers
+
+    def _get_fl_stage(self, word: str, m: MorphAnalysis) -> Tuple[Optional[str], Optional[str]]:
+        """
+        Get FL state stage for a token (C777, FL_SEMANTIC_INTERPRETATION).
+
+        FL state markers are standalone tokens or MIDDLEs that index
+        material position in transformation process.
+
+        Priority:
+        1. Token dictionary (pre-computed, v6+)
+        2. CC control token check
+        3. FL_STAGE_MAP fallback
+        """
+        # 1. Check token dictionary first (pre-computed FL state)
+        entry = self.token_dict.get(word)
+        if entry and entry.get('fl_state'):
+            return entry['fl_state'], entry.get('fl_meaning')
+
+        # 2. Check if whole word is a CC control token
+        if word in self.CC_TOKENS:
+            role, meaning = self.CC_TOKENS[word]
+            return f"CC_{role}", meaning
+
+        # 3. Fall back to FL_STAGE_MAP computation
+        middle = m.middle if m.middle else word
+
+        if middle in self.FL_STAGE_MAP:
+            return self.FL_STAGE_MAP[middle]
+
+        # For tokens without prefix, check if the word itself is FL-like
+        if not m.prefix and word in self.FL_STAGE_MAP:
+            return self.FL_STAGE_MAP[word]
+
+        return None, None
+
+    def _get_middle_kernel(self, middle: Optional[str]) -> Optional[str]:
+        """Get kernel profile for a MIDDLE (MIDDLE_SEMANTIC_MAPPING phase)."""
+        if not middle:
+            return None
+        if middle in self._cache_middle_kernel:
+            return self._cache_middle_kernel[middle]
+        # Direct lookup
+        if middle in self.MIDDLE_KERNEL_PROFILE:
+            result = self.MIDDLE_KERNEL_PROFILE[middle]
+        else:
+            # Check for contained patterns (pre-sorted longest first, non-None only)
+            result = None
+            for mid, kernel in self._middle_kernel_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = kernel
+                    break
+        self._cache_middle_kernel[middle] = result
+        return result
+
+    def _get_middle_regime(self, middle: Optional[str]) -> Optional[str]:
+        """Get execution regime for a MIDDLE (MIDDLE_SEMANTIC_MAPPING phase)."""
+        if not middle:
+            return None
+        if middle in self._cache_middle_regime:
+            return self._cache_middle_regime[middle]
+        # Direct lookup
+        if middle in self.MIDDLE_REGIME:
+            result = self.MIDDLE_REGIME[middle]
+        else:
+            result = None
+            for mid, regime in self._middle_regime_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = regime
+                    break
+        self._cache_middle_regime[middle] = result
+        return result
+
+    def _get_middle_section(self, middle: Optional[str]) -> Optional[str]:
+        """Get section affinity for a MIDDLE (MIDDLE_SEMANTIC_MAPPING phase)."""
+        if not middle:
+            return None
+        if middle in self._cache_middle_section:
+            return self._cache_middle_section[middle]
+        # Direct lookup
+        if middle in self.MIDDLE_SECTION:
+            result = self.MIDDLE_SECTION[middle]
+        else:
+            result = None
+            for mid, section in self._middle_section_sorted:
+                if mid in middle and len(mid) >= 2:
+                    result = section
+                    break
+        self._cache_middle_section[middle] = result
+        return result
+
+    def analyze_token(self, word: str,
+                      line_initial: bool = False,
+                      line_final: bool = False) -> BTokenAnalysis:
+        """
+        Complete analysis of a single Currier B token.
+
+        Args:
+            word: The token string
+            line_initial: Whether token is at line start
+            line_final: Whether token is at line end
+
+        Returns:
+            BTokenAnalysis with all classifications
+        """
+        m = self.morph.extract(word)
+        tier, meaning = self._get_middle_tier(m.middle)
+        fl_stage, fl_meaning = self._get_fl_stage(word, m)
+
+        # Get FL role and HT status from token dictionary
+        entry = self.token_dict.get(word)
+        is_fl_role = entry.get('is_fl_role', False) if entry else False
+
+        # FL exclusion: known FQ/CC tokens that use FL-compatible characters
+        # but are NOT FL (C583: aiin=FQ Class 9, C557: daiin=CC Class 10)
+        FL_EXCLUDED = {'aiin', 'ain', 'oaiin'}
+        if word in FL_EXCLUDED:
+            is_fl_role = False
+        # HT (Human Track) = UNKNOWN role in token dictionary (C740, C872)
+        is_ht = entry.get('role', {}).get('primary') == 'UNKNOWN' if entry else False
+
+        # Get prefix role
+        prefix_role = self._get_prefix_role(m.prefix)
+
+        # For PREP_TIER prefixes, use specific F-BRU-012 action instead of generic MIDDLE tier
+        if prefix_role == 'PREP_TIER' and m.prefix in self.PREFIX_ACTIONS:
+            meaning = self.PREFIX_ACTIONS[m.prefix]
+            tier = 'PREP'
+
+        analysis = BTokenAnalysis(
+            word=word,
+            morph=m,
+            prefix_role=prefix_role,
+            suffix_role=self._get_suffix_role(m.suffix),
+            middle_tier=tier,
+            middle_meaning=meaning,
+            fl_stage=fl_stage,
+            fl_meaning=fl_meaning,
+            is_fl_role=is_fl_role,
+            is_ht=is_ht,
+            kernels=self._get_kernels(m.middle),
+            material_markers=self._get_material_markers(m),
+            output_markers=self._get_output_markers(m),
+            is_line_initial=line_initial,
+            is_line_final=line_final,
+            prefix_phase=self.PREFIX_PHASE.get(m.prefix),
+            suffix_terminal=self.SUFFIX_TERMINAL.get(m.suffix),
+            middle_kernel=self._get_middle_kernel(m.middle),
+            middle_regime=self._get_middle_regime(m.middle),
+            middle_section=self._get_middle_section(m.middle),
+        )
+        # Pass references for whole-token, middle, suffix gloss, and prep action lookup
+        analysis._token_dict = self.token_dict
+        analysis._middle_dict = self.middle_dict
+        analysis._suffix_gloss = self.SUFFIX_GLOSS
+        analysis._suffix_flow = self.SUFFIX_FLOW
+        analysis._prefix_actions = self.PREFIX_ACTIONS
+        analysis._middle_tiers = self.MIDDLE_TIERS
+        analysis._mid_analyzer = self.mid_analyzer
+        analysis._needs_regime = self._needs_regime
+        analysis._debug_ht = getattr(self, '_debug_ht', False)
+
+        # Control grammar viewer layers (C976, C1000, C995, C1001)
+        # Macro state: token → 49-class → 6-state
+        token_class = self._token_to_class.get(word)
+        if token_class is not None:
+            analysis.macro_state = self.MACRO_STATE.get(str(token_class))
+        # Hub sub-role: MIDDLE → sub-role (23 hub MIDDLEs)
+        if m.middle:
+            analysis.hub_sub_role = self.HUB_SUB_ROLE.get(m.middle)
+            # Affordance bin + family: MIDDLE → bin/family (972 MIDDLEs)
+            analysis.middle_affordance_bin = self._middle_to_affordance_bin.get(m.middle)
+            analysis.middle_affordance_family = self._middle_to_affordance_family.get(m.middle)
+        # PREFIX zone: prefix → positional bias
+        pz_key = m.prefix if m.prefix else 'BARE'
+        analysis.prefix_zone = self.PREFIX_ZONE.get(pz_key)
+
+        # Terminal character analysis (C1067, C1072, C1076-C1077)
+        if m.middle:
+            tc = m.middle[-1]
+            analysis.terminal_char = tc
+            analysis.terminal_group = self.TERMINAL_CLIQUES.get(tc)
+
+        # Compound depth and atom decomposition (C1062, C766, C935)
+        if m.middle:
+            atoms = self.mid_analyzer.get_maximal_atoms(m.middle)
+            if len(atoms) > 1:
+                analysis.compound_depth = len(atoms)
+                analysis.compound_atoms = atoms
+
+        # Dark pipeline classification (C1137, C1140)
+        if m.middle and m.middle in self._dark_pipeline_set:
+            analysis.is_dark_pipeline = True
+
+        # PREFIX base-modifier decomposition (C1218-C1219)
+        # For 2+ char prefixes: base = last char (POS-1), modifier = first char (POS-0)
+        # Dual-role chars (o,k,l,t,c,s) can appear at either position
+        if m.prefix and len(m.prefix) >= 2:
+            analysis.prefix_base = m.prefix[-1]
+            analysis.prefix_modifier = m.prefix[0]
+        elif m.prefix and len(m.prefix) == 1:
+            analysis.prefix_base = m.prefix
+
+        # 8-category operational classification (C1250, C1305, Tier 2)
+        # Category is a MIDDLE property — tokens inherit from their MIDDLE.
+        if m.middle:
+            analysis.operational_category = self.category_classifier.classify(m.middle)
+            analysis.category_confidence = self.category_classifier.confidence(m.middle)
+
+        # HEAD+MOD*+TERM positional decomposition (C1393-C1394, C1448)
+        if m.middle:
+            head, mods, term, frame_str = decompose_middle_hmt(m.middle)
+            analysis.middle_head = head
+            analysis.middle_mods = mods
+            analysis.middle_term = term
+            analysis.head_term_frame = frame_str
+
+            # HEAD domain (C1475)
+            _HEAD_DOMAIN = {'k': 'THERMAL', 't': 'FLOW', 'a': 'YIELD',
+                            'e': 'STAB', 'o': 'ARRNG'}
+            _PSEUDO_HEAD_DOMAIN = {'d': 'CONTAIN', 'i': 'STAGE', 'p': 'MARK',
+                                   'f': 'MARK', 'r': 'FLOW', 'c': 'OPER'}
+            analysis.head_domain = _HEAD_DOMAIN.get(head)
+            analysis.is_headless = (head is None)
+            if analysis.is_headless and m.middle:
+                analysis.pseudo_head_atom = m.middle[0]
+                analysis.pseudo_head_domain = _PSEUDO_HEAD_DOMAIN.get(m.middle[0])
+
+            # Terminal opacity (C1440)
+            analysis.terminal_opacity = self.TERMINAL_OPACITY.get(term)
+
+            # Terminal functional tier (C1487)
+            _TERMINAL_TIER = {'r': 'LOCKED', 'm': 'LOCKED',
+                              'l': 'CHAN', 'y': 'CHAN', 'n': 'CHAN',
+                              'h': 'DIFF', 'bare': 'DIFF'}
+            analysis.terminal_tier = _TERMINAL_TIER.get(term)
+
+            # Frame hazard (C1448): k-HEAD = IMMUNE, else map lookup, default LOW
+            if head == 'k':
+                analysis.frame_hazard = 'IMMUNE'
+            elif frame_str:
+                analysis.frame_hazard = self.FRAME_HAZARD.get(frame_str, 'LOW')
+
+            # Safe pathway (C1457-C1462): e->y is stability anchor
+            if frame_str == 'e->y':
+                analysis.is_safe_pathway = True
+
+            # Modifier hazard role (C1450, C1452-C1456)
+            QUENCHING = {'c', 'd', 'f', 'p', 's'}
+            if mods:
+                if set(mods) & QUENCHING:
+                    analysis.has_quenching_mod = True
+                i_ct = mods.count('i')
+                if i_ct > 0:
+                    analysis.has_i_mod = True
+                    analysis.i_count = i_ct
+
+            # Double-ii safe pathway (C1482): a-HEAD + double-ii = 0% hazard
+            if head == 'a' and analysis.i_count >= 2:
+                analysis.is_safe_pathway = True
+
+            # Source immunity (C1546 + C1450)
+            if head is not None:                      # C1546: ALL headed = 0% source
+                analysis.source_immune = True
+            elif analysis.has_quenching_mod:           # C1450: {c,d,f,p,s} quench
+                analysis.source_immune = True
+
+            # Hazard class type (C1528, C1547) — only on EXPOSED tokens
+            if analysis.frame_hazard == 'HIGH' and not analysis.source_immune:
+                _TERMINAL_HAZARD_CLASS = {
+                    'y': 'PO', 'l': 'CT', 'r': 'CJ', 'bare': 'RM',
+                    'h': 'EO', 'm': 'PO', 'n': 'PO'}
+                analysis.hazard_class_type = _TERMINAL_HAZARD_CLASS.get(term)
+
+        return analysis
+
+    def _classify_suffix_mode(self, line_tokens: List[BTokenAnalysis]) -> Optional[str]:
+        """Classify a line's suffix mode as A (spec/energy) or B (continuation/bare).
+
+        Uses the existing SUFFIX_TERMINAL map categories (TERMINAL, CHECKPOINT,
+        CONNECTOR) and cosine similarity to universal centroids from C1231.
+        Returns None if insufficient tokens (<3) for classification.
+        """
+        if len(line_tokens) < 3:
+            return None
+
+        terminal = checkpoint = iterative = bare = 0
+        for t in line_tokens:
+            st = t.suffix_terminal  # Already looked up from SUFFIX_TERMINAL map
+            if st == 'TERMINAL':
+                terminal += 1
+            elif st == 'CHECKPOINT':
+                checkpoint += 1
+            elif st == 'CONNECTOR':
+                iterative += 1
+            else:
+                bare += 1  # No suffix or unmapped
+
+        total = len(line_tokens)
+        vec = [terminal / total, checkpoint / total, iterative / total, bare / total]
+
+        # Euclidean distance to each centroid (matches k-means assignment)
+        def _dist_sq(a, b):
+            return sum((x - y) ** 2 for x, y in zip(a, b))
+
+        dist_a = _dist_sq(vec, self._mode_a_centroid)
+        dist_b = _dist_sq(vec, self._mode_b_centroid)
+        return 'A' if dist_a <= dist_b else 'B'
+
+    def _classify_tail_product(self, tail_tokens: List[BTokenAnalysis]) -> Optional[str]:
+        """Classify tail product signature from last 2 body lines' tokens.
+
+        Maps existing decoder fields to the 6-feature vector that matches
+        tail product centroids from C1232.
+        """
+        if not tail_tokens:
+            return None
+
+        total = len(tail_tokens)
+        energy = vessel = process = k_fam = e_fam = prep_fam = 0
+
+        for t in tail_tokens:
+            if t.prefix_role in ('EN_QO',):
+                energy += 1
+            elif t.prefix_role in ('AX_SCAFFOLD', 'AX_LATE'):
+                vessel += 1
+            elif t.prefix_role in ('PREP', 'PREP_TIER'):
+                prep_fam += 1
+            else:
+                process += 1
+
+            # Kernel family from MIDDLE kernel profile
+            mk = t.middle_kernel
+            if mk == 'K':
+                k_fam += 1
+            elif mk == 'E':
+                e_fam += 1
+
+        vec = [energy / total, vessel / total, process / total,
+               k_fam / total, e_fam / total, prep_fam / total]
+
+        # Find nearest centroid by Euclidean distance (matches k-means)
+        def _dist_sq(a, b):
+            return sum((x - y) ** 2 for x, y in zip(a, b))
+
+        best_label = None
+        best_dist = float('inf')
+        for label, centroid in self._tail_centroids.items():
+            d = _dist_sq(vec, centroid)
+            if d < best_dist:
+                best_dist = d
+                best_label = label
+        return best_label
+
+    def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:
+        """Interpret kernel distribution as process characterization."""
+        total = sum(kernel_dist.values())
+        if total == 0:
+            return 'NO_KERNELS'
+
+        k_pct = kernel_dist.get('k', 0) / total
+        h_pct = kernel_dist.get('h', 0) / total
+        e_pct = kernel_dist.get('e', 0) / total
+
+        if e_pct > 0.45:
+            return 'ESCAPE_DOMINANT'
+        elif k_pct > 0.50:
+            return 'ENERGY_DOMINANT'
+        elif h_pct > 0.30:
+            return 'HAZARD_HEAVY'
+        else:
+            return 'BALANCED'
+
+    def _interpret_material_category(self, tokens: List[BTokenAnalysis]) -> str:
+        """Interpret material category from token markers."""
+        animal_count = sum(1 for t in tokens if 'ANIMAL' in t.material_markers)
+        root_count = sum(1 for t in tokens if 'ROOT' in t.material_markers)
+        total = len(tokens)
+
+        # Threshold for detection (5% of tokens)
+        if animal_count > total * 0.05:
+            return 'ANIMAL'
+        elif root_count > total * 0.03:
+            return 'ROOT'
+        else:
+            return 'DELICATE_PLANT'  # Unmarked default (F-BRU-019)
+
+    def _interpret_output_category(self, tokens: List[BTokenAnalysis]) -> str:
+        """Interpret output category from token markers."""
+        oil_count = sum(1 for t in tokens if 'OIL' in t.output_markers)
+        water_count = sum(1 for t in tokens if 'WATER' in t.output_markers)
+        total = len(tokens)
+
+        if oil_count > total * 0.02:
+            return 'OIL'
+        elif water_count > total * 0.05:
+            return 'WATER'
+        else:
+            return 'WATER'  # Default
+
+    # === LINE-LEVEL MARKERS (C357-358) ===
+    LINE_INIT_MARKERS = {'daiin', 'saiin', 'sain', 'dain'}  # 3-11x enriched at line start
+    LINE_FINAL_MARKERS = {'am', 'oly', 'dy', 'om'}  # 4-31x enriched at line end
+
+    # === PARAGRAPH DETECTION (C827) ===
+    # Gallows characters mark paragraph boundaries when line-initial
+    # These are the tall looped characters in EVA: k, t, p, f
+    GALLOWS_CHARS = {'k', 't', 'p', 'f'}
+
+    def _is_gallows_initial(self, word: str) -> bool:
+        """Check if a word starts with a gallows character (k, t, p, f)."""
+        if not word:
+            return False
+        return word[0] in self.GALLOWS_CHARS
+
+    def analyze_line(self, line_tokens: List[BTokenAnalysis], line_id: str) -> BLineAnalysis:
+        """
+        Analyze a line as a control block (C357).
+
+        Args:
+            line_tokens: List of BTokenAnalysis for this line
+            line_id: Line identifier
+
+        Returns:
+            BLineAnalysis with line-level interpretation
+        """
+        if not line_tokens:
+            return BLineAnalysis(
+                line_id=line_id, tokens=[], token_count=0,
+                has_init_marker=False, has_final_marker=False,
+                init_token=None, final_token=None,
+                fl_stages=[], fl_progression='EMPTY',
+                kernel_sequence=[],
+                role_sequence=[], line_type='EMPTY',
+                is_header=(line_id == '1')
+            )
+
+        # Check for init/final markers
+        first_word = line_tokens[0].word if line_tokens else ''
+        last_word = line_tokens[-1].word if line_tokens else ''
+
+        has_init = first_word in self.LINE_INIT_MARKERS
+        has_final = last_word in self.LINE_FINAL_MARKERS
+
+        # Collect FL stages through line
+        fl_stages = [t.fl_stage for t in line_tokens if t.fl_stage and not t.fl_stage.startswith('CC_')]
+
+        # Determine FL progression
+        if len(fl_stages) < 2:
+            fl_progression = 'STATIC'
+        else:
+            stage_order = {'INITIAL': 0, 'EARLY': 1, 'MEDIAL': 2, 'LATE': 3, 'TERMINAL': 4}
+            stage_nums = [stage_order.get(s, 2) for s in fl_stages]
+            if all(stage_nums[i] <= stage_nums[i+1] for i in range(len(stage_nums)-1)):
+                fl_progression = 'FORWARD'
+            elif all(stage_nums[i] >= stage_nums[i+1] for i in range(len(stage_nums)-1)):
+                fl_progression = 'BACKWARD'
+            else:
+                fl_progression = 'MIXED'
+
+        # Collect kernel inventory (C961: order not meaningful within WORK zone)
+        kernel_sequence = []
+        for t in line_tokens:
+            for k in t.kernels:
+                if k not in kernel_sequence[-1:]:  # Avoid consecutive duplicates
+                    kernel_sequence.append(k)
+
+        # Collect role sequence
+        role_sequence = [t.prefix_role for t in line_tokens if t.prefix_role]
+
+        # C747/C935: Line-1 is HEADER (HT = operationally redundant compounds)
+        is_header = (line_id == '1')
+
+        # Determine line type
+        if is_header:
+            line_type = 'HEADER'
+        elif has_init:
+            line_type = 'INIT'
+        elif has_final and any(s in ['TERMINAL', 'LATE'] for s in fl_stages):
+            line_type = 'TERMINAL'
+        elif 'FQ' in str(role_sequence):
+            line_type = 'ESCAPE'
+        elif 'AX_LATE' in role_sequence or 'EN_KERNEL' in role_sequence:
+            line_type = 'MONITOR' if 'AX_LATE' in role_sequence else 'PROCESS'
+        else:
+            line_type = 'PROCESS'
+
+        # C959: Opener role determines line character (not specific token)
+        opener_role = line_tokens[0].prefix_role if line_tokens else None
+
+        # Set HT density on HT tokens (for spec bundle rendering)
+        # C747: header lines have ~50% HT; density=high when HT >= 40% of line
+        ht_count = sum(1 for t in line_tokens if t.is_ht)
+        if ht_count > 0:
+            ht_density = 'high' if ht_count >= len(line_tokens) * 0.4 else 'low'
+            for t in line_tokens:
+                if t.is_ht:
+                    t._ht_line_density = ht_density
+
+        # Suffix continuation tracking (C1058: suffix sequential grammar)
+        # Mark tokens whose suffix matches the previous token's suffix
+        for i in range(1, len(line_tokens)):
+            prev_suf = line_tokens[i-1].morph.suffix if line_tokens[i-1].morph else None
+            curr_suf = line_tokens[i].morph.suffix if line_tokens[i].morph else None
+            if prev_suf and curr_suf and prev_suf == curr_suf:
+                line_tokens[i].suffix_continuation = True
+
+        # Suffix mode classification (C1229-C1231)
+        suffix_mode = self._classify_suffix_mode(line_tokens)
+
+        # Control loop: iteration tracking (C1234)
+        loop_markers = {}
+        # Setup: first token MIDDLE is iin/in (NOT bare i — C1205 separate axis)
+        if line_tokens and line_tokens[0].morph:
+            _mid0 = line_tokens[0].morph.middle or ''
+            _sfx0 = line_tokens[0].morph.suffix or ''
+            if _mid0 in ('iin', 'in') or _sfx0 in ('iin', 'in'):
+                loop_markers['setup'] = line_tokens[0].word
+        # Check: last 3 tokens suffix OR MIDDLE is aiin/ain (okaiin = ok:aiin)
+        for _tok in line_tokens[-3:]:
+            if _tok.morph:
+                _midC = _tok.morph.middle or ''
+                _sfxC = _tok.morph.suffix or ''
+                if _sfxC in ('aiin', 'ain') or _midC in ('aiin', 'ain'):
+                    loop_markers['check'] = _tok.word
+                    break
+
+        # Control loop: line-final classification (C1235, C1237)
+        # Priority: FINALIZE > LOOP_CHECK > TERMINAL > CLOSE > ROUTE > OPEN
+        line_final_type = 'OPEN'
+        if line_tokens:
+            _ftok = line_tokens[-1]
+            _fsfx = _ftok.morph.suffix if _ftok.morph else ''
+            _fmid = _ftok.morph.middle if _ftok.morph else ''
+            if _fsfx == 'am':
+                line_final_type = 'FINALIZE'
+            elif _fsfx in ('aiin', 'ain') or _fmid in ('aiin', 'ain'):
+                line_final_type = 'LOOP_CHECK'
+            elif _fsfx in ('edy', 'eey', 'ey'):
+                line_final_type = 'TERMINAL'
+            elif _fsfx in ('dy', 'y', 'ry', 'ly', 'hy'):
+                line_final_type = 'CLOSE'
+            elif _fmid and _fmid.endswith('m'):
+                line_final_type = 'ROUTE'
+
+        # 8-category operational profile (C1250, C1278)
+        cat_profile = Counter(
+            t.operational_category for t in line_tokens
+            if t.operational_category
+        )
+        dominant_cat = cat_profile.most_common(1)[0][0] if cat_profile else None
+
+        # Category mode character (C1279/C1309)
+        cat_total = sum(cat_profile.values())
+        cat_mode_char = None
+        if cat_total > 0:
+            spec_frac = (cat_profile.get('THERMAL', 0) + cat_profile.get('MONITORING', 0)) / cat_total
+            cont_frac = (cat_profile.get('FLOW', 0) + cat_profile.get('TRANSITION', 0)
+                         + cat_profile.get('STAGING', 0)) / cat_total
+            if spec_frac > 0.4:
+                cat_mode_char = 'SPECIFICATION'
+            elif cont_frac > 0.4:
+                cat_mode_char = 'CONTINUATION'
+
+        return BLineAnalysis(
+            line_id=line_id,
+            tokens=line_tokens,
+            token_count=len(line_tokens),
+            has_init_marker=has_init,
+            has_final_marker=has_final,
+            init_token=first_word if has_init else None,
+            final_token=last_word if has_final else None,
+            fl_stages=fl_stages,
+            fl_progression=fl_progression,
+            kernel_sequence=kernel_sequence,
+            role_sequence=role_sequence,
+            line_type=line_type,
+            opener_role=opener_role,
+            is_header=is_header,
+            suffix_mode=suffix_mode,
+            category_profile=dict(cat_profile),
+            dominant_category=dominant_cat,
+            category_mode_character=cat_mode_char,
+            loop_markers=loop_markers,
+            line_final_type=line_final_type,
+        )
+
+    def analyze_folio_lines(self, folio: str) -> List[BLineAnalysis]:
+        """
+        Analyze all lines in a folio as control blocks.
+
+        Args:
+            folio: Folio identifier
+
+        Returns:
+            List of BLineAnalysis, one per line
+        """
+        # Get folio tokens grouped by line
+        folio_tokens = [t for t in self.tx.currier_b() if t.folio == folio]
+        if not folio_tokens:
+            return []
+
+        # Group by line
+        lines = defaultdict(list)
+        for t in folio_tokens:
+            analysis = self.analyze_token(t.word, t.line_initial, t.line_final)
+            lines[t.line].append(analysis)
+
+        # Analyze each line (sort numerically by line ID)
+        def line_sort_key(item):
+            line_id = item[0]
+            try:
+                return (0, int(line_id))
+            except (ValueError, TypeError):
+                return (1, str(line_id))
+        return [self.analyze_line(tokens, line_id)
+                for line_id, tokens in sorted(lines.items(), key=line_sort_key)]
+
+    def _analyze_paragraph(self, lines: List[BLineAnalysis], para_id: str,
+                           boundary_token: Optional[str]) -> BParagraphAnalysis:
+        """
+        Analyze a paragraph (operational unit) from its constituent lines.
+
+        Args:
+            lines: List of BLineAnalysis for this paragraph
+            para_id: Paragraph identifier (P1, P2, etc.)
+            boundary_token: The gallows token that started this paragraph (if any)
+
+        Returns:
+            BParagraphAnalysis with aggregate statistics
+        """
+        if not lines:
+            return BParagraphAnalysis(
+                paragraph_id=para_id, lines=[], line_count=0, token_count=0,
+                boundary_token=None, is_gallows_initial=False,
+                kernel_dist={}, role_dist={}, fl_distribution={},
+                init_lines=0, process_lines=0, escape_lines=0, terminal_lines=0,
+                kernel_balance='NO_KERNELS', dominant_role=None, fl_trend='DISTRIBUTED',
+                zone_distribution={},
+            )
+
+        # Aggregate from lines
+        token_count = sum(la.token_count for la in lines)
+        kernel_dist = Counter()
+        role_dist = Counter()
+        fl_dist = Counter()
+
+        for la in lines:
+            for k in la.kernel_sequence:
+                kernel_dist[k] += 1
+            for r in la.role_sequence:
+                role_dist[r] += 1
+            for fl in la.fl_stages:
+                fl_dist[fl] += 1
+
+        # Line type counts
+        init_lines = sum(1 for la in lines if la.line_type == 'INIT')
+        process_lines = sum(1 for la in lines if la.line_type == 'PROCESS')
+        escape_lines = sum(1 for la in lines if la.line_type == 'ESCAPE')
+        terminal_lines = sum(1 for la in lines if la.line_type == 'TERMINAL')
+
+        # Interpret kernel balance
+        kernel_balance = self._interpret_kernel_balance(kernel_dist)
+
+        # Find dominant role
+        dominant_role = None
+        if role_dist:
+            dominant_role = max(role_dist.keys(), key=lambda r: role_dist[r])
+
+        # Determine FL trend
+        early_count = fl_dist.get('INITIAL', 0) + fl_dist.get('EARLY', 0)
+        late_count = fl_dist.get('LATE', 0) + fl_dist.get('TERMINAL', 0)
+        total_fl = sum(fl_dist.values())
+
+        if total_fl == 0:
+            fl_trend = 'DISTRIBUTED'
+        elif fl_dist.get('TERMINAL', 0) > total_fl * 0.3:
+            fl_trend = 'TERMINAL_HEAVY'
+        elif late_count > total_fl * 0.5:
+            fl_trend = 'LATE_HEAVY'
+        elif early_count > total_fl * 0.5:
+            fl_trend = 'EARLY_HEAVY'
+        else:
+            fl_trend = 'DISTRIBUTED'
+
+        # Paragraph zone assignment: HEADER / BODY / TAIL (C747/C963/C1237)
+        # C932/C933/C934 spec→exec gradient RETRACTED (Phase 451, C1259).
+        # Body is homogeneous at category grain (C963). TAIL identified by -am termination (C1237).
+        n = len(lines)
+        zone_dist = Counter()
+        # Detect -am termination for TAIL assignment (C1237: 5.19x enrichment)
+        has_am_tail = False
+        if lines and lines[-1].tokens:
+            _last_sfx = lines[-1].tokens[-1].morph.suffix if lines[-1].tokens[-1].morph else ''
+            if _last_sfx == 'am':
+                has_am_tail = True
+        for i, la in enumerate(lines):
+            if i == 0:
+                la.paragraph_zone = 'HEADER'
+            elif i == n - 1 and has_am_tail:
+                la.paragraph_zone = 'TAIL'
+            else:
+                la.paragraph_zone = 'BODY'
+            zone_dist[la.paragraph_zone] += 1
+
+        # Cycling model (C1229-C1232)
+        # Collect suffix modes from body lines (skip header)
+        body_lines = [la for la in lines if not la.is_header]
+        suffix_mode_seq = [la.suffix_mode for la in body_lines if la.suffix_mode]
+
+        # Interleave rate: fraction of consecutive transitions that alternate
+        interleave = 0.0
+        if len(suffix_mode_seq) >= 2:
+            changes = sum(1 for i in range(1, len(suffix_mode_seq))
+                         if suffix_mode_seq[i] != suffix_mode_seq[i-1])
+            interleave = changes / (len(suffix_mode_seq) - 1)
+
+        # Tail product signature from last 2 body lines (C1232)
+        tail_sig = None
+        if len(body_lines) >= 3:  # Need at least 3 body lines for meaningful tail
+            tail_lines = body_lines[-2:]
+            tail_tokens = [t for la in tail_lines for t in la.tokens]
+            tail_sig = self._classify_tail_product(tail_tokens)
+
+        # Paragraph termination detection (C1237: -am at paragraph-final)
+        term_token = None
+        term_type = None
+        if lines and lines[-1].tokens:
+            _last_tok = lines[-1].tokens[-1]
+            _last_sfx = _last_tok.morph.suffix if _last_tok.morph else ''
+            if _last_sfx == 'am':
+                term_token = _last_tok.word
+                term_type = 'AM_SHUTDOWN'
+
+        # 8-category paragraph profile (C1250, C1278, C1287, C1308)
+        para_cat_profile = Counter()
+        for la in lines:
+            for cat, cnt in la.category_profile.items():
+                para_cat_profile[cat] += cnt
+
+        # Header MARKING rate (C1287: 2.44x enrichment in header lines)
+        header_mk_rate = 0.0
+        if lines and lines[0].category_profile:
+            hdr_total = sum(lines[0].category_profile.values())
+            if hdr_total > 0:
+                header_mk_rate = lines[0].category_profile.get('MARKING', 0) / hdr_total
+
+        # Category key: top 2-3 categories defining operational domain (C1308)
+        cat_key = [cat for cat, _ in para_cat_profile.most_common(3)] if para_cat_profile else []
+
+        return BParagraphAnalysis(
+            paragraph_id=para_id,
+            lines=lines,
+            line_count=len(lines),
+            token_count=token_count,
+            boundary_token=boundary_token,
+            is_gallows_initial=boundary_token is not None,
+            kernel_dist=dict(kernel_dist),
+            role_dist=dict(role_dist),
+            fl_distribution=dict(fl_dist),
+            init_lines=init_lines,
+            process_lines=process_lines,
+            escape_lines=escape_lines,
+            terminal_lines=terminal_lines,
+            kernel_balance=kernel_balance,
+            dominant_role=dominant_role,
+            fl_trend=fl_trend,
+            zone_distribution=dict(zone_dist),
+            category_profile=dict(para_cat_profile),
+            header_marking_rate=header_mk_rate,
+            category_key=cat_key,
+            suffix_mode_sequence=suffix_mode_seq,
+            mode_interleave_rate=interleave,
+            tail_product_signature=tail_sig,
+            termination_token=term_token,
+            termination_type=term_type,
+        )
+
+    def analyze_folio_paragraphs(self, folio: str) -> List[BParagraphAnalysis]:
+        """
+        Analyze all paragraphs in a folio as independent operational units.
+
+        CRITICAL: Paragraphs are PARALLEL_PROGRAMS (C855), NOT sequential stages.
+        Each paragraph is an independent mini-program. The analysis does NOT
+        assume any progression between paragraphs.
+
+        Paragraph boundaries detected by gallows-initial lines (C827).
+
+        Args:
+            folio: Folio identifier
+
+        Returns:
+            List of BParagraphAnalysis, one per paragraph
+        """
+        line_analyses = self.analyze_folio_lines(folio)
+        if not line_analyses:
+            return []
+
+        # Group lines into paragraphs by gallows-initial heuristic
+        paragraphs = []
+        current_para_lines = []
+        current_boundary = None
+        para_count = 0
+
+        for la in line_analyses:
+            # Check if this line starts a new paragraph
+            first_word = la.tokens[0].word if la.tokens else ''
+            is_boundary = self._is_gallows_initial(first_word)
+
+            if is_boundary and current_para_lines:
+                # Save current paragraph and start new one
+                para_count += 1
+                para = self._analyze_paragraph(
+                    current_para_lines,
+                    f"P{para_count}",
+                    current_boundary
+                )
+                paragraphs.append(para)
+                current_para_lines = [la]
+                current_boundary = first_word
+            else:
+                current_para_lines.append(la)
+                if is_boundary and current_boundary is None:
+                    current_boundary = first_word
+
+        # Don't forget the last paragraph
+        if current_para_lines:
+            para_count += 1
+            para = self._analyze_paragraph(
+                current_para_lines,
+                f"P{para_count}",
+                current_boundary
+            )
+            paragraphs.append(para)
+
+        return paragraphs
+
+    def decode_folio_paragraphs(self, folio: str, mode: str = 'structural') -> str:
+        """
+        Generate paragraph-level decode of a folio.
+
+        IMPORTANT: Paragraphs are INDEPENDENT operational units (C855).
+        They do NOT represent sequential stages of a single procedure.
+
+        Args:
+            folio: Folio identifier
+            mode: 'structural' or 'interpretive'
+
+        Returns:
+            Multi-line string with paragraph-level analysis
+        """
+        para_analyses = self.analyze_folio_paragraphs(folio)
+        if not para_analyses:
+            return f"No paragraphs found for folio {folio}"
+
+        output = [f"{'=' * 60}"]
+        output.append(f"FOLIO {folio}: {len(para_analyses)} paragraphs (PARALLEL_PROGRAMS)")
+        output.append(f"NOTE: Paragraphs are INDEPENDENT units, not sequential stages (C855)")
+        output.append(f"{'=' * 60}")
+
+        for pa in para_analyses:
+            output.append("")
+            if mode == 'structural':
+                output.append(f"--- {pa.structural()} ---")
+                output.append(f"    Lines: {pa.line_count} | Tokens: {pa.token_count}")
+                output.append(f"    Types: init={pa.init_lines}, process={pa.process_lines}, "
+                            f"escape={pa.escape_lines}, terminal={pa.terminal_lines}")
+                output.append(f"    FL trend: {pa.fl_trend}")
+
+                # Show line summaries
+                for la in pa.lines[:3]:  # First 3 lines
+                    zone_tag = f"[{la.paragraph_zone}] " if la.paragraph_zone else ""
+                    output.append(f"      L{la.line_id}: {zone_tag}{la.structural()}")
+                if len(pa.lines) > 3:
+                    output.append(f"      ... ({len(pa.lines) - 3} more lines)")
+            else:
+                output.append(f"--- {pa.paragraph_id}: {pa.interpretive()} ---")
+                output.append(f"    ({pa.line_count} steps, {pa.token_count} operations)")
+
+                # Show line interpretations
+                for la in pa.lines[:3]:
+                    output.append(f"      Step: {la.interpretive()}")
+                if len(pa.lines) > 3:
+                    output.append(f"      ... ({len(pa.lines) - 3} more steps)")
+
+        return '\n'.join(output)
+
+    def decode_folio_lines(self, folio: str, mode: str = 'structural') -> str:
+        """
+        Generate line-by-line decode of a folio.
+
+        Args:
+            folio: Folio identifier
+            mode: 'structural' or 'interpretive'
+
+        Returns:
+            Multi-line string with line-level analysis
+        """
+        line_analyses = self.analyze_folio_lines(folio)
+        if not line_analyses:
+            return f"No lines found for folio {folio}"
+
+        output = [f"{'=' * 60}"]
+        output.append(f"FOLIO {folio}: {len(line_analyses)} lines")
+        output.append(f"{'=' * 60}")
+
+        for la in line_analyses:
+            if mode == 'structural':
+                output.append(f"\nLine {la.line_id} ({la.token_count} tokens): {la.structural()}")
+                # Show first few tokens
+                for t in la.tokens[:4]:
+                    output.append(f"    {t.word:12} {t.structural()}")
+            else:
+                output.append(f"\nLine {la.line_id}: {la.interpretive()}")
+                # Show token glosses
+                for t in la.tokens[:4]:
+                    output.append(f"    {t.word:12} -> {t.interpretive()}")
+
+        return '\n'.join(output)
+
+    def analyze_folio(self, folio: str) -> Optional[BFolioAnalysis]:
+        """
+        Complete analysis of a Currier B folio.
+
+        Args:
+            folio: Folio identifier (e.g., 'f107r')
+
+        Returns:
+            BFolioAnalysis with aggregate statistics and interpretations,
+            or None if folio not found
+        """
+        # Get folio tokens
+        folio_tokens = [t for t in self.tx.currier_b() if t.folio == folio]
+        if not folio_tokens:
+            return None
+
+        # Analyze each token
+        analyses = []
+        lines = defaultdict(list)
+        for t in folio_tokens:
+            lines[t.line].append(t)
+
+        for line_id, line_tokens in lines.items():
+            for i, t in enumerate(line_tokens):
+                analysis = self.analyze_token(
+                    t.word,
+                    line_initial=(i == 0),
+                    line_final=(i == len(line_tokens) - 1)
+                )
+                analyses.append(analysis)
+
+        # Aggregate distributions
+        prefix_dist = Counter(a.prefix_role for a in analyses if a.prefix_role)
+        suffix_dist = Counter(a.suffix_role for a in analyses if a.suffix_role)
+        middle_dist = Counter(a.middle_tier for a in analyses if a.middle_tier)
+        kernel_dist = Counter()
+        for a in analyses:
+            for k in a.kernels:
+                kernel_dist[k] += 1
+
+        total = len(analyses)
+
+        # Bridge/dark-pipeline balance (C1146: r=-0.865 anti-correlation)
+        # Bridge MIDDLEs are core grammar vocabulary (always 72-96% of tokens).
+        # Dark-pipeline MIDDLEs are identification vocabulary (0-16%).
+        # Balance thresholds use dark/bridge ratio (empirical quartiles):
+        #   P25=0.063, P75=0.110; r(bridge,dark)=-0.865
+        bridge_count = sum(1 for a in analyses if a.morph.middle and a.morph.middle in self._bridge_set)
+        dark_count = sum(1 for a in analyses if a.is_dark_pipeline)
+        bridge_rate = bridge_count / total if total else 0
+        dark_rate = dark_count / total if total else 0
+        ratio = dark_rate / bridge_rate if bridge_rate > 0 else 0
+        if ratio < 0.063:
+            folio_balance = 'BRIDGE_DOMINANT'
+        elif ratio > 0.110:
+            folio_balance = 'DARK_DOMINANT'
+        else:
+            folio_balance = 'BALANCED'
+
+        # Token-derived folio metrics
+        # Unique MIDDLEs (C531)
+        middles = [a.morph.middle for a in analyses if a.morph and a.morph.middle]
+        unique_middle_set = set(middles)
+        # Compound rate (C872) — fraction of tokens with compound MIDDLE
+        compound_count = sum(1 for m in middles if self.mid_analyzer.is_compound(m))
+        compound_rate = compound_count / len(middles) if middles else 0
+        # ol-rate (C1174: morphological artifact, NOT functional "LINK")
+        ol_count = sum(1 for a in analyses if a.morph and a.morph.middle and 'ol' in a.word)
+        ol_rate = ol_count / total if total else 0
+        # QO-lane fraction (C605)
+        qo_count = sum(1 for a in analyses if a.prefix_role and 'QO' in a.prefix_role)
+        qo_fraction = qo_count / total if total else 0
+        # Sister ratio ch/(ch+sh) (C412)
+        ch_count = sum(1 for a in analyses if a.morph and a.morph.prefix == 'ch')
+        sh_count = sum(1 for a in analyses if a.morph and a.morph.prefix == 'sh')
+        sister_total = ch_count + sh_count
+        sister_ratio = ch_count / sister_total if sister_total > 0 else 0.5
+        # Dominant role — map prefix_role strings to 5-role taxonomy (C552)
+        # EN_KERNEL/EN_QO/PREP_TIER → EN, AX_SCAFFOLD/AX_LATE → AX,
+        # CC_* → CC, FL_* → FL; UN tokens mapped via C611 PREFIX prediction
+        role_5_map = {
+            'EN_KERNEL': 'EN', 'EN_QO': 'EN', 'PREP_TIER': 'EN',
+            'AX_SCAFFOLD': 'AX', 'AX_LATE': 'AX',
+            'CC_INIT': 'CC', 'FL_FINAL': 'FL',
+        }
+        role_5_dist = Counter()
+        for role, count in prefix_dist.items():
+            mapped = role_5_map.get(role)
+            if mapped:
+                role_5_dist[mapped] += count
+            elif role.startswith('EN'):
+                role_5_dist['EN'] += count
+            elif role.startswith('AX'):
+                role_5_dist['AX'] += count
+            elif role.startswith('CC'):
+                role_5_dist['CC'] += count
+            elif role.startswith('FL'):
+                role_5_dist['FL'] += count
+            elif role.startswith('FQ'):
+                role_5_dist['FQ'] += count
+        dominant_role = role_5_dist.most_common(1)[0][0] if role_5_dist else None
+        # 5-role proportions for deviation reporting
+        total_role_classified = sum(role_5_dist.values())
+        role_proportions = {
+            role: count / total_role_classified
+            for role, count in role_5_dist.items()
+        } if total_role_classified > 0 else {}
+        # Section from transcript metadata (external, illustration-based)
+        section = folio_tokens[0].section if folio_tokens else None
+
+        # 8-category folio profile (C1250, C1278, C1291)
+        folio_cat_profile = Counter(
+            a.operational_category for a in analyses
+            if a.operational_category
+        )
+        # Category regime character (C1291: REGIME_1=THERMAL-dominant, etc.)
+        cat_regime = None
+        folio_cat_total = sum(folio_cat_profile.values())
+        if folio_cat_total > 0:
+            top_cat = folio_cat_profile.most_common(1)[0][0]
+            top_frac = folio_cat_profile[top_cat] / folio_cat_total
+            if top_frac > 0.35:
+                cat_regime = f'{top_cat}_DOMINANT'
+
+        result = BFolioAnalysis(
+            folio=folio,
+            token_count=total,
+            tokens=analyses,
+            prefix_role_dist=dict(prefix_dist),
+            suffix_role_dist=dict(suffix_dist),
+            middle_tier_dist=dict(middle_dist),
+            kernel_dist=dict(kernel_dist),
+            kernel_balance=self._interpret_kernel_balance(kernel_dist),
+            material_category=self._interpret_material_category(analyses),
+            output_category=self._interpret_output_category(analyses),
+            prefix_classified_pct=100 * sum(prefix_dist.values()) / total if total else 0,
+            suffix_classified_pct=100 * sum(suffix_dist.values()) / total if total else 0,
+            middle_classified_pct=100 * sum(middle_dist.values()) / total if total else 0,
+            bridge_rate=bridge_rate,
+            dark_pipeline_rate=dark_rate,
+            folio_balance=folio_balance,
+            unique_middles=len(unique_middle_set),
+            compound_rate=compound_rate,
+            ol_rate=ol_rate,
+            qo_fraction=qo_fraction,
+            sister_ratio=sister_ratio,
+            dominant_role=dominant_role,
+            section=section,
+            category_profile=dict(folio_cat_profile),
+            category_regime_character=cat_regime,
+        )
+
+        # Attach deviation reporting data
+        result.role_proportions = role_proportions
+        result.baseline = self._baseline
+
+        # Merge external REGIME data (82 folios, C494)
+        regime_entry = self._regime_data.get(folio)
+        if regime_entry:
+            result.regime = regime_entry.get('regime')
+            result.regime_probability = regime_entry.get('probability')
+
+        # Merge AXM decomposition data (72 folios, C1016/C622/C1017)
+        axm_entry = self._axm_data.get(folio)
+        if axm_entry:
+            result.axm_self = axm_entry.get('axm_self')
+            result.hazard_density = axm_entry.get('hazard_density')
+            result.prefix_entropy = axm_entry.get('prefix_entropy')
+            result.archetype = axm_entry.get('archetype')
+            result.vocab_size = axm_entry.get('vocab_size')
+            result.vocab_residual = axm_entry.get('vocab_residual')
+
+        # Merge operational profile data (82 folios, C394-C396)
+        ops_entry = self._ops_data.get(folio)
+        if ops_entry:
+            result.paragraph_count = ops_entry.get('paragraph_count')
+
+        return result
+
+    # 5-role mapping for paragraph summary (C552)
+    _ROLE_5_MAP = {
+        'EN_KERNEL': 'EN', 'EN_QO': 'EN', 'PREP_TIER': 'EN',
+        'AX_SCAFFOLD': 'AX', 'AX_LATE': 'AX',
+        'CC_INIT': 'CC', 'FL_FINAL': 'FL',
+    }
+
+    def _map_role_5(self, role: Optional[str]) -> str:
+        """Map internal prefix_role string to 5-role taxonomy (C552)."""
+        if not role:
+            return '?'
+        mapped = self._ROLE_5_MAP.get(role)
+        if mapped:
+            return mapped
+        for prefix in ('EN', 'AX', 'CC', 'FL', 'FQ'):
+            if role.startswith(prefix):
+                return prefix
+        return '?'
+
+    def paragraph_summary_lines(self, folio: str) -> List[str]:
+        """Generate one-line-per-paragraph summary for program card.
+
+        Each line: paragraph_id | gallows | kernel k/h/e% | dominant_role(5) | size | FL term%
+        Uses 5-role taxonomy (CC/EN/FL/FQ/AX) per C552, not internal strings.
+        Kernel column shows ratio instead of category (expert rec: ESCAPE_DOMINANT
+        appeared ~80% of the time, low discriminative value).
+        Kernel ratios show '--' when token_count < 8 (too few for meaningful stats).
+        FL column shows terminal FL fraction (C777, non-executive per C949).
+        """
+        paragraphs = self.analyze_folio_paragraphs(folio)
+        if not paragraphs:
+            return ['  (no paragraphs detected)']
+        out = []
+        for p in paragraphs:
+            gallows = p.boundary_token[0].upper() if p.boundary_token else '-'
+            role = self._map_role_5(p.dominant_role)
+            # Kernel as ratio instead of category; '--' if <8 tokens
+            if p.token_count >= 8:
+                kt = sum(p.kernel_dist.values()) or 1
+                kp = 100 * p.kernel_dist.get('k', 0) / kt
+                hp = 100 * p.kernel_dist.get('h', 0) / kt
+                ep = 100 * p.kernel_dist.get('e', 0) / kt
+                kernel_str = f'k{kp:2.0f}/h{hp:2.0f}/e{ep:2.0f}'
+            else:
+                kernel_str = '--'
+            # Terminal FL fraction
+            fl_total = sum(p.fl_distribution.values()) if p.fl_distribution else 0
+            if fl_total > 0:
+                term_pct = 100 * p.fl_distribution.get('TERMINAL', 0) / fl_total
+                fl_str = f'{term_pct:2.0f}%'
+            else:
+                fl_str = '--'
+            # Cycling mode sequence and tail product (C1229-C1232)
+            if p.suffix_mode_sequence:
+                mode_str = ''.join(p.suffix_mode_sequence)
+                if len(mode_str) > 8:
+                    mode_str = mode_str[:8] + '..'
+                mode_col = f'{mode_str}({p.mode_interleave_rate:.0%})'
+            else:
+                mode_col = '--'
+            tail_col = p.tail_product_signature[:7] if p.tail_product_signature else '--'
+
+            out.append(
+                f'  {p.paragraph_id:4s} | {gallows} | {kernel_str:14s} | '
+                f'{role:4s} | {p.line_count}L/{p.token_count:3d}T | {fl_str:>3s}'
+                f' | {mode_col:>12s} | {tail_col}'
+            )
+        return out
+
+    def decode_summary(self, folio: str, mode: str = 'structural') -> str:
+        """
+        Generate human-readable summary of a folio.
+
+        Args:
+            folio: Folio identifier
+            mode: 'structural' (Tier 0-2) or 'interpretive' (Tier 3-4)
+
+        Returns:
+            Multi-line summary string
+        """
+        analysis = self.analyze_folio(folio)
+        if not analysis:
+            return f"Folio {folio} not found in Currier B"
+
+        lines = [f"{'=' * 60}"]
+        lines.append(f"FOLIO {folio}: {analysis.token_count} tokens")
+        lines.append(f"{'=' * 60}")
+
+        if mode == 'structural':
+            # Tier 0-2 technical output
+            lines.append(f"\nPREFIX ROLES (C371-374):")
+            lines.append(f"  Classified: {analysis.prefix_classified_pct:.1f}%")
+            for role, count in sorted(analysis.prefix_role_dist.items(),
+                                       key=lambda x: -x[1]):
+                pct = 100 * count / analysis.token_count
+                lines.append(f"  {role:12}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nSUFFIX ROLES (C375-378):")
+            lines.append(f"  Classified: {analysis.suffix_classified_pct:.1f}%")
+            for role, count in sorted(analysis.suffix_role_dist.items(),
+                                       key=lambda x: -x[1]):
+                pct = 100 * count / analysis.token_count
+                lines.append(f"  {role:12}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nMIDDLE TIERS (F-BRU-011):")
+            lines.append(f"  Classified: {analysis.middle_classified_pct:.1f}%")
+            for tier, count in sorted(analysis.middle_tier_dist.items(),
+                                       key=lambda x: -x[1]):
+                pct = 100 * count / analysis.token_count
+                lines.append(f"  {tier:12}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nKERNEL DISTRIBUTION:")
+            kernel_total = sum(analysis.kernel_dist.values())
+            for k in ['k', 'h', 'e']:
+                if kernel_total > 0:
+                    count = analysis.kernel_dist.get(k, 0)
+                    pct = 100 * count / kernel_total
+                    lines.append(f"  {k}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nVOCABULARY BALANCE (C1146):")
+            lines.append(f"  Bridge rate:  {analysis.bridge_rate:.1%}")
+            lines.append(f"  Dark rate:    {analysis.dark_pipeline_rate:.1%}")
+            lines.append(f"  Balance:      {analysis.folio_balance}")
+
+            lines.append(f"\nINTERPRETATION:")
+            lines.append(f"  Kernel balance: {analysis.kernel_balance}")
+            lines.append(f"  Material: {analysis.material_category}")
+            lines.append(f"  Output: {analysis.output_category}")
+
+        else:
+            # Tier 3-4 interpretive output
+            lines.append(f"\nPROCESS CHARACTERIZATION:")
+
+            # Kernel balance interpretation
+            balance_gloss = {
+                'ESCAPE_DOMINANT': "Mostly waiting for things to settle",
+                'ENERGY_DOMINANT': "Active heating throughout",
+                'HAZARD_HEAVY': "Careful monitoring required",
+                'BALANCED': "Mixed heating and settling",
+            }
+            lines.append(f"  {balance_gloss.get(analysis.kernel_balance, analysis.kernel_balance)}")
+
+            # Material interpretation
+            material_gloss = {
+                'ANIMAL': "Processing animal material (careful timing needed)",
+                'ROOT': "Processing roots (mechanical preparation first)",
+                'DELICATE_PLANT': "Processing delicate plant material (gentle handling)",
+            }
+            lines.append(f"  {material_gloss.get(analysis.material_category, analysis.material_category)}")
+
+            # Output interpretation
+            output_gloss = {
+                'OIL': "Producing oil/resin extract",
+                'WATER': "Producing water-based distillate",
+            }
+            lines.append(f"  {output_gloss.get(analysis.output_category, analysis.output_category)}")
+
+            # Sample decoded lines
+            lines.append(f"\nSAMPLE DECODED TOKENS:")
+            for tok in analysis.tokens[:10]:
+                interp = tok.interpretive()
+                lines.append(f"  {tok.word:15} -> {interp}")
+
+        return '\n'.join(lines)
+
+
+# ============================================================
+# TOKEN DICTIONARY
+# ============================================================
+class TokenDictionary:
+    """
+    Unified token lookup with persistent notes.
+
+    Provides access to all 8,150 unique tokens in the H-track with:
+    - Morphological decomposition (articulator, prefix, middle, suffix)
+    - System membership (A, B, AZC)
+    - Distribution statistics (counts, folios, sections)
+    - Persistent notes for accumulated knowledge
+
+    Usage:
+        td = TokenDictionary()
+        entry = td.get('daiin')
+        print(td.lookup('chedy'))  # Quick summary
+        td.add_note('daiin', 'High frequency in HERBAL_B')
+        td.save()
+    """
+
+    DICT_PATH = PROJECT_ROOT / 'data' / 'token_dictionary.json'
+
+    def __init__(self, path: Path = None):
+        """Initialize dictionary with optional custom path."""
+        self.path = path or self.DICT_PATH
+        self._data = None
+
+    def _load(self) -> dict:
+        """Lazy load dictionary data."""
+        if self._data is None:
+            with open(self.path, 'r', encoding='utf-8') as f:
+                self._data = json.load(f)
+        return self._data
+
+    def get(self, token: str) -> Optional[dict]:
+        """Get full entry for a token."""
+        return self._load()['tokens'].get(token)
+
+    def lookup(self, token: str) -> str:
+        """Quick summary string for a token."""
+        entry = self.get(token)
+        if not entry:
+            return f"{token}: not found"
+        systems = '/'.join(entry['systems'])
+        total = entry['distribution']['total']
+        return f"{token}: {systems}, {total} occurrences"
+
+    def add_note(self, token: str, note: str):
+        """Add a timestamped note to a token."""
+        data = self._load()
+        if token in data['tokens']:
+            data['tokens'][token]['notes'].append({
+                'date': datetime.now().strftime('%Y-%m-%d'),
+                'text': note
+            })
+
+    def save(self):
+        """Persist changes to disk."""
+        if self._data is not None:
+            with open(self.path, 'w', encoding='utf-8') as f:
+                json.dump(self._data, f, indent=2)
+
+    # --------------------------------------------------------
+    # Gloss Management (Tier 3-4 Interpretive Content)
+    # --------------------------------------------------------
+
+    def get_gloss(self, token: str) -> Optional[str]:
+        """Get Tier 3-4 interpretive gloss for a token."""
+        entry = self.get(token)
+        if entry:
+            return entry.get('gloss')
+        return None
+
+    def set_gloss(self, token: str, gloss: str, save: bool = False):
+        """
+        Set gloss for a token, optionally persisting to disk.
+
+        Args:
+            token: The token word
+            gloss: The interpretive gloss (human-readable meaning)
+            save: If True, immediately persist to disk
+        """
+        data = self._load()
+        if token in data['tokens']:
+            data['tokens'][token]['gloss'] = gloss
+            if save:
+                self.save()
+
+    def clear_gloss(self, token: str, save: bool = False):
+        """Clear gloss for a token (set to None)."""
+        data = self._load()
+        if token in data['tokens']:
+            data['tokens'][token]['gloss'] = None
+            if save:
+                self.save()
+
+    def get_glossed_tokens(self) -> List[str]:
+        """Get all tokens that have a gloss defined."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e.get('gloss') is not None]
+
+    def get_by_middle(self, middle: str) -> List[str]:
+        """Get all tokens with a specific MIDDLE."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e['morphology']['middle'] == middle]
+
+    def get_by_system(self, system: str) -> List[str]:
+        """Get all tokens in a system (A, B, or AZC)."""
+        return [t for t, e in self._load()['tokens'].items()
+                if system in e['systems']]
+
+    def get_by_prefix(self, prefix: str) -> List[str]:
+        """Get all tokens with a specific PREFIX."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e['morphology']['prefix'] == prefix]
+
+    def get_by_suffix(self, suffix: str) -> List[str]:
+        """Get all tokens with a specific SUFFIX."""
+        return [t for t, e in self._load()['tokens'].items()
+                if e['morphology']['suffix'] == suffix]
+
+    def stats(self) -> dict:
+        """Get summary statistics."""
+        data = self._load()
+        tokens = data['tokens']
+        azc_with_positions = len([t for t, e in tokens.items()
+                                   if e.get('azc', {}).get('positions')])
+        return {
+            'total_tokens': len(tokens),
+            'a_tokens': len([t for t, e in tokens.items() if 'A' in e['systems']]),
+            'b_tokens': len([t for t, e in tokens.items() if 'B' in e['systems']]),
+            'azc_tokens': len([t for t, e in tokens.items() if 'AZC' in e['systems']]),
+            'label_tokens': len([t for t, e in tokens.items() if e['distribution']['is_label']]),
+            'with_notes': len([t for t, e in tokens.items() if e['notes']]),
+            'azc_with_positions': azc_with_positions,
+        }
+
+    # --------------------------------------------------------
+    # AZC Position Management
+    # --------------------------------------------------------
+
+    def add_azc_position(self, token: str, folio: str, position: str):
+        """
+        Add an AZC diagram position for a token.
+
+        Args:
+            token: The token word
+            folio: The folio where this position was observed (e.g., 'f57v')
+            position: The placement code (e.g., 'C', 'R1', 'S2')
+        """
+        data = self._load()
+        if token not in data['tokens']:
+            return
+
+        entry = data['tokens'][token]
+
+        # Initialize azc structure if missing
+        if 'azc' not in entry:
+            entry['azc'] = {'positions': [], 'by_folio': {}}
+
+        # Add to positions list (unique)
+        if position not in entry['azc']['positions']:
+            entry['azc']['positions'].append(position)
+            entry['azc']['positions'].sort()
+
+        # Add to by_folio mapping
+        if folio not in entry['azc']['by_folio']:
+            entry['azc']['by_folio'][folio] = []
+        if position not in entry['azc']['by_folio'][folio]:
+            entry['azc']['by_folio'][folio].append(position)
+            entry['azc']['by_folio'][folio].sort()
+
+    def get_azc_positions(self, token: str) -> Optional[dict]:
+        """Get AZC position data for a token."""
+        entry = self.get(token)
+        if entry:
+            return entry.get('azc')
+        return None
+
+    def get_by_azc_position(self, position: str) -> List[str]:
+        """Get all tokens that appear at a specific AZC position."""
+        return [t for t, e in self._load()['tokens'].items()
+                if position in e.get('azc', {}).get('positions', [])]
+
+    def get_azc_zone_tokens(self, zone: str) -> List[str]:
+        """
+        Get tokens by zone type (C, R, S, P).
+
+        Matches position prefixes: 'R' matches R, R1, R2, R3, R4.
+        """
+        results = []
+        for t, e in self._load()['tokens'].items():
+            positions = e.get('azc', {}).get('positions', [])
+            for pos in positions:
+                if pos == zone or pos.startswith(zone):
+                    results.append(t)
+                    break
+        return results
+
+    # DA-family prefixes (infrastructure markers per C407)
+    INFRA_PREFIXES = {'da', 'do', 'sa', 'so'}
+
+    @classmethod
+    def generate(cls, output_path: Path = None, preserve_annotations: bool = True):
+        """
+        Generate token dictionary from transcript.
+
+        Reads all H-track tokens and builds comprehensive dictionary
+        with morphology, distribution statistics, and role classification.
+
+        Args:
+            output_path: Where to write. Defaults to DICT_PATH.
+            preserve_annotations: If True (default), preserves manually curated
+                fields (gloss, notes, fl_state, fl_meaning, is_fl_role, role.subrole)
+                from the existing dictionary. Prevents accidental data loss during
+                schema migrations or regeneration.
+        """
+        output_path = output_path or cls.DICT_PATH
+        morph = Morphology()
+
+        # Load existing annotations to preserve
+        existing_annotations = {}
+        if preserve_annotations and output_path.exists():
+            try:
+                with open(output_path, 'r', encoding='utf-8') as f:
+                    existing = json.load(f)
+                for word, entry in existing.get('tokens', {}).items():
+                    preserved = {}
+                    if entry.get('gloss') is not None:
+                        preserved['gloss'] = entry['gloss']
+                    if entry.get('notes'):
+                        preserved['notes'] = entry['notes']
+                    if entry.get('fl_state') is not None:
+                        preserved['fl_state'] = entry['fl_state']
+                    if entry.get('fl_meaning') is not None:
+                        preserved['fl_meaning'] = entry['fl_meaning']
+                    if entry.get('is_fl_role') is not None:
+                        preserved['is_fl_role'] = entry['is_fl_role']
+                    if entry.get('role', {}).get('subrole') is not None:
+                        preserved['subrole'] = entry['role']['subrole']
+                    if preserved:
+                        existing_annotations[word] = preserved
+                print(f"Preserving annotations for {len(existing_annotations)} tokens")
+            except (json.JSONDecodeError, KeyError):
+                print("Warning: Could not read existing dictionary for annotation preservation")
+
+        # Load MIDDLE classifications for role assignment
+        ri_middles, pp_middles = load_middle_classes()
+
+        # Collect all token data
+        token_data = defaultdict(lambda: {
+            'systems': set(),
+            'a_count': 0,
+            'b_count': 0,
+            'azc_count': 0,
+            'total': 0,
+            'folios': set(),
+            'sections': set(),
+            'is_label': False,
+            'locations': [],  # Track all occurrences as folio.line.position
+            'azc_positions': set(),  # Unique AZC positions
+            'azc_by_folio': defaultdict(set)  # Positions per folio
+        })
+
+        # Track position within each line for location IDs
+        current_line_key = None
+        position_in_line = 0
+
+        with open(DATA_PATH, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f, delimiter='\t')
+
+            for row in reader:
+                # Filter to H transcriber
+                transcriber = row.get('transcriber', '').strip().strip('"')
+                if transcriber != 'H':
+                    continue
+
+                word = row.get('word', '').strip()
+                if not word:
+                    continue
+
+                # Get metadata
+                language = row.get('language', '').strip()
+                folio = row.get('folio', '').strip()
+                line = row.get('line_number', '').strip()
+                placement = row.get('placement', '').strip()
+
+                # Track position in line for location IDs
+                line_key = (folio, line)
+                if line_key != current_line_key:
+                    current_line_key = line_key
+                    position_in_line = 1
+                else:
+                    position_in_line += 1
+
+                # Determine section from folio (simplified)
+                if folio:
+                    section = folio[0].upper() if folio[0].isalpha() else 'X'
+                else:
+                    section = 'X'
+
+                # Track data
+                td = token_data[word]
+                td['total'] += 1
+
+                if language == 'A':
+                    td['systems'].add('A')
+                    td['a_count'] += 1
+                elif language == 'B':
+                    td['systems'].add('B')
+                    td['b_count'] += 1
+                elif language == 'NA':
+                    td['systems'].add('AZC')
+                    td['azc_count'] += 1
+                    # Track AZC diagram positions
+                    if placement and not placement.startswith('L'):
+                        td['azc_positions'].add(placement)
+                        if folio:
+                            td['azc_by_folio'][folio].add(placement)
+
+                if folio:
+                    td['folios'].add(folio)
+                if section:
+                    td['sections'].add(section)
+
+                # Check if label
+                if placement and placement.startswith('L'):
+                    td['is_label'] = True
+
+                # Add location ID (folio.line.position)
+                if folio and line:
+                    location_id = f"{folio}.{line}.{position_in_line}"
+                    td['locations'].append(location_id)
+
+        # Build final dictionary
+        tokens = {}
+        for word, data in token_data.items():
+            # Extract morphology
+            m = morph.extract(word)
+
+            # Compute primary role based on MIDDLE classification
+            primary_role = None
+            middle = m.middle
+            prefix = m.prefix
+
+            # Check for INFRA first (DA-family with short MIDDLE)
+            if prefix in cls.INFRA_PREFIXES and middle and len(middle) <= 3:
+                primary_role = 'INFRA'
+            elif middle in ri_middles:
+                primary_role = 'RI'
+            elif middle in pp_middles:
+                primary_role = 'PP'
+            else:
+                primary_role = 'UNKNOWN'
+
+            # Build azc position data
+            azc_by_folio = {f: sorted(list(positions))
+                           for f, positions in data['azc_by_folio'].items()}
+
+            entry = {
+                'morphology': {
+                    'articulator': m.articulator,
+                    'prefix': m.prefix,
+                    'middle': m.middle,
+                    'suffix': m.suffix
+                },
+                'systems': sorted(list(data['systems'])),
+                'distribution': {
+                    'total': data['total'],
+                    'a_count': data['a_count'],
+                    'b_count': data['b_count'],
+                    'azc_count': data['azc_count'],
+                    'folio_count': len(data['folios']),
+                    'sections': sorted(list(data['sections'])),
+                    'is_label': data['is_label']
+                },
+                'role': {
+                    'primary': primary_role,
+                    'subrole': None
+                },
+                'locations': data['locations'],
+                'azc': {
+                    'positions': sorted(list(data['azc_positions'])),
+                    'by_folio': azc_by_folio
+                },
+                'notes': [],
+                'gloss': None,
+                'fl_state': None,
+                'fl_meaning': None,
+                'is_fl_role': False
+            }
+
+            # Restore preserved annotations
+            if word in existing_annotations:
+                ann = existing_annotations[word]
+                if 'gloss' in ann:
+                    entry['gloss'] = ann['gloss']
+                if 'notes' in ann:
+                    entry['notes'] = ann['notes']
+                if 'fl_state' in ann:
+                    entry['fl_state'] = ann['fl_state']
+                if 'fl_meaning' in ann:
+                    entry['fl_meaning'] = ann['fl_meaning']
+                if 'is_fl_role' in ann:
+                    entry['is_fl_role'] = ann['is_fl_role']
+                if 'subrole' in ann:
+                    entry['role']['subrole'] = ann['subrole']
+
+            tokens[word] = entry
+
+        # Count preserved annotations
+        glossed = sum(1 for t in tokens.values() if t.get('gloss'))
+        noted = sum(1 for t in tokens.values() if t.get('notes'))
+
+        # Build final output
+        output = {
+            'meta': {
+                'version': '6.0',
+                'generated': datetime.now().strftime('%Y-%m-%d'),
+                'token_count': len(tokens),
+                'schema_notes': 'v3: locations[], role, notes. v4: azc{positions[], by_folio{}}. v5: gloss field (Tier 3-4). v6: fl_state, fl_meaning, is_fl_role (C770-C777).',
+                'glossed': glossed,
+                'annotated': noted
+            },
+            'tokens': tokens
+        }
+
+        # Ensure directory exists
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Write
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(output, f, indent=2)
+
+        print(f"Generated token dictionary: {len(tokens)} tokens")
+        if existing_annotations:
+            print(f"Preserved: {glossed} glosses, {noted} annotated tokens")
+        print(f"Saved to: {output_path}")
+
+        return output
+
+
+# ============================================================
+# MIDDLE DICTIONARY
+# ============================================================
+
+class MiddleDictionary:
+    """
+    MIDDLE semantic tracking dictionary.
+
+    MIDDLEs carry the core semantic content of tokens. This dictionary
+    tracks all unique MIDDLEs with their kernel profiles, regime
+    associations, and learned glosses.
+
+    Usage:
+        md = MiddleDictionary()
+        entry = md.get('ypch')
+        print(entry['kernel'])  # 'H'
+        print(entry['gloss'])   # None (until we learn it)
+
+        # Set a gloss
+        md.set_gloss('od', 'output ready', save=True)
+    """
+
+    DEFAULT_PATH = PROJECT_ROOT / 'data' / 'middle_dictionary.json'
+
+    def __init__(self, path: Optional[Path] = None):
+        self._path = path or self.DEFAULT_PATH
+        self._data: Optional[Dict] = None
+
+    def _load(self) -> Dict:
+        if self._data is None:
+            if self._path.exists():
+                with open(self._path, 'r', encoding='utf-8') as f:
+                    self._data = json.load(f)
+            else:
+                self._data = {'meta': {'version': '1.0'}, 'middles': {}}
+        return self._data
+
+    def save(self):
+        """Save dictionary to disk."""
+        data = self._load()
+        # Update glossed count
+        glossed = sum(1 for m in data['middles'].values() if m.get('gloss'))
+        data['meta']['glossed'] = glossed
+        with open(self._path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+    def get(self, middle: str) -> Optional[Dict]:
+        """Get entry for a MIDDLE."""
+        data = self._load()
+        return data['middles'].get(middle)
+
+    def get_gloss(self, middle: str) -> Optional[str]:
+        """Get gloss for a MIDDLE."""
+        entry = self.get(middle)
+        return entry.get('gloss') if entry else None
+
+    def get_kernel(self, middle: str) -> Optional[str]:
+        """Get kernel type for a MIDDLE."""
+        entry = self.get(middle)
+        return entry.get('kernel') if entry else None
+
+    def set_gloss(self, middle: str, gloss: str, save: bool = False):
+        """Set gloss for a MIDDLE."""
+        data = self._load()
+        if middle in data['middles']:
+            data['middles'][middle]['gloss'] = gloss
+            if save:
+                self.save()
+
+    def get_glossed_middles(self) -> Dict[str, str]:
+        """Get all MIDDLEs that have glosses."""
+        data = self._load()
+        return {m: e['gloss'] for m, e in data['middles'].items() if e.get('gloss')}
+
+    def summary(self) -> Dict:
+        """Get summary statistics."""
+        data = self._load()
+        middles = data['middles']
+        return {
+            'total': len(middles),
+            'glossed': sum(1 for m in middles.values() if m.get('gloss')),
+            'kernel_k': sum(1 for m in middles.values() if m.get('kernel') == 'K'),
+            'kernel_h': sum(1 for m in middles.values() if m.get('kernel') == 'H'),
+            'kernel_e': sum(1 for m in middles.values() if m.get('kernel') == 'E'),
+        }
+
+
+# ============================================================
+# FOLIO NOTES
+# ============================================================
+
+class FolioNotes:
+    """
+    Persistent folio-level observations and notes.
+
+    Stores structural observations about each folio that emerge
+    during annotation - patterns, anomalies, questions to investigate.
+
+    Usage:
+        fn = FolioNotes()
+        fn.add_note('f1r', 'High concentration of qo- escape tokens in lines 3-7')
+        fn.save()
+        notes = fn.get('f1r')
+    """
+
+    NOTES_PATH = PROJECT_ROOT / 'data' / 'folio_notes.json'
+
+    def __init__(self, path: Path = None):
+        """Initialize with optional custom path."""
+        self.path = path or self.NOTES_PATH
+        self._data = None
+
+    def _load(self) -> dict:
+        """Lazy load notes data."""
+        if self._data is None:
+            if self.path.exists():
+                with open(self.path, 'r', encoding='utf-8') as f:
+                    self._data = json.load(f)
+            else:
+                self._data = {
+                    'meta': {
+                        'version': '1.0',
+                        'generated': datetime.now().strftime('%Y-%m-%d'),
+                        'description': 'Folio-level observations and notes'
+                    },
+                    'folios': {}
+                }
+        return self._data
+
+    def get(self, folio: str) -> Optional[dict]:
+        """Get all notes for a folio."""
+        return self._load()['folios'].get(folio)
+
+    def add_note(self, folio: str, note: str):
+        """Add a timestamped note to a folio."""
+        data = self._load()
+        if folio not in data['folios']:
+            data['folios'][folio] = {
+                'notes': [],
+                'first_annotated': datetime.now().strftime('%Y-%m-%d')
+            }
+        data['folios'][folio]['notes'].append({
+            'date': datetime.now().strftime('%Y-%m-%d'),
+            'text': note
+        })
+
+    def save(self):
+        """Persist changes to disk."""
+        if self._data is not None:
+            with open(self.path, 'w', encoding='utf-8') as f:
+                json.dump(self._data, f, indent=2)
+
+    def list_folios(self) -> List[str]:
+        """Get list of folios with notes."""
+        return list(self._load()['folios'].keys())
+
+    def stats(self) -> dict:
+        """Get summary statistics."""
+        data = self._load()
+        folios = data['folios']
+        total_notes = sum(len(f['notes']) for f in folios.values())
+        return {
+            'folios_with_notes': len(folios),
+            'total_notes': total_notes
+        }
+
+
+# ============================================================
+# ROSETTES ANALYZER
+# ============================================================
+# Data source: data/rosettes_annotated.json (ZL transcription + manual spatial annotations)
+# The EVA interlinear transcript is NOT used for Rosettes due to quality/coverage issues.
+# See context/DATA/ROSETTES_DATA_ARCHITECTURE.md for details.
+
+
+class RosettesAnalyzer:
+    """
+    Analyzer for the Rosettes foldout (f85v2 inside face — 9 rosette diagrams).
+
+    Data source: data/rosettes_annotated.json
+    Built from ZL (Zandbergen) transcription + manual spatial annotation.
+    The EVA interlinear transcript is NOT used for Rosettes due to quality issues.
+
+    The foldout contains 19 first-class entities:
+      - 9 rosettes: NW, NORTH, NE, WEST, CENTER, EAST, SW, SOUTH, SE
+      - 8 connecting paths: PATH_WEST_NW, PATH_NW_NORTH, etc.
+      - 1 clock element: CLOCK
+      - 1 catch-all: UNCLASSIFIED
+
+    Each entity has sub-regions (second-class types):
+      ring, inner_label, outer_label, spiral, paragraph, clock_text
+
+    Each token has pre-computed morphological analysis:
+      word, articulator, prefix, middle, suffix, is_bridge
+
+    Usage:
+        ra = RosettesAnalyzer()
+        summary = ra.summary()
+
+        # Get all MIDDLEs for a rosette
+        middles = ra.get_entity_middles('NW')
+
+        # Get tokens for a specific sub-region
+        tokens = ra.get_entity_tokens('NE', sub_region='ring')
+
+        # Vocabulary overlap with B corpus
+        overlap = ra.vocabulary_overlap()
+    """
+
+    # The 9 physical rosette positions
+    ROSETTE_POSITIONS = ['NW', 'NORTH', 'NE', 'WEST', 'CENTER', 'EAST', 'SW', 'SOUTH', 'SE']
+
+    def __init__(self):
+        self.morph = Morphology()
+        self._data = None
+        self._b_corpus_middles = None
+
+
+    def _load(self) -> Dict:
+        """Load the annotated Rosettes JSON (cached)."""
+        if self._data is None:
+            path = PROJECT_ROOT / 'data' / 'rosettes_annotated.json'
+            with open(path, 'r', encoding='utf-8') as f:
+                self._data = json.load(f)
+        return self._data
+
+    def get_entities(self) -> List[str]:
+        """Return all entity names (rosettes, paths, clock, etc.)."""
+        return list(self._load()['entities'].keys())
+
+    def get_rosettes(self) -> List[str]:
+        """Return just the 9 rosette position names."""
+        entities = self._load()['entities']
+        return [r for r in self.ROSETTE_POSITIONS if r in entities]
+
+    def get_paths(self) -> List[str]:
+        """Return all path entity names."""
+        return [k for k in self._load()['entities'] if k.startswith('PATH_')]
+
+    def get_entity(self, name: str) -> Optional[Dict]:
+        """Get the full entity data dict for a named entity."""
+        return self._load()['entities'].get(name)
+
+    def get_entity_tokens(self, name: str, sub_region: str = None) -> List[Dict]:
+        """Get all token dicts for an entity, optionally filtered by sub-region.
+
+        Each token dict has: word, articulator, prefix, middle, suffix, is_bridge.
+        """
+        entity = self.get_entity(name)
+        if not entity:
+            return []
+        tokens = []
+        for sr_name, sr_data in entity['sub_regions'].items():
+            if sub_region and sr_name != sub_region:
+                continue
+            for locus in sr_data['loci']:
+                tokens.extend(locus.get('words', []))
+        return tokens
+
+    def get_entity_loci(self, name: str, sub_region: str = None) -> List[Dict]:
+        """Get all locus entries for an entity, optionally filtered by sub-region.
+
+        Each locus has: locus_id, position, placement, first_class, second_class,
+        text_raw, text_clean, words, word_count, reviewed, notes, is_custom.
+        """
+        entity = self.get_entity(name)
+        if not entity:
+            return []
+        loci = []
+        for sr_name, sr_data in entity['sub_regions'].items():
+            if sub_region and sr_name != sub_region:
+                continue
+            loci.extend(sr_data['loci'])
+        return loci
+
+    def get_entity_middles(self, name: str, sub_region: str = None) -> Set[str]:
+        """Get the set of unique MIDDLEs for an entity."""
+        if sub_region is None:
+            entity = self.get_entity(name)
+            if entity:
+                return set(entity.get('unique_middles', []))
+            return set()
+        return {t['middle'] for t in self.get_entity_tokens(name, sub_region)
+                if t.get('middle')}
+
+    def get_entity_bridge_middles(self, name: str) -> Set[str]:
+        """Get bridge MIDDLEs for an entity (shared with B corpus)."""
+        entity = self.get_entity(name)
+        if entity:
+            return set(entity.get('bridge_middles', []))
+        return set()
+
+    def get_entity_non_bridge_middles(self, name: str) -> Set[str]:
+        """Get non-bridge MIDDLEs for an entity."""
+        entity = self.get_entity(name)
+        if entity:
+            return set(entity.get('non_bridge_middles', []))
+        return set()
+
+    def get_sub_regions(self, name: str) -> List[str]:
+        """Return the sub-region types present in an entity."""
+        entity = self.get_entity(name)
+        if entity:
+            return list(entity['sub_regions'].keys())
+        return []
+
+    def all_tokens(self) -> List[Dict]:
+        """Return all tokens across all entities."""
+        tokens = []
+        for name in self.get_entities():
+            tokens.extend(self.get_entity_tokens(name))
+        return tokens
+
+    def all_middles(self) -> Set[str]:
+        """Return all unique MIDDLEs across the entire Rosettes foldout."""
+        middles = set()
+        for name in self.get_entities():
+            middles.update(self.get_entity_middles(name))
+        return middles
+
+    def all_bridge_middles(self) -> Set[str]:
+        """Return all bridge MIDDLEs across the entire Rosettes foldout."""
+        middles = set()
+        for name in self.get_entities():
+            middles.update(self.get_entity_bridge_middles(name))
+        return middles
+
+    def corpus_middles(self) -> Set[str]:
+        """Return all MIDDLEs from Currier B folios (excluding Rosettes)."""
+        if self._b_corpus_middles is not None:
+            return self._b_corpus_middles
+        tx = Transcript()
+        rosettes_folios = {'f85r1', 'f85r2', 'f85v2', 'f86v3', 'f86v4', 'f86v5', 'f86v6'}
+        non_rosette = set()
+        for tok in tx.currier_b():
+            if tok.folio not in rosettes_folios:
+                m = self.morph.extract(tok.word)
+                if m.middle:
+                    non_rosette.add(m.middle)
+        self._b_corpus_middles = non_rosette
+        return non_rosette
+
+    def vocabulary_overlap(self) -> Dict:
+        """Compute vocabulary overlap between Rosettes and rest of B corpus."""
+        rosette_middles = self.all_middles()
+        corpus = self.corpus_middles()
+        shared = rosette_middles & corpus
+        unique = rosette_middles - corpus
+
+        return {
+            'rosette_middles': len(rosette_middles),
+            'corpus_middles': len(corpus),
+            'shared': len(shared),
+            'rosette_unique': len(unique),
+            'unique_list': sorted(unique),
+            'overlap_pct': 100 * len(shared) / len(rosette_middles) if rosette_middles else 0,
+        }
+
+    def per_rosette_middles(self) -> Dict[str, Set[str]]:
+        """Return {rosette_position: set_of_middles} for all 9 rosettes."""
+        return {r: self.get_entity_middles(r) for r in self.get_rosettes()}
+
+    def get_visual_description(self, name: str) -> Optional[str]:
+        """Get the visual description for an entity (rosettes only)."""
+        entity = self.get_entity(name)
+        if entity:
+            return entity.get('visual_description')
+        return None
+
+    def get_connects_to(self, name: str) -> List[str]:
+        """Get the list of entities this rosette connects to."""
+        entity = self.get_entity(name)
+        if entity:
+            return entity.get('connects_to', [])
+        return []
+
+    def get_grid_position(self, name: str) -> Optional[str]:
+        """Get the grid position string for an entity."""
+        entity = self.get_entity(name)
+        if entity:
+            return entity.get('grid_position')
+        return None
+
+    def metadata(self) -> Dict:
+        """Return the _metadata section from the annotated JSON."""
+        return self._load().get('_metadata', {})
+
+    def summary(self) -> Dict:
+        """Overview of all Rosettes data."""
+        data = self._load()
+        meta = data.get('_metadata', {})
+        summ = data.get('summary', {})
+        overlap = self.vocabulary_overlap()
+
+        return {
+            'source': 'rosettes_annotated.json (ZL + manual annotation)',
+            'total_entities': meta.get('entity_count', len(data['entities'])),
+            'total_loci': meta.get('total_loci', summ.get('total_loci', 0)),
+            'total_words': meta.get('total_words', summ.get('total_words', 0)),
+            'reviewed_loci': meta.get('reviewed_loci', summ.get('reviewed', 0)),
+            'rosettes': self.get_rosettes(),
+            'paths': self.get_paths(),
+            'vocabulary': overlap,
+            'per_entity': {
+                name: {
+                    'loci': entity_summ['loci_count'],
+                    'words': entity_summ['word_count'],
+                    'sub_regions': entity_summ['sub_regions'],
+                }
+                for name, entity_summ in summ.get('entities', {}).items()
+            },
+        }
+
+
+# ============================================================
+# QUICK VERIFICATION
+# ============================================================
+if __name__ == '__main__':
+    # Quick test
+    print("Voynich Library Test")
+    print("=" * 50)
+
+    tx = Transcript()
+    morph = Morphology()
+
+    # Count tokens
+    a_count = sum(1 for _ in tx.currier_a())
+    b_count = sum(1 for _ in tx.currier_b())
+    print(f"Currier A tokens: {a_count}")
+    print(f"Currier B tokens: {b_count}")
+
+    # Test morphology
+    test_tokens = ['chody', 'ydaraishy', 'dy', 'fachys', 'shol', 'qokeey']
+    print(f"\nMorphology examples:")
+    for t in test_tokens:
+        m = morph.extract(t)
+        print(f"  {t}: art={m.articulator}, pre={m.prefix}, mid={m.middle}, suf={m.suffix}")
+
+    # Canonical counts verification
+    print(f"\nCanonical count check (should match CLAUDE.md):")
+    print(f"  Currier A: {a_count} (expected: 11,415)")
+    print(f"  Currier B: {b_count} (expected: 23,243)")
+
+    # Test RecordAnalyzer
+    print("\n" + "=" * 50)
+    print("Record Analyzer Test (f1r, first 3 lines)")
+    print("=" * 50)
+
+    analyzer = RecordAnalyzer()
+
+    for line_num in ['1', '2', '3']:
+        record = analyzer.analyze_record('f1r', line_num)
+        if record:
+            print(f"\nLine {line_num} [{record.composition}]: {record.ri_count} RI, {record.pp_count} PP, {record.infra_count} INFRA")
+            print("-" * 50)
+            for t in record.tokens:
+                class_tag = f"[{t.token_class:7}]"
+                morph_str = f"PRE={t.prefix or '-':5} MID={t.middle or '-':10} SUF={t.suffix or '-'}"
+                print(f"  {t.word:15} {class_tag} {morph_str}")
+
+    # Test MiddleAnalyzer
+    print("\n" + "=" * 50)
+    print("Middle Analyzer Test (Currier B)")
+    print("=" * 50)
+
+    mid_analyzer = MiddleAnalyzer()
+    mid_analyzer.build_inventory('B')
+
+    summary = mid_analyzer.summary()
+    print(f"\nInventory summary:")
+    print(f"  Total MIDDLEs: {summary['total_middles']}")
+    print(f"  Core (20+ folios): {summary['core_count']} ({summary['core_pct']:.1f}%)")
+    print(f"  Folio-unique: {summary['folio_unique_count']} ({summary['folio_unique_pct']:.1f}%)")
+
+    # Test compound detection
+    print(f"\nCompound analysis examples:")
+    test_middles = ['od', 'aiin', 'odaiin', 'cheod', 'oteey']
+    for mid in test_middles:
+        stats = mid_analyzer.get_stats(mid)
+        if stats:
+            is_cmp = mid_analyzer.is_compound(mid)
+            atoms = mid_analyzer.get_contained_atoms(mid)
+            cls = mid_analyzer.classify_middle(mid)
+            print(f"  '{mid}': {cls}, compound={is_cmp}, atoms={atoms}")
+
+    # Test PPSemantics
+    print("\n" + "=" * 50)
+    print("PP Semantics Test")
+    print("=" * 50)
+
+    sem = PPSemantics()
+
+    # Test individual MIDDLEs
+    test_pp = ['od', 'al', 'ar', 'y', 'in', 'k', 'e', 'ey', 'ckh', 'aiin', 'or', 't', 'ct']
+    print("\nSemantic analysis examples:")
+    for mid in test_pp:
+        a = sem.analyze(mid)
+        fl_tag = "[FL]" if a.is_fl_vocabulary else ""
+        kernel_str = f"kernel={a.kernel_chars}" if a.kernel_chars else ""
+        print(f"  {mid:10} -> {a.semantic_class:12} ({a.subclass or '-':15}) {fl_tag} {kernel_str}")
+
+    # Test vocabulary summary
+    print("\nVocabulary summary (sample PP MIDDLEs):")
+    sample_pp = ['od', 'al', 'ar', 'y', 'in', 'k', 'e', 'ey', 'ckh', 'aiin', 'or', 't', 'ct',
+                 'ol', 'r', 'dy', 'm', 'eol', 'ch', 'ok', 'ek', 'he', 'ke']
+    summary = sem.summary(sample_pp)
+    print(f"  Total: {summary['total']}")
+    print(f"  Class distribution: {summary['class_distribution']}")
+    print(f"  FL vocabulary: {summary['fl_vocabulary_count']}")
+    print(f"  High confidence: {summary['high_confidence_count']}")
+
+    # Test BFolioDecoder
+    print("\n" + "=" * 50)
+    print("B Folio Decoder Test (f107r)")
+    print("=" * 50)
+
+    decoder = BFolioDecoder()
+    analysis = decoder.analyze_folio('f107r')
+
+    if analysis:
+        print(f"\nFolio: {analysis.folio} ({analysis.token_count} tokens)")
+        print(f"\nClassification rates:")
+        print(f"  PREFIX: {analysis.prefix_classified_pct:.1f}%")
+        print(f"  SUFFIX: {analysis.suffix_classified_pct:.1f}%")
+        print(f"  MIDDLE tier: {analysis.middle_classified_pct:.1f}%")
+
+        print(f"\nInterpretations:")
+        print(f"  Kernel balance: {analysis.kernel_balance}")
+        print(f"  Material: {analysis.material_category}")
+        print(f"  Output: {analysis.output_category}")
+
+        print(f"\nKernel distribution:")
+        for k in ['k', 'h', 'e']:
+            count = analysis.kernel_dist.get(k, 0)
+            print(f"  {k}: {count}")
+
+        # Test both output modes
+        print("\nSample token analysis (structural mode):")
+        for tok in analysis.tokens[:5]:
+            print(f"  {tok.word:15} -> {tok.structural()}")
+
+        print("\nSample token analysis (interpretive mode):")
+        for tok in analysis.tokens[:5]:
+            print(f"  {tok.word:15} -> {tok.interpretive()}")
+
+        # Test line-level analysis
+        print("\n" + "=" * 50)
+        print("B Line-Level Analysis Test (f107r, first 3 lines)")
+        print("=" * 50)
+
+        lines = decoder.analyze_folio_lines('f107r')
+        for la in lines[:3]:
+            print(f"\nLine {la.line_id}: {la.interpretive()}")
+            print(f"  Type: {la.line_type} | FL: {la.fl_progression} | Kernels: {la.kernel_sequence[:5]}")
+            for t in la.tokens[:2]:
+                print(f"    {t.word:12} -> {t.interpretive()}")

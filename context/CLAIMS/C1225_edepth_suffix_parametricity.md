@@ -1,5 +1,8 @@
 # C1225 - E-depth Suffix Parametricity
 
+> **RESCOPED 2026-09-27 (PHASE_758).** Segmentation artifact: 68% of the "single-e" tokens below have an e-run of 2+ after k; the pre-C1957 parser moved the extra e into the suffix "-edy". The "parametric axis" / "different instruction types" reading is struck. What survives is a script-wide glyph fact: longer e-runs are followed more often by y and less often by d, after k as after other heads. See `phases/PHASE_758_ERUN_GLYPH_GATE/INDEX.md`.
+
+
 **Tier:** 2 | **Scope:** B | **Phase:** KE_THERMAL_CYCLING_VALIDATION (Phase 437)
 
 ## Statement
