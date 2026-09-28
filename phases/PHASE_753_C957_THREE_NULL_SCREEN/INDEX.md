@@ -1,6 +1,6 @@
 # PHASE_753 — C957 three-null screen
 
-**Status:** COMPLETE (locked verdict reported; post-hoc analysis reported; C957 disposition pending the lean-expert rigor review requested 2026-09-27).
+**Status:** COMPLETE (locked verdict reported; post-hoc analysis reported; C957 rescoped per the lean-expert review; joint null N5 pending).
 **Pre-registration:** `PRE_REGISTRATION.md`, committed 4f6373c before any code.
 **Script:** `scripts/c957_three_null_screen.py` (v3; ~1.6 min). **Results:** `results/c957_three_null_screen.json`
 (v1 output with a per-pair tracking bug kept as `results/c957_three_null_screen_v1_TRACKING_BUG.json`).
@@ -67,7 +67,31 @@ coupling; N2 keeps edge coupling but destroys composition.
 4. For the rival panel, the zero-cell screen can serve only as a comparison statistic computed identically on
    real text and generator output, never as evidence of specific prohibitions. Do not quote P≈5e-17.
 
-## Proposed disposition (pending lean-expert review)
+## Lean-expert rigor review (2026-09-27) and applied disposition
+- The locked CERTIFIED verdict stands as registered but carries little evidence of a token-level residual. Each
+  single-mechanism null is anti-conservative with respect to the mechanism it omits (N1 destroys edge coupling; N2
+  destroys line composition), so rejecting both separately is expected even with no residual: separate nulls where
+  the question needed a joint null (wrong-null class).
+- N4 is not a sound joint null (edge TV 0.082 vs 0.022 for N2); its residual is contaminated by edge coupling.
+- Candidate sets and replicate distributions came from the same replicate batch (identical seeds for pass 1 and
+  pass 2). At R = 500–1,000 the selection effect on replicate zeros is negligible; disclosed here.
+- The E≥5 result rests on 2–3 zero pairs: one misread occurrence in H would move N2's p from 0.004 to about 0.11.
+  A cross-track check of every zero pair is owed.
+- **Required next test (N5, to be pre-registered):** MCMC over within-line medial swaps preserving each line's token
+  multiset, INITIAL/FINAL tokens and the per-section last-glyph→first-glyph count matrix. Diagnostics: ≥50% of
+  positions changed, edge TV ≤ 0.02, zones exact, ≥4 chains with R-hat < 1.05, ESS ≥ 1,000. Glyph-unit edges as a
+  sensitivity run; E≥3 primary. Pass → Tier-2 residual row without a pair list; fail → C957 superseded by a
+  reduction row citing C956 and C1212/C1563.
+- **Applied now:** C957 rescoped (named-pair list, P≈5e-17, "token-specific", "directionality verified" and "hazard
+  prohibition layer" struck; screen-level excess over each single null kept; joint null and cross-track check
+  pending). Scope notes added to C109, C541, C542, C601, C622–C627, C789, C996, C997, C1000, C1071, C1528–C1533,
+  C1546–C1552; note on C2077 (K1′ was supporting only).
+- **D1 for the rival panel:** zeros in corpus X minus expected zeros under X's own N5 null (tokens freq ≥ 10,
+  candidates E ≥ 3), computed identically on B and every generator corpus with B's line-length skeleton and matched
+  transcription noise; candidate counts within ±25% of B's; specificity control M1, not M2. If B shows no excess
+  under N5, drop D1 and use edge-glyph MI and zone statistics directly.
+
+## Original proposed disposition (superseded by the review above)
 Annotate C957: strike "surviving directional prohibition layer of the hazard topology"; keep the screen-level
 measurement at Tier 2 with the scope above; mark the named pair list and the "token-specific" chey pairs as
 largely boundary-coupling. Update frozen_conclusion.md / contracts wording accordingly.
