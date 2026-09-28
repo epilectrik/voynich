@@ -121,3 +121,6 @@ sources/pseudo_lull_testamentum/testamentum_1566_raw_ocr.txt
 # Metadata (manifest.json, canvas_index.json, folio_mapping.json, README.md) is committed
 sources/voynich_scans/images/
 sources/voynich_scans/foldouts/
+
+# Third-party code and data clones (pinned; not redistributed)
+external/
