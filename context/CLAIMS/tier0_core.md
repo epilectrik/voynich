@@ -39,6 +39,7 @@ Every token in Currier B corpus maps to exactly one instruction class. Zero toke
 ## C119 - 0 Translation-Eligible Zones
 **Tier:** 0 | **Status:** FROZEN
 No region of the manuscript contains natural language or cipher text eligible for translation. PURE_OPERATIONAL throughout.
+**[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]**
 **Source:** Phase 19
 
 ---
@@ -46,6 +47,7 @@ No region of the manuscript contains natural language or cipher text eligible fo
 ## C120 - PURE_OPERATIONAL Verdict
 **Tier:** 0 | **Status:** FROZEN
 Final classification: The Currier B text is an operational control notation, not language, cipher, or symbolic text.
+**[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]**
 **Source:** Phase 19
 
 ---

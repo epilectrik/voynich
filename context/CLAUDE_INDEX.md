@@ -14,7 +14,7 @@
 
 The Voynich Manuscript's Currier B text (61.9% of tokens, 83 folios) encodes a family of **closed-loop, kernel-centric control programs** designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
 
-Not natural language written one token per word; the cipher classes tested so far are excluded, but sub-lexical (verbose/homophonic) ciphers are untested. Working reading: a control-system reference manual.
+Not natural language written one token per word; the cipher classes tested so far are excluded, including the Naibbe verbose homophonic cipher as published (PHASE_757, C2080); other sub-lexical designs remain untested. Working reading: a control-system reference manual.
 
 | Metric | Value |
 |--------|-------|

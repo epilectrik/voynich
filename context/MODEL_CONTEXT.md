@@ -94,7 +94,7 @@ The following components are **stable**; reopening any of them requires new evid
 | Morphological axes | STABLE, EVA-DEPENDENT | PREFIX/MIDDLE/SUFFIX is a parse of EVA letter strings; glyph-unit invariance audit pending |
 | System boundaries | STABLE | A/B/AZC/HT separation; A/B partly confounded with scribe/quire |
 | Language hypothesis | CLOSED (scoped) | Rejected for natural language written one token per word |
-| Cipher hypothesis | OPEN (scoped) | Classes tested are excluded (token≈word, atom-level polyalphabetic C1976); sub-lexical verbose/homophonic ciphers (Naibbe) UNTESTED |
+| Cipher hypothesis | OPEN (scoped) | Classes tested are excluded (token≈word, atom-level polyalphabetic C1976); Naibbe verbose homophonic cipher as published EXCLUDED (PHASE_757, C2080: 64/64 variants); other sub-lexical designs untested |
 
 ### Permitted Future Work
 

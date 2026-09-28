@@ -81,7 +81,7 @@ These are structural facts, not interpretations. Any analyst examining the token
 - **NOT a translation** - tokens don't mean words
 - **NOT a recipe book** - no ingredient lists, no quantities
 - **NOT natural language written one token per word** (C2032 and related; the old "0.19% reference rate" figure is marked tainted in NEGATIVE_AUDIT and is not relied on)
-- **NOT a cipher of the classes tested** (transform tests; atom-level polyalphabetic C1976; token≈word codes). Sub-lexical verbose/homophonic ciphers (e.g. Naibbe) are UNTESTED [scoped 2026-09-27]
+- **NOT a cipher of the classes tested** (transform tests; atom-level polyalphabetic C1976; token≈word codes). The Naibbe verbose homophonic cipher as published was tested and EXCLUDED (PHASE_757, C2080, 2026-09-28: all 64 variants; B has edge-glyph coupling, chance-level repetition and line-zone dependence that Naibbe lacks, and less order information than any Naibbe variant carries). Other sub-lexical designs (modified Naibbe, syllable or word-level codebooks) remain untested. This is an excluded rival, not evidence for the control-program reading
 - **NOT illustration-dependent** - swap invariance p=1.0
 
 See [falsifications.md](falsifications.md) for complete rejection list.

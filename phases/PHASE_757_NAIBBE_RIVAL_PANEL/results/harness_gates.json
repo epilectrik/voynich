@@ -1,0 +1,98 @@
+{
+ "G1": {
+  "GV1/P-REC": {
+   "min_letter_recovery": 0.99287,
+   "mean": 0.99365,
+   "pass": true
+  },
+  "GV1/P-PHA": {
+   "min_letter_recovery": 0.99246,
+   "mean": 0.99282,
+   "pass": true
+  },
+  "GV1/P-ITA": {
+   "min_letter_recovery": 0.99273,
+   "mean": 0.99413,
+   "pass": true
+  },
+  "GV1/P-NH": {
+   "min_letter_recovery": 0.99159,
+   "mean": 0.99342,
+   "pass": true
+  },
+  "GV2/P-REC": {
+   "min_letter_recovery": 1.0,
+   "mean": 1.0,
+   "pass": true
+  },
+  "GV2/P-PHA": {
+   "min_letter_recovery": 1.0,
+   "mean": 1.0,
+   "pass": true
+  },
+  "GV2/P-ITA": {
+   "min_letter_recovery": 1.0,
+   "mean": 1.0,
+   "pass": true
+  },
+  "GV2/P-NH": {
+   "min_letter_recovery": 1.0,
+   "mean": 1.0,
+   "pass": true
+  }
+ },
+ "G2": {
+  "a_GV2_P-NH_SR0": {
+   "tokens": 21610,
+   "types": 4732,
+   "ttr": 0.21897269782508097,
+   "hapax_type_fraction": 0.48499577345731193,
+   "mean_token_length": 5.282878297084683,
+   "pass": true
+  },
+  "a_GV2_P-NH_SR3": {
+   "tokens": 21610,
+   "types": 5188,
+   "ttr": 0.24007403979639055,
+   "hapax_type_fraction": 0.5406707787201234,
+   "mean_token_length": 5.396159185562239,
+   "pass": true
+  },
+  "b_GV1_vs_committed": {
+   "ours": {
+    "tokens": 34741,
+    "types": 5621,
+    "ttr": 0.1617973000201491,
+    "hapax_type_fraction": 0.4098914783846291,
+    "mean_token_length": 5.247315851587461
+   },
+   "committed": {
+    "tokens": 34741,
+    "types": 5598,
+    "ttr": 0.16113525805244525,
+    "hapax_type_fraction": 0.4090746695248303,
+    "mean_token_length": 5.23433407213379
+   },
+   "relative_diff": {
+    "ttr": 0.004108610217934963,
+    "hapax_type_fraction": 0.0019967231428618453,
+    "mean_token_length": 0.002480120541557111
+   },
+   "pass": true
+  }
+ },
+ "G1_pass": true,
+ "G2_pass": true,
+ "noise_model": {
+  "aligned_pairs": 14498,
+  "differing": 1970,
+  "disagreement_rate": 0.13588081114636502,
+  "rho": 0.06794040557318251,
+  "n_edit1": 1477,
+  "edit_type_counts": {
+   "sub": 1261,
+   "del": 173,
+   "ins": 43
+  }
+ }
+}

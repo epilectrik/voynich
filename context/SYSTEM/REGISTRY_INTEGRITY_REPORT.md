@@ -1,8 +1,8 @@
 # Registry Integrity Report
 
-**Generated:** 2026-09-27 by `scripts/registry_integrity_check.py` (regenerate after every registry change).
+**Generated:** 2026-09-28 by `scripts/registry_integrity_check.py` (regenerate after every registry change).
 
-**Generated table:** LIVE (Tier 0/2) 1706, TIER1 35, DEMOTED (Tier 3/4) 113; registered numbers in INDEX.md: 1885; dead (registered, not in table): 31.
+**Generated table:** LIVE (Tier 0/2) 1708, TIER1 35, DEMOTED (Tier 3/4) 113; registered numbers in INDEX.md: 1887; dead (registered, not in table): 31.
 
 **Citations of non-live constraints in living docs:** 588 (451 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
 

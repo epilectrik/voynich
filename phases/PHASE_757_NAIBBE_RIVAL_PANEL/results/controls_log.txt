@@ -1,0 +1,15 @@
+B: {'D2': 0.22809067488804, 'D3': 0.014799703937250535, 'D4': 2.474435349920705, 'D5': 0.04030688256567144, 'D6': 0.17212264508565847}
+  controls 250/2100 (57s)
+  controls 500/2100 (87s)
+  controls 750/2100 (121s)
+  controls 1000/2100 (154s)
+  controls 1250/2100 (180s)
+  controls 1500/2100 (215s)
+  controls 1750/2100 (251s)
+  controls 2000/2100 (286s)
+certification: usable=['D2', 'D3', 'D4', 'D5', 'D6'] k=5
+  D2: certifiers=['GEDGE'] non_builtin=False
+  D3: certifiers=['GEDGE'] non_builtin=True
+  D4: certifiers=['M1', 'GEDGE'] non_builtin=True
+  D5: certifiers=['M1'] non_builtin=False
+  D6: certifiers=['GEDGE'] non_builtin=False

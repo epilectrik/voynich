@@ -256,6 +256,7 @@ Aggressive programs buffered (88% vs 49% null)
 ### C173 - Linguistic hypothesis EXHAUSTED
 **Tier:** 2 | **Status:** CLOSED
 Linguistic hypothesis EXHAUSTED
+**[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]**
 **Source:** v1.8-import
 
 ### C174 - Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)

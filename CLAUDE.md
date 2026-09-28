@@ -194,7 +194,7 @@ Use these to verify your filtering is correct:
 
 > The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
 
-**Status (2026-09-27):** frozen by human sign-off, but its distinctive signatures have faced only one external generator (Timm & Schinner, C2077). Rival-generator tests (Naibbe verbose cipher, Rugg grille) and a transliteration/glyph-unit invariance audit are the current forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
+**Status (2026-09-27):** frozen by human sign-off, but its distinctive signatures have faced two external generators: Timm & Schinner (C2077) and the Naibbe verbose homophonic cipher as published (C2080, excluded on all 64 variants, 2026-09-28). Further rival-generator tests (Rugg grille, modified cipher designs) and a transliteration/glyph-unit invariance audit are the current forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
 
 ---
 
