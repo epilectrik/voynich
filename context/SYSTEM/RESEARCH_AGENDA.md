@@ -17,7 +17,8 @@ text made to look meaningful? And, if it carries content, what content?
 - Against meaningless text, one generator has been tested:
   - Timm & Schinner's self-citation (copy-and-modify) generator, the main academic "meaningless" hypothesis, is
     excluded (C2077).
-  - Human-improvised gibberish and the Rugg grille have not been tested.
+  - Human-improvised gibberish was tested at folio scale in PHASE_764: unresolved (below). The Rugg grille has
+    not been tested.
   - The older "glossolalia ruled out by 100% coverage" argument was circular (the 100% is the grammar's own vocabulary)
     and is retired.
   - C420's "ruling out gibberish" shows internal consistency only.
@@ -95,7 +96,7 @@ text made to look meaningful? And, if it carries content, what content?
   gloss row; `ATOM_GLOSSES` in `scripts/voynich.py` are labels meanwhile.
 - **Registry decisions left open by the v7.26 cascade:** C1005 (Tier 4, possibly a Tier-1 falsification); C179
   (4-regime clustering: scope-tagged, demotion defensible); C311/C456 (possibly retract like C434/C435); C193–C195;
-  the C894 row's numbers are stale (its detail file moved the signal to REGIME_2); two LINK definitions coexist
+  the C894 row's numbers are stale (C894 demoted to Tier 3 in v7.26) (its detail file moved the signal to REGIME_2); two LINK definitions coexist
   (C861 class 29 vs C609 'ol'); OPS correlations partly built in (C190, C180, C188).
 - **Residual unannotated citations of non-live constraints:** see `SYSTEM/REGISTRY_INTEGRITY_REPORT.md`, and regenerate
   after every registry change.
