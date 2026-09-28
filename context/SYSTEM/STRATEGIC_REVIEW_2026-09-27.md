@@ -84,6 +84,17 @@ passage three lines lower. There is no "and afterwards nine times" in III.19. Co
 | 6 | **Testamentum text side** | ×4∧×9 regex in the native languages across Rupescissa, pseudo-Lull Latin, Codicillus, Brunschwig, Mesue, Antidotarium (genre baseline); numeral→signature rules frozen before any forward scan; prospective anchors on unexamined recipes | Specific-text claim rises only if the conjunction stays rare at genre level and a forward anchor is hit above the base rate |
 | 7 | **Codicology (PHASE_752 v2) for Malta (video due 2026-11-09)** | Pipeline negative control first: run the unchanged pipeline on the Aberdeen Bestiary (known collation, continuous text), prediction locked; then second transcription track (ZL3b); then the side-of-flat-sheet contrast pooled across quires | Register a bifolium constraint only if re-pairing p<0.01 in ≥2 of 3 strata, both tracks, after length residualization |
 
+### Progress (updated 2026-09-27, same session; branch `strategic-review-2026-09`)
+| # | Status | Outcome |
+|---|---|---|
+| 1 Registry integrity | **DONE** | Generator fixes (demotions visible at Tier 3, dead rows never re-imported, silent tier default fixed); v6.90 dispositions applied; P726/P727 registered; banners withdrawn; frozen_conclusion facts corrected; contracts stamped; `scripts/registry_integrity_check.py`; CHANGELOG v7.22 |
+| 2 C957 screen | **RUN (PHASE_753)**; joint null N5 pending | Locked verdict CERTIFIED (zero-cell excess over the zone-only and edge-only nulls separately), but no named pair is robust under both; lean-expert: separate nulls are anti-conservative, so this carries little evidence of a token-level residual. C957 rescoped; 28 forbidden-transition rows scope-noted; N5 (MCMC joint null) specified |
+| 3 Units/orthography gate | **RUN (PHASE_754)** for C1440, C1209, C1484, C1207, C521 | All PARTLY ORTHOGRAPHIC in B (97.7–98.9%; C1440/C521 IDENTITY in A). Real glyph facts behind them: benches non-final (0.16% vs 25%), minim groups final (97%), bench→e 3.5× / e→bench 0.22×. Next: e-run family (C1225, C1967, C2031) and C1394's slot model |
+| 4 C2032 reconciliation | **RUN (PHASE_755)** | Locked verdict LENGTH-CONFOUNDED: Section B alternates (D +0.028, CI excludes 0) but the B-vs-S divergence is not shown within equal-length strata. C2031/C2032/C2053 rescoped. Records the unregistered 2026-05-16 length-stratified FAIL |
+| 5 Rival panel (Naibbe) | **NEXT** | Gates 2–4 have reported. D1 = zero-cell excess over each corpus's own N5 null (after N5); D4 needs length matching; letter-unit baselines required for any NL comparison |
+| 6 Testamentum text side | pending | — |
+| 7 PHASE_752 v2 / Malta | pending | Aberdeen negative control first |
+
 Also queued (lower priority or externally dependent): label grounding with blind image coding (re-transcribe
 labels from IIIF first; C2004/C2005 gaps); scribal corrections as the writers' own error model; blind
 practitioner raters with decoy profiles (External Corroboration Protocol, redesigned); f57v key-table test;

@@ -1,0 +1,343 @@
+{
+ "phase": "PHASE_755",
+ "pre_registration_commit": "e588555",
+ "n_boot": 2000,
+ "seed": 755,
+ "results": {
+  "pooled": {
+   "Section_B_all": {
+    "n_paragraphs": 82,
+    "excess_lag1": -0.0171,
+    "excess_lag2": 0.01043,
+    "D": 0.02754,
+    "D_ci95": [
+     0.00765,
+     0.04713
+    ],
+    "r21_for_reference": -0.61
+   },
+   "matched_B": {
+    "n_paragraphs": 61,
+    "excess_lag1": -0.01554,
+    "excess_lag2": 0.00892,
+    "D": 0.02447,
+    "D_ci95": [
+     0.00171,
+     0.04635
+    ],
+    "r21_for_reference": -0.574
+   },
+   "Section_S_all": {
+    "n_paragraphs": 283,
+    "excess_lag1": 0.01959,
+    "excess_lag2": 0.01258,
+    "D": -0.00701,
+    "D_ci95": [
+     -0.02043,
+     0.00638
+    ],
+    "r21_for_reference": 0.642
+   },
+   "matched_S": {
+    "n_paragraphs": 215,
+    "excess_lag1": 0.02592,
+    "excess_lag2": 0.01454,
+    "D": -0.01138,
+    "D_ci95": [
+     -0.02633,
+     0.00383
+    ],
+    "r21_for_reference": 0.561
+   },
+   "all_Currier_B": {
+    "n_paragraphs": 462,
+    "excess_lag1": 0.00791,
+    "excess_lag2": 0.01189,
+    "D": 0.00399,
+    "D_ci95": [
+     -0.00562,
+     0.01306
+    ],
+    "r21_for_reference": 1.504
+   }
+  },
+  "strata": {
+   "3-29": {
+    "Section_B_all": {
+     "n_paragraphs": 5,
+     "excess_lag1": 0.06806,
+     "excess_lag2": -0.02362,
+     "D": -0.09168,
+     "D_ci95": [
+      -0.2322,
+      -0.00852
+     ],
+     "r21_for_reference": -0.347
+    },
+    "matched_B": {
+     "n_paragraphs": 3,
+     "excess_lag1": 0.08063,
+     "excess_lag2": 0.04181,
+     "D": -0.03883,
+     "D_ci95": [
+      -0.11538,
+      0.16667
+     ],
+     "r21_for_reference": 0.518
+    },
+    "Section_S_all": {
+     "n_paragraphs": 125,
+     "excess_lag1": 0.00183,
+     "excess_lag2": 0.01423,
+     "D": 0.0124,
+     "D_ci95": [
+      -0.01473,
+      0.04019
+     ],
+     "r21_for_reference": 7.783
+    },
+    "matched_S": {
+     "n_paragraphs": 101,
+     "excess_lag1": 0.00289,
+     "excess_lag2": 0.01359,
+     "D": 0.0107,
+     "D_ci95": [
+      -0.01789,
+      0.04333
+     ],
+     "r21_for_reference": 4.7
+    },
+    "all_Currier_B": {
+     "n_paragraphs": 151,
+     "excess_lag1": 0.00412,
+     "excess_lag2": 0.01123,
+     "D": 0.00712,
+     "D_ci95": [
+      -0.01618,
+      0.03014
+     ],
+     "r21_for_reference": 2.729
+    }
+   },
+   "30-59": {
+    "Section_B_all": {
+     "n_paragraphs": 28,
+     "excess_lag1": -0.03632,
+     "excess_lag2": -0.00716,
+     "D": 0.02916,
+     "D_ci95": [
+      -0.01274,
+      0.07478
+     ],
+     "r21_for_reference": 0.197
+    },
+    "matched_B": {
+     "n_paragraphs": 22,
+     "excess_lag1": -0.02796,
+     "excess_lag2": -0.01803,
+     "D": 0.00993,
+     "D_ci95": [
+      -0.03517,
+      0.06127
+     ],
+     "r21_for_reference": 0.645
+    },
+    "Section_S_all": {
+     "n_paragraphs": 140,
+     "excess_lag1": 0.02313,
+     "excess_lag2": 0.00985,
+     "D": -0.01328,
+     "D_ci95": [
+      -0.03079,
+      0.00396
+     ],
+     "r21_for_reference": 0.426
+    },
+    "matched_S": {
+     "n_paragraphs": 101,
+     "excess_lag1": 0.03337,
+     "excess_lag2": 0.01328,
+     "D": -0.02009,
+     "D_ci95": [
+      -0.0402,
+      0.00108
+     ],
+     "r21_for_reference": 0.398
+    },
+    "all_Currier_B": {
+     "n_paragraphs": 213,
+     "excess_lag1": 0.01462,
+     "excess_lag2": 0.0096,
+     "D": -0.00502,
+     "D_ci95": [
+      -0.0186,
+      0.0088
+     ],
+     "r21_for_reference": 0.657
+    }
+   },
+   "60-119": {
+    "Section_B_all": {
+     "n_paragraphs": 39,
+     "excess_lag1": -0.01175,
+     "excess_lag2": 0.01283,
+     "D": 0.02458,
+     "D_ci95": [
+      -0.00132,
+      0.05129
+     ],
+     "r21_for_reference": -1.092
+    },
+    "matched_B": {
+     "n_paragraphs": 27,
+     "excess_lag1": -0.0073,
+     "excess_lag2": 0.00787,
+     "D": 0.01518,
+     "D_ci95": [
+      -0.01523,
+      0.04475
+     ],
+     "r21_for_reference": -1.078
+    },
+    "Section_S_all": {
+     "n_paragraphs": 14,
+     "excess_lag1": 0.04549,
+     "excess_lag2": 0.01913,
+     "D": -0.02636,
+     "D_ci95": [
+      -0.06826,
+      0.02551
+     ],
+     "r21_for_reference": 0.42
+    },
+    "matched_S": {
+     "n_paragraphs": 10,
+     "excess_lag1": 0.04877,
+     "excess_lag2": 0.02746,
+     "D": -0.02131,
+     "D_ci95": [
+      -0.07541,
+      0.05085
+     ],
+     "r21_for_reference": 0.563
+    },
+    "all_Currier_B": {
+     "n_paragraphs": 81,
+     "excess_lag1": 0.00487,
+     "excess_lag2": 0.0139,
+     "D": 0.00904,
+     "D_ci95": [
+      -0.00745,
+      0.0258
+     ],
+     "r21_for_reference": 2.857
+    }
+   },
+   "120-inf": {
+    "Section_B_all": {
+     "n_paragraphs": 10,
+     "excess_lag1": -0.01661,
+     "excess_lag2": 0.021,
+     "D": 0.03761,
+     "D_ci95": [
+      -0.00552,
+      0.07941
+     ],
+     "r21_for_reference": -1.264
+    },
+    "matched_B": {
+     "n_paragraphs": 9,
+     "excess_lag1": -0.02266,
+     "excess_lag2": 0.02848,
+     "D": 0.05114,
+     "D_ci95": [
+      0.01133,
+      0.08738
+     ],
+     "r21_for_reference": -1.257
+    },
+    "Section_S_all": {
+     "n_paragraphs": 4,
+     "excess_lag1": 0.02236,
+     "excess_lag2": 0.01608,
+     "D": -0.00628,
+     "D_ci95": [
+      -0.03204,
+      0.02692
+     ],
+     "r21_for_reference": 0.719
+    },
+    "matched_S": {
+     "n_paragraphs": 3,
+     "excess_lag1": 0.03291,
+     "excess_lag2": 0.01099,
+     "D": -0.02192,
+     "D_ci95": [
+      -0.04061,
+      0.01629
+     ],
+     "r21_for_reference": 0.334
+    },
+    "all_Currier_B": {
+     "n_paragraphs": 17,
+     "excess_lag1": -0.00097,
+     "excess_lag2": 0.01492,
+     "D": 0.01588,
+     "D_ci95": [
+      -0.01127,
+      0.04482
+     ],
+     "r21_for_reference": -15.393
+    }
+   }
+  }
+ },
+ "section_B_vs_S": {
+  "pooled": {
+   "D_B_minus_D_S": 0.03455,
+   "ci95": [
+    0.01155,
+    0.0581
+   ]
+  },
+  "3-29": {
+   "D_B_minus_D_S": -0.10408,
+   "ci95": [
+    -0.25148,
+    -0.0175
+   ]
+  },
+  "30-59": {
+   "D_B_minus_D_S": 0.04244,
+   "ci95": [
+    -0.00344,
+    0.09039
+   ]
+  },
+  "60-119": {
+   "D_B_minus_D_S": 0.05094,
+   "ci95": [
+    -0.00766,
+    0.10083
+   ]
+  },
+  "120-inf": {
+   "D_B_minus_D_S": 0.04389,
+   "ci95": [
+    -0.00959,
+    0.09352
+   ]
+  }
+ },
+ "qualifying_strata": [
+  {
+   "stratum": "30-59",
+   "ci_excludes_0_positive": false
+  },
+  {
+   "stratum": "60-119",
+   "ci_excludes_0_positive": false
+  }
+ ],
+ "verdict": "LENGTH-CONFOUNDED"
+}
