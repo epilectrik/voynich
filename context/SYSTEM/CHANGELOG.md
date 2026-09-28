@@ -4,6 +4,34 @@
 
 ---
 
+## Version 7.27 (2026-09-28) — PHASE_764: human-improvised gibberish vs B boundary coupling (MIXED / UNRESOLVED)
+
+### Summary
+A pre-registered, lean-audited test of whether gibberish improvised by people (Gaskell & Bowern 2022; 38 volunteers,
+23 samples large enough) reaches Currier B's boundary coupling at matched folio scale. The test was certified: power
+0.895, the positive control REPRODUCED and the negative control NOT REPRODUCED. The locked verdict is **MIXED /
+UNRESOLVED**.
+
+| Comparison | AUC | 95% CI |
+|---|---|---|
+| B vs gibberish | 0.825 | 0.714–0.919 (the lower bound misses the 0.80 bar) |
+| B vs meaningful | 0.775 | 0.751–0.797 |
+| Meaningful vs gibberish | 0.585 | 0.453–0.703 |
+
+- **Variants:** 0.81–0.98. Three are NOT REPRODUCED and two UNRESOLVED; the locked rule does not let variants upgrade
+  the primary label.
+- **Reading:** B's boundary coupling exceeds human-written text of both kinds by similar margins, so it is not a
+  meaning discriminator. It does not rule gibberish in or out.
+- **Descriptive:** B is more rule-bound than both groups on position-in-line dependence (B vs gibberish AUC 0.986),
+  adjacent repetition and near-repetition, with a narrower word-initial entropy (3.1 vs about 4.0 bits). The
+  ending-routing statistic (S2) could not be estimated at sample scale; it failed the power check.
+
+### Registry
+No row (per the locked table for MIXED). STATUS_BRIEF §4 now lists human gibberish as "tested at folio scale,
+unresolved"; the RESEARCH_AGENDA marks Tier A #1 as done and records the position-in-line lead. 764 phases.
+
+---
+
 ## Version 7.26 (2026-09-28) — Context-system alignment (registry fixes, cascade, living docs)
 
 ### Summary

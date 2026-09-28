@@ -113,7 +113,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-28 16:26
+**Generated:** 2026-09-28 17:51
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -135,7 +135,7 @@ tables are quarantined — do not use for structural answers.
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.26, 2026-09-28)
+# Status Brief — what currently stands (v7.27, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -220,7 +220,15 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - The Naibbe verbose homophonic cipher as published (C2080).
 - Timm & Schinner copy-and-modify (C2077).
 - A table walk over a coordinate lookup (C2079).
-- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not
+- **Human-improvised gibberish** (Gaskell & Bowern, 38 modern volunteers): **tested at folio scale, unresolved**
+  (PHASE_764).
+  - B's boundary coupling exceeds most samples (AUC 0.825, 95% CI 0.71–0.92; variants 0.81–0.98), but the
+    pre-registered bar was not met.
+  - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
+  - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
+    repetition and near-repetition, and a narrower word-initial choice.
+- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a
+  practised script at book scale. Excluding a rival is not
   evidence for the working interpretation.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
@@ -415,7 +423,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.26, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.27, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -431,7 +439,14 @@ text made to look meaningful? And, if it carries content, what content?
 **Where things stand:**
 - The grammar is real and specific. It survives copy-and-modify generation (C2077) and the Naibbe cipher (C2080), and
   it has measured line-level and word-boundary structure: C956, C1212/C1563, C2081, C2082.
-- Nothing measured yet tells meaningful text apart from constrained meaningless text.
+- Against meaningless text, one generator has been tested:
+  - Timm & Schinner's self-citation (copy-and-modify) generator, the main academic "meaningless" hypothesis, is
+    excluded (C2077).
+  - Human-improvised gibberish and the Rugg grille have not been tested.
+  - The older "glossolalia ruled out by 100% coverage" argument was circular (the 100% is the grammar's own vocabulary)
+    and is retired.
+  - C420's "ruling out gibberish" shows internal consistency only.
+  - No measurement yet positively shows that the text carries meaning.
 - Nothing ties the text to an external source.
 - The working interpretation (procedural notation) is unconstrained by current measurements.
 
@@ -439,12 +454,19 @@ text made to look meaningful? And, if it carries content, what content?
 
 ## Tier A — decides whether the grammar is evidence of meaning at all
 
-1. **Human-gibberish control.**
+1. **Human-gibberish control.** Done: PHASE_764 returned MIXED / UNRESOLVED at folio scale.
+   - B's coupling exceeds most samples (AUC 0.825), but the lower bound missed 0.80.
+   - Meaningful text is equally far below B, so this is not a meaning discriminator.
+   - Lead: B's position-in-line dependence far exceeds gibberish (descriptive AUC 0.986). It needs new data to
+     confirm.
+   - The original design follows.
    - What: run the full discriminator panel on text people produced deliberately without meaning. The Gaskell & Bowern
      corpus (github.com/danielgaskell/voynich) is the natural source.
    - Panel: PHASE_757 D2–D6; C2082 word-ending routing; the C2081 zero-cell structure; line zones.
    - Resolves: if human gibberish reproduces B's profile, the grammar is evidence of a *writing process*, not of content.
-     If it doesn't, we have the first measured contrast between B and meaningless text.
+     If it doesn't, we have the first measured contrast between B and *human-produced* meaningless text. The
+     algorithmic kind is already excluded (C2077). Gaskell & Bowern report that human gibberish shares several
+     Voynich statistics, which makes it the strongest meaningless rival still standing.
    - Kill conditions and discriminator thresholds must be set on controls before looking at B again (calibration rule).
 2. **The untested rival generators.**
    - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose

@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.26, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.27, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -29,7 +29,12 @@ text made to look meaningful? And, if it carries content, what content?
 
 ## Tier A — decides whether the grammar is evidence of meaning at all
 
-1. **Human-gibberish control.**
+1. **Human-gibberish control.** Done: PHASE_764 returned MIXED / UNRESOLVED at folio scale.
+   - B's coupling exceeds most samples (AUC 0.825), but the lower bound missed 0.80.
+   - Meaningful text is equally far below B, so this is not a meaning discriminator.
+   - Lead: B's position-in-line dependence far exceeds gibberish (descriptive AUC 0.986). It needs new data to
+     confirm.
+   - The original design follows.
    - What: run the full discriminator panel on text people produced deliberately without meaning. The Gaskell & Bowern
      corpus (github.com/danielgaskell/voynich) is the natural source.
    - Panel: PHASE_757 D2–D6; C2082 word-ending routing; the C2081 zero-cell structure; line zones.

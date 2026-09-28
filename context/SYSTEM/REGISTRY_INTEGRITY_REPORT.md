@@ -32,7 +32,7 @@
 
 - `context/SPECULATIVE/engineered_substrate_triad.md:62` C1971 [DEMOTED] — - **Not a claim that Voynich isn't language.** The C2015/C2022/C2032 results say Voynich differs from NL on three measurement axes. They do NOT say it carries no meaning, has no gr
 - `context/SPECULATIVE/engineered_substrate_triad.md:109` C171 [DEMOTED] — - C171 — PURE_OPERATIONAL non-linguistic constraint (older Voynich-vs-NL finding at a different level)
-- `context/SYSTEM/RESEARCH_AGENDA.md:84` C894 [DEMOTED] — the C894 row's numbers are stale (its detail file moved the signal to REGIME_2); two LINK definitions coexist
+- `context/SYSTEM/RESEARCH_AGENDA.md:98` C894 [DEMOTED] — the C894 row's numbers are stale (its detail file moved the signal to REGIME_2); two LINK definitions coexist
 - `context/TERMINOLOGY/ATOM_RELATIONAL_DEFINITIONS.md:12` C171 [DEMOTED] — from structure and **already exists** across ~40 Tier-2 constraints. C171 does NOT forbid it — C171
 - `context/TERMINOLOGY/ATOM_RELATIONAL_DEFINITIONS.md:12` C171 [DEMOTED] — from structure and **already exists** across ~40 Tier-2 constraints. C171 does NOT forbid it — C171
 - `context/TERMINOLOGY/ATOM_RELATIONAL_DEFINITIONS.md:13` C120 [DEMOTED] — forbids *referents*, not *roles* ("tokens have roles, not meanings" — MODEL_CONTEXT.md / C120).

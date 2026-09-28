@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.26, 2026-09-28)
+# Status Brief — what currently stands (v7.27, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -83,7 +83,15 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - The Naibbe verbose homophonic cipher as published (C2080).
 - Timm & Schinner copy-and-modify (C2077).
 - A table walk over a coordinate lookup (C2079).
-- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not
+- **Human-improvised gibberish** (Gaskell & Bowern, 38 modern volunteers): **tested at folio scale, unresolved**
+  (PHASE_764).
+  - B's boundary coupling exceeds most samples (AUC 0.825, 95% CI 0.71–0.92; variants 0.81–0.98), but the
+    pre-registered bar was not met.
+  - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
+  - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
+    repetition and near-repetition, and a narrower word-initial choice.
+- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a
+  practised script at book scale. Excluding a rival is not
   evidence for the working interpretation.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
