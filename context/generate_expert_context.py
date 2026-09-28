@@ -1069,12 +1069,19 @@ def _generate_all_contract_signatures():
 COMPACT_STANCE = """
 ## Cognitive Operating Stance
 
-This is a structurally closed system with:
-- Tier 0-2 binding constraints ({constraint_count} validated, with tier and scope metadata)
+This is a MAPPED BUT OPEN system: structure is mapped, referents are unrecovered, and the
+semantic character of Tier 0 ("operational notation, not encoded prose") is under adversarial
+test. Current forward plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
+- Tier 0-2 binding constraints ({constraint_count} registered; demoted rows appear at Tier 3, dead rows are dropped)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
-- No substance-level semantic recovery possible (C171, C120)
-- High-dimensional discrimination manifold (C973, C982)
-- Grammar-level safety enforcement via forbidden transitions (C109)
+- Referents not recoverable from text-internal statistics alone (C171, C120) — scoped to the
+  encodings actually tested; sub-lexical / verbose-homophonic cipher classes (e.g. Naibbe) are UNTESTED
+- Hazard layer = token-level directional zero bigrams (C957), pending a within-line,
+  position-preserving screen-level null. Class-level "17 forbidden transitions" (C783) is DEMOTED and
+  C109's 5-class taxonomy is struck (C2060). Never quote C957's P≈5e-17 (post-selection product)
+- EVA-unit caution: several atom-level claims are transliteration-unit artifacts (ch/sh, benched
+  gallows and in/iin/aiin are single glyphs written as letter strings: C1440, C1209, C1207, C1484,
+  C521's e→h zero). Prefer glyph-unit or token/class-level evidence
 - Operator judgment gating (13 types structurally required but non-encodable)
 
 When reasoning:
@@ -1083,8 +1090,9 @@ When reasoning:
 - Use contract signatures to find which constraints cover a topic
 - Use interpretive layer for cross-layer integration
 - Never infer token meanings beyond structural role
-- Dangerous contexts restrict grammar instead of raising alerts (C458)
-- Design asymmetry: hazard clamped (CV 0.04-0.11), recovery free (CV 0.72-0.82) (C458)
+- C458 (hazard clamped / recovery free) is DEMOTED (frequency shadow); do not cite it as support
+- Never frame the program as exhausted, closed or foreclosed while referents are unrecovered;
+  method ceilings are scoped to the method
 - Free variation envelope: ~57% of folio-level dynamics are genuine design freedom (C980, C1035)
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
@@ -1112,6 +1120,7 @@ MEMORY_DIR = Path.home() / ".claude" / "projects" / "C--git-voynich" / "memory"
 # Core documents (always included)
 CORE_DOCS = [
     ("CLAUDE_INDEX.md", "Project Overview & Navigation"),
+    ("SYSTEM/STRATEGIC_REVIEW_2026-09-27.md", "Current Forward Plan (Strategic Review 2026-09-27)"),
     ("MODEL_CONTEXT.md", "Architectural Framework"),
     ("CONSTRAINT_TABLE.txt", "All Constraints"),
     ("MODEL_FITS/FIT_TABLE.txt", "All Explanatory Fits"),
@@ -1334,7 +1343,7 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
     # Metadata (counts parsed dynamically from INDEX.md and FIT_TABLE.txt)
     mode_label = "COMPACT" if compact else "FULL"
     sections.append(f"""**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}
-**Version:** FROZEN STATE ({constraint_count} validated constraints, {fit_count} fits) [{mode_label}]
+**Version:** Tier 0 frozen pending external adversarial tests; structure mapped, referents unrecovered ({constraint_count} registered constraints, {fit_count} fits) [{mode_label}]
 
 ---
 

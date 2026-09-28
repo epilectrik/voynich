@@ -4,6 +4,47 @@
 
 ---
 
+## Version 7.22 (2026-09-27) — Strategic review (post model upgrade) + registry reconciliation
+
+### Trigger
+Fresh-eyes review after the upgrade to Claude Opus 5.5: three experts (advisor, lean, crazy; two rounds for
+advisor and lean), an external literature scout and two read-only repo audits. Full record and forward plan:
+`context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`. This entry also records that the v7.17 framing
+("forward-discovery phase is exhausted … external channels foreclosed … audits essentially done") is WITHDRAWN:
+34 of the 43 most-cited live constraints had never been re-audited under a modern null, several atom-level
+constraints are EVA-orthography artifacts, and Tier 0 has faced only one external generator (C2077).
+
+### Registry reconciliation
+| Item | Action |
+|---|---|
+| `generate_constraint_table.py` | Struck rows with a live tier digit are now kept at that tier (demotions visible at Tier 3; C131/C481 at Tier 1); struck-without-tier and STATUS-retracted/superseded rows are dead and can no longer be re-imported from grouped registries (C216 fix); unstruck rows with a struck tier cell (`~~2~~ 3`) and borderline `2/3` tiers are parsed (C1274, C836, C837, C936 were silently missing); a latent rf-string bug that defaulted every currier_a tier to 2 is fixed (C251–C266 are Tier 1 INVALIDATED; C475 Tier 3); registry entries are dead only when their own Status says RETRACTED/SUPERSEDED/REFUTED (C172, C365 dropped; C287–C290 kept). Table header now reports live counts by tier. |
+| C1727 | DEMOTED 2→3 (v6.90 disposition never applied to the row) |
+| C2049, C2050, C2051 | DEMOTED 2→3 (C1727 cascade stated in v6.90, never applied) |
+| C1314 | STATUS:SUPERSEDED by C2056 (v6.90, never applied) |
+| C2045 | Annotated: mechanism retracted to Tier 4 (v6.90); lag+1 measurement kept; token-shuffle re-test owed (C2066) |
+| C1944, C1947, C1948, C1953, C1955 | Annotated with PHASE_727 count failures (6 of 27 exact counts do not reproduce; 5 of 6 drift upward, consistent with the C1957 parser revision) |
+| C1882, C2052 | Annotated with PHASE_726: the recipe-side feature extractor runs English keyword regexes on an English translation of the Testamentum |
+| C1965, C1969, C2034 | Source correction: III.19 reads "per quatre vegades **aliter** ix vegades" ("four times, otherwise nine times"; scan-verified). The quoted "… e aprés ix vegades" was an OCR splice. ×4/×9 are alternative counts for one step; two-phase readings are void; honest anchor pricing = ×4 leg (p≈0.10) × 1/189 before search multiplicity |
+| C2031, C2032 | Reproduction flag: all-of-B r21=+0.70 vs −0.66 in the matched subset (uncommitted June file); re-run with lag2−lag1 and N-matched CIs owed; unit caveat (Latin words, not letters) |
+
+Live table after reconciliation: 1,873 rows (T0 25, T1 35, T2 1,703, T3 106, T4 4).
+
+### Living-document corrections
+- Closure banners withdrawn or scoped: CLAUDE.md quick reference ("Core model: internally consistent (PCA-v1); external adversarial tests open"), CLAUDE_INDEX.md header and metrics, MODEL_CONTEXT.md status and §III (cipher hypothesis now OPEN (scoped); language CLOSED only for NL written one token per word), PROJECT_SYNTHESIS.md ("saturated/terminal/stop" scoped), RIGOR_AND_FAILURE_TAXONOMY.md ("foreclosed" withdrawn).
+- `CORE/frozen_conclusion.md`: Tier 0 sentence unchanged; supporting facts corrected (coverage 69.5% of B tokens; hazard layer = C957 token-level zeros, class-level demoted, 13 real violations per C2063; convergence reframed as occupancy; "not a language/cipher" scoped to classes tested).
+- `generate_expert_context.py`: agent stance no longer cites demoted C973/C982/C458 or calls the system "structurally closed"; header no longer says "FROZEN STATE".
+- `CRAZY_EXPERT_STANCE.md`: stale premises removed (1,770 count, Brunschwig/Rupescissa "working fact", "Characterization COMPLETE", "glosses unlocked", four-level k-chain, hazard-class and virtual-apparatus bullets flagged); frontier block added.
+- Structural contracts: each stamped with a status header listing cited DEMOTED/DEAD constraints; guarantees citing them are suspended pending regeneration from live status.
+- RIGOR_AND_FAILURE_TAXONOMY v1.1: ten new patterns (transliteration-unit artifact, wrong unit of comparison, untested rival class, screen-level selection, fit-on-real-data-only, noise-parity asymmetry, physical-layout/binding-order shadow, source-quote drift, silent parser default, scope overreach).
+- PENDING_TESTS.md points to the review as the current queue; PT-EXT-1 partially scored; PT-CA-1 corrected.
+- PHASE_726 and PHASE_727 INDEX files written (findings from 2026-05-21 registered); PHASE_752 INDEX records the lean-expert audit corrections and the locked registration gate.
+- New permanent tool: `scripts/registry_integrity_check.py` (writes `context/SYSTEM/REGISTRY_INTEGRITY_REPORT.md`).
+
+### Memory
+MEMORY.md index rebuilt (51.5 KB → 11.7 KB; the loader had been cutting it at line 43). New notes: transliteration-unit artifact, verify source quotes against scans, Bash-tool backslash collapse, strategic-review state; aliter correction notes added to five notes.
+
+---
+
 ## Version 7.21 (2026-06-15) — C2078 RETRACTED same-day (marginal-frequency shadow)
 
 **Summary:** C2078, registered hours earlier, is RETRACTED. Two controls — both flagged by
