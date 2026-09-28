@@ -14,7 +14,14 @@ text made to look meaningful? And, if it carries content, what content?
 **Where things stand:**
 - The grammar is real and specific. It survives copy-and-modify generation (C2077) and the Naibbe cipher (C2080), and
   it has measured line-level and word-boundary structure: C956, C1212/C1563, C2081, C2082.
-- Nothing measured yet tells meaningful text apart from constrained meaningless text.
+- Against meaningless text, one generator has been tested:
+  - Timm & Schinner's self-citation (copy-and-modify) generator, the main academic "meaningless" hypothesis, is
+    excluded (C2077).
+  - Human-improvised gibberish and the Rugg grille have not been tested.
+  - The older "glossolalia ruled out by 100% coverage" argument was circular (the 100% is the grammar's own vocabulary)
+    and is retired.
+  - C420's "ruling out gibberish" shows internal consistency only.
+  - No measurement yet positively shows that the text carries meaning.
 - Nothing ties the text to an external source.
 - The working interpretation (procedural notation) is unconstrained by current measurements.
 
@@ -27,7 +34,9 @@ text made to look meaningful? And, if it carries content, what content?
      corpus (github.com/danielgaskell/voynich) is the natural source.
    - Panel: PHASE_757 D2–D6; C2082 word-ending routing; the C2081 zero-cell structure; line zones.
    - Resolves: if human gibberish reproduces B's profile, the grammar is evidence of a *writing process*, not of content.
-     If it doesn't, we have the first measured contrast between B and meaningless text.
+     If it doesn't, we have the first measured contrast between B and *human-produced* meaningless text. The
+     algorithmic kind is already excluded (C2077). Gaskell & Bowern report that human gibberish shares several
+     Voynich statistics, which makes it the strongest meaningless rival still standing.
    - Kill conditions and discriminator thresholds must be set on controls before looking at B again (calibration rule).
 2. **The untested rival generators.**
    - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose
