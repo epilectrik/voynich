@@ -1,5 +1,7 @@
 # Recipe Matching: How We Identified the Source Tradition
 
+> **Pre-review document (May 2026), kept for traceability.** Several claims below were withdrawn or rescoped in the September 2026 review — notably the *Testamentum* chapter → folio matching (not evidence: PHASE_762, C2052), the "17 forbidden transitions / 5 hazard classes" layer (C783, C2060, C2081), "100% coverage" (69.5% of tokens), and the atom glosses as fixed meanings. For the current position see [README.md](README.md) and [WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md).
+
 This document describes the methodology used to match individual chapters of the Pseudo-Lullian *Testamentum* to individual Voynich manuscript folios. 51 procedural chapters map to 41 folios, covering 96% of the *Testamentum*'s procedural content (51 of 53 chapters classified as procedural). The methodology progressed through six stages: statistical matching, expanded matching, reverse-blind prediction, instruction-level validation, material-marker hard-filtering, and recto/verso systematic scanning.
 
 For the broader project context, see [README.md](README.md). For claims and limits, see [WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md).

@@ -1,101 +1,96 @@
 # What We Claim / What We Do Not Claim
 
-This document states the project's claims explicitly, with the evidence tier and constraint basis for each. It exists because the Voynich Manuscript attracts extraordinary claims, and readers deserve to know exactly where our confidence is high and where it is not.
-
-For the full constraint system, see `context/CLAIMS/INDEX.md` (2,021 validated constraints).
-
----
-
-## What We Claim
-
-### Structural findings (Tier 0-2: proven from the data)
-
-These claims are grounded in statistical evidence from the transcript. They do not depend on interpretation, domain identification, or historical comparison.
-
-- **The manuscript's main text (Currier B) forms a closed executable grammar.** 479 token types collapse to 49 instruction classes with 100% coverage. No token falls outside the grammar. (C121, C124)
-
-- **The grammar is governed by a single shared set of rules across all 83 folios.** There is no folio that uses a different grammar. The instruction classes, disfavored transitions, and macro-state dynamics apply universally. (C124, C531)
-
-- **17 state transitions are structurally forbidden.** They occur at ~0% realized rate (~65% class-level compliance — strongly suppressed). The forbidden transitions exhibit real atom-territory structure: they fall into groupings with near-orthogonal atom HEAD territories (7/10 pairwise Jaccard = 0). The largest group (PHASE_ORDERING, 7 of 17) is a genuine sealed-state→iteration sequencing failure. *Note: the specific 5-class distillation taxonomy was an early keyword-based labeling, not a data-derived clustering (the count 5 is not data-preferred); it is Tier 3-4 interpretation.* (C109 existence, C789, C1528-C1533, C2060) 
-
-- **The manuscript has a three-level safety architecture.** Level 1: vocabulary exclusion (certain constructions cannot be built). Level 2: hazard source typing (headed tokens have 0% hazard source rate). Level 3: transition suppression (the 17 disfavored transitions, ~65% compliance). These are independent, redundant safety layers. (C1446, C1546, C1553-C1555)
-
-- **Each line is a self-contained safety envelope.** Lines carry no state from previous lines. Within a line, operations follow a fixed positional grammar: specification opens, thermal work fills the middle, closure ends. (C1463-C1471)
-
-- **The manuscript uses four structurally distinct registers (A, B, AZC, HT) sharing a common compositional substrate.** All four registers build tokens from the same 18 atoms but deploy them in different proportions. Pairwise Jaccard similarity of atom inventories is 0.895 or higher. (C1499, C1500-C1509)
-
-- **The notation is not a natural language and not an ordinary cipher.** Multiple independent lines of evidence:
-  - **External pretrained-model probes (Phase 691, strongest single test):** TinyLlama-1.1B fine-tuned on H-track achieves 24.2 perplexity (4.60 bits/token), comparable to its perplexity on Python code (22.4) — Voynich is as learnable as code, not as natural language. ByT5 char-level model shows real Voynich has *higher* perplexity than token-shuffled Voynich (6.96 vs 6.65 bpc): the structural arrangement actively contradicts NL char-level priors (C2022).
-  - **Char-level compression (Phase 691):** Voynich is ~2x more compressible than matched-size Latin (SISMEL) and English (Brunschwig) at the character level (Voynich BPC 0.893 vs Latin 1.704, English 1.403). Char-level statistics are consistent with constructed slot-grammar notation, not natural-language phoneme distributions (C2015).
-  - **Cipher hypothesis falsification (Phase 691):** Three published cipher hypotheses (Bax 2014, Cheshire 2019, Currier-like consonant cipher) decode at 4.04–4.16x worse than real-English baseline. None meet the 1.5x plausibility threshold for a real cipher (C2017). Polyalphabetic cipher independently rejected via stable atom semantics across PREFIX channels (C1976).
-  - **Internal evidence:** Language encoding tests CLOSED (C132). Micro-cipher tests: 0/18 passed (C207). Reference rate to any known language: 0.19% (C130). The notation has no linguistic source text.
-
-- **A simple Markov model using the discovered grammar reproduces 87% of measurable structure.** The M2.1 generative model passes 21/21 closure metrics. This means the grammar is sufficient to regenerate the data's statistical properties. (C1365)
-
-- **Every token decomposes into operational atoms with 100% coverage.** The HEAD+MOD*+TERM architecture (C1394) with 18 atoms at four confidence tiers (C1195) produces readable operational descriptions for all 23,096 Currier B tokens. (C1897)
-
-- **Specific tokens encode identifiable operational functions across multiple independently-matched folios.** `dar` (da+r) = material introduction — present on all folios matched to recipes introducing new materials, absent on all folios matched to cohobation/separation-only recipes (6/6 partition, C1925). `chekar` (ch+ek+ar) = post-thermal quality check — appears in structurally identical context across 7/83 folios (C1926).
-
-- **The manuscript encodes only procedural content.** Full-spectrum scan of all 209 *Testamentum* chapters: 96 theoretical chapters and 30 furnace-specification chapters produce zero atom-validated matches. Only procedural Practica and Mercuriorum chapters match. (C1932)
-
-### Historical source tradition (Tier 2-3: framework established, specific assignments interpretive)
-
-These claims combine structural evidence (Tier 2) with interpretive identification (Tier 3). The structural matching is validated; the specific recipe assignments could be revised by new evidence.
-
-- **The best-fit historical source tradition is Pseudo-Lullian alchemy.** Statistical matching using 8 locked feature dimensions identifies the *Testamentum*'s Practica and Liber Mercuriorum as the source, calibrated independently against Brunschwig's distillation manual (1500). 10-dimension permutation test: 0/10,000 shuffles, p<0.0001 (C1956). Cross-family replication confirmed (C1885). Wrong-regime negative control collapses (C1886). (Tier 2 for the matching framework; Tier 3 for the specific PL identification)
-
-- **51 procedural chapters from the *Testamentum* match to 41 folios, covering 96% of expanded procedural content (53 chapters).** 3 confirmed by independent structural evidence (f75r/Ch19, f76r/Ch18P, f84r/Ch14P); 5 via reverse-blind prediction (C1935); 4 via fch (mercury marker) hard-filter matching (C1943-C1945, C1952); 1 via cs (gold marker) hard-filter (C1947); 4 via recto/verso systematic scan (C1948, C1953-C1955); the remainder at supported or speculative confidence. Multi-chapter folios combine related short procedures (C1937); sequential operations appear on recto/verso pairs (C1936). Individual assignments are Tier 3. The matching framework was trained on distillation chapters; cross-family generalization adds +7% distance penalty (C1933). Phase 638 reclassified 6 higher Mercuriorum chapters from "theoretical" to "procedural" based on Latin verb counting (C1946).
-
-- **The manuscript's sections map to *Testamentum* book divisions.** Section B folios f75-f84 correspond to Liber Mercuriorum preparation chapters (Ch1-28). Section S folios f103-f116 correspond to transmutation/multiplication chapters (Ch40+). The ordering follows product chains, not book order. (C1927, C1930 — Tier 2 for the clustering, Tier 3 for the specific mapping)
-
-- **A product chain links folios across the manuscript.** f75r (Ch19 aqua vitae / quintessence) produces the input for f84r (Ch14 gold dissolution, which requires "vegetable G" = quintessence per the *Testamentum*'s cipher key). Parallel mineral and animal production chains converge at medical administration. (C1928 — Tier 3)
-
-### Structural domain alignment (Tier 3: consistent with evidence, not proven by it)
-
-- **The grammar's structural properties align with thermal process control.** 28 tests across 4 test suites comparing VMS structure to Brunschwig's *Liber de arte distillandi* (1500). Forbidden transitions are *consistent with* physical failure modes (the per-class failure-mode labels are interpretive, not proven; the ENERGY_OVERSHOOT label is not supported by the atom glosses of its member transition — C2060). Recovery architecture matches Brunschwig's bounded retry rule. Fire degrees correlate with stability proxy. (F-BRU-001 through F-BRU-034)
-
-- **The manuscript is best modeled as a multi-register technical control notation.** The four-register architecture functions as a coordinated document stack for expert practitioners. (C1499, Phase 551)
-
-- **No existing medieval document genre matches the VMS structural profile.** Eight genres compared across 7 dimensions; best match scores 2.5/7. We propose the classification OPERATIONAL CONTROL CODEX as an analytical category. (Phase 552)
+This document states the project's claims explicitly, with their evidence tier and constraint basis. It was rewritten
+on 2026-09-28 after the September 2026 review ([STRATEGIC_REVIEW_2026-09-27.md](context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md)),
+which re-tested the central claims against external controls. The generated
+[CONSTRAINT_TABLE.txt](context/CONSTRAINT_TABLE.txt) is authoritative for which constraints are live and at what tier.
 
 ---
 
-## What We Do Not Claim
+## 1. Measurements (Tier 2: reproduced under controls)
 
-- **We do not claim plaintext translation.** No token has a proven English (or any language) equivalent. The atom glosses describe operational functions within the control grammar, not natural-language content. (C171: semantic ceiling)
+These are statements about the text. They do not depend on any interpretation of what it means.
 
-- **We do not claim exact substance identification from tokens alone.** `dar` identifies a material-introduction EVENT but not WHICH material. `chekar` identifies a quality-check EVENT but not what is being checked. The notation discriminates materials from each other but does not name them — material identity was externalized to the practitioner's knowledge. (C120: PURE_OPERATIONAL)
+- **Boundary glyph coupling.** The last glyph of a word predicts the first glyph of the next within a line: 0.228 bits
+  beyond a within-line shuffle on the H transcription, 0.243 on the ZL transcription, and 0.215 at definite spaces alone
+  (uncertain spaces behave like word-internal transitions and inflate the pooled value by about 16%). (C1212, C1563;
+  PHASE_761)
+- **Positional vocabulary.** Common words are tied to line start or line end: 192 of 334 common tokens are excluded from at
+  least one line zone; zone dependence 0.172 bits beyond shuffle. (C956; PHASE_757)
+- **Adjacent-word structure.** Adjacent words share a prefix less often than line composition implies (qo/ch/sh
+  interleaving) and share an ending more often; kept slots persist rather than rotate; adjacent identical words occur at
+  chance. (C549, C1002, C2079; PHASE_757, PHASE_760)
+- **Low order information.** Beyond the boundary link, the previous word adds 0.040 bits per token of held-out
+  predictive information. (PHASE_757)
+- **Word form.** Tokens decompose into prefix, core and ending; the parts interact pairwise and carry no three-way
+  synergy (C1003). Several letter-level regularities are properties of the EVA transcription (single glyphs spelled as
+  letter strings): the bench glyphs ch/sh, the benched gallows and the minim groups (PHASE_754). Longer e-runs are followed
+  more often by y and less often by d, across the script (C1225 as rescoped; PHASE_758).
+- **Grammar.** 49 token classes cover the grammar's own 480-type vocabulary — 69.5% of Currier B tokens; the rest (HT,
+  unclassified) is defined by exclusion. The same classes are used on every Currier B folio. (C121, C124)
+- **Section-level e-depth structure.** Section B paragraphs show a period-2 e-depth alternation (not shown to be a section
+  property independent of paragraph length); a paragraph-channel e-depth gradient (qo > ch > sh). Both reproduce on a
+  second transcription. (C2031, C1967; PHASE_755, PHASE_758)
+- **Transcription reliability.** e-run lengths are read consistently across transcriptions (κ 0.95–0.96, an upper bound
+  since the transcriptions are not independent readings). (PHASE_758)
 
-- **We do not claim exact product identification from tokens alone.** The product chain (quintessence → gold tincture) is established through the *Testamentum*'s cipher key, not through reading Voynich tokens as product names. Without the external text, the tokens would reveal only that one folio's output feeds another folio's input.
+**Reported measurement, not yet registered:** pages on the same bifolium share vocabulary beyond distance and length
+effects while facing pages do not — the reverse of the Aberdeen Bestiary, a normal codex used as a negative control
+(herbal pure-A p = 0.0007; Q13 p = 0.013; Q20 p = 0.017). Registration waits on a second-transcription replication and
+the pre-registered gate. (PHASE_752, PHASE_759)
 
-- **We do not claim text equivalence with the *Testamentum*.** The VMS is not a cipher for the *Testamentum* text. It encodes the same operational CONTENT in a completely different notation system, reorganized for workshop use. The relationship is content correspondence, not textual derivation.
+## 2. Rivals tested and excluded (Tier 2, negative knowledge)
 
-- **We do not claim that operational glosses are proven translations.** When we label an atom "heat" or a category "CONTAINMENT," these are interpretive labels for structurally validated clusters. They are consistent with the domain identification but are not recovered plaintext. (C171)
+- **Naibbe verbose homophonic cipher (Greshko 2025), as published:** excluded on all 64 declared variants (both code
+  versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise
+  settings; 1,000 ciphertexts each). Any cipher proposed for Currier B must reproduce boundary coupling, chance-level
+  repetition, line-position vocabulary and B's low order information. (C2080; PHASE_757)
+- **Timm & Schinner self-citation generation:** excluded. (C2077)
+- **Natural language written one token per word:** excluded (C132, C2015, C2022). **Token ≈ word codes, atom-level
+  polyalphabetic cipher, three published decipherments:** excluded (C1976, C2017).
+- **Tokens produced by walking a table of coordinates:** no signature (C2079).
+- **"Forbidden transitions":** the token-level zero bigrams reduce to line composition, positional zones and boundary
+  coupling under a joint null (C2081, superseding C957); the class-level "17 transitions in 5 hazard classes" was demoted
+  (C783) and its taxonomy found imposed (C2060).
 
-- **We do not claim authorship or provenance proof.** The radiocarbon date (1404-1438) and structural properties are consistent with Central European guild workshop culture, but this is historical interpretation (Tier 3-4), not proof.
+## 3. Open hypotheses
 
-- **We do not claim that all folios are Pseudo-Lullian.** 51 procedural chapters map to 41 folios (50% of 82 Currier B folios). The remaining 41 unmatched folios (mostly Section H herbal pages) use the same grammar and operational vocabulary but have not been matched to specific source chapters. They may correspond to other Pseudo-Lullian texts, herbal distillation traditions, or workshop-specific procedures.
+- **The project's working interpretation (Tier 0, frozen by human sign-off):** Currier B encodes a family of closed-loop,
+  kernel-centric control programs governed by a single shared grammar. The grammar and kernel structure stand; the
+  support formerly drawn from forbidden transitions and hazard classes has been withdrawn (section 2). The wording
+  "narrow viability regime" is flagged for human review.
+- **Content — the Pseudo-Lullian *Testamentum* tradition:** open.
+  - Against the chapter-level matching: a metalwork treatise (Theophilus) matches the same folios (C2052); no source —
+    *Testamentum*, Theophilus or Codicillus — matches the Voynich pages better than its own chapters with the features
+    shuffled; the part → section mapping and recto/verso adjacent-chapter pattern do not appear under automated,
+    similarity-matched testing; the permutation test behind the former "p < 0.001" returns p < 0.01 for random numbers.
+    The chapter → folio assignments and everything inferred from them are Tier 3. (PHASE_762)
+  - Still standing: the parchment date (1404–1438) falls inside the *Testamentum*'s circulation; the imagery; the argument
+    that an execution-level notation should be more detailed than its source recipes; and one specific coincidence —
+    f75r, the only Currier B folio with a four-token repeat (C1889), was paired with III.19, the only SISMEL Catalan
+    sub-recipe mentioning "four times, otherwise nine times" (C2034). That pairing came from the generic matcher and the
+    ×4 feature was noticed afterwards; it needs a prospective test.
+- **Encoding — cipher or notation:** open beyond the excluded classes. Untested: modified or coarser-unit cipher designs
+  (syllable- or word-level codebooks) and the Rugg grille.
 
-- **We do not claim that illustrations carry semantic content.** Illustration-text coupling tests show swap invariance (C138) — the illustrations are orientation aids, not information carriers.
+## 4. What we do not claim
+
+- **No translation.** No token has a demonstrated equivalent in any language. (C171)
+- **No specific source text.** The *Testamentum* correspondence is an open hypothesis (section 3), not a finding.
+- **No operational meanings.** Atom and token glosses (k = heat, `dar` = material introduction, …) are role hypotheses,
+  not recovered meanings.
+- **No "hazard" or "safety" layer.** Withdrawn (section 2).
+- **No closure.** The analysis is not complete; the referents of the notation are not recovered.
+
+## 5. What would change our mind
+
+- A decodable cipher — modified Naibbe, a syllable- or word-level codebook, or another design — that reproduces the four
+  properties in section 2 would reopen the cipher reading for that class and weaken the notation reading.
+- A prospective test in which predictions derived from unexamined recipes are frozen and then confirmed on unexamined
+  folios would move the *Testamentum* reading from open to supported; a failure would weaken it further.
+- A second-transcription failure of the boundary coupling or of the bifolium contrast would retract those measurements.
 
 ---
 
-## What Would Change Our Mind
-
-The structural findings (Tier 0-2) are falsifiable. Here is what would overturn them:
-
-- **A valid natural language decipherment** that produces coherent text in a known language and explains the grammatical regularities. (Would overturn C132)
-- **A demonstration that the statistical patterns arise from a known cipher mechanism** applied to natural language. (Would overturn C207)
-- **Evidence that the 49 instruction classes do not have 100% coverage** — tokens that fall outside all classes. (Would overturn C121)
-- **A folio that uses a different grammar** from the other 82. (Would overturn C124)
-
-The historical identification (Tier 2-3) is more easily revised:
-
-- **A better-fitting source tradition** whose operational features match the 8D feature space more closely than the *Testamentum*. We would adopt it.
-- **Evidence that the *Testamentum* postdates the manuscript's radiocarbon window** (currently compatible: PL tradition active 1330s-1500s, manuscript 1404-1438).
-- **Evidence that the 8D matching features are artifacts of an uncontrolled confound** rather than genuine operational correspondence.
-- **A demonstration that the section-to-book mapping (f75-f84 = Mercuriorum) is coincidental** — e.g., that any 11 contiguous folios would match a single PL book at 8/11 by chance.
-
----
-
-*For the full constraint system, see `context/CLAIMS/INDEX.md`. For the conceptual walkthrough, see [GUIDE.md](GUIDE.md).*
+*Pre-review versions of this document and of GUIDE.md, RECIPE_MATCHING.md and METHODS_AND_TOOLS.md are in the git
+history; the latter three are kept in the repository, marked as pre-review.*

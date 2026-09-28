@@ -4,6 +4,34 @@
 
 ---
 
+## Version 7.23 (2026-09-28) — Review tests PHASE_756–762, Testamentum triage, public docs rewritten
+
+### Summary
+The strategic review's pre-registered tests ran to completion. Two rival generators are now excluded, the
+forbidden-transition layer is withdrawn, the Testamentum chapter matching is triaged to Tier 3, and the public
+documents were rewritten to the current registry.
+
+| Phase | Test | Locked verdict | Registry |
+|---|---|---|---|
+| PHASE_756 | C957 joint null (MCMC; composition + zones + per-section edge counts) | REDUCES (2 zeros vs 1.98, p 0.60; raw residual carried by pairs the F transcription attests) | C957 superseded by C2081; 28 scope notes updated |
+| PHASE_757 | Naibbe rival panel (64 variants × 1,000) | EXCLUDED on all 64 | C2080 (negative knowledge); scope notes C119/C120/C171/C173 |
+| PHASE_758 | e-run family gate | C1225 SEGMENTATION ARTIFACT; e-run reading CONSISTENT; C2031/C1967 TRACK-ROBUST | C1225 rescoped; reliability note on 41 rows; C1957 note |
+| PHASE_759 | Aberdeen Bestiary negative control for the bifolium pipeline | SPECIFIC | Voynich bifolium contrast reported, not registered (gate not met on H) |
+| PHASE_760 | Table-walk signature | NO SIGNATURE | C2079 (negative knowledge) |
+| PHASE_761 | Boundary coupling vs spacing uncertainty (ZL 3b) | ROBUST | C1212/C1563 annotated |
+| PHASE_762 | Testamentum audit (B1–B5) + C2052 triage | B1 NO CORRESPONDENCE; B2, B3 NO EFFECT; B5 flaw confirmed | 20 rows Tier 2 → 3, 13 annotated (human-approved) |
+
+### Other changes
+- README.md and WHAT_WE_CLAIM.md rewritten to the current registry; GUIDE.md, RECIPE_MATCHING.md and
+  METHODS_AND_TOOLS.md marked as pre-review documents.
+- CORE/frozen_conclusion.md, CLAUDE_INDEX.md, MODEL_CONTEXT.md, the crazy-expert stance and the BCSC contract updated for
+  C2080 and C2081. The Tier-0 wording "narrow viability regime" is flagged for human review.
+- Sources: Aberdeen Bestiary corpus and collation (`sources/aberdeen_bestiary/`, transcription text kept local — no
+  licence stated); Naibbe code and supplement cloned under `external/` (git-ignored).
+- Counts: 1,875 live constraints (T0 25, T1 35, T2 1,685, T3 126, T4 4); numbering through C2081; 762 phases.
+
+---
+
 ## Version 7.22 (2026-09-27) — Strategic review (post model upgrade) + registry reconciliation
 
 ### Trigger

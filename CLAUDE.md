@@ -181,11 +181,11 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 7.22 |
-| Constraints | 1873 live in the generated table (T0 25, T1 35, T2 1703, T3 106, T4 4); numbering through C2078 |
-| Phases | 752 (PHASE_752 v1 complete; v2 pending) |
+| Version | 7.23 |
+| Constraints | 1875 live in the generated table (T0 25, T1 35, T2 1685, T3 126, T4 4); numbering through C2081 |
+| Phases | 762 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending) |
 | Folios | 83 (Currier B) |
-| Core model | Internally consistent (PCA-v1); external adversarial tests open — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
+| Core model | Internally consistent (PCA-v1). External tests: Timm (C2077) and Naibbe (C2080) excluded; hazard/forbidden-transition layer withdrawn (C2081); Testamentum chapter matching not evidence (PHASE_762) — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
 | Characterization | ACTIVE |
 
 ---

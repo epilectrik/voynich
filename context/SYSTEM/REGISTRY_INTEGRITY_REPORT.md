@@ -2,9 +2,9 @@
 
 **Generated:** 2026-09-28 by `scripts/registry_integrity_check.py` (regenerate after every registry change).
 
-**Generated table:** LIVE (Tier 0/2) 1708, TIER1 35, DEMOTED (Tier 3/4) 113; registered numbers in INDEX.md: 1888; dead (registered, not in table): 32.
+**Generated table:** LIVE (Tier 0/2) 1688, TIER1 35, DEMOTED (Tier 3/4) 133; registered numbers in INDEX.md: 1888; dead (registered, not in table): 32.
 
-**Citations of non-live constraints in living docs:** 602 (457 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
+**Citations of non-live constraints in living docs:** 623 (478 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
 
 
 ## Unannotated citations by file
@@ -22,30 +22,30 @@
 | context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml | 16 | 0 | 0 |
 | context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml | 15 | 0 | 0 |
 | context/SPECULATIVE/rupescissa_comparative.md | 8 | 7 | 0 |
+| context/SPECULATIVE/encoding_modes.md | 13 | 0 | 0 |
+| context/PROJECT_SYNTHESIS.md | 11 | 0 | 0 |
 | context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml | 10 | 0 | 0 |
 | context/STRUCTURAL_CONTRACTS/brunschwig.brsc.yaml | 5 | 1 | 0 |
-| context/SPECULATIVE/encoding_modes.md | 6 | 0 | 0 |
-| context/CRAZY_EXPERT_STANCE.md | 3 | 0 | 1 |
+| context/CRAZY_EXPERT_STANCE.md | 4 | 0 | 1 |
 | context/SPECULATIVE/HUMAN_COMMUNICATION_MODEL.md | 4 | 0 | 0 |
 | context/SPECULATIVE/middle_distribution_analysis.md | 4 | 0 | 0 |
+| context/SPECULATIVE/section_thermal_architectures.md | 4 | 0 | 0 |
 | context/SPECULATIVE/shared_formalism.md | 2 | 2 | 0 |
 | context/SPECULATIVE/tier3_interface_postures.md | 2 | 2 | 0 |
 | context/SPECULATIVE/apparatus_centric_semantics.md | 1 | 0 | 2 |
 | context/SPECULATIVE/car_observations.md | 3 | 0 | 0 |
 | context/SPECULATIVE/equivalence_class_analysis.md | 1 | 2 | 0 |
 | context/SPECULATIVE/rosettes_workshop_diagram.md | 2 | 1 | 0 |
-| context/PROJECT_SYNTHESIS.md | 2 | 0 | 0 |
 | context/SPECULATIVE/a_behavioral_classification.md | 0 | 2 | 0 |
 | context/SPECULATIVE/ccm_suffix_mapping.md | 2 | 0 | 0 |
 | context/SPECULATIVE/curriculum_realignment.md | 1 | 1 | 0 |
 | context/SPECULATIVE/ecr_material_classes.md | 0 | 0 | 2 |
-| CLAUDE.md | 0 | 1 | 0 |
+| context/SPECULATIVE/engineered_substrate_triad.md | 2 | 0 | 0 |
 | context/CLAUDE_INDEX.md | 1 | 0 | 0 |
 | context/generate_expert_context.py | 0 | 1 | 0 |
 | context/SPECULATIVE/brunschwig_comparison.md | 1 | 0 | 0 |
 | context/SPECULATIVE/gloss_qualifier_key.md | 1 | 0 | 0 |
 | context/SPECULATIVE/process_isomorphism.md | 0 | 1 | 0 |
-| context/SPECULATIVE/section_thermal_architectures.md | 1 | 0 | 0 |
 | context/SPECULATIVE/yale_expert_alignment.md | 0 | 0 | 1 |
 
 ## Most-cited non-live constraints (unannotated)
@@ -60,6 +60,7 @@
 | C936 | DEMOTED | 15 |
 | C470 | DEMOTED | 14 |
 | C1274 | DEMOTED | 12 |
+| C1971 | DEMOTED | 10 |
 | C600 | DEMOTED | 9 |
 | C547 | DEMOTED | 8 |
 | C558 | DEMOTED | 8 |
@@ -91,7 +92,6 @@
 | C1989 | DEMOTED | 3 |
 | C433 | DEAD | 3 |
 | C86 | UNKNOWN | 3 |
-| C87 | UNKNOWN | 3 |
 
 ## Closure-banner lines (unannotated)
 
@@ -101,7 +101,6 @@
 
 ## All unannotated citations
 
-- `CLAUDE.md:185` C2078 [DEAD] — | Constraints | 1873 live in the generated table (T0 25, T1 35, T2 1703, T3 106, T4 4); numbering through C2078 |
 - `context/CLAUDE_INDEX.md:76` C1274 [DEMOTED] — 3. **8 operational categories** (THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, STAGING, MARKING, TRANSITION) organize all four systems (C1250). Categories predict escape dynam
 - `context/MODEL_CONTEXT.md:17` C475 [DEMOTED] — PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrenc
 - `context/MODEL_CONTEXT.md:17` C982 [DEMOTED] — PHASE_748 demoted a 12-constraint family — C475, C476, C642, C755, C756, **C981, C982, C983**, C973, C989, C1014, C1118 (+ C470 downstream) — all the SAME error class: co-occurrenc
@@ -128,8 +127,18 @@
 - `context/MODEL_CONTEXT.md:1077` C936 [DEMOTED] — The ok PREFIX (C936) demonstrates the domain selector principle most clearly: ok+aiin = "check vessel," ok+ar = "close vessel," ok+e = "cool vessel," ok+ai = "open vessel." The MID
 - `context/MODEL_CONTEXT.md:1125` C470 [DEMOTED] — - C468-C470: Statistical correlations locked as Tier 2
 - `context/MODEL_CONTEXT.md:1146` C475 [DEMOTED] — - Enforces compatibility at specification level (C442, C475)
+- `context/PROJECT_SYNTHESIS.md:103` C1971 [DEMOTED] — ### Cold-read framework (C1971-C1976)
+- `context/PROJECT_SYNTHESIS.md:103` C1972 [DEMOTED] — ### Cold-read framework (C1971-C1976)
+- `context/PROJECT_SYNTHESIS.md:103` C1973 [DEMOTED] — ### Cold-read framework (C1971-C1976)
+- `context/PROJECT_SYNTHESIS.md:103` C1974 [DEMOTED] — ### Cold-read framework (C1971-C1976)
+- `context/PROJECT_SYNTHESIS.md:103` C1975 [DEMOTED] — ### Cold-read framework (C1971-C1976)
 - `context/PROJECT_SYNTHESIS.md:111` C1965 [DEMOTED] — **The cardinality anchor convergence** (C1965, C1969, C1989, C2034): f75r contains the corpus-singular 4-qokedy run (C1889), and III.19.0 is the unique Catalan recipe with both ×4 
+- `context/PROJECT_SYNTHESIS.md:111` C1969 [DEMOTED] — **The cardinality anchor convergence** (C1965, C1969, C1989, C2034): f75r contains the corpus-singular 4-qokedy run (C1889), and III.19.0 is the unique Catalan recipe with both ×4 
 - `context/PROJECT_SYNTHESIS.md:111` C1989 [DEMOTED] — **The cardinality anchor convergence** (C1965, C1969, C1989, C2034): f75r contains the corpus-singular 4-qokedy run (C1889), and III.19.0 is the unique Catalan recipe with both ×4 
+- `context/PROJECT_SYNTHESIS.md:220` C1971 [DEMOTED] — 8. **No external-corpus alignment that produces positive decode.** Pseudo-Lull operational-class match (C1971) is operational, not text-level.
+- `context/PROJECT_SYNTHESIS.md:327` C1971 [DEMOTED] — | `phases/RECIPE_FOLIO_CORRESPONDENCE/` | C1971 cold-read catalog and supporting work |
+- `context/PROJECT_SYNTHESIS.md:337` C1971 [DEMOTED] — > Voynich Manuscript Project synthesis as of 2026-05-18, v6.71, 2035 validated constraints. Substrate-distinctness established at 5 measurement axes (C2015, C2022, C2032, C2036, C2
+- `context/CRAZY_EXPERT_STANCE.md:23` C1969 [DEMOTED] — - **Source correction:** III.19 reads "per quatre vegades ALITER ix vegades" = "four times, otherwise nine times" (scan-verified; "e aprés ix vegades" was an OCR splice). ×4/×9 are
 - `context/CRAZY_EXPERT_STANCE.md:46` C458 [DEMOTED] — - **Use C1404-C1407 (section and paragraph AXM drivers)** — Sections are REGIME ALLOCATION POLICIES (V=0.573, 7.4x next effect). Section B = 100% REGIME_1; C and T = 0% REGIME_1. P
 - `context/CRAZY_EXPERT_STANCE.md:84` C1584 [DEMOTED] — - **Use C1581-C1587 (virtual apparatus coupling)** — Phase 563: The hierarchical supervisory trace COUPLED to a virtual thermal apparatus model (3 profiles A1/A2/A3, 7 plant state 
 - `context/CRAZY_EXPERT_STANCE.md:84` C1587 [DEMOTED] — - **Use C1581-C1587 (virtual apparatus coupling)** — Phase 563: The hierarchical supervisory trace COUPLED to a virtual thermal apparatus model (3 profiles A1/A2/A3, 7 plant state 
@@ -404,12 +413,21 @@
 - `context/SPECULATIVE/ecr_synthesis.md:162` C102 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C106 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
 - `context/SPECULATIVE/ecr_synthesis.md:162` C108 [UNKNOWN] — | C085-C108 (kernel) | ECR-2 | Apparatus roles map to kernel operators |
+- `context/SPECULATIVE/encoding_modes.md:29` C1971 [DEMOTED] — This matches Section B's matched recipes per C1971: stir-and-check rhythms, alternating apparatus phases, multi-step distillation with thermal modulation between phases. The therma
+- `context/SPECULATIVE/encoding_modes.md:33` C1971 [DEMOTED] — This matches Mercuriorum chapter structure per C1971/C1927: each chapter step is a discrete operational specification, not a continuous thermal trajectory. matched-S folios show hi
+- `context/SPECULATIVE/encoding_modes.md:33` C1927 [DEMOTED] — This matches Mercuriorum chapter structure per C1971/C1927: each chapter step is a discrete operational specification, not a continuous thermal trajectory. matched-S folios show hi
 - `context/SPECULATIVE/encoding_modes.md:33` C1995 [DEMOTED] — This matches Mercuriorum chapter structure per C1971/C1927: each chapter step is a discrete operational specification, not a continuous thermal trajectory. matched-S folios show hi
 - `context/SPECULATIVE/encoding_modes.md:39` C1995 [DEMOTED] — - Section B vs Section S operational divergence: C1995 (revised), C2028
+- `context/SPECULATIVE/encoding_modes.md:40` C1971 [DEMOTED] — - Mercuriorum chapter structure: C1971, C1927, C1936
+- `context/SPECULATIVE/encoding_modes.md:40` C1927 [DEMOTED] — - Mercuriorum chapter structure: C1971, C1927, C1936
+- `context/SPECULATIVE/encoding_modes.md:40` C1936 [DEMOTED] — - Mercuriorum chapter structure: C1971, C1927, C1936
 - `context/SPECULATIVE/encoding_modes.md:57` C1995 [DEMOTED] — This interpretation, if validated, would refine C1995 substantially:
 - `context/SPECULATIVE/encoding_modes.md:59` C1995 [DEMOTED] — - C1995 (revised 2026-05-04): "S = operational-compactness via near-relative dominance; B = operational-alternation via cross-PREFIX anti-correlation." Three-tier decomposition tes
 - `context/SPECULATIVE/encoding_modes.md:61` C1995 [DEMOTED] — - Encoding-modes interpretation (this note): C1995's "operational-compactness" in S maps to instruction-encoding (self-contained operational specs); C1995's "operational-alternatio
 - `context/SPECULATIVE/encoding_modes.md:61` C1995 [DEMOTED] — - Encoding-modes interpretation (this note): C1995's "operational-compactness" in S maps to instruction-encoding (self-contained operational specs); C1995's "operational-alternatio
+- `context/SPECULATIVE/encoding_modes.md:85` C1971 [DEMOTED] — - C1971 (matched-folio catalog — Mercuriorum attribution basis)
+- `context/SPECULATIVE/engineered_substrate_triad.md:62` C1971 [DEMOTED] — - **Not a claim that Voynich isn't language.** The C2015/C2022/C2032 results say Voynich differs from NL on three measurement axes. They do NOT say it carries no meaning, has no gr
+- `context/SPECULATIVE/engineered_substrate_triad.md:74` C1971 [DEMOTED] — 3. **The "what is Voynich for" question stays open.** The triad establishes structural distinctness; it does not determine purpose. C1394 atom system, C1971 source-matching, and ot
 - `context/SPECULATIVE/equivalence_class_analysis.md:36` C476 [DEAD] — - C476/C478 (coverage + scheduling)
 - `context/SPECULATIVE/equivalence_class_analysis.md:63` C476 [DEAD] — - Coverage optimality (C476)
 - `context/SPECULATIVE/equivalence_class_analysis.md:181` C458 [DEMOTED] — - C458 (design clamp vs recovery freedom)
@@ -548,6 +566,9 @@
 - `context/SPECULATIVE/rupescissa_comparative.md:396` C458 [DEMOTED] — **Enhancement:** The progression PROHIBIT → RESTRICT → ENGINEER (Phase 375) is the key finding. The Galenic system says "this is dangerous." Brunschwig says "don't do this." The Vo
 - `context/SPECULATIVE/rupescissa_comparative.md:437` C475 [DEMOTED] — 5. **Tier 4 throughout.** Every enhancement mapping requires accepting the Galenic interpretive frame. The Voynich-side constraints (C109, C121, C475, C995, C997, C982, C1053) are 
 - `context/SPECULATIVE/rupescissa_comparative.md:437` C982 [DEMOTED] — 5. **Tier 4 throughout.** Every enhancement mapping requires accepting the Galenic interpretive frame. The Voynich-side constraints (C109, C121, C475, C995, C997, C982, C1053) are 
+- `context/SPECULATIVE/section_thermal_architectures.md:51` C1925 [DEMOTED] — - **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928). Multi-step alchemical procedures with explicit thermal-re
+- `context/SPECULATIVE/section_thermal_architectures.md:51` C1926 [DEMOTED] — - **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928). Multi-step alchemical procedures with explicit thermal-re
+- `context/SPECULATIVE/section_thermal_architectures.md:51` C1927 [DEMOTED] — - **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928). Multi-step alchemical procedures with explicit thermal-re
 - `context/SPECULATIVE/section_thermal_architectures.md:51` C1928 [DEMOTED] — - **Section B** matches the multi-step alchemical recipes of Pseudo-Lull's *Testamentum* (already validated, C1924-C1928). Multi-step alchemical procedures with explicit thermal-re
 - `context/SPECULATIVE/shared_formalism.md:57` C458 [DEMOTED] — | Clamping Magnitude (C458) | 5/5 tests | **PASS** |
 - `context/SPECULATIVE/shared_formalism.md:118` C458 [DEMOTED] — ### Clamping Signature (C458)

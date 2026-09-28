@@ -1,5 +1,7 @@
 # Understanding the Voynich Manuscript: A Guide
 
+> **Pre-review document (May 2026), kept for traceability.** Several claims below were withdrawn or rescoped in the September 2026 review — notably the *Testamentum* chapter → folio matching (not evidence: PHASE_762, C2052), the "17 forbidden transitions / 5 hazard classes" layer (C783, C2060, C2081), "100% coverage" (69.5% of tokens), and the atom glosses as fixed meanings. For the current position see [README.md](README.md) and [WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md).
+
 This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes. Everything here is grounded in statistical evidence from the transcript data.
 
 For the definitive technical reference, see **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)**. For claims and limits, see **[WHAT_WE_CLAIM.md](WHAT_WE_CLAIM.md)**.
