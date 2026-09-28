@@ -1,0 +1,18 @@
+{
+  "n_folios": 82,
+  "observed_corpus_max": 4,
+  "folios_ge4": [
+    "f75r"
+  ],
+  "n_ge4": 1,
+  "n_ge3": 7,
+  "p_corpus": 0.0971,
+  "p_self_f75r": 0.0039,
+  "null_corpus_max_mean": 3.0626,
+  "null_corpus_max_max": 6,
+  "exp_folios_ge4": 0.1028,
+  "exp_folios_ge3": 3.2606,
+  "kill_threshold": 0.05,
+  "verdict": "KILL",
+  "N": 10000
+}

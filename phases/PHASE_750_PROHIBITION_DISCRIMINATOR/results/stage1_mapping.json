@@ -1,0 +1,198 @@
+[
+  {
+    "id": "item_2018",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "LA"
+  },
+  {
+    "id": "item_2008",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "LA"
+  },
+  {
+    "id": "item_2000",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2012",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2006",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2020",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "CA"
+  },
+  {
+    "id": "item_2027",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2022",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2009",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2014",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2011",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2016",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2003",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2007",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2019",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2013",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2017",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "CA"
+  },
+  {
+    "id": "item_2004",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2026",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2010",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "LA"
+  },
+  {
+    "id": "item_2023",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "CA"
+  },
+  {
+    "id": "item_2015",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2025",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2005",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2024",
+    "corpus": "BRUNSCHWIG",
+    "process": "distillation",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2002",
+    "corpus": "THEOPHILUS",
+    "process": "metalwork",
+    "register": "practical",
+    "language": "EN"
+  },
+  {
+    "id": "item_2001",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "LA"
+  },
+  {
+    "id": "item_2021",
+    "corpus": "TESTAMENTUM",
+    "process": "distillation",
+    "register": "secret",
+    "language": "CA"
+  }
+]

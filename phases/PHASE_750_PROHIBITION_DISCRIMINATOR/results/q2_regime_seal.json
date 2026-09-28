@@ -1,0 +1,22 @@
+{
+  "n_pairs": 561,
+  "late_early_total": 26,
+  "le_by_regime": {
+    "REGIME_1": 19,
+    "REGIME_2": 5,
+    "REGIME_3": 1,
+    "REGIME_4": 1
+  },
+  "pairs_by_regime": {
+    "REGIME_1": 415,
+    "REGIME_2": 105,
+    "REGIME_3": 14,
+    "REGIME_4": 27
+  },
+  "aii_folios_by_regime": {
+    "REGIME_1": 0,
+    "REGIME_2": 0,
+    "REGIME_3": 0,
+    "REGIME_4": 0
+  }
+}
