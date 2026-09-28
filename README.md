@@ -44,10 +44,11 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 ## Open hypotheses
 
 - **Working interpretation (the project's Tier-0 conclusion, frozen by human sign-off):** *Currier B encodes a family of
-  closed-loop, kernel-centric control programs governed by a single shared grammar.* It rests on the grammar and kernel
-  structure. Its former support from "forbidden transitions" has been withdrawn — the class-level hazard topology was
-  demoted and the token-level zeros reduce to line composition, positions and boundary coupling (C783, C2060, C2063,
-  C2081) — and the wording "narrow viability regime" is flagged for human review.
+  closed-loop, kernel-centric control programs, governed by a single shared grammar.* It rests on the grammar and
+  kernel structure. On 2026-09-28 the clause "designed to maintain a system within a narrow viability regime" was
+  struck: its support from "forbidden transitions" was withdrawn — the class-level hazard topology was demoted and the
+  token-level zeros reduce to line composition, positions and boundary coupling (C783, C2060, C2063, C2081). The
+  remaining sentence stands pending a re-check of its kernel and closed-loop pillars.
 - **Content: the Pseudo-Lullian *Testamentum* tradition.** Open. The chapter-level recipe matching did not survive
   controls: a metalwork treatise matches the same folios (C2052), no source matches better than its own shuffled
   features, the section mapping and recto/verso adjacency do not reproduce, and the headline permutation test was

@@ -4,7 +4,7 @@
 
 **Generated table:** LIVE (Tier 0/2) 1688, TIER1 35, DEMOTED (Tier 3/4) 133; registered numbers in INDEX.md: 1888; dead (registered, not in table): 32.
 
-**Citations of non-live constraints in living docs:** 623 (478 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
+**Citations of non-live constraints in living docs:** 625 (478 without a nearby annotation).  **Unannotated closure-banner lines:** 3.
 
 
 ## Unannotated citations by file

@@ -57,8 +57,9 @@ the pre-registered gate. (PHASE_752, PHASE_759)
 
 - **The project's working interpretation (Tier 0, frozen by human sign-off):** Currier B encodes a family of closed-loop,
   kernel-centric control programs governed by a single shared grammar. The grammar and kernel structure stand; the
-  support formerly drawn from forbidden transitions and hazard classes has been withdrawn (section 2). The wording
-  "narrow viability regime" is flagged for human review.
+  clause "designed to maintain a system within a narrow viability regime" was struck on 2026-09-28 because its support
+  from forbidden transitions and hazard classes was withdrawn (section 2). The rest stands pending a re-check of its
+  kernel and closed-loop pillars.
 - **Content — the Pseudo-Lullian *Testamentum* tradition:** open.
   - Against the chapter-level matching: a metalwork treatise (Theophilus) matches the same folios (C2052); no source —
     *Testamentum*, Theophilus or Codicillus — matches the Voynich pages better than its own chapters with the features

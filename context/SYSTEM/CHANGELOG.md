@@ -29,6 +29,7 @@ documents were rewritten to the current registry.
 - Sources: Aberdeen Bestiary corpus and collation (`sources/aberdeen_bestiary/`, transcription text kept local — no
   licence stated); Naibbe code and supplement cloned under `external/` (git-ignored).
 - Counts: 1,875 live constraints (T0 25, T1 35, T2 1,685, T3 126, T4 4); numbering through C2081; 762 phases.
+- **Tier-0 amendment (human-delegated sign-off, 2026-09-28):** the clause "designed to maintain a system within a narrow viability regime" was struck from the frozen conclusion because its support (forbidden transitions, hazard classes, convergence) was withdrawn (C783, C2060, C2063, C2081, C1401–C1403). The sentence now reads: "The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs, governed by a single shared grammar" — pending a re-check of its kernel and closed-loop pillars.
 
 ---
 

@@ -413,7 +413,7 @@ Currier B (61.9% of tokens, 83 folios) encodes executable control programs. This
 
 ### Closed-Loop Process Control
 
-Programs maintain a system within a narrow viability regime through continuous feedback. They are NOT:
+Programs are read as closed-loop control (the "narrow viability regime" wording was struck from Tier 0 on 2026-09-28 — its forbidden-transition support was withdrawn, C2081). They are NOT:
 - Batch recipes (do X, then Y, then Z)
 - Decision trees (if X then Y)
 - State machines (discrete transitions)

@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-09-28 11:26
+**Generated:** 2026-09-28 11:31
 **Version:** Tier 0 frozen pending external adversarial tests; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---

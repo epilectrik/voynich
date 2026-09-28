@@ -205,7 +205,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-28 11:26
+**Generated:** 2026-09-28 11:31
 **Version:** Tier 0 frozen pending external adversarial tests; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -239,7 +239,7 @@ tables are quarantined — do not use for structural answers.
 
 ## Project Identity (Tier 0)
 
-The Voynich Manuscript's Currier B text (61.9% of tokens, 83 folios) encodes a family of **closed-loop, kernel-centric control programs** designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
+The Voynich Manuscript's Currier B text (61.9% of tokens, 83 folios) encodes a family of **closed-loop, kernel-centric control programs**, governed by a single shared grammar (Tier 0; the "narrow viability regime" clause was struck 2026-09-28 — its support was withdrawn).
 
 Not natural language written one token per word; the cipher classes tested so far are excluded, including the Naibbe verbose homophonic cipher as published (PHASE_757, C2080); other sub-lexical designs remain untested. Working reading: a control-system reference manual.
 

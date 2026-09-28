@@ -192,9 +192,9 @@ Use these to verify your filtering is correct:
 
 ## Frozen Conclusion (Tier 0)
 
-> The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
+> The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs, governed by a single shared grammar.
 
-**Status (2026-09-27):** frozen by human sign-off, but its distinctive signatures have faced two external generators: Timm & Schinner (C2077) and the Naibbe verbose homophonic cipher as published (C2080, excluded on all 64 variants, 2026-09-28). Further rival-generator tests (Rugg grille, modified cipher designs) and a transliteration/glyph-unit invariance audit are the current forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
+**Amended 2026-09-28 (human-delegated sign-off):** the clause "designed to maintain a system within a narrow viability regime" was struck. Its support — forbidden transitions, hazard classes and convergence — has been withdrawn (C783 demoted; C2060 taxonomy imposed; C2063 counts 13 class-level violations; C2081 reduces the token-level zeros to line composition, positional zones and boundary coupling; convergence is occupancy, C1401–C1403). The remaining sentence stands pending a re-check of its kernel and closed-loop pillars. External tests so far: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded. Forward plan: `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md`.
 
 ---
 

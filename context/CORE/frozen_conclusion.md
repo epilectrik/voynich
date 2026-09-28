@@ -6,7 +6,9 @@
 
 ## The Core Finding
 
-> **The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs designed to maintain a system within a narrow viability regime, governed by a single shared grammar.**
+> **The Voynich Manuscript's Currier B text encodes a family of closed-loop, kernel-centric control programs, governed by a single shared grammar.**
+
+**Amended 2026-09-28 (human-delegated sign-off):** the clause "designed to maintain a system within a narrow viability regime" was struck. Its support — forbidden transitions, hazard classes and convergence — has been withdrawn (C783 demoted; C2060 taxonomy imposed; C2063 counts 13 class-level violations; C2081 reduces the token-level zeros to line composition, positional zones and boundary coupling; convergence is occupancy, C1401–C1403). The remaining sentence stands pending a re-check of its kernel and closed-loop pillars. External tests so far: Timm & Schinner (C2077) and the Naibbe cipher as published (C2080) excluded.
 
 This conclusion rests on the internal structure of the text and was frozen by human sign-off.
 
@@ -39,7 +41,7 @@ Three operators (k, h, e) form the control core:
 - **h** = PHASE_MANAGER (manage phase transitions)
 - **e** = STABILITY_ANCHOR (maintain stable state, 54.7% of recovery paths)
 
-### Narrow Viability Regime
+### ~~Narrow Viability Regime~~ (struck from the Tier-0 sentence 2026-09-28)
 The system operates within tight bounds. [Corrected 2026-09-27/28: there is no surviving evidence of forbidden transitions beyond known effects — the class level is demoted (C783; C2063 counts 13 violations) and the token-level zeros reduce to line composition, positional zones and boundary glyph coupling (C2081). The tight bounds that remain are the measured properties: boundary coupling, positional vocabulary, prefix alternation.]
 
 ### Single Shared Grammar
