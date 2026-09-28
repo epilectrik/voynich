@@ -1,0 +1,51 @@
+{
+  "method": "PHASE_726 Phase 638 language audit",
+  "matcher_input_file": "testamentum_complete_english.txt",
+  "matcher_regex_source": "pl_channel_features.py \u2014 English keyword patterns",
+  "corpus_sizes": {
+    "english_testamentum": 162238,
+    "latin_testamentum": 121322,
+    "sismel_latin_catalan": 341572
+  },
+  "english_regex_hits": {
+    "english_testamentum": 1500,
+    "latin_testamentum": 16,
+    "sismel": 24
+  },
+  "latin_regex_hits": {
+    "english_testamentum": 74,
+    "latin_testamentum": 1327,
+    "sismel": 1576
+  },
+  "english_regex_top_terms_in_english_text": {
+    "fire": 718,
+    "heat": 420,
+    "degree": 80,
+    "strong": 50,
+    "furnace": 46,
+    "bath": 33,
+    "ashes": 29,
+    "gentle": 25,
+    "digestion h": 14,
+    "heats": 11,
+    "balneum": 7,
+    "charcoal": 7,
+    "heated": 7,
+    "cupel": 7,
+    "slow": 6,
+    "heating": 6,
+    "crucible": 6,
+    "moderate": 5,
+    "dung": 4,
+    "sand": 3
+  },
+  "english_regex_top_terms_in_latin_text": {
+    "cinericium": 6,
+    "fire": 3,
+    "furnace": 2,
+    "balneum": 2,
+    "degree": 1,
+    "heat": 1,
+    "athanor": 1
+  }
+}

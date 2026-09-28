@@ -1,0 +1,603 @@
+{
+  "method": "PHASE_727 audit of exact-count signature matches",
+  "n_currier_b_folios": 82,
+  "verification": {
+    "f84r_dar": {
+      "folio": "f84r",
+      "feature": "dar",
+      "claimed": 13,
+      "actual": 13,
+      "match": true
+    },
+    "f84v_dar": {
+      "folio": "f84v",
+      "feature": "dar",
+      "claimed": 4,
+      "actual": 4,
+      "match": true
+    },
+    "f84v_dal": {
+      "folio": "f84v",
+      "feature": "dal",
+      "claimed": 1,
+      "actual": 1,
+      "match": true
+    },
+    "f84v_cs": {
+      "folio": "f84v",
+      "feature": "cs",
+      "claimed": 2,
+      "actual": 3,
+      "match": false
+    },
+    "f84v_lch": {
+      "folio": "f84v",
+      "feature": "lch",
+      "claimed": 3,
+      "actual": 3,
+      "match": true
+    },
+    "f75r_dar": {
+      "folio": "f75r",
+      "feature": "dar",
+      "claimed": 10,
+      "actual": 10,
+      "match": true
+    },
+    "f76r_dar": {
+      "folio": "f76r",
+      "feature": "dar",
+      "claimed": 7,
+      "actual": 7,
+      "match": true
+    },
+    "f82r_dar": {
+      "folio": "f82r",
+      "feature": "dar",
+      "claimed": 1,
+      "actual": 1,
+      "match": true
+    },
+    "f112r_dar": {
+      "folio": "f112r",
+      "feature": "dar",
+      "claimed": 0,
+      "actual": 0,
+      "match": true
+    },
+    "f108r_dar": {
+      "folio": "f108r",
+      "feature": "dar",
+      "claimed": 0,
+      "actual": 0,
+      "match": true
+    },
+    "f115v_dar": {
+      "folio": "f115v",
+      "feature": "dar",
+      "claimed": 0,
+      "actual": 0,
+      "match": true
+    },
+    "f115v_dal": {
+      "folio": "f115v",
+      "feature": "dal",
+      "claimed": 0,
+      "actual": 0,
+      "match": true
+    },
+    "f115v_lch": {
+      "folio": "f115v",
+      "feature": "lch",
+      "claimed": 4,
+      "actual": 5,
+      "match": false
+    },
+    "f115v_eed": {
+      "folio": "f115v",
+      "feature": "eed",
+      "claimed": 7,
+      "actual": 8,
+      "match": false
+    },
+    "f114r_dar": {
+      "folio": "f114r",
+      "feature": "dar",
+      "claimed": 2,
+      "actual": 2,
+      "match": true
+    },
+    "f114r_daiin": {
+      "folio": "f114r",
+      "feature": "daiin",
+      "claimed": 11,
+      "actual": 11,
+      "match": true
+    },
+    "f114r_eed": {
+      "folio": "f114r",
+      "feature": "eed",
+      "claimed": 8,
+      "actual": 10,
+      "match": false
+    },
+    "f114v_dar": {
+      "folio": "f114v",
+      "feature": "dar",
+      "claimed": 2,
+      "actual": 2,
+      "match": true
+    },
+    "f114v_daiin": {
+      "folio": "f114v",
+      "feature": "daiin",
+      "claimed": 6,
+      "actual": 6,
+      "match": true
+    },
+    "f114v_eed": {
+      "folio": "f114v",
+      "feature": "eed",
+      "claimed": 3,
+      "actual": 3,
+      "match": true
+    },
+    "f114v_cth": {
+      "folio": "f114v",
+      "feature": "cth",
+      "claimed": 3,
+      "actual": 3,
+      "match": true
+    },
+    "f106v_fch": {
+      "folio": "f106v",
+      "feature": "fch",
+      "claimed": 2,
+      "actual": 2,
+      "match": true
+    },
+    "f113r_fch": {
+      "folio": "f113r",
+      "feature": "fch",
+      "claimed": 4,
+      "actual": 2,
+      "match": false
+    },
+    "f111r_dar": {
+      "folio": "f111r",
+      "feature": "dar",
+      "claimed": 2,
+      "actual": 2,
+      "match": true
+    },
+    "f111r_dal": {
+      "folio": "f111r",
+      "feature": "dal",
+      "claimed": 2,
+      "actual": 2,
+      "match": true
+    },
+    "f106r_dar": {
+      "folio": "f106r",
+      "feature": "dar",
+      "claimed": 2,
+      "actual": 2,
+      "match": true
+    },
+    "f106r_eed": {
+      "folio": "f106r",
+      "feature": "eed",
+      "claimed": 2,
+      "actual": 3,
+      "match": false
+    }
+  },
+  "distributions": {
+    "dar": {
+      "mean": 2.292682926829268,
+      "max": 13,
+      "n_zero": 17,
+      "n_pos": 65,
+      "value_counts": {
+        "2": 19,
+        "1": 18,
+        "0": 17,
+        "3": 12,
+        "5": 6,
+        "4": 5,
+        "10": 2,
+        "6": 1,
+        "7": 1,
+        "13": 1
+      }
+    },
+    "dal": {
+      "mean": 1.5853658536585367,
+      "max": 10,
+      "n_zero": 29,
+      "n_pos": 53,
+      "value_counts": {
+        "0": 29,
+        "1": 23,
+        "2": 10,
+        "3": 8,
+        "5": 5,
+        "4": 4,
+        "6": 2,
+        "10": 1
+      }
+    },
+    "daiin": {
+      "mean": 3.8292682926829267,
+      "max": 13,
+      "n_zero": 6,
+      "n_pos": 76,
+      "value_counts": {
+        "3": 16,
+        "2": 12,
+        "1": 11,
+        "5": 10,
+        "4": 9,
+        "0": 6,
+        "6": 6,
+        "7": 4,
+        "11": 3,
+        "8": 2,
+        "9": 1,
+        "10": 1,
+        "13": 1
+      }
+    },
+    "cs": {
+      "mean": 0.25609756097560976,
+      "max": 3,
+      "n_zero": 66,
+      "n_pos": 16,
+      "value_counts": {
+        "0": 66,
+        "1": 13,
+        "3": 2,
+        "2": 1
+      }
+    },
+    "fch": {
+      "mean": 0.34146341463414637,
+      "max": 2,
+      "n_zero": 58,
+      "n_pos": 24,
+      "value_counts": {
+        "0": 58,
+        "1": 20,
+        "2": 4
+      }
+    },
+    "lch": {
+      "mean": 1.2317073170731707,
+      "max": 8,
+      "n_zero": 39,
+      "n_pos": 43,
+      "value_counts": {
+        "0": 39,
+        "1": 17,
+        "2": 14,
+        "3": 5,
+        "5": 4,
+        "8": 1,
+        "7": 1,
+        "6": 1
+      }
+    },
+    "eed": {
+      "mean": 1.2560975609756098,
+      "max": 10,
+      "n_zero": 42,
+      "n_pos": 40,
+      "value_counts": {
+        "0": 42,
+        "1": 19,
+        "3": 8,
+        "2": 5,
+        "4": 2,
+        "6": 2,
+        "7": 1,
+        "5": 1,
+        "10": 1,
+        "8": 1
+      }
+    },
+    "cth": {
+      "mean": 1.829268292682927,
+      "max": 8,
+      "n_zero": 25,
+      "n_pos": 57,
+      "value_counts": {
+        "0": 25,
+        "1": 22,
+        "2": 12,
+        "3": 10,
+        "4": 4,
+        "5": 3,
+        "8": 3,
+        "6": 2,
+        "7": 1
+      }
+    },
+    "ro": {
+      "mean": 0.3780487804878049,
+      "max": 4,
+      "n_zero": 61,
+      "n_pos": 21,
+      "value_counts": {
+        "0": 61,
+        "1": 15,
+        "2": 3,
+        "3": 2,
+        "4": 1
+      }
+    },
+    "ir": {
+      "mean": 0.0,
+      "max": 0,
+      "n_zero": 82,
+      "n_pos": 0,
+      "value_counts": {
+        "0": 82
+      }
+    }
+  },
+  "specificity_per_claim": {
+    "f84r_dar": {
+      "folio": "f84r",
+      "feature": "dar",
+      "claimed": 13,
+      "n_folios_with_this_count": 1,
+      "pct_of_corpus": 1.2195121951219512
+    },
+    "f84v_dar": {
+      "folio": "f84v",
+      "feature": "dar",
+      "claimed": 4,
+      "n_folios_with_this_count": 5,
+      "pct_of_corpus": 6.097560975609756
+    },
+    "f84v_dal": {
+      "folio": "f84v",
+      "feature": "dal",
+      "claimed": 1,
+      "n_folios_with_this_count": 23,
+      "pct_of_corpus": 28.048780487804876
+    },
+    "f84v_cs": {
+      "folio": "f84v",
+      "feature": "cs",
+      "claimed": 2,
+      "n_folios_with_this_count": 1,
+      "pct_of_corpus": 1.2195121951219512
+    },
+    "f84v_lch": {
+      "folio": "f84v",
+      "feature": "lch",
+      "claimed": 3,
+      "n_folios_with_this_count": 5,
+      "pct_of_corpus": 6.097560975609756
+    },
+    "f75r_dar": {
+      "folio": "f75r",
+      "feature": "dar",
+      "claimed": 10,
+      "n_folios_with_this_count": 2,
+      "pct_of_corpus": 2.4390243902439024
+    },
+    "f76r_dar": {
+      "folio": "f76r",
+      "feature": "dar",
+      "claimed": 7,
+      "n_folios_with_this_count": 1,
+      "pct_of_corpus": 1.2195121951219512
+    },
+    "f82r_dar": {
+      "folio": "f82r",
+      "feature": "dar",
+      "claimed": 1,
+      "n_folios_with_this_count": 18,
+      "pct_of_corpus": 21.951219512195124
+    },
+    "f112r_dar": {
+      "folio": "f112r",
+      "feature": "dar",
+      "claimed": 0,
+      "n_folios_with_this_count": 17,
+      "pct_of_corpus": 20.73170731707317
+    },
+    "f108r_dar": {
+      "folio": "f108r",
+      "feature": "dar",
+      "claimed": 0,
+      "n_folios_with_this_count": 17,
+      "pct_of_corpus": 20.73170731707317
+    },
+    "f115v_dar": {
+      "folio": "f115v",
+      "feature": "dar",
+      "claimed": 0,
+      "n_folios_with_this_count": 17,
+      "pct_of_corpus": 20.73170731707317
+    },
+    "f115v_dal": {
+      "folio": "f115v",
+      "feature": "dal",
+      "claimed": 0,
+      "n_folios_with_this_count": 29,
+      "pct_of_corpus": 35.36585365853659
+    },
+    "f115v_eed": {
+      "folio": "f115v",
+      "feature": "eed",
+      "claimed": 7,
+      "n_folios_with_this_count": 1,
+      "pct_of_corpus": 1.2195121951219512
+    },
+    "f115v_lch": {
+      "folio": "f115v",
+      "feature": "lch",
+      "claimed": 4,
+      "n_folios_with_this_count": 0,
+      "pct_of_corpus": 0.0
+    },
+    "f114r_eed": {
+      "folio": "f114r",
+      "feature": "eed",
+      "claimed": 8,
+      "n_folios_with_this_count": 1,
+      "pct_of_corpus": 1.2195121951219512
+    },
+    "f114r_daiin": {
+      "folio": "f114r",
+      "feature": "daiin",
+      "claimed": 11,
+      "n_folios_with_this_count": 3,
+      "pct_of_corpus": 3.658536585365854
+    },
+    "f114r_dar": {
+      "folio": "f114r",
+      "feature": "dar",
+      "claimed": 2,
+      "n_folios_with_this_count": 19,
+      "pct_of_corpus": 23.170731707317074
+    },
+    "f114v_dar": {
+      "folio": "f114v",
+      "feature": "dar",
+      "claimed": 2,
+      "n_folios_with_this_count": 19,
+      "pct_of_corpus": 23.170731707317074
+    },
+    "f114v_daiin": {
+      "folio": "f114v",
+      "feature": "daiin",
+      "claimed": 6,
+      "n_folios_with_this_count": 6,
+      "pct_of_corpus": 7.317073170731708
+    },
+    "f114v_cth": {
+      "folio": "f114v",
+      "feature": "cth",
+      "claimed": 3,
+      "n_folios_with_this_count": 10,
+      "pct_of_corpus": 12.195121951219512
+    },
+    "f114v_eed": {
+      "folio": "f114v",
+      "feature": "eed",
+      "claimed": 3,
+      "n_folios_with_this_count": 8,
+      "pct_of_corpus": 9.75609756097561
+    },
+    "f106v_fch": {
+      "folio": "f106v",
+      "feature": "fch",
+      "claimed": 2,
+      "n_folios_with_this_count": 4,
+      "pct_of_corpus": 4.878048780487805
+    },
+    "f113r_fch": {
+      "folio": "f113r",
+      "feature": "fch",
+      "claimed": 4,
+      "n_folios_with_this_count": 0,
+      "pct_of_corpus": 0.0
+    },
+    "f111r_dar": {
+      "folio": "f111r",
+      "feature": "dar",
+      "claimed": 2,
+      "n_folios_with_this_count": 19,
+      "pct_of_corpus": 23.170731707317074
+    },
+    "f111r_dal": {
+      "folio": "f111r",
+      "feature": "dal",
+      "claimed": 2,
+      "n_folios_with_this_count": 10,
+      "pct_of_corpus": 12.195121951219512
+    },
+    "f106r_dar": {
+      "folio": "f106r",
+      "feature": "dar",
+      "claimed": 2,
+      "n_folios_with_this_count": 19,
+      "pct_of_corpus": 23.170731707317074
+    },
+    "f106r_eed": {
+      "folio": "f106r",
+      "feature": "eed",
+      "claimed": 2,
+      "n_folios_with_this_count": 5,
+      "pct_of_corpus": 6.097560975609756
+    }
+  },
+  "joint_specificity": {
+    "f84v": {
+      "features": {
+        "dar": 4,
+        "dal": 1,
+        "cs": 2,
+        "lch": 3
+      },
+      "n_matches": 0,
+      "matching_folios": []
+    },
+    "f115v": {
+      "features": {
+        "dar": 0,
+        "dal": 0,
+        "eed": 7,
+        "lch": 4
+      },
+      "n_matches": 0,
+      "matching_folios": []
+    },
+    "f114r": {
+      "features": {
+        "eed": 8,
+        "daiin": 11,
+        "dar": 2
+      },
+      "n_matches": 0,
+      "matching_folios": []
+    },
+    "f114v": {
+      "features": {
+        "dar": 2,
+        "daiin": 6,
+        "cth": 3,
+        "eed": 3
+      },
+      "n_matches": 1,
+      "matching_folios": [
+        "f114v"
+      ]
+    },
+    "f111r": {
+      "features": {
+        "dar": 2,
+        "dal": 2
+      },
+      "n_matches": 4,
+      "matching_folios": [
+        "f33v",
+        "f55r",
+        "f111r",
+        "f114r"
+      ]
+    },
+    "f106r": {
+      "features": {
+        "dar": 2,
+        "eed": 2
+      },
+      "n_matches": 0,
+      "matching_folios": []
+    }
+  }
+}

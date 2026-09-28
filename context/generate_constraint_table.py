@@ -35,9 +35,62 @@ FILE_SCOPE_MAP = {
 }
 
 
+STRUCK_ROW = re.compile(
+    r'^\|\s*~~\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*~~\s*\|\s*(.+?)\s*\|\s*([^|]*?)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|',
+    re.MULTILINE)
+DEAD_STATUS = re.compile(r'STATUS:\s*(RETRACTED|SUPERSEDED)', re.IGNORECASE)
+
+
+def registry_entry_is_dead(title, tier_line_tail):
+    """A grouped-registry entry is dead only if its own Status field says so
+    (RETRACTED / SUPERSEDED / REFUTED), it carries a 'Superseded by' pointer, or its
+    title *is* the status (e.g. '### C172 - SUPERSEDED'). A title that merely mentions an
+    earlier retraction (e.g. C287 '(EXT-9B RETRACTION)') is NOT dead. INVALIDATED Tier-1
+    entries stay (negative knowledge)."""
+    m = re.search(r'\*\*Status:\*\*\s*([A-Za-z_:]+)', tier_line_tail)
+    status = m.group(1).upper() if m else ''
+    if status.startswith(('RETRACTED', 'SUPERSEDED', 'REFUTED')):
+        return True
+    if re.search(r'Superseded by', tier_line_tail, re.IGNORECASE):
+        return True
+    if re.match(r'\s*(SUPERSEDED|RETRACTED)\b', title, re.IGNORECASE):
+        return True
+    return False
+
+
+def _num_key(num_str):
+    return num_str if '.' in num_str else int(num_str)
+
+
+def parse_struck_index_rows(content):
+    """Struck rows (~~N~~). Convention (2026-09-27 reconciliation):
+    - a struck row whose tier cell still carries a live tier digit (e.g. '~~2~~ 3', or '1' for a
+      claim retracted into a Tier-1 falsification) is ALIVE at that tier (demotion / re-tiering);
+    - a struck row with no live tier digit, or any row tagged STATUS:RETRACTED|SUPERSEDED, is DEAD.
+    Returns (alive_dict, dead_set)."""
+    alive, dead = {}, set()
+    for m in STRUCK_ROW.finditer(content):
+        num_str = m.group(1).strip()
+        desc = m.group(2).strip()
+        tier_cell = m.group(3).strip()
+        live_tier = re.sub(r'~~.*?~~', '', tier_cell).strip()
+        key = _num_key(num_str)
+        if DEAD_STATUS.search(desc) or live_tier not in ('0', '1', '2', '3', '4'):
+            dead.add(key)
+            continue
+        desc = desc.replace('~~', '')
+        desc = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', desc)
+        location = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', m.group(5).strip())
+        location = location.replace('→', '->').replace('⊂', 'in:').strip()
+        alive[key] = {'num': num_str, 'desc': desc, 'tier': live_tier,
+                      'scope': m.group(4).strip(), 'location': location}
+    return alive, dead
+
+
 def parse_index_constraints(index_path):
-    """Parse constraints from INDEX.md tables"""
+    """Parse constraints from INDEX.md tables. Returns (constraints, dead_set)."""
     constraints = {}
+    dead = set()
 
     with open(index_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -47,14 +100,26 @@ def parse_index_constraints(index_path):
     # Handle both bold (**074**) and plain (074) numbers
     # Also handle sub-numbered constraints like 384.a
     # The number field must be ONLY digits (optionally .a/.b suffix) — reject ranges like 251-262
-    pattern = r'\|\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*\|\s*(.+?)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|'
+    # Tier cell forms: '2' | '~~2~~ 3' (demoted, alive at 3) | '~~2~~' (dead) | '2/3' (borderline -> 3)
+    pattern = (r'\|\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*\|\s*(.+?)\s*\|\s*'
+               r'(\d+|~~\s*\d\s*~~\s*\d?|\d\s*/\s*\d)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|')
 
     for match in re.finditer(pattern, content):
         num_str = match.group(1).strip()
         desc = match.group(2).strip()
-        tier = match.group(3).strip()
+        raw_tier = match.group(3).strip()
         scope = match.group(4).strip()
         location = match.group(5).strip()
+        if '~~' in raw_tier:
+            tier = re.sub(r'~~.*?~~', '', raw_tier).strip()
+            if tier not in ('0', '1', '2', '3', '4'):
+                dead.add(_num_key(num_str))
+                continue
+        elif '/' in raw_tier:
+            tier = raw_tier.split('/')[-1].strip()   # borderline: take the lower-confidence tier
+            desc = f"[tier cell {raw_tier}] " + desc
+        else:
+            tier = raw_tier
 
         # Skip if tier is not a valid number 0-4 (catches garbled range-row mis-parses)
         if tier not in ('0', '1', '2', '3', '4'):
@@ -65,7 +130,8 @@ def parse_index_constraints(index_path):
         # the number-field regex; this also drops a status-tagged retraction whose
         # row wasn't struck — preventing the notice-vs-stale-row drift (the
         # C1959/C1960/C1970 failure: retraction recorded in prose but row left live).
-        if re.search(r'STATUS:\s*(RETRACTED|SUPERSEDED)', desc, re.IGNORECASE):
+        if DEAD_STATUS.search(desc):
+            dead.add(_num_key(num_str))
             continue
 
         # Clean up location - remove markdown links and Unicode
@@ -86,7 +152,13 @@ def parse_index_constraints(index_path):
             'location': location
         }
 
-    return constraints
+    struck_alive, struck_dead = parse_struck_index_rows(content)
+    for key, c in struck_alive.items():
+        constraints.setdefault(key, c)
+    dead |= struck_dead
+    for key in dead:
+        constraints.pop(key, None)
+    return constraints, dead
 
 
 def parse_registry_constraints(registry_path, default_scope):
@@ -101,12 +173,15 @@ def parse_registry_constraints(registry_path, default_scope):
 
     # Pattern 1: ## or ### C### - Title followed by **Tier:** # | **Status:**
     # Then description on next line(s)
-    pattern1 = r'#{2,3}\s*C(\d+)\s*[-–]\s*(.+?)\n\*\*Tier:\*\*\s*(\d+)\s*\|'
+    pattern1 = r'#{2,3}\s*C(\d+)\s*[-–]\s*(.+?)\n(?:[ \t]*\n)?\*\*Tier:\*\*\s*(\d+)([^\n]*)'
 
     for match in re.finditer(pattern1, content):
         num = int(match.group(1))
         title = match.group(2).strip()
         tier = match.group(3).strip()
+        status_tail = match.group(4)
+        if registry_entry_is_dead(title, status_tail):
+            continue
 
         # Get scope from context or default
         scope = default_scope
@@ -162,10 +237,13 @@ def parse_currier_a_special(currier_a_path):
 
         # Look for tier after the title
         tier_match = re.search(
-            rf'#{2,3}\s*C{num}\s*[-–][^\n]+\n\*\*Tier:\*\*\s*(\d+)',
+            rf'#{{2,3}}\s*C{num}\s*[-–][^\n]+\n(?:[ \t]*\n)?\*\*Tier:\*\*\s*(\d+)([^\n]*)',
             content
         )
         tier = tier_match.group(1) if tier_match else '2'
+        tail = tier_match.group(2) if tier_match else ''
+        if registry_entry_is_dead(title, tail):
+            continue
 
         # Determine scope based on constraint range
         if num >= 420:
@@ -242,8 +320,9 @@ def format_table(constraints):
 
 def main():
     print(f"Parsing constraints from {INDEX_FILE}...")
-    index_constraints = parse_index_constraints(INDEX_FILE)
-    print(f"Found {len(index_constraints)} constraints in INDEX.md")
+    index_constraints, dead = parse_index_constraints(INDEX_FILE)
+    print(f"Found {len(index_constraints)} live constraints in INDEX.md "
+          f"({len(dead)} dead: struck or STATUS-retracted/superseded)")
 
     # Parse all registry files
     registry_constraints = {}
@@ -261,7 +340,14 @@ def main():
 
     # Merge all constraints (INDEX takes priority for scope/location info)
     all_constraints = merge_constraints(index_constraints, registry_constraints)
+    # A number that INDEX marks dead must never be re-imported from a grouped registry
+    for key in dead:
+        all_constraints.pop(key, None)
     print(f"\nTotal unique constraints: {len(all_constraints)}")
+    from collections import Counter
+    tier_counts = Counter(str(c['tier']) for c in all_constraints.values())
+    tier_summary = ' '.join(f"T{t}={tier_counts.get(t, 0)}" for t in ('0', '1', '2', '3', '4'))
+    print(f"By tier: {tier_summary}")
 
     print("Generating table...")
     table = format_table(all_constraints)
@@ -269,7 +355,7 @@ def main():
     # Minimal header - pure ASCII
     from datetime import date
     today = date.today().isoformat()
-    header = f"""CONSTRAINT_REFERENCE v2.6 | {len(all_constraints)} constraints | {today}
+    header = f"""CONSTRAINT_REFERENCE v2.7 | {len(all_constraints)} live constraints ({tier_summary}) | {today}
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
