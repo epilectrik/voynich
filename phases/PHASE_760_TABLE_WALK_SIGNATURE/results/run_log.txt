@@ -1,0 +1,11 @@
+real primary: {'K_PREFIX': 1696, 'K_MIDDLE': 803, 'K_SUFFIX': 2168, 'same_head_pairs': 2803, 'M_kept_given_same_head_rate': 0.22797003210845523, 'K_SUFFIX_without_dy': 951, 'K_SUFFIX_dy': 1217, 'same_head_pairs_rate': 0.14883449264588755, 'bin_k2_0': 7117, 'bin_k2_1': 974, 'bin_k2_2': 8, 'bin_k2_3': 0, 'bin_k3_0': 3882, 'bin_k3_1': 2380, 'bin_k3_2': 600, 'bin_k3_3': 0, 'bin_emptyvalue_0': 11853, 'bin_emptyvalue_1': 5742, 'bin_emptyvalue_2': 1238, 'bin_emptyvalue_3': 0, 'nonidentical_pairs': 18833, 'identical_tuple_pairs': 191}
+gated pairs: 19024; effective movable pairs under N1: 19024; tokens with empty MIDDLE: 0
+  null N1: done
+  null N0: done
+  null NP: done
+  N_EDGE beta=4.0: fraction changed 0.742, max section TV 0.0003
+PREFIX: obs 1696 | N1 excess -126.2 p_up 1.0000 p_low 0.0010 | N_EDGE excess -64.7 p_up 0.9930 p_low 0.0100 | check True (excess is new relative to C549 alternation by construction) | glyph p_up 0.9590 -> new_positive=False
+MIDDLE: obs 803 | N1 excess -76.6 p_up 1.0000 p_low 0.0010 | N_EDGE excess -3.9 p_up 0.5954 p_low 0.4236 | check False (conditional on same HEAD: p_up 0.9910) | glyph p_up 0.8861 -> new_positive=False
+SUFFIX: obs 2168 | N1 excess +177.9 p_up 0.0010 p_low 1.0000 | N_EDGE excess +135.2 p_up 0.0010 p_low 1.0000 | check True (without dy->dy: p_up 0.0190) | glyph p_up 0.7712 -> new_positive=False
+rotation: {'eligible_triples': 817, 'table': [[144, 25, 71], [27, 20, 35], [147, 18, 330]], 'diagonal_obs': 494, 'diagonal_null_mean': 363.7954, 'p_deficit': 1.0, 'p_excess': 9.999000099990002e-05, 'MDE80': 31.494033437831348}
+VERDICT (locked rules): NO SIGNATURE  (153.6s)
