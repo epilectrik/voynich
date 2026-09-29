@@ -86,8 +86,9 @@ the pre-registered gate. (PHASE_752, PHASE_759)
     f75r, the only Currier B folio with a four-token repeat (C1889), was paired with III.19, the only SISMEL Catalan
     sub-recipe mentioning "four times, otherwise nine times" (C2034). That pairing came from the generic matcher and the
     ×4 feature was noticed afterwards; it needs a prospective test.
-- **Encoding — cipher or notation:** open beyond the excluded classes. Untested: modified or coarser-unit cipher designs
-  (syllable- or word-level codebooks) and the Rugg grille.
+- **Encoding — cipher or notation:** open beyond the excluded classes. Plain syllable writing (one spelling per
+  syllable) is excluded on unit inventory (C2085). Untested: modified or coarser-unit cipher designs (syllables
+  written with spelling variation, word-level codebooks) and the Rugg grille.
 
 ## 4. What we do not claim
 
@@ -102,8 +103,9 @@ the pre-registered gate. (PHASE_752, PHASE_759)
 
 ## 5. What would change our mind
 
-- A decodable cipher — modified Naibbe, a syllable- or word-level codebook, or another design — that reproduces the four
-  properties in section 2 would reopen the cipher reading for that class and weaken the notation reading.
+- A decodable cipher — modified Naibbe, a word-level codebook, a syllable codebook with spelling variation, or another
+  design — that reproduces the four properties in section 2 would reopen the cipher reading for that class and weaken
+  the notation reading.
 - A prospective test in which predictions derived from unexamined recipes are frozen and then confirmed on unexamined
   folios would move the *Testamentum* reading from open to supported; a failure would weaken it further.
 - A second-transcription failure of the boundary coupling or of the bifolium contrast would retract those measurements.

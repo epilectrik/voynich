@@ -44,8 +44,10 @@ These are measurements, reproduced under controls and, where noted, on a second 
 | Natural language written one token per word | Excluded on several independent grounds | C132, C2015, C2022 |
 | Token ≈ word codes; atom-level polyalphabetic cipher; three published decipherments | Excluded | C1976, C2017 |
 | Tokens as coordinates read off a table (a "table walk") | No signature: adjacent words do not step through neighbouring cells | C2079; PHASE_760 |
+| A language written syllable by syllable (Chinese-style, or an invented syllabary), one spelling per syllable | Excluded on unit inventory: B has 5,141 types per 20,000 tokens; syllable-written Mandarin, Vietnamese, Lahu and syllabified European texts have 685–1,338 | C2085; PHASE_767 |
 
-Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebooks), the Rugg grille.
+Not yet tested: modified or coarser-unit ciphers (syllables written with spelling variation, word-level codebooks),
+the Rugg grille.
 
 ## Open hypotheses
 
@@ -93,8 +95,8 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 | | |
 |---|---|
-| Live constraints | 1,891 (Tier 0: 2, Tier 1: 38, Tier 2: 1,681, Tier 3: 166, Tier 4: 4) |
-| Research phases | 766 |
+| Live constraints | 1,892 (Tier 0: 2, Tier 1: 38, Tier 2: 1,682, Tier 3: 166, Tier 4: 4) |
+| Research phases | 767 |
 | Method | Pre-registration for load-bearing tests; negative controls; external rival generators; test designs audited before lock by a separate statistics-only reviewer (same model, restricted context — a rigor check, not independent confirmation) |
 
 ## Data

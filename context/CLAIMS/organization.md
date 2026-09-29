@@ -253,7 +253,7 @@ Aggressive programs buffered (88% vs 49% null)
 7 domains ruled incompatible
 **Source:** v1.8-import
 
-### C173 - **[Scope 2026-09-28 (v7.26): 'EXHAUSTED' is retired closure language (strategic review §5). Tested and excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as published (C2080). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille (STATUS_BRIEF §4).]** Linguistic hypothesis EXHAUSTED
+### C173 - **[Scope 2026-09-28 (v7.26): 'EXHAUSTED' is retired closure language (strategic review §5). Tested and excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as published (C2080). Plain syllable writing with one spelling per syllable excluded on unit inventory (C2085). Untested: syllables written with spelling variation, word-level codebooks, modified verbose ciphers, the Rugg grille (STATUS_BRIEF §4).]** Linguistic hypothesis EXHAUSTED
 **Tier:** 2 | **Status:** CLOSED
 Linguistic hypothesis EXHAUSTED
 **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]**

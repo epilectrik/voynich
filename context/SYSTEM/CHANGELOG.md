@@ -4,6 +4,46 @@
 
 ---
 
+## Version 7.30 (2026-09-28) — PHASE_767: token-unit inventory (PLAIN-SYLLABLE EXCLUDED; C2085)
+
+### Summary
+A pre-registered, lean-audited test of the human's proposal that the manuscript writes a language such as Chinese in
+an invented notation ("syllable-level codebooks" were listed as untested). Question: is Currier B's unit inventory as
+small as that of text written one syllable per token? The decision rule was certified on control texts before lock.
+Locked verdict: **PLAIN-SYLLABLE EXCLUDED**.
+
+| Text | Types per 20,000 tokens |
+|---|---|
+| B (ZL; H track; uncertain spaces split) | 5,141; 4,347; 4,248 |
+| Syllable-written controls | 685–1,338 |
+| Word-written texts | 1,130–6,041 |
+
+The syllable-written controls are Mandarin Pinyin (Matthew; Chinese Union Version NT), Vietnamese, Lahu Si and five
+syllabified European NTs.
+
+- **Robustness:** the call holds in 40/40 random folio halves, on B's last 20,000 tokens and in every variant.
+- **k\* > 16:** syllable texts need more than 16 random spellings per syllable to reach B's vocabulary.
+- **Tail check:** the exclusion may rest partly on B's hapax tail (the V≥2 screen failed on Vietnamese). Even so, B's
+  repeated types (1,449) exceed every syllable-written control (at most 976).
+- **Descriptive:**
+  - B's token-to-token predictability above a within-line shuffle is +0.02. Every natural text, word- or
+    syllable-written, sits at 0.12–0.35; the generators Naibbe and Timm sit at +0.02 and 0.00.
+  - Identical adjacent repeats occur at chance (every control text avoids them).
+- **Scope:** excludes plain syllable writing only. Syllables with spelling variation, morpheme-sized units and
+  word-level codebooks remain untested. Not evidence that B's tokens are words or language.
+- **Pre-lock finding:** the repeat tolerance on which B resembled Pinyin (PHASE_765) is not diagnostic of syllables.
+  Many word-written languages repeat as freely.
+
+### Registry and documents
+- C2085 new (Tier 2, negative knowledge).
+- Updated to "plain syllable writing excluded; syllables with spelling variation untested": STATUS_BRIEF §4,
+  RESEARCH_AGENDA, CORE/falsifications, CORE/model_boundary, CLAUDE_INDEX, MODEL_CONTEXT, CRAZY_EXPERT_STANCE, the
+  expert generator, README, WHAT_WE_CLAIM and the C173 annotation.
+- CORE/falsifications: "No referential structure exists" is scoped (C171 is Tier 3).
+- Live: 1,892 (T0 2, T1 38, T2 1,682, T3 166, T4 4); 767 phases.
+
+---
+
 ## Version 7.29 (2026-09-28) — PHASE_766: label–page consistency (NO SIGNAL, bounded; C2084)
 
 ### Summary

@@ -1,0 +1,762 @@
+{
+ "pre_registration": "caf7127",
+ "axes_N20000": {
+  "F1_vocab": [
+   3.46014581749175,
+   2.851869600729766
+  ],
+  "F2_heaps": [
+   0.6686744339120116,
+   0.3542042592400629
+  ]
+ },
+ "mV_N20000": 0.042726701346200616,
+ "axes_N10000": {
+  "F1_vocab": [
+   3.27600198996205,
+   2.7730546933642626
+  ],
+  "F2_heaps": [
+   0.48199205110752735,
+   0.26187241611796114
+  ]
+ },
+ "mV_N10000": 0.03529770103761859,
+ "B_primary": {
+  "features": {
+   "F1_vocab": 3.711047603867034,
+   "F2_heaps": 0.7522926539979445,
+   "F3_bigram_gain": -0.04752030417834141,
+   "F4_repeat": 0.027951210382690467,
+   "F5_coupling": 0.05982840349213233,
+   "F6_near_repeat": 0.08388749086373193,
+   "X_vge2": 3.1610683854711747,
+   "X_t80": 3.1122697684172707,
+   "X_pair_coverage": 0.6722115324933275,
+   "F3_minus_shuffle": 0.020489780749635617
+  },
+  "types_20k": 5141,
+  "vge2": 1449,
+  "t80": 1295,
+  "VOCAB": -0.3391909652670332,
+  "call": "PLAIN-SYLLABLE EXCLUDED",
+  "SEQ": -2.116467797755858,
+  "s_F1": -0.4124800205257091,
+  "s_F2": -0.2659019100083572
+ },
+ "E8_bipartitions": [
+  [
+   {
+    "folios": 44,
+    "tokens": 10793,
+    "VOCAB": -0.334,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 39,
+    "tokens": 10652,
+    "VOCAB": -0.311,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 45,
+    "tokens": 11069,
+    "VOCAB": -0.351,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 38,
+    "tokens": 10376,
+    "VOCAB": -0.301,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 41,
+    "tokens": 10754,
+    "VOCAB": -0.325,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 42,
+    "tokens": 10691,
+    "VOCAB": -0.327,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 46,
+    "tokens": 11086,
+    "VOCAB": -0.324,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 37,
+    "tokens": 10359,
+    "VOCAB": -0.312,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 38,
+    "tokens": 10864,
+    "VOCAB": -0.318,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 45,
+    "tokens": 10581,
+    "VOCAB": -0.334,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 44,
+    "tokens": 10983,
+    "VOCAB": -0.34,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 39,
+    "tokens": 10462,
+    "VOCAB": -0.305,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 42,
+    "tokens": 11055,
+    "VOCAB": -0.329,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 41,
+    "tokens": 10390,
+    "VOCAB": -0.325,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 44,
+    "tokens": 10776,
+    "VOCAB": -0.328,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 39,
+    "tokens": 10669,
+    "VOCAB": -0.332,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 43,
+    "tokens": 10888,
+    "VOCAB": -0.307,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 40,
+    "tokens": 10557,
+    "VOCAB": -0.35,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 47,
+    "tokens": 10839,
+    "VOCAB": -0.328,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 36,
+    "tokens": 10606,
+    "VOCAB": -0.315,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 42,
+    "tokens": 10764,
+    "VOCAB": -0.34,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 41,
+    "tokens": 10681,
+    "VOCAB": -0.307,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 45,
+    "tokens": 10784,
+    "VOCAB": -0.306,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 38,
+    "tokens": 10661,
+    "VOCAB": -0.34,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 41,
+    "tokens": 10952,
+    "VOCAB": -0.291,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 42,
+    "tokens": 10493,
+    "VOCAB": -0.35,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 42,
+    "tokens": 10911,
+    "VOCAB": -0.308,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 41,
+    "tokens": 10534,
+    "VOCAB": -0.334,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 42,
+    "tokens": 10733,
+    "VOCAB": -0.324,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 41,
+    "tokens": 10712,
+    "VOCAB": -0.334,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 43,
+    "tokens": 10789,
+    "VOCAB": -0.339,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 40,
+    "tokens": 10656,
+    "VOCAB": -0.308,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 39,
+    "tokens": 10810,
+    "VOCAB": -0.327,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 44,
+    "tokens": 10635,
+    "VOCAB": -0.324,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 40,
+    "tokens": 10770,
+    "VOCAB": -0.303,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 43,
+    "tokens": 10675,
+    "VOCAB": -0.342,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 42,
+    "tokens": 10855,
+    "VOCAB": -0.349,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 41,
+    "tokens": 10590,
+    "VOCAB": -0.286,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ],
+  [
+   {
+    "folios": 44,
+    "tokens": 10961,
+    "VOCAB": -0.309,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   },
+   {
+    "folios": 39,
+    "tokens": 10484,
+    "VOCAB": -0.33,
+    "call": "PLAIN-SYLLABLE EXCLUDED"
+   }
+  ]
+ ],
+ "E8_bipartition_calls": {
+  "PLAIN-SYLLABLE EXCLUDED": 40
+ },
+ "E8_last_window": {
+  "types_20k": 5154,
+  "VOCAB": -0.33857909594517965,
+  "call": "PLAIN-SYLLABLE EXCLUDED"
+ },
+ "verdict": "PLAIN-SYLLABLE EXCLUDED",
+ "verdict_detail": {
+  "primary_call": "PLAIN-SYLLABLE EXCLUDED",
+  "certified": true,
+  "E8_holds": true
+ },
+ "variants": {
+  "V1_H_track": {
+   "tokens": 21610,
+   "types_20k": 4347,
+   "VOCAB": -0.22256307219555072,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "SEQ": -2.0692035784230636
+  },
+  "V2_uncertain_split": {
+   "tokens": 23078,
+   "types_20k": 4248,
+   "VOCAB": -0.2201939468764738,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "SEQ": -2.0084758616628826
+  },
+  "V3_toneless_natives": {
+   "VOCAB": -0.3391909652670332,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "certified_EXCLUDED": true,
+   "note": "axes unchanged; only the certification set changes"
+  },
+  "V4_syllabifier": {
+   "VOCAB": -0.35748733903563457,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "mV": 0.046430177166117574,
+   "certified_EXCLUDED": true
+  },
+  "V5_N10000": {
+   "windows": [
+    {
+     "VOCAB": -0.2513129154077299,
+     "call": "PLAIN-SYLLABLE EXCLUDED"
+    },
+    {
+     "VOCAB": -0.35023876523248715,
+     "call": "PLAIN-SYLLABLE EXCLUDED"
+    }
+   ],
+   "certified_EXCLUDED": true
+  },
+  "V6_no_rewrap": {
+   "VOCAB": -0.3391909652670332,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "SEQ": -2.1067391628330108
+  }
+ },
+ "E10_kstar": {
+  "median_VOCAB_by_k": {
+   "1": 1.013912967512923,
+   "2": 0.7506724278431056,
+   "4": 0.44100470634208344,
+   "8": 0.14033567784151524,
+   "16": -0.13426926571455355
+  },
+  "VOCAB_B": -0.3391909652670332,
+  "k_star": "> 16"
+ },
+ "references": {
+  "Naibbe_GV1": {
+   "tokens": 21610,
+   "types_20k": 4255,
+   "vge2": 2151,
+   "VOCAB": -0.1100208979821092,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "SEQ": -2.144963154868463,
+   "F3_minus_shuffle": 0.02488640464766087,
+   "features": {
+    "F1_vocab": 3.628899564420607,
+    "F2_heaps": 0.6506277228099715,
+    "F3_bigram_gain": -0.04998122450208653,
+    "F4_repeat": -0.6986949613127927,
+    "F5_coupling": 0.0028525267906668074,
+    "F6_near_repeat": -0.17997280177857974,
+    "X_vge2": 3.3326404103874627,
+    "X_t80": 3.089198366805149,
+    "X_pair_coverage": 0.7598137824012874,
+    "F3_minus_shuffle": 0.02488640464766087
+   }
+  },
+  "Timm": {
+   "tokens": 21610,
+   "types_20k": 7557,
+   "vge2": 3342,
+   "VOCAB": -0.7815262493824953,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "SEQ": -2.2767084068717423,
+   "F3_minus_shuffle": -0.002628136337479138,
+   "features": {
+    "F1_vocab": 3.8783494222177755,
+    "F2_heaps": 0.9440024954795199,
+    "F3_bigram_gain": -0.06135902780283464,
+    "F4_repeat": -0.19714188750143233,
+    "F5_coupling": -7.867338770406626e-05,
+    "F6_near_repeat": -0.018577167595488227,
+    "X_vge2": 3.5240064455573727,
+    "X_t80": 3.55108386518578,
+    "X_pair_coverage": 0.07853975931364081,
+    "F3_minus_shuffle": -0.002628136337479138
+   }
+  },
+  "Currier_A_N10000": {
+   "types_10k": 3447,
+   "VOCAB": -0.3913996425165771,
+   "call": "PLAIN-SYLLABLE EXCLUDED"
+  }
+ },
+ "controls_table": {
+  "WORD_la": {
+   "types_20k": 4585,
+   "vge2": 1878,
+   "t80": 1175,
+   "VOCAB": -0.261,
+   "SEQ": -0.582,
+   "F4": -2.218,
+   "F5": 0.007,
+   "F6": -0.607
+  },
+  "WORD_it": {
+   "types_20k": 3290,
+   "vge2": 1473,
+   "t80": 602,
+   "VOCAB": -0.047,
+   "SEQ": 0.181,
+   "F4": -2.945,
+   "F5": 0.0255,
+   "F6": -0.332
+  },
+  "WORD_es": {
+   "types_20k": 2885,
+   "vge2": 1307,
+   "t80": 448,
+   "VOCAB": -0.023,
+   "SEQ": 0.0,
+   "F4": -3.463,
+   "F5": 0.016,
+   "F6": -0.117
+  },
+  "WORD_de": {
+   "types_20k": 2678,
+   "vge2": 1348,
+   "t80": 445,
+   "VOCAB": 0.08,
+   "SEQ": -0.251,
+   "F4": -2.246,
+   "F5": 0.02,
+   "F6": -0.517
+  },
+  "WORD_en": {
+   "types_20k": 1941,
+   "vge2": 1078,
+   "t80": 268,
+   "VOCAB": 0.274,
+   "SEQ": 0.134,
+   "F4": -3.402,
+   "F5": 0.0248,
+   "F6": -0.503
+  },
+  "SYL_la": {
+   "types_20k": 711,
+   "vge2": 561,
+   "t80": 134,
+   "VOCAB": 1.047,
+   "SEQ": 0.963,
+   "F4": -1.446,
+   "F5": 0.0879,
+   "F6": -0.055
+  },
+  "SYL_it": {
+   "types_20k": 694,
+   "vge2": 538,
+   "t80": 106,
+   "VOCAB": 1.009,
+   "SEQ": 0.934,
+   "F4": -1.041,
+   "F5": 0.0965,
+   "F6": -0.05
+  },
+  "SYL_es": {
+   "types_20k": 704,
+   "vge2": 556,
+   "t80": 125,
+   "VOCAB": 1.029,
+   "SEQ": 1.0,
+   "F4": -1.314,
+   "F5": 0.0602,
+   "F6": -0.048
+  },
+  "SYL_de": {
+   "types_20k": 1237,
+   "vge2": 862,
+   "t80": 221,
+   "VOCAB": 0.67,
+   "SEQ": 1.048,
+   "F4": -0.659,
+   "F5": 0.0675,
+   "F6": -0.271
+  },
+  "SYL_en": {
+   "types_20k": 1226,
+   "vge2": 872,
+   "t80": 206,
+   "VOCAB": 0.66,
+   "SEQ": 1.394,
+   "F4": -2.768,
+   "F5": 0.0634,
+   "F6": -0.217
+  },
+  "NAT_pinyin_tones": {
+   "types_20k": 729,
+   "vge2": 640,
+   "t80": 170,
+   "VOCAB": 1.068,
+   "SEQ": 0.502,
+   "F4": -0.953,
+   "F5": 0.0373,
+   "F6": -0.194
+  },
+  "NAT_pinyin_notones": {
+   "types_20k": 347,
+   "vge2": 316,
+   "t80": 97,
+   "VOCAB": 1.544,
+   "SEQ": -0.048,
+   "F4": -0.665,
+   "F5": 0.0116,
+   "F6": -0.03
+  },
+  "NAT_vietnamese": {
+   "types_20k": 1338,
+   "vge2": 976,
+   "t80": 272,
+   "VOCAB": 0.608,
+   "SEQ": 0.818,
+   "F4": -1.525,
+   "F5": 0.0333,
+   "F6": 0.029
+  },
+  "HOW_French": {
+   "types_20k": 2840,
+   "vge2": 1350,
+   "t80": 461,
+   "VOCAB": 0.025,
+   "SEQ": 0.396,
+   "F4": -2.977,
+   "F5": 0.0203,
+   "F6": -0.416
+  },
+  "HOW_Greek": {
+   "types_20k": 4296,
+   "vge2": 1644,
+   "t80": 989,
+   "VOCAB": -0.246,
+   "SEQ": 0.076,
+   "F4": -2.176,
+   "F5": 0.0151,
+   "F6": -0.651
+  },
+  "HOW_Russian": {
+   "types_20k": 5310,
+   "vge2": 1879,
+   "t80": 1595,
+   "VOCAB": -0.358,
+   "SEQ": -0.021,
+   "F4": -1.247,
+   "F5": 0.01,
+   "F6": -0.476
+  },
+  "HOW_Anglo-Saxon": {
+   "types_20k": 3912,
+   "vge2": 1506,
+   "t80": 786,
+   "VOCAB": -0.208,
+   "SEQ": -0.581,
+   "F4": -1.136,
+   "F5": 0.0153,
+   "F6": 0.021
+  },
+  "HOW_Flemish": {
+   "types_20k": 2860,
+   "vge2": 1372,
+   "t80": 481,
+   "VOCAB": 0.026,
+   "SEQ": -0.652,
+   "F4": -1.882,
+   "F5": 0.0088,
+   "F6": -0.701
+  },
+  "HOW_Arabic": {
+   "types_20k": 5902,
+   "vge2": 2018,
+   "t80": 1999,
+   "VOCAB": -0.4,
+   "SEQ": -0.519,
+   "F4": -1.667,
+   "F5": 0.0183,
+   "F6": -0.413
+  },
+  "HOW_Hebrew": {
+   "types_20k": 5440,
+   "vge2": 2071,
+   "t80": 1756,
+   "VOCAB": -0.332,
+   "SEQ": -0.786,
+   "F4": -1.551,
+   "F5": 0.0193,
+   "F6": -0.203
+  },
+  "HOW_Maori": {
+   "types_20k": 1130,
+   "vge2": 704,
+   "t80": 118,
+   "VOCAB": 0.59,
+   "SEQ": 0.291,
+   "F4": -3.603,
+   "F5": 0.024,
+   "F6": -0.209
+  },
+  "HOW_Swahili": {
+   "types_20k": 4265,
+   "vge2": 1605,
+   "t80": 1018,
+   "VOCAB": -0.229,
+   "SEQ": -0.084,
+   "F4": -2.152,
+   "F5": 0.0116,
+   "F6": -1.191
+  },
+  "HOW_Tagalog": {
+   "types_20k": 2539,
+   "vge2": 1189,
+   "t80": 324,
+   "VOCAB": 0.046,
+   "SEQ": 0.437,
+   "F4": -4.434,
+   "F5": 0.0572,
+   "F6": -0.957
+  },
+  "HOW_Turkish": {
+   "types_20k": 6041,
+   "vge2": 2291,
+   "t80": 2193,
+   "VOCAB": -0.39,
+   "SEQ": -0.522,
+   "F4": -1.255,
+   "F5": 0.0143,
+   "F6": 0.213
+  },
+  "HOW_Esperanto": {
+   "types_20k": 3275,
+   "vge2": 1386,
+   "t80": 565,
+   "VOCAB": -0.097,
+   "SEQ": 0.048,
+   "F4": -3.819,
+   "F5": 0.0361,
+   "F6": -0.903
+  },
+  "HOW_Interlingua": {
+   "types_20k": 2712,
+   "vge2": 1270,
+   "t80": 384,
+   "VOCAB": -0.007,
+   "SEQ": -0.56,
+   "F4": -2.09,
+   "F5": 0.018,
+   "F6": -0.396
+  },
+  "HOW_Neo-Quenya": {
+   "types_20k": 4022,
+   "vge2": 1756,
+   "t80": 1008,
+   "VOCAB": -0.163,
+   "SEQ": -0.544,
+   "F4": -3.129,
+   "F5": 0.0068,
+   "F6": -0.393
+  },
+  "HOW_Volapuk": {
+   "types_20k": 4719,
+   "vge2": 1772,
+   "t80": 1280,
+   "VOCAB": -0.29,
+   "SEQ": -0.285,
+   "F4": -2.637,
+   "F5": 0.0156,
+   "F6": -0.709
+  },
+  "NAT_cuv_tones": {
+   "types_20k": 739,
+   "vge2": 632,
+   "t80": 167,
+   "VOCAB": 1.051,
+   "SEQ": 0.479,
+   "F4": -0.848,
+   "F5": 0.0434,
+   "F6": -0.281
+  },
+  "NAT_cuv_notones": {
+   "types_20k": 345,
+   "vge2": 318,
+   "t80": 95,
+   "VOCAB": 1.543,
+   "SEQ": -0.18,
+   "F4": -0.596,
+   "F5": 0.0136,
+   "F6": -0.09
+  },
+  "NAT_lahu": {
+   "types_20k": 685,
+   "vge2": 531,
+   "t80": 119,
+   "VOCAB": 1.014,
+   "SEQ": 2.279,
+   "F4": -1.381,
+   "F5": 0.052,
+   "F6": -0.182
+  }
+ },
+ "runtime_s": 41.5
+}

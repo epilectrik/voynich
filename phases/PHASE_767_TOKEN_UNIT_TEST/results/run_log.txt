@@ -1,0 +1,16 @@
+[    0.1s] axes N20k {'F1_vocab': (3.46014581749175, 2.851869600729766), 'F2_heaps': (0.6686744339120116, 0.3542042592400629)} m_V 0.0427 | N10k m_V 0.0353 | certified EXCLUDED N20k True, N10k True
+[    5.3s] PRIMARY: types 5141 VOCAB -0.339 -> PLAIN-SYLLABLE EXCLUDED | SEQ -2.116
+[   19.4s] E8 (i) bipartition calls: {'PLAIN-SYLLABLE EXCLUDED': 40} VOCAB range -0.351 -0.286
+[   20.1s] E8 (ii) last window: VOCAB -0.339 -> PLAIN-SYLLABLE EXCLUDED
+[   20.1s] VERDICT: PLAIN-SYLLABLE EXCLUDED {'primary_call': 'PLAIN-SYLLABLE EXCLUDED', 'certified': True, 'E8_holds': True}
+[   23.6s] variant V1_H_track {'tokens': 21610, 'types_20k': 4347, 'VOCAB': -0.223, 'call': 'PLAIN-SYLLABLE EXCLUDED', 'SEQ': -2.069} 
+[   23.6s] variant V2_uncertain_split {'tokens': 23078, 'types_20k': 4248, 'VOCAB': -0.22, 'call': 'PLAIN-SYLLABLE EXCLUDED', 'SEQ': -2.008} 
+[   23.6s] variant V3_toneless_natives {'VOCAB': -0.339, 'call': 'PLAIN-SYLLABLE EXCLUDED', 'certified_EXCLUDED': True, 'note': 'axes unchanged; only the certification set changes'} 
+[   23.6s] variant V4_syllabifier {'VOCAB': -0.357, 'call': 'PLAIN-SYLLABLE EXCLUDED', 'mV': 0.046, 'certified_EXCLUDED': True} 
+[   23.6s] variant V5_N10000 {'certified_EXCLUDED': True} [{'VOCAB': -0.2513129154077299, 'call': 'PLAIN-SYLLABLE EXCLUDED'}, {'VOCAB': -0.35023876523248715, 'call': 'PLAIN-SYLLABLE EXCLUDED'}]
+[   23.6s] variant V6_no_rewrap {'VOCAB': -0.339, 'call': 'PLAIN-SYLLABLE EXCLUDED', 'SEQ': -2.107} 
+[   23.7s] k*: {'median_VOCAB_by_k': {1: 1.013912967512923, 2: 0.7506724278431056, 4: 0.44100470634208344, 8: 0.14033567784151524, 16: -0.13426926571455355}, 'VOCAB_B': -0.3391909652670332, 'k_star': '> 16'}
+[   33.4s] ref Naibbe_GV1 4255 -0.11 PLAIN-SYLLABLE EXCLUDED SEQ -2.145
+[   40.9s] ref Timm 7557 -0.782 PLAIN-SYLLABLE EXCLUDED SEQ -2.277
+[   41.5s] ref Currier A (N=10k) {'types_10k': 3447, 'VOCAB': -0.3913996425165771, 'call': 'PLAIN-SYLLABLE EXCLUDED'}
+[   41.5s] done

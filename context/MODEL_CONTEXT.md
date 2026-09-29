@@ -27,7 +27,7 @@ This document explains how to read and interpret the constraint system. It does 
 
 **What stands (Tier 2 unless noted; STATUS_BRIEF §2):** the 49-class grammar closed over its own 480-type vocabulary, 69.5% of B tokens (C121, C124 Tier 0; HT/UN defined by exclusion, C566, C740); positional zones (C956); line regularity (C357); boundary glyph coupling (C1212, C1563; robust to spacing uncertainty and replicated on ZL, PHASE_761); word-ending routing to the next token's class (C2082); family preference: qo rich in k, ok in e, qo/ch-sh alternation, qok→ok/oke (C1313, C549, C2056 as revised in PHASE_738 — its wider lane claims downgraded, qok→sh demoted); folio units with unique vocabulary and no duplicate lines or paragraphs (C531, C1790); occupancy, 57.8% of folios end in their dominant macro-state (C074, measurement only); class-transition eigenstructure λ2/λ3 (C2061, C2067; established against a window-blind null, C2066, so re-check under N5 before relying on it); the bifolium pipeline negative control (PHASE_759).
 
-**Rivals excluded (scoped, STATUS_BRIEF §4):** natural language written one token per word (C132, C2015, C2022; C130's "0.19% reference rate" is tainted and not relied on); token ≈ word codes and atom-level polyalphabetic ciphers (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk (C2079). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation.
+**Rivals excluded (scoped, STATUS_BRIEF §4):** natural language written one token per word (C132, C2015, C2022; C130's "0.19% reference rate" is tainted and not relied on); token ≈ word codes and atom-level polyalphabetic ciphers (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk (C2079); plain syllable writing with one spelling per syllable (C2085). Untested: syllables written with spelling variation, word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation.
 
 **A-side / AZC corrections (v3.17, June 2026 — still current).** From the zodiac/index characterization (C2071–C2075) and the PHASE_748 constraint audit:
 
@@ -1216,7 +1216,7 @@ The A/AZC/B shared vocabulary architecture is now **structurally characterized**
 
 The following hypotheses have been tested and rejected. They are preserved as negative knowledge.
 
-*(Scoped v7.25, STATUS_BRIEF §4: "natural language" is excluded as natural language written one token per word (C132, C2015, C2022); the 0.19% reference-rate figure (C130) is tainted and not relied on. "Cipher" is excluded only for the classes tested — token ≈ word codes, atom-level polyalphabetic (C1976, C2017), the Naibbe cipher as published (C2080); syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille are untested.)*
+*(Scoped v7.25, STATUS_BRIEF §4: "natural language" is excluded as natural language written one token per word (C132, C2015, C2022); the 0.19% reference-rate figure (C130) is tainted and not relied on. "Cipher" is excluded only for the classes tested — token ≈ word codes, atom-level polyalphabetic (C1976, C2017), the Naibbe cipher as published (C2080); plain syllable writing is excluded on unit inventory (C2085); syllables written with spelling variation, word-level codebooks, modified verbose ciphers and the Rugg grille are untested.)*
 
 | Hypothesis | Status | Key Evidence |
 |------------|--------|--------------|

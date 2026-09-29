@@ -33,7 +33,7 @@ Basis: C121, C124 (as corrected); C956, C357; C1212, C1563 (with PHASE_761); C53
 - **Testamentum chapter ↔ folio matching** — no correspondence signal (PHASE_762, C2052; see the stance bullet above).
 - **Virtual-apparatus family (C1581–C1680)** — model diagnostics about our simulator, not text facts.
 
-Rivals excluded (scoped negative knowledge): natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk over a coordinate lookup (C2079). **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation. (Source: `SYSTEM/STATUS_BRIEF.md` §1–§4.)
+Rivals excluded (scoped negative knowledge): natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk over a coordinate lookup (C2079); plain syllable writing with one spelling per syllable (C2085). **Untested:** syllables written with spelling variation, word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation. (Source: `SYSTEM/STATUS_BRIEF.md` §1–§4.)
 
 ### CURRENT FRONTIER & CORRECTIONS (2026-09-27, updated 2026-09-28 — read before the constraint bullets below)
 

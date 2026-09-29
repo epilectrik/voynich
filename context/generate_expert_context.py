@@ -1090,7 +1090,8 @@ plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - Referents not recoverable from text-internal statistics alone — scoped to the encodings actually
   tested (negative knowledge C119, C2077, C2080; C171 and C120 were demoted to Tier 3 in v7.24). The
-  Naibbe cipher as published is EXCLUDED (C2080); modified verbose ciphers, syllable- or word-level
+  Naibbe cipher as published is EXCLUDED (C2080); plain syllable writing is EXCLUDED on unit
+  inventory (C2085); modified verbose ciphers, syllables written with spelling variation, word-level
   codebooks and the Rugg grille are UNTESTED
 - No hazard layer survives: C957 is superseded by C2081 — its token-level zero bigrams reduce to
   line composition, zones and boundary coupling under the joint null. Class-level "17 forbidden

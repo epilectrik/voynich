@@ -24,7 +24,8 @@ These hypotheses have been **explicitly tested and rejected**. Each has document
 | Naibbe cipher | Greshko's verbose homophonic substitution cipher **as published** (all 64 declared variants excluded); other verbose/homophonic designs untested | C2080 |
 | Timm & Schinner | Self-citation / copy-and-modify generation, as a complete account of Currier B | C2077 |
 | Table walk | Token = coordinate into a lookup table, read by moving to neighbouring cells (adjacent-token scope) | C2079 |
-| **Untested** | Syllable- or word-level codebooks; modified verbose ciphers; the Rugg grille | — |
+| Plain syllable writing | Syllable writing, or a syllable codebook, with one spelling per syllable and a space after each: B's unit inventory is too large in every tested language (Mandarin Pinyin, Vietnamese, Lahu Si, five syllabified European texts) | C2085 |
+| **Untested** | Syllables written with spelling variation (including homophonic syllable codebooks); morpheme-sized units; word-level codebooks; modified verbose ciphers; the Rugg grille; improvisation in a practised script at book scale | — |
 
 Excluding a rival is not evidence for the working interpretation (STATUS_BRIEF §1, §4).
 
@@ -35,12 +36,12 @@ Excluding a rival is not evidence for the working interpretation (STATUS_BRIEF �
 ### Language Encoding
 **Status:** FALSIFIED (scoped: natural language written one token per word)
 **Evidence:** ~~Phase X.5 found 0.19% reference rate~~ — tainted statistic, not relied on (X.5 is the C131-retracted phase; NEGATIVE_AUDIT Disposition 1). Current basis: C132, C2015, C2022.
-**Meaning:** Tokens do not behave like words. No referential structure exists.
+**Meaning:** Tokens do not behave like the words of a natural language written one token per word. [Scope 2026-09-28: absence of reference is not established — C171 is demoted to Tier 3, plain syllable writing is excluded on unit inventory (C2085), and syllables written with spelling variation and word-level codebooks are untested (STATUS_BRIEF §4).]
 
 ### Cipher Encoding
 **Status:** FALSIFIED (scoped to the cipher classes tested — see "Rivals Excluded" above)
 **Evidence:** Phase G showed cipher transforms DECREASE mutual information; token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments excluded (C1976, C2017); Naibbe as published excluded (C2080)
-**Meaning:** If this were cipher, decryption would increase structure. The opposite happens. [Scope: syllable- or word-level codebooks and modified verbose ciphers are untested — STATUS_BRIEF §4.]
+**Meaning:** If this were cipher, decryption would increase structure. The opposite happens. [Scope: plain syllable writing is excluded on unit inventory (C2085); syllables written with spelling variation, word-level codebooks and modified verbose ciphers are untested — STATUS_BRIEF §4.]
 
 ### Glyph-Level Semantics
 **Status:** FALSIFIED

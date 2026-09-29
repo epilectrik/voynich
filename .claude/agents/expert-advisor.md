@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2084.
+the highest ID present is C2085.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -77,7 +77,8 @@ plan: context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md (embedded below).
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - Referents not recoverable from text-internal statistics alone — scoped to the encodings actually
   tested (negative knowledge C119, C2077, C2080; C171 and C120 were demoted to Tier 3 in v7.24). The
-  Naibbe cipher as published is EXCLUDED (C2080); modified verbose ciphers, syllable- or word-level
+  Naibbe cipher as published is EXCLUDED (C2080); plain syllable writing is EXCLUDED on unit
+  inventory (C2085); modified verbose ciphers, syllables written with spelling variation, word-level
   codebooks and the Rugg grille are UNTESTED
 - No hazard layer survives: C957 is superseded by C2081 — its token-level zero bigrams reduce to
   line composition, zones and boundary coupling under the joint null. Class-level "17 forbidden
@@ -113,7 +114,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-28 21:33
+**Generated:** 2026-09-28 22:28
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -135,7 +136,7 @@ tables are quarantined — do not use for structural answers.
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.29, 2026-09-28)
+# Status Brief — what currently stands (v7.30, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -236,9 +237,15 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
   - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
     repetition and near-repetition, and a narrower word-initial choice.
-- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a
-  practised script at book scale. Excluding a rival is not
-  evidence for the working interpretation.
+- **Syllable writing, or a syllable codebook, with one spelling per syllable:** tested and excluded on unit
+  inventory (C2085, PHASE_767).
+  - B has 5,141 types per 20,000 tokens. The syllable-written controls (Mandarin Pinyin, Vietnamese, Lahu Si and
+    five syllabified European texts) have 685–1,338.
+  - Syllable texts need more than 16 random spellings per syllable to reach B's vocabulary.
+  - This does not say B's tokens are words or language.
+- **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
+  units, word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a practised script
+  at book scale. Excluding a rival is not evidence for the working interpretation.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
 - **The claim is still presented as structure:** rewrite the passage to state the current status in plain words and
@@ -257,7 +264,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.29 | **Status:** characterization ACTIVE | **Constraints:** 1,891 live in the generated table (T0 2, T1 38, T2 1,681, T3 166, T4 4) | **Phases:** 766 | **Date:** 2026-09-28
+**Version:** 7.30 | **Status:** characterization ACTIVE | **Constraints:** 1,892 live in the generated table (T0 2, T1 38, T2 1,682, T3 166, T4 4) | **Phases:** 767 | **Date:** 2026-09-28
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -277,7 +284,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 **Working interpretation (Tier 3):** the grammar is read as procedural notation (a family of programs for a process); no current measurement distinguishes this from other constrained notations. The former reading ("closed-loop, kernel-centric control programs") lost its supports on re-check — kernel C089 superseded by C2082; closed-loop legs withdrawn (C171, Tier 3); see [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md).
 
-Not natural language written one token per word (C132, C2015, C2022); the cipher classes tested so far are excluded — token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner copy-and-modify (C2077), and the Naibbe verbose homophonic cipher as published (PHASE_757, C2080). Syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille remain untested (STATUS_BRIEF §4). The older Tier-3 phrase "a control-system reference manual" rests on the withdrawn control legs (C171, C120 demoted to Tier 3).
+Not natural language written one token per word (C132, C2015, C2022); the cipher classes tested so far are excluded — token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner copy-and-modify (C2077), and the Naibbe verbose homophonic cipher as published (PHASE_757, C2080). Plain syllable writing (one spelling per syllable) is excluded on unit inventory (C2085); syllables written with spelling variation, word-level codebooks, modified verbose ciphers and the Rugg grille remain untested (STATUS_BRIEF §4). The older Tier-3 phrase "a control-system reference manual" rests on the withdrawn control legs (C171, C120 demoted to Tier 3).
 
 | Metric | Value |
 |--------|-------|
@@ -341,7 +348,7 @@ In A, tokens are **categorical entries**, not instructions:
 These approaches have been tested and rejected (tiers vary — check each number in `CONSTRAINT_TABLE.txt`; the current scoped list of excluded rivals is [SYSTEM/STATUS_BRIEF.md](SYSTEM/STATUS_BRIEF.md) §4):
 
 - **Language encoding** - natural language written one token per word is excluded (C132, C2015, C2022). The older "0.19% reference rate" figure (C130, Phase X.5) is tainted and not relied on.
-- **Cipher encoding** - only the classes actually tested are excluded: token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner (C2077), the Naibbe cipher as published (C2080). The older blanket line "transforms decrease mutual information (Phase G)" is scoped: syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille are untested.
+- **Cipher encoding** - only the classes actually tested are excluded: token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner (C2077), the Naibbe cipher as published (C2080). The older blanket line "transforms decrease mutual information (Phase G)" is scoped: plain syllable writing is excluded on unit inventory (C2085); syllables written with spelling variation, word-level codebooks, modified verbose ciphers and the Rugg grille are untested.
 - **Glyph-level semantics** - 0 identifier tokens found (Phase 19)
 - **Illustration-dependent logic** - swap invariance p=1.0 (Phase ILL)
 - **Step-by-step recipe format** - families are emergent (Phase FSS)
@@ -390,7 +397,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.29) | 1,891 (T0 2, T1 38, T2 1,681, T3 166, T4 4) |
+| Live constraints (generated table, v7.30) | 1,892 (T0 2, T1 38, T2 1,682, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -432,7 +439,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.29, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.30, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -483,9 +490,13 @@ text made to look meaningful? And, if it carries content, what content?
       code.
     - Open: procedures written as fluent word-like tokens, and structure at line, paragraph and page level
       (line position is B's strongest difference from gibberish, PHASE_764).
+1c. **Token-unit (syllable) test.** Done: PHASE_767, C2085 — plain syllable writing EXCLUDED on unit inventory.
+    - B has 5,141 types per 20,000 tokens; syllable-written controls 685–1,338; k* > 16 spellings per syllable.
+    - Open: syllables written with spelling variation, morpheme-sized units (item 2).
 2. **The untested rival generators.**
-   - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose
-     cipher, each through the PHASE_757 harness with noise parity.
+   - What: the Rugg grille (Parisel's public code), a word-level codebook, a syllable codebook with spelling variation
+     (one spelling per syllable is excluded, C2085) and a modified verbose cipher, each through the PHASE_757
+     harness with noise parity.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
@@ -794,7 +805,7 @@ This document explains how to read and interpret the constraint system. It does 
 
 **What stands (Tier 2 unless noted; STATUS_BRIEF §2):** the 49-class grammar closed over its own 480-type vocabulary, 69.5% of B tokens (C121, C124 Tier 0; HT/UN defined by exclusion, C566, C740); positional zones (C956); line regularity (C357); boundary glyph coupling (C1212, C1563; robust to spacing uncertainty and replicated on ZL, PHASE_761); word-ending routing to the next token's class (C2082); family preference: qo rich in k, ok in e, qo/ch-sh alternation, qok→ok/oke (C1313, C549, C2056 as revised in PHASE_738 — its wider lane claims downgraded, qok→sh demoted); folio units with unique vocabulary and no duplicate lines or paragraphs (C531, C1790); occupancy, 57.8% of folios end in their dominant macro-state (C074, measurement only); class-transition eigenstructure λ2/λ3 (C2061, C2067; established against a window-blind null, C2066, so re-check under N5 before relying on it); the bifolium pipeline negative control (PHASE_759).
 
-**Rivals excluded (scoped, STATUS_BRIEF §4):** natural language written one token per word (C132, C2015, C2022; C130's "0.19% reference rate" is tainted and not relied on); token ≈ word codes and atom-level polyalphabetic ciphers (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk (C2079). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation.
+**Rivals excluded (scoped, STATUS_BRIEF §4):** natural language written one token per word (C132, C2015, C2022; C130's "0.19% reference rate" is tainted and not relied on); token ≈ word codes and atom-level polyalphabetic ciphers (C1976, C2017); the Naibbe cipher as published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk (C2079); plain syllable writing with one spelling per syllable (C2085). Untested: syllables written with spelling variation, word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not evidence for the working interpretation.
 
 **A-side / AZC corrections (v3.17, June 2026 — still current).** From the zodiac/index characterization (C2071–C2075) and the PHASE_748 constraint audit:
 
@@ -1010,7 +1021,7 @@ C168	Uncategorized: single unified layer	2	HT
 C169	**[Scope 2026-09-28 (v7.26): distance of HT tokens from forbidden-pair tokens; the 'avoidance' reading is withdrawn: C1078 shows it is vocabulary-level (HT is defined by exclusion from the grammar vocabulary, C740), and no prohibition layer remains (C2081).]** Uncategorized: hazard avoidance 4.84 vs 2.5	2	HT
 C170	Uncategorized: morphologically distinct	2	HT
 C171	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 2 → 3. all four remaining legs are withdrawn — monitoring (38% LINK not reproducible, true 13.2%, C609; LINK is a morphological artifact, C1174), intervention by kernel operators (C089 withdrawn), hazard avoidance (C783, C2060, C2063, C2081), convergence (C1401–C1403); only 2 of its 12 eliminations were discriminating tests (NEGATIVE_AUDIT). Closed-loop control is a working interpretation]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** Only continuous closed-loop process control survives	3	B
-C173	**[Scope 2026-09-28 (v7.26): 'EXHAUSTED' is retired closure language (strategic review §5). Tested and excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as published (C2080). Untested: syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille (STATUS_BRIEF §4).]** Linguistic hypothesis EXHAUSTED	2	B
+C173	**[Scope 2026-09-28 (v7.26): 'EXHAUSTED' is retired closure language (strategic review §5). Tested and excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as published (C2080). Plain syllable writing with one spelling per syllable excluded on unit inventory (C2085). Untested: syllables written with spelling variation, word-level codebooks, modified verbose ciphers, the Rugg grille (STATUS_BRIEF §4).]** Linguistic hypothesis EXHAUSTED	2	B
 C174	Intra-role outcome divergence (CF-1=0.62, CF-2=0.34)	2	B
 C175	3 process classes survive (reflux, extraction, conditioning)	2	B
 C176	5 product families survive	2	B
@@ -2853,6 +2864,7 @@ C2081	**Common-token zero bigrams in Currier B reduce to line composition, posit
 C2082	**Glyph-level re-test of "kernel-centric": the kernel is not restored; what passes is word-ending routing to the next token's class (PHASE_763; supersedes C089; locked verdict MIXED).** Pre-registered and twice lean-audited (commit af4a55b). Kernel = {k, e, bench (ch/sh)} as glyph units, each compared with 5 frequency- and position-matched control glyphs (triad test). **Arm S (cross-token routing beyond the prefix channel) PASS, Holm-significant:** I(glyph g in token t; class of t+1 | first glyph of t), Miller–Madow, against the PHASE_756 N5 null (glyph edges, β = 2; R-hat 1.002, minimum ESS 1,509). The kernel mean z of 6.5 exceeds all 89 control triads (p = 0.011, the minimum attainable), E = 4.4 z (folio-bootstrap 95% interval 2.4–7.5). Same sign with p ≤ 0.013 on ZL, on S2 and with the next token's first glyph as target (R1); weaker at role level with length conditioning (R2: E 0.85, p 0.056). Not reproduced by Naibbe GV1 (E −0.5 to 1.0) or Timm–Schinner (−0.8 to 1.2). **It is not a kernel property:** per glyph (descriptive), e (z 10.1) and bench (7.6) carry it, k (1.8) sits at the median of its controls, and the non-kernel d (8.9) is as strong. A post-hoc decomposition (not verdict-bearing) locates it in the token's ending: adding the last two glyph units of t to the conditioning removes it (e 1.9, bench 1.5, d −0.4, k 0.8). So a token's ending predicts the next token's class beyond the last-glyph → first-glyph coupling (extends C1212/C1563; compare C1002 edy→edy and C2061). **Arm W (within-token centrality: centred random-walk closeness vs an edge-anchored run-block permutation) INCONCLUSIVE:** E 7.4 z, p 0.088. It is uncertified (the plant also moves the controls), so it cannot fail. Order raises almost every glyph's closeness (a 31.7, e 25.3, o 24.3, k 20.6). B's kernel effect lies below both generators' ranges (Naibbe 13–18, Timm 8–22) and below the best Latin letter triads (28–35); the folio-bootstrap interval is −30 to 58. **Net:** "kernel-centric" stays a Tier-3 reading without a measurement behind it. The measured residue is ending-to-next-class routing plus the qo/ok family preference (C1313, C549, C2056).	2	B, glyph, kernel, routing, cross-token, ending, N5, pre_registered, PHASE_763, C089, C1212, C1563, C1002
 C2083	**Currier B's low-level profile is not nearer to discrete-operation step notations than to prose or gibberish (PHASE_765; negative knowledge; pre-registered, lean-audited).** At 197-pair scale, with every corpus re-wrapped to B's line lengths, the profile is P1 boundary coupling / H(first unit), P2 identical adjacent repeats (log O/E) and P3 near-repeats (log O/E vs within-line shuffle). Unit median distances to B: improvised gibberish 1.31 (nearest); constrained non-notation (Naibbe, Timm, Roget) 1.58; chess SAN 1.71; Latin procedural prose 1.75; meaningful text 2.02; needlework prose 2.17; knitting/crochet notation 3.00; AGC assembly 3.33 (farthest). B's own chunks sit at 0.94. No step-notation subgroup beats prose, gibberish and the floor control. In all 11 needlework books the book's prose is nearer to B than its notation. The result holds in all eight variants (EVA units, +TTR, lower-cased chess, needlework thresholds, authorial lines, digits collapsed, Mahalanobis, each statistic dropped). Modern step notations are more extreme than B in characteristic directions (knitting: strong coupling, no identical repeats, many near-repeats; assembly: anti-repetitive); B is moderate, closest to fluent improvised writing yet more constrained than it (4× coupling). The "discrete workshop operations" model loses this line of support, not the model. Untested: procedures written as fluent word-like tokens; line-, paragraph- and page-level structure. Not evidence of meaninglessness.	2	B, step_notation, knitting, chess, assembly, gibberish, procedural_prose, negative_knowledge, PHASE_765
 C2084	**Pharmaceutical fragment labels do not recur on the herbal page of their visually matched plant (PHASE_766; bounded negative knowledge; pre-registered, lean-audited).** Pairs: the 13 published pharma-herbal visual matches (voynich.nu, after Petersen and Knowles; 5 "same plant", 8 "some similarity") whose labels carry ZL item tags. Statistic: surprisal of the closest label-word match on the herbal page (glyph-unit edit distance <= 2, calibrated over 128 herbal pages); null: permute the 13 page slots. T = 0.78 vs null mean 5.12, p = 0.97; all eight variants p >= 0.74 (same-plant subset T = 0; within-pharma-folio restricted p = 0.96). Power on surrogate pages (no real pairing): MDE80 = 2 of 13 pairs for exact and for one-glyph label words (size 0.045). 10 of 13 labels have no word within two edits of any token on the matched page; 10 of the 15 label words occur nowhere in the herbal text. Excludes labels that reuse a word of their plant's herbal page in >= 2 of 13 pairs. Does not exclude labels as codes, quantities or contents, or names that differ in form between sections; not evidence of meaninglessness. Matches not verified text-blind (that bias could only raise T).	2	A, labels, pharma, herbal, images, negative_knowledge, PHASE_766
+C2085	**Currier B's unit inventory is too large for writing one spelling per syllable with a space after each (PHASE_767; negative knowledge; pre-registered, lean-audited, certified on controls before lock).** At 20,000 tokens B (ZL 3b, uncertain spaces merged) has 5,141 types (H track 4,347; uncertain spaces split 4,248). Syllable-written controls have 685-1,338: Mandarin Pinyin in two texts (Matthew; Chinese Union Version NT), Vietnamese, Lahu Si and five syllabified European NTs (345-347 without tones). Word-written texts have 1,130-6,041. VOCAB index (mean of type-count and type-growth indices; 0 = word-text median, 1 = syllable-text median) -0.34 against the call threshold 0.415; the rule was certified on every native window (none called excluded) and on 14/15 held-out word texts (Maori not). The call holds in 40/40 random folio halves at 10,000 tokens, on B's last 20,000 tokens and in all variants (H track, split spaces, toneless natives, alternative syllabifier, N = 10,000, no re-wrap). Spelling variation: syllable texts need k* > 16 random spellings per syllable to reach B (median VOCAB at k = 16: -0.13). Tail check: the V>=2/T80 screen failed on Vietnamese, so the exclusion may rest partly on B's hapax tail (C566, C740); descriptively B's repeated types (1,449) and 80%-coverage types (1,295) exceed every syllable-written control (at most 976 and 272). Reference generators Naibbe GV1 (4,255 types) and Timm-Schinner (7,557) also fall on the word side. Scope: excludes plain syllable writing only; does not say B's tokens are words or language; does not exclude syllables written with spelling variation, morpheme-sized units or codebooks with homophones. Descriptive measurements, not read for or against syllables: B's held-out token-bigram gain above a within-line shuffle is +0.02 (every natural text 0.12-0.35, word- or syllable-written; Naibbe +0.02, Timm 0.00; B's pair coverage 0.67 is within the word-text range); identical adjacent repeats at chance (log O/E +0.03; every control text -4.4 to -0.6). Same inventory logic at MIDDLE level: C2036.	2	B, token_unit, syllable, chinese, vocabulary, negative_knowledge, PHASE_767
 
 ---
 

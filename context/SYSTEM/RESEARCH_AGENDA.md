@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.29, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.30, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -49,9 +49,13 @@ text made to look meaningful? And, if it carries content, what content?
       code.
     - Open: procedures written as fluent word-like tokens, and structure at line, paragraph and page level
       (line position is B's strongest difference from gibberish, PHASE_764).
+1c. **Token-unit (syllable) test.** Done: PHASE_767, C2085 — plain syllable writing EXCLUDED on unit inventory.
+    - B has 5,141 types per 20,000 tokens; syllable-written controls 685–1,338; k* > 16 spellings per syllable.
+    - Open: syllables written with spelling variation, morpheme-sized units (item 2).
 2. **The untested rival generators.**
-   - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose
-     cipher, each through the PHASE_757 harness with noise parity.
+   - What: the Rugg grille (Parisel's public code), a word-level codebook, a syllable codebook with spelling variation
+     (one spelling per syllable is excluded, C2085) and a modified verbose cipher, each through the PHASE_757
+     harness with noise parity.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**

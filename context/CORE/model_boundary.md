@@ -55,9 +55,10 @@
 > **Scope note (v7.25):** exclusions are scoped to what was tested (STATUS_BRIEF §4; `falsifications.md`).
 > Excluded: natural language written one token per word (C132, C2015, C2022); token ≈ word codes, atom-level
 > polyalphabetic ciphers and three published decipherments (C1976, C2017); the Naibbe verbose homophonic cipher as
-> published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk over a coordinate lookup (C2079).
-> **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille. Excluding a rival is not
-> evidence for the working interpretation.
+> published (C2080); Timm & Schinner copy-and-modify (C2077); a table walk over a coordinate lookup (C2079); plain
+> syllable writing with one spelling per syllable (C2085).
+> **Untested:** syllables written with spelling variation, word-level codebooks, modified verbose ciphers, the Rugg
+> grille. Excluding a rival is not evidence for the working interpretation.
 
 | Claim | Status | Evidence |
 |-------|--------|----------|

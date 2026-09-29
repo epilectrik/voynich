@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.29, 2026-09-28)
+# Status Brief — what currently stands (v7.30, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -99,9 +99,15 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
   - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
     repetition and near-repetition, and a narrower word-initial choice.
-- **Untested:** syllable- or word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a
-  practised script at book scale. Excluding a rival is not
-  evidence for the working interpretation.
+- **Syllable writing, or a syllable codebook, with one spelling per syllable:** tested and excluded on unit
+  inventory (C2085, PHASE_767).
+  - B has 5,141 types per 20,000 tokens. The syllable-written controls (Mandarin Pinyin, Vietnamese, Lahu Si and
+    five syllabified European texts) have 685–1,338.
+  - Syllable texts need more than 16 random spellings per syllable to reach B's vocabulary.
+  - This does not say B's tokens are words or language.
+- **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
+  units, word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a practised script
+  at book scale. Excluding a rival is not evidence for the working interpretation.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
 - **The claim is still presented as structure:** rewrite the passage to state the current status in plain words and

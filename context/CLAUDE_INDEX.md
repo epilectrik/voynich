@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.29 | **Status:** characterization ACTIVE | **Constraints:** 1,891 live in the generated table (T0 2, T1 38, T2 1,681, T3 166, T4 4) | **Phases:** 766 | **Date:** 2026-09-28
+**Version:** 7.30 | **Status:** characterization ACTIVE | **Constraints:** 1,892 live in the generated table (T0 2, T1 38, T2 1,682, T3 166, T4 4) | **Phases:** 767 | **Date:** 2026-09-28
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -20,7 +20,7 @@
 
 **Working interpretation (Tier 3):** the grammar is read as procedural notation (a family of programs for a process); no current measurement distinguishes this from other constrained notations. The former reading ("closed-loop, kernel-centric control programs") lost its supports on re-check — kernel C089 superseded by C2082; closed-loop legs withdrawn (C171, Tier 3); see [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md).
 
-Not natural language written one token per word (C132, C2015, C2022); the cipher classes tested so far are excluded — token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner copy-and-modify (C2077), and the Naibbe verbose homophonic cipher as published (PHASE_757, C2080). Syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille remain untested (STATUS_BRIEF §4). The older Tier-3 phrase "a control-system reference manual" rests on the withdrawn control legs (C171, C120 demoted to Tier 3).
+Not natural language written one token per word (C132, C2015, C2022); the cipher classes tested so far are excluded — token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner copy-and-modify (C2077), and the Naibbe verbose homophonic cipher as published (PHASE_757, C2080). Plain syllable writing (one spelling per syllable) is excluded on unit inventory (C2085); syllables written with spelling variation, word-level codebooks, modified verbose ciphers and the Rugg grille remain untested (STATUS_BRIEF §4). The older Tier-3 phrase "a control-system reference manual" rests on the withdrawn control legs (C171, C120 demoted to Tier 3).
 
 | Metric | Value |
 |--------|-------|
@@ -246,7 +246,7 @@ requires explicit authorization from the user.
 These approaches have been tested and rejected (tiers vary — check each number in `CONSTRAINT_TABLE.txt`; the current scoped list of excluded rivals is [SYSTEM/STATUS_BRIEF.md](SYSTEM/STATUS_BRIEF.md) §4):
 
 - **Language encoding** - natural language written one token per word is excluded (C132, C2015, C2022). The older "0.19% reference rate" figure (C130, Phase X.5) is tainted and not relied on.
-- **Cipher encoding** - only the classes actually tested are excluded: token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner (C2077), the Naibbe cipher as published (C2080). The older blanket line "transforms decrease mutual information (Phase G)" is scoped: syllable- or word-level codebooks, modified verbose ciphers and the Rugg grille are untested.
+- **Cipher encoding** - only the classes actually tested are excluded: token≈word codes, atom-level polyalphabetic ciphers, three published decipherments (C1976, C2017), Timm & Schinner (C2077), the Naibbe cipher as published (C2080). The older blanket line "transforms decrease mutual information (Phase G)" is scoped: plain syllable writing is excluded on unit inventory (C2085); syllables written with spelling variation, word-level codebooks, modified verbose ciphers and the Rugg grille are untested.
 - **Glyph-level semantics** - 0 identifier tokens found (Phase 19)
 - **Illustration-dependent logic** - swap invariance p=1.0 (Phase ILL)
 - **Step-by-step recipe format** - families are emergent (Phase FSS)
@@ -297,7 +297,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.29) | 1,891 (T0 2, T1 38, T2 1,681, T3 166, T4 4) |
+| Live constraints (generated table, v7.30) | 1,892 (T0 2, T1 38, T2 1,682, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
