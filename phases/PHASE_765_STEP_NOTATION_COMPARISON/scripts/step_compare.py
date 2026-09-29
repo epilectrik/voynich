@@ -28,7 +28,7 @@ import sn765 as SN  # noqa: E402
 ROOT = G.ROOT
 OUT = ROOT / 'phases/PHASE_765_STEP_NOTATION_COMPARISON/results'
 OUT.mkdir(parents=True, exist_ok=True)
-LOG = open(OUT / 'run_log.txt', 'w', encoding='utf-8')
+LOG = None  # opened on first log() call, so importing this module (PHASE_767 does) never truncates the run log
 T0 = time.time()
 P, R_SHUF, N_CH, N_CH_B, N_BOOT = 197, 200, 100, 400, 1000
 RES = {'phase': 'PHASE_765', 'pre_registration_commit': 'd9bb96f'}
@@ -36,6 +36,9 @@ GLYPH_RE = G.GLYPH_RE
 
 
 def log(*a):
+    global LOG
+    if LOG is None:
+        LOG = open(OUT / 'run_log.txt', 'w', encoding='utf-8')
     msg = ' '.join(str(x) for x in a)
     print(f'[{time.time() - T0:6.0f}s] {msg}', flush=True)
     LOG.write(f'[{time.time() - T0:6.0f}s] {msg}\n')
