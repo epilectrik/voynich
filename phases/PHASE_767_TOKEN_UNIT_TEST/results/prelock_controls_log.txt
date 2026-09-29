@@ -1,0 +1,82 @@
+[   16.1s] A WORD_la replayed OK 5 windows
+[   29.8s] A WORD_it replayed OK 5 windows
+[   44.6s] A WORD_es replayed OK 5 windows
+[   58.8s] A WORD_de replayed OK 5 windows
+[   71.3s] A WORD_en replayed OK 5 windows
+[   92.7s] A SYL_la replayed OK 5 windows
+[  109.3s] A SYL_it replayed OK 5 windows
+[  125.0s] A SYL_es replayed OK 5 windows
+[  140.8s] A SYL_de replayed OK 5 windows
+[  155.2s] A SYL_en replayed OK 5 windows
+[  160.1s] A NAT_pinyin_tones replayed OK 1 windows
+[  164.5s] A NAT_pinyin_notones replayed OK 1 windows
+[  177.8s] A NAT_vietnamese replayed OK 5 windows
+[  191.1s] A HOW_French replayed OK 5 windows
+[  204.7s] A HOW_Greek replayed OK 5 windows
+[  212.7s] A HOW_Russian replayed OK 2 windows
+[  221.3s] A HOW_Anglo-Saxon replayed OK 3 windows
+[  225.8s] A HOW_Flemish replayed OK 1 windows
+[  237.4s] A HOW_Arabic replayed OK 5 windows
+[  249.3s] A HOW_Hebrew replayed OK 5 windows
+[  262.8s] A HOW_Maori replayed OK 5 windows
+[  274.7s] A HOW_Swahili replayed OK 5 windows
+[  287.6s] A HOW_Tagalog replayed OK 5 windows
+[  299.5s] A HOW_Turkish replayed OK 5 windows
+[  311.6s] A HOW_Esperanto replayed OK 5 windows
+[  315.6s] A HOW_Interlingua replayed OK 1 windows
+[  326.9s] A HOW_Neo-Quenya replayed OK 5 windows
+[  339.2s] A HOW_Volapuk replayed OK 5 windows
+[  350.9s] B NAT_cuv_tones 5 {'F1_vocab': 2.869, 'F2_heaps': 0.313, 'F3_bigram_gain': 0.177, 'F4_repeat': -0.848, 'F5_coupling': 0.043, 'F6_near_repeat': -0.281}
+[  362.1s] B NAT_cuv_notones 5 {'F1_vocab': 2.538, 'F2_heaps': 0.175, 'F3_bigram_gain': 0.12, 'F4_repeat': -0.596, 'F5_coupling': 0.014, 'F6_near_repeat': -0.09}
+[  376.7s] B NAT_lahu 5 {'F1_vocab': 2.836, 'F2_heaps': 0.354, 'F3_bigram_gain': 0.332, 'F4_repeat': -1.381, 'F5_coupling': 0.052, 'F6_near_repeat': -0.182}
+[  394.5s] C la {'F1_vocab': 2.856, 'F2_heaps': 0.334, 'F3_bigram_gain': 0.22, 'F4_repeat': -1.496, 'F5_coupling': 0.09, 'F6_near_repeat': -0.049}
+[  407.7s] C it {'F1_vocab': 2.883, 'F2_heaps': 0.371, 'F3_bigram_gain': 0.234, 'F4_repeat': -1.248, 'F5_coupling': 0.116, 'F6_near_repeat': -0.067}
+[  420.1s] C es {'F1_vocab': 2.848, 'F2_heaps': 0.344, 'F3_bigram_gain': 0.221, 'F4_repeat': -1.361, 'F5_coupling': 0.08, 'F6_near_repeat': -0.09}
+[  432.1s] C de {'F1_vocab': 3.113, 'F2_heaps': 0.453, 'F3_bigram_gain': 0.227, 'F4_repeat': -0.697, 'F5_coupling': 0.079, 'F6_near_repeat': -0.278}
+[  443.3s] C en {'F1_vocab': 3.095, 'F2_heaps': 0.447, 'F3_bigram_gain': 0.262, 'F4_repeat': -2.57, 'F5_coupling': 0.07, 'F6_near_repeat': -0.199}
+[  451.3s] D WORD_la 5
+[  457.2s] D WORD_it 5
+[  463.1s] D WORD_es 5
+[  469.0s] D WORD_de 5
+[  474.7s] D WORD_en 5
+[  489.2s] D SYL_la 5
+[  499.2s] D SYL_it 5
+[  508.5s] D SYL_es 5
+[  517.3s] D SYL_de 5
+[  525.8s] D SYL_en 5
+[  526.7s] D NAT_pinyin_tones 2
+[  527.7s] D NAT_pinyin_notones 2
+[  533.5s] D NAT_vietnamese 5
+[  540.3s] D HOW_French 5
+[  545.7s] D HOW_Greek 5
+[  549.5s] D HOW_Russian 5
+[  552.7s] D HOW_Anglo-Saxon 5
+[  553.7s] D HOW_Flemish 2
+[  557.9s] D HOW_Arabic 5
+[  562.4s] D HOW_Hebrew 5
+[  570.1s] D HOW_Maori 5
+[  575.5s] D HOW_Swahili 5
+[  582.0s] D HOW_Tagalog 5
+[  586.7s] D HOW_Turkish 5
+[  592.2s] D HOW_Esperanto 5
+[  593.0s] D HOW_Interlingua 2
+[  597.7s] D HOW_Neo-Quenya 5
+[  602.7s] D HOW_Volapuk 5
+[  608.4s] D NAT_cuv_tones 5
+[  614.3s] D NAT_cuv_notones 5
+[  623.6s] D NAT_lahu 5
+[  638.7s] D SYLV4_la 5
+[  649.1s] D SYLV4_it 5
+[  660.0s] D SYLV4_es 5
+[  669.2s] D SYLV4_de 5
+[  678.4s] D SYLV4_en 5
+[  740.5s] E SYL_la done
+[  782.6s] E SYL_it done
+[  820.9s] E SYL_es done
+[  856.8s] E SYL_de done
+[  889.5s] E SYL_en done
+[  893.8s] E NAT_pinyin_tones done
+[  918.5s] E NAT_vietnamese done
+[  943.6s] E NAT_cuv_tones done
+[  983.8s] E NAT_lahu done
+[  983.8s] done

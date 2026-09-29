@@ -1,0 +1,177 @@
+{
+ "validation": {
+  "F1_vocab": {
+   "m_W": 3.46014581749175,
+   "m_S": 2.851869600729766,
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.982,
+    "NAT_vietnamese": 0.549
+   },
+   "heldout_word_side": "14/15",
+   "heldout_failures": {
+    "HOW_Maori": 0.669
+   },
+   "valid": true
+  },
+  "F2_heaps": {
+   "m_W": 0.6686744339120116,
+   "m_S": 0.3542042592400629,
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 1.154,
+    "NAT_vietnamese": 0.667
+   },
+   "heldout_word_side": "14/15",
+   "heldout_failures": {
+    "HOW_Maori": 0.511
+   },
+   "valid": true
+  },
+  "F3_bigram_gain": {
+   "m_W": 0.1352624066144109,
+   "m_S": 0.22162455726303465,
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.502,
+    "NAT_vietnamese": 0.818
+   },
+   "heldout_word_side": "15/15",
+   "heldout_failures": {},
+   "valid": true
+  },
+  "F4_repeat": {
+   "m_W": -2.9453136798354715,
+   "m_S": -1.3142232403845295,
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 1.221,
+    "NAT_vietnamese": 0.871
+   },
+   "heldout_word_side": "8/15",
+   "heldout_failures": {
+    "HOW_Russian": 1.041,
+    "HOW_Anglo-Saxon": 1.109,
+    "HOW_Flemish": 0.652,
+    "HOW_Arabic": 0.784,
+    "HOW_Hebrew": 0.855,
+    "HOW_Turkish": 1.036,
+    "HOW_Interlingua": 0.525
+   },
+   "valid": false
+  },
+  "F5_coupling": {
+   "m_W": 0.019995463599527304,
+   "m_S": 0.06751589900393733,
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.365,
+    "NAT_vietnamese": 0.279
+   },
+   "heldout_word_side": "14/15",
+   "heldout_failures": {
+    "HOW_Tagalog": 0.783
+   },
+   "valid": false
+  },
+  "F6_near_repeat": {
+   "m_W": -0.5025627981638865,
+   "m_S": -0.055389654740231845,
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.69,
+    "NAT_vietnamese": 1.188
+   },
+   "heldout_word_side": "11/15",
+   "heldout_failures": {
+    "HOW_Anglo-Saxon": 1.171,
+    "HOW_Hebrew": 0.669,
+    "HOW_Maori": 0.656,
+    "HOW_Turkish": 1.601
+   },
+   "valid": false
+  }
+ },
+ "F_star": [
+  "F1_vocab",
+  "F2_heaps",
+  "F3_bigram_gain"
+ ],
+ "leave_one_pair_out": {
+  "WORD_la": {
+   "S": -0.478,
+   "correct": true
+  },
+  "SYL_la": {
+   "S": 1.153,
+   "correct": true
+  },
+  "WORD_it": {
+   "S": 0.026,
+   "correct": true
+  },
+  "SYL_it": {
+   "S": 1.106,
+   "correct": true
+  },
+  "WORD_es": {
+   "S": -0.014,
+   "correct": true
+  },
+  "SYL_es": {
+   "S": 1.155,
+   "correct": true
+  },
+  "WORD_de": {
+   "S": -0.043,
+   "correct": true
+  },
+  "SYL_de": {
+   "S": 0.805,
+   "correct": true
+  },
+  "WORD_en": {
+   "S": 0.274,
+   "correct": true
+  },
+  "SYL_en": {
+   "S": 0.899,
+   "correct": true
+  }
+ },
+ "lopo_correct": 10,
+ "mean_index_controls": {
+  "WORD_la": -0.368,
+  "WORD_it": 0.029,
+  "WORD_es": -0.015,
+  "WORD_de": -0.031,
+  "WORD_en": 0.227,
+  "SYL_la": 1.019,
+  "SYL_it": 0.984,
+  "SYL_es": 1.019,
+  "SYL_de": 0.796,
+  "SYL_en": 0.905,
+  "NAT_pinyin_tones": 0.879,
+  "NAT_pinyin_notones": 1.013,
+  "NAT_vietnamese": 0.678,
+  "HOW_French": 0.149,
+  "HOW_Greek": -0.139,
+  "HOW_Russian": -0.246,
+  "HOW_Anglo-Saxon": -0.332,
+  "HOW_Flemish": -0.2,
+  "HOW_Arabic": -0.44,
+  "HOW_Hebrew": -0.483,
+  "HOW_Maori": 0.49,
+  "HOW_Swahili": -0.181,
+  "HOW_Tagalog": 0.176,
+  "HOW_Turkish": -0.434,
+  "HOW_Esperanto": -0.049,
+  "HOW_Interlingua": -0.191,
+  "HOW_Neo-Quenya": -0.29,
+  "HOW_Volapuk": -0.288
+ },
+ "V3_validation_F_star": [
+  "F1_vocab",
+  "F2_heaps"
+ ]
+}

@@ -1,0 +1,1340 @@
+{
+ "validation_N20000": {
+  "F1_vocab": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.982,
+    "NAT_cuv_tones": 0.972,
+    "NAT_vietnamese": 0.549,
+    "NAT_lahu": 1.027
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.669
+   },
+   "valid": true
+  },
+  "F2_heaps": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 1.154,
+    "NAT_cuv_tones": 1.13,
+    "NAT_vietnamese": 0.667,
+    "NAT_lahu": 1.001
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.511
+   },
+   "valid": true
+  },
+  "F3_bigram_gain": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.502,
+    "NAT_cuv_tones": 0.479,
+    "NAT_vietnamese": 0.818,
+    "NAT_lahu": 2.279
+   },
+   "heldout_word_side": "15/15",
+   "heldout_fail": {},
+   "valid": false
+  },
+  "F4_repeat": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 1.221,
+    "NAT_cuv_tones": 1.286,
+    "NAT_vietnamese": 0.871,
+    "NAT_lahu": 0.959
+   },
+   "heldout_word_side": "8/15",
+   "heldout_fail": {
+    "HOW_Russian": 1.041,
+    "HOW_Anglo-Saxon": 1.109,
+    "HOW_Flemish": 0.652,
+    "HOW_Arabic": 0.784,
+    "HOW_Hebrew": 0.855,
+    "HOW_Turkish": 1.036,
+    "HOW_Interlingua": 0.525
+   },
+   "valid": false
+  },
+  "F5_coupling": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.365,
+    "NAT_cuv_tones": 0.492,
+    "NAT_vietnamese": 0.279,
+    "NAT_lahu": 0.673
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Tagalog": 0.783
+   },
+   "valid": false
+  },
+  "F6_near_repeat": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.69,
+    "NAT_cuv_tones": 0.496,
+    "NAT_vietnamese": 1.188,
+    "NAT_lahu": 0.717
+   },
+   "heldout_word_side": "11/15",
+   "heldout_fail": {
+    "HOW_Anglo-Saxon": 1.171,
+    "HOW_Hebrew": 0.669,
+    "HOW_Maori": 0.656,
+    "HOW_Turkish": 1.601
+   },
+   "valid": false
+  },
+  "X_vge2": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.85,
+    "NAT_cuv_tones": 0.864,
+    "NAT_vietnamese": 0.368,
+    "NAT_lahu": 1.063
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.741
+   },
+   "valid": false
+  },
+  "X_t80": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.803,
+    "NAT_cuv_tones": 0.818,
+    "NAT_vietnamese": 0.413,
+    "NAT_lahu": 1.098
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 1.105
+   },
+   "valid": false
+  }
+ },
+ "validation_N20000_V3": {
+  "F1_vocab": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_notones": 1.512,
+    "NAT_cuv_notones": 1.516,
+    "NAT_vietnamese": 0.549,
+    "NAT_lahu": 1.027
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.669
+   },
+   "valid": true
+  },
+  "F2_heaps": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_notones": 1.575,
+    "NAT_cuv_notones": 1.571,
+    "NAT_vietnamese": 0.667,
+    "NAT_lahu": 1.001
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.511
+   },
+   "valid": true
+  },
+  "F3_bigram_gain": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_notones": -0.048,
+    "NAT_cuv_notones": -0.18,
+    "NAT_vietnamese": 0.818,
+    "NAT_lahu": 2.279
+   },
+   "heldout_word_side": "15/15",
+   "heldout_fail": {},
+   "valid": false
+  }
+ },
+ "cert_N20000": {
+  "axes": {
+   "F1_vocab": [
+    3.46014581749175,
+    2.851869600729766
+   ],
+   "F2_heaps": [
+    0.6686744339120116,
+    0.3542042592400629
+   ]
+  },
+  "margin_mV": 0.042726701346200616,
+  "thresholds": [
+   0.4145465973075988,
+   0.5854534026924012
+  ],
+  "native_window_vocab": {
+   "NAT_pinyin_tones": [
+    1.068
+   ],
+   "NAT_cuv_tones": [
+    1.051,
+    1.05,
+    1.066,
+    1.058,
+    1.107
+   ],
+   "NAT_vietnamese": [
+    0.625,
+    0.636,
+    0.561,
+    0.63,
+    0.618
+   ],
+   "NAT_lahu": [
+    0.986,
+    1.06,
+    1.014,
+    1.062,
+    0.982
+   ]
+  },
+  "native_window_calls": {
+   "NAT_pinyin_tones": [
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_tones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_vietnamese": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "INDETERMINATE",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_lahu": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ]
+  },
+  "heldout_vocab": {
+   "HOW_Anglo-Saxon": -0.208,
+   "HOW_Arabic": -0.4,
+   "HOW_Esperanto": -0.097,
+   "HOW_Flemish": 0.026,
+   "HOW_French": 0.025,
+   "HOW_Greek": -0.246,
+   "HOW_Hebrew": -0.332,
+   "HOW_Interlingua": -0.007,
+   "HOW_Maori": 0.59,
+   "HOW_Neo-Quenya": -0.163,
+   "HOW_Russian": -0.358,
+   "HOW_Swahili": -0.229,
+   "HOW_Tagalog": 0.046,
+   "HOW_Turkish": -0.39,
+   "HOW_Volapuk": -0.29
+  },
+  "heldout_calls": {
+   "HOW_Anglo-Saxon": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Arabic": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Esperanto": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Flemish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_French": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Greek": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Hebrew": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Interlingua": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Maori": "SYLLABLE-SIZED INVENTORY",
+   "HOW_Neo-Quenya": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Russian": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Swahili": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Tagalog": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Turkish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Volapuk": "PLAIN-SYLLABLE EXCLUDED"
+  },
+  "heldout_excluded": "14/15",
+  "EXCLUDED_certified": true,
+  "SYLLABLE_SIZED_certified": false
+ },
+ "cert_N20000_V3": {
+  "axes": {
+   "F1_vocab": [
+    3.46014581749175,
+    2.851869600729766
+   ],
+   "F2_heaps": [
+    0.6686744339120116,
+    0.3542042592400629
+   ]
+  },
+  "margin_mV": 0.042726701346200616,
+  "thresholds": [
+   0.4145465973075988,
+   0.5854534026924012
+  ],
+  "native_window_vocab": {
+   "NAT_pinyin_notones": [
+    1.544
+   ],
+   "NAT_cuv_notones": [
+    1.546,
+    1.545,
+    1.553,
+    1.543,
+    1.537
+   ]
+  },
+  "native_window_calls": {
+   "NAT_pinyin_notones": [
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_notones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ]
+  },
+  "heldout_vocab": {
+   "HOW_Anglo-Saxon": -0.208,
+   "HOW_Arabic": -0.4,
+   "HOW_Esperanto": -0.097,
+   "HOW_Flemish": 0.026,
+   "HOW_French": 0.025,
+   "HOW_Greek": -0.246,
+   "HOW_Hebrew": -0.332,
+   "HOW_Interlingua": -0.007,
+   "HOW_Maori": 0.59,
+   "HOW_Neo-Quenya": -0.163,
+   "HOW_Russian": -0.358,
+   "HOW_Swahili": -0.229,
+   "HOW_Tagalog": 0.046,
+   "HOW_Turkish": -0.39,
+   "HOW_Volapuk": -0.29
+  },
+  "heldout_calls": {
+   "HOW_Anglo-Saxon": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Arabic": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Esperanto": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Flemish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_French": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Greek": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Hebrew": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Interlingua": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Maori": "SYLLABLE-SIZED INVENTORY",
+   "HOW_Neo-Quenya": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Russian": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Swahili": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Tagalog": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Turkish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Volapuk": "PLAIN-SYLLABLE EXCLUDED"
+  },
+  "heldout_excluded": "14/15",
+  "EXCLUDED_certified": true,
+  "SYLLABLE_SIZED_certified": true
+ },
+ "cert_N20000_V4": {
+  "axes": {
+   "F1_vocab": [
+    3.46014581749175,
+    2.8825245379548803
+   ],
+   "F2_heaps": [
+    0.6686744339120116,
+    0.3706806759065303
+   ]
+  },
+  "margin_mV": 0.046430177166117574,
+  "thresholds": [
+   0.40713964566776484,
+   0.5928603543322352
+  ],
+  "native_window_vocab": {
+   "NAT_pinyin_tones": [
+    1.126
+   ],
+   "NAT_cuv_tones": [
+    1.108,
+    1.107,
+    1.124,
+    1.115,
+    1.167
+   ],
+   "NAT_vietnamese": [
+    0.659,
+    0.671,
+    0.591,
+    0.664,
+    0.652
+   ],
+   "NAT_lahu": [
+    1.039,
+    1.118,
+    1.069,
+    1.12,
+    1.035
+   ],
+   "NAT_pinyin_notones": [
+    1.627
+   ],
+   "NAT_cuv_notones": [
+    1.63,
+    1.628,
+    1.637,
+    1.627,
+    1.62
+   ]
+  },
+  "native_window_calls": {
+   "NAT_pinyin_tones": [
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_tones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_vietnamese": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "INDETERMINATE",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_lahu": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_pinyin_notones": [
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_notones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ]
+  },
+  "heldout_vocab": {
+   "HOW_Anglo-Saxon": -0.219,
+   "HOW_Arabic": -0.422,
+   "HOW_Esperanto": -0.102,
+   "HOW_Flemish": 0.027,
+   "HOW_French": 0.027,
+   "HOW_Greek": -0.26,
+   "HOW_Hebrew": -0.35,
+   "HOW_Interlingua": -0.007,
+   "HOW_Maori": 0.622,
+   "HOW_Neo-Quenya": -0.172,
+   "HOW_Russian": -0.377,
+   "HOW_Swahili": -0.242,
+   "HOW_Tagalog": 0.049,
+   "HOW_Turkish": -0.411,
+   "HOW_Volapuk": -0.306
+  },
+  "heldout_calls": {
+   "HOW_Anglo-Saxon": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Arabic": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Esperanto": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Flemish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_French": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Greek": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Hebrew": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Interlingua": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Maori": "SYLLABLE-SIZED INVENTORY",
+   "HOW_Neo-Quenya": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Russian": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Swahili": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Tagalog": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Turkish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Volapuk": "PLAIN-SYLLABLE EXCLUDED"
+  },
+  "heldout_excluded": "14/15",
+  "EXCLUDED_certified": true,
+  "SYLLABLE_SIZED_certified": false
+ },
+ "validation_N10000": {
+  "F1_vocab": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.95,
+    "NAT_cuv_tones": 0.945,
+    "NAT_vietnamese": 0.491,
+    "NAT_lahu": 1.063
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.726
+   },
+   "valid": false
+  },
+  "F2_heaps": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 1.094,
+    "NAT_cuv_tones": 1.08,
+    "NAT_vietnamese": 0.664,
+    "NAT_lahu": 0.983
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.526
+   },
+   "valid": true
+  },
+  "F3_bigram_gain": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.312,
+    "NAT_cuv_tones": 0.307,
+    "NAT_vietnamese": 0.623,
+    "NAT_lahu": 2.362
+   },
+   "heldout_word_side": "15/15",
+   "heldout_fail": {},
+   "valid": false
+  },
+  "X_vge2": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.785,
+    "NAT_cuv_tones": 0.752,
+    "NAT_vietnamese": 0.22,
+    "NAT_lahu": 1.093
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 0.841
+   },
+   "valid": false
+  },
+  "X_t80": {
+   "pairs_same_sign": true,
+   "natives": {
+    "NAT_pinyin_tones": 0.807,
+    "NAT_cuv_tones": 0.812,
+    "NAT_vietnamese": 0.357,
+    "NAT_lahu": 1.139
+   },
+   "heldout_word_side": "14/15",
+   "heldout_fail": {
+    "HOW_Maori": 1.123
+   },
+   "valid": false
+  }
+ },
+ "cert_N10000": {
+  "axes": {
+   "F1_vocab": [
+    3.27600198996205,
+    2.7730546933642626
+   ],
+   "F2_heaps": [
+    0.48199205110752735,
+    0.26187241611796114
+   ]
+  },
+  "margin_mV": 0.03529770103761859,
+  "thresholds": [
+   0.4294045979247628,
+   0.5705954020752372
+  ],
+  "native_window_vocab": {
+   "NAT_pinyin_tones": [
+    1.033,
+    1.012
+   ],
+   "NAT_cuv_tones": [
+    1.013,
+    1.002,
+    1.02,
+    0.973,
+    1.041
+   ],
+   "NAT_vietnamese": [
+    0.561,
+    0.601,
+    0.586,
+    0.61,
+    0.537
+   ],
+   "NAT_lahu": [
+    0.959,
+    1.048,
+    1.085,
+    1.028,
+    1.019
+   ],
+   "NAT_pinyin_notones": [
+    1.572,
+    1.514
+   ],
+   "NAT_cuv_notones": [
+    1.579,
+    1.519,
+    1.562,
+    1.524,
+    1.564
+   ]
+  },
+  "native_window_calls": {
+   "NAT_pinyin_tones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_tones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_vietnamese": [
+    "INDETERMINATE",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "INDETERMINATE"
+   ],
+   "NAT_lahu": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_pinyin_notones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_notones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ]
+  },
+  "heldout_vocab": {
+   "HOW_Anglo-Saxon": -0.21,
+   "HOW_Arabic": -0.405,
+   "HOW_Esperanto": -0.093,
+   "HOW_Flemish": 0.024,
+   "HOW_French": 0.026,
+   "HOW_Greek": -0.221,
+   "HOW_Hebrew": -0.356,
+   "HOW_Interlingua": 0.018,
+   "HOW_Maori": 0.626,
+   "HOW_Neo-Quenya": -0.186,
+   "HOW_Russian": -0.372,
+   "HOW_Swahili": -0.228,
+   "HOW_Tagalog": 0.033,
+   "HOW_Turkish": -0.428,
+   "HOW_Volapuk": -0.298
+  },
+  "heldout_calls": {
+   "HOW_Anglo-Saxon": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Arabic": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Esperanto": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Flemish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_French": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Greek": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Hebrew": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Interlingua": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Maori": "SYLLABLE-SIZED INVENTORY",
+   "HOW_Neo-Quenya": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Russian": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Swahili": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Tagalog": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Turkish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Volapuk": "PLAIN-SYLLABLE EXCLUDED"
+  },
+  "heldout_excluded": "14/15",
+  "EXCLUDED_certified": true,
+  "SYLLABLE_SIZED_certified": false
+ },
+ "cert_N10000_V4": {
+  "axes": {
+   "F1_vocab": [
+    3.27600198996205,
+    2.787460474518415
+   ],
+   "F2_heaps": [
+    0.48199205110752735,
+    0.2792268527011735
+   ]
+  },
+  "margin_mV": 0.03300031771266257,
+  "thresholds": [
+   0.43399936457467486,
+   0.5660006354253251
+  ],
+  "native_window_vocab": {
+   "NAT_pinyin_tones": [
+    1.095,
+    1.072
+   ],
+   "NAT_cuv_tones": [
+    1.073,
+    1.061,
+    1.08,
+    1.031,
+    1.103
+   ],
+   "NAT_vietnamese": [
+    0.595,
+    0.637,
+    0.622,
+    0.648,
+    0.571
+   ],
+   "NAT_lahu": [
+    1.012,
+    1.107,
+    1.147,
+    1.086,
+    1.076
+   ],
+   "NAT_pinyin_notones": [
+    1.663,
+    1.601
+   ],
+   "NAT_cuv_notones": [
+    1.671,
+    1.606,
+    1.652,
+    1.612,
+    1.655
+   ]
+  },
+  "native_window_calls": {
+   "NAT_pinyin_tones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_tones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_vietnamese": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_lahu": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_pinyin_notones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ],
+   "NAT_cuv_notones": [
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY",
+    "SYLLABLE-SIZED INVENTORY"
+   ]
+  },
+  "heldout_vocab": {
+   "HOW_Anglo-Saxon": -0.221,
+   "HOW_Arabic": -0.424,
+   "HOW_Esperanto": -0.098,
+   "HOW_Flemish": 0.026,
+   "HOW_French": 0.027,
+   "HOW_Greek": -0.232,
+   "HOW_Hebrew": -0.373,
+   "HOW_Interlingua": 0.018,
+   "HOW_Maori": 0.66,
+   "HOW_Neo-Quenya": -0.194,
+   "HOW_Russian": -0.391,
+   "HOW_Swahili": -0.238,
+   "HOW_Tagalog": 0.033,
+   "HOW_Turkish": -0.448,
+   "HOW_Volapuk": -0.312
+  },
+  "heldout_calls": {
+   "HOW_Anglo-Saxon": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Arabic": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Esperanto": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Flemish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_French": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Greek": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Hebrew": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Interlingua": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Maori": "SYLLABLE-SIZED INVENTORY",
+   "HOW_Neo-Quenya": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Russian": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Swahili": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Tagalog": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Turkish": "PLAIN-SYLLABLE EXCLUDED",
+   "HOW_Volapuk": "PLAIN-SYLLABLE EXCLUDED"
+  },
+  "heldout_excluded": "14/15",
+  "EXCLUDED_certified": true,
+  "SYLLABLE_SIZED_certified": true
+ },
+ "lopo_VOCAB_N20000": {
+  "WORD_la": {
+   "VOCAB": -0.378,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "SYL_la": {
+   "VOCAB": 1.261,
+   "call": "SYLLABLE-SIZED INVENTORY",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "WORD_it": {
+   "VOCAB": -0.095,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "SYL_it": {
+   "VOCAB": 1.198,
+   "call": "SYLLABLE-SIZED INVENTORY",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "WORD_es": {
+   "VOCAB": -0.049,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "SYL_es": {
+   "VOCAB": 1.235,
+   "call": "SYLLABLE-SIZED INVENTORY",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "WORD_de": {
+   "VOCAB": 0.109,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "SYL_de": {
+   "VOCAB": 0.672,
+   "call": "SYLLABLE-SIZED INVENTORY",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "WORD_en": {
+   "VOCAB": 0.294,
+   "call": "PLAIN-SYLLABLE EXCLUDED",
+   "correct_rule": true,
+   "correct_half": true
+  },
+  "SYL_en": {
+   "VOCAB": 0.663,
+   "call": "SYLLABLE-SIZED INVENTORY",
+   "correct_rule": true,
+   "correct_half": true
+  }
+ },
+ "E10_variant_spelling": {
+  "SYL_la_k2": {
+   "types": 1229,
+   "VOCAB": 0.769,
+   "SEQ": -0.191,
+   "vge2": 919,
+   "pair_coverage": 0.949
+  },
+  "SYL_la_k4": {
+   "types": 2022,
+   "VOCAB": 0.504,
+   "SEQ": -1.202,
+   "vge2": 1394,
+   "pair_coverage": 0.913
+  },
+  "SYL_la_k8": {
+   "types": 3210,
+   "VOCAB": 0.231,
+   "SEQ": -1.877,
+   "vge2": 2006,
+   "pair_coverage": 0.849
+  },
+  "SYL_la_k16": {
+   "types": 4838,
+   "VOCAB": -0.034,
+   "SEQ": -2.26,
+   "vge2": 2791,
+   "pair_coverage": 0.753
+  },
+  "SYL_it_k2": {
+   "types": 1161,
+   "VOCAB": 0.752,
+   "SEQ": -0.093,
+   "vge2": 815,
+   "pair_coverage": 0.949
+  },
+  "SYL_it_k4": {
+   "types": 1861,
+   "VOCAB": 0.519,
+   "SEQ": -1.141,
+   "vge2": 1251,
+   "pair_coverage": 0.916
+  },
+  "SYL_it_k8": {
+   "types": 2901,
+   "VOCAB": 0.28,
+   "SEQ": -1.962,
+   "vge2": 1809,
+   "pair_coverage": 0.861
+  },
+  "SYL_it_k16": {
+   "types": 4371,
+   "VOCAB": 0.039,
+   "SEQ": -2.327,
+   "vge2": 2448,
+   "pair_coverage": 0.773
+  },
+  "SYL_es_k2": {
+   "types": 1216,
+   "VOCAB": 0.75,
+   "SEQ": -0.047,
+   "vge2": 902,
+   "pair_coverage": 0.948
+  },
+  "SYL_es_k4": {
+   "types": 1996,
+   "VOCAB": 0.484,
+   "SEQ": -1.11,
+   "vge2": 1366,
+   "pair_coverage": 0.908
+  },
+  "SYL_es_k8": {
+   "types": 3144,
+   "VOCAB": 0.218,
+   "SEQ": -1.882,
+   "vge2": 1962,
+   "pair_coverage": 0.846
+  },
+  "SYL_es_k16": {
+   "types": 4726,
+   "VOCAB": -0.038,
+   "SEQ": -2.253,
+   "vge2": 2589,
+   "pair_coverage": 0.749
+  },
+  "SYL_de_k2": {
+   "types": 1984,
+   "VOCAB": 0.427,
+   "SEQ": -0.16,
+   "vge2": 1290,
+   "pair_coverage": 0.893
+  },
+  "SYL_de_k4": {
+   "types": 3064,
+   "VOCAB": 0.188,
+   "SEQ": -1.205,
+   "vge2": 1822,
+   "pair_coverage": 0.831
+  },
+  "SYL_de_k8": {
+   "types": 4522,
+   "VOCAB": -0.04,
+   "SEQ": -1.91,
+   "vge2": 2438,
+   "pair_coverage": 0.743
+  },
+  "SYL_de_k16": {
+   "types": 6436,
+   "VOCAB": -0.27,
+   "SEQ": -2.233,
+   "vge2": 2998,
+   "pair_coverage": 0.62
+  },
+  "SYL_en_k2": {
+   "types": 1975,
+   "VOCAB": 0.41,
+   "SEQ": 0.306,
+   "vge2": 1288,
+   "pair_coverage": 0.896
+  },
+  "SYL_en_k4": {
+   "types": 3037,
+   "VOCAB": 0.17,
+   "SEQ": -0.805,
+   "vge2": 1788,
+   "pair_coverage": 0.834
+  },
+  "SYL_en_k8": {
+   "types": 4447,
+   "VOCAB": -0.052,
+   "SEQ": -1.664,
+   "vge2": 2312,
+   "pair_coverage": 0.749
+  },
+  "SYL_en_k16": {
+   "types": 6246,
+   "VOCAB": -0.27,
+   "SEQ": -2.113,
+   "vge2": 2813,
+   "pair_coverage": 0.637
+  },
+  "NAT_pinyin_tones_k2": {
+   "types": 1309,
+   "VOCAB": 0.751,
+   "SEQ": -0.399,
+   "vge2": 1044,
+   "pair_coverage": 0.952
+  },
+  "NAT_pinyin_tones_k4": {
+   "types": 2227,
+   "VOCAB": 0.44,
+   "SEQ": -1.246,
+   "vge2": 1620,
+   "pair_coverage": 0.911
+  },
+  "NAT_pinyin_tones_k8": {
+   "types": 3583,
+   "VOCAB": 0.138,
+   "SEQ": -1.839,
+   "vge2": 2307,
+   "pair_coverage": 0.832
+  },
+  "NAT_pinyin_tones_k16": {
+   "types": 5404,
+   "VOCAB": -0.134,
+   "SEQ": -2.227,
+   "vge2": 2963,
+   "pair_coverage": 0.714
+  },
+  "NAT_vietnamese_k2": {
+   "types": 2181,
+   "VOCAB": 0.381,
+   "SEQ": -0.37,
+   "vge2": 1462,
+   "pair_coverage": 0.887
+  },
+  "NAT_vietnamese_k4": {
+   "types": 3404,
+   "VOCAB": 0.131,
+   "SEQ": -1.27,
+   "vge2": 2058,
+   "pair_coverage": 0.818
+  },
+  "NAT_vietnamese_k8": {
+   "types": 5023,
+   "VOCAB": -0.106,
+   "SEQ": -1.844,
+   "vge2": 2661,
+   "pair_coverage": 0.719
+  },
+  "NAT_vietnamese_k16": {
+   "types": 7096,
+   "VOCAB": -0.339,
+   "SEQ": -2.194,
+   "vge2": 3222,
+   "pair_coverage": 0.594
+  },
+  "NAT_cuv_tones_k2": {
+   "types": 1302,
+   "VOCAB": 0.752,
+   "SEQ": -0.391,
+   "vge2": 1055,
+   "pair_coverage": 0.952
+  },
+  "NAT_cuv_tones_k4": {
+   "types": 2218,
+   "VOCAB": 0.441,
+   "SEQ": -1.209,
+   "vge2": 1619,
+   "pair_coverage": 0.907
+  },
+  "NAT_cuv_tones_k8": {
+   "types": 3583,
+   "VOCAB": 0.14,
+   "SEQ": -1.842,
+   "vge2": 2303,
+   "pair_coverage": 0.834
+  },
+  "NAT_cuv_tones_k16": {
+   "types": 5408,
+   "VOCAB": -0.135,
+   "SEQ": -2.192,
+   "vge2": 2964,
+   "pair_coverage": 0.72
+  },
+  "NAT_lahu_k2": {
+   "types": 1143,
+   "VOCAB": 0.761,
+   "SEQ": 1.077,
+   "vge2": 857,
+   "pair_coverage": 0.949
+  },
+  "NAT_lahu_k4": {
+   "types": 1889,
+   "VOCAB": 0.498,
+   "SEQ": -0.136,
+   "vge2": 1315,
+   "pair_coverage": 0.911
+  },
+  "NAT_lahu_k8": {
+   "types": 3001,
+   "VOCAB": 0.229,
+   "SEQ": -1.13,
+   "vge2": 1884,
+   "pair_coverage": 0.852
+  },
+  "NAT_lahu_k16": {
+   "types": 4519,
+   "VOCAB": -0.021,
+   "SEQ": -1.852,
+   "vge2": 2512,
+   "pair_coverage": 0.765
+  }
+ },
+ "descriptive_controls_N20000": {
+  "WORD_la": {
+   "types_20k": 4585,
+   "VOCAB": -0.261,
+   "SEQ": -0.582,
+   "F3_minus_shuffle": 0.1565,
+   "pair_coverage": 0.662
+  },
+  "WORD_it": {
+   "types_20k": 3290,
+   "VOCAB": -0.047,
+   "SEQ": 0.181,
+   "F3_minus_shuffle": 0.1908,
+   "pair_coverage": 0.765
+  },
+  "WORD_es": {
+   "types_20k": 2885,
+   "VOCAB": -0.023,
+   "SEQ": 0.0,
+   "F3_minus_shuffle": 0.1851,
+   "pair_coverage": 0.78
+  },
+  "WORD_de": {
+   "types_20k": 2678,
+   "VOCAB": 0.08,
+   "SEQ": -0.251,
+   "F3_minus_shuffle": 0.1536,
+   "pair_coverage": 0.816
+  },
+  "WORD_en": {
+   "types_20k": 1941,
+   "VOCAB": 0.274,
+   "SEQ": 0.134,
+   "F3_minus_shuffle": 0.1886,
+   "pair_coverage": 0.868
+  },
+  "SYL_la": {
+   "types_20k": 711,
+   "VOCAB": 1.047,
+   "SEQ": 0.963,
+   "F3_minus_shuffle": 0.2529,
+   "pair_coverage": 0.974
+  },
+  "SYL_it": {
+   "types_20k": 694,
+   "VOCAB": 1.009,
+   "SEQ": 0.934,
+   "F3_minus_shuffle": 0.2435,
+   "pair_coverage": 0.971
+  },
+  "SYL_es": {
+   "types_20k": 704,
+   "VOCAB": 1.029,
+   "SEQ": 1.0,
+   "F3_minus_shuffle": 0.2495,
+   "pair_coverage": 0.973
+  },
+  "SYL_de": {
+   "types_20k": 1237,
+   "VOCAB": 0.67,
+   "SEQ": 1.048,
+   "F3_minus_shuffle": 0.2561,
+   "pair_coverage": 0.936
+  },
+  "SYL_en": {
+   "types_20k": 1226,
+   "VOCAB": 0.66,
+   "SEQ": 1.394,
+   "F3_minus_shuffle": 0.2966,
+   "pair_coverage": 0.934
+  },
+  "NAT_pinyin_tones": {
+   "types_20k": 729,
+   "VOCAB": 1.068,
+   "SEQ": 0.502,
+   "F3_minus_shuffle": 0.2139,
+   "pair_coverage": 0.978
+  },
+  "NAT_pinyin_notones": {
+   "types_20k": 347,
+   "VOCAB": 1.544,
+   "SEQ": -0.048,
+   "F3_minus_shuffle": 0.1664,
+   "pair_coverage": 0.994
+  },
+  "NAT_vietnamese": {
+   "types_20k": 1338,
+   "VOCAB": 0.608,
+   "SEQ": 0.818,
+   "F3_minus_shuffle": 0.2387,
+   "pair_coverage": 0.928
+  },
+  "HOW_French": {
+   "types_20k": 2840,
+   "VOCAB": 0.025,
+   "SEQ": 0.396,
+   "F3_minus_shuffle": 0.1996,
+   "pair_coverage": 0.795
+  },
+  "HOW_Greek": {
+   "types_20k": 4296,
+   "VOCAB": -0.246,
+   "SEQ": 0.076,
+   "F3_minus_shuffle": 0.2222,
+   "pair_coverage": 0.692
+  },
+  "HOW_Russian": {
+   "types_20k": 5310,
+   "VOCAB": -0.358,
+   "SEQ": -0.021,
+   "F3_minus_shuffle": 0.1721,
+   "pair_coverage": 0.615
+  },
+  "HOW_Anglo-Saxon": {
+   "types_20k": 3912,
+   "VOCAB": -0.208,
+   "SEQ": -0.581,
+   "F3_minus_shuffle": 0.1203,
+   "pair_coverage": 0.73
+  },
+  "HOW_Flemish": {
+   "types_20k": 2860,
+   "VOCAB": 0.026,
+   "SEQ": -0.652,
+   "F3_minus_shuffle": 0.1311,
+   "pair_coverage": 0.797
+  },
+  "HOW_Arabic": {
+   "types_20k": 5902,
+   "VOCAB": -0.4,
+   "SEQ": -0.519,
+   "F3_minus_shuffle": 0.2499,
+   "pair_coverage": 0.589
+  },
+  "HOW_Hebrew": {
+   "types_20k": 5440,
+   "VOCAB": -0.332,
+   "SEQ": -0.786,
+   "F3_minus_shuffle": 0.2193,
+   "pair_coverage": 0.63
+  },
+  "HOW_Maori": {
+   "types_20k": 1130,
+   "VOCAB": 0.59,
+   "SEQ": 0.291,
+   "F3_minus_shuffle": 0.204,
+   "pair_coverage": 0.928
+  },
+  "HOW_Swahili": {
+   "types_20k": 4265,
+   "VOCAB": -0.229,
+   "SEQ": -0.084,
+   "F3_minus_shuffle": 0.2036,
+   "pair_coverage": 0.679
+  },
+  "HOW_Tagalog": {
+   "types_20k": 2539,
+   "VOCAB": 0.046,
+   "SEQ": 0.437,
+   "F3_minus_shuffle": 0.2109,
+   "pair_coverage": 0.806
+  },
+  "HOW_Turkish": {
+   "types_20k": 6041,
+   "VOCAB": -0.39,
+   "SEQ": -0.522,
+   "F3_minus_shuffle": 0.2465,
+   "pair_coverage": 0.583
+  },
+  "HOW_Esperanto": {
+   "types_20k": 3275,
+   "VOCAB": -0.097,
+   "SEQ": 0.048,
+   "F3_minus_shuffle": 0.1861,
+   "pair_coverage": 0.757
+  },
+  "HOW_Interlingua": {
+   "types_20k": 2712,
+   "VOCAB": -0.007,
+   "SEQ": -0.56,
+   "F3_minus_shuffle": 0.1351,
+   "pair_coverage": 0.782
+  },
+  "HOW_Neo-Quenya": {
+   "types_20k": 4022,
+   "VOCAB": -0.163,
+   "SEQ": -0.544,
+   "F3_minus_shuffle": 0.161,
+   "pair_coverage": 0.718
+  },
+  "HOW_Volapuk": {
+   "types_20k": 4719,
+   "VOCAB": -0.29,
+   "SEQ": -0.285,
+   "F3_minus_shuffle": 0.1883,
+   "pair_coverage": 0.639
+  },
+  "NAT_cuv_tones": {
+   "types_20k": 739,
+   "VOCAB": 1.051,
+   "SEQ": 0.479,
+   "F3_minus_shuffle": 0.2182,
+   "pair_coverage": 0.976
+  },
+  "NAT_cuv_notones": {
+   "types_20k": 345,
+   "VOCAB": 1.543,
+   "SEQ": -0.18,
+   "F3_minus_shuffle": 0.1656,
+   "pair_coverage": 0.994
+  },
+  "NAT_lahu": {
+   "types_20k": 685,
+   "VOCAB": 1.014,
+   "SEQ": 2.279,
+   "F3_minus_shuffle": 0.3522,
+   "pair_coverage": 0.969
+  }
+ }
+}

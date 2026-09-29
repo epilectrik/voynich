@@ -1,0 +1,30 @@
+[    0.1s] B line lengths: 2744 lines, mean 7.82
+[   15.4s] WORD_la 204921 5 {'F1_vocab': 3.661, 'F2_heaps': 0.729, 'F3_bigram_gain': 0.085, 'F4_repeat': -2.218, 'F5_coupling': 0.007, 'F6_near_repeat': -0.607}
+[   26.3s] WORD_it 167878 5 {'F1_vocab': 3.517, 'F2_heaps': 0.669, 'F3_bigram_gain': 0.151, 'F4_repeat': -2.945, 'F5_coupling': 0.026, 'F6_near_repeat': -0.332}
+[   35.8s] WORD_es 166461 5 {'F1_vocab': 3.46, 'F2_heaps': 0.683, 'F3_bigram_gain': 0.135, 'F4_repeat': -3.463, 'F5_coupling': 0.016, 'F6_near_repeat': -0.117}
+[   47.6s] WORD_de 169033 5 {'F1_vocab': 3.428, 'F2_heaps': 0.635, 'F3_bigram_gain': 0.114, 'F4_repeat': -2.246, 'F5_coupling': 0.02, 'F6_near_repeat': -0.517}
+[   57.6s] WORD_en 180585 5 {'F1_vocab': 3.288, 'F2_heaps': 0.586, 'F3_bigram_gain': 0.147, 'F4_repeat': -3.402, 'F5_coupling': 0.025, 'F6_near_repeat': -0.503}
+[   77.6s] SYL_la 485496 5 {'F1_vocab': 2.852, 'F2_heaps': 0.325, 'F3_bigram_gain': 0.218, 'F4_repeat': -1.446, 'F5_coupling': 0.088, 'F6_near_repeat': -0.055}
+[   91.3s] SYL_it 328142 5 {'F1_vocab': 2.841, 'F2_heaps': 0.354, 'F3_bigram_gain': 0.216, 'F4_repeat': -1.041, 'F5_coupling': 0.097, 'F6_near_repeat': -0.05}
+[  104.1s] SYL_es 300156 5 {'F1_vocab': 2.848, 'F2_heaps': 0.338, 'F3_bigram_gain': 0.222, 'F4_repeat': -1.314, 'F5_coupling': 0.06, 'F6_near_repeat': -0.048}
+[  116.8s] SYL_de 263792 5 {'F1_vocab': 3.092, 'F2_heaps': 0.438, 'F3_bigram_gain': 0.226, 'F4_repeat': -0.659, 'F5_coupling': 0.068, 'F6_near_repeat': -0.271}
+[  129.4s] SYL_en 263689 5 {'F1_vocab': 3.088, 'F2_heaps': 0.446, 'F3_bigram_gain': 0.256, 'F4_repeat': -2.768, 'F5_coupling': 0.063, 'F6_near_repeat': -0.217}
+[  131.1s] NAT_pinyin_tones 28372 1 {'F1_vocab': 2.863, 'F2_heaps': 0.306, 'F3_bigram_gain': 0.179, 'F4_repeat': -0.953, 'F5_coupling': 0.037, 'F6_near_repeat': -0.194}
+[  132.7s] NAT_pinyin_notones 28372 1 {'F1_vocab': 2.54, 'F2_heaps': 0.173, 'F3_bigram_gain': 0.131, 'F4_repeat': -0.665, 'F5_coupling': 0.012, 'F6_near_repeat': -0.03}
+[  142.3s] NAT_vietnamese 211962 5 {'F1_vocab': 3.126, 'F2_heaps': 0.459, 'F3_bigram_gain': 0.206, 'F4_repeat': -1.525, 'F5_coupling': 0.033, 'F6_near_repeat': 0.029}
+[  152.5s] HOW_French 183551 5 {'F1_vocab': 3.453, 'F2_heaps': 0.656, 'F3_bigram_gain': 0.169, 'F4_repeat': -2.977, 'F5_coupling': 0.02, 'F6_near_repeat': -0.416}
+[  162.0s] HOW_Greek 141374 5 {'F1_vocab': 3.633, 'F2_heaps': 0.734, 'F3_bigram_gain': 0.142, 'F4_repeat': -2.176, 'F5_coupling': 0.015, 'F6_near_repeat': -0.651}
+[  167.0s] HOW_Russian 58602 2 {'F1_vocab': 3.725, 'F2_heaps': 0.757, 'F3_bigram_gain': 0.133, 'F4_repeat': -1.247, 'F5_coupling': 0.01, 'F6_near_repeat': -0.476}
+[  172.6s] HOW_Anglo-Saxon 66755 3 {'F1_vocab': 3.592, 'F2_heaps': 0.731, 'F3_bigram_gain': 0.085, 'F4_repeat': -1.136, 'F5_coupling': 0.015, 'F6_near_repeat': 0.021}
+[  174.1s] HOW_Flemish 23770 1 {'F1_vocab': 3.456, 'F2_heaps': 0.654, 'F3_bigram_gain': 0.079, 'F4_repeat': -1.882, 'F5_coupling': 0.009, 'F6_near_repeat': -0.701}
+[  182.8s] HOW_Arabic 109265 5 {'F1_vocab': 3.771, 'F2_heaps': 0.76, 'F3_bigram_gain': 0.09, 'F4_repeat': -1.667, 'F5_coupling': 0.018, 'F6_near_repeat': -0.413}
+[  192.8s] HOW_Hebrew 109641 5 {'F1_vocab': 3.736, 'F2_heaps': 0.735, 'F3_bigram_gain': 0.067, 'F4_repeat': -1.551, 'F5_coupling': 0.019, 'F6_near_repeat': -0.203}
+[  204.1s] HOW_Maori 233151 5 {'F1_vocab': 3.053, 'F2_heaps': 0.508, 'F3_bigram_gain': 0.16, 'F4_repeat': -3.603, 'F5_coupling': 0.024, 'F6_near_repeat': -0.209}
+[  213.6s] HOW_Swahili 139028 5 {'F1_vocab': 3.63, 'F2_heaps': 0.725, 'F3_bigram_gain': 0.128, 'F4_repeat': -2.152, 'F5_coupling': 0.012, 'F6_near_repeat': -1.191}
+[  226.9s] HOW_Tagalog 189321 5 {'F1_vocab': 3.405, 'F2_heaps': 0.668, 'F3_bigram_gain': 0.173, 'F4_repeat': -4.434, 'F5_coupling': 0.057, 'F6_near_repeat': -0.957}
+[  241.4s] HOW_Turkish 113942 5 {'F1_vocab': 3.781, 'F2_heaps': 0.748, 'F3_bigram_gain': 0.09, 'F4_repeat': -1.255, 'F5_coupling': 0.014, 'F6_near_repeat': 0.213}
+[  254.8s] HOW_Esperanto 156277 5 {'F1_vocab': 3.515, 'F2_heaps': 0.701, 'F3_bigram_gain': 0.139, 'F4_repeat': -3.819, 'F5_coupling': 0.036, 'F6_near_repeat': -0.903}
+[  256.8s] HOW_Interlingua 21435 1 {'F1_vocab': 3.433, 'F2_heaps': 0.687, 'F3_bigram_gain': 0.087, 'F4_repeat': -2.09, 'F5_coupling': 0.018, 'F6_near_repeat': -0.396}
+[  267.7s] HOW_Neo-Quenya 136192 5 {'F1_vocab': 3.604, 'F2_heaps': 0.697, 'F3_bigram_gain': 0.088, 'F4_repeat': -3.129, 'F5_coupling': 0.007, 'F6_near_repeat': -0.393}
+[  279.5s] HOW_Volapuk 132300 5 {'F1_vocab': 3.674, 'F2_heaps': 0.741, 'F3_bigram_gain': 0.111, 'F4_repeat': -2.637, 'F5_coupling': 0.016, 'F6_near_repeat': -0.709}
+[  279.5s] done

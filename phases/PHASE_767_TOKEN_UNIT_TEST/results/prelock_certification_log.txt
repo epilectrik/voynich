@@ -1,0 +1,123 @@
+== validation_N20000
+  F1_vocab         VALID natives {'NAT_pinyin_tones': 0.982, 'NAT_cuv_tones': 0.972, 'NAT_vietnamese': 0.549, 'NAT_lahu': 1.027} held-out 14/15 {'HOW_Maori': 0.669}
+  F2_heaps         VALID natives {'NAT_pinyin_tones': 1.154, 'NAT_cuv_tones': 1.13, 'NAT_vietnamese': 0.667, 'NAT_lahu': 1.001} held-out 14/15 {'HOW_Maori': 0.511}
+  F3_bigram_gain   invalid natives {'NAT_pinyin_tones': 0.502, 'NAT_cuv_tones': 0.479, 'NAT_vietnamese': 0.818, 'NAT_lahu': 2.279} held-out 15/15 {}
+  F4_repeat        invalid natives {'NAT_pinyin_tones': 1.221, 'NAT_cuv_tones': 1.286, 'NAT_vietnamese': 0.871, 'NAT_lahu': 0.959} held-out 8/15 {'HOW_Russian': 1.041, 'HOW_Anglo-Saxon': 1.109, 'HOW_Flemish': 0.652, 'HOW_Arabic': 0.784, 'HOW_Hebrew': 0.855, 'HOW_Turkish': 1.036, 'HOW_Interlingua': 0.525}
+  F5_coupling      invalid natives {'NAT_pinyin_tones': 0.365, 'NAT_cuv_tones': 0.492, 'NAT_vietnamese': 0.279, 'NAT_lahu': 0.673} held-out 14/15 {'HOW_Tagalog': 0.783}
+  F6_near_repeat   invalid natives {'NAT_pinyin_tones': 0.69, 'NAT_cuv_tones': 0.496, 'NAT_vietnamese': 1.188, 'NAT_lahu': 0.717} held-out 11/15 {'HOW_Anglo-Saxon': 1.171, 'HOW_Hebrew': 0.669, 'HOW_Maori': 0.656, 'HOW_Turkish': 1.601}
+  X_vge2           invalid natives {'NAT_pinyin_tones': 0.85, 'NAT_cuv_tones': 0.864, 'NAT_vietnamese': 0.368, 'NAT_lahu': 1.063} held-out 14/15 {'HOW_Maori': 0.741}
+  X_t80            invalid natives {'NAT_pinyin_tones': 0.803, 'NAT_cuv_tones': 0.818, 'NAT_vietnamese': 0.413, 'NAT_lahu': 1.098} held-out 14/15 {'HOW_Maori': 1.105}
+== validation_N20000_V3
+  F1_vocab         VALID natives {'NAT_pinyin_notones': 1.512, 'NAT_cuv_notones': 1.516, 'NAT_vietnamese': 0.549, 'NAT_lahu': 1.027} held-out 14/15 {'HOW_Maori': 0.669}
+  F2_heaps         VALID natives {'NAT_pinyin_notones': 1.575, 'NAT_cuv_notones': 1.571, 'NAT_vietnamese': 0.667, 'NAT_lahu': 1.001} held-out 14/15 {'HOW_Maori': 0.511}
+  F3_bigram_gain   invalid natives {'NAT_pinyin_notones': -0.048, 'NAT_cuv_notones': -0.18, 'NAT_vietnamese': 0.818, 'NAT_lahu': 2.279} held-out 15/15 {}
+== validation_N10000
+  F1_vocab         invalid natives {'NAT_pinyin_tones': 0.95, 'NAT_cuv_tones': 0.945, 'NAT_vietnamese': 0.491, 'NAT_lahu': 1.063} held-out 14/15 {'HOW_Maori': 0.726}
+  F2_heaps         VALID natives {'NAT_pinyin_tones': 1.094, 'NAT_cuv_tones': 1.08, 'NAT_vietnamese': 0.664, 'NAT_lahu': 0.983} held-out 14/15 {'HOW_Maori': 0.526}
+  F3_bigram_gain   invalid natives {'NAT_pinyin_tones': 0.312, 'NAT_cuv_tones': 0.307, 'NAT_vietnamese': 0.623, 'NAT_lahu': 2.362} held-out 15/15 {}
+  X_vge2           invalid natives {'NAT_pinyin_tones': 0.785, 'NAT_cuv_tones': 0.752, 'NAT_vietnamese': 0.22, 'NAT_lahu': 1.093} held-out 14/15 {'HOW_Maori': 0.841}
+  X_t80            invalid natives {'NAT_pinyin_tones': 0.807, 'NAT_cuv_tones': 0.812, 'NAT_vietnamese': 0.357, 'NAT_lahu': 1.139} held-out 14/15 {'HOW_Maori': 1.123}
+== cert_N20000: m_V 0.0427 thresholds 0.415/0.585 | EXCLUDED certified True | SYLLABLE-SIZED certified False | held-out excluded 14/15
+    NAT_pinyin_tones     [1.068] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_tones        [1.051, 1.05, 1.066, 1.058, 1.107] ['SYLLABLE-SIZED INVENTORY']
+    NAT_vietnamese       [0.625, 0.636, 0.561, 0.63, 0.618] ['INDETERMINATE', 'SYLLABLE-SIZED INVENTORY']
+    NAT_lahu             [0.986, 1.06, 1.014, 1.062, 0.982] ['SYLLABLE-SIZED INVENTORY']
+    held-out not excluded: {'HOW_Maori': 0.59}
+== cert_N20000_V3: m_V 0.0427 thresholds 0.415/0.585 | EXCLUDED certified True | SYLLABLE-SIZED certified True | held-out excluded 14/15
+    NAT_pinyin_notones   [1.544] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_notones      [1.546, 1.545, 1.553, 1.543, 1.537] ['SYLLABLE-SIZED INVENTORY']
+    held-out not excluded: {'HOW_Maori': 0.59}
+== cert_N20000_V4: m_V 0.0464 thresholds 0.407/0.593 | EXCLUDED certified True | SYLLABLE-SIZED certified False | held-out excluded 14/15
+    NAT_pinyin_tones     [1.126] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_tones        [1.108, 1.107, 1.124, 1.115, 1.167] ['SYLLABLE-SIZED INVENTORY']
+    NAT_vietnamese       [0.659, 0.671, 0.591, 0.664, 0.652] ['INDETERMINATE', 'SYLLABLE-SIZED INVENTORY']
+    NAT_lahu             [1.039, 1.118, 1.069, 1.12, 1.035] ['SYLLABLE-SIZED INVENTORY']
+    NAT_pinyin_notones   [1.627] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_notones      [1.63, 1.628, 1.637, 1.627, 1.62] ['SYLLABLE-SIZED INVENTORY']
+    held-out not excluded: {'HOW_Maori': 0.622}
+== cert_N10000: m_V 0.0353 thresholds 0.429/0.571 | EXCLUDED certified True | SYLLABLE-SIZED certified False | held-out excluded 14/15
+    NAT_pinyin_tones     [1.033, 1.012] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_tones        [1.013, 1.002, 1.02, 0.973, 1.041] ['SYLLABLE-SIZED INVENTORY']
+    NAT_vietnamese       [0.561, 0.601, 0.586, 0.61, 0.537] ['INDETERMINATE', 'SYLLABLE-SIZED INVENTORY']
+    NAT_lahu             [0.959, 1.048, 1.085, 1.028, 1.019] ['SYLLABLE-SIZED INVENTORY']
+    NAT_pinyin_notones   [1.572, 1.514] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_notones      [1.579, 1.519, 1.562, 1.524, 1.564] ['SYLLABLE-SIZED INVENTORY']
+    held-out not excluded: {'HOW_Maori': 0.626}
+== cert_N10000_V4: m_V 0.0330 thresholds 0.434/0.566 | EXCLUDED certified True | SYLLABLE-SIZED certified True | held-out excluded 14/15
+    NAT_pinyin_tones     [1.095, 1.072] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_tones        [1.073, 1.061, 1.08, 1.031, 1.103] ['SYLLABLE-SIZED INVENTORY']
+    NAT_vietnamese       [0.595, 0.637, 0.622, 0.648, 0.571] ['SYLLABLE-SIZED INVENTORY']
+    NAT_lahu             [1.012, 1.107, 1.147, 1.086, 1.076] ['SYLLABLE-SIZED INVENTORY']
+    NAT_pinyin_notones   [1.663, 1.601] ['SYLLABLE-SIZED INVENTORY']
+    NAT_cuv_notones      [1.671, 1.606, 1.652, 1.612, 1.655] ['SYLLABLE-SIZED INVENTORY']
+    held-out not excluded: {'HOW_Maori': 0.66}
+== LOPO VOCAB: {'WORD_la': (-0.378, 'PLAIN'), 'SYL_la': (1.261, 'SYLLA'), 'WORD_it': (-0.095, 'PLAIN'), 'SYL_it': (1.198, 'SYLLA'), 'WORD_es': (-0.049, 'PLAIN'), 'SYL_es': (1.235, 'SYLLA'), 'WORD_de': (0.109, 'PLAIN'), 'SYL_de': (0.672, 'SYLLA'), 'WORD_en': (0.294, 'PLAIN'), 'SYL_en': (0.663, 'SYLLA')}
+== E10:
+    SYL_la_k2                {'types': 1229, 'VOCAB': 0.769, 'SEQ': -0.191, 'vge2': 919, 'pair_coverage': 0.949}
+    SYL_la_k4                {'types': 2022, 'VOCAB': 0.504, 'SEQ': -1.202, 'vge2': 1394, 'pair_coverage': 0.913}
+    SYL_la_k8                {'types': 3210, 'VOCAB': 0.231, 'SEQ': -1.877, 'vge2': 2006, 'pair_coverage': 0.849}
+    SYL_la_k16               {'types': 4838, 'VOCAB': -0.034, 'SEQ': -2.26, 'vge2': 2791, 'pair_coverage': 0.753}
+    SYL_it_k2                {'types': 1161, 'VOCAB': 0.752, 'SEQ': -0.093, 'vge2': 815, 'pair_coverage': 0.949}
+    SYL_it_k4                {'types': 1861, 'VOCAB': 0.519, 'SEQ': -1.141, 'vge2': 1251, 'pair_coverage': 0.916}
+    SYL_it_k8                {'types': 2901, 'VOCAB': 0.28, 'SEQ': -1.962, 'vge2': 1809, 'pair_coverage': 0.861}
+    SYL_it_k16               {'types': 4371, 'VOCAB': 0.039, 'SEQ': -2.327, 'vge2': 2448, 'pair_coverage': 0.773}
+    SYL_es_k2                {'types': 1216, 'VOCAB': 0.75, 'SEQ': -0.047, 'vge2': 902, 'pair_coverage': 0.948}
+    SYL_es_k4                {'types': 1996, 'VOCAB': 0.484, 'SEQ': -1.11, 'vge2': 1366, 'pair_coverage': 0.908}
+    SYL_es_k8                {'types': 3144, 'VOCAB': 0.218, 'SEQ': -1.882, 'vge2': 1962, 'pair_coverage': 0.846}
+    SYL_es_k16               {'types': 4726, 'VOCAB': -0.038, 'SEQ': -2.253, 'vge2': 2589, 'pair_coverage': 0.749}
+    SYL_de_k2                {'types': 1984, 'VOCAB': 0.427, 'SEQ': -0.16, 'vge2': 1290, 'pair_coverage': 0.893}
+    SYL_de_k4                {'types': 3064, 'VOCAB': 0.188, 'SEQ': -1.205, 'vge2': 1822, 'pair_coverage': 0.831}
+    SYL_de_k8                {'types': 4522, 'VOCAB': -0.04, 'SEQ': -1.91, 'vge2': 2438, 'pair_coverage': 0.743}
+    SYL_de_k16               {'types': 6436, 'VOCAB': -0.27, 'SEQ': -2.233, 'vge2': 2998, 'pair_coverage': 0.62}
+    SYL_en_k2                {'types': 1975, 'VOCAB': 0.41, 'SEQ': 0.306, 'vge2': 1288, 'pair_coverage': 0.896}
+    SYL_en_k4                {'types': 3037, 'VOCAB': 0.17, 'SEQ': -0.805, 'vge2': 1788, 'pair_coverage': 0.834}
+    SYL_en_k8                {'types': 4447, 'VOCAB': -0.052, 'SEQ': -1.664, 'vge2': 2312, 'pair_coverage': 0.749}
+    SYL_en_k16               {'types': 6246, 'VOCAB': -0.27, 'SEQ': -2.113, 'vge2': 2813, 'pair_coverage': 0.637}
+    NAT_pinyin_tones_k2      {'types': 1309, 'VOCAB': 0.751, 'SEQ': -0.399, 'vge2': 1044, 'pair_coverage': 0.952}
+    NAT_pinyin_tones_k4      {'types': 2227, 'VOCAB': 0.44, 'SEQ': -1.246, 'vge2': 1620, 'pair_coverage': 0.911}
+    NAT_pinyin_tones_k8      {'types': 3583, 'VOCAB': 0.138, 'SEQ': -1.839, 'vge2': 2307, 'pair_coverage': 0.832}
+    NAT_pinyin_tones_k16     {'types': 5404, 'VOCAB': -0.134, 'SEQ': -2.227, 'vge2': 2963, 'pair_coverage': 0.714}
+    NAT_vietnamese_k2        {'types': 2181, 'VOCAB': 0.381, 'SEQ': -0.37, 'vge2': 1462, 'pair_coverage': 0.887}
+    NAT_vietnamese_k4        {'types': 3404, 'VOCAB': 0.131, 'SEQ': -1.27, 'vge2': 2058, 'pair_coverage': 0.818}
+    NAT_vietnamese_k8        {'types': 5023, 'VOCAB': -0.106, 'SEQ': -1.844, 'vge2': 2661, 'pair_coverage': 0.719}
+    NAT_vietnamese_k16       {'types': 7096, 'VOCAB': -0.339, 'SEQ': -2.194, 'vge2': 3222, 'pair_coverage': 0.594}
+    NAT_cuv_tones_k2         {'types': 1302, 'VOCAB': 0.752, 'SEQ': -0.391, 'vge2': 1055, 'pair_coverage': 0.952}
+    NAT_cuv_tones_k4         {'types': 2218, 'VOCAB': 0.441, 'SEQ': -1.209, 'vge2': 1619, 'pair_coverage': 0.907}
+    NAT_cuv_tones_k8         {'types': 3583, 'VOCAB': 0.14, 'SEQ': -1.842, 'vge2': 2303, 'pair_coverage': 0.834}
+    NAT_cuv_tones_k16        {'types': 5408, 'VOCAB': -0.135, 'SEQ': -2.192, 'vge2': 2964, 'pair_coverage': 0.72}
+    NAT_lahu_k2              {'types': 1143, 'VOCAB': 0.761, 'SEQ': 1.077, 'vge2': 857, 'pair_coverage': 0.949}
+    NAT_lahu_k4              {'types': 1889, 'VOCAB': 0.498, 'SEQ': -0.136, 'vge2': 1315, 'pair_coverage': 0.911}
+    NAT_lahu_k8              {'types': 3001, 'VOCAB': 0.229, 'SEQ': -1.13, 'vge2': 1884, 'pair_coverage': 0.852}
+    NAT_lahu_k16             {'types': 4519, 'VOCAB': -0.021, 'SEQ': -1.852, 'vge2': 2512, 'pair_coverage': 0.765}
+== descriptive:
+    HOW_Arabic             {'types_20k': 5902, 'VOCAB': -0.4, 'SEQ': -0.519, 'F3_minus_shuffle': 0.2499, 'pair_coverage': 0.589}
+    HOW_Turkish            {'types_20k': 6041, 'VOCAB': -0.39, 'SEQ': -0.522, 'F3_minus_shuffle': 0.2465, 'pair_coverage': 0.583}
+    HOW_Russian            {'types_20k': 5310, 'VOCAB': -0.358, 'SEQ': -0.021, 'F3_minus_shuffle': 0.1721, 'pair_coverage': 0.615}
+    HOW_Hebrew             {'types_20k': 5440, 'VOCAB': -0.332, 'SEQ': -0.786, 'F3_minus_shuffle': 0.2193, 'pair_coverage': 0.63}
+    HOW_Volapuk            {'types_20k': 4719, 'VOCAB': -0.29, 'SEQ': -0.285, 'F3_minus_shuffle': 0.1883, 'pair_coverage': 0.639}
+    WORD_la                {'types_20k': 4585, 'VOCAB': -0.261, 'SEQ': -0.582, 'F3_minus_shuffle': 0.1565, 'pair_coverage': 0.662}
+    HOW_Greek              {'types_20k': 4296, 'VOCAB': -0.246, 'SEQ': 0.076, 'F3_minus_shuffle': 0.2222, 'pair_coverage': 0.692}
+    HOW_Swahili            {'types_20k': 4265, 'VOCAB': -0.229, 'SEQ': -0.084, 'F3_minus_shuffle': 0.2036, 'pair_coverage': 0.679}
+    HOW_Anglo-Saxon        {'types_20k': 3912, 'VOCAB': -0.208, 'SEQ': -0.581, 'F3_minus_shuffle': 0.1203, 'pair_coverage': 0.73}
+    HOW_Neo-Quenya         {'types_20k': 4022, 'VOCAB': -0.163, 'SEQ': -0.544, 'F3_minus_shuffle': 0.161, 'pair_coverage': 0.718}
+    HOW_Esperanto          {'types_20k': 3275, 'VOCAB': -0.097, 'SEQ': 0.048, 'F3_minus_shuffle': 0.1861, 'pair_coverage': 0.757}
+    WORD_it                {'types_20k': 3290, 'VOCAB': -0.047, 'SEQ': 0.181, 'F3_minus_shuffle': 0.1908, 'pair_coverage': 0.765}
+    WORD_es                {'types_20k': 2885, 'VOCAB': -0.023, 'SEQ': 0.0, 'F3_minus_shuffle': 0.1851, 'pair_coverage': 0.78}
+    HOW_Interlingua        {'types_20k': 2712, 'VOCAB': -0.007, 'SEQ': -0.56, 'F3_minus_shuffle': 0.1351, 'pair_coverage': 0.782}
+    HOW_French             {'types_20k': 2840, 'VOCAB': 0.025, 'SEQ': 0.396, 'F3_minus_shuffle': 0.1996, 'pair_coverage': 0.795}
+    HOW_Flemish            {'types_20k': 2860, 'VOCAB': 0.026, 'SEQ': -0.652, 'F3_minus_shuffle': 0.1311, 'pair_coverage': 0.797}
+    HOW_Tagalog            {'types_20k': 2539, 'VOCAB': 0.046, 'SEQ': 0.437, 'F3_minus_shuffle': 0.2109, 'pair_coverage': 0.806}
+    WORD_de                {'types_20k': 2678, 'VOCAB': 0.08, 'SEQ': -0.251, 'F3_minus_shuffle': 0.1536, 'pair_coverage': 0.816}
+    WORD_en                {'types_20k': 1941, 'VOCAB': 0.274, 'SEQ': 0.134, 'F3_minus_shuffle': 0.1886, 'pair_coverage': 0.868}
+    HOW_Maori              {'types_20k': 1130, 'VOCAB': 0.59, 'SEQ': 0.291, 'F3_minus_shuffle': 0.204, 'pair_coverage': 0.928}
+    NAT_vietnamese         {'types_20k': 1338, 'VOCAB': 0.608, 'SEQ': 0.818, 'F3_minus_shuffle': 0.2387, 'pair_coverage': 0.928}
+    SYL_en                 {'types_20k': 1226, 'VOCAB': 0.66, 'SEQ': 1.394, 'F3_minus_shuffle': 0.2966, 'pair_coverage': 0.934}
+    SYL_de                 {'types_20k': 1237, 'VOCAB': 0.67, 'SEQ': 1.048, 'F3_minus_shuffle': 0.2561, 'pair_coverage': 0.936}
+    SYL_it                 {'types_20k': 694, 'VOCAB': 1.009, 'SEQ': 0.934, 'F3_minus_shuffle': 0.2435, 'pair_coverage': 0.971}
+    NAT_lahu               {'types_20k': 685, 'VOCAB': 1.014, 'SEQ': 2.279, 'F3_minus_shuffle': 0.3522, 'pair_coverage': 0.969}
+    SYL_es                 {'types_20k': 704, 'VOCAB': 1.029, 'SEQ': 1.0, 'F3_minus_shuffle': 0.2495, 'pair_coverage': 0.973}
+    SYL_la                 {'types_20k': 711, 'VOCAB': 1.047, 'SEQ': 0.963, 'F3_minus_shuffle': 0.2529, 'pair_coverage': 0.974}
+    NAT_cuv_tones          {'types_20k': 739, 'VOCAB': 1.051, 'SEQ': 0.479, 'F3_minus_shuffle': 0.2182, 'pair_coverage': 0.976}
+    NAT_pinyin_tones       {'types_20k': 729, 'VOCAB': 1.068, 'SEQ': 0.502, 'F3_minus_shuffle': 0.2139, 'pair_coverage': 0.978}
+    NAT_cuv_notones        {'types_20k': 345, 'VOCAB': 1.543, 'SEQ': -0.18, 'F3_minus_shuffle': 0.1656, 'pair_coverage': 0.994}
+    NAT_pinyin_notones     {'types_20k': 347, 'VOCAB': 1.544, 'SEQ': -0.048, 'F3_minus_shuffle': 0.1664, 'pair_coverage': 0.994}
