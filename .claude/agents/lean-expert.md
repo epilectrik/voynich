@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-09-28 22:28
+**Generated:** 2026-09-29 11:54
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -44,13 +44,13 @@ Direct and statistical. State what the numbers and validated constraints say; re
 1. Current Status Brief (read first; overrides older documents)
 2. All Constraints
 3. All Explanatory Fits
-4. Session Methodology Notes (49 feedback rules)
+4. Session Methodology Notes (51 feedback rules)
 
 ---
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.30, 2026-09-28)
+# Status Brief — what currently stands (v7.31, 2026-09-29)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -99,6 +99,13 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - qo tokens alternate with ch/sh tokens above composition (C549);
   - qok→ok/oke above composition (C2056).
 - **Folio units:** shared grammar with folio-unique vocabulary (C531); no duplicate lines or paragraphs (C1790).
+- **The e-run dial is set above the word** (C2086, PHASE_769).
+  - With the word frame, position, paragraph length, section and hand fixed, the choice of e vs ee still varies
+    by folio, shared across different words (z 4.3; confirmed on ZL and on runs both transcribers read alike).
+  - It drifts within pages rather than being fixed per page or per procedure.
+  - Its source (content, writing session, pen, copying) is not identified.
+- **Minim counts are transcription-dependent** (PHASE_769): H-F kappa 0.42 on 1 vs 2+ minims (ain vs aiin).
+  e-run lengths are reliable (kappa 0.95-0.96, PHASE_758).
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
   a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it
@@ -1230,7 +1237,7 @@ C1200	**Order Encodes Procedural State**	2	B, order, state
 C1201	**PREFIX-Mediated Energy State Routing**	2	B, prefix, energy, routing
 C1202	**H-Kernel MIDDLE No Transition Mediation**	2	B, h-kernel, negative
 C1203	**ch/sh MIDDLE Atom-Level Differentiation** (ch-prefix MIDDLEs have higher k-atom fraction (7.1% vs 5.9%) and prefer e-free MIDDLEs: dy 3.1x, k 3.1x, d 2.8x ch-biased; sh-prefix MIDDLEs are more e-enriched (35.1% vs 30.2%); both share core vocabulary but frequency distributions diverge along k/e axis)	2	B, prefix, atoms, ch, sh
-C1204	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** **i-Extension Inverted Gradient** (i-gradient inverted vs e: ii 53.7% > single-i 45.9%, unlike e where single-e 81.1% dominates; driven by aIn family where ii-form is 2x more common; HERBAL highest ii+ rate 67.6%, BIO lowest 46.7%)	2	B, i-atom, extension
+C1204	**[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** **[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** **i-Extension Inverted Gradient** (i-gradient inverted vs e: ii 53.7% > single-i 45.9%, unlike e where single-e 81.1% dominates; driven by aIn family where ii-form is 2x more common; HERBAL highest ii+ rate 67.6%, BIO lowest 46.7%)	2	B, i-atom, extension
 C1205	**i-Atom Orthogonal to k/e Energy System** (i operates on independent axis: no carryover z=-6.14 (anti-clusters), disjoint atom space chi2=2272, folio r(i,k)=-0.437 r(i,e)=-0.412, program-specific within/between=1.83, partial carryover interruption; all signals survive daiin removal)	2	B, i-atom, orthogonality, k/e
 C1206	**Paragraph Kernel Gradient** (h declines r=-0.920 through folio line quintiles while k rises r=+0.727 and e rises r=+0.881; early lines monitoring-heavy, later lines operation-heavy; extends C965 kernel composition shift)	2	B, paragraph, gradient, kernel
 C1207	**[PHASE_754 glyph-unit gate (2026-09-27): the {c,h} cluster is the bench glyph (c and h are its two halves; the folio r≈0.75 is spelling) and the {i,n} link is the minim group. The a↔(in/iin) association persists at glyph level, reflecting the aiin/ain token family; r is mostly a standalone glyph (10.6% inside minim groups)]** **Atom Correlation Clusters** (~20 atoms organize into 5-6 correlated clusters at folio level; {a,i,n,r} iteration axis r=+0.81-0.83, {c,h} monitoring r=+0.75, {k,l} energy r=+0.54, {d,y} closure r=+0.48, {o,p} structural r=+0.41; 64/153 pairs FDR-significant; all survive daiin removal)	2	B, atoms, dimensionality, clusters
@@ -1896,7 +1903,7 @@ C1906	Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to
 C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior	2	B, dark pipeline, HEAD, PREFIX, C1475
 C1908	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Zodiac folio i/d MOD atom swap — **[PHASE_744 SPLIT]**: the i/d token-PARTITION SURVIVES (aiin-family vs -ody-family are nearly mutually-exclusive populations, 3-7% co-occurrence) but is **map-independent and redundant** with C1197/C1204/C1205 (i-atom orthogonal to k/e, NEGATIVE-carryover class). The **SEASONAL enrichment claim is STRUCK** — "Summer/Winter vs Spring/Autumn" pools a **phantom Winter** built from Taurus folios mislabeled as Capricorn/Aquarius (C1688 retracted); the chi2=39.3/p=0.0006 inherits that invalid grouping and the C1684 selection. e_depth "Autumn>Winter" likewise references nonexistent winter. NOT a seasonal finding. See `DATA/ZODIAC_ICONOGRAPHIC_MAP.md`.	2	AZC, zodiac, MOD, atom, ~~seasonal~~, C1197, C1205
 C1909	aiin absolute line-initial exclusion: 0/469 across A, B, and AZC. bare aiin NEVER appears at line position 1. daiin line-initial enrichment is B-specific and absent in A (11.3%, ns). The exclusion is construction-layer; the enrichment is execution-layer	2	GLOBAL, aiin, position, C557, C1234
-C1910	ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split	2	GLOBAL, safety, ii, terminal, C1482, C1484
+C1910	**[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split	2	GLOBAL, safety, ii, terminal, C1482, C1484
 C1911	ii-token HEAD anatomy diverges across systems: a-HEAD rate A=19.2%, B=35.9%, AZC=36.0%. A's ii-tokens are 57% headless. A-specific null hypothesis (ii HEAD = non-ii HEAD) rejected at p=1.3e-143. Safety encoding is morphological (construction-layer) but HEAD selection is execution-layer	2	A, B, AZC, safety, ii, HEAD, C1480, C1507
 C1912	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** ii/ee complementary domain split confirmed cross-system: a-HEAD tokens preferentially use ii (not ee), e-HEAD tokens preferentially use ee (not ii), in all three systems. Two-strategy safety architecture (C1732-C1733) is construction-layer	2	GLOBAL, safety, ii, ee, HEAD, C1732, C1733
 C1913	C1908 swap is aiin-family-driven — **[PHASE_744 SPLIT]**: the morphological decomposition (65-74% of i-tokens are aiin-family; ody-family inverse) SURVIVES as a map-independent fact. The **SEASONAL framing is STRUCK**: "Summer+Winter vs Spring+Autumn" pools the phantom Winter (mislabeled Taurus) — VOID as a seasonal claim, same as C1908.	2	AZC, zodiac, aiin, ~~seasonal~~, C1908
@@ -2068,6 +2075,7 @@ C2082	**Glyph-level re-test of "kernel-centric": the kernel is not restored; wha
 C2083	**Currier B's low-level profile is not nearer to discrete-operation step notations than to prose or gibberish (PHASE_765; negative knowledge; pre-registered, lean-audited).** At 197-pair scale, with every corpus re-wrapped to B's line lengths, the profile is P1 boundary coupling / H(first unit), P2 identical adjacent repeats (log O/E) and P3 near-repeats (log O/E vs within-line shuffle). Unit median distances to B: improvised gibberish 1.31 (nearest); constrained non-notation (Naibbe, Timm, Roget) 1.58; chess SAN 1.71; Latin procedural prose 1.75; meaningful text 2.02; needlework prose 2.17; knitting/crochet notation 3.00; AGC assembly 3.33 (farthest). B's own chunks sit at 0.94. No step-notation subgroup beats prose, gibberish and the floor control. In all 11 needlework books the book's prose is nearer to B than its notation. The result holds in all eight variants (EVA units, +TTR, lower-cased chess, needlework thresholds, authorial lines, digits collapsed, Mahalanobis, each statistic dropped). Modern step notations are more extreme than B in characteristic directions (knitting: strong coupling, no identical repeats, many near-repeats; assembly: anti-repetitive); B is moderate, closest to fluent improvised writing yet more constrained than it (4× coupling). The "discrete workshop operations" model loses this line of support, not the model. Untested: procedures written as fluent word-like tokens; line-, paragraph- and page-level structure. Not evidence of meaninglessness.	2	B, step_notation, knitting, chess, assembly, gibberish, procedural_prose, negative_knowledge, PHASE_765
 C2084	**Pharmaceutical fragment labels do not recur on the herbal page of their visually matched plant (PHASE_766; bounded negative knowledge; pre-registered, lean-audited).** Pairs: the 13 published pharma-herbal visual matches (voynich.nu, after Petersen and Knowles; 5 "same plant", 8 "some similarity") whose labels carry ZL item tags. Statistic: surprisal of the closest label-word match on the herbal page (glyph-unit edit distance <= 2, calibrated over 128 herbal pages); null: permute the 13 page slots. T = 0.78 vs null mean 5.12, p = 0.97; all eight variants p >= 0.74 (same-plant subset T = 0; within-pharma-folio restricted p = 0.96). Power on surrogate pages (no real pairing): MDE80 = 2 of 13 pairs for exact and for one-glyph label words (size 0.045). 10 of 13 labels have no word within two edits of any token on the matched page; 10 of the 15 label words occur nowhere in the herbal text. Excludes labels that reuse a word of their plant's herbal page in >= 2 of 13 pairs. Does not exclude labels as codes, quantities or contents, or names that differ in form between sections; not evidence of meaninglessness. Matches not verified text-blind (that bias could only raise T).	2	A, labels, pharma, herbal, images, negative_knowledge, PHASE_766
 C2085	**Currier B's unit inventory is too large for writing one spelling per syllable with a space after each (PHASE_767; negative knowledge; pre-registered, lean-audited, certified on controls before lock).** At 20,000 tokens B (ZL 3b, uncertain spaces merged) has 5,141 types (H track 4,347; uncertain spaces split 4,248). Syllable-written controls have 685-1,338: Mandarin Pinyin in two texts (Matthew; Chinese Union Version NT), Vietnamese, Lahu Si and five syllabified European NTs (345-347 without tones). Word-written texts have 1,130-6,041. VOCAB index (mean of type-count and type-growth indices; 0 = word-text median, 1 = syllable-text median) -0.34 against the call threshold 0.415; the rule was certified on every native window (none called excluded) and on 14/15 held-out word texts (Maori not). The call holds in 40/40 random folio halves at 10,000 tokens, on B's last 20,000 tokens and in all variants (H track, split spaces, toneless natives, alternative syllabifier, N = 10,000, no re-wrap). Spelling variation: syllable texts need k* > 16 random spellings per syllable to reach B (median VOCAB at k = 16: -0.13). Tail check: the V>=2/T80 screen failed on Vietnamese, so the exclusion may rest partly on B's hapax tail (C566, C740); descriptively B's repeated types (1,449) and 80%-coverage types (1,295) exceed every syllable-written control (at most 976 and 272). Reference generators Naibbe GV1 (4,255 types) and Timm-Schinner (7,557) also fall on the word side. Scope: excludes plain syllable writing only; does not say B's tokens are words or language; does not exclude syllables written with spelling variation, morpheme-sized units or codebooks with homophones. Descriptive measurements, not read for or against syllables: B's held-out token-bigram gain above a within-line shuffle is +0.02 (every natural text 0.12-0.35, word- or syllable-written; Naibbe +0.02, Timm 0.00; B's pair coverage 0.67 is within the word-text range); identical adjacent repeats at chance (log O/E +0.03; every control text -4.4 to -0.6). Same inventory logic at MIDDLE level: C2036.	2	B, token_unit, syllable, chinese, vocabulary, negative_knowledge, PHASE_767
+C2086	**The e-run dial carries a folio-level component shared across words, drift-like, not a fixed per-folio or per-procedure setting (PHASE_769; measurement; pre-registered, lean-audited, 200-replicate calibration on controls).** With the word frame (token with e-runs collapsed, run index), line zone, header line, paragraph-length tercile, section and Davis hand held fixed (within-cell permutation across folios; 5,851 informative of 9,927 e-runs, H track), the 1 vs 2+ choice correlates between a folio's top and bottom halves across different words: S3c +0.323 (null -0.002, SD 0.076; z 4.3; p 0.0005), adjusted for log lines, tokens per line, paragraphs and H-F legibility; ZL transcription check +0.306 (p 0.0005). Holds for word pairs 3+ edits apart (S3-dis z 7.1), on runs H and F read alike (S3-cons +0.276), without token-final runs (+0.318), after k only (+0.259, p 0.010), in S/3 (+0.347, p 0.002) and B/2 (+0.328, p 0.008). Size: folio logit SD about 0.4 (folio propensity SD 7.5 pp). First vs last quarter much weaker (S3far +0.095, p 0.12; S3far/S3c 0.29): the calibration gives 0.70-0.72 for a constant per-folio setting and 0.33 for slow drift, so the component drifts within pages. No paragraph-specific setting (S3P-within p 0.58; the across-folio S3P, p 0.0005, reflects the folio component). Calibrated specificity at alpha 0.01: word-specific effects, strong lag-1 persistence, 1-edit copying, B-fitted local-rule generators and Naibbe <= 3%; slow drift and Timm-style multi-step copying (S3c point estimate +0.25) can produce it. Source not identified: content changing along the page, writing session or habit drift, pen, unrecognised hand, or copying; legibility and folio shape controlled. No reading: the heat-level gloss stays Tier 3; the picture gate passed, so a blind picture-coding test is warranted.	2	B, e-run, extension, dial, folio, drift, frame-controlled, PHASE_769
 
 ---
 
@@ -2075,7 +2083,7 @@ C2085	**Currier B's unit inventory is too large for writing one spelling per syl
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-09-28
+# Generated: 2026-09-29
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -2249,6 +2257,18 @@ The constraint construct may be sound (compare real corpus to baseline-strategy)
 - Headline: 22.3pp "hub savings"
 
 […trimmed — full note: memory/feedback_broken_baseline_audit.md]
+
+---
+
+## feedback-calibrate-on-target-genre
+
+*Bible/NT controls grossly overstate the power of repeat and phrase statistics for recipe or pharmacy text; certify on the target genre*
+
+When a test's power is calibrated on natural-language controls, include held-out texts of the genre the hypothesis is about (Latin recipes, pharmacy, alchemy), not only NT translations. In PHASE_768 the NTs showed 4-gram repeats 37-135x their shuffles in B's skeleton, but the Codicillus recipe text and Mesue's pharmacy only 8.8-9.9x — the Bible-based threshold failed held-out certification exactly on the genre closest to the manuscript.
+
+**Why:** Bible text is unusually formulaic ("and he said unto them"); recipe text reuses ingredient names but varies phrasing, so at B's scale (21.6k tokens, ~9-token lines) its phrase repetition is only ~2-3x what B-like local habits produce.
+
+[…trimmed — full note: memory/feedback_calibrate_on_target_genre.md]
 
 ---
 
@@ -2445,6 +2465,18 @@ The framework gives new findings a place to land. When a new pattern can be told
 **Why:** Crazy-expert formalization 2026-05-15 after f66r-as-glossary collapse (4th operational-story-first trap in one session window):
 
 […trimmed — full note: memory/feedback_framework_as_null.md]
+
+---
+
+## feedback-import-side-effects-phase-scripts
+
+*Importing another phase's run script as a module can execute module-level open(...,'w') and truncate its committed results*
+
+Before importing another phase's *run script* (not a library module) for reuse, check it for module-level side effects: `open(..., 'w')` log handles, result writes, mkdir. PHASE_767 imported PHASE_765's `step_compare.py` for its generator helper, and the module-level `LOG = open(OUT / 'run_log.txt', 'w')` silently truncated PHASE_765's committed run log (restored from git; fixed with a lazy open in 4ebd624).
+
+**Why:** run scripts are written to be executed, not imported; their top level often opens outputs. The damage is silent and shows up only as an unexpected ` M` in git status.
+
+**How to apply:** prefer importing library modules (g764.py, tu767.py, lab766.py). When a run script must be imported, grep it for top-level `open(` first, and check `git status` for unexpected modifications to other phases after every run. Related: [[feedback-numba-cache-importlib-modules]].
 
 ---
 

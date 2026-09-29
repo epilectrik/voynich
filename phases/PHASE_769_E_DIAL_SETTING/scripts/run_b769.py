@@ -23,7 +23,7 @@ import ed769b as B  # noqa: E402
 
 OUT = E.ROOT / 'phases/PHASE_769_E_DIAL_SETTING/results'
 T0 = time.time()
-LOCK = None                 # lock commit, filled at lock
+LOCK = 'b98c287'            # lock commit
 ZL_THRESHOLD = 0.05         # fixed at lock: ZL power at sigma 0.35 = 0.91; ZL S3P power at 0.45 = 0.965
 PARAGRAPH_ARM = 'co-primary'  # fixed at lock: S3P MDE80 about 0.45 (<= 0.6)
 NPERM = 2000
@@ -100,10 +100,7 @@ def main():
         f"-> {res['paragraph_verdict']}")
     log('secondary:', {k: round(v, 4) for k, v in h.items() if k.startswith('p_')},
         {f'{n}_p_S3c': round(res[f'H_{n}']['p_S3c'], 4) for n in ('int', 'cons', 'k')}, 'picture gate', res['picture_gate'])
-    # i-runs (interpretation conditional on the minim kappa, reported separately)
-    Oi = B.add_structure(B.occurrences2(recs, 'i', amap))
-    res['H_i'] = B.Battery(Oi, B.folio_covariates(recs, Oi, leg), paragraph=False).evaluate(
-        Oi['y'], nperm=NPERM, seed=773, stats=('S1', 'S3c'))
+    # i-runs are not analysed (locked pre-registration: H-F minim kappa 0.42)
     # descriptives
     props = propensities(O, recs)
     res['folio_propensity'] = props

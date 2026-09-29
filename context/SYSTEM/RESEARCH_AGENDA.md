@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.30, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.31, 2026-09-29)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -93,6 +93,10 @@ text made to look meaningful? And, if it carries content, what content?
      herbal page of its visually matched plant (13 pairs; MDE80 = 2 pairs). Next: designs that do not assume a
      label is a word of the herbal text (e.g. label agreement within the pharmaceutical section across fragments
      of the same plant), which needs more text-blind plant identifications.
+   - Precondition met: PHASE_769, C2086 — the e-run dial has a folio-level component shared across words, which
+     drifts within pages (no per-procedure setting). The picture gate passed. Next: a blind picture-coding test
+     within one section and hand that codes page regions or position-resolved features, not only whole folios,
+     and that tests multi-step copying and writing-session drift as rival sources.
 9. **Physical structure.**
    - What: PHASE_752 v2 steps 2–3 (bifolium and quire effects on the second transcription), for Malta (video due
      2026-11-09). The Aberdeen negative control is SPECIFIC (PHASE_759).

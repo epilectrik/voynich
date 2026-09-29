@@ -4,6 +4,47 @@
 
 ---
 
+## Version 7.31 (2026-09-29) — PHASE_769: the e-run dial (folio-level component, drift-like; C2086); PHASE_768 design stage
+
+### Summary
+**PHASE_769** is a pre-registered, lean-audited precondition test for the human's heat-level reading of e-run depth.
+With the word frame, position, paragraph length, section and hand fixed, does the choice between e and ee carry a
+setting shared across different words? The calibration used 200 replicates per condition and 15 control conditions:
+folio and paragraph settings, word-specific effects, local persistence, drift, copying, a k-only dial, negative texts.
+
+**Verdict: folio-level component PRESENT; picture gate passed.**
+
+| Statistic | Result |
+|---|---|
+| S3c (top vs bottom half, different words, covariate-adjusted) | +0.323, z 4.3, p 0.0005 |
+| ZL transcription check | p 0.0005 |
+| Words 3+ edits apart | z 7.1 |
+| Runs both transcribers read alike | +0.276 |
+| Recipes S/3 | p 0.002 |
+| Biological B/2 | p 0.008 |
+| First vs last quarter (S3far) | +0.095, ratio 0.29 |
+| Paragraph-specific (S3P-within) | p 0.58 |
+
+- **Drift, not a fixed setting.** The S3far/S3c ratio of 0.29 matches the calibrated drift pattern (0.33), not a
+  constant per-folio setting (0.70–0.72). The dial drifts down the page.
+- **No per-procedure setting.** S3P-within is flat.
+- **Source not identified.** Candidates: content along the page, writing-session drift, pen, copying. Multi-step
+  copying is not excluded.
+- **Transcription finding:** H–F minim-count agreement is κ 0.42, so the ain/aiin distinction depends on the
+  transcription. C1204 and C1910 are annotated. i-runs were not analysed.
+
+**PHASE_768** (hidden repeats) stopped at the design stage, with no statistic computed on B.
+- Exact-repeat tests cannot see a code that spells each unit many ways.
+- Word-level messages are detected, but the strength depends on genre: Latin recipes and pharmacy reach X4 8.8–9.9,
+  against 37–135 for the NT texts.
+- The joint null did not converge at β 2.
+
+### Registry
+- C2086 new (Tier 2, measurement).
+- Live: 1,893 (T0 2, T1 38, T2 1,683, T3 166, T4 4); 769 phases.
+
+---
+
 ## Version 7.30 (2026-09-28) — PHASE_767: token-unit inventory (PLAIN-SYLLABLE EXCLUDED; C2085)
 
 ### Summary

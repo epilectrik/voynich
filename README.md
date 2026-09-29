@@ -95,8 +95,8 @@ the Rugg grille.
 
 | | |
 |---|---|
-| Live constraints | 1,892 (Tier 0: 2, Tier 1: 38, Tier 2: 1,682, Tier 3: 166, Tier 4: 4) |
-| Research phases | 767 |
+| Live constraints | 1,893 (Tier 0: 2, Tier 1: 38, Tier 2: 1,683, Tier 3: 166, Tier 4: 4) |
+| Research phases | 769 |
 | Method | Pre-registration for load-bearing tests; negative controls; external rival generators; test designs audited before lock by a separate statistics-only reviewer (same model, restricted context — a rigor check, not independent confirmation) |
 
 ## Data

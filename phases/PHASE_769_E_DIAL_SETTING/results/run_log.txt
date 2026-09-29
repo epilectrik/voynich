@@ -1,0 +1,11 @@
+[    7.7s] H battery (primary)
+[   18.1s] H S3P-within
+[   21.8s] ZL transcription check
+[   27.2s] subset int
+[   30.6s] subset cons
+[   33.5s] subset k
+[   34.4s] FOLIO ARM: S3c +0.323 (null -0.002 sd 0.076) p 0.0005; ZL p 0.0005 -> FOLIO-LEVEL SETTING PRESENT
+[   34.4s] PARAGRAPH ARM: S3P p 0.0005; ZL p 0.0005; within-folio p 0.5752 -> PROCEDURE-SCALE SETTING PRESENT
+[   34.4s] secondary: {'p_S1': 0.0005, 'p_S3': 0.0005, 'p_S3c': 0.0005, 'p_S3far': 0.1194, 'p_S3dis': 0.0005, 'p_S3P': 0.0005} {'int_p_S3c': 0.0005, 'cons_p_S3c': 0.0005, 'k_p_S3c': 0.01} picture gate True
+[   37.3s] leaf correlation: {'n_pairs': 27, 'r': 0.25570636203464575} | strata: {'S/3': {'S3c': 0.3472781137171672, 'p_S3c': 0.001999000499750125, 'n_occ': 3007, 'n_folios': 22}, 'B/2': {'S3c': 0.32815432829214103, 'p_S3c': 0.0079960019990005, 'n_occ': 2293, 'n_folios': 19}, 'other': {'S3c': 0.170986080679888, 'p_S3c': 0.1729135432283858, 'n_occ': 551, 'n_folios': 34}}
+[   37.4s] done

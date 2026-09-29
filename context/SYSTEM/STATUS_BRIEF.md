@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.30, 2026-09-28)
+# Status Brief — what currently stands (v7.31, 2026-09-29)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -47,6 +47,13 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - qo tokens alternate with ch/sh tokens above composition (C549);
   - qok→ok/oke above composition (C2056).
 - **Folio units:** shared grammar with folio-unique vocabulary (C531); no duplicate lines or paragraphs (C1790).
+- **The e-run dial is set above the word** (C2086, PHASE_769).
+  - With the word frame, position, paragraph length, section and hand fixed, the choice of e vs ee still varies
+    by folio, shared across different words (z 4.3; confirmed on ZL and on runs both transcribers read alike).
+  - It drifts within pages rather than being fixed per page or per procedure.
+  - Its source (content, writing session, pen, copying) is not identified.
+- **Minim counts are transcription-dependent** (PHASE_769): H-F kappa 0.42 on 1 vs 2+ minims (ain vs aiin).
+  e-run lengths are reliable (kappa 0.95-0.96, PHASE_758).
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
   a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it
