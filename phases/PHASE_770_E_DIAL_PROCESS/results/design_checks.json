@@ -1,0 +1,2340 @@
+{
+ "note": "design-stage checks; no dial statistic by folio, position or page turn computed on B",
+ "zl_line_mapping": {
+  "H_lines": 2299,
+  "content_mapped": 2252,
+  "identical_id": 1750,
+  "identical_id_but_other_line": 421
+ },
+ "agreement_H_F": {
+  "E": {
+   "kappa": 0.9842158751373021,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     5654,
+     3
+    ],
+    [
+     56,
+     2755
+    ]
+   ],
+   "n_compared": 8468,
+   "n_H_on_covered_lines": 9845,
+   "share_compared": 0.8601320467242255
+  },
+  "CS": {
+   "kappa": 0.9924372172368697,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     4900,
+     11
+    ],
+    [
+     12,
+     2191
+    ]
+   ],
+   "n_compared": 7114,
+   "n_H_on_covered_lines": 8378,
+   "share_compared": 0.849128670327047
+  },
+  "KT": {
+   "kappa": 0.9841495381679912,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     5092,
+     41
+    ],
+    [
+     15,
+     2669
+    ]
+   ],
+   "n_compared": 7817,
+   "n_H_on_covered_lines": 9754,
+   "share_compared": 0.8014148041828993
+  },
+  "BENCH": {
+   "kappa": 0.9992805198576064,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     8670,
+     0
+    ],
+    [
+     1,
+     755
+    ]
+   ],
+   "n_compared": 9426,
+   "n_H_on_covered_lines": 11806,
+   "share_compared": 0.7984075893613417
+  },
+  "MIN": {
+   "kappa": 0.422955027978391,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     549,
+     879
+    ],
+    [
+     8,
+     2116
+    ]
+   ],
+   "n_compared": 3552,
+   "n_H_on_covered_lines": 4223,
+   "share_compared": 0.8411082169074118
+  }
+ },
+ "agreement_H_ZL": {
+  "E": {
+   "kappa": 0.9949662684273348,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     5634,
+     9
+    ],
+    [
+     10,
+     2826
+    ]
+   ],
+   "n_compared": 8479,
+   "n_H_on_covered_lines": 9697,
+   "share_compared": 0.8743941425183046
+  },
+  "CS": {
+   "kappa": 0.9941211745853854,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     4953,
+     9
+    ],
+    [
+     9,
+     2205
+    ]
+   ],
+   "n_compared": 7176,
+   "n_H_on_covered_lines": 8242,
+   "share_compared": 0.8706624605678234
+  },
+  "KT": {
+   "kappa": 0.9865421308219434,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     5549,
+     27
+    ],
+    [
+     24,
+     2845
+    ]
+   ],
+   "n_compared": 8445,
+   "n_H_on_covered_lines": 9602,
+   "share_compared": 0.8795042699437617
+  },
+  "BENCH": {
+   "kappa": 1.0,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     9332,
+     0
+    ],
+    [
+     0,
+     775
+    ]
+   ],
+   "n_compared": 10107,
+   "n_H_on_covered_lines": 11633,
+   "share_compared": 0.8688214562021834
+  },
+  "MIN": {
+   "kappa": 0.9712097064418281,
+   "confusion_[H0|H1][O0|O1]": [
+    [
+     1452,
+     36
+    ],
+    [
+     14,
+     2082
+    ]
+   ],
+   "n_compared": 3584,
+   "n_H_on_covered_lines": 4157,
+   "share_compared": 0.8621602116911234
+  }
+ },
+ "counts": {
+  "E": {
+   "occurrences": 9927,
+   "frames": 1908,
+   "informative": 5851,
+   "informative_with_variation": 4382,
+   "rate_marked_informative": 0.36780037600410187,
+   "folios": 80
+  },
+  "CS": {
+   "occurrences": 8440,
+   "frames": 1940,
+   "informative": 4425,
+   "informative_with_variation": 3535,
+   "rate_marked_informative": 0.35209039548022597,
+   "folios": 80
+  },
+  "KT": {
+   "occurrences": 9816,
+   "frames": 1806,
+   "informative": 6046,
+   "informative_with_variation": 4903,
+   "rate_marked_informative": 0.327820046311611,
+   "folios": 80
+  },
+  "BENCH": {
+   "occurrences": 11885,
+   "frames": 2921,
+   "informative": 6215,
+   "informative_with_variation": 918,
+   "rate_marked_informative": 0.07594529364440869,
+   "folios": 80
+  },
+  "MIN": {
+   "occurrences": 4258,
+   "frames": 674,
+   "informative": 2921,
+   "informative_with_variation": 2507,
+   "rate_marked_informative": 0.609722697706265,
+   "folios": 80
+  }
+ },
+ "counts_with_f76r": {
+  "E": {
+   "occurrences": 10184,
+   "frames": 1926,
+   "informative": 6070,
+   "informative_with_variation": 4564,
+   "rate_marked_informative": 0.36342668863261945,
+   "folios": 81
+  },
+  "CS": {
+   "occurrences": 8685,
+   "frames": 1962,
+   "informative": 4635,
+   "informative_with_variation": 3735,
+   "rate_marked_informative": 0.35555555555555557,
+   "folios": 81
+  },
+  "KT": {
+   "occurrences": 9992,
+   "frames": 1822,
+   "informative": 6198,
+   "informative_with_variation": 5033,
+   "rate_marked_informative": 0.3249435301710229,
+   "folios": 81
+  },
+  "BENCH": {
+   "occurrences": 12119,
+   "frames": 2950,
+   "informative": 6415,
+   "informative_with_variation": 943,
+   "rate_marked_informative": 0.07809820732657834,
+   "folios": 81
+  },
+  "MIN": {
+   "occurrences": 4347,
+   "frames": 679,
+   "informative": 3003,
+   "informative_with_variation": 2584,
+   "rate_marked_informative": 0.6023976023976024,
+   "folios": 81
+  }
+ },
+ "f76r": {
+  "tokens": 546,
+  "lines": 47,
+  "paragraphs": 4
+ },
+ "codicology": {
+  "pages": [
+   {
+    "page": "f26r",
+    "leaf": 26,
+    "side": "r",
+    "panel": null,
+    "Q": "D",
+    "B": "2",
+    "F": "b",
+    "P": "C",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f26v",
+    "leaf": 26,
+    "side": "v",
+    "panel": null,
+    "Q": "D",
+    "B": "2",
+    "F": "b",
+    "P": "D",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f31r",
+    "leaf": 31,
+    "side": "r",
+    "panel": null,
+    "Q": "D",
+    "B": "2",
+    "F": "y",
+    "P": "M",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f31v",
+    "leaf": 31,
+    "side": "v",
+    "panel": null,
+    "Q": "D",
+    "B": "2",
+    "F": "y",
+    "P": "N",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f33r",
+    "leaf": 33,
+    "side": "r",
+    "panel": null,
+    "Q": "E",
+    "B": "1",
+    "F": "a",
+    "P": "A",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f33v",
+    "leaf": 33,
+    "side": "v",
+    "panel": null,
+    "Q": "E",
+    "B": "1",
+    "F": "a",
+    "P": "B",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f34r",
+    "leaf": 34,
+    "side": "r",
+    "panel": null,
+    "Q": "E",
+    "B": "2",
+    "F": "b",
+    "P": "C",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f34v",
+    "leaf": 34,
+    "side": "v",
+    "panel": null,
+    "Q": "E",
+    "B": "2",
+    "F": "b",
+    "P": "D",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f39r",
+    "leaf": 39,
+    "side": "r",
+    "panel": null,
+    "Q": "E",
+    "B": "2",
+    "F": "y",
+    "P": "M",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f39v",
+    "leaf": 39,
+    "side": "v",
+    "panel": null,
+    "Q": "E",
+    "B": "2",
+    "F": "y",
+    "P": "N",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f40r",
+    "leaf": 40,
+    "side": "r",
+    "panel": null,
+    "Q": "E",
+    "B": "1",
+    "F": "z",
+    "P": "O",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f40v",
+    "leaf": 40,
+    "side": "v",
+    "panel": null,
+    "Q": "E",
+    "B": "1",
+    "F": "z",
+    "P": "P",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f41r",
+    "leaf": 41,
+    "side": "r",
+    "panel": null,
+    "Q": "F",
+    "B": "1",
+    "F": "a",
+    "P": "A",
+    "hand": "5",
+    "illus": "H"
+   },
+   {
+    "page": "f41v",
+    "leaf": 41,
+    "side": "v",
+    "panel": null,
+    "Q": "F",
+    "B": "1",
+    "F": "a",
+    "P": "B",
+    "hand": "5",
+    "illus": "H"
+   },
+   {
+    "page": "f43r",
+    "leaf": 43,
+    "side": "r",
+    "panel": null,
+    "Q": "F",
+    "B": "3",
+    "F": "c",
+    "P": "E",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f43v",
+    "leaf": 43,
+    "side": "v",
+    "panel": null,
+    "Q": "F",
+    "B": "3",
+    "F": "c",
+    "P": "F",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f46r",
+    "leaf": 46,
+    "side": "r",
+    "panel": null,
+    "Q": "F",
+    "B": "3",
+    "F": "x",
+    "P": "K",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f46v",
+    "leaf": 46,
+    "side": "v",
+    "panel": null,
+    "Q": "F",
+    "B": "3",
+    "F": "x",
+    "P": "L",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f48r",
+    "leaf": 48,
+    "side": "r",
+    "panel": null,
+    "Q": "F",
+    "B": "1",
+    "F": "z",
+    "P": "O",
+    "hand": "5",
+    "illus": "H"
+   },
+   {
+    "page": "f48v",
+    "leaf": 48,
+    "side": "v",
+    "panel": null,
+    "Q": "F",
+    "B": "1",
+    "F": "z",
+    "P": "P",
+    "hand": "5",
+    "illus": "H"
+   },
+   {
+    "page": "f50r",
+    "leaf": 50,
+    "side": "r",
+    "panel": null,
+    "Q": "G",
+    "B": "2",
+    "F": "b",
+    "P": "C",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f50v",
+    "leaf": 50,
+    "side": "v",
+    "panel": null,
+    "Q": "G",
+    "B": "2",
+    "F": "b",
+    "P": "D",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f55r",
+    "leaf": 55,
+    "side": "r",
+    "panel": null,
+    "Q": "G",
+    "B": "2",
+    "F": "y",
+    "P": "M",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f55v",
+    "leaf": 55,
+    "side": "v",
+    "panel": null,
+    "Q": "G",
+    "B": "2",
+    "F": "y",
+    "P": "N",
+    "hand": "2",
+    "illus": "H"
+   },
+   {
+    "page": "f57r",
+    "leaf": 57,
+    "side": "r",
+    "panel": null,
+    "Q": "H",
+    "B": "1",
+    "F": "a",
+    "P": "A",
+    "hand": "5",
+    "illus": "H"
+   },
+   {
+    "page": "f66v",
+    "leaf": 66,
+    "side": "v",
+    "panel": null,
+    "Q": "H",
+    "B": "1",
+    "F": "z",
+    "P": "H",
+    "hand": "5",
+    "illus": "H"
+   },
+   {
+    "page": "f75r",
+    "leaf": 75,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "1",
+    "F": "a",
+    "P": "A",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f75v",
+    "leaf": 75,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "1",
+    "F": "a",
+    "P": "B",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f76r",
+    "leaf": 76,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "2",
+    "F": "b",
+    "P": "C",
+    "hand": "2",
+    "illus": "T"
+   },
+   {
+    "page": "f76v",
+    "leaf": 76,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "2",
+    "F": "b",
+    "P": "D",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f77r",
+    "leaf": 77,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "3",
+    "F": "c",
+    "P": "E",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f77v",
+    "leaf": 77,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "3",
+    "F": "c",
+    "P": "F",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f78r",
+    "leaf": 78,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "4",
+    "F": "d",
+    "P": "G",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f78v",
+    "leaf": 78,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "4",
+    "F": "d",
+    "P": "H",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f79r",
+    "leaf": 79,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "5",
+    "F": "e",
+    "P": "I",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f79v",
+    "leaf": 79,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "5",
+    "F": "e",
+    "P": "J",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f80r",
+    "leaf": 80,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "5",
+    "F": "v",
+    "P": "K",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f80v",
+    "leaf": 80,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "5",
+    "F": "v",
+    "P": "L",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f81r",
+    "leaf": 81,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "4",
+    "F": "w",
+    "P": "M",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f81v",
+    "leaf": 81,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "4",
+    "F": "w",
+    "P": "N",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f82r",
+    "leaf": 82,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "3",
+    "F": "x",
+    "P": "O",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f82v",
+    "leaf": 82,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "3",
+    "F": "x",
+    "P": "P",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f83r",
+    "leaf": 83,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "2",
+    "F": "y",
+    "P": "Q",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f83v",
+    "leaf": 83,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "2",
+    "F": "y",
+    "P": "R",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f84r",
+    "leaf": 84,
+    "side": "r",
+    "panel": null,
+    "Q": "M",
+    "B": "1",
+    "F": "z",
+    "P": "S",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f84v",
+    "leaf": 84,
+    "side": "v",
+    "panel": null,
+    "Q": "M",
+    "B": "1",
+    "F": "z",
+    "P": "T",
+    "hand": "2",
+    "illus": "B"
+   },
+   {
+    "page": "f85r1",
+    "leaf": 85,
+    "side": "r",
+    "panel": "1",
+    "Q": "N",
+    "B": "1",
+    "F": "a",
+    "P": "B",
+    "hand": "2",
+    "illus": "T"
+   },
+   {
+    "page": "f85r2",
+    "leaf": 85,
+    "side": "r",
+    "panel": "2",
+    "Q": "N",
+    "B": "1",
+    "F": "a",
+    "P": "C",
+    "hand": "2",
+    "illus": "C"
+   },
+   {
+    "page": "f86v4",
+    "leaf": 86,
+    "side": "v",
+    "panel": "4",
+    "Q": "N",
+    "B": "1",
+    "F": "z",
+    "P": "N",
+    "hand": "2",
+    "illus": "C"
+   },
+   {
+    "page": "f86v6",
+    "leaf": 86,
+    "side": "v",
+    "panel": "6",
+    "Q": "N",
+    "B": "1",
+    "F": "z",
+    "P": "O",
+    "hand": "2",
+    "illus": "T"
+   },
+   {
+    "page": "f86v5",
+    "leaf": 86,
+    "side": "v",
+    "panel": "5",
+    "Q": "N",
+    "B": "1",
+    "F": "z",
+    "P": "P",
+    "hand": "2",
+    "illus": "T"
+   },
+   {
+    "page": "f86v3",
+    "leaf": 86,
+    "side": "v",
+    "panel": "3",
+    "Q": "N",
+    "B": "1",
+    "F": "z",
+    "P": "Q",
+    "hand": "2",
+    "illus": "C"
+   },
+   {
+    "page": "f94r",
+    "leaf": 94,
+    "side": "r",
+    "panel": null,
+    "Q": "Q",
+    "B": "2",
+    "F": "b",
+    "P": "C",
+    "hand": "3",
+    "illus": "H"
+   },
+   {
+    "page": "f94v",
+    "leaf": 94,
+    "side": "v",
+    "panel": null,
+    "Q": "Q",
+    "B": "2",
+    "F": "b",
+    "P": "D",
+    "hand": "3",
+    "illus": "H"
+   },
+   {
+    "page": "f95r1",
+    "leaf": 95,
+    "side": "r",
+    "panel": "1",
+    "Q": "Q",
+    "B": "2",
+    "F": "y",
+    "P": "F",
+    "hand": "3",
+    "illus": "H"
+   },
+   {
+    "page": "f95r2",
+    "leaf": 95,
+    "side": "r",
+    "panel": "2",
+    "Q": "Q",
+    "B": "2",
+    "F": "y",
+    "P": "G",
+    "hand": "3",
+    "illus": "H"
+   },
+   {
+    "page": "f95v2",
+    "leaf": 95,
+    "side": "v",
+    "panel": "2",
+    "Q": "Q",
+    "B": "2",
+    "F": "y",
+    "P": "I",
+    "hand": "3",
+    "illus": "H"
+   },
+   {
+    "page": "f95v1",
+    "leaf": 95,
+    "side": "v",
+    "panel": "1",
+    "Q": "Q",
+    "B": "2",
+    "F": "y",
+    "P": "J",
+    "hand": "3",
+    "illus": "H"
+   },
+   {
+    "page": "f103r",
+    "leaf": 103,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "1",
+    "F": "a",
+    "P": "A",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f103v",
+    "leaf": 103,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "1",
+    "F": "a",
+    "P": "B",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f104r",
+    "leaf": 104,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "2",
+    "F": "b",
+    "P": "C",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f104v",
+    "leaf": 104,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "2",
+    "F": "b",
+    "P": "D",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f105r",
+    "leaf": 105,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "3",
+    "F": "c",
+    "P": "E",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f105v",
+    "leaf": 105,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "3",
+    "F": "c",
+    "P": "F",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f106r",
+    "leaf": 106,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "4",
+    "F": "d",
+    "P": "G",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f106v",
+    "leaf": 106,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "4",
+    "F": "d",
+    "P": "H",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f107r",
+    "leaf": 107,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "5",
+    "F": "e",
+    "P": "I",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f107v",
+    "leaf": 107,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "5",
+    "F": "e",
+    "P": "J",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f108r",
+    "leaf": 108,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "6",
+    "F": "f",
+    "P": "K",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f108v",
+    "leaf": 108,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "6",
+    "F": "f",
+    "P": "L",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f111r",
+    "leaf": 111,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "6",
+    "F": "u",
+    "P": "M",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f111v",
+    "leaf": 111,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "6",
+    "F": "u",
+    "P": "N",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f112r",
+    "leaf": 112,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "5",
+    "F": "v",
+    "P": "O",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f112v",
+    "leaf": 112,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "5",
+    "F": "v",
+    "P": "P",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f113r",
+    "leaf": 113,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "4",
+    "F": "w",
+    "P": "Q",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f113v",
+    "leaf": 113,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "4",
+    "F": "w",
+    "P": "R",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f114r",
+    "leaf": 114,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "3",
+    "F": "x",
+    "P": "S",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f114v",
+    "leaf": 114,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "3",
+    "F": "x",
+    "P": "T",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f115r",
+    "leaf": 115,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "2",
+    "F": "y",
+    "P": "U",
+    "hand": "",
+    "illus": "S"
+   },
+   {
+    "page": "f115v",
+    "leaf": 115,
+    "side": "v",
+    "panel": null,
+    "Q": "T",
+    "B": "2",
+    "F": "y",
+    "P": "V",
+    "hand": "3",
+    "illus": "S"
+   },
+   {
+    "page": "f116r",
+    "leaf": 116,
+    "side": "r",
+    "panel": null,
+    "Q": "T",
+    "B": "1",
+    "F": "z",
+    "P": "W",
+    "hand": "3",
+    "illus": "S"
+   }
+  ],
+  "transitions": [
+   {
+    "from": "f26r",
+    "to": "f26v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f26v",
+    "to": "f31r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f31r",
+    "to": "f31v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f31v",
+    "to": "f33r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": true,
+    "same_hand": true
+   },
+   {
+    "from": "f33r",
+    "to": "f33v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f33v",
+    "to": "f34r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f34r",
+    "to": "f34v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f34v",
+    "to": "f39r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f39r",
+    "to": "f39v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f39v",
+    "to": "f40r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f40r",
+    "to": "f40v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f40v",
+    "to": "f41r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": true,
+    "same_hand": false
+   },
+   {
+    "from": "f41r",
+    "to": "f41v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f41v",
+    "to": "f43r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": false
+   },
+   {
+    "from": "f43r",
+    "to": "f43v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f43v",
+    "to": "f46r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f46r",
+    "to": "f46v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f46v",
+    "to": "f48r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": false
+   },
+   {
+    "from": "f48r",
+    "to": "f48v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f48v",
+    "to": "f50r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": true,
+    "same_hand": false
+   },
+   {
+    "from": "f50r",
+    "to": "f50v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f50v",
+    "to": "f55r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f55r",
+    "to": "f55v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f55v",
+    "to": "f57r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": true,
+    "same_hand": false
+   },
+   {
+    "from": "f57r",
+    "to": "f66v",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f66v",
+    "to": "f75r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": true,
+    "same_hand": false
+   },
+   {
+    "from": "f75r",
+    "to": "f75v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f75v",
+    "to": "f76r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f76r",
+    "to": "f76v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f76v",
+    "to": "f77r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f77r",
+    "to": "f77v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f77v",
+    "to": "f78r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f78r",
+    "to": "f78v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f78v",
+    "to": "f79r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f79r",
+    "to": "f79v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f79v",
+    "to": "f80r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f80r",
+    "to": "f80v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f80v",
+    "to": "f81r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f81r",
+    "to": "f81v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f81v",
+    "to": "f82r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f82r",
+    "to": "f82v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f82v",
+    "to": "f83r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f83r",
+    "to": "f83v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f83v",
+    "to": "f84r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f84r",
+    "to": "f84v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f84v",
+    "to": "f85r1",
+    "kind": "opening",
+    "foldout": true,
+    "cross_quire": true,
+    "same_hand": true
+   },
+   {
+    "from": "f85r1",
+    "to": "f85r2",
+    "kind": "panel",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f85r2",
+    "to": "f86v4",
+    "kind": "gap",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f86v4",
+    "to": "f86v6",
+    "kind": "panel",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f86v6",
+    "to": "f86v5",
+    "kind": "panel",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f86v5",
+    "to": "f86v3",
+    "kind": "panel",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f86v3",
+    "to": "f94r",
+    "kind": "gap",
+    "foldout": true,
+    "cross_quire": true,
+    "same_hand": false
+   },
+   {
+    "from": "f94r",
+    "to": "f94v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f94v",
+    "to": "f95r1",
+    "kind": "opening",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f95r1",
+    "to": "f95r2",
+    "kind": "panel",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f95r2",
+    "to": "f95v2",
+    "kind": "leaf_turn",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f95v2",
+    "to": "f95v1",
+    "kind": "panel",
+    "foldout": true,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f95v1",
+    "to": "f103r",
+    "kind": "gap",
+    "foldout": true,
+    "cross_quire": true,
+    "same_hand": true
+   },
+   {
+    "from": "f103r",
+    "to": "f103v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f103v",
+    "to": "f104r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f104r",
+    "to": "f104v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f104v",
+    "to": "f105r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f105r",
+    "to": "f105v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f105v",
+    "to": "f106r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f106r",
+    "to": "f106v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f106v",
+    "to": "f107r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f107r",
+    "to": "f107v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f107v",
+    "to": "f108r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f108r",
+    "to": "f108v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f108v",
+    "to": "f111r",
+    "kind": "gap",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f111r",
+    "to": "f111v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f111v",
+    "to": "f112r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f112r",
+    "to": "f112v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f112v",
+    "to": "f113r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f113r",
+    "to": "f113v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f113v",
+    "to": "f114r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f114r",
+    "to": "f114v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   },
+   {
+    "from": "f114v",
+    "to": "f115r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": false
+   },
+   {
+    "from": "f115r",
+    "to": "f115v",
+    "kind": "leaf_turn",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": false
+   },
+   {
+    "from": "f115v",
+    "to": "f116r",
+    "kind": "opening",
+    "foldout": false,
+    "cross_quire": false,
+    "same_hand": true
+   }
+  ],
+  "transition_counts": {
+   "('leaf_turn', False, False)": 34,
+   "('gap', False, False)": 8,
+   "('gap', False, True)": 4,
+   "('opening', False, False)": 21,
+   "('opening', False, True)": 1,
+   "('opening', True, True)": 1,
+   "('panel', True, False)": 6,
+   "('gap', True, False)": 1,
+   "('gap', True, True)": 2,
+   "('opening', True, False)": 1,
+   "('leaf_turn', True, False)": 1
+  },
+  "usable_transitions": 56,
+  "usable_by_kind": {
+   "leaf_turn": 34,
+   "opening": 22
+  },
+  "usable_cross_quire": 1,
+  "usable_hand_change": 3,
+  "chains": [
+   [
+    "f26r",
+    "f26v"
+   ],
+   [
+    "f31r",
+    "f31v"
+   ],
+   [
+    "f33r",
+    "f33v",
+    "f34r",
+    "f34v"
+   ],
+   [
+    "f39r",
+    "f39v",
+    "f40r",
+    "f40v",
+    "f41r",
+    "f41v"
+   ],
+   [
+    "f43r",
+    "f43v"
+   ],
+   [
+    "f46r",
+    "f46v"
+   ],
+   [
+    "f48r",
+    "f48v"
+   ],
+   [
+    "f50r",
+    "f50v"
+   ],
+   [
+    "f55r",
+    "f55v"
+   ],
+   [
+    "f75r",
+    "f75v",
+    "f76r",
+    "f76v",
+    "f77r",
+    "f77v",
+    "f78r",
+    "f78v",
+    "f79r",
+    "f79v",
+    "f80r",
+    "f80v",
+    "f81r",
+    "f81v",
+    "f82r",
+    "f82v",
+    "f83r",
+    "f83v",
+    "f84r",
+    "f84v"
+   ],
+   [
+    "f94r",
+    "f94v"
+   ],
+   [
+    "f103r",
+    "f103v",
+    "f104r",
+    "f104v",
+    "f105r",
+    "f105v",
+    "f106r",
+    "f106v",
+    "f107r",
+    "f107v",
+    "f108r",
+    "f108v"
+   ],
+   [
+    "f111r",
+    "f111v",
+    "f112r",
+    "f112v",
+    "f113r",
+    "f113v",
+    "f114r",
+    "f114v",
+    "f115r",
+    "f115v",
+    "f116r"
+   ]
+  ],
+  "n_chains": 13,
+  "sheet_faces": [
+   {
+    "quire": "D",
+    "bifolium": "2",
+    "face": "inner",
+    "pages": [
+     "f26v",
+     "f31r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "D",
+    "bifolium": "2",
+    "face": "outer",
+    "pages": [
+     "f26r",
+     "f31v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "E",
+    "bifolium": "1",
+    "face": "inner",
+    "pages": [
+     "f33v",
+     "f40r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "E",
+    "bifolium": "1",
+    "face": "outer",
+    "pages": [
+     "f33r",
+     "f40v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "E",
+    "bifolium": "2",
+    "face": "inner",
+    "pages": [
+     "f34v",
+     "f39r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "E",
+    "bifolium": "2",
+    "face": "outer",
+    "pages": [
+     "f34r",
+     "f39v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "F",
+    "bifolium": "1",
+    "face": "inner",
+    "pages": [
+     "f41v",
+     "f48r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "F",
+    "bifolium": "1",
+    "face": "outer",
+    "pages": [
+     "f41r",
+     "f48v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "F",
+    "bifolium": "3",
+    "face": "inner",
+    "pages": [
+     "f43v",
+     "f46r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "F",
+    "bifolium": "3",
+    "face": "outer",
+    "pages": [
+     "f43r",
+     "f46v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "G",
+    "bifolium": "2",
+    "face": "inner",
+    "pages": [
+     "f50v",
+     "f55r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "G",
+    "bifolium": "2",
+    "face": "outer",
+    "pages": [
+     "f50r",
+     "f55v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "H",
+    "bifolium": "1",
+    "face": "outer",
+    "pages": [
+     "f57r",
+     "f66v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "1",
+    "face": "inner",
+    "pages": [
+     "f75v",
+     "f84r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "1",
+    "face": "outer",
+    "pages": [
+     "f75r",
+     "f84v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "2",
+    "face": "inner",
+    "pages": [
+     "f76v",
+     "f83r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "2",
+    "face": "outer",
+    "pages": [
+     "f76r",
+     "f83v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "3",
+    "face": "inner",
+    "pages": [
+     "f77v",
+     "f82r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "3",
+    "face": "outer",
+    "pages": [
+     "f77r",
+     "f82v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "4",
+    "face": "inner",
+    "pages": [
+     "f78v",
+     "f81r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "4",
+    "face": "outer",
+    "pages": [
+     "f78r",
+     "f81v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "M",
+    "bifolium": "5",
+    "face": "inner",
+    "pages": [
+     "f79v",
+     "f80r"
+    ],
+    "reading_adjacent": true
+   },
+   {
+    "quire": "M",
+    "bifolium": "5",
+    "face": "outer",
+    "pages": [
+     "f79r",
+     "f80v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "1",
+    "face": "inner",
+    "pages": [
+     "f103v",
+     "f116r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "2",
+    "face": "inner",
+    "pages": [
+     "f104v",
+     "f115r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "2",
+    "face": "outer",
+    "pages": [
+     "f104r",
+     "f115v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "3",
+    "face": "inner",
+    "pages": [
+     "f105v",
+     "f114r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "3",
+    "face": "outer",
+    "pages": [
+     "f105r",
+     "f114v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "4",
+    "face": "inner",
+    "pages": [
+     "f106v",
+     "f113r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "4",
+    "face": "outer",
+    "pages": [
+     "f106r",
+     "f113v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "5",
+    "face": "inner",
+    "pages": [
+     "f107v",
+     "f112r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "5",
+    "face": "outer",
+    "pages": [
+     "f107r",
+     "f112v"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "6",
+    "face": "inner",
+    "pages": [
+     "f108v",
+     "f111r"
+    ],
+    "reading_adjacent": false
+   },
+   {
+    "quire": "T",
+    "bifolium": "6",
+    "face": "outer",
+    "pages": [
+     "f108r",
+     "f111v"
+    ],
+    "reading_adjacent": false
+   }
+  ]
+ }
+}

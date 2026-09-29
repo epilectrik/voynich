@@ -82,7 +82,9 @@ lean-expert reviews set before any picture test of the human's heat-level readin
   not excluded: its point estimate was S3c +0.25, though with too few runs to reach significance.
 - **The picture gate passed** (S3-dis, S3-int and S3-cons all p ≤ 0.05). A blind picture-coding test is warranted.
   Given the drift, it should code page regions or position-resolved features, not only whole folios.
-- **Transcription finding: i-runs are not interpretable** (pre-lock). H and F agree on minim counts with κ = 0.42: F
+- **Transcription finding: i-runs are not interpretable** (pre-lock). [Corrected 2026-09-29 by the PHASE_770
+  design check: H and ZL agree on minim counts (kappa 0.971, 3,584 units); F is the outlier. Minim statistics are
+  usable on H with a ZL check. The text below records what was known at lock.] H and F agree on minim counts with κ = 0.42: F
   reads 879 of H's 1,428 single-minim groups as 2+, and only 8 of 2,124 the other way. The ain/aiin (dain/daiin)
   distinction depends on the transcription. This may be a convention of the older F transcription, which only the scans
   can settle.

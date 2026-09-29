@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.32, 2026-09-29)
+# Status Brief — what currently stands (v7.33, 2026-09-29)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -54,7 +54,8 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     the top and bottom lines do not express is unresolved (first vs last quarter coherence is low, but the
     estimate is imprecise).
   - Its source (content, writing session, pen, copying) is not identified.
-- **Minim counts are transcription-dependent** (PHASE_769): H-F kappa 0.42 on 1 vs 2+ minims (ain vs aiin).
+- **Minim counts** (1 vs 2+, ain vs aiin) are read alike by H and ZL (kappa 0.97, PHASE_770 design check); the
+  older F transcription reads extra minims (kappa 0.42 against H) and is not used for minim statistics.
   e-run lengths are reliable (kappa 0.95-0.96, PHASE_758).
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against

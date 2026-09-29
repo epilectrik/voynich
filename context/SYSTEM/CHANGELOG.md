@@ -4,6 +4,31 @@
 
 ---
 
+## Version 7.33 (2026-09-29) — Minim reliability correction; PHASE_770 design stage
+
+### Summary
+- **Minim counts are read alike by H and ZL.** On aligned tokens whose other glyphs match, H and ZL 3b agree on 1 vs 2+
+  minims (κ 0.971; 3,584 units, lines matched by content). F is the outlier (κ 0.42 against H).
+  - This corrects the PHASE_769 note "minim counts are transcription-dependent".
+  - Which reading matches the scans is unsettled: the tracks are not independent readings, and κ is an upper bound.
+  - Annotations were updated on C1204, C1910, the STATUS_BRIEF and the PHASE_769 INDEX.
+- **ZL line ids.** ZL numbers its loci in one sequence per page, so 421 equal line ids name different lines. Any H–ZL
+  alignment must match lines by content.
+- **PHASE_770 design stage** (not locked; no statistic computed on B). Draft v1 was reviewed by expert-advisor,
+  lean-expert and crazy-expert, and draft v2 merges the reviews:
+  - a pairing null for the co-drift arm (the within-cell null was anti-conservative in simulation);
+  - an expanded plant bank with a fit check for the shape arm;
+  - page-turn continuity limited to CONTINUITY or UNRESOLVED;
+  - a neighbour-context rival to C2086 (Arm 0);
+  - a guardrail block;
+  - f76r's text (placement R in H) included.
+
+### Registry
+- Annotations only.
+- Live counts unchanged: 1,893.
+
+---
+
 ## Version 7.32 (2026-09-29) — C2086 drift clause rescoped; C1977 scope note (expert review)
 
 ### Summary
