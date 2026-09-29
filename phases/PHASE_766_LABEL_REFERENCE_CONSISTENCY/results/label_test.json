@@ -1,0 +1,473 @@
+{
+ "pre_registration": "0b24813",
+ "R_size": 128,
+ "power": {
+  "rates": {
+   "a_0": 0.045,
+   "a_1": 0.455,
+   "a_2": 0.93,
+   "a_3": 1.0,
+   "a_4": 1.0,
+   "a_5": 1.0,
+   "a_6": 1.0,
+   "a_7": 1.0,
+   "a_8": 1.0,
+   "a_9": 1.0,
+   "a_10": 1.0,
+   "a_11": 1.0,
+   "a_12": 1.0,
+   "a_13": 1.0,
+   "b_0": 0.045,
+   "b_1": 0.37,
+   "b_2": 0.82,
+   "b_3": 0.965,
+   "b_4": 1.0,
+   "b_5": 1.0,
+   "b_6": 1.0,
+   "b_7": 1.0,
+   "b_8": 1.0,
+   "b_9": 1.0,
+   "b_10": 1.0,
+   "b_11": 1.0,
+   "b_12": 1.0,
+   "b_13": 1.0
+  },
+  "MDE80_a": 2,
+  "MDE80_b": 2,
+  "token_range": [
+   54,
+   111
+  ],
+  "pools": {
+   "A": 70,
+   "B": 22
+  },
+  "per_label_exact_plant": [
+   {
+    "item": 61,
+    "word": "daseky",
+    "units": 6,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 80,
+    "word": "oaro",
+    "units": 4,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 94,
+    "word": "tolsasy",
+    "units": 7,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 95,
+    "word": "otoldy",
+    "units": 6,
+    "pages_with_exact": 5,
+    "h_exact_plant": 4.204,
+    "pct_R_below": 0.961,
+    "pct_R_at_or_above": 0.039
+   },
+   {
+    "item": 110,
+    "word": "olekor",
+    "units": 6,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 116,
+    "word": "sochorcfhy",
+    "units": 7,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 133,
+    "word": "opchor",
+    "units": 5,
+    "pages_with_exact": 2,
+    "h_exact_plant": 5.011,
+    "pct_R_below": 0.984,
+    "pct_R_at_or_above": 0.016
+   },
+   {
+    "item": 136,
+    "word": "ykchochdy",
+    "units": 7,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 203,
+    "word": "ddardsh",
+    "units": 6,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 212,
+    "word": "koldarod",
+    "units": 8,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 213,
+    "word": "odalydary",
+    "units": 9,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 0.992,
+    "pct_R_at_or_above": 0.008
+   },
+   {
+    "item": 225,
+    "word": "sarol",
+    "units": 5,
+    "pages_with_exact": 1,
+    "h_exact_plant": 5.426,
+    "pct_R_below": 0.992,
+    "pct_R_at_or_above": 0.008
+   },
+   {
+    "item": 240,
+    "word": "loralody",
+    "units": 8,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 0.992,
+    "pct_R_at_or_above": 0.008
+   }
+  ]
+ },
+ "primary": {
+  "T_obs": 0.7756,
+  "p": 0.974130258697413,
+  "T_perm_mean": 5.1226,
+  "H_diag": [
+   0.0,
+   0.166,
+   0.0,
+   0.0,
+   0.457,
+   0.0,
+   0.153,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "leave_one_out": [
+   {
+    "dropped_item": 61,
+    "p": 0.9720602793972061
+   },
+   {
+    "dropped_item": 80,
+    "p": 0.96160038399616
+   },
+   {
+    "dropped_item": 94,
+    "p": 0.974310256897431
+   },
+   {
+    "dropped_item": 95,
+    "p": 0.933730662693373
+   },
+   {
+    "dropped_item": 110,
+    "p": 0.992560074399256
+   },
+   {
+    "dropped_item": 116,
+    "p": 0.973640263597364
+   },
+   {
+    "dropped_item": 133,
+    "p": 0.979330206697933
+   },
+   {
+    "dropped_item": 136,
+    "p": 0.984010159898401
+   },
+   {
+    "dropped_item": 203,
+    "p": 0.968570314296857
+   },
+   {
+    "dropped_item": 212,
+    "p": 0.981360186398136
+   },
+   {
+    "dropped_item": 213,
+    "p": 0.973960260397396
+   },
+   {
+    "dropped_item": 225,
+    "p": 0.946240537594624
+   },
+   {
+    "dropped_item": 240,
+    "p": 0.9626403735962641
+   }
+  ],
+  "leave_f96v_out_p": 0.974090259097409,
+  "per_pair": [
+   {
+    "item": 61,
+    "page": "f48r",
+    "match": "same",
+    "h": 0.0,
+    "label_word": "daseky",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 80,
+    "page": "f51r",
+    "match": "sim",
+    "h": 0.166,
+    "label_word": "oaro",
+    "d": 2,
+    "best_tokens": [
+     "oaiin",
+     "or"
+    ],
+    "R_pages_reaching_d": 114,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 94,
+    "page": "f96v",
+    "match": "sim",
+    "h": 0.0,
+    "label_word": "tolsasy",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 95,
+    "page": "f44r",
+    "match": "sim",
+    "h": 0.0,
+    "label_word": "otoldy",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 110,
+    "page": "f34v",
+    "match": "sim",
+    "h": 0.457,
+    "label_word": "otal",
+    "d": 1,
+    "best_tokens": [
+     "otain",
+     "otam",
+     "otar",
+     "ytal"
+    ],
+    "R_pages_reaching_d": 93,
+    "pct_slots_below_matched": 0.154
+   },
+   {
+    "item": 116,
+    "page": "f96v",
+    "match": "sim",
+    "h": 0.0,
+    "label_word": "sochorcfhy",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 133,
+    "page": "f13v",
+    "match": "sim",
+    "h": 0.153,
+    "label_word": "opchor",
+    "d": 2,
+    "best_tokens": [
+     "kchor",
+     "otchol"
+    ],
+    "R_pages_reaching_d": 115,
+    "pct_slots_below_matched": 0.154
+   },
+   {
+    "item": 136,
+    "page": "f90v2",
+    "match": "sim",
+    "h": 0.0,
+    "label_word": "ykchochdy",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 203,
+    "page": "f37v",
+    "match": "same",
+    "h": 0.0,
+    "label_word": "ddardsh",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 212,
+    "page": "f18v",
+    "match": "same",
+    "h": 0.0,
+    "label_word": "koldarod",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 213,
+    "page": "f23r",
+    "match": "same",
+    "h": 0.0,
+    "label_word": "odalydary",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 225,
+    "page": "f36r",
+    "match": "sim",
+    "h": 0.0,
+    "label_word": "sarol",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   },
+   {
+    "item": 240,
+    "page": "f19r",
+    "match": "same",
+    "h": 0.0,
+    "label_word": "loralody",
+    "d": 3,
+    "best_tokens": [],
+    "R_pages_reaching_d": null,
+    "pct_slots_below_matched": 0.0
+   }
+  ],
+  "pairs_exact_or_ed1": 1
+ },
+ "V1_same_exact": {
+  "T_obs": 0.0,
+  "p": 1.0,
+  "n_perms": 120
+ },
+ "V8_restricted_exact": {
+  "T_obs": 0.7756,
+  "p": 0.9611111111111111,
+  "n_perms": 17280,
+  "groups": {
+   "f99": [
+    80,
+    94,
+    95,
+    110
+   ],
+   "f100": [
+    116,
+    133,
+    136
+   ],
+   "f102": [
+    203,
+    212,
+    213,
+    225,
+    240
+   ]
+  }
+ },
+ "V2_jar": {
+  "T_obs": 2.5014,
+  "p": 0.8378016219837802,
+  "T_perm_mean": 5.8313,
+  "n_pairs": 13
+ },
+ "V3_no203": {
+  "T_obs": 0.7756,
+  "p": 0.969350306496935,
+  "T_perm_mean": 5.1369,
+  "n_pairs": 12
+ },
+ "V4_first_line": {
+  "T_obs": 0.4113,
+  "p": 0.9357906420935791,
+  "T_perm_mean": 3.4829,
+  "n_pairs": 13
+ },
+ "V5_H_track": {
+  "T_obs": 1.0935,
+  "p": 0.9264607353926461,
+  "T_perm_mean": 5.0122,
+  "n_pairs": 13
+ },
+ "V6_EVA": {
+  "T_obs": 1.2,
+  "p": 0.955840441595584,
+  "T_perm_mean": 4.8988,
+  "n_pairs": 13
+ },
+ "V7_draft_statistic": {
+  "T_obs": 6.7925,
+  "p": 0.7430425695743043,
+  "T_perm_mean": 7.0278
+ },
+ "labels_94_116": {
+  "d_94_116": 5,
+  "midrank_among_78": 31.0,
+  "n_pairs": 78,
+  "n_pairs_closer": 17,
+  "n_ties": 26,
+  "median_d": 5.0
+ },
+ "verdict": "NO SIGNAL (bounded)",
+ "single_pair_driven": [],
+ "runtime_s": 38.6
+}

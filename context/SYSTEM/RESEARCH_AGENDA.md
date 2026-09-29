@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.28, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.29, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -85,6 +85,10 @@ text made to look meaningful? And, if it carries content, what content?
    - What: label-to-image grounding with blind image coding, with labels re-transcribed from IIIF first (C2004/C2005
      gaps). The earlier nulls had n ≈ 30 and little power (VIS, ILL-TOP-1).
    - Resolves: whether the text refers to what is drawn.
+   - First test done: PHASE_766, C2084 — NO SIGNAL (bounded). No pharmaceutical fragment label recurs on the
+     herbal page of its visually matched plant (13 pairs; MDE80 = 2 pairs). Next: designs that do not assume a
+     label is a word of the herbal text (e.g. label agreement within the pharmaceutical section across fragments
+     of the same plant), which needs more text-blind plant identifications.
 9. **Physical structure.**
    - What: PHASE_752 v2 steps 2–3 (bifolium and quire effects on the second transcription), for Malta (video due
      2026-11-09). The Aberdeen negative control is SPECIFIC (PHASE_759).

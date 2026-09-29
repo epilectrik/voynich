@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.28 | **Status:** characterization ACTIVE | **Constraints:** 1,890 live in the generated table (T0 2, T1 38, T2 1,680, T3 166, T4 4) | **Phases:** 763 | **Date:** 2026-09-28
+**Version:** 7.29 | **Status:** characterization ACTIVE | **Constraints:** 1,891 live in the generated table (T0 2, T1 38, T2 1,681, T3 166, T4 4) | **Phases:** 766 | **Date:** 2026-09-28
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -297,7 +297,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.28) | 1,890 (T0 2, T1 38, T2 1,680, T3 166, T4 4) |
+| Live constraints (generated table, v7.29) | 1,891 (T0 2, T1 38, T2 1,681, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |

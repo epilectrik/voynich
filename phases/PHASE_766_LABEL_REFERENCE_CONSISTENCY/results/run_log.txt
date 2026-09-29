@@ -1,0 +1,44 @@
+[    0.0s] build primary
+[    0.6s] R=128 pages; 13 pairs; 15 label words
+[    0.6s] stage 1: power (no real pairing)
+[    0.6s] power: token range 54-111; pools A=70 B=22; matched langs Counter({'A': 10, 'B': 2})
+[    1.5s] power form a k= 0: 0.045
+[    2.7s] power form a k= 1: 0.455
+[    3.8s] power form a k= 2: 0.930
+[    4.9s] power form a k= 3: 1.000
+[    6.0s] power form a k= 4: 1.000
+[    7.1s] power form a k= 5: 1.000
+[    8.2s] power form a k= 6: 1.000
+[    9.4s] power form a k= 7: 1.000
+[   10.7s] power form a k= 8: 1.000
+[   11.9s] power form a k= 9: 1.000
+[   13.3s] power form a k=10: 1.000
+[   14.7s] power form a k=11: 1.000
+[   16.2s] power form a k=12: 1.000
+[   17.8s] power form a k=13: 1.000
+[   18.8s] power form b k= 1: 0.370
+[   19.8s] power form b k= 2: 0.820
+[   20.9s] power form b k= 3: 0.965
+[   22.0s] power form b k= 4: 1.000
+[   23.1s] power form b k= 5: 1.000
+[   24.4s] power form b k= 6: 1.000
+[   25.7s] power form b k= 7: 1.000
+[   27.0s] power form b k= 8: 1.000
+[   28.4s] power form b k= 9: 1.000
+[   29.8s] power form b k=10: 1.000
+[   31.2s] power form b k=11: 1.000
+[   32.7s] power form b k=12: 1.000
+[   34.2s] power form b k=13: 1.000
+[   34.2s] MDE80(a) = 2 | MDE80(b) = 2
+[   34.2s] stage 2: primary test
+[   34.7s] primary: T=0.7756 p=0.9741 (perm mean 5.1226)
+[   34.7s] V1: T=0.000 p=1.0000 (120 perms)
+[   34.8s] V8: T=0.776 p=0.9611 (17280 perms)
+[   35.5s] V2 jar labels: T=2.501 p=0.8378 (perm mean 5.831; 13 pairs)
+[   36.0s] V3 no item 203: T=0.776 p=0.9694 (perm mean 5.137; 12 pairs)
+[   36.3s] V4 first line: T=0.411 p=0.9358 (perm mean 3.483; 13 pairs)
+[   37.7s] V5 H-track: T=1.093 p=0.9265 (perm mean 5.012; 13 pairs)
+[   38.3s] V6 EVA: T=1.200 p=0.9558 (perm mean 4.899; 13 pairs)
+[   38.6s] V7: T=6.792 p=0.7430
+[   38.6s] labels 94/116: {'d_94_116': 5, 'midrank_among_78': 31.0, 'n_pairs': 78, 'n_pairs_closer': 17, 'n_ties': 26, 'median_d': 5.0}
+[   38.6s] VERDICT: NO SIGNAL (bounded) (p=0.9741, MDE80(a)=2, MDE80(b)=2); LOO flips: []

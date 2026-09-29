@@ -4,6 +4,35 @@
 
 ---
 
+## Version 7.29 (2026-09-28) — PHASE_766: label–page consistency (NO SIGNAL, bounded; C2084)
+
+### Summary
+A pre-registered, lean-audited test of whether text refers to pictures. Thirteen plant fragments in the
+pharmaceutical section have been matched by eye to a whole plant on a herbal page (voynich.nu, after Petersen and
+Knowles), and their labels carry ZL item tags. Does a fragment's label resemble its plant's herbal page more than the
+other matched pages? Locked verdict: **NO SIGNAL (bounded)**, stable in all eight variants.
+
+| Quantity | Value |
+|---|---|
+| T observed / null mean | 0.78 / 5.12 |
+| p | 0.974 |
+| MDE80, exact label word | 2 of 13 pairs |
+| MDE80, one-glyph variant | 2 of 13 pairs |
+| Size | 0.045 |
+
+- **Pairs:** 10 of 13 labels have no word within two edits of any token on the matched page. The three near matches
+  are common shapes found on most herbal pages.
+- **Label vocabulary:** 10 of the 15 label words occur nowhere in the herbal text (consistent with C523, C914).
+- **Same plant, two labels:** the two labels matched to the same plant (f96v) are no more alike than a typical label
+  pair.
+- **Scope:** this excludes labels that reuse a word of their plant's herbal page. It does not exclude labels as
+  codes, quantities or contents, or names written differently in the two sections. Not evidence of meaninglessness.
+
+### Registry
+C2084 new (Tier 2, negative knowledge). Live: 1,891 (T0 2, T1 38, T2 1,681, T3 166, T4 4); 766 phases.
+
+---
+
 ## Version 7.28 (2026-09-28) — PHASE_765: step-notation comparison (NOT SUPPORTED; C2083)
 
 ### Summary

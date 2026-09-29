@@ -1,0 +1,165 @@
+{
+ "pre_registration": "0b24813",
+ "R_size": 128,
+ "power": {
+  "rates": {
+   "a_0": 0.045,
+   "a_1": 0.455,
+   "a_2": 0.93,
+   "a_3": 1.0,
+   "a_4": 1.0,
+   "a_5": 1.0,
+   "a_6": 1.0,
+   "a_7": 1.0,
+   "a_8": 1.0,
+   "a_9": 1.0,
+   "a_10": 1.0,
+   "a_11": 1.0,
+   "a_12": 1.0,
+   "a_13": 1.0,
+   "b_0": 0.045,
+   "b_1": 0.37,
+   "b_2": 0.82,
+   "b_3": 0.965,
+   "b_4": 1.0,
+   "b_5": 1.0,
+   "b_6": 1.0,
+   "b_7": 1.0,
+   "b_8": 1.0,
+   "b_9": 1.0,
+   "b_10": 1.0,
+   "b_11": 1.0,
+   "b_12": 1.0,
+   "b_13": 1.0
+  },
+  "MDE80_a": 2,
+  "MDE80_b": 2,
+  "token_range": [
+   54,
+   111
+  ],
+  "pools": {
+   "A": 70,
+   "B": 22
+  },
+  "per_label_exact_plant": [
+   {
+    "item": 61,
+    "word": "daseky",
+    "units": 6,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 80,
+    "word": "oaro",
+    "units": 4,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 94,
+    "word": "tolsasy",
+    "units": 7,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 95,
+    "word": "otoldy",
+    "units": 6,
+    "pages_with_exact": 5,
+    "h_exact_plant": 4.204,
+    "pct_R_below": 0.961,
+    "pct_R_at_or_above": 0.039
+   },
+   {
+    "item": 110,
+    "word": "olekor",
+    "units": 6,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 116,
+    "word": "sochorcfhy",
+    "units": 7,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 133,
+    "word": "opchor",
+    "units": 5,
+    "pages_with_exact": 2,
+    "h_exact_plant": 5.011,
+    "pct_R_below": 0.984,
+    "pct_R_at_or_above": 0.016
+   },
+   {
+    "item": 136,
+    "word": "ykchochdy",
+    "units": 7,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 203,
+    "word": "ddardsh",
+    "units": 6,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 212,
+    "word": "koldarod",
+    "units": 8,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 1.0,
+    "pct_R_at_or_above": 0.0
+   },
+   {
+    "item": 213,
+    "word": "odalydary",
+    "units": 9,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 0.992,
+    "pct_R_at_or_above": 0.008
+   },
+   {
+    "item": 225,
+    "word": "sarol",
+    "units": 5,
+    "pages_with_exact": 1,
+    "h_exact_plant": 5.426,
+    "pct_R_below": 0.992,
+    "pct_R_at_or_above": 0.008
+   },
+   {
+    "item": 240,
+    "word": "loralody",
+    "units": 8,
+    "pages_with_exact": 0,
+    "h_exact_plant": 6.011,
+    "pct_R_below": 0.992,
+    "pct_R_at_or_above": 0.008
+   }
+  ]
+ }
+}

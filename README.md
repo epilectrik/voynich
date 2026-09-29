@@ -93,8 +93,8 @@ Not yet tested: modified or coarser-unit ciphers (syllable- or word-level codebo
 
 | | |
 |---|---|
-| Live constraints | 1,890 (Tier 0: 2, Tier 1: 38, Tier 2: 1,680, Tier 3: 166, Tier 4: 4) |
-| Research phases | 765 |
+| Live constraints | 1,891 (Tier 0: 2, Tier 1: 38, Tier 2: 1,681, Tier 3: 166, Tier 4: 4) |
+| Research phases | 766 |
 | Method | Pre-registration for load-bearing tests; negative controls; external rival generators; test designs audited before lock by a separate statistics-only reviewer (same model, restricted context — a rigor check, not independent confirmation) |
 
 ## Data

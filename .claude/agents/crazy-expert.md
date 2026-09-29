@@ -149,7 +149,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2083.
+the highest ID present is C2084.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -240,7 +240,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-28 19:12
+**Generated:** 2026-09-28 21:33
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -262,7 +262,7 @@ tables are quarantined — do not use for structural answers.
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.28, 2026-09-28)
+# Status Brief — what currently stands (v7.29, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -352,6 +352,10 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     generators. Knitting notation and assembly code are the farthest classes.
   - In all 11 needlework books, the book's prose is nearer to B than its notation.
   - The "discrete operations" reading loses this support, not its standing.
+- **Fragment labels as words of their plant's herbal page:** not found (C2084, PHASE_766).
+  - In 13 visually matched pharmaceutical–herbal pairs, no fragment label recurs on its plant's herbal page,
+    exactly or within one glyph. The test would detect 2 of 13 such pairs (80% power).
+  - Labels as codes, contents or differently written names are not excluded.
 - **Human-improvised gibberish** (Gaskell & Bowern, 38 modern volunteers): **tested at folio scale, unresolved**
   (PHASE_764).
   - B's boundary coupling exceeds most samples (AUC 0.825, 95% CI 0.71–0.92; variants 0.81–0.98), but the
@@ -380,7 +384,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.28 | **Status:** characterization ACTIVE | **Constraints:** 1,890 live in the generated table (T0 2, T1 38, T2 1,680, T3 166, T4 4) | **Phases:** 763 | **Date:** 2026-09-28
+**Version:** 7.29 | **Status:** characterization ACTIVE | **Constraints:** 1,891 live in the generated table (T0 2, T1 38, T2 1,681, T3 166, T4 4) | **Phases:** 766 | **Date:** 2026-09-28
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -513,7 +517,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.28) | 1,890 (T0 2, T1 38, T2 1,680, T3 166, T4 4) |
+| Live constraints (generated table, v7.29) | 1,891 (T0 2, T1 38, T2 1,681, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -555,7 +559,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.28, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.29, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -642,6 +646,10 @@ text made to look meaningful? And, if it carries content, what content?
    - What: label-to-image grounding with blind image coding, with labels re-transcribed from IIIF first (C2004/C2005
      gaps). The earlier nulls had n ≈ 30 and little power (VIS, ILL-TOP-1).
    - Resolves: whether the text refers to what is drawn.
+   - First test done: PHASE_766, C2084 — NO SIGNAL (bounded). No pharmaceutical fragment label recurs on the
+     herbal page of its visually matched plant (13 pairs; MDE80 = 2 pairs). Next: designs that do not assume a
+     label is a word of the herbal text (e.g. label agreement within the pharmaceutical section across fragments
+     of the same plant), which needs more text-blind plant identifications.
 9. **Physical structure.**
    - What: PHASE_752 v2 steps 2–3 (bifolium and quire effects on the second transcription), for Malta (video due
      2026-11-09). The Aberdeen negative control is SPECIFIC (PHASE_759).
@@ -2971,6 +2979,7 @@ C2080	**The Naibbe cipher as published is EXCLUDED as a generator of Currier B (
 C2081	**Common-token zero bigrams in Currier B reduce to line composition, positional zones and boundary glyph coupling (PHASE_756; supersedes C957; reduction of C956 + C1212/C1563).** Pre-registered, lean-audited joint null (N5): MCMC over within-line medial permutations preserving each line's tokens, INITIAL/FINAL tokens and each section's last-glyph → first-glyph edge counts (EVA edges; β = 2 after β = 8 and 4 failed to mix; all diagnostics passed: R-hat ≈ 1.00, ESS(Z) 6,570, 83% of movable positions changed, edge TV ≤ 0.007). Among 247 common-pair cells with N5 expectation ≥ 3, the real text has 2 zeros vs 1.98 ± 1.39 expected (p = 0.60; L1-extrapolated and leave-one-cell-out agree). Cross-track: the raw count is 5 vs 2.02 (p = 0.054); the three extra zeros (aiin→aiin, shedy→daiin, qokeedy→ol) are attested in the First Study Group transcription (F) and removed by the pre-registered cleaning; on C957's original data (all placements) raw 7 vs 2.30 (p = 0.009), cleaned 3 vs 2.25 (p = 0.39). The glyph-unit null narrowly failed its mixing diagnostic (ESS for fraction changed 940 < 1,000) and did not enter the verdict. Consequence: no token-level "prohibition" layer remains beyond known positional and boundary effects; D1 dropped from the rival panel. The small residual in H is transcription-dependent	2	B, bigram, zero_cells, joint_null, reduction, pre_registered, PHASE_756, C956, C957, C1212, C1563, negative_knowledge
 C2082	**Glyph-level re-test of "kernel-centric": the kernel is not restored; what passes is word-ending routing to the next token's class (PHASE_763; supersedes C089; locked verdict MIXED).** Pre-registered and twice lean-audited (commit af4a55b). Kernel = {k, e, bench (ch/sh)} as glyph units, each compared with 5 frequency- and position-matched control glyphs (triad test). **Arm S (cross-token routing beyond the prefix channel) PASS, Holm-significant:** I(glyph g in token t; class of t+1 | first glyph of t), Miller–Madow, against the PHASE_756 N5 null (glyph edges, β = 2; R-hat 1.002, minimum ESS 1,509). The kernel mean z of 6.5 exceeds all 89 control triads (p = 0.011, the minimum attainable), E = 4.4 z (folio-bootstrap 95% interval 2.4–7.5). Same sign with p ≤ 0.013 on ZL, on S2 and with the next token's first glyph as target (R1); weaker at role level with length conditioning (R2: E 0.85, p 0.056). Not reproduced by Naibbe GV1 (E −0.5 to 1.0) or Timm–Schinner (−0.8 to 1.2). **It is not a kernel property:** per glyph (descriptive), e (z 10.1) and bench (7.6) carry it, k (1.8) sits at the median of its controls, and the non-kernel d (8.9) is as strong. A post-hoc decomposition (not verdict-bearing) locates it in the token's ending: adding the last two glyph units of t to the conditioning removes it (e 1.9, bench 1.5, d −0.4, k 0.8). So a token's ending predicts the next token's class beyond the last-glyph → first-glyph coupling (extends C1212/C1563; compare C1002 edy→edy and C2061). **Arm W (within-token centrality: centred random-walk closeness vs an edge-anchored run-block permutation) INCONCLUSIVE:** E 7.4 z, p 0.088. It is uncertified (the plant also moves the controls), so it cannot fail. Order raises almost every glyph's closeness (a 31.7, e 25.3, o 24.3, k 20.6). B's kernel effect lies below both generators' ranges (Naibbe 13–18, Timm 8–22) and below the best Latin letter triads (28–35); the folio-bootstrap interval is −30 to 58. **Net:** "kernel-centric" stays a Tier-3 reading without a measurement behind it. The measured residue is ending-to-next-class routing plus the qo/ok family preference (C1313, C549, C2056).	2	B, glyph, kernel, routing, cross-token, ending, N5, pre_registered, PHASE_763, C089, C1212, C1563, C1002
 C2083	**Currier B's low-level profile is not nearer to discrete-operation step notations than to prose or gibberish (PHASE_765; negative knowledge; pre-registered, lean-audited).** At 197-pair scale, with every corpus re-wrapped to B's line lengths, the profile is P1 boundary coupling / H(first unit), P2 identical adjacent repeats (log O/E) and P3 near-repeats (log O/E vs within-line shuffle). Unit median distances to B: improvised gibberish 1.31 (nearest); constrained non-notation (Naibbe, Timm, Roget) 1.58; chess SAN 1.71; Latin procedural prose 1.75; meaningful text 2.02; needlework prose 2.17; knitting/crochet notation 3.00; AGC assembly 3.33 (farthest). B's own chunks sit at 0.94. No step-notation subgroup beats prose, gibberish and the floor control. In all 11 needlework books the book's prose is nearer to B than its notation. The result holds in all eight variants (EVA units, +TTR, lower-cased chess, needlework thresholds, authorial lines, digits collapsed, Mahalanobis, each statistic dropped). Modern step notations are more extreme than B in characteristic directions (knitting: strong coupling, no identical repeats, many near-repeats; assembly: anti-repetitive); B is moderate, closest to fluent improvised writing yet more constrained than it (4× coupling). The "discrete workshop operations" model loses this line of support, not the model. Untested: procedures written as fluent word-like tokens; line-, paragraph- and page-level structure. Not evidence of meaninglessness.	2	B, step_notation, knitting, chess, assembly, gibberish, procedural_prose, negative_knowledge, PHASE_765
+C2084	**Pharmaceutical fragment labels do not recur on the herbal page of their visually matched plant (PHASE_766; bounded negative knowledge; pre-registered, lean-audited).** Pairs: the 13 published pharma-herbal visual matches (voynich.nu, after Petersen and Knowles; 5 "same plant", 8 "some similarity") whose labels carry ZL item tags. Statistic: surprisal of the closest label-word match on the herbal page (glyph-unit edit distance <= 2, calibrated over 128 herbal pages); null: permute the 13 page slots. T = 0.78 vs null mean 5.12, p = 0.97; all eight variants p >= 0.74 (same-plant subset T = 0; within-pharma-folio restricted p = 0.96). Power on surrogate pages (no real pairing): MDE80 = 2 of 13 pairs for exact and for one-glyph label words (size 0.045). 10 of 13 labels have no word within two edits of any token on the matched page; 10 of the 15 label words occur nowhere in the herbal text. Excludes labels that reuse a word of their plant's herbal page in >= 2 of 13 pairs. Does not exclude labels as codes, quantities or contents, or names that differ in form between sections; not evidence of meaninglessness. Matches not verified text-blind (that bias could only raise T).	2	A, labels, pharma, herbal, images, negative_knowledge, PHASE_766
 
 ---
 
