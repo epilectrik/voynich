@@ -1,0 +1,11 @@
+[  291.0s] WORDSPEC_1.0: 20 reps, power S3c(.01) 0.05 (.05) 0.10
+[  609.3s] WORDSPEC_1.0: 40 reps, power S3c(.01) 0.05 (.05) 0.10
+[  914.1s] WORDSPEC_1.0: 60 reps, power S3c(.01) 0.03 (.05) 0.07
+[ 1205.9s] WORDSPEC_1.0: 80 reps, power S3c(.01) 0.03 (.05) 0.07
+[ 1507.1s] WORDSPEC_1.0: 100 reps, power S3c(.01) 0.02 (.05) 0.07
+[ 1801.3s] WORDSPEC_1.0: 120 reps, power S3c(.01) 0.03 (.05) 0.07
+[ 2089.3s] WORDSPEC_1.0: 140 reps, power S3c(.01) 0.02 (.05) 0.06
+[ 2365.7s] WORDSPEC_1.0: 160 reps, power S3c(.01) 0.03 (.05) 0.06
+[ 2622.3s] WORDSPEC_1.0: 180 reps, power S3c(.01) 0.02 (.05) 0.06
+[ 2861.8s] WORDSPEC_1.0: 200 reps, power S3c(.01) 0.03 (.05) 0.06
+[ 2861.9s] done

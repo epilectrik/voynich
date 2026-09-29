@@ -1,0 +1,11 @@
+[  661.2s] SHARED_0.25: 20 reps, power S3c(.01) 0.25 (.05) 0.60
+[ 1247.7s] SHARED_0.25: 40 reps, power S3c(.01) 0.25 (.05) 0.70
+[ 1850.1s] SHARED_0.25: 60 reps, power S3c(.01) 0.30 (.05) 0.68
+[ 2755.2s] SHARED_0.25: 80 reps, power S3c(.01) 0.34 (.05) 0.70
+[ 3368.6s] SHARED_0.25: 100 reps, power S3c(.01) 0.31 (.05) 0.67
+[ 3692.2s] SHARED_0.25: 120 reps, power S3c(.01) 0.32 (.05) 0.64
+[ 3930.0s] SHARED_0.25: 140 reps, power S3c(.01) 0.31 (.05) 0.64
+[ 4158.6s] SHARED_0.25: 160 reps, power S3c(.01) 0.31 (.05) 0.61
+[ 4386.7s] SHARED_0.25: 180 reps, power S3c(.01) 0.31 (.05) 0.61
+[ 4602.1s] SHARED_0.25: 200 reps, power S3c(.01) 0.33 (.05) 0.61
+[ 4602.2s] done

@@ -1,0 +1,11 @@
+[  397.3s] DRIFT_0.35: 20 reps, power S3c(.01) 0.60 (.05) 0.80
+[  633.9s] DRIFT_0.35: 40 reps, power S3c(.01) 0.57 (.05) 0.82
+[  891.6s] DRIFT_0.35: 60 reps, power S3c(.01) 0.58 (.05) 0.82
+[ 1189.7s] DRIFT_0.35: 80 reps, power S3c(.01) 0.62 (.05) 0.85
+[ 1464.5s] DRIFT_0.35: 100 reps, power S3c(.01) 0.64 (.05) 0.83
+[ 1765.8s] DRIFT_0.35: 120 reps, power S3c(.01) 0.65 (.05) 0.82
+[ 2027.2s] DRIFT_0.35: 140 reps, power S3c(.01) 0.66 (.05) 0.83
+[ 2275.4s] DRIFT_0.35: 160 reps, power S3c(.01) 0.66 (.05) 0.84
+[ 2872.9s] DRIFT_0.35: 180 reps, power S3c(.01) 0.67 (.05) 0.85
+[ 3133.5s] DRIFT_0.35: 200 reps, power S3c(.01) 0.68 (.05) 0.85
+[ 3133.6s] done

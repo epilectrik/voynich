@@ -1,0 +1,16 @@
+[   66.5s] NAIBBE_P-REC    occ  5048 | S1 ratio 0.821 p 0.854 | S2 -0.118 p 0.849 | S3 -0.015 (null -0.000 sd 0.073) p 0.572
+[   92.7s] TIMM            occ   847 | S1 ratio 4.464 p 0.001 | S2 +0.170 p 0.149 | S3 +0.204 (null -0.000 sd 0.164) p 0.098
+[  145.1s] HABIT3B_769101  occ  5631 | S1 ratio 1.334 p 0.037 | S2 +0.197 p 0.031 | S3 +0.044 (null +0.001 sd 0.073) p 0.279
+[  197.4s] HABIT3B_769102  occ  5629 | S1 ratio 0.896 p 0.718 | S2 -0.143 p 0.888 | S3 +0.034 (null -0.001 sd 0.068) p 0.304
+[  250.4s] HABIT3B_769103  occ  5635 | S1 ratio 0.649 p 0.986 | S2 -0.206 p 0.964 | S3 -0.030 (null -0.004 sd 0.072) p 0.636
+[  250.5s] B cell structure: informative occurrences by folio half {0: 3112, 1: 2739}
+[  525.2s] planted SHARED   0.00: power(.05) S1 0.12 S2 0.05 S3 0.07 (S3 .01 0.03) mean S3 +0.004
+[  793.4s] planted SHARED   0.15: power(.05) S1 0.35 S2 0.07 S3 0.12 (S3 .01 0.03) mean S3 +0.053
+[ 1058.4s] planted SHARED   0.25: power(.05) S1 0.82 S2 0.30 S3 0.42 (S3 .01 0.28) mean S3 +0.117
+[ 1324.7s] planted SHARED   0.35: power(.05) S1 1.00 S2 0.78 S3 0.82 (S3 .01 0.57) mean S3 +0.210
+[ 1591.0s] planted SHARED   0.50: power(.05) S1 1.00 S2 1.00 S3 1.00 (S3 .01 1.00) mean S3 +0.383
+[ 1854.6s] planted WORDSPEC 0.50: power(.05) S1 0.38 S2 0.03 S3 0.00 (S3 .01 0.00) mean S3 +0.010
+[ 2111.1s] planted WORDSPEC 1.00: power(.05) S1 0.90 S2 0.00 S3 0.03 (S3 .01 0.00) mean S3 -0.002
+[ 2369.0s] planted LOCAL    1.50: power(.05) S1 0.42 S2 0.20 S3 0.07 (S3 .01 0.00) mean S3 -0.004
+[ 2630.5s] planted LOCAL    3.00: power(.05) S1 0.93 S2 0.60 S3 0.12 (S3 .01 0.03) mean S3 +0.010
+[ 2630.5s] done

@@ -1,0 +1,11 @@
+[  451.5s] SHARED_PARA_0.35: 20 reps, power S3c(.01) 0.10 (.05) 0.10
+[  762.4s] SHARED_PARA_0.35: 40 reps, power S3c(.01) 0.05 (.05) 0.05
+[ 1126.3s] SHARED_PARA_0.35: 60 reps, power S3c(.01) 0.07 (.05) 0.10
+[ 1494.1s] SHARED_PARA_0.35: 80 reps, power S3c(.01) 0.06 (.05) 0.12
+[ 1847.0s] SHARED_PARA_0.35: 100 reps, power S3c(.01) 0.05 (.05) 0.10
+[ 2186.0s] SHARED_PARA_0.35: 120 reps, power S3c(.01) 0.04 (.05) 0.08
+[ 2868.8s] SHARED_PARA_0.35: 140 reps, power S3c(.01) 0.04 (.05) 0.08
+[ 3205.4s] SHARED_PARA_0.35: 160 reps, power S3c(.01) 0.04 (.05) 0.08
+[ 3482.9s] SHARED_PARA_0.35: 180 reps, power S3c(.01) 0.04 (.05) 0.09
+[ 3656.2s] SHARED_PARA_0.35: 200 reps, power S3c(.01) 0.04 (.05) 0.08
+[ 3656.3s] done

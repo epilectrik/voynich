@@ -1,0 +1,31 @@
+[   44.9s] NAIBBE_P-REC  e-runs folio    : occ  5048 S1 ratio 0.823 p 0.850 | S2 -0.118 (null -0.003 sd 0.112) p 0.847
+[   84.0s] NAIBBE_P-REC  e-runs paragraph: occ  5048 S1 ratio 0.928 p 0.812 | S2 -0.115 (null -0.000 sd 0.064) p 0.965
+[  111.9s] NAIBBE_P-REC  i-runs folio    : occ  2915 S1 ratio 1.155 p 0.169 | S2 +0.056 (null +0.000 sd 0.098) p 0.289
+[  140.7s] NAIBBE_P-REC  i-runs paragraph: occ  2915 S1 ratio 0.906 p 0.883 | S2 -0.230 (null +0.005 sd 0.104) p 0.988
+[  181.0s] HABIT3B       e-runs folio    : occ  5631 S1 ratio 1.330 p 0.030 | S2 +0.197 (null -0.002 sd 0.109) p 0.029
+[  220.8s] HABIT3B       e-runs paragraph: occ  5631 S1 ratio 0.870 p 0.948 | S2 -0.112 (null +0.002 sd 0.067) p 0.955
+[  247.1s] HABIT3B       i-runs folio    : occ  2751 S1 ratio 0.999 p 0.483 | S2 +0.023 (null -0.006 sd 0.102) p 0.395
+[  273.4s] HABIT3B       i-runs paragraph: occ  2751 S1 ratio 1.019 p 0.411 | S2 +0.050 (null -0.001 sd 0.118) p 0.340
+[  291.8s] TIMM          e-runs folio    : occ   847 S1 ratio 4.512 p 0.000 | S2 +0.170 (null -0.002 sd 0.159) p 0.149
+C:\git\voynich\phases\PHASE_769_E_DIAL_SETTING\scripts\ed769.py:288: RuntimeWarning: Mean of empty slice.
+  'S2': obs2, 'S2_null_mean': float(null2[ok2].mean()), 'S2_null_sd': float(null2[ok2].std(ddof=1)),
+C:\Users\epilectrik\.pyenv\pyenv-win\versions\3.11.4\Lib\site-packages\numpy\_core\_methods.py:144: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+C:\Users\epilectrik\.pyenv\pyenv-win\versions\3.11.4\Lib\site-packages\numpy\_core\_methods.py:222: RuntimeWarning: Degrees of freedom <= 0 for slice
+  ret = _var(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+C:\Users\epilectrik\.pyenv\pyenv-win\versions\3.11.4\Lib\site-packages\numpy\_core\_methods.py:180: RuntimeWarning: invalid value encountered in divide
+  arrmean = um.true_divide(arrmean, div, out=arrmean,
+C:\Users\epilectrik\.pyenv\pyenv-win\versions\3.11.4\Lib\site-packages\numpy\_core\_methods.py:214: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+[  300.5s] TIMM          e-runs paragraph: occ   847 S1 ratio 1.403 p 0.022 | S2 +nan (null +nan sd nan) p 1.000
+[  302.6s] TIMM          i-runs folio    : occ   149 S1 ratio 4.041 p 0.000 | S2 +nan (null +nan sd nan) p 1.000
+[  304.7s] TIMM          i-runs paragraph: occ   149 S1 ratio 2.224 p 0.106 | S2 +nan (null +nan sd nan) p 1.000
+[  629.2s] planted SHARED   sigma 0.00: S1 power 0.05 S2 power(.05) 0.10 (.01) 0.03 mean S2 +0.035
+[  958.5s] planted SHARED   sigma 0.15: S1 power 0.47 S2 power(.05) 0.17 (.01) 0.05 mean S2 +0.075
+[ 1299.5s] planted SHARED   sigma 0.25: S1 power 0.90 S2 power(.05) 0.53 (.01) 0.28 mean S2 +0.181
+[ 1648.0s] planted SHARED   sigma 0.35: S1 power 0.97 S2 power(.05) 0.80 (.01) 0.62 mean S2 +0.279
+[ 1996.3s] planted SHARED   sigma 0.50: S1 power 1.00 S2 power(.05) 1.00 (.01) 0.95 mean S2 +0.390
+[ 2334.3s] planted WORDSPEC sigma 0.25: S1 power 0.07 S2 power(.05) 0.03 (.01) 0.03 mean S2 -0.002
+[ 2675.3s] planted WORDSPEC sigma 0.50: S1 power 0.38 S2 power(.05) 0.03 (.01) 0.03 mean S2 -0.002
+[ 3015.8s] planted WORDSPEC sigma 1.00: S1 power 0.90 S2 power(.05) 0.05 (.01) 0.00 mean S2 +0.004
+[ 3015.8s] done

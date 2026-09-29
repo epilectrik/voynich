@@ -1,0 +1,11 @@
+[  378.2s] LOCAL_3.0: 20 reps, power S3c(.01) 0.00 (.05) 0.05
+[  790.7s] LOCAL_3.0: 40 reps, power S3c(.01) 0.00 (.05) 0.05
+[ 1166.3s] LOCAL_3.0: 60 reps, power S3c(.01) 0.03 (.05) 0.08
+[ 1546.5s] LOCAL_3.0: 80 reps, power S3c(.01) 0.03 (.05) 0.07
+[ 1935.6s] LOCAL_3.0: 100 reps, power S3c(.01) 0.02 (.05) 0.07
+[ 2312.6s] LOCAL_3.0: 120 reps, power S3c(.01) 0.04 (.05) 0.11
+[ 2647.6s] LOCAL_3.0: 140 reps, power S3c(.01) 0.04 (.05) 0.11
+[ 2948.5s] LOCAL_3.0: 160 reps, power S3c(.01) 0.04 (.05) 0.11
+[ 3238.4s] LOCAL_3.0: 180 reps, power S3c(.01) 0.03 (.05) 0.11
+[ 3506.8s] LOCAL_3.0: 200 reps, power S3c(.01) 0.03 (.05) 0.10
+[ 3506.9s] done
