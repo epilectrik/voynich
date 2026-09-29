@@ -1,0 +1,99 @@
+{
+ "JOINT": {
+  "diagnostics": {
+   "edges": 19292,
+   "L1_mean": 355.67,
+   "L1_over_edges": 0.018436139332365747,
+   "frac_changed_mean": 0.8459329566189888
+  },
+  "reps": {
+   "TOK": {
+    "n3_all": {
+     "obs": 688,
+     "null_mean": 110.935,
+     "null_sd": 13.904222813962004,
+     "X": 6.1553580202796265,
+     "p": 0.004975124378109453
+    },
+    "n3_interior": {
+     "obs": 495,
+     "null_mean": 79.225,
+     "null_sd": 11.059199994692792,
+     "X": 6.18261140542225,
+     "p": 0.004975124378109453
+    },
+    "n3_cross_folio": {
+     "obs": 664,
+     "null_mean": 108.55,
+     "null_sd": 13.571233988101413,
+     "X": 6.0702875399361025,
+     "p": 0.004975124378109453
+    },
+    "n4_all": {
+     "obs": 71,
+     "null_mean": 2.26,
+     "null_sd": 1.91066827741805,
+     "X": 22.085889570552148,
+     "p": 0.004975124378109453
+    },
+    "n4_interior": {
+     "obs": 45,
+     "null_mean": 1.255,
+     "null_sd": 1.2237084258751303,
+     "X": 20.39911308203991,
+     "p": 0.004975124378109453
+    },
+    "n4_cross_folio": {
+     "obs": 69,
+     "null_mean": 2.24,
+     "null_sd": 1.8921684670075465,
+     "X": 21.604938271604937,
+     "p": 0.004975124378109453
+    }
+   }
+  }
+ },
+ "runtime_s": 36.4,
+ "first_words": [
+  "la",
+  "divina",
+  "commedia",
+  "di",
+  "dante",
+  "alighieri",
+  "inferno",
+  "inferno",
+  "canto",
+  "i",
+  "nel",
+  "mezzo",
+  "del",
+  "cammin",
+  "di",
+  "nostra",
+  "vita",
+  "mi",
+  "ritrovai",
+  "per",
+  "una",
+  "selva",
+  "oscura",
+  "che",
+  "la",
+  "diritta",
+  "via",
+  "era",
+  "smarrita",
+  "ahi",
+  "quanto",
+  "a",
+  "dir",
+  "qual",
+  "era",
+  "e",
+  "cosa",
+  "dura",
+  "esta",
+  "selva"
+ ]
+}

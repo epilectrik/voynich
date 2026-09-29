@@ -1,0 +1,15 @@
+[    0.9s] N4 habit3 seed 768601
+[   53.3s]     null N5j: L1/edges 0.109 frac_changed 0.651 | TOK: X3 2.23 p 0.005, X4 2.56 p 0.050 | MID: X3 1.06 p 0.005, X4 1.15 p 0.005 | CLS: X3 1.02 p 0.005, X4 1.04 p 0.005
+[   53.3s] N4 habit3 seed 768602
+[  106.0s]     null N5j: L1/edges 0.106 frac_changed 0.636 | TOK: X3 2.34 p 0.005, X4 3.38 p 0.015 | MID: X3 1.05 p 0.005, X4 1.06 p 0.060 | CLS: X3 1.02 p 0.005, X4 1.02 p 0.095
+[  106.0s] N4 habit3 seed 768603
+[  156.7s]     null N5j: L1/edges 0.109 frac_changed 0.647 | TOK: X3 2.22 p 0.005, X4 2.49 p 0.005 | MID: X3 1.06 p 0.005, X4 1.07 p 0.045 | CLS: X3 1.02 p 0.005, X4 1.00 p 0.363
+[  156.7s] N4 habit3 seed 768604
+[  206.6s]     null N5j: L1/edges 0.106 frac_changed 0.642 | TOK: X3 2.15 p 0.005, X4 1.66 p 0.194 | MID: X3 1.08 p 0.005, X4 1.11 p 0.025 | CLS: X3 1.02 p 0.005, X4 1.02 p 0.015
+[  206.6s] N4 habit3 seed 768605
+[  258.1s]     null N5j: L1/edges 0.107 frac_changed 0.648 | TOK: X3 2.26 p 0.005, X4 2.19 p 0.035 | MID: X3 1.07 p 0.005, X4 1.14 p 0.005 | CLS: X3 1.01 p 0.005, X4 1.02 p 0.045
+[  258.1s] N3 habit2 seed 768504
+[  308.4s]     null N5j: L1/edges 0.107 frac_changed 0.646 | TOK: X3 1.78 p 0.005, X4 3.56 p 0.005 | MID: X3 1.04 p 0.005, X4 1.07 p 0.065 | CLS: X3 1.02 p 0.005, X4 1.02 p 0.080
+[  308.4s] N3 habit2 seed 768505
+[  361.1s]     null N5j: L1/edges 0.109 frac_changed 0.637 | TOK: X3 1.48 p 0.005, X4 1.60 p 0.373 | MID: X3 1.03 p 0.005, X4 1.05 p 0.139 | CLS: X3 1.02 p 0.005, X4 1.01 p 0.124
+[  361.1s] done

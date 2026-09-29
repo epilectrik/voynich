@@ -1,0 +1,99 @@
+{
+ "JOINT": {
+  "diagnostics": {
+   "edges": 19292,
+   "L1_mean": 298.54,
+   "L1_over_edges": 0.015474808210657269,
+   "frac_changed_mean": 0.8493607628465477
+  },
+  "reps": {
+   "TOK": {
+    "n3_all": {
+     "obs": 1182,
+     "null_mean": 95.535,
+     "null_sd": 12.920272528513292,
+     "X": 12.254622675713472,
+     "p": 0.004975124378109453
+    },
+    "n3_interior": {
+     "obs": 861,
+     "null_mean": 69.025,
+     "null_sd": 10.61781829410511,
+     "X": 12.309889325240984,
+     "p": 0.004975124378109453
+    },
+    "n3_cross_folio": {
+     "obs": 1001,
+     "null_mean": 85.1,
+     "null_sd": 12.091776349088743,
+     "X": 11.637630662020907,
+     "p": 0.004975124378109453
+    },
+    "n4_all": {
+     "obs": 216,
+     "null_mean": 1.22,
+     "null_sd": 1.6508258935009672,
+     "X": 97.74774774774775,
+     "p": 0.004975124378109453
+    },
+    "n4_interior": {
+     "obs": 146,
+     "null_mean": 0.94,
+     "null_sd": 1.3286181282269431,
+     "X": 75.77319587628867,
+     "p": 0.004975124378109453
+    },
+    "n4_cross_folio": {
+     "obs": 146,
+     "null_mean": 0.9,
+     "null_sd": 1.469967353413164,
+     "X": 77.36842105263159,
+     "p": 0.004975124378109453
+    }
+   }
+  }
+ },
+ "runtime_s": 34.3,
+ "first_words": [
+  "xxx",
+  "michela",
+  "pereira",
+  "kirkeby",
+  "la",
+  "supposta",
+  "priorita",
+  "della",
+  "versione",
+  "catalana",
+  "lipotesi",
+  "di",
+  "cui",
+  "e",
+  "scaturito",
+  "il",
+  "lavoro",
+  "sfociato",
+  "in",
+  "questo",
+  "volume",
+  "era",
+  "che",
+  "il",
+  "testamentum",
+  "fosse",
+  "unopera",
+  "composta",
+  "originariamente",
+  "in",
+  "catalano",
+  "e",
+  "successivamente",
+  "tradotta",
+  "in",
+  "latino",
+  "lidea",
+  "che",
+  "il",
+  "testo"
+ ]
+}

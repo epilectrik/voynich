@@ -1,0 +1,31 @@
+[    1.6s] P3 Naibbe P-REC (joint null)
+[   70.6s]     null N5j: L1/edges 0.092 frac_changed 0.772 | TOK: X3 2.91 p 0.005, X4 0.88 p 1.000 | MID: X3 1.04 p 0.005, X4 0.98 p 0.672 | CLS: X3 1.01 p 0.025, X4 1.00 p 0.388 | ORACLE: X3 2.54 p 0.005, X4 11.89 p 0.005
+[   70.8s] P3 Naibbe P-PHA (joint null)
+[  145.1s]     null N5j: L1/edges 0.091 frac_changed 0.775 | TOK: X3 2.95 p 0.005, X4 0.94 p 1.000 | MID: X3 1.02 p 0.035, X4 0.91 p 0.896 | CLS: X3 1.00 p 0.488, X4 1.00 p 0.637 | ORACLE: X3 3.10 p 0.005, X4 24.37 p 0.005
+[  145.4s] P3 Naibbe P-ITA (joint null)
+[  219.6s]     null N5j: L1/edges 0.094 frac_changed 0.775 | TOK: X3 2.79 p 0.005, X4 2.54 p 0.095 | MID: X3 1.01 p 0.194, X4 1.05 p 0.303 | CLS: X3 1.00 p 0.532, X4 1.00 p 0.244 | ORACLE: X3 2.34 p 0.005, X4 9.72 p 0.005
+[  219.6s] N2 habit seed 768302
+[  280.7s]     null N5g: L1/edges 0.008 frac_changed 0.857 | TOK: X3 2.15 p 0.005, X4 2.61 p 0.080 | MID: X3 1.03 p 0.015, X4 0.99 p 0.547 | CLS: X3 1.04 p 0.005, X4 1.09 p 0.005
+[  333.3s]     null N5c: L1/edges 0.049 frac_changed 0.826 | TOK: X3 1.05 p 0.408, X4 2.46 p 0.104 | MID: X3 1.00 p 0.662, X4 0.92 p 0.950 | CLS: X3 1.01 p 0.005, X4 1.02 p 0.040
+[  388.0s]     null N5j: L1/edges 0.116 frac_changed 0.685 | TOK: X3 0.93 p 0.642, X4 2.04 p 0.224 | MID: X3 1.00 p 0.677, X4 0.94 p 0.891 | CLS: X3 1.01 p 0.010, X4 1.02 p 0.045
+[  388.0s] N2 habit seed 768303
+[  448.7s]     null N5g: L1/edges 0.008 frac_changed 0.858 | TOK: X3 2.61 p 0.005, X4 0.88 p 1.000 | MID: X3 1.05 p 0.005, X4 1.19 p 0.005 | CLS: X3 1.05 p 0.005, X4 1.09 p 0.005
+[  503.1s]     null N5c: L1/edges 0.050 frac_changed 0.828 | TOK: X3 1.36 p 0.035, X4 0.78 p 1.000 | MID: X3 1.03 p 0.015, X4 1.06 p 0.159 | CLS: X3 1.01 p 0.015, X4 1.02 p 0.070
+[  559.0s]     null N5j: L1/edges 0.115 frac_changed 0.682 | TOK: X3 1.31 p 0.070, X4 0.84 p 1.000 | MID: X3 1.02 p 0.020, X4 1.06 p 0.100 | CLS: X3 1.01 p 0.010, X4 1.02 p 0.040
+[  559.0s] N2 habit seed 768301 (joint null only; GLYPH/CLASS in part 1)
+[  621.5s]     null N5j: L1/edges 0.113 frac_changed 0.676 | TOK: X3 1.37 p 0.025, X4 0.76 p 1.000 | MID: X3 1.01 p 0.124, X4 1.08 p 0.045 | CLS: X3 1.01 p 0.015, X4 1.01 p 0.114
+[  621.5s] N3 habit2 seed 768501
+[  676.7s]     null N5g: L1/edges 0.010 frac_changed 0.840 | TOK: X3 4.54 p 0.005, X4 3.45 p 0.045 | MID: X3 1.09 p 0.005, X4 1.21 p 0.005 | CLS: X3 1.04 p 0.005, X4 1.09 p 0.005
+[  729.0s]     null N5c: L1/edges 0.049 frac_changed 0.826 | TOK: X3 3.59 p 0.005, X4 3.03 p 0.040 | MID: X3 1.10 p 0.005, X4 1.20 p 0.005 | CLS: X3 1.02 p 0.005, X4 1.04 p 0.005
+[  784.8s]     null N5j: L1/edges 0.107 frac_changed 0.644 | TOK: X3 1.77 p 0.005, X4 1.26 p 0.443 | MID: X3 1.04 p 0.005, X4 1.04 p 0.169 | CLS: X3 1.01 p 0.005, X4 1.03 p 0.010
+[  784.8s] N3 habit2 seed 768502
+[  838.7s]     null N5g: L1/edges 0.009 frac_changed 0.839 | TOK: X3 3.67 p 0.005, X4 0.72 p 1.000 | MID: X3 1.09 p 0.005, X4 1.23 p 0.005 | CLS: X3 1.05 p 0.005, X4 1.08 p 0.005
+[  890.5s]     null N5c: L1/edges 0.048 frac_changed 0.828 | TOK: X3 2.92 p 0.005, X4 0.65 p 1.000 | MID: X3 1.09 p 0.005, X4 1.23 p 0.005 | CLS: X3 1.02 p 0.005, X4 1.03 p 0.015
+[  946.6s]     null N5j: L1/edges 0.106 frac_changed 0.639 | TOK: X3 1.46 p 0.005, X4 0.47 p 1.000 | MID: X3 1.04 p 0.005, X4 1.08 p 0.040 | CLS: X3 1.01 p 0.005, X4 1.02 p 0.020
+[  946.7s] N3 habit2 seed 768503
+[ 1001.3s]     null N5g: L1/edges 0.009 frac_changed 0.839 | TOK: X3 4.63 p 0.005, X4 5.26 p 0.005 | MID: X3 1.11 p 0.005, X4 1.26 p 0.005 | CLS: X3 1.05 p 0.005, X4 1.07 p 0.005
+[ 1054.7s]     null N5c: L1/edges 0.050 frac_changed 0.826 | TOK: X3 3.93 p 0.005, X4 4.96 p 0.005 | MID: X3 1.12 p 0.005, X4 1.30 p 0.005 | CLS: X3 1.02 p 0.005, X4 1.02 p 0.050
+[ 1109.3s]     null N5j: L1/edges 0.113 frac_changed 0.645 | TOK: X3 1.76 p 0.005, X4 1.53 p 0.100 | MID: X3 1.05 p 0.005, X4 1.14 p 0.010 | CLS: X3 1.01 p 0.005, X4 1.01 p 0.075
+[ 1109.3s] N1 Timm (joint null)
+[ 1162.0s]     null N5j: L1/edges 0.056 frac_changed 0.807 | TOK: X3 1.33 p 0.075, X4 1.66 p 0.328 | MID: X3 1.07 p 0.209, X4 1.62 p 0.080 | CLS: X3 1.00 p 0.637, X4 1.00 p 0.035
+[ 1162.0s] done

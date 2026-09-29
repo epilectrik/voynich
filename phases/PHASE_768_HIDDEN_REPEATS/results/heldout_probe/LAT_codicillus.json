@@ -1,0 +1,99 @@
+{
+ "JOINT": {
+  "diagnostics": {
+   "edges": 19292,
+   "L1_mean": 459.7,
+   "L1_over_edges": 0.023828529960605433,
+   "frac_changed_mean": 0.8384472305609512
+  },
+  "reps": {
+   "TOK": {
+    "n3_all": {
+     "obs": 231,
+     "null_mean": 127.1,
+     "null_sd": 13.658799876649184,
+     "X": 1.8110850897736144,
+     "p": 0.004975124378109453
+    },
+    "n3_interior": {
+     "obs": 169,
+     "null_mean": 92.125,
+     "null_sd": 11.398200289924993,
+     "X": 1.825503355704698,
+     "p": 0.004975124378109453
+    },
+    "n3_cross_folio": {
+     "obs": 167,
+     "null_mean": 112.815,
+     "null_sd": 12.982430144711412,
+     "X": 1.4760796028642973,
+     "p": 0.004975124378109453
+    },
+    "n4_all": {
+     "obs": 39,
+     "null_mean": 3.565,
+     "null_sd": 2.535333227184214,
+     "X": 8.762322015334064,
+     "p": 0.004975124378109453
+    },
+    "n4_interior": {
+     "obs": 25,
+     "null_mean": 2.105,
+     "null_sd": 1.797255025904978,
+     "X": 8.373590982286634,
+     "p": 0.004975124378109453
+    },
+    "n4_cross_folio": {
+     "obs": 17,
+     "null_mean": 1.725,
+     "null_sd": 1.6743332881475526,
+     "X": 6.605504587155963,
+     "p": 0.004975124378109453
+    }
+   }
+  }
+ },
+ "runtime_s": 36.3,
+ "first_words": [
+  "ley",
+  "ander",
+  "unt",
+  "iston",
+  "bonaparte",
+  "carolos",
+  "monogramsymbol",
+  "a",
+  "dom",
+  "advocii",
+  "curiae",
+  "de",
+  "qua",
+  "materia",
+  "creo",
+  "prima",
+  "educatur",
+  "app",
+  "ellatione",
+  "et",
+  "solius",
+  "nominis",
+  "in",
+  "primordis",
+  "sumimus",
+  "quod",
+  "sublimatio",
+  "est",
+  "ablativa",
+  "sublimativa",
+  "avam",
+  "immo",
+  "pro",
+  "suo",
+  "actu",
+  "et",
+  "in",
+  "dare",
+  "et",
+  "habere"
+ ]
+}

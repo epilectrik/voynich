@@ -1,0 +1,99 @@
+{
+ "JOINT": {
+  "diagnostics": {
+   "edges": 19292,
+   "L1_mean": 417.78,
+   "L1_over_edges": 0.021655608542400995,
+   "frac_changed_mean": 0.8480160692212608
+  },
+  "reps": {
+   "TOK": {
+    "n3_all": {
+     "obs": 327,
+     "null_mean": 20.52,
+     "null_sd": 5.976469773601626,
+     "X": 15.241635687732343,
+     "p": 0.004975124378109453
+    },
+    "n3_interior": {
+     "obs": 234,
+     "null_mean": 14.7,
+     "null_sd": 4.756376307430841,
+     "X": 14.96815286624204,
+     "p": 0.004975124378109453
+    },
+    "n3_cross_folio": {
+     "obs": 283,
+     "null_mean": 18.1,
+     "null_sd": 5.646184285420077,
+     "X": 14.869109947643977,
+     "p": 0.004975124378109453
+    },
+    "n4_all": {
+     "obs": 48,
+     "null_mean": 1.865,
+     "null_sd": 2.149389302071474,
+     "X": 17.102966841186735,
+     "p": 0.004975124378109453
+    },
+    "n4_interior": {
+     "obs": 30,
+     "null_mean": 0.945,
+     "null_sd": 1.1482890921697289,
+     "X": 15.938303341902316,
+     "p": 0.004975124378109453
+    },
+    "n4_cross_folio": {
+     "obs": 38,
+     "null_mean": 1.685,
+     "null_sd": 2.0681297841335056,
+     "X": 14.525139664804469,
+     "p": 0.004975124378109453
+    }
+   }
+  }
+ },
+ "runtime_s": 34.8,
+ "first_words": [
+  "cis",
+  "viris",
+  "feruis",
+  "dommi",
+  "noftri",
+  "e",
+  "s",
+  "r",
+  "cn",
+  "ii",
+  "s",
+  "t",
+  "icompojitusam",
+  "derrvescissa",
+  "facra",
+  "theol",
+  "giaprpfeffbre",
+  "ac",
+  "plnlofopho",
+  "egregio",
+  "prooehi",
+  "v",
+  "mc",
+  "i",
+  "x",
+  "i",
+  "t",
+  "solomon",
+  "sapientiae",
+  "cap",
+  "deus",
+  "dedit",
+  "mihi",
+  "horum",
+  "fcientiam",
+  "veram",
+  "quae",
+  "funtvt",
+  "fciam",
+  "difpoiitionem"
+ ]
+}

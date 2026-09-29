@@ -1,0 +1,42 @@
+{
+ "note": "Pre-lock probe on the Naibbe P-REC answer key (controls only): information that visible token features carry about the hidden plaintext unit.",
+ "H_chunk_bits": 6.754,
+ "chunks": 361,
+ "tokens_per_chunk_mean": 12.4,
+ "I_bits": {
+  "token": 6.752,
+  "MID": 3.601,
+  "first+last glyph": 3.452,
+  "first 2 glyphs": 3.083,
+  "last 2 glyphs": 2.612,
+  "CLS": 2.194,
+  "first glyph": 1.72,
+  "last glyph": 1.464,
+  "length": 0.83
+ },
+ "example_homophones": {
+  "e": [
+   "chedy",
+   "dar",
+   "ar",
+   "lchedy",
+   "chckhy"
+  ],
+  "a": [
+   "ol",
+   "chdy",
+   "qol",
+   "or",
+   "cheol",
+   "chol"
+  ],
+  "o": [
+   "aiin",
+   "y",
+   "ain",
+   "al",
+   "air",
+   "am"
+  ]
+ }
+}

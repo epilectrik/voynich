@@ -1,0 +1,32 @@
+[    0.9s] skeleton: 2299 lines, 21610 certain tokens
+[    1.3s] P1 WORD_la
+[   48.4s]     null N5l: L1/edges 0.011 frac_changed 0.852 | TOK: X3 14.54 p 0.005, X4 161.61 p 0.005 | TOK_k4: X3 16.22 p 0.005, X4 4.90 p 0.005 | TOK_k16: X3 0.95 p 1.000, X4 1.00 p 1.000
+[   90.3s]     null N5c: L1/edges 0.000 frac_changed 0.858 | TOK: X3 15.14 p 0.005, X4 187.93 p 0.005 | TOK_k4: X3 17.34 p 0.005, X4 4.67 p 0.005 | TOK_k16: X3 0.95 p 1.000, X4 1.00 p 1.000
+[   90.6s] P1 WORD_it
+[  136.9s]     null N5l: L1/edges 0.009 frac_changed 0.850 | TOK: X3 13.45 p 0.005, X4 131.49 p 0.005 | TOK_k4: X3 31.32 p 0.005, X4 20.79 p 0.005 | TOK_k16: X3 2.75 p 0.050, X4 1.00 p 1.000
+[  178.4s]     null N5c: L1/edges 0.000 frac_changed 0.859 | TOK: X3 17.16 p 0.005, X4 186.43 p 0.005 | TOK_k4: X3 40.55 p 0.005, X4 20.59 p 0.005 | TOK_k16: X3 2.94 p 0.015, X4 1.00 p 1.000
+[  178.7s] P1 WORD_es
+[  224.1s]     null N5l: L1/edges 0.011 frac_changed 0.845 | TOK: X3 7.25 p 0.005, X4 81.63 p 0.005 | TOK_k4: X3 17.48 p 0.005, X4 21.30 p 0.005 | TOK_k16: X3 4.27 p 0.005, X4 1.00 p 1.000
+[  266.5s]     null N5c: L1/edges 0.000 frac_changed 0.854 | TOK: X3 7.99 p 0.005, X4 111.47 p 0.005 | TOK_k4: X3 20.15 p 0.005, X4 22.33 p 0.005 | TOK_k16: X3 4.17 p 0.010, X4 1.00 p 1.000
+[  266.8s] P1 WORD_de
+[  312.8s]     null N5l: L1/edges 0.016 frac_changed 0.844 | TOK: X3 9.84 p 0.005, X4 96.47 p 0.005 | TOK_k4: X3 22.10 p 0.005, X4 12.75 p 0.005 | TOK_k16: X3 2.78 p 0.045, X4 1.00 p 1.000
+[  352.8s]     null N5c: L1/edges 0.000 frac_changed 0.858 | TOK: X3 12.77 p 0.005, X4 177.79 p 0.005 | TOK_k4: X3 33.45 p 0.005, X4 12.75 p 0.005 | TOK_k16: X3 2.88 p 0.025, X4 1.00 p 1.000
+[  353.1s] P1 WORD_en
+[  398.3s]     null N5l: L1/edges 0.018 frac_changed 0.841 | TOK: X3 6.70 p 0.005, X4 44.73 p 0.005 | TOK_k4: X3 15.23 p 0.005, X4 9.82 p 0.005 | TOK_k16: X3 3.88 p 0.005, X4 1.00 p 1.000
+[  439.3s]     null N5c: L1/edges 0.000 frac_changed 0.855 | TOK: X3 8.58 p 0.005, X4 108.27 p 0.005 | TOK_k4: X3 22.23 p 0.005, X4 10.78 p 0.005 | TOK_k16: X3 4.39 p 0.005, X4 1.00 p 1.000
+[  440.0s] P3 Naibbe P-REC (token -> chunk purity 0.9994; 4491 types, 361 chunks)
+[  503.0s]     null N5g: L1/edges 0.009 frac_changed 0.860 | TOK: X3 3.91 p 0.005, X4 0.92 p 1.000 | MID: X3 1.05 p 0.005, X4 0.94 p 0.786 | CLS: X3 1.01 p 0.005, X4 1.00 p 0.358 | ORACLE: X3 2.95 p 0.005, X4 20.24 p 0.005
+[  567.7s]     null N5c: L1/edges 0.028 frac_changed 0.846 | TOK: X3 3.50 p 0.005, X4 0.96 p 1.000 | MID: X3 1.05 p 0.005, X4 0.94 p 0.781 | CLS: X3 1.01 p 0.015, X4 1.00 p 0.542 | ORACLE: X3 2.85 p 0.005, X4 18.28 p 0.005
+[  567.9s] P3 Naibbe P-PHA (token -> chunk purity 0.9995; 4538 types, 375 chunks)
+[  631.0s]     null N5g: L1/edges 0.009 frac_changed 0.860 | TOK: X3 3.20 p 0.005, X4 0.97 p 1.000 | MID: X3 1.02 p 0.050, X4 0.91 p 0.881 | CLS: X3 1.00 p 0.134, X4 1.01 p 0.065 | ORACLE: X3 3.52 p 0.005, X4 33.26 p 0.005
+[  694.6s]     null N5c: L1/edges 0.026 frac_changed 0.847 | TOK: X3 3.20 p 0.005, X4 0.93 p 1.000 | MID: X3 1.02 p 0.040, X4 0.91 p 0.856 | CLS: X3 1.00 p 0.562, X4 1.00 p 0.318 | ORACLE: X3 3.48 p 0.005, X4 31.28 p 0.005
+[  694.9s] P3 Naibbe P-ITA (token -> chunk purity 0.9994; 4361 types, 283 chunks)
+[  763.1s]     null N5g: L1/edges 0.008 frac_changed 0.859 | TOK: X3 3.60 p 0.005, X4 2.78 p 0.040 | MID: X3 1.02 p 0.090, X4 1.05 p 0.284 | CLS: X3 1.00 p 0.219, X4 1.01 p 0.075 | ORACLE: X3 2.70 p 0.005, X4 14.03 p 0.005
+[  829.0s]     null N5c: L1/edges 0.029 frac_changed 0.845 | TOK: X3 3.16 p 0.005, X4 2.80 p 0.040 | MID: X3 1.01 p 0.189, X4 1.05 p 0.284 | CLS: X3 1.00 p 0.706, X4 1.00 p 0.224 | ORACLE: X3 2.59 p 0.005, X4 12.32 p 0.005
+[  829.0s] N2 habit generator
+[  886.0s]     null N5g: L1/edges 0.008 frac_changed 0.857 | TOK: X3 2.72 p 0.005, X4 0.89 p 1.000 | MID: X3 1.04 p 0.005, X4 1.16 p 0.010 | CLS: X3 1.04 p 0.005, X4 1.09 p 0.005
+[  937.8s]     null N5c: L1/edges 0.050 frac_changed 0.828 | TOK: X3 1.33 p 0.055, X4 0.77 p 1.000 | MID: X3 1.01 p 0.124, X4 1.07 p 0.119 | CLS: X3 1.01 p 0.015, X4 1.01 p 0.184
+[  937.8s] N1 Timm
+[  989.4s]     null N5g: L1/edges 0.021 frac_changed 0.842 | TOK: X3 1.14 p 0.264, X4 1.38 p 0.443 | MID: X3 1.09 p 0.204, X4 1.49 p 0.134 | CLS: X3 1.00 p 0.861, X4 1.00 p 0.259
+[ 1043.3s]     null N5c: L1/edges 0.004 frac_changed 0.846 | TOK: X3 1.26 p 0.119, X4 1.49 p 0.403 | MID: X3 1.07 p 0.214, X4 1.44 p 0.139 | CLS: X3 1.00 p 0.418, X4 1.00 p 0.020
+[ 1043.4s] done

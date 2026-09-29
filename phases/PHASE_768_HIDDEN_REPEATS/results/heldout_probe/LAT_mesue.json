@@ -1,0 +1,99 @@
+{
+ "JOINT": {
+  "diagnostics": {
+   "edges": 19292,
+   "L1_mean": 594.15,
+   "L1_over_edges": 0.030797739995853203,
+   "frac_changed_mean": 0.8469241862381541
+  },
+  "reps": {
+   "TOK": {
+    "n3_all": {
+     "obs": 131,
+     "null_mean": 19.665,
+     "null_sd": 5.65087932855849,
+     "X": 6.387611904185822,
+     "p": 0.004975124378109453
+    },
+    "n3_interior": {
+     "obs": 99,
+     "null_mean": 15.765,
+     "null_sd": 4.7879428761133545,
+     "X": 5.964807634953773,
+     "p": 0.004975124378109453
+    },
+    "n3_cross_folio": {
+     "obs": 114,
+     "null_mean": 18.98,
+     "null_sd": 5.456967331981342,
+     "X": 5.7557557557557555,
+     "p": 0.004975124378109453
+    },
+    "n4_all": {
+     "obs": 46,
+     "null_mean": 3.735,
+     "null_sd": 2.507230749283112,
+     "X": 9.926082365364309,
+     "p": 0.004975124378109453
+    },
+    "n4_interior": {
+     "obs": 34,
+     "null_mean": 3.445,
+     "null_sd": 2.2633134868370517,
+     "X": 7.874015748031495,
+     "p": 0.004975124378109453
+    },
+    "n4_cross_folio": {
+     "obs": 37,
+     "null_mean": 3.705,
+     "null_sd": 2.4837107511699883,
+     "X": 8.076514346439957,
+     "p": 0.004975124378109453
+    }
+   }
+  }
+ },
+ "runtime_s": 35.5,
+ "first_words": [
+  "mesues",
+  "grabadin",
+  "combined",
+  "latin",
+  "corpus",
+  "liber",
+  "primus",
+  "secundus",
+  "source",
+  "mesue",
+  "opera",
+  "lyon",
+  "internet",
+  "archive",
+  "bubgbdkepnabec",
+  "liber",
+  "primus",
+  "antidotarium",
+  "compound",
+  "preparations",
+  "l",
+  "loannis",
+  "mesvae",
+  "grabadin",
+  "l",
+  "idest",
+  "compendii",
+  "secretorvm",
+  "l",
+  "qw",
+  "medicamenta",
+  "compoiita",
+  "alijs",
+  "celebriora",
+  "deferibuntur",
+  "l",
+  "a",
+  "mpiiciamquoeunqaemololiiundamponenb",
+  "iilvumdaascofflplcxioncs",
+  "podedret"
+ ]
+}

@@ -1,0 +1,11 @@
+[    1.2s] P1 WORD_la (joint null)
+[   48.9s]     null N5j: L1/edges 0.015 frac_changed 0.847 | TOK: X3 13.68 p 0.005, X4 134.58 p 0.005 | TOK_k4: X3 16.22 p 0.005, X4 4.85 p 0.005 | TOK_k16: X3 0.95 p 1.000, X4 1.00 p 1.000
+[   49.3s] P1 WORD_it (joint null)
+[   98.1s]     null N5j: L1/edges 0.017 frac_changed 0.844 | TOK: X3 11.94 p 0.005, X4 98.21 p 0.005 | TOK_k4: X3 27.49 p 0.005, X4 21.00 p 0.005 | TOK_k16: X3 2.73 p 0.055, X4 1.00 p 1.000
+[   98.5s] P1 WORD_es (joint null)
+[  149.2s]     null N5j: L1/edges 0.018 frac_changed 0.838 | TOK: X3 6.57 p 0.005, X4 56.66 p 0.005 | TOK_k4: X3 15.57 p 0.005, X4 20.54 p 0.005 | TOK_k16: X3 4.13 p 0.010, X4 1.00 p 1.000
+[  149.5s] P1 WORD_de (joint null)
+[  199.9s]     null N5j: L1/edges 0.021 frac_changed 0.842 | TOK: X3 9.61 p 0.005, X4 81.20 p 0.005 | TOK_k4: X3 22.97 p 0.005, X4 12.15 p 0.005 | TOK_k16: X3 2.70 p 0.060, X4 1.00 p 1.000
+[  200.3s] P1 WORD_en (joint null)
+[  247.2s]     null N5j: L1/edges 0.027 frac_changed 0.834 | TOK: X3 6.33 p 0.005, X4 37.07 p 0.005 | TOK_k4: X3 15.03 p 0.005, X4 9.48 p 0.005 | TOK_k16: X3 3.91 p 0.025, X4 1.00 p 1.000
+[  247.2s] done

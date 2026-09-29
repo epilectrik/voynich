@@ -1,0 +1,99 @@
+{
+ "JOINT": {
+  "diagnostics": {
+   "edges": 19292,
+   "L1_mean": 411.89,
+   "L1_over_edges": 0.02135030064275347,
+   "frac_changed_mean": 0.8505365236329391
+  },
+  "reps": {
+   "TOK": {
+    "n3_all": {
+     "obs": 2925,
+     "null_mean": 67.175,
+     "null_sd": 12.24475582550059,
+     "X": 42.918958562522924,
+     "p": 0.004975124378109453
+    },
+    "n3_interior": {
+     "obs": 2120,
+     "null_mean": 46.12,
+     "null_sd": 9.807985670593778,
+     "X": 45.012733446519526,
+     "p": 0.004975124378109453
+    },
+    "n3_cross_folio": {
+     "obs": 2634,
+     "null_mean": 59.875,
+     "null_sd": 11.625624746815495,
+     "X": 43.285420944558524,
+     "p": 0.004975124378109453
+    },
+    "n4_all": {
+     "obs": 1350,
+     "null_mean": 4.73,
+     "null_sd": 3.125048743338447,
+     "X": 235.7766143106457,
+     "p": 0.004975124378109453
+    },
+    "n4_interior": {
+     "obs": 938,
+     "null_mean": 2.38,
+     "null_sd": 2.260786539878206,
+     "X": 277.81065088757396,
+     "p": 0.004975124378109453
+    },
+    "n4_cross_folio": {
+     "obs": 1238,
+     "null_mean": 4.46,
+     "null_sd": 2.901810213050263,
+     "X": 226.92307692307693,
+     "p": 0.004975124378109453
+    }
+   }
+  }
+ },
+ "runtime_s": 34.3,
+ "first_words": [
+  "ibrahim",
+  "oglu",
+  "davut",
+  "oglu",
+  "isa",
+  "mesihin",
+  "soy",
+  "kayd\u0131",
+  "soyledir",
+  "ibrahim",
+  "ishak\u0131n",
+  "babas\u0131yd\u0131",
+  "ishak",
+  "yakupun",
+  "babas\u0131yd\u0131",
+  "yakup",
+  "yahuda",
+  "ve",
+  "kardeslerinin",
+  "babas\u0131yd\u0131",
+  "yahuda",
+  "tamardan",
+  "dogan",
+  "peresle",
+  "zerah\u0131n",
+  "babas\u0131yd\u0131",
+  "peres",
+  "hesronun",
+  "babas\u0131yd\u0131",
+  "hesron",
+  "ram\u0131n",
+  "babas\u0131yd\u0131",
+  "ram",
+  "amminadav\u0131n",
+  "babas\u0131yd\u0131",
+  "amminadav",
+  "nahsonun",
+  "babas\u0131yd\u0131",
+  "nahson",
+  "salmonun"
+ ]
+}
