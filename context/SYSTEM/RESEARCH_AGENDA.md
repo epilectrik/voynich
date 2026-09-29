@@ -94,7 +94,7 @@ text made to look meaningful? And, if it carries content, what content?
      label is a word of the herbal text (e.g. label agreement within the pharmaceutical section across fragments
      of the same plant), which needs more text-blind plant identifications.
    - Precondition met: PHASE_769, C2086 — the e-run dial has a folio-level component shared across words, which
-     drifts within pages (no per-procedure setting). The picture gate passed. Next: a blind picture-coding test
+     shows no per-procedure setting; whether it drifts within pages is unresolved. The picture gate passed. Next: a blind picture-coding test
      within one section and hand that codes page regions or position-resolved features, not only whole folios,
      and that tests multi-step copying and writing-session drift as rival sources.
 9. **Physical structure.**

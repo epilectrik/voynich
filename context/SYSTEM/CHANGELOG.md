@@ -4,6 +4,26 @@
 
 ---
 
+## Version 7.32 (2026-09-29) — C2086 drift clause rescoped; C1977 scope note (expert review)
+
+### Summary
+Three experts reviewed the C2086 result: expert-advisor, lean-expert and crazy-expert. The folio-level component
+stands. Two corrections:
+- **C2086's drift clause was stronger than the evidence.**
+  - The S3far/S3c ratio of 0.29 has an SE of about 0.22.
+  - A uniform constant setting gives S3far this low about 4% of the time, against 25% under a page-restarting drift.
+  - A page setting that header or closing lines do not express is not excluded.
+  - The clause is now stated as unresolved. It will be settled by the per-quarter between-folio variance profile and a
+    residual variogram.
+- **C1977 is mostly composition.** Under word-frame control, the recto/verso correlation of folio e-propensity falls
+  from 0.665 to 0.26 (27 pairs).
+
+### Registry
+- Scope notes only.
+- Live counts unchanged: 1,893.
+
+---
+
 ## Version 7.31 (2026-09-29) — PHASE_769: the e-run dial (folio-level component, drift-like; C2086); PHASE_768 design stage
 
 ### Summary

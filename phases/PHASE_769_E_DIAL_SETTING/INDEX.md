@@ -60,7 +60,10 @@ lean-expert reviews set before any picture test of the human's heat-level readin
   - It holds in the two largest strata independently.
 - **Its size** corresponds to a folio-level logit SD of about 0.4 (calibration: σ 0.35 gives mean S3c 0.25, σ 0.5 gives
   0.38), or roughly ±6–7 points around the 20% base rate.
-- **It behaves like drift, not a fixed setting.**
+- **It behaves like drift, not a fixed setting.** [Rescoped 2026-09-29 after expert review: unresolved. The ratio
+  has SE about 0.22; a uniform constant setting gives S3far this low about 4% of the time and drift 25%. A page
+  setting that header or closing lines do not express is not yet excluded. See the variance profile and
+  variogram in the next phase.]
   - The first and last quarters of a folio share much less than its two halves do: S3far/S3c = 0.29.
   - In calibration, a constant per-folio setting gave 0.70–0.72 and slow drift within the folio gave 0.33.
   - So the long-e propensity changes gradually down a page; it is not set once per page.

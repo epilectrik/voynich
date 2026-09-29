@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.31, 2026-09-29)
+# Status Brief — what currently stands (v7.32, 2026-09-29)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -50,7 +50,9 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - **The e-run dial is set above the word** (C2086, PHASE_769).
   - With the word frame, position, paragraph length, section and hand fixed, the choice of e vs ee still varies
     by folio, shared across different words (z 4.3; confirmed on ZL and on runs both transcribers read alike).
-  - It drifts within pages rather than being fixed per page or per procedure.
+  - There is no per-procedure (paragraph) setting. Whether it drifts within pages or is a page setting that
+    the top and bottom lines do not express is unresolved (first vs last quarter coherence is low, but the
+    estimate is imprecise).
   - Its source (content, writing session, pen, copying) is not identified.
 - **Minim counts are transcription-dependent** (PHASE_769): H-F kappa 0.42 on 1 vs 2+ minims (ain vs aiin).
   e-run lengths are reliable (kappa 0.95-0.96, PHASE_758).

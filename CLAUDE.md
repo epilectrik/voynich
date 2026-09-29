@@ -187,7 +187,7 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 7.31 |
+| Version | 7.32 |
 | Constraints | 1893 live in the generated table (T0 2, T1 38, T2 1683, T3 166, T4 4); numbering through C2086 |
 | Phases | 769 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending; PHASE_768 design stage only) |
 | Folios | 83 (Currier B) |
