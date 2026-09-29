@@ -1,0 +1,3668 @@
+[
+ {
+  "folio": "f88r",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "otorchety",
+  "sim": [
+   1,
+   "a"
+  ],
+  "item": 1,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "osal",
+  "sim": [
+   1,
+   "b"
+  ],
+  "item": 1,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "orald",
+  "sim": [
+   2,
+   ""
+  ],
+  "item": 2,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oldar",
+  "sim": [
+   3,
+   ""
+  ],
+  "item": 3,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otoky",
+  "sim": [
+   4,
+   ""
+  ],
+  "item": 4,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otaly",
+  "sim": [
+   5,
+   ""
+  ],
+  "item": 5,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 12,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "otaldy",
+  "sim": [
+   6,
+   "a"
+  ],
+  "item": 6,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oram",
+  "sim": [
+   6,
+   "b"
+  ],
+  "item": 6,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "dary",
+  "sim": [
+   7,
+   ""
+  ],
+  "item": 7,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 15,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okol",
+  "sim": [
+   8,
+   ""
+  ],
+  "item": 8,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 16,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "sorory",
+  "sim": [
+   9,
+   ""
+  ],
+  "item": 9,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 17,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otyda",
+  "sim": [
+   10,
+   ""
+  ],
+  "item": 10,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 23,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "ofyskydal",
+  "sim": [
+   11,
+   "a"
+  ],
+  "item": 11,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 24,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otor,am",
+  "sim": [
+   11,
+   "b"
+  ],
+  "item": 11,
+  "source": "count"
+ },
+ {
+  "folio": "f88r",
+  "locus": 25,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "ofaldo",
+  "sim": [
+   12,
+   ""
+  ],
+  "item": 12,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "okalyd",
+  "sim": [
+   13,
+   "a"
+  ],
+  "item": 13,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "cheocthy",
+  "sim": [
+   13,
+   "b"
+  ],
+  "item": 13,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "cpheor",
+  "sim": [
+   14,
+   ""
+  ],
+  "item": 14,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otar.arody",
+  "sim": [
+   15,
+   ""
+  ],
+  "item": 15,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otokol",
+  "sim": [
+   16,
+   ""
+  ],
+  "item": 16,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 11,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "otoram",
+  "sim": [
+   17,
+   "a"
+  ],
+  "item": 17,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otor[a:y]",
+  "sim": [
+   17,
+   "b"
+  ],
+  "item": 17,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "cheosdy",
+  "sim": [
+   18,
+   ""
+  ],
+  "item": 18,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okaiin",
+  "sim": [
+   19,
+   ""
+  ],
+  "item": 19,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 27,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "daramdal",
+  "sim": [
+   20,
+   "a"
+  ],
+  "item": 20,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 28,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otydary",
+  "sim": [
+   20,
+   "b"
+  ],
+  "item": 20,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 29,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otdordy",
+  "sim": [
+   21,
+   ""
+  ],
+  "item": 21,
+  "source": "count"
+ },
+ {
+  "folio": "f88v",
+  "locus": 30,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "dararda[?:]",
+  "sim": [
+   22,
+   ""
+  ],
+  "item": 22,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "okchshy",
+  "sim": [
+   23,
+   "a"
+  ],
+  "item": 23,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "qkol",
+  "sim": [
+   23,
+   "b"
+  ],
+  "item": 23,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oldam",
+  "sim": [
+   24,
+   ""
+  ],
+  "item": 24,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otoldy",
+  "sim": [
+   25,
+   ""
+  ],
+  "item": 25,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "ararchodaiin",
+  "sim": [
+   26,
+   ""
+  ],
+  "item": 26,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 11,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "ykyd",
+  "sim": [
+   27,
+   "a"
+  ],
+  "item": 27,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "chol,ches",
+  "sim": [
+   27,
+   "b"
+  ],
+  "item": 27,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otorain",
+  "sim": [
+   28,
+   ""
+  ],
+  "item": 28,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okaiin,dan",
+  "sim": [
+   29,
+   ""
+  ],
+  "item": 29,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 24,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "ykocfhy",
+  "sim": [
+   30,
+   "a"
+  ],
+  "item": 30,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 25,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "saldam",
+  "sim": [
+   30,
+   "b"
+  ],
+  "item": 30,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 26,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "[s:r]ydarary",
+  "sim": [
+   31,
+   ""
+  ],
+  "item": 31,
+  "source": "count"
+ },
+ {
+  "folio": "f89r1",
+  "locus": 27,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "yd{cpo}dy",
+  "sim": [
+   32,
+   ""
+  ],
+  "item": 32,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "odory",
+  "sim": [
+   33,
+   "a"
+  ],
+  "item": 33,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "doly",
+  "sim": [
+   33,
+   "b"
+  ],
+  "item": 33,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "opchosam",
+  "sim": [
+   34,
+   ""
+  ],
+  "item": 34,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "saloiinsheol",
+  "sim": [
+   35,
+   ""
+  ],
+  "item": 35,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "opcheor",
+  "sim": [
+   36,
+   ""
+  ],
+  "item": 36,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 9,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "otold[:y]",
+  "sim": [
+   37,
+   "a"
+  ],
+  "item": 37,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 10,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okol.shol.dy",
+  "sim": [
+   37,
+   "b"
+  ],
+  "item": 37,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 11,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "opchoroiin",
+  "sim": [
+   38,
+   ""
+  ],
+  "item": 38,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 16,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "korainy",
+  "sim": [
+   39,
+   "a"
+  ],
+  "item": 39,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 17,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "sodar",
+  "sim": [
+   39,
+   "b"
+  ],
+  "item": 39,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 18,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "cheys",
+  "sim": [
+   40,
+   ""
+  ],
+  "item": 40,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 19,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "cheody",
+  "sim": [
+   41,
+   ""
+  ],
+  "item": 41,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 20,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oporain",
+  "sim": [
+   42,
+   ""
+  ],
+  "item": 42,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 21,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okshdchos",
+  "sim": [
+   43,
+   ""
+  ],
+  "item": 43,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 29,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "okain",
+  "sim": [
+   44,
+   "a"
+  ],
+  "item": 44,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 30,
+  "cont": true,
+  "type": "Lc",
+  "tag": null,
+  "word": "yorain",
+  "sim": [
+   44,
+   "a"
+  ],
+  "item": 44,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 31,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "ofakal",
+  "sim": [
+   44,
+   "b"
+  ],
+  "item": 44,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 32,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otalsy",
+  "sim": [
+   45,
+   ""
+  ],
+  "item": 45,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 33,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "ytarem",
+  "sim": [
+   46,
+   ""
+  ],
+  "item": 46,
+  "source": "count"
+ },
+ {
+  "folio": "f89r2",
+  "locus": 34,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otolarol",
+  "sim": [
+   47,
+   ""
+  ],
+  "item": 47,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "choeesy",
+  "sim": [
+   48,
+   "a"
+  ],
+  "item": 48,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okam",
+  "sim": [
+   48,
+   "b"
+  ],
+  "item": 48,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "darcheor",
+  "sim": [
+   49,
+   ""
+  ],
+  "item": 49,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "chokaro",
+  "sim": [
+   50,
+   ""
+  ],
+  "item": 50,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "sheol",
+  "sim": [
+   51,
+   ""
+  ],
+  "item": 51,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "chokam",
+  "sim": [
+   52,
+   ""
+  ],
+  "item": 52,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 11,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "otory",
+  "sim": [
+   53,
+   "a"
+  ],
+  "item": 53,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otair.chody",
+  "sim": [
+   53,
+   "b"
+  ],
+  "item": 53,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "dykaran",
+  "sim": [
+   54,
+   ""
+  ],
+  "item": 54,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "opcheedey",
+  "sim": [
+   55,
+   ""
+  ],
+  "item": 55,
+  "source": "count"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 23,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   58,
+   "a"
+  ],
+  "word": "opaloiiry",
+  "sim": [
+   58,
+   "a"
+  ],
+  "item": 58,
+  "source": "tag"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 24,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   58,
+   "b"
+  ],
+  "word": "otaram",
+  "sim": [
+   58,
+   "b"
+  ],
+  "item": 58,
+  "source": "tag"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 25,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   59,
+   "a"
+  ],
+  "word": "chtchy",
+  "sim": [
+   59,
+   "a"
+  ],
+  "item": 59,
+  "source": "tag"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 27,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   60,
+   ""
+  ],
+  "word": "sada?",
+  "sim": [
+   60,
+   ""
+  ],
+  "item": 60,
+  "source": "tag"
+ },
+ {
+  "folio": "f89v2",
+  "locus": 28,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   61,
+   ""
+  ],
+  "word": "daseky",
+  "sim": [
+   61,
+   ""
+  ],
+  "item": 61,
+  "source": "tag"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "okoraldy",
+  "sim": [
+   62,
+   "a"
+  ],
+  "item": 62,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oto{ikh}y",
+  "sim": [
+   62,
+   "b"
+  ],
+  "item": 62,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otchar",
+  "sim": [
+   63,
+   ""
+  ],
+  "item": 63,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "darshody",
+  "sim": [
+   64,
+   ""
+  ],
+  "item": 64,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 21,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "koeeorain",
+  "sim": [
+   65,
+   "a"
+  ],
+  "item": 65,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 22,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otorshos",
+  "sim": [
+   65,
+   "b"
+  ],
+  "item": 65,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 23,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "opol,olaiin",
+  "sim": [
+   66,
+   ""
+  ],
+  "item": 66,
+  "source": "count"
+ },
+ {
+  "folio": "f89v1",
+  "locus": 24,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "opaldaiin",
+  "sim": [
+   67,
+   ""
+  ],
+  "item": 67,
+  "source": "count"
+ },
+ {
+  "folio": "f99r",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   68,
+   "a"
+  ],
+  "word": "okaradag",
+  "sim": [
+   68,
+   "a"
+  ],
+  "item": 68,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   68,
+   "b"
+  ],
+  "word": "okar,y",
+  "sim": [
+   68,
+   "b"
+  ],
+  "item": 68,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   69,
+   ""
+  ],
+  "word": "darar",
+  "sim": [
+   69,
+   ""
+  ],
+  "item": 69,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   70,
+   ""
+  ],
+  "word": "oky",
+  "sim": [
+   70,
+   ""
+  ],
+  "item": 70,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   71,
+   ""
+  ],
+  "word": "salo",
+  "sim": [
+   71,
+   ""
+  ],
+  "item": 71,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   72,
+   ""
+  ],
+  "word": "aro",
+  "sim": [
+   72,
+   ""
+  ],
+  "item": 72,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 7,
+  "cont": true,
+  "type": "Lf",
+  "tag": [
+   72,
+   ""
+  ],
+  "word": "ain",
+  "sim": [
+   72,
+   ""
+  ],
+  "item": 72,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 8,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   73,
+   ""
+  ],
+  "word": "okor",
+  "sim": [
+   73,
+   ""
+  ],
+  "item": 73,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 9,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   74,
+   ""
+  ],
+  "word": "ralol",
+  "sim": [
+   74,
+   ""
+  ],
+  "item": 74,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 10,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   75,
+   ""
+  ],
+  "word": "skeeal",
+  "sim": [
+   75,
+   ""
+  ],
+  "item": 75,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 11,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   76,
+   ""
+  ],
+  "word": "okary",
+  "sim": [
+   76,
+   ""
+  ],
+  "item": 76,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   77,
+   ""
+  ],
+  "word": "okolo",
+  "sim": [
+   77,
+   ""
+  ],
+  "item": 77,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   78,
+   ""
+  ],
+  "word": "otalam",
+  "sim": [
+   78,
+   ""
+  ],
+  "item": 78,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   79,
+   ""
+  ],
+  "word": "otoldy",
+  "sim": [
+   79,
+   ""
+  ],
+  "item": 79,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 19,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   80,
+   "a"
+  ],
+  "word": "oparal",
+  "sim": [
+   80,
+   "a"
+  ],
+  "item": 80,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 20,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   80,
+   "b"
+  ],
+  "word": "oaro",
+  "sim": [
+   80,
+   "b"
+  ],
+  "item": 80,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 21,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   81,
+   ""
+  ],
+  "word": "aloly",
+  "sim": [
+   81,
+   ""
+  ],
+  "item": 81,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 22,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   82,
+   ""
+  ],
+  "word": "aora[?:r]",
+  "sim": [
+   82,
+   ""
+  ],
+  "item": 82,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 23,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   83,
+   ""
+  ],
+  "word": "choky",
+  "sim": [
+   83,
+   ""
+  ],
+  "item": 83,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 24,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   84,
+   ""
+  ],
+  "word": "oky",
+  "sim": [
+   84,
+   ""
+  ],
+  "item": 84,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 25,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   85,
+   "a"
+  ],
+  "word": "okeoly",
+  "sim": [
+   85,
+   "a"
+  ],
+  "item": 85,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 26,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   85,
+   "b"
+  ],
+  "word": "yteold",
+  "sim": [
+   85,
+   "b"
+  ],
+  "item": 85,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 27,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   86,
+   "a"
+  ],
+  "word": "cheotchy",
+  "sim": [
+   86,
+   "a"
+  ],
+  "item": 86,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 32,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   87,
+   "a"
+  ],
+  "word": "tsholdy",
+  "sim": [
+   87,
+   "a"
+  ],
+  "item": 87,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 33,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   87,
+   "b"
+  ],
+  "word": "okos",
+  "sim": [
+   87,
+   "b"
+  ],
+  "item": 87,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 34,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   87,
+   "c"
+  ],
+  "word": "oekey",
+  "sim": [
+   87,
+   "c"
+  ],
+  "item": 87,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 35,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   88,
+   ""
+  ],
+  "word": "dar",
+  "sim": [
+   88,
+   ""
+  ],
+  "item": 88,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 36,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   89,
+   ""
+  ],
+  "word": "chockhi[a:y]",
+  "sim": [
+   89,
+   ""
+  ],
+  "item": 89,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 37,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   90,
+   ""
+  ],
+  "word": "r,cheyet",
+  "sim": [
+   90,
+   ""
+  ],
+  "item": 90,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 38,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   91,
+   ""
+  ],
+  "word": "saiiny",
+  "sim": [
+   91,
+   ""
+  ],
+  "item": 91,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 39,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   92,
+   ""
+  ],
+  "word": "sory",
+  "sim": [
+   92,
+   ""
+  ],
+  "item": 92,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 40,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   93,
+   ""
+  ],
+  "word": "dam",
+  "sim": [
+   93,
+   ""
+  ],
+  "item": 93,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 45,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   94,
+   "a"
+  ],
+  "word": "yteoldy",
+  "sim": [
+   94,
+   "a"
+  ],
+  "item": 94,
+  "source": "tag"
+ },
+ {
+  "folio": "f99r",
+  "locus": 46,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   94,
+   "b"
+  ],
+  "word": "tolsasy",
+  "sim": [
+   94,
+   "b"
+  ],
+  "item": 94,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   95,
+   "a"
+  ],
+  "word": "okaramy",
+  "sim": [
+   95,
+   "a"
+  ],
+  "item": 95,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   95,
+   "b"
+  ],
+  "word": "otoldy",
+  "sim": [
+   95,
+   "b"
+  ],
+  "item": 95,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   96,
+   ""
+  ],
+  "word": "otorchy",
+  "sim": [
+   96,
+   ""
+  ],
+  "item": 96,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   97,
+   ""
+  ],
+  "word": "oldy",
+  "sim": [
+   97,
+   ""
+  ],
+  "item": 97,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   98,
+   ""
+  ],
+  "word": "darary",
+  "sim": [
+   98,
+   ""
+  ],
+  "item": 98,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   99,
+   ""
+  ],
+  "word": "otaly",
+  "sim": [
+   99,
+   ""
+  ],
+  "item": 99,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 7,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   100,
+   ""
+  ],
+  "word": "olsy",
+  "sim": [
+   100,
+   ""
+  ],
+  "item": 100,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 8,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   101,
+   ""
+  ],
+  "word": "arol",
+  "sim": [
+   101,
+   ""
+  ],
+  "item": 101,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 9,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   102,
+   ""
+  ],
+  "word": "otoky",
+  "sim": [
+   102,
+   ""
+  ],
+  "item": 102,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 14,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   103,
+   "a"
+  ],
+  "word": "okoldody",
+  "sim": [
+   103,
+   "a"
+  ],
+  "item": 103,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 15,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   103,
+   "b"
+  ],
+  "word": "oeeesary",
+  "sim": [
+   103,
+   "b"
+  ],
+  "item": 103,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 16,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   104,
+   ""
+  ],
+  "word": "daiiinc",
+  "sim": [
+   104,
+   ""
+  ],
+  "item": 104,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 17,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   105,
+   ""
+  ],
+  "word": "sary",
+  "sim": [
+   105,
+   ""
+  ],
+  "item": 105,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 18,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   106,
+   ""
+  ],
+  "word": "saiino",
+  "sim": [
+   106,
+   ""
+  ],
+  "item": 106,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 19,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   107,
+   ""
+  ],
+  "word": "otolsar",
+  "sim": [
+   107,
+   ""
+  ],
+  "item": 107,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 20,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   108,
+   ""
+  ],
+  "word": "osary",
+  "sim": [
+   108,
+   ""
+  ],
+  "item": 108,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 25,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   109,
+   "a"
+  ],
+  "word": "darolaly",
+  "sim": [
+   109,
+   "a"
+  ],
+  "item": 109,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 26,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   109,
+   "b"
+  ],
+  "word": "okechy",
+  "sim": [
+   109,
+   "b"
+  ],
+  "item": 109,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 27,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   110,
+   ""
+  ],
+  "word": "otal",
+  "sim": [
+   110,
+   ""
+  ],
+  "item": 110,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 28,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   110,
+   "b"
+  ],
+  "word": "chor.olekor",
+  "sim": [
+   110,
+   "b"
+  ],
+  "item": 110,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 29,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   111,
+   ""
+  ],
+  "word": "okeodor",
+  "sim": [
+   111,
+   ""
+  ],
+  "item": 111,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 30,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   112,
+   ""
+  ],
+  "word": "olky",
+  "sim": [
+   112,
+   ""
+  ],
+  "item": 112,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 31,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   113,
+   ""
+  ],
+  "word": "doldam",
+  "sim": [
+   113,
+   ""
+  ],
+  "item": 113,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 36,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   114,
+   "a"
+  ],
+  "word": "oralas",
+  "sim": [
+   114,
+   "a"
+  ],
+  "item": 114,
+  "source": "tag"
+ },
+ {
+  "folio": "f99v",
+  "locus": 44,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   114,
+   "b"
+  ],
+  "word": "koleearol",
+  "sim": [
+   114,
+   "b"
+  ],
+  "item": 114,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 1,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   115,
+   ""
+  ],
+  "word": "chosaroshol",
+  "sim": [
+   115,
+   ""
+  ],
+  "item": 115,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   116,
+   ""
+  ],
+  "word": "sochorcfhy",
+  "sim": [
+   116,
+   ""
+  ],
+  "item": 116,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   117,
+   ""
+  ],
+  "word": "otear",
+  "sim": [
+   117,
+   ""
+  ],
+  "item": 117,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   118,
+   ""
+  ],
+  "word": "chofa[r:n]y",
+  "sim": [
+   118,
+   ""
+  ],
+  "item": 118,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   119,
+   ""
+  ],
+  "word": "sar,chardaiindy",
+  "sim": [
+   119,
+   ""
+  ],
+  "item": 119,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   120,
+   ""
+  ],
+  "word": "o[r:s]aro",
+  "sim": [
+   120,
+   ""
+  ],
+  "item": 120,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 7,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   121,
+   ""
+  ],
+  "word": "chalsain",
+  "sim": [
+   121,
+   ""
+  ],
+  "item": 121,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 8,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   122,
+   ""
+  ],
+  "word": "soity",
+  "sim": [
+   122,
+   ""
+  ],
+  "item": 122,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 9,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   123,
+   ""
+  ],
+  "word": "sosam",
+  "sim": [
+   123,
+   ""
+  ],
+  "item": 123,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 10,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   124,
+   ""
+  ],
+  "word": "dakocth",
+  "sim": [
+   124,
+   ""
+  ],
+  "item": 124,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 11,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   125,
+   ""
+  ],
+  "word": "sofam",
+  "sim": [
+   125,
+   ""
+  ],
+  "item": 125,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 16,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okeeos",
+  "sim": [
+   126,
+   ""
+  ],
+  "item": 126,
+  "source": "count"
+ },
+ {
+  "folio": "f100r",
+  "locus": 17,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   127,
+   ""
+  ],
+  "word": "shockhey",
+  "sim": [
+   127,
+   ""
+  ],
+  "item": 127,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 18,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "orol",
+  "sim": [
+   128,
+   ""
+  ],
+  "item": 128,
+  "source": "count"
+ },
+ {
+  "folio": "f100r",
+  "locus": 19,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   128,
+   ""
+  ],
+  "word": "olcheom",
+  "sim": [
+   128,
+   ""
+  ],
+  "item": 128,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 20,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   130,
+   ""
+  ],
+  "word": "oteol",
+  "sim": [
+   130,
+   ""
+  ],
+  "item": 130,
+  "source": "tag"
+ },
+ {
+  "folio": "f100r",
+  "locus": 21,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   129,
+   ""
+  ],
+  "word": "okols",
+  "sim": [
+   129,
+   ""
+  ],
+  "item": 129,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 1,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   131,
+   ""
+  ],
+  "word": "tolchd",
+  "sim": [
+   131,
+   ""
+  ],
+  "item": 131,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   132,
+   ""
+  ],
+  "word": "chols",
+  "sim": [
+   132,
+   ""
+  ],
+  "item": 132,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   133,
+   ""
+  ],
+  "word": "opchor",
+  "sim": [
+   133,
+   ""
+  ],
+  "item": 133,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   134,
+   ""
+  ],
+  "word": "solsy",
+  "sim": [
+   134,
+   ""
+  ],
+  "item": 134,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   135,
+   ""
+  ],
+  "word": "soleesos",
+  "sim": [
+   135,
+   ""
+  ],
+  "item": 135,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   136,
+   ""
+  ],
+  "word": "ykchochdy",
+  "sim": [
+   136,
+   ""
+  ],
+  "item": 136,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 7,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   137,
+   ""
+  ],
+  "word": "ykchdy",
+  "sim": [
+   137,
+   ""
+  ],
+  "item": 137,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 8,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   138,
+   ""
+  ],
+  "word": "dchdy",
+  "sim": [
+   138,
+   ""
+  ],
+  "item": 138,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 9,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   139,
+   ""
+  ],
+  "word": "dalsy",
+  "sim": [
+   139,
+   ""
+  ],
+  "item": 139,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 10,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   140,
+   ""
+  ],
+  "word": "okcheor",
+  "sim": [
+   140,
+   ""
+  ],
+  "item": 140,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 11,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   141,
+   ""
+  ],
+  "word": "ytchol",
+  "sim": [
+   141,
+   ""
+  ],
+  "item": 141,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   142,
+   ""
+  ],
+  "word": "dykchal",
+  "sim": [
+   142,
+   ""
+  ],
+  "item": 142,
+  "source": "tag"
+ },
+ {
+  "folio": "f100v",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   143,
+   ""
+  ],
+  "word": "chos.ctharal",
+  "sim": [
+   143,
+   ""
+  ],
+  "item": 143,
+  "source": "tag"
+ },
+ {
+  "folio": "f101v",
+  "locus": 1,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "[s:r]airaly",
+  "sim": [
+   144,
+   ""
+  ],
+  "item": 144,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otaldy",
+  "sim": [
+   145,
+   ""
+  ],
+  "item": 145,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otol",
+  "sim": [
+   146,
+   ""
+  ],
+  "item": 146,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "ytal",
+  "sim": [
+   147,
+   ""
+  ],
+  "item": 147,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "dokor",
+  "sim": [
+   148,
+   ""
+  ],
+  "item": 148,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "orar",
+  "sim": [
+   149,
+   ""
+  ],
+  "item": 149,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 7,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "otarar",
+  "sim": [
+   150,
+   ""
+  ],
+  "item": 150,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 8,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "ot[o:a]ly",
+  "sim": [
+   151,
+   ""
+  ],
+  "item": 151,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 9,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "soraly",
+  "sim": [
+   152,
+   ""
+  ],
+  "item": 152,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 10,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "okol",
+  "sim": [
+   153,
+   ""
+  ],
+  "item": 153,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 11,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "arom",
+  "sim": [
+   154,
+   ""
+  ],
+  "item": 154,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oraram",
+  "sim": [
+   155,
+   ""
+  ],
+  "item": 155,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "oraeep",
+  "sim": [
+   156,
+   ""
+  ],
+  "item": 156,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "dytolg",
+  "sim": [
+   157,
+   ""
+  ],
+  "item": 157,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 15,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "olkor",
+  "sim": [
+   158,
+   ""
+  ],
+  "item": 158,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 16,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "dolary",
+  "sim": [
+   159,
+   ""
+  ],
+  "item": 159,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 17,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "odor",
+  "sim": [
+   160,
+   ""
+  ],
+  "item": 160,
+  "source": "count"
+ },
+ {
+  "folio": "f101v",
+  "locus": 18,
+  "cont": false,
+  "type": "Lf",
+  "tag": null,
+  "word": "olaran",
+  "sim": [
+   161,
+   ""
+  ],
+  "item": 161,
+  "source": "count"
+ },
+ {
+  "folio": "f102r1",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   201,
+   "a"
+  ],
+  "word": "daarod",
+  "sim": [
+   201,
+   "a"
+  ],
+  "item": 201,
+  "source": "tag"
+ },
+ {
+  "folio": "f102r1",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   201,
+   "b"
+  ],
+  "word": "otodeeodor",
+  "sim": [
+   201,
+   "b"
+  ],
+  "item": 201,
+  "source": "tag"
+ },
+ {
+  "folio": "f102r1",
+  "locus": 7,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   202,
+   "a"
+  ],
+  "word": "okolaly",
+  "sim": [
+   202,
+   "a"
+  ],
+  "item": 202,
+  "source": "tag"
+ },
+ {
+  "folio": "f102r1",
+  "locus": 12,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   203,
+   "a"
+  ],
+  "word": "ddardsh",
+  "sim": [
+   203,
+   "a"
+  ],
+  "item": 203,
+  "source": "tag"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "kodaiig",
+  "sim": [
+   204,
+   "a"
+  ],
+  "item": 204,
+  "source": "count"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 7,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "ok[?:o]rolda",
+  "sim": [
+   205,
+   "a"
+  ],
+  "item": 205,
+  "source": "count"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 13,
+  "cont": false,
+  "type": "Lc",
+  "tag": null,
+  "word": "loeekadag",
+  "sim": [
+   206,
+   "a"
+  ],
+  "item": 206,
+  "source": "count"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 14,
+  "cont": true,
+  "type": "Lc",
+  "tag": null,
+  "word": "oshea??l",
+  "sim": [
+   206,
+   "a"
+  ],
+  "item": 206,
+  "source": "count"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 15,
+  "cont": true,
+  "type": "Lc",
+  "tag": null,
+  "word": "so???dch",
+  "sim": [
+   206,
+   "a"
+  ],
+  "item": 206,
+  "source": "count"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 21,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   212,
+   ""
+  ],
+  "word": "koldarod",
+  "sim": [
+   212,
+   "b"
+  ],
+  "item": 212,
+  "source": "tag"
+ },
+ {
+  "folio": "f102r2",
+  "locus": 22,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   213,
+   ""
+  ],
+  "word": "odalydary",
+  "sim": [
+   213,
+   ""
+  ],
+  "item": 213,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   214,
+   "a"
+  ],
+  "word": "porshols",
+  "sim": [
+   214,
+   "a"
+  ],
+  "item": 214,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 2,
+  "cont": true,
+  "type": "Lc",
+  "tag": [
+   214,
+   "b"
+  ],
+  "word": "soaimy",
+  "sim": [
+   214,
+   "b"
+  ],
+  "item": 214,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   214,
+   "c"
+  ],
+  "word": "oror",
+  "sim": [
+   214,
+   "c"
+  ],
+  "item": 214,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   215,
+   ""
+  ],
+  "word": "chor",
+  "sim": [
+   215,
+   ""
+  ],
+  "item": 215,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   216,
+   ""
+  ],
+  "word": "sachy",
+  "sim": [
+   216,
+   ""
+  ],
+  "item": 216,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   217,
+   ""
+  ],
+  "word": "okeo[s:r]",
+  "sim": [
+   217,
+   ""
+  ],
+  "item": 217,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 7,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   218,
+   ""
+  ],
+  "word": "okol",
+  "sim": [
+   218,
+   ""
+  ],
+  "item": 218,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 8,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   219,
+   ""
+  ],
+  "word": "otory",
+  "sim": [
+   219,
+   ""
+  ],
+  "item": 219,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 9,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   220,
+   ""
+  ],
+  "word": "ok?",
+  "sim": [
+   220,
+   ""
+  ],
+  "item": 220,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 10,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   221,
+   ""
+  ],
+  "word": "okody",
+  "sim": [
+   221,
+   ""
+  ],
+  "item": 221,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 11,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   222,
+   ""
+  ],
+  "word": "cheor",
+  "sim": [
+   222,
+   ""
+  ],
+  "item": 222,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 12,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   223,
+   ""
+  ],
+  "word": "okoroeey",
+  "sim": [
+   223,
+   ""
+  ],
+  "item": 223,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 13,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   224,
+   ""
+  ],
+  "word": "opchy",
+  "sim": [
+   224,
+   ""
+  ],
+  "item": 224,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 14,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   225,
+   ""
+  ],
+  "word": "sarol",
+  "sim": [
+   225,
+   ""
+  ],
+  "item": 225,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 15,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   226,
+   ""
+  ],
+  "word": "olrodar",
+  "sim": [
+   226,
+   ""
+  ],
+  "item": 226,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 16,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   227,
+   ""
+  ],
+  "word": "to[d:?]?",
+  "sim": [
+   227,
+   ""
+  ],
+  "item": 227,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 24,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   229,
+   "a"
+  ],
+  "word": "okolky",
+  "sim": [
+   229,
+   "a"
+  ],
+  "item": 229,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 25,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   229,
+   ""
+  ],
+  "word": "osain",
+  "sim": [
+   229,
+   "b"
+  ],
+  "item": 229,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 26,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   230,
+   ""
+  ],
+  "word": "aiky",
+  "sim": [
+   230,
+   ""
+  ],
+  "item": 230,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 27,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   231,
+   ""
+  ],
+  "word": "okeeoraiin",
+  "sim": [
+   231,
+   ""
+  ],
+  "item": 231,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 28,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   232,
+   ""
+  ],
+  "word": "okockhy",
+  "sim": [
+   232,
+   ""
+  ],
+  "item": 232,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v2",
+  "locus": 29,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   233,
+   ""
+  ],
+  "word": "os",
+  "sim": [
+   233,
+   ""
+  ],
+  "item": 233,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 1,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   234,
+   "a"
+  ],
+  "word": "keoraiiin",
+  "sim": [
+   234,
+   "a"
+  ],
+  "item": 234,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 2,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   234,
+   "b"
+  ],
+  "word": "okeody",
+  "sim": [
+   234,
+   "b"
+  ],
+  "item": 234,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 3,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   235,
+   ""
+  ],
+  "word": "okeody",
+  "sim": [
+   235,
+   ""
+  ],
+  "item": 235,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 4,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   236,
+   ""
+  ],
+  "word": "daiisaly",
+  "sim": [
+   236,
+   ""
+  ],
+  "item": 236,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 5,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   237,
+   ""
+  ],
+  "word": "ypary",
+  "sim": [
+   237,
+   ""
+  ],
+  "item": 237,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 6,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   238,
+   ""
+  ],
+  "word": "opchyt{cy}",
+  "sim": [
+   238,
+   ""
+  ],
+  "item": 238,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 15,
+  "cont": false,
+  "type": "Lc",
+  "tag": [
+   239,
+   "a"
+  ],
+  "word": "d?indy",
+  "sim": [
+   239,
+   "a"
+  ],
+  "item": 239,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 16,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   239,
+   "b"
+  ],
+  "word": "ypcholdy",
+  "sim": [
+   239,
+   "b"
+  ],
+  "item": 239,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 17,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   240,
+   ""
+  ],
+  "word": "loralody",
+  "sim": [
+   240,
+   ""
+  ],
+  "item": 240,
+  "source": "tag"
+ },
+ {
+  "folio": "f102v1",
+  "locus": 18,
+  "cont": false,
+  "type": "Lf",
+  "tag": [
+   241,
+   ""
+  ],
+  "word": "opchdard",
+  "sim": [
+   241,
+   ""
+  ],
+  "item": 241,
+  "source": "tag"
+ }
+]
