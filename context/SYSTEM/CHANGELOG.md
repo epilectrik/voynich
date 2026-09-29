@@ -4,6 +4,42 @@
 
 ---
 
+## Version 7.28 (2026-09-28) — PHASE_765: step-notation comparison (NOT SUPPORTED; C2083)
+
+### Summary
+A pre-registered, lean-audited test of the human's "discrete workshop operations" model. On a low-level profile
+(boundary coupling normalised by word-initial entropy, identical adjacent repeats, near-repeats), is Currier B nearer
+to discrete-operation step notations than to prose, gibberish and constrained non-notation? The step notations were
+11 knitting/crochet corpora, 6 chess collections and Apollo AGC assembly. Locked verdict: **NOT SUPPORTED**, stable in
+all eight variants.
+
+| Unit | Median distance to B |
+|---|---|
+| Improvised gibberish | 1.31 (nearest) |
+| Constrained non-notation (Naibbe, Timm, Roget) | 1.58 |
+| Chess | 1.71 |
+| Latin procedural prose | 1.75 |
+| Meaningful | 2.02 |
+| Needlework prose | 2.17 |
+| Knitting notation | 3.00 |
+| AGC assembly | 3.33 (farthest) |
+
+- **Paired test:** within every needlework book (11/11), the book's prose is nearer to B than its notation.
+- **Reading:**
+  - Modern step notations are more extreme than B in characteristic directions.
+  - B is moderate, closest to fluent improvised writing and more constrained than it.
+  - The model loses this line of support, not its standing.
+  - Open: fluent word-like procedures, and structure at line, paragraph and page level.
+
+### Registry
+C2083 new (Tier 2, negative knowledge). Live: 1,890 (T0 2, T1 38, T2 1,680, T3 166, T4 4); 765 phases.
+
+### Deviation
+Roget's Thesaurus was also loaded as a needlework-prose corpus. The PP median is 2.19 without it (2.17 with); no
+verdict-bearing comparison changes.
+
+---
+
 ## Version 7.27 (2026-09-28) — PHASE_764: human-improvised gibberish vs B boundary coupling (MIXED / UNRESOLVED)
 
 ### Summary

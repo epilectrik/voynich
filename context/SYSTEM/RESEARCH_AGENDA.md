@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.27, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.28, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -44,6 +44,11 @@ text made to look meaningful? And, if it carries content, what content?
      algorithmic kind is already excluded (C2077). Gaskell & Bowern report that human gibberish shares several
      Voynich statistics, which makes it the strongest meaningless rival still standing.
    - Kill conditions and discriminator thresholds must be set on controls before looking at B again (calibration rule).
+1b. **Step-notation comparison.** Done: PHASE_765, C2083 — NOT SUPPORTED.
+    - B's low-level profile is nearest to improvised gibberish and farthest from knitting notation and assembly
+      code.
+    - Open: procedures written as fluent word-like tokens, and structure at line, paragraph and page level
+      (line position is B's strongest difference from gibberish, PHASE_764).
 2. **The untested rival generators.**
    - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose
      cipher, each through the PHASE_757 harness with noise parity.

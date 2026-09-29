@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.27, 2026-09-28)
+# Status Brief — what currently stands (v7.28, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -83,6 +83,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - The Naibbe verbose homophonic cipher as published (C2080).
 - Timm & Schinner copy-and-modify (C2077).
 - A table walk over a coordinate lookup (C2079).
+- **"B looks like a modern step notation":** not supported (C2083, PHASE_765).
+  - On coupling, repetition and near-repetition, B is nearest to improvised gibberish, then constrained
+    generators. Knitting notation and assembly code are the farthest classes.
+  - In all 11 needlework books, the book's prose is nearer to B than its notation.
+  - The "discrete operations" reading loses this support, not its standing.
 - **Human-improvised gibberish** (Gaskell & Bowern, 38 modern volunteers): **tested at folio scale, unresolved**
   (PHASE_764).
   - B's boundary coupling exceeds most samples (AUC 0.825, 95% CI 0.71–0.92; variants 0.81–0.98), but the

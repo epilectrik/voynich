@@ -1,0 +1,12 @@
+[    37s] corpora: {'B': 1, 'CN': 11, 'G': 23, 'M': 71, 'PP': 15, 'PP-L': 4, 'SN-AGC': 1, 'SN-CHESS': 6, 'SN-KNIT': 11}
+[   383s] stats computed for 143 corpora
+[   384s] PRIMARY verdict NOT SUPPORTED | unit medians {'SN-KNIT': 3.0, 'PP': 2.168, 'SN-CHESS': 1.71, 'SN-AGC': 3.332, 'PP-L': 1.746, 'M': 2.019, 'G': 1.31, 'CN': 1.583} | wins {'SN-KNIT': False, 'SN-CHESS': False, 'SN-AGC': False} | beats CN {'SN-KNIT': False, 'SN-CHESS': False, 'SN-AGC': False} | paired {'pairs': 11, 'notation_nearer': 0, 'contradicts': True} | floor 0.935 | halves 0.219
+[   384s] nearest10 ['G_DC_16', 'G_DC_32', 'G_DC_40', 'G_DC_04', 'G_DC_06', 'G_DC_31', 'B', 'G_DC_42', 'G_DC_20', 'G_DC_35']
+[   386s] variants V2/V7/V8 {'V2_with_P4': 'NOT SUPPORTED', 'V7_mahalanobis': 'NOT SUPPORTED', 'V8a_drop_P1': 'NOT SUPPORTED', 'V8b_drop_P2': 'NOT SUPPORTED', 'V8c_drop_P3': 'NOT SUPPORTED'}
+[   433s] variant V1 NOT SUPPORTED {'SN-KNIT': 3.004, 'PP': 2.209, 'SN-CHESS': 1.676, 'SN-AGC': 3.381, 'PP-L': 1.778, 'M': 2.057, 'G': 1.341, 'CN': 1.56}
+[   497s] variant V3 NOT SUPPORTED {'SN-KNIT': 3.005, 'PP': 2.164, 'SN-AGC': 3.325, 'PP-L': 1.745, 'M': 2.015, 'G': 1.314, 'CN': 1.585, 'SN-CHESS': 1.708}
+[   580s] variant V4a NOT SUPPORTED {'SN-CHESS': 1.834, 'SN-AGC': 3.399, 'PP-L': 1.83, 'M': 2.082, 'G': 1.454, 'CN': 1.708, 'PP': 2.225, 'SN-KNIT': 3.045}
+[   655s] variant V4b NOT SUPPORTED {'SN-CHESS': 1.624, 'SN-AGC': 3.237, 'PP-L': 1.675, 'M': 1.946, 'G': 1.217, 'CN': 1.488, 'PP': 2.163, 'SN-KNIT': 3.072}
+[   701s] variant V5 NOT SUPPORTED {'SN-KNIT': 3.359, 'PP': 2.225, 'SN-CHESS': 1.379, 'SN-AGC': 3.462, 'PP-L': 1.653, 'M': 1.999, 'G': 1.035, 'CN': 1.33}
+[  1038s] variant V6 NOT SUPPORTED {'CN': 1.378, 'M': 1.943, 'G': 1.204, 'SN-KNIT': 2.587, 'PP': 2.113, 'SN-CHESS': 1.225, 'PP-L': 1.641, 'SN-AGC': 3.254}
+[  1038s] VERDICT (locked rules): NOT SUPPORTED | moving variants []

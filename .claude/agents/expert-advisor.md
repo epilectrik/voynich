@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2082.
+the highest ID present is C2083.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -113,7 +113,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-28 17:51
+**Generated:** 2026-09-28 19:12
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -135,7 +135,7 @@ tables are quarantined — do not use for structural answers.
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.27, 2026-09-28)
+# Status Brief — what currently stands (v7.28, 2026-09-28)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -220,6 +220,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - The Naibbe verbose homophonic cipher as published (C2080).
 - Timm & Schinner copy-and-modify (C2077).
 - A table walk over a coordinate lookup (C2079).
+- **"B looks like a modern step notation":** not supported (C2083, PHASE_765).
+  - On coupling, repetition and near-repetition, B is nearest to improvised gibberish, then constrained
+    generators. Knitting notation and assembly code are the farthest classes.
+  - In all 11 needlework books, the book's prose is nearer to B than its notation.
+  - The "discrete operations" reading loses this support, not its standing.
 - **Human-improvised gibberish** (Gaskell & Bowern, 38 modern volunteers): **tested at folio scale, unresolved**
   (PHASE_764).
   - B's boundary coupling exceeds most samples (AUC 0.825, 95% CI 0.71–0.92; variants 0.81–0.98), but the
@@ -248,7 +253,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.26 | **Status:** characterization ACTIVE | **Constraints:** 1,889 live in the generated table (T0 2, T1 38, T2 1,679, T3 166, T4 4) | **Phases:** 763 | **Date:** 2026-09-28
+**Version:** 7.28 | **Status:** characterization ACTIVE | **Constraints:** 1,890 live in the generated table (T0 2, T1 38, T2 1,680, T3 166, T4 4) | **Phases:** 763 | **Date:** 2026-09-28
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -381,7 +386,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.26) | 1,889 (T0 2, T1 38, T2 1,679, T3 166, T4 4) |
+| Live constraints (generated table, v7.28) | 1,890 (T0 2, T1 38, T2 1,680, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -423,7 +428,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.27, 2026-09-28)
+# Research Agenda — open questions and the tests that would move them (v7.28, 2026-09-28)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -442,7 +447,8 @@ text made to look meaningful? And, if it carries content, what content?
 - Against meaningless text, one generator has been tested:
   - Timm & Schinner's self-citation (copy-and-modify) generator, the main academic "meaningless" hypothesis, is
     excluded (C2077).
-  - Human-improvised gibberish and the Rugg grille have not been tested.
+  - Human-improvised gibberish was tested at folio scale in PHASE_764: unresolved (below). The Rugg grille has
+    not been tested.
   - The older "glossolalia ruled out by 100% coverage" argument was circular (the 100% is the grammar's own vocabulary)
     and is retired.
   - C420's "ruling out gibberish" shows internal consistency only.
@@ -468,6 +474,11 @@ text made to look meaningful? And, if it carries content, what content?
      algorithmic kind is already excluded (C2077). Gaskell & Bowern report that human gibberish shares several
      Voynich statistics, which makes it the strongest meaningless rival still standing.
    - Kill conditions and discriminator thresholds must be set on controls before looking at B again (calibration rule).
+1b. **Step-notation comparison.** Done: PHASE_765, C2083 — NOT SUPPORTED.
+    - B's low-level profile is nearest to improvised gibberish and farthest from knitting notation and assembly
+      code.
+    - Open: procedures written as fluent word-like tokens, and structure at line, paragraph and page level
+      (line position is B's strongest difference from gibberish, PHASE_764).
 2. **The untested rival generators.**
    - What: the Rugg grille (Parisel's public code), a syllable- or word-level codebook cipher and a modified verbose
      cipher, each through the PHASE_757 harness with noise parity.
@@ -520,7 +531,7 @@ text made to look meaningful? And, if it carries content, what content?
   gloss row; `ATOM_GLOSSES` in `scripts/voynich.py` are labels meanwhile.
 - **Registry decisions left open by the v7.26 cascade:** C1005 (Tier 4, possibly a Tier-1 falsification); C179
   (4-regime clustering: scope-tagged, demotion defensible); C311/C456 (possibly retract like C434/C435); C193–C195;
-  the C894 row's numbers are stale (its detail file moved the signal to REGIME_2); two LINK definitions coexist
+  the C894 row's numbers are stale (C894 demoted to Tier 3 in v7.26) (its detail file moved the signal to REGIME_2); two LINK definitions coexist
   (C861 class 29 vs C609 'ol'); OPS correlations partly built in (C190, C180, C188).
 - **Residual unannotated citations of non-live constraints:** see `SYSTEM/REGISTRY_INTEGRITY_REPORT.md`, and regenerate
   after every registry change.
@@ -2832,6 +2843,7 @@ C2079	**No table-walk signature between adjacent Currier B tokens (PHASE_760; ne
 C2080	**The Naibbe cipher as published is EXCLUDED as a generator of Currier B (PHASE_757; adversarial-external, pre-registered and lean-audited before any panel statistic; negative knowledge).** Greshko's verbose homophonic substitution cipher (Cryptologia 2025; code commit f2675ec; tables tuned on Currier B; harness verified: 99–100% decipherable, reproduces the author's committed reference ciphertext within 0.5%) was run on 64 declared variants (52- and 78-card versions × Latin recipe / Latin pharmacy / Italian / Latin prose plaintexts × stream and word-wrapped layouts × 0/3% space removal × noise-free and H–F-matched noise), 1,000 members each, on B's exact line skeleton. All five discriminators were certified by positive controls (M1 class Markov, G-EDGE) before any Naibbe comparison. **Every variant excludes** (B outside the ensemble on 3–5 of 5 discriminators; z* = 3.09): edge-glyph coupling D2 (B 0.228 bits vs Naibbe 0.005–0.009; 64/64), adjacent repetition D3 (B at chance, Naibbe suppresses repeats; 64/64), line-zone dependence D6 (B 0.172 vs ≤ 0.13 even when lines start at plaintext words; 64/64), order information beyond edge coupling D5 (B 0.040 bits/token vs Naibbe means 0.050–0.127 — B lower than every variant mean, outside in 51/64; the plaintext chunk sequences themselves carry 0.19–0.27), cross-folio trigram recurrence D4 (15/64). The verdict holds with D2 removed. Scope: this generator as published; a modified Naibbe (e.g. line-initial conventions, boundary rules) is a new test; coarser-unit (syllable, word/codebook) ciphers are untested. Not evidence for C120 or the control-program reading (framework-as-null)	2	B, cipher, naibbe, verbose_homophonic, rival_generator, adversarial_external, pre_registered, negative_knowledge, PHASE_757, C2077
 C2081	**Common-token zero bigrams in Currier B reduce to line composition, positional zones and boundary glyph coupling (PHASE_756; supersedes C957; reduction of C956 + C1212/C1563).** Pre-registered, lean-audited joint null (N5): MCMC over within-line medial permutations preserving each line's tokens, INITIAL/FINAL tokens and each section's last-glyph → first-glyph edge counts (EVA edges; β = 2 after β = 8 and 4 failed to mix; all diagnostics passed: R-hat ≈ 1.00, ESS(Z) 6,570, 83% of movable positions changed, edge TV ≤ 0.007). Among 247 common-pair cells with N5 expectation ≥ 3, the real text has 2 zeros vs 1.98 ± 1.39 expected (p = 0.60; L1-extrapolated and leave-one-cell-out agree). Cross-track: the raw count is 5 vs 2.02 (p = 0.054); the three extra zeros (aiin→aiin, shedy→daiin, qokeedy→ol) are attested in the First Study Group transcription (F) and removed by the pre-registered cleaning; on C957's original data (all placements) raw 7 vs 2.30 (p = 0.009), cleaned 3 vs 2.25 (p = 0.39). The glyph-unit null narrowly failed its mixing diagnostic (ESS for fraction changed 940 < 1,000) and did not enter the verdict. Consequence: no token-level "prohibition" layer remains beyond known positional and boundary effects; D1 dropped from the rival panel. The small residual in H is transcription-dependent	2	B, bigram, zero_cells, joint_null, reduction, pre_registered, PHASE_756, C956, C957, C1212, C1563, negative_knowledge
 C2082	**Glyph-level re-test of "kernel-centric": the kernel is not restored; what passes is word-ending routing to the next token's class (PHASE_763; supersedes C089; locked verdict MIXED).** Pre-registered and twice lean-audited (commit af4a55b). Kernel = {k, e, bench (ch/sh)} as glyph units, each compared with 5 frequency- and position-matched control glyphs (triad test). **Arm S (cross-token routing beyond the prefix channel) PASS, Holm-significant:** I(glyph g in token t; class of t+1 | first glyph of t), Miller–Madow, against the PHASE_756 N5 null (glyph edges, β = 2; R-hat 1.002, minimum ESS 1,509). The kernel mean z of 6.5 exceeds all 89 control triads (p = 0.011, the minimum attainable), E = 4.4 z (folio-bootstrap 95% interval 2.4–7.5). Same sign with p ≤ 0.013 on ZL, on S2 and with the next token's first glyph as target (R1); weaker at role level with length conditioning (R2: E 0.85, p 0.056). Not reproduced by Naibbe GV1 (E −0.5 to 1.0) or Timm–Schinner (−0.8 to 1.2). **It is not a kernel property:** per glyph (descriptive), e (z 10.1) and bench (7.6) carry it, k (1.8) sits at the median of its controls, and the non-kernel d (8.9) is as strong. A post-hoc decomposition (not verdict-bearing) locates it in the token's ending: adding the last two glyph units of t to the conditioning removes it (e 1.9, bench 1.5, d −0.4, k 0.8). So a token's ending predicts the next token's class beyond the last-glyph → first-glyph coupling (extends C1212/C1563; compare C1002 edy→edy and C2061). **Arm W (within-token centrality: centred random-walk closeness vs an edge-anchored run-block permutation) INCONCLUSIVE:** E 7.4 z, p 0.088. It is uncertified (the plant also moves the controls), so it cannot fail. Order raises almost every glyph's closeness (a 31.7, e 25.3, o 24.3, k 20.6). B's kernel effect lies below both generators' ranges (Naibbe 13–18, Timm 8–22) and below the best Latin letter triads (28–35); the folio-bootstrap interval is −30 to 58. **Net:** "kernel-centric" stays a Tier-3 reading without a measurement behind it. The measured residue is ending-to-next-class routing plus the qo/ok family preference (C1313, C549, C2056).	2	B, glyph, kernel, routing, cross-token, ending, N5, pre_registered, PHASE_763, C089, C1212, C1563, C1002
+C2083	**Currier B's low-level profile is not nearer to discrete-operation step notations than to prose or gibberish (PHASE_765; negative knowledge; pre-registered, lean-audited).** At 197-pair scale, with every corpus re-wrapped to B's line lengths, the profile is P1 boundary coupling / H(first unit), P2 identical adjacent repeats (log O/E) and P3 near-repeats (log O/E vs within-line shuffle). Unit median distances to B: improvised gibberish 1.31 (nearest); constrained non-notation (Naibbe, Timm, Roget) 1.58; chess SAN 1.71; Latin procedural prose 1.75; meaningful text 2.02; needlework prose 2.17; knitting/crochet notation 3.00; AGC assembly 3.33 (farthest). B's own chunks sit at 0.94. No step-notation subgroup beats prose, gibberish and the floor control. In all 11 needlework books the book's prose is nearer to B than its notation. The result holds in all eight variants (EVA units, +TTR, lower-cased chess, needlework thresholds, authorial lines, digits collapsed, Mahalanobis, each statistic dropped). Modern step notations are more extreme than B in characteristic directions (knitting: strong coupling, no identical repeats, many near-repeats; assembly: anti-repetitive); B is moderate, closest to fluent improvised writing yet more constrained than it (4× coupling). The "discrete workshop operations" model loses this line of support, not the model. Untested: procedures written as fluent word-like tokens; line-, paragraph- and page-level structure. Not evidence of meaninglessness.	2	B, step_notation, knitting, chess, assembly, gibberish, procedural_prose, negative_knowledge, PHASE_765
 
 ---
 
