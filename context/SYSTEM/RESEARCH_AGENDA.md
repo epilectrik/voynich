@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.34, 2026-09-29)
+# Research Agenda — open questions and the tests that would move them (v7.35, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -101,6 +101,14 @@ text made to look meaningful? And, if it carries content, what content?
    - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
      regions or position-resolved features, not only whole folios, and that tests multi-step copying and
      writing-session drift as rival sources.
+   - Labels (PHASE_771, C2088):
+     - label o-words fit no mixture of ordinary o-words, dropped-q qo-words and "o + word";
+     - next, pre-register AZC ring text as the reference for AZC labels (s7 fit ordinary o-words alone), and test the
+       s2 / s8 dependence of the qo weight.
+   - Line organisation (PHASE_771, C2089):
+     - the edge index at drawing breaks is unresolved;
+     - next, check the post-break aiin and pre-break -m cases on H and the scans;
+     - split post-break articulators into C1898's opener and embedded groups.
    - Pending:
      - the blind scan check of 100 minim groups (PHASE_770 section 14, human-coded), before any minim-dial claim;
      - the floor ("every hand drifts") as its own phase: one hand, known page order, 60 or more pages, 3,000 or more

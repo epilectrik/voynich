@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.34, 2026-09-29)
+# Status Brief — what currently stands (v7.35, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -61,6 +61,18 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - **Minim counts** (1 vs 2+, ain vs aiin) are read alike by H and ZL (kappa 0.97, PHASE_770 design check); the
   older F transcription reads extra minims (kappa 0.42 against H) and is not used for minim statistics.
   e-run lengths are reliable (kappa 0.95-0.96, PHASE_758).
+- **Labels' initial o** (C2088, PHASE_771; ZL; MIXED / UNRESOLVED, fragile).
+  - Label o-words are not "o added in front of an ordinary word": w_add 0.00, and ≤ 0.03 in every analysis.
+  - With the primary references they are not a pure dropped-q qo class (w_qo 0.19, CI up to 0.42), though the qo
+    weight depends on how the references are weighted.
+  - They sit nearest ordinary o-words, but no mixture of the three length-matched references fits (p 0.0005). There
+    are fewer o-l and o-k than the best fit.
+  - The zodiac-led departure may be an AZC property.
+- **Line-edge forms at drawing breaks** (C2089, PHASE_771; ZL; UNRESOLVED).
+  - Words beside a `<->` break sit between mid-line and line-edge profiles (edge index 0.37 to 0.74).
+  - Descriptively, articulated starts follow a break at 57–69% of the line-start rate.
+  - Line-final *-m* follows the line end, not the break.
+  - No mechanism is distinguished.
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
   a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it

@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2087.
+the highest ID present is C2089.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -114,7 +114,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-29 20:44
+**Generated:** 2026-09-30 04:04
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -129,14 +129,14 @@ tables are quarantined — do not use for structural answers.
 6. All Constraints
 7. All Explanatory Fits
 8. Tier 3-4 Interpretations
-9. Session Methodology Notes (54 feedback rules)
+9. Session Methodology Notes (58 feedback rules)
 10. Structural Contract Signatures (6 contracts)
 
 ---
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.34, 2026-09-29)
+# Status Brief — what currently stands (v7.35, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -199,6 +199,18 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - **Minim counts** (1 vs 2+, ain vs aiin) are read alike by H and ZL (kappa 0.97, PHASE_770 design check); the
   older F transcription reads extra minims (kappa 0.42 against H) and is not used for minim statistics.
   e-run lengths are reliable (kappa 0.95-0.96, PHASE_758).
+- **Labels' initial o** (C2088, PHASE_771; ZL; MIXED / UNRESOLVED, fragile).
+  - Label o-words are not "o added in front of an ordinary word": w_add 0.00, and ≤ 0.03 in every analysis.
+  - With the primary references they are not a pure dropped-q qo class (w_qo 0.19, CI up to 0.42), though the qo
+    weight depends on how the references are weighted.
+  - They sit nearest ordinary o-words, but no mixture of the three length-matched references fits (p 0.0005). There
+    are fewer o-l and o-k than the best fit.
+  - The zodiac-led departure may be an AZC property.
+- **Line-edge forms at drawing breaks** (C2089, PHASE_771; ZL; UNRESOLVED).
+  - Words beside a `<->` break sit between mid-line and line-edge profiles (edge index 0.37 to 0.74).
+  - Descriptively, articulated starts follow a break at 57–69% of the line-start rate.
+  - Line-final *-m* follows the line end, not the break.
+  - No mechanism is distinguished.
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
   a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it
@@ -278,7 +290,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.34 | **Status:** characterization ACTIVE | **Constraints:** 1,894 live in the generated table (T0 2, T1 38, T2 1,684, T3 166, T4 4) | **Phases:** 770 | **Date:** 2026-09-29
+**Version:** 7.35 | **Status:** characterization ACTIVE | **Constraints:** 1,896 live in the generated table (T0 2, T1 38, T2 1,686, T3 166, T4 4) | **Phases:** 771 | **Date:** 2026-09-30
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -411,7 +423,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.34) | 1,894 (T0 2, T1 38, T2 1,684, T3 166, T4 4) |
+| Live constraints (generated table, v7.35) | 1,896 (T0 2, T1 38, T2 1,686, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -453,7 +465,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.34, 2026-09-29)
+# Research Agenda — open questions and the tests that would move them (v7.35, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -556,6 +568,14 @@ text made to look meaningful? And, if it carries content, what content?
    - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
      regions or position-resolved features, not only whole folios, and that tests multi-step copying and
      writing-session drift as rival sources.
+   - Labels (PHASE_771, C2088):
+     - label o-words fit no mixture of ordinary o-words, dropped-q qo-words and "o + word";
+     - next, pre-register AZC ring text as the reference for AZC labels (s7 fit ordinary o-words alone), and test the
+       s2 / s8 dependence of the qo weight.
+   - Line organisation (PHASE_771, C2089):
+     - the edge index at drawing breaks is unresolved;
+     - next, check the post-break aiin and pre-break -m cases on H and the scans;
+     - split post-break articulators into C1898's opener and embedded groups.
    - Pending:
      - the blind scan check of 100 minim groups (PHASE_770 section 14, human-coded), before any minim-dial claim;
      - the floor ("every hand drifts") as its own phase: one hand, known page order, 60 or more pages, 3,000 or more
@@ -1396,7 +1416,7 @@ C521	**[PHASE_754 glyph-unit gate (2026-09-27): "e→h = 0.00" is a spelling ide
 C522	**Construction-Execution Layer Independence**	2	B
 C523	**Pharma Label Vocabulary Bifurcation**	2	A
 C524	**Jar Label Morphological Compression** (7.1 vs 6.0 char mean; 5-8 PP atoms per MIDDLE; superstring packing)	2	A
-C525	**Label Morphological Stratification** (o-prefix 50% vs 20% text; qo-prefix ~0% vs 14%; 61% label-only vocabulary; within-group MIDDLE sharing) — **[PHASE_743: a small frequency-matched novel-MIDDLE preference of labels over ring-text (+0.025, 11/12 folios) is consistent with / adjacent to this stratification; documented not separately registered]**	3	A
+C525	**[PHASE_771 (2026-09-30): label o-words are neither o plus an ordinary word (w_add 0.00) nor, with the primary references, a dropped-q qo class (w_qo 0.19, CI to 0.42); no mixture of the three length-matched references fits (C2088)]** **Label Morphological Stratification** (o-prefix 50% vs 20% text; qo-prefix ~0% vs 14%; 61% label-only vocabulary; within-group MIDDLE sharing) — **[PHASE_743: a small frequency-matched novel-MIDDLE preference of labels over ring-text (+0.025, 11/12 folios) is consistent with / adjacent to this stratification; documented not separately registered]**	3	A
 C526	**RI Lexical Layer Hypothesis** (609 unique RI as referential lexicon; 87% localized to 1-2 folios; PREFIX/SUFFIX global grammar vs RI extensions as substance anchors)	3	A
 C527	**Suffix-Material Class Correlation**	3	A
 C528	**RI PREFIX Lexical Bifurcation** (334 PREFIX-REQUIRED, 321 PREFIX-FORBIDDEN, 12 optional; 98.2% disjoint; PREFIX attachment lexically determined; section-independent; refines C509.a aggregate rate)	2	A
@@ -1871,7 +1891,7 @@ C998	**Analog Physics Does Not Force Voynich Grammar Topology** (minimal reflux 
 C999	**Categorical Discretization Does Not Bridge Voynich Topology Gap** (5 physical strategies + 1 random null across 100 parameterizations; best physical 3/9 metrics toward Voynich = random 3/9; zero forbidden transitions from any strategy; hub mass degrades under all strategies; spectral gap is discretization artifact; Voynich discreteness is engineered abstraction, not categorization artifact)	2	B
 C1000	**[Scope 2026-09-27: forbidden-transition claims are zero patterns whose status is that of the C957 screen (PHASE_753) — individual forbidden pairs are not robust under an edge-glyph null, the class level is demoted (C783) and the 5-class taxonomy is imposed (C2060); the joint null (PHASE_756, 2026-09-28) REDUCES the screen-level zero excess to line composition, zones and boundary coupling (C2081)]** **HUB_UNIVERSAL Decomposes Into Functional Sub-Roles** (23 HUB MIDDLEs → 4 sub-roles: HAZARD_SOURCE(6), HAZARD_TARGET(6), SAFETY_BUFFER(3), PURE_CONNECTOR(8); behaviorally homogeneous but functionally distinct; 17/17 forbidden transitions involve HUB; PREFIX lane chi²=12957 V=0.689; safety buffers 3.8x qo-enriched; regime clustering sil=0.398 at k=4; corrects C996 from 13/17 to 17/17)	2	B
 C1001	**PREFIX Dual Encoding — Content and Positional Grammar** (PREFIX encodes both content (lane, class, suffix) and line position; PREFIX R²=0.069 ≈ MIDDLE R²=0.062 for position; 20/32 PREFIXes non-uniform positional profiles; po=86% initial, ar=61% final; PREFIX positional grammar regime-invariant for 7/7 major PREFIXes; sh→qo enrichment +20.5σ reveals line sequencing; I(MIDDLE_t; PREFIX_{t+1})=0.499 bits cross-component dependency)	2	B
-C1002	**SUFFIX Positional and Sequential Grammar** (8/22 suffixes non-uniform positional profiles vs PREFIX 20/32; R² suffix=0.027 vs PREFIX=0.069; extreme specialists am 88% line-final, om 88% final; SUFFIX sequential grammar chi²=2896 V=0.063 comparable to PREFIX V=0.060; edy→edy +14.3σ self-repetition dominance; I(SUFFIX; PREFIX_{t+1} \| MIDDLE) = -0.074 bits — zero cross-token signal; C932 category paragraph gradients do NOT decompose to individual suffixes)	2	B
+C1002	**[PHASE_771 (2026-09-30): -m before a drawing break is rare (ZL: A 12/512, B 5/213) against 0.104/0.205 at continuation-line ends; it follows the line end, not the break (C2089)]** **SUFFIX Positional and Sequential Grammar** (8/22 suffixes non-uniform positional profiles vs PREFIX 20/32; R² suffix=0.027 vs PREFIX=0.069; extreme specialists am 88% line-final, om 88% final; SUFFIX sequential grammar chi²=2896 V=0.063 comparable to PREFIX V=0.060; edy→edy +14.3σ self-repetition dominance; I(SUFFIX; PREFIX_{t+1} \| MIDDLE) = -0.074 bits — zero cross-token signal; C932 category paragraph gradients do NOT decompose to individual suffixes)	2	B
 C1003	**TOKEN is Pairwise Composite — No Three-Way Synergy**	2	B
 C1004	**49-Class Sufficiency Confirmed — No Hidden Suffix State** (Token-level Markov 38% worse than 49-class; only 1/17 classes shows suffix-differentiated transitions (JSD); H reduction from suffix conditioning = 0.259 bits (5.6%) — present but modest; no fourth architectural layer; 49-class grammar is the correct resolution for transition dynamics)	2	B
 C1005	**Bubble-Point Oscillation Falsified — Duty-Cycle Pattern**	4	B
@@ -2265,7 +2285,7 @@ C1413	PREFIX-SUFFIX coupling is MIDDLE-mediated	2	B, PREFIX, MIDDLE, suffix, ind
 C1414	Cross-slot atom co-occurrence exclusion rules	2	B, MIDDLE, suffix, atom, co-occurrence, exclusion
 C1415	83 forbidden PREFIX x MIDDLE HEAD combinations at atom level	2	B, PREFIX, MIDDLE, atom, forbidden, combinations
 C1416	ARTICULATOR rate and inventory	2	B
-C1417	ARTICULATOR line-initial concentration	2	B, line, position
+C1417	**[PHASE_771 (2026-09-30): after a drawing break the articulated-start rate is intermediate (ZL: A 0.090, B 0.113; continuation-line starts 0.159/0.164, mid-line 0.030/0.023; C2089)]** ARTICULATOR line-initial concentration	2	B, line, position
 C1418	ARTICULATOR PREFIX-locked with BARE/qo exclusion	2	B, PREFIX, ARTICULATOR
 C1419	ARTICULATOR e-HEAD selectivity and k-HEAD exclusion	2	B, MIDDLE, ARTICULATOR, atom
 C1420	ARTICULATOR suffix suppression	2	B, SUFFIX, ARTICULATOR
@@ -2334,7 +2354,7 @@ C1482	**[Scope 2026-09-28 (v7.26): 'hazard' here = the token's MIDDLE belongs to
 C1483	TERMINAL category specificity gradient	2	B, MIDDLE, atom, terminal, category, specificity, gradient, V=0.463
 C1484	**[PHASE_754 glyph-unit gate (2026-09-27): both exclusivity rules are EVA spelling rules — n preceded by i 98.7%, h preceded by c/s/gallows 99.3% — not atom grammar]** TERMINAL modifier exclusivity partition	2	B, MIDDLE, atom, terminal, modifier, exclusivity, partition, C1472, C1479
 C1485	TERMINAL HEAD affinity partition	2	B, MIDDLE, atom, terminal, HEAD, affinity, partition, frame
-C1486	m-terminal line-final closure confirmation	2	B, MIDDLE, atom, terminal, m, line-final, closure, C1434
+C1486	**[PHASE_771 (2026-09-30): -m before a drawing break is rare (ZL: A 12/512, B 5/213) against 0.104/0.205 at continuation-line ends; it follows the line end, not the break (C2089)]** m-terminal line-final closure confirmation	2	B, MIDDLE, atom, terminal, m, line-final, closure, C1434
 C1487	Six-terminal functional taxonomy	2	B, MIDDLE, atom, terminal, taxonomy, LOCKED, CHANNELED, DIFFUSE, opacity, orthogonal
 C1488	Headless compound population structure	2	B, MIDDLE, headless, population, census, compound
 C1489	Headless pseudo-HEAD category differentiation	2	B, MIDDLE, headless, atom, category, pseudo-HEAD, domain
@@ -2718,7 +2738,7 @@ C1905	Dark MIDDLEs LESS PREFIX-concentrated than bridge at matched frequency. Da
 C1906	Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to 0.924 (B). Section hyper-modulation (C1148) operates through atom-level selection matching operational character. Extends C1148	2	B, GLOBAL, dark pipeline, section, C1148
 C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior	2	B, dark pipeline, HEAD, PREFIX, C1475
 C1908	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Zodiac folio i/d MOD atom swap — **[PHASE_744 SPLIT]**: the i/d token-PARTITION SURVIVES (aiin-family vs -ody-family are nearly mutually-exclusive populations, 3-7% co-occurrence) but is **map-independent and redundant** with C1197/C1204/C1205 (i-atom orthogonal to k/e, NEGATIVE-carryover class). The **SEASONAL enrichment claim is STRUCK** — "Summer/Winter vs Spring/Autumn" pools a **phantom Winter** built from Taurus folios mislabeled as Capricorn/Aquarius (C1688 retracted); the chi2=39.3/p=0.0006 inherits that invalid grouping and the C1684 selection. e_depth "Autumn>Winter" likewise references nonexistent winter. NOT a seasonal finding. See `DATA/ZODIAC_ICONOGRAPHIC_MAP.md`.	2	AZC, zodiac, MOD, atom, ~~seasonal~~, C1197, C1205
-C1909	aiin absolute line-initial exclusion: 0/469 across A, B, and AZC. bare aiin NEVER appears at line position 1. daiin line-initial enrichment is B-specific and absent in A (11.3%, ns). The exclusion is construction-layer; the enrichment is execution-layer	2	GLOBAL, aiin, position, C557, C1234
+C1909	**[PHASE_771 (2026-09-30): bare aiin follows a drawing break inside a line (ZL: A 3, B 2; at or below mid-line expectations; 2 may be words cut by the drawing); the exclusion is a line-start property (C2089)]** aiin absolute line-initial exclusion: 0/469 across A, B, and AZC. bare aiin NEVER appears at line position 1. daiin line-initial enrichment is B-specific and absent in A (11.3%, ns). The exclusion is construction-layer; the enrichment is execution-layer	2	GLOBAL, aiin, position, C557, C1234
 C1910	**[PHASE_770 (2026-09-29): the frame-controlled minim-dial results are withheld from registration pending the blind scan check (PHASE_770 section 14; C2087)]** **[PHASE_770 design check (2026-09-29), correcting the PHASE_769 note: on aligned tokens whose other glyphs match, H and ZL 3b agree on 1 vs 2+ minims (kappa 0.971; 3,584 units on lines matched by content). F is the outlier (kappa 0.42 against H; it reads 879 of H's 1,428 single-minim groups as 2+), probably a convention of that transcription. Run minim statistics on H and check them on ZL, not F. Agreement between tracks is an upper bound; only the scans settle ain vs aiin.]** **[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split	2	GLOBAL, safety, ii, terminal, C1482, C1484
 C1911	ii-token HEAD anatomy diverges across systems: a-HEAD rate A=19.2%, B=35.9%, AZC=36.0%. A's ii-tokens are 57% headless. A-specific null hypothesis (ii HEAD = non-ii HEAD) rejected at p=1.3e-143. Safety encoding is morphological (construction-layer) but HEAD selection is execution-layer	2	A, B, AZC, safety, ii, HEAD, C1480, C1507
 C1912	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** ii/ee complementary domain split confirmed cross-system: a-HEAD tokens preferentially use ii (not ee), e-HEAD tokens preferentially use ee (not ii), in all three systems. Two-strategy safety architecture (C1732-C1733) is construction-layer	2	GLOBAL, safety, ii, ee, HEAD, C1732, C1733
@@ -2893,6 +2913,8 @@ C2084	**Pharmaceutical fragment labels do not recur on the herbal page of their 
 C2085	**Currier B's unit inventory is too large for writing one spelling per syllable with a space after each (PHASE_767; negative knowledge; pre-registered, lean-audited, certified on controls before lock).** At 20,000 tokens B (ZL 3b, uncertain spaces merged) has 5,141 types (H track 4,347; uncertain spaces split 4,248). Syllable-written controls have 685-1,338: Mandarin Pinyin in two texts (Matthew; Chinese Union Version NT), Vietnamese, Lahu Si and five syllabified European NTs (345-347 without tones). Word-written texts have 1,130-6,041. VOCAB index (mean of type-count and type-growth indices; 0 = word-text median, 1 = syllable-text median) -0.34 against the call threshold 0.415; the rule was certified on every native window (none called excluded) and on 14/15 held-out word texts (Maori not). The call holds in 40/40 random folio halves at 10,000 tokens, on B's last 20,000 tokens and in all variants (H track, split spaces, toneless natives, alternative syllabifier, N = 10,000, no re-wrap). Spelling variation: syllable texts need k* > 16 random spellings per syllable to reach B (median VOCAB at k = 16: -0.13). Tail check: the V>=2/T80 screen failed on Vietnamese, so the exclusion may rest partly on B's hapax tail (C566, C740); descriptively B's repeated types (1,449) and 80%-coverage types (1,295) exceed every syllable-written control (at most 976 and 272). Reference generators Naibbe GV1 (4,255 types) and Timm-Schinner (7,557) also fall on the word side. Scope: excludes plain syllable writing only; does not say B's tokens are words or language; does not exclude syllables written with spelling variation, morpheme-sized units or codebooks with homophones. Descriptive measurements, not read for or against syllables: B's held-out token-bigram gain above a within-line shuffle is +0.02 (every natural text 0.12-0.35, word- or syllable-written; Naibbe +0.02, Timm 0.00; B's pair coverage 0.67 is within the word-text range); identical adjacent repeats at chance (log O/E +0.03; every control text -4.4 to -0.6). Same inventory logic at MIDDLE level: C2036.	2	B, token_unit, syllable, chinese, vocabulary, negative_knowledge, PHASE_767
 C2086	**[PHASE_770 (2026-09-29): stands against the preceding-glyph context model (additive, within folio) (C2087). The drift clause remains unresolved: the pre-registered shape classification was UNRESOLVED (the fresh-draw gate failed), and the shape measurements in C2087 carry no verdict.]** **[Rescoped 2026-09-29 after expert review (expert-advisor, lean-expert): the drift clause is unresolved; see the S3far sentence]** **The e-run dial carries a folio-level component shared across words, with no per-procedure setting (PHASE_769; measurement; pre-registered, lean-audited, 200-replicate calibration on controls).** With the word frame (token with e-runs collapsed, run index), line zone, header line, paragraph-length tercile, section and Davis hand held fixed (within-cell permutation across folios; 5,851 informative of 9,927 e-runs, H track), the 1 vs 2+ choice correlates between a folio's top and bottom halves across different words: S3c +0.323 (null -0.002, SD 0.076; z 4.3; p 0.0005), adjusted for log lines, tokens per line, paragraphs and H-F legibility; ZL transcription check +0.306 (p 0.0005). Holds for word pairs 3+ edits apart (S3-dis z 7.1), on runs H and F read alike (S3-cons +0.276), without token-final runs (+0.318), after k only (+0.259, p 0.010), in S/3 (+0.347, p 0.002) and B/2 (+0.328, p 0.008). Size: folio logit SD about 0.4 (folio propensity SD 7.5 pp). First vs last quarter much weaker (S3far +0.095, p 0.12; S3far/S3c 0.29, SE about 0.22). Among calibration replicates with a uniform constant setting of B's strength, S3far <= 0.095 occurred about 4% of the time, against 25% under a page-restarting drift. Not yet separated: drift within pages, a page-restarting process, and a page setting that top-of-page (header) or closing lines do not express. Settled by the per-quarter between-folio variance profile and a residual variogram by line separation. No paragraph-specific setting (S3P-within p 0.58; the across-folio S3P, p 0.0005, reflects the folio component). Calibrated specificity at alpha 0.01: word-specific effects, strong lag-1 persistence, 1-edit copying, B-fitted local-rule generators and Naibbe <= 3%; slow drift and Timm-style multi-step copying (S3c point estimate +0.25) can produce it. Source not identified: content changing along the page, writing session or habit drift, pen, unrecognised hand, or copying; legibility and folio shape controlled. No reading: the heat-level gloss stays Tier 3; the picture gate passed, so a blind picture-coding test is warranted.	2	B, e-run, extension, dial, folio, drift, frame-controlled, PHASE_769
 C2087	**The e-dial's folio component survives removal of the preceding token's two-glyph ending; its shape over the page, its sharing with other spelling choices and its continuity across page turns are unresolved under the pre-registered rules; k/t as HEAD has its own folio component (PHASE_770; measurement; pre-registered, three expert reviews, lean-expert lock audit, calibrated on controls).** Arm 0: with the within-folio additive effect of the preceding token's last two collapsed glyph units removed (an e-run, a minim group, ch/sh and any gallows each count as one unit), S3c is 0.306 on H (unadjusted 0.298, below C2086's 0.323 because the analysis set adds f76r, assigns f115r to hand 3 and collapses dial classes in the legibility covariate) and 0.299 on ZL (0.302), p 0.0005 each, ratio 1.03 / 0.99; calibrated power 0.98 / 0.96; context-only plants give S3c of about 0. C2086 stands against the preceding-glyph context model (additive, within folio): the rival formed by boundary coupling (C1212, C1563, C2082) with folio vocabulary (C531). The following token is not controlled (run length changes the ending, C1225). Arm A: UNRESOLVED; the pre-registered fresh-draw gate failed (a 75% constant-plus-walk mixture was called static in 17.3% of 104 replicates, limit 15%; marginal near B's point). Descriptive measurements, not a shape verdict: the five static models and the first-and-last-paragraph and linear-trend plants fit poorly (p <= 0.0024, at the resolution floor); mean quarter covariance 4.9 / 3.8 / 1.5 x1e-3 at quarter distances 1-3 against a diagonal of 6.3; S3far does not recover toward S3c when page-edge lines are removed; the fullness-tercile analysis classifies the same way; consistent with ordinary scribal drift, floor untested. Arm B (CS: sh vs ch; KTH: t vs k as HEAD atom; MIN: minim count): no dial met the SHARED criterion (family-wise critical |z| 3.2 on a joint circular-shift null, with the ZL leg): E-CS X -0.17 on H (z -3.03), ZL -0.08 (p 0.10); E-KTH +0.13 (z 2.03). B2 power at rho 0.7 is 0.16-0.49, so sharing is not excluded. Own folio components at fixed word frame: KTH yes (S3c 0.25 H, p 0.0015; 0.22 ZL), as expected from its REGIME axis (C1715, C1920, C2070); CS not established on H (0.16, p 0.023; ZL 0.22, p 0.0025); OKOT (ok vs ot) and BENCH not detected, so C1182's sister-choice folio share is not shown to sit above the word. MIN results withheld pending the blind scan check (PHASE_770 section 14). No dial's paragraph-specific component detected at fixed word frame (C1811 / C1812 are composition results). Descriptive: E's residual falls with line fullness at fixed within-line position (p 0.0005; CS, KTH, MIN not detected), which does not identify space management as the source; the page-turn continuity criteria are not met (K -0.22 H, -0.20 ZL; uninformative, power 0.06-0.12); sheet-face and parchment-side structure not detected; D0: e-dial component not detected in Currier A (1,130 runs; a different hand and sections). No reading: heat level, REGIME and fire degree stay Tier 3 (e-content loads on PC2, a REGIME-defining axis). Methods: the random within-stratum pairing null is anti-conservative under the position-dependent calibration models (size 0.026 at alpha 0.01); the per-transition sign-flip null for page turns fails size.	2	B, e-run, dial, folio, shape, sharing, page-turn, context, PHASE_770, C2086
+C2088	**Label o-words fit no mixture of three length-matched paragraph-text references, and "o added to an ordinary word" gets no weight (PHASE_771 Arm L; measurement; pre-registered, lean-expert lock audit and confirmation pass, calibrated on controls; MIXED / UNRESOLVED, fragile).** ZL 3b, 608 label o-words (initial o, not qo, at least 2 glyph units; 53 folios: 408 astro/zodiac/cosmo, 126 pharma/herbal, 72 bio). Grouped EM over length strata 2-7+ against length-matched references (the unit after qo in qo-words of L+1 units; after o in o-words of L units; the first unit of words of L-1 units): w_o 0.81 (95% CI 0.575-1.00), w_qo 0.19 (0.00-0.42), w_add 0.00 (0.00-0.02). Verdict MIXED / UNRESOLVED [no mixture of the three fits: p 0.0005, the floor at 2,000 draws] [fragile: ordinary o-words, from the bio labels alone, w_o 0.999]; power at the labels' own clustering 1.00, so informative; not evidence of a within-label mixture (the fit fails). w_add <= 0.03 in every analysis; the qo weight depends on the reference weighting (type-weighted 0.59, CI 0.33-0.82; line-initial references 0.72, report-only). Departures from the best fit (folio bootstrap): fewer o-l (-60; -102 to -34) and o-k (-38; -67 to -15); p/f +34 (-1 to +96; 32 of 77 on the Rosettes foldout); t +35 (+2 to +71, marginal). Against AZC ring/circle text (report-only) the AZC labels fit ordinary o-words alone, so the zodiac-led departure may be an AZC property rather than a label property (C1502, C1559). No reading: why labels favour o (C525) and whether labels name anything are not tested.	2	labels, A, B, AZC, o-prefix, length-matched, ZL, PHASE_771, C525
+C2089	**Words beside a drawing break inside a line are unresolved between mid-line and line-edge profiles; descriptively, line-final -m follows the line end, not the break (PHASE_771 Arm E; measurement; pre-registered, lean-expert lock audit and confirmation pass, calibrated on controls).** ZL 3b, 725 drawing breaks (<->) inside Currier A and B paragraph lines (A 512 on 79 folios; B 213 on 27). First/last glyph-unit edge models fitted on unbroken lines (paragraph-first starts and paragraph-last ends excluded; cross-fitted by folio halves). Edge index I (0 = position-matched mid-line words, 1 = continuation-line edges): A start 0.37 (0.18-0.56), A end 0.74 (0.51-0.99), B start 0.51 (0.30-0.70), all UNRESOLVED; B end 0.20 (0.08-0.35), descriptive only (calibrated power 0.65); arm level: start UNRESOLVED, end no statement. No interval meets a pre-registered bar; five sensitivity analyses agree. Descriptive: articulated starts after a break A 0.090 (0.065-0.117) and B 0.113 (0.070-0.147), against continuation-line starts 0.159/0.164 and mid-line words 0.030/0.023 (57% and 69% of the line-start rate); -m before a break A 12/512 (matched mid-line expectation 9.4) and B 5/213 (1.4), against 0.104/0.205 at line ends; bare aiin follows a break 3 (A) and 2 (B) times, at or below mid-line expectations (2 may be words cut by the drawing). No mechanism distinguished: <-> marks a gap in the writing surface, and text written before the drawing would also predict edge-free break words.	2	A, B, line, drawing break, line edge, articulator, -m, aiin, ZL, PHASE_771, C1417, C1909, C1002, C1486
 
 ---
 
@@ -2900,7 +2922,7 @@ C2087	**The e-dial's folio component survives removal of the preceding token's t
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-09-29
+# Generated: 2026-09-30
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -6029,6 +6051,24 @@ Both thresholds turned out wrong. Actual cross-NL ceiling values:
 
 ---
 
+## calibration-provenance-and-clustering-level
+
+*Re-run the whole calibration after any change (sections share one random stream); estimate clustering at the level the simulation clusters*
+
+Two calibration traps from PHASE_771:
+
+1. **Partial recomputation breaks reproducibility.** Claude recomputed only the fit-check section of the calibration
+   after changing its concentration estimator. Later sections, the Arm E precondition among them, share that random
+   stream. Dirichlet sampling consumes a number of draws that depends on α, so the locked code could no longer
+   regenerate the recorded file. Re-run the whole calibration once with the final code. State in advance that this run
+   is final whatever it shows, especially when a precondition sits near its bar (A-end E-line power 0.82 against 0.80).
+2. **The clustering estimator must match the simulation model.** The simulation clusters per folio × stratum cell,
+   but α was estimated from folio-pooled counts. That under-states cell-level dispersion, and the fit check was
+
+[…trimmed — full note: memory/feedback_calibration_provenance_and_clustering_level.md]
+
+---
+
 ## feedback-chained-controls-scalar-vs-eigenstructure
 
 *"Three load-bearing nuances from PHASE_733 — (1) per-synth-own-shuffle baseline is mandatory (raw real-vs-synth conflates composition-fidelity with structure), (2) metrics through constraint-laden algorithms are confounded (floor-control or bypass), (3) scalar aggregate MI ≠ eigenstructure — a 5-gram can reproduce one and not the other."*
@@ -6123,6 +6163,28 @@ On sparse graphs, these denominators differ by factors of 10-50×. The N_possibl
 **The C475 case study (2026-05-19 audit):**
 
 […trimmed — full note: memory/feedback_denominator_choice_sparse_cooccurrence.md]
+
+---
+
+## edge-classes-fit-the-tested-population
+
+*A reference class must contain only cases the tested population could be; e.g. drop paragraph-first line starts when testing words that can never open a paragraph*
+
+Before comparing a test population with an "edge" or "position" reference, remove from the reference every case the
+test population cannot be. Words after a drawing break can never open a paragraph, so the line-start reference must
+exclude paragraph-first line starts. Those starts carry the gallows openers (C841, C864, C1788) and inflate the edge
+class.
+
+**Why:** In the first PHASE_771 design this contamination meant that a realistic "pen restart" truth gave A-start
+I = 0.80, with E-seg called in only 34 of 60 runs against the calibrated 1.00. The lean-expert's lock audit (E1) caught
+it.
+
+**How to apply:**
+- For every reference class, list the structural roles the test units cannot take: paragraph first or last line,
+  label, header, line edge. Exclude those roles from the reference and from the calibration draws.
+- Match on position as well.
+
+[…trimmed — full note: memory/feedback_edge_classes_fit_the_tested_population.md]
 
 ---
 
@@ -6223,6 +6285,22 @@ The framework gives new findings a place to land. When a new pattern can be told
 
 ---
 
+## homophony-ratio-invariance
+
+*"Homophones leave observed/expected repeat ratios and true neighbour information unchanged; only the plaintext units' own statistics and finite-sample dilution move them"*
+
+**The two invariances.**
+- **Repeat ratios.** Suppose each unit has k interchangeable spellings, chosen without regard to context. Observed and chance-expected adjacent repeats then both scale by Σq², where q is the share of each spelling. So a token's log O/E equals its plaintext unit's.
+- **Neighbour information.** A decipherable, context-free homophonic cipher keeps the true information between neighbours: I(T;T′) = I(U;U′). More spellings lower only the finite-sample estimate, through sparsity.
+
+**Why:** On 2026-09-29 Claude told the human two things that were wrong:
+- that a homophonic cipher "makes identical neighbours rarer, since it needs the same spelling twice";
+- that "more spellings lower order information".
+
+[…trimmed — full note: memory/feedback_homophony_ratio_invariance.md]
+
+---
+
 ## feedback-import-side-effects-phase-scripts
 
 *Importing another phase's run script as a module can execute module-level open(...,'w') and truncate its committed results*
@@ -6244,6 +6322,26 @@ Before importing another phase's *run script* (not a library module) for reuse, 
 **Why:** when the grouping variable is not fixed in advance, choosing it to maximize the signal is garden-of-forking-paths on a discrete map parameter. The reported p is post-selection and void; the honest value is the un-fitted full-enumeration estimate. Distinct from the existing taxonomy (not invented-threshold, not sparsity-denominator, not wrong-null — the within-group null is often *correct*; the contamination is in the *label selection* upstream of it).
 
 […trimmed — full note: memory/feedback_label_fit_to_signal.md]
+
+---
+
+## length-matched-references
+
+*Glyph-continuation comparisons between word families (e.g. label o- vs text qo-/o-) must match word length; the contrast changes with length*
+
+When comparing what follows a prefix in one population with a text reference (labels vs text, headers vs body), match
+word length in glyph units, stratum by stratum, with each story's own length mapping. For example, a label o-word of L
+units is compared with qo-words of L+1 units, o-words of L units, and "o + word" of L−1 units.
+
+**Why:** In PHASE_771 the first design pooled lengths. The lean-expert's audit showed that genuine text o-words fitted
+against the length-pooled references run from 1.00 "o" at 2 units down to 0.35 "qo" at 5 units. Labels are long
+(C524), so a pure "ordinary o-words" sample would have come out MIXED. The calibration could not catch this, because it
+simulated from the pooled references themselves.
+
+**How to apply:**
+- Stratify by length, and fit shared weights with group-specific components (grouped EM).
+
+[…trimmed — full note: memory/feedback_length_matched_references.md]
 
 ---
 

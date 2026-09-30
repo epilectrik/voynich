@@ -1,0 +1,16 @@
+(a) A articulator post-break - cont-initial: 95% CI -0.103..-0.033; share of replicates >= 0: 0.000; post-break - interior: +0.034..+0.088
+    ratio post-break / cont-initial: 95% CI 0.40..0.77
+(a) B articulator post-break - cont-initial: 95% CI -0.102..-0.011; share of replicates >= 0: 0.006; post-break - interior: +0.047..+0.123
+    ratio post-break / cont-initial: 95% CI 0.41..0.93
+(b) fRos label o-words: 92 of 608; fRos p/f 32
+    labels standardised pf: 0.127 (folio-boot 95% CI 0.066..0.196); without fRos 0.085
+    labels standardised l: 0.069 (folio-boot 95% CI 0.044..0.104); without fRos 0.076
+    labels standardised t: 0.332 (folio-boot 95% CI 0.278..0.393); without fRos 0.337
+(c) A last unit   l: pre-break 63/512 CI 0.092..0.155; cont-final CI 0.086..0.131; interior CI 0.194..0.232; position-matched interior expectation 102.5
+(c) A last unit   r: pre-break 34/512 CI 0.047..0.086; cont-final CI 0.066..0.104; interior CI 0.143..0.174; position-matched interior expectation 79.9
+(c) A last unit   y: pre-break 211/512 CI 0.370..0.456; cont-final CI 0.322..0.380; interior CI 0.305..0.350; position-matched interior expectation 169.2
+(c) A last unit   s: pre-break 48/512 CI 0.069..0.121; cont-final CI 0.043..0.079; interior CI 0.041..0.056; position-matched interior expectation 23.9
+(c) A last unit   d: pre-break 33/512 CI 0.042..0.090; cont-final CI 0.027..0.053; interior CI 0.009..0.017; position-matched interior expectation 8.5
+(c) A last unit iin: pre-break 50/512 CI 0.071..0.126; cont-final CI 0.115..0.176; interior CI 0.103..0.126; position-matched interior expectation 60.6
+(c) A last unit   o: pre-break 17/512 CI 0.016..0.051; cont-final CI 0.007..0.025; interior CI 0.041..0.060; position-matched interior expectation 29.6
+(c) A last unit   m: pre-break 12/512 CI 0.012..0.037; cont-final CI 0.071..0.127; interior CI 0.011..0.025; position-matched interior expectation 9.4

@@ -4,6 +4,54 @@
 
 ---
 
+## Version 7.35 (2026-09-30) — PHASE_771: labels' initial o; line-edge forms at drawing breaks (C2088, C2089)
+
+### Summary
+Both tests came from Claude's direct reading of five Currier A and four Currier B folios, and from three expert reviews
+of that reading.
+- **Design and lock:** pre-registered, audited by the lean-expert (not lockable → edits → confirmation pass → five more
+  edits), calibrated on controls (final calibration pre-stated as binding), and locked at `phase771-lock`.
+- **Run:** ZL 3b; 1,111 s at Idle priority.
+
+| Arm | Question | Verdict |
+|---|---|---|
+| **L** | What does a label's initial *o* correspond to in running text? | **MIXED / UNRESOLVED [no mixture of the three fits] [fragile: ordinary o-words]**: w_o 0.81 (0.575–1.00), w_qo 0.19 (0.00–0.42), w_add 0.00 (0.00–0.02); fit p 0.0005; power 1.00 |
+| **E** | Do line-edge forms appear at drawing breaks (`<->`)? | **UNRESOLVED** in all evaluable cells: A start I 0.37 (0.18–0.56), A end 0.74 (0.51–0.99), B start 0.51 (0.30–0.70). B end is descriptive: 0.20 (0.08–0.35), power 0.65 |
+
+### Findings
+**Labels (C2088).**
+- "o added in front of an ordinary word" gets no weight in any analysis (w_add ≤ 0.03).
+- The qo weight depends on the references: 0.19 in the primary, 0.59 with type-weighted references.
+- Labels sit nearest ordinary o-words, but no mixture fits.
+  - Robust: fewer *o-l* and *o-k* than the best fit.
+  - The *p/f* excess rests largely on the Rosettes foldout.
+- Against AZC ring text (report-only), the AZC labels fit ordinary o-words alone. The zodiac-led departure may
+  therefore be an AZC property.
+
+**Drawing breaks (C2089).**
+- The edge index sits between mid-line and line-edge profiles.
+- Descriptively, articulated starts follow a break at 57% (A) and 69% (B) of the line-start rate.
+- Line-final *-m* follows the line end, not the break: 12/512 and 5/213 before breaks, against 0.104/0.205 at line
+  ends.
+- No mechanism is distinguished.
+
+### Methods findings
+- **Length-matched references.** A glyph-continuation comparison between word families must match word length: the
+  qo-vs-o contrast changes with length, and labels are long (lock audit L1).
+- **Edge classes must fit the tested population.** A word after a break can never open a paragraph, so
+  paragraph-first line starts (gallows openers) must be excluded from the line-start reference (E1).
+- **Clustering estimates must match the simulation model.** A folio-pooled label concentration made the fit check
+  anti-conservative (size 0.17–0.43 at α/4). The cell-level minimum fixes it (size 0.00–0.02).
+- **Recompute the whole calibration, not one section.** Recomputing a single calibration section with a changed
+  estimator breaks reproducibility of later sections that share the random stream. The whole calibration was re-run.
+
+### Registry
+- C2088 and C2089 are new (Tier 2, measurement).
+- PHASE_771 notes were added on C525, C1909, C1417, C1002 and C1486.
+- Live: 1,896 (T0 2, T1 38, T2 1,686, T3 166, T4 4); 771 phases.
+
+---
+
 ## Version 7.34 (2026-09-29) — PHASE_770: what kind of process sets the e-dial? (C2087)
 
 ### Summary
