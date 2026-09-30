@@ -1,0 +1,66 @@
+[
+ {
+  "spec": [
+   "PALLINE",
+   "10.0",
+   "9700"
+  ],
+  "EF_z7": 10.73158434694328,
+  "EF_p": 0.004975124378109453,
+  "EFq_z7": 5.7059710801281245,
+  "EFpar_z7": 3.523696649630518,
+  "present": true,
+  "gate_payload_level": false,
+  "line_entropy_pct_reduction": 14.35231393918194,
+  "line_entropy_z": -51.560502369817904,
+  "paragraph_chi2_df": 1.8447257476476329
+ },
+ {
+  "spec": [
+   "PALLINE",
+   "10.0",
+   "9701"
+  ],
+  "EF_z7": 8.010138663552103,
+  "EF_p": 0.004975124378109453,
+  "EFq_z7": 4.6535685125704696,
+  "EFpar_z7": 3.101755957453415,
+  "present": false,
+  "gate_payload_level": false,
+  "line_entropy_pct_reduction": 14.059715056742089,
+  "line_entropy_z": -67.74022097472681,
+  "paragraph_chi2_df": 1.732666329822936
+ },
+ {
+  "spec": [
+   "PALLINE",
+   "7.0",
+   "9702"
+  ],
+  "EF_z7": 13.295519208828013,
+  "EF_p": 0.004975124378109453,
+  "EFq_z7": 8.461084895586156,
+  "EFpar_z7": 5.1987301014402805,
+  "present": true,
+  "gate_payload_level": false,
+  "line_entropy_pct_reduction": 18.985750373356968,
+  "line_entropy_z": -106.58971576135559,
+  "paragraph_chi2_df": 2.0807739422105462
+ },
+ {
+  "spec": [
+   "PALLINE",
+   "7.0",
+   "9703"
+  ],
+  "EF_z7": 15.492279425168366,
+  "EF_p": 0.004975124378109453,
+  "EFq_z7": 9.431103355313134,
+  "EFpar_z7": 7.050570005112219,
+  "present": true,
+  "gate_payload_level": true,
+  "line_entropy_pct_reduction": 19.382783381316212,
+  "line_entropy_z": -82.85828205977984,
+  "paragraph_chi2_df": 2.1245007407746046
+ }
+]
