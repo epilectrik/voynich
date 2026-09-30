@@ -1,8 +1,17 @@
 # PHASE_774 — Merged spellings: does Currier B repeat ordered phrases at the word or MIDDLE level beyond its local habits? (pre-registration)
 
-**Status: DRAFT v2** (not locked). The lean-expert lock audit found v1 **NOT LOCKABLE**. Edits E1–E9 and the optional
-O1–O2 are applied below. The re-certification (E4) is defined here before it runs. After the lock nothing below may
-change without a new phase number.
+**Status: DRAFT v3** (not locked).
+- **v1:** the lean-expert lock audit found it **NOT LOCKABLE**.
+- **v2:** applied edits E1–E9 and O1–O2, and defined a re-certification on unscored segments before running it.
+- **The re-certification failed on one criterion (R2).** A stem code of one Latin NT segment was called NONE on the M
+  arm.
+- **v3 is the redesign that the v2 rule requires,** with no re-tuning:
+  - **the T arm stays confirmatory,** since every criterion that bears on it passed;
+  - **the M arm becomes one-sided:** a PRESENT is registrable, and anything else is descriptive, with no exclusion
+    claim;
+  - **all thresholds are unchanged.**
+
+After the lock nothing below may change without a new phase number.
 
 ## Origin
 - **The human's idea (2026-09-29).** Some Voynich tokens may be interchangeable, so the same thing written twice can
@@ -106,8 +115,11 @@ corpus. p = (1 + #{null ≥ obs}) / (1 + R).
 
 | Arm | Question | Statistic | PRESENT | NONE | INDETERMINATE |
 |---|---|---|---|---|---|
-| **T** | a whole-word code (one spelling per word) | D5 = RPT5_TOK(obs) − mean RPT5_TOK(EF null) | D5 ≥ **7.5** and p ≤ 0.01 | D5 < **4.5**, or p > 0.05 | otherwise |
-| **M** | a stem code (frames vary around a fixed MIDDLE) | X5 = (RPT5_MID + 1) / (mean null + 1) | X5 ≥ **7.60** and p ≤ 0.01 | X5 ≤ **2.82**, or p > 0.05 | otherwise |
+| **T** (confirmatory) | a whole-word code (one spelling per word) | D5 = RPT5_TOK(obs) − mean RPT5_TOK(EF null) | D5 ≥ **7.5** and p ≤ 0.01 | D5 < **4.5**, or p > 0.05 | otherwise |
+| **M** (one-sided, v3) | a stem code (frames vary around a fixed MIDDLE) | X5 = (RPT5_MID + 1) / (mean null + 1) | X5 ≥ **7.60** and p ≤ 0.01 | *(no NONE claim; v3)* | *(not PRESENT: descriptive only)* |
+
+**M-arm reporting (v3).** The script prints PRESENT or "not PRESENT". The v2 three-way range (NONE-range /
+INDETERMINATE-range) is logged as a description only, with no exclusion scope.
 
 **Where the numbers come from** (`prelock_thresholds.py`, `results/thresholds774.json` v2; design calibration, 53
 no-message runs):
@@ -183,9 +195,46 @@ Each is used both as a whole-word code and as a stem code (35 segments per famil
 **PASS = all five.** A FAIL means redesign; there is no re-tuning on these segments. The result file joins the locked
 set.
 
+### Re-certification result (`results/prelock_recert.json`; run after the v2 commit 3b1bde3)
+| Criterion | Result |
+|---|---|
+| R1a (P5 ≥ 12 ⇒ T PRESENT) | **PASS**, 31/31 |
+| R1b (P5 ≥ 8 ⇒ T not NONE) | **PASS**, 32/32 |
+| R2 (no NT stem code NONE on M) | **FAIL:** Latin NT segment 7 (P5 10) gave X5 1.81, which is NONE |
+| R3 (20 no-message runs: none PRESENT, ≤ 2 INDETERMINATE) | **PASS:** max D5 1.99, max X5 2.54, 0 INDETERMINATE |
+| R4 (twins not PRESENT) | **PASS** |
+
+**T arm, whole-word codes.** D5 tracked the plaintext's own repetition closely (D5 ≈ P5 − null mean):
+
+| Segment | P5 | D5 | Call |
+|---|---|---|---|
+| Mesue 12 | 4 | 4.0 | NONE |
+| Mesue 10 and 11 | 6 | 5.9–6.0 | INDETERMINATE |
+| Latin NT 7 | 10 | 10.0 | PRESENT |
+
+Every other segment had P5 ≥ 19 and was PRESENT.
+
+**M arm, stem codes.** NT segments: 25 of 29 PRESENT, 3 INDETERMINATE (X5 4.3–4.9) and 1 NONE (Latin NT 7).
+
+| Mesue segment | X5 | Call |
+|---|---|---|
+| 8 | 15.8 | PRESENT |
+| 7 | 7.09 | INDETERMINATE |
+| 9–12 | 0.8–2.3 | NONE |
+
+**Redesign (v3).** The M arm's NONE scope ("excludes NT-like repetition") is refuted by an unscored segment, so the M
+arm keeps no exclusion claim.
+
+**Post-hoc, not certified.** In these runs, stem codes of plaintexts with P5 ≤ 19 gave X5 ≤ 2.30. P5 51–76 gave
+4.3–7.1, and P5 ≥ 93 gave 8.0 or more. This mapping is **derived from the failed certification set.** It may be
+reported as context, never as a scope.
+
 ## What each outcome means (scope; E1, E2, E6)
 ### T arm
 **T NONE.** B has fewer than about 5 excess repeated 5-token windows, which is within B-fitted first-order habits.
+The re-certification confirmed the scope in plaintext terms:
+- every whole-word code of a segment with P5 ≥ 8 was not NONE (32/32);
+- every one with P5 ≥ 12 was PRESENT (31/31).
 
 It excludes a whole-word code with one spelling per word (any language, any word-to-token assignment) of a text with
 about 8 or more repeated 5-word windows per 21,610 words. For reference:
@@ -199,10 +248,12 @@ give INDETERMINATE, not NONE.
 **T PRESENT.** B has 8 or more excess repeated 5-token windows.
 
 ### M arm
-**M NONE.** Excludes a stem code (fixed MIDDLE, frames chosen freely or by local rule) of a text with NT-like
-repetition: every NT segment tested gave X5 ≥ 4.6, against a NONE bound of 2.82. It excludes no prose genre.
+**M not PRESENT (v3).** Descriptive only: report X5 and the null mean. There is no exclusion claim, because the v2 NONE
+scope failed re-certification (a stem code of Latin NT segment 7 was NONE).
 
-**M PRESENT.** Certified only for repetition at the level of the Gospel opening.
+**M PRESENT.** B repeats ordered 5-MIDDLE sequences above every modelled no-message generator (see below).
+- Control stem codes reach this level at P5 of about 90 or more (NT books, the Gospel opening, one Mesue segment).
+- The false-PRESENT side is certified: 0 of 93 no-message runs reached X5 7.60 (maximum 2.82).
 
 ### Both arms
 **PRESENT wording (E6).** B repeats ordered 5-token or 5-MIDDLE sequences above every modelled no-message generator:
@@ -217,9 +268,9 @@ repetition: every NT segment tested gave X5 ≥ 4.6, against a NONE bound of 2.8
 
 A PRESENT is consistent with a message or with such copying. It is not a reading; any interpretation is echo-class.
 
-**False-PRESENT bound.** 0 of 73 no-message runs were PRESENT, which bounds the false-PRESENT rate at about 4% per arm
-(95%, rule of three), for the modelled families only. It is about 8% family-wise with two arms. The 20
-re-certification runs update this bound.
+**False-PRESENT bound.** 0 of 93 no-message runs were PRESENT on either arm (73 design and v1, plus 20
+re-certification, including 10 section-fitted). The rule of three gives about 3.2% per arm at 95%, and about 6.4%
+family-wise across the two arms, for the modelled families only.
 
 **Not excluded by any outcome:**
 - codes with two or more spellings per word;
@@ -237,10 +288,9 @@ re-certification runs update this bound.
 | T NONE | A Tier-2 negative-knowledge row with the T scope above. |
 | T PRESENT | A Tier-2 measurement row with the E6 wording. |
 | T INDETERMINATE | Phase record. |
-| M NONE | A Tier-2 negative-knowledge row with the M scope. |
 | M PRESENT | A Tier-2 measurement row with the E6 wording. |
-| M INDETERMINATE | Phase record. |
-| Always | A Tier-2 methods row for stage 1: which merges can and cannot recover interchangeable spellings. |
+| M not PRESENT | Phase record and the methods row: the X5 value, described, with no exclusion claim (v3). |
+| Always | A Tier-2 methods row covering stage 1 (which merges can and cannot recover interchangeable spellings) and the M-arm lesson (a stem code of low-repetition text adds no more MIDDLE repeats than B-like first-order habits). |
 
 ## Pre-specified descriptives (no verdict)
 - TOK, MID and MIDn1 at n = 3, 4 and 6.
@@ -277,5 +327,10 @@ re-certification runs update this bound.
 - **Stage-1 clustering** was tried with one algorithm only.
 
 ## Deviations
-From v1: E1–E9 and O1–O2 of the lock audit. v1 certification (`prelock_cert.json`) is superseded by the
-re-certification, because it reused the design segments. After the lock, any deviation is reported in INDEX.md.
+- **From v1:** E1–E9 and O1–O2 of the lock audit. The v1 certification (`prelock_cert.json`) is superseded by the
+  re-certification, because it reused the design segments.
+- **From v2:**
+  - the re-certification failed R2;
+  - the M arm becomes one-sided (PRESENT only), with no NONE claim;
+  - the T arm and all thresholds are unchanged.
+- **After the lock:** any deviation is reported in INDEX.md.

@@ -2,7 +2,8 @@
 """PHASE_774 locked run (see ../PRE_REGISTRATION.md).
 
   python run774.py              verify the lock; the two pre-registered arms on Currier B under the exact edge-frame
-                                null (EF, 1,000 permutations); per-arm calls (v2: E3/E5); pre-specified descriptives
+                                null (EF, 1,000 permutations); per-arm calls (v3: T confirmatory,
+                                M one-sided); pre-specified descriptives
   python run774.py --checksums  write results/input_checksums.json (before the lock commit)
   python run774.py --dry        every code path on two DECOY corpora (a whole-word code of Mesue and a no-message
                                 generator) instead of B; writes results/dryrun/
@@ -93,11 +94,19 @@ def call_T(d5, p, th):
 
 
 def call_M(x5, p, th):
+    """M arm (v3, one-sided): PRESENT is registrable; anything else is 'not PRESENT' (descriptive, no exclusion
+    claim). The v2 three-way label is kept as a descriptive field (label_M_v2)."""
+    if x5 >= th['tau_M'] and p <= 0.01:
+        return 'PRESENT'
+    return 'not PRESENT'
+
+
+def label_M_v2(x5, p, th):
     if x5 >= th['tau_M'] and p <= 0.01:
         return 'PRESENT'
     if x5 <= th['NEG_M'] or p > 0.05:
-        return 'NONE'
-    return 'INDETERMINATE'
+        return 'NONE-range'
+    return 'INDETERMINATE-range'
 
 
 def repeated_list(lines, folios, fn, n):
@@ -131,8 +140,6 @@ def analyse(lines, folios, tag):
     if 'PRESENT' in (T, Mv):
         verdict = 'summary: PHRASE REPEATS PRESENT (' + ' and '.join(a for a, v in (('T', T), ('M', Mv))
                                                                      if v == 'PRESENT') + ')'
-    elif T == 'NONE' and Mv == 'NONE':
-        verdict = 'summary: NONE DETECTED on both arms'
     else:
         verdict = f'summary: T {T}, M {Mv}'
     log(f'[{tag}] {time.time() - t0:.0f}s | tokens {int((C.tok >= 0).sum())}, types {len(C.vocab)}, '
@@ -140,7 +147,8 @@ def analyse(lines, folios, tag):
     log(f'[{tag}] T arm (TOK, n = 5): obs {t5["obs"]}, null mean {t5["null_mean"]:.2f} (sd {t5["null_sd"]:.2f}), '
         f'D5 {D5:.2f}, p {t5["p"]:.4f} -> {T}   [PRESENT >= {TH["tau_T"]:.1f}, NONE < {TH["NONE_T_lt"]:.1f}]')
     log(f'[{tag}] M arm (MID, n = 5): obs {m5["obs"]}, null mean {m5["null_mean"]:.2f} (sd {m5["null_sd"]:.2f}), '
-        f'X5 {m5["X"]:.3f}, p {m5["p"]:.4f} -> {Mv}   [tau_M {TH["tau_M"]:.2f}, NEG_M {TH["NEG_M"]:.2f}]')
+        f'X5 {m5["X"]:.3f}, p {m5["p"]:.4f} -> {Mv}   [PRESENT >= {TH["tau_M"]:.2f}; descriptive v2 range: '
+        f'{label_M_v2(m5["X"], m5["p"], TH)}]')
     log(f'[{tag}] T CALL: {T} | M CALL: {Mv} | {verdict}')
     nm = {'TOK5_null_mean': t5['null_mean'], 'MID5_null_mean': m5['null_mean'], 'calibration_ranges': CAL_RANGES}
     log(f'[{tag}] null means (O1): TOK5 {t5["null_mean"]:.2f} (no-message calibration 0-4.4); MID5 '
@@ -180,7 +188,7 @@ def analyse(lines, folios, tag):
             'T': {'obs': t5['obs'], 'null_mean': t5['null_mean'], 'null_sd': t5['null_sd'], 'D5': D5,
                               'p': t5['p'], 'call': T},
             'M': {'obs': m5['obs'], 'null_mean': m5['null_mean'], 'null_sd': m5['null_sd'], 'X5': m5['X'],
-                  'p': m5['p'], 'call': Mv},
+                  'p': m5['p'], 'call': Mv, 'v2_range_descriptive': label_M_v2(m5['X'], m5['p'], TH)},
             'verdict': verdict, 'thresholds': TH, 'descriptives': desc, 'repeated_5grams': lists,
             'tokens': int((C.tok >= 0).sum()), 'types': len(C.vocab), 'cells': C.n_cells,
             'frac_movable': C.frac_movable, 'R': R_B, 'seed': SEED}
