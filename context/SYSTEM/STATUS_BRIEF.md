@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.33, 2026-09-29)
+# Status Brief — what currently stands (v7.34, 2026-09-29)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -50,9 +50,13 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - **The e-run dial is set above the word** (C2086, PHASE_769).
   - With the word frame, position, paragraph length, section and hand fixed, the choice of e vs ee still varies
     by folio, shared across different words (z 4.3; confirmed on ZL and on runs both transcribers read alike).
-  - There is no per-procedure (paragraph) setting. Whether it drifts within pages or is a page setting that
-    the top and bottom lines do not express is unresolved (first vs last quarter coherence is low, but the
-    estimate is imprecise).
+  - There is no per-procedure (paragraph) setting.
+  - It survives removal of the preceding token's two-glyph ending (C2087, PHASE_770), so neighbour context
+    combined with folio vocabulary does not produce it.
+  - Its shape over the page is unresolved under the pre-registered rule (the gate failed narrowly). Descriptively,
+    static page-setting models fit poorly, but no mechanism is distinguished.
+  - Sharing with ch/sh, k/t or the minim count is unresolved (the test is underpowered).
+  - No carry-over across page turns is detected, but that test is uninformative.
   - Its source (content, writing session, pen, copying) is not identified.
 - **Minim counts** (1 vs 2+, ain vs aiin) are read alike by H and ZL (kappa 0.97, PHASE_770 design check); the
   older F transcription reads extra minims (kappa 0.42 against H) and is not used for minim statistics.

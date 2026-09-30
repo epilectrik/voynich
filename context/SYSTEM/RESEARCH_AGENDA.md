@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.31, 2026-09-29)
+# Research Agenda — open questions and the tests that would move them (v7.34, 2026-09-29)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -93,10 +93,18 @@ text made to look meaningful? And, if it carries content, what content?
      herbal page of its visually matched plant (13 pairs; MDE80 = 2 pairs). Next: designs that do not assume a
      label is a word of the herbal text (e.g. label agreement within the pharmaceutical section across fragments
      of the same plant), which needs more text-blind plant identifications.
-   - Precondition met: PHASE_769, C2086 — the e-run dial has a folio-level component shared across words, which
-     shows no per-procedure setting; whether it drifts within pages is unresolved. The picture gate passed. Next: a blind picture-coding test
-     within one section and hand that codes page regions or position-resolved features, not only whole folios,
-     and that tests multi-step copying and writing-session drift as rival sources.
+   - Precondition met: PHASE_769, C2086: the e-run dial has a folio-level component shared across words, with no
+     per-procedure setting.
+   - PHASE_770, C2087: it survives removal of the preceding token's two-glyph ending. Its shape, sharing and
+     page-turn continuity are unresolved under the pre-registered rules; descriptively, static page settings fit
+     poorly.
+   - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
+     regions or position-resolved features, not only whole folios, and that tests multi-step copying and
+     writing-session drift as rival sources.
+   - Pending:
+     - the blind scan check of 100 minim groups (PHASE_770 section 14, human-coded), before any minim-dial claim;
+     - the floor ("every hand drifts") as its own phase: one hand, known page order, 60 or more pages, 3,000 or more
+       within-frame choices.
 9. **Physical structure.**
    - What: PHASE_752 v2 steps 2–3 (bifolium and quire effects on the second transcription), for Malta (video due
      2026-11-09). The Aberdeen negative control is SPECIFIC (PHASE_759).

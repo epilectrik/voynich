@@ -4,6 +4,38 @@
 
 ---
 
+## Version 7.34 (2026-09-29) — PHASE_770: what kind of process sets the e-dial? (C2087)
+
+### Summary
+PHASE_770 was pre-registered after three expert reviews of the design (v1), two expert checks (v2) and a lean-expert
+lock audit (v3). It was calibrated on controls, locked at the git tag `phase770-lock`, and run on B in 52 minutes at
+Idle priority.
+
+| Arm | Question | Verdict |
+|---|---|---|
+| **0** | Is C2086 produced by the preceding token's context? | **No.** C2086 stands against the preceding-glyph context model: S3c after adjustment 0.306 (H) and 0.299 (ZL), p 0.0005, power 0.98 / 0.96 |
+| **A** | Shape over the page | **UNRESOLVED.** The fresh-draw gate failed narrowly. Descriptively, static page-setting models fit poorly; no mechanism is distinguished |
+| **B** | Sharing with ch/sh, k/t as HEAD, minim count | **UNRESOLVED** for all three. No dial met the calibrated criterion (largest E-CS X -0.17, z -3.03 vs 3.2); power 0.16-0.49. k/t as HEAD has its own folio component (REGIME axis). Minim results withheld pending the scan check |
+| **C** | Continuity across page turns | Descriptive: criteria not met (K -0.22); uninformative (power 0.06-0.12) |
+| **D0** | Currier A | e-dial component not detected (low power) |
+
+### Methods findings
+- **Pairing null under drift.** A random within-stratum pairing null for cross-series folio correlations is
+  anti-conservative when both series drift: size 0.026 at alpha 0.01. It was replaced by circular shifts plus a z-scale
+  critical value calibrated under joint null plants.
+- **Class labels and gates.** The v2 classifier's class labels failed their gate. v3 classes by latent position
+  contrast (D14), with thresholds tuned on controls and the gate evaluated on fresh draws.
+- **Page-turn null.** The per-transition sign-flip null fails size; the per-chain null is exact.
+- **Classifier window.** Gaussian-conditioned plant classifiers extrapolate outside the bank window, so an explicit
+  applicability window is part of the rule.
+
+### Registry
+- C2087 new (Tier 2, measurement).
+- Scope notes on C2086, C1977, C1182, C1204 and C1910.
+- Live: 1,894 (T0 2, T1 38, T2 1,684, T3 166, T4 4); 770 phases.
+
+---
+
 ## Version 7.33 (2026-09-29) — Minim reliability correction; PHASE_770 design stage
 
 ### Summary

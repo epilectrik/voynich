@@ -149,7 +149,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2086.
+the highest ID present is C2087.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -241,7 +241,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-29 15:22
+**Generated:** 2026-09-29 20:44
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -256,14 +256,14 @@ tables are quarantined — do not use for structural answers.
 6. All Constraints
 7. All Explanatory Fits
 8. Tier 3-4 Interpretations
-9. Session Methodology Notes (52 feedback rules)
+9. Session Methodology Notes (54 feedback rules)
 10. Structural Contract Signatures (6 contracts)
 
 ---
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.33, 2026-09-29)
+# Status Brief — what currently stands (v7.34, 2026-09-29)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -315,9 +315,13 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 - **The e-run dial is set above the word** (C2086, PHASE_769).
   - With the word frame, position, paragraph length, section and hand fixed, the choice of e vs ee still varies
     by folio, shared across different words (z 4.3; confirmed on ZL and on runs both transcribers read alike).
-  - There is no per-procedure (paragraph) setting. Whether it drifts within pages or is a page setting that
-    the top and bottom lines do not express is unresolved (first vs last quarter coherence is low, but the
-    estimate is imprecise).
+  - There is no per-procedure (paragraph) setting.
+  - It survives removal of the preceding token's two-glyph ending (C2087, PHASE_770), so neighbour context
+    combined with folio vocabulary does not produce it.
+  - Its shape over the page is unresolved under the pre-registered rule (the gate failed narrowly). Descriptively,
+    static page-setting models fit poorly, but no mechanism is distinguished.
+  - Sharing with ch/sh, k/t or the minim count is unresolved (the test is underpowered).
+  - No carry-over across page turns is detected, but that test is uninformative.
   - Its source (content, writing session, pen, copying) is not identified.
 - **Minim counts** (1 vs 2+, ain vs aiin) are read alike by H and ZL (kappa 0.97, PHASE_770 design check); the
   older F transcription reads extra minims (kappa 0.42 against H) and is not used for minim statistics.
@@ -401,7 +405,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.33 | **Status:** characterization ACTIVE | **Constraints:** 1,893 live in the generated table (T0 2, T1 38, T2 1,683, T3 166, T4 4) | **Phases:** 769 | **Date:** 2026-09-29
+**Version:** 7.34 | **Status:** characterization ACTIVE | **Constraints:** 1,894 live in the generated table (T0 2, T1 38, T2 1,684, T3 166, T4 4) | **Phases:** 770 | **Date:** 2026-09-29
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -534,7 +538,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.33) | 1,893 (T0 2, T1 38, T2 1,683, T3 166, T4 4) |
+| Live constraints (generated table, v7.34) | 1,894 (T0 2, T1 38, T2 1,684, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -576,7 +580,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.31, 2026-09-29)
+# Research Agenda — open questions and the tests that would move them (v7.34, 2026-09-29)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -671,10 +675,18 @@ text made to look meaningful? And, if it carries content, what content?
      herbal page of its visually matched plant (13 pairs; MDE80 = 2 pairs). Next: designs that do not assume a
      label is a word of the herbal text (e.g. label agreement within the pharmaceutical section across fragments
      of the same plant), which needs more text-blind plant identifications.
-   - Precondition met: PHASE_769, C2086 — the e-run dial has a folio-level component shared across words, which
-     shows no per-procedure setting; whether it drifts within pages is unresolved. The picture gate passed. Next: a blind picture-coding test
-     within one section and hand that codes page regions or position-resolved features, not only whole folios,
-     and that tests multi-step copying and writing-session drift as rival sources.
+   - Precondition met: PHASE_769, C2086: the e-run dial has a folio-level component shared across words, with no
+     per-procedure setting.
+   - PHASE_770, C2087: it survives removal of the preceding token's two-glyph ending. Its shape, sharing and
+     page-turn continuity are unresolved under the pre-registered rules; descriptively, static page settings fit
+     poorly.
+   - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
+     regions or position-resolved features, not only whole folios, and that tests multi-step copying and
+     writing-session drift as rival sources.
+   - Pending:
+     - the blind scan check of 100 minim groups (PHASE_770 section 14, human-coded), before any minim-dial claim;
+     - the floor ("every hand drifts") as its own phase: one hand, known page order, 60 or more pages, 3,000 or more
+       within-frame choices.
 9. **Physical structure.**
    - What: PHASE_752 v2 steps 2–3 (bifolium and quire effects on the second transcription), for Malta (video due
      2026-11-09). The Aberdeen negative control is SPECIFIC (PHASE_759).
@@ -2146,7 +2158,7 @@ C1178	**Phantom MIDDLEs Morphologically Isolated** (0/15 valid-unfilled; 11 part
 C1179	**Sister Choice Structured in Slot**	2	B, sister pairs, within-class
 C1180	**Sister Choice Positionally Mediated**	2	B, sister pairs, position
 C1181	**Sister Choice Dynamically Consequential**	2	B, sister pairs, dynamics
-C1182	**Sister Concentration Moderate Consistency** (ICC=0.317; 32% folio-determined, 68% paragraph-variable; unimodal)	2	B, sister pairs, program structure
+C1182	**[PHASE_770 (2026-09-29): with the word frame fixed, the ok/ot choice shows no folio component and ch/sh's is not established on H (C2087); the folio share here is not shown to sit above the word]** **Sister Concentration Moderate Consistency** (ICC=0.317; 32% folio-determined, 68% paragraph-variable; unimodal)	2	B, sister pairs, program structure
 C1183	**Sister Bridge/Dark Independent** (all partial rho <0.16 after section control; vocabulary pipeline orthogonal)	2	B, sister pairs, vocabulary
 C1184	**ch/sh and ok/ot Independent Axes**	2	B, sister pairs, within-class
 C1185	**Sister Successor Routing MIDDLE-Dependent**	2	B, sister pairs, transitions
@@ -2168,7 +2180,7 @@ C1200	**Order Encodes Procedural State**	2	B, order, state
 C1201	**PREFIX-Mediated Energy State Routing**	2	B, prefix, energy, routing
 C1202	**H-Kernel MIDDLE No Transition Mediation**	2	B, h-kernel, negative
 C1203	**ch/sh MIDDLE Atom-Level Differentiation** (ch-prefix MIDDLEs have higher k-atom fraction (7.1% vs 5.9%) and prefer e-free MIDDLEs: dy 3.1x, k 3.1x, d 2.8x ch-biased; sh-prefix MIDDLEs are more e-enriched (35.1% vs 30.2%); both share core vocabulary but frequency distributions diverge along k/e axis)	2	B, prefix, atoms, ch, sh
-C1204	**[PHASE_770 design check (2026-09-29), correcting the PHASE_769 note: on aligned tokens whose other glyphs match, H and ZL 3b agree on 1 vs 2+ minims (kappa 0.971; 3,584 units on lines matched by content). F is the outlier (kappa 0.42 against H; it reads 879 of H's 1,428 single-minim groups as 2+), probably a convention of that transcription. Run minim statistics on H and check them on ZL, not F. Agreement between tracks is an upper bound; only the scans settle ain vs aiin.]** **[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** **[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** **i-Extension Inverted Gradient** (i-gradient inverted vs e: ii 53.7% > single-i 45.9%, unlike e where single-e 81.1% dominates; driven by aIn family where ii-form is 2x more common; HERBAL highest ii+ rate 67.6%, BIO lowest 46.7%)	2	B, i-atom, extension
+C1204	**[PHASE_770 (2026-09-29): the frame-controlled minim-dial results are withheld from registration pending the blind scan check (PHASE_770 section 14; C2087)]** **[PHASE_770 design check (2026-09-29), correcting the PHASE_769 note: on aligned tokens whose other glyphs match, H and ZL 3b agree on 1 vs 2+ minims (kappa 0.971; 3,584 units on lines matched by content). F is the outlier (kappa 0.42 against H; it reads 879 of H's 1,428 single-minim groups as 2+), probably a convention of that transcription. Run minim statistics on H and check them on ZL, not F. Agreement between tracks is an upper bound; only the scans settle ain vs aiin.]** **[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** **[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** **i-Extension Inverted Gradient** (i-gradient inverted vs e: ii 53.7% > single-i 45.9%, unlike e where single-e 81.1% dominates; driven by aIn family where ii-form is 2x more common; HERBAL highest ii+ rate 67.6%, BIO lowest 46.7%)	2	B, i-atom, extension
 C1205	**i-Atom Orthogonal to k/e Energy System** (i operates on independent axis: no carryover z=-6.14 (anti-clusters), disjoint atom space chi2=2272, folio r(i,k)=-0.437 r(i,e)=-0.412, program-specific within/between=1.83, partial carryover interruption; all signals survive daiin removal)	2	B, i-atom, orthogonality, k/e
 C1206	**Paragraph Kernel Gradient** (h declines r=-0.920 through folio line quintiles while k rises r=+0.727 and e rises r=+0.881; early lines monitoring-heavy, later lines operation-heavy; extends C965 kernel composition shift)	2	B, paragraph, gradient, kernel
 C1207	**[PHASE_754 glyph-unit gate (2026-09-27): the {c,h} cluster is the bench glyph (c and h are its two halves; the folio r≈0.75 is spelling) and the {i,n} link is the minim group. The a↔(in/iin) association persists at glyph level, reflecting the aiin/ain token family; r is mostly a standalone glyph (10.6% inside minim groups)]** **Atom Correlation Clusters** (~20 atoms organize into 5-6 correlated clusters at folio level; {a,i,n,r} iteration axis r=+0.81-0.83, {c,h} monitoring r=+0.75, {k,l} energy r=+0.54, {d,y} closure r=+0.48, {o,p} structural r=+0.41; 64/153 pairs FDR-significant; all survive daiin removal)	2	B, atoms, dimensionality, clusters
@@ -2834,7 +2846,7 @@ C1906	Dark atom compositions match section grammar HEAD profiles: r=0.378 (C) to
 C1907	Dark PREFIX domain locking is HEAD-stratified: k-initial channels 65-100% to qo (thermal), e-initial shows moderate spread (mean cos 0.629), headless routes through specification PREFIXes. HEAD determines channeling behavior	2	B, dark pipeline, HEAD, PREFIX, C1475
 C1908	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Zodiac folio i/d MOD atom swap — **[PHASE_744 SPLIT]**: the i/d token-PARTITION SURVIVES (aiin-family vs -ody-family are nearly mutually-exclusive populations, 3-7% co-occurrence) but is **map-independent and redundant** with C1197/C1204/C1205 (i-atom orthogonal to k/e, NEGATIVE-carryover class). The **SEASONAL enrichment claim is STRUCK** — "Summer/Winter vs Spring/Autumn" pools a **phantom Winter** built from Taurus folios mislabeled as Capricorn/Aquarius (C1688 retracted); the chi2=39.3/p=0.0006 inherits that invalid grouping and the C1684 selection. e_depth "Autumn>Winter" likewise references nonexistent winter. NOT a seasonal finding. See `DATA/ZODIAC_ICONOGRAPHIC_MAP.md`.	2	AZC, zodiac, MOD, atom, ~~seasonal~~, C1197, C1205
 C1909	aiin absolute line-initial exclusion: 0/469 across A, B, and AZC. bare aiin NEVER appears at line position 1. daiin line-initial enrichment is B-specific and absent in A (11.3%, ns). The exclusion is construction-layer; the enrichment is execution-layer	2	GLOBAL, aiin, position, C557, C1234
-C1910	**[PHASE_770 design check (2026-09-29), correcting the PHASE_769 note: on aligned tokens whose other glyphs match, H and ZL 3b agree on 1 vs 2+ minims (kappa 0.971; 3,584 units on lines matched by content). F is the outlier (kappa 0.42 against H; it reads 879 of H's 1,428 single-minim groups as 2+), probably a convention of that transcription. Run minim statistics on H and check them on ZL, not F. Agreement between tracks is an upper bound; only the scans settle ain vs aiin.]** **[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split	2	GLOBAL, safety, ii, terminal, C1482, C1484
+C1910	**[PHASE_770 (2026-09-29): the frame-controlled minim-dial results are withheld from registration pending the blind scan check (PHASE_770 section 14; C2087)]** **[PHASE_770 design check (2026-09-29), correcting the PHASE_769 note: on aligned tokens whose other glyphs match, H and ZL 3b agree on 1 vs 2+ minims (kappa 0.971; 3,584 units on lines matched by content). F is the outlier (kappa 0.42 against H; it reads 879 of H's 1,428 single-minim groups as 2+), probably a convention of that transcription. Run minim statistics on H and check them on ZL, not F. Agreement between tracks is an upper bound; only the scans settle ain vs aiin.]** **[PHASE_769 (2026-09-29): minim counts are transcription-dependent — H-F agreement on 1 vs 2+ minims kappa 0.42; F reads 879 of 1,428 H single-minim groups as 2+ (8 of 2,124 the other way). The ain/aiin distinction needs a scan check before i-extension statistics are relied on]** ii-extension n-terminal lock is cross-system: A=93.7%, B=94.7%, AZC=83.3%. Chi-squared A vs B p=0.197 (fail to reject). Safety mechanism morphologically encoded at construction layer — does not require B execution grammar. Non-aiin ii-tokens have 0% n-terminal, confirming clean binary split	2	GLOBAL, safety, ii, terminal, C1482, C1484
 C1911	ii-token HEAD anatomy diverges across systems: a-HEAD rate A=19.2%, B=35.9%, AZC=36.0%. A's ii-tokens are 57% headless. A-specific null hypothesis (ii HEAD = non-ii HEAD) rejected at p=1.3e-143. Safety encoding is morphological (construction-layer) but HEAD selection is execution-layer	2	A, B, AZC, safety, ii, HEAD, C1480, C1507
 C1912	**[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** ii/ee complementary domain split confirmed cross-system: a-HEAD tokens preferentially use ii (not ee), e-HEAD tokens preferentially use ee (not ii), in all three systems. Two-strategy safety architecture (C1732-C1733) is construction-layer	2	GLOBAL, safety, ii, ee, HEAD, C1732, C1733
 C1913	C1908 swap is aiin-family-driven — **[PHASE_744 SPLIT]**: the morphological decomposition (65-74% of i-tokens are aiin-family; ody-family inverse) SURVIVES as a map-independent fact. The **SEASONAL framing is STRUCK**: "Summer+Winter vs Spring+Autumn" pools the phantom Winter (mislabeled Taurus) — VOID as a seasonal claim, same as C1908.	2	AZC, zodiac, aiin, ~~seasonal~~, C1908
@@ -2898,7 +2910,7 @@ C1973	**[PHASE_762 triage 2026-09-28 (C2052 criterion, human-approved): → Tier
 C1974	**[PHASE_762 triage 2026-09-28 (C2052 criterion, human-approved): → Tier 3. content claim — "tracks recipe step complexity" on matched folios]** Paragraph count tracks recipe step complexity across 15 matched folios. Range 2 (two-phase potable gold, f81v) to 18 (highly iterative coagulation, f107r). Simple single-operation recipes → 2-4 paragraphs; multi-step distillation/sublimation → 8-12; highly iterative → 14-18. Extends C1399/C1400 paragraph model.	3	B, paragraph, recipe-correspondence, C1399, C1400
 C1975	**[PHASE_762 triage 2026-09-28 (C2052 criterion, human-approved): → Tier 3. content claim — "tracks recipe material-addition pattern" on matched folios]** dar distribution tracks recipe material-addition pattern across 15 matched folios. Five patterns: front-loaded (preparation then processing, f103r 81% in P1-P5), back-loaded (material renewal during reiteration, f75r P9 46%), zero-after-midpoint (cohobation recycling, f112r P6-P14 zero dar), extreme-density (specification/dissolution, f77v P2 17.2%, f81v P1 16.5%), uniform-low (existing material, f107r 2.0%).	3	B, PREFIX, dar, recipe-correspondence, paragraph
 C1976	Polyalphabetic cipher hypothesis REJECTED. Soft atoms (d,o,c,p,s,f,r) tested for meaning shift across prefix classes via bigram cosine similarity. Core atoms stable: d=0.994, o=0.924, r=0.939. Lower c=0.640, p=0.660, f=0.609 explained by positional artifact (PSEUDO_HEAD under ch vs MOD under qo), not semantic shift. One cipher system; atoms have stable meaning across all prefix channels.	1	B, atom, cipher, falsification, C1394
-C1977	**[PHASE_769 (2026-09-29): under word-frame control the recto/verso correlation of folio e-propensity falls to r = 0.26 (27 pairs; 95% CI about -0.13 to 0.58); the 0.665 here is mostly frame composition]** **[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Recto/verso thermal pairing: same-leaf folios have correlated e-depth	2	B, recto_verso, e_depth, leaf
+C1977	**[PHASE_770 (2026-09-29): page-turn continuity and sheet-face / parchment-side structure of the frame-controlled e-dial not detected (C2087; the page-turn test had power 0.06-0.12)]** **[PHASE_769 (2026-09-29): under word-frame control the recto/verso correlation of folio e-propensity falls to r = 0.26 (27 pairs; 95% CI about -0.13 to 0.58); the 0.665 here is mostly frame composition]** **[PHASE_758 (2026-09-27): e-run length is read consistently across transcription tracks — 1-vs-2+ κ H–F 0.96, H–C 0.95 (an upper bound: tracks are not independent readings); track F reads 4.7% of H's 2+ runs as 1 (one-directional)]** Recto/verso thermal pairing: same-leaf folios have correlated e-depth	2	B, recto_verso, e_depth, leaf
 C1978	Recto/verso operational profile pairing: same-leaf folios share PREFIX distributions. Survives all 4 controls: section-stratified permutation, adjacent-folio comparison (+0.038 advantage), without-qo channel, broader 83-folio baseline	2	B, recto_verso, PREFIX, leaf
 C1979	PREFIX-conditional terminal-atom positional gradient (da family). Same-prefix tokens sort to systematically different line positions by terminal atom: -ir/-iin/-in early, -l late, -m strict line-final. Within-line and folio-level permutation tests both p<0.01 for 5 of 6 tokens. Length and dam-adjacency confounds excluded. Cross-references C1486 (universal -m line-final).	2	B, PREFIX, terminal, atom, da, position, gradient, C1486, C1394, C1925
 C1980	dar bimodal line-position distribution (observation). Despite mean=0.507, dar distribution is bimodal — concentrating at line edges (deciles 13.3,6.4,11.7,8.0,6.9,8.5,8.0,11.7,12.2,13.3), avoiding middle. Bimodality coefficient 0.581 (threshold 0.555). Mechanism (clause-edge marker, mixed populations, deployment artifact) not adjudicated.	3	B, PREFIX, dar, distribution, bimodal, observation, C1925, C1979
@@ -3006,7 +3018,8 @@ C2082	**Glyph-level re-test of "kernel-centric": the kernel is not restored; wha
 C2083	**Currier B's low-level profile is not nearer to discrete-operation step notations than to prose or gibberish (PHASE_765; negative knowledge; pre-registered, lean-audited).** At 197-pair scale, with every corpus re-wrapped to B's line lengths, the profile is P1 boundary coupling / H(first unit), P2 identical adjacent repeats (log O/E) and P3 near-repeats (log O/E vs within-line shuffle). Unit median distances to B: improvised gibberish 1.31 (nearest); constrained non-notation (Naibbe, Timm, Roget) 1.58; chess SAN 1.71; Latin procedural prose 1.75; meaningful text 2.02; needlework prose 2.17; knitting/crochet notation 3.00; AGC assembly 3.33 (farthest). B's own chunks sit at 0.94. No step-notation subgroup beats prose, gibberish and the floor control. In all 11 needlework books the book's prose is nearer to B than its notation. The result holds in all eight variants (EVA units, +TTR, lower-cased chess, needlework thresholds, authorial lines, digits collapsed, Mahalanobis, each statistic dropped). Modern step notations are more extreme than B in characteristic directions (knitting: strong coupling, no identical repeats, many near-repeats; assembly: anti-repetitive); B is moderate, closest to fluent improvised writing yet more constrained than it (4× coupling). The "discrete workshop operations" model loses this line of support, not the model. Untested: procedures written as fluent word-like tokens; line-, paragraph- and page-level structure. Not evidence of meaninglessness.	2	B, step_notation, knitting, chess, assembly, gibberish, procedural_prose, negative_knowledge, PHASE_765
 C2084	**Pharmaceutical fragment labels do not recur on the herbal page of their visually matched plant (PHASE_766; bounded negative knowledge; pre-registered, lean-audited).** Pairs: the 13 published pharma-herbal visual matches (voynich.nu, after Petersen and Knowles; 5 "same plant", 8 "some similarity") whose labels carry ZL item tags. Statistic: surprisal of the closest label-word match on the herbal page (glyph-unit edit distance <= 2, calibrated over 128 herbal pages); null: permute the 13 page slots. T = 0.78 vs null mean 5.12, p = 0.97; all eight variants p >= 0.74 (same-plant subset T = 0; within-pharma-folio restricted p = 0.96). Power on surrogate pages (no real pairing): MDE80 = 2 of 13 pairs for exact and for one-glyph label words (size 0.045). 10 of 13 labels have no word within two edits of any token on the matched page; 10 of the 15 label words occur nowhere in the herbal text. Excludes labels that reuse a word of their plant's herbal page in >= 2 of 13 pairs. Does not exclude labels as codes, quantities or contents, or names that differ in form between sections; not evidence of meaninglessness. Matches not verified text-blind (that bias could only raise T).	2	A, labels, pharma, herbal, images, negative_knowledge, PHASE_766
 C2085	**Currier B's unit inventory is too large for writing one spelling per syllable with a space after each (PHASE_767; negative knowledge; pre-registered, lean-audited, certified on controls before lock).** At 20,000 tokens B (ZL 3b, uncertain spaces merged) has 5,141 types (H track 4,347; uncertain spaces split 4,248). Syllable-written controls have 685-1,338: Mandarin Pinyin in two texts (Matthew; Chinese Union Version NT), Vietnamese, Lahu Si and five syllabified European NTs (345-347 without tones). Word-written texts have 1,130-6,041. VOCAB index (mean of type-count and type-growth indices; 0 = word-text median, 1 = syllable-text median) -0.34 against the call threshold 0.415; the rule was certified on every native window (none called excluded) and on 14/15 held-out word texts (Maori not). The call holds in 40/40 random folio halves at 10,000 tokens, on B's last 20,000 tokens and in all variants (H track, split spaces, toneless natives, alternative syllabifier, N = 10,000, no re-wrap). Spelling variation: syllable texts need k* > 16 random spellings per syllable to reach B (median VOCAB at k = 16: -0.13). Tail check: the V>=2/T80 screen failed on Vietnamese, so the exclusion may rest partly on B's hapax tail (C566, C740); descriptively B's repeated types (1,449) and 80%-coverage types (1,295) exceed every syllable-written control (at most 976 and 272). Reference generators Naibbe GV1 (4,255 types) and Timm-Schinner (7,557) also fall on the word side. Scope: excludes plain syllable writing only; does not say B's tokens are words or language; does not exclude syllables written with spelling variation, morpheme-sized units or codebooks with homophones. Descriptive measurements, not read for or against syllables: B's held-out token-bigram gain above a within-line shuffle is +0.02 (every natural text 0.12-0.35, word- or syllable-written; Naibbe +0.02, Timm 0.00; B's pair coverage 0.67 is within the word-text range); identical adjacent repeats at chance (log O/E +0.03; every control text -4.4 to -0.6). Same inventory logic at MIDDLE level: C2036.	2	B, token_unit, syllable, chinese, vocabulary, negative_knowledge, PHASE_767
-C2086	**[Rescoped 2026-09-29 after expert review (expert-advisor, lean-expert): the drift clause is unresolved; see the S3far sentence]** **The e-run dial carries a folio-level component shared across words, with no per-procedure setting (PHASE_769; measurement; pre-registered, lean-audited, 200-replicate calibration on controls).** With the word frame (token with e-runs collapsed, run index), line zone, header line, paragraph-length tercile, section and Davis hand held fixed (within-cell permutation across folios; 5,851 informative of 9,927 e-runs, H track), the 1 vs 2+ choice correlates between a folio's top and bottom halves across different words: S3c +0.323 (null -0.002, SD 0.076; z 4.3; p 0.0005), adjusted for log lines, tokens per line, paragraphs and H-F legibility; ZL transcription check +0.306 (p 0.0005). Holds for word pairs 3+ edits apart (S3-dis z 7.1), on runs H and F read alike (S3-cons +0.276), without token-final runs (+0.318), after k only (+0.259, p 0.010), in S/3 (+0.347, p 0.002) and B/2 (+0.328, p 0.008). Size: folio logit SD about 0.4 (folio propensity SD 7.5 pp). First vs last quarter much weaker (S3far +0.095, p 0.12; S3far/S3c 0.29, SE about 0.22). Among calibration replicates with a uniform constant setting of B's strength, S3far <= 0.095 occurred about 4% of the time, against 25% under a page-restarting drift. Not yet separated: drift within pages, a page-restarting process, and a page setting that top-of-page (header) or closing lines do not express. Settled by the per-quarter between-folio variance profile and a residual variogram by line separation. No paragraph-specific setting (S3P-within p 0.58; the across-folio S3P, p 0.0005, reflects the folio component). Calibrated specificity at alpha 0.01: word-specific effects, strong lag-1 persistence, 1-edit copying, B-fitted local-rule generators and Naibbe <= 3%; slow drift and Timm-style multi-step copying (S3c point estimate +0.25) can produce it. Source not identified: content changing along the page, writing session or habit drift, pen, unrecognised hand, or copying; legibility and folio shape controlled. No reading: the heat-level gloss stays Tier 3; the picture gate passed, so a blind picture-coding test is warranted.	2	B, e-run, extension, dial, folio, drift, frame-controlled, PHASE_769
+C2086	**[PHASE_770 (2026-09-29): stands against the preceding-glyph context model (additive, within folio) (C2087). The drift clause remains unresolved: the pre-registered shape classification was UNRESOLVED (the fresh-draw gate failed), and the shape measurements in C2087 carry no verdict.]** **[Rescoped 2026-09-29 after expert review (expert-advisor, lean-expert): the drift clause is unresolved; see the S3far sentence]** **The e-run dial carries a folio-level component shared across words, with no per-procedure setting (PHASE_769; measurement; pre-registered, lean-audited, 200-replicate calibration on controls).** With the word frame (token with e-runs collapsed, run index), line zone, header line, paragraph-length tercile, section and Davis hand held fixed (within-cell permutation across folios; 5,851 informative of 9,927 e-runs, H track), the 1 vs 2+ choice correlates between a folio's top and bottom halves across different words: S3c +0.323 (null -0.002, SD 0.076; z 4.3; p 0.0005), adjusted for log lines, tokens per line, paragraphs and H-F legibility; ZL transcription check +0.306 (p 0.0005). Holds for word pairs 3+ edits apart (S3-dis z 7.1), on runs H and F read alike (S3-cons +0.276), without token-final runs (+0.318), after k only (+0.259, p 0.010), in S/3 (+0.347, p 0.002) and B/2 (+0.328, p 0.008). Size: folio logit SD about 0.4 (folio propensity SD 7.5 pp). First vs last quarter much weaker (S3far +0.095, p 0.12; S3far/S3c 0.29, SE about 0.22). Among calibration replicates with a uniform constant setting of B's strength, S3far <= 0.095 occurred about 4% of the time, against 25% under a page-restarting drift. Not yet separated: drift within pages, a page-restarting process, and a page setting that top-of-page (header) or closing lines do not express. Settled by the per-quarter between-folio variance profile and a residual variogram by line separation. No paragraph-specific setting (S3P-within p 0.58; the across-folio S3P, p 0.0005, reflects the folio component). Calibrated specificity at alpha 0.01: word-specific effects, strong lag-1 persistence, 1-edit copying, B-fitted local-rule generators and Naibbe <= 3%; slow drift and Timm-style multi-step copying (S3c point estimate +0.25) can produce it. Source not identified: content changing along the page, writing session or habit drift, pen, unrecognised hand, or copying; legibility and folio shape controlled. No reading: the heat-level gloss stays Tier 3; the picture gate passed, so a blind picture-coding test is warranted.	2	B, e-run, extension, dial, folio, drift, frame-controlled, PHASE_769
+C2087	**The e-dial's folio component survives removal of the preceding token's two-glyph ending; its shape over the page, its sharing with other spelling choices and its continuity across page turns are unresolved under the pre-registered rules; k/t as HEAD has its own folio component (PHASE_770; measurement; pre-registered, three expert reviews, lean-expert lock audit, calibrated on controls).** Arm 0: with the within-folio additive effect of the preceding token's last two collapsed glyph units removed (an e-run, a minim group, ch/sh and any gallows each count as one unit), S3c is 0.306 on H (unadjusted 0.298, below C2086's 0.323 because the analysis set adds f76r, assigns f115r to hand 3 and collapses dial classes in the legibility covariate) and 0.299 on ZL (0.302), p 0.0005 each, ratio 1.03 / 0.99; calibrated power 0.98 / 0.96; context-only plants give S3c of about 0. C2086 stands against the preceding-glyph context model (additive, within folio): the rival formed by boundary coupling (C1212, C1563, C2082) with folio vocabulary (C531). The following token is not controlled (run length changes the ending, C1225). Arm A: UNRESOLVED; the pre-registered fresh-draw gate failed (a 75% constant-plus-walk mixture was called static in 17.3% of 104 replicates, limit 15%; marginal near B's point). Descriptive measurements, not a shape verdict: the five static models and the first-and-last-paragraph and linear-trend plants fit poorly (p <= 0.0024, at the resolution floor); mean quarter covariance 4.9 / 3.8 / 1.5 x1e-3 at quarter distances 1-3 against a diagonal of 6.3; S3far does not recover toward S3c when page-edge lines are removed; the fullness-tercile analysis classifies the same way; consistent with ordinary scribal drift, floor untested. Arm B (CS: sh vs ch; KTH: t vs k as HEAD atom; MIN: minim count): no dial met the SHARED criterion (family-wise critical |z| 3.2 on a joint circular-shift null, with the ZL leg): E-CS X -0.17 on H (z -3.03), ZL -0.08 (p 0.10); E-KTH +0.13 (z 2.03). B2 power at rho 0.7 is 0.16-0.49, so sharing is not excluded. Own folio components at fixed word frame: KTH yes (S3c 0.25 H, p 0.0015; 0.22 ZL), as expected from its REGIME axis (C1715, C1920, C2070); CS not established on H (0.16, p 0.023; ZL 0.22, p 0.0025); OKOT (ok vs ot) and BENCH not detected, so C1182's sister-choice folio share is not shown to sit above the word. MIN results withheld pending the blind scan check (PHASE_770 section 14). No dial's paragraph-specific component detected at fixed word frame (C1811 / C1812 are composition results). Descriptive: E's residual falls with line fullness at fixed within-line position (p 0.0005; CS, KTH, MIN not detected), which does not identify space management as the source; the page-turn continuity criteria are not met (K -0.22 H, -0.20 ZL; uninformative, power 0.06-0.12); sheet-face and parchment-side structure not detected; D0: e-dial component not detected in Currier A (1,130 runs; a different hand and sections). No reading: heat level, REGIME and fire degree stay Tier 3 (e-content loads on PC2, a REGIME-defining axis). Methods: the random within-stratum pairing null is anti-conservative under the position-dependent calibration models (size 0.026 at alpha 0.01); the per-transition sign-flip null for page turns fails size.	2	B, e-run, dial, folio, shape, sharing, page-turn, context, PHASE_770, C2086
 
 ---
 
@@ -6173,6 +6186,27 @@ The methodologically appropriate test is the **marginal-preserving permutation n
 
 ---
 
+## feedback-classifier-bank-window
+
+*"A plant-bank classifier that conditions on known statistics by Gaussian regression extrapolates outside the bank's acceptance window; state an explicit applicability window"*
+
+PHASE_770's Arm A classifier works as follows:
+- It fits a joint Gaussian of (S3c, S3far, features) per model on plant replicates accepted at S3c in [0.25, 0.40].
+- It conditions on the observed S3c and S3far.
+
+Poured habit3b controls with S3c about 0.04, far outside that window, were labelled STATIC-DOMINANT with the fit check passing. The conditional means extrapolate towards zero and everything looks consistent.
+
+The run-time gate would have caught this, since no bank replicates lie near such values. The rule now states an explicit window: A2 applies only when B's S3c is in [0.25, 0.40].
+
+**Why:** regression-based conditioning has no built-in warning outside its support, and a fit check computed from the same extrapolated conditional does not catch it.
+
+**How to apply:**
+- For every bank- or plant-conditioned classifier, write the acceptance window into the rule.
+
+[…trimmed — full note: memory/feedback_classifier_bank_window.md]
+
+---
+
 ## feedback-consult-constraints-before-deflating
 
 *"Recurring failure mode: deflating/dismissing established Voynich work using FRESH naive computation (a script, a percentile, a p-value) without first consulting the validated constraint base for the measure's direction/sign/convention. Violates the Context-First Rule. Errors cluster on un-consulted reasoning; consulting the constraints first reliably produces correct reads. Overconfidence is downstream of trusting a clean-looking fresh number over established research."*
@@ -6634,6 +6668,29 @@ The most costly failure of the session, and the user was rightly frustrated: I d
 ## The concrete instance (f75r ×4/×9 anchor)
 
 […trimmed — full note: memory/feedback_registry_compression_test_the_claim.md]
+
+---
+
+## feedback-relabelling-null-under-drift
+
+*Folio-relabelling nulls for cross-dial folio correlations are anti-conservative when both series drift along the manuscript; certify with joint H0 plants and calibrate a z-scale critical value*
+
+A permutation null that relabels one dial's folio values within stratum (section × hand) looks exact but is not when both folio series carry slow components that drift along reading order.
+
+In PHASE_770 Arm B, a 1,000-replicate certification under independent drifting components gave:
+- per-dial size 0.026 at α 0.01;
+- a statistic spread 16% wider than the null's.
+
+Circular shifts within stratum preserve autocorrelation but only cut the excess to 10%. No nominal threshold held size at 500-permutation resolution.
+
+**Fix used:**
+- Draw joint H0 plants: one e-dial draw shared by all pairs, each other dial independent, both drifting and folio-level versions.
+- Take the 99th percentile of max |z| over the dials as the critical value (3.2 there).
+- Report power at that value.
+
+The same held for B3 (critical |z| 3.76, driven by a line-type plant).
+
+[…trimmed — full note: memory/feedback_relabelling_null_under_drift.md]
 
 ---
 
