@@ -1,0 +1,18 @@
+[  11.0s] POS|keyK1|NT_la|0|1|7751                 types  3987 | K0 S 0.0605 null 0.0351 dS +0.0255 z   19.4 | K1 S 0.0732 null 0.0237 dS +0.0495 z   35.2 | K2 S 0.0647 null 0.0331 dS +0.0316 z   18.7
+[  11.9s] POS|keyK1|ITA_dante|0|1|7751             types  4353 | K0 S 0.0643 null 0.0343 dS +0.0299 z   22.2 | K1 S 0.0794 null 0.0242 dS +0.0552 z   40.5 | K2 S 0.0582 null 0.0318 dS +0.0264 z   17.9
+[  12.2s] POS|keyK1|LAT_rec|0|1|7751               types  6438 | K0 S 0.0496 null 0.0366 dS +0.0130 z    9.5 | K1 S 0.0502 null 0.0216 dS +0.0286 z   24.5 | K2 S 0.0518 null 0.0312 dS +0.0206 z   13.9
+[  12.4s] POS|keyK1|LAT_mesue|7|1|7751             types 11229 | K0 S 0.0361 null 0.0195 dS +0.0166 z   14.3 | K1 S 0.0274 null 0.0172 dS +0.0102 z   11.5 | K2 S 0.0230 null 0.0195 dS +0.0035 z    2.9
+[  12.5s] POS|keyK1|LAT_mesue|10|1|7751            types 11246 | K0 S 0.0168 null 0.0143 dS +0.0025 z    3.5 | K1 S 0.0241 null 0.0159 dS +0.0082 z   10.2 | K2 S 0.0232 null 0.0206 dS +0.0026 z    2.3
+[  18.8s] POS|CBB|LAT_rec|0|1|7754                 types  3440 | K0 S 0.0666 null 0.0284 dS +0.0382 z   28.9 | K1 S 0.0498 null 0.0229 dS +0.0270 z   19.6 | K2 S 0.0483 null 0.0317 dS +0.0166 z   12.4
+[  19.6s] POS|keyK2|LAT_rec|0|1|7752               types  6356 | K0 S 0.0416 null 0.0304 dS +0.0112 z    8.4 | K1 S 0.0329 null 0.0202 dS +0.0127 z   10.3 | K2 S 0.0494 null 0.0302 dS +0.0193 z   13.8
+[  20.1s] TWIN|keyK1|NT_la|0|1|7756                types  3999 | K0 S 0.0481 null 0.0351 dS +0.0129 z    8.5 | K1 S 0.0175 null 0.0171 dS +0.0004 z    0.4 | K2 S 0.0202 null 0.0195 dS +0.0007 z    0.6
+[  20.3s] POS|keyK1|LAT_rec|0|2|7753               types  8359 | K0 S 0.0318 null 0.0244 dS +0.0075 z    7.5 | K1 S 0.0423 null 0.0195 dS +0.0227 z   22.0 | K2 S 0.0445 null 0.0283 dS +0.0162 z   12.3
+[  20.3s] TWIN|keyK1|LAT_rec|0|1|7755              types  6428 | K0 S 0.0580 null 0.0416 dS +0.0164 z   11.4 | K1 S 0.0213 null 0.0180 dS +0.0033 z    2.9 | K2 S 0.0216 null 0.0205 dS +0.0011 z    0.9
+[  25.3s] NEG|habit3|None|None|None|7766           types  3373 | K0 S 0.0710 null 0.0450 dS +0.0260 z   15.4 | K1 S 0.0241 null 0.0188 dS +0.0052 z    4.2 | K2 S 0.0188 null 0.0187 dS +0.0001 z    0.1
+[  25.9s] NEG|habit3|None|None|None|7776           types  3372 | K0 S 0.0692 null 0.0439 dS +0.0253 z   15.7 | K1 S 0.0270 null 0.0184 dS +0.0086 z    7.5 | K2 S 0.0197 null 0.0179 dS +0.0018 z    1.4
+[  26.6s] NEG|habit3b|None|None|None|7767          types  3371 | K0 S 0.0656 null 0.0437 dS +0.0219 z   14.2 | K1 S 0.0251 null 0.0180 dS +0.0071 z    5.7 | K2 S 0.0214 null 0.0188 dS +0.0026 z    2.2
+[  26.9s] NEG|habit3b|None|None|None|7777          types  3333 | K0 S 0.0632 null 0.0416 dS +0.0216 z   14.8 | K1 S 0.0266 null 0.0181 dS +0.0084 z    7.5 | K2 S 0.0192 null 0.0188 dS +0.0004 z    0.4
+[  26.9s] NEG|habit3b_sec|None|None|None|7771      types  3277 | K0 S 0.0755 null 0.0488 dS +0.0267 z   13.9 | K1 S 0.0289 null 0.0191 dS +0.0099 z    7.1 | K2 S 0.0190 null 0.0183 dS +0.0007 z    0.6
+[  30.9s] NEG|habit2|None|None|None|7766           types  3406 | K0 S 0.0659 null 0.0426 dS +0.0232 z   14.2 | K1 S 0.0232 null 0.0181 dS +0.0051 z    4.4 | K2 S 0.0184 null 0.0178 dS +0.0007 z    0.6
+[  32.3s] NEG|M1|None|None|None|7762               types  3443 | K0 S 0.0380 null 0.0243 dS +0.0137 z   12.6 | K1 S 0.0213 null 0.0180 dS +0.0034 z    2.8 | K2 S 0.0195 null 0.0189 dS +0.0006 z    0.5
+done
