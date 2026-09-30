@@ -1,0 +1,14 @@
+PHASE_776 locked run; lock phase776-lock verified; inputs verified; R = 1000; seed 77600
+versions: python 3.11.4, numpy 2.3.2
+[B] 41s | EF-K2 cells 17076, movable 0.325 | EF movable 0.644 | EFL movable 0.245 | EFL-K2 movable 0.038
+[B] PRIMARY class-pair MI under EF-K2: obs 0.2321 bits, null 0.2281 (sd 0.0026), D +0.0040, z 1.6, p 0.0619
+[B] CALL: ROUTING-REDUCIBLE   [BEYOND ROUTING if p <= 0.005 and D >= 0.0122; ROUTING-REDUCIBLE if p > 0.05 or D <= 0.0038]
+[B] MI under plain EF (descriptive): null 0.2130, D +0.0191, p 0.0010
+[B] lambda2 under EF-K2 (C2061 statistic, descriptive): obs 0.2057, null 0.2032 (sd 0.0039), D +0.0025, z 0.6, p 0.2657 | under plain EF: null 0.1937, D +0.0119, p 0.0270 | shuffle floor 0.1225
+[B] lambda3 under EF-K2 (descriptive): obs 0.1344, null 0.1273, D +0.0071, p 0.1708 | floor 0.0752
+[B] C2061/C2067 rule: lambda2 NOT SHOWN beyond boundary rules (power ~0.68 at alpha 0.05): annotate C2061/C2067; their "sequence beyond boundary rules" reading moves to Tier 3 (the measurement against the 5-gram stands)
+[B] raw-adjacent 49-class MI (descriptive): D +0.0031 p 0.1568; 50-state MI with UN: D +0.0036 p 0.0130
+[B] lag-2 (descriptive): MI D +0.0042 p 0.0709; lambda2 D +0.0057 p 0.1628
+[B] within-line EFL-K2 MI (descriptive): null 0.2306, D +0.0015, p 0.0410 | EFL lambda2: D +0.0084, p 0.0060
+[B] shape (wording only): not read (ROUTING-REDUCIBLE: the excess is noise)
+done
