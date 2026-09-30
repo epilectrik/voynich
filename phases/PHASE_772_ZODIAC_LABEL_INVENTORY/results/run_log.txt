@@ -1,0 +1,13 @@
+lock verified: phase772-lock (tag, files, untracked scripts, inputs)
+N0 (descriptive): R 0.1897 | W 0.1429 (exchangeable 0.0970; null mean 0.0971) | p_low 0.9026 p_high 0.1868 (min attainable 0.0043) | types 255 | D_w 7 D_a 42
+N1: R 0.2345 | W 0.1970 (exchangeable 0.0970; null mean 0.0966) | p_low 0.9948 p_high 0.0109 (min attainable 0.0012) | types 244 | D_w 13 D_a 53
+N2: R 0.3483 | W 0.1722 (exchangeable 0.0970; null mean 0.0970) | p_low 0.9980 p_high 0.0038 (min attainable 0.0011) | types 218 | D_w 26 D_a 125
+conservative word-level R (N2): 0.4310
+VERDICT: NO INVENTORY (bounded, lam* = 8.0) | lam* = 8.0 | visibly changed copies at lam*: 0.7686344827586207
+  W_by_page_N1: {"R": 0.2345, "D_w": 13, "D_a": 53, "W": 0.197, "W_exp": 0.0863, "n_types": 244, "p_low": 0.996, "p_high": 0.008, "W_null_mean": 0.0879, "p_min": 0.0025}
+  without_top_rows_N1: {"R": 0.2166, "D_w": 10, "D_a": 46, "W": 0.1786, "W_exp": 0.0973, "n_types": 237, "p_low": 0.976, "p_high": 0.05, "W_null_mean": 0.0973, "p_min": 0.004}
+  without_top_rows_N2: {"R": 0.3357, "D_w": 21, "D_a": 105, "W": 0.1667, "W_exp": 0.0973, "n_types": 211, "p_low": 0.9925, "p_high": 0.0135, "W_null_mean": 0.097, "p_min": 0.001}
+  N2_first_unit_stripped: {"R": 0.3931, "D_w": 40, "D_a": 196, "W": 0.1695, "W_exp": 0.097, "n_types": 206, "p_low": 0.9995, "p_high": 0.0015, "W_null_mean": 0.0965, "p_min": 0.001}
+  H_track: {"n_labels": 294, "N1": {"R": 0.2041, "D_w": 9, "D_a": 41, "W": 0.18, "W_exp": 0.097, "n_types": 256, "p_low": 0.983, "p_high": 0.04, "W_null_mean": 0.0958, "p_min": 0.005}, "N2": {"R": 0.2959, "D_w": 22, "D_a": 95, "W": 0.188, "W_exp": 0.097, "n_types": 233, "p_low": 0.998, "p_high": 0.004, "W_null_mean": 0.0969, "p_min": 0.001}}
+  adjacency_N1: {"effect_obs_minus_null_mean": 0.004, "obs": 0.0041, "p_one_sided_high": 0.3328, "n_arcs": 28}
+done 103.0 s
