@@ -1,0 +1,17 @@
+{
+ "data/transcriptions/interlinear_full_words.txt": "13c9441d8cd1f6883b3b8f47aa88df84d8c5a6ef30606734e5665e98a2671915",
+ "scripts/voynich.py": "7c4171f614b1eabd500b3cfc8410085872b182e6de962bf7955c9ee0c0afaf6e",
+ "phases/PHASE_756_C957_JOINT_NULL/scripts/c957_joint_null_n5.py": "af54843ca7e66349a751c5cfd31c65f2e76837b7b828464cdcf13ea2fc8cb0fc",
+ "phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768.py": "3a970ab26dde1e140dd8820dcc7828539d9ce8b87451590d2cc8da1491f9897b",
+ "phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768v2.py": "612314ac50be0dccf9a1674ed8a53d507a024177fc693aeacb1693b8ba0051e8",
+ "phases/PHASE_757_NAIBBE_RIVAL_PANEL/scripts/naibbe_harness.py": "440baf0a0e433682848236250f82c014adb664cafb36c18247245868407321c3",
+ "phases/PHASE_767_TOKEN_UNIT_TEST/scripts/tu767.py": "dc4a3cd6fc92fcbd0eb21d46a2be0bc989607c0c449ceb7591028664b46a36b9",
+ "phases/PHASE_767_TOKEN_UNIT_TEST/scripts/syllabify.py": "6bbbbe03171ef0e2d6a80e25ca7784368bc8cc5090c21277012e1f437df516a0",
+ "phases/PHASE_764_HUMAN_GIBBERISH_CONTROL/scripts/g764.py": "4d6d3579c38596d1c5618fbbc2e6d3201b3459f68c9cf65cbffc3fd8da59bab9",
+ "phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json": "dc856ccd87abe5b5836d3275ec2c42060a1562869f84aaac52fc93ff901747ad",
+ "phases/PHASE_774_VARIANT_MERGE/scripts/ef774.py": "381547bcce38d3d9abec44dc1038c4fc803128ca76df86eda90f7a3e956c1f14",
+ "phases/PHASE_774_VARIANT_MERGE/scripts/gen774.py": "0ff638588e02aa5769a7bf2fcacda4d0d29871f72d2cbfd6b70ad91ef53274dd",
+ "phases/PHASE_775_BOUNDARY_KEY/scripts/gen775.py": "fdbcfc905339be481e13e8d1f5267645863e2945373aa33aefba45addd5b49ab",
+ "phases/PHASE_775_BOUNDARY_KEY/scripts/key775.py": "65188debe30b79320790f81b75935bf00d6d6c184a014430164a554a541df6e9",
+ "phases/PHASE_776_EIGENSTRUCTURE_EF/scripts/eig776.py": "b6b83a7f89e039b5a005e157fce1fd2e237d179a884fcead968872ede5b3adcc"
+}
