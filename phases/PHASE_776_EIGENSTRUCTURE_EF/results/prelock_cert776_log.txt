@@ -1,0 +1,137 @@
+[  22.5s] EDGE|edge2|8900          | D -0.0040 p 0.635 -> EDGE-REDUCIBLE  | lag2 D -0.0012 | EFL D +0.0027 p 0.266
+[  22.6s] EDGE|edge2|8901          | D -0.0082 p 0.807 -> EDGE-REDUCIBLE  | lag2 D -0.0009 | EFL D -0.0049 p 0.664
+[  22.7s] EDGE|edge1|8911          | D -0.0001 p 0.449 -> EDGE-REDUCIBLE  | lag2 D +0.0153 | EFL D -0.0019 p 0.645
+[  22.9s] EDGE|edge1|8910          | D -0.0066 p 0.754 -> EDGE-REDUCIBLE  | lag2 D -0.0003 | EFL D +0.0018 p 0.306
+[  23.7s] CLASS|M1|8930            | D +0.0273 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0094 | EFL D +0.0074 p 0.043
+[  30.3s] CLASS|habit|8920         | D +0.0365 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0054 | EFL D +0.0087 p 0.003
+[  33.3s] EDGE|edge2|8902          | D -0.0063 p 0.764 -> EDGE-REDUCIBLE  | lag2 D -0.0016 | EFL D -0.0121 p 0.880
+[  33.4s] EDGE|edge1|8912          | D +0.0185 p 0.053 -> EDGE-REDUCIBLE  | lag2 D +0.0003 | EFL D +0.0011 p 0.465
+[  33.9s] CLASS|M1|8931            | D +0.0373 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0069 | EFL D +0.0103 p 0.017
+[  40.5s] CLASS|habit|8921         | D +0.0479 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0096 | EFL D +0.0060 p 0.076
+[  41.0s] CLASS|habit|8922         | D +0.0339 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0045 | EFL D +0.0049 p 0.090
+[  41.5s] CLASS|M1|8932            | D +0.0435 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0015 | EFL D +0.0004 p 0.468
+[  43.5s] EDGE|edge2|8903          | D +0.0265 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0067 | EFL D +0.0030 p 0.346
+[  43.9s] EDGE|edge1|8913          | D -0.0022 p 0.548 -> EDGE-REDUCIBLE  | lag2 D -0.0060 | EFL D +0.0012 p 0.412
+[  51.4s] EDGE|edge2|8904          | D -0.0129 p 0.930 -> EDGE-REDUCIBLE  | lag2 D -0.0080 | EFL D -0.0030 p 0.708
+[  51.6s] CLASS|M1|8933            | D +0.0320 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0018 | EFL D +0.0066 p 0.073
+[  51.9s] CLASS|habit|8923         | D +0.0357 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0023 | EFL D +0.0062 p 0.040
+[  52.0s] EDGE|edge1|8914          | D +0.0024 p 0.389 -> EDGE-REDUCIBLE  | lag2 D -0.0049 | EFL D +0.0052 p 0.229
+[  54.9s] CLASS|M1|8934            | D +0.0401 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0011 | EFL D -0.0009 p 0.625
+[  60.7s] CLASS|habit|8924         | D +0.0373 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0025 | EFL D +0.0052 p 0.100
+[  61.3s] MIXED|habit2|8940        | D +0.0276 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0041 | EFL D +0.0028 p 0.179
+[  61.6s] MIXED|habit3|8950        | D +0.0238 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0042 | EFL D +0.0024 p 0.249
+[  62.0s] MIXED|habit3_sec|8970    | D +0.0138 p 0.023 -> INDETERMINATE   | lag2 D +0.0090 | EFL D +0.0026 p 0.269
+[  62.0s] MIXED|habit3b|8960       | D +0.0167 p 0.056 -> EDGE-REDUCIBLE  | lag2 D +0.0005 | EFL D +0.0009 p 0.478
+[  65.1s] MIXED|habit3b_sec|8980   | D +0.0114 p 0.027 -> INDETERMINATE   | lag2 D +0.0124 | EFL D +0.0050 p 0.063
+[  70.7s] MIXED|habit2|8941        | D +0.0268 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0091 | EFL D -0.0003 p 0.538
+[  71.1s] MIXED|habit3|8951        | D +0.0194 p 0.010 -> INDETERMINATE   | lag2 D +0.0054 | EFL D +0.0025 p 0.299
+[  71.7s] MIXED|habit3b|8961       | D +0.0173 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0170 | EFL D +0.0057 p 0.033
+[  71.9s] MIXED|habit3_sec|8971    | D +0.0042 p 0.246 -> EDGE-REDUCIBLE  | lag2 D -0.0003 | EFL D -0.0011 p 0.645
+[  72.1s] MIXED|habit3b_sec|8981   | D +0.0192 p 0.007 -> INDETERMINATE   | lag2 D +0.0074 | EFL D +0.0001 p 0.502
+[  74.6s] MIXED|habit2|8942        | D +0.0214 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0062 | EFL D +0.0092 p 0.007
+[  79.7s] MIXED|habit3|8952        | D +0.0130 p 0.027 -> INDETERMINATE   | lag2 D +0.0139 | EFL D +0.0036 p 0.223
+[  80.1s] MIXED|habit3b|8962       | D +0.0040 p 0.332 -> EDGE-REDUCIBLE  | lag2 D +0.0012 | EFL D -0.0067 p 0.947
+[  80.5s] MIXED|habit3_sec|8972    | D +0.0013 p 0.445 -> EDGE-REDUCIBLE  | lag2 D -0.0059 | EFL D -0.0037 p 0.804
+[  80.7s] MIXED|habit3b_sec|8982   | D +0.0028 p 0.342 -> EDGE-REDUCIBLE  | lag2 D -0.0126 | EFL D -0.0003 p 0.551
+{
+ "C1": false,
+ "C1_indeterminate": 0,
+ "C1_max_D": 0.026530129813128175,
+ "C2": true,
+ "C2_survives": "10/10",
+ "C2_min_D": 0.02726043488028823,
+ "mixed_calls": [
+  [
+   "habit2",
+   8940,
+   "SURVIVES EDGES",
+   0.0276
+  ],
+  [
+   "habit2",
+   8941,
+   "SURVIVES EDGES",
+   0.0268
+  ],
+  [
+   "habit2",
+   8942,
+   "SURVIVES EDGES",
+   0.0214
+  ],
+  [
+   "habit3",
+   8950,
+   "SURVIVES EDGES",
+   0.0238
+  ],
+  [
+   "habit3",
+   8951,
+   "INDETERMINATE",
+   0.0194
+  ],
+  [
+   "habit3",
+   8952,
+   "INDETERMINATE",
+   0.013
+  ],
+  [
+   "habit3_sec",
+   8970,
+   "INDETERMINATE",
+   0.0138
+  ],
+  [
+   "habit3_sec",
+   8971,
+   "EDGE-REDUCIBLE",
+   0.0042
+  ],
+  [
+   "habit3_sec",
+   8972,
+   "EDGE-REDUCIBLE",
+   0.0013
+  ],
+  [
+   "habit3b",
+   8960,
+   "EDGE-REDUCIBLE",
+   0.0167
+  ],
+  [
+   "habit3b",
+   8961,
+   "SURVIVES EDGES",
+   0.0173
+  ],
+  [
+   "habit3b",
+   8962,
+   "EDGE-REDUCIBLE",
+   0.004
+  ],
+  [
+   "habit3b_sec",
+   8980,
+   "INDETERMINATE",
+   0.0114
+  ],
+  [
+   "habit3b_sec",
+   8981,
+   "INDETERMINATE",
+   0.0192
+  ],
+  [
+   "habit3b_sec",
+   8982,
+   "EDGE-REDUCIBLE",
+   0.0028
+  ]
+ ],
+ "PASS": false
+}
+exit 0
