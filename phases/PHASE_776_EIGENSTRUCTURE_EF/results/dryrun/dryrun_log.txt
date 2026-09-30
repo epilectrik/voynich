@@ -1,21 +1,21 @@
-[DECOY_edge2] 43s | EF-K2 cells 18187, movable 0.257 | EF movable 0.594 | EFL movable 0.201 | EFL-K2 movable 0.026
+[DECOY_edge2] 49s | EF-K2 cells 18187, movable 0.257 | EF movable 0.594 | EFL movable 0.201 | EFL-K2 movable 0.026
 [DECOY_edge2] PRIMARY class-pair MI under EF-K2: obs 0.1793 bits, null 0.1770 (sd 0.0022), D +0.0023, z 1.1, p 0.1389
 [DECOY_edge2] CALL: ROUTING-REDUCIBLE   [BEYOND ROUTING if p <= 0.005 and D >= 0.0122; ROUTING-REDUCIBLE if p > 0.05 or D <= 0.0038]
 [DECOY_edge2] MI under plain EF (descriptive): null 0.1709, D +0.0084, p 0.0070
 [DECOY_edge2] lambda2 under EF-K2 (C2061 statistic, descriptive): obs 0.0785, null 0.0828 (sd 0.0058), D -0.0043, z -0.7, p 0.7652 | under plain EF: null 0.0950, D -0.0165, p 0.9530 | shuffle floor 0.0682
 [DECOY_edge2] lambda3 under EF-K2 (descriptive): obs 0.0785, null 0.0786, D -0.0001, p 0.4905 | floor 0.0634
-[DECOY_edge2] C2061/C2067 rule: lambda2 not shown beyond boundary rules: annotate C2061/C2067; their "sequence beyond boundary rules" reading moves to Tier 3 (the measurement against the 5-gram stands)
+[DECOY_edge2] C2061/C2067 rule: lambda2 NOT SHOWN beyond boundary rules (power ~0.68 at alpha 0.05): annotate C2061/C2067; their "sequence beyond boundary rules" reading moves to Tier 3 (the measurement against the 5-gram stands)
 [DECOY_edge2] raw-adjacent 49-class MI (descriptive): D +0.0011 p 0.3307; 50-state MI with UN: D +0.0008 p 0.2757
 [DECOY_edge2] lag-2 (descriptive): MI D +0.0012 p 0.3097; lambda2 D -0.0059 p 0.9101
 [DECOY_edge2] within-line EFL-K2 MI (descriptive): null 0.1789, D +0.0003, p 0.2697 | EFL lambda2: D -0.0100, p 0.8981
-[DECOY_edge2] shape (wording only): unresolved
+[DECOY_edge2] shape (wording only): not read (ROUTING-REDUCIBLE: the excess is noise)
 [DECOY_habit] 39s | EF-K2 cells 19219, movable 0.192 | EF movable 0.574 | EFL movable 0.186 | EFL-K2 movable 0.013
 [DECOY_habit] PRIMARY class-pair MI under EF-K2: obs 0.2837 bits, null 0.2600 (sd 0.0023), D +0.0237, z 10.2, p 0.0010
 [DECOY_habit] CALL: BEYOND ROUTING   [BEYOND ROUTING if p <= 0.005 and D >= 0.0122; ROUTING-REDUCIBLE if p > 0.05 or D <= 0.0038]
 [DECOY_habit] MI under plain EF (descriptive): null 0.2010, D +0.0827, p 0.0010
 [DECOY_habit] lambda2 under EF-K2 (C2061 statistic, descriptive): obs 0.1829, null 0.1727 (sd 0.0041), D +0.0103, z 2.5, p 0.0060 | under plain EF: null 0.1449, D +0.0381, p 0.0010 | shuffle floor 0.0766
 [DECOY_habit] lambda3 under EF-K2 (descriptive): obs 0.0981, null 0.0984, D -0.0003, p 0.4835 | floor 0.0683
-[DECOY_habit] C2061/C2067 rule: lambda2 significant at 0.05: no demotion of C2061/C2067; record agreement/disagreement with the MI call
+[DECOY_habit] C2061/C2067 rule: lambda2 significant at 0.05: no demotion of C2061/C2067; not evidence of order (line-latent plants reach p 0.003); C2061 reading stays unresolved unless the shape is order-like
 [DECOY_habit] raw-adjacent 49-class MI (descriptive): D +0.0394 p 0.0010; 50-state MI with UN: D +0.0240 p 0.0010
 [DECOY_habit] lag-2 (descriptive): MI D +0.0022 p 0.1658; lambda2 D -0.0018 p 0.6923
 [DECOY_habit] within-line EFL-K2 MI (descriptive): null 0.2828, D +0.0009, p 0.0360 | EFL lambda2: D +0.0112, p 0.0070

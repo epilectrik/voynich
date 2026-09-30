@@ -1,6 +1,7 @@
 # PHASE_776 — Does Currier B's class-transition structure (C2061/C2067) go beyond its word-boundary rules? (pre-registration)
 
-**Status: v3, for lock.** The lean-expert lock audit of v2 returned LOCKABLE WITH EDITS (audit scripts and plants
+**Status: v3.1, for lock** (the confirmation pass returned LOCKABLE WITH EDITS; its six wording edits are applied; no
+call, threshold or sample changed). The lean-expert lock audit of v2 returned LOCKABLE WITH EDITS (audit scripts and plants
 committed at a1fe415, `scripts/audit/`, `results/audit/`). Edits 1–6 are applied below. The v2 certification PASSED.
 - **v1** (λ2 under the plain edge-frame null EF) **failed certification C1:** one edge-only chain in 10 read as
   SURVIVES (D +0.027, p 0.003). The cause is C2082: the previous ending routes the next token's class, and EF fixes
@@ -116,9 +117,12 @@ certification.
   token chain fitted to B's adjacent pairs: all 35 such runs, including the MIXED family and the audit's
   folio-emission chains.
 
-**Dry run (v2 code):** the edge-only decoy is ROUTING-REDUCIBLE (MI D +0.0023, p 0.14; under plain EF its MI is
-significant, p 0.007, which is the routing EF-K2 removes); the class-chain decoy is BEYOND ROUTING (D +0.0237,
-z 10.2), shape "order-like".
+**Dry run (v3 code):**
+- the edge-only decoy is ROUTING-REDUCIBLE (MI D +0.0023, p 0.14; under plain EF its MI is significant, p 0.007, which
+  is the routing EF-K2 removes; raw-adjacent 49-class D +0.0011; EFL-K2 p 0.27; shape "unresolved"; λ2 rule →
+  annotate);
+- the class-chain decoy is BEYOND ROUTING (D +0.0237, z 10.2; raw-adjacent D +0.0394; EFL-K2 p 0.036; shape
+  "order-like"; λ2 p 0.006 → no demotion).
 
 ## Pre-declared descriptives (no verdict)
 - MI under plain EF (routing not fixed).
@@ -128,10 +132,21 @@ z 10.2), shape "order-like".
 - **Shape wording rule** (edit 2; restricts wording only; uncertified): if the MI excess D > 0, "order-like" when the
   lag-2 excess is less than half the lag-1 excess and EFL-K2 MI p ≤ 0.05; "clustering-like" when EFL-K2 MI p > 0.05 and
   the lag-2 excess is at least 0.75 × the lag-1 excess; otherwise "unresolved".
-- **The C2061/C2067 rule** (edit 1; pre-registered): on λ2 under EF-K2 at α 0.05. If p > 0.05, C2061/C2067 are
-  annotated "not shown to be sequence beyond boundary rules" and that reading moves to Tier 3, while the measurement
-  against the 5-gram stands. If p ≤ 0.05, no demotion; agreement or disagreement with the MI call is recorded. (λ2 and
-  MI come apart: PHASE_733 showed it, and the audit's line plants did too.)
+- **The C2061/C2067 rule** (edit 1; pre-registered; applied whatever the MI call): on λ2 under EF-K2 at α 0.05.
+  - If p > 0.05: C2061/C2067 are annotated "**not shown** to be sequence beyond boundary rules" and that reading moves
+    to Tier 3, while the measurement against the 5-gram stands. The annotation carries its power: at α 0.05 the λ2
+    test reached 15 of 22 class chains (about 0.68), so when MI is BEYOND ROUTING a λ2 miss happens about 30% of the
+    time; "not shown", not "absent".
+  - If p ≤ 0.05: no demotion. **λ2 significance under EF-K2 is not evidence of order:** the audit's line-latent plants
+    reached p 0.003 with a λ2 excess three to four times a class chain's. C2061's "sequence" reading stays unresolved
+    unless the shape reading is order-like. (λ2 and MI come apart: PHASE_733 showed it, and the audit's line plants did
+    too.)
+- **Shape-rule scope** (edit 4): the shape reading is reported only under BEYOND ROUTING or INDETERMINATE; under
+  ROUTING-REDUCIBLE the excess is noise and no shape is read.
+- **Power of the shape readout on B** (confirmation pass): B's EFL-K2 movable mass (3.8%) exceeds the controls' (1–3%),
+  where EFL-K2 MI reached p ≤ 0.036 in 6 of 6 class chains and the "order-like" arm was reached by no non-order plant
+  (0 of 14); the "clustering-like" arm labelled all 3 line-latent plants correctly. Power holds at class-chain strength
+  (D about 0.02–0.03); below τ, or with order and clustering mixed, "unresolved" is the likely wording.
 
 ## Declared prior knowledge and exposure
 - **B's facts relied on:** C2061/C2067 (λ2 0.206, λ3 0.134 on the PHASE_733 population; shuffle floor 0.118; 5-gram
@@ -155,13 +170,14 @@ class or token chain fitted to B's adjacent pairs (35 runs).
   aggregate 49 × 49 MI.)
 
 **BEYOND ROUTING.** B has neighbouring-class dependence beyond two-unit ending routing and folio × line-type
-composition, at the level of a class Markov chain fitted to B. No edge-only chain reads this way (C1).
+composition, with D ≥ τ, midway between the edge chains and the B-fitted class chains. No edge-only chain reads this
+way (C1); the audit's line-latent plant, with no transitions at all, reached D 0.016.
 - **The carrier is unresolved by the call:** order (a transition structure) or sub-folio clustering (a line-level
   latent) both produce it. The wording rule on EFL-K2 and lag-2 restricts the wording only.
 - It ties to C2023's statistic, not to C2061's; it does not by itself say the eigenstructure survives.
 - Any mechanism reading is echo-class.
 
-**INDETERMINATE.** Phase record; C2061/C2067 stay as they are with a note.
+**INDETERMINATE.** Phase record; the λ2 rule for C2061/C2067 applies as above; the shape reading is reported.
 
 ## Registry consequences
 | Outcome | Consequence |

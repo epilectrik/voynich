@@ -104,9 +104,10 @@ def shape_reading(d1, d2, eflk2_p):
 def lambda2_rule(p):
     """Pre-registered rule for C2061/C2067 (lock-audit edit 1), on lambda2 under EF-K2 at alpha 0.05."""
     if p > 0.05:
-        return ('lambda2 not shown beyond boundary rules: annotate C2061/C2067; their "sequence beyond boundary rules" '
-                'reading moves to Tier 3 (the measurement against the 5-gram stands)')
-    return 'lambda2 significant at 0.05: no demotion of C2061/C2067; record agreement/disagreement with the MI call'
+        return ('lambda2 NOT SHOWN beyond boundary rules (power ~0.68 at alpha 0.05): annotate C2061/C2067; their '
+                '"sequence beyond boundary rules" reading moves to Tier 3 (the measurement against the 5-gram stands)')
+    return ('lambda2 significant at 0.05: no demotion of C2061/C2067; not evidence of order (line-latent plants reach '
+            'p 0.003); C2061 reading stays unresolved unless the shape is order-like')
 
 
 def analyse(lines, sk, tag, X):
@@ -138,8 +139,10 @@ def analyse(lines, sk, tag, X):
     log(f'[{tag}] lag-2 (descriptive): MI D {mi2["D"]:+.4f} p {mi2["p"]:.4f}; lambda2 D {g2["D"]:+.4f} p {g2["p"]:.4f}')
     log(f'[{tag}] within-line EFL-K2 MI (descriptive): null {eflk2["null_mean"]:.4f}, D {eflk2["D"]:+.4f}, p {eflk2["p"]:.4f}'
         f' | EFL lambda2: D {efl["D"]:+.4f}, p {efl["p"]:.4f}')
-    log(f'[{tag}] shape (wording only): {shape_reading(mi["D"], mi2["D"], eflk2["p"])}')
-    return {'tag': tag, 'res': res, 'call': verdict, 'shape': shape_reading(mi['D'], mi2['D'], eflk2['p']),
+    shape = (shape_reading(mi['D'], mi2['D'], eflk2['p']) if verdict != 'ROUTING-REDUCIBLE'
+             else 'not read (ROUTING-REDUCIBLE: the excess is noise)')
+    log(f'[{tag}] shape (wording only): {shape}')
+    return {'tag': tag, 'res': res, 'call': verdict, 'shape': shape,
             'lambda2_rule': lambda2_rule(l2['p']), 'thresholds': TH, 'R': R_B, 'seed': SEED}
 
 

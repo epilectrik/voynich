@@ -116,7 +116,7 @@
  },
  "call": "BEYOND ROUTING",
  "shape": "order-like (lag-2 excess < half of lag-1; within-line EFL-K2 MI significant)",
- "lambda2_rule": "lambda2 significant at 0.05: no demotion of C2061/C2067; record agreement/disagreement with the MI call",
+ "lambda2_rule": "lambda2 significant at 0.05: no demotion of C2061/C2067; not evidence of order (line-latent plants reach p 0.003); C2061 reading stays unresolved unless the shape is order-like",
  "thresholds": {
   "statistic": "MI under EF-K2",
   "NEG": 0.0037996994407423212,

@@ -115,8 +115,8 @@
   }
  },
  "call": "ROUTING-REDUCIBLE",
- "shape": "unresolved",
- "lambda2_rule": "lambda2 not shown beyond boundary rules: annotate C2061/C2067; their \"sequence beyond boundary rules\" reading moves to Tier 3 (the measurement against the 5-gram stands)",
+ "shape": "not read (ROUTING-REDUCIBLE: the excess is noise)",
+ "lambda2_rule": "lambda2 NOT SHOWN beyond boundary rules (power ~0.68 at alpha 0.05): annotate C2061/C2067; their \"sequence beyond boundary rules\" reading moves to Tier 3 (the measurement against the 5-gram stands)",
  "thresholds": {
   "statistic": "MI under EF-K2",
   "NEG": 0.0037996994407423212,
