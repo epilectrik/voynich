@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.35, 2026-09-30)
+# Research Agenda — open questions and the tests that would move them (v7.36, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -101,6 +101,12 @@ text made to look meaningful? And, if it carries content, what content?
    - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
      regions or position-resolved features, not only whole folios, and that tests multi-step copying and
      writing-session drift as rival sources.
+   - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
+     kind).
+     - Next is PHASE_773: the figures' attributes (blind-coded) against medieval per-degree tables (al-Qabisi,
+       Bonatti, Leopold, al-Biruni, Lilly).
+     - The pairings were fixed before any data: pitted degrees with tubs, light degrees with stars, fortune degrees
+       with crowns.
    - Labels (PHASE_771, C2088):
      - label o-words fit no mixture of ordinary o-words, dropped-q qo-words and "o + word";
      - next, pre-register AZC ring text as the reference for AZC labels (s7 fit ordinary o-words alone), and test the

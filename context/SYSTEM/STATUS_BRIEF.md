@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.35, 2026-09-30)
+# Status Brief — what currently stands (v7.36, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -73,6 +73,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Descriptively, articulated starts follow a break at 57–69% of the line-start rate.
   - Line-final *-m* follows the line end, not the break.
   - No mechanism is distinguished.
+- **Zodiac labels are not a repeated per-sign set** (C2090, PHASE_772; ZL; partly unblinded).
+  - Most labels occur in no other sign: 77% at N1, 65% at N2. A 1–30 set repeated in every sign (degree or day
+    numbers) is excluded under the modelled spelling variation.
+  - Repeats lean within-sign, but PALETTE was not called.
+  - Partial inventories, affixed or running counts, names and descriptions remain.
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
   a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it

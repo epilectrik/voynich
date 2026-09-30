@@ -149,7 +149,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2089.
+the highest ID present is C2090.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -241,7 +241,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-30 04:04
+**Generated:** 2026-09-30 10:31
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -263,7 +263,7 @@ tables are quarantined — do not use for structural answers.
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.35, 2026-09-30)
+# Status Brief — what currently stands (v7.36, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -338,6 +338,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Descriptively, articulated starts follow a break at 57–69% of the line-start rate.
   - Line-final *-m* follows the line end, not the break.
   - No mechanism is distinguished.
+- **Zodiac labels are not a repeated per-sign set** (C2090, PHASE_772; ZL; partly unblinded).
+  - Most labels occur in no other sign: 77% at N1, 65% at N2. A 1–30 set repeated in every sign (degree or day
+    numbers) is excluded under the modelled spelling variation.
+  - Repeats lean within-sign, but PALETTE was not called.
+  - Partial inventories, affixed or running counts, names and descriptions remain.
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
 - **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
   a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it
@@ -417,7 +422,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.35 | **Status:** characterization ACTIVE | **Constraints:** 1,896 live in the generated table (T0 2, T1 38, T2 1,686, T3 166, T4 4) | **Phases:** 771 | **Date:** 2026-09-30
+**Version:** 7.36 | **Status:** characterization ACTIVE | **Constraints:** 1,897 live in the generated table (T0 2, T1 38, T2 1,687, T3 166, T4 4) | **Phases:** 772 | **Date:** 2026-09-30
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -550,7 +555,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.35) | 1,896 (T0 2, T1 38, T2 1,686, T3 166, T4 4) |
+| Live constraints (generated table, v7.36) | 1,897 (T0 2, T1 38, T2 1,687, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -592,7 +597,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.35, 2026-09-30)
+# Research Agenda — open questions and the tests that would move them (v7.36, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -695,6 +700,12 @@ text made to look meaningful? And, if it carries content, what content?
    - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
      regions or position-resolved features, not only whole folios, and that tests multi-step copying and
      writing-session drift as rival sources.
+   - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
+     kind).
+     - Next is PHASE_773: the figures' attributes (blind-coded) against medieval per-degree tables (al-Qabisi,
+       Bonatti, Leopold, al-Biruni, Lilly).
+     - The pairings were fixed before any data: pitted degrees with tubs, light degrees with stars, fortune degrees
+       with crowns.
    - Labels (PHASE_771, C2088):
      - label o-words fit no mixture of ordinary o-words, dropped-q qo-words and "o + word";
      - next, pre-register AZC ring text as the reference for AZC labels (s7 fit ordinary o-words alone), and test the
@@ -3042,6 +3053,7 @@ C2086	**[PHASE_770 (2026-09-29): stands against the preceding-glyph context mode
 C2087	**The e-dial's folio component survives removal of the preceding token's two-glyph ending; its shape over the page, its sharing with other spelling choices and its continuity across page turns are unresolved under the pre-registered rules; k/t as HEAD has its own folio component (PHASE_770; measurement; pre-registered, three expert reviews, lean-expert lock audit, calibrated on controls).** Arm 0: with the within-folio additive effect of the preceding token's last two collapsed glyph units removed (an e-run, a minim group, ch/sh and any gallows each count as one unit), S3c is 0.306 on H (unadjusted 0.298, below C2086's 0.323 because the analysis set adds f76r, assigns f115r to hand 3 and collapses dial classes in the legibility covariate) and 0.299 on ZL (0.302), p 0.0005 each, ratio 1.03 / 0.99; calibrated power 0.98 / 0.96; context-only plants give S3c of about 0. C2086 stands against the preceding-glyph context model (additive, within folio): the rival formed by boundary coupling (C1212, C1563, C2082) with folio vocabulary (C531). The following token is not controlled (run length changes the ending, C1225). Arm A: UNRESOLVED; the pre-registered fresh-draw gate failed (a 75% constant-plus-walk mixture was called static in 17.3% of 104 replicates, limit 15%; marginal near B's point). Descriptive measurements, not a shape verdict: the five static models and the first-and-last-paragraph and linear-trend plants fit poorly (p <= 0.0024, at the resolution floor); mean quarter covariance 4.9 / 3.8 / 1.5 x1e-3 at quarter distances 1-3 against a diagonal of 6.3; S3far does not recover toward S3c when page-edge lines are removed; the fullness-tercile analysis classifies the same way; consistent with ordinary scribal drift, floor untested. Arm B (CS: sh vs ch; KTH: t vs k as HEAD atom; MIN: minim count): no dial met the SHARED criterion (family-wise critical |z| 3.2 on a joint circular-shift null, with the ZL leg): E-CS X -0.17 on H (z -3.03), ZL -0.08 (p 0.10); E-KTH +0.13 (z 2.03). B2 power at rho 0.7 is 0.16-0.49, so sharing is not excluded. Own folio components at fixed word frame: KTH yes (S3c 0.25 H, p 0.0015; 0.22 ZL), as expected from its REGIME axis (C1715, C1920, C2070); CS not established on H (0.16, p 0.023; ZL 0.22, p 0.0025); OKOT (ok vs ot) and BENCH not detected, so C1182's sister-choice folio share is not shown to sit above the word. MIN results withheld pending the blind scan check (PHASE_770 section 14). No dial's paragraph-specific component detected at fixed word frame (C1811 / C1812 are composition results). Descriptive: E's residual falls with line fullness at fixed within-line position (p 0.0005; CS, KTH, MIN not detected), which does not identify space management as the source; the page-turn continuity criteria are not met (K -0.22 H, -0.20 ZL; uninformative, power 0.06-0.12); sheet-face and parchment-side structure not detected; D0: e-dial component not detected in Currier A (1,130 runs; a different hand and sections). No reading: heat level, REGIME and fire degree stay Tier 3 (e-content loads on PC2, a REGIME-defining axis). Methods: the random within-stratum pairing null is anti-conservative under the position-dependent calibration models (size 0.026 at alpha 0.01); the per-transition sign-flip null for page turns fails size.	2	B, e-run, dial, folio, shape, sharing, page-turn, context, PHASE_770, C2086
 C2088	**Label o-words fit no mixture of three length-matched paragraph-text references, and "o added to an ordinary word" gets no weight (PHASE_771 Arm L; measurement; pre-registered, lean-expert lock audit and confirmation pass, calibrated on controls; MIXED / UNRESOLVED, fragile).** ZL 3b, 608 label o-words (initial o, not qo, at least 2 glyph units; 53 folios: 408 astro/zodiac/cosmo, 126 pharma/herbal, 72 bio). Grouped EM over length strata 2-7+ against length-matched references (the unit after qo in qo-words of L+1 units; after o in o-words of L units; the first unit of words of L-1 units): w_o 0.81 (95% CI 0.575-1.00), w_qo 0.19 (0.00-0.42), w_add 0.00 (0.00-0.02). Verdict MIXED / UNRESOLVED [no mixture of the three fits: p 0.0005, the floor at 2,000 draws] [fragile: ordinary o-words, from the bio labels alone, w_o 0.999]; power at the labels' own clustering 1.00, so informative; not evidence of a within-label mixture (the fit fails). w_add <= 0.03 in every analysis; the qo weight depends on the reference weighting (type-weighted 0.59, CI 0.33-0.82; line-initial references 0.72, report-only). Departures from the best fit (folio bootstrap): fewer o-l (-60; -102 to -34) and o-k (-38; -67 to -15); p/f +34 (-1 to +96; 32 of 77 on the Rosettes foldout); t +35 (+2 to +71, marginal). Against AZC ring/circle text (report-only) the AZC labels fit ordinary o-words alone, so the zodiac-led departure may be an AZC property rather than a label property (C1502, C1559). No reading: why labels favour o (C525) and whether labels name anything are not tested.	2	labels, A, B, AZC, o-prefix, length-matched, ZL, PHASE_771, C525
 C2089	**Words beside a drawing break inside a line are unresolved between mid-line and line-edge profiles; descriptively, line-final -m follows the line end, not the break (PHASE_771 Arm E; measurement; pre-registered, lean-expert lock audit and confirmation pass, calibrated on controls).** ZL 3b, 725 drawing breaks (<->) inside Currier A and B paragraph lines (A 512 on 79 folios; B 213 on 27). First/last glyph-unit edge models fitted on unbroken lines (paragraph-first starts and paragraph-last ends excluded; cross-fitted by folio halves). Edge index I (0 = position-matched mid-line words, 1 = continuation-line edges): A start 0.37 (0.18-0.56), A end 0.74 (0.51-0.99), B start 0.51 (0.30-0.70), all UNRESOLVED; B end 0.20 (0.08-0.35), descriptive only (calibrated power 0.65); arm level: start UNRESOLVED, end no statement. No interval meets a pre-registered bar; five sensitivity analyses agree. Descriptive: articulated starts after a break A 0.090 (0.065-0.117) and B 0.113 (0.070-0.147), against continuation-line starts 0.159/0.164 and mid-line words 0.030/0.023 (57% and 69% of the line-start rate); -m before a break A 12/512 (matched mid-line expectation 9.4) and B 5/213 (1.4), against 0.104/0.205 at line ends; bare aiin follows a break 3 (A) and 2 (B) times, at or below mid-line expectations (2 may be words cut by the drawing). No mechanism distinguished: <-> marks a gap in the writing surface, and text written before the drawing would also predict edge-free break words.	2	A, B, line, drawing break, line edge, articulator, -m, aiin, ZL, PHASE_771, C1417, C1909, C1002, C1486
+C2090	**Zodiac nymph labels are not a full per-sign inventory (PHASE_772; measurement; pre-registered, lock-audited, calibrated on Currier A forms; partly unblinded).** ZL 3b, 290 labels on 10 signs. NO INVENTORY (lam* = 8, the top of the grid): the share of labels recurring in another sign (R) is 0.23 at N1 (e/i runs collapsed), 0.35 at N2 (maximal collapse) and 0.43 word-level, against the full-inventory 1st percentile of 0.64 at lam = 8. That bound allows 77% of copies visibly changed at N2, plus any e-run, minim, ch/sh or gallows variation. W (within-sign share of duplicate pairs) 0.20 against 0.097 exchangeable (N1, p 0.0109): PALETTE not called; all 13 within-sign pairs at N1 fall on the Gemini-Sagittarius pages. Not excluded: quarter inventories, or half inventories with a palette-like remainder (lam = 1); affixed, two-word or medially varied numerals; running counts; transcription error. Random Currier A words also give NO INVENTORY. The R channel (and partly W) was exposed before the lock by a smoke calibration built from the real labels (disclosed). No reading.	2	AZC, zodiac, labels, inventory, negative_knowledge, partly_unblinded, ZL, PHASE_772, C760, C2068, C2071
 
 ---
 

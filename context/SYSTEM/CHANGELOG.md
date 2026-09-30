@@ -4,6 +4,37 @@
 
 ---
 
+## Version 7.36 (2026-09-30) — PHASE_772: are the zodiac labels a repeated per-sign set? (C2090)
+
+### Summary
+**Question.** Do the 290 ZL zodiac nymph labels (10 signs, about 29 each) form a shared per-sign inventory, as degree or
+day numerals would? That is a numeral-type crib.
+
+**Process.** Pre-registered and audited by the lean-expert (lockable with edits, then a confirmation pass with four
+more), calibrated on Currier A base forms, and locked at `phase772-lock`.
+
+**Verdict: NO INVENTORY** (bounded, λ* = 8). A full per-sign set is excluded, even with 77% of copies visibly changed.
+- R = 0.23 (N1) and 0.35 (N2) of labels recur in another sign, against 0.64 or more under any calibrated full
+  inventory.
+- W = 0.20 against 0.097 exchangeable. PALETTE was not called (N1 p 0.0109).
+- There is no adjacency pattern.
+
+**Partly unblinded.** An early smoke calibration built from the real labels exposed the R channel before the lock. This
+is disclosed in the pre-registration and carried on the row.
+
+**Consequence.** The zodiac labels are not a count restarting in each sign. The next zodiac anchor is external: the
+figures against the medieval degree tables (PHASE_773, design intent committed before any data).
+
+### Methods findings
+- **A calibration model built from the test data leaks the outcome.** A palette model drawn from the real labels made
+  the smoke calibration a readout of R. Build simulation models from out-of-sample material (here Currier A words).
+
+### Registry
+- C2090 is new (Tier 2, measurement, partly unblinded).
+- Live: 1,897 (T0 2, T1 38, T2 1,687, T3 166, T4 4); 772 phases.
+
+---
+
 ## Version 7.35 (2026-09-30) — PHASE_771: labels' initial o; line-edge forms at drawing breaks (C2088, C2089)
 
 ### Summary
