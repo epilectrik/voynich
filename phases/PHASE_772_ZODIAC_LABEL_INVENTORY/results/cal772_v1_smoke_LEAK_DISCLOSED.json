@@ -1,0 +1,191 @@
+{
+ "n_labels": 290,
+ "labels_per_sign": {
+  "Pisces": 28,
+  "Aries": 30,
+  "Taurus": 30,
+  "Gemini": 29,
+  "Cancer": 28,
+  "Leo": 29,
+  "Virgo": 30,
+  "Libra": 27,
+  "Scorpius": 30,
+  "Sagittarius": 29
+ },
+ "labels_per_sign_ring": {
+  "Aries|1": 20,
+  "Aries|2": 10,
+  "Cancer|1": 11,
+  "Cancer|2": 10,
+  "Cancer|3": 7,
+  "Gemini|0": 5,
+  "Gemini|1": 15,
+  "Gemini|2": 9,
+  "Leo|1": 17,
+  "Leo|2": 12,
+  "Libra|1": 17,
+  "Libra|2": 10,
+  "Pisces|1": 18,
+  "Pisces|2": 10,
+  "Sagittarius|0": 4,
+  "Sagittarius|1": 16,
+  "Sagittarius|2": 9,
+  "Scorpius|0": 4,
+  "Scorpius|1": 16,
+  "Scorpius|2": 10,
+  "Taurus|1": 20,
+  "Taurus|2": 10,
+  "Virgo|1": 18,
+  "Virgo|2": 12
+ },
+ "inventory": {
+  "0.0": {
+   "N0": {
+    "R_q01": 1.0,
+    "R_q05": 1.0,
+    "R_median": 1.0,
+    "W_median": 0.007,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N1": {
+    "R_q01": 1.0,
+    "R_q05": 1.0,
+    "R_median": 1.0,
+    "W_median": 0.007,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N2": {
+    "R_q01": 1.0,
+    "R_q05": 1.0,
+    "R_median": 1.0,
+    "W_median": 0.007,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   }
+  },
+  "0.5": {
+   "N0": {
+    "R_q01": 0.834,
+    "R_q05": 0.834,
+    "R_median": 0.848,
+    "W_median": 0.016,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N1": {
+    "R_q01": 0.849,
+    "R_q05": 0.852,
+    "R_median": 0.876,
+    "W_median": 0.017,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N2": {
+    "R_q01": 0.894,
+    "R_q05": 0.899,
+    "R_median": 0.931,
+    "W_median": 0.029,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   }
+  },
+  "1.0": {
+   "N0": {
+    "R_q01": 0.718,
+    "R_q05": 0.723,
+    "R_median": 0.752,
+    "W_median": 0.008,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N1": {
+    "R_q01": 0.733,
+    "R_q05": 0.741,
+    "R_median": 0.817,
+    "W_median": 0.008,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N2": {
+    "R_q01": 0.839,
+    "R_q05": 0.846,
+    "R_median": 0.886,
+    "W_median": 0.018,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   }
+  },
+  "2.0": {
+   "N0": {
+    "R_q01": 0.557,
+    "R_q05": 0.562,
+    "R_median": 0.59,
+    "W_median": 0.0,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N1": {
+    "R_q01": 0.631,
+    "R_q05": 0.633,
+    "R_median": 0.659,
+    "W_median": 0.0,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N2": {
+    "R_q01": 0.8,
+    "R_q05": 0.802,
+    "R_median": 0.821,
+    "W_median": 0.002,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   }
+  },
+  "3.0": {
+   "N0": {
+    "R_q01": 0.416,
+    "R_q05": 0.424,
+    "R_median": 0.479,
+    "W_median": 0.005,
+    "W_exp": 0.097,
+    "power_W_low_p01": 0.8
+   },
+   "N1": {
+    "R_q01": 0.494,
+    "R_q05": 0.5,
+    "R_median": 0.624,
+    "W_median": 0.02,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   },
+   "N2": {
+    "R_q01": 0.746,
+    "R_q05": 0.748,
+    "R_median": 0.834,
+    "W_median": 0.027,
+    "W_exp": 0.097,
+    "power_W_low_p01": 1.0
+   }
+  }
+ },
+ "palette": {
+  "N0": {
+   "power_W_high_p01": 1.0,
+   "W_median": 0.919,
+   "R_median": 0.066
+  },
+  "N1": {
+   "power_W_high_p01": 1.0,
+   "W_median": 0.885,
+   "R_median": 0.097
+  },
+  "N2": {
+   "power_W_high_p01": 1.0,
+   "W_median": 0.845,
+   "R_median": 0.138
+  }
+ },
+ "runtime_s": 9.7
+}

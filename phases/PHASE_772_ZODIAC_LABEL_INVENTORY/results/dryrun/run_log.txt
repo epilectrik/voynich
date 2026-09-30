@@ -1,0 +1,12 @@
+DRY RUN on decoy labels
+N0 (descriptive): R 0.3138 | W 0.1013 (exchangeable 0.0970; null mean 0.0975) | p_low 0.6427 p_high 0.5097 (min attainable 0.0004) | types 232 | D_w 8 D_a 71
+N1: R 0.3483 | W 0.0930 (exchangeable 0.0970; null mean 0.0967) | p_low 0.5565 p_high 0.5937 (min attainable 0.0002) | types 227 | D_w 8 D_a 78
+N2: R 0.4862 | W 0.0843 (exchangeable 0.0970; null mean 0.0968) | p_low 0.3512 p_high 0.7497 (min attainable 0.0013) | types 196 | D_w 14 D_a 152
+conservative word-level R (N2): 0.4862
+VERDICT: NO INVENTORY (bounded, lam* = 8.0) | lam* = 8.0 | visibly changed copies at lam*: 0.7686344827586207
+  W_by_page_N1: {"R": 0.3552, "D_w": 7, "D_a": 79, "W": 0.0814, "W_exp": 0.0863, "n_types": 227, "p_low": 0.5432, "p_high": 0.6047, "W_null_mean": 0.0859, "p_min": 0.0025}
+  without_top_rows_N1: {"R": 0.3502, "D_w": 8, "D_a": 72, "W": 0.1, "W_exp": 0.0973, "n_types": 217, "p_low": 0.6477, "p_high": 0.4943, "W_null_mean": 0.0962, "p_min": 0.001}
+  without_top_rows_N2: {"R": 0.4874, "D_w": 14, "D_a": 143, "W": 0.0892, "W_exp": 0.0973, "n_types": 187, "p_low": 0.4413, "p_high": 0.6637, "W_null_mean": 0.0964, "p_min": 0.0025}
+  N2_first_unit_stripped: {"R": 0.6138, "D_w": 33, "D_a": 305, "W": 0.0976, "W_exp": 0.097, "n_types": 160, "p_low": 0.5812, "p_high": 0.4913, "W_null_mean": 0.0969, "p_min": 0.001}
+  adjacency_N1: {"effect_obs_minus_null_mean": -0.0053, "obs": -0.0019, "p_one_sided_high": 0.6642, "n_arcs": 28}
+done 79.7 s
