@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.38, 2026-09-30)
+# Status Brief — what currently stands (v7.39, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -79,9 +79,15 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Repeats lean within-sign, but PALETTE was not called.
   - Partial inventories, affixed or running counts, names and descriptions remain.
 - **Occupancy:** 57.8% of folios end in their dominant macro-state (C074, measurement only).
-- **Sequence structure beyond Markov:** the class-transition eigenstructure λ2/λ3 (C2061, C2067), established against
-  a character 5-gram null. That null is window-blind (C2066), so the λ2/λ3 claim needs a re-check under N5 before it
-  is relied on.
+- **Class-level sequence reduces to the boundary rules** (C2094, PHASE_776). Fix each word's edges, the previous
+  word's two-unit ending and the page's composition, and the class-pair dependence left is +0.004 bits (at most about
+  0.009), below every class chain fitted to B (≥ +0.016). What carries the dependence beyond own edges is the ending
+  routing (C2082).
+  - The eigenstructure of C2061/C2067 is real against a character 5-gram but is **not shown** to be sequence beyond
+    the boundary rules: the routing-preserving null reproduces 97% of λ2's excess over the shuffle floor. That reading
+    is Tier 3; the measurements stand.
+  - With C2091 (no recurring 5-token phrase) and C2093 (rank-level neighbours independent within ending contexts), the
+    three searches for sequence in B all come back to the boundary rules.
 - **Physical layout:** the Aberdeen negative control shows the bifolium pipeline is SPECIFIC (PHASE_759). The
   Voynich bifolium contrast is reported but not registered.
 

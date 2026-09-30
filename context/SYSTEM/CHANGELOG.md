@@ -4,6 +4,46 @@
 
 ---
 
+## Version 7.39 (2026-09-30) — PHASE_776: the class-transition eigenstructure reduces to the boundary rules (C2094)
+
+### Summary
+**Question.** The procedural reading's last measured leg was the class-transition eigenstructure (C2061/C2067: λ2 and
+λ3 above a character 5-gram null). Is it anything beyond B's word-boundary rules (junction coupling C1212/C1563 and
+two-unit ending routing C2082) plus folio × line-type composition?
+
+**Process.**
+- v1 (λ2 under the plain edge-frame null) failed its certification: an edge-only chain read positive, because that
+  null fixes each slot's own edges but not C2082's routing.
+- v2 built the routing-preserving null EF-K2 and used the class-pair MI as primary (λ2 has half the power under it);
+  fresh-seed certification passed 10/10 and 10/10.
+- The lean-expert lock audit showed a line-level class latent with no transitions also reads positive, so the positive
+  wording was narrowed and C2061/C2067 got a separate pre-registered λ2 rule. Locked at `phase776-lock`.
+
+**Result: ROUTING-REDUCIBLE (C2094).** B's residual class-pair dependence beyond the boundary rules is +0.004 bits
+(p 0.062; at most about 0.009), below the weakest of 35 chains fitted to B's adjacent pairs (+0.016). Under plain EF
+the excess is +0.019: what carries B's class dependence beyond own edges is the two-unit ending routing.
+
+**C2061/C2067 annotated.** On this population EF-K2 reproduces 97% of λ2's excess over the shuffle floor (obs 0.2057,
+null 0.2032, floor 0.1225). Their "sequence beyond boundary rules" reading is Tier 3; the measurements against the
+5-gram stand.
+
+**Consequence.** Three ways of looking for sequence in B (C2091, C2093, C2094) come back to the boundary rules. The
+procedural reading has no measured sequence leg left.
+
+### Methods findings
+- **An exact null must fix every boundary rule the generators use.** Fixing own edges (EF) leaves C2082's routing in
+  play and lets an edge-only chain read positive; keying cells by the preceding ending (EF-K2) is exact for it.
+- **Under a strict null, prefer the omnibus statistic.** λ2 kept half its power under EF-K2; the scalar MI kept all of
+  it (z 9–13 on class chains).
+- **A positive class-pair dependence does not mean order.** A per-line class latent with no transitions produces it;
+  the shape needs a within-line readout (EFL-K2).
+
+### Registry
+- New Tier-2 row: C2094. C2061 and C2067 annotated (measurements stand; the sequence reading Tier 3).
+- Live: 1,901 (T0 2, T1 38, T2 1,691, T3 166, T4 4); 776 phases.
+
+---
+
 ## Version 7.38 (2026-09-30) — PHASE_775: is the word-boundary rule a cipher key? (rank decoding; C2093)
 
 ### Summary

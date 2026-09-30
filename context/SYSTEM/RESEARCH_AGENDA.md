@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.38, 2026-09-30)
+# Research Agenda — open questions and the tests that would move them (v7.39, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -76,11 +76,11 @@ text made to look meaningful? And, if it carries content, what content?
 
 ## Tier B — structure that would constrain what kind of content it is
 
-4. **Long-range sequence structure under the right null.**
-   - What: re-run the λ2/λ3 class-transition eigenstructure (C2061, C2067) on N5 samples, which preserve composition,
-     zones and boundary coupling.
-   - Resolves: whether anything program-like (structure beyond the next token) exists, or whether the sequence is
-     boundary coupling plus endings.
+4. **Long-range sequence structure under the right null.** Done: PHASE_776, C2094 — ROUTING-REDUCIBLE.
+   - The class-pair dependence and the λ2/λ3 eigenstructure reduce to junction coupling, two-unit ending routing and
+     folio × line-type composition (an exact null, EF-K2, replacing the N5 chain).
+   - Open: a within-line residual beyond two-unit routing (descriptives at nominal p < 0.05, uncorrected) as its own
+     pre-registered question; longer boundary keys; narrow token-level effects (C549, C2056).
 5. **Word-ending routing, characterised.**
    - What: which endings route to which next classes; whether this is one mechanism with C1212/C1563 (a two-glyph
      boundary context) or a separate one; whether it holds within scribes or quires.
@@ -158,7 +158,8 @@ text made to look meaningful? And, if it carries content, what content?
 
 ## What would change the working interpretation
 - **Toward "meaningless but systematic":** Tier A #1 or #2 reproduces B's discriminator profile.
-- **Toward "notation for procedures":** long-range, program-like structure beyond endings survives N5 (#4), *and* a
+- **Toward "notation for procedures":** (#4 is done and found nothing beyond the boundary rules, C2094) a new,
+  pre-registered sequence measurement beyond the boundary rules would be needed, *and* a
   prospective content anchor lands (#7).
 - **Toward "language or cipher of language":** a rival from #2 that encodes real text reproduces B's profile, or the
   unit re-analysis (#3) finds word-like units with natural-language statistics.

@@ -2,7 +2,7 @@
 
 **Generated:** 2026-09-30 by `scripts/registry_integrity_check.py` (regenerate after every registry change).
 
-**Generated table:** LIVE (Tier 0/2) 1673, TIER1 38, DEMOTED (Tier 3/4) 88, SPECULATIVE (Tier 3/4 from the start, not flagged) 82; registered numbers in INDEX.md: 1900; dead (registered, not in table): 19.
+**Generated table:** LIVE (Tier 0/2) 1674, TIER1 38, DEMOTED (Tier 3/4) 88, SPECULATIVE (Tier 3/4 from the start, not flagged) 82; registered numbers in INDEX.md: 1901; dead (registered, not in table): 19.
 
 **Citations of non-live constraints in living docs:** 2215 (9 without a nearby annotation).  **Unannotated closure-banner lines:** 0.
 
