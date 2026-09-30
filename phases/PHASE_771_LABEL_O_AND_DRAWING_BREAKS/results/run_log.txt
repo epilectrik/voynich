@@ -1,0 +1,42 @@
+lock verified before loading: phase771-lock
+Arm L primary: {"n_words": 608, "n_folios": 53, "weights": {"qo": 0.189, "o": 0.8089, "init": 0.0021}, "ci95": {"qo": [0.0002, 0.4161], "o": [0.5749, 0.9992], "init": [0.0, 0.0225]}, "call": "MIXED / UNRESOLVED"}
+  fit check p 0.0005 | alpha labels 9.78 | power at label clustering {'qo': 1.0, 'o': 1.0, 'init': 1.0}
+  s1_language_matched: MIXED / UNRESOLVED {'qo': 0.1681, 'o': 0.8319, 'init': 0.0} (min ref L>=4: 34, feeds fragile: False)
+  s2_line_initial_refs_no_par_first: MIXED / UNRESOLVED {'qo': 0.7152, 'o': 0.2848, 'init': 0.0} (min ref L>=4: 15, feeds fragile: False)
+  s3_merged_spaces: MIXED / UNRESOLVED {'qo': 0.2073, 'o': 0.7927, 'init': 0.0} (min ref L>=4: 281, feeds fragile: True)
+  s4_h_track: MIXED / UNRESOLVED {'qo': 0.3386, 'o': 0.6347, 'init': 0.0267} (min ref L>=4: 183, feeds fragile: True)
+  s6_init_without_o_q: MIXED / UNRESOLVED {'qo': 0.1991, 'o': 0.7735, 'init': 0.0274} (min ref L>=4: 183, feeds fragile: True)
+  s7_azc_labels_vs_azc_ring_text: ordinary o-words {'qo': 0.1621, 'o': 0.8379, 'init': 0.0} (min ref L>=4: 17, feeds fragile: False)
+  s8_type_weighted_refs: MIXED / UNRESOLVED {'qo': 0.5867, 'o': 0.4133, 'init': 0.0} (min ref L>=4: 123, feeds fragile: True)
+  s5 astro_zodiac_cosmo: n=408 folios=22 MIXED / UNRESOLVED {'qo': 0.3389, 'o': 0.6514, 'init': 0.0097}
+  s5 bio: n=72 folios=11 ordinary o-words {'qo': 0.0008, 'o': 0.9992, 'init': 0.0}
+  s5 pharma_herbal: n=126 folios=18 MIXED / UNRESOLVED {'qo': 0.0, 'o': 0.99, 'init': 0.01}
+  Arm L VERDICT: MIXED / UNRESOLVED [no mixture of the three fits] [fragile: ordinary o-words]
+  stem families: {"labels": {"n_label_words": 608, "n_with_family": 404, "pooled_share_qoX_oX_X": [0.387, 0.366, 0.247], "mean_share_qoX_oX_X": [0.264, 0.415, 0.322]}, "text_o_words_matched": {"n_with_family": 404, "pooled_share_qoX_oX_X": [0.309, 0.383, 0.307], "mean_share_qoX_oX_X": [0.232, 0.41, 0.358]}}
+Arm E A_start: n=512 folios=79 I=0.365 CI=[0.177, 0.556] -> UNRESOLVED
+    t1_no_single_unit_words: I=0.329 CI=[0.129, 0.526] UNRESOLVED (n=451)
+    t2_merged_spaces: I=0.357 CI=[0.168, 0.553] UNRESOLVED (n=511)
+    t3_relative_position: I=0.405 CI=[0.235, 0.586] UNRESOLVED (n=512)
+    t4_single_break_lines: I=0.378 CI=[0.171, 0.601] UNRESOLVED (n=355)
+    t5_no_cut_word_candidates: I=0.408 CI=[0.215, 0.598] UNRESOLVED (n=494)
+Arm E A_end: n=512 folios=79 I=0.738 CI=[0.513, 0.993] -> UNRESOLVED
+    t1_no_single_unit_words: I=0.677 CI=[0.455, 0.951] UNRESOLVED (n=451)
+    t2_merged_spaces: I=0.76 CI=[0.525, 1.056] UNRESOLVED (n=511)
+    t3_relative_position: I=0.719 CI=[0.506, 1.006] UNRESOLVED (n=512)
+    t4_single_break_lines: I=0.772 CI=[0.528, 1.058] UNRESOLVED (n=355)
+    t5_no_cut_word_candidates: I=0.763 CI=[0.53, 1.037] UNRESOLVED (n=494)
+Arm E B_start: n=213 folios=27 I=0.512 CI=[0.303, 0.703] -> UNRESOLVED
+    t1_no_single_unit_words: I=0.508 CI=[0.294, 0.714] UNRESOLVED (n=200)
+    t2_merged_spaces: I=0.494 CI=[0.293, 0.682] UNRESOLVED (n=212)
+    t3_relative_position: I=0.511 CI=[0.321, 0.715] UNRESOLVED (n=213)
+    t4_single_break_lines: I=0.551 CI=[0.335, 0.765] UNRESOLVED (n=147)
+    t5_no_cut_word_candidates: I=0.522 CI=[0.332, 0.712] UNRESOLVED (n=206)
+Arm E B_end: n=213 folios=27 I=0.197 CI=[0.082, 0.348] -> descriptive (UNRESOLVED)
+    t1_no_single_unit_words: I=0.174 CI=[0.067, 0.314] E-line (n=200)
+    t2_merged_spaces: I=0.238 CI=[0.101, 0.397] UNRESOLVED (n=212)
+    t3_relative_position: I=0.196 CI=[0.082, 0.348] UNRESOLVED (n=213)
+    t4_single_break_lines: I=0.205 CI=[0.043, 0.4] UNRESOLVED (n=147)
+    t5_no_cut_word_candidates: I=0.184 CI=[0.07, 0.331] E-line (n=206)
+  Arm E arm-level: {'start': 'UNRESOLVED', 'end': 'no arm-level statement (languages differ or a cell is descriptive)'}
+  descriptive: {"A": {"articulator_rate": {"continuation_line_initial": 0.1587, "mid": 0.03, "post_break": 0.0898}, "bare_aiin_count": {"post_break": 3, "continuation_line_initial": 0, "mid_rate": 0.0101}, "m_final_rate": {"continuation_line_final": 0.1039, "mid": 0.019, "pre_break": 0.0234}}, "B": {"articulator_rate": {"continuation_line_initial": 0.1639, "mid": 0.0225, "post_break": 0.1127}, "bare_aiin_count": {"post_break": 2, "continuation_line_initial": 0, "mid_rate": 0.0192}, "m_final_rate": {"continuation_line_final": 0.205, "mid": 0.005, "pre_break": 0.0235}}}
+done 1111.1 s
