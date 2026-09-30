@@ -1,0 +1,1063 @@
+{
+ "tag": "B",
+ "null_means": {
+  "TOK5_null_mean": 0.036,
+  "MID5_null_mean": 56.145,
+  "calibration_ranges": {
+   "TOK5_null_no_message_102_runs": [
+    0.0,
+    0.13
+   ],
+   "MID5_null_B_like_corpus_wide": [
+    14.6,
+    27.2
+   ],
+   "MID5_null_section_fitted": [
+    31.4,
+    44.7
+   ]
+  }
+ },
+ "T": {
+  "obs": 0,
+  "null_mean": 0.036,
+  "null_sd": 0.26603528858926734,
+  "D5": -0.036,
+  "p": 1.0,
+  "call": "NONE"
+ },
+ "M": {
+  "obs": 85,
+  "null_mean": 56.145,
+  "null_sd": 11.907802936342657,
+  "X5": 1.5049435646163267,
+  "p": 0.011988011988011988,
+  "call": "not PRESENT",
+  "v2_range_descriptive": "at or below the no-message ceiling (descriptive)"
+ },
+ "verdict": "summary: T NONE, M not PRESENT",
+ "thresholds": {
+  "NEG_T": 3.966666666666667,
+  "POS_T": 11.6,
+  "tau_T_v1": 7.783333333333333,
+  "NONE_T_lt": 4.5,
+  "tau_T": 7.5,
+  "NEG_M": 2.823416812888818,
+  "POS_M": 20.463777928232908,
+  "tau_M": 7.601169295430532,
+  "n_negatives": 53,
+  "n_twins": 6,
+  "n_positives": 34
+ },
+ "descriptives": {
+  "TOK_RPT3": {
+   "obs": 181,
+   "null_mean": 109.53,
+   "X": 1.647,
+   "D": 71.47,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPTi3": {
+   "obs": 151,
+   "null_mean": 89.798,
+   "X": 1.674,
+   "D": 61.202,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPTx3": {
+   "obs": 165,
+   "null_mean": 102.454,
+   "X": 1.605,
+   "D": 62.546,
+   "p": 0.000999000999000999
+  },
+  "TOK_DIST3": {
+   "obs": 83,
+   "null_mean": 52.511,
+   "X": 1.57,
+   "D": 30.489,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPT3_r20": {
+   "obs": 22,
+   "null_mean": 15.168,
+   "X": 1.423,
+   "D": 6.832,
+   "p": 0.13386613386613386
+  },
+  "TOK_RPT3_r50": {
+   "obs": 6,
+   "null_mean": 3.209,
+   "X": 1.663,
+   "D": 2.791,
+   "p": 0.21678321678321677
+  },
+  "TOK_RPT4": {
+   "obs": 4,
+   "null_mean": 1.255,
+   "X": 2.217,
+   "D": 2.745,
+   "p": 0.13086913086913088
+  },
+  "TOK_RPTi4": {
+   "obs": 3,
+   "null_mean": 0.959,
+   "X": 2.042,
+   "D": 2.041,
+   "p": 0.10789210789210789
+  },
+  "TOK_RPTx4": {
+   "obs": 4,
+   "null_mean": 1.083,
+   "X": 2.4,
+   "D": 2.917,
+   "p": 0.1008991008991009
+  },
+  "TOK_DIST4": {
+   "obs": 2,
+   "null_mean": 0.625,
+   "X": 1.846,
+   "D": 1.375,
+   "p": 0.12987012987012986
+  },
+  "TOK_RPT4_r20": {
+   "obs": 0,
+   "null_mean": 0.116,
+   "X": 0.896,
+   "D": -0.116,
+   "p": 1.0
+  },
+  "TOK_RPT4_r50": {
+   "obs": 0,
+   "null_mean": 0.018,
+   "X": 0.982,
+   "D": -0.018,
+   "p": 1.0
+  },
+  "TOK_RPT5": {
+   "obs": 0,
+   "null_mean": 0.036,
+   "X": 0.965,
+   "D": -0.036,
+   "p": 1.0
+  },
+  "TOK_RPTi5": {
+   "obs": 0,
+   "null_mean": 0.023,
+   "X": 0.978,
+   "D": -0.023,
+   "p": 1.0
+  },
+  "TOK_RPTx5": {
+   "obs": 0,
+   "null_mean": 0.012,
+   "X": 0.988,
+   "D": -0.012,
+   "p": 1.0
+  },
+  "TOK_DIST5": {
+   "obs": 0,
+   "null_mean": 0.018,
+   "X": 0.982,
+   "D": -0.018,
+   "p": 1.0
+  },
+  "TOK_RPT5_r20": {
+   "obs": 0,
+   "null_mean": 0.002,
+   "X": 0.998,
+   "D": -0.002,
+   "p": 1.0
+  },
+  "TOK_RPT5_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPT6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPTi6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPTx6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_DIST6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPT6_r20": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPT6_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "MID_RPT3": {
+   "obs": 5799,
+   "null_mean": 5459.282,
+   "X": 1.062,
+   "D": 339.718,
+   "p": 0.000999000999000999
+  },
+  "MID_RPTi3": {
+   "obs": 4312,
+   "null_mean": 4092.557,
+   "X": 1.054,
+   "D": 219.443,
+   "p": 0.000999000999000999
+  },
+  "MID_RPTx3": {
+   "obs": 5720,
+   "null_mean": 5380.313,
+   "X": 1.063,
+   "D": 339.687,
+   "p": 0.000999000999000999
+  },
+  "MID_DIST3": {
+   "obs": 1682,
+   "null_mean": 1630.304,
+   "X": 1.032,
+   "D": 51.696,
+   "p": 0.02197802197802198
+  },
+  "MID_RPT3_r20": {
+   "obs": 54,
+   "null_mean": 48.814,
+   "X": 1.104,
+   "D": 5.186,
+   "p": 0.3116883116883117
+  },
+  "MID_RPT3_r50": {
+   "obs": 0,
+   "null_mean": 0.346,
+   "X": 0.743,
+   "D": -0.346,
+   "p": 1.0
+  },
+  "MID_RPT4": {
+   "obs": 1034,
+   "null_mean": 800.524,
+   "X": 1.291,
+   "D": 233.476,
+   "p": 0.000999000999000999
+  },
+  "MID_RPTi4": {
+   "obs": 745,
+   "null_mean": 571.988,
+   "X": 1.302,
+   "D": 173.012,
+   "p": 0.000999000999000999
+  },
+  "MID_RPTx4": {
+   "obs": 1002,
+   "null_mean": 771.883,
+   "X": 1.298,
+   "D": 230.117,
+   "p": 0.000999000999000999
+  },
+  "MID_DIST4": {
+   "obs": 431,
+   "null_mean": 336.789,
+   "X": 1.279,
+   "D": 94.211,
+   "p": 0.000999000999000999
+  },
+  "MID_RPT4_r20": {
+   "obs": 2,
+   "null_mean": 3.937,
+   "X": 0.608,
+   "D": -1.937,
+   "p": 0.8691308691308691
+  },
+  "MID_RPT4_r50": {
+   "obs": 0,
+   "null_mean": 0.008,
+   "X": 0.992,
+   "D": -0.008,
+   "p": 1.0
+  },
+  "MID_RPT5": {
+   "obs": 85,
+   "null_mean": 56.145,
+   "X": 1.505,
+   "D": 28.855,
+   "p": 0.011988011988011988
+  },
+  "MID_RPTi5": {
+   "obs": 54,
+   "null_mean": 37.024,
+   "X": 1.446,
+   "D": 16.976,
+   "p": 0.03496503496503497
+  },
+  "MID_RPTx5": {
+   "obs": 77,
+   "null_mean": 52.657,
+   "X": 1.454,
+   "D": 24.343,
+   "p": 0.026973026973026972
+  },
+  "MID_DIST5": {
+   "obs": 40,
+   "null_mean": 27.183,
+   "X": 1.455,
+   "D": 12.817,
+   "p": 0.01898101898101898
+  },
+  "MID_RPT5_r20": {
+   "obs": 0,
+   "null_mean": 0.184,
+   "X": 0.845,
+   "D": -0.184,
+   "p": 1.0
+  },
+  "MID_RPT5_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "MID_RPT6": {
+   "obs": 4,
+   "null_mean": 2.779,
+   "X": 1.323,
+   "D": 1.221,
+   "p": 0.4085914085914086
+  },
+  "MID_RPTi6": {
+   "obs": 2,
+   "null_mean": 1.649,
+   "X": 1.133,
+   "D": 0.351,
+   "p": 0.46653346653346656
+  },
+  "MID_RPTx6": {
+   "obs": 4,
+   "null_mean": 2.57,
+   "X": 1.401,
+   "D": 1.43,
+   "p": 0.37662337662337664
+  },
+  "MID_DIST6": {
+   "obs": 2,
+   "null_mean": 1.383,
+   "X": 1.259,
+   "D": 0.617,
+   "p": 0.4085914085914086
+  },
+  "MID_RPT6_r20": {
+   "obs": 0,
+   "null_mean": 0.012,
+   "X": 0.988,
+   "D": -0.012,
+   "p": 1.0
+  },
+  "MID_RPT6_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "MIDn1_RPT3": {
+   "obs": 7617,
+   "null_mean": 7329.082,
+   "X": 1.039,
+   "D": 287.918,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTi3": {
+   "obs": 5722,
+   "null_mean": 5497.379,
+   "X": 1.041,
+   "D": 224.621,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTx3": {
+   "obs": 7533,
+   "null_mean": 7259.526,
+   "X": 1.038,
+   "D": 273.474,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_DIST3": {
+   "obs": 1707,
+   "null_mean": 1707.228,
+   "X": 1.0,
+   "D": -0.228,
+   "p": 0.5034965034965035
+  },
+  "MIDn1_RPT3_r20": {
+   "obs": 30,
+   "null_mean": 24.931,
+   "X": 1.195,
+   "D": 5.069,
+   "p": 0.2627372627372627
+  },
+  "MIDn1_RPT3_r50": {
+   "obs": 0,
+   "null_mean": 0.22,
+   "X": 0.82,
+   "D": -0.22,
+   "p": 1.0
+  },
+  "MIDn1_RPT4": {
+   "obs": 2246,
+   "null_mean": 1927.463,
+   "X": 1.165,
+   "D": 318.537,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTi4": {
+   "obs": 1615,
+   "null_mean": 1392.032,
+   "X": 1.16,
+   "D": 222.968,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTx4": {
+   "obs": 2211,
+   "null_mean": 1885.972,
+   "X": 1.172,
+   "D": 325.028,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_DIST4": {
+   "obs": 709,
+   "null_mean": 648.104,
+   "X": 1.094,
+   "D": 60.896,
+   "p": 0.001998001998001998
+  },
+  "MIDn1_RPT4_r20": {
+   "obs": 8,
+   "null_mean": 2.922,
+   "X": 2.295,
+   "D": 5.078,
+   "p": 0.06793206793206794
+  },
+  "MIDn1_RPT4_r50": {
+   "obs": 0,
+   "null_mean": 0.024,
+   "X": 0.977,
+   "D": -0.024,
+   "p": 1.0
+  },
+  "MIDn1_RPT5": {
+   "obs": 455,
+   "null_mean": 312.783,
+   "X": 1.453,
+   "D": 142.217,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTi5": {
+   "obs": 300,
+   "null_mean": 214.683,
+   "X": 1.396,
+   "D": 85.317,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTx5": {
+   "obs": 443,
+   "null_mean": 299.172,
+   "X": 1.479,
+   "D": 143.828,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_DIST5": {
+   "obs": 184,
+   "null_mean": 131.738,
+   "X": 1.394,
+   "D": 52.262,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPT5_r20": {
+   "obs": 0,
+   "null_mean": 0.218,
+   "X": 0.821,
+   "D": -0.218,
+   "p": 1.0
+  },
+  "MIDn1_RPT5_r50": {
+   "obs": 0,
+   "null_mean": 0.006,
+   "X": 0.994,
+   "D": -0.006,
+   "p": 1.0
+  },
+  "MIDn1_RPT6": {
+   "obs": 41,
+   "null_mean": 32.667,
+   "X": 1.248,
+   "D": 8.333,
+   "p": 0.17882117882117882
+  },
+  "MIDn1_RPTi6": {
+   "obs": 27,
+   "null_mean": 20.769,
+   "X": 1.286,
+   "D": 6.231,
+   "p": 0.17082917082917082
+  },
+  "MIDn1_RPTx6": {
+   "obs": 39,
+   "null_mean": 29.855,
+   "X": 1.296,
+   "D": 9.145,
+   "p": 0.15784215784215785
+  },
+  "MIDn1_DIST6": {
+   "obs": 19,
+   "null_mean": 15.489,
+   "X": 1.213,
+   "D": 3.511,
+   "p": 0.21578421578421578
+  },
+  "MIDn1_RPT6_r20": {
+   "obs": 0,
+   "null_mean": 0.026,
+   "X": 0.975,
+   "D": -0.026,
+   "p": 1.0
+  },
+  "MIDn1_RPT6_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "EF_fl2": {
+   "TOK_D5": -0.008,
+   "TOK_p": 1.0,
+   "MID_X5": 1.4453538595989983,
+   "MID_p": 0.015984015984015984,
+   "cells": 9663,
+   "movable": 0.7052753354928274
+  }
+ },
+ "repeated_5grams": {
+  "TOK5": [],
+  "MID5": [
+   {
+    "rep": "ke e l e e",
+    "count": 4,
+    "folios": [
+     "f76v",
+     "f81r",
+     "f83r",
+     "f84v"
+    ],
+    "tokens": [
+     "qokedy chedy lal chedy lchedy",
+     "qokey oteol qol sheor shedy",
+     "qokedy otedy sol chedy lkedy",
+     "qokedy shey kal okedy yfchedy"
+    ]
+   },
+   {
+    "rep": "e k e k e",
+    "count": 3,
+    "folios": [
+     "f103r",
+     "f80r",
+     "f82v"
+    ],
+    "tokens": [
+     "okchey qoky chedy qokain shedy",
+     "dshedy qokaiin olchedy qokal shedy",
+     "shey qokaiin chedy qokain oteol"
+    ]
+   },
+   {
+    "rep": "e k e ke e",
+    "count": 3,
+    "folios": [
+     "f108r",
+     "f77v",
+     "f80v"
+    ],
+    "tokens": [
+     "chedy qokal chedy qokey lshedy",
+     "shedy qokaiin otey qokedy chedy",
+     "ykchedy qokol chedy qokedy lkedy"
+    ]
+   },
+   {
+    "rep": "l e e k e",
+    "count": 3,
+    "folios": [
+     "f79v",
+     "f83r",
+     "f83v"
+    ],
+    "tokens": [
+     "sol chedy rchey qoky lchedy",
+     "sol lkedy lchedy qokol shedy",
+     "sal chear shey qokar shedy"
+    ]
+   },
+   {
+    "rep": "aiin k ar e k",
+    "count": 2,
+    "folios": [
+     "f113v",
+     "f80v"
+    ],
+    "tokens": [
+     "aiin olkal shar shedy qokol",
+     "otaiin chkain olar olchedy qok"
+    ]
+   },
+   {
+    "rep": "aiin ol al e e",
+    "count": 2,
+    "folios": [
+     "f55v",
+     "f84v"
+    ],
+    "tokens": [
+     "aiin qool al chedy ear",
+     "okaiin olol okal chedy chedy"
+    ]
+   },
+   {
+    "rep": "e dy kee r e",
+    "count": 2,
+    "folios": [
+     "f115v",
+     "f77v"
+    ],
+    "tokens": [
+     "sheol chdy qokeedy dar shedy",
+     "dchedy tedy qokeey roiin shedy"
+    ]
+   },
+   {
+    "rep": "e e ar ar al",
+    "count": 2,
+    "folios": [
+     "f103v",
+     "f113v"
+    ],
+    "tokens": [
+     "lshey lshey qoar shar al",
+     "oteol otedy ar ar al"
+    ]
+   },
+   {
+    "rep": "e e e y dy",
+    "count": 2,
+    "folios": [
+     "f34v",
+     "f82v"
+    ],
+    "tokens": [
+     "chedy chey keedy chy kedy",
+     "chedy cheal chedy oty chdy"
+    ]
+   },
+   {
+    "rep": "e e k e k",
+    "count": 2,
+    "folios": [
+     "f83v"
+    ],
+    "tokens": [
+     "okeol shedy qokol chedy qokal",
+     "chear shey qokar shedy qokain"
+    ]
+   },
+   {
+    "rep": "e e ke e l",
+    "count": 2,
+    "folios": [
+     "f76v"
+    ],
+    "tokens": [
+     "teedy lchey qokedy chedy lal",
+     "shey chedy qokedy chedy qol"
+    ]
+   },
+   {
+    "rep": "e e kee l ol",
+    "count": 2,
+    "folios": [
+     "f75r",
+     "f84r"
+    ],
+    "tokens": [
+     "tchedy pchedy qokeey sol ol",
+     "otedy shedy qokeedy dol ol"
+    ]
+   },
+   {
+    "rep": "e e ol e l",
+    "count": 2,
+    "folios": [
+     "f79r",
+     "f81v"
+    ],
+    "tokens": [
+     "otchedy olshey ol shey qol",
+     "chedy yshchey ol chey qol"
+    ]
+   },
+   {
+    "rep": "e e y dy dy",
+    "count": 2,
+    "folios": [
+     "f34v",
+     "f82v"
+    ],
+    "tokens": [
+     "chey keedy chy kedy dy",
+     "cheal chedy oty chdy dy"
+    ]
+   },
+   {
+    "rep": "e ee e aiin e",
+    "count": 2,
+    "folios": [
+     "f103r",
+     "f31v"
+    ],
+    "tokens": [
+     "chedy okeey qoear oraiin cheom",
+     "cheal okeey shey lkaiin shey"
+    ]
+   },
+   {
+    "rep": "e ee kee ee ee",
+    "count": 2,
+    "folios": [
+     "f106v",
+     "f84v"
+    ],
+    "tokens": [
+     "otedy sheedy qokeedy qoeedy okeedy",
+     "chedy okeey qokeedy okeey cheey"
+    ]
+   },
+   {
+    "rep": "e in e k e",
+    "count": 2,
+    "folios": [
+     "f80v"
+    ],
+    "tokens": [
+     "pcheol kain shedy qokaiin otey",
+     "ycheol kain shey qokaiin chedy"
+    ]
+   },
+   {
+    "rep": "e k e e r",
+    "count": 2,
+    "folios": [
+     "f75v",
+     "f79v"
+    ],
+    "tokens": [
+     "chedy ky okedy lchedy dar",
+     "chedy qokain chedy olshedy dar"
+    ]
+   },
+   {
+    "rep": "e k e k ed",
+    "count": 2,
+    "folios": [
+     "f111r",
+     "f77r"
+    ],
+    "tokens": [
+     "otedy qokor shedy qokal shedar",
+     "shedy qoky chedy qok shed"
+    ]
+   },
+   {
+    "rep": "e k e l e",
+    "count": 2,
+    "folios": [
+     "f111v",
+     "f75r"
+    ],
+    "tokens": [
+     "shedy qokain shedy dal keedy",
+     "okshey qokain chey kal keedy"
+    ]
+   },
+   {
+    "rep": "e ke e l e",
+    "count": 2,
+    "folios": [
+     "f76v",
+     "f81r"
+    ],
+    "tokens": [
+     "lchey qokedy chedy lal chedy",
+     "pchedy qokey oteol qol sheor"
+    ]
+   },
+   {
+    "rep": "e ke ke k e",
+    "count": 2,
+    "folios": [
+     "f82v",
+     "f84r"
+    ],
+    "tokens": [
+     "chedy qokey qokedy qokol chedy",
+     "shedy olkedy qokedy qoky chedy"
+    ]
+   },
+   {
+    "rep": "e kee e l e",
+    "count": 2,
+    "folios": [
+     "f76v",
+     "f80r"
+    ],
+    "tokens": [
+     "alchedy qokeedy lshedy tol chedy",
+     "lsheol qokeey shedy qol shedy"
+    ]
+   },
+   {
+    "rep": "e kee kee e kee",
+    "count": 2,
+    "folios": [
+     "f108v"
+    ],
+    "tokens": [
+     "dsheol qokeedy qokeedy chey qokeedy",
+     "cheol qokeedy qokeedy chedy qokeey"
+    ]
+   },
+   {
+    "rep": "e l e k e",
+    "count": 2,
+    "folios": [
+     "f111v",
+     "f80r"
+    ],
+    "tokens": [
+     "shedy qol shedy qokaiin shey",
+     "cheal lain chey qokain chey"
+    ]
+   },
+   {
+    "rep": "e l e kee l",
+    "count": 2,
+    "folios": [
+     "f77v",
+     "f82r"
+    ],
+    "tokens": [
+     "chedy dal shedy qokeedy dal",
+     "chey qol chedy qokeey dal"
+    ]
+   },
+   {
+    "rep": "ee e kee e e",
+    "count": 2,
+    "folios": [
+     "f108r",
+     "f82r"
+    ],
+    "tokens": [
+     "dcheey lchedy qokeedy lchedy rchedy",
+     "cheey chey qokeey chedy okchedy"
+    ]
+   },
+   {
+    "rep": "ee ee ol e e",
+    "count": 2,
+    "folios": [
+     "f103v",
+     "f79r"
+    ],
+    "tokens": [
+     "sheey olsheey shol keey okchey",
+     "oteey lchees ol chey chey"
+    ]
+   },
+   {
+    "rep": "iin e k e k",
+    "count": 2,
+    "folios": [
+     "f106r",
+     "f82v"
+    ],
+    "tokens": [
+     "daiin chey qoky shedy qokaiin",
+     "qoiin ychedy qokam sheol qokor"
+    ]
+   },
+   {
+    "rep": "in e k e k",
+    "count": 2,
+    "folios": [
+     "f111r",
+     "f80v"
+    ],
+    "tokens": [
+     "kain shey qokaiin chedy qokol",
+     "dain shedy qoky chedy qok"
+    ]
+   },
+   {
+    "rep": "k e k e r",
+    "count": 2,
+    "folios": [
+     "f111v",
+     "f81v"
+    ],
+    "tokens": [
+     "olkain shedy qoky dchedy rol",
+     "qokl chey qokl cheor ldar"
+    ]
+   },
+   {
+    "rep": "k e l e e",
+    "count": 2,
+    "folios": [
+     "f75r",
+     "f84v"
+    ],
+    "tokens": [
+     "qokain shedy dal keedy rshedy",
+     "qokar shedy qol otedy olchedy"
+    ]
+   },
+   {
+    "rep": "k ee kee r e",
+    "count": 2,
+    "folios": [
+     "f78v",
+     "f79v"
+    ],
+    "tokens": [
+     "qokain oteedy qokeedy dar okedy",
+     "qokol sheedy qokeedy rol chey"
+    ]
+   },
+   {
+    "rep": "kee e l e k",
+    "count": 2,
+    "folios": [
+     "f75r",
+     "f80r"
+    ],
+    "tokens": [
+     "qokeey lshedy qol chedy qokain",
+     "qokeey shedy qol shedy qokaiin"
+    ]
+   },
+   {
+    "rep": "l aiin e k e",
+    "count": 2,
+    "folios": [
+     "f111v",
+     "f80v"
+    ],
+    "tokens": [
+     "sol aiin chey qokain ches",
+     "lol aiin shey qokain chear"
+    ]
+   },
+   {
+    "rep": "l e dy e dy",
+    "count": 2,
+    "folios": [
+     "f41r",
+     "f48v"
+    ],
+    "tokens": [
+     "sal yteedy kchdy dchedy tchdy",
+     "tol chedy ytedy ykeol chdy"
+    ]
+   },
+   {
+    "rep": "l e e e k",
+    "count": 2,
+    "folios": [
+     "f107v",
+     "f83v"
+    ],
+    "tokens": [
+     "chl ches okeol shedy qokol",
+     "tol chey lcheor sheol qokaiin"
+    ]
+   },
+   {
+    "rep": "o e r e e",
+    "count": 2,
+    "folios": [
+     "f26v",
+     "f75v"
+    ],
+    "tokens": [
+     "keody shedy dar chedy sches",
+     "ody dchedy dar olchedy otedy"
+    ]
+   },
+   {
+    "rep": "t e e kee e",
+    "count": 2,
+    "folios": [
+     "f83r",
+     "f83v"
+    ],
+    "tokens": [
+     "qoty cheg shedy qokeey rchedy",
+     "qotaiin cheol shey qokeey cheol"
+    ]
+   },
+   {
+    "rep": "y e k e k",
+    "count": 2,
+    "folios": [
+     "f103r",
+     "f79r"
+    ],
+    "tokens": [
+     "y shey qokain cheol qoky",
+     "qoy shey qokaiin chedy qokain"
+    ]
+   }
+  ]
+ },
+ "tokens": 21610,
+ "types": 4640,
+ "cells": 6910,
+ "frac_movable": 0.8191577973160574,
+ "R": 1000,
+ "seed": 77400
+}

@@ -1,0 +1,30 @@
+PHASE_774 locked run; lock phase774-lock verified; inputs verified; R = 1000; seed 77400
+versions: python 3.11.4, numpy 2.3.2, numba 0.63.1
+[B] 69s | tokens 21610, types 4640, cells 6910, movable 0.819
+[B] T arm (TOK, n = 5): obs 0, null mean 0.04 (sd 0.27), D5 -0.04, p 1.0000 -> NONE   [PRESENT >= 7.5, NONE < 4.5]
+[B] M arm (MID, n = 5): obs 85, null mean 56.15 (sd 11.91), X5 1.505, p 0.0120 -> not PRESENT   [PRESENT >= 7.60; descriptive v2 range: at or below the no-message ceiling (descriptive)]
+[B] T CALL: NONE | M CALL: not PRESENT | summary: T NONE, M not PRESENT
+[B] null means (O1): TOK5 0.04 (no-message runs 0-0.13); MID5 56.15 (B-like no-message 14.6-27.2, section-fitted 31.4-44.7; M-arm PRESENT power assumes <= ~27)
+[B]   TOK    n3 181/109.5 X 1.65 p 0.001 | n4 4/1.3 X 2.22 p 0.131 | n5 0/0.0 X 0.97 p 1.000 | n6 0/0.0 X 1.00 p 1.000
+[B]   MID    n3 5799/5459.3 X 1.06 p 0.001 | n4 1034/800.5 X 1.29 p 0.001 | n5 85/56.1 X 1.50 p 0.012 | n6 4/2.8 X 1.32 p 0.409
+[B]   MIDn1  n3 7617/7329.1 X 1.04 p 0.001 | n4 2246/1927.5 X 1.17 p 0.001 | n5 455/312.8 X 1.45 p 0.001 | n6 41/32.7 X 1.25 p 0.179
+[B]   EF with last-two-glyph edges: TOK D5 -0.01 (p 1.0000); MID X5 1.445 (p 0.0160)
+[B]   repeated 5-grams: TOK 0 distinct, MID 40 distinct
+[B]     MID  x4 ke e l e e  ['f76v', 'f81r', 'f83r', 'f84v']  e.g. ['qokedy chedy lal chedy lchedy', 'qokey oteol qol sheor shedy']
+[B]     MID  x3 e k e k e  ['f103r', 'f80r', 'f82v']  e.g. ['okchey qoky chedy qokain shedy', 'dshedy qokaiin olchedy qokal shedy']
+[B]     MID  x3 e k e ke e  ['f108r', 'f77v', 'f80v']  e.g. ['chedy qokal chedy qokey lshedy', 'shedy qokaiin otey qokedy chedy']
+[B]     MID  x3 l e e k e  ['f79v', 'f83r', 'f83v']  e.g. ['sol chedy rchey qoky lchedy', 'sol lkedy lchedy qokol shedy']
+[B]     MID  x2 aiin k ar e k  ['f113v', 'f80v']  e.g. ['aiin olkal shar shedy qokol', 'otaiin chkain olar olchedy qok']
+[B]     MID  x2 aiin ol al e e  ['f55v', 'f84v']  e.g. ['aiin qool al chedy ear', 'okaiin olol okal chedy chedy']
+[B]     MID  x2 e dy kee r e  ['f115v', 'f77v']  e.g. ['sheol chdy qokeedy dar shedy', 'dchedy tedy qokeey roiin shedy']
+[B]     MID  x2 e e ar ar al  ['f103v', 'f113v']  e.g. ['lshey lshey qoar shar al', 'oteol otedy ar ar al']
+[B]     MID  x2 e e e y dy  ['f34v', 'f82v']  e.g. ['chedy chey keedy chy kedy', 'chedy cheal chedy oty chdy']
+[B]     MID  x2 e e k e k  ['f83v']  e.g. ['okeol shedy qokol chedy qokal', 'chear shey qokar shedy qokain']
+[B]     MID  x2 e e ke e l  ['f76v']  e.g. ['teedy lchey qokedy chedy lal', 'shey chedy qokedy chedy qol']
+[B]     MID  x2 e e kee l ol  ['f75r', 'f84r']  e.g. ['tchedy pchedy qokeey sol ol', 'otedy shedy qokeedy dol ol']
+[B]     MID  x2 e e ol e l  ['f79r', 'f81v']  e.g. ['otchedy olshey ol shey qol', 'chedy yshchey ol chey qol']
+[B]     MID  x2 e e y dy dy  ['f34v', 'f82v']  e.g. ['chey keedy chy kedy dy', 'cheal chedy oty chdy dy']
+[B]     MID  x2 e ee e aiin e  ['f103r', 'f31v']  e.g. ['chedy okeey qoear oraiin cheom', 'cheal okeey shey lkaiin shey']
+[B]   interior-only (O2) TOK n5: 0/0.02 X 0.98 D -0.02 p 1.000
+[B]   interior-only (O2) MID n5: 54/37.02 X 1.45 D 16.98 p 0.035
+done
