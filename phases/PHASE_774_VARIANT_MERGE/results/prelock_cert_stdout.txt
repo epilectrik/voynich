@@ -1,0 +1,52 @@
+[   23.9s] POS|cert|CBB|LAT_rupescissa|9110: T PRESENT (D5 10.7) | M NONE (X5 1.51)
+[   24.3s] POS|cert|CBB|LAT_rupescissa|9111: T PRESENT (D5 11.0) | M NONE (X5 2.16)
+[   24.9s] POS|cert|CBB|ITA_dante|9120: T PRESENT (D5 7.9) | M NONE (X5 1.32)
+[   25.0s] POS|cert|CBB|LAT_mesue|9100: T PRESENT (D5 19.5) | M NONE (X5 2.09)
+[   25.1s] POS|cert|CBB|LAT_mesue|9101: T PRESENT (D5 22.0) | M NONE (X5 2.55)
+[   46.9s] POS|cert|CBB|ITA_dante|9121: T PRESENT (D5 9.8) | M NONE (X5 1.11)
+[   46.9s] POS|cert|CBB|NT_de|9130: T PRESENT (D5 525.2) | M INDETERMINATE (X5 5.64)
+[   47.5s] POS|cert|CBB|NT_de|9131: T PRESENT (D5 526.2) | M INDETERMINATE (X5 5.68)
+[   47.5s] POS|cert|CBB|NT_es|9140: T PRESENT (D5 650.4) | M INDETERMINATE (X5 3.70)
+[   47.7s] POS|cert|CBB|NT_es|9141: T PRESENT (D5 637.2) | M INDETERMINATE (X5 3.57)
+[   70.2s] POS|cert|CBB|TUR_nt|9150: T PRESENT (D5 644.3) | M PRESENT (X5 22.10)
+[   70.6s] POS|cert|CBB|TUR_nt|9151: T PRESENT (D5 644.1) | M PRESENT (X5 25.27)
+[   73.1s] POS|cert|HRCB-lem|NT_de|9201: T NONE (D5 0.0) | M PRESENT (X5 29.26)
+[   73.2s] POS|cert|HRCB-lem|NT_de|9200: T NONE (D5 0.0) | M PRESENT (X5 25.75)
+[   73.3s] POS|cert|HRCB-lem|NT_es|9210: T NONE (D5 0.0) | M PRESENT (X5 34.28)
+[   95.0s] POS|cert|HRCB-lem|NT_es|9211: T NONE (D5 0.0) | M PRESENT (X5 39.07)
+[   95.2s] POS|cert|HRCB-lem|TUR_nt|9220: T NONE (D5 0.0) | M PRESENT (X5 32.06)
+[   95.7s] NEG|cert|habit3|None|9316: T NONE (D5 0.0) | M NONE (X5 1.94)
+[   95.9s] NEG|cert|habit3|None|9306: T NONE (D5 0.0) | M NONE (X5 1.72)
+[   97.5s] POS|cert|HRCB-lem|TUR_nt|9221: T NONE (D5 0.0) | M PRESENT (X5 32.79)
+[  116.3s] NEG|cert|habit3|None|9326: T NONE (D5 0.0) | M NONE (X5 1.42)
+[  116.7s] NEG|cert|habit3|None|9336: T NONE (D5 0.0) | M NONE (X5 1.97)
+[  117.0s] NEG|cert|habit3|None|9356: T NONE (D5 -0.0) | M NONE (X5 2.36)
+[  117.1s] NEG|cert|habit3|None|9346: T NONE (D5 0.0) | M NONE (X5 1.12)
+[  118.8s] NEG|cert|habit3|None|9366: T NONE (D5 -0.1) | M NONE (X5 1.92)
+[  138.0s] NEG|cert|habit3|None|9376: T NONE (D5 0.0) | M NONE (X5 2.56)
+[  138.8s] NEG|cert|habit3b|None|9307: T NONE (D5 -0.0) | M NONE (X5 1.68)
+[  138.9s] NEG|cert|habit3b|None|9317: T NONE (D5 -0.0) | M NONE (X5 1.28)
+[  139.1s] NEG|cert|habit3b|None|9327: T NONE (D5 0.0) | M NONE (X5 1.17)
+[  140.8s] NEG|cert|habit3b|None|9337: T NONE (D5 -0.0) | M NONE (X5 1.52)
+[  159.5s] NEG|cert|habit3b|None|9347: T NONE (D5 0.0) | M NONE (X5 1.75)
+[  160.9s] NEG|cert|habit3b|None|9367: T NONE (D5 0.0) | M NONE (X5 1.99)
+[  161.0s] NEG|cert|habit3b|None|9377: T NONE (D5 0.0) | M NONE (X5 2.32)
+[  161.0s] NEG|cert|habit3b|None|9357: T NONE (D5 0.0) | M NONE (X5 1.75)
+[  163.3s] NEG|cert|habit2|None|9306: T NONE (D5 0.0) | M NONE (X5 1.87)
+[  181.8s] NEG|cert|habit2|None|9316: T NONE (D5 0.0) | M NONE (X5 1.41)
+[  183.4s] TWIN|cert|CBB|LAT_rupescissa|9400: T NONE (D5 0.0) | M NONE (X5 0.69)
+[  184.2s] NEG|cert|M1|None|9312: T NONE (D5 0.0) | M NONE (X5 1.83)
+[  184.4s] NEG|cert|M1|None|9302: T NONE (D5 0.0) | M NONE (X5 0.48)
+[  185.1s] TWIN|cert|CBB|NT_es|9401: T NONE (D5 -0.1) | M NONE (X5 1.07)
+[  202.1s] TWIN|cert|HRCB-lem|NT_de|9402: T NONE (D5 0.0) | M NONE (X5 0.96)
+[  203.9s] TWIN|cert|HRCB-lem|LAT_mesue|9403: T NONE (D5 0.0) | M NONE (X5 1.07)
+{
+ "C1": true,
+ "C1_count": "12/12",
+ "C2": true,
+ "C3": true,
+ "C3_indeterminate": 0,
+ "C4": true,
+ "PASS": true
+}
+exit 0

@@ -1,0 +1,74 @@
+[    0.8s] skeleton: 2299 lines, 21610 certain tokens
+[    7.4s] NAIBBE_P-REC H_U 6.75 bits, 360 units, 4498 types
+[    7.4s]    TOK    I 6.75  H(M|U) 3.24  k1 0.220  k0 0.0000  types 4498
+[    7.4s]    MID    I 3.60  H(M|U) 2.57  k1 0.334  k0 0.0303  types 656
+[    7.4s]    MIDn1  I 3.18  H(M|U) 2.46  k1 0.348  k0 0.0522  types 493
+[    7.4s]    MIDn2  I 3.03  H(M|U) 2.36  k1 0.379  k0 0.0560  types 377
+[    7.4s]    BR64   I 4.86  H(M|U) 2.73  k1 0.406  k0 0.0057  types 3145  (clustered 1417, it 17)
+[    7.4s]    BR128  I 5.31  H(M|U) 3.11  k1 0.224  k0 0.0022  types 3209  (clustered 1417, it 13)
+[    7.4s]    BR256  I 5.89  H(M|U) 3.15  k1 0.222  k0 0.0006  types 3337  (clustered 1417, it 16)
+[    7.4s]    BR512  I 6.29  H(M|U) 3.21  k1 0.220  k0 0.0002  types 3593  (clustered 1417, it 8)
+[   10.3s] HRC-S_free_LATrec H_U 10.27 bits, 7186 units, 15516 types
+[   10.3s]    TOK    I 10.22  H(M|U) 3.10  k1 0.034  k0 0.0000  types 15516
+[   10.3s]    MID    I 9.63  H(M|U) 0.33  k1 0.718  k0 0.0022  types 6387
+[   10.3s]    MIDn1  I 9.30  H(M|U) 0.33  k1 0.718  k0 0.0040  types 5614
+[   10.3s]    MIDn2  I 8.81  H(M|U) 0.33  k1 0.718  k0 0.0048  types 4381
+[   10.3s]    BR64   I 9.48  H(M|U) 2.99  k1 0.041  k0 0.0009  types 14750  (clustered 830, it 12)
+[   10.3s]    BR128  I 9.69  H(M|U) 3.04  k1 0.037  k0 0.0004  types 14814  (clustered 830, it 9)
+[   10.3s]    BR256  I 9.88  H(M|U) 3.08  k1 0.035  k0 0.0002  types 14942  (clustered 830, it 6)
+[   10.3s]    BR512  I 10.06  H(M|U) 3.09  k1 0.035  k0 0.0001  types 15198  (clustered 830, it 3)
+[   12.3s] HRC-S_rule_LATrec H_U 10.27 bits, 7186 units, 15317 types
+[   12.3s]    TOK    I 10.22  H(M|U) 3.06  k1 0.036  k0 0.0000  types 15317
+[   12.3s]    MID    I 9.61  H(M|U) 0.35  k1 0.706  k0 0.0023  types 6360
+[   12.3s]    MIDn1  I 9.29  H(M|U) 0.34  k1 0.706  k0 0.0041  types 5559
+[   12.3s]    MIDn2  I 8.80  H(M|U) 0.34  k1 0.706  k0 0.0048  types 4331
+[   12.3s]    BR64   I 9.45  H(M|U) 2.96  k1 0.042  k0 0.0010  types 14535  (clustered 846, it 14)
+[   12.3s]    BR128  I 9.66  H(M|U) 3.01  k1 0.039  k0 0.0004  types 14599  (clustered 846, it 10)
+[   12.3s]    BR256  I 9.88  H(M|U) 3.04  k1 0.037  k0 0.0002  types 14727  (clustered 846, it 7)
+[   12.3s]    BR512  I 10.06  H(M|U) 3.05  k1 0.037  k0 0.0001  types 14983  (clustered 846, it 3)
+[   14.8s] HRC-SE_rule_LATrec H_U 10.27 bits, 7186 units, 15550 types
+[   14.8s]    TOK    I 10.20  H(M|U) 3.13  k1 0.033  k0 0.0000  types 15550
+[   14.8s]    MID    I 9.57  H(M|U) 0.51  k1 0.667  k0 0.0021  types 6660
+[   14.8s]    MIDn1  I 9.31  H(M|U) 0.33  k1 0.727  k0 0.0039  types 5559
+[   14.8s]    MIDn2  I 8.81  H(M|U) 0.33  k1 0.727  k0 0.0047  types 4342
+[   14.8s]    BR64   I 9.48  H(M|U) 3.03  k1 0.038  k0 0.0009  types 14800  (clustered 814, it 11)
+[   14.8s]    BR128  I 9.68  H(M|U) 3.08  k1 0.035  k0 0.0004  types 14864  (clustered 814, it 9)
+[   14.8s]    BR256  I 9.88  H(M|U) 3.11  k1 0.034  k0 0.0002  types 14992  (clustered 814, it 6)
+[   14.8s]    BR512  I 10.06  H(M|U) 3.12  k1 0.034  k0 0.0001  types 15248  (clustered 814, it 3)
+[   18.8s] CB-2_LATrec H_U 10.27 bits, 7186 units, 8410 types
+[   18.8s]    TOK    I 10.27  H(M|U) 0.67  k1 0.502  k0 0.0000  types 8410
+[   18.8s]    MID    I 7.14  H(M|U) 0.64  k1 0.506  k0 0.0171  types 3305
+[   18.8s]    MIDn1  I 6.87  H(M|U) 0.63  k1 0.507  k0 0.0212  types 2991
+[   18.8s]    MIDn2  I 6.54  H(M|U) 0.63  k1 0.507  k0 0.0223  types 2482
+[   18.8s]    BR64   I 8.74  H(M|U) 0.66  k1 0.503  k0 0.0035  types 7426  (clustered 1048, it 12)
+[   18.8s]    BR128  I 9.25  H(M|U) 0.67  k1 0.502  k0 0.0011  types 7490  (clustered 1048, it 10)
+[   18.8s]    BR256  I 9.67  H(M|U) 0.67  k1 0.502  k0 0.0003  types 7618  (clustered 1048, it 18)
+[   18.8s]    BR512  I 10.01  H(M|U) 0.67  k1 0.502  k0 0.0001  types 7874  (clustered 1048, it 7)
+[   23.3s] CB-4_LATrec H_U 10.27 bits, 7186 units, 9776 types
+[   23.3s]    TOK    I 10.27  H(M|U) 1.30  k1 0.253  k0 0.0000  types 9776
+[   23.3s]    MID    I 7.20  H(M|U) 1.23  k1 0.258  k0 0.0134  types 4100
+[   23.3s]    MIDn1  I 6.93  H(M|U) 1.21  k1 0.259  k0 0.0167  types 3741
+[   23.3s]    MIDn2  I 6.57  H(M|U) 1.21  k1 0.259  k0 0.0177  types 3095
+[   23.3s]    BR64   I 8.80  H(M|U) 1.27  k1 0.256  k0 0.0031  types 8771  (clustered 1069, it 12)
+[   23.3s]    BR128  I 9.27  H(M|U) 1.28  k1 0.254  k0 0.0011  types 8835  (clustered 1069, it 21)
+[   23.3s]    BR256  I 9.69  H(M|U) 1.28  k1 0.253  k0 0.0003  types 8963  (clustered 1069, it 7)
+[   23.3s]    BR512  I 10.01  H(M|U) 1.29  k1 0.253  k0 0.0001  types 9219  (clustered 1069, it 8)
+[   25.1s] HRC-S_rule_NTla H_U 9.80 bits, 4601 units, 15006 types
+[   25.1s]    TOK    I 9.75  H(M|U) 3.52  k1 0.034  k0 0.0000  types 15006
+[   25.1s]    MID    I 9.13  H(M|U) 0.39  k1 0.715  k0 0.0023  types 4222
+[   25.1s]    MIDn1  I 8.81  H(M|U) 0.39  k1 0.715  k0 0.0040  types 3745
+[   25.1s]    MIDn2  I 8.32  H(M|U) 0.39  k1 0.715  k0 0.0051  types 3019
+[   25.1s]    BR64   I 8.94  H(M|U) 3.39  k1 0.045  k0 0.0010  types 14160  (clustered 910, it 17)
+[   25.1s]    BR128  I 9.13  H(M|U) 3.47  k1 0.037  k0 0.0005  types 14224  (clustered 910, it 9)
+[   25.1s]    BR256  I 9.37  H(M|U) 3.49  k1 0.036  k0 0.0002  types 14352  (clustered 910, it 8)
+[   25.1s]    BR512  I 9.56  H(M|U) 3.51  k1 0.035  k0 0.0001  types 14608  (clustered 910, it 4)
+[   30.3s] CB-4_NTla H_U 9.80 bits, 4601 units, 7870 types
+[   30.3s]    TOK    I 9.80  H(M|U) 1.52  k1 0.253  k0 0.0000  types 7870
+[   30.3s]    MID    I 6.60  H(M|U) 1.44  k1 0.258  k0 0.0148  types 3130
+[   30.3s]    MIDn1  I 6.34  H(M|U) 1.42  k1 0.259  k0 0.0186  types 2845
+[   30.3s]    MIDn2  I 5.97  H(M|U) 1.41  k1 0.259  k0 0.0198  types 2346
+[   30.3s]    BR64   I 8.00  H(M|U) 1.05  k1 0.838  k0 0.0041  types 6498  (clustered 1436, it 27)
+[   30.3s]    BR128  I 8.42  H(M|U) 1.36  k1 0.268  k0 0.0017  types 6562  (clustered 1436, it 21)
+[   30.3s]    BR256  I 8.89  H(M|U) 1.44  k1 0.258  k0 0.0006  types 6690  (clustered 1436, it 13)
+[   30.3s]    BR512  I 9.31  H(M|U) 1.49  k1 0.254  k0 0.0002  types 6946  (clustered 1436, it 9)
+[   30.3s] done

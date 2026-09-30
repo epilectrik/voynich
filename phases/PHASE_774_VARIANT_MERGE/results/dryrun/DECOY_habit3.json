@@ -1,0 +1,700 @@
+{
+ "tag": "DECOY_habit3",
+ "T": {
+  "obs": 0,
+  "null_mean": 0.004,
+  "null_sd": 0.08939794176597125,
+  "D5": -0.004,
+  "p": 1.0,
+  "call": "NONE"
+ },
+ "M": {
+  "obs": 38,
+  "null_mean": 21.417,
+  "null_sd": 6.868645375129603,
+  "X5": 1.7397510817683006,
+  "p": 0.016983016983016984,
+  "call": "NONE"
+ },
+ "verdict": "NONE DETECTED",
+ "thresholds": {
+  "NEG_T": 3.966666666666667,
+  "POS_T": 11.6,
+  "tau_T": 7.783333333333333,
+  "NEG_M": 2.823416812888818,
+  "POS_M": 20.463777928232908,
+  "tau_M": 7.601169295430532,
+  "n_negatives": 53,
+  "n_twins": 6,
+  "n_positives": 34
+ },
+ "descriptives": {
+  "TOK_RPT3": {
+   "obs": 472,
+   "null_mean": 87.8,
+   "X": 5.327,
+   "D": 384.2,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPTx3": {
+   "obs": 464,
+   "null_mean": 86.51,
+   "X": 5.314,
+   "D": 377.49,
+   "p": 0.000999000999000999
+  },
+  "TOK_DIST3": {
+   "obs": 231,
+   "null_mean": 42.616,
+   "X": 5.319,
+   "D": 188.384,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPT3_r20": {
+   "obs": 270,
+   "null_mean": 27.304,
+   "X": 9.575,
+   "D": 242.696,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPT3_r50": {
+   "obs": 188,
+   "null_mean": 15.795,
+   "X": 11.253,
+   "D": 172.205,
+   "p": 0.000999000999000999
+  },
+  "TOK_RPT4": {
+   "obs": 4,
+   "null_mean": 0.252,
+   "X": 3.994,
+   "D": 3.748,
+   "p": 0.01098901098901099
+  },
+  "TOK_RPTx4": {
+   "obs": 4,
+   "null_mean": 0.25,
+   "X": 4.0,
+   "D": 3.75,
+   "p": 0.01098901098901099
+  },
+  "TOK_DIST4": {
+   "obs": 2,
+   "null_mean": 0.126,
+   "X": 2.664,
+   "D": 1.874,
+   "p": 0.01098901098901099
+  },
+  "TOK_RPT4_r20": {
+   "obs": 4,
+   "null_mean": 0.08,
+   "X": 4.63,
+   "D": 3.92,
+   "p": 0.003996003996003996
+  },
+  "TOK_RPT4_r50": {
+   "obs": 2,
+   "null_mean": 0.04,
+   "X": 2.885,
+   "D": 1.96,
+   "p": 0.01998001998001998
+  },
+  "TOK_RPT5": {
+   "obs": 0,
+   "null_mean": 0.004,
+   "X": 0.996,
+   "D": -0.004,
+   "p": 1.0
+  },
+  "TOK_RPTx5": {
+   "obs": 0,
+   "null_mean": 0.004,
+   "X": 0.996,
+   "D": -0.004,
+   "p": 1.0
+  },
+  "TOK_DIST5": {
+   "obs": 0,
+   "null_mean": 0.002,
+   "X": 0.998,
+   "D": -0.002,
+   "p": 1.0
+  },
+  "TOK_RPT5_r20": {
+   "obs": 0,
+   "null_mean": 0.004,
+   "X": 0.996,
+   "D": -0.004,
+   "p": 1.0
+  },
+  "TOK_RPT5_r50": {
+   "obs": 0,
+   "null_mean": 0.002,
+   "X": 0.998,
+   "D": -0.002,
+   "p": 1.0
+  },
+  "TOK_RPT6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPTx6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_DIST6": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPT6_r20": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "TOK_RPT6_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "MID_RPT3": {
+   "obs": 5767,
+   "null_mean": 5112.895,
+   "X": 1.128,
+   "D": 654.105,
+   "p": 0.000999000999000999
+  },
+  "MID_RPTx3": {
+   "obs": 5725,
+   "null_mean": 5081.568,
+   "X": 1.127,
+   "D": 643.432,
+   "p": 0.000999000999000999
+  },
+  "MID_DIST3": {
+   "obs": 1785,
+   "null_mean": 1630.999,
+   "X": 1.094,
+   "D": 154.001,
+   "p": 0.000999000999000999
+  },
+  "MID_RPT3_r20": {
+   "obs": 147,
+   "null_mean": 65.196,
+   "X": 2.236,
+   "D": 81.804,
+   "p": 0.000999000999000999
+  },
+  "MID_RPT3_r50": {
+   "obs": 6,
+   "null_mean": 0.748,
+   "X": 4.005,
+   "D": 5.252,
+   "p": 0.005994005994005994
+  },
+  "MID_RPT4": {
+   "obs": 737,
+   "null_mean": 530.234,
+   "X": 1.389,
+   "D": 206.766,
+   "p": 0.000999000999000999
+  },
+  "MID_RPTx4": {
+   "obs": 727,
+   "null_mean": 523.091,
+   "X": 1.389,
+   "D": 203.909,
+   "p": 0.000999000999000999
+  },
+  "MID_DIST4": {
+   "obs": 323,
+   "null_mean": 240.327,
+   "X": 1.343,
+   "D": 82.673,
+   "p": 0.000999000999000999
+  },
+  "MID_RPT4_r20": {
+   "obs": 6,
+   "null_mean": 3.967,
+   "X": 1.409,
+   "D": 2.033,
+   "p": 0.32167832167832167
+  },
+  "MID_RPT4_r50": {
+   "obs": 0,
+   "null_mean": 0.126,
+   "X": 0.888,
+   "D": -0.126,
+   "p": 1.0
+  },
+  "MID_RPT5": {
+   "obs": 38,
+   "null_mean": 21.417,
+   "X": 1.74,
+   "D": 16.583,
+   "p": 0.016983016983016984
+  },
+  "MID_RPTx5": {
+   "obs": 38,
+   "null_mean": 20.913,
+   "X": 1.78,
+   "D": 17.087,
+   "p": 0.014985014985014986
+  },
+  "MID_DIST5": {
+   "obs": 19,
+   "null_mean": 10.605,
+   "X": 1.723,
+   "D": 8.395,
+   "p": 0.014985014985014986
+  },
+  "MID_RPT5_r20": {
+   "obs": 0,
+   "null_mean": 0.136,
+   "X": 0.88,
+   "D": -0.136,
+   "p": 1.0
+  },
+  "MID_RPT5_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "MID_RPT6": {
+   "obs": 0,
+   "null_mean": 0.628,
+   "X": 0.614,
+   "D": -0.628,
+   "p": 1.0
+  },
+  "MID_RPTx6": {
+   "obs": 0,
+   "null_mean": 0.614,
+   "X": 0.62,
+   "D": -0.614,
+   "p": 1.0
+  },
+  "MID_DIST6": {
+   "obs": 0,
+   "null_mean": 0.314,
+   "X": 0.761,
+   "D": -0.314,
+   "p": 1.0
+  },
+  "MID_RPT6_r20": {
+   "obs": 0,
+   "null_mean": 0.008,
+   "X": 0.992,
+   "D": -0.008,
+   "p": 1.0
+  },
+  "MID_RPT6_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "MIDn1_RPT3": {
+   "obs": 7582,
+   "null_mean": 7017.744,
+   "X": 1.08,
+   "D": 564.256,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTx3": {
+   "obs": 7540,
+   "null_mean": 6987.797,
+   "X": 1.079,
+   "D": 552.203,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_DIST3": {
+   "obs": 1837,
+   "null_mean": 1739.704,
+   "X": 1.056,
+   "D": 97.296,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPT3_r20": {
+   "obs": 95,
+   "null_mean": 39.566,
+   "X": 2.367,
+   "D": 55.434,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPT3_r50": {
+   "obs": 2,
+   "null_mean": 0.458,
+   "X": 2.058,
+   "D": 1.542,
+   "p": 0.2057942057942058
+  },
+  "MIDn1_RPT4": {
+   "obs": 1843,
+   "null_mean": 1508.175,
+   "X": 1.222,
+   "D": 334.825,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTx4": {
+   "obs": 1837,
+   "null_mean": 1495.637,
+   "X": 1.228,
+   "D": 341.363,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_DIST4": {
+   "obs": 659,
+   "null_mean": 569.799,
+   "X": 1.156,
+   "D": 89.201,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPT4_r20": {
+   "obs": 6,
+   "null_mean": 3.666,
+   "X": 1.5,
+   "D": 2.334,
+   "p": 0.26573426573426573
+  },
+  "MIDn1_RPT4_r50": {
+   "obs": 0,
+   "null_mean": 0.036,
+   "X": 0.965,
+   "D": -0.036,
+   "p": 1.0
+  },
+  "MIDn1_RPT5": {
+   "obs": 214,
+   "null_mean": 147.576,
+   "X": 1.447,
+   "D": 66.424,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPTx5": {
+   "obs": 210,
+   "null_mean": 145.425,
+   "X": 1.441,
+   "D": 64.575,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_DIST5": {
+   "obs": 95,
+   "null_mean": 68.407,
+   "X": 1.383,
+   "D": 26.593,
+   "p": 0.000999000999000999
+  },
+  "MIDn1_RPT5_r20": {
+   "obs": 2,
+   "null_mean": 0.178,
+   "X": 2.547,
+   "D": 1.822,
+   "p": 0.08591408591408592
+  },
+  "MIDn1_RPT5_r50": {
+   "obs": 0,
+   "null_mean": 0.004,
+   "X": 0.996,
+   "D": -0.004,
+   "p": 1.0
+  },
+  "MIDn1_RPT6": {
+   "obs": 7,
+   "null_mean": 7.736,
+   "X": 0.916,
+   "D": -0.736,
+   "p": 0.5284715284715285
+  },
+  "MIDn1_RPTx6": {
+   "obs": 7,
+   "null_mean": 7.58,
+   "X": 0.932,
+   "D": -0.58,
+   "p": 0.5134865134865135
+  },
+  "MIDn1_DIST6": {
+   "obs": 3,
+   "null_mean": 3.839,
+   "X": 0.827,
+   "D": -0.839,
+   "p": 0.7292707292707292
+  },
+  "MIDn1_RPT6_r20": {
+   "obs": 0,
+   "null_mean": 0.014,
+   "X": 0.986,
+   "D": -0.014,
+   "p": 1.0
+  },
+  "MIDn1_RPT6_r50": {
+   "obs": 0,
+   "null_mean": 0.0,
+   "X": 1.0,
+   "D": 0.0,
+   "p": 1.0
+  },
+  "EF_fl2": {
+   "TOK_D5": -0.002,
+   "TOK_p": 1.0,
+   "MID_X5": 1.3774104683195592,
+   "MID_p": 0.08491508491508491,
+   "cells": 10902,
+   "movable": 0.6561314206385932
+  }
+ },
+ "repeated_5grams": {
+  "TOK5": [],
+  "MID5": [
+   {
+    "rep": "ar y e k ckh",
+    "count": 2,
+    "folios": [
+     "f112r",
+     "f40r"
+    ],
+    "tokens": [
+     "lokar oly shey qokain chckhy",
+     "ar y shedy qokar chckhy"
+    ]
+   },
+   {
+    "rep": "d ee k e e",
+    "count": 2,
+    "folios": [
+     "f106r",
+     "f108r"
+    ],
+    "tokens": [
+     "chdaiin cheedy qokal shedy otedy",
+     "tedam oteey qokain chey chey"
+    ]
+   },
+   {
+    "rep": "e e h ke e",
+    "count": 2,
+    "folios": [
+     "f103r",
+     "f104r"
+    ],
+    "tokens": [
+     "yches olchedy cthdy qokedy cheol",
+     "sheol olchedy cthdy qokey okedy"
+    ]
+   },
+   {
+    "rep": "e ee kee e k",
+    "count": 2,
+    "folios": [
+     "f48v",
+     "f79r"
+    ],
+    "tokens": [
+     "dshedy sheedy qokeedy lchedy qokaiin",
+     "ykchedy sheedy qokeey otchey qokaiin"
+    ]
+   },
+   {
+    "rep": "e k e o ee",
+    "count": 2,
+    "folios": [
+     "f105r",
+     "f112v"
+    ],
+    "tokens": [
+     "chey qokar cheol olcho rokeedy",
+     "keey qokain shedy pcholy sheey"
+    ]
+   },
+   {
+    "rep": "e k olk k e",
+    "count": 2,
+    "folios": [
+     "f26v",
+     "f83r"
+    ],
+    "tokens": [
+     "chedy qokar sholkal qokain chear",
+     "shear qokain cholkaiin qokar orchey"
+    ]
+   },
+   {
+    "rep": "e k y k or",
+    "count": 2,
+    "folios": [
+     "f104r",
+     "f85r2"
+    ],
+    "tokens": [
+     "tshey qokar shy qokl shor",
+     "shedy qokal day qokain or"
+    ]
+   },
+   {
+    "rep": "e kee e k e",
+    "count": 2,
+    "folios": [
+     "f80r",
+     "f80v"
+    ],
+    "tokens": [
+     "shedy qokeedy lchedy qokain shedy",
+     "chedy qokeedy lchedy qoky lsheg"
+    ]
+   },
+   {
+    "rep": "e kee ke kee k",
+    "count": 2,
+    "folios": [
+     "f113r",
+     "f114v"
+    ],
+    "tokens": [
+     "shedy qokeedy qokedy qokeedy qokar",
+     "dchedy qokeedy qokedy qokeedy qokain"
+    ]
+   },
+   {
+    "rep": "e l e iin aiin",
+    "count": 2,
+    "folios": [
+     "f34r",
+     "f39v"
+    ],
+    "tokens": [
+     "chey kal shey kaiin otaiin",
+     "shedy dal shedy saiin okaiin"
+    ]
+   },
+   {
+    "rep": "e l r e lche",
+    "count": 2,
+    "folios": [
+     "f113r",
+     "f81v"
+    ],
+    "tokens": [
+     "chey kal dar shedy qolchedy",
+     "pchedy dal dar shedy qolchedy"
+    ]
+   },
+   {
+    "rep": "iin e k e dy",
+    "count": 2,
+    "folios": [
+     "f105v",
+     "f86v5"
+    ],
+    "tokens": [
+     "daiin chedy qokal otedy dy",
+     "daiin shey qokar chedy shdy"
+    ]
+   },
+   {
+    "rep": "k e e ar aiin",
+    "count": 2,
+    "folios": [
+     "f107r",
+     "f43r"
+    ],
+    "tokens": [
+     "qokaiin cheor sheol qoar ykaiin",
+     "qokain shey lshey qoar aiin"
+    ]
+   },
+   {
+    "rep": "l e k e ke",
+    "count": 2,
+    "folios": [
+     "f111r",
+     "f115r"
+    ],
+    "tokens": [
+     "qol shedy qokaiin okedy qokedy",
+     "tal shedy qokaiin dshedy qokey"
+    ]
+   },
+   {
+    "rep": "l e k ee e",
+    "count": 2,
+    "folios": [
+     "f114v",
+     "f115r"
+    ],
+    "tokens": [
+     "polal chedy qokaiin cheedy lchedy",
+     "l shey qokar sheedy shedy"
+    ]
+   },
+   {
+    "rep": "or e e l e",
+    "count": 2,
+    "folios": [
+     "f111r",
+     "f81v"
+    ],
+    "tokens": [
+     "loror sheor tchey qol lcheol",
+     "olor otedy okshedy tal chedy"
+    ]
+   },
+   {
+    "rep": "r e e ee l",
+    "count": 2,
+    "folios": [
+     "f106r",
+     "f107r"
+    ],
+    "tokens": [
+     "sor shedy tchedy okeey l",
+     "dar yteedy ypchey okeey ldy"
+    ]
+   },
+   {
+    "rep": "r ol e e k",
+    "count": 2,
+    "folios": [
+     "f84r",
+     "f86v6"
+    ],
+    "tokens": [
+     "tar ol keedy lteedy qokal",
+     "roiin shol keey lteeal qokaiin"
+    ]
+   },
+   {
+    "rep": "t e k e k",
+    "count": 2,
+    "folios": [
+     "f103r",
+     "f107r"
+    ],
+    "tokens": [
+     "ty chedy qokal olchedy qokain",
+     "qotal olchedy qokal tchey shkar"
+    ]
+   }
+  ]
+ },
+ "tokens": 21610,
+ "types": 3397,
+ "cells": 7863,
+ "frac_movable": 0.7844516427579824,
+ "R": 1000,
+ "seed": 77400
+}

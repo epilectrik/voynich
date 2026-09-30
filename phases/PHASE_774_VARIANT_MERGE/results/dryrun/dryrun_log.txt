@@ -1,0 +1,56 @@
+[DECOY_CBB_mesue] 74s | tokens 21610, types 4630, cells 7973, movable 0.782
+[DECOY_CBB_mesue] T arm (TOK, n = 5): obs 20, null mean 0.25 (sd 0.73), D5 19.75, p 0.0010 -> PRESENT   [tau_T 7.78, NEG_T 3.97]
+[DECOY_CBB_mesue] M arm (MID, n = 5): obs 37, null mean 17.27 (sd 6.07), X5 2.080, p 0.0040 -> NONE   [tau_M 7.60, NEG_M 2.82]
+[DECOY_CBB_mesue] VERDICT: PHRASE REPEATS PRESENT (T)
+[DECOY_CBB_mesue]   TOK    n3 156/38.0 X 4.02 p 0.001 | n4 46/2.7 X 12.63 p 0.001 | n5 20/0.3 X 16.77 p 0.001 | n6 10/0.0 X 10.88 p 0.001
+[DECOY_CBB_mesue]   MID    n3 4745/4658.8 X 1.02 p 0.053 | n4 498/425.9 X 1.17 p 0.006 | n5 37/17.3 X 2.08 p 0.004 | n6 10/0.5 X 7.16 p 0.001
+[DECOY_CBB_mesue]   MIDn1  n3 6714/6598.8 X 1.02 p 0.018 | n4 1407/1250.4 X 1.13 p 0.001 | n5 172/116.8 X 1.47 p 0.002 | n6 22/7.1 X 2.83 p 0.004
+[DECOY_CBB_mesue]   EF with last-two-glyph edges: TOK D5 19.05 (p 0.0010); MID X5 1.903 (p 0.0080)
+[DECOY_CBB_mesue]   repeated 5-grams: TOK 8 distinct, MID 16 distinct
+[DECOY_CBB_mesue]     TOK  x3 okaiin shey qokeedy qokaiin qokain  ['f76v', 'f79r', 'f86v6']
+[DECOY_CBB_mesue]     TOK  x3 qokaiin qokain qokain otar chedy  ['f76v', 'f79r', 'f81v']
+[DECOY_CBB_mesue]     TOK  x3 qokeedy qokaiin qokain qokain otar  ['f76v', 'f79r', 'f81v']
+[DECOY_CBB_mesue]     TOK  x3 shey qokeedy qokaiin qokain qokain  ['f76v', 'f79r', 'f81v']
+[DECOY_CBB_mesue]     TOK  x2 okal qokaiin qokain daiin dar  ['f103r', 'f112r']
+[DECOY_CBB_mesue]     TOK  x2 qokaiin qokain daiin dar otar  ['f112r', 'f78r']
+[DECOY_CBB_mesue]     TOK  x2 qokain daiin dar otar chedy  ['f112r', 'f78r']
+[DECOY_CBB_mesue]     TOK  x2 shedy al aiin otar ol  ['f114v']
+[DECOY_CBB_mesue]     MID  x3 aiin e kee k k  ['f76v', 'f79r', 'f86v6']  e.g. ['okaiin shey qokeedy qokaiin qokain', 'okaiin shey qokeedy qokaiin qokain']
+[DECOY_CBB_mesue]     MID  x3 e al aiin ar ol  ['f114v']  e.g. ['shedy al aiin otar ol', 'shedy al aiin otar ol']
+[DECOY_CBB_mesue]     MID  x3 e kee k k k  ['f76v', 'f79r', 'f81v']  e.g. ['shey qokeedy qokaiin qokain qokain', 'shey qokeedy qokaiin qokain qokain']
+[DECOY_CBB_mesue]     MID  x3 k k k ar e  ['f76v', 'f79r', 'f81v']  e.g. ['qokaiin qokain qokain otar chedy', 'qokaiin qokain qokain otar chedy']
+[DECOY_CBB_mesue]     MID  x3 kee k k k ar  ['f76v', 'f79r', 'f81v']  e.g. ['qokeedy qokaiin qokain qokain otar', 'qokeedy qokaiin qokain qokain otar']
+[DECOY_CBB_mesue]     MID  x2 al k k iin r  ['f103r', 'f112r']  e.g. ['okal qokaiin qokain daiin dar', 'okal qokaiin qokain daiin dar']
+[DECOY_CBB_mesue]     MID  x2 e d e e ee  ['f111r', 'f76v']  e.g. ['shedy chdam chedy keeor okcheey', 'shedy shdaiin cheol chedy sheey']
+[DECOY_CBB_mesue]     MID  x2 e e e aiin e  ['f107r', 'f76v']  e.g. ['chey chedy chey okaiin shey', 'chey otedy shedy aiin keedy']
+[DECOY_CBB_mesue]     MID  x2 e e r ee e  ['f112r', 'f86v5']  e.g. ['otedy sheol tar ycheedy ches', 'lchedy chedy darom qoeey otchedy']
+[DECOY_CBB_mesue]     MID  x2 e k e e e  ['f116r', 'f84v']  e.g. ['kchedy qoky otshey keedy shey', 'shedy qokal yteedy yteedy otchey']
+[DECOY_CBB_mesue]     MID  x2 ee e dy e e  ['f82v', 'f95v1']  e.g. ['oteedy chedy chdy shey chedy', 'cheedy olshedy dy lchedy ychedy']
+[DECOY_CBB_mesue]     MID  x2 ee iin y e e  ['f103r', 'f114r']  e.g. ['lkeey daiin otchy olshey lkedy', 'lokeedy daiin lchy shey okedy']
+[DECOY_CBB_mesue]     MID  x2 k iin r ar e  ['f112r', 'f78r']  e.g. ['qokain daiin dar otar chedy', 'qokain daiin dar otar chedy']
+[DECOY_CBB_mesue]     MID  x2 k k iin r ar  ['f112r', 'f78r']  e.g. ['qokaiin qokain daiin dar otar', 'qokaiin qokain daiin dar otar']
+[DECOY_CBB_mesue]     MID  x2 r e e r e  ['f111v', 'f26v']  e.g. ['soraiin otchedy keedy raiin shedy', 'sor yteey olchey r chedy']
+[DECOY_habit3] 73s | tokens 21610, types 3397, cells 7863, movable 0.784
+[DECOY_habit3] T arm (TOK, n = 5): obs 0, null mean 0.00 (sd 0.09), D5 -0.00, p 1.0000 -> NONE   [tau_T 7.78, NEG_T 3.97]
+[DECOY_habit3] M arm (MID, n = 5): obs 38, null mean 21.42 (sd 6.87), X5 1.740, p 0.0170 -> NONE   [tau_M 7.60, NEG_M 2.82]
+[DECOY_habit3] VERDICT: NONE DETECTED
+[DECOY_habit3]   TOK    n3 472/87.8 X 5.33 p 0.001 | n4 4/0.3 X 3.99 p 0.011 | n5 0/0.0 X 1.00 p 1.000 | n6 0/0.0 X 1.00 p 1.000
+[DECOY_habit3]   MID    n3 5767/5112.9 X 1.13 p 0.001 | n4 737/530.2 X 1.39 p 0.001 | n5 38/21.4 X 1.74 p 0.017 | n6 0/0.6 X 0.61 p 1.000
+[DECOY_habit3]   MIDn1  n3 7582/7017.7 X 1.08 p 0.001 | n4 1843/1508.2 X 1.22 p 0.001 | n5 214/147.6 X 1.45 p 0.001 | n6 7/7.7 X 0.92 p 0.528
+[DECOY_habit3]   EF with last-two-glyph edges: TOK D5 -0.00 (p 1.0000); MID X5 1.377 (p 0.0849)
+[DECOY_habit3]   repeated 5-grams: TOK 0 distinct, MID 19 distinct
+[DECOY_habit3]     MID  x2 ar y e k ckh  ['f112r', 'f40r']  e.g. ['lokar oly shey qokain chckhy', 'ar y shedy qokar chckhy']
+[DECOY_habit3]     MID  x2 d ee k e e  ['f106r', 'f108r']  e.g. ['chdaiin cheedy qokal shedy otedy', 'tedam oteey qokain chey chey']
+[DECOY_habit3]     MID  x2 e e h ke e  ['f103r', 'f104r']  e.g. ['yches olchedy cthdy qokedy cheol', 'sheol olchedy cthdy qokey okedy']
+[DECOY_habit3]     MID  x2 e ee kee e k  ['f48v', 'f79r']  e.g. ['dshedy sheedy qokeedy lchedy qokaiin', 'ykchedy sheedy qokeey otchey qokaiin']
+[DECOY_habit3]     MID  x2 e k e o ee  ['f105r', 'f112v']  e.g. ['chey qokar cheol olcho rokeedy', 'keey qokain shedy pcholy sheey']
+[DECOY_habit3]     MID  x2 e k olk k e  ['f26v', 'f83r']  e.g. ['chedy qokar sholkal qokain chear', 'shear qokain cholkaiin qokar orchey']
+[DECOY_habit3]     MID  x2 e k y k or  ['f104r', 'f85r2']  e.g. ['tshey qokar shy qokl shor', 'shedy qokal day qokain or']
+[DECOY_habit3]     MID  x2 e kee e k e  ['f80r', 'f80v']  e.g. ['shedy qokeedy lchedy qokain shedy', 'chedy qokeedy lchedy qoky lsheg']
+[DECOY_habit3]     MID  x2 e kee ke kee k  ['f113r', 'f114v']  e.g. ['shedy qokeedy qokedy qokeedy qokar', 'dchedy qokeedy qokedy qokeedy qokain']
+[DECOY_habit3]     MID  x2 e l e iin aiin  ['f34r', 'f39v']  e.g. ['chey kal shey kaiin otaiin', 'shedy dal shedy saiin okaiin']
+[DECOY_habit3]     MID  x2 e l r e lche  ['f113r', 'f81v']  e.g. ['chey kal dar shedy qolchedy', 'pchedy dal dar shedy qolchedy']
+[DECOY_habit3]     MID  x2 iin e k e dy  ['f105v', 'f86v5']  e.g. ['daiin chedy qokal otedy dy', 'daiin shey qokar chedy shdy']
+[DECOY_habit3]     MID  x2 k e e ar aiin  ['f107r', 'f43r']  e.g. ['qokaiin cheor sheol qoar ykaiin', 'qokain shey lshey qoar aiin']
+[DECOY_habit3]     MID  x2 l e k e ke  ['f111r', 'f115r']  e.g. ['qol shedy qokaiin okedy qokedy', 'tal shedy qokaiin dshedy qokey']
+[DECOY_habit3]     MID  x2 l e k ee e  ['f114v', 'f115r']  e.g. ['polal chedy qokaiin cheedy lchedy', 'l shey qokar sheedy shedy']
