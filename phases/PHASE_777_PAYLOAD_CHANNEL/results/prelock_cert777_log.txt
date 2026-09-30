@@ -1,0 +1,103 @@
+[  24.2s] POS|F2|NT_it|2|8101                | F1 z    3.3 NOT  | F2 z   97.7 PRES | L1 z    3.5 NONE | L2 z    1.7 NONE | GAL z    1.7 NONE
+[  24.3s] POS|L1|NT_it|2|8102                | F1 z   -0.6 NONE | F2 z   -0.1 NONE | L1 z   41.5 PRES | L2 z    1.4 NONE | GAL z    0.3 NONE
+[  24.6s] POS|F1|NT_it|2|8100                | F1 z  100.0 PRES | F2 z    2.5 NONE | L1 z    2.5 NONE | L2 z    1.3 NONE | GAL z   -0.5 NONE
+[  24.8s] POS|F2|NT_la|2|8104                | F1 z   -1.6 NONE | F2 z   84.7 PRES | L1 z    2.5 NONE | L2 z    2.3 NONE | GAL z    1.5 NONE
+[  24.8s] POS|F1|NT_la|2|8103                | F1 z   90.6 PRES | F2 z    0.7 NONE | L1 z    2.9 NONE | L2 z    2.2 NONE | GAL z    1.7 NONE
+[  25.0s] POS|L1|NT_la|2|8105                | F1 z    2.1 NONE | F2 z   -1.1 NONE | L1 z   35.4 PRES | L2 z    2.4 NONE | GAL z    1.9 NONE
+[  44.3s] POS|F1|LAT_sismel|2|8106           | F1 z  102.9 PRES | F2 z    0.1 NONE | L1 z    1.8 NONE | L2 z    2.1 NONE | GAL z    0.5 NONE
+[  44.3s] POS|F2|LAT_sismel|2|8107           | F1 z    1.3 NONE | F2 z   95.9 PRES | L1 z    3.0 NONE | L2 z    5.0 PRES | GAL z    1.4 NONE
+[  45.1s] POS|L1|LAT_sismel|2|8108           | F1 z    1.6 NONE | F2 z   -0.1 NONE | L1 z   44.6 PRES | L2 z    1.2 NONE | GAL z   -0.2 NONE
+[  46.0s] POS|F1|LAT_mesue|2|8109            | F1 z   25.6 PRES | F2 z   -1.6 NONE | L1 z    1.2 NONE | L2 z    1.4 NONE | GAL z    1.5 NONE
+[  46.0s] POS|F2|LAT_mesue|2|8110            | F1 z   -0.6 NONE | F2 z   23.0 PRES | L1 z    0.9 NONE | L2 z    3.3 NONE | GAL z   -2.0 NONE
+[  46.1s] POS|L1|LAT_mesue|2|8111            | F1 z   -0.5 NONE | F2 z    1.7 NONE | L1 z    8.3 PRES | L2 z    0.5 NONE | GAL z   -0.5 NONE
+[  64.9s] POS|F2|LAT_rec|2|8113              | F1 z    3.7 NOT  | F2 z   55.7 PRES | L1 z    1.9 NONE | L2 z    3.3 NONE | GAL z   -1.4 NONE
+[  65.0s] POS|F1|LAT_rec|2|8112              | F1 z   60.2 PRES | F2 z    1.3 NONE | L1 z    2.7 NONE | L2 z    2.6 NONE | GAL z   -2.2 NONE
+[  65.8s] POS|L1|LAT_rec|2|8114              | F1 z   -0.9 NONE | F2 z   -0.0 NONE | L1 z   27.4 PRES | L2 z    0.5 NONE | GAL z   -0.4 NONE
+[  66.4s] POS|F2|ITA_dante|2|8116            | F1 z   -0.5 NONE | F2 z   45.1 PRES | L1 z    2.2 NONE | L2 z    3.5 NONE | GAL z    0.5 NONE
+[  66.6s] POS|F1|ITA_dante|2|8115            | F1 z   44.3 PRES | F2 z    1.0 NONE | L1 z    1.2 NONE | L2 z    0.5 NONE | GAL z   -0.5 NONE
+[  67.1s] POS|L1|ITA_dante|2|8117            | F1 z    0.1 NONE | F2 z   -1.4 NONE | L1 z   18.5 PRES | L2 z    2.4 NONE | GAL z   -1.0 NONE
+[  85.8s] TWIN|F1|NT_it|2|8178               | F1 z    0.7 NONE | F2 z   -0.5 NONE | L1 z    2.2 NONE | L2 z    3.3 NONE | GAL z   -0.9 NONE
+[  86.1s] TWIN|F2|NT_la|2|8179               | F1 z   -0.4 NONE | F2 z    0.5 NONE | L1 z    2.7 NONE | L2 z    2.2 NONE | GAL z   -0.8 NONE
+[  86.9s] TWIN|F2|LAT_rec|2|8181             | F1 z   -1.0 NONE | F2 z    0.8 NONE | L1 z    1.2 NONE | L2 z    2.2 NONE | GAL z   -1.0 NONE
+[  87.3s] TWIN|F1|LAT_mesue|2|8180           | F1 z    0.7 NONE | F2 z   -0.4 NONE | L1 z    2.3 NONE | L2 z    2.1 NONE | GAL z    0.6 NONE
+[  87.4s] TWIN|L1|LAT_sismel|2|8182          | F1 z   -1.3 NONE | F2 z   -0.7 NONE | L1 z    0.3 NONE | L2 z    0.7 NONE | GAL z   -1.7 NONE
+[  88.0s] NEG|edge2|None|None|8205           | F1 z   -0.4 NONE | F2 z   -1.1 NONE | L1 z    2.8 NONE | L2 z    1.7 NONE | GAL z    0.1 NONE
+[ 106.4s] NEG|edge2|None|None|8215           | F1 z   -0.3 NONE | F2 z   -1.5 NONE | L1 z    1.1 NONE | L2 z    1.2 NONE | GAL z   -0.7 NONE
+[ 106.6s] NEG|edge2|None|None|8225           | F1 z    0.3 NONE | F2 z   -0.1 NONE | L1 z    3.0 NONE | L2 z    1.1 NONE | GAL z    0.3 NONE
+[ 107.4s] NEG|edge2|None|None|8235           | F1 z    0.6 NONE | F2 z   -0.2 NONE | L1 z    3.0 NONE | L2 z    1.2 NONE | GAL z   -2.3 NONE
+[ 108.0s] NEG|edge1|None|None|8215           | F1 z   -0.1 NONE | F2 z   -1.3 NONE | L1 z    1.0 NONE | L2 z   -0.4 NONE | GAL z   -0.2 NONE
+[ 108.0s] NEG|edge1|None|None|8205           | F1 z    1.4 NONE | F2 z   -0.3 NONE | L1 z    1.0 NONE | L2 z    1.1 NONE | GAL z   -0.3 NONE
+[ 108.5s] NEG|edge1|None|None|8225           | F1 z   -0.8 NONE | F2 z    1.4 NONE | L1 z    2.1 NONE | L2 z    0.1 NONE | GAL z   -0.8 NONE
+[ 126.3s] NEG|habit3|None|None|8206          | F1 z    0.6 NONE | F2 z    0.5 NONE | L1 z    2.4 NONE | L2 z    0.3 NONE | GAL z    2.0 NONE
+[ 127.0s] NEG|habit3|None|None|8216          | F1 z    2.1 NONE | F2 z    2.0 NONE | L1 z    2.8 NONE | L2 z    0.4 NONE | GAL z   -0.4 NONE
+[ 127.6s] NEG|habit3|None|None|8226          | F1 z    1.8 NONE | F2 z    0.2 NONE | L1 z    2.2 NONE | L2 z    0.9 NONE | GAL z    0.6 NONE
+[ 128.3s] NEG|habit3b|None|None|8217         | F1 z    2.4 NONE | F2 z    4.0 NOT  | L1 z    1.5 NONE | L2 z    2.2 NONE | GAL z    1.5 NONE
+[ 128.3s] NEG|habit3b|None|None|8207         | F1 z    2.1 NONE | F2 z    2.7 NONE | L1 z    2.3 NONE | L2 z    1.8 NONE | GAL z    0.9 NONE
+[ 128.8s] NEG|habit3b|None|None|8227         | F1 z    1.7 NONE | F2 z    0.7 NONE | L1 z    3.0 NONE | L2 z    1.7 NONE | GAL z    1.5 NONE
+[ 151.6s] NEG|M1|None|None|8202              | F1 z    1.3 NONE | F2 z   -0.2 NONE | L1 z   -2.6 NONE | L2 z   -0.1 NONE | GAL z   -0.1 NONE
+[ 151.8s] NEG|habit3b_sec|None|None|8211     | F1 z    2.3 NONE | F2 z    2.2 NONE | L1 z    3.4 NONE | L2 z    1.9 NONE | GAL z   -0.3 NONE
+[ 152.1s] NEG|M1|None|None|8212              | F1 z    1.8 NONE | F2 z    1.1 NONE | L1 z   -1.2 NONE | L2 z   -1.2 NONE | GAL z    0.1 NONE
+[ 152.4s] NEG|habit2|None|None|8206          | F1 z    1.8 NONE | F2 z    0.3 NONE | L1 z    1.9 NONE | L2 z    1.6 NONE | GAL z   -0.5 NONE
+[ 152.6s] NEG|habit2|None|None|8216          | F1 z    0.2 NONE | F2 z   -0.8 NONE | L1 z    2.6 NONE | L2 z    1.3 NONE | GAL z   -1.7 NONE
+[ 152.6s] NEG|habit3b_sec|None|None|8221     | F1 z    0.8 NONE | F2 z    1.9 NONE | L1 z    1.0 NONE | L2 z    2.2 NONE | GAL z    0.1 NONE
+{
+ "C1": true,
+ "C1_residual_flags": 1,
+ "C2": true,
+ "C3": true,
+ "C3_present": "12/12",
+ "C3_misses": [],
+ "L1_payload_descriptive": [
+  [
+   "ITA_dante",
+   "PRESENT",
+   18.5,
+   "L2 z",
+   2.4
+  ],
+  [
+   "LAT_mesue",
+   "PRESENT",
+   8.3,
+   "L2 z",
+   0.5
+  ],
+  [
+   "LAT_rec",
+   "PRESENT",
+   27.4,
+   "L2 z",
+   0.5
+  ],
+  [
+   "LAT_sismel",
+   "PRESENT",
+   44.6,
+   "L2 z",
+   1.2
+  ],
+  [
+   "NT_it",
+   "PRESENT",
+   41.5,
+   "L2 z",
+   1.4
+  ],
+  [
+   "NT_la",
+   "PRESENT",
+   35.4,
+   "L2 z",
+   2.4
+  ]
+ ],
+ "nopay_max_z7": {
+  "F1": 2.4008091243492875,
+  "F2": 3.9761898191044094,
+  "L1": 3.4438097568040034,
+  "L2": 3.3240739872883087,
+  "GAL": 2.0177239221955428
+ },
+ "PASS": true
+}
+exit 0

@@ -1,14 +1,14 @@
-[DECOY_F1_NTla] 68s
+[DECOY_F1_NTla] 63s
 [DECOY_F1_NTla] F1  [EF-F, movable 0.518, 14 symbols] RPT7 1732/161.0 (sd 17.5) D +1571.0 z 89.62 p 0.0010 -> PRESENT       [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 7750/4146 z 58.30 p 0.0010 | DIST7 697/77.7
 [DECOY_F1_NTla] F2  [EF-F, movable 0.518, 35 symbols] RPT7 28/37.3 (sd 9.2) D -9.3 z -1.01 p 0.8601 -> NONE          [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3140/2991 z 2.88 p 0.0040 | DIST7 14/18.5
-[DECOY_F1_NTla] L1  [EF-L, movable 0.731, 29 symbols] RPT7 1444/1345.7 (sd 42.9) D +98.3 z 2.29 p 0.0140 -> NONE          [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8090/8083 z 0.14 p 0.4505 | DIST7 512/507.1
-[DECOY_F1_NTla] L2  [EF-L, movable 0.731, 32 symbols] RPT7 1389/1232.9 (sd 43.4) D +156.1 z 3.60 p 0.0010 -> NONE          [PRESENT z >= 4.53; NONE z <= 3.94 or p > 0.05] | RPT5 8223/8141 z 1.64 p 0.0519 | DIST7 573/525.2
+[DECOY_F1_NTla] L1  [EF-L, movable 0.731, 29 symbols] RPT7 1444/1345.7 (sd 42.9) D +98.3 z 2.29 p 0.0140 -> NONE (descriptive) [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8090/8083 z 0.14 p 0.4505 | DIST7 512/507.1
+[DECOY_F1_NTla] L2  [EF-L, movable 0.731, 32 symbols] RPT7 1389/1232.9 (sd 43.4) D +156.1 z 3.60 p 0.0010 -> NONE (descriptive) [PRESENT z >= 4.53; NONE z <= 3.94 or p > 0.05] | RPT5 8223/8141 z 1.64 p 0.0519 | DIST7 573/525.2
 [DECOY_F1_NTla] GAL [EF-K2, movable 0.200, 9 symbols] RPT7 4860/4846.7 (sd 28.4) D +13.3 z 0.47 p 0.3357 -> NONE (descriptive) [PRESENT z >= 2.46; NONE z <= 2.63 or p > 0.05] | RPT5 11414/11447 z -1.77 p 0.9610 | DIST7 1273/1272.2
-[DECOY_F1_NTla] summary: PAYLOAD CHANNEL PRESENT (F1) | GAL (descriptive): NONE
-[DECOY_edge2] 70s
+[DECOY_F1_NTla] summary: PAYLOAD CHANNEL PRESENT (F1) | descriptive: L1 NONE, L2 NONE, GAL NONE
+[DECOY_edge2] 66s
 [DECOY_edge2] F1  [EF-F, movable 0.544, 26 symbols] RPT7 98/89.5 (sd 14.1) D +8.5 z 0.61 p 0.2757 -> NONE          [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 4315/4210 z 1.97 p 0.0270 | DIST7 49/44.2
 [DECOY_edge2] F2  [EF-F, movable 0.544, 36 symbols] RPT7 67/72.7 (sd 12.4) D -5.7 z -0.46 p 0.6823 -> NONE          [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3291/3358 z -1.33 p 0.9061 | DIST7 33/35.7
-[DECOY_edge2] L1  [EF-L, movable 0.711, 31 symbols] RPT7 1945/1873.0 (sd 44.3) D +72.0 z 1.63 p 0.0589 -> NONE          [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8602/8606 z -0.09 p 0.5315 | DIST7 624/629.0
-[DECOY_edge2] L2  [EF-L, movable 0.711, 34 symbols] RPT7 1420/1373.5 (sd 44.4) D +46.5 z 1.05 p 0.1588 -> NONE          [PRESENT z >= 4.53; NONE z <= 3.94 or p > 0.05] | RPT5 8465/8448 z 0.36 p 0.3596 | DIST7 585/586.9
+[DECOY_edge2] L1  [EF-L, movable 0.711, 31 symbols] RPT7 1945/1873.0 (sd 44.3) D +72.0 z 1.63 p 0.0589 -> NONE (descriptive) [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8602/8606 z -0.09 p 0.5315 | DIST7 624/629.0
+[DECOY_edge2] L2  [EF-L, movable 0.711, 34 symbols] RPT7 1420/1373.5 (sd 44.4) D +46.5 z 1.05 p 0.1588 -> NONE (descriptive) [PRESENT z >= 4.53; NONE z <= 3.94 or p > 0.05] | RPT5 8465/8448 z 0.36 p 0.3596 | DIST7 585/586.9
 [DECOY_edge2] GAL [EF-K2, movable 0.260, 9 symbols] RPT7 4499/4512.2 (sd 32.0) D -13.2 z -0.41 p 0.6803 -> NONE (descriptive) [PRESENT z >= 2.46; NONE z <= 2.63 or p > 0.05] | RPT5 11357/11329 z 1.30 p 0.1029 | DIST7 1213/1211.4
-[DECOY_edge2] summary: F1 NONE, F2 NONE, L1 NONE, L2 NONE | GAL (descriptive): NONE
+[DECOY_edge2] summary: NO START-POSITION PAYLOAD (F1 NONE, F2 NONE) | descriptive: L1 NONE, L2 NONE, GAL NONE

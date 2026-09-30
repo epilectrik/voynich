@@ -204,11 +204,13 @@
  },
  "calls": {
   "F1": "PRESENT",
-  "F2": "NONE",
-  "L1": "NONE",
-  "L2": "NONE"
+  "F2": "NONE"
  },
- "GAL_descriptive": "NONE",
+ "descriptive_calls": {
+  "L1": "NONE",
+  "L2": "NONE",
+  "GAL": "NONE"
+ },
  "summary": "summary: PAYLOAD CHANNEL PRESENT (F1)",
  "thresholds": {
   "F1": {
@@ -233,7 +235,7 @@
    "tau": 5.046148532807086,
    "n_neg": 44,
    "n_pos": 5,
-   "arm": true
+   "arm": false
   },
   "L2": {
    "NEG": 3.941458858124747,
@@ -241,7 +243,7 @@
    "tau": 4.530219897331303,
    "n_neg": 44,
    "n_pos": 5,
-   "arm": true
+   "arm": false
   },
   "GAL": {
    "NEG": 2.6281771186203495,

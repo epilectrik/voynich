@@ -1,6 +1,6 @@
 # PHASE_777 — Is one glyph position per word a message channel, with the rest of the word rule-built filler? (pre-registration)
 
-**Status: DRAFT v2 for the lean-expert lock audit (not locked).**
+**Status: DRAFT v2 for the lean-expert lock audit (not locked); v2 certification PASSED (below).**
 - **v1** (four confirmatory arms F1, F2, L1, L2 with three-way calls) **failed its certification** on fresh seeds and
   texts (`results/prelock_cert777_v1.json`): C1 failed on the INDETERMINATE count (4 no-payload arm calls fell between
   the design no-payload maximum and τ, against a limit of 2; none was PRESENT), and C2 failed because an L1 payload
@@ -119,7 +119,20 @@ Dante; third letter block; criteria fixed before running)
 - L1 payload controls (6) and all L1/L2/GAL values are reported without a criterion.
 - PASS = C1, C2 and C3. A FAIL means redesign, with no re-tuning on these seeds.
 
-**Result:** *(filled in after the run)*
+**Result** (`results/prelock_cert777.json`, run after the v2 draft was committed at 9347be9): **PASS.**
+
+| Criterion | Result |
+|---|---|
+| C1 (no no-payload run PAYLOAD PRESENT on F1 or F2) | pass: 0 of 48 arm calls; max no-payload z7 F1 2.40, F2 3.98; one residual flag (F2) |
+| C2 (no cross-arm PRESENT among F payloads) | pass |
+| C3 (≥ 11 of 12 F-arm payload controls PRESENT) | pass: 12 of 12 (F1 and F2 both ≥ 18 on Mesue, higher on the others) |
+
+L1 payload controls (descriptive): all six above the design L1 threshold (z7 8.3 Mesue; 18.5–44.6 the others), with
+no leakage into L2 (z7 0.5–2.4). No-payload maxima on the descriptive channels: L1 3.4, L2 3.3, GAL 2.0.
+
+**Dry run (v2 code):** the F1 payload decoy (Latin NT, third letter block) is PAYLOAD PRESENT on F1 (z7 89.6) and NOT
+PRESENT on F2; the edge-only decoy is NOT PRESENT on both arms (F1 z7 0.6, F2 −0.5); all descriptive channels NONE in
+both.
 
 ## Declared prior knowledge and exposure
 - **B's facts relied on:** the boundary coupling and routing (C1212/C1563, C2082); C2091, C2093, C2094 (interiors and
