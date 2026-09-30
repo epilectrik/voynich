@@ -1,0 +1,5 @@
+{
+ "data/transcriptions/reference/ZL_official.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+ "data/transcriptions/interlinear_full_words.txt": "13c9441d8cd1f6883b3b8f47aa88df84d8c5a6ef30606734e5665e98a2671915",
+ "scripts/voynich.py": "7c4171f614b1eabd500b3cfc8410085872b182e6de962bf7955c9ee0c0afaf6e"
+}

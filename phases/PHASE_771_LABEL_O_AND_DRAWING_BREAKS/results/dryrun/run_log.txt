@@ -1,0 +1,41 @@
+DRY RUN on a decoy copy of the data (no lock check; no real label or break glyph is read)
+Arm L primary: {"n_words": 623, "n_folios": 55, "weights": {"qo": 0.1005, "o": 0.8995, "init": 0.0}, "ci95": {"qo": [0.0001, 0.2343], "o": [0.7653, 0.9987], "init": [0.0, 0.0104]}, "call": "ordinary o-words"}
+  fit check p 0.6467 | alpha labels 252.67 | power at label clustering {'qo': 1.0, 'o': 1.0, 'init': 1.0}
+  s1_language_matched: ordinary o-words {'qo': 0.0849, 'o': 0.913, 'init': 0.002} (min ref L>=4: 33, feeds fragile: False)
+  s2_line_initial_refs_no_par_first: MIXED / UNRESOLVED {'qo': 0.5301, 'o': 0.4699, 'init': 0.0} (min ref L>=4: 15, feeds fragile: False)
+  s3_merged_spaces: ordinary o-words {'qo': 0.1443, 'o': 0.8557, 'init': 0.0} (min ref L>=4: 289, feeds fragile: True)
+  s6_init_without_o_q: ordinary o-words {'qo': 0.1005, 'o': 0.8995, 'init': 0.0} (min ref L>=4: 185, feeds fragile: True)
+  s7_azc_labels_vs_azc_ring_text: ordinary o-words {'qo': 0.0146, 'o': 0.9822, 'init': 0.0031} (min ref L>=4: 17, feeds fragile: False)
+  s8_type_weighted_refs: MIXED / UNRESOLVED {'qo': 0.5478, 'o': 0.4522, 'init': 0.0} (min ref L>=4: 120, feeds fragile: True)
+  s5 astro_zodiac_cosmo: n=412 folios=22 ordinary o-words {'qo': 0.0577, 'o': 0.942, 'init': 0.0004}
+  s5 bio: n=74 folios=11 MIXED / UNRESOLVED {'qo': 0.1622, 'o': 0.8222, 'init': 0.0155}
+  s5 pharma_herbal: n=129 folios=19 MIXED / UNRESOLVED {'qo': 0.1617, 'o': 0.8383, 'init': 0.0}
+  Arm L VERDICT: ordinary o-words
+  stem families: {"labels": {"n_label_words": 623, "n_with_family": 620, "pooled_share_qoX_oX_X": [0.315, 0.463, 0.223], "mean_share_qoX_oX_X": [0.26, 0.497, 0.243]}, "text_o_words_matched": {"n_with_family": 620, "pooled_share_qoX_oX_X": [0.292, 0.451, 0.257], "mean_share_qoX_oX_X": [0.274, 0.43, 0.296]}}
+Arm E A_start: n=522 folios=79 I=0.058 CI=[-0.112, 0.205] -> E-line
+    t1_no_single_unit_words: I=0.01 CI=[-0.174, 0.17] E-line (n=480)
+    t2_merged_spaces: I=0.024 CI=[-0.158, 0.179] E-line (n=521)
+    t3_relative_position: I=0.116 CI=[-0.043, 0.248] E-line (n=522)
+    t4_single_break_lines: I=0.145 CI=[-0.034, 0.326] E-line (n=360)
+    t5_no_cut_word_candidates: I=0.092 CI=[-0.085, 0.248] E-line (n=508)
+Arm E A_end: n=522 folios=79 I=-0.011 CI=[-0.203, 0.153] -> E-line
+    t1_no_single_unit_words: I=-0.058 CI=[-0.247, 0.106] E-line (n=480)
+    t2_merged_spaces: I=-0.007 CI=[-0.202, 0.165] E-line (n=521)
+    t3_relative_position: I=-0.058 CI=[-0.277, 0.107] E-line (n=522)
+    t4_single_break_lines: I=0.026 CI=[-0.165, 0.2] E-line (n=360)
+    t5_no_cut_word_candidates: I=0.02 CI=[-0.176, 0.189] E-line (n=508)
+Arm E B_start: n=214 folios=27 I=0.262 CI=[0.143, 0.383] -> UNRESOLVED
+    t1_no_single_unit_words: I=0.244 CI=[0.121, 0.368] UNRESOLVED (n=202)
+    t2_merged_spaces: I=0.255 CI=[0.138, 0.375] UNRESOLVED (n=213)
+    t3_relative_position: I=0.261 CI=[0.143, 0.39] UNRESOLVED (n=214)
+    t4_single_break_lines: I=0.206 CI=[0.064, 0.362] UNRESOLVED (n=148)
+    t5_no_cut_word_candidates: I=0.27 CI=[0.157, 0.386] UNRESOLVED (n=210)
+Arm E B_end: n=214 folios=27 I=0.133 CI=[0.018, 0.279] -> descriptive (E-line)
+    t1_no_single_unit_words: I=0.126 CI=[0.0, 0.299] E-line (n=202)
+    t2_merged_spaces: I=0.14 CI=[0.026, 0.285] E-line (n=213)
+    t3_relative_position: I=0.132 CI=[0.016, 0.288] E-line (n=214)
+    t4_single_break_lines: I=0.226 CI=[0.076, 0.397] UNRESOLVED (n=148)
+    t5_no_cut_word_candidates: I=0.141 CI=[0.021, 0.297] E-line (n=210)
+  Arm E arm-level: {'start': 'no arm-level statement (languages differ or a cell is descriptive)', 'end': 'no arm-level statement (languages differ or a cell is descriptive)'}
+  descriptive: {"A": {"articulator_rate": {"continuation_line_initial": 0.1587, "mid": 0.03, "post_break": 0.0441}, "bare_aiin_count": {"post_break": 3, "continuation_line_initial": 0, "mid_rate": 0.0101}, "m_final_rate": {"continuation_line_final": 0.1039, "mid": 0.019, "pre_break": 0.023}}, "B": {"articulator_rate": {"continuation_line_initial": 0.1639, "mid": 0.0225, "post_break": 0.0561}, "bare_aiin_count": {"post_break": 1, "continuation_line_initial": 0, "mid_rate": 0.0192}, "m_final_rate": {"continuation_line_final": 0.205, "mid": 0.005, "pre_break": 0.028}}}
+done 878.8 s

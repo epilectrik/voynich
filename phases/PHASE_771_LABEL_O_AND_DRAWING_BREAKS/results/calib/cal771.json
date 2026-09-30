@@ -1,0 +1,293 @@
+{
+ "arm_L": {
+  "n_label_folios": 53,
+  "n_label_words": 608,
+  "length_profile": {
+   "2": 5,
+   "3": 33,
+   "4": 130,
+   "5": 153,
+   "6": 161,
+   "7": 126
+  },
+  "ref_sizes": {
+   "2": {
+    "qo": 222,
+    "o": 1037,
+    "init": 1140
+   },
+   "3": {
+    "qo": 391,
+    "o": 476,
+    "init": 3685
+   },
+   "4": {
+    "qo": 2089,
+    "o": 2329,
+    "init": 7738
+   },
+   "5": {
+    "qo": 1375,
+    "o": 1607,
+    "init": 8222
+   },
+   "6": {
+    "qo": 871,
+    "o": 1081,
+    "init": 7386
+   },
+   "7": {
+    "qo": 183,
+    "o": 483,
+    "init": 6603
+   }
+  },
+  "alpha_text_o": 19.8,
+  "alpha_text_o_calls": {
+   "qo": {
+    "o = qo without q": 1.0
+   },
+   "o": {
+    "ordinary o-words": 1.0
+   },
+   "init": {
+    "o added to a word": 1.0
+   },
+   "qo+o": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "o+init": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "qo+init": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "2/3qo+o": {
+    "MIXED / UNRESOLVED": 0.965,
+    "o = qo without q": 0.035
+   },
+   "2/3o+qo": {
+    "MIXED / UNRESOLVED": 0.975,
+    "ordinary o-words": 0.025
+   },
+   "2/3o+init": {
+    "MIXED / UNRESOLVED": 0.995,
+    "ordinary o-words": 0.005
+   },
+   "2/3init+o": {
+    "MIXED / UNRESOLVED": 0.98,
+    "o added to a word": 0.02
+   },
+   "2/3qo+init": {
+    "MIXED / UNRESOLVED": 0.995,
+    "o = qo without q": 0.005
+   },
+   "2/3init+qo": {
+    "MIXED / UNRESOLVED": 0.99,
+    "o added to a word": 0.01
+   }
+  },
+  "alpha_quarter_calls": {
+   "qo": {
+    "o = qo without q": 0.99,
+    "MIXED / UNRESOLVED": 0.01
+   },
+   "o": {
+    "ordinary o-words": 0.97,
+    "MIXED / UNRESOLVED": 0.03
+   },
+   "init": {
+    "o added to a word": 1.0
+   },
+   "qo+o": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "o+init": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "qo+init": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "2/3qo+o": {
+    "MIXED / UNRESOLVED": 0.975,
+    "o = qo without q": 0.025
+   },
+   "2/3o+qo": {
+    "MIXED / UNRESOLVED": 0.96,
+    "ordinary o-words": 0.04
+   },
+   "2/3o+init": {
+    "MIXED / UNRESOLVED": 1.0
+   },
+   "2/3init+o": {
+    "MIXED / UNRESOLVED": 0.955,
+    "o added to a word": 0.045
+   },
+   "2/3qo+init": {
+    "MIXED / UNRESOLVED": 0.995,
+    "o = qo without q": 0.005
+   },
+   "2/3init+qo": {
+    "o added to a word": 0.02,
+    "MIXED / UNRESOLVED": 0.98
+   }
+  },
+  "fit_check_size_at_0.01": {
+   "alpha_text_o|qo": 0.01,
+   "alpha_text_o|o": 0.0,
+   "alpha_text_o|init": 0.01,
+   "alpha_quarter|qo": 0.02,
+   "alpha_quarter|o": 0.02,
+   "alpha_quarter|init": 0.0
+  }
+ },
+ "arm_E": {
+  "n_breaks": {
+   "A": 512,
+   "B": 213
+  },
+  "A_start": {
+   "fallback": [
+    {
+     "0": 505,
+     "2": 1,
+     "1": 6
+    },
+    {
+     "0": 508,
+     "2": 1,
+     "1": 3
+    }
+   ],
+   "seg": {
+    "calls": {
+     "E-seg": 1.0
+    },
+    "I_mean": 1.001,
+    "I_sd": 0.048
+   },
+   "line": {
+    "calls": {
+     "E-line": 0.986,
+     "UNRESOLVED": 0.014
+    },
+    "I_mean": 0.013,
+    "I_sd": 0.071
+   },
+   "half": {
+    "calls": {
+     "UNRESOLVED": 0.818,
+     "PARTIAL": 0.182
+    },
+    "I_mean": 0.51,
+    "I_sd": 0.065
+   }
+  },
+  "A_end": {
+   "fallback": [
+    {
+     "0": 511,
+     "2": 1
+    },
+    {
+     "0": 511,
+     "2": 1
+    }
+   ],
+   "seg": {
+    "calls": {
+     "E-seg": 0.952,
+     "UNRESOLVED": 0.048
+    },
+    "I_mean": 1.035,
+    "I_sd": 0.089
+   },
+   "line": {
+    "calls": {
+     "E-line": 0.828,
+     "UNRESOLVED": 0.172
+    },
+    "I_mean": 0.056,
+    "I_sd": 0.076
+   },
+   "half": {
+    "calls": {
+     "UNRESOLVED": 1.0
+    },
+    "I_mean": 0.538,
+    "I_sd": 0.087
+   }
+  },
+  "B_start": {
+   "fallback": [
+    {
+     "0": 210,
+     "1": 3
+    },
+    {
+     "0": 207,
+     "1": 6
+    }
+   ],
+   "seg": {
+    "calls": {
+     "E-seg": 1.0
+    },
+    "I_mean": 1.061,
+    "I_sd": 0.054
+   },
+   "line": {
+    "calls": {
+     "E-line": 0.998,
+     "UNRESOLVED": 0.002
+    },
+    "I_mean": 0.018,
+    "I_sd": 0.059
+   },
+   "half": {
+    "calls": {
+     "PARTIAL": 0.218,
+     "UNRESOLVED": 0.78,
+     "E-seg": 0.002
+    },
+    "I_mean": 0.538,
+    "I_sd": 0.068
+   }
+  },
+  "B_end": {
+   "fallback": [
+    {
+     "0": 213
+    },
+    {
+     "0": 209,
+     "1": 4
+    }
+   ],
+   "seg": {
+    "calls": {
+     "UNRESOLVED": 0.354,
+     "E-seg": 0.646
+    },
+    "I_mean": 1.008,
+    "I_sd": 0.126
+   },
+   "line": {
+    "calls": {
+     "E-line": 1.0
+    },
+    "I_mean": -0.015,
+    "I_sd": 0.036
+   },
+   "half": {
+    "calls": {
+     "UNRESOLVED": 0.998,
+     "PARTIAL": 0.002
+    },
+    "I_mean": 0.492,
+    "I_sd": 0.098
+   }
+  }
+ },
+ "runtime_s": 3132.8
+}

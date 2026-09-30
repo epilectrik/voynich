@@ -1,0 +1,1091 @@
+{
+ "dry": true,
+ "arm_L": {
+  "alpha_text_o": 20.97,
+  "ref_sizes": {
+   "2": {
+    "qo": 218,
+    "o": 1049,
+    "init": 1122
+   },
+   "3": {
+    "qo": 387,
+    "o": 455,
+    "init": 3646
+   },
+   "4": {
+    "qo": 2129,
+    "o": 2327,
+    "init": 7756
+   },
+   "5": {
+    "qo": 1397,
+    "o": 1584,
+    "init": 8248
+   },
+   "6": {
+    "qo": 876,
+    "o": 1069,
+    "init": 7413
+   },
+   "7": {
+    "qo": 185,
+    "o": 478,
+    "init": 6598
+   }
+  },
+  "primary": {
+   "n_words": 623,
+   "n_folios": 55,
+   "weights": {
+    "qo": 0.1005,
+    "o": 0.8995,
+    "init": 0.0
+   },
+   "ci95": {
+    "qo": [
+     0.0001,
+     0.2343
+    ],
+    "o": [
+     0.7653,
+     0.9987
+    ],
+    "init": [
+     0.0,
+     0.0104
+    ]
+   },
+   "call": "ordinary o-words",
+   "observed": {
+    "k": 192,
+    "t": 171,
+    "l": 123,
+    "r": 37,
+    "d": 12,
+    "a": 10,
+    "e": 11,
+    "o": 2,
+    "y": 2,
+    "s": 4,
+    "ch": 5,
+    "sh": 1,
+    "pf": 38,
+    "bench": 2,
+    "minim": 9,
+    "q": 2,
+    "other": 2
+   },
+   "expected": {
+    "k": 199.8,
+    "t": 163.3,
+    "l": 120.9,
+    "r": 39.3,
+    "d": 19.5,
+    "a": 6.6,
+    "e": 9.6,
+    "o": 1.2,
+    "y": 2.2,
+    "s": 3.2,
+    "ch": 5.3,
+    "sh": 2.1,
+    "pf": 32.9,
+    "bench": 7.6,
+    "minim": 5.8,
+    "q": 1.5,
+    "other": 2.5
+   },
+   "min_ref_L4plus": 185,
+   "feeds_fragile": true,
+   "alpha_labels": 252.67,
+   "alpha_fit_check": 20.97,
+   "fit_check_p": 0.6467,
+   "flag_no_mixture_fits": false,
+   "power_at_label_clustering": {
+    "qo": 1.0,
+    "o": 1.0,
+    "init": 1.0
+   }
+  },
+  "sensitivity": {
+   "s1_language_matched": {
+    "weights": {
+     "qo": 0.0849,
+     "o": 0.913,
+     "init": 0.002
+    },
+    "ci95": {
+     "qo": [
+      0.0,
+      0.2059
+     ],
+     "o": [
+      0.7905,
+      0.9991
+     ],
+     "init": [
+      0.0,
+      0.0142
+     ]
+    },
+    "call": "ordinary o-words",
+    "n_words": 623,
+    "min_ref_L4plus": 33,
+    "feeds_fragile": false
+   },
+   "s2_line_initial_refs_no_par_first": {
+    "n_words": 623,
+    "n_folios": 55,
+    "weights": {
+     "qo": 0.5301,
+     "o": 0.4699,
+     "init": 0.0
+    },
+    "ci95": {
+     "qo": [
+      0.4395,
+      0.6377
+     ],
+     "o": [
+      0.3623,
+      0.5605
+     ],
+     "init": [
+      0.0,
+      0.0
+     ]
+    },
+    "call": "MIXED / UNRESOLVED",
+    "observed": {
+     "k": 192,
+     "t": 171,
+     "l": 123,
+     "r": 37,
+     "d": 12,
+     "a": 10,
+     "e": 11,
+     "o": 2,
+     "y": 2,
+     "s": 4,
+     "ch": 5,
+     "sh": 1,
+     "pf": 38,
+     "bench": 2,
+     "minim": 9,
+     "q": 2,
+     "other": 2
+    },
+    "expected": {
+     "k": 242.3,
+     "t": 122.6,
+     "l": 74.5,
+     "r": 32.5,
+     "d": 19.7,
+     "a": 21.8,
+     "e": 22.6,
+     "o": 5.2,
+     "y": 8.4,
+     "s": 6.6,
+     "ch": 21.4,
+     "sh": 11.9,
+     "pf": 5.7,
+     "bench": 12.5,
+     "minim": 5.1,
+     "q": 5.9,
+     "other": 4.2
+    },
+    "min_ref_L4plus": 15,
+    "feeds_fragile": false
+   },
+   "s3_merged_spaces": {
+    "n_words": 619,
+    "n_folios": 55,
+    "weights": {
+     "qo": 0.1443,
+     "o": 0.8557,
+     "init": 0.0
+    },
+    "ci95": {
+     "qo": [
+      0.0198,
+      0.2862
+     ],
+     "o": [
+      0.7133,
+      0.9802
+     ],
+     "init": [
+      0.0,
+      0.0084
+     ]
+    },
+    "call": "ordinary o-words",
+    "observed": {
+     "k": 192,
+     "t": 170,
+     "l": 121,
+     "r": 36,
+     "d": 12,
+     "a": 10,
+     "e": 11,
+     "o": 2,
+     "y": 2,
+     "s": 4,
+     "ch": 5,
+     "sh": 1,
+     "pf": 38,
+     "bench": 2,
+     "minim": 9,
+     "q": 2,
+     "other": 2
+    },
+    "expected": {
+     "k": 200.7,
+     "t": 156.4,
+     "l": 120.9,
+     "r": 42.9,
+     "d": 18.3,
+     "a": 7.1,
+     "e": 9.3,
+     "o": 1.5,
+     "y": 2.3,
+     "s": 3.9,
+     "ch": 4.8,
+     "sh": 2.3,
+     "pf": 30.8,
+     "bench": 7.5,
+     "minim": 6.3,
+     "q": 1.8,
+     "other": 2.2
+    },
+    "min_ref_L4plus": 289,
+    "feeds_fragile": true
+   },
+   "s6_init_without_o_q": {
+    "n_words": 623,
+    "n_folios": 55,
+    "weights": {
+     "qo": 0.1005,
+     "o": 0.8995,
+     "init": 0.0
+    },
+    "ci95": {
+     "qo": [
+      0.0001,
+      0.2352
+     ],
+     "o": [
+      0.7638,
+      0.9999
+     ],
+     "init": [
+      0.0,
+      0.009
+     ]
+    },
+    "call": "ordinary o-words",
+    "observed": {
+     "k": 192,
+     "t": 171,
+     "l": 123,
+     "r": 37,
+     "d": 12,
+     "a": 10,
+     "e": 11,
+     "o": 2,
+     "y": 2,
+     "s": 4,
+     "ch": 5,
+     "sh": 1,
+     "pf": 38,
+     "bench": 2,
+     "minim": 9,
+     "q": 2,
+     "other": 2
+    },
+    "expected": {
+     "k": 199.8,
+     "t": 163.3,
+     "l": 120.9,
+     "r": 39.3,
+     "d": 19.5,
+     "a": 6.6,
+     "e": 9.6,
+     "o": 1.2,
+     "y": 2.2,
+     "s": 3.2,
+     "ch": 5.3,
+     "sh": 2.1,
+     "pf": 32.9,
+     "bench": 7.6,
+     "minim": 5.8,
+     "q": 1.5,
+     "other": 2.5
+    },
+    "min_ref_L4plus": 185,
+    "feeds_fragile": true
+   },
+   "s7_azc_labels_vs_azc_ring_text": {
+    "n_words": 412,
+    "n_folios": 22,
+    "weights": {
+     "qo": 0.0146,
+     "o": 0.9822,
+     "init": 0.0031
+    },
+    "ci95": {
+     "qo": [
+      0.0,
+      0.099
+     ],
+     "o": [
+      0.901,
+      1.0
+     ],
+     "init": [
+      0.0,
+      0.0105
+     ]
+    },
+    "call": "ordinary o-words",
+    "observed": {
+     "k": 123,
+     "t": 112,
+     "l": 87,
+     "r": 25,
+     "d": 7,
+     "a": 8,
+     "e": 5,
+     "o": 1,
+     "y": 2,
+     "s": 1,
+     "ch": 3,
+     "sh": 0,
+     "pf": 26,
+     "bench": 1,
+     "minim": 7,
+     "q": 2,
+     "other": 2
+    },
+    "expected": {
+     "k": 113.0,
+     "t": 156.9,
+     "l": 40.5,
+     "r": 21.3,
+     "d": 14.3,
+     "a": 4.4,
+     "e": 8.0,
+     "o": 1.2,
+     "y": 1.5,
+     "s": 7.6,
+     "ch": 6.9,
+     "sh": 2.6,
+     "pf": 15.1,
+     "bench": 6.4,
+     "minim": 6.8,
+     "q": 1.0,
+     "other": 4.7
+    },
+    "min_ref_L4plus": 17,
+    "feeds_fragile": false,
+    "ref_sizes": {
+     "2+3": {
+      "qo": 3,
+      "o": 120,
+      "init": 548
+     },
+     "4+5": {
+      "qo": 40,
+      "o": 527,
+      "init": 924
+     },
+     "6+7": {
+      "qo": 17,
+      "o": 370,
+      "init": 1211
+     }
+    }
+   },
+   "s8_type_weighted_refs": {
+    "n_words": 623,
+    "n_folios": 55,
+    "weights": {
+     "qo": 0.5478,
+     "o": 0.4522,
+     "init": 0.0
+    },
+    "ci95": {
+     "qo": [
+      0.406,
+      0.712
+     ],
+     "o": [
+      0.288,
+      0.594
+     ],
+     "init": [
+      0.0,
+      0.0
+     ]
+    },
+    "call": "MIXED / UNRESOLVED",
+    "observed": {
+     "k": 192,
+     "t": 171,
+     "l": 123,
+     "r": 37,
+     "d": 12,
+     "a": 10,
+     "e": 11,
+     "o": 2,
+     "y": 2,
+     "s": 4,
+     "ch": 5,
+     "sh": 1,
+     "pf": 38,
+     "bench": 2,
+     "minim": 9,
+     "q": 2,
+     "other": 2
+    },
+    "expected": {
+     "k": 137.2,
+     "t": 113.0,
+     "l": 67.2,
+     "r": 24.0,
+     "d": 30.9,
+     "a": 11.9,
+     "e": 35.8,
+     "o": 12.4,
+     "y": 10.8,
+     "s": 10.7,
+     "ch": 17.0,
+     "sh": 11.0,
+     "pf": 67.3,
+     "bench": 35.9,
+     "minim": 21.7,
+     "q": 5.7,
+     "other": 10.7
+    },
+    "min_ref_L4plus": 120,
+    "feeds_fragile": true
+   }
+  },
+  "s5_systems": {
+   "astro_zodiac_cosmo": {
+    "n_words": 412,
+    "n_folios": 22,
+    "weights": {
+     "qo": 0.0577,
+     "o": 0.942,
+     "init": 0.0004
+    },
+    "ci95": {
+     "qo": [
+      0.0,
+      0.244
+     ],
+     "o": [
+      0.7551,
+      1.0
+     ],
+     "init": [
+      0.0,
+      0.0124
+     ]
+    },
+    "call": "ordinary o-words",
+    "observed": {
+     "k": 123,
+     "t": 112,
+     "l": 87,
+     "r": 25,
+     "d": 7,
+     "a": 8,
+     "e": 5,
+     "o": 1,
+     "y": 2,
+     "s": 1,
+     "ch": 3,
+     "sh": 0,
+     "pf": 26,
+     "bench": 1,
+     "minim": 7,
+     "q": 2,
+     "other": 2
+    },
+    "expected": {
+     "k": 126.3,
+     "t": 108.2,
+     "l": 83.6,
+     "r": 27.5,
+     "d": 12.6,
+     "a": 4.4,
+     "e": 6.1,
+     "o": 0.7,
+     "y": 1.5,
+     "s": 2.2,
+     "ch": 3.6,
+     "sh": 1.4,
+     "pf": 22.3,
+     "bench": 4.8,
+     "minim": 4.0,
+     "q": 1.0,
+     "other": 1.7
+    },
+    "min_ref_L4plus": 185,
+    "feeds_fragile": true
+   },
+   "bio": {
+    "n_words": 74,
+    "n_folios": 11,
+    "weights": {
+     "qo": 0.1622,
+     "o": 0.8222,
+     "init": 0.0155
+    },
+    "ci95": {
+     "qo": [
+      0.0,
+      0.4244
+     ],
+     "o": [
+      0.5731,
+      0.9889
+     ],
+     "init": [
+      0.0,
+      0.1064
+     ]
+    },
+    "call": "MIXED / UNRESOLVED",
+    "observed": {
+     "k": 26,
+     "t": 23,
+     "l": 11,
+     "r": 3,
+     "d": 1,
+     "a": 0,
+     "e": 1,
+     "o": 1,
+     "y": 0,
+     "s": 2,
+     "ch": 1,
+     "sh": 0,
+     "pf": 4,
+     "bench": 0,
+     "minim": 1,
+     "q": 0,
+     "other": 0
+    },
+    "expected": {
+     "k": 26.6,
+     "t": 20.2,
+     "l": 11.5,
+     "r": 3.2,
+     "d": 2.5,
+     "a": 0.8,
+     "e": 1.2,
+     "o": 0.4,
+     "y": 0.3,
+     "s": 0.3,
+     "ch": 0.9,
+     "sh": 0.4,
+     "pf": 3.7,
+     "bench": 1.1,
+     "minim": 0.4,
+     "q": 0.2,
+     "other": 0.2
+    },
+    "min_ref_L4plus": 185,
+    "feeds_fragile": true
+   },
+   "pharma_herbal": {
+    "n_words": 129,
+    "n_folios": 19,
+    "weights": {
+     "qo": 0.1617,
+     "o": 0.8383,
+     "init": 0.0
+    },
+    "ci95": {
+     "qo": [
+      0.0007,
+      0.3817
+     ],
+     "o": [
+      0.6183,
+      0.9978
+     ],
+     "init": [
+      0.0,
+      0.0095
+     ]
+    },
+    "call": "MIXED / UNRESOLVED",
+    "observed": {
+     "k": 38,
+     "t": 35,
+     "l": 24,
+     "r": 9,
+     "d": 4,
+     "a": 1,
+     "e": 5,
+     "o": 0,
+     "y": 0,
+     "s": 1,
+     "ch": 1,
+     "sh": 1,
+     "pf": 8,
+     "bench": 1,
+     "minim": 1,
+     "q": 0,
+     "other": 0
+    },
+    "expected": {
+     "k": 42.2,
+     "t": 32.4,
+     "l": 25.3,
+     "r": 8.7,
+     "d": 4.1,
+     "a": 1.3,
+     "e": 2.0,
+     "o": 0.3,
+     "y": 0.5,
+     "s": 0.7,
+     "ch": 1.0,
+     "sh": 0.4,
+     "pf": 6.5,
+     "bench": 1.6,
+     "minim": 1.3,
+     "q": 0.3,
+     "other": 0.5
+    },
+    "min_ref_L4plus": 185,
+    "feeds_fragile": true
+   }
+  },
+  "verdict": "ordinary o-words",
+  "fragile": false,
+  "mixed_is_evidence_of_within_label_mixture": false,
+  "s5_same_largest_weight": true,
+  "descriptive_stem_families": {
+   "labels": {
+    "n_label_words": 623,
+    "n_with_family": 620,
+    "pooled_share_qoX_oX_X": [
+     0.315,
+     0.463,
+     0.223
+    ],
+    "mean_share_qoX_oX_X": [
+     0.26,
+     0.497,
+     0.243
+    ]
+   },
+   "text_o_words_matched": {
+    "n_with_family": 620,
+    "pooled_share_qoX_oX_X": [
+     0.292,
+     0.451,
+     0.257
+    ],
+    "mean_share_qoX_oX_X": [
+     0.274,
+     0.43,
+     0.296
+    ]
+   }
+  }
+ },
+ "arm_E": {
+  "n_breaks_cut_word_candidates": 18,
+  "A_start": {
+   "n_breaks": 522,
+   "n_break_folios": 79,
+   "I": 0.05807283942959427,
+   "ci95": [
+    -0.11151337142631877,
+    0.20499773304852623
+   ],
+   "directions": [
+    {
+     "I": 0.07769488093806798,
+     "num": -0.27792260332730623,
+     "mid": -0.33238621749637165,
+     "edge": 0.3686073809426217,
+     "fallback": {
+      "0": 515,
+      "2": 1,
+      "1": 6
+     }
+    },
+    {
+     "I": 0.038450797921120564,
+     "num": -0.36274883187249024,
+     "mid": -0.3897620136352156,
+     "edge": 0.31277689903289735,
+     "fallback": {
+      "0": 518,
+      "2": 1,
+      "1": 3
+     }
+    }
+   ],
+   "call": "E-line",
+   "evaluable": true,
+   "calibrated_power": {
+    "E-seg": 1.0,
+    "E-line": 0.986
+   },
+   "sensitivity": {
+    "t1_no_single_unit_words": {
+     "I": 0.01,
+     "ci95": [
+      -0.174,
+      0.17
+     ],
+     "call": "E-line",
+     "n_breaks": 480
+    },
+    "t2_merged_spaces": {
+     "I": 0.024,
+     "ci95": [
+      -0.158,
+      0.179
+     ],
+     "call": "E-line",
+     "n_breaks": 521
+    },
+    "t3_relative_position": {
+     "I": 0.116,
+     "ci95": [
+      -0.043,
+      0.248
+     ],
+     "call": "E-line",
+     "n_breaks": 522
+    },
+    "t4_single_break_lines": {
+     "I": 0.145,
+     "ci95": [
+      -0.034,
+      0.326
+     ],
+     "call": "E-line",
+     "n_breaks": 360
+    },
+    "t5_no_cut_word_candidates": {
+     "I": 0.092,
+     "ci95": [
+      -0.085,
+      0.248
+     ],
+     "call": "E-line",
+     "n_breaks": 508
+    }
+   },
+   "fragile": false,
+   "verdict": "E-line"
+  },
+  "A_end": {
+   "n_breaks": 522,
+   "n_break_folios": 79,
+   "I": -0.010518070338482163,
+   "ci95": [
+    -0.20294503497069916,
+    0.1530399725940236
+   ],
+   "directions": [
+    {
+     "I": 0.013791249202569153,
+     "num": -0.11377379813866587,
+     "mid": -0.11826210721733572,
+     "edge": 0.20718405162908243,
+     "fallback": {
+      "0": 521,
+      "2": 1
+     }
+    },
+    {
+     "I": -0.03482738987953348,
+     "num": -0.10350758679161846,
+     "mid": -0.08944160318487611,
+     "edge": 0.314435450346727,
+     "fallback": {
+      "0": 521,
+      "2": 1
+     }
+    }
+   ],
+   "call": "E-line",
+   "evaluable": true,
+   "calibrated_power": {
+    "E-seg": 0.952,
+    "E-line": 0.828
+   },
+   "sensitivity": {
+    "t1_no_single_unit_words": {
+     "I": -0.058,
+     "ci95": [
+      -0.247,
+      0.106
+     ],
+     "call": "E-line",
+     "n_breaks": 480
+    },
+    "t2_merged_spaces": {
+     "I": -0.007,
+     "ci95": [
+      -0.202,
+      0.165
+     ],
+     "call": "E-line",
+     "n_breaks": 521
+    },
+    "t3_relative_position": {
+     "I": -0.058,
+     "ci95": [
+      -0.277,
+      0.107
+     ],
+     "call": "E-line",
+     "n_breaks": 522
+    },
+    "t4_single_break_lines": {
+     "I": 0.026,
+     "ci95": [
+      -0.165,
+      0.2
+     ],
+     "call": "E-line",
+     "n_breaks": 360
+    },
+    "t5_no_cut_word_candidates": {
+     "I": 0.02,
+     "ci95": [
+      -0.176,
+      0.189
+     ],
+     "call": "E-line",
+     "n_breaks": 508
+    }
+   },
+   "fragile": false,
+   "verdict": "E-line"
+  },
+  "B_start": {
+   "n_breaks": 214,
+   "n_break_folios": 27,
+   "I": 0.2623922643940842,
+   "ci95": [
+    0.14291229286903143,
+    0.38327122987879725
+   ],
+   "directions": [
+    {
+     "I": 0.2767654587724408,
+     "num": -0.24099685924770656,
+     "mid": -0.654480548652772,
+     "edge": 0.8395053383109468,
+     "fallback": {
+      "0": 211,
+      "1": 3
+     }
+    },
+    {
+     "I": 0.2480190700157276,
+     "num": -0.1877069308163347,
+     "mid": -0.5413084593081449,
+     "edge": 0.8843945258267775,
+     "fallback": {
+      "0": 208,
+      "1": 6
+     }
+    }
+   ],
+   "call": "UNRESOLVED",
+   "evaluable": true,
+   "calibrated_power": {
+    "E-seg": 1.0,
+    "E-line": 0.998
+   },
+   "sensitivity": {
+    "t1_no_single_unit_words": {
+     "I": 0.244,
+     "ci95": [
+      0.121,
+      0.368
+     ],
+     "call": "UNRESOLVED",
+     "n_breaks": 202
+    },
+    "t2_merged_spaces": {
+     "I": 0.255,
+     "ci95": [
+      0.138,
+      0.375
+     ],
+     "call": "UNRESOLVED",
+     "n_breaks": 213
+    },
+    "t3_relative_position": {
+     "I": 0.261,
+     "ci95": [
+      0.143,
+      0.39
+     ],
+     "call": "UNRESOLVED",
+     "n_breaks": 214
+    },
+    "t4_single_break_lines": {
+     "I": 0.206,
+     "ci95": [
+      0.064,
+      0.362
+     ],
+     "call": "UNRESOLVED",
+     "n_breaks": 148
+    },
+    "t5_no_cut_word_candidates": {
+     "I": 0.27,
+     "ci95": [
+      0.157,
+      0.386
+     ],
+     "call": "UNRESOLVED",
+     "n_breaks": 210
+    }
+   },
+   "fragile": false,
+   "verdict": "UNRESOLVED"
+  },
+  "B_end": {
+   "n_breaks": 214,
+   "n_break_folios": 27,
+   "I": 0.1330197660661196,
+   "ci95": [
+    0.01798372743049616,
+    0.27873569588664016
+   ],
+   "directions": [
+    {
+     "I": 0.12573116264611608,
+     "num": -0.059314525250286285,
+     "mid": -0.17023976928548448,
+     "edge": 0.7120016870144884,
+     "fallback": {
+      "0": 214
+     }
+    },
+    {
+     "I": 0.1403083694861231,
+     "num": -0.062096556931202355,
+     "mid": -0.1835442316175592,
+     "edge": 0.6820326055387472,
+     "fallback": {
+      "0": 210,
+      "1": 4
+     }
+    }
+   ],
+   "call": "E-line",
+   "evaluable": false,
+   "calibrated_power": {
+    "E-seg": 0.646,
+    "E-line": 1.0
+   },
+   "sensitivity": {
+    "t1_no_single_unit_words": {
+     "I": 0.126,
+     "ci95": [
+      0.0,
+      0.299
+     ],
+     "call": "E-line",
+     "n_breaks": 202
+    },
+    "t2_merged_spaces": {
+     "I": 0.14,
+     "ci95": [
+      0.026,
+      0.285
+     ],
+     "call": "E-line",
+     "n_breaks": 213
+    },
+    "t3_relative_position": {
+     "I": 0.132,
+     "ci95": [
+      0.016,
+      0.288
+     ],
+     "call": "E-line",
+     "n_breaks": 214
+    },
+    "t4_single_break_lines": {
+     "I": 0.226,
+     "ci95": [
+      0.076,
+      0.397
+     ],
+     "call": "UNRESOLVED",
+     "n_breaks": 148
+    },
+    "t5_no_cut_word_candidates": {
+     "I": 0.141,
+     "ci95": [
+      0.021,
+      0.297
+     ],
+     "call": "E-line",
+     "n_breaks": 210
+    }
+   },
+   "fragile": false,
+   "verdict": "descriptive (E-line)"
+  },
+  "arm_level": {
+   "start": "no arm-level statement (languages differ or a cell is descriptive)",
+   "end": "no arm-level statement (languages differ or a cell is descriptive)"
+  },
+  "descriptive": {
+   "A": {
+    "articulator_rate": {
+     "continuation_line_initial": 0.1587,
+     "mid": 0.03,
+     "post_break": 0.0441
+    },
+    "bare_aiin_count": {
+     "post_break": 3,
+     "continuation_line_initial": 0,
+     "mid_rate": 0.0101
+    },
+    "m_final_rate": {
+     "continuation_line_final": 0.1039,
+     "mid": 0.019,
+     "pre_break": 0.023
+    }
+   },
+   "B": {
+    "articulator_rate": {
+     "continuation_line_initial": 0.1639,
+     "mid": 0.0225,
+     "post_break": 0.0561
+    },
+    "bare_aiin_count": {
+     "post_break": 1,
+     "continuation_line_initial": 0,
+     "mid_rate": 0.0192
+    },
+    "m_final_rate": {
+     "continuation_line_final": 0.205,
+     "mid": 0.005,
+     "pre_break": 0.028
+    }
+   }
+  }
+ },
+ "runtime_s": 878.8
+}
