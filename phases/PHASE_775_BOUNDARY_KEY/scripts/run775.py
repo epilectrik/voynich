@@ -2,7 +2,7 @@
 """PHASE_775 locked run (see ../PRE_REGISTRATION.md).
 
   python run775.py              verify the lock; key gain G_K1 and G_K2 on Currier B under the header-aware EF null
-                                (1,000 permutations); per-arm calls; descriptives
+                                (1,000 permutations); one-sided per-arm calls (v2); descriptives
   python run775.py --checksums  write results/input_checksums.json (before the lock commit)
   python run775.py --dry        every code path on two DECOYS (a K1-keyed cipher of NT_la segment 5 and a habit3 run)
 """
@@ -79,11 +79,19 @@ def verify_lock():
 
 
 def call(G, p, Kn, TH):
+    """v2 (one-sided, after the failed certification R1): PRESENT is registrable; anything else is 'not PRESENT'."""
+    if G >= TH[f'tau_{Kn}'] and p <= 0.005:
+        return 'PRESENT'
+    return 'not PRESENT'
+
+
+def v1_range(G, p, Kn, TH):
+    """Descriptive position of G against the no-key controls (never a NONE claim)."""
     if G >= TH[f'tau_{Kn}'] and p <= 0.005:
         return 'PRESENT'
     if G <= TH[f'NEG_{Kn}'] or p > 0.05:
-        return 'NONE'
-    return 'INDETERMINATE'
+        return 'at or below the no-key maximum (descriptive)'
+    return 'between the no-key maximum and the PRESENT bar (descriptive)'
 
 
 def analyse(lines, sk, tag):
@@ -100,7 +108,7 @@ def analyse(lines, sk, tag):
     for Kn in ('K1', 'K2'):
         x = res[Kn]
         log(f'[{tag}] ARM {Kn}: key gain G {x["G"]:+.5f}, p_G {x["G_p"]:.4f} -> {calls[Kn]}   '
-            f'[PRESENT >= {TH["tau_" + Kn]:.5f} with p <= 0.005; NONE <= {TH["NEG_" + Kn]:.5f} or p > 0.05]')
+            f'[PRESENT >= {TH["tau_" + Kn]:.5f} with p <= 0.005; {v1_range(x["G"], x["G_p"], Kn, TH)}]')
     summary = ('summary: key gain PRESENT (' + ' and '.join(k for k in ('K1', 'K2') if calls[k] == 'PRESENT') + ')'
                if 'PRESENT' in calls.values() else f'summary: K1 {calls["K1"]}, K2 {calls["K2"]}')
     log(f'[{tag}] {summary}')

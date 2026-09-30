@@ -1,7 +1,13 @@
 # PHASE_775 — Is Currier B's word-boundary rule the key of a context-keyed cipher? (pre-registration)
 
-**Status: DRAFT v1 for the lean-expert lock audit (not locked).** The certification criteria below were fixed before
-the certification ran. After the lock nothing below may change without a new phase number.
+**Status: DRAFT v2 for the lean-expert lock audit (not locked).**
+- **v1** fixed the certification criteria before the certification ran.
+- **The certification failed R1:** some held-out keyed ciphers were missed.
+- **v2 is the redesign that the v1 rule requires,** with no re-tuning:
+  - **both arms become one-sided:** a PRESENT is registrable, and anything else is descriptive, with no exclusion claim;
+  - **every threshold is unchanged.**
+
+After the lock nothing below may change without a new phase number.
 
 ## Origin
 - **The human's challenge.** The human asked for a genuinely new test, text-only, "looking at things in a way a human
@@ -78,11 +84,12 @@ In the design: Mesue segment 0 0.010, Mesue segment 1 0.030, Latin recipes 0.045
 
 **The call on each arm K (K1 and K2 separately):**
 
-| Call | Condition |
+| Call (v2, one-sided) | Condition |
 |---|---|
 | **PRESENT** | G_K ≥ τ_K and p_G ≤ 0.005 (two arms, 0.01 family-wise) |
-| **NONE** | G_K ≤ NEG_K, or p_G > 0.05 |
-| **INDETERMINATE** | otherwise |
+| **not PRESENT** | otherwise; descriptive only, with no exclusion claim |
+
+The v1 three-way range (at or below the no-key maximum, or between) is logged as a description only.
 
 ## Certification (`prelock_cert775.py`; set and criteria fixed before running; segments disjoint from the design)
 **Set:**
@@ -105,7 +112,35 @@ In the design: Mesue segment 0 0.010, Mesue segment 1 0.030, Latin recipes 0.045
 
 PASS = R1, R2 and R3. A FAIL means redesign, with no re-tuning on these segments.
 
-**Result:** *(filled in after the run)*
+**Result** (`results/prelock_cert775.json`, run after commit 2c3c5e6): **FAIL.**
+
+| Criterion | Result |
+|---|---|
+| R2 | pass: both two-spelling ciphers in scope were not NONE |
+| R3 | pass: none of the 23 no-key controls was PRESENT or INDETERMINATE; maximum G_K1 +0.0005, G_K2 +0.0007 |
+| R1 | **fail:** 8 of the 12 one-spelling keyed ciphers in scope were PRESENT on their true key's arm; 4 were missed |
+
+The four R1 misses, plus one out-of-scope case for reference:
+
+| Cipher | O | Key gain | Call |
+|---|---|---|---|
+| K1-keyed English NT 3 | 0.232 | G_K1 +0.0053, p 0.035 | INDETERMINATE |
+| K1-keyed Spanish NT 2 | 0.227 | **G_K1 −0.0043** | **NONE** |
+| K1-keyed Spanish NT 4 | 0.260 | G_K1 +0.0106, p 0.010 | INDETERMINATE |
+| K2-keyed Mesue 4 | 0.054 | G_K2 −0.0003 | NONE |
+| *(reference)* K1-keyed Mesue 3 | 0.032 (below the scope) | G_K1 +0.0040, p 0.010 | INDETERMINATE |
+
+**Why keyed ciphers are missed** (diagnosis, not re-tuned):
+- With B-like alphabets, frequent hidden units receive B's frequent tokens, and those end in a few glyphs.
+- Each ending context is then dominated by the successors of particular preceding words, so P(u | c) departs from
+  P(u).
+- Frequency ranks then stop standing for the same hidden unit across contexts, so rank decoding loses the plaintext
+  order. How often this happens depends on the plaintext's bigram structure, not on O.
+
+**Redesign (v2).**
+- The NONE scope ("excludes keyed ciphers of plaintexts with O ≥ 0.04") is refuted, so no arm keeps an exclusion claim.
+- The false-PRESENT side is certified. Across 59 no-key controls (36 design, 23 certification) the maximum key gain is
+  +0.0007 against τ_K1 0.0033 and τ_K2 0.0041, and none reached PRESENT.
 
 ## Declared prior knowledge and exposure
 - **B's facts relied on:**
@@ -126,21 +161,8 @@ PASS = R1, R2 and R3. A FAIL means redesign, with no re-tuning on these segments
   lists only make the controls' key sequences behave like B's; they cannot encode B's outcome.
 
 ## What each outcome means
-**NONE on both arms.** B shows no key gain: re-labelling tokens by rank within the previous ending reveals no more order
-than global labels do, as with every no-message model, twin and plain code tested.
-
-It excludes a context-keyed substitution whose key is the previous token's last one or two glyph units, with one
-spelling per unit and context, of any plaintext with O ≥ 0.04 (the tested recipe, alchemy and verse texts and New
-Testaments). It rests on the design runs and the certification.
-
-It does not exclude:
-- keys defined otherwise (line position, the previous class, an external key sequence);
-- more than one spelling per unit and context (two spellings were detected in the design for Latin recipes and NT, but
-  this is not certified broadly);
-- letter-level keyed ciphers (not tested);
-- plaintexts with O < 0.04 (lists, low-order pharmacy segments);
-- no-message processes.
-
+**not PRESENT on both arms (v2).** Descriptive only: report G_K and p_G. There is no exclusion claim, because rank
+decoding misses real keyed ciphers whose contexts are dominated by particular preceding words (certification R1).
 It is not evidence of meaninglessness.
 
 **PRESENT on an arm.** B's tokens, re-labelled by frequency rank within the previous token's ending, carry more
@@ -156,10 +178,9 @@ consecutive-order information than global labels do. No no-message run, twin or 
 ## Registry consequences (per arm)
 | Outcome | Consequence |
 |---|---|
-| NONE on both arms | A Tier-2 negative-knowledge row with the scope above |
 | PRESENT on an arm | A Tier-2 measurement row (the key gain, the arm and the controls' range); the interpretation is Tier 3 pending an external test |
-| Otherwise | Phase record |
-| Always | A methods row: rank decoding as a key-removal test, with its power map |
+| not PRESENT | Phase record and the methods row, with G described and no exclusion claim |
+| Always | A methods row: rank decoding as a key-removal test, including its failure mode (contexts dominated by particular preceding words) |
 
 ## Procedure
 1. **Commit** this draft, the scripts and the design results.
@@ -172,6 +193,9 @@ consecutive-order information than global labels do. No no-message run, twin or 
    - runs B once (1,000 permutations);
    - commits the raw result before the write-up.
 6. **The dry run** (`run775.py --dry`: a K1-keyed cipher of Latin NT segment 5, and habit3) runs before the lock.
+
+## Deviations
+- **From v1:** the certification failed R1. Both arms become one-sided (PRESENT only), and no threshold changed.
 
 ## Caveats
 - **O_S was chosen after the design runs** (see Thresholds). The certification tests it on disjoint segments.
