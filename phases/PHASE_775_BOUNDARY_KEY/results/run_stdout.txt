@@ -1,0 +1,12 @@
+PHASE_775 locked run; lock phase775-lock verified; inputs verified; R = 1000; seed 77500
+versions: python 3.11.4, numpy 2.3.2
+[B] 22s | EF cells 11122, movable 0.644
+[B] K0: S 0.06117, EF null 0.05666 (sd 0.00158), dS +0.00451, z 2.9, p 0.0040
+[B] K1: S 0.02110, EF null 0.02111 (sd 0.00126), dS -0.00001, z -0.0, p 0.4965
+[B] K2: S 0.01825, EF null 0.01771 (sd 0.00119), dS +0.00054, z 0.5, p 0.3107
+[B] ARM K1: key gain G -0.00452, p_G 0.9940 -> not PRESENT   [PRESENT >= 0.00331 with p <= 0.005; at or below the no-key maximum (descriptive)]
+[B]   lag-2 key gain -0.00278 (descriptive): not applicable (no positive lag-1 gain)
+[B] ARM K2: key gain G -0.00397, p_G 0.9800 -> not PRESENT   [PRESENT >= 0.00410 with p <= 0.005; at or below the no-key maximum (descriptive)]
+[B]   lag-2 key gain -0.00140 (descriptive): not applicable (no positive lag-1 gain)
+[B] summary: K1 not PRESENT, K2 not PRESENT
+done
