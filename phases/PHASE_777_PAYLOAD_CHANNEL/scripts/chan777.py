@@ -88,12 +88,20 @@ def _reset_cells(C, keys):
     return C
 
 
-def build_null(lines, groups, kind):
+def build_null(lines, groups, kind, quintile=False):
+    """kind EF-F / EF-L / EF-K2 (docstring above). quintile=True adds the slot's line-position quintile to the key
+    (EFq, lock-audit edit 1; a layout property, invariant). Paragraph-level nulls (EFpar) pass paragraph x line-type
+    groups (par_groups) instead of folio x line-type groups."""
     C = E.Corpus(lines, groups, sig=E.sig_fl2, ns=(2,))
     n = len(C.tok)
     first = [units(w)[0] for w in C.vocab]
     last2 = [tuple(units(w)[-2:]) for w in C.vocab]
     gid = C.fol_of                          # group ids (folio x line type when groups are ef_groups)
+    pos, L = [], []
+    for ln in lines:
+        for p in range(len(ln)):
+            pos.append(p)
+            L.append(len(ln))
     keys = [None] * n
     for p in range(n):
         t = C.tok[p]
@@ -101,6 +109,8 @@ def build_null(lines, groups, kind):
             continue
         z = int(C.zone[p])
         g = int(gid[p])
+        if quintile:
+            z = (z, min(4, int(5 * pos[p] / max(L[p], 1))))
         if kind == 'EF-F':
             prev = ('^',) if (p == 0 or C.line_of[p - 1] != C.line_of[p] or C.tok[p - 1] < 0) else last2[C.tok[p - 1]]
             keys[p] = (g, z, last2[t], prev)
@@ -113,6 +123,126 @@ def build_null(lines, groups, kind):
         else:
             raise ValueError(kind)
     return _reset_cells(C, keys)
+
+
+def par_groups(sk):
+    """Paragraph x line-type groups (a paragraph starts at each paragraph-first line; layout only)."""
+    lt = GK.b_line_types(sk)
+    out, cur, last_f = [], -1, None
+    for f, t in zip(sk['folios'], lt):
+        if t == 'H' or f != last_f:
+            cur += 1
+        out.append(f'{f}|P{cur}|{t}')
+        last_f = f
+    return out
+
+
+def composition_figures(lines, sk, channel, seed, n_shuf=20):
+    """Post-run descriptives (lock-audit edit 1): the channel's mean within-line entropy relative to a within-folio
+    shuffle (percent reduction), and the paragraph x top-6-symbol chi-square per degree of freedom within folios."""
+    rng = np.random.default_rng(seed)
+    fn = CHANNELS[channel]
+
+    def mean_H(ls):
+        hs = []
+        for ln in ls:
+            s = [fn(w) for w in ln if w is not None]
+            if len(s) < 4:
+                continue
+            c = np.array(list(Counter(s).values()), dtype=float)
+            p = c / c.sum()
+            hs.append(float(-(p * np.log2(p)).sum()))
+        return float(np.mean(hs))
+    h = mean_H(lines)
+    by = defaultdict(list)
+    for i, f in enumerate(sk['folios']):
+        by[f].append(i)
+    hs = []
+    for _ in range(n_shuf):
+        sh = [list(ln) for ln in lines]
+        for f, idx in by.items():
+            toks = [w for i in idx for w in lines[i] if w is not None]
+            rng.shuffle(toks)
+            it = iter(toks)
+            for i in idx:
+                sh[i] = [None if w is None else next(it) for w in lines[i]]
+        hs.append(mean_H(sh))
+    hn = float(np.mean(hs))
+    pg = par_groups(sk)
+    sym = [fn(w) for ln in lines for w in ln if w is not None]
+    marg = Counter(sym)
+    top = {s for s, _ in marg.most_common(6)}
+    fol = [f for ln, f in zip(sk['lines'], sk['folios']) for w in ln if w is not None]
+    par = [pg[li] for li, ln in enumerate(lines) for w in ln if w is not None]
+    tab = defaultdict(Counter)
+    for f, p, s in zip(fol, par, sym):
+        tab[(f, p.split('|')[1])][s if s in top else 'other'] += 1
+    byf = defaultdict(list)
+    for (f, p), c in tab.items():
+        byf[f].append(c)
+    cats = sorted(top, key=str) + ['other']
+    chi, df = 0.0, 0
+    for f, rows in byf.items():
+        if len(rows) < 2:
+            continue
+        M = np.array([[r[c] for c in cats] for r in rows], dtype=float)
+        rs, cs, T = M.sum(1, keepdims=True), M.sum(0, keepdims=True), M.sum()
+        Ex = rs @ cs / T
+        ok = Ex > 0
+        chi += float((((M - Ex) ** 2)[ok] / Ex[ok]).sum())
+        df += (M.shape[0] - 1) * (int((cs > 0).sum()) - 1)
+    return {'line_entropy_pct_reduction': 100 * (hn - h) / hn, 'line_entropy_z': (h - hn) / max(float(np.std(hs, ddof=1)), 1e-9),
+            'paragraph_chi2_df': chi / max(df, 1)}
+
+
+def palette_plant(sk, channel, alpha, seed, kind='PALPAR'):
+    """No-payload plant (lock audit): channel symbols drawn i.i.d. within each paragraph (PALPAR), line (PALLINE) or
+    line-position quintile (PALPOS) from a unit palette ~ Dirichlet(alpha * B marginal); filler as in payload_lines."""
+    rng = np.random.default_rng(seed)
+    P = b_pools(sk)
+    marg = Counter({s: sum(c.values()) for s, c in P['by_sym'][channel].items()})
+    syms = [s for s, _ in sorted(marg.items(), key=lambda x: (-x[1], str(x[0])))]
+    mv = np.array([marg[s] for s in syms], dtype=float)
+    mv /= mv.sum()
+    pg = par_groups(sk)
+    slot_unit = []
+    for li, ln in enumerate(sk['lines']):
+        L = len(ln)
+        for p, w in enumerate(ln):
+            if w is None:
+                continue
+            slot_unit.append(pg[li].split('|')[1] if kind == 'PALPAR' else (li if kind == 'PALLINE'
+                                                                            else min(4, int(5 * p / max(L, 1)))))
+    pal, sym = {}, []
+    for u in slot_unit:
+        if u not in pal:
+            pal[u] = rng.dirichlet(alpha * mv + 1e-9)
+        sym.append(syms[int(rng.choice(len(syms), p=pal[u]))])
+    cache = {}
+
+    def draw(key, counter):
+        if key not in cache:
+            ks = list(counter)
+            p = np.array([counter[k] for k in ks], dtype=float)
+            cache[key] = (ks, np.cumsum(p / p.sum()))
+        ks, cum = cache[key]
+        return ks[min(int(np.searchsorted(cum, rng.random())), len(ks) - 1)]
+    out, it = [], iter(sym)
+    for ln in sk['lines']:
+        prev, cur = None, []
+        for w in ln:
+            if w is None:
+                cur.append(None)
+                prev = None
+                continue
+            s = next(it)
+            ctx = ('^',) if prev is None else tuple(units(prev)[-2:])
+            pool = P['by_ctx'][channel].get((ctx, s))
+            t = draw((ctx, s), pool) if pool and sum(pool.values()) >= 3 else draw(('S', s), P['by_sym'][channel][s])
+            cur.append(t)
+            prev = t
+        out.append(cur)
+    return out
 
 
 # ------------------------------------------------------------------------------------------------ statistics
@@ -154,7 +284,9 @@ def _summ(o, v, R):
             'z': float((o - v.mean()) / max(sd, 1e-9)), 'p': float((1 + (v >= o).sum()) / (1 + R))}
 
 
-def run(lines, groups, R=200, seed=0, channels=tuple(CHANNELS)):
+def run(lines, groups, R=200, seed=0, channels=tuple(CHANNELS), refined=None):
+    """Primary nulls per channel. refined = paragraph groups (par_groups(sk)) switches on the two refined start-channel
+    nulls for F1/F2 (lock-audit edit 1): EFq (line-position quintile added) and EFpar (paragraph x line-type groups)."""
     rng = np.random.default_rng(seed)
     out = {}
     corp = {}
@@ -169,6 +301,17 @@ def run(lines, groups, R=200, seed=0, channels=tuple(CHANNELS)):
         out[ch] = {st: _summ(obs[st], [x[st] for x in null], R) for st in obs}
         out[ch]['_null'] = kind
         out[ch]['_cells'] = {'n_cells': C.n_cells, 'frac_movable': C.frac_movable, 'symbols': K.S}
+        if refined is not None and ch in ('F1', 'F2'):
+            for nm, Cq in (('EFq', 'q'), ('EFpar', 'p')):
+                key = ('EF-F', nm)
+                if key not in corp:
+                    corp[key] = (build_null(lines, groups, 'EF-F', quintile=True) if nm == 'EFq'
+                                 else build_null(lines, refined, 'EF-F'))
+                Cr = corp[key]
+                Kr = Channel(Cr, CHANNELS[ch])
+                o = Kr.counts(Cr.tok)['RPT7']
+                nl = [Kr.counts(Cr.sample(rng))['RPT7'] for _ in range(R)]
+                out[ch][nm] = dict(_summ(o, nl, R), frac_movable=Cr.frac_movable)
     return out
 
 

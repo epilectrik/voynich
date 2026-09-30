@@ -12,6 +12,10 @@ Rules (fixed before this script was run; see PRE_REGISTRATION.md):
   tau_c = (NEG_c + POS_c) / 2.
   Call per channel: PRESENT if p <= 0.005 and z7 >= tau_c; NONE if p > 0.05 or z7 <= NEG_c; INDETERMINATE otherwise.
 RPT5 and DIST are descriptive.
+
+v2 note (after the failed v1 certification; thresholds unchanged): the confirmatory arms are F1 and F2 with two-way
+calls (PAYLOAD PRESENT, or NOT PRESENT with a descriptive residual flag for NEG < z7 with p <= 0.05); L1, L2 and GAL are
+descriptive. v3 adds the refined-null interpretation gate (EFq, EFpar) for a PRESENT; see PRE_REGISTRATION.md.
 """
 import json
 from pathlib import Path

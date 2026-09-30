@@ -4,7 +4,8 @@
   python run777.py              verify the lock; per-channel repeated 7-run excess on Currier B under each channel's
                                 exact null (1,000 permutations); per-channel calls; descriptives
   python run777.py --checksums  write results/input_checksums.json (before the lock commit)
-  python run777.py --dry        every code path on two DECOYS (an F1 payload of Latin NT letters, and an edge chain)
+  python run777.py --dry        every code path on three DECOYS (an F1 payload of Latin NT letters, an edge chain, and
+                                a no-payload paragraph-palette plant at Dirichlet alpha 5)
 """
 from __future__ import annotations
 
@@ -47,7 +48,8 @@ LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds777.json', 'results/prelock_
           'results/prelock_cert777_v1.json', 'results/prelock_cert777.json', 'results/input_checksums.json',
           'scripts/chan777.py',
           'scripts/prelock_calib777.py', 'scripts/prelock_thresholds777.py', 'scripts/prelock_cert777.py',
-          'scripts/run777.py')
+          'scripts/run777.py', 'scripts/audit/audit777.py', 'scripts/audit/audit777b.py',
+          'scripts/audit/chaneff777.py', 'results/audit/audit777.json', 'results/audit/audit777b.json')
 DRY = '--dry' in sys.argv
 LOGF = None
 
@@ -94,8 +96,22 @@ def call(z, p, t):
 def analyse(lines, sk, tag, X):
     TH = json.load(open(OUT / 'thresholds777.json', encoding='utf-8'))
     t0 = time.time()
-    res = X.run(lines, X.GK.ef_groups(sk), R=R_B, seed=SEED)
+    res = X.run(lines, X.GK.ef_groups(sk), R=R_B, seed=SEED, refined=X.par_groups(sk))
     calls = {c: call(res[c]['RPT7']['z'], res[c]['RPT7']['p'], TH[c]) for c in ARMS}
+    # interpretation gate (lock-audit edit 1): a PRESENT is payload-level only if it survives both refined nulls
+    gate = {}
+    for c in ARMS:
+        q, pr = res[c]['EFq'], res[c]['EFpar']
+        ok_q = q['z'] >= TH[c]['tau'] / 2 and q['p'] <= 0.005
+        ok_p = pr['z'] >= TH[c]['tau'] / 2 and pr['p'] <= 0.005
+        if calls[c] != 'PRESENT':
+            gate[c] = 'n/a'
+        elif ok_q and ok_p:
+            gate[c] = 'payload-level (survives EFq and EFpar)'
+        else:
+            gone = [nm for nm, ok in (('a line-position palette (removed by EFq)', ok_q),
+                                      ('a paragraph palette (removed by EFpar)', ok_p)) if not ok]
+            gate[c] = 'not payload-level: consistent with ' + ' and '.join(gone)
     desc = {c: call(res[c]['RPT7']['z'], res[c]['RPT7']['p'], TH[c]) for c in ('L1', 'L2', 'GAL')}
     log(f'[{tag}] {time.time() - t0:.0f}s')
     for c in CH:
@@ -106,12 +122,21 @@ def analyse(lines, sk, tag, X):
             f'NONE z <= {TH[c]["NEG"]:.2f} or p > 0.05] | '
             f'RPT5 {x5["obs"]}/{x5["null_mean"]:.0f} z {x5["z"]:.2f} p {x5["p"]:.4f} | DIST7 {res[c]["DIST7"]["obs"]}/'
             f'{res[c]["DIST7"]["null_mean"]:.1f}')
-    summary = ('summary: PAYLOAD CHANNEL PRESENT (' + ', '.join(c for c in ARMS if calls[c] == 'PRESENT') + ')'
+        if c in ARMS:
+            q, pr = res[c]['EFq'], res[c]['EFpar']
+            log(f'[{tag}]     refined nulls: EFq z {q["z"]:.2f} p {q["p"]:.4f} (movable {q["frac_movable"]:.3f}); '
+                f'EFpar z {pr["z"]:.2f} p {pr["p"]:.4f} (movable {pr["frac_movable"]:.3f}) -> gate: {gate[c]}')
+    comp = {c: X.composition_figures(lines, sk, c, SEED + 7) for c in ARMS}
+    for c in ARMS:
+        log(f'[{tag}]   composition (post-run descriptive) {c}: line-entropy reduction {comp[c]["line_entropy_pct_reduction"]:.1f}% '
+            f'(z {comp[c]["line_entropy_z"]:.1f}); paragraph chi2/df {comp[c]["paragraph_chi2_df"]:.2f}')
+    summary = ('summary: START-SYMBOL 7-RUN EXCESS at payload level on ' +
+               ', '.join(f'{c} [{gate[c]}]' for c in ARMS if calls[c] == 'PRESENT')
                if 'PRESENT' in calls.values() else 'summary: NO START-POSITION PAYLOAD (' +
                ', '.join(f'{c} {calls[c]}' for c in ARMS) + ')')
     log(f'[{tag}] {summary} | descriptive: ' + ', '.join(f'{c} {desc[c]}' for c in desc))
-    return {'tag': tag, 'res': res, 'calls': calls, 'descriptive_calls': desc, 'summary': summary, 'thresholds': TH,
-            'R': R_B, 'seed': SEED}
+    return {'tag': tag, 'res': res, 'calls': calls, 'gate': gate, 'composition': comp, 'descriptive_calls': desc,
+            'summary': summary, 'thresholds': TH, 'R': R_B, 'seed': SEED}
 
 
 def main():
@@ -131,7 +156,8 @@ def main():
         words = X.G.plaintext_words('NT_la')
         n = X.HR.n_certain(sk)
         decoys = {'DECOY_F1_NTla': X.payload_lines(X.letter_stream(words, n, offset=2 * n), sk, 'F1', 99971)[0],
-                  'DECOY_edge2': X6.edge_only_lines(sk, 99972, k=2)}
+                  'DECOY_edge2': X6.edge_only_lines(sk, 99972, k=2),
+                  'DECOY_PALPAR5_F1': X.palette_plant(sk, 'F1', 5.0, 99973, kind='PALPAR')}
         for tag, lines in decoys.items():
             assert lines != sk['lines']
             r = analyse(lines, sk, tag, X)
