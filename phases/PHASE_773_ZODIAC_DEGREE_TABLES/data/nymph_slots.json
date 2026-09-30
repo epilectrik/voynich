@@ -1,0 +1,2684 @@
+[
+ {
+  "slot_id": 0,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 1,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 2,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 3,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 4,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 5,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:45",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 6,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:15",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 7,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 8,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 9,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 10,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 11,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 12,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 13,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 14,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 15,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 15
+ },
+ {
+  "slot_id": 16,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 16
+ },
+ {
+  "slot_id": 17,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 17
+ },
+ {
+  "slot_id": 18,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 18
+ },
+ {
+  "slot_id": 19,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 20,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 21,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 22,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 23,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 24,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 25,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 26,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 27,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 28,
+  "page": "f70v2",
+  "sign": "Pisces",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 29,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 30,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 31,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 32,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 33,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 34,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 35,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 36,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 37,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 38,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 39,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 40,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 41,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 42,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 43,
+  "page": "f70v1",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 44,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 45,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 46,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 47,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 48,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 49,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 50,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 51,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 52,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 53,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 54,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 55,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 56,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 57,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 58,
+  "page": "f71r",
+  "sign": "Aries",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 59,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 60,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 61,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 62,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 63,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 64,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 65,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 66,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 67,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 68,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 69,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 70,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 71,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 72,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 73,
+  "page": "f71v",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 74,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 75,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 76,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 77,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 78,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 79,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 80,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 81,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 82,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 83,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 84,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 85,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 86,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 87,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 88,
+  "page": "f72r1",
+  "sign": "Taurus",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 89,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 90,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 91,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 92,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 93,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 94,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:15",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 95,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 96,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 97,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 98,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 99,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 100,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 101,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 102,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 103,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 104,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 105,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 106,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 107,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 108,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:45",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 109,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 110,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 111,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 112,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 113,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 114,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 115,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 116,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 117,
+  "page": "f72r2",
+  "sign": "Gemini",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 118,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 119,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 120,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 121,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 122,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 123,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 124,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 125,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 126,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 127,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 128,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 129,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 130,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 131,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 132,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 133,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 134,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 135,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 136,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 137,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 138,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 139,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 140,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 141,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 142,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 143,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 144,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 145,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 146,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 147,
+  "page": "f72r3",
+  "sign": "Cancer",
+  "ring": 3,
+  "ring_meaning": "band 3 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 148,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 149,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 150,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 151,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 152,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 153,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:45",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 154,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 155,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 156,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 157,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 158,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 159,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 160,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 161,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 162,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 163,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 15
+ },
+ {
+  "slot_id": 164,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 16
+ },
+ {
+  "slot_id": 165,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 17
+ },
+ {
+  "slot_id": 166,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 167,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 168,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 169,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 170,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 171,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 172,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 173,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 174,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 175,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 176,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 177,
+  "page": "f72v3",
+  "sign": "Leo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 178,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 179,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 180,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 181,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 182,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 183,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 184,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 185,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 186,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 187,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 188,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 189,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 190,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 191,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 192,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 193,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 15
+ },
+ {
+  "slot_id": 194,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 16
+ },
+ {
+  "slot_id": 195,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:45",
+  "index_in_ring_by_clock_from_12": 17
+ },
+ {
+  "slot_id": 196,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 197,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 198,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 199,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 200,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 201,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 202,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 203,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 204,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 205,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 206,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 207,
+  "page": "f72v2",
+  "sign": "Virgo",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 208,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 209,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 210,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:45",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 211,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 212,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:45",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 213,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:15",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 214,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:45",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 215,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 216,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 217,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 218,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 219,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 220,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 221,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 222,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:45",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 223,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 15
+ },
+ {
+  "slot_id": 224,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 16
+ },
+ {
+  "slot_id": 225,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 17
+ },
+ {
+  "slot_id": 226,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 18
+ },
+ {
+  "slot_id": 227,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 19
+ },
+ {
+  "slot_id": 228,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 229,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 230,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 231,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 232,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 233,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 234,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 235,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:45",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 236,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 237,
+  "page": "f72v1",
+  "sign": "Libra",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 238,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 239,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 240,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "11:15",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 241,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "11:45",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 242,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 243,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 244,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 245,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 246,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:30",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 247,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 248,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 249,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 250,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 251,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 252,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:00",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 253,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:45",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 254,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 255,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 256,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 257,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 15
+ },
+ {
+  "slot_id": 258,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 259,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 260,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 261,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "04:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 262,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 263,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 264,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 265,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 266,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 267,
+  "page": "f73r",
+  "sign": "Scorpius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 268,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "12:30",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 269,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 270,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 271,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 0,
+  "ring_meaning": "top-row arc above the outer ring",
+  "clock": "11:45",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 272,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "12:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 273,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 274,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "01:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 275,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 276,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 277,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 278,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "04:00",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 279,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 280,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 281,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:00",
+  "index_in_ring_by_clock_from_12": 9
+ },
+ {
+  "slot_id": 282,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 10
+ },
+ {
+  "slot_id": 283,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 11
+ },
+ {
+  "slot_id": 284,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "09:00",
+  "index_in_ring_by_clock_from_12": 12
+ },
+ {
+  "slot_id": 285,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:00",
+  "index_in_ring_by_clock_from_12": 13
+ },
+ {
+  "slot_id": 286,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "10:30",
+  "index_in_ring_by_clock_from_12": 14
+ },
+ {
+  "slot_id": 287,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 1,
+  "ring_meaning": "band 1 counted from the outside",
+  "clock": "11:30",
+  "index_in_ring_by_clock_from_12": 15
+ },
+ {
+  "slot_id": 288,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "01:00",
+  "index_in_ring_by_clock_from_12": 0
+ },
+ {
+  "slot_id": 289,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:00",
+  "index_in_ring_by_clock_from_12": 1
+ },
+ {
+  "slot_id": 290,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "02:30",
+  "index_in_ring_by_clock_from_12": 2
+ },
+ {
+  "slot_id": 291,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "03:30",
+  "index_in_ring_by_clock_from_12": 3
+ },
+ {
+  "slot_id": 292,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "05:00",
+  "index_in_ring_by_clock_from_12": 4
+ },
+ {
+  "slot_id": 293,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "06:00",
+  "index_in_ring_by_clock_from_12": 5
+ },
+ {
+  "slot_id": 294,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "07:30",
+  "index_in_ring_by_clock_from_12": 6
+ },
+ {
+  "slot_id": 295,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "08:30",
+  "index_in_ring_by_clock_from_12": 7
+ },
+ {
+  "slot_id": 296,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "09:30",
+  "index_in_ring_by_clock_from_12": 8
+ },
+ {
+  "slot_id": 297,
+  "page": "f73v",
+  "sign": "Sagittarius",
+  "ring": 2,
+  "ring_meaning": "band 2 counted from the outside",
+  "clock": "11:00",
+  "index_in_ring_by_clock_from_12": 9
+ }
+]
