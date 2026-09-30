@@ -2,7 +2,7 @@
 """PHASE_774 locked run (see ../PRE_REGISTRATION.md).
 
   python run774.py              verify the lock; the two pre-registered arms on Currier B under the exact edge-frame
-                                null (EF, 1,000 permutations); the verdict; pre-specified descriptives
+                                null (EF, 1,000 permutations); per-arm calls (v2: E3/E5); pre-specified descriptives
   python run774.py --checksums  write results/input_checksums.json (before the lock commit)
   python run774.py --dry        every code path on two DECOY corpora (a whole-word code of Mesue and a no-message
                                 generator) instead of B; writes results/dryrun/
@@ -44,8 +44,11 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
           'phases/PHASE_767_TOKEN_UNIT_TEST/scripts/tu767.py',
           'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json')
 LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds774.json', 'results/prelock_cert.json',
-          'results/input_checksums.json', 'scripts/ef774.py', 'scripts/merge774.py', 'scripts/gen774.py',
-          'scripts/run774.py', 'scripts/prelock_thresholds.py', 'scripts/prelock_cert.py')
+          'results/prelock_recert.json', 'results/input_checksums.json', 'scripts/ef774.py', 'scripts/merge774.py',
+          'scripts/gen774.py', 'scripts/run774.py', 'scripts/prelock_thresholds.py', 'scripts/prelock_cert.py',
+          'scripts/prelock_recert.py', 'scripts/audit/audit_stress.py', 'results/audit/audit_stress.json')
+CAL_RANGES = {'TOK5_null_no_message': (0.0, 4.4), 'MID5_null_no_message': (14.6, 27.2),
+              'MID5_null_section_fitted': (31.0, 44.0)}
 DRY = '--dry' in sys.argv
 LOGF = None
 
@@ -80,10 +83,19 @@ def verify_lock():
         assert sha256(p) == sums[p], f'input changed since the lock: {p}'
 
 
-def call(stat, p, tau, neg):
-    if stat >= tau and p <= 0.01:
+def call_T(d5, p, th):
+    """T arm (v2, lock-audit E3): half-integer boundaries on the excess count."""
+    if d5 >= th['tau_T'] and p <= 0.01:
         return 'PRESENT'
-    if stat <= neg or p > 0.05:
+    if d5 < th['NONE_T_lt'] or p > 0.05:
+        return 'NONE'
+    return 'INDETERMINATE'
+
+
+def call_M(x5, p, th):
+    if x5 >= th['tau_M'] and p <= 0.01:
+        return 'PRESENT'
+    if x5 <= th['NEG_M'] or p > 0.05:
         return 'NONE'
     return 'INDETERMINATE'
 
@@ -113,26 +125,31 @@ def analyse(lines, folios, tag):
     res = E.ef_test(C, reps, R_B, SEED)
     t5, m5 = res['TOK']['RPT5'], res['MID']['RPT5']
     D5 = t5['obs'] - t5['null_mean']
-    T = call(D5, t5['p'], TH['tau_T'], TH['NEG_T'])
-    Mv = call(m5['X'], m5['p'], TH['tau_M'], TH['NEG_M'])
+    T = call_T(D5, t5['p'], TH)
+    Mv = call_M(m5['X'], m5['p'], TH)
+    # the per-arm calls are the result (E5); this summary line is not a separate verdict
     if 'PRESENT' in (T, Mv):
-        verdict = 'PHRASE REPEATS PRESENT (' + ' and '.join(a for a, v in (('T', T), ('M', Mv)) if v == 'PRESENT') + ')'
+        verdict = 'summary: PHRASE REPEATS PRESENT (' + ' and '.join(a for a, v in (('T', T), ('M', Mv))
+                                                                     if v == 'PRESENT') + ')'
     elif T == 'NONE' and Mv == 'NONE':
-        verdict = 'NONE DETECTED'
+        verdict = 'summary: NONE DETECTED on both arms'
     else:
-        verdict = 'INDETERMINATE'
+        verdict = f'summary: T {T}, M {Mv}'
     log(f'[{tag}] {time.time() - t0:.0f}s | tokens {int((C.tok >= 0).sum())}, types {len(C.vocab)}, '
         f'cells {C.n_cells}, movable {C.frac_movable:.3f}')
     log(f'[{tag}] T arm (TOK, n = 5): obs {t5["obs"]}, null mean {t5["null_mean"]:.2f} (sd {t5["null_sd"]:.2f}), '
-        f'D5 {D5:.2f}, p {t5["p"]:.4f} -> {T}   [tau_T {TH["tau_T"]:.2f}, NEG_T {TH["NEG_T"]:.2f}]')
+        f'D5 {D5:.2f}, p {t5["p"]:.4f} -> {T}   [PRESENT >= {TH["tau_T"]:.1f}, NONE < {TH["NONE_T_lt"]:.1f}]')
     log(f'[{tag}] M arm (MID, n = 5): obs {m5["obs"]}, null mean {m5["null_mean"]:.2f} (sd {m5["null_sd"]:.2f}), '
         f'X5 {m5["X"]:.3f}, p {m5["p"]:.4f} -> {Mv}   [tau_M {TH["tau_M"]:.2f}, NEG_M {TH["NEG_M"]:.2f}]')
-    log(f'[{tag}] VERDICT: {verdict}')
+    log(f'[{tag}] T CALL: {T} | M CALL: {Mv} | {verdict}')
+    nm = {'TOK5_null_mean': t5['null_mean'], 'MID5_null_mean': m5['null_mean'], 'calibration_ranges': CAL_RANGES}
+    log(f'[{tag}] null means (O1): TOK5 {t5["null_mean"]:.2f} (no-message calibration 0-4.4); MID5 '
+        f'{m5["null_mean"]:.2f} (no-message 14.6-27.2, section-fitted 31-44; M-arm PRESENT power assumes <= ~27)')
     # descriptives (pre-specified; no verdict)
     desc = {}
     for k in REPS:
         for nn in NS:
-            for st in (f'RPT{nn}', f'RPTx{nn}', f'DIST{nn}', f'RPT{nn}_r20', f'RPT{nn}_r50'):
+            for st in (f'RPT{nn}', f'RPTi{nn}', f'RPTx{nn}', f'DIST{nn}', f'RPT{nn}_r20', f'RPT{nn}_r50'):
                 x = res[k][st]
                 desc[f'{k}_{st}'] = {'obs': x['obs'], 'null_mean': round(x['null_mean'], 3), 'X': round(x['X'], 3),
                                      'D': round(x['obs'] - x['null_mean'], 3), 'p': x['p']}
@@ -155,7 +172,12 @@ def analyse(lines, folios, tag):
         log(f'[{tag}]     TOK  x{r["count"]} {r["rep"]}  {r["folios"]}')
     for r in lists['MID5'][:15]:
         log(f'[{tag}]     MID  x{r["count"]} {r["rep"]}  {r["folios"]}  e.g. {r["tokens"][:2]}')
-    return {'tag': tag, 'T': {'obs': t5['obs'], 'null_mean': t5['null_mean'], 'null_sd': t5['null_sd'], 'D5': D5,
+    for k in ('TOK', 'MID'):
+        x = res[k]['RPTi5']
+        log(f'[{tag}]   interior-only (O2) {k} n5: {x["obs"]}/{x["null_mean"]:.2f} X {x["X"]:.2f} '
+            f'D {x["obs"] - x["null_mean"]:.2f} p {x["p"]:.3f}')
+    return {'tag': tag, 'null_means': nm,
+            'T': {'obs': t5['obs'], 'null_mean': t5['null_mean'], 'null_sd': t5['null_sd'], 'D5': D5,
                               'p': t5['p'], 'call': T},
             'M': {'obs': m5['obs'], 'null_mean': m5['null_mean'], 'null_sd': m5['null_sd'], 'X5': m5['X'],
                   'p': m5['p'], 'call': Mv},
@@ -183,7 +205,11 @@ def main():
         return
     verify_lock()
     LOGF = open(OUT / 'run_log.txt', 'w', encoding='utf-8')
+    import platform
+    import numba
+    import numpy
     log(f'PHASE_774 locked run; lock {LOCK} verified; inputs verified; R = {R_B}; seed {SEED}')
+    log(f'versions: python {platform.python_version()}, numpy {numpy.__version__}, numba {numba.__version__}')
     r = analyse(sk['lines'], sk['folios'], 'B')
     json.dump(r, open(OUT / 'phase774_results.json', 'w'), indent=1)
     log('done')

@@ -1,0 +1,25 @@
+[   11.7s] SEG|CBB|LAT_mesue|1|9501: T PRESENT D5 9.99 (10/0.01, p 0.003) | M NONE X5 1.79 (36/19.7, p 0.013) | dup 0 3g3f 17 4g3f 0 5g2f 5
+[   11.8s] SEG|CBB|LAT_mesue|2|9502: T PRESENT D5 123.76 (124/0.24, p 0.003) | M INDETERMINATE X5 7.41 (159/20.6, p 0.003) | dup 0 3g3f 23 4g3f 9 5g2f 53
+[   11.8s] SEG|CBB|LAT_mesue|3|9503: T PRESENT D5 24.01 (25/0.99, p 0.003) | M NONE X5 2.36 (66/27.3, p 0.003) | dup 0 3g3f 35 4g3f 12 5g2f 10
+[   11.8s] SEG|CBB|LAT_mesue|4|9504: T PRESENT D5 141.40 (145/3.60, p 0.003) | M INDETERMINATE X5 5.24 (205/38.3, p 0.003) | dup 0 3g3f 46 4g3f 24 5g2f 52
+[   20.2s] SEG|CBB|LAT_sismel|2|9512: T PRESENT D5 32.58 (33/0.42, p 0.003) | M NONE X5 1.51 (105/69.2, p 0.003) | dup 0 3g3f 71 4g3f 3 5g2f 13
+[   20.2s] SEG|CBB|LAT_sismel|1|9511: T PRESENT D5 29.73 (30/0.27, p 0.003) | M NONE X5 1.31 (115/87.3, p 0.027) | dup 0 3g3f 122 4g3f 8 5g2f 7
+[   20.8s] SEG|CBB|LAT_mesue|5|9505: T PRESENT D5 115.67 (116/0.33, p 0.003) | M INDETERMINATE X5 5.12 (140/26.5, p 0.003) | dup 0 3g3f 37 4g3f 19 5g2f 42
+[   20.8s] SEG|CBB|LAT_mesue|6|9506: T PRESENT D5 81.70 (82/0.30, p 0.003) | M INDETERMINATE X5 4.49 (124/26.8, p 0.003) | dup 0 3g3f 47 4g3f 21 5g2f 34
+[   28.4s] SEG|CBB|LAT_rupescissa|last|9534: T INDETERMINATE D5 6.00 (6/0.00, p 0.003) | M NONE X5 1.24 (27/21.6, p 0.219) | dup 0 3g3f 9 4g3f 0 5g2f 0
+[   31.3s] SEG|CBB|LAT_rec|last|9527: T PRESENT D5 7.95 (8/0.05, p 0.003) | M NONE X5 0.86 (81/94.1, p 0.821) | dup 0 3g3f 9 4g3f 0 5g2f 0
+[   31.4s] SEG|CBB|ITA_dante|last|9529: T INDETERMINATE D5 5.89 (6/0.11, p 0.003) | M NONE X5 1.66 (93/55.8, p 0.003) | dup 0 3g3f 61 4g3f 4 5g2f 2
+[   34.1s] SEG|HRCB-lem|NT_la|2|9625: T NONE D5 0.00 (0/0.00, p 1.000) | M PRESENT X5 7.91 (164/19.9, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+[   40.4s] SEG|HRCB-lem|NT_la|5|9655: T NONE D5 0.00 (0/0.00, p 1.000) | M INDETERMINATE X5 7.45 (176/22.8, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+[   42.3s] SEG|HRCB-lem|NT_la|8|9685: T NONE D5 0.00 (0/0.00, p 1.000) | M PRESENT X5 7.92 (141/16.9, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+[   42.3s] SEG|HRCB-lem|NT_de|3|9635: T NONE D5 0.00 (0/0.00, p 1.000) | M PRESENT X5 14.93 (361/23.2, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+[   44.5s] SEG|HRCB-lem|NT_de|6|9665: T NONE D5 0.00 (0/0.00, p 1.000) | M PRESENT X5 16.16 (249/14.5, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+[   53.3s] SEG|HRCB-lem|TUR_nt|2|9626: T NONE D5 0.00 (0/0.00, p 1.000) | M INDETERMINATE X5 4.58 (84/17.6, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+[   56.0s] SEG|HRCB-lem|TUR_nt|4|9646: T NONE D5 0.00 (0/0.00, p 1.000) | M INDETERMINATE X5 7.13 (159/21.4, p 0.003) | dup 0 3g3f 0 4g3f 0 5g2f 0
+Traceback (most recent call last):
+  File "C:\git\voynich\phases\PHASE_774_VARIANT_MERGE\scripts\audit\audit_stress.py", line 211, in <module>
+    main()
+  File "C:\git\voynich\phases\PHASE_774_VARIANT_MERGE\scripts\audit\audit_stress.py", line 201, in main
+    + (f' | source D5 {src["D5"]:.2f} X5 {src["X5"]:.2f}' if src else ''))
+                       ~~~^^^^^^
+TypeError: string indices must be integers, not 'str'

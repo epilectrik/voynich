@@ -12,8 +12,8 @@ zone) sits where, and with it any order carried by the token interiors (MIDDLEs)
 Sampling is exact (independent uniform permutations within cells); there is no chain and nothing to converge.
 
 Statistic RPT_n(rep): the number of windows of n consecutive certain tokens within one line whose rep-sequence occurs
-at least twice in the corpus; RPTx_n: the same restricted to sequences that occur in two or more folios; DIST_n: the
-number of distinct repeated sequences.
+at least twice in the corpus; RPTi_n: the same restricted to interior windows (no line-initial or line-final token);
+RPTx_n: restricted to sequences that occur in two or more folios; DIST_n: the number of distinct repeated sequences.
 """
 from __future__ import annotations
 
@@ -76,12 +76,17 @@ class Corpus:
         # windows
         blk = self.tok < 0
         self.win = {}
+        self.interior = {}
         for nn in ns:
             st = np.arange(n - nn + 1)
             ok = self.line_of[st] == self.line_of[st + nn - 1]
             for k in range(nn):
                 ok &= ~blk[st + k]
             self.win[nn] = st[ok]
+            inter = np.ones(len(self.win[nn]), dtype=bool)
+            for k in range(nn):
+                inter &= self.zone[self.win[nn] + k] == 1       # no line-initial or line-final token in the window
+            self.interior[nn] = inter
 
     def sample(self, rng):
         key = rng.random(len(self.mpos))
@@ -132,6 +137,7 @@ def repeat_counts(C, tok, rep, masks=None):
         nfol = np.bincount(pair // 4096, minlength=len(cnt))
         cross = rep_occ & (nfol[inv] >= 2)
         out[f'RPT{nn}'] = int(rep_occ.sum())
+        out[f'RPTi{nn}'] = int((rep_occ & C.interior[nn]).sum())
         out[f'RPTx{nn}'] = int(cross.sum())
         out[f'DIST{nn}'] = int((cnt >= 2).sum())
         if masks is not None:

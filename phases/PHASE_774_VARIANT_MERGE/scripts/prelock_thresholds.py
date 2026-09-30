@@ -4,7 +4,10 @@ Rules (fixed before the thresholds were computed; see PRE_REGISTRATION.md):
   T arm (whole-word codes): statistic D5 = RPT5_TOK(obs) - mean RPT5_TOK(EF null).
     NEG_T  = max D5 over all no-message generators.
     POS_T  = min D5 over the design CBB positives.
-    tau_T  = (NEG_T + POS_T) / 2.
+    v1: tau_T = (NEG_T + POS_T) / 2.
+    v2 (lock-audit edit E3; D5 lives on integer counts minus a small null mean): the boundaries sit at half-integers,
+    NONE_T_lt = ceil(NEG_T) + 0.5 and tau_T = floor((NEG_T + POS_T) / 2) + 0.5. T arm: PRESENT if D5 >= tau_T and
+    p <= 0.01; NONE if D5 < NONE_T_lt or p > 0.05; else INDETERMINATE.
   M arm (stem codes of repetitive text): statistic X5 = (RPT5_MID + 1) / (mean null + 1).
     NEG_M  = max X5 over all no-message generators.
     POS_M  = min X5 over the design HRCB-lem positives whose plaintext is a New Testament (the scope).
@@ -35,9 +38,19 @@ def X5(v):
 
 
 def call(stat, p, tau, neg):
+    """M arm (and v1 T arm): NONE if stat <= the no-message ceiling."""
     if stat >= tau and p <= 0.01:
         return 'PRESENT'
     if stat <= neg or p > 0.05:
+        return 'NONE'
+    return 'INDETERMINATE'
+
+
+def call_T(d5, p, th):
+    """T arm v2 (E3): half-integer boundaries on the excess count."""
+    if d5 >= th['tau_T'] and p <= 0.01:
+        return 'PRESENT'
+    if d5 < th['NONE_T_lt'] or p > 0.05:
         return 'NONE'
     return 'INDETERMINATE'
 
@@ -47,18 +60,21 @@ twin = [v for v in vals if v['kind'] == 'TWIN']
 pos = [v for v in vals if v['kind'] == 'POS']
 NEG_T = max(D5(v)[0] for v in neg)
 POS_T = min(D5(v)[0] for v in pos if v['family'] == 'CBB' and v['group'].startswith('design'))
-tau_T = (NEG_T + POS_T) / 2
+tau_T_v1 = (NEG_T + POS_T) / 2
+NONE_T_lt = math.ceil(NEG_T) + 0.5
+tau_T = math.floor(tau_T_v1) + 0.5
 NEG_M = max(X5(v)[0] for v in neg)
 POS_M = min(X5(v)[0] for v in pos if v['family'] == 'HRCB-lem' and v['group'].startswith('design')
             and v['plaintext'].startswith('NT_'))
 tau_M = math.sqrt(NEG_M * POS_M)
-th = {'NEG_T': NEG_T, 'POS_T': POS_T, 'tau_T': tau_T, 'NEG_M': NEG_M, 'POS_M': POS_M, 'tau_M': tau_M,
+th = {'NEG_T': NEG_T, 'POS_T': POS_T, 'tau_T_v1': tau_T_v1, 'NONE_T_lt': NONE_T_lt, 'tau_T': tau_T,
+      'NEG_M': NEG_M, 'POS_M': POS_M, 'tau_M': tau_M,
       'n_negatives': len(neg), 'n_twins': len(twin), 'n_positives': len(pos)}
 print(json.dumps(th, indent=1))
 
 rows = []
 for v in sorted(vals, key=lambda v: (v['kind'], v['family'], v['group'], str(v['plaintext']), v['seed'])):
-    t = call(*D5(v), tau_T, NEG_T)
+    t = call_T(*D5(v), th)
     m = call(*X5(v), tau_M, NEG_M)
     rows.append({'kind': v['kind'], 'group': v['group'], 'family': v['family'], 'plaintext': v['plaintext'],
                  'seed': v['seed'], 'D5': D5(v)[0], 'pT': D5(v)[1], 'T': t, 'X5': X5(v)[0], 'pM': X5(v)[1],

@@ -134,6 +134,47 @@ def plain_stream(words, sk, offset=0):
     return list(words[offset:offset + n])
 
 
+def segment_stream(words, sk, k):
+    """Segment k of a plaintext: words [k*n, (k+1)*n) with n = B's certain tokens; k = 'last' takes the final n words.
+    Segment 0 is plain_stream (the design segment)."""
+    n = HR.n_certain(sk)
+    off = len(words) - n if k == 'last' else k * n
+    assert 0 <= off and off + n <= len(words), f'segment {k} out of range ({len(words)} words)'
+    return list(words[off:off + n])
+
+
+def plaintext_p5(stream, sk):
+    """P5: the plaintext's own phrase repetition in B's layout -- the number of within-line windows of 5 consecutive
+    words (no blocker inside) whose word sequence occurs >= 2 times."""
+    lines = HR.pour(stream, sk)
+    occ = Counter()
+    wins = []
+    for ln in lines:
+        for i in range(len(ln) - 4):
+            w = ln[i:i + 5]
+            if any(x is None for x in w):
+                continue
+            t = tuple(w)
+            occ[t] += 1
+            wins.append(t)
+    return sum(occ[t] >= 2 for t in wins)
+
+
+def section_fitted(gen, sk, seed):
+    """A no-message generator fitted separately within each of B's sections (B's adjacent-pair transitions within a
+    section; declared exposure), output reassembled in B's line order (lock-audit HET arm)."""
+    by = defaultdict(list)
+    for i, s in enumerate(sk['sections']):
+        by[s].append(i)
+    out = [None] * len(sk['lines'])
+    for j, (s, idx) in enumerate(sorted(by.items())):
+        sub = {'lines': [sk['lines'][i] for i in idx], 'sections': [sk['sections'][i] for i in idx],
+               'folios': [sk['folios'][i] for i in idx]}
+        for i, ln in zip(idx, gen(sub, seed + 101 * j)):
+            out[i] = ln
+    return out
+
+
 def twin_stream(stream, sk, seed):
     """Shuffled-plaintext twin: the same words, order shuffled within each folio's span of certain tokens."""
     rng = np.random.default_rng(seed)
