@@ -1,6 +1,6 @@
-[DECOY_F1_NTla] 88s
+[DECOY_F1_NTla] 102s
 [DECOY_F1_NTla] F1  [EF-F, movable 0.518, 14 symbols] RPT7 1732/161.0 (sd 17.5) D +1571.0 z 89.62 p 0.0010 -> PRESENT       [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 7750/4146 z 58.30 p 0.0010 | DIST7 697/77.7
-[DECOY_F1_NTla]     refined nulls: EFq z 43.75 p 0.0010 (movable 0.308); EFpar z 35.82 p 0.0010 (movable 0.232) -> gate: payload-level (survives EFq and EFpar)
+[DECOY_F1_NTla]     refined nulls: EFq z 43.75 p 0.0010 (movable 0.308); EFpar z 35.82 p 0.0010 (movable 0.232) -> gate: payload-level (survives EFq and EFpar; line-entropy reduction -2.9% < 8%)
 [DECOY_F1_NTla] F2  [EF-F, movable 0.518, 35 symbols] RPT7 28/37.3 (sd 9.1) D -9.3 z -1.02 p 0.8721 -> NONE          [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3140/2990 z 2.96 p 0.0040 | DIST7 14/18.6
 [DECOY_F1_NTla]     refined nulls: EFq z -1.36 p 0.9361 (movable 0.308); EFpar z -0.67 p 0.7802 (movable 0.232) -> gate: n/a
 [DECOY_F1_NTla] L1  [EF-L, movable 0.731, 29 symbols] RPT7 1444/1347.9 (sd 40.7) D +96.1 z 2.36 p 0.0140 -> NONE (descriptive) [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8090/8084 z 0.13 p 0.4426 | DIST7 512/507.8
@@ -8,8 +8,8 @@
 [DECOY_F1_NTla] GAL [EF-K2, movable 0.200, 9 symbols] RPT7 4860/4845.0 (sd 29.1) D +15.0 z 0.51 p 0.3067 -> NONE (descriptive) [PRESENT z >= 2.46; NONE z <= 2.63 or p > 0.05] | RPT5 11414/11445 z -1.73 p 0.9570 | DIST7 1273/1271.2
 [DECOY_F1_NTla]   composition (post-run descriptive) F1: line-entropy reduction -2.9% (z 23.8); paragraph chi2/df 0.84
 [DECOY_F1_NTla]   composition (post-run descriptive) F2: line-entropy reduction -0.3% (z 1.7); paragraph chi2/df 0.99
-[DECOY_F1_NTla] summary: START-SYMBOL 7-RUN EXCESS at payload level on F1 [payload-level (survives EFq and EFpar)] | descriptive: L1 NONE, L2 NONE, GAL NONE
-[DECOY_edge2] 88s
+[DECOY_F1_NTla] summary: START-SYMBOL 7-RUN EXCESS on F1 [gate: payload-level (survives EFq and EFpar; line-entropy reduction -2.9% < 8%)] | descriptive: L1 NONE, L2 NONE, GAL NONE
+[DECOY_edge2] 101s
 [DECOY_edge2] F1  [EF-F, movable 0.544, 26 symbols] RPT7 98/89.5 (sd 14.1) D +8.5 z 0.61 p 0.2757 -> NONE          [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 4315/4210 z 1.97 p 0.0270 | DIST7 49/44.2
 [DECOY_edge2]     refined nulls: EFq z 0.50 p 0.3207 (movable 0.336); EFpar z 0.67 p 0.2527 (movable 0.259) -> gate: n/a
 [DECOY_edge2] F2  [EF-F, movable 0.544, 36 symbols] RPT7 67/73.5 (sd 13.2) D -6.5 z -0.49 p 0.7023 -> NONE          [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3291/3357 z -1.33 p 0.9151 | DIST7 33/36.1
@@ -20,7 +20,7 @@
 [DECOY_edge2]   composition (post-run descriptive) F1: line-entropy reduction 0.0% (z -0.1); paragraph chi2/df 0.99
 [DECOY_edge2]   composition (post-run descriptive) F2: line-entropy reduction -0.5% (z 2.2); paragraph chi2/df 0.96
 [DECOY_edge2] summary: NO START-POSITION PAYLOAD (F1 NONE, F2 NONE) | descriptive: L1 NONE, L2 NONE, GAL NONE
-[DECOY_PALPAR5_F1] 86s
+[DECOY_PALPAR5_F1] 95s
 [DECOY_PALPAR5_F1] F1  [EF-F, movable 0.512, 26 symbols] RPT7 635/267.7 (sd 21.7) D +367.3 z 16.96 p 0.0010 -> PRESENT       [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 4956/3997 z 17.45 p 0.0010 | DIST7 222/110.0
 [DECOY_PALPAR5_F1]     refined nulls: EFq z 11.79 p 0.0010 (movable 0.304); EFpar z 1.07 p 0.1608 (movable 0.244) -> gate: not payload-level: consistent with a paragraph palette (removed by EFpar)
 [DECOY_PALPAR5_F1] F2  [EF-F, movable 0.512, 36 symbols] RPT7 305/143.6 (sd 16.0) D +161.4 z 10.10 p 0.0010 -> NOT PRESENT (residual) [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3301/3092 z 4.28 p 0.0010 | DIST7 96/58.5
@@ -30,4 +30,15 @@
 [DECOY_PALPAR5_F1] GAL [EF-K2, movable 0.233, 9 symbols] RPT7 4580/4577.1 (sd 30.5) D +2.9 z 0.10 p 0.4555 -> NONE (descriptive) [PRESENT z >= 2.46; NONE z <= 2.63 or p > 0.05] | RPT5 11316/11304 z 0.60 p 0.2737 | DIST7 1224/1217.7
 [DECOY_PALPAR5_F1]   composition (post-run descriptive) F1: line-entropy reduction 19.4% (z -84.4); paragraph chi2/df 7.10
 [DECOY_PALPAR5_F1]   composition (post-run descriptive) F2: line-entropy reduction 6.3% (z -31.6); paragraph chi2/df 3.20
-[DECOY_PALPAR5_F1] summary: START-SYMBOL 7-RUN EXCESS at payload level on F1 [not payload-level: consistent with a paragraph palette (removed by EFpar)] | descriptive: L1 NONE, L2 NONE, GAL NONE
+[DECOY_PALPAR5_F1] summary: START-SYMBOL 7-RUN EXCESS on F1 [gate: not payload-level: consistent with a paragraph palette (removed by EFpar)] | descriptive: L1 NONE, L2 NONE, GAL NONE
+[DECOY_PALLINE7_F1] 88s
+[DECOY_PALLINE7_F1] F1  [EF-F, movable 0.509, 27 symbols] RPT7 315/91.6 (sd 14.3) D +223.4 z 15.64 p 0.0010 -> PRESENT       [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 4262/3536 z 14.00 p 0.0010 | DIST7 140/44.6
+[DECOY_PALLINE7_F1]     refined nulls: EFq z 9.47 p 0.0010 (movable 0.300); EFpar z 7.25 p 0.0010 (movable 0.230) -> gate: payload-level or line palette (line-entropy reduction 19.3% >= 8%; not separable by EFq/EFpar)
+[DECOY_PALLINE7_F1] F2  [EF-F, movable 0.509, 36 symbols] RPT7 124/60.0 (sd 11.7) D +64.0 z 5.45 p 0.0010 -> NOT PRESENT (residual) [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3092/2947 z 2.89 p 0.0040 | DIST7 51/29.2
+[DECOY_PALLINE7_F1]     refined nulls: EFq z 2.74 p 0.0070 (movable 0.300); EFpar z 2.45 p 0.0130 (movable 0.230) -> gate: n/a
+[DECOY_PALLINE7_F1] L1  [EF-L, movable 0.699, 30 symbols] RPT7 1590/1473.2 (sd 42.9) D +116.8 z 2.72 p 0.0060 -> NONE (descriptive) [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8001/8043 z -0.83 p 0.7952 | DIST7 516/505.8
+[DECOY_PALLINE7_F1] L2  [EF-L, movable 0.699, 31 symbols] RPT7 1292/1165.7 (sd 41.5) D +126.3 z 3.04 p 0.0020 -> NONE (descriptive) [PRESENT z >= 4.53; NONE z <= 3.94 or p > 0.05] | RPT5 8039/7905 z 2.79 p 0.0030 | DIST7 519/478.0
+[DECOY_PALLINE7_F1] GAL [EF-K2, movable 0.197, 9 symbols] RPT7 4555/4544.8 (sd 29.9) D +10.2 z 0.34 p 0.3836 -> NONE (descriptive) [PRESENT z >= 2.46; NONE z <= 2.63 or p > 0.05] | RPT5 11176/11182 z -0.33 p 0.6324 | DIST7 1203/1187.9
+[DECOY_PALLINE7_F1]   composition (post-run descriptive) F1: line-entropy reduction 19.3% (z -78.0); paragraph chi2/df 2.12
+[DECOY_PALLINE7_F1]   composition (post-run descriptive) F2: line-entropy reduction 5.8% (z -26.0); paragraph chi2/df 1.37
+[DECOY_PALLINE7_F1] summary: START-SYMBOL 7-RUN EXCESS on F1 [gate: payload-level or line palette (line-entropy reduction 19.3% >= 8%; not separable by EFq/EFpar)] | descriptive: L1 NONE, L2 NONE, GAL NONE

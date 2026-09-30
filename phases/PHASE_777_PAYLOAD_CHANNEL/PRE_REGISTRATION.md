@@ -9,7 +9,8 @@ committed at 4522431, `scripts/audit/`, `results/audit/`); edits 1–9 are appli
   are thin). C3 passed 24 of 24.
 - **v2 is the redesign** the v1 rule requires, with no threshold changed: confirmatory arms **F1 and F2 only**, each
   called two ways (PAYLOAD PRESENT, or NOT PRESENT with a descriptive residual flag); L1, L2 and GAL descriptive; a
-  fresh certification (seeds 8100+, fresh texts, third letter block) with criteria fixed before running.
+  fresh certification (seeds 8100+; one new text, the Italian NT, plus five design texts at the third letter block)
+  with criteria fixed before running.
 
 After the lock nothing below may change without a new phase number.
 
@@ -103,23 +104,31 @@ Per channel c:
 | **NOT PRESENT** | otherwise; with the descriptive flag "residual above the design no-payload maximum" when z7 > NEG_c and p ≤ 0.05 |
 
 Two arms are called separately. **The p-value does not carry the specificity:** first-order B-like chains break
-within-cell exchangeability (3 of 96 no-payload F-arm calls in the v1 certification had p ≤ 0.005, and most L1 calls
-did). τ carries all of it, and **a residual flag on B is the expected outcome, not weak payload evidence** (edit 3).
+within-cell exchangeability (3 of 96 no-payload F-arm calls in the design and v2 certification sets had p ≤ 0.005,
+1 of 48 in the v1 set; on L1, 19 of 72 no-payload calls across the three sets). τ carries all of it, and **a residual flag on B is the expected outcome, not weak payload evidence** (edit 3).
 The exclusion licensed by NOT PRESENT rests on C3: every payload control at the tested strength lies far above τ
 (design minimum 18.2 on F1 and 17.8 on F2 against τ about 10.5).
 
-**Interpretation gate for a PRESENT (edit 1).** A PAYLOAD PRESENT on F1 or F2 is reported as payload-level only if,
-under both EFq and EFpar, z7 ≥ τ_c / 2 and p ≤ 0.005. Otherwise the result names the palette that the refined null
-removes (a line-position palette, a paragraph palette, or both). After the run, B's F1/F2 line-entropy reduction
-(against a within-folio shuffle) and paragraph χ²/df are reported as composition descriptives, read against the
-audit's table:
+**Interpretation gate for a PRESENT (edit 1; confirmation pass).** A PAYLOAD PRESENT on F1 or F2 is reported as
+payload-level only if (i) under both EFq and EFpar, z7 ≥ τ_c / 2 and p ≤ 0.005, and (ii) that channel's line-entropy
+reduction (mean within-line channel entropy against 20 within-folio shuffles of the same lines) is below 8%. If (i)
+fails, the result names the palette that the refined null removes (a line-position palette, a paragraph palette, or
+both). If (i) holds and (ii) fails, the label is "payload-level or line palette (line-entropy reduction X% ≥ 8%; not
+separable by EFq/EFpar)": line palettes are removed by neither refined null (confirmation plants,
+`results/audit/confirm777.json`: α 7 line palettes read PRESENT at z7 13.3–15.5 and pass EFq 8.5–9.4 and EFpar
+5.2–7.1 with a 19% reduction), while payload decoys and controls sit between −3.0% and −0.3% and every line palette
+that read PRESENT had 14% or more (an α 20 palette at 8% gave z7 3.3). The composition figures (line-entropy
+reduction and paragraph χ²/df) are reported as descriptives, read against the audit's table (signs as the run script
+prints them: a positive reduction means lines more uniform than a shuffle):
 
-| Plant (no payload; α = Dirichlet concentration) | Heterogeneity | F1 z7 under EF-F |
+| Plant (no payload unless stated; α = Dirichlet concentration) | Heterogeneity | F1 z7 under EF-F; refined nulls |
 |---|---|---|
-| Paragraph palettes, α 5 | χ²/df 7; line entropy −19% | 14–20 (PRESENT) |
+| Paragraph palettes, α 5 | χ²/df 7; line-entropy reduction 19% | 14–20 (PRESENT); fails EFpar |
 | Paragraph palettes, α 10 / 15 | | 8.9 / 4.4 |
-| Line palettes, α 10 / 20 / 50 | line entropy −15% / −8% / −3% | 8.9–12.3 / 3.3 / 1.4 |
-| Position-quintile palettes, α 5 | | 13.6–20.2 (PRESENT) |
+| Line palettes, α 7 | line-entropy reduction 19% | 13.3–15.5 (PRESENT); passes EFq and EFpar |
+| Line palettes, α 10 / 20 / 50 | line-entropy reduction 14–15% / 8% / 3% | 8.0–12.3 / 3.3 / 1.4 |
+| Position-quintile palettes, α 5 | | 13.6–20.2 (PRESENT); fails EFq |
+| Payload decoys and controls | line-entropy reduction −3.0% to −0.3% | ≥ 18 (PRESENT); passes both |
 
 B has registered relatives of all three (C1214: lines more homogeneous, 3.8% at atom level; C1811/C1961:
 paragraph-level prefix composition; C1671/C1983: position gradients), and the first-order no-payload family covers
@@ -171,7 +180,9 @@ both.
 paragraph-palette plant (α 5) is PRESENT on F1 under EF-F (z7 17.0) and **fails the gate** (EFq 11.8, EFpar 1.07,
 p 0.16: "consistent with a paragraph palette"), with F2 a residual flag (10.1); its composition figures reproduce the
 audit's (F1 line-entropy reduction 19.4%, paragraph χ²/df 7.10; the payload decoy: −2.9%, 0.84; the edge chain: 0.0%,
-0.99).
+0.99). The line-palette plant (α 7, seed 9703) is PRESENT on F1 (z7 15.6), passes EFq (9.47) and EFpar (7.25), and
+receives the label "payload-level or line palette (line-entropy reduction 19.3% ≥ 8%; not separable by EFq/EFpar)";
+F2 a residual flag (5.45); paragraph χ²/df 2.12. The summary line reads "START-SYMBOL 7-RUN EXCESS on F1 [gate: ...]".
 
 ## Declared prior knowledge and exposure
 - **B's facts relied on:** the boundary coupling and routing (C1212/C1563, C2082); C2091, C2093, C2094 (interiors and
@@ -230,7 +241,9 @@ reading is echo-class and would justify a decipherment attempt on that channel a
 4. `run777.py --checksums`, commit, tag `phase777-lock`.
 5. `run777.py` (verify_lock first; 1,000 permutations per null; raw result committed before the write-up).
 6. The dry run (`run777.py --dry`: an F1 payload of Latin NT letters, third block; an edge chain; a no-payload
-   paragraph-palette plant at α 5, which must read PRESENT under EF-F and fail the gate) runs before the lock.
+   paragraph-palette plant at α 5, which must read PRESENT under EF-F and fail the gate; a no-payload line-palette
+   plant at α 7, seed 9703, the confirmation plant, which must read PRESENT, pass EFq/EFpar and receive the
+   "payload-level or line palette" label) runs before the lock.
 
 ## Deviations
 - **From v1:** the certification failed C1 and C2; v2 restricts the confirmatory arms to F1 and F2 with two-way calls,
@@ -239,6 +252,9 @@ reading is echo-class and would justify a decipherment attempt on that channel a
   band-dependent exclusion scope with the noise figures; the p-value sentence replaced; the null descriptions
   corrected; the summary label renamed; the certification wording corrected (one new text); the thresholds docstring
   note; the exposure declarations; the language list and the routing caveat.
+- **Confirmation pass (lean-expert, commit 05ab031):** the line-entropy condition (< 8%) added to the gate, because α 7
+  line palettes pass both refined nulls; the mapping table's signs corrected; the p-value counts corrected; the
+  certification wording in the status paragraph corrected; `confirm777.py` and its result added to the locked files.
 
 ## Caveats
 - **The payload controls are one construction.** Letters mapped by frequency rank, filler drawn from B's pools. A

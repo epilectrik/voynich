@@ -243,7 +243,7 @@
   "F2": "NONE"
  },
  "gate": {
-  "F1": "payload-level (survives EFq and EFpar)",
+  "F1": "payload-level (survives EFq and EFpar; line-entropy reduction -2.9% < 8%)",
   "F2": "n/a"
  },
  "composition": {
@@ -263,7 +263,7 @@
   "L2": "NONE",
   "GAL": "NONE"
  },
- "summary": "summary: START-SYMBOL 7-RUN EXCESS at payload level on F1 [payload-level (survives EFq and EFpar)]",
+ "summary": "summary: START-SYMBOL 7-RUN EXCESS on F1 [gate: payload-level (survives EFq and EFpar; line-entropy reduction -2.9% < 8%)]",
  "thresholds": {
   "F1": {
    "NEG": 2.854929372904042,

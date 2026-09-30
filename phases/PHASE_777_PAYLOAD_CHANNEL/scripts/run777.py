@@ -4,8 +4,9 @@
   python run777.py              verify the lock; per-channel repeated 7-run excess on Currier B under each channel's
                                 exact null (1,000 permutations); per-channel calls; descriptives
   python run777.py --checksums  write results/input_checksums.json (before the lock commit)
-  python run777.py --dry        every code path on three DECOYS (an F1 payload of Latin NT letters, an edge chain, and
-                                a no-payload paragraph-palette plant at Dirichlet alpha 5)
+  python run777.py --dry        every code path on four DECOYS (an F1 payload of Latin NT letters, an edge chain, a
+                                no-payload paragraph-palette plant at Dirichlet alpha 5, and a no-payload line-palette
+                                plant at alpha 7)
 """
 from __future__ import annotations
 
@@ -34,6 +35,9 @@ OUT = ROOT / PHASE / 'results'
 R_B, SEED = 1000, 77700
 CH = ('F1', 'F2', 'L1', 'L2', 'GAL')
 ARMS = ('F1', 'F2')                             # v2: L1, L2 and GAL are descriptive (see PRE_REGISTRATION.md)
+LINE_PALETTE_PCT = 8.0                          # v3 gate: a PRESENT that passes EFq/EFpar is payload-level only if the
+                                                # channel's line-entropy reduction is below this (line palettes that read
+                                                # PRESENT gave >= 14%; payload decoys and controls -3.0..-0.3%)
 INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py',
           'phases/PHASE_756_C957_JOINT_NULL/scripts/c957_joint_null_n5.py',
           'phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768.py', 'phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768v2.py',
@@ -49,7 +53,8 @@ LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds777.json', 'results/prelock_
           'scripts/chan777.py',
           'scripts/prelock_calib777.py', 'scripts/prelock_thresholds777.py', 'scripts/prelock_cert777.py',
           'scripts/run777.py', 'scripts/audit/audit777.py', 'scripts/audit/audit777b.py',
-          'scripts/audit/chaneff777.py', 'results/audit/audit777.json', 'results/audit/audit777b.json')
+          'scripts/audit/chaneff777.py', 'results/audit/audit777.json', 'results/audit/audit777b.json',
+          'scripts/audit/confirm777.py', 'results/audit/confirm777.json')
 DRY = '--dry' in sys.argv
 LOGF = None
 
@@ -98,16 +103,22 @@ def analyse(lines, sk, tag, X):
     t0 = time.time()
     res = X.run(lines, X.GK.ef_groups(sk), R=R_B, seed=SEED, refined=X.par_groups(sk))
     calls = {c: call(res[c]['RPT7']['z'], res[c]['RPT7']['p'], TH[c]) for c in ARMS}
-    # interpretation gate (lock-audit edit 1): a PRESENT is payload-level only if it survives both refined nulls
+    comp = {c: X.composition_figures(lines, sk, c, SEED + 7) for c in ARMS}
+    # interpretation gate (lock audit + confirmation pass): a PRESENT is payload-level only if it survives both refined
+    # nulls AND the channel's line-entropy reduction is below LINE_PALETTE_PCT (line palettes pass EFq/EFpar)
     gate = {}
     for c in ARMS:
         q, pr = res[c]['EFq'], res[c]['EFpar']
         ok_q = q['z'] >= TH[c]['tau'] / 2 and q['p'] <= 0.005
         ok_p = pr['z'] >= TH[c]['tau'] / 2 and pr['p'] <= 0.005
+        red = comp[c]['line_entropy_pct_reduction']
         if calls[c] != 'PRESENT':
             gate[c] = 'n/a'
+        elif ok_q and ok_p and red < LINE_PALETTE_PCT:
+            gate[c] = f'payload-level (survives EFq and EFpar; line-entropy reduction {red:.1f}% < {LINE_PALETTE_PCT:.0f}%)'
         elif ok_q and ok_p:
-            gate[c] = 'payload-level (survives EFq and EFpar)'
+            gate[c] = (f'payload-level or line palette (line-entropy reduction {red:.1f}% >= {LINE_PALETTE_PCT:.0f}%; '
+                       'not separable by EFq/EFpar)')
         else:
             gone = [nm for nm, ok in (('a line-position palette (removed by EFq)', ok_q),
                                       ('a paragraph palette (removed by EFpar)', ok_p)) if not ok]
@@ -126,12 +137,11 @@ def analyse(lines, sk, tag, X):
             q, pr = res[c]['EFq'], res[c]['EFpar']
             log(f'[{tag}]     refined nulls: EFq z {q["z"]:.2f} p {q["p"]:.4f} (movable {q["frac_movable"]:.3f}); '
                 f'EFpar z {pr["z"]:.2f} p {pr["p"]:.4f} (movable {pr["frac_movable"]:.3f}) -> gate: {gate[c]}')
-    comp = {c: X.composition_figures(lines, sk, c, SEED + 7) for c in ARMS}
     for c in ARMS:
         log(f'[{tag}]   composition (post-run descriptive) {c}: line-entropy reduction {comp[c]["line_entropy_pct_reduction"]:.1f}% '
             f'(z {comp[c]["line_entropy_z"]:.1f}); paragraph chi2/df {comp[c]["paragraph_chi2_df"]:.2f}')
-    summary = ('summary: START-SYMBOL 7-RUN EXCESS at payload level on ' +
-               ', '.join(f'{c} [{gate[c]}]' for c in ARMS if calls[c] == 'PRESENT')
+    summary = ('summary: START-SYMBOL 7-RUN EXCESS on ' +
+               ', '.join(f'{c} [gate: {gate[c]}]' for c in ARMS if calls[c] == 'PRESENT')
                if 'PRESENT' in calls.values() else 'summary: NO START-POSITION PAYLOAD (' +
                ', '.join(f'{c} {calls[c]}' for c in ARMS) + ')')
     log(f'[{tag}] {summary} | descriptive: ' + ', '.join(f'{c} {desc[c]}' for c in desc))
@@ -157,7 +167,8 @@ def main():
         n = X.HR.n_certain(sk)
         decoys = {'DECOY_F1_NTla': X.payload_lines(X.letter_stream(words, n, offset=2 * n), sk, 'F1', 99971)[0],
                   'DECOY_edge2': X6.edge_only_lines(sk, 99972, k=2),
-                  'DECOY_PALPAR5_F1': X.palette_plant(sk, 'F1', 5.0, 99973, kind='PALPAR')}
+                  'DECOY_PALPAR5_F1': X.palette_plant(sk, 'F1', 5.0, 99973, kind='PALPAR'),
+                  'DECOY_PALLINE7_F1': X.palette_plant(sk, 'F1', 7.0, 9703, kind='PALLINE')}
         for tag, lines in decoys.items():
             assert lines != sk['lines']
             r = analyse(lines, sk, tag, X)

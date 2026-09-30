@@ -263,7 +263,7 @@
   "L2": "NONE",
   "GAL": "NONE"
  },
- "summary": "summary: START-SYMBOL 7-RUN EXCESS at payload level on F1 [not payload-level: consistent with a paragraph palette (removed by EFpar)]",
+ "summary": "summary: START-SYMBOL 7-RUN EXCESS on F1 [gate: not payload-level: consistent with a paragraph palette (removed by EFpar)]",
  "thresholds": {
   "F1": {
    "NEG": 2.854929372904042,
