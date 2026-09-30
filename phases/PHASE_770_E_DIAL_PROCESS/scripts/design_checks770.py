@@ -33,42 +33,15 @@ import ed769b as B  # noqa: E402
 OUT = ROOT / 'phases/PHASE_770_E_DIAL_PROCESS/results'
 GLYPH_RE = E.GLYPH_RE
 GALLOWS = {'k': 'k', 't': 't', 'p': 'p', 'f': 'f', 'ckh': 'k', 'cth': 't', 'cph': 'p', 'cfh': 'f'}
-DIALS = ('E', 'CS', 'KT', 'BENCH', 'MIN')
+DIALS = ('E', 'CS', 'KT', 'KTH', 'OKOT', 'MIN', 'BENCH')
 MISSING_LEAVES = {12, 59, 60, 61, 62, 63, 64, 74, 91, 92, 97, 98, 109, 110}
 
 
 def units(w, dial):
-    """Outcomes (0/1) of the dial's units in the token, and the frame: the token with every unit of the dial replaced
-    by its class symbol (e-runs collapsed to one symbol)."""
-    g = GLYPH_RE.findall(w)
-    ys, fr = [], []
-    i = 0
-    while i < len(g):
-        u = g[i]
-        if dial == 'E' and u == 'e':
-            j = i
-            while j < len(g) and g[j] == 'e':
-                j += 1
-            ys.append(int(j - i >= 2))
-            fr.append('e')
-            i = j
-            continue
-        if dial == 'CS' and u in ('ch', 'sh'):
-            ys.append(int(u == 'sh'))
-            fr.append('X')
-        elif dial == 'KT' and u in ('k', 't'):
-            ys.append(int(u == 't'))
-            fr.append('K')
-        elif dial == 'BENCH' and u in GALLOWS:
-            ys.append(int(len(u) == 3))
-            fr.append('G' + GALLOWS[u])
-        elif dial == 'MIN' and re.fullmatch(r'i+[nrlm]', u):
-            ys.append(int(len(u) >= 3))
-            fr.append('I' + u[-1])
-        else:
-            fr.append(u)
-        i += 1
-    return ys, ''.join(fr)
+    """Outcomes (0/1) of the dial's units in the token and the dial frame (shared engine: ed770.units)."""
+    import ed770
+    out, fr = ed770.units(w, dial)
+    return [y for y, _, _ in out[dial]], fr
 
 
 def load_b_h_plus(extra=('f76r',)):
@@ -134,31 +107,17 @@ def agreement(H, O):
 
 # ------------------------------------------------------------------------------------------------ 2. counts
 def counts(recs, dial):
-    plen = Counter(r[5] for r in recs)
-    q = np.quantile(np.array(list(plen.values()), dtype=float), [1 / 3, 2 / 3])
-    cells, folios, ys, frames = [], [], [], set()
-    for w, folio, key, p, n, pid, header, sec, hand in recs:
-        yv, fr = units(w, dial)
-        if not yv:
-            continue
-        zone = 0 if p == 0 else (2 if p == n - 1 else 1)
-        pl = 0 if plen[pid] <= q[0] else (1 if plen[pid] <= q[1] else 2)
-        for j, y in enumerate(yv):
-            cells.append(((fr, j), zone, header, pl, sec, hand))
-            folios.append(folio)
-            ys.append(y)
-        frames.add(fr)
-    cf, cy = defaultdict(set), defaultdict(set)
-    for c, f, y in zip(cells, folios, ys):
-        cf[c].add(f)
-        cy[c].add(y)
-    ys = np.array(ys)
-    inf = np.array([len(cf[c]) >= 2 for c in cells])
-    var = np.array([len(cf[c]) >= 2 and len(cy[c]) == 2 for c in cells])
-    return {'occurrences': int(len(ys)), 'frames': len(frames), 'informative': int(inf.sum()),
+    import ed770
+    O = ed770.occurrences(recs, dial)
+    y, inf = O['y'], O['informative']
+    cy = defaultdict(set)
+    for c, v in zip(O['cell'], y):
+        cy[c].add(v)
+    var = np.array([inf[i] and len(cy[c]) == 2 for i, c in enumerate(O['cell'])])
+    return {'occurrences': int(len(y)), 'frames': int(O['n_tokens']), 'informative': int(inf.sum()),
             'informative_with_variation': int(var.sum()),
-            'rate_marked_informative': float(ys[inf].mean()) if inf.any() else None,
-            'folios': len(set(folios))}
+            'rate_marked_informative': float(y[inf].mean()) if inf.any() else None,
+            'folios': len(set(O['folio'].tolist()))}
 
 
 # ------------------------------------------------------------------------------------------------ 3. codicology
@@ -241,13 +200,14 @@ def main():
         for d, v in ag.items():
             print(f"{name} {d:5s} kappa {v['kappa']:.3f}  n {v['n_compared']:5d}  share {v['share_compared']:.2f}  "
                   f"{v['confusion_[H0|H1][O0|O1]']}", flush=True)
+    import ed770
     recs = E.load_b_h()
-    recs_plus = load_b_h_plus()
-    res['counts'] = {d: counts(recs, d) for d in DIALS}
-    res['counts_with_f76r'] = {d: counts(recs_plus, d) for d in DIALS}
+    recs_plus = ed770.fix_hands(load_b_h_plus(), {'f115r': '3'})       # the PHASE_770 analysis set
+    res['counts_phase769_set'] = {d: counts(recs, d) for d in DIALS}
+    res['counts_analysis_set'] = {d: counts(recs_plus, d) for d in DIALS}
     for d in DIALS:
-        print('counts', d, res['counts'][d], '| +f76r informative', res['counts_with_f76r'][d]['informative'],
-              flush=True)
+        print('counts', d, 'analysis set', res['counts_analysis_set'][d], '| PHASE_769 set informative',
+              res['counts_phase769_set'][d]['informative'], flush=True)
     f76 = [r for r in recs_plus if r[1] == 'f76r']
     res['f76r'] = {'tokens': len(f76), 'lines': len({r[2] for r in f76}), 'paragraphs': len({r[5] for r in f76})}
     print('f76r', res['f76r'], flush=True)

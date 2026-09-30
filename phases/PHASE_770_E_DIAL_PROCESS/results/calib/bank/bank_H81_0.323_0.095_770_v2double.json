@@ -1,0 +1,175 @@
+{
+ "set": "H81",
+ "target": [
+  0.323,
+  0.095
+ ],
+ "seed": 770,
+ "tol": 0.03,
+ "classes": {
+  "M1": "S",
+  "M2a": "S",
+  "M2b:2": "S",
+  "M2b:4": "S",
+  "M2b:6": "S",
+  "M2c": "S",
+  "M7": "S",
+  "M3": "P",
+  "M4:0.95": "P",
+  "M4:0.97": "P",
+  "M4:0.99": "P",
+  "M5": "P",
+  "M6:0.95": "P",
+  "M6:0.97": "P",
+  "M6:0.99": "P",
+  "M8:20": "P",
+  "M8:40": "P",
+  "MIX:M3/0.25": "X",
+  "MIX:M3/0.5": "X",
+  "MIX:M3/0.75": "X",
+  "MIX:M6:0.97/0.25": "X",
+  "MIX:M6:0.97/0.5": "X",
+  "MIX:M6:0.97/0.75": "X"
+ },
+ "counts": {
+  "M1": {
+   "draws": 45000,
+   "S3c_accepted": 6695,
+   "both_accepted": 400,
+   "known_part": 0.05974607916355489
+  },
+  "M2a": {
+   "draws": 40000,
+   "S3c_accepted": 5951,
+   "both_accepted": 401,
+   "known_part": 0.06738363300285666
+  },
+  "M2b:2": {
+   "draws": 24500,
+   "S3c_accepted": 3584,
+   "both_accepted": 405,
+   "known_part": 0.11300223214285714
+  },
+  "M2b:4": {
+   "draws": 13000,
+   "S3c_accepted": 1933,
+   "both_accepted": 407,
+   "known_part": 0.21055354371443352
+  },
+  "M2b:6": {
+   "draws": 8000,
+   "S3c_accepted": 1171,
+   "both_accepted": 403,
+   "known_part": 0.3441502988898377
+  },
+  "M2c": {
+   "draws": 8500,
+   "S3c_accepted": 1441,
+   "both_accepted": 403,
+   "known_part": 0.27966689798750866
+  },
+  "M7": {
+   "draws": 26000,
+   "S3c_accepted": 4411,
+   "both_accepted": 403,
+   "known_part": 0.09136250283382454
+  },
+  "M3": {
+   "draws": 7500,
+   "S3c_accepted": 1414,
+   "both_accepted": 405,
+   "known_part": 0.28642149929278643
+  },
+  "M4:0.95": {
+   "draws": 7000,
+   "S3c_accepted": 1366,
+   "both_accepted": 401,
+   "known_part": 0.2935578330893119
+  },
+  "M4:0.97": {
+   "draws": 10000,
+   "S3c_accepted": 1943,
+   "both_accepted": 401,
+   "known_part": 0.20638188368502317
+  },
+  "M4:0.99": {
+   "draws": 27000,
+   "S3c_accepted": 4293,
+   "both_accepted": 405,
+   "known_part": 0.09433962264150944
+  },
+  "M5": {
+   "draws": 10000,
+   "S3c_accepted": 1562,
+   "both_accepted": 414,
+   "known_part": 0.26504481434058896
+  },
+  "M6:0.95": {
+   "draws": 7000,
+   "S3c_accepted": 1457,
+   "both_accepted": 414,
+   "known_part": 0.28414550446122167
+  },
+  "M6:0.97": {
+   "draws": 9000,
+   "S3c_accepted": 1771,
+   "both_accepted": 407,
+   "known_part": 0.22981366459627328
+  },
+  "M6:0.99": {
+   "draws": 19500,
+   "S3c_accepted": 3111,
+   "both_accepted": 405,
+   "known_part": 0.13018322082931533
+  },
+  "M8:20": {
+   "draws": 8500,
+   "S3c_accepted": 1549,
+   "both_accepted": 407,
+   "known_part": 0.262750161394448
+  },
+  "M8:40": {
+   "draws": 10500,
+   "S3c_accepted": 1797,
+   "both_accepted": 400,
+   "known_part": 0.22259321090706732
+  },
+  "MIX:M3/0.25": {
+   "draws": 32000,
+   "S3c_accepted": 4868,
+   "both_accepted": 400,
+   "known_part": 0.08216926869350863
+  },
+  "MIX:M3/0.5": {
+   "draws": 20000,
+   "S3c_accepted": 3294,
+   "both_accepted": 407,
+   "known_part": 0.12355798421372192
+  },
+  "MIX:M3/0.75": {
+   "draws": 12000,
+   "S3c_accepted": 2105,
+   "both_accepted": 411,
+   "known_part": 0.19524940617577197
+  },
+  "MIX:M6:0.97/0.25": {
+   "draws": 41500,
+   "S3c_accepted": 6156,
+   "both_accepted": 403,
+   "known_part": 0.06546458739441195
+  },
+  "MIX:M6:0.97/0.5": {
+   "draws": 27000,
+   "S3c_accepted": 4253,
+   "both_accepted": 407,
+   "known_part": 0.09569715494944744
+  },
+  "MIX:M6:0.97/0.75": {
+   "draws": 14000,
+   "S3c_accepted": 2470,
+   "both_accepted": 413,
+   "known_part": 0.1672064777327935
+  }
+ },
+ "runtime_s": 956.4
+}

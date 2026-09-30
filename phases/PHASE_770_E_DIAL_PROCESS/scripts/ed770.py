@@ -61,12 +61,61 @@ def _marked(u, dial, run=1):
     return int(len(u) == 3)
 
 
+SPECIAL = ('KTH', 'OKOT')          # position-defined dials (need the morphology)
+SPECIAL_SYMBOL = {'KTH': 'T', 'OKOT': 'O'}
+_MORPH = None
+_MCACHE = {}
+
+
+def _morph(w):
+    """(articulator, atomize prefix, first atom) from scripts.voynich.Morphology, cached."""
+    global _MORPH
+    if w in _MCACHE:
+        return _MCACHE[w]
+    if _MORPH is None:
+        from scripts.voynich import Morphology
+        _MORPH = Morphology()
+    try:
+        a = _MORPH.atomize(w)
+        e = _MORPH.extract(w)
+        res = (e.articulator or '', a.prefix or '', a.atoms[0] if a.atoms else None)
+    except Exception:                                  # unparseable token: no special unit
+        res = ('', '', None)
+    _MCACHE[w] = res
+    return res
+
+
+def special_units(w, g, dial):
+    """Glyph indices -> outcome for the position-defined dials:
+    KTH  plain k / t as the HEAD atom (first atom after the prefix; e.g. qok-, chk-, sht-), marked value t;
+    OKOT the gallows of an ok / ot prefix (the sister-prefix choice), marked value t."""
+    art, pre, head = _morph(w)
+    c2g, c = {}, 0
+    for i, u in enumerate(g):
+        c2g[c] = i
+        c += len(u)
+    if dial == 'KTH':
+        if head is None or head[1] != 'HEAD' or head[0] not in ('k', 't'):
+            return {}
+        gi = c2g.get(len(art) + len(pre))
+    elif dial == 'OKOT':
+        if pre not in ('ok', 'ot'):
+            return {}
+        gi = c2g.get(len(art) + 1)
+    else:
+        return {}
+    if gi is None or g[gi] not in ('k', 't'):
+        return {}
+    return {gi: int(g[gi] == 't')}
+
+
 def units(w, dials):
     """For a token and a tuple of dials: {dial: [(outcome, glyph start, glyph end)]} and the joint frame (every unit of
     every listed dial replaced by its class symbol; e-runs collapsed). With one dial this is the dial's own frame."""
     if isinstance(dials, str):
         dials = (dials,)
     g = GLYPH_RE.findall(w)
+    spec = {d: special_units(w, g, d) for d in dials if d in SPECIAL}
     out = {d: [] for d in dials}
     fr = []
     i = 0
@@ -74,7 +123,7 @@ def units(w, dials):
         u = g[i]
         hit = None
         for d in dials:
-            if _is_unit(u, d):
+            if (i in spec[d]) if d in SPECIAL else _is_unit(u, d):
                 hit = d
                 break
         if hit == 'E':
@@ -85,7 +134,10 @@ def units(w, dials):
             fr.append('e')
             i = j
             continue
-        if hit is not None:
+        if hit in SPECIAL:
+            out[hit].append((spec[hit][i], i, i + 1))
+            fr.append(SPECIAL_SYMBOL[hit])
+        elif hit is not None:
             out[hit].append((_marked(u, hit), i, i + 1))
             fr.append(_symbol(u, hit))
         else:
@@ -133,7 +185,7 @@ def page_structure(recs):
             keys = par_lines[pid]
             for i, k in enumerate(keys):
                 S[k].update({'par_idx': j, 'n_par': len(pids), 'par_first': i == 0, 'par_last': i == len(keys) - 1,
-                             'par_nlines': len(keys)})
+                             'par_nlines': len(keys), 'par_line': i})
     return S
 
 
@@ -142,23 +194,50 @@ def fix_hands(recs, override):
     return [r[:8] + (override[r[1]],) if r[1] in override else r for r in recs]
 
 
+def collapsed_units(w):
+    """The token's glyph units with every dial class collapsed (e-run -> e, minim group -> I+final, ch/sh -> X, any
+    gallows -> G), so no dial outcome is visible (lean-expert v2 check: raw units leak E and MIN outcomes)."""
+    g = GLYPH_RE.findall(w)
+    out, i = [], 0
+    while i < len(g):
+        u = g[i]
+        if u == 'e':
+            while i < len(g) and g[i] == 'e':
+                i += 1
+            out.append('e')
+            continue
+        if u in ('ch', 'sh'):
+            out.append('X')
+        elif u in GALLOWS:
+            out.append('G')
+        elif re.fullmatch(r'i+[nrlm]', u):
+            out.append('I' + u[-1])
+        else:
+            out.append(u)
+        i += 1
+    return out
+
+
 def line_context(recs):
-    """Per (line key, position): the last glyph unit of the preceding token on the line ('START' for the first token,
-    'GAP' when the preceding token was dropped as uncertain); per line key: glyph count, and fullness = glyph count /
-    the page's median line glyph count, with its tercile over all lines."""
+    """Per (line key, position): the last two collapsed units of the preceding token on the line ('prev', primary; C2082
+    places boundary routing there) and its last collapsed unit ('prev1', sensitivity); 'START' for the first token, 'GAP'
+    when the preceding token was dropped as uncertain. Per line key: collapsed-unit count, fullness = count / the
+    page's median line count, and its tercile over all lines. Collapsed units keep dial outcomes out of both."""
     by_line = defaultdict(dict)
     for r in recs:
         by_line[r[2]][r[3]] = r[0]
-    prev, glyphs = {}, {}
+    prev, prev1, glyphs = {}, {}, {}
     for key, toks in by_line.items():
-        glyphs[key] = sum(len(GLYPH_RE.findall(w)) for w in toks.values())
+        glyphs[key] = sum(len(collapsed_units(w)) for w in toks.values())
         for p in toks:
             if p == 0:
-                prev[(key, p)] = 'START'
+                prev[(key, p)] = prev1[(key, p)] = 'START'
             elif p - 1 in toks:
-                prev[(key, p)] = GLYPH_RE.findall(toks[p - 1])[-1]
+                cu = collapsed_units(toks[p - 1])
+                prev[(key, p)] = '.'.join(cu[-2:])
+                prev1[(key, p)] = cu[-1]
             else:
-                prev[(key, p)] = 'GAP'
+                prev[(key, p)] = prev1[(key, p)] = 'GAP'
     page = defaultdict(list)
     for key, g in glyphs.items():
         page[key[0]].append(g)
@@ -166,18 +245,21 @@ def line_context(recs):
     full = {key: g / med[key[0]] if med[key[0]] > 0 else 1.0 for key, g in glyphs.items()}
     cut = np.quantile(np.array(list(full.values())), [1 / 3, 2 / 3])
     full3 = {key: 0 if v <= cut[0] else (1 if v <= cut[1] else 2) for key, v in full.items()}
-    return prev, full, full3
+    return prev, prev1, full, full3
 
 
-def occurrences(recs, dial, amap=None, pair_dials=None, cell_extra=()):
+def occurrences(recs, dial, amap=None, pair_dials=None, cell_extra=(), amapZ=None, par_init=None):
     """Occurrence arrays for one dial. pair_dials: the dials whose units are abstracted in the split key 'jkey' (the
     joint frame), so that a token-type split for a pair of dials never breaks either dial's frame. cell_extra: extra
-    attributes appended to the cell, from 'prev' (last glyph unit of the preceding token, or START / GAP), 'full3'
-    (line fullness tercile) and 'pos5' (position-in-line quintile)."""
+    attributes appended to the cell, from 'prev' (last two collapsed units of the preceding token, or START / GAP),
+    'prev1' (last collapsed unit), 'full3' (line fullness tercile, collapsed units) and 'pos5' (position-in-line
+    quintile). amap / amapZ: H -> F / H -> ZL token maps for the
+    'cons' (H and F read the unit alike) and 'consZ' (H and ZL alike) flags. par_init: keep units that are the first
+    glyph of a paragraph's first token (the paragraph-initial gallows); default: kept for every dial except KTH."""
     plen = Counter(r[5] for r in recs)
     q = np.quantile(np.array(list(plen.values()), dtype=float), [1 / 3, 2 / 3])
     S = page_structure(recs)
-    prev_of, full_of, full3_of = line_context(recs)
+    prev_of, prev1_of, full_of, full3_of = line_context(recs)
     half, quartfar = {}, {}
     by_folio = defaultdict(list)
     for k, s in S.items():
@@ -189,8 +271,18 @@ def occurrences(recs, dial, amap=None, pair_dials=None, cell_extra=()):
         for i, k in sorted(lst):
             half[k] = 0 if i < cut else 1
             quartfar[k] = 0 if i < qn else (1 if i >= L - qn else -1)
+    par_lines = defaultdict(list)
+    for r in recs:
+        if r[2] not in par_lines[r[5]]:
+            par_lines[r[5]].append(r[2])
+    phalf = {}
+    for pid_, keys in par_lines.items():                 # PHASE_769 paragraph halves (middle line of odd dropped)
+        L = len(keys)
+        for i, k in enumerate(keys):
+            phalf[k] = -1 if L < 4 else (0 if i < L // 2 else (1 if i >= L - L // 2 else -1))
     rows = defaultdict(list)
     jd = tuple(pair_dials) if pair_dials else (dial,)
+    keep_par_init = (dial != 'KTH') if par_init is None else par_init
     for w, folio, key, p, n, pid, header, sec, hand in recs:
         u, frame = units(w, dial)
         runs = u[dial]
@@ -202,15 +294,26 @@ def occurrences(recs, dial, amap=None, pair_dials=None, cell_extra=()):
         fw = amap.get((folio, key[1], p)) if amap is not None else None
         fu, ffr = units(fw, dial) if fw else ({dial: []}, None)
         f_ok = fw is not None and ffr == frame and len(fu[dial]) == len(runs)
+        zw = amapZ.get((folio, key[1], p)) if amapZ is not None else None
+        zu, zfr = units(zw, dial) if zw else ({dial: []}, None)
+        z_ok = zw is not None and zfr == frame and len(zu[dial]) == len(runs)
         s = S[key]
-        ctx = {'prev': prev_of[(key, p)], 'full3': full3_of[key], 'pos5': min(4, (5 * p) // n)}
+        ctx = {'prev': prev_of[(key, p)], 'prev1': prev1_of[(key, p)], 'full3': full3_of[key],
+               'pos5': min(4, (5 * p) // n)}
         extra = tuple(ctx[c] for c in cell_extra)
         for j, (y, s0, s1) in enumerate(runs):
+            pig = bool(p == 0 and header and s0 == 0)
+            if pig and not keep_par_init:
+                continue
             rows['y'].append(y)
+            rows['par_init_glyph'].append(pig)
+            rows['consZ'].append(bool(z_ok and zu[dial][j][0] == y))
             rows['cell'].append(((frame, j), zone, header, pl, sec, hand) + extra)
             rows['prev'].append(ctx['prev'])
+            rows['prev1'].append(ctx['prev1'])
             rows['fullness'].append(full_of[key])
             rows['pos5'].append(ctx['pos5'])
+            rows['full3'].append(ctx['full3'])
             rows['to_end'].append(n - 1 - p)
             rows['folio'].append(folio)
             rows['par'].append(pid)
@@ -224,6 +327,8 @@ def occurrences(recs, dial, amap=None, pair_dials=None, cell_extra=()):
             rows['relpos'].append(s['relpos'])
             rows['page_edge'].append(s['page_edge'])
             rows['par_idx'].append(s['par_idx'])
+            rows['par_line'].append(s['par_line'])
+            rows['phalf'].append(phalf[key])
             rows['par_first'].append(s['par_first'])
             rows['par_last'].append(s['par_last'])
             rows['final'].append(s1 == len(GLYPH_RE.findall(w)))
@@ -238,12 +343,13 @@ def occurrences(recs, dial, amap=None, pair_dials=None, cell_extra=()):
          'token': np.array([tid[t] for t in rows['token']]), 'token_str': list(tid), 'n_tokens': len(tid),
          'jkey': np.array([jid[t] for t in rows['jkey']]), 'jkey_str': list(jid), 'n_jkeys': len(jid),
          'folio_names': list(fid), 'line_keys': rows['line']}
-    for k in ('half', 'quart', 'quarter', 'line_idx', 'par_idx', 'pos5', 'to_end'):
+    for k in ('half', 'quart', 'quarter', 'line_idx', 'par_idx', 'par_line', 'phalf', 'pos5', 'to_end', 'full3'):
         O[k] = np.array(rows[k])
     O['relpos'] = np.array(rows['relpos'], dtype=float)
     O['fullness'] = np.array(rows['fullness'], dtype=float)
     O['prev'] = rows['prev']
-    for k in ('page_edge', 'par_first', 'par_last', 'final', 'cons'):
+    O['prev1'] = rows['prev1']
+    for k in ('page_edge', 'par_first', 'par_last', 'final', 'cons', 'consZ', 'par_init_glyph'):
         O[k] = np.array(rows[k], dtype=bool)
     O['folio_nlines'] = {fid[f]: len(v) for f, v in by_folio.items() if f in fid}
     cf = defaultdict(set)

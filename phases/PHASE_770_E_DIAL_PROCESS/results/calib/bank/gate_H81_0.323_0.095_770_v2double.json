@@ -1,0 +1,566 @@
+{
+ "raw": {
+  "tag": "H81_0.323_0.095_770",
+  "version": "raw",
+  "gate_pass": false,
+  "gate_rows": {
+   "M1": {
+    "own": 0.84,
+    "wrong": 0.015,
+    "pass": true
+   },
+   "M2a": {
+    "own": 0.725,
+    "wrong": 0.015,
+    "pass": true
+   },
+   "M2b:2": {
+    "own": 0.806930693069307,
+    "wrong": 0.009900990099009901,
+    "pass": true
+   },
+   "M2b:4": {
+    "own": 0.8916256157635468,
+    "wrong": 0.0049261083743842365,
+    "pass": true
+   },
+   "M2b:6": {
+    "own": 0.945273631840796,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M2c": {
+    "own": 0.900497512437811,
+    "wrong": 0.014925373134328358,
+    "pass": true
+   },
+   "M7": {
+    "own": 0.0945273631840796,
+    "wrong": 0.23880597014925373,
+    "pass": false
+   },
+   "M3": {
+    "own": 0.905940594059406,
+    "wrong": 0.019801980198019802,
+    "pass": true
+   },
+   "M4:0.95": {
+    "own": 0.845,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M4:0.97": {
+    "own": 0.51,
+    "wrong": 0.08,
+    "pass": false
+   },
+   "M4:0.99": {
+    "own": 0.07920792079207921,
+    "wrong": 0.47029702970297027,
+    "pass": false
+   },
+   "M5": {
+    "own": 0.9565217391304348,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M6:0.95": {
+    "own": 0.8357487922705314,
+    "wrong": 0.004830917874396135,
+    "pass": true
+   },
+   "M6:0.97": {
+    "own": 0.5073891625615764,
+    "wrong": 0.06403940886699508,
+    "pass": false
+   },
+   "M6:0.99": {
+    "own": 0.16831683168316833,
+    "wrong": 0.3465346534653465,
+    "pass": false
+   },
+   "M8:20": {
+    "own": 0.8522167487684729,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M8:40": {
+    "own": 0.54,
+    "wrong": 0.08,
+    "pass": false
+   },
+   "MIX:M3/0.5": {
+    "either": 0.538083538083538,
+    "pass": false
+   },
+   "MIX:M6:0.97/0.5": {
+    "either": 0.4766584766584767,
+    "pass": false
+   }
+  },
+  "verdict_probabilities": {
+   "M1": {
+    "STATIC-DOMINANT": 0.84,
+    "POSITION-DEPENDENT-DOMINANT": 0.015,
+    "UNRESOLVED": 0.145,
+    "fit_fail": 0.0,
+    "n": 200
+   },
+   "M2a": {
+    "STATIC-DOMINANT": 0.725,
+    "POSITION-DEPENDENT-DOMINANT": 0.015,
+    "UNRESOLVED": 0.26,
+    "fit_fail": 0.0,
+    "n": 200
+   },
+   "M2b:2": {
+    "STATIC-DOMINANT": 0.806930693069307,
+    "POSITION-DEPENDENT-DOMINANT": 0.009900990099009901,
+    "UNRESOLVED": 0.18316831683168316,
+    "fit_fail": 0.0,
+    "n": 202
+   },
+   "M2b:4": {
+    "STATIC-DOMINANT": 0.8916256157635468,
+    "POSITION-DEPENDENT-DOMINANT": 0.0049261083743842365,
+    "UNRESOLVED": 0.10344827586206896,
+    "fit_fail": 0.0,
+    "n": 203
+   },
+   "M2b:6": {
+    "STATIC-DOMINANT": 0.945273631840796,
+    "POSITION-DEPENDENT-DOMINANT": 0.0,
+    "UNRESOLVED": 0.05472636815920398,
+    "fit_fail": 0.0,
+    "n": 201
+   },
+   "M2c": {
+    "STATIC-DOMINANT": 0.900497512437811,
+    "POSITION-DEPENDENT-DOMINANT": 0.014925373134328358,
+    "UNRESOLVED": 0.0845771144278607,
+    "fit_fail": 0.004975124378109453,
+    "n": 201
+   },
+   "M7": {
+    "STATIC-DOMINANT": 0.0945273631840796,
+    "POSITION-DEPENDENT-DOMINANT": 0.23880597014925373,
+    "UNRESOLVED": 0.6666666666666666,
+    "fit_fail": 0.0,
+    "n": 201
+   },
+   "M3": {
+    "STATIC-DOMINANT": 0.019801980198019802,
+    "POSITION-DEPENDENT-DOMINANT": 0.905940594059406,
+    "UNRESOLVED": 0.07425742574257425,
+    "fit_fail": 0.01485148514851485,
+    "n": 202
+   },
+   "M4:0.95": {
+    "STATIC-DOMINANT": 0.0,
+    "POSITION-DEPENDENT-DOMINANT": 0.845,
+    "UNRESOLVED": 0.155,
+    "fit_fail": 0.015,
+    "n": 200
+   },
+   "M4:0.97": {
+    "STATIC-DOMINANT": 0.08,
+    "POSITION-DEPENDENT-DOMINANT": 0.51,
+    "UNRESOLVED": 0.41,
+    "fit_fail": 0.0,
+    "n": 200
+   },
+   "M4:0.99": {
+    "STATIC-DOMINANT": 0.47029702970297027,
+    "POSITION-DEPENDENT-DOMINANT": 0.07920792079207921,
+    "UNRESOLVED": 0.4504950495049505,
+    "fit_fail": 0.0,
+    "n": 202
+   },
+   "M5": {
+    "STATIC-DOMINANT": 0.0,
+    "POSITION-DEPENDENT-DOMINANT": 0.9565217391304348,
+    "UNRESOLVED": 0.043478260869565216,
+    "fit_fail": 0.028985507246376812,
+    "n": 207
+   },
+   "M6:0.95": {
+    "STATIC-DOMINANT": 0.004830917874396135,
+    "POSITION-DEPENDENT-DOMINANT": 0.8357487922705314,
+    "UNRESOLVED": 0.15942028985507245,
+    "fit_fail": 0.014492753623188406,
+    "n": 207
+   },
+   "M6:0.97": {
+    "STATIC-DOMINANT": 0.06403940886699508,
+    "POSITION-DEPENDENT-DOMINANT": 0.5073891625615764,
+    "UNRESOLVED": 0.42857142857142855,
+    "fit_fail": 0.0,
+    "n": 203
+   },
+   "M6:0.99": {
+    "STATIC-DOMINANT": 0.3465346534653465,
+    "POSITION-DEPENDENT-DOMINANT": 0.16831683168316833,
+    "UNRESOLVED": 0.48514851485148514,
+    "fit_fail": 0.0,
+    "n": 202
+   },
+   "M8:20": {
+    "STATIC-DOMINANT": 0.0,
+    "POSITION-DEPENDENT-DOMINANT": 0.8522167487684729,
+    "UNRESOLVED": 0.1477832512315271,
+    "fit_fail": 0.024630541871921183,
+    "n": 203
+   },
+   "M8:40": {
+    "STATIC-DOMINANT": 0.08,
+    "POSITION-DEPENDENT-DOMINANT": 0.54,
+    "UNRESOLVED": 0.38,
+    "fit_fail": 0.0,
+    "n": 200
+   },
+   "MIX:M3/0.25": {
+    "STATIC-DOMINANT": 0.5275,
+    "POSITION-DEPENDENT-DOMINANT": 0.09,
+    "UNRESOLVED": 0.3825,
+    "fit_fail": 0.0,
+    "n": 400
+   },
+   "MIX:M3/0.5": {
+    "STATIC-DOMINANT": 0.23095823095823095,
+    "POSITION-DEPENDENT-DOMINANT": 0.3071253071253071,
+    "UNRESOLVED": 0.4619164619164619,
+    "fit_fail": 0.0,
+    "n": 407
+   },
+   "MIX:M3/0.75": {
+    "STATIC-DOMINANT": 0.029197080291970802,
+    "POSITION-DEPENDENT-DOMINANT": 0.7907542579075426,
+    "UNRESOLVED": 0.18004866180048662,
+    "fit_fail": 0.004866180048661801,
+    "n": 411
+   },
+   "MIX:M6:0.97/0.25": {
+    "STATIC-DOMINANT": 0.5856079404466501,
+    "POSITION-DEPENDENT-DOMINANT": 0.04466501240694789,
+    "UNRESOLVED": 0.369727047146402,
+    "fit_fail": 0.0,
+    "n": 403
+   },
+   "MIX:M6:0.97/0.5": {
+    "STATIC-DOMINANT": 0.35135135135135137,
+    "POSITION-DEPENDENT-DOMINANT": 0.12530712530712532,
+    "UNRESOLVED": 0.5233415233415234,
+    "fit_fail": 0.0,
+    "n": 407
+   },
+   "MIX:M6:0.97/0.75": {
+    "STATIC-DOMINANT": 0.12832929782082325,
+    "POSITION-DEPENDENT-DOMINANT": 0.3026634382566586,
+    "UNRESOLVED": 0.5690072639225182,
+    "fit_fail": 0.0,
+    "n": 413
+   }
+  },
+  "models_fitted": [
+   "M1",
+   "M2a",
+   "M2b:2",
+   "M2b:4",
+   "M2b:6",
+   "M2c",
+   "M7",
+   "M3",
+   "M4:0.95",
+   "M4:0.97",
+   "M4:0.99",
+   "M5",
+   "M6:0.95",
+   "M6:0.97",
+   "M6:0.99",
+   "M8:20",
+   "M8:40"
+  ]
+ },
+ "free": {
+  "tag": "H81_0.323_0.095_770",
+  "version": "free",
+  "gate_pass": false,
+  "gate_rows": {
+   "M1": {
+    "own": 0.365,
+    "wrong": 0.02,
+    "pass": false
+   },
+   "M2a": {
+    "own": 0.345,
+    "wrong": 0.03,
+    "pass": false
+   },
+   "M2b:2": {
+    "own": 0.3811881188118812,
+    "wrong": 0.0297029702970297,
+    "pass": false
+   },
+   "M2b:4": {
+    "own": 0.5763546798029556,
+    "wrong": 0.0049261083743842365,
+    "pass": false
+   },
+   "M2b:6": {
+    "own": 0.8905472636815921,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M2c": {
+    "own": 0.8507462686567164,
+    "wrong": 0.004975124378109453,
+    "pass": true
+   },
+   "M7": {
+    "own": 0.009950248756218905,
+    "wrong": 0.3781094527363184,
+    "pass": false
+   },
+   "M3": {
+    "own": 0.905940594059406,
+    "wrong": 0.0049504950495049506,
+    "pass": true
+   },
+   "M4:0.95": {
+    "own": 0.85,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M4:0.97": {
+    "own": 0.555,
+    "wrong": 0.035,
+    "pass": false
+   },
+   "M4:0.99": {
+    "own": 0.10891089108910891,
+    "wrong": 0.18316831683168316,
+    "pass": false
+   },
+   "M5": {
+    "own": 0.966183574879227,
+    "wrong": 0.00966183574879227,
+    "pass": true
+   },
+   "M6:0.95": {
+    "own": 0.9227053140096618,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M6:0.97": {
+    "own": 0.6206896551724138,
+    "wrong": 0.034482758620689655,
+    "pass": false
+   },
+   "M6:0.99": {
+    "own": 0.21287128712871287,
+    "wrong": 0.10891089108910891,
+    "pass": false
+   },
+   "M8:20": {
+    "own": 0.9211822660098522,
+    "wrong": 0.0,
+    "pass": true
+   },
+   "M8:40": {
+    "own": 0.61,
+    "wrong": 0.015,
+    "pass": false
+   },
+   "MIX:M3/0.5": {
+    "either": 0.43243243243243246,
+    "pass": false
+   },
+   "MIX:M6:0.97/0.5": {
+    "either": 0.24815724815724816,
+    "pass": true
+   }
+  },
+  "verdict_probabilities": {
+   "M1": {
+    "STATIC-DOMINANT": 0.365,
+    "POSITION-DEPENDENT-DOMINANT": 0.02,
+    "UNRESOLVED": 0.615,
+    "fit_fail": 0.015,
+    "n": 200
+   },
+   "M2a": {
+    "STATIC-DOMINANT": 0.345,
+    "POSITION-DEPENDENT-DOMINANT": 0.03,
+    "UNRESOLVED": 0.625,
+    "fit_fail": 0.005,
+    "n": 200
+   },
+   "M2b:2": {
+    "STATIC-DOMINANT": 0.3811881188118812,
+    "POSITION-DEPENDENT-DOMINANT": 0.0297029702970297,
+    "UNRESOLVED": 0.5891089108910891,
+    "fit_fail": 0.0049504950495049506,
+    "n": 202
+   },
+   "M2b:4": {
+    "STATIC-DOMINANT": 0.5763546798029556,
+    "POSITION-DEPENDENT-DOMINANT": 0.0049261083743842365,
+    "UNRESOLVED": 0.4187192118226601,
+    "fit_fail": 0.0049261083743842365,
+    "n": 203
+   },
+   "M2b:6": {
+    "STATIC-DOMINANT": 0.8905472636815921,
+    "POSITION-DEPENDENT-DOMINANT": 0.0,
+    "UNRESOLVED": 0.10945273631840796,
+    "fit_fail": 0.0,
+    "n": 201
+   },
+   "M2c": {
+    "STATIC-DOMINANT": 0.8507462686567164,
+    "POSITION-DEPENDENT-DOMINANT": 0.004975124378109453,
+    "UNRESOLVED": 0.14427860696517414,
+    "fit_fail": 0.0,
+    "n": 201
+   },
+   "M7": {
+    "STATIC-DOMINANT": 0.009950248756218905,
+    "POSITION-DEPENDENT-DOMINANT": 0.3781094527363184,
+    "UNRESOLVED": 0.6119402985074627,
+    "fit_fail": 0.004975124378109453,
+    "n": 201
+   },
+   "M3": {
+    "STATIC-DOMINANT": 0.0049504950495049506,
+    "POSITION-DEPENDENT-DOMINANT": 0.905940594059406,
+    "UNRESOLVED": 0.0891089108910891,
+    "fit_fail": 0.0,
+    "n": 202
+   },
+   "M4:0.95": {
+    "STATIC-DOMINANT": 0.0,
+    "POSITION-DEPENDENT-DOMINANT": 0.85,
+    "UNRESOLVED": 0.15,
+    "fit_fail": 0.01,
+    "n": 200
+   },
+   "M4:0.97": {
+    "STATIC-DOMINANT": 0.035,
+    "POSITION-DEPENDENT-DOMINANT": 0.555,
+    "UNRESOLVED": 0.41,
+    "fit_fail": 0.0,
+    "n": 200
+   },
+   "M4:0.99": {
+    "STATIC-DOMINANT": 0.18316831683168316,
+    "POSITION-DEPENDENT-DOMINANT": 0.10891089108910891,
+    "UNRESOLVED": 0.7079207920792079,
+    "fit_fail": 0.0,
+    "n": 202
+   },
+   "M5": {
+    "STATIC-DOMINANT": 0.00966183574879227,
+    "POSITION-DEPENDENT-DOMINANT": 0.966183574879227,
+    "UNRESOLVED": 0.024154589371980676,
+    "fit_fail": 0.014492753623188406,
+    "n": 207
+   },
+   "M6:0.95": {
+    "STATIC-DOMINANT": 0.0,
+    "POSITION-DEPENDENT-DOMINANT": 0.9227053140096618,
+    "UNRESOLVED": 0.07729468599033816,
+    "fit_fail": 0.004830917874396135,
+    "n": 207
+   },
+   "M6:0.97": {
+    "STATIC-DOMINANT": 0.034482758620689655,
+    "POSITION-DEPENDENT-DOMINANT": 0.6206896551724138,
+    "UNRESOLVED": 0.3448275862068966,
+    "fit_fail": 0.0049261083743842365,
+    "n": 203
+   },
+   "M6:0.99": {
+    "STATIC-DOMINANT": 0.10891089108910891,
+    "POSITION-DEPENDENT-DOMINANT": 0.21287128712871287,
+    "UNRESOLVED": 0.6782178217821783,
+    "fit_fail": 0.0,
+    "n": 202
+   },
+   "M8:20": {
+    "STATIC-DOMINANT": 0.0,
+    "POSITION-DEPENDENT-DOMINANT": 0.9211822660098522,
+    "UNRESOLVED": 0.07881773399014778,
+    "fit_fail": 0.029556650246305417,
+    "n": 203
+   },
+   "M8:40": {
+    "STATIC-DOMINANT": 0.015,
+    "POSITION-DEPENDENT-DOMINANT": 0.61,
+    "UNRESOLVED": 0.375,
+    "fit_fail": 0.0,
+    "n": 200
+   },
+   "MIX:M3/0.25": {
+    "STATIC-DOMINANT": 0.1975,
+    "POSITION-DEPENDENT-DOMINANT": 0.09,
+    "UNRESOLVED": 0.7125,
+    "fit_fail": 0.005,
+    "n": 400
+   },
+   "MIX:M3/0.5": {
+    "STATIC-DOMINANT": 0.07616707616707617,
+    "POSITION-DEPENDENT-DOMINANT": 0.35626535626535627,
+    "UNRESOLVED": 0.5675675675675675,
+    "fit_fail": 0.007371007371007371,
+    "n": 407
+   },
+   "MIX:M3/0.75": {
+    "STATIC-DOMINANT": 0.0072992700729927005,
+    "POSITION-DEPENDENT-DOMINANT": 0.7858880778588808,
+    "UNRESOLVED": 0.20681265206812652,
+    "fit_fail": 0.0,
+    "n": 411
+   },
+   "MIX:M6:0.97/0.25": {
+    "STATIC-DOMINANT": 0.22580645161290322,
+    "POSITION-DEPENDENT-DOMINANT": 0.034739454094292806,
+    "UNRESOLVED": 0.739454094292804,
+    "fit_fail": 0.004962779156327543,
+    "n": 403
+   },
+   "MIX:M6:0.97/0.5": {
+    "STATIC-DOMINANT": 0.12285012285012285,
+    "POSITION-DEPENDENT-DOMINANT": 0.12530712530712532,
+    "UNRESOLVED": 0.7518427518427518,
+    "fit_fail": 0.002457002457002457,
+    "n": 407
+   },
+   "MIX:M6:0.97/0.75": {
+    "STATIC-DOMINANT": 0.05569007263922518,
+    "POSITION-DEPENDENT-DOMINANT": 0.3898305084745763,
+    "UNRESOLVED": 0.5544794188861986,
+    "fit_fail": 0.007263922518159807,
+    "n": 413
+   }
+  },
+  "models_fitted": [
+   "M1",
+   "M2a",
+   "M2b:2",
+   "M2b:4",
+   "M2b:6",
+   "M2c",
+   "M7",
+   "M3",
+   "M4:0.95",
+   "M4:0.97",
+   "M4:0.99",
+   "M5",
+   "M6:0.95",
+   "M6:0.97",
+   "M6:0.99",
+   "M8:20",
+   "M8:40"
+  ]
+ }
+}
