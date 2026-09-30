@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-09-30 10:31
+**Generated:** 2026-09-30 13:21
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -44,13 +44,13 @@ Direct and statistical. State what the numbers and validated constraints say; re
 1. Current Status Brief (read first; overrides older documents)
 2. All Constraints
 3. All Explanatory Fits
-4. Session Methodology Notes (58 feedback rules)
+4. Session Methodology Notes (60 feedback rules)
 
 ---
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.36, 2026-09-30)
+# Status Brief — what currently stands (v7.37, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -188,9 +188,20 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     five syllabified European texts) have 685–1,338.
   - Syllable texts need more than 16 random spellings per syllable to reach B's vocabulary.
   - This does not say B's tokens are words or language.
+- **A whole-word code with one spelling per word, of a text that repeats its phrases:** excluded (C2091,
+  PHASE_774).
+  - B's P-text has no within-line 5-token sequence that recurs at all: 0 windows, against an exact permutation null
+    mean of 0.04. B-fitted first-order generators usually give 0 too.
+  - Every tested plaintext with 8 or more repeated 5-word windows would show them: pharmacy prose, six NT
+    translations, and the recipe, alchemy and verse segments.
+  - Not excluded: two or more spellings per word, stem codes of low-repetition text, letter-level ciphers, lists,
+    names and meaningless text.
+  - With interchangeable spellings, repeat statistics mostly go blind. Merges recover hidden units only in special
+    cases (C2092).
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
-  units, word-level codebooks, modified verbose ciphers, the Rugg grille, and improvisation in a practised script
-  at book scale. Excluding a rival is not evidence for the working interpretation.
+  units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
+  improvisation in a practised script at book scale. Excluding a rival is not evidence for the working
+  interpretation.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
 - **The claim is still presented as structure:** rewrite the passage to state the current status in plain words and
@@ -2104,6 +2115,8 @@ C2087	**The e-dial's folio component survives removal of the preceding token's t
 C2088	**Label o-words fit no mixture of three length-matched paragraph-text references, and "o added to an ordinary word" gets no weight (PHASE_771 Arm L; measurement; pre-registered, lean-expert lock audit and confirmation pass, calibrated on controls; MIXED / UNRESOLVED, fragile).** ZL 3b, 608 label o-words (initial o, not qo, at least 2 glyph units; 53 folios: 408 astro/zodiac/cosmo, 126 pharma/herbal, 72 bio). Grouped EM over length strata 2-7+ against length-matched references (the unit after qo in qo-words of L+1 units; after o in o-words of L units; the first unit of words of L-1 units): w_o 0.81 (95% CI 0.575-1.00), w_qo 0.19 (0.00-0.42), w_add 0.00 (0.00-0.02). Verdict MIXED / UNRESOLVED [no mixture of the three fits: p 0.0005, the floor at 2,000 draws] [fragile: ordinary o-words, from the bio labels alone, w_o 0.999]; power at the labels' own clustering 1.00, so informative; not evidence of a within-label mixture (the fit fails). w_add <= 0.03 in every analysis; the qo weight depends on the reference weighting (type-weighted 0.59, CI 0.33-0.82; line-initial references 0.72, report-only). Departures from the best fit (folio bootstrap): fewer o-l (-60; -102 to -34) and o-k (-38; -67 to -15); p/f +34 (-1 to +96; 32 of 77 on the Rosettes foldout); t +35 (+2 to +71, marginal). Against AZC ring/circle text (report-only) the AZC labels fit ordinary o-words alone, so the zodiac-led departure may be an AZC property rather than a label property (C1502, C1559). No reading: why labels favour o (C525) and whether labels name anything are not tested.	2	labels, A, B, AZC, o-prefix, length-matched, ZL, PHASE_771, C525
 C2089	**Words beside a drawing break inside a line are unresolved between mid-line and line-edge profiles; descriptively, line-final -m follows the line end, not the break (PHASE_771 Arm E; measurement; pre-registered, lean-expert lock audit and confirmation pass, calibrated on controls).** ZL 3b, 725 drawing breaks (<->) inside Currier A and B paragraph lines (A 512 on 79 folios; B 213 on 27). First/last glyph-unit edge models fitted on unbroken lines (paragraph-first starts and paragraph-last ends excluded; cross-fitted by folio halves). Edge index I (0 = position-matched mid-line words, 1 = continuation-line edges): A start 0.37 (0.18-0.56), A end 0.74 (0.51-0.99), B start 0.51 (0.30-0.70), all UNRESOLVED; B end 0.20 (0.08-0.35), descriptive only (calibrated power 0.65); arm level: start UNRESOLVED, end no statement. No interval meets a pre-registered bar; five sensitivity analyses agree. Descriptive: articulated starts after a break A 0.090 (0.065-0.117) and B 0.113 (0.070-0.147), against continuation-line starts 0.159/0.164 and mid-line words 0.030/0.023 (57% and 69% of the line-start rate); -m before a break A 12/512 (matched mid-line expectation 9.4) and B 5/213 (1.4), against 0.104/0.205 at line ends; bare aiin follows a break 3 (A) and 2 (B) times, at or below mid-line expectations (2 may be words cut by the drawing). No mechanism distinguished: <-> marks a gap in the writing surface, and text written before the drawing would also predict edge-free break words.	2	A, B, line, drawing break, line edge, articulator, -m, aiin, ZL, PHASE_771, C1417, C1909, C1002, C1486
 C2090	**Zodiac nymph labels are not a full per-sign inventory (PHASE_772; measurement; pre-registered, lock-audited, calibrated on Currier A forms; partly unblinded).** ZL 3b, 290 labels on 10 signs. NO INVENTORY (lam* = 8, the top of the grid): the share of labels recurring in another sign (R) is 0.23 at N1 (e/i runs collapsed), 0.35 at N2 (maximal collapse) and 0.43 word-level, against the full-inventory 1st percentile of 0.64 at lam = 8. That bound allows 77% of copies visibly changed at N2, plus any e-run, minim, ch/sh or gallows variation. W (within-sign share of duplicate pairs) 0.20 against 0.097 exchangeable (N1, p 0.0109): PALETTE not called; all 13 within-sign pairs at N1 fall on the Gemini-Sagittarius pages. Not excluded: quarter inventories, or half inventories with a palette-like remainder (lam = 1); affixed, two-word or medially varied numerals; running counts; transcription error. Random Currier A words also give NO INVENTORY. The R channel (and partly W) was exposed before the lock by a smoke calibration built from the real labels (disclosed). No reading.	2	AZC, zodiac, labels, inventory, negative_knowledge, partly_unblinded, ZL, PHASE_772, C760, C2068, C2071
+C2091	**No within-line 5-token sequence recurs in Currier B's P-text (PHASE_774 T arm; measurement and negative knowledge; pre-registered, lock-audited, re-certified on unscored segments).** H track, P placement, 21,610 certain tokens in 2,299 lines: 0 repeated 5-token windows, against an exact edge-frame permutation null (EF: within-folio swaps among positions sharing zone and first/last glyph unit) with mean 0.04 (D5 -0.04, p 1.0): T NONE. B's value equals the usual value of B-fitted first-order no-message generators (0 in most runs, range 0-4). Scope: excludes a whole-word code with one spelling per word, written with a frequency-matched (deficit) word-to-token assignment (other assignments not tested), of any plaintext with P5 >= 8 (P5 = the plaintext's own repeated 5-word windows, counted in B's line skeleton). The rule 'P5 >= 8 => not NONE' was certified on 32/32 unscored segments (Mesue pharmacy 3; New Testaments in Latin, Italian, Spanish, German, English and Turkish 29). Design and audit runs add Codicillus recipes, SISMEL and Rupescissa alchemy, and Dante verse (segment 0). Does not exclude codes with two or more spellings per word, stem codes, letter-level ciphers, plaintexts with P5 < 8, lists, names or meaningless text; not evidence of meaninglessness. Extends C1790's counts to n = 5, within and across folios, with a null and a certified scope (populations differ: C1790 counted 2,420 lines, this run 2,299 P-text lines); C1790's 'unique specification' reading is not carried over.	2	B, repeats, phrase, codebook, cipher, negative_knowledge, PHASE_774, C1790, C2085, C2080
+C2092	**Which merges can expose hidden repeats under interchangeable spellings (PHASE_774 methods; controls, with B measured descriptively).** On ciphers with known plaintext laid into B's skeleton (k1 = chance that a true repeat of a hidden unit stays a visible repeat; k0 = chance collision): a MIDDLE merge recovers a stem code whose spelling varies only in its prefix and suffix frames (k1 0.67-0.72, k0 about 0.002). Exchange (Brown) clustering at 64-512 classes substantially recovered homophones in only one tested code (the 4-spelling Latin NT whole-token code, k1 0.84 against 0.25 unmerged), not the 2- or 4-spelling Latin recipe codes (0.50, 0.26) or the stem codes (<= 0.045); only about 800-1,400 types reach 3 occurrences in B-sized control corpora. None of the tested merges recovers a Naibbe-type letter cipher (best k1 0.41). Written in B's own marginals, a stem code of low-repetition text adds no more MIDDLE 5-window repeats than B-like first-order habits (e.g. Latin NT segment 7, X5 1.81). Calibration ratios transfer only at matched marginals. On B the MIDDLE arm is uninformative: B's MID5 EF null mean (56.2) is 2.1 times the maximum of B-like no-message runs (27.2) and above every section-fitted run (<= 44.7), so the pre-registered power assumption (<= about 27) fails; raw counts 85 against 56.2 (p 0.012), rarity-filtered 0 against 0.18, all 40 repeated MIDDLE 5-grams built from frequent MIDDLEs. Cause not identified (hypotheses: folio-level MIDDLE concentration; tighter edge-to-MIDDLE coupling than the generators have). EF, an exact within-folio edge-cell permutation null, replaces PHASE_768's non-converging N5j.	2	B, methods, homophony, merge, MIDDLE, null_model, PHASE_774, PHASE_768, C2080, C2091
 
 ---
 
@@ -2335,6 +2348,28 @@ Both thresholds turned out wrong. Actual cross-NL ceiling values:
 
 ---
 
+## calibration-models-from-test-data-leak
+
+*Never build calibration or simulation models from the test data itself; their summaries read out the outcome before the lock*
+
+**The rule.** Build calibration and simulation models (inventories, palettes, generators) only from material outside
+the test set, such as another section's words or controls. The real test data may supply structural sizes and nothing
+else. Don't print simulation summaries that depend on the real forms.
+
+**Why.** In PHASE_772 (zodiac label inventory), the first smoke calibration drew each sign's palette from that sign's
+real labels.
+- The palette model's R median (N2 0.138) was effectively the real cross-sign recurrence.
+- It sat below every final threshold, so the verdict (NO INVENTORY) was foreseeable before the lock.
+- The lean-expert's lock audit caught it. The phase had to disclose the leak and register the verdict as "partly
+  unblinded" (C2090).
+
+**How to apply.**
+- When writing `cal*.py`, check every place that reads the test items. Only counts and positions may come from them.
+
+[…trimmed — full note: memory/feedback_calibration_models_from_test_data_leak.md]
+
+---
+
 ## calibration-provenance-and-clustering-level
 
 *Re-run the whole calibration after any change (sections share one random stream); estimate clustering at the level the simulation clusters*
@@ -2417,6 +2452,26 @@ User correctly diagnosed a session pattern: "you are being overconfident in inco
 The failures cluster on ONE behavior: **reasoning a measure's direction/convention from naive first principles instead of consulting the validated constraints that already define it.** A fresh script that returns a clean p-value/percentile FEELS rigorous, and that feeling produced confidence in conclusions that were never grounded against the constraint system — even when they contradicted Tier-2 validated work. The project has an explicit **Context-First Rule** (CLAUDE.md): STOP → SEARCH → CITE before a
 
 […trimmed — full note: memory/feedback_consult_constraints_before_deflating.md]
+
+---
+
+## controls-must-match-test-marginals
+
+*"Ratio statistics (observed/null repeats) calibrated on controls written in another corpus's forms do not transfer; write message-present controls in the test corpus's own marginals (not its order)"*
+
+**The rule.** When a statistic's chance rate depends on the symbol marginals, like repeat counts against a
+permutation null, calibrate it on controls that reproduce the test corpus's marginals. Use its token, MIDDLE and frame
+frequencies, never its sequence. Otherwise the power and thresholds are fiction.
+
+**Why.** In PHASE_774 (variant-merge test), a stem code of Latin recipes gave very different MIDDLE-level 4–5-window
+repeat ratios depending on whose forms it was written in.
+- Built on Currier A's forms (about 6,000 distinct stems): X4 up to 13.
+- Rewritten in B's own forms (plaintext lemmas deficit-matched onto B's MIDDLE frequency profile, frames drawn from B's
+  P(frame | MIDDLE)): X5 1.3–2.0, inside the no-message range (up to 2.8).
+
+B's concentrated MIDDLE inventory makes chance repeats common. They swamp a recipe text's true repeats, so the A-form
+
+[…trimmed — full note: memory/feedback_controls_must_match_test_marginals.md]
 
 ---
 

@@ -4,6 +4,61 @@
 
 ---
 
+## Version 7.37 (2026-09-30) — PHASE_773 stopped; PHASE_774: merged spellings and hidden phrase repeats (C2091, C2092)
+
+### Summary
+**PHASE_773 (zodiac figures against medieval degree tables): stopped at design, with no comparison computed.** The
+blind-coded figure attributes vary by page, not by figure:
+- tubs on Pisces–Taurus only;
+- 3 crowns in all;
+- clothing split by the Aries and Taurus pages;
+- star-holding unreliable.
+
+So there is no power for a per-degree test. The degree tables' per-sign contents were never read, so a better-coded
+test stays blind.
+
+**PHASE_774 asks the human's question:** could interchangeable spellings hide a message? If the variants can be
+merged, the message's repeated phrases should reappear.
+- **Stage 1 (controls):** which merges recover hidden units at all.
+- **Null:** an exact within-folio edge-cell permutation (EF) replaces PHASE_768's non-converging MCMC.
+- **Arms:** a T arm (whole-word codes) and an M arm (MIDDLE-level stem codes), calibrated on controls written in B's
+  own marginals.
+
+**Process.**
+- The lean-expert lock audit found v1 NOT LOCKABLE: every certification run had reused one segment of each plaintext.
+- v2 was re-certified on unscored segments:
+  - the T arm passed every criterion;
+  - the M arm failed R2 (a stem code of Latin NT segment 7 was called NONE), so v3 made it one-sided, with no
+    re-tuning.
+- A confirmation pass followed, then the lock (`phase774-lock`), one run and a results check.
+
+**T arm: NONE (C2091).** B's P-text has no within-line 5-token sequence that recurs at all: 0 windows, against an EF
+null mean of 0.04.
+- This excludes a one-spelling whole-word code (frequency-matched assignment) of any plaintext with 8 or more
+  repeated 5-word windows.
+- It is certified on 32/32 unscored segments: pharmacy prose and six NT translations. Recipe, alchemy and verse
+  segments come from the design runs.
+
+**M arm: not PRESENT, and uninformative on B.** B's MIDDLE-level null mean (56) is far outside the calibrated range
+(at most 27 for B-like generators, at most 44.7 section-fitted), so the arm's calibration does not transfer.
+
+### Methods findings (C2092)
+- **Which merges recover hidden units.**
+  - A MIDDLE merge recovers stem codes.
+  - Exchange clustering recovered homophones in only one tested code.
+  - None of the tested merges recovers Naibbe.
+  - Two unrelated spellings per word already hide a recipe text's phrases.
+- **Controls must reproduce the test corpus's marginals.** Stem codes built on Currier A's forms overstated power
+  about fivefold. Saved as a feedback memory.
+- **Certification must use unscored plaintext segments.** Re-drawing a codebook on the same segment is not fresh
+  evidence.
+
+### Registry
+- New Tier-2 rows: C2091 (negative knowledge) and C2092 (methods).
+- Live: 1,899 (T0 2, T1 38, T2 1,689, T3 166, T4 4); 774 phases.
+
+---
+
 ## Version 7.36 (2026-09-30) — PHASE_772: are the zodiac labels a repeated per-sign set? (C2090)
 
 ### Summary

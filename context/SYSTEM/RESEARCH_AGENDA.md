@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.36, 2026-09-30)
+# Research Agenda — open questions and the tests that would move them (v7.37, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -56,6 +56,10 @@ text made to look meaningful? And, if it carries content, what content?
    - What: the Rugg grille (Parisel's public code), a word-level codebook, a syllable codebook with spelling variation
      (one spelling per syllable is excluded, C2085) and a modified verbose cipher, each through the PHASE_757
      harness with noise parity.
+   - Word-level codebooks (PHASE_774):
+     - excluded with one spelling per word, for plaintexts that repeat their phrases (C2091);
+     - with two or more spellings per word, repeat statistics at B's size cannot see them (C2092). They remain open
+       for the discriminator panel.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
@@ -103,10 +107,14 @@ text made to look meaningful? And, if it carries content, what content?
      writing-session drift as rival sources.
    - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
      kind).
-     - Next is PHASE_773: the figures' attributes (blind-coded) against medieval per-degree tables (al-Qabisi,
-       Bonatti, Leopold, al-Biruni, Lilly).
-     - The pairings were fixed before any data: pitted degrees with tubs, light degrees with stars, fortune degrees
-       with crowns.
+     - PHASE_773 (the figures against medieval per-degree tables) stopped at design. The blind-coded attributes vary by
+       page, not by figure, so no comparison was computed.
+     - The degree tables stay unread, ready for a better-coded, figure-level attribute set.
+   - **Merged spellings** (PHASE_774, C2091/C2092):
+     - no recurring 5-token phrase in B;
+     - interchangeable spellings mostly defeat repeat statistics.
+     - Content therefore needs an external anchor (known plaintext at a known place), not more internal statistics of
+       this kind.
    - Labels (PHASE_771, C2088):
      - label o-words fit no mixture of ordinary o-words, dropped-q qo-words and "o + word";
      - next, pre-register AZC ring text as the reference for AZC labels (s7 fit ordinary o-words alone), and test the
