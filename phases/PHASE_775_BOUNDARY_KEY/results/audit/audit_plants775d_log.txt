@@ -1,0 +1,14 @@
+tau_K1 0.00331  tau_K2 0.00410  R 200
+[     8s] MIDMODE|line|4.0|776404        modal share 0.591 | lag1 dS0 +0.0220 G1 -0.0148 p 1.000 G2 -0.0195 p 1.000 | lag2 dS0 +0.0023 G1 -0.0044 G2 -0.0027
+[     8s] MIDMODE|line|2.0|776402        modal share 0.491 | lag1 dS0 +0.0152 G1 -0.0098 p 1.000 G2 -0.0158 p 1.000 | lag2 dS0 +0.0000 G1 +0.0008 G2 +0.0006
+[     8s] MIDMODE|line|4.0|776414        modal share 0.572 | lag1 dS0 +0.0215 G1 -0.0166 p 1.000 G2 -0.0198 p 1.000 | lag2 dS0 +0.0022 G1 -0.0022 G2 -0.0013
+[     8s] MIDMODE|line|2.0|776412        modal share 0.478 | lag1 dS0 +0.0147 G1 -0.0081 p 1.000 G2 -0.0133 p 1.000 | lag2 dS0 +0.0006 G1 -0.0008 G2 +0.0025
+[    13s] MIDMODE|line|8.0|776408        modal share 0.705 | lag1 dS0 +0.0295 G1 -0.0166 p 1.000 G2 -0.0252 p 1.000 | lag2 dS0 +0.0089 G1 -0.0082 G2 -0.0067
+[    13s] MIDMODE|para|2.0|776502        modal share 0.517 | lag1 dS0 +0.0179 G1 -0.0086 p 1.000 G2 -0.0141 p 1.000 | lag2 dS0 +0.0002 G1 +0.0009 G2 -0.0001
+[    13s] MIDMODE|line|8.0|776418        modal share 0.696 | lag1 dS0 +0.0332 G1 -0.0241 p 1.000 G2 -0.0277 p 1.000 | lag2 dS0 +0.0122 G1 -0.0101 G2 -0.0127
+[    13s] MIDMODE|para|2.0|776512        modal share 0.511 | lag1 dS0 +0.0199 G1 -0.0148 p 1.000 G2 -0.0171 p 1.000 | lag2 dS0 +0.0029 G1 -0.0026 G2 -0.0041
+[    17s] MIDMODE|para|4.0|776504        modal share 0.582 | lag1 dS0 +0.0177 G1 -0.0097 p 1.000 G2 -0.0156 p 1.000 | lag2 dS0 +0.0025 G1 -0.0017 G2 +0.0003
+[    17s] MIDMODE|para|4.0|776514        modal share 0.580 | lag1 dS0 +0.0198 G1 -0.0165 p 1.000 G2 -0.0170 p 1.000 | lag2 dS0 +0.0012 G1 -0.0021 G2 -0.0025
+[    17s] MIDMODE|para|8.0|776508        modal share 0.701 | lag1 dS0 +0.0236 G1 -0.0173 p 1.000 G2 -0.0197 p 1.000 | lag2 dS0 +0.0071 G1 -0.0078 G2 -0.0068
+[    17s] MIDMODE|para|8.0|776518        modal share 0.705 | lag1 dS0 +0.0353 G1 -0.0219 p 1.000 G2 -0.0294 p 1.000 | lag2 dS0 +0.0137 G1 -0.0120 G2 -0.0131
+done
