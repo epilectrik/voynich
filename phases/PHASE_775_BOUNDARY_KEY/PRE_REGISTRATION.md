@@ -1,6 +1,7 @@
 # PHASE_775 — Is Currier B's word-boundary rule the key of a context-keyed cipher? (pre-registration)
 
-**Status: DRAFT v2 for the lean-expert lock audit (not locked).**
+**Status: v3, for lock.** The lean-expert lock audit returned LOCKABLE WITH EDITS; its edits 1–10 and minor fixes
+(a)–(c) are applied below (audit scripts and results committed at 3ada341).
 - **v1** fixed the certification criteria before the certification ran.
 - **The certification failed R1:** some held-out keyed ciphers were missed.
 - **v2 is the redesign that the v1 rule requires,** with no re-tuning:
@@ -19,7 +20,11 @@ After the lock nothing below may change without a new phase number.
   the same context. Under a context-keyed substitution, rank r in every context stands for the same hidden unit, so the
   hidden text's word order reappears among the ranks.
 - **Prior work.** This is Friedman's column-alignment idea for polyalphabetic ciphers with the boundary rule as the key
-  schedule. No registered test has asked whether B's boundary coupling acts as a key.
+  schedule.
+  - C1976 rejected an atom-level polyalphabetic reading in which the token's **own** prefix channel selects the
+    alphabet.
+  - Here the selector is the **previous** token's ending, at the token level.
+  - No registered test has asked whether B's boundary coupling acts as a key.
 
 ## Method
 **Keys** (the context c_i of token i):
@@ -37,8 +42,17 @@ null samples included.
 **Statistics:**
 - **S_K:** plug-in mutual information (bits) between consecutive decoded symbols within a line.
 - **dS_K:** S_K − mean S_K over null samples.
-- **Key gain G_K = dS_K − dS_K0,** with p_G = the share of null samples whose raw key gain (S_K − S_K0) is at least the
-  corpus's.
+- **Key gain G_K = dS_K − dS_K0.** Its p-value is p_G = (1 + b) / (1 + R), where b counts the null samples whose raw
+  key gain (S_K − S_K0) is at least the corpus's. It is paired, on samples shared across keys.
+  - p_G guards only against sampling noise. Every no-key control breaks within-cell exchangeability too (dS_K0 far above
+    its EF null), so the specificity rests on τ and the controls.
+  - R is 200 in the design and certification (where the bar needs zero exceedances) and 1,000 on B (the same nominal
+    level).
+- **Lag-2 key gain (descriptive; lock-audit edit 3).** The same statistic between decoded symbols two apart in a line,
+  on the same EF samples. It is uncertified and restricts wording only:
+  - "order-like" if the lag-2 gain is less than half the lag-1 gain;
+  - "clustering-like" if it is at least the lag-1 gain;
+  - "unresolved" otherwise.
 
 **Null: header-aware EF.** The PHASE_774 exact within-folio permutation, here within folio × line type (paragraph-first
 line or body line).
@@ -117,7 +131,7 @@ PASS = R1, R2 and R3. A FAIL means redesign, with no re-tuning on these segments
 | Criterion | Result |
 |---|---|
 | R2 | pass: both two-spelling ciphers in scope were not NONE |
-| R3 | pass: none of the 23 no-key controls was PRESENT or INDETERMINATE; maximum G_K1 +0.0005, G_K2 +0.0007 |
+| R3 | pass: none of the 25 no-key controls (20 no-message runs, 3 twins, 2 plain codes) was PRESENT or INDETERMINATE; maximum G_K1 +0.0005, G_K2 +0.0007 |
 | R1 | **fail:** 8 of the 12 one-spelling keyed ciphers in scope were PRESENT on their true key's arm; 4 were missed |
 
 The four R1 misses, plus one out-of-scope case for reference:
@@ -139,8 +153,19 @@ The four R1 misses, plus one out-of-scope case for reference:
 
 **Redesign (v2).**
 - The NONE scope ("excludes keyed ciphers of plaintexts with O ≥ 0.04") is refuted, so no arm keeps an exclusion claim.
-- The false-PRESENT side is certified. Across 59 no-key controls (36 design, 23 certification) the maximum key gain is
+- The false-PRESENT side is certified. Across 61 no-key controls (36 design, 25 certification) the maximum key gain is
   +0.0007 against τ_K1 0.0033 and τ_K2 0.0041, and none reached PRESENT.
+- **The lock audit added 37 no-key plants beyond the first-order set.** None reached PRESENT; the maximum G_K1 was −0.0007
+  and G_K2 −0.0026 (`results/audit/`). The plants were:
+  - sampling temperature varied by line and by paragraph;
+  - section chains mixed within folios;
+  - e-dial settings per line and per paragraph;
+  - second-order skip habits;
+  - temperature graded along the line;
+  - habit3 fitted per folio (folio-concentrated vocabularies);
+  - B-like boundary spelling with line- or paragraph-level MIDDLE clustering.
+
+  Anything carried by token identity is seen better by global ranks, which pushes G down.
 
 ## Declared prior knowledge and exposure
 - **B's facts relied on:**
@@ -161,19 +186,24 @@ The four R1 misses, plus one out-of-scope case for reference:
   lists only make the controls' key sequences behave like B's; they cannot encode B's outcome.
 
 ## What each outcome means
-**not PRESENT on both arms (v2).** Descriptive only: report G_K and p_G. There is no exclusion claim, because rank
-decoding misses real keyed ciphers whose contexts are dominated by particular preceding words (certification R1).
+**not PRESENT on both arms (v2).** Descriptive only: report G_K and p_G. There is no exclusion claim. Known misses:
+- 4 of the 12 in-scope keyed natural-language ciphers in the certification: their contexts are dominated by particular
+  preceding words;
+- 4 of 4 keyed spellings of a B-like habit stream (lock audit).
+
 It is not evidence of meaninglessness.
 
-**PRESENT on an arm.** B's tokens, re-labelled by frequency rank within the previous token's ending, carry more
-consecutive-order information than global labels do. No no-message run, twin or plain code showed that.
-- It is consistent with a context-keyed cipher, or with another process in which the previous ending selects among
-  interchangeable forms of shared underlying choices. Second-order no-message habits were not modelled.
-- Any cipher reading is echo-class and needs an external test or the human's sign-off.
-- A PRESENT would justify a follow-up phase that tries to align B's decoded rank stream with plaintext frequency
-  profiles.
-
-**INDETERMINATE.** Phase record only.
+**PRESENT on an arm (lock-audit edit 2).** Tokens relabelled by frequency rank within the previous ending show more
+within-line neighbour dependence than global labels do. None of the 98 no-key controls showed that: 61 phase controls
+plus the audit's 37 plants.
+- **What it is consistent with:** context-conditioned relabelling of an underlying stream that is **ordered or clustered
+  by line**. A keyed relabelling of a line-clustered stream with no word order was PRESENT in 2 of 15 audit runs. Use
+  the lag-2 descriptive for wording only.
+- **The arm does not identify the key length.** K2-keyed ciphers were PRESENT on the K1 arm in 3 of 6 certification
+  runs.
+- **Any cipher or message reading is echo-class.** It needs an external test or the human's sign-off.
+- **Follow-up.** A PRESENT would justify a later phase that aligns B's decoded ranks with plaintext frequency profiles.
+  That phase must carry C2052-type genericity controls (edit 8).
 
 ## Registry consequences (per arm)
 | Outcome | Consequence |
@@ -196,6 +226,15 @@ consecutive-order information than global labels do. No no-message run, twin or 
 
 ## Deviations
 - **From v1:** the certification failed R1. Both arms become one-sided (PRESENT only), and no threshold changed.
+- **From v2** (lock-audit edits 1–10, minor fixes (a)–(c)):
+  - counts corrected;
+  - PRESENT wording (ordered or clustered by line), arms not read as key length, known misses listed;
+  - lag-2 descriptive added (no change to the lag-1 statistic or its samples);
+  - p_G wording;
+  - C1976 cited, and C2052 controls required for any alignment follow-up;
+  - `verify_lock` runs before anything is loaded;
+  - descriptive labels split;
+  - `plaintext_order_index` counts pairs across B's 22 blockers (negligible, noted).
 
 ## Caveats
 - **O_S was chosen after the design runs** (see Thresholds). The certification tests it on disjoint segments.

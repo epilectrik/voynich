@@ -43,7 +43,9 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
 LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds775.json', 'results/prelock_calib775_design.json',
           'results/prelock_order775_design.json', 'results/prelock_cert775.json', 'results/input_checksums.json',
           'scripts/key775.py', 'scripts/gen775.py', 'scripts/run775.py', 'scripts/prelock_calib775.py',
-          'scripts/prelock_thresholds775.py', 'scripts/prelock_cert775.py', 'scripts/prelock_order775.py')
+          'scripts/prelock_thresholds775.py', 'scripts/prelock_cert775.py', 'scripts/prelock_order775.py',
+          'scripts/audit/audit_plants775.py', 'scripts/audit/audit_plants775b.py',
+          'scripts/audit/audit_plants775c.py', 'scripts/audit/audit_plants775d.py')
 DRY = '--dry' in sys.argv
 LOGF = None
 
@@ -89,9 +91,22 @@ def v1_range(G, p, Kn, TH):
     """Descriptive position of G against the no-key controls (never a NONE claim)."""
     if G >= TH[f'tau_{Kn}'] and p <= 0.005:
         return 'PRESENT'
-    if G <= TH[f'NEG_{Kn}'] or p > 0.05:
+    if G <= TH[f'NEG_{Kn}']:
         return 'at or below the no-key maximum (descriptive)'
+    if p > 0.05:
+        return 'above the no-key maximum but not significant, p > 0.05 (descriptive)'
     return 'between the no-key maximum and the PRESENT bar (descriptive)'
+
+
+def lag2_reading(g1, g2):
+    """Pre-declared wording rule (lock-audit edit 3): restricts wording only, uncertified."""
+    if g1 <= 0:
+        return 'not applicable (no positive lag-1 gain)'
+    if g2 < 0.5 * g1:
+        return 'order-like (lag-2 gain < half the lag-1 gain)'
+    if g2 >= g1:
+        return 'clustering-like (lag-2 gain >= lag-1 gain)'
+    return 'unresolved'
 
 
 def analyse(lines, sk, tag):
@@ -109,6 +124,7 @@ def analyse(lines, sk, tag):
         x = res[Kn]
         log(f'[{tag}] ARM {Kn}: key gain G {x["G"]:+.5f}, p_G {x["G_p"]:.4f} -> {calls[Kn]}   '
             f'[PRESENT >= {TH["tau_" + Kn]:.5f} with p <= 0.005; {v1_range(x["G"], x["G_p"], Kn, TH)}]')
+        log(f'[{tag}]   lag-2 key gain {x["G_lag2"]:+.5f} (descriptive): {lag2_reading(x["G"], x["G_lag2"])}')
     summary = ('summary: key gain PRESENT (' + ' and '.join(k for k in ('K1', 'K2') if calls[k] == 'PRESENT') + ')'
                if 'PRESENT' in calls.values() else f'summary: K1 {calls["K1"]}, K2 {calls["K2"]}')
     log(f'[{tag}] {summary}')
@@ -121,6 +137,8 @@ def main():
         json.dump({p: sha256(p) for p in INPUTS}, open(OUT / 'input_checksums.json', 'w'), indent=1)
         print('wrote input_checksums.json')
         return
+    if not DRY:
+        verify_lock()                                  # lock-audit minor fix (c): verify before loading anything
     sk = GK.G.HR.b_skeleton()
     if DRY:
         (OUT / 'dryrun').mkdir(exist_ok=True)
@@ -133,7 +151,6 @@ def main():
             r = analyse(lines, sk, tag)
             json.dump(r, open(OUT / 'dryrun' / f'{tag}.json', 'w'), indent=1)
         return
-    verify_lock()
     LOGF = open(OUT / 'run_log.txt', 'w', encoding='utf-8')
     import platform
     import numpy

@@ -1,14 +1,18 @@
-[DECOY_keyK1_NTla5] 16s | EF cells 12967, movable 0.553
+[DECOY_keyK1_NTla5] 24s | EF cells 12967, movable 0.553
 [DECOY_keyK1_NTla5] K0: S 0.06953, EF null 0.04325 (sd 0.00129), dS +0.02628, z 20.3, p 0.0010
 [DECOY_keyK1_NTla5] K1: S 0.07507, EF null 0.03339 (sd 0.00147), dS +0.04168, z 28.3, p 0.0010
 [DECOY_keyK1_NTla5] K2: S 0.06554, EF null 0.03584 (sd 0.00151), dS +0.02970, z 19.6, p 0.0010
 [DECOY_keyK1_NTla5] ARM K1: key gain G +0.01540, p_G 0.0010 -> PRESENT   [PRESENT >= 0.00331 with p <= 0.005; PRESENT]
+[DECOY_keyK1_NTla5]   lag-2 key gain +0.00173 (descriptive): order-like (lag-2 gain < half the lag-1 gain)
 [DECOY_keyK1_NTla5] ARM K2: key gain G +0.00342, p_G 0.0330 -> not PRESENT   [PRESENT >= 0.00410 with p <= 0.005; between the no-key maximum and the PRESENT bar (descriptive)]
+[DECOY_keyK1_NTla5]   lag-2 key gain +0.00236 (descriptive): unresolved
 [DECOY_keyK1_NTla5] summary: key gain PRESENT (K1)
-[DECOY_habit3] 12s | EF cells 12593, movable 0.579
+[DECOY_habit3] 19s | EF cells 12593, movable 0.579
 [DECOY_habit3] K0: S 0.07193, EF null 0.05343 (sd 0.00153), dS +0.01850, z 12.1, p 0.0010
 [DECOY_habit3] K1: S 0.02827, EF null 0.02113 (sd 0.00131), dS +0.00715, z 5.5, p 0.0010
 [DECOY_habit3] K2: S 0.01851, EF null 0.01871 (sd 0.00119), dS -0.00020, z -0.2, p 0.5554
 [DECOY_habit3] ARM K1: key gain G -0.01136, p_G 1.0000 -> not PRESENT   [PRESENT >= 0.00331 with p <= 0.005; at or below the no-key maximum (descriptive)]
+[DECOY_habit3]   lag-2 key gain -0.00033 (descriptive): not applicable (no positive lag-1 gain)
 [DECOY_habit3] ARM K2: key gain G -0.01870, p_G 1.0000 -> not PRESENT   [PRESENT >= 0.00410 with p <= 0.005; at or below the no-key maximum (descriptive)]
+[DECOY_habit3]   lag-2 key gain -0.00279 (descriptive): not applicable (no positive lag-1 gain)
 [DECOY_habit3] summary: K1 not PRESENT, K2 not PRESENT

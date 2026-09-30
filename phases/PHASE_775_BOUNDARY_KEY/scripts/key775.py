@@ -82,6 +82,10 @@ class Decoder:
         self.gcount = np.bincount(C.tok[C.tok >= 0], minlength=len(voc)).astype(np.int64)
         # pairs (i, i+1) inside a line
         self.pair = np.flatnonzero(self.same_line_prev[1:]) + 1          # index of the second member
+        # pairs (i, i+2) inside a line (lag-2 descriptive; lock-audit edit 3)
+        s2 = np.zeros(n, dtype=bool)
+        s2[2:] = C.line_of[2:] == C.line_of[:-2]
+        self.pair2 = np.flatnonzero(s2)
 
     def contexts(self, tok):
         prev = np.roll(tok, 1)
@@ -110,9 +114,12 @@ class Decoder:
         r[np.flatnonzero(valid)] = np.minimum(rank[inv.ravel()], R_MAX)
         return r
 
-    def stat(self, tok):
+    def stat(self, tok, lag=1):
         r = self.decode(tok)
-        a, b = r[self.pair - 1], r[self.pair]
+        if lag == 1:
+            a, b = r[self.pair - 1], r[self.pair]
+        else:
+            a, b = r[self.pair2 - 2], r[self.pair2]
         ok = (a > 0) & (b > 0)
         a, b = a[ok], b[ok]
         K = R_MAX + 1
@@ -133,11 +140,14 @@ def run(lines, groups, keys=('K0', 'K1', 'K2'), R=200, seed=0):
     C = E.Corpus(lines, groups, sig=E.sig_fl2, ns=(2,))
     Ds = {k: Decoder(C, k) for k in keys}
     obs = {k: D.stat(C.tok) for k, D in Ds.items()}
+    obs2 = {k: D.stat(C.tok, lag=2) for k, D in Ds.items()}
     null = {k: [] for k in keys}
+    null2 = {k: [] for k in keys}
     for _ in range(R):
         t = C.sample(rng)
         for k, D in Ds.items():
             null[k].append(D.stat(t))
+            null2[k].append(D.stat(t, lag=2))
     out = {}
     for k in keys:
         v = np.array(null[k])
@@ -153,5 +163,9 @@ def run(lines, groups, keys=('K0', 'K1', 'K2'), R=200, seed=0):
             gv = np.array(null[k]) - v0                      # raw key gain in each null sample
             out[k]['G'] = g_obs - float(gv.mean())           # = dS_K - dS_K0
             out[k]['G_p'] = float((1 + (gv >= g_obs).sum()) / (1 + R))
+            # lag-2 key gain on the same samples (descriptive only)
+            g2_obs = obs2[k] - obs2['K0']
+            g2v = np.array(null2[k]) - np.array(null2['K0'])
+            out[k]['G_lag2'] = g2_obs - float(g2v.mean())
     out['_cells'] = {'n_cells': C.n_cells, 'frac_movable': C.frac_movable}
     return out
