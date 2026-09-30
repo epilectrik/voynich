@@ -1,0 +1,14 @@
+PHASE_777 locked run; lock phase777-lock verified; inputs verified; R = 1000; seed 77700
+versions: python 3.11.4, numpy 2.3.2
+[B] 112s
+[B] F1  [EF-F, movable 0.587, 28 symbols] RPT7 177/122.9 (sd 16.3) D +54.1 z 3.31 p 0.0030 -> NOT PRESENT (residual) [PRESENT z >= 10.54; NONE z <= 2.85 or p > 0.05] | RPT5 4734/4448 z 5.54 p 0.0010 | DIST7 87/60.1
+[B]     refined nulls: EFq z 1.11 p 0.1479 (movable 0.388); EFpar z 2.04 p 0.0270 (movable 0.317) -> gate: n/a
+[B] F2  [EF-F, movable 0.587, 37 symbols] RPT7 178/149.4 (sd 17.8) D +28.6 z 1.60 p 0.0669 -> NONE          [PRESENT z >= 10.46; NONE z <= 3.13 or p > 0.05] | RPT5 3701/3598 z 2.06 p 0.0220 | DIST7 78/68.7
+[B]     refined nulls: EFq z 0.62 p 0.2697 (movable 0.388); EFpar z 0.06 p 0.4855 (movable 0.317) -> gate: n/a
+[B] L1  [EF-L, movable 0.751, 32 symbols] RPT7 2045/1956.8 (sd 38.9) D +88.2 z 2.27 p 0.0120 -> NONE (descriptive) [PRESENT z >= 5.05; NONE z <= 3.95 or p > 0.05] | RPT5 8537/8421 z 2.53 p 0.0090 | DIST7 614/599.9
+[B] L2  [EF-L, movable 0.751, 35 symbols] RPT7 1455/1369.8 (sd 43.9) D +85.2 z 1.94 p 0.0400 -> NONE (descriptive) [PRESENT z >= 4.53; NONE z <= 3.94 or p > 0.05] | RPT5 8450/8403 z 1.00 p 0.1588 | DIST7 590/558.5
+[B] GAL [EF-K2, movable 0.325, 9 symbols] RPT7 4772/4768.6 (sd 30.3) D +3.4 z 0.11 p 0.4765 -> NONE (descriptive) [PRESENT z >= 2.46; NONE z <= 2.63 or p > 0.05] | RPT5 11138/11143 z -0.25 p 0.6194 | DIST7 1109/1139.8
+[B]   composition (post-run descriptive) F1: line-entropy reduction 2.0% (z -7.7); paragraph chi2/df 1.36
+[B]   composition (post-run descriptive) F2: line-entropy reduction 1.6% (z -8.6); paragraph chi2/df 1.33
+[B] summary: NO START-POSITION PAYLOAD (F1 NOT PRESENT (residual), F2 NONE) | descriptive: L1 NONE, L2 NONE, GAL NONE
+done
