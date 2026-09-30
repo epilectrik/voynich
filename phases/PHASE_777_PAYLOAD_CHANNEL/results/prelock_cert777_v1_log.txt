@@ -1,0 +1,103 @@
+[  26.3s] POS|F1|NT_de|1|7900                | F1 z  112.4 PRES | F2 z    2.9 NONE | L1 z    1.0 NONE | L2 z    1.4 NONE | GAL z    1.6 NONE
+[  26.4s] POS|L2|NT_de|1|7903                | F1 z   -0.0 NONE | F2 z    1.1 NONE | L1 z    6.7 PRES | L2 z   45.1 PRES | GAL z    1.2 NONE
+[  26.5s] POS|L1|NT_de|1|7902                | F1 z    0.6 NONE | F2 z   -1.5 NONE | L1 z   41.9 PRES | L2 z    0.5 NONE | GAL z   -1.9 NONE
+[  26.5s] POS|F1|NT_es|1|7905                | F1 z  119.7 PRES | F2 z    1.3 NONE | L1 z    2.4 NONE | L2 z    2.1 NONE | GAL z   -0.6 NONE
+[  26.6s] POS|GAL|NT_de|1|7904               | F1 z   -1.0 NONE | F2 z    0.2 NONE | L1 z    2.9 NONE | L2 z    1.2 NONE | GAL z   14.3 PRES
+[  26.6s] POS|F2|NT_de|1|7901                | F1 z    4.3 INDE | F2 z  110.4 PRES | L1 z    1.7 NONE | L2 z    3.7 NONE | GAL z    1.4 NONE
+[  48.6s] POS|F2|NT_es|1|7906                | F1 z    2.5 NONE | F2 z  111.5 PRES | L1 z    3.9 NONE | L2 z    0.9 NONE | GAL z    3.7 PRES
+[  48.9s] POS|L1|NT_es|1|7907                | F1 z   -1.7 NONE | F2 z   -1.0 NONE | L1 z   45.7 PRES | L2 z    1.3 NONE | GAL z    1.4 NONE
+[  48.9s] POS|L2|NT_es|1|7908                | F1 z   -0.3 NONE | F2 z   -0.3 NONE | L1 z    2.3 NONE | L2 z   36.4 PRES | GAL z   -1.3 NONE
+[  49.0s] POS|GAL|NT_es|1|7909               | F1 z    0.7 NONE | F2 z    1.9 NONE | L1 z    2.7 NONE | L2 z    1.3 NONE | GAL z   11.1 PRES
+[  49.0s] POS|F2|NT_en|1|7911                | F1 z    0.9 NONE | F2 z   94.7 PRES | L1 z    2.3 NONE | L2 z    3.7 NONE | GAL z    1.5 NONE
+[  49.0s] POS|F1|NT_en|1|7910                | F1 z  119.2 PRES | F2 z    2.5 NONE | L1 z    4.1 INDE | L2 z    3.1 NONE | GAL z   -0.1 NONE
+[  70.3s] POS|L1|NT_en|1|7912                | F1 z    0.9 NONE | F2 z    0.5 NONE | L1 z   40.6 PRES | L2 z    1.1 NONE | GAL z    0.5 NONE
+[  70.4s] POS|F1|TUR_nt|1|7915               | F1 z   99.3 PRES | F2 z    2.8 NONE | L1 z    1.4 NONE | L2 z    0.6 NONE | GAL z    2.2 NONE
+[  70.6s] POS|F2|TUR_nt|1|7916               | F1 z    2.6 NONE | F2 z   90.9 PRES | L1 z    3.1 NONE | L2 z    2.0 NONE | GAL z    0.7 NONE
+[  70.6s] POS|L2|NT_en|1|7913                | F1 z    2.3 NONE | F2 z   -1.5 NONE | L1 z   -0.5 NONE | L2 z   38.9 PRES | GAL z   -0.6 NONE
+[  70.7s] POS|GAL|NT_en|1|7914               | F1 z    0.3 NONE | F2 z    1.2 NONE | L1 z    1.5 NONE | L2 z    0.5 NONE | GAL z   12.6 PRES
+[  70.8s] POS|L1|TUR_nt|1|7917               | F1 z   -0.4 NONE | F2 z   -0.8 NONE | L1 z   36.9 PRES | L2 z    6.3 PRES | GAL z   -2.4 NONE
+[  92.4s] POS|F2|LAT_rupescissa|1|7921       | F1 z    1.6 NONE | F2 z   72.0 PRES | L1 z    2.7 NONE | L2 z    1.9 NONE | GAL z    1.7 NONE
+[  92.7s] POS|L2|LAT_rupescissa|1|7923       | F1 z    0.1 NONE | F2 z    1.0 NONE | L1 z    1.4 NONE | L2 z   21.0 PRES | GAL z    2.1 NONE
+[  92.7s] POS|F1|LAT_rupescissa|1|7920       | F1 z   63.7 PRES | F2 z    2.0 NONE | L1 z    2.0 NONE | L2 z    0.6 NONE | GAL z    1.3 NONE
+[  92.9s] POS|L2|TUR_nt|1|7918               | F1 z    0.3 NONE | F2 z   -0.7 NONE | L1 z    2.1 NONE | L2 z   29.4 PRES | GAL z   -1.4 NONE
+[  92.9s] POS|GAL|TUR_nt|1|7919              | F1 z    0.1 NONE | F2 z   -1.0 NONE | L1 z    2.4 NONE | L2 z    2.7 NONE | GAL z    8.9 PRES
+[  93.2s] POS|L1|LAT_rupescissa|1|7922       | F1 z    1.7 NONE | F2 z   -0.4 NONE | L1 z   29.7 PRES | L2 z    1.5 NONE | GAL z    0.1 NONE
+[ 116.8s] POS|GAL|LAT_rupescissa|1|7924      | F1 z    0.8 NONE | F2 z    0.9 NONE | L1 z    2.0 NONE | L2 z    3.9 NONE | GAL z    7.1 PRES
+[ 118.1s] POS|F2|LAT_mesue|1|7926            | F1 z    0.8 NONE | F2 z   18.6 PRES | L1 z    2.8 NONE | L2 z    3.3 NONE | GAL z   -0.7 NONE
+[ 118.3s] POS|F1|LAT_mesue|1|7925            | F1 z   18.2 PRES | F2 z    0.8 NONE | L1 z    2.4 NONE | L2 z    2.8 NONE | GAL z    1.2 NONE
+[ 118.3s] POS|L1|LAT_mesue|1|7927            | F1 z   -0.2 NONE | F2 z   -0.4 NONE | L1 z    6.7 PRES | L2 z    2.2 NONE | GAL z   -0.2 NONE
+[ 118.5s] POS|GAL|LAT_mesue|1|7929           | F1 z    0.9 NONE | F2 z    0.2 NONE | L1 z    2.3 NONE | L2 z    3.8 NONE | GAL z    5.6 PRES
+[ 118.7s] POS|L2|LAT_mesue|1|7928            | F1 z   -0.5 NONE | F2 z    0.2 NONE | L1 z    0.8 NONE | L2 z    6.4 PRES | GAL z   -0.6 NONE
+[ 139.2s] TWIN|F1|NT_de|1|7990               | F1 z   -1.6 NONE | F2 z   -0.7 NONE | L1 z    2.3 NONE | L2 z    2.6 NONE | GAL z   -0.2 NONE
+[ 140.3s] TWIN|GAL|TUR_nt|1|7992             | F1 z    1.1 NONE | F2 z    0.3 NONE | L1 z    2.4 NONE | L2 z    1.4 NONE | GAL z   -1.1 NONE
+[ 140.4s] TWIN|L2|LAT_rupescissa|1|7994      | F1 z    1.6 NONE | F2 z    1.5 NONE | L1 z    1.5 NONE | L2 z   -0.4 NONE | GAL z    1.4 NONE
+[ 140.5s] TWIN|L1|NT_es|1|7991               | F1 z   -1.0 NONE | F2 z    0.3 NONE | L1 z    1.1 NONE | L2 z    2.2 NONE | GAL z    0.6 NONE
+[ 140.6s] TWIN|F2|NT_en|1|7993               | F1 z   -0.8 NONE | F2 z    0.2 NONE | L1 z    2.0 NONE | L2 z    2.4 NONE | GAL z   -0.4 NONE
+[ 140.7s] NEG|edge2|None|None|8005           | F1 z    0.0 NONE | F2 z   -0.7 NONE | L1 z    2.1 NONE | L2 z    1.6 NONE | GAL z    1.1 NONE
+[ 161.5s] NEG|edge2|None|None|8015           | F1 z   -0.9 NONE | F2 z    0.6 NONE | L1 z    0.7 NONE | L2 z    2.8 NONE | GAL z   -1.0 NONE
+[ 162.8s] NEG|edge2|None|None|8025           | F1 z   -1.0 NONE | F2 z   -0.9 NONE | L1 z    1.2 NONE | L2 z    0.6 NONE | GAL z   -1.0 NONE
+[ 162.9s] NEG|edge1|None|None|8025           | F1 z   -0.2 NONE | F2 z    3.2 INDE | L1 z    2.8 NONE | L2 z   -0.1 NONE | GAL z   -0.4 NONE
+[ 162.9s] NEG|edge2|None|None|8035           | F1 z    0.7 NONE | F2 z    0.7 NONE | L1 z    2.4 NONE | L2 z    3.1 NONE | GAL z   -0.4 NONE
+[ 163.0s] NEG|edge1|None|None|8015           | F1 z    0.8 NONE | F2 z   -0.4 NONE | L1 z    2.9 NONE | L2 z    1.9 NONE | GAL z   -0.3 NONE
+[ 163.0s] NEG|edge1|None|None|8005           | F1 z   -1.2 NONE | F2 z    0.1 NONE | L1 z    1.3 NONE | L2 z    2.5 NONE | GAL z   -0.8 NONE
+[ 183.3s] NEG|habit3|None|None|8006          | F1 z    0.5 NONE | F2 z    2.5 NONE | L1 z    3.8 NONE | L2 z    1.8 NONE | GAL z    0.4 NONE
+[ 184.4s] NEG|habit3|None|None|8026          | F1 z    2.0 NONE | F2 z    3.2 INDE | L1 z    2.3 NONE | L2 z    0.8 NONE | GAL z   -0.2 NONE
+[ 184.5s] NEG|habit3|None|None|8016          | F1 z    0.9 NONE | F2 z    0.9 NONE | L1 z    2.6 NONE | L2 z    0.9 NONE | GAL z   -0.2 NONE
+[ 184.9s] NEG|habit3b|None|None|8017         | F1 z    2.1 NONE | F2 z    2.5 NONE | L1 z    4.6 INDE | L2 z    3.7 NONE | GAL z    2.0 NONE
+[ 184.9s] NEG|habit3b|None|None|8027         | F1 z    3.4 INDE | F2 z    0.7 NONE | L1 z    2.6 NONE | L2 z    2.8 NONE | GAL z    0.7 NONE
+[ 185.0s] NEG|habit3b|None|None|8007         | F1 z    1.5 NONE | F2 z    2.0 NONE | L1 z    3.0 NONE | L2 z    2.2 NONE | GAL z   -0.7 NONE
+[ 204.5s] NEG|M1|None|None|8002              | F1 z    1.3 NONE | F2 z    0.0 NONE | L1 z    1.3 NONE | L2 z   -0.4 NONE | GAL z    0.5 NONE
+[ 204.8s] NEG|habit3b_sec|None|None|8011     | F1 z    0.8 NONE | F2 z    0.2 NONE | L1 z    1.0 NONE | L2 z    3.7 NONE | GAL z    1.2 NONE
+[ 204.8s] NEG|habit2|None|None|8006          | F1 z    0.9 NONE | F2 z    2.7 NONE | L1 z    3.1 NONE | L2 z    0.5 NONE | GAL z    2.1 NONE
+[ 204.9s] NEG|habit2|None|None|8016          | F1 z   -0.3 NONE | F2 z    2.1 NONE | L1 z    3.1 NONE | L2 z    0.6 NONE | GAL z    0.2 NONE
+[ 205.1s] NEG|habit3b_sec|None|None|8021     | F1 z    0.4 NONE | F2 z    0.0 NONE | L1 z    3.8 NONE | L2 z    1.9 NONE | GAL z    0.8 NONE
+[ 205.4s] NEG|M1|None|None|8012              | F1 z    0.9 NONE | F2 z    2.6 NONE | L1 z    1.1 NONE | L2 z    0.0 NONE | GAL z    0.7 NONE
+{
+ "C1": false,
+ "C1_indeterminate": 4,
+ "C2": false,
+ "C3": true,
+ "C3_present": "24/24",
+ "C3_misses": [],
+ "GAL_descriptive": [
+  [
+   "LAT_mesue",
+   "PRESENT",
+   5.6
+  ],
+  [
+   "LAT_rupescissa",
+   "PRESENT",
+   7.1
+  ],
+  [
+   "NT_de",
+   "PRESENT",
+   14.3
+  ],
+  [
+   "NT_en",
+   "PRESENT",
+   12.6
+  ],
+  [
+   "NT_es",
+   "PRESENT",
+   11.1
+  ],
+  [
+   "TUR_nt",
+   "PRESENT",
+   8.9
+  ]
+ ],
+ "nopay_max_z7": {
+  "F1": 3.383182127620371,
+  "F2": 3.1907714713178392,
+  "L1": 4.595220952669151,
+  "L2": 3.7090469466061684,
+  "GAL": 2.136930511333767
+ },
+ "PASS": false
+}
+exit 0

@@ -1,8 +1,16 @@
 # PHASE_777 — Is one glyph position per word a message channel, with the rest of the word rule-built filler? (pre-registration)
 
-**Status: DRAFT v1 for the lean-expert lock audit (not locked).** The certification criteria (in
-`prelock_cert777.py` and below) were fixed before the certification ran. After the lock nothing below may change
-without a new phase number.
+**Status: DRAFT v2 for the lean-expert lock audit (not locked).**
+- **v1** (four confirmatory arms F1, F2, L1, L2 with three-way calls) **failed its certification** on fresh seeds and
+  texts (`results/prelock_cert777_v1.json`): C1 failed on the INDETERMINATE count (4 no-payload arm calls fell between
+  the design no-payload maximum and τ, against a limit of 2; none was PRESENT), and C2 failed because an L1 payload
+  read PRESENT on L2 and an L2 payload on L1 (end-of-word positions are correlated within the word and their margins
+  are thin). C3 passed 24 of 24.
+- **v2 is the redesign** the v1 rule requires, with no threshold changed: confirmatory arms **F1 and F2 only**, each
+  called two ways (PAYLOAD PRESENT, or NOT PRESENT with a descriptive residual flag); L1, L2 and GAL descriptive; a
+  fresh certification (seeds 8100+, fresh texts, third letter block) with criteria fixed before running.
+
+After the lock nothing below may change without a new phase number.
 
 ## Origin
 - **The human's idea (2026-09-30).** "What if they just intentionally inserted noise? Maybe one character in a token is
@@ -25,9 +33,12 @@ without a new phase number.
 | **L2** | second-to-last glyph unit ('-' if none) | — | EF-L |
 | **GAL** (descriptive) | first gallows-family unit (k, t, p, f, ckh, cth, cph, cfh) or '0' | 9 | EF-K2 |
 
-**Confirmatory arms: F1, F2, L1, L2.** GAL is descriptive: nine symbols cannot carry a letter alphabet one letter per
-word without heavy many-to-one collapse, and in the design its Mesue payload control did not separate from the
-no-payload maximum (z7 2.3 against 2.6). Its payload controls still run and are reported.
+**Confirmatory arms (v2): F1 and F2.** L1 and L2 are descriptive (v1 certification: correlated within the word,
+thin margins, a no-payload run reached z7 4.6 on L1 against τ 5.05). GAL is descriptive: nine symbols cannot carry a
+letter alphabet one letter per word without heavy many-to-one collapse, and in the design its Mesue payload control did
+not separate from the no-payload maximum (z7 2.3 against 2.6). The descriptive channels are reported with their
+design thresholds and carry no exclusion claim; a strong end-of-word payload (design controls: z7 18–43 on NT, recipe
+and alchemy text; 5–7 on Mesue) would still be visible descriptively.
 
 Glyph units follow the PHASE_754 regular expression.
 
@@ -73,14 +84,14 @@ Per channel c:
 - **POS_c** = min z7 over the design payload controls on c.
 - **τ_c** = (NEG_c + POS_c) / 2.
 
-| Call on channel c | Condition |
+| Call on arm c (v2, two-way) | Condition |
 |---|---|
-| **PRESENT** | p ≤ 0.005 and z7 ≥ τ_c |
-| **NONE** | p > 0.05, or z7 ≤ NEG_c |
-| **INDETERMINATE** | otherwise |
+| **PAYLOAD PRESENT** | p ≤ 0.005 and z7 ≥ τ_c |
+| **NOT PRESENT** | otherwise; with the descriptive flag "residual above the design no-payload maximum" when z7 > NEG_c and p ≤ 0.05 |
 
-Four arms are called separately (family-wise false-PRESENT about 2% at the p bar alone; τ carries the
-specificity).
+Two arms are called separately (family-wise false-PRESENT about 1% at the p bar alone; τ carries the specificity).
+The exclusion licensed by NOT PRESENT rests on C3: every payload control at the tested strength lies far above τ
+(design minimum 18.2 on F1 and 17.8 on F2 against τ about 10.5).
 
 | Arm | NEG (max no-payload z7, 44 controls) | POS (min payload z7, 5 texts) | τ |
 |---|---|---|---|
@@ -93,13 +104,19 @@ specificity).
 The end-of-word arms have thin margins because their channels are skewed (L1: y 45%) and the pharmacy text (Mesue)
 is the weakest payload; the certification tests them on fresh texts.
 
-## Certification (`prelock_cert777.py`; fresh seeds; fresh plaintexts: German, Spanish, English and Turkish NTs,
-Rupescissa, and Mesue's second letter block; criteria fixed before running)
-- **C1:** no no-payload run (19 generators, 5 twins) is PRESENT on any arm, and at most 2 INDETERMINATE arm calls in
-  all.
-- **C2:** no payload control is PRESENT on an arm other than its payload channel.
-- **C3:** of the 24 arm payload controls (6 plaintexts × 4 arms), at least 22 are PRESENT on their own arm and none is
-  NONE. GAL's payload controls are reported without a criterion.
+## v1 certification (failed; `results/prelock_cert777_v1.json`; fresh seeds, German/Spanish/English/Turkish NTs,
+Rupescissa, Mesue's second letter block)
+- C1 failed: 0 PRESENT but 4 INDETERMINATE no-payload arm calls (F1 3.38, F2 3.16 and 3.19, L1 4.60) against a limit
+  of 2. C2 failed: L1 payload (Turkish NT) PRESENT on L2 (z7 6.3); L2 payload (German NT) PRESENT on L1 (6.7); F1 and
+  F2 payloads leaked only as INDETERMINATE (L1 4.1; F1 4.3). C3 passed 24 of 24 (F1 18–120, F2 19–112, L1 7–46,
+  L2 6–45). GAL payloads: 5.6–14.3.
+
+## v2 certification (`prelock_cert777.py`; seeds 8100+; texts: Italian NT, Latin NT, SISMEL, Mesue, Codicillus,
+Dante; third letter block; criteria fixed before running)
+- **C1:** no no-payload run (19 generators, 5 twins) is PAYLOAD PRESENT on F1 or F2.
+- **C2:** no payload control is PAYLOAD PRESENT on the other F arm.
+- **C3:** of the 12 F-arm payload controls (6 plaintexts × F1/F2), at least 11 are PAYLOAD PRESENT on their own arm.
+- L1 payload controls (6) and all L1/L2/GAL values are reported without a criterion.
 - PASS = C1, C2 and C3. A FAIL means redesign, with no re-tuning on these seeds.
 
 **Result:** *(filled in after the run)*
@@ -115,17 +132,18 @@ Rupescissa, and Mesue's second letter block; criteria fixed before running)
   statistic beyond adjacent pairs.
 
 ## What each outcome means
-**NONE on all four arms.** No edge glyph position of B's words (first, second, last, second-to-last unit) carries a
-letter-by-letter payload of natural language: the 7-run repetition of each is what the boundary rules and folio
-composition produce. It excludes a Trithemius-style one-letter-per-word cipher on any of the four positions, for plaintexts in the tested languages,
+**NOT PRESENT on both arms.** Neither the first nor the second glyph position of B's words carries a
+letter-by-letter payload of natural language at the tested strength: their 7-run repetition is far below every payload
+control. It excludes a Trithemius-style one-letter-per-word cipher on the first or second position, for plaintexts in the tested languages,
 with letters written one per word and the filler built with or without regard to the junction rule. It does not
 exclude: a payload spread over more than one position; a payload of units larger than letters (syllables, words) on
 one position, where 7-runs would not repeat as letters do; a payload written with homophones on the channel
 (several symbols per letter); interleaved or non-consecutive payload positions; a payload confined to a subset of
 words (e.g. line-initial). Not evidence of meaninglessness.
 
-**PRESENT on a channel.** That position's symbol sequence repeats 7-runs beyond what the boundary rules and
-composition produce, at a level only letter-payload controls reached. That is consistent with a letter channel and
+**PAYLOAD PRESENT on an arm.** That position's symbol sequence repeats 7-runs beyond what the boundary rules and
+composition produce, at a level only letter-payload controls reached (no no-payload run in design or certification
+did). The arm does not identify the position exactly: an F2 payload leaks into F1 as a residual. That is consistent with a letter channel and
 also with any no-payload process that repeats sub-word runs at that position beyond first-order habits; any cipher
 reading is echo-class and would justify a decipherment attempt on that channel as its own phase.
 
@@ -134,9 +152,8 @@ reading is echo-class and would justify a decipherment attempt on that channel a
 ## Registry consequences
 | Outcome | Consequence |
 |---|---|
-| NONE on all arms | A Tier-2 negative-knowledge row with the scope above (GAL reported descriptively) |
-| PRESENT on a channel | A Tier-2 measurement row; the cipher reading Tier 3 pending an external test |
-| Otherwise | Phase record |
+| NOT PRESENT on both arms | A Tier-2 negative-knowledge row with the scope above (L1, L2, GAL reported descriptively, no exclusion for end positions) |
+| PAYLOAD PRESENT on an arm | A Tier-2 measurement row; the cipher reading Tier 3 pending an external test |
 
 ## Procedure
 1. Commit this draft, the scripts and the design results.
@@ -145,6 +162,10 @@ reading is echo-class and would justify a decipherment attempt on that channel a
 4. `run777.py --checksums`, commit, tag `phase777-lock`.
 5. `run777.py` (verify_lock first; 1,000 permutations per null; raw result committed before the write-up).
 6. The dry run (`run777.py --dry`: an F1 payload of Latin NT letters, third block; an edge chain) runs before the lock.
+
+## Deviations
+- **From v1:** the certification failed C1 and C2; v2 restricts the confirmatory arms to F1 and F2 with two-way calls,
+  and re-certifies on fresh seeds. No threshold changed.
 
 ## Caveats
 - **The payload controls are one construction.** Letters mapped by frequency rank, filler drawn from B's pools. A

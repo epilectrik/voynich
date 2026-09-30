@@ -30,14 +30,20 @@ def specs(which):
         texts = ('LAT_rec', 'NT_la', 'LAT_mesue', 'ITA_dante', 'LAT_sismel')
         negs = (('edge2', 4), ('edge1', 3), ('habit3', 3), ('habit3b', 3), ('M1', 2), ('habit3b_sec', 2), ('habit2', 2))
         twins = (('F1', 'LAT_rec'), ('L1', 'NT_la'), ('GAL', 'LAT_mesue'), ('F2', 'ITA_dante'), ('L2', 'LAT_sismel'))
-    else:
+    elif which == 'cert':
         base, off = 7900, 1
         texts = ('NT_de', 'NT_es', 'NT_en', 'TUR_nt', 'LAT_rupescissa', 'LAT_mesue')
         negs = (('edge2', 4), ('edge1', 3), ('habit3', 3), ('habit3b', 3), ('M1', 2), ('habit3b_sec', 2), ('habit2', 2))
         twins = (('F1', 'NT_de'), ('L1', 'NT_es'), ('GAL', 'TUR_nt'), ('F2', 'NT_en'), ('L2', 'LAT_rupescissa'))
+    else:                                            # cert2 (v2): arms F1/F2; fresh seeds, third letter block
+        base, off = 8100, 2
+        texts = ('NT_it', 'NT_la', 'LAT_sismel', 'LAT_mesue', 'LAT_rec', 'ITA_dante')
+        negs = (('edge2', 4), ('edge1', 3), ('habit3', 3), ('habit3b', 3), ('M1', 2), ('habit3b_sec', 2), ('habit2', 2))
+        twins = (('F1', 'NT_it'), ('F2', 'NT_la'), ('F1', 'LAT_mesue'), ('F2', 'LAT_rec'), ('L1', 'LAT_sismel'))
     i = 0
+    pos_channels = ('F1', 'F2', 'L1') if which == 'cert2' else CH
     for pt in texts:
-        for ch in CH:
+        for ch in pos_channels:
             S.append(('POS', ch, pt, off, base + i))
             i += 1
     for ch, pt in twins:

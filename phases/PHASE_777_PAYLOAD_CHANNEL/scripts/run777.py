@@ -32,7 +32,7 @@ PHASE = 'phases/PHASE_777_PAYLOAD_CHANNEL'
 OUT = ROOT / PHASE / 'results'
 R_B, SEED = 1000, 77700
 CH = ('F1', 'F2', 'L1', 'L2', 'GAL')
-ARMS = ('F1', 'F2', 'L1', 'L2')                 # GAL is descriptive (see PRE_REGISTRATION.md)
+ARMS = ('F1', 'F2')                             # v2: L1, L2 and GAL are descriptive (see PRE_REGISTRATION.md)
 INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py',
           'phases/PHASE_756_C957_JOINT_NULL/scripts/c957_joint_null_n5.py',
           'phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768.py', 'phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768v2.py',
@@ -44,7 +44,8 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
           'phases/PHASE_775_BOUNDARY_KEY/scripts/gen775.py', 'phases/PHASE_775_BOUNDARY_KEY/scripts/key775.py',
           'phases/PHASE_776_EIGENSTRUCTURE_EF/scripts/eig776.py')
 LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds777.json', 'results/prelock_calib777_design.json',
-          'results/prelock_cert777.json', 'results/input_checksums.json', 'scripts/chan777.py',
+          'results/prelock_cert777_v1.json', 'results/prelock_cert777.json', 'results/input_checksums.json',
+          'scripts/chan777.py',
           'scripts/prelock_calib777.py', 'scripts/prelock_thresholds777.py', 'scripts/prelock_cert777.py',
           'scripts/run777.py')
 DRY = '--dry' in sys.argv
@@ -82,11 +83,12 @@ def verify_lock():
 
 
 def call(z, p, t):
+    """v2 two-way call on the arms; 'NONE' vs 'NOT PRESENT (residual)' is descriptive only."""
     if p <= 0.005 and z >= t['tau']:
         return 'PRESENT'
     if p > 0.05 or z <= t['NEG']:
         return 'NONE'
-    return 'INDETERMINATE'
+    return 'NOT PRESENT (residual)'
 
 
 def analyse(lines, sk, tag, X):
@@ -94,20 +96,21 @@ def analyse(lines, sk, tag, X):
     t0 = time.time()
     res = X.run(lines, X.GK.ef_groups(sk), R=R_B, seed=SEED)
     calls = {c: call(res[c]['RPT7']['z'], res[c]['RPT7']['p'], TH[c]) for c in ARMS}
-    gal = call(res['GAL']['RPT7']['z'], res['GAL']['RPT7']['p'], TH['GAL'])
+    desc = {c: call(res[c]['RPT7']['z'], res[c]['RPT7']['p'], TH[c]) for c in ('L1', 'L2', 'GAL')}
     log(f'[{tag}] {time.time() - t0:.0f}s')
     for c in CH:
         x, x5 = res[c]['RPT7'], res[c]['RPT5']
         log(f'[{tag}] {c:3s} [{res[c]["_null"]}, movable {res[c]["_cells"]["frac_movable"]:.3f}, {res[c]["_cells"]["symbols"]} symbols] '
             f'RPT7 {x["obs"]}/{x["null_mean"]:.1f} (sd {x["null_sd"]:.1f}) D {x["D"]:+.1f} z {x["z"]:.2f} p {x["p"]:.4f} '
-            f'-> {(calls[c] if c in ARMS else gal + " (descriptive)"):13s} [PRESENT z >= {TH[c]["tau"]:.2f}; '
+            f'-> {(calls[c] if c in ARMS else desc[c] + " (descriptive)"):13s} [PRESENT z >= {TH[c]["tau"]:.2f}; '
             f'NONE z <= {TH[c]["NEG"]:.2f} or p > 0.05] | '
             f'RPT5 {x5["obs"]}/{x5["null_mean"]:.0f} z {x5["z"]:.2f} p {x5["p"]:.4f} | DIST7 {res[c]["DIST7"]["obs"]}/'
             f'{res[c]["DIST7"]["null_mean"]:.1f}')
     summary = ('summary: PAYLOAD CHANNEL PRESENT (' + ', '.join(c for c in ARMS if calls[c] == 'PRESENT') + ')'
-               if 'PRESENT' in calls.values() else 'summary: ' + ', '.join(f'{c} {calls[c]}' for c in ARMS))
-    log(f'[{tag}] {summary} | GAL (descriptive): {gal}')
-    return {'tag': tag, 'res': res, 'calls': calls, 'GAL_descriptive': gal, 'summary': summary, 'thresholds': TH,
+               if 'PRESENT' in calls.values() else 'summary: NO START-POSITION PAYLOAD (' +
+               ', '.join(f'{c} {calls[c]}' for c in ARMS) + ')')
+    log(f'[{tag}] {summary} | descriptive: ' + ', '.join(f'{c} {desc[c]}' for c in desc))
+    return {'tag': tag, 'res': res, 'calls': calls, 'descriptive_calls': desc, 'summary': summary, 'thresholds': TH,
             'R': R_B, 'seed': SEED}
 
 

@@ -18,7 +18,7 @@ from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / 'results'
 CH = ('F1', 'F2', 'L1', 'L2', 'GAL')
-ARMS = ('F1', 'F2', 'L1', 'L2')
+ARMS = ('F1', 'F2')                                 # v2: L1/L2 descriptive (v1 certification failed)
 d = json.load(open(OUT / 'prelock_calib777_design.json', encoding='utf-8'))
 th = {}
 for c in CH:
