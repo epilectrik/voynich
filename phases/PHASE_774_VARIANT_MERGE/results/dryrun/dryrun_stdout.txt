@@ -60,3 +60,4 @@
 [DECOY_habit3]     MID  x2 l e k ee e  ['f114v', 'f115r']  e.g. ['polal chedy qokaiin cheedy lchedy', 'l shey qokar sheedy shedy']
 [DECOY_habit3]   interior-only (O2) TOK n5: 0/0.00 X 1.00 D -0.00 p 1.000
 [DECOY_habit3]   interior-only (O2) MID n5: 24/13.81 X 1.69 D 10.19 p 0.034
+exit 0

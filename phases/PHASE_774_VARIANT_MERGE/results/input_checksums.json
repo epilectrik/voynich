@@ -1,0 +1,10 @@
+{
+ "data/transcriptions/interlinear_full_words.txt": "13c9441d8cd1f6883b3b8f47aa88df84d8c5a6ef30606734e5665e98a2671915",
+ "scripts/voynich.py": "7c4171f614b1eabd500b3cfc8410085872b182e6de962bf7955c9ee0c0afaf6e",
+ "phases/PHASE_756_C957_JOINT_NULL/scripts/c957_joint_null_n5.py": "af54843ca7e66349a751c5cfd31c65f2e76837b7b828464cdcf13ea2fc8cb0fc",
+ "phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768.py": "3a970ab26dde1e140dd8820dcc7828539d9ce8b87451590d2cc8da1491f9897b",
+ "phases/PHASE_768_HIDDEN_REPEATS/scripts/hr768v2.py": "612314ac50be0dccf9a1674ed8a53d507a024177fc693aeacb1693b8ba0051e8",
+ "phases/PHASE_757_NAIBBE_RIVAL_PANEL/scripts/naibbe_harness.py": "440baf0a0e433682848236250f82c014adb664cafb36c18247245868407321c3",
+ "phases/PHASE_767_TOKEN_UNIT_TEST/scripts/tu767.py": "dc4a3cd6fc92fcbd0eb21d46a2be0bc989607c0c449ceb7591028664b46a36b9",
+ "phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json": "dc856ccd87abe5b5836d3275ec2c42060a1562869f84aaac52fc93ff901747ad"
+}

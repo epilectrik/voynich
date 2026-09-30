@@ -1,6 +1,7 @@
 # PHASE_774 — Merged spellings: does Currier B repeat ordered phrases at the word or MIDDLE level beyond its local habits? (pre-registration)
 
-**Status: DRAFT v3** (not locked).
+**Status: v3.1, for lock.** The lean-expert confirmation pass returned LOCKABLE WITH EDITS. Its edits (E1–E5) and
+the optional O-a, O-b and O-c are applied below.
 - **v1:** the lean-expert lock audit found it **NOT LOCKABLE**.
 - **v2:** applied edits E1–E9 and O1–O2, and defined a re-certification on unscored segments before running it.
 - **The re-certification failed on one criterion (R2).** A stem code of one Latin NT segment was called NONE on the M
@@ -42,8 +43,11 @@ Source: `results/prelock_recovery.json`, rerun with the final generator code.
 | Whole-token code, 2 unrelated spellings per word | k1 0.50 | k1 0.51, k0 0.017 | k1 0.50 (see note) |
 | Whole-token code, 4 unrelated spellings | k1 0.25 | k1 0.26, k0 0.013 | k1 0.26 (Latin NT: BR64 0.84) |
 
-- **Note on the two-spelling code.** An earlier run of the same generator clustered it at k1 0.85. The rerun with the
-  final code did not (k1 0.50). Exchange clustering of rare homophones is unstable.
+- **Note on the two-spelling code.**
+  - The v1 draft cited k1 0.85 for its exchange clustering. That value came from a first, uncommitted run made with an
+    earlier generator version, which built the codebook from the whole text.
+  - `prelock_recovery.py` is seeded and deterministic. Its committed run with the final code gives **0.50**.
+  - No stability claim is made either way.
 - **Reading:**
   - A MIDDLE merge recovers a stem code (spelling varies only in the prefix and suffix frames).
   - Distributional clustering recovers homophones only sometimes, and only when every spelling is frequent. At B's
@@ -140,12 +144,12 @@ is a summary only.
 
 | Text | Segments | D5 | T call |
 |---|---|---|---|
-| Mesue (pharmacy) | 7 | 10–141 | all PRESENT |
+| Mesue (pharmacy) | 13 (segments 0–12, incl. re-certification) | 4–194 | 10 PRESENT, 2 INDETERMINATE (P5 6), 1 NONE (P5 4) |
 | SISMEL Testamentum (alchemy) | 3 | 30–48 | all PRESENT |
 | Codicillus (recipes) | 2 | 8–15 | PRESENT |
 | Rupescissa (alchemy) | 2 | 6–11 | segment 0 PRESENT; last **INDETERMINATE** (6.0) |
 | Dante (verse) | 2 | 6–10 | segment 0 PRESENT; last **INDETERMINATE** (5.9) |
-| New Testaments | 5 | ≥ 345 | all PRESENT |
+| New Testaments (Latin, Italian, Spanish, German, English, Turkish) | 35 (incl. re-certification) | 10–605 (≥ 345 at the Gospel opening) | all PRESENT |
 
 **Stem codes in B's forms (HRCB-lem), X5:**
 - Latin recipes: 1.34–1.99, and SISMEL 4.27 (both below the PRESENT bar of 7.60).
@@ -160,8 +164,8 @@ is a summary only.
 
 **No-message runs (73: 53 design plus 20 v1 certification):**
 - T: D5 ≤ 3.97. M: X5 ≤ 2.82. None PRESENT.
-- In the audit, 9 section-fitted runs gave T D5 ≤ 3.98 and M X5 ≤ 1.83. Their MID5 null means were 31–44, against
-  14–27 in calibration.
+- In the audit, 9 section-fitted runs gave T D5 ≤ 3.98 and M X5 ≤ 1.83. Their MID5 null means were 31.4–44.7,
+  against 14.6–27.2 for the B-like corpus-wide generators.
 
 **Twins** (the same machinery with the plaintext order shuffled within folio): all NONE.
 
@@ -236,11 +240,20 @@ The re-certification confirmed the scope in plaintext terms:
 - every whole-word code of a segment with P5 ≥ 8 was not NONE (32/32);
 - every one with P5 ≥ 12 was PRESENT (31/31).
 
-It excludes a whole-word code with one spelling per word (any language, any word-to-token assignment) of a text with
-about 8 or more repeated 5-word windows per 21,610 words. For reference:
-- all tested pharmacy (Mesue), alchemy (SISMEL) and NT segments;
-- the recipe segments (Codicillus, D5 8–15);
-- the first segments of Rupescissa and Dante.
+**What D5 measures (O-a).** For a one-spelling code, D5 is essentially arithmetic: P5 (the plaintext's own repeated
+5-word windows counted in B's line skeleton), plus a few windows from many-to-one merges, minus the EF null mean.
+- That null mean was ≤ 0.11 for every positive with P5 ≤ 10, and ≤ 1.13 up to P5 76.
+- The certification's content is therefore the null mean together with the no-message ceiling (≤ 4 windows).
+
+**What a T NONE excludes.** A whole-word code with one spelling per word, written with a frequency-matched (deficit)
+assignment of plaintext words to B's token profile, of a plaintext with **P5 ≥ 8** in B's skeleton.
+- Other assignments were not tested; seeds varied only the tie-breaks.
+- Languages tested: Latin (Codicillus, Mesue, Rupescissa, the SISMEL Testamentum, the Vulgate NT), Italian (Dante, the
+  Diodati NT), and the Spanish, German, English and Turkish NTs.
+- For reference, a T NONE excludes 12 of the 13 Mesue segments (not segment 12, P5 4) and every NT, SISMEL and
+  Codicillus segment tested. Segment 0 of Rupescissa and of Dante is excluded. Their last segments (P5 6) fall below the certified range and are
+  not claimed.
+- Nothing is claimed below P5 8. At P5 8–11 a PRESENT is knife-edge and is not claimed either.
 
 Low-repetition prose and verse sit just above the ceiling (Rupescissa-last and Dante-last, 6 windows). Those would
 give INDETERMINATE, not NONE.
@@ -252,8 +265,9 @@ give INDETERMINATE, not NONE.
 scope failed re-certification (a stem code of Latin NT segment 7 was NONE).
 
 **M PRESENT.** B repeats ordered 5-MIDDLE sequences above every modelled no-message generator (see below).
-- Control stem codes reach this level at P5 of about 90 or more (NT books, the Gospel opening, one Mesue segment).
-- The false-PRESENT side is certified: 0 of 93 no-message runs reached X5 7.60 (maximum 2.82).
+- *Post-hoc context, from the failed re-certification set, not a scope:* control stem codes reached this level at P5
+  of about 90 or more. P5 counts whole words, whereas the stem codes are lemma-coded.
+- The false-PRESENT side is certified: 0 of 102 no-message runs reached X5 7.60 (maximum 2.82).
 
 ### Both arms
 **PRESENT wording (E6).** B repeats ordered 5-token or 5-MIDDLE sequences above every modelled no-message generator:
@@ -268,9 +282,13 @@ scope failed re-certification (a stem code of Latin NT segment 7 was NONE).
 
 A PRESENT is consistent with a message or with such copying. It is not a reading; any interpretation is echo-class.
 
-**False-PRESENT bound.** 0 of 93 no-message runs were PRESENT on either arm (73 design and v1, plus 20
-re-certification, including 10 section-fitted). The rule of three gives about 3.2% per arm at 95%, and about 6.4%
-family-wise across the two arms, for the modelled families only.
+**False-PRESENT bound (O-c).** 0 of 102 no-message runs were PRESENT on either arm:
+- 73 design and v1;
+- 20 re-certification;
+- the lock audit's 9 section-fitted runs.
+
+19 of the 102 are section-fitted. The rule of three gives about 2.9% per arm at 95%, and about 5.9% family-wise across
+the two arms, for the modelled families only.
 
 **Not excluded by any outcome:**
 - codes with two or more spellings per word;
@@ -300,28 +318,34 @@ family-wise across the two arms, for the modelled families only.
 - **Interior-only windows** (no line-initial or line-final token; O2).
 - B's repeated 5-grams (TOK and MID), listed with folios.
 - **Null means against the calibration ranges (O1):**
-  - TOK5 no-message null means were 0–4.4;
-  - MID5 null means were 14.6–27.2 (section-fitted 31–44).
-  - The M-arm PRESENT power figures assume B's MID5 null mean is about 27 or less. A higher null compresses X5:
-    conservative for NONE, lower power for PRESENT.
+  - TOK5 no-message null means were **0–0.13** (102 runs). The 4.4 in v2 was a whole-word positive, not a
+    no-message run.
+  - MID5 null means were **14.6–27.2** for the B-like corpus-wide generators (timmU, which is not B-like, gave
+    0.2–0.3) and **31.4–44.7** section-fitted.
+  - The M-arm PRESENT power figures assume B's MID5 null mean is about 27 or less. A higher null compresses X5 and
+    lowers the power for PRESENT.
 
 ## Procedure (E9)
 1. **Commit the auditor's scripts** (`scripts/audit/`) before tagging.
-2. **Run the re-certification.** If it passes, write the result into this file.
-3. **Get the lean-expert confirmation pass** on v2 with the result.
-4. **`run774.py --checksums`**, commit, and tag `phase774-lock`.
+2. **The re-certification ran** (3b1bde3 → aba5b0e). It failed R2, and v3 is the redesign.
+3. **The lean-expert confirmation pass** on v3 returned LOCKABLE WITH EDITS, applied here as v3.1.
+4. **`run774.py --checksums`**, commit (with the v3 dry-run outputs), and tag `phase774-lock`.
 5. **`run774.py`:**
    - verifies the tag, a clean `scripts/`, no untracked files and the input checksums;
    - logs the Python, numpy and numba versions;
    - runs B once.
-6. **The dry run.** `run774.py --dry` has run every code path on two decoys (a whole-word code of Mesue: T PRESENT;
-   habit3: NONE / NONE). It is re-run after these edits.
+6. **The dry run.** `run774.py --dry` has run every code path on two decoys. With the v3 code:
+   - the whole-word code of Mesue gave T PRESENT, M not PRESENT;
+   - habit3 gave T NONE, M not PRESENT.
+
+   It is re-run once more after v3.1, because the labels and ranges changed.
 
 ## Caveats
 - **The ceilings are fitted to B's adjacent pairs** (declared). A no-message process with stronger or higher-order
   habits could exceed them (E6).
 - **The T margin is narrow** at low-repetition prose and verse (6–8 windows against a ceiling of 4).
-- **The M arm is an exclusion arm for NT-like repetition.** It is blind to prose stem codes.
+- **The M arm is one-sided (v3).** A PRESENT is registrable. A not-PRESENT excludes nothing: stem codes of
+  low-repetition text (including one NT segment) add no more MIDDLE repeats than B-like first-order habits.
 - **B-form controls reproduce B's marginals** by construction (needed for ratios to transfer).
 - **Lemma = first five letters.**
 - **Stage-1 clustering** was tried with one algorithm only.

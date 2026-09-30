@@ -47,9 +47,10 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
 LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds774.json', 'results/prelock_cert.json',
           'results/prelock_recert.json', 'results/input_checksums.json', 'scripts/ef774.py', 'scripts/merge774.py',
           'scripts/gen774.py', 'scripts/run774.py', 'scripts/prelock_thresholds.py', 'scripts/prelock_cert.py',
-          'scripts/prelock_recert.py', 'scripts/audit/audit_stress.py', 'results/audit/audit_stress.json')
-CAL_RANGES = {'TOK5_null_no_message': (0.0, 4.4), 'MID5_null_no_message': (14.6, 27.2),
-              'MID5_null_section_fitted': (31.0, 44.0)}
+          'scripts/prelock_recert.py', 'scripts/audit/audit_stress.py', 'results/audit/audit_stress.json',
+          'results/prelock_recovery.json', 'scripts/prelock_recovery.py')
+CAL_RANGES = {'TOK5_null_no_message_102_runs': (0.0, 0.13), 'MID5_null_B_like_corpus_wide': (14.6, 27.2),
+              'MID5_null_section_fitted': (31.4, 44.7)}
 DRY = '--dry' in sys.argv
 LOGF = None
 
@@ -102,11 +103,12 @@ def call_M(x5, p, th):
 
 
 def label_M_v2(x5, p, th):
+    """Descriptive position of X5 against the no-message ceiling; never a NONE claim (v3.1, E2)."""
     if x5 >= th['tau_M'] and p <= 0.01:
         return 'PRESENT'
     if x5 <= th['NEG_M'] or p > 0.05:
-        return 'NONE-range'
-    return 'INDETERMINATE-range'
+        return 'at or below the no-message ceiling (descriptive)'
+    return 'between the ceiling and the PRESENT bar (descriptive)'
 
 
 def repeated_list(lines, folios, fn, n):
@@ -151,8 +153,9 @@ def analyse(lines, folios, tag):
         f'{label_M_v2(m5["X"], m5["p"], TH)}]')
     log(f'[{tag}] T CALL: {T} | M CALL: {Mv} | {verdict}')
     nm = {'TOK5_null_mean': t5['null_mean'], 'MID5_null_mean': m5['null_mean'], 'calibration_ranges': CAL_RANGES}
-    log(f'[{tag}] null means (O1): TOK5 {t5["null_mean"]:.2f} (no-message calibration 0-4.4); MID5 '
-        f'{m5["null_mean"]:.2f} (no-message 14.6-27.2, section-fitted 31-44; M-arm PRESENT power assumes <= ~27)')
+    log(f'[{tag}] null means (O1): TOK5 {t5["null_mean"]:.2f} (no-message runs 0-0.13); MID5 '
+        f'{m5["null_mean"]:.2f} (B-like no-message 14.6-27.2, section-fitted 31.4-44.7; M-arm PRESENT power assumes '
+        f'<= ~27)')
     # descriptives (pre-specified; no verdict)
     desc = {}
     for k in REPS:
