@@ -1,0 +1,14 @@
+[   17s] PAYBASE|F1|('NT_la', None)|9802    EF z7   84.8 p 0.005 mv 0.51 | EFq z7   42.5 p 0.005 mv 0.31 | EFpar z7   31.3 p 0.005 mv 0.24 | EFparq z7   18.9 p 0.005 mv 0.11 | lineH red -3.0% z 12.6
+[   18s] PAYBASE|F2|('LAT_rec', None)|9803  EF z7   72.9 p 0.005 mv 0.54 | EFq z7   44.8 p 0.005 mv 0.33 | EFpar z7   29.7 p 0.005 mv 0.25 | EFparq z7   16.9 p 0.005 mv 0.12 | lineH red -2.1% z 9.2
+[   18s] PAYBASE|F1|('LAT_mesue', None)|9800 EF z7   18.6 p 0.005 mv 0.51 | EFq z7   12.9 p 0.005 mv 0.31 | EFpar z7   12.5 p 0.005 mv 0.23 | EFparq z7    9.3 p 0.005 mv 0.11 | lineH red -1.8% z 9.8
+[   18s] PAYBASE|F2|('LAT_mesue', None)|9801 EF z7   16.9 p 0.005 mv 0.54 | EFq z7   12.2 p 0.005 mv 0.32 | EFpar z7   11.2 p 0.005 mv 0.25 | EFparq z7    6.4 p 0.005 mv 0.12 | lineH red -1.6% z 8.2
+[   30s] PALPAR|F1|5.0|9810                 EF z7   14.4 p 0.005 mv 0.52 | EFq z7    9.4 p 0.005 mv 0.31 | EFpar z7   -0.2 p 0.592 mv 0.25 | EFparq z7   -0.3 p 0.662 mv 0.12 | lineH red 19.1% z -83.5 | par disp 6.86
+[   31s] PALLINE|F1|10.0|9812               EF z7    8.9 p 0.005 mv 0.51 | EFq z7    6.0 p 0.005 mv 0.31 | EFpar z7    2.9 p 0.010 mv 0.23 | EFparq z7    2.0 p 0.030 mv 0.11 | lineH red 15.1% z -52.4 | par disp 1.87
+[   31s] PALPAR|F1|10.0|9811                EF z7    8.9 p 0.005 mv 0.52 | EFq z7    5.0 p 0.005 mv 0.31 | EFpar z7    0.3 p 0.438 mv 0.23 | EFparq z7   -0.5 p 0.746 mv 0.11 | lineH red 11.2% z -58.9 | par disp 4.33
+[   31s] PALLINE|F1|20.0|9813               EF z7    3.3 p 0.005 mv 0.52 | EFq z7    1.7 p 0.065 mv 0.30 | EFpar z7    1.3 p 0.109 mv 0.24 | EFparq z7   -0.3 p 0.657 mv 0.11 | lineH red 8.0% z -40.2 | par disp 1.41
+[   43s] PALLINE|F1|50.0|9814               EF z7    1.4 p 0.119 mv 0.52 | EFq z7    1.3 p 0.134 mv 0.31 | EFpar z7    1.4 p 0.090 mv 0.23 | EFparq z7    1.0 p 0.199 mv 0.11 | lineH red 3.0% z -14.0 | par disp 1.12
+[   43s] PALPOS|F1|5.0|9815                 EF z7   13.6 p 0.005 mv 0.51 | EFq z7   -0.0 p 0.557 mv 0.32 | EFpar z7    8.8 p 0.005 mv 0.23 | EFparq z7    0.4 p 0.378 mv 0.12 | lineH red -2.9% z 13.3 | par disp 0.87
+[   43s] PALPOS|F1|10.0|9816                EF z7    5.7 p 0.005 mv 0.52 | EFq z7   -1.1 p 0.846 mv 0.31 | EFpar z7    4.8 p 0.005 mv 0.24 | EFparq z7    0.5 p 0.303 mv 0.12 | lineH red -1.6% z 7.8 | par disp 0.92
+[   44s] PALPAR|F2|5.0|9817                 EF z7   15.0 p 0.005 mv 0.53 | EFq z7    8.8 p 0.005 mv 0.31 | EFpar z7   -0.7 p 0.726 mv 0.26 | EFparq z7   -0.3 p 0.627 mv 0.13 | lineH red 19.6% z -89.7 | par disp 7.17
+[   55s] PALPOS|F2|5.0|9818                 EF z7   12.8 p 0.005 mv 0.50 | EFq z7   -0.4 p 0.667 mv 0.32 | EFpar z7    6.7 p 0.005 mv 0.22 | EFparq z7    0.5 p 0.323 mv 0.12 | lineH red -2.8% z 11.1 | par disp 0.90
+done

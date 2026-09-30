@@ -1,0 +1,24 @@
+{
+ "B_unigram_share_le2_units": 0.10666358167515039,
+ "B_unigram_share_le3_units": 0.2919481721425266,
+ "habit3": {
+  "movable": 0.5130495141138361,
+  "F1_effective_movable": 0.4656640444238778,
+  "F2_effective_movable": 0.45608514576584913
+ },
+ "edge2": {
+  "movable": 0.5486811661267932,
+  "F1_effective_movable": 0.5021749190189727,
+  "F2_effective_movable": 0.4900509023600185
+ },
+ "pay_F1_mesue": {
+  "movable": 0.5122628412771865,
+  "F1_effective_movable": 0.4735307727903748,
+  "F2_effective_movable": 0.46686719111522446
+ },
+ "pay_F2_mesue": {
+  "movable": 0.5417399352151782,
+  "F1_effective_movable": 0.5009717723276261,
+  "F2_effective_movable": 0.4952799629801018
+ }
+}
