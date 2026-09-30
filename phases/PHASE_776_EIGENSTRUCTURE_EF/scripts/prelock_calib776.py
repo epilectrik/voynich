@@ -23,14 +23,14 @@ R = int(os.environ.get('R776', 300))
 
 
 def specs(which):
-    base = 8800 if which == 'design' else 8900
+    base = {'design': 8800, 'cert': 8900, 'design2': 8700, 'cert2': 8600}[which]
     S = []
-    for j in range(6 if which == 'design' else 5):
+    for j in range(6 if which.startswith('design') else 5):
         S.append(('EDGE', 'edge2', base + j))
         S.append(('EDGE', 'edge1', base + 10 + j))
         S.append(('CLASS', 'habit', base + 20 + j))
         S.append(('CLASS', 'M1', base + 30 + j))
-    for j in range(4 if which == 'design' else 3):
+    for j in range(4 if which.startswith('design') else 3):
         S.append(('MIXED', 'habit2', base + 40 + j))
         S.append(('MIXED', 'habit3', base + 50 + j))
         S.append(('MIXED', 'habit3b', base + 60 + j))
@@ -96,12 +96,12 @@ def main():
                 continue
             out[name] = r
             x = r['res']
-            print(f'[{time.time() - T0:6.1f}s] {name:24s} | l2 {x["lambda2"]["obs"]:.4f} null {x["lambda2"]["null_mean"]:.4f} '
-                  f'D {x["lambda2"]["D"]:+.4f} z {x["lambda2"]["z"]:6.1f} p {x["lambda2"]["p"]:.3f} | '
-                  f'l3 {x["lambda3"]["obs"]:.4f} null {x["lambda3"]["null_mean"]:.4f} D {x["lambda3"]["D"]:+.4f} '
-                  f'z {x["lambda3"]["z"]:6.1f} | lag2 D {x["lag2_lambda2"]["D"]:+.4f} | EFL D {x["EFL_lambda2"]["D"]:+.4f} '
-                  f'p {x["EFL_lambda2"]["p"]:.3f} mov {x["EFL_cells"]["frac_movable"]:.2f} | floor l2 '
-                  f'{x["shuffle_floor"]["lambda2"]:.4f}', flush=True)
+            print(f'[{time.time() - T0:6.1f}s] {name:24s} | EFK2 l2 {x["lambda2"]["obs"]:.4f} null {x["lambda2"]["null_mean"]:.4f} '
+                  f'D {x["lambda2"]["D"]:+.4f} z {x["lambda2"]["z"]:5.1f} p {x["lambda2"]["p"]:.3f} mov {x["EFK2_cells"]["frac_movable"]:.2f} | '
+                  f'MI D {x["MI"]["D"]:+.4f} z {x["MI"]["z"]:5.1f} p {x["MI"]["p"]:.3f} | EF l2 D {x["EF_lambda2"]["D"]:+.4f} '
+                  f'p {x["EF_lambda2"]["p"]:.3f} EF MI D {x["EF_MI"]["D"]:+.4f} p {x["EF_MI"]["p"]:.3f} | '
+                  f'lag2 D {x["lag2_lambda2"]["D"]:+.4f} | EFL D {x["EFL_lambda2"]["D"]:+.4f} p {x["EFL_lambda2"]["p"]:.3f} | '
+                  f'floor {x["shuffle_floor"]["lambda2"]:.4f}', flush=True)
             json.dump(out, open(fn, 'w'), indent=1)
     print('done', flush=True)
 

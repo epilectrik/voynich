@@ -1,14 +1,18 @@
-[DECOY_edge2] 23s | EF cells 12209, movable 0.594 | EFL cells 19223, movable 0.201
-[DECOY_edge2] lambda2: obs 0.0785, EF null 0.0950 (sd 0.0114), D -0.0165, z -1.4, p 0.9530 | shuffle floor 0.0672
-[DECOY_edge2] CALL: EDGE-REDUCIBLE   [SURVIVES if p <= 0.005 and D >= 0.0139; EDGE-REDUCIBLE if p > 0.05]
-[DECOY_edge2] lambda3 (descriptive): obs 0.0785, null 0.0799, D -0.0014, p 0.5724 | floor 0.0637
-[DECOY_edge2] lag-2 lambda2 (descriptive): obs 0.0717, null 0.0836, D -0.0119, p 0.9660
-[DECOY_edge2] within-line EF, EFL (descriptive): null 0.0886, D -0.0102, p 0.9061
-[DECOY_edge2] shape (wording only): not applicable (no positive lag-1 excess)
-[DECOY_habit] 21s | EF cells 12725, movable 0.574 | EFL cells 19421, movable 0.186
-[DECOY_habit] lambda2: obs 0.1829, EF null 0.1449 (sd 0.0098), D +0.0381, z 3.9, p 0.0010 | shuffle floor 0.0803
-[DECOY_habit] CALL: SURVIVES EDGES   [SURVIVES if p <= 0.005 and D >= 0.0139; EDGE-REDUCIBLE if p > 0.05]
-[DECOY_habit] lambda3 (descriptive): obs 0.0981, null 0.0939, D +0.0042, p 0.3077 | floor 0.0714
-[DECOY_habit] lag-2 lambda2 (descriptive): obs 0.0691, null 0.0710, D -0.0019, p 0.6174
-[DECOY_habit] within-line EF, EFL (descriptive): null 0.1717, D +0.0113, p 0.0030
+[DECOY_edge2] 42s | EF-K2 cells 18187, movable 0.257 | EF movable 0.594 | EFL movable 0.201
+[DECOY_edge2] PRIMARY class-pair MI under EF-K2: obs 0.1793 bits, null 0.1770 (sd 0.0022), D +0.0023, z 1.1, p 0.1389
+[DECOY_edge2] CALL: ROUTING-REDUCIBLE   [BEYOND ROUTING if p <= 0.005 and D >= 0.0122; ROUTING-REDUCIBLE if p > 0.05 or D <= 0.0038]
+[DECOY_edge2] MI under plain EF (descriptive): null 0.1709, D +0.0084, p 0.0070
+[DECOY_edge2] lambda2 under EF-K2 (C2061 statistic, descriptive): obs 0.0785, null 0.0828 (sd 0.0058), D -0.0043, z -0.7, p 0.7652 | under plain EF: null 0.0950, D -0.0165, p 0.9530 | shuffle floor 0.0681
+[DECOY_edge2] lambda3 under EF-K2 (descriptive): obs 0.0785, null 0.0786, D -0.0001, p 0.4905 | floor 0.0638
+[DECOY_edge2] lag-2 (descriptive): MI D +0.0012 p 0.3097; lambda2 D -0.0059 p 0.9101
+[DECOY_edge2] within-line EF, EFL lambda2 (descriptive): null 0.0884, D -0.0099, p 0.8961
+[DECOY_edge2] shape (wording only): unresolved
+[DECOY_habit] 37s | EF-K2 cells 19219, movable 0.192 | EF movable 0.574 | EFL movable 0.186
+[DECOY_habit] PRIMARY class-pair MI under EF-K2: obs 0.2837 bits, null 0.2600 (sd 0.0023), D +0.0237, z 10.2, p 0.0010
+[DECOY_habit] CALL: BEYOND ROUTING   [BEYOND ROUTING if p <= 0.005 and D >= 0.0122; ROUTING-REDUCIBLE if p > 0.05 or D <= 0.0038]
+[DECOY_habit] MI under plain EF (descriptive): null 0.2010, D +0.0827, p 0.0010
+[DECOY_habit] lambda2 under EF-K2 (C2061 statistic, descriptive): obs 0.1829, null 0.1727 (sd 0.0041), D +0.0103, z 2.5, p 0.0060 | under plain EF: null 0.1449, D +0.0381, p 0.0010 | shuffle floor 0.0776
+[DECOY_habit] lambda3 under EF-K2 (descriptive): obs 0.0981, null 0.0984, D -0.0003, p 0.4835 | floor 0.0687
+[DECOY_habit] lag-2 (descriptive): MI D +0.0022 p 0.1658; lambda2 D -0.0018 p 0.6923
+[DECOY_habit] within-line EF, EFL lambda2 (descriptive): null 0.1715, D +0.0114, p 0.0020
 [DECOY_habit] shape (wording only): order-like (lag-2 excess < half of lag-1; within-line EF significant)

@@ -1,137 +1,139 @@
-[  22.5s] EDGE|edge2|8900          | D -0.0040 p 0.635 -> EDGE-REDUCIBLE  | lag2 D -0.0012 | EFL D +0.0027 p 0.266
-[  22.6s] EDGE|edge2|8901          | D -0.0082 p 0.807 -> EDGE-REDUCIBLE  | lag2 D -0.0009 | EFL D -0.0049 p 0.664
-[  22.7s] EDGE|edge1|8911          | D -0.0001 p 0.449 -> EDGE-REDUCIBLE  | lag2 D +0.0153 | EFL D -0.0019 p 0.645
-[  22.9s] EDGE|edge1|8910          | D -0.0066 p 0.754 -> EDGE-REDUCIBLE  | lag2 D -0.0003 | EFL D +0.0018 p 0.306
-[  23.7s] CLASS|M1|8930            | D +0.0273 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0094 | EFL D +0.0074 p 0.043
-[  30.3s] CLASS|habit|8920         | D +0.0365 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0054 | EFL D +0.0087 p 0.003
-[  33.3s] EDGE|edge2|8902          | D -0.0063 p 0.764 -> EDGE-REDUCIBLE  | lag2 D -0.0016 | EFL D -0.0121 p 0.880
-[  33.4s] EDGE|edge1|8912          | D +0.0185 p 0.053 -> EDGE-REDUCIBLE  | lag2 D +0.0003 | EFL D +0.0011 p 0.465
-[  33.9s] CLASS|M1|8931            | D +0.0373 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0069 | EFL D +0.0103 p 0.017
-[  40.5s] CLASS|habit|8921         | D +0.0479 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0096 | EFL D +0.0060 p 0.076
-[  41.0s] CLASS|habit|8922         | D +0.0339 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0045 | EFL D +0.0049 p 0.090
-[  41.5s] CLASS|M1|8932            | D +0.0435 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0015 | EFL D +0.0004 p 0.468
-[  43.5s] EDGE|edge2|8903          | D +0.0265 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0067 | EFL D +0.0030 p 0.346
-[  43.9s] EDGE|edge1|8913          | D -0.0022 p 0.548 -> EDGE-REDUCIBLE  | lag2 D -0.0060 | EFL D +0.0012 p 0.412
-[  51.4s] EDGE|edge2|8904          | D -0.0129 p 0.930 -> EDGE-REDUCIBLE  | lag2 D -0.0080 | EFL D -0.0030 p 0.708
-[  51.6s] CLASS|M1|8933            | D +0.0320 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0018 | EFL D +0.0066 p 0.073
-[  51.9s] CLASS|habit|8923         | D +0.0357 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0023 | EFL D +0.0062 p 0.040
-[  52.0s] EDGE|edge1|8914          | D +0.0024 p 0.389 -> EDGE-REDUCIBLE  | lag2 D -0.0049 | EFL D +0.0052 p 0.229
-[  54.9s] CLASS|M1|8934            | D +0.0401 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0011 | EFL D -0.0009 p 0.625
-[  60.7s] CLASS|habit|8924         | D +0.0373 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0025 | EFL D +0.0052 p 0.100
-[  61.3s] MIXED|habit2|8940        | D +0.0276 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0041 | EFL D +0.0028 p 0.179
-[  61.6s] MIXED|habit3|8950        | D +0.0238 p 0.003 -> SURVIVES EDGES  | lag2 D -0.0042 | EFL D +0.0024 p 0.249
-[  62.0s] MIXED|habit3_sec|8970    | D +0.0138 p 0.023 -> INDETERMINATE   | lag2 D +0.0090 | EFL D +0.0026 p 0.269
-[  62.0s] MIXED|habit3b|8960       | D +0.0167 p 0.056 -> EDGE-REDUCIBLE  | lag2 D +0.0005 | EFL D +0.0009 p 0.478
-[  65.1s] MIXED|habit3b_sec|8980   | D +0.0114 p 0.027 -> INDETERMINATE   | lag2 D +0.0124 | EFL D +0.0050 p 0.063
-[  70.7s] MIXED|habit2|8941        | D +0.0268 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0091 | EFL D -0.0003 p 0.538
-[  71.1s] MIXED|habit3|8951        | D +0.0194 p 0.010 -> INDETERMINATE   | lag2 D +0.0054 | EFL D +0.0025 p 0.299
-[  71.7s] MIXED|habit3b|8961       | D +0.0173 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0170 | EFL D +0.0057 p 0.033
-[  71.9s] MIXED|habit3_sec|8971    | D +0.0042 p 0.246 -> EDGE-REDUCIBLE  | lag2 D -0.0003 | EFL D -0.0011 p 0.645
-[  72.1s] MIXED|habit3b_sec|8981   | D +0.0192 p 0.007 -> INDETERMINATE   | lag2 D +0.0074 | EFL D +0.0001 p 0.502
-[  74.6s] MIXED|habit2|8942        | D +0.0214 p 0.003 -> SURVIVES EDGES  | lag2 D +0.0062 | EFL D +0.0092 p 0.007
-[  79.7s] MIXED|habit3|8952        | D +0.0130 p 0.027 -> INDETERMINATE   | lag2 D +0.0139 | EFL D +0.0036 p 0.223
-[  80.1s] MIXED|habit3b|8962       | D +0.0040 p 0.332 -> EDGE-REDUCIBLE  | lag2 D +0.0012 | EFL D -0.0067 p 0.947
-[  80.5s] MIXED|habit3_sec|8972    | D +0.0013 p 0.445 -> EDGE-REDUCIBLE  | lag2 D -0.0059 | EFL D -0.0037 p 0.804
-[  80.7s] MIXED|habit3b_sec|8982   | D +0.0028 p 0.342 -> EDGE-REDUCIBLE  | lag2 D -0.0126 | EFL D -0.0003 p 0.551
+[  19.2s] EDGE|edge2|8600          | MI D +0.0023 z   1.2 p 0.140 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0055 p 0.060 | EF l2 D +0.0185
+[  19.3s] EDGE|edge1|8610          | MI D +0.0024 z   1.3 p 0.106 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0039 p 0.282 | EF l2 D +0.0050
+[  19.4s] EDGE|edge1|8611          | MI D +0.0015 z   0.7 p 0.256 -> ROUTING-REDUCIBLE  | l2 EF-K2 D -0.0023 p 0.548 | EF l2 D -0.0127
+[  19.4s] EDGE|edge2|8601          | MI D +0.0015 z   0.7 p 0.239 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0027 p 0.346 | EF l2 D -0.0018
+[  20.0s] CLASS|M1|8630            | MI D +0.0247 z  10.3 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0041 p 0.146 | EF l2 D +0.0443
+[  27.1s] CLASS|habit|8620         | MI D +0.0242 z   9.7 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0091 p 0.013 | EF l2 D +0.0419
+[  37.6s] EDGE|edge2|8602          | MI D -0.0016 z  -0.7 p 0.757 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0082 p 0.123 | EF l2 D +0.0024
+[  38.0s] EDGE|edge1|8612          | MI D +0.0003 z   0.2 p 0.455 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0059 p 0.096 | EF l2 D +0.0123
+[  38.7s] CLASS|M1|8631            | MI D +0.0272 z  11.2 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0104 p 0.013 | EF l2 D +0.0138
+[  45.6s] CLASS|habit|8621         | MI D +0.0258 z   9.2 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0123 p 0.007 | EF l2 D +0.0346
+[  46.1s] CLASS|M1|8632            | MI D +0.0243 z  10.2 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0148 p 0.003 | EF l2 D +0.0463
+[  46.4s] CLASS|habit|8622         | MI D +0.0228 z   9.5 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0083 p 0.013 | EF l2 D +0.0413
+[  53.6s] EDGE|edge2|8603          | MI D -0.0024 z  -1.3 p 0.887 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0087 p 0.073 | EF l2 D +0.0087
+[  54.0s] EDGE|edge1|8613          | MI D +0.0005 z   0.2 p 0.412 -> ROUTING-REDUCIBLE  | l2 EF-K2 D -0.0030 p 0.631 | EF l2 D -0.0052
+[  61.9s] EDGE|edge2|8604          | MI D +0.0003 z   0.2 p 0.445 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0006 p 0.468 | EF l2 D +0.0257
+[  62.1s] CLASS|M1|8633            | MI D +0.0214 z   9.5 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D -0.0047 p 0.628 | EF l2 D +0.0055
+[  62.4s] CLASS|habit|8623         | MI D +0.0248 z  10.4 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D -0.0067 p 0.910 | EF l2 D +0.0083
+[  62.4s] EDGE|edge1|8614          | MI D -0.0033 z  -1.6 p 0.947 -> ROUTING-REDUCIBLE  | l2 EF-K2 D +0.0007 p 0.392 | EF l2 D +0.0005
+[  70.5s] CLASS|M1|8634            | MI D +0.0261 z  11.9 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0114 p 0.007 | EF l2 D +0.0384
+[  77.5s] MIXED|habit2|8640        | MI D +0.0206 z   8.4 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D -0.0040 p 0.864 | EF l2 D +0.0019
+[  77.5s] CLASS|habit|8624         | MI D +0.0297 z  12.3 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0115 p 0.010 | EF l2 D +0.0466
+[  78.0s] MIXED|habit3|8650        | MI D +0.0170 z   7.1 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0006 p 0.452 | EF l2 D -0.0013
+[  78.1s] MIXED|habit3b|8660       | MI D +0.0222 z   9.2 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0058 p 0.133 | EF l2 D +0.0124
+[  78.1s] MIXED|habit3_sec|8670    | MI D +0.0287 z  10.1 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0110 p 0.017 | EF l2 D +0.0188
+[  86.0s] MIXED|habit3b_sec|8680   | MI D +0.0198 z   7.5 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D -0.0012 p 0.601 | EF l2 D +0.0179
+[  92.4s] MIXED|habit2|8641        | MI D +0.0208 z   8.7 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0084 p 0.033 | EF l2 D +0.0209
+[  92.7s] MIXED|habit3|8651        | MI D +0.0226 z   8.3 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0052 p 0.060 | EF l2 D +0.0203
+[  93.1s] MIXED|habit3_sec|8671    | MI D +0.0247 z   9.9 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0036 p 0.169 | EF l2 D +0.0151
+[  93.2s] MIXED|habit3b|8661       | MI D +0.0268 z  11.0 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0144 p 0.003 | EF l2 D +0.0184
+[  93.4s] MIXED|habit3b_sec|8681   | MI D +0.0199 z   7.2 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D -0.0005 p 0.561 | EF l2 D +0.0174
+[ 100.5s] MIXED|habit2|8642        | MI D +0.0274 z  11.1 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0067 p 0.030 | EF l2 D +0.0304
+[ 106.1s] MIXED|habit3|8652        | MI D +0.0272 z  11.1 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0076 p 0.003 | EF l2 D +0.0307
+[ 106.5s] MIXED|habit3b|8662       | MI D +0.0211 z   8.3 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0097 p 0.010 | EF l2 D +0.0146
+[ 106.7s] MIXED|habit3_sec|8672    | MI D +0.0197 z   7.3 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0006 p 0.429 | EF l2 D +0.0070
+[ 106.8s] MIXED|habit3b_sec|8682   | MI D +0.0247 z   9.7 p 0.003 -> BEYOND ROUTING     | l2 EF-K2 D +0.0099 p 0.003 | EF l2 D +0.0188
 {
- "C1": false,
+ "C1": true,
  "C1_indeterminate": 0,
- "C1_max_D": 0.026530129813128175,
+ "C1_max_D": 0.002433125236429051,
  "C2": true,
- "C2_survives": "10/10",
- "C2_min_D": 0.02726043488028823,
+ "C2_beyond": "10/10",
+ "C2_min_D": 0.021438901363438623,
+ "lambda2_EFK2_class_p_le_005": 1,
+ "lambda2_EFK2_edge_p_le_005": 0,
  "mixed_calls": [
   [
    "habit2",
-   8940,
-   "SURVIVES EDGES",
-   0.0276
+   8640,
+   "BEYOND ROUTING",
+   0.0206
   ],
   [
    "habit2",
-   8941,
-   "SURVIVES EDGES",
+   8641,
+   "BEYOND ROUTING",
+   0.0208
+  ],
+  [
+   "habit2",
+   8642,
+   "BEYOND ROUTING",
+   0.0274
+  ],
+  [
+   "habit3",
+   8650,
+   "BEYOND ROUTING",
+   0.017
+  ],
+  [
+   "habit3",
+   8651,
+   "BEYOND ROUTING",
+   0.0226
+  ],
+  [
+   "habit3",
+   8652,
+   "BEYOND ROUTING",
+   0.0272
+  ],
+  [
+   "habit3_sec",
+   8670,
+   "BEYOND ROUTING",
+   0.0287
+  ],
+  [
+   "habit3_sec",
+   8671,
+   "BEYOND ROUTING",
+   0.0247
+  ],
+  [
+   "habit3_sec",
+   8672,
+   "BEYOND ROUTING",
+   0.0197
+  ],
+  [
+   "habit3b",
+   8660,
+   "BEYOND ROUTING",
+   0.0222
+  ],
+  [
+   "habit3b",
+   8661,
+   "BEYOND ROUTING",
    0.0268
   ],
   [
-   "habit2",
-   8942,
-   "SURVIVES EDGES",
-   0.0214
-  ],
-  [
-   "habit3",
-   8950,
-   "SURVIVES EDGES",
-   0.0238
-  ],
-  [
-   "habit3",
-   8951,
-   "INDETERMINATE",
-   0.0194
-  ],
-  [
-   "habit3",
-   8952,
-   "INDETERMINATE",
-   0.013
-  ],
-  [
-   "habit3_sec",
-   8970,
-   "INDETERMINATE",
-   0.0138
-  ],
-  [
-   "habit3_sec",
-   8971,
-   "EDGE-REDUCIBLE",
-   0.0042
-  ],
-  [
-   "habit3_sec",
-   8972,
-   "EDGE-REDUCIBLE",
-   0.0013
-  ],
-  [
    "habit3b",
-   8960,
-   "EDGE-REDUCIBLE",
-   0.0167
-  ],
-  [
-   "habit3b",
-   8961,
-   "SURVIVES EDGES",
-   0.0173
-  ],
-  [
-   "habit3b",
-   8962,
-   "EDGE-REDUCIBLE",
-   0.004
+   8662,
+   "BEYOND ROUTING",
+   0.0211
   ],
   [
    "habit3b_sec",
-   8980,
-   "INDETERMINATE",
-   0.0114
+   8680,
+   "BEYOND ROUTING",
+   0.0198
   ],
   [
    "habit3b_sec",
-   8981,
-   "INDETERMINATE",
-   0.0192
+   8681,
+   "BEYOND ROUTING",
+   0.0199
   ],
   [
    "habit3b_sec",
-   8982,
-   "EDGE-REDUCIBLE",
-   0.0028
+   8682,
+   "BEYOND ROUTING",
+   0.0247
   ]
  ],
- "PASS": false
+ "PASS": true
 }
 exit 0

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """PHASE_776 locked run (see ../PRE_REGISTRATION.md).
 
-  python run776.py              verify the lock; lambda2/lambda3 of B's class-transition operator under the header-aware
-                                EF null (1,000 permutations); the call; descriptives (lag-2, EFL, shuffle floor)
+  python run776.py              verify the lock; class-pair MI of B under the routing-preserving null EF-K2 (1,000
+                                permutations; v2 primary); the call; descriptives (lambda2 under EF-K2 and EF, lambda3,
+                                lag-2, EFL, shuffle floor)
   python run776.py --checksums  write results/input_checksums.json (before the lock commit)
   python run776.py --dry        every code path on two DECOYS (an edge-only chain and a class chain)
 """
@@ -39,7 +40,8 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
           'phases/PHASE_774_VARIANT_MERGE/scripts/ef774.py', 'phases/PHASE_774_VARIANT_MERGE/scripts/gen774.py',
           'phases/PHASE_775_BOUNDARY_KEY/scripts/gen775.py', 'phases/PHASE_775_BOUNDARY_KEY/scripts/key775.py')
 LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds776.json', 'results/prelock_calib776_design.json',
-          'results/prelock_cert776.json', 'results/input_checksums.json', 'scripts/eig776.py',
+          'results/prelock_calib776_design2.json', 'results/prelock_cert776_v1.json', 'results/prelock_cert776.json',
+          'results/input_checksums.json', 'scripts/eig776.py',
           'scripts/prelock_calib776.py', 'scripts/prelock_thresholds776.py', 'scripts/prelock_cert776.py',
           'scripts/run776.py')
 DRY = '--dry' in sys.argv
@@ -77,15 +79,16 @@ def verify_lock():
 
 
 def call(D, p, th):
+    """v2: MI under EF-K2."""
     if p <= 0.005 and D >= th['tau']:
-        return 'SURVIVES EDGES'
-    if p > 0.05:
-        return 'EDGE-REDUCIBLE'
+        return 'BEYOND ROUTING'
+    if p > 0.05 or D <= th['NEG']:
+        return 'ROUTING-REDUCIBLE'
     return 'INDETERMINATE'
 
 
 def shape_reading(d1, d2, efl_p):
-    """Pre-declared wording rule (descriptive; restricts wording only)."""
+    """Pre-declared wording rule on the MI excess (descriptive; restricts wording only)."""
     if d1 <= 0:
         return 'not applicable (no positive lag-1 excess)'
     if d2 < 0.5 * d1 and efl_p <= 0.05:
@@ -99,19 +102,28 @@ def analyse(lines, sk, tag, X):
     TH = json.load(open(OUT / 'thresholds776.json', encoding='utf-8'))
     t0 = time.time()
     res = X.run(lines, X.GK.ef_groups(sk), R=R_B, seed=SEED)
-    l2, l3, g2, efl = res['lambda2'], res['lambda3'], res['lag2_lambda2'], res['EFL_lambda2']
-    verdict = call(l2['D'], l2['p'], TH)
-    log(f'[{tag}] {time.time() - t0:.0f}s | EF cells {res["_cells"]["n_cells"]}, movable {res["_cells"]["frac_movable"]:.3f}'
-        f' | EFL cells {res["EFL_cells"]["n_cells"]}, movable {res["EFL_cells"]["frac_movable"]:.3f}')
-    log(f'[{tag}] lambda2: obs {l2["obs"]:.4f}, EF null {l2["null_mean"]:.4f} (sd {l2["null_sd"]:.4f}), D {l2["D"]:+.4f}, '
-        f'z {l2["z"]:.1f}, p {l2["p"]:.4f} | shuffle floor {res["shuffle_floor"]["lambda2"]:.4f}')
-    log(f'[{tag}] CALL: {verdict}   [SURVIVES if p <= 0.005 and D >= {TH["tau"]:.4f}; EDGE-REDUCIBLE if p > 0.05]')
-    log(f'[{tag}] lambda3 (descriptive): obs {l3["obs"]:.4f}, null {l3["null_mean"]:.4f}, D {l3["D"]:+.4f}, p {l3["p"]:.4f} '
-        f'| floor {res["shuffle_floor"]["lambda3"]:.4f}')
-    log(f'[{tag}] lag-2 lambda2 (descriptive): obs {g2["obs"]:.4f}, null {g2["null_mean"]:.4f}, D {g2["D"]:+.4f}, p {g2["p"]:.4f}')
-    log(f'[{tag}] within-line EF, EFL (descriptive): null {efl["null_mean"]:.4f}, D {efl["D"]:+.4f}, p {efl["p"]:.4f}')
-    log(f'[{tag}] shape (wording only): {shape_reading(l2["D"], g2["D"], efl["p"])}')
-    return {'tag': tag, 'res': res, 'call': verdict, 'shape': shape_reading(l2['D'], g2['D'], efl['p']),
+    mi, mi2, l2, l3, g2, efl = (res['MI'], res['lag2_MI'], res['lambda2'], res['lambda3'], res['lag2_lambda2'],
+                                res['EFL_lambda2'])
+    verdict = call(mi['D'], mi['p'], TH)
+    log(f'[{tag}] {time.time() - t0:.0f}s | EF-K2 cells {res["EFK2_cells"]["n_cells"]}, movable '
+        f'{res["EFK2_cells"]["frac_movable"]:.3f} | EF movable {res["EF_cells"]["frac_movable"]:.3f} | EFL movable '
+        f'{res["EFL_cells"]["frac_movable"]:.3f}')
+    log(f'[{tag}] PRIMARY class-pair MI under EF-K2: obs {mi["obs"]:.4f} bits, null {mi["null_mean"]:.4f} '
+        f'(sd {mi["null_sd"]:.4f}), D {mi["D"]:+.4f}, z {mi["z"]:.1f}, p {mi["p"]:.4f}')
+    log(f'[{tag}] CALL: {verdict}   [BEYOND ROUTING if p <= 0.005 and D >= {TH["tau"]:.4f}; ROUTING-REDUCIBLE if '
+        f'p > 0.05 or D <= {TH["NEG"]:.4f}]')
+    log(f'[{tag}] MI under plain EF (descriptive): null {res["EF_MI"]["null_mean"]:.4f}, D {res["EF_MI"]["D"]:+.4f}, '
+        f'p {res["EF_MI"]["p"]:.4f}')
+    log(f'[{tag}] lambda2 under EF-K2 (C2061 statistic, descriptive): obs {l2["obs"]:.4f}, null {l2["null_mean"]:.4f} '
+        f'(sd {l2["null_sd"]:.4f}), D {l2["D"]:+.4f}, z {l2["z"]:.1f}, p {l2["p"]:.4f} | under plain EF: null '
+        f'{res["EF_lambda2"]["null_mean"]:.4f}, D {res["EF_lambda2"]["D"]:+.4f}, p {res["EF_lambda2"]["p"]:.4f} | '
+        f'shuffle floor {res["shuffle_floor"]["lambda2"]:.4f}')
+    log(f'[{tag}] lambda3 under EF-K2 (descriptive): obs {l3["obs"]:.4f}, null {l3["null_mean"]:.4f}, D {l3["D"]:+.4f}, '
+        f'p {l3["p"]:.4f} | floor {res["shuffle_floor"]["lambda3"]:.4f}')
+    log(f'[{tag}] lag-2 (descriptive): MI D {mi2["D"]:+.4f} p {mi2["p"]:.4f}; lambda2 D {g2["D"]:+.4f} p {g2["p"]:.4f}')
+    log(f'[{tag}] within-line EF, EFL lambda2 (descriptive): null {efl["null_mean"]:.4f}, D {efl["D"]:+.4f}, p {efl["p"]:.4f}')
+    log(f'[{tag}] shape (wording only): {shape_reading(mi["D"], mi2["D"], efl["p"])}')
+    return {'tag': tag, 'res': res, 'call': verdict, 'shape': shape_reading(mi['D'], mi2['D'], efl['p']),
             'thresholds': TH, 'R': R_B, 'seed': SEED}
 
 

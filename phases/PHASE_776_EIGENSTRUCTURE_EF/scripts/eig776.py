@@ -69,6 +69,25 @@ class Spectrum:
         ev = np.sort(np.abs(np.linalg.eigvals(P)))[::-1]
         return tuple(float(x) for x in ev[1:k_max])
 
+    def counts(self, tok, lag=1):
+        cl = np.where(tok >= 0, self.cls[np.where(tok >= 0, tok, 0)], 0)
+        idx = np.flatnonzero(cl > 0)
+        a, b = idx[:-lag], idx[lag:]
+        same = self.line_of[a] == self.line_of[b]
+        a, b = a[same], b[same]
+        counts = np.zeros((N_CLS, N_CLS))
+        np.add.at(counts, (cl[a] - 1, cl[b] - 1), 1)
+        return counts
+
+    def mi(self, tok, lag=1):
+        """Plug-in I(class_i; class_{i+lag}) in bits over bridged within-line pairs (the C2023 scalar, PHASE_733)."""
+        c = self.counts(tok, lag)
+        n = c.sum()
+        pj = c / n
+        pa, pb = pj.sum(1, keepdims=True), pj.sum(0, keepdims=True)
+        nz = pj > 0
+        return float((pj[nz] * np.log2(pj[nz] / (pa @ pb)[nz])).sum())
+
     def shuffle_floor(self, rng, n=30):
         """Within-line shuffle of the classified tokens (the C2061 floor)."""
         out = []
@@ -82,29 +101,77 @@ class Spectrum:
         return np.array(out)
 
 
+def refine_by_context(C, k=2):
+    """EF-K: split every EF cell by the slot's preceding-token ending (last k glyph units; '^' at a line start or
+    after a blocker). Each slot's own last-k signature is fixed under EF, so the preceding ending of every slot is
+    invariant too: the refined cells are consistent under permutation, and P(token | own edges, preceding ending,
+    zone, group) is preserved exactly. What EF-K destroys is dependence on the preceding token beyond its ending."""
+    n = len(C.tok)
+    prev_key = np.zeros(n, dtype=np.int64)
+    ids = {'^': 0}
+    for p in range(n):
+        if C.tok[p] < 0:
+            continue
+        if p == 0 or C.line_of[p - 1] != C.line_of[p] or C.tok[p - 1] < 0:
+            prev_key[p] = 0
+        else:
+            e = GK.K.ending(C.vocab[C.tok[p - 1]], k)
+            prev_key[p] = ids.setdefault(e, len(ids))
+    cell_key = {}
+    cell = np.full(n, -1, dtype=np.int64)
+    for p in range(n):
+        if C.tok[p] >= 0:
+            cell[p] = cell_key.setdefault((int(C.cell[p]), int(prev_key[p])), len(cell_key))
+    C.cell = cell
+    C.n_cells = len(cell_key)
+    movable = cell >= 0
+    C.mpos = np.flatnonzero(movable)
+    C.P = C.mpos[np.argsort(cell[C.mpos], kind='stable')]
+    cs = np.bincount(cell[C.mpos], minlength=len(cell_key))
+    C.cell_sizes = cs
+    C.frac_movable = float(cs[cs >= 2].sum() / max(1, movable.sum()))
+    return C
+
+
 def _summ(obs, v, R):
     return {'obs': float(obs), 'null_mean': float(v.mean()), 'null_sd': float(v.std(ddof=1)),
             'D': float(obs - v.mean()), 'z': float((obs - v.mean()) / max(float(v.std(ddof=1)), 1e-12)),
             'p': float((1 + (v >= obs).sum()) / (1 + R))}
 
 
-def run(lines, groups, R=200, seed=0, floor=True, efl=True):
-    """Primary: EF within `groups` (folio x line type), cells = zone x first glyph x last two glyph units.
-    Descriptives: lambda3; lag-2 lambda2 on the same samples; EFL = the same permutation within LINE (edges and line
-    composition both fixed; low movable mass, exact); the within-line class shuffle floor (C2061's floor)."""
+def run(lines, groups, R=200, seed=0, floor=True, efl=True, primary='EFK2'):
+    """v2 primary: EF-K2 within `groups` (folio x line type), cells = zone x first glyph x last two glyph units x the
+    slot's preceding-token last two glyph units (routing preserved). Descriptives: plain EF (v1 primary); lambda3;
+    lag-2 lambda2 on the primary samples; EFL = EF within LINE (edges and line composition fixed); the within-line
+    class shuffle floor (C2061's floor)."""
     rng = np.random.default_rng(seed)
     C = E.Corpus(lines, groups, sig=E.sig_fl2, ns=(2,))
     S = Spectrum(C)
     obs = S.lambdas(C.tok)
     obs2 = S.lambdas(C.tok, lag=2)
-    null, null2 = [], []
+    obs_mi, obs_mi2 = S.mi(C.tok), S.mi(C.tok, lag=2)
+    ef_cells = {'n_cells': C.n_cells, 'frac_movable': C.frac_movable}
+    null_ef, null_ef_mi = [], []
     for _ in range(R):
         t = C.sample(rng)
-        null.append(S.lambdas(t))
-        null2.append(S.lambdas(t, lag=2))
+        null_ef.append(S.lambdas(t))
+        null_ef_mi.append(S.mi(t))
+    null_ef = np.array(null_ef)
+    CK = refine_by_context(E.Corpus(lines, groups, sig=E.sig_fl2, ns=(2,)), k=2)
+    SK = Spectrum(CK)
+    null, null2, null_mi, null_mi2 = [], [], [], []
+    for _ in range(R):
+        t = CK.sample(rng)
+        null.append(SK.lambdas(t))
+        null2.append(SK.lambdas(t, lag=2))
+        null_mi.append(SK.mi(t))
+        null_mi2.append(SK.mi(t, lag=2))
     null, null2 = np.array(null), np.array(null2)
     out = {'lambda2': _summ(obs[0], null[:, 0], R), 'lambda3': _summ(obs[1], null[:, 1], R),
-           'lag2_lambda2': _summ(obs2[0], null2[:, 0], R)}
+           'lag2_lambda2': _summ(obs2[0], null2[:, 0], R),
+           'MI': _summ(obs_mi, np.array(null_mi), R), 'lag2_MI': _summ(obs_mi2, np.array(null_mi2), R),
+           'EF_lambda2': _summ(obs[0], null_ef[:, 0], R), 'EF_MI': _summ(obs_mi, np.array(null_ef_mi), R),
+           'EF_cells': ef_cells, 'EFK2_cells': {'n_cells': CK.n_cells, 'frac_movable': CK.frac_movable}}
     if efl:
         line_groups = list(range(len(lines)))
         CL = E.Corpus(lines, line_groups, sig=E.sig_fl, ns=(2,))     # first + last glyph: every junction kept
