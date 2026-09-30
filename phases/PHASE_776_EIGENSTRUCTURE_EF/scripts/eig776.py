@@ -69,19 +69,34 @@ class Spectrum:
         ev = np.sort(np.abs(np.linalg.eigvals(P)))[::-1]
         return tuple(float(x) for x in ev[1:k_max])
 
-    def counts(self, tok, lag=1):
+    def counts(self, tok, lag=1, mode='bridged'):
+        """mode 'bridged': classified tokens with unmapped ones dropped and neighbours joined (PHASE_733);
+        'raw49': adjacent positions, both classified; 'raw50': adjacent certain tokens, UN as its own state 0."""
         cl = np.where(tok >= 0, self.cls[np.where(tok >= 0, tok, 0)], 0)
-        idx = np.flatnonzero(cl > 0)
-        a, b = idx[:-lag], idx[lag:]
-        same = self.line_of[a] == self.line_of[b]
-        a, b = a[same], b[same]
-        counts = np.zeros((N_CLS, N_CLS))
-        np.add.at(counts, (cl[a] - 1, cl[b] - 1), 1)
+        if mode == 'bridged':
+            idx = np.flatnonzero(cl > 0)
+            a, b = idx[:-lag], idx[lag:]
+            same = self.line_of[a] == self.line_of[b]
+            a, b = a[same], b[same]
+            counts = np.zeros((N_CLS, N_CLS))
+            np.add.at(counts, (cl[a] - 1, cl[b] - 1), 1)
+            return counts
+        n = len(tok)
+        a = np.arange(n - lag)
+        b = a + lag
+        ok = (self.line_of[a] == self.line_of[b]) & (tok[a] >= 0) & (tok[b] >= 0)
+        if mode == 'raw49':
+            ok &= (cl[a] > 0) & (cl[b] > 0)
+            counts = np.zeros((N_CLS, N_CLS))
+            np.add.at(counts, (cl[a[ok]] - 1, cl[b[ok]] - 1), 1)
+            return counts
+        counts = np.zeros((N_CLS + 1, N_CLS + 1))
+        np.add.at(counts, (cl[a[ok]], cl[b[ok]]), 1)
         return counts
 
-    def mi(self, tok, lag=1):
-        """Plug-in I(class_i; class_{i+lag}) in bits over bridged within-line pairs (the C2023 scalar, PHASE_733)."""
-        c = self.counts(tok, lag)
+    def mi(self, tok, lag=1, mode='bridged'):
+        """Plug-in I(class_i; class_{i+lag}) in bits (the C2023 scalar, PHASE_733, for mode 'bridged')."""
+        c = self.counts(tok, lag, mode)
         n = c.sum()
         pj = c / n
         pa, pb = pj.sum(1, keepdims=True), pj.sum(0, keepdims=True)
@@ -159,19 +174,30 @@ def run(lines, groups, R=200, seed=0, floor=True, efl=True, primary='EFK2'):
     null_ef = np.array(null_ef)
     CK = refine_by_context(E.Corpus(lines, groups, sig=E.sig_fl2, ns=(2,)), k=2)
     SK = Spectrum(CK)
-    null, null2, null_mi, null_mi2 = [], [], [], []
+    obs_r49, obs_r50 = S.mi(C.tok, mode='raw49'), S.mi(C.tok, mode='raw50')
+    null, null2, null_mi, null_mi2, null_r49, null_r50 = [], [], [], [], [], []
     for _ in range(R):
         t = CK.sample(rng)
         null.append(SK.lambdas(t))
         null2.append(SK.lambdas(t, lag=2))
         null_mi.append(SK.mi(t))
         null_mi2.append(SK.mi(t, lag=2))
+        null_r49.append(SK.mi(t, mode='raw49'))
+        null_r50.append(SK.mi(t, mode='raw50'))
     null, null2 = np.array(null), np.array(null2)
     out = {'lambda2': _summ(obs[0], null[:, 0], R), 'lambda3': _summ(obs[1], null[:, 1], R),
            'lag2_lambda2': _summ(obs2[0], null2[:, 0], R),
            'MI': _summ(obs_mi, np.array(null_mi), R), 'lag2_MI': _summ(obs_mi2, np.array(null_mi2), R),
+           'raw49_MI': _summ(obs_r49, np.array(null_r49), R), 'raw50_MI': _summ(obs_r50, np.array(null_r50), R),
            'EF_lambda2': _summ(obs[0], null_ef[:, 0], R), 'EF_MI': _summ(obs_mi, np.array(null_ef_mi), R),
            'EF_cells': ef_cells, 'EFK2_cells': {'n_cells': CK.n_cells, 'frac_movable': CK.frac_movable}}
+    # EFL-K2: within-line cells keyed by own edges (first, last two) and the preceding ending; exact for any
+    # line-level latent (lock-audit edit 2). Low movable mass; descriptive.
+    CLK = refine_by_context(E.Corpus(lines, list(range(len(lines))), sig=E.sig_fl2, ns=(2,)), k=2)
+    SLK = Spectrum(CLK)
+    nlk = np.array([SLK.mi(CLK.sample(rng)) for _ in range(R)])
+    out['EFLK2_MI'] = _summ(obs_mi, nlk, R)
+    out['EFLK2_cells'] = {'n_cells': CLK.n_cells, 'frac_movable': CLK.frac_movable}
     if efl:
         line_groups = list(range(len(lines)))
         CL = E.Corpus(lines, line_groups, sig=E.sig_fl, ns=(2,))     # first + last glyph: every junction kept

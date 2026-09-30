@@ -1,6 +1,7 @@
 # PHASE_776 — Does Currier B's class-transition structure (C2061/C2067) go beyond its word-boundary rules? (pre-registration)
 
-**Status: DRAFT v2 for the lean-expert lock audit (not locked); v2 certification PASSED (below).**
+**Status: v3, for lock.** The lean-expert lock audit of v2 returned LOCKABLE WITH EDITS (audit scripts and plants
+committed at a1fe415, `scripts/audit/`, `results/audit/`). Edits 1–6 are applied below. The v2 certification PASSED.
 - **v1** (λ2 under the plain edge-frame null EF) **failed certification C1:** one edge-only chain in 10 read as
   SURVIVES (D +0.027, p 0.003). The cause is C2082: the previous ending routes the next token's class, and EF fixes
   each slot's own edges but not that routing, so an edge chain that draws from B's continuations carries class
@@ -20,11 +21,10 @@ After the lock nothing below may change without a new phase number.
   eigenstructure: λ2 and λ3 of the 49-class transition operator exceed a character 5-gram model (C2061, C2067; C2065).
   The research agenda (Tier B #4) asks for a re-run under a null that preserves composition, zones and boundary
   coupling.
-- **The question.** Is B's class-to-class transition structure anything more than its word-boundary rules: the glyph
-  junction coupling (C1212/C1563) and the routing of the next class by the previous ending (C2082)? If a null that
-  preserves both, plus folio composition, reproduces the class dependence, the eigenstructure reduces to boundary rules
-  and the procedural reading loses its last measured leg. If B's dependence stays above it, there is class-level
-  structure beyond spelling and routing.
+- **The question.** Is B's class-to-class dependence anything more than its word-boundary rules, plus folio
+  composition? **"Boundary rules" here means exactly:** the glyph junction coupling (C1212/C1563) and the routing of the
+  next token by the previous token's last two glyph units (C2082). Longer boundary keys (three units; first unit plus
+  last two) are not fixed by the null and, in the audit's plants, give small excesses between NEG and τ (edit 3).
 
 ## Statistics
 Every token is mapped to its class (CLASS_COSURVIVAL_TEST map: 480 types, 49 classes, about 69.5% of tokens); within
@@ -33,8 +33,11 @@ pairs are counted into a 49 × 49 matrix.
 
 - **Primary: MI = I(class_i; class_{i+1})**, the plug-in mutual information (bits) of the pair counts (the C2023
   scalar). **D = MI(B) − mean MI(null); p = (1 + #{null ≥ observed}) / (1 + R).**
-- **Descriptive:** λ2 and λ3 of the row-normalised matrix (the C2061/C2067 statistics), the lag-2 MI and λ2, and the
-  within-line class shuffle floor (C2061's floor).
+- **Descriptive:** λ2 and λ3 of the row-normalised matrix (the C2061/C2067 statistics), the lag-2 MI and λ2, the
+  within-line class shuffle floor (C2061's floor), and (edit 5) two un-bridged variants of the MI: the raw-adjacent
+  49-class MI (both neighbours classified) and the 50-state MI with UN as its own state. Bridging carries the placement
+  of unmapped tokens into the 49-class MI: in the audit, an edge chain in which unmapped tokens tend to follow unmapped
+  tokens gave a bridged D of +0.0035 (just under NEG) while its raw-adjacent MI was at null.
 
 **Population note.** PHASE_733 used all non-label placements (2,420 lines); this phase uses the P-text skeleton of
 PHASE_756/774/775 (2,299 lines, 21,610 certain tokens, 22 blockers). λ2 is measured afresh on it.
@@ -51,8 +54,13 @@ PHASE_756/774/775 (2,299 lines, 21,610 certain tokens, 22 blockers). λ2 is meas
   - **Destroyed:** dependence of a token, and so its class, on the preceding token beyond that token's ending.
   - Movable mass on B: 32.5% of positions (structural exposure; edge chains 27%, class chains 19%).
 - **EF (descriptive; the v1 null):** the same without the preceding-ending key. It shows how much routing carries.
-- **EFL (descriptive):** EF within the line, first and last glyph as the edge signature (edges and line composition
-  both fixed; about 20% movable).
+- **EFL-K2 (descriptive; the shape readout, edit 2):** EF-K2 within the **line**: cells keyed by zone, first glyph
+  unit, last two glyph units and the preceding ending, within one line. Exact for any line-level latent. Movable mass
+  is small (controls 1–5%; B 3.8%, a declared structural exposure: adjacent edge-pair information). In the
+  audit it separated class chains (5 of 5 at p ≤ 0.03) from line-latent, positional, folio, longer-key and UN plants
+  (0 of 14).
+- **EFL (descriptive, λ2 only):** EF within the line with first and last glyph as the edge signature (about 20%
+  movable). The audit found it weak and it no longer enters the wording rule.
 - The B run uses 1,000 permutations, seed 77600.
 
 ## Reference families (v2 design calibration; `results/prelock_calib776_design2.json`, R = 300)
@@ -60,14 +68,14 @@ PHASE_756/774/775 (2,299 lines, 21,610 certain tokens, 22 blockers). λ2 is meas
 |---|---|---|---|
 | **EDGE** (edge-only chains fitted to B: the next token drawn by the previous ending, k = 1 or 2 glyph units, and zone) | boundary rules only, routing included | −0.003 to +0.004 (z −1.5 to +1.8) | 0.04–0.95; none ≤ 0.005 |
 | **CLASS** (class-chain generators fitted to B: habit, M1) | class structure beyond routing by construction | +0.021 to +0.031 (z 9–13) | 0.003 in 12 of 12 |
-| MIXED (habit2, habit3, habit3b, section-fitted; 20 runs) | partial | −0.0005 to +0.019 (λ2 basis; MI reported) | mixed |
+| MIXED (habit2, habit3, habit3b, section-fitted; 20 runs) | partial | +0.016 to +0.026 | 0.003 in all |
 
 **Why MI and not λ2 under EF-K2.** λ2 separated the same families poorly under the routing-preserving null: 5 of 12
 CLASS runs at p ≤ 0.005, 0 of 12 EDGE. The scalar MI has an order of magnitude more power here. λ2 is kept as the
 C2061-specific descriptive.
 
-**Why EF-K2 and not EF.** Under plain EF, EDGE chains show a significant MI excess in 4 of 12 design runs (routing);
-under EF-K2 none does.
+**Why EF-K2 and not EF.** Under plain EF, EDGE chains show an MI excess at p ≤ 0.01 in 4 of 12 design runs and at
+p ≤ 0.05 in 8 of 12 (routing); under EF-K2 none reaches p ≤ 0.04.
 
 ## Thresholds (`prelock_thresholds776.py` → `results/thresholds776.json`)
 - **NEG** = max D over the EDGE family = **+0.0038**.
@@ -95,8 +103,18 @@ In the design, 12 of 12 CLASS runs are BEYOND ROUTING and 12 of 12 EDGE runs are
 | C1 (EDGE ×10: none BEYOND ROUTING, ≤ 2 INDETERMINATE) | pass: 10 of 10 ROUTING-REDUCIBLE; max D +0.0024; 0 INDETERMINATE |
 | C2 (CLASS ×10: ≥ 9 BEYOND ROUTING, none ROUTING-REDUCIBLE) | pass: 10 of 10 BEYOND ROUTING; min D +0.0214 (z 9.2–12.3) |
 
-MIXED (reported): habit2 3/3 and habit3 2/3 BEYOND ROUTING; the others between the families. λ2 under EF-K2 on the same
-runs: 1 of 10 CLASS runs at p ≤ 0.005 (the low-power descriptive, as expected), 0 of 10 EDGE.
+MIXED (reported): all 15 BEYOND ROUTING. λ2 under EF-K2 on the same runs: 1 of 10 CLASS runs at p ≤ 0.005 and 0 of
+10 EDGE (the low-power descriptive); at α 0.05, λ2 reached 15 of 22 CLASS runs and 0 of 22 EDGE runs across design and
+certification.
+
+**What the certification licenses (audit).**
+- A BEYOND ROUTING call excludes a process whose tokens depend only on the previous two-unit ending, zone and folio ×
+  line-type composition. It does **not** exclude longer boundary keys, line-level class clustering, or the placement of
+  unmapped tokens. The audit's line-latent plant (a per-line class mode with no transitions) read BEYOND ROUTING
+  (D +0.016, z 7.3).
+- A ROUTING-REDUCIBLE call means B's pooled class-pair dependence beyond routing is weaker than in every class or
+  token chain fitted to B's adjacent pairs: all 35 such runs, including the MIXED family and the audit's
+  folio-emission chains.
 
 **Dry run (v2 code):** the edge-only decoy is ROUTING-REDUCIBLE (MI D +0.0023, p 0.14; under plain EF its MI is
 significant, p 0.007, which is the routing EF-K2 removes); the class-chain decoy is BEYOND ROUTING (D +0.0237,
@@ -106,10 +124,14 @@ z 10.2), shape "order-like".
 - MI under plain EF (routing not fixed).
 - λ2 under EF-K2 and under EF, and the shuffle floor; λ3 under EF-K2.
 - Lag-2 MI and λ2 under EF-K2.
-- EFL λ2.
-- **Shape wording rule** (restricts wording only; uncertified): if the MI excess D > 0, "order-like" when the lag-2
-  excess is less than half the lag-1 excess and EFL p ≤ 0.05; "clustering-like" when the lag-2 excess is at least the
-  lag-1 excess; otherwise "unresolved".
+- EFL-K2 MI; EFL λ2; raw-adjacent 49-class MI and 50-state MI under EF-K2.
+- **Shape wording rule** (edit 2; restricts wording only; uncertified): if the MI excess D > 0, "order-like" when the
+  lag-2 excess is less than half the lag-1 excess and EFL-K2 MI p ≤ 0.05; "clustering-like" when EFL-K2 MI p > 0.05 and
+  the lag-2 excess is at least 0.75 × the lag-1 excess; otherwise "unresolved".
+- **The C2061/C2067 rule** (edit 1; pre-registered): on λ2 under EF-K2 at α 0.05. If p > 0.05, C2061/C2067 are
+  annotated "not shown to be sequence beyond boundary rules" and that reading moves to Tier 3, while the measurement
+  against the 5-gram stands. If p ≤ 0.05, no demotion; agreement or disagreement with the MI call is recorded. (λ2 and
+  MI come apart: PHASE_733 showed it, and the audit's line plants did too.)
 
 ## Declared prior knowledge and exposure
 - **B's facts relied on:** C2061/C2067 (λ2 0.206, λ3 0.134 on the PHASE_733 population; shuffle floor 0.118; 5-gram
@@ -117,31 +139,37 @@ z 10.2), shape "order-like".
   C2091; C2093.
 - **B supplied before the lock:** its skeleton; paragraph-first-line flags; adjacent-pair transitions (for the
   generators: token, class and edge chains, line-initial distribution, line-quintile unigrams, within-section pairs);
-  and, for the movable-mass checks, its per-slot cell memberships (composition only).
+  and, for the movable-mass checks (EF, EF-K2, EFL, EFL-K2), its per-slot cell memberships. The EF-K2 and EFL-K2 cells
+  use each slot's own edges plus the preceding token's ending, which is adjacent edge-pair information (edit 6), not
+  composition only; no order statistic beyond adjacent pairs was computed.
 - **Not computed on B before the lock:** MI, λ2 or λ3 on this population, any EF, EF-K2 or EFL sample, or any order
   statistic beyond adjacent pairs.
 
 ## What each outcome means
-**ROUTING-REDUCIBLE.** B's class-to-class dependence is what its boundary rules (junction coupling and ending
-routing) and folio composition produce. No class-chain generator fitted to B ever reads this way (certification C2),
-so the outcome excludes class-level sequence structure at the strength of a class Markov chain fitted to B.
-- Registry: C2061 and C2067 get a scope note and drop to Tier 3 as "sequence beyond boundary rules" claims (same
-  claim, stricter null; a null-driven demotion, self-clearing). C2023's Tier-2 measurement is unaffected. The working
-  interpretation's last measured "program-like" leg is gone.
-- It does not say the text is meaningless.
+**ROUTING-REDUCIBLE.** B's pooled class-pair dependence (C2023's statistic) on the P-text reduces to its boundary
+rules (junction coupling and two-unit ending routing) plus folio × line-type composition: it is weaker than in every
+class or token chain fitted to B's adjacent pairs (35 runs).
+- Registry: a new Tier-2 row stating that. **C2061/C2067 are not demoted by this call** (edit 1): they differ in
+  statistic (λ2), population and null. They are handled by the pre-registered λ2 rule above.
+- It does not say the text is meaningless. (C2056 and C549 stand: a narrow effect such as qok → ok barely moves an
+  aggregate 49 × 49 MI.)
 
-**BEYOND ROUTING.** B has class-level transition structure beyond its boundary rules and folio composition, at the
-level of a class Markov chain fitted to B. No edge-only chain reads this way (C1). The shape (order versus line
-clustering) is read from the descriptives under the wording rule only. Any mechanism reading is echo-class.
+**BEYOND ROUTING.** B has neighbouring-class dependence beyond two-unit ending routing and folio × line-type
+composition, at the level of a class Markov chain fitted to B. No edge-only chain reads this way (C1).
+- **The carrier is unresolved by the call:** order (a transition structure) or sub-folio clustering (a line-level
+  latent) both produce it. The wording rule on EFL-K2 and lag-2 restricts the wording only.
+- It ties to C2023's statistic, not to C2061's; it does not by itself say the eigenstructure survives.
+- Any mechanism reading is echo-class.
 
 **INDETERMINATE.** Phase record; C2061/C2067 stay as they are with a note.
 
 ## Registry consequences
 | Outcome | Consequence |
 |---|---|
-| ROUTING-REDUCIBLE | A Tier-2 row; C2061/C2067 annotated and demoted to Tier 3 as sequence claims |
-| BEYOND ROUTING | A Tier-2 measurement row extending C2061 to the routing-preserving null |
-| INDETERMINATE | Phase record and a note on C2061 |
+| ROUTING-REDUCIBLE | A Tier-2 measurement row (class-pair MI reduces to boundary rules plus composition) |
+| BEYOND ROUTING | A Tier-2 measurement row (neighbouring-class dependence beyond routing; carrier unresolved) |
+| INDETERMINATE | Phase record (a D between NEG and τ has explanations with no class structure: longer boundary keys, UN placement) |
+| Always | The λ2 rule for C2061/C2067 (annotation or no change), applied whatever the MI call |
 
 ## Procedure
 1. Commit this draft, the scripts and the v2 design results.
@@ -159,5 +187,7 @@ clustering) is read from the descriptives under the wording rule only. Any mecha
 - **The primary statistic is a scalar.** A BEYOND ROUTING result says dependence exists; it does not by itself say
   the eigenstructure survives (λ2 under EF-K2 is reported for that, at low power).
 - **λ3 and EFL are underpowered** at this size.
-- **The MI plug-in is biased upward** at finite samples; the bias is the same for B and its null samples (same
-  counts), so D and p are unaffected.
+- **The MI plug-in is biased upward** at finite samples. The number of bridged pairs varies by 0–3 across null
+  samples (bridging depends on where unmapped tokens land), a negligible difference; the permutation test is exact
+  either way.
+- **INDEX.md** is updated with each version.

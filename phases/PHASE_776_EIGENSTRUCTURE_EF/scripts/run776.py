@@ -38,12 +38,15 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
           'phases/PHASE_767_TOKEN_UNIT_TEST/scripts/tu767.py',
           'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json',
           'phases/PHASE_774_VARIANT_MERGE/scripts/ef774.py', 'phases/PHASE_774_VARIANT_MERGE/scripts/gen774.py',
-          'phases/PHASE_775_BOUNDARY_KEY/scripts/gen775.py', 'phases/PHASE_775_BOUNDARY_KEY/scripts/key775.py')
+          'phases/PHASE_775_BOUNDARY_KEY/scripts/gen775.py', 'phases/PHASE_775_BOUNDARY_KEY/scripts/key775.py',
+          'phases/PHASE_764_HUMAN_GIBBERISH_CONTROL/scripts/g764.py',
+          'phases/PHASE_767_TOKEN_UNIT_TEST/scripts/syllabify.py')
 LOCKED = ('PRE_REGISTRATION.md', 'results/thresholds776.json', 'results/prelock_calib776_design.json',
           'results/prelock_calib776_design2.json', 'results/prelock_cert776_v1.json', 'results/prelock_cert776.json',
           'results/input_checksums.json', 'scripts/eig776.py',
           'scripts/prelock_calib776.py', 'scripts/prelock_thresholds776.py', 'scripts/prelock_cert776.py',
-          'scripts/run776.py')
+          'scripts/run776.py', 'scripts/audit/audit776.py', 'scripts/audit/audit776_linehomog.py',
+          'results/audit/audit776_plants.json', 'results/audit/audit776_linehomog.json')
 DRY = '--dry' in sys.argv
 LOGF = None
 
@@ -87,15 +90,23 @@ def call(D, p, th):
     return 'INDETERMINATE'
 
 
-def shape_reading(d1, d2, efl_p):
-    """Pre-declared wording rule on the MI excess (descriptive; restricts wording only)."""
+def shape_reading(d1, d2, eflk2_p):
+    """Pre-declared wording rule on the MI excess (v3, lock-audit edit 2; restricts wording only)."""
     if d1 <= 0:
         return 'not applicable (no positive lag-1 excess)'
-    if d2 < 0.5 * d1 and efl_p <= 0.05:
-        return 'order-like (lag-2 excess < half of lag-1; within-line EF significant)'
-    if d2 >= d1:
-        return 'clustering-like (lag-2 excess >= lag-1 excess)'
+    if d2 < 0.5 * d1 and eflk2_p <= 0.05:
+        return 'order-like (lag-2 excess < half of lag-1; within-line EFL-K2 MI significant)'
+    if eflk2_p > 0.05 and d2 >= 0.75 * d1:
+        return 'clustering-like (EFL-K2 MI not significant; lag-2 excess >= 0.75 x lag-1)'
     return 'unresolved'
+
+
+def lambda2_rule(p):
+    """Pre-registered rule for C2061/C2067 (lock-audit edit 1), on lambda2 under EF-K2 at alpha 0.05."""
+    if p > 0.05:
+        return ('lambda2 not shown beyond boundary rules: annotate C2061/C2067; their "sequence beyond boundary rules" '
+                'reading moves to Tier 3 (the measurement against the 5-gram stands)')
+    return 'lambda2 significant at 0.05: no demotion of C2061/C2067; record agreement/disagreement with the MI call'
 
 
 def analyse(lines, sk, tag, X):
@@ -104,10 +115,11 @@ def analyse(lines, sk, tag, X):
     res = X.run(lines, X.GK.ef_groups(sk), R=R_B, seed=SEED)
     mi, mi2, l2, l3, g2, efl = (res['MI'], res['lag2_MI'], res['lambda2'], res['lambda3'], res['lag2_lambda2'],
                                 res['EFL_lambda2'])
+    eflk2 = res['EFLK2_MI']
     verdict = call(mi['D'], mi['p'], TH)
     log(f'[{tag}] {time.time() - t0:.0f}s | EF-K2 cells {res["EFK2_cells"]["n_cells"]}, movable '
         f'{res["EFK2_cells"]["frac_movable"]:.3f} | EF movable {res["EF_cells"]["frac_movable"]:.3f} | EFL movable '
-        f'{res["EFL_cells"]["frac_movable"]:.3f}')
+        f'{res["EFL_cells"]["frac_movable"]:.3f} | EFL-K2 movable {res["EFLK2_cells"]["frac_movable"]:.3f}')
     log(f'[{tag}] PRIMARY class-pair MI under EF-K2: obs {mi["obs"]:.4f} bits, null {mi["null_mean"]:.4f} '
         f'(sd {mi["null_sd"]:.4f}), D {mi["D"]:+.4f}, z {mi["z"]:.1f}, p {mi["p"]:.4f}')
     log(f'[{tag}] CALL: {verdict}   [BEYOND ROUTING if p <= 0.005 and D >= {TH["tau"]:.4f}; ROUTING-REDUCIBLE if '
@@ -120,11 +132,15 @@ def analyse(lines, sk, tag, X):
         f'shuffle floor {res["shuffle_floor"]["lambda2"]:.4f}')
     log(f'[{tag}] lambda3 under EF-K2 (descriptive): obs {l3["obs"]:.4f}, null {l3["null_mean"]:.4f}, D {l3["D"]:+.4f}, '
         f'p {l3["p"]:.4f} | floor {res["shuffle_floor"]["lambda3"]:.4f}')
+    log(f'[{tag}] C2061/C2067 rule: {lambda2_rule(l2["p"])}')
+    log(f'[{tag}] raw-adjacent 49-class MI (descriptive): D {res["raw49_MI"]["D"]:+.4f} p {res["raw49_MI"]["p"]:.4f}; '
+        f'50-state MI with UN: D {res["raw50_MI"]["D"]:+.4f} p {res["raw50_MI"]["p"]:.4f}')
     log(f'[{tag}] lag-2 (descriptive): MI D {mi2["D"]:+.4f} p {mi2["p"]:.4f}; lambda2 D {g2["D"]:+.4f} p {g2["p"]:.4f}')
-    log(f'[{tag}] within-line EF, EFL lambda2 (descriptive): null {efl["null_mean"]:.4f}, D {efl["D"]:+.4f}, p {efl["p"]:.4f}')
-    log(f'[{tag}] shape (wording only): {shape_reading(mi["D"], mi2["D"], efl["p"])}')
-    return {'tag': tag, 'res': res, 'call': verdict, 'shape': shape_reading(mi['D'], mi2['D'], efl['p']),
-            'thresholds': TH, 'R': R_B, 'seed': SEED}
+    log(f'[{tag}] within-line EFL-K2 MI (descriptive): null {eflk2["null_mean"]:.4f}, D {eflk2["D"]:+.4f}, p {eflk2["p"]:.4f}'
+        f' | EFL lambda2: D {efl["D"]:+.4f}, p {efl["p"]:.4f}')
+    log(f'[{tag}] shape (wording only): {shape_reading(mi["D"], mi2["D"], eflk2["p"])}')
+    return {'tag': tag, 'res': res, 'call': verdict, 'shape': shape_reading(mi['D'], mi2['D'], eflk2['p']),
+            'lambda2_rule': lambda2_rule(l2['p']), 'thresholds': TH, 'R': R_B, 'seed': SEED}
 
 
 def main():
