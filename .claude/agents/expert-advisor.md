@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2092.
+the highest ID present is C2093.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -114,7 +114,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-30 13:21
+**Generated:** 2026-09-30 15:02
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -136,7 +136,7 @@ tables are quarantined — do not use for structural answers.
 
 # Current Status Brief (read first; overrides older documents)
 
-# Status Brief — what currently stands (v7.37, 2026-09-30)
+# Status Brief — what currently stands (v7.38, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -284,6 +284,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     names and meaningless text.
   - With interchangeable spellings, repeat statistics mostly go blind. Merges recover hidden units only in special
     cases (C2092).
+- **"The word-boundary rule is a cipher key":** no signature (C2093, PHASE_775; detection-only, no exclusion).
+  - Re-labelling tokens by rank within the previous ending gives a negative key gain on B, like every no-key control.
+  - The test misses some keyed ciphers, so this is not an exclusion.
+  - Descriptively, once glyph edges and folio composition are fixed, B's neighbour dependence among frequent tokens is
+    small, and within ending contexts it is at null.
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
   units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
   improvisation in a practised script at book scale. Excluding a rival is not evidence for the working
@@ -306,7 +311,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.37 | **Status:** characterization ACTIVE | **Constraints:** 1,899 live in the generated table (T0 2, T1 38, T2 1,689, T3 166, T4 4) | **Phases:** 774 | **Date:** 2026-09-30
+**Version:** 7.38 | **Status:** characterization ACTIVE | **Constraints:** 1,900 live in the generated table (T0 2, T1 38, T2 1,690, T3 166, T4 4) | **Phases:** 775 | **Date:** 2026-09-30
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -439,7 +444,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.37) | 1,899 (T0 2, T1 38, T2 1,689, T3 166, T4 4) |
+| Live constraints (generated table, v7.38) | 1,900 (T0 2, T1 38, T2 1,690, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -481,7 +486,7 @@ The manuscript comprises four structurally distinct systems sharing a **global m
 
 # Research Agenda (open questions and next tests)
 
-# Research Agenda — open questions and the tests that would move them (v7.37, 2026-09-30)
+# Research Agenda — open questions and the tests that would move them (v7.38, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -543,6 +548,12 @@ text made to look meaningful? And, if it carries content, what content?
      - excluded with one spelling per word, for plaintexts that repeat their phrases (C2091);
      - with two or more spellings per word, repeat statistics at B's size cannot see them (C2092). They remain open
        for the discriminator panel.
+   - A cipher keyed by the previous word's ending (PHASE_775, C2093): no signature by rank decoding. The test is
+     detection-only, so this is no exclusion.
+     - Descriptively, B's local order is carried by the glyph edges; within ending contexts, neighbours' ranks are
+       independent.
+     - Possible follow-up: rerun under a corpus-wide EF to test why B-fitted generators show more neighbour dependence
+       than B.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
@@ -2948,6 +2959,7 @@ C2089	**Words beside a drawing break inside a line are unresolved between mid-li
 C2090	**Zodiac nymph labels are not a full per-sign inventory (PHASE_772; measurement; pre-registered, lock-audited, calibrated on Currier A forms; partly unblinded).** ZL 3b, 290 labels on 10 signs. NO INVENTORY (lam* = 8, the top of the grid): the share of labels recurring in another sign (R) is 0.23 at N1 (e/i runs collapsed), 0.35 at N2 (maximal collapse) and 0.43 word-level, against the full-inventory 1st percentile of 0.64 at lam = 8. That bound allows 77% of copies visibly changed at N2, plus any e-run, minim, ch/sh or gallows variation. W (within-sign share of duplicate pairs) 0.20 against 0.097 exchangeable (N1, p 0.0109): PALETTE not called; all 13 within-sign pairs at N1 fall on the Gemini-Sagittarius pages. Not excluded: quarter inventories, or half inventories with a palette-like remainder (lam = 1); affixed, two-word or medially varied numerals; running counts; transcription error. Random Currier A words also give NO INVENTORY. The R channel (and partly W) was exposed before the lock by a smoke calibration built from the real labels (disclosed). No reading.	2	AZC, zodiac, labels, inventory, negative_knowledge, partly_unblinded, ZL, PHASE_772, C760, C2068, C2071
 C2091	**No within-line 5-token sequence recurs in Currier B's P-text (PHASE_774 T arm; measurement and negative knowledge; pre-registered, lock-audited, re-certified on unscored segments).** H track, P placement, 21,610 certain tokens in 2,299 lines: 0 repeated 5-token windows, against an exact edge-frame permutation null (EF: within-folio swaps among positions sharing zone and first/last glyph unit) with mean 0.04 (D5 -0.04, p 1.0): T NONE. B's value equals the usual value of B-fitted first-order no-message generators (0 in most runs, range 0-4). Scope: excludes a whole-word code with one spelling per word, written with a frequency-matched (deficit) word-to-token assignment (other assignments not tested), of any plaintext with P5 >= 8 (P5 = the plaintext's own repeated 5-word windows, counted in B's line skeleton). The rule 'P5 >= 8 => not NONE' was certified on 32/32 unscored segments (Mesue pharmacy 3; New Testaments in Latin, Italian, Spanish, German, English and Turkish 29). Design and audit runs add Codicillus recipes, SISMEL and Rupescissa alchemy, and Dante verse (segment 0). Does not exclude codes with two or more spellings per word, stem codes, letter-level ciphers, plaintexts with P5 < 8, lists, names or meaningless text; not evidence of meaninglessness. Extends C1790's counts to n = 5, within and across folios, with a null and a certified scope (populations differ: C1790 counted 2,420 lines, this run 2,299 P-text lines); C1790's 'unique specification' reading is not carried over.	2	B, repeats, phrase, codebook, cipher, negative_knowledge, PHASE_774, C1790, C2085, C2080
 C2092	**Which merges can expose hidden repeats under interchangeable spellings (PHASE_774 methods; controls, with B measured descriptively).** On ciphers with known plaintext laid into B's skeleton (k1 = chance that a true repeat of a hidden unit stays a visible repeat; k0 = chance collision): a MIDDLE merge recovers a stem code whose spelling varies only in its prefix and suffix frames (k1 0.67-0.72, k0 about 0.002). Exchange (Brown) clustering at 64-512 classes substantially recovered homophones in only one tested code (the 4-spelling Latin NT whole-token code, k1 0.84 against 0.25 unmerged), not the 2- or 4-spelling Latin recipe codes (0.50, 0.26) or the stem codes (<= 0.045); only about 800-1,400 types reach 3 occurrences in B-sized control corpora. None of the tested merges recovers a Naibbe-type letter cipher (best k1 0.41). Written in B's own marginals, a stem code of low-repetition text adds no more MIDDLE 5-window repeats than B-like first-order habits (e.g. Latin NT segment 7, X5 1.81). Calibration ratios transfer only at matched marginals. On B the MIDDLE arm is uninformative: B's MID5 EF null mean (56.2) is 2.1 times the maximum of B-like no-message runs (27.2) and above every section-fitted run (<= 44.7), so the pre-registered power assumption (<= about 27) fails; raw counts 85 against 56.2 (p 0.012), rarity-filtered 0 against 0.18, all 40 repeated MIDDLE 5-grams built from frequent MIDDLEs. Cause not identified (hypotheses: folio-level MIDDLE concentration; tighter edge-to-MIDDLE coupling than the generators have). EF, an exact within-folio edge-cell permutation null, replaces PHASE_768's non-converging N5j.	2	B, methods, homophony, merge, MIDDLE, null_model, PHASE_774, PHASE_768, C2080, C2091
+C2093	**Rank decoding: is Currier B's word-boundary rule a cipher key? (PHASE_775; methods and measurement; pre-registered; certification failed R1, so the test is detection-only; lock-audited).** Method: re-label each token by its frequency rank among the tokens that follow the same previous ending (K1 = last glyph unit, K2 = last two), take the mutual information of consecutive ranks within a line (top 20 ranks, the rest pooled) against a header-aware exact edge-frame null (EF fixes each position's first glyph, last two glyph units and zone, within folio x line type), minus the same with global ranks: the key gain G. Specificity: no PRESENT in 98 no-key controls (B-fitted first-order, section- and folio-fitted and non-stationary generators, shuffled-plaintext twins, plain word codes; max G_K1 +0.0005, G_K2 +0.0007). Sensitivity partial: missed 4 of 12 held-out keyed natural-language ciphers (contexts dominated by particular preceding words) and 4 of 4 keyed B-like habit streams; a keyed line-clustered stream without word order can also be PRESENT. On B both arms not PRESENT: G_K1 -0.0045 (p_G 0.99), G_K2 -0.0040 (0.98), within the no-key controls' range (-0.075 to +0.0007), which also contains keyed ciphers the test missed (Spanish NT segment 2 -0.0043; keyed habit streams -0.008 to +0.001): no exclusion claim; not evidence of meaninglessness. Post-hoc descriptives: beyond each position's first glyph, last two glyph units, zone and folio x line-type composition, neighbour dependence among B's 20 most frequent tokens is small (dS_K0 +0.0045 bits, z 2.9), below the phase's B-fitted first-order generators (+0.007 to +0.021); within ending contexts it is at null (dS_K1 -0.00001, below every no-message generator, +0.0005 to +0.008). Does not contradict C549/C2056/C2082 (measured against nulls that do not fix glyph edges); consistent with C2081.	2	B, methods, cipher, key, boundary_coupling, rank_decoding, null_model, PHASE_775, C1212, C1563, C2082, C1976, C2081
 
 ---
 

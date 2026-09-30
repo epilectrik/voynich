@@ -1,4 +1,4 @@
-# Research Agenda — open questions and the tests that would move them (v7.37, 2026-09-30)
+# Research Agenda — open questions and the tests that would move them (v7.38, 2026-09-30)
 
 **Companion to** `SYSTEM/STATUS_BRIEF.md` (what stands) and `SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` (review record).
 **Principle:** after ~760 phases on one corpus there is no untouched holdout. New channels are the only genuinely
@@ -60,6 +60,12 @@ text made to look meaningful? And, if it carries content, what content?
      - excluded with one spelling per word, for plaintexts that repeat their phrases (C2091);
      - with two or more spellings per word, repeat statistics at B's size cannot see them (C2092). They remain open
        for the discriminator panel.
+   - A cipher keyed by the previous word's ending (PHASE_775, C2093): no signature by rank decoding. The test is
+     detection-only, so this is no exclusion.
+     - Descriptively, B's local order is carried by the glyph edges; within ending contexts, neighbours' ranks are
+       independent.
+     - Possible follow-up: rerun under a corpus-wide EF to test why B-fitted generators show more neighbour dependence
+       than B.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**

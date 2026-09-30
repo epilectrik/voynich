@@ -4,6 +4,44 @@
 
 ---
 
+## Version 7.38 (2026-09-30) — PHASE_775: is the word-boundary rule a cipher key? (rank decoding; C2093)
+
+### Summary
+**Origin.** The human asked for a new, text-only test. The idea: if B's boundary rule, where a word's start is coupled
+to the previous word's ending (C1212/C1563, C2082), were the key of a cipher whose alphabet switches with that ending,
+then re-labelling each word by its frequency rank within its ending context would realign the hidden units. This is
+Friedman's alignment idea with the boundary rule as the key schedule.
+
+**Statistic.** The key gain G: consecutive-rank mutual information within ending contexts, minus that with global
+ranks, against a header-aware exact edge-frame null.
+
+**Design.** Every keyed cipher gave a positive gain, and every no-key control a negative one.
+
+**Certification on disjoint segments failed R1.** Rank decoding misses keyed ciphers whose contexts are dominated by
+particular preceding words, so the test became detection-only, with no re-tuning.
+
+**Lock audit.** 37 extra no-key plants, none PRESENT.
+
+**Result on B: not PRESENT on both arms** (G_K1 −0.0045, G_K2 −0.0040). This is within the no-key range, which also
+holds missed keyed ciphers, so there is **no exclusion claim.**
+
+**Post-hoc descriptive.** Once each position's glyph edges and folio composition are fixed:
+- neighbour dependence among B's 20 most frequent tokens is small (+0.0045 bits), below B-fitted first-order
+  generators;
+- within ending contexts it is at null.
+
+### Methods findings
+- **Detection-only tests are still worth running.** A failed sensitivity certification empties "not PRESENT" but
+  leaves a certified false-PRESENT side. That is how PHASE_774's M arm was handled too.
+- **Rank alignment across contexts fails when contexts are dominated by particular predecessors.** With B-like
+  alphabets, frequent units' tokens end in few glyphs.
+
+### Registry
+- New Tier-2 row: C2093 (methods and measurement).
+- Live: 1,900 (T0 2, T1 38, T2 1,690, T3 166, T4 4); 775 phases.
+
+---
+
 ## Version 7.37 (2026-09-30) — PHASE_773 stopped; PHASE_774: merged spellings and hidden phrase repeats (C2091, C2092)
 
 ### Summary

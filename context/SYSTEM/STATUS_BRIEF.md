@@ -1,4 +1,4 @@
-# Status Brief — what currently stands (v7.37, 2026-09-30)
+# Status Brief — what currently stands (v7.38, 2026-09-30)
 
 This page is the short, authoritative orientation to the current state of the model. Living documents written before
 the September 2026 review may still present withdrawn claims as structure; where they conflict with this brief, this
@@ -146,6 +146,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     names and meaningless text.
   - With interchangeable spellings, repeat statistics mostly go blind. Merges recover hidden units only in special
     cases (C2092).
+- **"The word-boundary rule is a cipher key":** no signature (C2093, PHASE_775; detection-only, no exclusion).
+  - Re-labelling tokens by rank within the previous ending gives a negative key gain on B, like every no-key control.
+  - The test misses some keyed ciphers, so this is not an exclusion.
+  - Descriptively, once glyph edges and folio composition are fixed, B's neighbour dependence among frequent tokens is
+    small, and within ending contexts it is at null.
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
   units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
   improvisation in a practised script at book scale. Excluding a rival is not evidence for the working
