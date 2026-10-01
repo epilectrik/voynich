@@ -43,7 +43,7 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
           f'{P757}/scripts/naibbe_harness.py', f'{P757}/scripts/panel_stats.py', f'{P757}/results/noise_model.json',
           f'{P757}/results/controls_raw.npz', 'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json')
 LOCKED = ('PRE_REGISTRATION.md', 'scripts/grille778.py', 'scripts/gates778.py', 'scripts/fit778.py',
-          'scripts/prelock_controls778.py', 'scripts/run778.py', 'results/gates778.json', 'results/b_surface778.json',
+          'scripts/fit_extend778.py', 'scripts/prelock_controls778.py', 'scripts/run778.py', 'results/gates778.json', 'results/b_surface778.json',
           'results/fit778.json', 'results/prelock_controls778.json', 'results/input_checksums.json')
 NOISES = ['V0', 'V1']
 N_MEMBERS, N_CTRL, N_REF, N_NEAR = 1000, 1000, 50, 200
