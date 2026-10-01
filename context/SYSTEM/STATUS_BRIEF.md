@@ -157,6 +157,14 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - The test misses some keyed ciphers, so this is not an exclusion.
   - Descriptively, once glyph edges and folio composition are fixed, B's neighbour dependence among frequent tokens is
     small, and within ending contexts it is at null.
+- **"One glyph per word is the message, the rest rule-built filler":** no payload at the word start (C2095,
+  PHASE_777).
+  - Repeated 7-runs of the first or second glyph unit within lines, under an exact null that keeps the junction
+    coupling and the two-unit routing and scrambles the start symbol: second unit z7 1.6 (clean NONE), first unit 3.3
+    (the pre-registered residual band, not a payload call, source unidentified); every payload control gave ≥ 18.
+  - Excluded at the second unit for every tested plaintext, also with up to 10% of symbols corrupted; at the first unit
+    for noise-free payloads only. Not excluded: subsets of words, several positions, short-token carriers, units larger
+    than letters, homophonic spellings, end-of-word positions (descriptive only).
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
   units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
   improvisation in a practised script at book scale. Excluding a rival is not evidence for the working

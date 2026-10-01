@@ -149,7 +149,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2094.
+the highest ID present is C2095.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -241,7 +241,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-30 16:41
+**Generated:** 2026-09-30 19:01
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -256,7 +256,7 @@ tables are quarantined — do not use for structural answers.
 6. All Constraints
 7. All Explanatory Fits
 8. Tier 3-4 Interpretations
-9. Session Methodology Notes (60 feedback rules)
+9. Session Methodology Notes (62 feedback rules)
 10. Structural Contract Signatures (6 contracts)
 
 ---
@@ -422,6 +422,14 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - The test misses some keyed ciphers, so this is not an exclusion.
   - Descriptively, once glyph edges and folio composition are fixed, B's neighbour dependence among frequent tokens is
     small, and within ending contexts it is at null.
+- **"One glyph per word is the message, the rest rule-built filler":** no payload at the word start (C2095,
+  PHASE_777).
+  - Repeated 7-runs of the first or second glyph unit within lines, under an exact null that keeps the junction
+    coupling and the two-unit routing and scrambles the start symbol: second unit z7 1.6 (clean NONE), first unit 3.3
+    (the pre-registered residual band, not a payload call, source unidentified); every payload control gave ≥ 18.
+  - Excluded at the second unit for every tested plaintext, also with up to 10% of symbols corrupted; at the first unit
+    for noise-free payloads only. Not excluded: subsets of words, several positions, short-token carriers, units larger
+    than letters, homophonic spellings, end-of-word positions (descriptive only).
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
   units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
   improvisation in a practised script at book scale. Excluding a rival is not evidence for the working
@@ -444,7 +452,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.39 | **Status:** characterization ACTIVE | **Constraints:** 1,901 live in the generated table (T0 2, T1 38, T2 1,691, T3 166, T4 4) | **Phases:** 776 | **Date:** 2026-09-30
+**Version:** 7.40 | **Status:** characterization ACTIVE | **Constraints:** 1,902 live in the generated table (T0 2, T1 38, T2 1,692, T3 166, T4 4) | **Phases:** 777 | **Date:** 2026-09-30
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -577,7 +585,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.39) | 1,901 (T0 2, T1 38, T2 1,691, T3 166, T4 4) |
+| Live constraints (generated table, v7.40) | 1,902 (T0 2, T1 38, T2 1,692, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -687,6 +695,12 @@ text made to look meaningful? And, if it carries content, what content?
        independent.
      - Possible follow-up: rerun under a corpus-wide EF to test why B-fitted generators show more neighbour dependence
        than B.
+   - One letter per word at the first or second glyph unit, the rest rule-built filler (PHASE_777, C2095): NO
+     START-POSITION PAYLOAD. Second unit clean NONE (excluded for every tested plaintext, up to 10% corruption); first
+     unit in the pre-registered residual band (noise-free payloads excluded only).
+     - Open: the word end (needs a null keyed on the following token's ending; EF-L keeps only its first unit);
+       payloads in a subset of words or over several positions; the source of the F1 residual (no-payload habits and
+       corrupted payloads both land there).
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
@@ -3095,6 +3109,7 @@ C2091	**No within-line 5-token sequence recurs in Currier B's P-text (PHASE_774 
 C2092	**Which merges can expose hidden repeats under interchangeable spellings (PHASE_774 methods; controls, with B measured descriptively).** On ciphers with known plaintext laid into B's skeleton (k1 = chance that a true repeat of a hidden unit stays a visible repeat; k0 = chance collision): a MIDDLE merge recovers a stem code whose spelling varies only in its prefix and suffix frames (k1 0.67-0.72, k0 about 0.002). Exchange (Brown) clustering at 64-512 classes substantially recovered homophones in only one tested code (the 4-spelling Latin NT whole-token code, k1 0.84 against 0.25 unmerged), not the 2- or 4-spelling Latin recipe codes (0.50, 0.26) or the stem codes (<= 0.045); only about 800-1,400 types reach 3 occurrences in B-sized control corpora. None of the tested merges recovers a Naibbe-type letter cipher (best k1 0.41). Written in B's own marginals, a stem code of low-repetition text adds no more MIDDLE 5-window repeats than B-like first-order habits (e.g. Latin NT segment 7, X5 1.81). Calibration ratios transfer only at matched marginals. On B the MIDDLE arm is uninformative: B's MID5 EF null mean (56.2) is 2.1 times the maximum of B-like no-message runs (27.2) and above every section-fitted run (<= 44.7), so the pre-registered power assumption (<= about 27) fails; raw counts 85 against 56.2 (p 0.012), rarity-filtered 0 against 0.18, all 40 repeated MIDDLE 5-grams built from frequent MIDDLEs. Cause not identified (hypotheses: folio-level MIDDLE concentration; tighter edge-to-MIDDLE coupling than the generators have). EF, an exact within-folio edge-cell permutation null, replaces PHASE_768's non-converging N5j.	2	B, methods, homophony, merge, MIDDLE, null_model, PHASE_774, PHASE_768, C2080, C2091
 C2093	**Rank decoding: is Currier B's word-boundary rule a cipher key? (PHASE_775; methods and measurement; pre-registered; certification failed R1, so the test is detection-only; lock-audited).** Method: re-label each token by its frequency rank among the tokens that follow the same previous ending (K1 = last glyph unit, K2 = last two), take the mutual information of consecutive ranks within a line (top 20 ranks, the rest pooled) against a header-aware exact edge-frame null (EF fixes each position's first glyph, last two glyph units and zone, within folio x line type), minus the same with global ranks: the key gain G. Specificity: no PRESENT in 98 no-key controls (B-fitted first-order, section- and folio-fitted and non-stationary generators, shuffled-plaintext twins, plain word codes; max G_K1 +0.0005, G_K2 +0.0007). Sensitivity partial: missed 4 of 12 held-out keyed natural-language ciphers (contexts dominated by particular preceding words) and 4 of 4 keyed B-like habit streams; a keyed line-clustered stream without word order can also be PRESENT. On B both arms not PRESENT: G_K1 -0.0045 (p_G 0.99), G_K2 -0.0040 (0.98), within the no-key controls' range (-0.075 to +0.0007), which also contains keyed ciphers the test missed (Spanish NT segment 2 -0.0043; keyed habit streams -0.008 to +0.001): no exclusion claim; not evidence of meaninglessness. Post-hoc descriptives: beyond each position's first glyph, last two glyph units, zone and folio x line-type composition, neighbour dependence among B's 20 most frequent tokens is small (dS_K0 +0.0045 bits, z 2.9), below the phase's B-fitted first-order generators (+0.007 to +0.021); within ending contexts it is at null (dS_K1 -0.00001, below every no-message generator, +0.0005 to +0.008). Does not contradict C549/C2056/C2082 (measured against nulls that do not fix glyph edges); consistent with C2081.	2	B, methods, cipher, key, boundary_coupling, rank_decoding, null_model, PHASE_775, C1212, C1563, C2082, C1976, C2081
 C2094	**Currier B's class-pair dependence reduces to its word-boundary rules plus folio x line-type composition (PHASE_776; measurement; pre-registered, lock-audited, certified on fresh seeds).** Statistic: plug-in I(class_i; class_{i+1}) over bridged within-line pairs (C2023's statistic), 49 classes, P-text skeleton (21,610 tokens). Null EF-K2: exact permutation within folio x line type among positions sharing zone, first glyph unit, last two glyph units and the preceding token's last two glyph units (junction coupling C1212/C1563 and two-unit ending routing C2082 both preserved). On B: D +0.0040 bits, p 0.062 -> ROUTING-REDUCIBLE; residual at most about 0.009 bits (D + 2 sd), below the weakest of 35 class or token chains fitted to B's adjacent pairs (+0.016 to +0.031, all p <= 0.003); edge-only chains gave -0.003 to +0.004. Under plain EF (own edges fixed, routing not) the excess is +0.019 (p 0.001): the class dependence beyond own edges is the two-unit ending routing. lambda2 (C2061's statistic) on this population: obs 0.2057, EF-K2 null 0.2032 (p 0.27), shuffle floor 0.1225; EF-K2 reproduces 97% of the excess over the floor (plain EF 86%); lambda3 obs 0.1344, null 0.1273 (p 0.17). Per the pre-registered lambda2 rule (power about 0.68), C2061/C2067 are annotated 'not shown to be sequence beyond boundary rules' (that reading Tier 3; their measurements against the 5-gram stand). Descriptives at nominal p < 0.05 (50-state MI with UN 0.013, EFL-K2 MI 0.041, EFL lambda2 0.006) are uncorrected and not read; the 50-state signature matches the audit's UN-placement plant, not class order. Scope: P-text, bridged 49-class adjacent pairs; not tested: narrow token-level effects (C549, C2056), longer boundary keys (audit plants D +0.006 to +0.010), within-line residuals beyond two-unit routing. Not evidence of meaninglessness.	2	B, class, sequence, boundary_coupling, routing, null_model, eigenstructure, negative_knowledge, PHASE_776, C2061, C2067, C2023, C2082, C1212, C1563, C2091, C2093
+C2095	**No one-letter-per-word payload at Currier B's first or second glyph unit: second unit NONE, first unit residual band (PHASE_777; negative knowledge, bounded; pre-registered, certified on fresh seeds, lock-audited with a confirmation pass; locked at phase777-lock).** Construction tested: each word carries one plaintext letter at a fixed glyph unit and the rest of the word is rule-built filler; the nulls of PHASE_774-776 kept each word's edge glyph units fixed, so a payload there was invisible to them. Population: P-text skeleton, 21,610 certain tokens, 2,299 lines, 80 folios. Channels: F1 first glyph unit (28 symbols) and F2 second (37), confirmatory; L1 last, L2 second-to-last and GAL first gallows, descriptive. Statistic RPT7: within-line 7-token windows whose channel-symbol sequence recurs elsewhere in the P-text; z7 against EF-F, an exact permutation within folio x line type among positions sharing zone, own last two glyph units and the preceding token's last two units (junction coupling C1212/C1563 and two-unit ending routing C2082 preserved). Movable tokens on B 58.7%; effective (cell holds >= 2 distinct symbols) F1 53.2%, F2 52.0%; tokens of <= 2 units (10.7%) have their F1 symbol fixed by construction, <= 3 units (29.2%) their F2 symbol. Thresholds from design controls (R 300): NEG = max z7 over 44 no-payload runs (B-fitted edge and habit chains, M1, section-fitted chains, shuffled-letter twins, payloads on the other channel); POS = min over 5 payload texts (Mesue, pharmacy); tau the midpoint: F1 2.85 / 18.2 / 10.54, F2 3.13 / 17.8 / 10.46. Calls: PRESENT if p <= 0.005 and z7 >= tau; NONE if z7 <= NEG or p > 0.05; otherwise NOT PRESENT (residual band), not a payload call. Certification on fresh seeds (one new text and the five design texts at an unused letter block): 0 of 48 no-payload arm calls PRESENT, 1 in the residual band (habit3b, F2 3.98); 12 of 12 payload calls PRESENT. On B (R 1,000): F2 RPT7 178 vs null 149.4 (sd 17.8), z7 1.60, p 0.067 -> NONE; F1 177 vs 122.9 (sd 16.3), z7 3.31, p 0.003 -> NOT PRESENT (residual). The F1 value lies where unmodelled no-payload habits, heavily corrupted payloads and F2-payload leakage (certification 3.3-3.7; excluded here by F2's NONE) all fall; the test does not separate the first two and the residual's source is not identified. The refined-null gate applies only to a PRESENT. Descriptive (nominal p, uncorrected, not read): F1 RPT5 z 5.54 (p 0.001, resolution floor; shares windows with RPT7; no locked threshold), F2 RPT5 2.06 (p 0.022); F1 under EFq (line-position quintile keyed; movable 0.388) z 1.11 (p 0.15), under EFpar (paragraph x line-type groups; 0.317) z 2.04 (p 0.027) -- fewer symbols move, so the fall does not decompose the residual; L1 z7 2.27 (p 0.012), L2 1.94 (p 0.040), GAL 0.11: NONE under their design thresholds, not payload evidence either way (EF-L does not keep C2082 routing; B-fitted chains reach L1 z7 2-4). Composition: line-entropy reduction against within-folio shuffles F1 2.0% (z -7.7), F2 1.6% (z -8.6), mildly line-homogeneous start symbols (cf. C1214), against the audited line palettes that read PRESENT (>= 14%) and the payload controls (-3.0 to -0.3%); paragraph chi2/df 1.36 / 1.33 against about 7 for paragraph palettes at PRESENT level; no inference drawn. Scope: at F2, one letter per word with the frequency-rank letter-to-symbol map is excluded for every plaintext run as an F2 payload under the locked thresholds (Latin recipe, Latin NT, Mesue, Dante, SISMEL Testamentum, Italian NT; and, in the v1 certification under the same thresholds, the German, Spanish, English and Turkish NTs and Rupescissa; all >= 18), also with up to 10% of channel symbols replaced at random (Mesue at 10% reads F2 z7 7.3, above NEG). At F1, only noise-free payloads of those plaintexts are excluded; corrupted payloads are not. Not excluded: payloads in a subset of words or spread over several positions; payloads carried only by tokens whose channel symbol the null fixes; units larger than letters; homophonic spellings (only random corruption was tested); letter-to-symbol maps not matched to B's symbol frequencies; plaintexts with less 7-letter repetition than Mesue; end-of-word and gallows positions (descriptive only; L1 is 45% y). The no-payload generators are first-order (a false-positive concern only). Not evidence of meaninglessness.	2	B, glyph, cipher, payload, negative_knowledge, null_model, boundary_coupling, routing, composition, PHASE_777, C2082, C1212, C1563, C1214, C2091, C2093, C2094
 
 ---
 
@@ -6425,6 +6440,26 @@ Testing "is there a loop/return" via recurrence P(state_t == state_{t−k}) agai
 
 ---
 
+## exact-null-must-fix-every-boundary-rule
+
+*"An exact permutation null for \"structure beyond the boundary rules\" must key its cells on every boundary rule the generators use (own edges AND the preceding ending); under a strict null prefer the omnibus statistic; positive class-pair dependence is not order"*
+
+**The rule.** When testing "is there sequence structure beyond B's spelling rules", the null must fix, per slot, both
+the token's own edges and the preceding token's ending. Fixing own edges alone (EF) leaves C2082's routing in play.
+
+**Why.** In PHASE_776 v1, an edge-only chain (tokens drawn from B's continuations by the previous two-unit ending) read
+positive under EF at p 0.003, failing certification. EF-K2 (cells also keyed by the preceding token's last two glyph
+units, which is invariant under EF) was exact for it: 10/10 edge chains reducible.
+
+**Three lessons.**
+- **Prefer the omnibus statistic under a strict null.** λ2 (C2061's statistic) kept about half its power under EF-K2
+  (5/12 class chains at p ≤ 0.005); the class-pair MI kept all of it (z 9–13). Keep the historical statistic as a
+  descriptive with its own pre-registered rule.
+
+[…trimmed — full note: memory/feedback_exact_null_must_fix_every_boundary_rule.md]
+
+---
+
 ## feedback-expert-audit-prevented-post-hoc-registration
 
 *PHASE_730 within-A action-form — expert pre-registration audit caught six design flaws before running a post-hoc o-selectivity test that would have framework-echo-registered; B-side mirror + terminal-atom-matched null then independently killed the mechanism story*
@@ -6710,6 +6745,24 @@ When a finding fits the project's existing interpretive framework cleanly, the u
 After four traps in one session (the three below + f66r as glossary, C1993 retracted), the deeper diagnostic crazy-expert formalized: **at this stage of the project (1995+ constraints, six tiers, mature operational vocabulary), framework-fit is evidence of confirmation bias, not confirmation.** When a finding fits existing tier-2 operational glosses (C1195, C1394, C1300, etc.) and uses their interpretive language, **treat the existing fit as a prior toward null** — the operational vocabulary itself can produce the appearance of signal in the data by giving new findings a pla
 
 […trimmed — full note: memory/feedback_operational_story_first_trap.md]
+
+---
+
+## palette-confound-on-edge-channel-repeats
+
+*"Exact edge-fixing nulls leave the edge glyphs untested; a one-position repeat statistic must be scored against no-payload PALETTE plants (paragraph, line, position) and thresholds from generators, because p carries no specificity against B-like chains (PHASE_777)"*
+
+**The rule.** A null that fixes each word's edge glyphs (EF, EF-K2 of PHASE_774–776) preserves anything written in
+those edges. To test an edge position, key the cell on the *other* edge and the neighbour's facing edge (EF-F: own
+ending + preceding ending; EF-L: own start + following start) so the boundary rules survive and the tested edge
+scrambles. Then three things bite:
+
+- **p carries no specificity.** B-like first-order chains break within-cell exchangeability: 3 of 96 no-payload
+  F-arm calls had p ≤ 0.005, 19 of 72 on L1. Thresholds calibrated on no-payload generators (NEG/POS/τ) carry the
+  call, and a residual flag on the real corpus must be pre-registered as the expected outcome, not weak evidence.
+- **Palettes read as payload.** No-payload plants whose start symbols come from a per-paragraph, per-line or
+
+[…trimmed — full note: memory/feedback_palette_confound_on_edge_channel_repeats.md]
 
 ---
 

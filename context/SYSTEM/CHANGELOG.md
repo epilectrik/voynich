@@ -4,6 +4,54 @@
 
 ---
 
+## Version 7.40 (2026-09-30) — PHASE_777: is one glyph position per word a message channel? (C2095)
+
+### Summary
+**Question.** The human's idea: "maybe one character in a token is important and the rest is generated from rules".
+Each word carries one plaintext letter at a fixed glyph unit, the rest being rule-built filler. Every null of
+PHASE_774–776 fixed each word's edge glyph units, so a payload there was never tested.
+
+**Process.**
+- Channels F1/F2 (first/second glyph unit; confirmatory) and L1/L2/GAL (descriptive). Statistic: repeated 7-runs of
+  the channel symbols within lines (z7) under EF-F, an exact null keyed on own ending and preceding ending, so the
+  junction coupling and the two-unit routing (C2082) survive and the start symbol scrambles.
+- Thresholds from no-payload generators and payload controls (τ F1 10.54, F2 10.46; every payload ≥ 18, Mesue the
+  weakest; no-payload maximum 2.85 / 3.13).
+- v1 (four arms) failed its fresh certification (INDETERMINATE count; L1 ↔ L2 leakage); v2 (F1/F2, two-way calls)
+  passed: 0 of 48 no-payload arm calls PRESENT, 12 of 12 payloads PRESENT. No threshold changed.
+- The lean-expert lock audit showed that no-payload *palette* plants (per-paragraph, per-line or per-position start
+  palettes) read PRESENT under EF-F; refined nulls (EFq, EFpar) and a line-entropy condition became the gate for a
+  PRESENT. Payload power survives 5% channel corruption, not 10% (pharmacy text). Locked at `phase777-lock`.
+
+**Result: NO START-POSITION PAYLOAD (C2095).** F2 z7 1.60 (p 0.067), a clean NONE; F1 z7 3.31 (p 0.003), the
+pre-registered residual band, not a payload call, its source unidentified (no-payload chains land there: 1 of 48 fresh
+certification calls). L1/L2/GAL NONE. B's start symbols are mildly line-homogeneous (line-entropy reduction 2.0% /
+1.6%; palettes that read PRESENT ≥ 14%).
+
+**Scope.** At the second glyph unit, one letter per word with a frequency-matched map is excluded for every tested
+plaintext (Latin recipe, pharmacy, alchemy and NT; Italian verse and NT; German, Spanish, English and Turkish NTs),
+also with up to 10% of channel symbols corrupted. At the first unit, only noise-free payloads are excluded. Not
+excluded: payloads in a subset of words or over several positions, short-token carriers, units larger than letters,
+homophonic spellings, non-frequency maps, end-of-word positions (descriptive only).
+
+**Consequence.** With C2091/C2093/C2094 (interiors and classes carry no sequence beyond the boundary rules), the
+"one glyph is the message, the rest is noise" form of the cipher reading is closed at the word start.
+
+### Methods findings
+- **Exact edge nulls leave the edges untested.** Test an edge with a null keyed on the other edge and the neighbour's
+  facing edge; report the effective movable share per channel (short tokens stay fixed).
+- **p carries no specificity against B-like chains.** Thresholds from no-payload generators do; a residual band on the
+  real corpus must be pre-registered as an expected outcome whose source the test does not identify.
+- **Palettes are the confound of a repeat statistic on a start channel.** Paragraph and position palettes are removed
+  by refined nulls; line palettes need a composition figure (within-line entropy against a within-folio shuffle).
+- **End-of-word channels need a routing-preserving null of their own** (EF-L keeps only the next first unit).
+
+### Registry
+- New Tier-2 row: C2095 (negative knowledge, bounded).
+- Live: 1,902 (T0 2, T1 38, T2 1,692, T3 166, T4 4); 777 phases.
+
+---
+
 ## Version 7.39 (2026-09-30) — PHASE_776: the class-transition eigenstructure reduces to the boundary rules (C2094)
 
 ### Summary

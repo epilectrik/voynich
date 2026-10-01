@@ -66,6 +66,12 @@ text made to look meaningful? And, if it carries content, what content?
        independent.
      - Possible follow-up: rerun under a corpus-wide EF to test why B-fitted generators show more neighbour dependence
        than B.
+   - One letter per word at the first or second glyph unit, the rest rule-built filler (PHASE_777, C2095): NO
+     START-POSITION PAYLOAD. Second unit clean NONE (excluded for every tested plaintext, up to 10% corruption); first
+     unit in the pre-registered residual band (noise-free payloads excluded only).
+     - Open: the word end (needs a null keyed on the following token's ending; EF-L keeps only its first unit);
+       payloads in a subset of words or over several positions; the source of the F1 residual (no-payload habits and
+       corrupted payloads both land there).
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
