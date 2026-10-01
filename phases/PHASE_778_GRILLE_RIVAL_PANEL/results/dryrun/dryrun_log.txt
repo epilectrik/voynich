@@ -1,0 +1,10 @@
+[dry] DRY/random/d5/reset/keep/V0 m0 D2 +0.075 D3 -0.432 D4 +5.371 D5 +3.552 D6 +0.544 empty_redraws 0
+[dry] DRY/random/d5/reset/keep/V0 m1 D2 +0.073 D3 -0.574 D4 +5.333 D5 +3.662 D6 +0.516 empty_redraws 0
+[dry] DRY/random/d5/reset/keep/V0 m2 D2 +0.080 D3 -0.487 D4 +5.493 D5 +3.545 D6 +0.520 empty_redraws 0
+[dry] DRY/chain/d2/reset/keep/V1 m0 D2 +0.033 D3 -0.487 D4 +2.565 D5 +1.723 D6 +0.644 empty_redraws 0
+[dry] DRY/chain/d2/reset/keep/V1 m1 D2 +0.019 D3 -1.159 D4 +2.833 D5 +1.716 D6 +0.539 empty_redraws 0
+[dry] DRY/chain/d2/reset/keep/V1 m2 D2 +0.027 D3 +0.492 D4 +3.045 D5 +1.753 D6 +0.508 empty_redraws 0
+[dry] evaluate DRY/random/d5/reset/keep/V0: outside ['D2', 'D3', 'D4', 'D5', 'D6'] excludes True (N=3, illustrative only)
+[dry] evaluate DRY/chain/d2/reset/keep/V1: outside ['D2', 'D5', 'D6'] excludes True (N=3, illustrative only)
+[dry] M1 member D2 +0.007 D3 +0.307 D4 -0.095 D5 +0.037 D6 +0.042
+[dry] done
