@@ -385,7 +385,24 @@ def surface(lines, folios, b=None, types_b=None):
 
 SCALE = {'types': 500.0, 'hapax': 0.05, 'zipf': 0.10, 'mean_len': 0.30, 'jac_adj': 0.02, 'jac_dist': 0.02,
          'js_len': 0.02, 'js_first': 0.02, 'js_last': 0.02}
-BANDS = ((1.0, 'FITTED'), (2.0, 'PARTIAL'), (float('inf'), 'UNFITTED'))
+DECLARED_FITTED = 1.0          # the declared tolerance; C2 (pre-lock control) showed B's own resampler cannot reach it
+PARTIAL_BOUND = 2.0            # declared tolerance
+_FITTED_BOUND = None
+
+
+def fitted_bound():
+    """FITTED bar calibrated on the positive controls (confirmation-pass edit 1): the larger of the M1 and G-EDGE
+    nine-statistic distances recorded by prelock_controls778.py (C2), unrounded. Falls back to the declared 1.0 if
+    the control file is absent."""
+    global _FITTED_BOUND
+    if _FITTED_BOUND is None:
+        fn = OUT / 'prelock_controls778.json'
+        if fn.exists():
+            md = json.load(open(fn, encoding='utf-8'))['C2']['mean_distance']
+            _FITTED_BOUND = float(max(md.values()))
+        else:
+            _FITTED_BOUND = DECLARED_FITTED
+    return _FITTED_BOUND
 
 
 def deviations(s, b):
@@ -396,8 +413,9 @@ def distance(s, b):
     return float(np.mean(list(deviations(s, b).values())))
 
 
-def band(dist):
-    return next(name for bound, name in BANDS if dist <= bound)
+def band(dist, bound=None):
+    b = fitted_bound() if bound is None else bound
+    return 'FITTED' if dist <= b else ('PARTIAL' if dist <= PARTIAL_BOUND else 'UNFITTED')
 
 
 def b_surface(sk):

@@ -1,6 +1,6 @@
 # PHASE_778 — Rival-generator panel II: the table-and-grille method
 
-**Status: DESIGN (v2 after the lean-expert design audit); fit stage running; not locked.**
+**Status: DESIGN v3 (design audit + confirmation pass incorporated; fit, extension and pre-lock controls run; per-variant banding running); not yet locked.**
 - **Question:** can the table-and-grille method (Rugg 2004; Hyde & Rugg 2014; Rugg & Taylor 2016; Zandbergen 2021),
   with its composition fitted to Currier B, produce an ensemble containing B on the PHASE_757 discriminators D2–D6?
 - **Why now:** the strategic review's rival panel (Naibbe done, C2080 EXCLUDED; Timm earlier, C2077 EXCLUDED); the

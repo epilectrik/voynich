@@ -1,9 +1,9 @@
 # PHASE_778 — Rival-generator panel II: the table-and-grille method (pre-registration)
 
-**Status: DRAFT v2 after the lean-expert design audit (LOCKABLE WITH EDITS; all fifteen edits and the five pre-lock
-controls incorporated below). The fit stage (with its declared extension) and the pre-lock controls have run; C2
-failed as declared and a band recalibration is proposed in its results. Pending before the lock: the confirmation
-pass's ruling on that recalibration.** No discriminator has been computed on
+**Status: v3, for lock.** The lean-expert design audit (LOCKABLE WITH EDITS, fifteen edits) and its confirmation
+pass (LOCKABLE once eight further edits are in; no further audit pass needed) are both incorporated. The fit stage
+with its declared extension, the pre-lock controls C1–C5 and the per-variant banding have run; C2 failed as declared
+and the FITTED bar is calibrated on that control as ruled. No discriminator has been computed on
 any grille corpus beyond the dry run's illustrative members and the pre-lock controls declared here.
 
 **Origin.** `SYSTEM/RESEARCH_AGENDA.md` Tier A #2 and `STRATEGIC_REVIEW_2026-09-27` §3 #5: the rival-generator panel,
@@ -41,8 +41,10 @@ producing the text"):
   table is about forty rows deep, that's usually more than enough to generate a page of text"), G column sets across.
   "The easiest way to fill the table in is one category at a time"; "Their relative frequencies are similar to the
   frequencies in Voynichese"; "Some of the cells are empty. That's deliberate."
-- **Grille.** A card with three holes, one per column, at different heights: row offsets (0, o1, o2) with the three
-  heights distinct (`distinct`: o1, o2 ∈ {1, …, 4}, o1 ≠ o2; 12 grilles within a five-row window).
+- **Grille.** A card with three holes, one per column, at different heights: row offsets (0, o1, o2). PUBLISHED reads
+  Hyde & Rugg's "different heights" as three distinct heights (`distinct`: o1, o2 ∈ {1, …, 4}, o1 ≠ o2; 12 grilles
+  within a five-row window). Grilles with exactly two holes level, and the same-height grille, belong to the `all` and
+  `same` sets and are EXTENDED.
 - **Movement.** "You now need to move the grille across the table to produce the next word. However, you can't simply
   move it three cells to the right horizontally." "So, for example, you might move three cells across and one row up
   to produce the next word, and then move three more cells across and two rows down"; "The key thing is not to have
@@ -145,11 +147,26 @@ each statistic's raw deviation; a fit whose distance owes more than half its val
 | Jensen–Shannon divergence of the first-glyph-unit distribution | 0 | 0.02 bits |
 | Jensen–Shannon divergence of the last-glyph-unit distribution | 0 | 0.02 bits |
 
-**Fit bands (declared tolerances, not calibrated bars):** distance ≤ 1.0 FITTED; 1.0–2.0 PARTIAL; > 2.0 UNFITTED.
-The M1 and G-EDGE ensembles must fall in FITTED (control C2). UNFITTED families are run and reported but do not count
-toward a panel EXCLUDED. If no family in a tier is FITTED or PARTIAL, that tier is recorded as "EXCLUDED ON SURFACE
-(no declared configuration reaches B's composition)", a separate and weaker category than panel exclusion. The
-attested-word fraction is descriptive.
+**Fit bands.** FITTED: fresh distance (10 seeds) ≤ 1.165, the larger of the two positive controls' distances on the
+same nine statistics and scales (M1 1.165; G-EDGE 0.933; control C2). **This bar is calibrated on the M1 control.**
+It replaces the declared tolerance of 1.0, which C2 failed: no with-replacement resampler of B reaches B's hapax
+share or type count. The bar was set after the grille fit distances were seen, and was not rounded for that reason
+(the code uses the control's unrounded value, 1.1647). PARTIAL ≤ 2.0 remains a declared tolerance; > 2.0 UNFITTED.
+Tier labels are reported under both bars (declared 1.0 and calibrated 1.165). Matching M1's total distance is not
+the same as matching where it matters: M1 fails on the frequency tail (hapax share, type count), the grille on the
+Zipf slope, the first-glyph-unit divergence and the adjacent-folio Jaccard; a composition-attribution table (below)
+answers "excluded because of composition" descriptively, and cannot carry a D2 shortfall of 0.2 bits (a 0.027-bit
+first-glyph divergence does not cap a shuffle-corrected mutual information near 0.001). **Bands are assigned per
+variant** (`scripts/band778.py` → `results/variant_bands778.json`): configurations are selected per walk group and
+shared across row arrangements, but with small vertical moves and the line reset the walk visits only part of the
+rows, so freq-, length- and chain-ordered rows place different content in the visited cells, and V1 noise edits
+tokens; each variant is banded on its own fresh 10-seed distance with its own row arrangement and noise level.
+UNFITTED variants are run and reported but do not count toward a panel EXCLUDED. If no variant in a tier is FITTED or
+PARTIAL, that tier is recorded as "EXCLUDED ON SURFACE (no declared configuration reaches B's composition)", a
+separate and weaker category than panel exclusion. The attested-word fraction is descriptive. **Extension-selected
+groups:** the selection follows the declared N_FIT rule; where the kept base selection has a slightly higher fresh
+distance than the extension's candidate (one group, 1.18 against 1.15), the candidate's fresh distance is recorded as
+a descriptive value and the selection is not switched.
 
 **Grid extension (`scripts/fit_extend778.py`; declared after the base fit, before the lock, composition only).** The
 base fit left every group short on hapax share and type count (a device re-reads its cells). To give the device its
@@ -233,6 +250,15 @@ Consequence under the decision rules: no tier has a FITTED variant, so the stron
   pooled N = 2,000 ensemble (outside = beyond the pooled [min, max] and |z| > z\*). Both runs are reported. For every
   variant and discriminator the report gives B's z and B's rank among members. Any tier verdict that rests on a
   variant with B's |z| between z\* and 4.0 on a counted outside discriminator is labelled BORDERLINE.
+- **D5 NaN rule.** The numerical warning in D5's held-out gain was classified before the lock: it arises when a
+  training fold has no hapax (Good–Turing UNK mass n1/N = 0) and a held-out token is unseen, so the held-out event has
+  zero model probability under both models and that member's D5 is undefined (not a 0·log 0 term). A variant's D5
+  envelope uses non-NaN members only if the NaN rate is ≤ 5%; above 5%, D5 is dropped for that variant, k falls by one
+  and z\* is recomputed. NaN counts are reported for every variant. Members are never imputed.
+- **Composition-attribution table (descriptive, no role in the verdict).** For each excluded variant, its outside
+  discriminators are listed beside the deviations of the composition statistics most closely tied to them, with the
+  mapping fixed now: first-glyph-unit divergence ↔ D2; Zipf slope, type count and hapax share ↔ D3, D4;
+  adjacent- and distant-folio Jaccard ↔ D4.
 - **Descriptives (no verdict role):** types, hapax fraction, Zipf slope, mean length, duplicate lines, max identical
   run, e-run lag-1, max qok window; the number of repeated within-line 5-token windows (C2091's statistic; B's known
   value 0, no new computation on B); the share of generated tokens that combine a whole-word root (one the morphology
@@ -250,9 +276,11 @@ PHASE_757's control ensembles only)
 - **C3 column-lock control.** Tokens drawn i.i.d. from the best PUBLISHED fit's column-set vocabulary at each token's
   column set under the reset line rule (no walk, no memory), 20 corpora; D5 and D6 reported; the D5/D6 merge for
   reset variants applies if the control's mean D5 lies above PHASE_757's M1 ensemble 99th percentile.
-- **C4 near-fit sensitivity (post-lock stage `nearfit`).** For each PUBLISHED family, the next two fit configurations
-  by distance at N = 200. If any is inside, the family is marked UNSTABLE-TO-FIT in the report and the registered
-  row; the verdict rule is unchanged.
+- **C4 near-fit sensitivity (post-lock stage `nearfit`; rule locked now).** Per walk group, the top 3 configurations
+  by fit distance, or all within +0.1 of the best (within the recorded top 5), run on the group's representative
+  variant (its random-order V0 family) at N = 200. If any alternate is inside, every family of that walk group is
+  labelled UNSTABLE-TO-FIT in the report and the registered row; the verdict rule is unchanged. With the recorded
+  top-5 lists, 100 alternates run (four per group).
 - **C5 steelman plant check.** Chain rows and junction redraw at their most favourable settings (d = 0, `continue`,
   same-height grille): each must reach at least 50% of PHASE_757's G-EDGE mean D2 (0.238; threshold 0.119; the
   reference is G-EDGE, not B). A generator that fails is relabelled "junction plant did not transmit" and its D2
@@ -287,7 +315,10 @@ Per tier:
   the Naibbe cipher as published, or by the table-and-grille method as implemented from its published description."
   If only PUBLISHED is EXCLUDED, the proposed clause reads "… as described by Hyde & Rugg (2014)", and the EXTENDED
   survivors are named. STEELMAN-EXPOSED never enters Tier-0 wording.
-- **EXCLUDED (PARTIAL FITS ONLY)** if every counted variant excludes but none is FITTED: reported as a weaker result.
+- **EXCLUDED (PARTIAL FITS ONLY)** if every FITTED or PARTIAL variant of a tier excludes but none is FITTED. This is
+  registered as Tier-2 negative knowledge, with the qualifier and the tier's best distance in the row. For the Tier-0
+  proposal, a PUBLISHED result of EXCLUDED (PARTIAL FITS ONLY) counts as EXCLUDED only if EXTENDED is fully EXCLUDED;
+  the qualifier is then quoted in the proposal for human sign-off.
 - **EXCLUDED ON SURFACE** if no family in the tier is FITTED or PARTIAL.
 - **NOT EXCLUDED** if any FITTED or PARTIAL variant has n_out ≤ 1, or no independently certified outside
   discriminator, on the pooled ensemble. Registered as "not excluded by the PHASE_757 panel", naming the variant, its
@@ -313,6 +344,12 @@ EXCLUDED variant produced B: being inside on five line- and junction-level stati
 - **Not computed on B before the lock:** no new order statistic. The fit stage reads no adjacency, order or position
   statistic of B.
 
+## Partial-unblinding disclosure
+D2–D6 were computed on fitted-variant members in control C1 while B's PHASE_757 values were known. The designer saw,
+before the lock: EXTENDED D2 ≈ 0.001 and D5 0.01–0.02; PUBLISHED (restricted) D5 0.20–0.25; junction redraw D2
+0.17–0.21. The FITTED bar was recalibrated after this. No other rule changed after these values were seen. The
+registered row carries this disclosure (C2090 precedent, PHASE_772).
+
 ## Dry-run disclosure
 The dry run (`run778.py --dry`) showed the designer D2–D6 for two fallback variants (N = 3 each): a published-style
 variant (random rows, d 2, reset, keep, 40 × 16 table, V0): D2 0.06–0.07, D3 −0.5 to −0.6, D4 4.6–5.0, D5 3.2,
@@ -329,7 +366,7 @@ share), and controls C1–C5.
 ## Procedure
 1. Gates (done); fit stage; pre-lock controls; this draft committed with `results/fit778.json` and
    `results/prelock_controls778.json`.
-2. Lean-expert confirmation pass.
+2. Lean-expert confirmation pass (done: LOCKABLE with eight edits, all applied; per-variant banding run).
 3. `run778.py --checksums`, commit, tag `phase778-lock`.
 4. `run778.py controls` (certification before any grille comparison is read), `run778.py panel`, `run778.py nearfit`,
    `run778.py verdict` (pooled rerun inside); raw results committed before the write-up; lean-expert results check.

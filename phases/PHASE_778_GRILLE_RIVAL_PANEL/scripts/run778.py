@@ -43,8 +43,9 @@ INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py'
           f'{P757}/scripts/naibbe_harness.py', f'{P757}/scripts/panel_stats.py', f'{P757}/results/noise_model.json',
           f'{P757}/results/controls_raw.npz', 'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json')
 LOCKED = ('PRE_REGISTRATION.md', 'scripts/grille778.py', 'scripts/gates778.py', 'scripts/fit778.py',
-          'scripts/fit_extend778.py', 'scripts/prelock_controls778.py', 'scripts/run778.py', 'results/gates778.json', 'results/b_surface778.json',
-          'results/fit778.json', 'results/prelock_controls778.json', 'results/input_checksums.json')
+          'scripts/fit_extend778.py', 'scripts/prelock_controls778.py', 'scripts/band778.py', 'scripts/run778.py',
+          'results/gates778.json', 'results/b_surface778.json', 'results/fit778.json',
+          'results/prelock_controls778.json', 'results/variant_bands778.json', 'results/input_checksums.json')
 NOISES = ['V0', 'V1']
 N_MEMBERS, N_CTRL, N_REF, N_NEAR = 1000, 1000, 50, 200
 RERUN_OFFSET = 5_000_000
@@ -56,6 +57,10 @@ BUILT_IN = {'M1': {'D5', 'D6'}, 'GEDGE': {'D2', 'D6'}}
 CTRL_SEED = {'M1': 778_900_000, 'GEDGE': 778_910_000, 'BNOISE': 778_920_000}
 WORKERS = 6
 Z_BORDER = 4.0
+NAN_MAX = 0.05                 # D5 NaN rule (confirmation-pass edit 5): above this rate D5 is dropped for the variant
+NEAR_TOL = 0.1                 # C4: alternates = top 3 per walk group, or all within +0.1 of the best
+ATTRIB = {'D2': ['js_first'], 'D3': ['zipf', 'types', 'hapax'], 'D4': ['zipf', 'types', 'hapax', 'jac_adj', 'jac_dist'],
+          'D5': [], 'D6': []}     # composition-attribution mapping (edit 7; descriptive)
 DRY = '--dry' in sys.argv
 _W = {}
 LOGF = None
@@ -93,16 +98,33 @@ def verify_lock():
 
 # ================================================================================================ variants
 def variants():
-    """One variant per (family, noise); the family's configuration is its fit group's selected configuration."""
+    """One variant per (family, noise); the configuration is its walk group's selection; the band is the variant's own
+    (band778.py: own row arrangement and noise, 10 fresh seeds), under the calibrated and the declared bar."""
     fit = json.load(open(OUT / 'fit778.json', encoding='utf-8'))
+    bf = OUT / 'variant_bands778.json'
+    bands = json.load(open(bf, encoding='utf-8'))['variants'] if bf.exists() else {}
     out = []
     for fam in F.families():
         gname = F.group_name(fam)
         g = fit['groups'][gname]
         for noise in NOISES:
-            out.append({'name': f"{F.family_name(fam)}/{noise}", 'family': fam, 'tier': fam['tier'], 'cfg': g['best']['cfg'],
-                        'noise': noise, 'fit_distance': g['fresh']['distance'], 'band': g['fresh']['band']})
+            name = f"{F.family_name(fam)}/{noise}"
+            vb = bands.get(name)
+            out.append({'name': name, 'family': fam, 'tier': fam['tier'], 'cfg': g['best']['cfg'], 'noise': noise,
+                        'group': gname, 'group_fit_distance': g['fresh']['distance'],
+                        'fit_distance': vb['distance'] if vb else g['fresh']['distance'],
+                        'band': vb['band'] if vb else g['fresh']['band'],
+                        'band_declared': vb['band_declared'] if vb else g['fresh']['band'],
+                        'deviations': vb['deviations'] if vb else g['fresh']['deviations']})
     return out
+
+
+def group_representative(vs, gname):
+    """C4 runs a walk group's alternates on one representative variant: its random-order V0 family."""
+    for vi, v in enumerate(vs):
+        if v['group'] == gname and v['family']['order'] == 'random' and v['noise'] == 'V0':
+            return vi
+    return next(vi for vi, v in enumerate(vs) if v['group'] == gname)
 
 
 def counted_set(tier, usable, prelock):
@@ -217,6 +239,9 @@ def evaluate(D, B, usable, nonbuiltin, vs, merge_reset):
     rows = []
     for vi, v in enumerate(vs):
         ds = counted_set(v['tier'], usable, None)
+        nan_rate = {d: float(np.isnan(D[vi, :, DS.index(d)]).mean()) for d in ds}
+        dropped = [d for d in ds if nan_rate[d] > NAN_MAX]
+        ds = [d for d in ds if d not in dropped]
         k = len(ds)
         outs = [d for d in ds if outside(B[d], D[vi, :, DS.index(d)], k)]
         n_out = len(outs)
@@ -227,7 +252,8 @@ def evaluate(D, B, usable, nonbuiltin, vs, merge_reset):
         excl = n_out >= 2 and any(nonbuiltin[d] for d in outs)
         st = {d: summ(D[vi, :, DS.index(d)], B[d]) for d in ds}
         border = bool(excl and any(abs(st[d]['z_B']) < Z_BORDER for d in outs))
-        rows.append({'variant': v['name'], 'tier': v['tier'], 'band': v['band'], 'k': k, 'counted': ds, 'outside': outs,
+        rows.append({'variant': v['name'], 'tier': v['tier'], 'band': v['band'], 'band_declared': v['band_declared'],
+                     'k': k, 'counted': ds, 'dropped_nan': dropped, 'nan_rate': nan_rate, 'outside': outs,
                      'n_out': n_out, 'merged_d5_d6': merged, 'excludes': bool(excl), 'borderline': border,
                      'z': {d: st[d]['z_B'] for d in ds}, 'rank': {d: st[d]['rank_B'] for d in ds},
                      'means': {d: st[d]['mean'] for d in ds}, 'n': int(st[ds[0]]['n'])})
@@ -295,24 +321,32 @@ def stage_panel():
     run_panel(0, range(len(variants())), N_MEMBERS, 'offset0')
 
 
-def stage_nearfit():
-    """C4: for each PUBLISHED family, the next two fit configurations (by distance) at N_NEAR members."""
+def nearfit_alternates():
+    """C4 rule (locked): per walk group, the top 3 configurations by fit distance, or all within NEAR_TOL of the best,
+    whichever is larger (within the recorded top 5); run on the group's representative variant at N_NEAR."""
     fit = json.load(open(OUT / 'fit778.json', encoding='utf-8'))
     vs = variants()
-    for rank in (1, 2):
-        over = {}
-        for vi, v in enumerate(vs):
-            if v['tier'] == 'PUBLISHED':
-                top = fit['groups'][F.group_name(v['family'])]['top5']
-                if rank < len(top):
-                    over[vi] = top[rank]['cfg']
-        run_panel(7_000_000 + rank * 100_000, list(over), N_NEAR, f'nearfit{rank}', over)
+    plan = {}
+    for gname, g in fit['groups'].items():
+        top = g['top5']
+        best = top[0]['distance']
+        alts = [i for i in range(1, len(top)) if i <= 2 or top[i]['distance'] <= best + NEAR_TOL]
+        plan[gname] = {'vi': group_representative(vs, gname), 'alts': [(i, top[i]['cfg'], top[i]['distance']) for i in alts]}
+    return plan
 
 
-def tier_verdict(tier, rows, pooled):
+def stage_nearfit():
+    plan = nearfit_alternates()
+    for rank in (1, 2, 3, 4):
+        over = {p['vi']: cfg for p in plan.values() for (i, cfg, _) in p['alts'] if i == rank}
+        if over:
+            run_panel(7_000_000 + rank * 100_000, list(over), N_NEAR, f'nearfit{rank}', over)
+
+
+def tier_verdict(tier, rows, pooled, band_key='band'):
     idx = [i for i, r in enumerate(rows) if r['tier'] == tier]
-    counted = [i for i in idx if rows[i]['band'] in ('FITTED', 'PARTIAL')]
-    fitted = [i for i in idx if rows[i]['band'] == 'FITTED']
+    counted = [i for i in idx if rows[i][band_key] in ('FITTED', 'PARTIAL')]
+    fitted = [i for i in idx if rows[i][band_key] == 'FITTED']
     surv = [rows[i]['variant'] for i in counted if not pooled[i]['excludes']]
     if not counted:
         verdict = 'EXCLUDED ON SURFACE'
@@ -352,6 +386,10 @@ def stage_verdict():
         D = np.concatenate([D0, D1], axis=1)                # pooled ensemble (NaN rows for variants not rerun)
     pooled = evaluate(D, B, usable, nonbuiltin, vs, merge_reset)
     tiers = {t: tier_verdict(t, pooled, pooled) for t in ('PUBLISHED', 'EXTENDED', 'STEELMAN')}
+    tiers_declared = {t: tier_verdict(t, pooled, pooled, 'band_declared')['verdict'] for t in tiers}
+    attribution = {r['variant']: {'outside': r['outside'],
+                                  'composition': {d: {s: round(vs[vi]['deviations'][s], 2) for s in ATTRIB[d]} for d in r['outside']}}
+                   for vi, r in enumerate(pooled) if r['excludes']}
     # sensitivities
     sens = {}
     for drop in ('D2', 'D6'):
@@ -373,15 +411,18 @@ def stage_verdict():
     desc = {vs[vi]['name']: {**dict(zip(DESC, np.nanmean(DE[vi], axis=0).tolist())),
                              **dict(zip(EXTRA, np.nanmean(EX[vi], axis=0).tolist()))} for vi in range(len(vs))}
     near = {}
-    for rank in (1, 2):
+    for rank in (1, 2, 3, 4):
         f = OUT / f'panel_raw778_nearfit{rank}.npz'
         if f.exists():
             Dn = np.load(f)['D']
             rn = evaluate(Dn, B, usable, nonbuiltin, vs, merge_reset)
-            near[rank] = {vs[vi]['name']: {'excludes': r['excludes'], 'outside': r['outside']}
+            near[rank] = {vs[vi]['name']: {'group': vs[vi]['group'], 'excludes': r['excludes'], 'outside': r['outside']}
                           for vi, r in enumerate(rn) if not np.isnan(Dn[vi]).all()}
-    unstable = sorted({name for rk in near.values() for name, r in rk.items() if not r['excludes']})
-    out = {'tiers': tiers, 'usable': usable, 'B': B, 'merge_d5_d6_reset': merge_reset, 'z_star': {k: zstar(k) for k in (4, 5)},
+    unstable_groups = sorted({r['group'] for rk in near.values() for r in rk.values() if not r['excludes']})
+    unstable = sorted(v['name'] for v in vs if v['group'] in unstable_groups)
+    out = {'tiers': tiers, 'tiers_declared_bar': tiers_declared, 'fitted_bound': _W['X'].fitted_bound() if 'X' in _W else None,
+           'attribution': attribution, 'unstable_groups': unstable_groups,
+           'usable': usable, 'B': B, 'merge_d5_d6_reset': merge_reset, 'z_star': {k: zstar(k) for k in (3, 4, 5)},
            'rows_first_pass': rows0, 'rows_rerun': {vs[vi]['name']: r for vi, r in rows1.items()}, 'rows_pooled': pooled,
            'sensitivities': sens, 'partial': partial, 'outside_counts': outside_counts, 'descriptives': desc,
            'B_desc': cc['B_desc'], 'B_rpt5': cc['B_rpt5'], 'nearfit': near, 'unstable_to_fit': unstable,
@@ -390,9 +431,11 @@ def stage_verdict():
     log('VERDICT per tier: ' + ' | '.join(f"{t} {tiers[t]['verdict']} (counted {tiers[t]['n_counted']}, fitted "
                                           f"{tiers[t]['n_fitted']}, not excluding {len(tiers[t]['not_excluding'])}, "
                                           f"borderline {len(tiers[t]['borderline'])})" for t in tiers))
-    log(f'outside counts {outside_counts} | sensitivities {sens} | unstable-to-fit {unstable}')
+    log(f'under the declared bar (1.0): {tiers_declared}')
+    log(f'outside counts {outside_counts} | sensitivities {sens} | unstable-to-fit groups {unstable_groups}')
     for r in pooled:
-        log(f"  {r['variant']:52s} {r['band']:8s} out={r['n_out']} {r['outside']}{' merged' if r['merged_d5_d6'] else ''} "
+        log(f"  {r['variant']:52s} {r['band']:8s} out={r['n_out']} {r['outside']}{' merged' if r['merged_d5_d6'] else ''}"
+            f"{' nan-dropped ' + str(r['dropped_nan']) if r['dropped_nan'] else ''} "
             + ' '.join(f"{d} {r['means'][d]:+.3f}(z{r['z'][d]:+.1f},r{r['rank'][d]})" for d in r['counted'])
             + (' BORDERLINE' if r['borderline'] else ''))
 
@@ -441,6 +484,8 @@ def main():
     stage = next((a for a in sys.argv[1:] if not a.startswith('-')), None)
     assert stage in ('controls', 'panel', 'nearfit', 'verdict'), 'stage: controls | panel | nearfit | verdict'
     verify_lock()
+    import grille778 as X  # noqa: F401
+    _W['X'] = X
     LOGF = open(OUT / f'{stage}_log778.txt', 'a', encoding='utf-8')
     log(f'PHASE_778 {stage}; lock {LOCK} verified; inputs verified; {time.strftime("%Y-%m-%d %H:%M:%S")}')
     {'controls': stage_controls, 'panel': stage_panel, 'nearfit': stage_nearfit, 'verdict': stage_verdict}[stage]()
