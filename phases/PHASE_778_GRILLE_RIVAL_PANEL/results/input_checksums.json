@@ -1,0 +1,9 @@
+{
+ "data/transcriptions/interlinear_full_words.txt": "13c9441d8cd1f6883b3b8f47aa88df84d8c5a6ef30606734e5665e98a2671915",
+ "scripts/voynich.py": "7c4171f614b1eabd500b3cfc8410085872b182e6de962bf7955c9ee0c0afaf6e",
+ "phases/PHASE_757_NAIBBE_RIVAL_PANEL/scripts/naibbe_harness.py": "440baf0a0e433682848236250f82c014adb664cafb36c18247245868407321c3",
+ "phases/PHASE_757_NAIBBE_RIVAL_PANEL/scripts/panel_stats.py": "76f376e6bd3866dd4043e378a8b070a3f7d307929b40522481e0b8c68cd202dd",
+ "phases/PHASE_757_NAIBBE_RIVAL_PANEL/results/noise_model.json": "86d54950625a689578b03e51b94965a073e5dd59fc5ee03462559e3142d22296",
+ "phases/PHASE_757_NAIBBE_RIVAL_PANEL/results/controls_raw.npz": "b73fa2f178ff7cdb8e7961929791d922391f184ea72804c9be78d81a879c50df",
+ "phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json": "dc856ccd87abe5b5836d3275ec2c42060a1562869f84aaac52fc93ff901747ad"
+}
