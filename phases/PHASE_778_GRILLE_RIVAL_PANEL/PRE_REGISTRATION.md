@@ -211,8 +211,13 @@ distribution (about 0.027 bits). Per group:
 | dRP/continue/keep/noredraw/full | stolfi / real / section 250×20 / α 1.0 / n_tab 3 / s_gr word / all | 1.16 | 1.19 | **1.16 PARTIAL** | types 0.35 |
 | dRP/continue/keep/redraw/full | stolfi / real / section 250×20 / α 1.0 / n_tab 3 / s_gr 0.05 / all | 1.27 | 1.26 | **1.27 PARTIAL** | js_first 0.27 |
 
-Consequence under the decision rules: no tier has a FITTED variant, so the strongest available verdict is "EXCLUDED
-(PARTIAL FITS ONLY)"; a NOT EXCLUDED verdict remains reachable from any PARTIAL variant.
+**Per-variant bands (`results/variant_bands778.json`; own row arrangement and noise, 10 fresh seeds).** Under the
+calibrated bar (1.165): PUBLISHED 0 FITTED / 8 PARTIAL (best 1.51); EXTENDED 50 FITTED / 34 PARTIAL (best 0.67, a
+length-ordered variant: ordered rows change which content the walk visits); STEELMAN 8 FITTED / 30 PARTIAL (best
+1.09); no variant UNFITTED. Under the declared bar (1.0): PUBLISHED 0 / 8; EXTENDED 25 / 59; STEELMAN 0 / 38. Noise
+V1 raises the mean distance from 1.12 to 1.24. Consequence under the decision rules: the PUBLISHED tier's strongest
+available verdict is "EXCLUDED (PARTIAL FITS ONLY)" under either bar; EXTENDED can reach EXCLUDED under both bars;
+STEELMAN only under the calibrated bar. A NOT EXCLUDED verdict remains reachable from any FITTED or PARTIAL variant.
 
 ## Target skeleton, noise, controls, discriminators (PHASE_757, unchanged)
 - **Skeleton:** Currier B, H track, P placement, labels excluded, uncertain tokens as blockers: 2,299 lines, 21,610

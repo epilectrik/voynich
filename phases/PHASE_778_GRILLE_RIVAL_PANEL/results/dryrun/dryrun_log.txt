@@ -1,10 +1,10 @@
-[dry] DRY/EXTENDED/random/d2/reset/keep/noredraw/full/V0 m0 D2 +0.060 D3 -0.614 D4 +4.673 D5 +3.180 D6 +0.531 extra {'rpt5': 84, 'whole_root_affixed': 2071, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 0}
-[dry] DRY/EXTENDED/random/d2/reset/keep/noredraw/full/V0 m1 D2 +0.056 D3 -0.574 D4 +4.575 D5 +3.231 D6 +0.554 extra {'rpt5': 68, 'whole_root_affixed': 2752, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 0}
-[dry] DRY/EXTENDED/random/d2/reset/keep/noredraw/full/V0 m2 D2 +0.070 D3 -0.487 D4 +4.977 D5 +3.230 D6 +0.523 extra {'rpt5': 98, 'whole_root_affixed': 2284, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 0}
-[dry] DRY/STEELMAN/random/dRP/continue/keep/redraw/full/V1 m0 D2 +0.206 D3 -0.249 D4 +0.000 D5 +0.002 D6 -0.059 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 48691}
-[dry] DRY/STEELMAN/random/dRP/continue/keep/redraw/full/V1 m1 D2 +0.205 D3 +0.550 D4 +0.000 D5 +0.002 D6 -0.037 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 49714}
-[dry] DRY/STEELMAN/random/dRP/continue/keep/redraw/full/V1 m2 D2 +0.213 D3 +0.562 D4 +0.000 D5 +0.001 D6 -0.036 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 48990}
-[dry] evaluate DRY/EXTENDED/random/d2/reset/keep/noredraw/full/V0: counted ['D2', 'D3', 'D4', 'D5', 'D6'] outside ['D2', 'D3', 'D4', 'D5', 'D6'] n_out 4 merged True excludes True borderline False (N=3, illustrative only)
-[dry] evaluate DRY/STEELMAN/random/dRP/continue/keep/redraw/full/V1: counted ['D3', 'D4', 'D5', 'D6'] outside ['D4', 'D5', 'D6'] n_out 3 merged False excludes True borderline False (N=3, illustrative only)
+[dry] EXTENDED/random/d2/reset/keep/noredraw/full/V0 m0 D2 +0.001 D3 +0.232 D4 +0.000 D5 +0.024 D6 +0.008 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 0}
+[dry] EXTENDED/random/d2/reset/keep/noredraw/full/V0 m1 D2 +0.001 D3 +0.056 D4 +0.000 D5 +0.017 D6 +0.005 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 0}
+[dry] EXTENDED/random/d2/reset/keep/noredraw/full/V0 m2 D2 +0.000 D3 +0.062 D4 +0.000 D5 +0.021 D6 +0.002 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 0}
+[dry] STEELMAN/random/dRP/continue/keep/redraw/full/V1 m0 D2 +0.165 D3 +0.259 D4 +0.000 D5 +0.003 D6 +0.026 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 27522}
+[dry] STEELMAN/random/dRP/continue/keep/redraw/full/V1 m1 D2 +0.164 D3 -0.046 D4 +0.000 D5 +0.006 D6 +0.026 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 28557}
+[dry] STEELMAN/random/dRP/continue/keep/redraw/full/V1 m2 D2 +0.157 D3 +0.042 D4 +0.000 D5 +0.003 D6 +0.032 extra {'rpt5': 0, 'whole_root_affixed': 0, 'empty_redraws': 0, 'repeat_redraws': 0, 'junction_redraws': 27845}
+[dry] evaluate EXTENDED/random/d2/reset/keep/noredraw/full/V0: counted ['D2', 'D3', 'D4', 'D5', 'D6'] outside ['D2', 'D4', 'D5', 'D6'] n_out 3 merged True excludes True borderline False (N=3, illustrative only)
+[dry] evaluate STEELMAN/random/dRP/continue/keep/redraw/full/V1: counted ['D3', 'D4', 'D5', 'D6'] outside ['D4', 'D5', 'D6'] n_out 3 merged False excludes True borderline False (N=3, illustrative only)
 [dry] M1 member D2 +0.007 D3 +0.307 D4 -0.095 D5 +0.037 D6 +0.042
 [dry] done
