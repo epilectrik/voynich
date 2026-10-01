@@ -1,8 +1,9 @@
 # PHASE_778 — Rival-generator panel II: the table-and-grille method (pre-registration)
 
 **Status: DRAFT v2 after the lean-expert design audit (LOCKABLE WITH EDITS; all fifteen edits and the five pre-lock
-controls incorporated below). Pending before the lock: the fit stage output (`results/fit778.json`), the pre-lock
-controls (`results/prelock_controls778.json`), and the confirmation pass.** No discriminator has been computed on
+controls incorporated below). The fit stage (with its declared extension) and the pre-lock controls have run; C2
+failed as declared and a band recalibration is proposed in its results. Pending before the lock: the confirmation
+pass's ruling on that recalibration.** No discriminator has been computed on
 any grille corpus beyond the dry run's illustrative members and the pre-lock controls declared here.
 
 **Origin.** `SYSTEM/RESEARCH_AGENDA.md` Tier A #2 and `STRATEGIC_REVIEW_2026-09-27` §3 #5: the rival-generator panel,
@@ -126,7 +127,7 @@ fit per (d, pos, repeat, redraw) group is therefore shared by that group's rando
 | s_gr (grille change at a line start, or at every word) | 0.05 · 0.3 · word |
 | grille set | distinct (12) · all nine offsets within three rows · same (0,0) |
 
-1,296 configurations (216 restricted). Distance = mean over nine composition statistics of |generated − B| / scale,
+1,296 configurations (216 restricted) in the base grid, plus the extension below. Distance = mean over nine composition statistics of |generated − B| / scale,
 N_FIT = 2 members per configuration (seeds 778,500,000 + 100,000·group + 10·config + member); the selected
 configuration is re-evaluated on 10 fresh seeds (778,600,000 + 1,000·group + member) and that distance is the one
 reported and banded (winner's curse). **Scales are declared tolerances, not sampling SDs.** The variant table reports
@@ -150,8 +151,51 @@ toward a panel EXCLUDED. If no family in a tier is FITTED or PARTIAL, that tier 
 (no declared configuration reaches B's composition)", a separate and weaker category than panel exclusion. The
 attested-word fraction is descriptive.
 
-**Fit results:** *to be inserted from `results/fit778.json` before the lock (per group: selected configuration,
-fresh distance, band, dominant statistic and its share).*
+**Grid extension (`scripts/fit_extend778.py`; declared after the base fit, before the lock, composition only).** The
+base fit left every group short on hapax share and type count (a device re-reads its cells). To give the device its
+best shot, the grid was extended toward richer tables: a larger per-folio table (250 × 20) at all three draw
+exponents, and a flatter exponent α 0.25 at every scope and size (864 new configurations per full group, 144 per
+restricted group; seeds offset by 20,000 configurations). A group's selection is replaced when a new configuration has
+a lower N_FIT distance; the base selection is kept in the record alongside. The extension replaced the selection in 6
+of 25 groups.
+
+**Fit results (final; `results/fit778.json`).** Every group is PARTIAL. The selection chooses the Stolfi-layer
+parser, real rows (EXTENDED) wherever the grid allows them, draw exponent 1.0 everywhere, and section- or folio-scope
+tables; the restricted PUBLISHED groups (independent columns, holes at distinct heights) sit at 1.51–1.56, the full
+groups at 1.12–1.33. The dominant deviations are type count or hapax share (the device trades one for the other), the
+Zipf slope (about −0.85 against B's −1.05, two scale units), the adjacent-folio Jaccard, and the first-glyph-unit
+distribution (about 0.027 bits). Per group:
+
+| Fit group (d / line rule / repeat / redraw / grid) | Selected configuration | Base fresh | Extension fresh | Final | Dominant deviation (share) |
+|---|---|---|---|---|---|
+| d2/reset/avoid/noredraw/restricted | stolfi / indep / section 120×16 / α 1.0 / n_tab 1 / s_gr 0.05 / distinct | 1.56 | 1.59 | **1.56 PARTIAL** | hapax 0.31 |
+| d2/reset/keep/noredraw/restricted | stolfi / indep / section 250×20 / α 1.0 / n_tab 3 / s_gr word / distinct | 1.55 | 1.57 | **1.55 PARTIAL** | types 0.31 |
+| d5/reset/avoid/noredraw/restricted | stolfi / indep / section 40×16 / α 1.0 / n_tab 3 / s_gr 0.05 / distinct | 1.51 | 1.56 | **1.51 PARTIAL** | hapax 0.32 |
+| d5/reset/keep/noredraw/restricted | stolfi / indep / section 250×20 / α 1.0 / n_tab 1 / s_gr 0.05 / distinct | 1.54 | 1.56 | **1.54 PARTIAL** | hapax 0.21 |
+| d2/continue/avoid/noredraw/full | stolfi / real / all 500×20 / α 1.0 / n_tab 1 / s_gr word / all | 1.18 | 1.18 | **1.18 PARTIAL** | hapax 0.21 |
+| d2/continue/keep/noredraw/full | stolfi / real / all 500×20 / α 1.0 / n_tab 1 / s_gr 0.05 / all | 1.12 | 1.15 | **1.12 PARTIAL** | hapax 0.38 |
+| d2/continue/keep/redraw/full | stolfi / real / all 500×20 / α 1.0 / n_tab 1 / s_gr word / all | 1.30 | 1.25 | **1.30 PARTIAL** | hapax 0.22 |
+| d2/reset/avoid/noredraw/full | stolfi / real / folio 250×20 / α 1.0 / n_tab 3 / s_gr word / all | 1.17 | 1.18 (selected) | **1.18 PARTIAL** | types 0.35 |
+| d2/reset/keep/noredraw/full | stolfi / real / folio 80×16 / α 1.0 / n_tab 1 / s_gr word / all | 1.20 | 1.16 | **1.20 PARTIAL** | types 0.33 |
+| d2/reset/keep/redraw/full | stolfi / real / folio 40×16 / α 1.0 / n_tab 3 / s_gr word / all | 1.28 | 1.25 | **1.28 PARTIAL** | types 0.25 |
+| d5/continue/avoid/noredraw/full | stolfi / real / folio 250×20 / α 1.0 / n_tab 1 / s_gr word / all | 1.16 | 1.14 (selected) | **1.14 PARTIAL** | types 0.36 |
+| d5/continue/keep/noredraw/full | stolfi / real / folio 250×20 / α 1.0 / n_tab 1 / s_gr word / all | 1.16 | 1.15 (selected) | **1.15 PARTIAL** | types 0.36 |
+| d5/continue/keep/redraw/full | stolfi / real / section 40×16 / α 1.0 / n_tab 3 / s_gr 0.05 / all | 1.26 | 1.25 | **1.26 PARTIAL** | hapax 0.36 |
+| d5/reset/avoid/noredraw/full | stolfi / real / section 250×20 / α 1.0 / n_tab 3 / s_gr word / all | 1.18 | 1.15 | **1.18 PARTIAL** | types 0.30 |
+| d5/reset/keep/noredraw/full | stolfi / real / folio 250×20 / α 1.0 / n_tab 3 / s_gr word / all | 1.22 | 1.14 (selected) | **1.14 PARTIAL** | types 0.37 |
+| d5/reset/keep/redraw/full | stolfi / real / folio 250×20 / α 1.0 / n_tab 1 / s_gr word / all | 1.34 | 1.26 (selected) | **1.26 PARTIAL** | types 0.26 |
+| dR/continue/avoid/noredraw/full | stolfi / real / section 250×20 / α 1.0 / n_tab 3 / s_gr word / all | 1.13 | 1.18 | **1.13 PARTIAL** | types 0.35 |
+| dR/continue/keep/noredraw/full | stolfi / real / section 120×16 / α 1.0 / n_tab 3 / s_gr 0.3 / all | 1.20 | 1.20 | **1.20 PARTIAL** | types 0.28 |
+| dR/continue/keep/redraw/full | stolfi / real / section 120×16 / α 1.0 / n_tab 3 / s_gr word / all | 1.27 | 1.27 | **1.27 PARTIAL** | js_first 0.27 |
+| dR/reset/avoid/noredraw/full | stolfi / real / folio 250×20 / α 1.0 / n_tab 1 / s_gr word / all | 1.21 | 1.17 (selected) | **1.17 PARTIAL** | types 0.37 |
+| dR/reset/keep/noredraw/full | stolfi / real / section 120×16 / α 1.0 / n_tab 1 / s_gr 0.05 / all | 1.19 | 1.17 | **1.19 PARTIAL** | hapax 0.41 |
+| dR/reset/keep/redraw/full | stolfi / real / all 500×20 / α 1.0 / n_tab 3 / s_gr 0.3 / all | 1.33 | 1.27 | **1.33 PARTIAL** | js_first 0.26 |
+| dRP/continue/avoid/noredraw/full | stolfi / real / section 40×16 / α 1.0 / n_tab 3 / s_gr 0.05 / all | 1.20 | 1.16 | **1.20 PARTIAL** | hapax 0.36 |
+| dRP/continue/keep/noredraw/full | stolfi / real / section 250×20 / α 1.0 / n_tab 3 / s_gr word / all | 1.16 | 1.19 | **1.16 PARTIAL** | types 0.35 |
+| dRP/continue/keep/redraw/full | stolfi / real / section 250×20 / α 1.0 / n_tab 3 / s_gr 0.05 / all | 1.27 | 1.26 | **1.27 PARTIAL** | js_first 0.27 |
+
+Consequence under the decision rules: no tier has a FITTED variant, so the strongest available verdict is "EXCLUDED
+(PARTIAL FITS ONLY)"; a NOT EXCLUDED verdict remains reachable from any PARTIAL variant.
 
 ## Target skeleton, noise, controls, discriminators (PHASE_757, unchanged)
 - **Skeleton:** Currier B, H track, P placement, labels excluded, uncertain tokens as blockers: 2,299 lines, 21,610
@@ -214,7 +258,25 @@ PHASE_757's control ensembles only)
   reference is G-EDGE, not B). A generator that fails is relabelled "junction plant did not transmit" and its D2
   shortfall is reported as an implementation fact, not a fact about the method.
 
-**Results:** *to be inserted before the lock.*
+**Results (`results/prelock_controls778.json`, generated corpora and PHASE_757 ensembles only):**
+- **C1 PASS.** 0 of 350 held-out members excluded (seven variants: the best-fit variant of each tier and four random
+  draws, 500-member ensembles, 50 held-out each): the outside/exclusion rule does not falsely exclude grille members.
+- **C2 FAIL as declared.** Mean nine-statistic distance: M1 1.165 (PARTIAL), G-EDGE 0.933 (FITTED). The
+  deviations are the resampling effect: M1 hapax share 0.395 against B's 0.669 (5.5 scale units), types 3,426
+  against 4,640 (2.4), distant-folio Jaccard 0.130 against 0.099 (1.6); G-EDGE hapax 0.467 (4.1),
+  types 3,651 (2.0), distant Jaccard 0.129 (1.5); every other statistic within half a scale unit. Any
+  generator that redraws B's tokens with replacement collapses B's long tail and blurs its folio vocabulary.
+  **Proposed recalibration (a pre-lock change prompted by this control; subject to the confirmation pass):** FITTED
+  ≤ 1.2, the distance of B's own class-conditional resampler (M1) rounded up, since a device cannot be required to
+  reach a composition that B's own resampler does not; PARTIAL ≤ 2.0 unchanged. Consequence for the fit table: the
+  fourteen full no-redraw groups (1.12–1.20) become FITTED; the redraw groups (1.26–1.33) and the restricted
+  PUBLISHED groups (1.51–1.56) stay PARTIAL. The PUBLISHED tier therefore has no FITTED variant under either bound.
+- **C3: no merge.** Column-lock control D5 0.029, D6 0.032; PHASE_757's M1 D5 99th percentile 0.051. D5 and D6
+  count separately for all variants.
+- **C5 PASS.** Chain rows D2 0.437, junction redraw D2 0.174, threshold 0.119 (half of G-EDGE's
+  0.238): both steelmen transmit junction coupling.
+- A numerical warning in D5's held-out gain (a zero probability inside log2) appears on some grille corpora; D5 was
+  finite on all 15 fitted-variant corpora checked, and the verdict reports the non-NaN member count per variant.
 
 ## Decision rules (locked)
 Per tier:

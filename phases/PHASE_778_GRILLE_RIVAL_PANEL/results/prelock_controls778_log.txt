@@ -1,0 +1,11 @@
+C2: pass=False mean distance {'M1': 1.164739466482739, 'GEDGE': 0.9330881160317048}
+C3: column-lock D5 0.029 D6 0.032; M1 D5 p99 0.051; merge=False
+C5: chain D2 0.437 redraw D2 0.174 vs threshold 0.119
+C1: PUBLISHED/random/d5/reset/avoid/noredraw/restricted/V0 held-out excluded 0/50 (136s)
+C1: EXTENDED/random/d2/continue/keep/noredraw/full/V0  held-out excluded 0/50 (244s)
+C1: STEELMAN/chain/d2/continue/keep/noredraw/full/V0   held-out excluded 0/50 (404s)
+C1: EXTENDED/freq/d2/reset/avoid/noredraw/full/V0      held-out excluded 0/50 (822s)
+C1: EXTENDED/freq/dR/reset/keep/noredraw/full/V1       held-out excluded 0/50 (985s)
+C1: EXTENDED/random/d2/continue/avoid/noredraw/full/V1 held-out excluded 0/50 (1176s)
+C1: EXTENDED/random/d5/reset/keep/noredraw/full/V0     held-out excluded 0/50 (1454s)
+ALL: pass=False C1 rate 0.000 (1454s)
