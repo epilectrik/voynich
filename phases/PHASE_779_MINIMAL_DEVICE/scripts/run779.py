@@ -321,6 +321,8 @@ def stage_plants():
             _W['prohibit'] = None
             if (OUT / 'prohibit_tmp.json').exists():
                 (OUT / 'prohibit_tmp.json').unlink()
+            res['plants'][key]['MDE80'] = mde
+            json.dump(res, open(OUT / 'plants779_interim.json', 'w', encoding='utf-8'), indent=1)   # interim write per point
         res['plants'][key]['MDE80'] = mde
     res['runtime_s'] = time.time() - t0
     json.dump(res, open(OUT / 'plants779.json', 'w', encoding='utf-8'), indent=1)
