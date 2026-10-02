@@ -149,7 +149,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 0 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C2095.
+the highest ID present is C2096.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -241,7 +241,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-09-30 19:01
+**Generated:** 2026-10-02 02:11
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -256,7 +256,7 @@ tables are quarantined — do not use for structural answers.
 6. All Constraints
 7. All Explanatory Fits
 8. Tier 3-4 Interpretations
-9. Session Methodology Notes (62 feedback rules)
+9. Session Methodology Notes (64 feedback rules)
 10. Structural Contract Signatures (6 contracts)
 
 ---
@@ -430,10 +430,18 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Excluded at the second unit for every tested plaintext, also with up to 10% of symbols corrupted; at the first unit
     for noise-free payloads only. Not excluded: subsets of words, several positions, short-token carriers, units larger
     than letters, homophonic spellings, end-of-word positions (descriptive only).
+- **Table-and-grille generation (Rugg): tested, NOT EXCLUDED as a method** (C2096, PHASE_778).
+  - The published configuration's partial fits are excluded: no configuration as Hyde & Rugg describe it reaches B's
+    composition, and every one is outside on edge-glyph coupling (z ≥ 139) and line-zone dependence (z ≥ 19.6).
+  - One fitted variant each in the extended and steelman families is not excluded under the locked rule: adjacent
+    repetition at chance and B's cross-folio trigram excess at z 2.5–2.7 (above all or nearly all 2,000 members, below
+    the 3.0 bar), while B is outside the same ensembles on order information and line-zone dependence by 10 to 69
+    standard deviations and, where counted, on edge-glyph coupling by 164.
+  - No tested configuration reproduces line-zone dependence, or edge-glyph coupling where counted.
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
-  units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
-  improvisation in a practised script at book scale. Excluding a rival is not evidence for the working
-  interpretation.
+  units, word-level codebooks with two or more spellings per word, modified verbose ciphers, grilles with boundary or
+  line-position rules, and improvisation in a practised script at book scale. Excluding a rival is not evidence for
+  the working interpretation. Not excluding one is not evidence that it generated B.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
 - **The claim is still presented as structure:** rewrite the passage to state the current status in plain words and
@@ -452,7 +460,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.40 | **Status:** characterization ACTIVE | **Constraints:** 1,902 live in the generated table (T0 2, T1 38, T2 1,692, T3 166, T4 4) | **Phases:** 777 | **Date:** 2026-09-30
+**Version:** 7.41 | **Status:** characterization ACTIVE | **Constraints:** 1,903 live in the generated table (T0 2, T1 38, T2 1,693, T3 166, T4 4) | **Phases:** 778 | **Date:** 2026-10-02
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -585,7 +593,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.40) | 1,902 (T0 2, T1 38, T2 1,692, T3 166, T4 4) |
+| Live constraints (generated table, v7.41) | 1,903 (T0 2, T1 38, T2 1,693, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -682,7 +690,7 @@ text made to look meaningful? And, if it carries content, what content?
     - B has 5,141 types per 20,000 tokens; syllable-written controls 685–1,338; k* > 16 spellings per syllable.
     - Open: syllables written with spelling variation, morpheme-sized units (item 2).
 2. **The untested rival generators.**
-   - What: the Rugg grille (Parisel's public code), a word-level codebook, a syllable codebook with spelling variation
+   - What: the Rugg grille (done: PHASE_778, C2096, below), a word-level codebook, a syllable codebook with spelling variation
      (one spelling per syllable is excluded, C2085) and a modified verbose cipher, each through the PHASE_757
      harness with noise parity.
    - Word-level codebooks (PHASE_774):
@@ -701,6 +709,12 @@ text made to look meaningful? And, if it carries content, what content?
      - Open: the word end (needs a null keyed on the following token's ending; EF-L keeps only its first unit);
        payloads in a subset of words or over several positions; the source of the F1 residual (no-payload habits and
        corrupted payloads both land there).
+   - Table-and-grille generation (PHASE_778, C2096): PUBLISHED EXCLUDED (PARTIAL FITS ONLY); EXTENDED and STEELMAN
+     NOT EXCLUDED under the locked rule, one fitted variant each (the d = 2 / keep walks, V0; V1 borderline;
+     d2/reset/keep UNSTABLE-TO-FIT). Tier 0 unchanged.
+     - Open: a follow-up is a new pre-registered phase whose discriminator is certified on controls before it sees
+       these variants; extending PHASE_778's N or adding discriminators to re-decide it is not allowed. Grilles with
+       boundary or line-position rules are untested.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
@@ -1223,7 +1237,7 @@ C111	**[Scope 2026-09-28 (v7.26): a count over the 17 zero pairs (for 65% the re
 C112	**[Scope 2026-09-28 (v7.26): a count over the 17 zero pairs relative to kernel-letter classes; both readings are withdrawn (hazard layer C783, C2081; kernel C089 → C2082).]** 59% distant from kernel (taxonomy-independent)	2	B
 C115	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. coverage by construction: the grammar has no unclassifiable type in its own vocabulary, but 30.5% of Currier B tokens (HT/UN) lie outside it (C124 as corrected, C566); "executable" is interpretive]** 0 non-executable tokens	3	B
 C119	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 2. negative knowledge only: no region reads as natural language written token-by-word or as a cipher of the tested classes (C132, C1976, C2017, C2077, C2080); "PURE_OPERATIONAL" is interpretive (C120)]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** 0 translation-eligible zones	2	B
-C120	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. the positive verdict "operational control notation" is a working interpretation (support withdrawn: C089, C171); the negative parts are carried by C119 and the rival exclusions]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** PURE_OPERATIONAL verdict	3	B
+C120	**[Scope (PHASE_778, 2026-10-02, C2096): table-and-grille generation, a non-semantic rival, is not excluded in its extended and steelman families (one fitted variant each); its published configuration's partial fits are excluded. Neither result is evidence for or against this constraint's positive reading.]** **[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 → 3. the positive verdict "operational control notation" is a working interpretation (support withdrawn: C089, C171); the negative parts are carried by C119 and the rival exclusions]** **[Scope 2026-09-28 (PHASE_757): verbose homophonic substitution — the Naibbe cipher as published (Greshko 2025; both code versions; Latin recipe, Latin pharmacy, Italian and Latin prose plaintexts; two layouts; two spacing and two noise settings) — tested and EXCLUDED as a generator of Currier B (C2080). This is a tested-and-excluded rival, not evidence for this constraint's positive reading; other verbose/homophonic designs remain untested]** PURE_OPERATIONAL verdict	3	B
 C121	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 (measurement): part of the restated conclusion]** 49 instruction equivalence classes (9.8x compression)	0	B
 C124	**[Tier-0 restatement 2026-09-28 (human sign-off): Tier 0 (measurement), as corrected: 100% of the grammar's own 480-type vocabulary = 69.5% of Currier B tokens; the rest (HT/UN) is defined by exclusion (C566, C740)]** 100% grammar coverage	0	B
 C126	0 contradictions across 8 families	2	B
@@ -3110,6 +3124,7 @@ C2092	**Which merges can expose hidden repeats under interchangeable spellings (
 C2093	**Rank decoding: is Currier B's word-boundary rule a cipher key? (PHASE_775; methods and measurement; pre-registered; certification failed R1, so the test is detection-only; lock-audited).** Method: re-label each token by its frequency rank among the tokens that follow the same previous ending (K1 = last glyph unit, K2 = last two), take the mutual information of consecutive ranks within a line (top 20 ranks, the rest pooled) against a header-aware exact edge-frame null (EF fixes each position's first glyph, last two glyph units and zone, within folio x line type), minus the same with global ranks: the key gain G. Specificity: no PRESENT in 98 no-key controls (B-fitted first-order, section- and folio-fitted and non-stationary generators, shuffled-plaintext twins, plain word codes; max G_K1 +0.0005, G_K2 +0.0007). Sensitivity partial: missed 4 of 12 held-out keyed natural-language ciphers (contexts dominated by particular preceding words) and 4 of 4 keyed B-like habit streams; a keyed line-clustered stream without word order can also be PRESENT. On B both arms not PRESENT: G_K1 -0.0045 (p_G 0.99), G_K2 -0.0040 (0.98), within the no-key controls' range (-0.075 to +0.0007), which also contains keyed ciphers the test missed (Spanish NT segment 2 -0.0043; keyed habit streams -0.008 to +0.001): no exclusion claim; not evidence of meaninglessness. Post-hoc descriptives: beyond each position's first glyph, last two glyph units, zone and folio x line-type composition, neighbour dependence among B's 20 most frequent tokens is small (dS_K0 +0.0045 bits, z 2.9), below the phase's B-fitted first-order generators (+0.007 to +0.021); within ending contexts it is at null (dS_K1 -0.00001, below every no-message generator, +0.0005 to +0.008). Does not contradict C549/C2056/C2082 (measured against nulls that do not fix glyph edges); consistent with C2081.	2	B, methods, cipher, key, boundary_coupling, rank_decoding, null_model, PHASE_775, C1212, C1563, C2082, C1976, C2081
 C2094	**Currier B's class-pair dependence reduces to its word-boundary rules plus folio x line-type composition (PHASE_776; measurement; pre-registered, lock-audited, certified on fresh seeds).** Statistic: plug-in I(class_i; class_{i+1}) over bridged within-line pairs (C2023's statistic), 49 classes, P-text skeleton (21,610 tokens). Null EF-K2: exact permutation within folio x line type among positions sharing zone, first glyph unit, last two glyph units and the preceding token's last two glyph units (junction coupling C1212/C1563 and two-unit ending routing C2082 both preserved). On B: D +0.0040 bits, p 0.062 -> ROUTING-REDUCIBLE; residual at most about 0.009 bits (D + 2 sd), below the weakest of 35 class or token chains fitted to B's adjacent pairs (+0.016 to +0.031, all p <= 0.003); edge-only chains gave -0.003 to +0.004. Under plain EF (own edges fixed, routing not) the excess is +0.019 (p 0.001): the class dependence beyond own edges is the two-unit ending routing. lambda2 (C2061's statistic) on this population: obs 0.2057, EF-K2 null 0.2032 (p 0.27), shuffle floor 0.1225; EF-K2 reproduces 97% of the excess over the floor (plain EF 86%); lambda3 obs 0.1344, null 0.1273 (p 0.17). Per the pre-registered lambda2 rule (power about 0.68), C2061/C2067 are annotated 'not shown to be sequence beyond boundary rules' (that reading Tier 3; their measurements against the 5-gram stand). Descriptives at nominal p < 0.05 (50-state MI with UN 0.013, EFL-K2 MI 0.041, EFL lambda2 0.006) are uncorrected and not read; the 50-state signature matches the audit's UN-placement plant, not class order. Scope: P-text, bridged 49-class adjacent pairs; not tested: narrow token-level effects (C549, C2056), longer boundary keys (audit plants D +0.006 to +0.010), within-line residuals beyond two-unit routing. Not evidence of meaninglessness.	2	B, class, sequence, boundary_coupling, routing, null_model, eigenstructure, negative_knowledge, PHASE_776, C2061, C2067, C2023, C2082, C1212, C1563, C2091, C2093
 C2095	**No one-letter-per-word payload at Currier B's first or second glyph unit: second unit NONE, first unit residual band (PHASE_777; negative knowledge, bounded; pre-registered, certified on fresh seeds, lock-audited with a confirmation pass; locked at phase777-lock).** Construction tested: each word carries one plaintext letter at a fixed glyph unit and the rest of the word is rule-built filler; the nulls of PHASE_774-776 kept each word's edge glyph units fixed, so a payload there was invisible to them. Population: P-text skeleton, 21,610 certain tokens, 2,299 lines, 80 folios. Channels: F1 first glyph unit (28 symbols) and F2 second (37), confirmatory; L1 last, L2 second-to-last and GAL first gallows, descriptive. Statistic RPT7: within-line 7-token windows whose channel-symbol sequence recurs elsewhere in the P-text; z7 against EF-F, an exact permutation within folio x line type among positions sharing zone, own last two glyph units and the preceding token's last two units (junction coupling C1212/C1563 and two-unit ending routing C2082 preserved). Movable tokens on B 58.7%; effective (cell holds >= 2 distinct symbols) F1 53.2%, F2 52.0%; tokens of <= 2 units (10.7%) have their F1 symbol fixed by construction, <= 3 units (29.2%) their F2 symbol. Thresholds from design controls (R 300): NEG = max z7 over 44 no-payload runs (B-fitted edge and habit chains, M1, section-fitted chains, shuffled-letter twins, payloads on the other channel); POS = min over 5 payload texts (Mesue, pharmacy); tau the midpoint: F1 2.85 / 18.2 / 10.54, F2 3.13 / 17.8 / 10.46. Calls: PRESENT if p <= 0.005 and z7 >= tau; NONE if z7 <= NEG or p > 0.05; otherwise NOT PRESENT (residual band), not a payload call. Certification on fresh seeds (one new text and the five design texts at an unused letter block): 0 of 48 no-payload arm calls PRESENT, 1 in the residual band (habit3b, F2 3.98); 12 of 12 payload calls PRESENT. On B (R 1,000): F2 RPT7 178 vs null 149.4 (sd 17.8), z7 1.60, p 0.067 -> NONE; F1 177 vs 122.9 (sd 16.3), z7 3.31, p 0.003 -> NOT PRESENT (residual). The F1 value lies where unmodelled no-payload habits, heavily corrupted payloads and F2-payload leakage (certification 3.3-3.7; excluded here by F2's NONE) all fall; the test does not separate the first two and the residual's source is not identified. The refined-null gate applies only to a PRESENT. Descriptive (nominal p, uncorrected, not read): F1 RPT5 z 5.54 (p 0.001, resolution floor; shares windows with RPT7; no locked threshold), F2 RPT5 2.06 (p 0.022); F1 under EFq (line-position quintile keyed; movable 0.388) z 1.11 (p 0.15), under EFpar (paragraph x line-type groups; 0.317) z 2.04 (p 0.027) -- fewer symbols move, so the fall does not decompose the residual; L1 z7 2.27 (p 0.012), L2 1.94 (p 0.040), GAL 0.11: NONE under their design thresholds, not payload evidence either way (EF-L does not keep C2082 routing; B-fitted chains reach L1 z7 2-4). Composition: line-entropy reduction against within-folio shuffles F1 2.0% (z -7.7), F2 1.6% (z -8.6), mildly line-homogeneous start symbols (cf. C1214), against the audited line palettes that read PRESENT (>= 14%) and the payload controls (-3.0 to -0.3%); paragraph chi2/df 1.36 / 1.33 against about 7 for paragraph palettes at PRESENT level; no inference drawn. Scope: at F2, one letter per word with the frequency-rank letter-to-symbol map is excluded for every plaintext run as an F2 payload under the locked thresholds (Latin recipe, Latin NT, Mesue, Dante, SISMEL Testamentum, Italian NT; and, in the v1 certification under the same thresholds, the German, Spanish, English and Turkish NTs and Rupescissa; all >= 18), also with up to 10% of channel symbols replaced at random (Mesue at 10% reads F2 z7 7.3, above NEG). At F1, only noise-free payloads of those plaintexts are excluded; corrupted payloads are not. Not excluded: payloads in a subset of words or spread over several positions; payloads carried only by tokens whose channel symbol the null fixes; units larger than letters; homophonic spellings (only random corruption was tested); letter-to-symbol maps not matched to B's symbol frequencies; plaintexts with less 7-letter repetition than Mesue; end-of-word and gallows positions (descriptive only; L1 is 45% y). The no-payload generators are first-order (a false-positive concern only). Not evidence of meaninglessness.	2	B, glyph, cipher, payload, negative_knowledge, null_model, boundary_coupling, routing, composition, PHASE_777, C2082, C1212, C1563, C1214, C2091, C2093, C2094
+C2096	**Table-and-grille generation (Rugg 2004; Hyde & Rugg 2014; Rugg & Taylor 2016; Zandbergen 2021; PHASE_778, rival panel II) is not excluded as a method: the PUBLISHED configuration is EXCLUDED (PARTIAL FITS ONLY), and the EXTENDED and STEELMAN families are NOT EXCLUDED under PHASE_778's locked rule, one fitted variant each (adversarial-external, pre-registered, lock-audited with a confirmation pass; partly unblinded).** Generator implemented from the published mechanics (quotations verified against the source page): a prefix | root | suffix table of R rows and G column sets built from B's own fragment inventories (Stolfi-layer or project morphology), a three-hole grille, the next word three cells across plus an arbitrary vertical move, back to the first column set at each new line, repeats kept or avoided, several tables and grilles; EXTENDED adds ordered rows, real rows, the same-height grille, uniform and per-word random placement (the public implementations' rule) and per-word grille changes; STEELMAN-EXPOSED adds chain rows and junction redraw built from B's adjacent edge-glyph bigram table (D2 built in, not counted). Composition fitted on nine statistics per walk group with a declared grid extension; FITTED bar 1.165 calibrated on the M1 control after the declared 1.0 failed control C2 (any with-replacement resampler of B misses B's hapax share and type count); bands per variant under both bars. Panel: PHASE_757's skeleton, noise, M1 and G-EDGE controls and discriminators D2 edge-glyph coupling, D3 adjacent repetition, D4 cross-folio trigram recurrence, D5 order information beyond edge coupling, D6 line-zone dependence (B 0.228 / 0.015 / 2.414 / 0.038 / 0.172), re-certified on new seeds: D3 and D4 certified by controls that do not build them in, D2, D5 and D6 only by controls that do. Locked rule: outside = beyond the ensemble range and |z| > z* (3.09; STEELMAN 3.02, D2 not counted); a variant excludes when >= 2 discriminators are outside and at least one is D3 or D4; 130 variants (65 families x V0/V1) x 1,000 members; non-excluding variants rerun on fresh seeds and decided on the pooled N = 2,000. PUBLISHED (8): all exclude (D2 z +139 to +192, ensembles 0.001-0.006; D6 z +19.6 to +52, ensembles 0.007-0.049; D4 z +1.6 to +359; D5 z -15.6 to +3.3); none reaches either FITTED bar (best 1.51: independent columns cannot reach B's hapax share and type count); 2 BORDERLINE (D3 z 3.6, 3.7); the d2/reset/keep families (2 of 8) are UNSTABLE-TO-FIT (near-fit alternates at N = 200 not excluded by the same D3/D4 pattern). EXTENDED (84): 83 exclude, 12 BORDERLINE. STEELMAN (38): 37 exclude, 5 BORDERLINE. The two variants not excluded are both FITTED (1.161, 1.091): walk d 2, continue, keep, no redraw, V0; Stolfi parser; real rows drawn from B's P-text word frequencies; one all-corpus 500 x 20 table; alpha 1.0; grille change 0.05 per line; grilles 'all'; rows random (EXTENDED) / chain (STEELMAN). D3 inside (z +0.21 / +0.20). D4 not outside: EXTENDED, B above all 2,000 members but z +2.67 < 3.09; STEELMAN, B above 1,995 of 2,000, z +2.54 < 3.02. B outside both on D5 (z -10.2 / -9.8, B lower) and D6 (z +65.7 / +69.1), and outside the EXTENDED variant on D2 (z +163.7). Their V1 twins exclude, BORDERLINE (D4 z 3.5-3.6); first-pass and rerun z agree within 0.2. Tier verdicts identical under the declared bar, without D2, without D6 and without the D5/D6 merge (switched off by control C3). Descriptive, not decision-bearing: B lies outside all 130 ensembles on D6 (z >= 19.6) and all 92 ensembles where D2 is counted (z >= 38.5); the steelman's junction redraw reaches D2 0.11-0.18 (z 8-29), not counted. No tested configuration reproduces B's line-zone dependence, or its edge-glyph coupling where counted; only generators built to have these features pass them. Scope: the configurations tested; a grille with boundary or line-position rules beyond the steelman's junction redraw is a new test. Not excluding a variant is not evidence that it generates B; excluding the published configuration is not evidence for the control-program reading (C120) or for meaning (C2052). No Tier-0 proposal (the rule required PUBLISHED and EXTENDED both EXCLUDED). Partly unblinded: D2-D6 computed on fitted-variant members in pre-lock control C1 while B's PHASE_757 values were known; the FITTED bar recalibrated after this; no other rule changed. Post-lock deviation: a verdict-stage fix only (never-run rerun rows read as absent, not NaN; identical decisions on the first-pass array), tag phase778-lock2. The certified clause is new relative to PHASE_757; C2080's Naibbe exclusion meets it (D3 outside 64/64). Follow-up: a new pre-registered phase whose discriminator is certified on controls before it sees the d2/keep variants; extending N or adding discriminators to re-decide PHASE_778 is not allowed.	2	B, rival_generator, table_and_grille, Rugg, adversarial_external, pre_registered, negative_knowledge, not_excluded, PHASE_778, C2080, C2077, C120, C173, C2052
 
 ---
 
@@ -3117,7 +3132,7 @@ C2095	**No one-letter-per-word payload at Currier B's first or second glyph unit
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-09-30
+# Generated: 2026-10-02
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -6506,6 +6521,23 @@ clean operational story built from existing atom-gloss vocabulary. Discriminatin
 
 ---
 
+## fit-bands-resampling-floor
+
+*"A composition-fit band for a rival generator must be calibrated on B's own resampling controls (M1, G-EDGE) before it is declared: any with-replacement resampler of B misses B's hapax share and type count by several tolerance units (PHASE_778, control C2)"*
+
+**The rule.** When a rival generator is fitted to B's composition before a discriminator panel, set the "fitted" band
+from the panel's own positive controls run through the same distance, not from declared tolerances. Run that control
+(C2 in PHASE_778) before declaring the band, and never round the control's value after the rival's fits are seen.
+
+**Why.** PHASE_778 declared FITTED ≤ 1.0 on nine composition statistics. The M1 class-conditional resampler of B's own
+tokens scored 1.165 (hapax share 0.395 against B's 0.669, 5.5 scale units; types 3,426 against 4,640; distant-folio
+Jaccard 0.130 against 0.099) and G-EDGE 0.933. Any generator that redraws B's tokens with replacement collapses the
+long tail and blurs folio vocabulary, so the declared band was unreachable for the control and would have mislabelled
+
+[…trimmed — full note: memory/feedback_fit_bands_resampling_floor.md]
+
+---
+
 ## feedback-floor-vs-discriminator-metric-test
 
 *"Before treating any new literature-borrowed statistical metric as an NL-discriminator, test a known non-NL structured-symbolic system (e.g., mensural notation) for floor-passing. If the non-NL system passes the metric's NL threshold, the metric is a floor (structured-vs-random), not a discriminator (NL-vs-non-NL). PHASE_706 established (2026-05-19)"*
@@ -6719,6 +6751,24 @@ I have no concept of elapsed wall-clock time, how long a task took, what time of
 - The user decides when to stop and will say so explicitly ("I'll tell you when it's time to stop").
 
 […trimmed — full note: memory/feedback_no_time_or_fatigue_framing.md]
+
+---
+
+## non-exclusion-is-a-label
+
+*"A rival variant that is NOT EXCLUDED under a certified clause (an exclusion needs a discriminator the controls do not build in) is a label, not evidence of generation; write the label plus the numbers and ranks, never \"effectively excluded\" or \"a property of the rule\" (PHASE_778)"*
+
+**The trap.** In PHASE_778 two grille variants were NOT EXCLUDED because neither independently certified
+discriminator (D3, D4) was outside: D3 at chance, D4 with B above all 2,000 members but z 2.67 (bar 3.09), while B was
+outside the same ensembles on D5 (z −10), D6 (z +66) and D2 (z +164). My draft called the label "a property of the
+rule's conservatism, not a match". The lean-expert struck it: non-exclusion is never evidence of generation under any
+clause, so that contrast implies a third reading ("effectively excluded") that weights D2/D5/D6 more heavily after
+seeing the result than the lock did. That is the asymmetric-update pattern in the negative direction.
+
+**The rule.**
+- Write the label, the clause it rests on, the numbers (z and B's rank among members for every counted
+
+[…trimmed — full note: memory/feedback_non_exclusion_is_a_label.md]
 
 ---
 

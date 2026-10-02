@@ -165,10 +165,18 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Excluded at the second unit for every tested plaintext, also with up to 10% of symbols corrupted; at the first unit
     for noise-free payloads only. Not excluded: subsets of words, several positions, short-token carriers, units larger
     than letters, homophonic spellings, end-of-word positions (descriptive only).
+- **Table-and-grille generation (Rugg): tested, NOT EXCLUDED as a method** (C2096, PHASE_778).
+  - The published configuration's partial fits are excluded: no configuration as Hyde & Rugg describe it reaches B's
+    composition, and every one is outside on edge-glyph coupling (z ≥ 139) and line-zone dependence (z ≥ 19.6).
+  - One fitted variant each in the extended and steelman families is not excluded under the locked rule: adjacent
+    repetition at chance and B's cross-folio trigram excess at z 2.5–2.7 (above all or nearly all 2,000 members, below
+    the 3.0 bar), while B is outside the same ensembles on order information and line-zone dependence by 10 to 69
+    standard deviations and, where counted, on edge-glyph coupling by 164.
+  - No tested configuration reproduces line-zone dependence, or edge-glyph coupling where counted.
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
-  units, word-level codebooks with two or more spellings per word, modified verbose ciphers, the Rugg grille, and
-  improvisation in a practised script at book scale. Excluding a rival is not evidence for the working
-  interpretation.
+  units, word-level codebooks with two or more spellings per word, modified verbose ciphers, grilles with boundary or
+  line-position rules, and improvisation in a practised script at book scale. Excluding a rival is not evidence for
+  the working interpretation. Not excluding one is not evidence that it generated B.
 
 ## 5. How to annotate a stale citation (for anyone editing living docs)
 - **The claim is still presented as structure:** rewrite the passage to state the current status in plain words and

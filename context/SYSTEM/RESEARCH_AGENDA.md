@@ -53,7 +53,7 @@ text made to look meaningful? And, if it carries content, what content?
     - B has 5,141 types per 20,000 tokens; syllable-written controls 685–1,338; k* > 16 spellings per syllable.
     - Open: syllables written with spelling variation, morpheme-sized units (item 2).
 2. **The untested rival generators.**
-   - What: the Rugg grille (Parisel's public code), a word-level codebook, a syllable codebook with spelling variation
+   - What: the Rugg grille (done: PHASE_778, C2096, below), a word-level codebook, a syllable codebook with spelling variation
      (one spelling per syllable is excluded, C2085) and a modified verbose cipher, each through the PHASE_757
      harness with noise parity.
    - Word-level codebooks (PHASE_774):
@@ -72,6 +72,12 @@ text made to look meaningful? And, if it carries content, what content?
      - Open: the word end (needs a null keyed on the following token's ending; EF-L keeps only its first unit);
        payloads in a subset of words or over several positions; the source of the F1 residual (no-payload habits and
        corrupted payloads both land there).
+   - Table-and-grille generation (PHASE_778, C2096): PUBLISHED EXCLUDED (PARTIAL FITS ONLY); EXTENDED and STEELMAN
+     NOT EXCLUDED under the locked rule, one fitted variant each (the d = 2 / keep walks, V0; V1 borderline;
+     d2/reset/keep UNSTABLE-TO-FIT). Tier 0 unchanged.
+     - Open: a follow-up is a new pre-registered phase whose discriminator is certified on controls before it sees
+       these variants; extending PHASE_778's N or adding discriminators to re-decide it is not allowed. Grilles with
+       boundary or line-position rules are untested.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**

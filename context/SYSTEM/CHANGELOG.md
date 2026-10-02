@@ -4,6 +4,54 @@
 
 ---
 
+## Version 7.41 (2026-10-02) — PHASE_778: rival-generator panel II, the table-and-grille method (C2096)
+
+### Summary
+**Question.** Can Rugg's table-and-grille method, the remaining published mechanism for producing Voynich-like text
+without content, generate Currier B? Tested through the PHASE_757 discriminator panel with the device implemented
+from Hyde & Rugg's step-by-step description (quotations verified against the source), its tables built from B's own
+fragments and fitted to B's composition, in three tiers: PUBLISHED (as described), EXTENDED (published extensions and
+the public implementations' per-word placement), STEELMAN-EXPOSED (chain rows and junction redraw from B's junction
+table; D2 not counted).
+
+**Process.**
+- Design audit and confirmation pass by the lean-expert (23 edits in all); gates (page reproduction, binomial
+  lengths); composition fit per walk group with a declared extension; pre-lock controls C1–C5. C2 failed as declared
+  (B's own class-conditional resampler M1 scores 1.165 against the declared FITTED bar 1.0: the resampling floor),
+  so the bar was calibrated on the control's unrounded value; bands assigned per variant under both bars.
+- Locked at `phase778-lock`; 130 variants × 1,000 members (21.8 h), near-fit alternates, pooled rerun of
+  non-excluding variants. A verdict-stage bookkeeping bug after the rerun was fixed as a recorded post-lock
+  deviation (`phase778-lock2`; identical decisions on the first-pass array).
+
+**Result (C2096).** PUBLISHED: **EXCLUDED (PARTIAL FITS ONLY)**, all eight variants, none reaching B's composition;
+EXTENDED and STEELMAN: **NOT EXCLUDED under the locked rule**, one fitted variant each (83 of 84 and 37 of 38
+exclude). The two survivors meet the count clause but not the clause that an outside discriminator be D3 or D4:
+adjacent repetition is at chance (z +0.2) and B's cross-folio trigram excess sits at z +2.67 / +2.54 (above all 2,000
+members / above 1,995) against bars of 3.09 / 3.02, while B is outside the same ensembles on D5 (z −10) and D6
+(z +66 to +69) and, where counted, D2 (z +164). Tier labels are identical under both bars, without D2, without D6
+and without the D5/D6 merge. No Tier-0 proposal: the rule required PUBLISHED and EXTENDED both EXCLUDED. Tier 0 is
+unchanged.
+
+**Descriptively,** B lies outside all 130 ensembles on line-zone dependence (z ≥ 19.6) and all 92 where edge-glyph
+coupling is counted (z ≥ 38.5); the steelman's junction redraw reaches 0.11–0.18 bits of coupling (B 0.228), not
+counted. No tested configuration reproduces either feature. Not excluding a variant is not evidence that it generated
+B; excluding the published configuration is not evidence for meaning or for the control-program reading.
+
+### Methods findings
+- **Calibrate a rival's composition-fit band on B's own resampling controls** before declaring it; never round the
+  control's value after seeing the rival's fits; band each variant on its own distance.
+- **Report ranks beside z.** A variant can stay not excluded while B sits above every one of its 2,000 members on a
+  discriminator; the label and the numbers must travel together, and neither "effectively excluded" nor "generates B"
+  follows.
+- **The certified clause** (an exclusion needs a discriminator the controls do not build in) is new relative to
+  PHASE_757; C2080's Naibbe exclusion meets it.
+
+### Registry
+- New Tier-2 row: C2096 (one row for the whole test). Scope notes on C120 and, where the row allows, C173.
+- Live: 1,903 (T0 2, T1 38, T2 1,693, T3 166, T4 4); 778 phases.
+
+---
+
 ## Version 7.40 (2026-09-30) — PHASE_777: is one glyph position per word a message channel? (C2095)
 
 ### Summary
