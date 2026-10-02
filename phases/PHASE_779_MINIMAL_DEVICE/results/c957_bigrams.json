@@ -1,0 +1,41 @@
+{
+ "source": "phases/LINE_CONTROL_BLOCK_GRAMMAR/results/02_mandatory_forbidden_bigrams.json (C957)",
+ "bigrams": [
+  [
+   "chedy",
+   "aiin"
+  ],
+  [
+   "shedy",
+   "aiin"
+  ],
+  [
+   "qokeedy",
+   "ol"
+  ],
+  [
+   "chedy",
+   "ar"
+  ],
+  [
+   "ol",
+   "qokain"
+  ],
+  [
+   "ol",
+   "qokedy"
+  ],
+  [
+   "qokeedy",
+   "aiin"
+  ],
+  [
+   "chey",
+   "chedy"
+  ],
+  [
+   "chey",
+   "shedy"
+  ]
+ ]
+}
