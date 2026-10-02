@@ -1,0 +1,10 @@
+PHASE_779 fidelity; 2026-10-02 09:52:53
+kappa 0.5: D2 0.2275 ± 0.0050 (B 0.2282, z +0.13, outside False); halves 0.2612/0.2631; MH acc 0.348 changed 0.958 (446s)
+kappa 2.0: D2 0.2232 ± 0.0053 (B 0.2282, z +0.94, outside False); halves 0.2562/0.2604; MH acc 0.356 changed 0.961 (862s)
+kappa 8.0: D2 0.2137 ± 0.0051 (B 0.2282, z +2.87, outside False); halves 0.2465/0.2518; MH acc 0.370 changed 0.964 (1301s)
+mixing: D2 at 20 sweeps 0.2284 vs 0.2275 at 10 (sd 0.0050) pass True
+R2Lmemo: D2 0.2285 (z -0.06) D6 0.1866 (z -3.08)
+R2Lw: D2 0.2337 (z -1.02) D6 0.1960 (z -3.62)
+R2P: D2 0.2282 (z -0.01) D6 0.1846 (z -2.12)
+fidelity: kappa 0.5 selected; primary D2 pass True; memo D6 pass True; mixing pass True
+done

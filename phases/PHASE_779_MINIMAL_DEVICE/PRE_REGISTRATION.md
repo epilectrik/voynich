@@ -74,7 +74,12 @@ words), not member values.
   MI 0.26 on the first half of each page against 0.22 on the second: depletion; R2Lw, with replacement, 0.2337,
   z −1.0; `results/fidelity779_sequential_v1.json`); (ii) the within-cell Metropolis sampler, run through the same κ
   grid with a mixing check (20 sweeps against 10). Nothing on D3–D5 or the predictions informed these choices.
-- **Result (Metropolis sampler):** *to be inserted (`results/fidelity779.json`).*
+- **Result (Metropolis sampler; `results/fidelity779.json`; 200 members per point):** κ 0.5: D2 0.2275 ± 0.0050
+  (B 0.2282, z +0.13, not outside), raw edge MI 0.261 / 0.263 on the two halves (no depletion), acceptance 0.35,
+  95.8% of slots changed from the start; κ 2: 0.2232 (z +0.94); κ 8: 0.2137 (z +2.87). **κ = 0.5 selected on D2
+  alone; the primary passes.** Mixing: D2 0.2284 at 20 sweeps against 0.2275 at 10 (sd 0.0050): pass. R2Lmemo:
+  D2 0.2285 (z −0.06), D6 0.1866 (z −3.08, not outside: pass, at the margin; the per-word lookup over-produces zone
+  dependence). R2Lw: D2 0.2337 (z −1.0), D6 0.1960 (z −3.6). R2P: D2 0.2282, D6 0.1846 (z −2.1).
 
 ## Step 1 — the panel (PHASE_757's D2–D6, unchanged; B's values recomputed in the run)
 D2 is a fidelity statistic on every routing rung (an input marginal), D6 a fidelity statistic on R2Lmemo and a
