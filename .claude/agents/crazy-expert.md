@@ -241,7 +241,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-10-02 02:11
+**Generated:** 2026-10-02 02:12
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
