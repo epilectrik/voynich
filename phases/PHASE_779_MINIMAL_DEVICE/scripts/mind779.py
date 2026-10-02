@@ -82,6 +82,7 @@ def spec_tables(sk):
             zh['H' if par else 'B'][w][z] += 1
             wcount[w] += 1
             hcount[w] += bool(par)
+            u = units(w)
             afirst[u[0]] += 1
             alast[u[-1]] += 1
             n_all += 1
@@ -89,7 +90,6 @@ def spec_tables(sk):
                 hfirst[u[0]] += 1
                 hlast[u[-1]] += 1
                 n_header += 1
-            u = units(w)
             first_all[u[0]] += 1
             first2_all[tuple(u[:2])] += 1
             if prev is not None:
