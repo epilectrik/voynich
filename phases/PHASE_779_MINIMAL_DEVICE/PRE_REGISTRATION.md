@@ -128,7 +128,7 @@ statistic, expressed in the statistic's units as |plant mean − primary mean|.
 | P7 | e-run persistence: × (1 + λ) when the candidate's e-class equals the previous word's | λ grid |
 | P8 | family alternation: × (1 + λ) when the qo vs ch/sh family switches from the previous word | λ grid |
 | P10 | per-line hapax propensity: × g_l for hapax candidates, g_l ~ Gamma(1/λ², λ²) (mean 1) | λ grid |
-| P11 | linear medial-quintile tilt for e-run 2+ candidates: × (1 + λ (q − 2)/2) | λ grid |
+| P11 | linear medial-quintile tilt for e-run 2+ candidates: × max(0, 1 + λ (q − 2)/2) (the clamp, already in the sequential sampler, was added to the Metropolis term before the P11 grid ran: at λ 2 the unclamped factor is −1 at q = 0) | λ grid |
 | P12 | × (1 + λ) for ok-initial candidates after a qok-initial word | λ grid |
 
 Verdict per counted prediction on the primary:

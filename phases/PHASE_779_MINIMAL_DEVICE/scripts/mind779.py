@@ -618,7 +618,7 @@ def generate_mh(sk, T, rung='R2', stock='L', memo=False, header=False, plant=Non
                     L = line_len[li]; k = kpos[i]
                     if L >= 6 and 0 < k < L - 1 and ec == 2:
                         q = min(4, int(5 * (k - 1) / (L - 2)))
-                        t *= 1 + lam * (q - 2) / 2.0
+                        t *= max(0.0, 1 + lam * (q - 2) / 2.0)     # clamped, as in the sequential sampler
             return t
 
         def pair_term(wp, w):
