@@ -1,0 +1,9 @@
+PHASE_779 fidelity; 2026-10-02 09:22:56
+kappa 0.5: D2 0.2065 ± 0.0046 (B 0.2282, z +4.67, outside True); halves 0.2616/0.2189 (210s)
+kappa 2.0: D2 0.2022 ± 0.0048 (B 0.2282, z +5.43, outside True); halves 0.2567/0.2159 (410s)
+kappa 8.0: D2 0.1937 ± 0.0047 (B 0.2282, z +7.32, outside True); halves 0.2461/0.2104 (601s)
+R2Lmemo: D2 0.2076 (z +4.29) D6 0.1725 (z -0.13)
+R2Lw: D2 0.2337 (z -1.02) D6 0.1960 (z -3.62)
+R2P: D2 0.2129 (z +2.96) D6 0.1747 (z -0.56)
+fidelity: kappa 0.5 selected; primary D2 pass False; memo D6 pass True
+done

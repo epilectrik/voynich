@@ -523,5 +523,173 @@ def fidelity(lines, sk):
     return {'mi_route2_raw': _mi(p2), 'mi_edge_first_half_raw': _mi(halves[0]), 'mi_edge_second_half_raw': _mi(halves[1])}
 
 
+# ================================================================================================ Metropolis sampler
+MH_SWEEPS = 10
+
+
+def generate_mh(sk, T, rung='R2', stock='L', memo=False, header=False, plant=None, lam=0.0, rng=None, prohibit=None,
+                sweeps=MH_SWEEPS, init='seq', diag=False):
+    """Within-cell Metropolis sampler (the declared fallback, audit edit 5 iii): the cell's tokens are assigned to its
+    slots; the target is the product over slots of the zone weight and, for slots with a within-line predecessor, the
+    routing weight (and the plant's terms); proposals swap two slots' tokens; composition is exact by construction and
+    there is no depletion. Starts from the sequential sampler's output (init 'seq') or a within-cell shuffle ('shuffle');
+    `sweeps` sweeps of n_slots proposals each. Returns lines, or (lines, diagnostics) with diag=True."""
+    rng = np.random.default_rng() if rng is None else rng
+    assert rung in ('R0', 'R1', 'R2a', 'R2', 'R3')
+    if rung == 'R0':
+        lines = generate(sk, T, 'R0', stock, False, memo, header, None, 0.0, rng, None)
+        return (lines, {'acc': 1.0, 'changed': 1.0}) if diag else lines
+    if init == 'seq':
+        start = generate(sk, T, rung, stock, False, memo, header, plant, lam, rng, prohibit)
+    else:
+        start = generate(sk, T, 'R0', stock, False, memo, header, None, 0.0, rng, None)
+    lines = [list(ln) if ln is not None else None for ln in start]
+    cells = defaultdict(list)
+    for li, (f, par) in enumerate(zip(sk['folio'], sk['par_initial'])):
+        cells[(f, ('H' if par else 'B') if stock == 'L' else 'A')].append(li)
+    hap = {w for w, c in T['wc'].items() if c == 1}
+    pid, cur, lastf = [], -1, None
+    for f, t in zip(sk['folio'], sk['par_initial']):
+        if t or f != lastf:
+            cur += 1
+        pid.append(cur); lastf = f
+    route = {'R1': None, 'R2a': T['route1'], 'R2': T['route2'], 'R3': T['route3']}[rung]
+    uidx = T['u2i'] if rung == 'R3' else T['u1i']
+    n_acc = n_prop = n_changed = n_slots_all = 0
+    for key, idx in cells.items():
+        slots = [(li, p) for li in idx for p, w in enumerate(sk['lines'][li]) if w is not None]
+        n = len(slots)
+        if n < 2:
+            continue
+        tok = [lines[li][p] for li, p in slots]
+        init_tok = list(tok)
+        slot_of = {sl: i for i, sl in enumerate(slots)}
+        zone_s = [zone_of(p, len(sk['lines'][li])) for li, p in slots]
+        pred = [slot_of.get((li, p - 1)) if p > 0 and sk['lines'][li][p - 1] is not None else None for li, p in slots]
+        succ = [slot_of.get((li, p + 1)) if p + 1 < len(sk['lines'][li]) and sk['lines'][li][p + 1] is not None else None
+                for li, p in slots]
+        par_s = [sk['par_initial'][li] for li, p in slots]
+        cache = {}
+
+        def feats(w):
+            if w not in cache:
+                u = units(w)
+                zw = zone_weights(T, w, memo)
+                if header:
+                    ph = min(1.0, T['ph_first'][u[0]] * T['ph_last'][u[-1]] / T['ph_base'])
+                    zH = {z: zw[z] * T['zone_first']['H'].get(u[0], T['zone_first']['A'][u[0]])[z] / T['zone_first']['A'][u[0]][z]
+                          * T['zone_last']['H'].get(u[-1], T['zone_last']['A'][u[-1]])[z] / T['zone_last']['A'][u[-1]][z] * ph
+                          for z in ZONES}
+                    zB = {z: zw[z] * T['zone_first']['B'].get(u[0], T['zone_first']['A'][u[0]])[z] / T['zone_first']['A'][u[0]][z]
+                          * T['zone_last']['B'].get(u[-1], T['zone_last']['A'][u[-1]])[z] / T['zone_last']['A'][u[-1]][z] * (1 - ph)
+                          for z in ZONES}
+                else:
+                    zH = zB = zw
+                ukey = tuple(u[:2]) if rung == 'R3' else u[0]
+                cache[w] = (zH, zB, tuple(u[-2:]) if rung in ('R2', 'R3') else u[-1], uidx.get(ukey, -1), erun(w),
+                            family(w), w.startswith('qok'), w.startswith('ok'), w in hap,
+                            _prefix(w) if plant == 'P2' else None, set(u))
+            return cache[w]
+        pal = {}
+        if plant == 'P2':
+            base = Counter(_prefix(w) for w in tok)
+            keys = list(base)
+            alpha = lam * np.array([base[k] for k in keys], float) / max(len(set(tok)), 1)
+            for li in idx:
+                if pid[li] not in pal:
+                    pal[pid[li]] = dict(zip(keys, rng.dirichlet(alpha + 1e-9) * len(keys)))
+        gline = {}
+        if plant == 'P10':
+            for li in idx:
+                gline[li] = rng.gamma(1.0 / lam ** 2, lam ** 2) if lam > 0 else 1.0
+        line_len = {li: sum(1 for w in sk['lines'][li] if w is not None) for li in idx}
+        kpos = {i: sum(1 for q in range(p) if sk['lines'][li][q] is not None) for i, (li, p) in enumerate(slots)}
+
+        def slot_term(i, w):
+            zH, zB, e, ui, ec, fam_, isqok, isok, ishap, pref, useq = feats(w)
+            t = (zH if par_s[i] else zB)[zone_s[i]]
+            if plant and lam > 0:
+                li = slots[i][0]
+                if plant == 'P2':
+                    t *= pal[pid[li]].get(pref, 1.0)
+                elif plant == 'P10' and ishap:
+                    t *= gline[li]
+                elif plant == 'P11':
+                    L = line_len[li]; k = kpos[i]
+                    if L >= 6 and 0 < k < L - 1 and ec == 2:
+                        q = min(4, int(5 * (k - 1) / (L - 2)))
+                        t *= 1 + lam * (q - 2) / 2.0
+            return t
+
+        def pair_term(wp, w):
+            fp, fw = feats(wp), feats(w)
+            t = 1.0
+            if route is not None:
+                pr = route.get(fp[2])
+                if pr is not None and fw[3] >= 0:
+                    t *= pr[fw[3]]
+            if plant and lam > 0:
+                if plant == 'P6' and prohibit is not None and wp in prohibit and w in prohibit[wp]:
+                    t = 0.0
+                elif plant == 'P7' and fp[4] == fw[4]:
+                    t *= 1 + lam
+                elif plant == 'P8' and fp[5] and fw[5] and fp[5] != fw[5]:
+                    t *= 1 + lam
+                elif plant == 'P12' and fp[6] and fw[7]:
+                    t *= 1 + lam
+            return t
+
+        def line_term(li):
+            seen = set(); t = 1.0
+            for p, w in enumerate(sk['lines'][li]):
+                if w is None:
+                    continue
+                u = feats(tok[slot_of[(li, p)]])[10]
+                if seen:
+                    t *= 1 + lam * sum(x in seen for x in u) / len(u)
+                seen |= u
+            return t
+
+        def local(i, w_i, j, w_j):
+            cur = {i: w_i, j: w_j}
+
+            def at(k):
+                return cur.get(k, tok[k])
+            t = 1.0
+            touched = set()
+            for k in (i, j):
+                t *= slot_term(k, at(k))
+                if pred[k] is not None:
+                    touched.add((pred[k], k))
+                if succ[k] is not None:
+                    touched.add((k, succ[k]))
+            for a_, b_ in touched:
+                t *= pair_term(at(a_), at(b_))
+            return t
+        n_slots_all += n
+        for sweep in range(sweeps):
+            for _ in range(n):
+                i, j = int(rng.integers(n)), int(rng.integers(n))
+                if i == j or tok[i] == tok[j]:
+                    continue
+                n_prop += 1
+                before = local(i, tok[i], j, tok[j]); after = local(i, tok[j], j, tok[i])
+                if plant == 'P1' and lam > 0:
+                    li, lj = slots[i][0], slots[j][0]
+                    lb = line_term(li) * (line_term(lj) if lj != li else 1.0)
+                    tok[i], tok[j] = tok[j], tok[i]
+                    la = line_term(li) * (line_term(lj) if lj != li else 1.0)
+                    tok[i], tok[j] = tok[j], tok[i]
+                    before *= lb; after *= la
+                if after > 0 and (before <= 0 or after >= before or rng.random() < after / before):
+                    tok[i], tok[j] = tok[j], tok[i]
+                    n_acc += 1
+        n_changed += sum(1 for x, y in zip(tok, init_tok) if x != y)
+        for (li, p), w in zip(slots, tok):
+            lines[li][p] = w
+    d = {'acc': n_acc / max(n_prop, 1), 'changed': n_changed / max(n_slots_all, 1)}
+    return (lines, d) if diag else lines
+
+
 def load_c957():
     return json.load(open(OUT / 'c957_bigrams.json', encoding='utf-8'))['bigrams']

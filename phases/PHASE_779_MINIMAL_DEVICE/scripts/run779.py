@@ -123,25 +123,36 @@ def _init(kappa=None):
     _W['prohibit'] = {a: set(b) for a, b in json.load(open(pf, encoding='utf-8')).items()} if pf.exists() else None
 
 
-def gen_variant(name, rng, plant=None, lam=0.0, prohibit=None):
+SWEEPS = 10                             # Metropolis sweeps (init: the sequential sampler's output); mixing checked at 20
+
+
+def gen_variant(name, rng, plant=None, lam=0.0, prohibit=None, sweeps=None, diag=False):
+    """Without-replacement variants use the within-cell Metropolis sampler (the declared fallback after the sequential
+    sampler failed the fidelity gate on D2 through depletion); R2Lw stays the sequential with-replacement sampler."""
     M, sk, T = _W['M'], _W['sk'], _W['T']
     v = next(x for x in VARIANTS if x[0] == name)
     _, rung, stock, rep, memo, header = v
-    return M.generate(sk, T, rung, stock, rep, memo, header, plant, lam, rng, prohibit)
+    if rep:
+        lines = M.generate(sk, T, rung, stock, True, memo, header, plant, lam, rng, prohibit)
+        return (lines, {'acc': float('nan'), 'changed': float('nan')}) if diag else lines
+    return M.generate_mh(sk, T, rung, stock, memo, header, plant, lam, rng, prohibit,
+                         sweeps=SWEEPS if sweeps is None else sweeps, init='seq', diag=diag)
 
 
 def member(args):
     """(variant name, member, seed base, plant, lam, keep_pairs[, block])"""
     name, m, seed, plant, lam, keep_pairs = args[:6]
     block = args[6] if len(args) > 6 else 0
+    sweeps = args[7] if len(args) > 7 else None
     M, sk = _W['M'], _W['sk']
     rng = np.random.default_rng(seed + m)
-    lines = gen_variant(name, rng, plant, lam, _W.get('prohibit'))
+    lines, mh = gen_variant(name, rng, plant, lam, _W.get('prohibit'), sweeps=sweeps, diag=True)
     st = M.S.all_stats(lines, sk['folio'], rng)
     pr, cpairs = M.predictions(lines, sk, _W['c957'], _W['T'], rng)
     fid = M.fidelity(lines, sk)
     out = {'name': name, 'member': m, 'block': block, 'D': [st[d] for d in DS], 'P': [pr[k] for k in M.COUNTED],
-           'X': [pr[k] for k in M.DESCRIPTIVE], 'F': [fid[k] for k in ('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw')]}
+           'X': [pr[k] for k in M.DESCRIPTIVE], 'F': [fid[k] for k in ('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw')],
+           'MH': [mh['acc'], mh['changed']]}
     if keep_pairs:
         out['pairs'] = (np.array([k[0] for k in cpairs], np.int16), np.array([k[1] for k in cpairs], np.int16),
                         np.array(list(cpairs.values()), np.int16))
@@ -193,22 +204,30 @@ def pool_map(fn, tasks, init_kappa=None, chunksize=5):
 def stage_fidelity():
     """kappa chosen on D2 alone; the primary rung must not be outside on D2 (B's D2 known); memo variant on D6."""
     t0 = time.time()
-    res = {'kappa': {}, 'N': N_FID}
+    res = {'kappa': {}, 'N': N_FID, 'sampler': 'MH', 'sweeps': SWEEPS}
     for kappa in _W['M'].KAPPA_GRID if 'M' in _W else (0.5, 2.0, 8.0):
         tasks = [(PRIMARY, m, SEED_FID + int(kappa * 1000), None, 0.0, False) for m in range(N_FID)]
-        D = []; F = []
+        D = []; F = []; MH = []
         for r in pool_map(member, tasks, init_kappa=kappa):
-            D.append(r['D']); F.append(r['F'])
-        D = np.array(D); F = np.array(F)
+            D.append(r['D']); F.append(r['F']); MH.append(r['MH'])
+        D = np.array(D); F = np.array(F); MH = np.array(MH)
         d2 = summ(D[:, 0], B_KNOWN['D2'])
         res['kappa'][str(kappa)] = {'D2': d2, 'D2_outside': outside(B_KNOWN['D2'], D[:, 0], 5),
-                                    'D6': summ(D[:, 4], B_KNOWN['D6']), 'fidelity_means': dict(zip(('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw'), F.mean(0).tolist()))}
+                                    'D6': summ(D[:, 4], B_KNOWN['D6']), 'fidelity_means': dict(zip(('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw'), F.mean(0).tolist())),
+                                    'mh_acceptance': float(MH[:, 0].mean()), 'mh_changed': float(MH[:, 1].mean())}
         log(f"kappa {kappa}: D2 {d2['mean']:.4f} ± {d2['sd']:.4f} (B {B_KNOWN['D2']}, z {d2['z_B']:+.2f}, outside {res['kappa'][str(kappa)]['D2_outside']}); "
-            f"halves {F[:, 1].mean():.4f}/{F[:, 2].mean():.4f} ({time.time() - t0:.0f}s)")
+            f"halves {F[:, 1].mean():.4f}/{F[:, 2].mean():.4f}; MH acc {MH[:, 0].mean():.3f} changed {MH[:, 1].mean():.3f} ({time.time() - t0:.0f}s)")
     # selection on D2 alone: the kappa with the smallest |z_B| on D2
     best = min(res['kappa'], key=lambda k: abs(res['kappa'][k]['D2']['z_B']))
     res['kappa_selected'] = float(best)
     res['primary_D2_pass'] = not res['kappa'][best]['D2_outside']
+    # mixing check: the primary at 2 x SWEEPS must agree with SWEEPS on D2 within one ensemble sd
+    tasks = [(PRIMARY, m, SEED_FID + 90_000, None, 0.0, False, 0, 2 * SWEEPS) for m in range(N_FID)]
+    D = np.array([r['D'] for r in pool_map(member, tasks, init_kappa=float(best))])
+    d2b = summ(D[:, 0], B_KNOWN['D2'])
+    res['mixing'] = {'sweeps_double': 2 * SWEEPS, 'D2': d2b, 'delta_mean': d2b['mean'] - res['kappa'][best]['D2']['mean'],
+                     'pass': abs(d2b['mean'] - res['kappa'][best]['D2']['mean']) <= res['kappa'][best]['D2']['sd']}
+    log(f"mixing: D2 at {2 * SWEEPS} sweeps {d2b['mean']:.4f} vs {res['kappa'][best]['D2']['mean']:.4f} at {SWEEPS} (sd {res['kappa'][best]['D2']['sd']:.4f}) pass {res['mixing']['pass']}")
     # memo variant and the no-replacement check at the selected kappa
     for name in ('R2Lmemo', 'R2Lw', 'R2P'):
         tasks = [(name, m, SEED_FID + 50_000, None, 0.0, False) for m in range(N_FID)]
@@ -219,7 +238,7 @@ def stage_fidelity():
     res['memo_D6_pass'] = not res['R2Lmemo']['D6_outside']
     res['runtime_s'] = time.time() - t0
     json.dump(res, open(OUT / 'fidelity779.json', 'w', encoding='utf-8'), indent=1)
-    log(f"fidelity: kappa {best} selected; primary D2 pass {res['primary_D2_pass']}; memo D6 pass {res['memo_D6_pass']}")
+    log(f"fidelity: kappa {best} selected; primary D2 pass {res['primary_D2_pass']}; memo D6 pass {res['memo_D6_pass']}; mixing pass {res['mixing']['pass']}")
 
 
 def _prohibit_cells(rng, m):
@@ -416,7 +435,7 @@ def dry_run():
             r = member((v[0], m, 1, None, 0.0, v[0] == PRIMARY))
             log(f"[dry] {v[0]:8s} m{m} D " + ' '.join(f'{d} {x:+.3f}' for d, x in zip(DS, r['D'])) +
                 ' | P ' + ' '.join(f"{k.split('_')[0]} {x:+.3f}" for k, x in zip(M.COUNTED, r['P'])) +
-                ' | F ' + ' '.join(f'{x:.3f}' for x in r['F']))
+                ' | F ' + ' '.join(f'{x:.3f}' for x in r['F']) + f" | MH acc {r['MH'][0]:.2f} changed {r['MH'][1]:.2f}")
     for key, (plant, grid) in M.PLANTS.items():
         if plant == 'P6':
             continue
