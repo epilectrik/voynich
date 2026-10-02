@@ -1,0 +1,13 @@
+PHASE_778 controls; lock phase778-lock verified; inputs verified; 2026-10-01 02:32:43
+B: D2 0.2282, D3 0.0148, D4 2.4138, D5 0.0379, D6 0.1718
+  controls 500/2050 (107s)
+  controls 1000/2050 (194s)
+  controls 1500/2050 (276s)
+  controls 2000/2050 (366s)
+certification: usable=['D2', 'D3', 'D4', 'D5', 'D6'] k=5
+  D2: certifiers=['GEDGE'] non_builtin=False M1 z_B +147.9 GEDGE z_B -1.7
+  D3: certifiers=['GEDGE'] non_builtin=True M1 z_B -3.7 GEDGE z_B -0.9
+  D4: certifiers=['M1', 'GEDGE'] non_builtin=True M1 z_B +2.4 GEDGE z_B +2.7
+  D5: certifiers=['M1'] non_builtin=False M1 z_B -0.4 GEDGE z_B +3.7
+  D6: certifiers=['GEDGE'] non_builtin=False M1 z_B +36.8 GEDGE z_B -2.6
+done
