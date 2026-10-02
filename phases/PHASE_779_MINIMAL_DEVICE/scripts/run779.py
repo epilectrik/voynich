@@ -10,8 +10,10 @@
                                  counted prediction; writes results/plants779.json (generated members only)
   python run779.py run           B's values and N members per variant (+ a second seed block for the discrete
                                  statistic); raw arrays
-  python run779.py verdict       outside tests, three-way power rule, layer map
-Locked stages (run, verdict) verify the lock first.
+  python run779.py sens          descriptive sensitivity: the primary at kappa x 0.5 / x 2 and kappa_z x 0.5 / x 2
+                                 (200 members each) against B's locked values; writes results/sens779.json
+  python run779.py verdict       outside tests, three-way power rule, layer map (folds sens779.json in if present)
+Locked stages (run, sens, verdict) verify the lock first.
 """
 from __future__ import annotations
 
@@ -105,7 +107,7 @@ def kappa_locked():
     return json.load(open(f, encoding='utf-8'))['kappa_selected'] if f.exists() else 2.0
 
 
-def _init(kappa=None):
+def _init(kappa=None, kz=None):
     for v in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
         os.environ[v] = '1'
     try:
@@ -117,7 +119,8 @@ def _init(kappa=None):
     _W['M'] = M
     _W['sk'] = M.skeleton()
     _W['kappa'] = kappa_locked() if kappa is None else kappa
-    _W['T'] = M.spec_tables(_W['sk'], kappa=_W['kappa'])
+    _W['kz'] = M.KZ if kz is None else kz
+    _W['T'] = M.spec_tables(_W['sk'], kappa=_W['kappa'], kz=_W['kz'])
     _W['c957'] = M.load_c957()
     pf = OUT / 'prohibit_tmp.json'
     _W['prohibit'] = {a: set(b) for a, b in json.load(open(pf, encoding='utf-8')).items()} if pf.exists() else None
@@ -194,8 +197,8 @@ def summ(vals, b):
             'z_B': float((b - vals.mean()) / sd) if sd > 0 else float('nan'), 'rank_B': int((vals < b).sum())}
 
 
-def pool_map(fn, tasks, init_kappa=None, chunksize=5):
-    with Pool(WORKERS, initializer=_init, initargs=(init_kappa,)) as pool:
+def pool_map(fn, tasks, init_kappa=None, chunksize=5, init_kz=None):
+    with Pool(WORKERS, initializer=_init, initargs=(init_kappa, init_kz)) as pool:
         for r in pool.imap_unordered(fn, tasks, chunksize=chunksize):
             yield r
 
@@ -365,6 +368,38 @@ def stage_run():
     log(f'run done ({time.time() - t0:.0f}s)')
 
 
+SEED_SENS = 779_300_000
+N_SENS = 200
+
+
+def stage_sens():
+    """Descriptive sensitivity (pre-registration, Decision rules): the primary at kappa x 0.5 and x 2 and at kappa_z
+    x 0.5 and x 2, N_SENS members each, read against B's locked values. Not a verdict input."""
+    t0 = time.time()
+    M = _W['M']
+    B = json.load(open(OUT / 'b_values779.json', encoding='utf-8'))
+    kappa = kappa_locked()
+    settings = [('kappa_x0.5', kappa * 0.5, M.KZ), ('kappa_x2', kappa * 2.0, M.KZ),
+                ('kz_x0.5', kappa, M.KZ * 0.5), ('kz_x2', kappa, M.KZ * 2.0)]
+    res = {'kappa_locked': kappa, 'kz': M.KZ, 'N': N_SENS, 'settings': {}}
+    kP = len(M.COUNTED) + 1
+    for i, (name, ka, kz) in enumerate(settings):
+        tasks = [(PRIMARY, m, SEED_SENS + 10_000 * i, None, 0.0, False) for m in range(N_SENS)]
+        D = []; P = []
+        for r in pool_map(member, tasks, init_kappa=ka, init_kz=kz):
+            D.append(r['D']); P.append(r['P'])
+        D = np.array(D); P = np.array(P)
+        dd = {d: dict(summ(D[:, j], B['D'][d]), outside=outside(B['D'][d], D[:, j], 5)) for j, d in enumerate(DS)}
+        pp = {k: dict(summ(P[:, j], B['P'][k]), outside=outside(B['P'][k], P[:, j], kP)) for j, k in enumerate(M.COUNTED)}
+        res['settings'][name] = {'kappa': ka, 'kz': kz, 'D': dd, 'P': pp}
+        log(f"sens {name} (kappa {ka:g}, kz {kz:g}): " + ' '.join(f"{d} z{dd[d]['z_B']:+.1f}{'*' if dd[d]['outside'] else ''}" for d in DS)
+            + ' | ' + ' '.join(f"{k.split('_')[0]} z{pp[k]['z_B']:+.1f}{'*' if pp[k]['outside'] else ''}" for k in M.COUNTED)
+            + f" ({time.time() - t0:.0f}s)")
+    res['runtime_s'] = time.time() - t0
+    json.dump(res, open(OUT / 'sens779.json', 'w', encoding='utf-8'), indent=1)
+    log('sens done')
+
+
 def stage_verdict():
     M = _W['M']
     B = json.load(open(OUT / 'b_values779.json', encoding='utf-8'))
@@ -411,9 +446,11 @@ def stage_verdict():
         verdicts[k] = {'verdict': v, 'B': b, 'primary': prim, 'baseline': base, 'MDE80': mde, 'excess_over_baseline': excess,
                        'sampler_sensitive': sens}
     ladder = [n for n in LADDER if rows[n]['panel_pass']]
+    sens_f = OUT / 'sens779.json'
+    sensitivity = json.load(open(sens_f, encoding='utf-8'))['settings'] if sens_f.exists() else None
     out = {'B': B, 'kappa': kappa_locked(), 'z_star_P': zstar(kP), 'rows': rows, 'verdicts': verdicts,
            'primary': PRIMARY, 'primary_panel_pass': rows[PRIMARY]['panel_pass'], 'MIN_D_descriptive': ladder[0] if ladder else None,
-           'ladder_passing': ladder}
+           'ladder_passing': ladder, 'sensitivity_descriptive': sensitivity}
     json.dump(out, open(OUT / 'verdict779.json', 'w', encoding='utf-8'), indent=1)
     log(f"primary {PRIMARY}: panel (D3-D5) pass {rows[PRIMARY]['panel_pass']}; D2 fidelity outside {rows[PRIMARY]['fidelity_D2_outside']}; "
         f"MIN-D (descriptive) {out['MIN_D_descriptive']}")
@@ -422,6 +459,9 @@ def stage_verdict():
         log(f"  {n:8s} " + ' '.join(f"{d} {r['D'][d]['mean']:+.3f}(z{r['D'][d]['z_B']:+.1f}{'*' if r['D'][d]['outside'] else ''})" for d in DS))
     for k, v in verdicts.items():
         log(f"  {k:34s} {v['verdict']:28s} B {v['B']:.4f} primary {v['primary']['mean']:.4f}±{v['primary']['sd']:.4f} z {v['primary']['z_B']:+.2f} rank {v['primary']['rank_B']} | base z {v['baseline']['z_B']:+.2f} | MDE80 {v['MDE80']} | sens {v['sampler_sensitive']}")
+    if sensitivity:
+        for name, sv in sensitivity.items():
+            log(f"  sensitivity {name:10s} " + ' '.join(f"{k.split('_')[0]} z{sv['P'][k]['z_B']:+.1f}{'*' if sv['P'][k]['outside'] else ''}" for k in M.COUNTED))
 
 
 def dry_run():
@@ -455,13 +495,13 @@ def main():
         dry_run()
         return
     stage = next((a for a in sys.argv[1:] if not a.startswith('-')), None)
-    assert stage in ('fidelity', 'plants', 'run', 'verdict'), 'stage: fidelity | plants | run | verdict'
-    if stage in ('run', 'verdict'):
+    assert stage in ('fidelity', 'plants', 'run', 'sens', 'verdict'), 'stage: fidelity | plants | run | sens | verdict'
+    if stage in ('run', 'sens', 'verdict'):
         verify_lock()
     _init()
     LOGF = open(OUT / f'{stage}_log779.txt', 'a', encoding='utf-8')
-    log(f'PHASE_779 {stage}; {"lock " + LOCK + " verified; " if stage in ("run", "verdict") else ""}{time.strftime("%Y-%m-%d %H:%M:%S")}')
-    {'fidelity': stage_fidelity, 'plants': stage_plants, 'run': stage_run, 'verdict': stage_verdict}[stage]()
+    log(f'PHASE_779 {stage}; {"lock " + LOCK + " verified; " if stage in ("run", "sens", "verdict") else ""}{time.strftime("%Y-%m-%d %H:%M:%S")}')
+    {'fidelity': stage_fidelity, 'plants': stage_plants, 'run': stage_run, 'sens': stage_sens, 'verdict': stage_verdict}[stage]()
     log('done')
 
 
