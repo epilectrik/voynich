@@ -36,11 +36,12 @@ a new phase number.
   rule, no repeat rule.
 - **Ladder (rungs, without replacement):** R0 page stock only (a within-page shuffle); R1 + zone; R2a + one-unit
   routing; R2 + two-unit routing; R3 + two-unit-to-two-unit routing. Variants R2w and R3w with replacement.
-- **Plant (positive control for the paragraph predictions):** R2+H, in which paragraph-first lines weight each word
-  by a glyph-level header propensity (P_B(header | first unit) × P_B(header | last unit) / P_B(header), clipped to
-  1) and by B's paragraph-first-line zone weights, and body lines by the complement and the body-line zone weights
-  (a header rule the device is otherwise denied; glyph-level so that rare words inherit their glyphs' conventions).
-  It must move P3–P5 if those statistics have power.
+- **Plant (positive control for the paragraph predictions):** R2+H, a glyph-level header rule the device is
+  otherwise denied: in a line of type t (paragraph-first or body) a word's zone weight is its global zone weight
+  times P_B(zone | first unit, t) / P_B(zone | first unit) × P_B(zone | last unit, t) / P_B(zone | last unit), times
+  the header propensity P_B(header | first unit) × P_B(header | last unit) / P_B(header) (clipped to 1) for
+  paragraph-first lines and its complement for body lines. Glyph-level, so that rare words inherit their glyphs'
+  conventions (m-final, gallows-initial, f/p). It must move P3–P5 if those statistics have power.
 - Eight variants × N = 1,000 members (seed 779,000,000 + 10,000·variant + member) on B's skeleton (2,299 lines,
   21,610 certain tokens, 80 folios, 457 paragraph-first lines; blockers kept).
 

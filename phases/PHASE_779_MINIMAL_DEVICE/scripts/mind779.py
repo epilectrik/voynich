@@ -68,6 +68,8 @@ def spec_tables(sk):
     hcount, wcount = Counter(), Counter()
     hfirst, hlast, afirst, alast = Counter(), Counter(), Counter(), Counter()
     n_header = n_all = 0
+    zf = {t: defaultdict(Counter) for t in ('H', 'B', 'A')}     # zone counts by first unit, per line type
+    zl = {t: defaultdict(Counter) for t in ('H', 'B', 'A')}     # zone counts by last unit, per line type
     r2, r1, r3 = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
     first_all, first2_all = Counter(), Counter()
     for ln, par in zip(sk['lines'], sk['par_initial']):
@@ -86,6 +88,9 @@ def spec_tables(sk):
             afirst[u[0]] += 1
             alast[u[-1]] += 1
             n_all += 1
+            for t in ('H' if par else 'B', 'A'):
+                zf[t][u[0]][z] += 1
+                zl[t][u[-1]][z] += 1
             if par:
                 hfirst[u[0]] += 1
                 hlast[u[-1]] += 1
@@ -123,7 +128,9 @@ def spec_tables(sk):
             'p_header': {w: (hcount[w] + SMOOTH) / (wcount[w] + 2 * SMOOTH) for w in wcount},
             'ph_first': {u: (hfirst[u] + SMOOTH) / (afirst[u] + 2 * SMOOTH) for u in afirst},
             'ph_last': {u: (hlast[u] + SMOOTH) / (alast[u] + 2 * SMOOTH) for u in alast},
-            'ph_base': n_header / n_all}
+            'ph_base': n_header / n_all,
+            'zone_first': {t: {u: {z: (c[z] + SMOOTH) / (sum(c.values()) + 3 * SMOOTH) for z in ZONES} for u, c in d.items()} for t, d in zf.items()},
+            'zone_last': {t: {u: {z: (c[z] + SMOOTH) / (sum(c.values()) + 3 * SMOOTH) for z in ZONES} for u, c in d.items()} for t, d in zl.items()}}
 
 
 # ================================================================================================ device
@@ -144,12 +151,18 @@ def generate(sk, T, rung='R2', replace=False, plant=None, rng=None):
         firsts2_w = np.array([T['f2idx'][tuple(units(w)[:2])] for w in words])
         zw = {z: np.array([T['zone'][w][z] for w in words]) for z in ZONES}
         if plant == 'H':
-            # glyph-level header propensity: P(header | first unit) x P(header | last unit) / P(header), so that rare
-            # words inherit their glyphs' conventions (m-final, gallows-initial, f/p)
-            ph = np.array([T['ph_first'][units(w)[0]] * T['ph_last'][units(w)[-1]] / T['ph_base'] for w in words])
-            ph = np.clip(ph, 0.0, 1.0)
-            zH = {z: np.array([T['zone_H'].get(w, T['zone'][w])[z] for w in words]) * ph for z in ZONES}
-            zB = {z: np.array([T['zone_B'].get(w, T['zone'][w])[z] for w in words]) * (1 - ph) for z in ZONES}
+            # glyph-level header rule: a word's zone weight in a line of type t is its global zone weight times the
+            # line-type adjustment P(z | first unit, t) / P(z | first unit) x P(z | last unit, t) / P(z | last unit),
+            # times P(header | first unit) x P(header | last unit) / P(header) (clipped to 1) for header lines and the
+            # complement for body lines; rare words inherit their glyphs' conventions (m-final, gallows-initial, f/p)
+            ph = np.clip(np.array([T['ph_first'][units(w)[0]] * T['ph_last'][units(w)[-1]] / T['ph_base'] for w in words]), 0.0, 1.0)
+
+            def adj(t, z):
+                return np.array([T['zone_first'][t].get(units(w)[0], T['zone_first']['A'][units(w)[0]])[z] / T['zone_first']['A'][units(w)[0]][z]
+                                 * T['zone_last'][t].get(units(w)[-1], T['zone_last']['A'][units(w)[-1]])[z] / T['zone_last']['A'][units(w)[-1]][z]
+                                 for w in words])
+            zH = {z: zw[z] * adj('H', z) * ph for z in ZONES}
+            zB = {z: zw[z] * adj('B', z) * (1 - ph) for z in ZONES}
         for li in idx:
             ln = sk['lines'][li]
             n = len(ln)
