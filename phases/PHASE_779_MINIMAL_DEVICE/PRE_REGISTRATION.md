@@ -55,13 +55,14 @@ read on every rung anyway.
 
 ## Step 2 — the predictions (fixed now; B's values computed only in the locked run)
 Each statistic is computed identically on B and on every member. B is REPRODUCED by a variant if it is not outside
-(same criterion, z\* = Φ⁻¹(1 − 0.005/11) = 3.26); otherwise NOT REPRODUCED, with direction, z and B's rank.
+(same criterion, z\* = Φ⁻¹(1 − 0.005/10) = 3.29 over the ten blind predictions); otherwise NOT REPRODUCED, with
+direction, z and B's rank.
 
 | | Statistic | Registered relative | Encoded in the device? |
 |---|---|---|---|
 | P1 | Line homogeneity: mean within-line token entropy, percent reduction against 20 within-page shuffles | C1214 (3.8% at atom level, z −7) | no (no line memory) |
 | P2 | Paragraph PREFIX composition: mean within-folio JSD between paragraphs' PREFIX distributions (paragraphs ≥ 10 tokens) ÷ mean between-folio JSD of folio PREFIX distributions | C1811 (within 1.37× between) | no (no paragraph state) |
-| P3 | Line-final m by line type: share of m-final tokens among line-final tokens, paragraph-first lines minus body lines | C1435 (0% header, 10.45% body) | no paragraph state; zone encodes line-final m overall |
+| P3 | Line-final m by line type: share of m-final tokens (last glyph unit m) among line-final tokens, paragraph-first lines minus body lines | C1435 (0% header, 10.45% body, for its "m-terminal" statistic) | no paragraph state; zone encodes line-final m overall. **Unblinded pre-lock** (see Exposure): a consistency statistic, not a prediction; no scope note on C1435 |
 | P4 | Paragraph-initial gallows: share of gallows-initial first words, paragraph-first lines minus other lines | C1898 (openers line-initial) | no |
 | P5 | Top-line f/p: share of tokens containing p, f, cph or cfh, paragraph-first lines minus body lines | Zandbergen 2021's "prohibitive" feature | no |
 | P6 | Forbidden token bigrams: count of the nine C957 zero-count forward bigrams | C957 (B 0; shuffle 0.6 ± 0.8) | no (routing is glyph-level) |
@@ -75,8 +76,9 @@ Consistency descriptives (no verdict role): repeated within-line 5-token windows
 (B 0), max identical run (B 4).
 
 P8, P9 and P11 are partly encoded: a REPRODUCED there says the rules carry the regularity, a NOT REPRODUCED says the
-rules carry only part of it. The plant R2+H encodes P3–P5 by construction and is reported as the power check for
-them, not as a prediction.
+rules carry only part of it. The plant R2+H encodes the paragraph-line conventions by construction and is reported
+as the power check for P4 and P5 (and descriptively for P3), not as a prediction. Ten blind predictions count
+(z\* = Φ⁻¹(1 − 0.005/10) = 3.29); P3 is reported alongside.
 
 ## Decision rules (locked)
 - **Step 1 result:** MIN-D named, or INCOMPLETE with the outside statistics named per rung.
@@ -106,9 +108,18 @@ them, not as a prediction.
 - **B supplied before the lock:** its skeleton with paragraph-first flags; its per-page token multisets
   (composition); P_B(zone | word) (position composition); the two-unit routing tables (adjacent-pair glyph
   statistics, the G-EDGE exposure class); the registered values of the relatives above, as recorded in the registry.
-- **Not computed on B before the lock:** none of the eleven prediction statistics as implemented here, nor the
-  consistency descriptives; B's D2–D6 are known (PHASE_757/778) and are recomputed in the run.
-- **Dry run:** two members per variant and the outside logic against a member standing in for B; no B value read.
+- **Not computed on B before the lock:** none of the prediction statistics P1, P2, P4–P11 as implemented here, nor
+  the consistency descriptives; B's D2–D6 are known (PHASE_757/778) and are recomputed in the run.
+- **Unblinded pre-lock, disclosed:** while checking that the header plant suppresses m-final words at paragraph-first
+  line ends, the plant's own line-type tables showed that on this skeleton m-final tokens (last glyph unit m) end
+  paragraph-first lines about as often as body lines (91 of 457 against 327 of 1,842), so B's P3 as defined here is
+  approximately +0.02, not the −0.10 that C1435's "0% header, 10.45% body" would give. Either C1435's "m-terminal"
+  statistic or its "header" population differs from the last-unit / paragraph-first-line definitions used here. P3
+  is therefore kept as a declared consistency statistic (not a blind prediction), carries no scope note on C1435,
+  and C1435 is flagged for a definition check in the research agenda. No other prediction value was seen.
+- **Dry run:** two members per variant and the outside logic against a member standing in for B; no B value read
+  (members only; the plant's effect on P4 and P5 was verified on members: gallows-initial excess +0.68 to +0.75,
+  f/p excess +0.03 to +0.05, against about +0.01 to +0.04 and 0.00 without the plant).
 
 ## Procedure
 1. Commit this draft, the scripts and the dry run. Lean-expert design audit; edits; confirmation pass if required.
