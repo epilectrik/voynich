@@ -376,6 +376,14 @@ share), and controls C1–C5.
 4. `run778.py controls` (certification before any grille comparison is read), `run778.py panel`, `run778.py nearfit`,
    `run778.py verdict` (pooled rerun inside); raw results committed before the write-up; lean-expert results check.
 
+## Deviations (post-lock)
+- **Verdict-stage fix (tag `phase778-lock2`).** The verdict stage under `phase778-lock` crashed after the pooled rerun:
+  variants not rerun are all-NaN rows in the rerun array, and the D5 NaN rule read them as "every discriminator
+  dropped", then indexed an empty list. The fix excludes never-run members from the NaN rate and the envelope (they
+  are absent, not NaN) and marks such variants `no_data` in that array. No statistic, criterion, N, seed, family,
+  threshold or band changed; the controls, panel, near-fit and rerun arrays computed under `phase778-lock` are read
+  unchanged. The verdict was produced by `run778.py verdict` under `phase778-lock2`.
+
 ## Caveats
 - **Our implementation of a prose description.** Where the description leaves a choice (vertical shift range,
   line-start shift, end-of-table behaviour, grille and table changes) the choice is a declared axis or a fitted

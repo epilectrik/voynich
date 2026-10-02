@@ -1,0 +1,4 @@
+PHASE_778 verdict; lock phase778-lock verified; inputs verified; 2026-10-02 01:47:00
+first pass (N=1000): 128/130 variants exclude; rerunning 2 with fresh seeds for the pooled decision
+  panel offset5000000: 2000/2000 (426s)
+panel offset5000000 done (426s)

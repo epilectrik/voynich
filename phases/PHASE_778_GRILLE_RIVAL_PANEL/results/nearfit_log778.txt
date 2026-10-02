@@ -1,0 +1,14 @@
+PHASE_778 nearfit; lock phase778-lock verified; inputs verified; 2026-10-02 00:29:30
+  panel nearfit1: 2000/5000 (433s)
+  panel nearfit1: 4000/5000 (909s)
+panel nearfit1 done (1175s)
+  panel nearfit2: 2000/5000 (425s)
+  panel nearfit2: 4000/5000 (869s)
+panel nearfit2 done (1174s)
+  panel nearfit3: 2000/5000 (449s)
+  panel nearfit3: 4000/5000 (972s)
+panel nearfit3 done (1228s)
+  panel nearfit4: 2000/5000 (381s)
+  panel nearfit4: 4000/5000 (793s)
+panel nearfit4 done (1070s)
+done

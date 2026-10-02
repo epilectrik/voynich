@@ -35,7 +35,7 @@ sys.path.insert(0, str(HERE))
 import fit778 as F  # noqa: E402
 
 ROOT = Path('C:/git/voynich')
-LOCK = 'phase778-lock'
+LOCK = 'phase778-lock2'                # phase778-lock + the verdict-stage fix (see PRE_REGISTRATION.md, Deviations)
 PHASE = 'phases/PHASE_778_GRILLE_RIVAL_PANEL'
 OUT = ROOT / PHASE / 'results'
 P757 = 'phases/PHASE_757_NAIBBE_RIVAL_PANEL'
@@ -239,18 +239,26 @@ def evaluate(D, B, usable, nonbuiltin, vs, merge_reset):
     rows = []
     for vi, v in enumerate(vs):
         ds = counted_set(v['tier'], usable, None)
-        nan_rate = {d: float(np.isnan(D[vi, :, DS.index(d)]).mean()) for d in ds}
+        present = ~np.isnan(D[vi]).all(axis=1)          # members actually run in this array (rerun / near-fit / pooled)
+        if not present.any():
+            rows.append({'variant': v['name'], 'tier': v['tier'], 'band': v['band'], 'band_declared': v['band_declared'],
+                         'k': 0, 'counted': [], 'dropped_nan': [], 'nan_rate': {}, 'outside': [], 'n_out': 0,
+                         'merged_d5_d6': False, 'excludes': False, 'borderline': False, 'z': {}, 'rank': {},
+                         'means': {}, 'n': 0, 'no_data': True})
+            continue
+        Dv = D[vi][present]
+        nan_rate = {d: float(np.isnan(Dv[:, DS.index(d)]).mean()) for d in ds}
         dropped = [d for d in ds if nan_rate[d] > NAN_MAX]
         ds = [d for d in ds if d not in dropped]
         k = len(ds)
-        outs = [d for d in ds if outside(B[d], D[vi, :, DS.index(d)], k)]
+        outs = [d for d in ds if outside(B[d], Dv[:, DS.index(d)], k)]
         n_out = len(outs)
         merged = bool(merge_reset and v['family']['pos'] == 'reset' and v['family']['d'] != 'RP'
                       and 'D5' in outs and 'D6' in outs)
         if merged:
             n_out -= 1
         excl = n_out >= 2 and any(nonbuiltin[d] for d in outs)
-        st = {d: summ(D[vi, :, DS.index(d)], B[d]) for d in ds}
+        st = {d: summ(Dv[:, DS.index(d)], B[d]) for d in ds}
         border = bool(excl and any(abs(st[d]['z_B']) < Z_BORDER for d in outs))
         rows.append({'variant': v['name'], 'tier': v['tier'], 'band': v['band'], 'band_declared': v['band_declared'],
                      'k': k, 'counted': ds, 'dropped_nan': dropped, 'nan_rate': nan_rate, 'outside': outs,
@@ -417,7 +425,7 @@ def stage_verdict():
             Dn = np.load(f)['D']
             rn = evaluate(Dn, B, usable, nonbuiltin, vs, merge_reset)
             near[rank] = {vs[vi]['name']: {'group': vs[vi]['group'], 'excludes': r['excludes'], 'outside': r['outside']}
-                          for vi, r in enumerate(rn) if not np.isnan(Dn[vi]).all()}
+                          for vi, r in enumerate(rn) if not r.get('no_data')}
     unstable_groups = sorted({r['group'] for rk in near.values() for r in rk.values() if not r['excludes']})
     unstable = sorted(v['name'] for v in vs if v['group'] in unstable_groups)
     out = {'tiers': tiers, 'tiers_declared_bar': tiers_declared, 'fitted_bound': _W['X'].fitted_bound() if 'X' in _W else None,
