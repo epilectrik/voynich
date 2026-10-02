@@ -12,9 +12,9 @@ Device MIN-D (a sampler of the rules, not a claim about hands):
 Ladder (rungs): R0 page stock only (= within-page shuffle); R1 + zone; R2a + one-unit routing; R2 + two-unit routing
 (previous last two units -> next first unit); R3 + two-unit routing to the next word's first two units.
 Variant: R2w draws with replacement from the page's frequencies (composition noise). Plant (positive control for the
-paragraph predictions): R2+H, where paragraph-first lines weight each word by P_B(header line | word) and its
-header-line zone weights, body lines by the complement and the body-line zone weights (a header rule the device is
-otherwise denied).
+paragraph predictions): R2+H, where paragraph-first lines weight each word by a glyph-level header propensity
+(P_B(header | first unit) x P_B(header | last unit) / P_B(header), clipped to 1) and its header-line zone weights,
+body lines by the complement and the body-line zone weights (a header rule the device is otherwise denied).
 
 Panel: PHASE_757's D2-D6 (panel_stats.py). Predictions: statistics of registered regularities the device was not
 given (see PRE_REGISTRATION.md); each is computed identically on B and on every member.
@@ -66,6 +66,8 @@ def spec_tables(sk):
     zc = defaultdict(lambda: Counter())
     zh = {'H': defaultdict(Counter), 'B': defaultdict(Counter)}
     hcount, wcount = Counter(), Counter()
+    hfirst, hlast, afirst, alast = Counter(), Counter(), Counter(), Counter()
+    n_header = n_all = 0
     r2, r1, r3 = defaultdict(Counter), defaultdict(Counter), defaultdict(Counter)
     first_all, first2_all = Counter(), Counter()
     for ln, par in zip(sk['lines'], sk['par_initial']):
@@ -80,6 +82,13 @@ def spec_tables(sk):
             zh['H' if par else 'B'][w][z] += 1
             wcount[w] += 1
             hcount[w] += bool(par)
+            afirst[u[0]] += 1
+            alast[u[-1]] += 1
+            n_all += 1
+            if par:
+                hfirst[u[0]] += 1
+                hlast[u[-1]] += 1
+                n_header += 1
             u = units(w)
             first_all[u[0]] += 1
             first2_all[tuple(u[:2])] += 1
@@ -111,7 +120,10 @@ def spec_tables(sk):
             'route2': cond_table(r2, firsts, base), 'route1': cond_table(r1, firsts, base),
             'route3': cond_table(r3, firsts2, base2), 'firsts': firsts, 'fidx': fidx, 'base': base,
             'firsts2': firsts2, 'f2idx': f2idx, 'base2': base2,
-            'p_header': {w: (hcount[w] + SMOOTH) / (wcount[w] + 2 * SMOOTH) for w in wcount}}
+            'p_header': {w: (hcount[w] + SMOOTH) / (wcount[w] + 2 * SMOOTH) for w in wcount},
+            'ph_first': {u: (hfirst[u] + SMOOTH) / (afirst[u] + 2 * SMOOTH) for u in afirst},
+            'ph_last': {u: (hlast[u] + SMOOTH) / (alast[u] + 2 * SMOOTH) for u in alast},
+            'ph_base': n_header / n_all}
 
 
 # ================================================================================================ device
@@ -132,7 +144,10 @@ def generate(sk, T, rung='R2', replace=False, plant=None, rng=None):
         firsts2_w = np.array([T['f2idx'][tuple(units(w)[:2])] for w in words])
         zw = {z: np.array([T['zone'][w][z] for w in words]) for z in ZONES}
         if plant == 'H':
-            ph = np.array([T['p_header'][w] for w in words])
+            # glyph-level header propensity: P(header | first unit) x P(header | last unit) / P(header), so that rare
+            # words inherit their glyphs' conventions (m-final, gallows-initial, f/p)
+            ph = np.array([T['ph_first'][units(w)[0]] * T['ph_last'][units(w)[-1]] / T['ph_base'] for w in words])
+            ph = np.clip(ph, 0.0, 1.0)
             zH = {z: np.array([T['zone_H'].get(w, T['zone'][w])[z] for w in words]) * ph for z in ZONES}
             zB = {z: np.array([T['zone_B'].get(w, T['zone'][w])[z] for w in words]) * (1 - ph) for z in ZONES}
         for li in idx:
