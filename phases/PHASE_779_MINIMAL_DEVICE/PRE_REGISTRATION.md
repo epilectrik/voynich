@@ -1,7 +1,8 @@
 # PHASE_779 — The minimal device: a sampler of page × line-type composition, line-position vocabulary and two-unit junction routing; which of Currier B's other registered regularities is it not outside? (pre-registration)
 
-**Status: DRAFT v2 after the lean-expert design audit (NOT LOCKABLE as v1; all 38 edits incorporated). Pending before
-the lock: the fidelity gate and plant results below, and the confirmation pass.** No counted prediction statistic
+**Status: DRAFT v2 after the lean-expert design audit (NOT LOCKABLE as v1; all 38 edits incorporated). The sequential
+sampler failed the fidelity gate and the declared Metropolis fallback replaced it (Sampler, below). Pending before
+the lock: the Metropolis fidelity result and the plant results, and the confirmation pass.** No counted prediction statistic
 has been computed on Currier B (see Exposure for the three disclosed exceptions). The device has one pre-lock
 choice, the routing smoothing κ, made on D2 alone.
 
@@ -42,6 +43,16 @@ words), not member values.
   that the stock count does not count the marginal twice. Line-initial slots receive zone weights only.
 - Weight = n_rem(w) × zone × routing; if every weight is zero, the stock count alone. No paragraph state, no line
   memory, no interior rule, no repeat rule.
+- **Sampler.** The sequential sampler (draw slot by slot from the remaining stock with the weights above) **failed the
+  fidelity gate** (below): it under-produces coupling through depletion, since late slots are forced from what is
+  left. The declared fallback is therefore the sampler for every without-replacement variant: a **within-cell
+  Metropolis sampler** whose state is the assignment of the cell's tokens to its slots, whose target is the product
+  over slots of the zone weight and, for slots with a within-line predecessor, the routing weight (and a plant's
+  terms), whose proposals swap two slots' tokens (accepted with the ratio of the affected terms), and which starts
+  from the sequential sampler's output and runs 10 sweeps of n_slots proposals. Composition is exact by
+  construction. Mixing is checked in the fidelity gate (20 sweeps against 10, on D2) and reported per member
+  (acceptance rate; fraction of slots whose token changed from the start). R2Lw stays the sequential
+  with-replacement sampler, which has no depletion.
 - **Ladder (page × line-type stocks, without replacement):** R0L (stock only: a within-cell shuffle) → R1L (+ zone)
   → R2aL (+ one-unit routing) → **R2L (+ two-unit routing; the primary)** → R3L (+ two-to-two routing). Fixed in
   advance: prediction verdicts are registered on R2L; MIN-D (the lowest rung passing the panel) is descriptive.
@@ -58,10 +69,12 @@ words), not member values.
   must not be outside on D2 under the PHASE_757 rule; R2Lmemo must not be outside on D6. Reported descriptively:
   the generated raw MI(previous last two units; next first unit), and the raw edge MI on the first and second half of
   each page's lines (a depletion diagnostic); R2Lw, R2P alongside.
-- If the primary fails on D2 after the κ grid, the declared fallback is a within-cell Metropolis sampler targeting
-  the same weights with composition exact and mixing diagnostics; every sampler tried is listed. Nothing on D3–D5 or
-  the predictions may inform these choices.
-- **Result:** *to be inserted (`results/fidelity779.json`).*
+- Samplers tried, in the declared order: (i) the sequential sampler with the corrected weight form and back-off
+  zone tables: **failed** at every κ (D2 0.2065 ± 0.0046 at κ 0.5, z +4.7; 0.2022 at κ 2; 0.1937 at κ 8; raw edge
+  MI 0.26 on the first half of each page against 0.22 on the second: depletion; R2Lw, with replacement, 0.2337,
+  z −1.0; `results/fidelity779_sequential_v1.json`); (ii) the within-cell Metropolis sampler, run through the same κ
+  grid with a mixing check (20 sweeps against 10). Nothing on D3–D5 or the predictions informed these choices.
+- **Result (Metropolis sampler):** *to be inserted (`results/fidelity779.json`).*
 
 ## Step 1 — the panel (PHASE_757's D2–D6, unchanged; B's values recomputed in the run)
 D2 is a fidelity statistic on every routing rung (an input marginal), D6 a fidelity statistic on R2Lmemo and a
