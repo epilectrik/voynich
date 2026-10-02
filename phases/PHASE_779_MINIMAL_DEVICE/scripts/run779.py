@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""PHASE_779 locked run (see ../PRE_REGISTRATION.md).
+"""PHASE_779 (v2) locked run (see ../PRE_REGISTRATION.md).
 
   python run779.py --checksums   write results/input_checksums.json (before the lock commit)
-  python run779.py --dry         every code path on 3 members per variant and the evaluation logic (no B values read)
-  python run779.py run           B's values (D2-D6 and the predictions) and N members per variant
-  python run779.py verdict       inside/outside per variant and statistic; MIN-D; layer map
-Stages verify the lock first.
+  python run779.py --dry         every code path on 2 members per variant (no B value read)
+  python run779.py fidelity      PRE-LOCK: kappa grid on D2 alone (primary rung), memo variant's D6, depletion
+                                 diagnostics; writes results/fidelity779.json (generated members; B's D2/D6 are
+                                 the PHASE_757/778 values, already exposed)
+  python run779.py plants        PRE-LOCK: plant grids on the primary rung (200 members per point) -> MDE80 per
+                                 counted prediction; writes results/plants779.json (generated members only)
+  python run779.py run           B's values and N members per variant (+ a second seed block for the discrete
+                                 statistic); raw arrays
+  python run779.py verdict       outside tests, three-way power rule, layer map
+Locked stages (run, verdict) verify the lock first.
 """
 from __future__ import annotations
 
@@ -15,6 +21,7 @@ import os
 import subprocess
 import sys
 import time
+from collections import Counter
 from multiprocessing import Pool
 from pathlib import Path
 
@@ -38,24 +45,29 @@ P757 = 'phases/PHASE_757_NAIBBE_RIVAL_PANEL'
 INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'scripts/voynich.py',
           f'{P757}/scripts/panel_stats.py', f'{P757}/scripts/naibbe_harness.py',
           'phases/PHASE_778_GRILLE_RIVAL_PANEL/scripts/grille778.py',
+          'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json',
           'phases/LINE_CONTROL_BLOCK_GRAMMAR/results/02_mandatory_forbidden_bigrams.json')
 LOCKED = ('PRE_REGISTRATION.md', 'scripts/mind779.py', 'scripts/run779.py', 'results/c957_bigrams.json',
-          'results/input_checksums.json')
-VARIANTS = [('R0', False, None), ('R1', False, None), ('R2a', False, None), ('R2', False, None), ('R2', True, None),
-            ('R3', False, None), ('R3', True, None), ('R2', False, 'H')]
-LADDER = ['R0', 'R1', 'R2a', 'R2', 'R3']            # rungs in order of added rules (without replacement)
-N_MEMBERS = 1000
-SEED0 = 779_000_000
+          'results/fidelity779.json', 'results/plants779.json', 'results/input_checksums.json')
+# variants: (name, rung, stock, replace, memo, header)
+VARIANTS = [('R0L', 'R0', 'L', False, False, False), ('R1L', 'R1', 'L', False, False, False),
+            ('R2aL', 'R2a', 'L', False, False, False), ('R2L', 'R2', 'L', False, False, False),
+            ('R3L', 'R3', 'L', False, False, False), ('R2P', 'R2', 'P', False, False, False),
+            ('R2Lmemo', 'R2', 'L', False, True, False), ('R2Lw', 'R2', 'L', True, False, False),
+            ('R2L+H', 'R2', 'L', False, False, True)]
+PRIMARY = 'R2L'
+BASELINE = 'R0L'
+LADDER = ['R0L', 'R1L', 'R2aL', 'R2L', 'R3L']
+NO_COMPOSITION_READ = {'R2Lw'}          # composition statistics are not read on the depletion sensitivity
+N_MEMBERS, N_PLANT, N_FID = 1000, 200, 200
+SEED_RUN, SEED_RUN2, SEED_PLANT, SEED_FID = 779_000_000, 779_500_000, 779_200_000, 779_100_000
 DS = ['D2', 'D3', 'D4', 'D5', 'D6']
+PANEL_TESTED = ['D3', 'D4', 'D5']       # D2 (and D6 on memo) are fidelity statistics (audit edit 8)
 WORKERS = 6
 DRY = '--dry' in sys.argv
 _W = {}
 LOGF = None
-
-
-def vname(v):
-    rung, rep, plant = v
-    return rung + ('w' if rep else '') + ('+H' if plant else '')
+B_KNOWN = {'D2': 0.2282, 'D6': 0.1718}  # PHASE_778 certification values (exposed), for the fidelity gate only
 
 
 def log(*a):
@@ -88,7 +100,12 @@ def verify_lock():
         assert sha256(p) == sums[p], f'input changed since the lock: {p}'
 
 
-def _init():
+def kappa_locked():
+    f = OUT / 'fidelity779.json'
+    return json.load(open(f, encoding='utf-8'))['kappa_selected'] if f.exists() else 2.0
+
+
+def _init(kappa=None):
     for v in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
         os.environ[v] = '1'
     try:
@@ -99,38 +116,57 @@ def _init():
     import mind779 as M
     _W['M'] = M
     _W['sk'] = M.skeleton()
-    _W['T'] = M.spec_tables(_W['sk'])
+    _W['kappa'] = kappa_locked() if kappa is None else kappa
+    _W['T'] = M.spec_tables(_W['sk'], kappa=_W['kappa'])
     _W['c957'] = M.load_c957()
+    pf = OUT / 'prohibit_tmp.json'
+    _W['prohibit'] = {a: set(b) for a, b in json.load(open(pf, encoding='utf-8')).items()} if pf.exists() else None
+
+
+def gen_variant(name, rng, plant=None, lam=0.0, prohibit=None):
+    M, sk, T = _W['M'], _W['sk'], _W['T']
+    v = next(x for x in VARIANTS if x[0] == name)
+    _, rung, stock, rep, memo, header = v
+    return M.generate(sk, T, rung, stock, rep, memo, header, plant, lam, rng, prohibit)
 
 
 def member(args):
-    vi, m = args
-    M, sk, T = _W['M'], _W['sk'], _W['T']
-    rung, rep, plant = VARIANTS[vi]
-    rng = np.random.default_rng(SEED0 + 10_000 * vi + m)
-    lines = M.generate(sk, T, rung, rep, plant, rng)
+    """(variant name, member, seed base, plant, lam, keep_pairs[, block])"""
+    name, m, seed, plant, lam, keep_pairs = args[:6]
+    block = args[6] if len(args) > 6 else 0
+    M, sk = _W['M'], _W['sk']
+    rng = np.random.default_rng(seed + m)
+    lines = gen_variant(name, rng, plant, lam, _W.get('prohibit'))
     st = M.S.all_stats(lines, sk['folio'], rng)
-    pr = M.predictions(lines, sk, _W['c957'], rng)
-    return {'vi': vi, 'member': m, 'D': [st[d] for d in DS], 'P': [pr[k] for k in M.PRED_KEYS],
-            'X': [pr[k] for k in M.EXTRA_KEYS]}
+    pr, cpairs = M.predictions(lines, sk, _W['c957'], _W['T'], rng)
+    fid = M.fidelity(lines, sk)
+    out = {'name': name, 'member': m, 'block': block, 'D': [st[d] for d in DS], 'P': [pr[k] for k in M.COUNTED],
+           'X': [pr[k] for k in M.DESCRIPTIVE], 'F': [fid[k] for k in ('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw')]}
+    if keep_pairs:
+        out['pairs'] = (np.array([k[0] for k in cpairs], np.int16), np.array([k[1] for k in cpairs], np.int16),
+                        np.array(list(cpairs.values()), np.int16))
+    return out
 
 
 def b_values():
     M, sk = _W['M'], _W['sk']
     rng = np.random.default_rng(779)
     st = M.S.all_stats(sk['lines'], sk['folio'], rng)
-    pr = M.predictions(sk['lines'], sk, _W['c957'], rng)
-    return {'D': {d: float(st[d]) for d in DS}, 'P': {k: float(pr[k]) for k in M.PRED_KEYS},
-            'X': {k: pr[k] for k in M.EXTRA_KEYS}}
+    pr, cpairs = M.predictions(sk['lines'], sk, _W['c957'], _W['T'], rng)
+    fid = M.fidelity(sk['lines'], sk)
+    return {'D': {d: float(st[d]) for d in DS}, 'P': {k: float(pr[k]) for k in M.COUNTED},
+            'X': {k: (float(pr[k]) if isinstance(pr[k], float) else pr[k]) for k in M.DESCRIPTIVE}, 'F': fid}, cpairs
 
 
 def zstar(k):
     return norm.ppf(1 - 0.005 / max(k, 1))
 
 
-def outside(b, vals, k):
+def outside(b, vals, k, discrete=False):
     vals = np.asarray(vals, float)
     vals = vals[~np.isnan(vals)]
+    if discrete:
+        return bool(b < vals.min() or b > vals.max())          # strictly beyond every member; ties inside
     beyond = b < vals.min() or b > vals.max()
     sd = vals.std(ddof=1)
     if sd == 0:
@@ -144,83 +180,249 @@ def summ(vals, b):
     sd = vals.std(ddof=1)
     return {'mean': float(vals.mean()), 'sd': float(sd), 'min': float(vals.min()), 'max': float(vals.max()),
             'skew': float(skew(vals)) if sd > 0 else 0.0, 'n': int(len(vals)),
-            'z_B': float((b - vals.mean()) / sd) if sd > 0 else float('inf') * float(np.sign(b - vals.mean()) or 1.0),
-            'rank_B': int((vals < b).sum())}
+            'z_B': float((b - vals.mean()) / sd) if sd > 0 else float('nan'), 'rank_B': int((vals < b).sum())}
 
 
-def stage_run(n_members=N_MEMBERS, tag='run'):
+def pool_map(fn, tasks, init_kappa=None, chunksize=5):
+    with Pool(WORKERS, initializer=_init, initargs=(init_kappa,)) as pool:
+        for r in pool.imap_unordered(fn, tasks, chunksize=chunksize):
+            yield r
+
+
+# ================================================================================================ pre-lock stages
+def stage_fidelity():
+    """kappa chosen on D2 alone; the primary rung must not be outside on D2 (B's D2 known); memo variant on D6."""
     t0 = time.time()
-    _init()
-    B = b_values()
-    json.dump(B, open(OUT / f'b_values779_{tag}.json', 'w', encoding='utf-8'), indent=1)
+    res = {'kappa': {}, 'N': N_FID}
+    for kappa in _W['M'].KAPPA_GRID if 'M' in _W else (0.5, 2.0, 8.0):
+        tasks = [(PRIMARY, m, SEED_FID + int(kappa * 1000), None, 0.0, False) for m in range(N_FID)]
+        D = []; F = []
+        for r in pool_map(member, tasks, init_kappa=kappa):
+            D.append(r['D']); F.append(r['F'])
+        D = np.array(D); F = np.array(F)
+        d2 = summ(D[:, 0], B_KNOWN['D2'])
+        res['kappa'][str(kappa)] = {'D2': d2, 'D2_outside': outside(B_KNOWN['D2'], D[:, 0], 5),
+                                    'D6': summ(D[:, 4], B_KNOWN['D6']), 'fidelity_means': dict(zip(('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw'), F.mean(0).tolist()))}
+        log(f"kappa {kappa}: D2 {d2['mean']:.4f} ± {d2['sd']:.4f} (B {B_KNOWN['D2']}, z {d2['z_B']:+.2f}, outside {res['kappa'][str(kappa)]['D2_outside']}); "
+            f"halves {F[:, 1].mean():.4f}/{F[:, 2].mean():.4f} ({time.time() - t0:.0f}s)")
+    # selection on D2 alone: the kappa with the smallest |z_B| on D2
+    best = min(res['kappa'], key=lambda k: abs(res['kappa'][k]['D2']['z_B']))
+    res['kappa_selected'] = float(best)
+    res['primary_D2_pass'] = not res['kappa'][best]['D2_outside']
+    # memo variant and the no-replacement check at the selected kappa
+    for name in ('R2Lmemo', 'R2Lw', 'R2P'):
+        tasks = [(name, m, SEED_FID + 50_000, None, 0.0, False) for m in range(N_FID)]
+        D = np.array([r['D'] for r in pool_map(member, tasks, init_kappa=float(best))])
+        res[name] = {'D2': summ(D[:, 0], B_KNOWN['D2']), 'D6': summ(D[:, 4], B_KNOWN['D6']),
+                     'D6_outside': outside(B_KNOWN['D6'], D[:, 4], 5), 'D2_outside': outside(B_KNOWN['D2'], D[:, 0], 5)}
+        log(f"{name}: D2 {res[name]['D2']['mean']:.4f} (z {res[name]['D2']['z_B']:+.2f}) D6 {res[name]['D6']['mean']:.4f} (z {res[name]['D6']['z_B']:+.2f})")
+    res['memo_D6_pass'] = not res['R2Lmemo']['D6_outside']
+    res['runtime_s'] = time.time() - t0
+    json.dump(res, open(OUT / 'fidelity779.json', 'w', encoding='utf-8'), indent=1)
+    log(f"fidelity: kappa {best} selected; primary D2 pass {res['primary_D2_pass']}; memo D6 pass {res['memo_D6_pass']}")
+
+
+def _prohibit_cells(rng, m):
+    """m random cells among common-token pairs with primary-ensemble expectation >= 3 (from fidelity-run members)."""
+    exp = _W.get('pair_expect')
+    if exp is None:
+        return None
+    cells = [(a, b) for (a, b), e in exp.items() if e >= 3]
+    pick = rng.choice(len(cells), size=min(m, len(cells)), replace=False)
+    common = _W['T']['common']
+    pro = {}
+    for i in pick:
+        a, b = cells[i]
+        pro.setdefault(common[a], set()).add(common[b])
+    return pro
+
+
+def stage_plants():
+    """Plant grids on the primary rung: MDE80 per counted prediction (the smallest grid point at which >= 80% of
+    members are outside the baseline primary ensemble on that statistic). Generated members only."""
+    t0 = time.time()
+    M = _W['M']
+    kappa = kappa_locked()
+    # baseline primary ensemble (N_PLANT) for the outside test, with pair counts for the P6 cell set
+    tasks = [(PRIMARY, m, SEED_PLANT, None, 0.0, True) for m in range(N_PLANT)]
+    base = list(pool_map(member, tasks, init_kappa=kappa))
+    P0 = np.array([r['P'] for r in base])
+    nC = len(_W['T']['common']) if 'T' in _W else None
+    # ensemble pair expectation
+    acc = Counter()
+    for r in base:
+        a, b, c = r['pairs']
+        for i in range(len(a)):
+            acc[(int(a[i]), int(b[i]))] += int(c[i])
+    exp = {k: v / N_PLANT for k, v in acc.items()}
+    cells = [k for k, e in exp.items() if e >= 3]
+    zeros0 = []
+    for r in base:
+        a, b, c = r['pairs']
+        present = set(zip(a.tolist(), b.tolist()))
+        zeros0.append(sum(1 for k in cells if k not in present))
+    res = {'kappa': kappa, 'N': N_PLANT, 'cells_expect_ge3': len(cells), 'baseline_zeros': summ(zeros0, 0.0),
+           'plants': {}}
+    json.dump({'cells': cells, 'expect': {f'{a},{b}': e for (a, b), e in exp.items() if e >= 3}},
+              open(OUT / 'pair_cells779.json', 'w', encoding='utf-8'))
+    _W['pair_expect'] = exp
+    for key, (plant, grid) in M.PLANTS.items():
+        res['plants'][key] = {'plant': plant, 'grid': list(grid), 'points': {}}
+        j = M.COUNTED.index(key) if key in M.COUNTED else None
+        mde = None
+        for lam in grid:
+            rng0 = np.random.default_rng(SEED_PLANT + 777)
+            if plant == 'P6':
+                pro = _prohibit_cells(rng0, int(lam))
+                _W['prohibit'] = pro
+            tasks = [(PRIMARY, m, SEED_PLANT + 10_000 * (list(M.PLANTS).index(key) + 1) + int(lam * 100), plant, float(lam), plant == 'P6')
+                     for m in range(N_PLANT)]
+            if plant == 'P6':
+                # pool workers read the prohibit set from this file in _init (removed after the grid point)
+                json.dump({a: sorted(b) for a, b in pro.items()}, open(OUT / 'prohibit_tmp.json', 'w'))
+            vals = []
+            for r in pool_map(member, tasks, init_kappa=kappa):
+                if plant == 'P6':
+                    a, b, c = r['pairs']
+                    present = set(zip(a.tolist(), b.tolist()))
+                    vals.append(sum(1 for k in cells if k not in present))
+                else:
+                    vals.append(r['P'][j])
+            vals = np.array(vals, float)
+            ref = np.array(zeros0, float) if plant == 'P6' else P0[:, j]
+            frac_out = float(np.mean([outside(v, ref, 8, discrete=(plant == 'P6')) for v in vals]))
+            res['plants'][key]['points'][str(lam)] = {'mean': float(np.nanmean(vals)), 'sd': float(np.nanstd(vals, ddof=1)),
+                                                     'baseline_mean': float(np.nanmean(ref)), 'frac_outside': frac_out}
+            log(f"plant {key} lam {lam}: mean {np.nanmean(vals):.4f} (baseline {np.nanmean(ref):.4f}) outside {frac_out:.2f} ({time.time() - t0:.0f}s)")
+            if mde is None and frac_out >= 0.8:
+                mde = {'lam': float(lam), 'effect': float(abs(np.nanmean(vals) - np.nanmean(ref)))}
+            _W['prohibit'] = None
+            if (OUT / 'prohibit_tmp.json').exists():
+                (OUT / 'prohibit_tmp.json').unlink()
+        res['plants'][key]['MDE80'] = mde
+    res['runtime_s'] = time.time() - t0
+    json.dump(res, open(OUT / 'plants779.json', 'w', encoding='utf-8'), indent=1)
+    log('plants done')
+
+
+# ================================================================================================ locked stages
+def stage_run():
+    t0 = time.time()
+    M = _W['M']
+    B, bpairs = b_values()
+    cells = json.load(open(OUT / 'pair_cells779.json', encoding='utf-8'))['cells']
+    cellset = [tuple(c) for c in cells]
+    present = set(bpairs)
+    B['P6z_pair_zeros'] = sum(1 for k in cellset if k not in present)
+    json.dump(B, open(OUT / 'b_values779.json', 'w', encoding='utf-8'), indent=1)
     log('B: ' + ', '.join(f'{d} {B["D"][d]:.4f}' for d in DS))
-    log('B predictions: ' + ', '.join(f'{k} {v:.4f}' for k, v in B['P'].items()) + ' | ' +
-        ', '.join(f'{k} {v}' for k, v in B['X'].items()))
-    M = _W['M']
-    tasks = [(vi, m) for vi in range(len(VARIANTS)) for m in range(n_members)]
-    D = np.full((len(VARIANTS), n_members, len(DS)), np.nan)
-    P = np.full((len(VARIANTS), n_members, len(M.PRED_KEYS)), np.nan)
-    X = np.full((len(VARIANTS), n_members, len(M.EXTRA_KEYS)), np.nan)
-    with Pool(WORKERS, initializer=_init) as pool:
-        for i, r in enumerate(pool.imap_unordered(member, tasks, chunksize=5)):
-            D[r['vi'], r['member']] = r['D']
-            P[r['vi'], r['member']] = r['P']
-            X[r['vi'], r['member']] = r['X']
-            if (i + 1) % 500 == 0:
-                log(f'  {tag}: {i + 1}/{len(tasks)} ({time.time() - t0:.0f}s)')
-                np.savez_compressed(OUT / f'raw779_{tag}_interim.npz', D=D, P=P, X=X)
-    np.savez_compressed(OUT / f'raw779_{tag}.npz', D=D, P=P, X=X)
-    log(f'{tag} done ({time.time() - t0:.0f}s)')
+    log('B counted: ' + ', '.join(f'{k.split("_")[0]} {v:.4f}' for k, v in B['P'].items()) + f' | P6z {B["P6z_pair_zeros"]}')
+    log('B descriptive: ' + ', '.join(f'{k.split("_")[0] if k.startswith("P") else k} {v}' for k, v in B['X'].items()))
+    names = [v[0] for v in VARIANTS]
+    tasks = [(n, m, SEED_RUN + 10_000 * i, None, 0.0, n in (PRIMARY, BASELINE), 0) for i, n in enumerate(names) for m in range(N_MEMBERS)]
+    tasks += [(n, m, SEED_RUN2 + 10_000 * i, None, 0.0, True, 1) for i, n in enumerate(names) if n in (PRIMARY, BASELINE) for m in range(N_MEMBERS)]
+    D = {n: np.full((N_MEMBERS, len(DS)), np.nan) for n in names}
+    P = {n: np.full((N_MEMBERS, len(M.COUNTED)), np.nan) for n in names}
+    X = {n: np.full((N_MEMBERS, len(M.DESCRIPTIVE)), np.nan) for n in names}
+    F = {n: np.full((N_MEMBERS, 3), np.nan) for n in names}
+    Z = {n: {} for n in (PRIMARY, BASELINE)}          # pair zeros, two seed blocks
+    done = 0
+    for r in pool_map(member, tasks, init_kappa=kappa_locked()):
+        n, m, block = r['name'], r['member'], r['block']
+        if 'pairs' in r:
+            a, b, c = r['pairs']
+            pres = set(zip(a.tolist(), b.tolist()))
+            Z[n][(m, block)] = sum(1 for k in cellset if k not in pres)
+            if block == 1:
+                done += 1
+                continue
+        D[n][m] = r['D']; P[n][m] = r['P']; X[n][m] = r['X']; F[n][m] = r['F']
+        done += 1
+        if done % 1000 == 0:
+            log(f'  run: {done}/{len(tasks)} ({time.time() - t0:.0f}s)')
+    np.savez_compressed(OUT / 'raw779_run.npz', **{f'D_{n}': D[n] for n in names}, **{f'P_{n}': P[n] for n in names},
+                        **{f'X_{n}': X[n] for n in names}, **{f'F_{n}': F[n] for n in names})
+    json.dump({n: {f'{m},{b}': z for (m, b), z in Z[n].items()} for n in Z}, open(OUT / 'pair_zeros779.json', 'w'))
+    log(f'run done ({time.time() - t0:.0f}s)')
 
 
-def stage_verdict(tag='run'):
-    _init()
+def stage_verdict():
     M = _W['M']
-    B = json.load(open(OUT / f'b_values779_{tag}.json', encoding='utf-8'))
-    raw = np.load(OUT / f'raw779_{tag}.npz')
-    D, P, X = raw['D'], raw['P'], raw['X']
-    kD, kP = len(DS), len(M.PRED_KEYS)
+    B = json.load(open(OUT / 'b_values779.json', encoding='utf-8'))
+    raw = np.load(OUT / 'raw779_run.npz')
+    Zs = json.load(open(OUT / 'pair_zeros779.json', encoding='utf-8'))
+    plants = json.load(open(OUT / 'plants779.json', encoding='utf-8'))
+    names = [v[0] for v in VARIANTS]
+    counted = M.COUNTED + ['P6z_pair_zeros']
+    kP = len(counted)
     rows = {}
-    for vi, v in enumerate(VARIANTS):
-        name = vname(v)
-        dd = {d: dict(summ(D[vi, :, j], B['D'][d]), outside=outside(B['D'][d], D[vi, :, j], kD)) for j, d in enumerate(DS)}
-        pp = {k: dict(summ(P[vi, :, j], B['P'][k]), outside=outside(B['P'][k], P[vi, :, j], kP)) for j, k in enumerate(M.PRED_KEYS)}
-        xx = {k: summ(X[vi, :, j], B['X'][k]) for j, k in enumerate(M.EXTRA_KEYS)}
-        rows[name] = {'variant': v, 'D': dd, 'P': pp, 'X': xx, 'n_outside_D': sum(x['outside'] for x in dd.values()),
-                      'passes_panel': not any(x['outside'] for x in dd.values()),
-                      'reproduced': [k for k, x in pp.items() if not x['outside']],
-                      'not_reproduced': [k for k, x in pp.items() if x['outside']]}
-    ladder = [r for r in LADDER if rows[r]['passes_panel']]
-    mind = ladder[0] if ladder else None
-    fewest = min(LADDER, key=lambda r: rows[r]['n_outside_D'])
-    out = {'B': B, 'z_star': {'D': zstar(kD), 'P': zstar(kP)}, 'N': int(D.shape[1]), 'rows': rows,
-           'MIN_D': mind, 'ladder_passing': ladder, 'fewest_outside_rung': fewest,
-           'layer_map': {name: {'reproduced': r['reproduced'], 'not_reproduced': r['not_reproduced']} for name, r in rows.items()}}
-    json.dump(out, open(OUT / f'verdict779_{tag}.json', 'w', encoding='utf-8'), indent=1)
-    log(f"MIN-D: {mind} (passing rungs {ladder}; fewest outside {fewest})")
-    for name, r in rows.items():
-        log(f"  {name:5s} panel " + ' '.join(f"{d} {r['D'][d]['mean']:+.3f}(z{r['D'][d]['z_B']:+.1f}{'*' if r['D'][d]['outside'] else ''})" for d in DS)
-            + f"  outside {r['n_outside_D']}")
-        log(f"        pred " + ' '.join(f"{k.split('_')[0]} {r['P'][k]['mean']:+.3f}(z{r['P'][k]['z_B']:+.1f}{'*' if r['P'][k]['outside'] else ''})" for k in M.PRED_KEYS))
-    log('B predictions: ' + ', '.join(f"{k.split('_')[0]} {v:.3f}" for k, v in B['P'].items()))
+    for n in names:
+        D, P, X, F = raw[f'D_{n}'], raw[f'P_{n}'], raw[f'X_{n}'], raw[f'F_{n}']
+        dd = {d: dict(summ(D[:, j], B['D'][d]), outside=outside(B['D'][d], D[:, j], 5)) for j, d in enumerate(DS)}
+        pp = {}
+        for j, k in enumerate(M.COUNTED):
+            if n in NO_COMPOSITION_READ and k in ('P2_paragraph_prefix_jsd', 'P10_hapax_dispersion'):
+                continue
+            pp[k] = dict(summ(P[:, j], B['P'][k]), outside=outside(B['P'][k], P[:, j], kP))
+        if n in Zs:
+            zv = np.array(list(Zs[n].values()), float)
+            pp['P6z_pair_zeros'] = dict(summ(zv, B['P6z_pair_zeros']), outside=outside(B['P6z_pair_zeros'], zv, kP, discrete=True), pooled_n=int(len(zv)))
+        xx = {k: summ(X[:, j], B['X'][k]) for j, k in enumerate(M.DESCRIPTIVE)}
+        ff = dict(zip(('mi_route2_raw', 'mi_edge_first_half_raw', 'mi_edge_second_half_raw'), np.nanmean(F, axis=0).tolist()))
+        rows[n] = {'D': dd, 'P': pp, 'X': xx, 'F': ff,
+                   'panel_pass': not any(dd[d]['outside'] for d in PANEL_TESTED),
+                   'fidelity_D2_outside': dd['D2']['outside'], 'fidelity_D6_outside': dd['D6']['outside']}
+    # three-way power rule on the primary
+    verdicts = {}
+    for k in counted:
+        b = B['P'][k] if k in B['P'] else B['P6z_pair_zeros']
+        prim, base = rows[PRIMARY]['P'][k], rows[BASELINE]['P'][k]
+        out_base = base['outside']; out_prim = prim['outside']
+        mde = plants['plants'].get(k, {}).get('MDE80')
+        excess = abs(b - base['mean'])
+        if out_prim:
+            v = 'NOT REPRODUCED'
+        elif not out_base:
+            v = 'NO EXCESS ON THIS SKELETON'
+        elif mde is not None and mde['effect'] <= excess:
+            v = 'REPRODUCED (powered)'
+        else:
+            v = 'REPRODUCED (unpowered)'
+        sens = [n for n in ('R3L', 'R2Lw', 'R2Lmemo', 'R2P') if k in rows[n]['P'] and rows[n]['P'][k]['outside'] != out_prim]
+        verdicts[k] = {'verdict': v, 'B': b, 'primary': prim, 'baseline': base, 'MDE80': mde, 'excess_over_baseline': excess,
+                       'sampler_sensitive': sens}
+    ladder = [n for n in LADDER if rows[n]['panel_pass']]
+    out = {'B': B, 'kappa': kappa_locked(), 'z_star_P': zstar(kP), 'rows': rows, 'verdicts': verdicts,
+           'primary': PRIMARY, 'primary_panel_pass': rows[PRIMARY]['panel_pass'], 'MIN_D_descriptive': ladder[0] if ladder else None,
+           'ladder_passing': ladder}
+    json.dump(out, open(OUT / 'verdict779.json', 'w', encoding='utf-8'), indent=1)
+    log(f"primary {PRIMARY}: panel (D3-D5) pass {rows[PRIMARY]['panel_pass']}; D2 fidelity outside {rows[PRIMARY]['fidelity_D2_outside']}; "
+        f"MIN-D (descriptive) {out['MIN_D_descriptive']}")
+    for n in names:
+        r = rows[n]
+        log(f"  {n:8s} " + ' '.join(f"{d} {r['D'][d]['mean']:+.3f}(z{r['D'][d]['z_B']:+.1f}{'*' if r['D'][d]['outside'] else ''})" for d in DS))
+    for k, v in verdicts.items():
+        log(f"  {k:34s} {v['verdict']:28s} B {v['B']:.4f} primary {v['primary']['mean']:.4f}±{v['primary']['sd']:.4f} z {v['primary']['z_B']:+.2f} rank {v['primary']['rank_B']} | base z {v['baseline']['z_B']:+.2f} | MDE80 {v['MDE80']} | sens {v['sampler_sensitive']}")
 
 
 def dry_run():
     global LOGF
     (OUT / 'dryrun').mkdir(exist_ok=True)
     LOGF = open(OUT / 'dryrun' / 'dryrun_log.txt', 'w', encoding='utf-8')
-    _init()
+    _init(2.0)
     M = _W['M']
-    for vi, v in enumerate(VARIANTS):
+    for v in VARIANTS:
         for m in range(2):
-            r = member((vi, m))
-            log(f"[dry] {vname(v):5s} m{m} D " + ' '.join(f'{d} {x:+.3f}' for d, x in zip(DS, r['D'])) +
-                ' | P ' + ' '.join(f"{k.split('_')[0]} {x:+.3f}" for k, x in zip(M.PRED_KEYS, r['P'])) +
-                ' | X ' + ' '.join(f"{k.split('_')[1]} {x}" for k, x in zip(M.EXTRA_KEYS, r['X'])))
-    # evaluation logic on a fake B (the dry run reads no B value): the first member of R0 plays B
-    fake = {'D': dict(zip(DS, member((0, 0))['D'])), 'P': dict(zip(M.PRED_KEYS, member((0, 0))['P']))}
-    vals = np.array([member((3, m))['D'] for m in range(3)])
-    log('[dry] outside logic on 3 R2 members vs a fake B: ' + str({d: outside(fake['D'][d], vals[:, j], 5) for j, d in enumerate(DS)}))
+            r = member((v[0], m, 1, None, 0.0, v[0] == PRIMARY))
+            log(f"[dry] {v[0]:8s} m{m} D " + ' '.join(f'{d} {x:+.3f}' for d, x in zip(DS, r['D'])) +
+                ' | P ' + ' '.join(f"{k.split('_')[0]} {x:+.3f}" for k, x in zip(M.COUNTED, r['P'])) +
+                ' | F ' + ' '.join(f'{x:.3f}' for x in r['F']))
+    for key, (plant, grid) in M.PLANTS.items():
+        if plant == 'P6':
+            continue
+        r = member((PRIMARY, 0, 2, plant, float(grid[-1]), False))
+        j = M.COUNTED.index(key)
+        log(f"[dry] plant {plant} lam {grid[-1]}: {key.split('_')[0]} {r['P'][j]:+.4f}")
     log('[dry] done')
 
 
@@ -234,11 +436,13 @@ def main():
         dry_run()
         return
     stage = next((a for a in sys.argv[1:] if not a.startswith('-')), None)
-    assert stage in ('run', 'verdict'), 'stage: run | verdict'
-    verify_lock()
+    assert stage in ('fidelity', 'plants', 'run', 'verdict'), 'stage: fidelity | plants | run | verdict'
+    if stage in ('run', 'verdict'):
+        verify_lock()
+    _init()
     LOGF = open(OUT / f'{stage}_log779.txt', 'a', encoding='utf-8')
-    log(f'PHASE_779 {stage}; lock {LOCK} verified; inputs verified; {time.strftime("%Y-%m-%d %H:%M:%S")}')
-    {'run': stage_run, 'verdict': stage_verdict}[stage]()
+    log(f'PHASE_779 {stage}; {"lock " + LOCK + " verified; " if stage in ("run", "verdict") else ""}{time.strftime("%Y-%m-%d %H:%M:%S")}')
+    {'fidelity': stage_fidelity, 'plants': stage_plants, 'run': stage_run, 'verdict': stage_verdict}[stage]()
     log('done')
 
 
