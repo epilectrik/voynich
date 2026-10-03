@@ -1,0 +1,25 @@
+PHASE_779 verdict; lock phase779-lock verified; 2026-10-03 09:18:06
+primary R2L: panel (D3-D5) pass False; D2 fidelity outside False; MIN-D (descriptive) None
+  R0L      D2 -0.000(z+187.0*) D3 -0.001(z+0.2) D4 -0.113(z+4.9*) D5 -0.000(z+9.0*) D6 -0.000(z+87.8*)
+  R1L      D2 -0.001(z+186.0*) D3 +0.088(z-1.1) D4 +0.007(z+4.0*) D5 +0.008(z+7.3*) D6 +0.187(z-2.8)
+  R2aL     D2 +0.233(z-0.9) D3 +0.035(z-0.3) D4 +0.546(z+2.4) D5 +0.009(z+6.4*) D6 +0.185(z-2.5)
+  R2L      D2 +0.227(z+0.2) D3 +0.031(z-0.2) D4 +0.708(z+2.2) D5 +0.014(z+5.1*) D6 +0.185(z-2.6)
+  R3L      D2 +0.226(z+0.5) D3 +0.034(z-0.3) D4 +0.875(z+2.1) D5 +0.022(z+3.3*) D6 +0.182(z-1.9)
+  R2P      D2 +0.228(z+0.1) D3 +0.038(z-0.3) D4 +0.741(z+2.2) D5 +0.014(z+5.5*) D6 +0.184(z-2.4)
+  R2Lmemo  D2 +0.229(z-0.1) D3 +0.036(z-0.3) D4 +0.668(z+2.3) D5 +0.015(z+5.3*) D6 +0.186(z-2.7)
+  R2Lw     D2 +0.234(z-1.0) D3 +0.040(z-0.5) D4 +0.942(z+2.1) D5 +0.033(z+0.7) D6 +0.196(z-3.5*)
+  R2L+H    D2 +0.227(z+0.2) D3 +0.034(z-0.3) D4 +0.695(z+2.2) D5 +0.015(z+5.4*) D6 +0.184(z-2.2)
+  P1u_unit_line_homogeneity_pct      NOT REPRODUCED                               B 0.9620 primary 0.1987±0.0606 z +12.59 rank 1000 | base z +9.27 excess +0.5982 | MDE80 {'lam': 1.0, 'effect': 0.3347792645412335} ratio 0.5596574793596967 | sens []
+  P2_paragraph_prefix_jsd            NOT REPRODUCED                               B 0.2282 primary 0.2023±0.0037 z +6.92 rank 1000 | base z +6.70 excess +0.0255 | MDE80 {'lam': 100.0, 'effect': 0.019928621679689312} ratio 0.7823156775111538 | sens []
+  P7_erun_lag1_agree                 NOT REPRODUCED                               B 0.4555 primary 0.4328±0.0030 z +7.49 rank 1000 | base z +4.42 excess +0.0134 | MDE80 {'lam': 0.1, 'effect': 0.016934791623471} ratio 1.2670242347384095 | sens []
+  P8_qo_chsh_alternation             NOT REPRODUCED                               B 0.5846 primary 0.5150±0.0076 z +9.16 rank 1000 | base z +12.98 excess +0.1098 | MDE80 {'lam': 0.2, 'effect': 0.03742353920604513} ratio 0.34081058317998597 | sens []
+  P10_hapax_dispersion               NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE B 0.9689 primary 0.8930±0.0294 z +2.58 rank 996 | base z +2.79 excess +0.0796 | MDE80 {'lam': 0.5, 'effect': 0.15460339286744273} ratio 1.9414963217137862 | sens ['R2P']
+  P11_erun_medial_quintile_jsd       NOT REPRODUCED                               B 0.0030 primary 0.0002±0.0002 z +16.47 rank 1000 | base z +16.10 excess +0.0027 | MDE80 {'lam': 0.15, 'effect': 0.0014955098024166025} ratio 0.5493386863986531 | sens []
+  P12_ok_after_qok_share             NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE B 0.3795 primary 0.3421±0.0205 z +1.82 rank 973 | base z +1.53 excess +0.0343 | MDE80 {'lam': 0.75, 'effect': 0.11029527580595605} ratio 3.21547278248772 | sens []
+  P6z_pair_zeros                     NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE B 10.0000 primary 2.8755±1.6587 z +4.30 rank 1999 | base z -1.59 excess -5.4160 | MDE80 {'lam': 10.0, 'effect': 9.619499999999999} ratio 1.7761262924667647 | sens []
+  R2Lmemo fidelity-marginal (D6 outside at N 1,000): False; primary D2 fidelity failed: False
+  sensitivity kappa_x0.5 P1u z+12.1* P2 z+6.8* P7 z+7.5* P8 z+9.4* P10 z+2.8 P11 z+14.4* P12 z+1.9
+  sensitivity kappa_x2   P1u z+14.1* P2 z+7.1* P7 z+6.9* P8 z+10.2* P10 z+2.5 P11 z+16.8* P12 z+1.9
+  sensitivity kz_x0.5    P1u z+12.6* P2 z+7.0* P7 z+7.7* P8 z+10.0* P10 z+2.7 P11 z+17.9* P12 z+1.9
+  sensitivity kz_x2      P1u z+12.3* P2 z+6.9* P7 z+7.5* P8 z+10.3* P10 z+3.0 P11 z+18.7* P12 z+1.8
+done

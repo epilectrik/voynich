@@ -1,0 +1,36 @@
+PHASE_779 plantcheck; lock phase779-lock verified; 2026-10-03 04:59:41
+  plantcheck P1u_unit_line_homogeneity_pct lam 0.75: mean 0.4585 (pre-lock 0.4585, reproduces True); outside 0.77 against N 1000 (pre-lock 0.77) (1369s)
+  plantcheck P1u_unit_line_homogeneity_pct lam 1: mean 0.5334 (pre-lock 0.5334, reproduces True); outside 0.96 against N 1000 (pre-lock 0.96) (2678s)
+  plantcheck P1u_unit_line_homogeneity_pct lam 2: mean 0.6951 (pre-lock 0.6951, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (4042s)
+plantcheck P1u_unit_line_homogeneity_pct: MDE80 {'lam': 1.0, 'effect': 0.3347792645412335} (pre-lock {'lam': 1.0, 'effect': 0.3366}); bracket [0.2597808812267368, 0.3347792645412335]; reproduces True
+  plantcheck P2_paragraph_prefix_jsd lam 200: mean 0.2129 (pre-lock 0.2129, reproduces True); outside 0.38 against N 1000 (pre-lock 0.35) (4566s)
+  plantcheck P2_paragraph_prefix_jsd lam 100: mean 0.2223 (pre-lock 0.2223, reproduces True); outside 0.97 against N 1000 (pre-lock 0.97) (5090s)
+  plantcheck P2_paragraph_prefix_jsd lam 50: mean 0.2409 (pre-lock 0.2409, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (5555s)
+plantcheck P2_paragraph_prefix_jsd: MDE80 {'lam': 100.0, 'effect': 0.019928621679689312} (pre-lock {'lam': 100.0, 'effect': 0.020029256587954652}); bracket [0.010546908017928208, 0.019928621679689312]; reproduces True
+  plantcheck P6z_pair_zeros lam 7: mean 9.5500 (pre-lock 9.5500, reproduces True); outside 0.21 against N 2000 (pre-lock 0.73) (6067s)
+  plantcheck P6z_pair_zeros lam 8: mean 10.9000 (pre-lock 10.9000, reproduces True); outside 0.52 against N 2000 (pre-lock 0.94) (6578s)
+  plantcheck P6z_pair_zeros lam 10: mean 12.4950 (pre-lock 12.4950, reproduces True); outside 0.93 against N 2000 (pre-lock 1.00) (7091s)
+  plantcheck P6z_pair_zeros lam 20: mean 22.3150 (pre-lock 22.3150, reproduces True); outside 1.00 against N 2000 (pre-lock 1.00) (7603s)
+plantcheck P6z_pair_zeros: MDE80 {'lam': 10.0, 'effect': 9.619499999999999} (pre-lock {'lam': 8.0, 'effect': 8.245000000000001}); bracket [8.0245, 9.619499999999999]; reproduces True
+  plantcheck P7_erun_lag1_agree lam 0.05: mean 0.4415 (pre-lock 0.4415, reproduces True); outside 0.20 against N 1000 (pre-lock 0.39) (8123s)
+  plantcheck P7_erun_lag1_agree lam 0.075: mean 0.4454 (pre-lock 0.4454, reproduces True); outside 0.66 against N 1000 (pre-lock 0.83) (8645s)
+  plantcheck P7_erun_lag1_agree lam 0.1: mean 0.4498 (pre-lock 0.4498, reproduces True); outside 0.96 against N 1000 (pre-lock 1.00) (9098s)
+  plantcheck P7_erun_lag1_agree lam 0.25: mean 0.4730 (pre-lock 0.4730, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (9623s)
+plantcheck P7_erun_lag1_agree: MDE80 {'lam': 0.1, 'effect': 0.016934791623471} (pre-lock {'lam': 0.075, 'effect': 0.012565830396019106}); bracket [0.012555515239477566, 0.016934791623471]; reproduces True
+  plantcheck P8_qo_chsh_alternation lam 0.15: mean 0.5446 (pre-lock 0.5446, reproduces True); outside 0.67 against N 1000 (pre-lock 0.68) (10142s)
+  plantcheck P8_qo_chsh_alternation lam 0.2: mean 0.5524 (pre-lock 0.5524, reproduces True); outside 0.91 against N 1000 (pre-lock 0.93) (10655s)
+  plantcheck P8_qo_chsh_alternation lam 0.25: mean 0.5614 (pre-lock 0.5614, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (11173s)
+plantcheck P8_qo_chsh_alternation: MDE80 {'lam': 0.2, 'effect': 0.03742353920604513} (pre-lock {'lam': 0.2, 'effect': 0.037317778844796146}); bracket [0.02966389339763109, 0.03742353920604513]; reproduces True
+  plantcheck P10_hapax_dispersion lam 0.35: mean 0.9717 (pre-lock 0.9717, reproduces True); outside 0.28 against N 1000 (pre-lock 0.30) (11680s)
+  plantcheck P10_hapax_dispersion lam 0.5: mean 1.0476 (pre-lock 1.0476, reproduces True); outside 0.96 against N 1000 (pre-lock 0.98) (12187s)
+  plantcheck P10_hapax_dispersion lam 1: mean 1.4219 (pre-lock 1.4219, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (12660s)
+plantcheck P10_hapax_dispersion: MDE80 {'lam': 0.5, 'effect': 0.15460339286744273} (pre-lock {'lam': 0.5, 'effect': 0.1524000000000001}); bracket [0.07863527034643925, 0.15460339286744273]; reproduces True
+  plantcheck P11_erun_medial_quintile_jsd lam 0.15: mean 0.0017 (pre-lock 0.0017, reproduces True); outside 0.86 against N 1000 (pre-lock 0.75) (13169s)
+  plantcheck P11_erun_medial_quintile_jsd lam 0.2: mean 0.0029 (pre-lock 0.0029, reproduces True); outside 1.00 against N 1000 (pre-lock 0.98) (13729s)
+plantcheck P11_erun_medial_quintile_jsd: MDE80 {'lam': 0.15, 'effect': 0.0014955098024166025} (pre-lock {'lam': 0.2, 'effect': 0.002660793615108403}); bracket [None, 0.0014955098024166025]; reproduces True
+  plantcheck P12_ok_after_qok_share lam 0.5: mean 0.4219 (pre-lock 0.4219, reproduces True); outside 0.76 against N 1000 (pre-lock 0.73) (14374s)
+  plantcheck P12_ok_after_qok_share lam 0.75: mean 0.4524 (pre-lock 0.4524, reproduces True); outside 0.99 against N 1000 (pre-lock 0.98) (14922s)
+  plantcheck P12_ok_after_qok_share lam 1: mean 0.4742 (pre-lock 0.4742, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (15498s)
+plantcheck P12_ok_after_qok_share: MDE80 {'lam': 0.75, 'effect': 0.11029527580595605} (pre-lock {'lam': 0.75, 'effect': 0.11024802667214317}); bracket [0.07971685512842192, 0.11029527580595605]; reproduces True
+plantcheck done
+done

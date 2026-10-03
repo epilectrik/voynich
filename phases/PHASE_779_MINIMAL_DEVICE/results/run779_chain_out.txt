@@ -1,0 +1,98 @@
+PHASE_779 run; lock phase779-lock verified; 2026-10-02 22:30:06
+B: D2 0.2282, D3 0.0148, D4 2.3567, D5 0.0378, D6 0.1717
+B counted: P1u 0.9620, P2 0.2282, P7 0.4555, P8 0.5846, P10 0.9689, P11 0.0030, P12 0.3795 | P6z 10
+B descriptive: P1t 0.575642519245969, P3 0.021600296509597355, P4 0.7874087959762127, P5 0.20619267385710618, P6n 0, P9 8.0, X_class_pair_mi 0.23209239527629635, X_rpt5 0, X_duplicate_lines 0, X_max_identical_run 4
+  run: 500/11000 (491s)
+  run: 1000/11000 (976s)
+  run: 1500/11000 (1845s)
+  run: 2000/11000 (2878s)
+  run: 2500/11000 (4109s)
+  run: 3000/11000 (5350s)
+  run: 3500/11000 (6491s)
+  run: 4000/11000 (7574s)
+  run: 4500/11000 (8692s)
+  run: 5000/11000 (9786s)
+  run: 5500/11000 (10996s)
+  run: 6000/11000 (12309s)
+  run: 6500/11000 (13475s)
+  run: 7000/11000 (14625s)
+  run: 7500/11000 (15140s)
+  run: 8000/11000 (15669s)
+  run: 8500/11000 (16882s)
+  run: 9000/11000 (18063s)
+  run: 9500/11000 (18571s)
+  run: 10000/11000 (19076s)
+  run: 10500/11000 (20337s)
+  run: 11000/11000 (21451s)
+run done (21451s; 11000 members)
+done
+PHASE_779 sens; lock phase779-lock verified; 2026-10-03 04:27:42
+sens kappa_x0.5 (kappa 0.25, kz 1): D2 z-0.2 D3 z-0.2 D4 z+2.3 D5 z+5.3* D6 z-2.5 | P1u z+12.1* P2 z+6.8* P7 z+7.5* P8 z+9.4* P10 z+2.8 P11 z+14.4* P12 z+1.9 (478s)
+sens kappa_x2 (kappa 1, kz 1): D2 z+0.3 D3 z-0.3 D4 z+2.2 D5 z+5.1* D6 z-2.4 | P1u z+14.1* P2 z+7.1* P7 z+6.9* P8 z+10.2* P10 z+2.5 P11 z+16.8* P12 z+1.9 (960s)
+sens kz_x0.5 (kappa 0.5, kz 0.5): D2 z+0.2 D3 z-0.4 D4 z+2.1 D5 z+5.0* D6 z-4.0* | P1u z+12.6* P2 z+7.0* P7 z+7.7* P8 z+10.0* P10 z+2.7 P11 z+17.9* P12 z+1.9 (1438s)
+sens kz_x2 (kappa 0.5, kz 2): D2 z+0.0 D3 z-0.3 D4 z+2.2 D5 z+5.5* D6 z-0.6 | P1u z+12.3* P2 z+6.9* P7 z+7.5* P8 z+10.3* P10 z+3.0 P11 z+18.7* P12 z+1.8 (1916s)
+sens done
+done
+PHASE_779 plantcheck; lock phase779-lock verified; 2026-10-03 04:59:41
+  plantcheck P1u_unit_line_homogeneity_pct lam 0.75: mean 0.4585 (pre-lock 0.4585, reproduces True); outside 0.77 against N 1000 (pre-lock 0.77) (1369s)
+  plantcheck P1u_unit_line_homogeneity_pct lam 1: mean 0.5334 (pre-lock 0.5334, reproduces True); outside 0.96 against N 1000 (pre-lock 0.96) (2678s)
+  plantcheck P1u_unit_line_homogeneity_pct lam 2: mean 0.6951 (pre-lock 0.6951, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (4042s)
+plantcheck P1u_unit_line_homogeneity_pct: MDE80 {'lam': 1.0, 'effect': 0.3347792645412335} (pre-lock {'lam': 1.0, 'effect': 0.3366}); bracket [0.2597808812267368, 0.3347792645412335]; reproduces True
+  plantcheck P2_paragraph_prefix_jsd lam 200: mean 0.2129 (pre-lock 0.2129, reproduces True); outside 0.38 against N 1000 (pre-lock 0.35) (4566s)
+  plantcheck P2_paragraph_prefix_jsd lam 100: mean 0.2223 (pre-lock 0.2223, reproduces True); outside 0.97 against N 1000 (pre-lock 0.97) (5090s)
+  plantcheck P2_paragraph_prefix_jsd lam 50: mean 0.2409 (pre-lock 0.2409, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (5555s)
+plantcheck P2_paragraph_prefix_jsd: MDE80 {'lam': 100.0, 'effect': 0.019928621679689312} (pre-lock {'lam': 100.0, 'effect': 0.020029256587954652}); bracket [0.010546908017928208, 0.019928621679689312]; reproduces True
+  plantcheck P6z_pair_zeros lam 7: mean 9.5500 (pre-lock 9.5500, reproduces True); outside 0.21 against N 2000 (pre-lock 0.73) (6067s)
+  plantcheck P6z_pair_zeros lam 8: mean 10.9000 (pre-lock 10.9000, reproduces True); outside 0.52 against N 2000 (pre-lock 0.94) (6578s)
+  plantcheck P6z_pair_zeros lam 10: mean 12.4950 (pre-lock 12.4950, reproduces True); outside 0.93 against N 2000 (pre-lock 1.00) (7091s)
+  plantcheck P6z_pair_zeros lam 20: mean 22.3150 (pre-lock 22.3150, reproduces True); outside 1.00 against N 2000 (pre-lock 1.00) (7603s)
+plantcheck P6z_pair_zeros: MDE80 {'lam': 10.0, 'effect': 9.619499999999999} (pre-lock {'lam': 8.0, 'effect': 8.245000000000001}); bracket [8.0245, 9.619499999999999]; reproduces True
+  plantcheck P7_erun_lag1_agree lam 0.05: mean 0.4415 (pre-lock 0.4415, reproduces True); outside 0.20 against N 1000 (pre-lock 0.39) (8123s)
+  plantcheck P7_erun_lag1_agree lam 0.075: mean 0.4454 (pre-lock 0.4454, reproduces True); outside 0.66 against N 1000 (pre-lock 0.83) (8645s)
+  plantcheck P7_erun_lag1_agree lam 0.1: mean 0.4498 (pre-lock 0.4498, reproduces True); outside 0.96 against N 1000 (pre-lock 1.00) (9098s)
+  plantcheck P7_erun_lag1_agree lam 0.25: mean 0.4730 (pre-lock 0.4730, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (9623s)
+plantcheck P7_erun_lag1_agree: MDE80 {'lam': 0.1, 'effect': 0.016934791623471} (pre-lock {'lam': 0.075, 'effect': 0.012565830396019106}); bracket [0.012555515239477566, 0.016934791623471]; reproduces True
+  plantcheck P8_qo_chsh_alternation lam 0.15: mean 0.5446 (pre-lock 0.5446, reproduces True); outside 0.67 against N 1000 (pre-lock 0.68) (10142s)
+  plantcheck P8_qo_chsh_alternation lam 0.2: mean 0.5524 (pre-lock 0.5524, reproduces True); outside 0.91 against N 1000 (pre-lock 0.93) (10655s)
+  plantcheck P8_qo_chsh_alternation lam 0.25: mean 0.5614 (pre-lock 0.5614, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (11173s)
+plantcheck P8_qo_chsh_alternation: MDE80 {'lam': 0.2, 'effect': 0.03742353920604513} (pre-lock {'lam': 0.2, 'effect': 0.037317778844796146}); bracket [0.02966389339763109, 0.03742353920604513]; reproduces True
+  plantcheck P10_hapax_dispersion lam 0.35: mean 0.9717 (pre-lock 0.9717, reproduces True); outside 0.28 against N 1000 (pre-lock 0.30) (11680s)
+  plantcheck P10_hapax_dispersion lam 0.5: mean 1.0476 (pre-lock 1.0476, reproduces True); outside 0.96 against N 1000 (pre-lock 0.98) (12187s)
+  plantcheck P10_hapax_dispersion lam 1: mean 1.4219 (pre-lock 1.4219, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (12660s)
+plantcheck P10_hapax_dispersion: MDE80 {'lam': 0.5, 'effect': 0.15460339286744273} (pre-lock {'lam': 0.5, 'effect': 0.1524000000000001}); bracket [0.07863527034643925, 0.15460339286744273]; reproduces True
+  plantcheck P11_erun_medial_quintile_jsd lam 0.15: mean 0.0017 (pre-lock 0.0017, reproduces True); outside 0.86 against N 1000 (pre-lock 0.75) (13169s)
+  plantcheck P11_erun_medial_quintile_jsd lam 0.2: mean 0.0029 (pre-lock 0.0029, reproduces True); outside 1.00 against N 1000 (pre-lock 0.98) (13729s)
+plantcheck P11_erun_medial_quintile_jsd: MDE80 {'lam': 0.15, 'effect': 0.0014955098024166025} (pre-lock {'lam': 0.2, 'effect': 0.002660793615108403}); bracket [None, 0.0014955098024166025]; reproduces True
+  plantcheck P12_ok_after_qok_share lam 0.5: mean 0.4219 (pre-lock 0.4219, reproduces True); outside 0.76 against N 1000 (pre-lock 0.73) (14374s)
+  plantcheck P12_ok_after_qok_share lam 0.75: mean 0.4524 (pre-lock 0.4524, reproduces True); outside 0.99 against N 1000 (pre-lock 0.98) (14922s)
+  plantcheck P12_ok_after_qok_share lam 1: mean 0.4742 (pre-lock 0.4742, reproduces True); outside 1.00 against N 1000 (pre-lock 1.00) (15498s)
+plantcheck P12_ok_after_qok_share: MDE80 {'lam': 0.75, 'effect': 0.11029527580595605} (pre-lock {'lam': 0.75, 'effect': 0.11024802667214317}); bracket [0.07971685512842192, 0.11029527580595605]; reproduces True
+plantcheck done
+done
+PHASE_779 verdict; lock phase779-lock verified; 2026-10-03 09:18:06
+C:\git\voynich\phases\PHASE_779_MINIMAL_DEVICE\scripts\run779.py:201: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  'skew': float(skew(vals)) if sd > 0 else 0.0, 'n': int(len(vals)),
+primary R2L: panel (D3-D5) pass False; D2 fidelity outside False; MIN-D (descriptive) None
+  R0L      D2 -0.000(z+187.0*) D3 -0.001(z+0.2) D4 -0.113(z+4.9*) D5 -0.000(z+9.0*) D6 -0.000(z+87.8*)
+  R1L      D2 -0.001(z+186.0*) D3 +0.088(z-1.1) D4 +0.007(z+4.0*) D5 +0.008(z+7.3*) D6 +0.187(z-2.8)
+  R2aL     D2 +0.233(z-0.9) D3 +0.035(z-0.3) D4 +0.546(z+2.4) D5 +0.009(z+6.4*) D6 +0.185(z-2.5)
+  R2L      D2 +0.227(z+0.2) D3 +0.031(z-0.2) D4 +0.708(z+2.2) D5 +0.014(z+5.1*) D6 +0.185(z-2.6)
+  R3L      D2 +0.226(z+0.5) D3 +0.034(z-0.3) D4 +0.875(z+2.1) D5 +0.022(z+3.3*) D6 +0.182(z-1.9)
+  R2P      D2 +0.228(z+0.1) D3 +0.038(z-0.3) D4 +0.741(z+2.2) D5 +0.014(z+5.5*) D6 +0.184(z-2.4)
+  R2Lmemo  D2 +0.229(z-0.1) D3 +0.036(z-0.3) D4 +0.668(z+2.3) D5 +0.015(z+5.3*) D6 +0.186(z-2.7)
+  R2Lw     D2 +0.234(z-1.0) D3 +0.040(z-0.5) D4 +0.942(z+2.1) D5 +0.033(z+0.7) D6 +0.196(z-3.5*)
+  R2L+H    D2 +0.227(z+0.2) D3 +0.034(z-0.3) D4 +0.695(z+2.2) D5 +0.015(z+5.4*) D6 +0.184(z-2.2)
+  P1u_unit_line_homogeneity_pct      NOT REPRODUCED                               B 0.9620 primary 0.1987±0.0606 z +12.59 rank 1000 | base z +9.27 excess +0.5982 | MDE80 {'lam': 1.0, 'effect': 0.3347792645412335} ratio 0.5596574793596967 | sens []
+  P2_paragraph_prefix_jsd            NOT REPRODUCED                               B 0.2282 primary 0.2023±0.0037 z +6.92 rank 1000 | base z +6.70 excess +0.0255 | MDE80 {'lam': 100.0, 'effect': 0.019928621679689312} ratio 0.7823156775111538 | sens []
+  P7_erun_lag1_agree                 NOT REPRODUCED                               B 0.4555 primary 0.4328±0.0030 z +7.49 rank 1000 | base z +4.42 excess +0.0134 | MDE80 {'lam': 0.1, 'effect': 0.016934791623471} ratio 1.2670242347384095 | sens []
+  P8_qo_chsh_alternation             NOT REPRODUCED                               B 0.5846 primary 0.5150±0.0076 z +9.16 rank 1000 | base z +12.98 excess +0.1098 | MDE80 {'lam': 0.2, 'effect': 0.03742353920604513} ratio 0.34081058317998597 | sens []
+  P10_hapax_dispersion               NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE B 0.9689 primary 0.8930±0.0294 z +2.58 rank 996 | base z +2.79 excess +0.0796 | MDE80 {'lam': 0.5, 'effect': 0.15460339286744273} ratio 1.9414963217137862 | sens ['R2P']
+  P11_erun_medial_quintile_jsd       NOT REPRODUCED                               B 0.0030 primary 0.0002±0.0002 z +16.47 rank 1000 | base z +16.10 excess +0.0027 | MDE80 {'lam': 0.15, 'effect': 0.0014955098024166025} ratio 0.5493386863986531 | sens []
+  P12_ok_after_qok_share             NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE B 0.3795 primary 0.3421±0.0205 z +1.82 rank 973 | base z +1.53 excess +0.0343 | MDE80 {'lam': 0.75, 'effect': 0.11029527580595605} ratio 3.21547278248772 | sens []
+  P6z_pair_zeros                     NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE B 10.0000 primary 2.8755±1.6587 z +4.30 rank 1999 | base z -1.59 excess -5.4160 | MDE80 {'lam': 10.0, 'effect': 9.619499999999999} ratio 1.7761262924667647 | sens []
+  R2Lmemo fidelity-marginal (D6 outside at N 1,000): False; primary D2 fidelity failed: False
+  sensitivity kappa_x0.5 P1u z+12.1* P2 z+6.8* P7 z+7.5* P8 z+9.4* P10 z+2.8 P11 z+14.4* P12 z+1.9
+  sensitivity kappa_x2   P1u z+14.1* P2 z+7.1* P7 z+6.9* P8 z+10.2* P10 z+2.5 P11 z+16.8* P12 z+1.9
+  sensitivity kz_x0.5    P1u z+12.6* P2 z+7.0* P7 z+7.7* P8 z+10.0* P10 z+2.7 P11 z+17.9* P12 z+1.9
+  sensitivity kz_x2      P1u z+12.3* P2 z+6.9* P7 z+7.5* P8 z+10.3* P10 z+3.0 P11 z+18.7* P12 z+1.8
+done

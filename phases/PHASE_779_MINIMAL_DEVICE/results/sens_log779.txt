@@ -1,0 +1,7 @@
+PHASE_779 sens; lock phase779-lock verified; 2026-10-03 04:27:42
+sens kappa_x0.5 (kappa 0.25, kz 1): D2 z-0.2 D3 z-0.2 D4 z+2.3 D5 z+5.3* D6 z-2.5 | P1u z+12.1* P2 z+6.8* P7 z+7.5* P8 z+9.4* P10 z+2.8 P11 z+14.4* P12 z+1.9 (478s)
+sens kappa_x2 (kappa 1, kz 1): D2 z+0.3 D3 z-0.3 D4 z+2.2 D5 z+5.1* D6 z-2.4 | P1u z+14.1* P2 z+7.1* P7 z+6.9* P8 z+10.2* P10 z+2.5 P11 z+16.8* P12 z+1.9 (960s)
+sens kz_x0.5 (kappa 0.5, kz 0.5): D2 z+0.2 D3 z-0.4 D4 z+2.1 D5 z+5.0* D6 z-4.0* | P1u z+12.6* P2 z+7.0* P7 z+7.7* P8 z+10.0* P10 z+2.7 P11 z+17.9* P12 z+1.9 (1438s)
+sens kz_x2 (kappa 0.5, kz 2): D2 z+0.0 D3 z-0.3 D4 z+2.2 D5 z+5.5* D6 z-0.6 | P1u z+12.3* P2 z+6.9* P7 z+7.5* P8 z+10.3* P10 z+3.0 P11 z+18.7* P12 z+1.8 (1916s)
+sens done
+done
