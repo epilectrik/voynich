@@ -1,8 +1,8 @@
 # PHASE_779 — The minimal device: a sampler of page × line-type composition, line-position vocabulary and two-unit junction routing; which of Currier B's other registered regularities is it not outside? (pre-registration)
 
-**Status: DRAFT v2 after the lean-expert design audit (NOT LOCKABLE as v1; all 38 edits incorporated). The sequential
-sampler failed the fidelity gate and the declared Metropolis fallback replaced it (Sampler, below). Pending before
-the lock: the Metropolis fidelity result and the plant results, and the confirmation pass.** No counted prediction statistic
+**Status: v3, FOR LOCK after the confirmation pass (design audit: all 38 edits incorporated; the sequential sampler
+failed the fidelity gate and the declared Metropolis fallback replaced it and passed; plant MDE80s filled in from
+`results/plants779.json`).** No counted prediction statistic
 has been computed on Currier B (see Exposure for the three disclosed exceptions). The device has one pre-lock
 choice, the routing smoothing κ, made on D2 alone.
 
@@ -140,7 +140,32 @@ Verdict per counted prediction on the primary:
 - **Sampler-sensitive:** a verdict that flips on R3L, R2Lw, R2Lmemo or R2P is labelled so and gets no scope note.
 - The ladder spread (which rung carries the statistic) is reported descriptively. A high z\* makes "not outside"
   cheap; the MDE80 condition is what a powered REPRODUCED rests on.
-- **Results:** *MDE80 per prediction to be inserted before the lock.*
+- **Results (`results/plants779.json`; 200 members per point; κ = 0.5):** the primary ensemble per statistic
+  (mean ± sd), each grid point's plant mean with the fraction of plant members outside the primary ensemble in
+  parentheses, and MDE80. Pair cells with primary expectation ≥ 3: 196; baseline zeros among them
+  2.65 ± 1.68.
+- **Provenance.** The plants stage (`run779.py plants`) hung at its 37th grid point (P12 λ 1; its pool's workers
+  were all replaced at 18:20 on 2026-10-02 and the in-flight tasks were lost; cause not determined) having
+  written nothing, since it wrote its JSON only at the end. `plants_recover779.py` rebuilt the file from the stage
+  log (36 points: mean, baseline mean, fraction outside; the per-point sd is not in the log) and regenerated the
+  baseline ensemble from the stage's seed, reproducing all eight logged baseline means to the log's four
+  decimals. `plants_extend779.py` then added, on generated members only, the points marked † below: the
+  three P12 points the stage never ran; weaker points where the declared grid's weakest point already put
+  ≥ 80% of plant members outside (P2, P7), since there MDE80 was only bounded from above; and one or two
+  refining points per plant between the last point under 80% and the first over it (18 added points in two
+  extension runs, each chosen from the preceding points' fractions outside only). MDE80 is the weakest grid
+  point (declared or added) with ≥ 80% outside. Interim writes were added to the stage afterwards.
+
+| Prediction | Primary mean ± sd | Grid point: plant mean (fraction outside); † = added point | MDE80 |
+|---|---|---|---|
+| P1u | 0.1968 ± 0.0625 | 0.1: 0.2499 (0.01); 0.25: 0.3106 (0.04); 0.5: 0.3916 (0.38); 0.75†: 0.4585 (0.77); 1: 0.5334 (0.96); 2: 0.6951 (1.00) | λ 1, effect 0.3366 |
+| P2 | 0.2022 ± 0.0038 | 500†: 0.2067 (0.01); 200†: 0.2129 (0.35); 100†: 0.2223 (0.97); 50: 0.2409 (1.00); 20: 0.2852 (1.00); 10: 0.3393 (1.00); 5: 0.4105 (1.00); 2: 0.5157 (1.00) | κ_p 100, effect 0.0200 |
+| P6z | 2.7 ± 1.7 | 5: 7.9 (0.34); 7†: 9.6 (0.73); 8†: 10.9 (0.94); 10: 12.5 (1.00); 20: 22.3 (1.00) | m 8, effect 8.2 |
+| P7 | 0.4328 ± 0.0030 | 0.01†: 0.4345 (0.01); 0.025†: 0.4373 (0.06); 0.05†: 0.4415 (0.39); 0.075†: 0.4454 (0.83); 0.1: 0.4498 (1.00); 0.25: 0.4730 (1.00); 0.5: 0.5072 (1.00); 1: 0.5623 (1.00); 2: 0.6397 (1.00) | λ 0.075, effect 0.0126 |
+| P8 | 0.5151 ± 0.0083 | 0.1: 0.5346 (0.13); 0.15†: 0.5446 (0.68); 0.2†: 0.5524 (0.93); 0.25: 0.5614 (1.00); 0.5: 0.5983 (1.00); 1: 0.6522 (1.00); 2: 0.7200 (1.00) | λ 0.2, effect 0.0373 |
+| P10 | 0.8952 ± 0.0289 | 0.1: 0.9024 (0.00); 0.25: 0.9312 (0.04); 0.35†: 0.9717 (0.30); 0.5: 1.0476 (0.98); 1: 1.4219 (1.00); 2: 2.3615 (1.00) | λ 0.5, effect 0.1524 |
+| P11 | 0.0002 ± 0.0002 | 0.1: 0.0010 (0.20); 0.15†: 0.0017 (0.75); 0.2†: 0.0029 (0.98); 0.25: 0.0045 (1.00); 0.5: 0.0184 (1.00); 1: 0.1582 (1.00); 2: 0.2845 (1.00) | λ 0.2, effect 0.0027 |
+| P12 | 0.3422 ± 0.0215 | 0.1: 0.3578 (0.01); 0.25: 0.3879 (0.10); 0.5: 0.4219 (0.73); 0.75†: 0.4524 (0.98); 1†: 0.4742 (1.00); 2†: 0.5526 (1.00) | λ 0.75, effect 0.1102 |
 
 ## Decision rules (locked)
 - Step 1: the primary's panel result (pass / INCOMPLETE with the outside statistics), the fidelity result, MIN-D
@@ -183,8 +208,10 @@ Verdict per counted prediction on the primary:
 ## Procedure
 1. Fidelity gate; plants; this draft completed with their results; commit; lean-expert confirmation pass.
 2. `run779.py --checksums`, commit, tag `phase779-lock`.
-3. `run779.py run` (B's values; 9 × 1,000 members plus the second block for R2L and R0L; about 1.5 h at Idle
-   priority); `run779.py verdict`; raw results committed before the write-up; lean-expert results check; write-up.
+3. `run779.py run` (B's values; 9 × 1,000 members plus the second block for R2L and R0L; about 7 h at Idle
+   priority with the Metropolis sampler, from the fidelity stage's 2.2 s per member); `run779.py sens` (the
+   descriptive κ / κ_z sensitivity, 4 × 200 members); `run779.py verdict`; raw results committed before the
+   write-up; lean-expert results check; write-up.
 
 ## Caveats
 - **One sampler, one implementation of the rules.** The ladder, the 'w', 'memo' and page-only variants and the κ

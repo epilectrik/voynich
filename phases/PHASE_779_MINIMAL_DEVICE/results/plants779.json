@@ -137,7 +137,8 @@
     5.0,
     2.0,
     200.0,
-    500.0
+    500.0,
+    100.0
    ],
    "points": {
     "50.0": {
@@ -188,11 +189,18 @@
      "baseline_mean": 0.20222093268142163,
      "frac_outside": 0.01,
      "source": "extension"
+    },
+    "100.0": {
+     "mean": 0.22225018926937629,
+     "sd": 0.004456814453841027,
+     "baseline_mean": 0.20222093268142163,
+     "frac_outside": 0.97,
+     "source": "extension"
     }
    },
    "MDE80": {
-    "lam": 50.0,
-    "effect": 0.03870000000000001
+    "lam": 100.0,
+    "effect": 0.020029256587954652
    },
    "missing_from_stage": []
   },
@@ -202,7 +210,8 @@
     5,
     10,
     20,
-    7
+    7,
+    8
    ],
    "points": {
     "5": {
@@ -232,11 +241,18 @@
      "baseline_mean": 2.655,
      "frac_outside": 0.735,
      "source": "extension"
+    },
+    "8": {
+     "mean": 10.9,
+     "sd": 1.7736202082791233,
+     "baseline_mean": 2.655,
+     "frac_outside": 0.945,
+     "source": "extension"
     }
    },
    "MDE80": {
-    "lam": 10.0,
-    "effect": 9.84
+    "lam": 8.0,
+    "effect": 8.245000000000001
    },
    "missing_from_stage": []
   },
@@ -250,7 +266,8 @@
     2.0,
     0.01,
     0.025,
-    0.05
+    0.05,
+    0.075
    ],
    "points": {
     "0.1": {
@@ -308,11 +325,18 @@
      "baseline_mean": 0.4328351130002073,
      "frac_outside": 0.385,
      "source": "extension"
+    },
+    "0.075": {
+     "mean": 0.44540094339622643,
+     "sd": 0.0031407862651217718,
+     "baseline_mean": 0.4328351130002073,
+     "frac_outside": 0.83,
+     "source": "extension"
     }
    },
    "MDE80": {
-    "lam": 0.1,
-    "effect": 0.01699999999999996
+    "lam": 0.075,
+    "effect": 0.012565830396019106
    },
    "missing_from_stage": []
   },
@@ -324,7 +348,8 @@
     0.5,
     1.0,
     2.0,
-    0.15
+    0.15,
+    0.2
    ],
    "points": {
     "0.1": {
@@ -368,11 +393,18 @@
      "baseline_mean": 0.5150569593003398,
      "frac_outside": 0.68,
      "source": "extension"
+    },
+    "0.2": {
+     "mean": 0.5523747381451359,
+     "sd": 0.007414656628594594,
+     "baseline_mean": 0.5150569593003398,
+     "frac_outside": 0.925,
+     "source": "extension"
     }
    },
    "MDE80": {
-    "lam": 0.25,
-    "effect": 0.04630000000000001
+    "lam": 0.2,
+    "effect": 0.037317778844796146
    },
    "missing_from_stage": []
   },
@@ -444,7 +476,8 @@
     0.5,
     1.0,
     2.0,
-    0.15
+    0.15,
+    0.2
    ],
    "points": {
     "0.1": {
@@ -488,11 +521,18 @@
      "baseline_mean": 0.000226147537193812,
      "frac_outside": 0.75,
      "source": "extension"
+    },
+    "0.2": {
+     "mean": 0.0028869411523022147,
+     "sd": 0.0008078199826334642,
+     "baseline_mean": 0.000226147537193812,
+     "frac_outside": 0.98,
+     "source": "extension"
     }
    },
    "MDE80": {
-    "lam": 0.25,
-    "effect": 0.0043
+    "lam": 0.2,
+    "effect": 0.002660793615108403
    },
    "missing_from_stage": []
   },
@@ -645,6 +685,36 @@
    "lam": 0.15,
    "seed": 779760015,
    "time": "2026-10-02 21:12:28"
+  },
+  {
+   "key": "P2_paragraph_prefix_jsd",
+   "lam": 100.0,
+   "seed": 779720000,
+   "time": "2026-10-02 21:31:23"
+  },
+  {
+   "key": "P7_erun_lag1_agree",
+   "lam": 0.075,
+   "seed": 779730007,
+   "time": "2026-10-02 21:42:45"
+  },
+  {
+   "key": "P8_qo_chsh_alternation",
+   "lam": 0.2,
+   "seed": 779740020,
+   "time": "2026-10-02 21:51:25"
+  },
+  {
+   "key": "P6z_pair_zeros",
+   "lam": 8.0,
+   "seed": 779720800,
+   "time": "2026-10-02 21:59:16"
+  },
+  {
+   "key": "P11_erun_medial_quintile_jsd",
+   "lam": 0.2,
+   "seed": 779760020,
+   "time": "2026-10-02 22:07:25"
   }
  ]
 }

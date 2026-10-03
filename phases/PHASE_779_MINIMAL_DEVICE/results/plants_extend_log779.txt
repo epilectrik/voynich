@@ -14,3 +14,11 @@ plant P6z_pair_zeros lam 7.0: mean 9.5500 (baseline 2.6550) outside 0.73; MDE80 
 plant P10_hapax_dispersion lam 0.35: mean 0.9717 (baseline 0.8952) outside 0.30; MDE80 {'lam': 0.5, 'effect': 0.1524000000000001} (7505s)
 plant P11_erun_medial_quintile_jsd lam 0.15: mean 0.0017 (baseline 0.0002) outside 0.75; MDE80 {'lam': 0.25, 'effect': 0.0043} (8036s)
 extensions done (8036s)
+PHASE_779 plants extension [('P2_paragraph_prefix_jsd', [100.0]), ('P7_erun_lag1_agree', [0.075]), ('P8_qo_chsh_alternation', [0.2]), ('P6z_pair_zeros', [8.0]), ('P11_erun_medial_quintile_jsd', [0.2])]; 2026-10-02 21:14:33
+baseline regenerated (465s)
+plant P2_paragraph_prefix_jsd lam 100.0: mean 0.2223 (baseline 0.2022) outside 0.97; MDE80 {'lam': 100.0, 'effect': 0.020029256587954652} (1010s)
+plant P7_erun_lag1_agree lam 0.075: mean 0.4454 (baseline 0.4328) outside 0.83; MDE80 {'lam': 0.075, 'effect': 0.012565830396019106} (1691s)
+plant P8_qo_chsh_alternation lam 0.2: mean 0.5524 (baseline 0.5151) outside 0.93; MDE80 {'lam': 0.2, 'effect': 0.037317778844796146} (2211s)
+plant P6z_pair_zeros lam 8.0: mean 10.9000 (baseline 2.6550) outside 0.94; MDE80 {'lam': 8.0, 'effect': 8.245000000000001} (2682s)
+plant P11_erun_medial_quintile_jsd lam 0.2: mean 0.0029 (baseline 0.0002) outside 0.98; MDE80 {'lam': 0.2, 'effect': 0.002660793615108403} (3172s)
+extensions done (3172s)
