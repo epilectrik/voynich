@@ -1,0 +1,650 @@
+{
+ "kappa": 0.5,
+ "N": 200,
+ "cells_expect_ge3": 196,
+ "baseline_zeros": {
+  "mean": 2.655,
+  "sd": 1.6822977228007843,
+  "min": 0.0,
+  "max": 8.0,
+  "n": 200
+ },
+ "baseline": {
+  "P1u_unit_line_homogeneity_pct": {
+   "mean": 0.1967634856015796,
+   "sd": 0.062457265954630935,
+   "min": 0.05167423343421232,
+   "max": 0.4093178162972725,
+   "n": 200
+  },
+  "P2_paragraph_prefix_jsd": {
+   "mean": 0.20222093268142163,
+   "sd": 0.0038295929226421347,
+   "min": 0.19181925025632307,
+   "max": 0.21443332148663163,
+   "n": 200
+  },
+  "P6z_pair_zeros": {
+   "mean": 2.655,
+   "sd": 1.6822977228007843,
+   "min": 0.0,
+   "max": 8.0,
+   "n": 200
+  },
+  "P7_erun_lag1_agree": {
+   "mean": 0.4328351130002073,
+   "sd": 0.00297548255882605,
+   "min": 0.42509848641924114,
+   "max": 0.4424631971801783,
+   "n": 200
+  },
+  "P8_qo_chsh_alternation": {
+   "mean": 0.5150569593003399,
+   "sd": 0.00830892161006417,
+   "min": 0.4957378795950986,
+   "max": 0.5376857749469215,
+   "n": 200
+  },
+  "P10_hapax_dispersion": {
+   "mean": 0.8951545733637734,
+   "sd": 0.028875585638813536,
+   "min": 0.8036472002271988,
+   "max": 0.9816149024289696,
+   "n": 200
+  },
+  "P11_erun_medial_quintile_jsd": {
+   "mean": 0.000226147537193812,
+   "sd": 0.00016327830301276426,
+   "min": 1.0454579146160897e-05,
+   "max": 0.00131417598878052,
+   "n": 200
+  },
+  "P12_ok_after_qok_share": {
+   "mean": 0.3421864116588397,
+   "sd": 0.021520193942643394,
+   "min": 0.27751196172248804,
+   "max": 0.3874709976798144,
+   "n": 200
+  }
+ },
+ "plants": {
+  "P1u_unit_line_homogeneity_pct": {
+   "plant": "P1",
+   "grid": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    0.75
+   ],
+   "points": {
+    "0.1": {
+     "mean": 0.2499,
+     "sd": null,
+     "baseline_mean": 0.1968,
+     "frac_outside": 0.01,
+     "source": "log"
+    },
+    "0.25": {
+     "mean": 0.3106,
+     "sd": null,
+     "baseline_mean": 0.1968,
+     "frac_outside": 0.04,
+     "source": "log"
+    },
+    "0.5": {
+     "mean": 0.3916,
+     "sd": null,
+     "baseline_mean": 0.1968,
+     "frac_outside": 0.38,
+     "source": "log"
+    },
+    "1.0": {
+     "mean": 0.5334,
+     "sd": null,
+     "baseline_mean": 0.1968,
+     "frac_outside": 0.96,
+     "source": "log"
+    },
+    "2.0": {
+     "mean": 0.6951,
+     "sd": null,
+     "baseline_mean": 0.1968,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.75": {
+     "mean": 0.45845002196891615,
+     "sd": 0.06806106450143948,
+     "baseline_mean": 0.1967634856015796,
+     "frac_outside": 0.77,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 1.0,
+    "effect": 0.3366
+   },
+   "missing_from_stage": []
+  },
+  "P2_paragraph_prefix_jsd": {
+   "plant": "P2",
+   "grid": [
+    50.0,
+    20.0,
+    10.0,
+    5.0,
+    2.0,
+    200.0,
+    500.0
+   ],
+   "points": {
+    "50.0": {
+     "mean": 0.2409,
+     "sd": null,
+     "baseline_mean": 0.2022,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "20.0": {
+     "mean": 0.2852,
+     "sd": null,
+     "baseline_mean": 0.2022,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "10.0": {
+     "mean": 0.3393,
+     "sd": null,
+     "baseline_mean": 0.2022,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "5.0": {
+     "mean": 0.4105,
+     "sd": null,
+     "baseline_mean": 0.2022,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "2.0": {
+     "mean": 0.5157,
+     "sd": null,
+     "baseline_mean": 0.2022,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "200.0": {
+     "mean": 0.21286847560761524,
+     "sd": 0.003935454966322945,
+     "baseline_mean": 0.20222093268142163,
+     "frac_outside": 0.355,
+     "source": "extension"
+    },
+    "500.0": {
+     "mean": 0.2067379424541606,
+     "sd": 0.0037041852778915705,
+     "baseline_mean": 0.20222093268142163,
+     "frac_outside": 0.01,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 50.0,
+    "effect": 0.03870000000000001
+   },
+   "missing_from_stage": []
+  },
+  "P6z_pair_zeros": {
+   "plant": "P6",
+   "grid": [
+    5,
+    10,
+    20,
+    7
+   ],
+   "points": {
+    "5": {
+     "mean": 7.925,
+     "sd": null,
+     "baseline_mean": 2.655,
+     "frac_outside": 0.34,
+     "source": "log"
+    },
+    "10": {
+     "mean": 12.495,
+     "sd": null,
+     "baseline_mean": 2.655,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "20": {
+     "mean": 22.315,
+     "sd": null,
+     "baseline_mean": 2.655,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "7": {
+     "mean": 9.55,
+     "sd": 1.5651673213169872,
+     "baseline_mean": 2.655,
+     "frac_outside": 0.735,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 10.0,
+    "effect": 9.84
+   },
+   "missing_from_stage": []
+  },
+  "P7_erun_lag1_agree": {
+   "plant": "P7",
+   "grid": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    0.01,
+    0.025,
+    0.05
+   ],
+   "points": {
+    "0.1": {
+     "mean": 0.4498,
+     "sd": null,
+     "baseline_mean": 0.4328,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.25": {
+     "mean": 0.473,
+     "sd": null,
+     "baseline_mean": 0.4328,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.5": {
+     "mean": 0.5072,
+     "sd": null,
+     "baseline_mean": 0.4328,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "1.0": {
+     "mean": 0.5623,
+     "sd": null,
+     "baseline_mean": 0.4328,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "2.0": {
+     "mean": 0.6397,
+     "sd": null,
+     "baseline_mean": 0.4328,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.01": {
+     "mean": 0.4344539187227866,
+     "sd": 0.003132444153782518,
+     "baseline_mean": 0.4328351130002073,
+     "frac_outside": 0.005,
+     "source": "extension"
+    },
+    "0.025": {
+     "mean": 0.4372651876425461,
+     "sd": 0.00300213180193467,
+     "baseline_mean": 0.4328351130002073,
+     "frac_outside": 0.055,
+     "source": "extension"
+    },
+    "0.05": {
+     "mean": 0.44153301886792456,
+     "sd": 0.002900566912641202,
+     "baseline_mean": 0.4328351130002073,
+     "frac_outside": 0.385,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 0.1,
+    "effect": 0.01699999999999996
+   },
+   "missing_from_stage": []
+  },
+  "P8_qo_chsh_alternation": {
+   "plant": "P8",
+   "grid": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    0.15
+   ],
+   "points": {
+    "0.1": {
+     "mean": 0.5346,
+     "sd": null,
+     "baseline_mean": 0.5151,
+     "frac_outside": 0.13,
+     "source": "log"
+    },
+    "0.25": {
+     "mean": 0.5614,
+     "sd": null,
+     "baseline_mean": 0.5151,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.5": {
+     "mean": 0.5983,
+     "sd": null,
+     "baseline_mean": 0.5151,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "1.0": {
+     "mean": 0.6522,
+     "sd": null,
+     "baseline_mean": 0.5151,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "2.0": {
+     "mean": 0.72,
+     "sd": null,
+     "baseline_mean": 0.5151,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.15": {
+     "mean": 0.544615092336722,
+     "sd": 0.007346444919809664,
+     "baseline_mean": 0.5150569593003398,
+     "frac_outside": 0.68,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 0.25,
+    "effect": 0.04630000000000001
+   },
+   "missing_from_stage": []
+  },
+  "P10_hapax_dispersion": {
+   "plant": "P10",
+   "grid": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    0.35
+   ],
+   "points": {
+    "0.1": {
+     "mean": 0.9024,
+     "sd": null,
+     "baseline_mean": 0.8952,
+     "frac_outside": 0.0,
+     "source": "log"
+    },
+    "0.25": {
+     "mean": 0.9312,
+     "sd": null,
+     "baseline_mean": 0.8952,
+     "frac_outside": 0.04,
+     "source": "log"
+    },
+    "0.5": {
+     "mean": 1.0476,
+     "sd": null,
+     "baseline_mean": 0.8952,
+     "frac_outside": 0.98,
+     "source": "log"
+    },
+    "1.0": {
+     "mean": 1.4219,
+     "sd": null,
+     "baseline_mean": 0.8952,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "2.0": {
+     "mean": 2.3615,
+     "sd": null,
+     "baseline_mean": 0.8952,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.35": {
+     "mean": 0.9716567808367407,
+     "sd": 0.030398419878748608,
+     "baseline_mean": 0.8951545733637734,
+     "frac_outside": 0.3,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 0.5,
+    "effect": 0.1524000000000001
+   },
+   "missing_from_stage": []
+  },
+  "P11_erun_medial_quintile_jsd": {
+   "plant": "P11",
+   "grid": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    0.15
+   ],
+   "points": {
+    "0.1": {
+     "mean": 0.001,
+     "sd": null,
+     "baseline_mean": 0.0002,
+     "frac_outside": 0.2,
+     "source": "log"
+    },
+    "0.25": {
+     "mean": 0.0045,
+     "sd": null,
+     "baseline_mean": 0.0002,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.5": {
+     "mean": 0.0184,
+     "sd": null,
+     "baseline_mean": 0.0002,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "1.0": {
+     "mean": 0.1582,
+     "sd": null,
+     "baseline_mean": 0.0002,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "2.0": {
+     "mean": 0.2845,
+     "sd": null,
+     "baseline_mean": 0.0002,
+     "frac_outside": 1.0,
+     "source": "log"
+    },
+    "0.15": {
+     "mean": 0.001727756917440877,
+     "sd": 0.0006209557761056738,
+     "baseline_mean": 0.000226147537193812,
+     "frac_outside": 0.75,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 0.25,
+    "effect": 0.0043
+   },
+   "missing_from_stage": []
+  },
+  "P12_ok_after_qok_share": {
+   "plant": "P12",
+   "grid": [
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    0.75
+   ],
+   "points": {
+    "0.1": {
+     "mean": 0.3578,
+     "sd": null,
+     "baseline_mean": 0.3422,
+     "frac_outside": 0.01,
+     "source": "log"
+    },
+    "0.25": {
+     "mean": 0.3879,
+     "sd": null,
+     "baseline_mean": 0.3422,
+     "frac_outside": 0.1,
+     "source": "log"
+    },
+    "0.5": {
+     "mean": 0.4219,
+     "sd": null,
+     "baseline_mean": 0.3422,
+     "frac_outside": 0.73,
+     "source": "log"
+    },
+    "0.75": {
+     "mean": 0.45243443833098285,
+     "sd": 0.02015947696068941,
+     "baseline_mean": 0.3421864116588397,
+     "frac_outside": 0.98,
+     "source": "extension"
+    },
+    "1.0": {
+     "mean": 0.4742212329600162,
+     "sd": 0.01983122807355718,
+     "baseline_mean": 0.3421864116588397,
+     "frac_outside": 1.0,
+     "source": "extension"
+    },
+    "2.0": {
+     "mean": 0.5526384825262184,
+     "sd": 0.017919350577926388,
+     "baseline_mean": 0.3421864116588397,
+     "frac_outside": 1.0,
+     "source": "extension"
+    }
+   },
+   "MDE80": {
+    "lam": 0.75,
+    "effect": 0.11024802667214317
+   },
+   "missing_from_stage": [
+    1.0,
+    2.0
+   ]
+  }
+ },
+ "recovered": {
+  "from": "results/plants_log779.txt",
+  "reason": "the plants stage hung at the P12 lam 1.0 point (pool workers replaced, in-flight tasks lost) and writes its JSON only at the end",
+  "per_point_sd": "not in the log; null for stage points",
+  "baseline_check": "regenerated from the stage seed; every logged baseline mean reproduced to 4 decimals",
+  "time": "2026-10-02 18:58:30"
+ },
+ "extensions": [
+  {
+   "key": "P12_ok_after_qok_share",
+   "lam": 0.75,
+   "seed": 779770075,
+   "time": "2026-10-02 19:13:05"
+  },
+  {
+   "key": "P12_ok_after_qok_share",
+   "lam": 1.0,
+   "seed": 779770100,
+   "time": "2026-10-02 19:20:23"
+  },
+  {
+   "key": "P12_ok_after_qok_share",
+   "lam": 2.0,
+   "seed": 779770200,
+   "time": "2026-10-02 19:28:30"
+  },
+  {
+   "key": "P2_paragraph_prefix_jsd",
+   "lam": 200.0,
+   "seed": 779730000,
+   "time": "2026-10-02 19:37:37"
+  },
+  {
+   "key": "P2_paragraph_prefix_jsd",
+   "lam": 500.0,
+   "seed": 779760000,
+   "time": "2026-10-02 19:46:53"
+  },
+  {
+   "key": "P7_erun_lag1_agree",
+   "lam": 0.01,
+   "seed": 779730001,
+   "time": "2026-10-02 19:56:10"
+  },
+  {
+   "key": "P7_erun_lag1_agree",
+   "lam": 0.025,
+   "seed": 779730002,
+   "time": "2026-10-02 20:05:28"
+  },
+  {
+   "key": "P7_erun_lag1_agree",
+   "lam": 0.05,
+   "seed": 779730005,
+   "time": "2026-10-02 20:15:00"
+  },
+  {
+   "key": "P8_qo_chsh_alternation",
+   "lam": 0.15,
+   "seed": 779740015,
+   "time": "2026-10-02 20:23:41"
+  },
+  {
+   "key": "P1u_unit_line_homogeneity_pct",
+   "lam": 0.75,
+   "seed": 779700075,
+   "time": "2026-10-02 20:47:22"
+  },
+  {
+   "key": "P6z_pair_zeros",
+   "lam": 7.0,
+   "seed": 779720700,
+   "time": "2026-10-02 20:55:05"
+  },
+  {
+   "key": "P10_hapax_dispersion",
+   "lam": 0.35,
+   "seed": 779750035,
+   "time": "2026-10-02 21:03:37"
+  },
+  {
+   "key": "P11_erun_medial_quintile_jsd",
+   "lam": 0.15,
+   "seed": 779760015,
+   "time": "2026-10-02 21:12:28"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+PHASE_779 plants recovery from log; 2026-10-02 18:51:33
+parsed: P1u 5, P2 5, P6z 3, P7 5, P8 5, P10 5, P11 5, P12 3
+baseline regenerated (417s)
+  P1u_unit_line_homogeneity_pct: regenerated baseline 0.196763 vs logged 0.1968 (diff 3.65e-05) sd 0.06246
+  P2_paragraph_prefix_jsd: regenerated baseline 0.202221 vs logged 0.2022 (diff 2.09e-05) sd 0.00383
+  P6z_pair_zeros: regenerated baseline 2.655000 vs logged 2.6550 (diff 0.00e+00) sd 1.68230
+  P7_erun_lag1_agree: regenerated baseline 0.432835 vs logged 0.4328 (diff 3.51e-05) sd 0.00298
+  P8_qo_chsh_alternation: regenerated baseline 0.515057 vs logged 0.5151 (diff 4.30e-05) sd 0.00831
+  P10_hapax_dispersion: regenerated baseline 0.895155 vs logged 0.8952 (diff 4.54e-05) sd 0.02888
+  P11_erun_medial_quintile_jsd: regenerated baseline 0.000226 vs logged 0.0002 (diff 2.61e-05) sd 0.00016
+  P12_ok_after_qok_share: regenerated baseline 0.342186 vs logged 0.3422 (diff 1.36e-05) sd 0.02152
+  P1u_unit_line_homogeneity_pct: 5 points, missing [], MDE80 {'lam': 1.0, 'effect': 0.3366}
+  P2_paragraph_prefix_jsd: 5 points, missing [], MDE80 {'lam': 50.0, 'effect': 0.03870000000000001}
+  P6z_pair_zeros: 3 points, missing [], MDE80 {'lam': 10.0, 'effect': 9.84}
+  P7_erun_lag1_agree: 5 points, missing [], MDE80 {'lam': 0.1, 'effect': 0.01699999999999996}
+  P8_qo_chsh_alternation: 5 points, missing [], MDE80 {'lam': 0.25, 'effect': 0.04630000000000001}
+  P10_hapax_dispersion: 5 points, missing [], MDE80 {'lam': 0.5, 'effect': 0.1524000000000001}
+  P11_erun_medial_quintile_jsd: 5 points, missing [], MDE80 {'lam': 0.25, 'effect': 0.0043}
+  P12_ok_after_qok_share: 3 points, missing [1.0, 2.0], MDE80 None
+plants779.json written from the log (417s)
