@@ -12,8 +12,13 @@
                                  statistic); raw arrays
   python run779.py sens          descriptive sensitivity: the primary at kappa x 0.5 / x 2 and kappa_z x 0.5 / x 2
                                  (200 members each) against B's locked values; writes results/sens779.json
-  python run779.py verdict       outside tests, three-way power rule, layer map (folds sens779.json in if present)
-Locked stages (run, sens, verdict) verify the lock first.
+  python run779.py plantcheck    plant points around each pre-lock MDE80 rerun from their seeds (generated members
+                                 only) and their fractions outside recomputed against the LOCKED primary ensemble
+                                 (continuous N 1,000; P6z pooled N 2,000); writes results/plantcheck779.json
+  python run779.py verdict       outside tests, three-way power rule, layer map (uses plantcheck779.json; folds
+                                 sens779.json in if present)
+Locked stages (run, sens, plantcheck, verdict) verify the lock first. `run` and `sens` write partial results
+incrementally and resume from their seeds after a verified match of 5 regenerated members (HARNESS-FAIL otherwise).
 """
 from __future__ import annotations
 
@@ -330,44 +335,102 @@ def stage_plants():
 
 
 # ================================================================================================ locked stages
+CHECKPOINT = 500                       # members between partial writes (edit 16)
+
+
+def _partial_paths():
+    return OUT / 'raw779_run_partial.npz', OUT / 'run779_partial_state.json'
+
+
+def _save_partial(D, P, X, F, Z, done, names):
+    npz, st = _partial_paths()
+    tmp = OUT / 'raw779_run_partial.tmp.npz'
+    np.savez_compressed(tmp, **{f'D_{n}': D[n] for n in names}, **{f'P_{n}': P[n] for n in names},
+                        **{f'X_{n}': X[n] for n in names}, **{f'F_{n}': F[n] for n in names})
+    os.replace(tmp, npz)
+    tmp2 = OUT / 'run779_partial_state.tmp.json'
+    json.dump({'done': sorted(list(x) for x in done), 'Z': {n: {f'{m},{b}': z for (m, b), z in Z[n].items()} for n in Z}},
+              open(tmp2, 'w', encoding='utf-8'))
+    os.replace(tmp2, st)
+
+
+def _resume_check(D, P, X, Z, done_list, by_key, cellset, n_check=5):
+    """Regenerate n_check already-written members from their seeds; every stored value must reproduce exactly."""
+    rng = np.random.default_rng(779_777)
+    pick = rng.choice(len(done_list), size=min(n_check, len(done_list)), replace=False)
+    for i in pick:
+        n, m, b = done_list[i]
+        r = member(by_key[(n, m, b)])
+        ok = True
+        if b == 0:
+            ok &= bool(np.allclose(D[n][m], r['D'], rtol=0, atol=0, equal_nan=True))
+            ok &= bool(np.allclose(P[n][m], r['P'], rtol=0, atol=0, equal_nan=True))
+            ok &= bool(np.allclose(X[n][m], r['X'], rtol=0, atol=0, equal_nan=True))
+        if 'pairs' in r:
+            a, bb, c = r['pairs']
+            pres = set(zip(a.tolist(), bb.tolist()))
+            ok &= Z[n][(m, b)] == sum(1 for k in cellset if k not in pres)
+        log(f'  resume check {n} m{m} block{b}: {"ok" if ok else "MISMATCH"}')
+        if not ok:
+            raise RuntimeError('HARNESS-FAIL: a resumed member does not reproduce its stored values')
+
+
 def stage_run():
     t0 = time.time()
     M = _W['M']
-    B, bpairs = b_values()
+    names = [v[0] for v in VARIANTS]
     cells = json.load(open(OUT / 'pair_cells779.json', encoding='utf-8'))['cells']
     cellset = [tuple(c) for c in cells]
-    present = set(bpairs)
-    B['P6z_pair_zeros'] = sum(1 for k in cellset if k not in present)
-    json.dump(B, open(OUT / 'b_values779.json', 'w', encoding='utf-8'), indent=1)
-    log('B: ' + ', '.join(f'{d} {B["D"][d]:.4f}' for d in DS))
-    log('B counted: ' + ', '.join(f'{k.split("_")[0]} {v:.4f}' for k, v in B['P'].items()) + f' | P6z {B["P6z_pair_zeros"]}')
-    log('B descriptive: ' + ', '.join(f'{k.split("_")[0] if k.startswith("P") else k} {v}' for k, v in B['X'].items()))
-    names = [v[0] for v in VARIANTS]
+    npz, st = _partial_paths()
+    resumed = npz.exists() and st.exists()
+    if not resumed:
+        B, bpairs = b_values()
+        present = set(bpairs)
+        B['P6z_pair_zeros'] = sum(1 for k in cellset if k not in present)
+        json.dump(B, open(OUT / 'b_values779.json', 'w', encoding='utf-8'), indent=1)
+        log('B: ' + ', '.join(f'{d} {B["D"][d]:.4f}' for d in DS))
+        log('B counted: ' + ', '.join(f'{k.split("_")[0]} {v:.4f}' for k, v in B['P'].items()) + f' | P6z {B["P6z_pair_zeros"]}')
+        log('B descriptive: ' + ', '.join(f'{k.split("_")[0] if k.startswith("P") else k} {v}' for k, v in B['X'].items()))
     tasks = [(n, m, SEED_RUN + 10_000 * i, None, 0.0, n in (PRIMARY, BASELINE), 0) for i, n in enumerate(names) for m in range(N_MEMBERS)]
     tasks += [(n, m, SEED_RUN2 + 10_000 * i, None, 0.0, True, 1) for i, n in enumerate(names) if n in (PRIMARY, BASELINE) for m in range(N_MEMBERS)]
+    by_key = {(t[0], t[1], t[6]): t for t in tasks}
     D = {n: np.full((N_MEMBERS, len(DS)), np.nan) for n in names}
     P = {n: np.full((N_MEMBERS, len(M.COUNTED)), np.nan) for n in names}
     X = {n: np.full((N_MEMBERS, len(M.DESCRIPTIVE)), np.nan) for n in names}
     F = {n: np.full((N_MEMBERS, 3), np.nan) for n in names}
     Z = {n: {} for n in (PRIMARY, BASELINE)}          # pair zeros, two seed blocks
-    done = 0
-    for r in pool_map(member, tasks, init_kappa=kappa_locked()):
+    done = set()
+    if resumed:
+        with np.load(npz) as raw:                      # closed before the next os.replace (Windows)
+            for n in names:
+                D[n], P[n], X[n], F[n] = (np.array(raw[f'D_{n}']), np.array(raw[f'P_{n}']),
+                                          np.array(raw[f'X_{n}']), np.array(raw[f'F_{n}']))
+        state = json.load(open(st, encoding='utf-8'))
+        for n in state['Z']:
+            Z[n] = {(int(k.split(',')[0]), int(k.split(',')[1])): z for k, z in state['Z'][n].items()}
+        done = set(tuple(x) for x in state['done'])
+        log(f'resuming: {len(done)}/{len(tasks)} members already written; verifying 5 from their seeds')
+        _resume_check(D, P, X, Z, sorted(done), by_key, cellset)
+        log('resume check passed')
+    todo = [t for t in tasks if (t[0], t[1], t[6]) not in done]
+    count = 0
+    for r in pool_map(member, todo, init_kappa=kappa_locked()):
         n, m, block = r['name'], r['member'], r['block']
         if 'pairs' in r:
             a, b, c = r['pairs']
             pres = set(zip(a.tolist(), b.tolist()))
             Z[n][(m, block)] = sum(1 for k in cellset if k not in pres)
-            if block == 1:
-                done += 1
-                continue
-        D[n][m] = r['D']; P[n][m] = r['P']; X[n][m] = r['X']; F[n][m] = r['F']
-        done += 1
-        if done % 1000 == 0:
-            log(f'  run: {done}/{len(tasks)} ({time.time() - t0:.0f}s)')
+        if block == 0:
+            D[n][m] = r['D']; P[n][m] = r['P']; X[n][m] = r['X']; F[n][m] = r['F']
+        done.add((n, m, block))
+        count += 1
+        if count % CHECKPOINT == 0:
+            _save_partial(D, P, X, F, Z, done, names)
+            log(f'  run: {len(done)}/{len(tasks)} ({time.time() - t0:.0f}s)')
     np.savez_compressed(OUT / 'raw779_run.npz', **{f'D_{n}': D[n] for n in names}, **{f'P_{n}': P[n] for n in names},
                         **{f'X_{n}': X[n] for n in names}, **{f'F_{n}': F[n] for n in names})
     json.dump({n: {f'{m},{b}': z for (m, b), z in Z[n].items()} for n in Z}, open(OUT / 'pair_zeros779.json', 'w'))
-    log(f'run done ({time.time() - t0:.0f}s)')
+    log(f'run done ({time.time() - t0:.0f}s; {len(done)} members)')
 
 
 SEED_SENS = 779_300_000
@@ -376,24 +439,40 @@ N_SENS = 200
 
 def stage_sens():
     """Descriptive sensitivity (pre-registration, Decision rules): the primary at kappa x 0.5 and x 2 and at kappa_z
-    x 0.5 and x 2, N_SENS members each, read against B's locked values. Not a verdict input."""
+    x 0.5 and x 2, N_SENS members each (own seed block SEED_SENS + 10,000 x setting + member), read against B's
+    locked values. Not a verdict input. Writes a partial file per setting and resumes after a verified match."""
     t0 = time.time()
     M = _W['M']
     B = json.load(open(OUT / 'b_values779.json', encoding='utf-8'))
     kappa = kappa_locked()
     settings = [('kappa_x0.5', kappa * 0.5, M.KZ), ('kappa_x2', kappa * 2.0, M.KZ),
                 ('kz_x0.5', kappa, M.KZ * 0.5), ('kz_x2', kappa, M.KZ * 2.0)]
-    res = {'kappa_locked': kappa, 'kz': M.KZ, 'N': N_SENS, 'settings': {}}
+    part = OUT / 'sens779_partial.json'
+    res = json.load(open(part, encoding='utf-8')) if part.exists() else {'kappa_locked': kappa, 'kz': M.KZ, 'N': N_SENS, 'seed': SEED_SENS, 'settings': {}}
     kP = len(M.COUNTED) + 1
     for i, (name, ka, kz) in enumerate(settings):
+        if name in res['settings']:
+            sv = res['settings'][name]
+            _init(ka, kz)
+            rng = np.random.default_rng(779_778 + i)
+            for m in rng.choice(N_SENS, size=5, replace=False):
+                r = member((PRIMARY, int(m), SEED_SENS + 10_000 * i, None, 0.0, False))
+                if not (np.allclose(sv['members']['D'][m], r['D'], rtol=0, atol=0, equal_nan=True) and
+                        np.allclose(sv['members']['P'][m], r['P'], rtol=0, atol=0, equal_nan=True)):
+                    raise RuntimeError(f'HARNESS-FAIL: resumed sens member {name} m{m} does not reproduce')
+            _init()
+            log(f'sens {name}: already done; 5 members re-verified')
+            continue
         tasks = [(PRIMARY, m, SEED_SENS + 10_000 * i, None, 0.0, False) for m in range(N_SENS)]
-        D = []; P = []
+        Dm = np.full((N_SENS, len(DS)), np.nan); Pm = np.full((N_SENS, len(M.COUNTED)), np.nan)
         for r in pool_map(member, tasks, init_kappa=ka, init_kz=kz):
-            D.append(r['D']); P.append(r['P'])
-        D = np.array(D); P = np.array(P)
-        dd = {d: dict(summ(D[:, j], B['D'][d]), outside=outside(B['D'][d], D[:, j], 5)) for j, d in enumerate(DS)}
-        pp = {k: dict(summ(P[:, j], B['P'][k]), outside=outside(B['P'][k], P[:, j], kP)) for j, k in enumerate(M.COUNTED)}
-        res['settings'][name] = {'kappa': ka, 'kz': kz, 'D': dd, 'P': pp}
+            Dm[r['member']] = r['D']; Pm[r['member']] = r['P']
+        dd = {d: dict(summ(Dm[:, j], B['D'][d]), outside=outside(B['D'][d], Dm[:, j], 5)) for j, d in enumerate(DS)}
+        pp = {k: dict(summ(Pm[:, j], B['P'][k]), outside=outside(B['P'][k], Pm[:, j], kP)) for j, k in enumerate(M.COUNTED)}
+        res['settings'][name] = {'kappa': ka, 'kz': kz, 'D': dd, 'P': pp, 'members': {'D': Dm.tolist(), 'P': Pm.tolist()}}
+        tmp = OUT / 'sens779_partial.tmp.json'
+        json.dump(res, open(tmp, 'w', encoding='utf-8'))
+        os.replace(tmp, part)
         log(f"sens {name} (kappa {ka:g}, kz {kz:g}): " + ' '.join(f"{d} z{dd[d]['z_B']:+.1f}{'*' if dd[d]['outside'] else ''}" for d in DS)
             + ' | ' + ' '.join(f"{k.split('_')[0]} z{pp[k]['z_B']:+.1f}{'*' if pp[k]['outside'] else ''}" for k in M.COUNTED)
             + f" ({time.time() - t0:.0f}s)")
@@ -402,12 +481,138 @@ def stage_sens():
     log('sens done')
 
 
+def strength_order(plant, lams):
+    """Weakest plant first: larger kappa_p is weaker for P2; smaller lam / m is weaker otherwise."""
+    return sorted(lams, key=lambda x: -x) if plant == 'P2' else sorted(lams)
+
+
+def plant_seed(key, plant, lam, pts, plants_file):
+    """The seed base a plant point was generated from: stage points follow the stage formula, extension points carry
+    their seed in the file's extension record."""
+    kidx = list(_W['M'].PLANTS).index(key)
+    pk = next(k for k in pts if float(k) == float(lam))
+    if pts[pk].get('source') == 'extension':
+        return next(e['seed'] for e in plants_file.get('extensions', []) if e['key'] == key and float(e['lam']) == float(lam))
+    return SEED_PLANT + 10_000 * (kidx + 1) + int(lam * 100)
+
+
+def walk_mde80(order, fracs):
+    """Pure walk rule on a weakest-first grid: start at the strongest point below 0.8 (or the weakest point), move up;
+    MDE80 = the first point with >= 0.8 whose next stronger point (if any) also has >= 0.8. `fracs(lam)` is called
+    lazily (reruns). Returns (mde_lam, last_fail_lam, visited)."""
+    below = [lam for lam in order if fracs.known(lam) and fracs.known(lam) < 0.8]
+    i = order.index(below[-1]) if below else 0
+    last_fail = None
+    visited = []
+    while i < len(order):
+        lam = order[i]
+        f = fracs(lam); visited.append(lam)
+        if f < 0.8:
+            last_fail = lam; i += 1; continue
+        if i + 1 < len(order):
+            f2 = fracs(order[i + 1]); visited.append(order[i + 1])
+            if f2 < 0.8:
+                last_fail = order[i + 1]; i += 2; continue
+        return lam, last_fail, visited
+    return None, last_fail, visited
+
+
+def stage_plantcheck():
+    """Locked stage after `run` (edit 3): rerun the plant points around each plant's pre-lock MDE80 from their seeds
+    (generated members only), store per-member values, and recompute each point's fraction outside against the
+    LOCKED primary ensemble and criterion (continuous: R2L block 0, N 1,000, beyond [min, max] and |z| > z*; P6z:
+    pooled R2L N 2,000, strictly beyond every member). Every rerun mean must reproduce the pre-lock table to four
+    decimals, else the plant is flagged and its MDE80 void. Writes results/plantcheck779.json."""
+    t0 = time.time()
+    M = _W['M']
+    kappa = kappa_locked()
+    plants = json.load(open(OUT / 'plants779.json', encoding='utf-8'))
+    raw = np.load(OUT / 'raw779_run.npz')
+    Pprim = raw[f'P_{PRIMARY}']
+    Zs = json.load(open(OUT / 'pair_zeros779.json', encoding='utf-8'))
+    zprim = np.array(list(Zs[PRIMARY].values()), float)
+    cells_f = json.load(open(OUT / 'pair_cells779.json', encoding='utf-8'))
+    cells = [tuple(c) for c in cells_f['cells']]
+    _W['pair_expect'] = {tuple(int(x) for x in k.split(',')): e for k, e in cells_f['expect'].items()}
+    kP = len(M.COUNTED) + 1
+    res = {'kappa': kappa, 'N_plant': N_PLANT, 'N_primary_continuous': int((~np.isnan(Pprim[:, 0])).sum()),
+           'N_primary_P6z_pooled': int(len(zprim)), 'z_star': zstar(kP), 'plants': {}}
+    for key, (plant, grid) in M.PLANTS.items():
+        entry = plants['plants'][key]
+        pts = entry['points']
+        order = strength_order(plant, [float(x) for x in pts])
+        j = M.COUNTED.index(key) if key in M.COUNTED else None
+        ref = zprim if plant == 'P6' else Pprim[:, j]
+        ref_mean = float(np.nanmean(ref))
+        rerun = {}
+
+        class Fr:
+            def known(self, lam):
+                pk = next(k for k in pts if float(k) == lam)
+                return pts[pk]['frac_outside']
+
+            def __call__(self, lam):
+                pk = next(k for k in pts if float(k) == lam)
+                if pk in rerun:
+                    return rerun[pk]['frac_outside']
+                seed = plant_seed(key, plant, lam, pts, plants)
+                rng0 = np.random.default_rng(SEED_PLANT + 777)
+                if plant == 'P6':
+                    pro = _prohibit_cells(rng0, int(lam))
+                    json.dump({a: sorted(b) for a, b in pro.items()}, open(OUT / 'prohibit_tmp.json', 'w'))
+                tasks = [(PRIMARY, m, seed, plant, float(lam), plant == 'P6') for m in range(N_PLANT)]
+                vals = np.full(N_PLANT, np.nan)
+                for r in pool_map(member, tasks, init_kappa=kappa):
+                    if plant == 'P6':
+                        a, b, c = r['pairs']
+                        present = set(zip(a.tolist(), b.tolist()))
+                        vals[r['member']] = sum(1 for k in cells if k not in present)
+                    else:
+                        vals[r['member']] = r['P'][j]
+                if (OUT / 'prohibit_tmp.json').exists():
+                    (OUT / 'prohibit_tmp.json').unlink()
+                frac = float(np.mean([outside(v, ref, kP, discrete=(plant == 'P6')) for v in vals]))
+                mean = float(np.nanmean(vals))
+                rerun[pk] = {'seed': seed, 'members': vals.tolist(), 'mean': mean, 'sd': float(np.nanstd(vals, ddof=1)),
+                             'mean_prelock': pts[pk]['mean'], 'reproduces': bool(abs(mean - pts[pk]['mean']) < 6e-5),
+                             'frac_outside_prelock': pts[pk]['frac_outside'], 'frac_outside': frac,
+                             'effect': float(abs(mean - ref_mean))}
+                log(f"  plantcheck {key} lam {lam:g}: mean {mean:.4f} (pre-lock {pts[pk]['mean']:.4f}, reproduces {rerun[pk]['reproduces']}); "
+                    f"outside {frac:.2f} against N {len(ref)} (pre-lock {pts[pk]['frac_outside']:.2f}) ({time.time() - t0:.0f}s)")
+                return frac
+
+        fr = Fr()
+        mde_lam, last_fail, visited = walk_mde80(order, fr)
+        ok = all(rerun[k]['reproduces'] for k in rerun)
+        mde = None
+        if mde_lam is not None and ok:
+            pk = next(k for k in pts if float(k) == mde_lam)
+            mde = {'lam': float(mde_lam), 'effect': rerun[pk]['effect']}
+        low = None
+        if last_fail is not None:
+            pk = next(k for k in pts if float(k) == last_fail)
+            low = rerun[pk]['effect']
+        res['plants'][key] = {'plant': plant, 'rerun': rerun, 'visited': visited, 'all_reproduce': ok,
+                              'MDE80': mde, 'bracket': [low, mde['effect'] if mde else None],
+                              'MDE80_prelock': entry['MDE80'], 'primary_mean_locked': ref_mean}
+        log(f"plantcheck {key}: MDE80 {mde} (pre-lock {entry['MDE80']}); bracket {res['plants'][key]['bracket']}; reproduces {ok}")
+        tmp = OUT / 'plantcheck779.tmp.json'
+        json.dump(res, open(tmp, 'w', encoding='utf-8'))
+        os.replace(tmp, OUT / 'plantcheck779.json')
+    res['runtime_s'] = time.time() - t0
+    json.dump(res, open(OUT / 'plantcheck779.json', 'w', encoding='utf-8'), indent=1)
+    log('plantcheck done')
+
+
 def stage_verdict():
     M = _W['M']
     B = json.load(open(OUT / 'b_values779.json', encoding='utf-8'))
     raw = np.load(OUT / 'raw779_run.npz')
     Zs = json.load(open(OUT / 'pair_zeros779.json', encoding='utf-8'))
     plants = json.load(open(OUT / 'plants779.json', encoding='utf-8'))
+    pc_f = OUT / 'plantcheck779.json'
+    assert pc_f.exists(), 'plantcheck779.json missing: run `run779.py plantcheck` before the verdict'
+    pcheck = json.load(open(pc_f, encoding='utf-8'))['plants']
     names = [v[0] for v in VARIANTS]
     counted = M.COUNTED + ['P6z_pair_zeros']
     kP = len(counted)
@@ -428,31 +633,39 @@ def stage_verdict():
         rows[n] = {'D': dd, 'P': pp, 'X': xx, 'F': ff,
                    'panel_pass': not any(dd[d]['outside'] for d in PANEL_TESTED),
                    'fidelity_D2_outside': dd['D2']['outside'], 'fidelity_D6_outside': dd['D6']['outside']}
-    # three-way power rule on the primary
+    # three-way power rule on the primary, applied in order (edits 5, 6); MDE80 from the locked recomputation (edit 3)
+    d2_failed = bool(rows[PRIMARY]['fidelity_D2_outside'])
+    memo_marginal = bool(rows['R2Lmemo']['fidelity_D6_outside'])
     verdicts = {}
     for k in counted:
         b = B['P'][k] if k in B['P'] else B['P6z_pair_zeros']
         prim, base = rows[PRIMARY]['P'][k], rows[BASELINE]['P'][k]
         out_base = base['outside']; out_prim = prim['outside']
-        mde = plants['plants'].get(k, {}).get('MDE80')
-        excess = abs(b - base['mean'])
+        pc = pcheck.get(k, {})
+        mde = pc.get('MDE80')
+        excess = b - base['mean']                      # signed; every plant moves its statistic upward
         if out_prim:
             v = 'NOT REPRODUCED'
         elif not out_base:
-            v = 'NO EXCESS ON THIS SKELETON'
-        elif mde is not None and mde['effect'] <= excess:
+            v = 'NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE'
+        elif mde is not None and excess > 0 and mde['effect'] <= abs(excess):
             v = 'REPRODUCED (powered)'
         else:
             v = 'REPRODUCED (unpowered)'
         sens = [n for n in ('R3L', 'R2Lw', 'R2Lmemo', 'R2P') if k in rows[n]['P'] and rows[n]['P'][k]['outside'] != out_prim]
-        verdicts[k] = {'verdict': v, 'B': b, 'primary': prim, 'baseline': base, 'MDE80': mde, 'excess_over_baseline': excess,
-                       'sampler_sensitive': sens}
+        verdicts[k] = {'verdict': v, 'B': b, 'primary': prim, 'baseline': base, 'MDE80': mde, 'MDE80_bracket': pc.get('bracket'),
+                       'MDE80_prelock': pc.get('MDE80_prelock'), 'plant_reproduces': pc.get('all_reproduce'),
+                       'excess_over_baseline_signed': excess,
+                       'mde_ratio': (mde['effect'] / abs(excess)) if (mde is not None and excess != 0) else None,
+                       'sampler_sensitive': sens, 'D2_fidelity_failed_in_locked_run': d2_failed,
+                       'partly_unblinded': k in ('P7_erun_lag1_agree', 'P8_qo_chsh_alternation')}
     ladder = [n for n in LADDER if rows[n]['panel_pass']]
     sens_f = OUT / 'sens779.json'
     sensitivity = json.load(open(sens_f, encoding='utf-8'))['settings'] if sens_f.exists() else None
     out = {'B': B, 'kappa': kappa_locked(), 'z_star_P': zstar(kP), 'rows': rows, 'verdicts': verdicts,
            'primary': PRIMARY, 'primary_panel_pass': rows[PRIMARY]['panel_pass'], 'MIN_D_descriptive': ladder[0] if ladder else None,
-           'ladder_passing': ladder, 'sensitivity_descriptive': sensitivity}
+           'ladder_passing': ladder, 'sensitivity_descriptive': sensitivity,
+           'R2Lmemo_fidelity_marginal': memo_marginal, 'D2_fidelity_failed_in_locked_run': d2_failed}
     json.dump(out, open(OUT / 'verdict779.json', 'w', encoding='utf-8'), indent=1)
     log(f"primary {PRIMARY}: panel (D3-D5) pass {rows[PRIMARY]['panel_pass']}; D2 fidelity outside {rows[PRIMARY]['fidelity_D2_outside']}; "
         f"MIN-D (descriptive) {out['MIN_D_descriptive']}")
@@ -460,7 +673,8 @@ def stage_verdict():
         r = rows[n]
         log(f"  {n:8s} " + ' '.join(f"{d} {r['D'][d]['mean']:+.3f}(z{r['D'][d]['z_B']:+.1f}{'*' if r['D'][d]['outside'] else ''})" for d in DS))
     for k, v in verdicts.items():
-        log(f"  {k:34s} {v['verdict']:28s} B {v['B']:.4f} primary {v['primary']['mean']:.4f}±{v['primary']['sd']:.4f} z {v['primary']['z_B']:+.2f} rank {v['primary']['rank_B']} | base z {v['baseline']['z_B']:+.2f} | MDE80 {v['MDE80']} | sens {v['sampler_sensitive']}")
+        log(f"  {k:34s} {v['verdict']:44s} B {v['B']:.4f} primary {v['primary']['mean']:.4f}±{v['primary']['sd']:.4f} z {v['primary']['z_B']:+.2f} rank {v['primary']['rank_B']} | base z {v['baseline']['z_B']:+.2f} excess {v['excess_over_baseline_signed']:+.4f} | MDE80 {v['MDE80']} ratio {v['mde_ratio']} | sens {v['sampler_sensitive']}")
+    log(f"  R2Lmemo fidelity-marginal (D6 outside at N 1,000): {memo_marginal}; primary D2 fidelity failed: {d2_failed}")
     if sensitivity:
         for name, sv in sensitivity.items():
             log(f"  sensitivity {name:10s} " + ' '.join(f"{k.split('_')[0]} z{sv['P'][k]['z_B']:+.1f}{'*' if sv['P'][k]['outside'] else ''}" for k in M.COUNTED))
@@ -497,13 +711,14 @@ def main():
         dry_run()
         return
     stage = next((a for a in sys.argv[1:] if not a.startswith('-')), None)
-    assert stage in ('fidelity', 'plants', 'run', 'sens', 'verdict'), 'stage: fidelity | plants | run | sens | verdict'
-    if stage in ('run', 'sens', 'verdict'):
+    assert stage in ('fidelity', 'plants', 'run', 'sens', 'plantcheck', 'verdict'), 'stage: fidelity | plants | run | sens | plantcheck | verdict'
+    if stage in ('run', 'sens', 'plantcheck', 'verdict'):
         verify_lock()
     _init()
     LOGF = open(OUT / f'{stage}_log779.txt', 'a', encoding='utf-8')
-    log(f'PHASE_779 {stage}; {"lock " + LOCK + " verified; " if stage in ("run", "sens", "verdict") else ""}{time.strftime("%Y-%m-%d %H:%M:%S")}')
-    {'fidelity': stage_fidelity, 'plants': stage_plants, 'run': stage_run, 'sens': stage_sens, 'verdict': stage_verdict}[stage]()
+    log(f'PHASE_779 {stage}; {"lock " + LOCK + " verified; " if stage in ("run", "sens", "plantcheck", "verdict") else ""}{time.strftime("%Y-%m-%d %H:%M:%S")}')
+    {'fidelity': stage_fidelity, 'plants': stage_plants, 'run': stage_run, 'sens': stage_sens, 'plantcheck': stage_plantcheck,
+     'verdict': stage_verdict}[stage]()
     log('done')
 
 

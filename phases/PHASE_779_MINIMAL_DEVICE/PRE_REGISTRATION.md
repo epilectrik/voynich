@@ -1,21 +1,23 @@
 # PHASE_779 — The minimal device: a sampler of page × line-type composition, line-position vocabulary and two-unit junction routing; which of Currier B's other registered regularities is it not outside? (pre-registration)
 
-**Status: v3, FOR LOCK after the confirmation pass (design audit: all 38 edits incorporated; the sequential sampler
-failed the fidelity gate and the declared Metropolis fallback replaced it and passed; plant MDE80s filled in from
-`results/plants779.json`).** No counted prediction statistic
+**Status: v4, FOR LOCK (design audit: all 38 edits incorporated; the sequential sampler failed the fidelity gate
+and the declared Metropolis fallback replaced it and passed; plant MDE80s filled in from `results/plants779.json`;
+confirmation pass: all 18 edits incorporated, with the z\* resolution noted in Step 2).** No counted prediction statistic
 has been computed on Currier B (see Exposure for the three disclosed exceptions). The device has one pre-lock
 choice, the routing smoothing κ, made on D2 alone.
 
-**Origin.** PHASE_774–778 reduced B's measurable sequence to its word-boundary rules and page × line-type
-composition (C2091, C2093, C2094; the nulls of C2093–C2095 are keyed by folio × line type) and excluded the two
-published content-free production methods (C2077; C2096 as described). What remains is a specification any method
+**Origin.** PHASE_774–778 found that three searches for sequence beyond B's word-boundary rules and page ×
+line-type composition (C2091, C2093, C2094; the nulls of C2093–C2095 are keyed by folio × line type) come back to
+those rules; narrow token-level effects (C549, C2056) were not tested there. The same phases excluded two
+published content-free production methods (C2077; C2096: the published configuration only; its extended and
+steelman families were not excluded). What remains is a specification any method
 must meet: a page × line-type word stock, line-position vocabulary (D6, C956), and junction routing (C2082,
 C1212/C1563). This phase asks how much of what the registry records beyond those rules is reproduced by a sampler of
 them, and how much is an extra layer. It can only reproduce statistics from B-fitted tables; it does not recover a
 method. STATUS_BRIEF §4; RESEARCH_AGENDA Tier B.
 
 **Question.** Take the simplest sampler of the three rules, MIN-D. On the registered regularities below, none of
-which it is given, is B inside or outside its ensemble? The answer is a layer map, with each verdict powered by a
+which it is given directly (P8 partly through routing; P12 partly on R3), is B inside or outside its ensemble? The answer is a layer map, with each verdict powered by a
 plant or marked unpowered.
 
 **Mechanism, not meaning (C2052).** MIN-D is a sampler of measured rules, not a production method; nothing here
@@ -77,7 +79,8 @@ words), not member values.
 - **Result (Metropolis sampler; `results/fidelity779.json`; 200 members per point):** κ 0.5: D2 0.2275 ± 0.0050
   (B 0.2282, z +0.13, not outside), raw edge MI 0.261 / 0.263 on the two halves (no depletion), acceptance 0.35,
   95.8% of slots changed from the start; κ 2: 0.2232 (z +0.94); κ 8: 0.2137 (z +2.87). **κ = 0.5 selected on D2
-  alone; the primary passes.** Mixing: D2 0.2284 at 20 sweeps against 0.2275 at 10 (sd 0.0050): pass. R2Lmemo:
+  alone; the primary passes.** The primary's D6 at κ 0.5 (descriptive; generated members only): 0.1847 ± 0.0049
+  (B 0.1718, z -2.60). Mixing: D2 0.2284 at 20 sweeps against 0.2275 at 10 (sd 0.0050): pass. R2Lmemo:
   D2 0.2285 (z −0.06), D6 0.1866 (z −3.08, not outside: pass, at the margin; the per-word lookup over-produces zone
   dependence). R2Lw: D2 0.2337 (z −1.0), D6 0.1960 (z −3.6). R2P: D2 0.2282, D6 0.1846 (z −2.1).
 
@@ -87,18 +90,23 @@ descriptive on the back-off primary; **the panel tests are D3, D4 and D5.** Outs
 and |z| > z\* = Φ⁻¹(1 − 0.005/5) = 3.09; B on the boundary is inside. A rung passes if B is outside on none of
 D3–D5. If the primary does not pass: "INCOMPLETE relative to the PHASE_779 sampler: B is outside on {D}. The sampler
 generates the edge sequence from first-order routing, whereas the exact nulls of C2093–C2094 fix B's edge sequence;
-this does not contradict C2093/C2094." Predictions are read on the primary regardless.
+this does not contradict C2093/C2094." Predictions are read on the primary regardless. Fidelity in the locked
+run: if R2Lmemo is outside on D6 at N 1,000 (pre-lock z −3.08 against 3.09) it is reported as fidelity-marginal and
+stays a sensitivity variant; if the primary is outside on D2, every verdict carries "D2 fidelity failed in the locked
+run".
 
 ## Step 2 — the predictions (fixed now)
 Computed identically on B and on every member. Continuous statistics: B is outside a variant if beyond [min, max]
-and |z| > z\* = Φ⁻¹(1 − 0.005/8) = 3.29; boundary counts as inside. Discrete statistic (P6z): the pooled N = 2,000
+and |z| > z\* = Φ⁻¹(1 − 0.005/8) = 3.23 (v3's text said 3.29, an arithmetic slip; the code, the plant grids and
+the locked run all use the formula's value, the PHASE_757/778 convention); boundary counts as inside. The single
+locked value for B, every variant and the plant recomputation. Discrete statistic (P6z): the pooled N = 2,000
 ensemble; outside = strictly beyond every member; ties inside; z reported, not used.
 
 | | Counted statistic | Registered relatives | Encoded? |
 |---|---|---|---|
 | P1u | Line homogeneity at the glyph-unit level: mean within-line glyph-unit entropy, percent reduction against 20 within-page shuffles of the member | C1214 (an atom-level measurement; not the identical statistic); the C2095 F1/F2 descriptives | no (no line memory) |
 | P2 | Paragraph PREFIX composition: mean within-folio between-paragraph PREFIX JSD, body lines only, paragraphs with ≥ 10 body tokens, pairs weighted equally within a folio and folios equally | C1811, C1812 (their "within 1.37× between" has an unequal-size form and is not an effect size here) | no (no paragraph state) |
-| P6z | Pair zeros in C2081's form: among ordered pairs of common tokens (n ≥ 10) whose expected count under the primary ensemble is ≥ 3, the number of pairs B never writes, against the members' zero counts on the same cells | C2081 (live); not C957 (superseded; its nine bigrams are selected on the outcome and are a descriptive only) | no (routing is glyph-level) |
+| P6z | Pair zeros in C2081's form: among ordered pairs of common tokens (n ≥ 10) whose expected count under the primary ensemble is ≥ 3, the number of pairs B never writes, against the members' zero counts on the same cells. The cells are the 196 ordered common-token pairs with expectation ≥ 3 under the pre-lock primary ensemble (listed in `results/pair_cells779.json`), used unchanged for B, every variant, R0L and the plant recomputation | C2081 (live); not C957 (superseded; its nine bigrams are selected on the outcome and are a descriptive only) | no (routing is glyph-level) |
 | P7 | e-run lag-1 agreement: share of within-line adjacent pairs whose e-run classes (longest e-run in glyph units: 0, 1, 2+) agree | PHASE_757's descriptive 0.455 if identical; C2077 K4, C1994 | no (interior) |
 | P8 | qo / ch-sh alternation per C549: strictly adjacent within-line pairs where both words start with qo (first two EVA glyphs) or with the bench unit ch/sh (benched gallows excluded); the share that alternate | C549 (56.3% vs 50.6%), C2056 | partly, through routing |
 | P10 | Hapax dispersion: body lines only, hapaxes defined on the skeleton; the within-folio dispersion index Σ_l (c_l − n_l p_f)² / (n_l p_f) over (lines − folios) | — | no |
@@ -117,8 +125,10 @@ re-pricing must use the joint and goes to the human"); the class-pair MI (C2094'
 
 ## Power and the three-way rule (plants on the primary; generated members only; `results/plants779.json`)
 Each counted prediction has a plant: a weight multiplier on R2L with a declared grid, 200 members per point.
-**MDE80** = the smallest grid point at which ≥ 80% of plant members are outside the primary ensemble on that
-statistic, expressed in the statistic's units as |plant mean − primary mean|.
+**MDE80** = the weakest plant strength in the grid (declared or added; smallest λ or m, largest κ_p) such that this
+point and every stronger grid point put ≥ 80% of plant members outside the primary ensemble; reported as |plant mean
+− primary mean| at that point, with the bracket [effect at the strongest grid point below 80%, MDE80] alongside,
+descriptively. No interpolation. No grid point is added after the lock.
 
 | Prediction | Plant (× on the candidate weight) | Grid |
 |---|---|---|
@@ -133,11 +143,17 @@ statistic, expressed in the statistic's units as |plant mean − primary mean|.
 
 Verdict per counted prediction on the primary:
 - **NOT REPRODUCED:** B outside the primary ensemble.
-- **NO EXCESS ON THIS SKELETON:** B not outside R0L (the within-cell shuffle). No note.
-- **REPRODUCED (powered):** B outside R0L, not outside the primary, and MDE80 ≤ |B − mean(R0L)| (a residual as large
-  as B's own excess over the shuffle would have been detected).
+- **NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE:** B not outside R0L (the within-cell shuffle). No note.
+- **REPRODUCED (powered):** B outside R0L; B not outside the primary; B − mean(R0L) has the sign in which the
+  statistic's plant moves it (positive for all eight plants); and MDE80 ≤ |B − mean(R0L)| (an extra layer added to
+  the sampler as large as B's whole excess over the within-cell shuffle would have put B outside in ≥ 80% of draws;
+  residual layers smaller than MDE80 are not excluded). The ratio MDE80 / |B − mean(R0L)| is reported.
 - **REPRODUCED (unpowered):** otherwise not outside. No note.
-- **Sampler-sensitive:** a verdict that flips on R3L, R2Lw, R2Lmemo or R2P is labelled so and gets no scope note.
+- Verdicts are applied in the order listed; the first that applies is the verdict (B outside the primary is NOT
+  REPRODUCED whatever its position relative to R0L). Sampler-sensitive is an added label, not a verdict.
+- **Sampler-sensitive:** a verdict that flips on R3L, R2Lw, R2Lmemo or R2P is labelled so and gets no scope note. A
+  flip: B's outside / not-outside status relative to the variant differs from that relative to the primary. The
+  κ / κ_z sensitivity and the ladder spread enter no label; R2Lw is not consulted for P2 or P10.
 - The ladder spread (which rung carries the statistic) is reported descriptively. A high z\* makes "not outside"
   cheap; the MDE80 condition is what a powered REPRODUCED rests on.
 - **Results (`results/plants779.json`; 200 members per point; κ = 0.5):** the primary ensemble per statistic
@@ -153,19 +169,36 @@ Verdict per counted prediction on the primary:
   three P12 points the stage never ran; weaker points where the declared grid's weakest point already put
   ≥ 80% of plant members outside (P2, P7), since there MDE80 was only bounded from above; and one or two
   refining points per plant between the last point under 80% and the first over it (18 added points in two
-  extension runs, each chosen from the preceding points' fractions outside only). MDE80 is the weakest grid
-  point (declared or added) with ≥ 80% outside. Interim writes were added to the stage afterwards.
+  extension runs, each chosen from the preceding points' fractions outside only). MDE80 is as defined above.
+  Refining points only lower MDE80 and so make a powered verdict easier to reach; B was blind on every counted
+  statistic when they were chosen. Interim writes were added to the stage afterwards. No grid point is added after
+  the lock.
 
-| Prediction | Primary mean ± sd | Grid point: plant mean (fraction outside); † = added point | MDE80 |
+| Prediction | Primary mean ± sd | Grid point: plant mean (fraction outside); † = added point | MDE80, effect [bracket] |
 |---|---|---|---|
-| P1u | 0.1968 ± 0.0625 | 0.1: 0.2499 (0.01); 0.25: 0.3106 (0.04); 0.5: 0.3916 (0.38); 0.75†: 0.4585 (0.77); 1: 0.5334 (0.96); 2: 0.6951 (1.00) | λ 1, effect 0.3366 |
-| P2 | 0.2022 ± 0.0038 | 500†: 0.2067 (0.01); 200†: 0.2129 (0.35); 100†: 0.2223 (0.97); 50: 0.2409 (1.00); 20: 0.2852 (1.00); 10: 0.3393 (1.00); 5: 0.4105 (1.00); 2: 0.5157 (1.00) | κ_p 100, effect 0.0200 |
-| P6z | 2.7 ± 1.7 | 5: 7.9 (0.34); 7†: 9.6 (0.73); 8†: 10.9 (0.94); 10: 12.5 (1.00); 20: 22.3 (1.00) | m 8, effect 8.2 |
-| P7 | 0.4328 ± 0.0030 | 0.01†: 0.4345 (0.01); 0.025†: 0.4373 (0.06); 0.05†: 0.4415 (0.39); 0.075†: 0.4454 (0.83); 0.1: 0.4498 (1.00); 0.25: 0.4730 (1.00); 0.5: 0.5072 (1.00); 1: 0.5623 (1.00); 2: 0.6397 (1.00) | λ 0.075, effect 0.0126 |
-| P8 | 0.5151 ± 0.0083 | 0.1: 0.5346 (0.13); 0.15†: 0.5446 (0.68); 0.2†: 0.5524 (0.93); 0.25: 0.5614 (1.00); 0.5: 0.5983 (1.00); 1: 0.6522 (1.00); 2: 0.7200 (1.00) | λ 0.2, effect 0.0373 |
-| P10 | 0.8952 ± 0.0289 | 0.1: 0.9024 (0.00); 0.25: 0.9312 (0.04); 0.35†: 0.9717 (0.30); 0.5: 1.0476 (0.98); 1: 1.4219 (1.00); 2: 2.3615 (1.00) | λ 0.5, effect 0.1524 |
-| P11 | 0.0002 ± 0.0002 | 0.1: 0.0010 (0.20); 0.15†: 0.0017 (0.75); 0.2†: 0.0029 (0.98); 0.25: 0.0045 (1.00); 0.5: 0.0184 (1.00); 1: 0.1582 (1.00); 2: 0.2845 (1.00) | λ 0.2, effect 0.0027 |
-| P12 | 0.3422 ± 0.0215 | 0.1: 0.3578 (0.01); 0.25: 0.3879 (0.10); 0.5: 0.4219 (0.73); 0.75†: 0.4524 (0.98); 1†: 0.4742 (1.00); 2†: 0.5526 (1.00) | λ 0.75, effect 0.1102 |
+| P1u | 0.1968 ± 0.0625 | 0.1: 0.2499 (0.01); 0.25: 0.3106 (0.04); 0.5: 0.3916 (0.38); 0.75†: 0.4585 (0.77); 1: 0.5334 (0.96); 2: 0.6951 (1.00) | λ 1, effect 0.3366 [0.2617, 0.3366] |
+| P2 | 0.2022 ± 0.0038 | 500†: 0.2067 (0.01); 200†: 0.2129 (0.35); 100†: 0.2223 (0.97); 50: 0.2409 (1.00); 20: 0.2852 (1.00); 10: 0.3393 (1.00); 5: 0.4105 (1.00); 2: 0.5157 (1.00) | κ_p 100, effect 0.0200 [0.0106, 0.0200] |
+| P6z | 2.7 ± 1.7 | 5: 7.9 (0.34); 7†: 9.6 (0.73); 8†: 10.9 (0.94); 10: 12.5 (1.00); 20: 22.3 (1.00) | m 8, effect 8.2 [6.9, 8.2] |
+| P7 | 0.4328 ± 0.0030 | 0.01†: 0.4345 (0.01); 0.025†: 0.4373 (0.06); 0.05†: 0.4415 (0.39); 0.075†: 0.4454 (0.83); 0.1: 0.4498 (1.00); 0.25: 0.4730 (1.00); 0.5: 0.5072 (1.00); 1: 0.5623 (1.00); 2: 0.6397 (1.00) | λ 0.075, effect 0.0126 [0.0087, 0.0126] |
+| P8 | 0.5151 ± 0.0083 | 0.1: 0.5346 (0.13); 0.15†: 0.5446 (0.68); 0.2†: 0.5524 (0.93); 0.25: 0.5614 (1.00); 0.5: 0.5983 (1.00); 1: 0.6522 (1.00); 2: 0.7200 (1.00) | λ 0.2, effect 0.0373 [0.0296, 0.0373] |
+| P10 | 0.8952 ± 0.0289 | 0.1: 0.9024 (0.00); 0.25: 0.9312 (0.04); 0.35†: 0.9717 (0.30); 0.5: 1.0476 (0.98); 1: 1.4219 (1.00); 2: 2.3615 (1.00) | λ 0.5, effect 0.1524 [0.0765, 0.1524] |
+| P11 | 2.3 ± 1.6 | 0.1: 10.0 (0.20); 0.15†: 17.3 (0.75); 0.2†: 28.9 (0.98); 0.25: 45.0 (1.00); 0.5: 184.0 (1.00); 1: 1582.0 (1.00); 2: 2845.0 (1.00) | λ 0.2, effect 26.6 [15.0, 26.6] |
+| P12 | 0.3422 ± 0.0215 | 0.1: 0.3578 (0.01); 0.25: 0.3879 (0.10); 0.5: 0.4219 (0.73); 0.75†: 0.4524 (0.98); 1†: 0.4742 (1.00); 2†: 0.5526 (1.00) | λ 0.75, effect 0.1102 [0.0797, 0.1102] |
+Units: P1u is in percentage points (percent reduction of the mean within-line glyph-unit entropy against the mean
+of 20 within-page shuffles; the shuffles use the member's own seeded generator after generation, and seed 779 for B,
+with identical code for B and members); P11 is in units of 10⁻⁴ (JSD in bits); P6z is a count.
+
+**Recomputation against the locked ensemble (`run779.py plantcheck`, a locked stage run after `run`).** The plant
+stage's primary ensemble had N = 200; the maximum of a larger ensemble lies further out, so each point's fraction
+outside is recomputed against the locked primary ensemble and criterion (continuous: R2L N 1,000, beyond [min, max]
+and |z| > z\*; P6z: the pooled R2L N 2,000, strictly beyond every member). Per-member plant values were not stored
+pre-lock, so the points are rerun from their seeds (generated members only; the stage formula for declared points,
+the recorded seed for added points); every rerun mean must reproduce the table above to four decimals, else the plant
+is flagged and its MDE80 void. The walk: start at the strongest pre-lock point below 80% (or the weakest point) and
+move up the grid; MDE80 is the first point with ≥ 80% whose next stronger grid point (rerun too, if any) also has
+≥ 80%; its effect is |plant mean − locked primary mean|, with the bracket [effect at the last failing point, MDE80].
+If no point passes, MDE80 is not reached and the prediction can only be REPRODUCED (unpowered). MDE80, its effect
+and the bracket in the verdict come from this recomputation; the table above is pre-lock calibration.
 
 ## Decision rules (locked)
 - Step 1: the primary's panel result (pass / INCOMPLETE with the outside statistics), the fidelity result, MIN-D
@@ -174,19 +207,32 @@ Verdict per counted prediction on the primary:
 - **Registry:** one Tier-2 measurement row (inputs, sampler type and N, fidelity result, layer map, the scope
   statement below). Scope notes only on live Tier-2 measurement rows, with these templates:
   - same statistic, powered REPRODUCED: "[PHASE_779: not outside the PHASE_779 sampler of page × line-type
-    composition, line-position vocabulary and two-unit junction routing (B {b}; sampler {m} ± {sd}; z {z}; MDE80 {d}).
-    The sampler's inputs are fitted to B; not being outside it is not evidence that B was produced this way.]"
+    composition, line-position vocabulary and two-unit junction routing (B {b}; sampler {m} ± {sd}; z {z}; MDE80 {d},
+    an extra-layer effect detected in ≥ 80% of plant draws; smaller residuals are not excluded). The sampler's inputs
+    are fitted to B; not being outside it is not evidence that B was produced this way.]"
   - related statistic: "[PHASE_779: a related statistic ({definition}) is not outside the PHASE_779 sampler (z {z};
-    MDE80 {d}); this row's measurement is not re-tested and stands.]"
+    MDE80 {d}, an extra-layer effect detected in ≥ 80% of plant draws; smaller residuals are not excluded); this
+    row's measurement is not re-tested and stands.]"
   - NOT REPRODUCED: "[PHASE_779: {statistic} lies outside the PHASE_779 sampler (B {b}; sampler {m} ± {sd}; z {z}); it
-    is not shown to follow from these rules as sampled. Sampler-sensitive: {yes/no}.]"
-  - unpowered REPRODUCED and NO EXCESS: no note. If P2 is powered and REPRODUCED, C1811/C1812 get a re-check flag,
+    is not shown to follow from these rules as sampled. It does not identify the missing layer. Sampler-sensitive:
+    {yes/no}.]"; on a related row the note adds "({definition}; a related statistic; this row's measurement is not
+    re-tested)".
+  - Rows that receive notes, declared now (the same-statistic template applies only where declared here): P1u →
+    C1214 (related). P2 → C1811 and C1812: a re-check flag if powered REPRODUCED, the related NOT REPRODUCED note
+    otherwise. P6z → C2081 (related); a NOT REPRODUCED note adds "this does not contradict C2081, whose null fixes
+    B's edge sequence exactly". P7 → no row (C2077 is a rival-exclusion row; C1994 is a Section S against Section B
+    contrast). P8 → C549 (related: C549's test counts transitions between consecutive family tokens of a line's
+    filtered family sequence, with families defined by token class; P8 counts strictly adjacent surface-defined
+    pairs) and C2056 (related). P10 → none. P11 → C1671 and C1566 (related). P12 → C2056 (related).
+  - If Step 1 is INCOMPLETE, every scope note adds "the sampler is itself outside B on {D}".
+  - unpowered REPRODUCED and NO EXCESS DETECTED OVER THE WITHIN-CELL SHUFFLE: no note. If P2 is powered and REPRODUCED, C1811/C1812 get a re-check flag,
     not a re-scope. C1435 keeps its definition-check flag. No notes on Tier-3 rows, content rows (C1889, C1965,
     C1969, C2034) or superseded rows (C957). No tier changes. No Tier-0 change.
   - Row scope statement: "Composition is an input; nothing here bears on vocabulary, folio-unique words (C531), Zipf
     or hapax share, or on how page stocks arose. MIN-D is a sampler of measured rules, not a production method, and
     does not bear on C2077/C2096. Not being outside the sampler is not evidence of generation. No reading."
-- Sensitivity (descriptive): the primary at κ × 0.5 and κ × 2 and at κ_z × 0.5 and × 2 (200 members each).
+- Sensitivity (descriptive): the primary at κ × 0.5 and κ × 2 and at κ_z × 0.5 and × 2 (200 members each; own seed
+  block 779,300,000 + 10,000·setting + member).
 - **HARNESS-FAIL:** a code failure; no verdict.
 
 ## Declared prior knowledge and exposure
@@ -202,6 +248,12 @@ Verdict per counted prediction on the primary:
   excess +0.68 to +0.75; f/p excess +0.03 to +0.05) approximate B's values by construction, and the two are inputs on
   the line-type stocks; they are line-type contrasts, not counted. (iii) Dry-run member values were seen for every
   statistic on every variant (members only), including the nine-bigram count (15–36 on v1 members).
+- **Partly unblinded counted statistics.** P7 is identical to PHASE_757's descriptive `erun_class_same_lag1` (same
+  regex over EVA e-runs, class cap at 2, within-line adjacent certain pairs), so B's value is known: 0.455. P8 is a
+  related statistic of C549 (above), so B's value is not known exactly but C549's 56.3% is close. Against the
+  pre-lock primary means (P7 0.4328 ± 0.0030, z ≈ +7; P8 0.5151 ± 0.0083, z ≈ +6) these two verdicts are
+  foreseeable. They remain counted, are labelled "partly unblinded" in the row and the write-up, and the blind
+  counted set is P1u, P2, P6z, P10, P11, P12.
 - The fidelity run computes D2, D6 and the diagnostics only; the plants compute prediction statistics on generated
   members only.
 
@@ -210,8 +262,10 @@ Verdict per counted prediction on the primary:
 2. `run779.py --checksums`, commit, tag `phase779-lock`.
 3. `run779.py run` (B's values; 9 × 1,000 members plus the second block for R2L and R0L; about 7 h at Idle
    priority with the Metropolis sampler, from the fidelity stage's 2.2 s per member); `run779.py sens` (the
-   descriptive κ / κ_z sensitivity, 4 × 200 members); `run779.py verdict`; raw results committed before the
-   write-up; lean-expert results check; write-up.
+   descriptive κ / κ_z sensitivity, 4 × 200 members); `run779.py plantcheck` (the plant recomputation above,
+   about 24 points); `run779.py verdict`; raw results committed before the write-up; lean-expert results check;
+   write-up. The run and sens stages write per-member values incrementally; a stage interrupted by a harness event
+   resumes from its seeds after 5 regenerated members match those already written exactly; otherwise HARNESS-FAIL.
 
 ## Caveats
 - **One sampler, one implementation of the rules.** The ladder, the 'w', 'memo' and page-only variants and the κ
@@ -220,3 +274,5 @@ Verdict per counted prediction on the primary:
   arose, only about what follows once it exists.
 - **Statistics with a registered relative that is not the identical statistic** (P1u ↔ C1214, P2 ↔ C1811) cannot
   retire the constraint; the related-statistic template applies.
+- **Mixing was checked on D2 only, without plant terms;** D2 at 20 against 10 sweeps differed by 0.0009 (about 1.8
+  standard errors of the difference, 0.18 member sd).
