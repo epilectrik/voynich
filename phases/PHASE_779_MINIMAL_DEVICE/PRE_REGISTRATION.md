@@ -2,7 +2,8 @@
 
 **Status: v4, FOR LOCK (design audit: all 38 edits incorporated; the sequential sampler failed the fidelity gate
 and the declared Metropolis fallback replaced it and passed; plant MDE80s filled in from `results/plants779.json`;
-confirmation pass: all 18 edits incorporated, with the z\* resolution noted in Step 2).** No counted prediction statistic
+confirmation pass: all 18 edits incorporated, with the z\* resolution noted in Step 2 and accepted by the reviewer;
+presence check passed with two sentences added to the recomputation paragraph).** No counted prediction statistic
 has been computed on Currier B (see Exposure for the three disclosed exceptions). The device has one pre-lock
 choice, the routing smoothing κ, made on D2 alone.
 
@@ -194,9 +195,11 @@ outside is recomputed against the locked primary ensemble and criterion (continu
 and |z| > z\*; P6z: the pooled R2L N 2,000, strictly beyond every member). Per-member plant values were not stored
 pre-lock, so the points are rerun from their seeds (generated members only; the stage formula for declared points,
 the recorded seed for added points); every rerun mean must reproduce the table above to four decimals, else the plant
-is flagged and its MDE80 void. The walk: start at the strongest pre-lock point below 80% (or the weakest point) and
+is flagged, its MDE80 is void and treated as not reached, and the prediction can only be REPRODUCED (unpowered). The
+walk: start at the strongest pre-lock point below 80% (or the weakest point) and
 move up the grid; MDE80 is the first point with ≥ 80% whose next stronger grid point (rerun too, if any) also has
-≥ 80%; its effect is |plant mean − locked primary mean|, with the bracket [effect at the last failing point, MDE80].
+≥ 80%. Stronger grid points beyond that one are not rerun and are taken as passing (pre-lock fractions 0.96–1.00);
+this is the operational form of the definition above. Its effect is |plant mean − locked primary mean|, with the bracket [effect at the last failing point, MDE80].
 If no point passes, MDE80 is not reached and the prediction can only be REPRODUCED (unpowered). MDE80, its effect
 and the bracket in the verdict come from this recomputation; the table above is pre-lock calibration.
 
