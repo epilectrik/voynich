@@ -1,0 +1,956 @@
+{
+ "f47r": {
+  "drawing_height": 0.94,
+  "n_plants_locator": 1,
+  "locator_notes": "Upper leaf cluster joined to the lower plant by a long thin stalk curving around the right end of the text; polygon hugs the stalk so the text block stays outside (line ends touch the stalk); small root at bottom reaches near the page edge; large faint offset (ghost) of leaves on the left half excluded; drawings from the next leaf visible at right edge beyond a paper strip, excluded."
+ },
+ "f9v": {
+  "drawing_height": 0.7975,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant with several flowers; the upper flowers sit among the ends of the text lines, so a few words between them remain inside (one block greyed); strong show-through at left"
+ },
+ "f22v": {
+  "drawing_height": 0.8825,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; left leaves overlap the right part of the left text block, so several words lie inside the polygon; flower at top beside a small text block (excluded); thorny root across the bottom; show-through at lower left"
+ },
+ "f54v": {
+  "drawing_height": 0.829,
+  "n_plants_locator": 1,
+  "locator_notes": "text block's right ends run into the leaves and the berry stalk; berry-bearing stalk arches over to the right page edge; root reaches the right edge at the bottom; faint show-through at left (excluded)"
+ },
+ "f26r": {
+  "drawing_height": 0.957,
+  "n_plants_locator": 1,
+  "locator_notes": "two long flowering stalks rise through the text block to bud clusters at the top; text between and around the stalks is intertwined with them and partly inside the polygon; roots run to the bottom edge"
+ },
+ "f49v": {
+  "drawing_height": 0.935,
+  "n_plants_locator": 1,
+  "locator_notes": "Page is text-dominant: the plant occupies the right-hand strip; its long stem runs down between two text columns (polygon narrows to a corridor around the stem, with a few letter tips of adjacent text inside); small separate blue flower at the top right corner is joined to the plant by a thin stalk and included; root/tuber at bottom right reaches the binding edge; faint offset blot at left of text excluded."
+ },
+ "f29v": {
+  "drawing_height": 0.9175,
+  "n_plants_locator": 1,
+  "locator_notes": "Flower buds on long stalks are interleaved with the text in the upper half: many short text fragments between the stalks remain inside the polygon (six largest boxed; others such as rows near the lower buds could not be boxed without touching stalks); a large faint offset (ghost) of leaves at left-centre is partly inside the polygon."
+ },
+ "f87v": {
+  "drawing_height": 0.816,
+  "n_plants_locator": 2,
+  "locator_notes": "two separate plants side by side: a smaller one at left (leaf rosette, one flower, curled root) and a larger one at right (two flower clusters, many leaves, branching root); polygon encloses both; text blocks lie between the flower clusters and between the two plants; vertical writing at far left excluded; show-through at left"
+ },
+ "f39v": {
+  "drawing_height": 0.77,
+  "n_plants_locator": 1,
+  "locator_notes": "roots spread across the bottom of the page; two writing blocks sit under the leaves either side of the stem (excluded); edge of the facing page visible at right"
+ },
+ "f3r": {
+  "drawing_height": 0.895,
+  "n_plants_locator": 1,
+  "locator_notes": ""
+ },
+ "f93r": {
+  "drawing_height": 0.87,
+  "n_plants_locator": 1,
+  "locator_notes": "Text wraps closely around the head (top-right text above its right slope, left column abutting the left leaves; line ends touch the leaves); a large brown stain runs down the left of the plant across text and leaves; faint offset of another plant on the left half and drawing from the facing page at the left edge are excluded."
+ },
+ "f35v": {
+  "drawing_height": 0.938,
+  "n_plants_locator": 1,
+  "locator_notes": "root runs far to the left along the bottom; text block's right ends touch the left side of the plant; faint show-through at left"
+ },
+ "f7r": {
+  "drawing_height": 0.872,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant: star-shaped leaf rosette whose top leaf rises through the upper text block, a long stem passing between the two halves of the lower text block, and a root spreading almost to both page edges; show-through at lower left; edge of a neighbouring page's drawing at the far left (excluded)"
+ },
+ "f35r": {
+  "drawing_height": 0.8725,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; flower at top, large leaf mass, long stem passing between the two halves of the lower text block, spreading root at bottom; strong show-through of the reverse drawing across the left half (excluded); edge of neighbouring folio visible at far left"
+ },
+ "f14r": {
+  "drawing_height": 0.9025,
+  "n_plants_locator": 1,
+  "locator_notes": "hole in the parchment at upper right beside the leaves; leaves of the next folio's drawing visible at the right edge (excluded); edge of facing page at far left; show-through at left"
+ },
+ "f34r": {
+  "drawing_height": 0.9335,
+  "n_plants_locator": 1,
+  "locator_notes": "flower heads sit inside the top text block and two text blocks lie between the leaves and the roots; roots spread across the whole bottom of the page; edge of facing page with a drawing at far left"
+ },
+ "f47v": {
+  "drawing_height": 0.915,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; three flowers on long thin stems rise through the right ends of the upper text lines (a few words remain inside, greyed); stem passes between two lower text blocks; spreading root across the bottom; show-through at upper left"
+ },
+ "f15v": {
+  "drawing_height": 0.9515,
+  "n_plants_locator": 1,
+  "locator_notes": "Hole in the parchment inside the left leaf (damage); text block sits left of the stalk and ends of a few lines touch the stalk/upper leaf; roots run off the bottom edge of the page; large faint offset (ghost) foliage at lower left is excluded where possible."
+ },
+ "f42r": {
+  "drawing_height": 0.964,
+  "n_plants_locator": 1,
+  "locator_notes": "plant runs down the right side of the page: a large leaf at top right, a long stem, a second shoot with red leaves, and a main root running left along the whole bottom of the page. Text line ends between the text block and the stem are inside the polygon and boxed; a small text column right of the stem between the leaf and the red leaves is excluded. Large faint blue offset or show-through image at left excluded"
+ },
+ "f26v": {
+  "drawing_height": 0.6775,
+  "n_plants_locator": 1,
+  "locator_notes": "roots spread across the bottom of the page; flower cluster at the top meets the end of the text block; paper strip along the gutter at left"
+ },
+ "f44v": {
+  "drawing_height": 0.65,
+  "n_plants_locator": 1,
+  "locator_notes": "two flower buds rise into the end of the text block; faint strokes near the bottom edge below the roots and show-through at left (excluded); edge of facing page with writing at right"
+ },
+ "f18r": {
+  "drawing_height": 0.8465,
+  "n_plants_locator": 1,
+  "locator_notes": "text block ends meet the flower and bud at the upper left; faint show-through drawing from the reverse at centre-left (excluded); edge of facing page with a drawing at far left; folio number top right"
+ },
+ "f32r": {
+  "drawing_height": 0.9485,
+  "n_plants_locator": 1,
+  "locator_notes": "top flower and upper stem rise between two text columns. Ends of several text lines fall inside the polygon at the left. Ground hatching at the stem base included"
+ },
+ "f4v": {
+  "drawing_height": 0.911,
+  "n_plants_locator": 1,
+  "locator_notes": "tall plant along the right side; text ends abut the flower and stem on the left; damage (hole) near the root at lower right; show-through drawing at left (excluded)"
+ },
+ "f93v": {
+  "drawing_height": 0.93,
+  "n_plants_locator": 1,
+  "locator_notes": "berry stalks at the top are interleaved with the text block; large tubers spread along the bottom; faint show-through of a drawing from the reverse at left (excluded)"
+ },
+ "f46r": {
+  "drawing_height": 0.6375,
+  "n_plants_locator": 1,
+  "locator_notes": "one drawing: three leafy flowering stems rising from a single horizontal root with many rootlets reaching the bottom of the page. Text block entirely above. A hole in the parchment in the root. Facing page drawings and a paper strip at the right edge excluded"
+ },
+ "f9r": {
+  "drawing_height": 0.89,
+  "n_plants_locator": 1,
+  "locator_notes": "flower spikes at top sit between two text blocks; root tail runs left along the bottom; faint show-through at left"
+ },
+ "f1v": {
+  "drawing_height": 0.829,
+  "n_plants_locator": 1,
+  "locator_notes": "Leafy crown at top, a long bare stem running down between two text columns (polygon narrows to the stem; ends of left-column lines that slope into the corridor are boxed; one line overlaps the tip of the lowest leaf and is left unboxed), and a large root mass along the bottom; parchment holes/damage in the lower-left root area; faint offset on the left and tape strip at left edge excluded."
+ },
+ "f25v": {
+  "drawing_height": 0.7835,
+  "n_plants_locator": 1,
+  "locator_notes": "top leaf tip runs up between the last two text lines. A small outlined animal stands on a green ground strip beside the root at lower right; included. Faint blue offset or show-through images on the left are excluded"
+ },
+ "f29r": {
+  "drawing_height": 0.8,
+  "n_plants_locator": 1,
+  "locator_notes": "flower spike rises through the gap between two text columns to the third line; a few letters touch it. Root drawn as a wide fan of thin lines spanning nearly the full page width at the bottom. Large faint green offset or show-through images at left are partly inside the polygon near the root fan; facing page drawing at the far left excluded"
+ },
+ "f8v": {
+  "drawing_height": 0.831,
+  "n_plants_locator": 1,
+  "locator_notes": "text blocks surround the plant above and below. Ends of several text lines fall inside the polygon near the flower stalks and the lower stem; greyed by text boxes. Large faint green offset or show-through shape behind the upper text is partly inside the polygon"
+ },
+ "f37r": {
+  "drawing_height": 0.7975,
+  "n_plants_locator": 1,
+  "locator_notes": "Flower clusters at the top are interleaved with text: left text-line ends inside the polygon are boxed; a short text block on the right between clusters is excluded (a written mark between two clusters remains inside); spotty stain with small holes right of the lower leaves partly inside; large faint offset (ghost) of a plant on the left half and the facing page's drawing at the left edge excluded."
+ },
+ "f44r": {
+  "drawing_height": 0.865,
+  "n_plants_locator": 1,
+  "locator_notes": "long root sweeps down-left across the lower page. Two text blocks to the left lie outside the polygon except the tail of one upper line beside the flower stalk. Faint blue offset or show-through image at left excluded"
+ },
+ "f21r": {
+  "drawing_height": 0.495,
+  "n_plants_locator": 1,
+  "locator_notes": "faint blue and green offset or show-through images in the background are excluded"
+ },
+ "f36r": {
+  "drawing_height": 0.783,
+  "n_plants_locator": 1,
+  "locator_notes": "single bushy plant; thin stems with small flower buds rise into the second text block, so a few words between stems remain inside; root mass across the bottom; strong show-through at left and a neighbouring page edge at far left"
+ },
+ "f27r": {
+  "drawing_height": 0.9435,
+  "n_plants_locator": 2,
+  "locator_notes": "Two plants: a tall main plant (flowering top, large leaves, long stem to roots at bottom centre) and a smaller separate plant at lower right with three round leaves and its own root; both are inside the polygon. Main stem passes between two text columns at the top and bottom, so line ends next to the stem are inside the polygon (boxed); large faint offset (ghost) foliage on the left half excluded; drawing from the facing page at the left edge excluded."
+ },
+ "f56v": {
+  "drawing_height": 0.9125,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant: large leaves on one stem, an outlined head with a small blue flower at the top right, root at the bottom; leaves reach the right page edge; lower text block runs right up to the leaf edge; show-through at left"
+ },
+ "f43r": {
+  "drawing_height": 0.5725,
+  "n_plants_locator": 1,
+  "locator_notes": "one connected drawing: a row of about nine stems with flowers sharing a single leafy canopy and a single root mass; text block entirely above"
+ },
+ "f23r": {
+  "drawing_height": 0.669,
+  "n_plants_locator": 1,
+  "locator_notes": "single bushy plant with two flower clusters rising into the last text lines (polygon notched between them), many palmate leaves, horizontal rootstock with rootlets at the bottom; two main stems rise from separate bases on the shared rootstock (could be read as two joined plants); neighbouring folio edge visible at left"
+ },
+ "f28r": {
+  "drawing_height": 0.8175,
+  "n_plants_locator": 1,
+  "locator_notes": "top spike and upper stem rise in the gap between two text columns; ends of a few lines touch the polygon edge. Holes and damage in the parchment at left, a large faint offset or show-through plant image at left, and the facing page drawing at the left edge are all excluded"
+ },
+ "f30v": {
+  "drawing_height": 0.795,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; fruiting stems at top reach into the ends of the text lines; leaves in the middle; long bare stem down to a horizontal rootstock spanning the page bottom; strong show-through on the left"
+ },
+ "f38r": {
+  "drawing_height": 0.939,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; large leaf mass at top, stem passes down through a gap between two text blocks to side flowers and roots at the bottom; a strip of a neighbouring folio with writing is visible at right (excluded)"
+ },
+ "f6v": {
+  "drawing_height": 0.818,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; left-hand flower heads and leaves interleave with the ends of text lines; show-through of reverse drawing on left half"
+ },
+ "f13r": {
+  "drawing_height": 0.729,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; flower spike rises into the last text lines; bulbous root reaching the page bottom; a strip of a neighbouring folio with green drawing is visible at the right edge (excluded); show-through at left"
+ },
+ "f16r": {
+  "drawing_height": 0.894,
+  "n_plants_locator": 1,
+  "locator_notes": "Flower spikes at the top sit beside the ends of the text lines (line ends abut the leftmost spike); one short text fragment between the top spikes is inside and boxed; small text block at top right excluded; faint offset (ghost) foliage on the left half and drawing from the facing page at the left edge excluded; root reaches the bottom page edge."
+ },
+ "f24v": {
+  "drawing_height": 0.792,
+  "n_plants_locator": 1,
+  "locator_notes": "Text block wraps the left flowers; the ends of several text lines lie between the flowers and the upper leaves (boxed); faint offset/ghost of a plant from the facing page on the left half; brown drawing fragments of an underlying leaf visible below the bottom page edge, excluded."
+ },
+ "f25r": {
+  "drawing_height": 0.7675,
+  "n_plants_locator": 1,
+  "locator_notes": "long bare stem down to small roots at the bottom edge; show-through drawing at left (excluded); folio number at top right"
+ },
+ "f14v": {
+  "drawing_height": 0.674,
+  "n_plants_locator": 1,
+  "locator_notes": "Topmost flower head sits in a gap within the last text lines; hole/damage in the parchment at left margin (outside plant); faint offset from facing page on left half and drawing of facing page at right edge excluded."
+ },
+ "f34v": {
+  "drawing_height": 0.64,
+  "n_plants_locator": 1,
+  "locator_notes": "Text block entirely above the plant; right-hand fruits run into the gutter/page edge; faint green offset from facing page at far right excluded."
+ },
+ "f16v": {
+  "drawing_height": 0.909,
+  "n_plants_locator": 1,
+  "locator_notes": "one plant with one blue and four red flower heads on stalks from a single root. Ends of upper text lines touch the blue flower; partly inside the polygon. Large faint green offset or show-through images on the left are excluded"
+ },
+ "f53v": {
+  "drawing_height": 0.81,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; flower head at top right overlaps the ends of several text lines; leaves reach the right page edge next to a neighbouring folio with writing (excluded); show-through at left"
+ },
+ "f30r": {
+  "drawing_height": 0.784,
+  "n_plants_locator": 1,
+  "locator_notes": "Flowering stalk arches up beside the ends of the upper text lines (some line ends inside, boxed where possible); the stem passes between the two lower text columns and short right-hand lines sit between the lower leaf tips (boxed); a large pale stain/damaged strip runs down the right side next to the leaves; drawing of the facing/underlying page visible at the right edge and at the far left, excluded."
+ },
+ "f33v": {
+  "drawing_height": 0.96,
+  "n_plants_locator": 1,
+  "locator_notes": "One plant with two large flower heads at the top whose long stalks pass down through the text; a text column sits between the two stalks (inside polygon, boxed) and text blocks wrap both sides; blank parchment above-left of the left flower head is inside the polygon (vertex limit); three tubers at the bottom on root runners span the page width; faint offset leaf shapes at lower left mostly excluded."
+ },
+ "f37v": {
+  "drawing_height": 0.914,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant at right with three flower heads, paired leaves and a large forked root; text block at left runs up against the leaves"
+ },
+ "f53r": {
+  "drawing_height": 0.951,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; many flowers on curving stems at top, spiny leaves in the middle, stem passes down through a gap in the lower text block to a root at the bottom page edge; show-through at left"
+ },
+ "f51v": {
+  "drawing_height": 0.925,
+  "n_plants_locator": 1,
+  "locator_notes": "berry spike rises between two text blocks; text ends touch the spike's berries; faint show-through of a drawing from the reverse at left (excluded)"
+ },
+ "f17v": {
+  "drawing_height": 0.935,
+  "n_plants_locator": 1,
+  "locator_notes": "plant arches over the text block: berry-bearing branch runs along the top and a tendril hangs down the left side; root runs off to the lower left, partly under a paper strip along the gutter; text right ends interleave with the leaf tips"
+ },
+ "f2r": {
+  "drawing_height": 0.8995,
+  "n_plants_locator": 1,
+  "locator_notes": "text lines interleaved between the three flower stalks at top"
+ },
+ "f3v": {
+  "drawing_height": 0.886,
+  "n_plants_locator": 1,
+  "locator_notes": "two flower heads rise beside the right end of the upper text block. Long root runs left along the bottom of the page. Large faint green offset or show-through plant image on the left is excluded"
+ },
+ "f31r": {
+  "drawing_height": 0.846,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; flower heads at top and along the right side; upper stem and leaves touch the ends of the text lines; long root sweeps across the page bottom to the left edge"
+ },
+ "f52r": {
+  "drawing_height": 0.8265,
+  "n_plants_locator": 1,
+  "locator_notes": "flower head on the main stalk sits inside the text block; nearby words boxed. A smaller leafy shoot at left grows from the same horizontal root, treated as one plant. Small hole in the parchment right of the root. Large faint green offset or show-through plant image on the left is partly inside the polygon behind the left shoot"
+ },
+ "f15r": {
+  "drawing_height": 0.9125,
+  "n_plants_locator": 1,
+  "locator_notes": "flower and two pods on long stalks rise through the text; a column of text between the pods is inside the polygon and boxed. A round hole in the parchment sits on the stem. Large faint green offset or show-through shape at left excluded; leaves of the facing pages visible at both edges are excluded"
+ },
+ "f6r": {
+  "drawing_height": 0.89,
+  "n_plants_locator": 1,
+  "locator_notes": "text runs around the flower stalks at the top; right side of the drawing partly under a paper strip along the right edge; edge of facing page with a drawing at far left; show-through at left"
+ },
+ "f87r": {
+  "drawing_height": 0.9435,
+  "n_plants_locator": 1,
+  "locator_notes": "text block's right ends run up to the stem and flowers; folio number between the top flowers; faint show-through drawing at left and a sliver of another drawing at the right edge (excluded)"
+ },
+ "f5r": {
+  "drawing_height": 0.678,
+  "n_plants_locator": 1,
+  "locator_notes": "roots drawn in outline only, unpainted. Faint green offset or show-through images in the background on the left and below are excluded"
+ },
+ "f4r": {
+  "drawing_height": 0.906,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; its top flower cluster sits above the first text lines, with the stem passing up through the text (narrow column kept); strong show-through and an adjacent page's drawing visible at far left (excluded)"
+ },
+ "f31v": {
+  "drawing_height": 0.6535,
+  "n_plants_locator": 1,
+  "locator_notes": "faint show-through of a plant from the reverse at left (excluded); roots spread to both lower corners"
+ },
+ "f5v": {
+  "drawing_height": 0.706,
+  "n_plants_locator": 1,
+  "locator_notes": "Text block entirely above the plant; a large blue-green offset blot (from the facing page) lies behind the left leaves and partly inside the polygon; drawing from the facing page visible at the right edge, excluded."
+ },
+ "f27v": {
+  "drawing_height": 0.7925,
+  "n_plants_locator": 1,
+  "locator_notes": "several flower heads on long stalks rise into the last lines of the text block; words between the flower heads are inside the polygon and boxed. Large faint blue offset or show-through image at left excluded"
+ },
+ "f96r": {
+  "drawing_height": 0.903,
+  "n_plants_locator": 1,
+  "locator_notes": "Large head/flower at top right beside the text block; leaf-tips of the top rosette poke up into the last two text lines, so fragments of those lines are inside the polygon (largest boxed); large root mass spans the bottom of the page; faint offset (ghost) foliage behind the text and left leaves; drawings of facing pages at both edges excluded."
+ },
+ "f42v": {
+  "drawing_height": 0.911,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; flower at top and stem pass through gaps between two text columns (upper and lower text blocks); roots spread at the bottom; decorative pen flourish at upper left is part of the text (excluded); show-through at upper left"
+ },
+ "f2v": {
+  "drawing_height": 0.9075,
+  "n_plants_locator": 1,
+  "locator_notes": "root mass runs along the whole bottom of the page; flower drawn in outline at the top between text blocks; show-through at left and edge of facing page at right"
+ },
+ "f50r": {
+  "drawing_height": 0.727,
+  "n_plants_locator": 1,
+  "locator_notes": "Flower-head bristles at top reach into the last text lines (the gap between the two lower text segments); a few small glyphs are written inside the flower's central oval (part of the drawing, not boxed); roots reach the bottom page edge; drawings from the facing page at left and right edges excluded."
+ },
+ "f24r": {
+  "drawing_height": 0.895,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant with two flowering stems; long faint roots spread to lower left near page bottom; show-through of reverse drawing visible on left"
+ },
+ "f55v": {
+  "drawing_height": 0.957,
+  "n_plants_locator": 1,
+  "locator_notes": "Flower head and its stalk rise between two text blocks, and the stem between two lower text blocks; text line ends adjacent to stalk/stem are inside the polygon and covered by boxes; faint offset/ghost marks on the page are excluded."
+ },
+ "f46v": {
+  "drawing_height": 0.741,
+  "n_plants_locator": 1,
+  "locator_notes": "Text above the plant; the right-hand text block descends to just above the right-most flower heads; green offset stain at top of page excluded; facing-page text visible at right edge."
+ },
+ "f22r": {
+  "drawing_height": 0.786,
+  "n_plants_locator": 1,
+  "locator_notes": "Top flower set into a gap in the text lines; text block wraps both sides of the stem below the flower spikes; large faded offset/ghost image on the left of the page and part of the facing page's plant at far left edge are excluded."
+ },
+ "f13v": {
+  "drawing_height": 0.815,
+  "n_plants_locator": 1,
+  "locator_notes": "one plant with two tall stalks from a single root; writing between the two stems; top line of text touches the top of the right stalk"
+ },
+ "f45r": {
+  "drawing_height": 0.6665,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant with several stems from one root crown; stem tips reach the last text line; the root runs out to the lower left; an adjacent folio's red drawings and a tape strip at the right edge are excluded; show-through at left"
+ },
+ "f56r": {
+  "drawing_height": 0.785,
+  "n_plants_locator": 1,
+  "locator_notes": "Text wraps closely around upper-left flowers; small green fragment at right page edge (adjacent leaf) excluded."
+ },
+ "f38v": {
+  "drawing_height": 0.9375,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant; dense leaf column at top, long stem passing between the two parts of the lower text block (right part greyed inside the polygon), root at bottom; a hole in the vellum within the leaves; edge of a neighbouring folio drawing visible at far right"
+ },
+ "f10r": {
+  "drawing_height": 0.775,
+  "n_plants_locator": 1,
+  "locator_notes": "flower stalk rises between two text columns and bends over to a flower at upper right; six short text lines between the stalk and the flower are inside the polygon and boxed. Two root tubers along the bottom edge. Large faint green offset or show-through image at left excluded; facing page drawing at the far left excluded"
+ },
+ "f96v": {
+  "drawing_height": 0.842,
+  "n_plants_locator": 1,
+  "locator_notes": "top leaves interleave with the text blocks at top; leaves on the left overlap the ends of the left text lines; faint show-through drawing at left (excluded); right edge of the drawing reaches the page edge"
+ },
+ "f20r": {
+  "drawing_height": 0.54,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant in the lower half below the text: two flowering spikes and many pinnate leaves, faint root at the page bottom; strong show-through of the reverse drawing at left; a neighbouring folio's drawing visible at the far left edge (excluded)"
+ },
+ "f18v": {
+  "drawing_height": 0.8975,
+  "n_plants_locator": 1,
+  "locator_notes": "root tail runs to the bottom edge; faint show-through from the reverse; paper strip along the gutter at left"
+ },
+ "f40r": {
+  "drawing_height": 0.8735,
+  "n_plants_locator": 1,
+  "locator_notes": "Flower and swollen stem body rise between two text columns (polygon narrows to a corridor around the stem body; line ends touching the upper body are boxed); roots spread across the full width of the lower page; faint dotted/blue offset above the text and a green stain at right are excluded or partly inside at the margins."
+ },
+ "f40v": {
+  "drawing_height": 0.93,
+  "n_plants_locator": 2,
+  "locator_notes": "large plant with a big flower head on the right; a second, smaller separate plant (leaves and bulbous roots) at lower left, both enclosed; text ends hug the flower's left side; folio number at bottom right"
+ },
+ "f43v": {
+  "drawing_height": 0.6935,
+  "n_plants_locator": 2,
+  "locator_notes": "two separate plants side by side: a leafy stalk with a coiled root on the left and a larger plant with a spreading root mass on the right; both enclosed. Text block lies above"
+ },
+ "f54r": {
+  "drawing_height": 0.963,
+  "n_plants_locator": 1,
+  "locator_notes": "two flower heads at the top with a short text block between them; folio number between the flowers; leaves of the next page visible at far left and right edges (excluded); show-through at left"
+ },
+ "f8r": {
+  "drawing_height": 0.964,
+  "n_plants_locator": 1,
+  "locator_notes": "single leaf at top, long stem running down between two text columns, a small horizontal leaf on the stem, and roots spreading along the bottom. Text near the leaf base and starts of right-column lines next to the stem are inside the polygon and boxed. Faint green offset or show-through image right of the stem excluded where possible"
+ },
+ "f17r": {
+  "drawing_height": 0.774,
+  "n_plants_locator": 1,
+  "locator_notes": "Top flower set between text lines; a short text line runs between the upper flowers on both sides of the stem; large faded green offset/ghost of the facing page's plant on the left half and red drawing of the facing page at far left are excluded; brown stains near the lower right roots."
+ },
+ "f20v": {
+  "drawing_height": 0.69,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant with many small flower heads on branching stems and long narrow leaves; the top flower heads reach the ends of the last text lines; root at the bottom centre, partly faint; strong show-through of the reverse drawing on the lower left"
+ },
+ "f11v": {
+  "drawing_height": 0.9015,
+  "n_plants_locator": 1,
+  "locator_notes": "Large head on a long stem; text in two blocks either side of the stem (polygon narrows to a corridor around the stem; a few left-hand line ends boxed); small dark-green spot (paint drop or hole) just left of the head straddles the polygon edge; faint offset/ghost marks on the left half excluded."
+ },
+ "f32v": {
+  "drawing_height": 0.9325,
+  "n_plants_locator": 1,
+  "locator_notes": "Tall plant with top flower and two side flowers set among text; the stem passes between two text blocks in both the upper and middle text, so line ends adjacent to the stem/branches lie inside the polygon (boxed); a long horizontal rhizome runs along the bottom edge to the lower left; large faint offset (ghost) foliage on the left half excluded."
+ },
+ "f52v": {
+  "drawing_height": 0.8615,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant along the right side: curled leaves on one tall stem, top leaf droops beside the ends of the text lines, root at lower right; show-through on the left; the binding edge and a neighbouring folio's writing are visible at the far right (excluded)"
+ },
+ "f7v": {
+  "drawing_height": 0.7225,
+  "n_plants_locator": 1,
+  "locator_notes": "small seed-head stalk rises into the last lines of the text block; a few words between the buds are inside the polygon and boxed. Large faint green offset or show-through image at left excluded"
+ },
+ "f23v": {
+  "drawing_height": 0.84,
+  "n_plants_locator": 1,
+  "locator_notes": "Top flower stands in a channel between two text columns; ends of a few adjacent text lines fall inside the polygon (two boxed near the top petal); roots spread to both lower corners; large faint offset (ghost) foliage on the left half is partly inside the polygon at lower left; small isolated green spot right of the upper leaves excluded."
+ },
+ "f19r": {
+  "drawing_height": 0.765,
+  "n_plants_locator": 1,
+  "locator_notes": "ends of the text lines run up to the flower and its base on the left; large faint show-through of a plant from the reverse at left (excluded); folio number at top right"
+ },
+ "f11r": {
+  "drawing_height": 0.7235,
+  "n_plants_locator": 1,
+  "locator_notes": "one plant: three stems from three root sections that cross into one root system, under one shared leafy crown. Long left root reaches the binding edge; strokes of the facing page drawing just left of it are excluded. Small hole in the crown. Large faint offset or show-through image at upper left excluded"
+ },
+ "f33r": {
+  "drawing_height": 0.779,
+  "n_plants_locator": 1,
+  "locator_notes": "roots end in two faint outline figures at the lower left and lower right corners, included; stain at upper left and faint show-through at left edge (excluded); folio number top right"
+ },
+ "f49r": {
+  "drawing_height": 0.8575,
+  "n_plants_locator": 1,
+  "locator_notes": "single large plant filling the right and upper parts of the page: two leaf masses, several flowers and many small buds on trailing vines, central stem down to a horizontal rootstock across the bottom; text blocks at left are excluded by a notch; show-through of reverse drawing at upper left"
+ },
+ "f28v": {
+  "drawing_height": 0.7115,
+  "n_plants_locator": 1,
+  "locator_notes": "top leaf tips touch the last text lines. Hole and damage in the parchment right of the stem near the small round object. Faint blue and pink offset images on the left are excluded"
+ },
+ "f10v": {
+  "drawing_height": 0.649,
+  "n_plants_locator": 1,
+  "locator_notes": "root tendrils reach the right page edge near the binding. Faint blue and green offset or show-through images to the left are excluded"
+ },
+ "f36v": {
+  "drawing_height": 0.8005,
+  "n_plants_locator": 1,
+  "locator_notes": "top flower head sits between text lines; faint blue show-through of a drawing from the reverse at left (partly inside); small holes/damage in root and leaf area"
+ },
+ "f39r": {
+  "drawing_height": 0.7295,
+  "n_plants_locator": 1,
+  "locator_notes": "Many leafy shoots rising from one shared root body (drawn as a single plant); the single flower stalk at upper right runs up beside the end of the text lines; drawing of the facing page visible at far left edge, excluded."
+ },
+ "f21v": {
+  "drawing_height": 0.764,
+  "n_plants_locator": 1,
+  "locator_notes": "Top flower sits beside the end of the text block; dotted bleed-through/offset pattern at lower left is not part of the plant and is excluded where possible; right leaves reach the page edge."
+ },
+ "f50v": {
+  "drawing_height": 0.748,
+  "n_plants_locator": 1,
+  "locator_notes": "faint blue offset/show-through image left of the leaves excluded"
+ },
+ "f51r": {
+  "drawing_height": 0.851,
+  "n_plants_locator": 1,
+  "locator_notes": "edge of facing page and show-through of the drawing from the reverse visible at left; text block's right ends meet the flowers and left leaf"
+ },
+ "f19v": {
+  "drawing_height": 0.9065,
+  "n_plants_locator": 1,
+  "locator_notes": "single plant at right: three small flowers on thin stems, two leaf masses on one stem, root at bottom; upper leaves abut the ends of the text lines; strong show-through of the reverse drawing on the left"
+ },
+ "f55r": {
+  "drawing_height": 0.63,
+  "n_plants_locator": 1,
+  "locator_notes": "roots run off the bottom edge; faint reddish outline sketch near the left flower included; edge of facing page with a drawing visible at far left (excluded)"
+ },
+ "f45v": {
+  "drawing_height": 0.817,
+  "n_plants_locator": 1,
+  "locator_notes": "one plant with three flowering stems from a common crown; long horizontal rootstock runs across the whole page bottom; text interleaves with the stem tops (polygon notched around it)"
+ },
+ "BR0": {
+  "drawing_height": 0.4590009425070688
+ },
+ "BR1": {
+  "drawing_height": 0.45083932853717024
+ },
+ "BR2": {
+  "drawing_height": 0.4556354916067146
+ },
+ "BR3": {
+  "drawing_height": 0.4583333333333333
+ },
+ "BR4": {
+  "drawing_height": 0.46906474820143884
+ },
+ "BR5": {
+  "drawing_height": 0.4564393939393939
+ },
+ "BR6": {
+  "drawing_height": 0.446980504041845
+ },
+ "BR7": {
+  "drawing_height": 0.4512601046124584
+ },
+ "BR8": {
+  "drawing_height": 0.4029356060606061
+ },
+ "BR9": {
+  "drawing_height": 0.4512601046124584
+ },
+ "BR10": {
+  "drawing_height": 0.34569662387066097
+ },
+ "BR11": {
+  "drawing_height": 0.36527514231499053
+ },
+ "BR12": {
+  "drawing_height": 0.4577798861480076
+ },
+ "BR13": {
+  "drawing_height": 0.46638257575757575
+ },
+ "BR14": {
+  "drawing_height": 0.4652943992340833
+ },
+ "BR15": {
+  "drawing_height": 0.456490727532097
+ },
+ "BR16": {
+  "drawing_height": 0.45829428303655106
+ },
+ "BR17": {
+  "drawing_height": 0.4681349578256795
+ },
+ "BR18": {
+  "drawing_height": 0.439847836424156
+ },
+ "BR19": {
+  "drawing_height": 0.44170616113744077
+ },
+ "BR20": {
+  "drawing_height": 0.4549763033175355
+ },
+ "BR22": {
+  "drawing_height": 0.43988945186549977
+ },
+ "BR23": {
+  "drawing_height": 0.4371764705882353
+ },
+ "BR25": {
+  "drawing_height": 0.4616463985032741
+ },
+ "BR26": {
+  "drawing_height": 0.4576271186440678
+ },
+ "BR27": {
+  "drawing_height": 0.45471609572970434
+ },
+ "BR28": {
+  "drawing_height": 0.46153846153846156
+ },
+ "BR29": {
+  "drawing_height": 0.438000942951438
+ },
+ "BR30": {
+  "drawing_height": 0.44897003745318353
+ },
+ "BR31": {
+  "drawing_height": 0.45433033601514433
+ },
+ "BR32": {
+  "drawing_height": 0.39972080037226615
+ },
+ "BR33": {
+  "drawing_height": 0.4094927873429502
+ },
+ "BR34": {
+  "drawing_height": 0.4604519774011299
+ },
+ "BR35": {
+  "drawing_height": 0.4499063670411985
+ },
+ "BR36": {
+  "drawing_height": 0.4519005161895824
+ },
+ "BR37": {
+  "drawing_height": 0.45612388549976535
+ },
+ "BR38": {
+  "drawing_height": 0.44811540251279663
+ },
+ "BR39": {
+  "drawing_height": 0.454331450094162
+ },
+ "BR40": {
+  "drawing_height": 0.32015065913371
+ },
+ "BR41": {
+  "drawing_height": 0.45374653098982426
+ },
+ "BR42": {
+  "drawing_height": 0.45235892691951896
+ },
+ "BR43": {
+  "drawing_height": 0.45794392523364486
+ },
+ "BR44": {
+  "drawing_height": 0.45176470588235296
+ },
+ "BR45": {
+  "drawing_height": 0.44906542056074766
+ },
+ "BR46": {
+  "drawing_height": 0.45560747663551404
+ },
+ "BR47": {
+  "drawing_height": 0.458586803930744
+ },
+ "BR48": {
+  "drawing_height": 0.4478925428439092
+ },
+ "BR50": {
+  "drawing_height": 0.4468384074941452
+ },
+ "BR51": {
+  "drawing_height": 0.43656015037593987
+ },
+ "BR52": {
+  "drawing_height": 0.3161592505854801
+ },
+ "BR53": {
+  "drawing_height": 0.46320754716981133
+ },
+ "BR54": {
+  "drawing_height": 0.455188679245283
+ },
+ "BR55": {
+  "drawing_height": 0.2698783910196445
+ },
+ "BR56": {
+  "drawing_height": 0.31524789522918617
+ },
+ "BR57": {
+  "drawing_height": 0.4360936093609361
+ },
+ "BR58": {
+  "drawing_height": 0.4474671669793621
+ },
+ "BR59": {
+  "drawing_height": 0.45117370892018777
+ },
+ "BR60": {
+  "drawing_height": 0.4460093896713615
+ },
+ "BR61": {
+  "drawing_height": 0.44855004677268473
+ },
+ "BR62": {
+  "drawing_height": 0.4505800464037123
+ },
+ "BR63": {
+  "drawing_height": 0.45011600928074247
+ },
+ "BR64": {
+  "drawing_height": 0.394095595126523
+ },
+ "BR65": {
+  "drawing_height": 0.44892221180880976
+ },
+ "BR66": {
+  "drawing_height": 0.4512419503219871
+ },
+ "BR67": {
+  "drawing_height": 0.3220102373196836
+ },
+ "BR68": {
+  "drawing_height": 0.31865042174320524
+ },
+ "BR69": {
+  "drawing_height": 0.45032802249297094
+ },
+ "BR70": {
+  "drawing_height": 0.4513692162417375
+ },
+ "BR71": {
+  "drawing_height": 0.32061423918101445
+ },
+ "BR73": {
+  "drawing_height": 0.4540337711069418
+ },
+ "BR74": {
+  "drawing_height": 0.4382339126350399
+ },
+ "BR75": {
+  "drawing_height": 0.44454887218045114
+ },
+ "BR76": {
+  "drawing_height": 0.45642958078191237
+ },
+ "BR77": {
+  "drawing_height": 0.43565746373420683
+ },
+ "BR78": {
+  "drawing_height": 0.4545880149812734
+ },
+ "BR79": {
+  "drawing_height": 0.43118835133865663
+ },
+ "BR81": {
+  "drawing_height": 0.44858490566037734
+ },
+ "BR82": {
+  "drawing_height": 0.44532340623545835
+ },
+ "BR83": {
+  "drawing_height": 0.45742205677059095
+ },
+ "BR85": {
+  "drawing_height": 0.462004662004662
+ },
+ "BR86": {
+  "drawing_height": 0.45764316138192146
+ },
+ "BR87": {
+  "drawing_height": 0.4499767333643555
+ },
+ "BR88": {
+  "drawing_height": 0.4511910322279309
+ },
+ "BR89": {
+  "drawing_height": 0.45156761815629387
+ },
+ "BR90": {
+  "drawing_height": 0.4565523720056365
+ },
+ "BR91": {
+  "drawing_height": 0.4551432597463598
+ },
+ "BR92": {
+  "drawing_height": 0.45539906103286387
+ },
+ "BR94": {
+  "drawing_height": 0.4532340623545835
+ },
+ "BR96": {
+  "drawing_height": 0.4472573839662447
+ },
+ "BR97": {
+  "drawing_height": 0.45313964386129335
+ },
+ "BR98": {
+  "drawing_height": 0.4560260586319218
+ },
+ "BR99": {
+  "drawing_height": 0.4516431924882629
+ },
+ "BR101": {
+  "drawing_height": 0.4457887389483481
+ },
+ "BR103": {
+  "drawing_height": 0.4551788202508128
+ },
+ "BR104": {
+  "drawing_height": 0.4458894565722248
+ },
+ "BR105": {
+  "drawing_height": 0.4490460679385761
+ },
+ "BR106": {
+  "drawing_height": 0.4532340623545835
+ },
+ "BR107": {
+  "drawing_height": 0.45121951219512196
+ },
+ "BR108": {
+  "drawing_height": 0.4534829359513792
+ },
+ "BR109": {
+  "drawing_height": 0.4573170731707317
+ },
+ "BR110": {
+  "drawing_height": 0.4613220815752461
+ },
+ "BR111": {
+  "drawing_height": 0.45132325141776936
+ },
+ "BR112": {
+  "drawing_height": 0.4566854990583804
+ },
+ "BR113": {
+  "drawing_height": 0.4680451127819549
+ },
+ "BR114": {
+  "drawing_height": 0.45535296867695185
+ },
+ "BR116": {
+  "drawing_height": 0.45226843100189035
+ },
+ "BR117": {
+  "drawing_height": 0.4557377049180328
+ },
+ "BR119": {
+  "drawing_height": 0.4546304957904584
+ },
+ "BR120": {
+  "drawing_height": 0.4529714553111839
+ },
+ "BR121": {
+  "drawing_height": 0.4544172932330827
+ },
+ "BR122": {
+  "drawing_height": 0.4506578947368421
+ },
+ "BR123": {
+  "drawing_height": 0.44811540251279663
+ },
+ "BR124": {
+  "drawing_height": 0.4492481203007519
+ },
+ "BR125": {
+  "drawing_height": 0.43864468864468864
+ },
+ "BR126": {
+  "drawing_height": 0.45595854922279794
+ },
+ "BR127": {
+  "drawing_height": 0.43973941368078173
+ },
+ "BR129": {
+  "drawing_height": 0.4542897327707454
+ },
+ "BR130": {
+  "drawing_height": 0.4495068107092532
+ },
+ "BR131": {
+  "drawing_height": 0.4513399153737659
+ },
+ "BR132": {
+  "drawing_height": 0.4558270676691729
+ },
+ "BR133": {
+  "drawing_height": 0.4548872180451128
+ },
+ "BR134": {
+  "drawing_height": 0.4529274004683841
+ },
+ "BR135": {
+  "drawing_height": 0.45161290322580644
+ },
+ "BR136": {
+  "drawing_height": 0.43525011687704535
+ },
+ "BR137": {
+  "drawing_height": 0.4566231343283582
+ },
+ "BR138": {
+  "drawing_height": 0.44858073522568637
+ },
+ "BR140": {
+  "drawing_height": 0.4586679263108172
+ },
+ "BR141": {
+  "drawing_height": 0.4478034955125177
+ },
+ "BR142": {
+  "drawing_height": 0.45121951219512196
+ },
+ "BR144": {
+  "drawing_height": 0.4528746465598492
+ },
+ "BR145": {
+  "drawing_height": 0.45595126522961577
+ },
+ "BR146": {
+  "drawing_height": 0.44747998115873766
+ },
+ "BR147": {
+  "drawing_height": 0.44465379180405085
+ }
+}

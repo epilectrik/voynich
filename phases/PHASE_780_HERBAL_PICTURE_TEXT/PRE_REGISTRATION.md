@@ -240,6 +240,28 @@ comparable plants.
   and shared-feature rule match them only on what is coded.
 - Position-resolved features (text near roots vs flowers) are not tested.
 
+## Amendments made before any coding (implementation; none uses a code or a text–picture value)
+1. **Colour in both corpora.** The Brunschwig copy scanned is hand-coloured (seen on a locator check crop), so
+   `flower_colour` and `fill` are coded and may enter in both corpora; `pigments` stays descriptive in both;
+   `shading` stays Brunschwig-only.
+2. **Undefined pairs.** A pair whose pages share fewer than 3 observed organs takes the neutral value 0 after
+   double-centring (instead of being dropped), so the pair set is fixed under permutation.
+3. **Line-interior sensitivity.** The H track carries no drawing-break markup; the variant removes line-initial and
+   line-final tokens only (break counts for the layout covariate come from ZL).
+4. **V-B2** uses V-A1's entered features (its own α at N = 20 is not interpretable).
+5. **Fidelity allowance.** A K1 generator passes if the number of checks outside the central 90% is at most the 95th
+   percentile of Binomial(n_checks, 0.10) (4 for 16–20 checks): v2's fixed "2" was set for fewer checks and would fail
+   a correct generator about a third of the time.
+6. **K2** recomputes the spelling-dial covariates on the redistributed text (layout covariates stay the real page
+   values).
+7. **K4 details.** z\*_BR is calibrated on random 95-entry subsets (K1 i–ii with letter chapters as quires); the
+   uses-only text starts at the first "A" virtue mark (regex `(^|[\s.])A\s+[A-ZÄÖÜ]` on the raw entry), entries
+   without one or under 41 words after it are not eligible for that row; name stems = the first five letters of the
+   heading's words outside a stop list (von, wasser, krut, blumen, …).
+8. The locators' free-text notes are kept in `data/geometry.json` and are not used.
+9. **Non-plant woodcuts.** Brunschwig entries whose woodcut both coder sets mark `main_plant: no` (e.g. birds,
+   beehives) are excluded before the gate; entries whose woodcut could not be located are excluded.
+
 ## Changes from v1 (design audit)
 N-block replaced by N-local (exact, 10,000 permutations) and AND with N-shift (A1a); K1 a family of four generators with
 a picture-only fidelity gate and a fallback (A1b); parametric, leak-free generation (A1c); K2 anchored to measured

@@ -1,0 +1,28 @@
+{
+ "V_coded": 111,
+ "V_excluded_no_main_plant": [],
+ "BR_located": 142,
+ "BR_short_under_41": [
+  21
+ ],
+ "BR_duplicate_blocks_dropped": [
+  24,
+  49,
+  84,
+  93,
+  95,
+  100,
+  128,
+  139
+ ],
+ "BR_eligible": 133,
+ "BR_notes": {},
+ "BR_entries_without_crop": [
+  72,
+  80,
+  102,
+  115,
+  118,
+  143
+ ]
+}

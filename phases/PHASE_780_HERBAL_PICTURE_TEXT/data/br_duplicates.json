@@ -1,0 +1,5 @@
+{
+ "method": "Candidate pairs from a 16x16 difference hash on the inner 80% of each woodcut crop (ranks 1-24 inspected, distances 43-100; the rest are >= 100 against a median of 125) and from a 9x8 difference hash <= 6 (two pairs); every pair confirmed or rejected by eye by the orchestrator on side-by-side crops, before any coding. Hand-colouring differs between copies of a reused block.",
+ "confirmed_same_block": [[84, 67], [95, 137], [24, 85], [127, 128], [30, 49], [139, 108], [93, 42], [99, 100]],
+ "rejected": [[87, 134], [29, 96], [122, 42], [29, 138], [94, 108], [139, 48]]
+}

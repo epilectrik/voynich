@@ -1,0 +1,446 @@
+{
+ "V3340": {
+  "folio": "f1v",
+  "arm": "V-A1"
+ },
+ "V5784": {
+  "folio": "f2r",
+  "arm": "V-A1"
+ },
+ "V7046": {
+  "folio": "f2v",
+  "arm": "V-A1"
+ },
+ "V1636": {
+  "folio": "f3r",
+  "arm": "V-A1"
+ },
+ "V5796": {
+  "folio": "f3v",
+  "arm": "V-A1"
+ },
+ "V6524": {
+  "folio": "f4r",
+  "arm": "V-A1"
+ },
+ "V2745": {
+  "folio": "f4v",
+  "arm": "V-A1"
+ },
+ "V6442": {
+  "folio": "f5r",
+  "arm": "V-A1"
+ },
+ "V6609": {
+  "folio": "f5v",
+  "arm": "V-A1"
+ },
+ "V6328": {
+  "folio": "f6r",
+  "arm": "V-A1"
+ },
+ "V4838": {
+  "folio": "f6v",
+  "arm": "V-A1"
+ },
+ "V2156": {
+  "folio": "f7r",
+  "arm": "V-A1"
+ },
+ "V8837": {
+  "folio": "f7v",
+  "arm": "V-A1"
+ },
+ "V8324": {
+  "folio": "f8r",
+  "arm": "V-A1"
+ },
+ "V3766": {
+  "folio": "f8v",
+  "arm": "V-A1"
+ },
+ "V3251": {
+  "folio": "f9r",
+  "arm": "V-A1"
+ },
+ "V1121": {
+  "folio": "f9v",
+  "arm": "V-A1"
+ },
+ "V7734": {
+  "folio": "f10r",
+  "arm": "V-A1"
+ },
+ "V9416": {
+  "folio": "f10v",
+  "arm": "V-A1"
+ },
+ "V9244": {
+  "folio": "f11r",
+  "arm": "V-A1"
+ },
+ "V8604": {
+  "folio": "f11v",
+  "arm": "V-A1"
+ },
+ "V4899": {
+  "folio": "f13r",
+  "arm": "V-A1"
+ },
+ "V7526": {
+  "folio": "f13v",
+  "arm": "V-A1"
+ },
+ "V2304": {
+  "folio": "f14r",
+  "arm": "V-A1"
+ },
+ "V4941": {
+  "folio": "f14v",
+  "arm": "V-A1"
+ },
+ "V6272": {
+  "folio": "f15r",
+  "arm": "V-A1"
+ },
+ "V2483": {
+  "folio": "f15v",
+  "arm": "V-A1"
+ },
+ "V4908": {
+  "folio": "f16r",
+  "arm": "V-A1"
+ },
+ "V4954": {
+  "folio": "f16v",
+  "arm": "V-A1"
+ },
+ "V8370": {
+  "folio": "f17r",
+  "arm": "V-A1"
+ },
+ "V5561": {
+  "folio": "f17v",
+  "arm": "V-A1"
+ },
+ "V2666": {
+  "folio": "f18r",
+  "arm": "V-A1"
+ },
+ "V7756": {
+  "folio": "f18v",
+  "arm": "V-A1"
+ },
+ "V9094": {
+  "folio": "f19r",
+  "arm": "V-A1"
+ },
+ "V9876": {
+  "folio": "f19v",
+  "arm": "V-A1"
+ },
+ "V7754": {
+  "folio": "f20r",
+  "arm": "V-A1"
+ },
+ "V8428": {
+  "folio": "f20v",
+  "arm": "V-A1"
+ },
+ "V4013": {
+  "folio": "f21r",
+  "arm": "V-A1"
+ },
+ "V9540": {
+  "folio": "f21v",
+  "arm": "V-A1"
+ },
+ "V7414": {
+  "folio": "f22r",
+  "arm": "V-A1"
+ },
+ "V1192": {
+  "folio": "f22v",
+  "arm": "V-A1"
+ },
+ "V4363": {
+  "folio": "f23r",
+  "arm": "V-A1"
+ },
+ "V9078": {
+  "folio": "f23v",
+  "arm": "V-A1"
+ },
+ "V7290": {
+  "folio": "f24r",
+  "arm": "V-A1"
+ },
+ "V4910": {
+  "folio": "f24v",
+  "arm": "V-A1"
+ },
+ "V4925": {
+  "folio": "f25r",
+  "arm": "V-A1"
+ },
+ "V3614": {
+  "folio": "f25v",
+  "arm": "V-A1"
+ },
+ "V4064": {
+  "folio": "f27r",
+  "arm": "V-A1"
+ },
+ "V6683": {
+  "folio": "f27v",
+  "arm": "V-A1"
+ },
+ "V4437": {
+  "folio": "f28r",
+  "arm": "V-A1"
+ },
+ "V9386": {
+  "folio": "f28v",
+  "arm": "V-A1"
+ },
+ "V3703": {
+  "folio": "f29r",
+  "arm": "V-A1"
+ },
+ "V1544": {
+  "folio": "f29v",
+  "arm": "V-A1"
+ },
+ "V5058": {
+  "folio": "f30r",
+  "arm": "V-A1"
+ },
+ "V4608": {
+  "folio": "f30v",
+  "arm": "V-A1"
+ },
+ "V2727": {
+  "folio": "f32r",
+  "arm": "V-A1"
+ },
+ "V8832": {
+  "folio": "f32v",
+  "arm": "V-A1"
+ },
+ "V2218": {
+  "folio": "f35r",
+  "arm": "V-A1"
+ },
+ "V1915": {
+  "folio": "f35v",
+  "arm": "V-A1"
+ },
+ "V4043": {
+  "folio": "f36r",
+  "arm": "V-A1"
+ },
+ "V9430": {
+  "folio": "f36v",
+  "arm": "V-A1"
+ },
+ "V3816": {
+  "folio": "f37r",
+  "arm": "V-A1"
+ },
+ "V5276": {
+  "folio": "f37v",
+  "arm": "V-A1"
+ },
+ "V4627": {
+  "folio": "f38r",
+  "arm": "V-A1"
+ },
+ "V7687": {
+  "folio": "f38v",
+  "arm": "V-A1"
+ },
+ "V2522": {
+  "folio": "f42r",
+  "arm": "V-A1"
+ },
+ "V6818": {
+  "folio": "f42v",
+  "arm": "V-A1"
+ },
+ "V3902": {
+  "folio": "f44r",
+  "arm": "V-A1"
+ },
+ "V2610": {
+  "folio": "f44v",
+  "arm": "V-A1"
+ },
+ "V7615": {
+  "folio": "f45r",
+  "arm": "V-A1"
+ },
+ "V9973": {
+  "folio": "f45v",
+  "arm": "V-A1"
+ },
+ "V1054": {
+  "folio": "f47r",
+  "arm": "V-A1"
+ },
+ "V2468": {
+  "folio": "f47v",
+  "arm": "V-A1"
+ },
+ "V9257": {
+  "folio": "f49r",
+  "arm": "V-A1"
+ },
+ "V1454": {
+  "folio": "f49v",
+  "arm": "V-A1"
+ },
+ "V9763": {
+  "folio": "f51r",
+  "arm": "V-A1"
+ },
+ "V5464": {
+  "folio": "f51v",
+  "arm": "V-A1"
+ },
+ "V6165": {
+  "folio": "f52r",
+  "arm": "V-A1"
+ },
+ "V8834": {
+  "folio": "f52v",
+  "arm": "V-A1"
+ },
+ "V5303": {
+  "folio": "f53r",
+  "arm": "V-A1"
+ },
+ "V5034": {
+  "folio": "f53v",
+  "arm": "V-A1"
+ },
+ "V8241": {
+  "folio": "f54r",
+  "arm": "V-A1"
+ },
+ "V1210": {
+  "folio": "f54v",
+  "arm": "V-A1"
+ },
+ "V7669": {
+  "folio": "f56r",
+  "arm": "V-A1"
+ },
+ "V4134": {
+  "folio": "f56v",
+  "arm": "V-A1"
+ },
+ "V6419": {
+  "folio": "f87r",
+  "arm": "V-A1"
+ },
+ "V1561": {
+  "folio": "f87v",
+  "arm": "V-A1"
+ },
+ "V1776": {
+  "folio": "f93r",
+  "arm": "V-A1"
+ },
+ "V2989": {
+  "folio": "f93v",
+  "arm": "V-A1"
+ },
+ "V6810": {
+  "folio": "f96r",
+  "arm": "V-A1"
+ },
+ "V7736": {
+  "folio": "f96v",
+  "arm": "V-A1"
+ },
+ "V1420": {
+  "folio": "f26r",
+  "arm": "V-B2"
+ },
+ "V2555": {
+  "folio": "f26v",
+  "arm": "V-B2"
+ },
+ "V5835": {
+  "folio": "f31r",
+  "arm": "V-B2"
+ },
+ "V6538": {
+  "folio": "f31v",
+  "arm": "V-B2"
+ },
+ "V9247": {
+  "folio": "f33r",
+  "arm": "V-B2"
+ },
+ "V5275": {
+  "folio": "f33v",
+  "arm": "V-B2"
+ },
+ "V2426": {
+  "folio": "f34r",
+  "arm": "V-B2"
+ },
+ "V4948": {
+  "folio": "f34v",
+  "arm": "V-B2"
+ },
+ "V9515": {
+  "folio": "f39r",
+  "arm": "V-B2"
+ },
+ "V1634": {
+  "folio": "f39v",
+  "arm": "V-B2"
+ },
+ "V7822": {
+  "folio": "f40r",
+  "arm": "V-B2"
+ },
+ "V7841": {
+  "folio": "f40v",
+  "arm": "V-B2"
+ },
+ "V4268": {
+  "folio": "f43r",
+  "arm": "V-B2"
+ },
+ "V8182": {
+  "folio": "f43v",
+  "arm": "V-B2"
+ },
+ "V3007": {
+  "folio": "f46r",
+  "arm": "V-B2"
+ },
+ "V7385": {
+  "folio": "f46v",
+  "arm": "V-B2"
+ },
+ "V7139": {
+  "folio": "f50r",
+  "arm": "V-B2"
+ },
+ "V9565": {
+  "folio": "f50v",
+  "arm": "V-B2"
+ },
+ "V9893": {
+  "folio": "f55r",
+  "arm": "V-B2"
+ },
+ "V7341": {
+  "folio": "f55v",
+  "arm": "V-B2"
+ }
+}

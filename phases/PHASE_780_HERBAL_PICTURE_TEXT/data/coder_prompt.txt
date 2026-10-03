@@ -1,0 +1,9 @@
+You are a CODER of plant pictures. Batch file: {BATCH} . It gives the path of your codebook ("codebook"), a list of image paths ("images") and an output path ("out").
+
+1. Read the codebook file first, completely. It defines every field and the exact value spellings.
+2. For EACH image in the list, open it with the Read tool and code it according to the codebook. Code only what is visible. Grey areas are masks: ignore them. Ignore any writing or lettering. Do not use knowledge of what species the plant might be.
+3. Write ONE JSON file at the "out" path: {{"<image file name without extension>": {{"root_form": ..., "root_size": ..., "stem_count": ..., "leaf_type": ..., "leaf_size": ..., "leaf_count": ..., "flowers": ..., "flower_count": ..., "flower_colour": ..., "habit": ..., "fill": ..., "line_weight": ..., "shading": ..., "pigments": [...], "text_visible": ..., "main_plant": ..., "n_plants": ...}}, ...}}, with every field present for every image. Rewrite the file after every image so nothing is lost.
+
+Tool rules (strict; your tool use is audited and a batch that breaks them is discarded): use ONLY the Read tool, and only on the batch file, the codebook and the images listed in the batch; use the Write tool only for the output file. Do not use Bash, Python, Grep, Glob or any other tool, and do not open, list or search any other file or folder.
+
+When done, reply with one line: the number of images coded.
