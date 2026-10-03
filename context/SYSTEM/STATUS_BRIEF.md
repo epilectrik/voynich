@@ -173,6 +173,23 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     the 3.0 bar), while B is outside the same ensembles on order information and line-zone dependence by 10 to 69
     standard deviations and, where counted, on edge-glyph coupling by 164.
   - No tested configuration reproduces line-zone dependence, or edge-glyph coupling where counted.
+- **The minimal device: a sampler of the three measured rules does not reproduce B's other registered
+  regularities** (C2097, PHASE_779). Page × line-type stocks, zone tables and two-unit routing, sampled by a
+  within-cell Metropolis sampler with B's own tables, are not outside B on edge-glyph coupling and line-zone
+  dependence (its inputs), adjacent repetition and cross-folio trigram recurrence, but are INCOMPLETE on order
+  information beyond the edge (D5: 0.0145 against B's 0.038). Whether the D5 shortfall belongs to the rules or to
+  this sampler is not resolved (a sequential with-replacement variant is not outside on D5 but differs in two ways
+  and is outside on line-zone dependence).
+  - Five registered regularities lie outside the sampler and outside the within-cell shuffle, with the same status
+    on every variant and smoothing setting: line-level glyph-unit homogeneity (C1214's family, z +12.6),
+    within-folio paragraph PREFIX composition (C1811/C1812, z +6.9), adjacent e-run persistence (z +7.5, partly
+    unblinded), qo / ch-sh alternation (C549, z +9.2, partly unblinded), the e-run medial gradient (C1671/C1566,
+    z +16.5). They are not shown to follow from these rules as sampled; the missing structure is not identified,
+    and the five are not shown to be independent of one another or of the D5 shortfall.
+  - Three show no detectable excess over the within-cell shuffle under the locked rule: hapax dispersion (rank
+    996 of 1,000), the C2056 qok→ok lane as defined there (z +1.8), and pair zeros in C2081's form (B 10 at the
+    pooled maximum, tie inside; fewer zeros than the shuffle). Nothing is REPRODUCED: no registered row is shown
+    to follow from composition, zones and routing. Not being outside the sampler is not evidence of generation.
 - **Untested:** syllables written with spelling variation (including homophonic syllable codebooks), morpheme-sized
   units, word-level codebooks with two or more spellings per word, modified verbose ciphers, grilles with boundary or
   line-position rules, and improvisation in a practised script at book scale. Excluding a rival is not evidence for

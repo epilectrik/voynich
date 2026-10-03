@@ -4,6 +4,56 @@
 
 ---
 
+## Version 7.42 (2026-10-03) — PHASE_779: the minimal device, a sampler of the three measured rules (C2097)
+
+### Summary
+**Question.** PHASE_774–778 left a specification any production method must meet: page × line-type word stocks,
+line-position vocabulary and two-unit junction routing. How much of what the registry records beyond those rules
+follows from them? The simplest sampler of the three rules (MIN-D), fed B's own tables, was tested on the
+PHASE_757 panel and on eight registered regularities it is not given, each with a plant for power (MDE80). A
+layer map, not a production method (C2052).
+
+**Process.**
+- Lean-expert design audit (38 edits), confirmation pass (18 + 2 edits; the z\* text slip corrected to the
+  formula's 3.23) and presence check; B blind on every counted statistic until the lock (P7 and P8 partly
+  unblinded and labelled).
+- The sequential sampler failed the D2 fidelity gate through depletion; the declared Metropolis fallback
+  (within-cell swaps, composition exact, 10 sweeps, mixing checked) passed at κ 0.5 (D2 z +0.13).
+- The plants stage hung at its 37th point having written nothing; the file was rebuilt from the log with the
+  baseline regenerated and checked, 18 grid points added on generated members, and MDE80 recomputed after the
+  lock against the locked ensemble (`plantcheck`, 24 reruns, every mean reproduced). Incremental writes and
+  seeded resumption added to the run script.
+- Locked at `phase779-lock` (c336b1d); 9 variants × 1,000 members plus a second seed block (11,000 members,
+  6.0 h), κ / κ_z sensitivity, plant recomputation, verdict.
+
+**Result (C2097).** Step 1: the primary (R2L) is not outside B on D2 (its input; z +0.2), D3 (z −0.2), D4 (z +2.2,
+B above 997 of 1,000) and D6 (over-produced, z −2.6), but is **INCOMPLETE on D5** (order information beyond the
+edge: 0.0145 ± 0.0046 against B's 0.038, B above all 1,000 members on every without-replacement variant, z +3.3 to
++9.0). Whether the D5 shortfall belongs to the rules or to this sampler is not resolved: R3L narrows it, and the
+sequential with-replacement variant (not a rung; outside on D6; composition not kept) is not outside on D5. Step 2, on the
+primary: **NOT REPRODUCED** P1u line glyph-unit homogeneity (B 0.96 pct against 0.20 ± 0.06, z +12.6), P2
+within-folio paragraph PREFIX JSD (z +6.9), P7 adjacent e-run persistence (z +7.5), P8 qo / ch-sh alternation
+(z +9.2; routing gives 0.475 → 0.515, B 0.585), P11 e-run medial gradient (z +16.5); **NO EXCESS DETECTED OVER
+THE WITHIN-CELL SHUFFLE** P10 hapax dispersion (rank 996 of 1,000; sampler-sensitive on page-only stocks), P12
+the C2056 lane (z +1.8), P6z pair zeros in C2081's form (B 10 at the pooled maximum, tie inside; fewer zeros
+than the shuffle). **Nothing REPRODUCED.** The pattern is identical at κ × 0.5, × 2 and κ_z × 0.5, × 2 and on
+every variant. Scope notes (related-statistic NOT REPRODUCED, with "the sampler is itself outside B on D5") on
+C1214, C1811, C1812, C549, C2056, C1671, C1566. No tier changes; Tier 0 unchanged.
+
+**Reading.** Five registered regularities are not shown to follow from composition, zones and routing as sampled;
+the missing structure is not identified, and the five are not shown to be independent of one another or of the
+D5 shortfall. NO EXCESS is a label (B not outside the within-cell shuffle under the locked rule), not evidence of
+absence. The D5 question is left for a phase with a whole-token order statistic in its fidelity gate.
+
+### Changes
+| Item | Change |
+|---|---|
+| New phase | PHASE_779_MINIMAL_DEVICE (`mind779.py`, `run779.py`, `plants_recover779.py`, `plants_extend779.py`) |
+| New constraint | C2097 (Tier 2, measurement; layer map) |
+| Scope notes | C1214, C1811, C1812, C549, C2056, C1671, C1566 |
+| Status / agenda | STATUS_BRIEF §4 bullet; RESEARCH_AGENDA item 2 (sampler family; one plant per extra layer) |
+| Memory | sampler dependence of panel statistics; pool-hang recovery (interim writes) |
+
 ## Version 7.41 (2026-10-02) — PHASE_778: rival-generator panel II, the table-and-grille method (C2096)
 
 ### Summary

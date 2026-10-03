@@ -78,6 +78,17 @@ text made to look meaningful? And, if it carries content, what content?
      - Open: a follow-up is a new pre-registered phase whose discriminator is certified on controls before it sees
        these variants; extending PHASE_778's N or adding discriminators to re-decide it is not allowed. Grilles with
        boundary or line-position rules are untested.
+   - The minimal device (PHASE_779, C2097): a Metropolis sampler of page × line-type stocks, zone tables and
+     two-unit routing is INCOMPLETE on D5; B lies outside it on five of eight registered regularities (line
+     glyph-unit homogeneity, paragraph PREFIX composition, e-run persistence, qo/ch-sh alternation, e-run medial
+     gradient: not shown to follow from the rules as sampled, missing structure not identified) and is outside
+     neither the sampler nor the within-cell shuffle on three (hapax dispersion, the C2056 lane, pair zeros).
+     Layer map only; no production claim.
+     - Open: whether the D5 shortfall belongs to the rules or to the sampler (a sequential with-replacement variant
+       is not outside on D5 but differs in two ways; a new phase with a whole-token order statistic in its fidelity
+       gate decides); which added rule (line memory, paragraph
+       palette, interior e-run rule, family alternation) accounts for each extra layer, one plant at a time, each
+       a pre-registered phase; the C1435 and C1811/C1812 definition checks still stand.
    - Resolves: which generating mechanisms can and cannot produce the measured grammar. C2082 is new here: neither
      Naibbe nor Timm reproduces it, so it may be the sharpest discriminator available.
 3. **Unit and transliteration invariance of the Tier-0 measurements.**
