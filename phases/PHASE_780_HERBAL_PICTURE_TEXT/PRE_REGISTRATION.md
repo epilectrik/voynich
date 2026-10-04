@@ -1,8 +1,11 @@
 # PHASE_780 — Does the herbal text co-vary with its drawings? A blind picture test within one hand, with an illustrated herbal as positive control (pre-registration)
 
-**Status: v3, FOR LOCK after the confirmation pass (design audit v1: LOCKABLE AFTER EDITS, all edits incorporated;
-pre-coding and pre-gate amendments 1–13; coding, gates and calibration complete, results below). Nothing has been
-computed on the Voynich text–picture alignment at k = 0.**
+**Status: v4, FOR LOCK (design audit v1: LOCKABLE AFTER EDITS, all edits incorporated; amendments 1–14;
+confirmation pass on v3: LOCKABLE once A1–A5 applied, all applied here). Nothing has been computed on the Voynich
+text–picture alignment at k = 0.**
+
+**Precedence.** Where body text and amendments differ, the amendments and the section "Decision procedure as applied
+(canonical)" govern; superseded body lines are marked in place. The run script implements the canonical section.
 
 **Origin.** STATUS_BRIEF and RESEARCH_AGENDA item 8 ("pictures and text, powered"): the earlier picture tests had
 n ≈ 30 and little power (VIS, ILL-TOP-1); the first powered test found no signal for one narrow design (C2084, label
@@ -41,7 +44,8 @@ statistic, nulls, calibration, thresholds, controls, seeds, verdict rules) may c
   sub-analysis is dropped: C2086 is a frame-controlled folio component and a per-page share at N = 20 cannot be read.)
 - **Positive control (BR):** Brunschwig 1500 Part 2 entries whose heading ("Von … wasser.") is followed within five
   lines by the entry's woodcut (148 entries; `data/entries_br_all.json`). Entries under 41 words are excluded; reused
-  woodcut blocks (duplicates by perceptual hash on the crops) keep one entry per block (seeded). The eligible list is
+  woodcut blocks (duplicates by perceptual hash on the crops [superseded by amendment 14: confirmed by eye]) keep one
+  entry per block (seeded). The eligible list is
   `data/entries_br.json`.
 
 ## Images and locating (no coding)
@@ -52,7 +56,7 @@ statistic, nulls, calibration, thresholds, controls, seeds, verdict rules) may c
 - **BR:** the page image (pages per `data/entries_br_all.json`); a locator agent outputs one box per woodcut in reading
   order for each page with its expected woodcut count; the crop is the box. Woodcut height = box height / page height.
   Every crop is checked for printed text by both coder sets (`text_visible`); a crop flagged by either is re-cut and
-  re-coded before the gate.
+  re-coded before the gate [superseded by amendment 10].
 - Every image gets a fresh random code; no folio, page or plant name. V-A1 and V-B2 images are mixed in the V batches;
   BR images go to separate batches.
 
@@ -72,7 +76,7 @@ statistic, nulls, calibration, thresholds, controls, seeds, verdict rules) may c
   (nominal: simple_entire / simple_toothed_or_lobed / compound / grass_or_needle / none / mixed); `leaf_size` (ordinal:
   small / medium / large relative to the plant); `leaf_count` (ordinal: 0 / 1–5 / 6–15 / 16+). Flower: `flowers`
   (nominal: none / flowers / fruits_or_seed_heads / both); `flower_count` (ordinal: 0 / 1 / 2–5 / 6+); `flower_colour`
-  (nominal, V only: none / blue / red_or_pink / yellow / white_or_unpainted / mixed). Habit: `habit` (nominal:
+  (nominal, V only [superseded by amendment 1: both corpora]: none / blue / red_or_pink / yellow / white_or_unpainted / mixed). Habit: `habit` (nominal:
   upright_herb / sprawling_or_climbing / shrub_or_tree_like). Every feature allows `unclear`. (Dropped from v1:
   `root_present`, `symmetry`, `non_plant_element`.)
 - **Codebook (style).** V: `fill` (ordinal: outline_only / partly_painted / fully_painted), `line_weight` (ordinal:
@@ -93,7 +97,7 @@ statistic, nulls, calibration, thresholds, controls, seeds, verdict rules) may c
 - Per coder set: for each organ, the mean over its entered features of the per-feature similarity (nominal: 1 if
   equal; ordinal: 1 − |Δrank| / (levels − 1)); the pair's content similarity is the mean over organs observed for both
   pages (nested features within an organ count once through the organ mean). A pair needs ≥ 3 organs observed for both
-  pages, else it is excluded. C = the mean of the two sets' matrices. Style similarity Y likewise over entered style
+  pages, else it is excluded [superseded by amendment 2: it takes the neutral value 0 after double-centring]. C = the mean of the two sets' matrices. Style similarity Y likewise over entered style
   features plus 1 − |Δheight| for the computed drawing height.
 - **Double-centring:** T, C and Y are double-centred (each page's mean similarity removed, over defined pairs) before
   the statistic; the raw version is reported descriptively.
@@ -127,7 +131,7 @@ statistic, nulls, calibration, thresholds, controls, seeds, verdict rules) may c
 For each measure m ∈ {T1, T2}: **S_m = the partial correlation (Pearson) of the double-centred text similarity and the
 double-centred content similarity over the defined pairs, given the fixed covariates and Y.** Descriptive companions:
 S without Y; S on raw (not double-centred) matrices; a Spearman (rank) partial S; S with T computed on line-interior
-tokens only (line-initial, line-final and break-adjacent tokens removed); S without the pages flagged as having two
+tokens only (line-initial, line-final and break-adjacent tokens removed [amendment 3: line-initial and line-final only]); S without the pages flagged as having two
 comparable plants.
 
 ## Nulls
@@ -138,7 +142,8 @@ comparable plants.
 - **N-shift:** circular shift of the picture records along binding (V) or entry (BR) order, k = 3 … N − 3; z_shift.
   The rank among the shifts is descriptive only (≈ N − 5 strongly autocorrelated values).
 - **N-sheet** (permutation within bifolium) is added to the decision only if the misbinding variant of K2 shows a
-  false-positive rate > 0.01 under N-local; decided on controls before the lock.
+  false-positive rate > 0.01 under N-local; decided on controls before the lock [triggered: amendment 13; N-sheet is
+  part of every V decision].
 - Per measure, Z_m = min(z_local, z_shift [, z_sheet]). **Outside on m** if Z_m > z* (calibrated below).
 
 ## Calibration (pre-lock; the Voynich alignment at k = 0 is never computed before the lock)
@@ -154,7 +159,7 @@ comparable plants.
   one (picture-only).
   **Fidelity gate (picture-only):** for each entered content feature, the mean lag-1-to-10 agreement and the
   between-quire variance of the modal-value frequency; a generator passes if at most 2 of these checks fall outside the
-  central 90% of its replicates. **Leak control:** no generator copies a real record to its own position (all are
+  central 90% of its replicates [superseded by amendment 5]. **Leak control:** no generator copies a real record to its own position (all are
   parametric; (ii) excludes the target's leaf and bifolium from its quire marginal).
 - **K2 — writing sessions, anchored.** Anchors measured without any alignment: the text-only adjacency excess (mean
   double-centred T at |Δpos| ≤ 4 minus at |Δpos| > 20, after the length covariates) and the picture-only adjacency
@@ -167,7 +172,8 @@ comparable plants.
   sessions. Settings: anchored and 2 × anchored (the latter descriptive).
 - **z\*:** per replicate, Z_rep = max over m of Z_m; z\* = the 99th percentile of Z_rep, maximised over the passing
   K1 generators (and widths) and the anchored K2 variants; ≥ 500 replicates per setting and ≥ 2,000 at the binding
-  setting (or the upper 90% bound of the quantile if fewer). The same permutation counts as in the real run.
+  setting (or the upper 90% bound of the quantile if fewer) [applied once; the "extend to 2,000" branch is struck:
+  z\* = 2.957 is final (confirmation pass A1)]. The same permutation counts as in the real run.
   **Fallback:** if no K1 generator passes its fidelity gate, the decision is p_local ≤ 0.005 on at least one measure
   (exact N-local), labelled so.
 - **K3 — power (plants; outcomes of planted replicates only are stored; the unplanted S(k) is never printed).** The
@@ -189,6 +195,10 @@ comparable plants.
   entry's own name stems masked.
 
 ## Calibration results (pre-lock; `results/calib780.json`, `results/calib_setup780.json`)
+- **Population (final).** V-A1 N = 91 (no page was flagged as having no main plant); the 182 codings in amendment 10
+  are the two coder sets on these 91 pages. V-B2 (20 pages) was coded in the same batches. K1–K3 used the real V-A1
+  texts at N = 91; K4 used 95-entry Brunschwig samples, and a Brunschwig N above V's can only raise genre power, which
+  is therefore an upper bound on this ground too.
 - **Gates.** V-A1 passes: all 10 content features enter (α 0.73–0.99, coverage ≥ 0.96), 5 organs; style: `fill`
   (α 0.64); `line_weight` was coded identically everywhere and does not enter. Brunschwig passes: 9 content features
   (`flower_colour` does not enter), style `shading`; 121 eligible entries after excluding 12 non-plant woodcuts
@@ -201,9 +211,14 @@ comparable plants.
 - **K2:** anchors text T1 0.0052, T2 0.0123, pictures 0.0073; contiguous sessions r 3.33 tokens/page, κ 0.34;
   misbinding r 6.58, κ 0.71. With N-sheet: contiguous anchored 2.56 (500), misbinding anchored 2.52 (2,000), the 2×
   settings 2.45 / 2.50. (With two nulls the misbinding control had given 3.51: amendment 13.)
-- **z\* = 2.957**: the contiguous-session control's upper 90% bound of its 99th percentile (500 replicates; point
-  2.557), the binding value under the rule for settings with fewer than 2,000 replicates. False-positive rate at z\*:
-  contiguous 0.006, misbinding 0.002. No fallback.
+- **z\* = 2.957 is final.** It is the contiguous-session setting's upper 90% bound of its 99th percentile (500
+  replicates; point 2.557). It was fixed after genre power was known, in the conservative direction. No setting is
+  extended further. Genre power is not computed at any other threshold. False-positive rate at z\*: at most 0.006 in
+  every calibration setting (contiguous 0.006, misbinding 0.002). No fallback. The earlier extension of the misbinding
+  setting to 2,000 replicates (the k1bind stage) ran before genre power was computed. Under v2's fixed fidelity
+  allowance ("≤ 2 outside") the quire generator (4 outside) would have failed; the binomial allowance (amendment 5)
+  was adopted during the synthetic pipeline test, before the real setup ran. It does not affect the decision: every
+  K1 99th percentile (≤ 2.46) lies below z\*.
 - **K3 (power):** MDE80 = 1.0 descriptor token per page per entered feature for the exact and spelled plants (about 10
   planted tokens on a page of ~83), 4.0 for the leaf-only plant; detection at r = 0.5 is 0.09–0.14.
 - **K4 (genre control):** z\*_BR 2.40 (Markov) / 2.26 (quire); threshold max(z\*, z\*_BR) = 2.957. **Main genre power
@@ -213,6 +228,47 @@ comparable plants.
   (unpowered): at this N and these page lengths the test detects the Brunschwig herbal's own text–picture link in only
   about 60% of samples, and that link runs mostly through plant names at the head of each entry (uses-only 0.14,
   names masked 0.27, random window 0.01). A positive result stays interpretable (false positives controlled at z\*).
+
+## Decision procedure as applied (canonical; the run script implements this section)
+- **Data.** V-A1, N = 91 pages (`data/pages_v.json`), texts as in "Text measures"; codes `data/codes/` (two sets);
+  gate as in "Agreement gate"; C and Y as in "Picture similarity" with amendment 2 (undefinedness is a property of
+  the pair of picture records, computed before any relabelling; double-centring uses defined entries only, then
+  undefined entries are set to 0; the number of imputed pairs is reported and flagged if it exceeds 1%).
+- **Statistic.** S_m for m ∈ {T1, T2}, the partial correlation given the fixed covariates and Y.
+- **Nulls.** N-local (exact, 10,000 permutations within two-leaf blocks aligned to quires), N-shift (k = 3 … N − 3),
+  N-sheet (exact, 10,000 permutations within bifolium). All three z values are reported per measure;
+  Z_m = min(z_local, z_shift, z_sheet).
+- **Threshold.** z\* = 2.957 (final). Outside on m if Z_m > z\*.
+- **Seed.** 780,900,000 for the run's permutations.
+- **Verdicts, in order.** (1) CODING FAILED; (2) if outside on T1 or T2: the interleaved-writing check below decides
+  between CO-VARIES WITH CODED DRAWN CONTENT, CO-VARIES, NOT ROBUST TO INTERLEAVED WRITING and CO-VARIES, ROBUSTNESS
+  CHECK FAILED (coding); (3) NOT DETECTED (genre-powered) if the main genre power ≥ 0.85 (it is 0.61: not reachable);
+  (4) NOT DETECTED (unpowered). Outside only without the style partial does not count. Per-feature and style-free
+  results are uncorrected descriptives and are never registered, whatever the main result. V-B2 is printed only after
+  the V-A1 verdict and is descriptive.
+- **Interleaved-writing check (runs only if V-A1 is outside).** The 91 pages are re-coded by two fresh coder sets,
+  audited as in amendment 11. The images are the same except that the writing inside each outline is painted over in
+  paper tone: a locator draws polygons around the text runs (polygons only) and I check every page by eye. The same
+  codebook and gate apply; features that fail the gate are dropped. S is recomputed with the new C under the same X,
+  nulls and z\*.
+  - Outside with both codings → CO-VARIES WITH CODED DRAWN CONTENT.
+  - Outside with the original coding only → CO-VARIES, NOT ROBUST TO INTERLEAVED WRITING (no claim about drawn
+    content; not registered as a link between text and drawings).
+  - Fewer than 5 features pass the gate on re-coding → CO-VARIES, ROBUSTNESS CHECK FAILED (coding); the
+    residual-writing caveat goes into the row.
+- **What each result can show (declared before the run).** False-positive rate at z\* ≈ 0.006. The likelihood ratio
+  of NOT DETECTED, (1 − power) / (1 − FP), against a link of each Brunschwig kind relative to no link: plant names at
+  the head of each page, one word per token ≈ 0.39 (a lower bound on the ratio, since 0.61 is an upper bound on power);
+  uses text alone ≈ 0.86; names masked ≈ 0.73; half length ≈ 0.76; word code with one spelling ≈ 0.58, with four
+  ≈ 0.85; random window ≈ 0.99. A null therefore modestly lowers only the "names-headed herbal at one word per token"
+  scenario and says almost nothing about the others. Against the calibrated no-link settings a positive has
+  P(outside) ≤ 0.006. The mapping onto the user's working odds is routed to the expert-advisor at write-up; if it
+  reads a NOT DETECTED as raising "made-for-show" materially, interpretation, not the statistics, is doing that work.
+- **Lock checklist.** Checksums of the inputs and code files (`results/input_checksums780.json`); locked files include
+  the scripts (the covariate builder is `core780.v_covariates`), `data/pages_v.json`, `data/entries_br.json`,
+  `data/key_code.json`, `data/geometry.json`, `data/page_features_v.json`, `data/br_duplicates.json`, the codebooks,
+  the coder prompt, `results/coder_audit780.json`, `results/calib_setup780.json`, `results/calib780.json`; seeds and
+  permutation counts are in the scripts.
 
 ## Verdicts (V-A1; applied in this order)
 1. **CODING FAILED** — the V-A1 coding fails the gate. No test.
@@ -226,7 +282,12 @@ comparable plants.
 - CO-VARIES: "Hand-1 herbal text co-varies with the coded content of its plant drawings beyond page position (w0 = one
   leaf pair), quire, bifolium, layout, spelling dials, drawing style and length ([T1 word | T2 glyph-trigram] level;
   S {s}, z_local {z1}, z_shift {z2}, z\* {z}); the test cannot distinguish reference from a writer's picture-keyed
-  habits outside these covariates; no referent recovered (C171, Tier 3)." Human sign-off on the row wording is
+  habits outside these covariates; no referent recovered (C171, Tier 3). Size: the false-positive rate at z\* is at
+  most 0.006 in every calibration setting (drift, quire steps, shared drift up to the fidelity limit, and writing
+  sessions at the anchored strength and at twice that strength, contiguous and across bifolia). Scale: beyond
+  structure at the level of two consecutive leaves (4 pages) and of the bifolium. Interleaved writing: {robust / not
+  robust}, per the re-coding check. S is reported as found; given that it crossed z\* with modest power it probably
+  overstates the strength of the link, and it is not compared with Brunschwig's S." Human sign-off on the row wording is
   requested before registration (the first positive external-channel result). Scope notes on C137/C138/C140: "a
   different population (Currier A, hand 1) and layer (page vocabulary / glyph trigrams vs B grammar profiles); not the
   same claim; no tier change", and on C2058, C2084, C171.
@@ -235,7 +296,20 @@ comparable plants.
   entered in both corpora at V's coding reliability, at one Brunschwig word per V token (genre power {g}; ablation rows
   reaching 0.85: {list}). A herbal giving names and uses without describing form is not covered unless the uses-only
   row reaches 0.85." Scope notes on C2058 and C2084; on C140: "no extension of this row to Currier A text".
-- NOT DETECTED (unpowered) and CODING FAILED: the row records the result, genre power and MDE80; no notes.
+- NOT DETECTED (unpowered) [template replaced by the confirmation pass, A3]: "[PHASE_780; pre-registered; locked at
+  phase780-lock; blind coding by two coder sets] On the {N} Currier A hand-1 herbal pages, text similarity does not
+  co-vary with the similarity of the coded plant drawings beyond page position, quire, sheet, layout, spelling
+  settings, style and length, at the locked threshold (T1 words: S {s1}; z_local {}, z_shift {}, z_sheet {}. T2
+  glyph-unit trigrams: S {s2}; z_local {}, z_shift {}, z_sheet {}. z\* 2.957). NOT DETECTED (unpowered), a label.
+  Power: at this N and these page lengths, the same procedure detected the Brunschwig 1500 herbal's own text–picture
+  link in 61% of samples (Wilson 54–68%), an upper bound (Brunschwig has no bifolia, so it was tested without the
+  N-sheet null; and its sample N exceeds V's); the link runs mostly through plant names at the head of each entry
+  (uses text alone 14%; names masked 27%; half length 24%; word code in Voynich forms 42% with one spelling per word,
+  15% with four; random window 1%). Planted descriptors reach 80% detection at 1.0 token per page for each of the 10
+  coded features at once (about 10 of ~83 tokens), and at 4.0 per page for a link to leaves alone. This is not
+  evidence that the text is unrelated to the drawings, or that it is content-free; it bears only on links at least
+  this strong. It does not extend C137/C138/C140 (Tier 1, Currier B) to Currier A text."
+- CODING FAILED: the row records the result, genre power and MDE80; no notes.
 - No tier changes; no Tier-0 change.
 
 ## Declared prior knowledge and exposure
@@ -262,7 +336,8 @@ comparable plants.
 - Coders are the same model; α is self-consistency. A human check of 20–30 V pages is offered to the user (non-gating).
 - Binding order is not writing order; N-local covers structure at ≥ 4 pages, K2's misbinding variant the non-contiguous
   sessions.
-- V drawings are stylised and hand-coloured; BR woodcuts are naturalistic and uncoloured; the reliability degradation
+- V drawings are stylised and hand-coloured; BR woodcuts are naturalistic and uncoloured [superseded by amendment 1:
+  this copy is hand-coloured by a colourist]; the reliability degradation
   and shared-feature rule match them only on what is coded.
 - Position-resolved features (text near roots vs flowers) are not tested.
 

@@ -1,0 +1,21 @@
+{
+ "data/transcriptions/interlinear_full_words.txt": "13c9441d8cd1f6883b3b8f47aa88df84d8c5a6ef30606734e5665e98a2671915",
+ "data/transcriptions/reference/ZL_official.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+ "sources/brunschwig_1500/brunschwig_1500_corrected.txt": "cc397dc4d6a4d2871f7242597cd0b8af9f498dc0ff3e1993cb5489d47669a410",
+ "codes::codes_A_BR_1.json": "cf5dee6d0cd15a457574bc1b40aad83169d273c11c5e0cf376b39b384ae2c8dc",
+ "codes::codes_A_BR_2.json": "b9fe19d49c9dcb72e63a0b75b777bb1e704386bd4c4bd2f9f401aad4cf31f1bc",
+ "codes::codes_A_BR_3.json": "f9fdd9ac892c52eda39ed5432a5a10936763eb4c9572813744e978987e609107",
+ "codes::codes_A_BR_4.json": "9515949f862feb5da345f12859b0b519a36a4c6d6e8f38c5dd018805516cda64",
+ "codes::codes_A_V_1.json": "f24a2f6069eb331cb47fc566e81b5a756754dff419c5bbba12980f0666906d79",
+ "codes::codes_A_V_2.json": "4ac7dea4c205ddcacbeb27d77eb26f815e485fd73e2d0ddf7addb81c6094369f",
+ "codes::codes_A_V_3.json": "b6594dfee0f747a6a15187d1eb9553bf6f63a475ff938d330b6409a008c67eaa",
+ "codes::codes_A_V_4.json": "10d7791fed084d1103210b5ce71898446ad0926e0f335cdb4ade09819bd35d5c",
+ "codes::codes_B_BR_1.json": "f55f16ed2e315efda6630a5b709e6263c35efbd740c5d00624c8e15c9736732b",
+ "codes::codes_B_BR_2.json": "517e04c52767cf68e933a38ddf45869d27e580ed083b4f15ec26eaf3477c9012",
+ "codes::codes_B_BR_3.json": "b32639f7990a77610c2da036e65bb1793a2f4a086fd507e905fdbfc5f4ae9da2",
+ "codes::codes_B_BR_4.json": "88f5909c1f6f734c690eeff99f3ec3adfc5dd7a75973964a369bff84cab91004",
+ "codes::codes_B_V_1.json": "5714a26f8e9473af753366d60ac273c745172be4740935b7035a1adb5746aa98",
+ "codes::codes_B_V_2.json": "25961f0bed04d2af14a8a4d910fb9cc408c093e6a5f2512501c4a5644b9673fe",
+ "codes::codes_B_V_3.json": "42d9abc720ace4d48d5f5d657cbf39ef190cd7bbddfd6ff3db83563df686340f",
+ "codes::codes_B_V_4.json": "869037123f0892ec90e2edd74bc7dc9ad1c47163a98f4733dc966ef55a701e45"
+}

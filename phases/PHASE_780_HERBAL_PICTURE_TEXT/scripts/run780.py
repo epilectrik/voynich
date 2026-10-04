@@ -29,7 +29,8 @@ PHASE = 'phases/PHASE_780_HERBAL_PICTURE_TEXT'
 SEED_RUN = 780_900_000
 LOCKED = ('PRE_REGISTRATION.md', 'scripts/core780.py', 'scripts/calib780.py', 'scripts/run780.py', 'data/pages_v.json',
           'data/entries_br.json', 'data/key_code.json', 'data/geometry.json', 'data/page_features_v.json',
-          'results/calib_setup780.json', 'results/calib780.json')
+          'data/br_duplicates.json', 'data/codebook_A.md', 'data/codebook_B.md', 'data/coder_prompt.txt',
+          'results/coder_audit780.json', 'results/calib_setup780.json', 'results/calib780.json')
 INPUTS = ('data/transcriptions/interlinear_full_words.txt', 'data/transcriptions/reference/ZL_official.txt',
           'sources/brunschwig_1500/brunschwig_1500_corrected.txt')
 CODE_GLOB = 'codes_*_*_*.json'
@@ -104,6 +105,10 @@ def main():
         log('VERDICT: CODING FAILED')
         return
     C, Y = K.picture_matrices('V', D['ids'], D['codes'], g, D['heights'])
+    iu = np.triu_indices(C.shape[0], 1)
+    n_undef = int(np.isnan(C[iu]).sum())
+    out['imputed_pairs'] = {'n': n_undef, 'of': int(len(iu[0])), 'fraction': n_undef / len(iu[0]),
+                            'flag_over_1pct': n_undef / len(iu[0]) > 0.01}
     eng = K.Engine(D['T'], C, Y, D['X'])
     res = K.decide(eng, D['blocks'], rng, sheet_blocks=D['sheets'])
     out['primary'] = res
@@ -142,7 +147,7 @@ def main():
     br_ok = setup['br_gate']['passes']
     if any(outside.values()):
         level = 'T1 word' if outside['T1'] else 'T2 glyph-trigram'
-        verdict = 'CO-VARIES WITH CODED DRAWN CONTENT'
+        verdict = 'OUTSIDE (pending the interleaved-writing re-coding check of the canonical section)'
         out['level'] = level
     elif br_ok and gp >= 0.85:
         verdict = 'NOT DETECTED (genre-powered)'
@@ -164,7 +169,9 @@ def main():
     json.dump(out, open(RES / 'verdict780.json', 'w', encoding='utf-8'), indent=1, default=float)
     for m in ('T1', 'T2'):
         r = res[m]
-        log(f"{m}: S {r['S']:+.4f}; z_local {r['z_local']:+.2f} (p {r['p_local']:.4f}); z_shift {r['z_shift']:+.2f}; Z {r['Z']:+.2f}; outside {outside[m]}")
+        log(f"{m}: S {r['S']:+.4f}; z_local {r['z_local']:+.2f} (p {r['p_local']:.4f}); z_shift {r['z_shift']:+.2f}; "
+            f"z_sheet {r['z_sheet']:+.2f} (p {r['p_sheet']:.4f}); Z {r['Z']:+.2f}; outside {outside[m]}")
+    log(f"imputed pairs: {out['imputed_pairs']}")
     log(f"rule: {rule}; VERDICT: {verdict}; genre power {gp}; style-only note {style_only}")
     for k, v in desc.items():
         if isinstance(v, dict) and isinstance(v.get('T1'), dict):
