@@ -73,6 +73,14 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Descriptively, articulated starts follow a break at 57–69% of the line-start rate.
   - Line-final *-m* follows the line end, not the break.
   - No mechanism is distinguished.
+- **Herbal text against its drawings: tested, unresolved (NOT DETECTED, unpowered)** (C2098, PHASE_780).
+  - On the 91 hand-1 herbal pages, no co-variation was detected between text similarity and the similarity of the
+    blind-coded plant drawings, beyond position, quire, sheet, layout, spelling settings, style and length (T1 Z
+    +0.73, T2 +0.11, threshold 2.96).
+  - The test is underpowered: the same procedure detects the Brunschwig 1500 herbal's own text–picture link in only
+    61% of samples (an upper bound), and that link runs mostly through plant names at the head of each entry.
+  - It bears only on links at least that strong. It is not evidence that the text is unrelated to the drawings or
+    content-free, and it does not extend C137/C138/C140 to Currier A.
 - **Zodiac labels are not a repeated per-sign set** (C2090, PHASE_772; ZL; partly unblinded).
   - Most labels occur in no other sign: 77% at N1, 65% at N2. A 1–30 set repeated in every sign (degree or day
     numbers) is excluded under the modelled spelling variation.

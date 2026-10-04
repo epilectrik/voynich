@@ -187,9 +187,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 7.42 |
-| Constraints | 1904 live in the generated table (T0 2, T1 38, T2 1694, T3 166, T4 4); numbering through C2097 |
-| Phases | 779 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending; PHASE_768 design stage only; PHASE_773 stopped at design) |
+| Version | 7.43 |
+| Constraints | 1905 live in the generated table (T0 2, T1 38, T2 1695, T3 166, T4 4); numbering through C2098 |
+| Phases | 780 (PHASE_752 v2 step 1 done as PHASE_759; steps 2–3 pending; PHASE_768 design stage only; PHASE_773 stopped at design) |
 | Folios | 83 (Currier B) |
 | Core model | Tier 0 restated 2026-09-28 to its measured core (grammar, line organisation, folio units, generators excluded); the control-program reading is Tier 3; the glyph-level kernel re-test is MIXED (C2082: word-ending routing, not a kernel). External tests: Timm (C2077) and Naibbe (C2080) excluded; hazard/forbidden-transition layer withdrawn (C2081); Testamentum chapter matching not evidence (PHASE_762) — see `context/SYSTEM/STRATEGIC_REVIEW_2026-09-27.md` |
 | Characterization | ACTIVE |

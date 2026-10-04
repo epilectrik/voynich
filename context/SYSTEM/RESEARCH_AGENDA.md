@@ -134,6 +134,15 @@ text made to look meaningful? And, if it carries content, what content?
    - The picture gate passed. Next: a blind picture-coding test within one section and hand that codes page
      regions or position-resolved features, not only whole folios, and that tests multi-step copying and
      writing-session drift as rival sources.
+   - **Herbal pages, whole-page features (PHASE_780, C2098): NOT DETECTED (unpowered).** Blind two-set coding of the
+     91 hand-1 herbal drawings against page text, with drift, quire, sheet, layout, spelling-dial and style controls
+     and a matched Brunschwig 1500 positive control (genre power 0.61, an upper bound; its link runs mostly through
+     plant names at the head of each entry).
+     - Open: power is the limit, not the design; no fresh herbal population of comparable size exists (V-B2 has
+       N = 20, another hand). A stronger test needs a statistic aimed at the head of each page (where Brunschwig's
+       link lives) or position-resolved picture features, pre-registered and calibrated on Brunschwig before it sees
+       V; these 91 pages have now been seen, so any further test on them is not independent of PHASE_780 (including
+       its line-interior companion).
    - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
      kind).
      - PHASE_773 (the figures against medieval per-degree tables) stopped at design. The blind-coded attributes vary by

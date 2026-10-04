@@ -4,6 +4,44 @@
 
 ---
 
+## Version 7.43 (2026-10-04) — PHASE_780: the herbal text against its drawings, a blind picture test (C2098)
+
+### Summary
+**Question.** Does the text of the herbal pages co-vary with what is drawn on them? RESEARCH_AGENDA item 8's next
+step: on the 91 Currier A herbal pages by Davis hand 1, do pages with similar plant drawings carry similar text, beyond
+page position, quire, bifolium, layout, spelling dials, drawing style and length? The drawings are an external channel
+(C171, C2052). Positive control: the illustrated herbal of Brunschwig's *Liber de arte distillandi de simplicibus*
+(Strasbourg 1500), coded by the same procedure and matched to the Voynich data.
+
+**Process.**
+- Lean-expert design audit (LOCKABLE AFTER EDITS; six blocking items), confirmation pass (LOCKABLE once five text
+  edits applied), results check; amendments 1–14 before the gate and the lock.
+- Locating and blind coding by agents: polygons around each Voynich plant (writing outside masked), boxes around each
+  woodcut; two independent coder sets with paraphrased codebooks; every coder transcript audited (16 of 16 batches
+  clean); agreement gate passed with all 10 content features (α 0.73–0.99).
+- Statistic: partial correlation of double-centred text (word and glyph-trigram tf–idf) and picture similarity over
+  4,095 page pairs; nulls N-local, N-shift and, by its pre-registered rule after scattered writing sessions defeated
+  the first two, N-sheet (within bifolium); z\* = 2.957 from four drift generators and anchored writing-session
+  controls (false-positive rate ≤ 0.006 in every setting); 14,600 calibration replicates at Idle priority.
+- Power: planted descriptors detected at about one word per feature per page; Brunschwig genre power 0.61 (an upper
+  bound), its link running mostly through plant names at the head of each entry (uses only 0.14, names masked 0.27,
+  random window 0.01).
+- Locked at `phase780-lock` (6a9b75f); one run.
+
+**Result (C2098).** NOT DETECTED (unpowered): T1 S +0.024 (Z +0.73), T2 S +0.020 (Z +0.11), against z\* 2.957. A
+label: the test is underpowered for a link of Brunschwig's kind and bears only on links at least that strong; it is not
+evidence that the text is unrelated to the drawings or content-free, and it does not extend C137/C138/C140 to Currier
+A. No scope notes on other rows; filed with the tested, unresolved entries. The expert-advisor's interpretive reading:
+no material change to the working odds (about 34 / 51 / 15 from 31 / 52 / 17).
+
+### Changes
+| Item | Change |
+|---|---|
+| New phase | PHASE_780_HERBAL_PICTURE_TEXT (engine, calibration, run, locating, coding, audit scripts) |
+| New constraint | C2098 (Tier 2, scope A; NOT DETECTED, unpowered) |
+| Status / agenda | STATUS_BRIEF §2 tested-unresolved entry; RESEARCH_AGENDA item 8 |
+| Memory | positive controls can show where a link lives; agent coding pipeline lessons |
+
 ## Version 7.42 (2026-10-03) — PHASE_779: the minimal device, a sampler of the three measured rules (C2097)
 
 ### Summary
