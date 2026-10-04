@@ -1,0 +1,26 @@
+{
+ "tag": "phase782-lock",
+ "config": {
+  "L": 30,
+  "K": 60
+ },
+ "pre_registration": "v4",
+ "versions": {
+  "python": "3.11.4",
+  "numpy": "2.3.2"
+ },
+ "files": {
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/PRE_REGISTRATION.md": "ee2cb265227647877eebeb1464cb1785afac7b26c5828bc679a50a653c037999",
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/scripts/core782.py": "6243dcbfdc14e7a9abfc9501af94548e3bfb8e6dc3ba4245af4fea64785d0c36",
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/scripts/calib782.py": "12e1d793444645ea4d8dfd67e2f59488d5638c88135dcb989e42b8d1d934294d",
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/scripts/run782.py": "6be749fbd5c878d35f714a0266cb6dd8a0b7b679a9e2ca3e10da2b3d16958bc6",
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/scripts/anchor782.py": "acb797d1b5c08be169e3dcf0b71fcc16a042e0a7b49872b343ddf61856b04c57",
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/scripts/ladder782.py": "b7cee18728ce80640a76302729711e15d2d30a81186859168b4a313aac25c662",
+  "phases/PHASE_782_SERAPHINIANUS_LINE_POSITION/scripts/handlabel782.py": "c0932d92aa1a08fa54040636364c982527a3e409ecfbc35717929ec6be9bd73a",
+  "data/transcriptions/reference/ZL_official.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "data/transcriptions/interlinear_full_words.txt": "13c9441d8cd1f6883b3b8f47aa88df84d8c5a6ef30606734e5665e98a2671915",
+  "external/phase782_seraphinianus/CS_OCR_TRANSLITERATION.txt": "a0df6dc711b5ead2bc44c06b1ae850de65443a55248f2dbdfe08bbc6e452c5a6",
+  "sources/brunschwig_1500/brunschwig_1500_corrected.txt": "cc397dc4d6a4d2871f7242597cd0b8af9f498dc0ff3e1993cb5489d47669a410",
+  "sources/aberdeen_bestiary/aberdeen_pages.json": "27400dbd9c3059ed0a70011718461cec8700b5aa9d1c803996f10dcbf42215a4"
+ }
+}
