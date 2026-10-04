@@ -1,0 +1,12 @@
+PHASE_780 run; lock phase780-lock verified; 2026-10-04 08:55:20
+T1: S +0.0239; z_local +1.30 (p 0.0998); z_shift +1.31; z_sheet +0.73 (p 0.2371); Z +0.73; outside False
+T2: S +0.0195; z_local +1.05 (p 0.1503); z_shift +1.20; z_sheet +0.11 (p 0.4442); Z +0.11; outside False
+imputed pairs: {'n': 0, 'of': 4095, 'fraction': 0.0, 'flag_over_1pct': False}
+rule: Z = min(z_local, z_shift, z_sheet) > z* = 2.957; VERDICT: NOT DETECTED (unpowered); genre power 0.61; style-only note False
+  no_style: T1 S +0.0243 Z +0.73; T2 S +0.0201 Z +0.14
+  raw_matrices: T1 S -0.0177 Z -0.78; T2 S -0.0275 Z -1.34
+  spearman_partial_S: {'T1': 0.030096126456640265, 'T2': 0.024593738814222405}
+  line_interior: T1 S +0.0511 Z +2.49; T2 S +0.0257 Z +0.87
+  single_plant_pages: T1 S +0.0267 Z +0.94; T2 S +0.0213 Z +0.13
+  V-B2: T1 S -0.0252 z_local -0.07 z_shift -1.16; T2 S -0.0260 z_local -0.37 z_shift -0.56
+done

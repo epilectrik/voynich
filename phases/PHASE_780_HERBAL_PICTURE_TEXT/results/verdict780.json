@@ -1,0 +1,301 @@
+{
+ "gate": {
+  "features": {
+   "root_form": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7280364643846635,
+    "coverage": 0.989010989010989,
+    "n_pairable": 90,
+    "pct_agree": 0.8111111111111111,
+    "enters": true
+   },
+   "root_size": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.8028393097540081,
+    "coverage": 0.989010989010989,
+    "n_pairable": 90,
+    "pct_agree": 0.9,
+    "enters": true
+   },
+   "stem_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.866133261615007,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.9120879120879121,
+    "enters": true
+   },
+   "leaf_type": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7924528301886792,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.8791208791208791,
+    "enters": true
+   },
+   "leaf_size": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.7350984566258648,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.7912087912087912,
+    "enters": true
+   },
+   "leaf_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.8870726229099077,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.8901098901098901,
+    "enters": true
+   },
+   "flowers": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.8256801497049087,
+    "coverage": 0.9560439560439561,
+    "n_pairable": 87,
+    "pct_agree": 0.9195402298850575,
+    "enters": true
+   },
+   "flower_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.9862052656471701,
+    "coverage": 0.967032967032967,
+    "n_pairable": 88,
+    "pct_agree": 0.9772727272727273,
+    "enters": true
+   },
+   "flower_colour": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.8954867332138896,
+    "coverage": 0.967032967032967,
+    "n_pairable": 88,
+    "pct_agree": 0.9204545454545454,
+    "enters": true
+   },
+   "habit": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7364077669902912,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.967032967032967,
+    "enters": true
+   },
+   "fill": {
+    "block": "style",
+    "type": "ordinal",
+    "alpha": 0.6378551420568228,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.8351648351648352,
+    "enters": true
+   },
+   "line_weight": {
+    "block": "style",
+    "type": "ordinal",
+    "alpha": NaN,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 1.0,
+    "enters": false
+   }
+  },
+  "entered_content": [
+   "root_form",
+   "root_size",
+   "stem_count",
+   "leaf_type",
+   "leaf_size",
+   "leaf_count",
+   "flowers",
+   "flower_count",
+   "flower_colour",
+   "habit"
+  ],
+  "organs": [
+   "flower",
+   "habit",
+   "leaf",
+   "root",
+   "stem"
+  ],
+  "entered_style": [
+   "fill"
+  ],
+  "passes": true
+ },
+ "z_star": 2.9568684053421017,
+ "fallback": false,
+ "n_pages": 91,
+ "imputed_pairs": {
+  "n": 0,
+  "of": 4095,
+  "fraction": 0.0,
+  "flag_over_1pct": false
+ },
+ "primary": {
+  "T1": {
+   "S": 0.023918606340885162,
+   "z_local": 1.2995662689208984,
+   "p_local": 0.09979002099790021,
+   "z_shift": 1.3062262535095215,
+   "Z": 0.7315303683280945,
+   "z_sheet": 0.7315303683280945,
+   "p_sheet": 0.23707629237076291
+  },
+  "T2": {
+   "S": 0.01950095035135746,
+   "z_local": 1.0468894243240356,
+   "p_local": 0.15028497150284972,
+   "z_shift": 1.200270652770996,
+   "Z": 0.11362827569246292,
+   "z_sheet": 0.11362827569246292,
+   "p_sheet": 0.44415558444155584
+  },
+  "Zmax": 0.7315303683280945,
+  "pmin_local": 0.09979002099790021
+ },
+ "rule": "Z = min(z_local, z_shift, z_sheet) > z* = 2.957",
+ "outside": {
+  "T1": false,
+  "T2": false
+ },
+ "descriptive": {
+  "no_style": {
+   "T1": {
+    "S": 0.02426701970398426,
+    "z_local": 1.2975374460220337,
+    "p_local": 0.1004899510048995,
+    "z_shift": 1.3306794166564941,
+    "Z": 0.7297462224960327,
+    "z_sheet": 0.7297462224960327,
+    "p_sheet": 0.23047695230476953
+   },
+   "T2": {
+    "S": 0.020134663209319115,
+    "z_local": 1.0824872255325317,
+    "p_local": 0.13878612138786123,
+    "z_shift": 1.2411478757858276,
+    "Z": 0.14452600479125977,
+    "z_sheet": 0.14452600479125977,
+    "p_sheet": 0.43125687431256876
+   },
+   "Zmax": 0.7297462224960327,
+   "pmin_local": 0.1004899510048995
+  },
+  "raw_matrices": {
+   "T1": {
+    "S": -0.01772756315767765,
+    "z_local": 0.2948753833770752,
+    "p_local": 0.39116088391160886,
+    "z_shift": -0.7780376076698303,
+    "Z": -0.7780376076698303,
+    "z_sheet": -0.7221398949623108,
+    "p_sheet": 0.7622237776222378
+   },
+   "T2": {
+    "S": -0.027504531666636467,
+    "z_local": -1.339701533317566,
+    "p_local": 0.9118088191180882,
+    "z_shift": -0.7910065054893494,
+    "Z": -1.339701533317566,
+    "z_sheet": -0.6302205324172974,
+    "p_sheet": 0.7316268373162683
+   },
+   "Zmax": -0.7780376076698303,
+   "pmin_local": 0.39116088391160886
+  },
+  "spearman_partial_S": {
+   "T1": 0.030096126456640265,
+   "T2": 0.024593738814222405
+  },
+  "line_interior": {
+   "T1": {
+    "S": 0.051056839525699615,
+    "z_local": 3.036764621734619,
+    "p_local": 0.0016998300169983002,
+    "z_shift": 2.8884408473968506,
+    "Z": 2.49456787109375,
+    "z_sheet": 2.49456787109375,
+    "p_sheet": 0.007099290070992901
+   },
+   "T2": {
+    "S": 0.025650881230831146,
+    "z_local": 1.2539830207824707,
+    "p_local": 0.10618938106189381,
+    "z_shift": 1.4372941255569458,
+    "Z": 0.8661612272262573,
+    "z_sheet": 0.8661612272262573,
+    "p_sheet": 0.1937806219378062
+   },
+   "Zmax": 2.49456787109375,
+   "pmin_local": 0.0016998300169983002
+  },
+  "single_plant_pages": {
+   "T1": {
+    "S": 0.026659978553652763,
+    "z_local": 1.3613533973693848,
+    "p_local": 0.0893910608939106,
+    "z_shift": 1.3757091760635376,
+    "Z": 0.9350204467773438,
+    "z_sheet": 0.9350204467773438,
+    "p_sheet": 0.17278272172782722
+   },
+   "T2": {
+    "S": 0.021321676671504974,
+    "z_local": 1.0238887071609497,
+    "p_local": 0.1541845815418458,
+    "z_shift": 1.1480991840362549,
+    "Z": 0.13265348970890045,
+    "z_sheet": 0.13265348970890045,
+    "p_sheet": 0.43775622437756223
+   },
+   "Zmax": 0.9350204467773438,
+   "pmin_local": 0.0893910608939106,
+   "n": 89
+  }
+ },
+ "verdict": "NOT DETECTED (unpowered)",
+ "style_linked_note": false,
+ "genre_power": 0.61,
+ "ablation_rows_at_085": [],
+ "MDE80": {
+  "exact": 1.0,
+  "spelled": 1.0,
+  "leaf": 4.0
+ },
+ "V_B2": {
+  "T1": {
+   "S": -0.025161415338516235,
+   "z_local": -0.07216724008321762,
+   "p_local": 0.5174482551744826,
+   "z_shift": -1.1644619703292847,
+   "Z": -1.1644619703292847,
+   "z_sheet": -0.4844837486743927,
+   "p_sheet": 0.676932306769323
+  },
+  "T2": {
+   "S": -0.02595064975321293,
+   "z_local": -0.36800703406333923,
+   "p_local": 0.6300369963003699,
+   "z_shift": -0.5575547218322754,
+   "Z": -0.5575547218322754,
+   "z_sheet": -0.5458236932754517,
+   "p_sheet": 0.6990300969903009
+  },
+  "Zmax": -0.5575547218322754,
+  "pmin_local": 0.5174482551744826,
+  "n": 20
+ },
+ "runtime_s": 28.301008939743042
+}
