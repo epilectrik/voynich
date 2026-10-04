@@ -1,0 +1,13 @@
+{
+ "aligned": {
+  "line_initial": 86,
+  "other": 325
+ },
+ "first_char_agreement": {
+  "line_initial": 0.9069767441860465,
+  "other": 0.7907692307692308
+ },
+ "line_initial_fragment_disagreements": 1,
+ "unaligned_or_unknown_position": 31,
+ "blocks_REACHED": false
+}

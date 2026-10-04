@@ -29,11 +29,27 @@ WORKERS = 6
 NOISE = {'clean': (0.0, 0.0, 0.0), 'matched': (0.18, 0.02, 0.02), 'heavy': (0.30, 0.05, 0.05)}
 TRUNC = (0.05, 0.10, 0.20)
 W = {}
+# Configuration (E6 permitted revisions; chosen on controls only): chunk length L (K = 2L), primary units raw or top-8.
+CFG_L = int(os.environ.get('PHASE782_L', '40'))
+CFG_TOPK = int(os.environ.get('PHASE782_TOPK', '0')) or None
+SUFFIX = '' if (CFG_L == 40 and not CFG_TOPK) else f'_L{CFG_L}' + (f'_top{CFG_TOPK}' if CFG_TOPK else '')
+CHUNK_KW = {'L': CFG_L, 'K': 2 * CFG_L, **({'topk': CFG_TOPK} if CFG_TOPK else {})}
+
+
+def CSET(lines, rng, **kw):
+    """ChunkSet with the configured L, K and units; a two-character request under top-k uses k-1 per-chunk symbols."""
+    merged = {**CHUNK_KW, **kw}
+    if kw.get('interior'):
+        merged['K'] = CFG_L
+    if merged.get('first_n') == 2:
+        tk = merged.pop('topk', None)
+        merged['topk_per_chunk'] = (tk - 1) if tk else 24
+    return C.ChunkSet(lines, rng, **merged)
 
 
 def log(msg):
     print(msg, flush=True)
-    with open(RES / 'calib_log782.txt', 'a', encoding='utf-8') as fh:
+    with open(RES / f'calib_log782{SUFFIX}.txt', 'a', encoding='utf-8') as fh:
         fh.write(msg + '\n')
 
 
@@ -56,7 +72,7 @@ def _init():
 
 # ------------------------------------------------------------------------------------------------ B pieces
 def b_excess(lines, rng, **kw):
-    return C.ChunkSet(lines, rng, **kw).excess(R_PERM, rng)
+    return CSET(lines, rng, **kw).excess(R_PERM, rng)
 
 
 def b_realisations(setting, shuffled_first=False, n=N_REAL, **kw):
@@ -123,15 +139,15 @@ def task(args):
             pl = C.plant_truncation(cs, float(setting[5:]), rng)
         else:
             pl = C.plant_splits(cs, 0.05, rng)
-        g = C.ChunkSet(C.guard(pl, W['frag']), rng).excess(R_PERM, rng)
-        u = C.ChunkSet(pl, rng).excess(R_PERM, rng)
+        g = CSET(C.guard(pl, W['frag']), rng).excess(R_PERM, rng)
+        u = CSET(pl, rng).excess(R_PERM, rng)
         out.update({'guarded_median': float(np.median(g)), 'unguarded_median': float(np.median(u))})
     elif kind == 'c4b':
         p, lam = W['plant_p'], W['plant_lam']
         tI, tF = W['tilt_I'], W['tilt_F']
         pl = C.plant_edges(cs, p, tI, tF, rng)
-        raw = C.ChunkSet(pl, rng).excess(R_PERM, rng)
-        gd = C.ChunkSet(C.guard(pl, W['frag']), rng).excess(R_PERM, rng)
+        raw = CSET(pl, rng).excess(R_PERM, rng)
+        gd = CSET(C.guard(pl, W['frag']), rng).excess(R_PERM, rng)
         a = C.auc_block(W['b_clean'], raw, rng, B=B_BOOT)
         b = C.auc_block(W['b_clean'], gd, rng, B=B_BOOT)
         out.update({'raw_median': float(np.median(raw)), 'guarded_median': float(np.median(gd)),
@@ -175,7 +191,7 @@ def calibrate_p(tI, tF, target, rng):
         for r in range(n):
             rr = stable_rng(f'calp-{p:.4f}', r)
             cs = C.load_cs(rng=rr)
-            vals.append(np.median(C.ChunkSet(C.plant_edges(cs, p, I, F, rr), rr).excess(200, rr)))
+            vals.append(np.median(CSET(C.plant_edges(cs, p, I, F, rr), rr).excess(200, rr)))
         return float(np.median(vals))
     lam = 1.0
     I, F = tilted(tI, lam), tilted(tF, lam)
@@ -193,7 +209,7 @@ def run():
     RES.mkdir(exist_ok=True)
     t0 = time.time()
     _init()
-    out = {'pre_registration': 'v2', 'R_perm': R_PERM, 'B_boot': B_BOOT, 'n_real': N_REAL}
+    out = {'pre_registration': 'v2', 'config': CHUNK_KW, 'R_perm': R_PERM, 'B_boot': B_BOOT, 'n_real': N_REAL}
     mg = C.cs_marginals()
     out['cs_marginals'] = {'fragment_strokes': ''.join(mg['fragment_strokes']),
                            'fragment_initial_share': mg['fragment_initial_tokens'] / mg['n_tokens'],
@@ -207,7 +223,7 @@ def run():
                        'block_code_23_lines': sum(L.flags['block_code_23'] for L in raw)}
     # B clean, shuffled, degraded
     rng = stable_rng('B-clean')
-    cb = C.ChunkSet(W['B'], rng)
+    cb = CSET(W['B'], rng)
     b_clean = cb.excess(R_PERM, rng)
     out['b_chunks'] = {'n': len(b_clean), 'leftover_lines': cb.n_leftover_lines, 'groups': Counter(cb.chunk_group)}
     rng = stable_rng('B-shuffled')
@@ -236,8 +252,8 @@ def run():
     for k in range(5):
         r = stable_rng('C4a', k)
         cs = C.load_cs(rng=r)
-        ea = C.ChunkSet(cs, r).excess(R_PERM, r)
-        eb = C.ChunkSet(cs, r, first_n=2, topk_per_chunk=24).excess(R_PERM, r)
+        ea = CSET(cs, r).excess(R_PERM, r)
+        eb = CSET(cs, r, first_n=2).excess(R_PERM, r)
         a = C.auc_block(reals['heavy'], ea, r, B=B_BOOT)
         b = C.auc_block(reals['heavy'], eb, r, B=B_BOOT)
         c4a.append({'shuffle': k, 'a': a, 'b': b, 'cs_median_raw': float(np.median(ea)), 'cs_median_two': float(np.median(eb)),
@@ -246,14 +262,14 @@ def run():
     log(f"C4a pass {out['C4a']['pass']}: " + '; '.join(f"a lo {x['a']['lo']:.3f} b lo {x['b']['lo']:.3f}" for x in c4a))
     # Brunschwig anchor (descriptive)
     r = stable_rng('BR')
-    br = C.ChunkSet(C.load_brunschwig(), r, within_groups=False).excess(R_PERM, r)
+    br = CSET(C.load_brunschwig(), r, within_groups=False).excess(R_PERM, r)
     out['brunschwig_anchor'] = {'n_chunks': len(br), 'median_excess': float(np.median(br)),
                                 'auc_B_clean_vs_BR': C.auc_block(b_clean, br, r, B=B_BOOT)}
     log(f"Brunschwig anchor: {out['brunschwig_anchor']}")
-    json.dump(out, open(RES / 'calib782.json', 'w', encoding='utf-8'), indent=1, default=float)
+    json.dump(out, open(RES / f'calib782{SUFFIX}.json', 'w', encoding='utf-8'), indent=1, default=float)
     # C5 guard
     settings = ['none'] + [f'trunc{t}' for t in TRUNC] + ['split0.05']
-    rows = run_pool([('c5', s, i) for s in settings for i in range(N_REP)], 'calib782_reps.jsonl')
+    rows = run_pool([('c5', s, i) for s in settings for i in range(N_REP)], f'calib782_reps{SUFFIX}.jsonl')
     base = np.array([x['guarded_median'] for x in rows if x['setting'] == 'none'])
     lo, hi = np.percentile(base, [5, 95])
     c5 = {'unplanted_central90': [float(lo), float(hi)], 'B_clean_median': out['b_median_excess']['clean'], 'settings': {}}
@@ -267,13 +283,13 @@ def run():
     c5['pass'] = all(v['pass'] for v in c5['settings'].values())
     out['C5'] = c5
     log(f"C5 pass {c5['pass']}: {c5}")
-    json.dump(out, open(RES / 'calib782.json', 'w', encoding='utf-8'), indent=1, default=float)
+    json.dump(out, open(RES / f'calib782{SUFFIX}.json', 'w', encoding='utf-8'), indent=1, default=float)
     # C4b plants
     tI, tF, info = tilts()
     p, lam, I, F = calibrate_p(tI, tF, out['b_median_excess']['clean'], stable_rng('calp'))
     out['C4b_plant'] = {'p': p, 'lam': lam, **info}
     log(f'C4b plant: p {p:.3f}, lam {lam}')
-    rows = run_pool([('c4b', 'plant', i) for i in range(N_REP)], 'calib782_c4b.jsonl', initializer=_init_c4b,
+    rows = run_pool([('c4b', 'plant', i) for i in range(N_REP)], f'calib782_c4b{SUFFIX}.jsonl', initializer=_init_c4b,
                     initargs=(p, 1.0, I, F, b_clean))
     fire = float(np.mean([x['reached'] for x in rows]))
     out['C4b'] = {'reached_rate': fire, 'pass': bool(fire >= 0.80),
@@ -281,7 +297,7 @@ def run():
                   'planted_guarded_median': float(np.median([x['guarded_median'] for x in rows]))}
     log(f"C4b {out['C4b']}")
     out['runtime_s'] = round(time.time() - t0, 1)
-    json.dump(out, open(RES / 'calib782.json', 'w', encoding='utf-8'), indent=1, default=float)
+    json.dump(out, open(RES / f'calib782{SUFFIX}.json', 'w', encoding='utf-8'), indent=1, default=float)
     log('calibration done')
 
 

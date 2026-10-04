@@ -1,0 +1,36 @@
+B median excess {'clean': 0.22495744576544643, 'shuffled': 0.0036220633388674983, 'matched': 0.15220500414643107, 'heavy': 0.10865527220136692}; split artifact (shuffled then degraded) {'matched': -0.00405829198598659, 'heavy': -0.0001287599444669829}
+C1 {'auc': 0.4185606060606061, 'lo': 0.22082465277777777, 'hi': 0.6336805555555556, 'n_a': 24, 'n_b': 22, 'pass': True}
+C2 {'auc': 1.0, 'pass': True}
+C3 {'auc': 0.9377362948960302, 'lo': 0.8747353190287973, 'hi': 0.9818840579710145, 'n_a': 46, 'n_b': 46, 'pass': True}
+C4a pass True: a lo 0.911 b lo 0.873; a lo 0.892 b lo 0.863; a lo 0.899 b lo 0.903; a lo 0.896 b lo 0.893; a lo 0.894 b lo 0.903
+Brunschwig anchor: {'n_chunks': 587, 'median_excess': 0.039364183779489526, 'auc_B_clean_vs_BR': {'auc': 0.9677431301385082, 'lo': 0.949473725070233, 'hi': 0.9838100026217554, 'n_a': 46, 'n_b': 587}}
+calib782_reps.jsonl: 0 done, 1000 to run
+  calib782_reps.jsonl: 50/1000 (31s)
+  calib782_reps.jsonl: 100/1000 (54s)
+  calib782_reps.jsonl: 150/1000 (77s)
+  calib782_reps.jsonl: 200/1000 (101s)
+  calib782_reps.jsonl: 250/1000 (129s)
+  calib782_reps.jsonl: 300/1000 (159s)
+  calib782_reps.jsonl: 350/1000 (189s)
+  calib782_reps.jsonl: 400/1000 (218s)
+  calib782_reps.jsonl: 450/1000 (244s)
+  calib782_reps.jsonl: 500/1000 (269s)
+  calib782_reps.jsonl: 550/1000 (299s)
+  calib782_reps.jsonl: 600/1000 (329s)
+  calib782_reps.jsonl: 650/1000 (356s)
+  calib782_reps.jsonl: 700/1000 (387s)
+  calib782_reps.jsonl: 750/1000 (416s)
+  calib782_reps.jsonl: 800/1000 (454s)
+  calib782_reps.jsonl: 850/1000 (486s)
+  calib782_reps.jsonl: 900/1000 (519s)
+  calib782_reps.jsonl: 950/1000 (553s)
+  calib782_reps.jsonl: 1000/1000 (583s)
+C5 pass True: {'unplanted_central90': [-0.008847260121262534, 0.005065178175942591], 'B_clean_median': 0.22495744576544643, 'settings': {'trunc0.05': {'guarded_median': -0.0022004058758064785, 'unguarded_median': 0.004962266807042964, 'unguarded_over_B_clean': 0.022058691101146784, 'pass': True}, 'trunc0.1': {'guarded_median': -0.0025708390756770984, 'unguarded_median': 0.014917372561021457, 'unguarded_over_B_clean': 0.06631197518385396, 'pass': True}, 'trunc0.2': {'guarded_median': -0.0012176445761168664, 'unguarded_median': 0.03970992008605855, 'unguarded_over_B_clean': 0.17652191929429353, 'pass': True}, 'split0.05': {'guarded_median': -0.0021119153078978936, 'unguarded_median': -0.002996441215929971, 'unguarded_over_B_clean': -0.013320035732688007, 'pass': True}}, 'unplanted_unguarded_median': -0.002568361533791745, 'pass': True}
+C4b plant: p 0.845, lam 1.0
+calib782_c4b.jsonl: 0 done, 200 to run
+  calib782_c4b.jsonl: 50/200 (61s)
+  calib782_c4b.jsonl: 100/200 (104s)
+  calib782_c4b.jsonl: 150/200 (150s)
+  calib782_c4b.jsonl: 200/200 (184s)
+C4b {'reached_rate': 0.605, 'pass': False, 'planted_raw_median': 0.22702148067226086, 'planted_guarded_median': 0.22201351976087375}
+calibration done
