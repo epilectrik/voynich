@@ -1,9 +1,9 @@
 # PHASE_782 — Line position and the first glyph: Currier B against a book-length pseudo-script (Codex Seraphinianus) (pre-registration)
 
-**Status: v2 after the lean-expert design audit (v1: LOCKABLE AFTER EDITS; blocking edits E1–E10 and non-blocking
-N1–N8 incorporated; drops applied). Nothing that conditions on line position has been computed on the real Codex
-order. Calibration on controls follows; then a confirmation pass, an interpretive check by the expert-advisor
-(templates and what each result can show), checksums, the lock tag and one run.**
+**Status: v3 for the lock. v1 → v2 after the lean-expert design audit (LOCKABLE AFTER EDITS; E1–E10, N1–N8);
+v2 → v3 after calibration on controls and the expert-advisor's interpretive check (amendments A1–A7 below). Nothing
+that conditions on line position has been computed on the real Codex order. Next: the lean-expert confirmation pass,
+checksums, the lock tag `phase782-lock`, one run.**
 
 ## Origin
 - PHASE_764 (human gibberish, MIXED / UNRESOLVED): its strongest contrast was descriptive. B's dependence of a word's
@@ -57,17 +57,17 @@ coupling), meaningful text sat about as far below B as gibberish.
     without creating edges; a numeral or uncertain token at a line edge makes the line ineligible (E7).
   - **Paragraph-first analogue excluded (E2)** in the primary: block-first lines, and lines that follow a short line in
     the same block. A line is short if its character count is below 0.6 × its block's median; this is computed from
-    line lengths only, before any statistic (425 of 7,747 lines). Ponzi's blocks are column segments (block codes 0/1
+    line lengths only, before any statistic (423 short lines; 211 lines follow one within a block; A2). Ponzi's blocks are column segments (block codes 0/1
     cover 1,142 of 1,188; median 6 lines, maximum 35), so block-first lines under-detect paragraph starts.
   - Units: Ponzi's characters; the first unit is the first character (mostly a word-initial capital allograph).
 - **Eligible line (both books):** at least 3 token positions, with a readable first and last token; otherwise the line
   is dropped. Drop counts by cause are reported after the run only (they condition on line edges).
 
 ## Statistic
-- **Chunk:** L = 40 consecutive eligible lines in book order, non-overlapping. **B chunks are formed within sections**
-  (leftover lines in a section are dropped; count reported); CS chunks run in page order. Tokens: the 40 line-initial
-  words (zone I), the 40 line-final words (zone F), and K = 80 medial words (zone M) drawn without replacement from the
-  chunk's readable medial positions (fixed per chunk by seed). Chunks with fewer than 80 readable medial positions are
+- **Chunk:** L = 30 consecutive eligible lines in book order, non-overlapping (A1; v2 had L = 40). **B chunks are formed within sections**
+  (leftover lines in a section are dropped; count reported); CS chunks run in page order. Tokens: the 30 line-initial
+  words (zone I), the 30 line-final words (zone F), and K = 60 medial words (zone M) drawn without replacement from the
+  chunk's readable medial positions (fixed per chunk by seed). Chunks with fewer than K readable medial positions are
   dropped (count reported). Fixed zone counts make the statistic independent of line length.
 - **S** = I(F1; zone) in bits (plug-in). **Excess** = S − mean S over R = 500 within-line permutations: readable words
   are permuted among their line's readable positions; unreadable and excluded positions, zones and the sampled medial
@@ -109,7 +109,7 @@ Intervals are the 95% moving-block bootstrap intervals above.
     n r t u y (9.1% of tokens).
 - **UNRESOLVED:** otherwise.
 - **Opposite-label variants:** top-8 binning (both books); interior-medial (N1: medial words from positions 3…n−2
-  only, lines with at least 5 positions, K = 40); excess / H(F1) of the chunk's sampled words. If any returns the
+  only, lines with at least 5 positions, K = L = 30); excess / H(F1) of the chunk's sampled words. If any returns the
   opposite definite label under the same thresholds, the label becomes UNRESOLVED.
 - Asymmetry for the record: REACHED shows that B's level can be reached (one example suffices); NOT REACHED is one
   book that falls short.
@@ -144,7 +144,7 @@ Intervals are the 95% moving-block bootstrap intervals above.
 
 ## Sensitivities (cannot change the verdict label)
 Paragraph-first analogue as block-first only; no paragraph exclusion in either book; words beside `<->` dropped;
-H-track B; CS numerals included; L = 30 and 60; CS wide blocks excluded (block median above 70 characters; 646 lines),
+H-track B; CS numerals included; L = 40 and 60; CS wide blocks excluded (block median above 70 characters; 646 lines),
 lines above 1.6 × their block median excluded (64), blocks coded 2 or 3 excluded (44) (N2); the iid bootstrap.
 
 ## Descriptive (never verdict-bearing)
@@ -165,22 +165,80 @@ initial-versus-medial counts, no drop counts by cause, no previews. Allowed: mar
 within-line-shuffled CS, and the restricted hand-label check above. The engine refuses to chunk the real CS order
 unless the locked run script sets its run flag.
 
-## Templates (E9)
+## Templates (E9, revised at A5)
 - **NOT REACHED:** "Currier B's dependence of a word's first glyph unit on its line position (initial, medial, final)
   exceeds that of the body prose of the Codex Seraphinianus, a book-length pseudo-script its author described as
   having no meaning, in Ponzi's machine transliteration (AUC {a}, 95% block-bootstrap interval {lo}–{hi}; B degraded
   by simulated noise: first-unit substitution 0.30 against a reported character error of about 0.18, splits and
-  merges 0.05; also with the Codex's first unit read as two characters). One book by one modern artist: this does not
-  show that invented or practised scripts in general fall below B, and it is not a test of meaning (no meaningful text
-  with original line breaks has been measured on this statistic)."
+  merges 0.05; also with the Codex's first unit read as two characters). This confirms, at book scale and against a
+  designed pseudo-script with original line breaks, the descriptive contrast PHASE_764 found against volunteer
+  gibberish. One book by one modern artist, laid out like print: this does not show that invented, practised or
+  medieval scribal writing in general falls below B, and it is not a test of meaning (meaningful text with original
+  line breaks enters only descriptively, as one printed book and one medieval manuscript)."
 - **REACHED:** "The body prose of the Codex Seraphinianus, a book-length pseudo-script by one modern artist, reaches
-  Currier B's dependence of the first unit on line position (AUC {a} against noise-free B, 95% block-bootstrap
-  interval {lo}–{hi}; also with probable transliteration fragments and one-character tokens removed). This statistic
-  therefore does not separate B from at least one book-length pseudo-script. Not evidence that B is meaningless or
-  was produced this way."
-- **UNRESOLVED:** a phase record only (PHASE_764 precedent).
-- What each result can show for the working readings is pre-registered at the lock after the expert-advisor's
-  interpretive check (the lean-expert cleared nulls, denominators, power and bookkeeping only).
+  Currier B's dependence of the first unit on line position in Ponzi's machine transliteration (AUC {a} against
+  noise-free B, 95% block-bootstrap interval {lo}–{hi}; also with probable transliteration fragments and
+  one-character tokens removed; the share carried by the Codex's most zone-specific unit is {x}). This statistic
+  therefore does not separate B from at least one book-length pseudo-script, and PHASE_764's descriptive contrast with
+  volunteer gibberish no longer counts against meaningless production. Not evidence that B is meaningless or was
+  produced this way."
+- **UNRESOLVED:** a phase record only (PHASE_764 precedent): "The Codex could not be placed relative to B at this
+  resolution; no inference for the readings."
+
+## What each result can show (pre-registered at the lock; expert-advisor, A6)
+The test asks whether one meaningless, book-length, designed pseudo-script reaches B's dependence of a word's first
+unit on its line zone. B's own level is already known; the result places the Codex. It bears on the working readings
+only through one question: can meaningless writing at book scale produce B-level line-position dependence? REACHED
+answers yes for one book. PHASE_764's descriptive contrast then stops counting against made-for-show writing
+(likelihood ratio about 1.25 for made-for-show against the other two readings; odds 34/51/15 move to about
+39/47/14). NOT REACHED answers no for one modern artist imitating print. Medieval scribal conventions are untested on
+this statistic, so it is weak evidence against made-for-show (ratio about 0.85; odds move to about 30/54/16). Neither
+result bears on hidden running text beyond a ratio of about 1, and neither is a test of meaning. UNRESOLVED moves
+nothing. Descriptives (the two anchors, zone contributions, per-section B) can qualify these figures but not change
+them. Any reading of B's excess as line-level organisation is an echo-class claim, left to the human. (These are
+conversation-level priors set by the expert-advisor, not measured probabilities; the lean-expert did not clear
+interpretation.)
+
+## Amendments before the lock (A1–A7)
+- **A1 (E6 permitted revision, chosen on controls only): L = 30, K = 60.** At L = 40 every certification passed except
+  C4b: REACHED fired in 0.605 of 200 planted replicates (raw condition 0.905, guarded 0.640, the binding one; B had 46
+  chunks). At L = 30 all pass (table below). Raw units stay primary; R = 500. L = 40 and L = 60 become sensitivities;
+  the interior variant uses K = L. The configuration enters the run from the lock file.
+- **A2 (counts under the final parser):** short lines 423 (lines following a short line in the same block, excluded:
+  211; the paragraph-first analogue is 1,188 block-first + 211 = 1,399 lines); wide blocks 136 (764 lines); lines above
+  1.6 × their block median 52; blocks coded 2 or 3: 44 (227 lines). Line length is the stripped character count; the
+  audit's figures (425, 646, 64) used a slightly different length and are superseded.
+- **A3 (descriptive anchors, computed before the lock; no Codex data):** a medieval manuscript with original
+  lineation was added at the expert-advisor's request (N4b): the Aberdeen Bestiary (c. 1200, Latin;
+  `sources/aberdeen_bestiary/`), using only the 150 pages where the site's transcription marks a mid-word line break
+  differently from a break between words; a word broken across a line end is a fragment at both edges, so those lines
+  are ineligible (1,629 of 4,278 lines eligible). Results at L = 30 below. Descriptive only; reading them as "B is
+  unusual among written lines" is echo-class.
+- **A4 (hand-label check, E10, run before the lock from a committed script):** aligned 86 line-initial and 325 other
+  words; first-character agreement 0.91 and 0.79; 1 line-initial disagreement of the fragment kind. It does not block
+  REACHED. (The labelled words are training data: the check cannot clear the edge confound; C5 does that.)
+- **A5 (templates):** replaced by the expert-advisor's revisions (NOT REACHED final sentence; REACHED with the
+  transliteration scope, the top-unit share and the consequence for the PHASE_764 lead; UNRESOLVED sentence), with
+  "one printed book" extended to "one printed book and one medieval manuscript" after A3.
+- **A6 (what each result can show):** the expert-advisor's section above, entered at the lock.
+- **A7 (code, no effect on any calibration path):** the two-character reading under top-k now keeps an explicit
+  per-chunk symbol count (top-8 variant: 7 per chunk plus OTHER); the run script's L sensitivities are the two values
+  not chosen; descriptive S1 at the configured L.
+
+## Calibration results (B and within-line-shuffled CS only)
+| Check | L = 40 | L = 30 (adopted) | Bar |
+|---|---|---|---|
+| B median excess, clean / matched / heavy (bits) | 0.225 / 0.152 / 0.109 | 0.234 / 0.151 / 0.104 | — |
+| Split artifact (shuffled B, then degraded), matched / heavy | −0.004 / −0.000 | −0.004 / −0.003 | reported |
+| C1 halves AUC (95%) | 0.42 (0.22–0.63) | 0.57 (0.42–0.73) | interval includes 0.5 |
+| C2 B vs shuffled B | 1.00 | 0.99 | ≥ 0.95 |
+| C3 B heavy vs shuffled B, lower bound | 0.875 | 0.812 | ≥ 0.80 |
+| C4a B heavy vs shuffled CS, lower bounds over 5 shuffles, (a) / (b) | 0.89–0.91 / 0.86–0.90 | 0.83–0.87 / 0.83–0.85 | ≥ 0.80 |
+| C5 guard, truncation 0.05 / 0.10 / 0.20 and splits 0.05 | all inside the null band | all inside | inside central 90% |
+| C5 unguarded truncation 0.20, as share of B clean | 0.18 | 0.16 | reported |
+| C4b REACHED firing rate (plant p, matched to B clean's median) | 0.605 (p 0.845) | 1.00 (p 0.857) | ≥ 0.80 |
+| Brunschwig 1500 print: median excess; AUC B clean vs print | 0.039; 0.97 | 0.048; 0.95 | descriptive |
+| Aberdeen Bestiary: median excess; AUC vs its own shuffle; AUC B clean vs Aberdeen | — | 0.007; 0.52; 0.98 | descriptive |
 
 ## Registry
 NOT REACHED or REACHED: one Tier-2 row (scope B, external control). UNRESOLVED: phase record and a STATUS_BRIEF line.

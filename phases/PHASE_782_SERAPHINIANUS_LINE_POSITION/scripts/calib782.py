@@ -43,7 +43,7 @@ def CSET(lines, rng, **kw):
         merged['K'] = CFG_L
     if merged.get('first_n') == 2:
         tk = merged.pop('topk', None)
-        merged['topk_per_chunk'] = (tk - 1) if tk else 24
+        merged.setdefault('topk_per_chunk', (tk - 1) if tk else 24)
     return C.ChunkSet(lines, rng, **merged)
 
 

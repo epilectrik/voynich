@@ -51,15 +51,15 @@ def load_aberdeen():
     return out
 
 
-def main():
+def main(L=30):
     rng = np.random.default_rng(782_900_000)
     B = C.load_b()
-    b = C.ChunkSet(B, rng).excess(500, rng)
-    res = {'B_clean_median': float(np.median(b))}
+    b = C.ChunkSet(B, rng, L=L, K=2 * L).excess(500, rng)
+    res = {'L': L, 'B_clean_median': float(np.median(b))}
     for name, lines in (('brunschwig_1500', C.load_brunschwig()), ('aberdeen_bestiary', load_aberdeen())):
-        cs = C.ChunkSet(lines, rng, within_groups=False)
+        cs = C.ChunkSet(lines, rng, within_groups=False, L=L, K=2 * L)
         e = cs.excess(500, rng)
-        sh = C.ChunkSet(C.shuffle_lines(lines, rng), rng, within_groups=False).excess(500, rng)
+        sh = C.ChunkSet(C.shuffle_lines(lines, rng), rng, within_groups=False, L=L, K=2 * L).excess(500, rng)
         res[name] = {'lines': len(lines), 'eligible_lines': cs.n_eligible, 'chunks': len(e),
                      'tokens_per_line_mean': float(np.mean([len(L.toks) for L in lines])),
                      'median_excess': float(np.median(e)), 'shuffled_median_excess': float(np.median(sh)),

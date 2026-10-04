@@ -1,0 +1,48 @@
+{
+ "L": 30,
+ "B_clean_median": 0.23098288304920891,
+ "brunschwig_1500": {
+  "lines": 25511,
+  "eligible_lines": 23488,
+  "chunks": 782,
+  "tokens_per_line_mean": 7.686684175453726,
+  "median_excess": 0.04775853043915809,
+  "shuffled_median_excess": -0.004429293472506035,
+  "auc_vs_own_shuffle": {
+   "auc": 0.7440836336758655,
+   "lo": 0.7189953583061347,
+   "hi": 0.7681357596414566,
+   "n_a": 782,
+   "n_b": 782
+  },
+  "auc_B_clean_vs_anchor": {
+   "auc": 0.9467737201794474,
+   "lo": 0.9235028739251205,
+   "hi": 0.9687012974358152,
+   "n_a": 61,
+   "n_b": 782
+  }
+ },
+ "aberdeen_bestiary": {
+  "lines": 4278,
+  "eligible_lines": 1629,
+  "chunks": 54,
+  "tokens_per_line_mean": 8.24520804114072,
+  "median_excess": 0.007097583341796887,
+  "shuffled_median_excess": -2.1113397780950227e-05,
+  "auc_vs_own_shuffle": {
+   "auc": 0.5150891632373114,
+   "lo": 0.40191186556927294,
+   "hi": 0.6286351165980795,
+   "n_a": 54,
+   "n_b": 54
+  },
+  "auc_B_clean_vs_anchor": {
+   "auc": 0.9829993928354585,
+   "lo": 0.9623750734861846,
+   "hi": 0.9954498800127215,
+   "n_a": 61,
+   "n_b": 54
+  }
+ }
+}

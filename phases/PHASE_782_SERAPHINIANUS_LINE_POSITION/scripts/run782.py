@@ -20,7 +20,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import core782 as C  # noqa: E402
-import calib782 as K  # noqa: E402
+K = None            # calib782, imported in main() after the locked configuration is set
 
 RES = C.PH / 'results'
 LOG = RES / 'run_log782.txt'
@@ -115,19 +115,26 @@ def _ex(lines, rng, kw, exclude=None):
     norm = kw.pop('normalise', False)
     if exclude is not None:
         kw['exclude'] = exclude
-    return C.ChunkSet(lines, rng, **kw).excess(K.R_PERM, rng, normalise=norm)
+    return K.CSET(lines, rng, **kw).excess(K.R_PERM, rng, normalise=norm)
 
 
 def main():
     t0 = time.time()
     ck = verify_lock()
     os.environ['PHASE782_RUN'] = 'locked'          # set only here, after the lock check (no import side effect)
+    cfg = ck['config']
+    os.environ['PHASE782_L'] = str(cfg['L'])
+    os.environ['PHASE782_TOPK'] = str(cfg.get('topk') or 0)
+    global K
+    import calib782 as K_mod
+    K = K_mod
+    assert K.CHUNK_KW['L'] == cfg['L'], 'configuration mismatch'
     log(f'lock verified ({ck.get("tag")}); PHASE782_RUN=locked')
     K._init()
     frag = K.W['frag']
     B = K.W['B']
     CS = C.load_cs()
-    out = {'lock': ck.get('tag'), 'fragment_strokes': ''.join(frag)}
+    out = {'lock': ck.get('tag'), 'config': K.CHUNK_KW, 'fragment_strokes': ''.join(frag)}
     # ---------------- primary
     Bc, Bh, raw, two, gd = arm(B, CS, frag, '')
     prim = four(Bc, Bh, raw, two, gd, K.stable_rng('boot-primary'))
@@ -138,7 +145,7 @@ def main():
     log(f"PRIMARY: {prim['label']}; NR(a) {prim['NR_a']}; NR(b) {prim['NR_b']}; R(a) {prim['R_a']}; R(b) {prim['R_b']}")
     log(f"medians {out['medians']}; chunks {out['n_chunks']}")
     # ---------------- opposite-label variants
-    variants = {'top8': {'topk': 8}, 'interior': {'interior': True, 'K': 40}, 'normalised': {'normalise': True}}
+    variants = {'top8': {'topk': 8}, 'interior': {'interior': True}, 'normalised': {'normalise': True}}   # interior K = L
     vres = {}
     for name, kw in variants.items():
         v = four(*arm(B, CS, frag, f'-{name}', **kw), K.stable_rng(f'boot-{name}'))
@@ -158,8 +165,8 @@ def main():
     blockfirst = [C.Line(L.unit, L.flags['block_first'], L.toks, L.brk, L.group, L.flags) for L in CS]
     sens['cs_block_first_only'] = four(*arm(B, blockfirst, frag, '-bf'), K.stable_rng('b-bf'))
     sens['b_drop_break'] = four(*arm(B, CS, frag, '-brk', drop_break=True), K.stable_rng('b-brk'))
-    sens['L30'] = four(*arm(B, CS, frag, '-L30', L=30, K=60), K.stable_rng('b-L30'))
-    sens['L60'] = four(*arm(B, CS, frag, '-L60', L=60, K=120), K.stable_rng('b-L60'))
+    for Lx in [x for x in (30, 40, 60) if x != K.CFG_L]:
+        sens[f'L{Lx}'] = four(*arm(B, CS, frag, f'-L{Lx}', L=Lx, K=2 * Lx), K.stable_rng(f'b-L{Lx}'))
     for nm, fl in (('cs_wide_blocks_excluded', 'wide_block'), ('cs_long_lines_excluded', 'long_line'),
                    ('cs_block_code_23_excluded', 'block_code_23')):
         sens[nm] = four(*arm(B, CS, frag, f'-{nm}', cs_exclude=lambda L, f=fl: L.flags.get(f, False)),
@@ -180,14 +187,14 @@ def main():
                            'B_matched_minus_CS': float(np.median(np.concatenate(Bmat)) - np.median(raw)),
                            'B_heavy_minus_CS': float(np.median(np.concatenate(Bh)) - np.median(raw))}
     rng = K.stable_rng('B-clean')
-    cb = C.ChunkSet(B, rng)
+    cb = K.CSET(B, rng)
     eb, parts_b = cb.excess(K.R_PERM, rng, zone_parts=True)
     per_sec = defaultdict(list)
     for g, e in zip(cb.chunk_group, eb):
         per_sec[g].append(e)
     desc['B_per_section_median'] = {g: float(np.median(v)) for g, v in per_sec.items()}
     rng = K.stable_rng('CS')
-    ccs = C.ChunkSet(CS, rng)
+    ccs = K.CSET(CS, rng)
     ec, parts_c = ccs.excess(K.R_PERM, rng, zone_parts=True)
     desc['zone_parts'] = {
         'B': {'zone_excess_median': np.median([p['zone_excess'] for p in parts_b], 0).tolist(),
@@ -196,10 +203,10 @@ def main():
                'top_unit_share_median': float(np.median([p['top_unit_share'] for p in parts_c]))}}
     rng = K.stable_rng('lenclass')
     desc['length_class_null_median'] = {
-        'B': float(np.median(C.ChunkSet(B, rng).excess(K.R_PERM, rng, length_class=True))),
-        'CS': float(np.median(C.ChunkSet(CS, rng).excess(K.R_PERM, rng, length_class=True)))}
+        'B': float(np.median(K.CSET(B, rng).excess(K.R_PERM, rng, length_class=True))),
+        'CS': float(np.median(K.CSET(CS, rng).excess(K.R_PERM, rng, length_class=True)))}
     rng = K.stable_rng('S1')
-    s1b, s1c = s1_excess(B, rng), s1_excess(CS, rng)
+    s1b, s1c = s1_excess(B, rng, L=K.CFG_L), s1_excess(CS, rng, L=K.CFG_L)
     desc['S1'] = {'B_median': float(np.median(s1b)), 'CS_median': float(np.median(s1c)),
                   'auc_B_vs_CS': C.auc_block(s1b, s1c, rng, B=K.B_BOOT)}
     drops = {}
