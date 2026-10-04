@@ -4,6 +4,45 @@
 
 ---
 
+## Version 7.44 (2026-10-04) — PHASE_781 stopped at its Stage 1 power gate (no constraint)
+
+### Summary
+**Question.** PHASE_780's Brunschwig control lost most of its text–picture link when plant names were masked, and the
+names open each entry. Would a statistic aimed at the head of the page (first line H1, first word H2, the initial
+gallows removed and entered as a covariate) be powered on the 91 hand-1 herbal pages? The design ran a go/no-go on
+Brunschwig before any Voynich first-line statistic was computed.
+
+**Process.**
+- Lean-expert design audit (LOCKABLE AFTER EDITS; A1–A8, B1–B7), applied in pre-registration v2 and tagged
+  `phase781-prelock` (790cffbd) before Stage 1: 91 Brunschwig entries per sample; the same three nulls through the
+  Voynich page structure; 2,000 replicates per drift setting with the point 99th percentile; exposure rule and binding
+  stop; STOP text written in advance.
+- Stage 1 (Brunschwig only): 5,000 replicates at Idle priority.
+
+**Result.** z\*_BR,head 2.386; gate genre power **0.18** (36 of 200; Wilson 0.13–0.24) against the 0.85 bar:
+**STOP**. Names masked 0.01, body window 0.02, rubric included 0.09; 0.045 at PHASE_780's z\* 2.957. The STOP does
+not depend on the exact threshold (85% power would need Z 0.77, exceeded by about 25% of drift replicates). The
+Voynich first lines were not tested against the drawings and remain unexposed; this is a fact about the test's power,
+not about the Voynich. No constraint row (precedent PHASE_773); no note on C2098.
+
+**Side findings (descriptive).**
+- A first-line-sized head does not carry enough of Brunschwig's names-based link for this test at 91 entries; how the
+  whole-entry link (C2098's 0.61) divides between the head and the rest of the entry is not shown.
+- Brunschwig sets each entry's first letter as a decorated initial that the transcription omits in about a sixth of
+  entries; PHASE_780's names-masked row matched full stems only and left 20 of 98 name-bearing first words in place,
+  so its 0.27 and the derived ratio 0.73 overstate the effect of masking (not re-run). C2098 quotes the 27%: a possible
+  erratum, left to the human.
+
+### Changes
+| Item | Change |
+|---|---|
+| New phase | PHASE_781_HEAD_OF_PAGE (pre-registration v2, Stage 1 script, results); stopped at Stage 1 |
+| Constraints | none (1,905 live unchanged) |
+| Status / agenda | STATUS_BRIEF sub-bullet under C2098; RESEARCH_AGENDA picture route: stop record, next-step requirements, family bound and exposure record |
+| PHASE_780 INDEX | bracketed status note on the names-masked figures |
+| Memory | ablations show what removal hurts, not that the remaining piece suffices; check masks against the source's typography |
+- Live: 1,905 (T0 2, T1 38, T2 1,695, T3 166, T4 4); 781 phases.
+
 ## Version 7.43 (2026-10-04) — PHASE_780: the herbal text against its drawings, a blind picture test (C2098)
 
 ### Summary

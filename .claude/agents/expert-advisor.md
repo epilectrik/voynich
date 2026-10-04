@@ -114,7 +114,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-10-04 08:59
+**Generated:** 2026-10-04 13:47
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -129,7 +129,7 @@ tables are quarantined — do not use for structural answers.
 6. All Constraints
 7. All Explanatory Fits
 8. Tier 3-4 Interpretations
-9. Session Methodology Notes (65 feedback rules)
+9. Session Methodology Notes (66 feedback rules)
 10. Structural Contract Signatures (6 contracts)
 
 ---
@@ -219,6 +219,10 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     61% of samples (an upper bound), and that link runs mostly through plant names at the head of each entry.
   - It bears only on links at least that strong. It is not evidence that the text is unrelated to the drawings or
     content-free, and it does not extend C137/C138/C140 to Currier A.
+  - PHASE_781 stopped at its pre-registered gate: on the Brunschwig 1500 herbal, a head-of-page text–picture test
+    at 91 entries and the Voynich first-line lengths detected the herbal's own link in at most 18% of samples
+    (Wilson 13–24%; bar 85%). The Voynich first lines were not tested against the drawings and remain unexposed.
+    This is a fact about the test's power, not about the Voynich. No constraint row.
 - **Zodiac labels are not a repeated per-sign set** (C2090, PHASE_772; ZL; partly unblinded).
   - Most labels occur in no other sign: 77% at N1, 65% at N2. A 1–30 set repeated in every sign (degree or day
     numbers) is excluded under the modelled spelling variation.
@@ -358,7 +362,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.43 | **Status:** characterization ACTIVE | **Constraints:** 1,905 live in the generated table (T0 2, T1 38, T2 1,695, T3 166, T4 4) | **Phases:** 780 | **Date:** 2026-10-04
+**Version:** 7.44 | **Status:** characterization ACTIVE | **Constraints:** 1,905 live in the generated table (T0 2, T1 38, T2 1,695, T3 166, T4 4) | **Phases:** 781 | **Date:** 2026-10-04
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -491,7 +495,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.43) | 1,905 (T0 2, T1 38, T2 1,695, T3 166, T4 4) |
+| Live constraints (generated table, v7.44) | 1,905 (T0 2, T1 38, T2 1,695, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -672,12 +676,27 @@ text made to look meaningful? And, if it carries content, what content?
    - **Herbal pages, whole-page features (PHASE_780, C2098): NOT DETECTED (unpowered).** Blind two-set coding of the
      91 hand-1 herbal drawings against page text, with drift, quire, sheet, layout, spelling-dial and style controls
      and a matched Brunschwig 1500 positive control (genre power 0.61, an upper bound; its link runs mostly through
-     plant names at the head of each entry).
-     - Open: power is the limit, not the design; no fresh herbal population of comparable size exists (V-B2 has
-       N = 20, another hand). A stronger test needs a statistic aimed at the head of each page (where Brunschwig's
-       link lives) or position-resolved picture features, pre-registered and calibrated on Brunschwig before it sees
-       V; these 91 pages have now been seen, so any further test on them is not independent of PHASE_780 (including
-       its line-interior companion).
+     plant names).
+     - Open: power is the limit; no fresh herbal population of comparable size exists (V-B2 has N = 20, another
+       hand). The head-of-page form was tried next (PHASE_781, below) and is weaker still; these 91 pages have now
+       been seen, so any further test on them is not independent of PHASE_780 (including its line-interior
+       companion).
+     - **Head of the page (PHASE_781): stopped at its pre-registered gate.** On the Brunschwig 1500 herbal, a
+       head-of-page text–picture test at 91 entries and the Voynich first-line lengths detected the herbal's own link
+       in at most 18% of samples (Wilson 13–24%; bar 85%). The Voynich first lines were not tested against the
+       drawings and remain unexposed. This is a fact about the test's power, not about the Voynich.
+     - **Next for this route:** the PHASE_780/781 statistic family does not reach the 85% bar against Brunschwig
+       1500's link at N = 91 in the whole-page form (0.61, an upper bound; C2098) or the first-line form (at most
+       0.18); it is powered only against dense planted descriptors (C2098: 80% at about one descriptor per coded
+       feature per page). No more hand-1 herbal pages exist (V-B2: hand 2, N = 20). A further test needs a different
+       statistic with its own power gate. If the statistic is chosen after seeing Brunschwig's ablations, the gate
+       must use an illustrated herbal other than Brunschwig 1500, and should first show that any statistic reaches the
+       bar at N = 91. One untested candidate: a statistic aimed at links concentrated in a few page pairs (for example
+       nearest-neighbour retrieval), which covers only naming systems that share name parts.
+     - PHASE_780 and PHASE_781 are the planned family of text–picture tests on these 91 pages; the family bound
+       (≤ 0.02 for at least one false positive) has been spent only by PHASE_780. Exposure record: whole-page text
+       exposed (C2098 and its companions, including the line-interior value); first lines unexposed. Any further test
+       on these pages must be justified on controls and carry the family bound.
    - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
      kind).
      - PHASE_773 (the figures against medieval per-degree tables) stopped at design. The blind-coded attributes vary by
@@ -6795,6 +6814,23 @@ When certifying power with planted effects for a "target units vs matched contro
 **Why:** a plant that shifts controls too measures the plant's side-effects, not the test's power; certification then fails for design reasons and the arm loses its ability to kill.
 
 […trimmed — full note: memory/feedback_plant_must_not_move_controls.md]
+
+---
+
+## feedback-positive-control-shows-where-link-lives
+
+*"Run a matched real-genre positive control with ablations BEFORE trusting a text-vs-external null, and gate any narrowed statistic on it at target size (PHASE_781 head-only 0.18): in PHASE_780 a real illustrated herbal (Brunschwig 1500) was detected only 61% of the time at Voynich size, and its link ran through plant names at the head of each entry, not through form description. Also: agent coding pipelines need masked images, transcript audits and an eye check of reused blocks."*
+
+PHASE_780 (2026-10-04) tested whether the 91 hand-1 herbal pages' text co-varies with their blind-coded drawings. The
+locked result was NOT DETECTED (unpowered): T1 Z +0.73, T2 Z +0.11 against z* 2.957. The decisive design element was
+the positive control: Brunschwig 1500's illustrated herbal, coded by the same agents, matched on features, coding
+reliability and page lengths. Its own text–picture link was detected in only 61% of 95-entry samples, and ablations
+showed it lives in the plant names at the head of each entry (uses only 0.14, names masked 0.27, random window 0.01).
+
+**Why:** without the control, a null on V would have read as "the text does not describe its pictures". The control
+showed the statistic mainly detects naming at the head of an entry, and that even a real herbal sits below the 0.85
+
+[…trimmed — full note: memory/feedback_positive_control_shows_where_link_lives.md]
 
 ---
 

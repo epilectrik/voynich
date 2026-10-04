@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-10-04 08:59
+**Generated:** 2026-10-04 13:47
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -44,7 +44,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 1. Current Status Brief (read first; overrides older documents)
 2. All Constraints
 3. All Explanatory Fits
-4. Session Methodology Notes (65 feedback rules)
+4. Session Methodology Notes (66 feedback rules)
 
 ---
 
@@ -133,6 +133,10 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     61% of samples (an upper bound), and that link runs mostly through plant names at the head of each entry.
   - It bears only on links at least that strong. It is not evidence that the text is unrelated to the drawings or
     content-free, and it does not extend C137/C138/C140 to Currier A.
+  - PHASE_781 stopped at its pre-registered gate: on the Brunschwig 1500 herbal, a head-of-page text–picture test
+    at 91 entries and the Voynich first-line lengths detected the herbal's own link in at most 18% of samples
+    (Wilson 13–24%; bar 85%). The Voynich first lines were not tested against the drawings and remain unexposed.
+    This is a fact about the test's power, not about the Voynich. No constraint row.
 - **Zodiac labels are not a repeated per-sign set** (C2090, PHASE_772; ZL; partly unblinded).
   - Most labels occur in no other sign: 77% at N1, 65% at N2. A 1–30 set repeated in every sign (degree or day
     numbers) is excluded under the modelled spelling variation.
@@ -3020,6 +3024,23 @@ When certifying power with planted effects for a "target units vs matched contro
 **Why:** a plant that shifts controls too measures the plant's side-effects, not the test's power; certification then fails for design reasons and the arm loses its ability to kill.
 
 […trimmed — full note: memory/feedback_plant_must_not_move_controls.md]
+
+---
+
+## feedback-positive-control-shows-where-link-lives
+
+*"Run a matched real-genre positive control with ablations BEFORE trusting a text-vs-external null, and gate any narrowed statistic on it at target size (PHASE_781 head-only 0.18): in PHASE_780 a real illustrated herbal (Brunschwig 1500) was detected only 61% of the time at Voynich size, and its link ran through plant names at the head of each entry, not through form description. Also: agent coding pipelines need masked images, transcript audits and an eye check of reused blocks."*
+
+PHASE_780 (2026-10-04) tested whether the 91 hand-1 herbal pages' text co-varies with their blind-coded drawings. The
+locked result was NOT DETECTED (unpowered): T1 Z +0.73, T2 Z +0.11 against z* 2.957. The decisive design element was
+the positive control: Brunschwig 1500's illustrated herbal, coded by the same agents, matched on features, coding
+reliability and page lengths. Its own text–picture link was detected in only 61% of 95-entry samples, and ablations
+showed it lives in the plant names at the head of each entry (uses only 0.14, names masked 0.27, random window 0.01).
+
+**Why:** without the control, a null on V would have read as "the text does not describe its pictures". The control
+showed the statistic mainly detects naming at the head of an entry, and that even a real herbal sits below the 0.85
+
+[…trimmed — full note: memory/feedback_positive_control_shows_where_link_lives.md]
 
 ---
 

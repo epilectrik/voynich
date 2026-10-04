@@ -81,6 +81,10 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
     61% of samples (an upper bound), and that link runs mostly through plant names at the head of each entry.
   - It bears only on links at least that strong. It is not evidence that the text is unrelated to the drawings or
     content-free, and it does not extend C137/C138/C140 to Currier A.
+  - PHASE_781 stopped at its pre-registered gate: on the Brunschwig 1500 herbal, a head-of-page text–picture test
+    at 91 entries and the Voynich first-line lengths detected the herbal's own link in at most 18% of samples
+    (Wilson 13–24%; bar 85%). The Voynich first lines were not tested against the drawings and remain unexposed.
+    This is a fact about the test's power, not about the Voynich. No constraint row.
 - **Zodiac labels are not a repeated per-sign set** (C2090, PHASE_772; ZL; partly unblinded).
   - Most labels occur in no other sign: 77% at N1, 65% at N2. A 1–30 set repeated in every sign (degree or day
     numbers) is excluded under the modelled spelling variation.

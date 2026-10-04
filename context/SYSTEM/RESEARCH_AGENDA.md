@@ -137,17 +137,27 @@ text made to look meaningful? And, if it carries content, what content?
    - **Herbal pages, whole-page features (PHASE_780, C2098): NOT DETECTED (unpowered).** Blind two-set coding of the
      91 hand-1 herbal drawings against page text, with drift, quire, sheet, layout, spelling-dial and style controls
      and a matched Brunschwig 1500 positive control (genre power 0.61, an upper bound; its link runs mostly through
-     plant names at the head of each entry).
-     - Open: power is the limit, not the design; no fresh herbal population of comparable size exists (V-B2 has
-       N = 20, another hand). A stronger test needs a statistic aimed at the head of each page (where Brunschwig's
-       link lives) or position-resolved picture features, pre-registered and calibrated on Brunschwig before it sees
-       V; these 91 pages have now been seen, so any further test on them is not independent of PHASE_780 (including
-       its line-interior companion).
-     - **Head of the page (PHASE_781, in progress):** first lines and first words against the same codes, gated on a
-       Brunschwig go/no-go (genre power ≥ 0.85 at 91 entries) before any Voynich first-line statistic is computed.
-       PHASE_780 and PHASE_781 are the planned family of text–picture tests on these 91 pages; the chance that at
-       least one returns a false positive is ≤ 0.02. Any further test on these pages must be justified on controls
-       and carry the family bound.
+     plant names).
+     - Open: power is the limit; no fresh herbal population of comparable size exists (V-B2 has N = 20, another
+       hand). The head-of-page form was tried next (PHASE_781, below) and is weaker still; these 91 pages have now
+       been seen, so any further test on them is not independent of PHASE_780 (including its line-interior
+       companion).
+     - **Head of the page (PHASE_781): stopped at its pre-registered gate.** On the Brunschwig 1500 herbal, a
+       head-of-page text–picture test at 91 entries and the Voynich first-line lengths detected the herbal's own link
+       in at most 18% of samples (Wilson 13–24%; bar 85%). The Voynich first lines were not tested against the
+       drawings and remain unexposed. This is a fact about the test's power, not about the Voynich.
+     - **Next for this route:** the PHASE_780/781 statistic family does not reach the 85% bar against Brunschwig
+       1500's link at N = 91 in the whole-page form (0.61, an upper bound; C2098) or the first-line form (at most
+       0.18); it is powered only against dense planted descriptors (C2098: 80% at about one descriptor per coded
+       feature per page). No more hand-1 herbal pages exist (V-B2: hand 2, N = 20). A further test needs a different
+       statistic with its own power gate. If the statistic is chosen after seeing Brunschwig's ablations, the gate
+       must use an illustrated herbal other than Brunschwig 1500, and should first show that any statistic reaches the
+       bar at N = 91. One untested candidate: a statistic aimed at links concentrated in a few page pairs (for example
+       nearest-neighbour retrieval), which covers only naming systems that share name parts.
+     - PHASE_780 and PHASE_781 are the planned family of text–picture tests on these 91 pages; the family bound
+       (≤ 0.02 for at least one false positive) has been spent only by PHASE_780. Exposure record: whole-page text
+       exposed (C2098 and its companions, including the line-interior value); first lines unexposed. Any further test
+       on these pages must be justified on controls and carry the family bound.
    - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
      kind).
      - PHASE_773 (the figures against medieval per-degree tables) stopped at design. The blind-coded attributes vary by

@@ -49,7 +49,7 @@ head of each entry.
 |---|---|
 | Main (first n words, V page lengths) | 0.61 (Wilson 0.54–0.68) |
 | Uses only (names and description removed) | 0.14 |
-| Plant names masked | 0.27 |
+| Plant names masked | 0.27 [PHASE_781: this mask matched full stems only and left 20 of 121 first words (names printed without their decorated initial) in place; 0.27 and its ratio 0.73 overstate the effect of masking; not re-run] |
 | Half length | 0.24 |
 | Word code in Voynich forms, one spelling per word | 0.42 |
 | Word code in Voynich forms, four spellings per word | 0.15 |
@@ -58,7 +58,7 @@ head of each entry.
 **What the null can show** (from the binary verdict, as pre-registered; each row compares a link of that kind with
 no link, and is not an update on the three-way odds): a non-detection lowers a names-headed herbal at one word per token
 at most by a factor of about 0.4; a word code in Voynich forms with one spelling per word by about 0.58 (a moderate
-update); names masked 0.73; half length 0.76; a word code with four spellings per word 0.85; uses-only text 0.86; a
+update); names masked 0.73 [overstated; see the names-masked row]; half length 0.76; a word code with four spellings per word 0.85; uses-only text 0.86; a
 random window 0.99. These ratios are not sharpened by placing the observed Z within Brunschwig's distribution (that
 would choose a stronger statistic after seeing the result).
 
