@@ -1,0 +1,92 @@
+{
+ "z_star_br_head": 2.385528793334961,
+ "z_settings": {
+  "z_markov": {
+   "n": 2000,
+   "q99": 2.385528793334961,
+   "q99_upper90_descriptive": 2.4660269784927364
+  },
+  "z_quire": {
+   "n": 2000,
+   "q99": 2.305384106636047,
+   "q99_upper90_descriptive": 2.336197555065155
+  }
+ },
+ "gate_bar": 0.85,
+ "rows": {
+  "main": {
+   "n": 200,
+   "genre_power": 0.18,
+   "wilson95": [
+    0.1329455066253411,
+    0.2391159371623843
+   ],
+   "power_at_2.957_forecast": 0.045,
+   "Zmax_median": 1.5914061665534973,
+   "per_measure_power": {
+    "H1": 0.115,
+    "H2": 0.09
+   },
+   "name_stem_present_share": 0.9013736263736266
+  },
+  "names_masked": {
+   "n": 200,
+   "genre_power": 0.01,
+   "wilson95": [
+    0.0027466006037749346,
+    0.03572248519617954
+   ],
+   "power_at_2.957_forecast": 0.0,
+   "Zmax_median": 0.7005385458469391,
+   "per_measure_power": {
+    "H1": 0.01,
+    "H2": 0.0
+   }
+  },
+  "body_window": {
+   "n": 200,
+   "genre_power": 0.02,
+   "wilson95": [
+    0.007804300176394187,
+    0.05028786550519387
+   ],
+   "power_at_2.957_forecast": 0.005,
+   "Zmax_median": 0.36668209731578827,
+   "per_measure_power": {
+    "H1": 0.015,
+    "H2": 0.005
+   }
+  },
+  "rubric_included": {
+   "n": 200,
+   "genre_power": 0.09,
+   "wilson95": [
+    0.05768697871453362,
+    0.13776674613848955
+   ],
+   "power_at_2.957_forecast": 0.01,
+   "Zmax_median": 1.4049144387245178,
+   "per_measure_power": {
+    "H1": 0.08,
+    "H2": 0.025
+   }
+  },
+  "first_nonmodifier": {
+   "n": 200,
+   "genre_power": 0.18,
+   "wilson95": [
+    0.1329455066253411,
+    0.2391159371623843
+   ],
+   "power_at_2.957_forecast": 0.08,
+   "Zmax_median": 1.581209123134613,
+   "per_measure_power": {
+    "H1": 0.135,
+    "H2": 0.09
+   }
+  }
+ },
+ "entries_first_word_modifier": 11,
+ "n_entries": 121,
+ "gate": "STOP (head-of-page test not powered at Brunschwig strength at this size)"
+}
