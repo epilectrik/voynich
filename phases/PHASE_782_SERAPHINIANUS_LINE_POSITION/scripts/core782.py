@@ -466,8 +466,12 @@ def zone_terms(f, z, nsym):
     by_zone = t.sum(1)                                  # R x 3
     by_unit = t[0].sum(1)
     tot = by_unit.sum()
+    unit_ex = t[0].sum(1) - t[1:].sum(2).mean(0)       # per-unit excess; sums to the chunk excess
+    ex = unit_ex.sum()
     return {'zone_excess': (by_zone[0] - by_zone[1:].mean(0)).tolist(),
-            'top_unit_share': float(by_unit.max() / tot) if tot > 0 else float('nan')}
+            'top_unit_excess_bits': float(unit_ex.max()),
+            'top_unit_share_of_excess': float(unit_ex.max() / ex) if ex > 0 else float('nan'),
+            'top_unit_share_of_observed_mi': float(by_unit.max() / tot) if tot > 0 else float('nan')}
 
 
 # ------------------------------------------------------------------------------------------------ comparison
