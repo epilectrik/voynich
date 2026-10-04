@@ -1,0 +1,48 @@
+{
+ "L": 30,
+ "B_clean_median": 0.2335432247066857,
+ "B_heavy_median": 0.10444964585452335,
+ "rungs": {
+  "0.01": {
+   "p": 0.123046875,
+   "n": 50,
+   "planted_median": 0.00813689625645779,
+   "NOT_REACHED": 0.62,
+   "REACHED": 0.0,
+   "UNRESOLVED": 0.38
+  },
+  "0.02": {
+   "p": 0.203125,
+   "n": 50,
+   "planted_median": 0.020066676342182344,
+   "NOT_REACHED": 0.0,
+   "REACHED": 0.0,
+   "UNRESOLVED": 1.0
+  },
+  "0.04": {
+   "p": 0.306640625,
+   "n": 50,
+   "planted_median": 0.04017197262580488,
+   "NOT_REACHED": 0.0,
+   "REACHED": 0.0,
+   "UNRESOLVED": 1.0
+  },
+  "0.08": {
+   "p": 0.470703125,
+   "n": 50,
+   "planted_median": 0.08259833202501304,
+   "NOT_REACHED": 0.0,
+   "REACHED": 0.0,
+   "UNRESOLVED": 1.0
+  },
+  "0.15": {
+   "p": 0.681640625,
+   "n": 50,
+   "planted_median": 0.15434739909010875,
+   "NOT_REACHED": 0.0,
+   "REACHED": 0.0,
+   "UNRESOLVED": 1.0
+  }
+ },
+ "runtime_s": 925.6
+}

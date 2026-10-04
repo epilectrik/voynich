@@ -1,9 +1,9 @@
 # PHASE_782 — Line position and the first glyph: Currier B against a book-length pseudo-script (Codex Seraphinianus) (pre-registration)
 
-**Status: v3 for the lock. v1 → v2 after the lean-expert design audit (LOCKABLE AFTER EDITS; E1–E10, N1–N8);
-v2 → v3 after calibration on controls and the expert-advisor's interpretive check (amendments A1–A7 below). Nothing
-that conditions on line position has been computed on the real Codex order. Next: the lean-expert confirmation pass,
-checksums, the lock tag `phase782-lock`, one run.**
+**Status: v4 for the lock. v1 → v2 after the lean-expert design audit (LOCKABLE AFTER EDITS; E1–E10, N1–N8);
+v2 → v3 after calibration on controls and the expert-advisor's interpretive check (A1–A7); v3 → v4 after the
+lean-expert confirmation pass (LOCKABLE AFTER EDITS; A8–A10). Nothing that conditions on line position has been
+computed on the real Codex order. Next: checksums, the lock tag `phase782-lock`, one run.**
 
 ## Origin
 - PHASE_764 (human gibberish, MIXED / UNRESOLVED): its strongest contrast was descriptive. B's dependence of a word's
@@ -86,7 +86,10 @@ B is therefore also run **degraded to OCR-like noise** before chunking: adjacent
 probability m, each word split at a random internal unit boundary with probability s, each unit substituted with
 probability q (E7: a word's first unit from B's zone-pooled first-unit marginal; other units from the all-unit
 marginal); line positions are re-read after the noise.
-- clean: q = 0; matched: q = 0.18, s = m = 0.02; heavy: q = 0.30, s = m = 0.05.
+- clean: q = 0; matched: q = 0.18, s = m = 0.02; heavy: q = 0.30, s = m = 0.05. A redraw can return the same unit,
+  so the effective change rates are lower (B's first-unit Σp² 0.136, all-unit 0.087): heavy changes about 0.26 of
+  first units and 0.27 of other units; "matched" about 0.16 of each, slightly below the reported 0.18 character
+  error, so it is a label, not a match (A8).
 - **Assumption (stated, unverifiable):** independent substitution shrinks the zone contrast by (1 − q); it is
   conservative against real OCR confusions unless those confusions merge exactly the distinctions that carry zone
   information.
@@ -168,17 +171,18 @@ unless the locked run script sets its run flag.
 ## Templates (E9, revised at A5)
 - **NOT REACHED:** "Currier B's dependence of a word's first glyph unit on its line position (initial, medial, final)
   exceeds that of the body prose of the Codex Seraphinianus, a book-length pseudo-script its author described as
-  having no meaning, in Ponzi's machine transliteration (AUC {a}, 95% block-bootstrap interval {lo}–{hi}; B degraded
-  by simulated noise: first-unit substitution 0.30 against a reported character error of about 0.18, splits and
-  merges 0.05; also with the Codex's first unit read as two characters). This confirms, at book scale and against a
-  designed pseudo-script with original line breaks, the descriptive contrast PHASE_764 found against volunteer
-  gibberish. One book by one modern artist, laid out like print: this does not show that invented, practised or
+  having no meaning, in Ponzi's machine transliteration (first unit as one character: AUC {a1}, 95% block-bootstrap
+  interval {lo1}–{hi1}; read as two characters: AUC {a2}, {lo2}–{hi2}; B degraded by simulated noise: each unit
+  redrawn with probability 0.30, about 0.26 of first units changed, against a reported character error of about
+  0.18; splits and merges 0.05). This agrees in direction, at book scale and against a designed pseudo-script with
+  original line breaks, with the descriptive contrast PHASE_764 found against volunteer gibberish. One book by one modern artist, laid out like print: this does not show that invented, practised or
   medieval scribal writing in general falls below B, and it is not a test of meaning (meaningful text with original
   line breaks enters only descriptively, as one printed book and one medieval manuscript)."
 - **REACHED:** "The body prose of the Codex Seraphinianus, a book-length pseudo-script by one modern artist, reaches
   Currier B's dependence of the first unit on line position in Ponzi's machine transliteration (AUC {a} against
-  noise-free B, 95% block-bootstrap interval {lo}–{hi}; also with probable transliteration fragments and
-  one-character tokens removed; the share carried by the Codex's most zone-specific unit is {x}). This statistic
+  noise-free B, 95% block-bootstrap interval {lo}–{hi}; with probable transliteration fragments and one-character
+  tokens removed, AUC {ag}, {log}–{hig}; the share of the Codex's excess carried by its most zone-specific unit is
+  {x}). This statistic
   therefore does not separate B from at least one book-length pseudo-script, and PHASE_764's descriptive contrast with
   volunteer gibberish no longer counts against meaningless production. Not evidence that B is meaningless or was
   produced this way."
@@ -191,8 +195,12 @@ unit on its line zone. B's own level is already known; the result places the Cod
 only through one question: can meaningless writing at book scale produce B-level line-position dependence? REACHED
 answers yes for one book. PHASE_764's descriptive contrast then stops counting against made-for-show writing
 (likelihood ratio about 1.25 for made-for-show against the other two readings; odds 34/51/15 move to about
-39/47/14). NOT REACHED answers no for one modern artist imitating print. Medieval scribal conventions are untested on
-this statistic, so it is weak evidence against made-for-show (ratio about 0.85; odds move to about 30/54/16). Neither
+39/47/14). NOT REACHED answers no for one modern artist imitating print. Medieval scribal conventions are tested only
+descriptively on one Latin manuscript of c. 1200 (Aberdeen Bestiary: excess 0.007 bits, AUC against its own
+within-line shuffle 0.52, interval 0.40–0.63; 38% of lines eligible, since lines with words broken across their ends
+are dropped, which removes exactly where line-end space management would show), so it is weak evidence against
+made-for-show (ratio about 0.80, range 0.70–0.90; odds move to about 29/55/16). Under notation or hidden text the
+ratios imply P(REACHED) / P(NOT REACHED) ≈ 0.8, which the expert-advisor confirmed as intended. Neither
 result bears on hidden running text beyond a ratio of about 1, and neither is a test of meaning. UNRESOLVED moves
 nothing. Descriptives (the two anchors, zone contributions, per-section B) can qualify these figures but not change
 them. Any reading of B's excess as line-level organisation is an echo-class claim, left to the human. (These are
@@ -202,7 +210,9 @@ interpretation.)
 ## Amendments before the lock (A1–A7)
 - **A1 (E6 permitted revision, chosen on controls only): L = 30, K = 60.** At L = 40 every certification passed except
   C4b: REACHED fired in 0.605 of 200 planted replicates (raw condition 0.905, guarded 0.640, the binding one; B had 46
-  chunks). At L = 30 all pass (table below). Raw units stay primary; R = 500. L = 40 and L = 60 become sensitivities;
+  chunks). Only L = 30 was tried: L = 60 gives fewer chunks, and top-8 binning or R = 1,000 cannot narrow the AUC
+  interval at a planted AUC near 0.50. At L = 30 all pass (table below). The cost is NOT REACHED's reach (C3 lower
+  bound 0.875 → 0.812; C4a minimum 0.86 → 0.83); the plant ladder (A9) maps the resulting UNRESOLVED band. Raw units stay primary; R = 500. L = 40 and L = 60 become sensitivities;
   the interior variant uses K = L. The configuration enters the run from the lock file.
 - **A2 (counts under the final parser):** short lines 423 (lines following a short line in the same block, excluded:
   211; the paragraph-first analogue is 1,188 block-first + 211 = 1,399 lines); wide blocks 136 (764 lines); lines above
@@ -225,6 +235,50 @@ interpretation.)
   per-chunk symbol count (top-8 variant: 7 per chunk plus OTHER); the run script's L sensitivities are the two values
   not chosen; descriptive S1 at the configured L.
 
+- **A8 (lean-expert confirmation pass, LOCKABLE AFTER EDITS; all must-edits applied):** the lock file must list the
+  required files and the full configuration (L, K, units), asserted by the run script; a dry mode runs every code
+  path on the within-line-shuffled Codex, refuses to run with the run flag set, and was run to completion before the
+  lock (A10); the run writes `verdict782.json` after every stage; the top-unit share is computed on the excess (it
+  was on observed MI, which carries the plug-in bias); S4 adjacent repetition is implemented; eligibility, chunk and
+  guard edge-drop counts are reported per arm; the noise wording gives the effective change rates (above); in the
+  `<->` sensitivity, words beside a break are dropped only when medial (a break-adjacent word at a line edge is kept);
+  Python 3.11.4 and numpy 2.3.2 are recorded with the run.
+- **A9 (plant ladder, confirmation-pass S1):** on within-line-shuffled CS at L = 30, plants in zones I and F set to
+  target median excesses of 0.01, 0.02, 0.04, 0.08 and 0.15 bits, 50 replicates each, scored under the two-condition
+  rules (the opposite-label variants, which can only downgrade, not applied); `results/ladder782_L30.json`. They
+  pre-register where UNRESOLVED lies (B clean 0.234, B heavy 0.104 bits):
+
+  | Planted Codex median excess (bits) | NOT REACHED | REACHED | UNRESOLVED |
+  |---|---|---|---|
+  | 0.008 | 0.62 | 0 | 0.38 |
+  | 0.020 | 0 | 0 | 1.00 |
+  | 0.040 | 0 | 0 | 1.00 |
+  | 0.083 | 0 | 0 | 1.00 |
+  | 0.154 | 0 | 0 | 1.00 |
+  | 0.232 (C4b, B clean's level) | 0 | 1.00 | 0 |
+
+  NOT REACHED therefore needs a Codex with essentially no line-position dependence (about 0.01 bits or less); a Codex
+  anywhere from about 0.02 to at least 0.15 bits (the Brunschwig print sits at 0.04) returns UNRESOLVED. This is the
+  conservative design the audit cleared (heavy-noise B, lower bound 0.80), written down before the run. The L = 40
+  comparison ladder was not run.
+- **A10 (dry run):** `run782.py --dry` ran to completion on the within-line-shuffled Codex (`results/dryrun/`, 1,030
+  s); every stage executed without error; on a Codex without line dependence it returned NOT REACHED in the primary,
+  in all three opposite-label variants and in all eleven sensitivities. The top-unit share of the excess is unstable
+  when a chunk's excess is near zero (0.97 on the shuffled Codex); it is quoted only in the REACHED template.
+
+## Crash rule
+A crash after the verdict is logged leaves the verdict standing: only the failing non-verdict code may be fixed, in a
+recorded post-lock commit that names the change and the new checksum, and the failing stage is rerun with the same
+seeds. A crash before the verdict is logged allows a fix of the failing code only, in a recorded post-lock commit, and
+a complete rerun with the same seeds; the primary must reproduce exactly (it is deterministic) or the phase stops.
+
+## Exposure record, addition (E10)
+The within-line shuffle keeps excluded tokens at their real positions, so the shuffled-Codex chunk and eligibility
+counts already seen reflect the real Codex's line-edge readability: 180 raw and 140 guarded chunks at L = 30 (136
+and 91 at L = 40; 5,607 eligible lines at L = 40 in the first smoke test). These are aggregates, not counts by cause
+and not conditioned on first units. The real guarded chunk count can differ (the guard depends on which word sits at
+an edge).
+
 ## Calibration results (B and within-line-shuffled CS only)
 | Check | L = 40 | L = 30 (adopted) | Bar |
 |---|---|---|---|
@@ -237,8 +291,8 @@ interpretation.)
 | C5 guard, truncation 0.05 / 0.10 / 0.20 and splits 0.05 | all inside the null band | all inside | inside central 90% |
 | C5 unguarded truncation 0.20, as share of B clean | 0.18 | 0.16 | reported |
 | C4b REACHED firing rate (plant p, matched to B clean's median) | 0.605 (p 0.845) | 1.00 (p 0.857) | ≥ 0.80 |
-| Brunschwig 1500 print: median excess; AUC B clean vs print | 0.039; 0.97 | 0.048; 0.95 | descriptive |
-| Aberdeen Bestiary: median excess; AUC vs its own shuffle; AUC B clean vs Aberdeen | — | 0.007; 0.52; 0.98 | descriptive |
+| Brunschwig 1500 print: median excess; AUC B clean vs print | 0.039; 0.97 (calib782.json) | 0.042; 0.95 (calib782_L30.json; anchors782.json 0.048; 0.95, seed variation) | descriptive |
+| Aberdeen Bestiary (anchors782.json): median excess; AUC vs its own shuffle (95%); AUC B clean vs Aberdeen | — | 0.007; 0.52 (0.40–0.63); 0.98 (0.96–1.00); 38% of lines eligible | descriptive |
 
 ## Registry
 NOT REACHED or REACHED: one Tier-2 row (scope B, external control). UNRESOLVED: phase record and a STATUS_BRIEF line.
