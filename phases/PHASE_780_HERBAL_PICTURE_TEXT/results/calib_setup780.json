@@ -403,6 +403,24 @@
    "gen": "shared",
    "scale": 0.00146484375,
    "width": 32
+  },
+  "shared_w8_max": {
+   "gen": "shared",
+   "scale": 1.0,
+   "width": 8,
+   "supplementary": true
+  },
+  "shared_w16_max": {
+   "gen": "shared",
+   "scale": 1.0,
+   "width": 16,
+   "supplementary": true
+  },
+  "shared_w32_max": {
+   "gen": "shared",
+   "scale": 1.0,
+   "width": 32,
+   "supplementary": true
   }
  },
  "k1_fidelity": {
@@ -446,6 +464,27 @@
    "n_checks": 20,
    "allowed": 4,
    "passes": true
+  },
+  "shared_w8_max": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true,
+   "note": "largest grid scale passing the fidelity gate (1.0)"
+  },
+  "shared_w16_max": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true,
+   "note": "largest grid scale passing the fidelity gate (1.0)"
+  },
+  "shared_w32_max": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true,
+   "note": "largest grid scale passing the fidelity gate (1.0)"
   }
  },
  "k1_real_fidelity": {

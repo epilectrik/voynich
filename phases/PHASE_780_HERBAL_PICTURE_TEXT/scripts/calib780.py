@@ -862,6 +862,18 @@ def wilson(k, n, z=1.96):
     return ((c - h) / d, (c + h) / d)
 
 
+def q99_rule(z, n_full=N_K1_BIND, B=1000, seed=780_700_000):
+    """The pre-registered quantile: the 99th percentile if n >= 2,000, else the upper 90% bound of the 99th percentile
+    (bootstrap, B resamples)."""
+    z = np.asarray(z, float)
+    q = float(np.percentile(z, 99))
+    if len(z) >= n_full:
+        return q, q
+    rng = np.random.default_rng(seed)
+    bs = [np.percentile(rng.choice(z, len(z)), 99) for _ in range(B)]
+    return q, float(np.percentile(bs, 90))
+
+
 def stage_summary():
     S = json.load(open(RES / 'calib_setup780.json', encoding='utf-8'))
     rows = []
@@ -873,17 +885,17 @@ def stage_summary():
     for s in S['k1_settings']:
         z = np.array([r['Zmax'] for r in rows if r['kind'] == 'k1' and r['setting'] == s])
         if len(z):
-            q99 = float(np.percentile(z, 99))
-            out['k1'][s] = {'n': len(z), 'q99': q99, 'fidelity_pass': S['k1_fidelity'][s]['passes']}
+            q99, qrule = q99_rule(z)
+            out['k1'][s] = {'n': len(z), 'q99': q99, 'q99_rule': qrule, 'fidelity_pass': S['k1_fidelity'][s]['passes']}
             if S['k1_fidelity'][s]['passes']:
-                q[('k1', s)] = q99
+                q[('k1', s)] = qrule
     for s, p in S['k2_settings'].items():
         z = np.array([r['Zmax'] for r in rows if r['kind'] == 'k2' and r['setting'] == s])
         if len(z):
-            q99 = float(np.percentile(z, 99))
-            out['k2'][s] = {'n': len(z), 'q99': q99, 'counted': p['counted'], 'fp_at_q': None}
+            q99, qrule = q99_rule(z)
+            out['k2'][s] = {'n': len(z), 'q99': q99, 'q99_rule': qrule, 'counted': p['counted'], 'fp_at_q': None}
             if p['counted']:
-                q[('k2', s)] = q99
+                q[('k2', s)] = qrule
     any_pass = any(S['k1_fidelity'][s]['passes'] for s in S['k1_settings'])
     zstar = max(q.values()) if q else float('nan')
     out['z_star'] = zstar
@@ -914,7 +926,7 @@ def stage_summary():
     for g in ('markov', 'quire'):
         z = np.array([r['Zmax'] for r in rows if r['kind'] == 'k4z' and r['setting'] == g])
         if len(z):
-            zb[g] = float(np.percentile(z, 99))
+            zb[g] = q99_rule(z)[1]
     zstar_br = max(zb.values()) if zb else float('nan')
     thr = max(zstar, zstar_br)
     out['z_star_br'] = zstar_br

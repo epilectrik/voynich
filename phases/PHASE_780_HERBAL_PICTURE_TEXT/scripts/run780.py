@@ -167,7 +167,7 @@ def main():
         log(f"{m}: S {r['S']:+.4f}; z_local {r['z_local']:+.2f} (p {r['p_local']:.4f}); z_shift {r['z_shift']:+.2f}; Z {r['Z']:+.2f}; outside {outside[m]}")
     log(f"rule: {rule}; VERDICT: {verdict}; genre power {gp}; style-only note {style_only}")
     for k, v in desc.items():
-        if isinstance(v, dict) and 'T1' in v:
+        if isinstance(v, dict) and isinstance(v.get('T1'), dict):
             log(f"  {k}: " + '; '.join(f"{m} S {v[m]['S']:+.4f} Z {v[m]['Z']:+.2f}" for m in ('T1', 'T2')))
         else:
             log(f"  {k}: {v}")

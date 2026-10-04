@@ -1,8 +1,8 @@
 # PHASE_780 — Does the herbal text co-vary with its drawings? A blind picture test within one hand, with an illustrated herbal as positive control (pre-registration)
 
-**Status: DRAFT v2 after the lean-expert design audit (v1: LOCKABLE AFTER EDITS; all blocking items A1–A6, the adopted
-non-blocking items and the drops in C are incorporated; changes are listed at the end). Nothing below has been computed
-on the Voynich text–picture alignment. No image has been coded.**
+**Status: v3, FOR LOCK after the confirmation pass (design audit v1: LOCKABLE AFTER EDITS, all edits incorporated;
+pre-coding and pre-gate amendments 1–13; coding, gates and calibration complete, results below). Nothing has been
+computed on the Voynich text–picture alignment at k = 0.**
 
 **Origin.** STATUS_BRIEF and RESEARCH_AGENDA item 8 ("pictures and text, powered"): the earlier picture tests had
 n ≈ 30 and little power (VIS, ILL-TOP-1); the first powered test found no signal for one narrow design (C2084, label
@@ -187,6 +187,32 @@ comparable plants.
   types mapped by frequency rank onto V-A1 types, k = 1 and k = 4 interchangeable spellings, synthetic forms beyond
   V-A1's inventory spliced from V-A1 glyph units); (iv) a random window of n words instead of the first n; (v) the
   entry's own name stems masked.
+
+## Calibration results (pre-lock; `results/calib780.json`, `results/calib_setup780.json`)
+- **Gates.** V-A1 passes: all 10 content features enter (α 0.73–0.99, coverage ≥ 0.96), 5 organs; style: `fill`
+  (α 0.64); `line_weight` was coded identically everywhere and does not enter. Brunschwig passes: 9 content features
+  (`flower_colour` does not enter), style `shading`; 121 eligible entries after excluding 12 non-plant woodcuts
+  (107 eligible for the uses-only row). Shared features: the 9 content features; Brunschwig codes degraded to V's α on
+  7 of them (replacement rates 0.005–0.078).
+- **K1 (three nulls; 500 replicates each; 99th percentile of Z_rep):** Markov 2.32, quire 2.22, trend 2.46, shared
+  drift w8 / w16 / w32 1.95 / 2.09 / 2.25; supplementary maximum-strength shared drift (scale 1.0 at each width; 2.0
+  fails the fidelity gate) 2.20 / 2.34 / 1.95. Every generator passes its fidelity gate. The real lag-1 organ
+  agreement (0.367) is about the chance level.
+- **K2:** anchors text T1 0.0052, T2 0.0123, pictures 0.0073; contiguous sessions r 3.33 tokens/page, κ 0.34;
+  misbinding r 6.58, κ 0.71. With N-sheet: contiguous anchored 2.56 (500), misbinding anchored 2.52 (2,000), the 2×
+  settings 2.45 / 2.50. (With two nulls the misbinding control had given 3.51: amendment 13.)
+- **z\* = 2.957**: the contiguous-session control's upper 90% bound of its 99th percentile (500 replicates; point
+  2.557), the binding value under the rule for settings with fewer than 2,000 replicates. False-positive rate at z\*:
+  contiguous 0.006, misbinding 0.002. No fallback.
+- **K3 (power):** MDE80 = 1.0 descriptor token per page per entered feature for the exact and spelled plants (about 10
+  planted tokens on a page of ~83), 4.0 for the leaf-only plant; detection at r = 0.5 is 0.09–0.14.
+- **K4 (genre control):** z\*_BR 2.40 (Markov) / 2.26 (quire); threshold max(z\*, z\*_BR) = 2.957. **Main genre power
+  0.61** (Wilson 95% 0.54–0.68), **below 0.85**. Ablation rows: uses only 0.14; half length 0.24; word code in V forms
+  k = 1 0.415, k = 4 0.15; random window 0.01; names masked 0.27.
+- **Consequence, declared before the lock:** under the locked rules a not-outside result on V-A1 is NOT DETECTED
+  (unpowered): at this N and these page lengths the test detects the Brunschwig herbal's own text–picture link in only
+  about 60% of samples, and that link runs mostly through plant names at the head of each entry (uses-only 0.14,
+  names masked 0.27, random window 0.01). A positive result stays interpretable (false positives controlled at z\*).
 
 ## Verdicts (V-A1; applied in this order)
 1. **CODING FAILED** — the V-A1 coding fails the gate. No test.
