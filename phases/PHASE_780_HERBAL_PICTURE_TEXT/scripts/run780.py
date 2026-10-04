@@ -48,7 +48,7 @@ def sha256(p):
 
 
 def code_files():
-    return sorted(str(p) for p in K.CODE_DIR.glob(CODE_GLOB))
+    return sorted(str(p) for p in (K.DATA / 'codes').glob(CODE_GLOB))
 
 
 def checksums():

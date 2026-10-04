@@ -1,0 +1,130 @@
+{
+ "A_V_4": {
+  "status": "PASS",
+  "n_tool_calls": 56,
+  "violations": [],
+  "n_images": 27,
+  "n_coded": 27,
+  "missing": []
+ },
+ "A_V_1": {
+  "status": "PASS",
+  "n_tool_calls": 58,
+  "violations": [],
+  "n_images": 28,
+  "n_coded": 28,
+  "missing": []
+ },
+ "A_V_2": {
+  "status": "PASS",
+  "n_tool_calls": 58,
+  "violations": [],
+  "n_images": 28,
+  "n_coded": 28,
+  "missing": []
+ },
+ "A_V_3": {
+  "status": "PASS",
+  "n_tool_calls": 58,
+  "violations": [],
+  "n_images": 28,
+  "n_coded": 28,
+  "missing": []
+ },
+ "B_V_1": {
+  "status": "PASS",
+  "n_tool_calls": 58,
+  "violations": [],
+  "n_images": 28,
+  "n_coded": 28,
+  "missing": []
+ },
+ "B_V_2": {
+  "status": "PASS",
+  "n_tool_calls": 58,
+  "violations": [],
+  "n_images": 28,
+  "n_coded": 28,
+  "missing": []
+ },
+ "A_BR_1": {
+  "status": "PASS",
+  "n_tool_calls": 70,
+  "violations": [],
+  "n_images": 34,
+  "n_coded": 34,
+  "missing": []
+ },
+ "A_BR_2": {
+  "status": "PASS",
+  "n_tool_calls": 68,
+  "violations": [],
+  "n_images": 33,
+  "n_coded": 33,
+  "missing": []
+ },
+ "A_BR_3": {
+  "status": "PASS",
+  "n_tool_calls": 68,
+  "violations": [],
+  "n_images": 33,
+  "n_coded": 33,
+  "missing": []
+ },
+ "A_BR_4": {
+  "status": "PASS",
+  "n_tool_calls": 68,
+  "violations": [],
+  "n_images": 33,
+  "n_coded": 33,
+  "missing": []
+ },
+ "B_V_3": {
+  "status": "PASS",
+  "n_tool_calls": 58,
+  "violations": [],
+  "n_images": 28,
+  "n_coded": 28,
+  "missing": []
+ },
+ "B_V_4": {
+  "status": "PASS",
+  "n_tool_calls": 56,
+  "violations": [],
+  "n_images": 27,
+  "n_coded": 27,
+  "missing": []
+ },
+ "B_BR_1": {
+  "status": "PASS",
+  "n_tool_calls": 70,
+  "violations": [],
+  "n_images": 34,
+  "n_coded": 34,
+  "missing": []
+ },
+ "B_BR_2": {
+  "status": "PASS",
+  "n_tool_calls": 68,
+  "violations": [],
+  "n_images": 33,
+  "n_coded": 33,
+  "missing": []
+ },
+ "B_BR_3": {
+  "status": "PASS",
+  "n_tool_calls": 68,
+  "violations": [],
+  "n_images": 33,
+  "n_coded": 33,
+  "missing": []
+ },
+ "B_BR_4": {
+  "status": "PASS",
+  "n_tool_calls": 68,
+  "violations": [],
+  "n_images": 33,
+  "n_coded": 33,
+  "missing": []
+ }
+}

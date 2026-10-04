@@ -261,6 +261,16 @@ comparable plants.
 8. The locators' free-text notes are kept in `data/geometry.json` and are not used.
 9. **Non-plant woodcuts.** Brunschwig entries whose woodcut both coder sets mark `main_plant: no` (e.g. birds,
    beehives) are excluded before the gate; entries whose woodcut could not be located are excluded.
+10. **Text flags on Brunschwig crops (after coding, before the gate).** Six crops were flagged `text_visible` by at
+    least one set. Inspected by eye: four show faint mirror-image bleed-through from the other side of the leaf inside
+    the woodcut frame, one a small cutter's mark carved in the block, one nothing legible. None shows the entry's own
+    printed text or a name, and none can be re-cut without cutting the drawing. They are kept as coded (the v2 rule
+    "re-cut and re-code" presumed removable printed text). On the Voynich side, coders report residual writing inside
+    most masked outlines (166 of 182 codings), where text runs between stalks; it is unreadable to the coders and is
+    declared, not removed.
+11. **Code files** are copied into `data/codes/` (the loaders read them there) so the coded data are in the repository;
+    the coder transcripts were audited: 16 of 16 batches used only Read on their own batch file, codebook and images
+    and Write on their own output (`results/coder_audit780.json`).
 
 ## Changes from v1 (design audit)
 N-block replaced by N-local (exact, 10,000 permutations) and AND with N-shift (A1a); K1 a family of four generators with

@@ -49,7 +49,7 @@ def load_codes(corpus):
     key = json.load(open(DATA / 'key_code.json', encoding='utf-8'))
     out = {'A': {}, 'B': {}}
     for cset in 'AB':
-        for p in sorted(CODE_DIR.glob(f'codes_{cset}_{corpus}_*.json')):
+        for p in sorted((DATA / 'codes').glob(f'codes_{cset}_{corpus}_*.json')):
             for code, feats in json.load(open(p, encoding='utf-8')).items():
                 code = Path(code).stem
                 if code in key and key[code]['corpus'] == corpus:
