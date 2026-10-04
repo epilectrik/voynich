@@ -294,6 +294,9 @@ comparable plants.
     "re-cut and re-code" presumed removable printed text). On the Voynich side, coders report residual writing inside
     most masked outlines (166 of 182 codings), where text runs between stalks; it is unreadable to the coders and is
     declared, not removed.
+11. **Code files** are copied into `data/codes/` (the loaders read them there) so the coded data are in the repository;
+    the coder transcripts were audited: 16 of 16 batches used only Read on their own batch file, codebook and images
+    and Write on their own output (`results/coder_audit780.json`).
 12. **Supplementary drift settings (from the setup's picture-only output, before any replicate result).** The real
     drawings' lag-1 organ agreement (0.367) is at about the chance level, so matching it sets the trend and
     shared-drift scales to ~0 and those generators inject no drift. Added: for the shared-drift generator at w = 8, 16
@@ -309,9 +312,7 @@ comparable plants.
     becomes p_local and p_sheet ≤ 0.005. All K1–K3 replicates are rerun with the same seeds (each replicate's data
     are identical; only the extra null is added); the two-null results are archived in `results/archive_two_null/`.
     Brunschwig has no bifolia; its decisions keep N-local and N-shift.
-11. **Code files** are copied into `data/codes/` (the loaders read them there) so the coded data are in the repository;
-    the coder transcripts were audited: 16 of 16 batches used only Read on their own batch file, codebook and images
-    and Write on their own output (`results/coder_audit780.json`).
+14. **Reused woodcut blocks (before coding).** Hand-colouring differs between copies of a reused block, so the hash rule alone is unreliable (its one 9x8-hash pair 87/134 was two different woodcuts). Candidate pairs from a 16x16 difference hash on the inner 80% of each crop (ranks 1–24) and the 9x8 hash were confirmed or rejected by eye on side-by-side crops; 8 confirmed groups keep one entry each (seeded); `data/br_duplicates.json`.
 
 ## Changes from v1 (design audit)
 N-block replaced by N-local (exact, 10,000 permutations) and AND with N-shift (A1a); K1 a family of four generators with
