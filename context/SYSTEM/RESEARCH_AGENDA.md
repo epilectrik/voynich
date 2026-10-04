@@ -143,6 +143,11 @@ text made to look meaningful? And, if it carries content, what content?
        link lives) or position-resolved picture features, pre-registered and calibrated on Brunschwig before it sees
        V; these 91 pages have now been seen, so any further test on them is not independent of PHASE_780 (including
        its line-interior companion).
+     - **Head of the page (PHASE_781, in progress):** first lines and first words against the same codes, gated on a
+       Brunschwig go/no-go (genre power ≥ 0.85 at 91 entries) before any Voynich first-line statistic is computed.
+       PHASE_780 and PHASE_781 are the planned family of text–picture tests on these 91 pages; the chance that at
+       least one returns a false positive is ≤ 0.02. Any further test on these pages must be justified on controls
+       and carry the family bound.
    - **The zodiac crib** (PHASE_772, C2090): the labels are not a repeated per-sign set (no numeral crib of the simple
      kind).
      - PHASE_773 (the figures against medieval per-degree tables) stopped at design. The blind-coded attributes vary by
