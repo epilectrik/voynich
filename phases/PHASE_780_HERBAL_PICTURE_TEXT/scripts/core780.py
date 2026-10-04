@@ -416,7 +416,7 @@ def shift_perms(n, kmin=3):
 N_LOCAL = 10_000
 
 
-def decide(engine, blocks, rng, n_local=N_LOCAL, identity=None):
+def decide(engine, blocks, rng, n_local=N_LOCAL, identity=None, sheet_blocks=None):
     """Observed S (at the given base alignment `identity`, default the identity) with its N-local and N-shift nulls;
     returns per measure S, z_local, p_local, z_shift and Z = min(z_local, z_shift), plus Zmax over measures.
     The base alignment is a permutation applied before the nulls (used by the controls)."""
@@ -427,6 +427,10 @@ def decide(engine, blocks, rng, n_local=N_LOCAL, identity=None):
     loc = engine.stats_batched(base[L])
     Sh = shift_perms(n)
     sh = engine.stats_batched(base[Sh])
+    sht = None
+    if sheet_blocks is not None:            # N-sheet (amendment 13): permutation within bifolium
+        Ls = local_perms(sheet_blocks, n_local, rng)
+        sht = engine.stats_batched(base[Ls])
     out = {}
     for m in engine.measures:
         s = float(obs[m][0])
@@ -434,8 +438,24 @@ def decide(engine, blocks, rng, n_local=N_LOCAL, identity=None):
         zs = (s - sh[m].mean()) / sh[m].std(ddof=1)
         out[m] = {'S': s, 'z_local': float(zl), 'p_local': float((1 + (loc[m] >= s).sum()) / (1 + len(loc[m]))),
                   'z_shift': float(zs), 'Z': float(min(zl, zs))}
+        if sht is not None:
+            zsh = (s - sht[m].mean()) / sht[m].std(ddof=1)
+            out[m]['z_sheet'] = float(zsh)
+            out[m]['p_sheet'] = float((1 + (sht[m] >= s).sum()) / (1 + len(sht[m])))
+            out[m]['Z'] = float(min(zl, zs, zsh))
     out['Zmax'] = max(out[m]['Z'] for m in engine.measures)
     out['pmin_local'] = min(out[m]['p_local'] for m in engine.measures)
+    return out
+
+
+def v_sheets(pages):
+    """Bifolium id per page (the smaller of the leaf and its conjugate)."""
+    special = {87: 90, 90: 87, 93: 96, 96: 93, 94: 95, 95: 94}
+    out = []
+    for p in pages:
+        l = p['leaf']
+        c = special.get(l, conjugate(l, (l - 1) // 8 * 8 + 1))
+        out.append(f"sheet_{min(l, c)}")
     return out
 
 

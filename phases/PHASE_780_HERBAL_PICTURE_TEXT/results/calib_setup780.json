@@ -1,0 +1,525 @@
+{
+ "v_gate": {
+  "features": {
+   "root_form": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7280364643846635,
+    "coverage": 0.989010989010989,
+    "n_pairable": 90,
+    "pct_agree": 0.8111111111111111,
+    "enters": true
+   },
+   "root_size": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.8028393097540081,
+    "coverage": 0.989010989010989,
+    "n_pairable": 90,
+    "pct_agree": 0.9,
+    "enters": true
+   },
+   "stem_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.866133261615007,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.9120879120879121,
+    "enters": true
+   },
+   "leaf_type": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7924528301886792,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.8791208791208791,
+    "enters": true
+   },
+   "leaf_size": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.7350984566258648,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.7912087912087912,
+    "enters": true
+   },
+   "leaf_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.8870726229099077,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.8901098901098901,
+    "enters": true
+   },
+   "flowers": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.8256801497049087,
+    "coverage": 0.9560439560439561,
+    "n_pairable": 87,
+    "pct_agree": 0.9195402298850575,
+    "enters": true
+   },
+   "flower_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.9862052656471701,
+    "coverage": 0.967032967032967,
+    "n_pairable": 88,
+    "pct_agree": 0.9772727272727273,
+    "enters": true
+   },
+   "flower_colour": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.8954867332138896,
+    "coverage": 0.967032967032967,
+    "n_pairable": 88,
+    "pct_agree": 0.9204545454545454,
+    "enters": true
+   },
+   "habit": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7364077669902912,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.967032967032967,
+    "enters": true
+   },
+   "fill": {
+    "block": "style",
+    "type": "ordinal",
+    "alpha": 0.6378551420568228,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 0.8351648351648352,
+    "enters": true
+   },
+   "line_weight": {
+    "block": "style",
+    "type": "ordinal",
+    "alpha": NaN,
+    "coverage": 1.0,
+    "n_pairable": 91,
+    "pct_agree": 1.0,
+    "enters": false
+   }
+  },
+  "entered_content": [
+   "root_form",
+   "root_size",
+   "stem_count",
+   "leaf_type",
+   "leaf_size",
+   "leaf_count",
+   "flowers",
+   "flower_count",
+   "flower_colour",
+   "habit"
+  ],
+  "organs": [
+   "flower",
+   "habit",
+   "leaf",
+   "root",
+   "stem"
+  ],
+  "entered_style": [
+   "fill"
+  ],
+  "passes": true
+ },
+ "br_gate": {
+  "features": {
+   "root_form": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.7765369765369765,
+    "coverage": 0.8677685950413223,
+    "n_pairable": 105,
+    "pct_agree": 0.8285714285714286,
+    "enters": true
+   },
+   "root_size": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.8640208197787899,
+    "coverage": 0.8677685950413223,
+    "n_pairable": 105,
+    "pct_agree": 0.8380952380952381,
+    "enters": true
+   },
+   "stem_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.9345196025443812,
+    "coverage": 0.9338842975206612,
+    "n_pairable": 113,
+    "pct_agree": 0.9380530973451328,
+    "enters": true
+   },
+   "leaf_type": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.8881958762886598,
+    "coverage": 1.0,
+    "n_pairable": 121,
+    "pct_agree": 0.9256198347107438,
+    "enters": true
+   },
+   "leaf_size": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.6565880989180835,
+    "coverage": 0.9834710743801653,
+    "n_pairable": 119,
+    "pct_agree": 0.773109243697479,
+    "enters": true
+   },
+   "leaf_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.8935243625347135,
+    "coverage": 1.0,
+    "n_pairable": 121,
+    "pct_agree": 0.9338842975206612,
+    "enters": true
+   },
+   "flowers": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.9740756945963684,
+    "coverage": 0.9834710743801653,
+    "n_pairable": 119,
+    "pct_agree": 0.9831932773109243,
+    "enters": true
+   },
+   "flower_count": {
+    "block": "content",
+    "type": "ordinal",
+    "alpha": 0.9485762421983688,
+    "coverage": 0.9834710743801653,
+    "n_pairable": 119,
+    "pct_agree": 0.9495798319327731,
+    "enters": true
+   },
+   "flower_colour": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.9338181818181819,
+    "coverage": 0.38016528925619836,
+    "n_pairable": 46,
+    "pct_agree": 0.9565217391304348,
+    "enters": false
+   },
+   "habit": {
+    "block": "content",
+    "type": "nominal",
+    "alpha": 0.8305102358931726,
+    "coverage": 0.9669421487603306,
+    "n_pairable": 117,
+    "pct_agree": 0.9401709401709402,
+    "enters": true
+   },
+   "fill": {
+    "block": "style",
+    "type": "ordinal",
+    "alpha": 0.8020408163265307,
+    "coverage": 0.4049586776859504,
+    "n_pairable": 49,
+    "pct_agree": 0.9183673469387755,
+    "enters": false
+   },
+   "line_weight": {
+    "block": "style",
+    "type": "ordinal",
+    "alpha": 0.017752015216013106,
+    "coverage": 1.0,
+    "n_pairable": 121,
+    "pct_agree": 0.628099173553719,
+    "enters": false
+   },
+   "shading": {
+    "block": "style",
+    "type": "nominal",
+    "alpha": 0.7411941580756014,
+    "coverage": 1.0,
+    "n_pairable": 121,
+    "pct_agree": 0.9173553719008265,
+    "enters": true
+   }
+  },
+  "entered_content": [
+   "root_form",
+   "root_size",
+   "stem_count",
+   "leaf_type",
+   "leaf_size",
+   "leaf_count",
+   "flowers",
+   "flower_count",
+   "habit"
+  ],
+  "organs": [
+   "flower",
+   "habit",
+   "leaf",
+   "root",
+   "stem"
+  ],
+  "entered_style": [
+   "shading"
+  ],
+  "passes": true
+ },
+ "n_v": 91,
+ "n_br": 121,
+ "br_shared_gate": {
+  "entered_content": [
+   "root_form",
+   "root_size",
+   "stem_count",
+   "leaf_type",
+   "leaf_size",
+   "leaf_count",
+   "flowers",
+   "flower_count",
+   "habit"
+  ],
+  "entered_style": [
+   "shading"
+  ],
+  "organs": [
+   "flower",
+   "habit",
+   "leaf",
+   "root",
+   "stem"
+  ]
+ },
+ "br_uses_only_eligible": 107,
+ "br_degrade_q": {
+  "root_form": 0.032379150390625,
+  "root_size": 0.035919189453125,
+  "stem_count": 0.036224365234375,
+  "leaf_type": 0.056732177734375,
+  "leaf_size": 0.0,
+  "leaf_count": 0.004730224609375,
+  "flowers": 0.077728271484375,
+  "flower_count": 0.0,
+  "habit": 0.069366455078125
+ },
+ "br_margins": {
+  "root_form": {
+   "few_branched": 52,
+   "single_taproot": 29,
+   "swollen": 22,
+   "none_visible": 77,
+   "unclear": 16,
+   "many_branched_or_fibrous": 46
+  },
+  "root_size": {
+   "small": 119,
+   "medium": 19,
+   "large": 11,
+   "none": 77,
+   "unclear": 16
+  },
+  "stem_count": {
+   "2-3": 59,
+   "1": 144,
+   "unclear": 14,
+   "4+": 25
+  },
+  "leaf_type": {
+   "simple_toothed_or_lobed": 96,
+   "simple_entire": 99,
+   "mixed": 9,
+   "compound": 23,
+   "none": 4,
+   "grass_or_needle": 11
+  },
+  "leaf_size": {
+   "large": 92,
+   "medium": 128,
+   "small": 18,
+   "unclear": 4
+  },
+  "leaf_count": {
+   "6-15": 122,
+   "1-5": 46,
+   "16+": 70,
+   "0": 4
+  },
+  "flowers": {
+   "flowers": 114,
+   "none": 71,
+   "fruits_or_seed_heads": 46,
+   "both": 8,
+   "unclear": 3
+  },
+  "flower_count": {
+   "6+": 67,
+   "0": 71,
+   "2-5": 87,
+   "1": 14,
+   "unclear": 3
+  },
+  "habit": {
+   "upright_herb": 185,
+   "shrub_or_tree_like": 31,
+   "sprawling_or_climbing": 18,
+   "unclear": 8
+  }
+ },
+ "real_lag1_mean": 0.3666666666666667,
+ "k1_settings": {
+  "markov": {
+   "gen": "markov"
+  },
+  "quire": {
+   "gen": "quire"
+  },
+  "trend": {
+   "gen": "trend",
+   "scale": 0.00146484375
+  },
+  "shared_w8": {
+   "gen": "shared",
+   "scale": 0.00146484375,
+   "width": 8
+  },
+  "shared_w16": {
+   "gen": "shared",
+   "scale": 0.00146484375,
+   "width": 16
+  },
+  "shared_w32": {
+   "gen": "shared",
+   "scale": 0.00146484375,
+   "width": 32
+  }
+ },
+ "k1_fidelity": {
+  "markov": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true
+  },
+  "quire": {
+   "outside": [
+    "root_form:lag1_10",
+    "root_size:quire_var",
+    "leaf_size:quire_var",
+    "flower_colour:lag1_10"
+   ],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true
+  },
+  "trend": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true
+  },
+  "shared_w8": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true
+  },
+  "shared_w16": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true
+  },
+  "shared_w32": {
+   "outside": [],
+   "n_checks": 20,
+   "allowed": 4,
+   "passes": true
+  }
+ },
+ "k1_real_fidelity": {
+  "root_form": [
+   0.30042817211595657,
+   0.051234882842025695
+  ],
+  "root_size": [
+   0.5147177395902324,
+   0.016827846364883405
+  ],
+  "stem_count": [
+   0.5357056079845813,
+   0.025657736345567034
+  ],
+  "leaf_type": [
+   0.426937859379019,
+   0.041418685787072036
+  ],
+  "leaf_size": [
+   0.40414684920490085,
+   0.023086419753086423
+  ],
+  "leaf_count": [
+   0.37660388106840265,
+   0.023496630133534892
+  ],
+  "flowers": [
+   0.5018818417917054,
+   0.05051924496459129
+  ],
+  "flower_count": [
+   0.3017086795845074,
+   0.014857016880826404
+  ],
+  "flower_colour": [
+   0.20656299407005346,
+   0.032057858122672936
+  ],
+  "habit": [
+   0.8547814864165048,
+   0.007223831919599116
+  ]
+ },
+ "k2_anchor": {
+  "text_T1": 0.0051929719121556325,
+  "text_T2": 0.012277976334614618,
+  "pictures_C": 0.007347653634938179
+ },
+ "k2_settings": {
+  "contig_anchored": {
+   "variant": "contig",
+   "r": 3.333984375,
+   "kappa": 0.33935546875,
+   "counted": true
+  },
+  "contig_x2": {
+   "variant": "contig",
+   "r": 6.66796875,
+   "kappa": 0.6787109375,
+   "counted": false
+  },
+  "misbind_anchored": {
+   "variant": "misbind",
+   "r": 6.580078125,
+   "kappa": 0.71435546875,
+   "counted": true
+  },
+  "misbind_x2": {
+   "variant": "misbind",
+   "r": 13.16015625,
+   "kappa": 1.0,
+   "counted": false
+  }
+ },
+ "runtime_s": 75.19208145141602
+}

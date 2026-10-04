@@ -105,24 +105,24 @@ def main():
         return
     C, Y = K.picture_matrices('V', D['ids'], D['codes'], g, D['heights'])
     eng = K.Engine(D['T'], C, Y, D['X'])
-    res = K.decide(eng, D['blocks'], rng)
+    res = K.decide(eng, D['blocks'], rng, sheet_blocks=D['sheets'])
     out['primary'] = res
     zs = cal['z_star']
     if cal['fallback']:
-        outside = {m: res[m]['p_local'] <= 0.005 for m in ('T1', 'T2')}
-        rule = 'fallback: exact N-local p <= 0.005'
+        outside = {m: max(res[m]['p_local'], res[m]['p_sheet']) <= 0.005 for m in ('T1', 'T2')}
+        rule = 'fallback: exact N-local and N-sheet p <= 0.005'
     else:
         outside = {m: res[m]['Z'] > zs for m in ('T1', 'T2')}
-        rule = f'Z = min(z_local, z_shift) > z* = {zs:.3f}'
+        rule = f'Z = min(z_local, z_shift, z_sheet) > z* = {zs:.3f}'
     out['rule'], out['outside'] = rule, outside
     # descriptive companions
     desc = {}
     eng_ns = K.Engine(D['T'], C, Y, D['X'], use_style=False)
-    desc['no_style'] = K.decide(eng_ns, D['blocks'], rng)
-    desc['raw_matrices'] = K.decide(K.Engine(D['T'], C, Y, D['X'], centre=False), D['blocks'], rng)
+    desc['no_style'] = K.decide(eng_ns, D['blocks'], rng, sheet_blocks=D['sheets'])
+    desc['raw_matrices'] = K.decide(K.Engine(D['T'], C, Y, D['X'], centre=False), D['blocks'], rng, sheet_blocks=D['sheets'])
     desc['spearman_partial_S'] = spearman_partial(eng, D['T'], C, Y, D['X'])
     T_int = K.text_similarity(K.voynich_texts(D['ids'], interior_only=True), 'V')
-    desc['line_interior'] = K.decide(K.Engine(T_int, C, Y, D['X']), D['blocks'], rng)
+    desc['line_interior'] = K.decide(K.Engine(T_int, C, Y, D['X']), D['blocks'], rng, sheet_blocks=D['sheets'])
     geom = json.load(open(K.DATA / 'geometry.json', encoding='utf-8'))
     one = [k for k, f in enumerate(D['ids'])
            if str(geom[f].get('n_plants_locator', 1)) in ('1', 'None')
@@ -133,7 +133,7 @@ def main():
         X1, _ = K.v_covariates(Dp, D['feats'], [len(D['toks'][k]) for k in one])
         T1 = {m: M[np.ix_(sub, sub)] for m, M in D['T'].items()}
         desc['single_plant_pages'] = dict(K.decide(K.Engine(T1, C[np.ix_(sub, sub)], Y[np.ix_(sub, sub)], X1),
-                                                   K.v_blocks(Dp), rng), n=len(one))
+                                                   K.v_blocks(Dp), rng, sheet_blocks=K.v_sheets(Dp)), n=len(one))
     out['descriptive'] = desc
     style_only = (not any(outside.values())) and any(desc['no_style'][m]['Z'] > zs for m in ('T1', 'T2'))
     # verdict
@@ -157,7 +157,7 @@ def main():
     try:
         DB = CB.v_data('V-B2')
         CBm, YBm = K.picture_matrices('V', DB['ids'], DB['codes'], g, DB['heights'])
-        out['V_B2'] = dict(K.decide(K.Engine(DB['T'], CBm, YBm, DB['X']), DB['blocks'], rng), n=len(DB['ids']))
+        out['V_B2'] = dict(K.decide(K.Engine(DB['T'], CBm, YBm, DB['X']), DB['blocks'], rng, sheet_blocks=DB['sheets']), n=len(DB['ids']))
     except Exception as e:  # descriptive arm only
         out['V_B2'] = {'error': repr(e)}
     out['runtime_s'] = time.time() - t0

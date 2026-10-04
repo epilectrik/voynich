@@ -76,7 +76,7 @@ def v_data(arm='V-A1'):
     special = {87: 90, 90: 87, 93: 96, 96: 93}
     conj = np.array([special.get(l, K.conjugate(l, (l - 1) // 8 * 8 + 1)) for l in leaf])
     return {'pages': pages, 'ids': folios, 'toks': toks, 'feats': feats, 'X': X, 'Xnames': names,
-            'blocks': K.v_blocks(pages), 'T': K.text_similarity(toks, 'V'), 'codes': codes, 'gate': g,
+            'blocks': K.v_blocks(pages), 'sheets': K.v_sheets(pages), 'T': K.text_similarity(toks, 'V'), 'codes': codes, 'gate': g,
             'heights': [geom[f]['drawing_height'] for f in folios], 'pos': np.array([p['pos'] for p in pages]),
             'leaf': leaf, 'conj': conj, 'group': [p['quire'] for p in pages]}
 
@@ -372,7 +372,7 @@ def task(args):
         g = S['k1_settings'][setting]
         cA, cB, hs = synth_codes(D, g['gen'], rng, scale=g.get('scale'), width=g.get('width'))
         eng = v_engine(D, D['toks'], {'A': cA, 'B': cB}, hs)
-        res = K.decide(eng, D['blocks'], rng)
+        res = K.decide(eng, D['blocks'], rng, sheet_blocks=D['sheets'])
     elif kind == 'k2':
         res = k2_replicate(D, S, setting, rng)
     elif kind == 'k3':
@@ -380,7 +380,9 @@ def task(args):
     elif kind in ('k4', 'k4z'):
         res = k4_replicate(W['BR'], D, S, kind, setting, rng)
     out = {'kind': kind, 'setting': setting, 'rep': rep, 'Zmax': res['Zmax'], 'pmin_local': res['pmin_local'],
-           'Z': {m: res[m]['Z'] for m in ('T1', 'T2')}, 'sec': round(time.time() - t0, 1)}
+           'Z': {m: res[m]['Z'] for m in ('T1', 'T2')},
+           'z': {m: {k: res[m][k] for k in ('z_local', 'z_shift', 'z_sheet') if k in res[m]} for m in ('T1', 'T2')},
+           'sec': round(time.time() - t0, 1)}
     return out
 
 
@@ -460,7 +462,7 @@ def k2_replicate(D, S, setting, rng):
     p = S['k2_settings'][setting]
     toks, cA, cB, hs = k2_generate(D, S, p['variant'], p['r'], p['kappa'], rng)
     eng = v_engine(D, toks, {'A': cA, 'B': cB}, hs, X=k2_covariates(D, toks))
-    return K.decide(eng, D['blocks'], rng)
+    return K.decide(eng, D['blocks'], rng, sheet_blocks=D['sheets'])
 
 
 # ================================================================================================ K3
@@ -515,7 +517,7 @@ def k3_replicate(D, S, setting, rng):
     C, Y = K.picture_matrices('V', D['ids'], codes_c, gate, D['heights'])
     T = K.text_similarity(toks, 'V')
     eng = K.Engine(T, C, Y, D['X'])
-    return K.decide(eng, D['blocks'], rng, identity=shift)
+    return K.decide(eng, D['blocks'], rng, identity=shift, sheet_blocks=D['sheets'])
 
 
 # ================================================================================================ K4 (Brunschwig)
@@ -777,9 +779,10 @@ def stage_k1bind():
     rows += [json.loads(ln) for ln in open(RES / 'k2_780.jsonl', encoding='utf-8')] if (RES / 'k2_780.jsonl').exists() else []
     q = {}
     for s in S['k1_settings']:
-        if S['k1_fidelity'][s]['passes']:
+        if S['k1_fidelity'].get(s, {}).get('passes'):
             z = [r['Zmax'] for r in rows if r['kind'] == 'k1' and r['setting'] == s]
-            q[('k1', s)] = np.percentile(z, 99)
+            if z:
+                q[('k1', s)] = np.percentile(z, 99)
     for s, p in S['k2_settings'].items():
         if p['counted']:
             z = [r['Zmax'] for r in rows if r['kind'] == 'k2' and r['setting'] == s]
@@ -788,6 +791,48 @@ def stage_k1bind():
     kind, s = max(q, key=q.get)
     log(f'binding setting: {kind} {s} (q99 {q[(kind, s)]:.3f}); extending to {N_K1_BIND} replicates')
     run_tasks([(kind, s, r) for r in range(N_K1_BIND)], f'{kind}_780.jsonl')
+
+
+def stage_k1max():
+    """Supplementary K1 settings (added before the lock, after the setup showed that matching the lag-1 agreement sets
+    the trend and shared-drift scales to ~0): for the shared-drift generator at each width, the largest scale on a grid
+    for which the picture-only fidelity gate still passes; 500 replicates each; included in z* like any K1 setting."""
+    rng = np.random.default_rng(SEED['setup'] + 7)
+    S = json.load(open(RES / 'calib_setup780.json', encoding='utf-8'))
+    D = v_data()
+    _prepare(D, S, 'V')
+    feats = D['gate']['entered_content']
+    real = S['k1_real_fidelity']
+    n_checks = 2 * len(feats)
+    allow = int(binom.ppf(0.95, n_checks, 0.10))
+    for w in (8, 16, 32):
+        best = None
+        for scale in (0.25, 0.5, 1.0, 2.0, 4.0, 8.0):
+            sims = []
+            for _ in range(100):
+                cA, _cB, _h = synth_codes(D, 'shared', rng, scale=scale, width=w)
+                sims.append(fidelity_stats(cA, D['ids'], D['group'], feats))
+            outside = []
+            for f in feats:
+                for j, nm in ((0, 'lag1_10'), (1, 'quire_var')):
+                    arr = np.array([x[f][j] for x in sims if x[f][j] == x[f][j]])
+                    lo, hi = np.percentile(arr, [5, 95]) if len(arr) else (np.nan, np.nan)
+                    if not (lo <= real[f][j] <= hi):
+                        outside.append(f'{f}:{nm}')
+            ok = len(outside) <= allow
+            log(f'k1max shared w{w} scale {scale}: {len(outside)} outside -> {"pass" if ok else "fail"}')
+            if ok:
+                best = scale
+            else:
+                break
+        if best is not None:
+            name = f'shared_w{w}_max'
+            S['k1_settings'][name] = {'gen': 'shared', 'scale': best, 'width': w, 'supplementary': True}
+            S['k1_fidelity'][name] = {'outside': [], 'n_checks': n_checks, 'allowed': allow, 'passes': True,
+                                      'note': f'largest grid scale passing the fidelity gate ({best})'}
+    json.dump(S, open(RES / 'calib_setup780.json', 'w', encoding='utf-8'), indent=1, default=float)
+    tasks = [('k1', s, r) for s in S['k1_settings'] if s.endswith('_max') for r in range(N_K1)]
+    run_tasks(tasks, 'k1_780.jsonl')
 
 
 def stage_k2():
@@ -888,5 +933,5 @@ def stage_summary():
 
 if __name__ == '__main__':
     RES.mkdir(exist_ok=True)
-    {'setup': stage_setup, 'k1': stage_k1, 'k1bind': stage_k1bind, 'k2': stage_k2, 'k3': stage_k3, 'k4': stage_k4,
+    {'setup': stage_setup, 'k1': stage_k1, 'k1max': stage_k1max, 'k1bind': stage_k1bind, 'k2': stage_k2, 'k3': stage_k3, 'k4': stage_k4,
      'summary': stage_summary}[sys.argv[1]]()

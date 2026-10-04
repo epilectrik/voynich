@@ -1,0 +1,74 @@
+V-A1 gate: passes True; entered content ['root_form', 'root_size', 'stem_count', 'leaf_type', 'leaf_size', 'leaf_count', 'flowers', 'flower_count', 'flower_colour', 'habit']; organs ['flower', 'habit', 'leaf', 'root', 'stem']; style ['fill']
+BR gate: passes True; entered content ['root_form', 'root_size', 'stem_count', 'leaf_type', 'leaf_size', 'leaf_count', 'flowers', 'flower_count', 'habit']; style ['shading']
+shared content features: ['root_form', 'root_size', 'stem_count', 'leaf_type', 'leaf_size', 'leaf_count', 'flowers', 'flower_count', 'habit']
+BR entries eligible for the uses-only row: 107 of 121
+  degrade root_form: alpha V 0.728, BR 0.777 -> q 0.032
+  degrade root_size: alpha V 0.803, BR 0.864 -> q 0.036
+  degrade stem_count: alpha V 0.866, BR 0.935 -> q 0.036
+  degrade leaf_type: alpha V 0.792, BR 0.888 -> q 0.057
+  degrade leaf_size: alpha V 0.735, BR 0.657 -> q 0.000
+  degrade leaf_count: alpha V 0.887, BR 0.894 -> q 0.005
+  degrade flowers: alpha V 0.826, BR 0.974 -> q 0.078
+  degrade flower_count: alpha V 0.986, BR 0.949 -> q 0.000
+  degrade habit: alpha V 0.736, BR 0.831 -> q 0.069
+real mean lag-1 organ agreement 0.367; trend scale 0.00; shared scales w8 0.00, w16 0.00, w32 0.00
+fidelity markov: 0 outside [] -> PASS
+fidelity quire: 4 outside ['root_form:lag1_10', 'root_size:quire_var', 'leaf_size:quire_var', 'flower_colour:lag1_10'] -> PASS
+fidelity trend: 0 outside [] -> PASS
+fidelity shared_w8: 0 outside [] -> PASS
+fidelity shared_w16: 0 outside [] -> PASS
+fidelity shared_w32: 0 outside [] -> PASS
+K2 anchors: text T1 0.0052, T2 0.0123; pictures C 0.0073
+K2 contig: r 3.334 tokens/page, kappa 0.339
+K2 misbind: r 6.580 tokens/page, kappa 0.714
+setup done
+k1_780.jsonl: 0 done, 3000 to run
+  k1_780.jsonl: 100/3000 (185s)
+  k1_780.jsonl: 200/3000 (356s)
+  k1_780.jsonl: 300/3000 (545s)
+  k1_780.jsonl: 400/3000 (699s)
+  k1_780.jsonl: 500/3000 (869s)
+  k1_780.jsonl: 600/3000 (1038s)
+  k1_780.jsonl: 700/3000 (1193s)
+  k1_780.jsonl: 800/3000 (1365s)
+  k1_780.jsonl: 900/3000 (1540s)
+  k1_780.jsonl: 1000/3000 (1699s)
+  k1_780.jsonl: 1100/3000 (1875s)
+  k1_780.jsonl: 1200/3000 (2037s)
+  k1_780.jsonl: 1300/3000 (2171s)
+  k1_780.jsonl: 1400/3000 (2285s)
+  k1_780.jsonl: 1500/3000 (2411s)
+  k1_780.jsonl: 1600/3000 (2655s)
+  k1_780.jsonl: 1700/3000 (2842s)
+  k1_780.jsonl: 1800/3000 (3013s)
+  k1_780.jsonl: 1900/3000 (3206s)
+  k1_780.jsonl: 2000/3000 (3363s)
+  k1_780.jsonl: 2100/3000 (3554s)
+  k1_780.jsonl: 2200/3000 (3726s)
+  k1_780.jsonl: 2300/3000 (3893s)
+  k1_780.jsonl: 2400/3000 (4107s)
+  k1_780.jsonl: 2500/3000 (4241s)
+  k1_780.jsonl: 2600/3000 (4413s)
+  k1_780.jsonl: 2700/3000 (4612s)
+  k1_780.jsonl: 2800/3000 (4805s)
+  k1_780.jsonl: 2900/3000 (5021s)
+  k1_780.jsonl: 3000/3000 (5231s)
+k1_780.jsonl done (5231s)
+k2_780.jsonl: 0 done, 1400 to run
+  k2_780.jsonl: 100/1400 (224s)
+  k2_780.jsonl: 200/1400 (446s)
+  k2_780.jsonl: 300/1400 (656s)
+  k2_780.jsonl: 400/1400 (881s)
+  k2_780.jsonl: 500/1400 (1088s)
+  k2_780.jsonl: 600/1400 (1287s)
+  k2_780.jsonl: 700/1400 (1500s)
+  k2_780.jsonl: 800/1400 (1695s)
+  k2_780.jsonl: 900/1400 (1881s)
+  k2_780.jsonl: 1000/1400 (2079s)
+  k2_780.jsonl: 1100/1400 (2302s)
+  k2_780.jsonl: 1200/1400 (2502s)
+  k2_780.jsonl: 1300/1400 (2719s)
+  k2_780.jsonl: 1400/1400 (2927s)
+k2_780.jsonl done (2927s)
+binding setting: k2 misbind_anchored (q99 3.558); extending to 2000 replicates
+k2_780.jsonl: 1400 done, 1500 to run
