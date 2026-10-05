@@ -148,6 +148,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
   - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
     repetition and near-repetition, and a narrower word-initial choice.
+- **A book-length pseudo-script (Codex Seraphinianus, Ponzi's machine transliteration): tested, UNRESOLVED**
+  (PHASE_782). On the dependence of a word's first unit on its line zone, the Codex (0.097 bits; 0.059 with probable
+  OCR fragments removed) sits level with B under heavy simulated noise (AUC 0.53) and below clean B (0.234 bits, AUC
+  0.82); its transliteration noise is not known well enough to place it, and PHASE_764's descriptive contrast is
+  neither confirmed nor removed. No constraint row.
 - **Syllable writing, or a syllable codebook, with one spelling per syllable:** tested and excluded on unit
   inventory (C2085, PHASE_767).
   - B has 5,141 types per 20,000 tokens. The syllable-written controls (Mandarin Pinyin, Vietnamese, Lahu Si and

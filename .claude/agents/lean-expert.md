@@ -34,7 +34,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 
 # EMBEDDED CONTEXT (constraints, fits, methodology priors)
 
-**Generated:** 2026-10-04 13:47
+**Generated:** 2026-10-04 19:20
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -44,7 +44,7 @@ Direct and statistical. State what the numbers and validated constraints say; re
 1. Current Status Brief (read first; overrides older documents)
 2. All Constraints
 3. All Explanatory Fits
-4. Session Methodology Notes (66 feedback rules)
+4. Session Methodology Notes (67 feedback rules)
 
 ---
 
@@ -200,6 +200,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
   - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
     repetition and near-repetition, and a narrower word-initial choice.
+- **A book-length pseudo-script (Codex Seraphinianus, Ponzi's machine transliteration): tested, UNRESOLVED**
+  (PHASE_782). On the dependence of a word's first unit on its line zone, the Codex (0.097 bits; 0.059 with probable
+  OCR fragments removed) sits level with B under heavy simulated noise (AUC 0.53) and below clean B (0.234 bits, AUC
+  0.82); its transliteration noise is not known well enough to place it, and PHASE_764's descriptive contrast is
+  neither confirmed nor removed. No constraint row.
 - **Syllable writing, or a syllable codebook, with one spelling per syllable:** tested and excluded on unit
   inventory (C2085, PHASE_767).
   - B has 5,141 types per 20,000 tokens. The syllable-written controls (Mandarin Pinyin, Vietnamese, Lahu Si and
@@ -2930,6 +2935,24 @@ Phase scripts that import another phase's numba module via importlib (e.g. the P
 **Why:** PHASE_763's first full run crashed with `ModuleNotFoundError: No module named '<dynamic>'` when numba loaded kernels cached by an earlier smoke run; the cache entries could not re-import their module. Stale entries in the source phase's `__pycache__` can also break that phase's own reruns.
 
 **How to apply:** use the `_imp` pattern in `phases/PHASE_763_KERNEL_GLYPH_RETEST/scripts/kernel_retest.py`; after any such crash delete the `.nbi/.nbc` files; run the smoke test twice to confirm cache loading before a long run.
+
+---
+
+## feedback-ocr-external-corpus-noise-direction
+
+*"An OCR'd or machine-transliterated external corpus carries noise of unknown direction for position statistics: uniform errors deflate, position-dependent errors (edge truncation, differential accuracy by zone) inflate. Degrading the reference corpus covers only deflation. Measure the transliteration's error by the statistic's own position classes before the phase (PHASE_782 landed UNRESOLVED for this reason)."*
+
+PHASE_782 (2026-10-04) compared Currier B's line-position dependence of the first glyph unit with the Codex
+Seraphinianus, using Marco Ponzi's neural-network OCR transliteration (~18% character error). The design degraded B
+with simulated OCR noise (the conservative handicap for "B exceeds") and guarded the Codex against OCR edge artifacts
+(truncation, splits). The locked run was UNRESOLVED: the Codex (0.097 bits) sat level with heavily degraded B (AUC
+0.53) and below clean B (0.82), and the plant ladder had already shown that anything from ~0.02 to ~0.15 bits would
+land there.
+
+**Why:** the transliteration's first-character error rate, and whether it depends on line position, were unknown.
+Uniform substitutions lower a position statistic; errors that depend on position (line-start crops, better accuracy on
+
+[…trimmed — full note: memory/feedback_ocr_external_corpus_noise_direction.md]
 
 ---
 

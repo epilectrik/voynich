@@ -114,7 +114,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-10-04 13:47
+**Generated:** 2026-10-04 19:20
 **Version:** Tier 0 = measured core (restated 2026-09-28); control-program reading Tier 3; structure mapped, referents unrecovered (0 registered constraints, 75 fits) [COMPACT]
 
 ---
@@ -129,7 +129,7 @@ tables are quarantined — do not use for structural answers.
 6. All Constraints
 7. All Explanatory Fits
 8. Tier 3-4 Interpretations
-9. Session Methodology Notes (66 feedback rules)
+9. Session Methodology Notes (67 feedback rules)
 10. Structural Contract Signatures (6 contracts)
 
 ---
@@ -286,6 +286,11 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
   - Meaningful text sits about as far below B (AUC 0.775) and is indistinguishable from gibberish on this statistic.
   - Descriptively, B is more rule-bound than both groups: stronger position-in-line dependence, more adjacent
     repetition and near-repetition, and a narrower word-initial choice.
+- **A book-length pseudo-script (Codex Seraphinianus, Ponzi's machine transliteration): tested, UNRESOLVED**
+  (PHASE_782). On the dependence of a word's first unit on its line zone, the Codex (0.097 bits; 0.059 with probable
+  OCR fragments removed) sits level with B under heavy simulated noise (AUC 0.53) and below clean B (0.234 bits, AUC
+  0.82); its transliteration noise is not known well enough to place it, and PHASE_764's descriptive contrast is
+  neither confirmed nor removed. No constraint row.
 - **Syllable writing, or a syllable codebook, with one spelling per syllable:** tested and excluded on unit
   inventory (C2085, PHASE_767).
   - B has 5,141 types per 20,000 tokens. The syllable-written controls (Mandarin Pinyin, Vietnamese, Lahu Si and
@@ -362,7 +367,7 @@ to have (a kernel of core operators, closed-loop control, hazard avoidance, conv
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 7.44 | **Status:** characterization ACTIVE | **Constraints:** 1,905 live in the generated table (T0 2, T1 38, T2 1,695, T3 166, T4 4) | **Phases:** 781 | **Date:** 2026-10-04
+**Version:** 7.45 | **Status:** characterization ACTIVE | **Constraints:** 1,905 live in the generated table (T0 2, T1 38, T2 1,695, T3 166, T4 4) | **Phases:** 782 | **Date:** 2026-10-04
 
 *(Header previously read "Version 6.03 | FROZEN | 1907 constraints | 2026-03-29" — historical.)*
 
@@ -495,7 +500,7 @@ These approaches have been tested and rejected (tiers vary — check each number
 
 | Category | Count |
 |----------|-------|
-| Live constraints (generated table, v7.44) | 1,905 (T0 2, T1 38, T2 1,695, T3 166, T4 4) |
+| Live constraints (generated table, v7.45) | 1,905 (T0 2, T1 38, T2 1,695, T3 166, T4 4) |
 | Completed phases | 763 |
 | Folios enumerated | 83 |
 | Currier B tokens (H-track) | 23,243 (the legacy "75,248 instructions cataloged" appears to be a pre-H-filter count) |
@@ -574,6 +579,13 @@ text made to look meaningful? And, if it carries content, what content?
    - Meaningful text is equally far below B, so this is not a meaning discriminator.
    - Lead: B's position-in-line dependence far exceeds gibberish (descriptive AUC 0.986). It needs new data to
      confirm.
+     - PHASE_782 (Codex Seraphinianus, OCR transliteration): UNRESOLVED; the Codex's value lies in the band the
+       design could not separate (about 0.02 to at least 0.15 bits) because its noise is unknown. Descriptively the
+       Codex carries a line-position dependence of its own (0.097 bits; B 0.234; Brunschwig print 0.04-0.05,
+       Aberdeen Bestiary 0.007, not like for like). Next: measure the transliteration's first-character error by line
+       zone on a hand-transliterated sample outside Ponzi's training words, then degrade B to the measured
+       zone-specific rates instead of the conservative heavy setting; or use a clean second book-length
+       pseudo-script. Either needs a new pre-registered phase.
    - The original design follows.
    - What: run the full discriminator panel on text people produced deliberately without meaning. The Gaskell & Bowern
      corpus (github.com/danielgaskell/voynich) is the natural source.
@@ -6720,6 +6732,24 @@ Phase scripts that import another phase's numba module via importlib (e.g. the P
 **Why:** PHASE_763's first full run crashed with `ModuleNotFoundError: No module named '<dynamic>'` when numba loaded kernels cached by an earlier smoke run; the cache entries could not re-import their module. Stale entries in the source phase's `__pycache__` can also break that phase's own reruns.
 
 **How to apply:** use the `_imp` pattern in `phases/PHASE_763_KERNEL_GLYPH_RETEST/scripts/kernel_retest.py`; after any such crash delete the `.nbi/.nbc` files; run the smoke test twice to confirm cache loading before a long run.
+
+---
+
+## feedback-ocr-external-corpus-noise-direction
+
+*"An OCR'd or machine-transliterated external corpus carries noise of unknown direction for position statistics: uniform errors deflate, position-dependent errors (edge truncation, differential accuracy by zone) inflate. Degrading the reference corpus covers only deflation. Measure the transliteration's error by the statistic's own position classes before the phase (PHASE_782 landed UNRESOLVED for this reason)."*
+
+PHASE_782 (2026-10-04) compared Currier B's line-position dependence of the first glyph unit with the Codex
+Seraphinianus, using Marco Ponzi's neural-network OCR transliteration (~18% character error). The design degraded B
+with simulated OCR noise (the conservative handicap for "B exceeds") and guarded the Codex against OCR edge artifacts
+(truncation, splits). The locked run was UNRESOLVED: the Codex (0.097 bits) sat level with heavily degraded B (AUC
+0.53) and below clean B (0.82), and the plant ladder had already shown that anything from ~0.02 to ~0.15 bits would
+land there.
+
+**Why:** the transliteration's first-character error rate, and whether it depends on line position, were unknown.
+Uniform substitutions lower a position statistic; errors that depend on position (line-start crops, better accuracy on
+
+[…trimmed — full note: memory/feedback_ocr_external_corpus_noise_direction.md]
 
 ---
 

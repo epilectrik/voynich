@@ -35,6 +35,13 @@ text made to look meaningful? And, if it carries content, what content?
    - Meaningful text is equally far below B, so this is not a meaning discriminator.
    - Lead: B's position-in-line dependence far exceeds gibberish (descriptive AUC 0.986). It needs new data to
      confirm.
+     - PHASE_782 (Codex Seraphinianus, OCR transliteration): UNRESOLVED; the Codex's value lies in the band the
+       design could not separate (about 0.02 to at least 0.15 bits) because its noise is unknown. Descriptively the
+       Codex carries a line-position dependence of its own (0.097 bits; B 0.234; Brunschwig print 0.04-0.05,
+       Aberdeen Bestiary 0.007, not like for like). Next: measure the transliteration's first-character error by line
+       zone on a hand-transliterated sample outside Ponzi's training words, then degrade B to the measured
+       zone-specific rates instead of the conservative heavy setting; or use a clean second book-length
+       pseudo-script. Either needs a new pre-registered phase.
    - The original design follows.
    - What: run the full discriminator panel on text people produced deliberately without meaning. The Gaskell & Bowern
      corpus (github.com/danielgaskell/voynich) is the natural source.

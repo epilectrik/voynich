@@ -4,6 +4,44 @@
 
 ---
 
+## Version 7.45 (2026-10-04) — PHASE_782: Currier B against a book-length pseudo-script, line position (UNRESOLVED; no constraint)
+
+### Summary
+**Question.** PHASE_764's strongest contrast with human gibberish was descriptive: B's dependence of a word's first
+glyph unit on its line zone (initial / medial / final) far exceeded short volunteer gibberish. Does the body prose of
+the Codex Seraphinianus (Serafini 1981), the best-known book-length pseudo-script, reach B's level? Data: Marco
+Ponzi's neural-network OCR transliteration (about 18% character error; stroke-level alphabet; kept outside the
+repository).
+
+**Process.**
+- Lean-expert design audit (LOCKABLE AFTER EDITS; E1–E10: parser fix, paragraph-start rule for the Codex's column
+  blocks, a guard against OCR edge artifacts, a two-character reading, a block bootstrap, a permitted-revision menu).
+- Calibration on B and the within-line-shuffled Codex only: C4b (REACHED power) failed at 40-line chunks (0.605) and
+  passed at 30 (1.00) under the menu; C1–C5 pass. Descriptive anchors with original line breaks: Brunschwig 1500 print
+  and, at the expert-advisor's request, the Aberdeen Bestiary manuscript.
+- Expert-advisor interpretive check (likelihood ratios and templates); lean-expert confirmation pass (dry mode, lock
+  assertions, interim writes, crash rule, plant ladder); dry run; lock `phase782-lock` (5ce482e4); one run.
+
+**Result.** UNRESOLVED in the primary, all three opposite-label variants and all eleven sensitivities. The Codex
+(median excess 0.097 bits as transliterated, 0.059 guarded) sits level with B under heavy simulated noise (AUC 0.53)
+and below clean B (0.234 bits; AUC 0.82, guarded 0.94). Its transliteration noise is not known well enough to place
+it; the plant ladder had shown that anything from about 0.02 to at least 0.15 bits lands here. No change to the working
+odds. Phase record and STATUS_BRIEF line; no constraint row (PHASE_764 precedent).
+
+**Descriptive.** The Codex carries a line-position dependence of its own, mostly at line starts, not removed by
+permuting within word-length classes; whether it belongs to the script or the transliteration is open. Meaningful
+texts with original line breaks sit lower (Brunschwig print 0.04–0.05, Aberdeen 0.007; not like for like); reading
+that ordering is echo-class and left to the human.
+
+### Changes
+| Item | Change |
+|---|---|
+| New phase | PHASE_782_SERAPHINIANUS_LINE_POSITION (engine, calibration, ladder, anchors, hand-label check, run) |
+| Constraints | none (1,905 live unchanged) |
+| Status / agenda | STATUS_BRIEF §4 line under the human-gibberish entry; RESEARCH_AGENDA Tier A #1 lead |
+| Memory | OCR'd external corpora carry noise of unknown direction for position statistics |
+- Live: 1,905 (T0 2, T1 38, T2 1,695, T3 166, T4 4); 782 phases.
+
 ## Version 7.44 (2026-10-04) — PHASE_781 stopped at its Stage 1 power gate (no constraint)
 
 ### Summary
